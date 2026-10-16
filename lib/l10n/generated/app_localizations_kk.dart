@@ -1984,4 +1984,26 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Акцияларыңыз туралы жаңалықтар';
+
+  @override
+  String get undo => 'Қайтару';
+
+  @override
+  String get watchSort => 'Сұрыптау';
+
+  @override
+  String get watchSortOwn => 'Менің ретім';
+
+  @override
+  String get watchSortGainers => 'Ең көп өскендер алдымен';
+
+  @override
+  String get watchSortLosers => 'Ең көп түскендер алдымен';
+
+  @override
+  String get watchSortName => 'Тикер бойынша (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Ретін өзгерту үшін тұтқаны сүйреңіз, жою үшін солға сырғытыңыз. Сызық соңғы 30 күнді көрсетеді.';
 }

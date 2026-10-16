@@ -1990,4 +1990,26 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Wararka saamiyadaada';
+
+  @override
+  String get undo => 'Dib u celi';
+
+  @override
+  String get watchSort => 'Kala sooc';
+
+  @override
+  String get watchSortOwn => 'Habayntayda';
+
+  @override
+  String get watchSortGainers => 'Kuwa ugu kacay badan marka hore';
+
+  @override
+  String get watchSortLosers => 'Kuwa ugu dhacay badan marka hore';
+
+  @override
+  String get watchSortName => 'Astaan ahaan (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Jiid gacan-qabsiga si aad u dib u habayso, u jiid bidix si aad u saarto. Xariiqdu waxay muujinaysaa 30-kii maalmood ee la soo dhaafay.';
 }

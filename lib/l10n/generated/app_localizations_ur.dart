@@ -1983,4 +1983,26 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'آپ کے شیئرز کی خبریں';
+
+  @override
+  String get undo => 'کالعدم کریں';
+
+  @override
+  String get watchSort => 'ترتیب دیں';
+
+  @override
+  String get watchSortOwn => 'میری ترتیب';
+
+  @override
+  String get watchSortGainers => 'سب سے زیادہ بڑھنے والے پہلے';
+
+  @override
+  String get watchSortLosers => 'سب سے زیادہ گرنے والے پہلے';
+
+  @override
+  String get watchSortName => 'ٹکر کے مطابق (A–Z)';
+
+  @override
+  String get watchHint =>
+      'ترتیب بدلنے کے لیے ہینڈل گھسیٹیں، ہٹانے کے لیے بائیں سوائپ کریں۔ لکیر پچھلے 30 دن دکھاتی ہے۔';
 }

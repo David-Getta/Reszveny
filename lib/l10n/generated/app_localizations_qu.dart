@@ -1994,4 +1994,26 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Accionniykikunamanta willakuykuna';
+
+  @override
+  String get undo => 'Kutichiy';
+
+  @override
+  String get watchSort => 'Ñiqichay';
+
+  @override
+  String get watchSortOwn => 'Ñiqichasqay';
+
+  @override
+  String get watchSortGainers => 'Aswan wichaqkuna ñawpaqta';
+
+  @override
+  String get watchSortLosers => 'Aswan urmaqkuna ñawpaqta';
+
+  @override
+  String get watchSortName => 'Ticker nisqaman hina (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Hapinata aysay ñiqichanapaq, lluq\'iman llusiy hurqunapaq. Siqiqa qhipa 30 p\'unchawkunata rikuchin.';
 }

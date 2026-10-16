@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Dividendi i paguar për një aksion gjatë vitit të fundit.",
   "glossPayoutRatio": "Pjesa e fitimit që paguhet si dividend. Mbi 100% kompania paguan më shumë se sa fiton, gjë që rrallë zgjat.",
   "glossTitle": "Çfarë do të thotë?",
-  "watchNewsTitle": "Lajme për aksionet tuaja"
+  "watchNewsTitle": "Lajme për aksionet tuaja",
+  "undo": "Zhbëj",
+  "watchSort": "Rendit",
+  "watchSortOwn": "Renditja ime",
+  "watchSortGainers": "Rritjet më të mëdha së pari",
+  "watchSortLosers": "Rëniet më të mëdha së pari",
+  "watchSortName": "Sipas simbolit (A–Z)",
+  "watchHint": "Tërhiq dorezën për të rirenditur, rrëshqit majtas për ta hequr. Vija tregon 30 ditët e fundit."
 }

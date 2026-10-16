@@ -1975,4 +1975,26 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'ستاسو د ونډو خبرونه';
+
+  @override
+  String get undo => 'بېرته راګرځول';
+
+  @override
+  String get watchSort => 'ترتیب';
+
+  @override
+  String get watchSortOwn => 'زما ترتیب';
+
+  @override
+  String get watchSortGainers => 'تر ټولو ډېر لوړ شوي لومړی';
+
+  @override
+  String get watchSortLosers => 'تر ټولو ډېر ټیټ شوي لومړی';
+
+  @override
+  String get watchSortName => 'د ټیکر له مخې (A–Z)';
+
+  @override
+  String get watchHint =>
+      'د ترتیب بدلولو لپاره لاستی کش کړئ، د لرې کولو لپاره کیڼ لور ته سوایپ کړئ. کرښه تېرې 30 ورځې ښيي.';
 }

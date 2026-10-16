@@ -1948,4 +1948,26 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'ዜና ብዛዕባ ኣክሲዮናትኩም';
+
+  @override
+  String get undo => 'ኣምልስ';
+
+  @override
+  String get watchSort => 'ኣሰርዕ';
+
+  @override
+  String get watchSortOwn => 'ናተይ ስርዓት';
+
+  @override
+  String get watchSortGainers => 'ብዝያዳ ዝወሰኹ ቅድም';
+
+  @override
+  String get watchSortLosers => 'ብዝያዳ ዝጎደሉ ቅድም';
+
+  @override
+  String get watchSortName => 'ብምልክት (A–Z)';
+
+  @override
+  String get watchHint =>
+      'ስርዓት ንምቕያር መትሓዚ ስሓቦ፣ ንምእላይ ናብ ጸጋም ኣንሸራትት። መስመሩ ናይ ዝሓለፉ 30 መዓልታት የርኢ።';
 }

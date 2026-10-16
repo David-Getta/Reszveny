@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Ang dibidendo nga gibayad sa usa ka share sa miaging tuig.",
   "glossPayoutRatio": "Ang bahin sa ganansya nga gibayad isip dibidendo. Labaw sa 100%, mas daghan ang gibayad sa kompanya kaysa sa iyang kinitaan, nga panagsa ra molungtad.",
   "glossTitle": "Unsay buot ipasabot?",
-  "watchNewsTitle": "Balita sa imong mga stock"
+  "watchNewsTitle": "Balita sa imong mga stock",
+  "undo": "I-undo",
+  "watchSort": "Han-aya",
+  "watchSortOwn": "Akong han-ay",
+  "watchSortGainers": "Pinakadako nga pagsaka una",
+  "watchSortLosers": "Pinakadako nga pagkanaog una",
+  "watchSortName": "Sumala sa ticker (A–Z)",
+  "watchHint": "Guyora ang kuptanan aron ihan-ay pag-usab, i-swipe pawala aron tangtangon. Ang linya nagpakita sa miaging 30 ka adlaw."
 }

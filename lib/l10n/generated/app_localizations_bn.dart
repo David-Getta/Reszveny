@@ -1982,4 +1982,26 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'আপনার শেয়ারের খবর';
+
+  @override
+  String get undo => 'আনডু';
+
+  @override
+  String get watchSort => 'সাজান';
+
+  @override
+  String get watchSortOwn => 'আমার ক্রম';
+
+  @override
+  String get watchSortGainers => 'সর্বাধিক বৃদ্ধি আগে';
+
+  @override
+  String get watchSortLosers => 'সর্বাধিক পতন আগে';
+
+  @override
+  String get watchSortName => 'টিকার অনুযায়ী (A–Z)';
+
+  @override
+  String get watchHint =>
+      'ক্রম বদলাতে হ্যান্ডেল টানুন, সরাতে বাঁদিকে সোয়াইপ করুন। রেখাটি গত 30 দিন দেখায়।';
 }

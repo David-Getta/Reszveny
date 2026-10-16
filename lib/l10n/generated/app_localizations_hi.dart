@@ -1982,4 +1982,26 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'आपके शेयरों की खबरें';
+
+  @override
+  String get undo => 'पूर्ववत करें';
+
+  @override
+  String get watchSort => 'क्रमबद्ध करें';
+
+  @override
+  String get watchSortOwn => 'मेरा क्रम';
+
+  @override
+  String get watchSortGainers => 'सबसे ज़्यादा बढ़त वाले पहले';
+
+  @override
+  String get watchSortLosers => 'सबसे ज़्यादा गिरावट वाले पहले';
+
+  @override
+  String get watchSortName => 'टिकर के अनुसार (A–Z)';
+
+  @override
+  String get watchHint =>
+      'क्रम बदलने के लिए हैंडल खींचें, हटाने के लिए बाईं ओर स्वाइप करें। रेखा पिछले 30 दिन दिखाती है।';
 }

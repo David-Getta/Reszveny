@@ -1992,4 +1992,26 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Notícies de les teves accions';
+
+  @override
+  String get undo => 'Desfer';
+
+  @override
+  String get watchSort => 'Ordenar';
+
+  @override
+  String get watchSortOwn => 'El meu ordre';
+
+  @override
+  String get watchSortGainers => 'Més pujades primer';
+
+  @override
+  String get watchSortLosers => 'Més baixades primer';
+
+  @override
+  String get watchSortName => 'Per ticker (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Arrossega la nansa per reordenar i llisca cap a l\'esquerra per eliminar. La línia mostra els últims 30 dies.';
 }

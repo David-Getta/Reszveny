@@ -1988,4 +1988,26 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Labarai kan hannun jarinka';
+
+  @override
+  String get undo => 'Mayar';
+
+  @override
+  String get watchSort => 'Jera';
+
+  @override
+  String get watchSortOwn => 'Tsarina';
+
+  @override
+  String get watchSortGainers => 'Mafi hauhawa farko';
+
+  @override
+  String get watchSortLosers => 'Mafi faɗuwa farko';
+
+  @override
+  String get watchSortName => 'Ta ticker (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Ja maƙalli don sake tsarawa, goge zuwa hagu don cirewa. Layin yana nuna kwanaki 30 da suka gabata.';
 }

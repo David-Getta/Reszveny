@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Ti dibidendo a naibayad iti maysa a share iti napalabas a tawen.",
   "glossPayoutRatio": "Ti paset ti ganansia a maibayad kas dibidendo. Ngato ti 100% ket ad-adu ti ibaybayad ti kompania ngem ti magunggonana, a manmano nga agpaut.",
   "glossTitle": "Ania ti kayatna a sawen?",
-  "watchNewsTitle": "Damag maipapan kadagiti stock-mo"
+  "watchNewsTitle": "Damag maipapan kadagiti stock-mo",
+  "undo": "I-undo",
+  "watchSort": "Urnosen",
+  "watchSortOwn": "Bukodko nga urnos",
+  "watchSortGainers": "Kadakkelan nga ngimmato umuna",
+  "watchSortLosers": "Kadakkelan nga immababa umuna",
+  "watchSortName": "Babaen ti ticker (A–Z)",
+  "watchHint": "Guyuden ti iggaman tapno urnosen manen, i-swipe iti kannigid tapno ikkaten. Ipakita ti linia ti napalabas a 30 nga aldaw."
 }

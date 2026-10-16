@@ -1486,5 +1486,33 @@
   "watchNewsTitle": "News on your stocks",
   "@watchNewsTitle": {
     "description": "Home screen section and page title: latest news about the stocks in the user's portfolio and favorites."
+  },
+  "undo": "Undo",
+  "@undo": {
+    "description": "Snack bar action: undo the last action."
+  },
+  "watchSort": "Sort",
+  "@watchSort": {
+    "description": "Tooltip of the sort button on the favorites (watchlist) page."
+  },
+  "watchSortOwn": "My order",
+  "@watchSortOwn": {
+    "description": "Sort option on the favorites page: the user's own order."
+  },
+  "watchSortGainers": "Biggest gainers first",
+  "@watchSortGainers": {
+    "description": "Sort option: today's biggest gainers first."
+  },
+  "watchSortLosers": "Biggest losers first",
+  "@watchSortLosers": {
+    "description": "Sort option: today's biggest losers first."
+  },
+  "watchSortName": "By ticker (A–Z)",
+  "@watchSortName": {
+    "description": "Sort option: alphabetically by ticker symbol."
+  },
+  "watchHint": "Drag the handle to reorder, swipe left to remove. The line shows the last 30 days.",
+  "@watchHint": {
+    "description": "Hint at the top of the favorites (watchlist) page."
   }
 }

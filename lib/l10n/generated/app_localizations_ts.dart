@@ -1994,4 +1994,26 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Mahungu ya swixere swa wena';
+
+  @override
+  String get undo => 'Tlherisa';
+
+  @override
+  String get watchSort => 'Hlela';
+
+  @override
+  String get watchSortOwn => 'Ku hlela ka mina';
+
+  @override
+  String get watchSortGainers => 'Leswi tlakukeke ngopfu ku sungula';
+
+  @override
+  String get watchSortLosers => 'Leswi wileke ngopfu ku sungula';
+
+  @override
+  String get watchSortName => 'Hi ticker (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Koka xikhomo ku hlela nakambe, sindzisa eximatsini ku susa. Layini yi kombisa masiku ya 30 lama hundzeke.';
 }

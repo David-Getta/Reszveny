@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Dividãnd b sẽn yao aksiõ a ye yʋʋmd sẽn looga pʋgẽ.",
   "glossPayoutRatio": "Nafa pʋɩɩr b sẽn pʋɩt wala dividãnd. A sã n yɩɩd 100%, kʋmpaanã yaoda n yɩɩd a sẽn paamã, la yẽ pa kẽnd wakat wʋsg ye.",
   "glossTitle": "A rat n yeel bõe?",
-  "watchNewsTitle": "Kibay f aksiõ-rã wɛɛngẽ"
+  "watchNewsTitle": "Kibay f aksiõ-rã wɛɛngẽ",
+  "undo": "Lebs-y",
+  "watchSort": "Tik-y",
+  "watchSortOwn": "M sẽn tik to-to",
+  "watchSortGainers": "Sẽn zẽk wʋsg n deng",
+  "watchSortLosers": "Sẽn sig wʋsg n deng",
+  "watchSortName": "Bãnde (A–Z)",
+  "watchHint": "Dɩk n yãag gãnegrã n tik-y-yã, yãag-y goabg n yiis. Sulgã wilgda rasem 30 sẽn loogã."
 }

@@ -536,5 +536,12 @@
   "glossDividendPerShare": "过去一年每股派发的股息。",
   "glossPayoutRatio": "利润中以股息形式派发的比例。超过 100% 表示公司派发的比赚的还多，这很少能持久。",
   "glossTitle": "这是什么意思？",
-  "watchNewsTitle": "你的股票新闻"
+  "watchNewsTitle": "你的股票新闻",
+  "undo": "撤销",
+  "watchSort": "排序",
+  "watchSortOwn": "我的顺序",
+  "watchSortGainers": "涨幅最大优先",
+  "watchSortLosers": "跌幅最大优先",
+  "watchSortName": "按股票代码 (A–Z)",
+  "watchHint": "拖动手柄可重新排序，向左滑动可移除。线条显示最近 30 天。"
 }

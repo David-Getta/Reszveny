@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Oxirgi yilda bir aksiyaga toʻlangan dividend.",
   "glossPayoutRatio": "Foydaning dividend sifatida toʻlanadigan ulushi. 100% dan yuqori boʻlsa, kompaniya topganidan koʻproq toʻlaydi, bu kamdan-kam uzoq davom etadi.",
   "glossTitle": "Bu nimani anglatadi?",
-  "watchNewsTitle": "Aksiyalaringiz yangiliklari"
+  "watchNewsTitle": "Aksiyalaringiz yangiliklari",
+  "undo": "Qaytarish",
+  "watchSort": "Saralash",
+  "watchSortOwn": "Mening tartibim",
+  "watchSortGainers": "Eng koʻp oʻsganlar avval",
+  "watchSortLosers": "Eng koʻp tushganlar avval",
+  "watchSortName": "Tiker boʻyicha (A–Z)",
+  "watchHint": "Tartibni oʻzgartirish uchun tutqichni torting, olib tashlash uchun chapga suring. Chiziq oxirgi 30 kunni koʻrsatadi."
 }

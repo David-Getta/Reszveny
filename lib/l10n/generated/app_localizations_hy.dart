@@ -1991,4 +1991,26 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Նորություններ ձեր բաժնետոմսերի մասին';
+
+  @override
+  String get undo => 'Հետարկել';
+
+  @override
+  String get watchSort => 'Դասավորել';
+
+  @override
+  String get watchSortOwn => 'Իմ հերթականությունը';
+
+  @override
+  String get watchSortGainers => 'Ամենաշատ աճածները սկզբում';
+
+  @override
+  String get watchSortLosers => 'Ամենաշատ անկածները սկզբում';
+
+  @override
+  String get watchSortName => 'Ըստ թիքերի (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Քաշեք բռնակը՝ վերադասավորելու համար, սահեցրեք ձախ՝ հեռացնելու համար։ Գիծը ցույց է տալիս վերջին 30 օրը։';
 }

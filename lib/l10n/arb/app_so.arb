@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Qaybta faa'iidada ee lagu bixiyay hal saami sannadkii la soo dhaafay.",
   "glossPayoutRatio": "Qaybta faa'iidada ee loo qaybiyo saamilayda. Ka sarreysa 100% shirkaddu waxay bixinaysaa wax ka badan inta ay kasbato, taas oo dhif ah inay sii socoto.",
   "glossTitle": "Maxay ka dhigan tahay?",
-  "watchNewsTitle": "Wararka saamiyadaada"
+  "watchNewsTitle": "Wararka saamiyadaada",
+  "undo": "Dib u celi",
+  "watchSort": "Kala sooc",
+  "watchSortOwn": "Habayntayda",
+  "watchSortGainers": "Kuwa ugu kacay badan marka hore",
+  "watchSortLosers": "Kuwa ugu dhacay badan marka hore",
+  "watchSortName": "Astaan ahaan (A–Z)",
+  "watchHint": "Jiid gacan-qabsiga si aad u dib u habayso, u jiid bidix si aad u saarto. Xariiqdu waxay muujinaysaa 30-kii maalmood ee la soo dhaafay."
 }

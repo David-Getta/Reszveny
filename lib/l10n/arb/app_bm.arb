@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Tɔnɔ tilali min sarala aksiyɔn kelen na san tɛmɛnen kɔnɔ.",
   "glossPayoutRatio": "Tɔnɔ niyɔrɔ min bɛ tila ka di aksiyɔntigiw ma. 100% sanfɛ, sosiyete bɛ wari di ka tɛmɛ a ka sɔrɔ kan, o tɛ mɛn tuma caman.",
   "glossTitle": "O kɔrɔ ye mun ye?",
-  "watchNewsTitle": "I ka aksiyɔnw kibaruyaw"
+  "watchNewsTitle": "I ka aksiyɔnw kibaruyaw",
+  "undo": "Segin kɔ",
+  "watchSort": "Ka labɛn",
+  "watchSortOwn": "N ka labɛnni",
+  "watchSortGainers": "Minnu yɛlɛla kosɛbɛ fɔlɔ",
+  "watchSortLosers": "Minnu jiginna kosɛbɛ fɔlɔ",
+  "watchSortName": "Taamasiyɛn kɔ (A–Z)",
+  "watchHint": "Minɛnan sama walasa ka labɛnni yɛlɛma, i bolo sama numanbolo fɛ walasa ka bɔ. Juru bɛ tile 30 laban jira."
 }

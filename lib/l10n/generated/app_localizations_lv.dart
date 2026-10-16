@@ -2022,4 +2022,26 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Ziņas par jūsu akcijām';
+
+  @override
+  String get undo => 'Atsaukt';
+
+  @override
+  String get watchSort => 'Kārtot';
+
+  @override
+  String get watchSortOwn => 'Mana secība';
+
+  @override
+  String get watchSortGainers => 'Lielākie kāpumi vispirms';
+
+  @override
+  String get watchSortLosers => 'Lielākie kritumi vispirms';
+
+  @override
+  String get watchSortName => 'Pēc simbola (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Velciet turi, lai mainītu secību, pavelciet pa kreisi, lai noņemtu. Līnija rāda pēdējās 30 dienas.';
 }

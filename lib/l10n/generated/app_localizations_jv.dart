@@ -1984,4 +1984,26 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Warta saham sampeyan';
+
+  @override
+  String get undo => 'Wurungaké';
+
+  @override
+  String get watchSort => 'Urutaké';
+
+  @override
+  String get watchSortOwn => 'Urutanku';
+
+  @override
+  String get watchSortGainers => 'Mundhak paling gedhé dhisik';
+
+  @override
+  String get watchSortLosers => 'Mudhun paling gedhé dhisik';
+
+  @override
+  String get watchSortName => 'Miturut kode saham (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Seret gagang kanggo ngurutaké manèh, gésér ngiwa kanggo mbusak. Garis nuduhaké 30 dina pungkasan.';
 }

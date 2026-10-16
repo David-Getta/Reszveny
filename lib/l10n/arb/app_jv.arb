@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Dividen sing dibayar kanggo siji saham sajrone setaun kepungkur.",
   "glossPayoutRatio": "Bagean bathi sing dibayarake minangka dividen. Ing ndhuwur 100% perusahaan mbayar luwih akeh tinimbang sing diasilake, lan iki arang suwe.",
   "glossTitle": "Apa tegese?",
-  "watchNewsTitle": "Warta saham sampeyan"
+  "watchNewsTitle": "Warta saham sampeyan",
+  "undo": "Wurungaké",
+  "watchSort": "Urutaké",
+  "watchSortOwn": "Urutanku",
+  "watchSortGainers": "Mundhak paling gedhé dhisik",
+  "watchSortLosers": "Mudhun paling gedhé dhisik",
+  "watchSortName": "Miturut kode saham (A–Z)",
+  "watchHint": "Seret gagang kanggo ngurutaké manèh, gésér ngiwa kanggo mbusak. Garis nuduhaké 30 dina pungkasan."
 }

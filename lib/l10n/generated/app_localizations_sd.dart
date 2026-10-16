@@ -1975,4 +1975,26 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'توهان جي شيئرن جون خبرون';
+
+  @override
+  String get undo => 'واپس ڪريو';
+
+  @override
+  String get watchSort => 'ترتيب ڏيو';
+
+  @override
+  String get watchSortOwn => 'منهنجي ترتيب';
+
+  @override
+  String get watchSortGainers => 'سڀ کان وڌيڪ وڌندڙ پهرين';
+
+  @override
+  String get watchSortLosers => 'سڀ کان وڌيڪ گهٽجندڙ پهرين';
+
+  @override
+  String get watchSortName => 'ٽڪر مطابق (A–Z)';
+
+  @override
+  String get watchHint =>
+      'ترتيب بدلائڻ لاءِ هينڊل ڇڪيو، هٽائڻ لاءِ کاٻي پاسي سوائپ ڪريو. لڪير گذريل 30 ڏينهن ڏيکاري ٿي.';
 }

@@ -2039,4 +2039,26 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Новости по вашим акциям';
+
+  @override
+  String get undo => 'Отменить';
+
+  @override
+  String get watchSort => 'Сортировка';
+
+  @override
+  String get watchSortOwn => 'Мой порядок';
+
+  @override
+  String get watchSortGainers => 'Сначала лидеры роста';
+
+  @override
+  String get watchSortLosers => 'Сначала лидеры падения';
+
+  @override
+  String get watchSortName => 'По тикеру (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Перетащите маркер, чтобы изменить порядок, смахните влево, чтобы удалить. Линия показывает последние 30 дней.';
 }

@@ -1994,4 +1994,26 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Nachrichten zu deinen Aktien';
+
+  @override
+  String get undo => 'Rückgängig';
+
+  @override
+  String get watchSort => 'Sortieren';
+
+  @override
+  String get watchSortOwn => 'Eigene Reihenfolge';
+
+  @override
+  String get watchSortGainers => 'Größte Gewinner zuerst';
+
+  @override
+  String get watchSortLosers => 'Größte Verlierer zuerst';
+
+  @override
+  String get watchSortName => 'Nach Ticker (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Zum Umsortieren den Griff ziehen, zum Entfernen nach links wischen. Die Linie zeigt die letzten 30 Tage.';
 }

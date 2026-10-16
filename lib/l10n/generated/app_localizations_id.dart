@@ -1979,4 +1979,26 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Berita saham Anda';
+
+  @override
+  String get undo => 'Urungkan';
+
+  @override
+  String get watchSort => 'Urutkan';
+
+  @override
+  String get watchSortOwn => 'Urutan saya';
+
+  @override
+  String get watchSortGainers => 'Kenaikan terbesar dulu';
+
+  @override
+  String get watchSortLosers => 'Penurunan terbesar dulu';
+
+  @override
+  String get watchSortName => 'Menurut kode saham (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Seret pegangan untuk mengatur ulang, geser ke kiri untuk menghapus. Garis menunjukkan 30 hari terakhir.';
 }

@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Gawo la phindu lomwe linaperekedwa pa sheya imodzi m'chaka chathachi.",
   "glossPayoutRatio": "Gawo la phindu lomwe limagawidwa kwa eni masheya. Kupitirira 100% kampani imapereka zambiri kuposa zomwe imapeza, zomwe sizikhalitsa kawirikawiri.",
   "glossTitle": "Zikutanthauza chiyani?",
-  "watchNewsTitle": "Nkhani za masheya anu"
+  "watchNewsTitle": "Nkhani za masheya anu",
+  "undo": "Bwezerani",
+  "watchSort": "Sanjani",
+  "watchSortOwn": "Dongosolo langa",
+  "watchSortGainers": "Zokwera kwambiri poyamba",
+  "watchSortLosers": "Zotsika kwambiri poyamba",
+  "watchSortName": "Potsatira ticker (A–Z)",
+  "watchHint": "Kokani chogwirira kuti musinthe dongosolo, sunthirani kumanzere kuti muchotse. Mzere ukuwonetsa masiku 30 apitawa."
 }

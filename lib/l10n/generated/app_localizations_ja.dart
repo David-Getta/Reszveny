@@ -1914,4 +1914,25 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'マイ銘柄のニュース';
+
+  @override
+  String get undo => '元に戻す';
+
+  @override
+  String get watchSort => '並べ替え';
+
+  @override
+  String get watchSortOwn => '自分の順序';
+
+  @override
+  String get watchSortGainers => '値上がり率の高い順';
+
+  @override
+  String get watchSortLosers => '値下がり率の高い順';
+
+  @override
+  String get watchSortName => 'ティッカー順 (A–Z)';
+
+  @override
+  String get watchHint => 'ハンドルをドラッグして並べ替え、左にスワイプして削除します。線は過去30日間を示します。';
 }

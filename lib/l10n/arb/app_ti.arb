@@ -536,5 +536,12 @@
   "glossDividendPerShare": "ኣብ ዝሓለፈ ዓመት ንሓደ ኣክሲዮን ዝተኸፍለ ብጽሒት ትርፊ።",
   "glossPayoutRatio": "ከም ብጽሒት ትርፊ ዝኽፈል ክፋል ትርፊ። ልዕሊ 100% እቲ ኩባንያ ካብ ዘእትዎ ንላዕሊ ይኸፍል ኣሎ፣ እዚ ድማ ሳሕቲ እዩ ዝቕጽል።",
   "glossTitle": "እንታይ ማለት እዩ?",
-  "watchNewsTitle": "ዜና ብዛዕባ ኣክሲዮናትኩም"
+  "watchNewsTitle": "ዜና ብዛዕባ ኣክሲዮናትኩም",
+  "undo": "ኣምልስ",
+  "watchSort": "ኣሰርዕ",
+  "watchSortOwn": "ናተይ ስርዓት",
+  "watchSortGainers": "ብዝያዳ ዝወሰኹ ቅድም",
+  "watchSortLosers": "ብዝያዳ ዝጎደሉ ቅድም",
+  "watchSortName": "ብምልክት (A–Z)",
+  "watchHint": "ስርዓት ንምቕያር መትሓዚ ስሓቦ፣ ንምእላይ ናብ ጸጋም ኣንሸራትት። መስመሩ ናይ ዝሓለፉ 30 መዓልታት የርኢ።"
 }

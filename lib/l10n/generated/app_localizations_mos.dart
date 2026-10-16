@@ -1970,4 +1970,26 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Kibay f aksiõ-rã wɛɛngẽ';
+
+  @override
+  String get undo => 'Lebs-y';
+
+  @override
+  String get watchSort => 'Tik-y';
+
+  @override
+  String get watchSortOwn => 'M sẽn tik to-to';
+
+  @override
+  String get watchSortGainers => 'Sẽn zẽk wʋsg n deng';
+
+  @override
+  String get watchSortLosers => 'Sẽn sig wʋsg n deng';
+
+  @override
+  String get watchSortName => 'Bãnde (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Dɩk n yãag gãnegrã n tik-y-yã, yãag-y goabg n yiis. Sulgã wilgda rasem 30 sẽn loogã.';
 }

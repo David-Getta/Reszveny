@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Dividendo oñepagáva peteĩ acción rehe ary ohasavaʼekuépe.",
   "glossPayoutRatio": "Ganancia pehẽ oñepagáva dividendo ramo. 100% ári, empresa opaga hetave ohupytývagui, ha upéva ndaipukúi jepi.",
   "glossTitle": "¿Mbaʼe heʼise?",
-  "watchNewsTitle": "Marandu nde acción-kuéra rehegua"
+  "watchNewsTitle": "Marandu nde acción-kuéra rehegua",
+  "undo": "Mbojevy",
+  "watchSort": "Mohenda",
+  "watchSortOwn": "Che mohendapy",
+  "watchSortGainers": "Ojupivéva raẽ",
+  "watchSortLosers": "Oguejyvéva raẽ",
+  "watchSortName": "Símbolo rupi (A–Z)",
+  "watchHint": "Emboguata pe jokoha emohenda jey hag̃ua, emosyryry asúpe embogue hag̃ua. Pe línea ohechauka 30 ára ohasava'ekue."
 }

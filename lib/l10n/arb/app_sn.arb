@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Dhividhendi yakabhadharwa pasheya imwe mugore rapfuura.",
   "glossPayoutRatio": "Chikamu chepundutso chinobhadharwa sedhividhendi. Pamusoro pe100% kambani inobhadhara kupfuura zvainowana, izvo zvisingawanzogari.",
   "glossTitle": "Zvinorevei?",
-  "watchNewsTitle": "Nhau dzesheya dzako"
+  "watchNewsTitle": "Nhau dzesheya dzako",
+  "undo": "Dzosa",
+  "watchSort": "Ronga",
+  "watchSortOwn": "Kurongwa kwangu",
+  "watchSortGainers": "Zvakakwira zvikuru kutanga",
+  "watchSortLosers": "Zvakadzika zvikuru kutanga",
+  "watchSortName": "Nema ticker (A–Z)",
+  "watchHint": "Dhonza mubato kuti urongazve, svaipa kuruboshwe kuti ubvise. Mutsara unoratidza mazuva 30 apfuura."
 }

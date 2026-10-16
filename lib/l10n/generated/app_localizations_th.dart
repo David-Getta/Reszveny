@@ -1957,4 +1957,26 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'ข่าวหุ้นของคุณ';
+
+  @override
+  String get undo => 'เลิกทำ';
+
+  @override
+  String get watchSort => 'จัดเรียง';
+
+  @override
+  String get watchSortOwn => 'ลำดับของฉัน';
+
+  @override
+  String get watchSortGainers => 'ขึ้นมากที่สุดก่อน';
+
+  @override
+  String get watchSortLosers => 'ลงมากที่สุดก่อน';
+
+  @override
+  String get watchSortName => 'ตามชื่อย่อ (A–Z)';
+
+  @override
+  String get watchHint =>
+      'ลากที่จับเพื่อจัดลำดับใหม่ ปัดไปทางซ้ายเพื่อลบ เส้นแสดง 30 วันล่าสุด';
 }

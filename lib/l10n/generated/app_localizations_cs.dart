@@ -2034,4 +2034,26 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Zprávy o vašich akciích';
+
+  @override
+  String get undo => 'Zpět';
+
+  @override
+  String get watchSort => 'Seřadit';
+
+  @override
+  String get watchSortOwn => 'Moje pořadí';
+
+  @override
+  String get watchSortGainers => 'Největší růst první';
+
+  @override
+  String get watchSortLosers => 'Největší pokles první';
+
+  @override
+  String get watchSortName => 'Podle tickeru (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Přetažením úchytu změníte pořadí, přejetím doleva odeberete. Čára ukazuje posledních 30 dní.';
 }

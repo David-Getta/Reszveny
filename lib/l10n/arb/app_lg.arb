@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Amagoba agaagabibwa ku mugabo gumu mu mwaka oguwedde.",
   "glossPayoutRatio": "Ekitundu ky'amagoba ekigabibwa eri abalina emigabo. Okusukka 100% kkampuni egaba okusinga by'efuna, ekitera obutawangaala.",
   "glossTitle": "Kitegeeza ki?",
-  "watchNewsTitle": "Amawulire ku migabo gyo"
+  "watchNewsTitle": "Amawulire ku migabo gyo",
+  "undo": "Komyawo",
+  "watchSort": "Sengeka",
+  "watchSortOwn": "Ensengeka yange",
+  "watchSortGainers": "Ebyalinnye ennyo bisooke",
+  "watchSortLosers": "Ebyakka ennyo bisooke",
+  "watchSortName": "Okusinziira ku ticker (A–Z)",
+  "watchHint": "Walula ekikwatibwako okusengeka obulala, sikula ku kkono okuggyako. Olunyiriri lulaga ennaku 30 eziyise."
 }

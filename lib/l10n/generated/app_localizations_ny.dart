@@ -1989,4 +1989,26 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Nkhani za masheya anu';
+
+  @override
+  String get undo => 'Bwezerani';
+
+  @override
+  String get watchSort => 'Sanjani';
+
+  @override
+  String get watchSortOwn => 'Dongosolo langa';
+
+  @override
+  String get watchSortGainers => 'Zokwera kwambiri poyamba';
+
+  @override
+  String get watchSortLosers => 'Zotsika kwambiri poyamba';
+
+  @override
+  String get watchSortName => 'Potsatira ticker (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Kokani chogwirira kuti musinthe dongosolo, sunthirani kumanzere kuti muchotse. Mzere ukuwonetsa masiku 30 apitawa.';
 }

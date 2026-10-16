@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Ny dividenda naloa isaky ny aksiona tamin'ny herintaona farany.",
   "glossPayoutRatio": "Ny ampahany amin'ny tombony zaraina ho dividenda. Mihoatra ny 100% dia mandoa mihoatra noho izay azony ny orinasa, ary tsy maharitra matetika izany.",
   "glossTitle": "Inona no dikany?",
-  "watchNewsTitle": "Vaovao momba ny aksionanao"
+  "watchNewsTitle": "Vaovao momba ny aksionanao",
+  "undo": "Averina",
+  "watchSort": "Alahatra",
+  "watchSortOwn": "Ny filaharako",
+  "watchSortGainers": "Ny niakatra indrindra aloha",
+  "watchSortLosers": "Ny nidina indrindra aloha",
+  "watchSortName": "Araka ny ticker (A–Z)",
+  "watchHint": "Sintony ny tahony mba handaminana indray, ampitsoaho miankavia mba hanesorana. Ny tsipika dia mampiseho ny 30 andro farany."
 }

@@ -2037,4 +2037,26 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Новини про ваші акції';
+
+  @override
+  String get undo => 'Відмінити';
+
+  @override
+  String get watchSort => 'Сортування';
+
+  @override
+  String get watchSortOwn => 'Мій порядок';
+
+  @override
+  String get watchSortGainers => 'Спершу лідери зростання';
+
+  @override
+  String get watchSortLosers => 'Спершу лідери падіння';
+
+  @override
+  String get watchSortName => 'За тікером (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Перетягніть маркер, щоб змінити порядок, проведіть ліворуч, щоб видалити. Лінія показує останні 30 днів.';
 }

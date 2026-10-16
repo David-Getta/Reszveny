@@ -1991,4 +1991,26 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Iindaba ngezabelo zakho';
+
+  @override
+  String get undo => 'Buyisela';
+
+  @override
+  String get watchSort => 'Lungelelanisa';
+
+  @override
+  String get watchSortOwn => 'Ulandelelwano lwam';
+
+  @override
+  String get watchSortGainers => 'Ezinyuke kakhulu kuqala';
+
+  @override
+  String get watchSortLosers => 'Ezehle kakhulu kuqala';
+
+  @override
+  String get watchSortName => 'Nge-ticker (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Rhuqa isibambo ukuze ulungelelanise kwakhona, swayipha ekhohlo ukuze ususe. Umgca ubonisa iintsuku ezingama-30 ezidlulileyo.';
 }

@@ -1984,4 +1984,26 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Nyheter om dina aktier';
+
+  @override
+  String get undo => 'Ångra';
+
+  @override
+  String get watchSort => 'Sortera';
+
+  @override
+  String get watchSortOwn => 'Min ordning';
+
+  @override
+  String get watchSortGainers => 'Största vinnarna först';
+
+  @override
+  String get watchSortLosers => 'Största förlorarna först';
+
+  @override
+  String get watchSortName => 'Efter ticker (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Dra i handtaget för att ändra ordning, svep åt vänster för att ta bort. Linjen visar de senaste 30 dagarna.';
 }

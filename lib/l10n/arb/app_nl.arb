@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Het dividend dat het afgelopen jaar op één aandeel is uitgekeerd.",
   "glossPayoutRatio": "Het deel van de winst dat als dividend wordt uitgekeerd. Boven 100% keert het bedrijf meer uit dan het verdient, wat zelden lang houdbaar is.",
   "glossTitle": "Wat betekent dit?",
-  "watchNewsTitle": "Nieuws over je aandelen"
+  "watchNewsTitle": "Nieuws over je aandelen",
+  "undo": "Ongedaan maken",
+  "watchSort": "Sorteren",
+  "watchSortOwn": "Eigen volgorde",
+  "watchSortGainers": "Grootste stijgers eerst",
+  "watchSortLosers": "Grootste dalers eerst",
+  "watchSortName": "Op ticker (A–Z)",
+  "watchHint": "Sleep de greep om de volgorde te wijzigen, veeg naar links om te verwijderen. De lijn toont de afgelopen 30 dagen."
 }

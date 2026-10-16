@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Az elmúlt évben egy részvényre kifizetett osztalék.",
   "glossPayoutRatio": "A nyereség mekkora részét fizeti ki osztalékként. 100% fölött többet fizet, mint amennyit keres, ami ritkán tartható.",
   "glossTitle": "Mit jelent?",
-  "watchNewsTitle": "Hírek a részvényeidről"
+  "watchNewsTitle": "Hírek a részvényeidről",
+  "undo": "Visszavonás",
+  "watchSort": "Rendezés",
+  "watchSortOwn": "Saját sorrend",
+  "watchSortGainers": "Legnagyobb emelkedők elöl",
+  "watchSortLosers": "Legnagyobb esők elöl",
+  "watchSortName": "Ticker szerint (A–Z)",
+  "watchHint": "A fogantyút húzva átrendezheted, balra húzva törölheted. A vonal az elmúlt 30 napot mutatja."
 }

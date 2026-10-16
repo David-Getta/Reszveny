@@ -1978,4 +1978,26 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Xibaar yi ci say aksiyoŋ';
+
+  @override
+  String get undo => 'Delloo';
+
+  @override
+  String get watchSort => 'Toftal';
+
+  @override
+  String get watchSortOwn => 'Sama toftal';
+
+  @override
+  String get watchSortGainers => 'Yi gëna yokk jëkk';
+
+  @override
+  String get watchSortLosers => 'Yi gëna wàññiku jëkk';
+
+  @override
+  String get watchSortName => 'Ci màndarga (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Diri jàppukaay bi ngir soppi toftal bi, raaxas ci càmmooñ ngir far. Rëdd bi day wone 30 fan yi weesu.';
 }

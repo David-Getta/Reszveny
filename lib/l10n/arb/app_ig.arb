@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Dividend a kwụrụ n'otu share n'afọ gara aga.",
   "glossPayoutRatio": "Òkè uru a na-akwụ dị ka dividend. Karịa 100%, ụlọ ọrụ ahụ na-akwụ karịa ihe ọ na-enweta, nke anaghị adịgide.",
   "glossTitle": "Gịnị ka ọ pụtara?",
-  "watchNewsTitle": "Akụkọ gbasara stock gị"
+  "watchNewsTitle": "Akụkọ gbasara stock gị",
+  "undo": "Weghachi",
+  "watchSort": "Hazie",
+  "watchSortOwn": "Usoro m",
+  "watchSortGainers": "Ndị kacha rịa elu buru ụzọ",
+  "watchSortLosers": "Ndị kacha daa buru ụzọ",
+  "watchSortName": "Site na ticker (A–Z)",
+  "watchHint": "Dọrọ njide ahụ iji hazie ọzọ, swaipụ n'aka ekpe iji wepụ. Ahịrị ahụ na-egosi ụbọchị 30 gara aga."
 }

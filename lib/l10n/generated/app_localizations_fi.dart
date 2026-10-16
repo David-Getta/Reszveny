@@ -1985,4 +1985,26 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Uutisia osakkeistasi';
+
+  @override
+  String get undo => 'Kumoa';
+
+  @override
+  String get watchSort => 'Lajittele';
+
+  @override
+  String get watchSortOwn => 'Oma järjestys';
+
+  @override
+  String get watchSortGainers => 'Suurimmat nousijat ensin';
+
+  @override
+  String get watchSortLosers => 'Suurimmat laskijat ensin';
+
+  @override
+  String get watchSortName => 'Tunnuksen mukaan (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Vedä kahvasta järjestääksesi, pyyhkäise vasemmalle poistaaksesi. Viiva näyttää viimeiset 30 päivää.';
 }

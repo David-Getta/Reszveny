@@ -1985,4 +1985,26 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'სიახლეები თქვენს აქციებზე';
+
+  @override
+  String get undo => 'დაბრუნება';
+
+  @override
+  String get watchSort => 'დალაგება';
+
+  @override
+  String get watchSortOwn => 'ჩემი თანმიმდევრობა';
+
+  @override
+  String get watchSortGainers => 'ჯერ ყველაზე მზარდი';
+
+  @override
+  String get watchSortLosers => 'ჯერ ყველაზე კლებადი';
+
+  @override
+  String get watchSortName => 'ტიკერით (A–Z)';
+
+  @override
+  String get watchHint =>
+      'გადაათრიეთ სახელური რიგის შესაცვლელად, გადაფურცლეთ მარცხნივ ამოსაშლელად. ხაზი აჩვენებს ბოლო 30 დღეს.';
 }

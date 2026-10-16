@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Ang dibidendong ibinayad sa isang share sa nakaraang taon.",
   "glossPayoutRatio": "Ang bahagi ng tubo na ibinabayad bilang dibidendo. Kapag lampas sa 100%, mas malaki ang ibinabayad ng kumpanya kaysa sa kinikita nito, na bihirang tumagal.",
   "glossTitle": "Ano ang ibig sabihin?",
-  "watchNewsTitle": "Balita sa iyong mga stock"
+  "watchNewsTitle": "Balita sa iyong mga stock",
+  "undo": "I-undo",
+  "watchSort": "Ayusin",
+  "watchSortOwn": "Sariling ayos",
+  "watchSortGainers": "Pinakamalaking tumaas muna",
+  "watchSortLosers": "Pinakamalaking bumaba muna",
+  "watchSortName": "Ayon sa ticker (A–Z)",
+  "watchHint": "I-drag ang hawakan para ayusin muli, i-swipe pakaliwa para alisin. Ipinapakita ng linya ang huling 30 araw."
 }

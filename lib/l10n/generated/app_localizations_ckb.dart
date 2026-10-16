@@ -1984,4 +1984,26 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'هەواڵی پشکەکانت';
+
+  @override
+  String get undo => 'گەڕاندنەوە';
+
+  @override
+  String get watchSort => 'ڕیزکردن';
+
+  @override
+  String get watchSortOwn => 'ڕیزبەندی من';
+
+  @override
+  String get watchSortGainers => 'زۆرترین بەرزبوونەوە سەرەتا';
+
+  @override
+  String get watchSortLosers => 'زۆرترین دابەزین سەرەتا';
+
+  @override
+  String get watchSortName => 'بەپێی هێما (A–Z)';
+
+  @override
+  String get watchHint =>
+      'دەسکەکە ڕابکێشە بۆ ڕیزکردنەوە، بۆ لای چەپ ڕایبماڵە بۆ لابردن. هێڵەکە 30 ڕۆژی ڕابردوو نیشان دەدات.';
 }

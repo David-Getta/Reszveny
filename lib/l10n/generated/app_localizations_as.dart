@@ -1982,4 +1982,26 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'আপোনাৰ শ্বেয়াৰৰ বাতৰি';
+
+  @override
+  String get undo => 'আনডু';
+
+  @override
+  String get watchSort => 'সজাওক';
+
+  @override
+  String get watchSortOwn => 'মোৰ ক্ৰম';
+
+  @override
+  String get watchSortGainers => 'সৰ্বাধিক বৃদ্ধি প্ৰথমে';
+
+  @override
+  String get watchSortLosers => 'সৰ্বাধিক হ্ৰাস প্ৰথমে';
+
+  @override
+  String get watchSortName => 'টিকাৰ অনুসৰি (A–Z)';
+
+  @override
+  String get watchHint =>
+      'ক্ৰম সলনি কৰিবলৈ হেণ্ডেলটো টানক, আঁতৰাবলৈ বাওঁফালে ছোৱাইপ কৰক। ৰেখাডালে যোৱা 30 দিন দেখুৱায়।';
 }

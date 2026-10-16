@@ -1982,4 +1982,26 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'ඔබේ කොටස් පිළිබඳ පුවත්';
+
+  @override
+  String get undo => 'අස් කරන්න';
+
+  @override
+  String get watchSort => 'වර්ග කරන්න';
+
+  @override
+  String get watchSortOwn => 'මගේ අනුපිළිවෙළ';
+
+  @override
+  String get watchSortGainers => 'වැඩිම ඉහළ යාම් පළමුව';
+
+  @override
+  String get watchSortLosers => 'වැඩිම පහළ යාම් පළමුව';
+
+  @override
+  String get watchSortName => 'ටිකර් අනුව (A–Z)';
+
+  @override
+  String get watchHint =>
+      'අනුපිළිවෙළ වෙනස් කිරීමට හසුරුව අදින්න, ඉවත් කිරීමට වමට ස්වයිප් කරන්න. රේඛාව පසුගිය දින 30 පෙන්වයි.';
 }

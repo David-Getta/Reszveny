@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Utdelningen som betalats per aktie det senaste året.",
   "glossPayoutRatio": "Andelen av vinsten som delas ut. Över 100 % delar bolaget ut mer än det tjänar, vilket sällan håller i längden.",
   "glossTitle": "Vad betyder det?",
-  "watchNewsTitle": "Nyheter om dina aktier"
+  "watchNewsTitle": "Nyheter om dina aktier",
+  "undo": "Ångra",
+  "watchSort": "Sortera",
+  "watchSortOwn": "Min ordning",
+  "watchSortGainers": "Största vinnarna först",
+  "watchSortLosers": "Största förlorarna först",
+  "watchSortName": "Efter ticker (A–Z)",
+  "watchHint": "Dra i handtaget för att ändra ordning, svep åt vänster för att ta bort. Linjen visar de senaste 30 dagarna."
 }

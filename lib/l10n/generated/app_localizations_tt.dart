@@ -1980,4 +1980,26 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Акцияләрегез турында яңалыклар';
+
+  @override
+  String get undo => 'Кире кайтару';
+
+  @override
+  String get watchSort => 'Сортлау';
+
+  @override
+  String get watchSortOwn => 'Минем тәртибем';
+
+  @override
+  String get watchSortGainers => 'Иң күп күтәрелгәннәр башта';
+
+  @override
+  String get watchSortLosers => 'Иң күп төшкәннәр башта';
+
+  @override
+  String get watchSortName => 'Тикер буенча (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Тәртипне үзгәртү өчен тотканы тартыгыз, бетерү өчен сулга шудырыгыз. Сызык соңгы 30 көнне күрсәтә.';
 }

@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Dîvîdenda ku di sala borî de ji bo yek pişkê hatiye dayîn.",
   "glossPayoutRatio": "Para qezencê ya ku wekî dîvîdend tê dayîn. Ji 100% zêdetir şirket ji qezenca xwe zêdetir dide, ku kêm caran dom dike.",
   "glossTitle": "Ev tê çi wateyê?",
-  "watchNewsTitle": "Nûçeyên pişkên te"
+  "watchNewsTitle": "Nûçeyên pişkên te",
+  "undo": "Vegerîne",
+  "watchSort": "Rêz bike",
+  "watchSortOwn": "Rêza min",
+  "watchSortGainers": "Yên herî zêde bilind bûne pêşî",
+  "watchSortLosers": "Yên herî zêde daketine pêşî",
+  "watchSortName": "Li gorî sembolê (A–Z)",
+  "watchHint": "Destikê bikişîne da ku rêzê biguherînî, ber bi çepê ve bişemitîne da ku rakî. Xet 30 rojên dawî nîşan dide."
 }

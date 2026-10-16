@@ -1989,4 +1989,26 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Marandu nde acción-kuéra rehegua';
+
+  @override
+  String get undo => 'Mbojevy';
+
+  @override
+  String get watchSort => 'Mohenda';
+
+  @override
+  String get watchSortOwn => 'Che mohendapy';
+
+  @override
+  String get watchSortGainers => 'Ojupivéva raẽ';
+
+  @override
+  String get watchSortLosers => 'Oguejyvéva raẽ';
+
+  @override
+  String get watchSortName => 'Símbolo rupi (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Emboguata pe jokoha emohenda jey hag̃ua, emosyryry asúpe embogue hag̃ua. Pe línea ohechauka 30 ára ohasava\'ekue.';
 }

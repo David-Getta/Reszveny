@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Geɗal nafoore yoɓaangal e aksiyoŋ gooto e hitaande ɓennunde.",
   "glossPayoutRatio": "Geɗal nafoore yoɓetee jom aksiyoŋ'en. Ɓuri 100% kompaañi ndii ina yoɓa ko ɓuri ko heɓata, ɗum ɓooyataa.",
   "glossTitle": "Ko ɗum firi?",
-  "watchNewsTitle": "Kabaruuji aksiyoŋ maa"
+  "watchNewsTitle": "Kabaruuji aksiyoŋ maa",
+  "undo": "Firtu",
+  "watchSort": "Toppitin",
+  "watchSortOwn": "Doggol am",
+  "watchSortGainers": "Ɓeyditiiɓe ɓurɗi adan",
+  "watchSortLosers": "Ustiiɓe ɓurɗi adan",
+  "watchSortName": "E kod (A–Z)",
+  "watchHint": "Foo jogorgal ngal ngam waylude doggol, taw nano ngam ittude. Ñiiɓol ngol hollat balɗe 30 ɓennuɗe."
 }

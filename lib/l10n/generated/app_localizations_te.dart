@@ -1989,4 +1989,26 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'మీ స్టాక్‌ల వార్తలు';
+
+  @override
+  String get undo => 'చర్యరద్దు';
+
+  @override
+  String get watchSort => 'క్రమబద్ధీకరించు';
+
+  @override
+  String get watchSortOwn => 'నా క్రమం';
+
+  @override
+  String get watchSortGainers => 'అత్యధిక పెరుగుదల ముందు';
+
+  @override
+  String get watchSortLosers => 'అత్యధిక తగ్గుదల ముందు';
+
+  @override
+  String get watchSortName => 'టికర్ ప్రకారం (A–Z)';
+
+  @override
+  String get watchHint =>
+      'క్రమాన్ని మార్చడానికి హ్యాండిల్‌ను లాగండి, తీసివేయడానికి ఎడమకు స్వైప్ చేయండి. రేఖ గత 30 రోజులను చూపుతుంది.';
 }

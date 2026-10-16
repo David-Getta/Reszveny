@@ -1982,4 +1982,26 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'तपाईंका शेयरका समाचार';
+
+  @override
+  String get undo => 'पूर्ववत् गर्नुहोस्';
+
+  @override
+  String get watchSort => 'क्रमबद्ध गर्नुहोस्';
+
+  @override
+  String get watchSortOwn => 'मेरो क्रम';
+
+  @override
+  String get watchSortGainers => 'सबैभन्दा बढी बढेका पहिले';
+
+  @override
+  String get watchSortLosers => 'सबैभन्दा बढी घटेका पहिले';
+
+  @override
+  String get watchSortName => 'टिकर अनुसार (A–Z)';
+
+  @override
+  String get watchHint =>
+      'क्रम बदल्न ह्यान्डल तान्नुहोस्, हटाउन बायाँ स्वाइप गर्नुहोस्। रेखाले पछिल्ला 30 दिन देखाउँछ।';
 }

@@ -3558,6 +3558,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'News on your stocks'**
   String get watchNewsTitle;
+
+  /// Snack bar action: undo the last action.
+  ///
+  /// In en, this message translates to:
+  /// **'Undo'**
+  String get undo;
+
+  /// Tooltip of the sort button on the favorites (watchlist) page.
+  ///
+  /// In en, this message translates to:
+  /// **'Sort'**
+  String get watchSort;
+
+  /// Sort option on the favorites page: the user's own order.
+  ///
+  /// In en, this message translates to:
+  /// **'My order'**
+  String get watchSortOwn;
+
+  /// Sort option: today's biggest gainers first.
+  ///
+  /// In en, this message translates to:
+  /// **'Biggest gainers first'**
+  String get watchSortGainers;
+
+  /// Sort option: today's biggest losers first.
+  ///
+  /// In en, this message translates to:
+  /// **'Biggest losers first'**
+  String get watchSortLosers;
+
+  /// Sort option: alphabetically by ticker symbol.
+  ///
+  /// In en, this message translates to:
+  /// **'By ticker (A–Z)'**
+  String get watchSortName;
+
+  /// Hint at the top of the favorites (watchlist) page.
+  ///
+  /// In en, this message translates to:
+  /// **'Drag the handle to reorder, swipe left to remove. The line shows the last 30 days.'**
+  String get watchHint;
 }
 
 class _AppLocalizationsDelegate

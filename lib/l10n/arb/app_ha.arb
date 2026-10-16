@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Rabon ribar da aka biya kan hannun jari ɗaya a shekarar da ta wuce.",
   "glossPayoutRatio": "Kason ribar da ake biya a matsayin rabon riba. Sama da 100% kamfanin yana biyan fiye da abin da yake samu, wanda ba kasafai yake ɗorewa ba.",
   "glossTitle": "Me yake nufi?",
-  "watchNewsTitle": "Labarai kan hannun jarinka"
+  "watchNewsTitle": "Labarai kan hannun jarinka",
+  "undo": "Mayar",
+  "watchSort": "Jera",
+  "watchSortOwn": "Tsarina",
+  "watchSortGainers": "Mafi hauhawa farko",
+  "watchSortLosers": "Mafi faɗuwa farko",
+  "watchSortName": "Ta ticker (A–Z)",
+  "watchHint": "Ja maƙalli don sake tsarawa, goge zuwa hagu don cirewa. Layin yana nuna kwanaki 30 da suka gabata."
 }

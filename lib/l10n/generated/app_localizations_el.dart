@@ -1991,4 +1991,26 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Ειδήσεις για τις μετοχές σας';
+
+  @override
+  String get undo => 'Αναίρεση';
+
+  @override
+  String get watchSort => 'Ταξινόμηση';
+
+  @override
+  String get watchSortOwn => 'Η σειρά μου';
+
+  @override
+  String get watchSortGainers => 'Μεγαλύτερη άνοδος πρώτα';
+
+  @override
+  String get watchSortLosers => 'Μεγαλύτερη πτώση πρώτα';
+
+  @override
+  String get watchSortName => 'Κατά σύμβολο (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Σύρετε τη λαβή για αναδιάταξη, σαρώστε αριστερά για αφαίρεση. Η γραμμή δείχνει τις τελευταίες 30 ημέρες.';
 }

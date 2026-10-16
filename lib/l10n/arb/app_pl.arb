@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Dywidenda wypłacona na jedną akcję w ostatnim roku.",
   "glossPayoutRatio": "Część zysku wypłacana jako dywidenda. Powyżej 100% spółka wypłaca więcej, niż zarabia, co rzadko trwa długo.",
   "glossTitle": "Co to znaczy?",
-  "watchNewsTitle": "Wiadomości o Twoich akcjach"
+  "watchNewsTitle": "Wiadomości o Twoich akcjach",
+  "undo": "Cofnij",
+  "watchSort": "Sortuj",
+  "watchSortOwn": "Moja kolejność",
+  "watchSortGainers": "Największe wzrosty najpierw",
+  "watchSortLosers": "Największe spadki najpierw",
+  "watchSortName": "Według tickera (A–Z)",
+  "watchHint": "Przeciągnij uchwyt, aby zmienić kolejność, przesuń w lewo, aby usunąć. Linia pokazuje ostatnie 30 dni."
 }

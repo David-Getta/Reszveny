@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Dividén anu dibayarkeun pikeun hiji saham salila sataun ka tukang.",
   "glossPayoutRatio": "Bagian laba anu dibayarkeun salaku dividén. Leuwih ti 100% pausahaan mayar leuwih loba batan anu dimeunangkeun, anu jarang lumangsung lila.",
   "glossTitle": "Naon hartina?",
-  "watchNewsTitle": "Warta saham anjeun"
+  "watchNewsTitle": "Warta saham anjeun",
+  "undo": "Balikeun",
+  "watchSort": "Runtuykeun",
+  "watchSortOwn": "Runtuyan abdi",
+  "watchSortGainers": "Naék panggedéna heula",
+  "watchSortLosers": "Turun panggedéna heula",
+  "watchSortName": "Dumasar kode saham (A–Z)",
+  "watchHint": "Sered cepengan pikeun ngarobih runtuyan, usapkeun ka kénca pikeun miceun. Garis nembongkeun 30 dinten pamungkas."
 }

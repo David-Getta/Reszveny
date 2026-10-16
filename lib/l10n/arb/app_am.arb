@@ -536,5 +536,12 @@
   "glossDividendPerShare": "ባለፈው ዓመት ለአንድ አክሲዮን የተከፈለ የትርፍ ድርሻ።",
   "glossPayoutRatio": "እንደ የትርፍ ድርሻ የሚከፈለው የትርፍ ክፍል። ከ100% በላይ ከሆነ ኩባንያው ከሚያገኘው በላይ ይከፍላል፤ ይህ እምብዛም አይዘልቅም።",
   "glossTitle": "ምን ማለት ነው?",
-  "watchNewsTitle": "ስለ አክሲዮኖችዎ ዜና"
+  "watchNewsTitle": "ስለ አክሲዮኖችዎ ዜና",
+  "undo": "ቀልብስ",
+  "watchSort": "ደርድር",
+  "watchSortOwn": "የእኔ ቅደም ተከተል",
+  "watchSortGainers": "ከፍተኛ ጭማሪ ያላቸው መጀመሪያ",
+  "watchSortLosers": "ከፍተኛ ቅናሽ ያላቸው መጀመሪያ",
+  "watchSortName": "በምልክት (A–Z)",
+  "watchHint": "ቅደም ተከተሉን ለመቀየር መያዣውን ይጎትቱ፣ ለማስወገድ ወደ ግራ ያንሸራትቱ። መስመሩ ያለፉትን 30 ቀናት ያሳያል።"
 }

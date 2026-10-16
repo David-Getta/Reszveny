@@ -1982,4 +1982,26 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Kaseɛbɔ fa wo nkyɛfa ho';
+
+  @override
+  String get undo => 'San kɔ';
+
+  @override
+  String get watchSort => 'Hyehyɛ';
+
+  @override
+  String get watchSortOwn => 'Me nhyehyɛe';
+
+  @override
+  String get watchSortGainers => 'Nea ɛforo kɛse di kan';
+
+  @override
+  String get watchSortLosers => 'Nea ɛtew kɛse di kan';
+
+  @override
+  String get watchSortName => 'Ticker so (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Twe nsakuraeɛ no na sesa nhyehyɛe no, twe kɔ benkum na yi fi mu. Ntwamu no kyerɛ nnafua 30 a atwam.';
 }

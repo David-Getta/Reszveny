@@ -1988,4 +1988,26 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Lumu lua ba action bebe';
+
+  @override
+  String get undo => 'Alukila';
+
+  @override
+  String get watchSort => 'Longolola';
+
+  @override
+  String get watchSortOwn => 'Bulongolodi buanyi';
+
+  @override
+  String get watchSortGainers => 'Bidi bibande bikole kumpala';
+
+  @override
+  String get watchSortLosers => 'Bidi bipueke bikole kumpala';
+
+  @override
+  String get watchSortName => 'Bilondeshile ticker (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Koka tshikuatshilu bua kulongolola kabidi, sesa ku tshiakabadi bua kumbusha. Mulongo udi uleja matuku 30 adi apite.';
 }

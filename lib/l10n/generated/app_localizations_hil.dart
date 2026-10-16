@@ -1995,4 +1995,26 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Balita sa imo mga stock';
+
+  @override
+  String get undo => 'I-undo';
+
+  @override
+  String get watchSort => 'Hanay';
+
+  @override
+  String get watchSortOwn => 'Akon nga hanay';
+
+  @override
+  String get watchSortGainers => 'Pinakadako nga pagtaas anay';
+
+  @override
+  String get watchSortLosers => 'Pinakadako nga pagnubo anay';
+
+  @override
+  String get watchSortName => 'Suno sa ticker (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Guyuda ang hawiran agod hanayon liwat, i-swipe pawala agod kuhaon. Ginapakita sang linya ang nagligad nga 30 ka adlaw.';
 }

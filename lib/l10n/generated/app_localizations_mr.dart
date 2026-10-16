@@ -1983,4 +1983,26 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'तुमच्या शेअर्सच्या बातम्या';
+
+  @override
+  String get undo => 'पूर्ववत करा';
+
+  @override
+  String get watchSort => 'क्रमवारी लावा';
+
+  @override
+  String get watchSortOwn => 'माझा क्रम';
+
+  @override
+  String get watchSortGainers => 'सर्वाधिक वाढ आधी';
+
+  @override
+  String get watchSortLosers => 'सर्वाधिक घट आधी';
+
+  @override
+  String get watchSortName => 'टिकरनुसार (A–Z)';
+
+  @override
+  String get watchHint =>
+      'क्रम बदलण्यासाठी हँडल ओढा, काढण्यासाठी डावीकडे स्वाइप करा. रेषा मागील 30 दिवस दाखवते.';
 }

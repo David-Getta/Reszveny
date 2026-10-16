@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Son bir yılda bir hisse için ödenen temettü.",
   "glossPayoutRatio": "Kârın temettü olarak dağıtılan payı. %100'ün üzerinde şirket kazandığından fazlasını öder; bu nadiren uzun sürer.",
   "glossTitle": "Ne anlama geliyor?",
-  "watchNewsTitle": "Hisselerinizle ilgili haberler"
+  "watchNewsTitle": "Hisselerinizle ilgili haberler",
+  "undo": "Geri al",
+  "watchSort": "Sırala",
+  "watchSortOwn": "Kendi sıram",
+  "watchSortGainers": "En çok yükselenler önce",
+  "watchSortLosers": "En çok düşenler önce",
+  "watchSortName": "Sembole göre (A–Z)",
+  "watchHint": "Sıralamak için tutamacı sürükle, kaldırmak için sola kaydır. Çizgi son 30 günü gösterir."
 }

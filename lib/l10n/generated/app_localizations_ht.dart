@@ -1982,4 +1982,26 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Nouvèl sou aksyon ou yo';
+
+  @override
+  String get undo => 'Defèt';
+
+  @override
+  String get watchSort => 'Triye';
+
+  @override
+  String get watchSortOwn => 'Lòd pa m';
+
+  @override
+  String get watchSortGainers => 'Pi gwo monte an premye';
+
+  @override
+  String get watchSortLosers => 'Pi gwo desann an premye';
+
+  @override
+  String get watchSortName => 'Pa senbòl (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Trennen manch lan pou chanje lòd, glise sou bò goch pou retire. Liy lan montre 30 dènye jou yo.';
 }

@@ -1974,4 +1974,26 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'ཁྱེད་ཀྱི་ཧུར་ཁག་གི་གསར་འགྱུར';
+
+  @override
+  String get undo => 'ཕྱིར་ལྡོག';
+
+  @override
+  String get watchSort => 'རིམ་སྒྲིག';
+
+  @override
+  String get watchSortOwn => 'ངའི་གོ་རིམ';
+
+  @override
+  String get watchSortGainers => 'འཕར་ཆེ་ཤོས་སྔོན་ལ';
+
+  @override
+  String get watchSortLosers => 'ཆག་ཆེ་ཤོས་སྔོན་ལ';
+
+  @override
+  String get watchSortName => 'ཨང་རྟགས་ལྟར (A–Z)';
+
+  @override
+  String get watchHint =>
+      'གོ་རིམ་བསྒྱུར་བར་ལག་ཡུ་འཐེན། སུབ་པར་གཡོན་ཕྱོགས་སུ་འདྲུད། ཐིག་གིས་ཉིན་ 30 སྔོན་མ་སྟོན།';
 }

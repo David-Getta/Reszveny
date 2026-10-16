@@ -1977,4 +1977,26 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'अहाँक शेयरक समाचार';
+
+  @override
+  String get undo => 'पूर्ववत करू';
+
+  @override
+  String get watchSort => 'क्रमबद्ध करू';
+
+  @override
+  String get watchSortOwn => 'हमर क्रम';
+
+  @override
+  String get watchSortGainers => 'सभसँ बेसी बढ़ल पहिने';
+
+  @override
+  String get watchSortLosers => 'सभसँ बेसी खसल पहिने';
+
+  @override
+  String get watchSortName => 'टिकर अनुसार (A–Z)';
+
+  @override
+  String get watchHint =>
+      'क्रम बदलबाक लेल हैंडल खींचू, हटेबाक लेल बामा दिस स्वाइप करू। रेखा पछिला 30 दिन देखबैत अछि।';
 }

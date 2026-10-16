@@ -1989,4 +1989,26 @@ class AppLocalizationsRn extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Amakuru y\'imigabane yawe';
+
+  @override
+  String get undo => 'Subiza';
+
+  @override
+  String get watchSort => 'Tunganya';
+
+  @override
+  String get watchSortOwn => 'Urutonde rwanje';
+
+  @override
+  String get watchSortGainers => 'Ivyaduze cane imbere';
+
+  @override
+  String get watchSortLosers => 'Ivyamanutse cane imbere';
+
+  @override
+  String get watchSortName => 'Ukurikije ticker (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Kwega igifashwa kugira usubire gutunganya, nyereza ibumoso kugira ukureko. Umurongo werekana imisi 30 iheze.';
 }

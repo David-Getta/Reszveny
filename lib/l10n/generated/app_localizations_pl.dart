@@ -2041,4 +2041,26 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Wiadomości o Twoich akcjach';
+
+  @override
+  String get undo => 'Cofnij';
+
+  @override
+  String get watchSort => 'Sortuj';
+
+  @override
+  String get watchSortOwn => 'Moja kolejność';
+
+  @override
+  String get watchSortGainers => 'Największe wzrosty najpierw';
+
+  @override
+  String get watchSortLosers => 'Największe spadki najpierw';
+
+  @override
+  String get watchSortName => 'Według tickera (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Przeciągnij uchwyt, aby zmienić kolejność, przesuń w lewo, aby usunąć. Linia pokazuje ostatnie 30 dni.';
 }

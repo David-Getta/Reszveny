@@ -1993,4 +1993,26 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Actualités de vos actions';
+
+  @override
+  String get undo => 'Annuler';
+
+  @override
+  String get watchSort => 'Trier';
+
+  @override
+  String get watchSortOwn => 'Mon ordre';
+
+  @override
+  String get watchSortGainers => 'Plus fortes hausses d\'abord';
+
+  @override
+  String get watchSortLosers => 'Plus fortes baisses d\'abord';
+
+  @override
+  String get watchSortName => 'Par ticker (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Faites glisser la poignée pour réorganiser, balayez vers la gauche pour retirer. La ligne montre les 30 derniers jours.';
 }

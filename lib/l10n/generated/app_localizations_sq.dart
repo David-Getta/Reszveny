@@ -1990,4 +1990,26 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Lajme për aksionet tuaja';
+
+  @override
+  String get undo => 'Zhbëj';
+
+  @override
+  String get watchSort => 'Rendit';
+
+  @override
+  String get watchSortOwn => 'Renditja ime';
+
+  @override
+  String get watchSortGainers => 'Rritjet më të mëdha së pari';
+
+  @override
+  String get watchSortLosers => 'Rëniet më të mëdha së pari';
+
+  @override
+  String get watchSortName => 'Sipas simbolit (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Tërhiq dorezën për të rirenditur, rrëshqit majtas për ta hequr. Vija tregon 30 ditët e fundit.';
 }

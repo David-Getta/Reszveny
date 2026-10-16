@@ -1993,4 +1993,26 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Ditaba ka dishere tsa hao';
+
+  @override
+  String get undo => 'Etsolla';
+
+  @override
+  String get watchSort => 'Hlophisa';
+
+  @override
+  String get watchSortOwn => 'Tatellano ya ka';
+
+  @override
+  String get watchSortGainers => 'Tse nyolohileng haholo pele';
+
+  @override
+  String get watchSortLosers => 'Tse theohileng haholo pele';
+
+  @override
+  String get watchSortName => 'Ka ticker (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Hula sehokelo ho hlophisa bocha, sutumetsa ka ho le letshehadi ho tlosa. Mola o bontsha matsatsi a 30 a fetileng.';
 }

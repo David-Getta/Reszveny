@@ -1987,4 +1987,26 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Berita saham anda';
+
+  @override
+  String get undo => 'Buat asal';
+
+  @override
+  String get watchSort => 'Isih';
+
+  @override
+  String get watchSortOwn => 'Susunan saya';
+
+  @override
+  String get watchSortGainers => 'Kenaikan terbesar dahulu';
+
+  @override
+  String get watchSortLosers => 'Penurunan terbesar dahulu';
+
+  @override
+  String get watchSortName => 'Mengikut ticker (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Seret pemegang untuk menyusun semula, leret ke kiri untuk mengalih keluar. Garisan menunjukkan 30 hari lalu.';
 }

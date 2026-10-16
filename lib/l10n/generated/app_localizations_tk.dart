@@ -1982,4 +1982,26 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Paýnamalaryňyz barada habarlar';
+
+  @override
+  String get undo => 'Yzyna al';
+
+  @override
+  String get watchSort => 'Tertiple';
+
+  @override
+  String get watchSortOwn => 'Meniň tertibim';
+
+  @override
+  String get watchSortGainers => 'Iň köp ýokarlananlar ilki';
+
+  @override
+  String get watchSortLosers => 'Iň köp peselenler ilki';
+
+  @override
+  String get watchSortName => 'Tiker boýunça (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Tertibi üýtgetmek üçin tutawajy süýräň, aýyrmak üçin çepe süýşüriň. Çyzyk soňky 30 güni görkezýär.';
 }

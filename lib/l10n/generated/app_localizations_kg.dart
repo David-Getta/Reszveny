@@ -1990,4 +1990,26 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Nsangu ya ba action na nge';
+
+  @override
+  String get undo => 'Vutula';
+
+  @override
+  String get watchSort => 'Tula na ndonga';
+
+  @override
+  String get watchSortOwn => 'Ndonga na mono';
+
+  @override
+  String get watchSortGainers => 'Yina me matama mingi ntete';
+
+  @override
+  String get watchSortLosers => 'Yina me kulumuka mingi ntete';
+
+  @override
+  String get watchSortName => 'Na ticker (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Benda kisimbidilu sambu na kusoba ndonga, nyerula na lumoso sambu na kukatula. Mulongo ke monisa bilumbu 30 ya me luta.';
 }

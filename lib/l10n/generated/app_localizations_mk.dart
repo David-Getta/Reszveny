@@ -2002,4 +2002,26 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Вести за вашите акции';
+
+  @override
+  String get undo => 'Врати';
+
+  @override
+  String get watchSort => 'Подреди';
+
+  @override
+  String get watchSortOwn => 'Мој редослед';
+
+  @override
+  String get watchSortGainers => 'Најголем раст прво';
+
+  @override
+  String get watchSortLosers => 'Најголем пад прво';
+
+  @override
+  String get watchSortName => 'По тикер (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Повлечете ја рачката за прередување, лизгајте налево за отстранување. Линијата ги прикажува последните 30 дена.';
 }

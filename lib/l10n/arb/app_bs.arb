@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Dividenda isplaćena po jednoj dionici u posljednjih godinu dana.",
   "glossPayoutRatio": "Dio dobiti isplaćen kao dividende. Iznad 100% kompanija isplaćuje više nego što zarađuje, što rijetko traje.",
   "glossTitle": "Šta to znači?",
-  "watchNewsTitle": "Vijesti o vašim dionicama"
+  "watchNewsTitle": "Vijesti o vašim dionicama",
+  "undo": "Poništi",
+  "watchSort": "Sortiraj",
+  "watchSortOwn": "Moj redoslijed",
+  "watchSortGainers": "Najveći rast prvo",
+  "watchSortLosers": "Najveći pad prvo",
+  "watchSortName": "Po tikeru (A–Z)",
+  "watchHint": "Povucite ručku za promjenu redoslijeda, prevucite ulijevo za uklanjanje. Linija prikazuje posljednjih 30 dana."
 }

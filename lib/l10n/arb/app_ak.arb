@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Mfaso kyɛ a wɔtuae wɔ kyɛfa baako so wɔ afe a atwam mu.",
   "glossPayoutRatio": "Mfaso no ɔfa a wɔde kyɛ sɛ mfaso kyɛ. Sɛ ɛboro 100% a, adwumakuw no tua bɛboro nea ɛnya, na ɛntaa nkyɛ.",
   "glossTitle": "Ɛkyerɛ dɛn?",
-  "watchNewsTitle": "Kaseɛbɔ fa wo nkyɛfa ho"
+  "watchNewsTitle": "Kaseɛbɔ fa wo nkyɛfa ho",
+  "undo": "San kɔ",
+  "watchSort": "Hyehyɛ",
+  "watchSortOwn": "Me nhyehyɛe",
+  "watchSortGainers": "Nea ɛforo kɛse di kan",
+  "watchSortLosers": "Nea ɛtew kɛse di kan",
+  "watchSortName": "Ticker so (A–Z)",
+  "watchHint": "Twe nsakuraeɛ no na sesa nhyehyɛe no, twe kɔ benkum na yi fi mu. Ntwamu no kyerɛ nnafua 30 a atwam."
 }

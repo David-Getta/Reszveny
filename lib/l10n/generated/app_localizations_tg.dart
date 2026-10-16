@@ -1985,4 +1985,26 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Хабарҳо дар бораи саҳмияҳои шумо';
+
+  @override
+  String get undo => 'Баргардондан';
+
+  @override
+  String get watchSort => 'Мураттабсозӣ';
+
+  @override
+  String get watchSortOwn => 'Тартиби ман';
+
+  @override
+  String get watchSortGainers => 'Аввал бештар баландшудаҳо';
+
+  @override
+  String get watchSortLosers => 'Аввал бештар пастшудаҳо';
+
+  @override
+  String get watchSortName => 'Аз рӯи тикер (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Барои тағйир додани тартиб дастакро кашед, барои хориҷ кардан ба чап лағжонед. Хат 30 рӯзи охирро нишон медиҳад.';
 }

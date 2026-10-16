@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Il dividendo pagato su una singola azione nell'ultimo anno.",
   "glossPayoutRatio": "La quota dell'utile distribuita come dividendi. Sopra il 100% l'azienda paga più di quanto guadagna, cosa che raramente dura.",
   "glossTitle": "Che cosa significa?",
-  "watchNewsTitle": "Notizie sui tuoi titoli"
+  "watchNewsTitle": "Notizie sui tuoi titoli",
+  "undo": "Annulla",
+  "watchSort": "Ordina",
+  "watchSortOwn": "Il mio ordine",
+  "watchSortGainers": "Maggiori rialzi prima",
+  "watchSortLosers": "Maggiori ribassi prima",
+  "watchSortName": "Per ticker (A–Z)",
+  "watchHint": "Trascina la maniglia per riordinare, scorri a sinistra per rimuovere. La linea mostra gli ultimi 30 giorni."
 }

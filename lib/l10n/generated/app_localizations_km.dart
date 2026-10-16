@@ -1966,4 +1966,26 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'ព័ត៌មានអំពីភាគហ៊ុនរបស់អ្នក';
+
+  @override
+  String get undo => 'មិនធ្វើវិញ';
+
+  @override
+  String get watchSort => 'តម្រៀប';
+
+  @override
+  String get watchSortOwn => 'លំដាប់របស់ខ្ញុំ';
+
+  @override
+  String get watchSortGainers => 'ឡើងខ្លាំងបំផុតមុន';
+
+  @override
+  String get watchSortLosers => 'ធ្លាក់ខ្លាំងបំផុតមុន';
+
+  @override
+  String get watchSortName => 'តាមនិមិត្តសញ្ញា (A–Z)';
+
+  @override
+  String get watchHint =>
+      'អូសដងកាន់ដើម្បីរៀបលំដាប់ឡើងវិញ អូសទៅឆ្វេងដើម្បីដកចេញ។ ខ្សែបង្ហាញ 30 ថ្ងៃចុងក្រោយ។';
 }

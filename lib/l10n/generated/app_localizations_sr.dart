@@ -2021,4 +2021,26 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Вести о вашим акцијама';
+
+  @override
+  String get undo => 'Опозови';
+
+  @override
+  String get watchSort => 'Сортирај';
+
+  @override
+  String get watchSortOwn => 'Мој редослед';
+
+  @override
+  String get watchSortGainers => 'Највећи раст прво';
+
+  @override
+  String get watchSortLosers => 'Највећи пад прво';
+
+  @override
+  String get watchSortName => 'По тикеру (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Превуците ручицу за промену редоследа, превуците улево за уклањање. Линија приказује последњих 30 дана.';
 }

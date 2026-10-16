@@ -1991,4 +1991,26 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'നിങ്ങളുടെ ഓഹരികളുടെ വാർത്തകൾ';
+
+  @override
+  String get undo => 'പഴയപടിയാക്കുക';
+
+  @override
+  String get watchSort => 'അടുക്കുക';
+
+  @override
+  String get watchSortOwn => 'എന്റെ ക്രമം';
+
+  @override
+  String get watchSortGainers => 'ഏറ്റവും കൂടുതൽ ഉയർന്നവ ആദ്യം';
+
+  @override
+  String get watchSortLosers => 'ഏറ്റവും കൂടുതൽ ഇടിഞ്ഞവ ആദ്യം';
+
+  @override
+  String get watchSortName => 'ടിക്കർ പ്രകാരം (A–Z)';
+
+  @override
+  String get watchHint =>
+      'ക്രമം മാറ്റാൻ ഹാൻഡിൽ വലിച്ചിടുക, നീക്കം ചെയ്യാൻ ഇടത്തേക്ക് സ്വൈപ്പ് ചെയ്യുക. വര കഴിഞ്ഞ 30 ദിവസം കാണിക്കുന്നു.';
 }

@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Ang dibidendo nga ginbayad sa isa ka share sa nagligad nga tuig.",
   "glossPayoutRatio": "Ang parte sang ganansya nga ginabayad bilang dibidendo. Labaw sa 100% ang kompanya nagabayad sang labaw sa iya ginakita, nga talagsa lang magdugay.",
   "glossTitle": "Ano ang buot silingon?",
-  "watchNewsTitle": "Balita sa imo mga stock"
+  "watchNewsTitle": "Balita sa imo mga stock",
+  "undo": "I-undo",
+  "watchSort": "Hanay",
+  "watchSortOwn": "Akon nga hanay",
+  "watchSortGainers": "Pinakadako nga pagtaas anay",
+  "watchSortLosers": "Pinakadako nga pagnubo anay",
+  "watchSortName": "Suno sa ticker (A–Z)",
+  "watchHint": "Guyuda ang hawiran agod hanayon liwat, i-swipe pawala agod kuhaon. Ginapakita sang linya ang nagligad nga 30 ka adlaw."
 }

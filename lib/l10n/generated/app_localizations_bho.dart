@@ -1979,4 +1979,26 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'रउरा शेयरन के खबर';
+
+  @override
+  String get undo => 'वापस करीं';
+
+  @override
+  String get watchSort => 'क्रम लगाईं';
+
+  @override
+  String get watchSortOwn => 'हमार क्रम';
+
+  @override
+  String get watchSortGainers => 'सबसे बढ़े वाला पहिले';
+
+  @override
+  String get watchSortLosers => 'सबसे गिरे वाला पहिले';
+
+  @override
+  String get watchSortName => 'टिकर से (A–Z)';
+
+  @override
+  String get watchHint =>
+      'क्रम बदले खातिर हैंडल खींचीं, हटावे खातिर बाईं ओर स्वाइप करीं। रेखा पिछला 30 दिन देखावेले।';
 }

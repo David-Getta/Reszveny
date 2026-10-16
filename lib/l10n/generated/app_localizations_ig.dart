@@ -1978,4 +1978,26 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Akụkọ gbasara stock gị';
+
+  @override
+  String get undo => 'Weghachi';
+
+  @override
+  String get watchSort => 'Hazie';
+
+  @override
+  String get watchSortOwn => 'Usoro m';
+
+  @override
+  String get watchSortGainers => 'Ndị kacha rịa elu buru ụzọ';
+
+  @override
+  String get watchSortLosers => 'Ndị kacha daa buru ụzọ';
+
+  @override
+  String get watchSortName => 'Site na ticker (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Dọrọ njide ahụ iji hazie ọzọ, swaipụ n\'aka ekpe iji wepụ. Ahịrị ahụ na-egosi ụbọchị 30 gara aga.';
 }

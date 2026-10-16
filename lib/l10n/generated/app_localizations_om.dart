@@ -1990,4 +1990,26 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Oduu aksiyoonota keessanii';
+
+  @override
+  String get undo => 'Deebisi';
+
+  @override
+  String get watchSort => 'Tartiibessi';
+
+  @override
+  String get watchSortOwn => 'Tartiiba koo';
+
+  @override
+  String get watchSortGainers => 'Kan baay\'ee ol ka\'e dura';
+
+  @override
+  String get watchSortLosers => 'Kan baay\'ee gad bu\'e dura';
+
+  @override
+  String get watchSortName => 'Mallattoon (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Tartiiba jijjiiruuf qabduu harkisi, haquuf gara bitaatti sossoosi. Sararri guyyoota 30 darban agarsiisa.';
 }

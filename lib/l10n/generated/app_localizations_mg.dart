@@ -1996,4 +1996,26 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Vaovao momba ny aksionanao';
+
+  @override
+  String get undo => 'Averina';
+
+  @override
+  String get watchSort => 'Alahatra';
+
+  @override
+  String get watchSortOwn => 'Ny filaharako';
+
+  @override
+  String get watchSortGainers => 'Ny niakatra indrindra aloha';
+
+  @override
+  String get watchSortLosers => 'Ny nidina indrindra aloha';
+
+  @override
+  String get watchSortName => 'Araka ny ticker (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Sintony ny tahony mba handaminana indray, ampitsoaho miankavia mba hanesorana. Ny tsipika dia mampiseho ny 30 andro farany.';
 }

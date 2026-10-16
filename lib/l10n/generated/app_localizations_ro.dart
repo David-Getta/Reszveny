@@ -2015,4 +2015,26 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Știri despre acțiunile tale';
+
+  @override
+  String get undo => 'Anulează';
+
+  @override
+  String get watchSort => 'Sortează';
+
+  @override
+  String get watchSortOwn => 'Ordinea mea';
+
+  @override
+  String get watchSortGainers => 'Cele mai mari creșteri întâi';
+
+  @override
+  String get watchSortLosers => 'Cele mai mari scăderi întâi';
+
+  @override
+  String get watchSortName => 'După simbol (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Trage de mâner pentru a reordona, glisează la stânga pentru a elimina. Linia arată ultimele 30 de zile.';
 }

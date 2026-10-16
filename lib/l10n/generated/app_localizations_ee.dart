@@ -1987,4 +1987,26 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Nyadzɔdzɔwo tso wò akpawo ŋu';
+
+  @override
+  String get undo => 'Gbugbɔe';
+
+  @override
+  String get watchSort => 'Ɖo ɖoɖo';
+
+  @override
+  String get watchSortOwn => 'Nye ɖoɖo';
+
+  @override
+  String get watchSortGainers => 'Esiwo dzi ɖe edzi wu gbã';
+
+  @override
+  String get watchSortLosers => 'Esiwo ɖiɖi wu gbã';
+
+  @override
+  String get watchSortName => 'Le ticker nu (A–Z)';
+
+  @override
+  String get watchHint =>
+      'He asiɖoƒe la be nàtrɔ ɖoɖoa, tutui yi miame be nàɖe ɖa. Fliƒo la ɖe ŋkeke 30 siwo va yi fia.';
 }

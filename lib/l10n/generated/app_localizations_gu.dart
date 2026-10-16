@@ -1979,4 +1979,26 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'તમારા શેરના સમાચાર';
+
+  @override
+  String get undo => 'પૂર્વવત્ કરો';
+
+  @override
+  String get watchSort => 'સૉર્ટ કરો';
+
+  @override
+  String get watchSortOwn => 'મારો ક્રમ';
+
+  @override
+  String get watchSortGainers => 'સૌથી વધુ વધનારા પહેલા';
+
+  @override
+  String get watchSortLosers => 'સૌથી વધુ ઘટનારા પહેલા';
+
+  @override
+  String get watchSortName => 'ટિકર મુજબ (A–Z)';
+
+  @override
+  String get watchHint =>
+      'ક્રમ બદલવા હેન્ડલ ખેંચો, દૂર કરવા ડાબે સ્વાઇપ કરો. રેખા છેલ્લા 30 દિવસ બતાવે છે.';
 }

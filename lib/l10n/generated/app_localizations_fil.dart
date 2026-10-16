@@ -1989,4 +1989,26 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Balita sa iyong mga stock';
+
+  @override
+  String get undo => 'I-undo';
+
+  @override
+  String get watchSort => 'Ayusin';
+
+  @override
+  String get watchSortOwn => 'Sariling ayos';
+
+  @override
+  String get watchSortGainers => 'Pinakamalaking tumaas muna';
+
+  @override
+  String get watchSortLosers => 'Pinakamalaking bumaba muna';
+
+  @override
+  String get watchSortName => 'Ayon sa ticker (A–Z)';
+
+  @override
+  String get watchHint =>
+      'I-drag ang hawakan para ayusin muli, i-swipe pakaliwa para alisin. Ipinapakita ng linya ang huling 30 araw.';
 }

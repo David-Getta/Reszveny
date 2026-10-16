@@ -1983,4 +1983,26 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Mohoro ma hisa ciaku';
+
+  @override
+  String get undo => 'Cookia';
+
+  @override
+  String get watchSort => 'Banga';
+
+  @override
+  String get watchSortOwn => 'Mubango wakwa';
+
+  @override
+  String get watchSortGainers => 'Iria ciambatĩte mũno mbere';
+
+  @override
+  String get watchSortLosers => 'Iria ciharũrũkĩte mũno mbere';
+
+  @override
+  String get watchSortName => 'Kũringana na ticker (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Kururia gĩkwatĩro nĩguo ũbange rĩngĩ, haragũra mwena wa ũmotho nĩguo ũrute. Mũhari ũyonanagia mĩthenya 30 ĩrĩa ĩhĩtũku.';
 }

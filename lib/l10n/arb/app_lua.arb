@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Dividende udibu bafute bua action umue mu tshidimu tshishale.",
   "glossPayoutRatio": "Tshitupa tshia dipeta tshidibu bapana bu dividende. Kupita 100%, kompanyi udi ufuta bipite bidiye upeta, ne bualu ebu kabutu bushala matuku a bungi to.",
   "glossTitle": "Bidi bumvuija tshinyi?",
-  "watchNewsTitle": "Lumu lua ba action bebe"
+  "watchNewsTitle": "Lumu lua ba action bebe",
+  "undo": "Alukila",
+  "watchSort": "Longolola",
+  "watchSortOwn": "Bulongolodi buanyi",
+  "watchSortGainers": "Bidi bibande bikole kumpala",
+  "watchSortLosers": "Bidi bipueke bikole kumpala",
+  "watchSortName": "Bilondeshile ticker (A–Z)",
+  "watchHint": "Koka tshikuatshilu bua kulongolola kabidi, sesa ku tshiakabadi bua kumbusha. Mulongo udi uleja matuku 30 adi apite."
 }

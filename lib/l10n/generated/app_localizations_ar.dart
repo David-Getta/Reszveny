@@ -2024,4 +2024,26 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'أخبار أسهمك';
+
+  @override
+  String get undo => 'تراجع';
+
+  @override
+  String get watchSort => 'ترتيب';
+
+  @override
+  String get watchSortOwn => 'ترتيبي';
+
+  @override
+  String get watchSortGainers => 'الأكثر ارتفاعًا أولًا';
+
+  @override
+  String get watchSortLosers => 'الأكثر انخفاضًا أولًا';
+
+  @override
+  String get watchSortName => 'حسب رمز السهم (A–Z)';
+
+  @override
+  String get watchHint =>
+      'اسحب المقبض لإعادة الترتيب، ومرّر لليسار للإزالة. يعرض الخط آخر 30 يومًا.';
 }

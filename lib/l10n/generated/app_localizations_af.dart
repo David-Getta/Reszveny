@@ -1987,4 +1987,26 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Nuus oor jou aandele';
+
+  @override
+  String get undo => 'Ontdoen';
+
+  @override
+  String get watchSort => 'Sorteer';
+
+  @override
+  String get watchSortOwn => 'My volgorde';
+
+  @override
+  String get watchSortGainers => 'Grootste stygers eerste';
+
+  @override
+  String get watchSortLosers => 'Grootste dalers eerste';
+
+  @override
+  String get watchSortName => 'Volgens aandeelkode (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Sleep die handvatsel om te herrangskik, swiep links om te verwyder. Die lyn wys die afgelope 30 dae.';
 }

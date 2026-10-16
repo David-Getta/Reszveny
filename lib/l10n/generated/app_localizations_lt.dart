@@ -2039,4 +2039,26 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Naujienos apie jūsų akcijas';
+
+  @override
+  String get undo => 'Anuliuoti';
+
+  @override
+  String get watchSort => 'Rikiuoti';
+
+  @override
+  String get watchSortOwn => 'Mano tvarka';
+
+  @override
+  String get watchSortGainers => 'Labiausiai pakilę pirmiau';
+
+  @override
+  String get watchSortLosers => 'Labiausiai nukritę pirmiau';
+
+  @override
+  String get watchSortName => 'Pagal simbolį (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Vilkite rankenėlę, kad pakeistumėte tvarką, perbraukite kairėn, kad pašalintumėte. Linija rodo pastarąsias 30 dienų.';
 }

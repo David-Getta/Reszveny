@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Dividand yettwaxelṣen ɣef yiwen n uksyun deg useggas yezrin.",
   "glossPayoutRatio": "Aḥric n rrbeḥ yettwabḍan d dividand. Ugar n 100%, akampani yettxelliṣ ugar n wayen yerbeḥ, ayen ur nettdum ara.",
   "glossTitle": "D acu i d-yebɣa ad yini?",
-  "watchNewsTitle": "Isallen ɣef yiaksyunen-ik"
+  "watchNewsTitle": "Isallen ɣef yiaksyunen-ik",
+  "undo": "Err-d",
+  "watchSort": "Semyizwer",
+  "watchSortOwn": "Amizwer-iw",
+  "watchSortGainers": "Wid yalin aṭas d imezwura",
+  "watchSortLosers": "Wid yeɣlin aṭas d imezwura",
+  "watchSortName": "S uzamul (A–Z)",
+  "watchHint": "Zuɣer afus i wakken ad tbeddleḍ amizwer, zuɣer ɣer zelmeḍ i wakken ad tekkseḍ. Izirig yesskanay 30 n wussan ineggura."
 }

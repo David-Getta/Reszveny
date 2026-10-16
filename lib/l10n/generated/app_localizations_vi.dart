@@ -1978,4 +1978,26 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Tin tức về cổ phiếu của bạn';
+
+  @override
+  String get undo => 'Hoàn tác';
+
+  @override
+  String get watchSort => 'Sắp xếp';
+
+  @override
+  String get watchSortOwn => 'Thứ tự của tôi';
+
+  @override
+  String get watchSortGainers => 'Tăng mạnh nhất trước';
+
+  @override
+  String get watchSortLosers => 'Giảm mạnh nhất trước';
+
+  @override
+  String get watchSortName => 'Theo mã (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Kéo tay cầm để sắp xếp lại, vuốt sang trái để xóa. Đường kẻ hiển thị 30 ngày qua.';
 }

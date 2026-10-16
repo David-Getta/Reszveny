@@ -1990,4 +1990,26 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Amakuru ku migabane yawe';
+
+  @override
+  String get undo => 'Subiza';
+
+  @override
+  String get watchSort => 'Tunganya';
+
+  @override
+  String get watchSortOwn => 'Uko nabitondetse';
+
+  @override
+  String get watchSortGainers => 'Ibyazamutse cyane mbere';
+
+  @override
+  String get watchSortLosers => 'Ibyamanutse cyane mbere';
+
+  @override
+  String get watchSortName => 'Ukurikije ticker (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Kurura agafashi kugira ngo uhindure uko bikurikirana, sunika ibumoso kugira ngo ukureho. Umurongo werekana iminsi 30 ishize.';
 }

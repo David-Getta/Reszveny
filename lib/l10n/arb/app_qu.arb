@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Qhipa watapi huk accionpaq pagasqa dividendo.",
   "glossPayoutRatio": "Gananciamanta hayk'a t'aqa dividendo hina rakisqa. 100% hanaqpi, empresa ganasqanmanta aswanta pagan, chayqa pisillata unan.",
   "glossTitle": "Ima ninan?",
-  "watchNewsTitle": "Accionniykikunamanta willakuykuna"
+  "watchNewsTitle": "Accionniykikunamanta willakuykuna",
+  "undo": "Kutichiy",
+  "watchSort": "Ñiqichay",
+  "watchSortOwn": "Ñiqichasqay",
+  "watchSortGainers": "Aswan wichaqkuna ñawpaqta",
+  "watchSortLosers": "Aswan urmaqkuna ñawpaqta",
+  "watchSortName": "Ticker nisqaman hina (A–Z)",
+  "watchHint": "Hapinata aysay ñiqichanapaq, lluq'iman llusiy hurqunapaq. Siqiqa qhipa 30 p'unchawkunata rikuchin."
 }

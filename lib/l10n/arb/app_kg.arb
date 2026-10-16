@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Dividende yina bo me futa na action mosi na mvula me luta.",
   "glossPayoutRatio": "Kitini ya mbakulu yina bo ke kabula bonso dividende. Kuluta 100%, kompani ke futa mingi kuluta yina yo ke zwa, mpi yo ke zingaka ve.",
   "glossTitle": "Yo ke tendula nki?",
-  "watchNewsTitle": "Nsangu ya ba action na nge"
+  "watchNewsTitle": "Nsangu ya ba action na nge",
+  "undo": "Vutula",
+  "watchSort": "Tula na ndonga",
+  "watchSortOwn": "Ndonga na mono",
+  "watchSortGainers": "Yina me matama mingi ntete",
+  "watchSortLosers": "Yina me kulumuka mingi ntete",
+  "watchSortName": "Na ticker (A–Z)",
+  "watchHint": "Benda kisimbidilu sambu na kusoba ndonga, nyerula na lumoso sambu na kukatula. Mulongo ke monisa bilumbu 30 ya me luta."
 }

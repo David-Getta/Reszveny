@@ -1986,4 +1986,26 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'پاي چەكلىرىڭىزگە ئائىت خەۋەرلەر';
+
+  @override
+  String get undo => 'يېنىۋېلىش';
+
+  @override
+  String get watchSort => 'تەرتىپلەش';
+
+  @override
+  String get watchSortOwn => 'مېنىڭ تەرتىپىم';
+
+  @override
+  String get watchSortGainers => 'ئەڭ كۆپ ئۆرلىگەنلەر ئالدىدا';
+
+  @override
+  String get watchSortLosers => 'ئەڭ كۆپ چۈشكەنلەر ئالدىدا';
+
+  @override
+  String get watchSortName => 'كود بويىچە (A–Z)';
+
+  @override
+  String get watchHint =>
+      'تەرتىپنى ئۆزگەرتىش ئۈچۈن تۇتقۇچنى سۆرەڭ، چىقىرىۋېتىش ئۈچۈن سولغا سۈرۈڭ. سىزىق ئاخىرقى 30 كۈننى كۆرسىتىدۇ.';
 }

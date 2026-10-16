@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Dividenda, izplačana za eno delnico v zadnjem letu.",
   "glossPayoutRatio": "Delež dobička, izplačan kot dividende. Nad 100 % podjetje izplača več, kot zasluži, kar redko traja dolgo.",
   "glossTitle": "Kaj to pomeni?",
-  "watchNewsTitle": "Novice o vaših delnicah"
+  "watchNewsTitle": "Novice o vaših delnicah",
+  "undo": "Razveljavi",
+  "watchSort": "Razvrsti",
+  "watchSortOwn": "Moj vrstni red",
+  "watchSortGainers": "Največja rast najprej",
+  "watchSortLosers": "Največji padec najprej",
+  "watchSortName": "Po oznaki (A–Z)",
+  "watchHint": "Povlecite ročico za spremembo vrstnega reda, podrsajte levo za odstranitev. Črta prikazuje zadnjih 30 dni."
 }

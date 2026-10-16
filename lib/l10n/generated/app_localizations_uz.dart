@@ -1986,4 +1986,26 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Aksiyalaringiz yangiliklari';
+
+  @override
+  String get undo => 'Qaytarish';
+
+  @override
+  String get watchSort => 'Saralash';
+
+  @override
+  String get watchSortOwn => 'Mening tartibim';
+
+  @override
+  String get watchSortGainers => 'Eng koʻp oʻsganlar avval';
+
+  @override
+  String get watchSortLosers => 'Eng koʻp tushganlar avval';
+
+  @override
+  String get watchSortName => 'Tiker boʻyicha (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Tartibni oʻzgartirish uchun tutqichni torting, olib tashlash uchun chapga suring. Chiziq oxirgi 30 kunni koʻrsatadi.';
 }

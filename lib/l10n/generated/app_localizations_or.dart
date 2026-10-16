@@ -1981,4 +1981,26 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'ଆପଣଙ୍କ ସେୟାରର ଖବର';
+
+  @override
+  String get undo => 'ପୂର୍ବବତ୍ କରନ୍ତୁ';
+
+  @override
+  String get watchSort => 'ସଜାନ୍ତୁ';
+
+  @override
+  String get watchSortOwn => 'ମୋ କ୍ରମ';
+
+  @override
+  String get watchSortGainers => 'ସର୍ବାଧିକ ବୃଦ୍ଧି ପ୍ରଥମେ';
+
+  @override
+  String get watchSortLosers => 'ସର୍ବାଧିକ ହ୍ରାସ ପ୍ରଥମେ';
+
+  @override
+  String get watchSortName => 'ଟିକର ଅନୁସାରେ (A–Z)';
+
+  @override
+  String get watchHint =>
+      'କ୍ରମ ବଦଳାଇବାକୁ ହ୍ୟାଣ୍ଡଲ ଟାଣନ୍ତୁ, ହଟାଇବାକୁ ବାମକୁ ସ୍ୱାଇପ କରନ୍ତୁ। ରେଖା ଗତ 30 ଦିନ ଦେଖାଏ।';
 }

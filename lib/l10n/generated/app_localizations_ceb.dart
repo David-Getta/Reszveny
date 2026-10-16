@@ -1992,4 +1992,26 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Balita sa imong mga stock';
+
+  @override
+  String get undo => 'I-undo';
+
+  @override
+  String get watchSort => 'Han-aya';
+
+  @override
+  String get watchSortOwn => 'Akong han-ay';
+
+  @override
+  String get watchSortGainers => 'Pinakadako nga pagsaka una';
+
+  @override
+  String get watchSortLosers => 'Pinakadako nga pagkanaog una';
+
+  @override
+  String get watchSortName => 'Sumala sa ticker (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Guyora ang kuptanan aron ihan-ay pag-usab, i-swipe pawala aron tangtangon. Ang linya nagpakita sa miaging 30 ka adlaw.';
 }

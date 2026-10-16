@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Dividen yang dibayarkan untuk satu saham selama setahun terakhir.",
   "glossPayoutRatio": "Bagian laba yang dibagikan sebagai dividen. Di atas 100% perusahaan membayar lebih dari yang dihasilkannya, dan itu jarang bertahan lama.",
   "glossTitle": "Apa artinya?",
-  "watchNewsTitle": "Berita saham Anda"
+  "watchNewsTitle": "Berita saham Anda",
+  "undo": "Urungkan",
+  "watchSort": "Urutkan",
+  "watchSortOwn": "Urutan saya",
+  "watchSortGainers": "Kenaikan terbesar dulu",
+  "watchSortLosers": "Penurunan terbesar dulu",
+  "watchSortName": "Menurut kode saham (A–Z)",
+  "watchHint": "Seret pegangan untuk mengatur ulang, geser ke kiri untuk menghapus. Garis menunjukkan 30 hari terakhir."
 }

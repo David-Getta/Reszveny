@@ -1985,4 +1985,26 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Nûçeyên pişkên te';
+
+  @override
+  String get undo => 'Vegerîne';
+
+  @override
+  String get watchSort => 'Rêz bike';
+
+  @override
+  String get watchSortOwn => 'Rêza min';
+
+  @override
+  String get watchSortGainers => 'Yên herî zêde bilind bûne pêşî';
+
+  @override
+  String get watchSortLosers => 'Yên herî zêde daketine pêşî';
+
+  @override
+  String get watchSortName => 'Li gorî sembolê (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Destikê bikişîne da ku rêzê biguherînî, ber bi çepê ve bişemitîne da ku rakî. Xet 30 rojên dawî nîşan dide.';
 }

@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Dividende, kas pēdējā gadā izmaksāta par vienu akciju.",
   "glossPayoutRatio": "Peļņas daļa, ko izmaksā dividendēs. Virs 100% uzņēmums izmaksā vairāk, nekā nopelna, un tas reti ilgst.",
   "glossTitle": "Ko tas nozīmē?",
-  "watchNewsTitle": "Ziņas par jūsu akcijām"
+  "watchNewsTitle": "Ziņas par jūsu akcijām",
+  "undo": "Atsaukt",
+  "watchSort": "Kārtot",
+  "watchSortOwn": "Mana secība",
+  "watchSortGainers": "Lielākie kāpumi vispirms",
+  "watchSortLosers": "Lielākie kritumi vispirms",
+  "watchSortName": "Pēc simbola (A–Z)",
+  "watchHint": "Velciet turi, lai mainītu secību, pavelciet pa kreisi, lai noņemtu. Līnija rāda pēdējās 30 dienas."
 }

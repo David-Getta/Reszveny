@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Gawio lililolipwa kwa hisa moja katika mwaka uliopita.",
   "glossPayoutRatio": "Sehemu ya faida inayolipwa kama gawio. Zaidi ya 100% kampuni inalipa zaidi ya inavyopata, jambo ambalo mara chache hudumu.",
   "glossTitle": "Inamaanisha nini?",
-  "watchNewsTitle": "Habari za hisa zako"
+  "watchNewsTitle": "Habari za hisa zako",
+  "undo": "Tendua",
+  "watchSort": "Panga",
+  "watchSortOwn": "Mpangilio wangu",
+  "watchSortGainers": "Zilizopanda zaidi kwanza",
+  "watchSortLosers": "Zilizoshuka zaidi kwanza",
+  "watchSortName": "Kwa ticker (A–Z)",
+  "watchHint": "Buruta kishikio ili kupanga upya, telezesha kushoto ili kuondoa. Mstari unaonyesha siku 30 zilizopita."
 }

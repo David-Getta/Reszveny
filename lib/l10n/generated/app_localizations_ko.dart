@@ -1921,4 +1921,26 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get watchNewsTitle => '내 종목 뉴스';
+
+  @override
+  String get undo => '실행취소';
+
+  @override
+  String get watchSort => '정렬';
+
+  @override
+  String get watchSortOwn => '내 순서';
+
+  @override
+  String get watchSortGainers => '상승률 높은 순';
+
+  @override
+  String get watchSortLosers => '하락률 높은 순';
+
+  @override
+  String get watchSortName => '티커순 (A–Z)';
+
+  @override
+  String get watchHint =>
+      '핸들을 끌어 순서를 바꾸고, 왼쪽으로 스와이프하여 제거합니다. 선은 최근 30일을 보여줍니다.';
 }

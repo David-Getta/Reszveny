@@ -1978,4 +1978,26 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Kabaruuji aksiyoŋ maa';
+
+  @override
+  String get undo => 'Firtu';
+
+  @override
+  String get watchSort => 'Toppitin';
+
+  @override
+  String get watchSortOwn => 'Doggol am';
+
+  @override
+  String get watchSortGainers => 'Ɓeyditiiɓe ɓurɗi adan';
+
+  @override
+  String get watchSortLosers => 'Ustiiɓe ɓurɗi adan';
+
+  @override
+  String get watchSortName => 'E kod (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Foo jogorgal ngal ngam waylude doggol, taw nano ngam ittude. Ñiiɓol ngol hollat balɗe 30 ɓennuɗe.';
 }

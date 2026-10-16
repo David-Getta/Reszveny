@@ -2038,4 +2038,26 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Správy o vašich akciách';
+
+  @override
+  String get undo => 'Späť';
+
+  @override
+  String get watchSort => 'Zoradiť';
+
+  @override
+  String get watchSortOwn => 'Moje poradie';
+
+  @override
+  String get watchSortGainers => 'Najväčší rast ako prvé';
+
+  @override
+  String get watchSortLosers => 'Najväčší pokles ako prvé';
+
+  @override
+  String get watchSortName => 'Podľa tickera (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Potiahnutím úchytu zmeníte poradie, potiahnutím doľava odstránite. Čiara ukazuje posledných 30 dní.';
 }

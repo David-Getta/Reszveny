@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Die Dividende, die im letzten Jahr auf eine Aktie gezahlt wurde.",
   "glossPayoutRatio": "Der Anteil des Gewinns, der als Dividende ausgeschüttet wird. Über 100% zahlt das Unternehmen mehr aus, als es verdient – das hält selten lange.",
   "glossTitle": "Was bedeutet das?",
-  "watchNewsTitle": "Nachrichten zu deinen Aktien"
+  "watchNewsTitle": "Nachrichten zu deinen Aktien",
+  "undo": "Rückgängig",
+  "watchSort": "Sortieren",
+  "watchSortOwn": "Eigene Reihenfolge",
+  "watchSortGainers": "Größte Gewinner zuerst",
+  "watchSortLosers": "Größte Verlierer zuerst",
+  "watchSortName": "Nach Ticker (A–Z)",
+  "watchHint": "Zum Umsortieren den Griff ziehen, zum Entfernen nach links wischen. Die Linie zeigt die letzten 30 Tage."
 }

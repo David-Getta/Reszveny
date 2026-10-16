@@ -1993,4 +1993,26 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Dikgang ka dishere tsa gago';
+
+  @override
+  String get undo => 'Busetsa';
+
+  @override
+  String get watchSort => 'Rulaganya';
+
+  @override
+  String get watchSortOwn => 'Tatelano ya me';
+
+  @override
+  String get watchSortGainers => 'Tse di godileng thata pele';
+
+  @override
+  String get watchSortLosers => 'Tse di wetseng thata pele';
+
+  @override
+  String get watchSortName => 'Ka ticker (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Goga setshwaro go rulaganya sešwa, kgorometsa kwa molemeng go tlosa. Mola o bontsha malatsi a le 30 a a fetileng.';
 }

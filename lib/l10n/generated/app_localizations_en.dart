@@ -1982,4 +1982,26 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'News on your stocks';
+
+  @override
+  String get undo => 'Undo';
+
+  @override
+  String get watchSort => 'Sort';
+
+  @override
+  String get watchSortOwn => 'My order';
+
+  @override
+  String get watchSortGainers => 'Biggest gainers first';
+
+  @override
+  String get watchSortLosers => 'Biggest losers first';
+
+  @override
+  String get watchSortName => 'By ticker (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Drag the handle to reorder, swipe left to remove. The line shows the last 30 days.';
 }

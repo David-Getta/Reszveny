@@ -6,6 +6,7 @@ import '../../core/models/stock_quote.dart';
 import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
+import 'watchlist_page.dart';
 
 /// Kedvencek a kezdőképernyőn: ticker + aktuális ár + napi változás, kártyákon.
 class FavoritesStrip extends StatefulWidget {
@@ -39,10 +40,24 @@ class _FavoritesStripState extends State<FavoritesStrip> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const SizedBox(height: 24),
-            Padding(
-              padding: const EdgeInsets.only(left: 4, bottom: 8),
-              child: Text(l10n.favorites, style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),
+            Row(
+              children: [
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 4),
+                    child: Text(l10n.favorites, style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),
+                  ),
+                ),
+                TextButton(
+                  key: const ValueKey('favorites-see-all'),
+                  onPressed: () => Navigator.of(context)
+                      .push(MaterialPageRoute<void>(builder: (_) => WatchlistPage(onOpenSymbol: widget.onOpenSymbol))),
+                  style: TextButton.styleFrom(visualDensity: VisualDensity.compact),
+                  child: Text(l10n.seeAll(favorites.length)),
+                ),
+              ],
             ),
+            const SizedBox(height: 4),
             Wrap(
               spacing: 8,
               runSpacing: 8,

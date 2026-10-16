@@ -536,5 +536,12 @@
   "glossDividendPerShare": "過去1年間に1株あたりに支払われた配当。",
   "glossPayoutRatio": "利益のうち配当として支払われる割合。100%を超えると稼いだ以上を払っていることになり、長続きはまれです。",
   "glossTitle": "どういう意味？",
-  "watchNewsTitle": "マイ銘柄のニュース"
+  "watchNewsTitle": "マイ銘柄のニュース",
+  "undo": "元に戻す",
+  "watchSort": "並べ替え",
+  "watchSortOwn": "自分の順序",
+  "watchSortGainers": "値上がり率の高い順",
+  "watchSortLosers": "値下がり率の高い順",
+  "watchSortName": "ティッカー順 (A–Z)",
+  "watchHint": "ハンドルをドラッグして並べ替え、左にスワイプして削除します。線は過去30日間を示します。"
 }

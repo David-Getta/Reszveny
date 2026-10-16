@@ -1983,4 +1983,26 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Tori for your stocks';
+
+  @override
+  String get undo => 'Undo';
+
+  @override
+  String get watchSort => 'Arrange';
+
+  @override
+  String get watchSortOwn => 'My own order';
+
+  @override
+  String get watchSortGainers => 'Wetin rise pass first';
+
+  @override
+  String get watchSortLosers => 'Wetin fall pass first';
+
+  @override
+  String get watchSortName => 'By ticker (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Drag di handle to arrange am again, swipe go left to comot am. Di line dey show di last 30 days.';
 }

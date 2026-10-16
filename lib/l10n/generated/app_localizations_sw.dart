@@ -1984,4 +1984,26 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Habari za hisa zako';
+
+  @override
+  String get undo => 'Tendua';
+
+  @override
+  String get watchSort => 'Panga';
+
+  @override
+  String get watchSortOwn => 'Mpangilio wangu';
+
+  @override
+  String get watchSortGainers => 'Zilizopanda zaidi kwanza';
+
+  @override
+  String get watchSortLosers => 'Zilizoshuka zaidi kwanza';
+
+  @override
+  String get watchSortName => 'Kwa ticker (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Buruta kishikio ili kupanga upya, telezesha kushoto ili kuondoa. Mstari unaonyesha siku 30 zilizopita.';
 }

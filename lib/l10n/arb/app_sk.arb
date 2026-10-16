@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Dividenda vyplatená na jednu akciu za posledný rok.",
   "glossPayoutRatio": "Podiel zisku vyplatený ako dividendy. Nad 100 % firma vypláca viac, než zarába, a to málokedy vydrží.",
   "glossTitle": "Čo to znamená?",
-  "watchNewsTitle": "Správy o vašich akciách"
+  "watchNewsTitle": "Správy o vašich akciách",
+  "undo": "Späť",
+  "watchSort": "Zoradiť",
+  "watchSortOwn": "Moje poradie",
+  "watchSortGainers": "Najväčší rast ako prvé",
+  "watchSortLosers": "Najväčší pokles ako prvé",
+  "watchSortName": "Podľa tickera (A–Z)",
+  "watchHint": "Potiahnutím úchytu zmeníte poradie, potiahnutím doľava odstránite. Čiara ukazuje posledných 30 dní."
 }

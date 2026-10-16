@@ -1976,4 +1976,26 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'သင့်ရှယ်ယာများ၏ သတင်း';
+
+  @override
+  String get undo => 'နောက်ပြန်ရန်';
+
+  @override
+  String get watchSort => 'စီရန်';
+
+  @override
+  String get watchSortOwn => 'ကျွန်ုပ်၏အစီအစဉ်';
+
+  @override
+  String get watchSortGainers => 'အများဆုံးတက်သည်များ အရင်';
+
+  @override
+  String get watchSortLosers => 'အများဆုံးကျသည်များ အရင်';
+
+  @override
+  String get watchSortName => 'သင်္ကေတအလိုက် (A–Z)';
+
+  @override
+  String get watchHint =>
+      'အစီအစဉ်ပြောင်းရန် လက်ကိုင်ကို ဆွဲပါ၊ ဖယ်ရှားရန် ဘယ်ဘက်သို့ ပွတ်ဆွဲပါ။ မျဉ်းသည် နောက်ဆုံး ရက် 30 ကို ပြသည်။';
 }

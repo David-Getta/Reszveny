@@ -1984,4 +1984,26 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Новини за вашите акции';
+
+  @override
+  String get undo => 'Отмяна';
+
+  @override
+  String get watchSort => 'Сортиране';
+
+  @override
+  String get watchSortOwn => 'Моят ред';
+
+  @override
+  String get watchSortGainers => 'Най-голям ръст първо';
+
+  @override
+  String get watchSortLosers => 'Най-голям спад първо';
+
+  @override
+  String get watchSortName => 'По тикер (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Плъзнете дръжката, за да пренаредите, плъзнете наляво, за да премахнете. Линията показва последните 30 дни.';
 }

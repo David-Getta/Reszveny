@@ -1998,4 +1998,26 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Damag maipapan kadagiti stock-mo';
+
+  @override
+  String get undo => 'I-undo';
+
+  @override
+  String get watchSort => 'Urnosen';
+
+  @override
+  String get watchSortOwn => 'Bukodko nga urnos';
+
+  @override
+  String get watchSortGainers => 'Kadakkelan nga ngimmato umuna';
+
+  @override
+  String get watchSortLosers => 'Kadakkelan nga immababa umuna';
+
+  @override
+  String get watchSortName => 'Babaen ti ticker (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Guyuden ti iggaman tapno urnosen manen, i-swipe iti kannigid tapno ikkaten. Ipakita ti linia ti napalabas a 30 nga aldaw.';
 }

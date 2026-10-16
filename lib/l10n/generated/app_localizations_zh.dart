@@ -1885,6 +1885,27 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get watchNewsTitle => '你的股票新闻';
+
+  @override
+  String get undo => '撤销';
+
+  @override
+  String get watchSort => '排序';
+
+  @override
+  String get watchSortOwn => '我的顺序';
+
+  @override
+  String get watchSortGainers => '涨幅最大优先';
+
+  @override
+  String get watchSortLosers => '跌幅最大优先';
+
+  @override
+  String get watchSortName => '按股票代码 (A–Z)';
+
+  @override
+  String get watchHint => '拖动手柄可重新排序，向左滑动可移除。线条显示最近 30 天。';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -3767,4 +3788,25 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get watchNewsTitle => '你的股票新聞';
+
+  @override
+  String get undo => '復原';
+
+  @override
+  String get watchSort => '排序';
+
+  @override
+  String get watchSortOwn => '我的次序';
+
+  @override
+  String get watchSortGainers => '升幅最大優先';
+
+  @override
+  String get watchSortLosers => '跌幅最大優先';
+
+  @override
+  String get watchSortName => '按股票代號 (A–Z)';
+
+  @override
+  String get watchHint => '拖動手柄可重新排序，向左滑動可移除。線條顯示最近 30 日。';
 }

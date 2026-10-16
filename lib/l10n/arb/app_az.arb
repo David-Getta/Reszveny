@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Son bir ildə bir səhmə ödənilən dividend.",
   "glossPayoutRatio": "Mənfəətin dividend kimi ödənilən payı. 100%-dən yuxarı şirkət qazandığından çox ödəyir və bu nadir hallarda davam edir.",
   "glossTitle": "Bu nə deməkdir?",
-  "watchNewsTitle": "Səhmləriniz üzrə xəbərlər"
+  "watchNewsTitle": "Səhmləriniz üzrə xəbərlər",
+  "undo": "Geri al",
+  "watchSort": "Sırala",
+  "watchSortOwn": "Mənim sıram",
+  "watchSortGainers": "Ən çox artanlar əvvəl",
+  "watchSortLosers": "Ən çox düşənlər əvvəl",
+  "watchSortName": "Tikerə görə (A–Z)",
+  "watchHint": "Sıranı dəyişmək üçün tutacağı sürüşdürün, silmək üçün sola sürüşdürün. Xətt son 30 günü göstərir."
 }

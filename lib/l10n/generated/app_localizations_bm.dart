@@ -1980,4 +1980,26 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'I ka aksiyɔnw kibaruyaw';
+
+  @override
+  String get undo => 'Segin kɔ';
+
+  @override
+  String get watchSort => 'Ka labɛn';
+
+  @override
+  String get watchSortOwn => 'N ka labɛnni';
+
+  @override
+  String get watchSortGainers => 'Minnu yɛlɛla kosɛbɛ fɔlɔ';
+
+  @override
+  String get watchSortLosers => 'Minnu jiginna kosɛbɛ fɔlɔ';
+
+  @override
+  String get watchSortName => 'Taamasiyɛn kɔ (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Minɛnan sama walasa ka labɛnni yɛlɛma, i bolo sama numanbolo fɛ walasa ka bɔ. Juru bɛ tile 30 laban jira.';
 }

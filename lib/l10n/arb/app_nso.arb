@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Dividende ye e lefetšwego šere e tee ngwageng wa go feta.",
   "glossPayoutRatio": "Karolo ya poelo ye e lefšwago bjalo ka dividende. Godimo ga 100% khamphani e lefa go feta seo e se hwetšago, e lego seo se sa tšwelego pele gantši.",
   "glossTitle": "Se bolela eng?",
-  "watchNewsTitle": "Ditaba ka dišere tša gago"
+  "watchNewsTitle": "Ditaba ka dišere tša gago",
+  "undo": "Dirolla",
+  "watchSort": "Beakanya",
+  "watchSortOwn": "Thulaganyo ya ka",
+  "watchSortGainers": "Tše di oketšegilego kudu pele",
+  "watchSortLosers": "Tše di theogilego kudu pele",
+  "watchSortName": "Ka ticker (A–Z)",
+  "watchHint": "Goga seswaro go beakanya gape, kgoromeletša go le letshadi go tloša. Mothaladi o bontšha matšatši a 30 a go feta."
 }

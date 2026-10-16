@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Dividend ĩrĩa yarĩhirwo hisa ĩmwe mwaka ũrĩa mũhĩtũku.",
   "glossPayoutRatio": "Gĩcunjĩ kĩa uumithio kĩrĩa kĩrĩhagwo ta dividend. Igũrũ wa 100% kambuni nĩ ĩrarĩha gũkĩra ũrĩa ĩrona, na ũndũ ũcio ndũikaraga ihinda iraaya.",
   "glossTitle": "Nĩ kuuga atĩa?",
-  "watchNewsTitle": "Mohoro ma hisa ciaku"
+  "watchNewsTitle": "Mohoro ma hisa ciaku",
+  "undo": "Cookia",
+  "watchSort": "Banga",
+  "watchSortOwn": "Mubango wakwa",
+  "watchSortGainers": "Iria ciambatĩte mũno mbere",
+  "watchSortLosers": "Iria ciharũrũkĩte mũno mbere",
+  "watchSortName": "Kũringana na ticker (A–Z)",
+  "watchHint": "Kururia gĩkwatĩro nĩguo ũbange rĩngĩ, haragũra mwena wa ũmotho nĩguo ũrute. Mũhari ũyonanagia mĩthenya 30 ĩrĩa ĩhĩtũku."
 }

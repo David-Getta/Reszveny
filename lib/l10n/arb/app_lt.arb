@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Dividendas, išmokėtas už vieną akciją per pastaruosius metus.",
   "glossPayoutRatio": "Pelno dalis, išmokama kaip dividendai. Viršijus 100% bendrovė išmoka daugiau, nei uždirba, ir tai retai trunka ilgai.",
   "glossTitle": "Ką tai reiškia?",
-  "watchNewsTitle": "Naujienos apie jūsų akcijas"
+  "watchNewsTitle": "Naujienos apie jūsų akcijas",
+  "undo": "Anuliuoti",
+  "watchSort": "Rikiuoti",
+  "watchSortOwn": "Mano tvarka",
+  "watchSortGainers": "Labiausiai pakilę pirmiau",
+  "watchSortLosers": "Labiausiai nukritę pirmiau",
+  "watchSortName": "Pagal simbolį (A–Z)",
+  "watchHint": "Vilkite rankenėlę, kad pakeistumėte tvarką, perbraukite kairėn, kad pašalintumėte. Linija rodo pastarąsias 30 dienų."
 }

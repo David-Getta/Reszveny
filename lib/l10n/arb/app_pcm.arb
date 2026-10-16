@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Di dividend wey dem pay for one share for di last one year.",
   "glossPayoutRatio": "Di part of profit wey dem share as dividend. Above 100%, di company dey pay pass wetin e dey make, and dat one no dey last.",
   "glossTitle": "Wetin e mean?",
-  "watchNewsTitle": "Tori for your stocks"
+  "watchNewsTitle": "Tori for your stocks",
+  "undo": "Undo",
+  "watchSort": "Arrange",
+  "watchSortOwn": "My own order",
+  "watchSortGainers": "Wetin rise pass first",
+  "watchSortLosers": "Wetin fall pass first",
+  "watchSortName": "By ticker (A–Z)",
+  "watchHint": "Drag di handle to arrange am again, swipe go left to comot am. Di line dey show di last 30 days."
 }

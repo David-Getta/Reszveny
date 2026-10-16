@@ -1982,4 +1982,26 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Isallen ɣef yiaksyunen-ik';
+
+  @override
+  String get undo => 'Err-d';
+
+  @override
+  String get watchSort => 'Semyizwer';
+
+  @override
+  String get watchSortOwn => 'Amizwer-iw';
+
+  @override
+  String get watchSortGainers => 'Wid yalin aṭas d imezwura';
+
+  @override
+  String get watchSortLosers => 'Wid yeɣlin aṭas d imezwura';
+
+  @override
+  String get watchSortName => 'S uzamul (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Zuɣer afus i wakken ad tbeddleḍ amizwer, zuɣer ɣer zelmeḍ i wakken ad tekkseḍ. Izirig yesskanay 30 n wussan ineggura.';
 }

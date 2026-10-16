@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Cổ tức đã trả cho một cổ phiếu trong năm qua.",
   "glossPayoutRatio": "Phần lợi nhuận được chi trả dưới dạng cổ tức. Trên 100% thì công ty chi nhiều hơn số tiền kiếm được, điều hiếm khi kéo dài.",
   "glossTitle": "Nghĩa là gì?",
-  "watchNewsTitle": "Tin tức về cổ phiếu của bạn"
+  "watchNewsTitle": "Tin tức về cổ phiếu của bạn",
+  "undo": "Hoàn tác",
+  "watchSort": "Sắp xếp",
+  "watchSortOwn": "Thứ tự của tôi",
+  "watchSortGainers": "Tăng mạnh nhất trước",
+  "watchSortLosers": "Giảm mạnh nhất trước",
+  "watchSortName": "Theo mã (A–Z)",
+  "watchHint": "Kéo tay cầm để sắp xếp lại, vuốt sang trái để xóa. Đường kẻ hiển thị 30 ngày qua."
 }

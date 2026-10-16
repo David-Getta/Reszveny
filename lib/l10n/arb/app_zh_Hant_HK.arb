@@ -536,5 +536,12 @@
   "glossDividendPerShare": "過去一年每股派發的股息。",
   "glossPayoutRatio": "盈利中以股息派發的比例。超過 100% 即公司派發多於所賺，這情況很少能持續。",
   "glossTitle": "這是甚麼意思？",
-  "watchNewsTitle": "你的股票新聞"
+  "watchNewsTitle": "你的股票新聞",
+  "undo": "復原",
+  "watchSort": "排序",
+  "watchSortOwn": "我的次序",
+  "watchSortGainers": "升幅最大優先",
+  "watchSortLosers": "跌幅最大優先",
+  "watchSortName": "按股票代號 (A–Z)",
+  "watchHint": "拖動手柄可重新排序，向左滑動可移除。線條顯示最近 30 日。"
 }

@@ -1989,4 +1989,26 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Notícias das suas ações';
+
+  @override
+  String get undo => 'Desfazer';
+
+  @override
+  String get watchSort => 'Ordenar';
+
+  @override
+  String get watchSortOwn => 'Ordem própria';
+
+  @override
+  String get watchSortGainers => 'Maiores altas primeiro';
+
+  @override
+  String get watchSortLosers => 'Maiores baixas primeiro';
+
+  @override
+  String get watchSortName => 'Por ticker (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Arraste a alça para reordenar, deslize para a esquerda para remover. A linha mostra os últimos 30 dias.';
 }

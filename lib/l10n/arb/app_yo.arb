@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Èrè ìpín tí wọ́n san lórí ìpín kan ní ọdún tó kọjá.",
   "glossPayoutRatio": "Ìpín èrè tí wọ́n san jáde gẹ́gẹ́ bí èrè ìpín. Lókè 100% ilé-iṣẹ́ náà ń san ju ohun tó ń pa lọ, èyí tí kì í sábà pẹ́.",
   "glossTitle": "Kí ló túmọ̀ sí?",
-  "watchNewsTitle": "Ìròyìn nípa ìpín rẹ"
+  "watchNewsTitle": "Ìròyìn nípa ìpín rẹ",
+  "undo": "Dá padà",
+  "watchSort": "Tò",
+  "watchSortOwn": "Ètò mi",
+  "watchSortGainers": "Àwọn tó gòkè jù lọ kọ́kọ́",
+  "watchSortLosers": "Àwọn tó lọ sílẹ̀ jù lọ kọ́kọ́",
+  "watchSortName": "Nípa àmì ìpín (A–Z)",
+  "watchHint": "Fa ìdìmú láti tún tò, ra sí òsì láti yọ ọ́ kúrò. Ìlà náà ń fi ọjọ́ 30 tó kọjá hàn."
 }

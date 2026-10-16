@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Det udbytte, der er udbetalt på én aktie det seneste år.",
   "glossPayoutRatio": "Den del af overskuddet, der udbetales som udbytte. Over 100% udbetaler selskabet mere, end det tjener, hvilket sjældent holder.",
   "glossTitle": "Hvad betyder det?",
-  "watchNewsTitle": "Nyheder om dine aktier"
+  "watchNewsTitle": "Nyheder om dine aktier",
+  "undo": "Fortryd",
+  "watchSort": "Sortér",
+  "watchSortOwn": "Min rækkefølge",
+  "watchSortGainers": "Største stigninger først",
+  "watchSortLosers": "Største fald først",
+  "watchSortName": "Efter ticker (A–Z)",
+  "watchHint": "Træk i håndtaget for at ændre rækkefølgen, stryg til venstre for at fjerne. Linjen viser de seneste 30 dage."
 }

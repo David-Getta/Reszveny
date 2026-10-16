@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Dividann yo peye sou yon aksyon pandan dènye ane a.",
   "glossPayoutRatio": "Pati nan benefis la yo peye kòm dividann. Plis pase 100% konpayi a peye plis pase sa li fè, e sa raman dire.",
   "glossTitle": "Kisa sa vle di?",
-  "watchNewsTitle": "Nouvèl sou aksyon ou yo"
+  "watchNewsTitle": "Nouvèl sou aksyon ou yo",
+  "undo": "Defèt",
+  "watchSort": "Triye",
+  "watchSortOwn": "Lòd pa m",
+  "watchSortGainers": "Pi gwo monte an premye",
+  "watchSortLosers": "Pi gwo desann an premye",
+  "watchSortName": "Pa senbòl (A–Z)",
+  "watchHint": "Trennen manch lan pou chanje lòd, glise sou bò goch pou retire. Liy lan montre 30 dènye jou yo."
 }

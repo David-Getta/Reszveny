@@ -1960,4 +1960,26 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'ຂ່າວຮຸ້ນຂອງທ່ານ';
+
+  @override
+  String get undo => 'ເອົາຄືນ';
+
+  @override
+  String get watchSort => 'ຈັດຮຽງ';
+
+  @override
+  String get watchSortOwn => 'ລຳດັບຂອງຂ້ອຍ';
+
+  @override
+  String get watchSortGainers => 'ຂຶ້ນຫຼາຍທີ່ສຸດກ່ອນ';
+
+  @override
+  String get watchSortLosers => 'ລົງຫຼາຍທີ່ສຸດກ່ອນ';
+
+  @override
+  String get watchSortName => 'ຕາມສັນຍາລັກ (A–Z)';
+
+  @override
+  String get watchHint =>
+      'ລາກບ່ອນຈັບເພື່ອຈັດລຳດັບໃໝ່, ປັດໄປຊ້າຍເພື່ອລຶບອອກ. ເສັ້ນສະແດງ 30 ມື້ຫຼ້າສຸດ.';
 }

@@ -1988,4 +1988,26 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Nieuws over je aandelen';
+
+  @override
+  String get undo => 'Ongedaan maken';
+
+  @override
+  String get watchSort => 'Sorteren';
+
+  @override
+  String get watchSortOwn => 'Eigen volgorde';
+
+  @override
+  String get watchSortGainers => 'Grootste stijgers eerst';
+
+  @override
+  String get watchSortLosers => 'Grootste dalers eerst';
+
+  @override
+  String get watchSortName => 'Op ticker (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Sleep de greep om de volgorde te wijzigen, veeg naar links om te verwijderen. De lijn toont de afgelopen 30 dagen.';
 }

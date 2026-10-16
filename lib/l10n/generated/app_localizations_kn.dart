@@ -1990,4 +1990,26 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'ನಿಮ್ಮ ಷೇರುಗಳ ಸುದ್ದಿ';
+
+  @override
+  String get undo => 'ರದ್ದುಗೊಳಿಸಿ';
+
+  @override
+  String get watchSort => 'ವಿಂಗಡಿಸಿ';
+
+  @override
+  String get watchSortOwn => 'ನನ್ನ ಕ್ರಮ';
+
+  @override
+  String get watchSortGainers => 'ಅತಿ ಹೆಚ್ಚು ಏರಿಕೆ ಮೊದಲು';
+
+  @override
+  String get watchSortLosers => 'ಅತಿ ಹೆಚ್ಚು ಇಳಿಕೆ ಮೊದಲು';
+
+  @override
+  String get watchSortName => 'ಟಿಕರ್ ಪ್ರಕಾರ (A–Z)';
+
+  @override
+  String get watchHint =>
+      'ಕ್ರಮ ಬದಲಿಸಲು ಹ್ಯಾಂಡಲ್ ಎಳೆಯಿರಿ, ತೆಗೆದುಹಾಕಲು ಎಡಕ್ಕೆ ಸ್ವೈಪ್ ಮಾಡಿ. ರೇಖೆಯು ಕಳೆದ 30 ದಿನಗಳನ್ನು ತೋರಿಸುತ್ತದೆ.';
 }

@@ -1990,4 +1990,26 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Izindaba ngamasheya akho';
+
+  @override
+  String get undo => 'Hlehlisa';
+
+  @override
+  String get watchSort => 'Hlela';
+
+  @override
+  String get watchSortOwn => 'Ukuhleleka kwami';
+
+  @override
+  String get watchSortGainers => 'Ezinyuke kakhulu kuqala';
+
+  @override
+  String get watchSortLosers => 'Ezehle kakhulu kuqala';
+
+  @override
+  String get watchSortName => 'Nge-ticker (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Hudula isibambo ukuze uhlele kabusha, swayiphela kwesobunxele ukuze ususe. Umugqa ubonisa izinsuku ezingu-30 ezedlule.';
 }

@@ -1984,4 +1984,26 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Таны хувьцааны мэдээ';
+
+  @override
+  String get undo => 'Буцаах';
+
+  @override
+  String get watchSort => 'Эрэмбэлэх';
+
+  @override
+  String get watchSortOwn => 'Миний дараалал';
+
+  @override
+  String get watchSortGainers => 'Хамгийн их өссөн нь эхэнд';
+
+  @override
+  String get watchSortLosers => 'Хамгийн их унасан нь эхэнд';
+
+  @override
+  String get watchSortName => 'Тикерээр (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Дарааллыг өөрчлөхийн тулд бариулыг чирж, хасахын тулд зүүн тийш шударна уу. Шугам сүүлийн 30 хоногийг харуулна.';
 }

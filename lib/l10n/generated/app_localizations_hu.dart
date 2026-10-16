@@ -1988,4 +1988,26 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Hírek a részvényeidről';
+
+  @override
+  String get undo => 'Visszavonás';
+
+  @override
+  String get watchSort => 'Rendezés';
+
+  @override
+  String get watchSortOwn => 'Saját sorrend';
+
+  @override
+  String get watchSortGainers => 'Legnagyobb emelkedők elöl';
+
+  @override
+  String get watchSortLosers => 'Legnagyobb esők elöl';
+
+  @override
+  String get watchSortName => 'Ticker szerint (A–Z)';
+
+  @override
+  String get watchHint =>
+      'A fogantyút húzva átrendezheted, balra húzva törölheted. A vonal az elmúlt 30 napot mutatja.';
 }

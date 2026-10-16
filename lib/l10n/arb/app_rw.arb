@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Inyungu yishyuwe ku mugabane umwe mu mwaka ushize.",
   "glossPayoutRatio": "Igice cy'inyungu kigabanywa abanyamigabane. Hejuru ya 100% ikigo gitanga ibirenze ibyo cyinjiza, kandi ibyo ntibikunze kuramba.",
   "glossTitle": "Bisobanura iki?",
-  "watchNewsTitle": "Amakuru ku migabane yawe"
+  "watchNewsTitle": "Amakuru ku migabane yawe",
+  "undo": "Subiza",
+  "watchSort": "Tunganya",
+  "watchSortOwn": "Uko nabitondetse",
+  "watchSortGainers": "Ibyazamutse cyane mbere",
+  "watchSortLosers": "Ibyamanutse cyane mbere",
+  "watchSortName": "Ukurikije ticker (A–Z)",
+  "watchHint": "Kurura agafashi kugira ngo uhindure uko bikurikirana, sunika ibumoso kugira ngo ukureho. Umurongo werekana iminsi 30 ishize."
 }

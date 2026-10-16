@@ -1982,4 +1982,26 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Ìròyìn nípa ìpín rẹ';
+
+  @override
+  String get undo => 'Dá padà';
+
+  @override
+  String get watchSort => 'Tò';
+
+  @override
+  String get watchSortOwn => 'Ètò mi';
+
+  @override
+  String get watchSortGainers => 'Àwọn tó gòkè jù lọ kọ́kọ́';
+
+  @override
+  String get watchSortLosers => 'Àwọn tó lọ sílẹ̀ jù lọ kọ́kọ́';
+
+  @override
+  String get watchSortName => 'Nípa àmì ìpín (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Fa ìdìmú láti tún tò, ra sí òsì láti yọ ọ́ kúrò. Ìlà náà ń fi ọjọ́ 30 tó kọjá hàn.';
 }

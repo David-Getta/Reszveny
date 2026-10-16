@@ -1993,4 +1993,26 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Nsango ya ba action na yo';
+
+  @override
+  String get undo => 'Zongisa';
+
+  @override
+  String get watchSort => 'Tya na molongo';
+
+  @override
+  String get watchSortOwn => 'Molongo na ngai';
+
+  @override
+  String get watchSortGainers => 'Oyo emati mingi liboso';
+
+  @override
+  String get watchSortLosers => 'Oyo ekiti mingi liboso';
+
+  @override
+  String get watchSortName => 'Na ticker (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Benda esimbeli mpo na kobongola molongo, pusa na lobɔkɔ ya mwasi mpo na kolongola. Molɔngɔ ezali kolakisa mikolo 30 oyo eleki.';
 }

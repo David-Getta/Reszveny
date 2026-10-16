@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Dividende leyi hakeriweke xere yin'we eka lembe leri hundzeke.",
   "glossPayoutRatio": "Xiphemu xa mbuyelo lexi hakeriwaka tanihi dividende. Ehenhla ka 100% khampani yi hakela ku tlula leswi yi swi kumaka, naswona leswi a swi tshami nkarhi wo leha.",
   "glossTitle": "Swi vula yini?",
-  "watchNewsTitle": "Mahungu ya swixere swa wena"
+  "watchNewsTitle": "Mahungu ya swixere swa wena",
+  "undo": "Tlherisa",
+  "watchSort": "Hlela",
+  "watchSortOwn": "Ku hlela ka mina",
+  "watchSortGainers": "Leswi tlakukeke ngopfu ku sungula",
+  "watchSortLosers": "Leswi wileke ngopfu ku sungula",
+  "watchSortName": "Hi ticker (A–Z)",
+  "watchHint": "Koka xikhomo ku hlela nakambe, sindzisa eximatsini ku susa. Layini yi kombisa masiku ya 30 lama hundzeke."
 }

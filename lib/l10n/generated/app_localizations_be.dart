@@ -2037,4 +2037,26 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Навіны пра вашы акцыі';
+
+  @override
+  String get undo => 'Адрабіць';
+
+  @override
+  String get watchSort => 'Сартаваць';
+
+  @override
+  String get watchSortOwn => 'Мой парадак';
+
+  @override
+  String get watchSortGainers => 'Спачатку найбольшы рост';
+
+  @override
+  String get watchSortLosers => 'Спачатку найбольшае падзенне';
+
+  @override
+  String get watchSortName => 'Па тыкеры (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Перацягніце маркер, каб змяніць парадак, правядзіце ўлева, каб выдаліць. Лінія паказвае апошнія 30 дзён.';
 }

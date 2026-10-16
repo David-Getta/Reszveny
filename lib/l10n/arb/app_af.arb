@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Die dividend wat oor die afgelope jaar op een aandeel betaal is.",
   "glossPayoutRatio": "Die deel van die wins wat as dividende uitbetaal word. Bo 100% betaal die maatskappy meer as wat dit verdien, wat selde hou.",
   "glossTitle": "Wat beteken dit?",
-  "watchNewsTitle": "Nuus oor jou aandele"
+  "watchNewsTitle": "Nuus oor jou aandele",
+  "undo": "Ontdoen",
+  "watchSort": "Sorteer",
+  "watchSortOwn": "My volgorde",
+  "watchSortGainers": "Grootste stygers eerste",
+  "watchSortLosers": "Grootste dalers eerste",
+  "watchSortName": "Volgens aandeelkode (A–Z)",
+  "watchHint": "Sleep die handvatsel om te herrangskik, swiep links om te verwyder. Die lyn wys die afgelope 30 dae."
 }

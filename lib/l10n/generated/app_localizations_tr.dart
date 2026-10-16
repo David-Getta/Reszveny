@@ -1983,4 +1983,26 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Hisselerinizle ilgili haberler';
+
+  @override
+  String get undo => 'Geri al';
+
+  @override
+  String get watchSort => 'Sırala';
+
+  @override
+  String get watchSortOwn => 'Kendi sıram';
+
+  @override
+  String get watchSortGainers => 'En çok yükselenler önce';
+
+  @override
+  String get watchSortLosers => 'En çok düşenler önce';
+
+  @override
+  String get watchSortName => 'Sembole göre (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Sıralamak için tutamacı sürükle, kaldırmak için sola kaydır. Çizgi son 30 günü gösterir.';
 }

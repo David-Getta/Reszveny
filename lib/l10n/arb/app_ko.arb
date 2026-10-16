@@ -536,5 +536,12 @@
   "glossDividendPerShare": "지난 1년 동안 한 주에 지급된 배당금.",
   "glossPayoutRatio": "이익 중 배당금으로 지급되는 비율. 100%를 넘으면 버는 것보다 많이 지급하는 것으로, 오래 지속되기 어렵습니다.",
   "glossTitle": "무슨 뜻인가요?",
-  "watchNewsTitle": "내 종목 뉴스"
+  "watchNewsTitle": "내 종목 뉴스",
+  "undo": "실행취소",
+  "watchSort": "정렬",
+  "watchSortOwn": "내 순서",
+  "watchSortGainers": "상승률 높은 순",
+  "watchSortLosers": "하락률 높은 순",
+  "watchSortName": "티커순 (A–Z)",
+  "watchHint": "핸들을 끌어 순서를 바꾸고, 왼쪽으로 스와이프하여 제거합니다. 선은 최근 30일을 보여줍니다."
 }

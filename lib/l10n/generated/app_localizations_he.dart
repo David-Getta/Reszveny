@@ -1977,4 +1977,26 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'חדשות על המניות שלך';
+
+  @override
+  String get undo => 'ביטול';
+
+  @override
+  String get watchSort => 'מיון';
+
+  @override
+  String get watchSortOwn => 'הסדר שלי';
+
+  @override
+  String get watchSortGainers => 'העליות הגדולות קודם';
+
+  @override
+  String get watchSortLosers => 'הירידות הגדולות קודם';
+
+  @override
+  String get watchSortName => 'לפי סימול (A–Z)';
+
+  @override
+  String get watchHint =>
+      'גררו את הידית כדי לסדר מחדש, החליקו שמאלה כדי להסיר. הקו מציג את 30 הימים האחרונים.';
 }

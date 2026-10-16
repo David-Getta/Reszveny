@@ -1995,4 +1995,26 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Ditaba ka dišere tša gago';
+
+  @override
+  String get undo => 'Dirolla';
+
+  @override
+  String get watchSort => 'Beakanya';
+
+  @override
+  String get watchSortOwn => 'Thulaganyo ya ka';
+
+  @override
+  String get watchSortGainers => 'Tše di oketšegilego kudu pele';
+
+  @override
+  String get watchSortLosers => 'Tše di theogilego kudu pele';
+
+  @override
+  String get watchSortName => 'Ka ticker (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Goga seswaro go beakanya gape, kgoromeletša go le letshadi go tloša. Mothaladi o bontšha matšatši a 30 a go feta.';
 }

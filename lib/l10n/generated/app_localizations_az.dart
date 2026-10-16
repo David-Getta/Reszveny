@@ -1984,4 +1984,26 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Səhmləriniz üzrə xəbərlər';
+
+  @override
+  String get undo => 'Geri al';
+
+  @override
+  String get watchSort => 'Sırala';
+
+  @override
+  String get watchSortOwn => 'Mənim sıram';
+
+  @override
+  String get watchSortGainers => 'Ən çox artanlar əvvəl';
+
+  @override
+  String get watchSortLosers => 'Ən çox düşənlər əvvəl';
+
+  @override
+  String get watchSortName => 'Tikerə görə (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Sıranı dəyişmək üçün tutacağı sürüşdürün, silmək üçün sola sürüşdürün. Xətt son 30 günü göstərir.';
 }

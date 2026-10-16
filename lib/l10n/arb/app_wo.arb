@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Dividand bi ñu fey ci benn aksiyoŋ ci at ma weesu.",
   "glossPayoutRatio": "Wàllu benefis bi ñu séddale ni dividand. Lu ëpp 100%, sosiete bi dafay fey lu ëpp li mu gañe, te loolu yàggul.",
   "glossTitle": "Lan la tekki?",
-  "watchNewsTitle": "Xibaar yi ci say aksiyoŋ"
+  "watchNewsTitle": "Xibaar yi ci say aksiyoŋ",
+  "undo": "Delloo",
+  "watchSort": "Toftal",
+  "watchSortOwn": "Sama toftal",
+  "watchSortGainers": "Yi gëna yokk jëkk",
+  "watchSortLosers": "Yi gëna wàññiku jëkk",
+  "watchSortName": "Ci màndarga (A–Z)",
+  "watchHint": "Diri jàppukaay bi ngir soppi toftal bi, raaxas ci càmmooñ ngir far. Rëdd bi day wone 30 fan yi weesu."
 }

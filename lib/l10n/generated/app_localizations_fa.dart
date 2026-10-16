@@ -1981,4 +1981,26 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'اخبار سهام شما';
+
+  @override
+  String get undo => 'واگرد';
+
+  @override
+  String get watchSort => 'مرتب‌سازی';
+
+  @override
+  String get watchSortOwn => 'ترتیب من';
+
+  @override
+  String get watchSortGainers => 'بیشترین رشد اول';
+
+  @override
+  String get watchSortLosers => 'بیشترین افت اول';
+
+  @override
+  String get watchSortName => 'بر اساس نماد (A–Z)';
+
+  @override
+  String get watchHint =>
+      'برای تغییر ترتیب، دستگیره را بکشید و برای حذف، به چپ بلغزانید. خط ۳۰ روز گذشته را نشان می‌دهد.';
 }

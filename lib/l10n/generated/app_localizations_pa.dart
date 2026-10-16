@@ -1979,4 +1979,26 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'ਤੁਹਾਡੇ ਸ਼ੇਅਰਾਂ ਦੀਆਂ ਖ਼ਬਰਾਂ';
+
+  @override
+  String get undo => 'ਅਣਕੀਤਾ ਕਰੋ';
+
+  @override
+  String get watchSort => 'ਕ੍ਰਮਬੱਧ ਕਰੋ';
+
+  @override
+  String get watchSortOwn => 'ਮੇਰਾ ਕ੍ਰਮ';
+
+  @override
+  String get watchSortGainers => 'ਸਭ ਤੋਂ ਵੱਧ ਚੜ੍ਹੇ ਪਹਿਲਾਂ';
+
+  @override
+  String get watchSortLosers => 'ਸਭ ਤੋਂ ਵੱਧ ਡਿੱਗੇ ਪਹਿਲਾਂ';
+
+  @override
+  String get watchSortName => 'ਟਿਕਰ ਅਨੁਸਾਰ (A–Z)';
+
+  @override
+  String get watchHint =>
+      'ਕ੍ਰਮ ਬਦਲਣ ਲਈ ਹੈਂਡਲ ਖਿੱਚੋ, ਹਟਾਉਣ ਲਈ ਖੱਬੇ ਸਵਾਈਪ ਕਰੋ। ਰੇਖਾ ਪਿਛਲੇ 30 ਦਿਨ ਦਿਖਾਉਂਦੀ ਹੈ।';
 }

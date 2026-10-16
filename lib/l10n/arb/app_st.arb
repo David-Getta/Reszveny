@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Dividende e lefilweng shere e le nngwe selemong se fetileng.",
   "glossPayoutRatio": "Karolo ya phaello e lefuwang e le dividende. Ka hodima 100% khampani e lefa ho feta seo e se fumanang, mme hoo ha se hangata ho tswelang pele.",
   "glossTitle": "Ho bolela eng?",
-  "watchNewsTitle": "Ditaba ka dishere tsa hao"
+  "watchNewsTitle": "Ditaba ka dishere tsa hao",
+  "undo": "Etsolla",
+  "watchSort": "Hlophisa",
+  "watchSortOwn": "Tatellano ya ka",
+  "watchSortGainers": "Tse nyolohileng haholo pele",
+  "watchSortLosers": "Tse theohileng haholo pele",
+  "watchSortName": "Ka ticker (A–Z)",
+  "watchHint": "Hula sehokelo ho hlophisa bocha, sutumetsa ka ho le letshehadi ho tlosa. Mola o bontsha matsatsi a 30 a fetileng."
 }

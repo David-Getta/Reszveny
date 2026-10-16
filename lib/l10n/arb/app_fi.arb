@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Yhdelle osakkeelle viimeisen vuoden aikana maksettu osinko.",
   "glossPayoutRatio": "Osuus voitosta, joka maksetaan osinkoina. Jos se on yli 100 %, yhtiö maksaa enemmän kuin ansaitsee, mikä harvoin kestää pitkään.",
   "glossTitle": "Mitä se tarkoittaa?",
-  "watchNewsTitle": "Uutisia osakkeistasi"
+  "watchNewsTitle": "Uutisia osakkeistasi",
+  "undo": "Kumoa",
+  "watchSort": "Lajittele",
+  "watchSortOwn": "Oma järjestys",
+  "watchSortGainers": "Suurimmat nousijat ensin",
+  "watchSortLosers": "Suurimmat laskijat ensin",
+  "watchSortName": "Tunnuksen mukaan (A–Z)",
+  "watchHint": "Vedä kahvasta järjestääksesi, pyyhkäise vasemmalle poistaaksesi. Viiva näyttää viimeiset 30 päivää."
 }

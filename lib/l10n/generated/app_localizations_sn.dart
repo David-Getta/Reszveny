@@ -1988,4 +1988,26 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Nhau dzesheya dzako';
+
+  @override
+  String get undo => 'Dzosa';
+
+  @override
+  String get watchSort => 'Ronga';
+
+  @override
+  String get watchSortOwn => 'Kurongwa kwangu';
+
+  @override
+  String get watchSortGainers => 'Zvakakwira zvikuru kutanga';
+
+  @override
+  String get watchSortLosers => 'Zvakadzika zvikuru kutanga';
+
+  @override
+  String get watchSortName => 'Nema ticker (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Dhonza mubato kuti urongazve, svaipa kuruboshwe kuti ubvise. Mutsara unoratidza mazuva 30 apfuura.';
 }

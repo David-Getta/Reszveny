@@ -2006,4 +2006,26 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Novas das túas accións';
+
+  @override
+  String get undo => 'Desfacer';
+
+  @override
+  String get watchSort => 'Ordenar';
+
+  @override
+  String get watchSortOwn => 'A miña orde';
+
+  @override
+  String get watchSortGainers => 'Maiores subidas primeiro';
+
+  @override
+  String get watchSortLosers => 'Maiores baixadas primeiro';
+
+  @override
+  String get watchSortName => 'Por ticker (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Arrastra a asa para reordenar e esvara cara á esquerda para quitar. A liña mostra os últimos 30 días.';
 }

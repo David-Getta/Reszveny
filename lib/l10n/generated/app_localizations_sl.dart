@@ -2040,4 +2040,26 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Novice o vaših delnicah';
+
+  @override
+  String get undo => 'Razveljavi';
+
+  @override
+  String get watchSort => 'Razvrsti';
+
+  @override
+  String get watchSortOwn => 'Moj vrstni red';
+
+  @override
+  String get watchSortGainers => 'Največja rast najprej';
+
+  @override
+  String get watchSortLosers => 'Največji padec najprej';
+
+  @override
+  String get watchSortName => 'Po oznaki (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Povlecite ročico za spremembo vrstnega reda, podrsajte levo za odstranitev. Črta prikazuje zadnjih 30 dni.';
 }

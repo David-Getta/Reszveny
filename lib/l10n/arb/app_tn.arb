@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Dividende e e duetsweng shere e le nngwe mo ngwageng o o fetileng.",
   "glossPayoutRatio": "Seabe sa poelo se se duelwang e le dividende. Fa godimo ga 100% khampani e duela go feta se e se dirang, mme seo ga se tswelele gantsi.",
   "glossTitle": "Go raya eng?",
-  "watchNewsTitle": "Dikgang ka dishere tsa gago"
+  "watchNewsTitle": "Dikgang ka dishere tsa gago",
+  "undo": "Busetsa",
+  "watchSort": "Rulaganya",
+  "watchSortOwn": "Tatelano ya me",
+  "watchSortGainers": "Tse di godileng thata pele",
+  "watchSortLosers": "Tse di wetseng thata pele",
+  "watchSortName": "Ka ticker (A–Z)",
+  "watchHint": "Goga setshwaro go rulaganya sešwa, kgorometsa kwa molemeng go tlosa. Mola o bontsha malatsi a le 30 a a fetileng."
 }

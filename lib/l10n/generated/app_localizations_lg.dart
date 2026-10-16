@@ -1993,4 +1993,26 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'Amawulire ku migabo gyo';
+
+  @override
+  String get undo => 'Komyawo';
+
+  @override
+  String get watchSort => 'Sengeka';
+
+  @override
+  String get watchSortOwn => 'Ensengeka yange';
+
+  @override
+  String get watchSortGainers => 'Ebyalinnye ennyo bisooke';
+
+  @override
+  String get watchSortLosers => 'Ebyakka ennyo bisooke';
+
+  @override
+  String get watchSortName => 'Okusinziira ku ticker (A–Z)';
+
+  @override
+  String get watchHint =>
+      'Walula ekikwatibwako okusengeka obulala, sikula ku kkono okuggyako. Olunyiriri lulaga ennaku 30 eziyise.';
 }

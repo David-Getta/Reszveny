@@ -536,5 +536,12 @@
   "glossDividendPerShare": "Dividendul plătit pe o acțiune în ultimul an.",
   "glossPayoutRatio": "Partea din profit plătită ca dividende. Peste 100%, compania plătește mai mult decât câștigă, ceea ce rareori durează.",
   "glossTitle": "Ce înseamnă?",
-  "watchNewsTitle": "Știri despre acțiunile tale"
+  "watchNewsTitle": "Știri despre acțiunile tale",
+  "undo": "Anulează",
+  "watchSort": "Sortează",
+  "watchSortOwn": "Ordinea mea",
+  "watchSortGainers": "Cele mai mari creșteri întâi",
+  "watchSortLosers": "Cele mai mari scăderi întâi",
+  "watchSortName": "După simbol (A–Z)",
+  "watchHint": "Trage de mâner pentru a reordona, glisează la stânga pentru a elimina. Linia arată ultimele 30 de zile."
 }

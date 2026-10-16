@@ -1954,4 +1954,26 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'ስለ አክሲዮኖችዎ ዜና';
+
+  @override
+  String get undo => 'ቀልብስ';
+
+  @override
+  String get watchSort => 'ደርድር';
+
+  @override
+  String get watchSortOwn => 'የእኔ ቅደም ተከተል';
+
+  @override
+  String get watchSortGainers => 'ከፍተኛ ጭማሪ ያላቸው መጀመሪያ';
+
+  @override
+  String get watchSortLosers => 'ከፍተኛ ቅናሽ ያላቸው መጀመሪያ';
+
+  @override
+  String get watchSortName => 'በምልክት (A–Z)';
+
+  @override
+  String get watchHint =>
+      'ቅደም ተከተሉን ለመቀየር መያዣውን ይጎትቱ፣ ለማስወገድ ወደ ግራ ያንሸራትቱ። መስመሩ ያለፉትን 30 ቀናት ያሳያል።';
 }

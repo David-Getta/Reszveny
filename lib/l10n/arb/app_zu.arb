@@ -536,5 +536,12 @@
   "glossDividendPerShare": "I-dividend ekhokhelwe isheya elilodwa onyakeni odlule.",
   "glossPayoutRatio": "Ingxenye yenzuzo ekhokhwa njenge-dividend. Ngaphezu kuka-100% inkampani ikhokha okungaphezu kwalokho ekutholayo, okungavamile ukuhlala isikhathi eside.",
   "glossTitle": "Kusho ukuthini?",
-  "watchNewsTitle": "Izindaba ngamasheya akho"
+  "watchNewsTitle": "Izindaba ngamasheya akho",
+  "undo": "Hlehlisa",
+  "watchSort": "Hlela",
+  "watchSortOwn": "Ukuhleleka kwami",
+  "watchSortGainers": "Ezinyuke kakhulu kuqala",
+  "watchSortLosers": "Ezehle kakhulu kuqala",
+  "watchSortName": "Nge-ticker (A–Z)",
+  "watchHint": "Hudula isibambo ukuze uhlele kabusha, swayiphela kwesobunxele ukuze ususe. Umugqa ubonisa izinsuku ezingu-30 ezedlule."
 }

@@ -1992,4 +1992,26 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get watchNewsTitle => 'உங்கள் பங்குகள் பற்றிய செய்திகள்';
+
+  @override
+  String get undo => 'செயல்தவிர்';
+
+  @override
+  String get watchSort => 'வரிசைப்படுத்து';
+
+  @override
+  String get watchSortOwn => 'என் வரிசை';
+
+  @override
+  String get watchSortGainers => 'அதிக உயர்வு முதலில்';
+
+  @override
+  String get watchSortLosers => 'அதிக சரிவு முதலில்';
+
+  @override
+  String get watchSortName => 'டிக்கர்படி (A–Z)';
+
+  @override
+  String get watchHint =>
+      'வரிசையை மாற்ற கைப்பிடியை இழுக்கவும், நீக்க இடதுபுறம் ஸ்வைப் செய்யவும். கோடு கடந்த 30 நாட்களைக் காட்டுகிறது.';
 }
