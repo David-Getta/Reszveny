@@ -2107,4 +2107,40 @@ class AppLocalizationsNb extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Fant ingen aksjeposisjoner på dette bildet. Prøv et skjermbilde av beholdnings- eller posisjonssiden hos megleren din.';
+
+  @override
+  String get week52Range => '52-ukers intervall';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent under 52-ukers høyeste';
+  }
+
+  @override
+  String get week52AtHigh => 'På 52-ukers høyeste';
+
+  @override
+  String get alertKindTrailing => 'Faller fra toppen';
+
+  @override
+  String get alertTrailingPercent => 'Fall fra toppen (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Følger kursen oppover: varsler når kursen faller så mye fra det høyeste nivået siden du satte varselet.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return '$percent fall fra toppen';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'topp hittil: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol falt $percent fra toppen';
+  }
 }

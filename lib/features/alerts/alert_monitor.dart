@@ -77,7 +77,17 @@ class AlertMonitor extends ChangeNotifier {
           debugPrint('Riasztás: ${e.key} ára nem érhető el: $err');
           continue;
         }
-        for (final a in e.value.where((a) => a.isHit(q))) {
+        // Követő stop: előbb a csúcs frissül (a riasztás óta látott legmagasabb ár).
+        final checked = <PriceAlert>[];
+        for (final a in e.value) {
+          if (a.kind == AlertKind.trailing && (a.peak == null || q.price > a.peak!)) {
+            await store.raisePeak(a.id, q.price);
+            checked.add(a.withPeak(q.price));
+          } else {
+            checked.add(a);
+          }
+        }
+        for (final a in checked.where((a) => a.isHit(q))) {
           await store.markTriggered(a.id, _clock(), q.price);
           hits.add(AlertHit(alert: a, quote: q));
         }

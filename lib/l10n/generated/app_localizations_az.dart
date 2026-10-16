@@ -2109,4 +2109,40 @@ class AppLocalizationsAz extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Bu şəkildə səhm mövqeyi tapılmadı. Brokerinizin mövqelər və ya portfel səhifəsinin ekran görüntüsünü yoxlayın.';
+
+  @override
+  String get week52Range => '52 həftəlik diapazon';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '52 həftəlik maksimumdan $percent aşağı';
+  }
+
+  @override
+  String get week52AtHigh => '52 həftəlik maksimumda';
+
+  @override
+  String get alertKindTrailing => 'Zirvədən düşərsə';
+
+  @override
+  String get alertTrailingPercent => 'Zirvədən düşmə (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Qiyməti yuxarı izləyir: qiymət quraşdırıldığı vaxtdan bəri çatdığı ən yüksək səviyyədən bu qədər düşəndə xəbərdarlıq edir.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Zirvədən $percent düşmə';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'indiyədək zirvə: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol zirvədən $percent düşdü';
+  }
 }

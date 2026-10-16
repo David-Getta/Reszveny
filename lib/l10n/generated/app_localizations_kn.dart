@@ -2114,4 +2114,40 @@ class AppLocalizationsKn extends AppLocalizations {
   @override
   String get holdingsNone =>
       'ಈ ಚಿತ್ರದಲ್ಲಿ ಯಾವುದೇ ಷೇರು ಪೊಸಿಷನ್‌ಗಳು ಕಂಡುಬಂದಿಲ್ಲ. ನಿಮ್ಮ ಬ್ರೋಕರ್‌ನ ಪೊಸಿಷನ್‌ಗಳು ಅಥವಾ ಹೋಲ್ಡಿಂಗ್ಸ್ ಪುಟದ ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಪ್ರಯತ್ನಿಸಿ.';
+
+  @override
+  String get week52Range => '52 ವಾರಗಳ ವ್ಯಾಪ್ತಿ';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '52 ವಾರಗಳ ಗರಿಷ್ಠಕ್ಕಿಂತ $percent ಕಡಿಮೆ';
+  }
+
+  @override
+  String get week52AtHigh => '52 ವಾರಗಳ ಗರಿಷ್ಠದಲ್ಲಿ';
+
+  @override
+  String get alertKindTrailing => 'ಗರಿಷ್ಠದಿಂದ ಇಳಿದರೆ';
+
+  @override
+  String get alertTrailingPercent => 'ಗರಿಷ್ಠದಿಂದ ಇಳಿಕೆ (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'ಬೆಲೆಯನ್ನು ಮೇಲಕ್ಕೆ ಹಿಂಬಾಲಿಸುತ್ತದೆ: ಹೊಂದಿಸಿದಾಗಿನಿಂದ ತಲುಪಿದ ಅತ್ಯಧಿಕ ಮಟ್ಟದಿಂದ ಬೆಲೆ ಇಷ್ಟು ಇಳಿದಾಗ ಎಚ್ಚರಿಸುತ್ತದೆ.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'ಗರಿಷ್ಠದಿಂದ $percent ಇಳಿಕೆ';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'ಇದುವರೆಗಿನ ಗರಿಷ್ಠ: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol ಗರಿಷ್ಠದಿಂದ $percent ಇಳಿದಿದೆ';
+  }
 }

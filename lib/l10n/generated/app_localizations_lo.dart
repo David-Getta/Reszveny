@@ -2082,4 +2082,40 @@ class AppLocalizationsLo extends AppLocalizations {
   @override
   String get holdingsNone =>
       'ບໍ່ພົບຫຸ້ນທີ່ຖືຢູ່ໃນຮູບພາບນີ້. ລອງໃຊ້ພາບໜ້າຈໍຂອງໜ້າຫຸ້ນທີ່ຖືໃນແອັບນາຍໜ້າຂອງທ່ານ.';
+
+  @override
+  String get week52Range => 'ຊ່ວງ 52 ອາທິດ';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return 'ຕ່ຳກວ່າສູງສຸດໃນຮອບ 52 ອາທິດ $percent';
+  }
+
+  @override
+  String get week52AtHigh => 'ຢູ່ທີ່ສູງສຸດໃນຮອບ 52 ອາທິດ';
+
+  @override
+  String get alertKindTrailing => 'ລົງຈາກຈຸດສູງສຸດ';
+
+  @override
+  String get alertTrailingPercent => 'ການລົງຈາກຈຸດສູງສຸດ (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'ຕິດຕາມລາຄາຂຶ້ນ: ແຈ້ງເຕືອນເມື່ອລາຄາລົງເທົ່ານີ້ຈາກລະດັບສູງສຸດນັບຕັ້ງແຕ່ທ່ານຕັ້ງໄວ້.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'ລົງ $percent ຈາກຈຸດສູງສຸດ';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'ຈຸດສູງສຸດມາເຖິງຕອນນີ້: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol ລົງ $percent ຈາກຈຸດສູງສຸດ';
+  }
 }

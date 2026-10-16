@@ -2113,4 +2113,40 @@ class AppLocalizationsSn extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Hapana masheya awanikwa pamufananidzo uyu. Edza mufananidzo wesikirini wepeji remasheya kubroker yako.';
+
+  @override
+  String get week52Range => 'Mutsetse wemavhiki 52';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent pasi pepakakwirira pamavhiki 52';
+  }
+
+  @override
+  String get week52AtHigh => 'Pakakwirira pamavhiki 52';
+
+  @override
+  String get alertKindTrailing => 'Ukadzika kubva pamusoro-soro';
+
+  @override
+  String get alertTrailingPercent => 'Kudzika kubva pamusoro-soro (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Inotevera mutengo uchikwira: inokuzivisa kana mutengo wadzika zvakadai kubva padanho repamusoro-soro kubva pawakaiseta.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Kudzika ne-$percent kubva pamusoro-soro';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'pamusoro-soro kusvika zvino: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol yadzika ne-$percent kubva pamusoro-soro';
+  }
 }

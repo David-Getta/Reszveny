@@ -2110,4 +2110,40 @@ class AppLocalizationsUg extends AppLocalizations {
   @override
   String get holdingsNone =>
       'بۇ رەسىمدە پاي تېپىلمىدى. ۋاكالەتچىڭىزنىڭ پاي ياكى مۈلۈك بېتىنىڭ ئېكران كەسمىسىنى سىناپ بېقىڭ.';
+
+  @override
+  String get week52Range => '52 ھەپتىلىك دائىرە';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '52 ھەپتىلىك ئەڭ يۇقىرىدىن $percent تۆۋەن';
+  }
+
+  @override
+  String get week52AtHigh => '52 ھەپتىلىك ئەڭ يۇقىرىدا';
+
+  @override
+  String get alertKindTrailing => 'چوققىدىن چۈشسە';
+
+  @override
+  String get alertTrailingPercent => 'چوققىدىن چۈشۈش (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'باھانى يۇقىرىغا ئەگىشىدۇ: باھا تەڭشىگەندىن بۇيانقى ئەڭ يۇقىرى سەۋىيىسىدىن مۇشۇنچىلىك چۈشسە ئەسكەرتىدۇ.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'چوققىدىن $percent چۈشۈش';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'ھازىرغىچە چوققا: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol چوققىدىن $percent چۈشتى';
+  }
 }

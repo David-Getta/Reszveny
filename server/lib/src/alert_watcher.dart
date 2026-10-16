@@ -41,8 +41,19 @@ class AlertWatcher {
       'above' => price >= v,
       'below' => price <= v,
       'move' => (changePercent ?? 0).abs() >= v,
+      // Követő stop: a csúcsot a hívó előbb frissíti ([_raisePeak]).
+      'trailing' => a['peak'] is num && price <= (a['peak'] as num) * (1 - v / 100),
       _ => false,
     };
+  }
+
+  /// Követő stop: a riasztás óta látott legmagasabb ár feljegyzése. Igaz, ha változott.
+  static bool _raisePeak(Map a, double price) {
+    if (a['kind'] != 'trailing') return false;
+    final peak = a['peak'];
+    if (peak is num && peak >= price) return false;
+    a['peak'] = price;
+    return true;
   }
 
   static bool _active(Object? a) => a is Map && a['triggered_at'] == null && a['symbol'] is String;
@@ -80,16 +91,23 @@ class AlertWatcher {
       final now = _clock().toUtc();
       for (final acc in accounts) {
         final hits = <Map>[];
+        var peaks = false;
         for (final al in (acc.data['alerts'] as List)) {
           if (!_active(al)) continue;
           final q = quotes['${(al as Map)['symbol']}'.toUpperCase()];
-          if (q == null || !_hit(al, q.price, q.changePercent)) continue;
+          if (q == null) continue;
+          if (_raisePeak(al, q.price)) peaks = true;
+          if (!_hit(al, q.price, q.changePercent)) continue;
           al['triggered_at'] = now.toIso8601String();
           al['triggered_price'] = q.price;
           al['triggered_change'] = q.changePercent;
           hits.add(al);
         }
-        if (hits.isEmpty) continue;
+        if (hits.isEmpty) {
+          // Csak új csúcs: elmentjük, e-mail nélkül.
+          if (peaks) store.saveSyncData(acc.userId, jsonEncode(acc.data));
+          continue;
+        }
         store.saveSyncData(acc.userId, jsonEncode(acc.data));
         try {
           final (subject, text) = alertEmail(hits, hu: acc.data['lang'] == 'hu');
@@ -123,6 +141,8 @@ class AlertWatcher {
         ('above', true) => '$s: $price – a ${_n(a['value'])}$ccy szint fölé ment.',
         ('below', true) => '$s: $price – a ${_n(a['value'])}$ccy szint alá esett.',
         ('move', true) => '$s: $change ma (a riasztás ${_n(a['value'])}% mozgásra szólt), ár: $price.',
+        ('trailing', true) => '$s: $price – ${_n(a['value'])}%-ot esett a ${_n(a['peak'])}$ccy csúcsról.',
+        ('trailing', false) => '$s: $price – fell ${_n(a['value'])}% from its ${_n(a['peak'])}$ccy peak.',
         ('above', false) => '$s: $price – rose above ${_n(a['value'])}$ccy.',
         ('below', false) => '$s: $price – fell below ${_n(a['value'])}$ccy.',
         (_, true) => '$s: $price.',

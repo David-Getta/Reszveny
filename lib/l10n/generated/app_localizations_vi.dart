@@ -2101,4 +2101,40 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Không tìm thấy vị thế cổ phiếu nào trong ảnh này. Hãy thử ảnh chụp màn hình trang vị thế hoặc danh mục nắm giữ tại công ty môi giới của bạn.';
+
+  @override
+  String get week52Range => 'Biên độ 52 tuần';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return 'Thấp hơn mức cao nhất 52 tuần $percent';
+  }
+
+  @override
+  String get week52AtHigh => 'Ở mức cao nhất 52 tuần';
+
+  @override
+  String get alertKindTrailing => 'Giảm từ đỉnh';
+
+  @override
+  String get alertTrailingPercent => 'Mức giảm từ đỉnh (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Bám theo giá khi tăng: cảnh báo khi giá giảm chừng này so với mức cao nhất kể từ lúc bạn đặt.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Giảm $percent từ đỉnh';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'đỉnh đến nay: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol đã giảm $percent từ đỉnh';
+  }
 }

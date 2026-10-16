@@ -2112,4 +2112,40 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Não foram encontradas posições em ações nesta imagem. Tente uma captura de ecrã da página de posições ou carteira da sua corretora.';
+
+  @override
+  String get week52Range => 'Intervalo de 52 semanas';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent abaixo do máximo de 52 semanas';
+  }
+
+  @override
+  String get week52AtHigh => 'No máximo de 52 semanas';
+
+  @override
+  String get alertKindTrailing => 'Cai desde o pico';
+
+  @override
+  String get alertTrailingPercent => 'Queda desde o pico (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Acompanha o preço a subir: o alerta dispara quando o preço cai isto desde o ponto mais alto atingido após ser definido.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Queda de $percent desde o pico';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'pico até agora: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol caiu $percent desde o pico';
+  }
 }

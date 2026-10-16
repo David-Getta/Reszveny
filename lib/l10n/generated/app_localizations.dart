@@ -3738,6 +3738,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'No stock positions found on this picture. Try a screenshot of your broker\'s positions or holdings page.'**
   String get holdingsNone;
+
+  /// No description provided for @week52Range.
+  ///
+  /// In en, this message translates to:
+  /// **'52-week range'**
+  String get week52Range;
+
+  /// Under a bar showing where today's price sits between the yearly low and high; percent is formatted, e.g. "12.4%".
+  ///
+  /// In en, this message translates to:
+  /// **'{percent} below the 52-week high'**
+  String week52BelowHigh(String percent);
+
+  /// No description provided for @week52AtHigh.
+  ///
+  /// In en, this message translates to:
+  /// **'At the 52-week high'**
+  String get week52AtHigh;
+
+  /// Alert type chip: a trailing stop – fires when the price falls a set percentage from its highest point since the alert was set.
+  ///
+  /// In en, this message translates to:
+  /// **'Drop from peak'**
+  String get alertKindTrailing;
+
+  /// No description provided for @alertTrailingPercent.
+  ///
+  /// In en, this message translates to:
+  /// **'Drop from the peak (%)'**
+  String get alertTrailingPercent;
+
+  /// No description provided for @alertTrailingHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Follows the price up: the alert goes off when the price falls this much from its highest point since you set it.'**
+  String get alertTrailingHint;
+
+  /// Short description of a trailing-stop alert; percent like "10%".
+  ///
+  /// In en, this message translates to:
+  /// **'{percent} drop from its peak'**
+  String alertDescTrailing(String percent);
+
+  /// No description provided for @alertTrailingPeak.
+  ///
+  /// In en, this message translates to:
+  /// **'peak so far: {price}'**
+  String alertTrailingPeak(String price);
+
+  /// Notification title when a trailing-stop alert fires.
+  ///
+  /// In en, this message translates to:
+  /// **'{symbol} fell {percent} from its peak'**
+  String alertHitTrailing(String symbol, String percent);
 }
 
 class _AppLocalizationsDelegate

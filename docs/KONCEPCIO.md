@@ -217,6 +217,9 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 5ak | Gyorsjelentés-emlékeztető: asztali értesítés a kedvencek és a portfólió részvényeinek jelentése előtti napon (vagy aznap), egyszer; koppintásra a részvény nyílik; a Beállításokban kikapcsolható | ✅ kész |
 | 5al | Több részvény egy képen (pl. bróker-figyelőlista): a választólapon soronként csillag, és „Mind a kedvencekhez” gomb | ✅ kész |
 | 5am | Portfólió importálása képernyőképről: a bróker-app „Pozícióim” oldalának képéből (kiválasztva vagy beillesztve) a ticker, a darabszám és az átlagos vételár; átnézés és kijelölés után kerülnek a portfólióba, kétszer nem; a fotófelismerés segéd-végpontján, elemzést nem fogyaszt | ✅ kész |
+| 5an | 52 hetes ársáv az Árfolyam kártyán: a mai ár helye az éves mélypont és csúcs között, és hány százalékkal van a csúcs alatt | ✅ kész |
+| 5ao | Menüsor- / tálcamenü: az első 8 kedvenc a mai árral és a napi változással (▲/▼), 5 percenként frissül; kattintásra megnyílik a részvény | ✅ kész |
+| 5ap | Követő stop riasztás („Esés a csúcsról”): a riasztás óta elért legmagasabb árhoz képest X%-os esésnél szól; a csúcs az appban és a szerveren is frissül (szinkronnál a magasabb marad), a szint a grafikonon is látszik, e-mailben is megy | ✅ kész |
 | 5j | Telefonos háttér-értesítés (riasztás) szerverről, APNs / FCM | 🟡 első lépés kész: a szerver 10 percenként nézi a belépett fiókok szinkronizált riasztásait, és e-mailben szól (csukott appnál is, kikapcsolható); a telefonos push (APNs / FCM) a Firebase-projekt és az Apple-kulcs után |
 | 5k | Bolti adatlapok 120 nyelven, képernyőképek, ikon, előnézeti videó | 🟡 adatlap-szövegek 70 bolti nyelven (fastlane-mappa, `docs/BOLTI_ADATLAP.md`), feliratos bolti képek a teszt-harnessből a boltok méreteiben; előnézeti videó és a nem latin írású képek a natív buildből később |
 

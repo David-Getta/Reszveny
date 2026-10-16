@@ -158,6 +158,10 @@ class SyncService extends ChangeNotifier {
         alertsMerged.add(a);
       } else if (alertsMerged[i]['triggered_at'] == null && a['triggered_at'] != null) {
         alertsMerged[i] = a;
+      } else if (alertsMerged[i]['triggered_at'] == null && a['peak'] is num) {
+        // Követő stop: a két oldal közül a magasabb csúcs marad.
+        final mine = alertsMerged[i]['peak'];
+        if (mine is! num || (a['peak'] as num) > mine) alertsMerged[i] = {...alertsMerged[i], 'peak': a['peak']};
       }
     }
     return {

@@ -2003,6 +2003,41 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get holdingsNone => '此图片中未找到股票持仓。请尝试使用券商持仓页面的截图。';
+
+  @override
+  String get week52Range => '52周区间';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '较52周最高低$percent';
+  }
+
+  @override
+  String get week52AtHigh => '处于52周最高';
+
+  @override
+  String get alertKindTrailing => '从高点回落';
+
+  @override
+  String get alertTrailingPercent => '从高点回落（%）';
+
+  @override
+  String get alertTrailingHint => '随价格上行跟踪：价格从设置以来的最高点回落此幅度时提醒。';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return '从高点回落 $percent';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return '目前最高：$price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol 从高点回落 $percent';
+  }
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -4003,4 +4038,39 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get holdingsNone => '此圖片中找不到股票持倉。請試用券商持倉頁面的截圖。';
+
+  @override
+  String get week52Range => '52週波幅';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '較52週高位低$percent';
+  }
+
+  @override
+  String get week52AtHigh => '處於52週高位';
+
+  @override
+  String get alertKindTrailing => '從高位回落';
+
+  @override
+  String get alertTrailingPercent => '從高位回落（%）';
+
+  @override
+  String get alertTrailingHint => '隨價格上升跟蹤：價格由設定以來的最高位回落此幅度時提醒。';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return '從高位回落 $percent';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return '至今最高：$price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol 從高位回落 $percent';
+  }
 }

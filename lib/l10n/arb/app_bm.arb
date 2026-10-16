@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Jatew lajɛ sani i k’u fara a kan. Sɔngɔ ye i ka sanni sɔngɔ cɛmancɛ ye aksiyɔn kelen na, a tɛ bi sɔngɔ ye.",
   "holdingsNoPrice": "Sanni sɔngɔ cɛmancɛ tɛ ja kan",
   "holdingsAdd": "{count, plural, =1{Aksiyɔn 1 fara a kan} other{Aksiyɔn {count} fara a kan}}",
-  "holdingsNone": "Aksiyɔn si ma sɔrɔ nin ja kan. I ka burusi ka aksiyɔnw ɲɛ ɛkran ja dɔ lajɛ."
+  "holdingsNone": "Aksiyɔn si ma sɔrɔ nin ja kan. I ka burusi ka aksiyɔnw ɲɛ ɛkran ja dɔ lajɛ.",
+  "week52Range": "Dɔgɔkun 52 sɔngɔ cɛ",
+  "week52BelowHigh": "{percent} Dɔgɔkun 52 sɔngɔ sanfɛla duguma",
+  "week52AtHigh": "Dɔgɔkun 52 sɔngɔ sanfɛla la",
+  "alertKindTrailing": "Ni a jiginna ka bɔ a sanfɛla la",
+  "alertTrailingPercent": "Jigin ka bɔ sanfɛla la (%)",
+  "alertTrailingHint": "A bɛ sɔngɔ tugu sanfɛ: a bɛ i kunnafoni ni sɔngɔ jiginna nin hakɛ ye ka bɔ a sanfɛla la k'a ta i y'a labɛn tuma.",
+  "alertDescTrailing": "{percent} jigin ka bɔ sanfɛla la",
+  "alertTrailingPeak": "sanfɛla ka se bi ma: {price}",
+  "alertHitTrailing": "{symbol} jiginna {percent} ka bɔ a sanfɛla la"
 }

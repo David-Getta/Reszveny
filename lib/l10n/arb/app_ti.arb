@@ -566,5 +566,14 @@
   "holdingsReviewHint": "ቅድሚ ምውሳኽካ ቍጽርታት ኣረጋግጽ። ዋጋ እቲ ንሓንቲ ኣክስዮን ዝኸፈልካዮ ማእከላይ ዋጋ ዕድጊ እዩ፡ ናይ ሎሚ ዋጋ ኣይኮነን።",
   "holdingsNoPrice": "ኣብቲ ስእሊ ማእከላይ ዋጋ ዕድጊ የለን",
   "holdingsAdd": "{count, plural, =1{1 ኣክስዮን ወስኽ} other{{count} ኣክስዮናት ወስኽ}}",
-  "holdingsNone": "ኣብዚ ስእሊ ዝኾነ ኣክስዮን ኣይተረኽበን። ናይ ደላላኻ ገጽ ኣክስዮናት ስእሊ ስክሪን ፈትን።"
+  "holdingsNone": "ኣብዚ ስእሊ ዝኾነ ኣክስዮን ኣይተረኽበን። ናይ ደላላኻ ገጽ ኣክስዮናት ስእሊ ስክሪን ፈትን።",
+  "week52Range": "ናይ 52 ሰሙን ደረት",
+  "week52BelowHigh": "ካብ ናይ 52 ሰሙን ዝለዓለ ብ{percent} ዝተሓተ",
+  "week52AtHigh": "ኣብ ናይ 52 ሰሙን ዝለዓለ",
+  "alertKindTrailing": "ካብ ጫፍ ምውራድ",
+  "alertTrailingPercent": "ካብ ጫፍ ምውራድ (%)",
+  "alertTrailingHint": "ዋጋ ናብ ላዕሊ ይስዕብ፦ ካብ እትውስኖ ጀሚሩ ካብ ዝለዓለ ደረጃ ዋጋ ክንድዚ ምስ ዝወርድ የፍልጠካ።",
+  "alertDescTrailing": "ካብ ጫፍ {percent} ምውራድ",
+  "alertTrailingPeak": "ክሳብ ሕጂ ጫፍ፦ {price}",
+  "alertHitTrailing": "{symbol} ካብ ጫፉ {percent} ወሪዱ"
 }

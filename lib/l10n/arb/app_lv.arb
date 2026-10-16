@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Pirms pievienošanas pārbaudi skaitļus. Cena ir tava vidējā pirkuma cena par vienu akciju, nevis šodienas cena.",
   "holdingsNoPrice": "Attēlā nav vidējās pirkuma cenas",
   "holdingsAdd": "{count, plural, zero{Pievienot {count} pozīcijas} one{Pievienot {count} pozīciju} other{Pievienot {count} pozīcijas}}",
-  "holdingsNone": "Šajā attēlā netika atrastas akciju pozīcijas. Izmēģini ekrānuzņēmumu no sava brokera pozīciju vai aktīvu lapas."
+  "holdingsNone": "Šajā attēlā netika atrastas akciju pozīcijas. Izmēģini ekrānuzņēmumu no sava brokera pozīciju vai aktīvu lapas.",
+  "week52Range": "52 nedēļu diapazons",
+  "week52BelowHigh": "{percent} zem 52 nedēļu maksimuma",
+  "week52AtHigh": "Pie 52 nedēļu maksimuma",
+  "alertKindTrailing": "Nokrītas no virsotnes",
+  "alertTrailingPercent": "Kritums no virsotnes (%)",
+  "alertTrailingHint": "Seko cenai augšup: brīdina, kad cena nokrītas par tik no augstākā līmeņa kopš iestatīšanas.",
+  "alertDescTrailing": "{percent} kritums no virsotnes",
+  "alertTrailingPeak": "līdzšinējā virsotne: {price}",
+  "alertHitTrailing": "{symbol} nokritās par {percent} no virsotnes"
 }

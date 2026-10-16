@@ -2113,4 +2113,40 @@ class AppLocalizationsTe extends AppLocalizations {
   @override
   String get holdingsNone =>
       'ఈ చిత్రంలో షేర్ పొజిషన్‌లు ఏవీ కనుగొనబడలేదు. మీ బ్రోకర్ పొజిషన్‌లు లేదా హోల్డింగ్స్ పేజీ స్క్రీన్‌షాట్‌ను ప్రయత్నించండి.';
+
+  @override
+  String get week52Range => '52-వారాల శ్రేణి';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '52-వారాల గరిష్ఠం కంటే $percent తక్కువ';
+  }
+
+  @override
+  String get week52AtHigh => '52-వారాల గరిష్ఠం వద్ద';
+
+  @override
+  String get alertKindTrailing => 'గరిష్ఠం నుండి పడితే';
+
+  @override
+  String get alertTrailingPercent => 'గరిష్ఠం నుండి పతనం (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'ధరను పైకి అనుసరిస్తుంది: సెట్ చేసినప్పటి నుండి వచ్చిన అత్యధిక స్థాయి నుండి ధర ఇంత పడితే తెలియజేస్తుంది.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'గరిష్ఠం నుండి $percent పతనం';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'ఇప్పటి వరకు గరిష్ఠం: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol గరిష్ఠం నుండి $percent పడింది';
+  }
 }

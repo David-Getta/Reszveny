@@ -2106,4 +2106,40 @@ class AppLocalizationsBn extends AppLocalizations {
   @override
   String get holdingsNone =>
       'এই ছবিতে কোনো শেয়ার অবস্থান পাওয়া যায়নি। আপনার ব্রোকারের পজিশন বা হোল্ডিংস পৃষ্ঠার একটি স্ক্রিনশট চেষ্টা করুন।';
+
+  @override
+  String get week52Range => '52-সপ্তাহের পরিসর';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '52-সপ্তাহের সর্বোচ্চ থেকে $percent নিচে';
+  }
+
+  @override
+  String get week52AtHigh => '52-সপ্তাহের সর্বোচ্চে';
+
+  @override
+  String get alertKindTrailing => 'শীর্ষ থেকে নামলে';
+
+  @override
+  String get alertTrailingPercent => 'শীর্ষ থেকে পতন (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'দামের সঙ্গে উপরে ওঠে: সেট করার পর থেকে সর্বোচ্চ স্তর থেকে দাম এতটা নামলে সতর্ক করে।';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'শীর্ষ থেকে $percent পতন';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'এ পর্যন্ত শীর্ষ: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol শীর্ষ থেকে $percent নেমেছে';
+  }
 }

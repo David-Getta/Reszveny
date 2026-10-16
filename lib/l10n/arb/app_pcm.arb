@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Check di numbers before you add dem. Di price na your average buying price for each share, no be today price.",
   "holdingsNoPrice": "No average buying price for di picture",
   "holdingsAdd": "{count, plural, one{Add {count} position} other{Add {count} positions}}",
-  "holdingsNone": "We no see any stock position for dis picture. Try screenshot of di positions or holdings page for your broker app."
+  "holdingsNone": "We no see any stock position for dis picture. Try screenshot of di positions or holdings page for your broker app.",
+  "week52Range": "Range for 52 weeks",
+  "week52BelowHigh": "{percent} under di highest for 52 weeks",
+  "week52AtHigh": "E dey di highest for 52 weeks",
+  "alertKindTrailing": "Fall from top",
+  "alertTrailingPercent": "Fall from the top (%)",
+  "alertTrailingHint": "E dey follow price go up: e go alert you when price fall reach dis much from the highest point since you set am.",
+  "alertDescTrailing": "{percent} fall from top",
+  "alertTrailingPeak": "top so far: {price}",
+  "alertHitTrailing": "{symbol} don fall {percent} from top"
 }

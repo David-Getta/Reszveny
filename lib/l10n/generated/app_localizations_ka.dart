@@ -2108,4 +2108,40 @@ class AppLocalizationsKa extends AppLocalizations {
   @override
   String get holdingsNone =>
       'ამ სურათზე აქციების პოზიციები ვერ მოიძებნა. სცადე შენი ბროკერის პოზიციების ან აქტივების გვერდის ეკრანის ანაბეჭდი.';
+
+  @override
+  String get week52Range => '52-კვირიანი დიაპაზონი';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '52-კვირიან მაქსიმუმზე $percent-ით დაბლა';
+  }
+
+  @override
+  String get week52AtHigh => '52-კვირიან მაქსიმუმზე';
+
+  @override
+  String get alertKindTrailing => 'ჩამოვა პიკიდან';
+
+  @override
+  String get alertTrailingPercent => 'ვარდნა პიკიდან (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'ფასს ზემოთ მიჰყვება: გაფრთხილება ჩაირთვება, როცა ფასი ამდენით ჩამოვა დაყენების შემდეგ მიღწეული უმაღლესი დონიდან.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'ვარდნა პიკიდან $percent-ით';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'პიკი ჯერჯერობით: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol პიკიდან $percent-ით ჩამოვიდა';
+  }
 }

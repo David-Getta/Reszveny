@@ -2044,4 +2044,39 @@ class AppLocalizationsKo extends AppLocalizations {
   @override
   String get holdingsNone =>
       '이 이미지에서 보유 종목을 찾지 못했습니다. 증권사 앱의 잔고 또는 보유 종목 화면 스크린샷을 사용해 보세요.';
+
+  @override
+  String get week52Range => '52주 범위';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '52주 최고가 대비 $percent 낮음';
+  }
+
+  @override
+  String get week52AtHigh => '52주 최고가 도달';
+
+  @override
+  String get alertKindTrailing => '고점 대비 하락하면';
+
+  @override
+  String get alertTrailingPercent => '고점 대비 하락(%)';
+
+  @override
+  String get alertTrailingHint => '가격 상승을 따라가다가, 설정 이후 최고점에서 이만큼 하락하면 알려 드립니다.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return '고점 대비 $percent 하락';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return '현재까지 고점: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol이(가) 고점 대비 $percent 하락했습니다';
+  }
 }

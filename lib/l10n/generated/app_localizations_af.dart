@@ -2111,4 +2111,40 @@ class AppLocalizationsAf extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Geen aandeelposisies op hierdie prent gevind nie. Probeer ’n skermskoot van jou makelaar se posisies- of beleggingsblad.';
+
+  @override
+  String get week52Range => '52-weke-reikwydte';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent onder die 52-weke-hoogtepunt';
+  }
+
+  @override
+  String get week52AtHigh => 'Op die 52-weke-hoogtepunt';
+
+  @override
+  String get alertKindTrailing => 'Daal van piek';
+
+  @override
+  String get alertTrailingPercent => 'Daling van die piek (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Volg die prys op: die waarskuwing gaan af wanneer die prys soveel van sy hoogste punt daal sedert jy dit gestel het.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return '$percent daling van sy piek';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'piek tot dusver: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol het $percent van sy piek gedaal';
+  }
 }

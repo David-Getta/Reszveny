@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Talá mitángo liboso ya kobakisa yango. Ntalo ezali ntalo ya katikati oyo osombaki na yango action moko, kasi ntalo ya lelo te.",
   "holdingsNoPrice": "Ntalo ya katikati ya kosomba ezali na elilingi te",
   "holdingsAdd": "{count, plural, =1{Bakisa eteni 1} other{Bakisa biteni {count}}}",
-  "holdingsNone": "Biteni ya ba-action emonani na elilingi oyo te. Meka foto ya ekran ya lokasa ya biteni na yo na application ya courtier na yo."
+  "holdingsNone": "Biteni ya ba-action emonani na elilingi oyo te. Meka foto ya ekran ya lokasa ya biteni na yo na application ya courtier na yo.",
+  "week52Range": "Bonene ya pɔsɔ 52",
+  "week52BelowHigh": "{percent} na nse ya likolo ya pɔsɔ 52",
+  "week52AtHigh": "Na likolo ya pɔsɔ 52",
+  "alertKindTrailing": "Soki ekiti uta na nsɔngɛ",
+  "alertTrailingPercent": "Bokiti uta na nsɔngɛ (%)",
+  "alertTrailingHint": "Elandaka ntalo ntango ezali komata: eyebisaka soki ntalo ekiti boye uta na esika na yango ya likolo koleka banda otiaki yango.",
+  "alertDescTrailing": "Bokiti ya {percent} uta na nsɔngɛ",
+  "alertTrailingPeak": "nsɔngɛ tii sikawa: {price}",
+  "alertHitTrailing": "{symbol} ekiti {percent} uta na nsɔngɛ"
 }

@@ -2101,4 +2101,40 @@ class AppLocalizationsMai extends AppLocalizations {
   @override
   String get holdingsNone =>
       'एहि चित्रमे कोनो शेयर पोजीशन नहि भेटल। अपन ब्रोकरक पोजीशन वा होल्डिंग पन्नाक स्क्रीनशॉट आजमाउ।';
+
+  @override
+  String get week52Range => '52-सप्ताहक दायरा';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '52-सप्ताहक उच्चतमसँ $percent नीचाँ';
+  }
+
+  @override
+  String get week52AtHigh => '52-सप्ताहक उच्चतम पर';
+
+  @override
+  String get alertKindTrailing => 'शिखरसँ खसय';
+
+  @override
+  String get alertTrailingPercent => 'शिखरसँ खसब (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'दामक संग ऊपर चलैत अछि: सेट कएलाक बादक सभसँ ऊँच स्तरसँ दाम एतेक खसलापर सूचना दैत अछि।';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'शिखरसँ $percent खसब';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'एखन धरिक शिखर: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol शिखरसँ $percent खसल';
+  }
 }

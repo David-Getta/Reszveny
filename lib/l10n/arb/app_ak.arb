@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Hwɛ nɔma no yiye ansa na wode aka ho. Bo no yɛ bo mfinimfini a wotɔɔ kyɛfa biara, ɛnyɛ nnɛ bo.",
   "holdingsNoPrice": "Bo mfinimfini a wotɔe nni mfonini no so",
   "holdingsAdd": "{count, plural, =1{Fa kyɛfa 1 ka ho} other{Fa nkyɛfa {count} ka ho}}",
-  "holdingsNone": "Yɛanhu kyɛfa biara wɔ mfonini yi so. Sɔ screenshot a ɛfiri wo broker no nkyɛfa krataafa so hwɛ."
+  "holdingsNone": "Yɛanhu kyɛfa biara wɔ mfonini yi so. Sɔ screenshot a ɛfiri wo broker no nkyɛfa krataafa so hwɛ.",
+  "week52Range": "Nnawɔtwe 52 bo ntam",
+  "week52BelowHigh": "{percent} wɔ Nnawɔtwe 52 bo kɛse ase",
+  "week52AtHigh": "Ɛwɔ Nnawɔtwe 52 bo kɛse so",
+  "alertKindTrailing": "Sɛ ɛtew fi soro pɛn",
+  "alertTrailingPercent": "Ntew fi soro pɛn (%)",
+  "alertTrailingHint": "Ɛdi boɔ no akyi kɔ soro: ɛbɛbɔ wo amanneɛ sɛ boɔ no tew saa dodoɔ yi fi ne soro pɛn a ɛduruu firi bere a wosiee no.",
+  "alertDescTrailing": "{percent} ntew fi soro pɛn",
+  "alertTrailingPeak": "soro pɛn de besi seesei: {price}",
+  "alertHitTrailing": "{symbol} atew {percent} afi ne soro pɛn"
 }

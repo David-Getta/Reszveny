@@ -2151,4 +2151,40 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get holdingsNone =>
       'لم يُعثر على أي مراكز أسهم في هذه الصورة. جرّب لقطة شاشة لصفحة المراكز أو الحيازات لدى وسيطك.';
+
+  @override
+  String get week52Range => 'نطاق 52 أسبوعاً';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return 'أقل من أعلى سعر في 52 أسبوعاً بنسبة $percent';
+  }
+
+  @override
+  String get week52AtHigh => 'عند أعلى سعر في 52 أسبوعاً';
+
+  @override
+  String get alertKindTrailing => 'ينخفض عن الذروة';
+
+  @override
+  String get alertTrailingPercent => 'الانخفاض عن الذروة (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'يتتبع السعر صعودًا: ينطلق التنبيه عندما ينخفض السعر بهذه النسبة عن أعلى مستوى بلغه منذ ضبطه.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'انخفاض $percent عن الذروة';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'الذروة حتى الآن: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return 'انخفض $symbol بنسبة $percent عن ذروته';
+  }
 }

@@ -566,5 +566,14 @@
   "holdingsReviewHint": "ከማከልዎ በፊት ቁጥሮቹን ያረጋግጡ። ዋጋው የዛሬው ዋጋ ሳይሆን በአክሲዮን አማካይ የግዢ ዋጋዎ ነው።",
   "holdingsNoPrice": "በምስሉ ላይ አማካይ የግዢ ዋጋ የለም",
   "holdingsAdd": "{count, plural, =1{1 ይዞታ አክል} other{{count} ይዞታዎችን አክል}}",
-  "holdingsNone": "በዚህ ምስል ላይ ምንም የአክሲዮን ይዞታ አልተገኘም። የደላላዎን የይዞታዎች ገጽ ቅጽበታዊ ገጽ እይታ ይሞክሩ።"
+  "holdingsNone": "በዚህ ምስል ላይ ምንም የአክሲዮን ይዞታ አልተገኘም። የደላላዎን የይዞታዎች ገጽ ቅጽበታዊ ገጽ እይታ ይሞክሩ።",
+  "week52Range": "የ52 ሳምንት ክልል",
+  "week52BelowHigh": "ከ52 ሳምንት ከፍተኛ በ{percent} ዝቅ ያለ",
+  "week52AtHigh": "በ52 ሳምንት ከፍተኛ ላይ",
+  "alertKindTrailing": "ከከፍተኛው ሲወርድ",
+  "alertTrailingPercent": "ከከፍተኛው ቅናሽ (%)",
+  "alertTrailingHint": "ዋጋውን ወደ ላይ ይከተላል፦ ማንቂያውን ካዘጋጁበት ጊዜ ጀምሮ ከደረሰበት ከፍተኛ ደረጃ ዋጋው ይህን ያህል ሲወርድ ያሳውቃል።",
+  "alertDescTrailing": "ከከፍተኛው {percent} ቅናሽ",
+  "alertTrailingPeak": "እስካሁን ከፍተኛ፦ {price}",
+  "alertHitTrailing": "{symbol} ከከፍተኛው {percent} ወርዷል"
 }

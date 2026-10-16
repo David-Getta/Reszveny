@@ -2112,4 +2112,40 @@ class AppLocalizationsHa extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Ba a sami hannayen jari a wannan hoton ba. Gwada hoton allo na shafin hannayen jarinka a manhajar dillalinka.';
+
+  @override
+  String get week52Range => 'Kewayon makonni 52';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent ƙasa da mafi girma a makonni 52';
+  }
+
+  @override
+  String get week52AtHigh => 'A mafi girma a makonni 52';
+
+  @override
+  String get alertKindTrailing => 'Idan ya faɗo daga ƙoli';
+
+  @override
+  String get alertTrailingPercent => 'Faɗuwa daga ƙoli (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Yana bin farashi sama: zai sanar idan farashi ya faɗi wannan adadin daga mafi girman matakinsa tun da ka saita shi.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Faɗuwar $percent daga ƙoli';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'ƙoli zuwa yanzu: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol ya faɗi $percent daga ƙolinsa';
+  }
 }

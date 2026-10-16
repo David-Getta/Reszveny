@@ -2105,4 +2105,40 @@ class AppLocalizationsBm extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Aksiyɔn si ma sɔrɔ nin ja kan. I ka burusi ka aksiyɔnw ɲɛ ɛkran ja dɔ lajɛ.';
+
+  @override
+  String get week52Range => 'Dɔgɔkun 52 sɔngɔ cɛ';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent Dɔgɔkun 52 sɔngɔ sanfɛla duguma';
+  }
+
+  @override
+  String get week52AtHigh => 'Dɔgɔkun 52 sɔngɔ sanfɛla la';
+
+  @override
+  String get alertKindTrailing => 'Ni a jiginna ka bɔ a sanfɛla la';
+
+  @override
+  String get alertTrailingPercent => 'Jigin ka bɔ sanfɛla la (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'A bɛ sɔngɔ tugu sanfɛ: a bɛ i kunnafoni ni sɔngɔ jiginna nin hakɛ ye ka bɔ a sanfɛla la k\'a ta i y\'a labɛn tuma.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return '$percent jigin ka bɔ sanfɛla la';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'sanfɛla ka se bi ma: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol jiginna $percent ka bɔ a sanfɛla la';
+  }
 }

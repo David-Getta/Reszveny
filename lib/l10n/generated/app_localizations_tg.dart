@@ -2109,4 +2109,40 @@ class AppLocalizationsTg extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Дар ин тасвир мавқеъҳои саҳмия ёфт нашуданд. Скриншоти саҳифаи мавқеъҳо ё дороиҳоро дар барномаи брокератон санҷед.';
+
+  @override
+  String get week52Range => 'Доираи 52 ҳафта';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent пасттар аз баландтарин дар 52 ҳафта';
+  }
+
+  @override
+  String get week52AtHigh => 'Дар баландтарин дар 52 ҳафта';
+
+  @override
+  String get alertKindTrailing => 'Аз авҷ поён фарояд';
+
+  @override
+  String get alertTrailingPercent => 'Афтиш аз авҷ (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Нархро ба боло пайгирӣ мекунад: вақте нарх аз сатҳи баландтарин пас аз гузоштанатон ин қадар поён фарояд, огоҳ мекунад.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Афтиши $percent аз авҷ';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'авҷи то ҳол: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol аз авҷ $percent поён фаромад';
+  }
 }

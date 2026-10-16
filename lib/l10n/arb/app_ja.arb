@@ -566,5 +566,14 @@
   "holdingsReviewHint": "追加する前に数値を確認してください。価格は今日の株価ではなく、1株あたりの平均取得単価です。",
   "holdingsNoPrice": "画像に平均取得単価がありません",
   "holdingsAdd": "{count, plural, =1{1 件の保有銘柄を追加} other{{count} 件の保有銘柄を追加}}",
-  "holdingsNone": "この画像から保有銘柄が見つかりませんでした。証券会社アプリの保有銘柄（ポジション）画面のスクリーンショットをお試しください。"
+  "holdingsNone": "この画像から保有銘柄が見つかりませんでした。証券会社アプリの保有銘柄（ポジション）画面のスクリーンショットをお試しください。",
+  "week52Range": "52週レンジ",
+  "week52BelowHigh": "52週高値を{percent}下回る",
+  "week52AtHigh": "52週高値に到達",
+  "alertKindTrailing": "高値から下落したら",
+  "alertTrailingPercent": "高値からの下落（%）",
+  "alertTrailingHint": "価格の上昇に追随し、設定後の最高値からこの割合だけ下落したら通知します。",
+  "alertDescTrailing": "高値から{percent}下落",
+  "alertTrailingPeak": "これまでの高値：{price}",
+  "alertHitTrailing": "{symbol}は高値から{percent}下落しました"
 }

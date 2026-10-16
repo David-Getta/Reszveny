@@ -2113,4 +2113,40 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Nessuna posizione azionaria trovata in questa immagine. Prova con uno screenshot della pagina delle posizioni o del portafoglio del tuo broker.';
+
+  @override
+  String get week52Range => 'Intervallo a 52 settimane';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent sotto il massimo a 52 settimane';
+  }
+
+  @override
+  String get week52AtHigh => 'Al massimo a 52 settimane';
+
+  @override
+  String get alertKindTrailing => 'Scende dal massimo';
+
+  @override
+  String get alertTrailingPercent => 'Calo dal massimo (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Segue il prezzo al rialzo: l’avviso scatta quando il prezzo scende di tanto dal suo massimo da quando l’hai impostato.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Calo del $percent dal massimo';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'massimo finora: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol è sceso del $percent dal massimo';
+  }
 }

@@ -2103,4 +2103,40 @@ class AppLocalizationsBho extends AppLocalizations {
   @override
   String get holdingsNone =>
       'एह तस्वीर में कवनो शेयर पोजीशन ना मिलल। अपना ब्रोकर के पोजीशन भा होल्डिंग पन्ना के स्क्रीनशॉट आजमाईं।';
+
+  @override
+  String get week52Range => '52 हप्ता के दायरा';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '52 हप्ता के सबसे ऊँच से $percent नीचे';
+  }
+
+  @override
+  String get week52AtHigh => '52 हप्ता के सबसे ऊँच पर';
+
+  @override
+  String get alertKindTrailing => 'शिखर से गिरे';
+
+  @override
+  String get alertTrailingPercent => 'शिखर से गिरावट (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'दाम के संगे ऊपर चलेला: सेट कइला के बाद के सबसे ऊँच स्तर से दाम एतना गिरी त सूचना दी।';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'शिखर से $percent गिरावट';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'अब तक के शिखर: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol शिखर से $percent गिरल';
+  }
 }

@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Lelee ọnụọgụ ndị a tupu ịgbakwunye ha. Ọnụahịa bụ ọnụahịa nkezi i ji zụta otu òkè, ọ bụghị ọnụahịa taa.",
   "holdingsNoPrice": "Enweghị ọnụahịa nkezi ịzụrụ na onyonyo a",
   "holdingsAdd": "{count, plural, =1{Gbakwunye òkè 1} other{Gbakwunye òkè {count}}}",
-  "holdingsNone": "Achọtaghị òkè ahịa ọ bụla na onyonyo a. Nwalee foto ihuenyo nke peeji òkè gị n'ime ngwa onye na-ere ahịa òkè gị."
+  "holdingsNone": "Achọtaghị òkè ahịa ọ bụla na onyonyo a. Nwalee foto ihuenyo nke peeji òkè gị n'ime ngwa onye na-ere ahịa òkè gị.",
+  "week52Range": "Oke n'izu 52",
+  "week52BelowHigh": "{percent} n'okpuru kachasị elu n'izu 52",
+  "week52AtHigh": "Na kachasị elu n'izu 52",
+  "alertKindTrailing": "Dara site n'elu",
+  "alertTrailingPercent": "Ọdịda site n'elu (%)",
+  "alertTrailingHint": "Ọ na-eso ọnụahịa ka ọ na-arị elu: ọ ga-agwa gị mgbe ọnụahịa dara nke a site n'ọkwa kacha elu ya kemgbe i dobere ya.",
+  "alertDescTrailing": "Ọdịda {percent} site n'elu",
+  "alertTrailingPeak": "elu kacha ruo ugbu a: {price}",
+  "alertHitTrailing": "{symbol} dara {percent} site n'elu ya"
 }

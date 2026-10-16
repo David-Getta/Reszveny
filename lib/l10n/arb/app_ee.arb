@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Kpɔ xexlẽdzesiawo ɖa hafi atsɔ wo akpe ɖe eŋu. Asi la nye asi titina si nèxe ɖe akpa ɖeka ta, menye egbe ƒe asi o.",
   "holdingsNoPrice": "Asi titina si nèxe mele nɔnɔmetata la dzi o",
   "holdingsAdd": "{count, plural, =1{Tsɔ akpa 1 kpe ɖe eŋu} other{Tsɔ akpa {count} kpe ɖe eŋu}}",
-  "holdingsNone": "Míekpɔ akpa aɖeke le nɔnɔmetata sia dzi o. Te screenshot si wòɖe le wò broker ƒe akpa siwo le asiwò ƒe axa dzi kpɔ."
+  "holdingsNone": "Míekpɔ akpa aɖeke le nɔnɔmetata sia dzi o. Te screenshot si wòɖe le wò broker ƒe akpa siwo le asiwò ƒe axa dzi kpɔ.",
+  "week52Range": "Kwasiɖa 52 ƒe asiwo ƒe didime",
+  "week52BelowHigh": "{percent} le Kwasiɖa 52 ƒe asi kɔkɔtɔ te",
+  "week52AtHigh": "Le Kwasiɖa 52 ƒe asi kɔkɔtɔ dzi",
+  "alertKindTrailing": "Ne eɖiɖi tso eƒe kɔkɔƒe",
+  "alertTrailingPercent": "Ɖiɖi tso kɔkɔƒe (%)",
+  "alertTrailingHint": "Edzia asixɔxɔ yome yi dzi: ena nyanya ne asixɔxɔ ɖiɖi alea tso eƒe kɔkɔƒe si wòɖo tso esime nèɖoe.",
+  "alertDescTrailing": "{percent} ɖiɖi tso kɔkɔƒe",
+  "alertTrailingPeak": "kɔkɔƒe va se ɖe fifia: {price}",
+  "alertHitTrailing": "{symbol} ɖiɖi {percent} tso eƒe kɔkɔƒe"
 }

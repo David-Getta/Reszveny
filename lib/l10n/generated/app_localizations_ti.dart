@@ -2071,4 +2071,40 @@ class AppLocalizationsTi extends AppLocalizations {
   @override
   String get holdingsNone =>
       'ኣብዚ ስእሊ ዝኾነ ኣክስዮን ኣይተረኽበን። ናይ ደላላኻ ገጽ ኣክስዮናት ስእሊ ስክሪን ፈትን።';
+
+  @override
+  String get week52Range => 'ናይ 52 ሰሙን ደረት';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return 'ካብ ናይ 52 ሰሙን ዝለዓለ ብ$percent ዝተሓተ';
+  }
+
+  @override
+  String get week52AtHigh => 'ኣብ ናይ 52 ሰሙን ዝለዓለ';
+
+  @override
+  String get alertKindTrailing => 'ካብ ጫፍ ምውራድ';
+
+  @override
+  String get alertTrailingPercent => 'ካብ ጫፍ ምውራድ (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'ዋጋ ናብ ላዕሊ ይስዕብ፦ ካብ እትውስኖ ጀሚሩ ካብ ዝለዓለ ደረጃ ዋጋ ክንድዚ ምስ ዝወርድ የፍልጠካ።';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'ካብ ጫፍ $percent ምውራድ';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'ክሳብ ሕጂ ጫፍ፦ $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol ካብ ጫፉ $percent ወሪዱ';
+  }
 }

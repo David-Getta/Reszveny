@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Kebera ennamba nga tonnaziyongerako. Bbeeyi ye bbeeyi yo eya wakati gye wagulirako buli mugabo, so si bbeeyi ya leero.",
   "holdingsNoPrice": "Tewali bbeeyi ya wakati ey'okugula ku kifaananyi",
   "holdingsAdd": "{count, plural, =1{Yongerako omugabo 1} other{Yongerako emigabo {count}}}",
-  "holdingsNone": "Tewali migabo gizuuliddwa ku kifaananyi kino. Gezaako ekifaananyi kya sikirini eky'olupapula lw'emigabo gyo ku app ya broker wo."
+  "holdingsNone": "Tewali migabo gizuuliddwa ku kifaananyi kino. Gezaako ekifaananyi kya sikirini eky'olupapula lw'emigabo gyo ku app ya broker wo.",
+  "week52Range": "Ebbanga lya wiiki 52",
+  "week52BelowHigh": "{percent} wansi wa waggulu mu wiiki 52",
+  "week52AtHigh": "Ku waggulu mu wiiki 52",
+  "alertKindTrailing": "Bw'ekka okuva ku ntikko",
+  "alertTrailingPercent": "Okukka okuva ku ntikko (%)",
+  "alertTrailingHint": "Egoberera bbeeyi ng'erinnya: ekumanyisa bbeeyi bw'ekka kino okuva ku ddaala lyayo erisinga waggulu bukyanga ogiteekawo.",
+  "alertDescTrailing": "Okukka kwa {percent} okuva ku ntikko",
+  "alertTrailingPeak": "entikko okutuuka kati: {price}",
+  "alertHitTrailing": "{symbol} kikkiridde {percent} okuva ku ntikko"
 }

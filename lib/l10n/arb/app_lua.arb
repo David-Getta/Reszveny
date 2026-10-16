@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Tangila manomba kumpala kua kuabueja. Mushinga udi mushinga wa pankatshi uvua musumbe tshitupa tshimue, kauena mushinga wa lelu to.",
   "holdingsNoPrice": "Kakuena mushinga wa pankatshi wa kusumba mu tshimfuanyi to",
   "holdingsAdd": "{count, plural, =1{Bueja tshitupa 1} other{Bueja bitupa {count}}}",
-  "holdingsNone": "Katuena bapete bitupa bia actions mu tshimfuanyi etshi to. Teta foto wa ekran wa dibeji dia bitupa biebe mu application wa courtier webe."
+  "holdingsNone": "Katuena bapete bitupa bia actions mu tshimfuanyi etshi to. Teta foto wa ekran wa dibeji dia bitupa biebe mu application wa courtier webe.",
+  "week52Range": "Bunene bua mingu 52",
+  "week52BelowHigh": "{percent} kuinshi kua mushinga wa kuulu wa mingu 52",
+  "week52AtHigh": "Ku mushinga wa kuulu wa mingu 52",
+  "alertKindTrailing": "Udi upueka ku tshisongo",
+  "alertTrailingPercent": "Dipueka ku tshisongo (%)",
+  "alertTrailingHint": "Udi ulonda mushinga ku mutu: udi ukumanyisha padi mushinga upueka bia nunku ku tshisongo tshiawu kumbukila pawakatshiteka.",
+  "alertDescTrailing": "Dipueka dia {percent} ku tshisongo",
+  "alertTrailingPeak": "tshisongo too ne mpindieu: {price}",
+  "alertHitTrailing": "{symbol} mupueke {percent} ku tshisongo"
 }

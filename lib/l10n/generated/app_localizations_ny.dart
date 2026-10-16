@@ -2114,4 +2114,40 @@ class AppLocalizationsNy extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Sitinapeze masheya pa chithunzi ichi. Yesani chithunzi cha sikirini cha tsamba la masheya a broker wanu.';
+
+  @override
+  String get week52Range => 'Mlingo wa masabata 52';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent pansi pa pamwamba pa masabata 52';
+  }
+
+  @override
+  String get week52AtHigh => 'Pamwamba pa masabata 52';
+
+  @override
+  String get alertKindTrailing => 'Ukatsika kuchokera pamwamba';
+
+  @override
+  String get alertTrailingPercent => 'Kutsika kuchokera pamwamba (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Imatsatira mtengo ukamakwera: imakudziwitsani mtengo ukatsika chonchi kuchokera pamlingo wapamwamba kwambiri kuyambira pamene mudaiyika.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Kutsika kwa $percent kuchokera pamwamba';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'pamwamba mpaka pano: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol yatsika $percent kuchokera pamwamba';
+  }
 }

@@ -289,13 +289,22 @@ class DesktopIntegration extends ChangeNotifier with WindowListener, TrayListene
   static const _trayOpen = 'open';
   static const _trayQuick = 'quick';
   static const _trayQuit = 'quit';
+  static const _trayStock = 'stock:';
 
-  /// Menüsor- / tálcaikon létrehozása (vagy a feliratok frissítése nyelvváltáskor).
+  /// Legfeljebb ennyi kedvenc kerül a menübe.
+  static const trayMaxStocks = 8;
+
+  void Function(String symbol)? _onTrayStock;
+
+  /// Menüsor- / tálcaikon létrehozása, illetve a menü frissítése (nyelvváltás,
+  /// új árak). A [stocks] a kedvencek a mai árral; kattintásra [onStock].
   Future<void> setupTray({
     required String open,
     required String quickSearch,
     required String quit,
     required String tooltip,
+    List<({String symbol, String label})> stocks = const [],
+    void Function(String symbol)? onStock,
   }) async {
     if (!isSupported) return;
     try {
@@ -309,11 +318,16 @@ class DesktopIntegration extends ChangeNotifier with WindowListener, TrayListene
         }
       }
       if (!Platform.isLinux) await trayManager.setToolTip(tooltip);
+      _onTrayStock = onStock;
       await trayManager.setContextMenu(
         Menu(
           items: [
             MenuItem(key: _trayOpen, label: open),
             MenuItem(key: _trayQuick, label: quickSearch),
+            if (stocks.isNotEmpty) ...[
+              MenuItem.separator(),
+              for (final s in stocks.take(trayMaxStocks)) MenuItem(key: '$_trayStock${s.symbol}', label: s.label),
+            ],
             MenuItem.separator(),
             MenuItem(key: _trayQuit, label: quit),
           ],
@@ -339,6 +353,8 @@ class DesktopIntegration extends ChangeNotifier with WindowListener, TrayListene
         showQuickBar();
       case _trayQuit:
         exit(0);
+      case final String key when key.startsWith(_trayStock):
+        _onTrayStock?.call(key.substring(_trayStock.length));
     }
   }
 

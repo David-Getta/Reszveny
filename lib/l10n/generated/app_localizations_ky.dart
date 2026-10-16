@@ -2110,4 +2110,40 @@ class AppLocalizationsKy extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Бул сүрөттөн акция позициялары табылган жок. Брокериңиздин позициялар же активдер барагынын скриншотун колдонуп көрүңүз.';
+
+  @override
+  String get week52Range => '52 жумалык диапазон';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '52 жумалык максимумдан $percent төмөн';
+  }
+
+  @override
+  String get week52AtHigh => '52 жумалык максимумда';
+
+  @override
+  String get alertKindTrailing => 'Чокудан түшсө';
+
+  @override
+  String get alertTrailingPercent => 'Чокудан төмөндөө (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Бааны өйдө карай ээрчийт: баа коюлгандан берки эң жогорку деңгээлинен ушунча түшсө, эскертет.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Чокудан $percent төмөндөө';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'азырга чейинки чоку: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol чокудан $percent түштү';
+  }
 }

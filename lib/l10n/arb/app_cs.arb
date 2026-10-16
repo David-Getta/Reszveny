@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Před přidáním zkontrolujte čísla. Cena je vaše průměrná nákupní cena za akcii, ne dnešní cena.",
   "holdingsNoPrice": "Na obrázku není průměrná nákupní cena",
   "holdingsAdd": "{count, plural, =1{Přidat 1 pozici} few{Přidat {count} pozice} many{Přidat {count} pozice} other{Přidat {count} pozic}}",
-  "holdingsNone": "Na tomto obrázku nebyly nalezeny žádné akciové pozice. Zkuste snímek obrazovky stránky s pozicemi nebo portfoliem u vašeho brokera."
+  "holdingsNone": "Na tomto obrázku nebyly nalezeny žádné akciové pozice. Zkuste snímek obrazovky stránky s pozicemi nebo portfoliem u vašeho brokera.",
+  "week52Range": "52týdenní rozpětí",
+  "week52BelowHigh": "{percent} pod 52týdenním maximem",
+  "week52AtHigh": "Na 52týdenním maximu",
+  "alertKindTrailing": "Klesne z vrcholu",
+  "alertTrailingPercent": "Pokles z vrcholu (%)",
+  "alertTrailingHint": "Sleduje cenu nahoru: upozorní, když cena klesne o tolik ze svého maxima od nastavení.",
+  "alertDescTrailing": "Pokles o {percent} z vrcholu",
+  "alertTrailingPeak": "dosavadní vrchol: {price}",
+  "alertHitTrailing": "{symbol} klesla o {percent} z vrcholu"
 }

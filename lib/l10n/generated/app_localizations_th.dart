@@ -2079,4 +2079,40 @@ class AppLocalizationsTh extends AppLocalizations {
   @override
   String get holdingsNone =>
       'ไม่พบหุ้นที่ถืออยู่ในรูปภาพนี้ ลองใช้ภาพหน้าจอของหน้าพอร์ตหรือหุ้นที่ถือในแอปโบรกเกอร์ของคุณ';
+
+  @override
+  String get week52Range => 'ช่วง 52 สัปดาห์';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return 'ต่ำกว่าสูงสุดรอบ 52 สัปดาห์ $percent';
+  }
+
+  @override
+  String get week52AtHigh => 'อยู่ที่สูงสุดรอบ 52 สัปดาห์';
+
+  @override
+  String get alertKindTrailing => 'ลดลงจากจุดสูงสุด';
+
+  @override
+  String get alertTrailingPercent => 'การลดลงจากจุดสูงสุด (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'ติดตามราคาขึ้นไป: แจ้งเตือนเมื่อราคาลดลงเท่านี้จากจุดสูงสุดนับตั้งแต่ตั้งค่า';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'ลดลง $percent จากจุดสูงสุด';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'สูงสุดจนถึงตอนนี้: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol ลดลง $percent จากจุดสูงสุด';
+  }
 }

@@ -2114,4 +2114,40 @@ class AppLocalizationsFil extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Walang nakitang posisyon sa stock sa larawang ito. Subukan ang screenshot ng positions o holdings page ng broker mo.';
+
+  @override
+  String get week52Range => '52-linggong saklaw';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent mas mababa sa 52-linggong pinakamataas';
+  }
+
+  @override
+  String get week52AtHigh => 'Nasa 52-linggong pinakamataas';
+
+  @override
+  String get alertKindTrailing => 'Bumaba mula sa tuktok';
+
+  @override
+  String get alertTrailingPercent => 'Baba mula sa tuktok (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Sinusundan ang presyo pataas: aabisuhan ka kapag bumaba ang presyo nang ganito mula sa pinakamataas nitong antas mula nang itakda mo ito.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return '$percent baba mula sa tuktok';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'tuktok sa ngayon: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return 'Bumaba ang $symbol nang $percent mula sa tuktok';
+  }
 }

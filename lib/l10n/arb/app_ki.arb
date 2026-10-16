@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Thuthuria namba mbere ya kũmongerera. Thogora nĩ thogora wa gatagatĩ ũrĩa wagũrire o mũgabana ũmwe, ti thogora wa ũmũthĩ.",
   "holdingsNoPrice": "Gũtirĩ thogora wa gatagatĩ wa kũgũra mbicainĩ",
   "holdingsAdd": "{count, plural, =1{Ongerera mũgabana 1} other{Ongerera mĩgabana {count}}}",
-  "holdingsNone": "Gũtirĩ mĩgabana yoneka mbicainĩ ĩno. Geria mbica ya skrini ya karatathi ka mĩgabana yaku kwa broker waku."
+  "holdingsNone": "Gũtirĩ mĩgabana yoneka mbicainĩ ĩno. Geria mbica ya skrini ya karatathi ka mĩgabana yaku kwa broker waku.",
+  "week52Range": "Mũhaka wa ciumia 52",
+  "week52BelowHigh": "{percent} thĩ wa thogora wa igũrũ mũno (ciumia 52)",
+  "week52AtHigh": "Thogora-inĩ wa igũrũ mũno (ciumia 52)",
+  "alertKindTrailing": "Ũgĩikũrũka kuuma gĩcũmbĩ-inĩ",
+  "alertTrailingPercent": "Kũikũrũka kuuma gĩcũmbĩ-inĩ (%)",
+  "alertTrailingHint": "Rĩrũmagĩrĩra thogora ũgĩambata: rĩkũmenyithia rĩrĩa thogora waikũrũka ũũ kuuma kĩgerero kĩa igũrũ mũno kuuma rĩrĩa warĩhaarĩirie.",
+  "alertDescTrailing": "Kũikũrũka {percent} kuuma gĩcũmbĩ-inĩ",
+  "alertTrailingPeak": "gĩcũmbĩ nginya rĩu: {price}",
+  "alertHitTrailing": "{symbol} nĩyaikũrũka {percent} kuuma gĩcũmbĩ-inĩ"
 }

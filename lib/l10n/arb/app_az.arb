@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Əlavə etməzdən əvvəl rəqəmləri yoxlayın. Qiymət bugünkü qiymət deyil, səhm başına orta alış qiymətinizdir.",
   "holdingsNoPrice": "Şəkildə orta alış qiyməti yoxdur",
   "holdingsAdd": "{count, plural, =1{1 mövqe əlavə et} other{{count} mövqe əlavə et}}",
-  "holdingsNone": "Bu şəkildə səhm mövqeyi tapılmadı. Brokerinizin mövqelər və ya portfel səhifəsinin ekran görüntüsünü yoxlayın."
+  "holdingsNone": "Bu şəkildə səhm mövqeyi tapılmadı. Brokerinizin mövqelər və ya portfel səhifəsinin ekran görüntüsünü yoxlayın.",
+  "week52Range": "52 həftəlik diapazon",
+  "week52BelowHigh": "52 həftəlik maksimumdan {percent} aşağı",
+  "week52AtHigh": "52 həftəlik maksimumda",
+  "alertKindTrailing": "Zirvədən düşərsə",
+  "alertTrailingPercent": "Zirvədən düşmə (%)",
+  "alertTrailingHint": "Qiyməti yuxarı izləyir: qiymət quraşdırıldığı vaxtdan bəri çatdığı ən yüksək səviyyədən bu qədər düşəndə xəbərdarlıq edir.",
+  "alertDescTrailing": "Zirvədən {percent} düşmə",
+  "alertTrailingPeak": "indiyədək zirvə: {price}",
+  "alertHitTrailing": "{symbol} zirvədən {percent} düşdü"
 }

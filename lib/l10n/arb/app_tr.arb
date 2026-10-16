@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Eklemeden önce rakamları kontrol et. Fiyat, hisse başına ortalama alış fiyatındır, bugünkü fiyat değil.",
   "holdingsNoPrice": "Görselde ortalama alış fiyatı yok",
   "holdingsAdd": "{count, plural, =1{1 pozisyon ekle} other{{count} pozisyon ekle}}",
-  "holdingsNone": "Bu görselde hisse pozisyonu bulunamadı. Aracı kurumunun pozisyonlar veya varlıklar sayfasının ekran görüntüsünü dene."
+  "holdingsNone": "Bu görselde hisse pozisyonu bulunamadı. Aracı kurumunun pozisyonlar veya varlıklar sayfasının ekran görüntüsünü dene.",
+  "week52Range": "52 haftalık aralık",
+  "week52BelowHigh": "52 haftalık en yüksekten {percent} aşağıda",
+  "week52AtHigh": "52 haftalık en yüksekte",
+  "alertKindTrailing": "Zirveden düşerse",
+  "alertTrailingPercent": "Zirveden düşüş (%)",
+  "alertTrailingHint": "Fiyatı yukarı doğru takip eder: fiyat, kurulduğundan beri ulaştığı en yüksek seviyeden bu kadar düştüğünde uyarır.",
+  "alertDescTrailing": "Zirveden {percent} düşüş",
+  "alertTrailingPeak": "şimdiye kadarki zirve: {price}",
+  "alertHitTrailing": "{symbol} zirveden {percent} düştü"
 }

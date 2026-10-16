@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Jonga amanani phambi kokuba uwongeze. Ixabiso lixabiso lakho eliphakathi lokuthenga ngesabelo ngasinye, ingelilo ixabiso lanamhlanje.",
   "holdingsNoPrice": "Akukho xabiso liphakathi lokuthenga emfanekisweni",
   "holdingsAdd": "{count, plural, =1{Yongeza isabelo esinye} other{Yongeza izabelo ezi-{count}}}",
-  "holdingsNone": "Akukho zabelo zifunyenweyo kulo mfanekiso. Zama umfanekiso wesikrini wephepha lezabelo okanye lezinto ozibambileyo kwibhrokha yakho."
+  "holdingsNone": "Akukho zabelo zifunyenweyo kulo mfanekiso. Zama umfanekiso wesikrini wephepha lezabelo okanye lezinto ozibambileyo kwibhrokha yakho.",
+  "week52Range": "Uluhlu lweeveki ezi-52",
+  "week52BelowHigh": "{percent} ngaphantsi kweliphezulu leeveki ezi-52",
+  "week52AtHigh": "Kweliphezulu leeveki ezi-52",
+  "alertKindTrailing": "Yehla ukusuka encotsheni",
+  "alertTrailingPercent": "Ukwehla ukusuka encotsheni (%)",
+  "alertTrailingHint": "Ilandela ixabiso linyuka: ikwazisa xa ixabiso lisehla ngolu hlobo ukusuka kwelona nqanaba liphezulu ukusukela oko uyisetile.",
+  "alertDescTrailing": "Ukwehla nge-{percent} ukusuka encotsheni",
+  "alertTrailingPeak": "incopho ukuza kuthi ga ngoku: {price}",
+  "alertHitTrailing": "{symbol} yehle nge-{percent} ukusuka encotsheni"
 }

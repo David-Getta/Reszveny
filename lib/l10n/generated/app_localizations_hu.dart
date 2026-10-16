@@ -2113,4 +2113,40 @@ class AppLocalizationsHu extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Ezen a képen nem találtunk részvénypozíciót. Próbáld a brókered „Pozícióim” vagy „Portfólió” oldaláról készült képernyőképpel.';
+
+  @override
+  String get week52Range => '52 hetes sáv';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent-kal az 52 hetes csúcs alatt';
+  }
+
+  @override
+  String get week52AtHigh => 'Az 52 hetes csúcson';
+
+  @override
+  String get alertKindTrailing => 'Esés a csúcsról';
+
+  @override
+  String get alertTrailingPercent => 'Esés a csúcsról (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Követi az árat felfelé: akkor szól, ha az ár ennyit esik a beállítás óta elért legmagasabb szintjéről.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return '$percent esés a csúcsról';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'eddigi csúcs: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol: $percent esés a csúcsról';
+  }
 }

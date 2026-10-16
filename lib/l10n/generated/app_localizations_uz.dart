@@ -2111,4 +2111,40 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Bu rasmda aksiya pozitsiyalari topilmadi. Brokeringizdagi pozitsiyalar yoki aktivlar sahifasining skrinshotini sinab koʻring.';
+
+  @override
+  String get week52Range => '52 haftalik diapazon';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '52 haftalik maksimumdan $percent past';
+  }
+
+  @override
+  String get week52AtHigh => '52 haftalik maksimumda';
+
+  @override
+  String get alertKindTrailing => 'Choʻqqidan tushsa';
+
+  @override
+  String get alertTrailingPercent => 'Choʻqqidan tushish (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Narxni yuqoriga kuzatib boradi: oʻrnatilgandan beri eng yuqori darajasidan narx shuncha tushsa, xabar beradi.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Choʻqqidan $percent tushish';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'hozirgacha choʻqqi: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol choʻqqidan $percent ga tushdi';
+  }
 }

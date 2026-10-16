@@ -2119,4 +2119,40 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Auf diesem Bild wurden keine Aktienpositionen gefunden. Versuch es mit einem Screenshot der Positions- oder Depotseite deines Brokers.';
+
+  @override
+  String get week52Range => '52-Wochen-Spanne';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent unter dem 52-Wochen-Hoch';
+  }
+
+  @override
+  String get week52AtHigh => 'Auf dem 52-Wochen-Hoch';
+
+  @override
+  String get alertKindTrailing => 'Fällt vom Hoch';
+
+  @override
+  String get alertTrailingPercent => 'Rückgang vom Hoch (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Folgt dem Kurs nach oben: Der Alarm geht los, wenn der Kurs um so viel unter seinen Höchststand seit dem Einrichten fällt.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return '$percent Rückgang vom Hoch';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'bisheriges Hoch: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol ist um $percent vom Hoch gefallen';
+  }
 }

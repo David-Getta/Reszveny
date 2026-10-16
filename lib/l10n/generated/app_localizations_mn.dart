@@ -2108,4 +2108,40 @@ class AppLocalizationsMn extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Энэ зурган дээр хувьцааны эзэмшил олдсонгүй. Брокерийнхаа позиц эсвэл эзэмшлийн хуудасны дэлгэцийн зургийг оролдоод үзээрэй.';
+
+  @override
+  String get week52Range => '52 долоо хоногийн хүрээ';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '52 долоо хоногийн дээдээс $percent доогуур';
+  }
+
+  @override
+  String get week52AtHigh => '52 долоо хоногийн дээд түвшинд';
+
+  @override
+  String get alertKindTrailing => 'Оргилоос унавал';
+
+  @override
+  String get alertTrailingPercent => 'Оргилоос унах (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Үнийг дээш дагана: тохируулснаас хойших хамгийн өндөр түвшнээсээ үнэ ийм хэмжээгээр унавал мэдэгдэнэ.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Оргилоос $percent уналт';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'өнөөг хүртэлх оргил: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol оргилоосоо $percent унлаа';
+  }
 }

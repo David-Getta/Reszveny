@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Lekola dinomoro pele o di oketša. Theko ke theko ya gago ya magareng ya go reka šere e tee, e sego theko ya lehono.",
   "holdingsNoPrice": "Ga go na theko ya magareng ya go reka seswantšhong",
   "holdingsAdd": "{count, plural, =1{Oketša thoto e 1} other{Oketša dithoto tše {count}}}",
-  "holdingsNone": "Ga go dithoto tša dišere tšeo di hweditšwego seswantšhong se. Leka seswantšho sa sekirini sa letlakala la dithoto go broker ya gago."
+  "holdingsNone": "Ga go dithoto tša dišere tšeo di hweditšwego seswantšhong se. Leka seswantšho sa sekirini sa letlakala la dithoto go broker ya gago.",
+  "week52Range": "Bophara bja dibeke tše 52",
+  "week52BelowHigh": "{percent} ka fase ga ya godimo ya dibeke tše 52",
+  "week52AtHigh": "Go ya godimo ya dibeke tše 52",
+  "alertKindTrailing": "E wela go tšwa godimodimo",
+  "alertTrailingPercent": "Go wela go tšwa godimodimo (%)",
+  "alertTrailingHint": "E latela theko ge e rotoga: e go tsebiša ge theko e wela ka bokaakaa go tšwa maemong a godimodimo go tloga ge o e beile.",
+  "alertDescTrailing": "Go wela ka {percent} go tšwa godimodimo",
+  "alertTrailingPeak": "godimodimo go fihla bjale: {price}",
+  "alertHitTrailing": "{symbol} e wetše ka {percent} go tšwa godimodimo"
 }

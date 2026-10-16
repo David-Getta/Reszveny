@@ -108,4 +108,26 @@ void main() {
     expect(mail.subject, 'WhatStock alert: TSLA');
     expect(mail.text, contains('TSLA: 280 USD – fell below 300 USD.'));
   });
+
+  test('trailing stop: the peak follows the price up (saved without an e-mail), fires on the drop', () async {
+    final id = account('tom@example.com', {
+      'lang': 'en',
+      'alerts': [
+        {...alert('t1', 'AMD', 'trailing', 10), 'peak': 100},
+      ],
+    });
+    List alerts() => (jsonDecode(store.syncData(id)!.data) as Map)['alerts'] as List;
+
+    quotes = {'AMD': (price: 120.0, changePercent: 2.0)};
+    expect(await watcher().checkOnce(), 0);
+    expect(alerts().single['peak'], 120);
+
+    // 120 × 0,9 = 108: a 110 még nem, a 107 már szól.
+    quotes = {'AMD': (price: 110.0, changePercent: -8.0)};
+    expect(await watcher().checkOnce(), 0);
+    quotes = {'AMD': (price: 107.0, changePercent: -2.7)};
+    expect(await watcher().checkOnce(), 1);
+    expect(mailer.messages.single.text, contains('AMD: 107 USD – fell 10% from its 120 USD peak.'));
+    expect(alerts().single['triggered_at'], isNotNull);
+  });
 }

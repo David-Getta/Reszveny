@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Usisaa ang mga numero antes idugang. Ang presyo amo ang imo average nga presyo sang pagbakal kada share, indi ang presyo subong.",
   "holdingsNoPrice": "Wala sang average nga presyo sang pagbakal sa litrato",
   "holdingsAdd": "{count, plural, =1{Idugang ang 1 ka posisyon} other{Idugang ang {count} ka posisyon}}",
-  "holdingsNone": "Wala sang nakit-an nga posisyon sa stock sa sini nga litrato. Tilawi ang screenshot sang pahina sang mga posisyon ukon holdings sang imo broker."
+  "holdingsNone": "Wala sang nakit-an nga posisyon sa stock sa sini nga litrato. Tilawi ang screenshot sang pahina sang mga posisyon ukon holdings sang imo broker.",
+  "week52Range": "Sakop sang 52 ka semana",
+  "week52BelowHigh": "{percent} nubo sa pinakataas sa 52 ka semana",
+  "week52AtHigh": "Yara sa pinakataas sa 52 ka semana",
+  "alertKindTrailing": "Magnubo halin sa pinakataas",
+  "alertTrailingPercent": "Kanubo halin sa pinakataas (%)",
+  "alertTrailingHint": "Ginasunod ang presyo pataas: magapahibalo kon magnubo ang presyo sini kadamo halin sa pinakataas nga lebel sugod sang ginbutang mo ini.",
+  "alertDescTrailing": "{percent} kanubo halin sa pinakataas",
+  "alertTrailingPeak": "pinakataas tubtob subong: {price}",
+  "alertHitTrailing": "Nagnubo ang {symbol} sing {percent} halin sa pinakataas"
 }

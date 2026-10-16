@@ -2117,4 +2117,40 @@ class AppLocalizationsCeb extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Walay nakit-an nga posisyon sa stock niini nga hulagway. Sulayi ang screenshot sa positions o holdings nga panid sa imong broker.';
+
+  @override
+  String get week52Range => 'Gilay-on sa 52 ka semana';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent ubos sa pinakataas sa 52 ka semana';
+  }
+
+  @override
+  String get week52AtHigh => 'Anaa sa pinakataas sa 52 ka semana';
+
+  @override
+  String get alertKindTrailing => 'Mous-os gikan sa kinatas-an';
+
+  @override
+  String get alertTrailingPercent => 'Pagkunhod gikan sa kinatas-an (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Mosunod sa presyo pataas: mopahibalo kung ang presyo mous-os niining kantidad gikan sa kinatas-ang lebel sukad gibutang nimo kini.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return '$percent pagkunhod gikan sa kinatas-an';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'kinatas-an hangtod karon: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return 'Mius-os ang $symbol og $percent gikan sa kinatas-an';
+  }
 }

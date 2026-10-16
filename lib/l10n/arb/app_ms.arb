@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Semak nombor sebelum menambahkannya. Harga ialah purata harga belian anda bagi setiap saham, bukan harga hari ini.",
   "holdingsNoPrice": "Tiada purata harga belian dalam imej",
   "holdingsAdd": "{count, plural, =1{Tambah 1 pegangan} other{Tambah {count} pegangan}}",
-  "holdingsNone": "Tiada pegangan saham ditemui dalam imej ini. Cuba tangkapan skrin halaman kedudukan atau pegangan broker anda."
+  "holdingsNone": "Tiada pegangan saham ditemui dalam imej ini. Cuba tangkapan skrin halaman kedudukan atau pegangan broker anda.",
+  "week52Range": "Julat 52 minggu",
+  "week52BelowHigh": "{percent} di bawah tertinggi 52 minggu",
+  "week52AtHigh": "Pada tertinggi 52 minggu",
+  "alertKindTrailing": "Jatuh dari puncak",
+  "alertTrailingPercent": "Kejatuhan dari puncak (%)",
+  "alertTrailingHint": "Mengikut harga naik: makluman berbunyi apabila harga jatuh sebanyak ini dari paras tertinggi sejak anda menetapkannya.",
+  "alertDescTrailing": "Jatuh {percent} dari puncak",
+  "alertTrailingPeak": "puncak setakat ini: {price}",
+  "alertHitTrailing": "{symbol} jatuh {percent} dari puncak"
 }

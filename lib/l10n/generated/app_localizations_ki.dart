@@ -2108,4 +2108,40 @@ class AppLocalizationsKi extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Gũtirĩ mĩgabana yoneka mbicainĩ ĩno. Geria mbica ya skrini ya karatathi ka mĩgabana yaku kwa broker waku.';
+
+  @override
+  String get week52Range => 'Mũhaka wa ciumia 52';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent thĩ wa thogora wa igũrũ mũno (ciumia 52)';
+  }
+
+  @override
+  String get week52AtHigh => 'Thogora-inĩ wa igũrũ mũno (ciumia 52)';
+
+  @override
+  String get alertKindTrailing => 'Ũgĩikũrũka kuuma gĩcũmbĩ-inĩ';
+
+  @override
+  String get alertTrailingPercent => 'Kũikũrũka kuuma gĩcũmbĩ-inĩ (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Rĩrũmagĩrĩra thogora ũgĩambata: rĩkũmenyithia rĩrĩa thogora waikũrũka ũũ kuuma kĩgerero kĩa igũrũ mũno kuuma rĩrĩa warĩhaarĩirie.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Kũikũrũka $percent kuuma gĩcũmbĩ-inĩ';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'gĩcũmbĩ nginya rĩu: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol nĩyaikũrũka $percent kuuma gĩcũmbĩ-inĩ';
+  }
 }

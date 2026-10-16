@@ -2124,4 +2124,40 @@ class AppLocalizationsIlo extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Awan ti nasarakan a posision ti stock iti daytoy a ladawan. Padasem ti screenshot ti panid dagiti posision wenno holdings iti brokermo.';
+
+  @override
+  String get week52Range => 'Sakup iti 52 a lawas';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent a nababbaba ngem iti kangatuan iti 52 a lawas';
+  }
+
+  @override
+  String get week52AtHigh => 'Adda iti kangatuan iti 52 a lawas';
+
+  @override
+  String get alertKindTrailing => 'Bumaba manipud iti kangatuan';
+
+  @override
+  String get alertTrailingPercent => 'Ibaba manipud iti kangatuan (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Surotenna ti presio nga agpangato: agpakaammo no bumaba ti presio iti kastoy manipud iti kangatuan a lebelna sipud idi insaadmo daytoy.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return '$percent a ibaba manipud iti kangatuan';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'kangatuan agingga ita: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return 'Bimmaba ti $symbol iti $percent manipud iti kangatuan';
+  }
 }

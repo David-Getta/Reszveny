@@ -2163,4 +2163,40 @@ class AppLocalizationsBe extends AppLocalizations {
   @override
   String get holdingsNone =>
       'На гэтай выяве не знойдзена пазіцый па акцыях. Паспрабуйце здымак экрана старонкі пазіцый або актываў у вашага брокера.';
+
+  @override
+  String get week52Range => 'Дыяпазон за 52 тыдні';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return 'На $percent ніжэй за максімум за 52 тыдні';
+  }
+
+  @override
+  String get week52AtHigh => 'На максімуме за 52 тыдні';
+
+  @override
+  String get alertKindTrailing => 'Упадзе ад піку';
+
+  @override
+  String get alertTrailingPercent => 'Падзенне ад піку (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Сочыць за цаной уверх: апавяшчае, калі цана ўпадзе на столькі ад найвышэйшага ўзроўню з моманту ўстаноўкі.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Падзенне на $percent ад піку';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'пік на дадзены момант: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol упала на $percent ад піку';
+  }
 }

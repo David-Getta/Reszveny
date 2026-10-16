@@ -2113,4 +2113,40 @@ class AppLocalizationsGn extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Ndojejuhúi acción ko taʼãngápe. Eñehaʼã peteĩ pantalla taʼãnga nde broker kuatiarogue ereguerekóvagui.';
+
+  @override
+  String get week52Range => '52 arapokõindýpe pa\'ũ';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent yvatevéva 52 arapokõindýpe guýpe';
+  }
+
+  @override
+  String get week52AtHigh => 'Oĩ yvatevéva 52 arapokõindýpe-pe';
+
+  @override
+  String get alertKindTrailing => 'Oguejy yvateguágui';
+
+  @override
+  String get alertTrailingPercent => 'Guejy yvateguágui (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Omoirũ tepy ojupívo: oikuaauka tepy oguejýramo kóichagua ijyvatevéva guive, remoĩ guive.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return '$percent guejy yvateguágui';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'yvatevéva koʼãga peve: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol oguejy $percent yvateguágui';
+  }
 }

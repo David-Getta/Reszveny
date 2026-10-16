@@ -2109,4 +2109,40 @@ class AppLocalizationsJv extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Ora ana posisi saham sing ditemokake ing gambar iki. Coba screenshot kaca posisi utawa portofolio ing aplikasi brokermu.';
+
+  @override
+  String get week52Range => 'Kisaran 52 minggu';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent ing ngisor paling dhuwur 52 minggu';
+  }
+
+  @override
+  String get week52AtHigh => 'Ing paling dhuwur 52 minggu';
+
+  @override
+  String get alertKindTrailing => 'Mudhun saka pucuk';
+
+  @override
+  String get alertTrailingPercent => 'Mudhun saka pucuk (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Ngetutaké rega munggah: pènget muni yèn rega mudhun semono saka titik paling dhuwur wiwit kowé masang.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Mudhun $percent saka pucuk';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'pucuk nganti saiki: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol mudhun $percent saka pucuké';
+  }
 }

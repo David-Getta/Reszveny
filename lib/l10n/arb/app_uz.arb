@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Qoʻshishdan oldin raqamlarni tekshiring. Narx — bitta aksiya uchun oʻrtacha xarid narxingiz, bugungi narx emas.",
   "holdingsNoPrice": "Rasmda oʻrtacha xarid narxi yoʻq",
   "holdingsAdd": "{count, plural, =1{1 ta pozitsiya qoʻshish} other{{count} ta pozitsiya qoʻshish}}",
-  "holdingsNone": "Bu rasmda aksiya pozitsiyalari topilmadi. Brokeringizdagi pozitsiyalar yoki aktivlar sahifasining skrinshotini sinab koʻring."
+  "holdingsNone": "Bu rasmda aksiya pozitsiyalari topilmadi. Brokeringizdagi pozitsiyalar yoki aktivlar sahifasining skrinshotini sinab koʻring.",
+  "week52Range": "52 haftalik diapazon",
+  "week52BelowHigh": "52 haftalik maksimumdan {percent} past",
+  "week52AtHigh": "52 haftalik maksimumda",
+  "alertKindTrailing": "Choʻqqidan tushsa",
+  "alertTrailingPercent": "Choʻqqidan tushish (%)",
+  "alertTrailingHint": "Narxni yuqoriga kuzatib boradi: oʻrnatilgandan beri eng yuqori darajasidan narx shuncha tushsa, xabar beradi.",
+  "alertDescTrailing": "Choʻqqidan {percent} tushish",
+  "alertTrailingPeak": "hozirgacha choʻqqi: {price}",
+  "alertHitTrailing": "{symbol} choʻqqidan {percent} ga tushdi"
 }

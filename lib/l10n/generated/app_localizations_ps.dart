@@ -2099,4 +2099,40 @@ class AppLocalizationsPs extends AppLocalizations {
   @override
   String get holdingsNone =>
       'په دې انځور کې د ونډو هېڅ پوزیشن ونه موندل شو. د خپل بروکر د پوزیشنونو یا شتمنیو د پاڼې سکرین شاټ وازمویئ.';
+
+  @override
+  String get week52Range => 'د 52 اونیو حد';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return 'د 52 اونیو له لوړې بیې $percent ټیټ';
+  }
+
+  @override
+  String get week52AtHigh => 'د 52 اونیو په لوړه بیه';
+
+  @override
+  String get alertKindTrailing => 'له لوړې کچې ښکته شي';
+
+  @override
+  String get alertTrailingPercent => 'له لوړې کچې ښکته کېدل (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'بیه پورته تعقیبوي: کله چې بیه د ټاکلو راهیسې له تر ټولو لوړې کچې دومره ښکته شي، خبرتیا درکوي.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'له لوړې کچې $percent ښکته';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'تر اوسه لوړه کچه: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol له لوړې کچې $percent ښکته شو';
+  }
 }

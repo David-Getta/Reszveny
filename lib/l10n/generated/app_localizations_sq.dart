@@ -2114,4 +2114,40 @@ class AppLocalizationsSq extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Nuk u gjet asnjë pozicion aksionesh në këtë imazh. Provo një pamje ekrani të faqes së pozicioneve ose të zotërimeve te brokeri yt.';
+
+  @override
+  String get week52Range => 'Diapazoni 52-javor';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent nën maksimumin 52-javor';
+  }
+
+  @override
+  String get week52AtHigh => 'Në maksimumin 52-javor';
+
+  @override
+  String get alertKindTrailing => 'Bie nga maja';
+
+  @override
+  String get alertTrailingPercent => 'Rënia nga maja (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Ndjek çmimin lart: njoftimi aktivizohet kur çmimi bie kaq nga niveli më i lartë që kur e vendose.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Rënie $percent nga maja';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'maja deri tani: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol ra $percent nga maja';
+  }
 }

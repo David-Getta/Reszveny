@@ -2114,4 +2114,40 @@ class AppLocalizationsSo extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Sawirkan laguma helin mawqif saami. Isku day sawir-shaashadeed bogga mawqifyada ama hantida ee dillaalkaaga.';
+
+  @override
+  String get week52Range => 'Baaxadda 52 toddobaad';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent ka hooseeya ugu sarreeya 52 toddobaad';
+  }
+
+  @override
+  String get week52AtHigh => 'Waa ugu sarreeya 52 toddobaad';
+
+  @override
+  String get alertKindTrailing => 'Hoos uga dhaco heerka ugu sarreeya';
+
+  @override
+  String get alertTrailingPercent => 'Hoos u dhaca heerka ugu sarreeya (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Waxay la socotaa qiimaha kor u kaca: waxay ku ogeysiisaa marka qiimuhu intaas hoos uga dhaco heerkii ugu sarreeyay tan iyo markii aad dejisay.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return '$percent hoos u dhac heerka ugu sarreeya';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'heerka ugu sarreeya ilaa hadda: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol wuxuu $percent hoos uga dhacay heerkiisii ugu sarreeyay';
+  }
 }

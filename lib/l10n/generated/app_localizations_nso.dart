@@ -2121,4 +2121,40 @@ class AppLocalizationsNso extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Ga go dithoto tša dišere tšeo di hweditšwego seswantšhong se. Leka seswantšho sa sekirini sa letlakala la dithoto go broker ya gago.';
+
+  @override
+  String get week52Range => 'Bophara bja dibeke tše 52';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent ka fase ga ya godimo ya dibeke tše 52';
+  }
+
+  @override
+  String get week52AtHigh => 'Go ya godimo ya dibeke tše 52';
+
+  @override
+  String get alertKindTrailing => 'E wela go tšwa godimodimo';
+
+  @override
+  String get alertTrailingPercent => 'Go wela go tšwa godimodimo (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'E latela theko ge e rotoga: e go tsebiša ge theko e wela ka bokaakaa go tšwa maemong a godimodimo go tloga ge o e beile.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Go wela ka $percent go tšwa godimodimo';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'godimodimo go fihla bjale: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol e wetše ka $percent go tšwa godimodimo';
+  }
 }

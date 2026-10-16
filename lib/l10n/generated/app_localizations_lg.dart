@@ -2118,4 +2118,40 @@ class AppLocalizationsLg extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Tewali migabo gizuuliddwa ku kifaananyi kino. Gezaako ekifaananyi kya sikirini eky\'olupapula lw\'emigabo gyo ku app ya broker wo.';
+
+  @override
+  String get week52Range => 'Ebbanga lya wiiki 52';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent wansi wa waggulu mu wiiki 52';
+  }
+
+  @override
+  String get week52AtHigh => 'Ku waggulu mu wiiki 52';
+
+  @override
+  String get alertKindTrailing => 'Bw\'ekka okuva ku ntikko';
+
+  @override
+  String get alertTrailingPercent => 'Okukka okuva ku ntikko (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Egoberera bbeeyi ng\'erinnya: ekumanyisa bbeeyi bw\'ekka kino okuva ku ddaala lyayo erisinga waggulu bukyanga ogiteekawo.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Okukka kwa $percent okuva ku ntikko';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'entikko okutuuka kati: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol kikkiridde $percent okuva ku ntikko';
+  }
 }

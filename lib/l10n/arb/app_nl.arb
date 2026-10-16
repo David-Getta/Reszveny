@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Controleer de getallen voordat je ze toevoegt. De prijs is je gemiddelde aankoopprijs per aandeel, niet de koers van vandaag.",
   "holdingsNoPrice": "Geen gemiddelde aankoopprijs op de afbeelding",
   "holdingsAdd": "{count, plural, =1{1 positie toevoegen} other{{count} posities toevoegen}}",
-  "holdingsNone": "Geen aandelenposities gevonden op deze afbeelding. Probeer een screenshot van de posities- of portefeuillepagina van je broker."
+  "holdingsNone": "Geen aandelenposities gevonden op deze afbeelding. Probeer een screenshot van de posities- of portefeuillepagina van je broker.",
+  "week52Range": "52-weeksbereik",
+  "week52BelowHigh": "{percent} onder het 52-weeks hoog",
+  "week52AtHigh": "Op het 52-weeks hoog",
+  "alertKindTrailing": "Daalt vanaf top",
+  "alertTrailingPercent": "Daling vanaf de top (%)",
+  "alertTrailingHint": "Volgt de koers omhoog: de melding gaat af als de koers zoveel daalt vanaf het hoogste punt sinds je hem instelde.",
+  "alertDescTrailing": "{percent} daling vanaf de top",
+  "alertTrailingPeak": "top tot nu toe: {price}",
+  "alertHitTrailing": "{symbol} daalde {percent} vanaf de top"
 }

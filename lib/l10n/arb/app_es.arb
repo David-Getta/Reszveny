@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Revisa las cifras antes de añadirlas. El precio es tu precio medio de compra por acción, no el precio de hoy.",
   "holdingsNoPrice": "No hay precio medio de compra en la imagen",
   "holdingsAdd": "{count, plural, =1{Añadir 1 posición} other{Añadir {count} posiciones}}",
-  "holdingsNone": "No se han encontrado posiciones de acciones en esta imagen. Prueba con una captura de la página de posiciones o cartera de tu bróker."
+  "holdingsNone": "No se han encontrado posiciones de acciones en esta imagen. Prueba con una captura de la página de posiciones o cartera de tu bróker.",
+  "week52Range": "Rango de 52 semanas",
+  "week52BelowHigh": "{percent} por debajo del máximo de 52 semanas",
+  "week52AtHigh": "En el máximo de 52 semanas",
+  "alertKindTrailing": "Cae desde el máximo",
+  "alertTrailingPercent": "Caída desde el máximo (%)",
+  "alertTrailingHint": "Sigue al precio al alza: la alerta salta cuando el precio cae este porcentaje desde su máximo desde que la configuraste.",
+  "alertDescTrailing": "Caída del {percent} desde el máximo",
+  "alertTrailingPeak": "máximo hasta ahora: {price}",
+  "alertHitTrailing": "{symbol} ha caído un {percent} desde su máximo"
 }

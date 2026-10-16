@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Preverite številke, preden jih dodate. Cena je vaša povprečna nakupna cena na delnico, ne današnja cena.",
   "holdingsNoPrice": "Na sliki ni povprečne nakupne cene",
   "holdingsAdd": "{count, plural, one{Dodaj {count} pozicijo} two{Dodaj {count} poziciji} few{Dodaj {count} pozicije} other{Dodaj {count} pozicij}}",
-  "holdingsNone": "Na tej sliki nismo našli delniških pozicij. Poskusite s posnetkom zaslona strani s pozicijami ali portfeljem pri vašem borznem posredniku."
+  "holdingsNone": "Na tej sliki nismo našli delniških pozicij. Poskusite s posnetkom zaslona strani s pozicijami ali portfeljem pri vašem borznem posredniku.",
+  "week52Range": "Razpon v 52 tednih",
+  "week52BelowHigh": "{percent} pod najvišjim tečajem v 52 tednih",
+  "week52AtHigh": "Na najvišjem tečaju v 52 tednih",
+  "alertKindTrailing": "Pade z vrha",
+  "alertTrailingPercent": "Padec z vrha (%)",
+  "alertTrailingHint": "Sledi ceni navzgor: opozorilo se sproži, ko cena pade za toliko od najvišje ravni, odkar ste ga nastavili.",
+  "alertDescTrailing": "Padec za {percent} z vrha",
+  "alertTrailingPeak": "dosedanji vrh: {price}",
+  "alertHitTrailing": "{symbol} je padla za {percent} z vrha"
 }

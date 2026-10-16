@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Ges sõorã sõma n yaool n naag-ba. Ligdã yaa f raab ligd zɩɩlgã aksɔ̃ yembr fãa, pa rũndã ligd ye.",
   "holdingsNoPrice": "Raab ligd zɩɩlg ka be foto wã pʋgẽ ye",
   "holdingsAdd": "{count, plural, =1{Naag bũmb a yembre} other{Naag bũmb {count}}}",
-  "holdingsNone": "D pa yã aksɔ̃ bũmb foto kãng pʋgẽ ye. Maan f broker wã aksɔ̃ seb-neng ekrã foto n ges."
+  "holdingsNone": "D pa yã aksɔ̃ bũmb foto kãng pʋgẽ ye. Maan f broker wã aksɔ̃ seb-neng ekrã foto n ges.",
+  "week52Range": "Yʋʋmd pʋgẽ ligdã sɛgb",
+  "week52BelowHigh": "{percent} sik n yi yʋʋmd pʋgẽ yɩɩd fãa",
+  "week52AtHigh": "Yʋʋmd pʋgẽ yɩɩd fãa zĩigẽ",
+  "alertKindTrailing": "Sigd n yi zʋʋgã",
+  "alertTrailingPercent": "Sigr n yi zʋʋgã (%)",
+  "alertTrailingHint": "A pʋgd ligdã yɩkre: a wilgdame ligdã sã n sig woto n yi a zʋʋg ning a sẽn paam hal fo sẽn ning-a wã.",
+  "alertDescTrailing": "Sigr {percent} n yi zʋʋgã",
+  "alertTrailingPeak": "zʋʋg hal masã: {price}",
+  "alertHitTrailing": "{symbol} siga {percent} n yi a zʋʋgã"
 }

@@ -2110,4 +2110,40 @@ class AppLocalizationsSu extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Teu kapanggih posisi saham dina gambar ieu. Cobian tangkapan layar kaca posisi atanapi aset di aplikasi pialang anjeun.';
+
+  @override
+  String get week52Range => 'Rentang 52 minggu';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent di handapeun pangluhurna 52 minggu';
+  }
+
+  @override
+  String get week52AtHigh => 'Dina pangluhurna 52 minggu';
+
+  @override
+  String get alertKindTrailing => 'Turun ti puncak';
+
+  @override
+  String get alertTrailingPercent => 'Turun ti puncak (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Nuturkeun harga naék: béwara disada lamun harga turun sakitu ti titik pangluhurna saprak anjeun nyetél éta.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Turun $percent ti puncak';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'puncak nepi ka ayeuna: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol turun $percent ti puncak';
+  }
 }

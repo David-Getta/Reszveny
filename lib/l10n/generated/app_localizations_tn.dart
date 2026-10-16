@@ -2120,4 +2120,40 @@ class AppLocalizationsTn extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Ga go a bonwa maemo a diabe mo setshwantshong se. Leka setshwantsho sa sekirini sa tsebe ya maemo kgotsa dithoto tsa gago kwa brokareng ya gago.';
+
+  @override
+  String get week52Range => 'Bophara jwa dibeke di le 52';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent ka fa tlase ga bogodimo jwa dibeke di le 52';
+  }
+
+  @override
+  String get week52AtHigh => 'Mo bogodimong jwa dibeke di le 52';
+
+  @override
+  String get alertKindTrailing => 'E wela go tswa kwa godimodimo';
+
+  @override
+  String get alertTrailingPercent => 'Go wela go tswa kwa godimodimo (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'E latela tlhwatlhwa fa e tlhatloga: e go itsise fa tlhwatlhwa e wela ka selekanyo se go tswa kwa seemong se se kwa godimo thata go tloga o e baya.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Go wela ka $percent go tswa kwa godimodimo';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'godimodimo go fitlha jaanong: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol e wetse ka $percent go tswa kwa godimodimo';
+  }
 }

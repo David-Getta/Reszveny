@@ -2146,4 +2146,40 @@ class AppLocalizationsHr extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Na ovoj slici nisu pronađene pozicije dionica. Pokušaj sa snimkom zaslona stranice s pozicijama ili imovinom kod svog brokera.';
+
+  @override
+  String get week52Range => '52-tjedni raspon';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent ispod 52-tjednog maksimuma';
+  }
+
+  @override
+  String get week52AtHigh => 'Na 52-tjednom maksimumu';
+
+  @override
+  String get alertKindTrailing => 'Padne od vrha';
+
+  @override
+  String get alertTrailingPercent => 'Pad od vrha (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Prati cijenu prema gore: upozorenje se oglasi kad cijena padne za toliko od najviše razine otkad ste ga postavili.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Pad od $percent od vrha';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'dosadašnji vrh: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol je pala za $percent od vrha';
+  }
 }

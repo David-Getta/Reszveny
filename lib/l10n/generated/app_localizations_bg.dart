@@ -2108,4 +2108,40 @@ class AppLocalizationsBg extends AppLocalizations {
   @override
   String get holdingsNone =>
       'На това изображение не са открити позиции в акции. Опитайте с екранна снимка на страницата с позиции или активи при вашия брокер.';
+
+  @override
+  String get week52Range => '52-седмичен диапазон';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent под 52-седмичния максимум';
+  }
+
+  @override
+  String get week52AtHigh => 'На 52-седмичния максимум';
+
+  @override
+  String get alertKindTrailing => 'Спадне от върха';
+
+  @override
+  String get alertTrailingPercent => 'Спад от върха (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Следва цената нагоре: известието се задейства, когато цената падне с толкова от най-високото си ниво след задаването му.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Спад с $percent от върха';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'връх досега: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol падна с $percent от върха си';
+  }
 }

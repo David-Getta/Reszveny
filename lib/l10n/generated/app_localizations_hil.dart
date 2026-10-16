@@ -2121,4 +2121,40 @@ class AppLocalizationsHil extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Wala sang nakit-an nga posisyon sa stock sa sini nga litrato. Tilawi ang screenshot sang pahina sang mga posisyon ukon holdings sang imo broker.';
+
+  @override
+  String get week52Range => 'Sakop sang 52 ka semana';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent nubo sa pinakataas sa 52 ka semana';
+  }
+
+  @override
+  String get week52AtHigh => 'Yara sa pinakataas sa 52 ka semana';
+
+  @override
+  String get alertKindTrailing => 'Magnubo halin sa pinakataas';
+
+  @override
+  String get alertTrailingPercent => 'Kanubo halin sa pinakataas (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Ginasunod ang presyo pataas: magapahibalo kon magnubo ang presyo sini kadamo halin sa pinakataas nga lebel sugod sang ginbutang mo ini.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return '$percent kanubo halin sa pinakataas';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'pinakataas tubtob subong: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return 'Nagnubo ang $symbol sing $percent halin sa pinakataas';
+  }
 }

@@ -6,8 +6,19 @@ import 'package:reszveny/core/models/stock_quote.dart';
 import 'package:reszveny/features/alerts/alert_monitor.dart';
 import 'package:reszveny/features/alerts/price_alert.dart';
 import 'package:reszveny/features/market_data/demo_market_data_provider.dart';
+import 'package:reszveny/features/sync/sync_service.dart';
 
 import 'app_widget_test.dart' show FakeNotifier, services;
+
+/// Kézzel állítható ár (követő stop teszteléséhez).
+class _Moving extends DemoMarketDataProvider {
+  _Moving() : super(latency: Duration.zero);
+
+  double price = 100;
+
+  @override
+  Future<StockQuote> quote(String symbol) async => StockQuote(symbol: symbol, price: price, changePercent: 0);
+}
 
 void main() {
   setUp(() => SharedPreferences.setMockInitialValues({}));
@@ -79,6 +90,50 @@ void main() {
     // Másodszor már nem szól.
     expect(await monitor.check(), isEmpty);
     expect(notifier.sent.length, 2);
+  });
+
+  test('trailing stop: the peak follows the price up, the alert fires on the drop from it', () async {
+    final store = AlertStore();
+    final a = await store.add(symbol: 'AMD', kind: AlertKind.trailing, value: 10, currency: 'USD', peak: 100);
+    expect(a.trailingLevel, 90);
+    expect(PriceAlert.alreadyMet(AlertKind.trailing, 10, 100), isFalse);
+    final market = _Moving();
+    final monitor = AlertMonitor(
+      store: store,
+      marketData: market,
+      notifier: FakeNotifier(),
+      describe: (h) => (title: h.alert.symbol, body: ''),
+    );
+    market.price = 120;
+    expect(await monitor.check(), isEmpty);
+    expect(store.active.single.peak, 120);
+    market.price = 110; // 120 × 0,9 = 108 alatt szól
+    expect(await monitor.check(), isEmpty);
+    expect(store.active.single.peak, 120, reason: 'the peak never goes down');
+    market.price = 107.5;
+    expect((await monitor.check()).single.alert.symbol, 'AMD');
+    expect(store.active, isEmpty);
+    // Újraélesítve a csúcs a következő árnál indul.
+    await store.rearm(a.id);
+    expect(store.active.single.peak, isNull);
+    expect((await AlertStore.load()).alerts.single.kind, AlertKind.trailing);
+  });
+
+  test('sync: for a trailing stop the higher peak of the two sides is kept', () {
+    Map<String, dynamic> side(num peak) => {
+      'alerts': [
+        {
+          'id': 't',
+          'symbol': 'AMD',
+          'kind': 'trailing',
+          'value': 10,
+          'created_at': '2026-10-01T00:00:00Z',
+          'peak': peak,
+        },
+      ],
+    };
+    expect((SyncService.merge(side(120), side(131))['alerts'] as List).single['peak'], 131);
+    expect((SyncService.merge(side(140), side(131))['alerts'] as List).single['peak'], 140);
   });
 
   testWidgets('with an own position, quick targets from the average cost fill the alert', (tester) async {

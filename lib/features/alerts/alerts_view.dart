@@ -15,6 +15,10 @@ String describeAlert(AppLocalizations l10n, Fmt fmt, PriceAlert a) => switch (a.
   AlertKind.above => l10n.alertDescAbove(fmt.price(a.value, a.currency)),
   AlertKind.below => l10n.alertDescBelow(fmt.price(a.value, a.currency)),
   AlertKind.move => l10n.alertDescMove(fmt.percent(a.value, decimals: a.value == a.value.roundToDouble() ? 0 : 1)),
+  AlertKind.trailing => [
+    l10n.alertDescTrailing(fmt.percent(a.value, decimals: a.value == a.value.roundToDouble() ? 0 : 1)),
+    if (a.peak != null && a.isActive) l10n.alertTrailingPeak(fmt.price(a.peak, a.currency)),
+  ].join(' · '),
 };
 
 /// Új riasztás: feltétel (fölé / alá / napi mozgás) és érték, a jelenlegi
@@ -80,6 +84,7 @@ class _AlertDialogState extends State<_AlertDialog> {
           AlertKind.above => p == null ? null : p * 1.05,
           AlertKind.below => p == null ? null : p * 0.95,
           AlertKind.move => 5.0,
+          AlertKind.trailing => 10.0,
         };
     _value.text = v == null ? '' : (v >= 100 ? v.toStringAsFixed(0) : v.toStringAsFixed(v < 1 ? 4 : 2));
     _error = null;
@@ -102,6 +107,7 @@ class _AlertDialogState extends State<_AlertDialog> {
       kind: _kind,
       value: v!,
       currency: _kind == AlertKind.move ? null : widget.currency,
+      peak: widget.currentPrice,
     );
     services.telemetry.track('alert_created');
     if (mounted) Navigator.of(context).pop(true);
@@ -117,76 +123,89 @@ class _AlertDialogState extends State<_AlertDialog> {
       title: Text(l10n.alertDialogTitle(widget.symbol)),
       content: SizedBox(
         width: 380,
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            if (cur != null) ...[
-              Text(l10n.outlookCurrentPrice(fmt.price(cur, widget.currency)), style: TextStyle(color: p.muted)),
-              const SizedBox(height: 12),
-            ],
-            Wrap(
-              spacing: 8,
-              runSpacing: 8,
-              children: [
-                for (final k in AlertKind.values)
-                  ChoiceChip(
-                    label: Text(switch (k) {
-                      AlertKind.above => l10n.alertKindAbove,
-                      AlertKind.below => l10n.alertKindBelow,
-                      AlertKind.move => l10n.alertKindMove,
-                    }),
-                    selected: _kind == k,
-                    onSelected: (_) => setState(() {
-                      _kind = k;
-                      _prefill();
-                    }),
-                  ),
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              if (cur != null) ...[
+                Text(l10n.outlookCurrentPrice(fmt.price(cur, widget.currency)), style: TextStyle(color: p.muted)),
+                const SizedBox(height: 12),
               ],
-            ),
-            const SizedBox(height: 14),
-            TextField(
-              key: const ValueKey('alert-value'),
-              controller: _value,
-              autofocus: true,
-              keyboardType: const TextInputType.numberWithOptions(decimal: true),
-              decoration: InputDecoration(
-                labelText: _kind == AlertKind.move
-                    ? l10n.alertMovePercent
-                    : l10n.alertTargetPrice(widget.currency ?? ''),
-                errorText: _error,
-              ),
-              onSubmitted: (_) => _submit(),
-            ),
-            // Saját pozíciónál gyors célárak az átlagos vételárhoz képest.
-            if (AppServices.of(context).portfolio.positionOf(widget.symbol) case final pos?
-                when pos.averageCost > 0 && (widget.currency == null || pos.currency == widget.currency)) ...[
-              const SizedBox(height: 12),
-              Text(
-                l10n.alertFromCost(fmt.price(pos.averageCost, pos.currency)),
-                style: Theme.of(context).textTheme.bodySmall?.copyWith(color: p.muted),
-              ),
-              const SizedBox(height: 6),
               Wrap(
-                spacing: 6,
-                runSpacing: 6,
+                spacing: 8,
+                runSpacing: 8,
                 children: [
-                  for (final pct in const [-20, -10, 10, 20, 50])
-                    ActionChip(
-                      key: ValueKey('alert-cost-$pct'),
-                      label: Text('${pct > 0 ? '+' : '−'}${pct.abs()}%'),
-                      visualDensity: VisualDensity.compact,
-                      onPressed: () => setState(() {
-                        _kind = pct > 0 ? AlertKind.above : AlertKind.below;
-                        _prefill(value: pos.averageCost * (1 + pct / 100));
+                  for (final k in AlertKind.values)
+                    ChoiceChip(
+                      label: Text(switch (k) {
+                        AlertKind.above => l10n.alertKindAbove,
+                        AlertKind.below => l10n.alertKindBelow,
+                        AlertKind.move => l10n.alertKindMove,
+                        AlertKind.trailing => l10n.alertKindTrailing,
+                      }),
+                      selected: _kind == k,
+                      onSelected: (_) => setState(() {
+                        _kind = k;
+                        _prefill();
                       }),
                     ),
                 ],
               ),
+              const SizedBox(height: 14),
+              TextField(
+                key: const ValueKey('alert-value'),
+                controller: _value,
+                autofocus: true,
+                keyboardType: const TextInputType.numberWithOptions(decimal: true),
+                decoration: InputDecoration(
+                  labelText: _kind == AlertKind.move
+                      ? l10n.alertMovePercent
+                      : _kind == AlertKind.trailing
+                      ? l10n.alertTrailingPercent
+                      : l10n.alertTargetPrice(widget.currency ?? ''),
+                  errorText: _error,
+                ),
+                onSubmitted: (_) => _submit(),
+              ),
+              if (_kind == AlertKind.trailing) ...[
+                const SizedBox(height: 8),
+                Text(
+                  l10n.alertTrailingHint,
+                  key: const ValueKey('alert-trailing-hint'),
+                  style: Theme.of(context).textTheme.bodySmall?.copyWith(color: p.muted),
+                ),
+              ],
+              // Saját pozíciónál gyors célárak az átlagos vételárhoz képest.
+              if (AppServices.of(context).portfolio.positionOf(widget.symbol) case final pos?
+                  when pos.averageCost > 0 && (widget.currency == null || pos.currency == widget.currency)) ...[
+                const SizedBox(height: 12),
+                Text(
+                  l10n.alertFromCost(fmt.price(pos.averageCost, pos.currency)),
+                  style: Theme.of(context).textTheme.bodySmall?.copyWith(color: p.muted),
+                ),
+                const SizedBox(height: 6),
+                Wrap(
+                  spacing: 6,
+                  runSpacing: 6,
+                  children: [
+                    for (final pct in const [-20, -10, 10, 20, 50])
+                      ActionChip(
+                        key: ValueKey('alert-cost-$pct'),
+                        label: Text('${pct > 0 ? '+' : '−'}${pct.abs()}%'),
+                        visualDensity: VisualDensity.compact,
+                        onPressed: () => setState(() {
+                          _kind = pct > 0 ? AlertKind.above : AlertKind.below;
+                          _prefill(value: pos.averageCost * (1 + pct / 100));
+                        }),
+                      ),
+                  ],
+                ),
+              ],
+              const SizedBox(height: 12),
+              Text(l10n.alertsNote, style: Theme.of(context).textTheme.bodySmall?.copyWith(color: p.muted)),
             ],
-            const SizedBox(height: 12),
-            Text(l10n.alertsNote, style: Theme.of(context).textTheme.bodySmall?.copyWith(color: p.muted)),
-          ],
+          ),
         ),
       ),
       actions: [

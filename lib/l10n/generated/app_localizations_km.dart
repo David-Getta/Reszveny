@@ -2088,4 +2088,40 @@ class AppLocalizationsKm extends AppLocalizations {
   @override
   String get holdingsNone =>
       'រកមិនឃើញភាគហ៊ុនដែលអ្នកកាន់នៅលើរូបភាពនេះទេ។ សាកល្បងរូបថតអេក្រង់នៃទំព័រភាគហ៊ុនដែលអ្នកកាន់នៅក្នុងកម្មវិធីឈ្មួញកណ្ដាលរបស់អ្នក។';
+
+  @override
+  String get week52Range => 'ចន្លោះ 52 សប្ដាហ៍';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return 'ទាបជាងខ្ពស់បំផុត 52 សប្ដាហ៍ $percent';
+  }
+
+  @override
+  String get week52AtHigh => 'នៅខ្ពស់បំផុត 52 សប្ដាហ៍';
+
+  @override
+  String get alertKindTrailing => 'ធ្លាក់ពីកំពូល';
+
+  @override
+  String get alertTrailingPercent => 'ការធ្លាក់ពីកំពូល (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'តាមដានតម្លៃឡើងលើ៖ ជូនដំណឹងនៅពេលតម្លៃធ្លាក់ប៉ុណ្ណេះពីកម្រិតខ្ពស់បំផុតចាប់តាំងពីអ្នកកំណត់វា។';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'ធ្លាក់ $percent ពីកំពូល';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'កំពូលរហូតមកដល់ពេលនេះ៖ $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol បានធ្លាក់ $percent ពីកំពូល';
+  }
 }

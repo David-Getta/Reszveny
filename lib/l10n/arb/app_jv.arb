@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Priksa angka-angkane sadurunge ditambahake. Regane yaiku rega tuku rata-ratamu saben saham, dudu rega dina iki.",
   "holdingsNoPrice": "Ora ana rega tuku rata-rata ing gambar",
   "holdingsAdd": "{count, plural, =1{Tambahake 1 posisi} other{Tambahake {count} posisi}}",
-  "holdingsNone": "Ora ana posisi saham sing ditemokake ing gambar iki. Coba screenshot kaca posisi utawa portofolio ing aplikasi brokermu."
+  "holdingsNone": "Ora ana posisi saham sing ditemokake ing gambar iki. Coba screenshot kaca posisi utawa portofolio ing aplikasi brokermu.",
+  "week52Range": "Kisaran 52 minggu",
+  "week52BelowHigh": "{percent} ing ngisor paling dhuwur 52 minggu",
+  "week52AtHigh": "Ing paling dhuwur 52 minggu",
+  "alertKindTrailing": "Mudhun saka pucuk",
+  "alertTrailingPercent": "Mudhun saka pucuk (%)",
+  "alertTrailingHint": "Ngetutaké rega munggah: pènget muni yèn rega mudhun semono saka titik paling dhuwur wiwit kowé masang.",
+  "alertDescTrailing": "Mudhun {percent} saka pucuk",
+  "alertTrailingPeak": "pucuk nganti saiki: {price}",
+  "alertHitTrailing": "{symbol} mudhun {percent} saka pucuké"
 }

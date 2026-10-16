@@ -2100,4 +2100,40 @@ class AppLocalizationsHe extends AppLocalizations {
   @override
   String get holdingsNone =>
       'לא נמצאו פוזיציות של מניות בתמונה הזו. אפשר לנסות צילום מסך של עמוד הפוזיציות או האחזקות אצל הברוקר שלך.';
+
+  @override
+  String get week52Range => 'טווח 52 שבועות';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent מתחת לשיא 52 שבועות';
+  }
+
+  @override
+  String get week52AtHigh => 'בשיא 52 שבועות';
+
+  @override
+  String get alertKindTrailing => 'יורד מהשיא';
+
+  @override
+  String get alertTrailingPercent => 'ירידה מהשיא (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'עוקבת אחרי המחיר כלפי מעלה: ההתראה מופעלת כשהמחיר יורד בשיעור הזה מהשיא שלו מאז שהגדרת אותה.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'ירידה של $percent מהשיא';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'השיא עד כה: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol ירדה ב-$percent מהשיא';
+  }
 }

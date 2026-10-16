@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Suriin ang mga numero bago idagdag. Ang presyo ay ang average mong presyo ng pagbili bawat share, hindi ang presyo ngayon.",
   "holdingsNoPrice": "Walang average na presyo ng pagbili sa larawan",
   "holdingsAdd": "{count, plural, =1{Idagdag ang 1 posisyon} other{Idagdag ang {count} posisyon}}",
-  "holdingsNone": "Walang nakitang posisyon sa stock sa larawang ito. Subukan ang screenshot ng positions o holdings page ng broker mo."
+  "holdingsNone": "Walang nakitang posisyon sa stock sa larawang ito. Subukan ang screenshot ng positions o holdings page ng broker mo.",
+  "week52Range": "52-linggong saklaw",
+  "week52BelowHigh": "{percent} mas mababa sa 52-linggong pinakamataas",
+  "week52AtHigh": "Nasa 52-linggong pinakamataas",
+  "alertKindTrailing": "Bumaba mula sa tuktok",
+  "alertTrailingPercent": "Baba mula sa tuktok (%)",
+  "alertTrailingHint": "Sinusundan ang presyo pataas: aabisuhan ka kapag bumaba ang presyo nang ganito mula sa pinakamataas nitong antas mula nang itakda mo ito.",
+  "alertDescTrailing": "{percent} baba mula sa tuktok",
+  "alertTrailingPeak": "tuktok sa ngayon: {price}",
+  "alertHitTrailing": "Bumaba ang {symbol} nang {percent} mula sa tuktok"
 }

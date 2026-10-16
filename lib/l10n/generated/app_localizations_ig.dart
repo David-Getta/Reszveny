@@ -2103,4 +2103,40 @@ class AppLocalizationsIg extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Achọtaghị òkè ahịa ọ bụla na onyonyo a. Nwalee foto ihuenyo nke peeji òkè gị n\'ime ngwa onye na-ere ahịa òkè gị.';
+
+  @override
+  String get week52Range => 'Oke n\'izu 52';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent n\'okpuru kachasị elu n\'izu 52';
+  }
+
+  @override
+  String get week52AtHigh => 'Na kachasị elu n\'izu 52';
+
+  @override
+  String get alertKindTrailing => 'Dara site n\'elu';
+
+  @override
+  String get alertTrailingPercent => 'Ọdịda site n\'elu (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Ọ na-eso ọnụahịa ka ọ na-arị elu: ọ ga-agwa gị mgbe ọnụahịa dara nke a site n\'ọkwa kacha elu ya kemgbe i dobere ya.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Ọdịda $percent site n\'elu';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'elu kacha ruo ugbu a: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol dara $percent site n\'elu ya';
+  }
 }

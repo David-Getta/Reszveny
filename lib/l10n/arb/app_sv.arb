@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Kontrollera siffrorna innan du lägger till dem. Priset är ditt genomsnittliga köppris per aktie, inte dagens kurs.",
   "holdingsNoPrice": "Inget genomsnittligt köppris på bilden",
   "holdingsAdd": "{count, plural, =1{Lägg till 1 innehav} other{Lägg till {count} innehav}}",
-  "holdingsNone": "Inga aktieinnehav hittades på den här bilden. Prova en skärmbild av innehavssidan hos din mäklare."
+  "holdingsNone": "Inga aktieinnehav hittades på den här bilden. Prova en skärmbild av innehavssidan hos din mäklare.",
+  "week52Range": "52-veckorsintervall",
+  "week52BelowHigh": "{percent} under 52-veckors högsta",
+  "week52AtHigh": "Vid 52-veckors högsta",
+  "alertKindTrailing": "Faller från toppen",
+  "alertTrailingPercent": "Fall från toppen (%)",
+  "alertTrailingHint": "Följer kursen uppåt: larmet går när kursen faller så mycket från den högsta nivån sedan du ställde in det.",
+  "alertDescTrailing": "{percent} fall från toppen",
+  "alertTrailingPeak": "topp hittills: {price}",
+  "alertHitTrailing": "{symbol} föll {percent} från toppen"
 }

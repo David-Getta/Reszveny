@@ -2115,4 +2115,40 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Δεν βρέθηκαν θέσεις μετοχών σε αυτή την εικόνα. Δοκιμάστε ένα στιγμιότυπο της σελίδας θέσεων ή χαρτοφυλακίου του χρηματιστή σας.';
+
+  @override
+  String get week52Range => 'Εύρος 52 εβδομάδων';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent κάτω από το υψηλό 52 εβδομάδων';
+  }
+
+  @override
+  String get week52AtHigh => 'Στο υψηλό 52 εβδομάδων';
+
+  @override
+  String get alertKindTrailing => 'Πέσει από την κορυφή';
+
+  @override
+  String get alertTrailingPercent => 'Πτώση από την κορυφή (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Ακολουθεί την τιμή προς τα πάνω: η ειδοποίηση ενεργοποιείται όταν η τιμή πέσει τόσο από το υψηλότερο σημείο της από τη στιγμή που την ορίσατε.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Πτώση $percent από την κορυφή';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'κορυφή μέχρι τώρα: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return 'Η $symbol έπεσε $percent από την κορυφή';
+  }
 }

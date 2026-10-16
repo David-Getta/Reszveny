@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Sjekk tallene før du legger dem til. Prisen er din gjennomsnittlige kjøpspris per aksje, ikke dagens kurs.",
   "holdingsNoPrice": "Ingen gjennomsnittlig kjøpspris på bildet",
   "holdingsAdd": "{count, plural, =1{Legg til 1 posisjon} other{Legg til {count} posisjoner}}",
-  "holdingsNone": "Fant ingen aksjeposisjoner på dette bildet. Prøv et skjermbilde av beholdnings- eller posisjonssiden hos megleren din."
+  "holdingsNone": "Fant ingen aksjeposisjoner på dette bildet. Prøv et skjermbilde av beholdnings- eller posisjonssiden hos megleren din.",
+  "week52Range": "52-ukers intervall",
+  "week52BelowHigh": "{percent} under 52-ukers høyeste",
+  "week52AtHigh": "På 52-ukers høyeste",
+  "alertKindTrailing": "Faller fra toppen",
+  "alertTrailingPercent": "Fall fra toppen (%)",
+  "alertTrailingHint": "Følger kursen oppover: varsler når kursen faller så mye fra det høyeste nivået siden du satte varselet.",
+  "alertDescTrailing": "{percent} fall fra toppen",
+  "alertTrailingPeak": "topp hittil: {price}",
+  "alertHitTrailing": "{symbol} falt {percent} fra toppen"
 }

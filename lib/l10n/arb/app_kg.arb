@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Tala bantalu na ntwala ya kukotisa yo. Ntalu kele ntalu ya kati-kati ya nge ya kusumba kitini mosi, ve ntalu ya bubu.",
   "holdingsNoPrice": "Ntalu ya kati-kati ya kusumba kele ve na kifwani",
   "holdingsAdd": "{count, plural, =1{Yika kitini 1} other{Yika bitini {count}}}",
-  "holdingsNone": "Bitini ya action me monana ve na kifwani yai. Meka foto ya ekrani ya lukaya ya bitini na nge na application ya courtier na nge."
+  "holdingsNone": "Bitini ya action me monana ve na kifwani yai. Meka foto ya ekrani ya lukaya ya bitini na nge na application ya courtier na nge.",
+  "week52Range": "Ndilu ya lumingu 52",
+  "week52BelowHigh": "{percent} na nsi ya ntalu ya zulu ya lumingu 52",
+  "week52AtHigh": "Na ntalu ya zulu ya lumingu 52",
+  "alertKindTrailing": "Ikulumuka katuka na nsongi",
+  "alertTrailingPercent": "Kukulumuka katuka na nsongi (%)",
+  "alertTrailingHint": "Yo ke landa ntalu na zulu: yo ke zabisa kana ntalu me kulumuka mpidina katuka na kitezo ya zulu kibeni banda ntangu nge tulaka yo.",
+  "alertDescTrailing": "{percent} kukulumuka katuka na nsongi",
+  "alertTrailingPeak": "nsongi tii ntangu yai: {price}",
+  "alertHitTrailing": "{symbol} ikulumukidi {percent} katuka na nsongi"
 }

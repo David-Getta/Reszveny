@@ -2109,4 +2109,40 @@ class AppLocalizationsFi extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Tästä kuvasta ei löytynyt osakeomistuksia. Kokeile kuvakaappausta välittäjäsi omistukset- tai positiot-sivusta.';
+
+  @override
+  String get week52Range => '52 viikon vaihteluväli';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent 52 viikon ylimmän alapuolella';
+  }
+
+  @override
+  String get week52AtHigh => '52 viikon ylimmässä';
+
+  @override
+  String get alertKindTrailing => 'Laskee huipusta';
+
+  @override
+  String get alertTrailingPercent => 'Lasku huipusta (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Seuraa hintaa ylöspäin: hälytys laukeaa, kun hinta laskee näin paljon korkeimmasta tasostaan asettamisen jälkeen.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return '$percent lasku huipusta';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'huippu tähän asti: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol laski $percent huipustaan';
+  }
 }

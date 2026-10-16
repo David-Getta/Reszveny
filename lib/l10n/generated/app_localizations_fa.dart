@@ -2104,4 +2104,40 @@ class AppLocalizationsFa extends AppLocalizations {
   @override
   String get holdingsNone =>
       'هیچ موقعیت سهامی در این تصویر یافت نشد. یک اسکرین‌شات از صفحهٔ موقعیت‌ها یا دارایی‌های کارگزارتان را امتحان کنید.';
+
+  @override
+  String get week52Range => 'دامنهٔ 52 هفته';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent پایین‌تر از بیشترین قیمت 52 هفته';
+  }
+
+  @override
+  String get week52AtHigh => 'در بیشترین قیمت 52 هفته';
+
+  @override
+  String get alertKindTrailing => 'افت از اوج';
+
+  @override
+  String get alertTrailingPercent => 'افت از اوج (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'قیمت را رو به بالا دنبال می‌کند: وقتی قیمت به این اندازه از بالاترین سطحش از زمان تنظیم هشدار افت کند، هشدار می‌دهد.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'افت $percent از اوج';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'اوج تاکنون: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol $percent از اوج افت کرد';
+  }
 }

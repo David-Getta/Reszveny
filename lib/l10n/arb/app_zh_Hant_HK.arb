@@ -566,5 +566,14 @@
   "holdingsReviewHint": "加入前請核對數字。價格是你每股的平均買入價，而非今日價格。",
   "holdingsNoPrice": "圖片中沒有平均買入價",
   "holdingsAdd": "{count, plural, =1{加入 1 個持倉} other{加入 {count} 個持倉}}",
-  "holdingsNone": "此圖片中找不到股票持倉。請試用券商持倉頁面的截圖。"
+  "holdingsNone": "此圖片中找不到股票持倉。請試用券商持倉頁面的截圖。",
+  "week52Range": "52週波幅",
+  "week52BelowHigh": "較52週高位低{percent}",
+  "week52AtHigh": "處於52週高位",
+  "alertKindTrailing": "從高位回落",
+  "alertTrailingPercent": "從高位回落（%）",
+  "alertTrailingHint": "隨價格上升跟蹤：價格由設定以來的最高位回落此幅度時提醒。",
+  "alertDescTrailing": "從高位回落 {percent}",
+  "alertTrailingPeak": "至今最高：{price}",
+  "alertHitTrailing": "{symbol} 從高位回落 {percent}"
 }

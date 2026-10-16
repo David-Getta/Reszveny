@@ -2117,4 +2117,40 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String get holdingsNone =>
       'இந்தப் படத்தில் பங்கு நிலைகள் எதுவும் கிடைக்கவில்லை. உங்கள் தரகரின் நிலைகள் அல்லது இருப்புகள் பக்கத்தின் ஸ்கிரீன்ஷாட்டை முயற்சிக்கவும்.';
+
+  @override
+  String get week52Range => '52-வார வரம்பு';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '52-வார உச்சத்திலிருந்து $percent கீழே';
+  }
+
+  @override
+  String get week52AtHigh => '52-வார உச்சத்தில்';
+
+  @override
+  String get alertKindTrailing => 'உச்சத்திலிருந்து சரிந்தால்';
+
+  @override
+  String get alertTrailingPercent => 'உச்சத்திலிருந்து சரிவு (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'விலையை மேல்நோக்கிப் பின்தொடரும்: அமைத்ததிலிருந்து எட்டிய அதிகபட்ச நிலையிலிருந்து விலை இவ்வளவு சரிந்தால் அறிவிக்கும்.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'உச்சத்திலிருந்து $percent சரிவு';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'இதுவரை உச்சம்: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol உச்சத்திலிருந்து $percent சரிந்தது';
+  }
 }

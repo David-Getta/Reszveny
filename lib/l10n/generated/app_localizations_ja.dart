@@ -2035,4 +2035,39 @@ class AppLocalizationsJa extends AppLocalizations {
   @override
   String get holdingsNone =>
       'この画像から保有銘柄が見つかりませんでした。証券会社アプリの保有銘柄（ポジション）画面のスクリーンショットをお試しください。';
+
+  @override
+  String get week52Range => '52週レンジ';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '52週高値を$percent下回る';
+  }
+
+  @override
+  String get week52AtHigh => '52週高値に到達';
+
+  @override
+  String get alertKindTrailing => '高値から下落したら';
+
+  @override
+  String get alertTrailingPercent => '高値からの下落（%）';
+
+  @override
+  String get alertTrailingHint => '価格の上昇に追随し、設定後の最高値からこの割合だけ下落したら通知します。';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return '高値から$percent下落';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'これまでの高値：$price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbolは高値から$percent下落しました';
+  }
 }

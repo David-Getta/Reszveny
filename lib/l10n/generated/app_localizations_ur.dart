@@ -2107,4 +2107,40 @@ class AppLocalizationsUr extends AppLocalizations {
   @override
   String get holdingsNone =>
       'اس تصویر میں شیئرز کی کوئی پوزیشن نہیں ملی۔ اپنے بروکر کے پوزیشنز یا ہولڈنگز صفحے کا اسکرین شاٹ آزمائیں۔';
+
+  @override
+  String get week52Range => '52 ہفتوں کی حد';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '52 ہفتوں کی بلند ترین سطح سے $percent نیچے';
+  }
+
+  @override
+  String get week52AtHigh => '52 ہفتوں کی بلند ترین سطح پر';
+
+  @override
+  String get alertKindTrailing => 'چوٹی سے نیچے آئے';
+
+  @override
+  String get alertTrailingPercent => 'چوٹی سے گراوٹ (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'قیمت کے ساتھ اوپر چلتا ہے: سیٹ کرنے کے بعد کی بلند ترین سطح سے قیمت اتنی گرے تو اطلاع دیتا ہے۔';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'چوٹی سے $percent گراوٹ';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'اب تک کی چوٹی: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol چوٹی سے $percent گرا';
+  }
 }

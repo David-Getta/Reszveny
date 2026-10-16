@@ -2109,4 +2109,40 @@ class AppLocalizationsKu extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Di vê wêneyê de tu pozîsyonên pişkan nehatin dîtin. Wêneya ekranê ya rûpela pozîsyonan an xwedîtiyan a brokerê xwe biceribîne.';
+
+  @override
+  String get week52Range => 'Navbera 52 hefteyan';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent li jêr bilindtirîna 52 hefteyan';
+  }
+
+  @override
+  String get week52AtHigh => 'Li bilindtirîna 52 hefteyan';
+
+  @override
+  String get alertKindTrailing => 'Ji lûtkeyê dadikeve';
+
+  @override
+  String get alertTrailingPercent => 'Daketina ji lûtkeyê (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Bihayê ber bi jor ve dişopîne: dema ku biha ji asta xwe ya herî bilind ji dema ku te ew danî ewqas dakeve, hişyar dike.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return '$percent daketin ji lûtkeyê';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'lûtke heta niha: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol ji lûtkeyê $percent daket';
+  }
 }

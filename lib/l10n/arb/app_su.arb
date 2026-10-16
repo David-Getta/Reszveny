@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Pariksa heula angka-angkana saméméh ditambahkeun. Harga téh rata-rata harga pameulian per saham anjeun, lain harga poé ieu.",
   "holdingsNoPrice": "Teu aya rata-rata harga pameulian dina gambar",
   "holdingsAdd": "{count, plural, =1{Tambahkeun 1 posisi} other{Tambahkeun {count} posisi}}",
-  "holdingsNone": "Teu kapanggih posisi saham dina gambar ieu. Cobian tangkapan layar kaca posisi atanapi aset di aplikasi pialang anjeun."
+  "holdingsNone": "Teu kapanggih posisi saham dina gambar ieu. Cobian tangkapan layar kaca posisi atanapi aset di aplikasi pialang anjeun.",
+  "week52Range": "Rentang 52 minggu",
+  "week52BelowHigh": "{percent} di handapeun pangluhurna 52 minggu",
+  "week52AtHigh": "Dina pangluhurna 52 minggu",
+  "alertKindTrailing": "Turun ti puncak",
+  "alertTrailingPercent": "Turun ti puncak (%)",
+  "alertTrailingHint": "Nuturkeun harga naék: béwara disada lamun harga turun sakitu ti titik pangluhurna saprak anjeun nyetél éta.",
+  "alertDescTrailing": "Turun {percent} ti puncak",
+  "alertTrailingPeak": "puncak nepi ka ayeuna: {price}",
+  "alertHitTrailing": "{symbol} turun {percent} ti puncak"
 }

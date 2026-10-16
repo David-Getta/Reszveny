@@ -2105,4 +2105,40 @@ class AppLocalizationsOr extends AppLocalizations {
   @override
   String get holdingsNone =>
       'ଏହି ଛବିରେ କୌଣସି ସେୟାର ପୋଜିସନ ମିଳିଲା ନାହିଁ। ଆପଣଙ୍କ ବ୍ରୋକରଙ୍କ ପୋଜିସନ କିମ୍ବା ହୋଲ୍ଡିଂସ ପୃଷ୍ଠାର ସ୍କ୍ରିନସଟ ଚେଷ୍ଟା କରନ୍ତୁ।';
+
+  @override
+  String get week52Range => '52-ସପ୍ତାହ ପରିସର';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '52-ସପ୍ତାହ ସର୍ବାଧିକଠାରୁ $percent ତଳେ';
+  }
+
+  @override
+  String get week52AtHigh => '52-ସପ୍ତାହ ସର୍ବାଧିକରେ';
+
+  @override
+  String get alertKindTrailing => 'ଶିଖରରୁ ଖସିଲେ';
+
+  @override
+  String get alertTrailingPercent => 'ଶିଖରରୁ ଖସିବା (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'ଦର ଉପରକୁ ଗଲେ ପଛେ ପଛେ ଯାଏ: ସେଟ କରିବା ପରଠାରୁ ସର୍ବୋଚ୍ଚ ସ୍ତରରୁ ଦର ଏତିକି ଖସିଲେ ଜଣାଏ।';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'ଶିଖରରୁ $percent ଖସିବା';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'ଏପର୍ଯ୍ୟନ୍ତ ଶିଖର: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol ଶିଖରରୁ $percent ଖସିଲା';
+  }
 }

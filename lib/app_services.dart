@@ -357,6 +357,10 @@ class AppServices {
         AlertKind.above => l10n.alertHitAbove(a.symbol, fmt.price(a.value, a.currency)),
         AlertKind.below => l10n.alertHitBelow(a.symbol, fmt.price(a.value, a.currency)),
         AlertKind.move => l10n.alertHitMove(a.symbol, change),
+        AlertKind.trailing => l10n.alertHitTrailing(
+          a.symbol,
+          fmt.percent(a.value, decimals: a.value == a.value.roundToDouble() ? 0 : 1),
+        ),
       },
       body: '${l10n.alertHitBody(fmt.price(q.price, a.currency))} ($change)',
     );

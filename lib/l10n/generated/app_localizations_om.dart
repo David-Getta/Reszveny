@@ -2116,4 +2116,40 @@ class AppLocalizationsOm extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Suuraa kana irratti qabeenyi aksiyoonaa hin argamne. Suuraa iskiriinii fuula qabeenyaa brookarii keetii yaali.';
+
+  @override
+  String get week52Range => 'Daangaa torban 52';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return 'Ol\'aanaa torban 52 irraa $percent gadi';
+  }
+
+  @override
+  String get week52AtHigh => 'Ol\'aanaa torban 52 irratti';
+
+  @override
+  String get alertKindTrailing => 'Ol\'aanaa irraa yoo bu\'e';
+
+  @override
+  String get alertTrailingPercent => 'Bu\'aa ol\'aanaa irraa (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Gatii ol hordofa: erga qindeessitee as sadarkaa isaa ol\'aanaa irraa gatiin hammana yoo bu\'e si beeksisa.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Ol\'aanaa irraa $percent bu\'aa';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'ol\'aanaa hanga ammaa: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol ol\'aanaa isaa irraa $percent bu\'eera';
+  }
 }

@@ -2107,4 +2107,40 @@ class AppLocalizationsMr extends AppLocalizations {
   @override
   String get holdingsNone =>
       'या प्रतिमेत कोणत्याही शेअर पोझिशन्स सापडल्या नाहीत. तुमच्या ब्रोकरच्या पोझिशन्स किंवा होल्डिंग्ज पेजचा स्क्रीनशॉट वापरून पहा.';
+
+  @override
+  String get week52Range => '52-आठवड्यांची श्रेणी';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '52-आठवड्यांच्या उच्चांकापेक्षा $percent खाली';
+  }
+
+  @override
+  String get week52AtHigh => '52-आठवड्यांच्या उच्चांकावर';
+
+  @override
+  String get alertKindTrailing => 'शिखरापासून घसरल्यास';
+
+  @override
+  String get alertTrailingPercent => 'शिखरापासून घसरण (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'किमतीचा वरपर्यंत पाठलाग करते: सेट केल्यापासूनच्या सर्वोच्च पातळीपासून किंमत इतकी घसरल्यास सूचना देते.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'शिखरापासून $percent घसरण';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'आतापर्यंतचे शिखर: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol शिखरापासून $percent घसरला';
+  }
 }

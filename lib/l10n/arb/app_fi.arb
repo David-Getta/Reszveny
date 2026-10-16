@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Tarkista luvut ennen kuin lisäät ne. Hinta on keskimääräinen ostohintasi osaketta kohden, ei tämän päivän hinta.",
   "holdingsNoPrice": "Kuvassa ei ole keskimääräistä ostohintaa",
   "holdingsAdd": "{count, plural, =1{Lisää 1 omistus} other{Lisää {count} omistusta}}",
-  "holdingsNone": "Tästä kuvasta ei löytynyt osakeomistuksia. Kokeile kuvakaappausta välittäjäsi omistukset- tai positiot-sivusta."
+  "holdingsNone": "Tästä kuvasta ei löytynyt osakeomistuksia. Kokeile kuvakaappausta välittäjäsi omistukset- tai positiot-sivusta.",
+  "week52Range": "52 viikon vaihteluväli",
+  "week52BelowHigh": "{percent} 52 viikon ylimmän alapuolella",
+  "week52AtHigh": "52 viikon ylimmässä",
+  "alertKindTrailing": "Laskee huipusta",
+  "alertTrailingPercent": "Lasku huipusta (%)",
+  "alertTrailingHint": "Seuraa hintaa ylöspäin: hälytys laukeaa, kun hinta laskee näin paljon korkeimmasta tasostaan asettamisen jälkeen.",
+  "alertDescTrailing": "{percent} lasku huipusta",
+  "alertTrailingPeak": "huippu tähän asti: {price}",
+  "alertHitTrailing": "{symbol} laski {percent} huipustaan"
 }

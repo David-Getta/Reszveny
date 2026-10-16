@@ -2117,4 +2117,40 @@ class AppLocalizationsXh extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Akukho zabelo zifunyenweyo kulo mfanekiso. Zama umfanekiso wesikrini wephepha lezabelo okanye lezinto ozibambileyo kwibhrokha yakho.';
+
+  @override
+  String get week52Range => 'Uluhlu lweeveki ezi-52';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent ngaphantsi kweliphezulu leeveki ezi-52';
+  }
+
+  @override
+  String get week52AtHigh => 'Kweliphezulu leeveki ezi-52';
+
+  @override
+  String get alertKindTrailing => 'Yehla ukusuka encotsheni';
+
+  @override
+  String get alertTrailingPercent => 'Ukwehla ukusuka encotsheni (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Ilandela ixabiso linyuka: ikwazisa xa ixabiso lisehla ngolu hlobo ukusuka kwelona nqanaba liphezulu ukusukela oko uyisetile.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Ukwehla nge-$percent ukusuka encotsheni';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'incopho ukuza kuthi ga ngoku: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol yehle nge-$percent ukusuka encotsheni';
+  }
 }

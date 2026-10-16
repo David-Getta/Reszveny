@@ -566,5 +566,14 @@
   "holdingsReviewHint": "जोड़बासँ पहिने संख्या जाँचि लिअ। दाम प्रति शेयर अहाँक औसत खरीद दाम अछि, आजुक दाम नहि।",
   "holdingsNoPrice": "चित्रमे औसत खरीद दाम नहि अछि",
   "holdingsAdd": "{count, plural, =1{1 पोजीशन जोड़ू} other{{count} पोजीशन जोड़ू}}",
-  "holdingsNone": "एहि चित्रमे कोनो शेयर पोजीशन नहि भेटल। अपन ब्रोकरक पोजीशन वा होल्डिंग पन्नाक स्क्रीनशॉट आजमाउ।"
+  "holdingsNone": "एहि चित्रमे कोनो शेयर पोजीशन नहि भेटल। अपन ब्रोकरक पोजीशन वा होल्डिंग पन्नाक स्क्रीनशॉट आजमाउ।",
+  "week52Range": "52-सप्ताहक दायरा",
+  "week52BelowHigh": "52-सप्ताहक उच्चतमसँ {percent} नीचाँ",
+  "week52AtHigh": "52-सप्ताहक उच्चतम पर",
+  "alertKindTrailing": "शिखरसँ खसय",
+  "alertTrailingPercent": "शिखरसँ खसब (%)",
+  "alertTrailingHint": "दामक संग ऊपर चलैत अछि: सेट कएलाक बादक सभसँ ऊँच स्तरसँ दाम एतेक खसलापर सूचना दैत अछि।",
+  "alertDescTrailing": "शिखरसँ {percent} खसब",
+  "alertTrailingPeak": "एखन धरिक शिखर: {price}",
+  "alertHitTrailing": "{symbol} शिखरसँ {percent} खसल"
 }

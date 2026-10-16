@@ -2121,4 +2121,40 @@ class AppLocalizationsTs extends AppLocalizations {
   @override
   String get holdingsNone =>
       'A ku kumekanga tiphozixini ta swiave eka xifaniso lexi. Ringeta xifaniso xa xikirini xa pheji ya tiphozixini kumbe rifuwo eka brokara wa wena.';
+
+  @override
+  String get week52Range => 'Mpimo wa mavhiki ya 52';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent ehansi ka ehenhla ka mavhiki ya 52';
+  }
+
+  @override
+  String get week52AtHigh => 'Ehenhla ka mavhiki ya 52';
+
+  @override
+  String get alertKindTrailing => 'Wu wela ku suka ehenhla';
+
+  @override
+  String get alertTrailingPercent => 'Ku wela ku suka ehenhla (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Yi landzela nxavo loko wu tlakuka: yi ku tivisa loko nxavo wu wela hi mpimo lowu ku suka eka xiyimo xa le henhla swinene ku sukela loko u yi veka.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Ku wela hi $percent ku suka ehenhla';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'le henhla ku fikela sweswi: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol yi wele hi $percent ku suka ehenhla';
+  }
 }

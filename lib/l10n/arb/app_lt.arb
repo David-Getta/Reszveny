@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Prieš pridedant patikrink skaičius. Kaina – tai tavo vidutinė vienos akcijos pirkimo kaina, o ne šiandienos kaina.",
   "holdingsNoPrice": "Vaizde nėra vidutinės pirkimo kainos",
   "holdingsAdd": "{count, plural, one{Pridėti {count} poziciją} few{Pridėti {count} pozicijas} many{Pridėti {count} pozicijos} other{Pridėti {count} pozicijų}}",
-  "holdingsNone": "Šiame vaizde akcijų pozicijų nerasta. Pabandyk savo brokerio pozicijų ar turto puslapio ekrano kopiją."
+  "holdingsNone": "Šiame vaizde akcijų pozicijų nerasta. Pabandyk savo brokerio pozicijų ar turto puslapio ekrano kopiją.",
+  "week52Range": "52 savaičių intervalas",
+  "week52BelowHigh": "{percent} žemiau 52 savaičių maksimumo",
+  "week52AtHigh": "Ties 52 savaičių maksimumu",
+  "alertKindTrailing": "Nukris nuo piko",
+  "alertTrailingPercent": "Kritimas nuo piko (%)",
+  "alertTrailingHint": "Seka kainą aukštyn: įspėja, kai kaina nukrinta tiek nuo aukščiausio lygio nuo nustatymo.",
+  "alertDescTrailing": "{percent} kritimas nuo piko",
+  "alertTrailingPeak": "pikas iki šiol: {price}",
+  "alertHitTrailing": "{symbol} nukrito {percent} nuo piko"
 }

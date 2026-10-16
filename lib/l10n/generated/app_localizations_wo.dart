@@ -2102,4 +2102,40 @@ class AppLocalizationsWo extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Gisuñu benn aksiyoŋ ci nataal bii. Jéemal nataalu ekraan bu xëtu aksiyoŋ yi walla alal ji ci sa kurtiye.';
+
+  @override
+  String get week52Range => 'Diggante 52 ayu-bés';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent ci suufu gëna kawe ci 52 ayu-bés';
+  }
+
+  @override
+  String get week52AtHigh => 'Ci gëna kawe ci 52 ayu-bés';
+
+  @override
+  String get alertKindTrailing => 'Su wàccee ci kaw ga';
+
+  @override
+  String get alertTrailingPercent => 'Wàcc gi ci kaw ga (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Dafay topp njëg bi su yéegee: dina la xamal su njëg bi wàccee nii ci fa mu gën a kawe ba nga ko tëralee.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Wàcc $percent ci kaw ga';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'fa mu gën a kawe ba leegi: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol wàcc na $percent ci kaw ga';
+  }
 }

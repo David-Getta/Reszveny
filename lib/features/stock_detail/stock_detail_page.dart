@@ -28,6 +28,7 @@ import 'widgets/peers_strip.dart';
 import 'widgets/price_chart.dart';
 import 'widgets/section_card.dart';
 import 'widgets/statements_table.dart';
+import 'widgets/week52_range.dart';
 import '../../widgets/centered_scroll.dart';
 
 /// A részletes nézet: minden tudnivaló egy részvényről, szekciókra bontva.
@@ -312,33 +313,45 @@ class _DetailsBody extends StatelessWidget {
             : Text(l10n.updatedAt(fmt.dateTime(q!.timestamp)), style: theme.textTheme.bodySmall),
         child: err(DetailSection.quote) != null
             ? SectionError(err(DetailSection.quote)!)
-            : KvTable(
-                missing: l10n.notAvailable,
-                hints: glossary,
-                hintTitle: l10n.glossTitle,
-                rows: [
-                  (l10n.labelLastPrice, fmt.price(q?.price, cur)),
-                  (
-                    l10n.labelChange,
-                    q == null ? null : '${fmt.signed(q.change)} (${fmt.percent(q.changePercent, withSign: true)})',
+            : Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  if (q != null && m?.week52Low != null && m?.week52High != null) ...[
+                    Week52Range(low: m!.week52Low!, high: m.week52High!, price: q.price, fmt: fmt, currency: cur),
+                    const SizedBox(height: 16),
+                  ],
+                  KvTable(
+                    missing: l10n.notAvailable,
+                    hints: glossary,
+                    hintTitle: l10n.glossTitle,
+                    rows: [
+                      (l10n.labelLastPrice, fmt.price(q?.price, cur)),
+                      (
+                        l10n.labelChange,
+                        q == null ? null : '${fmt.signed(q.change)} (${fmt.percent(q.changePercent, withSign: true)})',
+                      ),
+                      (l10n.labelOpen, fmt.price(q?.open, cur)),
+                      (l10n.labelDayHigh, fmt.price(q?.high, cur)),
+                      (l10n.labelDayLow, fmt.price(q?.low, cur)),
+                      (l10n.labelPreviousClose, fmt.price(q?.previousClose, cur)),
+                      (
+                        l10n.labelWeek52High,
+                        m?.week52High == null
+                            ? null
+                            : '${fmt.price(m!.week52High, cur)}${m.week52HighDate == null ? '' : ' (${fmt.date(m.week52HighDate)})'}',
+                      ),
+                      (
+                        l10n.labelWeek52Low,
+                        m?.week52Low == null
+                            ? null
+                            : '${fmt.price(m!.week52Low, cur)}${m.week52LowDate == null ? '' : ' (${fmt.date(m.week52LowDate)})'}',
+                      ),
+                      (
+                        l10n.labelAverageVolume10d,
+                        m?.averageVolume10d == null ? null : fmt.compact(m!.averageVolume10d),
+                      ),
+                    ],
                   ),
-                  (l10n.labelOpen, fmt.price(q?.open, cur)),
-                  (l10n.labelDayHigh, fmt.price(q?.high, cur)),
-                  (l10n.labelDayLow, fmt.price(q?.low, cur)),
-                  (l10n.labelPreviousClose, fmt.price(q?.previousClose, cur)),
-                  (
-                    l10n.labelWeek52High,
-                    m?.week52High == null
-                        ? null
-                        : '${fmt.price(m!.week52High, cur)}${m.week52HighDate == null ? '' : ' (${fmt.date(m.week52HighDate)})'}',
-                  ),
-                  (
-                    l10n.labelWeek52Low,
-                    m?.week52Low == null
-                        ? null
-                        : '${fmt.price(m!.week52Low, cur)}${m.week52LowDate == null ? '' : ' (${fmt.date(m.week52LowDate)})'}',
-                  ),
-                  (l10n.labelAverageVolume10d, m?.averageVolume10d == null ? null : fmt.compact(m!.averageVolume10d)),
                 ],
               ),
       ),
@@ -656,7 +669,7 @@ class _FavoriteButton extends StatelessWidget {
 }
 
 /// A grafikon kiemelt szintjei: a saját átlagár (ha van pozíció ugyanebben a
-/// devizában) és az aktív „fölé megy” / „alá esik” riasztások.
+/// devizában) és az aktív „fölé megy” / „alá esik” / követő stop riasztások szintje.
 List<ChartLevel> chartLevels(BuildContext context, String symbol, String? currency) {
   final services = AppServices.of(context);
   final l10n = AppLocalizations.of(context);
@@ -667,6 +680,8 @@ List<ChartLevel> chartLevels(BuildContext context, String symbol, String? curren
       ChartLevel(price: position.averageCost, label: l10n.chartAvgCost, color: p.accent),
     for (final a in services.alerts.forSymbol(symbol))
       if (a.isActive && a.kind != AlertKind.move && (a.currency == null || currency == null || a.currency == currency))
-        ChartLevel(price: a.value, label: l10n.chartAlertLevel, color: p.muted),
+        // Követő stopnál a mostani csúcsból számolt szint.
+        if (a.kind == AlertKind.trailing ? a.trailingLevel : a.value case final level?)
+          ChartLevel(price: level, label: l10n.chartAlertLevel, color: p.muted),
   ];
 }

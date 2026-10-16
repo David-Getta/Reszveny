@@ -2105,4 +2105,40 @@ class AppLocalizationsTt extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Бу рәсемдә акция позицияләре табылмады. Брокерыңның позицияләр яки активлар битенең скриншотын карап кара.';
+
+  @override
+  String get week52Range => '52 атналык диапазон';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '52 атналык максимумнан $percent түбән';
+  }
+
+  @override
+  String get week52AtHigh => '52 атналык максимумда';
+
+  @override
+  String get alertKindTrailing => 'Иң югарыдан төшсә';
+
+  @override
+  String get alertTrailingPercent => 'Иң югарыдан төшү (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Бәяне өскә таба күзәтә: куйганнан бирле иң югары дәрәҗәсеннән бәя шулкадәр төшсә, хәбәр итә.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Иң югарыдан $percent төшү';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'хәзергә кадәр иң югары: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol иң югары дәрәҗәсеннән $percent төште';
+  }
 }

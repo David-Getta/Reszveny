@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Seetal lim yi balaa nga leen yokk. Njëg gi mooy sa njëgu jënd bu diggu ci benn aksiyoŋ, du njëgu tey.",
   "holdingsNoPrice": "Amul njëgu jënd bu diggu ci nataal bi",
   "holdingsAdd": "{count, plural, =1{Yokk 1 aksiyoŋ} other{Yokk {count} aksiyoŋ}}",
-  "holdingsNone": "Gisuñu benn aksiyoŋ ci nataal bii. Jéemal nataalu ekraan bu xëtu aksiyoŋ yi walla alal ji ci sa kurtiye."
+  "holdingsNone": "Gisuñu benn aksiyoŋ ci nataal bii. Jéemal nataalu ekraan bu xëtu aksiyoŋ yi walla alal ji ci sa kurtiye.",
+  "week52Range": "Diggante 52 ayu-bés",
+  "week52BelowHigh": "{percent} ci suufu gëna kawe ci 52 ayu-bés",
+  "week52AtHigh": "Ci gëna kawe ci 52 ayu-bés",
+  "alertKindTrailing": "Su wàccee ci kaw ga",
+  "alertTrailingPercent": "Wàcc gi ci kaw ga (%)",
+  "alertTrailingHint": "Dafay topp njëg bi su yéegee: dina la xamal su njëg bi wàccee nii ci fa mu gën a kawe ba nga ko tëralee.",
+  "alertDescTrailing": "Wàcc {percent} ci kaw ga",
+  "alertTrailingPeak": "fa mu gën a kawe ba leegi: {price}",
+  "alertHitTrailing": "{symbol} wàcc na {percent} ci kaw ga"
 }

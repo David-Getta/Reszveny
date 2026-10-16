@@ -2115,4 +2115,40 @@ class AppLocalizationsMl extends AppLocalizations {
   @override
   String get holdingsNone =>
       'ഈ ചിത്രത്തിൽ ഓഹരി പൊസിഷനുകളൊന്നും കണ്ടെത്തിയില്ല. നിങ്ങളുടെ ബ്രോക്കറുടെ പൊസിഷനുകൾ അല്ലെങ്കിൽ ഹോൾഡിംഗ്സ് പേജിന്റെ സ്ക്രീൻഷോട്ട് പരീക്ഷിക്കുക.';
+
+  @override
+  String get week52Range => '52 ആഴ്ചയിലെ പരിധി';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '52 ആഴ്ചയിലെ ഉയർന്ന നിലയേക്കാൾ $percent താഴെ';
+  }
+
+  @override
+  String get week52AtHigh => '52 ആഴ്ചയിലെ ഉയർന്ന നിലയിൽ';
+
+  @override
+  String get alertKindTrailing => 'ഉയർന്ന നിലയിൽ നിന്ന് വീണാൽ';
+
+  @override
+  String get alertTrailingPercent => 'ഉയർന്ന നിലയിൽ നിന്നുള്ള ഇടിവ് (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'വില ഉയരുമ്പോൾ പിന്തുടരും: സജ്ജമാക്കിയ ശേഷമുള്ള ഏറ്റവും ഉയർന്ന നിലയിൽ നിന്ന് വില ഇത്രയും ഇടിഞ്ഞാൽ അറിയിക്കും.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'ഉയർന്ന നിലയിൽ നിന്ന് $percent ഇടിവ്';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'ഇതുവരെയുള്ള ഉയർന്ന നില: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol ഉയർന്ന നിലയിൽ നിന്ന് $percent ഇടിഞ്ഞു';
+  }
 }

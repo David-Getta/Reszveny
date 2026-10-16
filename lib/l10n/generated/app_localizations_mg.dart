@@ -2122,4 +2122,41 @@ class AppLocalizationsMg extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Tsy nisy fananana anjara hita tamin\'ity sary ity. Andramo ny sary efijery amin\'ny pejin\'ny fanananao ao amin\'ny broker-nao.';
+
+  @override
+  String get week52Range => 'Elanelana tao anatin\'ny 52 herinandro';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent ambanin\'ny avo indrindra tao anatin\'ny 52 herinandro';
+  }
+
+  @override
+  String get week52AtHigh =>
+      'Amin\'ny avo indrindra tao anatin\'ny 52 herinandro';
+
+  @override
+  String get alertKindTrailing => 'Midina avy amin\'ny tampony';
+
+  @override
+  String get alertTrailingPercent => 'Fidinana avy amin\'ny tampony (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Manaraka ny vidiny miakatra: maneno raha midina toy izao ny vidiny avy amin\'ny ambony indrindra hatramin\'ny nametrahanao azy.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Fidinana $percent avy amin\'ny tampony';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'tampony hatreto: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return 'Nidina $percent avy amin\'ny tampony ny $symbol';
+  }
 }

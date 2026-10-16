@@ -2116,4 +2116,40 @@ class AppLocalizationsZu extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Awekho amasheya atholakele kulesi sithombe. Zama isithombe-skrini sekhasi lamasheya noma lezimpahla zakho kumthengisi wakho wamasheya.';
+
+  @override
+  String get week52Range => 'Ibanga lamasonto angu-52';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent ngaphansi kokuphezulu kwamasonto angu-52';
+  }
+
+  @override
+  String get week52AtHigh => 'Kokuphezulu kwamasonto angu-52';
+
+  @override
+  String get alertKindTrailing => 'Yehla isuka esiqongweni';
+
+  @override
+  String get alertTrailingPercent => 'Ukwehla kusuka esiqongweni (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Ilandela intengo inyuka: ikwazisa uma intengo yehla ngaleli zinga isuka ezingeni eliphezulu kakhulu selokhu uyisethile.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Ukwehla ngo-$percent kusuka esiqongweni';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'isiqongo kuze kube manje: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol yehle ngo-$percent isuka esiqongweni';
+  }
 }

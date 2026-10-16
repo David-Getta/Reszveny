@@ -2077,4 +2077,40 @@ class AppLocalizationsAm extends AppLocalizations {
   @override
   String get holdingsNone =>
       'በዚህ ምስል ላይ ምንም የአክሲዮን ይዞታ አልተገኘም። የደላላዎን የይዞታዎች ገጽ ቅጽበታዊ ገጽ እይታ ይሞክሩ።';
+
+  @override
+  String get week52Range => 'የ52 ሳምንት ክልል';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return 'ከ52 ሳምንት ከፍተኛ በ$percent ዝቅ ያለ';
+  }
+
+  @override
+  String get week52AtHigh => 'በ52 ሳምንት ከፍተኛ ላይ';
+
+  @override
+  String get alertKindTrailing => 'ከከፍተኛው ሲወርድ';
+
+  @override
+  String get alertTrailingPercent => 'ከከፍተኛው ቅናሽ (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'ዋጋውን ወደ ላይ ይከተላል፦ ማንቂያውን ካዘጋጁበት ጊዜ ጀምሮ ከደረሰበት ከፍተኛ ደረጃ ዋጋው ይህን ያህል ሲወርድ ያሳውቃል።';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'ከከፍተኛው $percent ቅናሽ';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'እስካሁን ከፍተኛ፦ $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol ከከፍተኛው $percent ወርዷል';
+  }
 }

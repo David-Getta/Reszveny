@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Ṣàyẹ̀wò àwọn nọ́mbà kí o tó fi wọ́n kún un. Iye owó náà ni iye owó ìrajà àpapọ̀ rẹ fún ìpín kọ̀ọ̀kan, kì í ṣe iye owó òní.",
   "holdingsNoPrice": "Kò sí iye owó ìrajà àpapọ̀ lórí àwòrán náà",
   "holdingsAdd": "{count, plural, =1{Fi ìpín 1 kún un} other{Fi ìpín {count} kún un}}",
-  "holdingsNone": "A kò rí ìpín kankan lórí àwòrán yìí. Gbìyànjú àwòrán ojú-ìbojú ti ojú-ewé ìpín tàbí dúkìá rẹ lọ́dọ̀ alágbàtà rẹ."
+  "holdingsNone": "A kò rí ìpín kankan lórí àwòrán yìí. Gbìyànjú àwòrán ojú-ìbojú ti ojú-ewé ìpín tàbí dúkìá rẹ lọ́dọ̀ alágbàtà rẹ.",
+  "week52Range": "Ìwọ̀n ọ̀sẹ̀ 52",
+  "week52BelowHigh": "{percent} ní ìsàlẹ̀ ga jùlọ ní ọ̀sẹ̀ 52",
+  "week52AtHigh": "Ní ga jùlọ ní ọ̀sẹ̀ 52",
+  "alertKindTrailing": "Tí ó bá wálẹ̀ láti òkè",
+  "alertTrailingPercent": "Ìwálẹ̀ láti òkè (%)",
+  "alertTrailingHint": "Ó ń tẹ̀lé iye owó bí ó ṣe ń gòkè: yóò sọ fún ọ nígbà tí iye owó bá wálẹ̀ tó báyìí láti ibi tó ga jùlọ láti ìgbà tí o ti ṣètò rẹ̀.",
+  "alertDescTrailing": "Ìwálẹ̀ {percent} láti òkè",
+  "alertTrailingPeak": "ibi tó ga jùlọ títí di ìsinsìnyí: {price}",
+  "alertHitTrailing": "{symbol} ti wálẹ̀ {percent} láti òkè"
 }

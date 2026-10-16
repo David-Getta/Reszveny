@@ -2118,4 +2118,40 @@ class AppLocalizationsSt extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Ha ho maemo a diabo a fumanweng setshwantshong sena. Leka setshwantsho sa skrine sa leqephe la maemo kapa thepa ya hao ho brokara wa hao.';
+
+  @override
+  String get week52Range => 'Bophara ba dibeke tse 52';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent ka tlase ho bophahamo ba dibeke tse 52';
+  }
+
+  @override
+  String get week52AtHigh => 'Bophahamong ba dibeke tse 52';
+
+  @override
+  String get alertKindTrailing => 'E theoha ho tloha hodimodimo';
+
+  @override
+  String get alertTrailingPercent => 'Ho theoha ho tloha hodimodimo (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'E latela theko ha e nyoloha: e o tsebisa ha theko e theoha ka hona ho tloha boemong bo hodimodimo ho tloha ha o e beile.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Ho theoha ka $percent ho tloha hodimodimo';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'hodimodimo ho fihlela jwale: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol e theohile ka $percent ho tloha hodimodimo';
+  }
 }

@@ -1620,5 +1620,51 @@
       }
     }
   },
-  "holdingsNone": "No stock positions found on this picture. Try a screenshot of your broker's positions or holdings page."
+  "holdingsNone": "No stock positions found on this picture. Try a screenshot of your broker's positions or holdings page.",
+  "week52Range": "52-week range",
+  "week52BelowHigh": "{percent} below the 52-week high",
+  "@week52BelowHigh": {
+    "description": "Under a bar showing where today's price sits between the yearly low and high; percent is formatted, e.g. \"12.4%\".",
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      }
+    }
+  },
+  "week52AtHigh": "At the 52-week high",
+  "alertKindTrailing": "Drop from peak",
+  "@alertKindTrailing": {
+    "description": "Alert type chip: a trailing stop – fires when the price falls a set percentage from its highest point since the alert was set."
+  },
+  "alertTrailingPercent": "Drop from the peak (%)",
+  "alertTrailingHint": "Follows the price up: the alert goes off when the price falls this much from its highest point since you set it.",
+  "alertDescTrailing": "{percent} drop from its peak",
+  "@alertDescTrailing": {
+    "description": "Short description of a trailing-stop alert; percent like \"10%\".",
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      }
+    }
+  },
+  "alertTrailingPeak": "peak so far: {price}",
+  "@alertTrailingPeak": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "alertHitTrailing": "{symbol} fell {percent} from its peak",
+  "@alertHitTrailing": {
+    "description": "Notification title when a trailing-stop alert fires.",
+    "placeholders": {
+      "symbol": {
+        "type": "String"
+      },
+      "percent": {
+        "type": "String"
+      }
+    }
+  }
 }

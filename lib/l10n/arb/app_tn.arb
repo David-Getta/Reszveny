@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Tlhola dipalo pele o di oketsa. Tlhwatlhwa ke tlhwatlhwa ya gago e e magareng ya theko ya seabe se le sengwe, e seng tlhwatlhwa ya gompieno.",
   "holdingsNoPrice": "Ga go na tlhwatlhwa e e magareng ya theko mo setshwantshong",
   "holdingsAdd": "{count, plural, =1{Oketsa boemo bo le bongwe} other{Oketsa maemo a le {count}}}",
-  "holdingsNone": "Ga go a bonwa maemo a diabe mo setshwantshong se. Leka setshwantsho sa sekirini sa tsebe ya maemo kgotsa dithoto tsa gago kwa brokareng ya gago."
+  "holdingsNone": "Ga go a bonwa maemo a diabe mo setshwantshong se. Leka setshwantsho sa sekirini sa tsebe ya maemo kgotsa dithoto tsa gago kwa brokareng ya gago.",
+  "week52Range": "Bophara jwa dibeke di le 52",
+  "week52BelowHigh": "{percent} ka fa tlase ga bogodimo jwa dibeke di le 52",
+  "week52AtHigh": "Mo bogodimong jwa dibeke di le 52",
+  "alertKindTrailing": "E wela go tswa kwa godimodimo",
+  "alertTrailingPercent": "Go wela go tswa kwa godimodimo (%)",
+  "alertTrailingHint": "E latela tlhwatlhwa fa e tlhatloga: e go itsise fa tlhwatlhwa e wela ka selekanyo se go tswa kwa seemong se se kwa godimo thata go tloga o e baya.",
+  "alertDescTrailing": "Go wela ka {percent} go tswa kwa godimodimo",
+  "alertTrailingPeak": "godimodimo go fitlha jaanong: {price}",
+  "alertHitTrailing": "{symbol} e wetse ka {percent} go tswa kwa godimodimo"
 }

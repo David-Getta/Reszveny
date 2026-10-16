@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Comprova les xifres abans d’afegir-les. El preu és el teu preu mitjà de compra per acció, no el preu d’avui.",
   "holdingsNoPrice": "No hi ha preu mitjà de compra a la imatge",
   "holdingsAdd": "{count, plural, =1{Afegeix 1 posició} other{Afegeix {count} posicions}}",
-  "holdingsNone": "No s’han trobat posicions d’accions en aquesta imatge. Prova amb una captura de la pàgina de posicions o de cartera del teu bròquer."
+  "holdingsNone": "No s’han trobat posicions d’accions en aquesta imatge. Prova amb una captura de la pàgina de posicions o de cartera del teu bròquer.",
+  "week52Range": "Interval de 52 setmanes",
+  "week52BelowHigh": "{percent} per sota del màxim de 52 setmanes",
+  "week52AtHigh": "Al màxim de 52 setmanes",
+  "alertKindTrailing": "Cau des del màxim",
+  "alertTrailingPercent": "Caiguda des del màxim (%)",
+  "alertTrailingHint": "Segueix el preu a l’alça: l’alerta salta quan el preu cau aquest percentatge des del màxim assolit des que la vas crear.",
+  "alertDescTrailing": "Caiguda del {percent} des del màxim",
+  "alertTrailingPeak": "màxim fins ara: {price}",
+  "alertHitTrailing": "{symbol} ha caigut un {percent} des del màxim"
 }

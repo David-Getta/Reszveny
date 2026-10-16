@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Hubi tirooyinka ka hor intaadan ku darin. Qiimuhu waa celceliska qiimaha iibsasho ee saami kasta, ma aha qiimaha maanta.",
   "holdingsNoPrice": "Sawirka kuma jiro celceliska qiimaha iibsasho",
   "holdingsAdd": "{count, plural, =1{Ku dar 1 mawqif} other{Ku dar {count} mawqif}}",
-  "holdingsNone": "Sawirkan laguma helin mawqif saami. Isku day sawir-shaashadeed bogga mawqifyada ama hantida ee dillaalkaaga."
+  "holdingsNone": "Sawirkan laguma helin mawqif saami. Isku day sawir-shaashadeed bogga mawqifyada ama hantida ee dillaalkaaga.",
+  "week52Range": "Baaxadda 52 toddobaad",
+  "week52BelowHigh": "{percent} ka hooseeya ugu sarreeya 52 toddobaad",
+  "week52AtHigh": "Waa ugu sarreeya 52 toddobaad",
+  "alertKindTrailing": "Hoos uga dhaco heerka ugu sarreeya",
+  "alertTrailingPercent": "Hoos u dhaca heerka ugu sarreeya (%)",
+  "alertTrailingHint": "Waxay la socotaa qiimaha kor u kaca: waxay ku ogeysiisaa marka qiimuhu intaas hoos uga dhaco heerkii ugu sarreeyay tan iyo markii aad dejisay.",
+  "alertDescTrailing": "{percent} hoos u dhac heerka ugu sarreeya",
+  "alertTrailingPeak": "heerka ugu sarreeya ilaa hadda: {price}",
+  "alertHitTrailing": "{symbol} wuxuu {percent} hoos uga dhacay heerkiisii ugu sarreeyay"
 }

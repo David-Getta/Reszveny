@@ -2107,4 +2107,40 @@ class AppLocalizationsPcm extends AppLocalizations {
   @override
   String get holdingsNone =>
       'We no see any stock position for dis picture. Try screenshot of di positions or holdings page for your broker app.';
+
+  @override
+  String get week52Range => 'Range for 52 weeks';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent under di highest for 52 weeks';
+  }
+
+  @override
+  String get week52AtHigh => 'E dey di highest for 52 weeks';
+
+  @override
+  String get alertKindTrailing => 'Fall from top';
+
+  @override
+  String get alertTrailingPercent => 'Fall from the top (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'E dey follow price go up: e go alert you when price fall reach dis much from the highest point since you set am.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return '$percent fall from top';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'top so far: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol don fall $percent from top';
+  }
 }

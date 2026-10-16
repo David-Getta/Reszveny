@@ -2105,4 +2105,40 @@ class AppLocalizationsSi extends AppLocalizations {
   @override
   String get holdingsNone =>
       'මෙම රූපයේ කොටස් හිමිකම් කිසිවක් හමු නොවීය. ඔබේ තැරැව්කරුගේ කොටස් හිමිකම් පිටුවේ තිර රුවක් උත්සාහ කරන්න.';
+
+  @override
+  String get week52Range => 'සති 52 පරාසය';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return 'සති 52 ඉහළමට වඩා $percent පහළින්';
+  }
+
+  @override
+  String get week52AtHigh => 'සති 52 ඉහළමේ';
+
+  @override
+  String get alertKindTrailing => 'උපරිමයෙන් පහළ වැටුණු විට';
+
+  @override
+  String get alertTrailingPercent => 'උපරිමයෙන් පහත වැටීම (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'මිල ඉහළ යන විට අනුගමනය කරයි: සැකසූ දා සිට ඉහළම මට්ටමේ සිට මිල මෙපමණ පහත වැටුණු විට දැනුම් දෙයි.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'උපරිමයෙන් $percent පහත වැටීම';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'මෙතෙක් උපරිමය: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol උපරිමයෙන් $percentකින් පහත වැටුණි';
+  }
 }

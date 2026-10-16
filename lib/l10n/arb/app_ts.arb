@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Kambela tinomboro u nga si ti engetela. Nxavo i nxavo wa wena wa le xikarhi wa ku xava hi xiave xin'we, ku nga ri nxavo wa namuntlha.",
   "holdingsNoPrice": "A ku na nxavo wa le xikarhi wa ku xava eka xifaniso",
   "holdingsAdd": "{count, plural, =1{Engetela phozixini yin'we} other{Engetela tiphozixini ta {count}}}",
-  "holdingsNone": "A ku kumekanga tiphozixini ta swiave eka xifaniso lexi. Ringeta xifaniso xa xikirini xa pheji ya tiphozixini kumbe rifuwo eka brokara wa wena."
+  "holdingsNone": "A ku kumekanga tiphozixini ta swiave eka xifaniso lexi. Ringeta xifaniso xa xikirini xa pheji ya tiphozixini kumbe rifuwo eka brokara wa wena.",
+  "week52Range": "Mpimo wa mavhiki ya 52",
+  "week52BelowHigh": "{percent} ehansi ka ehenhla ka mavhiki ya 52",
+  "week52AtHigh": "Ehenhla ka mavhiki ya 52",
+  "alertKindTrailing": "Wu wela ku suka ehenhla",
+  "alertTrailingPercent": "Ku wela ku suka ehenhla (%)",
+  "alertTrailingHint": "Yi landzela nxavo loko wu tlakuka: yi ku tivisa loko nxavo wu wela hi mpimo lowu ku suka eka xiyimo xa le henhla swinene ku sukela loko u yi veka.",
+  "alertDescTrailing": "Ku wela hi {percent} ku suka ehenhla",
+  "alertTrailingPeak": "le henhla ku fikela sweswi: {price}",
+  "alertHitTrailing": "{symbol} yi wele hi {percent} ku suka ehenhla"
 }

@@ -2107,4 +2107,40 @@ class AppLocalizationsTr extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Bu görselde hisse pozisyonu bulunamadı. Aracı kurumunun pozisyonlar veya varlıklar sayfasının ekran görüntüsünü dene.';
+
+  @override
+  String get week52Range => '52 haftalık aralık';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '52 haftalık en yüksekten $percent aşağıda';
+  }
+
+  @override
+  String get week52AtHigh => '52 haftalık en yüksekte';
+
+  @override
+  String get alertKindTrailing => 'Zirveden düşerse';
+
+  @override
+  String get alertTrailingPercent => 'Zirveden düşüş (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Fiyatı yukarı doğru takip eder: fiyat, kurulduğundan beri ulaştığı en yüksek seviyeden bu kadar düştüğünde uyarır.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Zirveden $percent düşüş';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'şimdiye kadarki zirve: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol zirveden $percent düştü';
+  }
 }

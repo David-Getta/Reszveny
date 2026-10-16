@@ -2112,4 +2112,40 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Geen aandelenposities gevonden op deze afbeelding. Probeer een screenshot van de posities- of portefeuillepagina van je broker.';
+
+  @override
+  String get week52Range => '52-weeksbereik';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent onder het 52-weeks hoog';
+  }
+
+  @override
+  String get week52AtHigh => 'Op het 52-weeks hoog';
+
+  @override
+  String get alertKindTrailing => 'Daalt vanaf top';
+
+  @override
+  String get alertTrailingPercent => 'Daling vanaf de top (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Volgt de koers omhoog: de melding gaat af als de koers zoveel daalt vanaf het hoogste punt sinds je hem instelde.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return '$percent daling vanaf de top';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'top tot nu toe: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol daalde $percent vanaf de top';
+  }
 }

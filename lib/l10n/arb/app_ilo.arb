@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Kitaem dagiti numero sakbay nga inayonmo. Ti presio ket ti average a presio ti gatangmo iti tunggal share, saan a ti presio ita nga aldaw.",
   "holdingsNoPrice": "Awan ti average a presio ti gatang iti ladawan",
   "holdingsAdd": "{count, plural, =1{Inayon ti 1 a posision} other{Inayon ti {count} a posision}}",
-  "holdingsNone": "Awan ti nasarakan a posision ti stock iti daytoy a ladawan. Padasem ti screenshot ti panid dagiti posision wenno holdings iti brokermo."
+  "holdingsNone": "Awan ti nasarakan a posision ti stock iti daytoy a ladawan. Padasem ti screenshot ti panid dagiti posision wenno holdings iti brokermo.",
+  "week52Range": "Sakup iti 52 a lawas",
+  "week52BelowHigh": "{percent} a nababbaba ngem iti kangatuan iti 52 a lawas",
+  "week52AtHigh": "Adda iti kangatuan iti 52 a lawas",
+  "alertKindTrailing": "Bumaba manipud iti kangatuan",
+  "alertTrailingPercent": "Ibaba manipud iti kangatuan (%)",
+  "alertTrailingHint": "Surotenna ti presio nga agpangato: agpakaammo no bumaba ti presio iti kastoy manipud iti kangatuan a lebelna sipud idi insaadmo daytoy.",
+  "alertDescTrailing": "{percent} a ibaba manipud iti kangatuan",
+  "alertTrailingPeak": "kangatuan agingga ita: {price}",
+  "alertHitTrailing": "Bimmaba ti {symbol} iti {percent} manipud iti kangatuan"
 }

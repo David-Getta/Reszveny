@@ -2115,4 +2115,40 @@ class AppLocalizationsHy extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Այս պատկերում բաժնետոմսերի դիրքեր չգտնվեցին։ Փորձիր բրոքերիդ դիրքերի կամ ակտիվների էջի էկրանի նկարը։';
+
+  @override
+  String get week52Range => '52 շաբաթվա միջակայք';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '52 շաբաթվա առավելագույնից $percent-ով ցածր';
+  }
+
+  @override
+  String get week52AtHigh => '52 շաբաթվա առավելագույնում';
+
+  @override
+  String get alertKindTrailing => 'Իջնի գագաթից';
+
+  @override
+  String get alertTrailingPercent => 'Անկում գագաթից (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Հետևում է գնին դեպի վեր. ծանուցում է, երբ գինն այսքան իջնի սահմանելուց ի վեր հասած ամենաբարձր մակարդակից։';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Անկում գագաթից $percent-ով';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'գագաթն առայժմ՝ $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol-ն իջավ գագաթից $percent-ով';
+  }
 }

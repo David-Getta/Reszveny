@@ -2106,4 +2106,40 @@ class AppLocalizationsAs extends AppLocalizations {
   @override
   String get holdingsNone =>
       'এই ছবিখনত কোনো শ্বেয়াৰ পজিচন পোৱা নগ\'ল। আপোনাৰ ব্ৰ\'কাৰৰ পজিচন বা হ\'ল্ডিং পৃষ্ঠাৰ স্ক্ৰীণশ্বট চেষ্টা কৰক।';
+
+  @override
+  String get week52Range => '52-সপ্তাহৰ পৰিসৰ';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '52-সপ্তাহৰ সৰ্বোচ্চতকৈ $percent তলত';
+  }
+
+  @override
+  String get week52AtHigh => '52-সপ্তাহৰ সৰ্বোচ্চত';
+
+  @override
+  String get alertKindTrailing => 'শীৰ্ষৰ পৰা নামিলে';
+
+  @override
+  String get alertTrailingPercent => 'শীৰ্ষৰ পৰা হ্ৰাস (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'দামৰ সৈতে ওপৰলৈ আগবাঢ়ে: ছেট কৰাৰ পিছত পোৱা সৰ্বোচ্চ স্তৰৰ পৰা দাম ইমানখিনি নামিলে সতৰ্ক কৰে।';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'শীৰ্ষৰ পৰা $percent হ্ৰাস';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'এতিয়ালৈকে শীৰ্ষ: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol শীৰ্ষৰ পৰা $percent নামিল';
+  }
 }

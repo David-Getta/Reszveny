@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Senqed imḍanen send ad ten-ternuḍ. Ssuma d ssuma talemmast n tɣin i yal asehmi, mačči d ssuma n wass-a.",
   "holdingsNoPrice": "Ulac ssuma talemmast n tɣin deg tugna",
   "holdingsAdd": "{count, plural, =1{Rnu 1 n wadeg} other{Rnu {count} n yimukan}}",
-  "holdingsNone": "Ulac imukan n yisehmiyen i yettwafen deg tugna-a. Ɛreḍ tuṭṭfa n wegdil n usebter n yimukan deg usnas n umsenzi-ik."
+  "holdingsNone": "Ulac imukan n yisehmiyen i yettwafen deg tugna-a. Ɛreḍ tuṭṭfa n wegdil n usebter n yimukan deg usnas n umsenzi-ik.",
+  "week52Range": "Tagrumma n 52 n yimalasen",
+  "week52BelowHigh": "{percent} ddaw afellay n 52 n yimalasen",
+  "week52AtHigh": "Ɣef afellay n 52 n yimalasen",
+  "alertKindTrailing": "Yettɣelli seg tqacuct",
+  "alertTrailingPercent": "Aɣelluy seg tqacuct (%)",
+  "alertTrailingHint": "Yettḍafar ssuma ɣer usawen: ad k-yelɣu ma yeɣli ssuma s waya seg tqacuct-is tafellayt seg wasmi i t-tesbeddeḍ.",
+  "alertDescTrailing": "Aɣelluy n {percent} seg tqacuct",
+  "alertTrailingPeak": "taqacuct alamma tura: {price}",
+  "alertHitTrailing": "{symbol} yeɣli s {percent} seg tqacuct"
 }

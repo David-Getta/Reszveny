@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Sprawdź liczby, zanim je dodasz. Cena to Twoja średnia cena zakupu za akcję, a nie dzisiejsza cena.",
   "holdingsNoPrice": "Brak średniej ceny zakupu na obrazie",
   "holdingsAdd": "{count, plural, one{Dodaj {count} pozycję} few{Dodaj {count} pozycje} many{Dodaj {count} pozycji} other{Dodaj {count} pozycji}}",
-  "holdingsNone": "Na tym obrazie nie znaleziono pozycji w akcjach. Spróbuj zrzutu ekranu strony z pozycjami lub portfelem u swojego brokera."
+  "holdingsNone": "Na tym obrazie nie znaleziono pozycji w akcjach. Spróbuj zrzutu ekranu strony z pozycjami lub portfelem u swojego brokera.",
+  "week52Range": "Zakres 52-tygodniowy",
+  "week52BelowHigh": "{percent} poniżej maksimum 52-tygodniowego",
+  "week52AtHigh": "Na maksimum 52-tygodniowym",
+  "alertKindTrailing": "Spadnie od szczytu",
+  "alertTrailingPercent": "Spadek od szczytu (%)",
+  "alertTrailingHint": "Podąża za ceną w górę: alert włączy się, gdy cena spadnie o tyle od najwyższego poziomu od chwili ustawienia.",
+  "alertDescTrailing": "Spadek o {percent} od szczytu",
+  "alertTrailingPeak": "dotychczasowy szczyt: {price}",
+  "alertHitTrailing": "{symbol} spadł o {percent} od szczytu"
 }

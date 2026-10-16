@@ -2097,4 +2097,40 @@ class AppLocalizationsBo extends AppLocalizations {
   @override
   String get holdingsNone =>
       'པར་རིས་འདིའི་ནང་ཧུར་ཁག་གི་ཉར་ཡོད་མ་རྙེད། ཁྱེད་ཀྱི་བརྐོ་བའི་ཉར་ཡོད་ཤོག་ངོས་ཀྱི་བརྙན་ཡོལ་པར་རིས་ཤིག་ཚོད་ལྟ་གནང་རོགས།';
+
+  @override
+  String get week52Range => 'གཟའ་འཁོར་ 52 ནང་གི་ཁྱབ་ཁོངས';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return 'གཟའ་འཁོར་ 52 ནང་གི་མཐོ་ཤོས་ལས་ $percent དམའ་བ';
+  }
+
+  @override
+  String get week52AtHigh => 'གཟའ་འཁོར་ 52 ནང་གི་མཐོ་ཤོས་སུ';
+
+  @override
+  String get alertKindTrailing => 'ཡང་རྩེ་ནས་ཆག་ན';
+
+  @override
+  String get alertTrailingPercent => 'ཡང་རྩེ་ནས་ཆག་ཚད (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'གོང་ཚད་ཡར་འཕར་བའི་རྗེས་སུ་འབྲང་། སྒྲིག་པ་ནས་བཟུང་ཐོབ་པའི་གོང་ཚད་མཐོ་ཤོས་ནས་འདི་ཙམ་ཆག་ན་བརྡ་གཏོང་།';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'ཡང་རྩེ་ནས་ $percent ཆག';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'ད་བར་གྱི་ཡང་རྩེ: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol ཡང་རྩེ་ནས་ $percent ཆག་སོང་།';
+  }
 }

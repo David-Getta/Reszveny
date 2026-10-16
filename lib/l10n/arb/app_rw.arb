@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Genzura imibare mbere yo kuyongeramo. Igiciro ni impuzandengo y'igiciro waguzeho umugabane umwe, si igiciro cy'uyu munsi.",
   "holdingsNoPrice": "Nta mpuzandengo y'igiciro cyo kugura iri ku ifoto",
   "holdingsAdd": "{count, plural, =1{Ongeramo umugabane 1} other{Ongeramo imigabane {count}}}",
-  "holdingsNone": "Nta migabane yabonetse kuri iyi foto. Gerageza ifoto ya ekara y'urupapuro rw'imigabane yawe kuri burokeri wawe."
+  "holdingsNone": "Nta migabane yabonetse kuri iyi foto. Gerageza ifoto ya ekara y'urupapuro rw'imigabane yawe kuri burokeri wawe.",
+  "week52Range": "Igipimo cyo mu byumweru 52",
+  "week52BelowHigh": "{percent} munsi y'hejuru mu byumweru 52",
+  "week52AtHigh": "Kuri hejuru mu byumweru 52",
+  "alertKindTrailing": "Nikimanuka kuva ku isonga",
+  "alertTrailingPercent": "Kumanuka kuva ku isonga (%)",
+  "alertTrailingHint": "Ikurikira igiciro kizamuka: ikumenyesha igihe igiciro kimanutse kungana gutya kuva ku rwego rwo hejuru cyane kuva wayishyiraho.",
+  "alertDescTrailing": "Kumanuka kwa {percent} kuva ku isonga",
+  "alertTrailingPeak": "isonga kugeza ubu: {price}",
+  "alertHitTrailing": "{symbol} yamanutseho {percent} kuva ku isonga"
 }

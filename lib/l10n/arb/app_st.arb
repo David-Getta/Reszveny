@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Hlahloba dinomoro pele o di eketsa. Theko ke karolelano ya theko eo o rekileng ka yona seabo ka seng, eseng theko ya kajeno.",
   "holdingsNoPrice": "Ha ho karolelano ya theko ya ho reka setshwantshong",
   "holdingsAdd": "{count, plural, =1{Eketsa boemo bo le bong} other{Eketsa maemo a {count}}}",
-  "holdingsNone": "Ha ho maemo a diabo a fumanweng setshwantshong sena. Leka setshwantsho sa skrine sa leqephe la maemo kapa thepa ya hao ho brokara wa hao."
+  "holdingsNone": "Ha ho maemo a diabo a fumanweng setshwantshong sena. Leka setshwantsho sa skrine sa leqephe la maemo kapa thepa ya hao ho brokara wa hao.",
+  "week52Range": "Bophara ba dibeke tse 52",
+  "week52BelowHigh": "{percent} ka tlase ho bophahamo ba dibeke tse 52",
+  "week52AtHigh": "Bophahamong ba dibeke tse 52",
+  "alertKindTrailing": "E theoha ho tloha hodimodimo",
+  "alertTrailingPercent": "Ho theoha ho tloha hodimodimo (%)",
+  "alertTrailingHint": "E latela theko ha e nyoloha: e o tsebisa ha theko e theoha ka hona ho tloha boemong bo hodimodimo ho tloha ha o e beile.",
+  "alertDescTrailing": "Ho theoha ka {percent} ho tloha hodimodimo",
+  "alertTrailingPeak": "hodimodimo ho fihlela jwale: {price}",
+  "alertHitTrailing": "{symbol} e theohile ka {percent} ho tloha hodimodimo"
 }

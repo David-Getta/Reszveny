@@ -2099,4 +2099,40 @@ class AppLocalizationsSd extends AppLocalizations {
   @override
   String get holdingsNone =>
       'هن تصوير ۾ شيئرن جي ڪا به پوزيشن نه ملي. پنهنجي بروڪر جي پوزيشنن يا هولڊنگز واري صفحي جو اسڪرين شاٽ آزمايو.';
+
+  @override
+  String get week52Range => '52 هفتن جي حد';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '52 هفتن جي وڌ ۾ وڌ کان $percent هيٺ';
+  }
+
+  @override
+  String get week52AtHigh => '52 هفتن جي وڌ ۾ وڌ تي';
+
+  @override
+  String get alertKindTrailing => 'چوٽيءَ کان ڪري';
+
+  @override
+  String get alertTrailingPercent => 'چوٽيءَ کان ڪمي (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'قيمت جي مٿي پٺيان هلي ٿو: جڏهن قيمت سيٽ ڪرڻ کان پوءِ واري سڀ کان مٿانهين سطح کان ايتري ڪري ته خبر ڏئي ٿو.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'چوٽيءَ کان $percent ڪمي';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'هيستائين چوٽي: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol چوٽيءَ کان $percent ڪريو';
+  }
 }

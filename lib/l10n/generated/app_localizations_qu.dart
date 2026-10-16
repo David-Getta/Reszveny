@@ -2120,4 +2120,40 @@ class AppLocalizationsQu extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Kay rikch\'aypi mana acciónkunata tarinchikchu. Brokerniykiq kapuqnin p\'anqanmanta pantalla rikch\'ayta llamk\'achiy.';
+
+  @override
+  String get week52Range => '52 semanapi chiqan';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '52 semanapi aswan hatunmanta $percent uraypi';
+  }
+
+  @override
+  String get week52AtHigh => '52 semanapi aswan hatunpi';
+
+  @override
+  String get alertKindTrailing => 'Aswan hanaqmanta uraykun';
+
+  @override
+  String get alertTrailingPercent => 'Aswan hanaqmanta uraykuy (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Chaninta wichayninpi qatin: churasqaykimanta aswan hanaq chaninmanta kay chhikata uraykuptin willasunki.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Aswan hanaqmanta $percent uraykuy';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'kunankama aswan hanaq: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol aswan hanaqninmanta $percent uraykurqan';
+  }
 }

@@ -2108,4 +2108,40 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Hakuna nafasi za hisa zilizopatikana kwenye picha hii. Jaribu picha ya skrini ya ukurasa wa nafasi au mali zako kwa dalali wako.';
+
+  @override
+  String get week52Range => 'Masafa ya wiki 52';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent chini ya juu ya wiki 52';
+  }
+
+  @override
+  String get week52AtHigh => 'Kwenye juu ya wiki 52';
+
+  @override
+  String get alertKindTrailing => 'Ikishuka kutoka kilele';
+
+  @override
+  String get alertTrailingPercent => 'Kushuka kutoka kilele (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Hufuata bei ikipanda: hukuarifu bei inaposhuka kiasi hiki kutoka kiwango cha juu zaidi tangu ulipoiweka.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Kushuka $percent kutoka kilele';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'kilele hadi sasa: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol imeshuka $percent kutoka kilele';
+  }
 }

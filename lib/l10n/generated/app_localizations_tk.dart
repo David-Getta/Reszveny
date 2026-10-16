@@ -2107,4 +2107,40 @@ class AppLocalizationsTk extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Bu suratda paýnama pozisiýasy tapylmady. Brokeriňiň pozisiýalar ýa-da aktiwler sahypasynyň ekran suratyny synap gör.';
+
+  @override
+  String get week52Range => '52 hepdäniň aralygy';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '52 hepdäniň iň ýokarysyndan $percent pes';
+  }
+
+  @override
+  String get week52AtHigh => '52 hepdäniň iň ýokarysynda';
+
+  @override
+  String get alertKindTrailing => 'Iň ýokarydan düşse';
+
+  @override
+  String get alertTrailingPercent => 'Iň ýokarydan düşüş (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Bahany ýokary yzarlaýar: bellänizden bäri iň ýokary derejesinden baha şunça düşse habar berýär.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Iň ýokarydan $percent düşüş';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'häzire çenli iň ýokary: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol iň ýokary derejesinden $percent düşdi';
+  }
 }

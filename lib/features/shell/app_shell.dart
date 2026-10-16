@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:io';
 
 import '../../widgets/hotkey_hint.dart';
@@ -11,6 +12,8 @@ import '../../app_services.dart';
 import '../../core/desktop/desktop_integration.dart';
 import '../../core/desktop/quick_panel.dart';
 import '../../core/models/stock_candidate.dart';
+import '../../core/models/stock_quote.dart';
+import '../../core/util/formatters.dart';
 import '../../l10n/error_messages.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../l10n/supported_locales.dart';
@@ -135,6 +138,8 @@ class _AppShellState extends State<AppShell> {
 
   @override
   void dispose() {
+    _trayTimer?.cancel();
+    _services?.preferences.removeListener(_onPrefsForTray);
     _services?.alertMonitor.removeListener(_onAlertHits);
     _services?.alertMonitor.openRequest.removeListener(_onOpenRequest);
     _services?.reports.completed.removeListener(_onAnalysisDone);
@@ -245,7 +250,40 @@ class _AppShellState extends State<AppShell> {
         quit: l10n.trayQuit,
         tooltip: l10n.appTitle,
       );
+      // A kedvencek mai ára a menüben: induláskor, 5 percenként és ha a lista változik.
+      WidgetsBinding.instance.addPostFrameCallback((_) => _refreshTray());
+      _trayTimer = Timer.periodic(const Duration(minutes: 5), (_) => _refreshTray());
+      services.preferences.addListener(_onPrefsForTray);
     }
+  }
+
+  Timer? _trayTimer;
+  String _trayFavorites = '';
+
+  void _onPrefsForTray() {
+    final now = _services?.preferences.favorites.take(DesktopIntegration.trayMaxStocks).join(',') ?? '';
+    if (now != _trayFavorites) _refreshTray();
+  }
+
+  Future<void> _refreshTray() async {
+    final services = _services;
+    if (services == null || !mounted) return;
+    final l10n = AppLocalizations.of(context);
+    final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
+    final symbols = services.preferences.favorites.take(DesktopIntegration.trayMaxStocks).toList();
+    _trayFavorites = symbols.join(',');
+    final quotes = await Future.wait([
+      for (final s in symbols) services.marketData.quote(s).then<StockQuote?>((q) => q, onError: (Object _) => null),
+    ]);
+    if (!mounted) return;
+    await services.desktop.setupTray(
+      open: l10n.trayOpen,
+      quickSearch: l10n.trayQuickSearch,
+      quit: l10n.trayQuit,
+      tooltip: l10n.appTitle,
+      stocks: [for (final (i, s) in symbols.indexed) (symbol: s, label: trayStockLabel(s, quotes[i], fmt))],
+      onStock: services.alertMonitor.requestOpen,
+    );
   }
 
   void _openSymbol(StockCandidate candidate) {
@@ -585,4 +623,13 @@ class _DragArea extends StatelessWidget {
       child: child,
     );
   }
+}
+
+/// Egy kedvenc sora a menüsor- / tálcamenüben: ticker, ár és napi változás nyíllal.
+String trayStockLabel(String symbol, StockQuote? q, Fmt fmt) {
+  if (q == null) return symbol;
+  final c = q.changePercent;
+  if (c == null) return '$symbol   ${fmt.number(q.price)}';
+  final arrow = c > 0 ? '▲' : (c < 0 ? '▼' : '•');
+  return '$symbol   ${fmt.number(q.price)}   $arrow ${fmt.percent(c.abs())}';
 }

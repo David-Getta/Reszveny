@@ -2100,4 +2100,40 @@ class AppLocalizationsMy extends AppLocalizations {
   @override
   String get holdingsNone =>
       'ဤပုံတွင် ရှယ်ယာ ပိုင်ဆိုင်မှု မတွေ့ပါ။ သင့်ပွဲစား၏ ပိုင်ဆိုင်မှု စာမျက်နှာ၏ စခရင်ရှော့ကို စမ်းကြည့်ပါ။';
+
+  @override
+  String get week52Range => '52 ပတ် အပိုင်းအခြား';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '52 ပတ် အမြင့်ဆုံးထက် $percent နိမ့်';
+  }
+
+  @override
+  String get week52AtHigh => '52 ပတ် အမြင့်ဆုံးတွင်';
+
+  @override
+  String get alertKindTrailing => 'အမြင့်ဆုံးမှ ကျဆင်းလျှင်';
+
+  @override
+  String get alertTrailingPercent => 'အမြင့်ဆုံးမှ ကျဆင်းမှု (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'စျေးနှုန်း တက်သည်နှင့်အမျှ လိုက်ပါသည်- သတ်မှတ်ပြီးနောက် အမြင့်ဆုံးအဆင့်မှ စျေးနှုန်း ဤမျှ ကျဆင်းလျှင် သတိပေးပါမည်။';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'အမြင့်ဆုံးမှ $percent ကျဆင်းမှု';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'ယခုထိ အမြင့်ဆုံး: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol သည် အမြင့်ဆုံးမှ $percent ကျဆင်းသွားသည်';
+  }
 }

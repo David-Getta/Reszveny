@@ -2106,4 +2106,40 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get holdingsNone =>
       'No stock positions found on this picture. Try a screenshot of your broker\'s positions or holdings page.';
+
+  @override
+  String get week52Range => '52-week range';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent below the 52-week high';
+  }
+
+  @override
+  String get week52AtHigh => 'At the 52-week high';
+
+  @override
+  String get alertKindTrailing => 'Drop from peak';
+
+  @override
+  String get alertTrailingPercent => 'Drop from the peak (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Follows the price up: the alert goes off when the price falls this much from its highest point since you set it.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return '$percent drop from its peak';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'peak so far: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol fell $percent from its peak';
+  }
 }

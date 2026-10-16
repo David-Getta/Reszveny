@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Yupaykunata qhawariy manaraq yapachkaspa. Chaninqa sapa acciónpaq chawpi rantisqa chaniykim, manam kunan p'unchaw chaninchu.",
   "holdingsNoPrice": "Rikch'aypi mana chawpi rantisqa chanin kanchu",
   "holdingsAdd": "{count, plural, =1{1 kapuqta yapay} other{{count} kapuqta yapay}}",
-  "holdingsNone": "Kay rikch'aypi mana acciónkunata tarinchikchu. Brokerniykiq kapuqnin p'anqanmanta pantalla rikch'ayta llamk'achiy."
+  "holdingsNone": "Kay rikch'aypi mana acciónkunata tarinchikchu. Brokerniykiq kapuqnin p'anqanmanta pantalla rikch'ayta llamk'achiy.",
+  "week52Range": "52 semanapi chiqan",
+  "week52BelowHigh": "52 semanapi aswan hatunmanta {percent} uraypi",
+  "week52AtHigh": "52 semanapi aswan hatunpi",
+  "alertKindTrailing": "Aswan hanaqmanta uraykun",
+  "alertTrailingPercent": "Aswan hanaqmanta uraykuy (%)",
+  "alertTrailingHint": "Chaninta wichayninpi qatin: churasqaykimanta aswan hanaq chaninmanta kay chhikata uraykuptin willasunki.",
+  "alertDescTrailing": "Aswan hanaqmanta {percent} uraykuy",
+  "alertTrailingPeak": "kunankama aswan hanaq: {price}",
+  "alertHitTrailing": "{symbol} aswan hanaqninmanta {percent} uraykurqan"
 }

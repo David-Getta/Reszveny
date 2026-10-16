@@ -2147,4 +2147,40 @@ class AppLocalizationsLv extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Šajā attēlā netika atrastas akciju pozīcijas. Izmēģini ekrānuzņēmumu no sava brokera pozīciju vai aktīvu lapas.';
+
+  @override
+  String get week52Range => '52 nedēļu diapazons';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent zem 52 nedēļu maksimuma';
+  }
+
+  @override
+  String get week52AtHigh => 'Pie 52 nedēļu maksimuma';
+
+  @override
+  String get alertKindTrailing => 'Nokrītas no virsotnes';
+
+  @override
+  String get alertTrailingPercent => 'Kritums no virsotnes (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Seko cenai augšup: brīdina, kad cena nokrītas par tik no augstākā līmeņa kopš iestatīšanas.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return '$percent kritums no virsotnes';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'līdzšinējā virsotne: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol nokritās par $percent no virsotnes';
+  }
 }

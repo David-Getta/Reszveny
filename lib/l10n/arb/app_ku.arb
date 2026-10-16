@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Berî ku tu wan zêde bikî, hejmaran kontrol bike. Biha bihayê navînî yê kirîna te ji bo her pişkekê ye, ne bihayê îro.",
   "holdingsNoPrice": "Di wêneyê de bihayê navînî yê kirînê tune",
   "holdingsAdd": "{count, plural, =1{1 pozîsyonê zêde bike} other{{count} pozîsyonan zêde bike}}",
-  "holdingsNone": "Di vê wêneyê de tu pozîsyonên pişkan nehatin dîtin. Wêneya ekranê ya rûpela pozîsyonan an xwedîtiyan a brokerê xwe biceribîne."
+  "holdingsNone": "Di vê wêneyê de tu pozîsyonên pişkan nehatin dîtin. Wêneya ekranê ya rûpela pozîsyonan an xwedîtiyan a brokerê xwe biceribîne.",
+  "week52Range": "Navbera 52 hefteyan",
+  "week52BelowHigh": "{percent} li jêr bilindtirîna 52 hefteyan",
+  "week52AtHigh": "Li bilindtirîna 52 hefteyan",
+  "alertKindTrailing": "Ji lûtkeyê dadikeve",
+  "alertTrailingPercent": "Daketina ji lûtkeyê (%)",
+  "alertTrailingHint": "Bihayê ber bi jor ve dişopîne: dema ku biha ji asta xwe ya herî bilind ji dema ku te ew danî ewqas dakeve, hişyar dike.",
+  "alertDescTrailing": "{percent} daketin ji lûtkeyê",
+  "alertTrailingPeak": "lûtke heta niha: {price}",
+  "alertHitTrailing": "{symbol} ji lûtkeyê {percent} daket"
 }

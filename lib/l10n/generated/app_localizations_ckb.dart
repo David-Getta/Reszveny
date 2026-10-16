@@ -2108,4 +2108,40 @@ class AppLocalizationsCkb extends AppLocalizations {
   @override
   String get holdingsNone =>
       'هیچ پۆزیشنێکی پشک لەم وێنەیەدا نەدۆزرایەوە. وێنەی شاشەی پەڕەی پۆزیشنەکانی بڕۆکەرەکەت تاقی بکەرەوە.';
+
+  @override
+  String get week52Range => 'مەودای 52 هەفتە';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent لە خوار بەرزترینی 52 هەفتە';
+  }
+
+  @override
+  String get week52AtHigh => 'لە بەرزترینی 52 هەفتەدا';
+
+  @override
+  String get alertKindTrailing => 'دادەبەزێت لە لووتکە';
+
+  @override
+  String get alertTrailingPercent => 'دابەزین لە لووتکە (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'بەدوای نرخدا بەرەو سەرەوە دەڕوات: ئاگادارت دەکاتەوە کاتێک نرخ ئەوەندە لە بەرزترین ئاستی لە کاتی دانانییەوە دادەبەزێت.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'دابەزینی $percent لە لووتکە';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'لووتکە تا ئێستا: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol $percent لە لووتکە دابەزی';
+  }
 }

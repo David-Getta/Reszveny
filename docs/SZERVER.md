@@ -139,7 +139,9 @@ A szerver `ALERT_CHECK_MINUTES` percenként (alapból 10; 0 = ki) végignézi az
 szinkronizált, aktív árfolyam-riasztásait (Finnhub ár). Ha egy teljesül, megjelöli (a készülékek a
 következő szinkronnál átveszik), és e-mailt küld a felhasználó nyelvén (magyar vagy angol) – egy
 riasztásról csak egyszer. Az appban a Riasztások oldalon kapcsolható ki. Az e-mailhez a
-`RESEND_API_KEY` és a `MAIL_FROM` kell (nélkülük csak a naplóba kerül).
+`RESEND_API_KEY` és a `MAIL_FROM` kell (nélkülük csak a naplóba kerül). A követő stop riasztásnál
+(„Esés a csúcsról”) a szerver minden körben feljegyzi az új csúcsot a szinkron-adatban (e-mail nélkül),
+és akkor szól, ha az ár a csúcs alá esik a megadott százalékkal.
 
 ## Nem USA-részvények ára (pl. OTP)
 

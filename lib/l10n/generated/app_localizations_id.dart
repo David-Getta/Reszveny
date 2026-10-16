@@ -2103,4 +2103,40 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Tidak ada posisi saham di gambar ini. Coba tangkapan layar halaman posisi atau portofolio di aplikasi brokermu.';
+
+  @override
+  String get week52Range => 'Rentang 52 minggu';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent di bawah tertinggi 52 minggu';
+  }
+
+  @override
+  String get week52AtHigh => 'Di tertinggi 52 minggu';
+
+  @override
+  String get alertKindTrailing => 'Turun dari puncak';
+
+  @override
+  String get alertTrailingPercent => 'Penurunan dari puncak (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Mengikuti harga naik: peringatan berbunyi saat harga turun sebesar ini dari titik tertingginya sejak Anda memasangnya.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Turun $percent dari puncak';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'puncak sejauh ini: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol turun $percent dari puncaknya';
+  }
 }

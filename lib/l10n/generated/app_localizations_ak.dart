@@ -2107,4 +2107,40 @@ class AppLocalizationsAk extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Yɛanhu kyɛfa biara wɔ mfonini yi so. Sɔ screenshot a ɛfiri wo broker no nkyɛfa krataafa so hwɛ.';
+
+  @override
+  String get week52Range => 'Nnawɔtwe 52 bo ntam';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent wɔ Nnawɔtwe 52 bo kɛse ase';
+  }
+
+  @override
+  String get week52AtHigh => 'Ɛwɔ Nnawɔtwe 52 bo kɛse so';
+
+  @override
+  String get alertKindTrailing => 'Sɛ ɛtew fi soro pɛn';
+
+  @override
+  String get alertTrailingPercent => 'Ntew fi soro pɛn (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Ɛdi boɔ no akyi kɔ soro: ɛbɛbɔ wo amanneɛ sɛ boɔ no tew saa dodoɔ yi fi ne soro pɛn a ɛduruu firi bere a wosiee no.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return '$percent ntew fi soro pɛn';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'soro pɛn de besi seesei: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol atew $percent afi ne soro pɛn';
+  }
 }

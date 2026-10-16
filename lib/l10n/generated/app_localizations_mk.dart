@@ -2126,4 +2126,40 @@ class AppLocalizationsMk extends AppLocalizations {
   @override
   String get holdingsNone =>
       'На оваа слика не се пронајдени позиции во акции. Обидете се со слика од екранот на страницата со позиции или портфолио кај вашиот брокер.';
+
+  @override
+  String get week52Range => '52-неделен опсег';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent под 52-неделниот максимум';
+  }
+
+  @override
+  String get week52AtHigh => 'На 52-неделниот максимум';
+
+  @override
+  String get alertKindTrailing => 'Падне од врвот';
+
+  @override
+  String get alertTrailingPercent => 'Пад од врвот (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Ја следи цената нагоре: известува кога цената ќе падне за толку од највисокото ниво откако го поставивте.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Пад за $percent од врвот';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'досегашен врв: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol падна за $percent од врвот';
+  }
 }

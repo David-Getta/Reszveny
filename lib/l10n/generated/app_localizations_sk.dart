@@ -2164,4 +2164,40 @@ class AppLocalizationsSk extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Na tomto obrázku sa nenašli žiadne akciové pozície. Skúste snímku obrazovky stránky s pozíciami alebo portfóliom u vášho brokera.';
+
+  @override
+  String get week52Range => '52-týždňové rozpätie';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent pod 52-týždňovým maximom';
+  }
+
+  @override
+  String get week52AtHigh => 'Na 52-týždňovom maxime';
+
+  @override
+  String get alertKindTrailing => 'Klesne od vrcholu';
+
+  @override
+  String get alertTrailingPercent => 'Pokles od vrcholu (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Sleduje cenu smerom nahor: upozornenie sa spustí, keď cena klesne o toľko od najvyššej úrovne od jeho nastavenia.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Pokles o $percent od vrcholu';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'doterajší vrchol: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol klesla o $percent od vrcholu';
+  }
 }

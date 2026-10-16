@@ -2115,4 +2115,40 @@ class AppLocalizationsKg extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Bitini ya action me monana ve na kifwani yai. Meka foto ya ekrani ya lukaya ya bitini na nge na application ya courtier na nge.';
+
+  @override
+  String get week52Range => 'Ndilu ya lumingu 52';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent na nsi ya ntalu ya zulu ya lumingu 52';
+  }
+
+  @override
+  String get week52AtHigh => 'Na ntalu ya zulu ya lumingu 52';
+
+  @override
+  String get alertKindTrailing => 'Ikulumuka katuka na nsongi';
+
+  @override
+  String get alertTrailingPercent => 'Kukulumuka katuka na nsongi (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Yo ke landa ntalu na zulu: yo ke zabisa kana ntalu me kulumuka mpidina katuka na kitezo ya zulu kibeni banda ntangu nge tulaka yo.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return '$percent kukulumuka katuka na nsongi';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'nsongi tii ntangu yai: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol ikulumukidi $percent katuka na nsongi';
+  }
 }

@@ -2094,4 +2094,40 @@ class AppLocalizationsMos extends AppLocalizations {
   @override
   String get holdingsNone =>
       'D pa yã aksɔ̃ bũmb foto kãng pʋgẽ ye. Maan f broker wã aksɔ̃ seb-neng ekrã foto n ges.';
+
+  @override
+  String get week52Range => 'Yʋʋmd pʋgẽ ligdã sɛgb';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent sik n yi yʋʋmd pʋgẽ yɩɩd fãa';
+  }
+
+  @override
+  String get week52AtHigh => 'Yʋʋmd pʋgẽ yɩɩd fãa zĩigẽ';
+
+  @override
+  String get alertKindTrailing => 'Sigd n yi zʋʋgã';
+
+  @override
+  String get alertTrailingPercent => 'Sigr n yi zʋʋgã (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'A pʋgd ligdã yɩkre: a wilgdame ligdã sã n sig woto n yi a zʋʋg ning a sẽn paam hal fo sẽn ning-a wã.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Sigr $percent n yi zʋʋgã';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'zʋʋg hal masã: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol siga $percent n yi a zʋʋgã';
+  }
 }

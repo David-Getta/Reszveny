@@ -2102,4 +2102,40 @@ class AppLocalizationsFf extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Alaa aksiyoŋ tawaa e natal ngal. Etto natal yaynirde hello aksiyoŋ maa e burtiyeejo maa.';
+
+  @override
+  String get week52Range => 'Hakkunde yonte 52';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent les ɓurɗum toowde e yonte 52';
+  }
+
+  @override
+  String get week52AtHigh => 'E ɓurɗum toowde e yonte 52';
+
+  @override
+  String get alertKindTrailing => 'Jippagol gila toownde';
+
+  @override
+  String get alertTrailingPercent => 'Jippagol gila toownde (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Ɗum rewa coggu ngu e dow: ɗum anndinta so coggu ngu jippii ɗuum gila e toownde mum ɓurnde gila nde a teeltii ɗum.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return '$percent jippagol gila toownde';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'toownde haa jooni: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol jippii $percent gila e toownde mum';
+  }
 }

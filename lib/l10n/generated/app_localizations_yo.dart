@@ -2106,4 +2106,40 @@ class AppLocalizationsYo extends AppLocalizations {
   @override
   String get holdingsNone =>
       'A kò rí ìpín kankan lórí àwòrán yìí. Gbìyànjú àwòrán ojú-ìbojú ti ojú-ewé ìpín tàbí dúkìá rẹ lọ́dọ̀ alágbàtà rẹ.';
+
+  @override
+  String get week52Range => 'Ìwọ̀n ọ̀sẹ̀ 52';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent ní ìsàlẹ̀ ga jùlọ ní ọ̀sẹ̀ 52';
+  }
+
+  @override
+  String get week52AtHigh => 'Ní ga jùlọ ní ọ̀sẹ̀ 52';
+
+  @override
+  String get alertKindTrailing => 'Tí ó bá wálẹ̀ láti òkè';
+
+  @override
+  String get alertTrailingPercent => 'Ìwálẹ̀ láti òkè (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Ó ń tẹ̀lé iye owó bí ó ṣe ń gòkè: yóò sọ fún ọ nígbà tí iye owó bá wálẹ̀ tó báyìí láti ibi tó ga jùlọ láti ìgbà tí o ti ṣètò rẹ̀.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Ìwálẹ̀ $percent láti òkè';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'ibi tó ga jùlọ títí di ìsinsìnyí: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol ti wálẹ̀ $percent láti òkè';
+  }
 }

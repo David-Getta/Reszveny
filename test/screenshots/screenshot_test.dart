@@ -846,6 +846,9 @@ void main() {
     await tester.tap(find.byTooltip('Árfolyam-riasztás beállítása'));
     await tester.pumpAndSettle();
     await _shot(tester, 'alert_dialog_phone_hu');
+    await tester.tap(find.text('Esés a csúcsról'));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'alert_trailing_phone_hu');
   });
 
   testWidgets('paywall', (tester) async {

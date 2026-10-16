@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Ehechajey papapy embojuaju mboyve. Tepy haʼe tepy mbytegua rejoguávakuri peteĩteĩ acción, ndahaʼéi ko árape tepy.",
   "holdingsNoPrice": "Ndaipóri tepy mbytegua taʼãngápe",
   "holdingsAdd": "{count, plural, =1{Embojuaju 1 ereguerekóva} other{Embojuaju {count} ereguerekóva}}",
-  "holdingsNone": "Ndojejuhúi acción ko taʼãngápe. Eñehaʼã peteĩ pantalla taʼãnga nde broker kuatiarogue ereguerekóvagui."
+  "holdingsNone": "Ndojejuhúi acción ko taʼãngápe. Eñehaʼã peteĩ pantalla taʼãnga nde broker kuatiarogue ereguerekóvagui.",
+  "week52Range": "52 arapokõindýpe pa'ũ",
+  "week52BelowHigh": "{percent} yvatevéva 52 arapokõindýpe guýpe",
+  "week52AtHigh": "Oĩ yvatevéva 52 arapokõindýpe-pe",
+  "alertKindTrailing": "Oguejy yvateguágui",
+  "alertTrailingPercent": "Guejy yvateguágui (%)",
+  "alertTrailingHint": "Omoirũ tepy ojupívo: oikuaauka tepy oguejýramo kóichagua ijyvatevéva guive, remoĩ guive.",
+  "alertDescTrailing": "{percent} guejy yvateguágui",
+  "alertTrailingPeak": "yvatevéva koʼãga peve: {price}",
+  "alertHitTrailing": "{symbol} oguejy {percent} yvateguágui"
 }

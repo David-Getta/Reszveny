@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Tjek tallene, før du tilføjer dem. Prisen er din gennemsnitlige købskurs pr. aktie, ikke dagens kurs.",
   "holdingsNoPrice": "Ingen gennemsnitlig købskurs på billedet",
   "holdingsAdd": "{count, plural, =1{Tilføj 1 beholdning} other{Tilføj {count} beholdninger}}",
-  "holdingsNone": "Der blev ikke fundet nogen aktiebeholdninger på dette billede. Prøv et skærmbillede af din mæglers side med beholdninger eller positioner."
+  "holdingsNone": "Der blev ikke fundet nogen aktiebeholdninger på dette billede. Prøv et skærmbillede af din mæglers side med beholdninger eller positioner.",
+  "week52Range": "52-ugers interval",
+  "week52BelowHigh": "{percent} under 52-ugers højeste",
+  "week52AtHigh": "Ved 52-ugers højeste",
+  "alertKindTrailing": "Falder fra top",
+  "alertTrailingPercent": "Fald fra toppen (%)",
+  "alertTrailingHint": "Følger kursen op: alarmen går, når kursen falder så meget fra sit højeste niveau, siden du oprettede den.",
+  "alertDescTrailing": "{percent} fald fra toppen",
+  "alertTrailingPeak": "top indtil nu: {price}",
+  "alertHitTrailing": "{symbol} faldt {percent} fra toppen"
 }

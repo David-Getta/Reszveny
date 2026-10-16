@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Hlola izinombolo ngaphambi kokuthi uzengeze. Intengo yintengo yakho emaphakathi yokuthenga isheya ngalinye, hhayi intengo yanamuhla.",
   "holdingsNoPrice": "Ayikho intengo emaphakathi yokuthenga esithombeni",
   "holdingsAdd": "{count, plural, =1{Engeza isheya elilodwa} other{Engeza amasheya angu-{count}}}",
-  "holdingsNone": "Awekho amasheya atholakele kulesi sithombe. Zama isithombe-skrini sekhasi lamasheya noma lezimpahla zakho kumthengisi wakho wamasheya."
+  "holdingsNone": "Awekho amasheya atholakele kulesi sithombe. Zama isithombe-skrini sekhasi lamasheya noma lezimpahla zakho kumthengisi wakho wamasheya.",
+  "week52Range": "Ibanga lamasonto angu-52",
+  "week52BelowHigh": "{percent} ngaphansi kokuphezulu kwamasonto angu-52",
+  "week52AtHigh": "Kokuphezulu kwamasonto angu-52",
+  "alertKindTrailing": "Yehla isuka esiqongweni",
+  "alertTrailingPercent": "Ukwehla kusuka esiqongweni (%)",
+  "alertTrailingHint": "Ilandela intengo inyuka: ikwazisa uma intengo yehla ngaleli zinga isuka ezingeni eliphezulu kakhulu selokhu uyisethile.",
+  "alertDescTrailing": "Ukwehla ngo-{percent} kusuka esiqongweni",
+  "alertTrailingPeak": "isiqongo kuze kube manje: {price}",
+  "alertHitTrailing": "{symbol} yehle ngo-{percent} isuka esiqongweni"
 }

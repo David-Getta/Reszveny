@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Yang'anani manambala musanawonjezere. Mtengo ndi mtengo wanu wapakati wogulira pa sheya iliyonse, osati mtengo wa lero.",
   "holdingsNoPrice": "Palibe mtengo wapakati wogulira pa chithunzi",
   "holdingsAdd": "{count, plural, =1{Wonjezerani sheya 1} other{Wonjezerani masheya {count}}}",
-  "holdingsNone": "Sitinapeze masheya pa chithunzi ichi. Yesani chithunzi cha sikirini cha tsamba la masheya a broker wanu."
+  "holdingsNone": "Sitinapeze masheya pa chithunzi ichi. Yesani chithunzi cha sikirini cha tsamba la masheya a broker wanu.",
+  "week52Range": "Mlingo wa masabata 52",
+  "week52BelowHigh": "{percent} pansi pa pamwamba pa masabata 52",
+  "week52AtHigh": "Pamwamba pa masabata 52",
+  "alertKindTrailing": "Ukatsika kuchokera pamwamba",
+  "alertTrailingPercent": "Kutsika kuchokera pamwamba (%)",
+  "alertTrailingHint": "Imatsatira mtengo ukamakwera: imakudziwitsani mtengo ukatsika chonchi kuchokera pamlingo wapamwamba kwambiri kuyambira pamene mudaiyika.",
+  "alertDescTrailing": "Kutsika kwa {percent} kuchokera pamwamba",
+  "alertTrailingPeak": "pamwamba mpaka pano: {price}",
+  "alertHitTrailing": "{symbol} yatsika {percent} kuchokera pamwamba"
 }

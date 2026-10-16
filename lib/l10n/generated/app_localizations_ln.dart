@@ -2118,4 +2118,40 @@ class AppLocalizationsLn extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Biteni ya ba-action emonani na elilingi oyo te. Meka foto ya ekran ya lokasa ya biteni na yo na application ya courtier na yo.';
+
+  @override
+  String get week52Range => 'Bonene ya pɔsɔ 52';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent na nse ya likolo ya pɔsɔ 52';
+  }
+
+  @override
+  String get week52AtHigh => 'Na likolo ya pɔsɔ 52';
+
+  @override
+  String get alertKindTrailing => 'Soki ekiti uta na nsɔngɛ';
+
+  @override
+  String get alertTrailingPercent => 'Bokiti uta na nsɔngɛ (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Elandaka ntalo ntango ezali komata: eyebisaka soki ntalo ekiti boye uta na esika na yango ya likolo koleka banda otiaki yango.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Bokiti ya $percent uta na nsɔngɛ';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'nsɔngɛ tii sikawa: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol ekiti $percent uta na nsɔngɛ';
+  }
 }

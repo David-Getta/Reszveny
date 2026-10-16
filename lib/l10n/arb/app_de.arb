@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Prüfe die Zahlen, bevor du sie hinzufügst. Der Preis ist dein durchschnittlicher Kaufpreis pro Aktie, nicht der heutige Kurs.",
   "holdingsNoPrice": "Kein durchschnittlicher Kaufpreis auf dem Bild",
   "holdingsAdd": "{count, plural, =1{1 Position hinzufügen} other{{count} Positionen hinzufügen}}",
-  "holdingsNone": "Auf diesem Bild wurden keine Aktienpositionen gefunden. Versuch es mit einem Screenshot der Positions- oder Depotseite deines Brokers."
+  "holdingsNone": "Auf diesem Bild wurden keine Aktienpositionen gefunden. Versuch es mit einem Screenshot der Positions- oder Depotseite deines Brokers.",
+  "week52Range": "52-Wochen-Spanne",
+  "week52BelowHigh": "{percent} unter dem 52-Wochen-Hoch",
+  "week52AtHigh": "Auf dem 52-Wochen-Hoch",
+  "alertKindTrailing": "Fällt vom Hoch",
+  "alertTrailingPercent": "Rückgang vom Hoch (%)",
+  "alertTrailingHint": "Folgt dem Kurs nach oben: Der Alarm geht los, wenn der Kurs um so viel unter seinen Höchststand seit dem Einrichten fällt.",
+  "alertDescTrailing": "{percent} Rückgang vom Hoch",
+  "alertTrailingPeak": "bisheriges Hoch: {price}",
+  "alertHitTrailing": "{symbol} ist um {percent} vom Hoch gefallen"
 }

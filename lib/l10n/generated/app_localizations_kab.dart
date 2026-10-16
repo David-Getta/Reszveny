@@ -2106,4 +2106,40 @@ class AppLocalizationsKab extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Ulac imukan n yisehmiyen i yettwafen deg tugna-a. Ɛreḍ tuṭṭfa n wegdil n usebter n yimukan deg usnas n umsenzi-ik.';
+
+  @override
+  String get week52Range => 'Tagrumma n 52 n yimalasen';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent ddaw afellay n 52 n yimalasen';
+  }
+
+  @override
+  String get week52AtHigh => 'Ɣef afellay n 52 n yimalasen';
+
+  @override
+  String get alertKindTrailing => 'Yettɣelli seg tqacuct';
+
+  @override
+  String get alertTrailingPercent => 'Aɣelluy seg tqacuct (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Yettḍafar ssuma ɣer usawen: ad k-yelɣu ma yeɣli ssuma s waya seg tqacuct-is tafellayt seg wasmi i t-tesbeddeḍ.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Aɣelluy n $percent seg tqacuct';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'taqacuct alamma tura: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol yeɣli s $percent seg tqacuct';
+  }
 }

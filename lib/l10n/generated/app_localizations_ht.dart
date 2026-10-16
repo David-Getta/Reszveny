@@ -2106,4 +2106,40 @@ class AppLocalizationsHt extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Nou pa jwenn okenn pozisyon aksyon sou imaj sa a. Eseye yon kapti ekran paj pozisyon koutye ou a.';
+
+  @override
+  String get week52Range => 'Ranje sou 52 semèn';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent anba pi wo sou 52 semèn';
+  }
+
+  @override
+  String get week52AtHigh => 'Nan pi wo sou 52 semèn';
+
+  @override
+  String get alertKindTrailing => 'Desann depi pik la';
+
+  @override
+  String get alertTrailingPercent => 'Bès depi pik la (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Li swiv pri a lè l monte: alèt la sonnen lè pri a desann konsa depi pi wo nivo li te rive depi ou te mete l.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Bès $percent depi pik la';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'pik jiskaprezan: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol desann $percent depi pik li';
+  }
 }

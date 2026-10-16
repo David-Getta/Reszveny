@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Provjerite brojeve prije dodavanja. Cijena je vaša prosječna kupovna cijena po dionici, a ne današnja cijena.",
   "holdingsNoPrice": "Na slici nema prosječne kupovne cijene",
   "holdingsAdd": "{count, plural, one{Dodaj {count} poziciju} few{Dodaj {count} pozicije} other{Dodaj {count} pozicija}}",
-  "holdingsNone": "Na ovoj slici nisu pronađene pozicije dionica. Pokušajte sa snimkom ekrana stranice s pozicijama ili imovinom kod vašeg brokera."
+  "holdingsNone": "Na ovoj slici nisu pronađene pozicije dionica. Pokušajte sa snimkom ekrana stranice s pozicijama ili imovinom kod vašeg brokera.",
+  "week52Range": "52-sedmični raspon",
+  "week52BelowHigh": "{percent} ispod 52-sedmičnog maksimuma",
+  "week52AtHigh": "Na 52-sedmičnom maksimumu",
+  "alertKindTrailing": "Padne od vrha",
+  "alertTrailingPercent": "Pad od vrha (%)",
+  "alertTrailingHint": "Prati cijenu naviše: upozorenje se oglasi kada cijena padne za ovoliko od najvišeg nivoa otkad ste ga postavili.",
+  "alertDescTrailing": "Pad od {percent} od vrha",
+  "alertTrailingPeak": "dosadašnji vrh: {price}",
+  "alertHitTrailing": "{symbol} je pala za {percent} od vrha"
 }

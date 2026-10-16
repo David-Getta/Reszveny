@@ -2142,4 +2142,40 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Nu am găsit poziții pe acțiuni în această imagine. Încearcă o captură de ecran a paginii cu pozițiile sau portofoliul de la brokerul tău.';
+
+  @override
+  String get week52Range => 'Interval de 52 de săptămâni';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent sub maximul de 52 de săptămâni';
+  }
+
+  @override
+  String get week52AtHigh => 'La maximul de 52 de săptămâni';
+
+  @override
+  String get alertKindTrailing => 'Scade de la vârf';
+
+  @override
+  String get alertTrailingPercent => 'Scădere de la vârf (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Urmărește prețul în sus: alerta se declanșează când prețul scade atât de la cel mai înalt nivel atins de când ai setat-o.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Scădere de $percent de la vârf';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'vârf de până acum: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol a scăzut cu $percent de la vârf';
+  }
 }

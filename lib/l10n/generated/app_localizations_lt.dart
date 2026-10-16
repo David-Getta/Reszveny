@@ -2165,4 +2165,40 @@ class AppLocalizationsLt extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Šiame vaizde akcijų pozicijų nerasta. Pabandyk savo brokerio pozicijų ar turto puslapio ekrano kopiją.';
+
+  @override
+  String get week52Range => '52 savaičių intervalas';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent žemiau 52 savaičių maksimumo';
+  }
+
+  @override
+  String get week52AtHigh => 'Ties 52 savaičių maksimumu';
+
+  @override
+  String get alertKindTrailing => 'Nukris nuo piko';
+
+  @override
+  String get alertTrailingPercent => 'Kritimas nuo piko (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Seka kainą aukštyn: įspėja, kai kaina nukrinta tiek nuo aukščiausio lygio nuo nustatymo.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return '$percent kritimas nuo piko';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'pikas iki šiol: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol nukrito $percent nuo piko';
+  }
 }

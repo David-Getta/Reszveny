@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Verifye chif yo anvan ou ajoute yo. Pri a se pri acha mwayen ou pou chak aksyon, se pa pri jodi a.",
   "holdingsNoPrice": "Pa gen pri acha mwayen sou imaj la",
   "holdingsAdd": "{count, plural, =1{Ajoute 1 pozisyon} other{Ajoute {count} pozisyon}}",
-  "holdingsNone": "Nou pa jwenn okenn pozisyon aksyon sou imaj sa a. Eseye yon kapti ekran paj pozisyon koutye ou a."
+  "holdingsNone": "Nou pa jwenn okenn pozisyon aksyon sou imaj sa a. Eseye yon kapti ekran paj pozisyon koutye ou a.",
+  "week52Range": "Ranje sou 52 semèn",
+  "week52BelowHigh": "{percent} anba pi wo sou 52 semèn",
+  "week52AtHigh": "Nan pi wo sou 52 semèn",
+  "alertKindTrailing": "Desann depi pik la",
+  "alertTrailingPercent": "Bès depi pik la (%)",
+  "alertTrailingHint": "Li swiv pri a lè l monte: alèt la sonnen lè pri a desann konsa depi pi wo nivo li te rive depi ou te mete l.",
+  "alertDescTrailing": "Bès {percent} depi pik la",
+  "alertTrailingPeak": "pik jiskaprezan: {price}",
+  "alertHitTrailing": "{symbol} desann {percent} depi pik li"
 }

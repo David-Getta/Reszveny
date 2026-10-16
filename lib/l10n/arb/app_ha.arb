@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Duba lambobin kafin ka ƙara su. Farashin shi ne matsakaicin farashin sayenka na kowane hannun jari, ba farashin yau ba.",
   "holdingsNoPrice": "Babu matsakaicin farashin saye a hoton",
   "holdingsAdd": "{count, plural, =1{Ƙara hannun jari 1} other{Ƙara hannayen jari {count}}}",
-  "holdingsNone": "Ba a sami hannayen jari a wannan hoton ba. Gwada hoton allo na shafin hannayen jarinka a manhajar dillalinka."
+  "holdingsNone": "Ba a sami hannayen jari a wannan hoton ba. Gwada hoton allo na shafin hannayen jarinka a manhajar dillalinka.",
+  "week52Range": "Kewayon makonni 52",
+  "week52BelowHigh": "{percent} ƙasa da mafi girma a makonni 52",
+  "week52AtHigh": "A mafi girma a makonni 52",
+  "alertKindTrailing": "Idan ya faɗo daga ƙoli",
+  "alertTrailingPercent": "Faɗuwa daga ƙoli (%)",
+  "alertTrailingHint": "Yana bin farashi sama: zai sanar idan farashi ya faɗi wannan adadin daga mafi girman matakinsa tun da ka saita shi.",
+  "alertDescTrailing": "Faɗuwar {percent} daga ƙoli",
+  "alertTrailingPeak": "ƙoli zuwa yanzu: {price}",
+  "alertHitTrailing": "{symbol} ya faɗi {percent} daga ƙolinsa"
 }

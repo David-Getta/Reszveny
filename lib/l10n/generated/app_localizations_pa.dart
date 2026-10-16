@@ -2103,4 +2103,40 @@ class AppLocalizationsPa extends AppLocalizations {
   @override
   String get holdingsNone =>
       'ਇਸ ਚਿੱਤਰ ਵਿੱਚ ਕੋਈ ਸ਼ੇਅਰ ਪੁਜ਼ੀਸ਼ਨ ਨਹੀਂ ਮਿਲੀ। ਆਪਣੇ ਬ੍ਰੋਕਰ ਦੇ ਪੁਜ਼ੀਸ਼ਨ ਜਾਂ ਹੋਲਡਿੰਗਜ਼ ਪੰਨੇ ਦਾ ਸਕ੍ਰੀਨਸ਼ਾਟ ਅਜ਼ਮਾਓ।';
+
+  @override
+  String get week52Range => '52-ਹਫ਼ਤੇ ਦੀ ਰੇਂਜ';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '52-ਹਫ਼ਤੇ ਦੇ ਉੱਚਤਮ ਤੋਂ $percent ਹੇਠਾਂ';
+  }
+
+  @override
+  String get week52AtHigh => '52-ਹਫ਼ਤੇ ਦੇ ਉੱਚਤਮ \'ਤੇ';
+
+  @override
+  String get alertKindTrailing => 'ਸਿਖਰ ਤੋਂ ਡਿੱਗੇ';
+
+  @override
+  String get alertTrailingPercent => 'ਸਿਖਰ ਤੋਂ ਗਿਰਾਵਟ (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'ਕੀਮਤ ਦੇ ਨਾਲ ਉੱਪਰ ਚੱਲਦਾ ਹੈ: ਸੈੱਟ ਕਰਨ ਤੋਂ ਬਾਅਦ ਦੇ ਸਭ ਤੋਂ ਉੱਚੇ ਪੱਧਰ ਤੋਂ ਕੀਮਤ ਇੰਨੀ ਡਿੱਗਣ \'ਤੇ ਸੂਚਨਾ ਦਿੰਦਾ ਹੈ।';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'ਸਿਖਰ ਤੋਂ $percent ਗਿਰਾਵਟ';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'ਹੁਣ ਤੱਕ ਦਾ ਸਿਖਰ: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol ਸਿਖਰ ਤੋਂ $percent ਡਿੱਗਿਆ';
+  }
 }

@@ -2116,4 +2116,40 @@ class AppLocalizationsRw extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Nta migabane yabonetse kuri iyi foto. Gerageza ifoto ya ekara y\'urupapuro rw\'imigabane yawe kuri burokeri wawe.';
+
+  @override
+  String get week52Range => 'Igipimo cyo mu byumweru 52';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent munsi y\'hejuru mu byumweru 52';
+  }
+
+  @override
+  String get week52AtHigh => 'Kuri hejuru mu byumweru 52';
+
+  @override
+  String get alertKindTrailing => 'Nikimanuka kuva ku isonga';
+
+  @override
+  String get alertTrailingPercent => 'Kumanuka kuva ku isonga (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Ikurikira igiciro kizamuka: ikumenyesha igihe igiciro kimanutse kungana gutya kuva ku rwego rwo hejuru cyane kuva wayishyiraho.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Kumanuka kwa $percent kuva ku isonga';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'isonga kugeza ubu: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol yamanutseho $percent kuva ku isonga';
+  }
 }

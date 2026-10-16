@@ -5,12 +5,14 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../core/models/stock_quote.dart';
 
-/// Mikor szóljon a riasztás: az ár egy szint fölé megy, alá esik, vagy a napi
-/// változás (bármelyik irányba) eléri a megadott százalékot.
+/// Mikor szóljon a riasztás: az ár egy szint fölé megy, alá esik, a napi
+/// változás (bármelyik irányba) eléri a megadott százalékot, vagy (követő stop)
+/// az ár ennyi százalékot esik a riasztás óta elért csúcsához képest.
 enum AlertKind {
   above,
   below,
-  move;
+  move,
+  trailing;
 
   static AlertKind? parse(Object? s) => AlertKind.values.asNameMap()[s];
 }
@@ -27,6 +29,7 @@ class PriceAlert {
     required this.createdAt,
     this.triggeredAt,
     this.triggeredPrice,
+    this.peak,
   });
 
   final String id;
@@ -40,6 +43,12 @@ class PriceAlert {
   final DateTime? triggeredAt;
   final double? triggeredPrice;
 
+  /// Követő stopnál a riasztás óta látott legmagasabb ár.
+  final double? peak;
+
+  /// Követő stopnál az a szint, ahol szól (a csúcs alatt [value] százalékkal).
+  double? get trailingLevel => kind == AlertKind.trailing && peak != null ? peak! * (1 - value / 100) : null;
+
   bool get isActive => triggeredAt == null;
 
   /// Teljesül-e a feltétel az adott árfolyamnál.
@@ -47,6 +56,7 @@ class PriceAlert {
     AlertKind.above => q.price >= value,
     AlertKind.below => q.price <= value,
     AlertKind.move => (q.changePercent ?? 0).abs() >= value,
+    AlertKind.trailing => trailingLevel != null && q.price <= trailingLevel!,
   };
 
   /// Már a létrehozáskor teljesülne-e (pl. „240 fölé” a 250-es árnál);
@@ -54,7 +64,7 @@ class PriceAlert {
   static bool alreadyMet(AlertKind kind, double value, double? currentPrice) => switch (kind) {
     AlertKind.above => currentPrice != null && currentPrice >= value,
     AlertKind.below => currentPrice != null && currentPrice <= value,
-    AlertKind.move => false,
+    AlertKind.move || AlertKind.trailing => false,
   };
 
   PriceAlert triggered(DateTime at, double price) => PriceAlert(
@@ -66,10 +76,24 @@ class PriceAlert {
     createdAt: createdAt,
     triggeredAt: at,
     triggeredPrice: price,
+    peak: peak,
   );
 
+  /// Újraélesítéskor a követő stop csúcsa a következő árnál indul újra.
   PriceAlert rearmed() =>
       PriceAlert(id: id, symbol: symbol, kind: kind, value: value, currency: currency, createdAt: createdAt);
+
+  PriceAlert withPeak(double price) => PriceAlert(
+    id: id,
+    symbol: symbol,
+    kind: kind,
+    value: value,
+    currency: currency,
+    createdAt: createdAt,
+    triggeredAt: triggeredAt,
+    triggeredPrice: triggeredPrice,
+    peak: price,
+  );
 
   Map<String, dynamic> toJson() => {
     'id': id,
@@ -80,6 +104,7 @@ class PriceAlert {
     'created_at': createdAt.toUtc().toIso8601String(),
     if (triggeredAt != null) 'triggered_at': triggeredAt!.toUtc().toIso8601String(),
     'triggered_price': ?triggeredPrice,
+    'peak': ?peak,
   };
 
   static PriceAlert? fromJson(Map<String, dynamic> j) {
@@ -88,6 +113,7 @@ class PriceAlert {
     final value = j['value'];
     if (symbol.isEmpty || kind == null || value is! num || value <= 0) return null;
     final tp = j['triggered_price'];
+    final peak = j['peak'];
     return PriceAlert(
       id: j['id'] as String? ?? '${symbol}_${DateTime.now().microsecondsSinceEpoch}',
       symbol: symbol,
@@ -97,6 +123,7 @@ class PriceAlert {
       createdAt: DateTime.tryParse(j['created_at'] as String? ?? '') ?? DateTime.now(),
       triggeredAt: DateTime.tryParse(j['triggered_at'] as String? ?? ''),
       triggeredPrice: tp is num ? tp.toDouble() : null,
+      peak: peak is num && peak > 0 ? peak.toDouble() : null,
     );
   }
 }
@@ -144,6 +171,7 @@ class AlertStore extends ChangeNotifier {
     required AlertKind kind,
     required double value,
     String? currency,
+    double? peak,
   }) async {
     final s = symbol.trim().toUpperCase();
     final alert = PriceAlert(
@@ -153,6 +181,7 @@ class AlertStore extends ChangeNotifier {
       value: value,
       currency: currency,
       createdAt: DateTime.now(),
+      peak: kind == AlertKind.trailing ? peak : null,
     );
     _alerts.add(alert);
     await _changed();
@@ -181,6 +210,10 @@ class AlertStore extends ChangeNotifier {
   Future<void> markTriggered(String id, DateTime at, double price) => _replace(id, (a) => a.triggered(at, price));
 
   Future<void> rearm(String id) => _replace(id, (a) => a.rearmed());
+
+  /// Követő stop: új csúcs feljegyzése (csak ha magasabb a mostaninál).
+  Future<void> raisePeak(String id, double price) =>
+      _replace(id, (a) => a.peak != null && a.peak! >= price ? a : a.withPeak(price));
 
   Future<void> _replace(String id, PriceAlert Function(PriceAlert) f) async {
     final i = _alerts.indexWhere((a) => a.id == id);

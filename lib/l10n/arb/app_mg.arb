@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Hamarino ny isa alohan'ny hampidiranao azy. Ny vidiny dia ny salan'ny vidin'ny fividiananao isaky ny anjara, fa tsy ny vidiny androany.",
   "holdingsNoPrice": "Tsy misy salan'ny vidin'ny fividianana ao amin'ny sary",
   "holdingsAdd": "{count, plural, =1{Ampio fananana 1} other{Ampio fananana {count}}}",
-  "holdingsNone": "Tsy nisy fananana anjara hita tamin'ity sary ity. Andramo ny sary efijery amin'ny pejin'ny fanananao ao amin'ny broker-nao."
+  "holdingsNone": "Tsy nisy fananana anjara hita tamin'ity sary ity. Andramo ny sary efijery amin'ny pejin'ny fanananao ao amin'ny broker-nao.",
+  "week52Range": "Elanelana tao anatin'ny 52 herinandro",
+  "week52BelowHigh": "{percent} ambanin'ny avo indrindra tao anatin'ny 52 herinandro",
+  "week52AtHigh": "Amin'ny avo indrindra tao anatin'ny 52 herinandro",
+  "alertKindTrailing": "Midina avy amin'ny tampony",
+  "alertTrailingPercent": "Fidinana avy amin'ny tampony (%)",
+  "alertTrailingHint": "Manaraka ny vidiny miakatra: maneno raha midina toy izao ny vidiny avy amin'ny ambony indrindra hatramin'ny nametrahanao azy.",
+  "alertDescTrailing": "Fidinana {percent} avy amin'ny tampony",
+  "alertTrailingPeak": "tampony hatreto: {price}",
+  "alertHitTrailing": "Nidina {percent} avy amin'ny tampony ny {symbol}"
 }

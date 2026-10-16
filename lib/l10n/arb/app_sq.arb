@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Kontrollo numrat para se t'i shtosh. Çmimi është çmimi mesatar i blerjes për aksion, jo çmimi i sotëm.",
   "holdingsNoPrice": "Nuk ka çmim mesatar blerjeje në imazh",
   "holdingsAdd": "{count, plural, =1{Shto 1 pozicion} other{Shto {count} pozicione}}",
-  "holdingsNone": "Nuk u gjet asnjë pozicion aksionesh në këtë imazh. Provo një pamje ekrani të faqes së pozicioneve ose të zotërimeve te brokeri yt."
+  "holdingsNone": "Nuk u gjet asnjë pozicion aksionesh në këtë imazh. Provo një pamje ekrani të faqes së pozicioneve ose të zotërimeve te brokeri yt.",
+  "week52Range": "Diapazoni 52-javor",
+  "week52BelowHigh": "{percent} nën maksimumin 52-javor",
+  "week52AtHigh": "Në maksimumin 52-javor",
+  "alertKindTrailing": "Bie nga maja",
+  "alertTrailingPercent": "Rënia nga maja (%)",
+  "alertTrailingHint": "Ndjek çmimin lart: njoftimi aktivizohet kur çmimi bie kaq nga niveli më i lartë që kur e vendose.",
+  "alertDescTrailing": "Rënie {percent} nga maja",
+  "alertTrailingPeak": "maja deri tani: {price}",
+  "alertHitTrailing": "{symbol} ra {percent} nga maja"
 }

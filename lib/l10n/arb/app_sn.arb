@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Tarisa nhamba usati wadzipinza. Mutengo ndiwo mutengo wako wepakati wawakatenga nawo sheya imwe neimwe, kwete mutengo wanhasi.",
   "holdingsNoPrice": "Hapana mutengo wepakati wekutenga pamufananidzo",
   "holdingsAdd": "{count, plural, =1{Wedzera sheya 1} other{Wedzera masheya {count}}}",
-  "holdingsNone": "Hapana masheya awanikwa pamufananidzo uyu. Edza mufananidzo wesikirini wepeji remasheya kubroker yako."
+  "holdingsNone": "Hapana masheya awanikwa pamufananidzo uyu. Edza mufananidzo wesikirini wepeji remasheya kubroker yako.",
+  "week52Range": "Mutsetse wemavhiki 52",
+  "week52BelowHigh": "{percent} pasi pepakakwirira pamavhiki 52",
+  "week52AtHigh": "Pakakwirira pamavhiki 52",
+  "alertKindTrailing": "Ukadzika kubva pamusoro-soro",
+  "alertTrailingPercent": "Kudzika kubva pamusoro-soro (%)",
+  "alertTrailingHint": "Inotevera mutengo uchikwira: inokuzivisa kana mutengo wadzika zvakadai kubva padanho repamusoro-soro kubva pawakaiseta.",
+  "alertDescTrailing": "Kudzika ne-{percent} kubva pamusoro-soro",
+  "alertTrailingPeak": "pamusoro-soro kusvika zvino: {price}",
+  "alertHitTrailing": "{symbol} yadzika ne-{percent} kubva pamusoro-soro"
 }

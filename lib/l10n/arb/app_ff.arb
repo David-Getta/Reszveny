@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Ƴeewto limooje ɗee hade maa ɓeydude ɗe. Coggu ngu ko coggu hakkunde ngu soodirɗaa kala aksiyoŋ, wanaa coggu hannde.",
   "holdingsNoPrice": "Alaa coggu soodaare hakkunde e natal ngal",
   "holdingsAdd": "{count, plural, =1{Ɓeydu aksiyoŋ 1} other{Ɓeydu aksiyoŋ {count}}}",
-  "holdingsNone": "Alaa aksiyoŋ tawaa e natal ngal. Etto natal yaynirde hello aksiyoŋ maa e burtiyeejo maa."
+  "holdingsNone": "Alaa aksiyoŋ tawaa e natal ngal. Etto natal yaynirde hello aksiyoŋ maa e burtiyeejo maa.",
+  "week52Range": "Hakkunde yonte 52",
+  "week52BelowHigh": "{percent} les ɓurɗum toowde e yonte 52",
+  "week52AtHigh": "E ɓurɗum toowde e yonte 52",
+  "alertKindTrailing": "Jippagol gila toownde",
+  "alertTrailingPercent": "Jippagol gila toownde (%)",
+  "alertTrailingHint": "Ɗum rewa coggu ngu e dow: ɗum anndinta so coggu ngu jippii ɗuum gila e toownde mum ɓurnde gila nde a teeltii ɗum.",
+  "alertDescTrailing": "{percent} jippagol gila toownde",
+  "alertTrailingPeak": "toownde haa jooni: {price}",
+  "alertHitTrailing": "{symbol} jippii {percent} gila e toownde mum"
 }

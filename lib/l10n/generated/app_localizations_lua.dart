@@ -2114,4 +2114,40 @@ class AppLocalizationsLua extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Katuena bapete bitupa bia actions mu tshimfuanyi etshi to. Teta foto wa ekran wa dibeji dia bitupa biebe mu application wa courtier webe.';
+
+  @override
+  String get week52Range => 'Bunene bua mingu 52';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent kuinshi kua mushinga wa kuulu wa mingu 52';
+  }
+
+  @override
+  String get week52AtHigh => 'Ku mushinga wa kuulu wa mingu 52';
+
+  @override
+  String get alertKindTrailing => 'Udi upueka ku tshisongo';
+
+  @override
+  String get alertTrailingPercent => 'Dipueka ku tshisongo (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Udi ulonda mushinga ku mutu: udi ukumanyisha padi mushinga upueka bia nunku ku tshisongo tshiawu kumbukila pawakatshiteka.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Dipueka dia $percent ku tshisongo';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'tshisongo too ne mpindieu: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol mupueke $percent ku tshisongo';
+  }
 }

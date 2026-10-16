@@ -566,5 +566,14 @@
   "holdingsReviewHint": "Verifică cifrele înainte să le adaugi. Prețul este prețul tău mediu de achiziție pe acțiune, nu prețul de azi.",
   "holdingsNoPrice": "Niciun preț mediu de achiziție în imagine",
   "holdingsAdd": "{count, plural, one{Adaugă {count} poziție} few{Adaugă {count} poziții} other{Adaugă {count} de poziții}}",
-  "holdingsNone": "Nu am găsit poziții pe acțiuni în această imagine. Încearcă o captură de ecran a paginii cu pozițiile sau portofoliul de la brokerul tău."
+  "holdingsNone": "Nu am găsit poziții pe acțiuni în această imagine. Încearcă o captură de ecran a paginii cu pozițiile sau portofoliul de la brokerul tău.",
+  "week52Range": "Interval de 52 de săptămâni",
+  "week52BelowHigh": "{percent} sub maximul de 52 de săptămâni",
+  "week52AtHigh": "La maximul de 52 de săptămâni",
+  "alertKindTrailing": "Scade de la vârf",
+  "alertTrailingPercent": "Scădere de la vârf (%)",
+  "alertTrailingHint": "Urmărește prețul în sus: alerta se declanșează când prețul scade atât de la cel mai înalt nivel atins de când ai setat-o.",
+  "alertDescTrailing": "Scădere de {percent} de la vârf",
+  "alertTrailingPeak": "vârf de până acum: {price}",
+  "alertHitTrailing": "{symbol} a scăzut cu {percent} de la vârf"
 }

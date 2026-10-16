@@ -2108,4 +2108,40 @@ class AppLocalizationsSv extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Inga aktieinnehav hittades på den här bilden. Prova en skärmbild av innehavssidan hos din mäklare.';
+
+  @override
+  String get week52Range => '52-veckorsintervall';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent under 52-veckors högsta';
+  }
+
+  @override
+  String get week52AtHigh => 'Vid 52-veckors högsta';
+
+  @override
+  String get alertKindTrailing => 'Faller från toppen';
+
+  @override
+  String get alertTrailingPercent => 'Fall från toppen (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Följer kursen uppåt: larmet går när kursen faller så mycket från den högsta nivån sedan du ställde in det.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return '$percent fall från toppen';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'topp hittills: $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol föll $percent från toppen';
+  }
 }

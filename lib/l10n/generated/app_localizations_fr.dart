@@ -2117,4 +2117,40 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get holdingsNone =>
       'Aucune position en actions trouvée sur cette image. Essayez une capture d’écran de la page des positions ou du portefeuille de votre courtier.';
+
+  @override
+  String get week52Range => 'Fourchette sur 52 semaines';
+
+  @override
+  String week52BelowHigh(String percent) {
+    return '$percent sous le plus haut sur 52 semaines';
+  }
+
+  @override
+  String get week52AtHigh => 'Au plus haut sur 52 semaines';
+
+  @override
+  String get alertKindTrailing => 'Recule depuis le sommet';
+
+  @override
+  String get alertTrailingPercent => 'Recul depuis le sommet (%)';
+
+  @override
+  String get alertTrailingHint =>
+      'Suit le cours à la hausse : l’alerte se déclenche quand le cours recule d’autant depuis son plus haut atteint depuis sa création.';
+
+  @override
+  String alertDescTrailing(String percent) {
+    return 'Recul de $percent depuis le sommet';
+  }
+
+  @override
+  String alertTrailingPeak(String price) {
+    return 'plus haut atteint : $price';
+  }
+
+  @override
+  String alertHitTrailing(String symbol, String percent) {
+    return '$symbol a reculé de $percent depuis son sommet';
+  }
 }
