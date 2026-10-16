@@ -338,27 +338,36 @@ void main() {
     final whole = tester.widget<Text>(percent.first).data;
     final rect = tester.getRect(area);
 
-    // Egér a görbe elején: az időszak elejétől 0% a változás.
+    // A grafikon kijelölt napjának felirata (ár és változás az időszak elejéhez képest).
+    String? hoverLabel() {
+      final paint = tester.widget<CustomPaint>(find.descendant(of: area, matching: find.byType(CustomPaint)).first);
+      return (paint.painter as dynamic).hoverPrice as String?;
+    }
+
+    // Egér a görbe elején: a kijelölt nap 0%-on áll, a jobb felső szám és a
+    // vonal színe viszont marad a teljes időszaké.
     final mouse = await tester.createGesture(kind: PointerDeviceKind.mouse);
     await mouse.addPointer(location: rect.centerLeft + const Offset(0.4, 0));
     await tester.pump();
     await mouse.moveTo(rect.centerLeft + const Offset(0.2, 0));
     await tester.pumpAndSettle();
-    expect(find.text('0.00%'), findsOneWidget);
-    // Az egér elvitele után újra a teljes időszak látszik.
+    expect(hoverLabel(), endsWith('(0.00%)'));
+    expect(find.text(whole!), findsWidgets);
+    // Az egér elvitele után nincs kijelölés.
     await mouse.moveTo(rect.topLeft - const Offset(0, 40));
     await tester.pumpAndSettle();
-    expect(find.text(whole!), findsWidgets);
+    expect(hoverLabel(), isNull);
+    expect(find.text(whole), findsWidgets);
     await mouse.removePointer();
 
     // Ujjal húzva ugyanígy, és elengedés után eltűnik a kijelölés.
     final drag = await tester.startGesture(rect.centerLeft + const Offset(40, 0));
     await drag.moveTo(rect.centerLeft + const Offset(0.2, 0));
     await tester.pump();
-    expect(find.text('0.00%'), findsOneWidget);
+    expect(hoverLabel(), endsWith('(0.00%)'));
     await drag.up();
     await tester.pumpAndSettle();
-    expect(find.text('0.00%'), findsNothing);
+    expect(hoverLabel(), isNull);
   });
 
   testWidgets('on a wide window the page also scrolls with the mouse wheel over the empty side areas', (tester) async {

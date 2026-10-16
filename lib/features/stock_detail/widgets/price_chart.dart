@@ -80,11 +80,14 @@ class _PriceChartState extends State<PriceChart> {
     final points = widget.history.lastDays(_days(_range));
     final hover = _hover != null && _hover! < points.length ? _hover : null;
     final first = points.isEmpty ? null : points.first.close;
-    // Kijelölésnél az időszak elejétől a kijelölt napig számolt változás.
-    final last = points.isEmpty ? null : points[hover ?? points.length - 1].close;
-    final change = first == null || last == null || first == 0 ? null : (last - first) / first * 100;
-    final up = (change ?? 0) >= 0;
-    final color = up ? p.positive : p.negative;
+    double? changeTo(double? v) => first == null || v == null || first == 0 ? null : (v - first) / first * 100;
+    // A vonal színe és a jobb felső szám mindig a teljes időszak változása;
+    // kijelölésnél a kijelölt nap változása (az időszak elejéhez képest) az ár
+    // mellett látszik, a saját színével.
+    final change = changeTo(points.isEmpty ? null : points.last.close);
+    final color = (change ?? 0) >= 0 ? p.positive : p.negative;
+    final hoverChange = hover == null ? null : changeTo(points[hover].close);
+    final hoverColor = (hoverChange ?? 0) >= 0 ? p.positive : p.negative;
 
     String label(ChartRange r) => switch (r) {
       ChartRange.week => l10n.rangeOneWeek,
@@ -166,11 +169,17 @@ class _PriceChartState extends State<PriceChart> {
                             cursorColor: p.text,
                             hoverDateStyle: labelStyle.copyWith(fontSize: 12),
                             hoverPriceStyle: labelStyle.copyWith(
-                              color: color,
+                              color: hoverColor,
                               fontSize: 13,
                               fontWeight: FontWeight.w700,
                             ),
-                            hoverPrice: hover == null ? null : widget.fmt.price(points[hover].close, widget.currency),
+                            hoverPrice: hover == null
+                                ? null
+                                : [
+                                    widget.fmt.price(points[hover].close, widget.currency),
+                                    if (hoverChange != null && widget.showChange)
+                                      '(${widget.fmt.percent(hoverChange, withSign: true)})',
+                                  ].join(' '),
                             hoverDate: hover == null ? null : widget.fmt.date(points[hover].time),
                             background: theme.colorScheme.surface,
                             levels: widget.levels,
