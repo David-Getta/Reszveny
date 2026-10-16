@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -195,7 +197,14 @@ class _AnalysisCardState extends State<AnalysisCard> {
                     Expanded(
                       child: Text(l10n.aiGenerating, style: TextStyle(color: p.muted)),
                     ),
+                    // Eltelt idő, hogy látszódjon: dolgozik, nem akadt el.
+                    _Elapsed(since: services.reports.loadingSince(widget.details.symbol)),
                   ],
+                ),
+                const SizedBox(height: 10),
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(4),
+                  child: LinearProgressIndicator(minHeight: 3, color: p.accent, backgroundColor: p.border),
                 ),
               ],
               if (report != null && !loading) ...[
@@ -426,6 +435,49 @@ class _ReportSectionView extends StatelessWidget {
             ),
           ),
       ],
+    );
+  }
+}
+
+/// Az elemzés indítása óta eltelt idő (`1:05`), másodpercenként frissítve.
+class _Elapsed extends StatefulWidget {
+  const _Elapsed({required this.since});
+
+  final DateTime? since;
+
+  @override
+  State<_Elapsed> createState() => _ElapsedState();
+}
+
+class _ElapsedState extends State<_Elapsed> {
+  Timer? _timer;
+
+  @override
+  void initState() {
+    super.initState();
+    _timer = Timer.periodic(const Duration(seconds: 1), (_) {
+      if (mounted) setState(() {});
+    });
+  }
+
+  @override
+  void dispose() {
+    _timer?.cancel();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final since = widget.since;
+    if (since == null) return const SizedBox.shrink();
+    final s = DateTime.now().difference(since).inSeconds.clamp(0, 5999);
+    return Padding(
+      padding: const EdgeInsetsDirectional.only(start: 8),
+      child: Text(
+        '${s ~/ 60}:${(s % 60).toString().padLeft(2, '0')}',
+        key: const ValueKey('analysis-elapsed'),
+        style: TextStyle(color: AppPalette.of(context).muted, fontFeatures: const [FontFeature.tabularFigures()]),
+      ),
     );
   }
 }

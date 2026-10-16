@@ -97,6 +97,10 @@ class ReportStore extends ChangeNotifier {
   Object? error(String symbol) => _errors[symbol];
   bool isLoading(String symbol) => _loading.contains(symbol);
 
+  /// Mióta készül az elemzés (a felület az eltelt időt mutatja), vagy `null`.
+  DateTime? loadingSince(String symbol) => _loadingSince[symbol];
+  final Map<String, DateTime> _loadingSince = {};
+
   /// Legfeljebb ennyi elemzést őrzünk meg a készüléken (a legrégebbiek törlődnek).
   static const maxSaved = 50;
 
@@ -257,6 +261,7 @@ class ReportStore extends ChangeNotifier {
       }
     }
     _loading.add(symbol);
+    _loadingSince[symbol] = clock();
     _errors.remove(symbol);
     notifyListeners();
     try {
@@ -301,6 +306,7 @@ class ReportStore extends ChangeNotifier {
       if (e is AppException && _isQuotaError(e.code)) _notifyQuota();
     } finally {
       _loading.remove(symbol);
+      _loadingSince.remove(symbol);
       notifyListeners();
     }
   }

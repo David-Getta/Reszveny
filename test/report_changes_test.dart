@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -212,4 +214,39 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text('Run 1'), findsOneWidget);
   });
+
+  test('while an analysis is running the store knows since when (for the elapsed time)', () async {
+    final details = await DemoMarketDataProvider(latency: Duration.zero).details('AAPL');
+    final gate = Completer<void>();
+    final analyst = _GatedAnalyst(gate.future);
+    var now = DateTime(2026, 10, 16, 20);
+    final store = ReportStore(analyst: analyst)..clock = () => now;
+    final run = store.generate(details, outputLanguage: 'English');
+    await Future<void>.delayed(Duration.zero);
+    expect(store.isLoading('AAPL'), isTrue);
+    expect(store.loadingSince('AAPL'), DateTime(2026, 10, 16, 20));
+    now = now.add(const Duration(minutes: 1));
+    gate.complete();
+    await run;
+    expect(store.loadingSince('AAPL'), isNull);
+  });
+}
+
+class _GatedAnalyst implements StockAnalyst {
+  _GatedAnalyst(this.gate);
+
+  final Future<void> gate;
+
+  @override
+  String get name => 'gated';
+
+  @override
+  Future<StockReport> analyze(
+    StockDetails details, {
+    String outputLanguage = 'English',
+    AnalysisOptions options = const AnalysisOptions(),
+  }) async {
+    await gate;
+    return StockReport(symbol: details.symbol, headline: 'Done', sections: const [], generatedAt: DateTime.now());
+  }
 }
