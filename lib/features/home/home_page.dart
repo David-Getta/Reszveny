@@ -16,6 +16,7 @@ import '../../l10n/error_messages.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../l10n/supported_locales.dart';
 import '../../theme/app_theme.dart';
+import '../../widgets/centered_scroll.dart';
 import '../../widgets/desktop_chrome.dart';
 import '../capture/capture_service.dart';
 import '../market_data/demo_market_data_provider.dart';
@@ -257,133 +258,134 @@ class _HomePageState extends State<HomePage> {
           const SingleActivator(LogicalKeyboardKey.keyV, control: true): _pasteIfNoText,
         },
         child: SafeArea(
-          child: Center(
-            child: ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 680),
-              child: SingleChildScrollView(
-                padding: const EdgeInsets.fromLTRB(24, 24, 24, 32),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    const UpdateBanner(),
-                    if (widget.showAppBarActions)
-                      const Align(alignment: AlignmentDirectional.centerStart, child: UsageChip(compact: true)),
-                    const SizedBox(height: 48),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Image.asset('assets/branding/logo_256.png', width: 34, height: 34),
-                        const SizedBox(width: 12),
-                        Flexible(
-                          child: Text(
-                            l10n.greeting,
-                            textAlign: TextAlign.center,
-                            style: theme.textTheme.headlineMedium?.copyWith(
-                              fontFamilyFallback: AppTheme.serifFallback,
-                              fontSize: 30,
-                            ),
+          // A görgethető terület a teljes szélesség (görgetősáv a szélen, a
+          // touchpad az oldalsó üres sávban is görget); a tartalom középen marad.
+          child: CenteredScroll(
+            maxWidth: 680,
+            padding: const EdgeInsets.fromLTRB(24, 24, 24, 32),
+            builder: (context, padding) => SingleChildScrollView(
+              padding: padding,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  const UpdateBanner(),
+                  if (widget.showAppBarActions)
+                    const Align(alignment: AlignmentDirectional.centerStart, child: UsageChip(compact: true)),
+                  const SizedBox(height: 48),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset('assets/branding/logo_256.png', width: 34, height: 34),
+                      const SizedBox(width: 12),
+                      Flexible(
+                        child: Text(
+                          l10n.greeting,
+                          textAlign: TextAlign.center,
+                          style: theme.textTheme.headlineMedium?.copyWith(
+                            fontFamilyFallback: AppTheme.serifFallback,
+                            fontSize: 30,
                           ),
                         ),
-                      ],
-                    ),
-                    const SizedBox(height: 28),
-                    SearchField(
-                      controller: _query,
-                      hint: l10n.searchHint,
-                      autofocus: true,
-                      enabled: !_busy,
-                      onSubmitted: _submit,
-                      leading: [
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 28),
+                  SearchField(
+                    controller: _query,
+                    hint: l10n.searchHint,
+                    autofocus: true,
+                    enabled: !_busy,
+                    onSubmitted: _submit,
+                    leading: [
+                      _PillAction(
+                        icon: Icons.add_photo_alternate_outlined,
+                        tooltip: l10n.attachImage,
+                        onTap: _busy ? null : () => _capture(false),
+                      ),
+                      if (supportsCamera)
                         _PillAction(
-                          icon: Icons.add_photo_alternate_outlined,
-                          tooltip: l10n.attachImage,
-                          onTap: _busy ? null : () => _capture(false),
+                          icon: Icons.photo_camera_outlined,
+                          tooltip: l10n.takePhoto,
+                          onTap: _busy ? null : () => _capture(true),
                         ),
-                        if (supportsCamera)
-                          _PillAction(
-                            icon: Icons.photo_camera_outlined,
-                            tooltip: l10n.takePhoto,
-                            onTap: _busy ? null : () => _capture(true),
-                          ),
-                        if (DesktopIntegration.isSupported)
-                          _PillAction(
-                            icon: Icons.content_paste_rounded,
-                            tooltip: l10n.pasteImage,
-                            onTap: _busy ? null : _pasteImage,
-                          ),
-                      ],
-                    ),
-                    if (_suggestions.isNotEmpty && !_busy)
-                      Card(
-                        key: const ValueKey('search-suggestions'),
-                        margin: const EdgeInsets.only(top: 8),
-                        child: Column(
-                          children: [
-                            for (final (i, c) in _suggestions.indexed) ...[
-                              if (i > 0) const Divider(height: 1),
-                              ListTile(
-                                key: ValueKey('suggestion-${c.symbol}'),
-                                dense: true,
-                                leading: Icon(Icons.north_east_rounded, size: 18, color: p.muted),
-                                title: Text(c.symbol, style: const TextStyle(fontWeight: FontWeight.w700)),
-                                subtitle: c.companyName == c.symbol
-                                    ? null
-                                    : Text(c.companyName, maxLines: 1, overflow: TextOverflow.ellipsis),
-                                onTap: () => _open(c),
-                              ),
-                            ],
+                      if (DesktopIntegration.isSupported)
+                        _PillAction(
+                          icon: Icons.content_paste_rounded,
+                          tooltip: l10n.pasteImage,
+                          onTap: _busy ? null : _pasteImage,
+                        ),
+                    ],
+                  ),
+                  if (_suggestions.isNotEmpty && !_busy)
+                    Card(
+                      key: const ValueKey('search-suggestions'),
+                      margin: const EdgeInsets.only(top: 8),
+                      child: Column(
+                        children: [
+                          for (final (i, c) in _suggestions.indexed) ...[
+                            if (i > 0) const Divider(height: 1),
+                            ListTile(
+                              key: ValueKey('suggestion-${c.symbol}'),
+                              dense: true,
+                              leading: Icon(Icons.north_east_rounded, size: 18, color: p.muted),
+                              title: Text(c.symbol, style: const TextStyle(fontWeight: FontWeight.w700)),
+                              subtitle: c.companyName == c.symbol
+                                  ? null
+                                  : Text(c.companyName, maxLines: 1, overflow: TextOverflow.ellipsis),
+                              onTap: () => _open(c),
+                            ),
                           ],
-                        ),
+                        ],
                       ),
-                    const SizedBox(height: 12),
-                    Text(
-                      l10n.homeHint,
-                      textAlign: TextAlign.center,
-                      style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
                     ),
-                    const SizedBox(height: 24),
-                    if (_busy) ...[
-                      const Center(
-                        child: SizedBox(width: 22, height: 22, child: CircularProgressIndicator(strokeWidth: 2.5)),
-                      ),
-                      const SizedBox(height: 10),
-                      Text(
-                        _busyLabel ?? '',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(color: p.muted),
-                      ),
-                    ],
-                    if (_results != null)
-                      _SearchResults(query: _lastQuery, results: _results!, onTap: widget.onOpenSymbol),
-                    MarketsStrip(onOpenSymbol: widget.onOpenSymbol),
-                    PortfolioSummaryCard(onOpenSymbol: widget.onOpenSymbol),
-                    FavoritesStrip(onOpenSymbol: widget.onOpenSymbol),
-                    // Telefonon nincs oldalsáv: a legutóbbiak itt látszanak.
-                    if (widget.showAppBarActions) RecentChips(onOpenSymbol: widget.onOpenSymbol),
-                    UpcomingEventsSection(onOpenSymbol: widget.onOpenSymbol),
-                    WatchNewsSection(onOpenSymbol: widget.onOpenSymbol),
-                    MyAnalysesList(onOpenSymbol: widget.onOpenSymbol),
-                    const TelemetryConsentCard(),
-                    if (services.config.isDemoMode) ...[
-                      const SizedBox(height: 24),
-                      _DemoBanner(symbols: DemoMarketDataProvider.supportedSymbols.join(', ')),
-                    ],
-                    if (DesktopIntegration.isSupported && widget.showAppBarActions) ...[
-                      const SizedBox(height: 24),
-                      Text(
-                        hotkeyHintText(l10n, services),
-                        textAlign: TextAlign.center,
-                        style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
-                      ),
-                    ],
-                    const SizedBox(height: 40),
+                  const SizedBox(height: 12),
+                  Text(
+                    l10n.homeHint,
+                    textAlign: TextAlign.center,
+                    style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                  ),
+                  const SizedBox(height: 24),
+                  if (_busy) ...[
+                    const Center(
+                      child: SizedBox(width: 22, height: 22, child: CircularProgressIndicator(strokeWidth: 2.5)),
+                    ),
+                    const SizedBox(height: 10),
                     Text(
-                      l10n.disclaimer,
+                      _busyLabel ?? '',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: p.muted),
+                    ),
+                  ],
+                  if (_results != null)
+                    _SearchResults(query: _lastQuery, results: _results!, onTap: widget.onOpenSymbol),
+                  MarketsStrip(onOpenSymbol: widget.onOpenSymbol),
+                  PortfolioSummaryCard(onOpenSymbol: widget.onOpenSymbol),
+                  FavoritesStrip(onOpenSymbol: widget.onOpenSymbol),
+                  // Telefonon nincs oldalsáv: a legutóbbiak itt látszanak.
+                  if (widget.showAppBarActions) RecentChips(onOpenSymbol: widget.onOpenSymbol),
+                  UpcomingEventsSection(onOpenSymbol: widget.onOpenSymbol),
+                  WatchNewsSection(onOpenSymbol: widget.onOpenSymbol),
+                  MyAnalysesList(onOpenSymbol: widget.onOpenSymbol),
+                  const TelemetryConsentCard(),
+                  if (services.config.isDemoMode) ...[
+                    const SizedBox(height: 24),
+                    _DemoBanner(symbols: DemoMarketDataProvider.supportedSymbols.join(', ')),
+                  ],
+                  if (DesktopIntegration.isSupported && widget.showAppBarActions) ...[
+                    const SizedBox(height: 24),
+                    Text(
+                      hotkeyHintText(l10n, services),
                       textAlign: TextAlign.center,
                       style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
                     ),
                   ],
-                ),
+                  const SizedBox(height: 40),
+                  Text(
+                    l10n.disclaimer,
+                    textAlign: TextAlign.center,
+                    style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                  ),
+                ],
               ),
             ),
           ),

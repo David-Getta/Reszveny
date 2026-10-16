@@ -7,6 +7,7 @@ import '../../core/models/stock_quote.dart';
 import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
+import '../../widgets/centered_scroll.dart';
 import '../../widgets/desktop_chrome.dart';
 
 /// A figyelőlista rendezése.
@@ -151,23 +152,24 @@ class _WatchlistPageState extends State<WatchlistPage> {
             padding: const EdgeInsets.fromLTRB(20, 12, 20, 4),
             child: Text(l10n.watchHint, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
           );
-          return Center(
-            child: ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 760),
-              child: _sort == WatchSort.own
-                  ? ReorderableListView.builder(
-                      buildDefaultDragHandles: false,
-                      header: hint,
-                      itemCount: list.length,
-                      onReorderItem: (from, to) {
-                        final next = [...list];
-                        next.insert(to, next.removeAt(from));
-                        services.preferences.setFavorites(next);
-                      },
-                      itemBuilder: (_, i) => row(i, list[i]),
-                    )
-                  : ListView(children: [hint, for (final (i, s) in list.indexed) row(i, s)]),
-            ),
+          // Teljes szélességű görgetés (görgetősáv a szélen), középre igazított sorokkal.
+          return CenteredScroll(
+            maxWidth: 760,
+            padding: EdgeInsets.zero,
+            builder: (context, padding) => _sort == WatchSort.own
+                ? ReorderableListView.builder(
+                    buildDefaultDragHandles: false,
+                    padding: padding,
+                    header: hint,
+                    itemCount: list.length,
+                    onReorderItem: (from, to) {
+                      final next = [...list];
+                      next.insert(to, next.removeAt(from));
+                      services.preferences.setFavorites(next);
+                    },
+                    itemBuilder: (_, i) => row(i, list[i]),
+                  )
+                : ListView(padding: padding, children: [hint, for (final (i, s) in list.indexed) row(i, s)]),
           );
         },
       ),
