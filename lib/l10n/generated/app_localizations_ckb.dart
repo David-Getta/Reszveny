@@ -2213,4 +2213,10 @@ class AppLocalizationsCkb extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'هێشتا هیچ پشکێک لەم لیستەدا نییە. بۆ زیادکردن، دوگمەی لیست لە تەنیشت پشکەکە دابگرە.';
+
+  @override
+  String get portfolioAskTitle => 'پرسیارەکان دەربارەی پۆرتفۆلیۆکەت';
+
+  @override
+  String get rangeYtd => 'ئەمساڵ';
 }

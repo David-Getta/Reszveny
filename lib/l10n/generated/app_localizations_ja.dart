@@ -2137,4 +2137,10 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get watchListEmpty => 'このリストにはまだ銘柄がありません。銘柄の横にあるリストボタンをタップして追加してください。';
+
+  @override
+  String get portfolioAskTitle => 'ポートフォリオについての質問';
+
+  @override
+  String get rangeYtd => '年初来';
 }

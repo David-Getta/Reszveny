@@ -2227,4 +2227,10 @@ class AppLocalizationsTs extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'A ku si na swiavelo eka nxaxamelo leyi. Tsindzela batheni ya nxaxamelo ekusuhi ni xiavelo ku xi engetela.';
+
+  @override
+  String get portfolioAskTitle => 'Swivutiso hi phothifoliyo ya wena';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

@@ -2181,4 +2181,10 @@ class AppLocalizationsAm extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'በዚህ ዝርዝር ውስጥ እስካሁን ምንም አክሲዮን የለም። ለማከል ከአክሲዮኑ አጠገብ ያለውን የዝርዝር አዝራር ይንኩ።';
+
+  @override
+  String get portfolioAskTitle => 'ስለ ፖርትፎሊዮዎ ጥያቄዎች';
+
+  @override
+  String get rangeYtd => 'ዘንድሮ';
 }

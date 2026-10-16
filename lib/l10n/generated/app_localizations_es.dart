@@ -2217,4 +2217,10 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Aún no hay acciones en esta lista. Toca el botón de lista junto a una acción para añadirla.';
+
+  @override
+  String get portfolioAskTitle => 'Preguntas sobre tu cartera';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

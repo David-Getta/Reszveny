@@ -591,5 +591,7 @@
   "watchListRename": "Sesa nhyehyɛe no din",
   "watchListDelete": "Yi nhyehyɛe no fi hɔ",
   "watchListAddTo": "Fa ka nhyehyɛe bi ho",
-  "watchListEmpty": "Stɔk biara nni nhyehyɛe yi mu da. Mia nhyehyɛe bɔtɔn a ɛbɛn stɔk bi na fa ka ho."
+  "watchListEmpty": "Stɔk biara nni nhyehyɛe yi mu da. Mia nhyehyɛe bɔtɔn a ɛbɛn stɔk bi na fa ka ho.",
+  "portfolioAskTitle": "Nsɛmmisa fa wo nkyɛfa ho",
+  "rangeYtd": "Afe yi"
 }

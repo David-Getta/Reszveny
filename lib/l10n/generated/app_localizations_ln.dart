@@ -2223,4 +2223,10 @@ class AppLocalizationsLn extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Aksio moko te ezali naino na liste oyo. Finá bouton ya liste pembeni ya aksio mpo na kobakisa yango.';
+
+  @override
+  String get portfolioAskTitle => 'Mituna na ntina ya portefeuille na yo';
+
+  @override
+  String get rangeYtd => 'Mobu oyo';
 }

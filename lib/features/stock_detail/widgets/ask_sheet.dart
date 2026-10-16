@@ -10,39 +10,47 @@ import 'section_card.dart';
 
 /// „Kérdezz az elemzésről” gomb az elemzés alján.
 class AskAnalysisButton extends StatelessWidget {
-  const AskAnalysisButton({super.key, required this.report, required this.companyName});
+  const AskAnalysisButton({super.key, required this.report, required this.companyName, this.title});
 
   final StockReport report;
   final String companyName;
+
+  /// A lap címe, ha nem a részvényé (pl. a portfólió-elemzésnél).
+  final String? title;
 
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     return OutlinedButton.icon(
       key: const ValueKey('ask-open'),
-      onPressed: () => showAskSheet(context, report: report, companyName: companyName),
+      onPressed: () => showAskSheet(context, report: report, companyName: companyName, title: title),
       icon: const Icon(Icons.forum_outlined, size: 18),
       label: Text(l10n.askButton),
     );
   }
 }
 
-Future<void> showAskSheet(BuildContext context, {required StockReport report, required String companyName}) =>
-    showModalBottomSheet<void>(
-      context: context,
-      isScrollControlled: true,
-      showDragHandle: true,
-      builder: (_) => FractionallySizedBox(
-        heightFactor: 0.88,
-        child: _AskSheet(report: report, companyName: companyName),
-      ),
-    );
+Future<void> showAskSheet(
+  BuildContext context, {
+  required StockReport report,
+  required String companyName,
+  String? title,
+}) => showModalBottomSheet<void>(
+  context: context,
+  isScrollControlled: true,
+  showDragHandle: true,
+  builder: (_) => FractionallySizedBox(
+    heightFactor: 0.88,
+    child: _AskSheet(report: report, companyName: companyName, title: title),
+  ),
+);
 
 class _AskSheet extends StatefulWidget {
-  const _AskSheet({required this.report, required this.companyName});
+  const _AskSheet({required this.report, required this.companyName, this.title});
 
   final StockReport report;
   final String companyName;
+  final String? title;
 
   @override
   State<_AskSheet> createState() => _AskSheetState();
@@ -113,7 +121,7 @@ class _AskSheetState extends State<_AskSheet> {
               Padding(
                 padding: const EdgeInsets.fromLTRB(20, 0, 20, 8),
                 child: Text(
-                  l10n.askTitle(widget.report.symbol),
+                  widget.title ?? l10n.askTitle(widget.report.symbol),
                   style: theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w700),
                 ),
               ),

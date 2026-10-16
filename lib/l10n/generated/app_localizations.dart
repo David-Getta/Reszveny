@@ -3888,6 +3888,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'No stocks in this list yet. Tap the list button next to a stock to add it.'**
   String get watchListEmpty;
+
+  /// Title of the sheet where the user asks the AI follow-up questions about its portfolio review.
+  ///
+  /// In en, this message translates to:
+  /// **'Questions about your portfolio'**
+  String get portfolioAskTitle;
+
+  /// Very short label: return since the start of this year (year to date), next to 1W, 1M, 3M, 1Y, 5Y.
+  ///
+  /// In en, this message translates to:
+  /// **'YTD'**
+  String get rangeYtd;
 }
 
 class _AppLocalizationsDelegate

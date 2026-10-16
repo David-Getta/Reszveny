@@ -2210,4 +2210,10 @@ class AppLocalizationsBm extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Aksiyɔn si tɛ nin lisi la fɔlɔ. Digi lisi butɔni kan aksiyɔn kɛrɛfɛ walasa k\'a fara a kan.';
+
+  @override
+  String get portfolioAskTitle => 'Ɲininkaliw i ka aksiyɔn kɛsu kan';
+
+  @override
+  String get rangeYtd => 'Nin san';
 }

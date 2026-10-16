@@ -591,5 +591,7 @@
   "watchListRename": "Bongola nkombo ya liste",
   "watchListDelete": "Longola liste",
   "watchListAddTo": "Bakisa na liste",
-  "watchListEmpty": "Aksio moko te ezali naino na liste oyo. Finá bouton ya liste pembeni ya aksio mpo na kobakisa yango."
+  "watchListEmpty": "Aksio moko te ezali naino na liste oyo. Finá bouton ya liste pembeni ya aksio mpo na kobakisa yango.",
+  "portfolioAskTitle": "Mituna na ntina ya portefeuille na yo",
+  "rangeYtd": "Mobu oyo"
 }

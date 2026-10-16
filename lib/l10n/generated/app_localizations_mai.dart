@@ -2206,4 +2206,10 @@ class AppLocalizationsMai extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'एहि सूचीमे एखन धरि कोनो शेयर नहि अछि। जोड़बाक लेल शेयरक बगलक सूची बटन दबाउ।';
+
+  @override
+  String get portfolioAskTitle => 'अहाँक पोर्टफ़ोलियोक बारेमे प्रश्न';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

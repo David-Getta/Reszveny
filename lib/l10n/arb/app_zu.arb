@@ -591,5 +591,7 @@
   "watchListRename": "Qamba kabusha uhlu",
   "watchListDelete": "Susa uhlu",
   "watchListAddTo": "Engeza ohlwini",
-  "watchListEmpty": "Awekho amasheya kulolu hlu okwamanje. Thepha inkinobho yohlu eduze kwesheya ukuze ulengeze."
+  "watchListEmpty": "Awekho amasheya kulolu hlu okwamanje. Thepha inkinobho yohlu eduze kwesheya ukuze ulengeze.",
+  "portfolioAskTitle": "Imibuzo ngephothifoliyo yakho",
+  "rangeYtd": "YTD"
 }

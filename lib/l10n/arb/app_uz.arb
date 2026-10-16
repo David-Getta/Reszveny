@@ -591,5 +591,7 @@
   "watchListRename": "Roʻyxat nomini oʻzgartirish",
   "watchListDelete": "Roʻyxatni oʻchirish",
   "watchListAddTo": "Roʻyxatga qoʻshish",
-  "watchListEmpty": "Bu roʻyxatda hali aksiyalar yoʻq. Qoʻshish uchun aksiya yonidagi roʻyxat tugmasini bosing."
+  "watchListEmpty": "Bu roʻyxatda hali aksiyalar yoʻq. Qoʻshish uchun aksiya yonidagi roʻyxat tugmasini bosing.",
+  "portfolioAskTitle": "Portfelingiz haqida savollar",
+  "rangeYtd": "Bu yil"
 }

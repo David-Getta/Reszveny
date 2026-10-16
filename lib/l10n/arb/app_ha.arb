@@ -591,5 +591,7 @@
   "watchListRename": "Sake sunan jeri",
   "watchListDelete": "Share jeri",
   "watchListAddTo": "Ƙara zuwa jeri",
-  "watchListEmpty": "Babu hannun jari a wannan jerin tukuna. Matsa maɓallin jeri kusa da hannun jari don ƙara shi."
+  "watchListEmpty": "Babu hannun jari a wannan jerin tukuna. Matsa maɓallin jeri kusa da hannun jari don ƙara shi.",
+  "portfolioAskTitle": "Tambayoyi game da jakar hannun jarinku",
+  "rangeYtd": "YTD"
 }

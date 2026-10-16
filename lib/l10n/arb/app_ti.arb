@@ -591,5 +591,7 @@
   "watchListRename": "ስም ዝርዝር ቀይር",
   "watchListDelete": "ዝርዝር ደምስስ",
   "watchListAddTo": "ናብ ዝርዝር ወስኽ",
-  "watchListEmpty": "ኣብዚ ዝርዝር ክሳብ ሕጂ ዝኾነ ኣክሲዮን የለን። ንምውሳኽ ኣብ ጥቓ ኣክሲዮን ዘሎ መልጎም ዝርዝር ጠውቕ።"
+  "watchListEmpty": "ኣብዚ ዝርዝር ክሳብ ሕጂ ዝኾነ ኣክሲዮን የለን። ንምውሳኽ ኣብ ጥቓ ኣክሲዮን ዘሎ መልጎም ዝርዝር ጠውቕ።",
+  "portfolioAskTitle": "ሕቶታት ብዛዕባ ፖርትፎሊዮኹም",
+  "rangeYtd": "እዚ ዓመት"
 }

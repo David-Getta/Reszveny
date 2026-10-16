@@ -2214,4 +2214,10 @@ class AppLocalizationsTg extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Дар ин рӯйхат ҳоло саҳмия нест. Барои илова кардан тугмаи рӯйхатро дар паҳлӯи саҳмия пахш кунед.';
+
+  @override
+  String get portfolioAskTitle => 'Саволҳо дар бораи портфели шумо';
+
+  @override
+  String get rangeYtd => 'Имсол';
 }

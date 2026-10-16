@@ -2224,4 +2224,10 @@ class AppLocalizationsSt extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Ha ho na ditoko lenaneng lena hajwale. Tobetsa konopo ya lenane pela setoko ho se kenya.';
+
+  @override
+  String get portfolioAskTitle => 'Dipotso ka potefolio ya hao';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

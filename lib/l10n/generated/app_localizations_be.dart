@@ -2272,4 +2272,10 @@ class AppLocalizationsBe extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'У гэтым спісе пакуль няма акцый. Націсніце кнопку спіса побач з акцыяй, каб дадаць яе.';
+
+  @override
+  String get portfolioAskTitle => 'Пытанні пра ваш партфель';
+
+  @override
+  String get rangeYtd => 'З пач. г.';
 }

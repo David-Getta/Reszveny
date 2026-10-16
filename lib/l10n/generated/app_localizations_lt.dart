@@ -2274,4 +2274,10 @@ class AppLocalizationsLt extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Šiame sąraše dar nėra akcijų. Bakstelėkite sąrašo mygtuką šalia akcijos, kad ją pridėtumėte.';
+
+  @override
+  String get portfolioAskTitle => 'Klausimai apie jūsų portfelį';
+
+  @override
+  String get rangeYtd => 'Šiemet';
 }

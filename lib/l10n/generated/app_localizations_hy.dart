@@ -2220,4 +2220,10 @@ class AppLocalizationsHy extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Այս ցուցակում դեռ բաժնետոմսեր չկան։ Հպեք բաժնետոմսի կողքի ցուցակի կոճակին՝ այն ավելացնելու համար։';
+
+  @override
+  String get portfolioAskTitle => 'Հարցեր ձեր պորտֆելի մասին';
+
+  @override
+  String get rangeYtd => 'Այս տարի';
 }

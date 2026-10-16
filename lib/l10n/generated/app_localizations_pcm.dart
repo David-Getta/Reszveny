@@ -2212,4 +2212,10 @@ class AppLocalizationsPcm extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'No stock dey dis list yet. Tap di list button wey dey near any stock to add am.';
+
+  @override
+  String get portfolioAskTitle => 'Questions about your portfolio';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

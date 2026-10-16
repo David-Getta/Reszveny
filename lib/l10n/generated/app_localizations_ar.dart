@@ -2262,4 +2262,10 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'لا توجد أسهم في هذه القائمة بعد. اضغط على زر القائمة بجانب السهم لإضافته.';
+
+  @override
+  String get portfolioAskTitle => 'أسئلة حول محفظتك';
+
+  @override
+  String get rangeYtd => 'هذا العام';
 }

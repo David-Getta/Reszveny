@@ -2211,4 +2211,10 @@ class AppLocalizationsAs extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'এই তালিকাত এতিয়াও কোনো শ্বেয়াৰ নাই। যোগ কৰিবলৈ শ্বেয়াৰৰ কাষৰ তালিকা বুটামটো টিপক।';
+
+  @override
+  String get portfolioAskTitle => 'আপোনাৰ প\'ৰ্টফ\'লিঅ\' সম্পৰ্কীয় প্ৰশ্ন';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

@@ -2204,4 +2204,10 @@ class AppLocalizationsSd extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'هن فهرست ۾ اڃا ڪو به شيئر ناهي. شامل ڪرڻ لاءِ شيئر جي ڀرسان فهرست بٽڻ تي ٽيپ ڪريو.';
+
+  @override
+  String get portfolioAskTitle => 'توهان جي پورٽ فوليو بابت سوال';
+
+  @override
+  String get rangeYtd => 'هن سال';
 }

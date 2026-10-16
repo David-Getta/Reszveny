@@ -2235,4 +2235,10 @@ class AppLocalizationsGl extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Aínda non hai accións nesta lista. Toca o botón de lista xunto a unha acción para engadila.';
+
+  @override
+  String get portfolioAskTitle => 'Preguntas sobre a túa carteira';
+
+  @override
+  String get rangeYtd => 'Este ano';
 }

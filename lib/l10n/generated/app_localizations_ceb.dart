@@ -2222,4 +2222,10 @@ class AppLocalizationsCeb extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Wala pay stock niining listaha. I-tap ang buton sa lista tupad sa stock aron idugang kini.';
+
+  @override
+  String get portfolioAskTitle => 'Mga pangutana bahin sa imong portfolio';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

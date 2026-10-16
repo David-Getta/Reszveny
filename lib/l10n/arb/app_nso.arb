@@ -591,5 +591,7 @@
   "watchListRename": "Fetoša leina la lenaneo",
   "watchListDelete": "Phumola lenaneo",
   "watchListAddTo": "Oketša lenaneong",
-  "watchListEmpty": "Ga go na diabelo lenaneong le ga bjale. Kgotla konopo ya lenaneo kgauswi le seabelo go se oketša."
+  "watchListEmpty": "Ga go na diabelo lenaneong le ga bjale. Kgotla konopo ya lenaneo kgauswi le seabelo go se oketša.",
+  "portfolioAskTitle": "Dipotšišo ka photefolio ya gago",
+  "rangeYtd": "YTD"
 }

@@ -2275,4 +2275,10 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'В этом списке пока нет акций. Нажмите кнопку списка рядом с акцией, чтобы добавить её.';
+
+  @override
+  String get portfolioAskTitle => 'Вопросы по вашему портфелю';
+
+  @override
+  String get rangeYtd => 'С нач. г.';
 }

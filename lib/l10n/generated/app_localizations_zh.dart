@@ -2105,6 +2105,12 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get watchListEmpty => '此列表中还没有股票。点按股票旁的列表按钮即可添加。';
+
+  @override
+  String get portfolioAskTitle => '关于你的投资组合的问题';
+
+  @override
+  String get rangeYtd => '年初至今';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -4206,4 +4212,10 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get watchListEmpty => '此清單暫時未有股票。輕按股票旁的清單按鈕即可加入。';
+
+  @override
+  String get portfolioAskTitle => '關於你的投資組合的問題';
+
+  @override
+  String get rangeYtd => '年初至今';
 }

@@ -591,5 +591,7 @@
   "watchListRename": "Palitan ang pangalan ng listahan",
   "watchListDelete": "Burahin ang listahan",
   "watchListAddTo": "Idagdag sa listahan",
-  "watchListEmpty": "Wala pang stock sa listahang ito. I-tap ang button ng listahan sa tabi ng isang stock para idagdag ito."
+  "watchListEmpty": "Wala pang stock sa listahang ito. I-tap ang button ng listahan sa tabi ng isang stock para idagdag ito.",
+  "portfolioAskTitle": "Mga tanong tungkol sa portfolio mo",
+  "rangeYtd": "YTD"
 }

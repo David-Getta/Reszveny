@@ -2210,4 +2210,10 @@ class AppLocalizationsTt extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Бу исемлектә әлегә акцияләр юк. Өстәү өчен акция янындагы исемлек төймәсенә басыгыз.';
+
+  @override
+  String get portfolioAskTitle => 'Портфелегез турында сораулар';
+
+  @override
+  String get rangeYtd => 'Быел';
 }

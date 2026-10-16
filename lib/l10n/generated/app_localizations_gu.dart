@@ -2208,4 +2208,10 @@ class AppLocalizationsGu extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'આ યાદીમાં હજી કોઈ શેર નથી. ઉમેરવા માટે શેરની બાજુમાં આવેલા યાદી બટન પર ટૅપ કરો.';
+
+  @override
+  String get portfolioAskTitle => 'તમારા પોર્ટફોલિયો વિશે પ્રશ્નો';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

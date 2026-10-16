@@ -2227,4 +2227,10 @@ class AppLocalizationsNso extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Ga go na diabelo lenaneong le ga bjale. Kgotla konopo ya lenaneo kgauswi le seabelo go se oketša.';
+
+  @override
+  String get portfolioAskTitle => 'Dipotšišo ka photefolio ya gago';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

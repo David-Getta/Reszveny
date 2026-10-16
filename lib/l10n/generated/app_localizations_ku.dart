@@ -2214,4 +2214,10 @@ class AppLocalizationsKu extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Hîn di vê lîsteyê de tu pişk tune ne. Ji bo zêdekirinê, li bişkoka lîsteyê ya li kêleka pişkê bitikîne.';
+
+  @override
+  String get portfolioAskTitle => 'Pirsên li ser portfolyoya te';
+
+  @override
+  String get rangeYtd => 'Îsal';
 }

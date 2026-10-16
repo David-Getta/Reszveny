@@ -2208,4 +2208,10 @@ class AppLocalizationsBho extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'एह सूची में अबहीं ले कवनो शेयर नइखे। जोड़े खातिर शेयर के बगल वाला सूची बटन दबाईं।';
+
+  @override
+  String get portfolioAskTitle => 'राउर पोर्टफ़ोलियो के बारे में सवाल';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

@@ -94,6 +94,18 @@ void main() {
     expect(p, contains('Do not tell the reader to buy or sell'));
   });
 
+  test('the prompt for the portfolio review speaks of the portfolio, not a company', () {
+    final p = AnalysisChat.systemPrompt(
+      _report(AnalysisChat.portfolioSymbol),
+      companyName: '',
+      language: 'English',
+      today: DateTime.utc(2026, 10, 15),
+    );
+    expect(p, contains('your review of their whole stock portfolio'));
+    expect(p, contains('unrelated to investing or this portfolio'));
+    expect(p, isNot(contains('(PORTFOLIO)')));
+  });
+
   test('a conversation: history is sent, answers kept, a failed question can be asked again', () async {
     final sent = <Map<String, dynamic>>[];
     var fail = false;

@@ -2205,4 +2205,10 @@ class AppLocalizationsHe extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'אין עדיין מניות ברשימה הזו. הקישו על כפתור הרשימה ליד מניה כדי להוסיף אותה.';
+
+  @override
+  String get portfolioAskTitle => 'שאלות על התיק שלך';
+
+  @override
+  String get rangeYtd => 'השנה';
 }

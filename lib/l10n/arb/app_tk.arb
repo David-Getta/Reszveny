@@ -591,5 +591,7 @@
   "watchListRename": "Sanawyň adyny üýtget",
   "watchListDelete": "Sanawy poz",
   "watchListAddTo": "Sanawa goş",
-  "watchListEmpty": "Bu sanawda entek paýnama ýok. Goşmak üçin paýnamanyň gapdalyndaky sanaw düwmesine basyň."
+  "watchListEmpty": "Bu sanawda entek paýnama ýok. Goşmak üçin paýnamanyň gapdalyndaky sanaw düwmesine basyň.",
+  "portfolioAskTitle": "Portfeliňiz barada soraglar",
+  "rangeYtd": "Şu ýyl"
 }

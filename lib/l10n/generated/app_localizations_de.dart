@@ -2225,4 +2225,10 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Noch keine Aktien in dieser Liste. Zum Hinzufügen auf die Listen-Schaltfläche neben einer Aktie tippen.';
+
+  @override
+  String get portfolioAskTitle => 'Fragen zu deinem Portfolio';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

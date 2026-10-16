@@ -591,5 +591,7 @@
   "watchListRename": "Rinomina lista",
   "watchListDelete": "Elimina lista",
   "watchListAddTo": "Aggiungi a una lista",
-  "watchListEmpty": "Ancora nessuna azione in questa lista. Tocca il pulsante lista accanto a un'azione per aggiungerla."
+  "watchListEmpty": "Ancora nessuna azione in questa lista. Tocca il pulsante lista accanto a un'azione per aggiungerla.",
+  "portfolioAskTitle": "Domande sul tuo portafoglio",
+  "rangeYtd": "YTD"
 }

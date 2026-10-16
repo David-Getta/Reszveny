@@ -2275,4 +2275,10 @@ class AppLocalizationsSl extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Na tem seznamu še ni delnic. Za dodajanje tapnite gumb seznama ob delnici.';
+
+  @override
+  String get portfolioAskTitle => 'Vprašanja o vašem portfelju';
+
+  @override
+  String get rangeYtd => 'Letos';
 }

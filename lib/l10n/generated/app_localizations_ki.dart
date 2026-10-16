@@ -2213,4 +2213,10 @@ class AppLocalizationsKi extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Gũtirĩ hisa orodha-inĩ ĩno o na rĩu. Hũtia kĩhũthio kĩa orodha hakuhĩ na hisa nĩguo ũmĩongerere.';
+
+  @override
+  String get portfolioAskTitle => 'Ciũria igiĩ hisa ciaku';
+
+  @override
+  String get rangeYtd => 'Mwaka uyu';
 }

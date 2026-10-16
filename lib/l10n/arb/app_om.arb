@@ -591,5 +591,7 @@
   "watchListRename": "Maqaa tarree jijjiiri",
   "watchListDelete": "Tarree haqi",
   "watchListAddTo": "Tarreetti dabali",
-  "watchListEmpty": "Tarree kana keessa ammallee aksiyoonni hin jiran. Dabaluuf furtuu tarree aksiyoona cinaa jiru tuqi."
+  "watchListEmpty": "Tarree kana keessa ammallee aksiyoonni hin jiran. Dabaluuf furtuu tarree aksiyoona cinaa jiru tuqi.",
+  "portfolioAskTitle": "Gaaffilee waa'ee poortfooliyoo keessanii",
+  "rangeYtd": "Bara kana"
 }

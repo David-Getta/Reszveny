@@ -2219,4 +2219,10 @@ class AppLocalizationsLua extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Kakuena aksio mu liste eu to. Tuta butɔ wa liste udi pabuipi ne aksio bua kuyibueja.';
+
+  @override
+  String get portfolioAskTitle => 'Nkonko bua portefeuille webe';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

@@ -2212,4 +2212,10 @@ class AppLocalizationsMr extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'या यादीत अद्याप कोणतेही शेअर नाहीत. जोडण्यासाठी शेअरच्या शेजारील यादी बटणावर टॅप करा.';
+
+  @override
+  String get portfolioAskTitle => 'तुमच्या पोर्टफोलिओबद्दल प्रश्न';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

@@ -2193,4 +2193,10 @@ class AppLocalizationsKm extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'មិនទាន់មានភាគហ៊ុននៅក្នុងបញ្ជីនេះទេ។ ចុចប៊ូតុងបញ្ជីនៅក្បែរភាគហ៊ុនដើម្បីបន្ថែមវា។';
+
+  @override
+  String get portfolioAskTitle => 'សំណួរអំពីផលប័ត្ររបស់អ្នក';
+
+  @override
+  String get rangeYtd => 'ឆ្នាំនេះ';
 }

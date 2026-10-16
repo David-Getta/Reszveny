@@ -591,5 +591,7 @@
   "watchListRename": "Přejmenovat seznam",
   "watchListDelete": "Smazat seznam",
   "watchListAddTo": "Přidat do seznamu",
-  "watchListEmpty": "V tomto seznamu zatím nejsou žádné akcie. Akcii přidáte klepnutím na tlačítko seznamu vedle ní."
+  "watchListEmpty": "V tomto seznamu zatím nejsou žádné akcie. Akcii přidáte klepnutím na tlačítko seznamu vedle ní.",
+  "portfolioAskTitle": "Otázky k vašemu portfoliu",
+  "rangeYtd": "Letos"
 }

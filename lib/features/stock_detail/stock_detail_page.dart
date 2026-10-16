@@ -28,6 +28,7 @@ import 'widgets/kv_table.dart';
 import 'widgets/peers_strip.dart';
 import 'widgets/price_chart.dart';
 import 'widgets/section_card.dart';
+import 'widgets/returns_strip.dart';
 import 'widgets/statements_table.dart';
 import 'widgets/week52_range.dart';
 import '../../widgets/centered_scroll.dart';
@@ -297,11 +298,18 @@ class _DetailsBody extends StatelessWidget {
             : ListenableBuilder(
                 // A saját átlagár és az aktív riasztások szintje a grafikonon.
                 listenable: Listenable.merge([AppServices.of(context).portfolio, AppServices.of(context).alerts]),
-                builder: (context, _) => PriceChart(
-                  history: d.history!,
-                  fmt: fmt,
-                  currency: cur,
-                  levels: chartLevels(context, d.symbol, cur),
+                builder: (context, _) => Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    PriceChart(
+                      history: d.history!,
+                      fmt: fmt,
+                      currency: cur,
+                      levels: chartLevels(context, d.symbol, cur),
+                    ),
+                    // Hozamok több időtávon, egy pillantással.
+                    ReturnsStrip(history: d.history!, fmt: fmt),
+                  ],
                 ),
               ),
       ),

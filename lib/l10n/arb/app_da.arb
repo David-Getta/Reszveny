@@ -591,5 +591,7 @@
   "watchListRename": "Omdøb liste",
   "watchListDelete": "Slet liste",
   "watchListAddTo": "Føj til en liste",
-  "watchListEmpty": "Der er endnu ingen aktier på denne liste. Tryk på listeknappen ud for en aktie for at tilføje den."
+  "watchListEmpty": "Der er endnu ingen aktier på denne liste. Tryk på listeknappen ud for en aktie for at tilføje den.",
+  "portfolioAskTitle": "Spørgsmål om din portefølje",
+  "rangeYtd": "I år"
 }

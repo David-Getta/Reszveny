@@ -2219,4 +2219,10 @@ class AppLocalizationsRn extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Nta migabane iri kuri uru rutonde ubu. Fyonda akabuto k\'urutonde kari iruhande y\'umugabane kugira uwushireko.';
+
+  @override
+  String get portfolioAskTitle => 'Ibibazo ku ishoramari ryawe';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

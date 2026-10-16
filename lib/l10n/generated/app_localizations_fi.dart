@@ -2214,4 +2214,10 @@ class AppLocalizationsFi extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Tällä listalla ei ole vielä osakkeita. Lisää osake napauttamalla sen vieressä olevaa listapainiketta.';
+
+  @override
+  String get portfolioAskTitle => 'Kysymyksiä salkustasi';
+
+  @override
+  String get rangeYtd => 'Tänä v.';
 }

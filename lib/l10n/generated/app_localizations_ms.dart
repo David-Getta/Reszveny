@@ -2217,4 +2217,10 @@ class AppLocalizationsMs extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Belum ada saham dalam senarai ini. Ketik butang senarai di sebelah saham untuk menambahnya.';
+
+  @override
+  String get portfolioAskTitle => 'Soalan tentang portfolio anda';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

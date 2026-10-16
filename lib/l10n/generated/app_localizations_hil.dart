@@ -2226,4 +2226,10 @@ class AppLocalizationsHil extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Wala pa sing stock sa sini nga listahan. I-tap ang button sang listahan sa tupad sang stock agod idugang ini.';
+
+  @override
+  String get portfolioAskTitle => 'Mga pamangkot parte sa imo portfolio';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

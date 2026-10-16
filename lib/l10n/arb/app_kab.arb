@@ -591,5 +591,7 @@
   "watchListRename": "Snifel isem n tebdart",
   "watchListDelete": "Kkes tabdart",
   "watchListAddTo": "Rnu ɣer tebdart",
-  "watchListEmpty": "Ulac ula d yiwen n usehm deg tebdart-a ar tura. Sit ɣef tqeffalt n tebdart ɣer yidis n usehm akken ad t-ternuḍ."
+  "watchListEmpty": "Ulac ula d yiwen n usehm deg tebdart-a ar tura. Sit ɣef tqeffalt n tebdart ɣer yidis n usehm akken ad t-ternuḍ.",
+  "portfolioAskTitle": "Isteqsiyen ɣef uqrab-ik",
+  "rangeYtd": "Aseggas-a"
 }

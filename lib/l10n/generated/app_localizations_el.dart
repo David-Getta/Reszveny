@@ -2220,4 +2220,10 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Δεν υπάρχουν ακόμη μετοχές σε αυτήν τη λίστα. Πατήστε το κουμπί λίστας δίπλα σε μια μετοχή για να την προσθέσετε.';
+
+  @override
+  String get portfolioAskTitle => 'Ερωτήσεις για το χαρτοφυλάκιό σας';
+
+  @override
+  String get rangeYtd => 'Από 1/1';
 }

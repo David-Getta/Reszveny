@@ -2211,4 +2211,10 @@ class AppLocalizationsYo extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Kò tíì sí ìpín kankan nínú àkójọ yìí. Tẹ bọ́tìnnì àkójọ lẹ́gbẹ̀ẹ́ ìpín kan láti fi kún un.';
+
+  @override
+  String get portfolioAskTitle => 'Àwọn ìbéèrè nípa àpò ìdókòwò rẹ';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

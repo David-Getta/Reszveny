@@ -2221,4 +2221,10 @@ class AppLocalizationsOm extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Tarree kana keessa ammallee aksiyoonni hin jiran. Dabaluuf furtuu tarree aksiyoona cinaa jiru tuqi.';
+
+  @override
+  String get portfolioAskTitle => 'Gaaffilee waa\'ee poortfooliyoo keessanii';
+
+  @override
+  String get rangeYtd => 'Bara kana';
 }

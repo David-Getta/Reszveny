@@ -591,5 +591,7 @@
   "watchListRename": "Soppi turu limm bi",
   "watchListDelete": "Far limm bi",
   "watchListAddTo": "Yokk ci limm",
-  "watchListEmpty": "Amagul benn aksiyoŋ ci limm bii. Bësal butoŋu limm bi ci wetu aksiyoŋ bi ngir yokk ko."
+  "watchListEmpty": "Amagul benn aksiyoŋ ci limm bii. Bësal butoŋu limm bi ci wetu aksiyoŋ bi ngir yokk ko.",
+  "portfolioAskTitle": "Laaj yi ci sa aksiyoŋ yi",
+  "rangeYtd": "At mii"
 }

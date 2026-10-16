@@ -2219,4 +2219,10 @@ class AppLocalizationsSq extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Ende nuk ka aksione në këtë listë. Prek butonin e listës pranë një aksioni për ta shtuar.';
+
+  @override
+  String get portfolioAskTitle => 'Pyetje për portofolin tuaj';
+
+  @override
+  String get rangeYtd => 'Këtë vit';
 }

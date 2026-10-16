@@ -591,5 +591,7 @@
   "watchListRename": "Kyusa erinnya ly'olukalala",
   "watchListDelete": "Sazaamu olukalala",
   "watchListAddTo": "Gattako ku lukalala",
-  "watchListEmpty": "Tewannaba kubaawo sitoka ku lukalala luno. Nyiga eppeesa ly'olukalala eriri okumpi ne sitoka okugigattako."
+  "watchListEmpty": "Tewannaba kubaawo sitoka ku lukalala luno. Nyiga eppeesa ly'olukalala eriri okumpi ne sitoka okugigattako.",
+  "portfolioAskTitle": "Ebibuuzo ku migabo gyo",
+  "rangeYtd": "YTD"
 }

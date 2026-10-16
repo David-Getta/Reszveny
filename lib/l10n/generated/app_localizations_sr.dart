@@ -2255,4 +2255,10 @@ class AppLocalizationsSr extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'На овој листи још нема акција. Додирните дугме листе поред акције да бисте је додали.';
+
+  @override
+  String get portfolioAskTitle => 'Питања о вашем портфолију';
+
+  @override
+  String get rangeYtd => 'Од поч. г.';
 }

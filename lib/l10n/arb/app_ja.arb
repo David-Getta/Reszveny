@@ -591,5 +591,7 @@
   "watchListRename": "リスト名を変更",
   "watchListDelete": "リストを削除",
   "watchListAddTo": "リストに追加",
-  "watchListEmpty": "このリストにはまだ銘柄がありません。銘柄の横にあるリストボタンをタップして追加してください。"
+  "watchListEmpty": "このリストにはまだ銘柄がありません。銘柄の横にあるリストボタンをタップして追加してください。",
+  "portfolioAskTitle": "ポートフォリオについての質問",
+  "rangeYtd": "年初来"
 }

@@ -2219,4 +2219,10 @@ class AppLocalizationsFil extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Wala pang stock sa listahang ito. I-tap ang button ng listahan sa tabi ng isang stock para idagdag ito.';
+
+  @override
+  String get portfolioAskTitle => 'Mga tanong tungkol sa portfolio mo';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

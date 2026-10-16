@@ -2212,4 +2212,10 @@ class AppLocalizationsTk extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Bu sanawda entek paýnama ýok. Goşmak üçin paýnamanyň gapdalyndaky sanaw düwmesine basyň.';
+
+  @override
+  String get portfolioAskTitle => 'Portfeliňiz barada soraglar';
+
+  @override
+  String get rangeYtd => 'Şu ýyl';
 }

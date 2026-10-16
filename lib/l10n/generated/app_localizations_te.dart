@@ -2218,4 +2218,10 @@ class AppLocalizationsTe extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'ఈ జాబితాలో ఇంకా స్టాక్‌లు లేవు. జోడించడానికి స్టాక్ పక్కన ఉన్న జాబితా బటన్‌ను నొక్కండి.';
+
+  @override
+  String get portfolioAskTitle => 'మీ పోర్ట్‌ఫోలియో గురించి ప్రశ్నలు';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

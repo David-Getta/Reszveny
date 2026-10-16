@@ -591,5 +591,7 @@
   "watchListRename": "Garũra rĩĩtwa rĩa orodha",
   "watchListDelete": "Ehereria orodha",
   "watchListAddTo": "Ongerera orodha-inĩ",
-  "watchListEmpty": "Gũtirĩ hisa orodha-inĩ ĩno o na rĩu. Hũtia kĩhũthio kĩa orodha hakuhĩ na hisa nĩguo ũmĩongerere."
+  "watchListEmpty": "Gũtirĩ hisa orodha-inĩ ĩno o na rĩu. Hũtia kĩhũthio kĩa orodha hakuhĩ na hisa nĩguo ũmĩongerere.",
+  "portfolioAskTitle": "Ciũria igiĩ hisa ciaku",
+  "rangeYtd": "Mwaka uyu"
 }

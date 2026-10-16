@@ -2217,4 +2217,10 @@ class AppLocalizationsHa extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Babu hannun jari a wannan jerin tukuna. Matsa maɓallin jeri kusa da hannun jari don ƙara shi.';
+
+  @override
+  String get portfolioAskTitle => 'Tambayoyi game da jakar hannun jarinku';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

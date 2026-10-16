@@ -2212,4 +2212,10 @@ class AppLocalizationsAk extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Stɔk biara nni nhyehyɛe yi mu da. Mia nhyehyɛe bɔtɔn a ɛbɛn stɔk bi na fa ka ho.';
+
+  @override
+  String get portfolioAskTitle => 'Nsɛmmisa fa wo nkyɛfa ho';
+
+  @override
+  String get rangeYtd => 'Afe yi';
 }

@@ -2187,4 +2187,10 @@ class AppLocalizationsLo extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'ຍັງບໍ່ມີຫຸ້ນໃນລາຍການນີ້. ແຕະປຸ່ມລາຍການຂ້າງຫຸ້ນເພື່ອເພີ່ມ.';
+
+  @override
+  String get portfolioAskTitle => 'ຄຳຖາມກ່ຽວກັບພອດໂຟລິໂອຂອງທ່ານ';
+
+  @override
+  String get rangeYtd => 'ປີນີ້';
 }

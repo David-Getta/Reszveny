@@ -2213,4 +2213,10 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Bado hakuna hisa kwenye orodha hii. Gusa kitufe cha orodha kando ya hisa ili kuiongeza.';
+
+  @override
+  String get portfolioAskTitle => 'Maswali kuhusu jalada lako la hisa';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

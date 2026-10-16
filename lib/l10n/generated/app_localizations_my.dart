@@ -2205,4 +2205,10 @@ class AppLocalizationsMy extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'ဤစာရင်းတွင် စတော့ မရှိသေးပါ။ ထည့်ရန် စတော့ဘေးရှိ စာရင်းခလုတ်ကို တို့ပါ။';
+
+  @override
+  String get portfolioAskTitle => 'သင့် ပေါ့ဖိုလီယို အကြောင်း မေးခွန်းများ';
+
+  @override
+  String get rangeYtd => 'ယခုနှစ်';
 }

@@ -2211,4 +2211,10 @@ class AppLocalizationsDa extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Der er endnu ingen aktier på denne liste. Tryk på listeknappen ud for en aktie for at tilføje den.';
+
+  @override
+  String get portfolioAskTitle => 'Spørgsmål om din portefølje';
+
+  @override
+  String get rangeYtd => 'I år';
 }

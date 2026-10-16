@@ -2218,4 +2218,10 @@ class AppLocalizationsHu extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Ezen a listán még nincs részvény. A részvény melletti lista gombbal veheted fel.';
+
+  @override
+  String get portfolioAskTitle => 'Kérdések a portfóliódról';
+
+  @override
+  String get rangeYtd => 'Idén';
 }

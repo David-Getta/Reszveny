@@ -1713,5 +1713,13 @@
   "watchListRename": "Rename list",
   "watchListDelete": "Delete list",
   "watchListAddTo": "Add to a list",
-  "watchListEmpty": "No stocks in this list yet. Tap the list button next to a stock to add it."
+  "watchListEmpty": "No stocks in this list yet. Tap the list button next to a stock to add it.",
+  "portfolioAskTitle": "Questions about your portfolio",
+  "@portfolioAskTitle": {
+    "description": "Title of the sheet where the user asks the AI follow-up questions about its portfolio review."
+  },
+  "rangeYtd": "YTD",
+  "@rangeYtd": {
+    "description": "Very short label: return since the start of this year (year to date), next to 1W, 1M, 3M, 1Y, 5Y."
+  }
 }

@@ -2214,4 +2214,10 @@ class AppLocalizationsJv extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Durung ana saham ing dhaptar iki. Tutul tombol dhaptar ing sandhingé saham kanggo nambahaké.';
+
+  @override
+  String get portfolioAskTitle => 'Pitakon babagan portofolio sampeyan';
+
+  @override
+  String get rangeYtd => 'Taun iki';
 }

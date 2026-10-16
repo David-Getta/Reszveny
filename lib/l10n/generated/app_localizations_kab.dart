@@ -2211,4 +2211,10 @@ class AppLocalizationsKab extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Ulac ula d yiwen n usehm deg tebdart-a ar tura. Sit ɣef tqeffalt n tebdart ɣer yidis n usehm akken ad t-ternuḍ.';
+
+  @override
+  String get portfolioAskTitle => 'Isteqsiyen ɣef uqrab-ik';
+
+  @override
+  String get rangeYtd => 'Aseggas-a';
 }

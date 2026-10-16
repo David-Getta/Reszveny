@@ -591,5 +591,7 @@
   "watchListRename": "Canviar el nom de la llista",
   "watchListDelete": "Suprimir la llista",
   "watchListAddTo": "Afegir a una llista",
-  "watchListEmpty": "Encara no hi ha cap acció en aquesta llista. Toca el botó de llista al costat d'una acció per afegir-la."
+  "watchListEmpty": "Encara no hi ha cap acció en aquesta llista. Toca el botó de llista al costat d'una acció per afegir-la.",
+  "portfolioAskTitle": "Preguntes sobre la teva cartera",
+  "rangeYtd": "Enguany"
 }

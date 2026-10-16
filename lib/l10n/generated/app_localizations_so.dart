@@ -2219,4 +2219,10 @@ class AppLocalizationsSo extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Liiskan weli saami kuma jiro. Taabo badhanka liiska ee ku xiga saamiga si aad ugu darto.';
+
+  @override
+  String get portfolioAskTitle => 'Su\'aalo ku saabsan portfoliyadaada';
+
+  @override
+  String get rangeYtd => 'Sanadkan';
 }

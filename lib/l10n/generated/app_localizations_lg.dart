@@ -2223,4 +2223,10 @@ class AppLocalizationsLg extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Tewannaba kubaawo sitoka ku lukalala luno. Nyiga eppeesa ly\'olukalala eriri okumpi ne sitoka okugigattako.';
+
+  @override
+  String get portfolioAskTitle => 'Ebibuuzo ku migabo gyo';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

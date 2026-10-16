@@ -2208,4 +2208,10 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Belum ada saham di daftar ini. Ketuk tombol daftar di samping saham untuk menambahkannya.';
+
+  @override
+  String get portfolioAskTitle => 'Pertanyaan tentang portofolio Anda';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

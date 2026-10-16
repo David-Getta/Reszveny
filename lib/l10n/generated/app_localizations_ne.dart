@@ -2211,4 +2211,10 @@ class AppLocalizationsNe extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'यो सूचीमा अझै कुनै सेयर छैन। थप्न सेयरको छेउको सूची बटन ट्याप गर्नुहोस्।';
+
+  @override
+  String get portfolioAskTitle => 'तपाईंको पोर्टफोलियोबारे प्रश्नहरू';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

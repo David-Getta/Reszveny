@@ -2212,4 +2212,10 @@ class AppLocalizationsTr extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Bu listede henüz hisse yok. Eklemek için hissenin yanındaki liste düğmesine dokun.';
+
+  @override
+  String get portfolioAskTitle => 'Portföyün hakkında sorular';
+
+  @override
+  String get rangeYtd => 'YBB';
 }

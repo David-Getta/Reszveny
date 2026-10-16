@@ -790,7 +790,21 @@ void main() {
     await tester.ensureVisible(find.byKey(const ValueKey('earnings-card')));
     await tester.pumpAndSettle();
     await _shot(tester, 'earnings_phone_hu');
-    await tester.ensureVisible(find.byKey(const ValueKey('insiders-card')));
+    final returns = find.byKey(const ValueKey('returns-strip'));
+    for (var i = 0; i < 20 && returns.evaluate().isEmpty; i++) {
+      await tester.drag(find.byType(Scrollable).first, const Offset(0, 300));
+      await tester.pumpAndSettle();
+    }
+    await tester.ensureVisible(returns);
+    await tester.drag(find.byType(Scrollable).first, const Offset(0, 250));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'returns_phone_hu');
+    final insiders = find.byKey(const ValueKey('insiders-card'));
+    for (var i = 0; i < 20 && insiders.evaluate().isEmpty; i++) {
+      await tester.drag(find.byType(Scrollable).first, const Offset(0, -300));
+      await tester.pumpAndSettle();
+    }
+    await tester.ensureVisible(insiders);
     await tester.pumpAndSettle();
     await _shot(tester, 'insiders_phone_hu');
     final trend = find.byKey(const ValueKey('consensus-trend'));

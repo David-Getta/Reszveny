@@ -2216,4 +2216,10 @@ class AppLocalizationsAf extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Nog geen aandele in hierdie lys nie. Tik op die lysknoppie langs \'n aandeel om dit by te voeg.';
+
+  @override
+  String get portfolioAskTitle => 'Vrae oor jou portefeulje';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

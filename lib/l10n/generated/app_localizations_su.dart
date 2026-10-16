@@ -2215,4 +2215,10 @@ class AppLocalizationsSu extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Can aya saham dina daptar ieu. Toél tombol daptar di gigireun saham pikeun nambahkeunana.';
+
+  @override
+  String get portfolioAskTitle => 'Patarosan ngeunaan portofolio anjeun';
+
+  @override
+  String get rangeYtd => 'Taun ieu';
 }

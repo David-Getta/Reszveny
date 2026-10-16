@@ -2254,4 +2254,10 @@ class AppLocalizationsHr extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Na ovom popisu još nema dionica. Dodirnite gumb popisa pokraj dionice da biste je dodali.';
+
+  @override
+  String get portfolioAskTitle => 'Pitanja o vašem portfelju';
+
+  @override
+  String get rangeYtd => 'Od poč. g.';
 }

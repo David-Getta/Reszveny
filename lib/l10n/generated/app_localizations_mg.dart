@@ -2228,4 +2228,10 @@ class AppLocalizationsMg extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Mbola tsy misy anjara ato amin\'ity lisitra ity. Tsindrio ny bokotra lisitra eo akaikin\'ny anjara iray mba hanampiana azy.';
+
+  @override
+  String get portfolioAskTitle => 'Fanontaniana momba ny kitapom-bolanao';
+
+  @override
+  String get rangeYtd => 'Taona izao';
 }

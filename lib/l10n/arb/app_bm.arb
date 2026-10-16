@@ -591,5 +591,7 @@
   "watchListRename": "Lisi tɔgɔ yɛlɛma",
   "watchListDelete": "Lisi jɔsi",
   "watchListAddTo": "Fara lisi kan",
-  "watchListEmpty": "Aksiyɔn si tɛ nin lisi la fɔlɔ. Digi lisi butɔni kan aksiyɔn kɛrɛfɛ walasa k'a fara a kan."
+  "watchListEmpty": "Aksiyɔn si tɛ nin lisi la fɔlɔ. Digi lisi butɔni kan aksiyɔn kɛrɛfɛ walasa k'a fara a kan.",
+  "portfolioAskTitle": "Ɲininkaliw i ka aksiyɔn kɛsu kan",
+  "rangeYtd": "Nin san"
 }

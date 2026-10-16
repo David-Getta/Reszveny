@@ -591,5 +591,7 @@
   "watchListRename": "Ovay ny anaran'ny lisitra",
   "watchListDelete": "Fafao ny lisitra",
   "watchListAddTo": "Ampio amin'ny lisitra",
-  "watchListEmpty": "Mbola tsy misy anjara ato amin'ity lisitra ity. Tsindrio ny bokotra lisitra eo akaikin'ny anjara iray mba hanampiana azy."
+  "watchListEmpty": "Mbola tsy misy anjara ato amin'ity lisitra ity. Tsindrio ny bokotra lisitra eo akaikin'ny anjara iray mba hanampiana azy.",
+  "portfolioAskTitle": "Fanontaniana momba ny kitapom-bolanao",
+  "rangeYtd": "Taona izao"
 }

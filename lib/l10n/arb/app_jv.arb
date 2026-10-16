@@ -591,5 +591,7 @@
   "watchListRename": "Ganti jeneng dhaptar",
   "watchListDelete": "Busak dhaptar",
   "watchListAddTo": "Tambahake menyang dhaptar",
-  "watchListEmpty": "Durung ana saham ing dhaptar iki. Tutul tombol dhaptar ing sandhingé saham kanggo nambahaké."
+  "watchListEmpty": "Durung ana saham ing dhaptar iki. Tutul tombol dhaptar ing sandhingé saham kanggo nambahaké.",
+  "portfolioAskTitle": "Pitakon babagan portofolio sampeyan",
+  "rangeYtd": "Taun iki"
 }

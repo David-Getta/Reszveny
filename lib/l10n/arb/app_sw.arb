@@ -591,5 +591,7 @@
   "watchListRename": "Badilisha jina la orodha",
   "watchListDelete": "Futa orodha",
   "watchListAddTo": "Ongeza kwenye orodha",
-  "watchListEmpty": "Bado hakuna hisa kwenye orodha hii. Gusa kitufe cha orodha kando ya hisa ili kuiongeza."
+  "watchListEmpty": "Bado hakuna hisa kwenye orodha hii. Gusa kitufe cha orodha kando ya hisa ili kuiongeza.",
+  "portfolioAskTitle": "Maswali kuhusu jalada lako la hisa",
+  "rangeYtd": "YTD"
 }

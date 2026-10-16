@@ -2217,4 +2217,10 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Nog geen aandelen in deze lijst. Tik op de lijstknop naast een aandeel om het toe te voegen.';
+
+  @override
+  String get portfolioAskTitle => 'Vragen over je portefeuille';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

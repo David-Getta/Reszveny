@@ -2222,4 +2222,10 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'இந்தப் பட்டியலில் இன்னும் பங்குகள் இல்லை. சேர்க்க, பங்கின் அருகிலுள்ள பட்டியல் பொத்தானைத் தட்டவும்.';
+
+  @override
+  String get portfolioAskTitle => 'உங்கள் போர்ட்ஃபோலியோ பற்றிய கேள்விகள்';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

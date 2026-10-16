@@ -2204,4 +2204,10 @@ class AppLocalizationsPs extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'په دې لېست کې لا تر اوسه هېڅ ونډه نشته. د ورزیاتولو لپاره د ونډې تر څنګ د لېست تڼۍ ټک کړئ.';
+
+  @override
+  String get portfolioAskTitle => 'ستاسو د پورټفولیو په اړه پوښتنې';
+
+  @override
+  String get rangeYtd => 'سږکال';
 }

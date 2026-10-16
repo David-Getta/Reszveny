@@ -2215,4 +2215,10 @@ class AppLocalizationsUg extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'بۇ تىزىملىكتە تېخى پاي چېكى يوق. قوشۇش ئۈچۈن پاي چېكىنىڭ يېنىدىكى تىزىملىك كۇنۇپكىسىنى چېكىڭ.';
+
+  @override
+  String get portfolioAskTitle => 'مەبلەغ بىرىكمىڭىز ھەققىدىكى سوئاللار';
+
+  @override
+  String get rangeYtd => 'بۇ يىل';
 }

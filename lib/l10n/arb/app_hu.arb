@@ -591,5 +591,7 @@
   "watchListRename": "Lista átnevezése",
   "watchListDelete": "Lista törlése",
   "watchListAddTo": "Listához adás",
-  "watchListEmpty": "Ezen a listán még nincs részvény. A részvény melletti lista gombbal veheted fel."
+  "watchListEmpty": "Ezen a listán még nincs részvény. A részvény melletti lista gombbal veheted fel.",
+  "portfolioAskTitle": "Kérdések a portfóliódról",
+  "rangeYtd": "Idén"
 }

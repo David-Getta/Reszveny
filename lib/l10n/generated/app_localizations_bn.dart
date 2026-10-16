@@ -2211,4 +2211,10 @@ class AppLocalizationsBn extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'এই তালিকায় এখনও কোনো শেয়ার নেই। যোগ করতে শেয়ারের পাশের তালিকা বোতামে ট্যাপ করুন।';
+
+  @override
+  String get portfolioAskTitle => 'আপনার পোর্টফোলিও নিয়ে প্রশ্ন';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

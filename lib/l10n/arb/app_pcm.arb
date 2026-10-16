@@ -591,5 +591,7 @@
   "watchListRename": "Change list name",
   "watchListDelete": "Delete list",
   "watchListAddTo": "Add am to list",
-  "watchListEmpty": "No stock dey dis list yet. Tap di list button wey dey near any stock to add am."
+  "watchListEmpty": "No stock dey dis list yet. Tap di list button wey dey near any stock to add am.",
+  "portfolioAskTitle": "Questions about your portfolio",
+  "rangeYtd": "YTD"
 }

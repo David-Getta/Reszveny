@@ -591,5 +591,7 @@
   "watchListRename": "Fetola leina la lenaane",
   "watchListDelete": "Phimola lenaane",
   "watchListAddTo": "Tsenya mo lenaaneng",
-  "watchListEmpty": "Ga go na dishere mo lenaaneng leno ga jaana. Tobetsa konopo ya lenaane fa thoko ga shere go e tsenya."
+  "watchListEmpty": "Ga go na dishere mo lenaaneng leno ga jaana. Tobetsa konopo ya lenaane fa thoko ga shere go e tsenya.",
+  "portfolioAskTitle": "Dipotso ka potefolio ya gago",
+  "rangeYtd": "YTD"
 }

@@ -2221,4 +2221,10 @@ class AppLocalizationsZu extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Awekho amasheya kulolu hlu okwamanje. Thepha inkinobho yohlu eduze kwesheya ukuze ulengeze.';
+
+  @override
+  String get portfolioAskTitle => 'Imibuzo ngephothifoliyo yakho';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

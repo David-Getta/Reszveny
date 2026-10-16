@@ -2202,4 +2202,10 @@ class AppLocalizationsBo extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'ཐོ་ཡིག་འདིའི་ནང་ད་དུང་མ་འཛིན་མེད། སྣོན་པར་མ་འཛིན་གྱི་འགྲམ་གྱི་ཐོ་ཡིག་མཐེབ་གནོན་ལ་ཨེབ།';
+
+  @override
+  String get portfolioAskTitle => 'ཁྱེད་ཀྱི་མ་འཇོག་ཚོགས་སྡེབ་སྐོར་གྱི་དྲི་བ།';
+
+  @override
+  String get rangeYtd => 'ད་ལོ';
 }

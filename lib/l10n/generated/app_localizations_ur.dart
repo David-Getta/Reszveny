@@ -2212,4 +2212,10 @@ class AppLocalizationsUr extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'اس فہرست میں ابھی کوئی شیئر نہیں ہے۔ شامل کرنے کے لیے شیئر کے ساتھ فہرست بٹن پر ٹیپ کریں۔';
+
+  @override
+  String get portfolioAskTitle => 'آپ کے پورٹ فولیو کے بارے میں سوالات';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

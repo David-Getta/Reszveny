@@ -2199,4 +2199,10 @@ class AppLocalizationsMos extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Aksyõ ka be liste-kãngã pʋgẽ ye. Ningi listã butõ wã sẽn be aksyõã taobã n paas-a.';
+
+  @override
+  String get portfolioAskTitle => 'Sokre: f portfey';
+
+  @override
+  String get rangeYtd => 'Yʋʋm kãnga';
 }

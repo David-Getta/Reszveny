@@ -591,5 +591,7 @@
   "watchListRename": "Soba zina ya lisiti",
   "watchListDelete": "Katula lisiti",
   "watchListAddTo": "Yika na lisiti",
-  "watchListEmpty": "Ata aksio mosi ve na lisiti yai ntete. Fina buto ya lisiti yina kele pembeni ya aksio sambu na kuyika yo."
+  "watchListEmpty": "Ata aksio mosi ve na lisiti yai ntete. Fina buto ya lisiti yina kele pembeni ya aksio sambu na kuyika yo.",
+  "portfolioAskTitle": "Biuvu mu portefeuille na nge",
+  "rangeYtd": "Mvu yayi"
 }

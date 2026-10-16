@@ -2219,4 +2219,10 @@ class AppLocalizationsNy extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Palibe masheya pa mndandandawu pano. Dinani batani la mndandanda pafupi ndi sheya kuti muwonjezere.';
+
+  @override
+  String get portfolioAskTitle => 'Mafunso okhudza masheya anu';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

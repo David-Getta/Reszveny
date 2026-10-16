@@ -2211,4 +2211,10 @@ class AppLocalizationsHt extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Poko gen aksyon nan lis sa a. Tape bouton lis la bò kote yon aksyon pou ajoute l.';
+
+  @override
+  String get portfolioAskTitle => 'Kesyon sou pòtfèy ou';
+
+  @override
+  String get rangeYtd => 'Ane sa a';
 }

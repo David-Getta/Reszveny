@@ -2210,4 +2210,10 @@ class AppLocalizationsSi extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'මෙම ලැයිස්තුවේ තවම කොටස් නැත. එක් කිරීමට කොටසක් අසල ඇති ලැයිස්තු බොත්තම තට්ටු කරන්න.';
+
+  @override
+  String get portfolioAskTitle => 'ඔබේ කළඹ ගැන ප්‍රශ්න';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

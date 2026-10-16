@@ -2226,4 +2226,10 @@ class AppLocalizationsTn extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Ga go na dishere mo lenaaneng leno ga jaana. Tobetsa konopo ya lenaane fa thoko ga shere go e tsenya.';
+
+  @override
+  String get portfolioAskTitle => 'Dipotso ka potefolio ya gago';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

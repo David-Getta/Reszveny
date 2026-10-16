@@ -2217,4 +2217,10 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Ainda não há ações nesta lista. Toque no botão de lista ao lado de uma ação para adicioná-la.';
+
+  @override
+  String get portfolioAskTitle => 'Perguntas sobre sua carteira';
+
+  @override
+  String get rangeYtd => 'No ano';
 }

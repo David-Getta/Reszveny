@@ -2216,4 +2216,10 @@ class AppLocalizationsEe extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Sitɔk aɖeke mele xexlẽdzesi sia me haɖe o. Zi xexlẽdzesi ƒe dzesi si le sitɔk aɖe xa be nàtsɔe akpe ɖe eŋu.';
+
+  @override
+  String get portfolioAskTitle => 'Nyabiasewo tso wò akpawo ŋu';
+
+  @override
+  String get rangeYtd => 'Ƒe sia';
 }

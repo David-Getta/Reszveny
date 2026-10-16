@@ -2222,4 +2222,10 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Aucune action dans cette liste pour l\'instant. Appuyez sur le bouton de liste à côté d\'une action pour l\'ajouter.';
+
+  @override
+  String get portfolioAskTitle => 'Questions sur votre portefeuille';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

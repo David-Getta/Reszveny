@@ -2213,4 +2213,10 @@ class AppLocalizationsKa extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'ამ სიაში ჯერ აქციები არ არის. დასამატებლად შეეხეთ სიის ღილაკს აქციის გვერდით.';
+
+  @override
+  String get portfolioAskTitle => 'კითხვები თქვენი პორტფელის შესახებ';
+
+  @override
+  String get rangeYtd => 'ამ წელს';
 }

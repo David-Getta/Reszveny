@@ -2212,4 +2212,10 @@ class AppLocalizationsKk extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Бұл тізімде әзірге акциялар жоқ. Қосу үшін акцияның жанындағы тізім түймесін түртіңіз.';
+
+  @override
+  String get portfolioAskTitle => 'Портфеліңіз туралы сұрақтар';
+
+  @override
+  String get rangeYtd => 'Биыл';
 }

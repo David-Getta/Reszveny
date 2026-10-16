@@ -2214,4 +2214,10 @@ class AppLocalizationsAz extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Bu siyahıda hələ səhm yoxdur. Əlavə etmək üçün səhmin yanındakı siyahı düyməsinə toxunun.';
+
+  @override
+  String get portfolioAskTitle => 'Portfeliniz haqqında suallar';
+
+  @override
+  String get rangeYtd => 'Bu il';
 }

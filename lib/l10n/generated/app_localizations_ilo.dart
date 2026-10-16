@@ -2230,4 +2230,10 @@ class AppLocalizationsIlo extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Awan pay ti stock iti daytoy a listaan. I-tap ti buton ti listaan iti abay ti stock tapno inayon dayta.';
+
+  @override
+  String get portfolioAskTitle => 'Saludsod maipapan iti portfolio-m';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

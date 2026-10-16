@@ -2226,4 +2226,10 @@ class AppLocalizationsQu extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Kay listapiqa manaraqmi accionkuna kanchu. Yapanapaq accionpa waqtanpi lista butonta ñit\'iy.';
+
+  @override
+  String get portfolioAskTitle => 'Tapukuykuna: portafolioyki';
+
+  @override
+  String get rangeYtd => 'Kunan wata';
 }

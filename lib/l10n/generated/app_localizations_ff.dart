@@ -2207,4 +2207,10 @@ class AppLocalizationsFf extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Alaa hay sitok e ndee doggol tawo. Ñoƒƒu butoŋ doggol takko sitok ngam ɓeydude ɗum.';
+
+  @override
+  String get portfolioAskTitle => 'Naamne dow aksiyoŋ maa';
+
+  @override
+  String get rangeYtd => 'Hikka';
 }

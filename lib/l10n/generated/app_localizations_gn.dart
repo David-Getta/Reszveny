@@ -2218,4 +2218,10 @@ class AppLocalizationsGn extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Ndaipóri gueteri acción ko listape. Ejopy lista votõ oĩva acción ykére embojuaju hag̃ua.';
+
+  @override
+  String get portfolioAskTitle => 'Porandu nde cartera rehegua';
+
+  @override
+  String get rangeYtd => 'Ko ary';
 }

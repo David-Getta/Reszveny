@@ -591,5 +591,7 @@
   "watchListRename": "목록 이름 변경",
   "watchListDelete": "목록 삭제",
   "watchListAddTo": "목록에 추가",
-  "watchListEmpty": "이 목록에 아직 종목이 없습니다. 종목 옆의 목록 버튼을 탭하여 추가하세요."
+  "watchListEmpty": "이 목록에 아직 종목이 없습니다. 종목 옆의 목록 버튼을 탭하여 추가하세요.",
+  "portfolioAskTitle": "내 포트폴리오에 대한 질문",
+  "rangeYtd": "연초 이후"
 }

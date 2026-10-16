@@ -2176,4 +2176,10 @@ class AppLocalizationsTi extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'ኣብዚ ዝርዝር ክሳብ ሕጂ ዝኾነ ኣክሲዮን የለን። ንምውሳኽ ኣብ ጥቓ ኣክሲዮን ዘሎ መልጎም ዝርዝር ጠውቕ።';
+
+  @override
+  String get portfolioAskTitle => 'ሕቶታት ብዛዕባ ፖርትፎሊዮኹም';
+
+  @override
+  String get rangeYtd => 'እዚ ዓመት';
 }

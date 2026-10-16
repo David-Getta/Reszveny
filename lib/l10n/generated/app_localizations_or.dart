@@ -2210,4 +2210,10 @@ class AppLocalizationsOr extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'ଏହି ତାଲିକାରେ ଏପର୍ଯ୍ୟନ୍ତ କୌଣସି ଷ୍ଟକ ନାହିଁ। ଯୋଡ଼ିବାକୁ ଷ୍ଟକ ପାଖରେ ଥିବା ତାଲିକା ବଟନରେ ଟାପ କରନ୍ତୁ।';
+
+  @override
+  String get portfolioAskTitle => 'ଆପଣଙ୍କ ପୋର୍ଟଫୋଲିଓ ବିଷୟରେ ପ୍ରଶ୍ନ';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

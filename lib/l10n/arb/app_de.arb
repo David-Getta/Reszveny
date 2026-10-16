@@ -591,5 +591,7 @@
   "watchListRename": "Liste umbenennen",
   "watchListDelete": "Liste löschen",
   "watchListAddTo": "Zu einer Liste hinzufügen",
-  "watchListEmpty": "Noch keine Aktien in dieser Liste. Zum Hinzufügen auf die Listen-Schaltfläche neben einer Aktie tippen."
+  "watchListEmpty": "Noch keine Aktien in dieser Liste. Zum Hinzufügen auf die Listen-Schaltfläche neben einer Aktie tippen.",
+  "portfolioAskTitle": "Fragen zu deinem Portfolio",
+  "rangeYtd": "YTD"
 }

@@ -2213,4 +2213,10 @@ class AppLocalizationsMn extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Энэ жагсаалтад одоогоор хувьцаа алга. Нэмэхийн тулд хувьцааны хажууд байгаа жагсаалтын товчийг дарна уу.';
+
+  @override
+  String get portfolioAskTitle => 'Таны портфолиогийн талаарх асуултууд';
+
+  @override
+  String get rangeYtd => 'Энэ жил';
 }

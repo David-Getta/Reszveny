@@ -591,5 +591,7 @@
   "watchListRename": "Listap sutinta tikray",
   "watchListDelete": "Listata qulluy",
   "watchListAddTo": "Listaman yapay",
-  "watchListEmpty": "Kay listapiqa manaraqmi accionkuna kanchu. Yapanapaq accionpa waqtanpi lista butonta ñit'iy."
+  "watchListEmpty": "Kay listapiqa manaraqmi accionkuna kanchu. Yapanapaq accionpa waqtanpi lista butonta ñit'iy.",
+  "portfolioAskTitle": "Tapukuykuna: portafolioyki",
+  "rangeYtd": "Kunan wata"
 }

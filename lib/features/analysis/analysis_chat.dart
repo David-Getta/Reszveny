@@ -31,6 +31,9 @@ class AnalysisChat extends ChangeNotifier {
 
   static const maxQuestions = 6;
 
+  /// A portfólió-elemzés jelentésének „tickere”.
+  static const portfolioSymbol = 'PORTFOLIO';
+
   final Map<String, List<ChatMessage>> _threads = {};
   final Set<String> _busy = {};
 
@@ -131,10 +134,15 @@ class AnalysisChat extends ChangeNotifier {
     required String language,
     required DateTime today,
   }) {
+    // A portfólió-elemzés is ilyen jelentés, „PORTFOLIO” jelöléssel.
+    final portfolio = r.symbol == portfolioSymbol;
+    final subject = portfolio
+        ? 'their whole stock portfolio'
+        : (companyName.isEmpty ? r.symbol : '$companyName (${r.symbol})');
     final b = StringBuffer()
       ..writeln(
-        'You are the WhatStock analyst. The reader has just read your analysis of '
-        '${companyName.isEmpty ? r.symbol : '$companyName (${r.symbol})'} and asks follow-up questions about it.',
+        'You are the WhatStock analyst. The reader has just read your ${portfolio ? 'review' : 'analysis'} of '
+        '$subject and asks follow-up questions about it.',
       )
       ..writeln()
       ..writeln('Rules:')
@@ -153,7 +161,8 @@ class AnalysisChat extends ChangeNotifier {
         'their situation. If asked for a decision, explain what it depends on.',
       )
       ..writeln(
-        '- If the question is unrelated to investing or this company, say briefly that you can only help with this analysis.',
+        '- If the question is unrelated to investing or this ${portfolio ? 'portfolio' : 'company'}, '
+        'say briefly that you can only help with this analysis.',
       )
       ..writeln()
       ..writeln(

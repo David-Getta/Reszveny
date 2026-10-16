@@ -9,6 +9,7 @@ import '../../l10n/generated/app_localizations.dart';
 import '../../l10n/supported_locales.dart';
 import '../../theme/app_theme.dart';
 import '../billing/paywall_page.dart';
+import '../stock_detail/widgets/ask_sheet.dart';
 import '../stock_detail/widgets/section_card.dart';
 import 'portfolio_review.dart';
 import 'portfolio_valuation.dart';
@@ -133,6 +134,14 @@ class _PortfolioReviewCardState extends State<PortfolioReviewCard> {
               '${l10n.aiGeneratedAt(fmt.dateTime(r.generatedAt))} · ${l10n.aiDisclaimer}',
               style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
             ),
+            // Kérdések a portfólió-elemzésről (a napi kérdéskeretből).
+            if (!_loading) ...[
+              const SizedBox(height: 10),
+              Align(
+                alignment: AlignmentDirectional.centerStart,
+                child: AskAnalysisButton(report: r, companyName: '', title: l10n.portfolioAskTitle),
+              ),
+            ],
           ],
           if (_error case final e?) ...[const SizedBox(height: 10), SectionError(errorMessage(l10n, e))],
           if (!_loading) ...[

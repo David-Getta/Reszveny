@@ -2231,4 +2231,10 @@ class AppLocalizationsMk extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Во оваа листа сè уште нема акции. Допрете го копчето за листа до акцијата за да ја додадете.';
+
+  @override
+  String get portfolioAskTitle => 'Прашања за вашето портфолио';
+
+  @override
+  String get rangeYtd => 'Од поч. г.';
 }

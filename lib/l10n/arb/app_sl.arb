@@ -591,5 +591,7 @@
   "watchListRename": "Preimenuj seznam",
   "watchListDelete": "Izbriši seznam",
   "watchListAddTo": "Dodaj na seznam",
-  "watchListEmpty": "Na tem seznamu še ni delnic. Za dodajanje tapnite gumb seznama ob delnici."
+  "watchListEmpty": "Na tem seznamu še ni delnic. Za dodajanje tapnite gumb seznama ob delnici.",
+  "portfolioAskTitle": "Vprašanja o vašem portfelju",
+  "rangeYtd": "Letos"
 }

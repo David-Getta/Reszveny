@@ -2212,4 +2212,10 @@ class AppLocalizationsNb extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Ingen aksjer i denne listen ennå. Trykk på listeknappen ved siden av en aksje for å legge den til.';
+
+  @override
+  String get portfolioAskTitle => 'Spørsmål om porteføljen din';
+
+  @override
+  String get rangeYtd => 'I år';
 }

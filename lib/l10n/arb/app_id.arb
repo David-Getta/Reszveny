@@ -591,5 +591,7 @@
   "watchListRename": "Ganti nama daftar",
   "watchListDelete": "Hapus daftar",
   "watchListAddTo": "Tambahkan ke daftar",
-  "watchListEmpty": "Belum ada saham di daftar ini. Ketuk tombol daftar di samping saham untuk menambahkannya."
+  "watchListEmpty": "Belum ada saham di daftar ini. Ketuk tombol daftar di samping saham untuk menambahkannya.",
+  "portfolioAskTitle": "Pertanyaan tentang portofolio Anda",
+  "rangeYtd": "YTD"
 }

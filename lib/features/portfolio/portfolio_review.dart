@@ -8,6 +8,7 @@ import '../../core/errors.dart';
 import '../../core/models/company_profile.dart';
 import '../../core/models/stock_metrics.dart';
 import '../../core/models/stock_report.dart';
+import '../analysis/analysis_chat.dart';
 import '../analysis/claude_stock_analyst.dart';
 import '../market_data/market_data_provider.dart';
 import 'portfolio_valuation.dart';
@@ -239,7 +240,7 @@ Return one JSON object: {"headline": string (one sentence: the most decision-rel
       ].join();
       final payload = jsonDecode(text) as Map<String, dynamic>;
       report = StockReport(
-        symbol: 'PORTFOLIO',
+        symbol: AnalysisChat.portfolioSymbol,
         headline: (payload['headline'] as String? ?? '').trim(),
         sections: [
           for (final s in (payload['sections'] as List? ?? const []))

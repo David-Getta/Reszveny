@@ -2220,4 +2220,11 @@ class AppLocalizationsMl extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'ഈ ലിസ്റ്റിൽ ഇതുവരെ ഓഹരികളൊന്നുമില്ല. ചേർക്കാൻ ഓഹരിയുടെ അടുത്തുള്ള ലിസ്റ്റ് ബട്ടൺ ടാപ്പ് ചെയ്യുക.';
+
+  @override
+  String get portfolioAskTitle =>
+      'നിങ്ങളുടെ പോർട്ട്ഫോളിയോ സംബന്ധിച്ച ചോദ്യങ്ങൾ';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

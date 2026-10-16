@@ -2184,4 +2184,10 @@ class AppLocalizationsTh extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'ยังไม่มีหุ้นในรายการนี้ แตะปุ่มรายการข้างหุ้นเพื่อเพิ่ม';
+
+  @override
+  String get portfolioAskTitle => 'คำถามเกี่ยวกับพอร์ตโฟลิโอของคุณ';
+
+  @override
+  String get rangeYtd => 'ปีนี้';
 }

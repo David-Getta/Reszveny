@@ -2222,4 +2222,10 @@ class AppLocalizationsXh extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Akukho zabelo kolu luhlu okwangoku. Cofa iqhosha loluhlu ecaleni kwesabelo ukuze usongeze.';
+
+  @override
+  String get portfolioAskTitle => 'Imibuzo ngepotifoliyo yakho';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

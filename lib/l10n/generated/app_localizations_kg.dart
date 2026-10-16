@@ -2220,4 +2220,10 @@ class AppLocalizationsKg extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Ata aksio mosi ve na lisiti yai ntete. Fina buto ya lisiti yina kele pembeni ya aksio sambu na kuyika yo.';
+
+  @override
+  String get portfolioAskTitle => 'Biuvu mu portefeuille na nge';
+
+  @override
+  String get rangeYtd => 'Mvu yayi';
 }

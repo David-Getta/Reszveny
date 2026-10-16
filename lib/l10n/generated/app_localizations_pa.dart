@@ -2208,4 +2208,10 @@ class AppLocalizationsPa extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'ਇਸ ਸੂਚੀ ਵਿੱਚ ਅਜੇ ਕੋਈ ਸ਼ੇਅਰ ਨਹੀਂ ਹੈ। ਸ਼ਾਮਲ ਕਰਨ ਲਈ ਸ਼ੇਅਰ ਦੇ ਕੋਲ ਸੂਚੀ ਬਟਨ \'ਤੇ ਟੈਪ ਕਰੋ।';
+
+  @override
+  String get portfolioAskTitle => 'ਤੁਹਾਡੇ ਪੋਰਟਫ਼ੋਲੀਓ ਬਾਰੇ ਸਵਾਲ';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

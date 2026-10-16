@@ -2213,4 +2213,10 @@ class AppLocalizationsSv extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Inga aktier i den här listan ännu. Tryck på listknappen bredvid en aktie för att lägga till den.';
+
+  @override
+  String get portfolioAskTitle => 'Frågor om din portfölj';
+
+  @override
+  String get rangeYtd => 'I år';
 }

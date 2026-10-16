@@ -132,5 +132,10 @@ void main() {
     final user = (((sent.single['body'] as Map)['messages'] as List).single as Map)['content'] as String;
     expect(user, contains('"symbol":"AAPL","name":"Apple Inc."'));
     expect((await PortfolioReviewer.loadLast())?.headline, 'Two thirds of the value rides on US tech.');
+
+    // Kérdezni is lehet róla, a portfólió saját címével.
+    await tester.tap(find.byKey(const ValueKey('ask-open')));
+    await tester.pumpAndSettle();
+    expect(find.text('Questions about your portfolio'), findsOneWidget);
   });
 }

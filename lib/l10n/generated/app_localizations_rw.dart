@@ -2221,4 +2221,10 @@ class AppLocalizationsRw extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Nta migabane iri kuri uru rutonde. Kanda buto y\'urutonde iri iruhande rw\'umugabane kugira ngo uwongereho.';
+
+  @override
+  String get portfolioAskTitle => 'Ibibazo ku ishoramari ryawe';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

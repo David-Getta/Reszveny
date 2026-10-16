@@ -2206,4 +2206,10 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Danh sách này chưa có cổ phiếu nào. Nhấn nút danh sách bên cạnh cổ phiếu để thêm.';
+
+  @override
+  String get portfolioAskTitle => 'Câu hỏi về danh mục của bạn';
+
+  @override
+  String get rangeYtd => 'Từ đầu năm';
 }

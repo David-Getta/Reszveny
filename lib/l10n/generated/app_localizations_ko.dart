@@ -2146,4 +2146,10 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get watchListEmpty => '이 목록에 아직 종목이 없습니다. 종목 옆의 목록 버튼을 탭하여 추가하세요.';
+
+  @override
+  String get portfolioAskTitle => '내 포트폴리오에 대한 질문';
+
+  @override
+  String get rangeYtd => '연초 이후';
 }

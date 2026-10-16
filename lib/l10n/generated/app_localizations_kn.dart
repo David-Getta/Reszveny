@@ -2219,4 +2219,10 @@ class AppLocalizationsKn extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'ಈ ಪಟ್ಟಿಯಲ್ಲಿ ಇನ್ನೂ ಯಾವುದೇ ಷೇರುಗಳಿಲ್ಲ. ಸೇರಿಸಲು ಷೇರಿನ ಪಕ್ಕದಲ್ಲಿರುವ ಪಟ್ಟಿ ಬಟನ್ ಟ್ಯಾಪ್ ಮಾಡಿ.';
+
+  @override
+  String get portfolioAskTitle => 'ನಿಮ್ಮ ಪೋರ್ಟ್‌ಫೋಲಿಯೊ ಕುರಿತ ಪ್ರಶ್ನೆಗಳು';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

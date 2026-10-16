@@ -591,5 +591,7 @@
   "watchListRename": "Namakan semula senarai",
   "watchListDelete": "Padam senarai",
   "watchListAddTo": "Tambah ke senarai",
-  "watchListEmpty": "Belum ada saham dalam senarai ini. Ketik butang senarai di sebelah saham untuk menambahnya."
+  "watchListEmpty": "Belum ada saham dalam senarai ini. Ketik butang senarai di sebelah saham untuk menambahnya.",
+  "portfolioAskTitle": "Soalan tentang portfolio anda",
+  "rangeYtd": "YTD"
 }

@@ -2213,4 +2213,10 @@ class AppLocalizationsBg extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'В този списък все още няма акции. Докоснете бутона за списък до акция, за да я добавите.';
+
+  @override
+  String get portfolioAskTitle => 'Въпроси за вашия портфейл';
+
+  @override
+  String get rangeYtd => 'От нач. г.';
 }

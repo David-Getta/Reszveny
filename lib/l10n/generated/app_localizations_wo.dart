@@ -2207,4 +2207,10 @@ class AppLocalizationsWo extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Amagul benn aksiyoŋ ci limm bii. Bësal butoŋu limm bi ci wetu aksiyoŋ bi ngir yokk ko.';
+
+  @override
+  String get portfolioAskTitle => 'Laaj yi ci sa aksiyoŋ yi';
+
+  @override
+  String get rangeYtd => 'At mii';
 }

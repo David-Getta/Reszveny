@@ -2273,4 +2273,10 @@ class AppLocalizationsSk extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'V tomto zozname zatiaľ nie sú žiadne akcie. Akciu pridáte ťuknutím na tlačidlo zoznamu vedľa nej.';
+
+  @override
+  String get portfolioAskTitle => 'Otázky k vášmu portfóliu';
+
+  @override
+  String get rangeYtd => 'Tento rok';
 }

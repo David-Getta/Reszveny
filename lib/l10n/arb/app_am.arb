@@ -591,5 +591,7 @@
   "watchListRename": "ዝርዝሩን እንደገና ሰይም",
   "watchListDelete": "ዝርዝሩን ሰርዝ",
   "watchListAddTo": "ወደ ዝርዝር አክል",
-  "watchListEmpty": "በዚህ ዝርዝር ውስጥ እስካሁን ምንም አክሲዮን የለም። ለማከል ከአክሲዮኑ አጠገብ ያለውን የዝርዝር አዝራር ይንኩ።"
+  "watchListEmpty": "በዚህ ዝርዝር ውስጥ እስካሁን ምንም አክሲዮን የለም። ለማከል ከአክሲዮኑ አጠገብ ያለውን የዝርዝር አዝራር ይንኩ።",
+  "portfolioAskTitle": "ስለ ፖርትፎሊዮዎ ጥያቄዎች",
+  "rangeYtd": "ዘንድሮ"
 }

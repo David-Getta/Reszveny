@@ -2218,4 +2218,10 @@ class AppLocalizationsSn extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Hapana masheya murondedzero iyi parizvino. Baya bhatani rerondedzero riri padyo nesheya kuti uriwedzere.';
+
+  @override
+  String get portfolioAskTitle => 'Mibvunzo nezvepotiforiyo yako';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

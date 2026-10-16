@@ -591,5 +591,7 @@
   "watchListRename": "Ilisan ang ngalan sang listahan",
   "watchListDelete": "Panason ang listahan",
   "watchListAddTo": "Idugang sa listahan",
-  "watchListEmpty": "Wala pa sing stock sa sini nga listahan. I-tap ang button sang listahan sa tupad sang stock agod idugang ini."
+  "watchListEmpty": "Wala pa sing stock sa sini nga listahan. I-tap ang button sang listahan sa tupad sang stock agod idugang ini.",
+  "portfolioAskTitle": "Mga pamangkot parte sa imo portfolio",
+  "rangeYtd": "YTD"
 }

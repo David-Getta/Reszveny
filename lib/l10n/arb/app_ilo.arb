@@ -591,5 +591,7 @@
   "watchListRename": "Sukatan ti nagan ti listaan",
   "watchListDelete": "Ikkaten ti listaan",
   "watchListAddTo": "Inayon iti listaan",
-  "watchListEmpty": "Awan pay ti stock iti daytoy a listaan. I-tap ti buton ti listaan iti abay ti stock tapno inayon dayta."
+  "watchListEmpty": "Awan pay ti stock iti daytoy a listaan. I-tap ti buton ti listaan iti abay ti stock tapno inayon dayta.",
+  "portfolioAskTitle": "Saludsod maipapan iti portfolio-m",
+  "rangeYtd": "YTD"
 }

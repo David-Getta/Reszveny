@@ -2209,4 +2209,10 @@ class AppLocalizationsFa extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'هنوز سهمی در این فهرست نیست. برای افزودن، روی دکمهٔ فهرست کنار سهم بزنید.';
+
+  @override
+  String get portfolioAskTitle => 'پرسش‌ها دربارهٔ سبد سهام شما';
+
+  @override
+  String get rangeYtd => 'امسال';
 }

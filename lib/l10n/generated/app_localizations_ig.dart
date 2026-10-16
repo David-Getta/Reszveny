@@ -2208,4 +2208,10 @@ class AppLocalizationsIg extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Enweghị òkè ọ bụla na ndepụta a ka ugbu a. Pịa bọtịnụ ndepụta dị n\'akụkụ òkè iji tinye ya.';
+
+  @override
+  String get portfolioAskTitle => 'Ajụjụ gbasara portfolio gị';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

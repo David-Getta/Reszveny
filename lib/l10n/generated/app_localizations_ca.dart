@@ -2221,4 +2221,10 @@ class AppLocalizationsCa extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Encara no hi ha cap acció en aquesta llista. Toca el botó de llista al costat d\'una acció per afegir-la.';
+
+  @override
+  String get portfolioAskTitle => 'Preguntes sobre la teva cartera';
+
+  @override
+  String get rangeYtd => 'Enguany';
 }

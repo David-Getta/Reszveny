@@ -591,5 +591,7 @@
   "watchListRename": "重命名列表",
   "watchListDelete": "删除列表",
   "watchListAddTo": "添加到列表",
-  "watchListEmpty": "此列表中还没有股票。点按股票旁的列表按钮即可添加。"
+  "watchListEmpty": "此列表中还没有股票。点按股票旁的列表按钮即可添加。",
+  "portfolioAskTitle": "关于你的投资组合的问题",
+  "rangeYtd": "年初至今"
 }

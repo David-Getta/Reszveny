@@ -2249,4 +2249,10 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Încă nu există acțiuni în această listă. Atinge butonul de listă de lângă o acțiune pentru a o adăuga.';
+
+  @override
+  String get portfolioAskTitle => 'Întrebări despre portofoliul tău';
+
+  @override
+  String get rangeYtd => 'YTD';
 }

@@ -591,5 +591,7 @@
   "watchListRename": "Yí orúkọ àkójọ padà",
   "watchListDelete": "Pa àkójọ rẹ́",
   "watchListAddTo": "Fi kún àkójọ",
-  "watchListEmpty": "Kò tíì sí ìpín kankan nínú àkójọ yìí. Tẹ bọ́tìnnì àkójọ lẹ́gbẹ̀ẹ́ ìpín kan láti fi kún un."
+  "watchListEmpty": "Kò tíì sí ìpín kankan nínú àkójọ yìí. Tẹ bọ́tìnnì àkójọ lẹ́gbẹ̀ẹ́ ìpín kan láti fi kún un.",
+  "portfolioAskTitle": "Àwọn ìbéèrè nípa àpò ìdókòwò rẹ",
+  "rangeYtd": "YTD"
 }

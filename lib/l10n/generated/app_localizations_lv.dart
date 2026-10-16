@@ -2252,4 +2252,10 @@ class AppLocalizationsLv extends AppLocalizations {
   @override
   String get watchListEmpty =>
       'Šajā sarakstā vēl nav akciju. Pieskarieties saraksta pogai blakus akcijai, lai to pievienotu.';
+
+  @override
+  String get portfolioAskTitle => 'Jautājumi par jūsu portfeli';
+
+  @override
+  String get rangeYtd => 'Šogad';
 }

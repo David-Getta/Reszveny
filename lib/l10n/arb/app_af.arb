@@ -591,5 +591,7 @@
   "watchListRename": "Hernoem lys",
   "watchListDelete": "Skrap lys",
   "watchListAddTo": "Voeg by 'n lys",
-  "watchListEmpty": "Nog geen aandele in hierdie lys nie. Tik op die lysknoppie langs 'n aandeel om dit by te voeg."
+  "watchListEmpty": "Nog geen aandele in hierdie lys nie. Tik op die lysknoppie langs 'n aandeel om dit by te voeg.",
+  "portfolioAskTitle": "Vrae oor jou portefeulje",
+  "rangeYtd": "YTD"
 }
