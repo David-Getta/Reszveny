@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 import '../../app_services.dart';
 import '../../core/models/stock_candidate.dart';
@@ -67,6 +68,16 @@ class _AlertDialogState extends State<_AlertDialog> {
   void initState() {
     super.initState();
     _kind = widget.initialKind ?? _kind;
+  }
+
+  bool _filled = false;
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // Az első kitöltéshez már kell a nyelv (tizedesjel).
+    if (_filled) return;
+    _filled = true;
     _prefill(value: widget.initialValue);
   }
 
@@ -86,7 +97,14 @@ class _AlertDialogState extends State<_AlertDialog> {
           AlertKind.move => 5.0,
           AlertKind.trailing => 10.0,
         };
-    _value.text = v == null ? '' : (v >= 100 ? v.toStringAsFixed(0) : v.toStringAsFixed(v < 1 ? 4 : 2));
+    final text = v == null
+        ? ''
+        : (v >= 100 || v == v.roundToDouble() ? v.toStringAsFixed(0) : v.toStringAsFixed(v < 1 ? 4 : 2));
+    // A nyelv tizedesjelével (pl. magyarul vessző); a beolvasás mindkettőt érti.
+    final comma = NumberFormat.decimalPattern(Fmt(Localizations.localeOf(context).toString()).numberLocale)
+        .symbols
+        .DECIMAL_SEP;
+    _value.text = text.replaceAll('.', comma);
     _error = null;
   }
 
