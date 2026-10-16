@@ -131,65 +131,75 @@ class _PriceChartState extends State<PriceChart> {
           ],
         ),
         const SizedBox(height: 12),
-        SizedBox(
-          height: 180 + topPad,
-          child: points.length < 2
-              ? Center(
-                  child: Text(l10n.notAvailable, style: TextStyle(color: p.muted)),
-                )
-              : LayoutBuilder(
-                  builder: (context, constraints) {
-                    final size = constraints.biggest;
-                    final labelStyle = (theme.textTheme.bodySmall ?? const TextStyle()).copyWith(
-                      color: p.muted,
-                      fontSize: 11,
-                    );
-                    return MouseRegion(
-                      key: const ValueKey('price-chart-area'),
-                      cursor: SystemMouseCursors.precise,
-                      onHover: (e) => _select(e.localPosition, size, points),
-                      onExit: (_) => _clear(),
-                      child: GestureDetector(
-                        behavior: HitTestBehavior.opaque,
-                        // Vízszintes húzás: a függőleges görgetés megmarad az oldalnak.
-                        onHorizontalDragStart: (d) => _select(d.localPosition, size, points),
-                        onHorizontalDragUpdate: (d) => _select(d.localPosition, size, points),
-                        onHorizontalDragEnd: (_) => _clear(),
-                        onHorizontalDragCancel: _clear,
-                        onTapDown: (d) => _select(d.localPosition, size, points),
-                        child: CustomPaint(
-                          painter: _LinePainter(
-                            points: points,
-                            color: color,
-                            grid: p.border,
-                            labelStyle: labelStyle,
-                            fmt: widget.fmt,
-                            topPad: topPad,
-                            hover: hover,
-                            cursorColor: p.text,
-                            hoverDateStyle: labelStyle.copyWith(fontSize: 12),
-                            hoverPriceStyle: labelStyle.copyWith(
-                              color: hoverColor,
-                              fontSize: 13,
-                              fontWeight: FontWeight.w700,
+        // Képernyőolvasónak: az időszak, az első és az utolsó ár, a változás.
+        Semantics(
+          container: true,
+          label: points.length < 2
+              ? null
+              : '${label(_range)}: ${widget.fmt.date(points.first.time)} '
+                    '${widget.fmt.price(points.first.close, widget.currency)} → '
+                    '${widget.fmt.date(points.last.time)} ${widget.fmt.price(points.last.close, widget.currency)}'
+                    '${change == null ? '' : ' (${widget.fmt.percent(change, withSign: true)})'}',
+          child: SizedBox(
+            height: 180 + topPad,
+            child: points.length < 2
+                ? Center(
+                    child: Text(l10n.notAvailable, style: TextStyle(color: p.muted)),
+                  )
+                : LayoutBuilder(
+                    builder: (context, constraints) {
+                      final size = constraints.biggest;
+                      final labelStyle = (theme.textTheme.bodySmall ?? const TextStyle()).copyWith(
+                        color: p.muted,
+                        fontSize: 11,
+                      );
+                      return MouseRegion(
+                        key: const ValueKey('price-chart-area'),
+                        cursor: SystemMouseCursors.precise,
+                        onHover: (e) => _select(e.localPosition, size, points),
+                        onExit: (_) => _clear(),
+                        child: GestureDetector(
+                          behavior: HitTestBehavior.opaque,
+                          // Vízszintes húzás: a függőleges görgetés megmarad az oldalnak.
+                          onHorizontalDragStart: (d) => _select(d.localPosition, size, points),
+                          onHorizontalDragUpdate: (d) => _select(d.localPosition, size, points),
+                          onHorizontalDragEnd: (_) => _clear(),
+                          onHorizontalDragCancel: _clear,
+                          onTapDown: (d) => _select(d.localPosition, size, points),
+                          child: CustomPaint(
+                            painter: _LinePainter(
+                              points: points,
+                              color: color,
+                              grid: p.border,
+                              labelStyle: labelStyle,
+                              fmt: widget.fmt,
+                              topPad: topPad,
+                              hover: hover,
+                              cursorColor: p.text,
+                              hoverDateStyle: labelStyle.copyWith(fontSize: 12),
+                              hoverPriceStyle: labelStyle.copyWith(
+                                color: hoverColor,
+                                fontSize: 13,
+                                fontWeight: FontWeight.w700,
+                              ),
+                              hoverPrice: hover == null
+                                  ? null
+                                  : [
+                                      widget.fmt.price(points[hover].close, widget.currency),
+                                      if (hoverChange != null && widget.showChange)
+                                        '(${widget.fmt.percent(hoverChange, withSign: true)})',
+                                    ].join(' '),
+                              hoverDate: hover == null ? null : widget.fmt.date(points[hover].time),
+                              background: theme.colorScheme.surface,
+                              levels: widget.levels,
                             ),
-                            hoverPrice: hover == null
-                                ? null
-                                : [
-                                    widget.fmt.price(points[hover].close, widget.currency),
-                                    if (hoverChange != null && widget.showChange)
-                                      '(${widget.fmt.percent(hoverChange, withSign: true)})',
-                                  ].join(' '),
-                            hoverDate: hover == null ? null : widget.fmt.date(points[hover].time),
-                            background: theme.colorScheme.surface,
-                            levels: widget.levels,
+                            child: const SizedBox.expand(),
                           ),
-                          child: const SizedBox.expand(),
                         ),
-                      ),
-                    );
-                  },
-                ),
+                      );
+                    },
+                  ),
+          ),
         ),
         const SizedBox(height: 6),
         if (points.length >= 2)

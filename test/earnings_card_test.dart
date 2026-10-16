@@ -94,6 +94,13 @@ void main() {
     expect(x.nextEarnings!.date, DateTime(2026, 10, 30));
   });
 
+  testWidgets('the price chart reads out its period, prices and change to a screen reader', (tester) async {
+    final semantics = tester.ensureSemantics();
+    await _openAapl(tester, _services(DemoMarketDataProvider(latency: Duration.zero)));
+    expect(find.bySemanticsLabel(RegExp(r'^1Y: .+ USD → .+ 231\.45 USD \([+-]')), findsOneWidget);
+    semantics.dispose();
+  });
+
   testWidgets('the earnings card on a stock page: next report, four quarters, beats', (tester) async {
     await _openAapl(tester, _services(DemoMarketDataProvider(latency: Duration.zero)));
     expect(find.byKey(const ValueKey('earnings-card')), findsOneWidget);
