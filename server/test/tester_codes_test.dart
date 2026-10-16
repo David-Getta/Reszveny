@@ -113,4 +113,21 @@ void main() {
     api = Api(store: store, anthropicApiKey: 'sk-test', finnhubApiKey: 'fh-test', verifier: const DevVerifier());
     expect((await call('GET', '/v1/me', token: me)).body['entitlements']['tier'], isNull);
   });
+
+  test('the admin statistics list the tester codes and how many accounts used them', () async {
+    api = Api(
+      store: store,
+      anthropicApiKey: 'sk-test',
+      finnhubApiKey: 'fh-test',
+      verifier: const DevVerifier(),
+      adminToken: 'admin-secret',
+      testers: TesterBook.parse('DAVID-TESZT:Dávid:max:30:2'),
+    );
+    final me = await newUser();
+    await call('POST', '/v1/referral/redeem', token: me, body: {'code': 'DAVID-TESZT'});
+    final stats = await call('GET', '/admin/stats.json', token: 'admin-secret');
+    expect(stats.body['testers'], [
+      {'label': 'Dávid', 'tier': 'max', 'days': 30, 'used': 1, 'max': 2},
+    ]);
+  });
 }

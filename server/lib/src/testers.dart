@@ -23,6 +23,7 @@ class TesterBook {
   final Map<String, TesterCode> _codes;
 
   bool get enabled => _codes.isNotEmpty;
+  Iterable<TesterCode> get all => _codes.values;
   int get length => _codes.length;
 
   TesterCode? find(String? code) => code == null ? null : _codes[code.trim().toUpperCase()];

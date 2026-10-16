@@ -520,15 +520,27 @@ class Api {
     if (adminToken.isEmpty) return Response.notFound('not found');
     final key = Uri.splitQueryString(await r.readAsString())['key'];
     if (!_isAdmin(key)) return _html(adminLoginPage(wrong: true), status: 403);
-    return _html(adminStatsPage(telemetry.stats()));
+    return _html(adminStatsPage({...telemetry.stats(), 'testers': _testerStats()}));
   }
+
+  /// A tesztelői kódok használata: kinek szól, milyen csomag, hány fiók váltotta be.
+  List<Map<String, dynamic>> _testerStats() => [
+    for (final t in testers.all)
+      {
+        'label': t.label,
+        'tier': t.tier,
+        'days': t.days,
+        'used': store.testerRedemptions(t.code, '').count,
+        'max': t.maxAccounts,
+      },
+  ];
 
   /// Ugyanez JSON-ban, `Authorization: Bearer <ADMIN_TOKEN>` fejléccel (szkriptekhez).
   Response _adminStatsJson(Request r) {
     if (adminToken.isEmpty) return Response.notFound('not found');
     if (!_isAdmin(_token(r))) return _error(403, 'forbidden');
     final days = int.tryParse(r.url.queryParameters['days'] ?? '')?.clamp(1, 400) ?? 30;
-    return _json(telemetry.stats(days: days));
+    return _json({...telemetry.stats(days: days), 'testers': _testerStats()});
   }
 
   // ---- Szerver oldali riasztásfigyelés ----

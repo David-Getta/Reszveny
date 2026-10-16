@@ -112,6 +112,18 @@ String adminStatsPage(Map<String, dynamic> stats) {
     if (sorted.isEmpty) b.write('<tr><td class="muted">Még nincs adat.</td><td></td></tr>');
     b.write('</table></div>');
   }
+  final testers = (stats['testers'] as List? ?? const []).cast<Map<String, dynamic>>();
+  if (testers.isNotEmpty) {
+    b.write('<h2>Tesztelői kódok</h2><div class="scroll"><table><tr><th>Kinek</th><th>Csomag</th><th>Nap</th>');
+    b.write('<th>Beváltva</th></tr>');
+    for (final t in testers) {
+      b.write(
+        '<tr><td>${_esc(t['label'])}</td><td>${_esc(t['tier'])}</td><td>${t['days']}</td>'
+        '<td>${t['used']} / ${t['max']}</td></tr>',
+      );
+    }
+    b.write('</table></div>');
+  }
   final errors = (stats['errors'] as List).cast<Map<String, dynamic>>();
   b.write('<h2>Leggyakoribb hibák (30 nap)</h2>');
   if (errors.isEmpty) b.write('<div class="muted">Nincs bejelentett hiba.</div>');
