@@ -2060,4 +2060,9 @@ class AppLocalizationsSk extends AppLocalizations {
   @override
   String get watchHint =>
       'Potiahnutím úchytu zmeníte poradie, potiahnutím doľava odstránite. Čiara ukazuje posledných 30 dní.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: vaša analýza je hotová.';
+  }
 }

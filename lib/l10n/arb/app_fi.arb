@@ -543,5 +543,6 @@
   "watchSortGainers": "Suurimmat nousijat ensin",
   "watchSortLosers": "Suurimmat laskijat ensin",
   "watchSortName": "Tunnuksen mukaan (A–Z)",
-  "watchHint": "Vedä kahvasta järjestääksesi, pyyhkäise vasemmalle poistaaksesi. Viiva näyttää viimeiset 30 päivää."
+  "watchHint": "Vedä kahvasta järjestääksesi, pyyhkäise vasemmalle poistaaksesi. Viiva näyttää viimeiset 30 päivää.",
+  "analysisReady": "{symbol}: analyysisi on valmis."
 }

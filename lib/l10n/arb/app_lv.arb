@@ -543,5 +543,6 @@
   "watchSortGainers": "Lielākie kāpumi vispirms",
   "watchSortLosers": "Lielākie kritumi vispirms",
   "watchSortName": "Pēc simbola (A–Z)",
-  "watchHint": "Velciet turi, lai mainītu secību, pavelciet pa kreisi, lai noņemtu. Līnija rāda pēdējās 30 dienas."
+  "watchHint": "Velciet turi, lai mainītu secību, pavelciet pa kreisi, lai noņemtu. Līnija rāda pēdējās 30 dienas.",
+  "analysisReady": "{symbol}: jūsu analīze ir gatava."
 }

@@ -2043,4 +2043,9 @@ class AppLocalizationsHr extends AppLocalizations {
   @override
   String get watchHint =>
       'Povucite ručicu za promjenu redoslijeda, prijeđite prstom ulijevo za uklanjanje. Linija prikazuje posljednjih 30 dana.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: vaša analiza je spremna.';
+  }
 }

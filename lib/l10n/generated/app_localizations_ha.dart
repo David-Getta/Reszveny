@@ -2010,4 +2010,9 @@ class AppLocalizationsHa extends AppLocalizations {
   @override
   String get watchHint =>
       'Ja maƙalli don sake tsarawa, goge zuwa hagu don cirewa. Layin yana nuna kwanaki 30 da suka gabata.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: nazarinka ya shirya.';
+  }
 }

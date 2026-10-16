@@ -2001,4 +2001,9 @@ class AppLocalizationsPa extends AppLocalizations {
   @override
   String get watchHint =>
       'ਕ੍ਰਮ ਬਦਲਣ ਲਈ ਹੈਂਡਲ ਖਿੱਚੋ, ਹਟਾਉਣ ਲਈ ਖੱਬੇ ਸਵਾਈਪ ਕਰੋ। ਰੇਖਾ ਪਿਛਲੇ 30 ਦਿਨ ਦਿਖਾਉਂਦੀ ਹੈ।';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: ਤੁਹਾਡਾ ਵਿਸ਼ਲੇਸ਼ਣ ਤਿਆਰ ਹੈ।';
+  }
 }

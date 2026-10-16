@@ -2004,4 +2004,9 @@ class AppLocalizationsYo extends AppLocalizations {
   @override
   String get watchHint =>
       'Fa ìdìmú láti tún tò, ra sí òsì láti yọ ọ́ kúrò. Ìlà náà ń fi ọjọ́ 30 tó kọjá hàn.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: ìtúpalẹ̀ rẹ ti ṣetán.';
+  }
 }

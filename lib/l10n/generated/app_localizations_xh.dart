@@ -2013,4 +2013,9 @@ class AppLocalizationsXh extends AppLocalizations {
   @override
   String get watchHint =>
       'Rhuqa isibambo ukuze ulungelelanise kwakhona, swayipha ekhohlo ukuze ususe. Umgca ubonisa iintsuku ezingama-30 ezidlulileyo.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: uhlalutyo lwakho lulungile.';
+  }
 }

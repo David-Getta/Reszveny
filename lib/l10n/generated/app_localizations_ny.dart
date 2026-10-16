@@ -2011,4 +2011,9 @@ class AppLocalizationsNy extends AppLocalizations {
   @override
   String get watchHint =>
       'Kokani chogwirira kuti musinthe dongosolo, sunthirani kumanzere kuti muchotse. Mzere ukuwonetsa masiku 30 apitawa.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: kusanthula kwanu kwakonzeka.';
+  }
 }

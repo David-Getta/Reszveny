@@ -543,5 +543,6 @@
   "watchSortGainers": "Grootste stygers eerste",
   "watchSortLosers": "Grootste dalers eerste",
   "watchSortName": "Volgens aandeelkode (A–Z)",
-  "watchHint": "Sleep die handvatsel om te herrangskik, swiep links om te verwyder. Die lyn wys die afgelope 30 dae."
+  "watchHint": "Sleep die handvatsel om te herrangskik, swiep links om te verwyder. Die lyn wys die afgelope 30 dae.",
+  "analysisReady": "{symbol}: jou ontleding is gereed."
 }

@@ -1999,4 +1999,9 @@ class AppLocalizationsHe extends AppLocalizations {
   @override
   String get watchHint =>
       'גררו את הידית כדי לסדר מחדש, החליקו שמאלה כדי להסיר. הקו מציג את 30 הימים האחרונים.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: הניתוח שלך מוכן.';
+  }
 }

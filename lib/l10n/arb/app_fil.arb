@@ -543,5 +543,6 @@
   "watchSortGainers": "Pinakamalaking tumaas muna",
   "watchSortLosers": "Pinakamalaking bumaba muna",
   "watchSortName": "Ayon sa ticker (A–Z)",
-  "watchHint": "I-drag ang hawakan para ayusin muli, i-swipe pakaliwa para alisin. Ipinapakita ng linya ang huling 30 araw."
+  "watchHint": "I-drag ang hawakan para ayusin muli, i-swipe pakaliwa para alisin. Ipinapakita ng linya ang huling 30 araw.",
+  "analysisReady": "{symbol}: handa na ang iyong pagsusuri."
 }

@@ -2001,4 +2001,9 @@ class AppLocalizationsGu extends AppLocalizations {
   @override
   String get watchHint =>
       'ક્રમ બદલવા હેન્ડલ ખેંચો, દૂર કરવા ડાબે સ્વાઇપ કરો. રેખા છેલ્લા 30 દિવસ બતાવે છે.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: તમારું વિશ્લેષણ તૈયાર છે.';
+  }
 }

@@ -73,6 +73,20 @@ class ReportStore extends ChangeNotifier {
   /// Minden sikeresen elkészült elemzés után (pl. értékelés-kéréshez).
   void Function(StockReport report)? onGenerated;
 
+  /// Az utoljára elkészült elemzés (az app jelez, ha a felhasználó közben
+  /// máshol jár).
+  final ValueNotifier<StockReport?> completed = ValueNotifier(null);
+
+  /// A részvény elemzés-kártyái: igazat adnak, ha éppen látszanak.
+  final Map<String, Set<bool Function()>> _viewers = {};
+
+  void addViewer(String symbol, bool Function() visible) => _viewers.putIfAbsent(symbol, () => {}).add(visible);
+
+  void removeViewer(String symbol, bool Function() visible) => _viewers[symbol]?.remove(visible);
+
+  /// Látszik-e most a részvény elemzése (akkor nem kell külön szólni).
+  bool isOnScreen(String symbol) => _viewers[symbol]?.any((v) => v()) ?? false;
+
   static const _prefix = 'report_';
 
   /// Az újraelemzés előtti (eggyel korábbi) elemzés kulcsa, az összevetéshez.
@@ -287,6 +301,7 @@ class ReportStore extends ChangeNotifier {
       _reports[symbol] = r;
       _keptStale.remove(symbol);
       onGenerated?.call(r);
+      completed.value = r;
       await entitlements?.consume(cost: options.cost);
       _notifyQuota();
       try {

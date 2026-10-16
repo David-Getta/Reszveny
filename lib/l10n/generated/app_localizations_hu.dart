@@ -2010,4 +2010,9 @@ class AppLocalizationsHu extends AppLocalizations {
   @override
   String get watchHint =>
       'A fogantyút húzva átrendezheted, balra húzva törölheted. A vonal az elmúlt 30 napot mutatja.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: elkészült az elemzés.';
+  }
 }

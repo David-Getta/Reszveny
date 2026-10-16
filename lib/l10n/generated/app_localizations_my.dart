@@ -1998,4 +1998,9 @@ class AppLocalizationsMy extends AppLocalizations {
   @override
   String get watchHint =>
       'အစီအစဉ်ပြောင်းရန် လက်ကိုင်ကို ဆွဲပါ၊ ဖယ်ရှားရန် ဘယ်ဘက်သို့ ပွတ်ဆွဲပါ။ မျဉ်းသည် နောက်ဆုံး ရက် 30 ကို ပြသည်။';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: သင့်ခွဲခြမ်းစိတ်ဖြာချက် အဆင်သင့်ဖြစ်ပါပြီ။';
+  }
 }

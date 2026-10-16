@@ -2007,4 +2007,9 @@ class AppLocalizationsSu extends AppLocalizations {
   @override
   String get watchHint =>
       'Sered cepengan pikeun ngarobih runtuyan, usapkeun ka kénca pikeun miceun. Garis nembongkeun 30 dinten pamungkas.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: analisis anjeun parantos siap.';
+  }
 }

@@ -2009,4 +2009,9 @@ class AppLocalizationsAf extends AppLocalizations {
   @override
   String get watchHint =>
       'Sleep die handvatsel om te herrangskik, swiep links om te verwyder. Die lyn wys die afgelope 30 dae.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: jou ontleding is gereed.';
+  }
 }

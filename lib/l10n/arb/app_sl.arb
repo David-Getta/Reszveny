@@ -543,5 +543,6 @@
   "watchSortGainers": "Največja rast najprej",
   "watchSortLosers": "Največji padec najprej",
   "watchSortName": "Po oznaki (A–Z)",
-  "watchHint": "Povlecite ročico za spremembo vrstnega reda, podrsajte levo za odstranitev. Črta prikazuje zadnjih 30 dni."
+  "watchHint": "Povlecite ročico za spremembo vrstnega reda, podrsajte levo za odstranitev. Črta prikazuje zadnjih 30 dni.",
+  "analysisReady": "{symbol}: vaša analiza je pripravljena."
 }

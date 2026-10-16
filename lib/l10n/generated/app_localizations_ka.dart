@@ -2007,4 +2007,9 @@ class AppLocalizationsKa extends AppLocalizations {
   @override
   String get watchHint =>
       'გადაათრიეთ სახელური რიგის შესაცვლელად, გადაფურცლეთ მარცხნივ ამოსაშლელად. ხაზი აჩვენებს ბოლო 30 დღეს.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: თქვენი ანალიზი მზადაა.';
+  }
 }

@@ -2000,4 +2000,9 @@ class AppLocalizationsIg extends AppLocalizations {
   @override
   String get watchHint =>
       'Dọrọ njide ahụ iji hazie ọzọ, swaipụ n\'aka ekpe iji wepụ. Ahịrị ahụ na-egosi ụbọchị 30 gara aga.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: nyocha gị adịla njikere.';
+  }
 }

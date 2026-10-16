@@ -2012,4 +2012,9 @@ class AppLocalizationsKg extends AppLocalizations {
   @override
   String get watchHint =>
       'Benda kisimbidilu sambu na kusoba ndonga, nyerula na lumoso sambu na kukatula. Mulongo ke monisa bilumbu 30 ya me luta.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: nsosa na nge me kuma ya kubuka.';
+  }
 }

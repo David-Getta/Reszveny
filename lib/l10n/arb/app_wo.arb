@@ -543,5 +543,6 @@
   "watchSortGainers": "Yi gëna yokk jëkk",
   "watchSortLosers": "Yi gëna wàññiku jëkk",
   "watchSortName": "Ci màndarga (A–Z)",
-  "watchHint": "Diri jàppukaay bi ngir soppi toftal bi, raaxas ci càmmooñ ngir far. Rëdd bi day wone 30 fan yi weesu."
+  "watchHint": "Diri jàppukaay bi ngir soppi toftal bi, raaxas ci càmmooñ ngir far. Rëdd bi day wone 30 fan yi weesu.",
+  "analysisReady": "{symbol}: sa xayma gi pare na."
 }

@@ -2015,4 +2015,9 @@ class AppLocalizationsSt extends AppLocalizations {
   @override
   String get watchHint =>
       'Hula sehokelo ho hlophisa bocha, sutumetsa ka ho le letshehadi ho tlosa. Mola o bontsha matsatsi a 30 a fetileng.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: manollo a hao o lokile.';
+  }
 }

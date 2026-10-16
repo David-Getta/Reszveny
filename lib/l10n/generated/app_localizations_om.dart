@@ -2012,4 +2012,9 @@ class AppLocalizationsOm extends AppLocalizations {
   @override
   String get watchHint =>
       'Tartiiba jijjiiruuf qabduu harkisi, haquuf gara bitaatti sossoosi. Sararri guyyoota 30 darban agarsiisa.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: xiinxalli kee qophaa\'eera.';
+  }
 }

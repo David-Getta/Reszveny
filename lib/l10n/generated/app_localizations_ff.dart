@@ -2000,4 +2000,9 @@ class AppLocalizationsFf extends AppLocalizations {
   @override
   String get watchHint =>
       'Foo jogorgal ngal ngam waylude doggol, taw nano ngam ittude. Ñiiɓol ngol hollat balɗe 30 ɓennuɗe.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: ƴeewndo maa ina heftii.';
+  }
 }

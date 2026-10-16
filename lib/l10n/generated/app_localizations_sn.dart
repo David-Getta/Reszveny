@@ -2010,4 +2010,9 @@ class AppLocalizationsSn extends AppLocalizations {
   @override
   String get watchHint =>
       'Dhonza mubato kuti urongazve, svaipa kuruboshwe kuti ubvise. Mutsara unoratidza mazuva 30 apfuura.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: ongororo yako yagadzirira.';
+  }
 }

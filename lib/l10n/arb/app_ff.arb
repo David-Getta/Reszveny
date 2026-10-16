@@ -543,5 +543,6 @@
   "watchSortGainers": "Ɓeyditiiɓe ɓurɗi adan",
   "watchSortLosers": "Ustiiɓe ɓurɗi adan",
   "watchSortName": "E kod (A–Z)",
-  "watchHint": "Foo jogorgal ngal ngam waylude doggol, taw nano ngam ittude. Ñiiɓol ngol hollat balɗe 30 ɓennuɗe."
+  "watchHint": "Foo jogorgal ngal ngam waylude doggol, taw nano ngam ittude. Ñiiɓol ngol hollat balɗe 30 ɓennuɗe.",
+  "analysisReady": "{symbol}: ƴeewndo maa ina heftii."
 }

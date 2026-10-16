@@ -543,5 +543,6 @@
   "watchSortGainers": "Najväčší rast ako prvé",
   "watchSortLosers": "Najväčší pokles ako prvé",
   "watchSortName": "Podľa tickera (A–Z)",
-  "watchHint": "Potiahnutím úchytu zmeníte poradie, potiahnutím doľava odstránite. Čiara ukazuje posledných 30 dní."
+  "watchHint": "Potiahnutím úchytu zmeníte poradie, potiahnutím doľava odstránite. Čiara ukazuje posledných 30 dní.",
+  "analysisReady": "{symbol}: vaša analýza je hotová."
 }

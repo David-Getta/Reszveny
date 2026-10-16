@@ -2005,4 +2005,9 @@ class AppLocalizationsMr extends AppLocalizations {
   @override
   String get watchHint =>
       'क्रम बदलण्यासाठी हँडल ओढा, काढण्यासाठी डावीकडे स्वाइप करा. रेषा मागील 30 दिवस दाखवते.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: तुमचे विश्लेषण तयार आहे.';
+  }
 }

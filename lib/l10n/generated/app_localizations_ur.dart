@@ -2005,4 +2005,9 @@ class AppLocalizationsUr extends AppLocalizations {
   @override
   String get watchHint =>
       'ترتیب بدلنے کے لیے ہینڈل گھسیٹیں، ہٹانے کے لیے بائیں سوائپ کریں۔ لکیر پچھلے 30 دن دکھاتی ہے۔';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: آپ کا تجزیہ تیار ہے۔';
+  }
 }

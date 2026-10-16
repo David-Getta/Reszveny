@@ -2014,4 +2014,9 @@ class AppLocalizationsCa extends AppLocalizations {
   @override
   String get watchHint =>
       'Arrossega la nansa per reordenar i llisca cap a l\'esquerra per eliminar. La línia mostra els últims 30 dies.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: la teva anàlisi està llesta.';
+  }
 }

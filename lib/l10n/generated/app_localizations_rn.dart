@@ -2011,4 +2011,9 @@ class AppLocalizationsRn extends AppLocalizations {
   @override
   String get watchHint =>
       'Kwega igifashwa kugira usubire gutunganya, nyereza ibumoso kugira ukureko. Umurongo werekana imisi 30 iheze.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: isesengura ryawe ryateguwe.';
+  }
 }

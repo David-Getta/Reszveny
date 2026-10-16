@@ -543,5 +543,6 @@
   "watchSortGainers": "Ibyazamutse cyane mbere",
   "watchSortLosers": "Ibyamanutse cyane mbere",
   "watchSortName": "Ukurikije ticker (A–Z)",
-  "watchHint": "Kurura agafashi kugira ngo uhindure uko bikurikirana, sunika ibumoso kugira ngo ukureho. Umurongo werekana iminsi 30 ishize."
+  "watchHint": "Kurura agafashi kugira ngo uhindure uko bikurikirana, sunika ibumoso kugira ngo ukureho. Umurongo werekana iminsi 30 ishize.",
+  "analysisReady": "{symbol}: isesengura ryawe ryateguwe."
 }

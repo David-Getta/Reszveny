@@ -2006,4 +2006,9 @@ class AppLocalizationsBg extends AppLocalizations {
   @override
   String get watchHint =>
       'Плъзнете дръжката, за да пренаредите, плъзнете наляво, за да премахнете. Линията показва последните 30 дни.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: анализът ви е готов.';
+  }
 }

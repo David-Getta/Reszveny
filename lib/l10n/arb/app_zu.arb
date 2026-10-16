@@ -543,5 +543,6 @@
   "watchSortGainers": "Ezinyuke kakhulu kuqala",
   "watchSortLosers": "Ezehle kakhulu kuqala",
   "watchSortName": "Nge-ticker (A–Z)",
-  "watchHint": "Hudula isibambo ukuze uhlele kabusha, swayiphela kwesobunxele ukuze ususe. Umugqa ubonisa izinsuku ezingu-30 ezedlule."
+  "watchHint": "Hudula isibambo ukuze uhlele kabusha, swayiphela kwesobunxele ukuze ususe. Umugqa ubonisa izinsuku ezingu-30 ezedlule.",
+  "analysisReady": "{symbol}: ukuhlaziya kwakho sekulungile."
 }

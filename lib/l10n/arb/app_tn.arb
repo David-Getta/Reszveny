@@ -543,5 +543,6 @@
   "watchSortGainers": "Tse di godileng thata pele",
   "watchSortLosers": "Tse di wetseng thata pele",
   "watchSortName": "Ka ticker (A–Z)",
-  "watchHint": "Goga setshwaro go rulaganya sešwa, kgorometsa kwa molemeng go tlosa. Mola o bontsha malatsi a le 30 a a fetileng."
+  "watchHint": "Goga setshwaro go rulaganya sešwa, kgorometsa kwa molemeng go tlosa. Mola o bontsha malatsi a le 30 a a fetileng.",
+  "analysisReady": "{symbol}: tshekatsheko ya gago e siametse."
 }

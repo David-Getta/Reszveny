@@ -2004,4 +2004,9 @@ class AppLocalizationsBn extends AppLocalizations {
   @override
   String get watchHint =>
       'ক্রম বদলাতে হ্যান্ডেল টানুন, সরাতে বাঁদিকে সোয়াইপ করুন। রেখাটি গত 30 দিন দেখায়।';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: আপনার বিশ্লেষণ প্রস্তুত।';
+  }
 }

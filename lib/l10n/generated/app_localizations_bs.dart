@@ -2042,4 +2042,9 @@ class AppLocalizationsBs extends AppLocalizations {
   @override
   String get watchHint =>
       'Povucite ručku za promjenu redoslijeda, prevucite ulijevo za uklanjanje. Linija prikazuje posljednjih 30 dana.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: vaša analiza je spremna.';
+  }
 }

@@ -2006,4 +2006,9 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String get watchHint =>
       'Buruta kishikio ili kupanga upya, telezesha kushoto ili kuondoa. Mstari unaonyesha siku 30 zilizopita.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: uchambuzi wako uko tayari.';
+  }
 }

@@ -543,5 +543,6 @@
   "watchSortGainers": "Naék panggedéna heula",
   "watchSortLosers": "Turun panggedéna heula",
   "watchSortName": "Dumasar kode saham (A–Z)",
-  "watchHint": "Sered cepengan pikeun ngarobih runtuyan, usapkeun ka kénca pikeun miceun. Garis nembongkeun 30 dinten pamungkas."
+  "watchHint": "Sered cepengan pikeun ngarobih runtuyan, usapkeun ka kénca pikeun miceun. Garis nembongkeun 30 dinten pamungkas.",
+  "analysisReady": "{symbol}: analisis anjeun parantos siap."
 }

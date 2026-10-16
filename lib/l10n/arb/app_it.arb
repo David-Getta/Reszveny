@@ -543,5 +543,6 @@
   "watchSortGainers": "Maggiori rialzi prima",
   "watchSortLosers": "Maggiori ribassi prima",
   "watchSortName": "Per ticker (A–Z)",
-  "watchHint": "Trascina la maniglia per riordinare, scorri a sinistra per rimuovere. La linea mostra gli ultimi 30 giorni."
+  "watchHint": "Trascina la maniglia per riordinare, scorri a sinistra per rimuovere. La linea mostra gli ultimi 30 giorni.",
+  "analysisReady": "{symbol}: la tua analisi è pronta."
 }

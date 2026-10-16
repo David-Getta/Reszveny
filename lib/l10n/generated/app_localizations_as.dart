@@ -2004,4 +2004,9 @@ class AppLocalizationsAs extends AppLocalizations {
   @override
   String get watchHint =>
       'ক্ৰম সলনি কৰিবলৈ হেণ্ডেলটো টানক, আঁতৰাবলৈ বাওঁফালে ছোৱাইপ কৰক। ৰেখাডালে যোৱা 30 দিন দেখুৱায়।';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: আপোনাৰ বিশ্লেষণ সাজু হৈছে।';
+  }
 }

@@ -543,5 +543,6 @@
   "watchSortGainers": "Kadakkelan nga ngimmato umuna",
   "watchSortLosers": "Kadakkelan nga immababa umuna",
   "watchSortName": "Babaen ti ticker (A–Z)",
-  "watchHint": "Guyuden ti iggaman tapno urnosen manen, i-swipe iti kannigid tapno ikkaten. Ipakita ti linia ti napalabas a 30 nga aldaw."
+  "watchHint": "Guyuden ti iggaman tapno urnosen manen, i-swipe iti kannigid tapno ikkaten. Ipakita ti linia ti napalabas a 30 nga aldaw.",
+  "analysisReady": "{symbol}: nakasagan ti panaganalisam."
 }

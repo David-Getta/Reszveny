@@ -2006,4 +2006,9 @@ class AppLocalizationsKk extends AppLocalizations {
   @override
   String get watchHint =>
       'Ретін өзгерту үшін тұтқаны сүйреңіз, жою үшін солға сырғытыңыз. Сызық соңғы 30 күнді көрсетеді.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: талдауыңыз дайын.';
+  }
 }

@@ -543,5 +543,6 @@
   "watchSortGainers": "Àwọn tó gòkè jù lọ kọ́kọ́",
   "watchSortLosers": "Àwọn tó lọ sílẹ̀ jù lọ kọ́kọ́",
   "watchSortName": "Nípa àmì ìpín (A–Z)",
-  "watchHint": "Fa ìdìmú láti tún tò, ra sí òsì láti yọ ọ́ kúrò. Ìlà náà ń fi ọjọ́ 30 tó kọjá hàn."
+  "watchHint": "Fa ìdìmú láti tún tò, ra sí òsì láti yọ ọ́ kúrò. Ìlà náà ń fi ọjọ́ 30 tó kọjá hàn.",
+  "analysisReady": "{symbol}: ìtúpalẹ̀ rẹ ti ṣetán."
 }

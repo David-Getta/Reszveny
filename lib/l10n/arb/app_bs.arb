@@ -543,5 +543,6 @@
   "watchSortGainers": "Najveći rast prvo",
   "watchSortLosers": "Najveći pad prvo",
   "watchSortName": "Po tikeru (A–Z)",
-  "watchHint": "Povucite ručku za promjenu redoslijeda, prevucite ulijevo za uklanjanje. Linija prikazuje posljednjih 30 dana."
+  "watchHint": "Povucite ručku za promjenu redoslijeda, prevucite ulijevo za uklanjanje. Linija prikazuje posljednjih 30 dana.",
+  "analysisReady": "{symbol}: vaša analiza je spremna."
 }

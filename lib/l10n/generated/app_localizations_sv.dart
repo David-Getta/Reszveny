@@ -2006,4 +2006,9 @@ class AppLocalizationsSv extends AppLocalizations {
   @override
   String get watchHint =>
       'Dra i handtaget för att ändra ordning, svep åt vänster för att ta bort. Linjen visar de senaste 30 dagarna.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: din analys är klar.';
+  }
 }

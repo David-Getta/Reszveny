@@ -2004,4 +2004,9 @@ class AppLocalizationsKab extends AppLocalizations {
   @override
   String get watchHint =>
       'Zuɣer afus i wakken ad tbeddleḍ amizwer, zuɣer ɣer zelmeḍ i wakken ad tekkseḍ. Izirig yesskanay 30 n wussan ineggura.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: tasledt-ik theggat.';
+  }
 }

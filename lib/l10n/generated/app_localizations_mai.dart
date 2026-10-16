@@ -1999,4 +1999,9 @@ class AppLocalizationsMai extends AppLocalizations {
   @override
   String get watchHint =>
       'क्रम बदलबाक लेल हैंडल खींचू, हटेबाक लेल बामा दिस स्वाइप करू। रेखा पछिला 30 दिन देखबैत अछि।';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: अहाँक विश्लेषण तैयार अछि।';
+  }
 }

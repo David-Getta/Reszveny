@@ -543,5 +543,6 @@
   "watchSortGainers": "Rritjet më të mëdha së pari",
   "watchSortLosers": "Rëniet më të mëdha së pari",
   "watchSortName": "Sipas simbolit (A–Z)",
-  "watchHint": "Tërhiq dorezën për të rirenditur, rrëshqit majtas për ta hequr. Vija tregon 30 ditët e fundit."
+  "watchHint": "Tërhiq dorezën për të rirenditur, rrëshqit majtas për ta hequr. Vija tregon 30 ditët e fundit.",
+  "analysisReady": "{symbol}: analiza juaj është gati."
 }

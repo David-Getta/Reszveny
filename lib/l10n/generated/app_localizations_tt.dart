@@ -2002,4 +2002,9 @@ class AppLocalizationsTt extends AppLocalizations {
   @override
   String get watchHint =>
       'Тәртипне үзгәртү өчен тотканы тартыгыз, бетерү өчен сулга шудырыгыз. Сызык соңгы 30 көнне күрсәтә.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: анализыгыз әзер.';
+  }
 }

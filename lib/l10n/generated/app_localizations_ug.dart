@@ -2008,4 +2008,9 @@ class AppLocalizationsUg extends AppLocalizations {
   @override
   String get watchHint =>
       'تەرتىپنى ئۆزگەرتىش ئۈچۈن تۇتقۇچنى سۆرەڭ، چىقىرىۋېتىش ئۈچۈن سولغا سۈرۈڭ. سىزىق ئاخىرقى 30 كۈننى كۆرسىتىدۇ.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: تەھلىلىڭىز تەييار بولدى.';
+  }
 }

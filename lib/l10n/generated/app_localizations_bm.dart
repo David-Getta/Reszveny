@@ -2002,4 +2002,9 @@ class AppLocalizationsBm extends AppLocalizations {
   @override
   String get watchHint =>
       'Minɛnan sama walasa ka labɛnni yɛlɛma, i bolo sama numanbolo fɛ walasa ka bɔ. Juru bɛ tile 30 laban jira.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: i ka sɛgɛsɛgɛli labɛnna.';
+  }
 }

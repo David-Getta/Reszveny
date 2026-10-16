@@ -1514,5 +1514,15 @@
   "watchHint": "Drag the handle to reorder, swipe left to remove. The line shows the last 30 days.",
   "@watchHint": {
     "description": "Hint at the top of the favorites (watchlist) page."
+  },
+  "analysisReady": "{symbol}: your analysis is ready.",
+  "@analysisReady": {
+    "description": "Short message (snack bar) when an AI analysis finishes while the user is on another page; has an 'Open' button.",
+    "placeholders": {
+      "symbol": {
+        "type": "String",
+        "example": "AAPL"
+      }
+    }
   }
 }

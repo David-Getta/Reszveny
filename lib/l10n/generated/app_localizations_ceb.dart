@@ -2014,4 +2014,9 @@ class AppLocalizationsCeb extends AppLocalizations {
   @override
   String get watchHint =>
       'Guyora ang kuptanan aron ihan-ay pag-usab, i-swipe pawala aron tangtangon. Ang linya nagpakita sa miaging 30 ka adlaw.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: andam na ang imong pagtuki.';
+  }
 }

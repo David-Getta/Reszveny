@@ -543,5 +543,6 @@
   "watchSortGainers": "Wid yalin aṭas d imezwura",
   "watchSortLosers": "Wid yeɣlin aṭas d imezwura",
   "watchSortName": "S uzamul (A–Z)",
-  "watchHint": "Zuɣer afus i wakken ad tbeddleḍ amizwer, zuɣer ɣer zelmeḍ i wakken ad tekkseḍ. Izirig yesskanay 30 n wussan ineggura."
+  "watchHint": "Zuɣer afus i wakken ad tbeddleḍ amizwer, zuɣer ɣer zelmeḍ i wakken ad tekkseḍ. Izirig yesskanay 30 n wussan ineggura.",
+  "analysisReady": "{symbol}: tasledt-ik theggat."
 }

@@ -2004,4 +2004,9 @@ class AppLocalizationsSi extends AppLocalizations {
   @override
   String get watchHint =>
       'අනුපිළිවෙළ වෙනස් කිරීමට හසුරුව අදින්න, ඉවත් කිරීමට වමට ස්වයිප් කරන්න. රේඛාව පසුගිය දින 30 පෙන්වයි.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: ඔබගේ විශ්ලේෂණය සූදානම්.';
+  }
 }

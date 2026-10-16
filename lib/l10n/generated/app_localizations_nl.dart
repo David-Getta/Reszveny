@@ -2010,4 +2010,9 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get watchHint =>
       'Sleep de greep om de volgorde te wijzigen, veeg naar links om te verwijderen. De lijn toont de afgelopen 30 dagen.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: je analyse is klaar.';
+  }
 }

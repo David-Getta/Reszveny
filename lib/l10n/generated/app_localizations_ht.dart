@@ -2004,4 +2004,9 @@ class AppLocalizationsHt extends AppLocalizations {
   @override
   String get watchHint =>
       'Trennen manch lan pou chanje lòd, glise sou bò goch pou retire. Liy lan montre 30 dènye jou yo.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: analiz ou a pare.';
+  }
 }

@@ -543,5 +543,6 @@
   "watchSortGainers": "En çok yükselenler önce",
   "watchSortLosers": "En çok düşenler önce",
   "watchSortName": "Sembole göre (A–Z)",
-  "watchHint": "Sıralamak için tutamacı sürükle, kaldırmak için sola kaydır. Çizgi son 30 günü gösterir."
+  "watchHint": "Sıralamak için tutamacı sürükle, kaldırmak için sola kaydır. Çizgi son 30 günü gösterir.",
+  "analysisReady": "{symbol}: analiziniz hazır."
 }

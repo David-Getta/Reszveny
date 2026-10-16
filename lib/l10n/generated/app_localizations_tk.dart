@@ -2004,4 +2004,9 @@ class AppLocalizationsTk extends AppLocalizations {
   @override
   String get watchHint =>
       'Tertibi üýtgetmek üçin tutawajy süýräň, aýyrmak üçin çepe süýşüriň. Çyzyk soňky 30 güni görkezýär.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: derňewiňiz taýýar.';
+  }
 }

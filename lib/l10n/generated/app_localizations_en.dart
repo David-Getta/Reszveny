@@ -2004,4 +2004,9 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get watchHint =>
       'Drag the handle to reorder, swipe left to remove. The line shows the last 30 days.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: your analysis is ready.';
+  }
 }

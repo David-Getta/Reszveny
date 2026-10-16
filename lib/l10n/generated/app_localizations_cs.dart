@@ -2056,4 +2056,9 @@ class AppLocalizationsCs extends AppLocalizations {
   @override
   String get watchHint =>
       'Přetažením úchytu změníte pořadí, přejetím doleva odeberete. Čára ukazuje posledních 30 dní.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: vaše analýza je hotová.';
+  }
 }

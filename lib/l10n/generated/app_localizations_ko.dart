@@ -1943,4 +1943,9 @@ class AppLocalizationsKo extends AppLocalizations {
   @override
   String get watchHint =>
       '핸들을 끌어 순서를 바꾸고, 왼쪽으로 스와이프하여 제거합니다. 선은 최근 30일을 보여줍니다.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: 분석이 완료되었습니다.';
+  }
 }

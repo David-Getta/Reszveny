@@ -1906,6 +1906,11 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get watchHint => '拖动手柄可重新排序，向左滑动可移除。线条显示最近 30 天。';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol：分析已完成。';
+  }
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -3809,4 +3814,9 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get watchHint => '拖動手柄可重新排序，向左滑動可移除。線條顯示最近 30 日。';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol：分析已完成。';
+  }
 }

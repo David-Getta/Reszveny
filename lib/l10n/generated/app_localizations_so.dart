@@ -2012,4 +2012,9 @@ class AppLocalizationsSo extends AppLocalizations {
   @override
   String get watchHint =>
       'Jiid gacan-qabsiga si aad u dib u habayso, u jiid bidix si aad u saarto. Xariiqdu waxay muujinaysaa 30-kii maalmood ee la soo dhaafay.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: falanqaynta aad codsatay waa diyaar.';
+  }
 }

@@ -2009,4 +2009,9 @@ class AppLocalizationsMs extends AppLocalizations {
   @override
   String get watchHint =>
       'Seret pemegang untuk menyusun semula, leret ke kiri untuk mengalih keluar. Garisan menunjukkan 30 hari lalu.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: analisis anda sudah sedia.';
+  }
 }

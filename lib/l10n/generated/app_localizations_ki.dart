@@ -2005,4 +2005,9 @@ class AppLocalizationsKi extends AppLocalizations {
   @override
   String get watchHint =>
       'Kururia gĩkwatĩro nĩguo ũbange rĩngĩ, haragũra mwena wa ũmotho nĩguo ũrute. Mũhari ũyonanagia mĩthenya 30 ĩrĩa ĩhĩtũku.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: ũthuthuria waku nĩ mũhaarĩrie.';
+  }
 }

@@ -2010,4 +2010,9 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get watchHint =>
       'Trascina la maniglia per riordinare, scorri a sinistra per rimuovere. La linea mostra gli ultimi 30 giorni.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: la tua analisi è pronta.';
+  }
 }

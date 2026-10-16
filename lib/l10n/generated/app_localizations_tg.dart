@@ -2007,4 +2007,9 @@ class AppLocalizationsTg extends AppLocalizations {
   @override
   String get watchHint =>
       'Барои тағйир додани тартиб дастакро кашед, барои хориҷ кардан ба чап лағжонед. Хат 30 рӯзи охирро нишон медиҳад.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: таҳлили шумо омода аст.';
+  }
 }

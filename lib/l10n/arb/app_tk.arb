@@ -543,5 +543,6 @@
   "watchSortGainers": "Iň köp ýokarlananlar ilki",
   "watchSortLosers": "Iň köp peselenler ilki",
   "watchSortName": "Tiker boýunça (A–Z)",
-  "watchHint": "Tertibi üýtgetmek üçin tutawajy süýräň, aýyrmak üçin çepe süýşüriň. Çyzyk soňky 30 güni görkezýär."
+  "watchHint": "Tertibi üýtgetmek üçin tutawajy süýräň, aýyrmak üçin çepe süýşüriň. Çyzyk soňky 30 güni görkezýär.",
+  "analysisReady": "{symbol}: derňewiňiz taýýar."
 }

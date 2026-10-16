@@ -543,5 +543,6 @@
   "watchSortGainers": "Eng koʻp oʻsganlar avval",
   "watchSortLosers": "Eng koʻp tushganlar avval",
   "watchSortName": "Tiker boʻyicha (A–Z)",
-  "watchHint": "Tartibni oʻzgartirish uchun tutqichni torting, olib tashlash uchun chapga suring. Chiziq oxirgi 30 kunni koʻrsatadi."
+  "watchHint": "Tartibni oʻzgartirish uchun tutqichni torting, olib tashlash uchun chapga suring. Chiziq oxirgi 30 kunni koʻrsatadi.",
+  "analysisReady": "{symbol}: tahlilingiz tayyor."
 }

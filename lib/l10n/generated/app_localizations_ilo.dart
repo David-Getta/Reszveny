@@ -2020,4 +2020,9 @@ class AppLocalizationsIlo extends AppLocalizations {
   @override
   String get watchHint =>
       'Guyuden ti iggaman tapno urnosen manen, i-swipe iti kannigid tapno ikkaten. Ipakita ti linia ti napalabas a 30 nga aldaw.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: nakasagan ti panaganalisam.';
+  }
 }

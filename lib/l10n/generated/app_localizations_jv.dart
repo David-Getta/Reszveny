@@ -2006,4 +2006,9 @@ class AppLocalizationsJv extends AppLocalizations {
   @override
   String get watchHint =>
       'Seret gagang kanggo ngurutaké manèh, gésér ngiwa kanggo mbusak. Garis nuduhaké 30 dina pungkasan.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: analisis sampeyan wis siyap.';
+  }
 }

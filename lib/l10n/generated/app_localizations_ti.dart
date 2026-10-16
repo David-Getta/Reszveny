@@ -1970,4 +1970,9 @@ class AppLocalizationsTi extends AppLocalizations {
   @override
   String get watchHint =>
       'ስርዓት ንምቕያር መትሓዚ ስሓቦ፣ ንምእላይ ናብ ጸጋም ኣንሸራትት። መስመሩ ናይ ዝሓለፉ 30 መዓልታት የርኢ።';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol፦ ትንታነኹም ተዳልዩ ኣሎ።';
+  }
 }

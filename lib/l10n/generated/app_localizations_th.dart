@@ -1979,4 +1979,9 @@ class AppLocalizationsTh extends AppLocalizations {
   @override
   String get watchHint =>
       'ลากที่จับเพื่อจัดลำดับใหม่ ปัดไปทางซ้ายเพื่อลบ เส้นแสดง 30 วันล่าสุด';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: การวิเคราะห์ของคุณพร้อมแล้ว';
+  }
 }

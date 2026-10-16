@@ -2017,4 +2017,9 @@ class AppLocalizationsNso extends AppLocalizations {
   @override
   String get watchHint =>
       'Goga seswaro go beakanya gape, kgoromeletša go le letshadi go tloša. Mothaladi o bontšha matšatši a 30 a go feta.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: tshekatsheko ya gago e loketše.';
+  }
 }

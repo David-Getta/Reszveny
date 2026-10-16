@@ -2011,4 +2011,9 @@ class AppLocalizationsGn extends AppLocalizations {
   @override
   String get watchHint =>
       'Emboguata pe jokoha emohenda jey hag̃ua, emosyryry asúpe embogue hag̃ua. Pe línea ohechauka 30 ára ohasava\'ekue.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: nde jehesa\'ỹijo oĩma.';
+  }
 }

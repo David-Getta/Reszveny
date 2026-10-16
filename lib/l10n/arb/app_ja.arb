@@ -543,5 +543,6 @@
   "watchSortGainers": "値上がり率の高い順",
   "watchSortLosers": "値下がり率の高い順",
   "watchSortName": "ティッカー順 (A–Z)",
-  "watchHint": "ハンドルをドラッグして並べ替え、左にスワイプして削除します。線は過去30日間を示します。"
+  "watchHint": "ハンドルをドラッグして並べ替え、左にスワイプして削除します。線は過去30日間を示します。",
+  "analysisReady": "{symbol}：分析が完成しました。"
 }

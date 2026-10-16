@@ -2046,4 +2046,9 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get watchHint =>
       'اسحب المقبض لإعادة الترتيب، ومرّر لليسار للإزالة. يعرض الخط آخر 30 يومًا.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: تحليلك جاهز.';
+  }
 }

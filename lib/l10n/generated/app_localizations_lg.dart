@@ -2015,4 +2015,9 @@ class AppLocalizationsLg extends AppLocalizations {
   @override
   String get watchHint =>
       'Walula ekikwatibwako okusengeka obulala, sikula ku kkono okuggyako. Olunyiriri lulaga ennaku 30 eziyise.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: okwekenneenya kwo kuwedde.';
+  }
 }

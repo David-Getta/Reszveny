@@ -1976,4 +1976,9 @@ class AppLocalizationsAm extends AppLocalizations {
   @override
   String get watchHint =>
       'ቅደም ተከተሉን ለመቀየር መያዣውን ይጎትቱ፣ ለማስወገድ ወደ ግራ ያንሸራትቱ። መስመሩ ያለፉትን 30 ቀናት ያሳያል።';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: ትንተናዎ ዝግጁ ነው።';
+  }
 }

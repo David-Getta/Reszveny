@@ -1982,4 +1982,9 @@ class AppLocalizationsLo extends AppLocalizations {
   @override
   String get watchHint =>
       'ລາກບ່ອນຈັບເພື່ອຈັດລຳດັບໃໝ່, ປັດໄປຊ້າຍເພື່ອລຶບອອກ. ເສັ້ນສະແດງ 30 ມື້ຫຼ້າສຸດ.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: ການວິເຄາະຂອງທ່ານພ້ອມແລ້ວ.';
+  }
 }

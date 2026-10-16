@@ -40,6 +40,16 @@ class AnalysisCard extends StatefulWidget {
 
 class _AnalysisCardState extends State<AnalysisCard> {
   bool _restored = false;
+  AppServices? _services;
+
+  /// Akkor látszik, ha a kártya oldala a legfelső (nem takarja másik oldal).
+  bool _visible() => mounted && (ModalRoute.of(context)?.isCurrent ?? true);
+
+  @override
+  void dispose() {
+    _services?.reports.removeViewer(widget.details.symbol, _visible);
+    super.dispose();
+  }
 
   @override
   void didChangeDependencies() {
@@ -47,6 +57,8 @@ class _AnalysisCardState extends State<AnalysisCard> {
     if (_restored) return;
     _restored = true;
     final services = AppServices.of(context);
+    _services = services;
+    services.reports.addViewer(widget.details.symbol, _visible);
     final language = SupportedLocales.languageFor(Localizations.localeOf(context)).englishName;
     final restoring = services.reports.restore(widget.details.symbol, language: language);
     // Az előzményekből „új elemzés”-t kértek: a mentett betöltése után indul.

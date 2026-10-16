@@ -2016,4 +2016,9 @@ class AppLocalizationsQu extends AppLocalizations {
   @override
   String get watchHint =>
       'Hapinata aysay ñiqichanapaq, lluq\'iman llusiy hurqunapaq. Siqiqa qhipa 30 p\'unchawkunata rikuchin.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: t\'aqwiyniykiqa listoñam.';
+  }
 }

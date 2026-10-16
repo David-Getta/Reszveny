@@ -2001,4 +2001,9 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get watchHint =>
       'Seret pegangan untuk mengatur ulang, geser ke kiri untuk menghapus. Garis menunjukkan 30 hari terakhir.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: analisis Anda sudah siap.';
+  }
 }

@@ -2013,4 +2013,9 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String get watchHint =>
       'Σύρετε τη λαβή για αναδιάταξη, σαρώστε αριστερά για αφαίρεση. Η γραμμή δείχνει τις τελευταίες 30 ημέρες.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: η ανάλυσή σας είναι έτοιμη.';
+  }
 }

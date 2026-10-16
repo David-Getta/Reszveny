@@ -543,5 +543,6 @@
   "watchSortGainers": "Kenaikan terbesar dahulu",
   "watchSortLosers": "Penurunan terbesar dahulu",
   "watchSortName": "Mengikut ticker (A–Z)",
-  "watchHint": "Seret pemegang untuk menyusun semula, leret ke kiri untuk mengalih keluar. Garisan menunjukkan 30 hari lalu."
+  "watchHint": "Seret pemegang untuk menyusun semula, leret ke kiri untuk mengalih keluar. Garisan menunjukkan 30 hari lalu.",
+  "analysisReady": "{symbol}: analisis anda sudah sedia."
 }

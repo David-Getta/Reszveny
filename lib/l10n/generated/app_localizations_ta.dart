@@ -2014,4 +2014,9 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String get watchHint =>
       'வரிசையை மாற்ற கைப்பிடியை இழுக்கவும், நீக்க இடதுபுறம் ஸ்வைப் செய்யவும். கோடு கடந்த 30 நாட்களைக் காட்டுகிறது.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: உங்கள் பகுப்பாய்வு தயார்.';
+  }
 }

@@ -2006,4 +2006,9 @@ class AppLocalizationsAz extends AppLocalizations {
   @override
   String get watchHint =>
       'Sıranı dəyişmək üçün tutacağı sürüşdürün, silmək üçün sola sürüşdürün. Xətt son 30 günü göstərir.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: təhliliniz hazırdır.';
+  }
 }

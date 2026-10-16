@@ -2018,4 +2018,9 @@ class AppLocalizationsMg extends AppLocalizations {
   @override
   String get watchHint =>
       'Sintony ny tahony mba handaminana indray, ampitsoaho miankavia mba hanesorana. Ny tsipika dia mampiseho ny 30 andro farany.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: vonona ny famakafakanao.';
+  }
 }

@@ -2063,4 +2063,9 @@ class AppLocalizationsPl extends AppLocalizations {
   @override
   String get watchHint =>
       'Przeciągnij uchwyt, aby zmienić kolejność, przesuń w lewo, aby usunąć. Linia pokazuje ostatnie 30 dni.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: Twoja analiza jest gotowa.';
+  }
 }

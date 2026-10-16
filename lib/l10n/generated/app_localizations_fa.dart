@@ -2003,4 +2003,9 @@ class AppLocalizationsFa extends AppLocalizations {
   @override
   String get watchHint =>
       'برای تغییر ترتیب، دستگیره را بکشید و برای حذف، به چپ بلغزانید. خط ۳۰ روز گذشته را نشان می‌دهد.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: تحلیل شما آماده است.';
+  }
 }

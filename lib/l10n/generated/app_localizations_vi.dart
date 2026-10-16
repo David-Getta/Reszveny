@@ -2000,4 +2000,9 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get watchHint =>
       'Kéo tay cầm để sắp xếp lại, vuốt sang trái để xóa. Đường kẻ hiển thị 30 ngày qua.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: bản phân tích của bạn đã sẵn sàng.';
+  }
 }

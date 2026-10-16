@@ -1996,4 +1996,9 @@ class AppLocalizationsBo extends AppLocalizations {
   @override
   String get watchHint =>
       'གོ་རིམ་བསྒྱུར་བར་ལག་ཡུ་འཐེན། སུབ་པར་གཡོན་ཕྱོགས་སུ་འདྲུད། ཐིག་གིས་ཉིན་ 30 སྔོན་མ་སྟོན།';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: ཁྱེད་ཀྱི་དབྱེ་ཞིབ་གྲ་སྒྲིག་ཡོད།';
+  }
 }

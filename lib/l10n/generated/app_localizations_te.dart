@@ -2011,4 +2011,9 @@ class AppLocalizationsTe extends AppLocalizations {
   @override
   String get watchHint =>
       'క్రమాన్ని మార్చడానికి హ్యాండిల్‌ను లాగండి, తీసివేయడానికి ఎడమకు స్వైప్ చేయండి. రేఖ గత 30 రోజులను చూపుతుంది.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: మీ విశ్లేషణ సిద్ధంగా ఉంది.';
+  }
 }

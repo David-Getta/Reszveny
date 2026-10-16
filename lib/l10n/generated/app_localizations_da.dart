@@ -2003,4 +2003,9 @@ class AppLocalizationsDa extends AppLocalizations {
   @override
   String get watchHint =>
       'Træk i håndtaget for at ændre rækkefølgen, stryg til venstre for at fjerne. Linjen viser de seneste 30 dage.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: din analyse er klar.';
+  }
 }

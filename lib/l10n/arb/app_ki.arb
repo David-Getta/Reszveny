@@ -543,5 +543,6 @@
   "watchSortGainers": "Iria ciambatĩte mũno mbere",
   "watchSortLosers": "Iria ciharũrũkĩte mũno mbere",
   "watchSortName": "Kũringana na ticker (A–Z)",
-  "watchHint": "Kururia gĩkwatĩro nĩguo ũbange rĩngĩ, haragũra mwena wa ũmotho nĩguo ũrute. Mũhari ũyonanagia mĩthenya 30 ĩrĩa ĩhĩtũku."
+  "watchHint": "Kururia gĩkwatĩro nĩguo ũbange rĩngĩ, haragũra mwena wa ũmotho nĩguo ũrute. Mũhari ũyonanagia mĩthenya 30 ĩrĩa ĩhĩtũku.",
+  "analysisReady": "{symbol}: ũthuthuria waku nĩ mũhaarĩrie."
 }

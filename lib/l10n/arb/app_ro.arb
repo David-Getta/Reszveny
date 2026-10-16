@@ -543,5 +543,6 @@
   "watchSortGainers": "Cele mai mari creșteri întâi",
   "watchSortLosers": "Cele mai mari scăderi întâi",
   "watchSortName": "După simbol (A–Z)",
-  "watchHint": "Trage de mâner pentru a reordona, glisează la stânga pentru a elimina. Linia arată ultimele 30 de zile."
+  "watchHint": "Trage de mâner pentru a reordona, glisează la stânga pentru a elimina. Linia arată ultimele 30 de zile.",
+  "analysisReady": "{symbol}: analiza ta este gata."
 }

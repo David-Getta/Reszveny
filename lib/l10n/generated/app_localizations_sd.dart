@@ -1997,4 +1997,9 @@ class AppLocalizationsSd extends AppLocalizations {
   @override
   String get watchHint =>
       'ترتيب بدلائڻ لاءِ هينڊل ڇڪيو، هٽائڻ لاءِ کاٻي پاسي سوائپ ڪريو. لڪير گذريل 30 ڏينهن ڏيکاري ٿي.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: توهان جو تجزيو تيار آهي.';
+  }
 }

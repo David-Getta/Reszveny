@@ -543,5 +543,6 @@
   "watchSortGainers": "Ndị kacha rịa elu buru ụzọ",
   "watchSortLosers": "Ndị kacha daa buru ụzọ",
   "watchSortName": "Site na ticker (A–Z)",
-  "watchHint": "Dọrọ njide ahụ iji hazie ọzọ, swaipụ n'aka ekpe iji wepụ. Ahịrị ahụ na-egosi ụbọchị 30 gara aga."
+  "watchHint": "Dọrọ njide ahụ iji hazie ọzọ, swaipụ n'aka ekpe iji wepụ. Ahịrị ahụ na-egosi ụbọchị 30 gara aga.",
+  "analysisReady": "{symbol}: nyocha gị adịla njikere."
 }

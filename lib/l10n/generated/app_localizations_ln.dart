@@ -2015,4 +2015,9 @@ class AppLocalizationsLn extends AppLocalizations {
   @override
   String get watchHint =>
       'Benda esimbeli mpo na kobongola molongo, pusa na lobɔkɔ ya mwasi mpo na kolongola. Molɔngɔ ezali kolakisa mikolo 30 oyo eleki.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: botaleli na yo esili.';
+  }
 }

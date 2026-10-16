@@ -2037,4 +2037,9 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get watchHint =>
       'Trage de mâner pentru a reordona, glisează la stânga pentru a elimina. Linia arată ultimele 30 de zile.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: analiza ta este gata.';
+  }
 }

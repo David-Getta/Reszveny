@@ -2006,4 +2006,9 @@ class AppLocalizationsMn extends AppLocalizations {
   @override
   String get watchHint =>
       'Дарааллыг өөрчлөхийн тулд бариулыг чирж, хасахын тулд зүүн тийш шударна уу. Шугам сүүлийн 30 хоногийг харуулна.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: таны шинжилгээ бэлэн боллоо.';
+  }
 }

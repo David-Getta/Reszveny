@@ -1988,4 +1988,9 @@ class AppLocalizationsKm extends AppLocalizations {
   @override
   String get watchHint =>
       'អូសដងកាន់ដើម្បីរៀបលំដាប់ឡើងវិញ អូសទៅឆ្វេងដើម្បីដកចេញ។ ខ្សែបង្ហាញ 30 ថ្ងៃចុងក្រោយ។';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol៖ ការវិភាគរបស់អ្នករួចរាល់ហើយ។';
+  }
 }

@@ -2016,4 +2016,9 @@ class AppLocalizationsTs extends AppLocalizations {
   @override
   String get watchHint =>
       'Koka xikhomo ku hlela nakambe, sindzisa eximatsini ku susa. Layini yi kombisa masiku ya 30 lama hundzeke.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: nxopaxopo wa wena wu lunghekile.';
+  }
 }

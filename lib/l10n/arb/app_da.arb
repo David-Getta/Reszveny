@@ -543,5 +543,6 @@
   "watchSortGainers": "Største stigninger først",
   "watchSortLosers": "Største fald først",
   "watchSortName": "Efter ticker (A–Z)",
-  "watchHint": "Træk i håndtaget for at ændre rækkefølgen, stryg til venstre for at fjerne. Linjen viser de seneste 30 dage."
+  "watchHint": "Træk i håndtaget for at ændre rækkefølgen, stryg til venstre for at fjerne. Linjen viser de seneste 30 dage.",
+  "analysisReady": "{symbol}: din analyse er klar."
 }

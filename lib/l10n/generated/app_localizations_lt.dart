@@ -2061,4 +2061,9 @@ class AppLocalizationsLt extends AppLocalizations {
   @override
   String get watchHint =>
       'Vilkite rankenėlę, kad pakeistumėte tvarką, perbraukite kairėn, kad pašalintumėte. Linija rodo pastarąsias 30 dienų.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: jūsų analizė parengta.';
+  }
 }

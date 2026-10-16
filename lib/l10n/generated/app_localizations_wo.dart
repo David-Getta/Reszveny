@@ -2000,4 +2000,9 @@ class AppLocalizationsWo extends AppLocalizations {
   @override
   String get watchHint =>
       'Diri jàppukaay bi ngir soppi toftal bi, raaxas ci càmmooñ ngir far. Rëdd bi day wone 30 fan yi weesu.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: sa xayma gi pare na.';
+  }
 }

@@ -2003,4 +2003,9 @@ class AppLocalizationsOr extends AppLocalizations {
   @override
   String get watchHint =>
       'କ୍ରମ ବଦଳାଇବାକୁ ହ୍ୟାଣ୍ଡଲ ଟାଣନ୍ତୁ, ହଟାଇବାକୁ ବାମକୁ ସ୍ୱାଇପ କରନ୍ତୁ। ରେଖା ଗତ 30 ଦିନ ଦେଖାଏ।';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: ଆପଣଙ୍କ ବିଶ୍ଳେଷଣ ପ୍ରସ୍ତୁତ।';
+  }
 }

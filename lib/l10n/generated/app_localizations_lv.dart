@@ -2044,4 +2044,9 @@ class AppLocalizationsLv extends AppLocalizations {
   @override
   String get watchHint =>
       'Velciet turi, lai mainītu secību, pavelciet pa kreisi, lai noņemtu. Līnija rāda pēdējās 30 dienas.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: jūsu analīze ir gatava.';
+  }
 }

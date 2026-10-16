@@ -2012,4 +2012,9 @@ class AppLocalizationsKn extends AppLocalizations {
   @override
   String get watchHint =>
       'ಕ್ರಮ ಬದಲಿಸಲು ಹ್ಯಾಂಡಲ್ ಎಳೆಯಿರಿ, ತೆಗೆದುಹಾಕಲು ಎಡಕ್ಕೆ ಸ್ವೈಪ್ ಮಾಡಿ. ರೇಖೆಯು ಕಳೆದ 30 ದಿನಗಳನ್ನು ತೋರಿಸುತ್ತದೆ.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: ನಿಮ್ಮ ವಿಶ್ಲೇಷಣೆ ಸಿದ್ಧವಾಗಿದೆ.';
+  }
 }

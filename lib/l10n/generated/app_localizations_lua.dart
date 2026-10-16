@@ -2010,4 +2010,9 @@ class AppLocalizationsLua extends AppLocalizations {
   @override
   String get watchHint =>
       'Koka tshikuatshilu bua kulongolola kabidi, sesa ku tshiakabadi bua kumbusha. Mulongo udi uleja matuku 30 adi apite.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: dikonkonona diebe didi dilongolola.';
+  }
 }

@@ -543,5 +543,6 @@
   "watchSortGainers": "Plus fortes hausses d'abord",
   "watchSortLosers": "Plus fortes baisses d'abord",
   "watchSortName": "Par ticker (A–Z)",
-  "watchHint": "Faites glisser la poignée pour réorganiser, balayez vers la gauche pour retirer. La ligne montre les 30 derniers jours."
+  "watchHint": "Faites glisser la poignée pour réorganiser, balayez vers la gauche pour retirer. La ligne montre les 30 derniers jours.",
+  "analysisReady": "{symbol} : votre analyse est prête."
 }

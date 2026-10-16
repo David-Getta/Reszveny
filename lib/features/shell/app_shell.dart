@@ -137,6 +137,7 @@ class _AppShellState extends State<AppShell> {
   void dispose() {
     _services?.alertMonitor.removeListener(_onAlertHits);
     _services?.alertMonitor.openRequest.removeListener(_onOpenRequest);
+    _services?.reports.completed.removeListener(_onAnalysisDone);
     super.dispose();
   }
 
@@ -163,6 +164,31 @@ class _AppShellState extends State<AppShell> {
       );
   }
 
+  /// Elkészült egy elemzés, miközben a felhasználó máshol jár (1–2 percig
+  /// tart): rövid jelzés „Megnyitás” gombbal.
+  void _onAnalysisDone() {
+    final services = _services;
+    final r = services?.reports.completed.value;
+    if (services == null || r == null || !mounted || services.reports.isOnScreen(r.symbol)) return;
+    final l10n = AppLocalizations.of(context);
+    ScaffoldMessenger.of(context)
+      ..hideCurrentSnackBar()
+      ..showSnackBar(
+        SnackBar(
+          key: ValueKey('analysis-ready-${r.symbol}'),
+          content: Text(l10n.analysisReady(r.symbol)),
+          duration: const Duration(seconds: 8),
+          action: SnackBarAction(
+            label: l10n.alertOpen,
+            onPressed: () {
+              _goHome();
+              _openSymbol(StockCandidate(symbol: r.symbol, companyName: r.symbol, confidence: 1));
+            },
+          ),
+        ),
+      );
+  }
+
   /// Értesítésre (vagy a „Megnyitás”-ra) koppintva a részvény nyílik meg.
   Future<void> _onOpenRequest() async {
     final symbol = _services?.alertMonitor.openRequest.value;
@@ -181,6 +207,7 @@ class _AppShellState extends State<AppShell> {
       _services = services;
       services.alertMonitor.addListener(_onAlertHits);
       services.alertMonitor.openRequest.addListener(_onOpenRequest);
+      services.reports.completed.addListener(_onAnalysisDone);
     }
     if (NativeQuickPanel.isSupported) {
       final panel = services.desktop.quickPanel;

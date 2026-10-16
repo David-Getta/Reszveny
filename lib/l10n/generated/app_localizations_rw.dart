@@ -2012,4 +2012,9 @@ class AppLocalizationsRw extends AppLocalizations {
   @override
   String get watchHint =>
       'Kurura agafashi kugira ngo uhindure uko bikurikirana, sunika ibumoso kugira ngo ukureho. Umurongo werekana iminsi 30 ishize.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: isesengura ryawe ryateguwe.';
+  }
 }

@@ -2007,4 +2007,9 @@ class AppLocalizationsKu extends AppLocalizations {
   @override
   String get watchHint =>
       'Destikê bikişîne da ku rêzê biguherînî, ber bi çepê ve bişemitîne da ku rakî. Xet 30 rojên dawî nîşan dide.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: analîza te amade ye.';
+  }
 }

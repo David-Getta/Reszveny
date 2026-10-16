@@ -2001,4 +2001,9 @@ class AppLocalizationsBho extends AppLocalizations {
   @override
   String get watchHint =>
       'क्रम बदले खातिर हैंडल खींचीं, हटावे खातिर बाईं ओर स्वाइप करीं। रेखा पिछला 30 दिन देखावेले।';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: रउआ विश्लेषण तइयार बा।';
+  }
 }

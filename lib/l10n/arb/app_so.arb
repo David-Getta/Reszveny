@@ -543,5 +543,6 @@
   "watchSortGainers": "Kuwa ugu kacay badan marka hore",
   "watchSortLosers": "Kuwa ugu dhacay badan marka hore",
   "watchSortName": "Astaan ahaan (A–Z)",
-  "watchHint": "Jiid gacan-qabsiga si aad u dib u habayso, u jiid bidix si aad u saarto. Xariiqdu waxay muujinaysaa 30-kii maalmood ee la soo dhaafay."
+  "watchHint": "Jiid gacan-qabsiga si aad u dib u habayso, u jiid bidix si aad u saarto. Xariiqdu waxay muujinaysaa 30-kii maalmood ee la soo dhaafay.",
+  "analysisReady": "{symbol}: falanqaynta aad codsatay waa diyaar."
 }

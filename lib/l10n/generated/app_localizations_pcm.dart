@@ -2005,4 +2005,9 @@ class AppLocalizationsPcm extends AppLocalizations {
   @override
   String get watchHint =>
       'Drag di handle to arrange am again, swipe go left to comot am. Di line dey show di last 30 days.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: your analysis don ready.';
+  }
 }

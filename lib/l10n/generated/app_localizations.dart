@@ -3600,6 +3600,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Drag the handle to reorder, swipe left to remove. The line shows the last 30 days.'**
   String get watchHint;
+
+  /// Short message (snack bar) when an AI analysis finishes while the user is on another page; has an 'Open' button.
+  ///
+  /// In en, this message translates to:
+  /// **'{symbol}: your analysis is ready.'**
+  String analysisReady(String symbol);
 }
 
 class _AppLocalizationsDelegate

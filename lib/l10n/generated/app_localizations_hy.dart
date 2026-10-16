@@ -2013,4 +2013,9 @@ class AppLocalizationsHy extends AppLocalizations {
   @override
   String get watchHint =>
       'Քաշեք բռնակը՝ վերադասավորելու համար, սահեցրեք ձախ՝ հեռացնելու համար։ Գիծը ցույց է տալիս վերջին 30 օրը։';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol․ ձեր վերլուծությունը պատրաստ է։';
+  }
 }

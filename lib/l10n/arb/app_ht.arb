@@ -543,5 +543,6 @@
   "watchSortGainers": "Pi gwo monte an premye",
   "watchSortLosers": "Pi gwo desann an premye",
   "watchSortName": "Pa senbòl (A–Z)",
-  "watchHint": "Trennen manch lan pou chanje lòd, glise sou bò goch pou retire. Liy lan montre 30 dènye jou yo."
+  "watchHint": "Trennen manch lan pou chanje lòd, glise sou bò goch pou retire. Liy lan montre 30 dènye jou yo.",
+  "analysisReady": "{symbol}: analiz ou a pare."
 }

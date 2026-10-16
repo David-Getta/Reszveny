@@ -543,5 +543,6 @@
   "watchSortGainers": "Zokwera kwambiri poyamba",
   "watchSortLosers": "Zotsika kwambiri poyamba",
   "watchSortName": "Potsatira ticker (A–Z)",
-  "watchHint": "Kokani chogwirira kuti musinthe dongosolo, sunthirani kumanzere kuti muchotse. Mzere ukuwonetsa masiku 30 apitawa."
+  "watchHint": "Kokani chogwirira kuti musinthe dongosolo, sunthirani kumanzere kuti muchotse. Mzere ukuwonetsa masiku 30 apitawa.",
+  "analysisReady": "{symbol}: kusanthula kwanu kwakonzeka."
 }

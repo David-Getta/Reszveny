@@ -2008,4 +2008,9 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get watchHint =>
       'Tartibni oʻzgartirish uchun tutqichni torting, olib tashlash uchun chapga suring. Chiziq oxirgi 30 kunni koʻrsatadi.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: tahlilingiz tayyor.';
+  }
 }

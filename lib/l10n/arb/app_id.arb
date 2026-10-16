@@ -543,5 +543,6 @@
   "watchSortGainers": "Kenaikan terbesar dulu",
   "watchSortLosers": "Penurunan terbesar dulu",
   "watchSortName": "Menurut kode saham (A–Z)",
-  "watchHint": "Seret pegangan untuk mengatur ulang, geser ke kiri untuk menghapus. Garis menunjukkan 30 hari terakhir."
+  "watchHint": "Seret pegangan untuk mengatur ulang, geser ke kiri untuk menghapus. Garis menunjukkan 30 hari terakhir.",
+  "analysisReady": "{symbol}: analisis Anda sudah siap."
 }

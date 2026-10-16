@@ -543,5 +543,6 @@
   "watchSortGainers": "Legnagyobb emelkedők elöl",
   "watchSortLosers": "Legnagyobb esők elöl",
   "watchSortName": "Ticker szerint (A–Z)",
-  "watchHint": "A fogantyút húzva átrendezheted, balra húzva törölheted. A vonal az elmúlt 30 napot mutatja."
+  "watchHint": "A fogantyút húzva átrendezheted, balra húzva törölheted. A vonal az elmúlt 30 napot mutatja.",
+  "analysisReady": "{symbol}: elkészült az elemzés."
 }

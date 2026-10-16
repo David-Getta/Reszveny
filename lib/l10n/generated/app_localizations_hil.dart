@@ -2017,4 +2017,9 @@ class AppLocalizationsHil extends AppLocalizations {
   @override
   String get watchHint =>
       'Guyuda ang hawiran agod hanayon liwat, i-swipe pawala agod kuhaon. Ginapakita sang linya ang nagligad nga 30 ka adlaw.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: handa na ang imo pagtuki.';
+  }
 }

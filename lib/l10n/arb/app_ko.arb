@@ -543,5 +543,6 @@
   "watchSortGainers": "상승률 높은 순",
   "watchSortLosers": "하락률 높은 순",
   "watchSortName": "티커순 (A–Z)",
-  "watchHint": "핸들을 끌어 순서를 바꾸고, 왼쪽으로 스와이프하여 제거합니다. 선은 최근 30일을 보여줍니다."
+  "watchHint": "핸들을 끌어 순서를 바꾸고, 왼쪽으로 스와이프하여 제거합니다. 선은 최근 30일을 보여줍니다.",
+  "analysisReady": "{symbol}: 분석이 완료되었습니다."
 }

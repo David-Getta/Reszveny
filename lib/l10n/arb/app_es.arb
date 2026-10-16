@@ -543,5 +543,6 @@
   "watchSortGainers": "Mayores subidas primero",
   "watchSortLosers": "Mayores bajadas primero",
   "watchSortName": "Por ticker (A–Z)",
-  "watchHint": "Arrastra el asa para reordenar y desliza a la izquierda para quitar. La línea muestra los últimos 30 días."
+  "watchHint": "Arrastra el asa para reordenar y desliza a la izquierda para quitar. La línea muestra los últimos 30 días.",
+  "analysisReady": "{symbol}: tu análisis está listo."
 }

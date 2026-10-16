@@ -2012,4 +2012,9 @@ class AppLocalizationsSq extends AppLocalizations {
   @override
   String get watchHint =>
       'Tërhiq dorezën për të rirenditur, rrëshqit majtas për ta hequr. Vija tregon 30 ditët e fundit.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: analiza juaj është gati.';
+  }
 }

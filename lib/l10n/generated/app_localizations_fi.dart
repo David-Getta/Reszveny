@@ -2007,4 +2007,9 @@ class AppLocalizationsFi extends AppLocalizations {
   @override
   String get watchHint =>
       'Vedä kahvasta järjestääksesi, pyyhkäise vasemmalle poistaaksesi. Viiva näyttää viimeiset 30 päivää.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: analyysisi on valmis.';
+  }
 }

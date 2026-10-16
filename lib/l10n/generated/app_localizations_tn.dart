@@ -2015,4 +2015,9 @@ class AppLocalizationsTn extends AppLocalizations {
   @override
   String get watchHint =>
       'Goga setshwaro go rulaganya sešwa, kgorometsa kwa molemeng go tlosa. Mola o bontsha malatsi a le 30 a a fetileng.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: tshekatsheko ya gago e siametse.';
+  }
 }

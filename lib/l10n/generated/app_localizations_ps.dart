@@ -1997,4 +1997,9 @@ class AppLocalizationsPs extends AppLocalizations {
   @override
   String get watchHint =>
       'د ترتیب بدلولو لپاره لاستی کش کړئ، د لرې کولو لپاره کیڼ لور ته سوایپ کړئ. کرښه تېرې 30 ورځې ښيي.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: ستاسو شننه چمتو ده.';
+  }
 }

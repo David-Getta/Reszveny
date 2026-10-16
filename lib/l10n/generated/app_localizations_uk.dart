@@ -2059,4 +2059,9 @@ class AppLocalizationsUk extends AppLocalizations {
   @override
   String get watchHint =>
       'Перетягніть маркер, щоб змінити порядок, проведіть ліворуч, щоб видалити. Лінія показує останні 30 днів.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: ваш аналіз готовий.';
+  }
 }

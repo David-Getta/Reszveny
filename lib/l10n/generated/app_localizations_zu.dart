@@ -2012,4 +2012,9 @@ class AppLocalizationsZu extends AppLocalizations {
   @override
   String get watchHint =>
       'Hudula isibambo ukuze uhlele kabusha, swayiphela kwesobunxele ukuze ususe. Umugqa ubonisa izinsuku ezingu-30 ezedlule.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: ukuhlaziya kwakho sekulungile.';
+  }
 }

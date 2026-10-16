@@ -543,5 +543,6 @@
   "watchSortGainers": "Ən çox artanlar əvvəl",
   "watchSortLosers": "Ən çox düşənlər əvvəl",
   "watchSortName": "Tikerə görə (A–Z)",
-  "watchHint": "Sıranı dəyişmək üçün tutacağı sürüşdürün, silmək üçün sola sürüşdürün. Xətt son 30 günü göstərir."
+  "watchHint": "Sıranı dəyişmək üçün tutacağı sürüşdürün, silmək üçün sola sürüşdürün. Xətt son 30 günü göstərir.",
+  "analysisReady": "{symbol}: təhliliniz hazırdır."
 }

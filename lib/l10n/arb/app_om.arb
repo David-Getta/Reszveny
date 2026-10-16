@@ -543,5 +543,6 @@
   "watchSortGainers": "Kan baay'ee ol ka'e dura",
   "watchSortLosers": "Kan baay'ee gad bu'e dura",
   "watchSortName": "Mallattoon (A–Z)",
-  "watchHint": "Tartiiba jijjiiruuf qabduu harkisi, haquuf gara bitaatti sossoosi. Sararri guyyoota 30 darban agarsiisa."
+  "watchHint": "Tartiiba jijjiiruuf qabduu harkisi, haquuf gara bitaatti sossoosi. Sararri guyyoota 30 darban agarsiisa.",
+  "analysisReady": "{symbol}: xiinxalli kee qophaa'eera."
 }

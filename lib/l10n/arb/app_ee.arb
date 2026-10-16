@@ -543,5 +543,6 @@
   "watchSortGainers": "Esiwo dzi ɖe edzi wu gbã",
   "watchSortLosers": "Esiwo ɖiɖi wu gbã",
   "watchSortName": "Le ticker nu (A–Z)",
-  "watchHint": "He asiɖoƒe la be nàtrɔ ɖoɖoa, tutui yi miame be nàɖe ɖa. Fliƒo la ɖe ŋkeke 30 siwo va yi fia."
+  "watchHint": "He asiɖoƒe la be nàtrɔ ɖoɖoa, tutui yi miame be nàɖe ɖa. Fliƒo la ɖe ŋkeke 30 siwo va yi fia.",
+  "analysisReady": "{symbol}: wò dzodzro la le klalo."
 }

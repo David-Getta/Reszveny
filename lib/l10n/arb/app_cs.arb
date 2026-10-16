@@ -543,5 +543,6 @@
   "watchSortGainers": "Největší růst první",
   "watchSortLosers": "Největší pokles první",
   "watchSortName": "Podle tickeru (A–Z)",
-  "watchHint": "Přetažením úchytu změníte pořadí, přejetím doleva odeberete. Čára ukazuje posledních 30 dní."
+  "watchHint": "Přetažením úchytu změníte pořadí, přejetím doleva odeberete. Čára ukazuje posledních 30 dní.",
+  "analysisReady": "{symbol}: vaše analýza je hotová."
 }

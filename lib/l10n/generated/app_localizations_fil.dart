@@ -2011,4 +2011,9 @@ class AppLocalizationsFil extends AppLocalizations {
   @override
   String get watchHint =>
       'I-drag ang hawakan para ayusin muli, i-swipe pakaliwa para alisin. Ipinapakita ng linya ang huling 30 araw.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: handa na ang iyong pagsusuri.';
+  }
 }

@@ -2059,4 +2059,9 @@ class AppLocalizationsBe extends AppLocalizations {
   @override
   String get watchHint =>
       'Перацягніце маркер, каб змяніць парадак, правядзіце ўлева, каб выдаліць. Лінія паказвае апошнія 30 дзён.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: ваш аналіз гатовы.';
+  }
 }

@@ -543,5 +543,6 @@
   "watchSortGainers": "Nea ɛforo kɛse di kan",
   "watchSortLosers": "Nea ɛtew kɛse di kan",
   "watchSortName": "Ticker so (A–Z)",
-  "watchHint": "Twe nsakuraeɛ no na sesa nhyehyɛe no, twe kɔ benkum na yi fi mu. Ntwamu no kyerɛ nnafua 30 a atwam."
+  "watchHint": "Twe nsakuraeɛ no na sesa nhyehyɛe no, twe kɔ benkum na yi fi mu. Ntwamu no kyerɛ nnafua 30 a atwam.",
+  "analysisReady": "{symbol}: wo nhwehwɛmu no awie."
 }

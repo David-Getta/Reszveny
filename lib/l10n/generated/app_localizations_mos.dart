@@ -1992,4 +1992,9 @@ class AppLocalizationsMos extends AppLocalizations {
   @override
   String get watchHint =>
       'Dɩk n yãag gãnegrã n tik-y-yã, yãag-y goabg n yiis. Sulgã wilgda rasem 30 sẽn loogã.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: f vẽenegrã sõama.';
+  }
 }

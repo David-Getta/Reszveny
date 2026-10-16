@@ -543,5 +543,6 @@
   "watchSortGainers": "Wetin rise pass first",
   "watchSortLosers": "Wetin fall pass first",
   "watchSortName": "By ticker (A–Z)",
-  "watchHint": "Drag di handle to arrange am again, swipe go left to comot am. Di line dey show di last 30 days."
+  "watchHint": "Drag di handle to arrange am again, swipe go left to comot am. Di line dey show di last 30 days.",
+  "analysisReady": "{symbol}: your analysis don ready."
 }

@@ -2006,4 +2006,9 @@ class AppLocalizationsCkb extends AppLocalizations {
   @override
   String get watchHint =>
       'دەسکەکە ڕابکێشە بۆ ڕیزکردنەوە، بۆ لای چەپ ڕایبماڵە بۆ لابردن. هێڵەکە 30 ڕۆژی ڕابردوو نیشان دەدات.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: شیکارییەکەت ئامادەیە.';
+  }
 }

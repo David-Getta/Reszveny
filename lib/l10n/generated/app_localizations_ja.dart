@@ -1935,4 +1935,9 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get watchHint => 'ハンドルをドラッグして並べ替え、左にスワイプして削除します。線は過去30日間を示します。';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol：分析が完成しました。';
+  }
 }

@@ -2009,4 +2009,9 @@ class AppLocalizationsEe extends AppLocalizations {
   @override
   String get watchHint =>
       'He asiɖoƒe la be nàtrɔ ɖoɖoa, tutui yi miame be nàɖe ɖa. Fliƒo la ɖe ŋkeke 30 siwo va yi fia.';
+
+  @override
+  String analysisReady(String symbol) {
+    return '$symbol: wò dzodzro la le klalo.';
+  }
 }
