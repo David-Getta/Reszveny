@@ -2006,4 +2006,17 @@ class AppLocalizationsBo extends AppLocalizations {
   String alertFromCost(String price) {
     return 'ཁྱེད་ཀྱི་ཉོ་གོང་ཆ་སྙོམས ($price) ལ་གཞིགས་ནས།';
   }
+
+  @override
+  String get briefTitle => 'དེ་རིང་ཁྱེད་ཀྱི་ཚོང་ཤེར།';
+
+  @override
+  String get briefButton => 'དེ་རིང་གི་བསྡུས་དོན།';
+
+  @override
+  String get briefHint =>
+      'ཁྱེད་ཀྱི་མ་འཇོག་ཐོ་དང་དགའ་ཤོས་ཚོ་དེ་རིང་ཇི་ལྟར་འགྱུར་བ་དང་གསར་འགྱུར་གསར་ཤོས་ཀྱིས་ཅི་ཟེར་བའི་AIཡི་བསྡུས་དོན་ཐུང་ངུ་། དབྱེ་ཞིབ་མི་བེད་སྤྱོད།';
+
+  @override
+  String get briefRefresh => 'གསར་བསྒྱུར།';
 }

@@ -2027,4 +2027,17 @@ class AppLocalizationsNso extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Go ya ka theko ya gago ya magareng ya go reka ($price):';
   }
+
+  @override
+  String get briefTitle => 'Lehono le dišere tša gago';
+
+  @override
+  String get briefButton => 'Kakaretša lehono';
+
+  @override
+  String get briefHint =>
+      'Kakaretšo ye kopana ya AI ya ka moo portfolio ya gago le tše o di ratago di sepetšego ka gona lehono le seo ditaba tša moragorago di se bolelago. Ga e diriše tshekatsheko.';
+
+  @override
+  String get briefRefresh => 'Mpshafatša';
 }

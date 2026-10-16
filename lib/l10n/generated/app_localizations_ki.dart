@@ -2015,4 +2015,17 @@ class AppLocalizationsKi extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Kuuma thogora-inĩ waku wa gatagatĩ wa kũgũra ($price):';
   }
+
+  @override
+  String get briefTitle => 'Ũmũthĩ na hisa ciaku';
+
+  @override
+  String get briefButton => 'Gũthondeka ũmũthĩ';
+
+  @override
+  String get briefHint =>
+      'Mũgĩkĩro mũkuhĩ wa AI wa ũrĩa portfolio yaku na cia mwendwa ithiĩte ũmũthĩ na ũrĩa ũhoro mũrũgu ũcigwetaga. Ndũhũthagĩra ũthuthuria.';
+
+  @override
+  String get briefRefresh => 'Gũcũrũria';
 }

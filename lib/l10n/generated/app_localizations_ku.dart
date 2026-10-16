@@ -2017,4 +2017,17 @@ class AppLocalizationsKu extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Li gorî bihayê kirînê yê navînî yê te ($price):';
   }
+
+  @override
+  String get briefTitle => 'Îro bi pişkên te re';
+
+  @override
+  String get briefButton => 'Îro kurt bike';
+
+  @override
+  String get briefHint =>
+      'Kurteyek AI ya kurt li ser ka portfolyo û bijareyên te îro çawa tevgeriyan û nûçeyên dawî li ser wan çi dibêjin. Analîzekê bi kar nayîne.';
+
+  @override
+  String get briefRefresh => 'Nû bike';
 }

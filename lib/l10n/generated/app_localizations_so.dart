@@ -2022,4 +2022,17 @@ class AppLocalizationsSo extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Marka laga eego celceliska qiimaha aad ku iibsatay ($price):';
   }
+
+  @override
+  String get briefTitle => 'Maanta iyo saamiyadaada';
+
+  @override
+  String get briefButton => 'Soo koob maanta';
+
+  @override
+  String get briefHint =>
+      'Soo koobid AI oo gaaban oo ku saabsan sida boortafooliyadaada iyo kuwa aad jeceshahay maanta isu beddeleen iyo waxa wararka ugu dambeeyay ka sheegayaan. Ma isticmaalo falanqayn.';
+
+  @override
+  String get briefRefresh => 'Cusboonaysii';
 }

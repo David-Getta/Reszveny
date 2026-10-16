@@ -2014,4 +2014,17 @@ class AppLocalizationsKab extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Seg ssuma-k talemmast n uqḍiḍ ($price):';
   }
+
+  @override
+  String get briefTitle => 'Ass-a d tigemmi-k';
+
+  @override
+  String get briefButton => 'Agzul n wass-a';
+
+  @override
+  String get briefHint =>
+      'Agzul wezzilen s AI ɣef wamek mbeddlen ass-a ukaram-ik d yismenyifen-ik, d wayen d-qqarent tneqlin timaynutin fell-asen. Ur yesseqdac ara tasledt.';
+
+  @override
+  String get briefRefresh => 'Leqqem';
 }

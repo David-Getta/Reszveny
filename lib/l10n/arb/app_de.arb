@@ -545,5 +545,9 @@
   "watchSortName": "Nach Ticker (A–Z)",
   "watchHint": "Zum Umsortieren den Griff ziehen, zum Entfernen nach links wischen. Die Linie zeigt die letzten 30 Tage.",
   "analysisReady": "{symbol}: Deine Analyse ist fertig.",
-  "alertFromCost": "Bezogen auf deinen durchschnittlichen Kaufpreis ({price}):"
+  "alertFromCost": "Bezogen auf deinen durchschnittlichen Kaufpreis ({price}):",
+  "briefTitle": "Heute bei deinen Aktien",
+  "briefButton": "Tag zusammenfassen",
+  "briefHint": "Eine kurze KI-Zusammenfassung, wie sich dein Depot und deine Favoriten heute bewegt haben und was die neuesten Nachrichten dazu sagen. Verbraucht keine Analyse.",
+  "briefRefresh": "Aktualisieren"
 }

@@ -2014,4 +2014,17 @@ class AppLocalizationsYo extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Láti inú iye àròpin tí o fi rà á ($price):';
   }
+
+  @override
+  String get briefTitle => 'Lónìí pẹ̀lú àwọn ìpín rẹ';
+
+  @override
+  String get briefButton => 'Ṣàkópọ̀ òní';
+
+  @override
+  String get briefHint =>
+      'Àkópọ̀ AI kúkúrú nípa bí àpò-ìdókòwò rẹ àti àwọn àyànfẹ́ rẹ ṣe yí padà lónìí àti ohun tí ìròyìn tuntun ń sọ nípa wọn. Kò ná ìtúpalẹ̀ kankan.';
+
+  @override
+  String get briefRefresh => 'Ṣe àtúnṣe';
 }

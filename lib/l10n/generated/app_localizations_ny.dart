@@ -2021,4 +2021,17 @@ class AppLocalizationsNy extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Kuchokera pa mtengo wanu wapakati wogulira ($price):';
   }
+
+  @override
+  String get briefTitle => 'Lero ndi masheya anu';
+
+  @override
+  String get briefButton => 'Fotokozani lero';
+
+  @override
+  String get briefHint =>
+      'Chidule chachidule cha AI cha momwe portfolio yanu ndi zomwe mumakonda zayendera lero ndi zomwe nkhani zaposachedwa zikunena. Sichigwiritsa ntchito kusanthula.';
+
+  @override
+  String get briefRefresh => 'Sinthani';
 }

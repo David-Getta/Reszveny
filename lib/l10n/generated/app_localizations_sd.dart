@@ -2007,4 +2007,17 @@ class AppLocalizationsSd extends AppLocalizations {
   String alertFromCost(String price) {
     return 'توهان جي سراسري خريد قيمت ($price) کان:';
   }
+
+  @override
+  String get briefTitle => 'اڄ توهان جي شيئرن سان';
+
+  @override
+  String get briefButton => 'اڄ جو خلاصو';
+
+  @override
+  String get briefHint =>
+      'اڄ توهان جو پورٽفوليو ۽ پسنديده شيئر ڪيئن هليا ۽ تازيون خبرون انهن بابت ڇا ٿيون چون، ان جو مختصر AI خلاصو. ان ۾ ڪو تجزيو خرچ نٿو ٿئي.';
+
+  @override
+  String get briefRefresh => 'تازو ڪريو';
 }

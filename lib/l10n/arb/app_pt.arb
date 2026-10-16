@@ -545,5 +545,9 @@
   "watchSortName": "Por ticker (A–Z)",
   "watchHint": "Arraste a alça para reordenar, deslize para a esquerda para remover. A linha mostra os últimos 30 dias.",
   "analysisReady": "{symbol}: a sua análise está pronta.",
-  "alertFromCost": "Com base no seu preço médio de compra ({price}):"
+  "alertFromCost": "Com base no seu preço médio de compra ({price}):",
+  "briefTitle": "Hoje com as suas ações",
+  "briefButton": "Resumir o dia",
+  "briefHint": "Um breve resumo com IA de como a sua carteira e os seus favoritos se moveram hoje e do que dizem as últimas notícias sobre eles. Não gasta nenhuma análise.",
+  "briefRefresh": "Atualizar"
 }

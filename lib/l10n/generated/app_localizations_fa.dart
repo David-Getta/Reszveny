@@ -2013,4 +2013,17 @@ class AppLocalizationsFa extends AppLocalizations {
   String alertFromCost(String price) {
     return 'بر اساس میانگین قیمت خرید شما ($price):';
   }
+
+  @override
+  String get briefTitle => 'امروز با سهام شما';
+
+  @override
+  String get briefButton => 'خلاصهٔ امروز';
+
+  @override
+  String get briefHint =>
+      'خلاصه‌ای کوتاه با هوش مصنوعی از حرکت امروز سبد و علاقه‌مندی‌های شما و آنچه تازه‌ترین اخبار درباره‌شان می‌گویند. تحلیلی مصرف نمی‌کند.';
+
+  @override
+  String get briefRefresh => 'به‌روزرسانی';
 }

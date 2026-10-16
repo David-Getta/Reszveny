@@ -1998,4 +1998,17 @@ class AppLocalizationsKm extends AppLocalizations {
   String alertFromCost(String price) {
     return 'ពីតម្លៃទិញមធ្យមរបស់អ្នក ($price)៖';
   }
+
+  @override
+  String get briefTitle => 'ថ្ងៃនេះជាមួយភាគហ៊ុនរបស់អ្នក';
+
+  @override
+  String get briefButton => 'សង្ខេបថ្ងៃនេះ';
+
+  @override
+  String get briefHint =>
+      'សេចក្ដីសង្ខេប AI ខ្លីអំពីរបៀបដែលផលប័ត្រ និងចំណូលចិត្តរបស់អ្នកបានប្រែប្រួលថ្ងៃនេះ និងអ្វីដែលព័ត៌មានថ្មីៗនិយាយ។ មិនប្រើការវិភាគទេ។';
+
+  @override
+  String get briefRefresh => 'ធ្វើបច្ចុប្បន្នភាព';
 }

@@ -545,5 +545,9 @@
   "watchSortName": "Site na ticker (A–Z)",
   "watchHint": "Dọrọ njide ahụ iji hazie ọzọ, swaipụ n'aka ekpe iji wepụ. Ahịrị ahụ na-egosi ụbọchị 30 gara aga.",
   "analysisReady": "{symbol}: nyocha gị adịla njikere.",
-  "alertFromCost": "Site na ọnụahịa nzụta nkezi gị ({price}):"
+  "alertFromCost": "Site na ọnụahịa nzụta nkezi gị ({price}):",
+  "briefTitle": "Taa na ngwa ahịa gị",
+  "briefButton": "Chịkọta taa",
+  "briefHint": "Nchịkọta AI dị mkpụmkpụ maka otú pọtụfoliyo gị na ndị ị hụrụ n’anya si gaa taa na ihe akụkọ ọhụrụ na-ekwu banyere ha. Ọ naghị eji nyocha.",
+  "briefRefresh": "Melite"
 }

@@ -545,5 +545,9 @@
   "watchSortName": "Sipas simbolit (A–Z)",
   "watchHint": "Tërhiq dorezën për të rirenditur, rrëshqit majtas për ta hequr. Vija tregon 30 ditët e fundit.",
   "analysisReady": "{symbol}: analiza juaj është gati.",
-  "alertFromCost": "Nga çmimi juaj mesatar i blerjes ({price}):"
+  "alertFromCost": "Nga çmimi juaj mesatar i blerjes ({price}):",
+  "briefTitle": "Sot me aksionet tuaja",
+  "briefButton": "Përmblidh ditën",
+  "briefHint": "Një përmbledhje e shkurtër me AI se si lëvizën sot portofoli dhe të preferuarat tuaja dhe çfarë thonë lajmet e fundit për to. Nuk shpenzon analizë.",
+  "briefRefresh": "Përditëso"
 }

@@ -545,5 +545,9 @@
   "watchSortName": "Ticker nisqaman hina (A–Z)",
   "watchHint": "Hapinata aysay ñiqichanapaq, lluq'iman llusiy hurqunapaq. Siqiqa qhipa 30 p'unchawkunata rikuchin.",
   "analysisReady": "{symbol}: t'aqwiyniykiqa listoñam.",
-  "alertFromCost": "Chawpi rantisqayki chaninmanta ({price}):"
+  "alertFromCost": "Chawpi rantisqayki chaninmanta ({price}):",
+  "briefTitle": "Kunan p’unchay acciónniykikunawan",
+  "briefButton": "Kunan p’unchayta pisiyachiy",
+  "briefHint": "AI nisqawan pisi willay, imaynatachus portafoliyuyki munasqaykikunapas kunan kuyurqanku, musuq willakuykunataq imatachus ninku. Mana t’aqwiyta apaykachanchu.",
+  "briefRefresh": "Musuqchay"
 }

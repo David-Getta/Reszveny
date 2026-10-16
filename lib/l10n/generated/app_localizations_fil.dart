@@ -2021,4 +2021,17 @@ class AppLocalizationsFil extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Batay sa iyong average na presyo ng pagbili ($price):';
   }
+
+  @override
+  String get briefTitle => 'Ngayon kasama ang iyong mga stock';
+
+  @override
+  String get briefButton => 'I-summarize ngayon';
+
+  @override
+  String get briefHint =>
+      'Maikling AI summary kung paano gumalaw ngayon ang iyong portfolio at mga paborito at ano ang sinasabi ng pinakabagong balita tungkol sa kanila. Hindi ito gumagamit ng pagsusuri.';
+
+  @override
+  String get briefRefresh => 'I-update';
 }

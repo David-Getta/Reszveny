@@ -2010,4 +2010,17 @@ class AppLocalizationsVi extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Dựa trên giá mua trung bình của bạn ($price):';
   }
+
+  @override
+  String get briefTitle => 'Hôm nay với cổ phiếu của bạn';
+
+  @override
+  String get briefButton => 'Tóm tắt hôm nay';
+
+  @override
+  String get briefHint =>
+      'Bản tóm tắt AI ngắn về cách danh mục và mã yêu thích của bạn biến động hôm nay và tin tức mới nhất nói gì về chúng. Không dùng lượt phân tích.';
+
+  @override
+  String get briefRefresh => 'Cập nhật';
 }

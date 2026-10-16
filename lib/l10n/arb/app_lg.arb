@@ -545,5 +545,9 @@
   "watchSortName": "Okusinziira ku ticker (A–Z)",
   "watchHint": "Walula ekikwatibwako okusengeka obulala, sikula ku kkono okuggyako. Olunyiriri lulaga ennaku 30 eziyise.",
   "analysisReady": "{symbol}: okwekenneenya kwo kuwedde.",
-  "alertFromCost": "Okusinziira ku bbeeyi yo eya wakati gye wagulirako ({price}):"
+  "alertFromCost": "Okusinziira ku bbeeyi yo eya wakati gye wagulirako ({price}):",
+  "briefTitle": "Leero ne sitoowa zo",
+  "briefButton": "Funza olwaleero",
+  "briefHint": "Mu bufunze, AI ekulaga engeri portfolio yo n’ezo z’oyagala gye zitambuddemu leero n’ebyo amawulire amapya gye bigamba. Tekozesa kwekenneenya.",
+  "briefRefresh": "Zza buggya"
 }

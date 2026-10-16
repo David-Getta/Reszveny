@@ -2014,4 +2014,17 @@ class AppLocalizationsBn extends AppLocalizations {
   String alertFromCost(String price) {
     return 'আপনার গড় ক্রয়মূল্য ($price) থেকে:';
   }
+
+  @override
+  String get briefTitle => 'আজ আপনার শেয়ারগুলোর সাথে';
+
+  @override
+  String get briefButton => 'আজকের সারাংশ';
+
+  @override
+  String get briefHint =>
+      'আজ আপনার পোর্টফোলিও ও পছন্দের শেয়ার কীভাবে চলেছে এবং সর্বশেষ খবর সেগুলো নিয়ে কী বলছে, তার একটি ছোট AI সারাংশ। এতে কোনো বিশ্লেষণ খরচ হয় না।';
+
+  @override
+  String get briefRefresh => 'আপডেট';
 }

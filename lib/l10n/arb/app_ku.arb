@@ -545,5 +545,9 @@
   "watchSortName": "Li gorî sembolê (A–Z)",
   "watchHint": "Destikê bikişîne da ku rêzê biguherînî, ber bi çepê ve bişemitîne da ku rakî. Xet 30 rojên dawî nîşan dide.",
   "analysisReady": "{symbol}: analîza te amade ye.",
-  "alertFromCost": "Li gorî bihayê kirînê yê navînî yê te ({price}):"
+  "alertFromCost": "Li gorî bihayê kirînê yê navînî yê te ({price}):",
+  "briefTitle": "Îro bi pişkên te re",
+  "briefButton": "Îro kurt bike",
+  "briefHint": "Kurteyek AI ya kurt li ser ka portfolyo û bijareyên te îro çawa tevgeriyan û nûçeyên dawî li ser wan çi dibêjin. Analîzekê bi kar nayîne.",
+  "briefRefresh": "Nû bike"
 }

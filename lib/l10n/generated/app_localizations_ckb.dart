@@ -2016,4 +2016,17 @@ class AppLocalizationsCkb extends AppLocalizations {
   String alertFromCost(String price) {
     return 'بەپێی تێکڕای نرخی کڕینەکەت ($price):';
   }
+
+  @override
+  String get briefTitle => 'ئەمڕۆ لەگەڵ پشکەکانت';
+
+  @override
+  String get briefButton => 'کورتەی ئەمڕۆ';
+
+  @override
+  String get briefHint =>
+      'کورتەیەکی AI لەسەر ئەوەی پۆرتفۆلیۆ و دڵخوازەکانت ئەمڕۆ چۆن جوڵان و نوێترین هەواڵەکان چی دەڵێن. شیکاری بەکارناهێنێت.';
+
+  @override
+  String get briefRefresh => 'نوێکردنەوە';
 }

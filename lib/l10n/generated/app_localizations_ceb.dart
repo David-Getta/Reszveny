@@ -2024,4 +2024,17 @@ class AppLocalizationsCeb extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Gikan sa imong kasagaran nga presyo sa pagpalit ($price):';
   }
+
+  @override
+  String get briefTitle => 'Karon uban sa imong mga stock';
+
+  @override
+  String get briefButton => 'I-summarize karon';
+
+  @override
+  String get briefHint =>
+      'Mubo nga AI summary kon giunsa paglihok karon sa imong portfolio ug mga paborito ug unsay giingon sa labing bag-ong balita bahin kanila. Dili kini mogamit og pagtuki.';
+
+  @override
+  String get briefRefresh => 'I-update';
 }

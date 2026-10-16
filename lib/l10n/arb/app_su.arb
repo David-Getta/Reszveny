@@ -545,5 +545,9 @@
   "watchSortName": "Dumasar kode saham (A–Z)",
   "watchHint": "Sered cepengan pikeun ngarobih runtuyan, usapkeun ka kénca pikeun miceun. Garis nembongkeun 30 dinten pamungkas.",
   "analysisReady": "{symbol}: analisis anjeun parantos siap.",
-  "alertFromCost": "Tina harga beuli rata-rata anjeun ({price}):"
+  "alertFromCost": "Tina harga beuli rata-rata anjeun ({price}):",
+  "briefTitle": "Dinten ieu sareng saham anjeun",
+  "briefButton": "Ringkes dinten ieu",
+  "briefHint": "Ringkesan AI pondok ngeunaan kumaha portofolio sareng paporit anjeun gerak dinten ieu sareng naon anu dicarioskeun ku warta panganyarna. Henteu nganggo analisis.",
+  "briefRefresh": "Apdet"
 }

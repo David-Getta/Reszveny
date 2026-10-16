@@ -2017,4 +2017,17 @@ class AppLocalizationsTg extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Аз нархи миёнаи харидатон ($price):';
   }
+
+  @override
+  String get briefTitle => 'Имрӯз бо саҳмияҳои шумо';
+
+  @override
+  String get briefButton => 'Хулосаи имрӯз';
+
+  @override
+  String get briefHint =>
+      'Хулосаи кӯтоҳи AI дар бораи он ки портфел ва интихобшудаҳои шумо имрӯз чӣ гуна тағйир ёфтанд ва хабарҳои охирин дар бораи онҳо чӣ мегӯянд. Таҳлил сарф намешавад.';
+
+  @override
+  String get briefRefresh => 'Навсозӣ';
 }

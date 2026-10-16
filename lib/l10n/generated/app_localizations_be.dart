@@ -2069,4 +2069,17 @@ class AppLocalizationsBe extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Ад вашага сярэдняга кошту пакупкі ($price):';
   }
+
+  @override
+  String get briefTitle => 'Сёння з вашымі акцыямі';
+
+  @override
+  String get briefButton => 'Падсумаваць дзень';
+
+  @override
+  String get briefHint =>
+      'Кароткае AI-падсумаванне таго, як сёння змяніліся ваш партфель і абранае і што пра іх кажуць свежыя навіны. Аналіз не выкарыстоўваецца.';
+
+  @override
+  String get briefRefresh => 'Абнавіць';
 }

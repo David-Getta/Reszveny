@@ -545,5 +545,9 @@
   "watchSortName": "Bilondeshile ticker (A–Z)",
   "watchHint": "Koka tshikuatshilu bua kulongolola kabidi, sesa ku tshiakabadi bua kumbusha. Mulongo udi uleja matuku 30 adi apite.",
   "analysisReady": "{symbol}: dikonkonona diebe didi dilongolola.",
-  "alertFromCost": "Bilondeshile mushinga webe wa pankatshi wa kusumba ({price}):"
+  "alertFromCost": "Bilondeshile mushinga webe wa pankatshi wa kusumba ({price}):",
+  "briefTitle": "Lelu ne bintu biebe bia mu tshisumbu",
+  "briefButton": "Kufunda dia lelu",
+  "briefHint": "Muvungu mukese wa AI wa mudi portefeuille webe ne biudi musue biakatamba lelu ne bidi mukanda ya lumu ilela. Kakuena kudifila dikonkonona.",
+  "briefRefresh": "Kuvuija bipiabipia"
 }

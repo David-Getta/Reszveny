@@ -545,5 +545,9 @@
   "watchSortName": "Ka ticker (A–Z)",
   "watchHint": "Hula sehokelo ho hlophisa bocha, sutumetsa ka ho le letshehadi ho tlosa. Mola o bontsha matsatsi a 30 a fetileng.",
   "analysisReady": "{symbol}: manollo a hao o lokile.",
-  "alertFromCost": "Ho tswa theko ya hao e mahareng ya ho reka ({price}):"
+  "alertFromCost": "Ho tswa theko ya hao e mahareng ya ho reka ({price}):",
+  "briefTitle": "Kajeno le diabo tsa hao",
+  "briefButton": "Akaretsa kajeno",
+  "briefHint": "Kakaretso e kgutshwane ya AI ya kamoo portfolio ya hao le tseo o di ratang di tsamaileng ka teng kajeno le seo ditaba tsa morao-rao di se buang. Ha e sebedise manollo.",
+  "briefRefresh": "Ntjhafatsa"
 }

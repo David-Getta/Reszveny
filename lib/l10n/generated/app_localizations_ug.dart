@@ -2018,4 +2018,17 @@ class AppLocalizationsUg extends AppLocalizations {
   String alertFromCost(String price) {
     return 'ئوتتۇرىچە سېتىۋېلىش باھايىڭىزدىن ($price):';
   }
+
+  @override
+  String get briefTitle => 'بۈگۈن پايچېكلىرىڭىز بىلەن';
+
+  @override
+  String get briefButton => 'بۈگۈننى خۇلاسىلە';
+
+  @override
+  String get briefHint =>
+      'پورتفېلىڭىز ۋە ياقتۇرغانلىرىڭىزنىڭ بۈگۈن قانداق ئۆزگەرگەنلىكى ۋە ئەڭ يېڭى خەۋەرلەرنىڭ ئۇلار ھەققىدە نېمە دېگەنلىكى توغرىسىدىكى قىسقا AI خۇلاسىسى. تەھلىل سەرپ قىلمايدۇ.';
+
+  @override
+  String get briefRefresh => 'يېڭىلا';
 }

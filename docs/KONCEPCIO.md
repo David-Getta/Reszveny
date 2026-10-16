@@ -212,6 +212,7 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 5af | Mutatómagyarázatok kezdőknek: 24 mutató (P/E, PEG, béta, árrések, ROE…) mellett ⓘ, koppintásra egy-két mondatos, közérthető magyarázat 120 nyelven | ✅ kész |
 | 5ag | „Hírek a részvényeidről” a kezdőképernyőn: a portfólió és a kedvencek friss hírei egy listában (újabb elöl, ismétlés nélkül, egy hétig), külön oldallal | ✅ kész |
 | 5ah | Kedvencek oldal (figyelőlista): ár, napi változás, 30 napos mini-grafikon; rendezés napi változás vagy ticker szerint, átrendezés húzással, törlés elhúzással visszavonással | ✅ kész |
+| 5ai | „A nap a részvényeiddel”: napi AI-összefoglaló a portfólió és a kedvencek mai mozgásáról és friss híreiről a kezdőképernyőn (a kérdéskeretből, elemzést nem fogyaszt) | ✅ kész |
 | 5j | Telefonos háttér-értesítés (riasztás) szerverről, APNs / FCM | 🟡 első lépés kész: a szerver 10 percenként nézi a belépett fiókok szinkronizált riasztásait, és e-mailben szól (csukott appnál is, kikapcsolható); a telefonos push (APNs / FCM) a Firebase-projekt és az Apple-kulcs után |
 | 5k | Bolti adatlapok 120 nyelven, képernyőképek, ikon, előnézeti videó | 🟡 adatlap-szövegek 70 bolti nyelven (fastlane-mappa, `docs/BOLTI_ADATLAP.md`), feliratos bolti képek a teszt-harnessből a boltok méreteiben; előnézeti videó és a nem latin írású képek a natív buildből később |
 

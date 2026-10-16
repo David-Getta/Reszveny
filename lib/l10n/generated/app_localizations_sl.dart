@@ -2072,4 +2072,17 @@ class AppLocalizationsSl extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Glede na vašo povprečno nakupno ceno ($price):';
   }
+
+  @override
+  String get briefTitle => 'Danes z vašimi delnicami';
+
+  @override
+  String get briefButton => 'Povzemi dan';
+
+  @override
+  String get briefHint =>
+      'Kratek povzetek z UI o tem, kako so se danes gibali vaš portfelj in priljubljene ter kaj o njih pravijo zadnje novice. Ne porabi analize.';
+
+  @override
+  String get briefRefresh => 'Posodobi';
 }

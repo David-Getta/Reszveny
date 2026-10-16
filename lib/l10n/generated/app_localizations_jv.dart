@@ -2016,4 +2016,17 @@ class AppLocalizationsJv extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Saka rega tuku rata-rata sampeyan ($price):';
   }
+
+  @override
+  String get briefTitle => 'Dina iki karo saham sampeyan';
+
+  @override
+  String get briefButton => 'Ringkes dina iki';
+
+  @override
+  String get briefHint =>
+      'Ringkesan AI cekak babagan obahe portofolio lan favorit sampeyan dina iki lan apa sing dikandhakake kabar paling anyar. Ora nggunakake analisis.';
+
+  @override
+  String get briefRefresh => 'Anyari';
 }

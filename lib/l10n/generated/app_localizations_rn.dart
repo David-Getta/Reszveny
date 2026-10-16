@@ -2021,4 +2021,17 @@ class AppLocalizationsRn extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Uhereye ku giciro cawe co kugura c\'ikigereranyo ($price):';
   }
+
+  @override
+  String get briefTitle => 'Uyu munsi n’imigabane yawe';
+
+  @override
+  String get briefButton => 'Incamake y’uyu munsi';
+
+  @override
+  String get briefHint =>
+      'Incamake ngufi ya AI y’ukuntu portfolio yawe n’ivyo ukunda vyagenze uyu munsi n’ivyo inkuru nshasha zivuga. Ntikoresha isesengura.';
+
+  @override
+  String get briefRefresh => 'Shirisha ku gihe';
 }

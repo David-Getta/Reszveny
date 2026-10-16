@@ -545,5 +545,9 @@
   "watchSortName": "Efter ticker (A–Z)",
   "watchHint": "Dra i handtaget för att ändra ordning, svep åt vänster för att ta bort. Linjen visar de senaste 30 dagarna.",
   "analysisReady": "{symbol}: din analys är klar.",
-  "alertFromCost": "Utifrån ditt genomsnittliga inköpspris ({price}):"
+  "alertFromCost": "Utifrån ditt genomsnittliga inköpspris ({price}):",
+  "briefTitle": "I dag med dina aktier",
+  "briefButton": "Sammanfatta dagen",
+  "briefHint": "En kort AI-sammanfattning av hur din portfölj och dina favoriter rörde sig i dag och vad de senaste nyheterna säger om dem. Använder ingen analys.",
+  "briefRefresh": "Uppdatera"
 }

@@ -1992,4 +1992,17 @@ class AppLocalizationsLo extends AppLocalizations {
   String alertFromCost(String price) {
     return 'ຈາກລາຄາຊື້ສະເລ່ຍຂອງທ່ານ ($price):';
   }
+
+  @override
+  String get briefTitle => 'ມື້ນີ້ກັບຫຸ້ນຂອງທ່ານ';
+
+  @override
+  String get briefButton => 'ສະຫຼຸບມື້ນີ້';
+
+  @override
+  String get briefHint =>
+      'ສະຫຼຸບ AI ສັ້ນໆກ່ຽວກັບວ່າພອດໂຟລິໂອ ແລະ ລາຍການທີ່ມັກຂອງທ່ານເຄື່ອນໄຫວແນວໃດມື້ນີ້ ແລະ ຂ່າວລ່າສຸດເວົ້າຫຍັງ. ບໍ່ໃຊ້ການວິເຄາະ.';
+
+  @override
+  String get briefRefresh => 'ອັບເດດ';
 }

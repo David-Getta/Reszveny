@@ -2023,4 +2023,17 @@ class AppLocalizationsHy extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Ձեր միջին գնման գնի ($price) համեմատ՝';
   }
+
+  @override
+  String get briefTitle => 'Այսօր՝ ձեր բաժնետոմսերով';
+
+  @override
+  String get briefButton => 'Ամփոփել օրը';
+
+  @override
+  String get briefHint =>
+      'Կարճ AI ամփոփում այն մասին, թե ինչպես են այսօր շարժվել ձեր պորտֆելը և ընտրյալները, և ինչ են ասում դրանց մասին վերջին լուրերը։ Վերլուծություն չի ծախսում։';
+
+  @override
+  String get briefRefresh => 'Թարմացնել';
 }

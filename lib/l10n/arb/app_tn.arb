@@ -545,5 +545,9 @@
   "watchSortName": "Ka ticker (A–Z)",
   "watchHint": "Goga setshwaro go rulaganya sešwa, kgorometsa kwa molemeng go tlosa. Mola o bontsha malatsi a le 30 a a fetileng.",
   "analysisReady": "{symbol}: tshekatsheko ya gago e siametse.",
-  "alertFromCost": "Go tswa mo tlhwatlhweng ya gago ya magareng ya go reka ({price}):"
+  "alertFromCost": "Go tswa mo tlhwatlhweng ya gago ya magareng ya go reka ({price}):",
+  "briefTitle": "Gompieno le dishere tsa gago",
+  "briefButton": "Kgutshwafatsa gompieno",
+  "briefHint": "Kakaretso e khutshwane ya AI ya kafa portfolio ya gago le tse o di ratang di tsamaileng ka teng gompieno le se dikgang tsa bosheng di se buang. Ga e dirise tshekatsheko.",
+  "briefRefresh": "Ntšhafatsa"
 }

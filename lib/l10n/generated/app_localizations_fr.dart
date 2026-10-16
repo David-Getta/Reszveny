@@ -2025,4 +2025,17 @@ class AppLocalizationsFr extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Par rapport à votre prix d’achat moyen ($price) :';
   }
+
+  @override
+  String get briefTitle => 'Aujourd’hui avec vos actions';
+
+  @override
+  String get briefButton => 'Résumer la journée';
+
+  @override
+  String get briefHint =>
+      'Un court résumé par IA de l’évolution de votre portefeuille et de vos favoris aujourd’hui, et de ce qu’en disent les dernières actualités. Ne consomme aucune analyse.';
+
+  @override
+  String get briefRefresh => 'Actualiser';
 }

@@ -2015,4 +2015,17 @@ class AppLocalizationsTr extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Ortalama alış fiyatınıza ($price) göre:';
   }
+
+  @override
+  String get briefTitle => 'Bugün hisselerinle';
+
+  @override
+  String get briefButton => 'Bugünü özetle';
+
+  @override
+  String get briefHint =>
+      'Portföyünün ve favorilerinin bugün nasıl hareket ettiğine ve son haberlerin onlar hakkında ne dediğine dair kısa bir yapay zekâ özeti. Analiz hakkı kullanmaz.';
+
+  @override
+  String get briefRefresh => 'Güncelle';
 }

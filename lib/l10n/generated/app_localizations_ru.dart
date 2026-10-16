@@ -2071,4 +2071,17 @@ class AppLocalizationsRu extends AppLocalizations {
   String alertFromCost(String price) {
     return 'От вашей средней цены покупки ($price):';
   }
+
+  @override
+  String get briefTitle => 'Сегодня с вашими акциями';
+
+  @override
+  String get briefButton => 'Подвести итог дня';
+
+  @override
+  String get briefHint =>
+      'Короткая AI-сводка о том, как сегодня изменились ваш портфель и избранное и что о них пишут свежие новости. Анализ не расходуется.';
+
+  @override
+  String get briefRefresh => 'Обновить';
 }

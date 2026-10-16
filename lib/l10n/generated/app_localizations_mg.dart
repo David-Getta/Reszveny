@@ -2028,4 +2028,17 @@ class AppLocalizationsMg extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Araka ny vidiny antonony nividiananao ($price):';
   }
+
+  @override
+  String get briefTitle => 'Anio miaraka amin’ny lozamanao';
+
+  @override
+  String get briefButton => 'Fintino ny anio';
+
+  @override
+  String get briefHint =>
+      'Famintinana fohy amin’ny AI ny fihetsiky ny portefeuille sy ny tianao anio ary izay lazain’ny vaovao farany momba azy ireo. Tsy mampiasa famakafakana.';
+
+  @override
+  String get briefRefresh => 'Havaozina';
 }

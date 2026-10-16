@@ -2020,4 +2020,17 @@ class AppLocalizationsHu extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Az átlagos vételárad ($price) alapján:';
   }
+
+  @override
+  String get briefTitle => 'A nap a részvényeiddel';
+
+  @override
+  String get briefButton => 'Mai összefoglaló';
+
+  @override
+  String get briefHint =>
+      'Rövid AI-összefoglaló arról, hogyan mozogtak ma a portfóliód és a kedvenceid részvényei, és mit mondanak róluk a friss hírek. Nem fogyaszt elemzést.';
+
+  @override
+  String get briefRefresh => 'Frissítés';
 }

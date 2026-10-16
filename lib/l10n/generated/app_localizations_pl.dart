@@ -2073,4 +2073,17 @@ class AppLocalizationsPl extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Względem Twojej średniej ceny zakupu ($price):';
   }
+
+  @override
+  String get briefTitle => 'Dziś z Twoimi akcjami';
+
+  @override
+  String get briefButton => 'Podsumuj dzień';
+
+  @override
+  String get briefHint =>
+      'Krótkie podsumowanie AI tego, jak dziś zmieniał się Twój portfel i ulubione akcje oraz co mówią o nich najnowsze wiadomości. Nie zużywa analizy.';
+
+  @override
+  String get briefRefresh => 'Odśwież';
 }

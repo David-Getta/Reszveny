@@ -2013,4 +2013,17 @@ class AppLocalizationsDa extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Ud fra din gennemsnitlige købspris ($price):';
   }
+
+  @override
+  String get briefTitle => 'I dag med dine aktier';
+
+  @override
+  String get briefButton => 'Opsummer i dag';
+
+  @override
+  String get briefHint =>
+      'Et kort AI-resumé af, hvordan din portefølje og dine favoritter bevægede sig i dag, og hvad de seneste nyheder siger om dem. Det bruger ikke en analyse.';
+
+  @override
+  String get briefRefresh => 'Opdater';
 }

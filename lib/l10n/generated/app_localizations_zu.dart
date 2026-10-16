@@ -2022,4 +2022,17 @@ class AppLocalizationsZu extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Kusukela entengweni yakho emaphakathi yokuthenga ($price):';
   }
+
+  @override
+  String get briefTitle => 'Namuhla namasheya akho';
+
+  @override
+  String get briefButton => 'Fingqa namuhla';
+
+  @override
+  String get briefHint =>
+      'Isifinyezo esifushane se-AI sendlela iphothifoliyo yakho nalawo owathandayo ahambe ngayo namuhla nokuthi izindaba zakamuva zithini ngawo. Asisebenzisi ukuhlaziya.';
+
+  @override
+  String get briefRefresh => 'Buyekeza';
 }

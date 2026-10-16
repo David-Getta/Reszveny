@@ -2024,4 +2024,17 @@ class AppLocalizationsTa extends AppLocalizations {
   String alertFromCost(String price) {
     return 'உங்கள் சராசரி வாங்கிய விலையிலிருந்து ($price):';
   }
+
+  @override
+  String get briefTitle => 'இன்று உங்கள் பங்குகளுடன்';
+
+  @override
+  String get briefButton => 'இன்றைய சுருக்கம்';
+
+  @override
+  String get briefHint =>
+      'உங்கள் போர்ட்ஃபோலியோவும் விருப்பமானவைகளும் இன்று எப்படி நகர்ந்தன, சமீபத்திய செய்திகள் அவை பற்றி என்ன சொல்கின்றன என்ற சிறிய AI சுருக்கம். பகுப்பாய்வு எதுவும் செலவாகாது.';
+
+  @override
+  String get briefRefresh => 'புதுப்பி';
 }

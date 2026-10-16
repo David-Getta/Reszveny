@@ -1945,4 +1945,17 @@ class AppLocalizationsJa extends AppLocalizations {
   String alertFromCost(String price) {
     return '平均取得価格（$price）から：';
   }
+
+  @override
+  String get briefTitle => '今日のあなたの銘柄';
+
+  @override
+  String get briefButton => '今日をまとめる';
+
+  @override
+  String get briefHint =>
+      'ポートフォリオとお気に入り銘柄が今日どう動いたか、最新ニュースが何を伝えているかをAIが短くまとめます。分析回数は消費しません。';
+
+  @override
+  String get briefRefresh => '更新';
 }

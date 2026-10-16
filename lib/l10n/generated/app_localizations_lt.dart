@@ -2071,4 +2071,17 @@ class AppLocalizationsLt extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Pagal jūsų vidutinę pirkimo kainą ($price):';
   }
+
+  @override
+  String get briefTitle => 'Šiandien su jūsų akcijomis';
+
+  @override
+  String get briefButton => 'Apibendrinti dieną';
+
+  @override
+  String get briefHint =>
+      'Trumpa DI santrauka, kaip šiandien judėjo jūsų portfelis ir mėgstamiausios akcijos ir ką apie jas sako naujausios žinios. Analizė nenaudojama.';
+
+  @override
+  String get briefRefresh => 'Atnaujinti';
 }

@@ -545,5 +545,9 @@
   "watchSortName": "Tunnuksen mukaan (A–Z)",
   "watchHint": "Vedä kahvasta järjestääksesi, pyyhkäise vasemmalle poistaaksesi. Viiva näyttää viimeiset 30 päivää.",
   "analysisReady": "{symbol}: analyysisi on valmis.",
-  "alertFromCost": "Keskimääräisestä ostohinnastasi ({price}):"
+  "alertFromCost": "Keskimääräisestä ostohinnastasi ({price}):",
+  "briefTitle": "Tänään osakkeidesi kanssa",
+  "briefButton": "Tiivistä päivä",
+  "briefHint": "Lyhyt tekoälyn yhteenveto siitä, miten salkkusi ja suosikkisi liikkuivat tänään ja mitä tuoreimmat uutiset niistä kertovat. Ei kuluta analyysia.",
+  "briefRefresh": "Päivitä"
 }

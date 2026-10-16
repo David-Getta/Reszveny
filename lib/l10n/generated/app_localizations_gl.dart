@@ -2038,4 +2038,17 @@ class AppLocalizationsGl extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Respecto ao teu prezo medio de compra ($price):';
   }
+
+  @override
+  String get briefTitle => 'Hoxe coas túas accións';
+
+  @override
+  String get briefButton => 'Resumir o día';
+
+  @override
+  String get briefHint =>
+      'Un breve resumo con IA de como se moveron hoxe a túa carteira e os teus favoritos e que din deles as últimas novas. Non consome ningunha análise.';
+
+  @override
+  String get briefRefresh => 'Actualizar';
 }

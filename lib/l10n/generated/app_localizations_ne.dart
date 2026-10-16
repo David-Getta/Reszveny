@@ -2014,4 +2014,17 @@ class AppLocalizationsNe extends AppLocalizations {
   String alertFromCost(String price) {
     return 'तपाईंको औसत खरिद मूल्य ($price) बाट:';
   }
+
+  @override
+  String get briefTitle => 'आज तपाईंका सेयरसँग';
+
+  @override
+  String get briefButton => 'आजको सारांश';
+
+  @override
+  String get briefHint =>
+      'आज तपाईंको पोर्टफोलियो र मनपर्ने सेयर कसरी चले र ताजा समाचारले तिनका बारेमा के भन्छ भन्ने छोटो AI सारांश। यसले कुनै विश्लेषण खर्च गर्दैन।';
+
+  @override
+  String get briefRefresh => 'अपडेट गर्नुहोस्';
 }

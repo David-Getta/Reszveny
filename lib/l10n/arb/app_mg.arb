@@ -545,5 +545,9 @@
   "watchSortName": "Araka ny ticker (A–Z)",
   "watchHint": "Sintony ny tahony mba handaminana indray, ampitsoaho miankavia mba hanesorana. Ny tsipika dia mampiseho ny 30 andro farany.",
   "analysisReady": "{symbol}: vonona ny famakafakanao.",
-  "alertFromCost": "Araka ny vidiny antonony nividiananao ({price}):"
+  "alertFromCost": "Araka ny vidiny antonony nividiananao ({price}):",
+  "briefTitle": "Anio miaraka amin’ny lozamanao",
+  "briefButton": "Fintino ny anio",
+  "briefHint": "Famintinana fohy amin’ny AI ny fihetsiky ny portefeuille sy ny tianao anio ary izay lazain’ny vaovao farany momba azy ireo. Tsy mampiasa famakafakana.",
+  "briefRefresh": "Havaozina"
 }

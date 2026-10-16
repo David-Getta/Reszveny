@@ -1953,4 +1953,17 @@ class AppLocalizationsKo extends AppLocalizations {
   String alertFromCost(String price) {
     return '평균 매수가($price) 기준:';
   }
+
+  @override
+  String get briefTitle => '오늘의 내 종목';
+
+  @override
+  String get briefButton => '오늘 요약하기';
+
+  @override
+  String get briefHint =>
+      '포트폴리오와 관심 종목이 오늘 어떻게 움직였는지, 최신 뉴스가 무엇을 말하는지 AI가 짧게 요약합니다. 분석 횟수는 차감되지 않습니다.';
+
+  @override
+  String get briefRefresh => '업데이트';
 }

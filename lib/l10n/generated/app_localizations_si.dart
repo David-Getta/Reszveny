@@ -2014,4 +2014,17 @@ class AppLocalizationsSi extends AppLocalizations {
   String alertFromCost(String price) {
     return 'ඔබේ සාමාන්‍ය මිලදී ගැනීමේ මිලෙන් ($price):';
   }
+
+  @override
+  String get briefTitle => 'අද ඔබේ කොටස් සමඟ';
+
+  @override
+  String get briefButton => 'අද සාරාංශය';
+
+  @override
+  String get briefHint =>
+      'ඔබේ කළඹ සහ ප්‍රියතම කොටස් අද චලනය වූ ආකාරය සහ නවතම පුවත් ඒවා ගැන පවසන දේ පිළිබඳ කෙටි AI සාරාංශයක්. විශ්ලේෂණයක් භාවිත නොකරයි.';
+
+  @override
+  String get briefRefresh => 'යාවත්කාලීන කරන්න';
 }

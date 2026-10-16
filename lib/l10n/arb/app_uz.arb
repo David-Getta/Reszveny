@@ -545,5 +545,9 @@
   "watchSortName": "Tiker boʻyicha (A–Z)",
   "watchHint": "Tartibni oʻzgartirish uchun tutqichni torting, olib tashlash uchun chapga suring. Chiziq oxirgi 30 kunni koʻrsatadi.",
   "analysisReady": "{symbol}: tahlilingiz tayyor.",
-  "alertFromCost": "O‘rtacha xarid narxingizdan ({price}):"
+  "alertFromCost": "O‘rtacha xarid narxingizdan ({price}):",
+  "briefTitle": "Bugun aksiyalaringiz bilan",
+  "briefButton": "Bugunni xulosa qilish",
+  "briefHint": "Portfelingiz va sevimlilaringiz bugun qanday harakatlangani va so‘nggi yangiliklar ular haqida nima deyotgani haqida qisqa AI xulosasi. Tahlil sarflanmaydi.",
+  "briefRefresh": "Yangilash"
 }

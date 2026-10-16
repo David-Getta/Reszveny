@@ -545,5 +545,9 @@
   "watchSortName": "Kwa ticker (A–Z)",
   "watchHint": "Buruta kishikio ili kupanga upya, telezesha kushoto ili kuondoa. Mstari unaonyesha siku 30 zilizopita.",
   "analysisReady": "{symbol}: uchambuzi wako uko tayari.",
-  "alertFromCost": "Kutoka bei yako ya wastani ya kununua ({price}):"
+  "alertFromCost": "Kutoka bei yako ya wastani ya kununua ({price}):",
+  "briefTitle": "Leo na hisa zako",
+  "briefButton": "Fupisha leo",
+  "briefHint": "Muhtasari mfupi wa AI wa jinsi jalada lako na vipendwa vyako vilivyosonga leo na habari za karibuni zinasema nini kuzihusu. Hautumii uchambuzi.",
+  "briefRefresh": "Sasisha"
 }

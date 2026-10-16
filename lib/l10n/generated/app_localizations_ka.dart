@@ -2017,4 +2017,17 @@ class AppLocalizationsKa extends AppLocalizations {
   String alertFromCost(String price) {
     return 'თქვენი საშუალო შესყიდვის ფასიდან ($price):';
   }
+
+  @override
+  String get briefTitle => 'დღეს თქვენს აქციებთან ერთად';
+
+  @override
+  String get briefButton => 'დღის შეჯამება';
+
+  @override
+  String get briefHint =>
+      'მოკლე AI შეჯამება იმის შესახებ, როგორ შეიცვალა დღეს თქვენი პორტფელი და რჩეულები და რას ამბობს მათზე უახლესი ამბები. ანალიზს არ ხარჯავს.';
+
+  @override
+  String get briefRefresh => 'განახლება';
 }

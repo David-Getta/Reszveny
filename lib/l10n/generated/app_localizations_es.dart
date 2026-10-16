@@ -2020,4 +2020,17 @@ class AppLocalizationsEs extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Según tu precio medio de compra ($price):';
   }
+
+  @override
+  String get briefTitle => 'Hoy con tus acciones';
+
+  @override
+  String get briefButton => 'Resumir el día';
+
+  @override
+  String get briefHint =>
+      'Un breve resumen con IA de cómo se movieron hoy tu cartera y tus favoritos y qué dicen de ellos las últimas noticias. No consume ningún análisis.';
+
+  @override
+  String get briefRefresh => 'Actualizar';
 }

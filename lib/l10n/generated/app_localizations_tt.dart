@@ -2012,4 +2012,17 @@ class AppLocalizationsTt extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Уртача сатып алу бәягездән ($price):';
   }
+
+  @override
+  String get briefTitle => 'Бүген акцияләрегез белән';
+
+  @override
+  String get briefButton => 'Бүгенге көнгә йомгак';
+
+  @override
+  String get briefHint =>
+      'Портфелегез һәм сайланмаларыгыз бүген ничек үзгәрүе һәм соңгы яңалыклар алар турында нәрсә әйтүе турында кыска AI йомгагы. Анализ тотылмый.';
+
+  @override
+  String get briefRefresh => 'Яңарту';
 }

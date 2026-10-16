@@ -2020,4 +2020,17 @@ class AppLocalizationsHa extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Daga matsakaicin farashin siyanka ($price):';
   }
+
+  @override
+  String get briefTitle => 'Yau tare da hannun jarinka';
+
+  @override
+  String get briefButton => 'Takaita yau';
+
+  @override
+  String get briefHint =>
+      'Gajeren taƙaitaccen AI na yadda fayil ɗinka da waɗanda ka fi so suka motsa yau da abin da sabbin labarai ke cewa game da su. Ba ya amfani da nazari.';
+
+  @override
+  String get briefRefresh => 'Sabunta';
 }

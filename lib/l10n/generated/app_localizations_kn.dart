@@ -2022,4 +2022,17 @@ class AppLocalizationsKn extends AppLocalizations {
   String alertFromCost(String price) {
     return 'ನಿಮ್ಮ ಸರಾಸರಿ ಖರೀದಿ ಬೆಲೆಯಿಂದ ($price):';
   }
+
+  @override
+  String get briefTitle => 'ಇಂದು ನಿಮ್ಮ ಷೇರುಗಳೊಂದಿಗೆ';
+
+  @override
+  String get briefButton => 'ಇಂದಿನ ಸಾರಾಂಶ';
+
+  @override
+  String get briefHint =>
+      'ನಿಮ್ಮ ಪೋರ್ಟ್‌ಫೋಲಿಯೊ ಮತ್ತು ಮೆಚ್ಚಿನವು ಇಂದು ಹೇಗೆ ಚಲಿಸಿದವು ಮತ್ತು ಇತ್ತೀಚಿನ ಸುದ್ದಿಗಳು ಅವುಗಳ ಬಗ್ಗೆ ಏನು ಹೇಳುತ್ತವೆ ಎಂಬುದರ ಸಣ್ಣ AI ಸಾರಾಂಶ. ಯಾವುದೇ ವಿಶ್ಲೇಷಣೆ ಬಳಸುವುದಿಲ್ಲ.';
+
+  @override
+  String get briefRefresh => 'ನವೀಕರಿಸಿ';
 }

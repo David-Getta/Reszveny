@@ -2022,4 +2022,17 @@ class AppLocalizationsKg extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Na kutadila ntalu ya kati ya nge ya kusumba ($price):';
   }
+
+  @override
+  String get briefTitle => 'Bubu ti bisikisu na nge';
+
+  @override
+  String get briefButton => 'Kufunza bubu';
+
+  @override
+  String get briefHint =>
+      'Mukanda ya nkufi ya AI ya mutindu portfolio na nge mpi yina nge ke zola me sobaka bubu mpi yina bansangu ya mpa ke tuba. Yo ke sadilaka ve nsosa.';
+
+  @override
+  String get briefRefresh => 'Kuyidika';
 }

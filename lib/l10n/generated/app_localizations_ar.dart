@@ -2056,4 +2056,17 @@ class AppLocalizationsAr extends AppLocalizations {
   String alertFromCost(String price) {
     return 'بناءً على متوسط سعر شرائك ($price):';
   }
+
+  @override
+  String get briefTitle => 'اليوم مع أسهمك';
+
+  @override
+  String get briefButton => 'لخّص اليوم';
+
+  @override
+  String get briefHint =>
+      'ملخص قصير بالذكاء الاصطناعي لحركة محفظتك ومفضلاتك اليوم وما تقوله أحدث الأخبار عنها. لا يستهلك تحليلًا.';
+
+  @override
+  String get briefRefresh => 'تحديث';
 }

@@ -2026,4 +2026,17 @@ class AppLocalizationsDe extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Bezogen auf deinen durchschnittlichen Kaufpreis ($price):';
   }
+
+  @override
+  String get briefTitle => 'Heute bei deinen Aktien';
+
+  @override
+  String get briefButton => 'Tag zusammenfassen';
+
+  @override
+  String get briefHint =>
+      'Eine kurze KI-Zusammenfassung, wie sich dein Depot und deine Favoriten heute bewegt haben und was die neuesten Nachrichten dazu sagen. Verbraucht keine Analyse.';
+
+  @override
+  String get briefRefresh => 'Aktualisieren';
 }

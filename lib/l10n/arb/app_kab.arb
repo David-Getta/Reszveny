@@ -545,5 +545,9 @@
   "watchSortName": "S uzamul (A–Z)",
   "watchHint": "Zuɣer afus i wakken ad tbeddleḍ amizwer, zuɣer ɣer zelmeḍ i wakken ad tekkseḍ. Izirig yesskanay 30 n wussan ineggura.",
   "analysisReady": "{symbol}: tasledt-ik theggat.",
-  "alertFromCost": "Seg ssuma-k talemmast n uqḍiḍ ({price}):"
+  "alertFromCost": "Seg ssuma-k talemmast n uqḍiḍ ({price}):",
+  "briefTitle": "Ass-a d tigemmi-k",
+  "briefButton": "Agzul n wass-a",
+  "briefHint": "Agzul wezzilen s AI ɣef wamek mbeddlen ass-a ukaram-ik d yismenyifen-ik, d wayen d-qqarent tneqlin timaynutin fell-asen. Ur yesseqdac ara tasledt.",
+  "briefRefresh": "Leqqem"
 }

@@ -545,5 +545,9 @@
   "watchSortName": "Kũringana na ticker (A–Z)",
   "watchHint": "Kururia gĩkwatĩro nĩguo ũbange rĩngĩ, haragũra mwena wa ũmotho nĩguo ũrute. Mũhari ũyonanagia mĩthenya 30 ĩrĩa ĩhĩtũku.",
   "analysisReady": "{symbol}: ũthuthuria waku nĩ mũhaarĩrie.",
-  "alertFromCost": "Kuuma thogora-inĩ waku wa gatagatĩ wa kũgũra ({price}):"
+  "alertFromCost": "Kuuma thogora-inĩ waku wa gatagatĩ wa kũgũra ({price}):",
+  "briefTitle": "Ũmũthĩ na hisa ciaku",
+  "briefButton": "Gũthondeka ũmũthĩ",
+  "briefHint": "Mũgĩkĩro mũkuhĩ wa AI wa ũrĩa portfolio yaku na cia mwendwa ithiĩte ũmũthĩ na ũrĩa ũhoro mũrũgu ũcigwetaga. Ndũhũthagĩra ũthuthuria.",
+  "briefRefresh": "Gũcũrũria"
 }

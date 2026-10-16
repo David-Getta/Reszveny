@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../news/daily_brief_card.dart';
 import '../news/watch_news_view.dart';
 import '../events/events_view.dart';
 import '../settings/telemetry_consent.dart';
@@ -359,6 +360,7 @@ class _HomePageState extends State<HomePage> {
                   if (_results != null)
                     _SearchResults(query: _lastQuery, results: _results!, onTap: widget.onOpenSymbol),
                   MarketsStrip(onOpenSymbol: widget.onOpenSymbol),
+                  const DailyBriefCard(),
                   PortfolioSummaryCard(onOpenSymbol: widget.onOpenSymbol),
                   FavoritesStrip(onOpenSymbol: widget.onOpenSymbol),
                   // Telefonon nincs oldalsáv: a legutóbbiak itt látszanak.

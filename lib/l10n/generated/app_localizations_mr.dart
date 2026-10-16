@@ -2015,4 +2015,17 @@ class AppLocalizationsMr extends AppLocalizations {
   String alertFromCost(String price) {
     return 'तुमच्या सरासरी खरेदी किमतीवरून ($price):';
   }
+
+  @override
+  String get briefTitle => 'आज तुमच्या शेअर्ससोबत';
+
+  @override
+  String get briefButton => 'आजचा सारांश';
+
+  @override
+  String get briefHint =>
+      'आज तुमचा पोर्टफोलिओ आणि आवडते शेअर्स कसे हलले आणि ताज्या बातम्या त्यांच्याबद्दल काय सांगतात याचा छोटा AI सारांश. यात कोणतेही विश्लेषण खर्च होत नाही.';
+
+  @override
+  String get briefRefresh => 'अपडेट करा';
 }

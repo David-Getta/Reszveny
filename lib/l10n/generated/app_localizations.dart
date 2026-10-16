@@ -3612,6 +3612,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'From your average cost ({price}):'**
   String alertFromCost(String price);
+
+  /// Home screen card title: a short AI summary of today's moves of the user's stocks.
+  ///
+  /// In en, this message translates to:
+  /// **'Today with your stocks'**
+  String get briefTitle;
+
+  /// Button that creates today's summary.
+  ///
+  /// In en, this message translates to:
+  /// **'Summarize today'**
+  String get briefButton;
+
+  /// Explanation under the card title before the first summary.
+  ///
+  /// In en, this message translates to:
+  /// **'A short AI summary of how your portfolio and favorites moved today and what the latest news says about them. It doesn\'t use an analysis.'**
+  String get briefHint;
+
+  /// Button to update today's summary.
+  ///
+  /// In en, this message translates to:
+  /// **'Update'**
+  String get briefRefresh;
 }
 
 class _AppLocalizationsDelegate

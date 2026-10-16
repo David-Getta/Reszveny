@@ -545,5 +545,9 @@
   "watchSortName": "Ticker szerint (A–Z)",
   "watchHint": "A fogantyút húzva átrendezheted, balra húzva törölheted. A vonal az elmúlt 30 napot mutatja.",
   "analysisReady": "{symbol}: elkészült az elemzés.",
-  "alertFromCost": "Az átlagos vételárad ({price}) alapján:"
+  "alertFromCost": "Az átlagos vételárad ({price}) alapján:",
+  "briefTitle": "A nap a részvényeiddel",
+  "briefButton": "Mai összefoglaló",
+  "briefHint": "Rövid AI-összefoglaló arról, hogyan mozogtak ma a portfóliód és a kedvenceid részvényei, és mit mondanak róluk a friss hírek. Nem fogyaszt elemzést.",
+  "briefRefresh": "Frissítés"
 }

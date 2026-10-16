@@ -2014,4 +2014,17 @@ class AppLocalizationsTk extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Ortaça satyn alyş bahaňyzdan ($price):';
   }
+
+  @override
+  String get briefTitle => 'Şu gün paýnamalaryňyz bilen';
+
+  @override
+  String get briefButton => 'Şu güni jemle';
+
+  @override
+  String get briefHint =>
+      'Portfeliňiziň we saýlananlaryňyzyň şu gün nähili hereket edendigi we iň täze habarlaryň olar barada näme diýýändigi barada gysga AI jemlemesi. Seljerme sarp etmeýär.';
+
+  @override
+  String get briefRefresh => 'Täzele';
 }

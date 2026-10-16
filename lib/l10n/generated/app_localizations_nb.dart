@@ -2015,4 +2015,17 @@ class AppLocalizationsNb extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Ut fra din gjennomsnittlige kjøpspris ($price):';
   }
+
+  @override
+  String get briefTitle => 'I dag med aksjene dine';
+
+  @override
+  String get briefButton => 'Oppsummer dagen';
+
+  @override
+  String get briefHint =>
+      'Et kort KI-sammendrag av hvordan porteføljen og favorittene dine beveget seg i dag, og hva de siste nyhetene sier om dem. Bruker ingen analyse.';
+
+  @override
+  String get briefRefresh => 'Oppdater';
 }

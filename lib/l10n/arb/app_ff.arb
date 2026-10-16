@@ -545,5 +545,9 @@
   "watchSortName": "E kod (A–Z)",
   "watchHint": "Foo jogorgal ngal ngam waylude doggol, taw nano ngam ittude. Ñiiɓol ngol hollat balɗe 30 ɓennuɗe.",
   "analysisReady": "{symbol}: ƴeewndo maa ina heftii.",
-  "alertFromCost": "Ummorde e coggu soodu maa hakkundeejo ({price}):"
+  "alertFromCost": "Ummorde e coggu soodu maa hakkundeejo ({price}):",
+  "briefTitle": "Hannde e aksiyonji maa",
+  "briefButton": "Raɓɓin hannde",
+  "briefHint": "Raɓɓinal AI ngal hollata no portfolio maa e ɗi njiɗ-ɗaa ndilli hannde e ko kabaruuji kesi mbiyata e dow majji. Ɗum huutortaa ƴeewndo.",
+  "briefRefresh": "Hesɗitin"
 }

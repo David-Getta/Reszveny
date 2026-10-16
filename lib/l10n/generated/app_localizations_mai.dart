@@ -2009,4 +2009,17 @@ class AppLocalizationsMai extends AppLocalizations {
   String alertFromCost(String price) {
     return 'अहाँक औसत खरीद मूल्य ($price) सँ:';
   }
+
+  @override
+  String get briefTitle => 'आइ अहाँक शेयरक संग';
+
+  @override
+  String get briefButton => 'आइक सारांश';
+
+  @override
+  String get briefHint =>
+      'आइ अहाँक पोर्टफोलियो आ पसिनक शेयर कोना चलल आ ताजा समाचार ओकरा बारेमे की कहैत अछि, तकर छोट AI सारांश। एहिमे कोनो विश्लेषण खर्च नहि होइत अछि।';
+
+  @override
+  String get briefRefresh => 'अपडेट करू';
 }

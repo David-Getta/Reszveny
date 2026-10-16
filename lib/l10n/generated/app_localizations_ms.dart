@@ -2019,4 +2019,17 @@ class AppLocalizationsMs extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Daripada harga belian purata anda ($price):';
   }
+
+  @override
+  String get briefTitle => 'Hari ini dengan saham anda';
+
+  @override
+  String get briefButton => 'Ringkaskan hari ini';
+
+  @override
+  String get briefHint =>
+      'Ringkasan AI ringkas tentang pergerakan portfolio dan kegemaran anda hari ini serta apa yang dikatakan berita terkini tentangnya. Tidak menggunakan analisis.';
+
+  @override
+  String get briefRefresh => 'Kemas kini';
 }

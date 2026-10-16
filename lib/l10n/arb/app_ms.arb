@@ -545,5 +545,9 @@
   "watchSortName": "Mengikut ticker (A–Z)",
   "watchHint": "Seret pemegang untuk menyusun semula, leret ke kiri untuk mengalih keluar. Garisan menunjukkan 30 hari lalu.",
   "analysisReady": "{symbol}: analisis anda sudah sedia.",
-  "alertFromCost": "Daripada harga belian purata anda ({price}):"
+  "alertFromCost": "Daripada harga belian purata anda ({price}):",
+  "briefTitle": "Hari ini dengan saham anda",
+  "briefButton": "Ringkaskan hari ini",
+  "briefHint": "Ringkasan AI ringkas tentang pergerakan portfolio dan kegemaran anda hari ini serta apa yang dikatakan berita terkini tentangnya. Tidak menggunakan analisis.",
+  "briefRefresh": "Kemas kini"
 }

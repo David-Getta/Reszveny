@@ -2018,4 +2018,17 @@ class AppLocalizationsUz extends AppLocalizations {
   String alertFromCost(String price) {
     return 'O‘rtacha xarid narxingizdan ($price):';
   }
+
+  @override
+  String get briefTitle => 'Bugun aksiyalaringiz bilan';
+
+  @override
+  String get briefButton => 'Bugunni xulosa qilish';
+
+  @override
+  String get briefHint =>
+      'Portfelingiz va sevimlilaringiz bugun qanday harakatlangani va so‘nggi yangiliklar ular haqida nima deyotgani haqida qisqa AI xulosasi. Tahlil sarflanmaydi.';
+
+  @override
+  String get briefRefresh => 'Yangilash';
 }

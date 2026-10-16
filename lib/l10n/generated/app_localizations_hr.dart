@@ -2053,4 +2053,17 @@ class AppLocalizationsHr extends AppLocalizations {
   String alertFromCost(String price) {
     return 'U odnosu na vašu prosječnu kupovnu cijenu ($price):';
   }
+
+  @override
+  String get briefTitle => 'Danas s vašim dionicama';
+
+  @override
+  String get briefButton => 'Sažmi današnji dan';
+
+  @override
+  String get briefHint =>
+      'Kratak AI sažetak o tome kako su se danas kretali vaš portfelj i favoriti te što najnovije vijesti govore o njima. Ne troši analizu.';
+
+  @override
+  String get briefRefresh => 'Ažuriraj';
 }

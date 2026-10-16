@@ -545,5 +545,9 @@
   "watchSortName": "Sembole göre (A–Z)",
   "watchHint": "Sıralamak için tutamacı sürükle, kaldırmak için sola kaydır. Çizgi son 30 günü gösterir.",
   "analysisReady": "{symbol}: analiziniz hazır.",
-  "alertFromCost": "Ortalama alış fiyatınıza ({price}) göre:"
+  "alertFromCost": "Ortalama alış fiyatınıza ({price}) göre:",
+  "briefTitle": "Bugün hisselerinle",
+  "briefButton": "Bugünü özetle",
+  "briefHint": "Portföyünün ve favorilerinin bugün nasıl hareket ettiğine ve son haberlerin onlar hakkında ne dediğine dair kısa bir yapay zekâ özeti. Analiz hakkı kullanmaz.",
+  "briefRefresh": "Güncelle"
 }

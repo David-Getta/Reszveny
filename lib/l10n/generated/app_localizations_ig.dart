@@ -2010,4 +2010,17 @@ class AppLocalizationsIg extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Site na ọnụahịa nzụta nkezi gị ($price):';
   }
+
+  @override
+  String get briefTitle => 'Taa na ngwa ahịa gị';
+
+  @override
+  String get briefButton => 'Chịkọta taa';
+
+  @override
+  String get briefHint =>
+      'Nchịkọta AI dị mkpụmkpụ maka otú pọtụfoliyo gị na ndị ị hụrụ n’anya si gaa taa na ihe akụkọ ọhụrụ na-ekwu banyere ha. Ọ naghị eji nyocha.';
+
+  @override
+  String get briefRefresh => 'Melite';
 }

@@ -545,5 +545,9 @@
   "watchSortName": "Po oznaki (A–Z)",
   "watchHint": "Povlecite ročico za spremembo vrstnega reda, podrsajte levo za odstranitev. Črta prikazuje zadnjih 30 dni.",
   "analysisReady": "{symbol}: vaša analiza je pripravljena.",
-  "alertFromCost": "Glede na vašo povprečno nakupno ceno ({price}):"
+  "alertFromCost": "Glede na vašo povprečno nakupno ceno ({price}):",
+  "briefTitle": "Danes z vašimi delnicami",
+  "briefButton": "Povzemi dan",
+  "briefHint": "Kratek povzetek z UI o tem, kako so se danes gibali vaš portfelj in priljubljene ter kaj o njih pravijo zadnje novice. Ne porabi analize.",
+  "briefRefresh": "Posodobi"
 }

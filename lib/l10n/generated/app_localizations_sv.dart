@@ -2016,4 +2016,17 @@ class AppLocalizationsSv extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Utifrån ditt genomsnittliga inköpspris ($price):';
   }
+
+  @override
+  String get briefTitle => 'I dag med dina aktier';
+
+  @override
+  String get briefButton => 'Sammanfatta dagen';
+
+  @override
+  String get briefHint =>
+      'En kort AI-sammanfattning av hur din portfölj och dina favoriter rörde sig i dag och vad de senaste nyheterna säger om dem. Använder ingen analys.';
+
+  @override
+  String get briefRefresh => 'Uppdatera';
 }

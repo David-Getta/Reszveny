@@ -2020,4 +2020,17 @@ class AppLocalizationsNl extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Op basis van je gemiddelde aankoopprijs ($price):';
   }
+
+  @override
+  String get briefTitle => 'Vandaag met je aandelen';
+
+  @override
+  String get briefButton => 'Vat vandaag samen';
+
+  @override
+  String get briefHint =>
+      'Een korte AI-samenvatting van hoe je portefeuille en favorieten vandaag bewogen en wat het laatste nieuws erover zegt. Gebruikt geen analyse.';
+
+  @override
+  String get briefRefresh => 'Bijwerken';
 }

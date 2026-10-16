@@ -2025,4 +2025,17 @@ class AppLocalizationsLg extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Okusinziira ku bbeeyi yo eya wakati gye wagulirako ($price):';
   }
+
+  @override
+  String get briefTitle => 'Leero ne sitoowa zo';
+
+  @override
+  String get briefButton => 'Funza olwaleero';
+
+  @override
+  String get briefHint =>
+      'Mu bufunze, AI ekulaga engeri portfolio yo n’ezo z’oyagala gye zitambuddemu leero n’ebyo amawulire amapya gye bigamba. Tekozesa kwekenneenya.';
+
+  @override
+  String get briefRefresh => 'Zza buggya';
 }

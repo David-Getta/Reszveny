@@ -545,5 +545,9 @@
   "watchSortName": "Ukurikije ticker (A–Z)",
   "watchHint": "Kwega igifashwa kugira usubire gutunganya, nyereza ibumoso kugira ukureko. Umurongo werekana imisi 30 iheze.",
   "analysisReady": "{symbol}: isesengura ryawe ryateguwe.",
-  "alertFromCost": "Uhereye ku giciro cawe co kugura c'ikigereranyo ({price}):"
+  "alertFromCost": "Uhereye ku giciro cawe co kugura c'ikigereranyo ({price}):",
+  "briefTitle": "Uyu munsi n’imigabane yawe",
+  "briefButton": "Incamake y’uyu munsi",
+  "briefHint": "Incamake ngufi ya AI y’ukuntu portfolio yawe n’ivyo ukunda vyagenze uyu munsi n’ivyo inkuru nshasha zivuga. Ntikoresha isesengura.",
+  "briefRefresh": "Shirisha ku gihe"
 }

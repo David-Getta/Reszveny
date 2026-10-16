@@ -2010,4 +2010,17 @@ class AppLocalizationsWo extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Bu jëm ci sa njëgu jënd bu diggante ($price):';
   }
+
+  @override
+  String get briefTitle => 'Tey ak sa aksiyoŋ yi';
+
+  @override
+  String get briefButton => 'Gàttal tey';
+
+  @override
+  String get briefHint =>
+      'Gàttal bu gàtt bu AI ci ni sa portefeuille ak yi nga bëgg yëngóo tey ak li xibaar yu bees yi wax ci seen mbir. Du jëfandikoo xayma.';
+
+  @override
+  String get briefRefresh => 'Yeesal';
 }

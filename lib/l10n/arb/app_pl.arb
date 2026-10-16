@@ -545,5 +545,9 @@
   "watchSortName": "Według tickera (A–Z)",
   "watchHint": "Przeciągnij uchwyt, aby zmienić kolejność, przesuń w lewo, aby usunąć. Linia pokazuje ostatnie 30 dni.",
   "analysisReady": "{symbol}: Twoja analiza jest gotowa.",
-  "alertFromCost": "Względem Twojej średniej ceny zakupu ({price}):"
+  "alertFromCost": "Względem Twojej średniej ceny zakupu ({price}):",
+  "briefTitle": "Dziś z Twoimi akcjami",
+  "briefButton": "Podsumuj dzień",
+  "briefHint": "Krótkie podsumowanie AI tego, jak dziś zmieniał się Twój portfel i ulubione akcje oraz co mówią o nich najnowsze wiadomości. Nie zużywa analizy.",
+  "briefRefresh": "Odśwież"
 }

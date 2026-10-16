@@ -1534,5 +1534,21 @@
         "example": "186.75 USD"
       }
     }
+  },
+  "briefTitle": "Today with your stocks",
+  "@briefTitle": {
+    "description": "Home screen card title: a short AI summary of today's moves of the user's stocks."
+  },
+  "briefButton": "Summarize today",
+  "@briefButton": {
+    "description": "Button that creates today's summary."
+  },
+  "briefHint": "A short AI summary of how your portfolio and favorites moved today and what the latest news says about them. It doesn't use an analysis.",
+  "@briefHint": {
+    "description": "Explanation under the card title before the first summary."
+  },
+  "briefRefresh": "Update",
+  "@briefRefresh": {
+    "description": "Button to update today's summary."
   }
 }

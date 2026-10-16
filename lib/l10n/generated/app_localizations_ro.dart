@@ -2047,4 +2047,17 @@ class AppLocalizationsRo extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Față de prețul tău mediu de cumpărare ($price):';
   }
+
+  @override
+  String get briefTitle => 'Azi cu acțiunile tale';
+
+  @override
+  String get briefButton => 'Rezumă ziua';
+
+  @override
+  String get briefHint =>
+      'Un scurt rezumat AI despre cum s-au mișcat azi portofoliul și favoritele tale și ce spun ultimele știri despre ele. Nu consumă nicio analiză.';
+
+  @override
+  String get briefRefresh => 'Actualizează';
 }

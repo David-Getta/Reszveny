@@ -545,5 +545,9 @@
   "watchSortName": "By ticker (A–Z)",
   "watchHint": "Drag di handle to arrange am again, swipe go left to comot am. Di line dey show di last 30 days.",
   "analysisReady": "{symbol}: your analysis don ready.",
-  "alertFromCost": "From your average buy price ({price}):"
+  "alertFromCost": "From your average buy price ({price}):",
+  "briefTitle": "Today with your stocks",
+  "briefButton": "Summarize today",
+  "briefHint": "Short AI summary of how your portfolio and favourites take move today and wetin the latest news dey talk about dem. E no go use any analysis.",
+  "briefRefresh": "Update"
 }

@@ -545,5 +545,9 @@
   "watchSortName": "Babaen ti ticker (A–Z)",
   "watchHint": "Guyuden ti iggaman tapno urnosen manen, i-swipe iti kannigid tapno ikkaten. Ipakita ti linia ti napalabas a 30 nga aldaw.",
   "analysisReady": "{symbol}: nakasagan ti panaganalisam.",
-  "alertFromCost": "Manipud iti promedio a presio ti panaggatangmo ({price}):"
+  "alertFromCost": "Manipud iti promedio a presio ti panaggatangmo ({price}):",
+  "briefTitle": "Ita nga aldaw kadagiti stock-mo",
+  "briefButton": "I-summarize ita",
+  "briefHint": "Ababa nga AI a pakabuklan no kasano a naggaraw ita ti portfolio ken paboritom ken ania ti ibaga dagiti kabaruan a damag maipapan kadakuada. Saan nga agusar iti panaganalisa.",
+  "briefRefresh": "I-update"
 }

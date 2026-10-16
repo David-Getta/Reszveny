@@ -2013,4 +2013,17 @@ class AppLocalizationsOr extends AppLocalizations {
   String alertFromCost(String price) {
     return 'ଆପଣଙ୍କ ହାରାହାରି କ୍ରୟ ମୂଲ୍ୟ ($price) ରୁ:';
   }
+
+  @override
+  String get briefTitle => 'ଆଜି ଆପଣଙ୍କ ସେୟାର ସହ';
+
+  @override
+  String get briefButton => 'ଆଜିର ସାରାଂଶ';
+
+  @override
+  String get briefHint =>
+      'ଆଜି ଆପଣଙ୍କ ପୋର୍ଟଫୋଲିଓ ଓ ପସନ୍ଦର ସେୟାର କିପରି ଚାଲିଲା ଓ ସଦ୍ୟତମ ଖବର ସେଗୁଡ଼ିକ ବିଷୟରେ କ’ଣ କହୁଛି, ତାହାର ଛୋଟ AI ସାରାଂଶ। ଏଥିରେ କୌଣସି ବିଶ୍ଳେଷଣ ଖର୍ଚ୍ଚ ହୁଏ ନାହିଁ।';
+
+  @override
+  String get briefRefresh => 'ଅପଡେଟ୍ କରନ୍ତୁ';
 }

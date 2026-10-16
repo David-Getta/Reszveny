@@ -2008,4 +2008,17 @@ class AppLocalizationsMy extends AppLocalizations {
   String alertFromCost(String price) {
     return 'သင့်ပျမ်းမျှဝယ်ဈေး ($price) မှ -';
   }
+
+  @override
+  String get briefTitle => 'ယနေ့ သင့်ရှယ်ယာများ';
+
+  @override
+  String get briefButton => 'ယနေ့ကို အကျဉ်းချုပ်';
+
+  @override
+  String get briefHint =>
+      'သင့်အစုရှယ်ယာနှင့် အကြိုက်ဆုံးများ ယနေ့ မည်သို့ပြောင်းလဲခဲ့သည်နှင့် နောက်ဆုံးသတင်းများက ဘာပြောသည်ကို AI အကျဉ်းချုပ်။ ခွဲခြမ်းစိတ်ဖြာမှု မသုံးပါ။';
+
+  @override
+  String get briefRefresh => 'အပ်ဒိတ်';
 }

@@ -2015,4 +2015,17 @@ class AppLocalizationsPcm extends AppLocalizations {
   String alertFromCost(String price) {
     return 'From your average buy price ($price):';
   }
+
+  @override
+  String get briefTitle => 'Today with your stocks';
+
+  @override
+  String get briefButton => 'Summarize today';
+
+  @override
+  String get briefHint =>
+      'Short AI summary of how your portfolio and favourites take move today and wetin the latest news dey talk about dem. E no go use any analysis.';
+
+  @override
+  String get briefRefresh => 'Update';
 }

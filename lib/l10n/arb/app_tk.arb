@@ -545,5 +545,9 @@
   "watchSortName": "Tiker boýunça (A–Z)",
   "watchHint": "Tertibi üýtgetmek üçin tutawajy süýräň, aýyrmak üçin çepe süýşüriň. Çyzyk soňky 30 güni görkezýär.",
   "analysisReady": "{symbol}: derňewiňiz taýýar.",
-  "alertFromCost": "Ortaça satyn alyş bahaňyzdan ({price}):"
+  "alertFromCost": "Ortaça satyn alyş bahaňyzdan ({price}):",
+  "briefTitle": "Şu gün paýnamalaryňyz bilen",
+  "briefButton": "Şu güni jemle",
+  "briefHint": "Portfeliňiziň we saýlananlaryňyzyň şu gün nähili hereket edendigi we iň täze habarlaryň olar barada näme diýýändigi barada gysga AI jemlemesi. Seljerme sarp etmeýär.",
+  "briefRefresh": "Täzele"
 }

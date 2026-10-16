@@ -1989,4 +1989,17 @@ class AppLocalizationsTh extends AppLocalizations {
   String alertFromCost(String price) {
     return 'จากราคาซื้อเฉลี่ยของคุณ ($price):';
   }
+
+  @override
+  String get briefTitle => 'วันนี้กับหุ้นของคุณ';
+
+  @override
+  String get briefButton => 'สรุปวันนี้';
+
+  @override
+  String get briefHint =>
+      'สรุปสั้นๆ ด้วย AI ว่าพอร์ตและหุ้นโปรดของคุณเคลื่อนไหวอย่างไรวันนี้ และข่าวล่าสุดพูดถึงอะไร ไม่ใช้สิทธิ์การวิเคราะห์';
+
+  @override
+  String get briefRefresh => 'อัปเดต';
 }

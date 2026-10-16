@@ -1916,6 +1916,18 @@ class AppLocalizationsZh extends AppLocalizations {
   String alertFromCost(String price) {
     return '基于你的平均买入价（$price）：';
   }
+
+  @override
+  String get briefTitle => '今天你的股票';
+
+  @override
+  String get briefButton => '总结今天';
+
+  @override
+  String get briefHint => 'AI 简短总结你的投资组合和自选股今天的走势，以及最新新闻对它们的说法。不消耗分析次数。';
+
+  @override
+  String get briefRefresh => '更新';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -3829,4 +3841,16 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String alertFromCost(String price) {
     return '按你的平均買入價（$price）：';
   }
+
+  @override
+  String get briefTitle => '今天你的股票';
+
+  @override
+  String get briefButton => '總結今天';
+
+  @override
+  String get briefHint => 'AI 簡短總結你的投資組合和自選股今天的走勢，以及最新新聞對它們的說法。不消耗分析次數。';
+
+  @override
+  String get briefRefresh => '更新';
 }

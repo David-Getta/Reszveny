@@ -545,5 +545,9 @@
   "watchSortName": "Pagal simbolį (A–Z)",
   "watchHint": "Vilkite rankenėlę, kad pakeistumėte tvarką, perbraukite kairėn, kad pašalintumėte. Linija rodo pastarąsias 30 dienų.",
   "analysisReady": "{symbol}: jūsų analizė parengta.",
-  "alertFromCost": "Pagal jūsų vidutinę pirkimo kainą ({price}):"
+  "alertFromCost": "Pagal jūsų vidutinę pirkimo kainą ({price}):",
+  "briefTitle": "Šiandien su jūsų akcijomis",
+  "briefButton": "Apibendrinti dieną",
+  "briefHint": "Trumpa DI santrauka, kaip šiandien judėjo jūsų portfelis ir mėgstamiausios akcijos ir ką apie jas sako naujausios žinios. Analizė nenaudojama.",
+  "briefRefresh": "Atnaujinti"
 }

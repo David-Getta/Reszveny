@@ -2014,4 +2014,17 @@ class AppLocalizationsEn extends AppLocalizations {
   String alertFromCost(String price) {
     return 'From your average cost ($price):';
   }
+
+  @override
+  String get briefTitle => 'Today with your stocks';
+
+  @override
+  String get briefButton => 'Summarize today';
+
+  @override
+  String get briefHint =>
+      'A short AI summary of how your portfolio and favorites moved today and what the latest news says about them. It doesn\'t use an analysis.';
+
+  @override
+  String get briefRefresh => 'Update';
 }

@@ -2023,4 +2023,17 @@ class AppLocalizationsMl extends AppLocalizations {
   String alertFromCost(String price) {
     return 'നിങ്ങളുടെ ശരാശരി വാങ്ങൽ വിലയിൽ നിന്ന് ($price):';
   }
+
+  @override
+  String get briefTitle => 'ഇന്ന് നിങ്ങളുടെ ഓഹരികളോടൊപ്പം';
+
+  @override
+  String get briefButton => 'ഇന്നത്തെ സംഗ്രഹം';
+
+  @override
+  String get briefHint =>
+      'നിങ്ങളുടെ പോർട്ട്‌ഫോളിയോയും പ്രിയപ്പെട്ടവയും ഇന്ന് എങ്ങനെ നീങ്ങിയെന്നും ഏറ്റവും പുതിയ വാർത്തകൾ അവയെക്കുറിച്ച് എന്തു പറയുന്നുവെന്നും ചുരുക്കി പറയുന്ന AI സംഗ്രഹം. വിശകലനം ഉപയോഗിക്കില്ല.';
+
+  @override
+  String get briefRefresh => 'പുതുക്കുക';
 }

@@ -1986,4 +1986,17 @@ class AppLocalizationsAm extends AppLocalizations {
   String alertFromCost(String price) {
     return 'ከአማካይ የግዢ ዋጋዎ ($price) አንጻር፦';
   }
+
+  @override
+  String get briefTitle => 'ዛሬ ከአክሲዮኖችዎ ጋር';
+
+  @override
+  String get briefButton => 'የዛሬውን ጠቅለል አድርግ';
+
+  @override
+  String get briefHint =>
+      'ፖርትፎሊዮዎና ተወዳጆችዎ ዛሬ እንዴት እንደተንቀሳቀሱና የቅርብ ዜናዎች ስለእነሱ ምን እንደሚሉ የሚያሳይ አጭር የAI ማጠቃለያ። ትንተና አይጠቀምም።';
+
+  @override
+  String get briefRefresh => 'አዘምን';
 }

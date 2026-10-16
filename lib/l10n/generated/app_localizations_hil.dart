@@ -2027,4 +2027,17 @@ class AppLocalizationsHil extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Halin sa imo average nga presyo sang pagbakal ($price):';
   }
+
+  @override
+  String get briefTitle => 'Subong upod ang imo mga stock';
+
+  @override
+  String get briefButton => 'I-summarize subong';
+
+  @override
+  String get briefHint =>
+      'Malip-ot nga AI summary kon paano naghulag subong ang imo portfolio kag mga paborito kag ano ang ginasiling sang pinakabag-o nga balita parte sa ila. Indi ini maggamit sang pagtuki.';
+
+  @override
+  String get briefRefresh => 'I-update';
 }

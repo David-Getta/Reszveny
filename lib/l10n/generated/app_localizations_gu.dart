@@ -2011,4 +2011,17 @@ class AppLocalizationsGu extends AppLocalizations {
   String alertFromCost(String price) {
     return 'તમારા સરેરાશ ખરીદ ભાવ ($price) પરથી:';
   }
+
+  @override
+  String get briefTitle => 'આજે તમારા શેર સાથે';
+
+  @override
+  String get briefButton => 'આજનો સારાંશ';
+
+  @override
+  String get briefHint =>
+      'આજે તમારો પોર્ટફોલિયો અને મનપસંદ શેર કેવી રીતે ચાલ્યા અને તાજા સમાચાર તેમના વિશે શું કહે છે તેનો ટૂંકો AI સારાંશ. તેમાં કોઈ વિશ્લેષણ વપરાતું નથી.';
+
+  @override
+  String get briefRefresh => 'અપડેટ કરો';
 }

@@ -2025,4 +2025,17 @@ class AppLocalizationsTn extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Go tswa mo tlhwatlhweng ya gago ya magareng ya go reka ($price):';
   }
+
+  @override
+  String get briefTitle => 'Gompieno le dishere tsa gago';
+
+  @override
+  String get briefButton => 'Kgutshwafatsa gompieno';
+
+  @override
+  String get briefHint =>
+      'Kakaretso e khutshwane ya AI ya kafa portfolio ya gago le tse o di ratang di tsamaileng ka teng gompieno le se dikgang tsa bosheng di se buang. Ga e dirise tshekatsheko.';
+
+  @override
+  String get briefRefresh => 'Ntšhafatsa';
 }

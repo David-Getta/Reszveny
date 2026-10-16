@@ -2022,4 +2022,17 @@ class AppLocalizationsSq extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Nga çmimi juaj mesatar i blerjes ($price):';
   }
+
+  @override
+  String get briefTitle => 'Sot me aksionet tuaja';
+
+  @override
+  String get briefButton => 'Përmblidh ditën';
+
+  @override
+  String get briefHint =>
+      'Një përmbledhje e shkurtër me AI se si lëvizën sot portofoli dhe të preferuarat tuaja dhe çfarë thonë lajmet e fundit për to. Nuk shpenzon analizë.';
+
+  @override
+  String get briefRefresh => 'Përditëso';
 }

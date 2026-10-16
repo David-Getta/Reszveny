@@ -2019,4 +2019,17 @@ class AppLocalizationsEe extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Le wò asi si nèxe le titina nu ($price):';
   }
+
+  @override
+  String get briefTitle => 'Egbe kple wò stockwo';
+
+  @override
+  String get briefButton => 'Ƒo egbe nu ta';
+
+  @override
+  String get briefHint =>
+      'AI ƒe nyagbɔgblɔ kpui si ɖe alesi wò portfolio kple esiwo nèlɔ̃ ʋã egbe kple nya yeye siwo wogblɔ tso wo ŋu fia. Mezãa dzodzro aɖeke o.';
+
+  @override
+  String get briefRefresh => 'Wɔe yeye';
 }

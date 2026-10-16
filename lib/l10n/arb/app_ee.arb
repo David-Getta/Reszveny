@@ -545,5 +545,9 @@
   "watchSortName": "Le ticker nu (A–Z)",
   "watchHint": "He asiɖoƒe la be nàtrɔ ɖoɖoa, tutui yi miame be nàɖe ɖa. Fliƒo la ɖe ŋkeke 30 siwo va yi fia.",
   "analysisReady": "{symbol}: wò dzodzro la le klalo.",
-  "alertFromCost": "Le wò asi si nèxe le titina nu ({price}):"
+  "alertFromCost": "Le wò asi si nèxe le titina nu ({price}):",
+  "briefTitle": "Egbe kple wò stockwo",
+  "briefButton": "Ƒo egbe nu ta",
+  "briefHint": "AI ƒe nyagbɔgblɔ kpui si ɖe alesi wò portfolio kple esiwo nèlɔ̃ ʋã egbe kple nya yeye siwo wogblɔ tso wo ŋu fia. Mezãa dzodzro aɖeke o.",
+  "briefRefresh": "Wɔe yeye"
 }

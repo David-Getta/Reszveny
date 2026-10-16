@@ -2017,4 +2017,17 @@ class AppLocalizationsSu extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Tina harga beuli rata-rata anjeun ($price):';
   }
+
+  @override
+  String get briefTitle => 'Dinten ieu sareng saham anjeun';
+
+  @override
+  String get briefButton => 'Ringkes dinten ieu';
+
+  @override
+  String get briefHint =>
+      'Ringkesan AI pondok ngeunaan kumaha portofolio sareng paporit anjeun gerak dinten ieu sareng naon anu dicarioskeun ku warta panganyarna. Henteu nganggo analisis.';
+
+  @override
+  String get briefRefresh => 'Apdet';
 }

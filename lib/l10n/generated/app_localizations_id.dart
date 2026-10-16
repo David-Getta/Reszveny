@@ -2011,4 +2011,17 @@ class AppLocalizationsId extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Dari harga beli rata-rata Anda ($price):';
   }
+
+  @override
+  String get briefTitle => 'Hari ini dengan saham Anda';
+
+  @override
+  String get briefButton => 'Ringkas hari ini';
+
+  @override
+  String get briefHint =>
+      'Ringkasan AI singkat tentang pergerakan portofolio dan favorit Anda hari ini serta apa kata berita terbaru tentangnya. Tidak memakai analisis.';
+
+  @override
+  String get briefRefresh => 'Perbarui';
 }

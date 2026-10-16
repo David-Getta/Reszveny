@@ -2016,4 +2016,17 @@ class AppLocalizationsMn extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Таны дундаж худалдан авсан үнээс ($price):';
   }
+
+  @override
+  String get briefTitle => 'Өнөөдөр таны хувьцаатай';
+
+  @override
+  String get briefButton => 'Өнөөдрийг дүгнэх';
+
+  @override
+  String get briefHint =>
+      'Таны багц болон дуртай хувьцаанууд өнөөдөр хэрхэн хөдөлсөн, сүүлийн мэдээ тэдний талаар юу хэлж байгааг AI товч дүгнэнэ. Шинжилгээ зарцуулахгүй.';
+
+  @override
+  String get briefRefresh => 'Шинэчлэх';
 }

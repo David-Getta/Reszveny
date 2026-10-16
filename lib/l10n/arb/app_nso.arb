@@ -545,5 +545,9 @@
   "watchSortName": "Ka ticker (A–Z)",
   "watchHint": "Goga seswaro go beakanya gape, kgoromeletša go le letshadi go tloša. Mothaladi o bontšha matšatši a 30 a go feta.",
   "analysisReady": "{symbol}: tshekatsheko ya gago e loketše.",
-  "alertFromCost": "Go ya ka theko ya gago ya magareng ya go reka ({price}):"
+  "alertFromCost": "Go ya ka theko ya gago ya magareng ya go reka ({price}):",
+  "briefTitle": "Lehono le dišere tša gago",
+  "briefButton": "Kakaretša lehono",
+  "briefHint": "Kakaretšo ye kopana ya AI ya ka moo portfolio ya gago le tše o di ratago di sepetšego ka gona lehono le seo ditaba tša moragorago di se bolelago. Ga e diriše tshekatsheko.",
+  "briefRefresh": "Mpshafatša"
 }

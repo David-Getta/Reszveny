@@ -2016,4 +2016,17 @@ class AppLocalizationsSw extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Kutoka bei yako ya wastani ya kununua ($price):';
   }
+
+  @override
+  String get briefTitle => 'Leo na hisa zako';
+
+  @override
+  String get briefButton => 'Fupisha leo';
+
+  @override
+  String get briefHint =>
+      'Muhtasari mfupi wa AI wa jinsi jalada lako na vipendwa vyako vilivyosonga leo na habari za karibuni zinasema nini kuzihusu. Hautumii uchambuzi.';
+
+  @override
+  String get briefRefresh => 'Sasisha';
 }

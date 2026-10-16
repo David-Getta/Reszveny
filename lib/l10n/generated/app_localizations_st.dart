@@ -2025,4 +2025,17 @@ class AppLocalizationsSt extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Ho tswa theko ya hao e mahareng ya ho reka ($price):';
   }
+
+  @override
+  String get briefTitle => 'Kajeno le diabo tsa hao';
+
+  @override
+  String get briefButton => 'Akaretsa kajeno';
+
+  @override
+  String get briefHint =>
+      'Kakaretso e kgutshwane ya AI ya kamoo portfolio ya hao le tseo o di ratang di tsamaileng ka teng kajeno le seo ditaba tsa morao-rao di se buang. Ha e sebedise manollo.';
+
+  @override
+  String get briefRefresh => 'Ntjhafatsa';
 }

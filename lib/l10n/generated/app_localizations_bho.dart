@@ -2011,4 +2011,17 @@ class AppLocalizationsBho extends AppLocalizations {
   String alertFromCost(String price) {
     return 'रउआ औसत खरीद दाम ($price) से:';
   }
+
+  @override
+  String get briefTitle => 'आज रउआ शेयर संगे';
+
+  @override
+  String get briefButton => 'आज के सारांश';
+
+  @override
+  String get briefHint =>
+      'आज रउआ पोर्टफोलियो आ पसंदीदा शेयर कइसे चलल आ ताजा खबर ओकरा बारे में का कहत बा, एकर छोट AI सारांश। एह में कवनो विश्लेषण खरच ना होला।';
+
+  @override
+  String get briefRefresh => 'अपडेट करीं';
 }

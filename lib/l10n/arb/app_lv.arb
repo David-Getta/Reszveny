@@ -545,5 +545,9 @@
   "watchSortName": "Pēc simbola (A–Z)",
   "watchHint": "Velciet turi, lai mainītu secību, pavelciet pa kreisi, lai noņemtu. Līnija rāda pēdējās 30 dienas.",
   "analysisReady": "{symbol}: jūsu analīze ir gatava.",
-  "alertFromCost": "No jūsu vidējās pirkšanas cenas ({price}):"
+  "alertFromCost": "No jūsu vidējās pirkšanas cenas ({price}):",
+  "briefTitle": "Šodien ar jūsu akcijām",
+  "briefButton": "Apkopot dienu",
+  "briefHint": "Īss MI kopsavilkums par to, kā šodien mainījās jūsu portfelis un izlase un ko par tiem saka jaunākās ziņas. Neizmanto analīzi.",
+  "briefRefresh": "Atjaunināt"
 }

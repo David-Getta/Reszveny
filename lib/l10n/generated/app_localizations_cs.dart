@@ -2066,4 +2066,17 @@ class AppLocalizationsCs extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Vzhledem k vaší průměrné nákupní ceně ($price):';
   }
+
+  @override
+  String get briefTitle => 'Dnes s vašimi akciemi';
+
+  @override
+  String get briefButton => 'Shrnout dnešek';
+
+  @override
+  String get briefHint =>
+      'Krátké AI shrnutí, jak se dnes pohybovalo vaše portfolio a oblíbené akcie a co o nich říkají nejnovější zprávy. Nespotřebuje analýzu.';
+
+  @override
+  String get briefRefresh => 'Aktualizovat';
 }

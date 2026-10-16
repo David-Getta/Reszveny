@@ -545,5 +545,9 @@
   "watchSortName": "Na ticker (A–Z)",
   "watchHint": "Benda esimbeli mpo na kobongola molongo, pusa na lobɔkɔ ya mwasi mpo na kolongola. Molɔngɔ ezali kolakisa mikolo 30 oyo eleki.",
   "analysisReady": "{symbol}: botaleli na yo esili.",
-  "alertFromCost": "Kolanda ntalo na yo ya katikati ya kosomba ({price}):"
+  "alertFromCost": "Kolanda ntalo na yo ya katikati ya kosomba ({price}):",
+  "briefTitle": "Lelo na misolo na yo",
+  "briefButton": "Kokesa mokolo ya lelo",
+  "briefHint": "Bokuse ya AI ya ndenge portefeuille na yo mpe oyo olingaka eningani lelo mpe nini nsango ya sika elobi. Esalelaka botaleli te.",
+  "briefRefresh": "Kozongisa sika"
 }

@@ -2020,4 +2020,17 @@ class AppLocalizationsSn extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Kubva pamutengo wako wepakati wekutenga ($price):';
   }
+
+  @override
+  String get briefTitle => 'Nhasi nemasheya ako';
+
+  @override
+  String get briefButton => 'Pfupikisa nhasi';
+
+  @override
+  String get briefHint =>
+      'Pfupiso pfupi yeAI yekuti portfolio yako nezvaunofarira zvafamba sei nhasi uye kuti nhau dzichangobva dzinoti kudii. Hazvishandisi ongororo.';
+
+  @override
+  String get briefRefresh => 'Gadzirisa';
 }

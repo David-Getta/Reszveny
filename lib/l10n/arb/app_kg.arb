@@ -545,5 +545,9 @@
   "watchSortName": "Na ticker (A–Z)",
   "watchHint": "Benda kisimbidilu sambu na kusoba ndonga, nyerula na lumoso sambu na kukatula. Mulongo ke monisa bilumbu 30 ya me luta.",
   "analysisReady": "{symbol}: nsosa na nge me kuma ya kubuka.",
-  "alertFromCost": "Na kutadila ntalu ya kati ya nge ya kusumba ({price}):"
+  "alertFromCost": "Na kutadila ntalu ya kati ya nge ya kusumba ({price}):",
+  "briefTitle": "Bubu ti bisikisu na nge",
+  "briefButton": "Kufunza bubu",
+  "briefHint": "Mukanda ya nkufi ya AI ya mutindu portfolio na nge mpi yina nge ke zola me sobaka bubu mpi yina bansangu ya mpa ke tuba. Yo ke sadilaka ve nsosa.",
+  "briefRefresh": "Kuyidika"
 }

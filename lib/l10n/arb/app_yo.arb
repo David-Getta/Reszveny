@@ -545,5 +545,9 @@
   "watchSortName": "Nípa àmì ìpín (A–Z)",
   "watchHint": "Fa ìdìmú láti tún tò, ra sí òsì láti yọ ọ́ kúrò. Ìlà náà ń fi ọjọ́ 30 tó kọjá hàn.",
   "analysisReady": "{symbol}: ìtúpalẹ̀ rẹ ti ṣetán.",
-  "alertFromCost": "Láti inú iye àròpin tí o fi rà á ({price}):"
+  "alertFromCost": "Láti inú iye àròpin tí o fi rà á ({price}):",
+  "briefTitle": "Lónìí pẹ̀lú àwọn ìpín rẹ",
+  "briefButton": "Ṣàkópọ̀ òní",
+  "briefHint": "Àkópọ̀ AI kúkúrú nípa bí àpò-ìdókòwò rẹ àti àwọn àyànfẹ́ rẹ ṣe yí padà lónìí àti ohun tí ìròyìn tuntun ń sọ nípa wọn. Kò ná ìtúpalẹ̀ kankan.",
+  "briefRefresh": "Ṣe àtúnṣe"
 }

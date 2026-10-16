@@ -2021,4 +2021,17 @@ class AppLocalizationsGn extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Nde jogua repy mbytépe ($price) ojehechaháicha:';
   }
+
+  @override
+  String get briefTitle => 'Ko árape ne acción-kuéra ndive';
+
+  @override
+  String get briefButton => 'Momichĩ ko ára';
+
+  @override
+  String get briefHint =>
+      'Peteĩ AI momichĩmbyre mbykymi mba’éichapa ojere ko árape ne portafolio ha umi nde reiporavova ha mba’épa he’i umi marandu ipyahuvéva. Ndoipurúi jehesa’ỹijo.';
+
+  @override
+  String get briefRefresh => 'Mbopyahu';
 }

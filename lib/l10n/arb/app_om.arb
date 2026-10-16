@@ -545,5 +545,9 @@
   "watchSortName": "Mallattoon (A–Z)",
   "watchHint": "Tartiiba jijjiiruuf qabduu harkisi, haquuf gara bitaatti sossoosi. Sararri guyyoota 30 darban agarsiisa.",
   "analysisReady": "{symbol}: xiinxalli kee qophaa'eera.",
-  "alertFromCost": "Gatii bittaa giddugaleessa kee ({price}) irraa:"
+  "alertFromCost": "Gatii bittaa giddugaleessa kee ({price}) irraa:",
+  "briefTitle": "Har’a aksiyoonota kee waliin",
+  "briefButton": "Har’a cuunfi",
+  "briefHint": "Cuunfaa gabaabaa AI kan portfolio kee fi filatamoonni kee har’a akkamitti akka sochoo’an fi oduun haaraan maal akka jedhu agarsiisu. Xiinxala hin fayyadamu.",
+  "briefRefresh": "Haaromsi"
 }

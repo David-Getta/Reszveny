@@ -545,5 +545,9 @@
   "watchSortName": "Pa senbòl (A–Z)",
   "watchHint": "Trennen manch lan pou chanje lòd, glise sou bò goch pou retire. Liy lan montre 30 dènye jou yo.",
   "analysisReady": "{symbol}: analiz ou a pare.",
-  "alertFromCost": "Apati pri mwayen ou te achte a ({price}):"
+  "alertFromCost": "Apati pri mwayen ou te achte a ({price}):",
+  "briefTitle": "Jodi a ak aksyon ou yo",
+  "briefButton": "Rezime jodi a",
+  "briefHint": "Yon ti rezime AI sou kijan pòtfolyo ou ak favori ou yo te deplase jodi a ak sa dènye nouvèl yo di sou yo. Li pa itilize okenn analiz.",
+  "briefRefresh": "Mete ajou"
 }

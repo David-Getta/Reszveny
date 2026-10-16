@@ -2025,4 +2025,17 @@ class AppLocalizationsLn extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Kolanda ntalo na yo ya katikati ya kosomba ($price):';
   }
+
+  @override
+  String get briefTitle => 'Lelo na misolo na yo';
+
+  @override
+  String get briefButton => 'Kokesa mokolo ya lelo';
+
+  @override
+  String get briefHint =>
+      'Bokuse ya AI ya ndenge portefeuille na yo mpe oyo olingaka eningani lelo mpe nini nsango ya sika elobi. Esalelaka botaleli te.';
+
+  @override
+  String get briefRefresh => 'Kozongisa sika';
 }

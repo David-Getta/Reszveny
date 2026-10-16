@@ -2022,4 +2022,17 @@ class AppLocalizationsOm extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Gatii bittaa giddugaleessa kee ($price) irraa:';
   }
+
+  @override
+  String get briefTitle => 'Har’a aksiyoonota kee waliin';
+
+  @override
+  String get briefButton => 'Har’a cuunfi';
+
+  @override
+  String get briefHint =>
+      'Cuunfaa gabaabaa AI kan portfolio kee fi filatamoonni kee har’a akkamitti akka sochoo’an fi oduun haaraan maal akka jedhu agarsiisu. Xiinxala hin fayyadamu.';
+
+  @override
+  String get briefRefresh => 'Haaromsi';
 }

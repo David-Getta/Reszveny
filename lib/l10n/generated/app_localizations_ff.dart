@@ -2010,4 +2010,17 @@ class AppLocalizationsFf extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Ummorde e coggu soodu maa hakkundeejo ($price):';
   }
+
+  @override
+  String get briefTitle => 'Hannde e aksiyonji maa';
+
+  @override
+  String get briefButton => 'Raɓɓin hannde';
+
+  @override
+  String get briefHint =>
+      'Raɓɓinal AI ngal hollata no portfolio maa e ɗi njiɗ-ɗaa ndilli hannde e ko kabaruuji kesi mbiyata e dow majji. Ɗum huutortaa ƴeewndo.';
+
+  @override
+  String get briefRefresh => 'Hesɗitin';
 }

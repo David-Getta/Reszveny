@@ -545,5 +545,9 @@
   "watchSortName": "Ci màndarga (A–Z)",
   "watchHint": "Diri jàppukaay bi ngir soppi toftal bi, raaxas ci càmmooñ ngir far. Rëdd bi day wone 30 fan yi weesu.",
   "analysisReady": "{symbol}: sa xayma gi pare na.",
-  "alertFromCost": "Bu jëm ci sa njëgu jënd bu diggante ({price}):"
+  "alertFromCost": "Bu jëm ci sa njëgu jënd bu diggante ({price}):",
+  "briefTitle": "Tey ak sa aksiyoŋ yi",
+  "briefButton": "Gàttal tey",
+  "briefHint": "Gàttal bu gàtt bu AI ci ni sa portefeuille ak yi nga bëgg yëngóo tey ak li xibaar yu bees yi wax ci seen mbir. Du jëfandikoo xayma.",
+  "briefRefresh": "Yeesal"
 }

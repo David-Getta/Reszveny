@@ -2020,4 +2020,17 @@ class AppLocalizationsLua extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Bilondeshile mushinga webe wa pankatshi wa kusumba ($price):';
   }
+
+  @override
+  String get briefTitle => 'Lelu ne bintu biebe bia mu tshisumbu';
+
+  @override
+  String get briefButton => 'Kufunda dia lelu';
+
+  @override
+  String get briefHint =>
+      'Muvungu mukese wa AI wa mudi portefeuille webe ne biudi musue biakatamba lelu ne bidi mukanda ya lumu ilela. Kakuena kudifila dikonkonona.';
+
+  @override
+  String get briefRefresh => 'Kuvuija bipiabipia';
 }

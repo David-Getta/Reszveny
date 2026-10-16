@@ -545,5 +545,9 @@
   "watchSortName": "Nema ticker (A–Z)",
   "watchHint": "Dhonza mubato kuti urongazve, svaipa kuruboshwe kuti ubvise. Mutsara unoratidza mazuva 30 apfuura.",
   "analysisReady": "{symbol}: ongororo yako yagadzirira.",
-  "alertFromCost": "Kubva pamutengo wako wepakati wekutenga ({price}):"
+  "alertFromCost": "Kubva pamutengo wako wepakati wekutenga ({price}):",
+  "briefTitle": "Nhasi nemasheya ako",
+  "briefButton": "Pfupikisa nhasi",
+  "briefHint": "Pfupiso pfupi yeAI yekuti portfolio yako nezvaunofarira zvafamba sei nhasi uye kuti nhau dzichangobva dzinoti kudii. Hazvishandisi ongororo.",
+  "briefRefresh": "Gadzirisa"
 }

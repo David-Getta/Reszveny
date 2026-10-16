@@ -2014,4 +2014,17 @@ class AppLocalizationsAk extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Fi wo sika a wotua no mfinimfini so ($price):';
   }
+
+  @override
+  String get briefTitle => 'Ɛnnɛ ne wo stocks';
+
+  @override
+  String get briefButton => 'Bɔ ɛnnɛ mu tiaa';
+
+  @override
+  String get briefHint =>
+      'AI nsɛm tiaa a ɛkyerɛ sɛnea wo portfolio ne wo nea w’ani gye ho kɔɔ ɛnnɛ ne nsɛm foforo a ɛfa wɔn ho. Ɛnni nhwehwɛmu biara.';
+
+  @override
+  String get briefRefresh => 'Yɛ no foforo';
 }

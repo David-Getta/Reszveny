@@ -545,5 +545,9 @@
   "watchSortName": "ティッカー順 (A–Z)",
   "watchHint": "ハンドルをドラッグして並べ替え、左にスワイプして削除します。線は過去30日間を示します。",
   "analysisReady": "{symbol}：分析が完成しました。",
-  "alertFromCost": "平均取得価格（{price}）から："
+  "alertFromCost": "平均取得価格（{price}）から：",
+  "briefTitle": "今日のあなたの銘柄",
+  "briefButton": "今日をまとめる",
+  "briefHint": "ポートフォリオとお気に入り銘柄が今日どう動いたか、最新ニュースが何を伝えているかをAIが短くまとめます。分析回数は消費しません。",
+  "briefRefresh": "更新"
 }

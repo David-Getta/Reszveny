@@ -2016,4 +2016,17 @@ class AppLocalizationsBg extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Спрямо средната ви покупна цена ($price):';
   }
+
+  @override
+  String get briefTitle => 'Днес с вашите акции';
+
+  @override
+  String get briefButton => 'Обобщи деня';
+
+  @override
+  String get briefHint =>
+      'Кратко AI обобщение как днес се движиха портфейлът и любимите ви акции и какво казват последните новини за тях. Не използва анализ.';
+
+  @override
+  String get briefRefresh => 'Обнови';
 }

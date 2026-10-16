@@ -2026,4 +2026,17 @@ class AppLocalizationsQu extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Chawpi rantisqayki chaninmanta ($price):';
   }
+
+  @override
+  String get briefTitle => 'Kunan p’unchay acciónniykikunawan';
+
+  @override
+  String get briefButton => 'Kunan p’unchayta pisiyachiy';
+
+  @override
+  String get briefHint =>
+      'AI nisqawan pisi willay, imaynatachus portafoliyuyki munasqaykikunapas kunan kuyurqanku, musuq willakuykunataq imatachus ninku. Mana t’aqwiyta apaykachanchu.';
+
+  @override
+  String get briefRefresh => 'Musuqchay';
 }

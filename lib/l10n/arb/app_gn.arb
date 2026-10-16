@@ -545,5 +545,9 @@
   "watchSortName": "Símbolo rupi (A–Z)",
   "watchHint": "Emboguata pe jokoha emohenda jey hag̃ua, emosyryry asúpe embogue hag̃ua. Pe línea ohechauka 30 ára ohasava'ekue.",
   "analysisReady": "{symbol}: nde jehesa'ỹijo oĩma.",
-  "alertFromCost": "Nde jogua repy mbytépe ({price}) ojehechaháicha:"
+  "alertFromCost": "Nde jogua repy mbytépe ({price}) ojehechaháicha:",
+  "briefTitle": "Ko árape ne acción-kuéra ndive",
+  "briefButton": "Momichĩ ko ára",
+  "briefHint": "Peteĩ AI momichĩmbyre mbykymi mba’éichapa ojere ko árape ne portafolio ha umi nde reiporavova ha mba’épa he’i umi marandu ipyahuvéva. Ndoipurúi jehesa’ỹijo.",
+  "briefRefresh": "Mbopyahu"
 }

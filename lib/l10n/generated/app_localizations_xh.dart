@@ -2023,4 +2023,17 @@ class AppLocalizationsXh extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Ukusuka kwixabiso lakho eliphakathi lokuthenga ($price):';
   }
+
+  @override
+  String get briefTitle => 'Namhlanje nezabelo zakho';
+
+  @override
+  String get briefButton => 'Shwankathela namhlanje';
+
+  @override
+  String get briefHint =>
+      'Isishwankathelo esifutshane se-AI sendlela ipotifoliyo yakho nezo uzithandayo eziye zahamba ngayo namhlanje nokuba iindaba zamva nje zithini ngazo. Asisebenzisi uhlalutyo.';
+
+  @override
+  String get briefRefresh => 'Hlaziya';
 }

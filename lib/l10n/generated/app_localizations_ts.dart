@@ -2026,4 +2026,17 @@ class AppLocalizationsTs extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Ku suka eka nxavo wa wena wa le xikarhi wo xava ($price):';
   }
+
+  @override
+  String get briefTitle => 'Namuntlha ni swiavelo swa wena';
+
+  @override
+  String get briefButton => 'Koma namuntlha';
+
+  @override
+  String get briefHint =>
+      'Nkomiso wo koma wa AI wa ndlela leyi portfolio ya wena ni leswi u swi rhandzaka swi fambeke ha yona namuntlha ni leswi mahungu ya sweswi ma swi vulaka. A yi tirhisi nxopaxopo.';
+
+  @override
+  String get briefRefresh => 'Pfuxeta';
 }

@@ -545,5 +545,9 @@
   "watchSortName": "Podle tickeru (A–Z)",
   "watchHint": "Přetažením úchytu změníte pořadí, přejetím doleva odeberete. Čára ukazuje posledních 30 dní.",
   "analysisReady": "{symbol}: vaše analýza je hotová.",
-  "alertFromCost": "Vzhledem k vaší průměrné nákupní ceně ({price}):"
+  "alertFromCost": "Vzhledem k vaší průměrné nákupní ceně ({price}):",
+  "briefTitle": "Dnes s vašimi akciemi",
+  "briefButton": "Shrnout dnešek",
+  "briefHint": "Krátké AI shrnutí, jak se dnes pohybovalo vaše portfolio a oblíbené akcie a co o nich říkají nejnovější zprávy. Nespotřebuje analýzu.",
+  "briefRefresh": "Aktualizovat"
 }

@@ -2070,4 +2070,17 @@ class AppLocalizationsSk extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Vzhľadom na vašu priemernú nákupnú cenu ($price):';
   }
+
+  @override
+  String get briefTitle => 'Dnes s vašimi akciami';
+
+  @override
+  String get briefButton => 'Zhrnúť dnešok';
+
+  @override
+  String get briefHint =>
+      'Krátke AI zhrnutie, ako sa dnes hýbalo vaše portfólio a obľúbené akcie a čo o nich hovoria najnovšie správy. Nespotrebuje analýzu.';
+
+  @override
+  String get briefRefresh => 'Aktualizovať';
 }

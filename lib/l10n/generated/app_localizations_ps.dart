@@ -2007,4 +2007,17 @@ class AppLocalizationsPs extends AppLocalizations {
   String alertFromCost(String price) {
     return 'ستاسو د اخیستلو له منځني بیې ($price) څخه:';
   }
+
+  @override
+  String get briefTitle => 'نن ستاسو له ونډو سره';
+
+  @override
+  String get briefButton => 'د نن لنډیز';
+
+  @override
+  String get briefHint =>
+      'د AI لنډ لنډیز چې ستاسو پورټفولیو او خوښې نن څنګه بدلې شوې او وروستي خبرونه یې په اړه څه وايي. شننه نه لګوي.';
+
+  @override
+  String get briefRefresh => 'تازه کول';
 }

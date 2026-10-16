@@ -545,5 +545,9 @@
   "watchSortName": "Theo mã (A–Z)",
   "watchHint": "Kéo tay cầm để sắp xếp lại, vuốt sang trái để xóa. Đường kẻ hiển thị 30 ngày qua.",
   "analysisReady": "{symbol}: bản phân tích của bạn đã sẵn sàng.",
-  "alertFromCost": "Dựa trên giá mua trung bình của bạn ({price}):"
+  "alertFromCost": "Dựa trên giá mua trung bình của bạn ({price}):",
+  "briefTitle": "Hôm nay với cổ phiếu của bạn",
+  "briefButton": "Tóm tắt hôm nay",
+  "briefHint": "Bản tóm tắt AI ngắn về cách danh mục và mã yêu thích của bạn biến động hôm nay và tin tức mới nhất nói gì về chúng. Không dùng lượt phân tích.",
+  "briefRefresh": "Cập nhật"
 }

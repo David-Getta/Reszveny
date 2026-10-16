@@ -2054,4 +2054,17 @@ class AppLocalizationsLv extends AppLocalizations {
   String alertFromCost(String price) {
     return 'No jūsu vidējās pirkšanas cenas ($price):';
   }
+
+  @override
+  String get briefTitle => 'Šodien ar jūsu akcijām';
+
+  @override
+  String get briefButton => 'Apkopot dienu';
+
+  @override
+  String get briefHint =>
+      'Īss MI kopsavilkums par to, kā šodien mainījās jūsu portfelis un izlase un ko par tiem saka jaunākās ziņas. Neizmanto analīzi.';
+
+  @override
+  String get briefRefresh => 'Atjaunināt';
 }

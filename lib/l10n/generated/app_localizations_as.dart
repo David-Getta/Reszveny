@@ -2014,4 +2014,17 @@ class AppLocalizationsAs extends AppLocalizations {
   String alertFromCost(String price) {
     return 'আপোনাৰ গড় ক্ৰয় মূল্যৰ ($price) ভিত্তিত:';
   }
+
+  @override
+  String get briefTitle => 'আজি আপোনাৰ শ্বেয়াৰসমূহ';
+
+  @override
+  String get briefButton => 'আজিৰ সাৰাংশ';
+
+  @override
+  String get briefHint =>
+      'আজি আপোনাৰ প’ৰ্টফলিঅ’ আৰু প্ৰিয়সমূহ কেনেকৈ সলনি হ’ল আৰু শেহতীয়া বাতৰিয়ে সেইবোৰৰ বিষয়ে কি কয়, তাৰ এটা চমু AI সাৰাংশ। ই কোনো বিশ্লেষণ খৰচ নকৰে।';
+
+  @override
+  String get briefRefresh => 'আপডেট';
 }

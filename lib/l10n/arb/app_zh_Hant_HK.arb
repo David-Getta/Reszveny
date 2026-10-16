@@ -545,5 +545,9 @@
   "watchSortName": "按股票代號 (A–Z)",
   "watchHint": "拖動手柄可重新排序，向左滑動可移除。線條顯示最近 30 日。",
   "analysisReady": "{symbol}：分析已完成。",
-  "alertFromCost": "按你的平均買入價（{price}）："
+  "alertFromCost": "按你的平均買入價（{price}）：",
+  "briefTitle": "今天你的股票",
+  "briefButton": "總結今天",
+  "briefHint": "AI 簡短總結你的投資組合和自選股今天的走勢，以及最新新聞對它們的說法。不消耗分析次數。",
+  "briefRefresh": "更新"
 }

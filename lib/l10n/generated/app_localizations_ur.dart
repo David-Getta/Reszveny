@@ -2015,4 +2015,17 @@ class AppLocalizationsUr extends AppLocalizations {
   String alertFromCost(String price) {
     return 'آپ کی اوسط قیمتِ خرید ($price) سے:';
   }
+
+  @override
+  String get briefTitle => 'آج آپ کے شیئرز کے ساتھ';
+
+  @override
+  String get briefButton => 'آج کا خلاصہ';
+
+  @override
+  String get briefHint =>
+      'آج آپ کا پورٹ فولیو اور پسندیدہ شیئرز کیسے چلے اور تازہ خبریں ان کے بارے میں کیا کہتی ہیں، اس کا مختصر AI خلاصہ۔ اس میں کوئی تجزیہ خرچ نہیں ہوتا۔';
+
+  @override
+  String get briefRefresh => 'اپ ڈیٹ کریں';
 }

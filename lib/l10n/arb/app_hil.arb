@@ -545,5 +545,9 @@
   "watchSortName": "Suno sa ticker (A–Z)",
   "watchHint": "Guyuda ang hawiran agod hanayon liwat, i-swipe pawala agod kuhaon. Ginapakita sang linya ang nagligad nga 30 ka adlaw.",
   "analysisReady": "{symbol}: handa na ang imo pagtuki.",
-  "alertFromCost": "Halin sa imo average nga presyo sang pagbakal ({price}):"
+  "alertFromCost": "Halin sa imo average nga presyo sang pagbakal ({price}):",
+  "briefTitle": "Subong upod ang imo mga stock",
+  "briefButton": "I-summarize subong",
+  "briefHint": "Malip-ot nga AI summary kon paano naghulag subong ang imo portfolio kag mga paborito kag ano ang ginasiling sang pinakabag-o nga balita parte sa ila. Indi ini maggamit sang pagtuki.",
+  "briefRefresh": "I-update"
 }

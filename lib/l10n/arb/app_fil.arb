@@ -545,5 +545,9 @@
   "watchSortName": "Ayon sa ticker (A–Z)",
   "watchHint": "I-drag ang hawakan para ayusin muli, i-swipe pakaliwa para alisin. Ipinapakita ng linya ang huling 30 araw.",
   "analysisReady": "{symbol}: handa na ang iyong pagsusuri.",
-  "alertFromCost": "Batay sa iyong average na presyo ng pagbili ({price}):"
+  "alertFromCost": "Batay sa iyong average na presyo ng pagbili ({price}):",
+  "briefTitle": "Ngayon kasama ang iyong mga stock",
+  "briefButton": "I-summarize ngayon",
+  "briefHint": "Maikling AI summary kung paano gumalaw ngayon ang iyong portfolio at mga paborito at ano ang sinasabi ng pinakabagong balita tungkol sa kanila. Hindi ito gumagamit ng pagsusuri.",
+  "briefRefresh": "I-update"
 }

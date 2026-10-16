@@ -2030,4 +2030,17 @@ class AppLocalizationsIlo extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Manipud iti promedio a presio ti panaggatangmo ($price):';
   }
+
+  @override
+  String get briefTitle => 'Ita nga aldaw kadagiti stock-mo';
+
+  @override
+  String get briefButton => 'I-summarize ita';
+
+  @override
+  String get briefHint =>
+      'Ababa nga AI a pakabuklan no kasano a naggaraw ita ti portfolio ken paboritom ken ania ti ibaga dagiti kabaruan a damag maipapan kadakuada. Saan nga agusar iti panaganalisa.';
+
+  @override
+  String get briefRefresh => 'I-update';
 }

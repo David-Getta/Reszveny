@@ -2014,4 +2014,17 @@ class AppLocalizationsHt extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Apati pri mwayen ou te achte a ($price):';
   }
+
+  @override
+  String get briefTitle => 'Jodi a ak aksyon ou yo';
+
+  @override
+  String get briefButton => 'Rezime jodi a';
+
+  @override
+  String get briefHint =>
+      'Yon ti rezime AI sou kijan pòtfolyo ou ak favori ou yo te deplase jodi a ak sa dènye nouvèl yo di sou yo. Li pa itilize okenn analiz.';
+
+  @override
+  String get briefRefresh => 'Mete ajou';
 }

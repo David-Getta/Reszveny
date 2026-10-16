@@ -2017,4 +2017,17 @@ class AppLocalizationsFi extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Keskimääräisestä ostohinnastasi ($price):';
   }
+
+  @override
+  String get briefTitle => 'Tänään osakkeidesi kanssa';
+
+  @override
+  String get briefButton => 'Tiivistä päivä';
+
+  @override
+  String get briefHint =>
+      'Lyhyt tekoälyn yhteenveto siitä, miten salkkusi ja suosikkisi liikkuivat tänään ja mitä tuoreimmat uutiset niistä kertovat. Ei kuluta analyysia.';
+
+  @override
+  String get briefRefresh => 'Päivitä';
 }

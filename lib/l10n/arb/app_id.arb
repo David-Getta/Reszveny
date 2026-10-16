@@ -545,5 +545,9 @@
   "watchSortName": "Menurut kode saham (A–Z)",
   "watchHint": "Seret pegangan untuk mengatur ulang, geser ke kiri untuk menghapus. Garis menunjukkan 30 hari terakhir.",
   "analysisReady": "{symbol}: analisis Anda sudah siap.",
-  "alertFromCost": "Dari harga beli rata-rata Anda ({price}):"
+  "alertFromCost": "Dari harga beli rata-rata Anda ({price}):",
+  "briefTitle": "Hari ini dengan saham Anda",
+  "briefButton": "Ringkas hari ini",
+  "briefHint": "Ringkasan AI singkat tentang pergerakan portofolio dan favorit Anda hari ini serta apa kata berita terbaru tentangnya. Tidak memakai analisis.",
+  "briefRefresh": "Perbarui"
 }

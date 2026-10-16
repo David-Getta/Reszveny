@@ -35,6 +35,7 @@ import 'features/market_data/caching_market_data_provider.dart';
 import 'features/market_data/demo_market_data_provider.dart';
 import 'features/market_data/finnhub_market_data_provider.dart';
 import 'features/market_data/market_data_provider.dart';
+import 'features/news/daily_brief.dart';
 import 'features/news/watch_news.dart';
 import 'features/notes/notes_store.dart';
 import 'features/portfolio/portfolio_review.dart';
@@ -72,6 +73,7 @@ class AppServices {
     AnalysisChat? chat,
     NotesStore? notes,
     PortfolioReviewer? portfolioReviewer,
+    DailyBrief Function(WatchNewsService news)? dailyBrief,
   }) : fx = fx ?? FxService(),
        updates = updates ?? UpdateService(config: config),
        portfolio = portfolio ?? PortfolioStore(),
@@ -90,6 +92,9 @@ class AppServices {
       reports: reports,
     );
     news = WatchNewsService(marketData: marketData, preferences: preferences, portfolio: this.portfolio);
+    brief =
+        dailyBrief?.call(news) ??
+        DailyBrief(config: config, marketData: marketData, news: news, client: backend?.authenticated);
     alertMonitor = AlertMonitor(
       store: this.alerts,
       marketData: marketData,
@@ -255,6 +260,9 @@ class AppServices {
   /// A portfólió és a kedvencek friss hírei (kezdőképernyő).
   late final WatchNewsService news;
 
+  /// „A nap a részvényeiddel” AI-összefoglaló.
+  late final DailyBrief brief;
+
   /// Árfolyam-riasztások és a figyelőjük.
   final AlertStore alerts;
   late final AlertMonitor alertMonitor;
@@ -270,6 +278,7 @@ class AppServices {
       await reports.clearCache();
       await notes.clear();
       await PortfolioReviewer.clearLast();
+      await DailyBrief.clearSaved();
       await CachingMarketDataProvider.clear();
     }
     // Az app névtelen fiókkal megy tovább; a friss állapotot a szerver adja.

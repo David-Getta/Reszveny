@@ -2034,4 +2034,17 @@ class AppLocalizationsMk extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Во однос на вашата просечна набавна цена ($price):';
   }
+
+  @override
+  String get briefTitle => 'Денес со вашите акции';
+
+  @override
+  String get briefButton => 'Сумирај го денот';
+
+  @override
+  String get briefHint =>
+      'Кратко AI-резиме за тоа како денес се движеа вашето портфолио и омилените и што велат најновите вести за нив. Не троши анализа.';
+
+  @override
+  String get briefRefresh => 'Ажурирај';
 }

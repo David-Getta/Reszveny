@@ -2019,4 +2019,17 @@ class AppLocalizationsAf extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Vanaf jou gemiddelde koste ($price):';
   }
+
+  @override
+  String get briefTitle => 'Vandag met jou aandele';
+
+  @override
+  String get briefButton => 'Som vandag op';
+
+  @override
+  String get briefHint =>
+      '’n Kort KI-opsomming van hoe jou portefeulje en gunstelinge vandag beweeg het en wat die jongste nuus oor hulle sê. Dit gebruik nie ’n ontleding nie.';
+
+  @override
+  String get briefRefresh => 'Werk by';
 }

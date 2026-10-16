@@ -2021,4 +2021,17 @@ class AppLocalizationsTe extends AppLocalizations {
   String alertFromCost(String price) {
     return 'మీ సగటు కొనుగోలు ధర ($price) నుండి:';
   }
+
+  @override
+  String get briefTitle => 'ఈరోజు మీ షేర్లతో';
+
+  @override
+  String get briefButton => 'ఈరోజు సారాంశం';
+
+  @override
+  String get briefHint =>
+      'ఈరోజు మీ పోర్ట్‌ఫోలియో మరియు ఇష్టమైనవి ఎలా కదిలాయో, తాజా వార్తలు వాటి గురించి ఏమి చెబుతున్నాయో చిన్న AI సారాంశం. ఎలాంటి విశ్లేషణనూ వాడదు.';
+
+  @override
+  String get briefRefresh => 'నవీకరించు';
 }

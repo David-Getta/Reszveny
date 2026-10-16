@@ -545,5 +545,9 @@
   "watchSortName": "Miturut kode saham (A–Z)",
   "watchHint": "Seret gagang kanggo ngurutaké manèh, gésér ngiwa kanggo mbusak. Garis nuduhaké 30 dina pungkasan.",
   "analysisReady": "{symbol}: analisis sampeyan wis siyap.",
-  "alertFromCost": "Saka rega tuku rata-rata sampeyan ({price}):"
+  "alertFromCost": "Saka rega tuku rata-rata sampeyan ({price}):",
+  "briefTitle": "Dina iki karo saham sampeyan",
+  "briefButton": "Ringkes dina iki",
+  "briefHint": "Ringkesan AI cekak babagan obahe portofolio lan favorit sampeyan dina iki lan apa sing dikandhakake kabar paling anyar. Ora nggunakake analisis.",
+  "briefRefresh": "Anyari"
 }

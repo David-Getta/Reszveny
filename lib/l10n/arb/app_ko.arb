@@ -545,5 +545,9 @@
   "watchSortName": "티커순 (A–Z)",
   "watchHint": "핸들을 끌어 순서를 바꾸고, 왼쪽으로 스와이프하여 제거합니다. 선은 최근 30일을 보여줍니다.",
   "analysisReady": "{symbol}: 분석이 완료되었습니다.",
-  "alertFromCost": "평균 매수가({price}) 기준:"
+  "alertFromCost": "평균 매수가({price}) 기준:",
+  "briefTitle": "오늘의 내 종목",
+  "briefButton": "오늘 요약하기",
+  "briefHint": "포트폴리오와 관심 종목이 오늘 어떻게 움직였는지, 최신 뉴스가 무엇을 말하는지 AI가 짧게 요약합니다. 분석 횟수는 차감되지 않습니다.",
+  "briefRefresh": "업데이트"
 }

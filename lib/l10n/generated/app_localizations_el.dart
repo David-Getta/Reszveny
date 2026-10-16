@@ -2023,4 +2023,17 @@ class AppLocalizationsEl extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Με βάση τη μέση τιμή αγοράς σας ($price):';
   }
+
+  @override
+  String get briefTitle => 'Σήμερα με τις μετοχές σας';
+
+  @override
+  String get briefButton => 'Σύνοψη ημέρας';
+
+  @override
+  String get briefHint =>
+      'Μια σύντομη σύνοψη με AI για το πώς κινήθηκαν σήμερα το χαρτοφυλάκιο και τα αγαπημένα σας και τι λένε τα τελευταία νέα. Δεν καταναλώνει ανάλυση.';
+
+  @override
+  String get briefRefresh => 'Ενημέρωση';
 }

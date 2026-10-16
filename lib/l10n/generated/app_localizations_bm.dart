@@ -2012,4 +2012,17 @@ class AppLocalizationsBm extends AppLocalizations {
   String alertFromCost(String price) {
     return 'I ka sanni sɔngɔ cɛmancɛ ($price) ma:';
   }
+
+  @override
+  String get briefTitle => 'Bi ni i ka aksiyɔnw';
+
+  @override
+  String get briefButton => 'Bi kuma surun';
+
+  @override
+  String get briefHint =>
+      'AI kuma surun min b’a jira cogo min na i ka pɔrtifoliyo ani i ka diyanyew yɛlɛmana bi, ani kibaru kuraw b’u ko min fɔ. A tɛ sɛgɛsɛgɛli si ta.';
+
+  @override
+  String get briefRefresh => 'Kura';
 }

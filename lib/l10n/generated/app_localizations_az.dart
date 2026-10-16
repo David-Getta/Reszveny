@@ -2016,4 +2016,17 @@ class AppLocalizationsAz extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Orta alış qiymətinizə ($price) görə:';
   }
+
+  @override
+  String get briefTitle => 'Bu gün səhmlərinizlə';
+
+  @override
+  String get briefButton => 'Bugünü xülasə et';
+
+  @override
+  String get briefHint =>
+      'Portfelinizin və seçilmişlərinizin bu gün necə dəyişdiyinə və son xəbərlərin onlar haqqında nə dediyinə dair qısa süni intellekt xülasəsi. Təhlil sərf etmir.';
+
+  @override
+  String get briefRefresh => 'Yenilə';
 }

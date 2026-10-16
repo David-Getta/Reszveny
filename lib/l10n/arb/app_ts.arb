@@ -545,5 +545,9 @@
   "watchSortName": "Hi ticker (A–Z)",
   "watchHint": "Koka xikhomo ku hlela nakambe, sindzisa eximatsini ku susa. Layini yi kombisa masiku ya 30 lama hundzeke.",
   "analysisReady": "{symbol}: nxopaxopo wa wena wu lunghekile.",
-  "alertFromCost": "Ku suka eka nxavo wa wena wa le xikarhi wo xava ({price}):"
+  "alertFromCost": "Ku suka eka nxavo wa wena wa le xikarhi wo xava ({price}):",
+  "briefTitle": "Namuntlha ni swiavelo swa wena",
+  "briefButton": "Koma namuntlha",
+  "briefHint": "Nkomiso wo koma wa AI wa ndlela leyi portfolio ya wena ni leswi u swi rhandzaka swi fambeke ha yona namuntlha ni leswi mahungu ya sweswi ma swi vulaka. A yi tirhisi nxopaxopo.",
+  "briefRefresh": "Pfuxeta"
 }

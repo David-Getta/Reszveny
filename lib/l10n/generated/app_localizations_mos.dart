@@ -2002,4 +2002,17 @@ class AppLocalizationsMos extends AppLocalizations {
   String alertFromCost(String price) {
     return 'F sẽn da ne ligd sẽn yaa sʋka wã ($price) zugu:';
   }
+
+  @override
+  String get briefTitle => 'Rũndã ne f aksɩyõnã';
+
+  @override
+  String get briefButton => 'Wilg rũndã koeemã';
+
+  @override
+  String get briefHint =>
+      'AI koe-bõon sẽn wilgd f portefeuille la f sẽn nong-rã sẽn tõog n lebg rũndã la kibar-paals sẽn yet b yelle. A pa tũud ne vẽenegr ye.';
+
+  @override
+  String get briefRefresh => 'Lebg-y a paalgo';
 }

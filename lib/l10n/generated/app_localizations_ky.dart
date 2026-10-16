@@ -2018,4 +2018,17 @@ class AppLocalizationsKy extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Орточо сатып алуу бааңыздан ($price):';
   }
+
+  @override
+  String get briefTitle => 'Бүгүн акцияларыңыз менен';
+
+  @override
+  String get briefButton => 'Бүгүндү кыскача';
+
+  @override
+  String get briefHint =>
+      'Портфелиңиз жана тандалгандарыңыз бүгүн кандай өзгөргөнү жана акыркы жаңылыктар алар тууралуу эмне дегени жөнүндө кыскача AI корутундусу. Талдоо сарпталбайт.';
+
+  @override
+  String get briefRefresh => 'Жаңыртуу';
 }

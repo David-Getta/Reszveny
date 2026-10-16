@@ -1980,4 +1980,17 @@ class AppLocalizationsTi extends AppLocalizations {
   String alertFromCost(String price) {
     return 'ካብ ማእከላይ ዋጋ ዕድጊትኩም ($price)፦';
   }
+
+  @override
+  String get briefTitle => 'ሎሚ ምስ ኣክስዮናትኩም';
+
+  @override
+  String get briefButton => 'ሎሚ ጠቕልል';
+
+  @override
+  String get briefHint =>
+      'ፖርትፎልዮኹምን ዝፈትውዎምን ሎሚ ብኸመይ ከም ዝተንቀሳቐሱን ሓደሽቲ ዜናታት እንታይ ከም ዝብሉን ዘርኢ ሓጺር ናይ AI ጽማቝ። ትንታነ ኣይጥቀምን።';
+
+  @override
+  String get briefRefresh => 'ኣሐድስ';
 }

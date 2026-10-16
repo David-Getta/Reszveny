@@ -545,5 +545,9 @@
   "watchSortName": "Per ticker (A–Z)",
   "watchHint": "Arrossega la nansa per reordenar i llisca cap a l'esquerra per eliminar. La línia mostra els últims 30 dies.",
   "analysisReady": "{symbol}: la teva anàlisi està llesta.",
-  "alertFromCost": "Respecte al teu preu mitjà de compra ({price}):"
+  "alertFromCost": "Respecte al teu preu mitjà de compra ({price}):",
+  "briefTitle": "Avui amb les teves accions",
+  "briefButton": "Resumeix el dia",
+  "briefHint": "Un breu resum amb IA de com s’han mogut avui la teva cartera i els teus preferits i què en diuen les últimes notícies. No consumeix cap anàlisi.",
+  "briefRefresh": "Actualitza"
 }

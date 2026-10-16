@@ -545,5 +545,9 @@
   "watchSortName": "Ta ticker (A–Z)",
   "watchHint": "Ja maƙalli don sake tsarawa, goge zuwa hagu don cirewa. Layin yana nuna kwanaki 30 da suka gabata.",
   "analysisReady": "{symbol}: nazarinka ya shirya.",
-  "alertFromCost": "Daga matsakaicin farashin siyanka ({price}):"
+  "alertFromCost": "Daga matsakaicin farashin siyanka ({price}):",
+  "briefTitle": "Yau tare da hannun jarinka",
+  "briefButton": "Takaita yau",
+  "briefHint": "Gajeren taƙaitaccen AI na yadda fayil ɗinka da waɗanda ka fi so suka motsa yau da abin da sabbin labarai ke cewa game da su. Ba ya amfani da nazari.",
+  "briefRefresh": "Sabunta"
 }

@@ -2009,4 +2009,17 @@ class AppLocalizationsHe extends AppLocalizations {
   String alertFromCost(String price) {
     return 'ביחס למחיר הקנייה הממוצע שלך ($price):';
   }
+
+  @override
+  String get briefTitle => 'היום עם המניות שלך';
+
+  @override
+  String get briefButton => 'סכם את היום';
+
+  @override
+  String get briefHint =>
+      'סיכום AI קצר של תנועת התיק והמועדפים שלך היום ומה החדשות האחרונות אומרות עליהם. לא צורך ניתוח.';
+
+  @override
+  String get briefRefresh => 'עדכון';
 }

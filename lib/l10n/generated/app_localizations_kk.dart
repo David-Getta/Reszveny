@@ -2016,4 +2016,17 @@ class AppLocalizationsKk extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Орташа сатып алу бағаңыздан ($price):';
   }
+
+  @override
+  String get briefTitle => 'Бүгін акцияларыңызбен';
+
+  @override
+  String get briefButton => 'Бүгінді қорыту';
+
+  @override
+  String get briefHint =>
+      'Портфеліңіз бен таңдаулыларыңыздың бүгін қалай өзгергені және соңғы жаңалықтардың олар туралы не дейтіні туралы қысқа AI қорытындысы. Талдау жұмсамайды.';
+
+  @override
+  String get briefRefresh => 'Жаңарту';
 }

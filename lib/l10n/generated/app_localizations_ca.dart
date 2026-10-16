@@ -2024,4 +2024,17 @@ class AppLocalizationsCa extends AppLocalizations {
   String alertFromCost(String price) {
     return 'Respecte al teu preu mitjà de compra ($price):';
   }
+
+  @override
+  String get briefTitle => 'Avui amb les teves accions';
+
+  @override
+  String get briefButton => 'Resumeix el dia';
+
+  @override
+  String get briefHint =>
+      'Un breu resum amb IA de com s’han mogut avui la teva cartera i els teus preferits i què en diuen les últimes notícies. No consumeix cap anàlisi.';
+
+  @override
+  String get briefRefresh => 'Actualitza';
 }

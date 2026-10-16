@@ -545,5 +545,9 @@
   "watchSortName": "Volgens aandeelkode (A–Z)",
   "watchHint": "Sleep die handvatsel om te herrangskik, swiep links om te verwyder. Die lyn wys die afgelope 30 dae.",
   "analysisReady": "{symbol}: jou ontleding is gereed.",
-  "alertFromCost": "Vanaf jou gemiddelde koste ({price}):"
+  "alertFromCost": "Vanaf jou gemiddelde koste ({price}):",
+  "briefTitle": "Vandag met jou aandele",
+  "briefButton": "Som vandag op",
+  "briefHint": "’n Kort KI-opsomming van hoe jou portefeulje en gunstelinge vandag beweeg het en wat die jongste nuus oor hulle sê. Dit gebruik nie ’n ontleding nie.",
+  "briefRefresh": "Werk by"
 }

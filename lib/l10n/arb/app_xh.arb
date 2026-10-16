@@ -545,5 +545,9 @@
   "watchSortName": "Nge-ticker (A–Z)",
   "watchHint": "Rhuqa isibambo ukuze ulungelelanise kwakhona, swayipha ekhohlo ukuze ususe. Umgca ubonisa iintsuku ezingama-30 ezidlulileyo.",
   "analysisReady": "{symbol}: uhlalutyo lwakho lulungile.",
-  "alertFromCost": "Ukusuka kwixabiso lakho eliphakathi lokuthenga ({price}):"
+  "alertFromCost": "Ukusuka kwixabiso lakho eliphakathi lokuthenga ({price}):",
+  "briefTitle": "Namhlanje nezabelo zakho",
+  "briefButton": "Shwankathela namhlanje",
+  "briefHint": "Isishwankathelo esifutshane se-AI sendlela ipotifoliyo yakho nezo uzithandayo eziye zahamba ngayo namhlanje nokuba iindaba zamva nje zithini ngazo. Asisebenzisi uhlalutyo.",
+  "briefRefresh": "Hlaziya"
 }

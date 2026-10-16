@@ -545,5 +545,9 @@
   "watchSortName": "Taamasiyɛn kɔ (A–Z)",
   "watchHint": "Minɛnan sama walasa ka labɛnni yɛlɛma, i bolo sama numanbolo fɛ walasa ka bɔ. Juru bɛ tile 30 laban jira.",
   "analysisReady": "{symbol}: i ka sɛgɛsɛgɛli labɛnna.",
-  "alertFromCost": "I ka sanni sɔngɔ cɛmancɛ ({price}) ma:"
+  "alertFromCost": "I ka sanni sɔngɔ cɛmancɛ ({price}) ma:",
+  "briefTitle": "Bi ni i ka aksiyɔnw",
+  "briefButton": "Bi kuma surun",
+  "briefHint": "AI kuma surun min b’a jira cogo min na i ka pɔrtifoliyo ani i ka diyanyew yɛlɛmana bi, ani kibaru kuraw b’u ko min fɔ. A tɛ sɛgɛsɛgɛli si ta.",
+  "briefRefresh": "Kura"
 }

@@ -545,5 +545,9 @@
   "watchSortName": "Po tickeru (A–Z)",
   "watchHint": "Povucite ručicu za promjenu redoslijeda, prijeđite prstom ulijevo za uklanjanje. Linija prikazuje posljednjih 30 dana.",
   "analysisReady": "{symbol}: vaša analiza je spremna.",
-  "alertFromCost": "U odnosu na vašu prosječnu kupovnu cijenu ({price}):"
+  "alertFromCost": "U odnosu na vašu prosječnu kupovnu cijenu ({price}):",
+  "briefTitle": "Danas s vašim dionicama",
+  "briefButton": "Sažmi današnji dan",
+  "briefHint": "Kratak AI sažetak o tome kako su se danas kretali vaš portfelj i favoriti te što najnovije vijesti govore o njima. Ne troši analizu.",
+  "briefRefresh": "Ažuriraj"
 }
