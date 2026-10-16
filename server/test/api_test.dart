@@ -306,6 +306,55 @@ void main() {
     expect(asked, ['BRK-B', 'BRK.B']);
   });
 
+  test('a stock Finnhub cannot price (e.g. OTP) is priced from Twelve Data with its exchange', () async {
+    final asked = <String>[];
+    final client = MockClient((req) async {
+      if (req.url.host == 'finnhub.io') {
+        return http.Response(jsonEncode({'c': 0, 'd': null, 'dp': null, 'h': 0, 'l': 0, 'o': 0, 'pc': 0, 't': 0}), 200);
+      }
+      asked.add('${req.url.queryParameters['symbol']}|${req.url.queryParameters['exchange'] ?? ''}');
+      if (req.url.queryParameters['exchange'] != 'BSE') {
+        return http.Response(jsonEncode({'status': 'error', 'code': 404}), 200);
+      }
+      return http.Response(
+        jsonEncode({
+          'symbol': 'OTP',
+          'close': '28450.0',
+          'change': '310.0',
+          'percent_change': '1.10',
+          'open': '28100',
+          'high': '28500',
+          'low': '28050',
+          'previous_close': '28140',
+          'timestamp': 1760600000,
+        }),
+        200,
+      );
+    });
+    final td = Api(
+      store: store,
+      anthropicApiKey: 'sk-test',
+      finnhubApiKey: 'fh-test',
+      verifier: const DevVerifier(),
+      client: client,
+      twelveDataApiKey: 'td-key',
+    );
+    final anon = await td.handler(Request('POST', Uri.parse('http://localhost/v1/auth/anonymous')));
+    final token = (jsonDecode(await anon.readAsString()) as Map)['token'] as String;
+    final res = await td.handler(
+      Request(
+        'GET',
+        Uri.parse('http://localhost/v1/market/quote?symbol=OTP.BD'),
+        headers: {'authorization': 'Bearer $token'},
+      ),
+    );
+    final j = jsonDecode(await res.readAsString()) as Map;
+    expect(j['c'], 28450.0);
+    expect(j['dp'], 1.1);
+    expect(asked, ['OTP.BD|', 'OTP|BSE']);
+    expect(Api.finnhubQuoteFromTwelveData({'status': 'error'}), isNull);
+  });
+
   test('paid period rolls over on the server', () async {
     final token = (await call('POST', '/v1/auth/anonymous'))['body']['token'] as String;
     await call(

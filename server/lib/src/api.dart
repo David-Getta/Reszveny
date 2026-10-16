@@ -1346,7 +1346,57 @@ class Api {
     if (path == 'stock/candle' && twelveDataApiKey.isNotEmpty) return _twelveDataCandles(r.url.queryParameters);
     final uri = Uri.parse('$finnhubBaseUrl/$path').replace(queryParameters: r.url.queryParameters);
     final upstream = await _client.get(uri, headers: {'X-Finnhub-Token': finnhubApiKey});
+    // A Finnhub ingyenes csomagja csak USA-részvényeket áraz: ha nincs ár (c = 0),
+    // a Twelve Data is megpróbálható (a nem USA-tőzsdékhez annak fizetős csomagja kell).
+    if (path == 'quote' && twelveDataApiKey.isNotEmpty && !_hasFinnhubPrice(upstream)) {
+      final td = await _twelveDataQuote((r.url.queryParameters['symbol'] ?? '').trim().toUpperCase());
+      if (td != null) return Response.ok(jsonEncode(td), headers: {'content-type': 'application/json'});
+    }
     return Response(upstream.statusCode, body: upstream.body, headers: {'content-type': 'application/json'});
+  }
+
+  static bool _hasFinnhubPrice(http.Response res) {
+    if (res.statusCode != 200) return false;
+    try {
+      final j = jsonDecode(res.body);
+      return j is Map && j['c'] is num && (j['c'] as num) > 0;
+    } catch (_) {
+      return false;
+    }
+  }
+
+  /// Twelve Data `/quote` Finnhub `/quote` alakban (`c`, `d`, `dp`, `h`, `l`, `o`, `pc`, `t`), vagy `null`.
+  Future<Map<String, Object?>?> _twelveDataQuote(String symbol) async {
+    if (symbol.isEmpty) return null;
+    for (final q in twelveDataSymbols(symbol)) {
+      try {
+        final res = await _client
+            .get(Uri.parse('$twelveDataBaseUrl/quote').replace(queryParameters: {...q, 'apikey': twelveDataApiKey}))
+            .timeout(const Duration(seconds: 15));
+        final m = finnhubQuoteFromTwelveData(jsonDecode(res.body));
+        if (m != null) return m;
+      } catch (_) {}
+    }
+    return null;
+  }
+
+  /// A Twelve Data `/quote` válaszából Finnhub-alak; hibás vagy üres válasznál `null`.
+  static Map<String, Object?>? finnhubQuoteFromTwelveData(Object? j) {
+    if (j is! Map || j['status'] == 'error') return null;
+    double? n(String k) => double.tryParse('${j[k] ?? ''}');
+    final c = n('close');
+    if (c == null || c <= 0) return null;
+    final ts = j['timestamp'];
+    return {
+      'c': c,
+      'd': n('change'),
+      'dp': n('percent_change'),
+      'h': n('high'),
+      'l': n('low'),
+      'o': n('open'),
+      'pc': n('previous_close'),
+      't': ts is num ? ts.toInt() : int.tryParse('$ts'),
+    };
   }
 
   /// Napi árfolyamok a Twelve Data `time_series` végpontjáról, Finnhub

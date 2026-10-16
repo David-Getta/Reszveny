@@ -137,6 +137,14 @@ következő szinkronnál átveszik), és e-mailt küld a felhasználó nyelvén 
 riasztásról csak egyszer. Az appban a Riasztások oldalon kapcsolható ki. Az e-mailhez a
 `RESEND_API_KEY` és a `MAIL_FROM` kell (nélkülük csak a naplóba kerül).
 
+## Nem USA-részvények ára (pl. OTP)
+
+A Finnhub és a Twelve Data ingyenes csomagja csak USA-részvényeket áraz. Ha a Finnhub nem ad árat,
+a szerver a Twelve Data-t is megkérdezi (a tőzsdei végződést átírva: `OTP.BD` → `OTP` + `BSE`). A
+budapesti és más nem USA-tőzsdékhez a Twelve Data fizetős (Grow/Pro) csomagja kell; a kulcs
+cseréje után kódmódosítás nélkül működik. Addig ezeknél „n/a” az ár, az AI-elemzés viszont
+(webkereséssel) működik.
+
 ## Tesztelői kódok (fizetés nélküli csomag)
 
 A `TESTER_CODES` változóval a tulajdonos és a tesztelők fizetés nélkül kapnak csomagot:
