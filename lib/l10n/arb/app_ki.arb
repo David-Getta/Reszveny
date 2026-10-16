@@ -593,5 +593,12 @@
   "watchListAddTo": "Ongerera orodha-inĩ",
   "watchListEmpty": "Gũtirĩ hisa orodha-inĩ ĩno o na rĩu. Hũtia kĩhũthio kĩa orodha hakuhĩ na hisa nĩguo ũmĩongerere.",
   "portfolioAskTitle": "Ciũria igiĩ hisa ciaku",
-  "rangeYtd": "Mwaka uyu"
+  "rangeYtd": "Mwaka uyu",
+  "backupTitle": "Mbaka",
+  "backupSave": "Iga mbaka",
+  "backupSaveHint": "Iria wendete, orodha ciaku, hisa ciaku, imenyithia na maandĩko maku thĩinĩ wa faili ĩmwe.",
+  "backupRestore": "Cookia kuuma mbaka-inĩ",
+  "backupRestoreHint": "Yongerera kĩrĩa kĩrĩ thĩinĩ wa faili; gũtirĩ kĩndũ kĩa kĩrĩa ũrĩ nakĩo rĩu gĩgũthario.",
+  "backupRestored": "Mbaka nĩĩcookio.",
+  "backupInvalid": "Faili ĩno ti mbaka ya WhatStock."
 }

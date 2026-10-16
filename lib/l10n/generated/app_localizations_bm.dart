@@ -2216,4 +2216,27 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Nin san';
+
+  @override
+  String get backupTitle => 'Kopi lamaralen';
+
+  @override
+  String get backupSave => 'Kopi lamaralen mara';
+
+  @override
+  String get backupSaveHint =>
+      'I ka diyanyelenw, lisiw, aksiyɔn kɛsu, lasɔminiw ani sɛbɛnniw fisiye kelen kɔnɔ.';
+
+  @override
+  String get backupRestore => 'Segin ka bɔ kopi lamaralen na';
+
+  @override
+  String get backupRestoreHint =>
+      'A bɛ fisiye kɔnɔ fɛnw fara a kan; i bɛ fɛn minnu sɔrɔ sisan, olu si tɛna jɔsi.';
+
+  @override
+  String get backupRestored => 'Kopi lamaralen seginna.';
+
+  @override
+  String get backupInvalid => 'Nin fisiye tɛ WhatStock kopi lamaralen ye.';
 }

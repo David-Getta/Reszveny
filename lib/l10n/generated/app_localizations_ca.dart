@@ -2227,4 +2227,28 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Enguany';
+
+  @override
+  String get backupTitle => 'Còpia de seguretat';
+
+  @override
+  String get backupSave => 'Desa una còpia de seguretat';
+
+  @override
+  String get backupSaveHint =>
+      'Els teus favorits, llistes, cartera, alertes i notes en un sol fitxer.';
+
+  @override
+  String get backupRestore => 'Restaura des d’una còpia de seguretat';
+
+  @override
+  String get backupRestoreHint =>
+      'Afegeix el que hi ha al fitxer; no s’esborra res del que tens ara.';
+
+  @override
+  String get backupRestored => 'S’ha restaurat la còpia de seguretat.';
+
+  @override
+  String get backupInvalid =>
+      'Aquest fitxer no és una còpia de seguretat de WhatStock.';
 }

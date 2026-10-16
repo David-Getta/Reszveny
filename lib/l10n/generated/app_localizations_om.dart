@@ -2227,4 +2227,27 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Bara kana';
+
+  @override
+  String get backupTitle => 'Kuusaa deebii';
+
+  @override
+  String get backupSave => 'Kuusaa deebii olkaa\'i';
+
+  @override
+  String get backupSaveHint =>
+      'Filatamoo, tarreewwan, poortfooliyoo, akeekkachiisota fi yaadannoo kee faayilii tokko keessatti.';
+
+  @override
+  String get backupRestore => 'Kuusaa deebii irraa deebisi';
+
+  @override
+  String get backupRestoreHint =>
+      'Waan faayilii keessa jiru ni dabala; waan amma qabdu keessaa homtuu hin haqamu.';
+
+  @override
+  String get backupRestored => 'Kuusaan deebii deebi\'eera.';
+
+  @override
+  String get backupInvalid => 'Faayiliin kun kuusaa deebii WhatStock miti.';
 }

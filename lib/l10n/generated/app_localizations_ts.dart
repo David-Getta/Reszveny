@@ -2233,4 +2233,27 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'Nkopi yo hlayisa';
+
+  @override
+  String get backupSave => 'Hlayisa nkopi yo hlayisa';
+
+  @override
+  String get backupSaveHint =>
+      'Leswi u swi rhandzaka, minxaxamelo, phothifoliyo, switiviso na tinotsi ta wena eka fayili yin\'we.';
+
+  @override
+  String get backupRestore => 'Vuyisa ku suka eka nkopi yo hlayisa';
+
+  @override
+  String get backupRestoreHint =>
+      'Yi engetela leswi nga eka fayili; a ku na nchumu lowu u nga na wona sweswi lowu susiwaka.';
+
+  @override
+  String get backupRestored => 'Nkopi yo hlayisa yi vuyisiwile.';
+
+  @override
+  String get backupInvalid => 'Fayili leyi a hi nkopi yo hlayisa ya WhatStock.';
 }

@@ -2211,4 +2211,27 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get rangeYtd => 'ယခုနှစ်';
+
+  @override
+  String get backupTitle => 'အရန်သိမ်းဆည်းမှု';
+
+  @override
+  String get backupSave => 'အရန်သိမ်းရန်';
+
+  @override
+  String get backupSaveHint =>
+      'သင့်အကြိုက်ဆုံးများ၊ စာရင်းများ၊ ပေါ့ဖိုလီယို၊ သတိပေးချက်များနှင့် မှတ်စုများကို ဖိုင်တစ်ခုတည်းတွင်။';
+
+  @override
+  String get backupRestore => 'အရန်မှ ပြန်ယူရန်';
+
+  @override
+  String get backupRestoreHint =>
+      'ဖိုင်ထဲရှိသည်များကို ထည့်ပေါင်းသည်။ ယခုရှိပြီးသားများ မည်သည်မျှ မဖျက်ပါ။';
+
+  @override
+  String get backupRestored => 'အရန်ကို ပြန်ယူပြီးပါပြီ။';
+
+  @override
+  String get backupInvalid => 'ဤဖိုင်သည် WhatStock အရန်ဖိုင် မဟုတ်ပါ။';
 }

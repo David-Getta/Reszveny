@@ -593,5 +593,12 @@
   "watchListAddTo": "Thêm vào danh sách",
   "watchListEmpty": "Danh sách này chưa có cổ phiếu nào. Nhấn nút danh sách bên cạnh cổ phiếu để thêm.",
   "portfolioAskTitle": "Câu hỏi về danh mục của bạn",
-  "rangeYtd": "Từ đầu năm"
+  "rangeYtd": "Từ đầu năm",
+  "backupTitle": "Sao lưu",
+  "backupSave": "Lưu bản sao lưu",
+  "backupSaveHint": "Mục yêu thích, danh sách, danh mục, cảnh báo và ghi chú của bạn trong một tệp.",
+  "backupRestore": "Khôi phục từ bản sao lưu",
+  "backupRestoreHint": "Thêm nội dung trong tệp; không có gì bạn đang có bị xóa.",
+  "backupRestored": "Đã khôi phục bản sao lưu.",
+  "backupInvalid": "Tệp này không phải bản sao lưu WhatStock."
 }

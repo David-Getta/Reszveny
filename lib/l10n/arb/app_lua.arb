@@ -593,5 +593,12 @@
   "watchListAddTo": "Bueja mu liste",
   "watchListEmpty": "Kakuena aksio mu liste eu to. Tuta butɔ wa liste udi pabuipi ne aksio bua kuyibueja.",
   "portfolioAskTitle": "Nkonko bua portefeuille webe",
-  "rangeYtd": "YTD"
+  "rangeYtd": "YTD",
+  "backupTitle": "Kopi wa kulama",
+  "backupSave": "Lama kopi",
+  "backupSaveHint": "Biudi musue biebe, ba liste, portefeuille, alerte ne mifundu yebe mu fichier umue.",
+  "backupRestore": "Pingaja ku kopi wa kulama",
+  "backupRestoreHint": "Udi usakidila bidi mu fichier; kakuena tshintu tshia biudi nabi katataka tshidi tshijimina to.",
+  "backupRestored": "Kopi wa kulama mmupingaja.",
+  "backupInvalid": "Fichier eu ki mmukopi wa kulama wa WhatStock to."
 }

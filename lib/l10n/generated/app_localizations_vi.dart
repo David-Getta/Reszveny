@@ -2212,4 +2212,27 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Từ đầu năm';
+
+  @override
+  String get backupTitle => 'Sao lưu';
+
+  @override
+  String get backupSave => 'Lưu bản sao lưu';
+
+  @override
+  String get backupSaveHint =>
+      'Mục yêu thích, danh sách, danh mục, cảnh báo và ghi chú của bạn trong một tệp.';
+
+  @override
+  String get backupRestore => 'Khôi phục từ bản sao lưu';
+
+  @override
+  String get backupRestoreHint =>
+      'Thêm nội dung trong tệp; không có gì bạn đang có bị xóa.';
+
+  @override
+  String get backupRestored => 'Đã khôi phục bản sao lưu.';
+
+  @override
+  String get backupInvalid => 'Tệp này không phải bản sao lưu WhatStock.';
 }

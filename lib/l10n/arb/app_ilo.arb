@@ -593,5 +593,12 @@
   "watchListAddTo": "Inayon iti listaan",
   "watchListEmpty": "Awan pay ti stock iti daytoy a listaan. I-tap ti buton ti listaan iti abay ti stock tapno inayon dayta.",
   "portfolioAskTitle": "Saludsod maipapan iti portfolio-m",
-  "rangeYtd": "YTD"
+  "rangeYtd": "YTD",
+  "backupTitle": "Backup",
+  "backupSave": "I-save ti backup",
+  "backupSaveHint": "Dagiti paboritom, listaan, portfolio, alerto ken notam iti maysa a file.",
+  "backupRestore": "I-restore manipud iti backup",
+  "backupRestoreHint": "Inayonna ti adda iti file; awan ti maikkat kadagiti adda kenka ita.",
+  "backupRestored": "Na-restore ti backup.",
+  "backupInvalid": "Saan a WhatStock backup daytoy a file."
 }

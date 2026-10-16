@@ -2260,4 +2260,27 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Od poč. g.';
+
+  @override
+  String get backupTitle => 'Sigurnosna kopija';
+
+  @override
+  String get backupSave => 'Spremi sigurnosnu kopiju';
+
+  @override
+  String get backupSaveHint =>
+      'Vaši favoriti, popisi, portfelj, obavijesti i bilješke u jednoj datoteci.';
+
+  @override
+  String get backupRestore => 'Vrati iz sigurnosne kopije';
+
+  @override
+  String get backupRestoreHint =>
+      'Dodaje ono što je u datoteci; ništa od onoga što sada imate neće se izbrisati.';
+
+  @override
+  String get backupRestored => 'Sigurnosna kopija je vraćena.';
+
+  @override
+  String get backupInvalid => 'Ova datoteka nije WhatStock sigurnosna kopija.';
 }

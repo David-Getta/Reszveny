@@ -2216,4 +2216,27 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Быел';
+
+  @override
+  String get backupTitle => 'Резерв күчермә';
+
+  @override
+  String get backupSave => 'Резерв күчермәне саклау';
+
+  @override
+  String get backupSaveHint =>
+      'Сайланмаларыгыз, исемлекләрегез, портфелегез, искәртүләрегез һәм язмаларыгыз бер файлда.';
+
+  @override
+  String get backupRestore => 'Резерв күчермәдән торгызу';
+
+  @override
+  String get backupRestoreHint =>
+      'Файлдагыны өсти; хәзерге мәгълүматларыгыздан бернәрсә дә бетерелми.';
+
+  @override
+  String get backupRestored => 'Резерв күчермә торгызылды.';
+
+  @override
+  String get backupInvalid => 'Бу файл WhatStock резерв күчермәсе түгел.';
 }

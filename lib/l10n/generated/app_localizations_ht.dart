@@ -2217,4 +2217,27 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Ane sa a';
+
+  @override
+  String get backupTitle => 'Sovgad';
+
+  @override
+  String get backupSave => 'Anrejistre yon sovgad';
+
+  @override
+  String get backupSaveHint =>
+      'Favori ou, lis ou, pòtfèy ou, alèt ou ak nòt ou nan yon sèl fichye.';
+
+  @override
+  String get backupRestore => 'Restore nan yon sovgad';
+
+  @override
+  String get backupRestoreHint =>
+      'Li ajoute sa ki nan fichye a; anyen nan sa ou genyen kounye a p ap efase.';
+
+  @override
+  String get backupRestored => 'Sovgad la restore.';
+
+  @override
+  String get backupInvalid => 'Fichye sa a se pa yon sovgad WhatStock.';
 }

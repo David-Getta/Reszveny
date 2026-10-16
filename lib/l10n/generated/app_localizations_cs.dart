@@ -2275,4 +2275,27 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Letos';
+
+  @override
+  String get backupTitle => 'Záloha';
+
+  @override
+  String get backupSave => 'Uložit zálohu';
+
+  @override
+  String get backupSaveHint =>
+      'Vaše oblíbené, seznamy, portfolio, upozornění a poznámky v jednom souboru.';
+
+  @override
+  String get backupRestore => 'Obnovit ze zálohy';
+
+  @override
+  String get backupRestoreHint =>
+      'Přidá obsah souboru; nic z vašich současných dat se nesmaže.';
+
+  @override
+  String get backupRestored => 'Záloha obnovena.';
+
+  @override
+  String get backupInvalid => 'Tento soubor není záloha WhatStock.';
 }

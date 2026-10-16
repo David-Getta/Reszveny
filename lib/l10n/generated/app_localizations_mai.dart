@@ -2212,4 +2212,27 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'बैकअप';
+
+  @override
+  String get backupSave => 'बैकअप सेव करू';
+
+  @override
+  String get backupSaveHint =>
+      'अहाँक पसंदीदा, सूची, पोर्टफ़ोलियो, अलर्ट आ नोट एकटा फाइलमे।';
+
+  @override
+  String get backupRestore => 'बैकअपसँ वापस आनू';
+
+  @override
+  String get backupRestoreHint =>
+      'फाइलमे जे अछि से जोड़ैत अछि; अहाँ लग एखन जे अछि ताहिमे सँ किछु नहि मेटाएत।';
+
+  @override
+  String get backupRestored => 'बैकअप वापस आबि गेल।';
+
+  @override
+  String get backupInvalid => 'ई फाइल WhatStock बैकअप नहि अछि।';
 }

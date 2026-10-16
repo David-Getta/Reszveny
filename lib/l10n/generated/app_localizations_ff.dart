@@ -2213,4 +2213,27 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Hikka';
+
+  @override
+  String get backupTitle => 'Kopi danndaandi';
+
+  @override
+  String get backupSave => 'Danndu kopi';
+
+  @override
+  String get backupSaveHint =>
+      'Cuɓaaɗe maa, dogge maa, aksiyoŋ maa, tintine maa e binndi maa e fiyannde wootere.';
+
+  @override
+  String get backupRestore => 'Artir iwde e kopi danndaandi';
+
+  @override
+  String get backupRestoreHint =>
+      'Ɓeydata ko woni e fiyannde ndee; alaa fus ko woodanaa jooni momtetee.';
+
+  @override
+  String get backupRestored => 'Kopi danndaandi ndi artiraama.';
+
+  @override
+  String get backupInvalid => 'Ndee fiyannde wonaa kopi danndaandi WhatStock.';
 }

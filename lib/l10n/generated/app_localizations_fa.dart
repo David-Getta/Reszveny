@@ -2215,4 +2215,27 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get rangeYtd => 'امسال';
+
+  @override
+  String get backupTitle => 'پشتیبان‌گیری';
+
+  @override
+  String get backupSave => 'ذخیرهٔ نسخهٔ پشتیبان';
+
+  @override
+  String get backupSaveHint =>
+      'علاقه‌مندی‌ها، فهرست‌ها، سبد سهام، هشدارها و یادداشت‌های شما در یک فایل.';
+
+  @override
+  String get backupRestore => 'بازیابی از نسخهٔ پشتیبان';
+
+  @override
+  String get backupRestoreHint =>
+      'محتوای فایل را اضافه می‌کند؛ هیچ‌چیز از داده‌های فعلی شما حذف نمی‌شود.';
+
+  @override
+  String get backupRestored => 'نسخهٔ پشتیبان بازیابی شد.';
+
+  @override
+  String get backupInvalid => 'این فایل نسخهٔ پشتیبان WhatStock نیست.';
 }

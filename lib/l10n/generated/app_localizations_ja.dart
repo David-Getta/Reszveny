@@ -2143,4 +2143,25 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get rangeYtd => '年初来';
+
+  @override
+  String get backupTitle => 'バックアップ';
+
+  @override
+  String get backupSave => 'バックアップを保存';
+
+  @override
+  String get backupSaveHint => 'お気に入り、リスト、ポートフォリオ、アラート、メモを1つのファイルにまとめます。';
+
+  @override
+  String get backupRestore => 'バックアップから復元';
+
+  @override
+  String get backupRestoreHint => 'ファイルの内容を追加します。現在のデータは何も削除されません。';
+
+  @override
+  String get backupRestored => 'バックアップを復元しました。';
+
+  @override
+  String get backupInvalid => 'このファイルはWhatStockのバックアップではありません。';
 }

@@ -2225,4 +2225,27 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'Backup';
+
+  @override
+  String get backupSave => 'I-save ang backup';
+
+  @override
+  String get backupSaveHint =>
+      'Ang iyong mga paborito, listahan, portfolio, alerto at tala sa iisang file.';
+
+  @override
+  String get backupRestore => 'I-restore mula sa backup';
+
+  @override
+  String get backupRestoreHint =>
+      'Idinadagdag ang laman ng file; walang mabubura sa kung ano ang mayroon ka ngayon.';
+
+  @override
+  String get backupRestored => 'Na-restore ang backup.';
+
+  @override
+  String get backupInvalid => 'Hindi WhatStock backup ang file na ito.';
 }

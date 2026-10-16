@@ -593,5 +593,12 @@
   "watchListAddTo": "Tambahake menyang dhaptar",
   "watchListEmpty": "Durung ana saham ing dhaptar iki. Tutul tombol dhaptar ing sandhingé saham kanggo nambahaké.",
   "portfolioAskTitle": "Pitakon babagan portofolio sampeyan",
-  "rangeYtd": "Taun iki"
+  "rangeYtd": "Taun iki",
+  "backupTitle": "Cadhangan",
+  "backupSave": "Simpen cadhangan",
+  "backupSaveHint": "Favorit, dhaptar, portofolio, pèngetan, lan cathetan sampeyan ing siji file.",
+  "backupRestore": "Pulihaké saka cadhangan",
+  "backupRestoreHint": "Nambahaké isiné file; ora ana sing kabusak saka data sampeyan saiki.",
+  "backupRestored": "Cadhangan wis dipulihaké.",
+  "backupInvalid": "File iki dudu cadhangan WhatStock."
 }

@@ -2232,4 +2232,27 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Kunan wata';
+
+  @override
+  String get backupTitle => 'Waqaychasqa qillqa';
+
+  @override
+  String get backupSave => 'Waqaychasqata waqaychay';
+
+  @override
+  String get backupSaveHint =>
+      'Munasqaykikuna, listaykikuna, portafolioyki, willachiykunayki, qillqasqaykikunapas huk archivopi.';
+
+  @override
+  String get backupRestore => 'Waqaychasqamanta kutichiy';
+
+  @override
+  String get backupRestoreHint =>
+      'Archivopi kaqta yapan; kunan kapusqaykimanta manam imapas chinkachisqachu.';
+
+  @override
+  String get backupRestored => 'Waqaychasqa kutichisqa.';
+
+  @override
+  String get backupInvalid => 'Kay archivoqa manam WhatStock waqaychasqachu.';
 }

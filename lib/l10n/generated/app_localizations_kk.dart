@@ -2218,4 +2218,27 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Биыл';
+
+  @override
+  String get backupTitle => 'Сақтық көшірме';
+
+  @override
+  String get backupSave => 'Сақтық көшірмені сақтау';
+
+  @override
+  String get backupSaveHint =>
+      'Таңдаулыларыңыз, тізімдеріңіз, портфеліңіз, ескертулеріңіз және жазбаларыңыз бір файлда.';
+
+  @override
+  String get backupRestore => 'Сақтық көшірмеден қалпына келтіру';
+
+  @override
+  String get backupRestoreHint =>
+      'Файлдағыны қосады; қазіргі деректеріңізден ештеңе жойылмайды.';
+
+  @override
+  String get backupRestored => 'Сақтық көшірме қалпына келтірілді.';
+
+  @override
+  String get backupInvalid => 'Бұл файл WhatStock сақтық көшірмесі емес.';
 }

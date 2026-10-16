@@ -2214,4 +2214,27 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'बैकअप';
+
+  @override
+  String get backupSave => 'बैकअप सेव करीं';
+
+  @override
+  String get backupSaveHint =>
+      'रउआ पसंदीदा, सूची, पोर्टफ़ोलियो, अलर्ट आ नोट एगो फाइल में।';
+
+  @override
+  String get backupRestore => 'बैकअप से वापस लाईं';
+
+  @override
+  String get backupRestoreHint =>
+      'फाइल में जवन बा ओकरा के जोड़ेला; रउआ लगे अबहीं जवन बा ओह में से कुछुओ ना मिटी।';
+
+  @override
+  String get backupRestored => 'बैकअप वापस आ गइल।';
+
+  @override
+  String get backupInvalid => 'ई फाइल WhatStock बैकअप ना ह।';
 }

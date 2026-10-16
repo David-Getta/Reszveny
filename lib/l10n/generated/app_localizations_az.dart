@@ -2220,4 +2220,27 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Bu il';
+
+  @override
+  String get backupTitle => 'Ehtiyat nüsxə';
+
+  @override
+  String get backupSave => 'Ehtiyat nüsxəni saxla';
+
+  @override
+  String get backupSaveHint =>
+      'Seçilmişləriniz, siyahılarınız, portfeliniz, bildirişləriniz və qeydləriniz bir faylda.';
+
+  @override
+  String get backupRestore => 'Ehtiyat nüsxədən bərpa et';
+
+  @override
+  String get backupRestoreHint =>
+      'Fayldakıları əlavə edir; hazırkı məlumatlarınızdan heç nə silinmir.';
+
+  @override
+  String get backupRestored => 'Ehtiyat nüsxə bərpa edildi.';
+
+  @override
+  String get backupInvalid => 'Bu fayl WhatStock ehtiyat nüsxəsi deyil.';
 }

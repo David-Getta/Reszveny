@@ -2237,4 +2237,28 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Од поч. г.';
+
+  @override
+  String get backupTitle => 'Резервна копија';
+
+  @override
+  String get backupSave => 'Зачувај резервна копија';
+
+  @override
+  String get backupSaveHint =>
+      'Вашите омилени, листи, портфолио, известувања и белешки во една датотека.';
+
+  @override
+  String get backupRestore => 'Врати од резервна копија';
+
+  @override
+  String get backupRestoreHint =>
+      'Се додава она што е во датотеката; ништо од сегашните податоци не се брише.';
+
+  @override
+  String get backupRestored => 'Резервната копија е вратена.';
+
+  @override
+  String get backupInvalid =>
+      'Оваа датотека не е резервна копија од WhatStock.';
 }

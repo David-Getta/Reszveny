@@ -2152,4 +2152,25 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get rangeYtd => '연초 이후';
+
+  @override
+  String get backupTitle => '백업';
+
+  @override
+  String get backupSave => '백업 저장';
+
+  @override
+  String get backupSaveHint => '즐겨찾기, 목록, 포트폴리오, 알림, 메모를 하나의 파일에 담습니다.';
+
+  @override
+  String get backupRestore => '백업에서 복원';
+
+  @override
+  String get backupRestoreHint => '파일에 있는 내용을 추가하며, 지금 있는 데이터는 하나도 삭제되지 않습니다.';
+
+  @override
+  String get backupRestored => '백업을 복원했습니다.';
+
+  @override
+  String get backupInvalid => '이 파일은 WhatStock 백업이 아닙니다.';
 }

@@ -593,5 +593,12 @@
   "watchListAddTo": "הוספה לרשימה",
   "watchListEmpty": "אין עדיין מניות ברשימה הזו. הקישו על כפתור הרשימה ליד מניה כדי להוסיף אותה.",
   "portfolioAskTitle": "שאלות על התיק שלך",
-  "rangeYtd": "השנה"
+  "rangeYtd": "השנה",
+  "backupTitle": "גיבוי",
+  "backupSave": "שמירת גיבוי",
+  "backupSaveHint": "המועדפים, הרשימות, תיק ההשקעות, ההתראות וההערות שלכם בקובץ אחד.",
+  "backupRestore": "שחזור מגיבוי",
+  "backupRestoreHint": "מוסיף את מה שיש בקובץ; שום דבר ממה שיש לכם עכשיו לא נמחק.",
+  "backupRestored": "הגיבוי שוחזר.",
+  "backupInvalid": "הקובץ הזה אינו גיבוי של WhatStock."
 }

@@ -2224,4 +2224,27 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Ko ary';
+
+  @override
+  String get backupTitle => 'Mbaʼekuaarã ñongatupyre';
+
+  @override
+  String get backupSave => 'Eñongatu mbaʼekuaarã';
+
+  @override
+  String get backupSaveHint =>
+      'Ne ojeguerohoryvéva, ne lista, ne cartera, ne maranduʼi ha ne jehaipyre peteĩ archivo-pe.';
+
+  @override
+  String get backupRestore => 'Egueru jey ñongatupyre guive';
+
+  @override
+  String get backupRestoreHint =>
+      'Ombojoapy oĩva archivo-pe; ndojeheʼói mbaʼeve ereko ko ágãva.';
+
+  @override
+  String get backupRestored => 'Ñongatupyre ojegueru jey.';
+
+  @override
+  String get backupInvalid => 'Ko archivo ndahaʼéi WhatStock ñongatupyre.';
 }

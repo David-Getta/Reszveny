@@ -593,5 +593,12 @@
   "watchListAddTo": "Tsenya mo lenaaneng",
   "watchListEmpty": "Ga go na dishere mo lenaaneng leno ga jaana. Tobetsa konopo ya lenaane fa thoko ga shere go e tsenya.",
   "portfolioAskTitle": "Dipotso ka potefolio ya gago",
-  "rangeYtd": "YTD"
+  "rangeYtd": "YTD",
+  "backupTitle": "Polokelo ya tshireletso",
+  "backupSave": "Boloka polokelo ya tshireletso",
+  "backupSaveHint": "Tse o di ratang, manaane, potefolio, dikitsiso le dintlha tsa gago mo faeleng e le nngwe.",
+  "backupRestore": "Busetsa go tswa mo polokelong ya tshireletso",
+  "backupRestoreHint": "E oketsa se se mo faeleng; ga go sepe se o nang le sone jaanong se se phimolwang.",
+  "backupRestored": "Polokelo ya tshireletso e busitswe.",
+  "backupInvalid": "Faele eno ga se polokelo ya tshireletso ya WhatStock."
 }

@@ -2217,4 +2217,27 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get rangeYtd => 'I år';
+
+  @override
+  String get backupTitle => 'Sikkerhedskopi';
+
+  @override
+  String get backupSave => 'Gem en sikkerhedskopi';
+
+  @override
+  String get backupSaveHint =>
+      'Dine favoritter, lister, portefølje, alarmer og noter i én fil.';
+
+  @override
+  String get backupRestore => 'Gendan fra en sikkerhedskopi';
+
+  @override
+  String get backupRestoreHint =>
+      'Tilføjer det, der er i filen; intet af det, du har nu, slettes.';
+
+  @override
+  String get backupRestored => 'Sikkerhedskopien er gendannet.';
+
+  @override
+  String get backupInvalid => 'Denne fil er ikke en WhatStock-sikkerhedskopi.';
 }

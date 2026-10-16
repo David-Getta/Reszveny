@@ -593,5 +593,12 @@
   "watchListAddTo": "Yika na lisiti",
   "watchListEmpty": "Ata aksio mosi ve na lisiti yai ntete. Fina buto ya lisiti yina kele pembeni ya aksio sambu na kuyika yo.",
   "portfolioAskTitle": "Biuvu mu portefeuille na nge",
-  "rangeYtd": "Mvu yayi"
+  "rangeYtd": "Mvu yayi",
+  "backupTitle": "Kopi ya kubumba",
+  "backupSave": "Bumba kopi",
+  "backupSaveHint": "Bizolwa na nge, balisiti, portefeuille, nkebisu mpi ba note na nge na fisye mosi.",
+  "backupRestore": "Vutula katuka na kopi ya kubumba",
+  "backupRestoreHint": "Yo ke yika yina kele na fisye; kima mosi ve ya nge ke na yo ntangu yai ta katuka.",
+  "backupRestored": "Kopi ya kubumba me vutuka.",
+  "backupInvalid": "Fisye yai kele ve kopi ya kubumba ya WhatStock."
 }

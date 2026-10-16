@@ -593,5 +593,12 @@
   "watchListAddTo": "Fi kún àkójọ",
   "watchListEmpty": "Kò tíì sí ìpín kankan nínú àkójọ yìí. Tẹ bọ́tìnnì àkójọ lẹ́gbẹ̀ẹ́ ìpín kan láti fi kún un.",
   "portfolioAskTitle": "Àwọn ìbéèrè nípa àpò ìdókòwò rẹ",
-  "rangeYtd": "YTD"
+  "rangeYtd": "YTD",
+  "backupTitle": "Ẹ̀dà ìpamọ́",
+  "backupSave": "Fi ẹ̀dà ìpamọ́ pamọ́",
+  "backupSaveHint": "Àwọn ààyò rẹ, àkójọ, àpò ìdókòwò, ìkìlọ̀ àti àkọsílẹ̀ rẹ nínú fáìlì kan.",
+  "backupRestore": "Dá padà láti ẹ̀dà ìpamọ́",
+  "backupRestoreHint": "Ó ń fi ohun tó wà nínú fáìlì kún un; kò sí ohun tí o ní báyìí tí a ó pa rẹ́.",
+  "backupRestored": "A ti dá ẹ̀dà ìpamọ́ padà.",
+  "backupInvalid": "Fáìlì yìí kì í ṣe ẹ̀dà ìpamọ́ WhatStock."
 }

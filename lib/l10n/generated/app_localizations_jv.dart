@@ -2220,4 +2220,27 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Taun iki';
+
+  @override
+  String get backupTitle => 'Cadhangan';
+
+  @override
+  String get backupSave => 'Simpen cadhangan';
+
+  @override
+  String get backupSaveHint =>
+      'Favorit, dhaptar, portofolio, pèngetan, lan cathetan sampeyan ing siji file.';
+
+  @override
+  String get backupRestore => 'Pulihaké saka cadhangan';
+
+  @override
+  String get backupRestoreHint =>
+      'Nambahaké isiné file; ora ana sing kabusak saka data sampeyan saiki.';
+
+  @override
+  String get backupRestored => 'Cadhangan wis dipulihaké.';
+
+  @override
+  String get backupInvalid => 'File iki dudu cadhangan WhatStock.';
 }

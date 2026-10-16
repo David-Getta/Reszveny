@@ -2217,4 +2217,27 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'Ẹ̀dà ìpamọ́';
+
+  @override
+  String get backupSave => 'Fi ẹ̀dà ìpamọ́ pamọ́';
+
+  @override
+  String get backupSaveHint =>
+      'Àwọn ààyò rẹ, àkójọ, àpò ìdókòwò, ìkìlọ̀ àti àkọsílẹ̀ rẹ nínú fáìlì kan.';
+
+  @override
+  String get backupRestore => 'Dá padà láti ẹ̀dà ìpamọ́';
+
+  @override
+  String get backupRestoreHint =>
+      'Ó ń fi ohun tó wà nínú fáìlì kún un; kò sí ohun tí o ní báyìí tí a ó pa rẹ́.';
+
+  @override
+  String get backupRestored => 'A ti dá ẹ̀dà ìpamọ́ padà.';
+
+  @override
+  String get backupInvalid => 'Fáìlì yìí kì í ṣe ẹ̀dà ìpamọ́ WhatStock.';
 }

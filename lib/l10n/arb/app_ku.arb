@@ -593,5 +593,12 @@
   "watchListAddTo": "Li lîsteyekê zêde bike",
   "watchListEmpty": "Hîn di vê lîsteyê de tu pişk tune ne. Ji bo zêdekirinê, li bişkoka lîsteyê ya li kêleka pişkê bitikîne.",
   "portfolioAskTitle": "Pirsên li ser portfolyoya te",
-  "rangeYtd": "Îsal"
+  "rangeYtd": "Îsal",
+  "backupTitle": "Paşeke",
+  "backupSave": "Paşekeyê tomar bike",
+  "backupSaveHint": "Bijareyên te, lîsteyên te, portfolyoya te, hişyariyên te û notên te di pelekî de.",
+  "backupRestore": "Ji paşekeyê vegerîne",
+  "backupRestoreHint": "Tiştên di pelê de lê zêde dike; ji tiştên ku niha li ba te ne tiştek nayê jêbirin.",
+  "backupRestored": "Paşeke hate vegerandin.",
+  "backupInvalid": "Ev pel ne paşekeyeke WhatStock e."
 }

@@ -2281,4 +2281,28 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get rangeYtd => 'С нач. г.';
+
+  @override
+  String get backupTitle => 'Резервная копия';
+
+  @override
+  String get backupSave => 'Сохранить резервную копию';
+
+  @override
+  String get backupSaveHint =>
+      'Ваше избранное, списки, портфель, оповещения и заметки в одном файле.';
+
+  @override
+  String get backupRestore => 'Восстановить из резервной копии';
+
+  @override
+  String get backupRestoreHint =>
+      'Добавляет содержимое файла; ничего из ваших текущих данных не удаляется.';
+
+  @override
+  String get backupRestored => 'Резервная копия восстановлена.';
+
+  @override
+  String get backupInvalid =>
+      'Этот файл не является резервной копией WhatStock.';
 }

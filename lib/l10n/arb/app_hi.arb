@@ -593,5 +593,12 @@
   "watchListAddTo": "सूची में जोड़ें",
   "watchListEmpty": "इस सूची में अभी कोई शेयर नहीं है। जोड़ने के लिए शेयर के पास वाले सूची बटन पर टैप करें।",
   "portfolioAskTitle": "आपके पोर्टफ़ोलियो के बारे में सवाल",
-  "rangeYtd": "YTD"
+  "rangeYtd": "YTD",
+  "backupTitle": "बैकअप",
+  "backupSave": "बैकअप सेव करें",
+  "backupSaveHint": "आपके पसंदीदा, सूचियाँ, पोर्टफ़ोलियो, अलर्ट और नोट्स एक फ़ाइल में।",
+  "backupRestore": "बैकअप से रीस्टोर करें",
+  "backupRestoreHint": "फ़ाइल में जो है उसे जोड़ता है; आपके अभी के डेटा में से कुछ भी नहीं हटता।",
+  "backupRestored": "बैकअप रीस्टोर हो गया।",
+  "backupInvalid": "यह फ़ाइल WhatStock बैकअप नहीं है।"
 }

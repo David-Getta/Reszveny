@@ -2280,4 +2280,27 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Šiemet';
+
+  @override
+  String get backupTitle => 'Atsarginė kopija';
+
+  @override
+  String get backupSave => 'Išsaugoti atsarginę kopiją';
+
+  @override
+  String get backupSaveHint =>
+      'Jūsų mėgstamiausi, sąrašai, portfelis, įspėjimai ir užrašai viename faile.';
+
+  @override
+  String get backupRestore => 'Atkurti iš atsarginės kopijos';
+
+  @override
+  String get backupRestoreHint =>
+      'Prideda tai, kas yra faile; nieko iš dabartinių jūsų duomenų neištrinama.';
+
+  @override
+  String get backupRestored => 'Atsarginė kopija atkurta.';
+
+  @override
+  String get backupInvalid => 'Šis failas nėra WhatStock atsarginė kopija.';
 }

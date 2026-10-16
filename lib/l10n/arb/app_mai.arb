@@ -593,5 +593,12 @@
   "watchListAddTo": "सूचीमे जोड़ू",
   "watchListEmpty": "एहि सूचीमे एखन धरि कोनो शेयर नहि अछि। जोड़बाक लेल शेयरक बगलक सूची बटन दबाउ।",
   "portfolioAskTitle": "अहाँक पोर्टफ़ोलियोक बारेमे प्रश्न",
-  "rangeYtd": "YTD"
+  "rangeYtd": "YTD",
+  "backupTitle": "बैकअप",
+  "backupSave": "बैकअप सेव करू",
+  "backupSaveHint": "अहाँक पसंदीदा, सूची, पोर्टफ़ोलियो, अलर्ट आ नोट एकटा फाइलमे।",
+  "backupRestore": "बैकअपसँ वापस आनू",
+  "backupRestoreHint": "फाइलमे जे अछि से जोड़ैत अछि; अहाँ लग एखन जे अछि ताहिमे सँ किछु नहि मेटाएत।",
+  "backupRestored": "बैकअप वापस आबि गेल।",
+  "backupInvalid": "ई फाइल WhatStock बैकअप नहि अछि।"
 }

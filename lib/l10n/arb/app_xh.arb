@@ -593,5 +593,12 @@
   "watchListAddTo": "Yongeza kuluhlu",
   "watchListEmpty": "Akukho zabelo kolu luhlu okwangoku. Cofa iqhosha loluhlu ecaleni kwesabelo ukuze usongeze.",
   "portfolioAskTitle": "Imibuzo ngepotifoliyo yakho",
-  "rangeYtd": "YTD"
+  "rangeYtd": "YTD",
+  "backupTitle": "Ugcino lokhuseleko",
+  "backupSave": "Gcina ikopi yokhuseleko",
+  "backupSaveHint": "Ezithandwayo, uluhlu, ipotifoliyo, izilumkiso namanqaku akho kwifayile enye.",
+  "backupRestore": "Buyisela kwikopi yokhuseleko",
+  "backupRestoreHint": "Yongeza okukwifayile; akukho nto onayo ngoku icinywayo.",
+  "backupRestored": "Ikopi yokhuseleko ibuyiselwe.",
+  "backupInvalid": "Le fayile asiyiyo ikopi yokhuseleko ye-WhatStock."
 }

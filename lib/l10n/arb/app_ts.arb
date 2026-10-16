@@ -593,5 +593,12 @@
   "watchListAddTo": "Engetela eka nxaxamelo",
   "watchListEmpty": "A ku si na swiavelo eka nxaxamelo leyi. Tsindzela batheni ya nxaxamelo ekusuhi ni xiavelo ku xi engetela.",
   "portfolioAskTitle": "Swivutiso hi phothifoliyo ya wena",
-  "rangeYtd": "YTD"
+  "rangeYtd": "YTD",
+  "backupTitle": "Nkopi yo hlayisa",
+  "backupSave": "Hlayisa nkopi yo hlayisa",
+  "backupSaveHint": "Leswi u swi rhandzaka, minxaxamelo, phothifoliyo, switiviso na tinotsi ta wena eka fayili yin'we.",
+  "backupRestore": "Vuyisa ku suka eka nkopi yo hlayisa",
+  "backupRestoreHint": "Yi engetela leswi nga eka fayili; a ku na nchumu lowu u nga na wona sweswi lowu susiwaka.",
+  "backupRestored": "Nkopi yo hlayisa yi vuyisiwile.",
+  "backupInvalid": "Fayili leyi a hi nkopi yo hlayisa ya WhatStock."
 }

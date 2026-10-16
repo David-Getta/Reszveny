@@ -593,5 +593,12 @@
   "watchListAddTo": "Afegir a una llista",
   "watchListEmpty": "Encara no hi ha cap acció en aquesta llista. Toca el botó de llista al costat d'una acció per afegir-la.",
   "portfolioAskTitle": "Preguntes sobre la teva cartera",
-  "rangeYtd": "Enguany"
+  "rangeYtd": "Enguany",
+  "backupTitle": "Còpia de seguretat",
+  "backupSave": "Desa una còpia de seguretat",
+  "backupSaveHint": "Els teus favorits, llistes, cartera, alertes i notes en un sol fitxer.",
+  "backupRestore": "Restaura des d’una còpia de seguretat",
+  "backupRestoreHint": "Afegeix el que hi ha al fitxer; no s’esborra res del que tens ara.",
+  "backupRestored": "S’ha restaurat la còpia de seguretat.",
+  "backupInvalid": "Aquest fitxer no és una còpia de seguretat de WhatStock."
 }

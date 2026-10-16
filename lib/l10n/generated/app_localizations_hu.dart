@@ -2224,4 +2224,27 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Idén';
+
+  @override
+  String get backupTitle => 'Biztonsági mentés';
+
+  @override
+  String get backupSave => 'Mentés fájlba';
+
+  @override
+  String get backupSaveHint =>
+      'A kedvenceid, listáid, portfóliód, riasztásaid és jegyzeteid egy fájlban.';
+
+  @override
+  String get backupRestore => 'Visszaállítás mentésből';
+
+  @override
+  String get backupRestoreHint =>
+      'Hozzáadja, ami a fájlban van; a mostani adataidból semmi nem törlődik.';
+
+  @override
+  String get backupRestored => 'A mentés visszaállítva.';
+
+  @override
+  String get backupInvalid => 'Ez a fájl nem WhatStock-mentés.';
 }

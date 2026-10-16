@@ -593,5 +593,12 @@
   "watchListAddTo": "ናብ ዝርዝር ወስኽ",
   "watchListEmpty": "ኣብዚ ዝርዝር ክሳብ ሕጂ ዝኾነ ኣክሲዮን የለን። ንምውሳኽ ኣብ ጥቓ ኣክሲዮን ዘሎ መልጎም ዝርዝር ጠውቕ።",
   "portfolioAskTitle": "ሕቶታት ብዛዕባ ፖርትፎሊዮኹም",
-  "rangeYtd": "እዚ ዓመት"
+  "rangeYtd": "እዚ ዓመት",
+  "backupTitle": "ምትኪእ ቅዳሕ",
+  "backupSave": "ምትኪእ ቅዳሕ ዓቅብ",
+  "backupSaveHint": "ዝተፈተዉ፣ ዝርዝራት፣ ፖርትፎሊዮ፣ መጠንቀቕታታትን ማስታወሻታትን ኣብ ሓደ ፋይል።",
+  "backupRestore": "ካብ ምትኪእ ቅዳሕ ምለስ",
+  "backupRestoreHint": "ኣብቲ ፋይል ዘሎ ይውስኽ፤ ካብቲ ሕጂ ዘለኩም ዋላ ሓደ ኣይድምሰስን።",
+  "backupRestored": "ምትኪእ ቅዳሕ ተመሊሱ።",
+  "backupInvalid": "እዚ ፋይል ናይ WhatStock ምትኪእ ቅዳሕ ኣይኮነን።"
 }

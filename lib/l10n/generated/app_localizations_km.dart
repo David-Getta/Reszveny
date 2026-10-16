@@ -2199,4 +2199,27 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get rangeYtd => 'ឆ្នាំនេះ';
+
+  @override
+  String get backupTitle => 'ការបម្រុងទុក';
+
+  @override
+  String get backupSave => 'រក្សាទុកការបម្រុងទុក';
+
+  @override
+  String get backupSaveHint =>
+      'ចំណូលចិត្ត បញ្ជី ផលប័ត្រ ការជូនដំណឹង និងកំណត់ចំណាំរបស់អ្នកក្នុងឯកសារតែមួយ។';
+
+  @override
+  String get backupRestore => 'ស្ដារពីការបម្រុងទុក';
+
+  @override
+  String get backupRestoreHint =>
+      'បន្ថែមអ្វីដែលមានក្នុងឯកសារ គ្មានអ្វីដែលអ្នកមានឥឡូវនេះត្រូវបានលុបទេ។';
+
+  @override
+  String get backupRestored => 'បានស្ដារការបម្រុងទុក។';
+
+  @override
+  String get backupInvalid => 'ឯកសារនេះមិនមែនជាការបម្រុងទុក WhatStock ទេ។';
 }

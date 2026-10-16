@@ -2236,4 +2236,27 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'Backup';
+
+  @override
+  String get backupSave => 'I-save ti backup';
+
+  @override
+  String get backupSaveHint =>
+      'Dagiti paboritom, listaan, portfolio, alerto ken notam iti maysa a file.';
+
+  @override
+  String get backupRestore => 'I-restore manipud iti backup';
+
+  @override
+  String get backupRestoreHint =>
+      'Inayonna ti adda iti file; awan ti maikkat kadagiti adda kenka ita.';
+
+  @override
+  String get backupRestored => 'Na-restore ti backup.';
+
+  @override
+  String get backupInvalid => 'Saan a WhatStock backup daytoy a file.';
 }

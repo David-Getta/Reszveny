@@ -593,5 +593,12 @@
   "watchListAddTo": "Ƙara zuwa jeri",
   "watchListEmpty": "Babu hannun jari a wannan jerin tukuna. Matsa maɓallin jeri kusa da hannun jari don ƙara shi.",
   "portfolioAskTitle": "Tambayoyi game da jakar hannun jarinku",
-  "rangeYtd": "YTD"
+  "rangeYtd": "YTD",
+  "backupTitle": "Ajiya",
+  "backupSave": "Adana ajiya",
+  "backupSaveHint": "Abubuwan da ka fi so, jerinka, jakar hannun jarinka, faɗakarwarka da bayananka a fayil ɗaya.",
+  "backupRestore": "Maido daga ajiya",
+  "backupRestoreHint": "Yana ƙara abin da ke cikin fayil ɗin; ba za a goge komai daga abin da kake da shi yanzu ba.",
+  "backupRestored": "An maido da ajiya.",
+  "backupInvalid": "Wannan fayil ba ajiyar WhatStock ba ce."
 }

@@ -2218,4 +2218,27 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Afe yi';
+
+  @override
+  String get backupTitle => 'Akorae';
+
+  @override
+  String get backupSave => 'Kora wo nneɛma';
+
+  @override
+  String get backupSaveHint =>
+      'Nea wopɛ, wo nhyehyɛe, wo nkyɛfa, wo kɔkɔbɔ ne wo nkyerɛwee wɔ fael baako mu.';
+
+  @override
+  String get backupRestore => 'San fa fi akorae mu';
+
+  @override
+  String get backupRestoreHint =>
+      'Ɛde nea ɛwɔ fael no mu ka ho; wɔmpopa biribiara a wowɔ seesei.';
+
+  @override
+  String get backupRestored => 'Wɔasan de akorae no aba.';
+
+  @override
+  String get backupInvalid => 'Saa fael yi nyɛ WhatStock akorae.';
 }

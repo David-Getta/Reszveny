@@ -2281,4 +2281,27 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Letos';
+
+  @override
+  String get backupTitle => 'Varnostna kopija';
+
+  @override
+  String get backupSave => 'Shrani varnostno kopijo';
+
+  @override
+  String get backupSaveHint =>
+      'Vaše priljubljene, seznami, portfelj, opozorila in zapiski v eni datoteki.';
+
+  @override
+  String get backupRestore => 'Obnovi iz varnostne kopije';
+
+  @override
+  String get backupRestoreHint =>
+      'Doda vsebino datoteke; nič od tega, kar imate zdaj, se ne izbriše.';
+
+  @override
+  String get backupRestored => 'Varnostna kopija je obnovljena.';
+
+  @override
+  String get backupInvalid => 'Ta datoteka ni varnostna kopija WhatStock.';
 }

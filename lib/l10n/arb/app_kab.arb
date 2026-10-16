@@ -593,5 +593,12 @@
   "watchListAddTo": "Rnu ɣer tebdart",
   "watchListEmpty": "Ulac ula d yiwen n usehm deg tebdart-a ar tura. Sit ɣef tqeffalt n tebdart ɣer yidis n usehm akken ad t-ternuḍ.",
   "portfolioAskTitle": "Isteqsiyen ɣef uqrab-ik",
-  "rangeYtd": "Aseggas-a"
+  "rangeYtd": "Aseggas-a",
+  "backupTitle": "Aḥraz",
+  "backupSave": "Sekles aḥraz",
+  "backupSaveHint": "Ismenyifen-ik, tibdarin-ik, aqrab-ik, ilɣa-k d tezmilin-ik deg yiwen ufaylu.",
+  "backupRestore": "Err-d seg uḥraz",
+  "backupRestoreHint": "Yerennu ayen yellan deg ufaylu; ulac acu ara yettwakksen seg wayen i tesɛiḍ tura.",
+  "backupRestored": "Aḥraz yuɣal-d.",
+  "backupInvalid": "Afaylu-a mačči d aḥraz n WhatStock."
 }

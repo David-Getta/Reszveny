@@ -593,5 +593,12 @@
   "watchListAddTo": "Sanawa goş",
   "watchListEmpty": "Bu sanawda entek paýnama ýok. Goşmak üçin paýnamanyň gapdalyndaky sanaw düwmesine basyň.",
   "portfolioAskTitle": "Portfeliňiz barada soraglar",
-  "rangeYtd": "Şu ýyl"
+  "rangeYtd": "Şu ýyl",
+  "backupTitle": "Ätiýaçlyk nusga",
+  "backupSave": "Ätiýaçlyk nusgany sakla",
+  "backupSaveHint": "Saýlananlaryňyz, sanawlaryňyz, portfeliňiz, duýduryşlaryňyz we bellikleriňiz bir faýlda.",
+  "backupRestore": "Ätiýaçlyk nusgadan dikelt",
+  "backupRestoreHint": "Faýldakylary goşýar; häzirki zatlaryňyzdan hiç zat pozulmaýar.",
+  "backupRestored": "Ätiýaçlyk nusga dikeldildi.",
+  "backupInvalid": "Bu faýl WhatStock ätiýaçlyk nusgasy däl."
 }

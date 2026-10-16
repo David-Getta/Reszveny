@@ -593,5 +593,12 @@
   "watchListAddTo": "Embojuaju peteĩ listape",
   "watchListEmpty": "Ndaipóri gueteri acción ko listape. Ejopy lista votõ oĩva acción ykére embojuaju hag̃ua.",
   "portfolioAskTitle": "Porandu nde cartera rehegua",
-  "rangeYtd": "Ko ary"
+  "rangeYtd": "Ko ary",
+  "backupTitle": "Mbaʼekuaarã ñongatupyre",
+  "backupSave": "Eñongatu mbaʼekuaarã",
+  "backupSaveHint": "Ne ojeguerohoryvéva, ne lista, ne cartera, ne maranduʼi ha ne jehaipyre peteĩ archivo-pe.",
+  "backupRestore": "Egueru jey ñongatupyre guive",
+  "backupRestoreHint": "Ombojoapy oĩva archivo-pe; ndojeheʼói mbaʼeve ereko ko ágãva.",
+  "backupRestored": "Ñongatupyre ojegueru jey.",
+  "backupInvalid": "Ko archivo ndahaʼéi WhatStock ñongatupyre."
 }

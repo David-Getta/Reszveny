@@ -593,5 +593,12 @@
   "watchListAddTo": "Dodaj na listu",
   "watchListEmpty": "Na ovoj listi još nema dionica. Dodirnite dugme liste pored dionice da je dodate.",
   "portfolioAskTitle": "Pitanja o vašem portfoliju",
-  "rangeYtd": "Od poč. g."
+  "rangeYtd": "Od poč. g.",
+  "backupTitle": "Sigurnosna kopija",
+  "backupSave": "Sačuvaj sigurnosnu kopiju",
+  "backupSaveHint": "Vaši favoriti, liste, portfolio, obavještenja i bilješke u jednom fajlu.",
+  "backupRestore": "Vrati iz sigurnosne kopije",
+  "backupRestoreHint": "Dodaje ono što je u fajlu; ništa od onoga što sada imate se ne briše.",
+  "backupRestored": "Sigurnosna kopija je vraćena.",
+  "backupInvalid": "Ovaj fajl nije WhatStock sigurnosna kopija."
 }

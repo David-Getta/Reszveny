@@ -593,5 +593,12 @@
   "watchListAddTo": "Shto në listë",
   "watchListEmpty": "Ende nuk ka aksione në këtë listë. Prek butonin e listës pranë një aksioni për ta shtuar.",
   "portfolioAskTitle": "Pyetje për portofolin tuaj",
-  "rangeYtd": "Këtë vit"
+  "rangeYtd": "Këtë vit",
+  "backupTitle": "Kopje rezervë",
+  "backupSave": "Ruaj një kopje rezervë",
+  "backupSaveHint": "Të preferuarat, listat, portofoli, alarmet dhe shënimet tuaja në një skedar.",
+  "backupRestore": "Rikthe nga kopja rezervë",
+  "backupRestoreHint": "Shton atë që është në skedar; asgjë nga ajo që keni tani nuk fshihet.",
+  "backupRestored": "Kopja rezervë u rikthye.",
+  "backupInvalid": "Ky skedar nuk është kopje rezervë e WhatStock."
 }

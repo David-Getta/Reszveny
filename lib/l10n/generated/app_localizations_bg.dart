@@ -2219,4 +2219,27 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get rangeYtd => 'От нач. г.';
+
+  @override
+  String get backupTitle => 'Резервно копие';
+
+  @override
+  String get backupSave => 'Запазване на резервно копие';
+
+  @override
+  String get backupSaveHint =>
+      'Любимите ви, списъците, портфейлът, известията и бележките в един файл.';
+
+  @override
+  String get backupRestore => 'Възстановяване от резервно копие';
+
+  @override
+  String get backupRestoreHint =>
+      'Добавя съдържанието на файла; нищо от сегашните ви данни не се изтрива.';
+
+  @override
+  String get backupRestored => 'Резервното копие е възстановено.';
+
+  @override
+  String get backupInvalid => 'Този файл не е резервно копие на WhatStock.';
 }

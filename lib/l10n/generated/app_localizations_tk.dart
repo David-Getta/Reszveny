@@ -2218,4 +2218,27 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Şu ýyl';
+
+  @override
+  String get backupTitle => 'Ätiýaçlyk nusga';
+
+  @override
+  String get backupSave => 'Ätiýaçlyk nusgany sakla';
+
+  @override
+  String get backupSaveHint =>
+      'Saýlananlaryňyz, sanawlaryňyz, portfeliňiz, duýduryşlaryňyz we bellikleriňiz bir faýlda.';
+
+  @override
+  String get backupRestore => 'Ätiýaçlyk nusgadan dikelt';
+
+  @override
+  String get backupRestoreHint =>
+      'Faýldakylary goşýar; häzirki zatlaryňyzdan hiç zat pozulmaýar.';
+
+  @override
+  String get backupRestored => 'Ätiýaçlyk nusga dikeldildi.';
+
+  @override
+  String get backupInvalid => 'Bu faýl WhatStock ätiýaçlyk nusgasy däl.';
 }

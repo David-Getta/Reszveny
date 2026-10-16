@@ -593,5 +593,12 @@
   "watchListAddTo": "Dodaj do listy",
   "watchListEmpty": "Na tej liście nie ma jeszcze akcji. Stuknij przycisk listy obok akcji, aby ją dodać.",
   "portfolioAskTitle": "Pytania o Twój portfel",
-  "rangeYtd": "YTD"
+  "rangeYtd": "YTD",
+  "backupTitle": "Kopia zapasowa",
+  "backupSave": "Zapisz kopię zapasową",
+  "backupSaveHint": "Twoje ulubione, listy, portfel, alerty i notatki w jednym pliku.",
+  "backupRestore": "Przywróć z kopii zapasowej",
+  "backupRestoreHint": "Dodaje zawartość pliku; nic z tego, co masz teraz, nie zostanie usunięte.",
+  "backupRestored": "Przywrócono kopię zapasową.",
+  "backupInvalid": "Ten plik nie jest kopią zapasową WhatStock."
 }

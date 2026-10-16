@@ -2217,4 +2217,27 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'बैकअप';
+
+  @override
+  String get backupSave => 'बैकअप सेव करें';
+
+  @override
+  String get backupSaveHint =>
+      'आपके पसंदीदा, सूचियाँ, पोर्टफ़ोलियो, अलर्ट और नोट्स एक फ़ाइल में।';
+
+  @override
+  String get backupRestore => 'बैकअप से रीस्टोर करें';
+
+  @override
+  String get backupRestoreHint =>
+      'फ़ाइल में जो है उसे जोड़ता है; आपके अभी के डेटा में से कुछ भी नहीं हटता।';
+
+  @override
+  String get backupRestored => 'बैकअप रीस्टोर हो गया।';
+
+  @override
+  String get backupInvalid => 'यह फ़ाइल WhatStock बैकअप नहीं है।';
 }

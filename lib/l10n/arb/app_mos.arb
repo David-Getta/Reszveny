@@ -593,5 +593,12 @@
   "watchListAddTo": "Paas liste pʋgẽ",
   "watchListEmpty": "Aksyõ ka be liste-kãngã pʋgẽ ye. Ningi listã butõ wã sẽn be aksyõã taobã n paas-a.",
   "portfolioAskTitle": "Sokre: f portfey",
-  "rangeYtd": "Yʋʋm kãnga"
+  "rangeYtd": "Yʋʋm kãnga",
+  "backupTitle": "Sẽn bʋʋd n bilgi",
+  "backupSave": "Bʋʋd sẽn bilgi",
+  "backupSaveHint": "Fo nong-n-yɩɩda, fo listɛ, fo portfey, fo koosg gũusgo la fo gʋlsgo, fiyie a yembre pʋgẽ.",
+  "backupRestore": "Lebg n yik sẽn bʋʋd n bilgã pʋgẽ",
+  "backupRestoreHint": "A paasda bũmb ning sẽn be fiyiã pʋgẽ; bũmb ka na n yikd fo sẽn tar masã ye.",
+  "backupRestored": "Sẽn bʋʋd n bilgã lebga.",
+  "backupInvalid": "Fiyie kãngã pa WhatStock bʋʋd n bilgi ye."
 }

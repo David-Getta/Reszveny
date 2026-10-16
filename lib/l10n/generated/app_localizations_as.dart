@@ -2217,4 +2217,27 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'বেকআপ';
+
+  @override
+  String get backupSave => 'বেকআপ ছেভ কৰক';
+
+  @override
+  String get backupSaveHint =>
+      'আপোনাৰ প্ৰিয়, তালিকা, প\'ৰ্টফ\'লিঅ\', সতৰ্কবাণী আৰু টোকাসমূহ এটা ফাইলত।';
+
+  @override
+  String get backupRestore => 'বেকআপৰ পৰা পুনৰুদ্ধাৰ কৰক';
+
+  @override
+  String get backupRestoreHint =>
+      'ফাইলত যি আছে সেয়া যোগ কৰে; আপোনাৰ এতিয়াৰ একোৱেই মচা নহয়।';
+
+  @override
+  String get backupRestored => 'বেকআপ পুনৰুদ্ধাৰ কৰা হ\'ল।';
+
+  @override
+  String get backupInvalid => 'এই ফাইলটো WhatStock বেকআপ নহয়।';
 }

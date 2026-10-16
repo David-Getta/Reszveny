@@ -593,5 +593,12 @@
   "watchListAddTo": "Pievienot sarakstam",
   "watchListEmpty": "Šajā sarakstā vēl nav akciju. Pieskarieties saraksta pogai blakus akcijai, lai to pievienotu.",
   "portfolioAskTitle": "Jautājumi par jūsu portfeli",
-  "rangeYtd": "Šogad"
+  "rangeYtd": "Šogad",
+  "backupTitle": "Dublējums",
+  "backupSave": "Saglabāt dublējumu",
+  "backupSaveHint": "Jūsu izlase, saraksti, portfelis, brīdinājumi un piezīmes vienā failā.",
+  "backupRestore": "Atjaunot no dublējuma",
+  "backupRestoreHint": "Pievieno faila saturu; nekas no jūsu pašreizējiem datiem netiek dzēsts.",
+  "backupRestored": "Dublējums atjaunots.",
+  "backupInvalid": "Šis fails nav WhatStock dublējums."
 }

@@ -593,5 +593,12 @@
   "watchListAddTo": "Wedzera kurondedzero",
   "watchListEmpty": "Hapana masheya murondedzero iyi parizvino. Baya bhatani rerondedzero riri padyo nesheya kuti uriwedzere.",
   "portfolioAskTitle": "Mibvunzo nezvepotiforiyo yako",
-  "rangeYtd": "YTD"
+  "rangeYtd": "YTD",
+  "backupTitle": "Bhakapu",
+  "backupSave": "Chengetedza bhakapu",
+  "backupSaveHint": "Zvaunofarira, marondedzero, potiforiyo, zviziviso nezvinyorwa zvako mufaira imwe.",
+  "backupRestore": "Dzorera kubva kubhakapu",
+  "backupRestoreHint": "Inowedzera zviri mufaira; hapana chaunacho izvozvi chinodzimwa.",
+  "backupRestored": "Bhakapu yadzorerwa.",
+  "backupInvalid": "Faira iyi haisi bhakapu yeWhatStock."
 }

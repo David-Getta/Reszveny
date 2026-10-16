@@ -593,5 +593,12 @@
   "watchListAddTo": "Oketša lenaneong",
   "watchListEmpty": "Ga go na diabelo lenaneong le ga bjale. Kgotla konopo ya lenaneo kgauswi le seabelo go se oketša.",
   "portfolioAskTitle": "Dipotšišo ka photefolio ya gago",
-  "rangeYtd": "YTD"
+  "rangeYtd": "YTD",
+  "backupTitle": "Polokelo ya thekgo",
+  "backupSave": "Boloka polokelo ya thekgo",
+  "backupSaveHint": "Tše o di ratago, mananeo, photefolio, ditemošo le dintlha tša gago faeleng e tee.",
+  "backupRestore": "Bušetša go tšwa polokelong ya thekgo",
+  "backupRestoreHint": "E oketša seo se lego faeleng; ga go selo seo o nago le sona bjale se phumolwago.",
+  "backupRestored": "Polokelo ya thekgo e bušeditšwe.",
+  "backupInvalid": "Faele ye ga se polokelo ya thekgo ya WhatStock."
 }

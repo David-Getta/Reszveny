@@ -2214,4 +2214,27 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'ਬੈਕਅੱਪ';
+
+  @override
+  String get backupSave => 'ਬੈਕਅੱਪ ਸੇਵ ਕਰੋ';
+
+  @override
+  String get backupSaveHint =>
+      'ਤੁਹਾਡੇ ਮਨਪਸੰਦ, ਸੂਚੀਆਂ, ਪੋਰਟਫ਼ੋਲੀਓ, ਅਲਰਟ ਅਤੇ ਨੋਟ ਇੱਕੋ ਫ਼ਾਈਲ ਵਿੱਚ।';
+
+  @override
+  String get backupRestore => 'ਬੈਕਅੱਪ ਤੋਂ ਰੀਸਟੋਰ ਕਰੋ';
+
+  @override
+  String get backupRestoreHint =>
+      'ਫ਼ਾਈਲ ਵਿੱਚ ਜੋ ਹੈ ਉਹ ਜੋੜਿਆ ਜਾਂਦਾ ਹੈ; ਤੁਹਾਡੇ ਕੋਲ ਹੁਣ ਜੋ ਹੈ ਉਸ ਵਿੱਚੋਂ ਕੁਝ ਵੀ ਨਹੀਂ ਮਿਟਦਾ।';
+
+  @override
+  String get backupRestored => 'ਬੈਕਅੱਪ ਰੀਸਟੋਰ ਹੋ ਗਿਆ।';
+
+  @override
+  String get backupInvalid => 'ਇਹ ਫ਼ਾਈਲ WhatStock ਬੈਕਅੱਪ ਨਹੀਂ ਹੈ।';
 }

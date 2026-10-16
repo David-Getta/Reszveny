@@ -2223,4 +2223,27 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'Ajiya';
+
+  @override
+  String get backupSave => 'Adana ajiya';
+
+  @override
+  String get backupSaveHint =>
+      'Abubuwan da ka fi so, jerinka, jakar hannun jarinka, faɗakarwarka da bayananka a fayil ɗaya.';
+
+  @override
+  String get backupRestore => 'Maido daga ajiya';
+
+  @override
+  String get backupRestoreHint =>
+      'Yana ƙara abin da ke cikin fayil ɗin; ba za a goge komai daga abin da kake da shi yanzu ba.';
+
+  @override
+  String get backupRestored => 'An maido da ajiya.';
+
+  @override
+  String get backupInvalid => 'Wannan fayil ba ajiyar WhatStock ba ce.';
 }

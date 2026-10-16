@@ -593,5 +593,12 @@
   "watchListAddTo": "ලැයිස්තුවකට එක් කරන්න",
   "watchListEmpty": "මෙම ලැයිස්තුවේ තවම කොටස් නැත. එක් කිරීමට කොටසක් අසල ඇති ලැයිස්තු බොත්තම තට්ටු කරන්න.",
   "portfolioAskTitle": "ඔබේ කළඹ ගැන ප්‍රශ්න",
-  "rangeYtd": "YTD"
+  "rangeYtd": "YTD",
+  "backupTitle": "උපස්ථය",
+  "backupSave": "උපස්ථයක් සුරකින්න",
+  "backupSaveHint": "ඔබේ ප්‍රියතම, ලැයිස්තු, කළඹ, ඇඟවීම් සහ සටහන් එක ගොනුවක.",
+  "backupRestore": "උපස්ථයෙන් ප්‍රතිසාධනය කරන්න",
+  "backupRestoreHint": "ගොනුවේ ඇති දේ එක් කරයි; ඔබට දැන් ඇති කිසිවක් මකා නොදැමේ.",
+  "backupRestored": "උපස්ථය ප්‍රතිසාධනය කළා.",
+  "backupInvalid": "මෙම ගොනුව WhatStock උපස්ථයක් නොවේ."
 }

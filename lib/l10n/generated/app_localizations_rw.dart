@@ -2227,4 +2227,27 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'Kubika by\'inyongera';
+
+  @override
+  String get backupSave => 'Bika kopi y\'inyongera';
+
+  @override
+  String get backupSaveHint =>
+      'Ibyo ukunda, intonde, ishoramari, imenyesha n\'ibyo wanditse muri dosiye imwe.';
+
+  @override
+  String get backupRestore => 'Garura uvuye kuri kopi y\'inyongera';
+
+  @override
+  String get backupRestoreHint =>
+      'Yongeraho ibiri muri dosiye; nta na kimwe mu byo ufite ubu gisibwa.';
+
+  @override
+  String get backupRestored => 'Kopi y\'inyongera yagaruwe.';
+
+  @override
+  String get backupInvalid => 'Iyi dosiye si kopi y\'inyongera ya WhatStock.';
 }

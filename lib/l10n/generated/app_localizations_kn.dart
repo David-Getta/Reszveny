@@ -2225,4 +2225,27 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'ಬ್ಯಾಕಪ್';
+
+  @override
+  String get backupSave => 'ಬ್ಯಾಕಪ್ ಉಳಿಸಿ';
+
+  @override
+  String get backupSaveHint =>
+      'ನಿಮ್ಮ ಮೆಚ್ಚಿನವುಗಳು, ಪಟ್ಟಿಗಳು, ಪೋರ್ಟ್‌ಫೋಲಿಯೊ, ಅಲರ್ಟ್‌ಗಳು ಮತ್ತು ಟಿಪ್ಪಣಿಗಳು ಒಂದೇ ಫೈಲ್‌ನಲ್ಲಿ.';
+
+  @override
+  String get backupRestore => 'ಬ್ಯಾಕಪ್‌ನಿಂದ ಮರುಸ್ಥಾಪಿಸಿ';
+
+  @override
+  String get backupRestoreHint =>
+      'ಫೈಲ್‌ನಲ್ಲಿರುವುದನ್ನು ಸೇರಿಸುತ್ತದೆ; ನಿಮ್ಮಲ್ಲಿ ಈಗ ಇರುವ ಯಾವುದೂ ಅಳಿಸಲ್ಪಡುವುದಿಲ್ಲ.';
+
+  @override
+  String get backupRestored => 'ಬ್ಯಾಕಪ್ ಮರುಸ್ಥಾಪಿಸಲಾಗಿದೆ.';
+
+  @override
+  String get backupInvalid => 'ಈ ಫೈಲ್ WhatStock ಬ್ಯಾಕಪ್ ಅಲ್ಲ.';
 }

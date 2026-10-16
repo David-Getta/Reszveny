@@ -2223,4 +2223,27 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'Sandaran';
+
+  @override
+  String get backupSave => 'Simpan sandaran';
+
+  @override
+  String get backupSaveHint =>
+      'Kegemaran, senarai, portfolio, amaran dan nota anda dalam satu fail.';
+
+  @override
+  String get backupRestore => 'Pulihkan daripada sandaran';
+
+  @override
+  String get backupRestoreHint =>
+      'Menambah kandungan fail; tiada apa-apa yang anda ada sekarang akan dipadam.';
+
+  @override
+  String get backupRestored => 'Sandaran dipulihkan.';
+
+  @override
+  String get backupInvalid => 'Fail ini bukan sandaran WhatStock.';
 }

@@ -593,5 +593,12 @@
   "watchListAddTo": "リストに追加",
   "watchListEmpty": "このリストにはまだ銘柄がありません。銘柄の横にあるリストボタンをタップして追加してください。",
   "portfolioAskTitle": "ポートフォリオについての質問",
-  "rangeYtd": "年初来"
+  "rangeYtd": "年初来",
+  "backupTitle": "バックアップ",
+  "backupSave": "バックアップを保存",
+  "backupSaveHint": "お気に入り、リスト、ポートフォリオ、アラート、メモを1つのファイルにまとめます。",
+  "backupRestore": "バックアップから復元",
+  "backupRestoreHint": "ファイルの内容を追加します。現在のデータは何も削除されません。",
+  "backupRestored": "バックアップを復元しました。",
+  "backupInvalid": "このファイルはWhatStockのバックアップではありません。"
 }

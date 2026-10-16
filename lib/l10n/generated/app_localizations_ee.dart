@@ -2222,4 +2222,27 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Ƒe sia';
+
+  @override
+  String get backupTitle => 'Kɔpi si wodzra ɖo';
+
+  @override
+  String get backupSave => 'Dzra kɔpi ɖo';
+
+  @override
+  String get backupSaveHint =>
+      'Wò lɔlɔ̃tɔwo, xexlẽdzesiwo, akpawo, nuxlɔ̃amewo kple nuŋlɔɖiwo le faɛl ɖeka me.';
+
+  @override
+  String get backupRestore => 'Gbugbɔe tso kɔpi si wodzra ɖo me';
+
+  @override
+  String get backupRestoreHint =>
+      'Etsɔa nu siwo le faɛl la me kpena ɖe eŋu; womatutu naneke le nu siwo le asiwò fifia la me o.';
+
+  @override
+  String get backupRestored => 'Wogbugbɔ kɔpi la vɛ.';
+
+  @override
+  String get backupInvalid => 'Faɛl sia menye WhatStock kɔpi si wodzra ɖo o.';
 }

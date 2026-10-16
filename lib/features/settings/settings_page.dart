@@ -18,6 +18,7 @@ import '../account/sign_in_sheet.dart';
 import '../billing/paywall_page.dart';
 import '../billing/trial_upsell.dart';
 import '../billing/usage_chip.dart';
+import 'backup.dart';
 import 'telemetry_consent.dart';
 import 'language_picker.dart';
 import '../../l10n/generated/app_localizations.dart';
@@ -345,6 +346,8 @@ class SettingsPage extends StatelessWidget {
                     },
                   ),
                 ),
+                sectionTitle(l10n.backupTitle),
+                const BackupCard(),
                 sectionTitle(l10n.updates),
                 const Card(child: _UpdatesTile()),
                 sectionTitle(l10n.about),

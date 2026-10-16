@@ -593,5 +593,12 @@
   "watchListAddTo": "ወደ ዝርዝር አክል",
   "watchListEmpty": "በዚህ ዝርዝር ውስጥ እስካሁን ምንም አክሲዮን የለም። ለማከል ከአክሲዮኑ አጠገብ ያለውን የዝርዝር አዝራር ይንኩ።",
   "portfolioAskTitle": "ስለ ፖርትፎሊዮዎ ጥያቄዎች",
-  "rangeYtd": "ዘንድሮ"
+  "rangeYtd": "ዘንድሮ",
+  "backupTitle": "ምትኬ",
+  "backupSave": "ምትኬ አስቀምጥ",
+  "backupSaveHint": "ተወዳጆችዎ፣ ዝርዝሮችዎ፣ ፖርትፎሊዮዎ፣ ማንቂያዎችዎ እና ማስታወሻዎችዎ በአንድ ፋይል ውስጥ።",
+  "backupRestore": "ከምትኬ ወደነበረበት መልስ",
+  "backupRestoreHint": "በፋይሉ ውስጥ ያለውን ያክላል፤ አሁን ካለዎት ምንም አይሰረዝም።",
+  "backupRestored": "ምትኬው ወደነበረበት ተመልሷል።",
+  "backupInvalid": "ይህ ፋይል የWhatStock ምትኬ አይደለም።"
 }

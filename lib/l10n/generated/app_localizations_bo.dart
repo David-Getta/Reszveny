@@ -2208,4 +2208,27 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get rangeYtd => 'ད་ལོ';
+
+  @override
+  String get backupTitle => 'གྲབས་ཉར།';
+
+  @override
+  String get backupSave => 'གྲབས་ཉར་ཉར་ཚགས།';
+
+  @override
+  String get backupSaveHint =>
+      'ཁྱེད་ཀྱི་དགའ་མོས་དང་། ཐོ་ཡིག མ་འཇོག་ཚོགས་སྡེབ། ཉེན་བརྡ། ཟིན་ཐོ་བཅས་ཡིག་ཆ་གཅིག་གི་ནང་།';
+
+  @override
+  String get backupRestore => 'གྲབས་ཉར་ནས་སླར་གསོ།';
+
+  @override
+  String get backupRestoreHint =>
+      'ཡིག་ཆའི་ནང་ཡོད་པ་ཁ་སྣོན་བྱེད། ཁྱེད་ལ་ད་ལྟ་ཡོད་པ་གང་ཡང་མི་སུབ།';
+
+  @override
+  String get backupRestored => 'གྲབས་ཉར་སླར་གསོ་བྱས་ཟིན།';
+
+  @override
+  String get backupInvalid => 'ཡིག་ཆ་འདི་ WhatStock གྱི་གྲབས་ཉར་མིན།';
 }

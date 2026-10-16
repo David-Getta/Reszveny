@@ -2230,4 +2230,28 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'Polokelo ya tshehetso';
+
+  @override
+  String get backupSave => 'Boloka polokelo ya tshehetso';
+
+  @override
+  String get backupSaveHint =>
+      'Tseo o di ratang, manane, potefolio, ditsebiso le dintlha tsa hao faeleng e le nngwe.';
+
+  @override
+  String get backupRestore => 'Kgutlisa ho tswa polokelong ya tshehetso';
+
+  @override
+  String get backupRestoreHint =>
+      'E eketsa se faeleng; ha ho letho leo o nang le lona hona jwale le hlakolwang.';
+
+  @override
+  String get backupRestored => 'Polokelo ya tshehetso e kgutlisitswe.';
+
+  @override
+  String get backupInvalid =>
+      'Faele ena hase polokelo ya tshehetso ya WhatStock.';
 }

@@ -593,5 +593,12 @@
   "watchListAddTo": "목록에 추가",
   "watchListEmpty": "이 목록에 아직 종목이 없습니다. 종목 옆의 목록 버튼을 탭하여 추가하세요.",
   "portfolioAskTitle": "내 포트폴리오에 대한 질문",
-  "rangeYtd": "연초 이후"
+  "rangeYtd": "연초 이후",
+  "backupTitle": "백업",
+  "backupSave": "백업 저장",
+  "backupSaveHint": "즐겨찾기, 목록, 포트폴리오, 알림, 메모를 하나의 파일에 담습니다.",
+  "backupRestore": "백업에서 복원",
+  "backupRestoreHint": "파일에 있는 내용을 추가하며, 지금 있는 데이터는 하나도 삭제되지 않습니다.",
+  "backupRestored": "백업을 복원했습니다.",
+  "backupInvalid": "이 파일은 WhatStock 백업이 아닙니다."
 }

@@ -2187,4 +2187,26 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get rangeYtd => 'ዘንድሮ';
+
+  @override
+  String get backupTitle => 'ምትኬ';
+
+  @override
+  String get backupSave => 'ምትኬ አስቀምጥ';
+
+  @override
+  String get backupSaveHint =>
+      'ተወዳጆችዎ፣ ዝርዝሮችዎ፣ ፖርትፎሊዮዎ፣ ማንቂያዎችዎ እና ማስታወሻዎችዎ በአንድ ፋይል ውስጥ።';
+
+  @override
+  String get backupRestore => 'ከምትኬ ወደነበረበት መልስ';
+
+  @override
+  String get backupRestoreHint => 'በፋይሉ ውስጥ ያለውን ያክላል፤ አሁን ካለዎት ምንም አይሰረዝም።';
+
+  @override
+  String get backupRestored => 'ምትኬው ወደነበረበት ተመልሷል።';
+
+  @override
+  String get backupInvalid => 'ይህ ፋይል የWhatStock ምትኬ አይደለም።';
 }

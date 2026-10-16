@@ -593,5 +593,12 @@
   "watchListAddTo": "Bakisa na liste",
   "watchListEmpty": "Aksio moko te ezali naino na liste oyo. Finá bouton ya liste pembeni ya aksio mpo na kobakisa yango.",
   "portfolioAskTitle": "Mituna na ntina ya portefeuille na yo",
-  "rangeYtd": "Mobu oyo"
+  "rangeYtd": "Mobu oyo",
+  "backupTitle": "Kopi ya kobomba",
+  "backupSave": "Bomba kopi",
+  "backupSaveHint": "Oyo olingaka, ba liste, portefeuille, makebisi mpe ba note na yo na fisyé moko.",
+  "backupRestore": "Zongisa uta na kopi ya kobomba",
+  "backupRestoreHint": "Ebakisaka oyo ezali na fisyé; eloko moko te ya oyo ozali na yango sikoyo ekolongwa.",
+  "backupRestored": "Kopi ya kobomba ezongisami.",
+  "backupInvalid": "Fisyé oyo ezali kopi ya kobomba ya WhatStock te."
 }

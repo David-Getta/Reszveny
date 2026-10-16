@@ -2220,4 +2220,27 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Tänä v.';
+
+  @override
+  String get backupTitle => 'Varmuuskopio';
+
+  @override
+  String get backupSave => 'Tallenna varmuuskopio';
+
+  @override
+  String get backupSaveHint =>
+      'Suosikkisi, listasi, salkkusi, hälytyksesi ja muistiinpanosi yhdessä tiedostossa.';
+
+  @override
+  String get backupRestore => 'Palauta varmuuskopiosta';
+
+  @override
+  String get backupRestoreHint =>
+      'Lisää tiedoston sisällön; mitään nykyisistä tiedoistasi ei poisteta.';
+
+  @override
+  String get backupRestored => 'Varmuuskopio palautettu.';
+
+  @override
+  String get backupInvalid => 'Tämä tiedosto ei ole WhatStock-varmuuskopio.';
 }

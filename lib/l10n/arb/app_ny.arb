@@ -593,5 +593,12 @@
   "watchListAddTo": "Onjezani ku mndandanda",
   "watchListEmpty": "Palibe masheya pa mndandandawu pano. Dinani batani la mndandanda pafupi ndi sheya kuti muwonjezere.",
   "portfolioAskTitle": "Mafunso okhudza masheya anu",
-  "rangeYtd": "YTD"
+  "rangeYtd": "YTD",
+  "backupTitle": "Zosunga zobwezera",
+  "backupSave": "Sungani zosunga zobwezera",
+  "backupSaveHint": "Zokondedwa zanu, mindandanda, masheya, zidziwitso ndi zolemba mu fayilo imodzi.",
+  "backupRestore": "Bwezeretsani kuchokera ku zosunga",
+  "backupRestoreHint": "Imawonjezera zomwe zili mu fayilo; palibe chomwe muli nacho tsopano chimene chichotsedwa.",
+  "backupRestored": "Zosunga zabwezeretsedwa.",
+  "backupInvalid": "Fayilo iyi si zosunga za WhatStock."
 }

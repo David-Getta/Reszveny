@@ -593,5 +593,12 @@
   "watchListAddTo": "Fa ka nhyehyɛe bi ho",
   "watchListEmpty": "Stɔk biara nni nhyehyɛe yi mu da. Mia nhyehyɛe bɔtɔn a ɛbɛn stɔk bi na fa ka ho.",
   "portfolioAskTitle": "Nsɛmmisa fa wo nkyɛfa ho",
-  "rangeYtd": "Afe yi"
+  "rangeYtd": "Afe yi",
+  "backupTitle": "Akorae",
+  "backupSave": "Kora wo nneɛma",
+  "backupSaveHint": "Nea wopɛ, wo nhyehyɛe, wo nkyɛfa, wo kɔkɔbɔ ne wo nkyerɛwee wɔ fael baako mu.",
+  "backupRestore": "San fa fi akorae mu",
+  "backupRestoreHint": "Ɛde nea ɛwɔ fael no mu ka ho; wɔmpopa biribiara a wowɔ seesei.",
+  "backupRestored": "Wɔasan de akorae no aba.",
+  "backupInvalid": "Saa fael yi nyɛ WhatStock akorae."
 }

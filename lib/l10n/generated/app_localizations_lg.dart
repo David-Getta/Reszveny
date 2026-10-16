@@ -2229,4 +2229,27 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'Kkopi ey\'obukuumi';
+
+  @override
+  String get backupSave => 'Tereka kkopi ey\'obukuumi';
+
+  @override
+  String get backupSaveHint =>
+      'By\'oyagala, enkalala zo, emigabo gyo, okulabula n\'ebiwandiiko byo mu fayiro emu.';
+
+  @override
+  String get backupRestore => 'Zzaawo okuva mu kkopi ey\'obukuumi';
+
+  @override
+  String get backupRestoreHint =>
+      'Kyongerako ebiri mu fayiro; tewali na kimu ky\'olina kati ekijjibwawo.';
+
+  @override
+  String get backupRestored => 'Kkopi ey\'obukuumi ezziddwawo.';
+
+  @override
+  String get backupInvalid => 'Fayiro eno si kkopi ey\'obukuumi eya WhatStock.';
 }

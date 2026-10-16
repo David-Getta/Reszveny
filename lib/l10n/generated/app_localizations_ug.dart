@@ -2221,4 +2221,27 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get rangeYtd => 'بۇ يىل';
+
+  @override
+  String get backupTitle => 'زاپاسلاش';
+
+  @override
+  String get backupSave => 'زاپاس ساقلاش';
+
+  @override
+  String get backupSaveHint =>
+      'يىغقۇچىڭىز، تىزىملىكلىرىڭىز، مەبلەغ بىرىكمىڭىز، ئاگاھلاندۇرۇشلىرىڭىز ۋە خاتىرىلىرىڭىز بىر ھۆججەتتە.';
+
+  @override
+  String get backupRestore => 'زاپاستىن ئەسلىگە كەلتۈرۈش';
+
+  @override
+  String get backupRestoreHint =>
+      'ھۆججەتتىكىلەرنى قوشىدۇ؛ ھازىر بار نەرسىلىرىڭىزدىن ھېچنېمە ئۆچۈرۈلمەيدۇ.';
+
+  @override
+  String get backupRestored => 'زاپاس ئەسلىگە كەلتۈرۈلدى.';
+
+  @override
+  String get backupInvalid => 'بۇ ھۆججەت WhatStock زاپىسى ئەمەس.';
 }

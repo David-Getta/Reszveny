@@ -2218,4 +2218,27 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YBB';
+
+  @override
+  String get backupTitle => 'Yedekleme';
+
+  @override
+  String get backupSave => 'Yedek kaydet';
+
+  @override
+  String get backupSaveHint =>
+      'Favorileriniz, listeleriniz, portföyünüz, alarmlarınız ve notlarınız tek bir dosyada.';
+
+  @override
+  String get backupRestore => 'Yedekten geri yükle';
+
+  @override
+  String get backupRestoreHint =>
+      'Dosyadakileri ekler; şu anki verilerinizden hiçbiri silinmez.';
+
+  @override
+  String get backupRestored => 'Yedek geri yüklendi.';
+
+  @override
+  String get backupInvalid => 'Bu dosya bir WhatStock yedeği değil.';
 }

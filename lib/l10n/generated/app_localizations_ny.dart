@@ -2225,4 +2225,27 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'Zosunga zobwezera';
+
+  @override
+  String get backupSave => 'Sungani zosunga zobwezera';
+
+  @override
+  String get backupSaveHint =>
+      'Zokondedwa zanu, mindandanda, masheya, zidziwitso ndi zolemba mu fayilo imodzi.';
+
+  @override
+  String get backupRestore => 'Bwezeretsani kuchokera ku zosunga';
+
+  @override
+  String get backupRestoreHint =>
+      'Imawonjezera zomwe zili mu fayilo; palibe chomwe muli nacho tsopano chimene chichotsedwa.';
+
+  @override
+  String get backupRestored => 'Zosunga zabwezeretsedwa.';
+
+  @override
+  String get backupInvalid => 'Fayilo iyi si zosunga za WhatStock.';
 }

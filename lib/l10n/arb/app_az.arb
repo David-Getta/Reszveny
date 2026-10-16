@@ -593,5 +593,12 @@
   "watchListAddTo": "Siyahıya əlavə et",
   "watchListEmpty": "Bu siyahıda hələ səhm yoxdur. Əlavə etmək üçün səhmin yanındakı siyahı düyməsinə toxunun.",
   "portfolioAskTitle": "Portfeliniz haqqında suallar",
-  "rangeYtd": "Bu il"
+  "rangeYtd": "Bu il",
+  "backupTitle": "Ehtiyat nüsxə",
+  "backupSave": "Ehtiyat nüsxəni saxla",
+  "backupSaveHint": "Seçilmişləriniz, siyahılarınız, portfeliniz, bildirişləriniz və qeydləriniz bir faylda.",
+  "backupRestore": "Ehtiyat nüsxədən bərpa et",
+  "backupRestoreHint": "Fayldakıları əlavə edir; hazırkı məlumatlarınızdan heç nə silinmir.",
+  "backupRestored": "Ehtiyat nüsxə bərpa edildi.",
+  "backupInvalid": "Bu fayl WhatStock ehtiyat nüsxəsi deyil."
 }

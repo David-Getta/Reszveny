@@ -593,5 +593,12 @@
   "watchListAddTo": "Føj til en liste",
   "watchListEmpty": "Der er endnu ingen aktier på denne liste. Tryk på listeknappen ud for en aktie for at tilføje den.",
   "portfolioAskTitle": "Spørgsmål om din portefølje",
-  "rangeYtd": "I år"
+  "rangeYtd": "I år",
+  "backupTitle": "Sikkerhedskopi",
+  "backupSave": "Gem en sikkerhedskopi",
+  "backupSaveHint": "Dine favoritter, lister, portefølje, alarmer og noter i én fil.",
+  "backupRestore": "Gendan fra en sikkerhedskopi",
+  "backupRestoreHint": "Tilføjer det, der er i filen; intet af det, du har nu, slettes.",
+  "backupRestored": "Sikkerhedskopien er gendannet.",
+  "backupInvalid": "Denne fil er ikke en WhatStock-sikkerhedskopi."
 }

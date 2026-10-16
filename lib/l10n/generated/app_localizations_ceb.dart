@@ -2228,4 +2228,27 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'Backup';
+
+  @override
+  String get backupSave => 'I-save ang backup';
+
+  @override
+  String get backupSaveHint =>
+      'Ang imong mga paborito, lista, portfolio, alerto ug nota sa usa ka file.';
+
+  @override
+  String get backupRestore => 'I-restore gikan sa backup';
+
+  @override
+  String get backupRestoreHint =>
+      'Idugang ang anaa sa file; walay mapapas sa imong naa karon.';
+
+  @override
+  String get backupRestored => 'Na-restore ang backup.';
+
+  @override
+  String get backupInvalid => 'Kini nga file dili WhatStock backup.';
 }

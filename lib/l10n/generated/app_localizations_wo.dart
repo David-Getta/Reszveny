@@ -2213,4 +2213,27 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get rangeYtd => 'At mii';
+
+  @override
+  String get backupTitle => 'Denc ngir kaaraange';
+
+  @override
+  String get backupSave => 'Denc ab kaaraange';
+
+  @override
+  String get backupSaveHint =>
+      'Yi nga gënal, sa limm yi, sa aksiyoŋ yi, sa artu yi ak sa notu yi ci benn fiise.';
+
+  @override
+  String get backupRestore => 'Delloo ci kaaraange bi';
+
+  @override
+  String get backupRestoreHint =>
+      'Dafay yokk li nekk ci fiise bi; dara ci li nga am léegi duñu ko far.';
+
+  @override
+  String get backupRestored => 'Kaaraange bi delsi na.';
+
+  @override
+  String get backupInvalid => 'Fiise bii du kaaraangeb WhatStock.';
 }

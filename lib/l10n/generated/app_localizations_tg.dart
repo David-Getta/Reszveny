@@ -2220,4 +2220,27 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Имсол';
+
+  @override
+  String get backupTitle => 'Нусхаи эҳтиётӣ';
+
+  @override
+  String get backupSave => 'Нигоҳ доштани нусхаи эҳтиётӣ';
+
+  @override
+  String get backupSaveHint =>
+      'Интихобшудаҳо, рӯйхатҳо, портфел, огоҳиҳо ва қайдҳои шумо дар як файл.';
+
+  @override
+  String get backupRestore => 'Барқарор кардан аз нусхаи эҳтиётӣ';
+
+  @override
+  String get backupRestoreHint =>
+      'Он чиро, ки дар файл аст, илова мекунад; аз маълумоти ҳозираи шумо чизе нест намешавад.';
+
+  @override
+  String get backupRestored => 'Нусхаи эҳтиётӣ барқарор шуд.';
+
+  @override
+  String get backupInvalid => 'Ин файл нусхаи эҳтиётии WhatStock нест.';
 }

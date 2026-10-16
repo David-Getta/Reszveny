@@ -593,5 +593,12 @@
   "watchListAddTo": "Yokk ci limm",
   "watchListEmpty": "Amagul benn aksiyoŋ ci limm bii. Bësal butoŋu limm bi ci wetu aksiyoŋ bi ngir yokk ko.",
   "portfolioAskTitle": "Laaj yi ci sa aksiyoŋ yi",
-  "rangeYtd": "At mii"
+  "rangeYtd": "At mii",
+  "backupTitle": "Denc ngir kaaraange",
+  "backupSave": "Denc ab kaaraange",
+  "backupSaveHint": "Yi nga gënal, sa limm yi, sa aksiyoŋ yi, sa artu yi ak sa notu yi ci benn fiise.",
+  "backupRestore": "Delloo ci kaaraange bi",
+  "backupRestoreHint": "Dafay yokk li nekk ci fiise bi; dara ci li nga am léegi duñu ko far.",
+  "backupRestored": "Kaaraange bi delsi na.",
+  "backupInvalid": "Fiise bii du kaaraangeb WhatStock."
 }

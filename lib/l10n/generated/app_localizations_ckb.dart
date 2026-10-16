@@ -2219,4 +2219,27 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get rangeYtd => 'ئەمساڵ';
+
+  @override
+  String get backupTitle => 'یەدەگ';
+
+  @override
+  String get backupSave => 'پاشەکەوتکردنی یەدەگ';
+
+  @override
+  String get backupSaveHint =>
+      'دڵخوازەکان، لیستەکان، پۆرتفۆلیۆ، ئاگادارییەکان و تێبینییەکانت لە یەک فایلدا.';
+
+  @override
+  String get backupRestore => 'گەڕاندنەوە لە یەدەگ';
+
+  @override
+  String get backupRestoreHint =>
+      'ئەوەی لە فایلەکەدایە زیاد دەکات؛ هیچ شتێک لەوەی ئێستا هەتە ناسڕێتەوە.';
+
+  @override
+  String get backupRestored => 'یەدەگەکە گەڕێندرایەوە.';
+
+  @override
+  String get backupInvalid => 'ئەم فایلە یەدەگی WhatStock نییە.';
 }

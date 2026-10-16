@@ -593,5 +593,12 @@
   "watchListAddTo": "Voeg by 'n lys",
   "watchListEmpty": "Nog geen aandele in hierdie lys nie. Tik op die lysknoppie langs 'n aandeel om dit by te voeg.",
   "portfolioAskTitle": "Vrae oor jou portefeulje",
-  "rangeYtd": "YTD"
+  "rangeYtd": "YTD",
+  "backupTitle": "Rugsteun",
+  "backupSave": "Stoor ’n rugsteun",
+  "backupSaveHint": "Jou gunstelinge, lyste, portefeulje, waarskuwings en notas in een lêer.",
+  "backupRestore": "Herstel vanaf ’n rugsteun",
+  "backupRestoreHint": "Voeg by wat in die lêer is; niks wat jy nou het, word uitgevee nie.",
+  "backupRestored": "Rugsteun herstel.",
+  "backupInvalid": "Hierdie lêer is nie ’n WhatStock-rugsteun nie."
 }

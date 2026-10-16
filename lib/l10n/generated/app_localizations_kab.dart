@@ -2217,4 +2217,27 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Aseggas-a';
+
+  @override
+  String get backupTitle => 'Aḥraz';
+
+  @override
+  String get backupSave => 'Sekles aḥraz';
+
+  @override
+  String get backupSaveHint =>
+      'Ismenyifen-ik, tibdarin-ik, aqrab-ik, ilɣa-k d tezmilin-ik deg yiwen ufaylu.';
+
+  @override
+  String get backupRestore => 'Err-d seg uḥraz';
+
+  @override
+  String get backupRestoreHint =>
+      'Yerennu ayen yellan deg ufaylu; ulac acu ara yettwakksen seg wayen i tesɛiḍ tura.';
+
+  @override
+  String get backupRestored => 'Aḥraz yuɣal-d.';
+
+  @override
+  String get backupInvalid => 'Afaylu-a mačči d aḥraz n WhatStock.';
 }

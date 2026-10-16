@@ -2282,4 +2282,27 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'Kopia zapasowa';
+
+  @override
+  String get backupSave => 'Zapisz kopię zapasową';
+
+  @override
+  String get backupSaveHint =>
+      'Twoje ulubione, listy, portfel, alerty i notatki w jednym pliku.';
+
+  @override
+  String get backupRestore => 'Przywróć z kopii zapasowej';
+
+  @override
+  String get backupRestoreHint =>
+      'Dodaje zawartość pliku; nic z tego, co masz teraz, nie zostanie usunięte.';
+
+  @override
+  String get backupRestored => 'Przywrócono kopię zapasową.';
+
+  @override
+  String get backupInvalid => 'Ten plik nie jest kopią zapasową WhatStock.';
 }

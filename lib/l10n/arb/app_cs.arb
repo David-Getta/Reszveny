@@ -593,5 +593,12 @@
   "watchListAddTo": "Přidat do seznamu",
   "watchListEmpty": "V tomto seznamu zatím nejsou žádné akcie. Akcii přidáte klepnutím na tlačítko seznamu vedle ní.",
   "portfolioAskTitle": "Otázky k vašemu portfoliu",
-  "rangeYtd": "Letos"
+  "rangeYtd": "Letos",
+  "backupTitle": "Záloha",
+  "backupSave": "Uložit zálohu",
+  "backupSaveHint": "Vaše oblíbené, seznamy, portfolio, upozornění a poznámky v jednom souboru.",
+  "backupRestore": "Obnovit ze zálohy",
+  "backupRestoreHint": "Přidá obsah souboru; nic z vašich současných dat se nesmaže.",
+  "backupRestored": "Záloha obnovena.",
+  "backupInvalid": "Tento soubor není záloha WhatStock."
 }

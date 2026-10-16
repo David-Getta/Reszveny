@@ -593,5 +593,12 @@
   "watchListAddTo": "Listához adás",
   "watchListEmpty": "Ezen a listán még nincs részvény. A részvény melletti lista gombbal veheted fel.",
   "portfolioAskTitle": "Kérdések a portfóliódról",
-  "rangeYtd": "Idén"
+  "rangeYtd": "Idén",
+  "backupTitle": "Biztonsági mentés",
+  "backupSave": "Mentés fájlba",
+  "backupSaveHint": "A kedvenceid, listáid, portfóliód, riasztásaid és jegyzeteid egy fájlban.",
+  "backupRestore": "Visszaállítás mentésből",
+  "backupRestoreHint": "Hozzáadja, ami a fájlban van; a mostani adataidból semmi nem törlődik.",
+  "backupRestored": "A mentés visszaállítva.",
+  "backupInvalid": "Ez a fájl nem WhatStock-mentés."
 }

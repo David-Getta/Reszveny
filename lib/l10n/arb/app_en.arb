@@ -1721,5 +1721,12 @@
   "rangeYtd": "YTD",
   "@rangeYtd": {
     "description": "Very short label: return since the start of this year (year to date), next to 1W, 1M, 3M, 1Y, 5Y."
-  }
+  },
+  "backupTitle": "Backup",
+  "backupSave": "Save a backup",
+  "backupSaveHint": "Your favorites, lists, portfolio, alerts and notes in one file.",
+  "backupRestore": "Restore from a backup",
+  "backupRestoreHint": "Adds what is in the file; nothing you have now is deleted.",
+  "backupRestored": "Backup restored.",
+  "backupInvalid": "This file is not a WhatStock backup."
 }

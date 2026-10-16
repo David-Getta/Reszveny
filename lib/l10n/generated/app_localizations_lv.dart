@@ -2258,4 +2258,27 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Šogad';
+
+  @override
+  String get backupTitle => 'Dublējums';
+
+  @override
+  String get backupSave => 'Saglabāt dublējumu';
+
+  @override
+  String get backupSaveHint =>
+      'Jūsu izlase, saraksti, portfelis, brīdinājumi un piezīmes vienā failā.';
+
+  @override
+  String get backupRestore => 'Atjaunot no dublējuma';
+
+  @override
+  String get backupRestoreHint =>
+      'Pievieno faila saturu; nekas no jūsu pašreizējiem datiem netiek dzēsts.';
+
+  @override
+  String get backupRestored => 'Dublējums atjaunots.';
+
+  @override
+  String get backupInvalid => 'Šis fails nav WhatStock dublējums.';
 }

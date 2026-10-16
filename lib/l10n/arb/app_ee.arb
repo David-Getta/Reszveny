@@ -593,5 +593,12 @@
   "watchListAddTo": "Tsɔe kpe ɖe xexlẽdzesi aɖe ŋu",
   "watchListEmpty": "Sitɔk aɖeke mele xexlẽdzesi sia me haɖe o. Zi xexlẽdzesi ƒe dzesi si le sitɔk aɖe xa be nàtsɔe akpe ɖe eŋu.",
   "portfolioAskTitle": "Nyabiasewo tso wò akpawo ŋu",
-  "rangeYtd": "Ƒe sia"
+  "rangeYtd": "Ƒe sia",
+  "backupTitle": "Kɔpi si wodzra ɖo",
+  "backupSave": "Dzra kɔpi ɖo",
+  "backupSaveHint": "Wò lɔlɔ̃tɔwo, xexlẽdzesiwo, akpawo, nuxlɔ̃amewo kple nuŋlɔɖiwo le faɛl ɖeka me.",
+  "backupRestore": "Gbugbɔe tso kɔpi si wodzra ɖo me",
+  "backupRestoreHint": "Etsɔa nu siwo le faɛl la me kpena ɖe eŋu; womatutu naneke le nu siwo le asiwò fifia la me o.",
+  "backupRestored": "Wogbugbɔ kɔpi la vɛ.",
+  "backupInvalid": "Faɛl sia menye WhatStock kɔpi si wodzra ɖo o."
 }

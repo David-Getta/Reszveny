@@ -2217,4 +2217,27 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'ব্যাকআপ';
+
+  @override
+  String get backupSave => 'ব্যাকআপ সেভ করুন';
+
+  @override
+  String get backupSaveHint =>
+      'আপনার পছন্দের, তালিকা, পোর্টফোলিও, সতর্কতা ও নোট একটি ফাইলে।';
+
+  @override
+  String get backupRestore => 'ব্যাকআপ থেকে পুনরুদ্ধার করুন';
+
+  @override
+  String get backupRestoreHint =>
+      'ফাইলে যা আছে তা যোগ করে; আপনার এখনকার কিছুই মুছে যায় না।';
+
+  @override
+  String get backupRestored => 'ব্যাকআপ পুনরুদ্ধার করা হয়েছে।';
+
+  @override
+  String get backupInvalid => 'এই ফাইলটি WhatStock ব্যাকআপ নয়।';
 }

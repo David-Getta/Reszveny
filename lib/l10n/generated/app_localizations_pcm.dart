@@ -2218,4 +2218,27 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'Backup';
+
+  @override
+  String get backupSave => 'Save backup';
+
+  @override
+  String get backupSaveHint =>
+      'Your favourites, lists, portfolio, alerts and notes for one file.';
+
+  @override
+  String get backupRestore => 'Restore from backup';
+
+  @override
+  String get backupRestoreHint =>
+      'E go add wetin dey di file; nothing wey you get now go delete.';
+
+  @override
+  String get backupRestored => 'Backup don restore.';
+
+  @override
+  String get backupInvalid => 'Dis file no be WhatStock backup.';
 }

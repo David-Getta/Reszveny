@@ -2223,4 +2223,28 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get rangeYtd => 'No ano';
+
+  @override
+  String get backupTitle => 'Cópia de segurança';
+
+  @override
+  String get backupSave => 'Guardar cópia de segurança';
+
+  @override
+  String get backupSaveHint =>
+      'Os seus favoritos, listas, carteira, alertas e notas num único ficheiro.';
+
+  @override
+  String get backupRestore => 'Restaurar de uma cópia de segurança';
+
+  @override
+  String get backupRestoreHint =>
+      'Adiciona o que está no ficheiro; nada do que tem agora é apagado.';
+
+  @override
+  String get backupRestored => 'Cópia de segurança restaurada.';
+
+  @override
+  String get backupInvalid =>
+      'Este ficheiro não é uma cópia de segurança do WhatStock.';
 }

@@ -2220,4 +2220,27 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Îsal';
+
+  @override
+  String get backupTitle => 'Paşeke';
+
+  @override
+  String get backupSave => 'Paşekeyê tomar bike';
+
+  @override
+  String get backupSaveHint =>
+      'Bijareyên te, lîsteyên te, portfolyoya te, hişyariyên te û notên te di pelekî de.';
+
+  @override
+  String get backupRestore => 'Ji paşekeyê vegerîne';
+
+  @override
+  String get backupRestoreHint =>
+      'Tiştên di pelê de lê zêde dike; ji tiştên ku niha li ba te ne tiştek nayê jêbirin.';
+
+  @override
+  String get backupRestored => 'Paşeke hate vegerandin.';
+
+  @override
+  String get backupInvalid => 'Ev pel ne paşekeyeke WhatStock e.';
 }

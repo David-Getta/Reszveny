@@ -2214,4 +2214,27 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'બેકઅપ';
+
+  @override
+  String get backupSave => 'બેકઅપ સેવ કરો';
+
+  @override
+  String get backupSaveHint =>
+      'તમારા મનપસંદ, યાદીઓ, પોર્ટફોલિયો, અલર્ટ અને નોંધો એક ફાઇલમાં.';
+
+  @override
+  String get backupRestore => 'બેકઅપમાંથી રિસ્ટોર કરો';
+
+  @override
+  String get backupRestoreHint =>
+      'ફાઇલમાં જે છે તે ઉમેરે છે; તમારી પાસે અત્યારે જે છે તેમાંથી કશું ડિલીટ થતું નથી.';
+
+  @override
+  String get backupRestored => 'બેકઅપ રિસ્ટોર થયો.';
+
+  @override
+  String get backupInvalid => 'આ ફાઇલ WhatStock બેકઅપ નથી.';
 }

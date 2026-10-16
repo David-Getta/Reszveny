@@ -593,5 +593,12 @@
   "watchListAddTo": "Ɓeydu e doggol",
   "watchListEmpty": "Alaa hay sitok e ndee doggol tawo. Ñoƒƒu butoŋ doggol takko sitok ngam ɓeydude ɗum.",
   "portfolioAskTitle": "Naamne dow aksiyoŋ maa",
-  "rangeYtd": "Hikka"
+  "rangeYtd": "Hikka",
+  "backupTitle": "Kopi danndaandi",
+  "backupSave": "Danndu kopi",
+  "backupSaveHint": "Cuɓaaɗe maa, dogge maa, aksiyoŋ maa, tintine maa e binndi maa e fiyannde wootere.",
+  "backupRestore": "Artir iwde e kopi danndaandi",
+  "backupRestoreHint": "Ɓeydata ko woni e fiyannde ndee; alaa fus ko woodanaa jooni momtetee.",
+  "backupRestored": "Kopi danndaandi ndi artiraama.",
+  "backupInvalid": "Ndee fiyannde wonaa kopi danndaandi WhatStock."
 }

@@ -2218,4 +2218,27 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'بیک اپ';
+
+  @override
+  String get backupSave => 'بیک اپ محفوظ کریں';
+
+  @override
+  String get backupSaveHint =>
+      'آپ کے پسندیدہ، فہرستیں، پورٹ فولیو، الرٹس اور نوٹس ایک فائل میں۔';
+
+  @override
+  String get backupRestore => 'بیک اپ سے بحال کریں';
+
+  @override
+  String get backupRestoreHint =>
+      'فائل میں موجود چیزیں شامل کرتا ہے؛ آپ کے پاس اس وقت موجود کچھ بھی حذف نہیں ہوتا۔';
+
+  @override
+  String get backupRestored => 'بیک اپ بحال ہو گیا۔';
+
+  @override
+  String get backupInvalid => 'یہ فائل WhatStock بیک اپ نہیں ہے۔';
 }

@@ -2225,4 +2225,28 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'Kopi wa kulama';
+
+  @override
+  String get backupSave => 'Lama kopi';
+
+  @override
+  String get backupSaveHint =>
+      'Biudi musue biebe, ba liste, portefeuille, alerte ne mifundu yebe mu fichier umue.';
+
+  @override
+  String get backupRestore => 'Pingaja ku kopi wa kulama';
+
+  @override
+  String get backupRestoreHint =>
+      'Udi usakidila bidi mu fichier; kakuena tshintu tshia biudi nabi katataka tshidi tshijimina to.';
+
+  @override
+  String get backupRestored => 'Kopi wa kulama mmupingaja.';
+
+  @override
+  String get backupInvalid =>
+      'Fichier eu ki mmukopi wa kulama wa WhatStock to.';
 }

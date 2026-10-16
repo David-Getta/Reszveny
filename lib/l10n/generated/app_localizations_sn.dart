@@ -2224,4 +2224,27 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'Bhakapu';
+
+  @override
+  String get backupSave => 'Chengetedza bhakapu';
+
+  @override
+  String get backupSaveHint =>
+      'Zvaunofarira, marondedzero, potiforiyo, zviziviso nezvinyorwa zvako mufaira imwe.';
+
+  @override
+  String get backupRestore => 'Dzorera kubva kubhakapu';
+
+  @override
+  String get backupRestoreHint =>
+      'Inowedzera zviri mufaira; hapana chaunacho izvozvi chinodzimwa.';
+
+  @override
+  String get backupRestored => 'Bhakapu yadzorerwa.';
+
+  @override
+  String get backupInvalid => 'Faira iyi haisi bhakapu yeWhatStock.';
 }

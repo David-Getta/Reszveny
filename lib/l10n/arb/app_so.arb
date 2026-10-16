@@ -593,5 +593,12 @@
   "watchListAddTo": "Ku dar liis",
   "watchListEmpty": "Liiskan weli saami kuma jiro. Taabo badhanka liiska ee ku xiga saamiga si aad ugu darto.",
   "portfolioAskTitle": "Su'aalo ku saabsan portfoliyadaada",
-  "rangeYtd": "Sanadkan"
+  "rangeYtd": "Sanadkan",
+  "backupTitle": "Kayd nuqul ah",
+  "backupSave": "Kaydi nuqul kayd ah",
+  "backupSaveHint": "Kuwa aad jeceshahay, liisaskaaga, portfoliyadaada, digniinahaaga iyo qoraalladaada hal fayl.",
+  "backupRestore": "Ka soo celi nuqulka kaydka",
+  "backupRestoreHint": "Waxay ku daraysaa waxa faylka ku jira; waxba lagama tirtirayo waxa aad hadda haysato.",
+  "backupRestored": "Nuqulka kaydka waa la soo celiyay.",
+  "backupInvalid": "Faylkani maaha nuqul kayd ah oo WhatStock."
 }

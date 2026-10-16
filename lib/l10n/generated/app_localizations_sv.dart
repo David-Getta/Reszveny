@@ -2219,4 +2219,28 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get rangeYtd => 'I år';
+
+  @override
+  String get backupTitle => 'Säkerhetskopia';
+
+  @override
+  String get backupSave => 'Spara säkerhetskopia';
+
+  @override
+  String get backupSaveHint =>
+      'Dina favoriter, listor, portfölj, larm och anteckningar i en fil.';
+
+  @override
+  String get backupRestore => 'Återställ från säkerhetskopia';
+
+  @override
+  String get backupRestoreHint =>
+      'Lägger till det som finns i filen; inget du har nu raderas.';
+
+  @override
+  String get backupRestored => 'Säkerhetskopian har återställts.';
+
+  @override
+  String get backupInvalid =>
+      'Den här filen är inte en WhatStock-säkerhetskopia.';
 }

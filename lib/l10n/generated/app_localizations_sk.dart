@@ -2279,4 +2279,27 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Tento rok';
+
+  @override
+  String get backupTitle => 'Záloha';
+
+  @override
+  String get backupSave => 'Uložiť zálohu';
+
+  @override
+  String get backupSaveHint =>
+      'Vaše obľúbené, zoznamy, portfólio, upozornenia a poznámky v jednom súbore.';
+
+  @override
+  String get backupRestore => 'Obnoviť zo zálohy';
+
+  @override
+  String get backupRestoreHint =>
+      'Pridá to, čo je v súbore; nič z toho, čo máte teraz, sa nevymaže.';
+
+  @override
+  String get backupRestored => 'Záloha bola obnovená.';
+
+  @override
+  String get backupInvalid => 'Tento súbor nie je záloha WhatStock.';
 }

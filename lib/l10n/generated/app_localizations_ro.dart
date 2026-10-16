@@ -2255,4 +2255,27 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'Backup';
+
+  @override
+  String get backupSave => 'Salvează un backup';
+
+  @override
+  String get backupSaveHint =>
+      'Favoritele, listele, portofoliul, alertele și notițele tale într-un singur fișier.';
+
+  @override
+  String get backupRestore => 'Restaurează dintr-un backup';
+
+  @override
+  String get backupRestoreHint =>
+      'Adaugă ce este în fișier; nimic din ce ai acum nu se șterge.';
+
+  @override
+  String get backupRestored => 'Backup restaurat.';
+
+  @override
+  String get backupInvalid => 'Acest fișier nu este un backup WhatStock.';
 }

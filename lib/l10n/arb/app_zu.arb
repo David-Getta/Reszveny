@@ -593,5 +593,12 @@
   "watchListAddTo": "Engeza ohlwini",
   "watchListEmpty": "Awekho amasheya kulolu hlu okwamanje. Thepha inkinobho yohlu eduze kwesheya ukuze ulengeze.",
   "portfolioAskTitle": "Imibuzo ngephothifoliyo yakho",
-  "rangeYtd": "YTD"
+  "rangeYtd": "YTD",
+  "backupTitle": "Isipele",
+  "backupSave": "Londoloza isipele",
+  "backupSaveHint": "Izintandokazi zakho, uhlu, iphothifoliyo, izexwayiso namanothi akho efayeleni elilodwa.",
+  "backupRestore": "Buyisela kusuka esipeleni",
+  "backupRestoreHint": "Yengeza okusefayeleni; akukho lutho onalo manje olusulwayo.",
+  "backupRestored": "Isipele sibuyiselwe.",
+  "backupInvalid": "Leli fayela akusona isipele se-WhatStock."
 }

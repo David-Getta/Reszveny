@@ -593,5 +593,12 @@
   "watchListAddTo": "Idugang sa listahan",
   "watchListEmpty": "Wala pa sing stock sa sini nga listahan. I-tap ang button sang listahan sa tupad sang stock agod idugang ini.",
   "portfolioAskTitle": "Mga pamangkot parte sa imo portfolio",
-  "rangeYtd": "YTD"
+  "rangeYtd": "YTD",
+  "backupTitle": "Backup",
+  "backupSave": "I-save ang backup",
+  "backupSaveHint": "Ang imo mga paborito, listahan, portfolio, alerto kag nota sa isa ka file.",
+  "backupRestore": "I-restore halin sa backup",
+  "backupRestoreHint": "Idugang ang yara sa file; wala sang mapapas sa imo yara subong.",
+  "backupRestored": "Na-restore ang backup.",
+  "backupInvalid": "Ini nga file indi WhatStock backup."
 }

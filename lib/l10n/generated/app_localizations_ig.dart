@@ -2214,4 +2214,27 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'Ndabere';
+
+  @override
+  String get backupSave => 'Chekwaa ndabere';
+
+  @override
+  String get backupSaveHint =>
+      'Ọkacha mmasị gị, ndepụta gị, portfolio gị, ọkwa gị na ndetu gị n\'otu faịlụ.';
+
+  @override
+  String get backupRestore => 'Weghachite site na ndabere';
+
+  @override
+  String get backupRestoreHint =>
+      'Ọ na-agbakwunye ihe dị na faịlụ ahụ; ọ dịghị ihe ị nwere ugbu a a ga-ehichapụ.';
+
+  @override
+  String get backupRestored => 'Eweghachila ndabere.';
+
+  @override
+  String get backupInvalid => 'Faịlụ a abụghị ndabere WhatStock.';
 }

@@ -2234,4 +2234,27 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Taona izao';
+
+  @override
+  String get backupTitle => 'Fitahirizana';
+
+  @override
+  String get backupSave => 'Hitahiry fitahirizana';
+
+  @override
+  String get backupSaveHint =>
+      'Ny ankafizinao, ny lisitrao, ny kitapom-bolanao, ny fanairanao ary ny naotinao ao anaty rakitra iray.';
+
+  @override
+  String get backupRestore => 'Hamerina avy amin\'ny fitahirizana';
+
+  @override
+  String get backupRestoreHint =>
+      'Ampiana izay ao anaty rakitra; tsy misy fafana amin\'izay anananao ankehitriny.';
+
+  @override
+  String get backupRestored => 'Naverina ny fitahirizana.';
+
+  @override
+  String get backupInvalid => 'Tsy fitahirizana WhatStock ity rakitra ity.';
 }

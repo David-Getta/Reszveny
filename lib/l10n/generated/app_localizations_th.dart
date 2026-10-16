@@ -2190,4 +2190,27 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get rangeYtd => 'ปีนี้';
+
+  @override
+  String get backupTitle => 'การสำรองข้อมูล';
+
+  @override
+  String get backupSave => 'บันทึกข้อมูลสำรอง';
+
+  @override
+  String get backupSaveHint =>
+      'รายการโปรด รายการ พอร์ตโฟลิโอ การแจ้งเตือน และบันทึกของคุณในไฟล์เดียว';
+
+  @override
+  String get backupRestore => 'กู้คืนจากข้อมูลสำรอง';
+
+  @override
+  String get backupRestoreHint =>
+      'เพิ่มสิ่งที่อยู่ในไฟล์ ข้อมูลที่คุณมีอยู่ตอนนี้จะไม่ถูกลบ';
+
+  @override
+  String get backupRestored => 'กู้คืนข้อมูลสำรองแล้ว';
+
+  @override
+  String get backupInvalid => 'ไฟล์นี้ไม่ใช่ข้อมูลสำรองของ WhatStock';
 }

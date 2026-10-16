@@ -593,5 +593,12 @@
   "watchListAddTo": "Listaman yapay",
   "watchListEmpty": "Kay listapiqa manaraqmi accionkuna kanchu. Yapanapaq accionpa waqtanpi lista butonta ñit'iy.",
   "portfolioAskTitle": "Tapukuykuna: portafolioyki",
-  "rangeYtd": "Kunan wata"
+  "rangeYtd": "Kunan wata",
+  "backupTitle": "Waqaychasqa qillqa",
+  "backupSave": "Waqaychasqata waqaychay",
+  "backupSaveHint": "Munasqaykikuna, listaykikuna, portafolioyki, willachiykunayki, qillqasqaykikunapas huk archivopi.",
+  "backupRestore": "Waqaychasqamanta kutichiy",
+  "backupRestoreHint": "Archivopi kaqta yapan; kunan kapusqaykimanta manam imapas chinkachisqachu.",
+  "backupRestored": "Waqaychasqa kutichisqa.",
+  "backupInvalid": "Kay archivoqa manam WhatStock waqaychasqachu."
 }

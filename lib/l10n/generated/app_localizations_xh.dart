@@ -2228,4 +2228,28 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'Ugcino lokhuseleko';
+
+  @override
+  String get backupSave => 'Gcina ikopi yokhuseleko';
+
+  @override
+  String get backupSaveHint =>
+      'Ezithandwayo, uluhlu, ipotifoliyo, izilumkiso namanqaku akho kwifayile enye.';
+
+  @override
+  String get backupRestore => 'Buyisela kwikopi yokhuseleko';
+
+  @override
+  String get backupRestoreHint =>
+      'Yongeza okukwifayile; akukho nto onayo ngoku icinywayo.';
+
+  @override
+  String get backupRestored => 'Ikopi yokhuseleko ibuyiselwe.';
+
+  @override
+  String get backupInvalid =>
+      'Le fayile asiyiyo ikopi yokhuseleko ye-WhatStock.';
 }

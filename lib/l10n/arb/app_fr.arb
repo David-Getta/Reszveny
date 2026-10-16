@@ -593,5 +593,12 @@
   "watchListAddTo": "Ajouter à une liste",
   "watchListEmpty": "Aucune action dans cette liste pour l'instant. Appuyez sur le bouton de liste à côté d'une action pour l'ajouter.",
   "portfolioAskTitle": "Questions sur votre portefeuille",
-  "rangeYtd": "YTD"
+  "rangeYtd": "YTD",
+  "backupTitle": "Sauvegarde",
+  "backupSave": "Enregistrer une sauvegarde",
+  "backupSaveHint": "Vos favoris, listes, portefeuille, alertes et notes dans un seul fichier.",
+  "backupRestore": "Restaurer une sauvegarde",
+  "backupRestoreHint": "Ajoute le contenu du fichier ; rien de ce que vous avez actuellement n’est supprimé.",
+  "backupRestored": "Sauvegarde restaurée.",
+  "backupInvalid": "Ce fichier n’est pas une sauvegarde WhatStock."
 }

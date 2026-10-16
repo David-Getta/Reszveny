@@ -593,5 +593,12 @@
   "watchListAddTo": "Zu einer Liste hinzufügen",
   "watchListEmpty": "Noch keine Aktien in dieser Liste. Zum Hinzufügen auf die Listen-Schaltfläche neben einer Aktie tippen.",
   "portfolioAskTitle": "Fragen zu deinem Portfolio",
-  "rangeYtd": "YTD"
+  "rangeYtd": "YTD",
+  "backupTitle": "Backup",
+  "backupSave": "Backup speichern",
+  "backupSaveHint": "Deine Favoriten, Listen, dein Portfolio, deine Alarme und Notizen in einer Datei.",
+  "backupRestore": "Aus Backup wiederherstellen",
+  "backupRestoreHint": "Fügt hinzu, was in der Datei ist; von deinen aktuellen Daten wird nichts gelöscht.",
+  "backupRestored": "Backup wiederhergestellt.",
+  "backupInvalid": "Diese Datei ist kein WhatStock-Backup."
 }

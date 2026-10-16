@@ -593,5 +593,12 @@
   "watchListAddTo": "Lisää listaan",
   "watchListEmpty": "Tällä listalla ei ole vielä osakkeita. Lisää osake napauttamalla sen vieressä olevaa listapainiketta.",
   "portfolioAskTitle": "Kysymyksiä salkustasi",
-  "rangeYtd": "Tänä v."
+  "rangeYtd": "Tänä v.",
+  "backupTitle": "Varmuuskopio",
+  "backupSave": "Tallenna varmuuskopio",
+  "backupSaveHint": "Suosikkisi, listasi, salkkusi, hälytyksesi ja muistiinpanosi yhdessä tiedostossa.",
+  "backupRestore": "Palauta varmuuskopiosta",
+  "backupRestoreHint": "Lisää tiedoston sisällön; mitään nykyisistä tiedoistasi ei poisteta.",
+  "backupRestored": "Varmuuskopio palautettu.",
+  "backupInvalid": "Tämä tiedosto ei ole WhatStock-varmuuskopio."
 }

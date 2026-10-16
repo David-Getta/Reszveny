@@ -593,5 +593,12 @@
   "watchListAddTo": "Añadir a una lista",
   "watchListEmpty": "Aún no hay acciones en esta lista. Toca el botón de lista junto a una acción para añadirla.",
   "portfolioAskTitle": "Preguntas sobre tu cartera",
-  "rangeYtd": "YTD"
+  "rangeYtd": "YTD",
+  "backupTitle": "Copia de seguridad",
+  "backupSave": "Guardar copia de seguridad",
+  "backupSaveHint": "Tus favoritos, listas, cartera, alertas y notas en un solo archivo.",
+  "backupRestore": "Restaurar desde una copia de seguridad",
+  "backupRestoreHint": "Añade lo que hay en el archivo; no se borra nada de lo que tienes ahora.",
+  "backupRestored": "Copia de seguridad restaurada.",
+  "backupInvalid": "Este archivo no es una copia de seguridad de WhatStock."
 }

@@ -2268,4 +2268,27 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get rangeYtd => 'هذا العام';
+
+  @override
+  String get backupTitle => 'النسخ الاحتياطي';
+
+  @override
+  String get backupSave => 'حفظ نسخة احتياطية';
+
+  @override
+  String get backupSaveHint =>
+      'مفضلتك وقوائمك ومحفظتك وتنبيهاتك وملاحظاتك في ملف واحد.';
+
+  @override
+  String get backupRestore => 'الاستعادة من نسخة احتياطية';
+
+  @override
+  String get backupRestoreHint =>
+      'يضيف ما في الملف؛ لن يُحذف شيء مما لديك الآن.';
+
+  @override
+  String get backupRestored => 'تمت استعادة النسخة الاحتياطية.';
+
+  @override
+  String get backupInvalid => 'هذا الملف ليس نسخة احتياطية من WhatStock.';
 }

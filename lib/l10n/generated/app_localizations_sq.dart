@@ -2225,4 +2225,27 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Këtë vit';
+
+  @override
+  String get backupTitle => 'Kopje rezervë';
+
+  @override
+  String get backupSave => 'Ruaj një kopje rezervë';
+
+  @override
+  String get backupSaveHint =>
+      'Të preferuarat, listat, portofoli, alarmet dhe shënimet tuaja në një skedar.';
+
+  @override
+  String get backupRestore => 'Rikthe nga kopja rezervë';
+
+  @override
+  String get backupRestoreHint =>
+      'Shton atë që është në skedar; asgjë nga ajo që keni tani nuk fshihet.';
+
+  @override
+  String get backupRestored => 'Kopja rezervë u rikthye.';
+
+  @override
+  String get backupInvalid => 'Ky skedar nuk është kopje rezervë e WhatStock.';
 }

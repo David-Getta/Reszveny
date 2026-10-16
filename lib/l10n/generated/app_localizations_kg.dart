@@ -2226,4 +2226,27 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Mvu yayi';
+
+  @override
+  String get backupTitle => 'Kopi ya kubumba';
+
+  @override
+  String get backupSave => 'Bumba kopi';
+
+  @override
+  String get backupSaveHint =>
+      'Bizolwa na nge, balisiti, portefeuille, nkebisu mpi ba note na nge na fisye mosi.';
+
+  @override
+  String get backupRestore => 'Vutula katuka na kopi ya kubumba';
+
+  @override
+  String get backupRestoreHint =>
+      'Yo ke yika yina kele na fisye; kima mosi ve ya nge ke na yo ntangu yai ta katuka.';
+
+  @override
+  String get backupRestored => 'Kopi ya kubumba me vutuka.';
+
+  @override
+  String get backupInvalid => 'Fisye yai kele ve kopi ya kubumba ya WhatStock.';
 }

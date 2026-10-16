@@ -2216,4 +2216,27 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'ବ୍ୟାକଅପ୍';
+
+  @override
+  String get backupSave => 'ବ୍ୟାକଅପ୍ ସେଭ୍ କରନ୍ତୁ';
+
+  @override
+  String get backupSaveHint =>
+      'ଆପଣଙ୍କ ପସନ୍ଦ, ତାଲିକା, ପୋର୍ଟଫୋଲିଓ, ଆଲର୍ଟ ଓ ନୋଟ୍ ଗୋଟିଏ ଫାଇଲରେ।';
+
+  @override
+  String get backupRestore => 'ବ୍ୟାକଅପ୍‌ରୁ ପୁନରୁଦ୍ଧାର କରନ୍ତୁ';
+
+  @override
+  String get backupRestoreHint =>
+      'ଫାଇଲରେ ଥିବା ଯୋଡ଼ାଯାଏ; ଆପଣଙ୍କ ପାଖରେ ଏବେ ଥିବା କିଛି ବି ଡିଲିଟ୍ ହୁଏ ନାହିଁ।';
+
+  @override
+  String get backupRestored => 'ବ୍ୟାକଅପ୍ ପୁନରୁଦ୍ଧାର ହେଲା।';
+
+  @override
+  String get backupInvalid => 'ଏହି ଫାଇଲଟି WhatStock ବ୍ୟାକଅପ୍ ନୁହେଁ।';
 }

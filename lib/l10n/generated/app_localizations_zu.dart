@@ -2227,4 +2227,27 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'Isipele';
+
+  @override
+  String get backupSave => 'Londoloza isipele';
+
+  @override
+  String get backupSaveHint =>
+      'Izintandokazi zakho, uhlu, iphothifoliyo, izexwayiso namanothi akho efayeleni elilodwa.';
+
+  @override
+  String get backupRestore => 'Buyisela kusuka esipeleni';
+
+  @override
+  String get backupRestoreHint =>
+      'Yengeza okusefayeleni; akukho lutho onalo manje olusulwayo.';
+
+  @override
+  String get backupRestored => 'Isipele sibuyiselwe.';
+
+  @override
+  String get backupInvalid => 'Leli fayela akusona isipele se-WhatStock.';
 }

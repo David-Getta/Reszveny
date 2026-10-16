@@ -2210,4 +2210,27 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get rangeYtd => 'هن سال';
+
+  @override
+  String get backupTitle => 'بيڪ اپ';
+
+  @override
+  String get backupSave => 'بيڪ اپ محفوظ ڪريو';
+
+  @override
+  String get backupSaveHint =>
+      'توهان جون پسنديده شيون، فهرستون، پورٽ فوليو، الرٽس ۽ نوٽس هڪ فائل ۾.';
+
+  @override
+  String get backupRestore => 'بيڪ اپ مان بحال ڪريو';
+
+  @override
+  String get backupRestoreHint =>
+      'فائل ۾ جيڪو آهي اهو شامل ڪري ٿو؛ توهان وٽ هن وقت جيڪو آهي ان مان ڪجهه به ڊليٽ نٿو ٿئي.';
+
+  @override
+  String get backupRestored => 'بيڪ اپ بحال ٿي ويو.';
+
+  @override
+  String get backupInvalid => 'هي فائل WhatStock بيڪ اپ ناهي.';
 }

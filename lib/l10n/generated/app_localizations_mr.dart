@@ -2218,4 +2218,27 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'बॅकअप';
+
+  @override
+  String get backupSave => 'बॅकअप जतन करा';
+
+  @override
+  String get backupSaveHint =>
+      'तुमचे आवडते, याद्या, पोर्टफोलिओ, सूचना आणि नोंदी एकाच फाइलमध्ये.';
+
+  @override
+  String get backupRestore => 'बॅकअपमधून पुनर्संचयित करा';
+
+  @override
+  String get backupRestoreHint =>
+      'फाइलमधील माहिती जोडली जाते; तुमच्याकडे आता असलेले काहीही हटवले जात नाही.';
+
+  @override
+  String get backupRestored => 'बॅकअप पुनर्संचयित केला.';
+
+  @override
+  String get backupInvalid => 'ही फाइल WhatStock बॅकअप नाही.';
 }

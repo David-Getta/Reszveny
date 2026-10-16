@@ -2221,4 +2221,27 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Taun ieu';
+
+  @override
+  String get backupTitle => 'Cadangan';
+
+  @override
+  String get backupSave => 'Simpen cadangan';
+
+  @override
+  String get backupSaveHint =>
+      'Paporit, daptar, portofolio, béwara, jeung catetan anjeun dina hiji file.';
+
+  @override
+  String get backupRestore => 'Pulihkeun tina cadangan';
+
+  @override
+  String get backupRestoreHint =>
+      'Nambahkeun eusi file; euweuh nu dipiboga ayeuna anu dihapus.';
+
+  @override
+  String get backupRestored => 'Cadangan dipulihkeun.';
+
+  @override
+  String get backupInvalid => 'File ieu sanés cadangan WhatStock.';
 }

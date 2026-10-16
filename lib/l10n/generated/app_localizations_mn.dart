@@ -2219,4 +2219,27 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Энэ жил';
+
+  @override
+  String get backupTitle => 'Нөөцлөлт';
+
+  @override
+  String get backupSave => 'Нөөц хадгалах';
+
+  @override
+  String get backupSaveHint =>
+      'Таны дуртай, жагсаалт, портфолио, сэрэмжлүүлэг, тэмдэглэл нэг файлд.';
+
+  @override
+  String get backupRestore => 'Нөөцөөс сэргээх';
+
+  @override
+  String get backupRestoreHint =>
+      'Файлд байгааг нэмнэ; одоо байгаа зүйлсээс юу ч устахгүй.';
+
+  @override
+  String get backupRestored => 'Нөөцийг сэргээлээ.';
+
+  @override
+  String get backupInvalid => 'Энэ файл WhatStock-ийн нөөц биш байна.';
 }

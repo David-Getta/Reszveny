@@ -593,5 +593,12 @@
   "watchListAddTo": "Dodaj na seznam",
   "watchListEmpty": "Na tem seznamu še ni delnic. Za dodajanje tapnite gumb seznama ob delnici.",
   "portfolioAskTitle": "Vprašanja o vašem portfelju",
-  "rangeYtd": "Letos"
+  "rangeYtd": "Letos",
+  "backupTitle": "Varnostna kopija",
+  "backupSave": "Shrani varnostno kopijo",
+  "backupSaveHint": "Vaše priljubljene, seznami, portfelj, opozorila in zapiski v eni datoteki.",
+  "backupRestore": "Obnovi iz varnostne kopije",
+  "backupRestoreHint": "Doda vsebino datoteke; nič od tega, kar imate zdaj, se ne izbriše.",
+  "backupRestored": "Varnostna kopija je obnovljena.",
+  "backupInvalid": "Ta datoteka ni varnostna kopija WhatStock."
 }

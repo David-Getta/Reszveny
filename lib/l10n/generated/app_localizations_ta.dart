@@ -2228,4 +2228,27 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'காப்புப்பிரதி';
+
+  @override
+  String get backupSave => 'காப்புப்பிரதியைச் சேமி';
+
+  @override
+  String get backupSaveHint =>
+      'உங்கள் பிடித்தவை, பட்டியல்கள், போர்ட்ஃபோலியோ, எச்சரிக்கைகள், குறிப்புகள் அனைத்தும் ஒரே கோப்பில்.';
+
+  @override
+  String get backupRestore => 'காப்புப்பிரதியிலிருந்து மீட்டெடு';
+
+  @override
+  String get backupRestoreHint =>
+      'கோப்பில் உள்ளதைச் சேர்க்கும்; இப்போது உள்ள எதுவும் நீக்கப்படாது.';
+
+  @override
+  String get backupRestored => 'காப்புப்பிரதி மீட்டெடுக்கப்பட்டது.';
+
+  @override
+  String get backupInvalid => 'இந்தக் கோப்பு WhatStock காப்புப்பிரதி அல்ல.';
 }

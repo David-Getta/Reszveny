@@ -2222,4 +2222,27 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'Rugsteun';
+
+  @override
+  String get backupSave => 'Stoor ’n rugsteun';
+
+  @override
+  String get backupSaveHint =>
+      'Jou gunstelinge, lyste, portefeulje, waarskuwings en notas in een lêer.';
+
+  @override
+  String get backupRestore => 'Herstel vanaf ’n rugsteun';
+
+  @override
+  String get backupRestoreHint =>
+      'Voeg by wat in die lêer is; niks wat jy nou het, word uitgevee nie.';
+
+  @override
+  String get backupRestored => 'Rugsteun herstel.';
+
+  @override
+  String get backupInvalid => 'Hierdie lêer is nie ’n WhatStock-rugsteun nie.';
 }

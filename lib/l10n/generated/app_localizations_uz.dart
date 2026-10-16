@@ -2222,4 +2222,27 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Bu yil';
+
+  @override
+  String get backupTitle => 'Zaxira nusxa';
+
+  @override
+  String get backupSave => 'Zaxira nusxani saqlash';
+
+  @override
+  String get backupSaveHint =>
+      'Sevimlilar, roʻyxatlar, portfel, bildirishnomalar va qaydlaringiz bitta faylda.';
+
+  @override
+  String get backupRestore => 'Zaxira nusxadan tiklash';
+
+  @override
+  String get backupRestoreHint =>
+      'Fayldagi narsalarni qoʻshadi; hozirgi maʼlumotlaringizdan hech narsa oʻchirilmaydi.';
+
+  @override
+  String get backupRestored => 'Zaxira nusxa tiklandi.';
+
+  @override
+  String get backupInvalid => 'Bu fayl WhatStock zaxira nusxasi emas.';
 }

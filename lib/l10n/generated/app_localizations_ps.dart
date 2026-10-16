@@ -2210,4 +2210,27 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get rangeYtd => 'سږکال';
+
+  @override
+  String get backupTitle => 'بیک اپ';
+
+  @override
+  String get backupSave => 'بیک اپ خوندي کړئ';
+
+  @override
+  String get backupSaveHint =>
+      'ستاسو خوښې، لېستونه، پورټفولیو، خبرتیاوې او یادښتونه په یوه فایل کې.';
+
+  @override
+  String get backupRestore => 'له بیک اپ څخه بېرته راوړئ';
+
+  @override
+  String get backupRestoreHint =>
+      'هغه څه زیاتوي چې په فایل کې دي؛ له هغه څه چې اوس لرئ هېڅ نه ړنګېږي.';
+
+  @override
+  String get backupRestored => 'بیک اپ بېرته راوړل شو.';
+
+  @override
+  String get backupInvalid => 'دا فایل د WhatStock بیک اپ نه دی.';
 }

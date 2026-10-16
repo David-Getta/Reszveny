@@ -2226,4 +2226,28 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Από 1/1';
+
+  @override
+  String get backupTitle => 'Αντίγραφο ασφαλείας';
+
+  @override
+  String get backupSave => 'Αποθήκευση αντιγράφου ασφαλείας';
+
+  @override
+  String get backupSaveHint =>
+      'Τα αγαπημένα, οι λίστες, το χαρτοφυλάκιο, οι ειδοποιήσεις και οι σημειώσεις σας σε ένα αρχείο.';
+
+  @override
+  String get backupRestore => 'Επαναφορά από αντίγραφο ασφαλείας';
+
+  @override
+  String get backupRestoreHint =>
+      'Προσθέτει ό,τι υπάρχει στο αρχείο· τίποτα από όσα έχετε τώρα δεν διαγράφεται.';
+
+  @override
+  String get backupRestored => 'Το αντίγραφο ασφαλείας επαναφέρθηκε.';
+
+  @override
+  String get backupInvalid =>
+      'Αυτό το αρχείο δεν είναι αντίγραφο ασφαλείας του WhatStock.';
 }

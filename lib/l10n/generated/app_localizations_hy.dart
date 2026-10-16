@@ -2226,4 +2226,27 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Այս տարի';
+
+  @override
+  String get backupTitle => 'Պահուստային պատճեն';
+
+  @override
+  String get backupSave => 'Պահել պահուստային պատճենը';
+
+  @override
+  String get backupSaveHint =>
+      'Ձեր ընտրյալները, ցուցակները, պորտֆելը, ծանուցումները և նշումները մեկ ֆայլում։';
+
+  @override
+  String get backupRestore => 'Վերականգնել պահուստային պատճենից';
+
+  @override
+  String get backupRestoreHint =>
+      'Ավելացնում է ֆայլում եղածը. ձեր ներկայիս տվյալներից ոչինչ չի ջնջվում։';
+
+  @override
+  String get backupRestored => 'Պահուստային պատճենը վերականգնվեց։';
+
+  @override
+  String get backupInvalid => 'Այս ֆայլը WhatStock-ի պահուստային պատճեն չէ։';
 }

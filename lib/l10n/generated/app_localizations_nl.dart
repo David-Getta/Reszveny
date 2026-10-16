@@ -2223,4 +2223,27 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'Back-up';
+
+  @override
+  String get backupSave => 'Back-up opslaan';
+
+  @override
+  String get backupSaveHint =>
+      'Je favorieten, lijsten, portefeuille, alerts en notities in één bestand.';
+
+  @override
+  String get backupRestore => 'Herstellen uit back-up';
+
+  @override
+  String get backupRestoreHint =>
+      'Voegt toe wat in het bestand staat; niets van wat je nu hebt wordt verwijderd.';
+
+  @override
+  String get backupRestored => 'Back-up hersteld.';
+
+  @override
+  String get backupInvalid => 'Dit bestand is geen WhatStock-back-up.';
 }

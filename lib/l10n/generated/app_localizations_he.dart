@@ -2211,4 +2211,27 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get rangeYtd => 'השנה';
+
+  @override
+  String get backupTitle => 'גיבוי';
+
+  @override
+  String get backupSave => 'שמירת גיבוי';
+
+  @override
+  String get backupSaveHint =>
+      'המועדפים, הרשימות, תיק ההשקעות, ההתראות וההערות שלכם בקובץ אחד.';
+
+  @override
+  String get backupRestore => 'שחזור מגיבוי';
+
+  @override
+  String get backupRestoreHint =>
+      'מוסיף את מה שיש בקובץ; שום דבר ממה שיש לכם עכשיו לא נמחק.';
+
+  @override
+  String get backupRestored => 'הגיבוי שוחזר.';
+
+  @override
+  String get backupInvalid => 'הקובץ הזה אינו גיבוי של WhatStock.';
 }

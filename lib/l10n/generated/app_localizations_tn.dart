@@ -2232,4 +2232,28 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'Polokelo ya tshireletso';
+
+  @override
+  String get backupSave => 'Boloka polokelo ya tshireletso';
+
+  @override
+  String get backupSaveHint =>
+      'Tse o di ratang, manaane, potefolio, dikitsiso le dintlha tsa gago mo faeleng e le nngwe.';
+
+  @override
+  String get backupRestore => 'Busetsa go tswa mo polokelong ya tshireletso';
+
+  @override
+  String get backupRestoreHint =>
+      'E oketsa se se mo faeleng; ga go sepe se o nang le sone jaanong se se phimolwang.';
+
+  @override
+  String get backupRestored => 'Polokelo ya tshireletso e busitswe.';
+
+  @override
+  String get backupInvalid =>
+      'Faele eno ga se polokelo ya tshireletso ya WhatStock.';
 }

@@ -593,5 +593,12 @@
   "watchListAddTo": "Ampio amin'ny lisitra",
   "watchListEmpty": "Mbola tsy misy anjara ato amin'ity lisitra ity. Tsindrio ny bokotra lisitra eo akaikin'ny anjara iray mba hanampiana azy.",
   "portfolioAskTitle": "Fanontaniana momba ny kitapom-bolanao",
-  "rangeYtd": "Taona izao"
+  "rangeYtd": "Taona izao",
+  "backupTitle": "Fitahirizana",
+  "backupSave": "Hitahiry fitahirizana",
+  "backupSaveHint": "Ny ankafizinao, ny lisitrao, ny kitapom-bolanao, ny fanairanao ary ny naotinao ao anaty rakitra iray.",
+  "backupRestore": "Hamerina avy amin'ny fitahirizana",
+  "backupRestoreHint": "Ampiana izay ao anaty rakitra; tsy misy fafana amin'izay anananao ankehitriny.",
+  "backupRestored": "Naverina ny fitahirizana.",
+  "backupInvalid": "Tsy fitahirizana WhatStock ity rakitra ity."
 }

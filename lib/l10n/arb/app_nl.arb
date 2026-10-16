@@ -593,5 +593,12 @@
   "watchListAddTo": "Aan lijst toevoegen",
   "watchListEmpty": "Nog geen aandelen in deze lijst. Tik op de lijstknop naast een aandeel om het toe te voegen.",
   "portfolioAskTitle": "Vragen over je portefeuille",
-  "rangeYtd": "YTD"
+  "rangeYtd": "YTD",
+  "backupTitle": "Back-up",
+  "backupSave": "Back-up opslaan",
+  "backupSaveHint": "Je favorieten, lijsten, portefeuille, alerts en notities in één bestand.",
+  "backupRestore": "Herstellen uit back-up",
+  "backupRestoreHint": "Voegt toe wat in het bestand staat; niets van wat je nu hebt wordt verwijderd.",
+  "backupRestored": "Back-up hersteld.",
+  "backupInvalid": "Dit bestand is geen WhatStock-back-up."
 }

@@ -2214,4 +2214,27 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'Cadangan';
+
+  @override
+  String get backupSave => 'Simpan cadangan';
+
+  @override
+  String get backupSaveHint =>
+      'Favorit, daftar, portofolio, peringatan, dan catatan Anda dalam satu file.';
+
+  @override
+  String get backupRestore => 'Pulihkan dari cadangan';
+
+  @override
+  String get backupRestoreHint =>
+      'Menambahkan isi file; tidak ada data Anda saat ini yang dihapus.';
+
+  @override
+  String get backupRestored => 'Cadangan dipulihkan.';
+
+  @override
+  String get backupInvalid => 'File ini bukan cadangan WhatStock.';
 }

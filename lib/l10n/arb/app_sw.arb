@@ -593,5 +593,12 @@
   "watchListAddTo": "Ongeza kwenye orodha",
   "watchListEmpty": "Bado hakuna hisa kwenye orodha hii. Gusa kitufe cha orodha kando ya hisa ili kuiongeza.",
   "portfolioAskTitle": "Maswali kuhusu jalada lako la hisa",
-  "rangeYtd": "YTD"
+  "rangeYtd": "YTD",
+  "backupTitle": "Nakala rudufu",
+  "backupSave": "Hifadhi nakala rudufu",
+  "backupSaveHint": "Vipendwa, orodha, jalada la hisa, arifa na madokezo yako katika faili moja.",
+  "backupRestore": "Rejesha kutoka nakala rudufu",
+  "backupRestoreHint": "Huongeza kilicho kwenye faili; hakuna ulicho nacho sasa kitakachofutwa.",
+  "backupRestored": "Nakala rudufu imerejeshwa.",
+  "backupInvalid": "Faili hii si nakala rudufu ya WhatStock."
 }

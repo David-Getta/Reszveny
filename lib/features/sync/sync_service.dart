@@ -112,9 +112,24 @@ class SyncService extends ChangeNotifier {
   }
 
   /// A helyi adatok egy csomagban.
-  Map<String, dynamic> snapshot() => {
+  Map<String, dynamic> snapshot() => snapshotOf(
+    preferences: preferences,
+    portfolio: portfolio,
+    alerts: alerts,
+    notes: notes,
+    language: language?.call(),
+  );
+
+  /// A személyes adatok egy csomagban (szinkronhoz és a biztonsági mentéshez is).
+  static Map<String, dynamic> snapshotOf({
+    required AppPreferences preferences,
+    required PortfolioStore portfolio,
+    required AlertStore alerts,
+    required NotesStore notes,
+    String? language,
+  }) => {
     'v': 1,
-    'lang': ?language?.call(),
+    'lang': ?language,
     'email_alerts': preferences.emailAlerts,
     'weekly_digest': preferences.weeklyDigest,
     'favorites': preferences.favorites,
@@ -199,26 +214,37 @@ class SyncService extends ChangeNotifier {
     _applying = true;
     _lastJson = null;
     try {
-      List<Map<String, dynamic>> maps(Object? v) => [
-        for (final e in (v is List ? v : const []))
-          if (e is Map) e.cast<String, dynamic>(),
-      ];
-      await preferences.setFavorites([for (final f in (data['favorites'] as List? ?? const [])) '$f']);
-      // Régi csomagban nincs ilyen mező: akkor a helyi listák maradnak.
-      if (data['watch_lists'] is List) {
-        await preferences.setWatchLists([for (final l in data['watch_lists'] as List) ?WatchList.fromJson(l)]);
-      }
-      await preferences.setEmailAlerts(data['email_alerts'] != false);
-      await preferences.setWeeklyDigest(data['weekly_digest'] == true);
-      await portfolio.replaceAll([for (final j in maps(data['lots'])) ?PortfolioLot.fromJson(j)]);
-      await alerts.replaceAll([for (final j in maps(data['alerts'])) ?PriceAlert.fromJson(j)]);
-      await notes.replaceAll({
-        for (final e in (data['notes'] as Map? ?? const {}).entries) '${e.key}': ?StockNote.fromJson(e.value),
-      });
+      await applyTo(data, preferences: preferences, portfolio: portfolio, alerts: alerts, notes: notes);
     } finally {
       _applying = false;
       _lastJson = jsonEncode(snapshot());
     }
+  }
+
+  /// Egy csomag átvétele a helyi tárolókba (a meglévők helyére).
+  static Future<void> applyTo(
+    Map<String, dynamic> data, {
+    required AppPreferences preferences,
+    required PortfolioStore portfolio,
+    required AlertStore alerts,
+    required NotesStore notes,
+  }) async {
+    List<Map<String, dynamic>> maps(Object? v) => [
+      for (final e in (v is List ? v : const []))
+        if (e is Map) e.cast<String, dynamic>(),
+    ];
+    await preferences.setFavorites([for (final f in (data['favorites'] as List? ?? const [])) '$f']);
+    // Régi csomagban nincs ilyen mező: akkor a helyi listák maradnak.
+    if (data['watch_lists'] is List) {
+      await preferences.setWatchLists([for (final l in data['watch_lists'] as List) ?WatchList.fromJson(l)]);
+    }
+    await preferences.setEmailAlerts(data['email_alerts'] != false);
+    await preferences.setWeeklyDigest(data['weekly_digest'] == true);
+    await portfolio.replaceAll([for (final j in maps(data['lots'])) ?PortfolioLot.fromJson(j)]);
+    await alerts.replaceAll([for (final j in maps(data['alerts'])) ?PriceAlert.fromJson(j)]);
+    await notes.replaceAll({
+      for (final e in (data['notes'] as Map? ?? const {}).entries) '${e.key}': ?StockNote.fromJson(e.value),
+    });
   }
 
   Future<void> _push(Map<String, dynamic> data) async {

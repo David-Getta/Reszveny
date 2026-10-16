@@ -593,5 +593,12 @@
   "watchListAddTo": "Pridėti į sąrašą",
   "watchListEmpty": "Šiame sąraše dar nėra akcijų. Bakstelėkite sąrašo mygtuką šalia akcijos, kad ją pridėtumėte.",
   "portfolioAskTitle": "Klausimai apie jūsų portfelį",
-  "rangeYtd": "Šiemet"
+  "rangeYtd": "Šiemet",
+  "backupTitle": "Atsarginė kopija",
+  "backupSave": "Išsaugoti atsarginę kopiją",
+  "backupSaveHint": "Jūsų mėgstamiausi, sąrašai, portfelis, įspėjimai ir užrašai viename faile.",
+  "backupRestore": "Atkurti iš atsarginės kopijos",
+  "backupRestoreHint": "Prideda tai, kas yra faile; nieko iš dabartinių jūsų duomenų neištrinama.",
+  "backupRestored": "Atsarginė kopija atkurta.",
+  "backupInvalid": "Šis failas nėra WhatStock atsarginė kopija."
 }

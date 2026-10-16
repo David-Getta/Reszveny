@@ -2205,4 +2205,27 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Yʋʋm kãnga';
+
+  @override
+  String get backupTitle => 'Sẽn bʋʋd n bilgi';
+
+  @override
+  String get backupSave => 'Bʋʋd sẽn bilgi';
+
+  @override
+  String get backupSaveHint =>
+      'Fo nong-n-yɩɩda, fo listɛ, fo portfey, fo koosg gũusgo la fo gʋlsgo, fiyie a yembre pʋgẽ.';
+
+  @override
+  String get backupRestore => 'Lebg n yik sẽn bʋʋd n bilgã pʋgẽ';
+
+  @override
+  String get backupRestoreHint =>
+      'A paasda bũmb ning sẽn be fiyiã pʋgẽ; bũmb ka na n yikd fo sẽn tar masã ye.';
+
+  @override
+  String get backupRestored => 'Sẽn bʋʋd n bilgã lebga.';
+
+  @override
+  String get backupInvalid => 'Fiyie kãngã pa WhatStock bʋʋd n bilgi ye.';
 }

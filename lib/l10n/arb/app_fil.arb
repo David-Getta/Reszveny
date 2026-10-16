@@ -593,5 +593,12 @@
   "watchListAddTo": "Idagdag sa listahan",
   "watchListEmpty": "Wala pang stock sa listahang ito. I-tap ang button ng listahan sa tabi ng isang stock para idagdag ito.",
   "portfolioAskTitle": "Mga tanong tungkol sa portfolio mo",
-  "rangeYtd": "YTD"
+  "rangeYtd": "YTD",
+  "backupTitle": "Backup",
+  "backupSave": "I-save ang backup",
+  "backupSaveHint": "Ang iyong mga paborito, listahan, portfolio, alerto at tala sa iisang file.",
+  "backupRestore": "I-restore mula sa backup",
+  "backupRestoreHint": "Idinadagdag ang laman ng file; walang mabubura sa kung ano ang mayroon ka ngayon.",
+  "backupRestored": "Na-restore ang backup.",
+  "backupInvalid": "Hindi WhatStock backup ang file na ito."
 }

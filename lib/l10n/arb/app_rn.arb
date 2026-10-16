@@ -593,5 +593,12 @@
   "watchListAddTo": "Shira ku rutonde",
   "watchListEmpty": "Nta migabane iri kuri uru rutonde ubu. Fyonda akabuto k'urutonde kari iruhande y'umugabane kugira uwushireko.",
   "portfolioAskTitle": "Ibibazo ku ishoramari ryawe",
-  "rangeYtd": "YTD"
+  "rangeYtd": "YTD",
+  "backupTitle": "Ububiko bw'ingoboka",
+  "backupSave": "Bika ububiko bw'ingoboka",
+  "backupSaveHint": "Ivyo ukunda, intonde, ishoramari, imenyesha n'ivyo wanditse mu dosiye imwe.",
+  "backupRestore": "Garura bivuye mu bubiko bw'ingoboka",
+  "backupRestoreHint": "Yongerako ibiri muri dosiye; nta na kimwe mu vyo ufise ubu gifutwa.",
+  "backupRestored": "Ububiko bw'ingoboka bwagaruwe.",
+  "backupInvalid": "Iyi dosiye si ububiko bw'ingoboka bwa WhatStock."
 }

@@ -2219,4 +2219,27 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Mwaka uyu';
+
+  @override
+  String get backupTitle => 'Mbaka';
+
+  @override
+  String get backupSave => 'Iga mbaka';
+
+  @override
+  String get backupSaveHint =>
+      'Iria wendete, orodha ciaku, hisa ciaku, imenyithia na maandĩko maku thĩinĩ wa faili ĩmwe.';
+
+  @override
+  String get backupRestore => 'Cookia kuuma mbaka-inĩ';
+
+  @override
+  String get backupRestoreHint =>
+      'Yongerera kĩrĩa kĩrĩ thĩinĩ wa faili; gũtirĩ kĩndũ kĩa kĩrĩa ũrĩ nakĩo rĩu gĩgũthario.';
+
+  @override
+  String get backupRestored => 'Mbaka nĩĩcookio.';
+
+  @override
+  String get backupInvalid => 'Faili ĩno ti mbaka ya WhatStock.';
 }

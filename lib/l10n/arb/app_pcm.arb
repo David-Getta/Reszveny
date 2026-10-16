@@ -593,5 +593,12 @@
   "watchListAddTo": "Add am to list",
   "watchListEmpty": "No stock dey dis list yet. Tap di list button wey dey near any stock to add am.",
   "portfolioAskTitle": "Questions about your portfolio",
-  "rangeYtd": "YTD"
+  "rangeYtd": "YTD",
+  "backupTitle": "Backup",
+  "backupSave": "Save backup",
+  "backupSaveHint": "Your favourites, lists, portfolio, alerts and notes for one file.",
+  "backupRestore": "Restore from backup",
+  "backupRestoreHint": "E go add wetin dey di file; nothing wey you get now go delete.",
+  "backupRestored": "Backup don restore.",
+  "backupInvalid": "Dis file no be WhatStock backup."
 }

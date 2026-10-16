@@ -593,5 +593,12 @@
   "watchListAddTo": "Tambahkeun ka daptar",
   "watchListEmpty": "Can aya saham dina daptar ieu. Toél tombol daptar di gigireun saham pikeun nambahkeunana.",
   "portfolioAskTitle": "Patarosan ngeunaan portofolio anjeun",
-  "rangeYtd": "Taun ieu"
+  "rangeYtd": "Taun ieu",
+  "backupTitle": "Cadangan",
+  "backupSave": "Simpen cadangan",
+  "backupSaveHint": "Paporit, daptar, portofolio, béwara, jeung catetan anjeun dina hiji file.",
+  "backupRestore": "Pulihkeun tina cadangan",
+  "backupRestoreHint": "Nambahkeun eusi file; euweuh nu dipiboga ayeuna anu dihapus.",
+  "backupRestored": "Cadangan dipulihkeun.",
+  "backupInvalid": "File ieu sanés cadangan WhatStock."
 }

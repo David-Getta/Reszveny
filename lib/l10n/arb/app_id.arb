@@ -593,5 +593,12 @@
   "watchListAddTo": "Tambahkan ke daftar",
   "watchListEmpty": "Belum ada saham di daftar ini. Ketuk tombol daftar di samping saham untuk menambahkannya.",
   "portfolioAskTitle": "Pertanyaan tentang portofolio Anda",
-  "rangeYtd": "YTD"
+  "rangeYtd": "YTD",
+  "backupTitle": "Cadangan",
+  "backupSave": "Simpan cadangan",
+  "backupSaveHint": "Favorit, daftar, portofolio, peringatan, dan catatan Anda dalam satu file.",
+  "backupRestore": "Pulihkan dari cadangan",
+  "backupRestoreHint": "Menambahkan isi file; tidak ada data Anda saat ini yang dihapus.",
+  "backupRestored": "Cadangan dipulihkan.",
+  "backupInvalid": "File ini bukan cadangan WhatStock."
 }

@@ -593,5 +593,12 @@
   "watchListAddTo": "Tinye na ndepụta",
   "watchListEmpty": "Enweghị òkè ọ bụla na ndepụta a ka ugbu a. Pịa bọtịnụ ndepụta dị n'akụkụ òkè iji tinye ya.",
   "portfolioAskTitle": "Ajụjụ gbasara portfolio gị",
-  "rangeYtd": "YTD"
+  "rangeYtd": "YTD",
+  "backupTitle": "Ndabere",
+  "backupSave": "Chekwaa ndabere",
+  "backupSaveHint": "Ọkacha mmasị gị, ndepụta gị, portfolio gị, ọkwa gị na ndetu gị n'otu faịlụ.",
+  "backupRestore": "Weghachite site na ndabere",
+  "backupRestoreHint": "Ọ na-agbakwunye ihe dị na faịlụ ahụ; ọ dịghị ihe ị nwere ugbu a a ga-ehichapụ.",
+  "backupRestored": "Eweghachila ndabere.",
+  "backupInvalid": "Faịlụ a abụghị ndabere WhatStock."
 }

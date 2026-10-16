@@ -2225,4 +2225,28 @@ class AppLocalizationsRn extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'Ububiko bw\'ingoboka';
+
+  @override
+  String get backupSave => 'Bika ububiko bw\'ingoboka';
+
+  @override
+  String get backupSaveHint =>
+      'Ivyo ukunda, intonde, ishoramari, imenyesha n\'ivyo wanditse mu dosiye imwe.';
+
+  @override
+  String get backupRestore => 'Garura bivuye mu bubiko bw\'ingoboka';
+
+  @override
+  String get backupRestoreHint =>
+      'Yongerako ibiri muri dosiye; nta na kimwe mu vyo ufise ubu gifutwa.';
+
+  @override
+  String get backupRestored => 'Ububiko bw\'ingoboka bwagaruwe.';
+
+  @override
+  String get backupInvalid =>
+      'Iyi dosiye si ububiko bw\'ingoboka bwa WhatStock.';
 }

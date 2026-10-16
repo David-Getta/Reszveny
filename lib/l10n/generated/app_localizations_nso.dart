@@ -2233,4 +2233,27 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'Polokelo ya thekgo';
+
+  @override
+  String get backupSave => 'Boloka polokelo ya thekgo';
+
+  @override
+  String get backupSaveHint =>
+      'Tše o di ratago, mananeo, photefolio, ditemošo le dintlha tša gago faeleng e tee.';
+
+  @override
+  String get backupRestore => 'Bušetša go tšwa polokelong ya thekgo';
+
+  @override
+  String get backupRestoreHint =>
+      'E oketša seo se lego faeleng; ga go selo seo o nago le sona bjale se phumolwago.';
+
+  @override
+  String get backupRestored => 'Polokelo ya thekgo e bušeditšwe.';
+
+  @override
+  String get backupInvalid => 'Faele ye ga se polokelo ya thekgo ya WhatStock.';
 }

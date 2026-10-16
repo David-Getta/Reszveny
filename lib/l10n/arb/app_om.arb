@@ -593,5 +593,12 @@
   "watchListAddTo": "Tarreetti dabali",
   "watchListEmpty": "Tarree kana keessa ammallee aksiyoonni hin jiran. Dabaluuf furtuu tarree aksiyoona cinaa jiru tuqi.",
   "portfolioAskTitle": "Gaaffilee waa'ee poortfooliyoo keessanii",
-  "rangeYtd": "Bara kana"
+  "rangeYtd": "Bara kana",
+  "backupTitle": "Kuusaa deebii",
+  "backupSave": "Kuusaa deebii olkaa'i",
+  "backupSaveHint": "Filatamoo, tarreewwan, poortfooliyoo, akeekkachiisota fi yaadannoo kee faayilii tokko keessatti.",
+  "backupRestore": "Kuusaa deebii irraa deebisi",
+  "backupRestoreHint": "Waan faayilii keessa jiru ni dabala; waan amma qabdu keessaa homtuu hin haqamu.",
+  "backupRestored": "Kuusaan deebii deebi'eera.",
+  "backupInvalid": "Faayiliin kun kuusaa deebii WhatStock miti."
 }

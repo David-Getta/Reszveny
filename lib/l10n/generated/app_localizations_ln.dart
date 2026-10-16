@@ -2229,4 +2229,28 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Mobu oyo';
+
+  @override
+  String get backupTitle => 'Kopi ya kobomba';
+
+  @override
+  String get backupSave => 'Bomba kopi';
+
+  @override
+  String get backupSaveHint =>
+      'Oyo olingaka, ba liste, portefeuille, makebisi mpe ba note na yo na fisyé moko.';
+
+  @override
+  String get backupRestore => 'Zongisa uta na kopi ya kobomba';
+
+  @override
+  String get backupRestoreHint =>
+      'Ebakisaka oyo ezali na fisyé; eloko moko te ya oyo ozali na yango sikoyo ekolongwa.';
+
+  @override
+  String get backupRestored => 'Kopi ya kobomba ezongisami.';
+
+  @override
+  String get backupInvalid =>
+      'Fisyé oyo ezali kopi ya kobomba ya WhatStock te.';
 }

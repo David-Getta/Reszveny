@@ -2224,4 +2224,27 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'బ్యాకప్';
+
+  @override
+  String get backupSave => 'బ్యాకప్‌ను సేవ్ చేయి';
+
+  @override
+  String get backupSaveHint =>
+      'మీ ఇష్టమైనవి, జాబితాలు, పోర్ట్‌ఫోలియో, హెచ్చరికలు, గమనికలు ఒకే ఫైల్‌లో.';
+
+  @override
+  String get backupRestore => 'బ్యాకప్ నుండి పునరుద్ధరించు';
+
+  @override
+  String get backupRestoreHint =>
+      'ఫైల్‌లో ఉన్నదాన్ని జోడిస్తుంది; ఇప్పుడు మీ వద్ద ఉన్నదేదీ తొలగించబడదు.';
+
+  @override
+  String get backupRestored => 'బ్యాకప్ పునరుద్ధరించబడింది.';
+
+  @override
+  String get backupInvalid => 'ఈ ఫైల్ WhatStock బ్యాకప్ కాదు.';
 }

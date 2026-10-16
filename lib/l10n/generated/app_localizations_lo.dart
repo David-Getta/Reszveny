@@ -2193,4 +2193,27 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get rangeYtd => 'ປີນີ້';
+
+  @override
+  String get backupTitle => 'ການສຳຮອງຂໍ້ມູນ';
+
+  @override
+  String get backupSave => 'ບັນທຶກການສຳຮອງຂໍ້ມູນ';
+
+  @override
+  String get backupSaveHint =>
+      'ລາຍການທີ່ມັກ, ລາຍການ, ພອດໂຟລິໂອ, ການແຈ້ງເຕືອນ ແລະ ບັນທຶກຂອງທ່ານໃນໄຟລ໌ດຽວ.';
+
+  @override
+  String get backupRestore => 'ກູ້ຄືນຈາກການສຳຮອງຂໍ້ມູນ';
+
+  @override
+  String get backupRestoreHint =>
+      'ເພີ່ມສິ່ງທີ່ຢູ່ໃນໄຟລ໌; ບໍ່ມີຫຍັງທີ່ທ່ານມີຢູ່ຕອນນີ້ຖືກລຶບ.';
+
+  @override
+  String get backupRestored => 'ກູ້ຄືນການສຳຮອງຂໍ້ມູນແລ້ວ.';
+
+  @override
+  String get backupInvalid => 'ໄຟລ໌ນີ້ບໍ່ແມ່ນການສຳຮອງຂໍ້ມູນ WhatStock.';
 }

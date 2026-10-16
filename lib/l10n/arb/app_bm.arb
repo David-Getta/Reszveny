@@ -593,5 +593,12 @@
   "watchListAddTo": "Fara lisi kan",
   "watchListEmpty": "Aksiyɔn si tɛ nin lisi la fɔlɔ. Digi lisi butɔni kan aksiyɔn kɛrɛfɛ walasa k'a fara a kan.",
   "portfolioAskTitle": "Ɲininkaliw i ka aksiyɔn kɛsu kan",
-  "rangeYtd": "Nin san"
+  "rangeYtd": "Nin san",
+  "backupTitle": "Kopi lamaralen",
+  "backupSave": "Kopi lamaralen mara",
+  "backupSaveHint": "I ka diyanyelenw, lisiw, aksiyɔn kɛsu, lasɔminiw ani sɛbɛnniw fisiye kelen kɔnɔ.",
+  "backupRestore": "Segin ka bɔ kopi lamaralen na",
+  "backupRestoreHint": "A bɛ fisiye kɔnɔ fɛnw fara a kan; i bɛ fɛn minnu sɔrɔ sisan, olu si tɛna jɔsi.",
+  "backupRestored": "Kopi lamaralen seginna.",
+  "backupInvalid": "Nin fisiye tɛ WhatStock kopi lamaralen ye."
 }

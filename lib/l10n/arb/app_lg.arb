@@ -593,5 +593,12 @@
   "watchListAddTo": "Gattako ku lukalala",
   "watchListEmpty": "Tewannaba kubaawo sitoka ku lukalala luno. Nyiga eppeesa ly'olukalala eriri okumpi ne sitoka okugigattako.",
   "portfolioAskTitle": "Ebibuuzo ku migabo gyo",
-  "rangeYtd": "YTD"
+  "rangeYtd": "YTD",
+  "backupTitle": "Kkopi ey'obukuumi",
+  "backupSave": "Tereka kkopi ey'obukuumi",
+  "backupSaveHint": "By'oyagala, enkalala zo, emigabo gyo, okulabula n'ebiwandiiko byo mu fayiro emu.",
+  "backupRestore": "Zzaawo okuva mu kkopi ey'obukuumi",
+  "backupRestoreHint": "Kyongerako ebiri mu fayiro; tewali na kimu ky'olina kati ekijjibwawo.",
+  "backupRestored": "Kkopi ey'obukuumi ezziddwawo.",
+  "backupInvalid": "Fayiro eno si kkopi ey'obukuumi eya WhatStock."
 }

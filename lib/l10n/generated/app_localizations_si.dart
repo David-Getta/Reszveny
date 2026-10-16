@@ -2216,4 +2216,27 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'උපස්ථය';
+
+  @override
+  String get backupSave => 'උපස්ථයක් සුරකින්න';
+
+  @override
+  String get backupSaveHint =>
+      'ඔබේ ප්‍රියතම, ලැයිස්තු, කළඹ, ඇඟවීම් සහ සටහන් එක ගොනුවක.';
+
+  @override
+  String get backupRestore => 'උපස්ථයෙන් ප්‍රතිසාධනය කරන්න';
+
+  @override
+  String get backupRestoreHint =>
+      'ගොනුවේ ඇති දේ එක් කරයි; ඔබට දැන් ඇති කිසිවක් මකා නොදැමේ.';
+
+  @override
+  String get backupRestored => 'උපස්ථය ප්‍රතිසාධනය කළා.';
+
+  @override
+  String get backupInvalid => 'මෙම ගොනුව WhatStock උපස්ථයක් නොවේ.';
 }

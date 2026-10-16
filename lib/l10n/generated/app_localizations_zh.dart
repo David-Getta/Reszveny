@@ -2111,6 +2111,27 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get rangeYtd => '年初至今';
+
+  @override
+  String get backupTitle => '备份';
+
+  @override
+  String get backupSave => '保存备份';
+
+  @override
+  String get backupSaveHint => '您的收藏、列表、投资组合、提醒和笔记都在一个文件中。';
+
+  @override
+  String get backupRestore => '从备份恢复';
+
+  @override
+  String get backupRestoreHint => '添加文件中的内容；不会删除您现有的任何数据。';
+
+  @override
+  String get backupRestored => '备份已恢复。';
+
+  @override
+  String get backupInvalid => '此文件不是 WhatStock 备份。';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -4218,4 +4239,25 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get rangeYtd => '年初至今';
+
+  @override
+  String get backupTitle => '備份';
+
+  @override
+  String get backupSave => '儲存備份';
+
+  @override
+  String get backupSaveHint => '你的收藏、清單、投資組合、提示和筆記都在一個檔案中。';
+
+  @override
+  String get backupRestore => '從備份還原';
+
+  @override
+  String get backupRestoreHint => '加入檔案中的內容；不會刪除你現有的任何資料。';
+
+  @override
+  String get backupRestored => '備份已還原。';
+
+  @override
+  String get backupInvalid => '此檔案並非 WhatStock 備份。';
 }

@@ -593,5 +593,12 @@
   "watchListAddTo": "Idugang sa usa ka lista",
   "watchListEmpty": "Wala pay stock niining listaha. I-tap ang buton sa lista tupad sa stock aron idugang kini.",
   "portfolioAskTitle": "Mga pangutana bahin sa imong portfolio",
-  "rangeYtd": "YTD"
+  "rangeYtd": "YTD",
+  "backupTitle": "Backup",
+  "backupSave": "I-save ang backup",
+  "backupSaveHint": "Ang imong mga paborito, lista, portfolio, alerto ug nota sa usa ka file.",
+  "backupRestore": "I-restore gikan sa backup",
+  "backupRestoreHint": "Idugang ang anaa sa file; walay mapapas sa imong naa karon.",
+  "backupRestored": "Na-restore ang backup.",
+  "backupInvalid": "Kini nga file dili WhatStock backup."
 }

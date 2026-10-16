@@ -2225,4 +2225,27 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Sanadkan';
+
+  @override
+  String get backupTitle => 'Kayd nuqul ah';
+
+  @override
+  String get backupSave => 'Kaydi nuqul kayd ah';
+
+  @override
+  String get backupSaveHint =>
+      'Kuwa aad jeceshahay, liisaskaaga, portfoliyadaada, digniinahaaga iyo qoraalladaada hal fayl.';
+
+  @override
+  String get backupRestore => 'Ka soo celi nuqulka kaydka';
+
+  @override
+  String get backupRestoreHint =>
+      'Waxay ku daraysaa waxa faylka ku jira; waxba lagama tirtirayo waxa aad hadda haysato.';
+
+  @override
+  String get backupRestored => 'Nuqulka kaydka waa la soo celiyay.';
+
+  @override
+  String get backupInvalid => 'Faylkani maaha nuqul kayd ah oo WhatStock.';
 }

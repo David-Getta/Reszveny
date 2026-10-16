@@ -2227,4 +2227,27 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'ബാക്കപ്പ്';
+
+  @override
+  String get backupSave => 'ബാക്കപ്പ് സേവ് ചെയ്യുക';
+
+  @override
+  String get backupSaveHint =>
+      'നിങ്ങളുടെ പ്രിയപ്പെട്ടവ, ലിസ്റ്റുകൾ, പോർട്ട്ഫോളിയോ, അലേർട്ടുകൾ, കുറിപ്പുകൾ എന്നിവ ഒരു ഫയലിൽ.';
+
+  @override
+  String get backupRestore => 'ബാക്കപ്പിൽ നിന്ന് പുനഃസ്ഥാപിക്കുക';
+
+  @override
+  String get backupRestoreHint =>
+      'ഫയലിലുള്ളത് ചേർക്കുന്നു; ഇപ്പോഴുള്ളതൊന്നും ഇല്ലാതാക്കില്ല.';
+
+  @override
+  String get backupRestored => 'ബാക്കപ്പ് പുനഃസ്ഥാപിച്ചു.';
+
+  @override
+  String get backupInvalid => 'ഈ ഫയൽ ഒരു WhatStock ബാക്കപ്പ് അല്ല.';
 }

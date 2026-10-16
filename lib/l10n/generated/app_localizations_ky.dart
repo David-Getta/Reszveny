@@ -2221,4 +2221,27 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get rangeYtd => 'Быйыл';
+
+  @override
+  String get backupTitle => 'Камдык көчүрмө';
+
+  @override
+  String get backupSave => 'Камдык көчүрмөнү сактоо';
+
+  @override
+  String get backupSaveHint =>
+      'Тандалмаларыңыз, тизмелериңиз, портфелиңиз, эскертмелериңиз жана жазууларыңыз бир файлда.';
+
+  @override
+  String get backupRestore => 'Камдык көчүрмөдөн калыбына келтирүү';
+
+  @override
+  String get backupRestoreHint =>
+      'Файлдагыны кошот; азыркы маалыматтарыңыздан эч нерсе өчүрүлбөйт.';
+
+  @override
+  String get backupRestored => 'Камдык көчүрмө калыбына келтирилди.';
+
+  @override
+  String get backupInvalid => 'Бул файл WhatStock камдык көчүрмөсү эмес.';
 }

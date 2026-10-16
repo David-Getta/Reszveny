@@ -2182,4 +2182,26 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get rangeYtd => 'እዚ ዓመት';
+
+  @override
+  String get backupTitle => 'ምትኪእ ቅዳሕ';
+
+  @override
+  String get backupSave => 'ምትኪእ ቅዳሕ ዓቅብ';
+
+  @override
+  String get backupSaveHint =>
+      'ዝተፈተዉ፣ ዝርዝራት፣ ፖርትፎሊዮ፣ መጠንቀቕታታትን ማስታወሻታትን ኣብ ሓደ ፋይል።';
+
+  @override
+  String get backupRestore => 'ካብ ምትኪእ ቅዳሕ ምለስ';
+
+  @override
+  String get backupRestoreHint => 'ኣብቲ ፋይል ዘሎ ይውስኽ፤ ካብቲ ሕጂ ዘለኩም ዋላ ሓደ ኣይድምሰስን።';
+
+  @override
+  String get backupRestored => 'ምትኪእ ቅዳሕ ተመሊሱ።';
+
+  @override
+  String get backupInvalid => 'እዚ ፋይል ናይ WhatStock ምትኪእ ቅዳሕ ኣይኮነን።';
 }

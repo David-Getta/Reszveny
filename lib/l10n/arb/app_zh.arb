@@ -593,5 +593,12 @@
   "watchListAddTo": "添加到列表",
   "watchListEmpty": "此列表中还没有股票。点按股票旁的列表按钮即可添加。",
   "portfolioAskTitle": "关于你的投资组合的问题",
-  "rangeYtd": "年初至今"
+  "rangeYtd": "年初至今",
+  "backupTitle": "备份",
+  "backupSave": "保存备份",
+  "backupSaveHint": "您的收藏、列表、投资组合、提醒和笔记都在一个文件中。",
+  "backupRestore": "从备份恢复",
+  "backupRestoreHint": "添加文件中的内容；不会删除您现有的任何数据。",
+  "backupRestored": "备份已恢复。",
+  "backupInvalid": "此文件不是 WhatStock 备份。"
 }

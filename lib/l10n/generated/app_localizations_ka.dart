@@ -2219,4 +2219,27 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get rangeYtd => 'ამ წელს';
+
+  @override
+  String get backupTitle => 'სარეზერვო ასლი';
+
+  @override
+  String get backupSave => 'სარეზერვო ასლის შენახვა';
+
+  @override
+  String get backupSaveHint =>
+      'თქვენი რჩეულები, სიები, პორტფელი, შეტყობინებები და ჩანაწერები ერთ ფაილში.';
+
+  @override
+  String get backupRestore => 'სარეზერვო ასლიდან აღდგენა';
+
+  @override
+  String get backupRestoreHint =>
+      'ამატებს ფაილის შიგთავსს; თქვენი ამჟამინდელი მონაცემებიდან არაფერი იშლება.';
+
+  @override
+  String get backupRestored => 'სარეზერვო ასლი აღდგენილია.';
+
+  @override
+  String get backupInvalid => 'ეს ფაილი WhatStock-ის სარეზერვო ასლი არ არის.';
 }

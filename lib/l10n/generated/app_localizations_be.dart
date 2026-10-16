@@ -2278,4 +2278,28 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get rangeYtd => 'З пач. г.';
+
+  @override
+  String get backupTitle => 'Рэзервовая копія';
+
+  @override
+  String get backupSave => 'Захаваць рэзервовую копію';
+
+  @override
+  String get backupSaveHint =>
+      'Вашы абранае, спісы, партфель, апавяшчэнні і нататкі ў адным файле.';
+
+  @override
+  String get backupRestore => 'Аднавіць з рэзервовай копіі';
+
+  @override
+  String get backupRestoreHint =>
+      'Дадае тое, што ёсць у файле; нічога з вашых цяперашніх даных не выдаляецца.';
+
+  @override
+  String get backupRestored => 'Рэзервовая копія адноўлена.';
+
+  @override
+  String get backupInvalid =>
+      'Гэты файл не з\'яўляецца рэзервовай копіяй WhatStock.';
 }

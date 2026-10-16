@@ -2228,4 +2228,27 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'Sauvegarde';
+
+  @override
+  String get backupSave => 'Enregistrer une sauvegarde';
+
+  @override
+  String get backupSaveHint =>
+      'Vos favoris, listes, portefeuille, alertes et notes dans un seul fichier.';
+
+  @override
+  String get backupRestore => 'Restaurer une sauvegarde';
+
+  @override
+  String get backupRestoreHint =>
+      'Ajoute le contenu du fichier ; rien de ce que vous avez actuellement n’est supprimé.';
+
+  @override
+  String get backupRestored => 'Sauvegarde restaurée.';
+
+  @override
+  String get backupInvalid => 'Ce fichier n’est pas une sauvegarde WhatStock.';
 }

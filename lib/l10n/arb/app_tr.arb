@@ -593,5 +593,12 @@
   "watchListAddTo": "Listeye ekle",
   "watchListEmpty": "Bu listede henüz hisse yok. Eklemek için hissenin yanındaki liste düğmesine dokun.",
   "portfolioAskTitle": "Portföyün hakkında sorular",
-  "rangeYtd": "YBB"
+  "rangeYtd": "YBB",
+  "backupTitle": "Yedekleme",
+  "backupSave": "Yedek kaydet",
+  "backupSaveHint": "Favorileriniz, listeleriniz, portföyünüz, alarmlarınız ve notlarınız tek bir dosyada.",
+  "backupRestore": "Yedekten geri yükle",
+  "backupRestoreHint": "Dosyadakileri ekler; şu anki verilerinizden hiçbiri silinmez.",
+  "backupRestored": "Yedek geri yüklendi.",
+  "backupInvalid": "Bu dosya bir WhatStock yedeği değil."
 }

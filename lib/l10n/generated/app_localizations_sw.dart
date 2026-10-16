@@ -2219,4 +2219,27 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get rangeYtd => 'YTD';
+
+  @override
+  String get backupTitle => 'Nakala rudufu';
+
+  @override
+  String get backupSave => 'Hifadhi nakala rudufu';
+
+  @override
+  String get backupSaveHint =>
+      'Vipendwa, orodha, jalada la hisa, arifa na madokezo yako katika faili moja.';
+
+  @override
+  String get backupRestore => 'Rejesha kutoka nakala rudufu';
+
+  @override
+  String get backupRestoreHint =>
+      'Huongeza kilicho kwenye faili; hakuna ulicho nacho sasa kitakachofutwa.';
+
+  @override
+  String get backupRestored => 'Nakala rudufu imerejeshwa.';
+
+  @override
+  String get backupInvalid => 'Faili hii si nakala rudufu ya WhatStock.';
 }
