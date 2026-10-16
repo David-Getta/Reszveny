@@ -549,5 +549,14 @@
   "briefTitle": "ଆଜି ଆପଣଙ୍କ ସେୟାର ସହ",
   "briefButton": "ଆଜିର ସାରାଂଶ",
   "briefHint": "ଆଜି ଆପଣଙ୍କ ପୋର୍ଟଫୋଲିଓ ଓ ପସନ୍ଦର ସେୟାର କିପରି ଚାଲିଲା ଓ ସଦ୍ୟତମ ଖବର ସେଗୁଡ଼ିକ ବିଷୟରେ କ’ଣ କହୁଛି, ତାହାର ଛୋଟ AI ସାରାଂଶ। ଏଥିରେ କୌଣସି ବିଶ୍ଳେଷଣ ଖର୍ଚ୍ଚ ହୁଏ ନାହିଁ।",
-  "briefRefresh": "ଅପଡେଟ୍ କରନ୍ତୁ"
+  "briefRefresh": "ଅପଡେଟ୍ କରନ୍ତୁ",
+  "sectionEarnings": "ତ୍ରୈମାସିକ ଫଳାଫଳ",
+  "earningsNext": "ପରବର୍ତ୍ତୀ ରିପୋର୍ଟ: {date}",
+  "earningsExpected": "ପ୍ରତ୍ୟାଶିତ EPS",
+  "earningsReported": "ଘୋଷିତ EPS",
+  "earningsBeats": "{total, plural, =1{1ଟି ମଧ୍ୟରୁ {beats}ଟି ତ୍ରୈମାସିକରେ ପ୍ରତ୍ୟାଶିତ EPS ସହ ସମାନ ବା ଅଧିକ} other{ଗତ {total}ଟି ମଧ୍ୟରୁ {beats}ଟି ତ୍ରୈମାସିକରେ ପ୍ରତ୍ୟାଶିତ EPS ସହ ସମାନ ବା ଅଧିକ}}",
+  "earningsReminderTomorrow": "{symbol} କାଲି ତ୍ରୈମାସିକ ଫଳାଫଳ ପ୍ରକାଶ କରିବ",
+  "earningsReminderToday": "{symbol} ଆଜି ତ୍ରୈମାସିକ ଫଳାଫଳ ପ୍ରକାଶ କରିବ",
+  "earningsRemindersTitle": "ଫଳାଫଳ ସ୍ମାରକ",
+  "earningsRemindersSubtitle": "ଆପଣଙ୍କ ପସନ୍ଦ କିମ୍ବା ପୋର୍ଟଫୋଲିଓର ଷ୍ଟକ୍ ତ୍ରୈମାସିକ ଫଳାଫଳ ପ୍ରକାଶ କରିବାର ପୂର୍ବ ଦିନ ଏକ ବିଜ୍ଞପ୍ତି"
 }

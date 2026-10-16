@@ -2030,4 +2030,46 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get briefRefresh => 'განახლება';
+
+  @override
+  String get sectionEarnings => 'კვარტალური შედეგები';
+
+  @override
+  String earningsNext(String date) {
+    return 'შემდეგი ანგარიში: $date';
+  }
+
+  @override
+  String get earningsExpected => 'მოსალოდნელი EPS';
+
+  @override
+  String get earningsReported => 'გამოქვეყნებული EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other: 'EPS მოსალოდნელის ტოლი ან მეტი ბოლო $total კვარტალიდან $beats-ში',
+      one: 'EPS მოსალოდნელის ტოლი ან მეტი 1 კვარტალიდან $beats-ში',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol ხვალ კვარტალურ შედეგებს აქვეყნებს';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol დღეს კვარტალურ შედეგებს აქვეყნებს';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'შედეგების შეხსენებები';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'შეტყობინება ერთი დღით ადრე, სანამ შენი რჩეულების ან პორტფელის აქციები კვარტალურ შედეგებს გამოაქვეყნებს';
 }

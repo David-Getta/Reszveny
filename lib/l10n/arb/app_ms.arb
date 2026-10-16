@@ -549,5 +549,14 @@
   "briefTitle": "Hari ini dengan saham anda",
   "briefButton": "Ringkaskan hari ini",
   "briefHint": "Ringkasan AI ringkas tentang pergerakan portfolio dan kegemaran anda hari ini serta apa yang dikatakan berita terkini tentangnya. Tidak menggunakan analisis.",
-  "briefRefresh": "Kemas kini"
+  "briefRefresh": "Kemas kini",
+  "sectionEarnings": "Keputusan suku tahunan",
+  "earningsNext": "Laporan seterusnya: {date}",
+  "earningsExpected": "EPS dijangka",
+  "earningsReported": "EPS dilaporkan",
+  "earningsBeats": "{total, plural, =1{Menyamai atau melebihi EPS dijangka dalam {beats} daripada 1 suku tahun} other{Menyamai atau melebihi EPS dijangka dalam {beats} daripada {total} suku tahun terakhir}}",
+  "earningsReminderTomorrow": "{symbol} mengumumkan keputusan suku tahunan esok",
+  "earningsReminderToday": "{symbol} mengumumkan keputusan suku tahunan hari ini",
+  "earningsRemindersTitle": "Peringatan keputusan",
+  "earningsRemindersSubtitle": "Pemberitahuan sehari sebelum saham kegemaran atau portfolio anda mengumumkan keputusan suku tahunan"
 }

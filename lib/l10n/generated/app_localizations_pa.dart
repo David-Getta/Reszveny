@@ -2024,4 +2024,47 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get briefRefresh => 'ਅੱਪਡੇਟ ਕਰੋ';
+
+  @override
+  String get sectionEarnings => 'ਤਿਮਾਹੀ ਨਤੀਜੇ';
+
+  @override
+  String earningsNext(String date) {
+    return 'ਅਗਲੀ ਰਿਪੋਰਟ: $date';
+  }
+
+  @override
+  String get earningsExpected => 'ਉਮੀਦ ਕੀਤਾ EPS';
+
+  @override
+  String get earningsReported => 'ਜਾਰੀ ਕੀਤਾ EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'ਪਿਛਲੀਆਂ $total ਵਿੱਚੋਂ $beats ਤਿਮਾਹੀਆਂ ਵਿੱਚ ਉਮੀਦ ਕੀਤੇ EPS ਦੇ ਬਰਾਬਰ ਜਾਂ ਵੱਧ',
+      one: '1 ਵਿੱਚੋਂ $beats ਤਿਮਾਹੀ ਵਿੱਚ ਉਮੀਦ ਕੀਤੇ EPS ਦੇ ਬਰਾਬਰ ਜਾਂ ਵੱਧ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol ਕੱਲ੍ਹ ਤਿਮਾਹੀ ਨਤੀਜੇ ਜਾਰੀ ਕਰੇਗਾ';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol ਅੱਜ ਤਿਮਾਹੀ ਨਤੀਜੇ ਜਾਰੀ ਕਰੇਗਾ';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'ਨਤੀਜਿਆਂ ਦੀ ਯਾਦ-ਦਹਾਨੀ';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'ਤੁਹਾਡੇ ਮਨਪਸੰਦ ਜਾਂ ਪੋਰਟਫੋਲੀਓ ਦੇ ਸ਼ੇਅਰਾਂ ਦੇ ਤਿਮਾਹੀ ਨਤੀਜੇ ਆਉਣ ਤੋਂ ਇੱਕ ਦਿਨ ਪਹਿਲਾਂ ਸੂਚਨਾ';
 }

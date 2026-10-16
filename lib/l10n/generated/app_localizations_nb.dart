@@ -2028,4 +2028,47 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Oppdater';
+
+  @override
+  String get sectionEarnings => 'Kvartalsresultater';
+
+  @override
+  String earningsNext(String date) {
+    return 'Neste rapport: $date';
+  }
+
+  @override
+  String get earningsExpected => 'Forventet EPS';
+
+  @override
+  String get earningsReported => 'Rapportert EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'På eller over forventet EPS i $beats av de siste $total kvartalene',
+      one: 'På eller over forventet EPS i $beats av 1 kvartal',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol legger frem kvartalsresultat i morgen';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol legger frem kvartalsresultat i dag';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Resultatpåminnelser';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Et varsel dagen før favorittene dine eller aksjene i porteføljen din legger frem kvartalsresultat';
 }

@@ -2079,4 +2079,47 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Aktualizovat';
+
+  @override
+  String get sectionEarnings => 'Výsledky';
+
+  @override
+  String earningsNext(String date) {
+    return 'Další zpráva: $date';
+  }
+
+  @override
+  String get earningsExpected => 'Očekávané EPS';
+
+  @override
+  String get earningsReported => 'Vykázané EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Na úrovni očekávaného EPS nebo výš v $beats z posledních $total čtvrtletí',
+      one: 'Na úrovni očekávaného EPS nebo výš v $beats z 1 čtvrtletí',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol zítra zveřejní čtvrtletní výsledky';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol dnes zveřejní čtvrtletní výsledky';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Připomínky výsledků';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Upozornění den předtím, než akcie z vašich oblíbených nebo portfolia zveřejní čtvrtletní výsledky';
 }

@@ -2038,4 +2038,47 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Zza buggya';
+
+  @override
+  String get sectionEarnings => 'Ebivudde mu kitundu ky\'omwaka';
+
+  @override
+  String earningsNext(String date) {
+    return 'Lipoota eddako: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS esuubirwa';
+
+  @override
+  String get earningsReported => 'EPS eyalangiriddwa';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Etuuse oba esinze EPS esuubirwa mu $beats ku bitundu by\'omwaka $total ebiyise',
+      one: 'Etuuse oba esinze EPS esuubirwa mu $beats ku kitundu ky\'omwaka 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol egenda kufulumya ebivudde mu kitundu ky\'omwaka enkya';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol efulumya ebivudde mu kitundu ky\'omwaka leero';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Okujjukiza ku bivudde';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Obubaka olunaku lumu nga emigabo gy\'oyagala oba egiri mu portfolio yo tennafulumya bivudde mu kitundu ky\'omwaka';
 }

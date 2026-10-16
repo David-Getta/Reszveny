@@ -549,5 +549,14 @@
   "briefTitle": "Maanta iyo saamiyadaada",
   "briefButton": "Soo koob maanta",
   "briefHint": "Soo koobid AI oo gaaban oo ku saabsan sida boortafooliyadaada iyo kuwa aad jeceshahay maanta isu beddeleen iyo waxa wararka ugu dambeeyay ka sheegayaan. Ma isticmaalo falanqayn.",
-  "briefRefresh": "Cusboonaysii"
+  "briefRefresh": "Cusboonaysii",
+  "sectionEarnings": "Natiijooyinka",
+  "earningsNext": "Warbixinta xigta: {date}",
+  "earningsExpected": "EPS la filayo",
+  "earningsReported": "EPS la sheegay",
+  "earningsBeats": "{total, plural, =1{La mid ama ka sarreeya EPS-ka la filayo {beats} ka mid ah 1 rubuc} other{La mid ama ka sarreeya EPS-ka la filayo {beats} ka mid ah {total}-dii rubuc ee u dambeeyay}}",
+  "earningsReminderTomorrow": "{symbol} wuxuu berri soo bandhigayaa natiijooyinka rubuc-sanadeedka",
+  "earningsReminderToday": "{symbol} wuxuu maanta soo bandhigayaa natiijooyinka rubuc-sanadeedka",
+  "earningsRemindersTitle": "Xasuusinta natiijooyinka",
+  "earningsRemindersSubtitle": "Ogeysiis maalin ka hor inta aysan saamiyada aad jeceshahay ama kuwa boortfoliyahaaga soo bandhigin natiijooyinka rubuc-sanadeedka"
 }

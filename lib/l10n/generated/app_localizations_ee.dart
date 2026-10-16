@@ -2032,4 +2032,47 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Wɔe yeye';
+
+  @override
+  String get sectionEarnings => 'Viɖe ƒe akɔntabubu';
+
+  @override
+  String earningsNext(String date) {
+    return 'Akɔntabubu si kplɔe ɖo: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS si wole mɔ kpɔm';
+
+  @override
+  String get earningsReported => 'EPS si woɖe gbeƒã';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'EPS su esi wole mɔ kpɔm alo wu eya le $beats me le ɣleti etɔ̃ $total siwo va yi me',
+      one: 'EPS su esi wole mɔ kpɔm alo wu eya le $beats me le ɣleti etɔ̃ 1 me',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol aɖe ɣleti etɔ̃ ƒe akɔntabubu ɖe go etsɔ';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol le ɣleti etɔ̃ ƒe akɔntabubu ɖem ɖe go egbe';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Akɔntabubu ŋuti ŋkuɖodziwo';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Gbeƒãɖeɖe ŋkeke ɖeka do ŋgɔ na esime wò lɔlɔ̃tɔwo alo wò portfolio me gadzraɖoƒenyawo naɖe ɣleti etɔ̃ ƒe akɔntabubu ɖe go';
 }

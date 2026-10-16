@@ -549,5 +549,14 @@
   "briefTitle": "Bugun aksiyalaringiz bilan",
   "briefButton": "Bugunni xulosa qilish",
   "briefHint": "Portfelingiz va sevimlilaringiz bugun qanday harakatlangani va so‘nggi yangiliklar ular haqida nima deyotgani haqida qisqa AI xulosasi. Tahlil sarflanmaydi.",
-  "briefRefresh": "Yangilash"
+  "briefRefresh": "Yangilash",
+  "sectionEarnings": "Choraklik natijalar",
+  "earningsNext": "Keyingi hisobot: {date}",
+  "earningsExpected": "Kutilgan EPS",
+  "earningsReported": "Eʼlon qilingan EPS",
+  "earningsBeats": "{total, plural, =1{1 chorakdan {beats} tasida kutilgan EPS darajasida yoki undan yuqori} other{Soʻnggi {total} chorakdan {beats} tasida kutilgan EPS darajasida yoki undan yuqori}}",
+  "earningsReminderTomorrow": "{symbol} ertaga choraklik natijalarini e’lon qiladi",
+  "earningsReminderToday": "{symbol} bugun choraklik natijalarini e’lon qiladi",
+  "earningsRemindersTitle": "Natijalar eslatmalari",
+  "earningsRemindersSubtitle": "Sevimlilaringiz yoki portfelingizdagi aksiyalar choraklik natijalarini e’lon qilishidan bir kun oldin bildirishnoma"
 }

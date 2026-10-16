@@ -549,5 +549,14 @@
   "briefTitle": "आइ अहाँक शेयरक संग",
   "briefButton": "आइक सारांश",
   "briefHint": "आइ अहाँक पोर्टफोलियो आ पसिनक शेयर कोना चलल आ ताजा समाचार ओकरा बारेमे की कहैत अछि, तकर छोट AI सारांश। एहिमे कोनो विश्लेषण खर्च नहि होइत अछि।",
-  "briefRefresh": "अपडेट करू"
+  "briefRefresh": "अपडेट करू",
+  "sectionEarnings": "त्रैमासिक परिणाम",
+  "earningsNext": "अगिला रिपोर्ट: {date}",
+  "earningsExpected": "अनुमानित EPS",
+  "earningsReported": "रिपोर्ट कएल गेल EPS",
+  "earningsBeats": "{total, plural, =1{1 मेसँ {beats} तिमाहीमे EPS अनुमानक बराबर वा ओहिसँ बेसी} other{पछिला {total} मेसँ {beats} तिमाहीमे EPS अनुमानक बराबर वा ओहिसँ बेसी}}",
+  "earningsReminderTomorrow": "{symbol}क त्रैमासिक परिणाम काल्हि",
+  "earningsReminderToday": "{symbol}क त्रैमासिक परिणाम आइ",
+  "earningsRemindersTitle": "परिणाम रिमाइंडर",
+  "earningsRemindersSubtitle": "अहाँक पसंदीदा वा पोर्टफोलियोक शेयरक त्रैमासिक परिणामसँ एक दिन पहिने सूचना"
 }

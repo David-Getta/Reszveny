@@ -2043,4 +2043,48 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get briefRefresh => 'I-update';
+
+  @override
+  String get sectionEarnings => 'Kada-kuarter a resulta';
+
+  @override
+  String earningsNext(String date) {
+    return 'Sumaruno a report: $date';
+  }
+
+  @override
+  String get earningsExpected => 'Namnamaen nga EPS';
+
+  @override
+  String get earningsReported => 'Naireport nga EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Agpada wenno nangatngato ngem ti namnamaen nga EPS iti $beats ti naudi a $total a kuarter',
+      one:
+          'Agpada wenno nangatngato ngem ti namnamaen nga EPS iti $beats ti 1 a kuarter',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return 'Iwaragawag ti $symbol ti kada-kuarter a resulta inton bigat';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return 'Iwaragawag ti $symbol ti kada-kuarter a resulta ita nga aldaw';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Pammalagip ti resulta';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Pakaammo iti aldaw sakbay nga iwaragawag dagiti stock iti paboritom wenno portfoliom ti kada-kuarter a resultada';
 }

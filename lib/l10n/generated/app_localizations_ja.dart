@@ -1958,4 +1958,45 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get briefRefresh => '更新';
+
+  @override
+  String get sectionEarnings => '決算';
+
+  @override
+  String earningsNext(String date) {
+    return '次回決算: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS 予想';
+
+  @override
+  String get earningsReported => 'EPS 実績';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other: '直近 $total 四半期中 $beats 回で EPS が予想以上',
+      one: '1 四半期中 $beats 回で EPS が予想以上',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbolは明日、四半期決算を発表します';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbolは本日、四半期決算を発表します';
+  }
+
+  @override
+  String get earningsRemindersTitle => '決算リマインダー';
+
+  @override
+  String get earningsRemindersSubtitle => 'お気に入りやポートフォリオの銘柄が四半期決算を発表する前日に通知します';
 }

@@ -1966,4 +1966,46 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get briefRefresh => '업데이트';
+
+  @override
+  String get sectionEarnings => '실적';
+
+  @override
+  String earningsNext(String date) {
+    return '다음 실적 발표: $date';
+  }
+
+  @override
+  String get earningsExpected => '예상 EPS';
+
+  @override
+  String get earningsReported => '실제 EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other: '최근 $total개 분기 중 $beats개 분기에서 EPS 예상치 이상',
+      one: '1개 분기 중 $beats개 분기에서 EPS 예상치 이상',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol 내일 분기 실적 발표';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol 오늘 분기 실적 발표';
+  }
+
+  @override
+  String get earningsRemindersTitle => '실적 발표 알림';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      '즐겨찾기나 포트폴리오 종목의 분기 실적 발표 하루 전에 알려 드립니다';
 }

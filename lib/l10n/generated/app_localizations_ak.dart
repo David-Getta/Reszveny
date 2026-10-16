@@ -2027,4 +2027,48 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Yɛ no foforo';
+
+  @override
+  String get sectionEarnings => 'Mfaso akontaabu';
+
+  @override
+  String earningsNext(String date) {
+    return 'Akontaabu a ɛdi hɔ: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS a wɔhwɛ kwan';
+
+  @override
+  String get earningsReported => 'EPS a wɔbɔɔ ho amanneɛ';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          '$beats wɔ abosome mmiɛnsa mmerɛ $total a atwam no mu: EPS duu nea wɔhwɛɛ kwan anaa ɛboroo so',
+      one:
+          '$beats wɔ abosome mmiɛnsa mmerɛ 1 mu: EPS duu nea wɔhwɛɛ kwan anaa ɛboroo so',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol bɛda n’abosome mmiɛnsa akontaabu adi ɔkyena';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol da n’abosome mmiɛnsa akontaabu adi ɛnnɛ';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Akontaabu ho nkaebɔ';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Wɔbɛbɔ wo amanneɛ da koro ansa na nea wopɛ anaa wo portfolio mu stock bi bɛda abosome mmiɛnsa akontaabu adi';
 }

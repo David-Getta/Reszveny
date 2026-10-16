@@ -549,5 +549,14 @@
   "briefTitle": "Nhasi nemasheya ako",
   "briefButton": "Pfupikisa nhasi",
   "briefHint": "Pfupiso pfupi yeAI yekuti portfolio yako nezvaunofarira zvafamba sei nhasi uye kuti nhau dzichangobva dzinoti kudii. Hazvishandisi ongororo.",
-  "briefRefresh": "Gadzirisa"
+  "briefRefresh": "Gadzirisa",
+  "sectionEarnings": "Mhedzisiro yekota",
+  "earningsNext": "Chirevo chinotevera: {date}",
+  "earningsExpected": "EPS inotarisirwa",
+  "earningsReported": "EPS yakaziviswa",
+  "earningsBeats": "{total, plural, =1{Yakaenzana kana kupfuura EPS inotarisirwa mukota {beats} kubva pa 1} other{Yakaenzana kana kupfuura EPS inotarisirwa mumakota {beats} kubva pa {total} ekupedzisira}}",
+  "earningsReminderTomorrow": "{symbol} ichaburitsa mhedzisiro yekota mangwana",
+  "earningsReminderToday": "{symbol} ichaburitsa mhedzisiro yekota nhasi",
+  "earningsRemindersTitle": "Zviyeuchidzo zvemhedzisiro",
+  "earningsRemindersSubtitle": "Chiziviso zuva rimwe zvaunofarira kana masheya ari mupotiforiyo yako asati aburitsa mhedzisiro yekota"
 }

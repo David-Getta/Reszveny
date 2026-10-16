@@ -549,5 +549,14 @@
   "briefTitle": "Heute bei deinen Aktien",
   "briefButton": "Tag zusammenfassen",
   "briefHint": "Eine kurze KI-Zusammenfassung, wie sich dein Depot und deine Favoriten heute bewegt haben und was die neuesten Nachrichten dazu sagen. Verbraucht keine Analyse.",
-  "briefRefresh": "Aktualisieren"
+  "briefRefresh": "Aktualisieren",
+  "sectionEarnings": "Quartalsberichte",
+  "earningsNext": "Nächster Bericht: {date}",
+  "earningsExpected": "Erwartetes EPS",
+  "earningsReported": "Gemeldetes EPS",
+  "earningsBeats": "{total, plural, =1{In {beats} von 1 Quartal auf oder über dem erwarteten EPS} other{In {beats} der letzten {total} Quartale auf oder über dem erwarteten EPS}}",
+  "earningsReminderTomorrow": "{symbol} legt morgen Quartalszahlen vor",
+  "earningsReminderToday": "{symbol} legt heute Quartalszahlen vor",
+  "earningsRemindersTitle": "Erinnerung an Quartalszahlen",
+  "earningsRemindersSubtitle": "Eine Benachrichtigung am Vortag, wenn Aktien aus deinen Favoriten oder deinem Portfolio Quartalszahlen vorlegen"
 }

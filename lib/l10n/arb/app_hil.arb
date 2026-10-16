@@ -549,5 +549,14 @@
   "briefTitle": "Subong upod ang imo mga stock",
   "briefButton": "I-summarize subong",
   "briefHint": "Malip-ot nga AI summary kon paano naghulag subong ang imo portfolio kag mga paborito kag ano ang ginasiling sang pinakabag-o nga balita parte sa ila. Indi ini maggamit sang pagtuki.",
-  "briefRefresh": "I-update"
+  "briefRefresh": "I-update",
+  "sectionEarnings": "Resulta kada kwarter",
+  "earningsNext": "Masunod nga report: {date}",
+  "earningsExpected": "Ginapaabot nga EPS",
+  "earningsReported": "Gin-report nga EPS",
+  "earningsBeats": "{total, plural, =1{Pareho ukon labaw sa ginapaabot nga EPS sa {beats} sang 1 ka kwarter} other{Pareho ukon labaw sa ginapaabot nga EPS sa {beats} sang katapusan nga {total} ka kwarter}}",
+  "earningsReminderTomorrow": "Ang {symbol} magapagwa sang resulta kada kwarter buwas",
+  "earningsReminderToday": "Ang {symbol} magapagwa sang resulta kada kwarter subong",
+  "earningsRemindersTitle": "Mga pahanumdom sa resulta",
+  "earningsRemindersSubtitle": "Pahibalo isa ka adlaw antes magpagwa sang resulta kada kwarter ang mga stock sa imo mga paborito ukon portfolio"
 }

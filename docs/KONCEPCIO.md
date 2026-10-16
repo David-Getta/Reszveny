@@ -213,6 +213,8 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 5ag | „Hírek a részvényeidről” a kezdőképernyőn: a portfólió és a kedvencek friss hírei egy listában (újabb elöl, ismétlés nélkül, egy hétig), külön oldallal | ✅ kész |
 | 5ah | Kedvencek oldal (figyelőlista): ár, napi változás, 30 napos mini-grafikon; rendezés napi változás vagy ticker szerint, átrendezés húzással, törlés elhúzással visszavonással | ✅ kész |
 | 5ai | „A nap a részvényeiddel”: napi AI-összefoglaló a portfólió és a kedvencek mai mozgásáról és friss híreiről a kezdőképernyőn (a kérdéskeretből, elemzést nem fogyaszt) | ✅ kész |
+| 5aj | Gyorsjelentések kártya a részvény oldalán: következő jelentés (nap, napszak, várt EPS), az utolsó 4 negyedév várt és jelentett EPS-e pontdiagramon a meglepetéssel, és hányszor teljesítette a várakozást | ✅ kész |
+| 5ak | Gyorsjelentés-emlékeztető: asztali értesítés a kedvencek és a portfólió részvényeinek jelentése előtti napon (vagy aznap), egyszer; koppintásra a részvény nyílik; a Beállításokban kikapcsolható | ✅ kész |
 | 5j | Telefonos háttér-értesítés (riasztás) szerverről, APNs / FCM | 🟡 első lépés kész: a szerver 10 percenként nézi a belépett fiókok szinkronizált riasztásait, és e-mailben szól (csukott appnál is, kikapcsolható); a telefonos push (APNs / FCM) a Firebase-projekt és az Apple-kulcs után |
 | 5k | Bolti adatlapok 120 nyelven, képernyőképek, ikon, előnézeti videó | 🟡 adatlap-szövegek 70 bolti nyelven (fastlane-mappa, `docs/BOLTI_ADATLAP.md`), feliratos bolti képek a teszt-harnessből a boltok méreteiben; előnézeti videó és a nem latin írású képek a natív buildből később |
 

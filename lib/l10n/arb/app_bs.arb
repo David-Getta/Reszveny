@@ -549,5 +549,14 @@
   "briefTitle": "Danas s vašim dionicama",
   "briefButton": "Sažmi današnji dan",
   "briefHint": "Kratak AI sažetak o tome kako su se danas kretali vaš portfolio i favoriti i šta najnovije vijesti govore o njima. Ne troši analizu.",
-  "briefRefresh": "Ažuriraj"
+  "briefRefresh": "Ažuriraj",
+  "sectionEarnings": "Zarada",
+  "earningsNext": "Sljedeći izvještaj: {date}",
+  "earningsExpected": "Očekivani EPS",
+  "earningsReported": "Objavljeni EPS",
+  "earningsBeats": "{total, plural, =1{Na nivou očekivanog EPS-a ili iznad u {beats} od 1 kvartala} other{Na nivou očekivanog EPS-a ili iznad u {beats} od posljednjih {total} kvartala}}",
+  "earningsReminderTomorrow": "{symbol} sutra objavljuje kvartalne rezultate",
+  "earningsReminderToday": "{symbol} danas objavljuje kvartalne rezultate",
+  "earningsRemindersTitle": "Podsjetnici na rezultate",
+  "earningsRemindersSubtitle": "Obavještenje dan prije nego što dionice iz vaših favorita ili portfolija objave kvartalne rezultate"
 }

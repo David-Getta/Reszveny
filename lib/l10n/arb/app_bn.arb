@@ -549,5 +549,14 @@
   "briefTitle": "আজ আপনার শেয়ারগুলোর সাথে",
   "briefButton": "আজকের সারাংশ",
   "briefHint": "আজ আপনার পোর্টফোলিও ও পছন্দের শেয়ার কীভাবে চলেছে এবং সর্বশেষ খবর সেগুলো নিয়ে কী বলছে, তার একটি ছোট AI সারাংশ। এতে কোনো বিশ্লেষণ খরচ হয় না।",
-  "briefRefresh": "আপডেট"
+  "briefRefresh": "আপডেট",
+  "sectionEarnings": "আয়",
+  "earningsNext": "পরবর্তী রিপোর্ট: {date}",
+  "earningsExpected": "প্রত্যাশিত EPS",
+  "earningsReported": "ঘোষিত EPS",
+  "earningsBeats": "{total, plural, =1{1টি ত্রৈমাসিকের {beats}টিতে প্রত্যাশিত EPS-এর সমান বা বেশি} other{শেষ {total}টি ত্রৈমাসিকের {beats}টিতে প্রত্যাশিত EPS-এর সমান বা বেশি}}",
+  "earningsReminderTomorrow": "{symbol} আগামীকাল ত্রৈমাসিক ফলাফল প্রকাশ করবে",
+  "earningsReminderToday": "{symbol} আজ ত্রৈমাসিক ফলাফল প্রকাশ করবে",
+  "earningsRemindersTitle": "ফলাফলের রিমাইন্ডার",
+  "earningsRemindersSubtitle": "আপনার পছন্দের বা পোর্টফোলিওর শেয়ারের ত্রৈমাসিক ফলাফল প্রকাশের আগের দিন একটি বিজ্ঞপ্তি"
 }

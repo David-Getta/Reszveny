@@ -549,5 +549,14 @@
   "briefTitle": "Имрӯз бо саҳмияҳои шумо",
   "briefButton": "Хулосаи имрӯз",
   "briefHint": "Хулосаи кӯтоҳи AI дар бораи он ки портфел ва интихобшудаҳои шумо имрӯз чӣ гуна тағйир ёфтанд ва хабарҳои охирин дар бораи онҳо чӣ мегӯянд. Таҳлил сарф намешавад.",
-  "briefRefresh": "Навсозӣ"
+  "briefRefresh": "Навсозӣ",
+  "sectionEarnings": "Натиҷаҳои семоҳа",
+  "earningsNext": "Ҳисоботи навбатӣ: {date}",
+  "earningsExpected": "EPS-и пешбинишуда",
+  "earningsReported": "EPS-и эълоншуда",
+  "earningsBeats": "{total, plural, =1{Дар {beats} аз 1 семоҳа баробар ё болотар аз EPS-и пешбинишуда} other{Дар {beats} аз {total} семоҳаи охир баробар ё болотар аз EPS-и пешбинишуда}}",
+  "earningsReminderTomorrow": "{symbol} фардо натиҷаҳои семоҳаро эълон мекунад",
+  "earningsReminderToday": "{symbol} имрӯз натиҷаҳои семоҳаро эълон мекунад",
+  "earningsRemindersTitle": "Ёдраскуниҳои натиҷаҳо",
+  "earningsRemindersSubtitle": "Огоҳинома як рӯз пеш аз он ки саҳмияҳои интихобшуда ё портфели шумо натиҷаҳои семоҳаро эълон кунанд"
 }

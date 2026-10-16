@@ -549,5 +549,14 @@
   "briefTitle": "Dnes s vašimi akciemi",
   "briefButton": "Shrnout dnešek",
   "briefHint": "Krátké AI shrnutí, jak se dnes pohybovalo vaše portfolio a oblíbené akcie a co o nich říkají nejnovější zprávy. Nespotřebuje analýzu.",
-  "briefRefresh": "Aktualizovat"
+  "briefRefresh": "Aktualizovat",
+  "sectionEarnings": "Výsledky",
+  "earningsNext": "Další zpráva: {date}",
+  "earningsExpected": "Očekávané EPS",
+  "earningsReported": "Vykázané EPS",
+  "earningsBeats": "{total, plural, =1{Na úrovni očekávaného EPS nebo výš v {beats} z 1 čtvrtletí} other{Na úrovni očekávaného EPS nebo výš v {beats} z posledních {total} čtvrtletí}}",
+  "earningsReminderTomorrow": "{symbol} zítra zveřejní čtvrtletní výsledky",
+  "earningsReminderToday": "{symbol} dnes zveřejní čtvrtletní výsledky",
+  "earningsRemindersTitle": "Připomínky výsledků",
+  "earningsRemindersSubtitle": "Upozornění den předtím, než akcie z vašich oblíbených nebo portfolia zveřejní čtvrtletní výsledky"
 }

@@ -549,5 +549,14 @@
   "briefTitle": "今日のあなたの銘柄",
   "briefButton": "今日をまとめる",
   "briefHint": "ポートフォリオとお気に入り銘柄が今日どう動いたか、最新ニュースが何を伝えているかをAIが短くまとめます。分析回数は消費しません。",
-  "briefRefresh": "更新"
+  "briefRefresh": "更新",
+  "sectionEarnings": "決算",
+  "earningsNext": "次回決算: {date}",
+  "earningsExpected": "EPS 予想",
+  "earningsReported": "EPS 実績",
+  "earningsBeats": "{total, plural, =1{1 四半期中 {beats} 回で EPS が予想以上} other{直近 {total} 四半期中 {beats} 回で EPS が予想以上}}",
+  "earningsReminderTomorrow": "{symbol}は明日、四半期決算を発表します",
+  "earningsReminderToday": "{symbol}は本日、四半期決算を発表します",
+  "earningsRemindersTitle": "決算リマインダー",
+  "earningsRemindersSubtitle": "お気に入りやポートフォリオの銘柄が四半期決算を発表する前日に通知します"
 }

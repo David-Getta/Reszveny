@@ -549,5 +549,14 @@
   "briefTitle": "Bu gün səhmlərinizlə",
   "briefButton": "Bugünü xülasə et",
   "briefHint": "Portfelinizin və seçilmişlərinizin bu gün necə dəyişdiyinə və son xəbərlərin onlar haqqında nə dediyinə dair qısa süni intellekt xülasəsi. Təhlil sərf etmir.",
-  "briefRefresh": "Yenilə"
+  "briefRefresh": "Yenilə",
+  "sectionEarnings": "Mənfəət",
+  "earningsNext": "Növbəti hesabat: {date}",
+  "earningsExpected": "Gözlənilən EPS",
+  "earningsReported": "Açıqlanan EPS",
+  "earningsBeats": "{total, plural, =1{1 rübdən {beats} rübdə gözlənilən EPS səviyyəsində və ya ondan yuxarı} other{Son {total} rübdən {beats} rübdə gözlənilən EPS səviyyəsində və ya ondan yuxarı}}",
+  "earningsReminderTomorrow": "{symbol} sabah rüblük nəticələrini açıqlayır",
+  "earningsReminderToday": "{symbol} bu gün rüblük nəticələrini açıqlayır",
+  "earningsRemindersTitle": "Nəticə xatırlatmaları",
+  "earningsRemindersSubtitle": "Seçilmişlərinizdəki və ya portfelinizdəki səhmlər rüblük nəticələrini açıqlamazdan bir gün əvvəl bildiriş"
 }

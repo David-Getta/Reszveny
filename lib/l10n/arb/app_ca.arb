@@ -549,5 +549,14 @@
   "briefTitle": "Avui amb les teves accions",
   "briefButton": "Resumeix el dia",
   "briefHint": "Un breu resum amb IA de com s’han mogut avui la teva cartera i els teus preferits i què en diuen les últimes notícies. No consumeix cap anàlisi.",
-  "briefRefresh": "Actualitza"
+  "briefRefresh": "Actualitza",
+  "sectionEarnings": "Resultats",
+  "earningsNext": "Pròxim informe: {date}",
+  "earningsExpected": "BPA previst",
+  "earningsReported": "BPA publicat",
+  "earningsBeats": "{total, plural, =1{Igual o per sobre del BPA previst en {beats} d'1 trimestre} other{Igual o per sobre del BPA previst en {beats} dels últims {total} trimestres}}",
+  "earningsReminderTomorrow": "{symbol} presenta resultats trimestrals demà",
+  "earningsReminderToday": "{symbol} presenta resultats trimestrals avui",
+  "earningsRemindersTitle": "Recordatoris de resultats",
+  "earningsRemindersSubtitle": "Una notificació el dia abans que les accions dels teus favorits o de la teva cartera presentin resultats trimestrals"
 }

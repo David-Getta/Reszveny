@@ -549,5 +549,14 @@
   "briefTitle": "Dina iki karo saham sampeyan",
   "briefButton": "Ringkes dina iki",
   "briefHint": "Ringkesan AI cekak babagan obahe portofolio lan favorit sampeyan dina iki lan apa sing dikandhakake kabar paling anyar. Ora nggunakake analisis.",
-  "briefRefresh": "Anyari"
+  "briefRefresh": "Anyari",
+  "sectionEarnings": "Laporan kuartalan",
+  "earningsNext": "Laporan sabanjure: {date}",
+  "earningsExpected": "EPS sing dikarepake",
+  "earningsReported": "EPS sing dilaporake",
+  "earningsBeats": "{total, plural, =1{Padha utawa luwih dhuwur tinimbang EPS sing dikarepake ing {beats} saka 1 kuartal} other{Padha utawa luwih dhuwur tinimbang EPS sing dikarepake ing {beats} saka {total} kuartal pungkasan}}",
+  "earningsReminderTomorrow": "{symbol} ngetokaké laporan kuartalan sesuk",
+  "earningsReminderToday": "{symbol} ngetokaké laporan kuartalan dina iki",
+  "earningsRemindersTitle": "Pangéling laporan kuartalan",
+  "earningsRemindersSubtitle": "Notifikasi sedina sadurungé saham ing favorit utawa portofoliomu ngetokaké laporan kuartalan"
 }

@@ -2027,4 +2027,46 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get briefRefresh => 'යාවත්කාලීන කරන්න';
+
+  @override
+  String get sectionEarnings => 'කාර්තුමය ප්‍රතිඵල';
+
+  @override
+  String earningsNext(String date) {
+    return 'ඊළඟ වාර්තාව: $date';
+  }
+
+  @override
+  String get earningsExpected => 'අපේක්ෂිත EPS';
+
+  @override
+  String get earningsReported => 'වාර්තා කළ EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other: 'පසුගිය කාර්තු $totalන් $beatsක අපේක්ෂිත EPS හා සමාන හෝ ඉහළ',
+      one: 'කාර්තු 1කින් $beatsක අපේක්ෂිත EPS හා සමාන හෝ ඉහළ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol හෙට කාර්තුමය ප්‍රතිඵල නිකුත් කරයි';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol අද කාර්තුමය ප්‍රතිඵල නිකුත් කරයි';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'ප්‍රතිඵල සිහිකැඳවීම්';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'ඔබේ ප්‍රියතම හෝ කළඹේ කොටස් කාර්තුමය ප්‍රතිඵල නිකුත් කිරීමට පෙර දින දැනුම්දීමක්';
 }

@@ -2033,4 +2033,47 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Sabunta';
+
+  @override
+  String get sectionEarnings => 'Sakamakon kuɗi na kwata';
+
+  @override
+  String earningsNext(String date) {
+    return 'Rahoto na gaba: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS da ake tsammani';
+
+  @override
+  String get earningsReported => 'EPS da aka bayyana';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Daidai ko sama da EPS da ake tsammani a kwata $beats cikin $total na baya-bayan nan',
+      one: 'Daidai ko sama da EPS da ake tsammani a kwata $beats cikin 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol zai fitar da sakamakon kuɗi na kwata gobe';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol zai fitar da sakamakon kuɗi na kwata yau';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Tunatarwar sakamakon kuɗi';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Sanarwa kwana ɗaya kafin hannayen jarin da ka fi so ko na fayil ɗinka su fitar da sakamakon kuɗi na kwata';
 }

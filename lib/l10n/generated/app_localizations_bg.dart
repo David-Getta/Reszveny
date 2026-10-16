@@ -2029,4 +2029,47 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Обнови';
+
+  @override
+  String get sectionEarnings => 'Печалби';
+
+  @override
+  String earningsNext(String date) {
+    return 'Следващ отчет: $date';
+  }
+
+  @override
+  String get earningsExpected => 'Очаквана EPS';
+
+  @override
+  String get earningsReported => 'Отчетена EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'На или над очакваната EPS в $beats от последните $total тримесечия',
+      one: 'На или над очакваната EPS в $beats от 1 тримесечие',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol обявява тримесечни резултати утре';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol обявява тримесечни резултати днес';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Напомняния за резултати';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Известие ден преди акциите от любимите ви или от портфейла ви да обявят тримесечни резултати';
 }

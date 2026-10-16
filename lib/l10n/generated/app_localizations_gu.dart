@@ -2024,4 +2024,47 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get briefRefresh => 'અપડેટ કરો';
+
+  @override
+  String get sectionEarnings => 'કમાણી';
+
+  @override
+  String earningsNext(String date) {
+    return 'આગામી રિપોર્ટ: $date';
+  }
+
+  @override
+  String get earningsExpected => 'અપેક્ષિત EPS';
+
+  @override
+  String get earningsReported => 'જાહેર કરેલ EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'છેલ્લા $total ત્રિમાસિકમાંથી $beatsમાં અપેક્ષિત EPS જેટલું કે તેથી વધુ',
+      one: '1 ત્રિમાસિકમાંથી $beatsમાં અપેક્ષિત EPS જેટલું કે તેથી વધુ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol આવતીકાલે ત્રિમાસિક પરિણામો જાહેર કરશે';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol આજે ત્રિમાસિક પરિણામો જાહેર કરશે';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'પરિણામ રિમાઇન્ડર';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'તમારા મનપસંદ અથવા પોર્ટફોલિયોના શેરના ત્રિમાસિક પરિણામો જાહેર થાય તેના આગલા દિવસે સૂચના';
 }

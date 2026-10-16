@@ -549,5 +549,14 @@
   "briefTitle": "आज तुमच्या शेअर्ससोबत",
   "briefButton": "आजचा सारांश",
   "briefHint": "आज तुमचा पोर्टफोलिओ आणि आवडते शेअर्स कसे हलले आणि ताज्या बातम्या त्यांच्याबद्दल काय सांगतात याचा छोटा AI सारांश. यात कोणतेही विश्लेषण खर्च होत नाही.",
-  "briefRefresh": "अपडेट करा"
+  "briefRefresh": "अपडेट करा",
+  "sectionEarnings": "तिमाही निकाल",
+  "earningsNext": "पुढील अहवाल: {date}",
+  "earningsExpected": "अपेक्षित EPS",
+  "earningsReported": "जाहीर EPS",
+  "earningsBeats": "{total, plural, =1{1 पैकी {beats} तिमाहीत अपेक्षित EPS इतका किंवा त्याहून अधिक} other{मागील {total} पैकी {beats} तिमाहींत अपेक्षित EPS इतका किंवा त्याहून अधिक}}",
+  "earningsReminderTomorrow": "{symbol} उद्या तिमाही निकाल जाहीर करणार",
+  "earningsReminderToday": "{symbol} आज तिमाही निकाल जाहीर करणार",
+  "earningsRemindersTitle": "निकाल स्मरणपत्रे",
+  "earningsRemindersSubtitle": "तुमचे आवडते किंवा पोर्टफोलिओमधील शेअर्स तिमाही निकाल जाहीर करण्याच्या आदल्या दिवशी सूचना"
 }

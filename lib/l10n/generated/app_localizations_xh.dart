@@ -2036,4 +2036,48 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Hlaziya';
+
+  @override
+  String get sectionEarnings => 'Iziphumo';
+
+  @override
+  String earningsNext(String date) {
+    return 'Ingxelo elandelayo: $date';
+  }
+
+  @override
+  String get earningsExpected => 'I-EPS elindelekileyo';
+
+  @override
+  String get earningsReported => 'I-EPS exeliweyo';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Ilingana okanye ingaphezulu kwe-EPS elindelekileyo kwi-$beats kwiikota ezi-$total zokugqibela',
+      one:
+          'Ilingana okanye ingaphezulu kwe-EPS elindelekileyo kwi-$beats kwikota e-1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol ikhupha iziphumo zekota ngomso';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol ikhupha iziphumo zekota namhlanje';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Izikhumbuzi zeziphumo';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Isaziso usuku olungaphambi kokuba izabelo zakho ezithandwayo okanye zepotifoliyo yakho zikhuphe iziphumo zekota';
 }

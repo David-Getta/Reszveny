@@ -2041,4 +2041,48 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Havaozina';
+
+  @override
+  String get sectionEarnings => 'Vokatra isan-telovolana';
+
+  @override
+  String earningsNext(String date) {
+    return 'Tatitra manaraka: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS notombanana';
+
+  @override
+  String get earningsReported => 'EPS navoaka';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Nahatratra na nihoatra ny EPS notombanana tamin\'ny telovolana $beats amin\'ireo $total farany',
+      one:
+          'Nahatratra na nihoatra ny EPS notombanana tamin\'ny telovolana $beats amin\'ny 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol: vokatra isan-telovolana rahampitso';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol: vokatra isan-telovolana anio';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Fampahatsiahivana vokatra';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Fampandrenesana iray andro alohan\'ny hamoahan\'ny ankafizinao na ny tahiry ao amin\'ny portfolio-nao ny vokatra isan-telovolana';
 }

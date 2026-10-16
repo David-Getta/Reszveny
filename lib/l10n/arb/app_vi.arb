@@ -549,5 +549,14 @@
   "briefTitle": "Hôm nay với cổ phiếu của bạn",
   "briefButton": "Tóm tắt hôm nay",
   "briefHint": "Bản tóm tắt AI ngắn về cách danh mục và mã yêu thích của bạn biến động hôm nay và tin tức mới nhất nói gì về chúng. Không dùng lượt phân tích.",
-  "briefRefresh": "Cập nhật"
+  "briefRefresh": "Cập nhật",
+  "sectionEarnings": "Kết quả kinh doanh",
+  "earningsNext": "Báo cáo tiếp theo: {date}",
+  "earningsExpected": "EPS dự kiến",
+  "earningsReported": "EPS công bố",
+  "earningsBeats": "{total, plural, =1{Bằng hoặc vượt EPS dự kiến trong {beats}/1 quý} other{Bằng hoặc vượt EPS dự kiến trong {beats}/{total} quý gần nhất}}",
+  "earningsReminderTomorrow": "{symbol} công bố kết quả kinh doanh quý vào ngày mai",
+  "earningsReminderToday": "{symbol} công bố kết quả kinh doanh quý hôm nay",
+  "earningsRemindersTitle": "Nhắc kết quả kinh doanh",
+  "earningsRemindersSubtitle": "Thông báo một ngày trước khi cổ phiếu yêu thích hoặc trong danh mục của bạn công bố kết quả kinh doanh quý"
 }

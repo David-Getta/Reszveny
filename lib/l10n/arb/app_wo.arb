@@ -549,5 +549,14 @@
   "briefTitle": "Tey ak sa aksiyoŋ yi",
   "briefButton": "Gàttal tey",
   "briefHint": "Gàttal bu gàtt bu AI ci ni sa portefeuille ak yi nga bëgg yëngóo tey ak li xibaar yu bees yi wax ci seen mbir. Du jëfandikoo xayma.",
-  "briefRefresh": "Yeesal"
+  "briefRefresh": "Yeesal",
+  "sectionEarnings": "Njureef",
+  "earningsNext": "Njureef bi ci topp: {date}",
+  "earningsExpected": "EPS bi ñu séentu",
+  "earningsReported": "EPS bi ñu yégle",
+  "earningsBeats": "{total, plural, =1{Yem walla ëpp EPS bi ñu séentu ci {beats} ci 1 ñetti weer} other{Yem walla ëpp EPS bi ñu séentu ci {beats} ci {total} ñetti weer yu mujj}}",
+  "earningsReminderTomorrow": "{symbol} dina génne njureefam yu ñetti weer ëllëg",
+  "earningsReminderToday": "{symbol} dina génne njureefam yu ñetti weer tey",
+  "earningsRemindersTitle": "Fàttali njureef",
+  "earningsRemindersSubtitle": "Yégle benn bés balaa aksioŋ yi nga gënal walla yi nekk ci sa portfolio di génne seen njureef yu ñetti weer"
 }

@@ -2027,4 +2027,47 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Leqqem';
+
+  @override
+  String get sectionEarnings => 'Igmaḍ n kraḍ n wayyuren';
+
+  @override
+  String earningsNext(String date) {
+    return 'Aneqqis d-iteddun: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS i yettwarǧan';
+
+  @override
+  String get earningsReported => 'EPS i d-yettwabedren';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Am EPS i yettwarǧan neɣ ugar deg $beats seg $total n kraḍ n wayyuren ineggura',
+      one: 'Am EPS i yettwarǧan neɣ ugar deg $beats seg 1 n kraḍ n wayyuren',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol ad d-yesuffeɣ igmaḍ n kraḍ n wayyuren azekka';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol ad d-yesuffeɣ igmaḍ n kraḍ n wayyuren ass-a';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Asmekti n yigmaḍ';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Alɣu yiwen n wass send ad d-ssufɣen yisehmen n yismenyifen-ik neɣ n uportfolio-k igmaḍ n kraḍ n wayyuren';
 }

@@ -549,5 +549,14 @@
   "briefTitle": "Ũmũthĩ na hisa ciaku",
   "briefButton": "Gũthondeka ũmũthĩ",
   "briefHint": "Mũgĩkĩro mũkuhĩ wa AI wa ũrĩa portfolio yaku na cia mwendwa ithiĩte ũmũthĩ na ũrĩa ũhoro mũrũgu ũcigwetaga. Ndũhũthagĩra ũthuthuria.",
-  "briefRefresh": "Gũcũrũria"
+  "briefRefresh": "Gũcũrũria",
+  "sectionEarnings": "Maumĩrĩra ma mĩeri ĩtatũ",
+  "earningsNext": "Ripoti ĩrĩa ĩrũmĩrĩire: {date}",
+  "earningsExpected": "EPS ĩrĩa yetagĩrĩrwo",
+  "earningsReported": "EPS ĩrĩa yaheanirwo",
+  "earningsBeats": "{total, plural, =1{Ĩgana kana ĩgakĩra EPS ĩrĩa yetagĩrĩrwo harĩ {beats} ya mĩeri ĩtatũ 1} other{Ĩgana kana ĩgakĩra EPS ĩrĩa yetagĩrĩrwo harĩ {beats} ya mahinda {total} ma mĩeri ĩtatũ ma kũrigĩrĩria}}",
+  "earningsReminderTomorrow": "{symbol} nĩĩkũheana maumĩrĩra ma mĩeri ĩtatũ rũciũ",
+  "earningsReminderToday": "{symbol} nĩĩraheana maumĩrĩra ma mĩeri ĩtatũ ũmũthĩ",
+  "earningsRemindersTitle": "Kũririkania maumĩrĩra",
+  "earningsRemindersSubtitle": "Imenyithia mũthenya ũmwe mbere ya hisa cia iria wendete kana portfolio yaku ciheane maumĩrĩra ma mĩeri ĩtatũ"
 }

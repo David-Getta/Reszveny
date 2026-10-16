@@ -549,5 +549,14 @@
   "briefTitle": "ມື້ນີ້ກັບຫຸ້ນຂອງທ່ານ",
   "briefButton": "ສະຫຼຸບມື້ນີ້",
   "briefHint": "ສະຫຼຸບ AI ສັ້ນໆກ່ຽວກັບວ່າພອດໂຟລິໂອ ແລະ ລາຍການທີ່ມັກຂອງທ່ານເຄື່ອນໄຫວແນວໃດມື້ນີ້ ແລະ ຂ່າວລ່າສຸດເວົ້າຫຍັງ. ບໍ່ໃຊ້ການວິເຄາະ.",
-  "briefRefresh": "ອັບເດດ"
+  "briefRefresh": "ອັບເດດ",
+  "sectionEarnings": "ຜົນປະກອບການລາຍໄຕມາດ",
+  "earningsNext": "ລາຍງານຄັ້ງຕໍ່ໄປ: {date}",
+  "earningsExpected": "EPS ທີ່ຄາດໄວ້",
+  "earningsReported": "EPS ທີ່ລາຍງານ",
+  "earningsBeats": "{total, plural, =1{EPS ເທົ່າ ຫຼື ສູງກວ່າຄາດ {beats} ໃນ 1 ໄຕມາດ} other{EPS ເທົ່າ ຫຼື ສູງກວ່າຄາດ {beats} ໃນ {total} ໄຕມາດຫຼ້າສຸດ}}",
+  "earningsReminderTomorrow": "{symbol} ຈະປະກາດຜົນປະກອບການລາຍໄຕມາດມື້ອື່ນ",
+  "earningsReminderToday": "{symbol} ປະກາດຜົນປະກອບການລາຍໄຕມາດມື້ນີ້",
+  "earningsRemindersTitle": "ການແຈ້ງເຕືອນຜົນປະກອບການ",
+  "earningsRemindersSubtitle": "ແຈ້ງເຕືອນລ່ວງໜ້າໜຶ່ງມື້ກ່ອນຫຸ້ນໃນລາຍການທີ່ມັກ ຫຼື ພອດໂຟລິໂອຂອງທ່ານປະກາດຜົນປະກອບການລາຍໄຕມາດ"
 }

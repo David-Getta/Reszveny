@@ -549,5 +549,14 @@
   "briefTitle": "Oggi con le tue azioni",
   "briefButton": "Riassumi la giornata",
   "briefHint": "Un breve riassunto con IA di come si sono mossi oggi il tuo portafoglio e i tuoi preferiti e di cosa ne dicono le ultime notizie. Non consuma analisi.",
-  "briefRefresh": "Aggiorna"
+  "briefRefresh": "Aggiorna",
+  "sectionEarnings": "Risultati trimestrali",
+  "earningsNext": "Prossimi risultati: {date}",
+  "earningsExpected": "EPS atteso",
+  "earningsReported": "EPS comunicato",
+  "earningsBeats": "{total, plural, =1{EPS pari o superiore alle attese in {beats} trimestre su 1} other{EPS pari o superiore alle attese in {beats} degli ultimi {total} trimestri}}",
+  "earningsReminderTomorrow": "{symbol} pubblica i risultati trimestrali domani",
+  "earningsReminderToday": "{symbol} pubblica i risultati trimestrali oggi",
+  "earningsRemindersTitle": "Promemoria risultati",
+  "earningsRemindersSubtitle": "Una notifica il giorno prima che i titoli dei tuoi preferiti o del tuo portafoglio pubblichino i risultati trimestrali"
 }

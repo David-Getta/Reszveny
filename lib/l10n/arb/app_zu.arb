@@ -549,5 +549,14 @@
   "briefTitle": "Namuhla namasheya akho",
   "briefButton": "Fingqa namuhla",
   "briefHint": "Isifinyezo esifushane se-AI sendlela iphothifoliyo yakho nalawo owathandayo ahambe ngayo namuhla nokuthi izindaba zakamuva zithini ngawo. Asisebenzisi ukuhlaziya.",
-  "briefRefresh": "Buyekeza"
+  "briefRefresh": "Buyekeza",
+  "sectionEarnings": "Imiphumela",
+  "earningsNext": "Umbiko olandelayo: {date}",
+  "earningsExpected": "I-EPS elindelekile",
+  "earningsReported": "I-EPS ebikiwe",
+  "earningsBeats": "{total, plural, =1{Ilingana noma ingaphezu kwe-EPS elindelekile ku-{beats} kwikota engu-1} other{Ilingana noma ingaphezu kwe-EPS elindelekile ku-{beats} kumakota angu-{total} okugcina}}",
+  "earningsReminderTomorrow": "{symbol} ikhipha imiphumela yekota kusasa",
+  "earningsReminderToday": "{symbol} ikhipha imiphumela yekota namuhla",
+  "earningsRemindersTitle": "Izikhumbuzi zemiphumela",
+  "earningsRemindersSubtitle": "Isaziso ngosuku olwandulela ukuthi amasheya akho athandekayo noma ephothifoliyo yakho akhiphe imiphumela yekota"
 }

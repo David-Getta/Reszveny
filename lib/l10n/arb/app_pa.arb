@@ -549,5 +549,14 @@
   "briefTitle": "ਅੱਜ ਤੁਹਾਡੇ ਸ਼ੇਅਰਾਂ ਨਾਲ",
   "briefButton": "ਅੱਜ ਦਾ ਸਾਰ",
   "briefHint": "ਅੱਜ ਤੁਹਾਡਾ ਪੋਰਟਫੋਲੀਓ ਅਤੇ ਮਨਪਸੰਦ ਸ਼ੇਅਰ ਕਿਵੇਂ ਚੱਲੇ ਅਤੇ ਤਾਜ਼ਾ ਖ਼ਬਰਾਂ ਉਨ੍ਹਾਂ ਬਾਰੇ ਕੀ ਕਹਿੰਦੀਆਂ ਹਨ, ਇਸਦਾ ਛੋਟਾ AI ਸਾਰ। ਇਸ ਵਿੱਚ ਕੋਈ ਵਿਸ਼ਲੇਸ਼ਣ ਖ਼ਰਚ ਨਹੀਂ ਹੁੰਦਾ।",
-  "briefRefresh": "ਅੱਪਡੇਟ ਕਰੋ"
+  "briefRefresh": "ਅੱਪਡੇਟ ਕਰੋ",
+  "sectionEarnings": "ਤਿਮਾਹੀ ਨਤੀਜੇ",
+  "earningsNext": "ਅਗਲੀ ਰਿਪੋਰਟ: {date}",
+  "earningsExpected": "ਉਮੀਦ ਕੀਤਾ EPS",
+  "earningsReported": "ਜਾਰੀ ਕੀਤਾ EPS",
+  "earningsBeats": "{total, plural, =1{1 ਵਿੱਚੋਂ {beats} ਤਿਮਾਹੀ ਵਿੱਚ ਉਮੀਦ ਕੀਤੇ EPS ਦੇ ਬਰਾਬਰ ਜਾਂ ਵੱਧ} other{ਪਿਛਲੀਆਂ {total} ਵਿੱਚੋਂ {beats} ਤਿਮਾਹੀਆਂ ਵਿੱਚ ਉਮੀਦ ਕੀਤੇ EPS ਦੇ ਬਰਾਬਰ ਜਾਂ ਵੱਧ}}",
+  "earningsReminderTomorrow": "{symbol} ਕੱਲ੍ਹ ਤਿਮਾਹੀ ਨਤੀਜੇ ਜਾਰੀ ਕਰੇਗਾ",
+  "earningsReminderToday": "{symbol} ਅੱਜ ਤਿਮਾਹੀ ਨਤੀਜੇ ਜਾਰੀ ਕਰੇਗਾ",
+  "earningsRemindersTitle": "ਨਤੀਜਿਆਂ ਦੀ ਯਾਦ-ਦਹਾਨੀ",
+  "earningsRemindersSubtitle": "ਤੁਹਾਡੇ ਮਨਪਸੰਦ ਜਾਂ ਪੋਰਟਫੋਲੀਓ ਦੇ ਸ਼ੇਅਰਾਂ ਦੇ ਤਿਮਾਹੀ ਨਤੀਜੇ ਆਉਣ ਤੋਂ ਇੱਕ ਦਿਨ ਪਹਿਲਾਂ ਸੂਚਨਾ"
 }

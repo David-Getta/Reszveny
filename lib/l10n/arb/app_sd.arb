@@ -549,5 +549,14 @@
   "briefTitle": "اڄ توهان جي شيئرن سان",
   "briefButton": "اڄ جو خلاصو",
   "briefHint": "اڄ توهان جو پورٽفوليو ۽ پسنديده شيئر ڪيئن هليا ۽ تازيون خبرون انهن بابت ڇا ٿيون چون، ان جو مختصر AI خلاصو. ان ۾ ڪو تجزيو خرچ نٿو ٿئي.",
-  "briefRefresh": "تازو ڪريو"
+  "briefRefresh": "تازو ڪريو",
+  "sectionEarnings": "ٽه ماهي نتيجا",
+  "earningsNext": "ايندڙ رپورٽ: {date}",
+  "earningsExpected": "متوقع EPS",
+  "earningsReported": "جاري ڪيل EPS",
+  "earningsBeats": "{total, plural, =1{1 مان {beats} ٽه ماهي ۾ متوقع EPS جي برابر يا ان کان مٿي} other{آخري {total} مان {beats} ٽه ماهين ۾ متوقع EPS جي برابر يا ان کان مٿي}}",
+  "earningsReminderTomorrow": "{symbol} سڀاڻي ٽه ماهي نتيجا جاري ڪندي",
+  "earningsReminderToday": "{symbol} اڄ ٽه ماهي نتيجا جاري ڪندي",
+  "earningsRemindersTitle": "نتيجن جي ياد ڏياريندڙ",
+  "earningsRemindersSubtitle": "توهان جي پسنديده يا پورٽ فوليو جي شيئرن جا ٽه ماهي نتيجا جاري ٿيڻ کان هڪ ڏينهن اڳ اطلاع"
 }

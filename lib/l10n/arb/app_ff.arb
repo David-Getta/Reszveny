@@ -549,5 +549,14 @@
   "briefTitle": "Hannde e aksiyonji maa",
   "briefButton": "Raɓɓin hannde",
   "briefHint": "Raɓɓinal AI ngal hollata no portfolio maa e ɗi njiɗ-ɗaa ndilli hannde e ko kabaruuji kesi mbiyata e dow majji. Ɗum huutortaa ƴeewndo.",
-  "briefRefresh": "Hesɗitin"
+  "briefRefresh": "Hesɗitin",
+  "sectionEarnings": "Ngalluuji",
+  "earningsNext": "Jaŋtol garowol: {date}",
+  "earningsExpected": "EPS jortaaɗo",
+  "earningsReported": "EPS bayyinaaɗo",
+  "earningsBeats": "{total, plural, =1{Hewtii walla ɓurii EPS jortaaɗo e {beats} e nder lebbi tati 1} other{Hewtii walla ɓurii EPS jortaaɗo e {beats} e nder lebbi tati {total} sakkitiiɗi}}",
+  "earningsReminderTomorrow": "{symbol} maa yaltin ngalluuji lebbi tati jaango",
+  "earningsReminderToday": "{symbol} ina yaltina ngalluuji lebbi tati hannde",
+  "earningsRemindersTitle": "Siftorɗe ngalluuji",
+  "earningsRemindersSubtitle": "Tintinol ñalawma gootal ado cuɓaaɗe maa walla sitokuuji portfolio maa yaltinde ngalluuji lebbi tati"
 }

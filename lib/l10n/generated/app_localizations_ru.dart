@@ -2084,4 +2084,48 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Обновить';
+
+  @override
+  String get sectionEarnings => 'Отчётность';
+
+  @override
+  String earningsNext(String date) {
+    return 'Следующий отчёт: $date';
+  }
+
+  @override
+  String get earningsExpected => 'Ожидаемый EPS';
+
+  @override
+  String get earningsReported => 'Фактический EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'На уровне ожидаемого EPS или выше в $beats из последних $total кварталов',
+      one:
+          'На уровне ожидаемого EPS или выше в $beats из последнего $total квартала',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol завтра публикует квартальную отчётность';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol сегодня публикует квартальную отчётность';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Напоминания об отчётности';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Уведомление за день до публикации квартальной отчётности по акциям из избранного или портфеля';
 }

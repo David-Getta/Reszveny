@@ -549,5 +549,14 @@
   "briefTitle": "Сегодня с вашими акциями",
   "briefButton": "Подвести итог дня",
   "briefHint": "Короткая AI-сводка о том, как сегодня изменились ваш портфель и избранное и что о них пишут свежие новости. Анализ не расходуется.",
-  "briefRefresh": "Обновить"
+  "briefRefresh": "Обновить",
+  "sectionEarnings": "Отчётность",
+  "earningsNext": "Следующий отчёт: {date}",
+  "earningsExpected": "Ожидаемый EPS",
+  "earningsReported": "Фактический EPS",
+  "earningsBeats": "{total, plural, =1{На уровне ожидаемого EPS или выше в {beats} из 1 квартала} one{На уровне ожидаемого EPS или выше в {beats} из последнего {total} квартала} other{На уровне ожидаемого EPS или выше в {beats} из последних {total} кварталов}}",
+  "earningsReminderTomorrow": "{symbol} завтра публикует квартальную отчётность",
+  "earningsReminderToday": "{symbol} сегодня публикует квартальную отчётность",
+  "earningsRemindersTitle": "Напоминания об отчётности",
+  "earningsRemindersSubtitle": "Уведомление за день до публикации квартальной отчётности по акциям из избранного или портфеля"
 }

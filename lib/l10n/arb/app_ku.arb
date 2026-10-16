@@ -549,5 +549,14 @@
   "briefTitle": "Îro bi pişkên te re",
   "briefButton": "Îro kurt bike",
   "briefHint": "Kurteyek AI ya kurt li ser ka portfolyo û bijareyên te îro çawa tevgeriyan û nûçeyên dawî li ser wan çi dibêjin. Analîzekê bi kar nayîne.",
-  "briefRefresh": "Nû bike"
+  "briefRefresh": "Nû bike",
+  "sectionEarnings": "Encamên sêmehî",
+  "earningsNext": "Rapora bê: {date}",
+  "earningsExpected": "EPS ya tê payîn",
+  "earningsReported": "EPS ya hatî ragihandin",
+  "earningsBeats": "{total, plural, =1{Di {beats} ji 1 sêmehê de wekî EPS ya tê payîn an jortir} other{Di {beats} ji {total} sêmehên dawî de wekî EPS ya tê payîn an jortir}}",
+  "earningsReminderTomorrow": "{symbol} sibê encamên sêmehî eşkere dike",
+  "earningsReminderToday": "{symbol} îro encamên sêmehî eşkere dike",
+  "earningsRemindersTitle": "Bîranînên encaman",
+  "earningsRemindersSubtitle": "Agahdariyek rojek berî ku pişkên di bijareyên te an portfolyoya te de encamên sêmehî eşkere bikin"
 }

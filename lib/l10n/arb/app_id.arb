@@ -549,5 +549,14 @@
   "briefTitle": "Hari ini dengan saham Anda",
   "briefButton": "Ringkas hari ini",
   "briefHint": "Ringkasan AI singkat tentang pergerakan portofolio dan favorit Anda hari ini serta apa kata berita terbaru tentangnya. Tidak memakai analisis.",
-  "briefRefresh": "Perbarui"
+  "briefRefresh": "Perbarui",
+  "sectionEarnings": "Laporan kuartalan",
+  "earningsNext": "Laporan berikutnya: {date}",
+  "earningsExpected": "EPS yang diharapkan",
+  "earningsReported": "EPS yang dilaporkan",
+  "earningsBeats": "{total, plural, =1{Sesuai atau di atas ekspektasi EPS pada {beats} dari 1 kuartal} other{Sesuai atau di atas ekspektasi EPS pada {beats} dari {total} kuartal terakhir}}",
+  "earningsReminderTomorrow": "{symbol} merilis laporan kuartalan besok",
+  "earningsReminderToday": "{symbol} merilis laporan kuartalan hari ini",
+  "earningsRemindersTitle": "Pengingat laporan kuartalan",
+  "earningsRemindersSubtitle": "Notifikasi sehari sebelum saham di favorit atau portofoliomu merilis laporan kuartalan"
 }

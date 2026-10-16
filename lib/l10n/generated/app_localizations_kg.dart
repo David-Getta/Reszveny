@@ -2035,4 +2035,47 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Kuyidika';
+
+  @override
+  String get sectionEarnings => 'Ba résultats ya trimestre';
+
+  @override
+  String earningsNext(String date) {
+    return 'Rapport ya me landa: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS ya bo ke vingila';
+
+  @override
+  String get earningsReported => 'EPS ya bo me pesa';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Kufwana to kuluta EPS ya bo ke vingila na $beats ya ba trimestre $total ya nsuka',
+      one: 'Kufwana to kuluta EPS ya bo ke vingila na $beats ya trimestre 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol ta basisa ba résultats ya trimestre mbazi';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol ke basisa ba résultats ya trimestre bubu';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Kiyibusu ya ba résultats';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Nkebisu kilumbu mosi na ntwala nde ba actions ya bizolwa na nge to ya portefeuille na nge kubasisa ba résultats ya trimestre';
 }

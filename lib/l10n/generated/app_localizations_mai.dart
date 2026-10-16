@@ -2022,4 +2022,47 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get briefRefresh => 'अपडेट करू';
+
+  @override
+  String get sectionEarnings => 'त्रैमासिक परिणाम';
+
+  @override
+  String earningsNext(String date) {
+    return 'अगिला रिपोर्ट: $date';
+  }
+
+  @override
+  String get earningsExpected => 'अनुमानित EPS';
+
+  @override
+  String get earningsReported => 'रिपोर्ट कएल गेल EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'पछिला $total मेसँ $beats तिमाहीमे EPS अनुमानक बराबर वा ओहिसँ बेसी',
+      one: '1 मेसँ $beats तिमाहीमे EPS अनुमानक बराबर वा ओहिसँ बेसी',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbolक त्रैमासिक परिणाम काल्हि';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbolक त्रैमासिक परिणाम आइ';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'परिणाम रिमाइंडर';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'अहाँक पसंदीदा वा पोर्टफोलियोक शेयरक त्रैमासिक परिणामसँ एक दिन पहिने सूचना';
 }

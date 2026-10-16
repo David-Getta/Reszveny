@@ -2034,4 +2034,47 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Sinthani';
+
+  @override
+  String get sectionEarnings => 'Zotsatira za kotala';
+
+  @override
+  String earningsNext(String date) {
+    return 'Lipoti lotsatira: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS yoyembekezeredwa';
+
+  @override
+  String get earningsReported => 'EPS yolengezedwa';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Pa kapena pamwamba pa EPS yoyembekezeredwa mu makotala $beats mwa $total omaliza',
+      one: 'Pa kapena pamwamba pa EPS yoyembekezeredwa mu kotala $beats mwa 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol ilengeza zotsatira za kotala mawa';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol ilengeza zotsatira za kotala lero';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Zikumbutso za zotsatira';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Chidziwitso tsiku limodzi zokondedwa zanu kapena masheya a mu portfolio yanu asanalengeze zotsatira za kotala';
 }

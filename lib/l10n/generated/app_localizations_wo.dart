@@ -2023,4 +2023,47 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Yeesal';
+
+  @override
+  String get sectionEarnings => 'Njureef';
+
+  @override
+  String earningsNext(String date) {
+    return 'Njureef bi ci topp: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS bi ñu séentu';
+
+  @override
+  String get earningsReported => 'EPS bi ñu yégle';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Yem walla ëpp EPS bi ñu séentu ci $beats ci $total ñetti weer yu mujj',
+      one: 'Yem walla ëpp EPS bi ñu séentu ci $beats ci 1 ñetti weer',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol dina génne njureefam yu ñetti weer ëllëg';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol dina génne njureefam yu ñetti weer tey';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Fàttali njureef';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Yégle benn bés balaa aksioŋ yi nga gënal walla yi nekk ci sa portfolio di génne seen njureef yu ñetti weer';
 }

@@ -1928,6 +1928,47 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get briefRefresh => '更新';
+
+  @override
+  String get sectionEarnings => '财报';
+
+  @override
+  String earningsNext(String date) {
+    return '下次财报：$date';
+  }
+
+  @override
+  String get earningsExpected => '预期每股收益';
+
+  @override
+  String get earningsReported => '实际每股收益';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other: '最近 $total 个季度中有 $beats 个达到或超过预期每股收益',
+      one: '1 个季度中有 $beats 个达到或超过预期每股收益',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol 明天发布季度财报';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol 今天发布季度财报';
+  }
+
+  @override
+  String get earningsRemindersTitle => '财报提醒';
+
+  @override
+  String get earningsRemindersSubtitle => '在你收藏或持仓的股票发布季度财报前一天发送通知';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -3853,4 +3894,45 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get briefRefresh => '更新';
+
+  @override
+  String get sectionEarnings => '業績';
+
+  @override
+  String earningsNext(String date) {
+    return '下次業績公佈：$date';
+  }
+
+  @override
+  String get earningsExpected => '預期每股盈利';
+
+  @override
+  String get earningsReported => '實際每股盈利';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other: '最近 $total 個季度中有 $beats 個達到或超過預期每股盈利',
+      one: '1 個季度中有 $beats 個達到或超過預期每股盈利',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol 明日公布季度業績';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol 今日公布季度業績';
+  }
+
+  @override
+  String get earningsRemindersTitle => '業績提示';
+
+  @override
+  String get earningsRemindersSubtitle => '在你收藏或持倉的股票公布季度業績前一日發出通知';
 }

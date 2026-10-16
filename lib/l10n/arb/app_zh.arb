@@ -549,5 +549,14 @@
   "briefTitle": "今天你的股票",
   "briefButton": "总结今天",
   "briefHint": "AI 简短总结你的投资组合和自选股今天的走势，以及最新新闻对它们的说法。不消耗分析次数。",
-  "briefRefresh": "更新"
+  "briefRefresh": "更新",
+  "sectionEarnings": "财报",
+  "earningsNext": "下次财报：{date}",
+  "earningsExpected": "预期每股收益",
+  "earningsReported": "实际每股收益",
+  "earningsBeats": "{total, plural, =1{1 个季度中有 {beats} 个达到或超过预期每股收益} other{最近 {total} 个季度中有 {beats} 个达到或超过预期每股收益}}",
+  "earningsReminderTomorrow": "{symbol} 明天发布季度财报",
+  "earningsReminderToday": "{symbol} 今天发布季度财报",
+  "earningsRemindersTitle": "财报提醒",
+  "earningsRemindersSubtitle": "在你收藏或持仓的股票发布季度财报前一天发送通知"
 }

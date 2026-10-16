@@ -549,5 +549,14 @@
   "briefTitle": "اليوم مع أسهمك",
   "briefButton": "لخّص اليوم",
   "briefHint": "ملخص قصير بالذكاء الاصطناعي لحركة محفظتك ومفضلاتك اليوم وما تقوله أحدث الأخبار عنها. لا يستهلك تحليلًا.",
-  "briefRefresh": "تحديث"
+  "briefRefresh": "تحديث",
+  "sectionEarnings": "نتائج الأرباح",
+  "earningsNext": "التقرير القادم: {date}",
+  "earningsExpected": "ربحية السهم المتوقعة",
+  "earningsReported": "ربحية السهم المُعلنة",
+  "earningsBeats": "{total, plural, =1{ربحية السهم عند المتوقع أو أعلى في {beats} من ربع واحد} other{ربحية السهم عند المتوقع أو أعلى في {beats} من آخر {total} من الأرباع}}",
+  "earningsReminderTomorrow": "{symbol} يعلن نتائجه الفصلية غدًا",
+  "earningsReminderToday": "{symbol} يعلن نتائجه الفصلية اليوم",
+  "earningsRemindersTitle": "تذكيرات النتائج",
+  "earningsRemindersSubtitle": "إشعار قبل يوم من إعلان أسهم المفضلة أو محفظتك نتائجها الفصلية"
 }

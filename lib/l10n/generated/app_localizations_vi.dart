@@ -2023,4 +2023,46 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Cập nhật';
+
+  @override
+  String get sectionEarnings => 'Kết quả kinh doanh';
+
+  @override
+  String earningsNext(String date) {
+    return 'Báo cáo tiếp theo: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS dự kiến';
+
+  @override
+  String get earningsReported => 'EPS công bố';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other: 'Bằng hoặc vượt EPS dự kiến trong $beats/$total quý gần nhất',
+      one: 'Bằng hoặc vượt EPS dự kiến trong $beats/1 quý',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol công bố kết quả kinh doanh quý vào ngày mai';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol công bố kết quả kinh doanh quý hôm nay';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Nhắc kết quả kinh doanh';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Thông báo một ngày trước khi cổ phiếu yêu thích hoặc trong danh mục của bạn công bố kết quả kinh doanh quý';
 }

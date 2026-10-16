@@ -549,5 +549,14 @@
   "briefTitle": "Taa na ngwa ahịa gị",
   "briefButton": "Chịkọta taa",
   "briefHint": "Nchịkọta AI dị mkpụmkpụ maka otú pọtụfoliyo gị na ndị ị hụrụ n’anya si gaa taa na ihe akụkọ ọhụrụ na-ekwu banyere ha. Ọ naghị eji nyocha.",
-  "briefRefresh": "Melite"
+  "briefRefresh": "Melite",
+  "sectionEarnings": "Nsonaazụ nkeji ọnwa atọ",
+  "earningsNext": "Akụkọ na-esote: {date}",
+  "earningsExpected": "EPS a na-atụ anya ya",
+  "earningsReported": "EPS e kwuputara",
+  "earningsBeats": "{total, plural, =1{Ruru ma ọ bụ karịa EPS a tụrụ anya ya na {beats} n'ime nkeji ọnwa atọ 1} other{Ruru ma ọ bụ karịa EPS a tụrụ anya ya na {beats} n'ime nkeji ọnwa atọ {total} gara aga}}",
+  "earningsReminderTomorrow": "{symbol} ga-ewepụta nsonaazụ nkeji ọnwa atọ echi",
+  "earningsReminderToday": "{symbol} na-ewepụta nsonaazụ nkeji ọnwa atọ taa",
+  "earningsRemindersTitle": "Ncheta nsonaazụ",
+  "earningsRemindersSubtitle": "Ọkwa otu ụbọchị tupu òkè dị n'ọkacha mmasị gị ma ọ bụ na pọtfolio gị ewepụta nsonaazụ nkeji ọnwa atọ"
 }

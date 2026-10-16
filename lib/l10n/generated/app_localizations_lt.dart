@@ -2084,4 +2084,47 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Atnaujinti';
+
+  @override
+  String get sectionEarnings => 'Ketvirčio rezultatai';
+
+  @override
+  String earningsNext(String date) {
+    return 'Kita ataskaita: $date';
+  }
+
+  @override
+  String get earningsExpected => 'Prognozuotas EPS';
+
+  @override
+  String get earningsReported => 'Paskelbtas EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Ketvirčiai, kai EPS atitiko ar viršijo lūkesčius: $beats iš paskutinių $total',
+      one: 'EPS atitiko ar viršijo lūkesčius: $beats iš 1 ketvirčio',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol rytoj skelbia ketvirčio rezultatus';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol šiandien skelbia ketvirčio rezultatus';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Priminimai apie rezultatus';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Pranešimas dieną prieš tavo mėgstamiausių ar portfelio akcijų ketvirčio rezultatų paskelbimą';
 }

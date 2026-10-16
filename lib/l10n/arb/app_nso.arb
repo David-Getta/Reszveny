@@ -549,5 +549,14 @@
   "briefTitle": "Lehono le dišere tša gago",
   "briefButton": "Kakaretša lehono",
   "briefHint": "Kakaretšo ye kopana ya AI ya ka moo portfolio ya gago le tše o di ratago di sepetšego ka gona lehono le seo ditaba tša moragorago di se bolelago. Ga e diriše tshekatsheko.",
-  "briefRefresh": "Mpshafatša"
+  "briefRefresh": "Mpshafatša",
+  "sectionEarnings": "Dipoelo tša kotara",
+  "earningsNext": "Pego ye e latelago: {date}",
+  "earningsExpected": "EPS ye e letetšwego",
+  "earningsReported": "EPS ye e begilwego",
+  "earningsBeats": "{total, plural, =1{Go lekana goba go feta EPS ye e letetšwego go kotara ye {beats} go ye 1} other{Go lekana goba go feta EPS ye e letetšwego go dikotara tše {beats} go tše {total} tša mafelelo}}",
+  "earningsReminderTomorrow": "{symbol}: dipoelo tša kotara gosasa",
+  "earningsReminderToday": "{symbol}: dipoelo tša kotara lehono",
+  "earningsRemindersTitle": "Dikgopotšo tša dipoelo",
+  "earningsRemindersSubtitle": "Tsebišo letšatši pele tše di ratwago goba dišere tša potefolio ya gago di phatlalatša dipoelo tša kotara"
 }

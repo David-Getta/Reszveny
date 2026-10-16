@@ -22,6 +22,7 @@ import '../portfolio/position_card.dart';
 import '../recognition/stock_recognizer.dart';
 import 'widgets/analysis_card.dart';
 import 'widgets/converted_price.dart';
+import 'widgets/earnings_card.dart';
 import 'widgets/kv_table.dart';
 import 'widgets/peers_strip.dart';
 import 'widgets/price_chart.dart';
@@ -420,6 +421,9 @@ class _DetailsBody extends StatelessWidget {
                 ],
               ),
       ),
+
+      // Gyorsjelentések: a következő és az utolsó negyedévek EPS-e
+      EarningsCard(symbol: d.symbol),
 
       // Éves kimutatások
       SectionCard(

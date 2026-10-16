@@ -2015,4 +2015,47 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Lebg-y a paalgo';
+
+  @override
+  String get sectionEarnings => 'Kiuuy a tãab ligd-yɛla';
+
+  @override
+  String earningsNext(String date) {
+    return 'Kibay sẽn watẽ: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS sẽn gũudã';
+
+  @override
+  String get earningsReported => 'EPS sẽn wilgã';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Ta wall yɩɩg EPS sẽn gũudã kiuuy $beats pʊgẽ, $total sẽn loogã pʊsẽ',
+      one: 'Ta wall yɩɩg EPS sẽn gũudã kiuuy $beats pʊgẽ, 1 pʊsẽ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol: kiuuy a tãab ligd-yɛla beoogo';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol: kiuuy a tãab ligd-yɛla rũndã';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Ligd-yɛla tẽegre';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Gũusgu daar sẽn deng f nong-n-yɩɩda la f portfolio wã kiuuy a tãab ligd-yɛla';
 }

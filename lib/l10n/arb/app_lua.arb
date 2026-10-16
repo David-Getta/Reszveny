@@ -549,5 +549,14 @@
   "briefTitle": "Lelu ne bintu biebe bia mu tshisumbu",
   "briefButton": "Kufunda dia lelu",
   "briefHint": "Muvungu mukese wa AI wa mudi portefeuille webe ne biudi musue biakatamba lelu ne bidi mukanda ya lumu ilela. Kakuena kudifila dikonkonona.",
-  "briefRefresh": "Kuvuija bipiabipia"
+  "briefRefresh": "Kuvuija bipiabipia",
+  "sectionEarnings": "Mapeta a trimestre",
+  "earningsNext": "Rapport udi ulonda: {date}",
+  "earningsExpected": "EPS idibu batekemene",
+  "earningsReported": "EPS idibu bamanyishe",
+  "earningsBeats": "{total, plural, =1{Bu muomumue anyi bupite EPS idibu batekemene mu {beats} pa trimestre 1} other{Bu muomumue anyi bupite EPS idibu batekemene mu {beats} pa ma-trimestre {total} a ndekelu}}",
+  "earningsReminderTomorrow": "{symbol} neapatule mapeta a trimestre makelela",
+  "earningsReminderToday": "{symbol} udi upatula mapeta a trimestre lelu",
+  "earningsRemindersTitle": "Bivuluija bia mapeta",
+  "earningsRemindersSubtitle": "Dimanyisha dituku dimue kumpala kua actions ya biudi musue anyi ya portefeuille webe kupatula mapeta a trimestre"
 }

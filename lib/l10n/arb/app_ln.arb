@@ -549,5 +549,14 @@
   "briefTitle": "Lelo na misolo na yo",
   "briefButton": "Kokesa mokolo ya lelo",
   "briefHint": "Bokuse ya AI ya ndenge portefeuille na yo mpe oyo olingaka eningani lelo mpe nini nsango ya sika elobi. Esalelaka botaleli te.",
-  "briefRefresh": "Kozongisa sika"
+  "briefRefresh": "Kozongisa sika",
+  "sectionEarnings": "Ba résultats ya trimestre",
+  "earningsNext": "Rapport oyo ekoya: {date}",
+  "earningsExpected": "EPS oyo ezelamaki",
+  "earningsReported": "EPS oyo eyebisami",
+  "earningsBeats": "{total, plural, =1{Ekokani to eleki EPS oyo ezelamaki na {beats} kati ya trimestre 1} other{Ekokani to eleki EPS oyo ezelamaki na {beats} kati ya ba trimestre {total} ya nsuka}}",
+  "earningsReminderTomorrow": "{symbol} ekobimisa ba résultats ya trimestre lobi",
+  "earningsReminderToday": "{symbol} ezali kobimisa ba résultats ya trimestre lelo",
+  "earningsRemindersTitle": "Bokundolisi ya ba résultats",
+  "earningsRemindersSubtitle": "Liyebisi mokolo moko liboso ba actions ya oyo olingaka to ya portefeuille na yo ebimisa ba résultats ya trimestre"
 }

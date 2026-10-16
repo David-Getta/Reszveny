@@ -2029,4 +2029,47 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Sasisha';
+
+  @override
+  String get sectionEarnings => 'Matokeo ya robo mwaka';
+
+  @override
+  String earningsNext(String date) {
+    return 'Ripoti ijayo: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS inayotarajiwa';
+
+  @override
+  String get earningsReported => 'EPS iliyoripotiwa';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Sawa au juu ya EPS inayotarajiwa katika $beats kati ya robo $total zilizopita',
+      one: 'Sawa au juu ya EPS inayotarajiwa katika $beats kati ya robo 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol inatangaza matokeo ya robo mwaka kesho';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol inatangaza matokeo ya robo mwaka leo';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Vikumbusho vya matokeo';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Arifa siku moja kabla hisa zako unazopenda au za jalada lako hazijatangaza matokeo ya robo mwaka';
 }

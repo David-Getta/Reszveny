@@ -549,5 +549,14 @@
   "briefTitle": "დღეს თქვენს აქციებთან ერთად",
   "briefButton": "დღის შეჯამება",
   "briefHint": "მოკლე AI შეჯამება იმის შესახებ, როგორ შეიცვალა დღეს თქვენი პორტფელი და რჩეულები და რას ამბობს მათზე უახლესი ამბები. ანალიზს არ ხარჯავს.",
-  "briefRefresh": "განახლება"
+  "briefRefresh": "განახლება",
+  "sectionEarnings": "კვარტალური შედეგები",
+  "earningsNext": "შემდეგი ანგარიში: {date}",
+  "earningsExpected": "მოსალოდნელი EPS",
+  "earningsReported": "გამოქვეყნებული EPS",
+  "earningsBeats": "{total, plural, =1{EPS მოსალოდნელის ტოლი ან მეტი 1 კვარტალიდან {beats}-ში} other{EPS მოსალოდნელის ტოლი ან მეტი ბოლო {total} კვარტალიდან {beats}-ში}}",
+  "earningsReminderTomorrow": "{symbol} ხვალ კვარტალურ შედეგებს აქვეყნებს",
+  "earningsReminderToday": "{symbol} დღეს კვარტალურ შედეგებს აქვეყნებს",
+  "earningsRemindersTitle": "შედეგების შეხსენებები",
+  "earningsRemindersSubtitle": "შეტყობინება ერთი დღით ადრე, სანამ შენი რჩეულების ან პორტფელის აქციები კვარტალურ შედეგებს გამოაქვეყნებს"
 }

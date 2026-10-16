@@ -549,5 +549,14 @@
   "briefTitle": "今天你的股票",
   "briefButton": "總結今天",
   "briefHint": "AI 簡短總結你的投資組合和自選股今天的走勢，以及最新新聞對它們的說法。不消耗分析次數。",
-  "briefRefresh": "更新"
+  "briefRefresh": "更新",
+  "sectionEarnings": "業績",
+  "earningsNext": "下次業績公佈：{date}",
+  "earningsExpected": "預期每股盈利",
+  "earningsReported": "實際每股盈利",
+  "earningsBeats": "{total, plural, =1{1 個季度中有 {beats} 個達到或超過預期每股盈利} other{最近 {total} 個季度中有 {beats} 個達到或超過預期每股盈利}}",
+  "earningsReminderTomorrow": "{symbol} 明日公布季度業績",
+  "earningsReminderToday": "{symbol} 今日公布季度業績",
+  "earningsRemindersTitle": "業績提示",
+  "earningsRemindersSubtitle": "在你收藏或持倉的股票公布季度業績前一日發出通知"
 }

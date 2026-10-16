@@ -2033,4 +2033,48 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Kuvuija bipiabipia';
+
+  @override
+  String get sectionEarnings => 'Mapeta a trimestre';
+
+  @override
+  String earningsNext(String date) {
+    return 'Rapport udi ulonda: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS idibu batekemene';
+
+  @override
+  String get earningsReported => 'EPS idibu bamanyishe';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Bu muomumue anyi bupite EPS idibu batekemene mu $beats pa ma-trimestre $total a ndekelu',
+      one:
+          'Bu muomumue anyi bupite EPS idibu batekemene mu $beats pa trimestre 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol neapatule mapeta a trimestre makelela';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol udi upatula mapeta a trimestre lelu';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Bivuluija bia mapeta';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Dimanyisha dituku dimue kumpala kua actions ya biudi musue anyi ya portefeuille webe kupatula mapeta a trimestre';
 }

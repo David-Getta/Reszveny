@@ -549,5 +549,14 @@
   "briefTitle": "I dag med dina aktier",
   "briefButton": "Sammanfatta dagen",
   "briefHint": "En kort AI-sammanfattning av hur din portfölj och dina favoriter rörde sig i dag och vad de senaste nyheterna säger om dem. Använder ingen analys.",
-  "briefRefresh": "Uppdatera"
+  "briefRefresh": "Uppdatera",
+  "sectionEarnings": "Kvartalsrapporter",
+  "earningsNext": "Nästa rapport: {date}",
+  "earningsExpected": "Förväntad EPS",
+  "earningsReported": "Rapporterad EPS",
+  "earningsBeats": "{total, plural, =1{I nivå med eller över förväntad EPS i {beats} av 1 kvartal} other{I nivå med eller över förväntad EPS i {beats} av de senaste {total} kvartalen}}",
+  "earningsReminderTomorrow": "{symbol} släpper kvartalsrapport i morgon",
+  "earningsReminderToday": "{symbol} släpper kvartalsrapport i dag",
+  "earningsRemindersTitle": "Rapportpåminnelser",
+  "earningsRemindersSubtitle": "En notis dagen innan dina favoriter eller portföljaktier släpper kvartalsrapport"
 }

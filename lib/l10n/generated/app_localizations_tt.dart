@@ -2025,4 +2025,48 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Яңарту';
+
+  @override
+  String get sectionEarnings => 'Квартал нәтиҗәләре';
+
+  @override
+  String earningsNext(String date) {
+    return 'Киләсе хисап: $date';
+  }
+
+  @override
+  String get earningsExpected => 'Көтелгән EPS';
+
+  @override
+  String get earningsReported => 'Игълан ителгән EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Соңгы $total кварталның $beats очрагында көтелгән EPS дәрәҗәсендә яки югарырак',
+      one:
+          '1 кварталның $beats очрагында көтелгән EPS дәрәҗәсендә яки югарырак',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol иртәгә квартал нәтиҗәләрен игълан итә';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol бүген квартал нәтиҗәләрен игълан итә';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Нәтиҗәләр искәртмәләре';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Сайланмаларыгыздагы яки портфелегездәге акцияләр квартал нәтиҗәләрен игълан итүдән бер көн алдан белдерү';
 }

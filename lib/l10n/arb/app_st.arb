@@ -549,5 +549,14 @@
   "briefTitle": "Kajeno le diabo tsa hao",
   "briefButton": "Akaretsa kajeno",
   "briefHint": "Kakaretso e kgutshwane ya AI ya kamoo portfolio ya hao le tseo o di ratang di tsamaileng ka teng kajeno le seo ditaba tsa morao-rao di se buang. Ha e sebedise manollo.",
-  "briefRefresh": "Ntjhafatsa"
+  "briefRefresh": "Ntjhafatsa",
+  "sectionEarnings": "Diphetho",
+  "earningsNext": "Tlaleho e latelang: {date}",
+  "earningsExpected": "EPS e lebelletsweng",
+  "earningsReported": "EPS e tlalehilweng",
+  "earningsBeats": "{total, plural, =1{E lekana kapa e feta EPS e lebelletsweng ho {beats} ho kotara e 1} other{E lekana kapa e feta EPS e lebelletsweng ho {beats} ho dikotara tse {total} tsa ho qetela}}",
+  "earningsReminderTomorrow": "{symbol} e phatlalatsa diphetho tsa kotara hosane",
+  "earningsReminderToday": "{symbol} e phatlalatsa diphetho tsa kotara kajeno",
+  "earningsRemindersTitle": "Dikgopotso tsa diphetho",
+  "earningsRemindersSubtitle": "Tsebiso letsatsi pele ho ha dishere tseo o di ratang kapa tsa phothefolio ya hao di phatlalatsa diphetho tsa kotara"
 }

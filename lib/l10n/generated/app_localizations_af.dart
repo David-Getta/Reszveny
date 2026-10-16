@@ -2032,4 +2032,47 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Werk by';
+
+  @override
+  String get sectionEarnings => 'Resultate';
+
+  @override
+  String earningsNext(String date) {
+    return 'Volgende verslag: $date';
+  }
+
+  @override
+  String get earningsExpected => 'Verwagte WPA';
+
+  @override
+  String get earningsReported => 'Gerapporteerde WPA';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Op of bo die verwagte WPA in $beats van die laaste $total kwartale',
+      one: 'Op of bo die verwagte WPA in $beats van 1 kwartaal',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol rapporteer môre kwartaalresultate';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol rapporteer vandag kwartaalresultate';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Resultaatherinneringe';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      '’n Kennisgewing die dag voordat jou gunstelinge of portefeulje-aandele kwartaalresultate rapporteer';
 }

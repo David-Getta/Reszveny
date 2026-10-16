@@ -1993,4 +1993,46 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get briefRefresh => 'ኣሐድስ';
+
+  @override
+  String get sectionEarnings => 'ውጽኢት ርብዒ ዓመት';
+
+  @override
+  String earningsNext(String date) {
+    return 'ዝቕጽል ጸብጻብ: $date';
+  }
+
+  @override
+  String get earningsExpected => 'ዝተጸበ EPS';
+
+  @override
+  String get earningsReported => 'ዝተሓበረ EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other: 'ኣብ $beats ካብ ዝሓለፉ $total ርብዒ ዓመታት ምስ ዝተጸበ EPS ማዕረ ወይ ልዕሊኡ',
+      one: 'ኣብ $beats ካብ 1 ርብዒ ዓመት ምስ ዝተጸበ EPS ማዕረ ወይ ልዕሊኡ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol ጽባሕ ናይ ርብዒ ዓመት ውጽኢት የፍልጥ';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol ሎሚ ናይ ርብዒ ዓመት ውጽኢት የፍልጥ';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'መዘኻኸሪ ውጽኢት';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'ዝተፈተዉ ወይ ናይ ፖርትፎሊዮኻ ኣክስዮናት ናይ ርብዒ ዓመት ውጽኢት ቅድሚ ምፍላጦም ሓደ መዓልቲ ዝመጽእ መፍለጢ';
 }

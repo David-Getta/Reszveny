@@ -2038,4 +2038,47 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Kozongisa sika';
+
+  @override
+  String get sectionEarnings => 'Ba résultats ya trimestre';
+
+  @override
+  String earningsNext(String date) {
+    return 'Rapport oyo ekoya: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS oyo ezelamaki';
+
+  @override
+  String get earningsReported => 'EPS oyo eyebisami';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Ekokani to eleki EPS oyo ezelamaki na $beats kati ya ba trimestre $total ya nsuka',
+      one: 'Ekokani to eleki EPS oyo ezelamaki na $beats kati ya trimestre 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol ekobimisa ba résultats ya trimestre lobi';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol ezali kobimisa ba résultats ya trimestre lelo';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Bokundolisi ya ba résultats';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Liyebisi mokolo moko liboso ba actions ya oyo olingaka to ya portefeuille na yo ebimisa ba résultats ya trimestre';
 }

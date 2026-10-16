@@ -549,5 +549,14 @@
   "briefTitle": "Danes z vašimi delnicami",
   "briefButton": "Povzemi dan",
   "briefHint": "Kratek povzetek z UI o tem, kako so se danes gibali vaš portfelj in priljubljene ter kaj o njih pravijo zadnje novice. Ne porabi analize.",
-  "briefRefresh": "Posodobi"
+  "briefRefresh": "Posodobi",
+  "sectionEarnings": "Četrtletni rezultati",
+  "earningsNext": "Naslednje poročilo: {date}",
+  "earningsExpected": "Pričakovani EPS",
+  "earningsReported": "Objavljeni EPS",
+  "earningsBeats": "{total, plural, =1{Enak ali višji od pričakovanega EPS v {beats} od 1 četrtletja} other{Enak ali višji od pričakovanega EPS v {beats} od zadnjih {total} četrtletij}}",
+  "earningsReminderTomorrow": "{symbol} jutri objavi četrtletne rezultate",
+  "earningsReminderToday": "{symbol} danes objavi četrtletne rezultate",
+  "earningsRemindersTitle": "Opomniki za rezultate",
+  "earningsRemindersSubtitle": "Obvestilo dan pred objavo četrtletnih rezultatov delnic iz priljubljenih ali tvojega portfelja"
 }

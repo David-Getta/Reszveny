@@ -2033,4 +2033,47 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Bijwerken';
+
+  @override
+  String get sectionEarnings => 'Kwartaalcijfers';
+
+  @override
+  String earningsNext(String date) {
+    return 'Volgende cijfers: $date';
+  }
+
+  @override
+  String get earningsExpected => 'Verwachte EPS';
+
+  @override
+  String get earningsReported => 'Gerapporteerde EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Gelijk aan of boven de verwachte EPS in $beats van de laatste $total kwartalen',
+      one: 'Gelijk aan of boven de verwachte EPS in $beats van 1 kwartaal',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol publiceert morgen kwartaalcijfers';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol publiceert vandaag kwartaalcijfers';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Herinnering kwartaalcijfers';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Een melding de dag voordat je favorieten of portefeuilleaandelen kwartaalcijfers publiceren';
 }

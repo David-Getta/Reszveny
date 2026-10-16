@@ -549,5 +549,14 @@
   "briefTitle": "Rũndã ne f aksɩyõnã",
   "briefButton": "Wilg rũndã koeemã",
   "briefHint": "AI koe-bõon sẽn wilgd f portefeuille la f sẽn nong-rã sẽn tõog n lebg rũndã la kibar-paals sẽn yet b yelle. A pa tũud ne vẽenegr ye.",
-  "briefRefresh": "Lebg-y a paalgo"
+  "briefRefresh": "Lebg-y a paalgo",
+  "sectionEarnings": "Kiuuy a tãab ligd-yɛla",
+  "earningsNext": "Kibay sẽn watẽ: {date}",
+  "earningsExpected": "EPS sẽn gũudã",
+  "earningsReported": "EPS sẽn wilgã",
+  "earningsBeats": "{total, plural, =1{Ta wall yɩɩg EPS sẽn gũudã kiuuy {beats} pʊgẽ, 1 pʊsẽ} other{Ta wall yɩɩg EPS sẽn gũudã kiuuy {beats} pʊgẽ, {total} sẽn loogã pʊsẽ}}",
+  "earningsReminderTomorrow": "{symbol}: kiuuy a tãab ligd-yɛla beoogo",
+  "earningsReminderToday": "{symbol}: kiuuy a tãab ligd-yɛla rũndã",
+  "earningsRemindersTitle": "Ligd-yɛla tẽegre",
+  "earningsRemindersSubtitle": "Gũusgu daar sẽn deng f nong-n-yɩɩda la f portfolio wã kiuuy a tãab ligd-yɛla"
 }

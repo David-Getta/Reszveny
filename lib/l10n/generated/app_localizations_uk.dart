@@ -2082,4 +2082,52 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Оновити';
+
+  @override
+  String get sectionEarnings => 'Квартальні звіти';
+
+  @override
+  String earningsNext(String date) {
+    return 'Наступний звіт: $date';
+  }
+
+  @override
+  String get earningsExpected => 'Очікуваний EPS';
+
+  @override
+  String get earningsReported => 'Опублікований EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'На рівні очікуваного EPS або вище в $beats з останніх $total кварталів',
+      many:
+          'На рівні очікуваного EPS або вище в $beats з останніх $total кварталів',
+      few:
+          'На рівні очікуваного EPS або вище в $beats з останніх $total кварталів',
+      one:
+          'На рівні очікуваного EPS або вище в $beats з останніх $total кварталу',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol завтра публікує квартальні результати';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol сьогодні публікує квартальні результати';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Нагадування про результати';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Сповіщення за день до того, як акції з обраного або портфеля опублікують квартальні результати';
 }

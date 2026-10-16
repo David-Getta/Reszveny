@@ -549,5 +549,14 @@
   "briefTitle": "Šiandien su jūsų akcijomis",
   "briefButton": "Apibendrinti dieną",
   "briefHint": "Trumpa DI santrauka, kaip šiandien judėjo jūsų portfelis ir mėgstamiausios akcijos ir ką apie jas sako naujausios žinios. Analizė nenaudojama.",
-  "briefRefresh": "Atnaujinti"
+  "briefRefresh": "Atnaujinti",
+  "sectionEarnings": "Ketvirčio rezultatai",
+  "earningsNext": "Kita ataskaita: {date}",
+  "earningsExpected": "Prognozuotas EPS",
+  "earningsReported": "Paskelbtas EPS",
+  "earningsBeats": "{total, plural, =1{EPS atitiko ar viršijo lūkesčius: {beats} iš 1 ketvirčio} other{Ketvirčiai, kai EPS atitiko ar viršijo lūkesčius: {beats} iš paskutinių {total}}}",
+  "earningsReminderTomorrow": "{symbol} rytoj skelbia ketvirčio rezultatus",
+  "earningsReminderToday": "{symbol} šiandien skelbia ketvirčio rezultatus",
+  "earningsRemindersTitle": "Priminimai apie rezultatus",
+  "earningsRemindersSubtitle": "Pranešimas dieną prieš tavo mėgstamiausių ar portfelio akcijų ketvirčio rezultatų paskelbimą"
 }

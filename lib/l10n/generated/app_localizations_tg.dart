@@ -2030,4 +2030,47 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Навсозӣ';
+
+  @override
+  String get sectionEarnings => 'Натиҷаҳои семоҳа';
+
+  @override
+  String earningsNext(String date) {
+    return 'Ҳисоботи навбатӣ: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS-и пешбинишуда';
+
+  @override
+  String get earningsReported => 'EPS-и эълоншуда';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Дар $beats аз $total семоҳаи охир баробар ё болотар аз EPS-и пешбинишуда',
+      one: 'Дар $beats аз 1 семоҳа баробар ё болотар аз EPS-и пешбинишуда',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol фардо натиҷаҳои семоҳаро эълон мекунад';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol имрӯз натиҷаҳои семоҳаро эълон мекунад';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Ёдраскуниҳои натиҷаҳо';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Огоҳинома як рӯз пеш аз он ки саҳмияҳои интихобшуда ё портфели шумо натиҷаҳои семоҳаро эълон кунанд';
 }

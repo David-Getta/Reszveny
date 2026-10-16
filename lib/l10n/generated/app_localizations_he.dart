@@ -2022,4 +2022,46 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get briefRefresh => 'עדכון';
+
+  @override
+  String get sectionEarnings => 'דוחות רבעוניים';
+
+  @override
+  String earningsNext(String date) {
+    return 'הדוח הבא: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS צפוי';
+
+  @override
+  String get earningsReported => 'EPS מדווח';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other: 'EPS בגובה התחזית או מעליה ב-$beats מתוך $total הרבעונים האחרונים',
+      one: 'EPS בגובה התחזית או מעליה ב-$beats מתוך רבעון 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol: דוחות רבעוניים מחר';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol: דוחות רבעוניים היום';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'תזכורות לדוחות רבעוניים';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'התראה יום לפני שמניות מהמועדפים או מהתיק שלך מפרסמות דוחות רבעוניים';
 }

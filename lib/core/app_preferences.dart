@@ -26,6 +26,7 @@ class AppPreferences extends ChangeNotifier {
     this.telemetryConsent,
     this.emailAlerts = true,
     this.weeklyDigest = false,
+    this.earningsReminders = true,
   }) : _recent = List.of(recent),
        _favorites = List.of(favorites) {
     displayCurrency ??= currencyUnset;
@@ -49,6 +50,7 @@ class AppPreferences extends ChangeNotifier {
   static const _telemetryKey = 'telemetry_consent';
   static const _emailAlertsKey = 'email_alerts';
   static const _weeklyDigestKey = 'weekly_digest';
+  static const _earningsRemindersKey = 'earnings_reminders';
   static const maxRecent = 20;
 
   /// Megjelenés; módosítása a [setThemeMode] metódussal, hogy mentsünk is.
@@ -102,6 +104,9 @@ class AppPreferences extends ChangeNotifier {
   /// Belépve hétfőnként e-mailes összefoglaló a kedvencekről és a portfólióról.
   bool weeklyDigest;
 
+  /// Asztali értesítés a figyelt részvények gyorsjelentése előtti napon.
+  bool earningsReminders;
+
   /// Megjelenítési pénznem (ISO-kód) vagy `null`: csak a részvény saját pénzneme.
   /// A „nincs beállítva” állapotot az [AppPreferences.currencyUnset] jelöli.
   String? displayCurrency;
@@ -135,6 +140,7 @@ class AppPreferences extends ChangeNotifier {
         telemetryConsent: prefs.getBool(_telemetryKey),
         emailAlerts: prefs.getBool(_emailAlertsKey) ?? true,
         weeklyDigest: prefs.getBool(_weeklyDigestKey) ?? false,
+        earningsReminders: prefs.getBool(_earningsRemindersKey) ?? true,
       );
     } catch (_) {
       return AppPreferences();
@@ -177,6 +183,13 @@ class AppPreferences extends ChangeNotifier {
     weeklyDigest = enabled;
     notifyListeners();
     await _save((p) => p.setBool(_weeklyDigestKey, enabled));
+  }
+
+  Future<void> setEarningsReminders(bool enabled) async {
+    if (earningsReminders == enabled) return;
+    earningsReminders = enabled;
+    notifyListeners();
+    await _save((p) => p.setBool(_earningsRemindersKey, enabled));
   }
 
   Future<void> setThemeMode(ThemeMode mode) async {

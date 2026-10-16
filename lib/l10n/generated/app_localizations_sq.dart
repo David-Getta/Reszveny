@@ -2035,4 +2035,47 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Përditëso';
+
+  @override
+  String get sectionEarnings => 'Rezultatet';
+
+  @override
+  String earningsNext(String date) {
+    return 'Raporti i radhës: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS e pritur';
+
+  @override
+  String get earningsReported => 'EPS e raportuar';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Në nivelin ose mbi EPS-në e pritur në $beats nga $total tremujorët e fundit',
+      one: 'Në nivelin ose mbi EPS-në e pritur në $beats nga 1 tremujor',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol publikon rezultatet tremujore nesër';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol publikon rezultatet tremujore sot';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Kujtues për rezultatet';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Një njoftim një ditë para se aksionet e tua të preferuara ose të portofolit të publikojnë rezultatet tremujore';
 }

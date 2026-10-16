@@ -549,5 +549,14 @@
   "briefTitle": "I dag med dine aktier",
   "briefButton": "Opsummer i dag",
   "briefHint": "Et kort AI-resumé af, hvordan din portefølje og dine favoritter bevægede sig i dag, og hvad de seneste nyheder siger om dem. Det bruger ikke en analyse.",
-  "briefRefresh": "Opdater"
+  "briefRefresh": "Opdater",
+  "sectionEarnings": "Regnskaber",
+  "earningsNext": "Næste regnskab: {date}",
+  "earningsExpected": "Forventet EPS",
+  "earningsReported": "Rapporteret EPS",
+  "earningsBeats": "{total, plural, =1{På eller over forventet EPS i {beats} af 1 kvartal} other{På eller over forventet EPS i {beats} af de seneste {total} kvartaler}}",
+  "earningsReminderTomorrow": "{symbol} offentliggør kvartalsregnskab i morgen",
+  "earningsReminderToday": "{symbol} offentliggør kvartalsregnskab i dag",
+  "earningsRemindersTitle": "Påmindelser om regnskaber",
+  "earningsRemindersSubtitle": "En notifikation dagen før dine favoritter eller porteføljeaktier offentliggør kvartalsregnskab"
 }

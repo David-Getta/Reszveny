@@ -2036,4 +2036,47 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Ενημέρωση';
+
+  @override
+  String get sectionEarnings => 'Κέρδη';
+
+  @override
+  String earningsNext(String date) {
+    return 'Επόμενη ανακοίνωση: $date';
+  }
+
+  @override
+  String get earningsExpected => 'Αναμενόμενο EPS';
+
+  @override
+  String get earningsReported => 'Ανακοινωμένο EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Στο αναμενόμενο EPS ή υψηλότερα σε $beats από τα τελευταία $total τρίμηνα',
+      one: 'Στο αναμενόμενο EPS ή υψηλότερα σε $beats από 1 τρίμηνο',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol: τριμηνιαία αποτελέσματα αύριο';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol: τριμηνιαία αποτελέσματα σήμερα';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Υπενθυμίσεις αποτελεσμάτων';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Ειδοποίηση μία μέρα πριν οι μετοχές από τα αγαπημένα ή το χαρτοφυλάκιό σας ανακοινώσουν τριμηνιαία αποτελέσματα';
 }

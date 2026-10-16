@@ -8,6 +8,7 @@ import 'app_services.dart';
 import 'core/app_preferences.dart';
 import 'core/config/app_config.dart';
 import 'core/desktop/desktop_integration.dart';
+import 'core/desktop/system_notifier.dart';
 import 'core/locale_controller.dart';
 import 'features/account/account_controller.dart';
 import 'features/billing/entitlement_service.dart';
@@ -66,4 +67,6 @@ Future<void> main() async {
   services.syncEntitlements();
   // Árfolyam-riasztások figyelése (5 percenként, amíg az app fut).
   services.alertMonitor.start();
+  // Gyorsjelentés előtti napon értesítés (asztali gépen).
+  if (SystemNotifier.isSupported) services.earningsReminder.start();
 }

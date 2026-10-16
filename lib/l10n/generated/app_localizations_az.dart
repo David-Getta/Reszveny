@@ -2029,4 +2029,48 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Yenilə';
+
+  @override
+  String get sectionEarnings => 'Mənfəət';
+
+  @override
+  String earningsNext(String date) {
+    return 'Növbəti hesabat: $date';
+  }
+
+  @override
+  String get earningsExpected => 'Gözlənilən EPS';
+
+  @override
+  String get earningsReported => 'Açıqlanan EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Son $total rübdən $beats rübdə gözlənilən EPS səviyyəsində və ya ondan yuxarı',
+      one:
+          '1 rübdən $beats rübdə gözlənilən EPS səviyyəsində və ya ondan yuxarı',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol sabah rüblük nəticələrini açıqlayır';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol bu gün rüblük nəticələrini açıqlayır';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Nəticə xatırlatmaları';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Seçilmişlərinizdəki və ya portfelinizdəki səhmlər rüblük nəticələrini açıqlamazdan bir gün əvvəl bildiriş';
 }

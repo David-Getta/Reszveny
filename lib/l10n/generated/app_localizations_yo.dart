@@ -2027,4 +2027,47 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Ṣe àtúnṣe';
+
+  @override
+  String get sectionEarnings => 'Àbájáde ìdámẹ́rin ọdún';
+
+  @override
+  String earningsNext(String date) {
+    return 'Ìjábọ̀ tó kàn: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS tí a retí';
+
+  @override
+  String get earningsReported => 'EPS tí a kéde';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Dọ́gba tàbí ju EPS tí a retí lọ ní $beats nínú ìdámẹ́rin ọdún $total tó kọjá',
+      one: 'Dọ́gba tàbí ju EPS tí a retí lọ ní $beats nínú ìdámẹ́rin ọdún 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol yóò kéde àbájáde ìdámẹ́rin ọdún lọ́la';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol ń kéde àbájáde ìdámẹ́rin ọdún lónìí';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Ìránnilétí àbájáde';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Ìfitónilétí ní ọjọ́ kan ṣáájú kí àwọn ìpín ààyò rẹ tàbí ti pọ́tífólíò rẹ tó kéde àbájáde ìdámẹ́rin ọdún';
 }

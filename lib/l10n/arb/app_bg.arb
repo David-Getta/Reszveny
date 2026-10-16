@@ -549,5 +549,14 @@
   "briefTitle": "Днес с вашите акции",
   "briefButton": "Обобщи деня",
   "briefHint": "Кратко AI обобщение как днес се движиха портфейлът и любимите ви акции и какво казват последните новини за тях. Не използва анализ.",
-  "briefRefresh": "Обнови"
+  "briefRefresh": "Обнови",
+  "sectionEarnings": "Печалби",
+  "earningsNext": "Следващ отчет: {date}",
+  "earningsExpected": "Очаквана EPS",
+  "earningsReported": "Отчетена EPS",
+  "earningsBeats": "{total, plural, =1{На или над очакваната EPS в {beats} от 1 тримесечие} other{На или над очакваната EPS в {beats} от последните {total} тримесечия}}",
+  "earningsReminderTomorrow": "{symbol} обявява тримесечни резултати утре",
+  "earningsReminderToday": "{symbol} обявява тримесечни резултати днес",
+  "earningsRemindersTitle": "Напомняния за резултати",
+  "earningsRemindersSubtitle": "Известие ден преди акциите от любимите ви или от портфейла ви да обявят тримесечни резултати"
 }

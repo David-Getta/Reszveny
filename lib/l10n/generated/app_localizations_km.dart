@@ -2011,4 +2011,46 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get briefRefresh => 'ធ្វើបច្ចុប្បន្នភាព';
+
+  @override
+  String get sectionEarnings => 'លទ្ធផលប្រចាំត្រីមាស';
+
+  @override
+  String earningsNext(String date) {
+    return 'របាយការណ៍បន្ទាប់: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS រំពឹងទុក';
+
+  @override
+  String get earningsReported => 'EPS ដែលបានរាយការណ៍';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other: 'EPS ស្មើ ឬលើសការរំពឹងទុក ក្នុង $beats នៃ $total ត្រីមាសចុងក្រោយ',
+      one: 'EPS ស្មើ ឬលើសការរំពឹងទុក ក្នុង $beats នៃ 1 ត្រីមាស',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol នឹងប្រកាសលទ្ធផលប្រចាំត្រីមាសនៅថ្ងៃស្អែក';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol ប្រកាសលទ្ធផលប្រចាំត្រីមាសនៅថ្ងៃនេះ';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'ការរំលឹកលទ្ធផល';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'ការជូនដំណឹងមួយថ្ងៃមុនពេលភាគហ៊ុនក្នុងចំណូលចិត្ត ឬផលប័ត្ររបស់អ្នកប្រកាសលទ្ធផលប្រចាំត្រីមាស';
 }

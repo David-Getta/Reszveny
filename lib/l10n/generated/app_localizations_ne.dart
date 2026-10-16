@@ -2027,4 +2027,47 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get briefRefresh => 'अपडेट गर्नुहोस्';
+
+  @override
+  String get sectionEarnings => 'त्रैमासिक नतिजा';
+
+  @override
+  String earningsNext(String date) {
+    return 'अर्को रिपोर्ट: $date';
+  }
+
+  @override
+  String get earningsExpected => 'अपेक्षित EPS';
+
+  @override
+  String get earningsReported => 'प्रकाशित EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'पछिल्ला $total मध्ये $beats त्रैमासमा अपेक्षित EPS बराबर वा सोभन्दा माथि',
+      one: '1 मध्ये $beats त्रैमासमा अपेक्षित EPS बराबर वा सोभन्दा माथि',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol ले भोलि त्रैमासिक नतिजा सार्वजनिक गर्दैछ';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol ले आज त्रैमासिक नतिजा सार्वजनिक गर्दैछ';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'नतिजा रिमाइन्डर';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'तपाईंका मनपर्ने वा पोर्टफोलियोका सेयरहरूले त्रैमासिक नतिजा सार्वजनिक गर्नुभन्दा एक दिनअघि सूचना';
 }

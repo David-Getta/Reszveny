@@ -2038,4 +2038,47 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Ntjhafatsa';
+
+  @override
+  String get sectionEarnings => 'Diphetho';
+
+  @override
+  String earningsNext(String date) {
+    return 'Tlaleho e latelang: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS e lebelletsweng';
+
+  @override
+  String get earningsReported => 'EPS e tlalehilweng';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'E lekana kapa e feta EPS e lebelletsweng ho $beats ho dikotara tse $total tsa ho qetela',
+      one: 'E lekana kapa e feta EPS e lebelletsweng ho $beats ho kotara e 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol e phatlalatsa diphetho tsa kotara hosane';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol e phatlalatsa diphetho tsa kotara kajeno';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Dikgopotso tsa diphetho';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Tsebiso letsatsi pele ho ha dishere tseo o di ratang kapa tsa phothefolio ya hao di phatlalatsa diphetho tsa kotara';
 }

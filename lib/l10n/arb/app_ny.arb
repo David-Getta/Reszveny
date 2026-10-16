@@ -549,5 +549,14 @@
   "briefTitle": "Lero ndi masheya anu",
   "briefButton": "Fotokozani lero",
   "briefHint": "Chidule chachidule cha AI cha momwe portfolio yanu ndi zomwe mumakonda zayendera lero ndi zomwe nkhani zaposachedwa zikunena. Sichigwiritsa ntchito kusanthula.",
-  "briefRefresh": "Sinthani"
+  "briefRefresh": "Sinthani",
+  "sectionEarnings": "Zotsatira za kotala",
+  "earningsNext": "Lipoti lotsatira: {date}",
+  "earningsExpected": "EPS yoyembekezeredwa",
+  "earningsReported": "EPS yolengezedwa",
+  "earningsBeats": "{total, plural, =1{Pa kapena pamwamba pa EPS yoyembekezeredwa mu kotala {beats} mwa 1} other{Pa kapena pamwamba pa EPS yoyembekezeredwa mu makotala {beats} mwa {total} omaliza}}",
+  "earningsReminderTomorrow": "{symbol} ilengeza zotsatira za kotala mawa",
+  "earningsReminderToday": "{symbol} ilengeza zotsatira za kotala lero",
+  "earningsRemindersTitle": "Zikumbutso za zotsatira",
+  "earningsRemindersSubtitle": "Chidziwitso tsiku limodzi zokondedwa zanu kapena masheya a mu portfolio yanu asanalengeze zotsatira za kotala"
 }

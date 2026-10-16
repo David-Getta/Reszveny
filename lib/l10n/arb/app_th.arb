@@ -549,5 +549,14 @@
   "briefTitle": "วันนี้กับหุ้นของคุณ",
   "briefButton": "สรุปวันนี้",
   "briefHint": "สรุปสั้นๆ ด้วย AI ว่าพอร์ตและหุ้นโปรดของคุณเคลื่อนไหวอย่างไรวันนี้ และข่าวล่าสุดพูดถึงอะไร ไม่ใช้สิทธิ์การวิเคราะห์",
-  "briefRefresh": "อัปเดต"
+  "briefRefresh": "อัปเดต",
+  "sectionEarnings": "ผลประกอบการ",
+  "earningsNext": "รายงานครั้งถัดไป: {date}",
+  "earningsExpected": "EPS คาดการณ์",
+  "earningsReported": "EPS ที่รายงาน",
+  "earningsBeats": "{total, plural, =1{เท่ากับหรือสูงกว่า EPS คาดการณ์ {beats} จาก 1 ไตรมาส} other{เท่ากับหรือสูงกว่า EPS คาดการณ์ {beats} จาก {total} ไตรมาสล่าสุด}}",
+  "earningsReminderTomorrow": "{symbol} จะประกาศผลประกอบการรายไตรมาสพรุ่งนี้",
+  "earningsReminderToday": "{symbol} ประกาศผลประกอบการรายไตรมาสวันนี้",
+  "earningsRemindersTitle": "แจ้งเตือนผลประกอบการ",
+  "earningsRemindersSubtitle": "แจ้งเตือนล่วงหน้าหนึ่งวันก่อนที่หุ้นในรายการโปรดหรือพอร์ตของคุณจะประกาศผลประกอบการรายไตรมาส"
 }

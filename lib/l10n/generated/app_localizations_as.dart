@@ -2027,4 +2027,47 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get briefRefresh => 'আপডেট';
+
+  @override
+  String get sectionEarnings => 'উপাৰ্জন';
+
+  @override
+  String earningsNext(String date) {
+    return 'পৰৱৰ্তী প্ৰতিবেদন: $date';
+  }
+
+  @override
+  String get earningsExpected => 'প্ৰত্যাশিত EPS';
+
+  @override
+  String get earningsReported => 'ঘোষিত EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'শেহতীয়া $totalটা ত্ৰৈমাসিকৰ $beatsটাত প্ৰত্যাশিত EPSৰ সমান বা অধিক',
+      one: '1টা ত্ৰৈমাসিকৰ $beatsটাত প্ৰত্যাশিত EPSৰ সমান বা অধিক',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol: কাইলৈ ত্ৰৈমাসিক ফলাফল';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol: আজি ত্ৰৈমাসিক ফলাফল';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'ফলাফলৰ সোঁৱৰণী';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'আপোনাৰ প্ৰিয় বা পৰ্টফ\'লিঅ\'ৰ শ্বেয়াৰৰ ত্ৰৈমাসিক ফলাফল ঘোষণাৰ আগদিনা এটা জাননী';
 }

@@ -549,5 +549,14 @@
   "briefTitle": "امروز با سهام شما",
   "briefButton": "خلاصهٔ امروز",
   "briefHint": "خلاصه‌ای کوتاه با هوش مصنوعی از حرکت امروز سبد و علاقه‌مندی‌های شما و آنچه تازه‌ترین اخبار درباره‌شان می‌گویند. تحلیلی مصرف نمی‌کند.",
-  "briefRefresh": "به‌روزرسانی"
+  "briefRefresh": "به‌روزرسانی",
+  "sectionEarnings": "گزارش سود",
+  "earningsNext": "گزارش بعدی: {date}",
+  "earningsExpected": "EPS مورد انتظار",
+  "earningsReported": "EPS گزارش‌شده",
+  "earningsBeats": "{total, plural, =1{برابر یا بالاتر از EPS مورد انتظار در {beats} از 1 فصل} other{برابر یا بالاتر از EPS مورد انتظار در {beats} از {total} فصل اخیر}}",
+  "earningsReminderTomorrow": "{symbol} فردا نتایج فصلی را اعلام می‌کند",
+  "earningsReminderToday": "{symbol} امروز نتایج فصلی را اعلام می‌کند",
+  "earningsRemindersTitle": "یادآور نتایج",
+  "earningsRemindersSubtitle": "اعلانی یک روز پیش از آنکه سهام علاقه‌مندی‌ها یا سبد سهام شما نتایج فصلی را اعلام کنند"
 }

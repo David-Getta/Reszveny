@@ -2039,4 +2039,48 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Pfuxeta';
+
+  @override
+  String get sectionEarnings => 'Mbuyelo';
+
+  @override
+  String earningsNext(String date) {
+    return 'Xiviko lexi landzelaka: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS leyi languteriweke';
+
+  @override
+  String get earningsReported => 'EPS leyi vikiweke';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Yi ringana kumbe yi tlula EPS leyi languteriweke eka $beats eka tikotara ta $total to hetelela',
+      one:
+          'Yi ringana kumbe yi tlula EPS leyi languteriweke eka $beats eka kotara ya 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol yi humesa mbuyelo wa kotara mundzuku';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol yi humesa mbuyelo wa kotara namuntlha';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Swotsundzuxo swa mbuyelo';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Xitiviso siku rin\'we emahlweni ka loko swiavelo leswi u swi rhandzaka kumbe swa phothifoliyo ya wena swi humesa mbuyelo wa kotara';
 }

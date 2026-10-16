@@ -2035,4 +2035,47 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Cusboonaysii';
+
+  @override
+  String get sectionEarnings => 'Natiijooyinka';
+
+  @override
+  String earningsNext(String date) {
+    return 'Warbixinta xigta: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS la filayo';
+
+  @override
+  String get earningsReported => 'EPS la sheegay';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'La mid ama ka sarreeya EPS-ka la filayo $beats ka mid ah $total-dii rubuc ee u dambeeyay',
+      one: 'La mid ama ka sarreeya EPS-ka la filayo $beats ka mid ah 1 rubuc',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol wuxuu berri soo bandhigayaa natiijooyinka rubuc-sanadeedka';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol wuxuu maanta soo bandhigayaa natiijooyinka rubuc-sanadeedka';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Xasuusinta natiijooyinka';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Ogeysiis maalin ka hor inta aysan saamiyada aad jeceshahay ama kuwa boortfoliyahaaga soo bandhigin natiijooyinka rubuc-sanadeedka';
 }

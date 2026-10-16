@@ -2066,4 +2066,49 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Ажурирај';
+
+  @override
+  String get sectionEarnings => 'Резултати';
+
+  @override
+  String earningsNext(String date) {
+    return 'Следећи извештај: $date';
+  }
+
+  @override
+  String get earningsExpected => 'Очекивани EPS';
+
+  @override
+  String get earningsReported => 'Објављени EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'На нивоу очекиваног EPS-а или изнад у $beats од последњих $total квартала',
+      few:
+          'На нивоу очекиваног EPS-а или изнад у $beats од последња $total квартала',
+      one: 'На нивоу очекиваног EPS-а или изнад у $beats од 1 квартала',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol сутра објављује кварталне резултате';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol данас објављује кварталне резултате';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Подсетници за резултате';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Обавештење дан пре него што акције из омиљених или твог портфолија објаве кварталне резултате';
 }

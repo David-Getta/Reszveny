@@ -2030,4 +2030,47 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Päivitä';
+
+  @override
+  String get sectionEarnings => 'Tulokset';
+
+  @override
+  String earningsNext(String date) {
+    return 'Seuraava tulosjulkistus: $date';
+  }
+
+  @override
+  String get earningsExpected => 'Odotettu EPS';
+
+  @override
+  String get earningsReported => 'Toteutunut EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Odotetulla EPS-tasolla tai sen yli $beats/$total viime neljänneksellä',
+      one: 'Odotetulla EPS-tasolla tai sen yli $beats/1 neljänneksellä',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol julkaisee osavuosikatsauksen huomenna';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol julkaisee osavuosikatsauksen tänään';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Tulosmuistutukset';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Ilmoitus päivää ennen kuin suosikkiesi tai salkkusi osakkeet julkaisevat osavuosikatsauksen';
 }

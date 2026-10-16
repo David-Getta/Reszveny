@@ -549,5 +549,14 @@
   "briefTitle": "Har’a aksiyoonota kee waliin",
   "briefButton": "Har’a cuunfi",
   "briefHint": "Cuunfaa gabaabaa AI kan portfolio kee fi filatamoonni kee har’a akkamitti akka sochoo’an fi oduun haaraan maal akka jedhu agarsiisu. Xiinxala hin fayyadamu.",
-  "briefRefresh": "Haaromsi"
+  "briefRefresh": "Haaromsi",
+  "sectionEarnings": "Bu'aa kurmaanaa",
+  "earningsNext": "Gabaasa itti aanu: {date}",
+  "earningsExpected": "EPS eegame",
+  "earningsReported": "EPS gabaafame",
+  "earningsBeats": "{total, plural, =1{Kurmaana 1 keessaa {beats} irratti EPS eegame wajjin wal qixxee ykn isa ol} other{Kurmaanota {total} darban keessaa {beats} irratti EPS eegame wajjin wal qixxee ykn isa ol}}",
+  "earningsReminderTomorrow": "{symbol} boru bu'aa kurmaanaa ifa baasa",
+  "earningsReminderToday": "{symbol} har'a bu'aa kurmaanaa ifa baasa",
+  "earningsRemindersTitle": "Yaadachiisa bu'aa",
+  "earningsRemindersSubtitle": "Beeksisa guyyaa tokko dura filatamoon kee ykn aksiyoonni poortfooliyoo kee bu'aa kurmaanaa ifa baasan"
 }

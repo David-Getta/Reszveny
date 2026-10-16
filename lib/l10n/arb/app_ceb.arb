@@ -549,5 +549,14 @@
   "briefTitle": "Karon uban sa imong mga stock",
   "briefButton": "I-summarize karon",
   "briefHint": "Mubo nga AI summary kon giunsa paglihok karon sa imong portfolio ug mga paborito ug unsay giingon sa labing bag-ong balita bahin kanila. Dili kini mogamit og pagtuki.",
-  "briefRefresh": "I-update"
+  "briefRefresh": "I-update",
+  "sectionEarnings": "Kita",
+  "earningsNext": "Sunod nga report: {date}",
+  "earningsExpected": "Gipaabot nga EPS",
+  "earningsReported": "Gi-report nga EPS",
+  "earningsBeats": "{total, plural, =1{Sama o labaw sa gipaabot nga EPS sa {beats} sa 1 ka quarter} other{Sama o labaw sa gipaabot nga EPS sa {beats} sa katapusang {total} ka quarter}}",
+  "earningsReminderTomorrow": "Ipahibalo sa {symbol} ang resulta sa quarter ugma",
+  "earningsReminderToday": "Ipahibalo sa {symbol} ang resulta sa quarter karon",
+  "earningsRemindersTitle": "Mga pahinumdom sa resulta",
+  "earningsRemindersSubtitle": "Usa ka pahibalo usa ka adlaw sa dili pa ipahibalo sa imong mga paborito o stock sa portfolio ang ilang resulta sa quarter"
 }

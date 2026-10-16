@@ -549,5 +549,14 @@
   "briefTitle": "Bugün hisselerinle",
   "briefButton": "Bugünü özetle",
   "briefHint": "Portföyünün ve favorilerinin bugün nasıl hareket ettiğine ve son haberlerin onlar hakkında ne dediğine dair kısa bir yapay zekâ özeti. Analiz hakkı kullanmaz.",
-  "briefRefresh": "Güncelle"
+  "briefRefresh": "Güncelle",
+  "sectionEarnings": "Bilançolar",
+  "earningsNext": "Sonraki bilanço: {date}",
+  "earningsExpected": "Beklenen HBK",
+  "earningsReported": "Açıklanan HBK",
+  "earningsBeats": "{total, plural, =1{1 çeyreğin {beats} tanesinde HBK beklentisine eşit veya üzerinde} other{Son {total} çeyreğin {beats} tanesinde HBK beklentisine eşit veya üzerinde}}",
+  "earningsReminderTomorrow": "{symbol} yarın çeyreklik bilançosunu açıklıyor",
+  "earningsReminderToday": "{symbol} bugün çeyreklik bilançosunu açıklıyor",
+  "earningsRemindersTitle": "Bilanço hatırlatıcıları",
+  "earningsRemindersSubtitle": "Favorilerindeki veya portföyündeki hisseler çeyreklik bilançosunu açıklamadan bir gün önce bildirim"
 }

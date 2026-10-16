@@ -549,5 +549,14 @@
   "briefTitle": "આજે તમારા શેર સાથે",
   "briefButton": "આજનો સારાંશ",
   "briefHint": "આજે તમારો પોર્ટફોલિયો અને મનપસંદ શેર કેવી રીતે ચાલ્યા અને તાજા સમાચાર તેમના વિશે શું કહે છે તેનો ટૂંકો AI સારાંશ. તેમાં કોઈ વિશ્લેષણ વપરાતું નથી.",
-  "briefRefresh": "અપડેટ કરો"
+  "briefRefresh": "અપડેટ કરો",
+  "sectionEarnings": "કમાણી",
+  "earningsNext": "આગામી રિપોર્ટ: {date}",
+  "earningsExpected": "અપેક્ષિત EPS",
+  "earningsReported": "જાહેર કરેલ EPS",
+  "earningsBeats": "{total, plural, =1{1 ત્રિમાસિકમાંથી {beats}માં અપેક્ષિત EPS જેટલું કે તેથી વધુ} other{છેલ્લા {total} ત્રિમાસિકમાંથી {beats}માં અપેક્ષિત EPS જેટલું કે તેથી વધુ}}",
+  "earningsReminderTomorrow": "{symbol} આવતીકાલે ત્રિમાસિક પરિણામો જાહેર કરશે",
+  "earningsReminderToday": "{symbol} આજે ત્રિમાસિક પરિણામો જાહેર કરશે",
+  "earningsRemindersTitle": "પરિણામ રિમાઇન્ડર",
+  "earningsRemindersSubtitle": "તમારા મનપસંદ અથવા પોર્ટફોલિયોના શેરના ત્રિમાસિક પરિણામો જાહેર થાય તેના આગલા દિવસે સૂચના"
 }

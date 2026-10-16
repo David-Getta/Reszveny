@@ -2040,4 +2040,48 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get briefRefresh => 'I-update';
+
+  @override
+  String get sectionEarnings => 'Resulta kada kwarter';
+
+  @override
+  String earningsNext(String date) {
+    return 'Masunod nga report: $date';
+  }
+
+  @override
+  String get earningsExpected => 'Ginapaabot nga EPS';
+
+  @override
+  String get earningsReported => 'Gin-report nga EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Pareho ukon labaw sa ginapaabot nga EPS sa $beats sang katapusan nga $total ka kwarter',
+      one:
+          'Pareho ukon labaw sa ginapaabot nga EPS sa $beats sang 1 ka kwarter',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return 'Ang $symbol magapagwa sang resulta kada kwarter buwas';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return 'Ang $symbol magapagwa sang resulta kada kwarter subong';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Mga pahanumdom sa resulta';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Pahibalo isa ka adlaw antes magpagwa sang resulta kada kwarter ang mga stock sa imo mga paborito ukon portfolio';
 }

@@ -2021,4 +2021,48 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get briefRefresh => 'အပ်ဒိတ်';
+
+  @override
+  String get sectionEarnings => 'သုံးလပတ် ရလဒ်များ';
+
+  @override
+  String earningsNext(String date) {
+    return 'နောက် အစီရင်ခံစာ: $date';
+  }
+
+  @override
+  String get earningsExpected => 'မျှော်မှန်း EPS';
+
+  @override
+  String get earningsReported => 'ထုတ်ပြန်ထားသော EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'နောက်ဆုံး သုံးလပတ် $total ခုအနက် $beats ခုတွင် မျှော်မှန်း EPS နှင့် ညီ သို့မဟုတ် ကျော်',
+      one:
+          'သုံးလပတ် 1 ခုအနက် $beats ခုတွင် မျှော်မှန်း EPS နှင့် ညီ သို့မဟုတ် ကျော်',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol သည် မနက်ဖြန် သုံးလပတ် ရလဒ်များ ကြေညာမည်';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol သည် ယနေ့ သုံးလပတ် ရလဒ်များ ကြေညာမည်';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'ရလဒ် သတိပေးချက်များ';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'သင်၏ အကြိုက်ဆုံးများ သို့မဟုတ် ပေါ့ဖိုလီယို ရှယ်ယာများ သုံးလပတ် ရလဒ် မကြေညာမီ တစ်ရက်အလိုတွင် အသိပေးချက်';
 }

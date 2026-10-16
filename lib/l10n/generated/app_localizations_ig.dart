@@ -2023,4 +2023,48 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Melite';
+
+  @override
+  String get sectionEarnings => 'Nsonaazụ nkeji ọnwa atọ';
+
+  @override
+  String earningsNext(String date) {
+    return 'Akụkọ na-esote: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS a na-atụ anya ya';
+
+  @override
+  String get earningsReported => 'EPS e kwuputara';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Ruru ma ọ bụ karịa EPS a tụrụ anya ya na $beats n\'ime nkeji ọnwa atọ $total gara aga',
+      one:
+          'Ruru ma ọ bụ karịa EPS a tụrụ anya ya na $beats n\'ime nkeji ọnwa atọ 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol ga-ewepụta nsonaazụ nkeji ọnwa atọ echi';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol na-ewepụta nsonaazụ nkeji ọnwa atọ taa';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Ncheta nsonaazụ';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Ọkwa otu ụbọchị tupu òkè dị n\'ọkacha mmasị gị ma ọ bụ na pọtfolio gị ewepụta nsonaazụ nkeji ọnwa atọ';
 }

@@ -2028,4 +2028,48 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Gũcũrũria';
+
+  @override
+  String get sectionEarnings => 'Maumĩrĩra ma mĩeri ĩtatũ';
+
+  @override
+  String earningsNext(String date) {
+    return 'Ripoti ĩrĩa ĩrũmĩrĩire: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS ĩrĩa yetagĩrĩrwo';
+
+  @override
+  String get earningsReported => 'EPS ĩrĩa yaheanirwo';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Ĩgana kana ĩgakĩra EPS ĩrĩa yetagĩrĩrwo harĩ $beats ya mahinda $total ma mĩeri ĩtatũ ma kũrigĩrĩria',
+      one:
+          'Ĩgana kana ĩgakĩra EPS ĩrĩa yetagĩrĩrwo harĩ $beats ya mĩeri ĩtatũ 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol nĩĩkũheana maumĩrĩra ma mĩeri ĩtatũ rũciũ';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol nĩĩraheana maumĩrĩra ma mĩeri ĩtatũ ũmũthĩ';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Kũririkania maumĩrĩra';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Imenyithia mũthenya ũmwe mbere ya hisa cia iria wendete kana portfolio yaku ciheane maumĩrĩra ma mĩeri ĩtatũ';
 }

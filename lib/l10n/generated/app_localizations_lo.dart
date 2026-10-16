@@ -2005,4 +2005,46 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get briefRefresh => 'ອັບເດດ';
+
+  @override
+  String get sectionEarnings => 'ຜົນປະກອບການລາຍໄຕມາດ';
+
+  @override
+  String earningsNext(String date) {
+    return 'ລາຍງານຄັ້ງຕໍ່ໄປ: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS ທີ່ຄາດໄວ້';
+
+  @override
+  String get earningsReported => 'EPS ທີ່ລາຍງານ';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other: 'EPS ເທົ່າ ຫຼື ສູງກວ່າຄາດ $beats ໃນ $total ໄຕມາດຫຼ້າສຸດ',
+      one: 'EPS ເທົ່າ ຫຼື ສູງກວ່າຄາດ $beats ໃນ 1 ໄຕມາດ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol ຈະປະກາດຜົນປະກອບການລາຍໄຕມາດມື້ອື່ນ';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol ປະກາດຜົນປະກອບການລາຍໄຕມາດມື້ນີ້';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'ການແຈ້ງເຕືອນຜົນປະກອບການ';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'ແຈ້ງເຕືອນລ່ວງໜ້າໜຶ່ງມື້ກ່ອນຫຸ້ນໃນລາຍການທີ່ມັກ ຫຼື ພອດໂຟລິໂອຂອງທ່ານປະກາດຜົນປະກອບການລາຍໄຕມາດ';
 }

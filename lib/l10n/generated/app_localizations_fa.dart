@@ -2026,4 +2026,46 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get briefRefresh => 'به‌روزرسانی';
+
+  @override
+  String get sectionEarnings => 'گزارش سود';
+
+  @override
+  String earningsNext(String date) {
+    return 'گزارش بعدی: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS مورد انتظار';
+
+  @override
+  String get earningsReported => 'EPS گزارش‌شده';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other: 'برابر یا بالاتر از EPS مورد انتظار در $beats از $total فصل اخیر',
+      one: 'برابر یا بالاتر از EPS مورد انتظار در $beats از 1 فصل',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol فردا نتایج فصلی را اعلام می‌کند';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol امروز نتایج فصلی را اعلام می‌کند';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'یادآور نتایج';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'اعلانی یک روز پیش از آنکه سهام علاقه‌مندی‌ها یا سبد سهام شما نتایج فصلی را اعلام کنند';
 }

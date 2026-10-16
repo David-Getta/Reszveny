@@ -2037,4 +2037,48 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get briefRefresh => 'புதுப்பி';
+
+  @override
+  String get sectionEarnings => 'காலாண்டு முடிவுகள்';
+
+  @override
+  String earningsNext(String date) {
+    return 'அடுத்த அறிக்கை: $date';
+  }
+
+  @override
+  String get earningsExpected => 'எதிர்பார்த்த EPS';
+
+  @override
+  String get earningsReported => 'அறிவிக்கப்பட்ட EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'கடந்த $total காலாண்டுகளில் $beats முறை எதிர்பார்த்த EPS-க்குச் சமம் அல்லது அதிகம்',
+      one:
+          '1 காலாண்டில் $beats முறை எதிர்பார்த்த EPS-க்குச் சமம் அல்லது அதிகம்',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol நாளை காலாண்டு முடிவுகளை வெளியிடுகிறது';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol இன்று காலாண்டு முடிவுகளை வெளியிடுகிறது';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'முடிவுகள் நினைவூட்டல்கள்';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'உங்கள் பிடித்தவை அல்லது போர்ட்ஃபோலியோ பங்குகள் காலாண்டு முடிவுகளை வெளியிடுவதற்கு முந்தைய நாள் ஒரு அறிவிப்பு';
 }

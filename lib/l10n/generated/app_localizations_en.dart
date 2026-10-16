@@ -2027,4 +2027,47 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Update';
+
+  @override
+  String get sectionEarnings => 'Earnings';
+
+  @override
+  String earningsNext(String date) {
+    return 'Next report: $date';
+  }
+
+  @override
+  String get earningsExpected => 'Expected EPS';
+
+  @override
+  String get earningsReported => 'Reported EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'At or above the expected EPS in $beats of the last $total quarters',
+      one: 'At or above the expected EPS in $beats of 1 quarter',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol reports quarterly results tomorrow';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol reports quarterly results today';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Results reminders';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'A notification the day before your favorites or portfolio stocks report quarterly results';
 }

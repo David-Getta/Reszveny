@@ -549,5 +549,14 @@
   "briefTitle": "Tänään osakkeidesi kanssa",
   "briefButton": "Tiivistä päivä",
   "briefHint": "Lyhyt tekoälyn yhteenveto siitä, miten salkkusi ja suosikkisi liikkuivat tänään ja mitä tuoreimmat uutiset niistä kertovat. Ei kuluta analyysia.",
-  "briefRefresh": "Päivitä"
+  "briefRefresh": "Päivitä",
+  "sectionEarnings": "Tulokset",
+  "earningsNext": "Seuraava tulosjulkistus: {date}",
+  "earningsExpected": "Odotettu EPS",
+  "earningsReported": "Toteutunut EPS",
+  "earningsBeats": "{total, plural, =1{Odotetulla EPS-tasolla tai sen yli {beats}/1 neljänneksellä} other{Odotetulla EPS-tasolla tai sen yli {beats}/{total} viime neljänneksellä}}",
+  "earningsReminderTomorrow": "{symbol} julkaisee osavuosikatsauksen huomenna",
+  "earningsReminderToday": "{symbol} julkaisee osavuosikatsauksen tänään",
+  "earningsRemindersTitle": "Tulosmuistutukset",
+  "earningsRemindersSubtitle": "Ilmoitus päivää ennen kuin suosikkiesi tai salkkusi osakkeet julkaisevat osavuosikatsauksen"
 }

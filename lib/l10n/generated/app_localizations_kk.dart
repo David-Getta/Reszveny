@@ -2029,4 +2029,46 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Жаңарту';
+
+  @override
+  String get sectionEarnings => 'Тоқсандық нәтижелер';
+
+  @override
+  String earningsNext(String date) {
+    return 'Келесі есеп: $date';
+  }
+
+  @override
+  String get earningsExpected => 'Күтілген EPS';
+
+  @override
+  String get earningsReported => 'Жарияланған EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other: 'EPS күтілгеннен жоғары не тең: соңғы $total тоқсанның $beats',
+      one: 'EPS күтілгеннен жоғары не тең: 1 тоқсанның $beats',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol ертең тоқсандық нәтижелерін жариялайды';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol бүгін тоқсандық нәтижелерін жариялайды';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Нәтижелер туралы еске салу';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Таңдаулыларыңыздағы немесе портфеліңіздегі акциялар тоқсандық нәтижелерін жариялардан бір күн бұрын хабарландыру';
 }

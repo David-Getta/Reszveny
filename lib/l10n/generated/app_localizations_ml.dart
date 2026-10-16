@@ -2036,4 +2036,47 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get briefRefresh => 'പുതുക്കുക';
+
+  @override
+  String get sectionEarnings => 'ത്രൈമാസ ഫലങ്ങൾ';
+
+  @override
+  String earningsNext(String date) {
+    return 'അടുത്ത റിപ്പോർട്ട്: $date';
+  }
+
+  @override
+  String get earningsExpected => 'പ്രതീക്ഷിച്ച EPS';
+
+  @override
+  String get earningsReported => 'റിപ്പോർട്ട് ചെയ്ത EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'കഴിഞ്ഞ $total പാദങ്ങളിൽ $beats എണ്ണത്തിൽ പ്രതീക്ഷിച്ച EPS-നൊപ്പമോ അതിനു മുകളിലോ',
+      one: '1 പാദത്തിൽ $beats എണ്ണത്തിൽ പ്രതീക്ഷിച്ച EPS-നൊപ്പമോ അതിനു മുകളിലോ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol നാളെ ത്രൈമാസ ഫലങ്ങൾ പ്രസിദ്ധീകരിക്കും';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol ഇന്ന് ത്രൈമാസ ഫലങ്ങൾ പ്രസിദ്ധീകരിക്കും';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'ഫല ഓർമ്മപ്പെടുത്തലുകൾ';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'നിങ്ങളുടെ പ്രിയപ്പെട്ടവയോ പോർട്ട്‌ഫോളിയോയിലെ ഓഹരികളോ ത്രൈമാസ ഫലങ്ങൾ പ്രസിദ്ധീകരിക്കുന്നതിന്റെ തലേദിവസം ഒരു അറിയിപ്പ്';
 }

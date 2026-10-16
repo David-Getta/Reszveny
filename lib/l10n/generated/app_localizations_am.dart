@@ -1999,4 +1999,46 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get briefRefresh => 'አዘምን';
+
+  @override
+  String get sectionEarnings => 'የትርፍ ውጤቶች';
+
+  @override
+  String earningsNext(String date) {
+    return 'ቀጣይ ሪፖርት: $date';
+  }
+
+  @override
+  String get earningsExpected => 'የሚጠበቀው EPS';
+
+  @override
+  String get earningsReported => 'ሪፖርት የተደረገው EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other: 'ካለፉት $total ሩብ ዓመታት ውስጥ በ$beats ከሚጠበቀው EPS ጋር እኩል ወይም በላይ',
+      one: 'ከ1 ሩብ ዓመት ውስጥ በ$beats ከሚጠበቀው EPS ጋር እኩል ወይም በላይ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol ነገ የሩብ ዓመት ውጤቱን ያሳውቃል';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol ዛሬ የሩብ ዓመት ውጤቱን ያሳውቃል';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'የውጤት ማስታወሻዎች';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'ተወዳጆችዎ ወይም የፖርትፎሊዮዎ አክሲዮኖች የሩብ ዓመት ውጤታቸውን ከማሳወቃቸው አንድ ቀን በፊት ማሳወቂያ';
 }

@@ -549,5 +549,14 @@
   "briefTitle": "Бүгүн акцияларыңыз менен",
   "briefButton": "Бүгүндү кыскача",
   "briefHint": "Портфелиңиз жана тандалгандарыңыз бүгүн кандай өзгөргөнү жана акыркы жаңылыктар алар тууралуу эмне дегени жөнүндө кыскача AI корутундусу. Талдоо сарпталбайт.",
-  "briefRefresh": "Жаңыртуу"
+  "briefRefresh": "Жаңыртуу",
+  "sectionEarnings": "Чейректик натыйжалар",
+  "earningsNext": "Кийинки отчет: {date}",
+  "earningsExpected": "Күтүлгөн EPS",
+  "earningsReported": "Жарыяланган EPS",
+  "earningsBeats": "{total, plural, =1{EPS күтүлгөндөн жогору же барабар: 1 чейректин {beats}} other{EPS күтүлгөндөн жогору же барабар: акыркы {total} чейректин {beats}}}",
+  "earningsReminderTomorrow": "{symbol} эртең чейректик натыйжаларын жарыялайт",
+  "earningsReminderToday": "{symbol} бүгүн чейректик натыйжаларын жарыялайт",
+  "earningsRemindersTitle": "Натыйжалар тууралуу эскертме",
+  "earningsRemindersSubtitle": "Тандалмаларыңыздагы же портфелиңиздеги акциялар чейректик натыйжаларын жарыялаардан бир күн мурун билдирме"
 }

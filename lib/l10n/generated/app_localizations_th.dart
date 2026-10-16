@@ -2002,4 +2002,46 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get briefRefresh => 'อัปเดต';
+
+  @override
+  String get sectionEarnings => 'ผลประกอบการ';
+
+  @override
+  String earningsNext(String date) {
+    return 'รายงานครั้งถัดไป: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS คาดการณ์';
+
+  @override
+  String get earningsReported => 'EPS ที่รายงาน';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other: 'เท่ากับหรือสูงกว่า EPS คาดการณ์ $beats จาก $total ไตรมาสล่าสุด',
+      one: 'เท่ากับหรือสูงกว่า EPS คาดการณ์ $beats จาก 1 ไตรมาส',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol จะประกาศผลประกอบการรายไตรมาสพรุ่งนี้';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol ประกาศผลประกอบการรายไตรมาสวันนี้';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'แจ้งเตือนผลประกอบการ';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'แจ้งเตือนล่วงหน้าหนึ่งวันก่อนที่หุ้นในรายการโปรดหรือพอร์ตของคุณจะประกาศผลประกอบการรายไตรมาส';
 }

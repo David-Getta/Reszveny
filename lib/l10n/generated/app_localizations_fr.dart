@@ -2038,4 +2038,47 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Actualiser';
+
+  @override
+  String get sectionEarnings => 'Résultats';
+
+  @override
+  String earningsNext(String date) {
+    return 'Prochaine publication : $date';
+  }
+
+  @override
+  String get earningsExpected => 'BPA attendu';
+
+  @override
+  String get earningsReported => 'BPA publié';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Égal ou supérieur au BPA attendu sur $beats des $total derniers trimestres',
+      one: 'Égal ou supérieur au BPA attendu sur $beats trimestre sur 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol publie ses résultats trimestriels demain';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol publie ses résultats trimestriels aujourd’hui';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Rappels de résultats';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Une notification la veille de la publication des résultats trimestriels des actions de vos favoris ou de votre portefeuille';
 }

@@ -2027,4 +2027,48 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Täzele';
+
+  @override
+  String get sectionEarnings => 'Çärýeklik netijeler';
+
+  @override
+  String earningsNext(String date) {
+    return 'Indiki hasabat: $date';
+  }
+
+  @override
+  String get earningsExpected => 'Garaşylýan EPS';
+
+  @override
+  String get earningsReported => 'Yglan edilen EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Soňky $total çärýegiň $beats sanysynda garaşylýan EPS-e deň ýa-da ondan ýokary',
+      one:
+          '1 çärýegiň $beats sanysynda garaşylýan EPS-e deň ýa-da ondan ýokary',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol ertir çärýeklik netijelerini yglan edýär';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol şu gün çärýeklik netijelerini yglan edýär';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Netije ýatlatmalary';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Saýlananlaryňyzdaky ýa-da portfeliňizdäki paýnamalar çärýeklik netijelerini yglan etmezinden bir gün öň duýduryş';
 }

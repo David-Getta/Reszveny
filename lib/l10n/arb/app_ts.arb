@@ -549,5 +549,14 @@
   "briefTitle": "Namuntlha ni swiavelo swa wena",
   "briefButton": "Koma namuntlha",
   "briefHint": "Nkomiso wo koma wa AI wa ndlela leyi portfolio ya wena ni leswi u swi rhandzaka swi fambeke ha yona namuntlha ni leswi mahungu ya sweswi ma swi vulaka. A yi tirhisi nxopaxopo.",
-  "briefRefresh": "Pfuxeta"
+  "briefRefresh": "Pfuxeta",
+  "sectionEarnings": "Mbuyelo",
+  "earningsNext": "Xiviko lexi landzelaka: {date}",
+  "earningsExpected": "EPS leyi languteriweke",
+  "earningsReported": "EPS leyi vikiweke",
+  "earningsBeats": "{total, plural, =1{Yi ringana kumbe yi tlula EPS leyi languteriweke eka {beats} eka kotara ya 1} other{Yi ringana kumbe yi tlula EPS leyi languteriweke eka {beats} eka tikotara ta {total} to hetelela}}",
+  "earningsReminderTomorrow": "{symbol} yi humesa mbuyelo wa kotara mundzuku",
+  "earningsReminderToday": "{symbol} yi humesa mbuyelo wa kotara namuntlha",
+  "earningsRemindersTitle": "Swotsundzuxo swa mbuyelo",
+  "earningsRemindersSubtitle": "Xitiviso siku rin'we emahlweni ka loko swiavelo leswi u swi rhandzaka kumbe swa phothifoliyo ya wena swi humesa mbuyelo wa kotara"
 }

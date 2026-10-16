@@ -549,5 +549,14 @@
   "briefTitle": "A nap a részvényeiddel",
   "briefButton": "Mai összefoglaló",
   "briefHint": "Rövid AI-összefoglaló arról, hogyan mozogtak ma a portfóliód és a kedvenceid részvényei, és mit mondanak róluk a friss hírek. Nem fogyaszt elemzést.",
-  "briefRefresh": "Frissítés"
+  "briefRefresh": "Frissítés",
+  "sectionEarnings": "Gyorsjelentések",
+  "earningsNext": "Következő jelentés: {date}",
+  "earningsExpected": "Várt EPS",
+  "earningsReported": "Jelentett EPS",
+  "earningsBeats": "{total, plural, =1{1 negyedévből {beats} alkalommal érte el vagy verte meg a várt EPS-t} other{Az utolsó {total} negyedévből {beats} alkalommal érte el vagy verte meg a várt EPS-t}}",
+  "earningsReminderTomorrow": "{symbol}: holnap gyorsjelentés",
+  "earningsReminderToday": "{symbol}: ma gyorsjelentés",
+  "earningsRemindersTitle": "Gyorsjelentés-emlékeztető",
+  "earningsRemindersSubtitle": "Értesítés a kedvenceid és a portfóliód részvényeinek gyorsjelentése előtti napon"
 }

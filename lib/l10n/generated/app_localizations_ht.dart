@@ -2027,4 +2027,47 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Mete ajou';
+
+  @override
+  String get sectionEarnings => 'Rezilta trimestriyèl';
+
+  @override
+  String earningsNext(String date) {
+    return 'Pwochen rapò: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS yo atann';
+
+  @override
+  String get earningsReported => 'EPS rapòte';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Nan nivo oswa pi wo pase EPS yo te atann nan $beats sou $total dènye trimès yo',
+      one: 'Nan nivo oswa pi wo pase EPS yo te atann nan $beats sou 1 trimès',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol ap pibliye rezilta trimestriyèl li demen';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol ap pibliye rezilta trimestriyèl li jodi a';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Rapèl rezilta';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Yon notifikasyon jou anvan aksyon ki nan favori w oswa pòtfolyo w pibliye rezilta trimestriyèl yo';
 }

@@ -549,5 +549,14 @@
   "briefTitle": "Сёння з вашымі акцыямі",
   "briefButton": "Падсумаваць дзень",
   "briefHint": "Кароткае AI-падсумаванне таго, як сёння змяніліся ваш партфель і абранае і што пра іх кажуць свежыя навіны. Аналіз не выкарыстоўваецца.",
-  "briefRefresh": "Абнавіць"
+  "briefRefresh": "Абнавіць",
+  "sectionEarnings": "Прыбытак",
+  "earningsNext": "Наступная справаздача: {date}",
+  "earningsExpected": "Чаканы EPS",
+  "earningsReported": "Апублікаваны EPS",
+  "earningsBeats": "{total, plural, =1{На ўзроўні чаканага EPS або вышэй: {beats} з 1 квартала} other{На ўзроўні чаканага EPS або вышэй: {beats} з апошніх {total} кварталаў}}",
+  "earningsReminderTomorrow": "{symbol} заўтра публікуе квартальныя вынікі",
+  "earningsReminderToday": "{symbol} сёння публікуе квартальныя вынікі",
+  "earningsRemindersTitle": "Напаміны пра вынікі",
+  "earningsRemindersSubtitle": "Апавяшчэнне за дзень да таго, як акцыі з вашага абранага або партфеля апублікуюць квартальныя вынікі"
 }

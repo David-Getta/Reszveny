@@ -1,0 +1,79 @@
+import 'package:flutter_test/flutter_test.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:reszveny/core/app_preferences.dart';
+import 'package:reszveny/core/config/app_config.dart';
+import 'package:reszveny/core/models/analysis_extras.dart';
+import 'package:reszveny/features/analysis/claude_stock_analyst.dart';
+import 'package:reszveny/features/analysis/report_store.dart';
+import 'package:reszveny/features/events/earnings_reminder.dart';
+import 'package:reszveny/features/events/events_service.dart';
+import 'package:reszveny/features/market_data/demo_market_data_provider.dart';
+import 'package:reszveny/features/portfolio/portfolio_store.dart';
+
+import 'app_widget_test.dart' show FakeNotifier;
+
+class _Market extends DemoMarketDataProvider {
+  _Market(this.dates) : super(latency: Duration.zero);
+
+  final Map<String, DateTime> dates;
+
+  @override
+  Future<UpcomingEarnings?> nextEarnings(String symbol) async {
+    final d = dates[symbol];
+    return d == null ? null : UpcomingEarnings(date: d, hour: 'amc', epsEstimate: 1.62);
+  }
+}
+
+void main() {
+  final now = DateTime.now();
+  final today = DateTime(now.year, now.month, now.day);
+
+  setUp(() => SharedPreferences.setMockInitialValues({}));
+
+  EarningsReminder reminder(_Market market, FakeNotifier notifier, AppPreferences prefs) => EarningsReminder(
+    events: EventsService(
+      marketData: market,
+      preferences: prefs,
+      portfolio: PortfolioStore(),
+      reports: ReportStore(analyst: ClaudeStockAnalyst(config: const AppConfig())),
+    ),
+    preferences: prefs,
+    notifier: notifier,
+    describe: (e, {required tomorrow}) => (title: '${e.symbol} ${tomorrow ? 'tomorrow' : 'today'}', body: e.hour ?? ''),
+  );
+
+  test('one notification for results tomorrow or today, never twice, none for later ones', () async {
+    final market = _Market({
+      'AAPL': today.add(const Duration(days: 1)),
+      'MSFT': today,
+      'NVDA': today.add(const Duration(days: 5)),
+    });
+    final notifier = FakeNotifier();
+    final prefs = AppPreferences(favorites: const ['AAPL', 'MSFT', 'NVDA']);
+    final r = reminder(market, notifier, prefs);
+
+    final sent = await r.check();
+    expect(sent.length, 2);
+    expect(notifier.sent.map((n) => n.title).toSet(), {'AAPL tomorrow', 'MSFT today'});
+    expect(notifier.sent.first.body, 'amc');
+    expect(notifier.sent.first.id, startsWith('earnings-'));
+
+    // Újra (akár újraindítás után is) már nem szól.
+    expect(await reminder(market, notifier, prefs).check(), isEmpty);
+    expect(notifier.sent.length, 2);
+  });
+
+  test('off in Settings, or nothing watched: no notification', () async {
+    final market = _Market({'AAPL': today.add(const Duration(days: 1))});
+    final notifier = FakeNotifier();
+    final prefs = AppPreferences(favorites: const ['AAPL'], earningsReminders: false);
+    expect(await reminder(market, notifier, prefs).check(), isEmpty);
+    expect(await reminder(market, notifier, AppPreferences()).check(), isEmpty);
+    expect(notifier.sent, isEmpty);
+  });
+
+  test('the notification id carries the ticker and the day', () {
+    final e = UpcomingEvent(symbol: 'BRK.B', date: DateTime(2026, 10, 30), kind: UpcomingEventKind.earnings);
+    expect(EarningsReminder.idOf(e), 'earnings-BRK.B-2026-10-30');
+  });
+}

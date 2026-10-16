@@ -549,5 +549,14 @@
   "briefTitle": "Dziś z Twoimi akcjami",
   "briefButton": "Podsumuj dzień",
   "briefHint": "Krótkie podsumowanie AI tego, jak dziś zmieniał się Twój portfel i ulubione akcje oraz co mówią o nich najnowsze wiadomości. Nie zużywa analizy.",
-  "briefRefresh": "Odśwież"
+  "briefRefresh": "Odśwież",
+  "sectionEarnings": "Wyniki kwartalne",
+  "earningsNext": "Następny raport: {date}",
+  "earningsExpected": "Oczekiwany EPS",
+  "earningsReported": "Raportowany EPS",
+  "earningsBeats": "{total, plural, =1{Na poziomie oczekiwanego EPS lub powyżej w {beats} z 1 kwartału} other{Na poziomie oczekiwanego EPS lub powyżej w {beats} z ostatnich {total} kwartałów}}",
+  "earningsReminderTomorrow": "{symbol} jutro publikuje wyniki kwartalne",
+  "earningsReminderToday": "{symbol} dziś publikuje wyniki kwartalne",
+  "earningsRemindersTitle": "Przypomnienia o wynikach",
+  "earningsRemindersSubtitle": "Powiadomienie dzień przed publikacją wyników kwartalnych spółek z ulubionych lub portfela"
 }

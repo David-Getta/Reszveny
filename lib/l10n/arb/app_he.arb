@@ -549,5 +549,14 @@
   "briefTitle": "היום עם המניות שלך",
   "briefButton": "סכם את היום",
   "briefHint": "סיכום AI קצר של תנועת התיק והמועדפים שלך היום ומה החדשות האחרונות אומרות עליהם. לא צורך ניתוח.",
-  "briefRefresh": "עדכון"
+  "briefRefresh": "עדכון",
+  "sectionEarnings": "דוחות רבעוניים",
+  "earningsNext": "הדוח הבא: {date}",
+  "earningsExpected": "EPS צפוי",
+  "earningsReported": "EPS מדווח",
+  "earningsBeats": "{total, plural, =1{EPS בגובה התחזית או מעליה ב-{beats} מתוך רבעון 1} other{EPS בגובה התחזית או מעליה ב-{beats} מתוך {total} הרבעונים האחרונים}}",
+  "earningsReminderTomorrow": "{symbol}: דוחות רבעוניים מחר",
+  "earningsReminderToday": "{symbol}: דוחות רבעוניים היום",
+  "earningsRemindersTitle": "תזכורות לדוחות רבעוניים",
+  "earningsRemindersSubtitle": "התראה יום לפני שמניות מהמועדפים או מהתיק שלך מפרסמות דוחות רבעוניים"
 }

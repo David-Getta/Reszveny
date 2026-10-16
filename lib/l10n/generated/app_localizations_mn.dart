@@ -2029,4 +2029,47 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Шинэчлэх';
+
+  @override
+  String get sectionEarnings => 'Улирлын тайлан';
+
+  @override
+  String earningsNext(String date) {
+    return 'Дараагийн тайлан: $date';
+  }
+
+  @override
+  String get earningsExpected => 'Хүлээгдэж буй EPS';
+
+  @override
+  String get earningsReported => 'Тайлагнасан EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Сүүлийн $total улирлаас $beats-д нь хүлээгдэж буй EPS-тэй тэнцүү буюу давсан',
+      one: '1 улирлаас $beats-д нь хүлээгдэж буй EPS-тэй тэнцүү буюу давсан',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol маргааш улирлын тайлангаа танилцуулна';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol өнөөдөр улирлын тайлангаа танилцуулна';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Тайлангийн сануулга';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Дуртай болон багцын тань хувьцаа улирлын тайлангаа гаргахаас өмнөх өдөр мэдэгдэл ирнэ';
 }

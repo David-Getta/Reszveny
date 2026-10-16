@@ -2019,4 +2019,47 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get briefRefresh => 'གསར་བསྒྱུར།';
+
+  @override
+  String get sectionEarnings => 'ཁེ་སྤོགས་སྙན་ཞུ';
+
+  @override
+  String earningsNext(String date) {
+    return 'རྗེས་མའི་སྙན་ཞུ: $date';
+  }
+
+  @override
+  String get earningsExpected => 'རེ་སྒུག་བྱས་པའི་EPS';
+
+  @override
+  String get earningsReported => 'སྙན་ཞུ་བྱས་པའི་EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'ཉེ་ཆར་གྱི་ཟླ་གསུམ་ $total ཡི་ནང་ $beats ལ་ EPS རེ་སྒུག་དང་མཉམ་པའམ་དེ་ལས་མཐོ།',
+      one: 'ཟླ་གསུམ་ 1 ཡི་ནང་ $beats ལ་ EPS རེ་སྒུག་དང་མཉམ་པའམ་དེ་ལས་མཐོ།',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol: སང་ཉིན་ཟླ་གསུམ་རེའི་གྲུབ་འབྲས།';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol: དེ་རིང་ཟླ་གསུམ་རེའི་གྲུབ་འབྲས།';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'གྲུབ་འབྲས་དྲན་སྐུལ།';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'ཁྱེད་ཀྱི་དགའ་མོས་སམ་མ་འཛུགས་ཀྱི་ཚོང་ཀས་ཟླ་གསུམ་རེའི་གྲུབ་འབྲས་མ་སྤེལ་གོང་ཉིན་གཅིག་ལ་བརྡ་ཐོ།';
 }

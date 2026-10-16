@@ -2031,4 +2031,48 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Yangilash';
+
+  @override
+  String get sectionEarnings => 'Choraklik natijalar';
+
+  @override
+  String earningsNext(String date) {
+    return 'Keyingi hisobot: $date';
+  }
+
+  @override
+  String get earningsExpected => 'Kutilgan EPS';
+
+  @override
+  String get earningsReported => 'Eʼlon qilingan EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Soʻnggi $total chorakdan $beats tasida kutilgan EPS darajasida yoki undan yuqori',
+      one:
+          '1 chorakdan $beats tasida kutilgan EPS darajasida yoki undan yuqori',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol ertaga choraklik natijalarini e’lon qiladi';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol bugun choraklik natijalarini e’lon qiladi';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Natijalar eslatmalari';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Sevimlilaringiz yoki portfelingizdagi aksiyalar choraklik natijalarini e’lon qilishidan bir kun oldin bildirishnoma';
 }

@@ -2036,4 +2036,47 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Թարմացնել';
+
+  @override
+  String get sectionEarnings => 'Եռամսյակային արդյունքներ';
+
+  @override
+  String earningsNext(String date) {
+    return 'Հաջորդ հաշվետվությունը՝ $date';
+  }
+
+  @override
+  String get earningsExpected => 'Սպասվող EPS';
+
+  @override
+  String get earningsReported => 'Հրապարակված EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'EPS-ը սպասվածին հավասար կամ բարձր՝ վերջին $total եռամսյակից $beats-ում',
+      one: 'EPS-ը սպասվածին հավասար կամ բարձր՝ 1 եռամսյակից $beats-ում',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol-ը վաղը կհրապարակի եռամսյակային արդյունքները';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol-ը այսօր կհրապարակի եռամսյակային արդյունքները';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Արդյունքների հիշեցումներ';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Ծանուցում՝ ընտրյալների կամ պորտֆելի բաժնետոմսերի եռամսյակային արդյունքների հրապարակումից մեկ օր առաջ';
 }

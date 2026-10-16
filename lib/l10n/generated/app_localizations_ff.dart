@@ -2023,4 +2023,47 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Hesɗitin';
+
+  @override
+  String get sectionEarnings => 'Ngalluuji';
+
+  @override
+  String earningsNext(String date) {
+    return 'Jaŋtol garowol: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS jortaaɗo';
+
+  @override
+  String get earningsReported => 'EPS bayyinaaɗo';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Hewtii walla ɓurii EPS jortaaɗo e $beats e nder lebbi tati $total sakkitiiɗi',
+      one: 'Hewtii walla ɓurii EPS jortaaɗo e $beats e nder lebbi tati 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol maa yaltin ngalluuji lebbi tati jaango';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol ina yaltina ngalluuji lebbi tati hannde';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Siftorɗe ngalluuji';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Tintinol ñalawma gootal ado cuɓaaɗe maa walla sitokuuji portfolio maa yaltinde ngalluuji lebbi tati';
 }

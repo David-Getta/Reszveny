@@ -250,6 +250,9 @@ void main() {
     // Belépve a heti összefoglaló e-mail bekapcsolható (alapból ki).
     final digest = find.byKey(const ValueKey('weekly-digest'));
     await tester.scrollUntilVisible(digest, -300, scrollable: find.byType(Scrollable).last);
+    // Felfelé görgetve a kapcsoló a lista felső széle fölött állhat meg: még egy kicsit lejjebb hozzuk.
+    await tester.drag(find.byType(Scrollable).last, const Offset(0, 200));
+    await tester.pumpAndSettle();
     expect(find.text('Weekly summary by e-mail'), findsOneWidget);
     expect(s.preferences.weeklyDigest, isFalse);
     await tester.tap(digest);

@@ -549,5 +549,14 @@
   "briefTitle": "Vandag met jou aandele",
   "briefButton": "Som vandag op",
   "briefHint": "’n Kort KI-opsomming van hoe jou portefeulje en gunstelinge vandag beweeg het en wat die jongste nuus oor hulle sê. Dit gebruik nie ’n ontleding nie.",
-  "briefRefresh": "Werk by"
+  "briefRefresh": "Werk by",
+  "sectionEarnings": "Resultate",
+  "earningsNext": "Volgende verslag: {date}",
+  "earningsExpected": "Verwagte WPA",
+  "earningsReported": "Gerapporteerde WPA",
+  "earningsBeats": "{total, plural, =1{Op of bo die verwagte WPA in {beats} van 1 kwartaal} other{Op of bo die verwagte WPA in {beats} van die laaste {total} kwartale}}",
+  "earningsReminderTomorrow": "{symbol} rapporteer môre kwartaalresultate",
+  "earningsReminderToday": "{symbol} rapporteer vandag kwartaalresultate",
+  "earningsRemindersTitle": "Resultaatherinneringe",
+  "earningsRemindersSubtitle": "’n Kennisgewing die dag voordat jou gunstelinge of portefeulje-aandele kwartaalresultate rapporteer"
 }

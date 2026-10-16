@@ -2039,4 +2039,47 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Aktualisieren';
+
+  @override
+  String get sectionEarnings => 'Quartalsberichte';
+
+  @override
+  String earningsNext(String date) {
+    return 'Nächster Bericht: $date';
+  }
+
+  @override
+  String get earningsExpected => 'Erwartetes EPS';
+
+  @override
+  String get earningsReported => 'Gemeldetes EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'In $beats der letzten $total Quartale auf oder über dem erwarteten EPS',
+      one: 'In $beats von 1 Quartal auf oder über dem erwarteten EPS',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol legt morgen Quartalszahlen vor';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol legt heute Quartalszahlen vor';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Erinnerung an Quartalszahlen';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Eine Benachrichtigung am Vortag, wenn Aktien aus deinen Favoriten oder deinem Portfolio Quartalszahlen vorlegen';
 }

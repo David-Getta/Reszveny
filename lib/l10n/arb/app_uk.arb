@@ -549,5 +549,14 @@
   "briefTitle": "Сьогодні з вашими акціями",
   "briefButton": "Підсумувати день",
   "briefHint": "Короткий AI-підсумок того, як сьогодні рухалися ваш портфель і обране та що про них кажуть свіжі новини. Аналіз не витрачається.",
-  "briefRefresh": "Оновити"
+  "briefRefresh": "Оновити",
+  "sectionEarnings": "Квартальні звіти",
+  "earningsNext": "Наступний звіт: {date}",
+  "earningsExpected": "Очікуваний EPS",
+  "earningsReported": "Опублікований EPS",
+  "earningsBeats": "{total, plural, =1{На рівні очікуваного EPS або вище в {beats} з 1 кварталу} one{На рівні очікуваного EPS або вище в {beats} з останніх {total} кварталу} few{На рівні очікуваного EPS або вище в {beats} з останніх {total} кварталів} many{На рівні очікуваного EPS або вище в {beats} з останніх {total} кварталів} other{На рівні очікуваного EPS або вище в {beats} з останніх {total} кварталів}}",
+  "earningsReminderTomorrow": "{symbol} завтра публікує квартальні результати",
+  "earningsReminderToday": "{symbol} сьогодні публікує квартальні результати",
+  "earningsRemindersTitle": "Нагадування про результати",
+  "earningsRemindersSubtitle": "Сповіщення за день до того, як акції з обраного або портфеля опублікують квартальні результати"
 }

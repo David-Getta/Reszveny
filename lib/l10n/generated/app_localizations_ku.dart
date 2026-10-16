@@ -2030,4 +2030,47 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Nû bike';
+
+  @override
+  String get sectionEarnings => 'Encamên sêmehî';
+
+  @override
+  String earningsNext(String date) {
+    return 'Rapora bê: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS ya tê payîn';
+
+  @override
+  String get earningsReported => 'EPS ya hatî ragihandin';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Di $beats ji $total sêmehên dawî de wekî EPS ya tê payîn an jortir',
+      one: 'Di $beats ji 1 sêmehê de wekî EPS ya tê payîn an jortir',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol sibê encamên sêmehî eşkere dike';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol îro encamên sêmehî eşkere dike';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Bîranînên encaman';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Agahdariyek rojek berî ku pişkên di bijareyên te an portfolyoya te de encamên sêmehî eşkere bikin';
 }

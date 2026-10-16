@@ -549,5 +549,14 @@
   "briefTitle": "Leero ne sitoowa zo",
   "briefButton": "Funza olwaleero",
   "briefHint": "Mu bufunze, AI ekulaga engeri portfolio yo n’ezo z’oyagala gye zitambuddemu leero n’ebyo amawulire amapya gye bigamba. Tekozesa kwekenneenya.",
-  "briefRefresh": "Zza buggya"
+  "briefRefresh": "Zza buggya",
+  "sectionEarnings": "Ebivudde mu kitundu ky'omwaka",
+  "earningsNext": "Lipoota eddako: {date}",
+  "earningsExpected": "EPS esuubirwa",
+  "earningsReported": "EPS eyalangiriddwa",
+  "earningsBeats": "{total, plural, =1{Etuuse oba esinze EPS esuubirwa mu {beats} ku kitundu ky'omwaka 1} other{Etuuse oba esinze EPS esuubirwa mu {beats} ku bitundu by'omwaka {total} ebiyise}}",
+  "earningsReminderTomorrow": "{symbol} egenda kufulumya ebivudde mu kitundu ky'omwaka enkya",
+  "earningsReminderToday": "{symbol} efulumya ebivudde mu kitundu ky'omwaka leero",
+  "earningsRemindersTitle": "Okujjukiza ku bivudde",
+  "earningsRemindersSubtitle": "Obubaka olunaku lumu nga emigabo gy'oyagala oba egiri mu portfolio yo tennafulumya bivudde mu kitundu ky'omwaka"
 }

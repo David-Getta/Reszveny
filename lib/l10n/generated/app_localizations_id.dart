@@ -2024,4 +2024,47 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Perbarui';
+
+  @override
+  String get sectionEarnings => 'Laporan kuartalan';
+
+  @override
+  String earningsNext(String date) {
+    return 'Laporan berikutnya: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS yang diharapkan';
+
+  @override
+  String get earningsReported => 'EPS yang dilaporkan';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Sesuai atau di atas ekspektasi EPS pada $beats dari $total kuartal terakhir',
+      one: 'Sesuai atau di atas ekspektasi EPS pada $beats dari 1 kuartal',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol merilis laporan kuartalan besok';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol merilis laporan kuartalan hari ini';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Pengingat laporan kuartalan';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Notifikasi sehari sebelum saham di favorit atau portofoliomu merilis laporan kuartalan';
 }

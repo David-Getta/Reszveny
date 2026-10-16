@@ -2035,4 +2035,48 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Haaromsi';
+
+  @override
+  String get sectionEarnings => 'Bu\'aa kurmaanaa';
+
+  @override
+  String earningsNext(String date) {
+    return 'Gabaasa itti aanu: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS eegame';
+
+  @override
+  String get earningsReported => 'EPS gabaafame';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Kurmaanota $total darban keessaa $beats irratti EPS eegame wajjin wal qixxee ykn isa ol',
+      one:
+          'Kurmaana 1 keessaa $beats irratti EPS eegame wajjin wal qixxee ykn isa ol',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol boru bu\'aa kurmaanaa ifa baasa';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol har\'a bu\'aa kurmaanaa ifa baasa';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Yaadachiisa bu\'aa';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Beeksisa guyyaa tokko dura filatamoon kee ykn aksiyoonni poortfooliyoo kee bu\'aa kurmaanaa ifa baasan';
 }

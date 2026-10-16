@@ -549,5 +549,14 @@
   "briefTitle": "Egbe kple wò stockwo",
   "briefButton": "Ƒo egbe nu ta",
   "briefHint": "AI ƒe nyagbɔgblɔ kpui si ɖe alesi wò portfolio kple esiwo nèlɔ̃ ʋã egbe kple nya yeye siwo wogblɔ tso wo ŋu fia. Mezãa dzodzro aɖeke o.",
-  "briefRefresh": "Wɔe yeye"
+  "briefRefresh": "Wɔe yeye",
+  "sectionEarnings": "Viɖe ƒe akɔntabubu",
+  "earningsNext": "Akɔntabubu si kplɔe ɖo: {date}",
+  "earningsExpected": "EPS si wole mɔ kpɔm",
+  "earningsReported": "EPS si woɖe gbeƒã",
+  "earningsBeats": "{total, plural, =1{EPS su esi wole mɔ kpɔm alo wu eya le {beats} me le ɣleti etɔ̃ 1 me} other{EPS su esi wole mɔ kpɔm alo wu eya le {beats} me le ɣleti etɔ̃ {total} siwo va yi me}}",
+  "earningsReminderTomorrow": "{symbol} aɖe ɣleti etɔ̃ ƒe akɔntabubu ɖe go etsɔ",
+  "earningsReminderToday": "{symbol} le ɣleti etɔ̃ ƒe akɔntabubu ɖem ɖe go egbe",
+  "earningsRemindersTitle": "Akɔntabubu ŋuti ŋkuɖodziwo",
+  "earningsRemindersSubtitle": "Gbeƒãɖeɖe ŋkeke ɖeka do ŋgɔ na esime wò lɔlɔ̃tɔwo alo wò portfolio me gadzraɖoƒenyawo naɖe ɣleti etɔ̃ ƒe akɔntabubu ɖe go"
 }

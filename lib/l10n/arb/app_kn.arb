@@ -549,5 +549,14 @@
   "briefTitle": "ಇಂದು ನಿಮ್ಮ ಷೇರುಗಳೊಂದಿಗೆ",
   "briefButton": "ಇಂದಿನ ಸಾರಾಂಶ",
   "briefHint": "ನಿಮ್ಮ ಪೋರ್ಟ್‌ಫೋಲಿಯೊ ಮತ್ತು ಮೆಚ್ಚಿನವು ಇಂದು ಹೇಗೆ ಚಲಿಸಿದವು ಮತ್ತು ಇತ್ತೀಚಿನ ಸುದ್ದಿಗಳು ಅವುಗಳ ಬಗ್ಗೆ ಏನು ಹೇಳುತ್ತವೆ ಎಂಬುದರ ಸಣ್ಣ AI ಸಾರಾಂಶ. ಯಾವುದೇ ವಿಶ್ಲೇಷಣೆ ಬಳಸುವುದಿಲ್ಲ.",
-  "briefRefresh": "ನವೀಕರಿಸಿ"
+  "briefRefresh": "ನವೀಕರಿಸಿ",
+  "sectionEarnings": "ತ್ರೈಮಾಸಿಕ ಫಲಿತಾಂಶಗಳು",
+  "earningsNext": "ಮುಂದಿನ ವರದಿ: {date}",
+  "earningsExpected": "ನಿರೀಕ್ಷಿತ EPS",
+  "earningsReported": "ವರದಿಯಾದ EPS",
+  "earningsBeats": "{total, plural, =1{1 ತ್ರೈಮಾಸಿಕದ ಪೈಕಿ {beats} ರಲ್ಲಿ EPS ನಿರೀಕ್ಷೆಗೆ ಸಮ ಅಥವಾ ಹೆಚ್ಚು} other{ಕಳೆದ {total} ತ್ರೈಮಾಸಿಕಗಳ ಪೈಕಿ {beats} ರಲ್ಲಿ EPS ನಿರೀಕ್ಷೆಗೆ ಸಮ ಅಥವಾ ಹೆಚ್ಚು}}",
+  "earningsReminderTomorrow": "{symbol} ನಾಳೆ ತ್ರೈಮಾಸಿಕ ಫಲಿತಾಂಶಗಳನ್ನು ಪ್ರಕಟಿಸುತ್ತದೆ",
+  "earningsReminderToday": "{symbol} ಇಂದು ತ್ರೈಮಾಸಿಕ ಫಲಿತಾಂಶಗಳನ್ನು ಪ್ರಕಟಿಸುತ್ತದೆ",
+  "earningsRemindersTitle": "ಫಲಿತಾಂಶ ಜ್ಞಾಪನೆಗಳು",
+  "earningsRemindersSubtitle": "ನಿಮ್ಮ ಮೆಚ್ಚಿನವುಗಳು ಅಥವಾ ಪೋರ್ಟ್‌ಫೋಲಿಯೊದ ಷೇರುಗಳು ತ್ರೈಮಾಸಿಕ ಫಲಿತಾಂಶಗಳನ್ನು ಪ್ರಕಟಿಸುವ ಹಿಂದಿನ ದಿನ ಅಧಿಸೂಚನೆ"
 }

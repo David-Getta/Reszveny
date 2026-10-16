@@ -2034,4 +2034,47 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Mbopyahu';
+
+  @override
+  String get sectionEarnings => 'Resultado';
+
+  @override
+  String earningsNext(String date) {
+    return 'Informe oúva: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS oñehaʼarõva';
+
+  @override
+  String get earningsReported => 'EPS oñemomaranduva';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'EPS oñehaʼarõvaicha térã hetave $beats-pe $total mbohapy jasy pahaguéva apytégui',
+      one: 'EPS oñehaʼarõvaicha térã hetave $beats-pe 1 mbohapy jasy apytégui',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol ohechaukáta mbohapy jasy resultado koʼẽrõ';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol ohechauka mbohapy jasy resultado koʼága';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Resultado manduʼarã';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Marandu peteĩ ára mboyve nde ojeguerohoryvéva térã nde portafólio acciones ohechauka mbohapy jasy resultado';
 }

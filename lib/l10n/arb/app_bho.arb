@@ -549,5 +549,14 @@
   "briefTitle": "आज रउआ शेयर संगे",
   "briefButton": "आज के सारांश",
   "briefHint": "आज रउआ पोर्टफोलियो आ पसंदीदा शेयर कइसे चलल आ ताजा खबर ओकरा बारे में का कहत बा, एकर छोट AI सारांश। एह में कवनो विश्लेषण खरच ना होला।",
-  "briefRefresh": "अपडेट करीं"
+  "briefRefresh": "अपडेट करीं",
+  "sectionEarnings": "कमाई",
+  "earningsNext": "अगिला रिपोर्ट: {date}",
+  "earningsExpected": "अनुमानित EPS",
+  "earningsReported": "घोषित EPS",
+  "earningsBeats": "{total, plural, =1{1 तिमाही में से {beats} में अनुमानित EPS के बराबर भा ओसे ऊपर} other{पिछला {total} तिमाही में से {beats} में अनुमानित EPS के बराबर भा ओसे ऊपर}}",
+  "earningsReminderTomorrow": "{symbol}: काल्ह तिमाही नतीजा",
+  "earningsReminderToday": "{symbol}: आज तिमाही नतीजा",
+  "earningsRemindersTitle": "नतीजा रिमाइंडर",
+  "earningsRemindersSubtitle": "राउर पसंदीदा भा पोर्टफोलियो के शेयर के तिमाही नतीजा से एक दिन पहिले सूचना"
 }

@@ -549,5 +549,14 @@
   "briefTitle": "আজি আপোনাৰ শ্বেয়াৰসমূহ",
   "briefButton": "আজিৰ সাৰাংশ",
   "briefHint": "আজি আপোনাৰ প’ৰ্টফলিঅ’ আৰু প্ৰিয়সমূহ কেনেকৈ সলনি হ’ল আৰু শেহতীয়া বাতৰিয়ে সেইবোৰৰ বিষয়ে কি কয়, তাৰ এটা চমু AI সাৰাংশ। ই কোনো বিশ্লেষণ খৰচ নকৰে।",
-  "briefRefresh": "আপডেট"
+  "briefRefresh": "আপডেট",
+  "sectionEarnings": "উপাৰ্জন",
+  "earningsNext": "পৰৱৰ্তী প্ৰতিবেদন: {date}",
+  "earningsExpected": "প্ৰত্যাশিত EPS",
+  "earningsReported": "ঘোষিত EPS",
+  "earningsBeats": "{total, plural, =1{1টা ত্ৰৈমাসিকৰ {beats}টাত প্ৰত্যাশিত EPSৰ সমান বা অধিক} other{শেহতীয়া {total}টা ত্ৰৈমাসিকৰ {beats}টাত প্ৰত্যাশিত EPSৰ সমান বা অধিক}}",
+  "earningsReminderTomorrow": "{symbol}: কাইলৈ ত্ৰৈমাসিক ফলাফল",
+  "earningsReminderToday": "{symbol}: আজি ত্ৰৈমাসিক ফলাফল",
+  "earningsRemindersTitle": "ফলাফলৰ সোঁৱৰণী",
+  "earningsRemindersSubtitle": "আপোনাৰ প্ৰিয় বা পৰ্টফ'লিঅ'ৰ শ্বেয়াৰৰ ত্ৰৈমাসিক ফলাফল ঘোষণাৰ আগদিনা এটা জাননী"
 }

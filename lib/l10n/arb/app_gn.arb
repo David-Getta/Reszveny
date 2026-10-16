@@ -549,5 +549,14 @@
   "briefTitle": "Ko árape ne acción-kuéra ndive",
   "briefButton": "Momichĩ ko ára",
   "briefHint": "Peteĩ AI momichĩmbyre mbykymi mba’éichapa ojere ko árape ne portafolio ha umi nde reiporavova ha mba’épa he’i umi marandu ipyahuvéva. Ndoipurúi jehesa’ỹijo.",
-  "briefRefresh": "Mbopyahu"
+  "briefRefresh": "Mbopyahu",
+  "sectionEarnings": "Resultado",
+  "earningsNext": "Informe oúva: {date}",
+  "earningsExpected": "EPS oñehaʼarõva",
+  "earningsReported": "EPS oñemomaranduva",
+  "earningsBeats": "{total, plural, =1{EPS oñehaʼarõvaicha térã hetave {beats}-pe 1 mbohapy jasy apytégui} other{EPS oñehaʼarõvaicha térã hetave {beats}-pe {total} mbohapy jasy pahaguéva apytégui}}",
+  "earningsReminderTomorrow": "{symbol} ohechaukáta mbohapy jasy resultado koʼẽrõ",
+  "earningsReminderToday": "{symbol} ohechauka mbohapy jasy resultado koʼága",
+  "earningsRemindersTitle": "Resultado manduʼarã",
+  "earningsRemindersSubtitle": "Marandu peteĩ ára mboyve nde ojeguerohoryvéva térã nde portafólio acciones ohechauka mbohapy jasy resultado"
 }

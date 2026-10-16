@@ -549,5 +549,14 @@
   "briefTitle": "Бүгін акцияларыңызбен",
   "briefButton": "Бүгінді қорыту",
   "briefHint": "Портфеліңіз бен таңдаулыларыңыздың бүгін қалай өзгергені және соңғы жаңалықтардың олар туралы не дейтіні туралы қысқа AI қорытындысы. Талдау жұмсамайды.",
-  "briefRefresh": "Жаңарту"
+  "briefRefresh": "Жаңарту",
+  "sectionEarnings": "Тоқсандық нәтижелер",
+  "earningsNext": "Келесі есеп: {date}",
+  "earningsExpected": "Күтілген EPS",
+  "earningsReported": "Жарияланған EPS",
+  "earningsBeats": "{total, plural, =1{EPS күтілгеннен жоғары не тең: 1 тоқсанның {beats}} other{EPS күтілгеннен жоғары не тең: соңғы {total} тоқсанның {beats}}}",
+  "earningsReminderTomorrow": "{symbol} ертең тоқсандық нәтижелерін жариялайды",
+  "earningsReminderToday": "{symbol} бүгін тоқсандық нәтижелерін жариялайды",
+  "earningsRemindersTitle": "Нәтижелер туралы еске салу",
+  "earningsRemindersSubtitle": "Таңдаулыларыңыздағы немесе портфеліңіздегі акциялар тоқсандық нәтижелерін жариялардан бір күн бұрын хабарландыру"
 }

@@ -2069,4 +2069,47 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get briefRefresh => 'تحديث';
+
+  @override
+  String get sectionEarnings => 'نتائج الأرباح';
+
+  @override
+  String earningsNext(String date) {
+    return 'التقرير القادم: $date';
+  }
+
+  @override
+  String get earningsExpected => 'ربحية السهم المتوقعة';
+
+  @override
+  String get earningsReported => 'ربحية السهم المُعلنة';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'ربحية السهم عند المتوقع أو أعلى في $beats من آخر $total من الأرباع',
+      one: 'ربحية السهم عند المتوقع أو أعلى في $beats من ربع واحد',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol يعلن نتائجه الفصلية غدًا';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol يعلن نتائجه الفصلية اليوم';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'تذكيرات النتائج';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'إشعار قبل يوم من إعلان أسهم المفضلة أو محفظتك نتائجها الفصلية';
 }

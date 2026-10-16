@@ -2037,4 +2037,47 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get briefRefresh => 'I-update';
+
+  @override
+  String get sectionEarnings => 'Kita';
+
+  @override
+  String earningsNext(String date) {
+    return 'Sunod nga report: $date';
+  }
+
+  @override
+  String get earningsExpected => 'Gipaabot nga EPS';
+
+  @override
+  String get earningsReported => 'Gi-report nga EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Sama o labaw sa gipaabot nga EPS sa $beats sa katapusang $total ka quarter',
+      one: 'Sama o labaw sa gipaabot nga EPS sa $beats sa 1 ka quarter',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return 'Ipahibalo sa $symbol ang resulta sa quarter ugma';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return 'Ipahibalo sa $symbol ang resulta sa quarter karon';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Mga pahinumdom sa resulta';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Usa ka pahibalo usa ka adlaw sa dili pa ipahibalo sa imong mga paborito o stock sa portfolio ang ilang resulta sa quarter';
 }

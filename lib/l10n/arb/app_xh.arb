@@ -549,5 +549,14 @@
   "briefTitle": "Namhlanje nezabelo zakho",
   "briefButton": "Shwankathela namhlanje",
   "briefHint": "Isishwankathelo esifutshane se-AI sendlela ipotifoliyo yakho nezo uzithandayo eziye zahamba ngayo namhlanje nokuba iindaba zamva nje zithini ngazo. Asisebenzisi uhlalutyo.",
-  "briefRefresh": "Hlaziya"
+  "briefRefresh": "Hlaziya",
+  "sectionEarnings": "Iziphumo",
+  "earningsNext": "Ingxelo elandelayo: {date}",
+  "earningsExpected": "I-EPS elindelekileyo",
+  "earningsReported": "I-EPS exeliweyo",
+  "earningsBeats": "{total, plural, =1{Ilingana okanye ingaphezulu kwe-EPS elindelekileyo kwi-{beats} kwikota e-1} other{Ilingana okanye ingaphezulu kwe-EPS elindelekileyo kwi-{beats} kwiikota ezi-{total} zokugqibela}}",
+  "earningsReminderTomorrow": "{symbol} ikhupha iziphumo zekota ngomso",
+  "earningsReminderToday": "{symbol} ikhupha iziphumo zekota namhlanje",
+  "earningsRemindersTitle": "Izikhumbuzi zeziphumo",
+  "earningsRemindersSubtitle": "Isaziso usuku olungaphambi kokuba izabelo zakho ezithandwayo okanye zepotifoliyo yakho zikhuphe iziphumo zekota"
 }

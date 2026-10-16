@@ -549,5 +549,14 @@
   "briefTitle": "Yau tare da hannun jarinka",
   "briefButton": "Takaita yau",
   "briefHint": "Gajeren taƙaitaccen AI na yadda fayil ɗinka da waɗanda ka fi so suka motsa yau da abin da sabbin labarai ke cewa game da su. Ba ya amfani da nazari.",
-  "briefRefresh": "Sabunta"
+  "briefRefresh": "Sabunta",
+  "sectionEarnings": "Sakamakon kuɗi na kwata",
+  "earningsNext": "Rahoto na gaba: {date}",
+  "earningsExpected": "EPS da ake tsammani",
+  "earningsReported": "EPS da aka bayyana",
+  "earningsBeats": "{total, plural, =1{Daidai ko sama da EPS da ake tsammani a kwata {beats} cikin 1} other{Daidai ko sama da EPS da ake tsammani a kwata {beats} cikin {total} na baya-bayan nan}}",
+  "earningsReminderTomorrow": "{symbol} zai fitar da sakamakon kuɗi na kwata gobe",
+  "earningsReminderToday": "{symbol} zai fitar da sakamakon kuɗi na kwata yau",
+  "earningsRemindersTitle": "Tunatarwar sakamakon kuɗi",
+  "earningsRemindersSubtitle": "Sanarwa kwana ɗaya kafin hannayen jarin da ka fi so ko na fayil ɗinka su fitar da sakamakon kuɗi na kwata"
 }

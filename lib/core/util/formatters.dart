@@ -99,6 +99,16 @@ class Fmt {
     }
   }
 
+  /// Hónap és év (pl. „2026. szept.”, „Sep 2026”) – negyedévek jelöléséhez.
+  String monthYear(DateTime? d) {
+    if (d == null) return na;
+    try {
+      return DateFormat.yMMM(dateLocale).format(d);
+    } catch (_) {
+      return '${d.year}-${_two(d.month)}';
+    }
+  }
+
   String dateTime(DateTime? d) {
     if (d == null) return na;
     final local = d.toLocal();

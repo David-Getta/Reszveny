@@ -549,5 +549,14 @@
   "briefTitle": "Ɛnnɛ ne wo stocks",
   "briefButton": "Bɔ ɛnnɛ mu tiaa",
   "briefHint": "AI nsɛm tiaa a ɛkyerɛ sɛnea wo portfolio ne wo nea w’ani gye ho kɔɔ ɛnnɛ ne nsɛm foforo a ɛfa wɔn ho. Ɛnni nhwehwɛmu biara.",
-  "briefRefresh": "Yɛ no foforo"
+  "briefRefresh": "Yɛ no foforo",
+  "sectionEarnings": "Mfaso akontaabu",
+  "earningsNext": "Akontaabu a ɛdi hɔ: {date}",
+  "earningsExpected": "EPS a wɔhwɛ kwan",
+  "earningsReported": "EPS a wɔbɔɔ ho amanneɛ",
+  "earningsBeats": "{total, plural, =1{{beats} wɔ abosome mmiɛnsa mmerɛ 1 mu: EPS duu nea wɔhwɛɛ kwan anaa ɛboroo so} other{{beats} wɔ abosome mmiɛnsa mmerɛ {total} a atwam no mu: EPS duu nea wɔhwɛɛ kwan anaa ɛboroo so}}",
+  "earningsReminderTomorrow": "{symbol} bɛda n’abosome mmiɛnsa akontaabu adi ɔkyena",
+  "earningsReminderToday": "{symbol} da n’abosome mmiɛnsa akontaabu adi ɛnnɛ",
+  "earningsRemindersTitle": "Akontaabu ho nkaebɔ",
+  "earningsRemindersSubtitle": "Wɔbɛbɔ wo amanneɛ da koro ansa na nea wopɛ anaa wo portfolio mu stock bi bɛda abosome mmiɛnsa akontaabu adi"
 }

@@ -2028,4 +2028,47 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get briefRefresh => 'अपडेट करा';
+
+  @override
+  String get sectionEarnings => 'तिमाही निकाल';
+
+  @override
+  String earningsNext(String date) {
+    return 'पुढील अहवाल: $date';
+  }
+
+  @override
+  String get earningsExpected => 'अपेक्षित EPS';
+
+  @override
+  String get earningsReported => 'जाहीर EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'मागील $total पैकी $beats तिमाहींत अपेक्षित EPS इतका किंवा त्याहून अधिक',
+      one: '1 पैकी $beats तिमाहीत अपेक्षित EPS इतका किंवा त्याहून अधिक',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol उद्या तिमाही निकाल जाहीर करणार';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol आज तिमाही निकाल जाहीर करणार';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'निकाल स्मरणपत्रे';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'तुमचे आवडते किंवा पोर्टफोलिओमधील शेअर्स तिमाही निकाल जाहीर करण्याच्या आदल्या दिवशी सूचना';
 }

@@ -549,5 +549,14 @@
   "briefTitle": "Leo na hisa zako",
   "briefButton": "Fupisha leo",
   "briefHint": "Muhtasari mfupi wa AI wa jinsi jalada lako na vipendwa vyako vilivyosonga leo na habari za karibuni zinasema nini kuzihusu. Hautumii uchambuzi.",
-  "briefRefresh": "Sasisha"
+  "briefRefresh": "Sasisha",
+  "sectionEarnings": "Matokeo ya robo mwaka",
+  "earningsNext": "Ripoti ijayo: {date}",
+  "earningsExpected": "EPS inayotarajiwa",
+  "earningsReported": "EPS iliyoripotiwa",
+  "earningsBeats": "{total, plural, =1{Sawa au juu ya EPS inayotarajiwa katika {beats} kati ya robo 1} other{Sawa au juu ya EPS inayotarajiwa katika {beats} kati ya robo {total} zilizopita}}",
+  "earningsReminderTomorrow": "{symbol} inatangaza matokeo ya robo mwaka kesho",
+  "earningsReminderToday": "{symbol} inatangaza matokeo ya robo mwaka leo",
+  "earningsRemindersTitle": "Vikumbusho vya matokeo",
+  "earningsRemindersSubtitle": "Arifa siku moja kabla hisa zako unazopenda au za jalada lako hazijatangaza matokeo ya robo mwaka"
 }

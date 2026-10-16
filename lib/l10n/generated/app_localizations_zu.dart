@@ -2035,4 +2035,48 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Buyekeza';
+
+  @override
+  String get sectionEarnings => 'Imiphumela';
+
+  @override
+  String earningsNext(String date) {
+    return 'Umbiko olandelayo: $date';
+  }
+
+  @override
+  String get earningsExpected => 'I-EPS elindelekile';
+
+  @override
+  String get earningsReported => 'I-EPS ebikiwe';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Ilingana noma ingaphezu kwe-EPS elindelekile ku-$beats kumakota angu-$total okugcina',
+      one:
+          'Ilingana noma ingaphezu kwe-EPS elindelekile ku-$beats kwikota engu-1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol ikhipha imiphumela yekota kusasa';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol ikhipha imiphumela yekota namuhla';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Izikhumbuzi zemiphumela';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Isaziso ngosuku olwandulela ukuthi amasheya akho athandekayo noma ephothifoliyo yakho akhiphe imiphumela yekota';
 }

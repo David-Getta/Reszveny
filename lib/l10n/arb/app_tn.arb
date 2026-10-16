@@ -549,5 +549,14 @@
   "briefTitle": "Gompieno le dishere tsa gago",
   "briefButton": "Kgutshwafatsa gompieno",
   "briefHint": "Kakaretso e khutshwane ya AI ya kafa portfolio ya gago le tse o di ratang di tsamaileng ka teng gompieno le se dikgang tsa bosheng di se buang. Ga e dirise tshekatsheko.",
-  "briefRefresh": "Ntšhafatsa"
+  "briefRefresh": "Ntšhafatsa",
+  "sectionEarnings": "Dipoelo",
+  "earningsNext": "Pego e e latelang: {date}",
+  "earningsExpected": "EPS e e solofetsweng",
+  "earningsReported": "EPS e e begilweng",
+  "earningsBeats": "{total, plural, =1{E lekana kgotsa e feta EPS e e solofetsweng mo go {beats} mo kotareng e le 1} other{E lekana kgotsa e feta EPS e e solofetsweng mo go {beats} mo dikotareng tse {total} tsa bofelo}}",
+  "earningsReminderTomorrow": "{symbol} e phasalatsa dipoelo tsa kotara kamoso",
+  "earningsReminderToday": "{symbol} e phasalatsa dipoelo tsa kotara gompieno",
+  "earningsRemindersTitle": "Dikgakololo tsa dipoelo",
+  "earningsRemindersSubtitle": "Kitsiso letsatsi pele ga dishere tse o di ratang kgotsa tsa phothefolio ya gago di phasalatsa dipoelo tsa kotara"
 }

@@ -2039,4 +2039,48 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Musuqchay';
+
+  @override
+  String get sectionEarnings => 'Kimsa killapa willakuynin';
+
+  @override
+  String earningsNext(String date) {
+    return 'Qatiq willakuy: $date';
+  }
+
+  @override
+  String get earningsExpected => 'Suyakusqa EPS';
+
+  @override
+  String get earningsReported => 'Willakusqa EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Qhipa $total kimsa killakunamanta $beats-pi suyakusqa EPS-wan kikin utaq aswan hatun',
+      one:
+          '1 kimsa killamanta $beats-pi suyakusqa EPS-wan kikin utaq aswan hatun',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol: paqarin kimsa killapa willakuynin';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol: kunan p\'unchaw kimsa killapa willakuynin';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Willakuy yuyarichiykuna';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Munasqaykikunap utaq portafolioykipi acciónkunap kimsa killapa willakuynin manaraq lluqsichkaptin huk p\'unchaw ñawpaqta willachiy';
 }

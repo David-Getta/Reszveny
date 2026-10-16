@@ -732,6 +732,21 @@ void main() {
     await _shot(tester, 'metric_explained_phone_hu');
   });
 
+  testWidgets('earnings card on a phone (hungarian)', (tester) async {
+    await pumpApp(tester, _services(locale: const Locale('hu')), const Size(430, 1000));
+    await tester.enterText(find.byType(TextField), 'AAPL');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    final card = find.byKey(const ValueKey('earnings-beats'));
+    for (var i = 0; i < 40 && card.evaluate().isEmpty; i++) {
+      await tester.drag(find.byType(Scrollable).first, const Offset(0, -300));
+      await tester.pumpAndSettle();
+    }
+    await tester.ensureVisible(find.byKey(const ValueKey('earnings-card')));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'earnings_phone_hu');
+  });
+
   testWidgets('favorites page and news on a phone (hungarian)', (tester) async {
     final s = _services(locale: const Locale('hu'));
     await s.preferences.setFavorites(['AAPL', 'MSFT', 'NVDA', 'OTP']);

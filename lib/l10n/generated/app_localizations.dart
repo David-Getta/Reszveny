@@ -3636,6 +3636,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Update'**
   String get briefRefresh;
+
+  /// No description provided for @sectionEarnings.
+  ///
+  /// In en, this message translates to:
+  /// **'Earnings'**
+  String get sectionEarnings;
+
+  /// Date of the company's next quarterly results; date is formatted.
+  ///
+  /// In en, this message translates to:
+  /// **'Next report: {date}'**
+  String earningsNext(String date);
+
+  /// No description provided for @earningsExpected.
+  ///
+  /// In en, this message translates to:
+  /// **'Expected EPS'**
+  String get earningsExpected;
+
+  /// No description provided for @earningsReported.
+  ///
+  /// In en, this message translates to:
+  /// **'Reported EPS'**
+  String get earningsReported;
+
+  /// How many of the last quarters the company reported earnings per share at or above analysts' expectations.
+  ///
+  /// In en, this message translates to:
+  /// **'{total, plural, =1{At or above the expected EPS in {beats} of 1 quarter} other{At or above the expected EPS in {beats} of the last {total} quarters}}'**
+  String earningsBeats(int beats, int total);
+
+  /// Desktop notification title the day before a watched company reports results.
+  ///
+  /// In en, this message translates to:
+  /// **'{symbol} reports quarterly results tomorrow'**
+  String earningsReminderTomorrow(String symbol);
+
+  /// Desktop notification title on the day a watched company reports results.
+  ///
+  /// In en, this message translates to:
+  /// **'{symbol} reports quarterly results today'**
+  String earningsReminderToday(String symbol);
+
+  /// No description provided for @earningsRemindersTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Results reminders'**
+  String get earningsRemindersTitle;
+
+  /// No description provided for @earningsRemindersSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'A notification the day before your favorites or portfolio stocks report quarterly results'**
+  String get earningsRemindersSubtitle;
 }
 
 class _AppLocalizationsDelegate

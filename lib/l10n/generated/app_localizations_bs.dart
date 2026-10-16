@@ -2065,4 +2065,47 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Ažuriraj';
+
+  @override
+  String get sectionEarnings => 'Zarada';
+
+  @override
+  String earningsNext(String date) {
+    return 'Sljedeći izvještaj: $date';
+  }
+
+  @override
+  String get earningsExpected => 'Očekivani EPS';
+
+  @override
+  String get earningsReported => 'Objavljeni EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Na nivou očekivanog EPS-a ili iznad u $beats od posljednjih $total kvartala',
+      one: 'Na nivou očekivanog EPS-a ili iznad u $beats od 1 kvartala',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol sutra objavljuje kvartalne rezultate';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol danas objavljuje kvartalne rezultate';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Podsjetnici na rezultate';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Obavještenje dan prije nego što dionice iz vaših favorita ili portfolija objave kvartalne rezultate';
 }

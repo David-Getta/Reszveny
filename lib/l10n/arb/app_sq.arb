@@ -549,5 +549,14 @@
   "briefTitle": "Sot me aksionet tuaja",
   "briefButton": "Përmblidh ditën",
   "briefHint": "Një përmbledhje e shkurtër me AI se si lëvizën sot portofoli dhe të preferuarat tuaja dhe çfarë thonë lajmet e fundit për to. Nuk shpenzon analizë.",
-  "briefRefresh": "Përditëso"
+  "briefRefresh": "Përditëso",
+  "sectionEarnings": "Rezultatet",
+  "earningsNext": "Raporti i radhës: {date}",
+  "earningsExpected": "EPS e pritur",
+  "earningsReported": "EPS e raportuar",
+  "earningsBeats": "{total, plural, =1{Në nivelin ose mbi EPS-në e pritur në {beats} nga 1 tremujor} other{Në nivelin ose mbi EPS-në e pritur në {beats} nga {total} tremujorët e fundit}}",
+  "earningsReminderTomorrow": "{symbol} publikon rezultatet tremujore nesër",
+  "earningsReminderToday": "{symbol} publikon rezultatet tremujore sot",
+  "earningsRemindersTitle": "Kujtues për rezultatet",
+  "earningsRemindersSubtitle": "Një njoftim një ditë para se aksionet e tua të preferuara ose të portofolit të publikojnë rezultatet tremujore"
 }

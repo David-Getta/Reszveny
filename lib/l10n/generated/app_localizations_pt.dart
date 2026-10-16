@@ -2034,4 +2034,46 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Atualizar';
+
+  @override
+  String get sectionEarnings => 'Resultados trimestrais';
+
+  @override
+  String earningsNext(String date) {
+    return 'Próximo resultado: $date';
+  }
+
+  @override
+  String get earningsExpected => 'LPA esperado';
+
+  @override
+  String get earningsReported => 'LPA divulgado';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other: 'No LPA esperado ou acima em $beats dos últimos $total trimestres',
+      one: 'No LPA esperado ou acima em $beats de 1 trimestre',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol divulga resultados trimestrais amanhã';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol divulga resultados trimestrais hoje';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Lembretes de resultados';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Uma notificação na véspera da divulgação dos resultados trimestrais das ações dos favoritos ou da carteira';
 }

@@ -2035,4 +2035,47 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get briefRefresh => 'ನವೀಕರಿಸಿ';
+
+  @override
+  String get sectionEarnings => 'ತ್ರೈಮಾಸಿಕ ಫಲಿತಾಂಶಗಳು';
+
+  @override
+  String earningsNext(String date) {
+    return 'ಮುಂದಿನ ವರದಿ: $date';
+  }
+
+  @override
+  String get earningsExpected => 'ನಿರೀಕ್ಷಿತ EPS';
+
+  @override
+  String get earningsReported => 'ವರದಿಯಾದ EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'ಕಳೆದ $total ತ್ರೈಮಾಸಿಕಗಳ ಪೈಕಿ $beats ರಲ್ಲಿ EPS ನಿರೀಕ್ಷೆಗೆ ಸಮ ಅಥವಾ ಹೆಚ್ಚು',
+      one: '1 ತ್ರೈಮಾಸಿಕದ ಪೈಕಿ $beats ರಲ್ಲಿ EPS ನಿರೀಕ್ಷೆಗೆ ಸಮ ಅಥವಾ ಹೆಚ್ಚು',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol ನಾಳೆ ತ್ರೈಮಾಸಿಕ ಫಲಿತಾಂಶಗಳನ್ನು ಪ್ರಕಟಿಸುತ್ತದೆ';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol ಇಂದು ತ್ರೈಮಾಸಿಕ ಫಲಿತಾಂಶಗಳನ್ನು ಪ್ರಕಟಿಸುತ್ತದೆ';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'ಫಲಿತಾಂಶ ಜ್ಞಾಪನೆಗಳು';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'ನಿಮ್ಮ ಮೆಚ್ಚಿನವುಗಳು ಅಥವಾ ಪೋರ್ಟ್‌ಫೋಲಿಯೊದ ಷೇರುಗಳು ತ್ರೈಮಾಸಿಕ ಫಲಿತಾಂಶಗಳನ್ನು ಪ್ರಕಟಿಸುವ ಹಿಂದಿನ ದಿನ ಅಧಿಸೂಚನೆ';
 }

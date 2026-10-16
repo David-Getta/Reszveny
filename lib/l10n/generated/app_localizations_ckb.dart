@@ -2029,4 +2029,47 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get briefRefresh => 'نوێکردنەوە';
+
+  @override
+  String get sectionEarnings => 'قازانج';
+
+  @override
+  String earningsNext(String date) {
+    return 'ڕاپۆرتی داهاتوو: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPSی چاوەڕوانکراو';
+
+  @override
+  String get earningsReported => 'EPSی ڕاگەیەنراو';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'یەکسان یان سەرووی EPSی چاوەڕوانکراو لە $beats لە دوایین $total وەرزدا',
+      one: 'یەکسان یان سەرووی EPSی چاوەڕوانکراو لە $beats لە 1 وەرزدا',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol سبەینێ ئەنجامە وەرزییەکان ڕادەگەیەنێت';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol ئەمڕۆ ئەنجامە وەرزییەکان ڕادەگەیەنێت';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'بیرخەرەوەی ئەنجامەکان';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'ئاگادارکردنەوەیەک ڕۆژێک پێش ئەوەی پشکەکانی دڵخوازەکانت یان پۆرتفۆلیۆکەت ئەنجامە وەرزییەکانیان ڕابگەیەنن';
 }

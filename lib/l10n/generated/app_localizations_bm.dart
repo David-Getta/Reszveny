@@ -2025,4 +2025,48 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Kura';
+
+  @override
+  String get sectionEarnings => 'Tɔnɔ jatebɔ';
+
+  @override
+  String earningsNext(String date) {
+    return 'Jatebɔ nata: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS makɔnɔnen';
+
+  @override
+  String get earningsReported => 'EPS fɔlen';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'EPS sera makɔnɔnen ma walima ka tɛmɛ a kan kalo saba $beats la $total laban kɔnɔ',
+      one:
+          'EPS sera makɔnɔnen ma walima ka tɛmɛ a kan kalo saba $beats la 1 kɔnɔ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol bɛ kalo saba jatebɔ jira sini';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol bɛ kalo saba jatebɔ jira bi';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Jatebɔ hakilijiginw';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Kunnafoni don kelen ka kɔn i ka diyanyelenw walima i ka portfolio aksiyɔnw ka kalo saba jatebɔ jira ɲɛ';
 }

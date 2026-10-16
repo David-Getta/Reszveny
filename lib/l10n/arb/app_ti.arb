@@ -549,5 +549,14 @@
   "briefTitle": "ሎሚ ምስ ኣክስዮናትኩም",
   "briefButton": "ሎሚ ጠቕልል",
   "briefHint": "ፖርትፎልዮኹምን ዝፈትውዎምን ሎሚ ብኸመይ ከም ዝተንቀሳቐሱን ሓደሽቲ ዜናታት እንታይ ከም ዝብሉን ዘርኢ ሓጺር ናይ AI ጽማቝ። ትንታነ ኣይጥቀምን።",
-  "briefRefresh": "ኣሐድስ"
+  "briefRefresh": "ኣሐድስ",
+  "sectionEarnings": "ውጽኢት ርብዒ ዓመት",
+  "earningsNext": "ዝቕጽል ጸብጻብ: {date}",
+  "earningsExpected": "ዝተጸበ EPS",
+  "earningsReported": "ዝተሓበረ EPS",
+  "earningsBeats": "{total, plural, =1{ኣብ {beats} ካብ 1 ርብዒ ዓመት ምስ ዝተጸበ EPS ማዕረ ወይ ልዕሊኡ} other{ኣብ {beats} ካብ ዝሓለፉ {total} ርብዒ ዓመታት ምስ ዝተጸበ EPS ማዕረ ወይ ልዕሊኡ}}",
+  "earningsReminderTomorrow": "{symbol} ጽባሕ ናይ ርብዒ ዓመት ውጽኢት የፍልጥ",
+  "earningsReminderToday": "{symbol} ሎሚ ናይ ርብዒ ዓመት ውጽኢት የፍልጥ",
+  "earningsRemindersTitle": "መዘኻኸሪ ውጽኢት",
+  "earningsRemindersSubtitle": "ዝተፈተዉ ወይ ናይ ፖርትፎሊዮኻ ኣክስዮናት ናይ ርብዒ ዓመት ውጽኢት ቅድሚ ምፍላጦም ሓደ መዓልቲ ዝመጽእ መፍለጢ"
 }

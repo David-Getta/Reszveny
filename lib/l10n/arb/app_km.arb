@@ -549,5 +549,14 @@
   "briefTitle": "ថ្ងៃនេះជាមួយភាគហ៊ុនរបស់អ្នក",
   "briefButton": "សង្ខេបថ្ងៃនេះ",
   "briefHint": "សេចក្ដីសង្ខេប AI ខ្លីអំពីរបៀបដែលផលប័ត្រ និងចំណូលចិត្តរបស់អ្នកបានប្រែប្រួលថ្ងៃនេះ និងអ្វីដែលព័ត៌មានថ្មីៗនិយាយ។ មិនប្រើការវិភាគទេ។",
-  "briefRefresh": "ធ្វើបច្ចុប្បន្នភាព"
+  "briefRefresh": "ធ្វើបច្ចុប្បន្នភាព",
+  "sectionEarnings": "លទ្ធផលប្រចាំត្រីមាស",
+  "earningsNext": "របាយការណ៍បន្ទាប់: {date}",
+  "earningsExpected": "EPS រំពឹងទុក",
+  "earningsReported": "EPS ដែលបានរាយការណ៍",
+  "earningsBeats": "{total, plural, =1{EPS ស្មើ ឬលើសការរំពឹងទុក ក្នុង {beats} នៃ 1 ត្រីមាស} other{EPS ស្មើ ឬលើសការរំពឹងទុក ក្នុង {beats} នៃ {total} ត្រីមាសចុងក្រោយ}}",
+  "earningsReminderTomorrow": "{symbol} នឹងប្រកាសលទ្ធផលប្រចាំត្រីមាសនៅថ្ងៃស្អែក",
+  "earningsReminderToday": "{symbol} ប្រកាសលទ្ធផលប្រចាំត្រីមាសនៅថ្ងៃនេះ",
+  "earningsRemindersTitle": "ការរំលឹកលទ្ធផល",
+  "earningsRemindersSubtitle": "ការជូនដំណឹងមួយថ្ងៃមុនពេលភាគហ៊ុនក្នុងចំណូលចិត្ត ឬផលប័ត្ររបស់អ្នកប្រកាសលទ្ធផលប្រចាំត្រីមាស"
 }

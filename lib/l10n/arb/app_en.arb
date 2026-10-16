@@ -1550,5 +1550,49 @@
   "briefRefresh": "Update",
   "@briefRefresh": {
     "description": "Button to update today's summary."
-  }
+  },
+  "sectionEarnings": "Earnings",
+  "earningsNext": "Next report: {date}",
+  "@earningsNext": {
+    "description": "Date of the company's next quarterly results; date is formatted.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "earningsExpected": "Expected EPS",
+  "earningsReported": "Reported EPS",
+  "earningsBeats": "{total, plural, =1{At or above the expected EPS in {beats} of 1 quarter} other{At or above the expected EPS in {beats} of the last {total} quarters}}",
+  "@earningsBeats": {
+    "description": "How many of the last quarters the company reported earnings per share at or above analysts' expectations.",
+    "placeholders": {
+      "beats": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "earningsReminderTomorrow": "{symbol} reports quarterly results tomorrow",
+  "@earningsReminderTomorrow": {
+    "description": "Desktop notification title the day before a watched company reports results.",
+    "placeholders": {
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "earningsReminderToday": "{symbol} reports quarterly results today",
+  "@earningsReminderToday": {
+    "description": "Desktop notification title on the day a watched company reports results.",
+    "placeholders": {
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "earningsRemindersTitle": "Results reminders",
+  "earningsRemindersSubtitle": "A notification the day before your favorites or portfolio stocks report quarterly results"
 }

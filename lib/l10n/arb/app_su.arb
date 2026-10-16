@@ -549,5 +549,14 @@
   "briefTitle": "Dinten ieu sareng saham anjeun",
   "briefButton": "Ringkes dinten ieu",
   "briefHint": "Ringkesan AI pondok ngeunaan kumaha portofolio sareng paporit anjeun gerak dinten ieu sareng naon anu dicarioskeun ku warta panganyarna. Henteu nganggo analisis.",
-  "briefRefresh": "Apdet"
+  "briefRefresh": "Apdet",
+  "sectionEarnings": "Laporan kuartalan",
+  "earningsNext": "Laporan salajengna: {date}",
+  "earningsExpected": "EPS anu diperkirakeun",
+  "earningsReported": "EPS anu dilaporkeun",
+  "earningsBeats": "{total, plural, =1{Sarua atawa di luhur EPS anu diperkirakeun dina {beats} ti 1 kuartal} other{Sarua atawa di luhur EPS anu diperkirakeun dina {beats} ti {total} kuartal pamungkas}}",
+  "earningsReminderTomorrow": "{symbol} ngumumkeun laporan kuartalan isukan",
+  "earningsReminderToday": "{symbol} ngumumkeun laporan kuartalan poé ieu",
+  "earningsRemindersTitle": "Panginget laporan",
+  "earningsRemindersSubtitle": "Béwara sapoé saméméh saham paporit atawa portofolio anjeun ngumumkeun laporan kuartalan"
 }

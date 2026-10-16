@@ -2083,4 +2083,47 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Aktualizovať';
+
+  @override
+  String get sectionEarnings => 'Štvrťročné výsledky';
+
+  @override
+  String earningsNext(String date) {
+    return 'Ďalšia správa: $date';
+  }
+
+  @override
+  String get earningsExpected => 'Očakávané EPS';
+
+  @override
+  String get earningsReported => 'Vykázané EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Na úrovni očakávaného EPS alebo nad ním v $beats z posledných $total štvrťrokov',
+      one: 'Na úrovni očakávaného EPS alebo nad ním v $beats z 1 štvrťroka',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol zajtra zverejní štvrťročné výsledky';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol dnes zverejní štvrťročné výsledky';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Pripomienky výsledkov';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Upozornenie deň pred zverejnením štvrťročných výsledkov akcií z obľúbených alebo z tvojho portfólia';
 }

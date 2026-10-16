@@ -2020,4 +2020,47 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get briefRefresh => 'تازو ڪريو';
+
+  @override
+  String get sectionEarnings => 'ٽه ماهي نتيجا';
+
+  @override
+  String earningsNext(String date) {
+    return 'ايندڙ رپورٽ: $date';
+  }
+
+  @override
+  String get earningsExpected => 'متوقع EPS';
+
+  @override
+  String get earningsReported => 'جاري ڪيل EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'آخري $total مان $beats ٽه ماهين ۾ متوقع EPS جي برابر يا ان کان مٿي',
+      one: '1 مان $beats ٽه ماهي ۾ متوقع EPS جي برابر يا ان کان مٿي',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol سڀاڻي ٽه ماهي نتيجا جاري ڪندي';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol اڄ ٽه ماهي نتيجا جاري ڪندي';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'نتيجن جي ياد ڏياريندڙ';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'توهان جي پسنديده يا پورٽ فوليو جي شيئرن جا ٽه ماهي نتيجا جاري ٿيڻ کان هڪ ڏينهن اڳ اطلاع';
 }

@@ -549,5 +549,14 @@
   "briefTitle": "Бүген акцияләрегез белән",
   "briefButton": "Бүгенге көнгә йомгак",
   "briefHint": "Портфелегез һәм сайланмаларыгыз бүген ничек үзгәрүе һәм соңгы яңалыклар алар турында нәрсә әйтүе турында кыска AI йомгагы. Анализ тотылмый.",
-  "briefRefresh": "Яңарту"
+  "briefRefresh": "Яңарту",
+  "sectionEarnings": "Квартал нәтиҗәләре",
+  "earningsNext": "Киләсе хисап: {date}",
+  "earningsExpected": "Көтелгән EPS",
+  "earningsReported": "Игълан ителгән EPS",
+  "earningsBeats": "{total, plural, =1{1 кварталның {beats} очрагында көтелгән EPS дәрәҗәсендә яки югарырак} other{Соңгы {total} кварталның {beats} очрагында көтелгән EPS дәрәҗәсендә яки югарырак}}",
+  "earningsReminderTomorrow": "{symbol} иртәгә квартал нәтиҗәләрен игълан итә",
+  "earningsReminderToday": "{symbol} бүген квартал нәтиҗәләрен игълан итә",
+  "earningsRemindersTitle": "Нәтиҗәләр искәртмәләре",
+  "earningsRemindersSubtitle": "Сайланмаларыгыздагы яки портфелегездәге акцияләр квартал нәтиҗәләрен игълан итүдән бер көн алдан белдерү"
 }

@@ -2040,4 +2040,48 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Mpshafatša';
+
+  @override
+  String get sectionEarnings => 'Dipoelo tša kotara';
+
+  @override
+  String earningsNext(String date) {
+    return 'Pego ye e latelago: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS ye e letetšwego';
+
+  @override
+  String get earningsReported => 'EPS ye e begilwego';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Go lekana goba go feta EPS ye e letetšwego go dikotara tše $beats go tše $total tša mafelelo',
+      one:
+          'Go lekana goba go feta EPS ye e letetšwego go kotara ye $beats go ye 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol: dipoelo tša kotara gosasa';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol: dipoelo tša kotara lehono';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Dikgopotšo tša dipoelo';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Tsebišo letšatši pele tše di ratwago goba dišere tša potefolio ya gago di phatlalatša dipoelo tša kotara';
 }

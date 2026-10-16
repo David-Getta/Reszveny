@@ -2031,4 +2031,47 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Жаңыртуу';
+
+  @override
+  String get sectionEarnings => 'Чейректик натыйжалар';
+
+  @override
+  String earningsNext(String date) {
+    return 'Кийинки отчет: $date';
+  }
+
+  @override
+  String get earningsExpected => 'Күтүлгөн EPS';
+
+  @override
+  String get earningsReported => 'Жарыяланган EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'EPS күтүлгөндөн жогору же барабар: акыркы $total чейректин $beats',
+      one: 'EPS күтүлгөндөн жогору же барабар: 1 чейректин $beats',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol эртең чейректик натыйжаларын жарыялайт';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol бүгүн чейректик натыйжаларын жарыялайт';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Натыйжалар тууралуу эскертме';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Тандалмаларыңыздагы же портфелиңиздеги акциялар чейректик натыйжаларын жарыялаардан бир күн мурун билдирме';
 }

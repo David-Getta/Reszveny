@@ -549,5 +549,14 @@
   "briefTitle": "نن ستاسو له ونډو سره",
   "briefButton": "د نن لنډیز",
   "briefHint": "د AI لنډ لنډیز چې ستاسو پورټفولیو او خوښې نن څنګه بدلې شوې او وروستي خبرونه یې په اړه څه وايي. شننه نه لګوي.",
-  "briefRefresh": "تازه کول"
+  "briefRefresh": "تازه کول",
+  "sectionEarnings": "درېمیاشتنۍ پایلې",
+  "earningsNext": "بل راپور: {date}",
+  "earningsExpected": "متوقع EPS",
+  "earningsReported": "اعلان شوی EPS",
+  "earningsBeats": "{total, plural, =1{له 1 درېمیاشتې څخه په {beats} کې د متوقع EPS سره برابر یا ترې پورته} other{له وروستیو {total} درېمیاشتو څخه په {beats} کې د متوقع EPS سره برابر یا ترې پورته}}",
+  "earningsReminderTomorrow": "{symbol} سبا درېمیاشتنۍ پایلې خپروي",
+  "earningsReminderToday": "{symbol} نن درېمیاشتنۍ پایلې خپروي",
+  "earningsRemindersTitle": "د پایلو یادونې",
+  "earningsRemindersSubtitle": "ستاسو د خوښو یا پورټفولیو د ونډو د درېمیاشتنیو پایلو له خپرېدو یوه ورځ مخکې خبرتیا"
 }

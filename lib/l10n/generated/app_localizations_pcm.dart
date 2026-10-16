@@ -2028,4 +2028,47 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Update';
+
+  @override
+  String get sectionEarnings => 'Quarter result';
+
+  @override
+  String earningsNext(String date) {
+    return 'Next report: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS wey dem expect';
+
+  @override
+  String get earningsReported => 'EPS wey company report';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Reach or pass di EPS wey dem expect for $beats out of di last $total quarters',
+      one: 'Reach or pass di EPS wey dem expect for $beats out of 1 quarter',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol go release quarter result tumoro';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol go release quarter result today';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Result reminder';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Notification one day before your favourites or portfolio stocks release quarter result';
 }

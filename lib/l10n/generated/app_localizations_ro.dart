@@ -2060,4 +2060,49 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Actualizează';
+
+  @override
+  String get sectionEarnings => 'Rezultate trimestriale';
+
+  @override
+  String earningsNext(String date) {
+    return 'Următorul raport: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS așteptat';
+
+  @override
+  String get earningsReported => 'EPS raportat';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'La nivelul EPS-ului așteptat sau peste în $beats din ultimele $total de trimestre',
+      few:
+          'La nivelul EPS-ului așteptat sau peste în $beats din ultimele $total trimestre',
+      one: 'La nivelul EPS-ului așteptat sau peste în $beats din 1 trimestru',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol publică mâine rezultatele trimestriale';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol publică azi rezultatele trimestriale';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Mementouri pentru rezultate';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'O notificare cu o zi înainte ca favoritele sau acțiunile din portofoliul tău să publice rezultatele trimestriale';
 }

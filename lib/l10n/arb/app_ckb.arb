@@ -549,5 +549,14 @@
   "briefTitle": "ئەمڕۆ لەگەڵ پشکەکانت",
   "briefButton": "کورتەی ئەمڕۆ",
   "briefHint": "کورتەیەکی AI لەسەر ئەوەی پۆرتفۆلیۆ و دڵخوازەکانت ئەمڕۆ چۆن جوڵان و نوێترین هەواڵەکان چی دەڵێن. شیکاری بەکارناهێنێت.",
-  "briefRefresh": "نوێکردنەوە"
+  "briefRefresh": "نوێکردنەوە",
+  "sectionEarnings": "قازانج",
+  "earningsNext": "ڕاپۆرتی داهاتوو: {date}",
+  "earningsExpected": "EPSی چاوەڕوانکراو",
+  "earningsReported": "EPSی ڕاگەیەنراو",
+  "earningsBeats": "{total, plural, =1{یەکسان یان سەرووی EPSی چاوەڕوانکراو لە {beats} لە 1 وەرزدا} other{یەکسان یان سەرووی EPSی چاوەڕوانکراو لە {beats} لە دوایین {total} وەرزدا}}",
+  "earningsReminderTomorrow": "{symbol} سبەینێ ئەنجامە وەرزییەکان ڕادەگەیەنێت",
+  "earningsReminderToday": "{symbol} ئەمڕۆ ئەنجامە وەرزییەکان ڕادەگەیەنێت",
+  "earningsRemindersTitle": "بیرخەرەوەی ئەنجامەکان",
+  "earningsRemindersSubtitle": "ئاگادارکردنەوەیەک ڕۆژێک پێش ئەوەی پشکەکانی دڵخوازەکانت یان پۆرتفۆلیۆکەت ئەنجامە وەرزییەکانیان ڕابگەیەنن"
 }

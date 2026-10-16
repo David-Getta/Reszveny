@@ -549,5 +549,14 @@
   "briefTitle": "Vandaag met je aandelen",
   "briefButton": "Vat vandaag samen",
   "briefHint": "Een korte AI-samenvatting van hoe je portefeuille en favorieten vandaag bewogen en wat het laatste nieuws erover zegt. Gebruikt geen analyse.",
-  "briefRefresh": "Bijwerken"
+  "briefRefresh": "Bijwerken",
+  "sectionEarnings": "Kwartaalcijfers",
+  "earningsNext": "Volgende cijfers: {date}",
+  "earningsExpected": "Verwachte EPS",
+  "earningsReported": "Gerapporteerde EPS",
+  "earningsBeats": "{total, plural, =1{Gelijk aan of boven de verwachte EPS in {beats} van 1 kwartaal} other{Gelijk aan of boven de verwachte EPS in {beats} van de laatste {total} kwartalen}}",
+  "earningsReminderTomorrow": "{symbol} publiceert morgen kwartaalcijfers",
+  "earningsReminderToday": "{symbol} publiceert vandaag kwartaalcijfers",
+  "earningsRemindersTitle": "Herinnering kwartaalcijfers",
+  "earningsRemindersSubtitle": "Een melding de dag voordat je favorieten of portefeuilleaandelen kwartaalcijfers publiceren"
 }

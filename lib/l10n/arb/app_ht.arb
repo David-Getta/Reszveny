@@ -549,5 +549,14 @@
   "briefTitle": "Jodi a ak aksyon ou yo",
   "briefButton": "Rezime jodi a",
   "briefHint": "Yon ti rezime AI sou kijan pòtfolyo ou ak favori ou yo te deplase jodi a ak sa dènye nouvèl yo di sou yo. Li pa itilize okenn analiz.",
-  "briefRefresh": "Mete ajou"
+  "briefRefresh": "Mete ajou",
+  "sectionEarnings": "Rezilta trimestriyèl",
+  "earningsNext": "Pwochen rapò: {date}",
+  "earningsExpected": "EPS yo atann",
+  "earningsReported": "EPS rapòte",
+  "earningsBeats": "{total, plural, =1{Nan nivo oswa pi wo pase EPS yo te atann nan {beats} sou 1 trimès} other{Nan nivo oswa pi wo pase EPS yo te atann nan {beats} sou {total} dènye trimès yo}}",
+  "earningsReminderTomorrow": "{symbol} ap pibliye rezilta trimestriyèl li demen",
+  "earningsReminderToday": "{symbol} ap pibliye rezilta trimestriyèl li jodi a",
+  "earningsRemindersTitle": "Rapèl rezilta",
+  "earningsRemindersSubtitle": "Yon notifikasyon jou anvan aksyon ki nan favori w oswa pòtfolyo w pibliye rezilta trimestriyèl yo"
 }

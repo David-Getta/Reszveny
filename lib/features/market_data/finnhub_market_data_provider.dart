@@ -101,6 +101,28 @@ class FinnhubMarketDataProvider extends MarketDataProvider {
     return parseAnalysisExtras(symbol, calendar: cal, now: today).nextEarnings;
   }
 
+  /// Az EPS-történet és a gyorsjelentés-naptár (két hívás, egymástól függetlenül
+  /// hibatűrően), a részvény oldalának „Gyorsjelentések” kártyájához.
+  @override
+  Future<EarningsOverview> earnings(String symbol, {DateTime? now}) async {
+    final today = now ?? DateTime.now();
+    String d(DateTime t) => t.toIso8601String().substring(0, 10);
+    Future<Object?> safe(String path, Map<String, String> q) async {
+      try {
+        return await _get(path, q);
+      } catch (_) {
+        return null;
+      }
+    }
+
+    final r = await Future.wait([
+      safe('/stock/earnings', {'symbol': symbol, 'limit': '4'}),
+      safe('/calendar/earnings', {'symbol': symbol, 'from': d(today), 'to': d(today.add(const Duration(days: 120)))}),
+    ]);
+    final x = parseAnalysisExtras(symbol, earnings: r[0], calendar: r[1], now: today);
+    return EarningsOverview(history: x.earnings, next: x.nextEarnings);
+  }
+
   /// A négy válaszból az [AnalysisExtras] (tesztelhető, hálózat nélkül).
   static AnalysisExtras parseAnalysisExtras(
     String symbol, {

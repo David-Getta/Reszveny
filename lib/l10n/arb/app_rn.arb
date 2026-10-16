@@ -549,5 +549,14 @@
   "briefTitle": "Uyu munsi n’imigabane yawe",
   "briefButton": "Incamake y’uyu munsi",
   "briefHint": "Incamake ngufi ya AI y’ukuntu portfolio yawe n’ivyo ukunda vyagenze uyu munsi n’ivyo inkuru nshasha zivuga. Ntikoresha isesengura.",
-  "briefRefresh": "Shirisha ku gihe"
+  "briefRefresh": "Shirisha ku gihe",
+  "sectionEarnings": "Ivyavuye mu gihembwe",
+  "earningsNext": "Icegeranyo gikurikira: {date}",
+  "earningsExpected": "EPS yari yitezwe",
+  "earningsReported": "EPS yatangajwe",
+  "earningsBeats": "{total, plural, =1{Bingana canke birenze EPS yari yitezwe mu gihembwe {beats} kuri 1} other{Bingana canke birenze EPS yari yitezwe mu bihembwe {beats} kuri {total} biheruka}}",
+  "earningsReminderTomorrow": "{symbol} izotangaza ivyavuye mu gihembwe ejo",
+  "earningsReminderToday": "{symbol} iratangaza ivyavuye mu gihembwe uyu munsi",
+  "earningsRemindersTitle": "Kwibutswa ivyavuye mu gihembwe",
+  "earningsRemindersSubtitle": "Imenyesha umunsi umwe imbere y'uko ivyo ukunda canke imigabane yo mu portfolio yawe bitangaza ivyavuye mu gihembwe"
 }

@@ -29,6 +29,7 @@ import 'features/billing/plan.dart';
 import 'features/billing/store_billing_service.dart';
 import 'features/billing/web_checkout_billing_service.dart';
 import 'features/capture/capture_service.dart';
+import 'features/events/earnings_reminder.dart';
 import 'features/events/events_service.dart';
 import 'features/fx/fx_service.dart';
 import 'features/market_data/caching_market_data_provider.dart';
@@ -100,6 +101,12 @@ class AppServices {
       marketData: marketData,
       notifier: alertNotifier ?? SystemNotifier(onClick: _openAlert),
       describe: describeAlertHit,
+    );
+    earningsReminder = EarningsReminder(
+      events: events,
+      preferences: preferences,
+      notifier: alertMonitor.notifier,
+      describe: describeEarnings,
     );
     // Jó élmény után (a 3. elemzésnél) egyszer értékelést kérünk a boltban.
     reports.onGenerated = (_) {
@@ -267,6 +274,9 @@ class AppServices {
   final AlertStore alerts;
   late final AlertMonitor alertMonitor;
 
+  /// Asztali értesítés a figyelt részvények gyorsjelentése előtt.
+  late final EarningsReminder earningsReminder;
+
   /// Fiók törlése a szerveren, és ha kérik, a készüléken tárolt személyes adatoké
   /// is (portfólió, riasztások, kedvencek, előzmények, elmentett elemzések).
   Future<void> deleteAccount({required bool wipeLocalData}) async {
@@ -294,12 +304,15 @@ class AppServices {
 
   /// Értesítésre koppintás: a riasztás részvénye nyíljon meg.
   void _openAlert(String id) {
+    // Gyorsjelentés-emlékeztető: `earnings-<ticker>-<nap>`.
+    final earnings = RegExp(r'^earnings-(.+)-\d{4}-\d{2}-\d{2}$').firstMatch(id);
+    if (earnings != null) return alertMonitor.requestOpen(earnings[1]!);
     final alert = alerts.alerts.where((a) => a.id == id).firstOrNull;
     if (alert != null) alertMonitor.requestOpen(alert.symbol);
   }
 
-  /// A riasztás értesítésének szövege a felhasználó nyelvén.
-  ({String title, String body}) describeAlertHit(AlertHit hit) {
+  /// Az app nyelve és szövegei (értesítésekhez, a felületen kívül).
+  (AppLocalizations, Fmt) _l10n() {
     final device = WidgetsBinding.instance.platformDispatcher.locale;
     final appLocale = locale.effective(device);
     AppLocalizations l10n;
@@ -308,7 +321,28 @@ class AppServices {
     } catch (_) {
       l10n = lookupAppLocalizations(SupportedLocales.fallback);
     }
-    final fmt = Fmt(appLocale.toString(), na: l10n.notAvailable);
+    return (l10n, Fmt(appLocale.toString(), na: l10n.notAvailable));
+  }
+
+  /// A gyorsjelentés-emlékeztető szövege a felhasználó nyelvén.
+  ({String title, String body}) describeEarnings(UpcomingEvent e, {required bool tomorrow}) {
+    final (l10n, fmt) = _l10n();
+    return (
+      title: tomorrow ? l10n.earningsReminderTomorrow(e.symbol) : l10n.earningsReminderToday(e.symbol),
+      body: [
+        ?switch (e.hour) {
+          'bmo' => l10n.eventBeforeOpen,
+          'amc' => l10n.eventAfterClose,
+          _ => null,
+        },
+        if (e.epsEstimate != null) l10n.eventEpsEstimate(fmt.number(e.epsEstimate!)),
+      ].join(' · '),
+    );
+  }
+
+  /// A riasztás értesítésének szövege a felhasználó nyelvén.
+  ({String title, String body}) describeAlertHit(AlertHit hit) {
+    final (l10n, fmt) = _l10n();
     final a = hit.alert;
     final q = hit.quote;
     final change = fmt.percent(q.changePercent, decimals: 1, withSign: true);

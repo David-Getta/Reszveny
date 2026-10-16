@@ -2033,4 +2033,48 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Frissítés';
+
+  @override
+  String get sectionEarnings => 'Gyorsjelentések';
+
+  @override
+  String earningsNext(String date) {
+    return 'Következő jelentés: $date';
+  }
+
+  @override
+  String get earningsExpected => 'Várt EPS';
+
+  @override
+  String get earningsReported => 'Jelentett EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Az utolsó $total negyedévből $beats alkalommal érte el vagy verte meg a várt EPS-t',
+      one:
+          '1 negyedévből $beats alkalommal érte el vagy verte meg a várt EPS-t',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol: holnap gyorsjelentés';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol: ma gyorsjelentés';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Gyorsjelentés-emlékeztető';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Értesítés a kedvenceid és a portfóliód részvényeinek gyorsjelentése előtti napon';
 }

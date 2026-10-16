@@ -549,5 +549,14 @@
   "briefTitle": "Ngayon kasama ang iyong mga stock",
   "briefButton": "I-summarize ngayon",
   "briefHint": "Maikling AI summary kung paano gumalaw ngayon ang iyong portfolio at mga paborito at ano ang sinasabi ng pinakabagong balita tungkol sa kanila. Hindi ito gumagamit ng pagsusuri.",
-  "briefRefresh": "I-update"
+  "briefRefresh": "I-update",
+  "sectionEarnings": "Kita",
+  "earningsNext": "Susunod na ulat: {date}",
+  "earningsExpected": "Inaasahang EPS",
+  "earningsReported": "Iniulat na EPS",
+  "earningsBeats": "{total, plural, =1{Pantay o higit sa inaasahang EPS sa {beats} sa 1 quarter} other{Pantay o higit sa inaasahang EPS sa {beats} sa huling {total} quarter}}",
+  "earningsReminderTomorrow": "Maglalabas ang {symbol} ng quarterly na resulta bukas",
+  "earningsReminderToday": "Maglalabas ang {symbol} ng quarterly na resulta ngayon",
+  "earningsRemindersTitle": "Mga paalala sa resulta",
+  "earningsRemindersSubtitle": "Isang notification isang araw bago maglabas ng quarterly na resulta ang iyong mga paborito o stock sa portfolio"
 }

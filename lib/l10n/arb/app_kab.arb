@@ -549,5 +549,14 @@
   "briefTitle": "Ass-a d tigemmi-k",
   "briefButton": "Agzul n wass-a",
   "briefHint": "Agzul wezzilen s AI ɣef wamek mbeddlen ass-a ukaram-ik d yismenyifen-ik, d wayen d-qqarent tneqlin timaynutin fell-asen. Ur yesseqdac ara tasledt.",
-  "briefRefresh": "Leqqem"
+  "briefRefresh": "Leqqem",
+  "sectionEarnings": "Igmaḍ n kraḍ n wayyuren",
+  "earningsNext": "Aneqqis d-iteddun: {date}",
+  "earningsExpected": "EPS i yettwarǧan",
+  "earningsReported": "EPS i d-yettwabedren",
+  "earningsBeats": "{total, plural, =1{Am EPS i yettwarǧan neɣ ugar deg {beats} seg 1 n kraḍ n wayyuren} other{Am EPS i yettwarǧan neɣ ugar deg {beats} seg {total} n kraḍ n wayyuren ineggura}}",
+  "earningsReminderTomorrow": "{symbol} ad d-yesuffeɣ igmaḍ n kraḍ n wayyuren azekka",
+  "earningsReminderToday": "{symbol} ad d-yesuffeɣ igmaḍ n kraḍ n wayyuren ass-a",
+  "earningsRemindersTitle": "Asmekti n yigmaḍ",
+  "earningsRemindersSubtitle": "Alɣu yiwen n wass send ad d-ssufɣen yisehmen n yismenyifen-ik neɣ n uportfolio-k igmaḍ n kraḍ n wayyuren"
 }

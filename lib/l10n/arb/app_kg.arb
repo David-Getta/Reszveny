@@ -549,5 +549,14 @@
   "briefTitle": "Bubu ti bisikisu na nge",
   "briefButton": "Kufunza bubu",
   "briefHint": "Mukanda ya nkufi ya AI ya mutindu portfolio na nge mpi yina nge ke zola me sobaka bubu mpi yina bansangu ya mpa ke tuba. Yo ke sadilaka ve nsosa.",
-  "briefRefresh": "Kuyidika"
+  "briefRefresh": "Kuyidika",
+  "sectionEarnings": "Ba résultats ya trimestre",
+  "earningsNext": "Rapport ya me landa: {date}",
+  "earningsExpected": "EPS ya bo ke vingila",
+  "earningsReported": "EPS ya bo me pesa",
+  "earningsBeats": "{total, plural, =1{Kufwana to kuluta EPS ya bo ke vingila na {beats} ya trimestre 1} other{Kufwana to kuluta EPS ya bo ke vingila na {beats} ya ba trimestre {total} ya nsuka}}",
+  "earningsReminderTomorrow": "{symbol} ta basisa ba résultats ya trimestre mbazi",
+  "earningsReminderToday": "{symbol} ke basisa ba résultats ya trimestre bubu",
+  "earningsRemindersTitle": "Kiyibusu ya ba résultats",
+  "earningsRemindersSubtitle": "Nkebisu kilumbu mosi na ntwala nde ba actions ya bizolwa na nge to ya portefeuille na nge kubasisa ba résultats ya trimestre"
 }

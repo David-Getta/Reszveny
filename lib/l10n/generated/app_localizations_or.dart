@@ -2026,4 +2026,47 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get briefRefresh => 'ଅପଡେଟ୍ କରନ୍ତୁ';
+
+  @override
+  String get sectionEarnings => 'ତ୍ରୈମାସିକ ଫଳାଫଳ';
+
+  @override
+  String earningsNext(String date) {
+    return 'ପରବର୍ତ୍ତୀ ରିପୋର୍ଟ: $date';
+  }
+
+  @override
+  String get earningsExpected => 'ପ୍ରତ୍ୟାଶିତ EPS';
+
+  @override
+  String get earningsReported => 'ଘୋଷିତ EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'ଗତ $totalଟି ମଧ୍ୟରୁ $beatsଟି ତ୍ରୈମାସିକରେ ପ୍ରତ୍ୟାଶିତ EPS ସହ ସମାନ ବା ଅଧିକ',
+      one: '1ଟି ମଧ୍ୟରୁ $beatsଟି ତ୍ରୈମାସିକରେ ପ୍ରତ୍ୟାଶିତ EPS ସହ ସମାନ ବା ଅଧିକ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol କାଲି ତ୍ରୈମାସିକ ଫଳାଫଳ ପ୍ରକାଶ କରିବ';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol ଆଜି ତ୍ରୈମାସିକ ଫଳାଫଳ ପ୍ରକାଶ କରିବ';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'ଫଳାଫଳ ସ୍ମାରକ';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'ଆପଣଙ୍କ ପସନ୍ଦ କିମ୍ବା ପୋର୍ଟଫୋଲିଓର ଷ୍ଟକ୍ ତ୍ରୈମାସିକ ଫଳାଫଳ ପ୍ରକାଶ କରିବାର ପୂର୍ବ ଦିନ ଏକ ବିଜ୍ଞପ୍ତି';
 }

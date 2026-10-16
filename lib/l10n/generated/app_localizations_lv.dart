@@ -2067,4 +2067,47 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Atjaunināt';
+
+  @override
+  String get sectionEarnings => 'Ceturkšņa rezultāti';
+
+  @override
+  String earningsNext(String date) {
+    return 'Nākamais pārskats: $date';
+  }
+
+  @override
+  String get earningsExpected => 'Prognozētais EPS';
+
+  @override
+  String get earningsReported => 'Paziņotais EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Ceturkšņi, kuros EPS atbilda prognozei vai pārsniedza to: $beats no pēdējiem $total',
+      one: 'EPS atbilda prognozei vai pārsniedza to: $beats no 1 ceturkšņa',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol rīt publicē ceturkšņa rezultātus';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol šodien publicē ceturkšņa rezultātus';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Atgādinājumi par rezultātiem';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Paziņojums dienu pirms izlases vai portfeļa akciju ceturkšņa rezultātu publicēšanas';
 }

@@ -80,6 +80,14 @@ class EarningsSurprise {
   final double? estimate;
   final double? surprisePercent;
 
+  /// Megverte-e a várakozást (`null`, ha valamelyik szám hiányzik).
+  bool? get beat => actual == null || estimate == null ? null : actual! >= estimate!;
+
+  /// A meglepetés százalékban: a jelentett, ha van, különben a két számból.
+  double? get surprise =>
+      surprisePercent ??
+      (actual == null || estimate == null || estimate == 0 ? null : (actual! - estimate!) / estimate!.abs() * 100);
+
   Map<String, dynamic> toJson() => {
     'period': period.toIso8601String().substring(0, 10),
     'eps_actual': ?actual,
@@ -104,4 +112,15 @@ class UpcomingEarnings {
     'eps_estimate': ?epsEstimate,
     'revenue_estimate': ?revenueEstimate,
   };
+}
+
+/// A részvény oldalának „Gyorsjelentések” kártyája: az utolsó negyedévek
+/// jelentett és várt EPS-e (a legfrissebb elöl) és a következő jelentés.
+class EarningsOverview {
+  const EarningsOverview({this.history = const [], this.next});
+
+  final List<EarningsSurprise> history;
+  final UpcomingEarnings? next;
+
+  bool get isEmpty => history.isEmpty && next == null;
 }

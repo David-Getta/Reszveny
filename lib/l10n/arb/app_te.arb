@@ -549,5 +549,14 @@
   "briefTitle": "ఈరోజు మీ షేర్లతో",
   "briefButton": "ఈరోజు సారాంశం",
   "briefHint": "ఈరోజు మీ పోర్ట్‌ఫోలియో మరియు ఇష్టమైనవి ఎలా కదిలాయో, తాజా వార్తలు వాటి గురించి ఏమి చెబుతున్నాయో చిన్న AI సారాంశం. ఎలాంటి విశ్లేషణనూ వాడదు.",
-  "briefRefresh": "నవీకరించు"
+  "briefRefresh": "నవీకరించు",
+  "sectionEarnings": "త్రైమాసిక ఫలితాలు",
+  "earningsNext": "తదుపరి నివేదిక: {date}",
+  "earningsExpected": "అంచనా EPS",
+  "earningsReported": "ప్రకటించిన EPS",
+  "earningsBeats": "{total, plural, =1{1 త్రైమాసికంలో {beats} సార్లు అంచనా EPSకు సమానం లేదా ఎక్కువ} other{గత {total} త్రైమాసికాల్లో {beats} సార్లు అంచనా EPSకు సమానం లేదా ఎక్కువ}}",
+  "earningsReminderTomorrow": "{symbol} రేపు త్రైమాసిక ఫలితాలను ప్రకటిస్తుంది",
+  "earningsReminderToday": "{symbol} ఈరోజు త్రైమాసిక ఫలితాలను ప్రకటిస్తుంది",
+  "earningsRemindersTitle": "ఫలితాల రిమైండర్‌లు",
+  "earningsRemindersSubtitle": "మీ ఇష్టమైనవి లేదా పోర్ట్‌ఫోలియో స్టాక్‌లు త్రైమాసిక ఫలితాలు ప్రకటించే ముందు రోజు ఒక నోటిఫికేషన్"
 }

@@ -549,5 +549,14 @@
   "briefTitle": "오늘의 내 종목",
   "briefButton": "오늘 요약하기",
   "briefHint": "포트폴리오와 관심 종목이 오늘 어떻게 움직였는지, 최신 뉴스가 무엇을 말하는지 AI가 짧게 요약합니다. 분석 횟수는 차감되지 않습니다.",
-  "briefRefresh": "업데이트"
+  "briefRefresh": "업데이트",
+  "sectionEarnings": "실적",
+  "earningsNext": "다음 실적 발표: {date}",
+  "earningsExpected": "예상 EPS",
+  "earningsReported": "실제 EPS",
+  "earningsBeats": "{total, plural, =1{1개 분기 중 {beats}개 분기에서 EPS 예상치 이상} other{최근 {total}개 분기 중 {beats}개 분기에서 EPS 예상치 이상}}",
+  "earningsReminderTomorrow": "{symbol} 내일 분기 실적 발표",
+  "earningsReminderToday": "{symbol} 오늘 분기 실적 발표",
+  "earningsRemindersTitle": "실적 발표 알림",
+  "earningsRemindersSubtitle": "즐겨찾기나 포트폴리오 종목의 분기 실적 발표 하루 전에 알려 드립니다"
 }

@@ -289,6 +289,18 @@ class SettingsPage extends StatelessWidget {
                             },
                           ),
                         ),
+                        const Divider(height: 1),
+                        ListenableBuilder(
+                          listenable: services.preferences,
+                          builder: (context, _) => SwitchListTile(
+                            key: const ValueKey('earnings-reminders'),
+                            secondary: const Icon(Icons.event_note_rounded),
+                            title: Text(l10n.earningsRemindersTitle),
+                            subtitle: Text(l10n.earningsRemindersSubtitle),
+                            value: services.preferences.earningsReminders,
+                            onChanged: services.preferences.setEarningsReminders,
+                          ),
+                        ),
                       ],
                     ),
                   ),

@@ -549,5 +549,14 @@
   "briefTitle": "Şu gün paýnamalaryňyz bilen",
   "briefButton": "Şu güni jemle",
   "briefHint": "Portfeliňiziň we saýlananlaryňyzyň şu gün nähili hereket edendigi we iň täze habarlaryň olar barada näme diýýändigi barada gysga AI jemlemesi. Seljerme sarp etmeýär.",
-  "briefRefresh": "Täzele"
+  "briefRefresh": "Täzele",
+  "sectionEarnings": "Çärýeklik netijeler",
+  "earningsNext": "Indiki hasabat: {date}",
+  "earningsExpected": "Garaşylýan EPS",
+  "earningsReported": "Yglan edilen EPS",
+  "earningsBeats": "{total, plural, =1{1 çärýegiň {beats} sanysynda garaşylýan EPS-e deň ýa-da ondan ýokary} other{Soňky {total} çärýegiň {beats} sanysynda garaşylýan EPS-e deň ýa-da ondan ýokary}}",
+  "earningsReminderTomorrow": "{symbol} ertir çärýeklik netijelerini yglan edýär",
+  "earningsReminderToday": "{symbol} şu gün çärýeklik netijelerini yglan edýär",
+  "earningsRemindersTitle": "Netije ýatlatmalary",
+  "earningsRemindersSubtitle": "Saýlananlaryňyzdaky ýa-da portfeliňizdäki paýnamalar çärýeklik netijelerini yglan etmezinden bir gün öň duýduryş"
 }

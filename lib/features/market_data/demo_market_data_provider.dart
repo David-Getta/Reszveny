@@ -55,6 +55,13 @@ class DemoMarketDataProvider extends MarketDataProvider {
     );
   }
 
+  /// Minta-gyorsjelentések: a többletadatok EPS-története és a fenti következő dátum.
+  @override
+  Future<EarningsOverview> earnings(String symbol) async {
+    final x = await analysisExtras(symbol);
+    return EarningsOverview(history: x.earnings, next: await nextEarnings(symbol));
+  }
+
   /// Minta-többletadatok az elemzéshez (nem valós adatok).
   @override
   Future<AnalysisExtras> analysisExtras(String symbol) async {
@@ -78,13 +85,13 @@ class DemoMarketDataProvider extends MarketDataProvider {
           InsiderTrade(name: 'Demo Insider', date: now.subtract(const Duration(days: 20)), code: 'S', change: -30000),
         ],
       ),
+      // Minta: négyből egyszer elmarad a várakozástól.
       earnings: [
         for (var i = 0; i < 4; i++)
           EarningsSurprise(
-            period: DateTime(now.year, now.month - 3 * (i + 1), 1),
-            actual: 1.0 + i * 0.05,
-            estimate: 0.97 + i * 0.05,
-            surprisePercent: 3.1,
+            period: DateTime(now.year, now.month - 3 * i, 0),
+            actual: (i == 2 ? 0.94 : 1.0) + (3 - i) * 0.05,
+            estimate: 0.97 + (3 - i) * 0.05,
           ),
       ],
       nextEarnings: UpcomingEarnings(date: now.add(const Duration(days: 18)), hour: 'amc'),

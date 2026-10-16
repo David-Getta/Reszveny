@@ -549,5 +549,14 @@
   "briefTitle": "Azi cu acțiunile tale",
   "briefButton": "Rezumă ziua",
   "briefHint": "Un scurt rezumat AI despre cum s-au mișcat azi portofoliul și favoritele tale și ce spun ultimele știri despre ele. Nu consumă nicio analiză.",
-  "briefRefresh": "Actualizează"
+  "briefRefresh": "Actualizează",
+  "sectionEarnings": "Rezultate trimestriale",
+  "earningsNext": "Următorul raport: {date}",
+  "earningsExpected": "EPS așteptat",
+  "earningsReported": "EPS raportat",
+  "earningsBeats": "{total, plural, =1{La nivelul EPS-ului așteptat sau peste în {beats} din 1 trimestru} few{La nivelul EPS-ului așteptat sau peste în {beats} din ultimele {total} trimestre} other{La nivelul EPS-ului așteptat sau peste în {beats} din ultimele {total} de trimestre}}",
+  "earningsReminderTomorrow": "{symbol} publică mâine rezultatele trimestriale",
+  "earningsReminderToday": "{symbol} publică azi rezultatele trimestriale",
+  "earningsRemindersTitle": "Mementouri pentru rezultate",
+  "earningsRemindersSubtitle": "O notificare cu o zi înainte ca favoritele sau acțiunile din portofoliul tău să publice rezultatele trimestriale"
 }

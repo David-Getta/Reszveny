@@ -549,5 +549,14 @@
   "briefTitle": "Lónìí pẹ̀lú àwọn ìpín rẹ",
   "briefButton": "Ṣàkópọ̀ òní",
   "briefHint": "Àkópọ̀ AI kúkúrú nípa bí àpò-ìdókòwò rẹ àti àwọn àyànfẹ́ rẹ ṣe yí padà lónìí àti ohun tí ìròyìn tuntun ń sọ nípa wọn. Kò ná ìtúpalẹ̀ kankan.",
-  "briefRefresh": "Ṣe àtúnṣe"
+  "briefRefresh": "Ṣe àtúnṣe",
+  "sectionEarnings": "Àbájáde ìdámẹ́rin ọdún",
+  "earningsNext": "Ìjábọ̀ tó kàn: {date}",
+  "earningsExpected": "EPS tí a retí",
+  "earningsReported": "EPS tí a kéde",
+  "earningsBeats": "{total, plural, =1{Dọ́gba tàbí ju EPS tí a retí lọ ní {beats} nínú ìdámẹ́rin ọdún 1} other{Dọ́gba tàbí ju EPS tí a retí lọ ní {beats} nínú ìdámẹ́rin ọdún {total} tó kọjá}}",
+  "earningsReminderTomorrow": "{symbol} yóò kéde àbájáde ìdámẹ́rin ọdún lọ́la",
+  "earningsReminderToday": "{symbol} ń kéde àbájáde ìdámẹ́rin ọdún lónìí",
+  "earningsRemindersTitle": "Ìránnilétí àbájáde",
+  "earningsRemindersSubtitle": "Ìfitónilétí ní ọjọ́ kan ṣáájú kí àwọn ìpín ààyò rẹ tàbí ti pọ́tífólíò rẹ tó kéde àbájáde ìdámẹ́rin ọdún"
 }

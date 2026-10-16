@@ -549,5 +549,14 @@
   "briefTitle": "Денес со вашите акции",
   "briefButton": "Сумирај го денот",
   "briefHint": "Кратко AI-резиме за тоа како денес се движеа вашето портфолио и омилените и што велат најновите вести за нив. Не троши анализа.",
-  "briefRefresh": "Ажурирај"
+  "briefRefresh": "Ажурирај",
+  "sectionEarnings": "Квартални резултати",
+  "earningsNext": "Следен извештај: {date}",
+  "earningsExpected": "Очекуван EPS",
+  "earningsReported": "Објавен EPS",
+  "earningsBeats": "{total, plural, =1{На или над очекуваниот EPS во {beats} од 1 квартал} other{На или над очекуваниот EPS во {beats} од последните {total} квартали}}",
+  "earningsReminderTomorrow": "{symbol} објавува квартални резултати утре",
+  "earningsReminderToday": "{symbol} објавува квартални резултати денес",
+  "earningsRemindersTitle": "Потсетници за резултати",
+  "earningsRemindersSubtitle": "Известување ден пред омилените или акциите од твоето портфолио да објават квартални резултати"
 }

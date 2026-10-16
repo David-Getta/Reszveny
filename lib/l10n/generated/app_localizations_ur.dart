@@ -2028,4 +2028,47 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get briefRefresh => 'اپ ڈیٹ کریں';
+
+  @override
+  String get sectionEarnings => 'سہ ماہی نتائج';
+
+  @override
+  String earningsNext(String date) {
+    return 'اگلی رپورٹ: $date';
+  }
+
+  @override
+  String get earningsExpected => 'متوقع EPS';
+
+  @override
+  String get earningsReported => 'رپورٹ شدہ EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'پچھلی $total سہ ماہیوں میں سے $beats میں متوقع EPS کے برابر یا زیادہ',
+      one: '1 سہ ماہی میں سے $beats میں متوقع EPS کے برابر یا زیادہ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol کل سہ ماہی نتائج جاری کرے گا';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol آج سہ ماہی نتائج جاری کرے گا';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'نتائج کی یاد دہانیاں';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'آپ کے پسندیدہ یا پورٹ فولیو کے اسٹاکس کے سہ ماہی نتائج سے ایک دن پہلے اطلاع';
 }

@@ -549,5 +549,14 @@
   "briefTitle": "Kunan p’unchay acciónniykikunawan",
   "briefButton": "Kunan p’unchayta pisiyachiy",
   "briefHint": "AI nisqawan pisi willay, imaynatachus portafoliyuyki munasqaykikunapas kunan kuyurqanku, musuq willakuykunataq imatachus ninku. Mana t’aqwiyta apaykachanchu.",
-  "briefRefresh": "Musuqchay"
+  "briefRefresh": "Musuqchay",
+  "sectionEarnings": "Kimsa killapa willakuynin",
+  "earningsNext": "Qatiq willakuy: {date}",
+  "earningsExpected": "Suyakusqa EPS",
+  "earningsReported": "Willakusqa EPS",
+  "earningsBeats": "{total, plural, =1{1 kimsa killamanta {beats}-pi suyakusqa EPS-wan kikin utaq aswan hatun} other{Qhipa {total} kimsa killakunamanta {beats}-pi suyakusqa EPS-wan kikin utaq aswan hatun}}",
+  "earningsReminderTomorrow": "{symbol}: paqarin kimsa killapa willakuynin",
+  "earningsReminderToday": "{symbol}: kunan p'unchaw kimsa killapa willakuynin",
+  "earningsRemindersTitle": "Willakuy yuyarichiykuna",
+  "earningsRemindersSubtitle": "Munasqaykikunap utaq portafolioykipi acciónkunap kimsa killapa willakuynin manaraq lluqsichkaptin huk p'unchaw ñawpaqta willachiy"
 }

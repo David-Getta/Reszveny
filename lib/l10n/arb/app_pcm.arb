@@ -549,5 +549,14 @@
   "briefTitle": "Today with your stocks",
   "briefButton": "Summarize today",
   "briefHint": "Short AI summary of how your portfolio and favourites take move today and wetin the latest news dey talk about dem. E no go use any analysis.",
-  "briefRefresh": "Update"
+  "briefRefresh": "Update",
+  "sectionEarnings": "Quarter result",
+  "earningsNext": "Next report: {date}",
+  "earningsExpected": "EPS wey dem expect",
+  "earningsReported": "EPS wey company report",
+  "earningsBeats": "{total, plural, =1{Reach or pass di EPS wey dem expect for {beats} out of 1 quarter} other{Reach or pass di EPS wey dem expect for {beats} out of di last {total} quarters}}",
+  "earningsReminderTomorrow": "{symbol} go release quarter result tumoro",
+  "earningsReminderToday": "{symbol} go release quarter result today",
+  "earningsRemindersTitle": "Result reminder",
+  "earningsRemindersSubtitle": "Notification one day before your favourites or portfolio stocks release quarter result"
 }

@@ -2033,4 +2033,47 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Aggiorna';
+
+  @override
+  String get sectionEarnings => 'Risultati trimestrali';
+
+  @override
+  String earningsNext(String date) {
+    return 'Prossimi risultati: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS atteso';
+
+  @override
+  String get earningsReported => 'EPS comunicato';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'EPS pari o superiore alle attese in $beats degli ultimi $total trimestri',
+      one: 'EPS pari o superiore alle attese in $beats trimestre su 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol pubblica i risultati trimestrali domani';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol pubblica i risultati trimestrali oggi';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Promemoria risultati';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Una notifica il giorno prima che i titoli dei tuoi preferiti o del tuo portafoglio pubblichino i risultati trimestrali';
 }

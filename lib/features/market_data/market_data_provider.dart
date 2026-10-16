@@ -40,6 +40,13 @@ abstract class MarketDataProvider {
   /// A következő gyorsjelentés (az eseménynaptárhoz); alapból az [analysisExtras]-ból.
   Future<UpcomingEarnings?> nextEarnings(String symbol) async => (await analysisExtras(symbol)).nextEarnings;
 
+  /// Az utolsó negyedévek EPS-e és a következő gyorsjelentés (a részvény
+  /// oldalának kártyájához); alapból az [analysisExtras]-ból.
+  Future<EarningsOverview> earnings(String symbol) async {
+    final x = await analysisExtras(symbol);
+    return EarningsOverview(history: x.earnings, next: x.nextEarnings);
+  }
+
   /// Minden szekciót párhuzamosan tölt le; egy szekció hibája nem dönti be
   /// a többit, hanem a [StockDetails.errors] térképbe kerül.
   Future<StockDetails> details(String symbol) async {

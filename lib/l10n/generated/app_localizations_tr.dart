@@ -2028,4 +2028,47 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Güncelle';
+
+  @override
+  String get sectionEarnings => 'Bilançolar';
+
+  @override
+  String earningsNext(String date) {
+    return 'Sonraki bilanço: $date';
+  }
+
+  @override
+  String get earningsExpected => 'Beklenen HBK';
+
+  @override
+  String get earningsReported => 'Açıklanan HBK';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Son $total çeyreğin $beats tanesinde HBK beklentisine eşit veya üzerinde',
+      one: '1 çeyreğin $beats tanesinde HBK beklentisine eşit veya üzerinde',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol yarın çeyreklik bilançosunu açıklıyor';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol bugün çeyreklik bilançosunu açıklıyor';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Bilanço hatırlatıcıları';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Favorilerindeki veya portföyündeki hisseler çeyreklik bilançosunu açıklamadan bir gün önce bildirim';
 }

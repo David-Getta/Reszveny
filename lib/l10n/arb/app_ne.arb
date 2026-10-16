@@ -549,5 +549,14 @@
   "briefTitle": "आज तपाईंका सेयरसँग",
   "briefButton": "आजको सारांश",
   "briefHint": "आज तपाईंको पोर्टफोलियो र मनपर्ने सेयर कसरी चले र ताजा समाचारले तिनका बारेमा के भन्छ भन्ने छोटो AI सारांश। यसले कुनै विश्लेषण खर्च गर्दैन।",
-  "briefRefresh": "अपडेट गर्नुहोस्"
+  "briefRefresh": "अपडेट गर्नुहोस्",
+  "sectionEarnings": "त्रैमासिक नतिजा",
+  "earningsNext": "अर्को रिपोर्ट: {date}",
+  "earningsExpected": "अपेक्षित EPS",
+  "earningsReported": "प्रकाशित EPS",
+  "earningsBeats": "{total, plural, =1{1 मध्ये {beats} त्रैमासमा अपेक्षित EPS बराबर वा सोभन्दा माथि} other{पछिल्ला {total} मध्ये {beats} त्रैमासमा अपेक्षित EPS बराबर वा सोभन्दा माथि}}",
+  "earningsReminderTomorrow": "{symbol} ले भोलि त्रैमासिक नतिजा सार्वजनिक गर्दैछ",
+  "earningsReminderToday": "{symbol} ले आज त्रैमासिक नतिजा सार्वजनिक गर्दैछ",
+  "earningsRemindersTitle": "नतिजा रिमाइन्डर",
+  "earningsRemindersSubtitle": "तपाईंका मनपर्ने वा पोर्टफोलियोका सेयरहरूले त्रैमासिक नतिजा सार्वजनिक गर्नुभन्दा एक दिनअघि सूचना"
 }

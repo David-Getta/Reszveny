@@ -549,5 +549,14 @@
   "briefTitle": "Ita nga aldaw kadagiti stock-mo",
   "briefButton": "I-summarize ita",
   "briefHint": "Ababa nga AI a pakabuklan no kasano a naggaraw ita ti portfolio ken paboritom ken ania ti ibaga dagiti kabaruan a damag maipapan kadakuada. Saan nga agusar iti panaganalisa.",
-  "briefRefresh": "I-update"
+  "briefRefresh": "I-update",
+  "sectionEarnings": "Kada-kuarter a resulta",
+  "earningsNext": "Sumaruno a report: {date}",
+  "earningsExpected": "Namnamaen nga EPS",
+  "earningsReported": "Naireport nga EPS",
+  "earningsBeats": "{total, plural, =1{Agpada wenno nangatngato ngem ti namnamaen nga EPS iti {beats} ti 1 a kuarter} other{Agpada wenno nangatngato ngem ti namnamaen nga EPS iti {beats} ti naudi a {total} a kuarter}}",
+  "earningsReminderTomorrow": "Iwaragawag ti {symbol} ti kada-kuarter a resulta inton bigat",
+  "earningsReminderToday": "Iwaragawag ti {symbol} ti kada-kuarter a resulta ita nga aldaw",
+  "earningsRemindersTitle": "Pammalagip ti resulta",
+  "earningsRemindersSubtitle": "Pakaammo iti aldaw sakbay nga iwaragawag dagiti stock iti paboritom wenno portfoliom ti kada-kuarter a resultada"
 }

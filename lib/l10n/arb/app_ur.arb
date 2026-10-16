@@ -549,5 +549,14 @@
   "briefTitle": "آج آپ کے شیئرز کے ساتھ",
   "briefButton": "آج کا خلاصہ",
   "briefHint": "آج آپ کا پورٹ فولیو اور پسندیدہ شیئرز کیسے چلے اور تازہ خبریں ان کے بارے میں کیا کہتی ہیں، اس کا مختصر AI خلاصہ۔ اس میں کوئی تجزیہ خرچ نہیں ہوتا۔",
-  "briefRefresh": "اپ ڈیٹ کریں"
+  "briefRefresh": "اپ ڈیٹ کریں",
+  "sectionEarnings": "سہ ماہی نتائج",
+  "earningsNext": "اگلی رپورٹ: {date}",
+  "earningsExpected": "متوقع EPS",
+  "earningsReported": "رپورٹ شدہ EPS",
+  "earningsBeats": "{total, plural, =1{1 سہ ماہی میں سے {beats} میں متوقع EPS کے برابر یا زیادہ} other{پچھلی {total} سہ ماہیوں میں سے {beats} میں متوقع EPS کے برابر یا زیادہ}}",
+  "earningsReminderTomorrow": "{symbol} کل سہ ماہی نتائج جاری کرے گا",
+  "earningsReminderToday": "{symbol} آج سہ ماہی نتائج جاری کرے گا",
+  "earningsRemindersTitle": "نتائج کی یاد دہانیاں",
+  "earningsRemindersSubtitle": "آپ کے پسندیدہ یا پورٹ فولیو کے اسٹاکس کے سہ ماہی نتائج سے ایک دن پہلے اطلاع"
 }

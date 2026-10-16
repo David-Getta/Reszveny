@@ -2035,4 +2035,48 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Vugurura';
+
+  @override
+  String get sectionEarnings => 'Ibyavuye mu gihembwe';
+
+  @override
+  String earningsNext(String date) {
+    return 'Raporo ikurikira: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS yari yitezwe';
+
+  @override
+  String get earningsReported => 'EPS yatangajwe';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Byanganye cyangwa birenze EPS yari yitezwe mu bihembwe $beats kuri $total biheruka',
+      one:
+          'Byanganye cyangwa birenze EPS yari yitezwe mu gihembwe $beats kuri 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol izatangaza ibyavuye mu gihembwe ejo';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol iratangaza ibyavuye mu gihembwe uyu munsi';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Kwibutswa ibyavuye mu gihembwe';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Imenyesha umunsi umwe mbere y\'uko ibyo ukunda cyangwa imigabane yo muri portfolio yawe bitangaza ibyavuye mu gihembwe';
 }

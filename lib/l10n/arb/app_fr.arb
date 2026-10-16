@@ -549,5 +549,14 @@
   "briefTitle": "Aujourd’hui avec vos actions",
   "briefButton": "Résumer la journée",
   "briefHint": "Un court résumé par IA de l’évolution de votre portefeuille et de vos favoris aujourd’hui, et de ce qu’en disent les dernières actualités. Ne consomme aucune analyse.",
-  "briefRefresh": "Actualiser"
+  "briefRefresh": "Actualiser",
+  "sectionEarnings": "Résultats",
+  "earningsNext": "Prochaine publication : {date}",
+  "earningsExpected": "BPA attendu",
+  "earningsReported": "BPA publié",
+  "earningsBeats": "{total, plural, =1{Égal ou supérieur au BPA attendu sur {beats} trimestre sur 1} other{Égal ou supérieur au BPA attendu sur {beats} des {total} derniers trimestres}}",
+  "earningsReminderTomorrow": "{symbol} publie ses résultats trimestriels demain",
+  "earningsReminderToday": "{symbol} publie ses résultats trimestriels aujourd’hui",
+  "earningsRemindersTitle": "Rappels de résultats",
+  "earningsRemindersSubtitle": "Une notification la veille de la publication des résultats trimestriels des actions de vos favoris ou de votre portefeuille"
 }

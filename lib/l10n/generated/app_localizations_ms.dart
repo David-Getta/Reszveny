@@ -2032,4 +2032,48 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Kemas kini';
+
+  @override
+  String get sectionEarnings => 'Keputusan suku tahunan';
+
+  @override
+  String earningsNext(String date) {
+    return 'Laporan seterusnya: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS dijangka';
+
+  @override
+  String get earningsReported => 'EPS dilaporkan';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Menyamai atau melebihi EPS dijangka dalam $beats daripada $total suku tahun terakhir',
+      one:
+          'Menyamai atau melebihi EPS dijangka dalam $beats daripada 1 suku tahun',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol mengumumkan keputusan suku tahunan esok';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol mengumumkan keputusan suku tahunan hari ini';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Peringatan keputusan';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Pemberitahuan sehari sebelum saham kegemaran atau portfolio anda mengumumkan keputusan suku tahunan';
 }

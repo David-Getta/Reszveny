@@ -2020,4 +2020,47 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get briefRefresh => 'تازه کول';
+
+  @override
+  String get sectionEarnings => 'درېمیاشتنۍ پایلې';
+
+  @override
+  String earningsNext(String date) {
+    return 'بل راپور: $date';
+  }
+
+  @override
+  String get earningsExpected => 'متوقع EPS';
+
+  @override
+  String get earningsReported => 'اعلان شوی EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'له وروستیو $total درېمیاشتو څخه په $beats کې د متوقع EPS سره برابر یا ترې پورته',
+      one: 'له 1 درېمیاشتې څخه په $beats کې د متوقع EPS سره برابر یا ترې پورته',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol سبا درېمیاشتنۍ پایلې خپروي';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol نن درېمیاشتنۍ پایلې خپروي';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'د پایلو یادونې';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'ستاسو د خوښو یا پورټفولیو د ونډو د درېمیاشتنیو پایلو له خپرېدو یوه ورځ مخکې خبرتیا';
 }

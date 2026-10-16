@@ -2033,4 +2033,47 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get briefRefresh => 'Gadzirisa';
+
+  @override
+  String get sectionEarnings => 'Mhedzisiro yekota';
+
+  @override
+  String earningsNext(String date) {
+    return 'Chirevo chinotevera: $date';
+  }
+
+  @override
+  String get earningsExpected => 'EPS inotarisirwa';
+
+  @override
+  String get earningsReported => 'EPS yakaziviswa';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'Yakaenzana kana kupfuura EPS inotarisirwa mumakota $beats kubva pa $total ekupedzisira',
+      one: 'Yakaenzana kana kupfuura EPS inotarisirwa mukota $beats kubva pa 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol ichaburitsa mhedzisiro yekota mangwana';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol ichaburitsa mhedzisiro yekota nhasi';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'Zviyeuchidzo zvemhedzisiro';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'Chiziviso zuva rimwe zvaunofarira kana masheya ari mupotiforiyo yako asati aburitsa mhedzisiro yekota';
 }

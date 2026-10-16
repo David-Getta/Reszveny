@@ -549,5 +549,14 @@
   "briefTitle": "Šodien ar jūsu akcijām",
   "briefButton": "Apkopot dienu",
   "briefHint": "Īss MI kopsavilkums par to, kā šodien mainījās jūsu portfelis un izlase un ko par tiem saka jaunākās ziņas. Neizmanto analīzi.",
-  "briefRefresh": "Atjaunināt"
+  "briefRefresh": "Atjaunināt",
+  "sectionEarnings": "Ceturkšņa rezultāti",
+  "earningsNext": "Nākamais pārskats: {date}",
+  "earningsExpected": "Prognozētais EPS",
+  "earningsReported": "Paziņotais EPS",
+  "earningsBeats": "{total, plural, =1{EPS atbilda prognozei vai pārsniedza to: {beats} no 1 ceturkšņa} other{Ceturkšņi, kuros EPS atbilda prognozei vai pārsniedza to: {beats} no pēdējiem {total}}}",
+  "earningsReminderTomorrow": "{symbol} rīt publicē ceturkšņa rezultātus",
+  "earningsReminderToday": "{symbol} šodien publicē ceturkšņa rezultātus",
+  "earningsRemindersTitle": "Atgādinājumi par rezultātiem",
+  "earningsRemindersSubtitle": "Paziņojums dienu pirms izlases vai portfeļa akciju ceturkšņa rezultātu publicēšanas"
 }

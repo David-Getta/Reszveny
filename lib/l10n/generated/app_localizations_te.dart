@@ -2034,4 +2034,47 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get briefRefresh => 'నవీకరించు';
+
+  @override
+  String get sectionEarnings => 'త్రైమాసిక ఫలితాలు';
+
+  @override
+  String earningsNext(String date) {
+    return 'తదుపరి నివేదిక: $date';
+  }
+
+  @override
+  String get earningsExpected => 'అంచనా EPS';
+
+  @override
+  String get earningsReported => 'ప్రకటించిన EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'గత $total త్రైమాసికాల్లో $beats సార్లు అంచనా EPSకు సమానం లేదా ఎక్కువ',
+      one: '1 త్రైమాసికంలో $beats సార్లు అంచనా EPSకు సమానం లేదా ఎక్కువ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol రేపు త్రైమాసిక ఫలితాలను ప్రకటిస్తుంది';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol ఈరోజు త్రైమాసిక ఫలితాలను ప్రకటిస్తుంది';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'ఫలితాల రిమైండర్‌లు';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'మీ ఇష్టమైనవి లేదా పోర్ట్‌ఫోలియో స్టాక్‌లు త్రైమాసిక ఫలితాలు ప్రకటించే ముందు రోజు ఒక నోటిఫికేషన్';
 }

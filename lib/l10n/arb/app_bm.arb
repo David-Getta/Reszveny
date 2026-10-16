@@ -549,5 +549,14 @@
   "briefTitle": "Bi ni i ka aksiyɔnw",
   "briefButton": "Bi kuma surun",
   "briefHint": "AI kuma surun min b’a jira cogo min na i ka pɔrtifoliyo ani i ka diyanyew yɛlɛmana bi, ani kibaru kuraw b’u ko min fɔ. A tɛ sɛgɛsɛgɛli si ta.",
-  "briefRefresh": "Kura"
+  "briefRefresh": "Kura",
+  "sectionEarnings": "Tɔnɔ jatebɔ",
+  "earningsNext": "Jatebɔ nata: {date}",
+  "earningsExpected": "EPS makɔnɔnen",
+  "earningsReported": "EPS fɔlen",
+  "earningsBeats": "{total, plural, =1{EPS sera makɔnɔnen ma walima ka tɛmɛ a kan kalo saba {beats} la 1 kɔnɔ} other{EPS sera makɔnɔnen ma walima ka tɛmɛ a kan kalo saba {beats} la {total} laban kɔnɔ}}",
+  "earningsReminderTomorrow": "{symbol} bɛ kalo saba jatebɔ jira sini",
+  "earningsReminderToday": "{symbol} bɛ kalo saba jatebɔ jira bi",
+  "earningsRemindersTitle": "Jatebɔ hakilijiginw",
+  "earningsRemindersSubtitle": "Kunnafoni don kelen ka kɔn i ka diyanyelenw walima i ka portfolio aksiyɔnw ka kalo saba jatebɔ jira ɲɛ"
 }

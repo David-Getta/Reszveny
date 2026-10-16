@@ -2031,4 +2031,47 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get briefRefresh => 'يېڭىلا';
+
+  @override
+  String get sectionEarnings => 'پەسىللىك نەتىجە';
+
+  @override
+  String earningsNext(String date) {
+    return 'كېيىنكى دوكلات: $date';
+  }
+
+  @override
+  String get earningsExpected => 'مۆلچەردىكى EPS';
+
+  @override
+  String get earningsReported => 'ئېلان قىلىنغان EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'ئاخىرقى $total پەسىلدە $beats قېتىم مۆلچەردىكى EPS غا تەڭ ياكى ئۇنىڭدىن يۇقىرى',
+      one: '1 پەسىلدە $beats قېتىم مۆلچەردىكى EPS غا تەڭ ياكى ئۇنىڭدىن يۇقىرى',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol ئەتە پەسىللىك نەتىجىسىنى ئېلان قىلىدۇ';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol بۈگۈن پەسىللىك نەتىجىسىنى ئېلان قىلىدۇ';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'نەتىجە ئەسكەرتىشى';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'يىغقۇچىڭىزدىكى ياكى مەبلەغ بىرىكمىڭىزدىكى پاي چېكلىرى پەسىللىك نەتىجىسىنى ئېلان قىلىشتىن بىر كۈن بۇرۇن ئۇقتۇرۇش';
 }

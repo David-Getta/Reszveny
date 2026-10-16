@@ -549,5 +549,14 @@
   "briefTitle": "Σήμερα με τις μετοχές σας",
   "briefButton": "Σύνοψη ημέρας",
   "briefHint": "Μια σύντομη σύνοψη με AI για το πώς κινήθηκαν σήμερα το χαρτοφυλάκιο και τα αγαπημένα σας και τι λένε τα τελευταία νέα. Δεν καταναλώνει ανάλυση.",
-  "briefRefresh": "Ενημέρωση"
+  "briefRefresh": "Ενημέρωση",
+  "sectionEarnings": "Κέρδη",
+  "earningsNext": "Επόμενη ανακοίνωση: {date}",
+  "earningsExpected": "Αναμενόμενο EPS",
+  "earningsReported": "Ανακοινωμένο EPS",
+  "earningsBeats": "{total, plural, =1{Στο αναμενόμενο EPS ή υψηλότερα σε {beats} από 1 τρίμηνο} other{Στο αναμενόμενο EPS ή υψηλότερα σε {beats} από τα τελευταία {total} τρίμηνα}}",
+  "earningsReminderTomorrow": "{symbol}: τριμηνιαία αποτελέσματα αύριο",
+  "earningsReminderToday": "{symbol}: τριμηνιαία αποτελέσματα σήμερα",
+  "earningsRemindersTitle": "Υπενθυμίσεις αποτελεσμάτων",
+  "earningsRemindersSubtitle": "Ειδοποίηση μία μέρα πριν οι μετοχές από τα αγαπημένα ή το χαρτοφυλάκιό σας ανακοινώσουν τριμηνιαία αποτελέσματα"
 }

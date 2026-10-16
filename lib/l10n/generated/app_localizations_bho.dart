@@ -2024,4 +2024,47 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get briefRefresh => 'अपडेट करीं';
+
+  @override
+  String get sectionEarnings => 'कमाई';
+
+  @override
+  String earningsNext(String date) {
+    return 'अगिला रिपोर्ट: $date';
+  }
+
+  @override
+  String get earningsExpected => 'अनुमानित EPS';
+
+  @override
+  String get earningsReported => 'घोषित EPS';
+
+  @override
+  String earningsBeats(int beats, int total) {
+    String _temp0 = intl.Intl.pluralLogic(
+      total,
+      locale: localeName,
+      other:
+          'पिछला $total तिमाही में से $beats में अनुमानित EPS के बराबर भा ओसे ऊपर',
+      one: '1 तिमाही में से $beats में अनुमानित EPS के बराबर भा ओसे ऊपर',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String earningsReminderTomorrow(String symbol) {
+    return '$symbol: काल्ह तिमाही नतीजा';
+  }
+
+  @override
+  String earningsReminderToday(String symbol) {
+    return '$symbol: आज तिमाही नतीजा';
+  }
+
+  @override
+  String get earningsRemindersTitle => 'नतीजा रिमाइंडर';
+
+  @override
+  String get earningsRemindersSubtitle =>
+      'राउर पसंदीदा भा पोर्टफोलियो के शेयर के तिमाही नतीजा से एक दिन पहिले सूचना';
 }

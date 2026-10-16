@@ -549,5 +549,14 @@
   "briefTitle": "Hoxe coas túas accións",
   "briefButton": "Resumir o día",
   "briefHint": "Un breve resumo con IA de como se moveron hoxe a túa carteira e os teus favoritos e que din deles as últimas novas. Non consome ningunha análise.",
-  "briefRefresh": "Actualizar"
+  "briefRefresh": "Actualizar",
+  "sectionEarnings": "Resultados",
+  "earningsNext": "Próximo informe: {date}",
+  "earningsExpected": "BPA esperado",
+  "earningsReported": "BPA publicado",
+  "earningsBeats": "{total, plural, =1{Igual ou por riba do BPA esperado en {beats} de 1 trimestre} other{Igual ou por riba do BPA esperado en {beats} dos últimos {total} trimestres}}",
+  "earningsReminderTomorrow": "{symbol} presenta resultados trimestrais mañá",
+  "earningsReminderToday": "{symbol} presenta resultados trimestrais hoxe",
+  "earningsRemindersTitle": "Lembretes de resultados",
+  "earningsRemindersSubtitle": "Unha notificación o día antes de que as accións dos teus favoritos ou da túa carteira presenten resultados trimestrais"
 }

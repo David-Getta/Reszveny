@@ -549,5 +549,14 @@
   "briefTitle": "Hoje com as suas ações",
   "briefButton": "Resumir o dia",
   "briefHint": "Um breve resumo com IA de como a sua carteira e os seus favoritos se moveram hoje e do que dizem as últimas notícias sobre eles. Não gasta nenhuma análise.",
-  "briefRefresh": "Atualizar"
+  "briefRefresh": "Atualizar",
+  "sectionEarnings": "Resultados trimestrais",
+  "earningsNext": "Próximo resultado: {date}",
+  "earningsExpected": "LPA esperado",
+  "earningsReported": "LPA divulgado",
+  "earningsBeats": "{total, plural, =1{No LPA esperado ou acima em {beats} de 1 trimestre} other{No LPA esperado ou acima em {beats} dos últimos {total} trimestres}}",
+  "earningsReminderTomorrow": "{symbol} divulga resultados trimestrais amanhã",
+  "earningsReminderToday": "{symbol} divulga resultados trimestrais hoje",
+  "earningsRemindersTitle": "Lembretes de resultados",
+  "earningsRemindersSubtitle": "Uma notificação na véspera da divulgação dos resultados trimestrais das ações dos favoritos ou da carteira"
 }

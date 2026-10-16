@@ -549,5 +549,14 @@
   "briefTitle": "Anio miaraka amin’ny lozamanao",
   "briefButton": "Fintino ny anio",
   "briefHint": "Famintinana fohy amin’ny AI ny fihetsiky ny portefeuille sy ny tianao anio ary izay lazain’ny vaovao farany momba azy ireo. Tsy mampiasa famakafakana.",
-  "briefRefresh": "Havaozina"
+  "briefRefresh": "Havaozina",
+  "sectionEarnings": "Vokatra isan-telovolana",
+  "earningsNext": "Tatitra manaraka: {date}",
+  "earningsExpected": "EPS notombanana",
+  "earningsReported": "EPS navoaka",
+  "earningsBeats": "{total, plural, =1{Nahatratra na nihoatra ny EPS notombanana tamin'ny telovolana {beats} amin'ny 1} other{Nahatratra na nihoatra ny EPS notombanana tamin'ny telovolana {beats} amin'ireo {total} farany}}",
+  "earningsReminderTomorrow": "{symbol}: vokatra isan-telovolana rahampitso",
+  "earningsReminderToday": "{symbol}: vokatra isan-telovolana anio",
+  "earningsRemindersTitle": "Fampahatsiahivana vokatra",
+  "earningsRemindersSubtitle": "Fampandrenesana iray andro alohan'ny hamoahan'ny ankafizinao na ny tahiry ao amin'ny portfolio-nao ny vokatra isan-telovolana"
 }
