@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} ประกาศผลประกอบการรายไตรมาสวันนี้",
   "earningsRemindersTitle": "แจ้งเตือนผลประกอบการ",
   "earningsRemindersSubtitle": "แจ้งเตือนล่วงหน้าหนึ่งวันก่อนที่หุ้นในรายการโปรดหรือพอร์ตของคุณจะประกาศผลประกอบการรายไตรมาส",
-  "addAllToFavorites": "เพิ่มทั้งหมดในรายการโปรด ({count})"
+  "addAllToFavorites": "เพิ่มทั้งหมดในรายการโปรด ({count})",
+  "portfolioImportPhoto": "นำเข้าจากภาพหน้าจอ",
+  "holdingsReading": "กำลังอ่านหุ้นที่คุณถือ…",
+  "holdingsReviewTitle": "รายการหุ้นที่พบ",
+  "holdingsReviewHint": "ตรวจสอบตัวเลขก่อนเพิ่ม ราคาคือราคาซื้อเฉลี่ยต่อหุ้นของคุณ ไม่ใช่ราคาวันนี้",
+  "holdingsNoPrice": "ไม่มีราคาซื้อเฉลี่ยในรูปภาพ",
+  "holdingsAdd": "{count, plural, other{เพิ่มหุ้น {count} รายการ}}",
+  "holdingsNone": "ไม่พบหุ้นที่ถืออยู่ในรูปภาพนี้ ลองใช้ภาพหน้าจอของหน้าพอร์ตหรือหุ้นที่ถือในแอปโบรกเกอร์ของคุณ"
 }

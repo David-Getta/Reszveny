@@ -2070,4 +2070,35 @@ class AppLocalizationsVi extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Thêm tất cả vào yêu thích ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Nhập từ ảnh chụp màn hình';
+
+  @override
+  String get holdingsReading => 'Đang đọc các vị thế của bạn…';
+
+  @override
+  String get holdingsReviewTitle => 'Vị thế tìm thấy';
+
+  @override
+  String get holdingsReviewHint =>
+      'Hãy kiểm tra các con số trước khi thêm. Giá là giá mua trung bình mỗi cổ phiếu của bạn, không phải giá hôm nay.';
+
+  @override
+  String get holdingsNoPrice => 'Không có giá mua trung bình trên ảnh';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Thêm $count vị thế',
+      one: 'Thêm 1 vị thế',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Không tìm thấy vị thế cổ phiếu nào trong ảnh này. Hãy thử ảnh chụp màn hình trang vị thế hoặc danh mục nắm giữ tại công ty môi giới của bạn.';
 }

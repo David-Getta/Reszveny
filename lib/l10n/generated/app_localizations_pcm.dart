@@ -2076,4 +2076,35 @@ class AppLocalizationsPcm extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Add all of dem to favourites ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Import from screenshot';
+
+  @override
+  String get holdingsReading => 'We dey read your positions…';
+
+  @override
+  String get holdingsReviewTitle => 'Positions wey we find';
+
+  @override
+  String get holdingsReviewHint =>
+      'Check di numbers before you add dem. Di price na your average buying price for each share, no be today price.';
+
+  @override
+  String get holdingsNoPrice => 'No average buying price for di picture';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Add $count positions',
+      one: 'Add $count position',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'We no see any stock position for dis picture. Try screenshot of di positions or holdings page for your broker app.';
 }

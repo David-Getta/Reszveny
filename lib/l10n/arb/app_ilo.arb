@@ -559,5 +559,12 @@
   "earningsReminderToday": "Iwaragawag ti {symbol} ti kada-kuarter a resulta ita nga aldaw",
   "earningsRemindersTitle": "Pammalagip ti resulta",
   "earningsRemindersSubtitle": "Pakaammo iti aldaw sakbay nga iwaragawag dagiti stock iti paboritom wenno portfoliom ti kada-kuarter a resultada",
-  "addAllToFavorites": "Inayon amin kadagiti paborito ({count})"
+  "addAllToFavorites": "Inayon amin kadagiti paborito ({count})",
+  "portfolioImportPhoto": "I-import manipud iti screenshot",
+  "holdingsReading": "Basbasaen dagiti posisionmo…",
+  "holdingsReviewTitle": "Dagiti nasarakan a posision",
+  "holdingsReviewHint": "Kitaem dagiti numero sakbay nga inayonmo. Ti presio ket ti average a presio ti gatangmo iti tunggal share, saan a ti presio ita nga aldaw.",
+  "holdingsNoPrice": "Awan ti average a presio ti gatang iti ladawan",
+  "holdingsAdd": "{count, plural, =1{Inayon ti 1 a posision} other{Inayon ti {count} a posision}}",
+  "holdingsNone": "Awan ti nasarakan a posision ti stock iti daytoy a ladawan. Padasem ti screenshot ti panid dagiti posision wenno holdings iti brokermo."
 }

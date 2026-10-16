@@ -2075,4 +2075,35 @@ class AppLocalizationsHt extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Ajoute tout nan favori ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Enpòte soti nan yon kapti ekran';
+
+  @override
+  String get holdingsReading => 'N ap li pozisyon ou yo…';
+
+  @override
+  String get holdingsReviewTitle => 'Pozisyon nou jwenn';
+
+  @override
+  String get holdingsReviewHint =>
+      'Verifye chif yo anvan ou ajoute yo. Pri a se pri acha mwayen ou pou chak aksyon, se pa pri jodi a.';
+
+  @override
+  String get holdingsNoPrice => 'Pa gen pri acha mwayen sou imaj la';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ajoute $count pozisyon',
+      one: 'Ajoute 1 pozisyon',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Nou pa jwenn okenn pozisyon aksyon sou imaj sa a. Eseye yon kapti ekran paj pozisyon koutye ou a.';
 }

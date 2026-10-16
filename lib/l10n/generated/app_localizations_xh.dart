@@ -2085,4 +2085,36 @@ class AppLocalizationsXh extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Yongeza konke kwezithandwayo ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Ngenisa ukusuka kumfanekiso wesikrini';
+
+  @override
+  String get holdingsReading => 'Ifunda izabelo zakho…';
+
+  @override
+  String get holdingsReviewTitle => 'Izabelo ezifunyenweyo';
+
+  @override
+  String get holdingsReviewHint =>
+      'Jonga amanani phambi kokuba uwongeze. Ixabiso lixabiso lakho eliphakathi lokuthenga ngesabelo ngasinye, ingelilo ixabiso lanamhlanje.';
+
+  @override
+  String get holdingsNoPrice =>
+      'Akukho xabiso liphakathi lokuthenga emfanekisweni';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Yongeza izabelo ezi-$count',
+      one: 'Yongeza isabelo esinye',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Akukho zabelo zifunyenweyo kulo mfanekiso. Zama umfanekiso wesikrini wephepha lezabelo okanye lezinto ozibambileyo kwibhrokha yakho.';
 }

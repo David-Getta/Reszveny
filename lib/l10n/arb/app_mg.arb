@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol}: vokatra isan-telovolana anio",
   "earningsRemindersTitle": "Fampahatsiahivana vokatra",
   "earningsRemindersSubtitle": "Fampandrenesana iray andro alohan'ny hamoahan'ny ankafizinao na ny tahiry ao amin'ny portfolio-nao ny vokatra isan-telovolana",
-  "addAllToFavorites": "Ampio daholo amin'ny ankafizina ({count})"
+  "addAllToFavorites": "Ampio daholo amin'ny ankafizina ({count})",
+  "portfolioImportPhoto": "Ampidiro avy amin'ny sary efijery",
+  "holdingsReading": "Mamaky ny fanananao…",
+  "holdingsReviewTitle": "Fananana hita",
+  "holdingsReviewHint": "Hamarino ny isa alohan'ny hampidiranao azy. Ny vidiny dia ny salan'ny vidin'ny fividiananao isaky ny anjara, fa tsy ny vidiny androany.",
+  "holdingsNoPrice": "Tsy misy salan'ny vidin'ny fividianana ao amin'ny sary",
+  "holdingsAdd": "{count, plural, =1{Ampio fananana 1} other{Ampio fananana {count}}}",
+  "holdingsNone": "Tsy nisy fananana anjara hita tamin'ity sary ity. Andramo ny sary efijery amin'ny pejin'ny fanananao ao amin'ny broker-nao."
 }

@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} dina génne njureefam yu ñetti weer tey",
   "earningsRemindersTitle": "Fàttali njureef",
   "earningsRemindersSubtitle": "Yégle benn bés balaa aksioŋ yi nga gënal walla yi nekk ci sa portfolio di génne seen njureef yu ñetti weer",
-  "addAllToFavorites": "Yokk yépp ci yi ma gënal ({count})"
+  "addAllToFavorites": "Yokk yépp ci yi ma gënal ({count})",
+  "portfolioImportPhoto": "Duggal ko ci nataalu ekraan",
+  "holdingsReading": "Ñu ngi jàng sa aksiyoŋ yi…",
+  "holdingsReviewTitle": "Aksiyoŋ yi ñu gis",
+  "holdingsReviewHint": "Seetal lim yi balaa nga leen yokk. Njëg gi mooy sa njëgu jënd bu diggu ci benn aksiyoŋ, du njëgu tey.",
+  "holdingsNoPrice": "Amul njëgu jënd bu diggu ci nataal bi",
+  "holdingsAdd": "{count, plural, =1{Yokk 1 aksiyoŋ} other{Yokk {count} aksiyoŋ}}",
+  "holdingsNone": "Gisuñu benn aksiyoŋ ci nataal bii. Jéemal nataalu ekraan bu xëtu aksiyoŋ yi walla alal ji ci sa kurtiye."
 }

@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} le ɣleti etɔ̃ ƒe akɔntabubu ɖem ɖe go egbe",
   "earningsRemindersTitle": "Akɔntabubu ŋuti ŋkuɖodziwo",
   "earningsRemindersSubtitle": "Gbeƒãɖeɖe ŋkeke ɖeka do ŋgɔ na esime wò lɔlɔ̃tɔwo alo wò portfolio me gadzraɖoƒenyawo naɖe ɣleti etɔ̃ ƒe akɔntabubu ɖe go",
-  "addAllToFavorites": "Tsɔ wo katã kpe ɖe nye lɔlɔ̃tɔwo ŋu ({count})"
+  "addAllToFavorites": "Tsɔ wo katã kpe ɖe nye lɔlɔ̃tɔwo ŋu ({count})",
+  "portfolioImportPhoto": "Xɔe tso screenshot me",
+  "holdingsReading": "Míele akpa siwo le asiwò xlẽm…",
+  "holdingsReviewTitle": "Akpa siwo míekpɔ",
+  "holdingsReviewHint": "Kpɔ xexlẽdzesiawo ɖa hafi atsɔ wo akpe ɖe eŋu. Asi la nye asi titina si nèxe ɖe akpa ɖeka ta, menye egbe ƒe asi o.",
+  "holdingsNoPrice": "Asi titina si nèxe mele nɔnɔmetata la dzi o",
+  "holdingsAdd": "{count, plural, =1{Tsɔ akpa 1 kpe ɖe eŋu} other{Tsɔ akpa {count} kpe ɖe eŋu}}",
+  "holdingsNone": "Míekpɔ akpa aɖeke le nɔnɔmetata sia dzi o. Te screenshot si wòɖe le wò broker ƒe akpa siwo le asiwò ƒe axa dzi kpɔ."
 }

@@ -2080,4 +2080,35 @@ class AppLocalizationsUz extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Barchasini sevimlilarga qoʻshish ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Skrinshotdan import qilish';
+
+  @override
+  String get holdingsReading => 'Pozitsiyalaringiz oʻqilmoqda…';
+
+  @override
+  String get holdingsReviewTitle => 'Topilgan pozitsiyalar';
+
+  @override
+  String get holdingsReviewHint =>
+      'Qoʻshishdan oldin raqamlarni tekshiring. Narx — bitta aksiya uchun oʻrtacha xarid narxingiz, bugungi narx emas.';
+
+  @override
+  String get holdingsNoPrice => 'Rasmda oʻrtacha xarid narxi yoʻq';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ta pozitsiya qoʻshish',
+      one: '1 ta pozitsiya qoʻshish',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Bu rasmda aksiya pozitsiyalari topilmadi. Brokeringizdagi pozitsiyalar yoki aktivlar sahifasining skrinshotini sinab koʻring.';
 }

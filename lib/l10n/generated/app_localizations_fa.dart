@@ -2073,4 +2073,35 @@ class AppLocalizationsFa extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'افزودن همه به علاقه‌مندی‌ها ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'وارد کردن از اسکرین‌شات';
+
+  @override
+  String get holdingsReading => 'در حال خواندن موقعیت‌های شما…';
+
+  @override
+  String get holdingsReviewTitle => 'موقعیت‌های یافت‌شده';
+
+  @override
+  String get holdingsReviewHint =>
+      'پیش از افزودن، اعداد را بررسی کنید. قیمت، میانگین بهای خرید شما برای هر سهم است، نه قیمت امروز.';
+
+  @override
+  String get holdingsNoPrice => 'میانگین بهای خرید در تصویر نیست';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'افزودن $count موقعیت',
+      one: 'افزودن 1 موقعیت',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'هیچ موقعیت سهامی در این تصویر یافت نشد. یک اسکرین‌شات از صفحهٔ موقعیت‌ها یا دارایی‌های کارگزارتان را امتحان کنید.';
 }

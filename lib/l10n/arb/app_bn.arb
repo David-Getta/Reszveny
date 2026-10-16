@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} আজ ত্রৈমাসিক ফলাফল প্রকাশ করবে",
   "earningsRemindersTitle": "ফলাফলের রিমাইন্ডার",
   "earningsRemindersSubtitle": "আপনার পছন্দের বা পোর্টফোলিওর শেয়ারের ত্রৈমাসিক ফলাফল প্রকাশের আগের দিন একটি বিজ্ঞপ্তি",
-  "addAllToFavorites": "সব পছন্দের তালিকায় যোগ করুন ({count})"
+  "addAllToFavorites": "সব পছন্দের তালিকায় যোগ করুন ({count})",
+  "portfolioImportPhoto": "স্ক্রিনশট থেকে ইমপোর্ট করুন",
+  "holdingsReading": "আপনার অবস্থান পড়া হচ্ছে…",
+  "holdingsReviewTitle": "পাওয়া অবস্থান",
+  "holdingsReviewHint": "যোগ করার আগে সংখ্যাগুলো যাচাই করুন। দামটি আজকের দাম নয়, প্রতি শেয়ারে আপনার গড় ক্রয়মূল্য।",
+  "holdingsNoPrice": "ছবিতে গড় ক্রয়মূল্য নেই",
+  "holdingsAdd": "{count, plural, =1{1টি অবস্থান যোগ করুন} other{{count}টি অবস্থান যোগ করুন}}",
+  "holdingsNone": "এই ছবিতে কোনো শেয়ার অবস্থান পাওয়া যায়নি। আপনার ব্রোকারের পজিশন বা হোল্ডিংস পৃষ্ঠার একটি স্ক্রিনশট চেষ্টা করুন।"
 }

@@ -2115,4 +2115,36 @@ class AppLocalizationsLv extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Pievienot visas izlasei ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Importēt no ekrānuzņēmuma';
+
+  @override
+  String get holdingsReading => 'Nolasa tavas pozīcijas…';
+
+  @override
+  String get holdingsReviewTitle => 'Atrastās pozīcijas';
+
+  @override
+  String get holdingsReviewHint =>
+      'Pirms pievienošanas pārbaudi skaitļus. Cena ir tava vidējā pirkuma cena par vienu akciju, nevis šodienas cena.';
+
+  @override
+  String get holdingsNoPrice => 'Attēlā nav vidējās pirkuma cenas';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Pievienot $count pozīcijas',
+      one: 'Pievienot $count pozīciju',
+      zero: 'Pievienot $count pozīcijas',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Šajā attēlā netika atrastas akciju pozīcijas. Izmēģini ekrānuzņēmumu no sava brokera pozīciju vai aktīvu lapas.';
 }

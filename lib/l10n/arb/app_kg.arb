@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} ke basisa ba résultats ya trimestre bubu",
   "earningsRemindersTitle": "Kiyibusu ya ba résultats",
   "earningsRemindersSubtitle": "Nkebisu kilumbu mosi na ntwala nde ba actions ya bizolwa na nge to ya portefeuille na nge kubasisa ba résultats ya trimestre",
-  "addAllToFavorites": "Yika yonso mu bizolwa ({count})"
+  "addAllToFavorites": "Yika yonso mu bizolwa ({count})",
+  "portfolioImportPhoto": "Kotisa katuka na foto ya ekrani",
+  "holdingsReading": "Kutanga bitini ya nge…",
+  "holdingsReviewTitle": "Bitini yina me monana",
+  "holdingsReviewHint": "Tala bantalu na ntwala ya kukotisa yo. Ntalu kele ntalu ya kati-kati ya nge ya kusumba kitini mosi, ve ntalu ya bubu.",
+  "holdingsNoPrice": "Ntalu ya kati-kati ya kusumba kele ve na kifwani",
+  "holdingsAdd": "{count, plural, =1{Yika kitini 1} other{Yika bitini {count}}}",
+  "holdingsNone": "Bitini ya action me monana ve na kifwani yai. Meka foto ya ekrani ya lukaya ya bitini na nge na application ya courtier na nge."
 }

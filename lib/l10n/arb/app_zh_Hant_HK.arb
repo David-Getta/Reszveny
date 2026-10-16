@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} 今日公布季度業績",
   "earningsRemindersTitle": "業績提示",
   "earningsRemindersSubtitle": "在你收藏或持倉的股票公布季度業績前一日發出通知",
-  "addAllToFavorites": "全部加入收藏 ({count})"
+  "addAllToFavorites": "全部加入收藏 ({count})",
+  "portfolioImportPhoto": "從截圖匯入",
+  "holdingsReading": "正在讀取你的持倉…",
+  "holdingsReviewTitle": "找到的持倉",
+  "holdingsReviewHint": "加入前請核對數字。價格是你每股的平均買入價，而非今日價格。",
+  "holdingsNoPrice": "圖片中沒有平均買入價",
+  "holdingsAdd": "{count, plural, =1{加入 1 個持倉} other{加入 {count} 個持倉}}",
+  "holdingsNone": "此圖片中找不到股票持倉。請試用券商持倉頁面的截圖。"
 }

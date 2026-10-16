@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} ilengeza zotsatira za kotala lero",
   "earningsRemindersTitle": "Zikumbutso za zotsatira",
   "earningsRemindersSubtitle": "Chidziwitso tsiku limodzi zokondedwa zanu kapena masheya a mu portfolio yanu asanalengeze zotsatira za kotala",
-  "addAllToFavorites": "Onjezani zonse ku zokondedwa ({count})"
+  "addAllToFavorites": "Onjezani zonse ku zokondedwa ({count})",
+  "portfolioImportPhoto": "Lowetsani kuchokera pa chithunzi cha sikirini",
+  "holdingsReading": "Tikuwerenga masheya anu…",
+  "holdingsReviewTitle": "Masheya opezeka",
+  "holdingsReviewHint": "Yang'anani manambala musanawonjezere. Mtengo ndi mtengo wanu wapakati wogulira pa sheya iliyonse, osati mtengo wa lero.",
+  "holdingsNoPrice": "Palibe mtengo wapakati wogulira pa chithunzi",
+  "holdingsAdd": "{count, plural, =1{Wonjezerani sheya 1} other{Wonjezerani masheya {count}}}",
+  "holdingsNone": "Sitinapeze masheya pa chithunzi ichi. Yesani chithunzi cha sikirini cha tsamba la masheya a broker wanu."
 }

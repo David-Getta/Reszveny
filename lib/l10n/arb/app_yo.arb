@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} ń kéde àbájáde ìdámẹ́rin ọdún lónìí",
   "earningsRemindersTitle": "Ìránnilétí àbájáde",
   "earningsRemindersSubtitle": "Ìfitónilétí ní ọjọ́ kan ṣáájú kí àwọn ìpín ààyò rẹ tàbí ti pọ́tífólíò rẹ tó kéde àbájáde ìdámẹ́rin ọdún",
-  "addAllToFavorites": "Fi gbogbo rẹ̀ kún àwọn ààyò ({count})"
+  "addAllToFavorites": "Fi gbogbo rẹ̀ kún àwọn ààyò ({count})",
+  "portfolioImportPhoto": "Gbé wọlé láti inú àwòrán ojú-ìbojú",
+  "holdingsReading": "À ń ka àwọn ìpín rẹ…",
+  "holdingsReviewTitle": "Àwọn ìpín tí a rí",
+  "holdingsReviewHint": "Ṣàyẹ̀wò àwọn nọ́mbà kí o tó fi wọ́n kún un. Iye owó náà ni iye owó ìrajà àpapọ̀ rẹ fún ìpín kọ̀ọ̀kan, kì í ṣe iye owó òní.",
+  "holdingsNoPrice": "Kò sí iye owó ìrajà àpapọ̀ lórí àwòrán náà",
+  "holdingsAdd": "{count, plural, =1{Fi ìpín 1 kún un} other{Fi ìpín {count} kún un}}",
+  "holdingsNone": "A kò rí ìpín kankan lórí àwòrán yìí. Gbìyànjú àwòrán ojú-ìbojú ti ojú-ewé ìpín tàbí dúkìá rẹ lọ́dọ̀ alágbàtà rẹ."
 }

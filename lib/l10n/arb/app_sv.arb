@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} släpper kvartalsrapport i dag",
   "earningsRemindersTitle": "Rapportpåminnelser",
   "earningsRemindersSubtitle": "En notis dagen innan dina favoriter eller portföljaktier släpper kvartalsrapport",
-  "addAllToFavorites": "Lägg till alla i favoriter ({count})"
+  "addAllToFavorites": "Lägg till alla i favoriter ({count})",
+  "portfolioImportPhoto": "Importera från en skärmbild",
+  "holdingsReading": "Läser in dina innehav…",
+  "holdingsReviewTitle": "Hittade innehav",
+  "holdingsReviewHint": "Kontrollera siffrorna innan du lägger till dem. Priset är ditt genomsnittliga köppris per aktie, inte dagens kurs.",
+  "holdingsNoPrice": "Inget genomsnittligt köppris på bilden",
+  "holdingsAdd": "{count, plural, =1{Lägg till 1 innehav} other{Lägg till {count} innehav}}",
+  "holdingsNone": "Inga aktieinnehav hittades på den här bilden. Prova en skärmbild av innehavssidan hos din mäklare."
 }

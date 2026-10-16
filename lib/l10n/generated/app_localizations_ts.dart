@@ -2088,4 +2088,37 @@ class AppLocalizationsTs extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Engetela hinkwaswo eka leswi u swi rhandzaka ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto =>
+      'Nghenisa ku suka eka xifaniso xa xikirini';
+
+  @override
+  String get holdingsReading => 'Hi hlaya tiphozixini ta wena…';
+
+  @override
+  String get holdingsReviewTitle => 'Tiphozixini leti kumekeke';
+
+  @override
+  String get holdingsReviewHint =>
+      'Kambela tinomboro u nga si ti engetela. Nxavo i nxavo wa wena wa le xikarhi wa ku xava hi xiave xin\'we, ku nga ri nxavo wa namuntlha.';
+
+  @override
+  String get holdingsNoPrice =>
+      'A ku na nxavo wa le xikarhi wa ku xava eka xifaniso';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Engetela tiphozixini ta $count',
+      one: 'Engetela phozixini yin\'we',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'A ku kumekanga tiphozixini ta swiave eka xifaniso lexi. Ringeta xifaniso xa xikirini xa pheji ya tiphozixini kumbe rifuwo eka brokara wa wena.';
 }

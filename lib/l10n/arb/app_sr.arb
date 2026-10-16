@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} данас објављује кварталне резултате",
   "earningsRemindersTitle": "Подсетници за резултате",
   "earningsRemindersSubtitle": "Обавештење дан пре него што акције из омиљених или твог портфолија објаве кварталне резултате",
-  "addAllToFavorites": "Додај све у омиљене ({count})"
+  "addAllToFavorites": "Додај све у омиљене ({count})",
+  "portfolioImportPhoto": "Увези са снимка екрана",
+  "holdingsReading": "Читање ваших позиција…",
+  "holdingsReviewTitle": "Пронађене позиције",
+  "holdingsReviewHint": "Проверите бројеве пре него што их додате. Цена је ваша просечна набавна цена по акцији, а не данашња цена.",
+  "holdingsNoPrice": "На слици нема просечне набавне цене",
+  "holdingsAdd": "{count, plural, one{Додај {count} позицију} few{Додај {count} позиције} other{Додај {count} позиција}}",
+  "holdingsNone": "На овој слици нису пронађене позиције у акцијама. Пробајте снимак екрана странице са позицијама или имовином код вашег брокера."
 }

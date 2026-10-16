@@ -2133,4 +2133,37 @@ class AppLocalizationsSl extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Dodaj vse med priljubljene ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Uvozi s posnetka zaslona';
+
+  @override
+  String get holdingsReading => 'Branje pozicij …';
+
+  @override
+  String get holdingsReviewTitle => 'Najdene pozicije';
+
+  @override
+  String get holdingsReviewHint =>
+      'Preverite številke, preden jih dodate. Cena je vaša povprečna nakupna cena na delnico, ne današnja cena.';
+
+  @override
+  String get holdingsNoPrice => 'Na sliki ni povprečne nakupne cene';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Dodaj $count pozicij',
+      few: 'Dodaj $count pozicije',
+      two: 'Dodaj $count poziciji',
+      one: 'Dodaj $count pozicijo',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Na tej sliki nismo našli delniških pozicij. Poskusite s posnetkom zaslona strani s pozicijami ali portfeljem pri vašem borznem posredniku.';
 }

@@ -2040,4 +2040,35 @@ class AppLocalizationsTi extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'ኩሉ ናብ ዝተፈተዉ ወስኽ ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'ካብ ስእሊ ስክሪን ኣእቱ';
+
+  @override
+  String get holdingsReading => 'ኣክስዮናትካ ይንበቡ ኣለዉ…';
+
+  @override
+  String get holdingsReviewTitle => 'ዝተረኽቡ ኣክስዮናት';
+
+  @override
+  String get holdingsReviewHint =>
+      'ቅድሚ ምውሳኽካ ቍጽርታት ኣረጋግጽ። ዋጋ እቲ ንሓንቲ ኣክስዮን ዝኸፈልካዮ ማእከላይ ዋጋ ዕድጊ እዩ፡ ናይ ሎሚ ዋጋ ኣይኮነን።';
+
+  @override
+  String get holdingsNoPrice => 'ኣብቲ ስእሊ ማእከላይ ዋጋ ዕድጊ የለን';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ኣክስዮናት ወስኽ',
+      one: '1 ኣክስዮን ወስኽ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'ኣብዚ ስእሊ ዝኾነ ኣክስዮን ኣይተረኽበን። ናይ ደላላኻ ገጽ ኣክስዮናት ስእሊ ስክሪን ፈትን።';
 }

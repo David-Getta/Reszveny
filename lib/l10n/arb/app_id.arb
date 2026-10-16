@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} merilis laporan kuartalan hari ini",
   "earningsRemindersTitle": "Pengingat laporan kuartalan",
   "earningsRemindersSubtitle": "Notifikasi sehari sebelum saham di favorit atau portofoliomu merilis laporan kuartalan",
-  "addAllToFavorites": "Tambahkan semua ke favorit ({count})"
+  "addAllToFavorites": "Tambahkan semua ke favorit ({count})",
+  "portfolioImportPhoto": "Impor dari tangkapan layar",
+  "holdingsReading": "Membaca posisimu…",
+  "holdingsReviewTitle": "Posisi ditemukan",
+  "holdingsReviewHint": "Periksa angkanya sebelum menambahkan. Harga ini adalah harga beli rata-ratamu per saham, bukan harga hari ini.",
+  "holdingsNoPrice": "Tidak ada harga beli rata-rata di gambar",
+  "holdingsAdd": "{count, plural, =1{Tambahkan 1 posisi} other{Tambahkan {count} posisi}}",
+  "holdingsNone": "Tidak ada posisi saham di gambar ini. Coba tangkapan layar halaman posisi atau portofolio di aplikasi brokermu."
 }

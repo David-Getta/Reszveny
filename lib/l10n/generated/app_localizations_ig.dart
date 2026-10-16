@@ -2072,4 +2072,35 @@ class AppLocalizationsIg extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Tinye ha niile n\'ọkacha mmasị ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Bubata site na foto ihuenyo';
+
+  @override
+  String get holdingsReading => 'Na-agụ òkè gị…';
+
+  @override
+  String get holdingsReviewTitle => 'Òkè achọtara';
+
+  @override
+  String get holdingsReviewHint =>
+      'Lelee ọnụọgụ ndị a tupu ịgbakwunye ha. Ọnụahịa bụ ọnụahịa nkezi i ji zụta otu òkè, ọ bụghị ọnụahịa taa.';
+
+  @override
+  String get holdingsNoPrice => 'Enweghị ọnụahịa nkezi ịzụrụ na onyonyo a';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Gbakwunye òkè $count',
+      one: 'Gbakwunye òkè 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Achọtaghị òkè ahịa ọ bụla na onyonyo a. Nwalee foto ihuenyo nke peeji òkè gị n\'ime ngwa onye na-ere ahịa òkè gị.';
 }

@@ -31,6 +31,7 @@ import 'package:reszveny/features/billing/demo_billing_service.dart';
 import 'package:reszveny/features/billing/entitlement_service.dart';
 import 'package:reszveny/features/billing/plan.dart';
 import 'package:reszveny/features/capture/capture_service.dart';
+import 'package:reszveny/features/portfolio/holdings_reader.dart';
 import 'package:reszveny/features/home/quick_bar.dart';
 import 'package:reszveny/features/alerts/price_alert.dart';
 import 'package:reszveny/features/fx/fx_service.dart';
@@ -103,6 +104,32 @@ AlertStore _sampleAlerts() => AlertStore(
   ],
 );
 
+/// A galéria helyett egy apró kép (képernyőképes portfólió-import).
+class _ShotCapture extends CaptureService {
+  @override
+  Future<CapturedImage?> fromGallery() async =>
+      CapturedImage(bytes: Uint8List.fromList([1, 2, 3]), mimeType: 'image/png');
+}
+
+/// Egy bróker-képernyőkép minta-beolvasása.
+class _ShotReader extends HoldingsReader {
+  _ShotReader() : super(config: const AppConfig());
+
+  @override
+  Future<List<ReadHolding>> read(CapturedImage image) async => const [
+    ReadHolding(symbol: 'AAPL', companyName: 'Apple Inc.', quantity: 12, averagePrice: 150.2, currency: 'USD'),
+    ReadHolding(
+      symbol: 'MSFT',
+      companyName: 'Microsoft Corporation',
+      quantity: 4,
+      averagePrice: 402.5,
+      currency: 'USD',
+    ),
+    ReadHolding(symbol: 'NVDA', companyName: 'NVIDIA Corporation', quantity: 20, averagePrice: 96.1, currency: 'USD'),
+    ReadHolding(symbol: 'OTP', companyName: 'OTP Bank', quantity: 15),
+  ];
+}
+
 AppServices _services({
   ThemeMode mode = ThemeMode.dark,
   Locale? locale,
@@ -114,6 +141,8 @@ AppServices _services({
   String? email,
   AnalysisChat? chat,
   bool store = false,
+  CaptureService? capture,
+  HoldingsReader? holdingsReader,
 }) {
   final ent = _entitlements();
   // Backend-módban fiók kártya és jogi linkek; a szerver egy utánzat.
@@ -134,7 +163,8 @@ AppServices _services({
           )
         : null,
     accountEmail: email,
-    capture: CaptureService(),
+    capture: capture ?? CaptureService(),
+    holdingsReader: holdingsReader,
     recognizer: _NoRecognizer(),
     marketData: DemoMarketDataProvider(latency: Duration.zero),
     locale: LocaleController(initial: locale),
@@ -730,6 +760,21 @@ void main() {
     await tester.tap(peg);
     await tester.pumpAndSettle();
     await _shot(tester, 'metric_explained_phone_hu');
+  });
+
+  testWidgets('portfolio import from a screenshot on a phone (hungarian)', (tester) async {
+    await pumpApp(
+      tester,
+      _services(locale: const Locale('hu'), capture: _ShotCapture(), holdingsReader: _ShotReader()),
+      const Size(430, 1000),
+    );
+    await tester.tap(find.text('Portfólió').last);
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('portfolio-empty-photo')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('holdings-pick')));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'holdings_review_phone_hu');
   });
 
   testWidgets('earnings card on a phone (hungarian)', (tester) async {

@@ -2075,4 +2075,35 @@ class AppLocalizationsKab extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Rnu akk ɣer yismenyifen ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Kter seg tuṭṭfa n wegdil';
+
+  @override
+  String get holdingsReading => 'Taɣuri n yimukan-ik…';
+
+  @override
+  String get holdingsReviewTitle => 'Imukan yettwafen';
+
+  @override
+  String get holdingsReviewHint =>
+      'Senqed imḍanen send ad ten-ternuḍ. Ssuma d ssuma talemmast n tɣin i yal asehmi, mačči d ssuma n wass-a.';
+
+  @override
+  String get holdingsNoPrice => 'Ulac ssuma talemmast n tɣin deg tugna';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Rnu $count n yimukan',
+      one: 'Rnu 1 n wadeg',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Ulac imukan n yisehmiyen i yettwafen deg tugna-a. Ɛreḍ tuṭṭfa n wegdil n usebter n yimukan deg usnas n umsenzi-ik.';
 }

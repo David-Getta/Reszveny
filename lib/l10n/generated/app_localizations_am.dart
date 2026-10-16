@@ -2046,4 +2046,35 @@ class AppLocalizationsAm extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'ሁሉንም ወደ ተወዳጆች አክል ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'ከቅጽበታዊ ገጽ እይታ አስመጣ';
+
+  @override
+  String get holdingsReading => 'ይዞታዎችዎን በማንበብ ላይ…';
+
+  @override
+  String get holdingsReviewTitle => 'የተገኙ ይዞታዎች';
+
+  @override
+  String get holdingsReviewHint =>
+      'ከማከልዎ በፊት ቁጥሮቹን ያረጋግጡ። ዋጋው የዛሬው ዋጋ ሳይሆን በአክሲዮን አማካይ የግዢ ዋጋዎ ነው።';
+
+  @override
+  String get holdingsNoPrice => 'በምስሉ ላይ አማካይ የግዢ ዋጋ የለም';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ይዞታዎችን አክል',
+      one: '1 ይዞታ አክል',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'በዚህ ምስል ላይ ምንም የአክሲዮን ይዞታ አልተገኘም። የደላላዎን የይዞታዎች ገጽ ቅጽበታዊ ገጽ እይታ ይሞክሩ።';
 }

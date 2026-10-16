@@ -2081,4 +2081,35 @@ class AppLocalizationsHa extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Ƙara duka zuwa abubuwan da aka fi so ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Shigo da daga hoton allo';
+
+  @override
+  String get holdingsReading => 'Ana karanta hannayen jarinka…';
+
+  @override
+  String get holdingsReviewTitle => 'Hannayen jari da aka samu';
+
+  @override
+  String get holdingsReviewHint =>
+      'Duba lambobin kafin ka ƙara su. Farashin shi ne matsakaicin farashin sayenka na kowane hannun jari, ba farashin yau ba.';
+
+  @override
+  String get holdingsNoPrice => 'Babu matsakaicin farashin saye a hoton';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ƙara hannayen jari $count',
+      one: 'Ƙara hannun jari 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Ba a sami hannayen jari a wannan hoton ba. Gwada hoton allo na shafin hannayen jarinka a manhajar dillalinka.';
 }

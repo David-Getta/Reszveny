@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} сёння публікуе квартальныя вынікі",
   "earningsRemindersTitle": "Напаміны пра вынікі",
   "earningsRemindersSubtitle": "Апавяшчэнне за дзень да таго, як акцыі з вашага абранага або партфеля апублікуюць квартальныя вынікі",
-  "addAllToFavorites": "Дадаць усе ў абранае ({count})"
+  "addAllToFavorites": "Дадаць усе ў абранае ({count})",
+  "portfolioImportPhoto": "Імпартаваць са здымка экрана",
+  "holdingsReading": "Чытаем вашы пазіцыі…",
+  "holdingsReviewTitle": "Знойдзеныя пазіцыі",
+  "holdingsReviewHint": "Праверце лічбы, перш чым дадаваць іх. Цана — гэта ваша сярэдняя цана пакупкі адной акцыі, а не сённяшняя цана.",
+  "holdingsNoPrice": "На выяве няма сярэдняй цаны пакупкі",
+  "holdingsAdd": "{count, plural, one{Дадаць {count} пазіцыю} few{Дадаць {count} пазіцыі} many{Дадаць {count} пазіцый} other{Дадаць {count} пазіцыі}}",
+  "holdingsNone": "На гэтай выяве не знойдзена пазіцый па акцыях. Паспрабуйце здымак экрана старонкі пазіцый або актываў у вашага брокера."
 }

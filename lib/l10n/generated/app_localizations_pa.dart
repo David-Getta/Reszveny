@@ -2072,4 +2072,35 @@ class AppLocalizationsPa extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'ਸਾਰੇ ਮਨਪਸੰਦ ਵਿੱਚ ਸ਼ਾਮਲ ਕਰੋ ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'ਸਕ੍ਰੀਨਸ਼ਾਟ ਤੋਂ ਆਯਾਤ ਕਰੋ';
+
+  @override
+  String get holdingsReading => 'ਤੁਹਾਡੀਆਂ ਪੁਜ਼ੀਸ਼ਨਾਂ ਪੜ੍ਹੀਆਂ ਜਾ ਰਹੀਆਂ ਹਨ…';
+
+  @override
+  String get holdingsReviewTitle => 'ਮਿਲੀਆਂ ਪੁਜ਼ੀਸ਼ਨਾਂ';
+
+  @override
+  String get holdingsReviewHint =>
+      'ਜੋੜਨ ਤੋਂ ਪਹਿਲਾਂ ਅੰਕਾਂ ਦੀ ਜਾਂਚ ਕਰੋ। ਕੀਮਤ ਪ੍ਰਤੀ ਸ਼ੇਅਰ ਤੁਹਾਡੀ ਔਸਤ ਖ਼ਰੀਦ ਕੀਮਤ ਹੈ, ਅੱਜ ਦੀ ਕੀਮਤ ਨਹੀਂ।';
+
+  @override
+  String get holdingsNoPrice => 'ਚਿੱਤਰ ਵਿੱਚ ਕੋਈ ਔਸਤ ਖ਼ਰੀਦ ਕੀਮਤ ਨਹੀਂ';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ਪੁਜ਼ੀਸ਼ਨਾਂ ਜੋੜੋ',
+      one: '1 ਪੁਜ਼ੀਸ਼ਨ ਜੋੜੋ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'ਇਸ ਚਿੱਤਰ ਵਿੱਚ ਕੋਈ ਸ਼ੇਅਰ ਪੁਜ਼ੀਸ਼ਨ ਨਹੀਂ ਮਿਲੀ। ਆਪਣੇ ਬ੍ਰੋਕਰ ਦੇ ਪੁਜ਼ੀਸ਼ਨ ਜਾਂ ਹੋਲਡਿੰਗਜ਼ ਪੰਨੇ ਦਾ ਸਕ੍ਰੀਨਸ਼ਾਟ ਅਜ਼ਮਾਓ।';
 }

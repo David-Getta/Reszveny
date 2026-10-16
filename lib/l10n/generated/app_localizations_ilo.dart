@@ -2092,4 +2092,36 @@ class AppLocalizationsIlo extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Inayon amin kadagiti paborito ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'I-import manipud iti screenshot';
+
+  @override
+  String get holdingsReading => 'Basbasaen dagiti posisionmo…';
+
+  @override
+  String get holdingsReviewTitle => 'Dagiti nasarakan a posision';
+
+  @override
+  String get holdingsReviewHint =>
+      'Kitaem dagiti numero sakbay nga inayonmo. Ti presio ket ti average a presio ti gatangmo iti tunggal share, saan a ti presio ita nga aldaw.';
+
+  @override
+  String get holdingsNoPrice =>
+      'Awan ti average a presio ti gatang iti ladawan';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Inayon ti $count a posision',
+      one: 'Inayon ti 1 a posision',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Awan ti nasarakan a posision ti stock iti daytoy a ladawan. Padasem ti screenshot ti panid dagiti posision wenno holdings iti brokermo.';
 }

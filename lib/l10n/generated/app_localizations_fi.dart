@@ -2078,4 +2078,35 @@ class AppLocalizationsFi extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Lisää kaikki suosikkeihin ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Tuo kuvakaappauksesta';
+
+  @override
+  String get holdingsReading => 'Luetaan omistuksiasi…';
+
+  @override
+  String get holdingsReviewTitle => 'Löydetyt omistukset';
+
+  @override
+  String get holdingsReviewHint =>
+      'Tarkista luvut ennen kuin lisäät ne. Hinta on keskimääräinen ostohintasi osaketta kohden, ei tämän päivän hinta.';
+
+  @override
+  String get holdingsNoPrice => 'Kuvassa ei ole keskimääräistä ostohintaa';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Lisää $count omistusta',
+      one: 'Lisää 1 omistus',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Tästä kuvasta ei löytynyt osakeomistuksia. Kokeile kuvakaappausta välittäjäsi omistukset- tai positiot-sivusta.';
 }

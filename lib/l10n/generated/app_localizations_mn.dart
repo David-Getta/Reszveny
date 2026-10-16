@@ -2077,4 +2077,35 @@ class AppLocalizationsMn extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Бүгдийг дуртайд нэмэх ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Дэлгэцийн зургаас импортлох';
+
+  @override
+  String get holdingsReading => 'Таны эзэмшлийг уншиж байна…';
+
+  @override
+  String get holdingsReviewTitle => 'Олдсон эзэмшил';
+
+  @override
+  String get holdingsReviewHint =>
+      'Нэмэхээсээ өмнө тоонуудыг шалгаарай. Үнэ нь өнөөдрийн үнэ биш, нэг хувьцааны таны дундаж худалдан авалтын үнэ юм.';
+
+  @override
+  String get holdingsNoPrice => 'Зурган дээр дундаж худалдан авалтын үнэ алга';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count эзэмшил нэмэх',
+      one: '1 эзэмшил нэмэх',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Энэ зурган дээр хувьцааны эзэмшил олдсонгүй. Брокерийнхаа позиц эсвэл эзэмшлийн хуудасны дэлгэцийн зургийг оролдоод үзээрэй.';
 }

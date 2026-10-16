@@ -2075,4 +2075,35 @@ class AppLocalizationsYo extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Fi gbogbo rẹ̀ kún àwọn ààyò ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Gbé wọlé láti inú àwòrán ojú-ìbojú';
+
+  @override
+  String get holdingsReading => 'À ń ka àwọn ìpín rẹ…';
+
+  @override
+  String get holdingsReviewTitle => 'Àwọn ìpín tí a rí';
+
+  @override
+  String get holdingsReviewHint =>
+      'Ṣàyẹ̀wò àwọn nọ́mbà kí o tó fi wọ́n kún un. Iye owó náà ni iye owó ìrajà àpapọ̀ rẹ fún ìpín kọ̀ọ̀kan, kì í ṣe iye owó òní.';
+
+  @override
+  String get holdingsNoPrice => 'Kò sí iye owó ìrajà àpapọ̀ lórí àwòrán náà';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Fi ìpín $count kún un',
+      one: 'Fi ìpín 1 kún un',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'A kò rí ìpín kankan lórí àwòrán yìí. Gbìyànjú àwòrán ojú-ìbojú ti ojú-ewé ìpín tàbí dúkìá rẹ lọ́dọ̀ alágbàtà rẹ.';
 }

@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} ina yaltina ngalluuji lebbi tati hannde",
   "earningsRemindersTitle": "Siftorɗe ngalluuji",
   "earningsRemindersSubtitle": "Tintinol ñalawma gootal ado cuɓaaɗe maa walla sitokuuji portfolio maa yaltinde ngalluuji lebbi tati",
-  "addAllToFavorites": "Ɓeydu fof e cuɓaaɗe ({count})"
+  "addAllToFavorites": "Ɓeydu fof e cuɓaaɗe ({count})",
+  "portfolioImportPhoto": "Naatnu iwde e natal yaynirde",
+  "holdingsReading": "Ina janga ko a jogii…",
+  "holdingsReviewTitle": "Ko a jogii ko tawaa",
+  "holdingsReviewHint": "Ƴeewto limooje ɗee hade maa ɓeydude ɗe. Coggu ngu ko coggu hakkunde ngu soodirɗaa kala aksiyoŋ, wanaa coggu hannde.",
+  "holdingsNoPrice": "Alaa coggu soodaare hakkunde e natal ngal",
+  "holdingsAdd": "{count, plural, =1{Ɓeydu aksiyoŋ 1} other{Ɓeydu aksiyoŋ {count}}}",
+  "holdingsNone": "Alaa aksiyoŋ tawaa e natal ngal. Etto natal yaynirde hello aksiyoŋ maa e burtiyeejo maa."
 }

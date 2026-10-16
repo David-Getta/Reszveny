@@ -2082,4 +2082,36 @@ class AppLocalizationsLua extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Bueja yonso mu biudi musue ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Bueja kumbukila mu foto wa ekran';
+
+  @override
+  String get holdingsReading => 'Tudi tubala bitupa biebe…';
+
+  @override
+  String get holdingsReviewTitle => 'Bitupa bipetangane';
+
+  @override
+  String get holdingsReviewHint =>
+      'Tangila manomba kumpala kua kuabueja. Mushinga udi mushinga wa pankatshi uvua musumbe tshitupa tshimue, kauena mushinga wa lelu to.';
+
+  @override
+  String get holdingsNoPrice =>
+      'Kakuena mushinga wa pankatshi wa kusumba mu tshimfuanyi to';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Bueja bitupa $count',
+      one: 'Bueja tshitupa 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Katuena bapete bitupa bia actions mu tshimfuanyi etshi to. Teta foto wa ekran wa dibeji dia bitupa biebe mu application wa courtier webe.';
 }

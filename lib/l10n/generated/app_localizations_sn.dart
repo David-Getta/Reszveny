@@ -2081,4 +2081,36 @@ class AppLocalizationsSn extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Wedzera zvese kune zvaunofarira ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Pinza kubva pamufananidzo wesikirini';
+
+  @override
+  String get holdingsReading => 'Kuverenga masheya ako…';
+
+  @override
+  String get holdingsReviewTitle => 'Masheya awanikwa';
+
+  @override
+  String get holdingsReviewHint =>
+      'Tarisa nhamba usati wadzipinza. Mutengo ndiwo mutengo wako wepakati wawakatenga nawo sheya imwe neimwe, kwete mutengo wanhasi.';
+
+  @override
+  String get holdingsNoPrice =>
+      'Hapana mutengo wepakati wekutenga pamufananidzo';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Wedzera masheya $count',
+      one: 'Wedzera sheya 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Hapana masheya awanikwa pamufananidzo uyu. Edza mufananidzo wesikirini wepeji remasheya kubroker yako.';
 }

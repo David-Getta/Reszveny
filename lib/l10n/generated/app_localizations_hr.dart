@@ -2114,4 +2114,36 @@ class AppLocalizationsHr extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Dodaj sve u favorite ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Uvezi sa snimke zaslona';
+
+  @override
+  String get holdingsReading => 'Čitanje tvojih pozicija…';
+
+  @override
+  String get holdingsReviewTitle => 'Pronađene pozicije';
+
+  @override
+  String get holdingsReviewHint =>
+      'Provjeri brojeve prije dodavanja. Cijena je tvoja prosječna kupovna cijena po dionici, a ne današnja cijena.';
+
+  @override
+  String get holdingsNoPrice => 'Na slici nema prosječne kupovne cijene';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Dodaj $count pozicija',
+      few: 'Dodaj $count pozicije',
+      one: 'Dodaj $count poziciju',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Na ovoj slici nisu pronađene pozicije dionica. Pokušaj sa snimkom zaslona stranice s pozicijama ili imovinom kod svog brokera.';
 }

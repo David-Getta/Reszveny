@@ -2082,4 +2082,36 @@ class AppLocalizationsFil extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Idagdag lahat sa mga paborito ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'I-import mula sa screenshot';
+
+  @override
+  String get holdingsReading => 'Binabasa ang mga posisyon mo…';
+
+  @override
+  String get holdingsReviewTitle => 'Mga nakitang posisyon';
+
+  @override
+  String get holdingsReviewHint =>
+      'Suriin ang mga numero bago idagdag. Ang presyo ay ang average mong presyo ng pagbili bawat share, hindi ang presyo ngayon.';
+
+  @override
+  String get holdingsNoPrice =>
+      'Walang average na presyo ng pagbili sa larawan';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Idagdag ang $count posisyon',
+      one: 'Idagdag ang 1 posisyon',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Walang nakitang posisyon sa stock sa larawang ito. Subukan ang screenshot ng positions o holdings page ng broker mo.';
 }

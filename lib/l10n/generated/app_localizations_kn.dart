@@ -2083,4 +2083,35 @@ class AppLocalizationsKn extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'ಎಲ್ಲವನ್ನೂ ಮೆಚ್ಚಿನವುಗಳಿಗೆ ಸೇರಿಸಿ ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'ಸ್ಕ್ರೀನ್‌ಶಾಟ್‌ನಿಂದ ಆಮದು ಮಾಡಿ';
+
+  @override
+  String get holdingsReading => 'ನಿಮ್ಮ ಪೊಸಿಷನ್‌ಗಳನ್ನು ಓದಲಾಗುತ್ತಿದೆ…';
+
+  @override
+  String get holdingsReviewTitle => 'ಕಂಡುಬಂದ ಪೊಸಿಷನ್‌ಗಳು';
+
+  @override
+  String get holdingsReviewHint =>
+      'ಸೇರಿಸುವ ಮೊದಲು ಸಂಖ್ಯೆಗಳನ್ನು ಪರಿಶೀಲಿಸಿ. ಬೆಲೆಯು ಪ್ರತಿ ಷೇರಿನ ನಿಮ್ಮ ಸರಾಸರಿ ಖರೀದಿ ಬೆಲೆ, ಇಂದಿನ ಬೆಲೆಯಲ್ಲ.';
+
+  @override
+  String get holdingsNoPrice => 'ಚಿತ್ರದಲ್ಲಿ ಸರಾಸರಿ ಖರೀದಿ ಬೆಲೆ ಇಲ್ಲ';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ಪೊಸಿಷನ್‌ಗಳನ್ನು ಸೇರಿಸಿ',
+      one: '1 ಪೊಸಿಷನ್ ಸೇರಿಸಿ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'ಈ ಚಿತ್ರದಲ್ಲಿ ಯಾವುದೇ ಷೇರು ಪೊಸಿಷನ್‌ಗಳು ಕಂಡುಬಂದಿಲ್ಲ. ನಿಮ್ಮ ಬ್ರೋಕರ್‌ನ ಪೊಸಿಷನ್‌ಗಳು ಅಥವಾ ಹೋಲ್ಡಿಂಗ್ಸ್ ಪುಟದ ಸ್ಕ್ರೀನ್‌ಶಾಟ್ ಪ್ರಯತ್ನಿಸಿ.';
 }

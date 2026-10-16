@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol}: kunan p'unchaw kimsa killapa willakuynin",
   "earningsRemindersTitle": "Willakuy yuyarichiykuna",
   "earningsRemindersSubtitle": "Munasqaykikunap utaq portafolioykipi acciónkunap kimsa killapa willakuynin manaraq lluqsichkaptin huk p'unchaw ñawpaqta willachiy",
-  "addAllToFavorites": "Llapanta munasqakunaman yapay ({count})"
+  "addAllToFavorites": "Llapanta munasqakunaman yapay ({count})",
+  "portfolioImportPhoto": "Pantalla rikch'aymanta apamuy",
+  "holdingsReading": "Kapuqniykikunata ñawichkan…",
+  "holdingsReviewTitle": "Tarisqa kapuqkuna",
+  "holdingsReviewHint": "Yupaykunata qhawariy manaraq yapachkaspa. Chaninqa sapa acciónpaq chawpi rantisqa chaniykim, manam kunan p'unchaw chaninchu.",
+  "holdingsNoPrice": "Rikch'aypi mana chawpi rantisqa chanin kanchu",
+  "holdingsAdd": "{count, plural, =1{1 kapuqta yapay} other{{count} kapuqta yapay}}",
+  "holdingsNone": "Kay rikch'aypi mana acciónkunata tarinchikchu. Brokerniykiq kapuqnin p'anqanmanta pantalla rikch'ayta llamk'achiy."
 }

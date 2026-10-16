@@ -1974,6 +1974,35 @@ class AppLocalizationsZh extends AppLocalizations {
   String addAllToFavorites(int count) {
     return '全部添加到收藏 ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => '从截图导入';
+
+  @override
+  String get holdingsReading => '正在读取你的持仓…';
+
+  @override
+  String get holdingsReviewTitle => '找到的持仓';
+
+  @override
+  String get holdingsReviewHint => '添加前请核对数字。价格是你每股的平均买入价，而非今日价格。';
+
+  @override
+  String get holdingsNoPrice => '图片中没有平均买入价';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '添加 $count 个持仓',
+      one: '添加 1 个持仓',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone => '此图片中未找到股票持仓。请尝试使用券商持仓页面的截图。';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -3945,4 +3974,33 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String addAllToFavorites(int count) {
     return '全部加入收藏 ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => '從截圖匯入';
+
+  @override
+  String get holdingsReading => '正在讀取你的持倉…';
+
+  @override
+  String get holdingsReviewTitle => '找到的持倉';
+
+  @override
+  String get holdingsReviewHint => '加入前請核對數字。價格是你每股的平均買入價，而非今日價格。';
+
+  @override
+  String get holdingsNoPrice => '圖片中沒有平均買入價';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '加入 $count 個持倉',
+      one: '加入 1 個持倉',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone => '此圖片中找不到股票持倉。請試用券商持倉頁面的截圖。';
 }

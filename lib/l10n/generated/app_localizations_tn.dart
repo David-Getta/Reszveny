@@ -2087,4 +2087,37 @@ class AppLocalizationsTn extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Tsenya tsotlhe mo go tse o di ratang ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto =>
+      'Tsenya go tswa mo setshwantshong sa sekirini';
+
+  @override
+  String get holdingsReading => 'E bala maemo a gago…';
+
+  @override
+  String get holdingsReviewTitle => 'Maemo a a bonweng';
+
+  @override
+  String get holdingsReviewHint =>
+      'Tlhola dipalo pele o di oketsa. Tlhwatlhwa ke tlhwatlhwa ya gago e e magareng ya theko ya seabe se le sengwe, e seng tlhwatlhwa ya gompieno.';
+
+  @override
+  String get holdingsNoPrice =>
+      'Ga go na tlhwatlhwa e e magareng ya theko mo setshwantshong';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Oketsa maemo a le $count',
+      one: 'Oketsa boemo bo le bongwe',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Ga go a bonwa maemo a diabe mo setshwantshong se. Leka setshwantsho sa sekirini sa tsebe ya maemo kgotsa dithoto tsa gago kwa brokareng ya gago.';
 }

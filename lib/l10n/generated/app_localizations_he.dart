@@ -2069,4 +2069,35 @@ class AppLocalizationsHe extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'הוספת הכול למועדפים ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'ייבוא מצילום מסך';
+
+  @override
+  String get holdingsReading => 'קוראים את הפוזיציות שלך…';
+
+  @override
+  String get holdingsReviewTitle => 'פוזיציות שנמצאו';
+
+  @override
+  String get holdingsReviewHint =>
+      'כדאי לבדוק את המספרים לפני שמוסיפים אותם. המחיר הוא מחיר הרכישה הממוצע שלך למניה, לא המחיר של היום.';
+
+  @override
+  String get holdingsNoPrice => 'אין מחיר רכישה ממוצע בתמונה';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'הוספת $count פוזיציות',
+      one: 'הוספת פוזיציה אחת',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'לא נמצאו פוזיציות של מניות בתמונה הזו. אפשר לנסות צילום מסך של עמוד הפוזיציות או האחזקות אצל הברוקר שלך.';
 }

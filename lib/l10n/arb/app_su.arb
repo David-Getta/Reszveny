@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} ngumumkeun laporan kuartalan poé ieu",
   "earningsRemindersTitle": "Panginget laporan",
   "earningsRemindersSubtitle": "Béwara sapoé saméméh saham paporit atawa portofolio anjeun ngumumkeun laporan kuartalan",
-  "addAllToFavorites": "Tambahkeun sadayana ka paporit ({count})"
+  "addAllToFavorites": "Tambahkeun sadayana ka paporit ({count})",
+  "portfolioImportPhoto": "Impor tina tangkapan layar",
+  "holdingsReading": "Maca posisi anjeun…",
+  "holdingsReviewTitle": "Posisi anu kapanggih",
+  "holdingsReviewHint": "Pariksa heula angka-angkana saméméh ditambahkeun. Harga téh rata-rata harga pameulian per saham anjeun, lain harga poé ieu.",
+  "holdingsNoPrice": "Teu aya rata-rata harga pameulian dina gambar",
+  "holdingsAdd": "{count, plural, =1{Tambahkeun 1 posisi} other{Tambahkeun {count} posisi}}",
+  "holdingsNone": "Teu kapanggih posisi saham dina gambar ieu. Cobian tangkapan layar kaca posisi atanapi aset di aplikasi pialang anjeun."
 }

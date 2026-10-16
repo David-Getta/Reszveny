@@ -2076,4 +2076,35 @@ class AppLocalizationsAk extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Fa ne nyinaa ka nea mepɛ ho ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Fa fi screenshot mu bra';
+
+  @override
+  String get holdingsReading => 'Ɛrekenkan wo nkyɛfa…';
+
+  @override
+  String get holdingsReviewTitle => 'Nkyɛfa a yɛahu';
+
+  @override
+  String get holdingsReviewHint =>
+      'Hwɛ nɔma no yiye ansa na wode aka ho. Bo no yɛ bo mfinimfini a wotɔɔ kyɛfa biara, ɛnyɛ nnɛ bo.';
+
+  @override
+  String get holdingsNoPrice => 'Bo mfinimfini a wotɔe nni mfonini no so';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Fa nkyɛfa $count ka ho',
+      one: 'Fa kyɛfa 1 ka ho',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Yɛanhu kyɛfa biara wɔ mfonini yi so. Sɔ screenshot a ɛfiri wo broker no nkyɛfa krataafa so hwɛ.';
 }

@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} pubblica i risultati trimestrali oggi",
   "earningsRemindersTitle": "Promemoria risultati",
   "earningsRemindersSubtitle": "Una notifica il giorno prima che i titoli dei tuoi preferiti o del tuo portafoglio pubblichino i risultati trimestrali",
-  "addAllToFavorites": "Aggiungi tutte ai preferiti ({count})"
+  "addAllToFavorites": "Aggiungi tutte ai preferiti ({count})",
+  "portfolioImportPhoto": "Importa da uno screenshot",
+  "holdingsReading": "Lettura delle posizioni…",
+  "holdingsReviewTitle": "Posizioni trovate",
+  "holdingsReviewHint": "Controlla i numeri prima di aggiungerli. Il prezzo è il tuo prezzo medio di acquisto per azione, non quello di oggi.",
+  "holdingsNoPrice": "Nessun prezzo medio di acquisto nell'immagine",
+  "holdingsAdd": "{count, plural, =1{Aggiungi 1 posizione} other{Aggiungi {count} posizioni}}",
+  "holdingsNone": "Nessuna posizione azionaria trovata in questa immagine. Prova con uno screenshot della pagina delle posizioni o del portafoglio del tuo broker."
 }

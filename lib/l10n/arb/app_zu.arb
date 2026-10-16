@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} ikhipha imiphumela yekota namuhla",
   "earningsRemindersTitle": "Izikhumbuzi zemiphumela",
   "earningsRemindersSubtitle": "Isaziso ngosuku olwandulela ukuthi amasheya akho athandekayo noma ephothifoliyo yakho akhiphe imiphumela yekota",
-  "addAllToFavorites": "Engeza konke kuzintandokazi ({count})"
+  "addAllToFavorites": "Engeza konke kuzintandokazi ({count})",
+  "portfolioImportPhoto": "Ngenisa kusuka kusithombe-skrini",
+  "holdingsReading": "Ifunda amasheya akho…",
+  "holdingsReviewTitle": "Amasheya atholiwe",
+  "holdingsReviewHint": "Hlola izinombolo ngaphambi kokuthi uzengeze. Intengo yintengo yakho emaphakathi yokuthenga isheya ngalinye, hhayi intengo yanamuhla.",
+  "holdingsNoPrice": "Ayikho intengo emaphakathi yokuthenga esithombeni",
+  "holdingsAdd": "{count, plural, =1{Engeza isheya elilodwa} other{Engeza amasheya angu-{count}}}",
+  "holdingsNone": "Awekho amasheya atholakele kulesi sithombe. Zama isithombe-skrini sekhasi lamasheya noma lezimpahla zakho kumthengisi wakho wamasheya."
 }

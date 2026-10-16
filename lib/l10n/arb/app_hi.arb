@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} के तिमाही नतीजे आज",
   "earningsRemindersTitle": "तिमाही नतीजों के रिमाइंडर",
   "earningsRemindersSubtitle": "आपके पसंदीदा या पोर्टफ़ोलियो के शेयरों के तिमाही नतीजों से एक दिन पहले सूचना",
-  "addAllToFavorites": "सभी पसंदीदा में जोड़ें ({count})"
+  "addAllToFavorites": "सभी पसंदीदा में जोड़ें ({count})",
+  "portfolioImportPhoto": "स्क्रीनशॉट से आयात करें",
+  "holdingsReading": "आपकी पोज़िशन पढ़ी जा रही हैं…",
+  "holdingsReviewTitle": "मिली पोज़िशन",
+  "holdingsReviewHint": "जोड़ने से पहले संख्याएँ जाँच लें। कीमत प्रति शेयर आपकी औसत खरीद कीमत है, आज की कीमत नहीं।",
+  "holdingsNoPrice": "छवि में कोई औसत खरीद कीमत नहीं है",
+  "holdingsAdd": "{count, plural, =1{1 पोज़िशन जोड़ें} other{{count} पोज़िशन जोड़ें}}",
+  "holdingsNone": "इस छवि में कोई शेयर पोज़िशन नहीं मिली। अपने ब्रोकर के पोज़िशन या होल्डिंग पेज का स्क्रीनशॉट आज़माएँ।"
 }

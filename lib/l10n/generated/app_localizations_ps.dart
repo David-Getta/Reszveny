@@ -2068,4 +2068,35 @@ class AppLocalizationsPs extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'ټول خوښو ته ورزیات کړئ ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'له سکرین شاټ څخه واردول';
+
+  @override
+  String get holdingsReading => 'ستاسو پوزیشنونه لوستل کېږي…';
+
+  @override
+  String get holdingsReviewTitle => 'موندل شوي پوزیشنونه';
+
+  @override
+  String get holdingsReviewHint =>
+      'د اضافه کولو مخکې شمېرې وګورئ. بیه ستاسو د هرې ونډې منځنۍ د پېرود بیه ده، نه د نن ورځې بیه.';
+
+  @override
+  String get holdingsNoPrice => 'په انځور کې د پېرود منځنۍ بیه نشته';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count پوزیشنونه اضافه کړئ',
+      one: '1 پوزیشن اضافه کړئ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'په دې انځور کې د ونډو هېڅ پوزیشن ونه موندل شو. د خپل بروکر د پوزیشنونو یا شتمنیو د پاڼې سکرین شاټ وازمویئ.';
 }

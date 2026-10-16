@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} danes objavi četrtletne rezultate",
   "earningsRemindersTitle": "Opomniki za rezultate",
   "earningsRemindersSubtitle": "Obvestilo dan pred objavo četrtletnih rezultatov delnic iz priljubljenih ali tvojega portfelja",
-  "addAllToFavorites": "Dodaj vse med priljubljene ({count})"
+  "addAllToFavorites": "Dodaj vse med priljubljene ({count})",
+  "portfolioImportPhoto": "Uvozi s posnetka zaslona",
+  "holdingsReading": "Branje pozicij …",
+  "holdingsReviewTitle": "Najdene pozicije",
+  "holdingsReviewHint": "Preverite številke, preden jih dodate. Cena je vaša povprečna nakupna cena na delnico, ne današnja cena.",
+  "holdingsNoPrice": "Na sliki ni povprečne nakupne cene",
+  "holdingsAdd": "{count, plural, one{Dodaj {count} pozicijo} two{Dodaj {count} poziciji} few{Dodaj {count} pozicije} other{Dodaj {count} pozicij}}",
+  "holdingsNone": "Na tej sliki nismo našli delniških pozicij. Poskusite s posnetkom zaslona strani s pozicijami ali portfeljem pri vašem borznem posredniku."
 }

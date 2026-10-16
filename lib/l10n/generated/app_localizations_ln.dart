@@ -2086,4 +2086,36 @@ class AppLocalizationsLn extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Bakisa nyonso na oyo olingaka ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Kotisa uta na foto ya ekran';
+
+  @override
+  String get holdingsReading => 'Ezali kotánga biteni na yo…';
+
+  @override
+  String get holdingsReviewTitle => 'Biteni oyo emonani';
+
+  @override
+  String get holdingsReviewHint =>
+      'Talá mitángo liboso ya kobakisa yango. Ntalo ezali ntalo ya katikati oyo osombaki na yango action moko, kasi ntalo ya lelo te.';
+
+  @override
+  String get holdingsNoPrice =>
+      'Ntalo ya katikati ya kosomba ezali na elilingi te';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Bakisa biteni $count',
+      one: 'Bakisa eteni 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Biteni ya ba-action emonani na elilingi oyo te. Meka foto ya ekran ya lokasa ya biteni na yo na application ya courtier na yo.';
 }

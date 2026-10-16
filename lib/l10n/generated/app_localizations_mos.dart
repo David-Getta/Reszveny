@@ -2063,4 +2063,35 @@ class AppLocalizationsMos extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Paas fãa nong-n-yɩɩda pʋgẽ ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Kẽes n yi ekrã foto';
+
+  @override
+  String get holdingsReading => 'D karemd f sẽn tar wã…';
+
+  @override
+  String get holdingsReviewTitle => 'Sẽn tar d sẽn yã';
+
+  @override
+  String get holdingsReviewHint =>
+      'Ges sõorã sõma n yaool n naag-ba. Ligdã yaa f raab ligd zɩɩlgã aksɔ̃ yembr fãa, pa rũndã ligd ye.';
+
+  @override
+  String get holdingsNoPrice => 'Raab ligd zɩɩlg ka be foto wã pʋgẽ ye';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Naag bũmb $count',
+      one: 'Naag bũmb a yembre',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'D pa yã aksɔ̃ bũmb foto kãng pʋgẽ ye. Maan f broker wã aksɔ̃ seb-neng ekrã foto n ges.';
 }

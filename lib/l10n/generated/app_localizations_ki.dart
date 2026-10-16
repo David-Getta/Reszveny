@@ -2077,4 +2077,35 @@ class AppLocalizationsKi extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Ongerera yothe harĩ iria wendete ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Ingĩria kuuma mbica ya skrini';
+
+  @override
+  String get holdingsReading => 'Nĩtũrathoma mĩgabana yaku…';
+
+  @override
+  String get holdingsReviewTitle => 'Mĩgabana ĩrĩa yoneka';
+
+  @override
+  String get holdingsReviewHint =>
+      'Thuthuria namba mbere ya kũmongerera. Thogora nĩ thogora wa gatagatĩ ũrĩa wagũrire o mũgabana ũmwe, ti thogora wa ũmũthĩ.';
+
+  @override
+  String get holdingsNoPrice => 'Gũtirĩ thogora wa gatagatĩ wa kũgũra mbicainĩ';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ongerera mĩgabana $count',
+      one: 'Ongerera mũgabana 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Gũtirĩ mĩgabana yoneka mbicainĩ ĩno. Geria mbica ya skrini ya karatathi ka mĩgabana yaku kwa broker waku.';
 }

@@ -2070,4 +2070,34 @@ class AppLocalizationsMy extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'အားလုံးကို အကြိုက်ဆုံးများသို့ ထည့်ရန် ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'စခရင်ရှော့မှ တင်သွင်းရန်';
+
+  @override
+  String get holdingsReading => 'သင့်ရှယ်ယာ ပိုင်ဆိုင်မှုများကို ဖတ်နေသည်…';
+
+  @override
+  String get holdingsReviewTitle => 'တွေ့ရှိသော ပိုင်ဆိုင်မှုများ';
+
+  @override
+  String get holdingsReviewHint =>
+      'မထည့်မီ ဂဏန်းများကို စစ်ဆေးပါ။ စျေးနှုန်းသည် ယနေ့စျေးနှုန်း မဟုတ်ဘဲ ရှယ်ယာတစ်ခုလျှင် သင်၏ ပျမ်းမျှ ဝယ်စျေး ဖြစ်သည်။';
+
+  @override
+  String get holdingsNoPrice => 'ပုံတွင် ပျမ်းမျှ ဝယ်စျေး မပါပါ';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ပိုင်ဆိုင်မှု $count ခု ထည့်ရန်',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'ဤပုံတွင် ရှယ်ယာ ပိုင်ဆိုင်မှု မတွေ့ပါ။ သင့်ပွဲစား၏ ပိုင်ဆိုင်မှု စာမျက်နှာ၏ စခရင်ရှော့ကို စမ်းကြည့်ပါ။';
 }

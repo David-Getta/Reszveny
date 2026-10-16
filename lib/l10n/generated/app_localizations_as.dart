@@ -2075,4 +2075,35 @@ class AppLocalizationsAs extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'সকলো প্ৰিয়ত যোগ কৰক ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'স্ক্ৰীণশ্বটৰ পৰা আমদানি কৰক';
+
+  @override
+  String get holdingsReading => 'আপোনাৰ পজিচন পঢ়ি থকা হৈছে…';
+
+  @override
+  String get holdingsReviewTitle => 'পোৱা পজিচন';
+
+  @override
+  String get holdingsReviewHint =>
+      'যোগ কৰাৰ আগতে সংখ্যাবোৰ পৰীক্ষা কৰক। দামটো আজিৰ দাম নহয়, প্ৰতি শ্বেয়াৰত আপোনাৰ গড় ক্ৰয়মূল্য।';
+
+  @override
+  String get holdingsNoPrice => 'ছবিখনত গড় ক্ৰয়মূল্য নাই';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countটা পজিচন যোগ কৰক',
+      one: '1টা পজিচন যোগ কৰক',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'এই ছবিখনত কোনো শ্বেয়াৰ পজিচন পোৱা নগ\'ল। আপোনাৰ ব্ৰ\'কাৰৰ পজিচন বা হ\'ল্ডিং পৃষ্ঠাৰ স্ক্ৰীণশ্বট চেষ্টা কৰক।';
 }

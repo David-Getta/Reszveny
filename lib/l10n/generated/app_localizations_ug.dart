@@ -2079,4 +2079,35 @@ class AppLocalizationsUg extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'ھەممىنى يىغقۇچقا قوشۇش ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'ئېكران كەسمىسىدىن كىرگۈزۈش';
+
+  @override
+  String get holdingsReading => 'پايلىرىڭىز ئوقۇلۇۋاتىدۇ…';
+
+  @override
+  String get holdingsReviewTitle => 'تېپىلغان پايلار';
+
+  @override
+  String get holdingsReviewHint =>
+      'قوشۇشتىن بۇرۇن سانلارنى تەكشۈرۈڭ. باھا ھەر بىر پاينىڭ ئوتتۇرىچە سېتىۋېلىش باھاسى، بۈگۈنكى باھا ئەمەس.';
+
+  @override
+  String get holdingsNoPrice => 'رەسىمدە ئوتتۇرىچە سېتىۋېلىش باھاسى يوق';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count پاي قوشۇش',
+      one: '1 پاي قوشۇش',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'بۇ رەسىمدە پاي تېپىلمىدى. ۋاكالەتچىڭىزنىڭ پاي ياكى مۈلۈك بېتىنىڭ ئېكران كەسمىسىنى سىناپ بېقىڭ.';
 }

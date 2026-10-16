@@ -2074,4 +2074,35 @@ class AppLocalizationsSi extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'සියල්ල ප්‍රියතමවලට එක් කරන්න ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'තිර රුවෙන් ආනයනය කරන්න';
+
+  @override
+  String get holdingsReading => 'ඔබේ කොටස් හිමිකම් කියවමින්…';
+
+  @override
+  String get holdingsReviewTitle => 'හමු වූ කොටස් හිමිකම්';
+
+  @override
+  String get holdingsReviewHint =>
+      'එක් කිරීමට පෙර අංක පරීක්ෂා කරන්න. මිල යනු අද මිල නොව, කොටසකට ඔබේ සාමාන්‍ය මිලදී ගැනීමේ මිලයි.';
+
+  @override
+  String get holdingsNoPrice => 'රූපයේ සාමාන්‍ය මිලදී ගැනීමේ මිලක් නැත';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'හිමිකම් $countක් එක් කරන්න',
+      one: 'හිමිකම් 1ක් එක් කරන්න',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'මෙම රූපයේ කොටස් හිමිකම් කිසිවක් හමු නොවීය. ඔබේ තැරැව්කරුගේ කොටස් හිමිකම් පිටුවේ තිර රුවක් උත්සාහ කරන්න.';
 }

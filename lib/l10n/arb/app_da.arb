@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} offentliggør kvartalsregnskab i dag",
   "earningsRemindersTitle": "Påmindelser om regnskaber",
   "earningsRemindersSubtitle": "En notifikation dagen før dine favoritter eller porteføljeaktier offentliggør kvartalsregnskab",
-  "addAllToFavorites": "Føj alle til favoritter ({count})"
+  "addAllToFavorites": "Føj alle til favoritter ({count})",
+  "portfolioImportPhoto": "Importér fra et skærmbillede",
+  "holdingsReading": "Læser dine beholdninger…",
+  "holdingsReviewTitle": "Fundne beholdninger",
+  "holdingsReviewHint": "Tjek tallene, før du tilføjer dem. Prisen er din gennemsnitlige købskurs pr. aktie, ikke dagens kurs.",
+  "holdingsNoPrice": "Ingen gennemsnitlig købskurs på billedet",
+  "holdingsAdd": "{count, plural, =1{Tilføj 1 beholdning} other{Tilføj {count} beholdninger}}",
+  "holdingsNone": "Der blev ikke fundet nogen aktiebeholdninger på dette billede. Prøv et skærmbillede af din mæglers side med beholdninger eller positioner."
 }

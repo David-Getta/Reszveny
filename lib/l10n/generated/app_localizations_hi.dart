@@ -2075,4 +2075,35 @@ class AppLocalizationsHi extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'सभी पसंदीदा में जोड़ें ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'स्क्रीनशॉट से आयात करें';
+
+  @override
+  String get holdingsReading => 'आपकी पोज़िशन पढ़ी जा रही हैं…';
+
+  @override
+  String get holdingsReviewTitle => 'मिली पोज़िशन';
+
+  @override
+  String get holdingsReviewHint =>
+      'जोड़ने से पहले संख्याएँ जाँच लें। कीमत प्रति शेयर आपकी औसत खरीद कीमत है, आज की कीमत नहीं।';
+
+  @override
+  String get holdingsNoPrice => 'छवि में कोई औसत खरीद कीमत नहीं है';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count पोज़िशन जोड़ें',
+      one: '1 पोज़िशन जोड़ें',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'इस छवि में कोई शेयर पोज़िशन नहीं मिली। अपने ब्रोकर के पोज़िशन या होल्डिंग पेज का स्क्रीनशॉट आज़माएँ।';
 }

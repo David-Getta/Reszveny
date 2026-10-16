@@ -2072,4 +2072,35 @@ class AppLocalizationsId extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Tambahkan semua ke favorit ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Impor dari tangkapan layar';
+
+  @override
+  String get holdingsReading => 'Membaca posisimu…';
+
+  @override
+  String get holdingsReviewTitle => 'Posisi ditemukan';
+
+  @override
+  String get holdingsReviewHint =>
+      'Periksa angkanya sebelum menambahkan. Harga ini adalah harga beli rata-ratamu per saham, bukan harga hari ini.';
+
+  @override
+  String get holdingsNoPrice => 'Tidak ada harga beli rata-rata di gambar';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Tambahkan $count posisi',
+      one: 'Tambahkan 1 posisi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Tidak ada posisi saham di gambar ini. Coba tangkapan layar halaman posisi atau portofolio di aplikasi brokermu.';
 }

@@ -2089,4 +2089,36 @@ class AppLocalizationsNso extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Oketša tšohle go tše di ratwago ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Tsenya go tšwa go seswantšho sa sekirini';
+
+  @override
+  String get holdingsReading => 'E bala dithoto tša gago…';
+
+  @override
+  String get holdingsReviewTitle => 'Dithoto tšeo di hweditšwego';
+
+  @override
+  String get holdingsReviewHint =>
+      'Lekola dinomoro pele o di oketša. Theko ke theko ya gago ya magareng ya go reka šere e tee, e sego theko ya lehono.';
+
+  @override
+  String get holdingsNoPrice =>
+      'Ga go na theko ya magareng ya go reka seswantšhong';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Oketša dithoto tše $count',
+      one: 'Oketša thoto e 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Ga go dithoto tša dišere tšeo di hweditšwego seswantšhong se. Leka seswantšho sa sekirini sa letlakala la dithoto go broker ya gago.';
 }

@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol}は本日、四半期決算を発表します",
   "earningsRemindersTitle": "決算リマインダー",
   "earningsRemindersSubtitle": "お気に入りやポートフォリオの銘柄が四半期決算を発表する前日に通知します",
-  "addAllToFavorites": "すべてお気に入りに追加 ({count})"
+  "addAllToFavorites": "すべてお気に入りに追加 ({count})",
+  "portfolioImportPhoto": "スクリーンショットからインポート",
+  "holdingsReading": "保有銘柄を読み取り中…",
+  "holdingsReviewTitle": "見つかった保有銘柄",
+  "holdingsReviewHint": "追加する前に数値を確認してください。価格は今日の株価ではなく、1株あたりの平均取得単価です。",
+  "holdingsNoPrice": "画像に平均取得単価がありません",
+  "holdingsAdd": "{count, plural, =1{1 件の保有銘柄を追加} other{{count} 件の保有銘柄を追加}}",
+  "holdingsNone": "この画像から保有銘柄が見つかりませんでした。証券会社アプリの保有銘柄（ポジション）画面のスクリーンショットをお試しください。"
 }

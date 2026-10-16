@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} šodien publicē ceturkšņa rezultātus",
   "earningsRemindersTitle": "Atgādinājumi par rezultātiem",
   "earningsRemindersSubtitle": "Paziņojums dienu pirms izlases vai portfeļa akciju ceturkšņa rezultātu publicēšanas",
-  "addAllToFavorites": "Pievienot visas izlasei ({count})"
+  "addAllToFavorites": "Pievienot visas izlasei ({count})",
+  "portfolioImportPhoto": "Importēt no ekrānuzņēmuma",
+  "holdingsReading": "Nolasa tavas pozīcijas…",
+  "holdingsReviewTitle": "Atrastās pozīcijas",
+  "holdingsReviewHint": "Pirms pievienošanas pārbaudi skaitļus. Cena ir tava vidējā pirkuma cena par vienu akciju, nevis šodienas cena.",
+  "holdingsNoPrice": "Attēlā nav vidējās pirkuma cenas",
+  "holdingsAdd": "{count, plural, zero{Pievienot {count} pozīcijas} one{Pievienot {count} pozīciju} other{Pievienot {count} pozīcijas}}",
+  "holdingsNone": "Šajā attēlā netika atrastas akciju pozīcijas. Izmēģini ekrānuzņēmumu no sava brokera pozīciju vai aktīvu lapas."
 }

@@ -2083,4 +2083,35 @@ class AppLocalizationsSo extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Dhammaan ku dar kuwa la jecel yahay ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Ka soo deji sawir-shaashadeed';
+
+  @override
+  String get holdingsReading => 'Waa la akhrinayaa mawqifyadaada…';
+
+  @override
+  String get holdingsReviewTitle => 'Mawqifyada la helay';
+
+  @override
+  String get holdingsReviewHint =>
+      'Hubi tirooyinka ka hor intaadan ku darin. Qiimuhu waa celceliska qiimaha iibsasho ee saami kasta, ma aha qiimaha maanta.';
+
+  @override
+  String get holdingsNoPrice => 'Sawirka kuma jiro celceliska qiimaha iibsasho';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ku dar $count mawqif',
+      one: 'Ku dar 1 mawqif',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Sawirkan laguma helin mawqif saami. Isku day sawir-shaashadeed bogga mawqifyada ama hantida ee dillaalkaaga.';
 }

@@ -2084,4 +2084,35 @@ class AppLocalizationsEl extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Προσθήκη όλων στα αγαπημένα ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Εισαγωγή από στιγμιότυπο οθόνης';
+
+  @override
+  String get holdingsReading => 'Ανάγνωση των θέσεών σας…';
+
+  @override
+  String get holdingsReviewTitle => 'Θέσεις που βρέθηκαν';
+
+  @override
+  String get holdingsReviewHint =>
+      'Ελέγξτε τους αριθμούς πριν τους προσθέσετε. Η τιμή είναι η μέση τιμή αγοράς σας ανά μετοχή, όχι η σημερινή τιμή.';
+
+  @override
+  String get holdingsNoPrice => 'Δεν υπάρχει μέση τιμή αγοράς στην εικόνα';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Προσθήκη $count θέσεων',
+      one: 'Προσθήκη 1 θέσης',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Δεν βρέθηκαν θέσεις μετοχών σε αυτή την εικόνα. Δοκιμάστε ένα στιγμιότυπο της σελίδας θέσεων ή χαρτοφυλακίου του χρηματιστή σας.';
 }

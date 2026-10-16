@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} આજે ત્રિમાસિક પરિણામો જાહેર કરશે",
   "earningsRemindersTitle": "પરિણામ રિમાઇન્ડર",
   "earningsRemindersSubtitle": "તમારા મનપસંદ અથવા પોર્ટફોલિયોના શેરના ત્રિમાસિક પરિણામો જાહેર થાય તેના આગલા દિવસે સૂચના",
-  "addAllToFavorites": "બધા મનપસંદમાં ઉમેરો ({count})"
+  "addAllToFavorites": "બધા મનપસંદમાં ઉમેરો ({count})",
+  "portfolioImportPhoto": "સ્ક્રીનશોટમાંથી આયાત કરો",
+  "holdingsReading": "તમારી પોઝિશન વાંચી રહ્યા છીએ…",
+  "holdingsReviewTitle": "મળેલી પોઝિશન",
+  "holdingsReviewHint": "ઉમેરતા પહેલાં આંકડા તપાસો. ભાવ આજનો ભાવ નથી, પણ શેર દીઠ તમારી સરેરાશ ખરીદ કિંમત છે.",
+  "holdingsNoPrice": "છબીમાં સરેરાશ ખરીદ કિંમત નથી",
+  "holdingsAdd": "{count, plural, =1{1 પોઝિશન ઉમેરો} other{{count} પોઝિશન ઉમેરો}}",
+  "holdingsNone": "આ છબીમાં કોઈ શેર પોઝિશન મળી નથી. તમારા બ્રોકરના પોઝિશન અથવા હોલ્ડિંગ્સ પેજનો સ્ક્રીનશોટ અજમાવો."
 }

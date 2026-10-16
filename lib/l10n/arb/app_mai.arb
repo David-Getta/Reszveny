@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol}क त्रैमासिक परिणाम आइ",
   "earningsRemindersTitle": "परिणाम रिमाइंडर",
   "earningsRemindersSubtitle": "अहाँक पसंदीदा वा पोर्टफोलियोक शेयरक त्रैमासिक परिणामसँ एक दिन पहिने सूचना",
-  "addAllToFavorites": "सभटा पसंदीदामे जोड़ू ({count})"
+  "addAllToFavorites": "सभटा पसंदीदामे जोड़ू ({count})",
+  "portfolioImportPhoto": "स्क्रीनशॉटसँ आयात करू",
+  "holdingsReading": "अहाँक पोजीशन पढ़ल जा रहल अछि…",
+  "holdingsReviewTitle": "भेटल पोजीशन",
+  "holdingsReviewHint": "जोड़बासँ पहिने संख्या जाँचि लिअ। दाम प्रति शेयर अहाँक औसत खरीद दाम अछि, आजुक दाम नहि।",
+  "holdingsNoPrice": "चित्रमे औसत खरीद दाम नहि अछि",
+  "holdingsAdd": "{count, plural, =1{1 पोजीशन जोड़ू} other{{count} पोजीशन जोड़ू}}",
+  "holdingsNone": "एहि चित्रमे कोनो शेयर पोजीशन नहि भेटल। अपन ब्रोकरक पोजीशन वा होल्डिंग पन्नाक स्क्रीनशॉट आजमाउ।"
 }

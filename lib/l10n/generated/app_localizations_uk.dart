@@ -2135,4 +2135,37 @@ class AppLocalizationsUk extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Додати всі до обраного ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Імпорт зі знімка екрана';
+
+  @override
+  String get holdingsReading => 'Зчитування позицій…';
+
+  @override
+  String get holdingsReviewTitle => 'Знайдені позиції';
+
+  @override
+  String get holdingsReviewHint =>
+      'Перевірте числа, перш ніж додавати. Ціна — це середня ціна купівлі за акцію, а не сьогоднішня ціна.';
+
+  @override
+  String get holdingsNoPrice => 'На зображенні немає середньої ціни купівлі';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Додати $count позиції',
+      many: 'Додати $count позицій',
+      few: 'Додати $count позиції',
+      one: 'Додати $count позицію',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'На цьому зображенні не знайдено позицій в акціях. Спробуйте знімок екрана сторінки позицій або активів у вашого брокера.';
 }

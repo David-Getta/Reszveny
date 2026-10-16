@@ -2071,4 +2071,35 @@ class AppLocalizationsFf extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Ɓeydu fof e cuɓaaɗe ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Naatnu iwde e natal yaynirde';
+
+  @override
+  String get holdingsReading => 'Ina janga ko a jogii…';
+
+  @override
+  String get holdingsReviewTitle => 'Ko a jogii ko tawaa';
+
+  @override
+  String get holdingsReviewHint =>
+      'Ƴeewto limooje ɗee hade maa ɓeydude ɗe. Coggu ngu ko coggu hakkunde ngu soodirɗaa kala aksiyoŋ, wanaa coggu hannde.';
+
+  @override
+  String get holdingsNoPrice => 'Alaa coggu soodaare hakkunde e natal ngal';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ɓeydu aksiyoŋ $count',
+      one: 'Ɓeydu aksiyoŋ 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Alaa aksiyoŋ tawaa e natal ngal. Etto natal yaynirde hello aksiyoŋ maa e burtiyeejo maa.';
 }

@@ -3696,6 +3696,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Add all to favorites ({count})'**
   String addAllToFavorites(int count);
+
+  /// Portfolio menu item: read positions from a picture of a brokerage app screen.
+  ///
+  /// In en, this message translates to:
+  /// **'Import from a screenshot'**
+  String get portfolioImportPhoto;
+
+  /// No description provided for @holdingsReading.
+  ///
+  /// In en, this message translates to:
+  /// **'Reading your positions…'**
+  String get holdingsReading;
+
+  /// No description provided for @holdingsReviewTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Positions found'**
+  String get holdingsReviewTitle;
+
+  /// No description provided for @holdingsReviewHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Check the numbers before adding them. The price is your average purchase price per share, not today\'s price.'**
+  String get holdingsReviewHint;
+
+  /// No description provided for @holdingsNoPrice.
+  ///
+  /// In en, this message translates to:
+  /// **'No average purchase price on the picture'**
+  String get holdingsNoPrice;
+
+  /// No description provided for @holdingsAdd.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{Add 1 position} other{Add {count} positions}}'**
+  String holdingsAdd(int count);
+
+  /// No description provided for @holdingsNone.
+  ///
+  /// In en, this message translates to:
+  /// **'No stock positions found on this picture. Try a screenshot of your broker\'s positions or holdings page.'**
+  String get holdingsNone;
 }
 
 class _AppLocalizationsDelegate

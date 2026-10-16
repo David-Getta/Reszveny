@@ -2072,4 +2072,35 @@ class AppLocalizationsBho extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'सब पसंदीदा में जोड़ीं ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'स्क्रीनशॉट से आयात करीं';
+
+  @override
+  String get holdingsReading => 'राउर पोजीशन पढ़ल जा रहल बा…';
+
+  @override
+  String get holdingsReviewTitle => 'मिलल पोजीशन';
+
+  @override
+  String get holdingsReviewHint =>
+      'जोड़े से पहिले संख्या जाँच लीं। दाम आज के दाम ना ह, प्रति शेयर राउर औसत खरीद दाम ह।';
+
+  @override
+  String get holdingsNoPrice => 'तस्वीर में औसत खरीद दाम नइखे';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count पोजीशन जोड़ीं',
+      one: '1 पोजीशन जोड़ीं',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'एह तस्वीर में कवनो शेयर पोजीशन ना मिलल। अपना ब्रोकर के पोजीशन भा होल्डिंग पन्ना के स्क्रीनशॉट आजमाईं।';
 }

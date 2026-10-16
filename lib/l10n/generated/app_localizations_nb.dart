@@ -2076,4 +2076,35 @@ class AppLocalizationsNb extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Legg alle til i favoritter ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Importer fra skjermbilde';
+
+  @override
+  String get holdingsReading => 'Leser posisjonene dine…';
+
+  @override
+  String get holdingsReviewTitle => 'Posisjoner funnet';
+
+  @override
+  String get holdingsReviewHint =>
+      'Sjekk tallene før du legger dem til. Prisen er din gjennomsnittlige kjøpspris per aksje, ikke dagens kurs.';
+
+  @override
+  String get holdingsNoPrice => 'Ingen gjennomsnittlig kjøpspris på bildet';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Legg til $count posisjoner',
+      one: 'Legg til 1 posisjon',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Fant ingen aksjeposisjoner på dette bildet. Prøv et skjermbilde av beholdnings- eller posisjonssiden hos megleren din.';
 }

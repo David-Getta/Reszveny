@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} امروز نتایج فصلی را اعلام می‌کند",
   "earningsRemindersTitle": "یادآور نتایج",
   "earningsRemindersSubtitle": "اعلانی یک روز پیش از آنکه سهام علاقه‌مندی‌ها یا سبد سهام شما نتایج فصلی را اعلام کنند",
-  "addAllToFavorites": "افزودن همه به علاقه‌مندی‌ها ({count})"
+  "addAllToFavorites": "افزودن همه به علاقه‌مندی‌ها ({count})",
+  "portfolioImportPhoto": "وارد کردن از اسکرین‌شات",
+  "holdingsReading": "در حال خواندن موقعیت‌های شما…",
+  "holdingsReviewTitle": "موقعیت‌های یافت‌شده",
+  "holdingsReviewHint": "پیش از افزودن، اعداد را بررسی کنید. قیمت، میانگین بهای خرید شما برای هر سهم است، نه قیمت امروز.",
+  "holdingsNoPrice": "میانگین بهای خرید در تصویر نیست",
+  "holdingsAdd": "{count, plural, =1{افزودن 1 موقعیت} other{افزودن {count} موقعیت}}",
+  "holdingsNone": "هیچ موقعیت سهامی در این تصویر یافت نشد. یک اسکرین‌شات از صفحهٔ موقعیت‌ها یا دارایی‌های کارگزارتان را امتحان کنید."
 }

@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol}: आज तिमाही नतीजा",
   "earningsRemindersTitle": "नतीजा रिमाइंडर",
   "earningsRemindersSubtitle": "राउर पसंदीदा भा पोर्टफोलियो के शेयर के तिमाही नतीजा से एक दिन पहिले सूचना",
-  "addAllToFavorites": "सब पसंदीदा में जोड़ीं ({count})"
+  "addAllToFavorites": "सब पसंदीदा में जोड़ीं ({count})",
+  "portfolioImportPhoto": "स्क्रीनशॉट से आयात करीं",
+  "holdingsReading": "राउर पोजीशन पढ़ल जा रहल बा…",
+  "holdingsReviewTitle": "मिलल पोजीशन",
+  "holdingsReviewHint": "जोड़े से पहिले संख्या जाँच लीं। दाम आज के दाम ना ह, प्रति शेयर राउर औसत खरीद दाम ह।",
+  "holdingsNoPrice": "तस्वीर में औसत खरीद दाम नइखे",
+  "holdingsAdd": "{count, plural, =1{1 पोजीशन जोड़ीं} other{{count} पोजीशन जोड़ीं}}",
+  "holdingsNone": "एह तस्वीर में कवनो शेयर पोजीशन ना मिलल। अपना ब्रोकर के पोजीशन भा होल्डिंग पन्ना के स्क्रीनशॉट आजमाईं।"
 }

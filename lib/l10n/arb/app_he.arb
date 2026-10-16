@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol}: דוחות רבעוניים היום",
   "earningsRemindersTitle": "תזכורות לדוחות רבעוניים",
   "earningsRemindersSubtitle": "התראה יום לפני שמניות מהמועדפים או מהתיק שלך מפרסמות דוחות רבעוניים",
-  "addAllToFavorites": "הוספת הכול למועדפים ({count})"
+  "addAllToFavorites": "הוספת הכול למועדפים ({count})",
+  "portfolioImportPhoto": "ייבוא מצילום מסך",
+  "holdingsReading": "קוראים את הפוזיציות שלך…",
+  "holdingsReviewTitle": "פוזיציות שנמצאו",
+  "holdingsReviewHint": "כדאי לבדוק את המספרים לפני שמוסיפים אותם. המחיר הוא מחיר הרכישה הממוצע שלך למניה, לא המחיר של היום.",
+  "holdingsNoPrice": "אין מחיר רכישה ממוצע בתמונה",
+  "holdingsAdd": "{count, plural, =1{הוספת פוזיציה אחת} other{הוספת {count} פוזיציות}}",
+  "holdingsNone": "לא נמצאו פוזיציות של מניות בתמונה הזו. אפשר לנסות צילום מסך של עמוד הפוזיציות או האחזקות אצל הברוקר שלך."
 }

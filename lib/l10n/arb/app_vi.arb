@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} công bố kết quả kinh doanh quý hôm nay",
   "earningsRemindersTitle": "Nhắc kết quả kinh doanh",
   "earningsRemindersSubtitle": "Thông báo một ngày trước khi cổ phiếu yêu thích hoặc trong danh mục của bạn công bố kết quả kinh doanh quý",
-  "addAllToFavorites": "Thêm tất cả vào yêu thích ({count})"
+  "addAllToFavorites": "Thêm tất cả vào yêu thích ({count})",
+  "portfolioImportPhoto": "Nhập từ ảnh chụp màn hình",
+  "holdingsReading": "Đang đọc các vị thế của bạn…",
+  "holdingsReviewTitle": "Vị thế tìm thấy",
+  "holdingsReviewHint": "Hãy kiểm tra các con số trước khi thêm. Giá là giá mua trung bình mỗi cổ phiếu của bạn, không phải giá hôm nay.",
+  "holdingsNoPrice": "Không có giá mua trung bình trên ảnh",
+  "holdingsAdd": "{count, plural, =1{Thêm 1 vị thế} other{Thêm {count} vị thế}}",
+  "holdingsNone": "Không tìm thấy vị thế cổ phiếu nào trong ảnh này. Hãy thử ảnh chụp màn hình trang vị thế hoặc danh mục nắm giữ tại công ty môi giới của bạn."
 }

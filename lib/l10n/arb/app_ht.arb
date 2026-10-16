@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} ap pibliye rezilta trimestriyèl li jodi a",
   "earningsRemindersTitle": "Rapèl rezilta",
   "earningsRemindersSubtitle": "Yon notifikasyon jou anvan aksyon ki nan favori w oswa pòtfolyo w pibliye rezilta trimestriyèl yo",
-  "addAllToFavorites": "Ajoute tout nan favori ({count})"
+  "addAllToFavorites": "Ajoute tout nan favori ({count})",
+  "portfolioImportPhoto": "Enpòte soti nan yon kapti ekran",
+  "holdingsReading": "N ap li pozisyon ou yo…",
+  "holdingsReviewTitle": "Pozisyon nou jwenn",
+  "holdingsReviewHint": "Verifye chif yo anvan ou ajoute yo. Pri a se pri acha mwayen ou pou chak aksyon, se pa pri jodi a.",
+  "holdingsNoPrice": "Pa gen pri acha mwayen sou imaj la",
+  "holdingsAdd": "{count, plural, =1{Ajoute 1 pozisyon} other{Ajoute {count} pozisyon}}",
+  "holdingsNone": "Nou pa jwenn okenn pozisyon aksyon sou imaj sa a. Eseye yon kapti ekran paj pozisyon koutye ou a."
 }

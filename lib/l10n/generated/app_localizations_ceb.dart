@@ -2085,4 +2085,36 @@ class AppLocalizationsCeb extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Idugang tanan sa mga paborito ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'I-import gikan sa screenshot';
+
+  @override
+  String get holdingsReading => 'Gibasa ang imong mga posisyon…';
+
+  @override
+  String get holdingsReviewTitle => 'Mga posisyon nga nakit-an';
+
+  @override
+  String get holdingsReviewHint =>
+      'Susiha ang mga numero sa dili pa idugang. Ang presyo mao ang imong average nga presyo sa pagpalit matag share, dili ang presyo karon.';
+
+  @override
+  String get holdingsNoPrice =>
+      'Walay average nga presyo sa pagpalit sa hulagway';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Idugang ang $count ka posisyon',
+      one: 'Idugang ang 1 ka posisyon',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Walay nakit-an nga posisyon sa stock niini nga hulagway. Sulayi ang screenshot sa positions o holdings nga panid sa imong broker.';
 }

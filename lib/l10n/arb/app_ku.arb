@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} îro encamên sêmehî eşkere dike",
   "earningsRemindersTitle": "Bîranînên encaman",
   "earningsRemindersSubtitle": "Agahdariyek rojek berî ku pişkên di bijareyên te an portfolyoya te de encamên sêmehî eşkere bikin",
-  "addAllToFavorites": "Hemûyan li bijareyan zêde bike ({count})"
+  "addAllToFavorites": "Hemûyan li bijareyan zêde bike ({count})",
+  "portfolioImportPhoto": "Ji wêneya ekranê têxe",
+  "holdingsReading": "Pozîsyonên te têne xwendin…",
+  "holdingsReviewTitle": "Pozîsyonên hatine dîtin",
+  "holdingsReviewHint": "Berî ku tu wan zêde bikî, hejmaran kontrol bike. Biha bihayê navînî yê kirîna te ji bo her pişkekê ye, ne bihayê îro.",
+  "holdingsNoPrice": "Di wêneyê de bihayê navînî yê kirînê tune",
+  "holdingsAdd": "{count, plural, =1{1 pozîsyonê zêde bike} other{{count} pozîsyonan zêde bike}}",
+  "holdingsNone": "Di vê wêneyê de tu pozîsyonên pişkan nehatin dîtin. Wêneya ekranê ya rûpela pozîsyonan an xwedîtiyan a brokerê xwe biceribîne."
 }

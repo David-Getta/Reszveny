@@ -2090,4 +2090,36 @@ class AppLocalizationsMg extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Ampio daholo amin\'ny ankafizina ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Ampidiro avy amin\'ny sary efijery';
+
+  @override
+  String get holdingsReading => 'Mamaky ny fanananao…';
+
+  @override
+  String get holdingsReviewTitle => 'Fananana hita';
+
+  @override
+  String get holdingsReviewHint =>
+      'Hamarino ny isa alohan\'ny hampidiranao azy. Ny vidiny dia ny salan\'ny vidin\'ny fividiananao isaky ny anjara, fa tsy ny vidiny androany.';
+
+  @override
+  String get holdingsNoPrice =>
+      'Tsy misy salan\'ny vidin\'ny fividianana ao amin\'ny sary';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ampio fananana $count',
+      one: 'Ampio fananana 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Tsy nisy fananana anjara hita tamin\'ity sary ity. Andramo ny sary efijery amin\'ny pejin\'ny fanananao ao amin\'ny broker-nao.';
 }

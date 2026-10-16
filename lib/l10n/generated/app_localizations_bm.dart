@@ -2074,4 +2074,35 @@ class AppLocalizationsBm extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'U bɛɛ fara diyanyelenw kan ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Don ka bɔ ɛkran ja la';
+
+  @override
+  String get holdingsReading => 'I ka aksiyɔnw bɛ ka kalan…';
+
+  @override
+  String get holdingsReviewTitle => 'Aksiyɔn minnu sɔrɔla';
+
+  @override
+  String get holdingsReviewHint =>
+      'Jatew lajɛ sani i k’u fara a kan. Sɔngɔ ye i ka sanni sɔngɔ cɛmancɛ ye aksiyɔn kelen na, a tɛ bi sɔngɔ ye.';
+
+  @override
+  String get holdingsNoPrice => 'Sanni sɔngɔ cɛmancɛ tɛ ja kan';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Aksiyɔn $count fara a kan',
+      one: 'Aksiyɔn 1 fara a kan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Aksiyɔn si ma sɔrɔ nin ja kan. I ka burusi ka aksiyɔnw ɲɛ ɛkran ja dɔ lajɛ.';
 }

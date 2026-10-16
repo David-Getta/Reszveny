@@ -1603,5 +1603,22 @@
         "type": "int"
       }
     }
-  }
+  },
+  "portfolioImportPhoto": "Import from a screenshot",
+  "@portfolioImportPhoto": {
+    "description": "Portfolio menu item: read positions from a picture of a brokerage app screen."
+  },
+  "holdingsReading": "Reading your positions…",
+  "holdingsReviewTitle": "Positions found",
+  "holdingsReviewHint": "Check the numbers before adding them. The price is your average purchase price per share, not today's price.",
+  "holdingsNoPrice": "No average purchase price on the picture",
+  "holdingsAdd": "{count, plural, =1{Add 1 position} other{Add {count} positions}}",
+  "@holdingsAdd": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "holdingsNone": "No stock positions found on this picture. Try a screenshot of your broker's positions or holdings page."
 }

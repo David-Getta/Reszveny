@@ -2080,4 +2080,35 @@ class AppLocalizationsAf extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Voeg almal by gunstelinge ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Voer in uit ’n skermskoot';
+
+  @override
+  String get holdingsReading => 'Lees jou posisies…';
+
+  @override
+  String get holdingsReviewTitle => 'Posisies gevind';
+
+  @override
+  String get holdingsReviewHint =>
+      'Kontroleer die getalle voordat jy hulle byvoeg. Die prys is jou gemiddelde aankoopprys per aandeel, nie vandag se prys nie.';
+
+  @override
+  String get holdingsNoPrice => 'Geen gemiddelde aankoopprys op die prent nie';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Voeg $count posisies by',
+      one: 'Voeg 1 posisie by',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Geen aandeelposisies op hierdie prent gevind nie. Probeer ’n skermskoot van jou makelaar se posisies- of beleggingsblad.';
 }

@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} publikon rezultatet tremujore sot",
   "earningsRemindersTitle": "Kujtues për rezultatet",
   "earningsRemindersSubtitle": "Një njoftim një ditë para se aksionet e tua të preferuara ose të portofolit të publikojnë rezultatet tremujore",
-  "addAllToFavorites": "Shtoji të gjitha te të preferuarat ({count})"
+  "addAllToFavorites": "Shtoji të gjitha te të preferuarat ({count})",
+  "portfolioImportPhoto": "Importo nga një pamje ekrani",
+  "holdingsReading": "Po lexohen pozicionet e tua…",
+  "holdingsReviewTitle": "Pozicionet e gjetura",
+  "holdingsReviewHint": "Kontrollo numrat para se t'i shtosh. Çmimi është çmimi mesatar i blerjes për aksion, jo çmimi i sotëm.",
+  "holdingsNoPrice": "Nuk ka çmim mesatar blerjeje në imazh",
+  "holdingsAdd": "{count, plural, =1{Shto 1 pozicion} other{Shto {count} pozicione}}",
+  "holdingsNone": "Nuk u gjet asnjë pozicion aksionesh në këtë imazh. Provo një pamje ekrani të faqes së pozicioneve ose të zotërimeve te brokeri yt."
 }

@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} bugun choraklik natijalarini e’lon qiladi",
   "earningsRemindersTitle": "Natijalar eslatmalari",
   "earningsRemindersSubtitle": "Sevimlilaringiz yoki portfelingizdagi aksiyalar choraklik natijalarini e’lon qilishidan bir kun oldin bildirishnoma",
-  "addAllToFavorites": "Barchasini sevimlilarga qoʻshish ({count})"
+  "addAllToFavorites": "Barchasini sevimlilarga qoʻshish ({count})",
+  "portfolioImportPhoto": "Skrinshotdan import qilish",
+  "holdingsReading": "Pozitsiyalaringiz oʻqilmoqda…",
+  "holdingsReviewTitle": "Topilgan pozitsiyalar",
+  "holdingsReviewHint": "Qoʻshishdan oldin raqamlarni tekshiring. Narx — bitta aksiya uchun oʻrtacha xarid narxingiz, bugungi narx emas.",
+  "holdingsNoPrice": "Rasmda oʻrtacha xarid narxi yoʻq",
+  "holdingsAdd": "{count, plural, =1{1 ta pozitsiya qoʻshish} other{{count} ta pozitsiya qoʻshish}}",
+  "holdingsNone": "Bu rasmda aksiya pozitsiyalari topilmadi. Brokeringizdagi pozitsiyalar yoki aktivlar sahifasining skrinshotini sinab koʻring."
 }

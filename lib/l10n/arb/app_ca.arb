@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} presenta resultats trimestrals avui",
   "earningsRemindersTitle": "Recordatoris de resultats",
   "earningsRemindersSubtitle": "Una notificació el dia abans que les accions dels teus favorits o de la teva cartera presentin resultats trimestrals",
-  "addAllToFavorites": "Afegir-les totes als favorits ({count})"
+  "addAllToFavorites": "Afegir-les totes als favorits ({count})",
+  "portfolioImportPhoto": "Importa des d’una captura de pantalla",
+  "holdingsReading": "S’estan llegint les teves posicions…",
+  "holdingsReviewTitle": "Posicions trobades",
+  "holdingsReviewHint": "Comprova les xifres abans d’afegir-les. El preu és el teu preu mitjà de compra per acció, no el preu d’avui.",
+  "holdingsNoPrice": "No hi ha preu mitjà de compra a la imatge",
+  "holdingsAdd": "{count, plural, =1{Afegeix 1 posició} other{Afegeix {count} posicions}}",
+  "holdingsNone": "No s’han trobat posicions d’accions en aquesta imatge. Prova amb una captura de la pàgina de posicions o de cartera del teu bròquer."
 }

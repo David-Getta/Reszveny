@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} udi upatula mapeta a trimestre lelu",
   "earningsRemindersTitle": "Bivuluija bia mapeta",
   "earningsRemindersSubtitle": "Dimanyisha dituku dimue kumpala kua actions ya biudi musue anyi ya portefeuille webe kupatula mapeta a trimestre",
-  "addAllToFavorites": "Bueja yonso mu biudi musue ({count})"
+  "addAllToFavorites": "Bueja yonso mu biudi musue ({count})",
+  "portfolioImportPhoto": "Bueja kumbukila mu foto wa ekran",
+  "holdingsReading": "Tudi tubala bitupa biebe…",
+  "holdingsReviewTitle": "Bitupa bipetangane",
+  "holdingsReviewHint": "Tangila manomba kumpala kua kuabueja. Mushinga udi mushinga wa pankatshi uvua musumbe tshitupa tshimue, kauena mushinga wa lelu to.",
+  "holdingsNoPrice": "Kakuena mushinga wa pankatshi wa kusumba mu tshimfuanyi to",
+  "holdingsAdd": "{count, plural, =1{Bueja tshitupa 1} other{Bueja bitupa {count}}}",
+  "holdingsNone": "Katuena bapete bitupa bia actions mu tshimfuanyi etshi to. Teta foto wa ekran wa dibeji dia bitupa biebe mu application wa courtier webe."
 }

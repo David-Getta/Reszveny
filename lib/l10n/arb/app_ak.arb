@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} da n’abosome mmiɛnsa akontaabu adi ɛnnɛ",
   "earningsRemindersTitle": "Akontaabu ho nkaebɔ",
   "earningsRemindersSubtitle": "Wɔbɛbɔ wo amanneɛ da koro ansa na nea wopɛ anaa wo portfolio mu stock bi bɛda abosome mmiɛnsa akontaabu adi",
-  "addAllToFavorites": "Fa ne nyinaa ka nea mepɛ ho ({count})"
+  "addAllToFavorites": "Fa ne nyinaa ka nea mepɛ ho ({count})",
+  "portfolioImportPhoto": "Fa fi screenshot mu bra",
+  "holdingsReading": "Ɛrekenkan wo nkyɛfa…",
+  "holdingsReviewTitle": "Nkyɛfa a yɛahu",
+  "holdingsReviewHint": "Hwɛ nɔma no yiye ansa na wode aka ho. Bo no yɛ bo mfinimfini a wotɔɔ kyɛfa biara, ɛnyɛ nnɛ bo.",
+  "holdingsNoPrice": "Bo mfinimfini a wotɔe nni mfonini no so",
+  "holdingsAdd": "{count, plural, =1{Fa kyɛfa 1 ka ho} other{Fa nkyɛfa {count} ka ho}}",
+  "holdingsNone": "Yɛanhu kyɛfa biara wɔ mfonini yi so. Sɔ screenshot a ɛfiri wo broker no nkyɛfa krataafa so hwɛ."
 }

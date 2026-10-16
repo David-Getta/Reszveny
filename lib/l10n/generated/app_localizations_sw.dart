@@ -2077,4 +2077,35 @@ class AppLocalizationsSw extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Ongeza zote kwenye vipendwa ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Leta kutoka picha ya skrini';
+
+  @override
+  String get holdingsReading => 'Inasoma nafasi zako…';
+
+  @override
+  String get holdingsReviewTitle => 'Nafasi zilizopatikana';
+
+  @override
+  String get holdingsReviewHint =>
+      'Kagua namba kabla ya kuziongeza. Bei ni wastani wa bei yako ya ununuzi kwa kila hisa, si bei ya leo.';
+
+  @override
+  String get holdingsNoPrice => 'Hakuna wastani wa bei ya ununuzi kwenye picha';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ongeza nafasi $count',
+      one: 'Ongeza nafasi 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Hakuna nafasi za hisa zilizopatikana kwenye picha hii. Jaribu picha ya skrini ya ukurasa wa nafasi au mali zako kwa dalali wako.';
 }

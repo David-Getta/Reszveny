@@ -2084,4 +2084,36 @@ class AppLocalizationsOm extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Hunda filatamootti dabali ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Suuraa iskiriinii irraa galchi';
+
+  @override
+  String get holdingsReading => 'Qabeenya kee dubbisaa jira…';
+
+  @override
+  String get holdingsReviewTitle => 'Qabeenya argame';
+
+  @override
+  String get holdingsReviewHint =>
+      'Osoo hin dabaliin dura lakkoofsota mirkaneessi. Gatiin kun gatii bittaa giddugaleessaa kee aksiyoona tokkoof ti, kan har\'aa miti.';
+
+  @override
+  String get holdingsNoPrice =>
+      'Suuraa irratti gatiin bittaa giddugaleessaa hin jiru';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Qabeenya $count dabali',
+      one: 'Qabeenya 1 dabali',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Suuraa kana irratti qabeenyi aksiyoonaa hin argamne. Suuraa iskiriinii fuula qabeenyaa brookarii keetii yaali.';
 }

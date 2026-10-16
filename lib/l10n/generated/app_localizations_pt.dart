@@ -2081,4 +2081,35 @@ class AppLocalizationsPt extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Adicionar todas aos favoritos ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Importar de uma captura de ecrã';
+
+  @override
+  String get holdingsReading => 'A ler as suas posições…';
+
+  @override
+  String get holdingsReviewTitle => 'Posições encontradas';
+
+  @override
+  String get holdingsReviewHint =>
+      'Verifique os números antes de os adicionar. O preço é o seu preço médio de compra por ação, não o preço de hoje.';
+
+  @override
+  String get holdingsNoPrice => 'Sem preço médio de compra na imagem';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Adicionar $count posições',
+      one: 'Adicionar 1 posição',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Não foram encontradas posições em ações nesta imagem. Tente uma captura de ecrã da página de posições ou carteira da sua corretora.';
 }

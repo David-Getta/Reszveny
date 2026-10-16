@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} bu gün rüblük nəticələrini açıqlayır",
   "earningsRemindersTitle": "Nəticə xatırlatmaları",
   "earningsRemindersSubtitle": "Seçilmişlərinizdəki və ya portfelinizdəki səhmlər rüblük nəticələrini açıqlamazdan bir gün əvvəl bildiriş",
-  "addAllToFavorites": "Hamısını seçilmişlərə əlavə et ({count})"
+  "addAllToFavorites": "Hamısını seçilmişlərə əlavə et ({count})",
+  "portfolioImportPhoto": "Ekran görüntüsündən idxal et",
+  "holdingsReading": "Mövqeləriniz oxunur…",
+  "holdingsReviewTitle": "Tapılan mövqelər",
+  "holdingsReviewHint": "Əlavə etməzdən əvvəl rəqəmləri yoxlayın. Qiymət bugünkü qiymət deyil, səhm başına orta alış qiymətinizdir.",
+  "holdingsNoPrice": "Şəkildə orta alış qiyməti yoxdur",
+  "holdingsAdd": "{count, plural, =1{1 mövqe əlavə et} other{{count} mövqe əlavə et}}",
+  "holdingsNone": "Bu şəkildə səhm mövqeyi tapılmadı. Brokerinizin mövqelər və ya portfel səhifəsinin ekran görüntüsünü yoxlayın."
 }

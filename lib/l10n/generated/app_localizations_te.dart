@@ -2082,4 +2082,35 @@ class AppLocalizationsTe extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'అన్నీ ఇష్టమైనవాటికి జోడించండి ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'స్క్రీన్‌షాట్ నుండి దిగుమతి చేయి';
+
+  @override
+  String get holdingsReading => 'మీ పొజిషన్‌లను చదువుతున్నాం…';
+
+  @override
+  String get holdingsReviewTitle => 'కనుగొన్న పొజిషన్‌లు';
+
+  @override
+  String get holdingsReviewHint =>
+      'జోడించే ముందు సంఖ్యలను తనిఖీ చేయండి. ధర అనేది ఒక్కో షేరుకు మీ సగటు కొనుగోలు ధర, నేటి ధర కాదు.';
+
+  @override
+  String get holdingsNoPrice => 'చిత్రంలో సగటు కొనుగోలు ధర లేదు';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count పొజిషన్‌లు జోడించు',
+      one: '1 పొజిషన్ జోడించు',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'ఈ చిత్రంలో షేర్ పొజిషన్‌లు ఏవీ కనుగొనబడలేదు. మీ బ్రోకర్ పొజిషన్‌లు లేదా హోల్డింగ్స్ పేజీ స్క్రీన్‌షాట్‌ను ప్రయత్నించండి.';
 }

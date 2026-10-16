@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} आज तिमाही निकाल जाहीर करणार",
   "earningsRemindersTitle": "निकाल स्मरणपत्रे",
   "earningsRemindersSubtitle": "तुमचे आवडते किंवा पोर्टफोलिओमधील शेअर्स तिमाही निकाल जाहीर करण्याच्या आदल्या दिवशी सूचना",
-  "addAllToFavorites": "सर्व आवडत्यांमध्ये जोडा ({count})"
+  "addAllToFavorites": "सर्व आवडत्यांमध्ये जोडा ({count})",
+  "portfolioImportPhoto": "स्क्रीनशॉटमधून आयात करा",
+  "holdingsReading": "तुमच्या पोझिशन्स वाचत आहे…",
+  "holdingsReviewTitle": "सापडलेल्या पोझिशन्स",
+  "holdingsReviewHint": "जोडण्यापूर्वी आकडे तपासा. किंमत ही प्रति शेअर तुमची सरासरी खरेदी किंमत आहे, आजची किंमत नाही.",
+  "holdingsNoPrice": "प्रतिमेत सरासरी खरेदी किंमत नाही",
+  "holdingsAdd": "{count, plural, =1{1 पोझिशन जोडा} other{{count} पोझिशन्स जोडा}}",
+  "holdingsNone": "या प्रतिमेत कोणत्याही शेअर पोझिशन्स सापडल्या नाहीत. तुमच्या ब्रोकरच्या पोझिशन्स किंवा होल्डिंग्ज पेजचा स्क्रीनशॉट वापरून पहा."
 }

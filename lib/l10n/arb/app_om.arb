@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} har'a bu'aa kurmaanaa ifa baasa",
   "earningsRemindersTitle": "Yaadachiisa bu'aa",
   "earningsRemindersSubtitle": "Beeksisa guyyaa tokko dura filatamoon kee ykn aksiyoonni poortfooliyoo kee bu'aa kurmaanaa ifa baasan",
-  "addAllToFavorites": "Hunda filatamootti dabali ({count})"
+  "addAllToFavorites": "Hunda filatamootti dabali ({count})",
+  "portfolioImportPhoto": "Suuraa iskiriinii irraa galchi",
+  "holdingsReading": "Qabeenya kee dubbisaa jira…",
+  "holdingsReviewTitle": "Qabeenya argame",
+  "holdingsReviewHint": "Osoo hin dabaliin dura lakkoofsota mirkaneessi. Gatiin kun gatii bittaa giddugaleessaa kee aksiyoona tokkoof ti, kan har'aa miti.",
+  "holdingsNoPrice": "Suuraa irratti gatiin bittaa giddugaleessaa hin jiru",
+  "holdingsAdd": "{count, plural, =1{Qabeenya 1 dabali} other{Qabeenya {count} dabali}}",
+  "holdingsNone": "Suuraa kana irratti qabeenyi aksiyoonaa hin argamne. Suuraa iskiriinii fuula qabeenyaa brookarii keetii yaali."
 }

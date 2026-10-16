@@ -2076,4 +2076,35 @@ class AppLocalizationsTk extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Ählisini saýlananlara goş ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Ekran suratyndan import et';
+
+  @override
+  String get holdingsReading => 'Pozisiýalaryň okalýar…';
+
+  @override
+  String get holdingsReviewTitle => 'Tapylan pozisiýalar';
+
+  @override
+  String get holdingsReviewHint =>
+      'Goşmazdan öň sanlary barla. Baha — bir paýnama üçin ortaça satyn alyş bahaň, şu günki baha däl.';
+
+  @override
+  String get holdingsNoPrice => 'Suratda ortaça satyn alyş bahasy ýok';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pozisiýa goş',
+      one: '1 pozisiýa goş',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Bu suratda paýnama pozisiýasy tapylmady. Brokeriňiň pozisiýalar ýa-da aktiwler sahypasynyň ekran suratyny synap gör.';
 }

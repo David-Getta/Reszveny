@@ -2013,4 +2013,35 @@ class AppLocalizationsKo extends AppLocalizations {
   String addAllToFavorites(int count) {
     return '모두 즐겨찾기에 추가($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => '스크린샷에서 가져오기';
+
+  @override
+  String get holdingsReading => '보유 종목을 읽는 중…';
+
+  @override
+  String get holdingsReviewTitle => '찾은 보유 종목';
+
+  @override
+  String get holdingsReviewHint =>
+      '추가하기 전에 숫자를 확인하세요. 가격은 오늘 가격이 아니라 주당 평균 매수가입니다.';
+
+  @override
+  String get holdingsNoPrice => '이미지에 평균 매수가가 없습니다';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '보유 종목 $count개 추가',
+      one: '보유 종목 1개 추가',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      '이 이미지에서 보유 종목을 찾지 못했습니다. 증권사 앱의 잔고 또는 보유 종목 화면 스크린샷을 사용해 보세요.';
 }

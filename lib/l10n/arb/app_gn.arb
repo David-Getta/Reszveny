@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} ohechauka mbohapy jasy resultado koʼága",
   "earningsRemindersTitle": "Resultado manduʼarã",
   "earningsRemindersSubtitle": "Marandu peteĩ ára mboyve nde ojeguerohoryvéva térã nde portafólio acciones ohechauka mbohapy jasy resultado",
-  "addAllToFavorites": "Embojuaju opavave ojeguerohoryvévape ({count})"
+  "addAllToFavorites": "Embojuaju opavave ojeguerohoryvévape ({count})",
+  "portfolioImportPhoto": "Egueru pantalla taʼãngágui",
+  "holdingsReading": "Oñemoñeʼẽ hína ereguerekóva…",
+  "holdingsReviewTitle": "Ereguerekóva ojejuhúva",
+  "holdingsReviewHint": "Ehechajey papapy embojuaju mboyve. Tepy haʼe tepy mbytegua rejoguávakuri peteĩteĩ acción, ndahaʼéi ko árape tepy.",
+  "holdingsNoPrice": "Ndaipóri tepy mbytegua taʼãngápe",
+  "holdingsAdd": "{count, plural, =1{Embojuaju 1 ereguerekóva} other{Embojuaju {count} ereguerekóva}}",
+  "holdingsNone": "Ndojejuhúi acción ko taʼãngápe. Eñehaʼã peteĩ pantalla taʼãnga nde broker kuatiarogue ereguerekóvagui."
 }

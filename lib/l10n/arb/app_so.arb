@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} wuxuu maanta soo bandhigayaa natiijooyinka rubuc-sanadeedka",
   "earningsRemindersTitle": "Xasuusinta natiijooyinka",
   "earningsRemindersSubtitle": "Ogeysiis maalin ka hor inta aysan saamiyada aad jeceshahay ama kuwa boortfoliyahaaga soo bandhigin natiijooyinka rubuc-sanadeedka",
-  "addAllToFavorites": "Dhammaan ku dar kuwa la jecel yahay ({count})"
+  "addAllToFavorites": "Dhammaan ku dar kuwa la jecel yahay ({count})",
+  "portfolioImportPhoto": "Ka soo deji sawir-shaashadeed",
+  "holdingsReading": "Waa la akhrinayaa mawqifyadaada…",
+  "holdingsReviewTitle": "Mawqifyada la helay",
+  "holdingsReviewHint": "Hubi tirooyinka ka hor intaadan ku darin. Qiimuhu waa celceliska qiimaha iibsasho ee saami kasta, ma aha qiimaha maanta.",
+  "holdingsNoPrice": "Sawirka kuma jiro celceliska qiimaha iibsasho",
+  "holdingsAdd": "{count, plural, =1{Ku dar 1 mawqif} other{Ku dar {count} mawqif}}",
+  "holdingsNone": "Sawirkan laguma helin mawqif saami. Isku day sawir-shaashadeed bogga mawqifyada ama hantida ee dillaalkaaga."
 }

@@ -40,6 +40,7 @@ import 'features/news/daily_brief.dart';
 import 'features/news/watch_news.dart';
 import 'features/notes/notes_store.dart';
 import 'features/portfolio/portfolio_review.dart';
+import 'features/portfolio/holdings_reader.dart';
 import 'features/portfolio/portfolio_store.dart';
 import 'features/sync/sync_service.dart';
 import 'features/recognition/claude_vision_recognizer.dart';
@@ -75,6 +76,7 @@ class AppServices {
     NotesStore? notes,
     PortfolioReviewer? portfolioReviewer,
     DailyBrief Function(WatchNewsService news)? dailyBrief,
+    HoldingsReader? holdingsReader,
   }) : fx = fx ?? FxService(),
        updates = updates ?? UpdateService(config: config),
        portfolio = portfolio ?? PortfolioStore(),
@@ -84,6 +86,7 @@ class AppServices {
            portfolioReviewer ??
            PortfolioReviewer(config: config, marketData: marketData, client: backend?.authenticated),
        chat = chat ?? AnalysisChat(config: config, client: backend?.authenticated),
+       holdingsReader = holdingsReader ?? HoldingsReader(config: config, client: backend?.authenticated),
        telemetry = telemetry ?? Telemetry(preferences: preferences, sink: backend?.sendTelemetry) {
     this.telemetry.versionOf ??= () => this.updates.currentVersion;
     events = EventsService(
@@ -251,6 +254,9 @@ class AppServices {
 
   /// „Kérdezz az elemzésről” beszélgetések.
   final AnalysisChat chat;
+
+  /// Bróker-képernyőkép beolvasása a portfólió-importhoz.
+  final HoldingsReader holdingsReader;
 
   /// Saját jegyzetek részvényenként (csak a készüléken).
   final NotesStore notes;

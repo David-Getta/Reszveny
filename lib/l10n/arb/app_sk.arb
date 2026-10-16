@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} dnes zverejní štvrťročné výsledky",
   "earningsRemindersTitle": "Pripomienky výsledkov",
   "earningsRemindersSubtitle": "Upozornenie deň pred zverejnením štvrťročných výsledkov akcií z obľúbených alebo z tvojho portfólia",
-  "addAllToFavorites": "Pridať všetky do obľúbených ({count})"
+  "addAllToFavorites": "Pridať všetky do obľúbených ({count})",
+  "portfolioImportPhoto": "Importovať zo snímky obrazovky",
+  "holdingsReading": "Načítavam vaše pozície…",
+  "holdingsReviewTitle": "Nájdené pozície",
+  "holdingsReviewHint": "Skontrolujte čísla, skôr ako ich pridáte. Cena je vaša priemerná nákupná cena za akciu, nie dnešná cena.",
+  "holdingsNoPrice": "Na obrázku nie je priemerná nákupná cena",
+  "holdingsAdd": "{count, plural, one{Pridať {count} pozíciu} few{Pridať {count} pozície} many{Pridať {count} pozície} other{Pridať {count} pozícií}}",
+  "holdingsNone": "Na tomto obrázku sa nenašli žiadne akciové pozície. Skúste snímku obrazovky stránky s pozíciami alebo portfóliom u vášho brokera."
 }

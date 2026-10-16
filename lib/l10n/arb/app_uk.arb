@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} сьогодні публікує квартальні результати",
   "earningsRemindersTitle": "Нагадування про результати",
   "earningsRemindersSubtitle": "Сповіщення за день до того, як акції з обраного або портфеля опублікують квартальні результати",
-  "addAllToFavorites": "Додати всі до обраного ({count})"
+  "addAllToFavorites": "Додати всі до обраного ({count})",
+  "portfolioImportPhoto": "Імпорт зі знімка екрана",
+  "holdingsReading": "Зчитування позицій…",
+  "holdingsReviewTitle": "Знайдені позиції",
+  "holdingsReviewHint": "Перевірте числа, перш ніж додавати. Ціна — це середня ціна купівлі за акцію, а не сьогоднішня ціна.",
+  "holdingsNoPrice": "На зображенні немає середньої ціни купівлі",
+  "holdingsAdd": "{count, plural, one{Додати {count} позицію} few{Додати {count} позиції} many{Додати {count} позицій} other{Додати {count} позиції}}",
+  "holdingsNone": "На цьому зображенні не знайдено позицій в акціях. Спробуйте знімок екрана сторінки позицій або активів у вашого брокера."
 }

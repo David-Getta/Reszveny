@@ -2004,4 +2004,35 @@ class AppLocalizationsJa extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'すべてお気に入りに追加 ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'スクリーンショットからインポート';
+
+  @override
+  String get holdingsReading => '保有銘柄を読み取り中…';
+
+  @override
+  String get holdingsReviewTitle => '見つかった保有銘柄';
+
+  @override
+  String get holdingsReviewHint =>
+      '追加する前に数値を確認してください。価格は今日の株価ではなく、1株あたりの平均取得単価です。';
+
+  @override
+  String get holdingsNoPrice => '画像に平均取得単価がありません';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 件の保有銘柄を追加',
+      one: '1 件の保有銘柄を追加',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'この画像から保有銘柄が見つかりませんでした。証券会社アプリの保有銘柄（ポジション）画面のスクリーンショットをお試しください。';
 }

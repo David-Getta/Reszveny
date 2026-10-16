@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} iratangaza ibyavuye mu gihembwe uyu munsi",
   "earningsRemindersTitle": "Kwibutswa ibyavuye mu gihembwe",
   "earningsRemindersSubtitle": "Imenyesha umunsi umwe mbere y'uko ibyo ukunda cyangwa imigabane yo muri portfolio yawe bitangaza ibyavuye mu gihembwe",
-  "addAllToFavorites": "Shyira byose mu byo ukunda ({count})"
+  "addAllToFavorites": "Shyira byose mu byo ukunda ({count})",
+  "portfolioImportPhoto": "Injiza uvuye ku ifoto ya ekara",
+  "holdingsReading": "Turimo gusoma imigabane yawe…",
+  "holdingsReviewTitle": "Imigabane yabonetse",
+  "holdingsReviewHint": "Genzura imibare mbere yo kuyongeramo. Igiciro ni impuzandengo y'igiciro waguzeho umugabane umwe, si igiciro cy'uyu munsi.",
+  "holdingsNoPrice": "Nta mpuzandengo y'igiciro cyo kugura iri ku ifoto",
+  "holdingsAdd": "{count, plural, =1{Ongeramo umugabane 1} other{Ongeramo imigabane {count}}}",
+  "holdingsNone": "Nta migabane yabonetse kuri iyi foto. Gerageza ifoto ya ekara y'urupapuro rw'imigabane yawe kuri burokeri wawe."
 }

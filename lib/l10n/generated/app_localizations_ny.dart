@@ -2082,4 +2082,36 @@ class AppLocalizationsNy extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Onjezani zonse ku zokondedwa ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto =>
+      'Lowetsani kuchokera pa chithunzi cha sikirini';
+
+  @override
+  String get holdingsReading => 'Tikuwerenga masheya anu…';
+
+  @override
+  String get holdingsReviewTitle => 'Masheya opezeka';
+
+  @override
+  String get holdingsReviewHint =>
+      'Yang\'anani manambala musanawonjezere. Mtengo ndi mtengo wanu wapakati wogulira pa sheya iliyonse, osati mtengo wa lero.';
+
+  @override
+  String get holdingsNoPrice => 'Palibe mtengo wapakati wogulira pa chithunzi';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Wonjezerani masheya $count',
+      one: 'Wonjezerani sheya 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Sitinapeze masheya pa chithunzi ichi. Yesani chithunzi cha sikirini cha tsamba la masheya a broker wanu.';
 }

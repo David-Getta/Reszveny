@@ -2079,4 +2079,35 @@ class AppLocalizationsSu extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Tambahkeun sadayana ka paporit ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Impor tina tangkapan layar';
+
+  @override
+  String get holdingsReading => 'Maca posisi anjeun…';
+
+  @override
+  String get holdingsReviewTitle => 'Posisi anu kapanggih';
+
+  @override
+  String get holdingsReviewHint =>
+      'Pariksa heula angka-angkana saméméh ditambahkeun. Harga téh rata-rata harga pameulian per saham anjeun, lain harga poé ieu.';
+
+  @override
+  String get holdingsNoPrice => 'Teu aya rata-rata harga pameulian dina gambar';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Tambahkeun $count posisi',
+      one: 'Tambahkeun 1 posisi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Teu kapanggih posisi saham dina gambar ieu. Cobian tangkapan layar kaca posisi atanapi aset di aplikasi pialang anjeun.';
 }

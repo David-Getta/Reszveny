@@ -2088,4 +2088,36 @@ class AppLocalizationsQu extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Llapanta munasqakunaman yapay ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Pantalla rikch\'aymanta apamuy';
+
+  @override
+  String get holdingsReading => 'Kapuqniykikunata ñawichkan…';
+
+  @override
+  String get holdingsReviewTitle => 'Tarisqa kapuqkuna';
+
+  @override
+  String get holdingsReviewHint =>
+      'Yupaykunata qhawariy manaraq yapachkaspa. Chaninqa sapa acciónpaq chawpi rantisqa chaniykim, manam kunan p\'unchaw chaninchu.';
+
+  @override
+  String get holdingsNoPrice =>
+      'Rikch\'aypi mana chawpi rantisqa chanin kanchu';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count kapuqta yapay',
+      one: '1 kapuqta yapay',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Kay rikch\'aypi mana acciónkunata tarinchikchu. Brokerniykiq kapuqnin p\'anqanmanta pantalla rikch\'ayta llamk\'achiy.';
 }

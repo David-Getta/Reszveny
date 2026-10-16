@@ -2095,4 +2095,35 @@ class AppLocalizationsMk extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Додај ги сите во омилени ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Увези од слика од екранот';
+
+  @override
+  String get holdingsReading => 'Се читаат вашите позиции…';
+
+  @override
+  String get holdingsReviewTitle => 'Пронајдени позиции';
+
+  @override
+  String get holdingsReviewHint =>
+      'Проверете ги бројките пред да ги додадете. Цената е вашата просечна набавна цена по акција, не денешната цена.';
+
+  @override
+  String get holdingsNoPrice => 'На сликата нема просечна набавна цена';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Додај $count позиции',
+      one: 'Додај $count позиција',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'На оваа слика не се пронајдени позиции во акции. Обидете се со слика од екранот на страницата со позиции или портфолио кај вашиот брокер.';
 }

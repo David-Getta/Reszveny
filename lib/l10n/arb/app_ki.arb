@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} nĩĩraheana maumĩrĩra ma mĩeri ĩtatũ ũmũthĩ",
   "earningsRemindersTitle": "Kũririkania maumĩrĩra",
   "earningsRemindersSubtitle": "Imenyithia mũthenya ũmwe mbere ya hisa cia iria wendete kana portfolio yaku ciheane maumĩrĩra ma mĩeri ĩtatũ",
-  "addAllToFavorites": "Ongerera yothe harĩ iria wendete ({count})"
+  "addAllToFavorites": "Ongerera yothe harĩ iria wendete ({count})",
+  "portfolioImportPhoto": "Ingĩria kuuma mbica ya skrini",
+  "holdingsReading": "Nĩtũrathoma mĩgabana yaku…",
+  "holdingsReviewTitle": "Mĩgabana ĩrĩa yoneka",
+  "holdingsReviewHint": "Thuthuria namba mbere ya kũmongerera. Thogora nĩ thogora wa gatagatĩ ũrĩa wagũrire o mũgabana ũmwe, ti thogora wa ũmũthĩ.",
+  "holdingsNoPrice": "Gũtirĩ thogora wa gatagatĩ wa kũgũra mbicainĩ",
+  "holdingsAdd": "{count, plural, =1{Ongerera mũgabana 1} other{Ongerera mĩgabana {count}}}",
+  "holdingsNone": "Gũtirĩ mĩgabana yoneka mbicainĩ ĩno. Geria mbica ya skrini ya karatathi ka mĩgabana yaku kwa broker waku."
 }

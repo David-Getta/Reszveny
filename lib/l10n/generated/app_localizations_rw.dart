@@ -2084,4 +2084,36 @@ class AppLocalizationsRw extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Shyira byose mu byo ukunda ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Injiza uvuye ku ifoto ya ekara';
+
+  @override
+  String get holdingsReading => 'Turimo gusoma imigabane yawe…';
+
+  @override
+  String get holdingsReviewTitle => 'Imigabane yabonetse';
+
+  @override
+  String get holdingsReviewHint =>
+      'Genzura imibare mbere yo kuyongeramo. Igiciro ni impuzandengo y\'igiciro waguzeho umugabane umwe, si igiciro cy\'uyu munsi.';
+
+  @override
+  String get holdingsNoPrice =>
+      'Nta mpuzandengo y\'igiciro cyo kugura iri ku ifoto';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ongeramo imigabane $count',
+      one: 'Ongeramo umugabane 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Nta migabane yabonetse kuri iyi foto. Gerageza ifoto ya ekara y\'urupapuro rw\'imigabane yawe kuri burokeri wawe.';
 }

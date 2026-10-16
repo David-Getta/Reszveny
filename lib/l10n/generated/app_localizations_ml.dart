@@ -2084,4 +2084,35 @@ class AppLocalizationsMl extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'എല്ലാം പ്രിയപ്പെട്ടവയിലേക്ക് ചേർക്കുക ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'സ്ക്രീൻഷോട്ടിൽ നിന്ന് ഇമ്പോർട്ട് ചെയ്യുക';
+
+  @override
+  String get holdingsReading => 'നിങ്ങളുടെ പൊസിഷനുകൾ വായിക്കുന്നു…';
+
+  @override
+  String get holdingsReviewTitle => 'കണ്ടെത്തിയ പൊസിഷനുകൾ';
+
+  @override
+  String get holdingsReviewHint =>
+      'ചേർക്കുന്നതിന് മുമ്പ് സംഖ്യകൾ പരിശോധിക്കുക. വില ഓരോ ഓഹരിക്കുമുള്ള നിങ്ങളുടെ ശരാശരി വാങ്ങൽ വിലയാണ്, ഇന്നത്തെ വിലയല്ല.';
+
+  @override
+  String get holdingsNoPrice => 'ചിത്രത്തിൽ ശരാശരി വാങ്ങൽ വിലയില്ല';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count പൊസിഷനുകൾ ചേർക്കുക',
+      one: '1 പൊസിഷൻ ചേർക്കുക',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'ഈ ചിത്രത്തിൽ ഓഹരി പൊസിഷനുകളൊന്നും കണ്ടെത്തിയില്ല. നിങ്ങളുടെ ബ്രോക്കറുടെ പൊസിഷനുകൾ അല്ലെങ്കിൽ ഹോൾഡിംഗ്സ് പേജിന്റെ സ്ക്രീൻഷോട്ട് പരീക്ഷിക്കുക.';
 }

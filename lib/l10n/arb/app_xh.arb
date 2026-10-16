@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} ikhupha iziphumo zekota namhlanje",
   "earningsRemindersTitle": "Izikhumbuzi zeziphumo",
   "earningsRemindersSubtitle": "Isaziso usuku olungaphambi kokuba izabelo zakho ezithandwayo okanye zepotifoliyo yakho zikhuphe iziphumo zekota",
-  "addAllToFavorites": "Yongeza konke kwezithandwayo ({count})"
+  "addAllToFavorites": "Yongeza konke kwezithandwayo ({count})",
+  "portfolioImportPhoto": "Ngenisa ukusuka kumfanekiso wesikrini",
+  "holdingsReading": "Ifunda izabelo zakho…",
+  "holdingsReviewTitle": "Izabelo ezifunyenweyo",
+  "holdingsReviewHint": "Jonga amanani phambi kokuba uwongeze. Ixabiso lixabiso lakho eliphakathi lokuthenga ngesabelo ngasinye, ingelilo ixabiso lanamhlanje.",
+  "holdingsNoPrice": "Akukho xabiso liphakathi lokuthenga emfanekisweni",
+  "holdingsAdd": "{count, plural, =1{Yongeza isabelo esinye} other{Yongeza izabelo ezi-{count}}}",
+  "holdingsNone": "Akukho zabelo zifunyenweyo kulo mfanekiso. Zama umfanekiso wesikrini wephepha lezabelo okanye lezinto ozibambileyo kwibhrokha yakho."
 }

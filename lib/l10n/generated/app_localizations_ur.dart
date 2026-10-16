@@ -2076,4 +2076,35 @@ class AppLocalizationsUr extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'سب پسندیدہ میں شامل کریں ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'اسکرین شاٹ سے امپورٹ کریں';
+
+  @override
+  String get holdingsReading => 'آپ کی پوزیشنز پڑھی جا رہی ہیں…';
+
+  @override
+  String get holdingsReviewTitle => 'ملنے والی پوزیشنز';
+
+  @override
+  String get holdingsReviewHint =>
+      'شامل کرنے سے پہلے اعداد چیک کریں۔ قیمت فی شیئر آپ کی اوسط خریداری قیمت ہے، آج کی قیمت نہیں۔';
+
+  @override
+  String get holdingsNoPrice => 'تصویر میں اوسط خریداری قیمت نہیں ہے';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count پوزیشنز شامل کریں',
+      one: '1 پوزیشن شامل کریں',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'اس تصویر میں شیئرز کی کوئی پوزیشن نہیں ملی۔ اپنے بروکر کے پوزیشنز یا ہولڈنگز صفحے کا اسکرین شاٹ آزمائیں۔';
 }

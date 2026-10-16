@@ -2133,4 +2133,37 @@ class AppLocalizationsRu extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Добавить все в избранное ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Импорт со скриншота';
+
+  @override
+  String get holdingsReading => 'Считываем ваши позиции…';
+
+  @override
+  String get holdingsReviewTitle => 'Найденные позиции';
+
+  @override
+  String get holdingsReviewHint =>
+      'Проверьте числа, прежде чем добавлять их. Цена – это ваша средняя цена покупки за акцию, а не сегодняшняя цена.';
+
+  @override
+  String get holdingsNoPrice => 'На изображении нет средней цены покупки';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Добавить $count позиции',
+      many: 'Добавить $count позиций',
+      few: 'Добавить $count позиции',
+      one: 'Добавить $count позицию',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'На этом изображении не найдено позиций по акциям. Попробуйте скриншот страницы позиций или портфеля у вашего брокера.';
 }

@@ -2085,4 +2085,35 @@ class AppLocalizationsCa extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Afegir-les totes als favorits ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Importa des d’una captura de pantalla';
+
+  @override
+  String get holdingsReading => 'S’estan llegint les teves posicions…';
+
+  @override
+  String get holdingsReviewTitle => 'Posicions trobades';
+
+  @override
+  String get holdingsReviewHint =>
+      'Comprova les xifres abans d’afegir-les. El preu és el teu preu mitjà de compra per acció, no el preu d’avui.';
+
+  @override
+  String get holdingsNoPrice => 'No hi ha preu mitjà de compra a la imatge';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Afegeix $count posicions',
+      one: 'Afegeix 1 posició',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'No s’han trobat posicions d’accions en aquesta imatge. Prova amb una captura de la pàgina de posicions o de cartera del teu bròquer.';
 }

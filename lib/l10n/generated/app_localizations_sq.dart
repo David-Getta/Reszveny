@@ -2083,4 +2083,35 @@ class AppLocalizationsSq extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Shtoji të gjitha te të preferuarat ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Importo nga një pamje ekrani';
+
+  @override
+  String get holdingsReading => 'Po lexohen pozicionet e tua…';
+
+  @override
+  String get holdingsReviewTitle => 'Pozicionet e gjetura';
+
+  @override
+  String get holdingsReviewHint =>
+      'Kontrollo numrat para se t\'i shtosh. Çmimi është çmimi mesatar i blerjes për aksion, jo çmimi i sotëm.';
+
+  @override
+  String get holdingsNoPrice => 'Nuk ka çmim mesatar blerjeje në imazh';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Shto $count pozicione',
+      one: 'Shto 1 pozicion',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Nuk u gjet asnjë pozicion aksionesh në këtë imazh. Provo një pamje ekrani të faqes së pozicioneve ose të zotërimeve te brokeri yt.';
 }

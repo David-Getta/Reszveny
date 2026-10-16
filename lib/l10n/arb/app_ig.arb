@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} na-ewepụta nsonaazụ nkeji ọnwa atọ taa",
   "earningsRemindersTitle": "Ncheta nsonaazụ",
   "earningsRemindersSubtitle": "Ọkwa otu ụbọchị tupu òkè dị n'ọkacha mmasị gị ma ọ bụ na pọtfolio gị ewepụta nsonaazụ nkeji ọnwa atọ",
-  "addAllToFavorites": "Tinye ha niile n'ọkacha mmasị ({count})"
+  "addAllToFavorites": "Tinye ha niile n'ọkacha mmasị ({count})",
+  "portfolioImportPhoto": "Bubata site na foto ihuenyo",
+  "holdingsReading": "Na-agụ òkè gị…",
+  "holdingsReviewTitle": "Òkè achọtara",
+  "holdingsReviewHint": "Lelee ọnụọgụ ndị a tupu ịgbakwunye ha. Ọnụahịa bụ ọnụahịa nkezi i ji zụta otu òkè, ọ bụghị ọnụahịa taa.",
+  "holdingsNoPrice": "Enweghị ọnụahịa nkezi ịzụrụ na onyonyo a",
+  "holdingsAdd": "{count, plural, =1{Gbakwunye òkè 1} other{Gbakwunye òkè {count}}}",
+  "holdingsNone": "Achọtaghị òkè ahịa ọ bụla na onyonyo a. Nwalee foto ihuenyo nke peeji òkè gị n'ime ngwa onye na-ere ahịa òkè gị."
 }

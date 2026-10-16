@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} අද කාර්තුමය ප්‍රතිඵල නිකුත් කරයි",
   "earningsRemindersTitle": "ප්‍රතිඵල සිහිකැඳවීම්",
   "earningsRemindersSubtitle": "ඔබේ ප්‍රියතම හෝ කළඹේ කොටස් කාර්තුමය ප්‍රතිඵල නිකුත් කිරීමට පෙර දින දැනුම්දීමක්",
-  "addAllToFavorites": "සියල්ල ප්‍රියතමවලට එක් කරන්න ({count})"
+  "addAllToFavorites": "සියල්ල ප්‍රියතමවලට එක් කරන්න ({count})",
+  "portfolioImportPhoto": "තිර රුවෙන් ආනයනය කරන්න",
+  "holdingsReading": "ඔබේ කොටස් හිමිකම් කියවමින්…",
+  "holdingsReviewTitle": "හමු වූ කොටස් හිමිකම්",
+  "holdingsReviewHint": "එක් කිරීමට පෙර අංක පරීක්ෂා කරන්න. මිල යනු අද මිල නොව, කොටසකට ඔබේ සාමාන්‍ය මිලදී ගැනීමේ මිලයි.",
+  "holdingsNoPrice": "රූපයේ සාමාන්‍ය මිලදී ගැනීමේ මිලක් නැත",
+  "holdingsAdd": "{count, plural, =1{හිමිකම් 1ක් එක් කරන්න} other{හිමිකම් {count}ක් එක් කරන්න}}",
+  "holdingsNone": "මෙම රූපයේ කොටස් හිමිකම් කිසිවක් හමු නොවීය. ඔබේ තැරැව්කරුගේ කොටස් හිමිකම් පිටුවේ තිර රුවක් උත්සාහ කරන්න."
 }

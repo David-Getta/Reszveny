@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} e phasalatsa dipoelo tsa kotara gompieno",
   "earningsRemindersTitle": "Dikgakololo tsa dipoelo",
   "earningsRemindersSubtitle": "Kitsiso letsatsi pele ga dishere tse o di ratang kgotsa tsa phothefolio ya gago di phasalatsa dipoelo tsa kotara",
-  "addAllToFavorites": "Tsenya tsotlhe mo go tse o di ratang ({count})"
+  "addAllToFavorites": "Tsenya tsotlhe mo go tse o di ratang ({count})",
+  "portfolioImportPhoto": "Tsenya go tswa mo setshwantshong sa sekirini",
+  "holdingsReading": "E bala maemo a gago…",
+  "holdingsReviewTitle": "Maemo a a bonweng",
+  "holdingsReviewHint": "Tlhola dipalo pele o di oketsa. Tlhwatlhwa ke tlhwatlhwa ya gago e e magareng ya theko ya seabe se le sengwe, e seng tlhwatlhwa ya gompieno.",
+  "holdingsNoPrice": "Ga go na tlhwatlhwa e e magareng ya theko mo setshwantshong",
+  "holdingsAdd": "{count, plural, =1{Oketsa boemo bo le bongwe} other{Oketsa maemo a le {count}}}",
+  "holdingsNone": "Ga go a bonwa maemo a diabe mo setshwantshong se. Leka setshwantsho sa sekirini sa tsebe ya maemo kgotsa dithoto tsa gago kwa brokareng ya gago."
 }

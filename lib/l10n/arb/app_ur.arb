@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} آج سہ ماہی نتائج جاری کرے گا",
   "earningsRemindersTitle": "نتائج کی یاد دہانیاں",
   "earningsRemindersSubtitle": "آپ کے پسندیدہ یا پورٹ فولیو کے اسٹاکس کے سہ ماہی نتائج سے ایک دن پہلے اطلاع",
-  "addAllToFavorites": "سب پسندیدہ میں شامل کریں ({count})"
+  "addAllToFavorites": "سب پسندیدہ میں شامل کریں ({count})",
+  "portfolioImportPhoto": "اسکرین شاٹ سے امپورٹ کریں",
+  "holdingsReading": "آپ کی پوزیشنز پڑھی جا رہی ہیں…",
+  "holdingsReviewTitle": "ملنے والی پوزیشنز",
+  "holdingsReviewHint": "شامل کرنے سے پہلے اعداد چیک کریں۔ قیمت فی شیئر آپ کی اوسط خریداری قیمت ہے، آج کی قیمت نہیں۔",
+  "holdingsNoPrice": "تصویر میں اوسط خریداری قیمت نہیں ہے",
+  "holdingsAdd": "{count, plural, =1{1 پوزیشن شامل کریں} other{{count} پوزیشنز شامل کریں}}",
+  "holdingsNone": "اس تصویر میں شیئرز کی کوئی پوزیشن نہیں ملی۔ اپنے بروکر کے پوزیشنز یا ہولڈنگز صفحے کا اسکرین شاٹ آزمائیں۔"
 }

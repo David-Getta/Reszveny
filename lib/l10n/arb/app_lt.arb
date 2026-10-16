@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} šiandien skelbia ketvirčio rezultatus",
   "earningsRemindersTitle": "Priminimai apie rezultatus",
   "earningsRemindersSubtitle": "Pranešimas dieną prieš tavo mėgstamiausių ar portfelio akcijų ketvirčio rezultatų paskelbimą",
-  "addAllToFavorites": "Pridėti visas į mėgstamiausius ({count})"
+  "addAllToFavorites": "Pridėti visas į mėgstamiausius ({count})",
+  "portfolioImportPhoto": "Importuoti iš ekrano kopijos",
+  "holdingsReading": "Skaitomos pozicijos…",
+  "holdingsReviewTitle": "Rastos pozicijos",
+  "holdingsReviewHint": "Prieš pridedant patikrink skaičius. Kaina – tai tavo vidutinė vienos akcijos pirkimo kaina, o ne šiandienos kaina.",
+  "holdingsNoPrice": "Vaizde nėra vidutinės pirkimo kainos",
+  "holdingsAdd": "{count, plural, one{Pridėti {count} poziciją} few{Pridėti {count} pozicijas} many{Pridėti {count} pozicijos} other{Pridėti {count} pozicijų}}",
+  "holdingsNone": "Šiame vaizde akcijų pozicijų nerasta. Pabandyk savo brokerio pozicijų ar turto puslapio ekrano kopiją."
 }

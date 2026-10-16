@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} şu gün çärýeklik netijelerini yglan edýär",
   "earningsRemindersTitle": "Netije ýatlatmalary",
   "earningsRemindersSubtitle": "Saýlananlaryňyzdaky ýa-da portfeliňizdäki paýnamalar çärýeklik netijelerini yglan etmezinden bir gün öň duýduryş",
-  "addAllToFavorites": "Ählisini saýlananlara goş ({count})"
+  "addAllToFavorites": "Ählisini saýlananlara goş ({count})",
+  "portfolioImportPhoto": "Ekran suratyndan import et",
+  "holdingsReading": "Pozisiýalaryň okalýar…",
+  "holdingsReviewTitle": "Tapylan pozisiýalar",
+  "holdingsReviewHint": "Goşmazdan öň sanlary barla. Baha — bir paýnama üçin ortaça satyn alyş bahaň, şu günki baha däl.",
+  "holdingsNoPrice": "Suratda ortaça satyn alyş bahasy ýok",
+  "holdingsAdd": "{count, plural, =1{1 pozisiýa goş} other{{count} pozisiýa goş}}",
+  "holdingsNone": "Bu suratda paýnama pozisiýasy tapylmady. Brokeriňiň pozisiýalar ýa-da aktiwler sahypasynyň ekran suratyny synap gör."
 }

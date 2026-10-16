@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} danas objavljuje kvartalne rezultate",
   "earningsRemindersTitle": "Podsjetnici na rezultate",
   "earningsRemindersSubtitle": "Obavještenje dan prije nego što dionice iz vaših favorita ili portfolija objave kvartalne rezultate",
-  "addAllToFavorites": "Dodaj sve u favorite ({count})"
+  "addAllToFavorites": "Dodaj sve u favorite ({count})",
+  "portfolioImportPhoto": "Uvezi sa snimka ekrana",
+  "holdingsReading": "Čitanje vaših pozicija…",
+  "holdingsReviewTitle": "Pronađene pozicije",
+  "holdingsReviewHint": "Provjerite brojeve prije dodavanja. Cijena je vaša prosječna kupovna cijena po dionici, a ne današnja cijena.",
+  "holdingsNoPrice": "Na slici nema prosječne kupovne cijene",
+  "holdingsAdd": "{count, plural, one{Dodaj {count} poziciju} few{Dodaj {count} pozicije} other{Dodaj {count} pozicija}}",
+  "holdingsNone": "Na ovoj slici nisu pronađene pozicije dionica. Pokušajte sa snimkom ekrana stranice s pozicijama ili imovinom kod vašeg brokera."
 }

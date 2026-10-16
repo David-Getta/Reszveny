@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol}: আজি ত্ৰৈমাসিক ফলাফল",
   "earningsRemindersTitle": "ফলাফলৰ সোঁৱৰণী",
   "earningsRemindersSubtitle": "আপোনাৰ প্ৰিয় বা পৰ্টফ'লিঅ'ৰ শ্বেয়াৰৰ ত্ৰৈমাসিক ফলাফল ঘোষণাৰ আগদিনা এটা জাননী",
-  "addAllToFavorites": "সকলো প্ৰিয়ত যোগ কৰক ({count})"
+  "addAllToFavorites": "সকলো প্ৰিয়ত যোগ কৰক ({count})",
+  "portfolioImportPhoto": "স্ক্ৰীণশ্বটৰ পৰা আমদানি কৰক",
+  "holdingsReading": "আপোনাৰ পজিচন পঢ়ি থকা হৈছে…",
+  "holdingsReviewTitle": "পোৱা পজিচন",
+  "holdingsReviewHint": "যোগ কৰাৰ আগতে সংখ্যাবোৰ পৰীক্ষা কৰক। দামটো আজিৰ দাম নহয়, প্ৰতি শ্বেয়াৰত আপোনাৰ গড় ক্ৰয়মূল্য।",
+  "holdingsNoPrice": "ছবিখনত গড় ক্ৰয়মূল্য নাই",
+  "holdingsAdd": "{count, plural, =1{1টা পজিচন যোগ কৰক} other{{count}টা পজিচন যোগ কৰক}}",
+  "holdingsNone": "এই ছবিখনত কোনো শ্বেয়াৰ পজিচন পোৱা নগ'ল। আপোনাৰ ব্ৰ'কাৰৰ পজিচন বা হ'ল্ডিং পৃষ্ঠাৰ স্ক্ৰীণশ্বট চেষ্টা কৰক।"
 }

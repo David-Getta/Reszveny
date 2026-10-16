@@ -2058,4 +2058,34 @@ class AppLocalizationsKm extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'បន្ថែមទាំងអស់ទៅចំណូលចិត្ត ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'នាំចូលពីរូបថតអេក្រង់';
+
+  @override
+  String get holdingsReading => 'កំពុងអានភាគហ៊ុនដែលអ្នកកាន់…';
+
+  @override
+  String get holdingsReviewTitle => 'ភាគហ៊ុនដែលបានរកឃើញ';
+
+  @override
+  String get holdingsReviewHint =>
+      'សូមពិនិត្យលេខមុនពេលបន្ថែម។ តម្លៃនេះគឺជាតម្លៃទិញជាមធ្យមរបស់អ្នកក្នុងមួយភាគហ៊ុន មិនមែនតម្លៃថ្ងៃនេះទេ។';
+
+  @override
+  String get holdingsNoPrice => 'គ្មានតម្លៃទិញជាមធ្យមនៅលើរូបភាពទេ';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'បន្ថែមភាគហ៊ុន $count មុខ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'រកមិនឃើញភាគហ៊ុនដែលអ្នកកាន់នៅលើរូបភាពនេះទេ។ សាកល្បងរូបថតអេក្រង់នៃទំព័រភាគហ៊ុនដែលអ្នកកាន់នៅក្នុងកម្មវិធីឈ្មួញកណ្ដាលរបស់អ្នក។';
 }

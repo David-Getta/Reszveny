@@ -2074,4 +2074,35 @@ class AppLocalizationsTt extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Барысын да сайланмаларга өстәү ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Скриншоттан импортлау';
+
+  @override
+  String get holdingsReading => 'Позицияләр укыла…';
+
+  @override
+  String get holdingsReviewTitle => 'Табылган позицияләр';
+
+  @override
+  String get holdingsReviewHint =>
+      'Өстәгәнче саннарны тикшер. Бәя — бер акция өчен уртача сатып алу бәяң, бүгенге бәя түгел.';
+
+  @override
+  String get holdingsNoPrice => 'Рәсемдә уртача сатып алу бәясе юк';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count позиция өстәү',
+      one: '1 позиция өстәү',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Бу рәсемдә акция позицияләре табылмады. Брокерыңның позицияләр яки активлар битенең скриншотын карап кара.';
 }

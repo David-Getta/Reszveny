@@ -2049,4 +2049,34 @@ class AppLocalizationsTh extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'เพิ่มทั้งหมดในรายการโปรด ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'นำเข้าจากภาพหน้าจอ';
+
+  @override
+  String get holdingsReading => 'กำลังอ่านหุ้นที่คุณถือ…';
+
+  @override
+  String get holdingsReviewTitle => 'รายการหุ้นที่พบ';
+
+  @override
+  String get holdingsReviewHint =>
+      'ตรวจสอบตัวเลขก่อนเพิ่ม ราคาคือราคาซื้อเฉลี่ยต่อหุ้นของคุณ ไม่ใช่ราคาวันนี้';
+
+  @override
+  String get holdingsNoPrice => 'ไม่มีราคาซื้อเฉลี่ยในรูปภาพ';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'เพิ่มหุ้น $count รายการ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'ไม่พบหุ้นที่ถืออยู่ในรูปภาพนี้ ลองใช้ภาพหน้าจอของหน้าพอร์ตหรือหุ้นที่ถือในแอปโบรกเกอร์ของคุณ';
 }

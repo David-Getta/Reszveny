@@ -2132,4 +2132,37 @@ class AppLocalizationsLt extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Pridėti visas į mėgstamiausius ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Importuoti iš ekrano kopijos';
+
+  @override
+  String get holdingsReading => 'Skaitomos pozicijos…';
+
+  @override
+  String get holdingsReviewTitle => 'Rastos pozicijos';
+
+  @override
+  String get holdingsReviewHint =>
+      'Prieš pridedant patikrink skaičius. Kaina – tai tavo vidutinė vienos akcijos pirkimo kaina, o ne šiandienos kaina.';
+
+  @override
+  String get holdingsNoPrice => 'Vaizde nėra vidutinės pirkimo kainos';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Pridėti $count pozicijų',
+      many: 'Pridėti $count pozicijos',
+      few: 'Pridėti $count pozicijas',
+      one: 'Pridėti $count poziciją',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Šiame vaizde akcijų pozicijų nerasta. Pabandyk savo brokerio pozicijų ar turto puslapio ekrano kopiją.';
 }

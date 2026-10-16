@@ -2068,4 +2068,35 @@ class AppLocalizationsSd extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'سڀ پسنديده ۾ شامل ڪريو ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'اسڪرين شاٽ مان امپورٽ ڪريو';
+
+  @override
+  String get holdingsReading => 'توهان جون پوزيشنون پڙهيون پيون وڃن…';
+
+  @override
+  String get holdingsReviewTitle => 'مليل پوزيشنون';
+
+  @override
+  String get holdingsReviewHint =>
+      'شامل ڪرڻ کان اڳ انگن کي جانچيو. قيمت في شيئر توهان جي سراسري خريداري قيمت آهي، اڄ جي قيمت ناهي.';
+
+  @override
+  String get holdingsNoPrice => 'تصوير ۾ ڪا سراسري خريداري قيمت ناهي';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count پوزيشنون شامل ڪريو',
+      one: '1 پوزيشن شامل ڪريو',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'هن تصوير ۾ شيئرن جي ڪا به پوزيشن نه ملي. پنهنجي بروڪر جي پوزيشنن يا هولڊنگز واري صفحي جو اسڪرين شاٽ آزمايو.';
 }

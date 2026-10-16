@@ -2080,4 +2080,35 @@ class AppLocalizationsEe extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Tsɔ wo katã kpe ɖe nye lɔlɔ̃tɔwo ŋu ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Xɔe tso screenshot me';
+
+  @override
+  String get holdingsReading => 'Míele akpa siwo le asiwò xlẽm…';
+
+  @override
+  String get holdingsReviewTitle => 'Akpa siwo míekpɔ';
+
+  @override
+  String get holdingsReviewHint =>
+      'Kpɔ xexlẽdzesiawo ɖa hafi atsɔ wo akpe ɖe eŋu. Asi la nye asi titina si nèxe ɖe akpa ɖeka ta, menye egbe ƒe asi o.';
+
+  @override
+  String get holdingsNoPrice => 'Asi titina si nèxe mele nɔnɔmetata la dzi o';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Tsɔ akpa $count kpe ɖe eŋu',
+      one: 'Tsɔ akpa 1 kpe ɖe eŋu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Míekpɔ akpa aɖeke le nɔnɔmetata sia dzi o. Te screenshot si wòɖe le wò broker ƒe akpa siwo le asiwò ƒe axa dzi kpɔ.';
 }

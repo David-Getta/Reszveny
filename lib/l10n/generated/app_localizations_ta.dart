@@ -2086,4 +2086,35 @@ class AppLocalizationsTa extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'அனைத்தையும் பிடித்தவற்றில் சேர் ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'ஸ்கிரீன்ஷாட்டிலிருந்து இறக்குமதி செய்';
+
+  @override
+  String get holdingsReading => 'உங்கள் பங்கு நிலைகளைப் படிக்கிறது…';
+
+  @override
+  String get holdingsReviewTitle => 'கண்டறியப்பட்ட நிலைகள்';
+
+  @override
+  String get holdingsReviewHint =>
+      'சேர்க்கும் முன் எண்களைச் சரிபார்க்கவும். விலை என்பது ஒரு பங்கிற்கான உங்கள் சராசரி வாங்கிய விலை, இன்றைய விலை அல்ல.';
+
+  @override
+  String get holdingsNoPrice => 'படத்தில் சராசரி வாங்கிய விலை இல்லை';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count நிலைகளைச் சேர்',
+      one: '1 நிலையைச் சேர்',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'இந்தப் படத்தில் பங்கு நிலைகள் எதுவும் கிடைக்கவில்லை. உங்கள் தரகரின் நிலைகள் அல்லது இருப்புகள் பக்கத்தின் ஸ்கிரீன்ஷாட்டை முயற்சிக்கவும்.';
 }

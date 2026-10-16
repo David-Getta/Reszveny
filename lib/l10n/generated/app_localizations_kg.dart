@@ -2083,4 +2083,36 @@ class AppLocalizationsKg extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Yika yonso mu bizolwa ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Kotisa katuka na foto ya ekrani';
+
+  @override
+  String get holdingsReading => 'Kutanga bitini ya nge…';
+
+  @override
+  String get holdingsReviewTitle => 'Bitini yina me monana';
+
+  @override
+  String get holdingsReviewHint =>
+      'Tala bantalu na ntwala ya kukotisa yo. Ntalu kele ntalu ya kati-kati ya nge ya kusumba kitini mosi, ve ntalu ya bubu.';
+
+  @override
+  String get holdingsNoPrice =>
+      'Ntalu ya kati-kati ya kusumba kele ve na kifwani';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Yika bitini $count',
+      one: 'Yika kitini 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Bitini ya action me monana ve na kifwani yai. Meka foto ya ekrani ya lukaya ya bitini na nge na application ya courtier na nge.';
 }

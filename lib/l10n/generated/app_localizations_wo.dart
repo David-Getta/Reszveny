@@ -2071,4 +2071,35 @@ class AppLocalizationsWo extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Yokk yépp ci yi ma gënal ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Duggal ko ci nataalu ekraan';
+
+  @override
+  String get holdingsReading => 'Ñu ngi jàng sa aksiyoŋ yi…';
+
+  @override
+  String get holdingsReviewTitle => 'Aksiyoŋ yi ñu gis';
+
+  @override
+  String get holdingsReviewHint =>
+      'Seetal lim yi balaa nga leen yokk. Njëg gi mooy sa njëgu jënd bu diggu ci benn aksiyoŋ, du njëgu tey.';
+
+  @override
+  String get holdingsNoPrice => 'Amul njëgu jënd bu diggu ci nataal bi';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Yokk $count aksiyoŋ',
+      one: 'Yokk 1 aksiyoŋ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Gisuñu benn aksiyoŋ ci nataal bii. Jéemal nataalu ekraan bu xëtu aksiyoŋ yi walla alal ji ci sa kurtiye.';
 }

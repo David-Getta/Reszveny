@@ -2077,4 +2077,35 @@ class AppLocalizationsCkb extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'زیادکردنی هەموو بۆ دڵخوازەکان ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'هاوردەکردن لە وێنەی شاشە';
+
+  @override
+  String get holdingsReading => 'پۆزیشنەکانت دەخوێندرێنەوە…';
+
+  @override
+  String get holdingsReviewTitle => 'پۆزیشنە دۆزراوەکان';
+
+  @override
+  String get holdingsReviewHint =>
+      'پێش زیادکردنیان ژمارەکان بپشکنە. نرخەکە تێکڕای نرخی کڕینی هەر پشکێکە، نەک نرخی ئەمڕۆ.';
+
+  @override
+  String get holdingsNoPrice => 'تێکڕای نرخی کڕین لە وێنەکەدا نییە';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'زیادکردنی $count پۆزیشن',
+      one: 'زیادکردنی 1 پۆزیشن',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'هیچ پۆزیشنێکی پشک لەم وێنەیەدا نەدۆزرایەوە. وێنەی شاشەی پەڕەی پۆزیشنەکانی بڕۆکەرەکەت تاقی بکەرەوە.';
 }

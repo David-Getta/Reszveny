@@ -2077,4 +2077,35 @@ class AppLocalizationsKa extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'ყველას რჩეულებში დამატება ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'იმპორტი ეკრანის ანაბეჭდიდან';
+
+  @override
+  String get holdingsReading => 'პოზიციების წაკითხვა…';
+
+  @override
+  String get holdingsReviewTitle => 'ნაპოვნი პოზიციები';
+
+  @override
+  String get holdingsReviewHint =>
+      'დამატებამდე გადაამოწმე რიცხვები. ფასი არის შენი საშუალო შესყიდვის ფასი ერთ აქციაზე და არა დღევანდელი ფასი.';
+
+  @override
+  String get holdingsNoPrice => 'სურათზე საშუალო შესყიდვის ფასი არ არის';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count პოზიციის დამატება',
+      one: '1 პოზიციის დამატება',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'ამ სურათზე აქციების პოზიციები ვერ მოიძებნა. სცადე შენი ბროკერის პოზიციების ან აქტივების გვერდის ეკრანის ანაბეჭდი.';
 }

@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} ngetokaké laporan kuartalan dina iki",
   "earningsRemindersTitle": "Pangéling laporan kuartalan",
   "earningsRemindersSubtitle": "Notifikasi sedina sadurungé saham ing favorit utawa portofoliomu ngetokaké laporan kuartalan",
-  "addAllToFavorites": "Tambahake kabeh menyang favorit ({count})"
+  "addAllToFavorites": "Tambahake kabeh menyang favorit ({count})",
+  "portfolioImportPhoto": "Impor saka screenshot",
+  "holdingsReading": "Maca posisimu…",
+  "holdingsReviewTitle": "Posisi sing ditemokake",
+  "holdingsReviewHint": "Priksa angka-angkane sadurunge ditambahake. Regane yaiku rega tuku rata-ratamu saben saham, dudu rega dina iki.",
+  "holdingsNoPrice": "Ora ana rega tuku rata-rata ing gambar",
+  "holdingsAdd": "{count, plural, =1{Tambahake 1 posisi} other{Tambahake {count} posisi}}",
+  "holdingsNone": "Ora ana posisi saham sing ditemokake ing gambar iki. Coba screenshot kaca posisi utawa portofolio ing aplikasi brokermu."
 }

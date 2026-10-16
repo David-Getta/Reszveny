@@ -2078,4 +2078,35 @@ class AppLocalizationsAz extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Hamısını seçilmişlərə əlavə et ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Ekran görüntüsündən idxal et';
+
+  @override
+  String get holdingsReading => 'Mövqeləriniz oxunur…';
+
+  @override
+  String get holdingsReviewTitle => 'Tapılan mövqelər';
+
+  @override
+  String get holdingsReviewHint =>
+      'Əlavə etməzdən əvvəl rəqəmləri yoxlayın. Qiymət bugünkü qiymət deyil, səhm başına orta alış qiymətinizdir.';
+
+  @override
+  String get holdingsNoPrice => 'Şəkildə orta alış qiyməti yoxdur';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count mövqe əlavə et',
+      one: '1 mövqe əlavə et',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Bu şəkildə səhm mövqeyi tapılmadı. Brokerinizin mövqelər və ya portfel səhifəsinin ekran görüntüsünü yoxlayın.';
 }

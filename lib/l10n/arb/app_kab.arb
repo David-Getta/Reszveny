@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} ad d-yesuffeɣ igmaḍ n kraḍ n wayyuren ass-a",
   "earningsRemindersTitle": "Asmekti n yigmaḍ",
   "earningsRemindersSubtitle": "Alɣu yiwen n wass send ad d-ssufɣen yisehmen n yismenyifen-ik neɣ n uportfolio-k igmaḍ n kraḍ n wayyuren",
-  "addAllToFavorites": "Rnu akk ɣer yismenyifen ({count})"
+  "addAllToFavorites": "Rnu akk ɣer yismenyifen ({count})",
+  "portfolioImportPhoto": "Kter seg tuṭṭfa n wegdil",
+  "holdingsReading": "Taɣuri n yimukan-ik…",
+  "holdingsReviewTitle": "Imukan yettwafen",
+  "holdingsReviewHint": "Senqed imḍanen send ad ten-ternuḍ. Ssuma d ssuma talemmast n tɣin i yal asehmi, mačči d ssuma n wass-a.",
+  "holdingsNoPrice": "Ulac ssuma talemmast n tɣin deg tugna",
+  "holdingsAdd": "{count, plural, =1{Rnu 1 n wadeg} other{Rnu {count} n yimukan}}",
+  "holdingsNone": "Ulac imukan n yisehmiyen i yettwafen deg tugna-a. Ɛreḍ tuṭṭfa n wegdil n usebter n yimukan deg usnas n umsenzi-ik."
 }

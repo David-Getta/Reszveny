@@ -2082,4 +2082,35 @@ class AppLocalizationsGn extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Embojuaju opavave ojeguerohoryvévape ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Egueru pantalla taʼãngágui';
+
+  @override
+  String get holdingsReading => 'Oñemoñeʼẽ hína ereguerekóva…';
+
+  @override
+  String get holdingsReviewTitle => 'Ereguerekóva ojejuhúva';
+
+  @override
+  String get holdingsReviewHint =>
+      'Ehechajey papapy embojuaju mboyve. Tepy haʼe tepy mbytegua rejoguávakuri peteĩteĩ acción, ndahaʼéi ko árape tepy.';
+
+  @override
+  String get holdingsNoPrice => 'Ndaipóri tepy mbytegua taʼãngápe';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Embojuaju $count ereguerekóva',
+      one: 'Embojuaju 1 ereguerekóva',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Ndojejuhúi acción ko taʼãngápe. Eñehaʼã peteĩ pantalla taʼãnga nde broker kuatiarogue ereguerekóvagui.';
 }

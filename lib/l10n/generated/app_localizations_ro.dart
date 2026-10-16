@@ -2110,4 +2110,36 @@ class AppLocalizationsRo extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Adaugă toate la favorite ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Importă dintr-o captură de ecran';
+
+  @override
+  String get holdingsReading => 'Se citesc pozițiile tale…';
+
+  @override
+  String get holdingsReviewTitle => 'Poziții găsite';
+
+  @override
+  String get holdingsReviewHint =>
+      'Verifică cifrele înainte să le adaugi. Prețul este prețul tău mediu de achiziție pe acțiune, nu prețul de azi.';
+
+  @override
+  String get holdingsNoPrice => 'Niciun preț mediu de achiziție în imagine';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Adaugă $count de poziții',
+      few: 'Adaugă $count poziții',
+      one: 'Adaugă $count poziție',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Nu am găsit poziții pe acțiuni în această imagine. Încearcă o captură de ecran a paginii cu pozițiile sau portofoliul de la brokerul tău.';
 }

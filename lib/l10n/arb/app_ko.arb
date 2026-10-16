@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} 오늘 분기 실적 발표",
   "earningsRemindersTitle": "실적 발표 알림",
   "earningsRemindersSubtitle": "즐겨찾기나 포트폴리오 종목의 분기 실적 발표 하루 전에 알려 드립니다",
-  "addAllToFavorites": "모두 즐겨찾기에 추가({count})"
+  "addAllToFavorites": "모두 즐겨찾기에 추가({count})",
+  "portfolioImportPhoto": "스크린샷에서 가져오기",
+  "holdingsReading": "보유 종목을 읽는 중…",
+  "holdingsReviewTitle": "찾은 보유 종목",
+  "holdingsReviewHint": "추가하기 전에 숫자를 확인하세요. 가격은 오늘 가격이 아니라 주당 평균 매수가입니다.",
+  "holdingsNoPrice": "이미지에 평균 매수가가 없습니다",
+  "holdingsAdd": "{count, plural, =1{보유 종목 1개 추가} other{보유 종목 {count}개 추가}}",
+  "holdingsNone": "이 이미지에서 보유 종목을 찾지 못했습니다. 증권사 앱의 잔고 또는 보유 종목 화면 스크린샷을 사용해 보세요."
 }

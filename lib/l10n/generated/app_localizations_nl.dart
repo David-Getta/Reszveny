@@ -2081,4 +2081,35 @@ class AppLocalizationsNl extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Alle toevoegen aan favorieten ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Importeren uit screenshot';
+
+  @override
+  String get holdingsReading => 'Je posities worden gelezen…';
+
+  @override
+  String get holdingsReviewTitle => 'Gevonden posities';
+
+  @override
+  String get holdingsReviewHint =>
+      'Controleer de getallen voordat je ze toevoegt. De prijs is je gemiddelde aankoopprijs per aandeel, niet de koers van vandaag.';
+
+  @override
+  String get holdingsNoPrice => 'Geen gemiddelde aankoopprijs op de afbeelding';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count posities toevoegen',
+      one: '1 positie toevoegen',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Geen aandelenposities gevonden op deze afbeelding. Probeer een screenshot van de posities- of portefeuillepagina van je broker.';
 }

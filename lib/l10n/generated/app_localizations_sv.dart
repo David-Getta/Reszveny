@@ -2077,4 +2077,35 @@ class AppLocalizationsSv extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Lägg till alla i favoriter ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Importera från en skärmbild';
+
+  @override
+  String get holdingsReading => 'Läser in dina innehav…';
+
+  @override
+  String get holdingsReviewTitle => 'Hittade innehav';
+
+  @override
+  String get holdingsReviewHint =>
+      'Kontrollera siffrorna innan du lägger till dem. Priset är ditt genomsnittliga köppris per aktie, inte dagens kurs.';
+
+  @override
+  String get holdingsNoPrice => 'Inget genomsnittligt köppris på bilden';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Lägg till $count innehav',
+      one: 'Lägg till 1 innehav',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Inga aktieinnehav hittades på den här bilden. Prova en skärmbild av innehavssidan hos din mäklare.';
 }

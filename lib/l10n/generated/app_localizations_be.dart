@@ -2130,4 +2130,37 @@ class AppLocalizationsBe extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Дадаць усе ў абранае ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Імпартаваць са здымка экрана';
+
+  @override
+  String get holdingsReading => 'Чытаем вашы пазіцыі…';
+
+  @override
+  String get holdingsReviewTitle => 'Знойдзеныя пазіцыі';
+
+  @override
+  String get holdingsReviewHint =>
+      'Праверце лічбы, перш чым дадаваць іх. Цана — гэта ваша сярэдняя цана пакупкі адной акцыі, а не сённяшняя цана.';
+
+  @override
+  String get holdingsNoPrice => 'На выяве няма сярэдняй цаны пакупкі';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Дадаць $count пазіцыі',
+      many: 'Дадаць $count пазіцый',
+      few: 'Дадаць $count пазіцыі',
+      one: 'Дадаць $count пазіцыю',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'На гэтай выяве не знойдзена пазіцый па акцыях. Паспрабуйце здымак экрана старонкі пазіцый або актываў у вашага брокера.';
 }

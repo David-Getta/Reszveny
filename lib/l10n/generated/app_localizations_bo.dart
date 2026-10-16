@@ -2067,4 +2067,34 @@ class AppLocalizationsBo extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'ཚང་མ་དགའ་མོས་སུ་སྣོན ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'བརྙན་ཡོལ་པར་རིས་ནས་ནང་འདྲེན།';
+
+  @override
+  String get holdingsReading => 'ཁྱེད་ཀྱི་ཉར་ཡོད་ཧུར་ཁག་ཀློག་བཞིན་པ…';
+
+  @override
+  String get holdingsReviewTitle => 'རྙེད་པའི་ཉར་ཡོད་ཧུར་ཁག';
+
+  @override
+  String get holdingsReviewHint =>
+      'ཁ་སྣོན་མ་བྱས་གོང་ཨང་གྲངས་ཞིབ་བཤེར་གནང་རོགས། གོང་ཚད་དེ་དེ་རིང་གི་གོང་ཚད་མ་ཡིན་པར་ཧུར་ཁག་རེའི་ཆ་སྙོམས་ཉོ་གོང་ཡིན།';
+
+  @override
+  String get holdingsNoPrice => 'པར་རིས་ནང་ཆ་སྙོམས་ཉོ་གོང་མི་འདུག';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ཉར་ཡོད་ཧུར་ཁག་ $count སྣོན',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'པར་རིས་འདིའི་ནང་ཧུར་ཁག་གི་ཉར་ཡོད་མ་རྙེད། ཁྱེད་ཀྱི་བརྐོ་བའི་ཉར་ཡོད་ཤོག་ངོས་ཀྱི་བརྙན་ཡོལ་པར་རིས་ཤིག་ཚོད་ལྟ་གནང་རོགས།';
 }

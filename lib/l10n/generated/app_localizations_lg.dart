@@ -2086,4 +2086,36 @@ class AppLocalizationsLg extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Byonna gattako ku by\'oyagala ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Yingiza okuva mu kifaananyi kya sikirini';
+
+  @override
+  String get holdingsReading => 'Tusoma emigabo gyo…';
+
+  @override
+  String get holdingsReviewTitle => 'Emigabo egizuuliddwa';
+
+  @override
+  String get holdingsReviewHint =>
+      'Kebera ennamba nga tonnaziyongerako. Bbeeyi ye bbeeyi yo eya wakati gye wagulirako buli mugabo, so si bbeeyi ya leero.';
+
+  @override
+  String get holdingsNoPrice =>
+      'Tewali bbeeyi ya wakati ey\'okugula ku kifaananyi';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Yongerako emigabo $count',
+      one: 'Yongerako omugabo 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Tewali migabo gizuuliddwa ku kifaananyi kino. Gezaako ekifaananyi kya sikirini eky\'olupapula lw\'emigabo gyo ku app ya broker wo.';
 }

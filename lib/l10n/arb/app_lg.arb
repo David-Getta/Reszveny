@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} efulumya ebivudde mu kitundu ky'omwaka leero",
   "earningsRemindersTitle": "Okujjukiza ku bivudde",
   "earningsRemindersSubtitle": "Obubaka olunaku lumu nga emigabo gy'oyagala oba egiri mu portfolio yo tennafulumya bivudde mu kitundu ky'omwaka",
-  "addAllToFavorites": "Byonna gattako ku by'oyagala ({count})"
+  "addAllToFavorites": "Byonna gattako ku by'oyagala ({count})",
+  "portfolioImportPhoto": "Yingiza okuva mu kifaananyi kya sikirini",
+  "holdingsReading": "Tusoma emigabo gyo…",
+  "holdingsReviewTitle": "Emigabo egizuuliddwa",
+  "holdingsReviewHint": "Kebera ennamba nga tonnaziyongerako. Bbeeyi ye bbeeyi yo eya wakati gye wagulirako buli mugabo, so si bbeeyi ya leero.",
+  "holdingsNoPrice": "Tewali bbeeyi ya wakati ey'okugula ku kifaananyi",
+  "holdingsAdd": "{count, plural, =1{Yongerako omugabo 1} other{Yongerako emigabo {count}}}",
+  "holdingsNone": "Tewali migabo gizuuliddwa ku kifaananyi kino. Gezaako ekifaananyi kya sikirini eky'olupapula lw'emigabo gyo ku app ya broker wo."
 }

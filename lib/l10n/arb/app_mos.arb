@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol}: kiuuy a tãab ligd-yɛla rũndã",
   "earningsRemindersTitle": "Ligd-yɛla tẽegre",
   "earningsRemindersSubtitle": "Gũusgu daar sẽn deng f nong-n-yɩɩda la f portfolio wã kiuuy a tãab ligd-yɛla",
-  "addAllToFavorites": "Paas fãa nong-n-yɩɩda pʋgẽ ({count})"
+  "addAllToFavorites": "Paas fãa nong-n-yɩɩda pʋgẽ ({count})",
+  "portfolioImportPhoto": "Kẽes n yi ekrã foto",
+  "holdingsReading": "D karemd f sẽn tar wã…",
+  "holdingsReviewTitle": "Sẽn tar d sẽn yã",
+  "holdingsReviewHint": "Ges sõorã sõma n yaool n naag-ba. Ligdã yaa f raab ligd zɩɩlgã aksɔ̃ yembr fãa, pa rũndã ligd ye.",
+  "holdingsNoPrice": "Raab ligd zɩɩlg ka be foto wã pʋgẽ ye",
+  "holdingsAdd": "{count, plural, =1{Naag bũmb a yembre} other{Naag bũmb {count}}}",
+  "holdingsNone": "D pa yã aksɔ̃ bũmb foto kãng pʋgẽ ye. Maan f broker wã aksɔ̃ seb-neng ekrã foto n ges."
 }

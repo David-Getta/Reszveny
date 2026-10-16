@@ -2052,4 +2052,34 @@ class AppLocalizationsLo extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'ເພີ່ມທັງໝົດໃສ່ລາຍການທີ່ມັກ ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'ນຳເຂົ້າຈາກພາບໜ້າຈໍ';
+
+  @override
+  String get holdingsReading => 'ກຳລັງອ່ານຫຸ້ນທີ່ທ່ານຖື…';
+
+  @override
+  String get holdingsReviewTitle => 'ຫຸ້ນທີ່ພົບ';
+
+  @override
+  String get holdingsReviewHint =>
+      'ກວດເບິ່ງຕົວເລກກ່ອນເພີ່ມ. ລາຄານີ້ແມ່ນລາຄາຊື້ສະເລ່ຍຕໍ່ຫຸ້ນຂອງທ່ານ, ບໍ່ແມ່ນລາຄາມື້ນີ້.';
+
+  @override
+  String get holdingsNoPrice => 'ບໍ່ມີລາຄາຊື້ສະເລ່ຍໃນຮູບພາບ';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ເພີ່ມ $count ລາຍການ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'ບໍ່ພົບຫຸ້ນທີ່ຖືຢູ່ໃນຮູບພາບນີ້. ລອງໃຊ້ພາບໜ້າຈໍຂອງໜ້າຫຸ້ນທີ່ຖືໃນແອັບນາຍໜ້າຂອງທ່ານ.';
 }

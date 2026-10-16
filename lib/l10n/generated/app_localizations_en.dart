@@ -2075,4 +2075,35 @@ class AppLocalizationsEn extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Add all to favorites ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Import from a screenshot';
+
+  @override
+  String get holdingsReading => 'Reading your positions…';
+
+  @override
+  String get holdingsReviewTitle => 'Positions found';
+
+  @override
+  String get holdingsReviewHint =>
+      'Check the numbers before adding them. The price is your average purchase price per share, not today\'s price.';
+
+  @override
+  String get holdingsNoPrice => 'No average purchase price on the picture';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Add $count positions',
+      one: 'Add 1 position',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'No stock positions found on this picture. Try a screenshot of your broker\'s positions or holdings page.';
 }

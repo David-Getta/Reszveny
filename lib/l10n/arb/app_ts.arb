@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} yi humesa mbuyelo wa kotara namuntlha",
   "earningsRemindersTitle": "Swotsundzuxo swa mbuyelo",
   "earningsRemindersSubtitle": "Xitiviso siku rin'we emahlweni ka loko swiavelo leswi u swi rhandzaka kumbe swa phothifoliyo ya wena swi humesa mbuyelo wa kotara",
-  "addAllToFavorites": "Engetela hinkwaswo eka leswi u swi rhandzaka ({count})"
+  "addAllToFavorites": "Engetela hinkwaswo eka leswi u swi rhandzaka ({count})",
+  "portfolioImportPhoto": "Nghenisa ku suka eka xifaniso xa xikirini",
+  "holdingsReading": "Hi hlaya tiphozixini ta wena…",
+  "holdingsReviewTitle": "Tiphozixini leti kumekeke",
+  "holdingsReviewHint": "Kambela tinomboro u nga si ti engetela. Nxavo i nxavo wa wena wa le xikarhi wa ku xava hi xiave xin'we, ku nga ri nxavo wa namuntlha.",
+  "holdingsNoPrice": "A ku na nxavo wa le xikarhi wa ku xava eka xifaniso",
+  "holdingsAdd": "{count, plural, =1{Engetela phozixini yin'we} other{Engetela tiphozixini ta {count}}}",
+  "holdingsNone": "A ku kumekanga tiphozixini ta swiave eka xifaniso lexi. Ringeta xifaniso xa xikirini xa pheji ya tiphozixini kumbe rifuwo eka brokara wa wena."
 }

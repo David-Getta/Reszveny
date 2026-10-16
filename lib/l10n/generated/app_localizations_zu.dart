@@ -2084,4 +2084,36 @@ class AppLocalizationsZu extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Engeza konke kuzintandokazi ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Ngenisa kusuka kusithombe-skrini';
+
+  @override
+  String get holdingsReading => 'Ifunda amasheya akho…';
+
+  @override
+  String get holdingsReviewTitle => 'Amasheya atholiwe';
+
+  @override
+  String get holdingsReviewHint =>
+      'Hlola izinombolo ngaphambi kokuthi uzengeze. Intengo yintengo yakho emaphakathi yokuthenga isheya ngalinye, hhayi intengo yanamuhla.';
+
+  @override
+  String get holdingsNoPrice =>
+      'Ayikho intengo emaphakathi yokuthenga esithombeni';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Engeza amasheya angu-$count',
+      one: 'Engeza isheya elilodwa',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Awekho amasheya atholakele kulesi sithombe. Zama isithombe-skrini sekhasi lamasheya noma lezimpahla zakho kumthengisi wakho wamasheya.';
 }

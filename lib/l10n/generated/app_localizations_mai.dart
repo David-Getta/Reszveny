@@ -2070,4 +2070,35 @@ class AppLocalizationsMai extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'सभटा पसंदीदामे जोड़ू ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'स्क्रीनशॉटसँ आयात करू';
+
+  @override
+  String get holdingsReading => 'अहाँक पोजीशन पढ़ल जा रहल अछि…';
+
+  @override
+  String get holdingsReviewTitle => 'भेटल पोजीशन';
+
+  @override
+  String get holdingsReviewHint =>
+      'जोड़बासँ पहिने संख्या जाँचि लिअ। दाम प्रति शेयर अहाँक औसत खरीद दाम अछि, आजुक दाम नहि।';
+
+  @override
+  String get holdingsNoPrice => 'चित्रमे औसत खरीद दाम नहि अछि';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count पोजीशन जोड़ू',
+      one: '1 पोजीशन जोड़ू',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'एहि चित्रमे कोनो शेयर पोजीशन नहि भेटल। अपन ब्रोकरक पोजीशन वा होल्डिंग पन्नाक स्क्रीनशॉट आजमाउ।';
 }

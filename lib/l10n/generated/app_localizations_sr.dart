@@ -2116,4 +2116,36 @@ class AppLocalizationsSr extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Додај све у омиљене ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Увези са снимка екрана';
+
+  @override
+  String get holdingsReading => 'Читање ваших позиција…';
+
+  @override
+  String get holdingsReviewTitle => 'Пронађене позиције';
+
+  @override
+  String get holdingsReviewHint =>
+      'Проверите бројеве пре него што их додате. Цена је ваша просечна набавна цена по акцији, а не данашња цена.';
+
+  @override
+  String get holdingsNoPrice => 'На слици нема просечне набавне цене';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Додај $count позиција',
+      few: 'Додај $count позиције',
+      one: 'Додај $count позицију',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'На овој слици нису пронађене позиције у акцијама. Пробајте снимак екрана странице са позицијама или имовином код вашег брокера.';
 }

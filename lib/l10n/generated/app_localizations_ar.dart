@@ -2117,4 +2117,38 @@ class AppLocalizationsAr extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'إضافة الكل إلى المفضلة ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'استيراد من لقطة شاشة';
+
+  @override
+  String get holdingsReading => 'جارٍ قراءة مراكزك…';
+
+  @override
+  String get holdingsReviewTitle => 'المراكز التي عُثر عليها';
+
+  @override
+  String get holdingsReviewHint =>
+      'تحقّق من الأرقام قبل إضافتها. السعر هو متوسط سعر شرائك للسهم، وليس سعر اليوم.';
+
+  @override
+  String get holdingsNoPrice => 'لا يوجد متوسط سعر شراء في الصورة';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'إضافة $count مركز',
+      many: 'إضافة $count مركزًا',
+      few: 'إضافة $count مراكز',
+      two: 'إضافة مركزين',
+      one: 'إضافة مركز واحد',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'لم يُعثر على أي مراكز أسهم في هذه الصورة. جرّب لقطة شاشة لصفحة المراكز أو الحيازات لدى وسيطك.';
 }

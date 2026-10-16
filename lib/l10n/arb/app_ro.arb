@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} publică azi rezultatele trimestriale",
   "earningsRemindersTitle": "Mementouri pentru rezultate",
   "earningsRemindersSubtitle": "O notificare cu o zi înainte ca favoritele sau acțiunile din portofoliul tău să publice rezultatele trimestriale",
-  "addAllToFavorites": "Adaugă toate la favorite ({count})"
+  "addAllToFavorites": "Adaugă toate la favorite ({count})",
+  "portfolioImportPhoto": "Importă dintr-o captură de ecran",
+  "holdingsReading": "Se citesc pozițiile tale…",
+  "holdingsReviewTitle": "Poziții găsite",
+  "holdingsReviewHint": "Verifică cifrele înainte să le adaugi. Prețul este prețul tău mediu de achiziție pe acțiune, nu prețul de azi.",
+  "holdingsNoPrice": "Niciun preț mediu de achiziție în imagine",
+  "holdingsAdd": "{count, plural, one{Adaugă {count} poziție} few{Adaugă {count} poziții} other{Adaugă {count} de poziții}}",
+  "holdingsNone": "Nu am găsit poziții pe acțiuni în această imagine. Încearcă o captură de ecran a paginii cu pozițiile sau portofoliul de la brokerul tău."
 }

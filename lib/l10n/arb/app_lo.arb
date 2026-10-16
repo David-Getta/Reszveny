@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} ປະກາດຜົນປະກອບການລາຍໄຕມາດມື້ນີ້",
   "earningsRemindersTitle": "ການແຈ້ງເຕືອນຜົນປະກອບການ",
   "earningsRemindersSubtitle": "ແຈ້ງເຕືອນລ່ວງໜ້າໜຶ່ງມື້ກ່ອນຫຸ້ນໃນລາຍການທີ່ມັກ ຫຼື ພອດໂຟລິໂອຂອງທ່ານປະກາດຜົນປະກອບການລາຍໄຕມາດ",
-  "addAllToFavorites": "ເພີ່ມທັງໝົດໃສ່ລາຍການທີ່ມັກ ({count})"
+  "addAllToFavorites": "ເພີ່ມທັງໝົດໃສ່ລາຍການທີ່ມັກ ({count})",
+  "portfolioImportPhoto": "ນຳເຂົ້າຈາກພາບໜ້າຈໍ",
+  "holdingsReading": "ກຳລັງອ່ານຫຸ້ນທີ່ທ່ານຖື…",
+  "holdingsReviewTitle": "ຫຸ້ນທີ່ພົບ",
+  "holdingsReviewHint": "ກວດເບິ່ງຕົວເລກກ່ອນເພີ່ມ. ລາຄານີ້ແມ່ນລາຄາຊື້ສະເລ່ຍຕໍ່ຫຸ້ນຂອງທ່ານ, ບໍ່ແມ່ນລາຄາມື້ນີ້.",
+  "holdingsNoPrice": "ບໍ່ມີລາຄາຊື້ສະເລ່ຍໃນຮູບພາບ",
+  "holdingsAdd": "{count, plural, other{ເພີ່ມ {count} ລາຍການ}}",
+  "holdingsNone": "ບໍ່ພົບຫຸ້ນທີ່ຖືຢູ່ໃນຮູບພາບນີ້. ລອງໃຊ້ພາບໜ້າຈໍຂອງໜ້າຫຸ້ນທີ່ຖືໃນແອັບນາຍໜ້າຂອງທ່ານ."
 }

@@ -2127,4 +2127,37 @@ class AppLocalizationsCs extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Přidat vše do oblíbených ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Importovat ze snímku obrazovky';
+
+  @override
+  String get holdingsReading => 'Načítám vaše pozice…';
+
+  @override
+  String get holdingsReviewTitle => 'Nalezené pozice';
+
+  @override
+  String get holdingsReviewHint =>
+      'Před přidáním zkontrolujte čísla. Cena je vaše průměrná nákupní cena za akcii, ne dnešní cena.';
+
+  @override
+  String get holdingsNoPrice => 'Na obrázku není průměrná nákupní cena';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Přidat $count pozic',
+      many: 'Přidat $count pozice',
+      few: 'Přidat $count pozice',
+      one: 'Přidat 1 pozici',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Na tomto obrázku nebyly nalezeny žádné akciové pozice. Zkuste snímek obrazovky stránky s pozicemi nebo portfoliem u vašeho brokera.';
 }

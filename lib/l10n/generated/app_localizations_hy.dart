@@ -2084,4 +2084,35 @@ class AppLocalizationsHy extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Ավելացնել բոլորը ընտրյալներում ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Ներմուծել էկրանի նկարից';
+
+  @override
+  String get holdingsReading => 'Դիրքերը կարդացվում են…';
+
+  @override
+  String get holdingsReviewTitle => 'Գտնված դիրքեր';
+
+  @override
+  String get holdingsReviewHint =>
+      'Ավելացնելուց առաջ ստուգիր թվերը։ Գինը մեկ բաժնետոմսի համար քո միջին գնման գինն է, ոչ թե այսօրվա գինը։';
+
+  @override
+  String get holdingsNoPrice => 'Պատկերում միջին գնման գին չկա';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ավելացնել $count դիրք',
+      one: 'Ավելացնել 1 դիրք',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Այս պատկերում բաժնետոմսերի դիրքեր չգտնվեցին։ Փորձիր բրոքերիդ դիրքերի կամ ակտիվների էջի էկրանի նկարը։';
 }

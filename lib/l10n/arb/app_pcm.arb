@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} go release quarter result today",
   "earningsRemindersTitle": "Result reminder",
   "earningsRemindersSubtitle": "Notification one day before your favourites or portfolio stocks release quarter result",
-  "addAllToFavorites": "Add all of dem to favourites ({count})"
+  "addAllToFavorites": "Add all of dem to favourites ({count})",
+  "portfolioImportPhoto": "Import from screenshot",
+  "holdingsReading": "We dey read your positions…",
+  "holdingsReviewTitle": "Positions wey we find",
+  "holdingsReviewHint": "Check di numbers before you add dem. Di price na your average buying price for each share, no be today price.",
+  "holdingsNoPrice": "No average buying price for di picture",
+  "holdingsAdd": "{count, plural, one{Add {count} position} other{Add {count} positions}}",
+  "holdingsNone": "We no see any stock position for dis picture. Try screenshot of di positions or holdings page for your broker app."
 }

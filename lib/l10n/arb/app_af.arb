@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} rapporteer vandag kwartaalresultate",
   "earningsRemindersTitle": "Resultaatherinneringe",
   "earningsRemindersSubtitle": "’n Kennisgewing die dag voordat jou gunstelinge of portefeulje-aandele kwartaalresultate rapporteer",
-  "addAllToFavorites": "Voeg almal by gunstelinge ({count})"
+  "addAllToFavorites": "Voeg almal by gunstelinge ({count})",
+  "portfolioImportPhoto": "Voer in uit ’n skermskoot",
+  "holdingsReading": "Lees jou posisies…",
+  "holdingsReviewTitle": "Posisies gevind",
+  "holdingsReviewHint": "Kontroleer die getalle voordat jy hulle byvoeg. Die prys is jou gemiddelde aankoopprys per aandeel, nie vandag se prys nie.",
+  "holdingsNoPrice": "Geen gemiddelde aankoopprys op die prent nie",
+  "holdingsAdd": "{count, plural, =1{Voeg 1 posisie by} other{Voeg {count} posisies by}}",
+  "holdingsNone": "Geen aandeelposisies op hierdie prent gevind nie. Probeer ’n skermskoot van jou makelaar se posisies- of beleggingsblad."
 }

@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} ਅੱਜ ਤਿਮਾਹੀ ਨਤੀਜੇ ਜਾਰੀ ਕਰੇਗਾ",
   "earningsRemindersTitle": "ਨਤੀਜਿਆਂ ਦੀ ਯਾਦ-ਦਹਾਨੀ",
   "earningsRemindersSubtitle": "ਤੁਹਾਡੇ ਮਨਪਸੰਦ ਜਾਂ ਪੋਰਟਫੋਲੀਓ ਦੇ ਸ਼ੇਅਰਾਂ ਦੇ ਤਿਮਾਹੀ ਨਤੀਜੇ ਆਉਣ ਤੋਂ ਇੱਕ ਦਿਨ ਪਹਿਲਾਂ ਸੂਚਨਾ",
-  "addAllToFavorites": "ਸਾਰੇ ਮਨਪਸੰਦ ਵਿੱਚ ਸ਼ਾਮਲ ਕਰੋ ({count})"
+  "addAllToFavorites": "ਸਾਰੇ ਮਨਪਸੰਦ ਵਿੱਚ ਸ਼ਾਮਲ ਕਰੋ ({count})",
+  "portfolioImportPhoto": "ਸਕ੍ਰੀਨਸ਼ਾਟ ਤੋਂ ਆਯਾਤ ਕਰੋ",
+  "holdingsReading": "ਤੁਹਾਡੀਆਂ ਪੁਜ਼ੀਸ਼ਨਾਂ ਪੜ੍ਹੀਆਂ ਜਾ ਰਹੀਆਂ ਹਨ…",
+  "holdingsReviewTitle": "ਮਿਲੀਆਂ ਪੁਜ਼ੀਸ਼ਨਾਂ",
+  "holdingsReviewHint": "ਜੋੜਨ ਤੋਂ ਪਹਿਲਾਂ ਅੰਕਾਂ ਦੀ ਜਾਂਚ ਕਰੋ। ਕੀਮਤ ਪ੍ਰਤੀ ਸ਼ੇਅਰ ਤੁਹਾਡੀ ਔਸਤ ਖ਼ਰੀਦ ਕੀਮਤ ਹੈ, ਅੱਜ ਦੀ ਕੀਮਤ ਨਹੀਂ।",
+  "holdingsNoPrice": "ਚਿੱਤਰ ਵਿੱਚ ਕੋਈ ਔਸਤ ਖ਼ਰੀਦ ਕੀਮਤ ਨਹੀਂ",
+  "holdingsAdd": "{count, plural, =1{1 ਪੁਜ਼ੀਸ਼ਨ ਜੋੜੋ} other{{count} ਪੁਜ਼ੀਸ਼ਨਾਂ ਜੋੜੋ}}",
+  "holdingsNone": "ਇਸ ਚਿੱਤਰ ਵਿੱਚ ਕੋਈ ਸ਼ੇਅਰ ਪੁਜ਼ੀਸ਼ਨ ਨਹੀਂ ਮਿਲੀ। ਆਪਣੇ ਬ੍ਰੋਕਰ ਦੇ ਪੁਜ਼ੀਸ਼ਨ ਜਾਂ ਹੋਲਡਿੰਗਜ਼ ਪੰਨੇ ਦਾ ਸਕ੍ਰੀਨਸ਼ਾਟ ਅਜ਼ਮਾਓ।"
 }

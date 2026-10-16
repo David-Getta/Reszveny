@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} zai fitar da sakamakon kuɗi na kwata yau",
   "earningsRemindersTitle": "Tunatarwar sakamakon kuɗi",
   "earningsRemindersSubtitle": "Sanarwa kwana ɗaya kafin hannayen jarin da ka fi so ko na fayil ɗinka su fitar da sakamakon kuɗi na kwata",
-  "addAllToFavorites": "Ƙara duka zuwa abubuwan da aka fi so ({count})"
+  "addAllToFavorites": "Ƙara duka zuwa abubuwan da aka fi so ({count})",
+  "portfolioImportPhoto": "Shigo da daga hoton allo",
+  "holdingsReading": "Ana karanta hannayen jarinka…",
+  "holdingsReviewTitle": "Hannayen jari da aka samu",
+  "holdingsReviewHint": "Duba lambobin kafin ka ƙara su. Farashin shi ne matsakaicin farashin sayenka na kowane hannun jari, ba farashin yau ba.",
+  "holdingsNoPrice": "Babu matsakaicin farashin saye a hoton",
+  "holdingsAdd": "{count, plural, =1{Ƙara hannun jari 1} other{Ƙara hannayen jari {count}}}",
+  "holdingsNone": "Ba a sami hannayen jari a wannan hoton ba. Gwada hoton allo na shafin hannayen jarinka a manhajar dillalinka."
 }

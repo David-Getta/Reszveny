@@ -2078,4 +2078,35 @@ class AppLocalizationsTg extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Иловаи ҳама ба интихобшудаҳо ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Воридот аз скриншот';
+
+  @override
+  String get holdingsReading => 'Мавқеъҳои шумо хонда мешаванд…';
+
+  @override
+  String get holdingsReviewTitle => 'Мавқеъҳои ёфтшуда';
+
+  @override
+  String get holdingsReviewHint =>
+      'Пеш аз илова кардан рақамҳоро санҷед. Нарх — нархи миёнаи хариди шумо барои як саҳмия аст, на нархи имрӯза.';
+
+  @override
+  String get holdingsNoPrice => 'Дар тасвир нархи миёнаи харид нест';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Илова кардани $count мавқеъ',
+      one: 'Илова кардани 1 мавқеъ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Дар ин тасвир мавқеъҳои саҳмия ёфт нашуданд. Скриншоти саҳифаи мавқеъҳо ё дороиҳоро дар барномаи брокератон санҷед.';
 }

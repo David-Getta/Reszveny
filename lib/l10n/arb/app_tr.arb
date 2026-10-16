@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} bugün çeyreklik bilançosunu açıklıyor",
   "earningsRemindersTitle": "Bilanço hatırlatıcıları",
   "earningsRemindersSubtitle": "Favorilerindeki veya portföyündeki hisseler çeyreklik bilançosunu açıklamadan bir gün önce bildirim",
-  "addAllToFavorites": "Tümünü favorilere ekle ({count})"
+  "addAllToFavorites": "Tümünü favorilere ekle ({count})",
+  "portfolioImportPhoto": "Ekran görüntüsünden içe aktar",
+  "holdingsReading": "Pozisyonların okunuyor…",
+  "holdingsReviewTitle": "Bulunan pozisyonlar",
+  "holdingsReviewHint": "Eklemeden önce rakamları kontrol et. Fiyat, hisse başına ortalama alış fiyatındır, bugünkü fiyat değil.",
+  "holdingsNoPrice": "Görselde ortalama alış fiyatı yok",
+  "holdingsAdd": "{count, plural, =1{1 pozisyon ekle} other{{count} pozisyon ekle}}",
+  "holdingsNone": "Bu görselde hisse pozisyonu bulunamadı. Aracı kurumunun pozisyonlar veya varlıklar sayfasının ekran görüntüsünü dene."
 }

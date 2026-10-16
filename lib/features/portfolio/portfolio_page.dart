@@ -8,6 +8,7 @@ import '../../theme/app_theme.dart';
 import '../../widgets/desktop_chrome.dart';
 import 'add_lot_dialog.dart';
 import 'csv_dialog.dart';
+import 'holdings_import.dart';
 import 'portfolio_history.dart';
 import 'portfolio_review_card.dart';
 import 'portfolio_store.dart';
@@ -128,11 +129,24 @@ class _EmptyPortfolio extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 12),
-            TextButton.icon(
-              key: const ValueKey('portfolio-empty-import'),
-              onPressed: () => showPortfolioImport(context),
-              icon: const Icon(Icons.file_download_outlined, size: 18),
-              label: Text(l10n.portfolioImport),
+            // Az első pozíciókhoz: képernyőkép a bróker-appból, vagy CSV.
+            Wrap(
+              alignment: WrapAlignment.center,
+              spacing: 8,
+              children: [
+                TextButton.icon(
+                  key: const ValueKey('portfolio-empty-photo'),
+                  onPressed: () => showHoldingsImport(context),
+                  icon: const Icon(Icons.add_photo_alternate_outlined, size: 18),
+                  label: Text(l10n.portfolioImportPhoto),
+                ),
+                TextButton.icon(
+                  key: const ValueKey('portfolio-empty-import'),
+                  onPressed: () => showPortfolioImport(context),
+                  icon: const Icon(Icons.file_download_outlined, size: 18),
+                  label: Text(l10n.portfolioImport),
+                ),
+              ],
             ),
           ],
         ),

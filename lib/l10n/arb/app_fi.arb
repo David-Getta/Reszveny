@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} julkaisee osavuosikatsauksen tänään",
   "earningsRemindersTitle": "Tulosmuistutukset",
   "earningsRemindersSubtitle": "Ilmoitus päivää ennen kuin suosikkiesi tai salkkusi osakkeet julkaisevat osavuosikatsauksen",
-  "addAllToFavorites": "Lisää kaikki suosikkeihin ({count})"
+  "addAllToFavorites": "Lisää kaikki suosikkeihin ({count})",
+  "portfolioImportPhoto": "Tuo kuvakaappauksesta",
+  "holdingsReading": "Luetaan omistuksiasi…",
+  "holdingsReviewTitle": "Löydetyt omistukset",
+  "holdingsReviewHint": "Tarkista luvut ennen kuin lisäät ne. Hinta on keskimääräinen ostohintasi osaketta kohden, ei tämän päivän hinta.",
+  "holdingsNoPrice": "Kuvassa ei ole keskimääräistä ostohintaa",
+  "holdingsAdd": "{count, plural, =1{Lisää 1 omistus} other{Lisää {count} omistusta}}",
+  "holdingsNone": "Tästä kuvasta ei löytynyt osakeomistuksia. Kokeile kuvakaappausta välittäjäsi omistukset- tai positiot-sivusta."
 }

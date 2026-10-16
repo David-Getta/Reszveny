@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} legt heute Quartalszahlen vor",
   "earningsRemindersTitle": "Erinnerung an Quartalszahlen",
   "earningsRemindersSubtitle": "Eine Benachrichtigung am Vortag, wenn Aktien aus deinen Favoriten oder deinem Portfolio Quartalszahlen vorlegen",
-  "addAllToFavorites": "Alle zu Favoriten hinzufügen ({count})"
+  "addAllToFavorites": "Alle zu Favoriten hinzufügen ({count})",
+  "portfolioImportPhoto": "Aus Screenshot importieren",
+  "holdingsReading": "Deine Positionen werden gelesen…",
+  "holdingsReviewTitle": "Gefundene Positionen",
+  "holdingsReviewHint": "Prüfe die Zahlen, bevor du sie hinzufügst. Der Preis ist dein durchschnittlicher Kaufpreis pro Aktie, nicht der heutige Kurs.",
+  "holdingsNoPrice": "Kein durchschnittlicher Kaufpreis auf dem Bild",
+  "holdingsAdd": "{count, plural, =1{1 Position hinzufügen} other{{count} Positionen hinzufügen}}",
+  "holdingsNone": "Auf diesem Bild wurden keine Aktienpositionen gefunden. Versuch es mit einem Screenshot der Positions- oder Depotseite deines Brokers."
 }

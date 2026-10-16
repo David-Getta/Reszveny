@@ -2072,4 +2072,35 @@ class AppLocalizationsGu extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'બધા મનપસંદમાં ઉમેરો ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'સ્ક્રીનશોટમાંથી આયાત કરો';
+
+  @override
+  String get holdingsReading => 'તમારી પોઝિશન વાંચી રહ્યા છીએ…';
+
+  @override
+  String get holdingsReviewTitle => 'મળેલી પોઝિશન';
+
+  @override
+  String get holdingsReviewHint =>
+      'ઉમેરતા પહેલાં આંકડા તપાસો. ભાવ આજનો ભાવ નથી, પણ શેર દીઠ તમારી સરેરાશ ખરીદ કિંમત છે.';
+
+  @override
+  String get holdingsNoPrice => 'છબીમાં સરેરાશ ખરીદ કિંમત નથી';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count પોઝિશન ઉમેરો',
+      one: '1 પોઝિશન ઉમેરો',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'આ છબીમાં કોઈ શેર પોઝિશન મળી નથી. તમારા બ્રોકરના પોઝિશન અથવા હોલ્ડિંગ્સ પેજનો સ્ક્રીનશોટ અજમાવો.';
 }

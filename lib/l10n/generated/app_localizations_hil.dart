@@ -2089,4 +2089,36 @@ class AppLocalizationsHil extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Idugang tanan sa mga paborito ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'I-import halin sa screenshot';
+
+  @override
+  String get holdingsReading => 'Ginabasa ang imo mga posisyon…';
+
+  @override
+  String get holdingsReviewTitle => 'Mga posisyon nga nakit-an';
+
+  @override
+  String get holdingsReviewHint =>
+      'Usisaa ang mga numero antes idugang. Ang presyo amo ang imo average nga presyo sang pagbakal kada share, indi ang presyo subong.';
+
+  @override
+  String get holdingsNoPrice =>
+      'Wala sang average nga presyo sang pagbakal sa litrato';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Idugang ang $count ka posisyon',
+      one: 'Idugang ang 1 ka posisyon',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Wala sang nakit-an nga posisyon sa stock sa sini nga litrato. Tilawi ang screenshot sang pahina sang mga posisyon ukon holdings sang imo broker.';
 }

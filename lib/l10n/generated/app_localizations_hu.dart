@@ -2082,4 +2082,35 @@ class AppLocalizationsHu extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Mind a kedvencekhez ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Importálás képernyőképről';
+
+  @override
+  String get holdingsReading => 'Pozíciók beolvasása…';
+
+  @override
+  String get holdingsReviewTitle => 'Talált pozíciók';
+
+  @override
+  String get holdingsReviewHint =>
+      'Ellenőrizd a számokat, mielőtt felveszed őket. Az ár az egy részvényre jutó átlagos vételár, nem a mai ár.';
+
+  @override
+  String get holdingsNoPrice => 'Nincs átlagos vételár a képen';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pozíció felvétele',
+      one: '1 pozíció felvétele',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Ezen a képen nem találtunk részvénypozíciót. Próbáld a brókered „Pozícióim” vagy „Portfólió” oldaláról készült képernyőképpel.';
 }

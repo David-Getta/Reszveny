@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} يعلن نتائجه الفصلية اليوم",
   "earningsRemindersTitle": "تذكيرات النتائج",
   "earningsRemindersSubtitle": "إشعار قبل يوم من إعلان أسهم المفضلة أو محفظتك نتائجها الفصلية",
-  "addAllToFavorites": "إضافة الكل إلى المفضلة ({count})"
+  "addAllToFavorites": "إضافة الكل إلى المفضلة ({count})",
+  "portfolioImportPhoto": "استيراد من لقطة شاشة",
+  "holdingsReading": "جارٍ قراءة مراكزك…",
+  "holdingsReviewTitle": "المراكز التي عُثر عليها",
+  "holdingsReviewHint": "تحقّق من الأرقام قبل إضافتها. السعر هو متوسط سعر شرائك للسهم، وليس سعر اليوم.",
+  "holdingsNoPrice": "لا يوجد متوسط سعر شراء في الصورة",
+  "holdingsAdd": "{count, plural, =1{إضافة مركز واحد} =2{إضافة مركزين} few{إضافة {count} مراكز} many{إضافة {count} مركزًا} other{إضافة {count} مركز}}",
+  "holdingsNone": "لم يُعثر على أي مراكز أسهم في هذه الصورة. جرّب لقطة شاشة لصفحة المراكز أو الحيازات لدى وسيطك."
 }

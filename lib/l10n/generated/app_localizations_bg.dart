@@ -2077,4 +2077,35 @@ class AppLocalizationsBg extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Добави всички към любими ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Импортиране от екранна снимка';
+
+  @override
+  String get holdingsReading => 'Разчитане на позициите ви…';
+
+  @override
+  String get holdingsReviewTitle => 'Открити позиции';
+
+  @override
+  String get holdingsReviewHint =>
+      'Проверете числата, преди да ги добавите. Цената е средната ви покупна цена за акция, а не днешната цена.';
+
+  @override
+  String get holdingsNoPrice => 'На изображението няма средна покупна цена';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Добави $count позиции',
+      one: 'Добави 1 позиция',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'На това изображение не са открити позиции в акции. Опитайте с екранна снимка на страницата с позиции или активи при вашия брокер.';
 }

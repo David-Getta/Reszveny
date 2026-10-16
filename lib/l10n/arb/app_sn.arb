@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} ichaburitsa mhedzisiro yekota nhasi",
   "earningsRemindersTitle": "Zviyeuchidzo zvemhedzisiro",
   "earningsRemindersSubtitle": "Chiziviso zuva rimwe zvaunofarira kana masheya ari mupotiforiyo yako asati aburitsa mhedzisiro yekota",
-  "addAllToFavorites": "Wedzera zvese kune zvaunofarira ({count})"
+  "addAllToFavorites": "Wedzera zvese kune zvaunofarira ({count})",
+  "portfolioImportPhoto": "Pinza kubva pamufananidzo wesikirini",
+  "holdingsReading": "Kuverenga masheya ako…",
+  "holdingsReviewTitle": "Masheya awanikwa",
+  "holdingsReviewHint": "Tarisa nhamba usati wadzipinza. Mutengo ndiwo mutengo wako wepakati wawakatenga nawo sheya imwe neimwe, kwete mutengo wanhasi.",
+  "holdingsNoPrice": "Hapana mutengo wepakati wekutenga pamufananidzo",
+  "holdingsAdd": "{count, plural, =1{Wedzera sheya 1} other{Wedzera masheya {count}}}",
+  "holdingsNone": "Hapana masheya awanikwa pamufananidzo uyu. Edza mufananidzo wesikirini wepeji remasheya kubroker yako."
 }

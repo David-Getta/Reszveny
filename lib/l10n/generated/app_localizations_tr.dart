@@ -2076,4 +2076,35 @@ class AppLocalizationsTr extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Tümünü favorilere ekle ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Ekran görüntüsünden içe aktar';
+
+  @override
+  String get holdingsReading => 'Pozisyonların okunuyor…';
+
+  @override
+  String get holdingsReviewTitle => 'Bulunan pozisyonlar';
+
+  @override
+  String get holdingsReviewHint =>
+      'Eklemeden önce rakamları kontrol et. Fiyat, hisse başına ortalama alış fiyatındır, bugünkü fiyat değil.';
+
+  @override
+  String get holdingsNoPrice => 'Görselde ortalama alış fiyatı yok';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pozisyon ekle',
+      one: '1 pozisyon ekle',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Bu görselde hisse pozisyonu bulunamadı. Aracı kurumunun pozisyonlar veya varlıklar sayfasının ekran görüntüsünü dene.';
 }

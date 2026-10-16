@@ -2078,4 +2078,35 @@ class AppLocalizationsKu extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Hemûyan li bijareyan zêde bike ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Ji wêneya ekranê têxe';
+
+  @override
+  String get holdingsReading => 'Pozîsyonên te têne xwendin…';
+
+  @override
+  String get holdingsReviewTitle => 'Pozîsyonên hatine dîtin';
+
+  @override
+  String get holdingsReviewHint =>
+      'Berî ku tu wan zêde bikî, hejmaran kontrol bike. Biha bihayê navînî yê kirîna te ji bo her pişkekê ye, ne bihayê îro.';
+
+  @override
+  String get holdingsNoPrice => 'Di wêneyê de bihayê navînî yê kirînê tune';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pozîsyonan zêde bike',
+      one: '1 pozîsyonê zêde bike',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Di vê wêneyê de tu pozîsyonên pişkan nehatin dîtin. Wêneya ekranê ya rûpela pozîsyonan an xwedîtiyan a brokerê xwe biceribîne.';
 }

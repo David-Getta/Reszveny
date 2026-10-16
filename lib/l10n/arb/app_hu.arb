@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol}: ma gyorsjelentés",
   "earningsRemindersTitle": "Gyorsjelentés-emlékeztető",
   "earningsRemindersSubtitle": "Értesítés a kedvenceid és a portfóliód részvényeinek gyorsjelentése előtti napon",
-  "addAllToFavorites": "Mind a kedvencekhez ({count})"
+  "addAllToFavorites": "Mind a kedvencekhez ({count})",
+  "portfolioImportPhoto": "Importálás képernyőképről",
+  "holdingsReading": "Pozíciók beolvasása…",
+  "holdingsReviewTitle": "Talált pozíciók",
+  "holdingsReviewHint": "Ellenőrizd a számokat, mielőtt felveszed őket. Az ár az egy részvényre jutó átlagos vételár, nem a mai ár.",
+  "holdingsNoPrice": "Nincs átlagos vételár a képen",
+  "holdingsAdd": "{count, plural, =1{1 pozíció felvétele} other{{count} pozíció felvétele}}",
+  "holdingsNone": "Ezen a képen nem találtunk részvénypozíciót. Próbáld a brókered „Pozícióim” vagy „Portfólió” oldaláról készült képernyőképpel."
 }

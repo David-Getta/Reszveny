@@ -2081,4 +2081,35 @@ class AppLocalizationsMs extends AppLocalizations {
   String addAllToFavorites(int count) {
     return 'Tambah semua ke kegemaran ($count)';
   }
+
+  @override
+  String get portfolioImportPhoto => 'Import daripada tangkapan skrin';
+
+  @override
+  String get holdingsReading => 'Membaca pegangan anda…';
+
+  @override
+  String get holdingsReviewTitle => 'Pegangan ditemui';
+
+  @override
+  String get holdingsReviewHint =>
+      'Semak nombor sebelum menambahkannya. Harga ialah purata harga belian anda bagi setiap saham, bukan harga hari ini.';
+
+  @override
+  String get holdingsNoPrice => 'Tiada purata harga belian dalam imej';
+
+  @override
+  String holdingsAdd(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Tambah $count pegangan',
+      one: 'Tambah 1 pegangan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get holdingsNone =>
+      'Tiada pegangan saham ditemui dalam imej ini. Cuba tangkapan skrin halaman kedudukan atau pegangan broker anda.';
 }

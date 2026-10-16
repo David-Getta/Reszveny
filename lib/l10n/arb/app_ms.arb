@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} mengumumkan keputusan suku tahunan hari ini",
   "earningsRemindersTitle": "Peringatan keputusan",
   "earningsRemindersSubtitle": "Pemberitahuan sehari sebelum saham kegemaran atau portfolio anda mengumumkan keputusan suku tahunan",
-  "addAllToFavorites": "Tambah semua ke kegemaran ({count})"
+  "addAllToFavorites": "Tambah semua ke kegemaran ({count})",
+  "portfolioImportPhoto": "Import daripada tangkapan skrin",
+  "holdingsReading": "Membaca pegangan anda…",
+  "holdingsReviewTitle": "Pegangan ditemui",
+  "holdingsReviewHint": "Semak nombor sebelum menambahkannya. Harga ialah purata harga belian anda bagi setiap saham, bukan harga hari ini.",
+  "holdingsNoPrice": "Tiada purata harga belian dalam imej",
+  "holdingsAdd": "{count, plural, =1{Tambah 1 pegangan} other{Tambah {count} pegangan}}",
+  "holdingsNone": "Tiada pegangan saham ditemui dalam imej ini. Cuba tangkapan skrin halaman kedudukan atau pegangan broker anda."
 }

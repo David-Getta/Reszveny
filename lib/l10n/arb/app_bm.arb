@@ -559,5 +559,12 @@
   "earningsReminderToday": "{symbol} bɛ kalo saba jatebɔ jira bi",
   "earningsRemindersTitle": "Jatebɔ hakilijiginw",
   "earningsRemindersSubtitle": "Kunnafoni don kelen ka kɔn i ka diyanyelenw walima i ka portfolio aksiyɔnw ka kalo saba jatebɔ jira ɲɛ",
-  "addAllToFavorites": "U bɛɛ fara diyanyelenw kan ({count})"
+  "addAllToFavorites": "U bɛɛ fara diyanyelenw kan ({count})",
+  "portfolioImportPhoto": "Don ka bɔ ɛkran ja la",
+  "holdingsReading": "I ka aksiyɔnw bɛ ka kalan…",
+  "holdingsReviewTitle": "Aksiyɔn minnu sɔrɔla",
+  "holdingsReviewHint": "Jatew lajɛ sani i k’u fara a kan. Sɔngɔ ye i ka sanni sɔngɔ cɛmancɛ ye aksiyɔn kelen na, a tɛ bi sɔngɔ ye.",
+  "holdingsNoPrice": "Sanni sɔngɔ cɛmancɛ tɛ ja kan",
+  "holdingsAdd": "{count, plural, =1{Aksiyɔn 1 fara a kan} other{Aksiyɔn {count} fara a kan}}",
+  "holdingsNone": "Aksiyɔn si ma sɔrɔ nin ja kan. I ka burusi ka aksiyɔnw ɲɛ ɛkran ja dɔ lajɛ."
 }

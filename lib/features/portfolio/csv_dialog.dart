@@ -7,6 +7,7 @@ import '../../app_services.dart';
 import '../../core/share/share_text.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
+import 'holdings_import.dart';
 import 'portfolio_csv.dart';
 
 /// A portfólió menüje: exportálás CSV-be (megosztással), importálás beillesztett sorokból.
@@ -23,6 +24,8 @@ class PortfolioCsvMenu extends StatelessWidget {
       onSelected: (v) async {
         if (v == 'export') {
           await shareText(portfolioCsv(services.portfolio.lots), subject: 'WhatStock portfolio.csv');
+        } else if (v == 'photo') {
+          if (context.mounted) await showHoldingsImport(context);
         } else if (context.mounted) {
           await showPortfolioImport(context);
         }
@@ -34,6 +37,14 @@ class PortfolioCsvMenu extends StatelessWidget {
             value: 'export',
             child: ListTile(leading: const Icon(Icons.ios_share_rounded), title: Text(l10n.portfolioExport)),
           ),
+        PopupMenuItem(
+          key: const ValueKey('portfolio-import-photo'),
+          value: 'photo',
+          child: ListTile(
+            leading: const Icon(Icons.add_photo_alternate_outlined),
+            title: Text(l10n.portfolioImportPhoto),
+          ),
+        ),
         PopupMenuItem(
           key: const ValueKey('portfolio-import'),
           value: 'import',

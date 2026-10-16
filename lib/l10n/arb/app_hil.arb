@@ -559,5 +559,12 @@
   "earningsReminderToday": "Ang {symbol} magapagwa sang resulta kada kwarter subong",
   "earningsRemindersTitle": "Mga pahanumdom sa resulta",
   "earningsRemindersSubtitle": "Pahibalo isa ka adlaw antes magpagwa sang resulta kada kwarter ang mga stock sa imo mga paborito ukon portfolio",
-  "addAllToFavorites": "Idugang tanan sa mga paborito ({count})"
+  "addAllToFavorites": "Idugang tanan sa mga paborito ({count})",
+  "portfolioImportPhoto": "I-import halin sa screenshot",
+  "holdingsReading": "Ginabasa ang imo mga posisyon…",
+  "holdingsReviewTitle": "Mga posisyon nga nakit-an",
+  "holdingsReviewHint": "Usisaa ang mga numero antes idugang. Ang presyo amo ang imo average nga presyo sang pagbakal kada share, indi ang presyo subong.",
+  "holdingsNoPrice": "Wala sang average nga presyo sang pagbakal sa litrato",
+  "holdingsAdd": "{count, plural, =1{Idugang ang 1 ka posisyon} other{Idugang ang {count} ka posisyon}}",
+  "holdingsNone": "Wala sang nakit-an nga posisyon sa stock sa sini nga litrato. Tilawi ang screenshot sang pahina sang mga posisyon ukon holdings sang imo broker."
 }
