@@ -115,6 +115,12 @@ class Store {
         created_at TEXT NOT NULL,
         PRIMARY KEY (code, user_id)
       );
+      CREATE TABLE IF NOT EXISTS tester_redemptions (
+        code TEXT NOT NULL,
+        user_id TEXT NOT NULL,
+        created_at TEXT NOT NULL,
+        PRIMARY KEY (code, user_id)
+      );
       CREATE TABLE IF NOT EXISTS invite_usage (
         code TEXT NOT NULL,
         created_at TEXT NOT NULL
@@ -277,6 +283,7 @@ class Store {
       _db.execute('DELETE FROM ask_calls WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM user_sync WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM digest_log WHERE user_id = ?', [userId]);
+      _db.execute('DELETE FROM tester_redemptions WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM referral_codes WHERE user_id = ?', [userId]);
       _db.execute('DELETE FROM referrals WHERE referee_id = ? OR referrer_id = ?', [userId, userId]);
       if (email != null) _db.execute('DELETE FROM login_codes WHERE email = ?', [email]);
@@ -477,6 +484,34 @@ class Store {
 
   void addInviteDevice(String code, String userId) => _db.execute(
     'INSERT OR IGNORE INTO invite_devices (code, user_id, created_at) VALUES (?, ?, ?)',
+    [code, userId, clock().toUtc().toIso8601String()],
+  );
+
+  /// Hány fiók váltotta már be a tesztelői kódot, és ez a fiók köztük van-e.
+  ({int count, bool mine}) testerRedemptions(String code, String userId) {
+    final rows = _db.select('SELECT user_id FROM tester_redemptions WHERE code = ?', [code]);
+    return (count: rows.length, mine: rows.any((r) => r['user_id'] == userId));
+  }
+
+  /// A fiók legutóbbi tesztelői beváltása (kód és időpont), vagy `null`.
+  ({String code, DateTime at})? testerRedemptionOf(String userId) {
+    final rows = _db.select(
+      'SELECT code, created_at FROM tester_redemptions WHERE user_id = ? ORDER BY created_at DESC LIMIT 1',
+      [userId],
+    );
+    if (rows.isEmpty) return null;
+    return (code: rows.first['code'] as String, at: DateTime.parse(rows.first['created_at'] as String));
+  }
+
+  void removeTesterRedemptions(String userId) =>
+      _db.execute('DELETE FROM tester_redemptions WHERE user_id = ?', [userId]);
+
+  /// Van-e a fióknak (nem visszavont) bolti vagy böngészős vásárlása.
+  bool hasPurchases(String userId) =>
+      _db.select('SELECT 1 FROM purchases WHERE user_id = ? LIMIT 1', [userId]).isNotEmpty;
+
+  void addTesterRedemption(String code, String userId) => _db.execute(
+    'INSERT OR IGNORE INTO tester_redemptions (code, user_id, created_at) VALUES (?, ?, ?)',
     [code, userId, clock().toUtc().toIso8601String()],
   );
 

@@ -137,6 +137,14 @@ következő szinkronnál átveszik), és e-mailt küld a felhasználó nyelvén 
 riasztásról csak egyszer. Az appban a Riasztások oldalon kapcsolható ki. Az e-mailhez a
 `RESEND_API_KEY` és a `MAIL_FROM` kell (nélkülük csak a naplóba kerül).
 
+## Tesztelői kódok (fizetés nélküli csomag)
+
+A `TESTER_CODES` változóval a tulajdonos és a tesztelők fizetés nélkül kapnak csomagot:
+`KÓD:Név[:csomag][:napok][:fiókok]`, vesszővel elválasztva, pl. `DAVID-TESZT:Dávid:max:365:3`
+(alapból `max`, 90 nap, 3 fiók). Az appban: Beállítások → Hívd meg a barátaidat → „Van kódod egy
+barátodtól?” → a kód beírása. A csomag a megadott napig él; ha a kódot törlöd a változóból, a
+következő kérésnél megszűnik (ha közben nem vásárolt a fiók). A kódot ne add ki nyilvánosan.
+
 ## Heti összefoglaló e-mailben
 
 Aki a Beállításokban (belépve) bekapcsolja, annak hétfő reggelente (6:00 UTC után) e-mail megy: a

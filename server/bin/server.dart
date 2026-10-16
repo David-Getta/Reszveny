@@ -4,6 +4,7 @@ import 'package:shelf/shelf_io.dart' as io;
 import 'package:whatstock_server/src/api.dart';
 import 'package:whatstock_server/src/db.dart';
 import 'package:whatstock_server/src/invites.dart';
+import 'package:whatstock_server/src/testers.dart';
 import 'package:whatstock_server/src/mailer.dart';
 import 'package:whatstock_server/src/purchase_verifier.dart';
 import 'package:whatstock_server/src/store_apis.dart';
@@ -24,6 +25,8 @@ import 'package:whatstock_server/src/stripe.dart';
 /// GOOGLE_RTDN_TOKEN (a Play értesítések push-címének titkos `token` paramétere),
 /// TRIAL_PER_IP_DAY (10): egy IP-címről naponta ennyi új próbaidő (0 = nincs korlát),
 /// ALERT_CHECK_MINUTES (10): a szerver ilyen gyakran nézi a belépett fiókok riasztásait (0 = ki),
+/// TESTER_CODES: tesztelői kódok (`KÓD:Név[:csomag][:napok][:fiókok]`), az appban az ajánlói kód
+/// helyén beváltva csomagot adnak fizetés nélkül,
 /// DIGEST_CHECK_MINUTES (60): ilyen gyakran nézi, kinek esedékes a hétfői heti összefoglaló (0 = ki).
 Future<void> main() async {
   final env = Platform.environment;
@@ -39,8 +42,10 @@ Future<void> main() async {
   final resend = env['RESEND_API_KEY'] ?? '';
   final stripeKey = env['STRIPE_SECRET_KEY'] ?? '';
   final invites = InviteBook.parse(env['INVITE_CODES'], onWarning: stderr.writeln);
+  final testers = TesterBook.parse(env['TESTER_CODES'], onWarning: stderr.writeln);
   final api = Api(
     invites: invites,
+    testers: testers,
     // Ajánlói program: extra elemzés mindkét félnek, ajánlónként legfeljebb ennyi meghívott után.
     referralBonus: int.tryParse(env['REFERRAL_BONUS'] ?? '') ?? 5,
     referralMax: int.tryParse(env['REFERRAL_MAX'] ?? '') ?? 10,

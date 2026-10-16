@@ -17,6 +17,7 @@ import 'package:reszveny/core/share/share_text.dart';
 import 'package:reszveny/features/analysis/claude_stock_analyst.dart';
 import 'package:reszveny/features/analysis/report_store.dart';
 import 'package:reszveny/features/billing/entitlement_service.dart';
+import 'package:reszveny/features/billing/plan.dart';
 import 'package:reszveny/features/capture/capture_service.dart';
 import 'package:reszveny/features/market_data/demo_market_data_provider.dart';
 import 'package:reszveny/features/recognition/stock_recognizer.dart';
@@ -36,9 +37,12 @@ class _NoRecognizer implements StockRecognizer {
 class _Server {
   var redeemed = false;
   var extra = 0;
+  var tier = 'trial';
 
   Map<String, Object> get _ent => {
-    'tier': 'trial',
+    'tier': tier,
+    'period_start': DateTime.now().toUtc().toIso8601String(),
+    'period_end': DateTime.now().add(const Duration(days: 30)).toUtc().toIso8601String(),
     'trial_started_at': DateTime.now().toUtc().toIso8601String(),
     'used': 0,
     'extra': extra,
@@ -53,6 +57,10 @@ class _Server {
       case '/v1/referral/redeem':
         final code = (jsonDecode(req.body) as Map)['code'];
         if (code == 'WS-MINE42') return json({'error': 'own_code'}, 400);
+        if (code == 'DAVID-TESZT') {
+          tier = 'max';
+          return json({'entitlements': _ent, 'bonus': 0, 'tester': 'Dávid'});
+        }
         if (code != 'WS-FRIEND') return json({'error': 'unknown_code'}, 404);
         redeemed = true;
         extra = 5;
@@ -135,6 +143,25 @@ void main() {
     expect(s.entitlements.extraCredits, 5);
     // Beváltás után nem kínálja újra.
     expect(find.byKey(const ValueKey('referral-have-code')), findsNothing);
+  });
+
+  testWidgets('a tester code gives a plan: the message says it is active', (tester) async {
+    tester.view.physicalSize = const Size(1200, 1600);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final server = _Server();
+    final s = _services(server);
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Settings'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('referral-have-code')));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byKey(const ValueKey('referral-input')), 'DAVID-TESZT');
+    await tester.tap(find.byKey(const ValueKey('referral-redeem')));
+    await tester.pumpAndSettle();
+    expect(find.text('Thanks! Your purchase is active.'), findsOneWidget);
+    expect(s.entitlements.state.tier, PlanTier.max);
   });
 
   testWidgets('without a server there is no referral card (demo mode)', (tester) async {

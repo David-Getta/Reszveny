@@ -21,6 +21,7 @@ import 'store_apis.dart';
 import 'site_pages.dart';
 import 'stripe.dart';
 import 'telemetry.dart';
+import 'testers.dart';
 
 /// A WhatStock backend útvonalai.
 ///
@@ -64,6 +65,7 @@ class Api {
     this.trialModel = 'claude-sonnet-5-5',
     this.legalDir = 'legal',
     this.invites = const InviteBook(),
+    this.testers = const TesterBook(),
     this.referralBonus = 5,
     this.referralMax = 10,
     this.adminToken = '',
@@ -106,6 +108,9 @@ class Api {
 
   /// Meghívókódok; ha üres, a szerver nyitott.
   final InviteBook invites;
+
+  /// Tesztelői kódok (`TESTER_CODES`): az ajánlói kód helyén beváltva csomagot adnak.
+  final TesterBook testers;
   static const inviteHeader = 'x-whatstock-invite';
 
   /// Böngészős fizetés (asztali gép, web); `null`, ha nincs beállítva.
@@ -211,11 +216,29 @@ class Api {
     return auth.substring(7).trim();
   }
 
-  Map<String, dynamic> _account(String uid) => {
-    'user_id': uid,
-    'email': store.emailOf(uid),
-    'entitlements': store.entitlement(uid).toJson(),
-  };
+  Map<String, dynamic> _account(String uid) {
+    _expireTester(uid);
+    return {'user_id': uid, 'email': store.emailOf(uid), 'entitlements': store.entitlement(uid).toJson()};
+  }
+
+  /// A tesztelői csomag lejárata: ha a kódot törölték, vagy letelt a megadott
+  /// napszám, a csomag megszűnik (ha közben nem vásárolt a fiók).
+  void _expireTester(String uid) {
+    final r = store.testerRedemptionOf(uid);
+    if (r == null) return;
+    final t = testers.find(r.code);
+    final now = store.clock();
+    if (t != null && now.isBefore(r.at.add(Duration(days: t.days)))) return;
+    store.removeTesterRedemptions(uid);
+    if (store.hasPurchases(uid)) return;
+    final e = store.entitlement(uid);
+    if (e.tier == null || e.tier == 'trial') return;
+    store.save(
+      e
+        ..tier = null
+        ..periodEnd = now,
+    );
+  }
 
   static Response _page(String mark, String text) => Response.ok(
     '<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width">'
@@ -677,6 +700,21 @@ class Api {
     final uid = _userId(r);
     if (uid == null) return _error(401, 'unauthorized');
     final code = (await _body(r))['code'] as String? ?? '';
+    // Tesztelői kód: a megadott csomag a megadott napokra, fizetés nélkül.
+    if (testers.find(code) case final t?) {
+      final used = store.testerRedemptions(t.code, uid);
+      if (!used.mine && used.count >= t.maxAccounts) return _error(409, 'tester_code_full');
+      store.addTesterRedemption(t.code, uid);
+      final now = store.clock();
+      final e = store.entitlement(uid)
+        ..tier = t.tier
+        ..periodStart = now
+        ..periodEnd = now.add(Duration(days: t.days))
+        ..used = 0;
+      store.save(e);
+      stdout.writeln('Tesztelői kód beváltva: ${t.label} (${t.tier}, ${t.days} nap)');
+      return _json({'entitlements': store.entitlement(uid).toJson(), 'bonus': 0, 'tester': t.label});
+    }
     final referrer = store.userIdForReferralCode(code);
     if (referrer == null) return _error(404, 'unknown_code');
     if (referrer == uid) return _error(400, 'own_code');
@@ -1031,6 +1069,7 @@ class Api {
   Future<Response> _analyze(Request r) async {
     final uid = _userId(r);
     if (uid == null) return _error(401, 'unauthorized');
+    _expireTester(uid);
     final e = store.entitlement(uid);
     // A próbaidő kerete: rövid elemzés az olcsóbb modellel (a megvett extra
     // elemzések már a teljes értékűek).
@@ -1314,22 +1353,29 @@ class Api {
     final cached = _candleCache[key];
     final now = store.clock();
     if (cached != null && now.difference(cached.at) < candleCacheTtl) return Response.ok(cached.body, headers: json);
-    final uri = Uri.parse('$twelveDataBaseUrl/time_series').replace(
-      queryParameters: {
-        'symbol': symbol,
-        'interval': '1day',
-        'start_date': day(from),
-        'end_date': day(to),
-        'order': 'ASC',
-        'outputsize': '5000',
-        'apikey': twelveDataApiKey,
-      },
-    );
     try {
-      final res = await _client.get(uri);
-      final j = jsonDecode(res.body);
-      final values = j is Map && j['status'] == 'ok' ? j['values'] : null;
-      if (values is! List || values.isEmpty) return Response.ok('{"s":"no_data"}', headers: json);
+      // A Twelve Data más jelölést használ (BRK.B, 1796 + HKEX): a változatokat sorban kipróbáljuk.
+      List? values;
+      for (final q in twelveDataSymbols(symbol)) {
+        final uri = Uri.parse('$twelveDataBaseUrl/time_series').replace(
+          queryParameters: {
+            ...q,
+            'interval': '1day',
+            'start_date': day(from),
+            'end_date': day(to),
+            'order': 'ASC',
+            'outputsize': '5000',
+            'apikey': twelveDataApiKey,
+          },
+        );
+        final j = jsonDecode((await _client.get(uri)).body);
+        final v = j is Map && j['status'] == 'ok' ? j['values'] : null;
+        if (v is List && v.isNotEmpty) {
+          values = v;
+          break;
+        }
+      }
+      if (values == null) return Response.ok('{"s":"no_data"}', headers: json);
       final t = <int>[], o = <num?>[], h = <num?>[], l = <num?>[], c = <num?>[], v = <num?>[];
       for (final row in values.whereType<Map>()) {
         final date = DateTime.tryParse('${row['datetime']}'.substring(0, 10));
@@ -1350,6 +1396,51 @@ class Api {
     } catch (_) {
       return Response.ok('{"s":"no_data"}', headers: json);
     }
+  }
+
+  /// A Finnhub-jelölésű ticker Twelve Data-változatai, próbálási sorrendben:
+  /// `BRK-B` → `BRK.B`; tőzsdei végződésnél (`1796.HK`) a szimbólum és a tőzsde külön.
+  static List<Map<String, String>> twelveDataSymbols(String symbol) {
+    const exchanges = {
+      'HK': 'HKEX',
+      'L': 'LSE',
+      'DE': 'XETR',
+      'F': 'FSX',
+      'PA': 'Euronext',
+      'AS': 'Euronext',
+      'BR': 'Euronext',
+      'MI': 'MTA',
+      'MC': 'BME',
+      'SW': 'SIX',
+      'TO': 'TSX',
+      'V': 'TSXV',
+      'T': 'JPX',
+      'AX': 'ASX',
+      'ST': 'OMX',
+      'CO': 'OMXC',
+      'HE': 'OMXH',
+      'OL': 'OSE',
+      'VI': 'VSE',
+      'WA': 'GPW',
+      'BD': 'BSE',
+      'SS': 'SSE',
+      'SZ': 'SZSE',
+      'KS': 'KRX',
+      'NS': 'NSE',
+      'BO': 'BSE',
+      'SA': 'Bovespa',
+      'MX': 'BMV',
+    };
+    final out = <Map<String, String>>[
+      {'symbol': symbol},
+    ];
+    final dot = symbol.lastIndexOf('.');
+    if (dot > 0 && exchanges.containsKey(symbol.substring(dot + 1))) {
+      out.add({'symbol': symbol.substring(0, dot), 'exchange': exchanges[symbol.substring(dot + 1)]!});
+    } else if (symbol.contains('-')) {
+      out.add({'symbol': symbol.replaceAll('-', '.')});
+    }
+    return out;
   }
 
   static Future<Map<String, dynamic>> _body(Request r) async {

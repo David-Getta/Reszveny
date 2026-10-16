@@ -5,6 +5,7 @@ import '../../core/backend/backend_client.dart';
 import '../../core/share/share_text.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
+import '../billing/plan.dart';
 import 'account_controller.dart';
 
 /// „Hívd meg a barátaidat”: a saját ajánlókód másolással és megosztással,
@@ -43,12 +44,16 @@ class _ReferralCardState extends State<ReferralCard> {
   Future<void> _redeem(ReferralInfo info) async {
     final l10n = AppLocalizations.of(context);
     final messenger = ScaffoldMessenger.of(context);
+    final tierBefore = widget.account.entitlements.state.tier;
     final ok = await showDialog<bool>(
       context: context,
       builder: (_) => _RedeemDialog(account: widget.account),
     );
     if (ok != true || !mounted) return;
-    messenger.showSnackBar(SnackBar(content: Text(l10n.referralRedeemed(info.bonus))));
+    // Tesztelői kód: extra elemzés helyett csomagot ad.
+    final tierAfter = widget.account.entitlements.state.tier;
+    final plan = tierAfter != tierBefore && tierAfter != null && tierAfter != PlanTier.trial;
+    messenger.showSnackBar(SnackBar(content: Text(plan ? l10n.purchaseSuccess : l10n.referralRedeemed(info.bonus))));
     setState(() => _redeemedNow = true);
     _reload();
   }

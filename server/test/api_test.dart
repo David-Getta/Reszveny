@@ -251,6 +251,61 @@ void main() {
     expect(jsonDecode(await res.readAsString()), {'s': 'no_data'});
   });
 
+  test('Twelve Data symbol variants: class shares with a dot, foreign tickers with their exchange', () {
+    expect(Api.twelveDataSymbols('AAPL'), [
+      {'symbol': 'AAPL'},
+    ]);
+    expect(Api.twelveDataSymbols('BRK-B'), [
+      {'symbol': 'BRK-B'},
+      {'symbol': 'BRK.B'},
+    ]);
+    expect(Api.twelveDataSymbols('1796.HK'), [
+      {'symbol': '1796.HK'},
+      {'symbol': '1796', 'exchange': 'HKEX'},
+    ]);
+    expect(Api.twelveDataSymbols('OTP.BD').last, {'symbol': 'OTP', 'exchange': 'BSE'});
+  });
+
+  test('BRK-B is found at Twelve Data as BRK.B', () async {
+    final asked = <String>[];
+    final client = MockClient((req) async {
+      asked.add(req.url.queryParameters['symbol']!);
+      if (req.url.queryParameters['symbol'] != 'BRK.B') {
+        return http.Response(jsonEncode({'status': 'error', 'code': 404}), 200);
+      }
+      return http.Response(
+        jsonEncode({
+          'status': 'ok',
+          'values': [
+            {'datetime': '2026-10-15', 'close': '529.22'},
+          ],
+        }),
+        200,
+      );
+    });
+    final td = Api(
+      store: store,
+      anthropicApiKey: 'sk-test',
+      finnhubApiKey: 'fh-test',
+      verifier: const DevVerifier(),
+      client: client,
+      twelveDataApiKey: 'td-key',
+    );
+    final anon = await td.handler(Request('POST', Uri.parse('http://localhost/v1/auth/anonymous')));
+    final token = (jsonDecode(await anon.readAsString()) as Map)['token'] as String;
+    final res = await td.handler(
+      Request(
+        'GET',
+        Uri.parse('http://localhost/v1/market/stock/candle?symbol=BRK-B&from=1&to=1800000000'),
+        headers: {'authorization': 'Bearer $token'},
+      ),
+    );
+    final j = jsonDecode(await res.readAsString()) as Map;
+    expect(j['s'], 'ok');
+    expect(j['c'], [529.22]);
+    expect(asked, ['BRK-B', 'BRK.B']);
+  });
+
   test('paid period rolls over on the server', () async {
     final token = (await call('POST', '/v1/auth/anonymous'))['body']['token'] as String;
     await call(
