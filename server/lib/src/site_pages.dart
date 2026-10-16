@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'plans.dart';
 import 'shares.dart';
 
 /// A nyilvános oldalak: a megosztott elemzés (`/s/<id>`, link-előnézettel) és
@@ -32,6 +33,13 @@ border:1.5px solid var(--accent)}
 .features{display:grid;gap:12px;margin-top:22px}.feature h2{font-size:18px;margin:0 0 4px}
 .note{margin-top:10px;font-size:14px;color:var(--muted)}footer{margin-top:36px;text-align:center;font-size:13px;color:var(--muted)}
 footer a{color:var(--accent)}
+.plans{display:grid;gap:12px;margin-top:18px}@media(min-width:620px){.plans{grid-template-columns:1fr 1fr}}
+.plan{margin-top:0;position:relative}.plan h2{font-size:20px;margin:0}.price{font-size:28px;font-weight:700;margin:8px 0 2px}
+.price small{font-size:15px;font-weight:500;color:var(--muted)}.plan ul{margin:10px 0 0;padding-left:18px}
+.plan.pop{border:2px solid var(--accent)}.badge{position:absolute;top:16px;right:16px}
+table.packs{width:100%;border-collapse:collapse;margin-top:8px}table.packs td{padding:8px 0;border-top:1px solid var(--line)}
+table.packs td:last-child{text-align:right;font-weight:600}nav.top{display:flex;justify-content:space-between;align-items:center}
+nav.top a.link{color:var(--accent);text-decoration:none;font-weight:600;font-size:15px}
 ''';
 
 String _esc(Object? v) => const HtmlEscape().convert('${v ?? ''}');
@@ -167,6 +175,7 @@ const _site = {
     'disclaimer': 'A WhatStock tájékoztató jellegű, nem minősül befektetési tanácsadásnak.',
     'terms': 'Felhasználási feltételek',
     'privacy': 'Adatkezelési tájékoztató',
+    'pricing': 'Árak',
   },
   'en': {
     'title': 'WhatStock – photograph a stock and understand it in minutes',
@@ -182,6 +191,7 @@ const _site = {
     'disclaimer': 'WhatStock is for information only and is not investment advice.',
     'terms': 'Terms of use',
     'privacy': 'Privacy policy',
+    'pricing': 'Pricing',
   },
 };
 
@@ -220,8 +230,129 @@ String landingPage({
     b.write('<div class="card feature"><h2>${_esc(t['f${i}t'])}</h2><div class="muted">${_esc(t['f$i'])}</div></div>');
   }
   b
-    ..write('</div><footer><p>${_esc(t['disclaimer'])}</p>')
-    ..write('<a href="/legal/terms?lang=$lang">${_esc(t['terms'])}</a> · ')
-    ..write('<a href="/legal/privacy?lang=$lang">${_esc(t['privacy'])}</a></footer></main></body></html>');
+    ..write('</div><div class="cta"><a class="btn alt" href="/pricing?lang=$lang">${_esc(t['pricing'])}</a></div>')
+    ..write(_footer(lang));
   return b.toString();
+}
+
+String _footer(String lang) {
+  final t = _site[lang] ?? _site['en']!;
+  return '<footer><p>${_esc(t['disclaimer'])}</p>'
+      '<a href="/pricing?lang=$lang">${_esc(t['pricing'])}</a> · '
+      '<a href="/legal/terms?lang=$lang">${_esc(t['terms'])}</a> · '
+      '<a href="/legal/privacy?lang=$lang">${_esc(t['privacy'])}</a></footer></main></body></html>';
+}
+
+/// Az árak oldal szövegei (magyar és angol).
+const _pricing = {
+  'hu': {
+    'title': 'WhatStock árak – csomagok és extra elemzések',
+    'intro': 'Kezdd ingyen: 3 napos próbaidő 3 AI-elemzéssel, bankkártya nélkül. Utána válassz csomagot, vagy vegyél extra elemzéseket.',
+    'common': 'A fotófelismerés, az élő adatok, a grafikonok, a hírek, a kedvencek, a portfólió, a riasztások és mind a 120 nyelv minden csomagban benne van. A keret az AI-elemzésekre vonatkozik.',
+    'month': '/ hó',
+    'year': '/ év',
+    'perMonth': 'havonta',
+    'analyses': '{n} AI-elemzés havonta',
+    'perAnalysis': 'kb. {p} elemzésenként',
+    'searches': 'legfeljebb {n} webkeresés elemzésenként',
+    'ask': 'napi {n} kérdés az elemzésekről',
+    'yearly': 'Évesen {p} (havonta {m}) – 2 hónap ingyen',
+    'popular': 'Legnépszerűbb',
+    'value': 'Legjobb ár-érték',
+    'packsTitle': 'Extra elemzések',
+    'packsHint': 'Az extra elemzések nem járnak le, és a havi keret kimerülése után használódnak fel.',
+    'pack': '{n} elemzés',
+    'deep': 'A részletes elemzés 2 elemzést fogyaszt, a rövid és az alap 1-et.',
+    'local': 'Az árak USD-ben értendők; az App Store és a Google Play a helyi pénznemben, helyi adókkal mutatja őket. Az előfizetés bármikor lemondható.',
+  },
+  'en': {
+    'title': 'WhatStock pricing – plans and extra analyses',
+    'intro': 'Start free: a 3-day trial with 3 AI analyses, no card needed. Then pick a plan or buy extra analyses.',
+    'common': 'Photo recognition, live data, charts, news, favorites, portfolio, alerts and all 120 languages are included in every plan. The allowance is for AI analyses.',
+    'month': '/ month',
+    'year': '/ year',
+    'perMonth': 'a month',
+    'analyses': '{n} AI analyses a month',
+    'perAnalysis': 'about {p} per analysis',
+    'searches': 'up to {n} web searches per analysis',
+    'ask': '{n} questions a day about your analyses',
+    'yearly': 'Yearly {p} ({m} a month) – 2 months free',
+    'popular': 'Most popular',
+    'value': 'Best value',
+    'packsTitle': 'Extra analyses',
+    'packsHint': 'Extra analyses never expire and are used after your monthly allowance runs out.',
+    'pack': '{n} analyses',
+    'deep': 'A detailed analysis uses 2 analyses; brief and standard use 1.',
+    'local': 'Prices are in USD; the App Store and Google Play show them in your currency, with local taxes. You can cancel any time.',
+  },
+};
+
+String _usd(double v) => '\$${v.toStringAsFixed(2)}';
+
+/// Az árak oldal: a csomagok havi és éves díja, kerete, az extra csomagok.
+String pricingPage({required String lang, required int askPerDay, String? publicUrl}) {
+  final t = _pricing[lang] ?? _pricing['en']!;
+  String f(String key, Map<String, String> v) => v.entries.fold(t[key]!, (s, e) => s.replaceAll('{${e.key}}', e.value));
+  const names = {'normal': 'Normal', 'pro': 'Pro', 'max': 'Max', 'ultra': 'Ultra'};
+  const huNames = {'normal': 'Normál'};
+  final b = StringBuffer(
+    _head(
+      lang: lang,
+      title: t['title']!,
+      description: t['intro']!,
+      url: publicUrl == null ? null : '$publicUrl/pricing?lang=$lang',
+    ),
+  )..write('<div class="hero"><h1>${_esc(_site[lang]?['pricing'] ?? 'Pricing')}</h1><p>${_esc(t['intro'])}</p></div>');
+  b.write('<div class="plans">');
+  for (final p in PlanSpec.paid) {
+    final monthly = PlanSpec.usd[p.productId]!;
+    final yearly = p.yearlyProductId == null ? null : PlanSpec.usd[p.yearlyProductId];
+    final badge = p.tier == 'pro' ? t['popular'] : (p.tier == 'max' ? t['value'] : null);
+    final name = (lang == 'hu' ? huNames[p.tier] : null) ?? names[p.tier]!;
+    b
+      ..write('<div class="card plan${p.tier == 'pro' ? ' pop' : ''}" id="${_attr(p.tier)}">')
+      ..write(badge == null ? '' : '<span class="chip badge">${_esc(badge)}</span>')
+      ..write('<h2>${_esc(name)}</h2>')
+      ..write('<div class="price">${_usd(monthly)} <small>${_esc(t['month'])}</small></div>')
+      ..write('<ul><li>${_esc(f('analyses', {'n': '${p.analysesPerPeriod}'}))}</li>')
+      ..write('<li>${_esc(f('perAnalysis', {'p': _usd(monthly / p.analysesPerPeriod)}))}</li>')
+      ..write('<li>${_esc(f('searches', {'n': '${p.webSearches + 2}'}))}</li>')
+      ..write('<li>${_esc(f('ask', {'n': '$askPerDay'}))}</li></ul>')
+      ..write(
+        yearly == null
+            ? ''
+            : '<p class="small muted">${_esc(f('yearly', {'p': _usd(yearly), 'm': _usd(yearly / 12)}))}</p>',
+      )
+      ..write('</div>');
+  }
+  b
+    ..write('</div><div class="card"><h2 style="margin:0;font-size:20px">${_esc(t['packsTitle'])}</h2>')
+    ..write('<p class="muted small">${_esc(t['packsHint'])}</p><table class="packs">');
+  for (final e in PlanSpec.packs.entries) {
+    b.write('<tr><td>${_esc(f('pack', {'n': '${e.value}'}))}</td><td>${_usd(PlanSpec.usd[e.key]!)}</td></tr>');
+  }
+  b
+    ..write('</table></div>')
+    ..write('<p class="note">${_esc(t['common'])}</p>')
+    ..write('<p class="note">${_esc(t['deep'])}</p>')
+    ..write('<p class="note">${_esc(t['local'])}</p>')
+    ..write(
+      '<div class="cta"><a class="btn" href="/?lang=$lang">${_esc(_site[lang]?['download'] ?? 'Download')}</a></div>',
+    )
+    ..write(_footer(lang));
+  return b.toString();
+}
+
+/// A keresőknek: robots.txt és a nyilvános oldalak listája.
+String robotsTxt(String publicUrl) =>
+    'User-agent: *\nDisallow: /admin\nDisallow: /v1/\nSitemap: $publicUrl/sitemap.xml\n';
+
+String sitemapXml(String publicUrl) {
+  final b = StringBuffer(
+    '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n',
+  );
+  for (final path in const ['/?lang=en', '/?lang=hu', '/pricing?lang=en', '/pricing?lang=hu']) {
+    b.write('  <url><loc>${'$publicUrl$path'.replaceAll('&', '&amp;').replaceAll('<', '&lt;')}</loc></url>\n');
+  }
+  return (b..write('</urlset>\n')).toString();
 }

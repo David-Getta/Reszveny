@@ -109,6 +109,10 @@ is bele kell írni (lásd a jogi dokumentumot).
   nyelve szerint): mire jó az app, letöltés Androidra, Macre és Windowsra (alapból a GitHub legutóbbi
   kiadásából; más hely: `DOWNLOAD_BASE_URL`). Amíg az `INVITE_CODES` be van állítva, „zárt előzetes”
   megjegyzés is látszik.
+- Az árak oldal: `https://<cím>/pricing` (`?lang=hu` vagy `en`) – a csomagok havi és éves díja USD-ben,
+  a keretek és az extra elemzések. Az árak a szerver `PlanSpec.usd`-jéből jönnek; egy teszt ellenőrzi,
+  hogy egyeznek az app áraival (`lib/features/billing/pricing.dart`). A keresőknek `/robots.txt` és
+  `/sitemap.xml` is van.
 - Ha valaki megoszt egy elemzést, az app a szövegbe egy `https://<cím>/s/<azonosító>` linket tesz.
   A link oldala és az előnézete (WhatsApp, Messenger, X, iMessage) a megosztó nyelvén mutatja a
   céget, a lényeget, a hangulatot és a forgatókönyveket a kártya képével. A link 180 napig él,

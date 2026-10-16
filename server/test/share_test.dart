@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io';
 import 'dart:typed_data';
 
 import 'package:shelf/shelf.dart';
@@ -6,6 +7,7 @@ import 'package:test/test.dart';
 import 'package:whatstock_server/src/api.dart';
 import 'package:whatstock_server/src/db.dart';
 import 'package:whatstock_server/src/invites.dart';
+import 'package:whatstock_server/src/plans.dart';
 import 'package:whatstock_server/src/purchase_verifier.dart';
 
 void main() {
@@ -144,5 +146,34 @@ void main() {
     expect(closed, contains('Zárt előzetes'));
     // A nyilvános oldalak meghívókód nélkül is elérhetők.
     expect((await raw('GET', '/s/abcdefgh')).statusCode, 404);
+  });
+
+  test('the pricing page, robots.txt and the sitemap', () async {
+    final hu = await (await raw('GET', '/pricing?lang=hu')).readAsString();
+    expect(hu, contains('<html lang="hu"'));
+    expect(hu, contains('Normál'));
+    expect(hu, contains(r'$18.99'));
+    expect(hu, contains('40 AI-elemzés havonta'));
+    // Havi Max: 41,99 / 40 ≈ 1,05 dollár elemzésenként.
+    expect(hu, contains(r'kb. $1.05 elemzésenként'));
+    expect(hu, contains(r'Évesen $189.99 (havonta $15.83)'));
+    expect(hu, contains('50 elemzés'));
+    final en = await (await raw('GET', '/pricing')).readAsString();
+    expect(en, contains('Most popular'));
+    expect(en, contains('3-day trial with 3 AI analyses'));
+    final landing = await (await raw('GET', '/?lang=en')).readAsString();
+    expect(landing, contains('href="/pricing?lang=en"'));
+
+    expect(await (await raw('GET', '/robots.txt')).readAsString(), contains('Disallow: /admin'));
+    final map = await (await raw('GET', '/sitemap.xml')).readAsString();
+    expect(map, contains('/pricing?lang=hu</loc>'));
+  });
+
+  test('the USD prices match the app', () {
+    final client = File('../lib/features/billing/pricing.dart').readAsStringSync();
+    final found = {
+      for (final m in RegExp(r"'(whatstock\.[a-z0-9.]+)': ([0-9.]+)").allMatches(client)) m[1]!: double.parse(m[2]!),
+    };
+    expect(found, PlanSpec.usd);
   });
 }

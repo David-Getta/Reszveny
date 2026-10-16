@@ -38,6 +38,7 @@ import 'testers.dart';
 /// - `GET  /v1/referral` → saját ajánlókód és statisztika; `POST /v1/referral/redeem` `{code}` → egy barát
 ///   kódjának beváltása (extra elemzések; az ajánló az első elemzésed után kapja meg a sajátját)
 /// - `DELETE /v1/account` → a fiók és a szerveren tárolt adatok törlése (a Stripe-előfizetést lemondja)
+/// - `GET  /pricing` → árak oldal (magyar / angol); `/robots.txt`, `/sitemap.xml` a keresőknek
 /// - `GET  /legal/terms`, `/legal/privacy` → ÁSZF és adatkezelési tájékoztató a `legal/` mappa markdownjából
 /// - `POST /v1/billing/checkout` `{product_id}` → Stripe Checkout URL (böngészős fizetés)
 /// - `POST /v1/billing/portal` → Stripe ügyfélportál URL (csomagváltás, lemondás, számlák)
@@ -181,6 +182,12 @@ class Api {
       ..post('/v1/share', _createShare)
       ..get('/s/<id>', _sharePage)
       ..get('/', _landing)
+      ..get('/pricing', _pricingPage)
+      ..get('/robots.txt', (Request r) => Response.ok(robotsTxt(publicUrl), headers: {'content-type': 'text/plain'}))
+      ..get(
+        '/sitemap.xml',
+        (Request r) => Response.ok(sitemapXml(publicUrl), headers: {'content-type': 'application/xml'}),
+      )
       ..get('/admin', _adminLogin)
       ..post('/admin', _adminStats)
       ..get('/admin/stats.json', _adminStatsJson)
@@ -483,6 +490,15 @@ class Api {
         publicUrl: publicUrl,
       ),
       headers: {'content-type': 'text/html; charset=utf-8'},
+    );
+  }
+
+  /// Az árak oldal (magyar vagy angol, mint a nyitóoldal).
+  Response _pricingPage(Request r) {
+    final asked = (r.url.queryParameters['lang'] ?? r.headers['accept-language'] ?? '').toLowerCase();
+    return Response.ok(
+      pricingPage(lang: asked.startsWith('hu') ? 'hu' : 'en', askPerDay: askPerDayPaid, publicUrl: publicUrl),
+      headers: {'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=3600'},
     );
   }
 

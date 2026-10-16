@@ -26,6 +26,20 @@ class PlanSpec {
 
   static const packs = {'whatstock.pack.5': 5, 'whatstock.pack.20': 20, 'whatstock.pack.50': 50};
 
+  /// Alapárak USD-ben – ugyanaz, mint a kliens `Pricing.baseUsd`-je (teszt
+  /// ellenőrzi); az árak oldal ebből dolgozik, a boltok helyi árat mutatnak.
+  static const usd = {
+    'whatstock.sub.normal': 7.99,
+    'whatstock.sub.pro': 18.99,
+    'whatstock.sub.max': 41.99,
+    'whatstock.sub.ultra': 64.99,
+    'whatstock.sub.pro.year': 189.99,
+    'whatstock.sub.max.year': 419.99,
+    'whatstock.pack.5': 4.99,
+    'whatstock.pack.20': 17.99,
+    'whatstock.pack.50': 39.99,
+  };
+
   static PlanSpec? byTier(String? tier) {
     if (tier == 'trial') return const PlanSpec('trial', '', trialAnalyses, 6);
     for (final p in paid) {
