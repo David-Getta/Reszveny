@@ -410,4 +410,18 @@ void main() {
     expect(find.byKey(const ValueKey('portfolio-realized')), findsOneWidget);
     expect(find.text('Realized gains by year'), findsOneWidget);
   });
+
+  test('without any price the total is unknown, not zero', () async {
+    final store = PortfolioStore();
+    await store.add(symbol: 'OTP', quantity: 10, price: 24000, currency: 'HUF');
+    final s = PortfolioSnapshot.compute(store.positions, quotes: const {}, rate: (_, _) => 1, currency: 'HUF');
+    expect(s.unknown, isTrue);
+    final ok = PortfolioSnapshot.compute(
+      store.positions,
+      quotes: {'OTP': const StockQuote(symbol: 'OTP', price: 25000)},
+      rate: (_, _) => 1,
+      currency: 'HUF',
+    );
+    expect(ok.unknown, isFalse);
+  });
 }

@@ -176,7 +176,10 @@ class _PortfolioBody extends StatelessWidget {
                       children: [
                         Text(l10n.portfolioTotalValue, style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),
                         const SizedBox(height: 4),
-                        Text(fmt.money(s.value, ccy), style: theme.textTheme.headlineMedium),
+                        Text(
+                          s.unknown ? l10n.notAvailable : fmt.money(s.value, ccy),
+                          style: theme.textTheme.headlineMedium,
+                        ),
                         const SizedBox(height: 14),
                         Wrap(
                           spacing: 28,
@@ -652,7 +655,7 @@ class PortfolioSummaryCard extends StatelessWidget {
                           children: [
                             Text(l10n.portfolio, style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),
                             Text(
-                              s == null ? '…' : fmt.money(s.value, s.currency),
+                              s == null ? '…' : (s.unknown ? l10n.notAvailable : fmt.money(s.value, s.currency)),
                               style: theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w700),
                             ),
                             // A változások az érték alatt, hogy keskeny képernyőn se lógjanak ki.
