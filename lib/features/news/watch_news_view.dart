@@ -104,12 +104,18 @@ class WatchNewsTile extends StatelessWidget {
     final n = news.item;
     return ListTile(
       key: ValueKey('news-${n.url}'),
-      leading: ActionChip(
-        key: ValueKey('news-symbol-${news.symbol}'),
-        label: Text(news.symbol, style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 12)),
-        visualDensity: VisualDensity.compact,
-        padding: EdgeInsets.zero,
-        onPressed: () => onOpenSymbol(StockCandidate(symbol: news.symbol, companyName: news.symbol, confidence: 1)),
+      // Egyforma szélességű ticker-chip, hogy a címek egy vonalban kezdődjenek.
+      leading: SizedBox(
+        width: 68,
+        child: Center(
+          child: ActionChip(
+            key: ValueKey('news-symbol-${news.symbol}'),
+            label: Text(news.symbol, style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 12)),
+            visualDensity: VisualDensity.compact,
+            padding: EdgeInsets.zero,
+            onPressed: () => onOpenSymbol(StockCandidate(symbol: news.symbol, companyName: news.symbol, confidence: 1)),
+          ),
+        ),
       ),
       title: Text(n.headline, maxLines: 2, overflow: TextOverflow.ellipsis),
       subtitle: Text(

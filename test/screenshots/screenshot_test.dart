@@ -732,6 +732,28 @@ void main() {
     await _shot(tester, 'metric_explained_phone_hu');
   });
 
+  testWidgets('favorites page and news on a phone (hungarian)', (tester) async {
+    final s = _services(locale: const Locale('hu'));
+    await s.preferences.setFavorites(['AAPL', 'MSFT', 'NVDA', 'OTP']);
+    await pumpApp(tester, s, const Size(430, 1000));
+    final news = find.byKey(const ValueKey('home-news'));
+    for (var i = 0; i < 20 && news.evaluate().isEmpty; i++) {
+      await tester.drag(find.byType(Scrollable).first, const Offset(0, -300));
+      await tester.pumpAndSettle();
+    }
+    Scrollable.ensureVisible(tester.element(news), alignment: 0.1);
+    await tester.pumpAndSettle();
+    await _shot(tester, 'home_news_phone_hu');
+    await tester.drag(find.byType(Scrollable).first, const Offset(0, 3000));
+    await tester.pumpAndSettle();
+    final all = find.byKey(const ValueKey('favorites-see-all'));
+    await tester.ensureVisible(all);
+    await tester.pumpAndSettle();
+    await tester.tap(all);
+    await tester.pumpAndSettle();
+    await _shot(tester, 'watchlist_phone_hu');
+  });
+
   testWidgets('detail with own position', (tester) async {
     await pumpApp(tester, _services(portfolio: _samplePortfolio()), const Size(1200, 900));
     await tester.enterText(find.byType(TextField), 'AAPL');
