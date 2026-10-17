@@ -32,6 +32,7 @@ Future<bool> showAlertDialog(
   double? currentPrice,
   AlertKind? initialKind,
   double? initialValue,
+  PriceAlert? editing,
 }) async {
   final created = await showDialog<bool>(
     context: context,
@@ -39,15 +40,26 @@ Future<bool> showAlertDialog(
       symbol: symbol,
       currency: currency,
       currentPrice: currentPrice,
-      initialKind: initialKind,
-      initialValue: initialValue,
+      initialKind: editing?.kind ?? initialKind,
+      initialValue: editing?.value ?? initialValue,
+      editing: editing,
     ),
   );
   return created ?? false;
 }
 
 class _AlertDialog extends StatefulWidget {
-  const _AlertDialog({required this.symbol, this.currency, this.currentPrice, this.initialKind, this.initialValue});
+  const _AlertDialog({
+    required this.symbol,
+    this.currency,
+    this.currentPrice,
+    this.initialKind,
+    this.initialValue,
+    this.editing,
+  });
+
+  /// Meglévő riasztás szerkesztése (ugyanazzal az azonosítóval).
+  final PriceAlert? editing;
 
   final String symbol;
   final String? currency;
@@ -120,14 +132,19 @@ class _AlertDialogState extends State<_AlertDialog> {
     setState(() => _error = error);
     if (error != null) return;
     final services = AppServices.of(context);
-    await services.alerts.add(
-      symbol: widget.symbol,
-      kind: _kind,
-      value: v!,
-      currency: _kind == AlertKind.move ? null : widget.currency,
-      peak: widget.currentPrice,
-    );
-    services.telemetry.track('alert_created');
+    final currency = _kind == AlertKind.move ? null : (widget.editing?.currency ?? widget.currency);
+    if (widget.editing case final e?) {
+      await services.alerts.edit(e.id, kind: _kind, value: v!, currency: currency, peak: widget.currentPrice ?? e.peak);
+    } else {
+      await services.alerts.add(
+        symbol: widget.symbol,
+        kind: _kind,
+        value: v!,
+        currency: currency,
+        peak: widget.currentPrice,
+      );
+      services.telemetry.track('alert_created');
+    }
     if (mounted) Navigator.of(context).pop(true);
   }
 
@@ -265,6 +282,27 @@ class AlertTile extends StatelessWidget {
       trailing: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
+          if (a.isActive)
+            IconButton(
+              key: ValueKey('alert-edit-${a.id}'),
+              tooltip: l10n.alertEdit,
+              icon: Icon(Icons.edit_outlined, color: p.muted),
+              onPressed: () async {
+                double? price;
+                try {
+                  price = (await services.marketData.quote(a.symbol)).price;
+                } catch (_) {}
+                if (context.mounted) {
+                  await showAlertDialog(
+                    context,
+                    symbol: a.symbol,
+                    currency: a.currency,
+                    currentPrice: price,
+                    editing: a,
+                  );
+                }
+              },
+            ),
           if (!a.isActive)
             IconButton(
               tooltip: l10n.alertRearm,

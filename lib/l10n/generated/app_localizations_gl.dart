@@ -2492,4 +2492,7 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Quitar o obxectivo';
+
+  @override
+  String get alertEdit => 'Editar alerta';
 }

@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Yoolka portfoliyada",
   "portfolioGoalProgress": "{percent} · Yool: {amount}",
   "portfolioGoalReached": "Yoolka waa la gaadhay: {amount}",
-  "portfolioGoalRemove": "Ka saar yoolka"
+  "portfolioGoalRemove": "Ka saar yoolka",
+  "alertEdit": "Wax ka beddel digniinta"
 }

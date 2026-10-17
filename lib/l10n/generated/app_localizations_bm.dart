@@ -2466,4 +2466,7 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Laɲini bɔ a la';
+
+  @override
+  String get alertEdit => 'Lasɔmini yɛlɛma';
 }

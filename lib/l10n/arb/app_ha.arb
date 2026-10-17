@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Burin jakar hannun jari",
   "portfolioGoalProgress": "{percent} · Buri: {amount}",
   "portfolioGoalReached": "An cimma buri: {amount}",
-  "portfolioGoalRemove": "Cire buri"
+  "portfolioGoalRemove": "Cire buri",
+  "alertEdit": "Gyara faɗakarwa"
 }

@@ -2467,4 +2467,7 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Retire objektif la';
+
+  @override
+  String get alertEdit => 'Modifye alèt la';
 }

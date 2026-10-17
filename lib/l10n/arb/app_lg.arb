@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Ekiruubirirwa ky'emigabo gyo",
   "portfolioGoalProgress": "{percent} · Ekiruubirirwa: {amount}",
   "portfolioGoalReached": "Otuuse ku kiruubirirwa: {amount}",
-  "portfolioGoalRemove": "Ggyawo ekiruubirirwa"
+  "portfolioGoalRemove": "Ggyawo ekiruubirirwa",
+  "alertEdit": "Kyusa okulabula"
 }

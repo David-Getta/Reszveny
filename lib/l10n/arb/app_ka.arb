@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "პორტფელის მიზანი",
   "portfolioGoalProgress": "{percent} · მიზანი: {amount}",
   "portfolioGoalReached": "მიზანი მიღწეულია: {amount}",
-  "portfolioGoalRemove": "მიზნის წაშლა"
+  "portfolioGoalRemove": "მიზნის წაშლა",
+  "alertEdit": "შეტყობინების რედაქტირება"
 }

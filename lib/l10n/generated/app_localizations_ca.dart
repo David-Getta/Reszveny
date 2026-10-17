@@ -2478,4 +2478,7 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Elimina l\'objectiu';
+
+  @override
+  String get alertEdit => 'Edita l’alerta';
 }

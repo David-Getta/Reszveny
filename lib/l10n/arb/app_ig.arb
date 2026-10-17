@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Ebumnuche portfolio",
   "portfolioGoalProgress": "{percent} · Ebumnuche: {amount}",
   "portfolioGoalReached": "Emezuru ebumnuche: {amount}",
-  "portfolioGoalRemove": "Wepụ ebumnuche"
+  "portfolioGoalRemove": "Wepụ ebumnuche",
+  "alertEdit": "Dezie ọkwa"
 }

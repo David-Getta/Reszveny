@@ -2474,4 +2474,7 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'లక్ష్యాన్ని తీసివేయి';
+
+  @override
+  String get alertEdit => 'హెచ్చరికను సవరించండి';
 }

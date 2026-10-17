@@ -2476,4 +2476,7 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Katula lukanu';
+
+  @override
+  String get alertEdit => 'Soba lukebisu';
 }

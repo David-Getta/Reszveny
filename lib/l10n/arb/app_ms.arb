@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Sasaran portfolio",
   "portfolioGoalProgress": "{percent} daripada sasaran {amount}",
   "portfolioGoalReached": "Sasaran {amount} tercapai",
-  "portfolioGoalRemove": "Alih keluar sasaran"
+  "portfolioGoalRemove": "Alih keluar sasaran",
+  "alertEdit": "Edit amaran"
 }

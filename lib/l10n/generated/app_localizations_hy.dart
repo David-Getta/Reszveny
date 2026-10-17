@@ -2477,4 +2477,7 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Հեռացնել նպատակը';
+
+  @override
+  String get alertEdit => 'Խմբագրել ծանուցումը';
 }

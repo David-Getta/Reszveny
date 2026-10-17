@@ -1974,5 +1974,6 @@
         "type": "String"
       }
     }
-  }
+  },
+  "alertEdit": "Edit alert"
 }

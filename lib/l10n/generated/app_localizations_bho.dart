@@ -2464,4 +2464,7 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'लक्ष्य हटाईं';
+
+  @override
+  String get alertEdit => 'अलर्ट बदलीं';
 }

@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Aksiyɔn kɛsu laɲini",
   "portfolioGoalProgress": "{percent} · Laɲini: {amount}",
   "portfolioGoalReached": "I ye i ka laɲini sɔrɔ: {amount}",
-  "portfolioGoalRemove": "Laɲini bɔ a la"
+  "portfolioGoalRemove": "Laɲini bɔ a la",
+  "alertEdit": "Lasɔmini yɛlɛma"
 }

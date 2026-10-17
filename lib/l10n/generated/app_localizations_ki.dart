@@ -2469,4 +2469,7 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Ruta muoroto';
+
+  @override
+  String get alertEdit => 'Garũra kĩmenyithia';
 }

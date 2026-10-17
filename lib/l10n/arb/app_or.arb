@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "ପୋର୍ଟଫୋଲିଓ ଲକ୍ଷ୍ୟ",
   "portfolioGoalProgress": "{percent} · ଲକ୍ଷ୍ୟ: {amount}",
   "portfolioGoalReached": "ଲକ୍ଷ୍ୟ ପୂରଣ ହେଲା: {amount}",
-  "portfolioGoalRemove": "ଲକ୍ଷ୍ୟ ହଟାନ୍ତୁ"
+  "portfolioGoalRemove": "ଲକ୍ଷ୍ୟ ହଟାନ୍ତୁ",
+  "alertEdit": "ଆଲର୍ଟ ଏଡିଟ କରନ୍ତୁ"
 }

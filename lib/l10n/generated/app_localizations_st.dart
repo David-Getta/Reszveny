@@ -2483,4 +2483,7 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Tlosa sepheo';
+
+  @override
+  String get alertEdit => 'Fetola tsebiso';
 }

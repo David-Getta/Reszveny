@@ -2476,4 +2476,7 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Umbusha tshipatshila';
+
+  @override
+  String get alertEdit => 'Shintulula alerte';
 }

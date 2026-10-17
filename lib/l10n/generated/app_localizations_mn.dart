@@ -2469,4 +2469,7 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Зорилт хасах';
+
+  @override
+  String get alertEdit => 'Сэрэмжлүүлэг засах';
 }

@@ -2467,4 +2467,7 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'লক্ষ্য সরান';
+
+  @override
+  String get alertEdit => 'সতর্কতা সম্পাদনা করুন';
 }

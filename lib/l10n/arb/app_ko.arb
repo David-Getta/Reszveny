@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "포트폴리오 목표",
   "portfolioGoalProgress": "{percent} 달성 · 목표 {amount}",
   "portfolioGoalReached": "목표 {amount} 달성",
-  "portfolioGoalRemove": "목표 삭제"
+  "portfolioGoalRemove": "목표 삭제",
+  "alertEdit": "알림 수정"
 }

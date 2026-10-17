@@ -2455,4 +2455,7 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Yiis raabã';
+
+  @override
+  String get alertEdit => 'Toeem gũusgo';
 }

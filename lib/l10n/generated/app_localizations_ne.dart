@@ -2467,4 +2467,7 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'लक्ष्य हटाउनुहोस्';
+
+  @override
+  String get alertEdit => 'अलर्ट सम्पादन गर्नुहोस्';
 }

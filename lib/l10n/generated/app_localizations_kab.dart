@@ -2467,4 +2467,7 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Kkes iswi';
+
+  @override
+  String get alertEdit => 'Ẓreg alɣu';
 }

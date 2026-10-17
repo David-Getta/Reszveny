@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Chinangwa chepotiforiyo",
   "portfolioGoalProgress": "{percent} · Chinangwa: {amount}",
   "portfolioGoalReached": "Wasvika pachinangwa: {amount}",
-  "portfolioGoalRemove": "Bvisa chinangwa"
+  "portfolioGoalRemove": "Bvisa chinangwa",
+  "alertEdit": "Gadzirisa chiziviso"
 }

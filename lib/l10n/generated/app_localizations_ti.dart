@@ -2431,4 +2431,7 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'ዕላማ ኣልግስ';
+
+  @override
+  String get alertEdit => 'መጠንቀቕታ ኣመዓራሪ';
 }

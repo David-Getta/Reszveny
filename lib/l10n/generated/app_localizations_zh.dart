@@ -2355,6 +2355,9 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => '移除目标';
+
+  @override
+  String get alertEdit => '编辑提醒';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -4706,4 +4709,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get portfolioGoalRemove => '移除目標';
+
+  @override
+  String get alertEdit => '編輯提示';
 }

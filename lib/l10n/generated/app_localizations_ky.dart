@@ -2472,4 +2472,7 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Максатты өчүрүү';
+
+  @override
+  String get alertEdit => 'Эскертмени түзөтүү';
 }

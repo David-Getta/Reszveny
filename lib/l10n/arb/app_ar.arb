@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "هدف المحفظة",
   "portfolioGoalProgress": "{percent} من هدفك البالغ {amount}",
   "portfolioGoalReached": "تم بلوغ الهدف: {amount}",
-  "portfolioGoalRemove": "إزالة الهدف"
+  "portfolioGoalRemove": "إزالة الهدف",
+  "alertEdit": "تعديل التنبيه"
 }

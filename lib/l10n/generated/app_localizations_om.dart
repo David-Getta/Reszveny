@@ -2477,4 +2477,7 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Kaayyoo haqi';
+
+  @override
+  String get alertEdit => 'Akeekkachiisa gulaali';
 }

@@ -2464,4 +2464,7 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Wepụ ebumnuche';
+
+  @override
+  String get alertEdit => 'Dezie ọkwa';
 }

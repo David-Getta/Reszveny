@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Mục tiêu danh mục",
   "portfolioGoalProgress": "{percent} mục tiêu {amount}",
   "portfolioGoalReached": "Đã đạt mục tiêu {amount}",
-  "portfolioGoalRemove": "Xóa mục tiêu"
+  "portfolioGoalRemove": "Xóa mục tiêu",
+  "alertEdit": "Sửa cảnh báo"
 }

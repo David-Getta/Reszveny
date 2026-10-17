@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Portfel maksady",
   "portfolioGoalProgress": "{percent} · maksat: {amount}",
   "portfolioGoalReached": "Maksada ýetildi: {amount}",
-  "portfolioGoalRemove": "Maksady aýyr"
+  "portfolioGoalRemove": "Maksady aýyr",
+  "alertEdit": "Duýduryşy üýtget"
 }

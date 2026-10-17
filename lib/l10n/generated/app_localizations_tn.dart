@@ -2485,4 +2485,7 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Tlosa maikaelelo';
+
+  @override
+  String get alertEdit => 'Fetola kitsiso';
 }

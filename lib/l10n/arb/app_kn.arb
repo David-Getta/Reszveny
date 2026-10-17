@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "ಪೋರ್ಟ್‌ಫೋಲಿಯೊ ಗುರಿ",
   "portfolioGoalProgress": "{percent} · ಗುರಿ: {amount}",
   "portfolioGoalReached": "ಗುರಿ ತಲುಪಿದೆ: {amount}",
-  "portfolioGoalRemove": "ಗುರಿ ತೆಗೆದುಹಾಕಿ"
+  "portfolioGoalRemove": "ಗುರಿ ತೆಗೆದುಹಾಕಿ",
+  "alertEdit": "ಅಲರ್ಟ್ ಎಡಿಟ್ ಮಾಡಿ"
 }

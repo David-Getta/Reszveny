@@ -2466,4 +2466,7 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'ඉලක්කය ඉවත් කරන්න';
+
+  @override
+  String get alertEdit => 'ඇඟවීම සංස්කරණය කරන්න';
 }

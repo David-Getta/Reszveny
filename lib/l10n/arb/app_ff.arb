@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Faandaare aksiyoŋ am",
   "portfolioGoalProgress": "{percent} · Faandaare: {amount}",
   "portfolioGoalReached": "A heɓii faandaare maa: {amount}",
-  "portfolioGoalRemove": "Momtu faandaare"
+  "portfolioGoalRemove": "Momtu faandaare",
+  "alertEdit": "Waylu tintinol"
 }

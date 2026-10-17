@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Портфолиогийн зорилт",
   "portfolioGoalProgress": "{percent} · зорилт: {amount}",
   "portfolioGoalReached": "Зорилт биелсэн: {amount}",
-  "portfolioGoalRemove": "Зорилт хасах"
+  "portfolioGoalRemove": "Зорилт хасах",
+  "alertEdit": "Сэрэмжлүүлэг засах"
 }

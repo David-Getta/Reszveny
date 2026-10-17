@@ -2533,4 +2533,7 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Odstrániť cieľ';
+
+  @override
+  String get alertEdit => 'Upraviť upozornenie';
 }

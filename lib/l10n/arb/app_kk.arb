@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Портфель мақсаты",
   "portfolioGoalProgress": "{percent} · мақсат: {amount}",
   "portfolioGoalReached": "Мақсат орындалды: {amount}",
-  "portfolioGoalRemove": "Мақсатты жою"
+  "portfolioGoalRemove": "Мақсатты жою",
+  "alertEdit": "Ескертуді өңдеу"
 }

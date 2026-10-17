@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Objectif du portefeuille",
   "portfolioGoalProgress": "{percent} · objectif : {amount}",
   "portfolioGoalReached": "Objectif atteint : {amount}",
-  "portfolioGoalRemove": "Supprimer l'objectif"
+  "portfolioGoalRemove": "Supprimer l'objectif",
+  "alertEdit": "Modifier l’alerte"
 }

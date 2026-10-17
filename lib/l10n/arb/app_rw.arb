@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Intego y'ishoramari",
   "portfolioGoalProgress": "{percent} · Intego: {amount}",
   "portfolioGoalReached": "Wageze ku ntego: {amount}",
-  "portfolioGoalRemove": "Kuramo intego"
+  "portfolioGoalRemove": "Kuramo intego",
+  "alertEdit": "Hindura imenyesha"
 }

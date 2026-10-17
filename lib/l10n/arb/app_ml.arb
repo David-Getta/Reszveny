@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "പോർട്ട്ഫോളിയോ ലക്ഷ്യം",
   "portfolioGoalProgress": "{percent} · ലക്ഷ്യം: {amount}",
   "portfolioGoalReached": "ലക്ഷ്യം കൈവരിച്ചു: {amount}",
-  "portfolioGoalRemove": "ലക്ഷ്യം നീക്കം ചെയ്യുക"
+  "portfolioGoalRemove": "ലക്ഷ്യം നീക്കം ചെയ്യുക",
+  "alertEdit": "അലേർട്ട് എഡിറ്റ് ചെയ്യുക"
 }

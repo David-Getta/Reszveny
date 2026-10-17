@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Armanca portfolyoyê",
   "portfolioGoalProgress": "{percent} · Armanc: {amount}",
   "portfolioGoalReached": "Gihîştî armancê: {amount}",
-  "portfolioGoalRemove": "Armancê rake"
+  "portfolioGoalRemove": "Armancê rake",
+  "alertEdit": "Hişyariyê biguherîne"
 }

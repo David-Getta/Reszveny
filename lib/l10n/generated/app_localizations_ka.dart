@@ -2469,4 +2469,7 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'მიზნის წაშლა';
+
+  @override
+  String get alertEdit => 'შეტყობინების რედაქტირება';
 }

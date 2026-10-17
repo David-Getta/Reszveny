@@ -2448,4 +2448,7 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'ដកគោលដៅចេញ';
+
+  @override
+  String get alertEdit => 'កែការជូនដំណឹង';
 }

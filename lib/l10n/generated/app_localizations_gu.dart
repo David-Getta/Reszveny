@@ -2464,4 +2464,7 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'લક્ષ્ય કાઢી નાખો';
+
+  @override
+  String get alertEdit => 'અલર્ટ એડિટ કરો';
 }

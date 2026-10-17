@@ -2474,4 +2474,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Cél törlése';
+
+  @override
+  String get alertEdit => 'Riasztás módosítása';
 }

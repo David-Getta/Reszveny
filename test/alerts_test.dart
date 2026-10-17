@@ -215,4 +215,27 @@ void main() {
     await tester.pumpAndSettle(const Duration(seconds: 9));
     expect(find.textContaining('Triggered'), findsOneWidget);
   });
+
+  testWidgets('an active alert can be edited in place: same id, new level, active again', (tester) async {
+    tester.view.physicalSize = const Size(1200, 1600);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final s = services();
+    final a = await s.alerts.add(symbol: 'AAPL', kind: AlertKind.above, value: 300, currency: 'USD');
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Price alerts').first);
+    await tester.pumpAndSettle();
+
+    await tester.tap(find.byKey(ValueKey('alert-edit-${a.id}')));
+    await tester.pumpAndSettle();
+    expect(tester.widget<TextField>(find.byKey(const ValueKey('alert-value'))).controller!.text, '300');
+    await tester.enterText(find.byKey(const ValueKey('alert-value')), '320');
+    await tester.tap(find.text('Set alert'));
+    await tester.pumpAndSettle();
+    expect(s.alerts.alerts, hasLength(1));
+    expect(s.alerts.alerts.single.id, a.id);
+    expect(s.alerts.alerts.single.value, 320);
+    expect(s.alerts.alerts.single.isActive, isTrue);
+  });
 }

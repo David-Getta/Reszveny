@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "יעד לתיק",
   "portfolioGoalProgress": "{percent} מהיעד של {amount}",
   "portfolioGoalReached": "היעד של {amount} הושג",
-  "portfolioGoalRemove": "הסרת היעד"
+  "portfolioGoalRemove": "הסרת היעד",
+  "alertEdit": "עריכת התראה"
 }

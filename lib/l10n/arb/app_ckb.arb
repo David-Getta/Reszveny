@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "ئامانجی پۆرتفۆلیۆ",
   "portfolioGoalProgress": "{percent} · ئامانج: {amount}",
   "portfolioGoalReached": "گەیشتیت بە ئامانج: {amount}",
-  "portfolioGoalRemove": "لابردنی ئامانج"
+  "portfolioGoalRemove": "لابردنی ئامانج",
+  "alertEdit": "دەستکاریکردنی ئاگادارکەرەوە"
 }

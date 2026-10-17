@@ -2473,4 +2473,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Doel verwijderen';
+
+  @override
+  String get alertEdit => 'Alert bewerken';
 }

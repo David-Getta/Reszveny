@@ -2534,4 +2534,7 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Выдаліць мэту';
+
+  @override
+  String get alertEdit => 'Рэдагаваць апавяшчэнне';
 }

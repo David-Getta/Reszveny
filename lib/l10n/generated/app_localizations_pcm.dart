@@ -2469,4 +2469,7 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Comot target';
+
+  @override
+  String get alertEdit => 'Change alert';
 }

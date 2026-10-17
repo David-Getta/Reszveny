@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Muoroto wa hisa ciaku",
   "portfolioGoalProgress": "{percent} · Muoroto: {amount}",
   "portfolioGoalReached": "Muoroto nĩ wakinyĩrwo: {amount}",
-  "portfolioGoalRemove": "Ruta muoroto"
+  "portfolioGoalRemove": "Ruta muoroto",
+  "alertEdit": "Garũra kĩmenyithia"
 }

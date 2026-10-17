@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "هدف سبد سهام",
   "portfolioGoalProgress": "{percent} از هدف {amount}",
   "portfolioGoalReached": "هدف {amount} محقق شد",
-  "portfolioGoalRemove": "حذف هدف"
+  "portfolioGoalRemove": "حذف هدف",
+  "alertEdit": "ویرایش هشدار"
 }

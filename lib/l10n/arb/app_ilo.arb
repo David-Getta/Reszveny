@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Panggep ti portfolio",
   "portfolioGoalProgress": "{percent} ti panggepmo a {amount}",
   "portfolioGoalReached": "Nagun-od ti panggep a {amount}",
-  "portfolioGoalRemove": "Ikkaten ti panggep"
+  "portfolioGoalRemove": "Ikkaten ti panggep",
+  "alertEdit": "I-edit ti alerto"
 }

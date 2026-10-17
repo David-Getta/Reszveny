@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Maikemišetšo a photefolio",
   "portfolioGoalProgress": "{percent} · Maikemišetšo: {amount}",
   "portfolioGoalReached": "Maikemišetšo a fihleletšwe: {amount}",
-  "portfolioGoalRemove": "Tloša maikemišetšo"
+  "portfolioGoalRemove": "Tloša maikemišetšo",
+  "alertEdit": "Lokiša temošo"
 }

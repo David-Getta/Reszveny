@@ -83,6 +83,18 @@ class PriceAlert {
   PriceAlert rearmed() =>
       PriceAlert(id: id, symbol: symbol, kind: kind, value: value, currency: currency, createdAt: createdAt);
 
+  /// Szerkesztett változat ugyanazzal az azonosítóval (a szinkron így felülírja,
+  /// nem duplázza); újra aktív.
+  PriceAlert edited({required AlertKind kind, required double value, String? currency, double? peak}) => PriceAlert(
+    id: id,
+    symbol: symbol,
+    kind: kind,
+    value: value,
+    currency: currency,
+    createdAt: createdAt,
+    peak: kind == AlertKind.trailing ? peak : null,
+  );
+
   PriceAlert withPeak(double price) => PriceAlert(
     id: id,
     symbol: symbol,
@@ -210,6 +222,9 @@ class AlertStore extends ChangeNotifier {
   Future<void> markTriggered(String id, DateTime at, double price) => _replace(id, (a) => a.triggered(at, price));
 
   Future<void> rearm(String id) => _replace(id, (a) => a.rearmed());
+
+  Future<void> edit(String id, {required AlertKind kind, required double value, String? currency, double? peak}) =>
+      _replace(id, (a) => a.edited(kind: kind, value: value, currency: currency, peak: peak));
 
   /// Követő stop: új csúcs feljegyzése (csak ha magasabb a mostaninál).
   Future<void> raisePeak(String id, double price) =>

@@ -2467,4 +2467,7 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Максатны бетерү';
+
+  @override
+  String get alertEdit => 'Искәртүне үзгәртү';
 }

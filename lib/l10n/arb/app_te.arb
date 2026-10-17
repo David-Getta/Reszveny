@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "పోర్ట్‌ఫోలియో లక్ష్యం",
   "portfolioGoalProgress": "{percent} · లక్ష్యం: {amount}",
   "portfolioGoalReached": "లక్ష్యం చేరుకుంది: {amount}",
-  "portfolioGoalRemove": "లక్ష్యాన్ని తీసివేయి"
+  "portfolioGoalRemove": "లక్ష్యాన్ని తీసివేయి",
+  "alertEdit": "హెచ్చరికను సవరించండి"
 }

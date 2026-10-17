@@ -2486,4 +2486,7 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Esory ny tanjona';
+
+  @override
+  String get alertEdit => 'Ovay ny fanairana';
 }

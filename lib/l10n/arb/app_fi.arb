@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Salkun tavoite",
   "portfolioGoalProgress": "{percent} tavoitteesta {amount}",
   "portfolioGoalReached": "Tavoite {amount} saavutettu",
-  "portfolioGoalRemove": "Poista tavoite"
+  "portfolioGoalRemove": "Poista tavoite",
+  "alertEdit": "Muokkaa hälytystä"
 }

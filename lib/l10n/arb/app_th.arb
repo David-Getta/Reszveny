@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "เป้าหมายพอร์ตโฟลิโอ",
   "portfolioGoalProgress": "{percent} ของเป้าหมาย {amount}",
   "portfolioGoalReached": "ถึงเป้าหมาย {amount} แล้ว",
-  "portfolioGoalRemove": "ลบเป้าหมาย"
+  "portfolioGoalRemove": "ลบเป้าหมาย",
+  "alertEdit": "แก้ไขการแจ้งเตือน"
 }

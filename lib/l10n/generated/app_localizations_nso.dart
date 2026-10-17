@@ -2484,4 +2484,7 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Tloša maikemišetšo';
+
+  @override
+  String get alertEdit => 'Lokiša temošo';
 }

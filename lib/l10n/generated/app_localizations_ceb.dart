@@ -2479,4 +2479,7 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Tangtanga ang tumong';
+
+  @override
+  String get alertEdit => 'Usba ang alerto';
 }

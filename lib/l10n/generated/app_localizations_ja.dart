@@ -2390,4 +2390,7 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => '目標を削除';
+
+  @override
+  String get alertEdit => 'アラートを編集';
 }

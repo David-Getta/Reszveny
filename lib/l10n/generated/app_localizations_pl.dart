@@ -2536,4 +2536,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Usuń cel';
+
+  @override
+  String get alertEdit => 'Edytuj alert';
 }

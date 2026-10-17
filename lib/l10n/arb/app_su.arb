@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Target portofolio",
   "portfolioGoalProgress": "{percent} tina target {amount}",
   "portfolioGoalReached": "Target {amount} kahontal",
-  "portfolioGoalRemove": "Hapus target"
+  "portfolioGoalRemove": "Hapus target",
+  "alertEdit": "Robah béwara"
 }

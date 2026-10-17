@@ -2514,4 +2514,7 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Уклони циљ';
+
+  @override
+  String get alertEdit => 'Уреди обавештење';
 }

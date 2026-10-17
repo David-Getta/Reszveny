@@ -2512,4 +2512,7 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Ukloni cilj';
+
+  @override
+  String get alertEdit => 'Uredi obavijest';
 }

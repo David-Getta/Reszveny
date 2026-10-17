@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Objektivi i portofolit",
   "portfolioGoalProgress": "{percent} · objektivi: {amount}",
   "portfolioGoalReached": "Objektivi u arrit: {amount}",
-  "portfolioGoalRemove": "Hiq objektivin"
+  "portfolioGoalRemove": "Hiq objektivin",
+  "alertEdit": "Ndrysho alarmin"
 }

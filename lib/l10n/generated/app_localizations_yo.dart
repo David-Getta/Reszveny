@@ -2467,4 +2467,7 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Yọ àfojúsùn kúrò';
+
+  @override
+  String get alertEdit => 'Ṣàtúnṣe ìkìlọ̀';
 }

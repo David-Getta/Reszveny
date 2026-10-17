@@ -2464,4 +2464,7 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Hapus target';
+
+  @override
+  String get alertEdit => 'Edit peringatan';
 }

@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "ዕላማ ፖርትፎሊዮ",
   "portfolioGoalProgress": "{percent} · ዕላማ፦ {amount}",
   "portfolioGoalReached": "ዕላማ ተወቒዑ፦ {amount}",
-  "portfolioGoalRemove": "ዕላማ ኣልግስ"
+  "portfolioGoalRemove": "ዕላማ ኣልግስ",
+  "alertEdit": "መጠንቀቕታ ኣመዓራሪ"
 }

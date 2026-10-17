@@ -2483,4 +2483,7 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Kuhaa ang tulumuron';
+
+  @override
+  String get alertEdit => 'I-edit ang alerto';
 }

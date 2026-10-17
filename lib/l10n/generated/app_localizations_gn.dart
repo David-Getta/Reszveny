@@ -2474,4 +2474,7 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Embogue jehupytyrã';
+
+  @override
+  String get alertEdit => 'Emoambue maranduʼi';
 }

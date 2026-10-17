@@ -2475,4 +2475,7 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Alisin ang layunin';
+
+  @override
+  String get alertEdit => 'I-edit ang alerto';
 }

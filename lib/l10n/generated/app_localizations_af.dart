@@ -2472,4 +2472,7 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Verwyder doelwit';
+
+  @override
+  String get alertEdit => 'Wysig waarskuwing';
 }

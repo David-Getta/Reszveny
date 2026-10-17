@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Цел на портфолиото",
   "portfolioGoalProgress": "{percent} од целта од {amount}",
   "portfolioGoalReached": "Целта од {amount} е постигната",
-  "portfolioGoalRemove": "Отстрани ја целта"
+  "portfolioGoalRemove": "Отстрани ја целта",
+  "alertEdit": "Уреди известување"
 }

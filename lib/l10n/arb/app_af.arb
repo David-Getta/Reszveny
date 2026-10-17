@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Portefeuljedoelwit",
   "portfolioGoalProgress": "{percent} van jou doelwit van {amount}",
   "portfolioGoalReached": "Doelwit van {amount} bereik",
-  "portfolioGoalRemove": "Verwyder doelwit"
+  "portfolioGoalRemove": "Verwyder doelwit",
+  "alertEdit": "Wysig waarskuwing"
 }

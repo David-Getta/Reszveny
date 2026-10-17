@@ -2534,4 +2534,7 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Pašalinti tikslą';
+
+  @override
+  String get alertEdit => 'Redaguoti įspėjimą';
 }

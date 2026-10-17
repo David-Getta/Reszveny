@@ -2462,4 +2462,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Xóa mục tiêu';
+
+  @override
+  String get alertEdit => 'Sửa cảnh báo';
 }

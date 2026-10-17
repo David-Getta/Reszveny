@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "پورٹ فولیو کا ہدف",
   "portfolioGoalProgress": "{percent} · ہدف: {amount}",
   "portfolioGoalReached": "ہدف حاصل ہو گیا: {amount}",
-  "portfolioGoalRemove": "ہدف ہٹائیں"
+  "portfolioGoalRemove": "ہدف ہٹائیں",
+  "alertEdit": "الرٹ میں ترمیم کریں"
 }

@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Nye akpawo ƒe taɖodzinu",
   "portfolioGoalProgress": "{percent} · Taɖodzinu: {amount}",
   "portfolioGoalReached": "Èɖo taɖodzinu: {amount}",
-  "portfolioGoalRemove": "Ɖe taɖodzinu ɖa"
+  "portfolioGoalRemove": "Ɖe taɖodzinu ɖa",
+  "alertEdit": "Trɔ nuxlɔ̃ame"
 }

@@ -2442,4 +2442,7 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'ລຶບເປົ້າໝາຍ';
+
+  @override
+  String get alertEdit => 'ແກ້ໄຂການແຈ້ງເຕືອນ';
 }

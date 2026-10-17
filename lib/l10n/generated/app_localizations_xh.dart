@@ -2480,4 +2480,7 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Susa usukelo';
+
+  @override
+  String get alertEdit => 'Hlela isilumkiso';
 }

@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Lengo la jalada la hisa",
   "portfolioGoalProgress": "{percent} ya lengo lako la {amount}",
   "portfolioGoalReached": "Lengo la {amount} limefikiwa",
-  "portfolioGoalRemove": "Ondoa lengo"
+  "portfolioGoalRemove": "Ondoa lengo",
+  "alertEdit": "Hariri arifa"
 }

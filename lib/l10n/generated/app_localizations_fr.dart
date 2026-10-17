@@ -2479,4 +2479,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Supprimer l\'objectif';
+
+  @override
+  String get alertEdit => 'Modifier l’alerte';
 }

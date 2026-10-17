@@ -2509,4 +2509,7 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Noņemt mērķi';
+
+  @override
+  String get alertEdit => 'Rediģēt brīdinājumu';
 }

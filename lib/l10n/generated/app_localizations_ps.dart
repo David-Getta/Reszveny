@@ -2460,4 +2460,7 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'موخه لرې کړئ';
+
+  @override
+  String get alertEdit => 'خبرتیا سمه کړئ';
 }

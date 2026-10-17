@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Պորտֆելի նպատակ",
   "portfolioGoalProgress": "{percent} · նպատակ՝ {amount}",
   "portfolioGoalReached": "Նպատակը կատարված է՝ {amount}",
-  "portfolioGoalRemove": "Հեռացնել նպատակը"
+  "portfolioGoalRemove": "Հեռացնել նպատակը",
+  "alertEdit": "Խմբագրել ծանուցումը"
 }

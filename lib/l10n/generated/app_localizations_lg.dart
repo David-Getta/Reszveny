@@ -2479,4 +2479,7 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Ggyawo ekiruubirirwa';
+
+  @override
+  String get alertEdit => 'Kyusa okulabula';
 }

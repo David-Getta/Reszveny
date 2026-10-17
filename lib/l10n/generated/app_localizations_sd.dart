@@ -2460,4 +2460,7 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'مقصد هٽايو';
+
+  @override
+  String get alertEdit => 'الرٽ ۾ ترميم ڪريو';
 }

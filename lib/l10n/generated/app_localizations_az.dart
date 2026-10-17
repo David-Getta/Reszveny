@@ -2470,4 +2470,7 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Hədəfi sil';
+
+  @override
+  String get alertEdit => 'Bildirişi redaktə et';
 }

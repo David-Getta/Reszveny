@@ -2468,4 +2468,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Hedefi kaldır';
+
+  @override
+  String get alertEdit => 'Alarmı düzenle';
 }

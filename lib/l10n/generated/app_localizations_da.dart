@@ -2467,4 +2467,7 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Fjern mål';
+
+  @override
+  String get alertEdit => 'Rediger alarm';
 }

@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Porteføljemål",
   "portfolioGoalProgress": "{percent} af dit mål på {amount}",
   "portfolioGoalReached": "Målet på {amount} er nået",
-  "portfolioGoalRemove": "Fjern mål"
+  "portfolioGoalRemove": "Fjern mål",
+  "alertEdit": "Rediger alarm"
 }

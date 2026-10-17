@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "ポートフォリオの目標",
   "portfolioGoalProgress": "{percent} 達成 · 目標 {amount}",
   "portfolioGoalReached": "目標 {amount} を達成",
-  "portfolioGoalRemove": "目標を削除"
+  "portfolioGoalRemove": "目標を削除",
+  "alertEdit": "アラートを編集"
 }

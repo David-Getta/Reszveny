@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "د پورټفولیو موخه",
   "portfolioGoalProgress": "{percent} · موخه: {amount}",
   "portfolioGoalReached": "موخې ته ورسېدئ: {amount}",
-  "portfolioGoalRemove": "موخه لرې کړئ"
+  "portfolioGoalRemove": "موخه لرې کړئ",
+  "alertEdit": "خبرتیا سمه کړئ"
 }

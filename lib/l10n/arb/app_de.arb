@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Portfolioziel",
   "portfolioGoalProgress": "{percent} deines Ziels von {amount}",
   "portfolioGoalReached": "Ziel von {amount} erreicht",
-  "portfolioGoalRemove": "Ziel entfernen"
+  "portfolioGoalRemove": "Ziel entfernen",
+  "alertEdit": "Alarm bearbeiten"
 }

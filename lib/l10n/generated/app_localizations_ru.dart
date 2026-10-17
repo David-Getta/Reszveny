@@ -2536,4 +2536,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Удалить цель';
+
+  @override
+  String get alertEdit => 'Изменить оповещение';
 }

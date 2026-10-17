@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Objektif pòtfèy",
   "portfolioGoalProgress": "{percent} · Objektif: {amount}",
   "portfolioGoalReached": "Objektif atenn: {amount}",
-  "portfolioGoalRemove": "Retire objektif la"
+  "portfolioGoalRemove": "Retire objektif la",
+  "alertEdit": "Modifye alèt la"
 }

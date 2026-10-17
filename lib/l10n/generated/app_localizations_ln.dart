@@ -2480,4 +2480,7 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Longola mokano';
+
+  @override
+  String get alertEdit => 'Bongola likebisi';
 }

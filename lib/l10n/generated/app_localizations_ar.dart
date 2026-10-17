@@ -2524,4 +2524,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'إزالة الهدف';
+
+  @override
+  String get alertEdit => 'تعديل التنبيه';
 }

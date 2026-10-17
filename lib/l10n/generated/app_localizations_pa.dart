@@ -2464,4 +2464,7 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'ਟੀਚਾ ਹਟਾਓ';
+
+  @override
+  String get alertEdit => 'ਅਲਰਟ ਸੋਧੋ';
 }

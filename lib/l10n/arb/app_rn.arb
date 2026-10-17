@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Intumbero y'ishoramari",
   "portfolioGoalProgress": "{percent} · Intumbero: {amount}",
   "portfolioGoalReached": "Washikiye ku ntumbero: {amount}",
-  "portfolioGoalRemove": "Kuramwo intumbero"
+  "portfolioGoalRemove": "Kuramwo intumbero",
+  "alertEdit": "Hindura imenyesha"
 }

@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Kaayyoo poortfooliyoo",
   "portfolioGoalProgress": "{percent} · Kaayyoo: {amount}",
   "portfolioGoalReached": "Kaayyoon galma ga'eera: {amount}",
-  "portfolioGoalRemove": "Kaayyoo haqi"
+  "portfolioGoalRemove": "Kaayyoo haqi",
+  "alertEdit": "Akeekkachiisa gulaali"
 }

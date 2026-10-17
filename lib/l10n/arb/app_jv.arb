@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Target portofolio",
   "portfolioGoalProgress": "{percent} saka target {amount}",
   "portfolioGoalReached": "Target {amount} kagayuh",
-  "portfolioGoalRemove": "Busak target"
+  "portfolioGoalRemove": "Busak target",
+  "alertEdit": "Owahi pèngetan"
 }

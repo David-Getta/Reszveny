@@ -2470,4 +2470,7 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'لابردنی ئامانج';
+
+  @override
+  String get alertEdit => 'دەستکاریکردنی ئاگادارکەرەوە';
 }

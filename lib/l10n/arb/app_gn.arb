@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Cartera jehupytyrã",
   "portfolioGoalProgress": "{percent} · Jehupytyrã: {amount}",
   "portfolioGoalReached": "Rehupytýma jehupytyrã: {amount}",
-  "portfolioGoalRemove": "Embogue jehupytyrã"
+  "portfolioGoalRemove": "Embogue jehupytyrã",
+  "alertEdit": "Emoambue maranduʼi"
 }

@@ -2470,4 +2470,7 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Poista tavoite';
+
+  @override
+  String get alertEdit => 'Muokkaa hälytystä';
 }

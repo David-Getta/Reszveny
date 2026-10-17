@@ -2469,4 +2469,7 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Maksady aýyr';
+
+  @override
+  String get alertEdit => 'Duýduryşy üýtget';
 }

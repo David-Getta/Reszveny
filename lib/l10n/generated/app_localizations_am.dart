@@ -2436,4 +2436,7 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'ግቡን አስወግድ';
+
+  @override
+  String get alertEdit => 'ማንቂያ አርትዕ';
 }

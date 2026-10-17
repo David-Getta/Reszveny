@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Iswi n uqrab",
   "portfolioGoalProgress": "{percent} · Iswi: {amount}",
   "portfolioGoalReached": "Tewwḍeḍ ɣer yiswi: {amount}",
-  "portfolioGoalRemove": "Kkes iswi"
+  "portfolioGoalRemove": "Kkes iswi",
+  "alertEdit": "Ẓreg alɣu"
 }

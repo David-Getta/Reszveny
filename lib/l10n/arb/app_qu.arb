@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Portafoliopa hayparinan",
   "portfolioGoalProgress": "{percent} · Hayparina: {amount}",
   "portfolioGoalReached": "Hayparinaman chayarqanki: {amount}",
-  "portfolioGoalRemove": "Hayparinata hurquy"
+  "portfolioGoalRemove": "Hayparinata hurquy",
+  "alertEdit": "Willachiyta allichay"
 }

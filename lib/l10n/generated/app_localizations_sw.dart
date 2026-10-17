@@ -2469,4 +2469,7 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Ondoa lengo';
+
+  @override
+  String get alertEdit => 'Hariri arifa';
 }

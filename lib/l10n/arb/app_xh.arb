@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Usukelo lwepotifoliyo",
   "portfolioGoalProgress": "{percent} · Usukelo: {amount}",
   "portfolioGoalReached": "Usukelo lufikelelwe: {amount}",
-  "portfolioGoalRemove": "Susa usukelo"
+  "portfolioGoalRemove": "Susa usukelo",
+  "alertEdit": "Hlela isilumkiso"
 }

@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Portfólió-cél",
   "portfolioGoalProgress": "{percent} kész · cél: {amount}",
   "portfolioGoalReached": "Cél elérve: {amount}",
-  "portfolioGoalRemove": "Cél törlése"
+  "portfolioGoalRemove": "Cél törlése",
+  "alertEdit": "Riasztás módosítása"
 }

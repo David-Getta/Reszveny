@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "போர்ட்ஃபோலியோ இலக்கு",
   "portfolioGoalProgress": "{percent} · இலக்கு: {amount}",
   "portfolioGoalReached": "இலக்கு எட்டப்பட்டது: {amount}",
-  "portfolioGoalRemove": "இலக்கை நீக்கு"
+  "portfolioGoalRemove": "இலக்கை நீக்கு",
+  "alertEdit": "எச்சரிக்கையைத் திருத்து"
 }

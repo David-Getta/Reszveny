@@ -2529,4 +2529,7 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Odebrat cíl';
+
+  @override
+  String get alertEdit => 'Upravit upozornění';
 }

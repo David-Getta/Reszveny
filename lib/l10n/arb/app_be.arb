@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Мэта партфеля",
   "portfolioGoalProgress": "{percent} ад мэты {amount}",
   "portfolioGoalReached": "Мэта {amount} дасягнута",
-  "portfolioGoalRemove": "Выдаліць мэту"
+  "portfolioGoalRemove": "Выдаліць мэту",
+  "alertEdit": "Рэдагаваць апавяшчэнне"
 }

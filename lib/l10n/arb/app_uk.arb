@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Ціль портфеля",
   "portfolioGoalProgress": "{percent} від цілі {amount}",
   "portfolioGoalReached": "Ціль {amount} досягнуто",
-  "portfolioGoalRemove": "Видалити ціль"
+  "portfolioGoalRemove": "Видалити ціль",
+  "alertEdit": "Редагувати сповіщення"
 }

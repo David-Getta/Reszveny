@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "投资组合目标",
   "portfolioGoalProgress": "已达成 {percent} · 目标 {amount}",
   "portfolioGoalReached": "已达成 {amount} 目标",
-  "portfolioGoalRemove": "移除目标"
+  "portfolioGoalRemove": "移除目标",
+  "alertEdit": "编辑提醒"
 }

@@ -2399,4 +2399,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => '목표 삭제';
+
+  @override
+  String get alertEdit => '알림 수정';
 }

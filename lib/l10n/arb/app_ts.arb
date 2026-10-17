@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Xikongomelo xa phothifoliyo",
   "portfolioGoalProgress": "{percent} · Xikongomelo: {amount}",
   "portfolioGoalReached": "Xikongomelo xi fikeleriwile: {amount}",
-  "portfolioGoalRemove": "Susa xikongomelo"
+  "portfolioGoalRemove": "Susa xikongomelo",
+  "alertEdit": "Cinca xitiviso"
 }

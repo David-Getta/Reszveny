@@ -2472,4 +2472,7 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Ɖe taɖodzinu ɖa';
+
+  @override
+  String get alertEdit => 'Trɔ nuxlɔ̃ame';
 }

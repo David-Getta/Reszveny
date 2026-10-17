@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Maikaelelo a potefolio",
   "portfolioGoalProgress": "{percent} · Maikaelelo: {amount}",
   "portfolioGoalReached": "Maikaelelo a fitlheletswe: {amount}",
-  "portfolioGoalRemove": "Tlosa maikaelelo"
+  "portfolioGoalRemove": "Tlosa maikaelelo",
+  "alertEdit": "Fetola kitsiso"
 }

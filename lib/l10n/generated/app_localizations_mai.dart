@@ -2462,4 +2462,7 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'लक्ष्य हटाउ';
+
+  @override
+  String get alertEdit => 'अलर्ट बदलू';
 }

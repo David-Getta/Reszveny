@@ -2468,4 +2468,7 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'ہدف ہٹائیں';
+
+  @override
+  String get alertEdit => 'الرٹ میں ترمیم کریں';
 }

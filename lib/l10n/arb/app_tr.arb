@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Portföy hedefi",
   "portfolioGoalProgress": "{percent} · hedef: {amount}",
   "portfolioGoalReached": "Hedefe ulaşıldı: {amount}",
-  "portfolioGoalRemove": "Hedefi kaldır"
+  "portfolioGoalRemove": "Hedefi kaldır",
+  "alertEdit": "Alarmı düzenle"
 }

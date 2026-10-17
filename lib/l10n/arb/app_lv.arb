@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Portfeļa mērķis",
   "portfolioGoalProgress": "{percent} · mērķis: {amount}",
   "portfolioGoalReached": "Mērķis sasniegts: {amount}",
-  "portfolioGoalRemove": "Noņemt mērķi"
+  "portfolioGoalRemove": "Noņemt mērķi",
+  "alertEdit": "Rediģēt brīdinājumu"
 }

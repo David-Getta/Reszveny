@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Layunin ng portfolio",
   "portfolioGoalProgress": "{percent} · Layunin: {amount}",
   "portfolioGoalReached": "Naabot ang layunin: {amount}",
-  "portfolioGoalRemove": "Alisin ang layunin"
+  "portfolioGoalRemove": "Alisin ang layunin",
+  "alertEdit": "I-edit ang alerto"
 }

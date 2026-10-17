@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "پورٽ فوليو جو مقصد",
   "portfolioGoalProgress": "{percent} · مقصد: {amount}",
   "portfolioGoalReached": "مقصد حاصل ٿيو: {amount}",
-  "portfolioGoalRemove": "مقصد هٽايو"
+  "portfolioGoalRemove": "مقصد هٽايو",
+  "alertEdit": "الرٽ ۾ ترميم ڪريو"
 }

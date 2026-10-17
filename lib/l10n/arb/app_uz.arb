@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Portfel maqsadi",
   "portfolioGoalProgress": "{percent} · maqsad: {amount}",
   "portfolioGoalReached": "Maqsadga erishildi: {amount}",
-  "portfolioGoalRemove": "Maqsadni olib tashlash"
+  "portfolioGoalRemove": "Maqsadni olib tashlash",
+  "alertEdit": "Bildirishnomani tahrirlash"
 }

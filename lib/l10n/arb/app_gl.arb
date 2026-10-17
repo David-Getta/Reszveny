@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Obxectivo da carteira",
   "portfolioGoalProgress": "{percent} do teu obxectivo de {amount}",
   "portfolioGoalReached": "Obxectivo de {amount} acadado",
-  "portfolioGoalRemove": "Quitar o obxectivo"
+  "portfolioGoalRemove": "Quitar o obxectivo",
+  "alertEdit": "Editar alerta"
 }

@@ -2507,4 +2507,7 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Elimină obiectivul';
+
+  @override
+  String get alertEdit => 'Editează alerta';
 }

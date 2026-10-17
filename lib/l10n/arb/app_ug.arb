@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "مەبلەغ بىرىكمىسى نىشانى",
   "portfolioGoalProgress": "{percent} · نىشان: {amount}",
   "portfolioGoalReached": "نىشانغا يېتىلدى: {amount}",
-  "portfolioGoalRemove": "نىشاننى ئۆچۈرۈش"
+  "portfolioGoalRemove": "نىشاننى ئۆچۈرۈش",
+  "alertEdit": "ئاگاھلاندۇرۇشنى تەھرىرلەش"
 }

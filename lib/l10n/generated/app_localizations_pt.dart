@@ -2474,4 +2474,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Remover meta';
+
+  @override
+  String get alertEdit => 'Editar alerta';
 }

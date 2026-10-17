@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Portfolio target",
   "portfolioGoalProgress": "{percent} of your {amount} target",
   "portfolioGoalReached": "You don hit your {amount} target",
-  "portfolioGoalRemove": "Comot target"
+  "portfolioGoalRemove": "Comot target",
+  "alertEdit": "Change alert"
 }

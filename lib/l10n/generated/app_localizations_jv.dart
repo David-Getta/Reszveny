@@ -2471,4 +2471,7 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Busak target';
+
+  @override
+  String get alertEdit => 'Owahi pèngetan';
 }

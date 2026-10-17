@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Lukanu ya portefeuille",
   "portfolioGoalProgress": "{percent} · Lukanu: {amount}",
   "portfolioGoalReached": "Lukanu me lunga: {amount}",
-  "portfolioGoalRemove": "Katula lukanu"
+  "portfolioGoalRemove": "Katula lukanu",
+  "alertEdit": "Soba lukebisu"
 }

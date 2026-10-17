@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Tanjon'ny kitapom-bola",
   "portfolioGoalProgress": "{percent} · Tanjona: {amount}",
   "portfolioGoalReached": "Tratra ny tanjona: {amount}",
-  "portfolioGoalRemove": "Esory ny tanjona"
+  "portfolioGoalRemove": "Esory ny tanjona",
+  "alertEdit": "Ovay ny fanairana"
 }

@@ -2475,4 +2475,7 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Ka saar yoolka';
+
+  @override
+  String get alertEdit => 'Wax ka beddel digniinta';
 }

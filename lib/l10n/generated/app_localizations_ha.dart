@@ -2474,4 +2474,7 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Cire buri';
+
+  @override
+  String get alertEdit => 'Gyara faɗakarwa';
 }

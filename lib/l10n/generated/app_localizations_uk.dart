@@ -2537,4 +2537,7 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Видалити ціль';
+
+  @override
+  String get alertEdit => 'Редагувати сповіщення';
 }

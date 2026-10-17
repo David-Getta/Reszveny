@@ -2478,4 +2478,7 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Susa umgomo';
+
+  @override
+  String get alertEdit => 'Hlela isexwayiso';
 }

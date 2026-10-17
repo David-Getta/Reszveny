@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Umgomo wephothifoliyo",
   "portfolioGoalProgress": "{percent} · Umgomo: {amount}",
   "portfolioGoalReached": "Umgomo ufinyelelwe: {amount}",
-  "portfolioGoalRemove": "Susa umgomo"
+  "portfolioGoalRemove": "Susa umgomo",
+  "alertEdit": "Hlela isexwayiso"
 }

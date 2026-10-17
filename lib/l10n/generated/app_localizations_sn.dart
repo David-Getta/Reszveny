@@ -2474,4 +2474,7 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Bvisa chinangwa';
+
+  @override
+  String get alertEdit => 'Gadzirisa chiziviso';
 }

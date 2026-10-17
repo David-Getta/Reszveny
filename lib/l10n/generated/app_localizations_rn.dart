@@ -2476,4 +2476,7 @@ class AppLocalizationsRn extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Kuramwo intumbero';
+
+  @override
+  String get alertEdit => 'Hindura imenyesha';
 }

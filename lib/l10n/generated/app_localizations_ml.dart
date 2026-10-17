@@ -2478,4 +2478,7 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'ലക്ഷ്യം നീക്കം ചെയ്യുക';
+
+  @override
+  String get alertEdit => 'അലേർട്ട് എഡിറ്റ് ചെയ്യുക';
 }

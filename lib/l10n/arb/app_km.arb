@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "គោលដៅផលប័ត្រ",
   "portfolioGoalProgress": "{percent} នៃគោលដៅ {amount}",
   "portfolioGoalReached": "សម្រេចគោលដៅ {amount} ហើយ",
-  "portfolioGoalRemove": "ដកគោលដៅចេញ"
+  "portfolioGoalRemove": "ដកគោលដៅចេញ",
+  "alertEdit": "កែការជូនដំណឹង"
 }

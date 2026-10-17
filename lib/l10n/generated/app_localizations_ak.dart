@@ -2468,4 +2468,7 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Yi botaeɛ no fi hɔ';
+
+  @override
+  String get alertEdit => 'Sesa kɔkɔbɔ';
 }

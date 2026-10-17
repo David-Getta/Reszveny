@@ -2465,4 +2465,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'حذف هدف';
+
+  @override
+  String get alertEdit => 'ویرایش هشدار';
 }

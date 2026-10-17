@@ -2473,4 +2473,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Maqsadni olib tashlash';
+
+  @override
+  String get alertEdit => 'Bildirishnomani tahrirlash';
 }

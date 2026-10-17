@@ -2482,4 +2482,7 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Hayparinata hurquy';
+
+  @override
+  String get alertEdit => 'Willachiyta allichay';
 }

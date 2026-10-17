@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Portfey raabo",
   "portfolioGoalProgress": "{percent} · Raabo: {amount}",
   "portfolioGoalReached": "Raabã paame: {amount}",
-  "portfolioGoalRemove": "Yiis raabã"
+  "portfolioGoalRemove": "Yiis raabã",
+  "alertEdit": "Toeem gũusgo"
 }

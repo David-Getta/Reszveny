@@ -2463,4 +2463,7 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Far jublu bi';
+
+  @override
+  String get alertEdit => 'Soppi artu bi';
 }

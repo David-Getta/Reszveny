@@ -2467,4 +2467,7 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'লক্ষ্য আঁতৰাওক';
+
+  @override
+  String get alertEdit => 'সতৰ্কবাণী সম্পাদনা কৰক';
 }

@@ -2473,4 +2473,7 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Alih keluar sasaran';
+
+  @override
+  String get alertEdit => 'Edit amaran';
 }

@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "ເປົ້າໝາຍພອດໂຟລິໂອ",
   "portfolioGoalProgress": "{percent} ຂອງເປົ້າໝາຍ {amount}",
   "portfolioGoalReached": "ບັນລຸເປົ້າໝາຍ {amount} ແລ້ວ",
-  "portfolioGoalRemove": "ລຶບເປົ້າໝາຍ"
+  "portfolioGoalRemove": "ລຶບເປົ້າໝາຍ",
+  "alertEdit": "ແກ້ໄຂການແຈ້ງເຕືອນ"
 }

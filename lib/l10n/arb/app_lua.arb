@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Tshipatshila tsha portefeuille",
   "portfolioGoalProgress": "{percent} · Tshipatshila: {amount}",
   "portfolioGoalReached": "Tshipatshila tshikumbaja: {amount}",
-  "portfolioGoalRemove": "Umbusha tshipatshila"
+  "portfolioGoalRemove": "Umbusha tshipatshila",
+  "alertEdit": "Shintulula alerte"
 }

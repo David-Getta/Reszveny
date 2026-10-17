@@ -2487,4 +2487,7 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Ikkaten ti panggep';
+
+  @override
+  String get alertEdit => 'I-edit ti alerto';
 }

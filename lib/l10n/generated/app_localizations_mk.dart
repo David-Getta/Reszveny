@@ -2488,4 +2488,7 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Отстрани ја целта';
+
+  @override
+  String get alertEdit => 'Уреди известување';
 }

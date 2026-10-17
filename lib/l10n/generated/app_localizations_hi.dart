@@ -2467,4 +2467,7 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'लक्ष्य हटाएँ';
+
+  @override
+  String get alertEdit => 'अलर्ट संपादित करें';
 }

@@ -2478,4 +2478,7 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'இலக்கை நீக்கு';
+
+  @override
+  String get alertEdit => 'எச்சரிக்கையைத் திருத்து';
 }

@@ -2467,4 +2467,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Remove goal';
+
+  @override
+  String get alertEdit => 'Edit alert';
 }

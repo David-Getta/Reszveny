@@ -2463,4 +2463,7 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Momtu faandaare';
+
+  @override
+  String get alertEdit => 'Waylu tintinol';
 }

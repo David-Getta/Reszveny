@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Cholinga cha masheya anu",
   "portfolioGoalProgress": "{percent} · Cholinga: {amount}",
   "portfolioGoalReached": "Mwakwaniritsa cholinga: {amount}",
-  "portfolioGoalRemove": "Chotsani cholinga"
+  "portfolioGoalRemove": "Chotsani cholinga",
+  "alertEdit": "Sinthani chidziwitso"
 }

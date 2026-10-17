@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Στόχος χαρτοφυλακίου",
   "portfolioGoalProgress": "{percent} · στόχος: {amount}",
   "portfolioGoalReached": "Ο στόχος επιτεύχθηκε: {amount}",
-  "portfolioGoalRemove": "Αφαίρεση στόχου"
+  "portfolioGoalRemove": "Αφαίρεση στόχου",
+  "alertEdit": "Επεξεργασία ειδοποίησης"
 }

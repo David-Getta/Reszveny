@@ -2470,4 +2470,7 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Премахни целта';
+
+  @override
+  String get alertEdit => 'Редактирай известие';
 }

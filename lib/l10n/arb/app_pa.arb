@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "ਪੋਰਟਫ਼ੋਲੀਓ ਟੀਚਾ",
   "portfolioGoalProgress": "{percent} · ਟੀਚਾ: {amount}",
   "portfolioGoalReached": "ਟੀਚਾ ਪੂਰਾ ਹੋਇਆ: {amount}",
-  "portfolioGoalRemove": "ਟੀਚਾ ਹਟਾਓ"
+  "portfolioGoalRemove": "ਟੀਚਾ ਹਟਾਓ",
+  "alertEdit": "ਅਲਰਟ ਸੋਧੋ"
 }

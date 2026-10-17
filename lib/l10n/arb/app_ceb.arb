@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Tumong sa portfolio",
   "portfolioGoalProgress": "{percent} sa imong tumong nga {amount}",
   "portfolioGoalReached": "Naabot ang tumong nga {amount}",
-  "portfolioGoalRemove": "Tangtanga ang tumong"
+  "portfolioGoalRemove": "Tangtanga ang tumong",
+  "alertEdit": "Usba ang alerto"
 }

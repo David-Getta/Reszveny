@@ -2475,4 +2475,7 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Chotsani cholinga';
+
+  @override
+  String get alertEdit => 'Sinthani chidziwitso';
 }

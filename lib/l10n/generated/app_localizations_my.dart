@@ -2460,4 +2460,7 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'ပန်းတိုင် ဖယ်ရှားရန်';
+
+  @override
+  String get alertEdit => 'သတိပေးချက် ပြင်ရန်';
 }

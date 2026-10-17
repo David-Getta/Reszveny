@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Jublu sama aksiyoŋ yi",
   "portfolioGoalProgress": "{percent} · Jublu: {amount}",
   "portfolioGoalReached": "Agsi nga ci sa jublu: {amount}",
-  "portfolioGoalRemove": "Far jublu bi"
+  "portfolioGoalRemove": "Far jublu bi",
+  "alertEdit": "Soppi artu bi"
 }

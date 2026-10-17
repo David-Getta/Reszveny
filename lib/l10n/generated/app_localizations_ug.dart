@@ -2471,4 +2471,7 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'نىشاننى ئۆچۈرۈش';
+
+  @override
+  String get alertEdit => 'ئاگاھلاندۇرۇشنى تەھرىرلەش';
 }

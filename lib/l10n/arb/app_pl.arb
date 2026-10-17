@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Cel portfela",
   "portfolioGoalProgress": "{percent} · cel: {amount}",
   "portfolioGoalReached": "Cel osiągnięty: {amount}",
-  "portfolioGoalRemove": "Usuń cel"
+  "portfolioGoalRemove": "Usuń cel",
+  "alertEdit": "Edytuj alert"
 }

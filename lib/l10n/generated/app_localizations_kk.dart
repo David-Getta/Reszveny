@@ -2469,4 +2469,7 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Мақсатты жою';
+
+  @override
+  String get alertEdit => 'Ескертуді өңдеу';
 }

@@ -2475,4 +2475,7 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'ಗುರಿ ತೆಗೆದುಹಾಕಿ';
+
+  @override
+  String get alertEdit => 'ಅಲರ್ಟ್ ಎಡಿಟ್ ಮಾಡಿ';
 }

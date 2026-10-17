@@ -2439,4 +2439,7 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'ลบเป้าหมาย';
+
+  @override
+  String get alertEdit => 'แก้ไขการแจ้งเตือน';
 }

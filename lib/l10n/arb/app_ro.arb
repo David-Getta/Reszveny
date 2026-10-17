@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "Obiectivul portofoliului",
   "portfolioGoalProgress": "{percent} din obiectivul de {amount}",
   "portfolioGoalReached": "Obiectivul de {amount} a fost atins",
-  "portfolioGoalRemove": "Elimină obiectivul"
+  "portfolioGoalRemove": "Elimină obiectivul",
+  "alertEdit": "Editează alerta"
 }

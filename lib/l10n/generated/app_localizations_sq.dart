@@ -2475,4 +2475,7 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Hiq objektivin';
+
+  @override
+  String get alertEdit => 'Ndrysho alarmin';
 }

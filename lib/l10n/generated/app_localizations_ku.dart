@@ -2470,4 +2470,7 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Armancê rake';
+
+  @override
+  String get alertEdit => 'Hişyariyê biguherîne';
 }

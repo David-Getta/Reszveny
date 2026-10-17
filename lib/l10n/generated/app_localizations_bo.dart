@@ -2457,4 +2457,7 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'དམིགས་ཚད་སུབ';
+
+  @override
+  String get alertEdit => 'ཉེན་བརྡ་རྩོམ་སྒྲིག';
 }

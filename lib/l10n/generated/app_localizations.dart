@@ -4278,6 +4278,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Remove goal'**
   String get portfolioGoalRemove;
+
+  /// No description provided for @alertEdit.
+  ///
+  /// In en, this message translates to:
+  /// **'Edit alert'**
+  String get alertEdit;
 }
 
 class _AppLocalizationsDelegate

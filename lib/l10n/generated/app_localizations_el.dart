@@ -2478,4 +2478,7 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Αφαίρεση στόχου';
+
+  @override
+  String get alertEdit => 'Επεξεργασία ειδοποίησης';
 }

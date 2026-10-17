@@ -2470,4 +2470,7 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get portfolioGoalRemove => 'Хориҷ кардани ҳадаф';
+
+  @override
+  String get alertEdit => 'Таҳрири огоҳӣ';
 }

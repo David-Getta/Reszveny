@@ -656,5 +656,6 @@
   "portfolioGoalTitle": "पोर्टफोलिओ लक्ष्य",
   "portfolioGoalProgress": "{percent} · लक्ष्य: {amount}",
   "portfolioGoalReached": "लक्ष्य गाठले: {amount}",
-  "portfolioGoalRemove": "लक्ष्य काढा"
+  "portfolioGoalRemove": "लक्ष्य काढा",
+  "alertEdit": "सूचना संपादित करा"
 }
