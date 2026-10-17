@@ -2323,4 +2323,19 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'ཐོབ་ཟིན་པའི་ཁེ་བཟང་ཕྱིར་འདྲེན། (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'ལོ་རེའི་ཁེ་འབབ';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / ལོ';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'དངུལ་ལ་གཞིགས་པའི་ལོ་རེའི་ཁེ་འབབ (XIRR)། ཁྱེད་ཀྱིས་ནམ་ཉོས་པ་དང་ནམ་བཙོངས་པ་རྩིས་སུ་བཟུང་ཡོད་པས། རྗེས་སུ་བསྣན་པའི་དངུལ་གྱིས་དེ་ལ་འཁྱོག་གཏོང་མི་བྱེད། ཁྱེད་ཀྱི་ཉོ་སྒྲུབ་དང་པོ་ལོ་གཅིག་ལས་མི་ཉུང་བ་ཕྱིན་རྗེས་མངོན་གྱི་ཡོད། ཁེ་བགོ་ཚུད་མེད།';
+
+  @override
+  String get eventsAddToCalendar => 'ལོ་ཐོར་སྣོན (.ics)';
 }

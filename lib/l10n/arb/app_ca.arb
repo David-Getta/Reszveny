@@ -623,5 +623,9 @@
   "watchAlertAll": "Alerta de grans moviments diaris",
   "watchAlertAllHint": "Una alerta de preu per a cada acció d’aquesta llista que salta quan es mou tant en un dia, amunt o avall. Les accions que ja en tenen una la conserven.",
   "watchAlertAllDone": "{count, plural, =1{S’ha definit 1 alerta} other{S’han definit {count} alertes}}",
-  "portfolioExportRealized": "Exporta els guanys realitzats (CSV)"
+  "portfolioExportRealized": "Exporta els guanys realitzats (CSV)",
+  "eventsAddToCalendar": "Afegir al calendari (.ics)",
+  "portfolioAnnualReturn": "Rendibilitat anual",
+  "portfolioPerYear": "{percent} / any",
+  "portfolioAnnualReturnHint": "Rendibilitat anual ponderada pels diners (XIRR): té en compte quan has comprat i venut, de manera que els diners afegits més tard no la distorsionen. Es mostra quan la teva primera compra té almenys un any; no inclou els dividends."
 }

@@ -2328,4 +2328,19 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'प्राप्त लाभ निर्यात करू (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'वार्षिक रिटर्न';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / वर्ष';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'धन-भारित वार्षिक रिटर्न (XIRR): ई देखैत अछि जे अहाँ कहिया कीनलहुँ आ बेचलहुँ, तेँ बादमे जोड़ल पाइ एकरा नहि बिगाड़ैत अछि। अहाँक पहिल खरीदारी कमसँ कम एक वर्ष पुरान भेलापर देखाओल जाइत अछि; लाभांश सम्मिलित नहि अछि।';
+
+  @override
+  String get eventsAddToCalendar => 'कैलेंडरमे जोड़ू (.ics)';
 }

@@ -623,5 +623,9 @@
   "watchAlertAll": "बड़े दैनिक बदलाव पर अलर्ट",
   "watchAlertAllHint": "इस सूची के हर शेयर के लिए कीमत अलर्ट: एक दिन में इतना ऊपर या नीचे हिलने पर सूचित करेगा। जिन शेयरों पर पहले से अलर्ट है, उनका वही रहेगा।",
   "watchAlertAllDone": "{count, plural, =1{1 अलर्ट सेट किया गया} other{{count} अलर्ट सेट किए गए}}",
-  "portfolioExportRealized": "प्राप्त लाभ निर्यात करें (CSV)"
+  "portfolioExportRealized": "प्राप्त लाभ निर्यात करें (CSV)",
+  "eventsAddToCalendar": "कैलेंडर में जोड़ें (.ics)",
+  "portfolioAnnualReturn": "वार्षिक रिटर्न",
+  "portfolioPerYear": "{percent} / वर्ष",
+  "portfolioAnnualReturnHint": "धन-भारित वार्षिक रिटर्न (XIRR): यह ध्यान में रखता है कि आपने कब खरीदा और बेचा, ताकि बाद में जोड़ा गया पैसा इसे न बिगाड़े। आपकी पहली खरीदारी कम से कम एक साल पुरानी होने पर दिखाया जाता है; लाभांश शामिल नहीं हैं।"
 }

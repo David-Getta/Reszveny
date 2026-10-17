@@ -2297,4 +2297,19 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'ዝተረኽበ ረብሓ ኣውጽእ (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'ዓመታዊ ትርፊ';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / ዓመት';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'ብገንዘብ ዝተመዘነ ዓመታዊ ትርፊ (XIRR)፦ መዓስ ከም ዝዓደግኩምን ዝሸጥኩምን ኣብ ግምት የእቱ፣ ስለዚ ደሓር ዝተወሰኸ ገንዘብ ኣየዛብዖን። ቀዳማይ ዕድጊትኩም እንተወሓደ ሓደ ዓመት ምስ መልአ ይርአ፤ ብጽሒት ትርፊ ኣይተሓወሰን።';
+
+  @override
+  String get eventsAddToCalendar => 'ናብ ዓውደ ኣዋርሕ ወስኽ (.ics)';
 }

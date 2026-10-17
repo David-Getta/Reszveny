@@ -623,5 +623,9 @@
   "watchAlertAll": "Pépéling pikeun gerak harian gedé",
   "watchAlertAllHint": "Pépéling harga pikeun unggal saham dina daptar ieu anu disada nalika saham gerak sakitu dina sapoé, naék atawa turun. Saham anu geus boga pépéling tetep maké nu sorangan.",
   "watchAlertAllDone": "{count, plural, =1{1 pépéling dipasang} other{{count} pépéling dipasang}}",
-  "portfolioExportRealized": "Ékspor kauntungan nu geus diréalisasikeun (CSV)"
+  "portfolioExportRealized": "Ékspor kauntungan nu geus diréalisasikeun (CSV)",
+  "eventsAddToCalendar": "Tambahkeun ka kalénder (.ics)",
+  "portfolioAnnualReturn": "Imbal hasil taunan",
+  "portfolioPerYear": "{percent} / taun",
+  "portfolioAnnualReturnHint": "Imbal hasil taunan anu ditimbang dumasar artos (XIRR): ngitung iraha anjeun meuli jeung ngajual, jadi artos anu ditambahkeun engké henteu ngaganggu itunganana. Ditémbongkeun saatos pameulian munggaran anjeun sahenteuna sataun; dividén henteu kaasup."
 }

@@ -4080,6 +4080,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Export realized gains (CSV)'**
   String get portfolioExportRealized;
+
+  /// No description provided for @portfolioAnnualReturn.
+  ///
+  /// In en, this message translates to:
+  /// **'Annual return'**
+  String get portfolioAnnualReturn;
+
+  /// Annualized return value, e.g. '+12.3% / year'.
+  ///
+  /// In en, this message translates to:
+  /// **'{percent} / year'**
+  String portfolioPerYear(String percent);
+
+  /// Tooltip explaining the annualized (XIRR) return on the portfolio summary.
+  ///
+  /// In en, this message translates to:
+  /// **'Money-weighted annual return (XIRR): it takes into account when you bought and sold, so money added later doesn\'t distort it. Shown once your first purchase is at least a year old; dividends are not included.'**
+  String get portfolioAnnualReturnHint;
+
+  /// Tooltip of the button on the Upcoming events page that saves all events as an .ics calendar file.
+  ///
+  /// In en, this message translates to:
+  /// **'Add to calendar (.ics)'**
+  String get eventsAddToCalendar;
 }
 
 class _AppLocalizationsDelegate

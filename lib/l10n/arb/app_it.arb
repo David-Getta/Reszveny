@@ -623,5 +623,9 @@
   "watchAlertAll": "Avviso sui grandi movimenti giornalieri",
   "watchAlertAllHint": "Un avviso di prezzo per ogni titolo di questa lista, che scatta quando si muove così tanto in un giorno, al rialzo o al ribasso. I titoli che ne hanno già uno mantengono il proprio.",
   "watchAlertAllDone": "{count, plural, =1{1 avviso impostato} other{{count} avvisi impostati}}",
-  "portfolioExportRealized": "Esporta plusvalenze realizzate (CSV)"
+  "portfolioExportRealized": "Esporta plusvalenze realizzate (CSV)",
+  "eventsAddToCalendar": "Aggiungi al calendario (.ics)",
+  "portfolioAnnualReturn": "Rendimento annuo",
+  "portfolioPerYear": "{percent} / anno",
+  "portfolioAnnualReturnHint": "Rendimento annuo ponderato per il capitale (XIRR): tiene conto di quando hai comprato e venduto, così il denaro aggiunto in seguito non lo falsa. Viene mostrato quando il tuo primo acquisto ha almeno un anno; i dividendi non sono inclusi."
 }

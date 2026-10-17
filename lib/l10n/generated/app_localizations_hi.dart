@@ -2333,4 +2333,19 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'प्राप्त लाभ निर्यात करें (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'वार्षिक रिटर्न';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / वर्ष';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'धन-भारित वार्षिक रिटर्न (XIRR): यह ध्यान में रखता है कि आपने कब खरीदा और बेचा, ताकि बाद में जोड़ा गया पैसा इसे न बिगाड़े। आपकी पहली खरीदारी कम से कम एक साल पुरानी होने पर दिखाया जाता है; लाभांश शामिल नहीं हैं।';
+
+  @override
+  String get eventsAddToCalendar => 'कैलेंडर में जोड़ें (.ics)';
 }

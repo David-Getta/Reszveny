@@ -623,5 +623,9 @@
   "watchAlertAll": "Alarm bei starken Tagesbewegungen",
   "watchAlertAllHint": "Ein Kursalarm für jede Aktie dieser Liste, der auslöst, wenn sie sich an einem Tag so stark bewegt – nach oben oder unten. Aktien, die schon einen haben, behalten ihren.",
   "watchAlertAllDone": "{count, plural, =1{1 Alarm eingerichtet} other{{count} Alarme eingerichtet}}",
-  "portfolioExportRealized": "Realisierte Gewinne exportieren (CSV)"
+  "portfolioExportRealized": "Realisierte Gewinne exportieren (CSV)",
+  "eventsAddToCalendar": "Zum Kalender hinzufügen (.ics)",
+  "portfolioAnnualReturn": "Jahresrendite",
+  "portfolioPerYear": "{percent} / Jahr",
+  "portfolioAnnualReturnHint": "Geldgewichtete Jahresrendite (XIRR): berücksichtigt, wann du gekauft und verkauft hast, sodass später eingezahltes Geld sie nicht verzerrt. Wird angezeigt, sobald dein erster Kauf mindestens ein Jahr zurückliegt; Dividenden sind nicht enthalten."
 }

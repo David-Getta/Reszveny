@@ -623,5 +623,9 @@
   "watchAlertAll": "Ọkwa maka nnukwu mgbanwe kwa ụbọchị",
   "watchAlertAllHint": "Ọkwa ọnụahịa maka òkè ọ bụla dị na ndepụta a: ọ ga-ada ma ọ gbanwee otu a n'otu ụbọchị, elu ma ọ bụ ala. Ndị nwere otu ugbu a ga-edobe nke ha.",
   "watchAlertAllDone": "{count, plural, =1{Edobere ọkwa 1} other{Edobere ọkwa {count}}}",
-  "portfolioExportRealized": "Bupụ uru enwetara (CSV)"
+  "portfolioExportRealized": "Bupụ uru enwetara (CSV)",
+  "eventsAddToCalendar": "Tinye na kalenda (.ics)",
+  "portfolioAnnualReturn": "Uru kwa afọ",
+  "portfolioPerYear": "{percent} / afọ",
+  "portfolioAnnualReturnHint": "Uru kwa afọ dabere n'ego (XIRR): ọ na-atụle mgbe ị zụrụ na mgbe ị rere, ya mere ego ị tinyere mgbe e mesịrị anaghị emebi ya. A na-egosi ya ozugbo ihe mbụ ị zụrụ gbara opekata mpe otu afọ; dividend esoghị na ya."
 }

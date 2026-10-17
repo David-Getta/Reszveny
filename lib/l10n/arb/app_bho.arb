@@ -623,5 +623,9 @@
   "watchAlertAll": "रोज के बड़ उतार-चढ़ाव पर अलर्ट",
   "watchAlertAllHint": "एह सूची के हर शेयर खातिर दाम के अलर्ट: एक दिन में एतना ऊपर भा नीचे होखे त बताई। जवना शेयर पर पहिले से अलर्ट बा, ओकर ओइसहीं रही।",
   "watchAlertAllDone": "{count, plural, =1{1 अलर्ट लगावल गइल} other{{count} अलर्ट लगावल गइल}}",
-  "portfolioExportRealized": "मिलल मुनाफा निर्यात करीं (CSV)"
+  "portfolioExportRealized": "मिलल मुनाफा निर्यात करीं (CSV)",
+  "eventsAddToCalendar": "कैलेंडर में जोड़ीं (.ics)",
+  "portfolioAnnualReturn": "सालाना रिटर्न",
+  "portfolioPerYear": "{percent} / साल",
+  "portfolioAnnualReturnHint": "पइसा-भारित सालाना रिटर्न (XIRR): ई देखेला कि रउआ कब खरीदनी आ बेचनी, एह से बाद में जोड़ल पइसा एकरा के ना बिगाड़े। रउआ पहिला खरीदारी कम से कम एक साल पुरान भइला पर देखावल जाला; लाभांश शामिल नइखे।"
 }

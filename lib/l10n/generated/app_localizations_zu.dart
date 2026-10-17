@@ -2344,4 +2344,19 @@ class AppLocalizationsZu extends AppLocalizations {
   @override
   String get portfolioExportRealized =>
       'Thumela ngaphandle inzuzo etholiwe (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Inzuzo yonyaka';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / unyaka';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Inzuzo yonyaka ekalwe ngemali (XIRR): ibheka ukuthi uthenge nini futhi wathengisa nini, ngakho imali eyengezwe kamuva ayiyiphazamisi. Iboniswa uma sekudlule okungenani unyaka owodwa kusukela uthenge okokuqala; ama-dividend awafakiwe.';
+
+  @override
+  String get eventsAddToCalendar => 'Engeza kukhalenda (.ics)';
 }

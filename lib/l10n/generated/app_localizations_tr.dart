@@ -2334,4 +2334,19 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Gerçekleşen kazancı dışa aktar (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Yıllık getiri';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / yıl';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Para ağırlıklı yıllık getiri (XIRR): ne zaman alıp sattığınızı hesaba katar, böylece sonradan eklenen para onu çarpıtmaz. İlk alışınızın üzerinden en az bir yıl geçince gösterilir; temettüler dahil değildir.';
+
+  @override
+  String get eventsAddToCalendar => 'Takvime ekle (.ics)';
 }

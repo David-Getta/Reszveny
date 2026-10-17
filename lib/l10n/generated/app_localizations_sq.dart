@@ -2341,4 +2341,19 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Eksporto fitimet e realizuara (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Rendimenti vjetor';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / vit';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Rendimenti vjetor i ponderuar me paratë (XIRR): merr parasysh kur keni blerë dhe shitur, kështu që paratë e shtuara më vonë nuk e shtrembërojnë. Shfaqet kur blerja juaj e parë të jetë të paktën një vjeçe; dividendët nuk përfshihen.';
+
+  @override
+  String get eventsAddToCalendar => 'Shto në kalendar (.ics)';
 }

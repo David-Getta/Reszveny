@@ -2353,4 +2353,19 @@ class AppLocalizationsIlo extends AppLocalizations {
   @override
   String get portfolioExportRealized =>
       'I-export ti na-realize a ganansia (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Tinawen a ganansia';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / tawen';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Tinawen a ganansia a natimbang iti kuarta (XIRR): ibilangna no kaano ti panaggatang ken panaglakom, isu a ti kuarta a nainayon kalpasanna ket saanna a mapadakes. Maipakita no nakalabesen ti uray maysa a tawen manipud iti umuna a gatangmo; saan a nairaman dagiti dibidendo.';
+
+  @override
+  String get eventsAddToCalendar => 'Inayon iti kalendario (.ics)';
 }

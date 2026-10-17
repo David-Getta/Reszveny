@@ -2351,4 +2351,19 @@ class AppLocalizationsTs extends AppLocalizations {
   @override
   String get portfolioExportRealized =>
       'Rhumela ehandle vuyelo lebyi kumiweke (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Mbuyelo wa lembe';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / lembe';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Mbuyelo wa lembe lowu pimiweke hi mali (XIRR): wu languta loko u xavile ni loko u xavisile, hikwalaho mali lama engeteriweke endzhaku a ma wu onhi. Wu kombisiwa loko xixaviwa xa wena xo sungula xi hetile lembe rin\'we hi xitsongo; dividende a yi katsiwanga.';
+
+  @override
+  String get eventsAddToCalendar => 'Engetela eka khalendara (.ics)';
 }

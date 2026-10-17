@@ -2351,4 +2351,19 @@ class AppLocalizationsTn extends AppLocalizations {
   @override
   String get portfolioExportRealized =>
       'Romela kwa ntle poelo e e boneweng (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Poelo ya ngwaga';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / ngwaga';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Poelo ya ngwaga e e lekanngwang ka madi (XIRR): e tsaya tsia gore o rekile le go rekisa leng, ka jalo madi a a okeditsweng moragonyana ga a e sokamise. E bontshiwa fa theko ya gago ya ntlha e setse e na le ngwaga bonnye; dividende ga e a akarediwa.';
+
+  @override
+  String get eventsAddToCalendar => 'Tsenya mo khalendareng (.ics)';
 }

@@ -2347,4 +2347,19 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Realisierte Gewinne exportieren (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Jahresrendite';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / Jahr';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Geldgewichtete Jahresrendite (XIRR): berücksichtigt, wann du gekauft und verkauft hast, sodass später eingezahltes Geld sie nicht verzerrt. Wird angezeigt, sobald dein erster Kauf mindestens ein Jahr zurückliegt; Dividenden sind nicht enthalten.';
+
+  @override
+  String get eventsAddToCalendar => 'Zum Kalender hinzufügen (.ics)';
 }

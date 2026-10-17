@@ -2336,4 +2336,19 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Exportera realiserade vinster (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Årlig avkastning';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / år';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Penningviktad årlig avkastning (XIRR): tar hänsyn till när du köpte och sålde, så pengar som lagts till senare inte förvränger den. Visas när ditt första köp är minst ett år gammalt; utdelningar ingår inte.';
+
+  @override
+  String get eventsAddToCalendar => 'Lägg till i kalendern (.ics)';
 }

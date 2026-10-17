@@ -623,5 +623,9 @@
   "watchAlertAll": "Isexwayiso sokunyakaza okukhulu kosuku",
   "watchAlertAllHint": "Isexwayiso senani kusitoko ngasinye kulolu hlu: sizokhala uma sinyakaza kangaka ngosuku olulodwa, phezulu noma phansi. Lezo esezinaso zigcina esazo.",
   "watchAlertAllDone": "{count, plural, =1{Kusethwe isexwayiso esisodwa} other{Kusethwe izexwayiso ezingu-{count}}}",
-  "portfolioExportRealized": "Thumela ngaphandle inzuzo etholiwe (CSV)"
+  "portfolioExportRealized": "Thumela ngaphandle inzuzo etholiwe (CSV)",
+  "eventsAddToCalendar": "Engeza kukhalenda (.ics)",
+  "portfolioAnnualReturn": "Inzuzo yonyaka",
+  "portfolioPerYear": "{percent} / unyaka",
+  "portfolioAnnualReturnHint": "Inzuzo yonyaka ekalwe ngemali (XIRR): ibheka ukuthi uthenge nini futhi wathengisa nini, ngakho imali eyengezwe kamuva ayiyiphazamisi. Iboniswa uma sekudlule okungenani unyaka owodwa kusukela uthenge okokuqala; ama-dividend awafakiwe."
 }

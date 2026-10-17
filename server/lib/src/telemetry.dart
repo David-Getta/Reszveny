@@ -62,6 +62,7 @@ class TelemetryStore {
     'list_created',
     'targets_set',
     'backup_saved',
+    'calendar_exported',
     'backup_restored',
     'bulk_alerts',
   };

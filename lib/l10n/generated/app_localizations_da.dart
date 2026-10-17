@@ -2333,4 +2333,19 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Eksportér realiserede gevinster (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Årligt afkast';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / år';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Pengevægtet årligt afkast (XIRR): tager højde for, hvornår du købte og solgte, så penge, der er tilføjet senere, ikke forvrider det. Vises, når dit første køb er mindst et år gammelt; udbytte er ikke medregnet.';
+
+  @override
+  String get eventsAddToCalendar => 'Føj til kalender (.ics)';
 }

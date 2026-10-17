@@ -2339,4 +2339,19 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Eksport keuntungan direalisasi (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Pulangan tahunan';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / tahun';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Pulangan tahunan berwajaran wang (XIRR): mengambil kira bila anda membeli dan menjual, jadi wang yang ditambah kemudian tidak memesongkannya. Dipaparkan setelah pembelian pertama anda berusia sekurang-kurangnya setahun; dividen tidak termasuk.';
+
+  @override
+  String get eventsAddToCalendar => 'Tambah ke kalendar (.ics)';
 }

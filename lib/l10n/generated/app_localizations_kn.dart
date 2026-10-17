@@ -2341,4 +2341,19 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'ಪಡೆದ ಲಾಭವನ್ನು ರಫ್ತು ಮಾಡಿ (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'ವಾರ್ಷಿಕ ರಿಟರ್ನ್';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / ವರ್ಷ';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'ಹಣ-ತೂಕದ ವಾರ್ಷಿಕ ರಿಟರ್ನ್ (XIRR): ನೀವು ಯಾವಾಗ ಖರೀದಿಸಿದಿರಿ ಮತ್ತು ಮಾರಾಟ ಮಾಡಿದಿರಿ ಎಂಬುದನ್ನು ಪರಿಗಣಿಸುತ್ತದೆ, ಆದ್ದರಿಂದ ನಂತರ ಸೇರಿಸಿದ ಹಣ ಅದನ್ನು ವಿರೂಪಗೊಳಿಸುವುದಿಲ್ಲ. ನಿಮ್ಮ ಮೊದಲ ಖರೀದಿಗೆ ಕನಿಷ್ಠ ಒಂದು ವರ್ಷವಾದ ನಂತರ ತೋರಿಸಲಾಗುತ್ತದೆ; ಡಿವಿಡೆಂಡ್‌ಗಳನ್ನು ಸೇರಿಸಲಾಗಿಲ್ಲ.';
+
+  @override
+  String get eventsAddToCalendar => 'ಕ್ಯಾಲೆಂಡರ್‌ಗೆ ಸೇರಿಸಿ (.ics)';
 }

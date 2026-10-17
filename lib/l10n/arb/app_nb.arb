@@ -623,5 +623,9 @@
   "watchAlertAll": "Varsel ved store daglige bevegelser",
   "watchAlertAllHint": "Et kursvarsel for hver aksje i denne listen som slår til når den beveger seg så mye på én dag, opp eller ned. Aksjer som allerede har et, beholder sitt.",
   "watchAlertAllDone": "{count, plural, =1{1 varsel opprettet} other{{count} varsler opprettet}}",
-  "portfolioExportRealized": "Eksporter realiserte gevinster (CSV)"
+  "portfolioExportRealized": "Eksporter realiserte gevinster (CSV)",
+  "eventsAddToCalendar": "Legg til i kalender (.ics)",
+  "portfolioAnnualReturn": "Årlig avkastning",
+  "portfolioPerYear": "{percent} / år",
+  "portfolioAnnualReturnHint": "Pengevektet årlig avkastning (XIRR): tar hensyn til når du kjøpte og solgte, slik at penger som er lagt til senere, ikke forvrenger den. Vises når det første kjøpet ditt er minst ett år gammelt; utbytte er ikke inkludert."
 }

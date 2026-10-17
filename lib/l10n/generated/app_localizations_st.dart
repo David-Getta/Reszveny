@@ -2349,4 +2349,19 @@ class AppLocalizationsSt extends AppLocalizations {
   @override
   String get portfolioExportRealized =>
       'Romela ka ntle phaello e fumanweng (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Poelo ya selemo';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / selemo';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Poelo ya selemo e lekantsweng ka tjhelete (XIRR): e ela hloko hore o rekile le ho rekisa neng, kahoo tjhelete e kentsweng hamorao ha e e sothe. E bontshwa ha theko ya hao ya pele e se e le selemo bonyane; dividende ha e a kenyeletswa.';
+
+  @override
+  String get eventsAddToCalendar => 'Kenya khalendareng (.ics)';
 }

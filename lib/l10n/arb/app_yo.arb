@@ -623,5 +623,9 @@
   "watchAlertAll": "Ìkìlọ̀ fún ìyípadà ńlá ojoojúmọ́",
   "watchAlertAllHint": "Ìkìlọ̀ iye owó fún gbogbo ìpín inú àkójọ yìí tí yóò dún nígbà tí ó bá yí padà tó báyìí ní ọjọ́ kan, sókè tàbí sísàlẹ̀. Àwọn tí ó ti ní ọ̀kan tẹ́lẹ̀ yóò pa tiwọn mọ́.",
   "watchAlertAllDone": "{count, plural, =1{A ti ṣètò ìkìlọ̀ 1} other{A ti ṣètò ìkìlọ̀ {count}}}",
-  "portfolioExportRealized": "Gbé èrè tí a ti rí jáde (CSV)"
+  "portfolioExportRealized": "Gbé èrè tí a ti rí jáde (CSV)",
+  "eventsAddToCalendar": "Fi kún kàlẹ́ńdà (.ics)",
+  "portfolioAnnualReturn": "Èrè ọdọọdún",
+  "portfolioPerYear": "{percent} / ọdún",
+  "portfolioAnnualReturnHint": "Èrè ọdọọdún tí a wọ̀n pẹ̀lú owó (XIRR): ó ń ka ìgbà tí o rà àti tí o tà sí, nítorí náà owó tí o fi kún un lẹ́yìn kò ní yí i po. A máa ń fi hàn nígbà tí ìrajà rẹ àkọ́kọ́ bá ti pé ọdún kan ó kéré tán; èrè ìpín kò sí nínú rẹ̀."
 }

@@ -2346,4 +2346,19 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Bimisa matomba oyo ozwi (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Litomba ya mobu';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / mobu';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Litomba ya mobu oyo epimami na mbɔngɔ (XIRR): etalaka ntango osombaki mpe otekaki, yango wana mbɔngɔ oyo obakisaki na nsima ebebisaka yango te. Emonisamaka soki bosombi na yo ya liboso ekoki ata mobu moko; ba-dividende ezali kati te.';
+
+  @override
+  String get eventsAddToCalendar => 'Bakisa na manaka (.ics)';
 }

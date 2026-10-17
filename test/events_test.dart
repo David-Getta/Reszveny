@@ -16,6 +16,7 @@ import 'package:reszveny/features/analysis/report_store.dart';
 import 'package:reszveny/features/billing/entitlement_service.dart';
 import 'package:reszveny/features/capture/capture_service.dart';
 import 'package:reszveny/features/events/events_service.dart';
+import 'package:reszveny/features/events/events_view.dart';
 import 'package:reszveny/features/market_data/demo_market_data_provider.dart';
 import 'package:reszveny/features/portfolio/portfolio_store.dart';
 import 'package:reszveny/features/recognition/stock_recognizer.dart';
@@ -159,6 +160,20 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.textContaining('Results dates of your favorites'), findsOneWidget);
     expect(find.text('GTC keynote\nFrom your analysis'), findsOneWidget);
+
+    // Az összes esemény a naptárba (.ics).
+    final saved = <String, String>{};
+    final original = saveCalendarFile;
+    saveCalendarFile = (bytes, name) async => saved[name] = utf8.decode(bytes);
+    addTearDown(() => saveCalendarFile = original);
+    await tester.tap(find.byKey(const ValueKey('events-calendar')));
+    await tester.pumpAndSettle();
+    final ics = saved['whatstock-events.ics']!.replaceAll('\r\n ', '');
+    expect('BEGIN:VEVENT'.allMatches(ics), hasLength(3));
+    expect(ics, contains('SUMMARY:MSFT · Quarterly results · after the close\r\nDESCRIPTION:EPS estimate: 1.62\r\n'));
+    expect(ics, contains('UID:earnings-MSFT-${_day(today.add(const Duration(days: 1)))}@whatstock.app'));
+    expect(ics, contains('SUMMARY:NVDA · GTC keynote\r\nDESCRIPTION:From your analysis\r\n'));
+
     await tester.tap(find.text('GTC keynote\nFrom your analysis'));
     await tester.pumpAndSettle();
     expect(find.text('NVIDIA Corporation'), findsWidgets);

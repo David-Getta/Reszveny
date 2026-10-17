@@ -623,5 +623,9 @@
   "watchAlertAll": "Cảnh báo biến động mạnh trong ngày",
   "watchAlertAllHint": "Cảnh báo giá cho mọi cổ phiếu trong danh sách này, sẽ báo khi cổ phiếu biến động chừng này trong một ngày, tăng hoặc giảm. Cổ phiếu nào đã có cảnh báo thì giữ nguyên.",
   "watchAlertAllDone": "{count, plural, =1{Đã đặt 1 cảnh báo} other{Đã đặt {count} cảnh báo}}",
-  "portfolioExportRealized": "Xuất lãi lỗ đã thực hiện (CSV)"
+  "portfolioExportRealized": "Xuất lãi lỗ đã thực hiện (CSV)",
+  "eventsAddToCalendar": "Thêm vào lịch (.ics)",
+  "portfolioAnnualReturn": "Lợi nhuận hằng năm",
+  "portfolioPerYear": "{percent} / năm",
+  "portfolioAnnualReturnHint": "Lợi nhuận hằng năm theo trọng số tiền (XIRR): tính đến thời điểm bạn mua và bán, nên tiền nạp thêm sau này không làm sai lệch con số. Hiển thị khi lần mua đầu tiên của bạn đã được ít nhất một năm; không bao gồm cổ tức."
 }

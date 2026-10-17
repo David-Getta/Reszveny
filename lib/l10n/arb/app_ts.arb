@@ -623,5 +623,9 @@
   "watchAlertAll": "Xitsundzuxo xa ku cinca lokukulu ka siku",
   "watchAlertAllHint": "Xitsundzuxo xa nxavo eka xiave xin'wana na xin'wana eka nxaxamelo lowu: xi ta rila loko xi cinca hi ndlela leyi hi siku rin'we, ehenhla kumbe ehansi. Leswi se swi nga na xona swi ta hlayisa xa swona.",
   "watchAlertAllDone": "{count, plural, =1{Ku vekiwe xitsundzuxo xin'we} other{Ku vekiwe switsundzuxo swa {count}}}",
-  "portfolioExportRealized": "Rhumela ehandle vuyelo lebyi kumiweke (CSV)"
+  "portfolioExportRealized": "Rhumela ehandle vuyelo lebyi kumiweke (CSV)",
+  "eventsAddToCalendar": "Engetela eka khalendara (.ics)",
+  "portfolioAnnualReturn": "Mbuyelo wa lembe",
+  "portfolioPerYear": "{percent} / lembe",
+  "portfolioAnnualReturnHint": "Mbuyelo wa lembe lowu pimiweke hi mali (XIRR): wu languta loko u xavile ni loko u xavisile, hikwalaho mali lama engeteriweke endzhaku a ma wu onhi. Wu kombisiwa loko xixaviwa xa wena xo sungula xi hetile lembe rin'we hi xitsongo; dividende a yi katsiwanga."
 }

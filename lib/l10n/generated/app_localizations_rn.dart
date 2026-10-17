@@ -2342,4 +2342,19 @@ class AppLocalizationsRn extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Ohereza inyungu zabonetse (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Inyungu ku mwaka';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / umwaka';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Inyungu ku mwaka ipimwa hisunzwe amahera (XIRR): yitaho igihe waguriye n\'igihe wagurishirije, gutyo amahera wongeyeko mu nyuma ntayihindagura. Yerekanwa igihe ivyo waguze ubwa mbere bimaze nibura umwaka; inyungu ku migabane ntizirimwo.';
+
+  @override
+  String get eventsAddToCalendar => 'Shira kuri kalindari (.ics)';
 }

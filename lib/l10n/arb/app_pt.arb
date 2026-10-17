@@ -623,5 +623,9 @@
   "watchAlertAll": "Alerta de grandes variações diárias",
   "watchAlertAllHint": "Um alerta de preço para cada ação desta lista, que dispara quando ela se mexe tanto num dia, para cima ou para baixo. As ações que já têm um mantêm o seu.",
   "watchAlertAllDone": "{count, plural, =1{1 alerta definido} other{{count} alertas definidos}}",
-  "portfolioExportRealized": "Exportar ganhos realizados (CSV)"
+  "portfolioExportRealized": "Exportar ganhos realizados (CSV)",
+  "eventsAddToCalendar": "Adicionar ao calendário (.ics)",
+  "portfolioAnnualReturn": "Rentabilidade anual",
+  "portfolioPerYear": "{percent} / ano",
+  "portfolioAnnualReturnHint": "Rentabilidade anual ponderada pelo dinheiro (XIRR): considera quando você comprou e vendeu, então o dinheiro adicionado depois não a distorce. Exibida quando sua primeira compra tiver pelo menos um ano; os dividendos não estão incluídos."
 }

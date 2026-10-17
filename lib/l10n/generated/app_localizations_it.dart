@@ -2340,4 +2340,19 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Esporta plusvalenze realizzate (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Rendimento annuo';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / anno';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Rendimento annuo ponderato per il capitale (XIRR): tiene conto di quando hai comprato e venduto, così il denaro aggiunto in seguito non lo falsa. Viene mostrato quando il tuo primo acquisto ha almeno un anno; i dividendi non sono inclusi.';
+
+  @override
+  String get eventsAddToCalendar => 'Aggiungi al calendario (.ics)';
 }

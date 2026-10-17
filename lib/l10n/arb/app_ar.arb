@@ -623,5 +623,9 @@
   "watchAlertAll": "تنبيه عند التحركات اليومية الكبيرة",
   "watchAlertAllHint": "تنبيه سعري لكل سهم في هذه القائمة ينطلق عندما يتحرك بهذا القدر خلال يوم واحد، صعودًا أو هبوطًا. الأسهم التي لديها تنبيه بالفعل تحتفظ به.",
   "watchAlertAllDone": "{count, plural, =1{تم ضبط تنبيه واحد} =2{تم ضبط تنبيهين} few{تم ضبط {count} تنبيهات} many{تم ضبط {count} تنبيهًا} other{تم ضبط {count} تنبيه}}",
-  "portfolioExportRealized": "تصدير الأرباح المحققة (CSV)"
+  "portfolioExportRealized": "تصدير الأرباح المحققة (CSV)",
+  "eventsAddToCalendar": "إضافة إلى التقويم (.ics)",
+  "portfolioAnnualReturn": "العائد السنوي",
+  "portfolioPerYear": "{percent} سنويًا",
+  "portfolioAnnualReturnHint": "العائد السنوي المرجّح بالأموال (XIRR): يأخذ في الحسبان توقيت عمليات الشراء والبيع، فلا تشوّهه الأموال المضافة لاحقًا. يظهر بعد مرور سنة على الأقل على أول عملية شراء لك؛ ولا يشمل التوزيعات."
 }

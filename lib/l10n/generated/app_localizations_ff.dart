@@ -2329,4 +2329,19 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Yaltin riba heɓaaɗo (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Nafoore hitaande';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / hitaande';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Nafoore hitaande peesaande e ceede (XIRR): ina jaggita sahaaji ɗi soodu-ɗaa e ɗi yeeyu-ɗaa, ngam ceede ɓeydaaɗe caggal ɗee nattataa ɗum. Ina hollee so soodgol maa adiingol hewtii hitaande wootere fof; geɗal nafoore naatnaaka.';
+
+  @override
+  String get eventsAddToCalendar => 'Ɓeydu e kalandiye (.ics)';
 }

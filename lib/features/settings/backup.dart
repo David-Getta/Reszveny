@@ -3,9 +3,9 @@ import 'dart:convert';
 import 'package:file_selector/file_selector.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:share_plus/share_plus.dart';
 
 import '../../app_services.dart';
+import '../../core/share/save_file.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../sync/sync_service.dart';
 
@@ -64,27 +64,12 @@ class Backup {
 /// Mentés fájlba: asztali gépen mentés-ablakkal, máshol a megosztás-menüvel. Tesztben lecserélhető.
 typedef BackupSaver = Future<void> Function(Uint8List bytes, String fileName);
 
-BackupSaver saveBackupFile = (bytes, fileName) async {
-  final file = XFile.fromData(bytes, mimeType: 'application/json', name: fileName);
-  final desktop =
-      !kIsWeb &&
-      (defaultTargetPlatform == TargetPlatform.macOS ||
-          defaultTargetPlatform == TargetPlatform.windows ||
-          defaultTargetPlatform == TargetPlatform.linux);
-  if (desktop) {
-    final to = await getSaveLocation(
-      suggestedName: fileName,
-      acceptedTypeGroups: const [
-        XTypeGroup(label: 'JSON', extensions: ['json'], uniformTypeIdentifiers: ['public.json']),
-      ],
-    );
-    if (to != null) await file.saveTo(to.path);
-    return;
-  }
-  await SharePlus.instance.share(
-    ShareParams(files: [file], fileNameOverrides: [fileName], downloadFallbackEnabled: true),
-  );
-};
+BackupSaver saveBackupFile = (bytes, fileName) => saveFile(
+  bytes,
+  fileName,
+  mimeType: 'application/json',
+  type: const XTypeGroup(label: 'JSON', extensions: ['json'], uniformTypeIdentifiers: ['public.json']),
+);
 
 /// Mentés kiválasztása; a szövegét adja vissza. Tesztben lecserélhető.
 typedef BackupPicker = Future<String?> Function();

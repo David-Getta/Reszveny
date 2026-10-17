@@ -2398,4 +2398,19 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Eksportuoti realizuotą pelną (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Metinė grąža';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent per metus';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Pinigais svertinė metinė grąža (XIRR): atsižvelgia į tai, kada pirkote ir pardavėte, todėl vėliau pridėti pinigai jos neiškreipia. Rodoma, kai nuo pirmojo jūsų pirkimo praeina bent metai; dividendai neįtraukti.';
+
+  @override
+  String get eventsAddToCalendar => 'Pridėti į kalendorių (.ics)';
 }

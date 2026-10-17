@@ -2345,4 +2345,19 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Fulumya amagoba agafunye (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Amagoba ga buli mwaka';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / omwaka';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Amagoba ga buli mwaka agapimiddwa ku nsimbi (XIRR): gatunuulira ddi lwe wagula ne lwe watunda, n\'olwekyo ensimbi ze wayongerako oluvannyuma tezigatabula. Galagibwa ng\'ekyo kye wasooka okugula kiweza waakiri omwaka gumu; amagoba ku migabo tegazingiddwamu.';
+
+  @override
+  String get eventsAddToCalendar => 'Gattako ku kalenda (.ics)';
 }

@@ -623,5 +623,9 @@
   "watchAlertAll": "Jeertinol e waylooji mawɗi ñalnde",
   "watchAlertAllHint": "Jeertinol coggu ngam kala aksiyoŋ e ndee doggol: ina haala so waylii ko ɗuum fof e ñalnde wootere, dow walla les. Ɗe njogiiɗe jeertinol gila adii ndeen ndesay e mum en.",
   "watchAlertAllDone": "{count, plural, =1{Jeertinol 1 teeltaama} other{Jeertine {count} teeltaama}}",
-  "portfolioExportRealized": "Yaltin riba heɓaaɗo (CSV)"
+  "portfolioExportRealized": "Yaltin riba heɓaaɗo (CSV)",
+  "eventsAddToCalendar": "Ɓeydu e kalandiye (.ics)",
+  "portfolioAnnualReturn": "Nafoore hitaande",
+  "portfolioPerYear": "{percent} / hitaande",
+  "portfolioAnnualReturnHint": "Nafoore hitaande peesaande e ceede (XIRR): ina jaggita sahaaji ɗi soodu-ɗaa e ɗi yeeyu-ɗaa, ngam ceede ɓeydaaɗe caggal ɗee nattataa ɗum. Ina hollee so soodgol maa adiingol hewtii hitaande wootere fof; geɗal nafoore naatnaaka."
 }

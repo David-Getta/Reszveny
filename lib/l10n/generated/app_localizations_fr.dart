@@ -2345,4 +2345,19 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get portfolioExportRealized =>
       'Exporter les plus-values réalisées (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Rendement annuel';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / an';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Rendement annuel pondéré par les capitaux (XIRR) : il tient compte du moment où vous avez acheté et vendu, de sorte que l’argent ajouté plus tard ne le fausse pas. Affiché dès que votre premier achat a au moins un an ; les dividendes ne sont pas inclus.';
+
+  @override
+  String get eventsAddToCalendar => 'Ajouter au calendrier (.ics)';
 }

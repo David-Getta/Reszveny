@@ -2326,4 +2326,19 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'ရရှိပြီးသော အမြတ်ကို ထုတ်ယူရန် (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'နှစ်စဉ် အမြတ်နှုန်း';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / နှစ်';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'ငွေပမာဏဖြင့် ချိန်ဆထားသော နှစ်စဉ် အမြတ်နှုန်း (XIRR)- သင် ဝယ်ယူခဲ့ချိန်နှင့် ရောင်းချခဲ့ချိန်ကို ထည့်သွင်းတွက်ချက်သဖြင့် နောက်မှ ထည့်သော ငွေကြောင့် ကိန်းဂဏန်း မလွဲချော်ပါ။ သင်၏ ပထမဆုံး ဝယ်ယူမှု အနည်းဆုံး တစ်နှစ် ပြည့်ပြီးမှ ပြသပါသည်။ အမြတ်ဝေစု မပါဝင်ပါ။';
+
+  @override
+  String get eventsAddToCalendar => 'ပြက္ခဒိန်သို့ ထည့်ရန် (.ics)';
 }

@@ -2340,4 +2340,19 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'పొందిన లాభాలను ఎగుమతి చేయి (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'వార్షిక రాబడి';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / సంవత్సరం';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'డబ్బు-భారిత వార్షిక రాబడి (XIRR): మీరు ఎప్పుడు కొన్నారు, అమ్మారు అనేది పరిగణనలోకి తీసుకుంటుంది, కాబట్టి తర్వాత జోడించిన డబ్బు దాన్ని వక్రీకరించదు. మీ మొదటి కొనుగోలుకు కనీసం ఒక సంవత్సరం పూర్తయిన తర్వాత చూపబడుతుంది; డివిడెండ్‌లు చేర్చబడలేదు.';
+
+  @override
+  String get eventsAddToCalendar => 'క్యాలెండర్‌కు జోడించండి (.ics)';
 }

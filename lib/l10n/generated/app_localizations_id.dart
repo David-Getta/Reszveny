@@ -2330,4 +2330,19 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Ekspor keuntungan terealisasi (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Imbal hasil tahunan';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / tahun';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Imbal hasil tahunan tertimbang uang (XIRR): memperhitungkan kapan Anda membeli dan menjual, sehingga uang yang ditambahkan belakangan tidak mendistorsinya. Ditampilkan setelah pembelian pertama Anda berusia minimal satu tahun; dividen tidak termasuk.';
+
+  @override
+  String get eventsAddToCalendar => 'Tambahkan ke kalender (.ics)';
 }

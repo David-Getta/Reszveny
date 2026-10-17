@@ -2342,4 +2342,19 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Umusha diakamuena didi diangata (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Dipeta dia tshidimu';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / tshidimu';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Dipeta dia tshidimu didibu bapime ne mfranga (XIRR): didi ditangila tshikondo tshiwakasumba ne tshiwakasumbisha, nunku mfranga yuudi musakidile pashishe kayena idinyanga to. Didi dimweneka padi tshisumbu tshiebe tshia kumpala tshikumbaja tshidimu tshimue to kupita; ba-dividende kabavuamu to.';
+
+  @override
+  String get eventsAddToCalendar => 'Bueja mu kalandriye (.ics)';
 }

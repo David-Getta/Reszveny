@@ -2330,4 +2330,19 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'પ્રાપ્ત નફો નિકાસ કરો (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'વાર્ષિક રિટર્ન';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / વર્ષ';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'નાણાં-ભારિત વાર્ષિક રિટર્ન (XIRR): તમે ક્યારે ખરીદ્યું અને વેચ્યું તે ધ્યાનમાં લે છે, તેથી પછીથી ઉમેરેલા નાણાં તેને વિકૃત કરતા નથી. તમારી પહેલી ખરીદી ઓછામાં ઓછી એક વર્ષ જૂની થાય ત્યારે બતાવવામાં આવે છે; ડિવિડન્ડ શામેલ નથી.';
+
+  @override
+  String get eventsAddToCalendar => 'કૅલેન્ડરમાં ઉમેરો (.ics)';
 }

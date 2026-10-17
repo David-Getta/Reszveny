@@ -2328,4 +2328,19 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Xuất lãi lỗ đã thực hiện (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Lợi nhuận hằng năm';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / năm';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Lợi nhuận hằng năm theo trọng số tiền (XIRR): tính đến thời điểm bạn mua và bán, nên tiền nạp thêm sau này không làm sai lệch con số. Hiển thị khi lần mua đầu tiên của bạn đã được ít nhất một năm; không bao gồm cổ tức.';
+
+  @override
+  String get eventsAddToCalendar => 'Thêm vào lịch (.ics)';
 }

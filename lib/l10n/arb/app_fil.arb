@@ -623,5 +623,9 @@
   "watchAlertAll": "Alerto sa malalaking galaw sa araw",
   "watchAlertAllHint": "Isang alerto sa presyo para sa bawat stock sa listahang ito na tutunog kapag gumalaw ito nang ganito kalaki sa isang araw, pataas man o pababa. Mananatili ang alerto ng mga stock na mayroon na nito.",
   "watchAlertAllDone": "{count, plural, =1{Na-set ang 1 alerto} other{Na-set ang {count} alerto}}",
-  "portfolioExportRealized": "I-export ang realized na kita (CSV)"
+  "portfolioExportRealized": "I-export ang realized na kita (CSV)",
+  "eventsAddToCalendar": "Idagdag sa kalendaryo (.ics)",
+  "portfolioAnnualReturn": "Taunang kita",
+  "portfolioPerYear": "{percent} / taon",
+  "portfolioAnnualReturnHint": "Money-weighted na taunang kita (XIRR): isinasaalang-alang nito kung kailan ka bumili at nagbenta, kaya hindi ito nababaluktot ng perang idinagdag mo kalaunan. Lalabas ito kapag isang taon na man lang ang una mong pagbili; hindi kasama ang mga dibidendo."
 }

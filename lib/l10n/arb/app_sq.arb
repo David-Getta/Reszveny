@@ -623,5 +623,9 @@
   "watchAlertAll": "Sinjalizim për lëvizje të mëdha ditore",
   "watchAlertAllHint": "Një sinjalizim çmimi për çdo aksion në këtë listë, që aktivizohet kur ai lëviz kaq shumë brenda një dite, lart ose poshtë. Aksionet që kanë tashmë një, e mbajnë të tyrin.",
   "watchAlertAllDone": "{count, plural, =1{U vendos 1 sinjalizim} other{U vendosën {count} sinjalizime}}",
-  "portfolioExportRealized": "Eksporto fitimet e realizuara (CSV)"
+  "portfolioExportRealized": "Eksporto fitimet e realizuara (CSV)",
+  "eventsAddToCalendar": "Shto në kalendar (.ics)",
+  "portfolioAnnualReturn": "Rendimenti vjetor",
+  "portfolioPerYear": "{percent} / vit",
+  "portfolioAnnualReturnHint": "Rendimenti vjetor i ponderuar me paratë (XIRR): merr parasysh kur keni blerë dhe shitur, kështu që paratë e shtuara më vonë nuk e shtrembërojnë. Shfaqet kur blerja juaj e parë të jetë të paktën një vjeçe; dividendët nuk përfshihen."
 }

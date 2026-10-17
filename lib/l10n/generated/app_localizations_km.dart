@@ -2314,4 +2314,19 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'នាំចេញប្រាក់ចំណេញដែលបានសម្រេច (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'ទិន្នផលប្រចាំឆ្នាំ';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / ឆ្នាំ';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'ទិន្នផលប្រចាំឆ្នាំដែលថ្លឹងតាមទឹកប្រាក់ (XIRR)៖ វាគិតពីពេលដែលអ្នកបានទិញ និងលក់ ដូច្នេះប្រាក់ដែលបន្ថែមនៅពេលក្រោយមិនធ្វើឱ្យវាខុសប្រក្រតីទេ។ បង្ហាញនៅពេលការទិញដំបូងរបស់អ្នកមានរយៈពេលយ៉ាងហោចណាស់មួយឆ្នាំ ហើយមិនរួមបញ្ចូលភាគលាភទេ។';
+
+  @override
+  String get eventsAddToCalendar => 'បន្ថែមទៅប្រតិទិន (.ics)';
 }

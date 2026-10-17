@@ -2338,4 +2338,19 @@ class AppLocalizationsKy extends AppLocalizations {
   @override
   String get portfolioExportRealized =>
       'Ишке ашырылган кирешени экспорттоо (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Жылдык кирешелүүлүк';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / жыл';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Акча агымдары менен салмакталган жылдык кирешелүүлүк (XIRR): качан сатып алып, качан сатканыңызды эске алат, ошондуктан кийин кошулган акча аны бурмалабайт. Биринчи сатып алууңузга кеминде бир жыл толгондо көрсөтүлөт; дивиденддер кирбейт.';
+
+  @override
+  String get eventsAddToCalendar => 'Календарга кошуу (.ics)';
 }

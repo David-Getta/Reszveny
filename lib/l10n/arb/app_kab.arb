@@ -623,5 +623,9 @@
   "watchAlertAll": "Alɣu ɣef ibeddilen imeqqranen n wass",
   "watchAlertAllHint": "Alɣu n ssuma i yal yiwen deg tebdart-a: ad d-yeffeɣ mi ara yettbeddil ayagi deg yiwen wass, d asawen neɣ d akessar. Wid yesɛan yakan alɣu ad ḥerzen win-nsen.",
   "watchAlertAllDone": "{count, plural, =1{Yettwasbadu 1 n walɣu} other{Ttwasbadun {count} n walɣuten}}",
-  "portfolioExportRealized": "Sifeḍ irbaḥen yettwaḥeqqen (CSV)"
+  "portfolioExportRealized": "Sifeḍ irbaḥen yettwaḥeqqen (CSV)",
+  "eventsAddToCalendar": "Rnu ɣer uwitay (.ics)",
+  "portfolioAnnualReturn": "Afaris n useggas",
+  "portfolioPerYear": "{percent} / aseggas",
+  "portfolioAnnualReturnHint": "Afaris n useggas yettwaktalen s yidrimen (XIRR): yettak azal i wakud deg i d-teɣiḍ akked wakud deg i tzenzeḍ, ihi idrimen i d-ternuḍ ar zdat ur t-ssexsaren ara. Yettban mi ara iɛeddi useggas ma drus seg usaɣ-ik amezwaru; dividand ur yettwasiden ara."
 }

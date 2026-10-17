@@ -623,5 +623,9 @@
   "watchAlertAll": "મોટી દૈનિક વધઘટ પર ચેતવણી",
   "watchAlertAllHint": "આ યાદીના દરેક શેર માટે ભાવ ચેતવણી: એક દિવસમાં આટલી ઉપર કે નીચે વધઘટ થાય ત્યારે જાણ કરશે. જેના પર પહેલેથી ચેતવણી છે, તે એમ જ રહેશે.",
   "watchAlertAllDone": "{count, plural, =1{1 ચેતવણી સેટ કરી} other{{count} ચેતવણીઓ સેટ કરી}}",
-  "portfolioExportRealized": "પ્રાપ્ત નફો નિકાસ કરો (CSV)"
+  "portfolioExportRealized": "પ્રાપ્ત નફો નિકાસ કરો (CSV)",
+  "eventsAddToCalendar": "કૅલેન્ડરમાં ઉમેરો (.ics)",
+  "portfolioAnnualReturn": "વાર્ષિક રિટર્ન",
+  "portfolioPerYear": "{percent} / વર્ષ",
+  "portfolioAnnualReturnHint": "નાણાં-ભારિત વાર્ષિક રિટર્ન (XIRR): તમે ક્યારે ખરીદ્યું અને વેચ્યું તે ધ્યાનમાં લે છે, તેથી પછીથી ઉમેરેલા નાણાં તેને વિકૃત કરતા નથી. તમારી પહેલી ખરીદી ઓછામાં ઓછી એક વર્ષ જૂની થાય ત્યારે બતાવવામાં આવે છે; ડિવિડન્ડ શામેલ નથી."
 }

@@ -2305,4 +2305,19 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'ส่งออกกำไรที่รับรู้แล้ว (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'ผลตอบแทนต่อปี';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / ปี';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'ผลตอบแทนต่อปีแบบถ่วงน้ำหนักด้วยเงิน (XIRR): คำนึงถึงช่วงเวลาที่คุณซื้อและขาย เงินที่เพิ่มเข้ามาภายหลังจึงไม่ทำให้ตัวเลขผิดเพี้ยน จะแสดงเมื่อการซื้อครั้งแรกของคุณมีอายุอย่างน้อยหนึ่งปี ไม่รวมเงินปันผล';
+
+  @override
+  String get eventsAddToCalendar => 'เพิ่มในปฏิทิน (.ics)';
 }

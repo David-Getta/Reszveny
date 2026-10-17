@@ -2333,4 +2333,19 @@ class AppLocalizationsTt extends AppLocalizations {
   @override
   String get portfolioExportRealized =>
       'Гамәлгә ашырылган табышны экспортлау (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Еллык керемлелек';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / ел';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Акча агымнары буенча үлчәнгән еллык керемлелек (XIRR): кайчан сатып алуыгызны һәм сатуыгызны исәпкә ала, шуңа күрә соңрак өстәлгән акча аны бозмый. Беренче сатып алуыгызга кимендә бер ел тулгач күрсәтелә; дивидендлар кертелмәгән.';
+
+  @override
+  String get eventsAddToCalendar => 'Календарьга өстәү (.ics)';
 }

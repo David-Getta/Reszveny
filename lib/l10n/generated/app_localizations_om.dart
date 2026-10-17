@@ -2343,4 +2343,19 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Bu\'aa argame ergi (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Bu\'aa waggaa';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / waggaa';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Bu\'aa waggaa maallaqaan madaalame (XIRR): yeroo itti bitte fi gurgurte ni ilaala, kanaaf maallaqni booda dabalame hin jallisu. Erga bittaan kee jalqabaa yoo xiqqaate waggaa tokko guutee booda ni mul\'ata; qoodni bu\'aa hin dabalamne.';
+
+  @override
+  String get eventsAddToCalendar => 'Kaalaandariitti dabali (.ics)';
 }

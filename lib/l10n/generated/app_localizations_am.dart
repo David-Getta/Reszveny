@@ -2302,4 +2302,19 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'የተገኘ ትርፍ ላክ (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'ዓመታዊ ተመላሽ';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / ዓመት';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'በገንዘብ የተመዘነ ዓመታዊ ተመላሽ (XIRR)፦ መቼ እንደገዙና እንደሸጡ ግምት ውስጥ ያስገባል፣ ስለዚህ በኋላ የተጨመረ ገንዘብ አያዛባውም። የመጀመሪያ ግዢዎ ቢያንስ አንድ ዓመት ሲሞላው ይታያል፤ የትርፍ ድርሻ አልተካተተም።';
+
+  @override
+  String get eventsAddToCalendar => 'ወደ ቀን መቁጠሪያ አክል (.ics)';
 }

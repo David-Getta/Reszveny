@@ -2349,4 +2349,19 @@ class AppLocalizationsHil extends AppLocalizations {
   @override
   String get portfolioExportRealized =>
       'I-export ang na-realize nga ganansya (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Tinuig nga kita';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / tuig';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Tinuig nga kita nga gintimbang sa kuwarta (XIRR): ginakonsiderar sini kon san-o ka nagbakal kag nagbaligya, gani ang kuwarta nga gindugang sa ulihi indi makatiko sini. Ginapakita ini kon ang imo una nga ginbakal may isa na ka tuig man lang; wala nalakip ang mga dibidendo.';
+
+  @override
+  String get eventsAddToCalendar => 'Idugang sa kalendaryo (.ics)';
 }

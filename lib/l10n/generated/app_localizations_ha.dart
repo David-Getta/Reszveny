@@ -2340,4 +2340,19 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Fitar da ribar da aka samu (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Ribar shekara';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / shekara';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Ribar shekara da aka auna da kuɗi (XIRR): yana la\'akari da lokacin da kuka saya da kuka sayar, don haka kuɗin da aka ƙara daga baya ba sa karkatar da shi. Ana nuna shi da zarar sayayyarku ta farko ta kai aƙalla shekara ɗaya; ba a haɗa rabon riba ba.';
+
+  @override
+  String get eventsAddToCalendar => 'Ƙara zuwa kalanda (.ics)';
 }

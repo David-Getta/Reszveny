@@ -2326,4 +2326,19 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'حاصل ٿيل منافعو ايڪسپورٽ ڪريو (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'سالياني رٽرن';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / سال';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'پئسي جي وزن واري سالياني رٽرن (XIRR): اهو ڌيان ۾ رکي ٿو ته توهان ڪڏهن خريد ۽ وڪرو ڪيو، تنهنڪري بعد ۾ شامل ڪيل پئسا ان کي نه بگاڙيندا. تڏهن ڏيکاريو ويندو جڏهن توهان جي پهرين خريداري گهٽ ۾ گهٽ هڪ سال پراڻي ٿئي؛ ڊيويڊنڊ شامل ناهن.';
+
+  @override
+  String get eventsAddToCalendar => 'ڪئلينڊر ۾ شامل ڪريو (.ics)';
 }

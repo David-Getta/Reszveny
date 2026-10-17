@@ -623,5 +623,9 @@
   "watchAlertAll": "單日大幅波動提醒",
   "watchAlertAllHint": "為此清單中的每隻股票設定價格提醒：單日上升或下跌達此幅度時通知你。已設有此類提醒的股票會保留原有提醒。",
   "watchAlertAllDone": "{count, plural, =1{已設定 1 個提醒} other{已設定 {count} 個提醒}}",
-  "portfolioExportRealized": "匯出已實現盈虧 (CSV)"
+  "portfolioExportRealized": "匯出已實現盈虧 (CSV)",
+  "eventsAddToCalendar": "加入日曆 (.ics)",
+  "portfolioAnnualReturn": "年化回報率",
+  "portfolioPerYear": "{percent} / 年",
+  "portfolioAnnualReturnHint": "資金加權年化回報率（XIRR）：會考慮你買入及賣出的時間，因此其後追加的資金不會造成偏差。首次買入滿一年後顯示；不包括股息。"
 }

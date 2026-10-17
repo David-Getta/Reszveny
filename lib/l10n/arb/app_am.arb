@@ -623,5 +623,9 @@
   "watchAlertAll": "ለትልቅ የዕለት ለውጥ ማንቂያ",
   "watchAlertAllHint": "በዚህ ዝርዝር ውስጥ ላለ እያንዳንዱ አክሲዮን የዋጋ ማንቂያ፦ በአንድ ቀን ይህን ያህል ወደ ላይም ሆነ ወደ ታች ሲለዋወጥ ያሳውቃል። አስቀድሞ ማንቂያ ያላቸው አክሲዮኖች የነበራቸውን ይይዛሉ።",
   "watchAlertAllDone": "{count, plural, =1{1 ማንቂያ ተቀናብሯል} other{{count} ማንቂያዎች ተቀናብረዋል}}",
-  "portfolioExportRealized": "የተገኘ ትርፍ ላክ (CSV)"
+  "portfolioExportRealized": "የተገኘ ትርፍ ላክ (CSV)",
+  "eventsAddToCalendar": "ወደ ቀን መቁጠሪያ አክል (.ics)",
+  "portfolioAnnualReturn": "ዓመታዊ ተመላሽ",
+  "portfolioPerYear": "{percent} / ዓመት",
+  "portfolioAnnualReturnHint": "በገንዘብ የተመዘነ ዓመታዊ ተመላሽ (XIRR)፦ መቼ እንደገዙና እንደሸጡ ግምት ውስጥ ያስገባል፣ ስለዚህ በኋላ የተጨመረ ገንዘብ አያዛባውም። የመጀመሪያ ግዢዎ ቢያንስ አንድ ዓመት ሲሞላው ይታያል፤ የትርፍ ድርሻ አልተካተተም።"
 }

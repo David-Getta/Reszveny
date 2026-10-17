@@ -2335,4 +2335,19 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'რეალიზებული მოგების ექსპორტი (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'წლიური შემოსავლიანობა';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / წელი';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'ფულით შეწონილი წლიური შემოსავლიანობა (XIRR): ითვალისწინებს, როდის იყიდეთ და გაყიდეთ, ამიტომ მოგვიანებით დამატებული თანხა მას არ ამახინჯებს. ჩანს, როცა თქვენს პირველ შენაძენს მინიმუმ ერთი წელი შეუსრულდება; დივიდენდები არ შედის.';
+
+  @override
+  String get eventsAddToCalendar => 'კალენდარში დამატება (.ics)';
 }

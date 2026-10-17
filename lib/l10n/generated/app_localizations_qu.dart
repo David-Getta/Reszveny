@@ -2348,4 +2348,19 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Chaskisqa mirayta hurquy (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Watapaq rendimiento';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / wata';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Qullqiwan pesasqa watapaq rendimiento (XIRR): hayk\'ap rantisqaykita, rantikusqaykitapas qhawan, chaymi qhipaman yapasqa qullqiqa mana pantachinchu. Rikuchikun ñawpaq rantisqayki huk watayuq kaptin; dividendokunaqa manam yapasqachu.';
+
+  @override
+  String get eventsAddToCalendar => 'Kalendariuman yapay (.ics)';
 }

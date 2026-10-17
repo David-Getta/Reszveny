@@ -623,5 +623,9 @@
   "watchAlertAll": "Faɗakarwa kan manyan motsin yini",
   "watchAlertAllHint": "Faɗakarwar farashi ga kowane hannun jari a wannan jeri: za ta yi ƙara idan ya motsa haka a rana ɗaya, sama ko ƙasa. Waɗanda suke da ita tun tuni za su riƙe tasu.",
   "watchAlertAllDone": "{count, plural, =1{An saita faɗakarwa 1} other{An saita faɗakarwa {count}}}",
-  "portfolioExportRealized": "Fitar da ribar da aka samu (CSV)"
+  "portfolioExportRealized": "Fitar da ribar da aka samu (CSV)",
+  "eventsAddToCalendar": "Ƙara zuwa kalanda (.ics)",
+  "portfolioAnnualReturn": "Ribar shekara",
+  "portfolioPerYear": "{percent} / shekara",
+  "portfolioAnnualReturnHint": "Ribar shekara da aka auna da kuɗi (XIRR): yana la'akari da lokacin da kuka saya da kuka sayar, don haka kuɗin da aka ƙara daga baya ba sa karkatar da shi. Ana nuna shi da zarar sayayyarku ta farko ta kai aƙalla shekara ɗaya; ba a haɗa rabon riba ba."
 }

@@ -623,5 +623,9 @@
   "watchAlertAll": "Hişyarî ji bo guherînên mezin ên rojane",
   "watchAlertAllHint": "Hişyariya bihayê ji bo her pişkeke vê lîsteyê: dema ku di rojekê de ev qas bilind an nizm bibe, agahdar dike. Pişkên ku berê yek wan heye, ya xwe diparêzin.",
   "watchAlertAllDone": "{count, plural, =1{1 hişyarî hat danîn} other{{count} hişyarî hatin danîn}}",
-  "portfolioExportRealized": "Qezenca bidestxistî derxe (CSV)"
+  "portfolioExportRealized": "Qezenca bidestxistî derxe (CSV)",
+  "eventsAddToCalendar": "Li salnameyê zêde bike (.ics)",
+  "portfolioAnnualReturn": "Qezenca salane",
+  "portfolioPerYear": "{percent} / sal",
+  "portfolioAnnualReturnHint": "Qezenca salane ya li gorî pereyan pîvandî (XIRR): dema ku te kirî û firotî dihesibîne, ji ber vê yekê pereyên ku paşê hatine zêdekirin wê naguherînin. Gava kirîna te ya yekem herî kêm salek kevn be tê nîşandan; dîvîdend tê de nînin."
 }

@@ -2341,4 +2341,19 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'U dhoofi faa\'iidada la helay (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Faa\'iidada sannadlaha';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / sannad';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Faa\'iidada sannadlaha ah ee lacagta lagu miisaamay (XIRR): waxay tixgelisaa goorta aad iibsatay iyo goorta aad iibisay, sidaas darteed lacagta dambe lagu daray ma qalloociso. Waxaa la muujiyaa marka iibsashadaada ugu horreysa ay jirto ugu yaraan hal sano; qaybaha faa\'iidada kuma jiraan.';
+
+  @override
+  String get eventsAddToCalendar => 'Ku dar kalandarka (.ics)';
 }

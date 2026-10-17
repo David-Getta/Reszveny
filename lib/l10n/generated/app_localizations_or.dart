@@ -2332,4 +2332,19 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'ପ୍ରାପ୍ତ ଲାଭ ରପ୍ତାନି କରନ୍ତୁ (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'ବାର୍ଷିକ ରିଟର୍ନ';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / ବର୍ଷ';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'ଅର୍ଥ-ଭାରିତ ବାର୍ଷିକ ରିଟର୍ନ (XIRR): ଆପଣ କେବେ କିଣିଲେ ଓ ବିକ୍ରି କଲେ ତାହା ବିଚାରକୁ ନିଏ, ତେଣୁ ପରେ ଯୋଡ଼ାଯାଇଥିବା ଟଙ୍କା ଏହାକୁ ବିକୃତ କରେ ନାହିଁ। ଆପଣଙ୍କ ପ୍ରଥମ କ୍ରୟ ଅତି କମରେ ଏକ ବର୍ଷ ପୁରୁଣା ହେଲେ ଦେଖାଯାଏ; ଲାଭାଂଶ ଅନ୍ତର୍ଭୁକ୍ତ ନୁହେଁ।';
+
+  @override
+  String get eventsAddToCalendar => 'କ୍ୟାଲେଣ୍ଡରରେ ଯୋଡ଼ନ୍ତୁ (.ics)';
 }

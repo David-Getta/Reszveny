@@ -2340,4 +2340,19 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Exportar ganancias realizadas (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Rentabilidad anual';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / año';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Rentabilidad anual ponderada por capital (XIRR): tiene en cuenta cuándo compraste y vendiste, así que el dinero añadido más tarde no la distorsiona. Se muestra cuando tu primera compra tiene al menos un año; no incluye dividendos.';
+
+  @override
+  String get eventsAddToCalendar => 'Añadir al calendario (.ics)';
 }

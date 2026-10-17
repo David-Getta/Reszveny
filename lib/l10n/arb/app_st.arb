@@ -623,5 +623,9 @@
   "watchAlertAll": "Temoso ya diphetoho tse kgolo tsa letsatsi",
   "watchAlertAllHint": "Temoso ya theko bakeng sa share e nngwe le e nngwe lenaneng lena: e tla lla ha e fetoha hakana ka letsatsi le le leng, hodimo kapa tlase. Tseo di seng di ena le yona di tla boloka ya tsona.",
   "watchAlertAllDone": "{count, plural, =1{Ho beilwe temoso e le nngwe} other{Ho beilwe ditemoso tse {count}}}",
-  "portfolioExportRealized": "Romela ka ntle phaello e fumanweng (CSV)"
+  "portfolioExportRealized": "Romela ka ntle phaello e fumanweng (CSV)",
+  "eventsAddToCalendar": "Kenya khalendareng (.ics)",
+  "portfolioAnnualReturn": "Poelo ya selemo",
+  "portfolioPerYear": "{percent} / selemo",
+  "portfolioAnnualReturnHint": "Poelo ya selemo e lekantsweng ka tjhelete (XIRR): e ela hloko hore o rekile le ho rekisa neng, kahoo tjhelete e kentsweng hamorao ha e e sothe. E bontshwa ha theko ya hao ya pele e se e le selemo bonyane; dividende ha e a kenyeletswa."
 }

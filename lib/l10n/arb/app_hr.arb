@@ -623,5 +623,9 @@
   "watchAlertAll": "Upozorenje na velike dnevne promjene",
   "watchAlertAllHint": "Cjenovno upozorenje za svaku dionicu na ovom popisu koje se oglasi kada se ona u jednom danu pomakne ovoliko, gore ili dolje. Dionice koje ga već imaju zadržavaju svoje.",
   "watchAlertAllDone": "{count, plural, one{Postavljeno je {count} upozorenje} few{Postavljena su {count} upozorenja} other{Postavljeno je {count} upozorenja}}",
-  "portfolioExportRealized": "Izvezi ostvarenu dobit (CSV)"
+  "portfolioExportRealized": "Izvezi ostvarenu dobit (CSV)",
+  "eventsAddToCalendar": "Dodaj u kalendar (.ics)",
+  "portfolioAnnualReturn": "Godišnji prinos",
+  "portfolioPerYear": "{percent} / god.",
+  "portfolioAnnualReturnHint": "Novčano ponderirani godišnji prinos (XIRR): uzima u obzir kada ste kupovali i prodavali, pa ga kasnije dodani novac ne iskrivljuje. Prikazuje se kad vaša prva kupnja bude stara barem godinu dana; dividende nisu uključene."
 }

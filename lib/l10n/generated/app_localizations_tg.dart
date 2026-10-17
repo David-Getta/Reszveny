@@ -2336,4 +2336,19 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Содироти фоидаи амалишуда (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Даромаднокии солона';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / сол';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Даромаднокии солонаи вазншуда бо ҷараёни пул (XIRR): ба назар мегирад, ки шумо кай харидед ва фурӯхтед, бинобар ин пули баъдтар иловашуда онро таҳриф намекунад. Вақте нишон дода мешавад, ки аз хариди аввалини шумо ақаллан як сол гузашта бошад; дивидендҳо дохил нестанд.';
+
+  @override
+  String get eventsAddToCalendar => 'Илова ба тақвим (.ics)';
 }

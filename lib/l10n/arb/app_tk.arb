@@ -623,5 +623,9 @@
   "watchAlertAll": "Uly gündelik üýtgeýişler barada duýduryş",
   "watchAlertAllHint": "Bu sanawdaky her bir paýnama üçin baha duýduryşy: bir günde şunça ýokary ýa-da aşak üýtgese, habar berer. Eýýäm duýduryşy bolan paýnamalar özüninkini saklar.",
   "watchAlertAllDone": "{count, plural, =1{1 duýduryş goýuldy} other{{count} duýduryş goýuldy}}",
-  "portfolioExportRealized": "Durmuşa geçirilen girdejini eksport et (CSV)"
+  "portfolioExportRealized": "Durmuşa geçirilen girdejini eksport et (CSV)",
+  "eventsAddToCalendar": "Senenama goş (.ics)",
+  "portfolioAnnualReturn": "Ýyllyk girdejililik",
+  "portfolioPerYear": "{percent} / ýyl",
+  "portfolioAnnualReturnHint": "Pul akymlary boýunça agramlandyrylan ýyllyk girdejililik (XIRR): haçan satyn alandygyňyzy we satandygyňyzy hasaba alýar, şonuň üçin soňra goşulan pul ony ýoýmaýar. Ilkinji satyn alşyňyza azyndan bir ýyl dolanda görkezilýär; diwidendler goşulmaýar."
 }

@@ -623,5 +623,9 @@
   "watchAlertAll": "Tlhagiso ya diphetogo tse dikgolo tsa letsatsi",
   "watchAlertAllHint": "Tlhagiso ya tlhwatlhwa mo share nngwe le nngwe mo lenaaneng leno: e tla lela fa e fetoga go le kalo mo letsatsing le le lengwe, kwa godimo kgotsa kwa tlase. Tse di setseng di na le yone di tla tshola ya tsone.",
   "watchAlertAllDone": "{count, plural, =1{Go beilwe tlhagiso e le nngwe} other{Go beilwe ditlhagiso di le {count}}}",
-  "portfolioExportRealized": "Romela kwa ntle poelo e e boneweng (CSV)"
+  "portfolioExportRealized": "Romela kwa ntle poelo e e boneweng (CSV)",
+  "eventsAddToCalendar": "Tsenya mo khalendareng (.ics)",
+  "portfolioAnnualReturn": "Poelo ya ngwaga",
+  "portfolioPerYear": "{percent} / ngwaga",
+  "portfolioAnnualReturnHint": "Poelo ya ngwaga e e lekanngwang ka madi (XIRR): e tsaya tsia gore o rekile le go rekisa leng, ka jalo madi a a okeditsweng moragonyana ga a e sokamise. E bontshiwa fa theko ya gago ya ntlha e setse e na le ngwaga bonnye; dividende ga e a akarediwa."
 }

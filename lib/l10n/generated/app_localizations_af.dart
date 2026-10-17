@@ -2338,4 +2338,19 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Voer gerealiseerde wins uit (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Jaarlikse opbrengs';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / jaar';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Geldgeweegde jaarlikse opbrengs (XIRR): dit neem in ag wanneer jy gekoop en verkoop het, sodat geld wat later bygevoeg is dit nie skeeftrek nie. Word gewys sodra jou eerste aankoop minstens \'n jaar oud is; dividende is nie ingesluit nie.';
+
+  @override
+  String get eventsAddToCalendar => 'Voeg by kalender (.ics)';
 }

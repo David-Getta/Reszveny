@@ -2333,4 +2333,19 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'प्राप्त नाफा निर्यात गर्नुहोस् (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'वार्षिक प्रतिफल';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / वर्ष';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'रकम-भारित वार्षिक प्रतिफल (XIRR): तपाईंले कहिले किन्नुभयो र बेच्नुभयो भन्ने कुरा ध्यानमा राख्छ, त्यसैले पछि थपिएको रकमले यसलाई विकृत गर्दैन। तपाईंको पहिलो खरिद कम्तीमा एक वर्ष पुरानो भएपछि देखाइन्छ; लाभांश समावेश छैन।';
+
+  @override
+  String get eventsAddToCalendar => 'पात्रोमा थप्नुहोस् (.ics)';
 }

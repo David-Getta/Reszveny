@@ -623,5 +623,9 @@
   "watchAlertAll": "Lukebisu sambu na nsoba ya nene ya kilumbu",
   "watchAlertAllHint": "Lukebisu ya ntalu sambu na konso aksio na lisiti yai: yo ta bula ntangu yo ke soba mutindu yai na kilumbu kimosi, na zulu to na nsi. Yina ke ti lukebisu dezia ta bumba ya yo.",
   "watchAlertAllDone": "{count, plural, =1{Lukebisu 1 me tulama} other{Bukebisu {count} me tulama}}",
-  "portfolioExportRealized": "Basisa mbote ya bo me zwa (CSV)"
+  "portfolioExportRealized": "Basisa mbote ya bo me zwa (CSV)",
+  "eventsAddToCalendar": "Yika mu kalandrie (.ics)",
+  "portfolioAnnualReturn": "Mbakulu ya mvula",
+  "portfolioPerYear": "{percent} / mvula",
+  "portfolioAnnualReturnHint": "Mbakulu ya mvula yina me tadila na mbongo (XIRR): yo ke tala ntangu nge sumbaka mpi nge tekaka, yo yina mbongo yina nge kuyika na nima ke bebisa yo ve. Bo ke monisa yo kana kusumba na nge ya ntete me lunga mvula mosi to mingi; badividende kele ve na kati."
 }

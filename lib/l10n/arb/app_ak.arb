@@ -623,5 +623,9 @@
   "watchAlertAll": "Kɔkɔbɔ wɔ da koro nsakrae kɛse ho",
   "watchAlertAllHint": "Boɔ ho kɔkɔbɔ ma kyɛfa biara a ɛwɔ nhyehyɛe yi mu: ɛbɛbɔ wo kɔkɔ sɛ ɛsesa saa dodow yi da koro mu, ɛkɔ soro anaa fam. Deɛ ɛwɔ bi dada no bɛkora ne deɛ.",
   "watchAlertAllDone": "{count, plural, =1{Wɔde kɔkɔbɔ 1 asi hɔ} other{Wɔde kɔkɔbɔ {count} asi hɔ}}",
-  "portfolioExportRealized": "Yi mfaso a woanya kɔ (CSV)"
+  "portfolioExportRealized": "Yi mfaso a woanya kɔ (CSV)",
+  "eventsAddToCalendar": "Fa ka kalenda ho (.ics)",
+  "portfolioAnnualReturn": "Afe mfaso",
+  "portfolioPerYear": "{percent} / afe",
+  "portfolioAnnualReturnHint": "Mfaso a ɛgyina sika so afe biara (XIRR): ɛhwɛ bere a wotɔe ne bere a wotɔn, enti sika a wode ka ho akyiri no nsɛe no. Yɛkyerɛ no bere a w'adetɔ a edi kan no adi afe koro anaa nea ɛboro saa; mfaso kyɛ nka ho."
 }

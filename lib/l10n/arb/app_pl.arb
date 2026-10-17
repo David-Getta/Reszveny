@@ -623,5 +623,9 @@
   "watchAlertAll": "Alert przy dużych ruchach dziennych",
   "watchAlertAllHint": "Alert cenowy dla każdej spółki z tej listy, który zadziała, gdy w ciągu dnia zmieni się ona o tyle w górę lub w dół. Spółki, które już mają taki alert, zachowują swój.",
   "watchAlertAllDone": "{count, plural, one{Ustawiono {count} alert} few{Ustawiono {count} alerty} many{Ustawiono {count} alertów} other{Ustawiono {count} alertu}}",
-  "portfolioExportRealized": "Eksportuj zrealizowane zyski (CSV)"
+  "portfolioExportRealized": "Eksportuj zrealizowane zyski (CSV)",
+  "eventsAddToCalendar": "Dodaj do kalendarza (.ics)",
+  "portfolioAnnualReturn": "Roczna stopa zwrotu",
+  "portfolioPerYear": "{percent} / rok",
+  "portfolioAnnualReturnHint": "Roczna stopa zwrotu ważona kapitałem (XIRR): uwzględnia terminy zakupów i sprzedaży, więc pieniądze dodane później jej nie zniekształcają. Wyświetlana, gdy twój pierwszy zakup ma co najmniej rok; dywidendy nie są uwzględnione."
 }

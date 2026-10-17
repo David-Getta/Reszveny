@@ -623,5 +623,9 @@
   "watchAlertAll": "单日大幅波动提醒",
   "watchAlertAllHint": "为此列表中的每只股票设置价格提醒：单日上涨或下跌达到该幅度时提醒你。已设有此类提醒的股票将保留原有提醒。",
   "watchAlertAllDone": "{count, plural, =1{已设置 1 个提醒} other{已设置 {count} 个提醒}}",
-  "portfolioExportRealized": "导出已实现盈亏 (CSV)"
+  "portfolioExportRealized": "导出已实现盈亏 (CSV)",
+  "eventsAddToCalendar": "添加到日历 (.ics)",
+  "portfolioAnnualReturn": "年化收益率",
+  "portfolioPerYear": "{percent} / 年",
+  "portfolioAnnualReturnHint": "资金加权年化收益率（XIRR）：会考虑你买入和卖出的时间，因此后来追加的资金不会造成偏差。首次买入满一年后显示；不含股息。"
 }

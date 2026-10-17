@@ -2340,4 +2340,19 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Emondo viru jehupyty (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Rendimiento arýpe';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / ary';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Rendimiento arýpe oñepesáva viru rehe (XIRR): ohecha araka\'épa rejogua ha reñemu, upévare viru remoĩvéva upéi ndombyaíri chupe. Ojehechauka ne jejogua peteĩha ohasa rire ary peteĩ, sa\'ive ramo; dividendo ndoikéi.';
+
+  @override
+  String get eventsAddToCalendar => 'Embojuaju arapapahápe (.ics)';
 }

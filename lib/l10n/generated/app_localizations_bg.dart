@@ -2336,4 +2336,19 @@ class AppLocalizationsBg extends AppLocalizations {
   @override
   String get portfolioExportRealized =>
       'Експортиране на реализираната печалба (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Годишна доходност';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / год.';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Претеглена спрямо паричните потоци годишна доходност (XIRR): отчита кога сте купували и продавали, така че добавените по-късно пари не я изкривяват. Показва се, когато първата ви покупка е поне на една година; дивидентите не са включени.';
+
+  @override
+  String get eventsAddToCalendar => 'Добави към календара (.ics)';
 }

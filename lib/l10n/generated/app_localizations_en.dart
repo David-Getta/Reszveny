@@ -2333,4 +2333,19 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Export realized gains (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Annual return';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / year';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Money-weighted annual return (XIRR): it takes into account when you bought and sold, so money added later doesn\'t distort it. Shown once your first purchase is at least a year old; dividends are not included.';
+
+  @override
+  String get eventsAddToCalendar => 'Add to calendar (.ics)';
 }

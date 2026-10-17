@@ -623,5 +623,9 @@
   "watchAlertAll": "Katta kunlik oʻzgarishlar haqida ogohlantirish",
   "watchAlertAllHint": "Bu roʻyxatdagi har bir aksiya uchun narx ogohlantirishi: bir kunda shuncha yuqoriga yoki pastga oʻzgarsa, xabar beradi. Allaqachon ogohlantirishi bor aksiyalar oʻzinikini saqlaydi.",
   "watchAlertAllDone": "{count, plural, =1{1 ta ogohlantirish oʻrnatildi} other{{count} ta ogohlantirish oʻrnatildi}}",
-  "portfolioExportRealized": "Amalga oshgan foydani eksport qilish (CSV)"
+  "portfolioExportRealized": "Amalga oshgan foydani eksport qilish (CSV)",
+  "eventsAddToCalendar": "Taqvimga qoʻshish (.ics)",
+  "portfolioAnnualReturn": "Yillik daromadlilik",
+  "portfolioPerYear": "{percent} / yil",
+  "portfolioAnnualReturnHint": "Pul oqimlari boʻyicha tortilgan yillik daromadlilik (XIRR): qachon sotib olganingiz va sotganingizni hisobga oladi, shuning uchun keyinroq qoʻshilgan pul uni buzmaydi. Birinchi xaridingizga kamida bir yil toʻlganda koʻrsatiladi; dividendlar kiritilmagan."
 }

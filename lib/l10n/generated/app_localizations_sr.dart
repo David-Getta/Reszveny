@@ -2379,4 +2379,19 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Извези остварену добит (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Годишњи принос';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / год.';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Новчано пондерисани годишњи принос (XIRR): узима у обзир када сте куповали и продавали, па га новац додат касније не искривљује. Приказује се када ваша прва куповина буде стара најмање годину дана; дивиденде нису укључене.';
+
+  @override
+  String get eventsAddToCalendar => 'Додај у календар (.ics)';
 }

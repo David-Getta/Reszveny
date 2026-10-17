@@ -623,5 +623,9 @@
   "watchAlertAll": "Riasztás nagy napi mozgásra",
   "watchAlertAllHint": "Árfolyam-riasztás a lista minden részvényére: akkor szól, ha egy nap alatt ennyit mozdul, felfelé vagy lefelé. Ahol már van ilyen, az marad.",
   "watchAlertAllDone": "{count, plural, =1{1 riasztás beállítva} other{{count} riasztás beállítva}}",
-  "portfolioExportRealized": "Realizált nyereség exportja (CSV)"
+  "portfolioExportRealized": "Realizált nyereség exportja (CSV)",
+  "portfolioAnnualReturn": "Éves hozam",
+  "portfolioPerYear": "{percent} / év",
+  "portfolioAnnualReturnHint": "Pénzsúlyozott éves hozam (XIRR): számít, mikor vettél és adtál el, így a később betett pénz nem torzítja. Akkor látszik, ha az első vételed legalább egyéves; az osztalék nincs benne.",
+  "eventsAddToCalendar": "Hozzáadás a naptárhoz (.ics)"
 }

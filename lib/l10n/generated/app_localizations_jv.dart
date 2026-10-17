@@ -2337,4 +2337,19 @@ class AppLocalizationsJv extends AppLocalizations {
   @override
   String get portfolioExportRealized =>
       'Ekspor bathi sing wis direalisasi (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Imbal hasil taunan';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / taun';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Imbal hasil taunan sing ditimbang miturut dhuwit (XIRR): ngetung kapan sampeyan tuku lan adol, dadi dhuwit sing ditambahake mengko ora ngrusak itungane. Ditampilake yen tukon pisanan sampeyan wis paling ora setaun; dividen ora kalebu.';
+
+  @override
+  String get eventsAddToCalendar => 'Tambahake menyang kalender (.ics)';
 }

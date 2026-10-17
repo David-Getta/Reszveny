@@ -2342,4 +2342,19 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Արտահանել իրացված շահույթը (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Տարեկան եկամտաբերություն';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / տարի';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Դրամով կշռված տարեկան եկամտաբերություն (XIRR)։ Այն հաշվի է առնում, թե երբ եք գնել և վաճառել, ուստի ավելի ուշ ավելացված գումարը չի աղավաղում այն։ Ցուցադրվում է, երբ ձեր առաջին գնումից անցել է առնվազն մեկ տարի, իսկ շահաբաժինները ներառված չեն։';
+
+  @override
+  String get eventsAddToCalendar => 'Ավելացնել օրացույցում (.ics)';
 }

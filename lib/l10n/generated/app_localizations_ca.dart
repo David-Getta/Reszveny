@@ -2344,4 +2344,19 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Exporta els guanys realitzats (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Rendibilitat anual';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / any';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Rendibilitat anual ponderada pels diners (XIRR): té en compte quan has comprat i venut, de manera que els diners afegits més tard no la distorsionen. Es mostra quan la teva primera compra té almenys un any; no inclou els dividends.';
+
+  @override
+  String get eventsAddToCalendar => 'Afegir al calendari (.ics)';
 }

@@ -2330,4 +2330,19 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Bupụ uru enwetara (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Uru kwa afọ';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / afọ';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Uru kwa afọ dabere n\'ego (XIRR): ọ na-atụle mgbe ị zụrụ na mgbe ị rere, ya mere ego ị tinyere mgbe e mesịrị anaghị emebi ya. A na-egosi ya ozugbo ihe mbụ ị zụrụ gbara opekata mpe otu afọ; dividend esoghị na ya.';
+
+  @override
+  String get eventsAddToCalendar => 'Tinye na kalenda (.ics)';
 }

@@ -623,5 +623,9 @@
   "watchAlertAll": "د لویو ورځنیو بدلونونو خبرتیا",
   "watchAlertAllHint": "د دې لېست هرې ونډې لپاره د بیې خبرتیا: کله چې په یوه ورځ کې دومره پورته یا ښکته شي، خبر درکوي. هغه ونډې چې دمخه یې لري، خپله ساتي.",
   "watchAlertAllDone": "{count, plural, =1{1 خبرتیا وټاکل شوه} other{{count} خبرتیاوې وټاکل شوې}}",
-  "portfolioExportRealized": "ترلاسه شوې ګټه صادرول (CSV)"
+  "portfolioExportRealized": "ترلاسه شوې ګټه صادرول (CSV)",
+  "eventsAddToCalendar": "جنتري ته ورزیات کړئ (.ics)",
+  "portfolioAnnualReturn": "کلنۍ ګټه",
+  "portfolioPerYear": "{percent} / کال",
+  "portfolioAnnualReturnHint": "د پیسو له مخې وزن شوې کلنۍ ګټه (XIRR): دا په پام کې نیسي چې تاسو کله پېرل او پلورل کړي، نو وروسته اضافه شوې پیسې یې نه اړوي. هغه وخت ښودل کېږي چې ستاسو لومړی پېرود لږ تر لږه یو کال زوړ شي؛ د ونډې ګټه پکې شامله نه ده."
 }

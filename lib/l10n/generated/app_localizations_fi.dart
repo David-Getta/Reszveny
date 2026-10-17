@@ -2336,4 +2336,19 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Vie toteutuneet voitot (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Vuosituotto';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / vuosi';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Rahapainotteinen vuosituotto (XIRR): ottaa huomioon, milloin ostit ja myit, joten myöhemmin lisätty raha ei vääristä sitä. Näytetään, kun ensimmäinen ostosi on vähintään vuoden vanha; osinkoja ei ole mukana.';
+
+  @override
+  String get eventsAddToCalendar => 'Lisää kalenteriin (.ics)';
 }

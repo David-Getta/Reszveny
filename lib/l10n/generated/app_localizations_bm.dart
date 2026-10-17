@@ -2332,4 +2332,19 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Tɔnɔ sɔrɔlenw bɔ (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'San o san tɔnɔ';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / san';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Tɔnɔ san o san min sumana ni wari ye (XIRR): a bɛ i ka sanni ni i ka feereli waati jate, o la wari min farala a kan kɔfɛ, o tɛ a tiɲɛ. A bɛ jira ni i ka sanni fɔlɔ sera san kelen ma walima ka tɛmɛ; tɔnɔ tilali tɛ a la.';
+
+  @override
+  String get eventsAddToCalendar => 'Fara kalandiriye kan (.ics)';
 }

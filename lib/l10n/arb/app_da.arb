@@ -623,5 +623,9 @@
   "watchAlertAll": "Alarm ved store daglige udsving",
   "watchAlertAllHint": "En kursalarm for hver aktie på denne liste, der går i gang, når den bevæger sig så meget på en dag, op eller ned. Aktier, der allerede har en, beholder deres.",
   "watchAlertAllDone": "{count, plural, =1{1 alarm oprettet} other{{count} alarmer oprettet}}",
-  "portfolioExportRealized": "Eksportér realiserede gevinster (CSV)"
+  "portfolioExportRealized": "Eksportér realiserede gevinster (CSV)",
+  "eventsAddToCalendar": "Føj til kalender (.ics)",
+  "portfolioAnnualReturn": "Årligt afkast",
+  "portfolioPerYear": "{percent} / år",
+  "portfolioAnnualReturnHint": "Pengevægtet årligt afkast (XIRR): tager højde for, hvornår du købte og solgte, så penge, der er tilføjet senere, ikke forvrider det. Vises, når dit første køb er mindst et år gammelt; udbytte er ikke medregnet."
 }

@@ -213,6 +213,19 @@ class _PortfolioBody extends StatelessWidget {
                               color: gainColor(p, s.gain),
                             ),
                             _Stat(label: l10n.portfolioInvested, value: fmt.money(s.cost, ccy)),
+                            if (s.annualReturn case final r?)
+                              Tooltip(
+                                message: l10n.portfolioAnnualReturnHint,
+                                triggerMode: TooltipTriggerMode.tap,
+                                showDuration: const Duration(seconds: 6),
+                                child: _Stat(
+                                  key: const ValueKey('portfolio-annual-return'),
+                                  label: l10n.portfolioAnnualReturn,
+                                  value: l10n.portfolioPerYear(fmt.percent(r * 100, withSign: true)),
+                                  color: gainColor(p, r),
+                                  info: true,
+                                ),
+                              ),
                             if (s.realized != 0 || s.closed.isNotEmpty)
                               _Stat(
                                 key: const ValueKey('portfolio-realized'),
@@ -350,12 +363,15 @@ class _PortfolioBody extends StatelessWidget {
 }
 
 class _Stat extends StatelessWidget {
-  const _Stat({super.key, required this.label, required this.value, this.sub, this.color});
+  const _Stat({super.key, required this.label, required this.value, this.sub, this.color, this.info = false});
 
   final String label;
   final String value;
   final String? sub;
   final Color? color;
+
+  /// Kis „i” ikon a címke mellett: koppintásra magyarázat jelenik meg.
+  final bool info;
 
   @override
   Widget build(BuildContext context) {
@@ -365,7 +381,13 @@ class _Stat extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,
       children: [
-        Text(label, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+        Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Flexible(child: Text(label, style: theme.textTheme.bodySmall?.copyWith(color: p.muted))),
+            if (info) ...[const SizedBox(width: 4), Icon(Icons.info_outline_rounded, size: 14, color: p.muted)],
+          ],
+        ),
         const SizedBox(height: 2),
         Text(
           value,

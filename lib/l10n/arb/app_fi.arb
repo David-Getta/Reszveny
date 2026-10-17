@@ -623,5 +623,9 @@
   "watchAlertAll": "Hälytys suurista päivämuutoksista",
   "watchAlertAllHint": "Hintahälytys jokaiselle tämän listan osakkeelle: se laukeaa, kun osake liikkuu päivässä näin paljon ylös tai alas. Osakkeet, joilla on jo sellainen, pitävät omansa.",
   "watchAlertAllDone": "{count, plural, =1{1 hälytys asetettu} other{{count} hälytystä asetettu}}",
-  "portfolioExportRealized": "Vie toteutuneet voitot (CSV)"
+  "portfolioExportRealized": "Vie toteutuneet voitot (CSV)",
+  "eventsAddToCalendar": "Lisää kalenteriin (.ics)",
+  "portfolioAnnualReturn": "Vuosituotto",
+  "portfolioPerYear": "{percent} / vuosi",
+  "portfolioAnnualReturnHint": "Rahapainotteinen vuosituotto (XIRR): ottaa huomioon, milloin ostit ja myit, joten myöhemmin lisätty raha ei vääristä sitä. Näytetään, kun ensimmäinen ostosi on vähintään vuoden vanha; osinkoja ei ole mukana."
 }

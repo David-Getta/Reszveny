@@ -2387,4 +2387,19 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'تصدير الأرباح المحققة (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'العائد السنوي';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent سنويًا';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'العائد السنوي المرجّح بالأموال (XIRR): يأخذ في الحسبان توقيت عمليات الشراء والبيع، فلا تشوّهه الأموال المضافة لاحقًا. يظهر بعد مرور سنة على الأقل على أول عملية شراء لك؛ ولا يشمل التوزيعات.';
+
+  @override
+  String get eventsAddToCalendar => 'إضافة إلى التقويم (.ics)';
 }

@@ -623,5 +623,9 @@
   "watchAlertAll": "पैघ दैनिक उतार-चढ़ाव पर अलर्ट",
   "watchAlertAllHint": "एहि सूचीक प्रत्येक शेयर लेल दामक अलर्ट: एक दिनमे एतेक ऊपर वा नीचाँ हेबा पर सूचित करत। जाहि शेयर पर पहिनहि सँ अलर्ट अछि, ओकर ओहिना रहत।",
   "watchAlertAllDone": "{count, plural, =1{1 अलर्ट लगाओल गेल} other{{count} अलर्ट लगाओल गेल}}",
-  "portfolioExportRealized": "प्राप्त लाभ निर्यात करू (CSV)"
+  "portfolioExportRealized": "प्राप्त लाभ निर्यात करू (CSV)",
+  "eventsAddToCalendar": "कैलेंडरमे जोड़ू (.ics)",
+  "portfolioAnnualReturn": "वार्षिक रिटर्न",
+  "portfolioPerYear": "{percent} / वर्ष",
+  "portfolioAnnualReturnHint": "धन-भारित वार्षिक रिटर्न (XIRR): ई देखैत अछि जे अहाँ कहिया कीनलहुँ आ बेचलहुँ, तेँ बादमे जोड़ल पाइ एकरा नहि बिगाड़ैत अछि। अहाँक पहिल खरीदारी कमसँ कम एक वर्ष पुरान भेलापर देखाओल जाइत अछि; लाभांश सम्मिलित नहि अछि।"
 }

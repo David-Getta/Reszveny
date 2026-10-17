@@ -623,5 +623,9 @@
   "watchAlertAll": "بڑی روزانہ تبدیلی پر الرٹ",
   "watchAlertAllHint": "اس فہرست کے ہر شیئر کے لیے قیمت کا الرٹ: جب ایک دن میں اتنا اوپر یا نیچے ہو تو بتائے گا۔ جن شیئرز پر پہلے سے الرٹ ہے، ان کا وہی رہے گا۔",
   "watchAlertAllDone": "{count, plural, =1{1 الرٹ سیٹ کر دیا گیا} other{{count} الرٹ سیٹ کر دیے گئے}}",
-  "portfolioExportRealized": "حاصل شدہ منافع ایکسپورٹ کریں (CSV)"
+  "portfolioExportRealized": "حاصل شدہ منافع ایکسپورٹ کریں (CSV)",
+  "eventsAddToCalendar": "کیلنڈر میں شامل کریں (.ics)",
+  "portfolioAnnualReturn": "سالانہ ریٹرن",
+  "portfolioPerYear": "{percent} / سال",
+  "portfolioAnnualReturnHint": "رقم کے لحاظ سے وزنی سالانہ ریٹرن (XIRR): یہ دیکھتا ہے کہ آپ نے کب خریدا اور بیچا، اس لیے بعد میں شامل کی گئی رقم اسے بگاڑتی نہیں۔ آپ کی پہلی خریداری کم از کم ایک سال پرانی ہونے پر دکھایا جاتا ہے؛ ڈیویڈنڈ شامل نہیں۔"
 }

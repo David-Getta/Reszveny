@@ -623,5 +623,9 @@
   "watchAlertAll": "ንዓበይቲ መዓልታዊ ምንቅስቓሳት መጠንቀቕታ",
   "watchAlertAllHint": "ንነፍሲ ወከፍ ኣክስዮን ኣብዚ ዝርዝር ናይ ዋጋ መጠንቀቕታ፦ ኣብ ሓንቲ መዓልቲ ክንድዚ ንላዕሊ ወይ ንታሕቲ ምስ ተንቀሳቐሰ ይሕብር። ድሮ ዘለዎም ኣክስዮናት ናቶም ይሕዙ።",
   "watchAlertAllDone": "{count, plural, =1{1 መጠንቀቕታ ተቐሚጡ} other{{count} መጠንቀቕታታት ተቐሚጦም}}",
-  "portfolioExportRealized": "ዝተረኽበ ረብሓ ኣውጽእ (CSV)"
+  "portfolioExportRealized": "ዝተረኽበ ረብሓ ኣውጽእ (CSV)",
+  "eventsAddToCalendar": "ናብ ዓውደ ኣዋርሕ ወስኽ (.ics)",
+  "portfolioAnnualReturn": "ዓመታዊ ትርፊ",
+  "portfolioPerYear": "{percent} / ዓመት",
+  "portfolioAnnualReturnHint": "ብገንዘብ ዝተመዘነ ዓመታዊ ትርፊ (XIRR)፦ መዓስ ከም ዝዓደግኩምን ዝሸጥኩምን ኣብ ግምት የእቱ፣ ስለዚ ደሓር ዝተወሰኸ ገንዘብ ኣየዛብዖን። ቀዳማይ ዕድጊትኩም እንተወሓደ ሓደ ዓመት ምስ መልአ ይርአ፤ ብጽሒት ትርፊ ኣይተሓወሰን።"
 }

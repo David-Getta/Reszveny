@@ -2340,4 +2340,19 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Realizált nyereség exportja (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Éves hozam';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / év';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Pénzsúlyozott éves hozam (XIRR): számít, mikor vettél és adtál el, így a később betett pénz nem torzítja. Akkor látszik, ha az első vételed legalább egyéves; az osztalék nincs benne.';
+
+  @override
+  String get eventsAddToCalendar => 'Hozzáadás a naptárhoz (.ics)';
 }

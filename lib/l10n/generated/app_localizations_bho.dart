@@ -2330,4 +2330,19 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'मिलल मुनाफा निर्यात करीं (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'सालाना रिटर्न';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / साल';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'पइसा-भारित सालाना रिटर्न (XIRR): ई देखेला कि रउआ कब खरीदनी आ बेचनी, एह से बाद में जोड़ल पइसा एकरा के ना बिगाड़े। रउआ पहिला खरीदारी कम से कम एक साल पुरान भइला पर देखावल जाला; लाभांश शामिल नइखे।';
+
+  @override
+  String get eventsAddToCalendar => 'कैलेंडर में जोड़ीं (.ics)';
 }

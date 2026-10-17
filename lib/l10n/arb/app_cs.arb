@@ -623,5 +623,9 @@
   "watchAlertAll": "Upozornění na velké denní pohyby",
   "watchAlertAllHint": "Cenové upozornění pro každou akcii v tomto seznamu, které se ozve, když se za den pohne o tolik nahoru nebo dolů. Akcie, které už nějaké mají, si ho ponechají.",
   "watchAlertAllDone": "{count, plural, =1{Nastaveno 1 upozornění} few{Nastavena {count} upozornění} many{Nastaveno {count} upozornění} other{Nastaveno {count} upozornění}}",
-  "portfolioExportRealized": "Exportovat realizované zisky (CSV)"
+  "portfolioExportRealized": "Exportovat realizované zisky (CSV)",
+  "eventsAddToCalendar": "Přidat do kalendáře (.ics)",
+  "portfolioAnnualReturn": "Roční výnos",
+  "portfolioPerYear": "{percent} / rok",
+  "portfolioAnnualReturnHint": "Peněžně vážený roční výnos (XIRR): zohledňuje, kdy jste nakupovali a prodávali, takže ho později vložené peníze nezkreslí. Zobrazí se, jakmile bude váš první nákup starý alespoň rok; dividendy nejsou zahrnuty."
 }

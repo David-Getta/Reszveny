@@ -751,6 +751,12 @@ void main() {
     await tester.drag(find.byType(Scrollable).first, const Offset(0, -2000));
     await tester.pumpAndSettle();
     await _shot(tester, 'closed_positions_phone_hu');
+    await tester.drag(find.byType(Scrollable).first, const Offset(0, 4000));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('portfolio-menu')));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('portfolio-export-realized')), findsOneWidget);
+    await _shot(tester, 'portfolio_menu_realized_phone_hu');
   });
 
   testWidgets('metric explanation on a phone (hungarian)', (tester) async {

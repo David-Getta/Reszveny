@@ -2344,4 +2344,19 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'உணரப்பட்ட லாபத்தை ஏற்றுமதி செய் (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'ஆண்டு வருமானம்';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / ஆண்டு';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'பண-எடையிட்ட ஆண்டு வருமானம் (XIRR): நீங்கள் எப்போது வாங்கினீர்கள், விற்றீர்கள் என்பதைக் கணக்கில் கொள்கிறது, எனவே பின்னர் சேர்த்த பணம் அதைத் திரிக்காது. உங்கள் முதல் வாங்குதலுக்குக் குறைந்தது ஓராண்டு ஆன பிறகு காட்டப்படும்; ஈவுத்தொகை சேர்க்கப்படவில்லை.';
+
+  @override
+  String get eventsAddToCalendar => 'கேலெண்டரில் சேர் (.ics)';
 }

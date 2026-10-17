@@ -2308,4 +2308,19 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'ສົ່ງອອກກຳໄລທີ່ໄດ້ຮັບແລ້ວ (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'ຜົນຕອບແທນຕໍ່ປີ';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / ປີ';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'ຜົນຕອບແທນຕໍ່ປີແບບຖ່ວງນ້ຳໜັກດ້ວຍເງິນ (XIRR): ຄຳນຶງເຖິງເວລາທີ່ທ່ານຊື້ ແລະ ຂາຍ ດັ່ງນັ້ນເງິນທີ່ເພີ່ມເຂົ້າມາພາຍຫຼັງຈະບໍ່ເຮັດໃຫ້ມັນບິດເບືອນ. ສະແດງເມື່ອການຊື້ຄັ້ງທຳອິດຂອງທ່ານມີອາຍຸຢ່າງໜ້ອຍໜຶ່ງປີ; ບໍ່ລວມເງິນປັນຜົນ.';
+
+  @override
+  String get eventsAddToCalendar => 'ເພີ່ມໃສ່ປະຕິທິນ (.ics)';
 }

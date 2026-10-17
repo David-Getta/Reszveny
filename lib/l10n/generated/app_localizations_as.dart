@@ -2333,4 +2333,19 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'লাভ কৰা মুনাফা ৰপ্তানি কৰক (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'বাৰ্ষিক ৰিটাৰ্ণ';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / বছৰ';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'ধন-ভাৰিত বাৰ্ষিক ৰিটাৰ্ণ (XIRR): আপুনি কেতিয়া কিনিছিল আৰু বিক্ৰী কৰিছিল সেয়া হিচাপত লয়, গতিকে পিছত যোগ দিয়া ধনে ইয়াক বিকৃত নকৰে। আপোনাৰ প্ৰথম ক্ৰয় অন্ততঃ এবছৰ পুৰণি হ\'লে দেখুওৱা হয়; লভ্যাংশ অন্তৰ্ভুক্ত নহয়।';
+
+  @override
+  String get eventsAddToCalendar => 'কেলেণ্ডাৰত যোগ কৰক (.ics)';
 }

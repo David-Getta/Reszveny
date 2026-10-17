@@ -623,5 +623,9 @@
   "watchAlertAll": "Alerte sur les fortes variations du jour",
   "watchAlertAllHint": "Une alerte de cours sur chaque action de cette liste, qui se déclenche lorsqu’elle varie autant en une journée, à la hausse comme à la baisse. Les actions qui en ont déjà une la conservent.",
   "watchAlertAllDone": "{count, plural, =1{1 alerte créée} other{{count} alertes créées}}",
-  "portfolioExportRealized": "Exporter les plus-values réalisées (CSV)"
+  "portfolioExportRealized": "Exporter les plus-values réalisées (CSV)",
+  "eventsAddToCalendar": "Ajouter au calendrier (.ics)",
+  "portfolioAnnualReturn": "Rendement annuel",
+  "portfolioPerYear": "{percent} / an",
+  "portfolioAnnualReturnHint": "Rendement annuel pondéré par les capitaux (XIRR) : il tient compte du moment où vous avez acheté et vendu, de sorte que l’argent ajouté plus tard ne le fausse pas. Affiché dès que votre premier achat a au moins un an ; les dividendes ne sont pas inclus."
 }

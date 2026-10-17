@@ -2401,4 +2401,19 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Експорт реалізованого прибутку (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Річна дохідність';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / рік';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Річна дохідність, зважена за грошовими потоками (XIRR): враховує, коли ви купували та продавали, тож гроші, додані пізніше, її не спотворюють. Показується, коли вашій першій покупці мине щонайменше рік; дивіденди не враховано.';
+
+  @override
+  String get eventsAddToCalendar => 'Додати до календаря (.ics)';
 }

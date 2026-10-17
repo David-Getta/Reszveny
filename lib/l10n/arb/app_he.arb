@@ -623,5 +623,9 @@
   "watchAlertAll": "התראה על תנודות יומיות חדות",
   "watchAlertAllHint": "התראת מחיר לכל מניה ברשימה הזו, שמופעלת כשהיא זזה כך ביום אחד, למעלה או למטה. מניות שכבר יש להן התראה כזו שומרות עליה.",
   "watchAlertAllDone": "{count, plural, =1{הוגדרה התראה אחת} other{הוגדרו {count} התראות}}",
-  "portfolioExportRealized": "ייצוא רווחים ממומשים (CSV)"
+  "portfolioExportRealized": "ייצוא רווחים ממומשים (CSV)",
+  "eventsAddToCalendar": "הוספה ליומן (.ics)",
+  "portfolioAnnualReturn": "תשואה שנתית",
+  "portfolioPerYear": "{percent} לשנה",
+  "portfolioAnnualReturnHint": "תשואה שנתית משוקללת לפי תזרימי הכסף (XIRR): מתחשבת במועדי הקנייה והמכירה, כך שכסף שנוסף מאוחר יותר לא מעוות אותה. מוצגת לאחר שחלפה לפחות שנה מהרכישה הראשונה שלך; דיבידנדים אינם נכללים."
 }

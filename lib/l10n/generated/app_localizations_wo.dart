@@ -2329,4 +2329,19 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Génne njariñ yi ñu am (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Benefis bu at';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / at';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Benefis bu at bu ñu natt ci xaalis bi (XIRR): dafay xool kañ nga jënd ak kañ nga jaay, kon xaalis bi nga yokk ginnaaw du ko yàq. Dañu koy wone su sa jënd bu jëkk weesoo benn at lu néew-néew; dividand yi bokkuñu ci.';
+
+  @override
+  String get eventsAddToCalendar => 'Yokk ci kalandiriye bi (.ics)';
 }

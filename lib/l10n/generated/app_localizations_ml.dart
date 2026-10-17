@@ -2344,4 +2344,19 @@ class AppLocalizationsMl extends AppLocalizations {
   @override
   String get portfolioExportRealized =>
       'ലഭിച്ച ലാഭം എക്സ്പോർട്ട് ചെയ്യുക (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'വാർഷിക റിട്ടേൺ';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / വർഷം';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'പണം-ഭാരിത വാർഷിക റിട്ടേൺ (XIRR): നിങ്ങൾ എപ്പോൾ വാങ്ങി, വിറ്റു എന്നത് കണക്കിലെടുക്കുന്നു, അതിനാൽ പിന്നീട് ചേർത്ത പണം ഇതിനെ വികലമാക്കുന്നില്ല. നിങ്ങളുടെ ആദ്യ വാങ്ങലിന് കുറഞ്ഞത് ഒരു വർഷമായാൽ കാണിക്കും; ലാഭവിഹിതം ഉൾപ്പെടുത്തിയിട്ടില്ല.';
+
+  @override
+  String get eventsAddToCalendar => 'കലണ്ടറിലേക്ക് ചേർക്കുക (.ics)';
 }

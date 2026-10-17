@@ -2352,4 +2352,19 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Avoahy ny tombony azo (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Tombony isan-taona';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / taona';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Tombony isan-taona voalanja araka ny vola (XIRR): mihevitra ny fotoana nividiananao sy nivarotanao, ka tsy manodinkodina azy ny vola nampidirina taty aoriana. Aseho rehefa feno herintaona farafahakeliny ny fividiananao voalohany; tsy tafiditra ny dividenda.';
+
+  @override
+  String get eventsAddToCalendar => 'Ampio amin\'ny tetiandro (.ics)';
 }

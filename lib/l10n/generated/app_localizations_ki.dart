@@ -2335,4 +2335,19 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Ruta uumithio ũrĩa wonetwo (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Uumithio wa mwaka';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / mwaka';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Uumithio wa mwaka ũrĩa ũthimĩtwo na mbeca (XIRR): ũtaraga rĩrĩa wagũrire na rĩrĩa wendirie, nĩ ũndũ ũcio mbeca iria wongerire thuutha itiũthũkagia. Ũkuonanio rĩrĩa ũgũri waku wa mbere wakinyia mwaka ũmwe kana makĩria; dividend ndĩtaranĩtio.';
+
+  @override
+  String get eventsAddToCalendar => 'Ongerera harĩ kalenda (.ics)';
 }

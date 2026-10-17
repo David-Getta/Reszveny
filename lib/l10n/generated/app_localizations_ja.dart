@@ -2257,4 +2257,19 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => '実現損益をCSVでエクスポート';
+
+  @override
+  String get portfolioAnnualReturn => '年率リターン';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / 年';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      '金額加重の年率リターン（XIRR）：購入・売却のタイミングを考慮するため、あとから追加した資金で数値がゆがむことはありません。最初の購入から1年以上経過すると表示されます。配当は含まれません。';
+
+  @override
+  String get eventsAddToCalendar => 'カレンダーに追加 (.ics)';
 }

@@ -2345,4 +2345,19 @@ class AppLocalizationsCeb extends AppLocalizations {
   @override
   String get portfolioExportRealized =>
       'I-export ang na-realize nga ganansya (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Tinuig nga kita';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / tuig';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Tinuig nga kita nga gitimbang sa kwarta (XIRR): gikonsiderar niini kanus-a ka mipalit ug mibaligya, mao nga ang kwarta nga gidugang sa ulahi dili makatuis niini. Ipakita kini kung ang imong unang pagpalit labing menos usa na ka tuig; wala gilakip ang mga dibidendo.';
+
+  @override
+  String get eventsAddToCalendar => 'Idugang sa kalendaryo (.ics)';
 }

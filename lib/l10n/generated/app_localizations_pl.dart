@@ -2400,4 +2400,19 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Eksportuj zrealizowane zyski (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Roczna stopa zwrotu';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / rok';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Roczna stopa zwrotu ważona kapitałem (XIRR): uwzględnia terminy zakupów i sprzedaży, więc pieniądze dodane później jej nie zniekształcają. Wyświetlana, gdy twój pierwszy zakup ma co najmniej rok; dywidendy nie są uwzględnione.';
+
+  @override
+  String get eventsAddToCalendar => 'Dodaj do kalendarza (.ics)';
 }

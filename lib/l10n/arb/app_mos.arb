@@ -623,5 +623,9 @@
   "watchAlertAll": "Kibay daar toeemd wʋsg yĩnga",
   "watchAlertAllHint": "Ligd kibay bõn fãa sẽn be liste kãngã pʋgẽ yĩnga: a na n togsa fo, a sã n toeem woto daar a yembre, n zẽk bɩ n sig. Sẽn da tara kibay pĩnda na n gũusa b rẽndã.",
   "watchAlertAllDone": "{count, plural, =1{B ningame kibay a yembre} other{B ningame kibay {count}}}",
-  "portfolioExportRealized": "Yiis yõod ning sẽn paame (CSV)"
+  "portfolioExportRealized": "Yiis yõod ning sẽn paame (CSV)",
+  "eventsAddToCalendar": "Paas kalandiyẽ pʋgẽ (.ics)",
+  "portfolioAnnualReturn": "Yʋʋmd nafa",
+  "portfolioPerYear": "{percent} / yʋʋmde",
+  "portfolioAnnualReturnHint": "Yʋʋmd nafa sẽn makd ne ligdi (XIRR): a gẽesda wakat ning f sẽn da la f sẽn koosã, rẽ n so tɩ ligd ning f sẽn paas poorã pa sãamd-a ye. B wilgda-a f raab pipiigã sã n ta yʋʋmd a yembr bal; dividãnd pa be pʋgẽ ye."
 }

@@ -623,5 +623,9 @@
   "watchAlertAll": "Temošo ya diphetogo tše kgolo tša letšatši",
   "watchAlertAllHint": "Temošo ya theko go šere ye nngwe le ye nngwe lenaneong le: e tla lla ge e šikinyega ka mo letšatšing le tee, godimo goba fase. Tšeo di šetšego di na le yona di tla dula le ya tšona.",
   "watchAlertAllDone": "{count, plural, =1{Go beilwe temošo e 1} other{Go beilwe ditemošo tše {count}}}",
-  "portfolioExportRealized": "Romela ka ntle dipoelo tšeo di hweditšwego (CSV)"
+  "portfolioExportRealized": "Romela ka ntle dipoelo tšeo di hweditšwego (CSV)",
+  "eventsAddToCalendar": "Oketša go khalendara (.ics)",
+  "portfolioAnnualReturn": "Poelo ya ngwaga",
+  "portfolioPerYear": "{percent} / ngwaga",
+  "portfolioAnnualReturnHint": "Poelo ya ngwaga yeo e lekanyeditšwego ka tšhelete (XIRR): e ela hloko gore o rekile le go rekiša neng, ka gona tšhelete yeo e okeditšwego ka morago ga e e kgopamiše. E bontšhwa ge theko ya gago ya mathomo e na le bonyane ngwaga o tee; dividende ga e akaretšwe."
 }

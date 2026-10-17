@@ -623,5 +623,9 @@
   "watchAlertAll": "Alertă la mișcări zilnice mari",
   "watchAlertAllHint": "O alertă de preț pentru fiecare acțiune din această listă, care se declanșează când aceasta se mișcă atât de mult într-o zi, în sus sau în jos. Acțiunile care au deja una și-o păstrează.",
   "watchAlertAllDone": "{count, plural, one{A fost setată {count} alertă} few{Au fost setate {count} alerte} other{Au fost setate {count} de alerte}}",
-  "portfolioExportRealized": "Exportă câștigurile realizate (CSV)"
+  "portfolioExportRealized": "Exportă câștigurile realizate (CSV)",
+  "eventsAddToCalendar": "Adaugă în calendar (.ics)",
+  "portfolioAnnualReturn": "Randament anual",
+  "portfolioPerYear": "{percent} / an",
+  "portfolioAnnualReturnHint": "Randament anual ponderat cu banii (XIRR): ține cont de momentul în care ai cumpărat și ai vândut, așa că banii adăugați ulterior nu îl distorsionează. Se afișează când prima ta cumpărare are cel puțin un an; dividendele nu sunt incluse."
 }

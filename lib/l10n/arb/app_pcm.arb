@@ -623,5 +623,9 @@
   "watchAlertAll": "Alert for big move for one day",
   "watchAlertAllHint": "Price alert for every stock wey dey this list: e go ring when e move reach this much for one day, up or down. Stock wey don get one before go keep im own.",
   "watchAlertAllDone": "{count, plural, one{We don set {count} alert} other{We don set {count} alerts}}",
-  "portfolioExportRealized": "Export di profit wey you don collect (CSV)"
+  "portfolioExportRealized": "Export di profit wey you don collect (CSV)",
+  "eventsAddToCalendar": "Add am to calendar (.ics)",
+  "portfolioAnnualReturn": "Yearly return",
+  "portfolioPerYear": "{percent} every year",
+  "portfolioAnnualReturnHint": "Yearly return wey dey weigh your moni (XIRR): e dey check when you buy and when you sell, so moni wey you add later no go spoil am. E go show once your first buy don reach at least one year; dividend no dey inside."
 }

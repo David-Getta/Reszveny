@@ -623,5 +623,9 @@
   "watchAlertAll": "Amaran pergerakan harian besar",
   "watchAlertAllHint": "Amaran harga untuk setiap saham dalam senarai ini yang berbunyi apabila saham bergerak sebanyak ini dalam sehari, naik atau turun. Saham yang sudah ada amaran mengekalkan amaran sendiri.",
   "watchAlertAllDone": "{count, plural, =1{1 amaran ditetapkan} other{{count} amaran ditetapkan}}",
-  "portfolioExportRealized": "Eksport keuntungan direalisasi (CSV)"
+  "portfolioExportRealized": "Eksport keuntungan direalisasi (CSV)",
+  "eventsAddToCalendar": "Tambah ke kalendar (.ics)",
+  "portfolioAnnualReturn": "Pulangan tahunan",
+  "portfolioPerYear": "{percent} / tahun",
+  "portfolioAnnualReturnHint": "Pulangan tahunan berwajaran wang (XIRR): mengambil kira bila anda membeli dan menjual, jadi wang yang ditambah kemudian tidak memesongkannya. Dipaparkan setelah pembelian pertama anda berusia sekurang-kurangnya setahun; dividen tidak termasuk."
 }

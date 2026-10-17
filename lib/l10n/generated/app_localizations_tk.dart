@@ -2335,4 +2335,19 @@ class AppLocalizationsTk extends AppLocalizations {
   @override
   String get portfolioExportRealized =>
       'Durmuşa geçirilen girdejini eksport et (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Ýyllyk girdejililik';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / ýyl';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Pul akymlary boýunça agramlandyrylan ýyllyk girdejililik (XIRR): haçan satyn alandygyňyzy we satandygyňyzy hasaba alýar, şonuň üçin soňra goşulan pul ony ýoýmaýar. Ilkinji satyn alşyňyza azyndan bir ýyl dolanda görkezilýär; diwidendler goşulmaýar.';
+
+  @override
+  String get eventsAddToCalendar => 'Senenama goş (.ics)';
 }

@@ -2346,4 +2346,19 @@ class AppLocalizationsXh extends AppLocalizations {
   @override
   String get portfolioExportRealized =>
       'Thumela ngaphandle inzuzo efunyenweyo (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Inzuzo yonyaka';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / unyaka';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Inzuzo yonyaka ekalwe ngemali (XIRR): ithathela ingqalelo ukuba uthenge nini kwaye uthengise nini, ngoko imali eyongezwe kamva ayiyiphazamisi. Iboniswa xa sele kudlule unyaka omnye ubuncinane uthenge okokuqala; ii-dividend azibandakanywanga.';
+
+  @override
+  String get eventsAddToCalendar => 'Yongeza kwikhalenda (.ics)';
 }

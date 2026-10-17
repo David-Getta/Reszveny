@@ -2266,4 +2266,19 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => '실현 손익 내보내기 (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => '연 수익률';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '연 $percent';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      '금액가중 연 수익률(XIRR): 매수·매도 시점을 반영하므로 나중에 추가한 자금 때문에 수치가 왜곡되지 않습니다. 첫 매수 후 1년 이상 지나면 표시되며, 배당은 포함되지 않습니다.';
+
+  @override
+  String get eventsAddToCalendar => '캘린더에 추가 (.ics)';
 }

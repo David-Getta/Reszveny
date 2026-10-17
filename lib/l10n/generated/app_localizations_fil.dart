@@ -2341,4 +2341,19 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'I-export ang realized na kita (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Taunang kita';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / taon';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Money-weighted na taunang kita (XIRR): isinasaalang-alang nito kung kailan ka bumili at nagbenta, kaya hindi ito nababaluktot ng perang idinagdag mo kalaunan. Lalabas ito kapag isang taon na man lang ang una mong pagbili; hindi kasama ang mga dibidendo.';
+
+  @override
+  String get eventsAddToCalendar => 'Idagdag sa kalendaryo (.ics)';
 }

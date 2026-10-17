@@ -2332,4 +2332,19 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'උපයාගත් ලාභ අපනයනය කරන්න (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'වාර්ෂික ප්‍රතිලාභය';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / වසර';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'මුදල්-බර තැබූ වාර්ෂික ප්‍රතිලාභය (XIRR): ඔබ මිලදී ගත් සහ විකුණූ කාලය සැලකිල්ලට ගන්නා බැවින්, පසුව එක් කළ මුදල් එය විකෘති නොකරයි. ඔබේ පළමු මිලදී ගැනීමට අවම වශයෙන් වසරක් පිරුණු පසු පෙන්වයි; ලාභාංශ ඇතුළත් නොවේ.';
+
+  @override
+  String get eventsAddToCalendar => 'දින දර්ශනයට එක් කරන්න (.ics)';
 }

@@ -2342,4 +2342,19 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Basisa mbote ya bo me zwa (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Mbakulu ya mvula';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / mvula';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Mbakulu ya mvula yina me tadila na mbongo (XIRR): yo ke tala ntangu nge sumbaka mpi nge tekaka, yo yina mbongo yina nge kuyika na nima ke bebisa yo ve. Bo ke monisa yo kana kusumba na nge ya ntete me lunga mvula mosi to mingi; badividende kele ve na kati.';
+
+  @override
+  String get eventsAddToCalendar => 'Yika mu kalandrie (.ics)';
 }

@@ -623,5 +623,9 @@
   "watchAlertAll": "Böyük gündəlik dəyişmələrdə xəbərdarlıq",
   "watchAlertAllHint": "Bu siyahıdakı hər səhm üçün qiymət xəbərdarlığı: bir gündə bu qədər yuxarı və ya aşağı dəyişərsə, xəbər verir. Artıq xəbərdarlığı olan səhmlər onu saxlayır.",
   "watchAlertAllDone": "{count, plural, =1{1 xəbərdarlıq quruldu} other{{count} xəbərdarlıq quruldu}}",
-  "portfolioExportRealized": "Realizə olunmuş gəliri ixrac et (CSV)"
+  "portfolioExportRealized": "Realizə olunmuş gəliri ixrac et (CSV)",
+  "eventsAddToCalendar": "Təqvimə əlavə et (.ics)",
+  "portfolioAnnualReturn": "İllik gəlirlilik",
+  "portfolioPerYear": "{percent} / il",
+  "portfolioAnnualReturnHint": "Pul axınları ilə çəkili illik gəlirlilik (XIRR): nə vaxt aldığınızı və satdığınızı nəzərə alır, buna görə sonradan əlavə edilən pul onu təhrif etmir. İlk alışınızdan ən azı bir il keçdikdə göstərilir; dividendlər daxil deyil."
 }

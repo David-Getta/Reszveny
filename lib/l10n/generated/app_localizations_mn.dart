@@ -2335,4 +2335,19 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Хэрэгжсэн ашгийг экспортлох (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Жилийн өгөөж';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / жил';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Мөнгөн урсгалаар жигнэсэн жилийн өгөөж (XIRR): та хэзээ худалдан авч, зарсныг тооцдог тул хожим нэмсэн мөнгө үүнийг гажуудуулахгүй. Таны анхны худалдан авалт дор хаяж нэг жил болсон үед харагдана; ногдол ашиг орохгүй.';
+
+  @override
+  String get eventsAddToCalendar => 'Хуанлид нэмэх (.ics)';
 }

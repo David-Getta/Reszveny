@@ -2335,4 +2335,19 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Hamisha faida iliyopatikana (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Faida ya mwaka';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / mwaka';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Faida ya mwaka iliyopimwa kwa fedha (XIRR): inazingatia ulinunua na kuuza lini, kwa hivyo pesa zilizoongezwa baadaye haziipotoshi. Huonyeshwa ununuzi wako wa kwanza ukifikisha angalau mwaka mmoja; gawio halijajumuishwa.';
+
+  @override
+  String get eventsAddToCalendar => 'Ongeza kwenye kalenda (.ics)';
 }

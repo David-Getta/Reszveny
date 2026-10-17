@@ -623,5 +623,9 @@
   "watchAlertAll": "Digniin isbeddelka weyn ee maalinlaha",
   "watchAlertAllHint": "Digniin qiimo oo loogu talagalay saami kasta oo liiskan ku jira: way ku ogeysiinaysaa marka uu maalin gudaheed intan isu beddelo, kor ama hoos. Kuwa horeba mid u leh way sii haysanayaan kooda.",
   "watchAlertAllDone": "{count, plural, =1{1 digniin ayaa la dejiyay} other{{count} digniin ayaa la dejiyay}}",
-  "portfolioExportRealized": "U dhoofi faa'iidada la helay (CSV)"
+  "portfolioExportRealized": "U dhoofi faa'iidada la helay (CSV)",
+  "eventsAddToCalendar": "Ku dar kalandarka (.ics)",
+  "portfolioAnnualReturn": "Faa'iidada sannadlaha",
+  "portfolioPerYear": "{percent} / sannad",
+  "portfolioAnnualReturnHint": "Faa'iidada sannadlaha ah ee lacagta lagu miisaamay (XIRR): waxay tixgelisaa goorta aad iibsatay iyo goorta aad iibisay, sidaas darteed lacagta dambe lagu daray ma qalloociso. Waxaa la muujiyaa marka iibsashadaada ugu horreysa ay jirto ugu yaraan hal sano; qaybaha faa'iidada kuma jiraan."
 }

@@ -623,5 +623,9 @@
   "watchAlertAll": "Larm vid stora dagsrörelser",
   "watchAlertAllHint": "Ett kurslarm för varje aktie i den här listan som går igång när den rör sig så mycket på en dag, uppåt eller nedåt. Aktier som redan har ett behåller sitt.",
   "watchAlertAllDone": "{count, plural, =1{1 larm skapat} other{{count} larm skapade}}",
-  "portfolioExportRealized": "Exportera realiserade vinster (CSV)"
+  "portfolioExportRealized": "Exportera realiserade vinster (CSV)",
+  "eventsAddToCalendar": "Lägg till i kalendern (.ics)",
+  "portfolioAnnualReturn": "Årlig avkastning",
+  "portfolioPerYear": "{percent} / år",
+  "portfolioAnnualReturnHint": "Penningviktad årlig avkastning (XIRR): tar hänsyn till när du köpte och sålde, så pengar som lagts till senare inte förvränger den. Visas när ditt första köp är minst ett år gammalt; utdelningar ingår inte."
 }

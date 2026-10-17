@@ -2398,4 +2398,19 @@ class AppLocalizationsBe extends AppLocalizations {
   @override
   String get portfolioExportRealized =>
       'Экспартаваць рэалізаваны прыбытак (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Гадавая даходнасць';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / год';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Узважаная па грашовых патоках гадавая даходнасць (XIRR): улічвае, калі вы куплялі і прадавалі, таму грошы, дададзеныя пазней, яе не скажаюць. Паказваецца, калі вашай першай пакупцы споўніцца хаця б год; дывідэнды не ўлічваюцца.';
+
+  @override
+  String get eventsAddToCalendar => 'Дадаць у каляндар (.ics)';
 }

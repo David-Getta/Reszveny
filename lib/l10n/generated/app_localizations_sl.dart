@@ -2399,4 +2399,19 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Izvozi realizirane dobičke (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Letni donos';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / leto';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Denarno tehtani letni donos (XIRR): upošteva, kdaj ste kupovali in prodajali, zato ga pozneje dodan denar ne izkrivlja. Prikaže se, ko je vaš prvi nakup star vsaj eno leto; dividende niso vključene.';
+
+  @override
+  String get eventsAddToCalendar => 'Dodaj v koledar (.ics)';
 }

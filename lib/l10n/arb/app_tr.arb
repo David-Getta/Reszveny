@@ -623,5 +623,9 @@
   "watchAlertAll": "Büyük günlük hareketlerde alarm",
   "watchAlertAllHint": "Bu listedeki her hisse için bir fiyat alarmı: bir günde bu kadar yukarı ya da aşağı hareket ettiğinde çalar. Zaten alarmı olan hisseler kendininkini korur.",
   "watchAlertAllDone": "{count, plural, =1{1 alarm kuruldu} other{{count} alarm kuruldu}}",
-  "portfolioExportRealized": "Gerçekleşen kazancı dışa aktar (CSV)"
+  "portfolioExportRealized": "Gerçekleşen kazancı dışa aktar (CSV)",
+  "eventsAddToCalendar": "Takvime ekle (.ics)",
+  "portfolioAnnualReturn": "Yıllık getiri",
+  "portfolioPerYear": "{percent} / yıl",
+  "portfolioAnnualReturnHint": "Para ağırlıklı yıllık getiri (XIRR): ne zaman alıp sattığınızı hesaba katar, böylece sonradan eklenen para onu çarpıtmaz. İlk alışınızın üzerinden en az bir yıl geçince gösterilir; temettüler dahil değildir."
 }

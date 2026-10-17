@@ -623,5 +623,9 @@
   "watchAlertAll": "Peringatan untuk pergerakan harian besar",
   "watchAlertAllHint": "Peringatan harga untuk setiap saham di daftar ini yang berbunyi saat saham bergerak sebesar ini dalam sehari, naik atau turun. Saham yang sudah punya peringatan tetap memakai miliknya.",
   "watchAlertAllDone": "{count, plural, =1{1 peringatan dipasang} other{{count} peringatan dipasang}}",
-  "portfolioExportRealized": "Ekspor keuntungan terealisasi (CSV)"
+  "portfolioExportRealized": "Ekspor keuntungan terealisasi (CSV)",
+  "eventsAddToCalendar": "Tambahkan ke kalender (.ics)",
+  "portfolioAnnualReturn": "Imbal hasil tahunan",
+  "portfolioPerYear": "{percent} / tahun",
+  "portfolioAnnualReturnHint": "Imbal hasil tahunan tertimbang uang (XIRR): memperhitungkan kapan Anda membeli dan menjual, sehingga uang yang ditambahkan belakangan tidak mendistorsinya. Ditampilkan setelah pembelian pertama Anda berusia minimal satu tahun; dividen tidak termasuk."
 }

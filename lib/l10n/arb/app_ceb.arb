@@ -623,5 +623,9 @@
   "watchAlertAll": "Alerto sa dagkong lihok sa adlaw",
   "watchAlertAllHint": "Usa ka alerto sa presyo para sa matag stock niining lista nga mopatingog kon molihok kini ingon niini kadako sulod sa usa ka adlaw, pataas o paubos. Ang mga stock nga duna nay alerto magpabilin sa ilang kaugalingon.",
   "watchAlertAllDone": "{count, plural, =1{Na-set ang 1 ka alerto} other{Na-set ang {count} ka alerto}}",
-  "portfolioExportRealized": "I-export ang na-realize nga ganansya (CSV)"
+  "portfolioExportRealized": "I-export ang na-realize nga ganansya (CSV)",
+  "eventsAddToCalendar": "Idugang sa kalendaryo (.ics)",
+  "portfolioAnnualReturn": "Tinuig nga kita",
+  "portfolioPerYear": "{percent} / tuig",
+  "portfolioAnnualReturnHint": "Tinuig nga kita nga gitimbang sa kwarta (XIRR): gikonsiderar niini kanus-a ka mipalit ug mibaligya, mao nga ang kwarta nga gidugang sa ulahi dili makatuis niini. Ipakita kini kung ang imong unang pagpalit labing menos usa na ka tuig; wala gilakip ang mga dibidendo."
 }

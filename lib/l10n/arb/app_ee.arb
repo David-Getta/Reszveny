@@ -623,5 +623,9 @@
   "watchAlertAll": "Nuxlɔ̃ame ɖe ŋkeke ɖeka ƒe tɔtrɔ gãwo ŋu",
   "watchAlertAllHint": "Asixɔxɔ ŋuti nuxlɔ̃ame na nu ɖesiaɖe le xexlẽdzesi sia me: ne etrɔ alesia le ŋkeke ɖeka me, dzi alo anyi, ekema awɔ dɔ. Esiwo si nuxlɔ̃ame le xoxo la alé wo tɔ ɖe asi.",
   "watchAlertAllDone": "{count, plural, =1{Woɖo nuxlɔ̃ame 1} other{Woɖo nuxlɔ̃ame {count}}}",
-  "portfolioExportRealized": "Ɖo viɖe siwo wokpɔ ɖa (CSV)"
+  "portfolioExportRealized": "Ɖo viɖe siwo wokpɔ ɖa (CSV)",
+  "eventsAddToCalendar": "Tsɔ kpe ɖe kalenda ŋu (.ics)",
+  "portfolioAnnualReturn": "Ƒe sia ƒe viɖe",
+  "portfolioPerYear": "{percent} / ƒe",
+  "portfolioAnnualReturnHint": "Ƒe sia ƒe viɖe si wokpɔ le ga si nède eme nu (XIRR): ebua ɣeyiɣi si nèƒle nu kple esi nèdzra nu ŋu, eya ta ga si nètsɔ kpe ɖe eŋu emegbe megblẽa nu le eŋu o. Wofiana ne wò nuƒeƒle gbãtɔ xɔ ƒe ɖeka ya teti; viɖemama mele eme o."
 }

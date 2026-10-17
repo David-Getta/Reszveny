@@ -623,5 +623,9 @@
   "watchAlertAll": "Brīdinājums par lielām dienas izmaiņām",
   "watchAlertAllHint": "Cenas brīdinājums katrai šī saraksta akcijai: tas nostrādās, kad dienas laikā tā mainīsies tik daudz – uz augšu vai uz leju. Akcijas, kurām tāds jau ir, to saglabā.",
   "watchAlertAllDone": "{count, plural, zero{Iestatīti {count} brīdinājumi} one{Iestatīts {count} brīdinājums} other{Iestatīti {count} brīdinājumi}}",
-  "portfolioExportRealized": "Eksportēt realizēto peļņu (CSV)"
+  "portfolioExportRealized": "Eksportēt realizēto peļņu (CSV)",
+  "eventsAddToCalendar": "Pievienot kalendāram (.ics)",
+  "portfolioAnnualReturn": "Gada ienesīgums",
+  "portfolioPerYear": "{percent} gadā",
+  "portfolioAnnualReturnHint": "Naudas plūsmās svērtais gada ienesīgums (XIRR): ņem vērā, kad jūs pirkāt un pārdevāt, tāpēc vēlāk pievienota nauda to neizkropļo. Tiek rādīts, kad jūsu pirmajam pirkumam ir vismaz gads; dividendes nav iekļautas."
 }

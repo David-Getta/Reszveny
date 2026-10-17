@@ -2335,4 +2335,19 @@ class AppLocalizationsPcm extends AppLocalizations {
   @override
   String get portfolioExportRealized =>
       'Export di profit wey you don collect (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Yearly return';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent every year';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Yearly return wey dey weigh your moni (XIRR): e dey check when you buy and when you sell, so moni wey you add later no go spoil am. E go show once your first buy don reach at least one year; dividend no dey inside.';
+
+  @override
+  String get eventsAddToCalendar => 'Add am to calendar (.ics)';
 }

@@ -2344,4 +2344,19 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String get portfolioExportRealized =>
       'Εξαγωγή πραγματοποιηθέντων κερδών (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Ετήσια απόδοση';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / έτος';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Σταθμισμένη ως προς τα χρήματα ετήσια απόδοση (XIRR): λαμβάνει υπόψη πότε αγοράσατε και πουλήσατε, ώστε τα χρήματα που προστέθηκαν αργότερα να μην την αλλοιώνουν. Εμφανίζεται μόλις η πρώτη σας αγορά συμπληρώσει τουλάχιστον έναν χρόνο· τα μερίσματα δεν περιλαμβάνονται.';
+
+  @override
+  String get eventsAddToCalendar => 'Προσθήκη στο ημερολόγιο (.ics)';
 }

@@ -2327,4 +2327,19 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'ייצוא רווחים ממומשים (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'תשואה שנתית';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent לשנה';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'תשואה שנתית משוקללת לפי תזרימי הכסף (XIRR): מתחשבת במועדי הקנייה והמכירה, כך שכסף שנוסף מאוחר יותר לא מעוות אותה. מוצגת לאחר שחלפה לפחות שנה מהרכישה הראשונה שלך; דיבידנדים אינם נכללים.';
+
+  @override
+  String get eventsAddToCalendar => 'הוספה ליומן (.ics)';
 }

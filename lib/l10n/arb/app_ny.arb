@@ -623,5 +623,9 @@
   "watchAlertAll": "Chenjezo pa kusintha kwakukulu kwa tsiku",
   "watchAlertAllHint": "Chenjezo la mtengo pa gawo lililonse la mndandandawu: lidzalira likasintha chonchi tsiku limodzi, mmwamba kapena pansi. Omwe ali nalo kale adzasunga lawo.",
   "watchAlertAllDone": "{count, plural, =1{Chenjezo 1 lakhazikitsidwa} other{Machenjezo {count} akhazikitsidwa}}",
-  "portfolioExportRealized": "Tumizani phindu lomwe mwapeza (CSV)"
+  "portfolioExportRealized": "Tumizani phindu lomwe mwapeza (CSV)",
+  "eventsAddToCalendar": "Onjezani ku kalendala (.ics)",
+  "portfolioAnnualReturn": "Phindu la pachaka",
+  "portfolioPerYear": "{percent} / chaka",
+  "portfolioAnnualReturnHint": "Phindu la pachaka loyezedwa ndi ndalama (XIRR): limaganizira nthawi yomwe munagula ndi kugulitsa, choncho ndalama zowonjezeredwa pambuyo pake sizilisokoneza. Limawonetsedwa zogula zanu zoyamba zikakwana chaka chimodzi kapena kuposerapo; magawo a phindu sanaphatikizidwe."
 }

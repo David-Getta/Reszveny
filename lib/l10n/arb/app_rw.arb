@@ -623,5 +623,9 @@
   "watchAlertAll": "Imenyesha ku mihindagurikire minini y'umunsi",
   "watchAlertAllHint": "Imenyesha ry'igiciro kuri buri mugabane uri kuri uru rutonde: rizavuga igihe uhindutse gutya mu munsi umwe, uzamuka cyangwa umanuka. Iyari isanganywe imenyesha izagumana iryayo.",
   "watchAlertAllDone": "{count, plural, =1{Hashyizweho imenyesha 1} other{Hashyizweho amamenyesha {count}}}",
-  "portfolioExportRealized": "Ohereza inyungu zabonetse (CSV)"
+  "portfolioExportRealized": "Ohereza inyungu zabonetse (CSV)",
+  "eventsAddToCalendar": "Shyira kuri kalendari (.ics)",
+  "portfolioAnnualReturn": "Inyungu ku mwaka",
+  "portfolioPerYear": "{percent} / umwaka",
+  "portfolioAnnualReturnHint": "Inyungu ku mwaka ipimwa hashingiwe ku mafaranga (XIRR): yita ku gihe waguriye n'igihe wagurishirije, bityo amafaranga wongeyemo nyuma ntayigoreka. Igaragara iyo ibyo waguze bwa mbere bimaze nibura umwaka; inyungu ku migabane ntizirimo."
 }

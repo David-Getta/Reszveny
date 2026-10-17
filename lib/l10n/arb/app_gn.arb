@@ -623,5 +623,9 @@
   "watchAlertAll": "Momarandu ára ñemonguʼe tuichávape",
   "watchAlertAllHint": "Hepykue momarandu opavave acción ko listapegua: omomarandúta oñemonguʼérõ kóicha peteĩ árape, yvate térã yvy gotyo. Oguerekóva peteĩ ymaite oñongatu imbaʼe.",
   "watchAlertAllDone": "{count, plural, =1{Oñemohenda 1 momarandu} other{Oñemohenda {count} momarandu}}",
-  "portfolioExportRealized": "Emondo viru jehupyty (CSV)"
+  "portfolioExportRealized": "Emondo viru jehupyty (CSV)",
+  "eventsAddToCalendar": "Embojuaju arapapahápe (.ics)",
+  "portfolioAnnualReturn": "Rendimiento arýpe",
+  "portfolioPerYear": "{percent} / ary",
+  "portfolioAnnualReturnHint": "Rendimiento arýpe oñepesáva viru rehe (XIRR): ohecha araka'épa rejogua ha reñemu, upévare viru remoĩvéva upéi ndombyaíri chupe. Ojehechauka ne jejogua peteĩha ohasa rire ary peteĩ, sa'ive ramo; dividendo ndoikéi."
 }

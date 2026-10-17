@@ -623,5 +623,9 @@
   "watchAlertAll": "Akeekkachiisa sochii guddaa guyyaa",
   "watchAlertAllHint": "Akeekkachiisa gatii aksiyoona tarree kana keessa jiru hundaaf: guyyaa tokkotti hammana yoo ol ykn gadi socho'e ni beeksisa. Kanneen duraan qaban kan isaanii ni eeggatu.",
   "watchAlertAllDone": "{count, plural, =1{Akeekkachiisni 1 qindaa'eera} other{Akeekkachiisni {count} qindaa'aniiru}}",
-  "portfolioExportRealized": "Bu'aa argame ergi (CSV)"
+  "portfolioExportRealized": "Bu'aa argame ergi (CSV)",
+  "eventsAddToCalendar": "Kaalaandariitti dabali (.ics)",
+  "portfolioAnnualReturn": "Bu'aa waggaa",
+  "portfolioPerYear": "{percent} / waggaa",
+  "portfolioAnnualReturnHint": "Bu'aa waggaa maallaqaan madaalame (XIRR): yeroo itti bitte fi gurgurte ni ilaala, kanaaf maallaqni booda dabalame hin jallisu. Erga bittaan kee jalqabaa yoo xiqqaate waggaa tokko guutee booda ni mul'ata; qoodni bu'aa hin dabalamne."
 }

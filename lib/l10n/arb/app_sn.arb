@@ -623,5 +623,9 @@
   "watchAlertAll": "Yambiro pakuchinja kukuru kwezuva",
   "watchAlertAllHint": "Yambiro remutengo kune yega yega share iri pane rondedzero iyi: richarira kana ichinja zvakadai muzuva rimwe, kumusoro kana pasi. Idzo dzatova neimwe dzicharamba nedzadzo.",
   "watchAlertAllDone": "{count, plural, =1{Yambiro 1 raiswa} other{Yambiro {count} dzaiswa}}",
-  "portfolioExportRealized": "Tumira purofiti yawanikwa (CSV)"
+  "portfolioExportRealized": "Tumira purofiti yawanikwa (CSV)",
+  "eventsAddToCalendar": "Wedzera kukarenda (.ics)",
+  "portfolioAnnualReturn": "Pundutso yegore",
+  "portfolioPerYear": "{percent} / gore",
+  "portfolioAnnualReturnHint": "Pundutso yegore inoyerwa nemari (XIRR): inofunga kuti wakatenga uye wakatengesa rini, saka mari inowedzerwa gare gare haiikanganise. Inoratidzwa kana kutenga kwako kwekutanga kwave negore rimwe zvishoma; dhividhendi hadzina kubatanidzwa."
 }

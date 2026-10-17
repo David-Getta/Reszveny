@@ -623,5 +623,9 @@
   "watchAlertAll": "Įspėjimas apie didelius dienos pokyčius",
   "watchAlertAllHint": "Kainos įspėjimas kiekvienai šio sąrašo akcijai: suveiks, kai per dieną ji pajudės tiek aukštyn arba žemyn. Akcijos, kurios jau turi tokį, pasilieka savąjį.",
   "watchAlertAllDone": "{count, plural, one{Nustatytas {count} įspėjimas} few{Nustatyti {count} įspėjimai} many{Nustatyta {count} įspėjimo} other{Nustatyta {count} įspėjimų}}",
-  "portfolioExportRealized": "Eksportuoti realizuotą pelną (CSV)"
+  "portfolioExportRealized": "Eksportuoti realizuotą pelną (CSV)",
+  "eventsAddToCalendar": "Pridėti į kalendorių (.ics)",
+  "portfolioAnnualReturn": "Metinė grąža",
+  "portfolioPerYear": "{percent} per metus",
+  "portfolioAnnualReturnHint": "Pinigais svertinė metinė grąža (XIRR): atsižvelgia į tai, kada pirkote ir pardavėte, todėl vėliau pridėti pinigai jos neiškreipia. Rodoma, kai nuo pirmojo jūsų pirkimo praeina bent metai; dividendai neįtraukti."
 }

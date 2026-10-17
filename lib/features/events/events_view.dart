@@ -1,11 +1,17 @@
+import 'dart:convert';
+
+import 'package:file_selector/file_selector.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import '../../app_services.dart';
 import '../../core/models/stock_candidate.dart';
+import '../../core/share/save_file.dart';
 import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/centered_scroll.dart';
+import 'calendar_export.dart';
 import 'events_service.dart';
 
 /// „Mikor?”: ma, holnap, N nap múlva.
@@ -17,6 +23,60 @@ String eventWhen(AppLocalizations l10n, DateTime day, DateTime today) {
     _ => l10n.eventInDays(days),
   };
 }
+
+/// Az esemény címe (gyorsjelentésnél a napszakkal) és a részlete (EPS-várakozás,
+/// illetve hogy elemzésből származik) – a listában és a naptárban is ez látszik.
+({String title, String? detail}) eventText(AppLocalizations l10n, Fmt fmt, UpcomingEvent e) {
+  final earnings = e.kind == UpcomingEventKind.earnings;
+  final when = switch (e.hour) {
+    'bmo' => l10n.eventBeforeOpen,
+    'amc' => l10n.eventAfterClose,
+    _ => null,
+  };
+  return (
+    title: earnings ? [l10n.eventEarnings, ?when].join(' · ') : e.text,
+    detail: earnings
+        ? (e.epsEstimate == null ? null : l10n.eventEpsEstimate(fmt.number(e.epsEstimate!)))
+        : l10n.eventFromAnalysis,
+  );
+}
+
+/// Az események naptárbejegyzésként; az azonosító a ticker, a fajta, a nap
+/// (és elemzésből jövő eseménynél a szöveg) alapján állandó.
+List<CalendarEntry> calendarEntries(AppLocalizations l10n, Fmt fmt, List<UpcomingEvent> events) => [
+  for (final e in events)
+    if (eventText(l10n, fmt, e) case final t)
+      (
+        uid: [
+          e.kind.name,
+          e.symbol,
+          e.date.toIso8601String().substring(0, 10),
+          if (e.kind == UpcomingEventKind.catalyst) _stableHash(e.text),
+        ].join('-'),
+        day: e.date,
+        summary: '${e.symbol} · ${t.title}',
+        description: t.detail ?? '',
+      ),
+];
+
+/// Futásonként is ugyanaz (a `String.hashCode` nem garantáltan az).
+String _stableHash(String s) {
+  var h = 0x811c9dc5;
+  for (final b in utf8.encode(s)) {
+    h = ((h ^ b) * 0x01000193) & 0xffffffff;
+  }
+  return h.toRadixString(16);
+}
+
+/// A naptárfájl mentése. Tesztben lecserélhető.
+typedef CalendarSaver = Future<void> Function(Uint8List bytes, String fileName);
+
+CalendarSaver saveCalendarFile = (bytes, fileName) => saveFile(
+  bytes,
+  fileName,
+  mimeType: 'text/calendar',
+  type: const XTypeGroup(label: 'iCalendar', extensions: ['ics'], uniformTypeIdentifiers: ['com.apple.ical.ics']),
+);
 
 /// A kezdőképernyő része: a következő néhány esemény (30 napon belül) a
 /// kedvencekhez és a portfólióhoz, „Mind” gombbal a teljes listához.
@@ -122,15 +182,7 @@ class EventTile extends StatelessWidget {
     final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
     final e = event;
     final earnings = e.kind == UpcomingEventKind.earnings;
-    final when = switch (e.hour) {
-      'bmo' => l10n.eventBeforeOpen,
-      'amc' => l10n.eventAfterClose,
-      _ => null,
-    };
-    final title = earnings ? [l10n.eventEarnings, ?when].join(' · ') : e.text;
-    final detail = earnings
-        ? (e.epsEstimate == null ? null : l10n.eventEpsEstimate(fmt.number(e.epsEstimate!)))
-        : l10n.eventFromAnalysis;
+    final (:title, :detail) = eventText(l10n, fmt, e);
     return ListTile(
       key: ValueKey('event-${e.symbol}-${e.kind.name}-${e.date.toIso8601String().substring(0, 10)}'),
       leading: CircleAvatar(
@@ -171,7 +223,27 @@ class EventsPage extends StatelessWidget {
     final p = AppPalette.of(context);
     final theme = Theme.of(context);
     return Scaffold(
-      appBar: AppBar(title: Text(l10n.upcomingEvents)),
+      appBar: AppBar(
+        title: Text(l10n.upcomingEvents),
+        actions: [
+          ListenableBuilder(
+            listenable: services.events,
+            builder: (context, _) => IconButton(
+              key: const ValueKey('events-calendar'),
+              tooltip: l10n.eventsAddToCalendar,
+              icon: const Icon(Icons.edit_calendar_outlined),
+              onPressed: services.events.events.isEmpty
+                  ? null
+                  : () {
+                      final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
+                      final ics = icsCalendar(calendarEntries(l10n, fmt, services.events.events), now: DateTime.now());
+                      services.telemetry.track('calendar_exported');
+                      saveCalendarFile(utf8.encode(ics), 'whatstock-events.ics');
+                    },
+            ),
+          ),
+        ],
+      ),
       body: ListenableBuilder(
         listenable: services.events,
         builder: (context, _) {

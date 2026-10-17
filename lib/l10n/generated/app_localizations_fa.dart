@@ -2331,4 +2331,19 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'خروجی سود محقق‌شده (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'بازده سالانه';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent در سال';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'بازده سالانهٔ وزنی‌شده با جریان نقدی (XIRR): زمان خرید و فروش شما را در نظر می‌گیرد، بنابراین پولی که بعداً اضافه می‌شود آن را مخدوش نمی‌کند. وقتی دست‌کم یک سال از اولین خرید شما گذشته باشد نمایش داده می‌شود؛ سود نقدی لحاظ نشده است.';
+
+  @override
+  String get eventsAddToCalendar => 'افزودن به تقویم (.ics)';
 }

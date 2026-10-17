@@ -623,5 +623,9 @@
   "watchAlertAll": "Pènget kanggo owah-owahan gedhé saben dina",
   "watchAlertAllHint": "Pènget rega kanggo saben saham ing dhaptar iki sing muni yèn saham obah semono sajroning sedina, munggah utawa mudhun. Saham sing wis duwé pènget tetep nganggo duwèké.",
   "watchAlertAllDone": "{count, plural, =1{1 pènget wis dipasang} other{{count} pènget wis dipasang}}",
-  "portfolioExportRealized": "Ekspor bathi sing wis direalisasi (CSV)"
+  "portfolioExportRealized": "Ekspor bathi sing wis direalisasi (CSV)",
+  "eventsAddToCalendar": "Tambahake menyang kalender (.ics)",
+  "portfolioAnnualReturn": "Imbal hasil taunan",
+  "portfolioPerYear": "{percent} / taun",
+  "portfolioAnnualReturnHint": "Imbal hasil taunan sing ditimbang miturut dhuwit (XIRR): ngetung kapan sampeyan tuku lan adol, dadi dhuwit sing ditambahake mengko ora ngrusak itungane. Ditampilake yen tukon pisanan sampeyan wis paling ora setaun; dividen ora kalebu."
 }

@@ -2330,4 +2330,19 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'ਪ੍ਰਾਪਤ ਮੁਨਾਫ਼ਾ ਨਿਰਯਾਤ ਕਰੋ (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'ਸਾਲਾਨਾ ਰਿਟਰਨ';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / ਸਾਲ';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'ਪੈਸਾ-ਭਾਰਿਤ ਸਾਲਾਨਾ ਰਿਟਰਨ (XIRR): ਇਹ ਧਿਆਨ ਵਿੱਚ ਰੱਖਦਾ ਹੈ ਕਿ ਤੁਸੀਂ ਕਦੋਂ ਖ਼ਰੀਦਿਆ ਅਤੇ ਵੇਚਿਆ, ਇਸ ਲਈ ਬਾਅਦ ਵਿੱਚ ਜੋੜਿਆ ਪੈਸਾ ਇਸਨੂੰ ਨਹੀਂ ਵਿਗਾੜਦਾ। ਤੁਹਾਡੀ ਪਹਿਲੀ ਖ਼ਰੀਦ ਘੱਟੋ-ਘੱਟ ਇੱਕ ਸਾਲ ਪੁਰਾਣੀ ਹੋਣ \'ਤੇ ਦਿਖਾਇਆ ਜਾਂਦਾ ਹੈ; ਲਾਭਅੰਸ਼ ਸ਼ਾਮਲ ਨਹੀਂ ਹਨ।';
+
+  @override
+  String get eventsAddToCalendar => 'ਕੈਲੰਡਰ ਵਿੱਚ ਸ਼ਾਮਲ ਕਰੋ (.ics)';
 }

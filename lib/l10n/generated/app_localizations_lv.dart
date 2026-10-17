@@ -2375,4 +2375,19 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Eksportēt realizēto peļņu (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Gada ienesīgums';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent gadā';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Naudas plūsmās svērtais gada ienesīgums (XIRR): ņem vērā, kad jūs pirkāt un pārdevāt, tāpēc vēlāk pievienota nauda to neizkropļo. Tiek rādīts, kad jūsu pirmajam pirkumam ir vismaz gads; dividendes nav iekļautas.';
+
+  @override
+  String get eventsAddToCalendar => 'Pievienot kalendāram (.ics)';
 }

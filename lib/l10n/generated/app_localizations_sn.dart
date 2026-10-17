@@ -2340,4 +2340,19 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Tumira purofiti yawanikwa (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Pundutso yegore';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / gore';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Pundutso yegore inoyerwa nemari (XIRR): inofunga kuti wakatenga uye wakatengesa rini, saka mari inowedzerwa gare gare haiikanganise. Inoratidzwa kana kutenga kwako kwekutanga kwave negore rimwe zvishoma; dhividhendi hadzina kubatanidzwa.';
+
+  @override
+  String get eventsAddToCalendar => 'Wedzera kukarenda (.ics)';
 }

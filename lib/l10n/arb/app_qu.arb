@@ -623,5 +623,9 @@
   "watchAlertAll": "Hatun p'unchaw kuyuypaq willay",
   "watchAlertAllHint": "Kay listapi sapa acciónpaq chaninpa willaynin: huk p'unchawpi kayhinata kuyuptin, wichayman utaq uraykuman, willasunki. Ñas willayniyuq kaqkuna paykunapata waqaychanqaku.",
   "watchAlertAllDone": "{count, plural, =1{1 willay churasqa} other{{count} willay churasqa}}",
-  "portfolioExportRealized": "Chaskisqa mirayta hurquy (CSV)"
+  "portfolioExportRealized": "Chaskisqa mirayta hurquy (CSV)",
+  "eventsAddToCalendar": "Kalendariuman yapay (.ics)",
+  "portfolioAnnualReturn": "Watapaq rendimiento",
+  "portfolioPerYear": "{percent} / wata",
+  "portfolioAnnualReturnHint": "Qullqiwan pesasqa watapaq rendimiento (XIRR): hayk'ap rantisqaykita, rantikusqaykitapas qhawan, chaymi qhipaman yapasqa qullqiqa mana pantachinchu. Rikuchikun ñawpaq rantisqayki huk watayuq kaptin; dividendokunaqa manam yapasqachu."
 }

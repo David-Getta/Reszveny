@@ -623,5 +623,9 @@
   "watchAlertAll": "Dimanyisha bua dishintuluka dinene dia dituku",
   "watchAlertAllHint": "Dimanyisha dia mushinga bua tshiabu tshionso tshidi mu liste eu: nedituta padi tshishintuluka nunku mu dituku dimue, kulu anyi panshi. Bidi ne dimanyisha kumpala nebishale nadi.",
   "watchAlertAllDone": "{count, plural, =1{Dimanyisha 1 diateka} other{Mamanyisha {count} maateka}}",
-  "portfolioExportRealized": "Umusha diakamuena didi diangata (CSV)"
+  "portfolioExportRealized": "Umusha diakamuena didi diangata (CSV)",
+  "eventsAddToCalendar": "Bueja mu kalandriye (.ics)",
+  "portfolioAnnualReturn": "Dipeta dia tshidimu",
+  "portfolioPerYear": "{percent} / tshidimu",
+  "portfolioAnnualReturnHint": "Dipeta dia tshidimu didibu bapime ne mfranga (XIRR): didi ditangila tshikondo tshiwakasumba ne tshiwakasumbisha, nunku mfranga yuudi musakidile pashishe kayena idinyanga to. Didi dimweneka padi tshisumbu tshiebe tshia kumpala tshikumbaja tshidimu tshimue to kupita; ba-dividende kabavuamu to."
 }

@@ -623,5 +623,9 @@
   "watchAlertAll": "Fampitandremana amin'ny fihetsehana lehibe isan'andro",
   "watchAlertAllHint": "Fampitandremana momba ny vidiny ho an'ny petra-bola tsirairay ato amin'ity lisitra ity: maneno izy rehefa mihetsika toy izao ao anatin'ny iray andro, miakatra na midina. Izay efa manana dia mitazona ny azy.",
   "watchAlertAllDone": "{count, plural, =1{Napetraka ny fampitandremana 1} other{Napetraka ny fampitandremana {count}}}",
-  "portfolioExportRealized": "Avoahy ny tombony azo (CSV)"
+  "portfolioExportRealized": "Avoahy ny tombony azo (CSV)",
+  "eventsAddToCalendar": "Ampio amin'ny tetiandro (.ics)",
+  "portfolioAnnualReturn": "Tombony isan-taona",
+  "portfolioPerYear": "{percent} / taona",
+  "portfolioAnnualReturnHint": "Tombony isan-taona voalanja araka ny vola (XIRR): mihevitra ny fotoana nividiananao sy nivarotanao, ka tsy manodinkodina azy ny vola nampidirina taty aoriana. Aseho rehefa feno herintaona farafahakeliny ny fividiananao voalohany; tsy tafiditra ny dividenda."
 }

@@ -623,5 +623,9 @@
   "watchAlertAll": "Arifa kwa mabadiliko makubwa ya siku",
   "watchAlertAllHint": "Arifa ya bei kwa kila hisa katika orodha hii itakayolia inaposogea kiasi hiki kwa siku moja, juu au chini. Hisa ambazo tayari zina arifa zitabaki na zake.",
   "watchAlertAllDone": "{count, plural, =1{Arifa 1 imewekwa} other{Arifa {count} zimewekwa}}",
-  "portfolioExportRealized": "Hamisha faida iliyopatikana (CSV)"
+  "portfolioExportRealized": "Hamisha faida iliyopatikana (CSV)",
+  "eventsAddToCalendar": "Ongeza kwenye kalenda (.ics)",
+  "portfolioAnnualReturn": "Faida ya mwaka",
+  "portfolioPerYear": "{percent} / mwaka",
+  "portfolioAnnualReturnHint": "Faida ya mwaka iliyopimwa kwa fedha (XIRR): inazingatia ulinunua na kuuza lini, kwa hivyo pesa zilizoongezwa baadaye haziipotoshi. Huonyeshwa ununuzi wako wa kwanza ukifikisha angalau mwaka mmoja; gawio halijajumuishwa."
 }

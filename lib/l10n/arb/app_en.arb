@@ -1828,5 +1828,23 @@
   "portfolioExportRealized": "Export realized gains (CSV)",
   "@portfolioExportRealized": {
     "description": "Portfolio menu item: one row per sale with FIFO cost basis and gain, e.g. for a tax return."
+  },
+  "portfolioAnnualReturn": "Annual return",
+  "portfolioPerYear": "{percent} / year",
+  "portfolioAnnualReturnHint": "Money-weighted annual return (XIRR): it takes into account when you bought and sold, so money added later doesn't distort it. Shown once your first purchase is at least a year old; dividends are not included.",
+  "@portfolioPerYear": {
+    "description": "Annualized return value, e.g. '+12.3% / year'.",
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      }
+    }
+  },
+  "@portfolioAnnualReturnHint": {
+    "description": "Tooltip explaining the annualized (XIRR) return on the portfolio summary."
+  },
+  "eventsAddToCalendar": "Add to calendar (.ics)",
+  "@eventsAddToCalendar": {
+    "description": "Tooltip of the button on the Upcoming events page that saves all events as an .ics calendar file."
   }
 }

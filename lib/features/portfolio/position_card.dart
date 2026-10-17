@@ -6,6 +6,7 @@ import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 import '../stock_detail/widgets/section_card.dart';
+import 'annual_return.dart';
 import 'portfolio_page.dart';
 import 'portfolio_valuation.dart';
 
@@ -64,6 +65,19 @@ class PositionCard extends StatelessWidget {
                 value: fmt.money(pos.cost, ccy),
                 sub: l10n.portfolioAvgCost(fmt.money(pos.averageCost, ccy, showCurrency: false)),
               ),
+              if (row.value case final v?)
+                if (positionsAnnualReturn([pos], (_) => 1, v, DateTime.now()) case final r?)
+                  Tooltip(
+                    message: l10n.portfolioAnnualReturnHint,
+                    triggerMode: TooltipTriggerMode.tap,
+                    showDuration: const Duration(seconds: 6),
+                    child: _Figure(
+                      key: const ValueKey('position-annual-return'),
+                      label: l10n.portfolioAnnualReturn,
+                      value: l10n.portfolioPerYear(fmt.percent(r * 100, withSign: true)),
+                      color: gainColor(p, r),
+                    ),
+                  ),
               if (pos.hasSales)
                 _Figure(
                   label: l10n.portfolioRealized,
@@ -79,7 +93,7 @@ class PositionCard extends StatelessWidget {
 }
 
 class _Figure extends StatelessWidget {
-  const _Figure({required this.label, required this.value, this.sub, this.color});
+  const _Figure({super.key, required this.label, required this.value, this.sub, this.color});
 
   final String label;
   final String value;

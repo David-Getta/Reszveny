@@ -2333,4 +2333,19 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Sifeḍ irbaḥen yettwaḥeqqen (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Afaris n useggas';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / aseggas';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Afaris n useggas yettwaktalen s yidrimen (XIRR): yettak azal i wakud deg i d-teɣiḍ akked wakud deg i tzenzeḍ, ihi idrimen i d-ternuḍ ar zdat ur t-ssexsaren ara. Yettban mi ara iɛeddi useggas ma drus seg usaɣ-ik amezwaru; dividand ur yettwasiden ara.';
+
+  @override
+  String get eventsAddToCalendar => 'Rnu ɣer uwitay (.ics)';
 }

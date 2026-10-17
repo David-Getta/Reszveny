@@ -2336,4 +2336,19 @@ class AppLocalizationsCkb extends AppLocalizations {
   @override
   String get portfolioExportRealized =>
       'هەناردەکردنی قازانجی بەدەستهاتوو (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'قازانجی ساڵانە';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / ساڵ';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'قازانجی ساڵانەی کێشکراو بە پارە (XIRR): ئەوە لەبەرچاو دەگرێت کە کەی کڕیوتە و فرۆشتووتە، بۆیە ئەو پارەیەی دواتر زیاد دەکرێت تێکی نادات. کاتێک نیشان دەدرێت کە لانیکەم یەک ساڵ بەسەر یەکەم کڕینتدا تێپەڕیبێت؛ قازانجی پشک تێیدا نییە.';
+
+  @override
+  String get eventsAddToCalendar => 'زیادکردن بۆ ڕۆژژمێر (.ics)';
 }

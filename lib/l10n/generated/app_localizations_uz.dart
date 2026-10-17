@@ -2339,4 +2339,19 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get portfolioExportRealized =>
       'Amalga oshgan foydani eksport qilish (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Yillik daromadlilik';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / yil';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Pul oqimlari boʻyicha tortilgan yillik daromadlilik (XIRR): qachon sotib olganingiz va sotganingizni hisobga oladi, shuning uchun keyinroq qoʻshilgan pul uni buzmaydi. Birinchi xaridingizga kamida bir yil toʻlganda koʻrsatiladi; dividendlar kiritilmagan.';
+
+  @override
+  String get eventsAddToCalendar => 'Taqvimga qoʻshish (.ics)';
 }

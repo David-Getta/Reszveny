@@ -2338,4 +2338,19 @@ class AppLocalizationsSu extends AppLocalizations {
   @override
   String get portfolioExportRealized =>
       'Ékspor kauntungan nu geus diréalisasikeun (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Imbal hasil taunan';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / taun';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Imbal hasil taunan anu ditimbang dumasar artos (XIRR): ngitung iraha anjeun meuli jeung ngajual, jadi artos anu ditambahkeun engké henteu ngaganggu itunganana. Ditémbongkeun saatos pameulian munggaran anjeun sahenteuna sataun; dividén henteu kaasup.';
+
+  @override
+  String get eventsAddToCalendar => 'Tambahkeun ka kalénder (.ics)';
 }

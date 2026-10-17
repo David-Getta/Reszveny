@@ -2326,4 +2326,19 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'ترلاسه شوې ګټه صادرول (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'کلنۍ ګټه';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / کال';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'د پیسو له مخې وزن شوې کلنۍ ګټه (XIRR): دا په پام کې نیسي چې تاسو کله پېرل او پلورل کړي، نو وروسته اضافه شوې پیسې یې نه اړوي. هغه وخت ښودل کېږي چې ستاسو لومړی پېرود لږ تر لږه یو کال زوړ شي؛ د ونډې ګټه پکې شامله نه ده.';
+
+  @override
+  String get eventsAddToCalendar => 'جنتري ته ورزیات کړئ (.ics)';
 }

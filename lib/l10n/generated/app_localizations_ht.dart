@@ -2333,4 +2333,19 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Ekspòte pwofi reyalize yo (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Rannman anyèl';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / ane';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Rannman anyèl ki peze selon lajan an (XIRR): li konte ki lè ou te achte ak vann, kidonk lajan ou ajoute pita pa defòme l. Li parèt depi premye acha ou gen omwen yon ane; dividann yo pa ladan l.';
+
+  @override
+  String get eventsAddToCalendar => 'Ajoute nan kalandriye (.ics)';
 }

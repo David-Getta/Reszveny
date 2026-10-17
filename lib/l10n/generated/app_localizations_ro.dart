@@ -2372,4 +2372,19 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Exportă câștigurile realizate (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Randament anual';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / an';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Randament anual ponderat cu banii (XIRR): ține cont de momentul în care ai cumpărat și ai vândut, așa că banii adăugați ulterior nu îl distorsionează. Se afișează când prima ta cumpărare are cel puțin un an; dividendele nu sunt incluse.';
+
+  @override
+  String get eventsAddToCalendar => 'Adaugă în calendar (.ics)';
 }

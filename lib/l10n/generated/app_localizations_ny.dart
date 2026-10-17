@@ -2341,4 +2341,19 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Tumizani phindu lomwe mwapeza (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Phindu la pachaka';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / chaka';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Phindu la pachaka loyezedwa ndi ndalama (XIRR): limaganizira nthawi yomwe munagula ndi kugulitsa, choncho ndalama zowonjezeredwa pambuyo pake sizilisokoneza. Limawonetsedwa zogula zanu zoyamba zikakwana chaka chimodzi kapena kuposerapo; magawo a phindu sanaphatikizidwe.';
+
+  @override
+  String get eventsAddToCalendar => 'Onjezani ku kalendala (.ics)';
 }

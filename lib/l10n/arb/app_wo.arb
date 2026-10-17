@@ -623,5 +623,9 @@
   "watchAlertAll": "Artu ci coppite yu mag ci bés",
   "watchAlertAllHint": "Artu njëg ngir bépp aksiyoŋ ci limm bii: dina la xamal bu coppitee nii ci benn bés, kaw walla suuf. Yi am benn ba noppi dinañu des ak seen bos.",
   "watchAlertAllDone": "{count, plural, =1{Teg nañu 1 artu} other{Teg nañu {count} artu}}",
-  "portfolioExportRealized": "Génne njariñ yi ñu am (CSV)"
+  "portfolioExportRealized": "Génne njariñ yi ñu am (CSV)",
+  "eventsAddToCalendar": "Yokk ci kalandiriye bi (.ics)",
+  "portfolioAnnualReturn": "Benefis bu at",
+  "portfolioPerYear": "{percent} / at",
+  "portfolioAnnualReturnHint": "Benefis bu at bu ñu natt ci xaalis bi (XIRR): dafay xool kañ nga jënd ak kañ nga jaay, kon xaalis bi nga yokk ginnaaw du ko yàq. Dañu koy wone su sa jënd bu jëkk weesoo benn at lu néew-néew; dividand yi bokkuñu ci."
 }

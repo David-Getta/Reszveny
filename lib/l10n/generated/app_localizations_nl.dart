@@ -2339,4 +2339,19 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Gerealiseerde winst exporteren (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Jaarrendement';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / jaar';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Geldgewogen jaarrendement (XIRR): houdt rekening met wanneer je hebt gekocht en verkocht, zodat later toegevoegd geld het niet vertekent. Wordt getoond zodra je eerste aankoop minstens een jaar oud is; dividenden zijn niet meegerekend.';
+
+  @override
+  String get eventsAddToCalendar => 'Toevoegen aan agenda (.ics)';
 }

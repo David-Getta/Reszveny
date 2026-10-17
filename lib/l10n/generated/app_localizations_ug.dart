@@ -2337,4 +2337,19 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'ئەمەلگە ئاشقان پايدىنى چىقىرىش (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'يىللىق پايدا نىسبىتى';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / يىل';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'پۇل بىلەن ئۆلچەنگەن يىللىق پايدا نىسبىتى (XIRR): قاچان سېتىۋالغان ۋە ساتقانلىقىڭىزنى ھېسابقا ئالىدۇ، شۇڭا كېيىن قوشۇلغان پۇل ئۇنى بۇرمىلىمايدۇ. تۇنجى سېتىۋېلىشىڭىزغا كەم دېگەندە بىر يىل توشقاندا كۆرسىتىلىدۇ؛ پايدا ئۈلۈشى ئۆز ئىچىگە ئېلىنمىغان.';
+
+  @override
+  String get eventsAddToCalendar => 'كالېندارغا قوشۇش (.ics)';
 }

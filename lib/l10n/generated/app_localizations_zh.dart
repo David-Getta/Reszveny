@@ -2224,6 +2224,21 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => '导出已实现盈亏 (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => '年化收益率';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / 年';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      '资金加权年化收益率（XIRR）：会考虑你买入和卖出的时间，因此后来追加的资金不会造成偏差。首次买入满一年后显示；不含股息。';
+
+  @override
+  String get eventsAddToCalendar => '添加到日历 (.ics)';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -4444,4 +4459,19 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get portfolioExportRealized => '匯出已實現盈虧 (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => '年化回報率';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / 年';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      '資金加權年化回報率（XIRR）：會考慮你買入及賣出的時間，因此其後追加的資金不會造成偏差。首次買入滿一年後顯示；不包括股息。';
+
+  @override
+  String get eventsAddToCalendar => '加入日曆 (.ics)';
 }

@@ -2350,4 +2350,19 @@ class AppLocalizationsNso extends AppLocalizations {
   @override
   String get portfolioExportRealized =>
       'Romela ka ntle dipoelo tšeo di hweditšwego (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Poelo ya ngwaga';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / ngwaga';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Poelo ya ngwaga yeo e lekanyeditšwego ka tšhelete (XIRR): e ela hloko gore o rekile le go rekiša neng, ka gona tšhelete yeo e okeditšwego ka morago ga e e kgopamiše. E bontšhwa ge theko ya gago ya mathomo e na le bonyane ngwaga o tee; dividende ga e akaretšwe.';
+
+  @override
+  String get eventsAddToCalendar => 'Oketša go khalendara (.ics)';
 }

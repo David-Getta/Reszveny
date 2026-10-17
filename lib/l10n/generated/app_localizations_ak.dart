@@ -2334,4 +2334,19 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Yi mfaso a woanya kɔ (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Afe mfaso';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / afe';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Mfaso a ɛgyina sika so afe biara (XIRR): ɛhwɛ bere a wotɔe ne bere a wotɔn, enti sika a wode ka ho akyiri no nsɛe no. Yɛkyerɛ no bere a w\'adetɔ a edi kan no adi afe koro anaa nea ɛboro saa; mfaso kyɛ nka ho.';
+
+  @override
+  String get eventsAddToCalendar => 'Fa ka kalenda ho (.ics)';
 }

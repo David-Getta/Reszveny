@@ -2338,4 +2338,19 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Ɖo viɖe siwo wokpɔ ɖa (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Ƒe sia ƒe viɖe';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / ƒe';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Ƒe sia ƒe viɖe si wokpɔ le ga si nède eme nu (XIRR): ebua ɣeyiɣi si nèƒle nu kple esi nèdzra nu ŋu, eya ta ga si nètsɔ kpe ɖe eŋu emegbe megblẽa nu le eŋu o. Wofiana ne wò nuƒeƒle gbãtɔ xɔ ƒe ɖeka ya teti; viɖemama mele eme o.';
+
+  @override
+  String get eventsAddToCalendar => 'Tsɔ kpe ɖe kalenda ŋu (.ics)';
 }

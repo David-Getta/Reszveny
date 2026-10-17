@@ -2393,4 +2393,19 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Exportovat realizované zisky (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Roční výnos';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / rok';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Peněžně vážený roční výnos (XIRR): zohledňuje, kdy jste nakupovali a prodávali, takže ho později vložené peníze nezkreslí. Zobrazí se, jakmile bude váš první nákup starý alespoň rok; dividendy nejsou zahrnuty.';
+
+  @override
+  String get eventsAddToCalendar => 'Přidat do kalendáře (.ics)';
 }

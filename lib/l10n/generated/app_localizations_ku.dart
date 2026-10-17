@@ -2336,4 +2336,19 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Qezenca bidestxistî derxe (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Qezenca salane';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / sal';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Qezenca salane ya li gorî pereyan pîvandî (XIRR): dema ku te kirî û firotî dihesibîne, ji ber vê yekê pereyên ku paşê hatine zêdekirin wê naguherînin. Gava kirîna te ya yekem herî kêm salek kevn be tê nîşandan; dîvîdend tê de nînin.';
+
+  @override
+  String get eventsAddToCalendar => 'Li salnameyê zêde bike (.ics)';
 }

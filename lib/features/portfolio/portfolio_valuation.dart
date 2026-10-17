@@ -1,6 +1,7 @@
 import '../../core/models/stock_quote.dart';
 import '../fx/fx_service.dart';
 import '../market_data/market_data_provider.dart';
+import 'annual_return.dart';
 import 'portfolio_store.dart';
 
 /// Egy pozíció értékelése az aktuális árral.
@@ -56,7 +57,14 @@ class PortfolioSnapshot {
     this.realized = 0,
     this.closed = const [],
     this.realizedByYear = const {},
+    this.annualReturn,
   });
+
+  /// Pénzsúlyozott éves hozam (XIRR, tört: 0,12 = 12%) a vételek és eladások
+  /// dátumával, a mai értékkel. Csak ha minden tranzakciónak van dátuma, minden
+  /// pozíció benne van az összegben, és az első vétel legalább egy éve volt –
+  /// rövidebb időre az évesítés félrevezető lenne. Az osztalék nincs benne.
+  final double? annualReturn;
 
   /// A realizált nyereség az eladás éve szerint, az összesítés pénznemében
   /// (dátum nélküli eladás: `null` kulcs).
@@ -103,6 +111,7 @@ class PortfolioSnapshot {
     required String currency,
     Map<String, double> dividends = const {},
     List<Position> closed = const [],
+    DateTime? now,
   }) {
     final rows = <PositionValue>[];
     var value = 0.0, cost = 0.0, day = 0.0, dividend = 0.0, realized = 0.0;
@@ -152,6 +161,9 @@ class PortfolioSnapshot {
         ),
     ]..sort((a, b) => b.weight.compareTo(a.weight));
     return PortfolioSnapshot(
+      annualReturn: rows.every((r) => r.inTotal)
+          ? positionsAnnualReturn([...closed, ...positions], rateOf, value, now ?? DateTime.now())
+          : null,
       currency: currency,
       rows: weighted,
       value: value,

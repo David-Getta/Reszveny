@@ -623,5 +623,9 @@
   "watchAlertAll": "1日の大きな変動でアラート",
   "watchAlertAllHint": "このリストのすべての銘柄に価格アラートを設定します。1日でこれだけ上下に動くと通知します。すでにアラートがある銘柄はそのまま残ります。",
   "watchAlertAllDone": "{count, plural, =1{1 件のアラートを設定しました} other{{count} 件のアラートを設定しました}}",
-  "portfolioExportRealized": "実現損益をCSVでエクスポート"
+  "portfolioExportRealized": "実現損益をCSVでエクスポート",
+  "eventsAddToCalendar": "カレンダーに追加 (.ics)",
+  "portfolioAnnualReturn": "年率リターン",
+  "portfolioPerYear": "{percent} / 年",
+  "portfolioAnnualReturnHint": "金額加重の年率リターン（XIRR）：購入・売却のタイミングを考慮するため、あとから追加した資金で数値がゆがむことはありません。最初の購入から1年以上経過すると表示されます。配当は含まれません。"
 }

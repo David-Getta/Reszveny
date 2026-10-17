@@ -623,5 +623,9 @@
   "watchAlertAll": "Mũmenyithia wa ũgarũrũku mũnene wa mũthenya",
   "watchAlertAllHint": "Mũmenyithia wa thogora kwa o mũgabo ũrĩa ũrĩ orodha-inĩ ĩno: ũkũhũũra rĩrĩa ũgarũrũka ũũ mũthenya ũmwe, igũrũ kana thĩ. Ũrĩa ũrĩ na ũmwe kũrĩa mbere ũgũtigwo naguo.",
   "watchAlertAllDone": "{count, plural, =1{Mũmenyithia 1 nĩ wahandwo} other{Mĩmenyithia {count} nĩ yahandwo}}",
-  "portfolioExportRealized": "Ruta uumithio ũrĩa wonetwo (CSV)"
+  "portfolioExportRealized": "Ruta uumithio ũrĩa wonetwo (CSV)",
+  "eventsAddToCalendar": "Ongerera harĩ kalenda (.ics)",
+  "portfolioAnnualReturn": "Uumithio wa mwaka",
+  "portfolioPerYear": "{percent} / mwaka",
+  "portfolioAnnualReturnHint": "Uumithio wa mwaka ũrĩa ũthimĩtwo na mbeca (XIRR): ũtaraga rĩrĩa wagũrire na rĩrĩa wendirie, nĩ ũndũ ũcio mbeca iria wongerire thuutha itiũthũkagia. Ũkuonanio rĩrĩa ũgũri waku wa mbere wakinyia mwaka ũmwe kana makĩria; dividend ndĩtaranĩtio."
 }

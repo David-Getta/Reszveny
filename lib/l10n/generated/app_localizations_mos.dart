@@ -2321,4 +2321,19 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Yiis yõod ning sẽn paame (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Yʋʋmd nafa';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / yʋʋmde';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Yʋʋmd nafa sẽn makd ne ligdi (XIRR): a gẽesda wakat ning f sẽn da la f sẽn koosã, rẽ n so tɩ ligd ning f sẽn paas poorã pa sãamd-a ye. B wilgda-a f raab pipiigã sã n ta yʋʋmd a yembr bal; dividãnd pa be pʋgẽ ye.';
+
+  @override
+  String get eventsAddToCalendar => 'Paas kalandiyẽ pʋgẽ (.ics)';
 }

@@ -2336,4 +2336,19 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Realizə olunmuş gəliri ixrac et (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'İllik gəlirlilik';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / il';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Pul axınları ilə çəkili illik gəlirlilik (XIRR): nə vaxt aldığınızı və satdığınızı nəzərə alır, buna görə sonradan əlavə edilən pul onu təhrif etmir. İlk alışınızdan ən azı bir il keçdikdə göstərilir; dividendlər daxil deyil.';
+
+  @override
+  String get eventsAddToCalendar => 'Təqvimə əlavə et (.ics)';
 }

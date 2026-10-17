@@ -623,5 +623,9 @@
   "watchAlertAll": "Kunnafoni don yɛlɛma belebeleba kan",
   "watchAlertAllHint": "Sɔngɔ kunnafoni lisi nin kɔnɔ aksiyɔn kelen kelen bɛɛ ye: a bɛ i ladɔnniya ni a yɛlɛmana nin hakɛ ye don kelen kɔnɔ, sanfɛ walima duguma. Minnu bɛ ni kunnafoni ye kaban, olu ta bɛ to.",
   "watchAlertAllDone": "{count, plural, =1{Kunnafoni 1 sigilen don} other{Kunnafoni {count} sigilen don}}",
-  "portfolioExportRealized": "Tɔnɔ sɔrɔlenw bɔ (CSV)"
+  "portfolioExportRealized": "Tɔnɔ sɔrɔlenw bɔ (CSV)",
+  "eventsAddToCalendar": "Fara kalandiriye kan (.ics)",
+  "portfolioAnnualReturn": "San o san tɔnɔ",
+  "portfolioPerYear": "{percent} / san",
+  "portfolioAnnualReturnHint": "Tɔnɔ san o san min sumana ni wari ye (XIRR): a bɛ i ka sanni ni i ka feereli waati jate, o la wari min farala a kan kɔfɛ, o tɛ a tiɲɛ. A bɛ jira ni i ka sanni fɔlɔ sera san kelen ma walima ka tɛmɛ; tɔnɔ tilali tɛ a la."
 }

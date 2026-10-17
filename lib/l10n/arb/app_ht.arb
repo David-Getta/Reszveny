@@ -623,5 +623,9 @@
   "watchAlertAll": "Alèt pou gwo mouvman pa jou",
   "watchAlertAllHint": "Yon alèt pri pou chak aksyon nan lis sa a ki sonnen lè li bouje konsa nan yon jounen, monte oswa desann. Aksyon ki gen youn deja ap kenbe pa yo.",
   "watchAlertAllDone": "{count, plural, =1{Nou mete 1 alèt} other{Nou mete {count} alèt}}",
-  "portfolioExportRealized": "Ekspòte pwofi reyalize yo (CSV)"
+  "portfolioExportRealized": "Ekspòte pwofi reyalize yo (CSV)",
+  "eventsAddToCalendar": "Ajoute nan kalandriye (.ics)",
+  "portfolioAnnualReturn": "Rannman anyèl",
+  "portfolioPerYear": "{percent} / ane",
+  "portfolioAnnualReturnHint": "Rannman anyèl ki peze selon lajan an (XIRR): li konte ki lè ou te achte ak vann, kidonk lajan ou ajoute pita pa defòme l. Li parèt depi premye acha ou gen omwen yon ane; dividann yo pa ladan l."
 }

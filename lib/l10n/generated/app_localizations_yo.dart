@@ -2333,4 +2333,19 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get portfolioExportRealized => 'Gbé èrè tí a ti rí jáde (CSV)';
+
+  @override
+  String get portfolioAnnualReturn => 'Èrè ọdọọdún';
+
+  @override
+  String portfolioPerYear(String percent) {
+    return '$percent / ọdún';
+  }
+
+  @override
+  String get portfolioAnnualReturnHint =>
+      'Èrè ọdọọdún tí a wọ̀n pẹ̀lú owó (XIRR): ó ń ka ìgbà tí o rà àti tí o tà sí, nítorí náà owó tí o fi kún un lẹ́yìn kò ní yí i po. A máa ń fi hàn nígbà tí ìrajà rẹ àkọ́kọ́ bá ti pé ọdún kan ó kéré tán; èrè ìpín kò sí nínú rẹ̀.';
+
+  @override
+  String get eventsAddToCalendar => 'Fi kún kàlẹ́ńdà (.ics)';
 }
