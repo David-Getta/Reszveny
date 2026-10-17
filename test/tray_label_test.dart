@@ -1,6 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:reszveny/core/models/stock_quote.dart';
 import 'package:reszveny/core/util/formatters.dart';
+import 'package:reszveny/features/portfolio/portfolio_store.dart';
+import 'package:reszveny/features/portfolio/portfolio_valuation.dart';
 import 'package:reszveny/features/shell/app_shell.dart';
 
 void main() {
@@ -15,5 +17,23 @@ void main() {
       'MSFT   512.30   ▼ 0.72%',
     );
     expect(trayStockLabel('OTP', null, fmt), 'OTP');
+  });
+
+  test('the portfolio line: the day’s change in percent and amount', () {
+    final fmt = Fmt('en');
+    final p = Position(
+      symbol: 'AAPL',
+      currency: 'USD',
+      lots: const [PortfolioLot(id: 'a', symbol: 'AAPL', quantity: 10, price: 100, currency: 'USD')],
+    );
+    final s = PortfolioSnapshot.compute(
+      [p],
+      quotes: {'AAPL': const StockQuote(symbol: 'AAPL', price: 102, change: 2)},
+      rate: (_, _) => 1,
+      currency: 'USD',
+    );
+    expect(trayPortfolioLabel('Portfolio', s, fmt), 'Portfolio   ▲ 2.00%   +20.00 USD');
+    final none = PortfolioSnapshot.compute([p], quotes: const {}, rate: (_, _) => 1, currency: 'USD');
+    expect(trayPortfolioLabel('Portfolio', none, fmt), 'Portfolio');
   });
 }

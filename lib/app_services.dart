@@ -126,7 +126,7 @@ class AppServices {
       portfolio: this.portfolio,
       preferences: preferences,
       notifier: alertMonitor.notifier,
-      snapshot: _portfolioSnapshot,
+      snapshot: portfolioSnapshot,
       describe: describePortfolioMove,
       onNotified: () => this.telemetry.track('portfolio_move'),
     );
@@ -367,7 +367,7 @@ class AppServices {
 
   /// A portfólió pillanatképe a felületen kívül (értesítésekhez), az app nyelve
   /// szerinti összesítő pénznemben.
-  Future<PortfolioSnapshot> _portfolioSnapshot() {
+  Future<PortfolioSnapshot> portfolioSnapshot() {
     final positions = portfolio.positions;
     final device = WidgetsBinding.instance.platformDispatcher.locale;
     return PortfolioSnapshot.load(

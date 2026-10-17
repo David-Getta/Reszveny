@@ -25,6 +25,7 @@ import '../home/quick_bar.dart';
 import '../home/quick_search_controller.dart';
 import '../alerts/alerts_view.dart';
 import '../portfolio/portfolio_page.dart';
+import '../portfolio/portfolio_valuation.dart';
 import '../settings/settings_page.dart';
 import 'shortcuts_dialog.dart';
 import '../stock_detail/stock_detail_page.dart';
@@ -276,6 +277,13 @@ class _AppShellState extends State<AppShell> {
     final quotes = await Future.wait([
       for (final s in symbols) services.marketData.quote(s).then<StockQuote?>((q) => q, onError: (Object _) => null),
     ]);
+    // A portfólió mai mozgása a menü tetején (ha van pozíció).
+    PortfolioSnapshot? snapshot;
+    if (services.portfolio.positions.isNotEmpty) {
+      try {
+        snapshot = await services.portfolioSnapshot();
+      } catch (_) {}
+    }
     if (!mounted) return;
     await services.desktop.setupTray(
       open: l10n.trayOpen,
@@ -284,6 +292,11 @@ class _AppShellState extends State<AppShell> {
       tooltip: l10n.appTitle,
       stocks: [for (final (i, s) in symbols.indexed) (symbol: s, label: trayStockLabel(s, quotes[i], fmt))],
       onStock: services.alertMonitor.requestOpen,
+      portfolio: snapshot == null ? null : trayPortfolioLabel(l10n.portfolio, snapshot, fmt),
+      onPortfolio: () {
+        _goHome();
+        _openPortfolio();
+      },
     );
   }
 
@@ -714,6 +727,14 @@ class _DragArea extends StatelessWidget {
 }
 
 /// Egy kedvenc sora a menüsor- / tálcamenüben: ticker, ár és napi változás nyíllal.
+/// A tálcamenü portfólió-sora: „Portfólió   ▲ 1,27%   +66 546 HUF”.
+String trayPortfolioLabel(String title, PortfolioSnapshot s, Fmt fmt) {
+  final c = s.dayGainPercent;
+  if (s.unknown || c == null) return title;
+  final arrow = c > 0 ? '▲' : (c < 0 ? '▼' : '•');
+  return '$title   $arrow ${fmt.percent(c.abs())}   ${fmt.money(s.dayGain, s.currency, withSign: true)}';
+}
+
 String trayStockLabel(String symbol, StockQuote? q, Fmt fmt) {
   if (q == null) return symbol;
   final c = q.changePercent;
