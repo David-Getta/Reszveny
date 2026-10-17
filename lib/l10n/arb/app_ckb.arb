@@ -651,5 +651,10 @@
   "usMarketClosed": "بازاڕی ئەمریکا داخراوە · دوای {time} دەکرێتەوە",
   "durationMinutes": "{minutes} خولەک",
   "durationHoursMinutes": "{hours} کاتژمێر {minutes} خولەک",
-  "durationDaysHours": "{days} ڕۆژ {hours} کاتژمێر"
+  "durationDaysHours": "{days} ڕۆژ {hours} کاتژمێر",
+  "portfolioGoalSet": "دانانی ئامانج",
+  "portfolioGoalTitle": "ئامانجی پۆرتفۆلیۆ",
+  "portfolioGoalProgress": "{percent} · ئامانج: {amount}",
+  "portfolioGoalReached": "گەیشتیت بە ئامانج: {amount}",
+  "portfolioGoalRemove": "لابردنی ئامانج"
 }

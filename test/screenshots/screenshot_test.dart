@@ -707,6 +707,8 @@ void main() {
     await tester.pumpAndSettle();
     await tester.tap(find.byType(PortfolioSummaryCard));
     await tester.pumpAndSettle();
+    await s.preferences.setPortfolioGoal((amount: 8000000, currency: 'HUF'));
+    await tester.pumpAndSettle();
     await _shot(tester, 'portfolio_phone_hu');
     // Célarányokkal: mit kellene venni vagy eladni.
     await s.preferences.setTargets({'OTP': 25, 'AAPL': 25, 'NVDA': 25, 'MSFT': 25});

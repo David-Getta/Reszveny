@@ -651,5 +651,10 @@
   "usMarketClosed": "美股已收盘 · {time}后开盘",
   "durationMinutes": "{minutes} 分钟",
   "durationHoursMinutes": "{hours} 小时 {minutes} 分钟",
-  "durationDaysHours": "{days} 天 {hours} 小时"
+  "durationDaysHours": "{days} 天 {hours} 小时",
+  "portfolioGoalSet": "设定目标",
+  "portfolioGoalTitle": "投资组合目标",
+  "portfolioGoalProgress": "已达成 {percent} · 目标 {amount}",
+  "portfolioGoalReached": "已达成 {amount} 目标",
+  "portfolioGoalRemove": "移除目标"
 }

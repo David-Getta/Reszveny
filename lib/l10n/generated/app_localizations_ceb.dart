@@ -2460,4 +2460,23 @@ class AppLocalizationsCeb extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days adlaw $hours oras';
   }
+
+  @override
+  String get portfolioGoalSet => 'Pagbutang og tumong';
+
+  @override
+  String get portfolioGoalTitle => 'Tumong sa portfolio';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent sa imong tumong nga $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Naabot ang tumong nga $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Tangtanga ang tumong';
 }

@@ -2458,4 +2458,23 @@ class AppLocalizationsHy extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days օր $hours ժ';
   }
+
+  @override
+  String get portfolioGoalSet => 'Սահմանել նպատակ';
+
+  @override
+  String get portfolioGoalTitle => 'Պորտֆելի նպատակ';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · նպատակ՝ $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Նպատակը կատարված է՝ $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Հեռացնել նպատակը';
 }

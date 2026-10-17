@@ -2452,4 +2452,23 @@ class AppLocalizationsUg extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days كۈن $hours سائەت';
   }
+
+  @override
+  String get portfolioGoalSet => 'نىشان بەلگىلەش';
+
+  @override
+  String get portfolioGoalTitle => 'مەبلەغ بىرىكمىسى نىشانى';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · نىشان: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'نىشانغا يېتىلدى: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'نىشاننى ئۆچۈرۈش';
 }

@@ -2456,4 +2456,23 @@ class AppLocalizationsSo extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days maalin $hours saac';
   }
+
+  @override
+  String get portfolioGoalSet => 'Deji yool';
+
+  @override
+  String get portfolioGoalTitle => 'Yoolka portfoliyada';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · Yool: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Yoolka waa la gaadhay: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Ka saar yoolka';
 }

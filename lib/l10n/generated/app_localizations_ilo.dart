@@ -2468,4 +2468,23 @@ class AppLocalizationsIlo extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days aldaw $hours oras';
   }
+
+  @override
+  String get portfolioGoalSet => 'Mangikeddeng iti panggep';
+
+  @override
+  String get portfolioGoalTitle => 'Panggep ti portfolio';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent ti panggepmo a $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Nagun-od ti panggep a $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Ikkaten ti panggep';
 }

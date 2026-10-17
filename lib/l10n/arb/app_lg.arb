@@ -651,5 +651,10 @@
   "usMarketClosed": "Akatale k'Amerika kaggale · kajja kuggulwa mu {time}",
   "durationMinutes": "{minutes} ddak.",
   "durationHoursMinutes": "{hours} ssaawa {minutes} ddak.",
-  "durationDaysHours": "{days} nnaku {hours} ssaawa"
+  "durationDaysHours": "{days} nnaku {hours} ssaawa",
+  "portfolioGoalSet": "Teekawo ekiruubirirwa",
+  "portfolioGoalTitle": "Ekiruubirirwa ky'emigabo gyo",
+  "portfolioGoalProgress": "{percent} · Ekiruubirirwa: {amount}",
+  "portfolioGoalReached": "Otuuse ku kiruubirirwa: {amount}",
+  "portfolioGoalRemove": "Ggyawo ekiruubirirwa"
 }

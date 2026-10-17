@@ -651,5 +651,10 @@
   "usMarketClosed": "USA-marknaden stängd · öppnar om {time}",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} tim {minutes} min",
-  "durationDaysHours": "{days} d {hours} tim"
+  "durationDaysHours": "{days} d {hours} tim",
+  "portfolioGoalSet": "Sätt ett mål",
+  "portfolioGoalTitle": "Portföljmål",
+  "portfolioGoalProgress": "{percent} av ditt mål på {amount}",
+  "portfolioGoalReached": "Målet på {amount} är nått",
+  "portfolioGoalRemove": "Ta bort mål"
 }

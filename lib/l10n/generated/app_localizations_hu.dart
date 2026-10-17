@@ -2455,4 +2455,23 @@ class AppLocalizationsHu extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days nap $hours óra';
   }
+
+  @override
+  String get portfolioGoalSet => 'Cél kitűzése';
+
+  @override
+  String get portfolioGoalTitle => 'Portfólió-cél';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent kész · cél: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Cél elérve: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Cél törlése';
 }

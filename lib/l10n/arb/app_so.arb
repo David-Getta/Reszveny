@@ -651,5 +651,10 @@
   "usMarketClosed": "Suuqa Mareykanka waa xiran yahay · wuxuu furmayaa {time} kadib",
   "durationMinutes": "{minutes} daq",
   "durationHoursMinutes": "{hours} saac {minutes} daq",
-  "durationDaysHours": "{days} maalin {hours} saac"
+  "durationDaysHours": "{days} maalin {hours} saac",
+  "portfolioGoalSet": "Deji yool",
+  "portfolioGoalTitle": "Yoolka portfoliyada",
+  "portfolioGoalProgress": "{percent} · Yool: {amount}",
+  "portfolioGoalReached": "Yoolka waa la gaadhay: {amount}",
+  "portfolioGoalRemove": "Ka saar yoolka"
 }

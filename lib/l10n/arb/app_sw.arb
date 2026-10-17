@@ -651,5 +651,10 @@
   "usMarketClosed": "Soko la Marekani limefungwa · litafunguliwa baada ya {time}",
   "durationMinutes": "dak {minutes}",
   "durationHoursMinutes": "saa {hours} dak {minutes}",
-  "durationDaysHours": "siku {days} saa {hours}"
+  "durationDaysHours": "siku {days} saa {hours}",
+  "portfolioGoalSet": "Weka lengo",
+  "portfolioGoalTitle": "Lengo la jalada la hisa",
+  "portfolioGoalProgress": "{percent} ya lengo lako la {amount}",
+  "portfolioGoalReached": "Lengo la {amount} limefikiwa",
+  "portfolioGoalRemove": "Ondoa lengo"
 }

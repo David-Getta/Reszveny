@@ -651,5 +651,10 @@
   "usMarketClosed": "Trg v ZDA zaprt · odpre se čez {time}",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} h {minutes} min",
-  "durationDaysHours": "{days} d {hours} h"
+  "durationDaysHours": "{days} d {hours} h",
+  "portfolioGoalSet": "Nastavi cilj",
+  "portfolioGoalTitle": "Cilj portfelja",
+  "portfolioGoalProgress": "{percent} cilja {amount}",
+  "portfolioGoalReached": "Cilj {amount} dosežen",
+  "portfolioGoalRemove": "Odstrani cilj"
 }

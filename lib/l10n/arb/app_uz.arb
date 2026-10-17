@@ -651,5 +651,10 @@
   "usMarketClosed": "AQSh bozori yopiq · ochilishiga {time}",
   "durationMinutes": "{minutes} daq",
   "durationHoursMinutes": "{hours} soat {minutes} daq",
-  "durationDaysHours": "{days} kun {hours} soat"
+  "durationDaysHours": "{days} kun {hours} soat",
+  "portfolioGoalSet": "Maqsad belgilash",
+  "portfolioGoalTitle": "Portfel maqsadi",
+  "portfolioGoalProgress": "{percent} · maqsad: {amount}",
+  "portfolioGoalReached": "Maqsadga erishildi: {amount}",
+  "portfolioGoalRemove": "Maqsadni olib tashlash"
 }

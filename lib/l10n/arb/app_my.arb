@@ -651,5 +651,10 @@
   "usMarketClosed": "အမေရိကန် စျေးကွက် ပိတ်ထားသည် · {time} အကြာတွင် ဖွင့်မည်",
   "durationMinutes": "{minutes} မိနစ်",
   "durationHoursMinutes": "{hours} နာရီ {minutes} မိနစ်",
-  "durationDaysHours": "{days} ရက် {hours} နာရီ"
+  "durationDaysHours": "{days} ရက် {hours} နာရီ",
+  "portfolioGoalSet": "ပန်းတိုင် သတ်မှတ်ရန်",
+  "portfolioGoalTitle": "ပေါ့ဖိုလီယို ပန်းတိုင်",
+  "portfolioGoalProgress": "{percent} · ပန်းတိုင် {amount}",
+  "portfolioGoalReached": "ပန်းတိုင် {amount} ပြည့်မီပြီ",
+  "portfolioGoalRemove": "ပန်းတိုင် ဖယ်ရှားရန်"
 }

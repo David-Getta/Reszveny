@@ -2450,4 +2450,23 @@ class AppLocalizationsKa extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days დღე $hours სთ';
   }
+
+  @override
+  String get portfolioGoalSet => 'მიზნის დაყენება';
+
+  @override
+  String get portfolioGoalTitle => 'პორტფელის მიზანი';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · მიზანი: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'მიზანი მიღწეულია: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'მიზნის წაშლა';
 }

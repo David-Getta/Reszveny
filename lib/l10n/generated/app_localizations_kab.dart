@@ -2448,4 +2448,23 @@ class AppLocalizationsKab extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days us $hours sr';
   }
+
+  @override
+  String get portfolioGoalSet => 'Sbadu iswi';
+
+  @override
+  String get portfolioGoalTitle => 'Iswi n uqrab';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · Iswi: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Tewwḍeḍ ɣer yiswi: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Kkes iswi';
 }

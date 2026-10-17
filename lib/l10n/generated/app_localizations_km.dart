@@ -2429,4 +2429,23 @@ class AppLocalizationsKm extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days ថ្ងៃ $hours ម៉ោង';
   }
+
+  @override
+  String get portfolioGoalSet => 'កំណត់គោលដៅ';
+
+  @override
+  String get portfolioGoalTitle => 'គោលដៅផលប័ត្រ';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent នៃគោលដៅ $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'សម្រេចគោលដៅ $amount ហើយ';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'ដកគោលដៅចេញ';
 }

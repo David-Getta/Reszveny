@@ -2464,4 +2464,23 @@ class AppLocalizationsHil extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days adlaw $hours oras';
   }
+
+  @override
+  String get portfolioGoalSet => 'Magbutang sang tulumuron';
+
+  @override
+  String get portfolioGoalTitle => 'Tulumuron sang portfolio';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent sang imo tulumuron nga $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Naabot ang tulumuron nga $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Kuhaa ang tulumuron';
 }

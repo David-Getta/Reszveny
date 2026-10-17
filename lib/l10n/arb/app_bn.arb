@@ -651,5 +651,10 @@
   "usMarketClosed": "মার্কিন বাজার বন্ধ · {time} পরে খুলবে",
   "durationMinutes": "{minutes} মিনিট",
   "durationHoursMinutes": "{hours} ঘণ্টা {minutes} মিনিট",
-  "durationDaysHours": "{days} দিন {hours} ঘণ্টা"
+  "durationDaysHours": "{days} দিন {hours} ঘণ্টা",
+  "portfolioGoalSet": "লক্ষ্য ঠিক করুন",
+  "portfolioGoalTitle": "পোর্টফোলিও লক্ষ্য",
+  "portfolioGoalProgress": "{percent} · লক্ষ্য: {amount}",
+  "portfolioGoalReached": "লক্ষ্য পূরণ হয়েছে: {amount}",
+  "portfolioGoalRemove": "লক্ষ্য সরান"
 }

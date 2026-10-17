@@ -2423,4 +2423,23 @@ class AppLocalizationsLo extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days ມື້ $hours ຊມ.';
   }
+
+  @override
+  String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
+
+  @override
+  String get portfolioGoalTitle => 'ເປົ້າໝາຍພອດໂຟລິໂອ';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent ຂອງເປົ້າໝາຍ $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'ບັນລຸເປົ້າໝາຍ $amount ແລ້ວ';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'ລຶບເປົ້າໝາຍ';
 }

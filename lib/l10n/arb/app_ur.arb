@@ -651,5 +651,10 @@
   "usMarketClosed": "امریکی مارکیٹ بند ہے · {time} میں کھلے گی",
   "durationMinutes": "{minutes} منٹ",
   "durationHoursMinutes": "{hours} گھنٹے {minutes} منٹ",
-  "durationDaysHours": "{days} دن {hours} گھنٹے"
+  "durationDaysHours": "{days} دن {hours} گھنٹے",
+  "portfolioGoalSet": "ہدف مقرر کریں",
+  "portfolioGoalTitle": "پورٹ فولیو کا ہدف",
+  "portfolioGoalProgress": "{percent} · ہدف: {amount}",
+  "portfolioGoalReached": "ہدف حاصل ہو گیا: {amount}",
+  "portfolioGoalRemove": "ہدف ہٹائیں"
 }

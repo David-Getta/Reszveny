@@ -2455,4 +2455,23 @@ class AppLocalizationsPt extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days d $hours h';
   }
+
+  @override
+  String get portfolioGoalSet => 'Definir meta';
+
+  @override
+  String get portfolioGoalTitle => 'Meta da carteira';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent da sua meta de $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Meta de $amount atingida';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Remover meta';
 }

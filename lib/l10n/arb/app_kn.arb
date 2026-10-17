@@ -651,5 +651,10 @@
   "usMarketClosed": "ಯುಎಸ್ ಮಾರುಕಟ್ಟೆ ಮುಚ್ಚಿದೆ · ತೆರೆಯಲು {time} ಬಾಕಿ",
   "durationMinutes": "{minutes} ನಿಮಿ",
   "durationHoursMinutes": "{hours} ಗಂ {minutes} ನಿಮಿ",
-  "durationDaysHours": "{days} ದಿ {hours} ಗಂ"
+  "durationDaysHours": "{days} ದಿ {hours} ಗಂ",
+  "portfolioGoalSet": "ಗುರಿ ಹೊಂದಿಸಿ",
+  "portfolioGoalTitle": "ಪೋರ್ಟ್‌ಫೋಲಿಯೊ ಗುರಿ",
+  "portfolioGoalProgress": "{percent} · ಗುರಿ: {amount}",
+  "portfolioGoalReached": "ಗುರಿ ತಲುಪಿದೆ: {amount}",
+  "portfolioGoalRemove": "ಗುರಿ ತೆಗೆದುಹಾಕಿ"
 }

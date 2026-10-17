@@ -651,5 +651,10 @@
   "usMarketClosed": "Makete wa Amerika wu pfalekile · wu ta pfuleka endzhaku ka {time}",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} h {minutes} min",
-  "durationDaysHours": "{days} masiku {hours} h"
+  "durationDaysHours": "{days} masiku {hours} h",
+  "portfolioGoalSet": "Veka xikongomelo",
+  "portfolioGoalTitle": "Xikongomelo xa phothifoliyo",
+  "portfolioGoalProgress": "{percent} · Xikongomelo: {amount}",
+  "portfolioGoalReached": "Xikongomelo xi fikeleriwile: {amount}",
+  "portfolioGoalRemove": "Susa xikongomelo"
 }

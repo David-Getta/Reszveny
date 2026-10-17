@@ -2445,4 +2445,23 @@ class AppLocalizationsIg extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return 'ụbọchị $days awa $hours';
   }
+
+  @override
+  String get portfolioGoalSet => 'Tọọ ebumnuche';
+
+  @override
+  String get portfolioGoalTitle => 'Ebumnuche portfolio';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · Ebumnuche: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Emezuru ebumnuche: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Wepụ ebumnuche';
 }

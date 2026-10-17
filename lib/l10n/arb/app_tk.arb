@@ -651,5 +651,10 @@
   "usMarketClosed": "ABŞ bazary ýapyk · açylmagyna {time} galdy",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} sag {minutes} min",
-  "durationDaysHours": "{days} gün {hours} sag"
+  "durationDaysHours": "{days} gün {hours} sag",
+  "portfolioGoalSet": "Maksat goý",
+  "portfolioGoalTitle": "Portfel maksady",
+  "portfolioGoalProgress": "{percent} · maksat: {amount}",
+  "portfolioGoalReached": "Maksada ýetildi: {amount}",
+  "portfolioGoalRemove": "Maksady aýyr"
 }

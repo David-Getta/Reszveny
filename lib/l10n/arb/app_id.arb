@@ -651,5 +651,10 @@
   "usMarketClosed": "Pasar AS tutup · buka dalam {time}",
   "durationMinutes": "{minutes} mnt",
   "durationHoursMinutes": "{hours} j {minutes} mnt",
-  "durationDaysHours": "{days} h {hours} j"
+  "durationDaysHours": "{days} h {hours} j",
+  "portfolioGoalSet": "Tetapkan target",
+  "portfolioGoalTitle": "Target portofolio",
+  "portfolioGoalProgress": "{percent} dari target {amount}",
+  "portfolioGoalReached": "Target {amount} tercapai",
+  "portfolioGoalRemove": "Hapus target"
 }

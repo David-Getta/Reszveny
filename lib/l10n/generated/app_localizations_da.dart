@@ -2448,4 +2448,23 @@ class AppLocalizationsDa extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days d $hours t';
   }
+
+  @override
+  String get portfolioGoalSet => 'Sæt et mål';
+
+  @override
+  String get portfolioGoalTitle => 'Porteføljemål';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent af dit mål på $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Målet på $amount er nået';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Fjern mål';
 }

@@ -2449,4 +2449,23 @@ class AppLocalizationsAk extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days nna $hours dɔn';
   }
+
+  @override
+  String get portfolioGoalSet => 'Hyɛ botaeɛ';
+
+  @override
+  String get portfolioGoalTitle => 'Wo nkyɛfa botaeɛ';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · Botaeɛ: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Woadu wo botaeɛ: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Yi botaeɛ no fi hɔ';
 }

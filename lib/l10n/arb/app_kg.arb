@@ -651,5 +651,10 @@
   "usMarketClosed": "Zandu ya Amerika me kangama · ta kanguka na {time}",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} h {minutes} min",
-  "durationDaysHours": "{days} bilumbu {hours} h"
+  "durationDaysHours": "{days} bilumbu {hours} h",
+  "portfolioGoalSet": "Tula lukanu",
+  "portfolioGoalTitle": "Lukanu ya portefeuille",
+  "portfolioGoalProgress": "{percent} · Lukanu: {amount}",
+  "portfolioGoalReached": "Lukanu me lunga: {amount}",
+  "portfolioGoalRemove": "Katula lukanu"
 }

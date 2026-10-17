@@ -651,5 +651,10 @@
   "usMarketClosed": "АКШ рыногу жабык · ачылышына {time}",
   "durationMinutes": "{minutes} мүн",
   "durationHoursMinutes": "{hours} саат {minutes} мүн",
-  "durationDaysHours": "{days} күн {hours} саат"
+  "durationDaysHours": "{days} күн {hours} саат",
+  "portfolioGoalSet": "Максат коюу",
+  "portfolioGoalTitle": "Портфель максаты",
+  "portfolioGoalProgress": "{percent} · максат: {amount}",
+  "portfolioGoalReached": "Максат аткарылды: {amount}",
+  "portfolioGoalRemove": "Максатты өчүрүү"
 }

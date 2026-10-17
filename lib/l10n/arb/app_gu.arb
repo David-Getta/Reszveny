@@ -651,5 +651,10 @@
   "usMarketClosed": "યુએસ બજાર બંધ · {time}માં ખુલશે",
   "durationMinutes": "{minutes} મિનિટ",
   "durationHoursMinutes": "{hours} કલાક {minutes} મિનિટ",
-  "durationDaysHours": "{days} દિવસ {hours} કલાક"
+  "durationDaysHours": "{days} દિવસ {hours} કલાક",
+  "portfolioGoalSet": "લક્ષ્ય નક્કી કરો",
+  "portfolioGoalTitle": "પોર્ટફોલિયો લક્ષ્ય",
+  "portfolioGoalProgress": "{percent} · લક્ષ્ય: {amount}",
+  "portfolioGoalReached": "લક્ષ્ય પૂર્ણ થયું: {amount}",
+  "portfolioGoalRemove": "લક્ષ્ય કાઢી નાખો"
 }

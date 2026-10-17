@@ -651,5 +651,10 @@
   "usMarketClosed": "ዕዳጋ ኣሜሪካ ዕጹው እዩ · ድሕሪ {time} ይኽፈት",
   "durationMinutes": "{minutes} ደቒ",
   "durationHoursMinutes": "{hours} ሰዓት {minutes} ደቒ",
-  "durationDaysHours": "{days} መዓልቲ {hours} ሰዓት"
+  "durationDaysHours": "{days} መዓልቲ {hours} ሰዓት",
+  "portfolioGoalSet": "ዕላማ ኣቐምጥ",
+  "portfolioGoalTitle": "ዕላማ ፖርትፎሊዮ",
+  "portfolioGoalProgress": "{percent} · ዕላማ፦ {amount}",
+  "portfolioGoalReached": "ዕላማ ተወቒዑ፦ {amount}",
+  "portfolioGoalRemove": "ዕላማ ኣልግስ"
 }

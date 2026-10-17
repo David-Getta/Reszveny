@@ -651,5 +651,10 @@
   "usMarketClosed": "Sarado ang merkado sang US · magabukas sa sulod sang {time}",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} oras {minutes} min",
-  "durationDaysHours": "{days} adlaw {hours} oras"
+  "durationDaysHours": "{days} adlaw {hours} oras",
+  "portfolioGoalSet": "Magbutang sang tulumuron",
+  "portfolioGoalTitle": "Tulumuron sang portfolio",
+  "portfolioGoalProgress": "{percent} sang imo tulumuron nga {amount}",
+  "portfolioGoalReached": "Naabot ang tulumuron nga {amount}",
+  "portfolioGoalRemove": "Kuhaa ang tulumuron"
 }

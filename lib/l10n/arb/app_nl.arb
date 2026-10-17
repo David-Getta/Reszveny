@@ -651,5 +651,10 @@
   "usMarketClosed": "Amerikaanse markt gesloten · opent over {time}",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} u {minutes} min",
-  "durationDaysHours": "{days} d {hours} u"
+  "durationDaysHours": "{days} d {hours} u",
+  "portfolioGoalSet": "Doel instellen",
+  "portfolioGoalTitle": "Portefeuilledoel",
+  "portfolioGoalProgress": "{percent} van je doel van {amount}",
+  "portfolioGoalReached": "Doel van {amount} bereikt",
+  "portfolioGoalRemove": "Doel verwijderen"
 }

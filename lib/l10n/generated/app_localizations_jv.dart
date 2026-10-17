@@ -2452,4 +2452,23 @@ class AppLocalizationsJv extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days dina $hours jam';
   }
+
+  @override
+  String get portfolioGoalSet => 'Setel target';
+
+  @override
+  String get portfolioGoalTitle => 'Target portofolio';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent saka target $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Target $amount kagayuh';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Busak target';
 }

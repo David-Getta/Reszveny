@@ -2459,4 +2459,23 @@ class AppLocalizationsMl extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days ദി. $hours മ.';
   }
+
+  @override
+  String get portfolioGoalSet => 'ലക്ഷ്യം സജ്ജമാക്കുക';
+
+  @override
+  String get portfolioGoalTitle => 'പോർട്ട്ഫോളിയോ ലക്ഷ്യം';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · ലക്ഷ്യം: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'ലക്ഷ്യം കൈവരിച്ചു: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'ലക്ഷ്യം നീക്കം ചെയ്യുക';
 }

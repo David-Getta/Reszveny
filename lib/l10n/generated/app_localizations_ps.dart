@@ -2441,4 +2441,23 @@ class AppLocalizationsPs extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days ورځې $hours ساعته';
   }
+
+  @override
+  String get portfolioGoalSet => 'موخه وټاکئ';
+
+  @override
+  String get portfolioGoalTitle => 'د پورټفولیو موخه';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · موخه: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'موخې ته ورسېدئ: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'موخه لرې کړئ';
 }

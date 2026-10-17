@@ -651,5 +651,10 @@
   "usMarketClosed": "Ameriki sugu datugulen don · a bɛ dayɛlɛ {time} kɔfɛ",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} h {minutes} min",
-  "durationDaysHours": "{days} tile {hours} h"
+  "durationDaysHours": "{days} tile {hours} h",
+  "portfolioGoalSet": "Laɲini sigi",
+  "portfolioGoalTitle": "Aksiyɔn kɛsu laɲini",
+  "portfolioGoalProgress": "{percent} · Laɲini: {amount}",
+  "portfolioGoalReached": "I ye i ka laɲini sɔrɔ: {amount}",
+  "portfolioGoalRemove": "Laɲini bɔ a la"
 }

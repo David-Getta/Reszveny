@@ -2450,4 +2450,23 @@ class AppLocalizationsKi extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days mĩthenya $hours h';
   }
+
+  @override
+  String get portfolioGoalSet => 'Ĩkĩra muoroto';
+
+  @override
+  String get portfolioGoalTitle => 'Muoroto wa hisa ciaku';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · Muoroto: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Muoroto nĩ wakinyĩrwo: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Ruta muoroto';
 }

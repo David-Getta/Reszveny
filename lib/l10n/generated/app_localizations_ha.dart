@@ -2455,4 +2455,23 @@ class AppLocalizationsHa extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return 'kwana $days awa $hours';
   }
+
+  @override
+  String get portfolioGoalSet => 'Saita buri';
+
+  @override
+  String get portfolioGoalTitle => 'Burin jakar hannun jari';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · Buri: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'An cimma buri: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Cire buri';
 }

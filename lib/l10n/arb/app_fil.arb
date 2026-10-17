@@ -651,5 +651,10 @@
   "usMarketClosed": "Sarado ang merkado ng US · magbubukas sa loob ng {time}",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} oras {minutes} min",
-  "durationDaysHours": "{days} araw {hours} oras"
+  "durationDaysHours": "{days} araw {hours} oras",
+  "portfolioGoalSet": "Magtakda ng layunin",
+  "portfolioGoalTitle": "Layunin ng portfolio",
+  "portfolioGoalProgress": "{percent} · Layunin: {amount}",
+  "portfolioGoalReached": "Naabot ang layunin: {amount}",
+  "portfolioGoalRemove": "Alisin ang layunin"
 }

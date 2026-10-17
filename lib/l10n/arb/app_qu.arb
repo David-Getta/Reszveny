@@ -651,5 +651,10 @@
   "usMarketClosed": "EE. UU. qhatu wichq'asqa · kicharikunqa {time}-manta",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} h {minutes} min",
-  "durationDaysHours": "{days} p'unchay {hours} h"
+  "durationDaysHours": "{days} p'unchay {hours} h",
+  "portfolioGoalSet": "Hayparinata churay",
+  "portfolioGoalTitle": "Portafoliopa hayparinan",
+  "portfolioGoalProgress": "{percent} · Hayparina: {amount}",
+  "portfolioGoalReached": "Hayparinaman chayarqanki: {amount}",
+  "portfolioGoalRemove": "Hayparinata hurquy"
 }

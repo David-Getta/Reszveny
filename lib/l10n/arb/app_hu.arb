@@ -651,5 +651,10 @@
   "usMarketClosed": "Az amerikai piac zárva · nyit {time} múlva",
   "durationMinutes": "{minutes} perc",
   "durationHoursMinutes": "{hours} óra {minutes} perc",
-  "durationDaysHours": "{days} nap {hours} óra"
+  "durationDaysHours": "{days} nap {hours} óra",
+  "portfolioGoalSet": "Cél kitűzése",
+  "portfolioGoalTitle": "Portfólió-cél",
+  "portfolioGoalProgress": "{percent} kész · cél: {amount}",
+  "portfolioGoalReached": "Cél elérve: {amount}",
+  "portfolioGoalRemove": "Cél törlése"
 }

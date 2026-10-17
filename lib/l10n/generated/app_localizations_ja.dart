@@ -2371,4 +2371,23 @@ class AppLocalizationsJa extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days 日 $hours 時間';
   }
+
+  @override
+  String get portfolioGoalSet => '目標を設定';
+
+  @override
+  String get portfolioGoalTitle => 'ポートフォリオの目標';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent 達成 · 目標 $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return '目標 $amount を達成';
+  }
+
+  @override
+  String get portfolioGoalRemove => '目標を削除';
 }

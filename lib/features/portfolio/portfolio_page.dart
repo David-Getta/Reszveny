@@ -246,6 +246,7 @@ class _PortfolioBody extends StatelessWidget {
                           const SizedBox(height: 10),
                           Text(l10n.portfolioDividendNote, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
                         ],
+                        if (!s.unknown) _GoalBar(snapshot: s, fmt: fmt),
                       ],
                     ),
                   ),
@@ -1090,6 +1091,144 @@ class PortfolioSummaryCard extends StatelessWidget {
           ),
         );
       },
+    );
+  }
+}
+
+/// Portfólió-cél: mennyire van az összérték a célösszegtől (sáv és %), vagy egy
+/// „Cél kitűzése” gomb. Ha a cél más pénznemben van, mint az összesítés, nem látszik
+/// (a cél a megadásakori pénznemben marad).
+class _GoalBar extends StatelessWidget {
+  const _GoalBar({required this.snapshot, required this.fmt});
+
+  final PortfolioSnapshot snapshot;
+  final Fmt fmt;
+
+  Future<void> _edit(BuildContext context) async {
+    final prefs = AppServices.of(context).preferences;
+    final goal = prefs.portfolioGoal;
+    final result = await showDialog<double>(
+      context: context,
+      builder: (_) => _GoalDialog(
+        currency: snapshot.currency,
+        initial: goal?.currency == snapshot.currency ? goal!.amount : null,
+        fmt: fmt,
+      ),
+    );
+    if (result == null) return;
+    await prefs.setPortfolioGoal(result <= 0 ? null : (amount: result, currency: snapshot.currency));
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final services = AppServices.of(context);
+    final l10n = AppLocalizations.of(context);
+    final p = AppPalette.of(context);
+    final theme = Theme.of(context);
+    return ListenableBuilder(
+      listenable: services.preferences,
+      builder: (context, _) {
+        final goal = services.preferences.portfolioGoal;
+        if (goal == null || goal.currency != snapshot.currency) {
+          return Align(
+            alignment: AlignmentDirectional.centerStart,
+            child: TextButton.icon(
+              key: const ValueKey('goal-set'),
+              onPressed: () => _edit(context),
+              style: TextButton.styleFrom(visualDensity: VisualDensity.compact, padding: EdgeInsets.zero),
+              icon: const Icon(Icons.flag_outlined, size: 18),
+              label: Text(l10n.portfolioGoalSet),
+            ),
+          );
+        }
+        final ratio = snapshot.value / goal.amount;
+        return InkWell(
+          key: const ValueKey('goal-bar'),
+          onTap: () => _edit(context),
+          borderRadius: BorderRadius.circular(8),
+          child: Padding(
+            padding: const EdgeInsets.only(top: 14, bottom: 2),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  ratio >= 1
+                      ? l10n.portfolioGoalReached(fmt.money(goal.amount, goal.currency))
+                      : l10n.portfolioGoalProgress(
+                          fmt.percent(ratio * 100, decimals: 0),
+                          fmt.money(goal.amount, goal.currency),
+                        ),
+                  style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                ),
+                const SizedBox(height: 6),
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(99),
+                  child: LinearProgressIndicator(
+                    value: ratio.clamp(0.0, 1.0),
+                    minHeight: 8,
+                    color: ratio >= 1 ? p.positive : p.accent,
+                    backgroundColor: p.border,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        );
+      },
+    );
+  }
+}
+
+class _GoalDialog extends StatefulWidget {
+  const _GoalDialog({required this.currency, required this.initial, required this.fmt});
+
+  final String currency;
+  final double? initial;
+  final Fmt fmt;
+
+  @override
+  State<_GoalDialog> createState() => _GoalDialogState();
+}
+
+class _GoalDialogState extends State<_GoalDialog> {
+  late final _controller = TextEditingController(
+    text: widget.initial == null ? '' : widget.fmt.number(widget.initial!, decimals: 0).replaceAll(RegExp(r'\s'), ' '),
+  );
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  void _save() {
+    final v = parseDecimal(_controller.text);
+    if (v != null && v > 0) Navigator.of(context).pop(v);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    return AlertDialog(
+      title: Text(l10n.portfolioGoalTitle),
+      content: TextField(
+        key: const ValueKey('goal-amount'),
+        controller: _controller,
+        autofocus: true,
+        keyboardType: const TextInputType.numberWithOptions(decimal: true),
+        decoration: InputDecoration(labelText: l10n.portfolioTotalValue, suffixText: widget.currency),
+        onSubmitted: (_) => _save(),
+      ),
+      actions: [
+        if (widget.initial != null)
+          TextButton(
+            key: const ValueKey('goal-remove'),
+            onPressed: () => Navigator.of(context).pop(0.0),
+            child: Text(l10n.portfolioGoalRemove),
+          ),
+        TextButton(onPressed: () => Navigator.of(context).pop(), child: Text(l10n.cancel)),
+        FilledButton(key: const ValueKey('goal-save'), onPressed: _save, child: Text(l10n.alertSave)),
+      ],
     );
   }
 }

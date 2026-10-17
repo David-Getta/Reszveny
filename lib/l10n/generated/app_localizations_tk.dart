@@ -2450,4 +2450,23 @@ class AppLocalizationsTk extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days gün $hours sag';
   }
+
+  @override
+  String get portfolioGoalSet => 'Maksat goý';
+
+  @override
+  String get portfolioGoalTitle => 'Portfel maksady';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · maksat: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Maksada ýetildi: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Maksady aýyr';
 }

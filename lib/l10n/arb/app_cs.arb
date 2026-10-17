@@ -651,5 +651,10 @@
   "usMarketClosed": "Trh v USA zavřen · otevírá za {time}",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} h {minutes} min",
-  "durationDaysHours": "{days} d {hours} h"
+  "durationDaysHours": "{days} d {hours} h",
+  "portfolioGoalSet": "Nastavit cíl",
+  "portfolioGoalTitle": "Cíl portfolia",
+  "portfolioGoalProgress": "{percent} z cíle {amount}",
+  "portfolioGoalReached": "Cíl {amount} splněn",
+  "portfolioGoalRemove": "Odebrat cíl"
 }

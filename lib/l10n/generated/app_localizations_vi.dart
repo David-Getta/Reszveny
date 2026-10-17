@@ -2443,4 +2443,23 @@ class AppLocalizationsVi extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days ngày $hours giờ';
   }
+
+  @override
+  String get portfolioGoalSet => 'Đặt mục tiêu';
+
+  @override
+  String get portfolioGoalTitle => 'Mục tiêu danh mục';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent mục tiêu $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Đã đạt mục tiêu $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Xóa mục tiêu';
 }

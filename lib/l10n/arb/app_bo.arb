@@ -651,5 +651,10 @@
   "usMarketClosed": "ཨ་རིའི་ཚོང་ར་སྒོ་བརྒྱབ་ཡོད། · {time} རྗེས་སུ་སྒོ་འབྱེད",
   "durationMinutes": "སྐར་མ་ {minutes}",
   "durationHoursMinutes": "ཆུ་ཚོད་ {hours} སྐར་མ་ {minutes}",
-  "durationDaysHours": "ཉིན་ {days} ཆུ་ཚོད་ {hours}"
+  "durationDaysHours": "ཉིན་ {days} ཆུ་ཚོད་ {hours}",
+  "portfolioGoalSet": "དམིགས་ཚད་འཇོག",
+  "portfolioGoalTitle": "མ་འཇོག་ཚོགས་སྡེབ་ཀྱི་དམིགས་ཚད",
+  "portfolioGoalProgress": "{percent} · དམིགས་ཚད། {amount}",
+  "portfolioGoalReached": "དམིགས་ཚད་ལ་སླེབས་སོང་། {amount}",
+  "portfolioGoalRemove": "དམིགས་ཚད་སུབ"
 }

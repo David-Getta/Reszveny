@@ -2451,4 +2451,23 @@ class AppLocalizationsFi extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days pv $hours t';
   }
+
+  @override
+  String get portfolioGoalSet => 'Aseta tavoite';
+
+  @override
+  String get portfolioGoalTitle => 'Salkun tavoite';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent tavoitteesta $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Tavoite $amount saavutettu';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Poista tavoite';
 }

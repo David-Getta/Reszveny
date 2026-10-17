@@ -2336,6 +2336,25 @@ class AppLocalizationsZh extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days 天 $hours 小时';
   }
+
+  @override
+  String get portfolioGoalSet => '设定目标';
+
+  @override
+  String get portfolioGoalTitle => '投资组合目标';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '已达成 $percent · 目标 $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return '已达成 $amount 目标';
+  }
+
+  @override
+  String get portfolioGoalRemove => '移除目标';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -4668,4 +4687,23 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String durationDaysHours(int days, int hours) {
     return '$days 日 $hours 小時';
   }
+
+  @override
+  String get portfolioGoalSet => '設定目標';
+
+  @override
+  String get portfolioGoalTitle => '投資組合目標';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '已達成 $percent · 目標 $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return '已達成 $amount 目標';
+  }
+
+  @override
+  String get portfolioGoalRemove => '移除目標';
 }

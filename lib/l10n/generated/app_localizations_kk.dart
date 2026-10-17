@@ -2450,4 +2450,23 @@ class AppLocalizationsKk extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days күн $hours сағ';
   }
+
+  @override
+  String get portfolioGoalSet => 'Мақсат қою';
+
+  @override
+  String get portfolioGoalTitle => 'Портфель мақсаты';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · мақсат: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Мақсат орындалды: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Мақсатты жою';
 }

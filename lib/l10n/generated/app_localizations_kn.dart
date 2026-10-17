@@ -2456,4 +2456,23 @@ class AppLocalizationsKn extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days ದಿ $hours ಗಂ';
   }
+
+  @override
+  String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
+
+  @override
+  String get portfolioGoalTitle => 'ಪೋರ್ಟ್‌ಫೋಲಿಯೊ ಗುರಿ';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · ಗುರಿ: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'ಗುರಿ ತಲುಪಿದೆ: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'ಗುರಿ ತೆಗೆದುಹಾಕಿ';
 }

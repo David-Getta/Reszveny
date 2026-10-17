@@ -2464,4 +2464,23 @@ class AppLocalizationsSt extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days matsatsi $hours h';
   }
+
+  @override
+  String get portfolioGoalSet => 'Beha sepheo';
+
+  @override
+  String get portfolioGoalTitle => 'Sepheo sa potefolio';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · Sepheo: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Sepheo se fihletswe: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Tlosa sepheo';
 }

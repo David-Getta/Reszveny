@@ -651,5 +651,10 @@
   "usMarketClosed": "ตลาดสหรัฐฯ ปิด · เปิดในอีก {time}",
   "durationMinutes": "{minutes} นาที",
   "durationHoursMinutes": "{hours} ชม. {minutes} นาที",
-  "durationDaysHours": "{days} วัน {hours} ชม."
+  "durationDaysHours": "{days} วัน {hours} ชม.",
+  "portfolioGoalSet": "ตั้งเป้าหมาย",
+  "portfolioGoalTitle": "เป้าหมายพอร์ตโฟลิโอ",
+  "portfolioGoalProgress": "{percent} ของเป้าหมาย {amount}",
+  "portfolioGoalReached": "ถึงเป้าหมาย {amount} แล้ว",
+  "portfolioGoalRemove": "ลบเป้าหมาย"
 }

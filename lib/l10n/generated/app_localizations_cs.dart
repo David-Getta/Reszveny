@@ -2510,4 +2510,23 @@ class AppLocalizationsCs extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days d $hours h';
   }
+
+  @override
+  String get portfolioGoalSet => 'Nastavit cíl';
+
+  @override
+  String get portfolioGoalTitle => 'Cíl portfolia';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent z cíle $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Cíl $amount splněn';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Odebrat cíl';
 }

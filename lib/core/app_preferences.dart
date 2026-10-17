@@ -29,6 +29,7 @@ class AppPreferences extends ChangeNotifier {
     this.earningsReminders = true,
     this.morningBrief = false,
     this.portfolioMoveAlert = 0,
+    this.portfolioGoal,
     this.portfolioMoveNotified,
     List<WatchList> watchLists = const [],
     Map<String, double> targets = const {},
@@ -62,6 +63,7 @@ class AppPreferences extends ChangeNotifier {
   static const _portfolioMoveKey = 'portfolio_move_alert';
   static const _portfolioMoveNotifiedKey = 'portfolio_move_notified';
   static const _targetsKey = 'portfolio_targets';
+  static const _goalKey = 'portfolio_goal';
   static const _listsKey = 'watch_lists';
 
   /// Legfeljebb ennyi saját lista, és egy név legfeljebb ennyi karakter.
@@ -125,6 +127,22 @@ class AppPreferences extends ChangeNotifier {
 
   /// Reggelente magától elkészül a napi összefoglaló (amíg az app fut).
   bool morningBrief;
+
+  /// A portfólió célértéke és pénzneme (pl. 10 000 000 HUF); `null`, ha nincs.
+  ({double amount, String currency})? portfolioGoal;
+
+  static ({double amount, String currency})? parseGoal(String? raw) {
+    final parts = raw?.split('|');
+    if (parts == null || parts.length != 2) return null;
+    final amount = double.tryParse(parts[0]);
+    return amount == null || amount <= 0 || parts[1].isEmpty ? null : (amount: amount, currency: parts[1]);
+  }
+
+  Future<void> setPortfolioGoal(({double amount, String currency})? goal) async {
+    portfolioGoal = goal;
+    notifyListeners();
+    await _save((p) => goal == null ? p.remove(_goalKey) : p.setString(_goalKey, '${goal.amount}|${goal.currency}'));
+  }
 
   /// Értesítés, ha a teljes portfólió egy nap alatt legalább ennyi %-ot mozdul (0: ki).
   double portfolioMoveAlert;
@@ -213,6 +231,7 @@ class AppPreferences extends ChangeNotifier {
         earningsReminders: prefs.getBool(_earningsRemindersKey) ?? true,
         morningBrief: prefs.getBool(_morningBriefKey) ?? false,
         portfolioMoveAlert: prefs.getDouble(_portfolioMoveKey) ?? 0,
+        portfolioGoal: parseGoal(prefs.getString(_goalKey)),
         portfolioMoveNotified: prefs.getString(_portfolioMoveNotifiedKey),
         watchLists: WatchList.parseAll(prefs.getString(_listsKey)),
         targets: parseTargets(prefs.getString(_targetsKey)),

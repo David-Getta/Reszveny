@@ -2417,4 +2417,23 @@ class AppLocalizationsAm extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days ቀን $hours ሰዓት';
   }
+
+  @override
+  String get portfolioGoalSet => 'ግብ አስቀምጥ';
+
+  @override
+  String get portfolioGoalTitle => 'የፖርትፎሊዮ ግብ';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · ግብ፦ $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'ግቡ ተሳክቷል፦ $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'ግቡን አስወግድ';
 }

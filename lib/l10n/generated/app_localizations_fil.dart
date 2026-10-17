@@ -2456,4 +2456,23 @@ class AppLocalizationsFil extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days araw $hours oras';
   }
+
+  @override
+  String get portfolioGoalSet => 'Magtakda ng layunin';
+
+  @override
+  String get portfolioGoalTitle => 'Layunin ng portfolio';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · Layunin: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Naabot ang layunin: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Alisin ang layunin';
 }

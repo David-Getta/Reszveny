@@ -651,5 +651,10 @@
   "usMarketClosed": "ئامېرىكا بازىرى تاقاق · ئېچىلىشقا {time} قالدى",
   "durationMinutes": "{minutes} مىنۇت",
   "durationHoursMinutes": "{hours} سائەت {minutes} مىنۇت",
-  "durationDaysHours": "{days} كۈن {hours} سائەت"
+  "durationDaysHours": "{days} كۈن {hours} سائەت",
+  "portfolioGoalSet": "نىشان بەلگىلەش",
+  "portfolioGoalTitle": "مەبلەغ بىرىكمىسى نىشانى",
+  "portfolioGoalProgress": "{percent} · نىشان: {amount}",
+  "portfolioGoalReached": "نىشانغا يېتىلدى: {amount}",
+  "portfolioGoalRemove": "نىشاننى ئۆچۈرۈش"
 }

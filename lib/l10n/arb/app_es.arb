@@ -651,5 +651,10 @@
   "usMarketClosed": "Mercado de EE. UU. cerrado · abre en {time}",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} h {minutes} min",
-  "durationDaysHours": "{days} d {hours} h"
+  "durationDaysHours": "{days} d {hours} h",
+  "portfolioGoalSet": "Fijar un objetivo",
+  "portfolioGoalTitle": "Objetivo de la cartera",
+  "portfolioGoalProgress": "{percent} de tu objetivo de {amount}",
+  "portfolioGoalReached": "Objetivo de {amount} alcanzado",
+  "portfolioGoalRemove": "Eliminar objetivo"
 }

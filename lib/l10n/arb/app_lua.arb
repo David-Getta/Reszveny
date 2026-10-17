@@ -651,5 +651,10 @@
   "usMarketClosed": "Tshisalu tsha Amerika ntshibuikidibue · netshibuluke panyima pa {time}",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} h {minutes} min",
-  "durationDaysHours": "{days} matuku {hours} h"
+  "durationDaysHours": "{days} matuku {hours} h",
+  "portfolioGoalSet": "Teka tshipatshila",
+  "portfolioGoalTitle": "Tshipatshila tsha portefeuille",
+  "portfolioGoalProgress": "{percent} · Tshipatshila: {amount}",
+  "portfolioGoalReached": "Tshipatshila tshikumbaja: {amount}",
+  "portfolioGoalRemove": "Umbusha tshipatshila"
 }

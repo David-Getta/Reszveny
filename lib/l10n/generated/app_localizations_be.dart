@@ -2515,4 +2515,23 @@ class AppLocalizationsBe extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days дз $hours гадз';
   }
+
+  @override
+  String get portfolioGoalSet => 'Задаць мэту';
+
+  @override
+  String get portfolioGoalTitle => 'Мэта партфеля';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent ад мэты $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Мэта $amount дасягнута';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Выдаліць мэту';
 }

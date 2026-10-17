@@ -2460,4 +2460,23 @@ class AppLocalizationsLg extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days nnaku $hours ssaawa';
   }
+
+  @override
+  String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
+
+  @override
+  String get portfolioGoalTitle => 'Ekiruubirirwa ky\'emigabo gyo';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · Ekiruubirirwa: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Otuuse ku kiruubirirwa: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Ggyawo ekiruubirirwa';
 }

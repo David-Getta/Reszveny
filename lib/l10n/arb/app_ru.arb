@@ -651,5 +651,10 @@
   "usMarketClosed": "Рынок США закрыт · откроется через {time}",
   "durationMinutes": "{minutes} мин",
   "durationHoursMinutes": "{hours} ч {minutes} мин",
-  "durationDaysHours": "{days} д {hours} ч"
+  "durationDaysHours": "{days} д {hours} ч",
+  "portfolioGoalSet": "Задать цель",
+  "portfolioGoalTitle": "Цель портфеля",
+  "portfolioGoalProgress": "{percent} от цели {amount}",
+  "portfolioGoalReached": "Цель {amount} достигнута",
+  "portfolioGoalRemove": "Удалить цель"
 }

@@ -651,5 +651,10 @@
   "usMarketClosed": "Mmaraka wa Amerika o kwetswe · o tla bulwa ka mor'a {time}",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} h {minutes} min",
-  "durationDaysHours": "{days} matsatsi {hours} h"
+  "durationDaysHours": "{days} matsatsi {hours} h",
+  "portfolioGoalSet": "Beha sepheo",
+  "portfolioGoalTitle": "Sepheo sa potefolio",
+  "portfolioGoalProgress": "{percent} · Sepheo: {amount}",
+  "portfolioGoalReached": "Sepheo se fihletswe: {amount}",
+  "portfolioGoalRemove": "Tlosa sepheo"
 }

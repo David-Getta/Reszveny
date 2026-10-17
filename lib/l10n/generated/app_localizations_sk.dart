@@ -2514,4 +2514,23 @@ class AppLocalizationsSk extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days d $hours h';
   }
+
+  @override
+  String get portfolioGoalSet => 'Nastaviť cieľ';
+
+  @override
+  String get portfolioGoalTitle => 'Cieľ portfólia';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent z cieľa $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Cieľ $amount splnený';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Odstrániť cieľ';
 }

@@ -651,5 +651,10 @@
   "usMarketClosed": "აშშ ბაზარი დახურულია · გახსნამდე {time}",
   "durationMinutes": "{minutes} წთ",
   "durationHoursMinutes": "{hours} სთ {minutes} წთ",
-  "durationDaysHours": "{days} დღე {hours} სთ"
+  "durationDaysHours": "{days} დღე {hours} სთ",
+  "portfolioGoalSet": "მიზნის დაყენება",
+  "portfolioGoalTitle": "პორტფელის მიზანი",
+  "portfolioGoalProgress": "{percent} · მიზანი: {amount}",
+  "portfolioGoalReached": "მიზანი მიღწეულია: {amount}",
+  "portfolioGoalRemove": "მიზნის წაშლა"
 }

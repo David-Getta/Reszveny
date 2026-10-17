@@ -4248,6 +4248,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{days} d {hours} h'**
   String durationDaysHours(int days, int hours);
+
+  /// No description provided for @portfolioGoalSet.
+  ///
+  /// In en, this message translates to:
+  /// **'Set a goal'**
+  String get portfolioGoalSet;
+
+  /// No description provided for @portfolioGoalTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Portfolio goal'**
+  String get portfolioGoalTitle;
+
+  /// Under the portfolio total: progress towards the user's target value. {percent} like '53%', {amount} like '10,000,000 HUF'.
+  ///
+  /// In en, this message translates to:
+  /// **'{percent} of your {amount} goal'**
+  String portfolioGoalProgress(String percent, String amount);
+
+  /// No description provided for @portfolioGoalReached.
+  ///
+  /// In en, this message translates to:
+  /// **'Goal of {amount} reached'**
+  String portfolioGoalReached(String amount);
+
+  /// No description provided for @portfolioGoalRemove.
+  ///
+  /// In en, this message translates to:
+  /// **'Remove goal'**
+  String get portfolioGoalRemove;
 }
 
 class _AppLocalizationsDelegate

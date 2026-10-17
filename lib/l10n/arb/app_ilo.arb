@@ -651,5 +651,10 @@
   "usMarketClosed": "Nakaserra ti merkado ti US · aglukat kalpasan ti {time}",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} oras {minutes} min",
-  "durationDaysHours": "{days} aldaw {hours} oras"
+  "durationDaysHours": "{days} aldaw {hours} oras",
+  "portfolioGoalSet": "Mangikeddeng iti panggep",
+  "portfolioGoalTitle": "Panggep ti portfolio",
+  "portfolioGoalProgress": "{percent} ti panggepmo a {amount}",
+  "portfolioGoalReached": "Nagun-od ti panggep a {amount}",
+  "portfolioGoalRemove": "Ikkaten ti panggep"
 }

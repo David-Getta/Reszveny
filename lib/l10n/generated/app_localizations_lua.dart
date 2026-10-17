@@ -2457,4 +2457,23 @@ class AppLocalizationsLua extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days matuku $hours h';
   }
+
+  @override
+  String get portfolioGoalSet => 'Teka tshipatshila';
+
+  @override
+  String get portfolioGoalTitle => 'Tshipatshila tsha portefeuille';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · Tshipatshila: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Tshipatshila tshikumbaja: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Umbusha tshipatshila';
 }

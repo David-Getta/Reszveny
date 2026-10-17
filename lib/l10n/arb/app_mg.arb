@@ -651,5 +651,10 @@
   "usMarketClosed": "Mihidy ny tsena amerikana · hisokatra afaka {time}",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} ora {minutes} min",
-  "durationDaysHours": "{days} andro {hours} ora"
+  "durationDaysHours": "{days} andro {hours} ora",
+  "portfolioGoalSet": "Mametraha tanjona",
+  "portfolioGoalTitle": "Tanjon'ny kitapom-bola",
+  "portfolioGoalProgress": "{percent} · Tanjona: {amount}",
+  "portfolioGoalReached": "Tratra ny tanjona: {amount}",
+  "portfolioGoalRemove": "Esory ny tanjona"
 }

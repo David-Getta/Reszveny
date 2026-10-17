@@ -651,5 +651,10 @@
   "usMarketClosed": "ඇමරිකානු වෙළඳපොළ වසා ඇත · විවෘත වීමට {time}",
   "durationMinutes": "මිනි. {minutes}",
   "durationHoursMinutes": "පැය {hours} මිනි. {minutes}",
-  "durationDaysHours": "දින {days} පැය {hours}"
+  "durationDaysHours": "දින {days} පැය {hours}",
+  "portfolioGoalSet": "ඉලක්කයක් සකසන්න",
+  "portfolioGoalTitle": "කළඹ ඉලක්කය",
+  "portfolioGoalProgress": "{percent} · ඉලක්කය: {amount}",
+  "portfolioGoalReached": "ඉලක්කය සපුරා ඇත: {amount}",
+  "portfolioGoalRemove": "ඉලක්කය ඉවත් කරන්න"
 }

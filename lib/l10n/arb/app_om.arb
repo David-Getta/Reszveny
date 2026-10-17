@@ -651,5 +651,10 @@
   "usMarketClosed": "Gabaan Ameerikaa cufaa dha · {time} booda banama",
   "durationMinutes": "daq. {minutes}",
   "durationHoursMinutes": "sa'a {hours} daq. {minutes}",
-  "durationDaysHours": "guyyaa {days} sa'a {hours}"
+  "durationDaysHours": "guyyaa {days} sa'a {hours}",
+  "portfolioGoalSet": "Kaayyoo kaa'i",
+  "portfolioGoalTitle": "Kaayyoo poortfooliyoo",
+  "portfolioGoalProgress": "{percent} · Kaayyoo: {amount}",
+  "portfolioGoalReached": "Kaayyoon galma ga'eera: {amount}",
+  "portfolioGoalRemove": "Kaayyoo haqi"
 }

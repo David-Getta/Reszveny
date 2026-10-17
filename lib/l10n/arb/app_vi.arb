@@ -651,5 +651,10 @@
   "usMarketClosed": "Thị trường Mỹ đóng cửa · mở cửa sau {time}",
   "durationMinutes": "{minutes} phút",
   "durationHoursMinutes": "{hours} giờ {minutes} phút",
-  "durationDaysHours": "{days} ngày {hours} giờ"
+  "durationDaysHours": "{days} ngày {hours} giờ",
+  "portfolioGoalSet": "Đặt mục tiêu",
+  "portfolioGoalTitle": "Mục tiêu danh mục",
+  "portfolioGoalProgress": "{percent} mục tiêu {amount}",
+  "portfolioGoalReached": "Đã đạt mục tiêu {amount}",
+  "portfolioGoalRemove": "Xóa mục tiêu"
 }

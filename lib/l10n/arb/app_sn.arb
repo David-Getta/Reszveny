@@ -651,5 +651,10 @@
   "usMarketClosed": "Musika weAmerica wakavharwa · uchavhurwa mushure me{time}",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} h {minutes} min",
-  "durationDaysHours": "{days} mazuva {hours} h"
+  "durationDaysHours": "{days} mazuva {hours} h",
+  "portfolioGoalSet": "Isa chinangwa",
+  "portfolioGoalTitle": "Chinangwa chepotiforiyo",
+  "portfolioGoalProgress": "{percent} · Chinangwa: {amount}",
+  "portfolioGoalReached": "Wasvika pachinangwa: {amount}",
+  "portfolioGoalRemove": "Bvisa chinangwa"
 }

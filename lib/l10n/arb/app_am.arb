@@ -651,5 +651,10 @@
   "usMarketClosed": "የአሜሪካ ገበያ ዝግ ነው · በ{time} ውስጥ ይከፈታል",
   "durationMinutes": "{minutes} ደቂቃ",
   "durationHoursMinutes": "{hours} ሰዓት {minutes} ደቂቃ",
-  "durationDaysHours": "{days} ቀን {hours} ሰዓት"
+  "durationDaysHours": "{days} ቀን {hours} ሰዓት",
+  "portfolioGoalSet": "ግብ አስቀምጥ",
+  "portfolioGoalTitle": "የፖርትፎሊዮ ግብ",
+  "portfolioGoalProgress": "{percent} · ግብ፦ {amount}",
+  "portfolioGoalReached": "ግቡ ተሳክቷል፦ {amount}",
+  "portfolioGoalRemove": "ግቡን አስወግድ"
 }

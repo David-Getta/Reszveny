@@ -651,5 +651,10 @@
   "usMarketClosed": "Piața SUA închisă · se deschide în {time}",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} h {minutes} min",
-  "durationDaysHours": "{days} z {hours} h"
+  "durationDaysHours": "{days} z {hours} h",
+  "portfolioGoalSet": "Setează un obiectiv",
+  "portfolioGoalTitle": "Obiectivul portofoliului",
+  "portfolioGoalProgress": "{percent} din obiectivul de {amount}",
+  "portfolioGoalReached": "Obiectivul de {amount} a fost atins",
+  "portfolioGoalRemove": "Elimină obiectivul"
 }

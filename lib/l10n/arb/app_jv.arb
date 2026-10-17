@@ -651,5 +651,10 @@
   "usMarketClosed": "Pasar AS tutup · buka {time} engkas",
   "durationMinutes": "{minutes} mnt",
   "durationHoursMinutes": "{hours} jam {minutes} mnt",
-  "durationDaysHours": "{days} dina {hours} jam"
+  "durationDaysHours": "{days} dina {hours} jam",
+  "portfolioGoalSet": "Setel target",
+  "portfolioGoalTitle": "Target portofolio",
+  "portfolioGoalProgress": "{percent} saka target {amount}",
+  "portfolioGoalReached": "Target {amount} kagayuh",
+  "portfolioGoalRemove": "Busak target"
 }

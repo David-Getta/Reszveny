@@ -2515,4 +2515,23 @@ class AppLocalizationsLt extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days d. $hours val.';
   }
+
+  @override
+  String get portfolioGoalSet => 'Nustatyti tikslą';
+
+  @override
+  String get portfolioGoalTitle => 'Portfelio tikslas';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · tikslas: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Tikslas pasiektas: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Pašalinti tikslą';
 }

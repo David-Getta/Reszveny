@@ -2518,4 +2518,23 @@ class AppLocalizationsUk extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days дн $hours год';
   }
+
+  @override
+  String get portfolioGoalSet => 'Задати ціль';
+
+  @override
+  String get portfolioGoalTitle => 'Ціль портфеля';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent від цілі $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Ціль $amount досягнуто';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Видалити ціль';
 }

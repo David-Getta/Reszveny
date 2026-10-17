@@ -651,5 +651,10 @@
   "usMarketClosed": "Zando ya Amerika ekangami · ekofungwama nsima ya {time}",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} h {minutes} min",
-  "durationDaysHours": "{days} mikolo {hours} h"
+  "durationDaysHours": "{days} mikolo {hours} h",
+  "portfolioGoalSet": "Tyá mokano",
+  "portfolioGoalTitle": "Mokano ya portefeuille",
+  "portfolioGoalProgress": "{percent} · Mokano: {amount}",
+  "portfolioGoalReached": "Okokisi mokano: {amount}",
+  "portfolioGoalRemove": "Longola mokano"
 }

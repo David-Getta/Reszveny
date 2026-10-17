@@ -651,5 +651,10 @@
   "usMarketClosed": "Amerika dwa ato mu · ɛbɛbue {time} akyi",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} dɔn {minutes} min",
-  "durationDaysHours": "{days} nna {hours} dɔn"
+  "durationDaysHours": "{days} nna {hours} dɔn",
+  "portfolioGoalSet": "Hyɛ botaeɛ",
+  "portfolioGoalTitle": "Wo nkyɛfa botaeɛ",
+  "portfolioGoalProgress": "{percent} · Botaeɛ: {amount}",
+  "portfolioGoalReached": "Woadu wo botaeɛ: {amount}",
+  "portfolioGoalRemove": "Yi botaeɛ no fi hɔ"
 }

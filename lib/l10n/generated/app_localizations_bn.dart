@@ -2448,4 +2448,23 @@ class AppLocalizationsBn extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days দিন $hours ঘণ্টা';
   }
+
+  @override
+  String get portfolioGoalSet => 'লক্ষ্য ঠিক করুন';
+
+  @override
+  String get portfolioGoalTitle => 'পোর্টফোলিও লক্ষ্য';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · লক্ষ্য: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'লক্ষ্য পূরণ হয়েছে: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'লক্ষ্য সরান';
 }

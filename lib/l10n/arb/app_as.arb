@@ -651,5 +651,10 @@
   "usMarketClosed": "আমেৰিকাৰ বজাৰ বন্ধ · {time} পিছত খুলিব",
   "durationMinutes": "{minutes} মিনিট",
   "durationHoursMinutes": "{hours} ঘণ্টা {minutes} মিনিট",
-  "durationDaysHours": "{days} দিন {hours} ঘণ্টা"
+  "durationDaysHours": "{days} দিন {hours} ঘণ্টা",
+  "portfolioGoalSet": "লক্ষ্য নিৰ্ধাৰণ কৰক",
+  "portfolioGoalTitle": "প'ৰ্টফ'লিঅ'ৰ লক্ষ্য",
+  "portfolioGoalProgress": "{percent} · লক্ষ্য: {amount}",
+  "portfolioGoalReached": "লক্ষ্য পূৰণ হ'ল: {amount}",
+  "portfolioGoalRemove": "লক্ষ্য আঁতৰাওক"
 }

@@ -651,5 +651,10 @@
   "usMarketClosed": "Ahịa US mechiri emechi · ga-emeghe n'ime {time}",
   "durationMinutes": "nkeji {minutes}",
   "durationHoursMinutes": "awa {hours} nkeji {minutes}",
-  "durationDaysHours": "ụbọchị {days} awa {hours}"
+  "durationDaysHours": "ụbọchị {days} awa {hours}",
+  "portfolioGoalSet": "Tọọ ebumnuche",
+  "portfolioGoalTitle": "Ebumnuche portfolio",
+  "portfolioGoalProgress": "{percent} · Ebumnuche: {amount}",
+  "portfolioGoalReached": "Emezuru ebumnuche: {amount}",
+  "portfolioGoalRemove": "Wepụ ebumnuche"
 }

@@ -2441,4 +2441,23 @@ class AppLocalizationsSd extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days ڏينهن $hours ڪلاڪ';
   }
+
+  @override
+  String get portfolioGoalSet => 'مقصد مقرر ڪريو';
+
+  @override
+  String get portfolioGoalTitle => 'پورٽ فوليو جو مقصد';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · مقصد: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'مقصد حاصل ٿيو: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'مقصد هٽايو';
 }

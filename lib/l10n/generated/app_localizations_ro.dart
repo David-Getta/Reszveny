@@ -2488,4 +2488,23 @@ class AppLocalizationsRo extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days z $hours h';
   }
+
+  @override
+  String get portfolioGoalSet => 'Setează un obiectiv';
+
+  @override
+  String get portfolioGoalTitle => 'Obiectivul portofoliului';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent din obiectivul de $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Obiectivul de $amount a fost atins';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Elimină obiectivul';
 }

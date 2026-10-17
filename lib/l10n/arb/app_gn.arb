@@ -651,5 +651,10 @@
   "usMarketClosed": "Merkádo EUA oñembotypáma · ojepeʼáta {time} rire",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} h {minutes} min",
-  "durationDaysHours": "{days} ára {hours} h"
+  "durationDaysHours": "{days} ára {hours} h",
+  "portfolioGoalSet": "Emoĩ jehupytyrã",
+  "portfolioGoalTitle": "Cartera jehupytyrã",
+  "portfolioGoalProgress": "{percent} · Jehupytyrã: {amount}",
+  "portfolioGoalReached": "Rehupytýma jehupytyrã: {amount}",
+  "portfolioGoalRemove": "Embogue jehupytyrã"
 }

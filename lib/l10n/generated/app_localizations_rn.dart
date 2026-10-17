@@ -2457,4 +2457,23 @@ class AppLocalizationsRn extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days imisi $hours h';
   }
+
+  @override
+  String get portfolioGoalSet => 'Shiraho intumbero';
+
+  @override
+  String get portfolioGoalTitle => 'Intumbero y\'ishoramari';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · Intumbero: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Washikiye ku ntumbero: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Kuramwo intumbero';
 }

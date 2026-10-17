@@ -1951,5 +1951,28 @@
         "type": "int"
       }
     }
+  },
+  "portfolioGoalSet": "Set a goal",
+  "portfolioGoalTitle": "Portfolio goal",
+  "portfolioGoalProgress": "{percent} of your {amount} goal",
+  "portfolioGoalReached": "Goal of {amount} reached",
+  "portfolioGoalRemove": "Remove goal",
+  "@portfolioGoalProgress": {
+    "description": "Under the portfolio total: progress towards the user's target value. {percent} like '53%', {amount} like '10,000,000 HUF'.",
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      },
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "@portfolioGoalReached": {
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
   }
 }

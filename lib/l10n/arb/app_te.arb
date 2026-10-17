@@ -651,5 +651,10 @@
   "usMarketClosed": "యుఎస్ మార్కెట్ మూసి ఉంది · తెరవడానికి ఇంకా {time}",
   "durationMinutes": "{minutes} నిమి",
   "durationHoursMinutes": "{hours} గం {minutes} నిమి",
-  "durationDaysHours": "{days} రో {hours} గం"
+  "durationDaysHours": "{days} రో {hours} గం",
+  "portfolioGoalSet": "లక్ష్యం సెట్ చేయి",
+  "portfolioGoalTitle": "పోర్ట్‌ఫోలియో లక్ష్యం",
+  "portfolioGoalProgress": "{percent} · లక్ష్యం: {amount}",
+  "portfolioGoalReached": "లక్ష్యం చేరుకుంది: {amount}",
+  "portfolioGoalRemove": "లక్ష్యాన్ని తీసివేయి"
 }

@@ -2456,4 +2456,23 @@ class AppLocalizationsNy extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days masiku $hours ola';
   }
+
+  @override
+  String get portfolioGoalSet => 'Ikani cholinga';
+
+  @override
+  String get portfolioGoalTitle => 'Cholinga cha masheya anu';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · Cholinga: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Mwakwaniritsa cholinga: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Chotsani cholinga';
 }

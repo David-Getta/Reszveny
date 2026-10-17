@@ -651,5 +651,10 @@
   "usMarketClosed": "Imarike yaseMelika ivaliwe · iza kuvulwa emva kwe-{time}",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} h {minutes} min",
-  "durationDaysHours": "{days} iintsuku {hours} h"
+  "durationDaysHours": "{days} iintsuku {hours} h",
+  "portfolioGoalSet": "Misela usukelo",
+  "portfolioGoalTitle": "Usukelo lwepotifoliyo",
+  "portfolioGoalProgress": "{percent} · Usukelo: {amount}",
+  "portfolioGoalReached": "Usukelo lufikelelwe: {amount}",
+  "portfolioGoalRemove": "Susa usukelo"
 }

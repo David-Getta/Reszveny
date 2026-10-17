@@ -651,5 +651,10 @@
   "usMarketClosed": "अमेरिकी बजार बन्द अछि · {time} मे खुजत",
   "durationMinutes": "{minutes} मिनट",
   "durationHoursMinutes": "{hours} घंटा {minutes} मिनट",
-  "durationDaysHours": "{days} दिन {hours} घंटा"
+  "durationDaysHours": "{days} दिन {hours} घंटा",
+  "portfolioGoalSet": "लक्ष्य निर्धारित करू",
+  "portfolioGoalTitle": "पोर्टफ़ोलियो लक्ष्य",
+  "portfolioGoalProgress": "{percent} · लक्ष्य: {amount}",
+  "portfolioGoalReached": "लक्ष्य पूरा भेल: {amount}",
+  "portfolioGoalRemove": "लक्ष्य हटाउ"
 }

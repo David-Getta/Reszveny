@@ -2446,4 +2446,23 @@ class AppLocalizationsFa extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days روز $hours ساعت';
   }
+
+  @override
+  String get portfolioGoalSet => 'تعیین هدف';
+
+  @override
+  String get portfolioGoalTitle => 'هدف سبد سهام';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent از هدف $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'هدف $amount محقق شد';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'حذف هدف';
 }

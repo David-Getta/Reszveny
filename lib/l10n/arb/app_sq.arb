@@ -651,5 +651,10 @@
   "usMarketClosed": "Tregu i SHBA-së i mbyllur · hapet pas {time}",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} orë {minutes} min",
-  "durationDaysHours": "{days} ditë {hours} orë"
+  "durationDaysHours": "{days} ditë {hours} orë",
+  "portfolioGoalSet": "Cakto një objektiv",
+  "portfolioGoalTitle": "Objektivi i portofolit",
+  "portfolioGoalProgress": "{percent} · objektivi: {amount}",
+  "portfolioGoalReached": "Objektivi u arrit: {amount}",
+  "portfolioGoalRemove": "Hiq objektivin"
 }

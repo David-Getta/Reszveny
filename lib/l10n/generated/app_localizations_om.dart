@@ -2458,4 +2458,23 @@ class AppLocalizationsOm extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return 'guyyaa $days sa\'a $hours';
   }
+
+  @override
+  String get portfolioGoalSet => 'Kaayyoo kaa\'i';
+
+  @override
+  String get portfolioGoalTitle => 'Kaayyoo poortfooliyoo';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · Kaayyoo: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Kaayyoon galma ga\'eera: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Kaayyoo haqi';
 }

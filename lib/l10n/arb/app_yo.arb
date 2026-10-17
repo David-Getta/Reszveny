@@ -651,5 +651,10 @@
   "usMarketClosed": "Ọjà Amẹ́ríkà ti tì · yóò ṣí ní {time} sí i",
   "durationMinutes": "ìṣẹ́jú {minutes}",
   "durationHoursMinutes": "wákàtí {hours} ìṣẹ́jú {minutes}",
-  "durationDaysHours": "ọjọ́ {days} wákàtí {hours}"
+  "durationDaysHours": "ọjọ́ {days} wákàtí {hours}",
+  "portfolioGoalSet": "Ṣètò àfojúsùn",
+  "portfolioGoalTitle": "Àfojúsùn àpò ìdókòwò",
+  "portfolioGoalProgress": "{percent} · Àfojúsùn: {amount}",
+  "portfolioGoalReached": "O ti dé àfojúsùn: {amount}",
+  "portfolioGoalRemove": "Yọ àfojúsùn kúrò"
 }

@@ -651,5 +651,10 @@
   "usMarketClosed": "بازار آمریکا بسته است · {time} دیگر باز می‌شود",
   "durationMinutes": "{minutes} دقیقه",
   "durationHoursMinutes": "{hours} ساعت {minutes} دقیقه",
-  "durationDaysHours": "{days} روز {hours} ساعت"
+  "durationDaysHours": "{days} روز {hours} ساعت",
+  "portfolioGoalSet": "تعیین هدف",
+  "portfolioGoalTitle": "هدف سبد سهام",
+  "portfolioGoalProgress": "{percent} از هدف {amount}",
+  "portfolioGoalReached": "هدف {amount} محقق شد",
+  "portfolioGoalRemove": "حذف هدف"
 }

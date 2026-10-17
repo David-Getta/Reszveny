@@ -2451,4 +2451,23 @@ class AppLocalizationsTg extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days рӯз $hours соат';
   }
+
+  @override
+  String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
+
+  @override
+  String get portfolioGoalTitle => 'Ҳадафи портфел';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · ҳадаф: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Ҳадаф иҷро шуд: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Хориҷ кардани ҳадаф';
 }

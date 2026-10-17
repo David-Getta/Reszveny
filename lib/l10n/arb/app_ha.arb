@@ -651,5 +651,10 @@
   "usMarketClosed": "Kasuwar Amurka a rufe · za ta buɗe nan da {time}",
   "durationMinutes": "minti {minutes}",
   "durationHoursMinutes": "awa {hours} minti {minutes}",
-  "durationDaysHours": "kwana {days} awa {hours}"
+  "durationDaysHours": "kwana {days} awa {hours}",
+  "portfolioGoalSet": "Saita buri",
+  "portfolioGoalTitle": "Burin jakar hannun jari",
+  "portfolioGoalProgress": "{percent} · Buri: {amount}",
+  "portfolioGoalReached": "An cimma buri: {amount}",
+  "portfolioGoalRemove": "Cire buri"
 }

@@ -2441,4 +2441,23 @@ class AppLocalizationsMy extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days ရက် $hours နာရီ';
   }
+
+  @override
+  String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
+
+  @override
+  String get portfolioGoalTitle => 'ပေါ့ဖိုလီယို ပန်းတိုင်';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · ပန်းတိုင် $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'ပန်းတိုင် $amount ပြည့်မီပြီ';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'ပန်းတိုင် ဖယ်ရှားရန်';
 }

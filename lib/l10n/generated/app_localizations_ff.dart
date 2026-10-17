@@ -2444,4 +2444,23 @@ class AppLocalizationsFf extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days balɗe $hours h';
   }
+
+  @override
+  String get portfolioGoalSet => 'Taƴto faandaare';
+
+  @override
+  String get portfolioGoalTitle => 'Faandaare aksiyoŋ am';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · Faandaare: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'A heɓii faandaare maa: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Momtu faandaare';
 }

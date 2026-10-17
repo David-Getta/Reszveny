@@ -651,5 +651,10 @@
   "usMarketClosed": "Marse Amerig tëju na · dina ubbeeku ci {time}",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} h {minutes} min",
-  "durationDaysHours": "{days} fan {hours} h"
+  "durationDaysHours": "{days} fan {hours} h",
+  "portfolioGoalSet": "Taxawal jublu",
+  "portfolioGoalTitle": "Jublu sama aksiyoŋ yi",
+  "portfolioGoalProgress": "{percent} · Jublu: {amount}",
+  "portfolioGoalReached": "Agsi nga ci sa jublu: {amount}",
+  "portfolioGoalRemove": "Far jublu bi"
 }

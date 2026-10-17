@@ -651,5 +651,10 @@
   "usMarketClosed": "Imakethe yaseMelika ivaliwe · izovulwa ngemva kuka-{time}",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} h {minutes} min",
-  "durationDaysHours": "{days} izinsuku {hours} h"
+  "durationDaysHours": "{days} izinsuku {hours} h",
+  "portfolioGoalSet": "Setha umgomo",
+  "portfolioGoalTitle": "Umgomo wephothifoliyo",
+  "portfolioGoalProgress": "{percent} · Umgomo: {amount}",
+  "portfolioGoalReached": "Umgomo ufinyelelwe: {amount}",
+  "portfolioGoalRemove": "Susa umgomo"
 }

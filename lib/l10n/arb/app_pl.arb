@@ -651,5 +651,10 @@
   "usMarketClosed": "Rynek USA zamknięty · otwarcie za {time}",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} godz. {minutes} min",
-  "durationDaysHours": "{days} d. {hours} godz."
+  "durationDaysHours": "{days} d. {hours} godz.",
+  "portfolioGoalSet": "Ustaw cel",
+  "portfolioGoalTitle": "Cel portfela",
+  "portfolioGoalProgress": "{percent} · cel: {amount}",
+  "portfolioGoalReached": "Cel osiągnięty: {amount}",
+  "portfolioGoalRemove": "Usuń cel"
 }

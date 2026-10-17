@@ -2450,4 +2450,23 @@ class AppLocalizationsSw extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return 'siku $days saa $hours';
   }
+
+  @override
+  String get portfolioGoalSet => 'Weka lengo';
+
+  @override
+  String get portfolioGoalTitle => 'Lengo la jalada la hisa';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent ya lengo lako la $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Lengo la $amount limefikiwa';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Ondoa lengo';
 }

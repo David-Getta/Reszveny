@@ -651,5 +651,10 @@
   "usMarketClosed": "Mercado dos EUA fechado · abre em {time}",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} h {minutes} min",
-  "durationDaysHours": "{days} d {hours} h"
+  "durationDaysHours": "{days} d {hours} h",
+  "portfolioGoalSet": "Definir meta",
+  "portfolioGoalTitle": "Meta da carteira",
+  "portfolioGoalProgress": "{percent} da sua meta de {amount}",
+  "portfolioGoalReached": "Meta de {amount} atingida",
+  "portfolioGoalRemove": "Remover meta"
 }

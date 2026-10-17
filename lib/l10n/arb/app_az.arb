@@ -651,5 +651,10 @@
   "usMarketClosed": "ABŞ bazarı bağlıdır · {time} sonra açılır",
   "durationMinutes": "{minutes} dəq",
   "durationHoursMinutes": "{hours} saat {minutes} dəq",
-  "durationDaysHours": "{days} gün {hours} saat"
+  "durationDaysHours": "{days} gün {hours} saat",
+  "portfolioGoalSet": "Hədəf təyin et",
+  "portfolioGoalTitle": "Portfel hədəfi",
+  "portfolioGoalProgress": "{percent} · hədəf: {amount}",
+  "portfolioGoalReached": "Hədəfə çatdın: {amount}",
+  "portfolioGoalRemove": "Hədəfi sil"
 }

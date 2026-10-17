@@ -651,5 +651,10 @@
   "usMarketClosed": "Бозори ИМА пӯшида аст · то кушодан {time}",
   "durationMinutes": "{minutes} дақ",
   "durationHoursMinutes": "{hours} соат {minutes} дақ",
-  "durationDaysHours": "{days} рӯз {hours} соат"
+  "durationDaysHours": "{days} рӯз {hours} соат",
+  "portfolioGoalSet": "Муқаррар кардани ҳадаф",
+  "portfolioGoalTitle": "Ҳадафи портфел",
+  "portfolioGoalProgress": "{percent} · ҳадаф: {amount}",
+  "portfolioGoalReached": "Ҳадаф иҷро шуд: {amount}",
+  "portfolioGoalRemove": "Хориҷ кардани ҳадаф"
 }

@@ -651,5 +651,10 @@
   "usMarketClosed": "Mache ameriken fèmen · ap louvri nan {time}",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} h {minutes} min",
-  "durationDaysHours": "{days} j {hours} h"
+  "durationDaysHours": "{days} j {hours} h",
+  "portfolioGoalSet": "Mete yon objektif",
+  "portfolioGoalTitle": "Objektif pòtfèy",
+  "portfolioGoalProgress": "{percent} · Objektif: {amount}",
+  "portfolioGoalReached": "Objektif atenn: {amount}",
+  "portfolioGoalRemove": "Retire objektif la"
 }

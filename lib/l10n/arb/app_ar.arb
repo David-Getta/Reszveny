@@ -651,5 +651,10 @@
   "usMarketClosed": "السوق الأمريكية مغلقة · تُفتح بعد {time}",
   "durationMinutes": "{minutes} د",
   "durationHoursMinutes": "{hours} س {minutes} د",
-  "durationDaysHours": "{days} ي {hours} س"
+  "durationDaysHours": "{days} ي {hours} س",
+  "portfolioGoalSet": "تحديد هدف",
+  "portfolioGoalTitle": "هدف المحفظة",
+  "portfolioGoalProgress": "{percent} من هدفك البالغ {amount}",
+  "portfolioGoalReached": "تم بلوغ الهدف: {amount}",
+  "portfolioGoalRemove": "إزالة الهدف"
 }

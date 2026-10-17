@@ -2448,4 +2448,23 @@ class AppLocalizationsNe extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days दिन $hours घण्टा';
   }
+
+  @override
+  String get portfolioGoalSet => 'लक्ष्य तोक्नुहोस्';
+
+  @override
+  String get portfolioGoalTitle => 'पोर्टफोलियो लक्ष्य';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · लक्ष्य: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'लक्ष्य पूरा भयो: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'लक्ष्य हटाउनुहोस्';
 }

@@ -651,5 +651,10 @@
   "usMarketClosed": "Αγορά ΗΠΑ κλειστή · ανοίγει σε {time}",
   "durationMinutes": "{minutes} λ.",
   "durationHoursMinutes": "{hours} ώ. {minutes} λ.",
-  "durationDaysHours": "{days} ημ. {hours} ώ."
+  "durationDaysHours": "{days} ημ. {hours} ώ.",
+  "portfolioGoalSet": "Ορισμός στόχου",
+  "portfolioGoalTitle": "Στόχος χαρτοφυλακίου",
+  "portfolioGoalProgress": "{percent} · στόχος: {amount}",
+  "portfolioGoalReached": "Ο στόχος επιτεύχθηκε: {amount}",
+  "portfolioGoalRemove": "Αφαίρεση στόχου"
 }

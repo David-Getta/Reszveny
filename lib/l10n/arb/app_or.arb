@@ -651,5 +651,10 @@
   "usMarketClosed": "ଆମେରିକା ବଜାର ବନ୍ଦ · {time} ପରେ ଖୋଲିବ",
   "durationMinutes": "{minutes} ମିନିଟ",
   "durationHoursMinutes": "{hours} ଘଣ୍ଟା {minutes} ମିନିଟ",
-  "durationDaysHours": "{days} ଦିନ {hours} ଘଣ୍ଟା"
+  "durationDaysHours": "{days} ଦିନ {hours} ଘଣ୍ଟା",
+  "portfolioGoalSet": "ଲକ୍ଷ୍ୟ ସ୍ଥିର କରନ୍ତୁ",
+  "portfolioGoalTitle": "ପୋର୍ଟଫୋଲିଓ ଲକ୍ଷ୍ୟ",
+  "portfolioGoalProgress": "{percent} · ଲକ୍ଷ୍ୟ: {amount}",
+  "portfolioGoalReached": "ଲକ୍ଷ୍ୟ ପୂରଣ ହେଲା: {amount}",
+  "portfolioGoalRemove": "ଲକ୍ଷ୍ୟ ହଟାନ୍ତୁ"
 }

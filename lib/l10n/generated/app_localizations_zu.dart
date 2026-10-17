@@ -2459,4 +2459,23 @@ class AppLocalizationsZu extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days izinsuku $hours h';
   }
+
+  @override
+  String get portfolioGoalSet => 'Setha umgomo';
+
+  @override
+  String get portfolioGoalTitle => 'Umgomo wephothifoliyo';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · Umgomo: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Umgomo ufinyelelwe: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Susa umgomo';
 }

@@ -2443,4 +2443,23 @@ class AppLocalizationsMai extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days दिन $hours घंटा';
   }
+
+  @override
+  String get portfolioGoalSet => 'लक्ष्य निर्धारित करू';
+
+  @override
+  String get portfolioGoalTitle => 'पोर्टफ़ोलियो लक्ष्य';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · लक्ष्य: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'लक्ष्य पूरा भेल: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'लक्ष्य हटाउ';
 }

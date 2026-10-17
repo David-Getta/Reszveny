@@ -651,5 +651,10 @@
   "usMarketClosed": "השוק בארה״ב סגור · נפתח בעוד {time}",
   "durationMinutes": "{minutes} דק׳",
   "durationHoursMinutes": "{hours} שע׳ {minutes} דק׳",
-  "durationDaysHours": "{days} י׳ {hours} שע׳"
+  "durationDaysHours": "{days} י׳ {hours} שע׳",
+  "portfolioGoalSet": "הגדרת יעד",
+  "portfolioGoalTitle": "יעד לתיק",
+  "portfolioGoalProgress": "{percent} מהיעד של {amount}",
+  "portfolioGoalReached": "היעד של {amount} הושג",
+  "portfolioGoalRemove": "הסרת היעד"
 }

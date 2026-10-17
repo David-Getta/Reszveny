@@ -651,5 +651,10 @@
   "usMarketClosed": "Ssuq n Marikan yemdel · ad yeldi deg {time}",
   "durationMinutes": "{minutes} tsd",
   "durationHoursMinutes": "{hours} sr {minutes} tsd",
-  "durationDaysHours": "{days} us {hours} sr"
+  "durationDaysHours": "{days} us {hours} sr",
+  "portfolioGoalSet": "Sbadu iswi",
+  "portfolioGoalTitle": "Iswi n uqrab",
+  "portfolioGoalProgress": "{percent} · Iswi: {amount}",
+  "portfolioGoalReached": "Tewwḍeḍ ɣer yiswi: {amount}",
+  "portfolioGoalRemove": "Kkes iswi"
 }

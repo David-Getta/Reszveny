@@ -2455,4 +2455,23 @@ class AppLocalizationsSn extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days mazuva $hours h';
   }
+
+  @override
+  String get portfolioGoalSet => 'Isa chinangwa';
+
+  @override
+  String get portfolioGoalTitle => 'Chinangwa chepotiforiyo';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · Chinangwa: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Wasvika pachinangwa: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Bvisa chinangwa';
 }

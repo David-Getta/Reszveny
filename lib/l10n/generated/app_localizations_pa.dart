@@ -2445,4 +2445,23 @@ class AppLocalizationsPa extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days ਦਿਨ $hours ਘੰ.';
   }
+
+  @override
+  String get portfolioGoalSet => 'ਟੀਚਾ ਤੈਅ ਕਰੋ';
+
+  @override
+  String get portfolioGoalTitle => 'ਪੋਰਟਫ਼ੋਲੀਓ ਟੀਚਾ';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · ਟੀਚਾ: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'ਟੀਚਾ ਪੂਰਾ ਹੋਇਆ: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'ਟੀਚਾ ਹਟਾਓ';
 }

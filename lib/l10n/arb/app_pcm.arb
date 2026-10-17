@@ -651,5 +651,10 @@
   "usMarketClosed": "US market don close · e go open in {time}",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} hr {minutes} min",
-  "durationDaysHours": "{days} day {hours} hr"
+  "durationDaysHours": "{days} day {hours} hr",
+  "portfolioGoalSet": "Put target",
+  "portfolioGoalTitle": "Portfolio target",
+  "portfolioGoalProgress": "{percent} of your {amount} target",
+  "portfolioGoalReached": "You don hit your {amount} target",
+  "portfolioGoalRemove": "Comot target"
 }

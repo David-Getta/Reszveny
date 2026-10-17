@@ -651,5 +651,10 @@
   "usMarketClosed": "米国市場 取引時間外 · 開始まで {time}",
   "durationMinutes": "{minutes} 分",
   "durationHoursMinutes": "{hours} 時間 {minutes} 分",
-  "durationDaysHours": "{days} 日 {hours} 時間"
+  "durationDaysHours": "{days} 日 {hours} 時間",
+  "portfolioGoalSet": "目標を設定",
+  "portfolioGoalTitle": "ポートフォリオの目標",
+  "portfolioGoalProgress": "{percent} 達成 · 目標 {amount}",
+  "portfolioGoalReached": "目標 {amount} を達成",
+  "portfolioGoalRemove": "目標を削除"
 }

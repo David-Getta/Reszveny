@@ -2455,4 +2455,23 @@ class AppLocalizationsEs extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days d $hours h';
   }
+
+  @override
+  String get portfolioGoalSet => 'Fijar un objetivo';
+
+  @override
+  String get portfolioGoalTitle => 'Objetivo de la cartera';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent de tu objetivo de $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Objetivo de $amount alcanzado';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Eliminar objetivo';
 }

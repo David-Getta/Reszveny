@@ -2465,4 +2465,23 @@ class AppLocalizationsNso extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days matšatši $hours h';
   }
+
+  @override
+  String get portfolioGoalSet => 'Bea maikemišetšo';
+
+  @override
+  String get portfolioGoalTitle => 'Maikemišetšo a photefolio';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · Maikemišetšo: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Maikemišetšo a fihleletšwe: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Tloša maikemišetšo';
 }

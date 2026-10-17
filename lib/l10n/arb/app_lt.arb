@@ -651,5 +651,10 @@
   "usMarketClosed": "JAV rinka uždaryta · atsidaro po {time}",
   "durationMinutes": "{minutes} min.",
   "durationHoursMinutes": "{hours} val. {minutes} min.",
-  "durationDaysHours": "{days} d. {hours} val."
+  "durationDaysHours": "{days} d. {hours} val.",
+  "portfolioGoalSet": "Nustatyti tikslą",
+  "portfolioGoalTitle": "Portfelio tikslas",
+  "portfolioGoalProgress": "{percent} · tikslas: {amount}",
+  "portfolioGoalReached": "Tikslas pasiektas: {amount}",
+  "portfolioGoalRemove": "Pašalinti tikslą"
 }

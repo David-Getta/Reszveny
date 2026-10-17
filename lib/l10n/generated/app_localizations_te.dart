@@ -2455,4 +2455,23 @@ class AppLocalizationsTe extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days రో $hours గం';
   }
+
+  @override
+  String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
+
+  @override
+  String get portfolioGoalTitle => 'పోర్ట్‌ఫోలియో లక్ష్యం';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · లక్ష్యం: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'లక్ష్యం చేరుకుంది: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'లక్ష్యాన్ని తీసివేయి';
 }

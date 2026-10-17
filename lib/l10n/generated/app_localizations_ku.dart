@@ -2451,4 +2451,23 @@ class AppLocalizationsKu extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days roj $hours saet';
   }
+
+  @override
+  String get portfolioGoalSet => 'Armanc deyne';
+
+  @override
+  String get portfolioGoalTitle => 'Armanca portfolyoyê';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · Armanc: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Gihîştî armancê: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Armancê rake';
 }

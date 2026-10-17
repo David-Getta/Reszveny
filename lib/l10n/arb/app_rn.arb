@@ -651,5 +651,10 @@
   "usMarketClosed": "Isoko rya Amerika ryugaye · rizugururwa mu {time}",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} h {minutes} min",
-  "durationDaysHours": "{days} imisi {hours} h"
+  "durationDaysHours": "{days} imisi {hours} h",
+  "portfolioGoalSet": "Shiraho intumbero",
+  "portfolioGoalTitle": "Intumbero y'ishoramari",
+  "portfolioGoalProgress": "{percent} · Intumbero: {amount}",
+  "portfolioGoalReached": "Washikiye ku ntumbero: {amount}",
+  "portfolioGoalRemove": "Kuramwo intumbero"
 }

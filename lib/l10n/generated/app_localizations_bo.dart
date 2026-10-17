@@ -2438,4 +2438,23 @@ class AppLocalizationsBo extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return 'ཉིན་ $days ཆུ་ཚོད་ $hours';
   }
+
+  @override
+  String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
+
+  @override
+  String get portfolioGoalTitle => 'མ་འཇོག་ཚོགས་སྡེབ་ཀྱི་དམིགས་ཚད';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · དམིགས་ཚད། $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'དམིགས་ཚད་ལ་སླེབས་སོང་། $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'དམིགས་ཚད་སུབ';
 }

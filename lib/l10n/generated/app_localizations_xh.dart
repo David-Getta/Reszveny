@@ -2461,4 +2461,23 @@ class AppLocalizationsXh extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days iintsuku $hours h';
   }
+
+  @override
+  String get portfolioGoalSet => 'Misela usukelo';
+
+  @override
+  String get portfolioGoalTitle => 'Usukelo lwepotifoliyo';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · Usukelo: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Usukelo lufikelelwe: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Susa usukelo';
 }

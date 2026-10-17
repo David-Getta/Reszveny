@@ -651,5 +651,10 @@
   "usMarketClosed": "Рынак ЗША зачынены · адкрыецца праз {time}",
   "durationMinutes": "{minutes} хв",
   "durationHoursMinutes": "{hours} гадз {minutes} хв",
-  "durationDaysHours": "{days} дз {hours} гадз"
+  "durationDaysHours": "{days} дз {hours} гадз",
+  "portfolioGoalSet": "Задаць мэту",
+  "portfolioGoalTitle": "Мэта партфеля",
+  "portfolioGoalProgress": "{percent} ад мэты {amount}",
+  "portfolioGoalReached": "Мэта {amount} дасягнута",
+  "portfolioGoalRemove": "Выдаліць мэту"
 }

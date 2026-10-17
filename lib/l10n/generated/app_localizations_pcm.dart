@@ -2450,4 +2450,23 @@ class AppLocalizationsPcm extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days day $hours hr';
   }
+
+  @override
+  String get portfolioGoalSet => 'Put target';
+
+  @override
+  String get portfolioGoalTitle => 'Portfolio target';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent of your $amount target';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'You don hit your $amount target';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Comot target';
 }

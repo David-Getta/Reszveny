@@ -2451,4 +2451,23 @@ class AppLocalizationsCkb extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days ڕۆژ $hours کاتژمێر';
   }
+
+  @override
+  String get portfolioGoalSet => 'دانانی ئامانج';
+
+  @override
+  String get portfolioGoalTitle => 'ئامانجی پۆرتفۆلیۆ';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · ئامانج: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'گەیشتیت بە ئامانج: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'لابردنی ئامانج';
 }

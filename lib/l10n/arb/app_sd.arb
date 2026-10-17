@@ -651,5 +651,10 @@
   "usMarketClosed": "آمريڪي مارڪيٽ بند · {time} ۾ کلندي",
   "durationMinutes": "{minutes} منٽ",
   "durationHoursMinutes": "{hours} ڪلاڪ {minutes} منٽ",
-  "durationDaysHours": "{days} ڏينهن {hours} ڪلاڪ"
+  "durationDaysHours": "{days} ڏينهن {hours} ڪلاڪ",
+  "portfolioGoalSet": "مقصد مقرر ڪريو",
+  "portfolioGoalTitle": "پورٽ فوليو جو مقصد",
+  "portfolioGoalProgress": "{percent} · مقصد: {amount}",
+  "portfolioGoalReached": "مقصد حاصل ٿيو: {amount}",
+  "portfolioGoalRemove": "مقصد هٽايو"
 }

@@ -651,5 +651,10 @@
   "usMarketClosed": "Пазарът в САЩ е затворен · отваря след {time}",
   "durationMinutes": "{minutes} мин",
   "durationHoursMinutes": "{hours} ч {minutes} мин",
-  "durationDaysHours": "{days} д {hours} ч"
+  "durationDaysHours": "{days} д {hours} ч",
+  "portfolioGoalSet": "Задай цел",
+  "portfolioGoalTitle": "Цел на портфейла",
+  "portfolioGoalProgress": "{percent} от целта ти от {amount}",
+  "portfolioGoalReached": "Целта от {amount} е постигната",
+  "portfolioGoalRemove": "Премахни целта"
 }

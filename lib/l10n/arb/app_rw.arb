@@ -651,5 +651,10 @@
   "usMarketClosed": "Isoko rya Amerika rirafunze · rirafungura mu {time}",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} h {minutes} min",
-  "durationDaysHours": "{days} iminsi {hours} h"
+  "durationDaysHours": "{days} iminsi {hours} h",
+  "portfolioGoalSet": "Shyiraho intego",
+  "portfolioGoalTitle": "Intego y'ishoramari",
+  "portfolioGoalProgress": "{percent} · Intego: {amount}",
+  "portfolioGoalReached": "Wageze ku ntego: {amount}",
+  "portfolioGoalRemove": "Kuramo intego"
 }

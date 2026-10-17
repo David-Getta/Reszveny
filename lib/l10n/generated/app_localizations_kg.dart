@@ -2457,4 +2457,23 @@ class AppLocalizationsKg extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days bilumbu $hours h';
   }
+
+  @override
+  String get portfolioGoalSet => 'Tula lukanu';
+
+  @override
+  String get portfolioGoalTitle => 'Lukanu ya portefeuille';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · Lukanu: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Lukanu me lunga: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Katula lukanu';
 }

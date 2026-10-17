@@ -651,5 +651,10 @@
   "usMarketClosed": "ਅਮਰੀਕੀ ਬਾਜ਼ਾਰ ਬੰਦ · {time} ਵਿੱਚ ਖੁੱਲ੍ਹੇਗਾ",
   "durationMinutes": "{minutes} ਮਿੰ.",
   "durationHoursMinutes": "{hours} ਘੰ. {minutes} ਮਿੰ.",
-  "durationDaysHours": "{days} ਦਿਨ {hours} ਘੰ."
+  "durationDaysHours": "{days} ਦਿਨ {hours} ਘੰ.",
+  "portfolioGoalSet": "ਟੀਚਾ ਤੈਅ ਕਰੋ",
+  "portfolioGoalTitle": "ਪੋਰਟਫ਼ੋਲੀਓ ਟੀਚਾ",
+  "portfolioGoalProgress": "{percent} · ਟੀਚਾ: {amount}",
+  "portfolioGoalReached": "ਟੀਚਾ ਪੂਰਾ ਹੋਇਆ: {amount}",
+  "portfolioGoalRemove": "ਟੀਚਾ ਹਟਾਓ"
 }

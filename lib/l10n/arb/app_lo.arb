@@ -651,5 +651,10 @@
   "usMarketClosed": "ຕະຫຼາດສະຫະລັດປິດ · ເປີດໃນອີກ {time}",
   "durationMinutes": "{minutes} ນທ.",
   "durationHoursMinutes": "{hours} ຊມ. {minutes} ນທ.",
-  "durationDaysHours": "{days} ມື້ {hours} ຊມ."
+  "durationDaysHours": "{days} ມື້ {hours} ຊມ.",
+  "portfolioGoalSet": "ຕັ້ງເປົ້າໝາຍ",
+  "portfolioGoalTitle": "ເປົ້າໝາຍພອດໂຟລິໂອ",
+  "portfolioGoalProgress": "{percent} ຂອງເປົ້າໝາຍ {amount}",
+  "portfolioGoalReached": "ບັນລຸເປົ້າໝາຍ {amount} ແລ້ວ",
+  "portfolioGoalRemove": "ລຶບເປົ້າໝາຍ"
 }

@@ -651,5 +651,10 @@
   "usMarketClosed": "Thoko ya Amerika nĩ ĩhingĩtwo · ĩkũhingũrwo thutha wa {time}",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} h {minutes} min",
-  "durationDaysHours": "{days} mĩthenya {hours} h"
+  "durationDaysHours": "{days} mĩthenya {hours} h",
+  "portfolioGoalSet": "Ĩkĩra muoroto",
+  "portfolioGoalTitle": "Muoroto wa hisa ciaku",
+  "portfolioGoalProgress": "{percent} · Muoroto: {amount}",
+  "portfolioGoalReached": "Muoroto nĩ wakinyĩrwo: {amount}",
+  "portfolioGoalRemove": "Ruta muoroto"
 }

@@ -651,5 +651,10 @@
   "usMarketClosed": "Mmaraka wa Amerika o tswaletšwe · o bulwa ka morago ga {time}",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} h {minutes} min",
-  "durationDaysHours": "{days} matšatši {hours} h"
+  "durationDaysHours": "{days} matšatši {hours} h",
+  "portfolioGoalSet": "Bea maikemišetšo",
+  "portfolioGoalTitle": "Maikemišetšo a photefolio",
+  "portfolioGoalProgress": "{percent} · Maikemišetšo: {amount}",
+  "portfolioGoalReached": "Maikemišetšo a fihleletšwe: {amount}",
+  "portfolioGoalRemove": "Tloša maikemišetšo"
 }

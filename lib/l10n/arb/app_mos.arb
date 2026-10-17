@@ -651,5 +651,10 @@
   "usMarketClosed": "Amerik raaga pagdame · na n pakame {time} poorẽ",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} h {minutes} min",
-  "durationDaysHours": "{days} rasem {hours} h"
+  "durationDaysHours": "{days} rasem {hours} h",
+  "portfolioGoalSet": "Ning raabo",
+  "portfolioGoalTitle": "Portfey raabo",
+  "portfolioGoalProgress": "{percent} · Raabo: {amount}",
+  "portfolioGoalReached": "Raabã paame: {amount}",
+  "portfolioGoalRemove": "Yiis raabã"
 }

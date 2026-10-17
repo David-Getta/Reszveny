@@ -651,5 +651,10 @@
   "usMarketClosed": "Sirado ang merkado sa US · moabli sulod sa {time}",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} oras {minutes} min",
-  "durationDaysHours": "{days} adlaw {hours} oras"
+  "durationDaysHours": "{days} adlaw {hours} oras",
+  "portfolioGoalSet": "Pagbutang og tumong",
+  "portfolioGoalTitle": "Tumong sa portfolio",
+  "portfolioGoalProgress": "{percent} sa imong tumong nga {amount}",
+  "portfolioGoalReached": "Naabot ang tumong nga {amount}",
+  "portfolioGoalRemove": "Tangtanga ang tumong"
 }

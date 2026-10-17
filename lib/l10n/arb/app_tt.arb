@@ -651,5 +651,10 @@
   "usMarketClosed": "АКШ базары ябык · ачылуга {time}",
   "durationMinutes": "{minutes} мин",
   "durationHoursMinutes": "{hours} сәг {minutes} мин",
-  "durationDaysHours": "{days} көн {hours} сәг"
+  "durationDaysHours": "{days} көн {hours} сәг",
+  "portfolioGoalSet": "Максат кую",
+  "portfolioGoalTitle": "Портфель максаты",
+  "portfolioGoalProgress": "{percent} · максат: {amount}",
+  "portfolioGoalReached": "Максатка ирешелде: {amount}",
+  "portfolioGoalRemove": "Максатны бетерү"
 }

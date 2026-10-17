@@ -651,5 +651,10 @@
   "usMarketClosed": "ផ្សារអាមេរិកបិទ · បើកក្នុង {time} ទៀត",
   "durationMinutes": "{minutes} នាទី",
   "durationHoursMinutes": "{hours} ម៉ោង {minutes} នាទី",
-  "durationDaysHours": "{days} ថ្ងៃ {hours} ម៉ោង"
+  "durationDaysHours": "{days} ថ្ងៃ {hours} ម៉ោង",
+  "portfolioGoalSet": "កំណត់គោលដៅ",
+  "portfolioGoalTitle": "គោលដៅផលប័ត្រ",
+  "portfolioGoalProgress": "{percent} នៃគោលដៅ {amount}",
+  "portfolioGoalReached": "សម្រេចគោលដៅ {amount} ហើយ",
+  "portfolioGoalRemove": "ដកគោលដៅចេញ"
 }

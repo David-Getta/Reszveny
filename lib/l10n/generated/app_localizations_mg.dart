@@ -2467,4 +2467,23 @@ class AppLocalizationsMg extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days andro $hours ora';
   }
+
+  @override
+  String get portfolioGoalSet => 'Mametraha tanjona';
+
+  @override
+  String get portfolioGoalTitle => 'Tanjon\'ny kitapom-bola';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · Tanjona: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Tratra ny tanjona: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Esory ny tanjona';
 }

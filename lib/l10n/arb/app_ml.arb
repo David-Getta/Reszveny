@@ -651,5 +651,10 @@
   "usMarketClosed": "യുഎസ് വിപണി അടച്ചിരിക്കുന്നു · തുറക്കാൻ {time} കൂടി",
   "durationMinutes": "{minutes} മി.",
   "durationHoursMinutes": "{hours} മ. {minutes} മി.",
-  "durationDaysHours": "{days} ദി. {hours} മ."
+  "durationDaysHours": "{days} ദി. {hours} മ.",
+  "portfolioGoalSet": "ലക്ഷ്യം സജ്ജമാക്കുക",
+  "portfolioGoalTitle": "പോർട്ട്ഫോളിയോ ലക്ഷ്യം",
+  "portfolioGoalProgress": "{percent} · ലക്ഷ്യം: {amount}",
+  "portfolioGoalReached": "ലക്ഷ്യം കൈവരിച്ചു: {amount}",
+  "portfolioGoalRemove": "ലക്ഷ്യം നീക്കം ചെയ്യുക"
 }

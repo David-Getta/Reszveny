@@ -2466,4 +2466,23 @@ class AppLocalizationsTs extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days masiku $hours h';
   }
+
+  @override
+  String get portfolioGoalSet => 'Veka xikongomelo';
+
+  @override
+  String get portfolioGoalTitle => 'Xikongomelo xa phothifoliyo';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · Xikongomelo: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Xikongomelo xi fikeleriwile: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Susa xikongomelo';
 }

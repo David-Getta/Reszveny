@@ -651,5 +651,10 @@
   "usMarketClosed": "ASV tirgus slēgts · atvērsies pēc {time}",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} h {minutes} min",
-  "durationDaysHours": "{days} d {hours} h"
+  "durationDaysHours": "{days} d {hours} h",
+  "portfolioGoalSet": "Iestatīt mērķi",
+  "portfolioGoalTitle": "Portfeļa mērķis",
+  "portfolioGoalProgress": "{percent} · mērķis: {amount}",
+  "portfolioGoalReached": "Mērķis sasniegts: {amount}",
+  "portfolioGoalRemove": "Noņemt mērķi"
 }

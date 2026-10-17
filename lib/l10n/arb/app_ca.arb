@@ -651,5 +651,10 @@
   "usMarketClosed": "Mercat dels EUA tancat · obre d’aquí a {time}",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} h {minutes} min",
-  "durationDaysHours": "{days} d {hours} h"
+  "durationDaysHours": "{days} d {hours} h",
+  "portfolioGoalSet": "Defineix un objectiu",
+  "portfolioGoalTitle": "Objectiu de la cartera",
+  "portfolioGoalProgress": "{percent} · objectiu: {amount}",
+  "portfolioGoalReached": "Objectiu assolit: {amount}",
+  "portfolioGoalRemove": "Elimina l'objectiu"
 }

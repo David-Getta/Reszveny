@@ -2459,4 +2459,23 @@ class AppLocalizationsEl extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days ημ. $hours ώ.';
   }
+
+  @override
+  String get portfolioGoalSet => 'Ορισμός στόχου';
+
+  @override
+  String get portfolioGoalTitle => 'Στόχος χαρτοφυλακίου';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · στόχος: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Ο στόχος επιτεύχθηκε: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Αφαίρεση στόχου';
 }

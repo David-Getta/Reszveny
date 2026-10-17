@@ -651,5 +651,10 @@
   "usMarketClosed": "ԱՄՆ շուկան փակ է · կբացվի {time} հետո",
   "durationMinutes": "{minutes} ր",
   "durationHoursMinutes": "{hours} ժ {minutes} ր",
-  "durationDaysHours": "{days} օր {hours} ժ"
+  "durationDaysHours": "{days} օր {hours} ժ",
+  "portfolioGoalSet": "Սահմանել նպատակ",
+  "portfolioGoalTitle": "Պորտֆելի նպատակ",
+  "portfolioGoalProgress": "{percent} · նպատակ՝ {amount}",
+  "portfolioGoalReached": "Նպատակը կատարված է՝ {amount}",
+  "portfolioGoalRemove": "Հեռացնել նպատակը"
 }

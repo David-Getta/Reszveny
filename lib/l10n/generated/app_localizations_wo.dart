@@ -2444,4 +2444,23 @@ class AppLocalizationsWo extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days fan $hours h';
   }
+
+  @override
+  String get portfolioGoalSet => 'Taxawal jublu';
+
+  @override
+  String get portfolioGoalTitle => 'Jublu sama aksiyoŋ yi';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · Jublu: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Agsi nga ci sa jublu: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Far jublu bi';
 }

@@ -2454,4 +2454,23 @@ class AppLocalizationsUz extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days kun $hours soat';
   }
+
+  @override
+  String get portfolioGoalSet => 'Maqsad belgilash';
+
+  @override
+  String get portfolioGoalTitle => 'Portfel maqsadi';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · maqsad: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'Maqsadga erishildi: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Maqsadni olib tashlash';
 }

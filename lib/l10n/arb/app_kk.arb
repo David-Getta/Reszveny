@@ -651,5 +651,10 @@
   "usMarketClosed": "АҚШ нарығы жабық · ашылуына {time}",
   "durationMinutes": "{minutes} мин",
   "durationHoursMinutes": "{hours} сағ {minutes} мин",
-  "durationDaysHours": "{days} күн {hours} сағ"
+  "durationDaysHours": "{days} күн {hours} сағ",
+  "portfolioGoalSet": "Мақсат қою",
+  "portfolioGoalTitle": "Портфель мақсаты",
+  "portfolioGoalProgress": "{percent} · мақсат: {amount}",
+  "portfolioGoalReached": "Мақсат орындалды: {amount}",
+  "portfolioGoalRemove": "Мақсатты жою"
 }

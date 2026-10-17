@@ -651,5 +651,10 @@
   "usMarketClosed": "ABD piyasası kapalı · {time} sonra açılır",
   "durationMinutes": "{minutes} dk",
   "durationHoursMinutes": "{hours} sa {minutes} dk",
-  "durationDaysHours": "{days} g {hours} sa"
+  "durationDaysHours": "{days} g {hours} sa",
+  "portfolioGoalSet": "Hedef belirle",
+  "portfolioGoalTitle": "Portföy hedefi",
+  "portfolioGoalProgress": "{percent} · hedef: {amount}",
+  "portfolioGoalReached": "Hedefe ulaşıldı: {amount}",
+  "portfolioGoalRemove": "Hedefi kaldır"
 }

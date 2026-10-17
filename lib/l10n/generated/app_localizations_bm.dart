@@ -2447,4 +2447,23 @@ class AppLocalizationsBm extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days tile $hours h';
   }
+
+  @override
+  String get portfolioGoalSet => 'Laɲini sigi';
+
+  @override
+  String get portfolioGoalTitle => 'Aksiyɔn kɛsu laɲini';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent · Laɲini: $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return 'I ye i ka laɲini sɔrɔ: $amount';
+  }
+
+  @override
+  String get portfolioGoalRemove => 'Laɲini bɔ a la';
 }

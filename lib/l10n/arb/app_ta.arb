@@ -651,5 +651,10 @@
   "usMarketClosed": "அமெரிக்கச் சந்தை மூடியுள்ளது · திறக்க இன்னும் {time}",
   "durationMinutes": "{minutes} நிமி.",
   "durationHoursMinutes": "{hours} மணி. {minutes} நிமி.",
-  "durationDaysHours": "{days} நா. {hours} மணி."
+  "durationDaysHours": "{days} நா. {hours} மணி.",
+  "portfolioGoalSet": "இலக்கை அமை",
+  "portfolioGoalTitle": "போர்ட்ஃபோலியோ இலக்கு",
+  "portfolioGoalProgress": "{percent} · இலக்கு: {amount}",
+  "portfolioGoalReached": "இலக்கு எட்டப்பட்டது: {amount}",
+  "portfolioGoalRemove": "இலக்கை நீக்கு"
 }

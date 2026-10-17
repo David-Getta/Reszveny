@@ -651,5 +651,10 @@
   "usMarketClosed": "АНУ-ын зах зээл хаалттай · нээгдэх хүртэл {time}",
   "durationMinutes": "{minutes} мин",
   "durationHoursMinutes": "{hours} ц {minutes} мин",
-  "durationDaysHours": "{days} хоног {hours} ц"
+  "durationDaysHours": "{days} хоног {hours} ц",
+  "portfolioGoalSet": "Зорилт тавих",
+  "portfolioGoalTitle": "Портфолиогийн зорилт",
+  "portfolioGoalProgress": "{percent} · зорилт: {amount}",
+  "portfolioGoalReached": "Зорилт биелсэн: {amount}",
+  "portfolioGoalRemove": "Зорилт хасах"
 }

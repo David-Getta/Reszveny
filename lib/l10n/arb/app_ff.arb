@@ -651,5 +651,10 @@
   "usMarketClosed": "Luumo Amerik ena uddii · ina uddita e nder {time}",
   "durationMinutes": "{minutes} min",
   "durationHoursMinutes": "{hours} h {minutes} min",
-  "durationDaysHours": "{days} balɗe {hours} h"
+  "durationDaysHours": "{days} balɗe {hours} h",
+  "portfolioGoalSet": "Taƴto faandaare",
+  "portfolioGoalTitle": "Faandaare aksiyoŋ am",
+  "portfolioGoalProgress": "{percent} · Faandaare: {amount}",
+  "portfolioGoalReached": "A heɓii faandaare maa: {amount}",
+  "portfolioGoalRemove": "Momtu faandaare"
 }

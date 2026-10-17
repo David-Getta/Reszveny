@@ -2380,4 +2380,23 @@ class AppLocalizationsKo extends AppLocalizations {
   String durationDaysHours(int days, int hours) {
     return '$days일 $hours시간';
   }
+
+  @override
+  String get portfolioGoalSet => '목표 설정';
+
+  @override
+  String get portfolioGoalTitle => '포트폴리오 목표';
+
+  @override
+  String portfolioGoalProgress(String percent, String amount) {
+    return '$percent 달성 · 목표 $amount';
+  }
+
+  @override
+  String portfolioGoalReached(String amount) {
+    return '목표 $amount 달성';
+  }
+
+  @override
+  String get portfolioGoalRemove => '목표 삭제';
 }

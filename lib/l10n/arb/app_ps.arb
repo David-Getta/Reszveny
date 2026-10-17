@@ -651,5 +651,10 @@
   "usMarketClosed": "د امریکا بازار بند دی · په {time} کې خلاصیږي",
   "durationMinutes": "{minutes} دقیقې",
   "durationHoursMinutes": "{hours} ساعته {minutes} دقیقې",
-  "durationDaysHours": "{days} ورځې {hours} ساعته"
+  "durationDaysHours": "{days} ورځې {hours} ساعته",
+  "portfolioGoalSet": "موخه وټاکئ",
+  "portfolioGoalTitle": "د پورټفولیو موخه",
+  "portfolioGoalProgress": "{percent} · موخه: {amount}",
+  "portfolioGoalReached": "موخې ته ورسېدئ: {amount}",
+  "portfolioGoalRemove": "موخه لرې کړئ"
 }
