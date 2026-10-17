@@ -2327,4 +2327,7 @@ class AppLocalizationsPa extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'ਪ੍ਰਾਪਤ ਮੁਨਾਫ਼ਾ ਨਿਰਯਾਤ ਕਰੋ (CSV)';
 }

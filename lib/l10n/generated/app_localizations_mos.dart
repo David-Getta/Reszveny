@@ -2318,4 +2318,7 @@ class AppLocalizationsMos extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'Yiis yõod ning sẽn paame (CSV)';
 }

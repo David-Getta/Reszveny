@@ -2347,4 +2347,8 @@ class AppLocalizationsTs extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized =>
+      'Rhumela ehandle vuyelo lebyi kumiweke (CSV)';
 }

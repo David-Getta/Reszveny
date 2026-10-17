@@ -2340,4 +2340,8 @@ class AppLocalizationsZu extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized =>
+      'Thumela ngaphandle inzuzo etholiwe (CSV)';
 }

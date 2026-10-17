@@ -1824,5 +1824,9 @@
         "type": "int"
       }
     }
+  },
+  "portfolioExportRealized": "Export realized gains (CSV)",
+  "@portfolioExportRealized": {
+    "description": "Portfolio menu item: one row per sale with FIFO cost basis and gain, e.g. for a tax return."
   }
 }

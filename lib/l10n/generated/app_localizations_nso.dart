@@ -2346,4 +2346,8 @@ class AppLocalizationsNso extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized =>
+      'Romela ka ntle dipoelo tšeo di hweditšwego (CSV)';
 }

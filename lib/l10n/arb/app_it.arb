@@ -622,5 +622,6 @@
   "newsExplainNote": "Spiegazione dell’IA basata solo sul titolo e sul riassunto. Non costituisce un consiglio di investimento. Usa il tuo limite giornaliero di domande, non un’analisi.",
   "watchAlertAll": "Avviso sui grandi movimenti giornalieri",
   "watchAlertAllHint": "Un avviso di prezzo per ogni titolo di questa lista, che scatta quando si muove così tanto in un giorno, al rialzo o al ribasso. I titoli che ne hanno già uno mantengono il proprio.",
-  "watchAlertAllDone": "{count, plural, =1{1 avviso impostato} other{{count} avvisi impostati}}"
+  "watchAlertAllDone": "{count, plural, =1{1 avviso impostato} other{{count} avvisi impostati}}",
+  "portfolioExportRealized": "Esporta plusvalenze realizzate (CSV)"
 }

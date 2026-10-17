@@ -2331,4 +2331,8 @@ class AppLocalizationsKk extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized =>
+      'Іске асырылған пайданы экспорттау (CSV)';
 }

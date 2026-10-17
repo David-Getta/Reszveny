@@ -2330,4 +2330,7 @@ class AppLocalizationsHt extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'Ekspòte pwofi reyalize yo (CSV)';
 }

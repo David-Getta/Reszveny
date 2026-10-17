@@ -2331,4 +2331,7 @@ class AppLocalizationsMr extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'प्राप्त नफा निर्यात करा (CSV)';
 }

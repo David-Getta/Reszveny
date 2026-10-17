@@ -2330,4 +2330,7 @@ class AppLocalizationsBn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'বাস্তবায়িত লাভ এক্সপোর্ট করুন (CSV)';
 }

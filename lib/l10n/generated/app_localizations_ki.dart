@@ -2332,4 +2332,7 @@ class AppLocalizationsKi extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'Ruta uumithio ũrĩa wonetwo (CSV)';
 }

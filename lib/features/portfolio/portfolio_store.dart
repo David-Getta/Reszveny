@@ -65,7 +65,11 @@ typedef _Fifo = ({
   double realized,
   double sold,
   Map<int?, double> byYear,
+  List<Sale> sales,
 });
+
+/// Egy eladás a FIFO szerinti bekerülési értékkel (az adóbevalláshoz).
+typedef Sale = ({DateTime? date, double quantity, double price, double proceeds, double cost});
 
 /// Egy részvény összes tranzakciója együtt. Az eladások a legrégebbi vételeket
 /// fogyasztják (FIFO): a megmaradt darabok adják a darabszámot és a bekerülési
@@ -95,15 +99,18 @@ class Position {
     final open = <({double quantity, double price, DateTime? date})>[];
     var realized = 0.0, sold = 0.0;
     final byYear = <int?, double>{};
+    final sales = <Sale>[];
     for (final t in [...lots]..sort(order)) {
       if (!t.sell) {
         open.add((quantity: t.quantity, price: t.price, date: t.date));
         continue;
       }
       var left = t.quantity;
+      var cost = 0.0;
       while (left > 1e-9 && open.isNotEmpty) {
         final first = open.first;
         final take = left < first.quantity ? left : first.quantity;
+        cost += take * first.price;
         realized += take * (t.price - first.price);
         byYear[t.date?.year] = (byYear[t.date?.year] ?? 0) + take * (t.price - first.price);
         sold += take;
@@ -114,8 +121,12 @@ class Position {
           open[0] = (quantity: first.quantity - take, price: first.price, date: first.date);
         }
       }
+      final matched = t.quantity - left;
+      if (matched > 1e-9) {
+        sales.add((date: t.date, quantity: matched, price: t.price, proceeds: matched * t.price, cost: cost));
+      }
     }
-    return (open: open, realized: realized, sold: sold, byYear: byYear);
+    return (open: open, realized: realized, sold: sold, byYear: byYear, sales: sales);
   }
 
   /// A még birtokolt darabszám.
@@ -131,6 +142,9 @@ class Position {
   Map<int?, double> get realizedByYear => _fifo.byYear;
 
   bool get hasSales => lots.any((l) => l.sell);
+
+  /// Az eladások időrendben, a FIFO szerinti bekerülési értékükkel.
+  List<Sale> get sales => _fifo.sales;
 
   /// Lezárt pozíció: mindent eladott.
   bool get isClosed => quantity <= 1e-9;
@@ -184,6 +198,9 @@ class PortfolioStore extends ChangeNotifier {
     for (final p in _all)
       if (!p.isClosed) p,
   ]..sort((a, b) => b.cost.compareTo(a.cost));
+
+  /// Minden pozíció (a lezártak is) – a realizált nyereség exportjához.
+  List<Position> get allPositions => _all;
 
   /// Teljesen eladott pozíciók (a realizált nyereségükkel).
   List<Position> get closedPositions => [

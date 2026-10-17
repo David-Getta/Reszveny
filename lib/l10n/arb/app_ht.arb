@@ -622,5 +622,6 @@
   "newsExplainNote": "Eksplikasyon AI ki baze sèlman sou tit la ak rezime a. Se pa yon konsèy envestisman. Li itilize limit kesyon ou pou chak jou, pa yon analiz.",
   "watchAlertAll": "Alèt pou gwo mouvman pa jou",
   "watchAlertAllHint": "Yon alèt pri pou chak aksyon nan lis sa a ki sonnen lè li bouje konsa nan yon jounen, monte oswa desann. Aksyon ki gen youn deja ap kenbe pa yo.",
-  "watchAlertAllDone": "{count, plural, =1{Nou mete 1 alèt} other{Nou mete {count} alèt}}"
+  "watchAlertAllDone": "{count, plural, =1{Nou mete 1 alèt} other{Nou mete {count} alèt}}",
+  "portfolioExportRealized": "Ekspòte pwofi reyalize yo (CSV)"
 }

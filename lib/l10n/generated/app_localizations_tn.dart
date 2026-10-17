@@ -2347,4 +2347,8 @@ class AppLocalizationsTn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized =>
+      'Romela kwa ntle poelo e e boneweng (CSV)';
 }

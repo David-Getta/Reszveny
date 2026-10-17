@@ -2337,4 +2337,7 @@ class AppLocalizationsTe extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'పొందిన లాభాలను ఎగుమతి చేయి (CSV)';
 }

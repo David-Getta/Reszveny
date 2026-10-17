@@ -2331,4 +2331,7 @@ class AppLocalizationsAk extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'Yi mfaso a woanya kɔ (CSV)';
 }

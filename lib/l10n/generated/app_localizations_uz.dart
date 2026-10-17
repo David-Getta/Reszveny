@@ -2335,4 +2335,8 @@ class AppLocalizationsUz extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized =>
+      'Amalga oshgan foydani eksport qilish (CSV)';
 }

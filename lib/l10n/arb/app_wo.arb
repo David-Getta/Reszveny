@@ -622,5 +622,6 @@
   "newsExplainNote": "Leeral bu AI defar, mu sukkandiku rekk ci tur bi ak ndaneel li. Du ndigal ci dugal xaalis. Dafay jëfandikoo sa limu laaj yu bés bu nekk, du xayma.",
   "watchAlertAll": "Artu ci coppite yu mag ci bés",
   "watchAlertAllHint": "Artu njëg ngir bépp aksiyoŋ ci limm bii: dina la xamal bu coppitee nii ci benn bés, kaw walla suuf. Yi am benn ba noppi dinañu des ak seen bos.",
-  "watchAlertAllDone": "{count, plural, =1{Teg nañu 1 artu} other{Teg nañu {count} artu}}"
+  "watchAlertAllDone": "{count, plural, =1{Teg nañu 1 artu} other{Teg nañu {count} artu}}",
+  "portfolioExportRealized": "Génne njariñ yi ñu am (CSV)"
 }

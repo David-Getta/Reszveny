@@ -2327,4 +2327,7 @@ class AppLocalizationsBho extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'मिलल मुनाफा निर्यात करीं (CSV)';
 }

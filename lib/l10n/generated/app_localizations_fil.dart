@@ -2338,4 +2338,7 @@ class AppLocalizationsFil extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'I-export ang realized na kita (CSV)';
 }

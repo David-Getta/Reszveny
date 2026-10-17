@@ -622,5 +622,6 @@
   "newsExplainNote": "Explicació d’IA basada només en el titular i el resum. No constitueix assessorament d’inversió. Fa servir el teu límit diari de preguntes, no una anàlisi.",
   "watchAlertAll": "Alerta de grans moviments diaris",
   "watchAlertAllHint": "Una alerta de preu per a cada acció d’aquesta llista que salta quan es mou tant en un dia, amunt o avall. Les accions que ja en tenen una la conserven.",
-  "watchAlertAllDone": "{count, plural, =1{S’ha definit 1 alerta} other{S’han definit {count} alertes}}"
+  "watchAlertAllDone": "{count, plural, =1{S’ha definit 1 alerta} other{S’han definit {count} alertes}}",
+  "portfolioExportRealized": "Exporta els guanys realitzats (CSV)"
 }

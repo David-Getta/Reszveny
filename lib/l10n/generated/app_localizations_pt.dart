@@ -2337,4 +2337,7 @@ class AppLocalizationsPt extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'Exportar ganhos realizados (CSV)';
 }

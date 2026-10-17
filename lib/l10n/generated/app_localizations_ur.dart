@@ -2331,4 +2331,7 @@ class AppLocalizationsUr extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'حاصل شدہ منافع ایکسپورٹ کریں (CSV)';
 }

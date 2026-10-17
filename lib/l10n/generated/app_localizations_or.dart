@@ -2329,4 +2329,7 @@ class AppLocalizationsOr extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'ପ୍ରାପ୍ତ ଲାଭ ରପ୍ତାନି କରନ୍ତୁ (CSV)';
 }

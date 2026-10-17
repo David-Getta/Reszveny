@@ -622,5 +622,6 @@
   "newsExplainNote": "Ũtaarĩria wa AI ũrĩa ũrĩ igũrũ rĩa kĩongo na ũhoro mũkuhĩ tu. Ti ũtaaro wa investment. Ĩhũthagĩra mũhaka wa ciũria ciaku cia o mũthenya, ti ũthuthuria.",
   "watchAlertAll": "Mũmenyithia wa ũgarũrũku mũnene wa mũthenya",
   "watchAlertAllHint": "Mũmenyithia wa thogora kwa o mũgabo ũrĩa ũrĩ orodha-inĩ ĩno: ũkũhũũra rĩrĩa ũgarũrũka ũũ mũthenya ũmwe, igũrũ kana thĩ. Ũrĩa ũrĩ na ũmwe kũrĩa mbere ũgũtigwo naguo.",
-  "watchAlertAllDone": "{count, plural, =1{Mũmenyithia 1 nĩ wahandwo} other{Mĩmenyithia {count} nĩ yahandwo}}"
+  "watchAlertAllDone": "{count, plural, =1{Mũmenyithia 1 nĩ wahandwo} other{Mĩmenyithia {count} nĩ yahandwo}}",
+  "portfolioExportRealized": "Ruta uumithio ũrĩa wonetwo (CSV)"
 }

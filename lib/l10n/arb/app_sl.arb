@@ -622,5 +622,6 @@
   "newsExplainNote": "Razlaga umetne inteligence samo na podlagi naslova in povzetka. Ni naložbeni nasvet. Porabi vašo dnevno omejitev vprašanj, ne analize.",
   "watchAlertAll": "Opozorilo ob velikih dnevnih premikih",
   "watchAlertAllHint": "Cenovno opozorilo za vsako delnico na tem seznamu, ki se sproži, ko se v enem dnevu premakne za toliko, navzgor ali navzdol. Delnice, ki ga že imajo, obdržijo svojega.",
-  "watchAlertAllDone": "{count, plural, one{Nastavljeno je {count} opozorilo} two{Nastavljeni sta {count} opozorili} few{Nastavljena so {count} opozorila} other{Nastavljenih je {count} opozoril}}"
+  "watchAlertAllDone": "{count, plural, one{Nastavljeno je {count} opozorilo} two{Nastavljeni sta {count} opozorili} few{Nastavljena so {count} opozorila} other{Nastavljenih je {count} opozoril}}",
+  "portfolioExportRealized": "Izvozi realizirane dobičke (CSV)"
 }

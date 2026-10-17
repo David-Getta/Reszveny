@@ -2327,4 +2327,7 @@ class AppLocalizationsIg extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'Bupụ uru enwetara (CSV)';
 }

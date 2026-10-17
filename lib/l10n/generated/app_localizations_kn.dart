@@ -2338,4 +2338,7 @@ class AppLocalizationsKn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'ಪಡೆದ ಲಾಭವನ್ನು ರಫ್ತು ಮಾಡಿ (CSV)';
 }

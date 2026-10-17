@@ -104,6 +104,46 @@ void main() {
     expect(back.lots.map((l) => l.sell), [false, true]);
   });
 
+  test('realized gains: one row per sale with the FIFO cost basis, in date order', () {
+    final lots = [
+      PortfolioLot(id: '1', symbol: 'AAPL', quantity: 10, price: 100, currency: 'USD', date: DateTime(2024, 1, 5)),
+      PortfolioLot(id: '2', symbol: 'AAPL', quantity: 10, price: 150, currency: 'USD', date: DateTime(2024, 6, 1)),
+      PortfolioLot(
+        id: '3',
+        symbol: 'AAPL',
+        quantity: 15,
+        price: 200,
+        currency: 'USD',
+        date: DateTime(2025, 3, 3),
+        sell: true,
+      ),
+      PortfolioLot(id: '4', symbol: 'OTP', quantity: 2, price: 30000.125, currency: 'HUF', date: DateTime(2023, 2, 1)),
+      PortfolioLot(
+        id: '5',
+        symbol: 'OTP',
+        quantity: 2,
+        price: 28000,
+        currency: 'HUF',
+        date: DateTime(2024, 9, 9),
+        sell: true,
+      ),
+    ];
+    final positions = [
+      Position(symbol: 'AAPL', currency: 'USD', lots: lots.where((l) => l.symbol == 'AAPL').toList()),
+      Position(symbol: 'OTP', currency: 'HUF', lots: lots.where((l) => l.symbol == 'OTP').toList()),
+    ];
+    expect(
+      realizedCsv(positions),
+      'date,symbol,quantity,sale_price,proceeds,cost_basis,gain,currency\n'
+      '2024-09-09,OTP,2,28000,56000,60000.25,-4000.25,HUF\n'
+      // 10 db 100-on + 5 db 150-en = 1750 bekerülési érték.
+      '2025-03-03,AAPL,15,200,3000,1750,1250,USD\n',
+    );
+    // Csak vételek: üres export (csak a fejléc).
+    final buys = Position(symbol: 'AAPL', currency: 'USD', lots: lots.take(2).toList());
+    expect(realizedCsv([buys]), 'date,symbol,quantity,sale_price,proceeds,cost_basis,gain,currency\n');
+  });
+
   testWidgets('import from the empty portfolio, then export through the share sheet', (tester) async {
     tester.view.physicalSize = const Size(1200, 1600);
     tester.view.devicePixelRatio = 1;
@@ -131,6 +171,8 @@ void main() {
 
     await tester.tap(find.byKey(const ValueKey('portfolio-menu')));
     await tester.pumpAndSettle();
+    // Eladás nélkül nincs mit exportálni a realizált nyereségből.
+    expect(find.byKey(const ValueKey('portfolio-export-realized')), findsNothing);
     await tester.tap(find.byKey(const ValueKey('portfolio-export')));
     await tester.pumpAndSettle();
     expect(shared.single, startsWith('symbol,quantity,price,currency,date,side\n'));
@@ -146,5 +188,21 @@ void main() {
     await tester.tap(find.byKey(const ValueKey('portfolio-import-ok')));
     await tester.pumpAndSettle();
     expect(s.portfolio.lots, hasLength(2));
+
+    // Egy eladás után a realizált nyereség is exportálható.
+    await s.portfolio.add(
+      symbol: 'AAPL',
+      quantity: 4,
+      price: 230,
+      currency: 'USD',
+      date: DateTime(2026, 2, 2),
+      sell: true,
+    );
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('portfolio-menu')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('portfolio-export-realized')));
+    await tester.pumpAndSettle();
+    expect(shared.last, endsWith('2026-02-02,AAPL,4,230,920,720,200,USD\n'));
   });
 }

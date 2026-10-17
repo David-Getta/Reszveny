@@ -2341,4 +2341,8 @@ class AppLocalizationsFr extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized =>
+      'Exporter les plus-values réalisées (CSV)';
 }

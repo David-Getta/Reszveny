@@ -2341,4 +2341,7 @@ class AppLocalizationsCa extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'Exporta els guanys realitzats (CSV)';
 }

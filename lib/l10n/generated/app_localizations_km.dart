@@ -2311,4 +2311,7 @@ class AppLocalizationsKm extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'នាំចេញប្រាក់ចំណេញដែលបានសម្រេច (CSV)';
 }

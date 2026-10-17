@@ -2333,4 +2333,7 @@ class AppLocalizationsAz extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'Realizə olunmuş gəliri ixrac et (CSV)';
 }

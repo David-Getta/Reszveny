@@ -2326,4 +2326,7 @@ class AppLocalizationsFf extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'Yaltin riba heɓaaɗo (CSV)';
 }

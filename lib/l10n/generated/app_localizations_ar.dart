@@ -2384,4 +2384,7 @@ class AppLocalizationsAr extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'تصدير الأرباح المحققة (CSV)';
 }

@@ -2263,4 +2263,7 @@ class AppLocalizationsKo extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => '실현 손익 내보내기 (CSV)';
 }

@@ -622,5 +622,6 @@
   "newsExplainNote": "Ravekirina AI tenê li ser bingeha sernivîs û kurteyê. Ne şîreta veberhênanê ye. Ji sînorê pirsên te yê rojane tê birîn, ne analîzek.",
   "watchAlertAll": "Hişyarî ji bo guherînên mezin ên rojane",
   "watchAlertAllHint": "Hişyariya bihayê ji bo her pişkeke vê lîsteyê: dema ku di rojekê de ev qas bilind an nizm bibe, agahdar dike. Pişkên ku berê yek wan heye, ya xwe diparêzin.",
-  "watchAlertAllDone": "{count, plural, =1{1 hişyarî hat danîn} other{{count} hişyarî hatin danîn}}"
+  "watchAlertAllDone": "{count, plural, =1{1 hişyarî hat danîn} other{{count} hişyarî hatin danîn}}",
+  "portfolioExportRealized": "Qezenca bidestxistî derxe (CSV)"
 }

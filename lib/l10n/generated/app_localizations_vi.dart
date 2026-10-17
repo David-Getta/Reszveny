@@ -2325,4 +2325,7 @@ class AppLocalizationsVi extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'Xuất lãi lỗ đã thực hiện (CSV)';
 }

@@ -622,5 +622,6 @@
   "newsExplainNote": "Asegzi n AI yebnan kan ɣef uzwel d ugzul-is. Mačči d awellih n usersi n yidrimen. Yesseqdac talast-ik n yisteqsiyen n yal ass, mačči tasledt.",
   "watchAlertAll": "Alɣu ɣef ibeddilen imeqqranen n wass",
   "watchAlertAllHint": "Alɣu n ssuma i yal yiwen deg tebdart-a: ad d-yeffeɣ mi ara yettbeddil ayagi deg yiwen wass, d asawen neɣ d akessar. Wid yesɛan yakan alɣu ad ḥerzen win-nsen.",
-  "watchAlertAllDone": "{count, plural, =1{Yettwasbadu 1 n walɣu} other{Ttwasbadun {count} n walɣuten}}"
+  "watchAlertAllDone": "{count, plural, =1{Yettwasbadu 1 n walɣu} other{Ttwasbadun {count} n walɣuten}}",
+  "portfolioExportRealized": "Sifeḍ irbaḥen yettwaḥeqqen (CSV)"
 }

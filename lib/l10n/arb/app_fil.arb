@@ -622,5 +622,6 @@
   "newsExplainNote": "Paliwanag ng AI batay lamang sa headline at buod nito. Hindi ito payo sa pamumuhunan. Gumagamit ito ng iyong pang-araw-araw na limitasyon sa tanong, hindi ng pagsusuri.",
   "watchAlertAll": "Alerto sa malalaking galaw sa araw",
   "watchAlertAllHint": "Isang alerto sa presyo para sa bawat stock sa listahang ito na tutunog kapag gumalaw ito nang ganito kalaki sa isang araw, pataas man o pababa. Mananatili ang alerto ng mga stock na mayroon na nito.",
-  "watchAlertAllDone": "{count, plural, =1{Na-set ang 1 alerto} other{Na-set ang {count} alerto}}"
+  "watchAlertAllDone": "{count, plural, =1{Na-set ang 1 alerto} other{Na-set ang {count} alerto}}",
+  "portfolioExportRealized": "I-export ang realized na kita (CSV)"
 }

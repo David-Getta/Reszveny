@@ -622,5 +622,6 @@
   "newsExplainNote": "Faqat sarlavha va qisqacha mazmunga asoslangan AI izohi. Bu investitsiya maslahati emas. Kunlik savollar limitingizdan sarflanadi, tahlil emas.",
   "watchAlertAll": "Katta kunlik oʻzgarishlar haqida ogohlantirish",
   "watchAlertAllHint": "Bu roʻyxatdagi har bir aksiya uchun narx ogohlantirishi: bir kunda shuncha yuqoriga yoki pastga oʻzgarsa, xabar beradi. Allaqachon ogohlantirishi bor aksiyalar oʻzinikini saqlaydi.",
-  "watchAlertAllDone": "{count, plural, =1{1 ta ogohlantirish oʻrnatildi} other{{count} ta ogohlantirish oʻrnatildi}}"
+  "watchAlertAllDone": "{count, plural, =1{1 ta ogohlantirish oʻrnatildi} other{{count} ta ogohlantirish oʻrnatildi}}",
+  "portfolioExportRealized": "Amalga oshgan foydani eksport qilish (CSV)"
 }

@@ -2390,4 +2390,7 @@ class AppLocalizationsCs extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'Exportovat realizované zisky (CSV)';
 }

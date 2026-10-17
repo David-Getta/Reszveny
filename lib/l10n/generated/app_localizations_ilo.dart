@@ -2349,4 +2349,8 @@ class AppLocalizationsIlo extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized =>
+      'I-export ti na-realize a ganansia (CSV)';
 }

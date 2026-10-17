@@ -2326,4 +2326,7 @@ class AppLocalizationsWo extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'Génne njariñ yi ñu am (CSV)';
 }

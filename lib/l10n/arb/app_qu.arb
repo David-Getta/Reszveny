@@ -622,5 +622,6 @@
   "newsExplainNote": "AI sut’ichay, umalliqllapi pisichasqanpi ima sayasqa. Manan qullqi churanapaq yuyaychaychu. Sapa p’unchay tapukuy limitiykita apaykachan, manan t’aqwiytachu.",
   "watchAlertAll": "Hatun p'unchaw kuyuypaq willay",
   "watchAlertAllHint": "Kay listapi sapa acciónpaq chaninpa willaynin: huk p'unchawpi kayhinata kuyuptin, wichayman utaq uraykuman, willasunki. Ñas willayniyuq kaqkuna paykunapata waqaychanqaku.",
-  "watchAlertAllDone": "{count, plural, =1{1 willay churasqa} other{{count} willay churasqa}}"
+  "watchAlertAllDone": "{count, plural, =1{1 willay churasqa} other{{count} willay churasqa}}",
+  "portfolioExportRealized": "Chaskisqa mirayta hurquy (CSV)"
 }

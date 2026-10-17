@@ -622,5 +622,6 @@
   "newsExplainNote": "Ingcaciso ye-AI esekelwe kuphela kwisihloko nesishwankathelo saso. Ayilocebiso lotyalo-mali. Sisebenzisa umda wakho wemibuzo wemihla ngemihla, hayi uhlalutyo.",
   "watchAlertAll": "Isilumkiso sentshukumo enkulu yosuku",
   "watchAlertAllHint": "Isilumkiso sexabiso kwisabelo ngasinye kolu luhlu: siya kukhala xa sishukuma kangaka ngosuku olunye, siye phezulu okanye ezantsi. Ezo sele zinaso zigcina esazo.",
-  "watchAlertAllDone": "{count, plural, =1{Kusetwe isilumkiso esinye} other{Kusetwe izilumkiso ezi-{count}}}"
+  "watchAlertAllDone": "{count, plural, =1{Kusetwe isilumkiso esinye} other{Kusetwe izilumkiso ezi-{count}}}",
+  "portfolioExportRealized": "Thumela ngaphandle inzuzo efunyenweyo (CSV)"
 }

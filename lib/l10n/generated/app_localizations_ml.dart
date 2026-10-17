@@ -2340,4 +2340,8 @@ class AppLocalizationsMl extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized =>
+      'ലഭിച്ച ലാഭം എക്സ്പോർട്ട് ചെയ്യുക (CSV)';
 }

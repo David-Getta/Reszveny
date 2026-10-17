@@ -622,5 +622,6 @@
   "newsExplainNote": "Vysvetlenie od AI iba na základe titulku a zhrnutia. Nie je investičným odporúčaním. Čerpá z vášho denného limitu otázok, nespotrebuje analýzu.",
   "watchAlertAll": "Upozornenie na veľké denné pohyby",
   "watchAlertAllHint": "Cenové upozornenie pre každú akciu v tomto zozname, ktoré sa ozve, keď sa za deň pohne o toľko hore alebo dole. Akcie, ktoré už nejaké majú, si ho ponechajú.",
-  "watchAlertAllDone": "{count, plural, =1{Nastavené 1 upozornenie} few{Nastavené {count} upozornenia} many{Nastavené {count} upozornenia} other{Nastavených {count} upozornení}}"
+  "watchAlertAllDone": "{count, plural, =1{Nastavené 1 upozornenie} few{Nastavené {count} upozornenia} many{Nastavené {count} upozornenia} other{Nastavených {count} upozornení}}",
+  "portfolioExportRealized": "Exportovať realizované zisky (CSV)"
 }

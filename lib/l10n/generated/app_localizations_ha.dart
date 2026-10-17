@@ -2337,4 +2337,7 @@ class AppLocalizationsHa extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'Fitar da ribar da aka samu (CSV)';
 }

@@ -2398,4 +2398,7 @@ class AppLocalizationsUk extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'Експорт реалізованого прибутку (CSV)';
 }

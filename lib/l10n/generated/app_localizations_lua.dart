@@ -2339,4 +2339,7 @@ class AppLocalizationsLua extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'Umusha diakamuena didi diangata (CSV)';
 }

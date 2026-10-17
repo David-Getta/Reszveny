@@ -622,5 +622,6 @@
   "newsExplainNote": "DI paaiškinimas, pagrįstas tik antrašte ir santrauka. Tai nėra investavimo rekomendacija. Naudoja jūsų dienos klausimų limitą, o ne analizę.",
   "watchAlertAll": "Įspėjimas apie didelius dienos pokyčius",
   "watchAlertAllHint": "Kainos įspėjimas kiekvienai šio sąrašo akcijai: suveiks, kai per dieną ji pajudės tiek aukštyn arba žemyn. Akcijos, kurios jau turi tokį, pasilieka savąjį.",
-  "watchAlertAllDone": "{count, plural, one{Nustatytas {count} įspėjimas} few{Nustatyti {count} įspėjimai} many{Nustatyta {count} įspėjimo} other{Nustatyta {count} įspėjimų}}"
+  "watchAlertAllDone": "{count, plural, one{Nustatytas {count} įspėjimas} few{Nustatyti {count} įspėjimai} many{Nustatyta {count} įspėjimo} other{Nustatyta {count} įspėjimų}}",
+  "portfolioExportRealized": "Eksportuoti realizuotą pelną (CSV)"
 }

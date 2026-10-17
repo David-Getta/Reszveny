@@ -2332,4 +2332,8 @@ class AppLocalizationsBg extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized =>
+      'Експортиране на реализираната печалба (CSV)';
 }

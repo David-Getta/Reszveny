@@ -2395,4 +2395,7 @@ class AppLocalizationsLt extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'Eksportuoti realizuotą pelną (CSV)';
 }

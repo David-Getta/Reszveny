@@ -2334,4 +2334,8 @@ class AppLocalizationsSu extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized =>
+      'Ékspor kauntungan nu geus diréalisasikeun (CSV)';
 }

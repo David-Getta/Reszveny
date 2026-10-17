@@ -2323,4 +2323,7 @@ class AppLocalizationsPs extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'ترلاسه شوې ګټه صادرول (CSV)';
 }

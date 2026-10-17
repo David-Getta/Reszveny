@@ -2339,4 +2339,7 @@ class AppLocalizationsKg extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'Basisa mbote ya bo me zwa (CSV)';
 }

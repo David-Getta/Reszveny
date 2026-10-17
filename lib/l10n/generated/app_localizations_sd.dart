@@ -2323,4 +2323,7 @@ class AppLocalizationsSd extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'حاصل ٿيل منافعو ايڪسپورٽ ڪريو (CSV)';
 }

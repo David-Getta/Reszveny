@@ -2334,4 +2334,7 @@ class AppLocalizationsUg extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'ئەمەلگە ئاشقان پايدىنى چىقىرىش (CSV)';
 }

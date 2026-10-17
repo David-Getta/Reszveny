@@ -622,5 +622,6 @@
   "newsExplainNote": "KI-Erklärung, nur auf Basis der Schlagzeile und der Zusammenfassung. Keine Anlageberatung. Zählt zu deinem täglichen Fragenkontingent, nicht als Analyse.",
   "watchAlertAll": "Alarm bei starken Tagesbewegungen",
   "watchAlertAllHint": "Ein Kursalarm für jede Aktie dieser Liste, der auslöst, wenn sie sich an einem Tag so stark bewegt – nach oben oder unten. Aktien, die schon einen haben, behalten ihren.",
-  "watchAlertAllDone": "{count, plural, =1{1 Alarm eingerichtet} other{{count} Alarme eingerichtet}}"
+  "watchAlertAllDone": "{count, plural, =1{1 Alarm eingerichtet} other{{count} Alarme eingerichtet}}",
+  "portfolioExportRealized": "Realisierte Gewinne exportieren (CSV)"
 }

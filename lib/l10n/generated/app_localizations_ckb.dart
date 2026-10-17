@@ -2332,4 +2332,8 @@ class AppLocalizationsCkb extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized =>
+      'هەناردەکردنی قازانجی بەدەستهاتوو (CSV)';
 }

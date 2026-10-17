@@ -22,6 +22,37 @@ String portfolioCsv(List<PortfolioLot> lots) {
   return b.toString();
 }
 
+/// A realizált nyereség eladásonként (FIFO), az adóbevalláshoz: dátum, ticker,
+/// darab, eladási ár, bevétel, bekerülési érték, nyereség és pénznem, időrendben.
+String realizedCsv(List<Position> positions) {
+  // Legfeljebb 4 tizedes, a felesleges nullák (és a magányos pont) nélkül.
+  String n(double v) {
+    final t = v.toStringAsFixed(4).replaceFirst(RegExp(r'\.?0+$'), '');
+    return t == '-0' ? '0' : t;
+  }
+
+  final rows = [
+    for (final p in positions)
+      for (final s in p.sales) (p, s),
+  ]..sort((a, b) => (a.$2.date ?? DateTime(9999)).compareTo(b.$2.date ?? DateTime(9999)));
+  final b = StringBuffer('date,symbol,quantity,sale_price,proceeds,cost_basis,gain,currency\n');
+  for (final (p, s) in rows) {
+    b.writeln(
+      [
+        s.date?.toIso8601String().substring(0, 10) ?? '',
+        p.symbol,
+        n(s.quantity),
+        n(s.price),
+        n(s.proceeds),
+        n(s.cost),
+        n(s.proceeds - s.cost),
+        p.currency,
+      ].join(','),
+    );
+  }
+  return b.toString();
+}
+
 /// Egy beolvasott sor (még nem került a portfólióba).
 class ImportedLot {
   const ImportedLot({

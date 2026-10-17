@@ -2221,6 +2221,9 @@ class AppLocalizationsZh extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => '导出已实现盈亏 (CSV)';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -4438,4 +4441,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => '匯出已實現盈虧 (CSV)';
 }

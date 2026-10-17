@@ -2329,4 +2329,8 @@ class AppLocalizationsTt extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized =>
+      'Гамәлгә ашырылган табышны экспортлау (CSV)';
 }

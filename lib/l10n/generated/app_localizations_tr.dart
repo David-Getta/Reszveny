@@ -2331,4 +2331,7 @@ class AppLocalizationsTr extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'Gerçekleşen kazancı dışa aktar (CSV)';
 }

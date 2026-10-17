@@ -622,5 +622,6 @@
   "newsExplainNote": "Penjelasan AI yang hanya berdasarkan judul dan ringkasannya. Bukan saran investasi. Memakai kuota pertanyaan harian Anda, bukan analisis.",
   "watchAlertAll": "Peringatan untuk pergerakan harian besar",
   "watchAlertAllHint": "Peringatan harga untuk setiap saham di daftar ini yang berbunyi saat saham bergerak sebesar ini dalam sehari, naik atau turun. Saham yang sudah punya peringatan tetap memakai miliknya.",
-  "watchAlertAllDone": "{count, plural, =1{1 peringatan dipasang} other{{count} peringatan dipasang}}"
+  "watchAlertAllDone": "{count, plural, =1{1 peringatan dipasang} other{{count} peringatan dipasang}}",
+  "portfolioExportRealized": "Ekspor keuntungan terealisasi (CSV)"
 }

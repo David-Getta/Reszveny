@@ -2333,4 +2333,8 @@ class AppLocalizationsJv extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized =>
+      'Ekspor bathi sing wis direalisasi (CSV)';
 }

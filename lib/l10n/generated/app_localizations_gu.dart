@@ -2327,4 +2327,7 @@ class AppLocalizationsGu extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'પ્રાપ્ત નફો નિકાસ કરો (CSV)';
 }

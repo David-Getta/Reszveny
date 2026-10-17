@@ -2339,4 +2339,7 @@ class AppLocalizationsRn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'Ohereza inyungu zabonetse (CSV)';
 }

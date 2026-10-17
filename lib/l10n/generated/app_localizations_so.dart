@@ -2338,4 +2338,7 @@ class AppLocalizationsSo extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'U dhoofi faa\'iidada la helay (CSV)';
 }

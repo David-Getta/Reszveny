@@ -2345,4 +2345,7 @@ class AppLocalizationsQu extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'Chaskisqa mirayta hurquy (CSV)';
 }

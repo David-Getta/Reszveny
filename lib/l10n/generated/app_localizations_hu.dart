@@ -2337,4 +2337,7 @@ class AppLocalizationsHu extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'Realizált nyereség exportja (CSV)';
 }

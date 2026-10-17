@@ -622,5 +622,6 @@
   "newsExplainNote": "Tsananguro yeAI yakavakirwa pamusoro wenhau nepfupiso yayo chete. Haisi zano rekuisa mari. Inoshandisa muganhu wako wemibvunzo wezuva nezuva, kwete ongororo.",
   "watchAlertAll": "Yambiro pakuchinja kukuru kwezuva",
   "watchAlertAllHint": "Yambiro remutengo kune yega yega share iri pane rondedzero iyi: richarira kana ichinja zvakadai muzuva rimwe, kumusoro kana pasi. Idzo dzatova neimwe dzicharamba nedzadzo.",
-  "watchAlertAllDone": "{count, plural, =1{Yambiro 1 raiswa} other{Yambiro {count} dzaiswa}}"
+  "watchAlertAllDone": "{count, plural, =1{Yambiro 1 raiswa} other{Yambiro {count} dzaiswa}}",
+  "portfolioExportRealized": "Tumira purofiti yawanikwa (CSV)"
 }

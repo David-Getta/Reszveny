@@ -2324,4 +2324,7 @@ class AppLocalizationsHe extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'ייצוא רווחים ממומשים (CSV)';
 }

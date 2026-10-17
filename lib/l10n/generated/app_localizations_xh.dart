@@ -2342,4 +2342,8 @@ class AppLocalizationsXh extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized =>
+      'Thumela ngaphandle inzuzo efunyenweyo (CSV)';
 }

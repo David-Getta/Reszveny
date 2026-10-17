@@ -2349,4 +2349,7 @@ class AppLocalizationsMg extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'Avoahy ny tombony azo (CSV)';
 }

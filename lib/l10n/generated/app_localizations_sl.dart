@@ -2396,4 +2396,7 @@ class AppLocalizationsSl extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'Izvozi realizirane dobičke (CSV)';
 }

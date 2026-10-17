@@ -622,5 +622,6 @@
   "newsExplainNote": "AI omyesakãva, titulo ha ñemombyky rupive añoite. Ndahaʼéi ñemoñeʼẽ inversión rehegua. Oipuru ne porandu papapy ára ha ára guarã, ndaha’éi jehesa’ỹijo.",
   "watchAlertAll": "Momarandu ára ñemonguʼe tuichávape",
   "watchAlertAllHint": "Hepykue momarandu opavave acción ko listapegua: omomarandúta oñemonguʼérõ kóicha peteĩ árape, yvate térã yvy gotyo. Oguerekóva peteĩ ymaite oñongatu imbaʼe.",
-  "watchAlertAllDone": "{count, plural, =1{Oñemohenda 1 momarandu} other{Oñemohenda {count} momarandu}}"
+  "watchAlertAllDone": "{count, plural, =1{Oñemohenda 1 momarandu} other{Oñemohenda {count} momarandu}}",
+  "portfolioExportRealized": "Emondo viru jehupyty (CSV)"
 }

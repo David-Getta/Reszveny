@@ -2336,4 +2336,7 @@ class AppLocalizationsNl extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'Gerealiseerde winst exporteren (CSV)';
 }

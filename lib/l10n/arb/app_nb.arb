@@ -622,5 +622,6 @@
   "newsExplainNote": "AI-forklaring basert kun på overskriften og sammendraget. Det er ikke investeringsråd. Bruker av den daglige spørsmålskvoten din, ikke en analyse.",
   "watchAlertAll": "Varsel ved store daglige bevegelser",
   "watchAlertAllHint": "Et kursvarsel for hver aksje i denne listen som slår til når den beveger seg så mye på én dag, opp eller ned. Aksjer som allerede har et, beholder sitt.",
-  "watchAlertAllDone": "{count, plural, =1{1 varsel opprettet} other{{count} varsler opprettet}}"
+  "watchAlertAllDone": "{count, plural, =1{1 varsel opprettet} other{{count} varsler opprettet}}",
+  "portfolioExportRealized": "Eksporter realiserte gevinster (CSV)"
 }

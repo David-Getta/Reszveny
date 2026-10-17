@@ -622,5 +622,6 @@
   "newsExplainNote": "Diňe sözbaşy we gysgaça mazmuna esaslanýan AI düşündirişi. Maýa goýum maslahaty däldir. Gündelik sorag çägiňizden harçlanýar, seljerme däl.",
   "watchAlertAll": "Uly gündelik üýtgeýişler barada duýduryş",
   "watchAlertAllHint": "Bu sanawdaky her bir paýnama üçin baha duýduryşy: bir günde şunça ýokary ýa-da aşak üýtgese, habar berer. Eýýäm duýduryşy bolan paýnamalar özüninkini saklar.",
-  "watchAlertAllDone": "{count, plural, =1{1 duýduryş goýuldy} other{{count} duýduryş goýuldy}}"
+  "watchAlertAllDone": "{count, plural, =1{1 duýduryş goýuldy} other{{count} duýduryş goýuldy}}",
+  "portfolioExportRealized": "Durmuşa geçirilen girdejini eksport et (CSV)"
 }

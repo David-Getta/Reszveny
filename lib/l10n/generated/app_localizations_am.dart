@@ -2299,4 +2299,7 @@ class AppLocalizationsAm extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'የተገኘ ትርፍ ላክ (CSV)';
 }

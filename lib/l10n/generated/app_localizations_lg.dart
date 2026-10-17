@@ -2342,4 +2342,7 @@ class AppLocalizationsLg extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'Fulumya amagoba agafunye (CSV)';
 }

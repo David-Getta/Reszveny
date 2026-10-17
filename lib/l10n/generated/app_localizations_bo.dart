@@ -2320,4 +2320,7 @@ class AppLocalizationsBo extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'ཐོབ་ཟིན་པའི་ཁེ་བཟང་ཕྱིར་འདྲེན། (CSV)';
 }

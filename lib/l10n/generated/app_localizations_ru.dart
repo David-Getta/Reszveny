@@ -2397,4 +2397,7 @@ class AppLocalizationsRu extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'Экспорт реализованной прибыли (CSV)';
 }

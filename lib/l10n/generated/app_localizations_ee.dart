@@ -2335,4 +2335,7 @@ class AppLocalizationsEe extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'Ɖo viɖe siwo wokpɔ ɖa (CSV)';
 }

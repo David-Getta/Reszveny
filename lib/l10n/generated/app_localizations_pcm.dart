@@ -2331,4 +2331,8 @@ class AppLocalizationsPcm extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized =>
+      'Export di profit wey you don collect (CSV)';
 }

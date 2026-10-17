@@ -2343,4 +2343,7 @@ class AppLocalizationsLn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'Bimisa matomba oyo ozwi (CSV)';
 }

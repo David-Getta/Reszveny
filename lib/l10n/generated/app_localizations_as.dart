@@ -2330,4 +2330,7 @@ class AppLocalizationsAs extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'লাভ কৰা মুনাফা ৰপ্তানি কৰক (CSV)';
 }

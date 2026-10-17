@@ -2302,4 +2302,7 @@ class AppLocalizationsTh extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'ส่งออกกำไรที่รับรู้แล้ว (CSV)';
 }

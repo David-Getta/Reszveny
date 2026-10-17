@@ -2338,4 +2338,7 @@ class AppLocalizationsNy extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'Tumizani phindu lomwe mwapeza (CSV)';
 }

@@ -2330,4 +2330,7 @@ class AppLocalizationsHi extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'प्राप्त लाभ निर्यात करें (CSV)';
 }

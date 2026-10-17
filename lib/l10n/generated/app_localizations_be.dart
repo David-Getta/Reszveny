@@ -2394,4 +2394,8 @@ class AppLocalizationsBe extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized =>
+      'Экспартаваць рэалізаваны прыбытак (CSV)';
 }

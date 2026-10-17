@@ -2323,4 +2323,7 @@ class AppLocalizationsMy extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'ရရှိပြီးသော အမြတ်ကို ထုတ်ယူရန် (CSV)';
 }

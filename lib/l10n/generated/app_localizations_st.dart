@@ -2345,4 +2345,8 @@ class AppLocalizationsSt extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized =>
+      'Romela ka ntle phaello e fumanweng (CSV)';
 }

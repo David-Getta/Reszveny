@@ -622,5 +622,6 @@
   "newsExplainNote": "AI explanation wey base only on di headline and di summary. E no be investment advice. E dey use your daily question limit, no be analysis.",
   "watchAlertAll": "Alert for big move for one day",
   "watchAlertAllHint": "Price alert for every stock wey dey this list: e go ring when e move reach this much for one day, up or down. Stock wey don get one before go keep im own.",
-  "watchAlertAllDone": "{count, plural, one{We don set {count} alert} other{We don set {count} alerts}}"
+  "watchAlertAllDone": "{count, plural, one{We don set {count} alert} other{We don set {count} alerts}}",
+  "portfolioExportRealized": "Export di profit wey you don collect (CSV)"
 }

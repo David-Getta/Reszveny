@@ -622,5 +622,6 @@
   "newsExplainNote": "Yalnız başlıq və xülasə əsasında AI izahı. İnvestisiya məsləhəti deyil. Gündəlik sual limitinizdən istifadə edir, təhlil sərf etmir.",
   "watchAlertAll": "Böyük gündəlik dəyişmələrdə xəbərdarlıq",
   "watchAlertAllHint": "Bu siyahıdakı hər səhm üçün qiymət xəbərdarlığı: bir gündə bu qədər yuxarı və ya aşağı dəyişərsə, xəbər verir. Artıq xəbərdarlığı olan səhmlər onu saxlayır.",
-  "watchAlertAllDone": "{count, plural, =1{1 xəbərdarlıq quruldu} other{{count} xəbərdarlıq quruldu}}"
+  "watchAlertAllDone": "{count, plural, =1{1 xəbərdarlıq quruldu} other{{count} xəbərdarlıq quruldu}}",
+  "portfolioExportRealized": "Realizə olunmuş gəliri ixrac et (CSV)"
 }

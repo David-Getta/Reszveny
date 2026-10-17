@@ -24,6 +24,8 @@ class PortfolioCsvMenu extends StatelessWidget {
       onSelected: (v) async {
         if (v == 'export') {
           await shareText(portfolioCsv(services.portfolio.lots), subject: 'WhatStock portfolio.csv');
+        } else if (v == 'realized') {
+          await shareText(realizedCsv(services.portfolio.allPositions), subject: 'WhatStock realized-gains.csv');
         } else if (v == 'photo') {
           if (context.mounted) await showHoldingsImport(context);
         } else if (context.mounted) {
@@ -36,6 +38,15 @@ class PortfolioCsvMenu extends StatelessWidget {
             key: const ValueKey('portfolio-export'),
             value: 'export',
             child: ListTile(leading: const Icon(Icons.ios_share_rounded), title: Text(l10n.portfolioExport)),
+          ),
+        if (services.portfolio.lots.any((l) => l.sell))
+          PopupMenuItem(
+            key: const ValueKey('portfolio-export-realized'),
+            value: 'realized',
+            child: ListTile(
+              leading: const Icon(Icons.receipt_long_outlined),
+              title: Text(l10n.portfolioExportRealized),
+            ),
           ),
         PopupMenuItem(
           key: const ValueKey('portfolio-import-photo'),

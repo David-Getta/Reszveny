@@ -4074,6 +4074,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{count, plural, =1{1 alert set} other{{count} alerts set}}'**
   String watchAlertAllDone(int count);
+
+  /// Portfolio menu item: one row per sale with FIFO cost basis and gain, e.g. for a tax return.
+  ///
+  /// In en, this message translates to:
+  /// **'Export realized gains (CSV)'**
+  String get portfolioExportRealized;
 }
 
 class _AppLocalizationsDelegate

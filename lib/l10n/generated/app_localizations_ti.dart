@@ -2294,4 +2294,7 @@ class AppLocalizationsTi extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'ዝተረኽበ ረብሓ ኣውጽእ (CSV)';
 }

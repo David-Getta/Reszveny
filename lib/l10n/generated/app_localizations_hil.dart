@@ -2345,4 +2345,8 @@ class AppLocalizationsHil extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized =>
+      'I-export ang na-realize nga ganansya (CSV)';
 }

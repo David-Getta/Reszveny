@@ -2394,4 +2394,7 @@ class AppLocalizationsSk extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'Exportovať realizované zisky (CSV)';
 }

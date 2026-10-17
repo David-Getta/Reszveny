@@ -622,5 +622,6 @@
   "newsExplainNote": "Giải thích do AI tạo, chỉ dựa trên tiêu đề và phần tóm tắt. Không phải là lời khuyên đầu tư. Dùng hạn mức câu hỏi hằng ngày của bạn, không dùng lượt phân tích.",
   "watchAlertAll": "Cảnh báo biến động mạnh trong ngày",
   "watchAlertAllHint": "Cảnh báo giá cho mọi cổ phiếu trong danh sách này, sẽ báo khi cổ phiếu biến động chừng này trong một ngày, tăng hoặc giảm. Cổ phiếu nào đã có cảnh báo thì giữ nguyên.",
-  "watchAlertAllDone": "{count, plural, =1{Đã đặt 1 cảnh báo} other{Đã đặt {count} cảnh báo}}"
+  "watchAlertAllDone": "{count, plural, =1{Đã đặt 1 cảnh báo} other{Đã đặt {count} cảnh báo}}",
+  "portfolioExportRealized": "Xuất lãi lỗ đã thực hiện (CSV)"
 }

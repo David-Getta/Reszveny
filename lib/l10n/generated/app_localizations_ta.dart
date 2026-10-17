@@ -2341,4 +2341,7 @@ class AppLocalizationsTa extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'உணரப்பட்ட லாபத்தை ஏற்றுமதி செய் (CSV)';
 }

@@ -2340,4 +2340,8 @@ class AppLocalizationsEl extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized =>
+      'Εξαγωγή πραγματοποιηθέντων κερδών (CSV)';
 }

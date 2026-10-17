@@ -2333,4 +2333,7 @@ class AppLocalizationsFi extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'Vie toteutuneet voitot (CSV)';
 }

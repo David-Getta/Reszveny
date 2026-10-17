@@ -2329,4 +2329,7 @@ class AppLocalizationsBm extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'Tɔnɔ sɔrɔlenw bɔ (CSV)';
 }

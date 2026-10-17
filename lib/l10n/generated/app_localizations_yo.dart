@@ -2330,4 +2330,7 @@ class AppLocalizationsYo extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get portfolioExportRealized => 'Gbé èrè tí a ti rí jáde (CSV)';
 }

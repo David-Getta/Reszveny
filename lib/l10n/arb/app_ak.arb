@@ -622,5 +622,6 @@
   "newsExplainNote": "AI nkyerɛkyerɛmu a egyina asɛmti no ne ne mua nko ara so. Ɛnyɛ sikahyɛmu ho afotu. Ɛfiri wo nsɛmmisa a ɛsɛ da biara mu, ɛnni nhwehwɛmu biara.",
   "watchAlertAll": "Kɔkɔbɔ wɔ da koro nsakrae kɛse ho",
   "watchAlertAllHint": "Boɔ ho kɔkɔbɔ ma kyɛfa biara a ɛwɔ nhyehyɛe yi mu: ɛbɛbɔ wo kɔkɔ sɛ ɛsesa saa dodow yi da koro mu, ɛkɔ soro anaa fam. Deɛ ɛwɔ bi dada no bɛkora ne deɛ.",
-  "watchAlertAllDone": "{count, plural, =1{Wɔde kɔkɔbɔ 1 asi hɔ} other{Wɔde kɔkɔbɔ {count} asi hɔ}}"
+  "watchAlertAllDone": "{count, plural, =1{Wɔde kɔkɔbɔ 1 asi hɔ} other{Wɔde kɔkɔbɔ {count} asi hɔ}}",
+  "portfolioExportRealized": "Yi mfaso a woanya kɔ (CSV)"
 }
