@@ -880,7 +880,7 @@ void main() {
     // A saját vételek jelölése a grafikonon (5 éves nézet).
     final legend = find.byKey(const ValueKey('chart-markers-legend'));
     final fiveYears = find.text('5Y');
-    for (var i = 0; i < 20 && fiveYears.evaluate().isEmpty; i++) {
+    for (var i = 0; i < 40 && fiveYears.evaluate().isEmpty; i++) {
       await tester.drag(find.byType(Scrollable).first, const Offset(0, -300));
       await tester.pumpAndSettle();
     }
