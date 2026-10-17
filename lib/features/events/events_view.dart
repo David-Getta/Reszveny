@@ -72,13 +72,18 @@ class _UpcomingEventsSectionState extends State<UpcomingEventsSection> {
                     child: Text(l10n.upcomingEvents, style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),
                   ),
                 ),
-                TextButton(
-                  key: const ValueKey('events-see-all'),
-                  onPressed: () =>
-                      Navigator.of(context)
-                          .push(MaterialPageRoute<void>(builder: (_) => EventsPage(onOpenSymbol: widget.onOpenSymbol))),
-                  style: TextButton.styleFrom(visualDensity: VisualDensity.compact),
-                  child: Text(l10n.seeAll(services.events.events.length)),
+                Flexible(
+                  child: TextButton(
+                    key: const ValueKey('events-see-all'),
+                    onPressed: () => Navigator.of(context)
+                        .push(MaterialPageRoute<void>(builder: (_) => EventsPage(onOpenSymbol: widget.onOpenSymbol))),
+                    style: TextButton.styleFrom(visualDensity: VisualDensity.compact),
+                    child: Text(
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      l10n.seeAll(services.events.events.length),
+                    ),
+                  ),
                 ),
               ],
             ),

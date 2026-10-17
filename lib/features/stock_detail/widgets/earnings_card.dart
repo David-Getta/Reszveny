@@ -247,7 +247,7 @@ class _Legend extends StatelessWidget {
         ),
       ),
       const SizedBox(width: 6),
-      Text(label, style: Theme.of(context).textTheme.bodySmall),
+      Flexible(child: Text(label, style: Theme.of(context).textTheme.bodySmall)),
     ],
   );
 }

@@ -60,13 +60,15 @@ class _WatchNewsSectionState extends State<WatchNewsSection> {
                   ),
                 ),
                 if (list.length > WatchNewsSection.shownCount)
-                  TextButton(
-                    key: const ValueKey('news-see-all'),
-                    onPressed: () => Navigator.of(
-                      context,
-                    ).push(MaterialPageRoute<void>(builder: (_) => WatchNewsPage(onOpenSymbol: widget.onOpenSymbol))),
-                    style: TextButton.styleFrom(visualDensity: VisualDensity.compact),
-                    child: Text(l10n.seeAll(list.length)),
+                  Flexible(
+                    child: TextButton(
+                      key: const ValueKey('news-see-all'),
+                      onPressed: () => Navigator.of(
+                        context,
+                      ).push(MaterialPageRoute<void>(builder: (_) => WatchNewsPage(onOpenSymbol: widget.onOpenSymbol))),
+                      style: TextButton.styleFrom(visualDensity: VisualDensity.compact),
+                      child: Text(maxLines: 1, overflow: TextOverflow.ellipsis, l10n.seeAll(list.length)),
+                    ),
                   ),
               ],
             ),

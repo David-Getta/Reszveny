@@ -42,10 +42,12 @@ class RecentChips extends StatelessWidget {
                     child: Text(l10n.recentSearches, style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),
                   ),
                 ),
-                TextButton(
-                  onPressed: services.preferences.clearRecent,
-                  style: TextButton.styleFrom(visualDensity: VisualDensity.compact),
-                  child: Text(l10n.clearRecent),
+                Flexible(
+                  child: TextButton(
+                    onPressed: services.preferences.clearRecent,
+                    style: TextButton.styleFrom(visualDensity: VisualDensity.compact),
+                    child: Text(l10n.clearRecent, maxLines: 1, overflow: TextOverflow.ellipsis),
+                  ),
                 ),
               ],
             ),
@@ -147,13 +149,15 @@ class _MyAnalysesListState extends State<MyAnalysesList> with _SavedReports {
               ),
             ),
             if (reports.length > MyAnalysesList.collapsedCount)
-              TextButton(
-                key: const ValueKey('analyses-see-all'),
-                onPressed: () => Navigator.of(
-                  context,
-                ).push(MaterialPageRoute<void>(builder: (_) => AnalysesHistoryPage(onOpenSymbol: widget.onOpenSymbol))),
-                style: TextButton.styleFrom(visualDensity: VisualDensity.compact),
-                child: Text(l10n.seeAll(reports.length)),
+              Flexible(
+                child: TextButton(
+                  key: const ValueKey('analyses-see-all'),
+                  onPressed: () => Navigator.of(context).push(
+                    MaterialPageRoute<void>(builder: (_) => AnalysesHistoryPage(onOpenSymbol: widget.onOpenSymbol)),
+                  ),
+                  style: TextButton.styleFrom(visualDensity: VisualDensity.compact),
+                  child: Text(maxLines: 1, overflow: TextOverflow.ellipsis, l10n.seeAll(reports.length)),
+                ),
               ),
           ],
         ),
