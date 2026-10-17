@@ -249,6 +249,7 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 5bq | Amerikai tőzsdei nyitvatartás a kezdőlapon: „nyitva · zár X múlva” / „zárva · nyit X múlva” (New York-i idő, nyári időszámítás, 2026–27 ünnepnapjai és rövidített napjai), percenként frissül | ✅ kész |
 | 5br | Portfólió-cél: célösszeg az összesítés pénznemében, alatta sáv és százalék (koppintásra módosítható vagy törölhető) | ✅ kész |
 | 5bs | Kedvencek: a 7 napon belüli gyorsjelentés a ticker alatt („Holnap”, „5 nap múlva”), a dátum a súgóban | ✅ kész |
+| 5bt | Részvény-grafikon: kapcsolóval az S&P 500 ugyanarról a pontról indítva, és a változása az időszakban (csak bekapcsoláskor tölt) | ✅ kész |
 | 5j | Telefonos háttér-értesítés (riasztás) szerverről, APNs / FCM | 🟡 első lépés kész: a szerver 10 percenként nézi a belépett fiókok szinkronizált riasztásait, és e-mailben szól (csukott appnál is, kikapcsolható); a telefonos push (APNs / FCM) a Firebase-projekt és az Apple-kulcs után |
 | 5k | Bolti adatlapok 120 nyelven, képernyőképek, ikon, előnézeti videó | 🟡 adatlap-szövegek 70 bolti nyelven (fastlane-mappa, `docs/BOLTI_ADATLAP.md`), feliratos bolti képek a teszt-harnessből a boltok méreteiben; előnézeti videó és a nem latin írású képek a natív buildből később |
 

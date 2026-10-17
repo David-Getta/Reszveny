@@ -41,7 +41,12 @@ class PriceChart extends StatefulWidget {
     this.levels = const [],
     this.markers = const [],
     this.showChange = true,
+    this.loadBenchmark,
   });
+
+  /// Az S&P 500 (SPY) története az összevetéshez; ha meg van adva, egy kapcsoló
+  /// a grafikon alatt ugyanarról a pontról indítva rárajzolja.
+  final Future<PriceHistory> Function()? loadBenchmark;
 
   /// A saját vételek és eladások napjai (a látható időtávon kívüliek nem jelennek meg).
   final List<ChartMarker> markers;
@@ -61,8 +66,32 @@ class PriceChart extends StatefulWidget {
   State<PriceChart> createState() => _PriceChartState();
 }
 
+/// Az összevetés görbéje a fő görbe pontjaihoz igazítva: minden napra a
+/// legközelebbi korábbi (vagy első) benchmark-záróár, a fő görbe első árára
+/// skálázva. `null`, ha nincs elég adat.
+List<double>? alignBenchmark(List<PricePoint> points, List<PricePoint> bench) {
+  if (points.length < 2 || bench.length < 2) return null;
+  final base = bench[nearestChartIndex(bench, points.first.time)].close;
+  if (base <= 0) return null;
+  final scale = points.first.close / base;
+  return [for (final pt in points) bench[nearestChartIndex(bench, pt.time)].close * scale];
+}
+
 class _PriceChartState extends State<PriceChart> {
   ChartRange _range = ChartRange.year;
+
+  /// Az S&P 500 összevetés be van-e kapcsolva, és a betöltött története.
+  bool _bench = false;
+  Future<PriceHistory>? _benchLoad;
+  PriceHistory? _benchData;
+
+  void _toggleBenchmark() {
+    setState(() => _bench = !_bench);
+    _benchLoad ??= widget.loadBenchmark!().then((h) {
+      if (mounted) setState(() => _benchData = h);
+      return h;
+    });
+  }
 
   /// A kijelölt pont indexe a látható pontok között (`null`: nincs kijelölés).
   int? _hover;
@@ -108,6 +137,8 @@ class _PriceChartState extends State<PriceChart> {
     final change = changeTo(points.isEmpty ? null : points.last.close);
     final color = (change ?? 0) >= 0 ? p.positive : p.negative;
     final hoverChange = hover == null ? null : changeTo(points[hover].close);
+    final bench = _bench && _benchData != null ? alignBenchmark(points, _benchData!.points) : null;
+    final benchChange = bench == null ? null : changeTo(bench.last);
     final hoverColor = (hoverChange ?? 0) >= 0 ? p.positive : p.negative;
 
     String label(ChartRange r) => switch (r) {
@@ -214,6 +245,8 @@ class _PriceChartState extends State<PriceChart> {
                               background: theme.colorScheme.surface,
                               levels: widget.levels,
                               markers: shownMarkers,
+                              compare: bench,
+                              compareColor: p.muted,
                               buyColor: p.accent,
                               sellColor: p.text,
                             ),
@@ -226,6 +259,29 @@ class _PriceChartState extends State<PriceChart> {
           ),
         ),
         const SizedBox(height: 6),
+        if (widget.loadBenchmark != null && points.length >= 2) ...[
+          Wrap(
+            spacing: 8,
+            crossAxisAlignment: WrapCrossAlignment.center,
+            children: [
+              FilterChip(
+                key: const ValueKey('chart-benchmark'),
+                label: Text(l10n.benchmarkTitle),
+                selected: _bench,
+                onSelected: (_) => _toggleBenchmark(),
+                visualDensity: VisualDensity.compact,
+                avatar: _bench ? null : Icon(Icons.show_chart_rounded, size: 16, color: p.muted),
+              ),
+              if (benchChange != null)
+                Text(
+                  'S&P 500 ${widget.fmt.percent(benchChange, withSign: true)}',
+                  key: const ValueKey('chart-benchmark-change'),
+                  style: theme.textTheme.bodySmall?.copyWith(color: p.muted, fontWeight: FontWeight.w600),
+                ),
+            ],
+          ),
+          const SizedBox(height: 2),
+        ],
         if (shownMarkers.isNotEmpty) ...[
           Wrap(
             key: const ValueKey('chart-markers-legend'),
@@ -325,12 +381,18 @@ class _LinePainter extends CustomPainter {
     this.background = const Color(0xFF000000),
     this.levels = const [],
     this.markers = const [],
+    this.compare,
+    this.compareColor = const Color(0xFF888888),
     this.buyColor = const Color(0xFF00C853),
     this.sellColor = const Color(0xFFFFFFFF),
   });
 
   final List<ChartLevel> levels;
   final List<ChartMarker> markers;
+
+  /// Összevetés (pl. S&P 500) a pontokhoz igazítva, a fő görbe skáláján.
+  final List<double>? compare;
+  final Color compareColor;
   final Color buyColor;
   final Color sellColor;
 
@@ -399,6 +461,10 @@ class _LinePainter extends CustomPainter {
       if (pt.close < min) min = pt.close;
       if (pt.close > max) max = pt.close;
     }
+    for (final v in compare ?? const <double>[]) {
+      if (v < min) min = v;
+      if (v > max) max = v;
+    }
     // A közeli szintek is férjenek bele a sávba.
     final shown = visibleLevels(levels, min, max);
     for (final l in shown) {
@@ -451,6 +517,23 @@ class _LinePainter extends CustomPainter {
         Paint()..color = background.withValues(alpha: 0.75),
       );
       tp.paint(canvas, Offset(5, ty));
+    }
+
+    // Összevetés: halvány vonal a fő görbe alatt.
+    if (compare case final c? when c.length == points.length) {
+      final y0 = h - (c.first - min) / span * (h - 8) - 4;
+      final cmp = Path()..moveTo(at(points.first).dx, y0);
+      for (var i = 1; i < c.length; i++) {
+        cmp.lineTo(at(points[i]).dx, h - (c[i] - min) / span * (h - 8) - 4);
+      }
+      canvas.drawPath(
+        cmp,
+        Paint()
+          ..color = compareColor.withValues(alpha: 0.8)
+          ..strokeWidth = 1.5
+          ..style = PaintingStyle.stroke
+          ..strokeJoin = StrokeJoin.round,
+      );
     }
 
     final path = Path()..moveTo(at(points.first).dx, at(points.first).dy);
@@ -544,5 +627,6 @@ class _LinePainter extends CustomPainter {
       old.hoverPrice != hoverPrice ||
       old.topPad != topPad ||
       old.levels != levels ||
-      old.markers.length != markers.length;
+      old.markers.length != markers.length ||
+      old.compare != compare;
 }

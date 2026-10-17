@@ -74,4 +74,67 @@ void main() {
     await pump([ChartMarker(date: DateTime(2025, 1, 2), sell: true)]);
     expect(find.byKey(const ValueKey('chart-markers-legend')), findsNothing);
   });
+
+  test('the benchmark starts from the same point and follows its own moves', () {
+    final pts = [for (var i = 0; i < 5; i++) PricePoint(time: DateTime(2026, 1, 1 + i), close: 100.0 + i * 10)];
+    final bench = [for (var i = -2; i < 5; i++) PricePoint(time: DateTime(2026, 1, 1 + i), close: 400.0 + i * 4)];
+    final a = alignBenchmark(pts, bench)!;
+    expect(a.first, 100);
+    // 400 → 416: +4%.
+    expect(a.last, closeTo(104, 1e-9));
+    expect(alignBenchmark(pts, bench.take(1).toList()), isNull);
+  });
+
+  testWidgets('the S&P 500 is loaded only when switched on and its change is shown', (tester) async {
+    final end = DateTime(2026, 10, 16);
+    final pts = [
+      for (var i = 400; i >= 0; i--)
+        PricePoint(
+          time: end.subtract(Duration(days: i)),
+          close: 100.0 + (400 - i) / 10,
+        ),
+    ];
+    final spy = [
+      for (var i = 400; i >= 0; i--)
+        PricePoint(
+          time: end.subtract(Duration(days: i)),
+          close: 500.0 + (400 - i) / 4,
+        ),
+    ];
+    var loads = 0;
+    await tester.pumpWidget(
+      MaterialApp(
+        theme: AppTheme.build(Brightness.dark),
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        supportedLocales: AppLocalizations.supportedLocales,
+        home: Scaffold(
+          body: SizedBox(
+            width: 400,
+            child: PriceChart(
+              history: PriceHistory(symbol: 'X', points: pts),
+              fmt: Fmt('en'),
+              loadBenchmark: () async {
+                loads++;
+                return PriceHistory(symbol: 'SPY', points: spy);
+              },
+            ),
+          ),
+        ),
+      ),
+    );
+    expect(loads, 0);
+    expect(find.text('Compared with the S&P 500'), findsOneWidget);
+    await tester.tap(find.byKey(const ValueKey('chart-benchmark')));
+    await tester.pumpAndSettle();
+    expect(loads, 1);
+    expect(find.byKey(const ValueKey('chart-benchmark-change')), findsOneWidget);
+    expect(find.textContaining(RegExp(r'^S&P 500 \+')), findsOneWidget);
+    // Ki- és bekapcsolva nem tölti újra.
+    await tester.tap(find.byKey(const ValueKey('chart-benchmark')));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('chart-benchmark-change')), findsNothing);
+    await tester.tap(find.byKey(const ValueKey('chart-benchmark')));
+    await tester.pumpAndSettle();
+    expect(loads, 1);
+  });
 }

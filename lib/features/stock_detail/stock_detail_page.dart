@@ -310,6 +310,9 @@ class _DetailsBody extends StatelessWidget {
                       currency: cur,
                       levels: chartLevels(context, d.symbol, cur),
                       markers: chartMarkers(context, d.symbol),
+                      loadBenchmark: d.symbol.toUpperCase() == 'SPY'
+                          ? null
+                          : () => AppServices.of(context).marketData.history('SPY'),
                     ),
                     // Hozamok több időtávon, egy pillantással.
                     ReturnsStrip(history: d.history!, fmt: fmt),

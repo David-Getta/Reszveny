@@ -894,6 +894,8 @@ void main() {
     await tester.tap(fiveYears.first);
     await tester.pumpAndSettle();
     expect(legend, findsOneWidget);
+    await tester.tap(find.byKey(const ValueKey('chart-benchmark')));
+    await tester.pumpAndSettle();
     await Scrollable.ensureVisible(tester.element(fiveYears.first), alignment: 0.1);
     await tester.pumpAndSettle();
     await _shot(tester, 'detail_chart_markers');
