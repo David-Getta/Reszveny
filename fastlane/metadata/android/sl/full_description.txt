@@ -12,14 +12,17 @@ KAJ ZAJEMA ANALIZA
 Sami izberete globino (kratka, standardna ali poglobljena) in raven (začetnik ali izkušen). Nato lahko o analizi postavite dodatna vprašanja.
 
 SPREMLJAJTE
-• Priljubljene in nedavna iskanja, z analizami, shranjenimi v vaši napravi
+• Priljubljene na lastnih seznamih, nedavna iskanja in analize, shranjene v vaši napravi
+• Dnevni povzetek AI o tem, kako so se gibale vaše delnice in zakaj
 • Kaj se je spremenilo od zadnje analize, na prvi pogled
 • Primerjava do treh delnic drugo ob drugi
-• Portfelj: nakupi, dobički, dividende, vrednost skozi čas, pretvorba valut ter uvoz in izvoz CSV
+• Zgodovina rezultatov, posli notranjih oseb in trendi analitikov na strani vsake delnice
+• Portfelj: nakupi, dobički, dividende, vrednost skozi čas in pretvorba valut – uvoz iz CSV ali preprosto iz posnetka zaslona vašega borznega posrednika
+• Ciljna razporeditev in kaj kupiti ali prodati, da se vrnete k cilju
 • Pregled portfelja z AI: koncentracija, izpostavljenost sektorjem in valutam, skupna tveganja
-• Cenovna opozorila – tudi po e-pošti, ko je aplikacija zaprta
-• Prihajajoči datumi rezultatov za vaše delnice in tedenski povzetek po e-pošti
-• Lastni zapiski za vsako delnico
+• Cenovna opozorila in drseči stopi – tudi po e-pošti, ko je aplikacija zaprta
+• Datumi rezultatov in opomniki za vaše delnice ter tedenski povzetek po e-pošti
+• Lastni zapiski za vsako delnico in varnostna kopija v datoteki, ki jo lahko shranite
 • Prijavite se z e-poštnim naslovom in vse bo usklajeno v vseh vaših napravah
 
 NA RAČUNALNIKU

@@ -12,14 +12,17 @@ MIT VIZSGÁL AZ ELEMZÉS
 Te választod meg a mélységet (rövid, normál vagy alapos) és a szintet (kezdő vagy tapasztalt). Utána kérdezhetsz is az elemzésről.
 
 KÖVESD NYOMON
-• Kedvencek és legutóbbi keresések, az elemzések a készülékeden mentve
+• Kedvencek saját listákba rendezve, legutóbbi keresések, az elemzések a készülékeden mentve
+• Napi AI-összefoglaló arról, hogyan mozogtak a részvényeid, és miért
 • Egy pillantásra, mi változott az előző elemzés óta
 • Akár három részvény összehasonlítása egymás mellett
-• Portfólió: vételek, hozam, osztalék, értékalakulás, átváltás és CSV-import és -export
+• Gyorsjelentés-történet, bennfentes ügyletek és az elemzői vélemények alakulása minden részvénynél
+• Portfólió: vételek, hozam, osztalék, értékalakulás és átváltás – importálás CSV-ből vagy egyszerűen a brókered képernyőképéből
+• Célarányok, és hogy mit kell venni vagy eladni, hogy visszaállj rájuk
 • AI-portfólióelemzés: koncentráció, szektor- és devizakitettség, közös kockázatok
-• Árfolyam-riasztások – csukott appnál e-mailben is
-• A részvényeid következő gyorsjelentései, és heti összefoglaló e-mailben
-• Saját jegyzetek minden részvényhez
+• Árfolyam-riasztások, követő stoppal is – csukott appnál e-mailben is
+• A részvényeid gyorsjelentés-napjai emlékeztetővel, és heti összefoglaló e-mailben
+• Saját jegyzetek minden részvényhez, és biztonsági mentés fájlba
 • Lépj be az e-mail-címeddel, és minden eszközödön ugyanaz lesz minden
 
 A SZÁMÍTÓGÉPEDEN

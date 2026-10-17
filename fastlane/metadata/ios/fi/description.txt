@@ -12,14 +12,17 @@ MITÄ ANALYYSI KATTAA
 Sinä valitset syvyyden (lyhyt, normaali tai perusteellinen) ja tason (aloittelija tai kokenut). Sen jälkeen voit esittää analyysista jatkokysymyksiä.
 
 PYSY AJAN TASALLA
-• Suosikit ja viimeisimmät haut, analyysit tallessa laitteellasi
+• Suosikit omissa listoissasi, viimeisimmät haut ja analyysisi tallessa laitteellasi
+• Päivittäinen tekoälykooste siitä, miten osakkeesi liikkuivat ja miksi
 • Mikä on muuttunut edellisen analyysin jälkeen – yhdellä silmäyksellä
 • Vertaa enintään kolmea osaketta rinnakkain
-• Salkku: ostot, tuotot, osingot, arvon kehitys, valuuttamuunnos sekä CSV-tuonti ja -vienti
+• Tuloshistoria, sisäpiirikaupat ja analyytikkotrendit jokaisen osakkeen sivulla
+• Salkku: ostot, tuotot, osingot, arvon kehitys ja valuuttamuunnos – tuonti CSV:stä tai yksinkertaisesti välittäjäsi kuvakaappauksesta
+• Tavoitejakauma ja se, mitä ostaa tai myydä, jotta palaat tavoitteeseen
 • Salkun tekoälykatsaus: keskittyminen, toimiala- ja valuuttariski, yhteiset riskit
-• Kurssihälytykset – myös sähköpostilla, kun sovellus on suljettu
-• Osakkeidesi tulevat tulosjulkistukset ja viikoittainen yhteenveto sähköpostilla
-• Omat muistiinpanot jokaisesta osakkeesta
+• Kurssihälytykset, myös liukuvat stopit – myös sähköpostilla, kun sovellus on suljettu
+• Osakkeidesi tulosjulkistuspäivät muistutuksineen ja viikoittainen yhteenveto sähköpostilla
+• Omat muistiinpanot jokaisesta osakkeesta ja varmuuskopiotiedosto talteen
 • Kirjaudu sähköpostillasi, niin kaikki pysyy synkronoituna kaikilla laitteillasi
 
 TIETOKONEELLASI

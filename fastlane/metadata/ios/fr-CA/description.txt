@@ -12,14 +12,17 @@ CE QUE COUVRE L'ANALYSE
 Vous choisissez la profondeur (brève, standard ou approfondie) et le niveau (débutant ou expérimenté). Vous pouvez ensuite poser des questions de suivi sur l'analyse.
 
 SUIVEZ VOS ACTIONS
-• Favoris et recherches récentes, avec les analyses enregistrées sur votre appareil
+• Favoris dans vos propres listes, recherches récentes et vos analyses enregistrées sur votre appareil
+• Un résumé quotidien par IA : comment vos actions ont bougé, et pourquoi
 • Ce qui a changé depuis la dernière analyse, en un coup d'œil
 • Comparez jusqu'à trois actions côte à côte
-• Portefeuille : achats, plus-values, dividendes, évolution de la valeur, conversion de devises et import/export CSV
+• Historique des résultats, transactions d'initiés et tendances des analystes sur la page de chaque action
+• Portefeuille : achats, plus-values, dividendes, évolution de la valeur et conversion de devises – import depuis un CSV ou simplement depuis une capture d'écran de votre courtier
+• Allocation cible, avec ce qu'il faut acheter ou vendre pour la retrouver
 • Revue du portefeuille par IA : concentration, exposition sectorielle et aux devises, risques communs
-• Alertes de cours – aussi par e-mail quand l'application est fermée
-• Prochaines dates de résultats de vos actions et un récapitulatif hebdomadaire par e-mail
-• Vos propres notes sur chaque action
+• Alertes de cours, stops suiveurs compris – aussi par e-mail quand l'application est fermée
+• Dates de résultats et rappels pour vos actions, et un récapitulatif hebdomadaire par e-mail
+• Vos propres notes sur chaque action, et un fichier de sauvegarde à conserver
 • Connectez-vous avec votre e-mail pour tout synchroniser sur tous vos appareils
 
 SUR VOTRE ORDINATEUR

@@ -12,14 +12,17 @@ TƏHLİL NƏLƏRİ ƏHATƏ EDİR
 Dərinliyi (qısa, standart və ya ətraflı) və səviyyəni (başlanğıc və ya təcrübəli) siz seçirsiniz. Sonra təhlil barədə əlavə suallar verə bilərsiniz.
 
 İZLƏYİN
-• Seçilmişlər və son axtarışlar, təhlillər cihazınızda saxlanılır
+• Öz siyahılarınızda seçilmişlər, son axtarışlar və cihazınızda saxlanılan təhlilləriniz
+• Səhmlərinizin necə və niyə hərəkət etdiyinə dair gündəlik AI xülasəsi
 • Son təhlildən bəri nəyin dəyişdiyi – bir baxışda
 • Üç səhmə qədər yan-yana müqayisə
-• Portfel: alışlar, gəlir, dividendlər, dəyərin zamanla dəyişməsi, valyuta çevirmə, CSV idxalı və ixracı
+• Hər səhm səhifəsində hesabat tarixçəsi, insayder əməliyyatları və analitik meylləri
+• Portfel: alışlar, gəlir, dividendlər, dəyərin zamanla dəyişməsi və valyuta çevirmə – CSV-dən və ya sadəcə brokerinizin ekran görüntüsündən idxal
+• Hədəf bölgüsü və hədəfə qayıtmaq üçün nəyi almaq və ya satmaq lazım olduğu
 • AI portfel təhlili: konsentrasiya, sektor və valyuta asılılığı, ortaq risklər
-• Qiymət bildirişləri – tətbiq bağlı olanda e-poçtla da
-• Səhmləriniz üçün qarşıdakı hesabat tarixləri və həftəlik e-poçt xülasəsi
-• Hər səhm üzrə öz qeydləriniz
+• Qiymət bildirişləri, izləyən stoplar da – tətbiq bağlı olanda e-poçtla da
+• Səhmləriniz üçün hesabat tarixləri və xatırlatmalar, həftəlik e-poçt xülasəsi
+• Hər səhm üzrə öz qeydləriniz və saxlaya biləcəyiniz ehtiyat nüsxə faylı
 • Hər şeyi bütün cihazlarınızda sinxron saxlamaq üçün e-poçtunuzla daxil olun
 
 KOMPÜTERİNİZDƏ

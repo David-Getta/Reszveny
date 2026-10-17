@@ -12,14 +12,17 @@ DETTE DEKKER ANALYSEN
 Du velger dybden (kort, standard eller grundig) og nivået (nybegynner eller erfaren). Etterpå kan du stille oppfølgingsspørsmål om analysen.
 
 HOLD OVERSIKTEN
-• Favoritter og nylige søk, med analysene lagret på enheten din
+• Favoritter i dine egne lister, nylige søk og analysene lagret på enheten din
+• En daglig AI-oppsummering av hvordan aksjene dine har beveget seg, og hvorfor
 • Hva som har endret seg siden forrige analyse, med et blikk
 • Sammenlign opptil tre aksjer side om side
-• Portefølje: kjøp, gevinster, utbytte, verdiutvikling, valutaomregning og CSV-import og -eksport
+• Resultathistorikk, innsidehandler og analytikertrender på hver aksjeside
+• Portefølje: kjøp, gevinster, utbytte, verdiutvikling og valutaomregning – importer fra CSV eller rett og slett fra et skjermbilde fra megleren din
+• Målfordeling, med hva du bør kjøpe eller selge for å komme tilbake til målet
 • AI-gjennomgang av porteføljen: konsentrasjon, sektor- og valutaeksponering, felles risikoer
-• Kursvarsler – også på e-post når appen er lukket
-• Kommende resultatdatoer for aksjene dine, og en ukentlig oppsummering på e-post
-• Egne notater for hver aksje
+• Kursvarsler og glidende stopp – også på e-post når appen er lukket
+• Resultatdatoer og påminnelser for aksjene dine, og en ukentlig oppsummering på e-post
+• Egne notater for hver aksje, og en sikkerhetskopifil du kan ta vare på
 • Logg inn med e-postadressen din, så holdes alt synkronisert på alle enhetene dine
 
 PÅ DATAMASKINEN

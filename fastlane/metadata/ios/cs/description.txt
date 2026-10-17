@@ -12,14 +12,17 @@ CO ANALÝZA ZAHRNUJE
 Hloubku (stručně, standardně nebo podrobně) i úroveň (začátečník nebo zkušený) si volíte sami. Poté se můžete na analýzu doptat.
 
 MĚJTE PŘEHLED
-• Oblíbené a nedávná hledání, analýzy uložené ve vašem zařízení
+• Oblíbené ve vlastních seznamech, nedávná hledání a vaše analýzy uložené v zařízení
+• Denní AI souhrn toho, jak se vaše akcie pohnuly a proč
 • Co se změnilo od poslední analýzy – na první pohled
 • Srovnání až tří akcií vedle sebe
-• Portfolio: nákupy, zisky, dividendy, vývoj hodnoty, převod měn a import a export CSV
+• Historie výsledků, obchody insiderů a vývoj doporučení analytiků na stránce každé akcie
+• Portfolio: nákupy, zisky, dividendy, vývoj hodnoty a převod měn – import z CSV nebo jednoduše ze snímku obrazovky od vašeho brokera
+• Cílové rozložení a co koupit nebo prodat, abyste se k němu vrátili
 • AI přehled portfolia: koncentrace, expozice vůči sektorům a měnám, společná rizika
-• Cenová upozornění – i e-mailem, když je aplikace zavřená
-• Nadcházející data výsledků vašich akcií a týdenní souhrn e-mailem
-• Vlastní poznámky ke každé akcii
+• Cenová upozornění včetně trailing stopů – i e-mailem, když je aplikace zavřená
+• Data výsledků vašich akcií s připomenutím a týdenní souhrn e-mailem
+• Vlastní poznámky ke každé akcii a záložní soubor, který si můžete uschovat
 • Přihlaste se e-mailem a mějte vše synchronizované na všech svých zařízeních
 
 NA VAŠEM POČÍTAČI

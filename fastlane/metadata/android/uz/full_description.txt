@@ -12,14 +12,17 @@ TAHLIL NIMALARNI QAMRAYDI
 Chuqurlikni (qisqa, standart yoki batafsil) va darajani (boshlovchi yoki tajribali) oʻzingiz tanlaysiz. Keyin tahlil boʻyicha qoʻshimcha savollar berishingiz mumkin.
 
 NAZORATDA TUTING
-• Sevimlilar va soʻnggi qidiruvlar, tahlillar qurilmangizda saqlanadi
+• Oʻz roʻyxatlaringizdagi sevimlilar, soʻnggi qidiruvlar va qurilmangizda saqlangan tahlillar
+• Aksiyalaringiz qanday va nima uchun harakatlangani haqida kundalik AI xulosasi
 • Oxirgi tahlildan beri nima oʻzgargani – bir qarashda
 • Uchtagacha aksiyani yonma-yon solishtirish
-• Portfel: xaridlar, daromad, dividendlar, vaqt boʻyicha qiymat, valyuta konvertatsiyasi hamda CSV import va eksport
+• Har bir aksiya sahifasida hisobotlar tarixi, insayder bitimlari va tahlilchilar fikri dinamikasi
+• Portfel: xaridlar, daromad, dividendlar, vaqt boʻyicha qiymat va valyuta konvertatsiyasi – CSV fayldan yoki shunchaki brokeringiz ekran rasmidan import qiling
+• Maqsadli taqsimot va unga qaytish uchun nimani sotib olish yoki sotish kerakligi
 • Portfelni AI bilan koʻrib chiqish: jamlanish, sohalar va valyutalar ulushi, umumiy xatarlar
-• Narx bildirishnomalari – ilova yopiq boʻlsa, e-pochta orqali ham
-• Aksiyalaringizning yaqinlashayotgan hisobot sanalari va e-pochta orqali haftalik xulosa
-• Har bir aksiya boʻyicha oʻz qaydlaringiz
+• Narx bildirishnomalari va trailing stoplar – ilova yopiq boʻlsa, e-pochta orqali ham
+• Aksiyalaringizning hisobot sanalari va eslatmalar, e-pochta orqali haftalik xulosa
+• Har bir aksiya boʻyicha oʻz qaydlaringiz va saqlab qoʻyish mumkin boʻlgan zaxira fayl
 • E-pochtangiz bilan kiring – hammasi barcha qurilmalaringizda sinxronlanadi
 
 KOMPYUTERINGIZDA

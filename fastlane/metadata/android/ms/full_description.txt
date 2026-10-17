@@ -12,14 +12,17 @@ APA YANG DILIPUTI ANALISIS
 Anda memilih kedalaman (ringkas, standard atau mendalam) dan tahap (pemula atau berpengalaman). Selepas itu, anda boleh bertanya soalan susulan tentang analisis tersebut.
 
 SENTIASA PANTAU
-• Kegemaran dan carian terkini, dengan analisis disimpan pada peranti anda
+• Kegemaran dalam senarai anda sendiri, carian terkini, dan analisis disimpan pada peranti anda
+• Ringkasan AI harian tentang pergerakan saham anda dan sebabnya
 • Apa yang berubah sejak analisis terakhir, sepintas lalu
 • Bandingkan sehingga tiga saham sebelah-menyebelah
-• Portfolio: pembelian, keuntungan, dividen, nilai dari semasa ke semasa, penukaran mata wang serta import dan eksport CSV
+• Sejarah keputusan kewangan, urus niaga orang dalam dan trend penganalisis pada setiap halaman saham
+• Portfolio: pembelian, keuntungan, dividen, nilai dari semasa ke semasa dan penukaran mata wang – import daripada CSV atau hanya daripada tangkapan skrin broker anda
+• Peruntukan sasaran, berserta apa yang perlu dibeli atau dijual untuk kembali ke sasaran
 • Semakan portfolio AI: penumpuan, pendedahan sektor dan mata wang, risiko bersama
-• Amaran harga – juga melalui e-mel apabila aplikasi ditutup
-• Tarikh keputusan kewangan akan datang bagi saham anda, dan ringkasan mingguan melalui e-mel
-• Nota anda sendiri bagi setiap saham
+• Amaran harga, termasuk trailing stop – juga melalui e-mel apabila aplikasi ditutup
+• Tarikh keputusan kewangan dan peringatan bagi saham anda, serta ringkasan mingguan melalui e-mel
+• Nota anda sendiri bagi setiap saham, dan fail sandaran yang boleh anda simpan
 • Log masuk dengan e-mel anda untuk menyegerakkan segala-galanya pada semua peranti anda
 
 DI KOMPUTER ANDA

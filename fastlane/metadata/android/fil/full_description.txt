@@ -12,14 +12,17 @@ ANG SAKLAW NG PAGSUSURI
 Ikaw ang pipili ng lalim (maikli, karaniwan o malalim) at antas (baguhan o may karanasan). Pagkatapos, puwede kang magtanong pa tungkol sa pagsusuri.
 
 SUBAYBAYAN
-• Mga Paborito at kamakailang paghahanap, naka-save sa iyong device ang mga pagsusuri
+• Mga Paborito sa sarili mong mga listahan, kamakailang paghahanap, at naka-save sa iyong device ang iyong mga pagsusuri
+• Araw-araw na buod ng AI kung paano gumalaw ang iyong mga stock, at bakit
 • Ano ang nagbago mula sa huling pagsusuri, sa isang tingin
 • Paghambingin ang hanggang tatlong stock nang magkatabi
-• Portfolio: mga binili, kita, dividend, halaga sa paglipas ng panahon, pagpapalit ng pera at CSV import at export
+• Kasaysayan ng resulta, insider trades at trend ng mga analyst sa bawat pahina ng stock
+• Portfolio: mga binili, kita, dividend, halaga sa paglipas ng panahon at pagpapalit ng pera – i-import mula sa CSV o mula lang sa screenshot ng iyong broker
+• Target na alokasyon, kasama kung ano ang bibilhin o ibebenta para bumalik sa target
 • Pagsusuri ng portfolio gamit ang AI: konsentrasyon, exposure sa sektor at currency, magkakaparehong panganib
-• Mga alerto sa presyo – pati sa e-mail kahit sarado ang app
-• Mga paparating na petsa ng resulta ng iyong mga stock, at lingguhang buod sa e-mail
-• Sarili mong mga tala sa bawat stock
+• Mga alerto sa presyo, pati trailing stop – pati sa e-mail kahit sarado ang app
+• Mga petsa ng resulta at paalala para sa iyong mga stock, at lingguhang buod sa e-mail
+• Sarili mong mga tala sa bawat stock, at backup file na maitatabi mo
 • Mag-sign in gamit ang iyong e-mail para naka-sync ang lahat sa lahat ng iyong device
 
 SA IYONG COMPUTER

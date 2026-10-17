@@ -12,14 +12,17 @@ CO OBEJMUJE ANALIZA
 Wybierasz głębokość (krótka, standardowa lub pogłębiona) i poziom (początkujący lub zaawansowany). Potem możesz zadawać dodatkowe pytania o analizę.
 
 BĄDŹ NA BIEŻĄCO
-• Ulubione i ostatnie wyszukiwania, z analizami zapisanymi na urządzeniu
+• Ulubione na własnych listach, ostatnie wyszukiwania i analizy zapisane na urządzeniu
+• Codzienne podsumowanie AI: jak zmieniały się kursy Twoich akcji i dlaczego
 • Co się zmieniło od ostatniej analizy – w jednym rzucie oka
 • Porównanie do trzech akcji obok siebie
-• Portfel: zakupy, zyski, dywidendy, wartość w czasie, przeliczanie walut oraz import i eksport CSV
+• Historia wyników, transakcje insiderów i trendy rekomendacji analityków na stronie każdej akcji
+• Portfel: zakupy, zyski, dywidendy, wartość w czasie i przeliczanie walut – import z CSV lub po prostu ze zrzutu ekranu z aplikacji maklerskiej
+• Docelowa alokacja, z podpowiedzią, co kupić lub sprzedać, by do niej wrócić
 • Przegląd portfela przez AI: koncentracja, ekspozycja na sektory i waluty, wspólne ryzyka
-• Alerty cenowe – także e-mailem, gdy aplikacja jest zamknięta
-• Nadchodzące terminy wyników Twoich spółek i cotygodniowe podsumowanie e-mailem
-• Własne notatki do każdej akcji
+• Alerty cenowe, również z kroczącym stopem – także e-mailem, gdy aplikacja jest zamknięta
+• Terminy wyników Twoich spółek z przypomnieniami i cotygodniowe podsumowanie e-mailem
+• Własne notatki do każdej akcji i plik kopii zapasowej, który możesz zachować
 • Zaloguj się adresem e-mail, a wszystko będzie zsynchronizowane na wszystkich Twoich urządzeniach
 
 NA KOMPUTERZE

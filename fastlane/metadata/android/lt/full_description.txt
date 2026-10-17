@@ -12,14 +12,17 @@ KĄ APIMA ANALIZĖ
 Jūs pasirenkate gylį (trumpa, standartinė ar išsami) ir lygį (pradedantysis ar patyręs). Vėliau galite užduoti papildomų klausimų apie analizę.
 
 VISKAS PO RANKA
-• Mėgstamiausi ir naujausios paieškos, o analizės išsaugomos jūsų įrenginyje
+• Mėgstamiausi jūsų pačių sąrašuose, naujausios paieškos, o analizės išsaugomos jūsų įrenginyje
+• Kasdienė DI suvestinė apie tai, kaip judėjo jūsų akcijos ir kodėl
 • Kas pasikeitė nuo paskutinės analizės – iš pirmo žvilgsnio
 • Iki trijų akcijų palyginimas greta
-• Portfelis: pirkimai, pelnas, dividendai, vertės kitimas, valiutų konvertavimas, CSV importas ir eksportas
+• Rezultatų istorija, vidinių asmenų sandoriai ir analitikų vertinimų tendencijos kiekvienos akcijos puslapyje
+• Portfelis: pirkimai, pelnas, dividendai, vertės kitimas ir valiutų konvertavimas – importas iš CSV arba tiesiog iš jūsų brokerio ekrano kopijos
+• Tikslinis paskirstymas ir ką pirkti ar parduoti, kad grįžtumėte prie tikslo
 • DI portfelio apžvalga: koncentracija, priklausomybė nuo sektorių ir valiutų, bendros rizikos
-• Kainos įspėjimai – ir el. paštu, kai programėlė uždaryta
-• Artėjančios jūsų akcijų rezultatų datos ir savaitinė suvestinė el. paštu
-• Jūsų pačių užrašai apie kiekvieną akciją
+• Kainos įspėjimai ir slankieji stop nurodymai – ir el. paštu, kai programėlė uždaryta
+• Jūsų akcijų rezultatų datos ir priminimai bei savaitinė suvestinė el. paštu
+• Jūsų pačių užrašai apie kiekvieną akciją ir atsarginės kopijos failas, kurį galite pasilikti
 • Prisijunkite el. paštu ir viskas bus sinchronizuota visuose jūsų įrenginiuose
 
 JŪSŲ KOMPIUTERYJE

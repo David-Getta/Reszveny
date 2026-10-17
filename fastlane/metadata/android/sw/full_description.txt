@@ -12,14 +12,17 @@ UCHAMBUZI UNASHUGHULIKIA NINI
 Unachagua kiwango cha undani (kifupi, cha kawaida au cha kina) na kiwango cha ujuzi (mwanzilishi au mzoefu). Baadaye unaweza kuuliza maswali zaidi kuhusu uchambuzi.
 
 FUATILIA KILA KITU
-• Vipendwa na utafutaji wa karibuni, na uchambuzi uliohifadhiwa kwenye kifaa chako
+• Vipendwa katika orodha zako mwenyewe, utafutaji wa karibuni, na uchambuzi wako uliohifadhiwa kwenye kifaa chako
+• Muhtasari wa kila siku wa AI kuhusu jinsi hisa zako zilivyosogea na kwa nini
 • Kilichobadilika tangu uchambuzi uliopita, kwa mtazamo mmoja
 • Linganisha hadi hisa tatu kando kwa kando
-• Jalada la hisa: ununuzi, faida, gawio, thamani kwa muda, ubadilishaji wa sarafu na kuingiza na kuhamisha CSV
+• Historia ya matokeo, miamala ya watu wa ndani na mwenendo wa wachambuzi kwenye ukurasa wa kila hisa
+• Jalada la hisa: ununuzi, faida, gawio, thamani kwa muda na ubadilishaji wa sarafu – ingiza kutoka CSV au kwa urahisi kutoka picha ya skrini ya dalali wako
+• Mgawanyo lengwa, pamoja na nini cha kununua au kuuza ili kurudi kwenye lengo
 • Ukaguzi wa jalada kwa AI: mkusanyiko, kutegemea sekta na sarafu, hatari zinazoshirikiwa
-• Arifa za bei – pia kwa barua pepe programu ikiwa imefungwa
-• Tarehe zijazo za matokeo ya hisa zako, na muhtasari wa kila wiki kwa barua pepe
-• Madokezo yako mwenyewe kwa kila hisa
+• Arifa za bei, pamoja na trailing stop – pia kwa barua pepe programu ikiwa imefungwa
+• Tarehe za matokeo na vikumbusho kwa hisa zako, na muhtasari wa kila wiki kwa barua pepe
+• Madokezo yako mwenyewe kwa kila hisa, na faili ya nakala rudufu unayoweza kuhifadhi
 • Ingia kwa barua pepe yako ili kila kitu kisawazishwe kwenye vifaa vyako vyote
 
 KWENYE KOMPYUTA

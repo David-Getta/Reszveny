@@ -12,14 +12,17 @@ Logo tvrtke na izlogu, snimka zaslona vaše brokerske aplikacije, tablica tečaj
 Vi birate dubinu (kratko, standardno ili detaljno) i razinu (početnik ili iskusni). Nakon toga možete postavljati pitanja o analizi.
 
 PRATITE SVE
-• Favoriti i nedavna pretraživanja, s analizama spremljenima na vašem uređaju
+• Favoriti na vlastitim popisima, nedavna pretraživanja i vaše analize spremljene na uređaju
+• Dnevni AI sažetak o tome kako su se vaše dionice kretale i zašto
 • Što se promijenilo od posljednje analize, na prvi pogled
 • Usporedba do tri dionice jedne uz drugu
-• Portfelj: kupnje, dobici, dividende, kretanje vrijednosti, preračunavanje valuta te uvoz i izvoz CSV-a
+• Povijest rezultata, transakcije insajdera i trendovi analitičara na stranici svake dionice
+• Portfelj: kupnje, dobici, dividende, kretanje vrijednosti i preračunavanje valuta – uvoz iz CSV-a ili jednostavno iz snimke zaslona vašeg brokera
+• Ciljana raspodjela, uz ono što treba kupiti ili prodati da se vratite na cilj
 • AI pregled portfelja: koncentracija, izloženost sektorima i valutama, zajednički rizici
-• Obavijesti o cijeni – i e-poštom kad je aplikacija zatvorena
-• Nadolazeći datumi rezultata za vaše dionice i tjedni sažetak e-poštom
-• Vlastite bilješke za svaku dionicu
+• Obavijesti o cijeni, uključujući pomične stopove – i e-poštom kad je aplikacija zatvorena
+• Datumi rezultata i podsjetnici za vaše dionice te tjedni sažetak e-poštom
+• Vlastite bilješke za svaku dionicu i sigurnosna kopija u datoteci koju možete čuvati
 • Prijavite se e-poštom i sve će biti sinkronizirano na svim vašim uređajima
 
 NA VAŠEM RAČUNALU

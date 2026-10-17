@@ -12,14 +12,17 @@ WAS DIE ANALYSE ABDECKT
 Du wählst die Tiefe (kurz, standard oder ausführlich) und das Niveau (Einsteiger oder erfahren). Danach kannst du Rückfragen zur Analyse stellen.
 
 IM BLICK BEHALTEN
-• Favoriten und letzte Suchen, mit den Analysen auf deinem Gerät gespeichert
+• Favoriten in eigenen Listen, letzte Suchen und deine Analysen auf deinem Gerät gespeichert
+• Eine tägliche KI-Zusammenfassung, wie sich deine Aktien bewegt haben und warum
 • Was sich seit der letzten Analyse geändert hat – auf einen Blick
 • Bis zu drei Aktien nebeneinander vergleichen
-• Portfolio: Käufe, Gewinne, Dividenden, Wertentwicklung, Währungsumrechnung sowie CSV-Import und -Export
+• Historie der Quartalszahlen, Insidergeschäfte und Analystentrends auf jeder Aktienseite
+• Portfolio: Käufe, Gewinne, Dividenden, Wertentwicklung und Währungsumrechnung – Import per CSV oder einfach per Screenshot deines Brokers
+• Zielaufteilung, mit dem, was du kaufen oder verkaufen musst, um wieder im Ziel zu liegen
 • KI-Portfoliocheck: Konzentration, Sektor- und Währungsrisiko, gemeinsame Risiken
-• Kursalarme – auch per E-Mail, wenn die App geschlossen ist
-• Anstehende Termine für Quartalszahlen deiner Aktien und eine wöchentliche Zusammenfassung per E-Mail
-• Eigene Notizen zu jeder Aktie
+• Kursalarme, auch Trailing Stops – auch per E-Mail, wenn die App geschlossen ist
+• Termine für Quartalszahlen deiner Aktien mit Erinnerungen und eine wöchentliche Zusammenfassung per E-Mail
+• Eigene Notizen zu jeder Aktie und eine Sicherungsdatei zum Aufbewahren
 • Melde dich mit deiner E-Mail an, damit alles auf all deinen Geräten synchron bleibt
 
 AUF DEINEM COMPUTER

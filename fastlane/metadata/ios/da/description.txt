@@ -12,14 +12,17 @@ DET DÆKKER ANALYSEN
 Du vælger dybden (kort, standard eller grundig) og niveauet (begynder eller erfaren). Bagefter kan du stille opfølgende spørgsmål til analysen.
 
 HOLD ØJE
-• Favoritter og seneste søgninger, med analyserne gemt på din enhed
+• Favoritter i dine egne lister, seneste søgninger og dine analyser gemt på din enhed
+• Et dagligt AI-resumé af, hvordan dine aktier har bevæget sig, og hvorfor
 • Hvad der har ændret sig siden sidste analyse – med ét blik
 • Sammenlign op til tre aktier side om side
-• Portefølje: køb, gevinster, udbytte, værdiudvikling, valutaomregning og CSV-import og -eksport
+• Regnskabshistorik, insiderhandler og analytikertendenser på hver akties side
+• Portefølje: køb, gevinster, udbytte, værdiudvikling og valutaomregning – importér fra CSV eller blot fra et skærmbillede fra din mægler
+• Målfordeling, med hvad du skal købe eller sælge for at komme tilbage på sporet
 • AI-gennemgang af porteføljen: koncentration, sektor- og valutaeksponering, fælles risici
-• Kursalarmer – også på e-mail, når appen er lukket
-• Kommende regnskabsdatoer for dine aktier og en ugentlig opsummering på e-mail
-• Dine egne noter til hver aktie
+• Kursalarmer, også trailing stops – også på e-mail, når appen er lukket
+• Regnskabsdatoer og påmindelser for dine aktier og en ugentlig opsummering på e-mail
+• Dine egne noter til hver aktie og en backupfil, du kan gemme
 • Log ind med din e-mail, og hav alt synkroniseret på alle dine enheder
 
 PÅ DIN COMPUTER

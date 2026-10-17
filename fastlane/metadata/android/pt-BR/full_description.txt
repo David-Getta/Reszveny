@@ -12,14 +12,17 @@ O QUE A ANÁLISE COBRE
 Você escolhe a profundidade (resumida, padrão ou detalhada) e o nível (iniciante ou experiente). Depois, pode fazer outras perguntas sobre a análise.
 
 ACOMPANHE TUDO
-• Favoritos e buscas recentes, com as análises salvas no seu dispositivo
+• Favoritos nas suas próprias listas, buscas recentes e suas análises salvas no seu dispositivo
+• Um resumo diário com IA de como suas ações se movimentaram e por quê
 • O que mudou desde a última análise, num piscar de olhos
 • Compare até três ações lado a lado
-• Carteira: compras, ganhos, dividendos, evolução do patrimônio, conversão de moeda e importação e exportação em CSV
+• Histórico de balanços, negociações de insiders e tendências dos analistas na página de cada ação
+• Carteira: compras, ganhos, dividendos, evolução do patrimônio e conversão de moeda – importe de um CSV ou simplesmente de uma captura de tela da sua corretora
+• Alocação-alvo, mostrando o que comprar ou vender para voltar ao alvo
 • Revisão da carteira com IA: concentração, exposição a setores e moedas, riscos em comum
-• Alertas de preço – também por e-mail quando o aplicativo está fechado
-• Próximas datas de balanço das suas ações e um resumo semanal por e-mail
-• Suas próprias anotações sobre cada ação
+• Alertas de preço e stop móvel – também por e-mail quando o aplicativo está fechado
+• Datas de balanço e lembretes para suas ações, e um resumo semanal por e-mail
+• Suas próprias anotações sobre cada ação, e um arquivo de backup que você pode guardar
 • Entre com seu e-mail para manter tudo sincronizado em todos os seus dispositivos
 
 NO SEU COMPUTADOR

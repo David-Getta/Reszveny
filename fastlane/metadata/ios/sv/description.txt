@@ -12,14 +12,17 @@ DET HÄR TAR ANALYSEN UPP
 Du väljer djup (kort, standard eller fördjupad) och nivå (nybörjare eller erfaren). Efteråt kan du ställa följdfrågor om analysen.
 
 HÅLL KOLL
-• Favoriter och senaste sökningar, med analyserna sparade på din enhet
+• Favoriter i egna listor, senaste sökningar och dina analyser sparade på din enhet
+• En daglig AI-sammanfattning av hur dina aktier rört sig och varför
 • Vad som har ändrats sedan förra analysen, i en överblick
 • Jämför upp till tre aktier sida vid sida
-• Portfölj: köp, avkastning, utdelningar, värde över tid, valutaomräkning samt import och export av CSV
+• Rapporthistorik, insiderhandel och analytikertrender på varje akties sida
+• Portfölj: köp, avkastning, utdelningar, värde över tid och valutaomräkning – importera från CSV eller helt enkelt från en skärmbild från din mäklare
+• Målfördelning, med vad du behöver köpa eller sälja för att komma tillbaka till målet
 • AI-genomgång av portföljen: koncentration, sektor- och valutaexponering, gemensamma risker
-• Kurslarm – även via e-post när appen är stängd
-• Kommande rapportdatum för dina aktier och en veckosammanfattning via e-post
-• Egna anteckningar om varje aktie
+• Kurslarm och släpande stopp – även via e-post när appen är stängd
+• Rapportdatum och påminnelser för dina aktier, och en veckosammanfattning via e-post
+• Egna anteckningar om varje aktie, och en säkerhetskopia som fil som du kan spara
 • Logga in med din e-post så synkas allt på alla dina enheter
 
 PÅ DATORN

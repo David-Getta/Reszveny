@@ -12,14 +12,17 @@ WAT DIE ONTLEDING DEK
 Jy kies die diepte (kort, standaard of diep) en die vlak (beginner of ervare). Daarna kan jy opvolgvrae oor die ontleding vra.
 
 BLY OP HOOGTE
-• Gunstelinge en onlangse soektogte, met die ontledings op jou toestel gestoor
+• Gunstelinge in jou eie lyste, onlangse soektogte, en jou ontledings op jou toestel gestoor
+• ’n Daaglikse AI-opsomming van hoe jou aandele beweeg het, en hoekom
 • Wat sedert die vorige ontleding verander het, in een oogopslag
 • Vergelyk tot drie aandele langs mekaar
-• Portefeulje: aankope, winste, dividende, waarde oor tyd, valuta-omskakeling en CSV-invoer en -uitvoer
+• Resultategeskiedenis, insider-transaksies en ontledertendense op elke aandeelblad
+• Portefeulje: aankope, winste, dividende, waarde oor tyd en valuta-omskakeling – voer in uit CSV of sommer uit ’n skermskoot van jou makelaar
+• Teikentoewysing, met wat om te koop of te verkoop om weer op koers te kom
 • AI-portefeuljeoorsig: konsentrasie, sektor- en valuta-blootstelling, gedeelde risiko’s
-• Pryswaarskuwings – ook per e-pos wanneer die app toe is
-• Komende resultatedatums vir jou aandele, en ’n weeklikse opsomming per e-pos
-• Jou eie notas oor elke aandeel
+• Pryswaarskuwings, ook volgstoppe – ook per e-pos wanneer die app toe is
+• Resultatedatums en herinneringe vir jou aandele, en ’n weeklikse opsomming per e-pos
+• Jou eie notas oor elke aandeel, en ’n rugsteunlêer wat jy kan hou
 • Meld aan met jou e-pos om alles op al jou toestelle gesinkroniseer te hou
 
 OP JOU REKENAAR

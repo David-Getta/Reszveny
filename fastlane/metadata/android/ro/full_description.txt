@@ -12,14 +12,17 @@ CE ACOPERĂ ANALIZA
 Tu alegi profunzimea (scurtă, standard sau detaliată) și nivelul (începător sau experimentat). Apoi poți pune întrebări suplimentare despre analiză.
 
 ȚINE EVIDENȚA
-• Favorite și căutări recente, cu analizele salvate pe dispozitivul tău
+• Favorite în propriile liste, căutări recente și analizele tale salvate pe dispozitiv
+• Un rezumat zilnic AI despre cum au evoluat acțiunile tale și de ce
 • Ce s-a schimbat de la ultima analiză, dintr-o privire
 • Compară până la trei acțiuni una lângă alta
-• Portofoliu: achiziții, câștiguri, dividende, evoluția valorii, conversie valutară și import și export CSV
+• Istoricul rezultatelor, tranzacțiile insiderilor și tendințele analiștilor pe pagina fiecărei acțiuni
+• Portofoliu: achiziții, câștiguri, dividende, evoluția valorii și conversie valutară – import din CSV sau pur și simplu dintr-o captură de ecran de la brokerul tău
+• Alocare-țintă, cu ce să cumperi sau să vinzi ca să revii la țintă
 • Analiza AI a portofoliului: concentrare, expunere pe sectoare și valute, riscuri comune
-• Alerte de preț – și pe e-mail când aplicația e închisă
-• Datele următoarelor rezultate pentru acțiunile tale și un rezumat săptămânal pe e-mail
-• Notițele tale pentru fiecare acțiune
+• Alerte de preț, inclusiv trailing stop – și pe e-mail când aplicația e închisă
+• Datele rezultatelor și mementouri pentru acțiunile tale, plus un rezumat săptămânal pe e-mail
+• Notițele tale pentru fiecare acțiune și un fișier de backup pe care îl poți păstra
 • Conectează-te cu adresa de e-mail ca să ai totul sincronizat pe toate dispozitivele tale
 
 PE CALCULATORUL TĂU

@@ -12,14 +12,17 @@ Logo firmy na výklade, snímka obrazovky z vašej brokerskej aplikácie, kurzov
 Hĺbku (stručná, štandardná alebo podrobná) aj úroveň (začiatočník alebo skúsený) si vyberáte sami. Potom sa môžete na analýzu doplňujúco pýtať.
 
 MAJTE PREHĽAD
-• Obľúbené a nedávne vyhľadávania, analýzy uložené vo vašom zariadení
+• Obľúbené vo vlastných zoznamoch, nedávne vyhľadávania a analýzy uložené vo vašom zariadení
+• Denný AI súhrn o tom, ako sa vaše akcie hýbali a prečo
 • Čo sa zmenilo od poslednej analýzy, na prvý pohľad
 • Porovnanie až troch akcií vedľa seba
-• Portfólio: nákupy, zisky, dividendy, vývoj hodnoty, prepočet mien a import a export CSV
+• História výsledkov, obchody insiderov a vývoj odporúčaní analytikov na stránke každej akcie
+• Portfólio: nákupy, zisky, dividendy, vývoj hodnoty a prepočet mien – import z CSV alebo jednoducho zo snímky obrazovky od vášho brokera
+• Cieľová alokácia a čo kúpiť alebo predať, aby ste sa k nej vrátili
 • AI kontrola portfólia: koncentrácia, expozícia voči sektorom a menám, spoločné riziká
-• Cenové upozornenia – aj e-mailom, keď je aplikácia zatvorená
-• Nadchádzajúce termíny výsledkov vašich akcií a týždenný súhrn e-mailom
-• Vlastné poznámky ku každej akcii
+• Cenové upozornenia aj s posuvným stop-lossom – aj e-mailom, keď je aplikácia zatvorená
+• Termíny výsledkov vašich akcií s pripomienkami a týždenný súhrn e-mailom
+• Vlastné poznámky ku každej akcii a záložný súbor, ktorý si môžete uchovať
 • Prihláste sa e-mailom a všetko sa synchronizuje na všetkých vašich zariadeniach
 
 NA POČÍTAČI

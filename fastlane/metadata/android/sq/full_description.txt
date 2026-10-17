@@ -12,14 +12,17 @@ Logoja e një kompanie në vitrinë, një pamje ekrani nga aplikacioni juaj i br
 Ju zgjidhni thellësinë (e shkurtër, standarde ose e thellë) dhe nivelin (fillestar ose me përvojë). Më pas mund të bëni pyetje shtesë për analizën.
 
 NDIQNI GJITHÇKA
-• Të preferuarat dhe kërkimet e fundit, me analizat të ruajtura në pajisjen tuaj
+• Të preferuarat në listat tuaja, kërkimet e fundit dhe analizat tuaja të ruajtura në pajisje
+• Një përmbledhje ditore me AI se si lëvizën aksionet tuaja dhe pse
 • Çfarë ka ndryshuar që nga analiza e fundit, me një shikim
 • Krahasoni deri në tre aksione krah për krah
-• Portofoli: blerjet, fitimet, dividendët, vlera në kohë, konvertimi i monedhave dhe importi e eksporti CSV
+• Historiku i rezultateve, transaksionet e insiderëve dhe tendencat e analistëve në faqen e çdo aksioni
+• Portofoli: blerjet, fitimet, dividendët, vlera në kohë dhe konvertimi i monedhave – importoni nga CSV ose thjesht nga një pamje ekrani e brokerit tuaj
+• Shpërndarja e synuar, me atë që duhet blerë ose shitur për t'u rikthyer te objektivi
 • Rishikim i portofolit me AI: përqendrimi, ekspozimi ndaj sektorëve dhe monedhave, rreziqet e përbashkëta
-• Alarmet e çmimit – edhe me e-mail kur aplikacioni është i mbyllur
-• Datat e ardhshme të rezultateve për aksionet tuaja dhe një përmbledhje javore me e-mail
-• Shënimet tuaja për çdo aksion
+• Alarmet e çmimit dhe stop-et lëvizëse – edhe me e-mail kur aplikacioni është i mbyllur
+• Datat e rezultateve dhe kujtesat për aksionet tuaja, si dhe një përmbledhje javore me e-mail
+• Shënimet tuaja për çdo aksion dhe një skedar kopjeje rezervë që mund ta ruani
 • Hyni me e-mailin tuaj dhe gjithçka sinkronizohet në të gjitha pajisjet tuaja
 
 NË KOMPJUTER

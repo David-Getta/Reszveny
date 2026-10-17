@@ -12,14 +12,17 @@ O QUE A ANÁLISE ABRANGE
 Pode escolher a profundidade (breve, normal ou aprofundada) e o nível (principiante ou experiente). Depois, pode fazer perguntas adicionais sobre a análise.
 
 ACOMPANHE TUDO
-• Favoritos e pesquisas recentes, com as análises guardadas no seu dispositivo
+• Favoritos nas suas próprias listas, pesquisas recentes e as suas análises guardadas no dispositivo
+• Um resumo diário com IA de como as suas ações se moveram e porquê
 • O que mudou desde a última análise, num relance
 • Compare até três ações lado a lado
-• Carteira: compras, ganhos, dividendos, evolução do valor, conversão de moeda e importação e exportação CSV
+• Histórico de resultados, transações de insiders e tendências dos analistas na página de cada ação
+• Carteira: compras, ganhos, dividendos, evolução do valor e conversão de moeda – importe de um CSV ou simplesmente de uma captura de ecrã da sua corretora
+• Alocação-alvo, com o que comprar ou vender para voltar ao objetivo
 • Revisão da carteira com IA: concentração, exposição a setores e moedas, riscos comuns
-• Alertas de preço – também por e-mail com a aplicação fechada
-• Próximas datas de resultados das suas ações e um resumo semanal por e-mail
-• As suas próprias notas sobre cada ação
+• Alertas de preço e stops móveis – também por e-mail com a aplicação fechada
+• Datas de resultados e lembretes para as suas ações, e um resumo semanal por e-mail
+• As suas próprias notas sobre cada ação, e um ficheiro de cópia de segurança que pode guardar
 • Inicie sessão com o seu e-mail para manter tudo sincronizado em todos os seus dispositivos
 
 NO SEU COMPUTADOR

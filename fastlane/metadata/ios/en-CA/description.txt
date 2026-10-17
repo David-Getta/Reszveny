@@ -12,14 +12,17 @@ WHAT THE ANALYSIS COVERS
 You choose the depth (brief, standard or deep) and the level (beginner or experienced). Afterwards you can ask follow-up questions about the analysis.
 
 KEEP TRACK
-• Favorites and recent searches, with the analyses saved on your device
+• Favorites in your own lists, recent searches, and your analyses saved on your device
+• A daily AI summary of how your stocks moved and why
 • What changed since the last analysis, at a glance
 • Compare up to three stocks side by side
-• Portfolio: purchases, gains, dividends, value over time, currency conversion and CSV import and export
+• Results history, insider trades and analyst trends on every stock page
+• Portfolio: purchases, gains, dividends, value over time and currency conversion – import from CSV or simply from a screenshot of your broker
+• Target allocation, with what to buy or sell to get back on target
 • AI portfolio review: concentration, sector and currency exposure, shared risks
-• Price alerts – also by e-mail when the app is closed
-• Upcoming results dates for your stocks, and a weekly summary by e-mail
-• Your own notes on each stock
+• Price alerts, trailing stops too – also by e-mail when the app is closed
+• Results dates and reminders for your stocks, and a weekly summary by e-mail
+• Your own notes on each stock, and a backup file you can keep
 • Sign in with your e-mail to keep everything in sync on all your devices
 
 ON YOUR COMPUTER

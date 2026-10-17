@@ -512,4 +512,27 @@ void main() {
       findsOneWidget,
     );
   });
+
+  testWidgets('target rows fit a narrow phone with large text', (tester) async {
+    tester.view.physicalSize = const Size(340, 3000);
+    tester.view.devicePixelRatio = 1;
+    tester.platformDispatcher.textScaleFactorTestValue = 1.5;
+    addTearDown(tester.view.reset);
+    addTearDown(tester.platformDispatcher.clearTextScaleFactorTestValue);
+    final s = services();
+    await s.portfolio.add(symbol: 'AAPL', quantity: 1000, price: 200, currency: 'USD');
+    await s.portfolio.add(symbol: 'MSFT', quantity: 2, price: 400, currency: 'USD');
+    await s.preferences.setTargets({'AAPL': 50, 'MSFT': 50});
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Portfolio').last);
+    await tester.pumpAndSettle();
+    final row = find.byKey(const ValueKey('target-MSFT'));
+    for (var i = 0; i < 10 && row.evaluate().isEmpty; i++) {
+      await tester.drag(find.byType(Scrollable).first, const Offset(0, -300));
+      await tester.pumpAndSettle();
+    }
+    expect(row, findsOneWidget);
+    expect(tester.takeException(), isNull);
+  });
 }

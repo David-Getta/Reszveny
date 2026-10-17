@@ -206,8 +206,15 @@ class _PriceChartState extends State<PriceChart> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(widget.fmt.date(points.first.time), style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
-              Text(widget.fmt.date(points.last.time), style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+              for (final t in [points.first.time, points.last.time])
+                Flexible(
+                  child: Text(
+                    widget.fmt.date(t),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                  ),
+                ),
             ],
           ),
       ],

@@ -12,14 +12,17 @@ OKUQUKETHWE UHLAZIYO
 Ukhetha ukujula (okufushane, okujwayelekile noma okujulile) nezinga (oqalayo noma onolwazi). Ngemuva kwalokho ungabuza imibuzo eyengeziwe ngohlaziyo.
 
 LANDELELA KONKE
-• Izintandokazi nosesho lwakamuva, nohlaziyo olugcinwe kudivayisi yakho
+• Izintandokazi ohlwini lwakho, usesho lwakamuva, nohlaziyo lwakho olugcinwe kudivayisi yakho
+• Isifinyezo se-AI sansuku zonke sokuthi amasheya akho ahambe kanjani nokuthi kungani
 • Okushintshile kusukela ohlaziyweni lokugcina, ngokubuka nje
 • Qhathanisa amasheya afika kwamathathu eceleni komunye nomunye
-• Iphothifoliyo: ukuthenga, inzuzo, izabelo, inani ngokuhamba kwesikhathi, ukuguqulwa kwemali kanye nokungenisa nokukhipha i-CSV
+• Umlando wemiphumela, ukuhweba kwabangaphakathi nokuthambekela kwabahlaziyi ekhasini lesheya ngalinye
+• Iphothifoliyo: ukuthenga, inzuzo, izabelo, inani ngokuhamba kwesikhathi nokuguqulwa kwemali – ngenisa kusuka ku-CSV noma nje esithombeni-skrini somthengisi wakho wamasheya
+• Ukwabiwa okuhlosiwe, nokuthi yini okufanele uyithenge noma uyithengise ukuze ubuyele kokuhlosiwe
 • Ukubuyekezwa kwephothifoliyo nge-AI: ukugxila, ukuncika emikhakheni nasezimalini, izingozi ezihlanganyelwe
-• Izexwayiso zentengo – nange-imeyili uma uhlelo luvaliwe
-• Izinsuku ezizayo zemiphumela yamasheya akho, nesifinyezo samasonto onke nge-imeyili
-• Amanothi akho ngesheya ngalinye
+• Izexwayiso zentengo, nama-trailing stop – nange-imeyili uma uhlelo luvaliwe
+• Izinsuku zemiphumela nezikhumbuzo zamasheya akho, nesifinyezo samasonto onke nge-imeyili
+• Amanothi akho ngesheya ngalinye, nefayela lesipele ongaligcina
 • Ngena nge-imeyili yakho ukuze konke kuvumelaniswe kuwo wonke amadivayisi akho
 
 EKHOMPYUTHENI YAKHO

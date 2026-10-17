@@ -12,14 +12,17 @@ KO APTVER ANALĪZE
 Jūs izvēlaties dziļumu (īsa, standarta vai padziļināta) un līmeni (iesācējs vai pieredzējis). Pēc tam varat uzdot papildu jautājumus par analīzi.
 
 SEKOJIET LĪDZI
-• Izlase un nesenie meklējumi, analīzes saglabātas jūsu ierīcē
+• Izlase jūsu pašu sarakstos, nesenie meklējumi, analīzes saglabātas jūsu ierīcē
+• Ikdienas AI kopsavilkums par to, kā mainījās jūsu akcijas un kāpēc
 • Vienā mirklī redzams, kas mainījies kopš pēdējās analīzes
 • Līdz trim akcijām salīdzinājumā blakus
-• Portfelis: pirkumi, peļņa, dividendes, vērtības izmaiņas laika gaitā, valūtas konvertēšana un CSV imports un eksports
+• Rezultātu vēsture, iekšējo personu darījumi un analītiķu vērtējumu tendences katras akcijas lapā
+• Portfelis: pirkumi, peļņa, dividendes, vērtības izmaiņas laika gaitā un valūtas konvertēšana – imports no CSV vai vienkārši no jūsu brokera ekrānuzņēmuma
+• Mērķa sadalījums un tas, ko pirkt vai pārdot, lai atgrieztos pie mērķa
 • AI portfeļa pārskats: koncentrācija, nozaru un valūtu ekspozīcija, kopīgie riski
-• Cenu brīdinājumi – arī e-pastā, kad lietotne ir aizvērta
-• Jūsu akciju gaidāmie rezultātu datumi un iknedēļas kopsavilkums e-pastā
-• Jūsu piezīmes par katru akciju
+• Cenu brīdinājumi un slīdošie stop rīkojumi – arī e-pastā, kad lietotne ir aizvērta
+• Jūsu akciju rezultātu datumi un atgādinājumi, kā arī iknedēļas kopsavilkums e-pastā
+• Jūsu piezīmes par katru akciju un rezerves kopijas fails, ko varat paturēt
 • Piesakieties ar e-pastu, lai viss būtu sinhronizēts visās jūsu ierīcēs
 
 JŪSU DATORĀ

@@ -12,14 +12,17 @@ WAT DE ANALYSE BEHANDELT
 Jij kiest de diepgang (kort, standaard of uitgebreid) en het niveau (beginner of ervaren). Daarna kun je vervolgvragen stellen over de analyse.
 
 HOUD HET BIJ
-• Favorieten en recente zoekopdrachten, met de analyses opgeslagen op je apparaat
+• Favorieten in je eigen lijsten, recente zoekopdrachten en je analyses opgeslagen op je apparaat
+• Een dagelijkse AI-samenvatting van hoe je aandelen bewogen en waarom
 • In één oogopslag wat er sinds de vorige analyse is veranderd
 • Vergelijk tot drie aandelen naast elkaar
-• Portefeuille: aankopen, rendement, dividend, waardeverloop, valutaomrekening en CSV-import en -export
+• Cijferhistorie, insidertransacties en analistentrends op elke aandelenpagina
+• Portefeuille: aankopen, rendement, dividend, waardeverloop en valutaomrekening – importeer uit CSV of gewoon vanaf een screenshot van je broker
+• Doelverdeling, met wat je moet kopen of verkopen om weer op koers te komen
 • AI-portefeuillecheck: concentratie, sector- en valutablootstelling, gedeelde risico's
-• Koersalerts – ook per e-mail als de app gesloten is
-• Komende cijferdata van je aandelen en een wekelijkse samenvatting per e-mail
-• Je eigen notities bij elk aandeel
+• Koersalerts en trailing stops – ook per e-mail als de app gesloten is
+• Cijferdata en herinneringen voor je aandelen, en een wekelijkse samenvatting per e-mail
+• Je eigen notities bij elk aandeel, en een back-upbestand dat je kunt bewaren
 • Log in met je e-mailadres en alles blijft gesynchroniseerd op al je apparaten
 
 OP JE COMPUTER

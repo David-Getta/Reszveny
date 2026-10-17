@@ -532,23 +532,27 @@ class _Targets extends StatelessWidget {
                 Padding(
                   key: ValueKey('target-${step.symbol}'),
                   padding: const EdgeInsets.symmetric(vertical: 3),
-                  child: Row(
+                  // Keskeny képernyőn (vagy hosszú összegnél) a teendő a sor alá tördelődik.
+                  child: Wrap(
+                    alignment: WrapAlignment.spaceBetween,
+                    crossAxisAlignment: WrapCrossAlignment.center,
+                    spacing: 12,
+                    runSpacing: 2,
                     children: [
-                      SizedBox(
-                        width: 64,
-                        child: Text(step.symbol, style: const TextStyle(fontWeight: FontWeight.w700)),
-                      ),
-                      Expanded(
-                        child: Row(
-                          children: [
-                            Text(fmt.percent(step.current, decimals: 1), style: muted(theme, p)),
-                            Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 4),
-                              child: Icon(Icons.arrow_forward_rounded, size: 12, color: p.muted),
-                            ),
-                            Text(fmt.percent(step.target, decimals: 1), style: muted(theme, p)),
-                          ],
-                        ),
+                      Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          SizedBox(
+                            width: 64,
+                            child: Text(step.symbol, style: const TextStyle(fontWeight: FontWeight.w700)),
+                          ),
+                          Text(fmt.percent(step.current, decimals: 1), style: muted(theme, p)),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 4),
+                            child: Icon(Icons.arrow_forward_rounded, size: 12, color: p.muted),
+                          ),
+                          Text(fmt.percent(step.target, decimals: 1), style: muted(theme, p)),
+                        ],
                       ),
                       Text(
                         (step.target - step.current).abs() < tolerance
@@ -795,15 +799,22 @@ class _PositionTile extends StatelessWidget {
               ),
             ),
             const SizedBox(width: 8),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                Text(fmt.money(row.value, ccy), style: const TextStyle(fontWeight: FontWeight.w600)),
-                Text(
-                  '${fmt.money(row.gain, ccy, withSign: true, showCurrency: false)} (${fmt.percent(row.gainPercent, withSign: true)})',
-                  style: theme.textTheme.bodySmall?.copyWith(color: gainColor(p, row.gain)),
+            // Keskeny képernyőn a számok kicsinyülnek, nem lógnak ki.
+            Flexible(
+              child: FittedBox(
+                fit: BoxFit.scaleDown,
+                alignment: AlignmentDirectional.centerEnd,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: [
+                    Text(fmt.money(row.value, ccy), style: const TextStyle(fontWeight: FontWeight.w600)),
+                    Text(
+                      '${fmt.money(row.gain, ccy, withSign: true, showCurrency: false)} (${fmt.percent(row.gainPercent, withSign: true)})',
+                      style: theme.textTheme.bodySmall?.copyWith(color: gainColor(p, row.gain)),
+                    ),
+                  ],
                 ),
-              ],
+              ),
             ),
             IconButton(
               key: ValueKey('position-menu-${pos.symbol}'),

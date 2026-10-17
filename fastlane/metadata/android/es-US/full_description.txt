@@ -12,14 +12,17 @@ QUÉ CUBRE EL ANÁLISIS
 Tú eliges la profundidad (breve, estándar o a fondo) y el nivel (principiante o con experiencia). Después puedes hacer preguntas de seguimiento sobre el análisis.
 
 SIGUE TUS ACCIONES
-• Favoritos y búsquedas recientes, con los análisis guardados en tu dispositivo
+• Favoritos en tus propias listas, búsquedas recientes y tus análisis guardados en tu dispositivo
+• Un resumen diario con IA de cómo se han movido tus acciones y por qué
 • Qué ha cambiado desde el último análisis, de un vistazo
 • Compara hasta tres acciones una junto a otra
-• Cartera: compras, ganancias, dividendos, evolución del valor, conversión de divisas e importación y exportación CSV
+• Historial de resultados, operaciones de insiders y tendencias de los analistas en la página de cada acción
+• Cartera: compras, ganancias, dividendos, evolución del valor y conversión de divisas – impórtala desde un CSV o simplemente desde una captura de pantalla de tu bróker
+• Asignación objetivo, con lo que debes comprar o vender para volver a ella
 • Revisión de la cartera con IA: concentración, exposición a sectores y divisas, riesgos compartidos
-• Alertas de precio – también por correo electrónico con la app cerrada
-• Próximas fechas de resultados de tus acciones y un resumen semanal por correo
-• Tus propias notas sobre cada acción
+• Alertas de precio, también stops dinámicos – y por correo electrónico con la app cerrada
+• Fechas de resultados y recordatorios de tus acciones, y un resumen semanal por correo
+• Tus propias notas sobre cada acción y un archivo de copia de seguridad que puedes guardar
 • Inicia sesión con tu correo para tenerlo todo sincronizado en todos tus dispositivos
 
 EN TU ORDENADOR

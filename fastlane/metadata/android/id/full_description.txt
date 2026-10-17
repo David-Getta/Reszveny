@@ -12,14 +12,17 @@ APA YANG DIBAHAS ANALISIS
 Anda memilih kedalaman (ringkas, standar, atau mendalam) dan tingkat (pemula atau berpengalaman). Setelah itu Anda bisa mengajukan pertanyaan lanjutan tentang analisisnya.
 
 PANTAU SEMUANYA
-• Favorit dan pencarian terakhir, dengan analisis tersimpan di perangkat Anda
+• Favorit dalam daftar Anda sendiri, pencarian terakhir, dan analisis yang tersimpan di perangkat Anda
+• Ringkasan AI harian tentang pergerakan saham Anda dan alasannya
 • Apa yang berubah sejak analisis terakhir, dalam sekilas
 • Bandingkan hingga tiga saham berdampingan
-• Portofolio: pembelian, keuntungan, dividen, nilai dari waktu ke waktu, konversi mata uang, serta impor dan ekspor CSV
+• Riwayat laporan keuangan, transaksi orang dalam, dan tren rekomendasi analis di setiap halaman saham
+• Portofolio: pembelian, keuntungan, dividen, nilai dari waktu ke waktu, dan konversi mata uang – impor dari CSV atau cukup dari tangkapan layar aplikasi broker Anda
+• Alokasi target, lengkap dengan apa yang perlu dibeli atau dijual untuk kembali ke target
 • Tinjauan portofolio dengan AI: konsentrasi, eksposur sektor dan mata uang, risiko bersama
-• Peringatan harga – juga lewat email saat aplikasi ditutup
-• Jadwal laporan keuangan saham Anda dan ringkasan mingguan lewat email
-• Catatan pribadi Anda untuk setiap saham
+• Peringatan harga dan trailing stop – juga lewat email saat aplikasi ditutup
+• Jadwal laporan keuangan dan pengingat untuk saham Anda, serta ringkasan mingguan lewat email
+• Catatan pribadi Anda untuk setiap saham, dan file cadangan yang bisa Anda simpan
 • Masuk dengan email Anda agar semuanya tersinkron di semua perangkat Anda
 
 DI KOMPUTER ANDA

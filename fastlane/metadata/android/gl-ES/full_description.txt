@@ -12,14 +12,17 @@ QUE INCLÚE A ANÁLISE
 Ti escolles a profundidade (breve, estándar ou detallada) e o nivel (principiante ou con experiencia). Despois podes facer preguntas sobre a análise.
 
 TODO BAIXO CONTROL
-• Favoritos e buscas recentes, coas análises gardadas no teu dispositivo
+• Favoritos nas túas propias listas, buscas recentes e as túas análises gardadas no dispositivo
+• Un resumo diario con IA de como se moveron as túas accións e por que
 • Que cambiou desde a última análise, dunha ollada
 • Compara ata tres accións lado a lado
-• Carteira: compras, ganancias, dividendos, evolución do valor, conversión de moeda e importación e exportación CSV
+• Historial de resultados, operacións de insiders e tendencias dos analistas na páxina de cada acción
+• Carteira: compras, ganancias, dividendos, evolución do valor e conversión de moeda – impórtaa desde un CSV ou simplemente desde unha captura de pantalla do teu bróker
+• Asignación obxectivo, co que hai que comprar ou vender para volver a ela
 • Revisión da carteira con IA: concentración, exposición por sector e moeda, riscos comúns
-• Alertas de prezo – tamén por correo electrónico coa app pechada
-• Próximas datas de resultados das túas accións e un resumo semanal por correo
-• As túas propias notas sobre cada acción
+• Alertas de prezo, tamén stops dinámicos – e por correo electrónico coa app pechada
+• Datas de resultados e recordatorios das túas accións, e un resumo semanal por correo
+• As túas propias notas sobre cada acción, e un ficheiro de copia de seguridade que podes gardar
 • Inicia sesión co teu correo para ter todo sincronizado en todos os teus dispositivos
 
 NO TEU ORDENADOR

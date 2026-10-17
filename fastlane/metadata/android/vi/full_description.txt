@@ -12,14 +12,17 @@ PHÂN TÍCH BAO GỒM NHỮNG GÌ
 Bạn chọn độ sâu (ngắn gọn, tiêu chuẩn hoặc chuyên sâu) và trình độ (mới bắt đầu hoặc có kinh nghiệm). Sau đó, bạn có thể đặt thêm câu hỏi về bản phân tích.
 
 THEO DÕI DỄ DÀNG
-• Yêu thích và tìm kiếm gần đây, các bản phân tích được lưu trên thiết bị của bạn
+• Yêu thích trong các danh sách riêng của bạn, tìm kiếm gần đây và các bản phân tích được lưu trên thiết bị của bạn
+• Bản tóm tắt AI hằng ngày về việc cổ phiếu của bạn đã biến động thế nào và vì sao
 • Những gì đã thay đổi kể từ lần phân tích trước, chỉ trong nháy mắt
 • So sánh tối đa ba cổ phiếu cạnh nhau
-• Danh mục: giao dịch mua, lãi lỗ, cổ tức, giá trị theo thời gian, quy đổi tiền tệ, nhập và xuất CSV
+• Lịch sử kết quả kinh doanh, giao dịch nội bộ và xu hướng đánh giá của giới phân tích trên trang của mỗi cổ phiếu
+• Danh mục: giao dịch mua, lãi lỗ, cổ tức, giá trị theo thời gian và quy đổi tiền tệ – nhập từ CSV hoặc đơn giản từ ảnh chụp màn hình của công ty môi giới
+• Tỷ trọng mục tiêu, kèm gợi ý nên mua hoặc bán gì để quay về mục tiêu
 • Đánh giá danh mục bằng AI: mức độ tập trung, tỷ trọng theo ngành và tiền tệ, rủi ro chung
-• Cảnh báo giá – cả qua email khi ứng dụng đã đóng
-• Ngày công bố kết quả sắp tới của các cổ phiếu của bạn, và bản tóm tắt hằng tuần qua email
-• Ghi chú riêng cho từng cổ phiếu
+• Cảnh báo giá và cắt lỗ động (trailing stop) – cả qua email khi ứng dụng đã đóng
+• Ngày công bố kết quả và lời nhắc cho các cổ phiếu của bạn, cùng bản tóm tắt hằng tuần qua email
+• Ghi chú riêng cho từng cổ phiếu và tệp sao lưu bạn có thể giữ lại
 • Đăng nhập bằng email để đồng bộ mọi thứ trên tất cả thiết bị của bạn
 
 TRÊN MÁY TÍNH
