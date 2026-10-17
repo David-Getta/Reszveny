@@ -662,5 +662,6 @@
   "lotRemoved": "Ekyaguliddwa oba ekyatundiddwa kisanguddwawo",
   "alertDeleted": "Okulabula kusanguddwawo",
   "alertsClearTriggered": "Sangulawo okulabula okwakoze",
-  "alertsCleared": "{count, plural, =1{Okulabula 1 kusanguddwawo} other{Okulabula {count} kusanguddwawo}}"
+  "alertsCleared": "{count, plural, =1{Okulabula 1 kusanguddwawo} other{Okulabula {count} kusanguddwawo}}",
+  "homeScreenTitle": "Omuko ogusooka"
 }

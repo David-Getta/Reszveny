@@ -2505,4 +2505,7 @@ class AppLocalizationsCeb extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get homeScreenTitle => 'Panguna nga screen';
 }

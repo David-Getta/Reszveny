@@ -30,10 +30,12 @@ class AppPreferences extends ChangeNotifier {
     this.morningBrief = false,
     this.portfolioMoveAlert = 0,
     this.portfolioGoal,
+    Set<String> hiddenHome = const {},
     this.portfolioMoveNotified,
     List<WatchList> watchLists = const [],
     Map<String, double> targets = const {},
-  }) : _lists = List.of(watchLists),
+  }) : _hiddenHome = Set.of(hiddenHome),
+       _lists = List.of(watchLists),
        _targets = Map.of(targets),
        _recent = List.of(recent),
        _favorites = List.of(favorites) {
@@ -64,6 +66,10 @@ class AppPreferences extends ChangeNotifier {
   static const _portfolioMoveNotifiedKey = 'portfolio_move_notified';
   static const _targetsKey = 'portfolio_targets';
   static const _goalKey = 'portfolio_goal';
+  static const _hiddenHomeKey = 'home_hidden';
+
+  /// A kezdőképernyő elrejthető részei (azonosítók a beállításokhoz).
+  static const homeSections = ['markets', 'brief', 'portfolio', 'favorites', 'events', 'news', 'analyses'];
   static const _listsKey = 'watch_lists';
 
   /// Legfeljebb ennyi saját lista, és egy név legfeljebb ennyi karakter.
@@ -127,6 +133,17 @@ class AppPreferences extends ChangeNotifier {
 
   /// Reggelente magától elkészül a napi összefoglaló (amíg az app fut).
   bool morningBrief;
+
+  final Set<String> _hiddenHome;
+
+  /// Látszik-e a kezdőképernyő adott része (alapból mind).
+  bool showsHome(String section) => !_hiddenHome.contains(section);
+
+  Future<void> setHomeSection(String section, bool visible) async {
+    if (visible ? !_hiddenHome.remove(section) : !_hiddenHome.add(section)) return;
+    notifyListeners();
+    await _save((p) => p.setStringList(_hiddenHomeKey, _hiddenHome.toList()));
+  }
 
   /// A portfólió célértéke és pénzneme (pl. 10 000 000 HUF); `null`, ha nincs.
   ({double amount, String currency})? portfolioGoal;
@@ -232,6 +249,7 @@ class AppPreferences extends ChangeNotifier {
         morningBrief: prefs.getBool(_morningBriefKey) ?? false,
         portfolioMoveAlert: prefs.getDouble(_portfolioMoveKey) ?? 0,
         portfolioGoal: parseGoal(prefs.getString(_goalKey)),
+        hiddenHome: {...?prefs.getStringList(_hiddenHomeKey)},
         portfolioMoveNotified: prefs.getString(_portfolioMoveNotifiedKey),
         watchLists: WatchList.parseAll(prefs.getString(_listsKey)),
         targets: parseTargets(prefs.getString(_targetsKey)),

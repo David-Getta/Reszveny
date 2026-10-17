@@ -2503,4 +2503,7 @@ class AppLocalizationsHy extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get homeScreenTitle => 'Գլխավոր էկրան';
 }

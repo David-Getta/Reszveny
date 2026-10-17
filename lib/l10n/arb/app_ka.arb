@@ -662,5 +662,6 @@
   "lotRemoved": "ტრანზაქცია წაიშალა",
   "alertDeleted": "გაფრთხილება წაიშალა",
   "alertsClearTriggered": "ამოქმედებული გაფრთხილებების გასუფთავება",
-  "alertsCleared": "{count, plural, =1{წაიშალა 1 გაფრთხილება} other{წაიშალა {count} გაფრთხილება}}"
+  "alertsCleared": "{count, plural, =1{წაიშალა 1 გაფრთხილება} other{წაიშალა {count} გაფრთხილება}}",
+  "homeScreenTitle": "მთავარი ეკრანი"
 }

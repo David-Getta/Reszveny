@@ -662,5 +662,6 @@
   "lotRemoved": "Amal pozuldy",
   "alertDeleted": "Duýduryş pozuldy",
   "alertsClearTriggered": "Işlän duýduryşlary arassala",
-  "alertsCleared": "{count, plural, =1{1 duýduryş arassalandy} other{{count} duýduryş arassalandy}}"
+  "alertsCleared": "{count, plural, =1{1 duýduryş arassalandy} other{{count} duýduryş arassalandy}}",
+  "homeScreenTitle": "Baş ekran"
 }

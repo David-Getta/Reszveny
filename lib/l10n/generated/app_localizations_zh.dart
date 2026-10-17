@@ -2381,6 +2381,9 @@ class AppLocalizationsZh extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get homeScreenTitle => '首页';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -4758,4 +4761,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
     );
     return '$_temp0';
   }
+
+  @override
+  String get homeScreenTitle => '主頁';
 }

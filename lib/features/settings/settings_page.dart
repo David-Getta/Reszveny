@@ -308,6 +308,35 @@ class SettingsPage extends StatelessWidget {
                     ),
                   ),
                 ],
+                // A kezdőképernyő részei ki- és bekapcsolhatók.
+                sectionTitle(l10n.homeScreenTitle),
+                Card(
+                  child: ListenableBuilder(
+                    listenable: services.preferences,
+                    builder: (context, _) => Column(
+                      children: [
+                        for (final (i, (id, label)) in [
+                          ('markets', l10n.marketsToday),
+                          ('brief', l10n.briefTitle),
+                          ('portfolio', l10n.portfolio),
+                          ('favorites', l10n.favorites),
+                          ('events', l10n.upcomingEvents),
+                          ('news', l10n.watchNewsTitle),
+                          ('analyses', l10n.myAnalyses),
+                        ].indexed) ...[
+                          if (i > 0) const Divider(height: 1),
+                          SwitchListTile(
+                            key: ValueKey('home-section-$id'),
+                            dense: true,
+                            title: Text(label),
+                            value: services.preferences.showsHome(id),
+                            onChanged: (v) => services.preferences.setHomeSection(id, v),
+                          ),
+                        ],
+                      ],
+                    ),
+                  ),
+                ),
                 sectionTitle(l10n.displayCurrency),
                 Card(
                   child: Padding(

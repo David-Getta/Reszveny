@@ -662,5 +662,6 @@
   "lotRemoved": "Tranzakció törölve",
   "alertDeleted": "Riasztás törölve",
   "alertsClearTriggered": "Teljesült riasztások törlése",
-  "alertsCleared": "{count, plural, =1{1 riasztás törölve} other{{count} riasztás törölve}}"
+  "alertsCleared": "{count, plural, =1{1 riasztás törölve} other{{count} riasztás törölve}}",
+  "homeScreenTitle": "Kezdőképernyő"
 }

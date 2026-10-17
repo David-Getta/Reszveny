@@ -2486,4 +2486,7 @@ class AppLocalizationsPs extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get homeScreenTitle => 'کور پاڼه';
 }

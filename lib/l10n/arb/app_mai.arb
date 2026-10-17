@@ -662,5 +662,6 @@
   "lotRemoved": "लेन-देन मेटाओल गेल",
   "alertDeleted": "अलर्ट मेटाओल गेल",
   "alertsClearTriggered": "ट्रिगर भेल अलर्ट साफ करू",
-  "alertsCleared": "{count, plural, =1{1 अलर्ट साफ कएल गेल} other{{count} अलर्ट साफ कएल गेल}}"
+  "alertsCleared": "{count, plural, =1{1 अलर्ट साफ कएल गेल} other{{count} अलर्ट साफ कएल गेल}}",
+  "homeScreenTitle": "होम स्क्रीन"
 }

@@ -662,5 +662,6 @@
   "lotRemoved": "取引を削除しました",
   "alertDeleted": "アラートを削除しました",
   "alertsClearTriggered": "作動済みのアラートを消去",
-  "alertsCleared": "{count, plural, =1{1 件のアラートを消去しました} other{{count} 件のアラートを消去しました}}"
+  "alertsCleared": "{count, plural, =1{1 件のアラートを消去しました} other{{count} 件のアラートを消去しました}}",
+  "homeScreenTitle": "ホーム画面"
 }

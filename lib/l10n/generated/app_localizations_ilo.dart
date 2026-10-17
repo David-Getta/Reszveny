@@ -2513,4 +2513,7 @@ class AppLocalizationsIlo extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get homeScreenTitle => 'Umuna a screen';
 }

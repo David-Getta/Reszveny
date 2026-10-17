@@ -2502,4 +2502,7 @@ class AppLocalizationsLua extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get homeScreenTitle => 'Dibeji dia kumpala';
 }

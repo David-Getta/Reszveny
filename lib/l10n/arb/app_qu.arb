@@ -662,5 +662,6 @@
   "lotRemoved": "Rantiy rantikuyqa pichasqaña",
   "alertDeleted": "Willay pichasqaña",
   "alertsClearTriggered": "Rikhurirqan willaykunata pichay",
-  "alertsCleared": "{count, plural, =1{1 willay pichasqa} other{{count} willay pichasqa}}"
+  "alertsCleared": "{count, plural, =1{1 willay pichasqa} other{{count} willay pichasqa}}",
+  "homeScreenTitle": "Qallariy pantalla"
 }

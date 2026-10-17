@@ -662,5 +662,6 @@
   "lotRemoved": "Transaksioni u fshi",
   "alertDeleted": "Sinjalizimi u fshi",
   "alertsClearTriggered": "Pastro sinjalizimet e aktivizuara",
-  "alertsCleared": "{count, plural, =1{U pastrua 1 sinjalizim} other{U pastruan {count} sinjalizime}}"
+  "alertsCleared": "{count, plural, =1{U pastrua 1 sinjalizim} other{U pastruan {count} sinjalizime}}",
+  "homeScreenTitle": "Ekrani bazë"
 }

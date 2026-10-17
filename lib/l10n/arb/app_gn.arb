@@ -662,5 +662,6 @@
   "lotRemoved": "Oñemboguete jejogua térã ñemu",
   "alertDeleted": "Oñemboguete momarandu",
   "alertsClearTriggered": "Embogue momarandu oñemyendyvaʼekue",
-  "alertsCleared": "{count, plural, =1{Oñemboguete 1 momarandu} other{Oñemboguete {count} momarandu}}"
+  "alertsCleared": "{count, plural, =1{Oñemboguete 1 momarandu} other{Oñemboguete {count} momarandu}}",
+  "homeScreenTitle": "Ñepyrũha"
 }

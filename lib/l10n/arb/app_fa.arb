@@ -662,5 +662,6 @@
   "lotRemoved": "تراکنش حذف شد",
   "alertDeleted": "هشدار حذف شد",
   "alertsClearTriggered": "پاک کردن هشدارهای فعال‌شده",
-  "alertsCleared": "{count, plural, =1{1 هشدار پاک شد} other{{count} هشدار پاک شد}}"
+  "alertsCleared": "{count, plural, =1{1 هشدار پاک شد} other{{count} هشدار پاک شد}}",
+  "homeScreenTitle": "صفحه اصلی"
 }

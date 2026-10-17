@@ -2500,4 +2500,7 @@ class AppLocalizationsTe extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get homeScreenTitle => 'హోమ్ స్క్రీన్';
 }

@@ -2493,4 +2493,7 @@ class AppLocalizationsYo extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get homeScreenTitle => 'Ojú-ìwé àkọ́kọ́';
 }

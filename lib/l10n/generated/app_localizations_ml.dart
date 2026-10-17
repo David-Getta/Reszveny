@@ -2504,4 +2504,7 @@ class AppLocalizationsMl extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get homeScreenTitle => 'ഹോം സ്ക്രീൻ';
 }

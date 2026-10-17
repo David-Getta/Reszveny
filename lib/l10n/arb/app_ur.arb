@@ -662,5 +662,6 @@
   "lotRemoved": "لین دین حذف کر دیا گیا",
   "alertDeleted": "الرٹ حذف کر دیا گیا",
   "alertsClearTriggered": "متحرک ہونے والے الرٹس صاف کریں",
-  "alertsCleared": "{count, plural, =1{1 الرٹ صاف کر دیا گیا} other{{count} الرٹ صاف کر دیے گئے}}"
+  "alertsCleared": "{count, plural, =1{1 الرٹ صاف کر دیا گیا} other{{count} الرٹ صاف کر دیے گئے}}",
+  "homeScreenTitle": "ہوم اسکرین"
 }

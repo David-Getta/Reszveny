@@ -2468,4 +2468,7 @@ class AppLocalizationsLo extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get homeScreenTitle => 'ໜ້າຫຼັກ';
 }

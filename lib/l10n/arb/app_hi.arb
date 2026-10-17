@@ -662,5 +662,6 @@
   "lotRemoved": "लेन-देन हटाया गया",
   "alertDeleted": "अलर्ट हटाया गया",
   "alertsClearTriggered": "ट्रिगर हुए अलर्ट हटाएँ",
-  "alertsCleared": "{count, plural, =1{1 अलर्ट हटाया गया} other{{count} अलर्ट हटाए गए}}"
+  "alertsCleared": "{count, plural, =1{1 अलर्ट हटाया गया} other{{count} अलर्ट हटाए गए}}",
+  "homeScreenTitle": "होम स्क्रीन"
 }

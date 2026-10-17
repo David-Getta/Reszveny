@@ -662,5 +662,6 @@
   "lotRemoved": "Транзакцията е изтрита",
   "alertDeleted": "Известието е изтрито",
   "alertsClearTriggered": "Изчисти задействаните известия",
-  "alertsCleared": "{count, plural, =1{Изчистено е 1 известие} other{Изчистени са {count} известия}}"
+  "alertsCleared": "{count, plural, =1{Изчистено е 1 известие} other{Изчистени са {count} известия}}",
+  "homeScreenTitle": "Начален екран"
 }

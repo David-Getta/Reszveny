@@ -662,5 +662,6 @@
   "lotRemoved": "Igikorwa cyo kugura cyangwa kugurisha cyasibwe",
   "alertDeleted": "Imenyesha ryasibwe",
   "alertsClearTriggered": "Siba amamenyesha yabaye",
-  "alertsCleared": "{count, plural, =1{Hasibwe imenyesha 1} other{Hasibwe amamenyesha {count}}}"
+  "alertsCleared": "{count, plural, =1{Hasibwe imenyesha 1} other{Hasibwe amamenyesha {count}}}",
+  "homeScreenTitle": "Ahabanza"
 }

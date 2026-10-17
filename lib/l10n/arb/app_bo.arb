@@ -662,5 +662,6 @@
   "lotRemoved": "ཉོ་འཚོང་བསུབས་ཟིན",
   "alertDeleted": "ཉེན་བརྡ་བསུབས་ཟིན",
   "alertsClearTriggered": "འགུལ་སློང་བྱུང་བའི་ཉེན་བརྡ་གཙང་སེལ",
-  "alertsCleared": "{count, plural, =1{ཉེན་བརྡ་ 1 བསུབས་ཟིན།} other{ཉེན་བརྡ་ {count} བསུབས་ཟིན།}}"
+  "alertsCleared": "{count, plural, =1{ཉེན་བརྡ་ 1 བསུབས་ཟིན།} other{ཉེན་བརྡ་ {count} བསུབས་ཟིན།}}",
+  "homeScreenTitle": "གཙོ་ངོས།"
 }

@@ -662,5 +662,6 @@
   "lotRemoved": "Bosombi to boteki elimwisami",
   "alertDeleted": "Likebisi elimwisami",
   "alertsClearTriggered": "Limwisa makebisi oyo esalaki",
-  "alertsCleared": "{count, plural, =1{Likebisi 1 elimwisami} other{Makebisi {count} elimwisami}}"
+  "alertsCleared": "{count, plural, =1{Likebisi 1 elimwisami} other{Makebisi {count} elimwisami}}",
+  "homeScreenTitle": "Lokasa ya liboso"
 }

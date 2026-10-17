@@ -1991,5 +1991,9 @@
         "type": "int"
       }
     }
+  },
+  "homeScreenTitle": "Home screen",
+  "@homeScreenTitle": {
+    "description": "Settings section title: switches to show or hide the parts of the home screen (Markets today, Favorites, News…)."
   }
 }

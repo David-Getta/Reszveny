@@ -662,5 +662,6 @@
   "lotRemoved": "Macaamilka waa la tirtiray",
   "alertDeleted": "Digniinta waa la tirtiray",
   "alertsClearTriggered": "Tirtir digniinaha dhacay",
-  "alertsCleared": "{count, plural, =1{1 digniin ayaa la tirtiray} other{{count} digniin ayaa la tirtiray}}"
+  "alertsCleared": "{count, plural, =1{1 digniin ayaa la tirtiray} other{{count} digniin ayaa la tirtiray}}",
+  "homeScreenTitle": "Bogga hore"
 }

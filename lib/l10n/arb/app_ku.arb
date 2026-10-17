@@ -662,5 +662,6 @@
   "lotRemoved": "Danûstandin hate jêbirin",
   "alertDeleted": "Hişyarî hate jêbirin",
   "alertsClearTriggered": "Hişyariyên çalakbûyî paqij bike",
-  "alertsCleared": "{count, plural, =1{1 hişyarî hate paqijkirin} other{{count} hişyarî hatin paqijkirin}}"
+  "alertsCleared": "{count, plural, =1{1 hişyarî hate paqijkirin} other{{count} hişyarî hatin paqijkirin}}",
+  "homeScreenTitle": "Ekrana sereke"
 }

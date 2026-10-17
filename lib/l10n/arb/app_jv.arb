@@ -662,5 +662,6 @@
   "lotRemoved": "Transaksi wis dibusak",
   "alertDeleted": "Pènget wis dibusak",
   "alertsClearTriggered": "Busak pènget sing wis aktif",
-  "alertsCleared": "{count, plural, =1{1 pènget wis dibusak} other{{count} pènget wis dibusak}}"
+  "alertsCleared": "{count, plural, =1{1 pènget wis dibusak} other{{count} pènget wis dibusak}}",
+  "homeScreenTitle": "Layar utama"
 }

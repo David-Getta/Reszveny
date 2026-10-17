@@ -662,5 +662,6 @@
   "lotRemoved": "Аперацыя выдалена",
   "alertDeleted": "Апавяшчэнне выдалена",
   "alertsClearTriggered": "Ачысціць спрацаваныя апавяшчэнні",
-  "alertsCleared": "{count, plural, =1{Ачышчана 1 апавяшчэнне} one{Ачышчана {count} апавяшчэнне} few{Ачышчана {count} апавяшчэнні} many{Ачышчана {count} апавяшчэнняў} other{Ачышчана {count} апавяшчэння}}"
+  "alertsCleared": "{count, plural, =1{Ачышчана 1 апавяшчэнне} one{Ачышчана {count} апавяшчэнне} few{Ачышчана {count} апавяшчэнні} many{Ачышчана {count} апавяшчэнняў} other{Ачышчана {count} апавяшчэння}}",
+  "homeScreenTitle": "Галоўны экран"
 }

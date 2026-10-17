@@ -662,5 +662,6 @@
   "lotRemoved": "Transaksi dipadam",
   "alertDeleted": "Amaran dipadam",
   "alertsClearTriggered": "Padam amaran yang dicetuskan",
-  "alertsCleared": "{count, plural, =1{1 amaran dipadam} other{{count} amaran dipadam}}"
+  "alertsCleared": "{count, plural, =1{1 amaran dipadam} other{{count} amaran dipadam}}",
+  "homeScreenTitle": "Skrin utama"
 }

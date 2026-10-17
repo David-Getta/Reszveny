@@ -2490,4 +2490,7 @@ class AppLocalizationsGu extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get homeScreenTitle => 'હોમ સ્ક્રીન';
 }

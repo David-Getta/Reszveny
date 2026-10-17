@@ -2504,4 +2504,7 @@ class AppLocalizationsTa extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get homeScreenTitle => 'முகப்புத் திரை';
 }

@@ -662,5 +662,6 @@
   "lotRemoved": "Tranzaksyon efase",
   "alertDeleted": "Alèt la efase",
   "alertsClearTriggered": "Efase alèt ki deklanche yo",
-  "alertsCleared": "{count, plural, =1{1 alèt efase} other{{count} alèt efase}}"
+  "alertsCleared": "{count, plural, =1{1 alèt efase} other{{count} alèt efase}}",
+  "homeScreenTitle": "Ekran akèy"
 }

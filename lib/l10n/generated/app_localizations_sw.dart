@@ -2495,4 +2495,7 @@ class AppLocalizationsSw extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get homeScreenTitle => 'Skrini ya mwanzo';
 }

@@ -2493,4 +2493,7 @@ class AppLocalizationsNe extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get homeScreenTitle => 'होम स्क्रिन';
 }

@@ -2495,4 +2495,7 @@ class AppLocalizationsTk extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get homeScreenTitle => 'Baş ekran';
 }

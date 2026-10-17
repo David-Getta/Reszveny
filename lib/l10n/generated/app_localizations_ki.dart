@@ -2495,4 +2495,7 @@ class AppLocalizationsKi extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get homeScreenTitle => 'Ithangũ rĩa mbere';
 }

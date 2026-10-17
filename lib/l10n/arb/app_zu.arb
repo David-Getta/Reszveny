@@ -662,5 +662,6 @@
   "lotRemoved": "Ukuthenga noma ukuthengisa kususiwe",
   "alertDeleted": "Isexwayiso sisusiwe",
   "alertsClearTriggered": "Sula izexwayiso eziqalisiwe",
-  "alertsCleared": "{count, plural, =1{Kususwe isexwayiso esisodwa} other{Kususwe izexwayiso ezingu-{count}}}"
+  "alertsCleared": "{count, plural, =1{Kususwe isexwayiso esisodwa} other{Kususwe izexwayiso ezingu-{count}}}",
+  "homeScreenTitle": "Isikrini sasekhaya"
 }

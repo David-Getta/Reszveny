@@ -662,5 +662,6 @@
   "lotRemoved": "ልውውጥ ተሰሪዙ",
   "alertDeleted": "መጠንቀቕታ ተሰሪዙ",
   "alertsClearTriggered": "ዝተበገሱ መጠንቀቕታታት ኣጽሪ",
-  "alertsCleared": "{count, plural, =1{1 መጠንቀቕታ ተሰሪዙ} other{{count} መጠንቀቕታታት ተሰሪዞም}}"
+  "alertsCleared": "{count, plural, =1{1 መጠንቀቕታ ተሰሪዙ} other{{count} መጠንቀቕታታት ተሰሪዞም}}",
+  "homeScreenTitle": "መበገሲ ገጽ"
 }

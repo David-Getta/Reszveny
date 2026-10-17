@@ -662,5 +662,6 @@
   "lotRemoved": "Transactie verwijderd",
   "alertDeleted": "Melding verwijderd",
   "alertsClearTriggered": "Afgegane meldingen wissen",
-  "alertsCleared": "{count, plural, =1{1 melding gewist} other{{count} meldingen gewist}}"
+  "alertsCleared": "{count, plural, =1{1 melding gewist} other{{count} meldingen gewist}}",
+  "homeScreenTitle": "Startscherm"
 }

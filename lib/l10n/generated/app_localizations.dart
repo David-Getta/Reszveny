@@ -4314,6 +4314,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{count, plural, =1{1 alert cleared} other{{count} alerts cleared}}'**
   String alertsCleared(int count);
+
+  /// Settings section title: switches to show or hide the parts of the home screen (Markets today, Favorites, News…).
+  ///
+  /// In en, this message translates to:
+  /// **'Home screen'**
+  String get homeScreenTitle;
 }
 
 class _AppLocalizationsDelegate

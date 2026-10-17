@@ -662,5 +662,6 @@
   "lotRemoved": "Wotutu nuƒeƒle alo nudzadzra la",
   "alertDeleted": "Wotutu nuxlɔ̃ame",
   "alertsClearTriggered": "Tutu nuxlɔ̃ame siwo wɔ dɔ",
-  "alertsCleared": "{count, plural, =1{Wotutu nuxlɔ̃ame 1} other{Wotutu nuxlɔ̃ame {count}}}"
+  "alertsCleared": "{count, plural, =1{Wotutu nuxlɔ̃ame 1} other{Wotutu nuxlɔ̃ame {count}}}",
+  "homeScreenTitle": "Axa gbãtɔ"
 }

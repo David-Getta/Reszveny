@@ -662,5 +662,6 @@
   "lotRemoved": "مامەڵەکە سڕایەوە",
   "alertDeleted": "ئاگادارکردنەوە سڕایەوە",
   "alertsClearTriggered": "سڕینەوەی ئاگادارکردنەوە چالاکبووەکان",
-  "alertsCleared": "{count, plural, =1{1 ئاگادارکردنەوە سڕایەوە} other{{count} ئاگادارکردنەوە سڕانەوە}}"
+  "alertsCleared": "{count, plural, =1{1 ئاگادارکردنەوە سڕایەوە} other{{count} ئاگادارکردنەوە سڕانەوە}}",
+  "homeScreenTitle": "شاشەی سەرەکی"
 }

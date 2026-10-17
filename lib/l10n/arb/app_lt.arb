@@ -662,5 +662,6 @@
   "lotRemoved": "Operacija ištrinta",
   "alertDeleted": "Įspėjimas ištrintas",
   "alertsClearTriggered": "Išvalyti suveikusius įspėjimus",
-  "alertsCleared": "{count, plural, =1{Išvalytas 1 įspėjimas} one{Išvalytas {count} įspėjimas} few{Išvalyti {count} įspėjimai} many{Išvalyta {count} įspėjimo} other{Išvalyta {count} įspėjimų}}"
+  "alertsCleared": "{count, plural, =1{Išvalytas 1 įspėjimas} one{Išvalytas {count} įspėjimas} few{Išvalyti {count} įspėjimai} many{Išvalyta {count} įspėjimo} other{Išvalyta {count} įspėjimų}}",
+  "homeScreenTitle": "Pradžios ekranas"
 }

@@ -662,5 +662,6 @@
   "lotRemoved": "İşlem silindi",
   "alertDeleted": "Alarm silindi",
   "alertsClearTriggered": "Tetiklenen alarmları temizle",
-  "alertsCleared": "{count, plural, =1{1 alarm temizlendi} other{{count} alarm temizlendi}}"
+  "alertsCleared": "{count, plural, =1{1 alarm temizlendi} other{{count} alarm temizlendi}}",
+  "homeScreenTitle": "Ana ekran"
 }

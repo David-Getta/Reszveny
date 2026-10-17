@@ -662,5 +662,6 @@
   "lotRemoved": "Wɔapopa adetɔ anaa adetɔn no",
   "alertDeleted": "Wɔapopa kɔkɔbɔ",
   "alertsClearTriggered": "Popa kɔkɔbɔ a ayɛ adwuma",
-  "alertsCleared": "{count, plural, =1{Wɔapopa kɔkɔbɔ 1} other{Wɔapopa kɔkɔbɔ {count}}}"
+  "alertsCleared": "{count, plural, =1{Wɔapopa kɔkɔbɔ 1} other{Wɔapopa kɔkɔbɔ {count}}}",
+  "homeScreenTitle": "Fie skrin"
 }

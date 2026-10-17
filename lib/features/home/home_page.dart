@@ -375,15 +375,27 @@ class _HomePageState extends State<HomePage> {
                   ],
                   if (_results != null)
                     _SearchResults(query: _lastQuery, results: _results!, onTap: widget.onOpenSymbol),
-                  MarketsStrip(onOpenSymbol: widget.onOpenSymbol),
-                  const DailyBriefCard(),
-                  PortfolioSummaryCard(onOpenSymbol: widget.onOpenSymbol),
-                  FavoritesStrip(onOpenSymbol: widget.onOpenSymbol),
-                  // Telefonon nincs oldalsáv: a legutóbbiak itt látszanak.
-                  if (widget.showAppBarActions) RecentChips(onOpenSymbol: widget.onOpenSymbol),
-                  UpcomingEventsSection(onOpenSymbol: widget.onOpenSymbol),
-                  WatchNewsSection(onOpenSymbol: widget.onOpenSymbol),
-                  MyAnalysesList(onOpenSymbol: widget.onOpenSymbol),
+                  // A beállításokban elrejthető részek.
+                  ListenableBuilder(
+                    listenable: services.preferences,
+                    builder: (context, _) {
+                      final show = services.preferences.showsHome;
+                      return Column(
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          if (show('markets')) MarketsStrip(onOpenSymbol: widget.onOpenSymbol),
+                          if (show('brief')) const DailyBriefCard(),
+                          if (show('portfolio')) PortfolioSummaryCard(onOpenSymbol: widget.onOpenSymbol),
+                          if (show('favorites')) FavoritesStrip(onOpenSymbol: widget.onOpenSymbol),
+                          // Telefonon nincs oldalsáv: a legutóbbiak itt látszanak.
+                          if (widget.showAppBarActions) RecentChips(onOpenSymbol: widget.onOpenSymbol),
+                          if (show('events')) UpcomingEventsSection(onOpenSymbol: widget.onOpenSymbol),
+                          if (show('news')) WatchNewsSection(onOpenSymbol: widget.onOpenSymbol),
+                          if (show('analyses')) MyAnalysesList(onOpenSymbol: widget.onOpenSymbol),
+                        ],
+                      );
+                    },
+                  ),
                   const TelemetryConsentCard(),
                   if (services.config.isDemoMode) ...[
                     const SizedBox(height: 24),

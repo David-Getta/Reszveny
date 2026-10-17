@@ -2518,4 +2518,7 @@ class AppLocalizationsGl extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get homeScreenTitle => 'Pantalla de inicio';
 }

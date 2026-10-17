@@ -662,5 +662,6 @@
   "lotRemoved": "បានលុបប្រតិបត្តិការ",
   "alertDeleted": "បានលុបការជូនដំណឹង",
   "alertsClearTriggered": "សម្អាតការជូនដំណឹងដែលបានកើតឡើង",
-  "alertsCleared": "{count, plural, =1{បានសម្អាតការជូនដំណឹង 1} other{បានសម្អាតការជូនដំណឹង {count}}}"
+  "alertsCleared": "{count, plural, =1{បានសម្អាតការជូនដំណឹង 1} other{បានសម្អាតការជូនដំណឹង {count}}}",
+  "homeScreenTitle": "អេក្រង់ដើម"
 }

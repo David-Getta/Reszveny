@@ -2486,4 +2486,7 @@ class AppLocalizationsMy extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get homeScreenTitle => 'ပင်မ မျက်နှာပြင်';
 }

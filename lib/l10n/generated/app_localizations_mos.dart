@@ -2481,4 +2481,7 @@ class AppLocalizationsMos extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get homeScreenTitle => 'Sebr pipi';
 }

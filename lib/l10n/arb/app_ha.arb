@@ -662,5 +662,6 @@
   "lotRemoved": "An share ma'amala",
   "alertDeleted": "An share faɗakarwa",
   "alertsClearTriggered": "Share faɗakarwar da suka tashi",
-  "alertsCleared": "{count, plural, =1{An share faɗakarwa 1} other{An share faɗakarwa {count}}}"
+  "alertsCleared": "{count, plural, =1{An share faɗakarwa 1} other{An share faɗakarwa {count}}}",
+  "homeScreenTitle": "Shafin farko"
 }

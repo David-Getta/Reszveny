@@ -662,5 +662,6 @@
   "lotRemoved": "Transazione eliminata",
   "alertDeleted": "Avviso eliminato",
   "alertsClearTriggered": "Cancella avvisi scattati",
-  "alertsCleared": "{count, plural, =1{1 avviso cancellato} other{{count} avvisi cancellati}}"
+  "alertsCleared": "{count, plural, =1{1 avviso cancellato} other{{count} avvisi cancellati}}",
+  "homeScreenTitle": "Schermata iniziale"
 }

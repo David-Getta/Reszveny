@@ -662,5 +662,6 @@
   "lotRemoved": "S’ha suprimit la transacció",
   "alertDeleted": "S’ha suprimit l’alerta",
   "alertsClearTriggered": "Esborra les alertes activades",
-  "alertsCleared": "{count, plural, =1{S’ha esborrat 1 alerta} other{S’han esborrat {count} alertes}}"
+  "alertsCleared": "{count, plural, =1{S’ha esborrat 1 alerta} other{S’han esborrat {count} alertes}}",
+  "homeScreenTitle": "Pantalla d'inici"
 }

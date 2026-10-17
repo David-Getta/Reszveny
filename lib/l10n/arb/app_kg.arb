@@ -662,5 +662,6 @@
   "lotRemoved": "Kusumba to kuteka me zimbisama",
   "alertDeleted": "Lukebisu me zimbisama",
   "alertsClearTriggered": "Zimbisa bukebisu yina me salaka",
-  "alertsCleared": "{count, plural, =1{Lukebisu 1 me zimbisama} other{Bukebisu {count} me zimbisama}}"
+  "alertsCleared": "{count, plural, =1{Lukebisu 1 me zimbisama} other{Bukebisu {count} me zimbisama}}",
+  "homeScreenTitle": "Lukaya ya ntete"
 }

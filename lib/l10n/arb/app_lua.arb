@@ -662,5 +662,6 @@
   "lotRemoved": "Kusumba anyi kusumbisha kuajimijibua",
   "alertDeleted": "Dimanyisha diajimijibua",
   "alertsClearTriggered": "Jimija mamanyisha avua mambule",
-  "alertsCleared": "{count, plural, =1{Dimanyisha 1 diajimijibua} other{Mamanyisha {count} majimijibua}}"
+  "alertsCleared": "{count, plural, =1{Dimanyisha 1 diajimijibua} other{Mamanyisha {count} majimijibua}}",
+  "homeScreenTitle": "Dibeji dia kumpala"
 }

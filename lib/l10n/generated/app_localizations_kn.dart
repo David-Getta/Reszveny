@@ -2501,4 +2501,7 @@ class AppLocalizationsKn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get homeScreenTitle => 'ಹೋಮ್ ಸ್ಕ್ರೀನ್';
 }

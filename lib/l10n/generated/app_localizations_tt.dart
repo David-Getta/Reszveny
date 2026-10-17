@@ -2493,4 +2493,7 @@ class AppLocalizationsTt extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get homeScreenTitle => 'Баш экран';
 }

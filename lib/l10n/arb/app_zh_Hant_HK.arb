@@ -662,5 +662,6 @@
   "lotRemoved": "已刪除交易記錄",
   "alertDeleted": "已刪除提醒",
   "alertsClearTriggered": "清除已觸發的提醒",
-  "alertsCleared": "{count, plural, =1{已清除 1 個提醒} other{已清除 {count} 個提醒}}"
+  "alertsCleared": "{count, plural, =1{已清除 1 個提醒} other{已清除 {count} 個提醒}}",
+  "homeScreenTitle": "主頁"
 }

@@ -662,5 +662,6 @@
   "lotRemoved": "تم حذف المعاملة",
   "alertDeleted": "تم حذف التنبيه",
   "alertsClearTriggered": "مسح التنبيهات المُفعَّلة",
-  "alertsCleared": "{count, plural, =1{تم مسح تنبيه واحد} =2{تم مسح تنبيهين} few{تم مسح {count} تنبيهات} many{تم مسح {count} تنبيهًا} other{تم مسح {count} تنبيه}}"
+  "alertsCleared": "{count, plural, =1{تم مسح تنبيه واحد} =2{تم مسح تنبيهين} few{تم مسح {count} تنبيهات} many{تم مسح {count} تنبيهًا} other{تم مسح {count} تنبيه}}",
+  "homeScreenTitle": "الشاشة الرئيسية"
 }

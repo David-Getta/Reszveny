@@ -662,5 +662,6 @@
   "lotRemoved": "Transação excluída",
   "alertDeleted": "Alerta excluído",
   "alertsClearTriggered": "Limpar alertas disparados",
-  "alertsCleared": "{count, plural, =1{1 alerta removido} other{{count} alertas removidos}}"
+  "alertsCleared": "{count, plural, =1{1 alerta removido} other{{count} alertas removidos}}",
+  "homeScreenTitle": "Tela inicial"
 }

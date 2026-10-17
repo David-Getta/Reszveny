@@ -662,5 +662,6 @@
   "lotRemoved": "Theko kapa thekiso e hlakotswe",
   "alertDeleted": "Temoso e hlakotswe",
   "alertsClearTriggered": "Hlakola ditemoso tse etsahetseng",
-  "alertsCleared": "{count, plural, =1{Ho hlakotswe temoso e le nngwe} other{Ho hlakotswe ditemoso tse {count}}}"
+  "alertsCleared": "{count, plural, =1{Ho hlakotswe temoso e le nngwe} other{Ho hlakotswe ditemoso tse {count}}}",
+  "homeScreenTitle": "Leqephe la qalo"
 }

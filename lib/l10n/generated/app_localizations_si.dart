@@ -2492,4 +2492,7 @@ class AppLocalizationsSi extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get homeScreenTitle => 'මුල් තිරය';
 }

@@ -662,5 +662,6 @@
   "lotRemoved": "Darījums izdzēsts",
   "alertDeleted": "Brīdinājums izdzēsts",
   "alertsClearTriggered": "Notīrīt nostrādājušos brīdinājumus",
-  "alertsCleared": "{count, plural, =1{Notīrīts 1 brīdinājums} zero{Notīrīti {count} brīdinājumi} one{Notīrīts {count} brīdinājums} other{Notīrīti {count} brīdinājumi}}"
+  "alertsCleared": "{count, plural, =1{Notīrīts 1 brīdinājums} zero{Notīrīti {count} brīdinājumi} one{Notīrīts {count} brīdinājums} other{Notīrīti {count} brīdinājumi}}",
+  "homeScreenTitle": "Sākuma ekrāns"
 }
