@@ -6,6 +6,7 @@ import 'metric_glossary.dart';
 import '../compare/compare_page.dart';
 import '../notes/notes_card.dart';
 import '../../app_services.dart';
+import '../../core/models/analysis_extras.dart';
 import '../../core/models/analyst_consensus.dart';
 import '../../core/models/stock_candidate.dart';
 import '../../core/models/stock_details.dart';
@@ -34,6 +35,7 @@ import 'widgets/returns_strip.dart';
 import 'widgets/statements_table.dart';
 import 'widgets/week52_range.dart';
 import 'widgets/what_if_card.dart';
+import '../events/events_view.dart' show eventWhen;
 import '../../widgets/centered_scroll.dart';
 
 /// A részletes nézet: minden tudnivaló egy részvényről, szekciókra bontva.
@@ -228,6 +230,7 @@ class _DetailsBody extends StatelessWidget {
                         [d.symbol, if (p?.exchange != null) p!.exchange!].join(' · '),
                         style: theme.textTheme.bodyMedium?.copyWith(color: theme.colorScheme.onSurfaceVariant),
                       ),
+                      EarningsSoonLine(symbol: d.symbol),
                     ],
                   ),
                 ),
@@ -765,4 +768,71 @@ List<ChartLevel> chartLevels(BuildContext context, String symbol, String? curren
         if (a.kind == AlertKind.trailing ? a.trailingLevel : a.value case final level?)
           ChartLevel(price: level, label: l10n.chartAlertLevel, color: p.muted),
   ];
+}
+
+/// A fejlécben: ha 7 napon belül gyorsjelentés jön („Negyedéves gyorsjelentés ·
+/// holnap · zárás után”). A gyorsjelentés-kártyával közös (gyorsítótárazott) adatból.
+class EarningsSoonLine extends StatefulWidget {
+  const EarningsSoonLine({super.key, required this.symbol});
+
+  final String symbol;
+
+  @override
+  State<EarningsSoonLine> createState() => _EarningsSoonLineState();
+}
+
+class _EarningsSoonLineState extends State<EarningsSoonLine> {
+  Future<EarningsOverview>? _future;
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    _future ??= AppServices.of(context).marketData.earnings(widget.symbol);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final p = AppPalette.of(context);
+    final theme = Theme.of(context);
+    return FutureBuilder<EarningsOverview>(
+      future: _future,
+      builder: (context, snap) {
+        final next = snap.data?.next;
+        if (next == null) return const SizedBox.shrink();
+        final now = DateTime.now();
+        final days = DateTime(
+          next.date.year,
+          next.date.month,
+          next.date.day,
+        ).difference(DateTime(now.year, now.month, now.day)).inDays;
+        if (days < 0 || days > 7) return const SizedBox.shrink();
+        final text = [
+          l10n.eventEarnings,
+          eventWhen(l10n, next.date, now),
+          ?switch (next.hour) {
+            'bmo' => l10n.eventBeforeOpen,
+            'amc' => l10n.eventAfterClose,
+            _ => null,
+          },
+        ].join(' · ');
+        return Padding(
+          key: const ValueKey('earnings-soon'),
+          padding: const EdgeInsets.only(top: 4),
+          child: Row(
+            children: [
+              Icon(Icons.event_note_rounded, size: 15, color: p.accent),
+              const SizedBox(width: 5),
+              Flexible(
+                child: Text(
+                  text,
+                  style: theme.textTheme.bodySmall?.copyWith(color: p.accent, fontWeight: FontWeight.w600),
+                ),
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
 }

@@ -39,6 +39,19 @@ class _NoEarnings extends DemoMarketDataProvider {
   Future<InsiderSummary?> insiders(String symbol) async => null;
 }
 
+/// Holnap zárás után jelent.
+class _SoonEarnings extends DemoMarketDataProvider {
+  _SoonEarnings() : super(latency: Duration.zero);
+
+  @override
+  Future<EarningsOverview> earnings(String symbol) async {
+    final now = DateTime.now();
+    return EarningsOverview(
+      next: UpcomingEarnings(date: DateTime(now.year, now.month, now.day + 1), hour: 'amc'),
+    );
+  }
+}
+
 AppServices _services(MarketDataProvider market) => AppServices(
   alertNotifier: FakeNotifier(),
   config: const AppConfig(),
@@ -115,11 +128,23 @@ void main() {
     expect(find.text('Expected EPS'), findsOneWidget);
   });
 
+  testWidgets('a report within a week is named in the header', (tester) async {
+    await _openAapl(tester, _services(_SoonEarnings()));
+    expect(
+      find.descendant(
+        of: find.byKey(const ValueKey('earnings-soon')),
+        matching: find.text('Quarterly results · Tomorrow · after the close'),
+      ),
+      findsOneWidget,
+    );
+  });
+
   testWidgets('no earnings or insider data: no cards', (tester) async {
     await _openAapl(tester, _services(_NoEarnings()));
     expect(find.text('Apple Inc.'), findsWidgets);
     expect(find.byKey(const ValueKey('earnings-card')), findsNothing);
     expect(find.byKey(const ValueKey('insiders-card')), findsNothing);
+    expect(find.byKey(const ValueKey('earnings-soon')), findsNothing);
   });
 
   testWidgets('the insider trades card: purchases, sales, net and the largest open-market trades', (tester) async {

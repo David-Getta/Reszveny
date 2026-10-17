@@ -254,6 +254,7 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 5bv | Kedvencek: kis jegyzet-ikon a ticker mellett, ha a részvényhez saját jegyzet tartozik | ✅ kész |
 | 5bw | Pozíció tranzakciós lapja: a még meglévő vételi tételek (FIFO) egyenként, darab × vételi ár, dátum és a mai árral számolt nyereség | ✅ kész |
 | 5bx | Tálca/menüsor (asztali gép): a kedvencek fölött a portfólió mai mozgása (%, összeg); koppintásra a portfólió nyílik | ✅ kész |
+| 5by | Részvény-fejléc: ha 7 napon belül gyorsjelentés jön, a ticker alatt („Negyedéves gyorsjelentés · holnap · zárás után”) | ✅ kész |
 | 5j | Telefonos háttér-értesítés (riasztás) szerverről, APNs / FCM | 🟡 első lépés kész: a szerver 10 percenként nézi a belépett fiókok szinkronizált riasztásait, és e-mailben szól (csukott appnál is, kikapcsolható); a telefonos push (APNs / FCM) a Firebase-projekt és az Apple-kulcs után |
 | 5k | Bolti adatlapok 120 nyelven, képernyőképek, ikon, előnézeti videó | 🟡 adatlap-szövegek 70 bolti nyelven (fastlane-mappa, `docs/BOLTI_ADATLAP.md`), feliratos bolti képek a teszt-harnessből a boltok méreteiben; előnézeti videó és a nem latin írású képek a natív buildből később |
 
