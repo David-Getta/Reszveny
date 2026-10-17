@@ -306,7 +306,7 @@ class _WatchlistPageState extends State<WatchlistPage> {
         ],
       ),
       body: ListenableBuilder(
-        listenable: Listenable.merge([services.preferences, services.alerts, services.events]),
+        listenable: Listenable.merge([services.preferences, services.alerts, services.events, services.notes]),
         builder: (context, _) {
           final favorites = services.preferences.favorites;
           if (favorites.isEmpty) {
@@ -341,6 +341,7 @@ class _WatchlistPageState extends State<WatchlistPage> {
               symbol: s,
               hasAlert: services.alerts.hasActive(s),
               earnings: _soonEarnings(services, s),
+              hasNote: services.notes.of(s)?.text.trim().isNotEmpty ?? false,
               quote: _quote(s),
               history: _history(s),
               onTap: () => widget.onOpenSymbol(StockCandidate(symbol: s, companyName: s, confidence: 1)),
@@ -604,6 +605,7 @@ class _WatchRow extends StatelessWidget {
     required this.symbol,
     this.hasAlert = false,
     this.earnings,
+    this.hasNote = false,
     required this.quote,
     required this.history,
     required this.onTap,
@@ -617,6 +619,9 @@ class _WatchRow extends StatelessWidget {
 
   /// Közeli gyorsjelentés: a ticker alatt „Holnap”, „5 nap múlva”.
   final UpcomingEvent? earnings;
+
+  /// Van-e saját jegyzet a részvényhez (kis ikon a ticker mellett).
+  final bool hasNote;
   final Future<StockQuote> quote;
   final Future<PriceHistory> history;
   final VoidCallback onTap;
@@ -661,6 +666,19 @@ class _WatchRow extends StatelessWidget {
                                 key: ValueKey('watch-alert-$symbol'),
                                 size: 13,
                                 color: p.accent,
+                              ),
+                            ),
+                          ),
+                        if (hasNote)
+                          Padding(
+                            padding: const EdgeInsetsDirectional.only(start: 3),
+                            child: Tooltip(
+                              message: l10n.notesTitle,
+                              child: Icon(
+                                Icons.sticky_note_2_outlined,
+                                key: ValueKey('watch-note-$symbol'),
+                                size: 12,
+                                color: p.muted,
                               ),
                             ),
                           ),

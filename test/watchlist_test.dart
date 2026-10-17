@@ -160,6 +160,11 @@ void main() {
     // Az aktív riasztás kis haranggal látszik.
     expect(find.byKey(const ValueKey('watch-alert-AAPL')), findsOneWidget);
     expect(find.byKey(const ValueKey('watch-alert-MSFT')), findsNothing);
+    // A saját jegyzet kis ikonnal.
+    expect(find.byKey(const ValueKey('watch-note-MSFT')), findsNothing);
+    await s.notes.set('MSFT', 'Felhő-üzletág figyelése');
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('watch-note-MSFT')), findsOneWidget);
 
     // A részvény melletti gombbal: új lista, benne a részvénnyel.
     await tester.tap(find.byKey(const ValueKey('watch-addto-NVDA')));
