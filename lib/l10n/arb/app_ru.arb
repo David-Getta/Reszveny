@@ -617,5 +617,7 @@
   "rebalanceOk": "Соответствует цели",
   "earningsResultBeat": "{symbol} превзошёл ожидаемый EPS",
   "earningsResultMiss": "{symbol} не дотянул до ожидаемого EPS",
-  "earningsResultBody": "Фактический EPS {actual}, ожидался {estimate}"
+  "earningsResultBody": "Фактический EPS {actual}, ожидался {estimate}",
+  "newsExplain": "Что это значит?",
+  "newsExplainNote": "Объяснение от ИИ только на основе заголовка и краткого содержания. Не является инвестиционной рекомендацией. Расходуется дневной лимит вопросов, а не анализ."
 }

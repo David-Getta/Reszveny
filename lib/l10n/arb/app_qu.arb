@@ -617,5 +617,7 @@
   "rebalanceOk": "Munasqapi",
   "earningsResultBeat": "{symbol}: suyakusqa EPS-manta aswan",
   "earningsResultMiss": "{symbol}: suyakusqa EPS-manta pisi",
-  "earningsResultBody": "Willakusqa EPS {actual}, suyakusqa {estimate}"
+  "earningsResultBody": "Willakusqa EPS {actual}, suyakusqa {estimate}",
+  "newsExplain": "Kayqa imatataq niyta munan?",
+  "newsExplainNote": "AI sut’ichay, umalliqllapi pisichasqanpi ima sayasqa. Manan qullqi churanapaq yuyaychaychu. Sapa p’unchay tapukuy limitiykita apaykachan, manan t’aqwiytachu."
 }

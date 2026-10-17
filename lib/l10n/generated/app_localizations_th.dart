@@ -2278,4 +2278,11 @@ class AppLocalizationsTh extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS ที่รายงาน $actual คาดการณ์ $estimate';
   }
+
+  @override
+  String get newsExplain => 'หมายความว่าอย่างไร';
+
+  @override
+  String get newsExplainNote =>
+      'คำอธิบายจาก AI โดยอิงจากพาดหัวและสรุปข่าวเท่านั้น ไม่ใช่คำแนะนำในการลงทุน ใช้โควตาคำถามรายวันของคุณ ไม่ใช้สิทธิ์การวิเคราะห์';
 }

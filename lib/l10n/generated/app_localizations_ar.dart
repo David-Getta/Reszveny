@@ -2356,4 +2356,11 @@ class AppLocalizationsAr extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'ربحية السهم المُعلنة $actual، المتوقعة $estimate';
   }
+
+  @override
+  String get newsExplain => 'ماذا يعني هذا؟';
+
+  @override
+  String get newsExplainNote =>
+      'شرح بالذكاء الاصطناعي يستند فقط إلى العنوان والملخص. لا يُعدّ نصيحة استثمارية. يُحتسب من حدّ الأسئلة اليومي ولا يستهلك تحليلًا.';
 }

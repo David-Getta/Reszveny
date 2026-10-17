@@ -2308,4 +2308,11 @@ class AppLocalizationsJv extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS sing dilaporake $actual, dikarepake $estimate';
   }
+
+  @override
+  String get newsExplain => 'Iki tegesé apa?';
+
+  @override
+  String get newsExplainNote =>
+      'Panjelasan AI mung adhedhasar judhul lan ringkesané. Dudu saran investasi. Nggunakake watesan pitakon saben dina, dudu analisis.';
 }

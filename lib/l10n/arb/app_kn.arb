@@ -617,5 +617,7 @@
   "rebalanceOk": "ಗುರಿಯಲ್ಲಿದೆ",
   "earningsResultBeat": "{symbol} ನಿರೀಕ್ಷಿತ EPS ಮೀರಿದೆ",
   "earningsResultMiss": "{symbol} ನಿರೀಕ್ಷಿತ EPS ತಲುಪಲಿಲ್ಲ",
-  "earningsResultBody": "ವರದಿಯಾದ EPS {actual}, ನಿರೀಕ್ಷಿತ {estimate}"
+  "earningsResultBody": "ವರದಿಯಾದ EPS {actual}, ನಿರೀಕ್ಷಿತ {estimate}",
+  "newsExplain": "ಇದರ ಅರ್ಥವೇನು?",
+  "newsExplainNote": "ಶೀರ್ಷಿಕೆ ಮತ್ತು ಸಾರಾಂಶವನ್ನು ಮಾತ್ರ ಆಧರಿಸಿದ AI ವಿವರಣೆ. ಇದು ಹೂಡಿಕೆ ಸಲಹೆಯಲ್ಲ. ಇದು ನಿಮ್ಮ ದೈನಂದಿನ ಪ್ರಶ್ನೆ ಮಿತಿಯನ್ನು ಬಳಸುತ್ತದೆ, ವಿಶ್ಲೇಷಣೆಯನ್ನಲ್ಲ."
 }

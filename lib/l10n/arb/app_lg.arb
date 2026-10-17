@@ -617,5 +617,7 @@
   "rebalanceOk": "Kituuse ku kigendererwa",
   "earningsResultBeat": "{symbol} esukkulumye EPS esuubirwa",
   "earningsResultMiss": "{symbol} tetuuse ku EPS esuubirwa",
-  "earningsResultBody": "EPS eyalangiriddwa {actual}, esuubirwa {estimate}"
+  "earningsResultBody": "EPS eyalangiriddwa {actual}, esuubirwa {estimate}",
+  "newsExplain": "Kino kitegeeza ki?",
+  "newsExplainNote": "Ennyinnyonnyola ya AI eyesigamiziddwa ku mutwe gw'amawulire n'okufunza kwago kwokka. Si magezi ga kusiga nsimbi. Kikozesa kkomo ly’ebibuuzo byo erya buli lunaku, so si kwekenneenya."
 }

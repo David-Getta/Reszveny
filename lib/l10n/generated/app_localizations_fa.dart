@@ -2303,4 +2303,11 @@ class AppLocalizationsFa extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS گزارش‌شده $actual، مورد انتظار $estimate';
   }
+
+  @override
+  String get newsExplain => 'این یعنی چه؟';
+
+  @override
+  String get newsExplainNote =>
+      'توضیح هوش مصنوعی فقط بر اساس تیتر و خلاصهٔ آن. توصیه سرمایه‌گذاری نیست. از سهمیهٔ روزانهٔ پرسش‌های شما کم می‌شود، نه از تحلیل‌ها.';
 }

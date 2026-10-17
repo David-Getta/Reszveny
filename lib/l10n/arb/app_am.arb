@@ -617,5 +617,7 @@
   "rebalanceOk": "ዒላማ ላይ",
   "earningsResultBeat": "{symbol} ከሚጠበቀው EPS በላይ አስመዝግቧል",
   "earningsResultMiss": "{symbol} ከሚጠበቀው EPS በታች አስመዝግቧል",
-  "earningsResultBody": "ሪፖርት የተደረገው EPS {actual}፣ የሚጠበቀው {estimate}"
+  "earningsResultBody": "ሪፖርት የተደረገው EPS {actual}፣ የሚጠበቀው {estimate}",
+  "newsExplain": "ይህ ምን ማለት ነው?",
+  "newsExplainNote": "በርዕሱና በማጠቃለያው ላይ ብቻ የተመሠረተ የAI ማብራሪያ። የኢንቨስትመንት ምክር አይደለም። ከዕለታዊ የጥያቄ ገደብዎ ይቆጠራል እንጂ ትንተና አይጠቀምም።"
 }

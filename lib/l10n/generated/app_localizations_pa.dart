@@ -2302,4 +2302,11 @@ class AppLocalizationsPa extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'ਜਾਰੀ ਕੀਤਾ EPS $actual, ਉਮੀਦ $estimate';
   }
+
+  @override
+  String get newsExplain => 'ਇਸ ਦਾ ਕੀ ਮਤਲਬ ਹੈ?';
+
+  @override
+  String get newsExplainNote =>
+      'ਸਿਰਫ਼ ਸਿਰਲੇਖ ਅਤੇ ਸਾਰ ’ਤੇ ਆਧਾਰਿਤ AI ਵਿਆਖਿਆ। ਇਹ ਨਿਵੇਸ਼ ਸਲਾਹ ਨਹੀਂ ਹੈ। ਇਹ ਤੁਹਾਡੀ ਰੋਜ਼ਾਨਾ ਸਵਾਲਾਂ ਦੀ ਸੀਮਾ ਵਿੱਚੋਂ ਜਾਂਦਾ ਹੈ, ਕੋਈ ਵਿਸ਼ਲੇਸ਼ਣ ਖ਼ਰਚ ਨਹੀਂ ਹੁੰਦਾ।';
 }

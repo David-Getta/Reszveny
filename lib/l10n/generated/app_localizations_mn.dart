@@ -2307,4 +2307,11 @@ class AppLocalizationsMn extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'Тайлагнасан EPS $actual, хүлээгдэж буй $estimate';
   }
+
+  @override
+  String get newsExplain => 'Энэ юу гэсэн үг вэ?';
+
+  @override
+  String get newsExplainNote =>
+      'Зөвхөн гарчиг болон хураангуйд үндэслэсэн AI-ийн тайлбар. Хөрөнгө оруулалтын зөвлөгөө биш. Өдрийн асуултын хязгаараас тань зарцуулна, шинжилгээ биш.';
 }

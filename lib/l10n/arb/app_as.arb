@@ -617,5 +617,7 @@
   "rebalanceOk": "লক্ষ্যত আছে",
   "earningsResultBeat": "{symbol}: প্ৰত্যাশিত EPSতকৈ বেছি",
   "earningsResultMiss": "{symbol}: প্ৰত্যাশিত EPSতকৈ কম",
-  "earningsResultBody": "ঘোষিত EPS {actual}, প্ৰত্যাশিত {estimate}"
+  "earningsResultBody": "ঘোষিত EPS {actual}, প্ৰত্যাশিত {estimate}",
+  "newsExplain": "ইয়াৰ অৰ্থ কি?",
+  "newsExplainNote": "কেৱল শিৰোনাম আৰু সাৰাংশৰ ভিত্তিত AI ব্যাখ্যা। ই বিনিয়োগৰ পৰামৰ্শ নহয়। ই আপোনাৰ দৈনিক প্ৰশ্নৰ সীমাৰ পৰা যায়, কোনো বিশ্লেষণ খৰচ নকৰে।"
 }

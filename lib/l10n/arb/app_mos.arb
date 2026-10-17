@@ -617,5 +617,7 @@
   "rebalanceOk": "Ta raabã",
   "earningsResultBeat": "{symbol}: EPS sẽn gũudã zugu",
   "earningsResultMiss": "{symbol}: EPS sẽn gũudã tẽngre",
-  "earningsResultBody": "EPS sẽn wilgã {actual}, sẽn gũudã {estimate}"
+  "earningsResultBody": "EPS sẽn wilgã {actual}, sẽn gũudã {estimate}",
+  "newsExplain": "Woto rata n yeel bõe?",
+  "newsExplainNote": "AI wilgri, sẽn tik zug-sõngã la a koe-kʋʋnã bala. Pa sagls ligd kẽesg wɛɛngẽ ye. A tũuda f daar fãa sokr sõorã, pa vẽenegr ye."
 }

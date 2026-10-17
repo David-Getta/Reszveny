@@ -2312,4 +2312,11 @@ class AppLocalizationsHu extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'Jelentett EPS $actual, várt $estimate';
   }
+
+  @override
+  String get newsExplain => 'Mit jelent ez?';
+
+  @override
+  String get newsExplainNote =>
+      'AI-magyarázat, csak a cím és az összefoglaló alapján. Nem befektetési tanács. A napi kérdéskeretből megy, elemzést nem fogyaszt.';
 }

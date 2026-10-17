@@ -617,5 +617,7 @@
   "rebalanceOk": "Deg yiswi",
   "earningsResultBeat": "{symbol} yeɛedda EPS i yettwarǧan",
   "earningsResultMiss": "{symbol} ur yewweḍ ara ɣer EPS i yettwarǧan",
-  "earningsResultBody": "EPS i d-yettwabedren {actual}, yettwarǧa {estimate}"
+  "earningsResultBody": "EPS i d-yettwabedren {actual}, yettwarǧa {estimate}",
+  "newsExplain": "D acu i d-yebɣa ad yini waya?",
+  "newsExplainNote": "Asegzi n AI yebnan kan ɣef uzwel d ugzul-is. Mačči d awellih n usersi n yidrimen. Yesseqdac talast-ik n yisteqsiyen n yal ass, mačči tasledt."
 }

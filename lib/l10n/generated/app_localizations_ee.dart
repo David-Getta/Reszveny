@@ -2310,4 +2310,11 @@ class AppLocalizationsEe extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS si woɖe gbeƒã $actual, wole mɔ kpɔm $estimate';
   }
+
+  @override
+  String get newsExplain => 'Nukae esia fia?';
+
+  @override
+  String get newsExplainNote =>
+      'AI ƒe ɖeɖe me si nɔ te ɖe tanya kple eƒe kpuie ko dzi. Menye aɖaŋuɖoɖo le gadede nu ŋu o. Etsɔna tso wò gbesiagbe nyabiasewo ƒe seɖoƒe me, mezãa dzodzro aɖeke o.';
 }

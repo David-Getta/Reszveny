@@ -3,7 +3,9 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../app_services.dart';
 import '../../core/models/stock_candidate.dart';
+import '../../l10n/error_messages.dart';
 import '../../l10n/generated/app_localizations.dart';
+import '../../l10n/supported_locales.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/centered_scroll.dart';
 import '../../widgets/desktop_chrome.dart';
@@ -125,6 +127,12 @@ class WatchNewsTile extends StatelessWidget {
         [?n.source, analysisAgeText(l10n, n.publishedAt)].join(' · '),
         style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
       ),
+      trailing: IconButton(
+        key: ValueKey('news-explain-${n.url}'),
+        tooltip: l10n.newsExplain,
+        icon: Icon(Icons.auto_awesome_outlined, size: 20, color: p.accent),
+        onPressed: () => showNewsExplanation(context, news),
+      ),
       onTap: n.url.isEmpty
           ? null
           : () async {
@@ -133,6 +141,50 @@ class WatchNewsTile extends StatelessWidget {
             },
     );
   }
+}
+
+/// A hír magyarázata alsó lapon: a cím, alatta az AI néhány mondata.
+Future<void> showNewsExplanation(BuildContext context, WatchedNews news) {
+  final services = AppServices.of(context);
+  final language = SupportedLocales.languageFor(Localizations.localeOf(context)).englishName;
+  final answer = services.newsExplainer.explain(news, language: language);
+  return showModalBottomSheet<void>(
+    context: context,
+    showDragHandle: true,
+    isScrollControlled: true,
+    builder: (context) {
+      final l10n = AppLocalizations.of(context);
+      final p = AppPalette.of(context);
+      final theme = Theme.of(context);
+      return SafeArea(
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
+          child: Column(
+            key: const ValueKey('news-explanation'),
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text('${news.symbol} · ${l10n.newsExplain}', style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),
+              const SizedBox(height: 6),
+              Text(news.item.headline, style: theme.textTheme.titleMedium),
+              const SizedBox(height: 14),
+              FutureBuilder<String>(
+                future: answer,
+                builder: (context, snap) {
+                  if (snap.hasError) {
+                    return Text(errorMessage(l10n, snap.error!), style: TextStyle(color: p.negative));
+                  }
+                  if (!snap.hasData) return const LinearProgressIndicator();
+                  return Text(snap.data!, style: theme.textTheme.bodyLarge?.copyWith(height: 1.45));
+                },
+              ),
+              const SizedBox(height: 14),
+              Text(l10n.newsExplainNote, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+            ],
+          ),
+        ),
+      );
+    },
+  );
 }
 
 /// Az összes friss hír a figyelt részvényekről, frissíthető listában.

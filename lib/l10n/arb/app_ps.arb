@@ -617,5 +617,7 @@
   "rebalanceOk": "په هدف کې",
   "earningsResultBeat": "{symbol} له متوقع EPS څخه پورته شو",
   "earningsResultMiss": "{symbol} متوقع EPS ته ونه رسېد",
-  "earningsResultBody": "اعلان شوی EPS {actual}، متوقع {estimate}"
+  "earningsResultBody": "اعلان شوی EPS {actual}، متوقع {estimate}",
+  "newsExplain": "دا څه معنا لري؟",
+  "newsExplainNote": "یوازې د سرلیک او لنډیز پر بنسټ د AI تشریح. د پانګونې مشوره نه ده. ستاسو د ورځنیو پوښتنو له حد څخه کمېږي، شننه نه لګوي."
 }

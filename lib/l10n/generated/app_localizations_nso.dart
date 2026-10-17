@@ -2321,4 +2321,11 @@ class AppLocalizationsNso extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS ye e begilwego $actual, ye e letetšwego $estimate';
   }
+
+  @override
+  String get newsExplain => 'Se se ra goreng?';
+
+  @override
+  String get newsExplainNote =>
+      'Tlhalošo ya AI yeo e theilwego fela hlogong ya taba le kakaretšong ya yona. Ga se keletšo ya peeletšo. E diriša moedi wa gago wa dipotšišo wa letšatši le letšatši, e sego tshekatsheko.';
 }

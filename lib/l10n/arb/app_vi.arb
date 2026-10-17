@@ -617,5 +617,7 @@
   "rebalanceOk": "Đạt mục tiêu",
   "earningsResultBeat": "{symbol} vượt EPS dự kiến",
   "earningsResultMiss": "{symbol} không đạt EPS dự kiến",
-  "earningsResultBody": "EPS công bố {actual}, dự kiến {estimate}"
+  "earningsResultBody": "EPS công bố {actual}, dự kiến {estimate}",
+  "newsExplain": "Điều này có nghĩa là gì?",
+  "newsExplainNote": "Giải thích do AI tạo, chỉ dựa trên tiêu đề và phần tóm tắt. Không phải là lời khuyên đầu tư. Dùng hạn mức câu hỏi hằng ngày của bạn, không dùng lượt phân tích."
 }

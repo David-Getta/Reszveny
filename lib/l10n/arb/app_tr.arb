@@ -617,5 +617,7 @@
   "rebalanceOk": "Hedefte",
   "earningsResultBeat": "{symbol} beklenen HBK'yı aştı",
   "earningsResultMiss": "{symbol} beklenen HBK'nın altında kaldı",
-  "earningsResultBody": "Açıklanan HBK {actual}, beklenen {estimate}"
+  "earningsResultBody": "Açıklanan HBK {actual}, beklenen {estimate}",
+  "newsExplain": "Bu ne anlama geliyor?",
+  "newsExplainNote": "Yalnızca başlık ve özete dayanan yapay zekâ açıklaması. Yatırım tavsiyesi değildir. Günlük soru hakkından düşer, analiz hakkı kullanmaz."
 }

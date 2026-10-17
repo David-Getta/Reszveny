@@ -2309,4 +2309,11 @@ class AppLocalizationsSu extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS anu dilaporkeun $actual, diperkirakeun $estimate';
   }
+
+  @override
+  String get newsExplain => 'Ieu hartosna naon?';
+
+  @override
+  String get newsExplainNote =>
+      'Katerangan AI anu ngan dumasar kana judul jeung ringkesanana. Lain naséhat investasi. Nganggo wates patarosan sapopoé anjeun, sanés analisis.';
 }

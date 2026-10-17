@@ -617,5 +617,7 @@
   "rebalanceOk": "Jehupytyrãme",
   "earningsResultBeat": "{symbol} ohasa EPS oñehaʼarõvagui",
   "earningsResultMiss": "{symbol} ndohupytýi EPS oñehaʼarõva",
-  "earningsResultBody": "EPS oñemomaranduva {actual}, oñehaʼarõva {estimate}"
+  "earningsResultBody": "EPS oñemomaranduva {actual}, oñehaʼarõva {estimate}",
+  "newsExplain": "Mbaʼépa heʼise kóva?",
+  "newsExplainNote": "AI omyesakãva, titulo ha ñemombyky rupive añoite. Ndahaʼéi ñemoñeʼẽ inversión rehegua. Oipuru ne porandu papapy ára ha ára guarã, ndaha’éi jehesa’ỹijo."
 }

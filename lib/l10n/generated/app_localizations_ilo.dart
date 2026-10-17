@@ -2324,4 +2324,11 @@ class AppLocalizationsIlo extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'Naireport nga EPS $actual, namnamaen $estimate';
   }
+
+  @override
+  String get newsExplain => 'Ania ti kayat a sawen daytoy?';
+
+  @override
+  String get newsExplainNote =>
+      'Panangilawlawag ti AI a naibatay laeng iti paulo ken iti pakabuklanna. Saan a balakad iti panagpuonan. Agusar daytoy iti inaldaw a limitasion dagiti saludsod-mo, saan nga iti panaganalisa.';
 }

@@ -617,5 +617,7 @@
   "rebalanceOk": "ہدف پر",
   "earningsResultBeat": "{symbol} متوقع EPS سے آگے نکل گیا",
   "earningsResultMiss": "{symbol} متوقع EPS سے پیچھے رہ گیا",
-  "earningsResultBody": "رپورٹ شدہ EPS {actual}، متوقع {estimate}"
+  "earningsResultBody": "رپورٹ شدہ EPS {actual}، متوقع {estimate}",
+  "newsExplain": "اس کا کیا مطلب ہے؟",
+  "newsExplainNote": "صرف سرخی اور خلاصے پر مبنی AI وضاحت۔ یہ سرمایہ کاری کا مشورہ نہیں ہے۔ یہ آپ کی روزانہ سوالات کی حد سے جاتا ہے، کوئی تجزیہ خرچ نہیں ہوتا۔"
 }

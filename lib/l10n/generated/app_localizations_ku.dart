@@ -2308,4 +2308,11 @@ class AppLocalizationsKu extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS ya hatî ragihandin $actual, tê payîn $estimate';
   }
+
+  @override
+  String get newsExplain => 'Ev tê çi wateyê?';
+
+  @override
+  String get newsExplainNote =>
+      'Ravekirina AI tenê li ser bingeha sernivîs û kurteyê. Ne şîreta veberhênanê ye. Ji sînorê pirsên te yê rojane tê birîn, ne analîzek.';
 }

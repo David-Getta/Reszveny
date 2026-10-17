@@ -617,5 +617,7 @@
   "rebalanceOk": "Op doel",
   "earningsResultBeat": "{symbol} verslaat de verwachte EPS",
   "earningsResultMiss": "{symbol} blijft onder de verwachte EPS",
-  "earningsResultBody": "Gerapporteerde EPS {actual}, verwacht {estimate}"
+  "earningsResultBody": "Gerapporteerde EPS {actual}, verwacht {estimate}",
+  "newsExplain": "Wat betekent dit?",
+  "newsExplainNote": "AI-uitleg die alleen gebaseerd is op de kop en de samenvatting. Dit is geen beleggingsadvies. Gebruikt je dagelijkse vragentegoed, geen analyse."
 }

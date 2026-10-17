@@ -617,5 +617,7 @@
   "rebalanceOk": "Ku ntumbero",
   "earningsResultBeat": "{symbol} yarenze EPS yari yitezwe",
   "earningsResultMiss": "{symbol} ntiyashitse kuri EPS yari yitezwe",
-  "earningsResultBody": "EPS yatangajwe {actual}, yari yitezwe {estimate}"
+  "earningsResultBody": "EPS yatangajwe {actual}, yari yitezwe {estimate}",
+  "newsExplain": "Ibi bisobanura iki?",
+  "newsExplainNote": "Insobanuro ya AI ishingiye gusa ku mutwe w'inkuru n'incamake yayo. Si inama yo gushora imari. Ikoresha urugero rw’ibibazo vyawe rw’umunsi, si isesengura."
 }

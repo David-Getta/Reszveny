@@ -617,5 +617,7 @@
   "rebalanceOk": "ביעד",
   "earningsResultBeat": "{symbol}: מעל ה-EPS הצפוי",
   "earningsResultMiss": "{symbol}: מתחת ל-EPS הצפוי",
-  "earningsResultBody": "EPS מדווח {actual}, צפוי {estimate}"
+  "earningsResultBody": "EPS מדווח {actual}, צפוי {estimate}",
+  "newsExplain": "מה זה אומר?",
+  "newsExplainNote": "הסבר של AI על סמך הכותרת והתקציר בלבד. אינו מהווה ייעוץ השקעות. נספר במכסת השאלות היומית שלך, לא כניתוח."
 }

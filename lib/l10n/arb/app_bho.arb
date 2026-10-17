@@ -617,5 +617,7 @@
   "rebalanceOk": "लक्ष्य पर",
   "earningsResultBeat": "{symbol}: अनुमानित EPS से ऊपर",
   "earningsResultMiss": "{symbol}: अनुमानित EPS से नीचे",
-  "earningsResultBody": "घोषित EPS {actual}, अनुमानित {estimate}"
+  "earningsResultBody": "घोषित EPS {actual}, अनुमानित {estimate}",
+  "newsExplain": "एकर का मतलब बा?",
+  "newsExplainNote": "खाली हेडलाइन आ सारांश पर आधारित AI के व्याख्या। ई निवेश के सलाह ना ह। ई रउआ रोज के सवाल के सीमा से जाला, कवनो विश्लेषण खरच ना होला।"
 }

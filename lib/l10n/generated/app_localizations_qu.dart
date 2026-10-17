@@ -2320,4 +2320,11 @@ class AppLocalizationsQu extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'Willakusqa EPS $actual, suyakusqa $estimate';
   }
+
+  @override
+  String get newsExplain => 'Kayqa imatataq niyta munan?';
+
+  @override
+  String get newsExplainNote =>
+      'AI sut’ichay, umalliqllapi pisichasqanpi ima sayasqa. Manan qullqi churanapaq yuyaychaychu. Sapa p’unchay tapukuy limitiykita apaykachan, manan t’aqwiytachu.';
 }

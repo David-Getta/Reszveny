@@ -617,5 +617,7 @@
   "rebalanceOk": "Εντός στόχου",
   "earningsResultBeat": "{symbol}: πάνω από το αναμενόμενο EPS",
   "earningsResultMiss": "{symbol}: κάτω από το αναμενόμενο EPS",
-  "earningsResultBody": "Ανακοινωμένο EPS {actual}, αναμενόμενο {estimate}"
+  "earningsResultBody": "Ανακοινωμένο EPS {actual}, αναμενόμενο {estimate}",
+  "newsExplain": "Τι σημαίνει αυτό;",
+  "newsExplainNote": "Εξήγηση από AI μόνο με βάση τον τίτλο και την περίληψη. Δεν αποτελεί επενδυτική συμβουλή. Χρησιμοποιεί το ημερήσιο όριο ερωτήσεών σας, όχι ανάλυση."
 }

@@ -617,5 +617,7 @@
   "rebalanceOk": "已達目標",
   "earningsResultBeat": "{symbol} 每股盈利勝預期",
   "earningsResultMiss": "{symbol} 每股盈利遜預期",
-  "earningsResultBody": "實際每股盈利 {actual}，預期 {estimate}"
+  "earningsResultBody": "實際每股盈利 {actual}，預期 {estimate}",
+  "newsExplain": "這代表甚麼？",
+  "newsExplainNote": "僅根據標題及摘要產生的 AI 解讀。並不構成投資建議。佔用每日提問次數，不消耗分析次數。"
 }

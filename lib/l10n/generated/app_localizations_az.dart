@@ -2308,4 +2308,11 @@ class AppLocalizationsAz extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'Açıqlanan EPS $actual, gözlənilən $estimate';
   }
+
+  @override
+  String get newsExplain => 'Bu nə deməkdir?';
+
+  @override
+  String get newsExplainNote =>
+      'Yalnız başlıq və xülasə əsasında AI izahı. İnvestisiya məsləhəti deyil. Gündəlik sual limitinizdən istifadə edir, təhlil sərf etmir.';
 }

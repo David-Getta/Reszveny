@@ -2307,4 +2307,11 @@ class AppLocalizationsKa extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'გამოქვეყნებული EPS $actual, მოსალოდნელი $estimate';
   }
+
+  @override
+  String get newsExplain => 'რას ნიშნავს ეს?';
+
+  @override
+  String get newsExplainNote =>
+      'AI-ის განმარტება მხოლოდ სათაურისა და შეჯამების საფუძველზე. არ წარმოადგენს საინვესტიციო რჩევას. იყენებს თქვენს დღიურ კითხვების ლიმიტს და არა ანალიზს.';
 }

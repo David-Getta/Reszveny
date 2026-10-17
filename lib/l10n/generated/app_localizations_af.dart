@@ -2310,4 +2310,11 @@ class AppLocalizationsAf extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'Gerapporteerde WPA $actual, verwag $estimate';
   }
+
+  @override
+  String get newsExplain => 'Wat beteken dit?';
+
+  @override
+  String get newsExplainNote =>
+      'AI-verduideliking slegs gebaseer op die opskrif en die opsomming. Dit is nie beleggingsadvies nie. Dit gebruik jou daaglikse vraagtoelae, nie ’n ontleding nie.';
 }

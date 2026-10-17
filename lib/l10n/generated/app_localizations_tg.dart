@@ -2308,4 +2308,11 @@ class AppLocalizationsTg extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS-и эълоншуда $actual, пешбинишуда $estimate';
   }
+
+  @override
+  String get newsExplain => 'Ин чӣ маъно дорад?';
+
+  @override
+  String get newsExplainNote =>
+      'Шарҳи AI танҳо дар асоси сарлавҳа ва хулосаи он. Маслиҳати сармоягузорӣ нест. Аз ҳадди саволҳои ҳаррӯзаи шумо сарф мешавад, на таҳлил.';
 }

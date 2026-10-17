@@ -2298,4 +2298,11 @@ class AppLocalizationsPs extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'اعلان شوی EPS $actual، متوقع $estimate';
   }
+
+  @override
+  String get newsExplain => 'دا څه معنا لري؟';
+
+  @override
+  String get newsExplainNote =>
+      'یوازې د سرلیک او لنډیز پر بنسټ د AI تشریح. د پانګونې مشوره نه ده. ستاسو د ورځنیو پوښتنو له حد څخه کمېږي، شننه نه لګوي.';
 }

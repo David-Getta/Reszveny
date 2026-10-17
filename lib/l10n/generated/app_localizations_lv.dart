@@ -2346,4 +2346,11 @@ class AppLocalizationsLv extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'Paziņotais EPS $actual, prognozētais $estimate';
   }
+
+  @override
+  String get newsExplain => 'Ko tas nozīmē?';
+
+  @override
+  String get newsExplainNote =>
+      'Mākslīgā intelekta skaidrojums, kas balstīts tikai uz virsrakstu un kopsavilkumu. Tā nav ieguldījumu konsultācija. Izmanto jūsu dienas jautājumu limitu, nevis analīzi.';
 }

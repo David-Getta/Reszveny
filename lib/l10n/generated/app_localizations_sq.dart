@@ -2313,4 +2313,11 @@ class AppLocalizationsSq extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS e raportuar $actual, e pritur $estimate';
   }
+
+  @override
+  String get newsExplain => 'Çfarë do të thotë kjo?';
+
+  @override
+  String get newsExplainNote =>
+      'Shpjegim nga AI bazuar vetëm në titull dhe përmbledhje. Nuk përbën këshillë investimi. Përdor kufirin tuaj ditor të pyetjeve, jo një analizë.';
 }

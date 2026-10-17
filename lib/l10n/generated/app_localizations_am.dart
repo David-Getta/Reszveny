@@ -2274,4 +2274,11 @@ class AppLocalizationsAm extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'ሪፖርት የተደረገው EPS $actual፣ የሚጠበቀው $estimate';
   }
+
+  @override
+  String get newsExplain => 'ይህ ምን ማለት ነው?';
+
+  @override
+  String get newsExplainNote =>
+      'በርዕሱና በማጠቃለያው ላይ ብቻ የተመሠረተ የAI ማብራሪያ። የኢንቨስትመንት ምክር አይደለም። ከዕለታዊ የጥያቄ ገደብዎ ይቆጠራል እንጂ ትንተና አይጠቀምም።';
 }

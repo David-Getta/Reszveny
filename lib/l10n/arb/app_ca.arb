@@ -617,5 +617,7 @@
   "rebalanceOk": "A l'objectiu",
   "earningsResultBeat": "{symbol} supera el BPA previst",
   "earningsResultMiss": "{symbol} no arriba al BPA previst",
-  "earningsResultBody": "BPA publicat {actual}, previst {estimate}"
+  "earningsResultBody": "BPA publicat {actual}, previst {estimate}",
+  "newsExplain": "Què vol dir això?",
+  "newsExplainNote": "Explicació d’IA basada només en el titular i el resum. No constitueix assessorament d’inversió. Fa servir el teu límit diari de preguntes, no una anàlisi."
 }

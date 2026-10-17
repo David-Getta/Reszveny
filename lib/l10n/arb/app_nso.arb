@@ -617,5 +617,7 @@
   "rebalanceOk": "Go nepo",
   "earningsResultBeat": "{symbol}: godimo ga EPS ye e letetšwego",
   "earningsResultMiss": "{symbol}: ka tlase ga EPS ye e letetšwego",
-  "earningsResultBody": "EPS ye e begilwego {actual}, ye e letetšwego {estimate}"
+  "earningsResultBody": "EPS ye e begilwego {actual}, ye e letetšwego {estimate}",
+  "newsExplain": "Se se ra goreng?",
+  "newsExplainNote": "Tlhalošo ya AI yeo e theilwego fela hlogong ya taba le kakaretšong ya yona. Ga se keletšo ya peeletšo. E diriša moedi wa gago wa dipotšišo wa letšatši le letšatši, e sego tshekatsheko."
 }

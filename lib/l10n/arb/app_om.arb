@@ -617,5 +617,7 @@
   "rebalanceOk": "Galma irra",
   "earningsResultBeat": "{symbol} EPS eegame caale",
   "earningsResultMiss": "{symbol} EPS eegame hin geenye",
-  "earningsResultBody": "EPS gabaafame {actual}, eegame {estimate}"
+  "earningsResultBody": "EPS gabaafame {actual}, eegame {estimate}",
+  "newsExplain": "Kun maal jechuu dha?",
+  "newsExplainNote": "Ibsa AI mata duree fi cuunfaa qofa irratti hundaa'e. Gorsa invastimantii miti. Daangaa gaaffii guyyaa kee fayyadama, xiinxala miti."
 }

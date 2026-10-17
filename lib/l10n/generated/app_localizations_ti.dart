@@ -2269,4 +2269,11 @@ class AppLocalizationsTi extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'ዝተሓበረ EPS $actual፣ ዝተጸበ $estimate';
   }
+
+  @override
+  String get newsExplain => 'እዚ እንታይ ማለት እዩ?';
+
+  @override
+  String get newsExplainNote =>
+      'ኣብ ኣርእስትን ጽማቕን ጥራይ ዝተመርኮሰ መብርሂ AI። ምኽሪ ወፍሪ ኣይኮነን። ካብ ዕለታዊ ደረት ሕቶታትኩም ይቑጸር እምበር ትንታነ ኣይጥቀምን።';
 }

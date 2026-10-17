@@ -2323,4 +2323,11 @@ class AppLocalizationsMg extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS navoaka $actual, notombanana $estimate';
   }
+
+  @override
+  String get newsExplain => 'Inona no dikan’izany?';
+
+  @override
+  String get newsExplainNote =>
+      'Fanazavana avy amin’ny AI miorina amin’ny lohateny sy ny famintinana ihany. Tsy torohevitra momba ny fampiasam-bola. Mampiasa ny fetran’ny fanontanianao isan’andro izy, fa tsy famakafakana.';
 }

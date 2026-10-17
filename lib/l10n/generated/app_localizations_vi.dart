@@ -2300,4 +2300,11 @@ class AppLocalizationsVi extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS công bố $actual, dự kiến $estimate';
   }
+
+  @override
+  String get newsExplain => 'Điều này có nghĩa là gì?';
+
+  @override
+  String get newsExplainNote =>
+      'Giải thích do AI tạo, chỉ dựa trên tiêu đề và phần tóm tắt. Không phải là lời khuyên đầu tư. Dùng hạn mức câu hỏi hằng ngày của bạn, không dùng lượt phân tích.';
 }

@@ -617,5 +617,7 @@
   "rebalanceOk": "Tavoitteessa",
   "earningsResultBeat": "{symbol} ylitti odotetun EPS:n",
   "earningsResultMiss": "{symbol} jäi odotetusta EPS:stä",
-  "earningsResultBody": "Toteutunut EPS {actual}, odotettu {estimate}"
+  "earningsResultBody": "Toteutunut EPS {actual}, odotettu {estimate}",
+  "newsExplain": "Mitä tämä tarkoittaa?",
+  "newsExplainNote": "Tekoälyn selitys, joka perustuu vain otsikkoon ja tiivistelmään. Se ei ole sijoitusneuvontaa. Kuluttaa päivittäistä kysymyskiintiötäsi, ei analyysia."
 }

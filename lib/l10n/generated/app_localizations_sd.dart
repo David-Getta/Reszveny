@@ -2298,4 +2298,11 @@ class AppLocalizationsSd extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'جاري ڪيل EPS $actual، متوقع $estimate';
   }
+
+  @override
+  String get newsExplain => 'هن جو مطلب ڇا آهي؟';
+
+  @override
+  String get newsExplainNote =>
+      'صرف سرخي ۽ خلاصي تي ٻڌل AI وضاحت. اها سيڙپڪاري جو مشورو ناهي. اهو توهان جي روزاني سوالن جي حد مان ويندو آهي، ڪو تجزيو خرچ نٿو ٿئي.';
 }

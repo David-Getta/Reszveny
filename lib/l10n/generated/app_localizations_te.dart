@@ -2312,4 +2312,11 @@ class AppLocalizationsTe extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'ప్రకటించిన EPS $actual, అంచనా $estimate';
   }
+
+  @override
+  String get newsExplain => 'దీని అర్థం ఏమిటి?';
+
+  @override
+  String get newsExplainNote =>
+      'శీర్షిక మరియు సారాంశం ఆధారంగా మాత్రమే AI ఇచ్చే వివరణ. ఇది పెట్టుబడి సలహా కాదు. ఇది మీ రోజువారీ ప్రశ్నల పరిమితి నుంచి వెళ్తుంది, ఎలాంటి విశ్లేషణనూ వాడదు.';
 }

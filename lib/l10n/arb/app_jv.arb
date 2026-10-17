@@ -617,5 +617,7 @@
   "rebalanceOk": "Pas target",
   "earningsResultBeat": "{symbol} ngluwihi EPS sing dikarepake",
   "earningsResultMiss": "{symbol} ora tekan EPS sing dikarepake",
-  "earningsResultBody": "EPS sing dilaporake {actual}, dikarepake {estimate}"
+  "earningsResultBody": "EPS sing dilaporake {actual}, dikarepake {estimate}",
+  "newsExplain": "Iki tegesé apa?",
+  "newsExplainNote": "Panjelasan AI mung adhedhasar judhul lan ringkesané. Dudu saran investasi. Nggunakake watesan pitakon saben dina, dudu analisis."
 }

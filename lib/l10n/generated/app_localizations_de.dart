@@ -2319,4 +2319,11 @@ class AppLocalizationsDe extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'Gemeldetes EPS $actual, erwartet $estimate';
   }
+
+  @override
+  String get newsExplain => 'Was bedeutet das?';
+
+  @override
+  String get newsExplainNote =>
+      'KI-Erklärung, nur auf Basis der Schlagzeile und der Zusammenfassung. Keine Anlageberatung. Zählt zu deinem täglichen Fragenkontingent, nicht als Analyse.';
 }

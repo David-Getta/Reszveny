@@ -2320,4 +2320,11 @@ class AppLocalizationsHil extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'Gin-report nga EPS $actual, ginapaabot $estimate';
   }
+
+  @override
+  String get newsExplain => 'Ano ang buot silingon sini?';
+
+  @override
+  String get newsExplainNote =>
+      'Paathag sang AI base lamang sa ulohan kag sa kalubaran sini. Indi ini laygay sa pag-invest. Ginagamit sini ang imo adlaw-adlaw nga limitasyon sang pamangkot, indi ang pagtuki.';
 }

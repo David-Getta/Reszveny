@@ -617,5 +617,7 @@
   "rebalanceOk": "Atbilst mērķim",
   "earningsResultBeat": "{symbol} pārsniedza prognozēto EPS",
   "earningsResultMiss": "{symbol} nesasniedza prognozēto EPS",
-  "earningsResultBody": "Paziņotais EPS {actual}, prognozētais {estimate}"
+  "earningsResultBody": "Paziņotais EPS {actual}, prognozētais {estimate}",
+  "newsExplain": "Ko tas nozīmē?",
+  "newsExplainNote": "Mākslīgā intelekta skaidrojums, kas balstīts tikai uz virsrakstu un kopsavilkumu. Tā nav ieguldījumu konsultācija. Izmanto jūsu dienas jautājumu limitu, nevis analīzi."
 }

@@ -617,5 +617,7 @@
   "rebalanceOk": "དམིགས་ཡུལ་ཐོག",
   "earningsResultBeat": "{symbol}: རེ་སྒུག་བྱས་པའི་EPS ལས་མཐོ།",
   "earningsResultMiss": "{symbol}: རེ་སྒུག་བྱས་པའི་EPS ལས་དམའ།",
-  "earningsResultBody": "སྙན་ཞུ་བྱས་པའི་EPS {actual}། རེ་སྒུག་བྱས་པ {estimate}"
+  "earningsResultBody": "སྙན་ཞུ་བྱས་པའི་EPS {actual}། རེ་སྒུག་བྱས་པ {estimate}",
+  "newsExplain": "འདིའི་དོན་གང་ཡིན།",
+  "newsExplainNote": "འགོ་བརྗོད་དང་བསྡུས་དོན་ཁོ་ན་ལ་གཞིགས་པའི་ AI འགྲེལ་བཤད། མ་འཇོག་གི་བསམ་འཆར་མིན། ཉིན་རེའི་དྲི་བའི་ཚད་ནས་འགྲོ་བ་ཡིན་ལ་དབྱེ་ཞིབ་མི་བེད་སྤྱོད།"
 }

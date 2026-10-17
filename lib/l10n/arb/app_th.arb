@@ -617,5 +617,7 @@
   "rebalanceOk": "ตรงเป้าหมาย",
   "earningsResultBeat": "{symbol} มี EPS สูงกว่าคาดการณ์",
   "earningsResultMiss": "{symbol} มี EPS ต่ำกว่าคาดการณ์",
-  "earningsResultBody": "EPS ที่รายงาน {actual} คาดการณ์ {estimate}"
+  "earningsResultBody": "EPS ที่รายงาน {actual} คาดการณ์ {estimate}",
+  "newsExplain": "หมายความว่าอย่างไร",
+  "newsExplainNote": "คำอธิบายจาก AI โดยอิงจากพาดหัวและสรุปข่าวเท่านั้น ไม่ใช่คำแนะนำในการลงทุน ใช้โควตาคำถามรายวันของคุณ ไม่ใช้สิทธิ์การวิเคราะห์"
 }

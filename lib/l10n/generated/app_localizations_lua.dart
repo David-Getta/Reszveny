@@ -2314,4 +2314,11 @@ class AppLocalizationsLua extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS idibu bamanyishe $actual, batekemene $estimate';
   }
+
+  @override
+  String get newsExplain => 'Bualu ebu budi bumvuija tshinyi?';
+
+  @override
+  String get newsExplainNote =>
+      'Diumvuija dia AI didi dishindamine anu pa mutu wa lumu ne bukese buawu. Kadiena mibelu ya kuteka mfranga. Bidi bienzeja mukalu wa nkonko yebe ya dituku dionso, kabiyi dikonkonona.';
 }

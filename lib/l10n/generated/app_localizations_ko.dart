@@ -2238,4 +2238,11 @@ class AppLocalizationsKo extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return '실제 EPS $actual, 예상 $estimate';
   }
+
+  @override
+  String get newsExplain => '이게 무슨 뜻인가요?';
+
+  @override
+  String get newsExplainNote =>
+      '헤드라인과 요약만을 바탕으로 한 AI 설명입니다. 투자 조언이 아닙니다. 분석 횟수가 아닌 하루 질문 한도가 사용됩니다.';
 }

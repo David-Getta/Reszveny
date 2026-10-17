@@ -617,5 +617,7 @@
   "rebalanceOk": "Відповідає цілі",
   "earningsResultBeat": "{symbol} перевершив очікуваний EPS",
   "earningsResultMiss": "{symbol} не досяг очікуваного EPS",
-  "earningsResultBody": "Опублікований EPS {actual}, очікуваний {estimate}"
+  "earningsResultBody": "Опублікований EPS {actual}, очікуваний {estimate}",
+  "newsExplain": "Що це означає?",
+  "newsExplainNote": "Пояснення від ШІ лише на основі заголовка та короткого змісту. Не є інвестиційною порадою. Витрачається денний ліміт запитань, а не аналіз."
 }

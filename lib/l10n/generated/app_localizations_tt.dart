@@ -2304,4 +2304,11 @@ class AppLocalizationsTt extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'Игълан ителгән EPS $actual, көтелгән $estimate';
   }
+
+  @override
+  String get newsExplain => 'Бу нәрсәне аңлата?';
+
+  @override
+  String get newsExplainNote =>
+      'Баш исем һәм кыскача эчтәлеккә генә нигезләнгән AI аңлатмасы. Инвестиция киңәше түгел. Көндәлек сораулар чигегездән тотыла, анализ түгел.';
 }

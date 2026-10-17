@@ -617,5 +617,7 @@
   "rebalanceOk": "Nĩ gũkinyĩte muoroto",
   "earningsResultBeat": "{symbol} nĩĩkĩrĩte EPS ĩrĩa yetagĩrĩrwo",
   "earningsResultMiss": "{symbol} ndĩkinyĩte EPS ĩrĩa yetagĩrĩrwo",
-  "earningsResultBody": "EPS ĩrĩa yaheanirwo {actual}, yetagĩrĩrwo {estimate}"
+  "earningsResultBody": "EPS ĩrĩa yaheanirwo {actual}, yetagĩrĩrwo {estimate}",
+  "newsExplain": "Ũũ nĩ kuuga atĩa?",
+  "newsExplainNote": "Ũtaarĩria wa AI ũrĩa ũrĩ igũrũ rĩa kĩongo na ũhoro mũkuhĩ tu. Ti ũtaaro wa investment. Ĩhũthagĩra mũhaka wa ciũria ciaku cia o mũthenya, ti ũthuthuria."
 }

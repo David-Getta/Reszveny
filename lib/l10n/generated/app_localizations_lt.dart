@@ -2368,4 +2368,11 @@ class AppLocalizationsLt extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'Paskelbtas EPS $actual, prognozuotas $estimate';
   }
+
+  @override
+  String get newsExplain => 'Ką tai reiškia?';
+
+  @override
+  String get newsExplainNote =>
+      'DI paaiškinimas, pagrįstas tik antrašte ir santrauka. Tai nėra investavimo rekomendacija. Naudoja jūsų dienos klausimų limitą, o ne analizę.';
 }

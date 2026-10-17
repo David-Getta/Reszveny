@@ -2197,6 +2197,12 @@ class AppLocalizationsZh extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return '实际每股收益 $actual，预期 $estimate';
   }
+
+  @override
+  String get newsExplain => '这意味着什么？';
+
+  @override
+  String get newsExplainNote => '仅根据标题和摘要生成的 AI 解读。不构成投资建议。占用每日提问次数，不消耗分析次数。';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -4390,4 +4396,10 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String earningsResultBody(String actual, String estimate) {
     return '實際每股盈利 $actual，預期 $estimate';
   }
+
+  @override
+  String get newsExplain => '這代表甚麼？';
+
+  @override
+  String get newsExplainNote => '僅根據標題及摘要產生的 AI 解讀。並不構成投資建議。佔用每日提問次數，不消耗分析次數。';
 }

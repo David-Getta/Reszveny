@@ -617,5 +617,7 @@
   "rebalanceOk": "Ó wà ní àfojúsùn",
   "earningsResultBeat": "{symbol} ré EPS tí a retí kọjá",
   "earningsResultMiss": "{symbol} kò dé EPS tí a retí",
-  "earningsResultBody": "EPS tí a kéde {actual}, tí a retí {estimate}"
+  "earningsResultBody": "EPS tí a kéde {actual}, tí a retí {estimate}",
+  "newsExplain": "Kí ni èyí túmọ̀ sí?",
+  "newsExplainNote": "Àlàyé AI tí ó dá lórí àkọlé àti àkópọ̀ rẹ̀ nìkan. Kì í ṣe ìmọ̀ràn ìdókòwò. Ó ń lo ìwọ̀n ìbéèrè ojoojúmọ́ rẹ, kì í ṣe ìtúpalẹ̀."
 }

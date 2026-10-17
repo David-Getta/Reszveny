@@ -2306,4 +2306,11 @@ class AppLocalizationsTk extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'Yglan edilen EPS $actual, garaşylýan $estimate';
   }
+
+  @override
+  String get newsExplain => 'Bu näme aňladýar?';
+
+  @override
+  String get newsExplainNote =>
+      'Diňe sözbaşy we gysgaça mazmuna esaslanýan AI düşündirişi. Maýa goýum maslahaty däldir. Gündelik sorag çägiňizden harçlanýar, seljerme däl.';
 }

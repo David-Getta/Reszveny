@@ -617,5 +617,7 @@
   "rebalanceOk": "Në synim",
   "earningsResultBeat": "{symbol} tejkaloi EPS-në e pritur",
   "earningsResultMiss": "{symbol} nuk arriti EPS-në e pritur",
-  "earningsResultBody": "EPS e raportuar {actual}, e pritur {estimate}"
+  "earningsResultBody": "EPS e raportuar {actual}, e pritur {estimate}",
+  "newsExplain": "Çfarë do të thotë kjo?",
+  "newsExplainNote": "Shpjegim nga AI bazuar vetëm në titull dhe përmbledhje. Nuk përbën këshillë investimi. Përdor kufirin tuaj ditor të pyetjeve, jo një analizë."
 }

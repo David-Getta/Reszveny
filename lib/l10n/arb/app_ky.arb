@@ -617,5 +617,7 @@
   "rebalanceOk": "Максатта",
   "earningsResultBeat": "{symbol} күтүлгөн EPSтен ашты",
   "earningsResultMiss": "{symbol} күтүлгөн EPSке жеткен жок",
-  "earningsResultBody": "Жарыяланган EPS {actual}, күтүлгөн {estimate}"
+  "earningsResultBody": "Жарыяланган EPS {actual}, күтүлгөн {estimate}",
+  "newsExplain": "Бул эмнени билдирет?",
+  "newsExplainNote": "Аталышка жана кыскача мазмунга гана негизделген AI түшүндүрмөсү. Инвестициялык кеңеш эмес. Күнүмдүк суроолор чегиңизден сарпталат, талдоо эмес."
 }

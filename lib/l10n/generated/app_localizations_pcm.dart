@@ -2306,4 +2306,11 @@ class AppLocalizationsPcm extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS wey company report $actual, dem expect $estimate';
   }
+
+  @override
+  String get newsExplain => 'Wetin dis one mean?';
+
+  @override
+  String get newsExplainNote =>
+      'AI explanation wey base only on di headline and di summary. E no be investment advice. E dey use your daily question limit, no be analysis.';
 }

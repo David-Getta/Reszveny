@@ -2296,4 +2296,11 @@ class AppLocalizationsBo extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'སྙན་ཞུ་བྱས་པའི་EPS $actual། རེ་སྒུག་བྱས་པ $estimate';
   }
+
+  @override
+  String get newsExplain => 'འདིའི་དོན་གང་ཡིན།';
+
+  @override
+  String get newsExplainNote =>
+      'འགོ་བརྗོད་དང་བསྡུས་དོན་ཁོ་ན་ལ་གཞིགས་པའི་ AI འགྲེལ་བཤད། མ་འཇོག་གི་བསམ་འཆར་མིན། ཉིན་རེའི་དྲི་བའི་ཚད་ནས་འགྲོ་བ་ཡིན་ལ་དབྱེ་ཞིབ་མི་བེད་སྤྱོད།';
 }

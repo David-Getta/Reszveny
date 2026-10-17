@@ -2318,4 +2318,11 @@ class AppLocalizationsLn extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS oyo eyebisami $actual, ezelamaki $estimate';
   }
+
+  @override
+  String get newsExplain => 'Yango elakisi nini?';
+
+  @override
+  String get newsExplainNote =>
+      'Ndimbola ya AI oyo esalemi kaka na motó ya nsango mpe mokuse na yango. Ezali toli ya kotia mbɔngɔ te. Esalelaka ndelo ya mituna na yo ya mokolo na mokolo, kasi botaleli te.';
 }

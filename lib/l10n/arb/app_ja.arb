@@ -617,5 +617,7 @@
   "rebalanceOk": "目標どおり",
   "earningsResultBeat": "{symbol}はEPS予想を上回りました",
   "earningsResultMiss": "{symbol}はEPS予想を下回りました",
-  "earningsResultBody": "EPS実績 {actual}、予想 {estimate}"
+  "earningsResultBody": "EPS実績 {actual}、予想 {estimate}",
+  "newsExplain": "これはどういう意味？",
+  "newsExplainNote": "見出しと要約だけに基づく AI の解説です。投資助言ではありません。1日の質問回数を使い、分析回数は消費しません。"
 }

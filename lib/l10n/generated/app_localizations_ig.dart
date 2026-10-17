@@ -2302,4 +2302,11 @@ class AppLocalizationsIg extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS e kwuputara $actual, a tụrụ anya $estimate';
   }
+
+  @override
+  String get newsExplain => 'Gịnị ka nke a pụtara?';
+
+  @override
+  String get newsExplainNote =>
+      'Nkọwa AI dabere naanị n\'isiokwu na nchịkọta ya. Ọ bụghị ndụmọdụ itinye ego. Ọ na-eji oke ajụjụ gị kwa ụbọchị, ọ bụghị nyocha.';
 }

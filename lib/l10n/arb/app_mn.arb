@@ -617,5 +617,7 @@
   "rebalanceOk": "Зорилтод хүрсэн",
   "earningsResultBeat": "{symbol} хүлээгдэж буй EPS-ээс давлаа",
   "earningsResultMiss": "{symbol} хүлээгдэж буй EPS-д хүрсэнгүй",
-  "earningsResultBody": "Тайлагнасан EPS {actual}, хүлээгдэж буй {estimate}"
+  "earningsResultBody": "Тайлагнасан EPS {actual}, хүлээгдэж буй {estimate}",
+  "newsExplain": "Энэ юу гэсэн үг вэ?",
+  "newsExplainNote": "Зөвхөн гарчиг болон хураангуйд үндэслэсэн AI-ийн тайлбар. Хөрөнгө оруулалтын зөвлөгөө биш. Өдрийн асуултын хязгаараас тань зарцуулна, шинжилгээ биш."
 }

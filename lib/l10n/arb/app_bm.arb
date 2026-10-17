@@ -617,5 +617,7 @@
   "rebalanceOk": "A sera laɲini ma",
   "earningsResultBeat": "{symbol} ye EPS makɔnɔnen tɛmɛ",
   "earningsResultMiss": "{symbol} ma se EPS makɔnɔnen ma",
-  "earningsResultBody": "EPS fɔlen {actual}, makɔnɔnen {estimate}"
+  "earningsResultBody": "EPS fɔlen {actual}, makɔnɔnen {estimate}",
+  "newsExplain": "Nin kɔrɔ ye mun ye?",
+  "newsExplainNote": "AI ka ɲɛfɔli min sinsinnen bɛ kunkan ni a kuncɛ dɔrɔn kan. Wari donni ladilikan tɛ. A bɛ bɔ i ka don o don ɲininkaliw hakɛ la, a tɛ sɛgɛsɛgɛli si ta."
 }

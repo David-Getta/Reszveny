@@ -2370,4 +2370,11 @@ class AppLocalizationsPl extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'Raportowany EPS $actual, oczekiwany $estimate';
   }
+
+  @override
+  String get newsExplain => 'Co to oznacza?';
+
+  @override
+  String get newsExplainNote =>
+      'Wyjaśnienie AI oparte wyłącznie na nagłówku i streszczeniu. Nie stanowi porady inwestycyjnej. Korzysta z dziennego limitu pytań, nie zużywa analizy.';
 }

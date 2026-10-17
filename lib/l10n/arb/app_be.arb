@@ -617,5 +617,7 @@
   "rebalanceOk": "Адпавядае мэце",
   "earningsResultBeat": "{symbol} перавысіў чаканы EPS",
   "earningsResultMiss": "{symbol} не дасягнуў чаканага EPS",
-  "earningsResultBody": "Апублікаваны EPS {actual}, чаканы {estimate}"
+  "earningsResultBody": "Апублікаваны EPS {actual}, чаканы {estimate}",
+  "newsExplain": "Што гэта значыць?",
+  "newsExplainNote": "Тлумачэнне AI толькі на аснове загалоўка і кароткага зместу. Не з’яўляецца інвестыцыйнай парадай. Выкарыстоўвае дзённы ліміт пытанняў, а не аналіз."
 }

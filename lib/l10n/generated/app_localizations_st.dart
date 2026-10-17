@@ -2320,4 +2320,11 @@ class AppLocalizationsSt extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS e tlalehilweng $actual, e lebelletsweng $estimate';
   }
+
+  @override
+  String get newsExplain => 'See se bolelang?';
+
+  @override
+  String get newsExplainNote =>
+      'Tlhaloso ya AI e thehilweng hodima sehlooho le kakaretso ya sona feela. Hase keletso ya ho tsetela. E sebedisa moedi wa hao wa dipotso wa letsatsi le letsatsi, eseng manollo.';
 }

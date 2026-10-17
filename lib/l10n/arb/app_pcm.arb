@@ -617,5 +617,7 @@
   "rebalanceOk": "E don reach target",
   "earningsResultBeat": "{symbol} pass di EPS wey dem expect",
   "earningsResultMiss": "{symbol} no reach di EPS wey dem expect",
-  "earningsResultBody": "EPS wey company report {actual}, dem expect {estimate}"
+  "earningsResultBody": "EPS wey company report {actual}, dem expect {estimate}",
+  "newsExplain": "Wetin dis one mean?",
+  "newsExplainNote": "AI explanation wey base only on di headline and di summary. E no be investment advice. E dey use your daily question limit, no be analysis."
 }

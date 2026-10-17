@@ -2293,4 +2293,11 @@ class AppLocalizationsMos extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS sẽn wilgã $actual, sẽn gũudã $estimate';
   }
+
+  @override
+  String get newsExplain => 'Woto rata n yeel bõe?';
+
+  @override
+  String get newsExplainNote =>
+      'AI wilgri, sẽn tik zug-sõngã la a koe-kʋʋnã bala. Pa sagls ligd kẽesg wɛɛngẽ ye. A tũuda f daar fãa sokr sõorã, pa vẽenegr ye.';
 }

@@ -2281,4 +2281,11 @@ class AppLocalizationsLo extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS ທີ່ລາຍງານ $actual, ຄາດໄວ້ $estimate';
   }
+
+  @override
+  String get newsExplain => 'ນີ້ໝາຍຄວາມວ່າແນວໃດ?';
+
+  @override
+  String get newsExplainNote =>
+      'ຄຳອະທິບາຍຈາກ AI ອີງໃສ່ພຽງຫົວຂໍ້ຂ່າວ ແລະ ບົດສະຫຼຸບເທົ່ານັ້ນ. ບໍ່ແມ່ນຄຳແນະນຳການລົງທຶນ. ໃຊ້ໂຄຕາຄຳຖາມປະຈຳວັນຂອງທ່ານ ບໍ່ແມ່ນການວິເຄາະ.';
 }

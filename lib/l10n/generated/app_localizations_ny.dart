@@ -2313,4 +2313,11 @@ class AppLocalizationsNy extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS yolengezedwa $actual, yoyembekezeredwa $estimate';
   }
+
+  @override
+  String get newsExplain => 'Kodi izi zikutanthauza chiyani?';
+
+  @override
+  String get newsExplainNote =>
+      'Kufotokozera kwa AI kozikidwa pamutu wa nkhani ndi chidule chake chokha. Si malangizo okhudza kuyika ndalama. Chimagwiritsa ntchito malire a mafunso anu a tsiku ndi tsiku, osati kusanthula.';
 }

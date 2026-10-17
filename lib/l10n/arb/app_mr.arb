@@ -617,5 +617,7 @@
   "rebalanceOk": "लक्ष्यावर",
   "earningsResultBeat": "{symbol} ने अपेक्षित EPS ओलांडला",
   "earningsResultMiss": "{symbol} अपेक्षित EPS पेक्षा कमी",
-  "earningsResultBody": "जाहीर EPS {actual}, अपेक्षित {estimate}"
+  "earningsResultBody": "जाहीर EPS {actual}, अपेक्षित {estimate}",
+  "newsExplain": "याचा अर्थ काय?",
+  "newsExplainNote": "फक्त मथळा आणि सारांशावर आधारित AI स्पष्टीकरण. हा गुंतवणूक सल्ला नाही. हे तुमच्या दैनिक प्रश्न-मर्यादेतून जाते, कोणतेही विश्लेषण खर्च होत नाही."
 }

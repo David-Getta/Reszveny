@@ -617,5 +617,7 @@
   "rebalanceOk": "Kwinjongo",
   "earningsResultBeat": "{symbol} idlule i-EPS elindelekileyo",
   "earningsResultMiss": "{symbol} ayifikanga kwi-EPS elindelekileyo",
-  "earningsResultBody": "I-EPS exeliweyo {actual}, elindelekileyo {estimate}"
+  "earningsResultBody": "I-EPS exeliweyo {actual}, elindelekileyo {estimate}",
+  "newsExplain": "Oku kuthetha ukuthini?",
+  "newsExplainNote": "Ingcaciso ye-AI esekelwe kuphela kwisihloko nesishwankathelo saso. Ayilocebiso lotyalo-mali. Sisebenzisa umda wakho wemibuzo wemihla ngemihla, hayi uhlalutyo."
 }

@@ -617,5 +617,7 @@
   "rebalanceOk": "På mål",
   "earningsResultBeat": "{symbol} slo forventet EPS",
   "earningsResultMiss": "{symbol} var under forventet EPS",
-  "earningsResultBody": "Rapportert EPS {actual}, forventet {estimate}"
+  "earningsResultBody": "Rapportert EPS {actual}, forventet {estimate}",
+  "newsExplain": "Hva betyr dette?",
+  "newsExplainNote": "AI-forklaring basert kun på overskriften og sammendraget. Det er ikke investeringsråd. Bruker av den daglige spørsmålskvoten din, ikke en analyse."
 }

@@ -2307,4 +2307,11 @@ class AppLocalizationsKi extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS ĩrĩa yaheanirwo $actual, yetagĩrĩrwo $estimate';
   }
+
+  @override
+  String get newsExplain => 'Ũũ nĩ kuuga atĩa?';
+
+  @override
+  String get newsExplainNote =>
+      'Ũtaarĩria wa AI ũrĩa ũrĩ igũrũ rĩa kĩongo na ũhoro mũkuhĩ tu. Ti ũtaaro wa investment. Ĩhũthagĩra mũhaka wa ciũria ciaku cia o mũthenya, ti ũthuthuria.';
 }

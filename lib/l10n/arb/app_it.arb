@@ -617,5 +617,7 @@
   "rebalanceOk": "In linea",
   "earningsResultBeat": "{symbol} supera l'EPS atteso",
   "earningsResultMiss": "{symbol} sotto l'EPS atteso",
-  "earningsResultBody": "EPS comunicato {actual}, atteso {estimate}"
+  "earningsResultBody": "EPS comunicato {actual}, atteso {estimate}",
+  "newsExplain": "Che cosa significa?",
+  "newsExplainNote": "Spiegazione dell’IA basata solo sul titolo e sul riassunto. Non costituisce un consiglio di investimento. Usa il tuo limite giornaliero di domande, non un’analisi."
 }

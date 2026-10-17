@@ -617,5 +617,7 @@
   "rebalanceOk": "Célon",
   "earningsResultBeat": "{symbol}: a várt EPS felett",
   "earningsResultMiss": "{symbol}: a várt EPS alatt",
-  "earningsResultBody": "Jelentett EPS {actual}, várt {estimate}"
+  "earningsResultBody": "Jelentett EPS {actual}, várt {estimate}",
+  "newsExplain": "Mit jelent ez?",
+  "newsExplainNote": "AI-magyarázat, csak a cím és az összefoglaló alapján. Nem befektetési tanács. A napi kérdéskeretből megy, elemzést nem fogyaszt."
 }

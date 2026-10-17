@@ -617,5 +617,7 @@
   "rebalanceOk": "Sepheong",
   "earningsResultBeat": "{symbol} e fetile EPS e lebelletsweng",
   "earningsResultMiss": "{symbol} ha e a fihla EPS e lebelletsweng",
-  "earningsResultBody": "EPS e tlalehilweng {actual}, e lebelletsweng {estimate}"
+  "earningsResultBody": "EPS e tlalehilweng {actual}, e lebelletsweng {estimate}",
+  "newsExplain": "See se bolelang?",
+  "newsExplainNote": "Tlhaloso ya AI e thehilweng hodima sehlooho le kakaretso ya sona feela. Hase keletso ya ho tsetela. E sebedisa moedi wa hao wa dipotso wa letsatsi le letsatsi, eseng manollo."
 }

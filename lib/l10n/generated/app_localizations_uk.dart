@@ -2371,4 +2371,11 @@ class AppLocalizationsUk extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'Опублікований EPS $actual, очікуваний $estimate';
   }
+
+  @override
+  String get newsExplain => 'Що це означає?';
+
+  @override
+  String get newsExplainNote =>
+      'Пояснення від ШІ лише на основі заголовка та короткого змісту. Не є інвестиційною порадою. Витрачається денний ліміт запитань, а не аналіз.';
 }

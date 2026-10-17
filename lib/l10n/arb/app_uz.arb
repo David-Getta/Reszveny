@@ -617,5 +617,7 @@
   "rebalanceOk": "Maqsadda",
   "earningsResultBeat": "{symbol} kutilgan EPS’dan oshdi",
   "earningsResultMiss": "{symbol} kutilgan EPS’ga yetmadi",
-  "earningsResultBody": "Eʼlon qilingan EPS {actual}, kutilgan {estimate}"
+  "earningsResultBody": "Eʼlon qilingan EPS {actual}, kutilgan {estimate}",
+  "newsExplain": "Bu nimani anglatadi?",
+  "newsExplainNote": "Faqat sarlavha va qisqacha mazmunga asoslangan AI izohi. Bu investitsiya maslahati emas. Kunlik savollar limitingizdan sarflanadi, tahlil emas."
 }

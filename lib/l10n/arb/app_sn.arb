@@ -617,5 +617,7 @@
   "rebalanceOk": "Pachinangwa",
   "earningsResultBeat": "{symbol} yapfuura EPS inotarisirwa",
   "earningsResultMiss": "{symbol} haina kusvika EPS inotarisirwa",
-  "earningsResultBody": "EPS yakaziviswa {actual}, inotarisirwa {estimate}"
+  "earningsResultBody": "EPS yakaziviswa {actual}, inotarisirwa {estimate}",
+  "newsExplain": "Izvi zvinorevei?",
+  "newsExplainNote": "Tsananguro yeAI yakavakirwa pamusoro wenhau nepfupiso yayo chete. Haisi zano rekuisa mari. Inoshandisa muganhu wako wemibvunzo wezuva nezuva, kwete ongororo."
 }

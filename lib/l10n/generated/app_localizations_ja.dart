@@ -2229,4 +2229,11 @@ class AppLocalizationsJa extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS実績 $actual、予想 $estimate';
   }
+
+  @override
+  String get newsExplain => 'これはどういう意味？';
+
+  @override
+  String get newsExplainNote =>
+      '見出しと要約だけに基づく AI の解説です。投資助言ではありません。1日の質問回数を使い、分析回数は消費しません。';
 }

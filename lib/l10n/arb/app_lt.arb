@@ -617,5 +617,7 @@
   "rebalanceOk": "Atitinka tikslą",
   "earningsResultBeat": "{symbol} viršijo prognozuotą EPS",
   "earningsResultMiss": "{symbol} nepasiekė prognozuoto EPS",
-  "earningsResultBody": "Paskelbtas EPS {actual}, prognozuotas {estimate}"
+  "earningsResultBody": "Paskelbtas EPS {actual}, prognozuotas {estimate}",
+  "newsExplain": "Ką tai reiškia?",
+  "newsExplainNote": "DI paaiškinimas, pagrįstas tik antrašte ir santrauka. Tai nėra investavimo rekomendacija. Naudoja jūsų dienos klausimų limitą, o ne analizę."
 }

@@ -617,5 +617,7 @@
   "rebalanceOk": "Im Ziel",
   "earningsResultBeat": "{symbol} übertrifft das erwartete EPS",
   "earningsResultMiss": "{symbol} verfehlt das erwartete EPS",
-  "earningsResultBody": "Gemeldetes EPS {actual}, erwartet {estimate}"
+  "earningsResultBody": "Gemeldetes EPS {actual}, erwartet {estimate}",
+  "newsExplain": "Was bedeutet das?",
+  "newsExplainNote": "KI-Erklärung, nur auf Basis der Schlagzeile und der Zusammenfassung. Keine Anlageberatung. Zählt zu deinem täglichen Fragenkontingent, nicht als Analyse."
 }

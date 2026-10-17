@@ -2306,4 +2306,11 @@ class AppLocalizationsTr extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'Açıklanan HBK $actual, beklenen $estimate';
   }
+
+  @override
+  String get newsExplain => 'Bu ne anlama geliyor?';
+
+  @override
+  String get newsExplainNote =>
+      'Yalnızca başlık ve özete dayanan yapay zekâ açıklaması. Yatırım tavsiyesi değildir. Günlük soru hakkından düşer, analiz hakkı kullanmaz.';
 }

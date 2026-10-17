@@ -2312,4 +2312,11 @@ class AppLocalizationsPt extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'LPA divulgado $actual, esperado $estimate';
   }
+
+  @override
+  String get newsExplain => 'O que isto significa?';
+
+  @override
+  String get newsExplainNote =>
+      'Explicação de IA baseada apenas no título e no resumo. Não constitui aconselhamento de investimento. Usa o seu limite diário de perguntas, não uma análise.';
 }

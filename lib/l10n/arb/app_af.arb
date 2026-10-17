@@ -617,5 +617,7 @@
   "rebalanceOk": "Op teiken",
   "earningsResultBeat": "{symbol} het die verwagte WPA oortref",
   "earningsResultMiss": "{symbol} het die verwagte WPA nie gehaal nie",
-  "earningsResultBody": "Gerapporteerde WPA {actual}, verwag {estimate}"
+  "earningsResultBody": "Gerapporteerde WPA {actual}, verwag {estimate}",
+  "newsExplain": "Wat beteken dit?",
+  "newsExplainNote": "AI-verduideliking slegs gebaseer op die opskrif en die opsomming. Dit is nie beleggingsadvies nie. Dit gebruik jou daaglikse vraagtoelae, nie ’n ontleding nie."
 }

@@ -617,5 +617,7 @@
   "rebalanceOk": "No obxectivo",
   "earningsResultBeat": "{symbol} supera o BPA esperado",
   "earningsResultMiss": "{symbol} non alcanza o BPA esperado",
-  "earningsResultBody": "BPA publicado {actual}, esperado {estimate}"
+  "earningsResultBody": "BPA publicado {actual}, esperado {estimate}",
+  "newsExplain": "Que significa isto?",
+  "newsExplainNote": "Explicación de IA baseada só no titular e no resumo. Non constitúe asesoramento de investimento. Usa o teu límite diario de preguntas, non unha análise."
 }

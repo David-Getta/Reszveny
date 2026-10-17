@@ -2322,4 +2322,11 @@ class AppLocalizationsTs extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS leyi vikiweke $actual, leyi languteriweke $estimate';
   }
+
+  @override
+  String get newsExplain => 'Leswi swi vula yini?';
+
+  @override
+  String get newsExplainNote =>
+      'Nhlamuselo ya AI leyi simekiweke ntsena eka nhloko ya mahungu ni nkatsakanyo wa wona. A hi ndzayo ya vuvekisi. Yi tirhisa ndzelekano wa wena wa swivutiso wa siku na siku, ku nga ri nxopaxopo.';
 }

@@ -617,5 +617,7 @@
   "rebalanceOk": "Mufike ku tshipatshila",
   "earningsResultBeat": "{symbol} mupite EPS idibu batekemene",
   "earningsResultMiss": "{symbol} kafiki ku EPS idibu batekemene to",
-  "earningsResultBody": "EPS idibu bamanyishe {actual}, batekemene {estimate}"
+  "earningsResultBody": "EPS idibu bamanyishe {actual}, batekemene {estimate}",
+  "newsExplain": "Bualu ebu budi bumvuija tshinyi?",
+  "newsExplainNote": "Diumvuija dia AI didi dishindamine anu pa mutu wa lumu ne bukese buawu. Kadiena mibelu ya kuteka mfranga. Bidi bienzeja mukalu wa nkonko yebe ya dituku dionso, kabiyi dikonkonona."
 }

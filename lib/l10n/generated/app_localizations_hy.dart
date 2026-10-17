@@ -2314,4 +2314,11 @@ class AppLocalizationsHy extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'Հրապարակված EPS $actual, սպասվող $estimate';
   }
+
+  @override
+  String get newsExplain => 'Ի՞նչ է սա նշանակում';
+
+  @override
+  String get newsExplainNote =>
+      'AI-ի բացատրություն՝ հիմնված միայն վերնագրի և ամփոփման վրա։ Ներդրումային խորհուրդ չէ։ Օգտագործում է ձեր օրական հարցերի սահմանաչափը, ոչ թե վերլուծություն։';
 }

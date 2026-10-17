@@ -2287,4 +2287,11 @@ class AppLocalizationsKm extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS ដែលបានរាយការណ៍ $actual រំពឹងទុក $estimate';
   }
+
+  @override
+  String get newsExplain => 'តើនេះមានន័យដូចម្តេច?';
+
+  @override
+  String get newsExplainNote =>
+      'ការពន្យល់ដោយ AI ផ្អែកតែលើចំណងជើង និងសេចក្តីសង្ខេបប៉ុណ្ណោះ។ មិនមែនជាដំបូន្មានវិនិយោគទេ។ វាប្រើកម្រិតសំណួរប្រចាំថ្ងៃរបស់អ្នក មិនមែនការវិភាគទេ។';
 }

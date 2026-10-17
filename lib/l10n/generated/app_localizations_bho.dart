@@ -2302,4 +2302,11 @@ class AppLocalizationsBho extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'घोषित EPS $actual, अनुमानित $estimate';
   }
+
+  @override
+  String get newsExplain => 'एकर का मतलब बा?';
+
+  @override
+  String get newsExplainNote =>
+      'खाली हेडलाइन आ सारांश पर आधारित AI के व्याख्या। ई निवेश के सलाह ना ह। ई रउआ रोज के सवाल के सीमा से जाला, कवनो विश्लेषण खरच ना होला।';
 }

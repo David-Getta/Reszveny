@@ -2311,4 +2311,11 @@ class AppLocalizationsMs extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS dilaporkan $actual, dijangka $estimate';
   }
+
+  @override
+  String get newsExplain => 'Apakah maksudnya?';
+
+  @override
+  String get newsExplainNote =>
+      'Penjelasan AI berdasarkan tajuk dan ringkasannya sahaja. Bukan nasihat pelaburan. Menggunakan had soalan harian anda, bukan analisis.';
 }

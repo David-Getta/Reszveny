@@ -2316,4 +2316,11 @@ class AppLocalizationsCeb extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'Gi-report nga EPS $actual, gipaabot $estimate';
   }
+
+  @override
+  String get newsExplain => 'Unsa ang buot ipasabot niini?';
+
+  @override
+  String get newsExplainNote =>
+      'Pagpatin-aw sa AI base lamang sa ulohan ug sa katingbanan. Dili kini tambag sa pagpamuhunan. Mogamit kini sa imong adlaw-adlaw nga limitasyon sa pangutana, dili sa pagtuki.';
 }

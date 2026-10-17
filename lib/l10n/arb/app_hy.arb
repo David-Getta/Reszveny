@@ -617,5 +617,7 @@
   "rebalanceOk": "Թիրախում է",
   "earningsResultBeat": "{symbol}-ը գերազանցեց սպասվող EPS-ը",
   "earningsResultMiss": "{symbol}-ը չհասավ սպասվող EPS-ին",
-  "earningsResultBody": "Հրապարակված EPS {actual}, սպասվող {estimate}"
+  "earningsResultBody": "Հրապարակված EPS {actual}, սպասվող {estimate}",
+  "newsExplain": "Ի՞նչ է սա նշանակում",
+  "newsExplainNote": "AI-ի բացատրություն՝ հիմնված միայն վերնագրի և ամփոփման վրա։ Ներդրումային խորհուրդ չէ։ Օգտագործում է ձեր օրական հարցերի սահմանաչափը, ոչ թե վերլուծություն։"
 }

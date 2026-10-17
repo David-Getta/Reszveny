@@ -617,5 +617,7 @@
   "rebalanceOk": "Ci jubluwaay bi",
   "earningsResultBeat": "{symbol} weesu na EPS bi ñu séentu",
   "earningsResultMiss": "{symbol} agsiwul EPS bi ñu séentu",
-  "earningsResultBody": "EPS bi ñu yégle {actual}, bi ñu séentu {estimate}"
+  "earningsResultBody": "EPS bi ñu yégle {actual}, bi ñu séentu {estimate}",
+  "newsExplain": "Lan la lii tekki?",
+  "newsExplainNote": "Leeral bu AI defar, mu sukkandiku rekk ci tur bi ak ndaneel li. Du ndigal ci dugal xaalis. Dafay jëfandikoo sa limu laaj yu bés bu nekk, du xayma."
 }

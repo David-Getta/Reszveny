@@ -617,5 +617,7 @@
   "rebalanceOk": "نىشاندا",
   "earningsResultBeat": "{symbol} مۆلچەردىكى EPS دىن ئاشتى",
   "earningsResultMiss": "{symbol} مۆلچەردىكى EPS غا يەتمىدى",
-  "earningsResultBody": "ئېلان قىلىنغان EPS {actual}، مۆلچەر {estimate}"
+  "earningsResultBody": "ئېلان قىلىنغان EPS {actual}، مۆلچەر {estimate}",
+  "newsExplain": "بۇ نېمە دېگەنلىك؟",
+  "newsExplainNote": "پەقەت ماۋزۇ ۋە قىسقىچە مەزمۇنغا ئاساسلانغان AI چۈشەندۈرۈشى. مەبلەغ سېلىش تەۋسىيەسى ئەمەس. كۈندىلىك سوئال چېكىڭىزدىن سەرپ بولىدۇ، تەھلىل ئەمەس."
 }

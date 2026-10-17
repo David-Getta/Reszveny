@@ -235,6 +235,7 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 5bc | Gyorsjelentés eredménye értesítésben: a jelentés után (ha előtte emlékeztettünk rá) egyszer szól, hogy a cég a várt EPS felett vagy alatt teljesített, a számokkal | ✅ kész |
 | 5bd | A Kedvencek listán kis harang jelzi az aktív árfolyam-riasztást | ✅ kész |
 | 5be | Elrendezés-ellenőrzés keskeny telefonon (340 px, 1,4× betű): kezdőlap, részvény oldal, portfólió, riasztások, beállítások – a kilógó sorok javítva, állandó teszttel | ✅ kész |
+| 5bf | „Mit jelent ez?” a híreknél: néhány mondatos AI-magyarázat arról, mi történt és mit jelenthet a részvényre (csak a cím és az összefoglaló alapján, a kérdéskeretből) | ✅ kész |
 | 5j | Telefonos háttér-értesítés (riasztás) szerverről, APNs / FCM | 🟡 első lépés kész: a szerver 10 percenként nézi a belépett fiókok szinkronizált riasztásait, és e-mailben szól (csukott appnál is, kikapcsolható); a telefonos push (APNs / FCM) a Firebase-projekt és az Apple-kulcs után |
 | 5k | Bolti adatlapok 120 nyelven, képernyőképek, ikon, előnézeti videó | 🟡 adatlap-szövegek 70 bolti nyelven (fastlane-mappa, `docs/BOLTI_ADATLAP.md`), feliratos bolti képek a teszt-harnessből a boltok méreteiben; előnézeti videó és a nem latin írású képek a natív buildből később |
 

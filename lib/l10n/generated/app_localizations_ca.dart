@@ -2316,4 +2316,11 @@ class AppLocalizationsCa extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'BPA publicat $actual, previst $estimate';
   }
+
+  @override
+  String get newsExplain => 'Què vol dir això?';
+
+  @override
+  String get newsExplainNote =>
+      'Explicació d’IA basada només en el titular i el resum. No constitueix assessorament d’inversió. Fa servir el teu límit diari de preguntes, no una anàlisi.';
 }

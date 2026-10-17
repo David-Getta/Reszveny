@@ -617,5 +617,7 @@
   "rebalanceOk": "Hadafka waa la gaaray",
   "earningsResultBeat": "{symbol} wuxuu dhaafay EPS la filayo",
   "earningsResultMiss": "{symbol} ma gaarin EPS la filayo",
-  "earningsResultBody": "EPS la sheegay {actual}, la filayo {estimate}"
+  "earningsResultBody": "EPS la sheegay {actual}, la filayo {estimate}",
+  "newsExplain": "Muxuu kan ka dhigan yahay?",
+  "newsExplainNote": "Sharaxaad AI oo ku salaysan oo keliya cinwaanka iyo soo koobidda. Ma aha talo maalgashi. Waxay isticmaashaa xadka su’aalahaaga maalinlaha ah, ma aha falanqayn."
 }

@@ -2307,4 +2307,11 @@ class AppLocalizationsCkb extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPSی ڕاگەیەنراو $actual، چاوەڕوانکراو $estimate';
   }
+
+  @override
+  String get newsExplain => 'ئەمە واتای چییە؟';
+
+  @override
+  String get newsExplainNote =>
+      'ڕوونکردنەوەی AI تەنها لەسەر بنەمای سەردێڕ و کورتەکە. ئامۆژگاریی وەبەرهێنان نییە. لە سنووری پرسیارە ڕۆژانەکانت دەبرێت، شیکاری بەکارناهێنێت.';
 }

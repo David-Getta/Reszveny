@@ -617,5 +617,7 @@
   "rebalanceOk": "Imefikia lengo",
   "earningsResultBeat": "{symbol} imezidi EPS inayotarajiwa",
   "earningsResultMiss": "{symbol} haijafikia EPS inayotarajiwa",
-  "earningsResultBody": "EPS iliyoripotiwa {actual}, inayotarajiwa {estimate}"
+  "earningsResultBody": "EPS iliyoripotiwa {actual}, inayotarajiwa {estimate}",
+  "newsExplain": "Hii inamaanisha nini?",
+  "newsExplainNote": "Maelezo ya AI yanayotegemea kichwa cha habari na muhtasari wake pekee. Si ushauri wa uwekezaji. Hutumia kikomo chako cha maswali cha kila siku, si uchambuzi."
 }

@@ -617,5 +617,7 @@
   "rebalanceOk": "Edu botaeɛ so",
   "earningsResultBeat": "{symbol} EPS boro deɛ wɔhwɛɛ kwan",
   "earningsResultMiss": "{symbol} EPS anndu deɛ wɔhwɛɛ kwan",
-  "earningsResultBody": "EPS a wɔbɔɔ ho amanneɛ {actual}, wɔhwɛɛ kwan {estimate}"
+  "earningsResultBody": "EPS a wɔbɔɔ ho amanneɛ {actual}, wɔhwɛɛ kwan {estimate}",
+  "newsExplain": "Dɛn na eyi kyerɛ?",
+  "newsExplainNote": "AI nkyerɛkyerɛmu a egyina asɛmti no ne ne mua nko ara so. Ɛnyɛ sikahyɛmu ho afotu. Ɛfiri wo nsɛmmisa a ɛsɛ da biara mu, ɛnni nhwehwɛmu biara."
 }

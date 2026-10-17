@@ -2309,4 +2309,11 @@ class AppLocalizationsKy extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'Жарыяланган EPS $actual, күтүлгөн $estimate';
   }
+
+  @override
+  String get newsExplain => 'Бул эмнени билдирет?';
+
+  @override
+  String get newsExplainNote =>
+      'Аталышка жана кыскача мазмунга гана негизделген AI түшүндүрмөсү. Инвестициялык кеңеш эмес. Күнүмдүк суроолор чегиңизден сарпталат, талдоо эмес.';
 }

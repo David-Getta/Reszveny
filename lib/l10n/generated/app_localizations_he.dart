@@ -2299,4 +2299,11 @@ class AppLocalizationsHe extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS מדווח $actual, צפוי $estimate';
   }
+
+  @override
+  String get newsExplain => 'מה זה אומר?';
+
+  @override
+  String get newsExplainNote =>
+      'הסבר של AI על סמך הכותרת והתקציר בלבד. אינו מהווה ייעוץ השקעות. נספר במכסת השאלות היומית שלך, לא כניתוח.';
 }

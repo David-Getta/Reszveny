@@ -2312,4 +2312,11 @@ class AppLocalizationsHa extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS da aka bayyana $actual, ana tsammani $estimate';
   }
+
+  @override
+  String get newsExplain => 'Me wannan yake nufi?';
+
+  @override
+  String get newsExplainNote =>
+      'Bayanin AI bisa kanun labarin da taƙaitaccensa kawai. Ba shawarar zuba jari ba ne. Yana amfani da iyakar tambayoyinka na yau da kullum, ba nazari ba.';
 }

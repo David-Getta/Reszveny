@@ -617,5 +617,7 @@
   "rebalanceOk": "இலக்கில்",
   "earningsResultBeat": "{symbol} எதிர்பார்த்த EPS-ஐ மிஞ்சியது",
   "earningsResultMiss": "{symbol} எதிர்பார்த்த EPS-ஐ எட்டவில்லை",
-  "earningsResultBody": "அறிவிக்கப்பட்ட EPS {actual}, எதிர்பார்த்தது {estimate}"
+  "earningsResultBody": "அறிவிக்கப்பட்ட EPS {actual}, எதிர்பார்த்தது {estimate}",
+  "newsExplain": "இதன் அர்த்தம் என்ன?",
+  "newsExplainNote": "தலைப்பு மற்றும் சுருக்கத்தை மட்டுமே அடிப்படையாகக் கொண்ட AI விளக்கம். இது முதலீட்டு ஆலோசனை அல்ல. இது உங்கள் தினசரி கேள்வி வரம்பிலிருந்து செலவாகும், பகுப்பாய்வு எதுவும் செலவாகாது."
 }

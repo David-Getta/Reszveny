@@ -617,5 +617,7 @@
   "rebalanceOk": "Максатка туры килә",
   "earningsResultBeat": "{symbol} көтелгән EPS-тан узды",
   "earningsResultMiss": "{symbol} көтелгән EPS-ка җитмәде",
-  "earningsResultBody": "Игълан ителгән EPS {actual}, көтелгән {estimate}"
+  "earningsResultBody": "Игълан ителгән EPS {actual}, көтелгән {estimate}",
+  "newsExplain": "Бу нәрсәне аңлата?",
+  "newsExplainNote": "Баш исем һәм кыскача эчтәлеккә генә нигезләнгән AI аңлатмасы. Инвестиция киңәше түгел. Көндәлек сораулар чигегездән тотыла, анализ түгел."
 }

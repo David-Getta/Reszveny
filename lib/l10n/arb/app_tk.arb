@@ -617,5 +617,7 @@
   "rebalanceOk": "Maksada laýyk",
   "earningsResultBeat": "{symbol} garaşylýan EPS-den geçdi",
   "earningsResultMiss": "{symbol} garaşylýan EPS-e ýetmedi",
-  "earningsResultBody": "Yglan edilen EPS {actual}, garaşylýan {estimate}"
+  "earningsResultBody": "Yglan edilen EPS {actual}, garaşylýan {estimate}",
+  "newsExplain": "Bu näme aňladýar?",
+  "newsExplainNote": "Diňe sözbaşy we gysgaça mazmuna esaslanýan AI düşündirişi. Maýa goýum maslahaty däldir. Gündelik sorag çägiňizden harçlanýar, seljerme däl."
 }

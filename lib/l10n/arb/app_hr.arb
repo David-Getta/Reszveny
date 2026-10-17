@@ -617,5 +617,7 @@
   "rebalanceOk": "Na cilju",
   "earningsResultBeat": "{symbol} je nadmašio očekivani EPS",
   "earningsResultMiss": "{symbol} nije dosegnuo očekivani EPS",
-  "earningsResultBody": "Objavljeni EPS {actual}, očekivani {estimate}"
+  "earningsResultBody": "Objavljeni EPS {actual}, očekivani {estimate}",
+  "newsExplain": "Što ovo znači?",
+  "newsExplainNote": "Objašnjenje umjetne inteligencije samo na temelju naslova i sažetka. Nije investicijski savjet. Troši vaše dnevno ograničenje pitanja, ne analizu."
 }

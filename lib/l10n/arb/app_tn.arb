@@ -617,5 +617,7 @@
   "rebalanceOk": "Mo maikaelelong",
   "earningsResultBeat": "{symbol} e fetile EPS e e solofetsweng",
   "earningsResultMiss": "{symbol} ga e a fitlha EPS e e solofetsweng",
-  "earningsResultBody": "EPS e e begilweng {actual}, e e solofetsweng {estimate}"
+  "earningsResultBody": "EPS e e begilweng {actual}, e e solofetsweng {estimate}",
+  "newsExplain": "Se se kaya eng?",
+  "newsExplainNote": "Tlhaloso ya AI e e theilweng fela mo setlhogong le kakaretsong ya sone. Ga se kgakololo ya peeletso. E dirisa tekanyetso ya gago ya dipotso ya letsatsi le letsatsi, e seng tshekatsheko."
 }

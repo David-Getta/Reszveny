@@ -617,5 +617,7 @@
   "rebalanceOk": "Hədəfdə",
   "earningsResultBeat": "{symbol} gözlənilən EPS-i üstələdi",
   "earningsResultMiss": "{symbol} gözlənilən EPS-ə çatmadı",
-  "earningsResultBody": "Açıqlanan EPS {actual}, gözlənilən {estimate}"
+  "earningsResultBody": "Açıqlanan EPS {actual}, gözlənilən {estimate}",
+  "newsExplain": "Bu nə deməkdir?",
+  "newsExplainNote": "Yalnız başlıq və xülasə əsasında AI izahı. İnvestisiya məsləhəti deyil. Gündəlik sual limitinizdən istifadə edir, təhlil sərf etmir."
 }

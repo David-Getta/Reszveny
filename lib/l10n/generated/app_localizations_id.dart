@@ -2302,4 +2302,11 @@ class AppLocalizationsId extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS yang dilaporkan $actual, diharapkan $estimate';
   }
+
+  @override
+  String get newsExplain => 'Apa artinya ini?';
+
+  @override
+  String get newsExplainNote =>
+      'Penjelasan AI yang hanya berdasarkan judul dan ringkasannya. Bukan saran investasi. Memakai kuota pertanyaan harian Anda, bukan analisis.';
 }

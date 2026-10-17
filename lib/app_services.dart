@@ -39,6 +39,7 @@ import 'features/market_data/finnhub_market_data_provider.dart';
 import 'features/market_data/market_data_provider.dart';
 import 'features/news/daily_brief.dart';
 import 'features/news/morning_brief.dart';
+import 'features/news/news_explainer.dart';
 import 'features/news/watch_news.dart';
 import 'features/notes/notes_store.dart';
 import 'features/portfolio/portfolio_review.dart';
@@ -79,6 +80,7 @@ class AppServices {
     PortfolioReviewer? portfolioReviewer,
     DailyBrief Function(WatchNewsService news)? dailyBrief,
     HoldingsReader? holdingsReader,
+    NewsExplainer? newsExplainer,
   }) : fx = fx ?? FxService(),
        updates = updates ?? UpdateService(config: config),
        portfolio = portfolio ?? PortfolioStore(),
@@ -89,6 +91,7 @@ class AppServices {
            PortfolioReviewer(config: config, marketData: marketData, client: backend?.authenticated),
        chat = chat ?? AnalysisChat(config: config, client: backend?.authenticated),
        holdingsReader = holdingsReader ?? HoldingsReader(config: config, client: backend?.authenticated),
+       newsExplainer = newsExplainer ?? NewsExplainer(config: config, client: backend?.authenticated),
        telemetry = telemetry ?? Telemetry(preferences: preferences, sink: backend?.sendTelemetry) {
     this.telemetry.versionOf ??= () => this.updates.currentVersion;
     events = EventsService(
@@ -269,6 +272,9 @@ class AppServices {
 
   /// Bróker-képernyőkép beolvasása a portfólió-importhoz.
   final HoldingsReader holdingsReader;
+
+  /// „Mit jelent ez?” – rövid AI-magyarázat egy hírről.
+  final NewsExplainer newsExplainer;
 
   /// Saját jegyzetek részvényenként (csak a készüléken).
   final NotesStore notes;

@@ -2305,4 +2305,11 @@ class AppLocalizationsHt extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS rapòte $actual, yo te atann $estimate';
   }
+
+  @override
+  String get newsExplain => 'Kisa sa vle di?';
+
+  @override
+  String get newsExplainNote =>
+      'Eksplikasyon AI ki baze sèlman sou tit la ak rezime a. Se pa yon konsèy envestisman. Li itilize limit kesyon ou pou chak jou, pa yon analiz.';
 }

@@ -617,5 +617,7 @@
   "rebalanceOk": "Na lukanu",
   "earningsResultBeat": "{symbol} me luta EPS ya bo ke vingila",
   "earningsResultMiss": "{symbol} me kuma ve na EPS ya bo ke vingila",
-  "earningsResultBody": "EPS ya bo me pesa {actual}, ya bo ke vingila {estimate}"
+  "earningsResultBody": "EPS ya bo me pesa {actual}, ya bo ke vingila {estimate}",
+  "newsExplain": "Yai ke tendula nki?",
+  "newsExplainNote": "Ntendula ya AI yina me simbama kaka na ntu ya nsangu ti nsuka na yo. Yo ke malongi ya kutula mbongo ve. Yo ke sadilaka ndilu ya biuvu na nge ya konso kilumbu, ve nsosa."
 }

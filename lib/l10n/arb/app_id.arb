@@ -617,5 +617,7 @@
   "rebalanceOk": "Sesuai target",
   "earningsResultBeat": "{symbol} melampaui EPS yang diharapkan",
   "earningsResultMiss": "{symbol} di bawah EPS yang diharapkan",
-  "earningsResultBody": "EPS yang dilaporkan {actual}, diharapkan {estimate}"
+  "earningsResultBody": "EPS yang dilaporkan {actual}, diharapkan {estimate}",
+  "newsExplain": "Apa artinya ini?",
+  "newsExplainNote": "Penjelasan AI yang hanya berdasarkan judul dan ringkasannya. Bukan saran investasi. Memakai kuota pertanyaan harian Anda, bukan analisis."
 }

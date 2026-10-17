@@ -2314,4 +2314,11 @@ class AppLocalizationsKg extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS ya bo me pesa $actual, ya bo ke vingila $estimate';
   }
+
+  @override
+  String get newsExplain => 'Yai ke tendula nki?';
+
+  @override
+  String get newsExplainNote =>
+      'Ntendula ya AI yina me simbama kaka na ntu ya nsangu ti nsuka na yo. Yo ke malongi ya kutula mbongo ve. Yo ke sadilaka ndilu ya biuvu na nge ya konso kilumbu, ve nsosa.';
 }

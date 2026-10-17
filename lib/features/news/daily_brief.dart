@@ -147,43 +147,7 @@ Rules:
           ),
       ];
       final body = requestBody(stocks: stocks, language: language, today: _clock(), model: config.anthropicModel);
-      final http.Response res;
-      try {
-        res = await _client
-            .post(
-              Uri.parse(config.askEndpoint),
-              headers: {
-                'content-type': 'application/json',
-                if (config.anthropicApiKey.isNotEmpty) 'x-api-key': config.anthropicApiKey,
-                'anthropic-version': ClaudeStockAnalyst.anthropicVersion,
-              },
-              body: jsonEncode(body),
-            )
-            .timeout(const Duration(minutes: 2));
-      } on Exception catch (e) {
-        throw AnalysisException(AppErrorCode.aiUnreachable, cause: e);
-      }
-      if (res.statusCode == 429 && res.body.contains('ask_limit')) {
-        throw const AnalysisException(AppErrorCode.askLimit);
-      }
-      if (res.statusCode == 402) throw AnalysisException(ClaudeStockAnalyst.quotaErrorFor(res.body), cause: res.body);
-      if (res.statusCode != 200) {
-        throw AnalysisException(AppErrorCode.aiHttp, detail: '${res.statusCode}', cause: res.body);
-      }
-      final String text;
-      try {
-        final j = jsonDecode(utf8.decode(res.bodyBytes)) as Map<String, dynamic>;
-        if (j['stop_reason'] == 'refusal') throw const AnalysisException(AppErrorCode.aiRefused);
-        text = [
-          for (final b in (j['content'] as List? ?? const []))
-            if (b is Map && b['type'] == 'text') b['text'] as String? ?? '',
-        ].join().trim();
-      } on AppException {
-        rethrow;
-      } catch (e) {
-        throw AnalysisException(AppErrorCode.aiBadResponse, cause: e);
-      }
-      if (text.isEmpty) throw const AnalysisException(AppErrorCode.aiBadResponse);
+      final text = await askText(config, _client, body);
       final brief = Brief(text: text, at: _clock(), language: language);
       _last = brief;
       try {
@@ -195,4 +159,47 @@ Rules:
       notifyListeners();
     }
   }
+}
+
+/// Rövid szöveges válasz a „Kérdezz” végponton (a napi kérdéskeretből); a hibák
+/// az elemzés hibakódjaival jönnek. Az összefoglaló és a hírmagyarázat is ezt használja.
+Future<String> askText(AppConfig config, http.Client client, Map<String, dynamic> body) async {
+  final http.Response res;
+  try {
+    res = await client
+        .post(
+          Uri.parse(config.askEndpoint),
+          headers: {
+            'content-type': 'application/json',
+            if (config.anthropicApiKey.isNotEmpty) 'x-api-key': config.anthropicApiKey,
+            'anthropic-version': ClaudeStockAnalyst.anthropicVersion,
+          },
+          body: jsonEncode(body),
+        )
+        .timeout(const Duration(minutes: 2));
+  } on Exception catch (e) {
+    throw AnalysisException(AppErrorCode.aiUnreachable, cause: e);
+  }
+  if (res.statusCode == 429 && res.body.contains('ask_limit')) {
+    throw const AnalysisException(AppErrorCode.askLimit);
+  }
+  if (res.statusCode == 402) throw AnalysisException(ClaudeStockAnalyst.quotaErrorFor(res.body), cause: res.body);
+  if (res.statusCode != 200) {
+    throw AnalysisException(AppErrorCode.aiHttp, detail: '${res.statusCode}', cause: res.body);
+  }
+  final String text;
+  try {
+    final j = jsonDecode(utf8.decode(res.bodyBytes)) as Map<String, dynamic>;
+    if (j['stop_reason'] == 'refusal') throw const AnalysisException(AppErrorCode.aiRefused);
+    text = [
+      for (final b in (j['content'] as List? ?? const []))
+        if (b is Map && b['type'] == 'text') b['text'] as String? ?? '',
+    ].join().trim();
+  } on AppException {
+    rethrow;
+  } catch (e) {
+    throw AnalysisException(AppErrorCode.aiBadResponse, cause: e);
+  }
+  if (text.isEmpty) throw const AnalysisException(AppErrorCode.aiBadResponse);
+  return text;
 }

@@ -617,5 +617,7 @@
   "rebalanceOk": "Ekoki mokano",
   "earningsResultBeat": "{symbol} eleki EPS oyo ezelamaki",
   "earningsResultMiss": "{symbol} ekoki te EPS oyo ezelamaki",
-  "earningsResultBody": "EPS oyo eyebisami {actual}, ezelamaki {estimate}"
+  "earningsResultBody": "EPS oyo eyebisami {actual}, ezelamaki {estimate}",
+  "newsExplain": "Yango elakisi nini?",
+  "newsExplainNote": "Ndimbola ya AI oyo esalemi kaka na motó ya nsango mpe mokuse na yango. Ezali toli ya kotia mbɔngɔ te. Esalelaka ndelo ya mituna na yo ya mokolo na mokolo, kasi botaleli te."
 }

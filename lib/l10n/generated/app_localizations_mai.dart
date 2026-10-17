@@ -2300,4 +2300,11 @@ class AppLocalizationsMai extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'रिपोर्ट कएल गेल EPS $actual, अनुमानित $estimate';
   }
+
+  @override
+  String get newsExplain => 'एकर की अर्थ अछि?';
+
+  @override
+  String get newsExplainNote =>
+      'मात्र शीर्षक आ सारांश पर आधारित AI व्याख्या। ई निवेशक सलाह नहि अछि। ई अहाँक दैनिक प्रश्न-सीमासँ जाइत अछि, कोनो विश्लेषण खर्च नहि होइत अछि।';
 }

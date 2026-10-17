@@ -2313,4 +2313,11 @@ class AppLocalizationsSo extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS la sheegay $actual, la filayo $estimate';
   }
+
+  @override
+  String get newsExplain => 'Muxuu kan ka dhigan yahay?';
+
+  @override
+  String get newsExplainNote =>
+      'Sharaxaad AI oo ku salaysan oo keliya cinwaanka iyo soo koobidda. Ma aha talo maalgashi. Waxay isticmaashaa xadka su’aalahaaga maalinlaha ah, ma aha falanqayn.';
 }

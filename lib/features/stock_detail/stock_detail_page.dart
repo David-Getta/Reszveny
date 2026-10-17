@@ -21,6 +21,8 @@ import '../portfolio/add_lot_dialog.dart';
 import '../portfolio/position_card.dart';
 import '../recognition/stock_recognizer.dart';
 import 'widgets/analysis_card.dart';
+import '../news/watch_news.dart';
+import '../news/watch_news_view.dart' show showNewsExplanation;
 import 'widgets/converted_price.dart';
 import 'widgets/earnings_card.dart';
 import 'widgets/insiders_card.dart';
@@ -525,7 +527,12 @@ class _DetailsBody extends StatelessWidget {
                       contentPadding: EdgeInsets.zero,
                       title: Text(n.headline),
                       subtitle: Text([if (n.source != null) n.source!, fmt.dateTime(n.publishedAt)].join(' · ')),
-                      trailing: const Icon(Icons.open_in_new, size: 18),
+                      // „Mit jelent ez?” – rövid AI-magyarázat; a sorra koppintva a cikk nyílik.
+                      trailing: IconButton(
+                        tooltip: l10n.newsExplain,
+                        icon: Icon(Icons.auto_awesome_outlined, size: 20, color: AppPalette.of(context).accent),
+                        onPressed: () => showNewsExplanation(context, WatchedNews(symbol: d.symbol, item: n)),
+                      ),
                       onTap: () => _open(context, n.url),
                     ),
                 ],

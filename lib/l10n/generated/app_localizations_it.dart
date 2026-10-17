@@ -2312,4 +2312,11 @@ class AppLocalizationsIt extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS comunicato $actual, atteso $estimate';
   }
+
+  @override
+  String get newsExplain => 'Che cosa significa?';
+
+  @override
+  String get newsExplainNote =>
+      'Spiegazione dell’IA basata solo sul titolo e sul riassunto. Non costituisce un consiglio di investimento. Usa il tuo limite giornaliero di domande, non un’analisi.';
 }

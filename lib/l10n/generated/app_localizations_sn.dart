@@ -2312,4 +2312,11 @@ class AppLocalizationsSn extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS yakaziviswa $actual, inotarisirwa $estimate';
   }
+
+  @override
+  String get newsExplain => 'Izvi zvinorevei?';
+
+  @override
+  String get newsExplainNote =>
+      'Tsananguro yeAI yakavakirwa pamusoro wenhau nepfupiso yayo chete. Haisi zano rekuisa mari. Inoshandisa muganhu wako wemibvunzo wezuva nezuva, kwete ongororo.';
 }

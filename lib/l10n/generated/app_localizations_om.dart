@@ -2315,4 +2315,11 @@ class AppLocalizationsOm extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS gabaafame $actual, eegame $estimate';
   }
+
+  @override
+  String get newsExplain => 'Kun maal jechuu dha?';
+
+  @override
+  String get newsExplainNote =>
+      'Ibsa AI mata duree fi cuunfaa qofa irratti hundaa\'e. Gorsa invastimantii miti. Daangaa gaaffii guyyaa kee fayyadama, xiinxala miti.';
 }

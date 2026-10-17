@@ -617,5 +617,7 @@
   "rebalanceOk": "Nasa target",
   "earningsResultBeat": "Nalampasan ng {symbol} ang inaasahang EPS",
   "earningsResultMiss": "Hindi naabot ng {symbol} ang inaasahang EPS",
-  "earningsResultBody": "Iniulat na EPS {actual}, inaasahan {estimate}"
+  "earningsResultBody": "Iniulat na EPS {actual}, inaasahan {estimate}",
+  "newsExplain": "Ano ang ibig sabihin nito?",
+  "newsExplainNote": "Paliwanag ng AI batay lamang sa headline at buod nito. Hindi ito payo sa pamumuhunan. Gumagamit ito ng iyong pang-araw-araw na limitasyon sa tanong, hindi ng pagsusuri."
 }

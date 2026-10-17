@@ -4044,6 +4044,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Reported EPS {actual}, expected {estimate}'**
   String earningsResultBody(String actual, String estimate);
+
+  /// Button next to a news headline: a short AI explanation of what the news could mean for the stock.
+  ///
+  /// In en, this message translates to:
+  /// **'What does this mean?'**
+  String get newsExplain;
+
+  /// No description provided for @newsExplainNote.
+  ///
+  /// In en, this message translates to:
+  /// **'An AI explanation based only on the headline and its summary. It is not investment advice. Uses your daily question allowance, not an analysis.'**
+  String get newsExplainNote;
 }
 
 class _AppLocalizationsDelegate

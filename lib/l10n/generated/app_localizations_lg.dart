@@ -2317,4 +2317,11 @@ class AppLocalizationsLg extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS eyalangiriddwa $actual, esuubirwa $estimate';
   }
+
+  @override
+  String get newsExplain => 'Kino kitegeeza ki?';
+
+  @override
+  String get newsExplainNote =>
+      'Ennyinnyonnyola ya AI eyesigamiziddwa ku mutwe gw\'amawulire n\'okufunza kwago kwokka. Si magezi ga kusiga nsimbi. Kikozesa kkomo ly’ebibuuzo byo erya buli lunaku, so si kwekenneenya.';
 }

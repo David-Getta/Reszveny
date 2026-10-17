@@ -2301,4 +2301,11 @@ class AppLocalizationsFf extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS bayyinaaɗo $actual, jortaaɗo $estimate';
   }
+
+  @override
+  String get newsExplain => 'Ko ɗum firti?';
+
+  @override
+  String get newsExplainNote =>
+      'Firo AI tuugiiɗo e tiitoonde e coftal mayre tan. Wonaa wasiya e investisman. Ina huutoroo keerol naamne maa ñalnde kala, wonaa ƴeewndo.';
 }

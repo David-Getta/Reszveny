@@ -617,5 +617,7 @@
   "rebalanceOk": "লক্ষ্যে আছে",
   "earningsResultBeat": "{symbol} প্রত্যাশিত EPS ছাড়িয়ে গেছে",
   "earningsResultMiss": "{symbol} প্রত্যাশিত EPS ছুঁতে পারেনি",
-  "earningsResultBody": "ঘোষিত EPS {actual}, প্রত্যাশিত {estimate}"
+  "earningsResultBody": "ঘোষিত EPS {actual}, প্রত্যাশিত {estimate}",
+  "newsExplain": "এর মানে কী?",
+  "newsExplainNote": "শুধু শিরোনাম ও সারসংক্ষেপের ভিত্তিতে AI ব্যাখ্যা। এটি বিনিয়োগ পরামর্শ নয়। এটি আপনার দৈনিক প্রশ্নের সীমা থেকে যায়, কোনো বিশ্লেষণ খরচ হয় না।"
 }

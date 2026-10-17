@@ -2301,4 +2301,11 @@ class AppLocalizationsWo extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS bi ñu yégle $actual, bi ñu séentu $estimate';
   }
+
+  @override
+  String get newsExplain => 'Lan la lii tekki?';
+
+  @override
+  String get newsExplainNote =>
+      'Leeral bu AI defar, mu sukkandiku rekk ci tur bi ak ndaneel li. Du ndigal ci dugal xaalis. Dafay jëfandikoo sa limu laaj yu bés bu nekk, du xayma.';
 }

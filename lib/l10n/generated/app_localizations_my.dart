@@ -2299,4 +2299,11 @@ class AppLocalizationsMy extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'ထုတ်ပြန်ထားသော EPS $actual၊ မျှော်မှန်း $estimate';
   }
+
+  @override
+  String get newsExplain => 'ဤသည်မှာ ဘာကို ဆိုလိုသနည်း။';
+
+  @override
+  String get newsExplainNote =>
+      'ခေါင်းစဉ်နှင့် အနှစ်ချုပ်ကိုသာ အခြေခံထားသော AI ရှင်းလင်းချက်။ ရင်းနှီးမြှုပ်နှံမှု အကြံပြုချက် မဟုတ်ပါ။ နေ့စဉ် မေးခွန်းကန့်သတ်ချက်မှ သုံးပြီး ခွဲခြမ်းစိတ်ဖြာမှု မသုံးပါ။';
 }

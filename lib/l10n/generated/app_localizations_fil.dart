@@ -2313,4 +2313,11 @@ class AppLocalizationsFil extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'Iniulat na EPS $actual, inaasahan $estimate';
   }
+
+  @override
+  String get newsExplain => 'Ano ang ibig sabihin nito?';
+
+  @override
+  String get newsExplainNote =>
+      'Paliwanag ng AI batay lamang sa headline at buod nito. Hindi ito payo sa pamumuhunan. Gumagamit ito ng iyong pang-araw-araw na limitasyon sa tanong, hindi ng pagsusuri.';
 }

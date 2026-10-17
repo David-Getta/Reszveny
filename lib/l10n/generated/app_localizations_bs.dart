@@ -2347,4 +2347,11 @@ class AppLocalizationsBs extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'Objavljeni EPS $actual, očekivani $estimate';
   }
+
+  @override
+  String get newsExplain => 'Šta ovo znači?';
+
+  @override
+  String get newsExplainNote =>
+      'Objašnjenje umjetne inteligencije samo na osnovu naslova i sažetka. Nije investicijski savjet. Troši vaše dnevno ograničenje pitanja, ne analizu.';
 }

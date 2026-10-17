@@ -2305,4 +2305,11 @@ class AppLocalizationsKab extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS i d-yettwabedren $actual, yettwarǧa $estimate';
   }
+
+  @override
+  String get newsExplain => 'D acu i d-yebɣa ad yini waya?';
+
+  @override
+  String get newsExplainNote =>
+      'Asegzi n AI yebnan kan ɣef uzwel d ugzul-is. Mačči d awellih n usersi n yidrimen. Yesseqdac talast-ik n yisteqsiyen n yal ass, mačči tasledt.';
 }

@@ -617,5 +617,7 @@
   "rebalanceOk": "Menepati sasaran",
   "earningsResultBeat": "{symbol} mengatasi EPS dijangka",
   "earningsResultMiss": "{symbol} gagal mencapai EPS dijangka",
-  "earningsResultBody": "EPS dilaporkan {actual}, dijangka {estimate}"
+  "earningsResultBody": "EPS dilaporkan {actual}, dijangka {estimate}",
+  "newsExplain": "Apakah maksudnya?",
+  "newsExplainNote": "Penjelasan AI berdasarkan tajuk dan ringkasannya sahaja. Bukan nasihat pelaburan. Menggunakan had soalan harian anda, bukan analisis."
 }

@@ -617,5 +617,7 @@
   "rebalanceOk": "მიზანშია",
   "earningsResultBeat": "{symbol}-მა მოსალოდნელ EPS-ს გადააჭარბა",
   "earningsResultMiss": "{symbol}-მა მოსალოდნელ EPS-ს ვერ მიაღწია",
-  "earningsResultBody": "გამოქვეყნებული EPS {actual}, მოსალოდნელი {estimate}"
+  "earningsResultBody": "გამოქვეყნებული EPS {actual}, მოსალოდნელი {estimate}",
+  "newsExplain": "რას ნიშნავს ეს?",
+  "newsExplainNote": "AI-ის განმარტება მხოლოდ სათაურისა და შეჯამების საფუძველზე. არ წარმოადგენს საინვესტიციო რჩევას. იყენებს თქვენს დღიურ კითხვების ლიმიტს და არა ანალიზს."
 }

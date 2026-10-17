@@ -617,5 +617,7 @@
   "rebalanceOk": "ضمن الهدف",
   "earningsResultBeat": "{symbol} تجاوز ربحية السهم المتوقعة",
   "earningsResultMiss": "{symbol} لم يبلغ ربحية السهم المتوقعة",
-  "earningsResultBody": "ربحية السهم المُعلنة {actual}، المتوقعة {estimate}"
+  "earningsResultBody": "ربحية السهم المُعلنة {actual}، المتوقعة {estimate}",
+  "newsExplain": "ماذا يعني هذا؟",
+  "newsExplainNote": "شرح بالذكاء الاصطناعي يستند فقط إلى العنوان والملخص. لا يُعدّ نصيحة استثمارية. يُحتسب من حدّ الأسئلة اليومي ولا يستهلك تحليلًا."
 }

@@ -2304,4 +2304,11 @@ class AppLocalizationsBm extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS fɔlen $actual, makɔnɔnen $estimate';
   }
+
+  @override
+  String get newsExplain => 'Nin kɔrɔ ye mun ye?';
+
+  @override
+  String get newsExplainNote =>
+      'AI ka ɲɛfɔli min sinsinnen bɛ kunkan ni a kuncɛ dɔrɔn kan. Wari donni ladilikan tɛ. A bɛ bɔ i ka don o don ɲininkaliw hakɛ la, a tɛ sɛgɛsɛgɛli si ta.';
 }

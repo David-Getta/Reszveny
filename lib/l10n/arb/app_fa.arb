@@ -617,5 +617,7 @@
   "rebalanceOk": "مطابق هدف",
   "earningsResultBeat": "{symbol} از EPS مورد انتظار فراتر رفت",
   "earningsResultMiss": "{symbol} به EPS مورد انتظار نرسید",
-  "earningsResultBody": "EPS گزارش‌شده {actual}، مورد انتظار {estimate}"
+  "earningsResultBody": "EPS گزارش‌شده {actual}، مورد انتظار {estimate}",
+  "newsExplain": "این یعنی چه؟",
+  "newsExplainNote": "توضیح هوش مصنوعی فقط بر اساس تیتر و خلاصهٔ آن. توصیه سرمایه‌گذاری نیست. از سهمیهٔ روزانهٔ پرسش‌های شما کم می‌شود، نه از تحلیل‌ها."
 }

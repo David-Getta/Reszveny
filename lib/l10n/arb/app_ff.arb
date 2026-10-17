@@ -617,5 +617,7 @@
   "rebalanceOk": "E faandaare",
   "earningsResultBeat": "{symbol} ɓurii EPS jortaaɗo",
   "earningsResultMiss": "{symbol} heɓaani EPS jortaaɗo",
-  "earningsResultBody": "EPS bayyinaaɗo {actual}, jortaaɗo {estimate}"
+  "earningsResultBody": "EPS bayyinaaɗo {actual}, jortaaɗo {estimate}",
+  "newsExplain": "Ko ɗum firti?",
+  "newsExplainNote": "Firo AI tuugiiɗo e tiitoonde e coftal mayre tan. Wonaa wasiya e investisman. Ina huutoroo keerol naamne maa ñalnde kala, wonaa ƴeewndo."
 }

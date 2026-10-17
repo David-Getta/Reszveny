@@ -2314,4 +2314,11 @@ class AppLocalizationsRn extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS yatangajwe $actual, yari yitezwe $estimate';
   }
+
+  @override
+  String get newsExplain => 'Ibi bisobanura iki?';
+
+  @override
+  String get newsExplainNote =>
+      'Insobanuro ya AI ishingiye gusa ku mutwe w\'inkuru n\'incamake yayo. Si inama yo gushora imari. Ikoresha urugero rw’ibibazo vyawe rw’umunsi, si isesengura.';
 }

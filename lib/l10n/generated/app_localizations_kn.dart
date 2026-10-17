@@ -2313,4 +2313,11 @@ class AppLocalizationsKn extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'ವರದಿಯಾದ EPS $actual, ನಿರೀಕ್ಷಿತ $estimate';
   }
+
+  @override
+  String get newsExplain => 'ಇದರ ಅರ್ಥವೇನು?';
+
+  @override
+  String get newsExplainNote =>
+      'ಶೀರ್ಷಿಕೆ ಮತ್ತು ಸಾರಾಂಶವನ್ನು ಮಾತ್ರ ಆಧರಿಸಿದ AI ವಿವರಣೆ. ಇದು ಹೂಡಿಕೆ ಸಲಹೆಯಲ್ಲ. ಇದು ನಿಮ್ಮ ದೈನಂದಿನ ಪ್ರಶ್ನೆ ಮಿತಿಯನ್ನು ಬಳಸುತ್ತದೆ, ವಿಶ್ಲೇಷಣೆಯನ್ನಲ್ಲ.';
 }

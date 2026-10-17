@@ -617,5 +617,7 @@
   "rebalanceOk": "هدف تي",
   "earningsResultBeat": "{symbol} متوقع EPS کان وڌي ويو",
   "earningsResultMiss": "{symbol} متوقع EPS کان گهٽ رهيو",
-  "earningsResultBody": "جاري ڪيل EPS {actual}، متوقع {estimate}"
+  "earningsResultBody": "جاري ڪيل EPS {actual}، متوقع {estimate}",
+  "newsExplain": "هن جو مطلب ڇا آهي؟",
+  "newsExplainNote": "صرف سرخي ۽ خلاصي تي ٻڌل AI وضاحت. اها سيڙپڪاري جو مشورو ناهي. اهو توهان جي روزاني سوالن جي حد مان ويندو آهي، ڪو تجزيو خرچ نٿو ٿئي."
 }

@@ -617,5 +617,7 @@
   "rebalanceOk": "ඉලක්කයේ",
   "earningsResultBeat": "{symbol} අපේක්ෂිත EPS ඉක්මවා ගියේය",
   "earningsResultMiss": "{symbol} අපේක්ෂිත EPS වෙත නොළඟා විය",
-  "earningsResultBody": "වාර්තා කළ EPS {actual}, අපේක්ෂිත {estimate}"
+  "earningsResultBody": "වාර්තා කළ EPS {actual}, අපේක්ෂිත {estimate}",
+  "newsExplain": "මෙහි තේරුම කුමක්ද?",
+  "newsExplainNote": "සිරස්තලය සහ සාරාංශය මත පමණක් පදනම් වූ AI පැහැදිලි කිරීමකි. එය ආයෝජන උපදෙසක් නොවේ. මෙය ඔබේ දෛනික ප්‍රශ්න සීමාවෙන් යයි, විශ්ලේෂණයක් භාවිත නොකරයි."
 }

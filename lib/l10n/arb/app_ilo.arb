@@ -617,5 +617,7 @@
   "rebalanceOk": "Adda iti target",
   "earningsResultBeat": "Linabsan ti {symbol} ti namnamaen nga EPS",
   "earningsResultMiss": "Saan a dimteng ti {symbol} iti namnamaen nga EPS",
-  "earningsResultBody": "Naireport nga EPS {actual}, namnamaen {estimate}"
+  "earningsResultBody": "Naireport nga EPS {actual}, namnamaen {estimate}",
+  "newsExplain": "Ania ti kayat a sawen daytoy?",
+  "newsExplainNote": "Panangilawlawag ti AI a naibatay laeng iti paulo ken iti pakabuklanna. Saan a balakad iti panagpuonan. Agusar daytoy iti inaldaw a limitasion dagiti saludsod-mo, saan nga iti panaganalisa."
 }

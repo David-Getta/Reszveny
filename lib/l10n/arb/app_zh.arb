@@ -617,5 +617,7 @@
   "rebalanceOk": "已达目标",
   "earningsResultBeat": "{symbol} 每股收益超出预期",
   "earningsResultMiss": "{symbol} 每股收益不及预期",
-  "earningsResultBody": "实际每股收益 {actual}，预期 {estimate}"
+  "earningsResultBody": "实际每股收益 {actual}，预期 {estimate}",
+  "newsExplain": "这意味着什么？",
+  "newsExplainNote": "仅根据标题和摘要生成的 AI 解读。不构成投资建议。占用每日提问次数，不消耗分析次数。"
 }

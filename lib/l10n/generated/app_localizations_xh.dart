@@ -2317,4 +2317,11 @@ class AppLocalizationsXh extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'I-EPS exeliweyo $actual, elindelekileyo $estimate';
   }
+
+  @override
+  String get newsExplain => 'Oku kuthetha ukuthini?';
+
+  @override
+  String get newsExplainNote =>
+      'Ingcaciso ye-AI esekelwe kuphela kwisihloko nesishwankathelo saso. Ayilocebiso lotyalo-mali. Sisebenzisa umda wakho wemibuzo wemihla ngemihla, hayi uhlalutyo.';
 }

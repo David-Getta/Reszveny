@@ -617,5 +617,7 @@
   "rebalanceOk": "Na meta",
   "earningsResultBeat": "{symbol} supera o LPA esperado",
   "earningsResultMiss": "{symbol} fica abaixo do LPA esperado",
-  "earningsResultBody": "LPA divulgado {actual}, esperado {estimate}"
+  "earningsResultBody": "LPA divulgado {actual}, esperado {estimate}",
+  "newsExplain": "O que isto significa?",
+  "newsExplainNote": "Explicação de IA baseada apenas no título e no resumo. Não constitui aconselhamento de investimento. Usa o seu limite diário de perguntas, não uma análise."
 }

@@ -617,5 +617,7 @@
   "rebalanceOk": "Ara sa target",
   "earningsResultBeat": "Nalampasan sang {symbol} ang ginapaabot nga EPS",
   "earningsResultMiss": "Wala maabot sang {symbol} ang ginapaabot nga EPS",
-  "earningsResultBody": "Gin-report nga EPS {actual}, ginapaabot {estimate}"
+  "earningsResultBody": "Gin-report nga EPS {actual}, ginapaabot {estimate}",
+  "newsExplain": "Ano ang buot silingon sini?",
+  "newsExplainNote": "Paathag sang AI base lamang sa ulohan kag sa kalubaran sini. Indi ini laygay sa pag-invest. Ginagamit sini ang imo adlaw-adlaw nga limitasyon sang pamangkot, indi ang pagtuki."
 }

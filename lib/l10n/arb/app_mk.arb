@@ -617,5 +617,7 @@
   "rebalanceOk": "Според целта",
   "earningsResultBeat": "{symbol} го надмина очекуваниот EPS",
   "earningsResultMiss": "{symbol} не го достигна очекуваниот EPS",
-  "earningsResultBody": "Објавен EPS {actual}, очекуван {estimate}"
+  "earningsResultBody": "Објавен EPS {actual}, очекуван {estimate}",
+  "newsExplain": "Што значи ова?",
+  "newsExplainNote": "Објаснување од AI само врз основа на насловот и резимето. Не претставува инвестициски совет. Го користи вашиот дневен лимит на прашања, не анализа."
 }

@@ -617,5 +617,7 @@
   "rebalanceOk": "La țintă",
   "earningsResultBeat": "{symbol} a depășit EPS-ul așteptat",
   "earningsResultMiss": "{symbol} sub EPS-ul așteptat",
-  "earningsResultBody": "EPS raportat {actual}, așteptat {estimate}"
+  "earningsResultBody": "EPS raportat {actual}, așteptat {estimate}",
+  "newsExplain": "Ce înseamnă asta?",
+  "newsExplainNote": "Explicație generată de AI, bazată doar pe titlu și pe rezumat. Nu reprezintă un sfat de investiții. Folosește limita ta zilnică de întrebări, nu o analiză."
 }

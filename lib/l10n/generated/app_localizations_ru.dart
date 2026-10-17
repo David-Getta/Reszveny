@@ -2370,4 +2370,11 @@ class AppLocalizationsRu extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'Фактический EPS $actual, ожидался $estimate';
   }
+
+  @override
+  String get newsExplain => 'Что это значит?';
+
+  @override
+  String get newsExplainNote =>
+      'Объяснение от ИИ только на основе заголовка и краткого содержания. Не является инвестиционной рекомендацией. Расходуется дневной лимит вопросов, а не анализ.';
 }

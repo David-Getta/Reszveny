@@ -617,5 +617,7 @@
   "rebalanceOk": "Мувофиқи мақсад",
   "earningsResultBeat": "{symbol} аз EPS-и пешбинишуда гузашт",
   "earningsResultMiss": "{symbol} ба EPS-и пешбинишуда нарасид",
-  "earningsResultBody": "EPS-и эълоншуда {actual}, пешбинишуда {estimate}"
+  "earningsResultBody": "EPS-и эълоншуда {actual}, пешбинишуда {estimate}",
+  "newsExplain": "Ин чӣ маъно дорад?",
+  "newsExplainNote": "Шарҳи AI танҳо дар асоси сарлавҳа ва хулосаи он. Маслиҳати сармоягузорӣ нест. Аз ҳадди саволҳои ҳаррӯзаи шумо сарф мешавад, на таҳлил."
 }

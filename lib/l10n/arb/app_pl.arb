@@ -617,5 +617,7 @@
   "rebalanceOk": "Zgodnie z celem",
   "earningsResultBeat": "{symbol} przebił oczekiwany EPS",
   "earningsResultMiss": "{symbol} poniżej oczekiwanego EPS",
-  "earningsResultBody": "Raportowany EPS {actual}, oczekiwany {estimate}"
+  "earningsResultBody": "Raportowany EPS {actual}, oczekiwany {estimate}",
+  "newsExplain": "Co to oznacza?",
+  "newsExplainNote": "Wyjaśnienie AI oparte wyłącznie na nagłówku i streszczeniu. Nie stanowi porady inwestycyjnej. Korzysta z dziennego limitu pytań, nie zużywa analizy."
 }

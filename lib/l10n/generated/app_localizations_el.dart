@@ -2315,4 +2315,11 @@ class AppLocalizationsEl extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'Ανακοινωμένο EPS $actual, αναμενόμενο $estimate';
   }
+
+  @override
+  String get newsExplain => 'Τι σημαίνει αυτό;';
+
+  @override
+  String get newsExplainNote =>
+      'Εξήγηση από AI μόνο με βάση τον τίτλο και την περίληψη. Δεν αποτελεί επενδυτική συμβουλή. Χρησιμοποιεί το ημερήσιο όριο ερωτήσεών σας, όχι ανάλυση.';
 }

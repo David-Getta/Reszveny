@@ -2343,4 +2343,11 @@ class AppLocalizationsRo extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS raportat $actual, așteptat $estimate';
   }
+
+  @override
+  String get newsExplain => 'Ce înseamnă asta?';
+
+  @override
+  String get newsExplainNote =>
+      'Explicație generată de AI, bazată doar pe titlu și pe rezumat. Nu reprezintă un sfat de investiții. Folosește limita ta zilnică de întrebări, nu o analiză.';
 }

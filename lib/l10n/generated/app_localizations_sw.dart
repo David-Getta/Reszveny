@@ -2307,4 +2307,11 @@ class AppLocalizationsSw extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS iliyoripotiwa $actual, inayotarajiwa $estimate';
   }
+
+  @override
+  String get newsExplain => 'Hii inamaanisha nini?';
+
+  @override
+  String get newsExplainNote =>
+      'Maelezo ya AI yanayotegemea kichwa cha habari na muhtasari wake pekee. Si ushauri wa uwekezaji. Hutumia kikomo chako cha maswali cha kila siku, si uchambuzi.';
 }

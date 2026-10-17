@@ -617,5 +617,7 @@
   "rebalanceOk": "Sou sib la",
   "earningsResultBeat": "{symbol} depase EPS yo te atann lan",
   "earningsResultMiss": "{symbol} pa rive nan EPS yo te atann lan",
-  "earningsResultBody": "EPS rapòte {actual}, yo te atann {estimate}"
+  "earningsResultBody": "EPS rapòte {actual}, yo te atann {estimate}",
+  "newsExplain": "Kisa sa vle di?",
+  "newsExplainNote": "Eksplikasyon AI ki baze sèlman sou tit la ak rezime a. Se pa yon konsèy envestisman. Li itilize limit kesyon ou pou chak jou, pa yon analiz."
 }

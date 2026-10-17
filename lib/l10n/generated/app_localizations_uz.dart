@@ -2310,4 +2310,11 @@ class AppLocalizationsUz extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'Eʼlon qilingan EPS $actual, kutilgan $estimate';
   }
+
+  @override
+  String get newsExplain => 'Bu nimani anglatadi?';
+
+  @override
+  String get newsExplainNote =>
+      'Faqat sarlavha va qisqacha mazmunga asoslangan AI izohi. Bu investitsiya maslahati emas. Kunlik savollar limitingizdan sarflanadi, tahlil emas.';
 }

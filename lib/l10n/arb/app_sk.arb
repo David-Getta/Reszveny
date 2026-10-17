@@ -617,5 +617,7 @@
   "rebalanceOk": "Podľa cieľa",
   "earningsResultBeat": "{symbol} prekonal očakávané EPS",
   "earningsResultMiss": "{symbol} nedosiahol očakávané EPS",
-  "earningsResultBody": "Vykázané EPS {actual}, očakávané {estimate}"
+  "earningsResultBody": "Vykázané EPS {actual}, očakávané {estimate}",
+  "newsExplain": "Čo to znamená?",
+  "newsExplainNote": "Vysvetlenie od AI iba na základe titulku a zhrnutia. Nie je investičným odporúčaním. Čerpá z vášho denného limitu otázok, nespotrebuje analýzu."
 }

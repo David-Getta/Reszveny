@@ -2308,4 +2308,11 @@ class AppLocalizationsFi extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'Toteutunut EPS $actual, odotettu $estimate';
   }
+
+  @override
+  String get newsExplain => 'Mitä tämä tarkoittaa?';
+
+  @override
+  String get newsExplainNote =>
+      'Tekoälyn selitys, joka perustuu vain otsikkoon ja tiivistelmään. Se ei ole sijoitusneuvontaa. Kuluttaa päivittäistä kysymyskiintiötäsi, ei analyysia.';
 }

@@ -2312,4 +2312,11 @@ class AppLocalizationsGn extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'EPS oñemomaranduva $actual, oñehaʼarõva $estimate';
   }
+
+  @override
+  String get newsExplain => 'Mbaʼépa heʼise kóva?';
+
+  @override
+  String get newsExplainNote =>
+      'AI omyesakãva, titulo ha ñemombyky rupive añoite. Ndahaʼéi ñemoñeʼẽ inversión rehegua. Oipuru ne porandu papapy ára ha ára guarã, ndaha’éi jehesa’ỹijo.';
 }

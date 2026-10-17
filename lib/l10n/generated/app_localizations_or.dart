@@ -2304,4 +2304,11 @@ class AppLocalizationsOr extends AppLocalizations {
   String earningsResultBody(String actual, String estimate) {
     return 'ଘୋଷିତ EPS $actual, ପ୍ରତ୍ୟାଶିତ $estimate';
   }
+
+  @override
+  String get newsExplain => 'ଏହାର ଅର୍ଥ କ\'ଣ?';
+
+  @override
+  String get newsExplainNote =>
+      'କେବଳ ଶୀର୍ଷକ ଓ ସାରାଂଶ ଉପରେ ଆଧାରିତ AI ବ୍ୟାଖ୍ୟା। ଏହା ନିବେଶ ପରାମର୍ଶ ନୁହେଁ। ଏହା ଆପଣଙ୍କ ଦୈନିକ ପ୍ରଶ୍ନ ସୀମାରୁ ଯାଏ, କୌଣସି ବିଶ୍ଳେଷଣ ଖର୍ଚ୍ଚ ହୁଏ ନାହିଁ।';
 }

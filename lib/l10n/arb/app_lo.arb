@@ -617,5 +617,7 @@
   "rebalanceOk": "ຕາມເປົ້າໝາຍ",
   "earningsResultBeat": "{symbol} ສູງກວ່າ EPS ທີ່ຄາດໄວ້",
   "earningsResultMiss": "{symbol} ຕ່ຳກວ່າ EPS ທີ່ຄາດໄວ້",
-  "earningsResultBody": "EPS ທີ່ລາຍງານ {actual}, ຄາດໄວ້ {estimate}"
+  "earningsResultBody": "EPS ທີ່ລາຍງານ {actual}, ຄາດໄວ້ {estimate}",
+  "newsExplain": "ນີ້ໝາຍຄວາມວ່າແນວໃດ?",
+  "newsExplainNote": "ຄຳອະທິບາຍຈາກ AI ອີງໃສ່ພຽງຫົວຂໍ້ຂ່າວ ແລະ ບົດສະຫຼຸບເທົ່ານັ້ນ. ບໍ່ແມ່ນຄຳແນະນຳການລົງທຶນ. ໃຊ້ໂຄຕາຄຳຖາມປະຈຳວັນຂອງທ່ານ ບໍ່ແມ່ນການວິເຄາະ."
 }

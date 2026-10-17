@@ -617,5 +617,7 @@
   "rebalanceOk": "Li ser armancê",
   "earningsResultBeat": "{symbol} ji EPS ya tê payîn derbas bû",
   "earningsResultMiss": "{symbol} negihîşt EPS ya tê payîn",
-  "earningsResultBody": "EPS ya hatî ragihandin {actual}, tê payîn {estimate}"
+  "earningsResultBody": "EPS ya hatî ragihandin {actual}, tê payîn {estimate}",
+  "newsExplain": "Ev tê çi wateyê?",
+  "newsExplainNote": "Ravekirina AI tenê li ser bingeha sernivîs û kurteyê. Ne şîreta veberhênanê ye. Ji sînorê pirsên te yê rojane tê birîn, ne analîzek."
 }
