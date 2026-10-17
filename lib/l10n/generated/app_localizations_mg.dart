@@ -2515,4 +2515,7 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Efijery fandraisana';
+
+  @override
+  String get allocationCountries => 'Firenena';
 }

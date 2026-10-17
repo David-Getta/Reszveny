@@ -2507,4 +2507,7 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Isikrini sasekhaya';
+
+  @override
+  String get allocationCountries => 'Amazwe';
 }

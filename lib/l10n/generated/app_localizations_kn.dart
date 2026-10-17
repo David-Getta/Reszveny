@@ -2504,4 +2504,7 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'ಹೋಮ್ ಸ್ಕ್ರೀನ್';
+
+  @override
+  String get allocationCountries => 'ದೇಶಗಳು';
 }

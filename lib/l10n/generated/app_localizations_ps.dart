@@ -2489,4 +2489,7 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'کور پاڼه';
+
+  @override
+  String get allocationCountries => 'هېوادونه';
 }

@@ -2506,4 +2506,7 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Ahabanza';
+
+  @override
+  String get allocationCountries => 'Ibihugu';
 }

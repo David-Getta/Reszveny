@@ -663,5 +663,6 @@
   "alertDeleted": "Alarm geskrap",
   "alertsClearTriggered": "Skrap geaktiveerde alarms",
   "alertsCleared": "{count, plural, =1{1 alarm geskrap} other{{count} alarms geskrap}}",
-  "homeScreenTitle": "Tuisskerm"
+  "homeScreenTitle": "Tuisskerm",
+  "allocationCountries": "Lande"
 }

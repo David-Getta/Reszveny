@@ -2504,4 +2504,7 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Tsamba loyamba';
+
+  @override
+  String get allocationCountries => 'Mayiko';
 }

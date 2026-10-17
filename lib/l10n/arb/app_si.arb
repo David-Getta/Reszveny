@@ -663,5 +663,6 @@
   "alertDeleted": "ඇඟවීම මකා දමන ලදී",
   "alertsClearTriggered": "ක්‍රියාත්මක වූ ඇඟවීම් හිස් කරන්න",
   "alertsCleared": "{count, plural, =1{ඇඟවීමක් ඉවත් කළා} other{ඇඟවීම් {count}ක් ඉවත් කළා}}",
-  "homeScreenTitle": "මුල් තිරය"
+  "homeScreenTitle": "මුල් තිරය",
+  "allocationCountries": "රටවල්"
 }

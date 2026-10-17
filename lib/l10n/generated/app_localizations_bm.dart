@@ -2495,4 +2495,7 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Ɲɛ fɔlɔ';
+
+  @override
+  String get allocationCountries => 'Jamanaw';
 }

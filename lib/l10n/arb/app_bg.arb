@@ -663,5 +663,6 @@
   "alertDeleted": "Известието е изтрито",
   "alertsClearTriggered": "Изчисти задействаните известия",
   "alertsCleared": "{count, plural, =1{Изчистено е 1 известие} other{Изчистени са {count} известия}}",
-  "homeScreenTitle": "Начален екран"
+  "homeScreenTitle": "Начален екран",
+  "allocationCountries": "Държави"
 }

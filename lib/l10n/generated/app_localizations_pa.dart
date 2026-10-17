@@ -2493,4 +2493,7 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'ਹੋਮ ਸਕ੍ਰੀਨ';
+
+  @override
+  String get allocationCountries => 'ਦੇਸ਼';
 }

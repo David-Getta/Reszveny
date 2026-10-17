@@ -663,5 +663,6 @@
   "alertDeleted": "Kibay yẽesame",
   "alertsClearTriggered": "Yẽes kibay nins sẽn yikã",
   "alertsCleared": "{count, plural, =1{B yẽesame kibay a yembre} other{B yẽesame kibay {count}}}",
-  "homeScreenTitle": "Sebr pipi"
+  "homeScreenTitle": "Sebr pipi",
+  "allocationCountries": "Tẽnse"
 }

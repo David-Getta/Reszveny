@@ -663,5 +663,6 @@
   "alertDeleted": "Xitsundzuxo xi suriwile",
   "alertsClearTriggered": "Sula switsundzuxo leswi humeleleke",
   "alertsCleared": "{count, plural, =1{Ku suriwe xitsundzuxo xin'we} other{Ku suriwe switsundzuxo swa {count}}}",
-  "homeScreenTitle": "Tluka ro sungula"
+  "homeScreenTitle": "Tluka ro sungula",
+  "allocationCountries": "Matiko"
 }

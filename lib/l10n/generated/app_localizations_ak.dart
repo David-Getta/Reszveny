@@ -2497,4 +2497,7 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Fie skrin';
+
+  @override
+  String get allocationCountries => 'Aman';
 }

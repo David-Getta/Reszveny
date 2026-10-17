@@ -2493,4 +2493,7 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Layar utama';
+
+  @override
+  String get allocationCountries => 'Negara';
 }

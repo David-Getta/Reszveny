@@ -663,5 +663,6 @@
   "alertDeleted": "ସତର୍କତା ଡିଲିଟ ହେଲା",
   "alertsClearTriggered": "ଟ୍ରିଗର ହୋଇଥିବା ସତର୍କତା ସଫା କରନ୍ତୁ",
   "alertsCleared": "{count, plural, =1{1ଟି ସତର୍କତା ସଫା ହେଲା} other{{count}ଟି ସତର୍କତା ସଫା ହେଲା}}",
-  "homeScreenTitle": "ହୋମ ସ୍କ୍ରିନ"
+  "homeScreenTitle": "ହୋମ ସ୍କ୍ରିନ",
+  "allocationCountries": "ଦେଶ"
 }

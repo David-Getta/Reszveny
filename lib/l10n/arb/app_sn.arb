@@ -663,5 +663,6 @@
   "alertDeleted": "Yambiro radzimwa",
   "alertsClearTriggered": "Dzima yambiro dzaitika",
   "alertsCleared": "{count, plural, =1{Yambiro 1 radzimwa} other{Yambiro {count} dzadzimwa}}",
-  "homeScreenTitle": "Peji rekutanga"
+  "homeScreenTitle": "Peji rekutanga",
+  "allocationCountries": "Nyika"
 }

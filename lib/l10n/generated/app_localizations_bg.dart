@@ -2499,4 +2499,7 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Начален екран';
+
+  @override
+  String get allocationCountries => 'Държави';
 }

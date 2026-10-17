@@ -2508,4 +2508,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Écran d’accueil';
+
+  @override
+  String get allocationCountries => 'Pays';
 }

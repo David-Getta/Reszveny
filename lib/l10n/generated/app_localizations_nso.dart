@@ -2513,4 +2513,7 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Letlakala la mathomo';
+
+  @override
+  String get allocationCountries => 'Dinaga';
 }

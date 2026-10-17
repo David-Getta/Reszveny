@@ -663,5 +663,6 @@
   "alertDeleted": "Alerta eliminada",
   "alertsClearTriggered": "Borrar alertas activadas",
   "alertsCleared": "{count, plural, =1{Se ha borrado 1 alerta} other{Se han borrado {count} alertas}}",
-  "homeScreenTitle": "Pantalla de inicio"
+  "homeScreenTitle": "Pantalla de inicio",
+  "allocationCountries": "Países"
 }

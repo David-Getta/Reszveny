@@ -2496,4 +2496,7 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Startskærm';
+
+  @override
+  String get allocationCountries => 'Lande';
 }

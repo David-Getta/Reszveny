@@ -663,5 +663,6 @@
   "alertDeleted": "Napanas ang alerto",
   "alertsClearTriggered": "Panasa ang mga na-trigger nga alerto",
   "alertsCleared": "{count, plural, =1{Napanas ang 1 ka alerto} other{Napanas ang {count} ka alerto}}",
-  "homeScreenTitle": "Panguna nga screen"
+  "homeScreenTitle": "Panguna nga screen",
+  "allocationCountries": "Pungsod"
 }

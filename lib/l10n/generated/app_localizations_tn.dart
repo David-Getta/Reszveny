@@ -2515,4 +2515,7 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Tsebe ya ntlha';
+
+  @override
+  String get allocationCountries => 'Dinaga';
 }

@@ -2504,4 +2504,7 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Ekrani bazë';
+
+  @override
+  String get allocationCountries => 'Vendet';
 }

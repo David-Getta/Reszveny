@@ -2539,4 +2539,7 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Sākuma ekrāns';
+
+  @override
+  String get allocationCountries => 'Valstis';
 }

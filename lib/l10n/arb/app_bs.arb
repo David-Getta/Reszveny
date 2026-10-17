@@ -663,5 +663,6 @@
   "alertDeleted": "Upozorenje je obrisano",
   "alertsClearTriggered": "Izbriši aktivirana upozorenja",
   "alertsCleared": "{count, plural, =1{Obrisano je 1 upozorenje} one{Obrisano je {count} upozorenje} few{Obrisana su {count} upozorenja} other{Obrisano je {count} upozorenja}}",
-  "homeScreenTitle": "Početni ekran"
+  "homeScreenTitle": "Početni ekran",
+  "allocationCountries": "Države"
 }

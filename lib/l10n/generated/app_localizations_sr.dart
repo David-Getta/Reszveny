@@ -2544,4 +2544,7 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Почетни екран';
+
+  @override
+  String get allocationCountries => 'Државе';
 }

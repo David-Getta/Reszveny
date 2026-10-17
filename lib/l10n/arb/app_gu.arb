@@ -663,5 +663,6 @@
   "alertDeleted": "ચેતવણી કાઢી નાખી",
   "alertsClearTriggered": "ટ્રિગર થયેલી ચેતવણીઓ સાફ કરો",
   "alertsCleared": "{count, plural, =1{1 ચેતવણી સાફ કરી} other{{count} ચેતવણીઓ સાફ કરી}}",
-  "homeScreenTitle": "હોમ સ્ક્રીન"
+  "homeScreenTitle": "હોમ સ્ક્રીન",
+  "allocationCountries": "દેશ"
 }

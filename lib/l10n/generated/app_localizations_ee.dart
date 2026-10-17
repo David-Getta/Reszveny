@@ -2501,4 +2501,7 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Axa gbãtɔ';
+
+  @override
+  String get allocationCountries => 'Dukɔwo';
 }

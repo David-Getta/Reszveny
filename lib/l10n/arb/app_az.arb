@@ -663,5 +663,6 @@
   "alertDeleted": "Xəbərdarlıq silindi",
   "alertsClearTriggered": "İşə düşmüş xəbərdarlıqları təmizlə",
   "alertsCleared": "{count, plural, =1{1 xəbərdarlıq təmizləndi} other{{count} xəbərdarlıq təmizləndi}}",
-  "homeScreenTitle": "Əsas ekran"
+  "homeScreenTitle": "Əsas ekran",
+  "allocationCountries": "Ölkələr"
 }

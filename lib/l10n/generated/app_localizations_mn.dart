@@ -2499,4 +2499,7 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Нүүр дэлгэц';
+
+  @override
+  String get allocationCountries => 'Улс';
 }

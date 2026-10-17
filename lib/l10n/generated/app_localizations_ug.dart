@@ -2500,4 +2500,7 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'باش ئېكران';
+
+  @override
+  String get allocationCountries => 'دۆلەتلەر';
 }

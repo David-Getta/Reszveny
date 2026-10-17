@@ -2516,4 +2516,7 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Umuna a screen';
+
+  @override
+  String get allocationCountries => 'Pagilian';
 }

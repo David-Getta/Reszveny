@@ -458,6 +458,12 @@ void main() {
     await tester.tap(find.text('Sectors'));
     await tester.pumpAndSettle();
     expect(find.textContaining(RegExp(r'^AAPL \d')), findsNothing);
+
+    // Országok a cégprofilokból (az OTP árfolyam híján itt kimarad az összegből).
+    await tester.tap(find.text('Countries'));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('allocation-countries')), findsOneWidget);
+    expect(find.textContaining(RegExp(r'^United States \d')), findsOneWidget);
   });
 
   test('weights grouped and summed, largest first', () {

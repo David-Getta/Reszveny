@@ -663,5 +663,6 @@
   "alertDeleted": "Temošo e phumotšwe",
   "alertsClearTriggered": "Phumola ditemošo tše di diragetšego",
   "alertsCleared": "{count, plural, =1{Go phumotšwe temošo e 1} other{Go phumotšwe ditemošo tše {count}}}",
-  "homeScreenTitle": "Letlakala la mathomo"
+  "homeScreenTitle": "Letlakala la mathomo",
+  "allocationCountries": "Dinaga"
 }

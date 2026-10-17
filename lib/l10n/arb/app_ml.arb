@@ -663,5 +663,6 @@
   "alertDeleted": "അലേർട്ട് ഇല്ലാതാക്കി",
   "alertsClearTriggered": "ട്രിഗർ ആയ അലേർട്ടുകൾ മായ്ക്കുക",
   "alertsCleared": "{count, plural, =1{1 അലേർട്ട് മായ്ച്ചു} other{{count} അലേർട്ടുകൾ മായ്ച്ചു}}",
-  "homeScreenTitle": "ഹോം സ്ക്രീൻ"
+  "homeScreenTitle": "ഹോം സ്ക്രീൻ",
+  "allocationCountries": "രാജ്യങ്ങൾ"
 }

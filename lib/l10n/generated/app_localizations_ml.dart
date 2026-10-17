@@ -2507,4 +2507,7 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'ഹോം സ്ക്രീൻ';
+
+  @override
+  String get allocationCountries => 'രാജ്യങ്ങൾ';
 }

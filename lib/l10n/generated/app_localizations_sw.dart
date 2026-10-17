@@ -2498,4 +2498,7 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Skrini ya mwanzo';
+
+  @override
+  String get allocationCountries => 'Nchi';
 }

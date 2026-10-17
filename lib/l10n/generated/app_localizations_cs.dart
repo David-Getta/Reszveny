@@ -2560,4 +2560,7 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Domovská obrazovka';
+
+  @override
+  String get allocationCountries => 'Země';
 }

@@ -2465,4 +2465,7 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'መነሻ ገጽ';
+
+  @override
+  String get allocationCountries => 'አገሮች';
 }

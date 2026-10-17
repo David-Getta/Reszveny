@@ -663,5 +663,6 @@
   "alertDeleted": "Peringatan dihapus",
   "alertsClearTriggered": "Hapus peringatan yang terpicu",
   "alertsCleared": "{count, plural, =1{1 peringatan dihapus} other{{count} peringatan dihapus}}",
-  "homeScreenTitle": "Layar utama"
+  "homeScreenTitle": "Layar utama",
+  "allocationCountries": "Negara"
 }

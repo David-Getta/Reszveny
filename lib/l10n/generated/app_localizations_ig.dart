@@ -2493,4 +2493,7 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Ibe mbụ';
+
+  @override
+  String get allocationCountries => 'Mba';
 }

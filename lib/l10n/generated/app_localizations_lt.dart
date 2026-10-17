@@ -2565,4 +2565,7 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Pradžios ekranas';
+
+  @override
+  String get allocationCountries => 'Šalys';
 }

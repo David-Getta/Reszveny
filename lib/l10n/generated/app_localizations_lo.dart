@@ -2471,4 +2471,7 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'ໜ້າຫຼັກ';
+
+  @override
+  String get allocationCountries => 'ປະເທດ';
 }

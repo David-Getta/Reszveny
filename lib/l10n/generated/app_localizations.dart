@@ -4320,6 +4320,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Home screen'**
   String get homeScreenTitle;
+
+  /// Portfolio allocation tab: weights grouped by the companies' home country. Next to 'Positions', 'Sectors', 'Currencies'.
+  ///
+  /// In en, this message translates to:
+  /// **'Countries'**
+  String get allocationCountries;
 }
 
 class _AppLocalizationsDelegate

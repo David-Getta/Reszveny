@@ -663,5 +663,6 @@
   "alertDeleted": "ཉེན་བརྡ་བསུབས་ཟིན",
   "alertsClearTriggered": "འགུལ་སློང་བྱུང་བའི་ཉེན་བརྡ་གཙང་སེལ",
   "alertsCleared": "{count, plural, =1{ཉེན་བརྡ་ 1 བསུབས་ཟིན།} other{ཉེན་བརྡ་ {count} བསུབས་ཟིན།}}",
-  "homeScreenTitle": "གཙོ་ངོས།"
+  "homeScreenTitle": "གཙོ་ངོས།",
+  "allocationCountries": "རྒྱལ་ཁབ"
 }

@@ -2566,4 +2566,7 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Začetni zaslon';
+
+  @override
+  String get allocationCountries => 'Države';
 }

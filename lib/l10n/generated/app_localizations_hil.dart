@@ -2512,4 +2512,7 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Panguna nga screen';
+
+  @override
+  String get allocationCountries => 'Pungsod';
 }

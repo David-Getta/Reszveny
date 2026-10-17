@@ -2521,4 +2521,7 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Pantalla de inicio';
+
+  @override
+  String get allocationCountries => 'Países';
 }

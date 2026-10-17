@@ -2384,6 +2384,9 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get homeScreenTitle => '首页';
+
+  @override
+  String get allocationCountries => '国家';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -4764,4 +4767,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get homeScreenTitle => '主頁';
+
+  @override
+  String get allocationCountries => '國家';
 }

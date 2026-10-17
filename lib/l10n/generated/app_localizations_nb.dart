@@ -2498,4 +2498,7 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Startskjerm';
+
+  @override
+  String get allocationCountries => 'Land';
 }

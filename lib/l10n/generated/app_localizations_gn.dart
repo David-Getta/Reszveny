@@ -2503,4 +2503,7 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Ñepyrũha';
+
+  @override
+  String get allocationCountries => 'Tetãkuéra';
 }

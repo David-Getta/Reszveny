@@ -2499,4 +2499,7 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'شاشەی سەرەکی';
+
+  @override
+  String get allocationCountries => 'وڵاتەکان';
 }

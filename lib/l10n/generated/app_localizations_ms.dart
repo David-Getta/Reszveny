@@ -2502,4 +2502,7 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Skrin utama';
+
+  @override
+  String get allocationCountries => 'Negara';
 }

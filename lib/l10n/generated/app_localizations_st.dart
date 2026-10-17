@@ -2512,4 +2512,7 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Leqephe la qalo';
+
+  @override
+  String get allocationCountries => 'Dinaha';
 }

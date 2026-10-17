@@ -2496,4 +2496,7 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Agdil agejdan';
+
+  @override
+  String get allocationCountries => 'Timura';
 }

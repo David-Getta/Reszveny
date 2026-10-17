@@ -2499,4 +2499,7 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Aloitusnäkymä';
+
+  @override
+  String get allocationCountries => 'Maat';
 }

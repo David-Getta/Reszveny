@@ -2567,4 +2567,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Ekran główny';
+
+  @override
+  String get allocationCountries => 'Kraje';
 }

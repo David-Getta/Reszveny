@@ -2503,4 +2503,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Bosh ekran';
+
+  @override
+  String get allocationCountries => 'Mamlakatlar';
 }

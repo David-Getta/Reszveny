@@ -663,5 +663,6 @@
   "alertDeleted": "ئاگاھلاندۇرۇش ئۆچۈرۈلدى",
   "alertsClearTriggered": "قوزغالغان ئاگاھلاندۇرۇشلارنى تازىلاش",
   "alertsCleared": "{count, plural, =1{1 ئاگاھلاندۇرۇش تازىلاندى} other{{count} ئاگاھلاندۇرۇش تازىلاندى}}",
-  "homeScreenTitle": "باش ئېكران"
+  "homeScreenTitle": "باش ئېكران",
+  "allocationCountries": "دۆلەتلەر"
 }

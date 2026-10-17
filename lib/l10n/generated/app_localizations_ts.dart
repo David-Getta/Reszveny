@@ -2514,4 +2514,7 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Tluka ro sungula';
+
+  @override
+  String get allocationCountries => 'Matiko';
 }

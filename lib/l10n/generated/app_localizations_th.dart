@@ -2468,4 +2468,7 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'หน้าจอหลัก';
+
+  @override
+  String get allocationCountries => 'ประเทศ';
 }

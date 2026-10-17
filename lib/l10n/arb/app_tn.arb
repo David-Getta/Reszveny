@@ -663,5 +663,6 @@
   "alertDeleted": "Tlhagiso e phimotswe",
   "alertsClearTriggered": "Phimola ditlhagiso tse di diragetseng",
   "alertsCleared": "{count, plural, =1{Go phimotswe tlhagiso e le nngwe} other{Go phimotswe ditlhagiso di le {count}}}",
-  "homeScreenTitle": "Tsebe ya ntlha"
+  "homeScreenTitle": "Tsebe ya ntlha",
+  "allocationCountries": "Dinaga"
 }

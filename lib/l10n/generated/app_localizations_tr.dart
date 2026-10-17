@@ -2497,4 +2497,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Ana ekran';
+
+  @override
+  String get allocationCountries => 'Ülkeler';
 }

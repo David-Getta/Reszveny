@@ -663,5 +663,6 @@
   "alertDeleted": "எச்சரிக்கை நீக்கப்பட்டது",
   "alertsClearTriggered": "தூண்டப்பட்ட எச்சரிக்கைகளை அழி",
   "alertsCleared": "{count, plural, =1{1 எச்சரிக்கை அழிக்கப்பட்டது} other{{count} எச்சரிக்கைகள் அழிக்கப்பட்டன}}",
-  "homeScreenTitle": "முகப்புத் திரை"
+  "homeScreenTitle": "முகப்புத் திரை",
+  "allocationCountries": "நாடுகள்"
 }

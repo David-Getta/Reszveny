@@ -2492,4 +2492,7 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Hello arano';
+
+  @override
+  String get allocationCountries => 'Leyɗeele';
 }

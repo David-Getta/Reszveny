@@ -2498,4 +2498,7 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Ithangũ rĩa mbere';
+
+  @override
+  String get allocationCountries => 'Mabũrũri';
 }

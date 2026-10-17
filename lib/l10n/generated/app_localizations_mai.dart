@@ -2491,4 +2491,7 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'होम स्क्रीन';
+
+  @override
+  String get allocationCountries => 'देश';
 }

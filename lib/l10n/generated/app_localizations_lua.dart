@@ -2505,4 +2505,7 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Dibeji dia kumpala';
+
+  @override
+  String get allocationCountries => 'Matunga';
 }

@@ -2491,4 +2491,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Màn hình chính';
+
+  @override
+  String get allocationCountries => 'Quốc gia';
 }

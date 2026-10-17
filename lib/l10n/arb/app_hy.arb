@@ -663,5 +663,6 @@
   "alertDeleted": "Ծանուցումը ջնջվեց",
   "alertsClearTriggered": "Մաքրել գործարկված ծանուցումները",
   "alertsCleared": "{count, plural, =1{Մաքրվեց 1 ծանուցում} other{Մաքրվեց {count} ծանուցում}}",
-  "homeScreenTitle": "Գլխավոր էկրան"
+  "homeScreenTitle": "Գլխավոր էկրան",
+  "allocationCountries": "Երկրներ"
 }

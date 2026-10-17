@@ -2489,4 +2489,7 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'ပင်မ မျက်နှာပြင်';
+
+  @override
+  String get allocationCountries => 'နိုင်ငံ';
 }

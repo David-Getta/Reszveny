@@ -2490,4 +2490,7 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'מסך הבית';
+
+  @override
+  String get allocationCountries => 'מדינות';
 }

@@ -2506,4 +2506,7 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Գլխավոր էկրան';
+
+  @override
+  String get allocationCountries => 'Երկրներ';
 }

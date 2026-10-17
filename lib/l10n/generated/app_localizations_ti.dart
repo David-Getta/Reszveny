@@ -2460,4 +2460,7 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'መበገሲ ገጽ';
+
+  @override
+  String get allocationCountries => 'ሃገራት';
 }

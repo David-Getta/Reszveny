@@ -2556,4 +2556,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'الشاشة الرئيسية';
+
+  @override
+  String get allocationCountries => 'الدول';
 }

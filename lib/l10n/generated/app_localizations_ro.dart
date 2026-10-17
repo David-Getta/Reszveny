@@ -2537,4 +2537,7 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Ecran de pornire';
+
+  @override
+  String get allocationCountries => 'Țări';
 }

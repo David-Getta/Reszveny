@@ -663,5 +663,6 @@
   "alertDeleted": "ਅਲਰਟ ਮਿਟਾਇਆ ਗਿਆ",
   "alertsClearTriggered": "ਟ੍ਰਿਗਰ ਹੋਏ ਅਲਰਟ ਸਾਫ਼ ਕਰੋ",
   "alertsCleared": "{count, plural, =1{1 ਅਲਰਟ ਸਾਫ਼ ਕੀਤਾ} other{{count} ਅਲਰਟ ਸਾਫ਼ ਕੀਤੇ}}",
-  "homeScreenTitle": "ਹੋਮ ਸਕ੍ਰੀਨ"
+  "homeScreenTitle": "ਹੋਮ ਸਕ੍ਰੀਨ",
+  "allocationCountries": "ਦੇਸ਼"
 }

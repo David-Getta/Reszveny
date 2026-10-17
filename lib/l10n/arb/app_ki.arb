@@ -663,5 +663,6 @@
   "alertDeleted": "Mũmenyithia nĩ weherio",
   "alertsClearTriggered": "Eheria mĩmenyithia ĩrĩa yaambĩrĩirie",
   "alertsCleared": "{count, plural, =1{Mũmenyithia 1 nĩ weherio} other{Mĩmenyithia {count} nĩ yeherio}}",
-  "homeScreenTitle": "Ithangũ rĩa mbere"
+  "homeScreenTitle": "Ithangũ rĩa mbere",
+  "allocationCountries": "Mabũrũri"
 }

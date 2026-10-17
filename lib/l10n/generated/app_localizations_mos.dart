@@ -2484,4 +2484,7 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Sebr pipi';
+
+  @override
+  String get allocationCountries => 'Tẽnse';
 }

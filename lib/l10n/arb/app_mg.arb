@@ -663,5 +663,6 @@
   "alertDeleted": "Voafafa ny fampitandremana",
   "alertsClearTriggered": "Fafao ireo fampitandremana efa nipoitra",
   "alertsCleared": "{count, plural, =1{Voafafa ny fampitandremana 1} other{Voafafa ny fampitandremana {count}}}",
-  "homeScreenTitle": "Efijery fandraisana"
+  "homeScreenTitle": "Efijery fandraisana",
+  "allocationCountries": "Firenena"
 }

@@ -2503,4 +2503,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Kezdőképernyő';
+
+  @override
+  String get allocationCountries => 'Országok';
 }

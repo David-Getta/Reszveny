@@ -2497,4 +2497,7 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'ہوم اسکرین';
+
+  @override
+  String get allocationCountries => 'ممالک';
 }

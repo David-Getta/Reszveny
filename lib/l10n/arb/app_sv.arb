@@ -663,5 +663,6 @@
   "alertDeleted": "Larm borttaget",
   "alertsClearTriggered": "Rensa utlösta larm",
   "alertsCleared": "{count, plural, =1{1 larm rensat} other{{count} larm rensade}}",
-  "homeScreenTitle": "Startskärm"
+  "homeScreenTitle": "Startskärm",
+  "allocationCountries": "Länder"
 }

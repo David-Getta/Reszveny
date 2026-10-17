@@ -663,5 +663,6 @@
   "alertDeleted": "Upozornění smazáno",
   "alertsClearTriggered": "Vymazat spuštěná upozornění",
   "alertsCleared": "{count, plural, =1{Vymazáno 1 upozornění} few{Vymazána {count} upozornění} many{Vymazáno {count} upozornění} other{Vymazáno {count} upozornění}}",
-  "homeScreenTitle": "Domovská obrazovka"
+  "homeScreenTitle": "Domovská obrazovka",
+  "allocationCountries": "Země"
 }

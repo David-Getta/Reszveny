@@ -2496,4 +2496,7 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Ekran akèy';
+
+  @override
+  String get allocationCountries => 'Peyi';
 }

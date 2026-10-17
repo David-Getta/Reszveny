@@ -2503,4 +2503,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Schermata iniziale';
+
+  @override
+  String get allocationCountries => 'Paesi';
 }

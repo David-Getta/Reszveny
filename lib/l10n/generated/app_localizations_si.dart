@@ -2495,4 +2495,7 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'මුල් තිරය';
+
+  @override
+  String get allocationCountries => 'රටවල්';
 }

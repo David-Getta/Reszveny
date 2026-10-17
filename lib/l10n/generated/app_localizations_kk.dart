@@ -2498,4 +2498,7 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Басты экран';
+
+  @override
+  String get allocationCountries => 'Елдер';
 }

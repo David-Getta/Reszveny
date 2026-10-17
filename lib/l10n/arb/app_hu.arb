@@ -663,5 +663,6 @@
   "alertDeleted": "Riasztás törölve",
   "alertsClearTriggered": "Teljesült riasztások törlése",
   "alertsCleared": "{count, plural, =1{1 riasztás törölve} other{{count} riasztás törölve}}",
-  "homeScreenTitle": "Kezdőképernyő"
+  "homeScreenTitle": "Kezdőképernyő",
+  "allocationCountries": "Országok"
 }

@@ -2500,4 +2500,7 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Əsas ekran';
+
+  @override
+  String get allocationCountries => 'Ölkələr';
 }

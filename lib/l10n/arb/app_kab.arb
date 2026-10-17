@@ -663,5 +663,6 @@
   "alertDeleted": "Alɣu yettwakkes",
   "alertsClearTriggered": "Sfeḍ ilɣuten yettwasekren",
   "alertsCleared": "{count, plural, =1{Yettwakkes 1 n walɣu} other{Ttwakksen {count} n walɣuten}}",
-  "homeScreenTitle": "Agdil agejdan"
+  "homeScreenTitle": "Agdil agejdan",
+  "allocationCountries": "Timura"
 }

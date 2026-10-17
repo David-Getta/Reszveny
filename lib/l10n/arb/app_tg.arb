@@ -663,5 +663,6 @@
   "alertDeleted": "Огоҳӣ нест карда шуд",
   "alertsClearTriggered": "Тоза кардани огоҳиҳои фаъолшуда",
   "alertsCleared": "{count, plural, =1{1 огоҳӣ тоза карда шуд} other{{count} огоҳӣ тоза карда шуд}}",
-  "homeScreenTitle": "Экрани асосӣ"
+  "homeScreenTitle": "Экрани асосӣ",
+  "allocationCountries": "Кишварҳо"
 }

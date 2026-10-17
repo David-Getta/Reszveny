@@ -663,5 +663,6 @@
   "alertDeleted": "Η ειδοποίηση διαγράφηκε",
   "alertsClearTriggered": "Εκκαθάριση ενεργοποιημένων ειδοποιήσεων",
   "alertsCleared": "{count, plural, =1{Διαγράφηκε 1 ειδοποίηση} other{Διαγράφηκαν {count} ειδοποιήσεις}}",
-  "homeScreenTitle": "Αρχική οθόνη"
+  "homeScreenTitle": "Αρχική οθόνη",
+  "allocationCountries": "Χώρες"
 }

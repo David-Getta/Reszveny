@@ -2509,4 +2509,7 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Isikrini sokuqala';
+
+  @override
+  String get allocationCountries => 'Amazwe';
 }

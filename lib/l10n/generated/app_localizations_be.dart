@@ -2565,4 +2565,7 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Галоўны экран';
+
+  @override
+  String get allocationCountries => 'Краіны';
 }

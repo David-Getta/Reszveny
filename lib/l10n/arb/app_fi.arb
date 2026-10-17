@@ -663,5 +663,6 @@
   "alertDeleted": "Hälytys poistettu",
   "alertsClearTriggered": "Tyhjennä lauenneet hälytykset",
   "alertsCleared": "{count, plural, =1{1 hälytys poistettu} other{{count} hälytystä poistettu}}",
-  "homeScreenTitle": "Aloitusnäkymä"
+  "homeScreenTitle": "Aloitusnäkymä",
+  "allocationCountries": "Maat"
 }

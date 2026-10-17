@@ -663,5 +663,6 @@
   "alertDeleted": "خبرتیا ړنګه شوه",
   "alertsClearTriggered": "فعاله شوې خبرتیاوې پاکې کړئ",
   "alertsCleared": "{count, plural, =1{1 خبرتیا پاکه شوه} other{{count} خبرتیاوې پاکې شوې}}",
-  "homeScreenTitle": "کور پاڼه"
+  "homeScreenTitle": "کور پاڼه",
+  "allocationCountries": "هېوادونه"
 }

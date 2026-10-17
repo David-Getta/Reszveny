@@ -663,5 +663,6 @@
   "alertDeleted": "Nabura ang alerto",
   "alertsClearTriggered": "I-clear ang mga na-trigger na alerto",
   "alertsCleared": "{count, plural, =1{Na-clear ang 1 alerto} other{Na-clear ang {count} alerto}}",
-  "homeScreenTitle": "Pangunahing screen"
+  "homeScreenTitle": "Pangunahing screen",
+  "allocationCountries": "Bansa"
 }

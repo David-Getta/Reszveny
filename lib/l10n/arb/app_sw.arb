@@ -663,5 +663,6 @@
   "alertDeleted": "Arifa imefutwa",
   "alertsClearTriggered": "Futa arifa zilizotokea",
   "alertsCleared": "{count, plural, =1{Arifa 1 imefutwa} other{Arifa {count} zimefutwa}}",
-  "homeScreenTitle": "Skrini ya mwanzo"
+  "homeScreenTitle": "Skrini ya mwanzo",
+  "allocationCountries": "Nchi"
 }

@@ -663,5 +663,6 @@
   "alertDeleted": "Сэрэмжлүүлэг устгалаа",
   "alertsClearTriggered": "Идэвхжсэн сэрэмжлүүлгийг цэвэрлэх",
   "alertsCleared": "{count, plural, =1{1 сэрэмжлүүлэг цэвэрлэлээ} other{{count} сэрэмжлүүлэг цэвэрлэлээ}}",
-  "homeScreenTitle": "Нүүр дэлгэц"
+  "homeScreenTitle": "Нүүр дэлгэц",
+  "allocationCountries": "Улс"
 }

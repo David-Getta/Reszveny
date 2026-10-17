@@ -2504,4 +2504,7 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Pangunahing screen';
+
+  @override
+  String get allocationCountries => 'Bansa';
 }

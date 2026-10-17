@@ -663,5 +663,6 @@
   "alertDeleted": "Opozorilo izbrisano",
   "alertsClearTriggered": "Počisti sprožena opozorila",
   "alertsCleared": "{count, plural, =1{Počiščeno je 1 opozorilo} one{Počiščeno je {count} opozorilo} two{Počiščeni sta {count} opozorili} few{Počiščena so {count} opozorila} other{Počiščenih je {count} opozoril}}",
-  "homeScreenTitle": "Začetni zaslon"
+  "homeScreenTitle": "Začetni zaslon",
+  "allocationCountries": "Države"
 }

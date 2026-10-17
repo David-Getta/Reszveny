@@ -663,5 +663,6 @@
   "alertDeleted": "Ogohlantirish oʻchirildi",
   "alertsClearTriggered": "Ishga tushgan ogohlantirishlarni tozalash",
   "alertsCleared": "{count, plural, =1{1 ta ogohlantirish tozalandi} other{{count} ta ogohlantirish tozalandi}}",
-  "homeScreenTitle": "Bosh ekran"
+  "homeScreenTitle": "Bosh ekran",
+  "allocationCountries": "Mamlakatlar"
 }

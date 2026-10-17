@@ -2498,4 +2498,7 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'მთავარი ეკრანი';
+
+  @override
+  String get allocationCountries => 'ქვეყნები';
 }

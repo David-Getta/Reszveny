@@ -2512,4 +2512,7 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Qallariy pantalla';
+
+  @override
+  String get allocationCountries => 'Suyukuna';
 }

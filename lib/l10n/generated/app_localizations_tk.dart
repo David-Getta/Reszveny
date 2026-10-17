@@ -2498,4 +2498,7 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Baş ekran';
+
+  @override
+  String get allocationCountries => 'Ýurtlar';
 }

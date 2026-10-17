@@ -663,5 +663,6 @@
   "alertDeleted": "Alerte supprimée",
   "alertsClearTriggered": "Effacer les alertes déclenchées",
   "alertsCleared": "{count, plural, =1{1 alerte effacée} other{{count} alertes effacées}}",
-  "homeScreenTitle": "Écran d’accueil"
+  "homeScreenTitle": "Écran d’accueil",
+  "allocationCountries": "Pays"
 }

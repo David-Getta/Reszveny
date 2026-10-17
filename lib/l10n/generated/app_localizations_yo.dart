@@ -2496,4 +2496,7 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Ojú-ìwé àkọ́kọ́';
+
+  @override
+  String get allocationCountries => 'Orílẹ̀-èdè';
 }

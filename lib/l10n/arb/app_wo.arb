@@ -663,5 +663,6 @@
   "alertDeleted": "Far nañu artu bi",
   "alertsClearTriggered": "Far artu yi dox",
   "alertsCleared": "{count, plural, =1{Far nañu 1 artu} other{Far nañu {count} artu}}",
-  "homeScreenTitle": "Xët bu njëkk"
+  "homeScreenTitle": "Xët bu njëkk",
+  "allocationCountries": "Réew yi"
 }

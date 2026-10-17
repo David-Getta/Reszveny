@@ -663,5 +663,6 @@
   "alertDeleted": "Chenjezo lachotsedwa",
   "alertsClearTriggered": "Chotsani machenjezo amene alira",
   "alertsCleared": "{count, plural, =1{Chenjezo 1 lachotsedwa} other{Machenjezo {count} achotsedwa}}",
-  "homeScreenTitle": "Tsamba loyamba"
+  "homeScreenTitle": "Tsamba loyamba",
+  "allocationCountries": "Mayiko"
 }

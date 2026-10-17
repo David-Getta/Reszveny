@@ -2493,4 +2493,7 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'હોમ સ્ક્રીન';
+
+  @override
+  String get allocationCountries => 'દેશ';
 }

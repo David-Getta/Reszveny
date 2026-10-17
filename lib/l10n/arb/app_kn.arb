@@ -663,5 +663,6 @@
   "alertDeleted": "ಎಚ್ಚರಿಕೆಯನ್ನು ಅಳಿಸಲಾಗಿದೆ",
   "alertsClearTriggered": "ಟ್ರಿಗರ್ ಆದ ಎಚ್ಚರಿಕೆಗಳನ್ನು ತೆರವುಗೊಳಿಸಿ",
   "alertsCleared": "{count, plural, =1{1 ಎಚ್ಚರಿಕೆಯನ್ನು ತೆರವುಗೊಳಿಸಲಾಗಿದೆ} other{{count} ಎಚ್ಚರಿಕೆಗಳನ್ನು ತೆರವುಗೊಳಿಸಲಾಗಿದೆ}}",
-  "homeScreenTitle": "ಹೋಮ್ ಸ್ಕ್ರೀನ್"
+  "homeScreenTitle": "ಹೋಮ್ ಸ್ಕ್ರೀನ್",
+  "allocationCountries": "ದೇಶಗಳು"
 }

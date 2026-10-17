@@ -2503,4 +2503,7 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Shafin farko';
+
+  @override
+  String get allocationCountries => 'Ƙasashe';
 }

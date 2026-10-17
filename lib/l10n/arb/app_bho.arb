@@ -663,5 +663,6 @@
   "alertDeleted": "अलर्ट मिटा दिहल गइल",
   "alertsClearTriggered": "चालू भइल अलर्ट साफ करीं",
   "alertsCleared": "{count, plural, =1{1 अलर्ट साफ कइल गइल} other{{count} अलर्ट साफ कइल गइल}}",
-  "homeScreenTitle": "होम स्क्रीन"
+  "homeScreenTitle": "होम स्क्रीन",
+  "allocationCountries": "देश"
 }

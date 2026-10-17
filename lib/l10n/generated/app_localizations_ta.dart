@@ -2507,4 +2507,7 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'முகப்புத் திரை';
+
+  @override
+  String get allocationCountries => 'நாடுகள்';
 }

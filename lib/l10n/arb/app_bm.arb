@@ -663,5 +663,6 @@
   "alertDeleted": "Kunnafoni jɔsira",
   "alertsClearTriggered": "Kunnafoni wulilenw jɔsi",
   "alertsCleared": "{count, plural, =1{Kunnafoni 1 jɔsira} other{Kunnafoni {count} jɔsira}}",
-  "homeScreenTitle": "Ɲɛ fɔlɔ"
+  "homeScreenTitle": "Ɲɛ fɔlɔ",
+  "allocationCountries": "Jamanaw"
 }

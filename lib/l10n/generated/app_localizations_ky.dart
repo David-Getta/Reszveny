@@ -2501,4 +2501,7 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Башкы экран';
+
+  @override
+  String get allocationCountries => 'Өлкөлөр';
 }

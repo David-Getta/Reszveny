@@ -2567,4 +2567,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Главный экран';
+
+  @override
+  String get allocationCountries => 'Страны';
 }

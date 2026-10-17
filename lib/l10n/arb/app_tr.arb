@@ -663,5 +663,6 @@
   "alertDeleted": "Alarm silindi",
   "alertsClearTriggered": "Tetiklenen alarmları temizle",
   "alertsCleared": "{count, plural, =1{1 alarm temizlendi} other{{count} alarm temizlendi}}",
-  "homeScreenTitle": "Ana ekran"
+  "homeScreenTitle": "Ana ekran",
+  "allocationCountries": "Ülkeler"
 }

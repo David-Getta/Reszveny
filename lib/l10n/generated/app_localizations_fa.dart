@@ -2494,4 +2494,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'صفحه اصلی';
+
+  @override
+  String get allocationCountries => 'کشورها';
 }

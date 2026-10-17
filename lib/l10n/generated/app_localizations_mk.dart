@@ -2517,4 +2517,7 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Почетен екран';
+
+  @override
+  String get allocationCountries => 'Држави';
 }

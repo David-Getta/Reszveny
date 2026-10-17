@@ -663,5 +663,6 @@
   "alertDeleted": "అలర్ట్ తొలగించబడింది",
   "alertsClearTriggered": "ట్రిగ్గర్ అయిన అలర్ట్‌లను క్లియర్ చేయండి",
   "alertsCleared": "{count, plural, =1{1 అలర్ట్ క్లియర్ చేయబడింది} other{{count} అలర్ట్‌లు క్లియర్ చేయబడ్డాయి}}",
-  "homeScreenTitle": "హోమ్ స్క్రీన్"
+  "homeScreenTitle": "హోమ్ స్క్రీన్",
+  "allocationCountries": "దేశాలు"
 }

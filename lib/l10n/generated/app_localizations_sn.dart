@@ -2503,4 +2503,7 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Peji rekutanga';
+
+  @override
+  String get allocationCountries => 'Nyika';
 }

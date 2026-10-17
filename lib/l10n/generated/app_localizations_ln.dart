@@ -2509,4 +2509,7 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Lokasa ya liboso';
+
+  @override
+  String get allocationCountries => 'Mikili';
 }

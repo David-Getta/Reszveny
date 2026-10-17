@@ -663,5 +663,6 @@
   "alertDeleted": "Akeekkachiisni haqameera",
   "alertsClearTriggered": "Akeekkachiisota ka'an haqi",
   "alertsCleared": "{count, plural, =1{Akeekkachiisni 1 haqameera} other{Akeekkachiisni {count} haqamaniiru}}",
-  "homeScreenTitle": "Fuula jalqabaa"
+  "homeScreenTitle": "Fuula jalqabaa",
+  "allocationCountries": "Biyyoota"
 }

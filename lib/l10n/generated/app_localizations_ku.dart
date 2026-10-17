@@ -2499,4 +2499,7 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Ekrana sereke';
+
+  @override
+  String get allocationCountries => 'Welat';
 }

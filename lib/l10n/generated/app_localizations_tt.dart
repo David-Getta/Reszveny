@@ -2496,4 +2496,7 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Баш экран';
+
+  @override
+  String get allocationCountries => 'Илләр';
 }

@@ -663,5 +663,6 @@
   "alertDeleted": "Эскертүү өчүрүлдү",
   "alertsClearTriggered": "Иштеген эскертүүлөрдү тазалоо",
   "alertsCleared": "{count, plural, =1{1 эскертүү тазаланды} other{{count} эскертүү тазаланды}}",
-  "homeScreenTitle": "Башкы экран"
+  "homeScreenTitle": "Башкы экран",
+  "allocationCountries": "Өлкөлөр"
 }

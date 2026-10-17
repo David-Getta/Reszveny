@@ -2501,4 +2501,7 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Tuisskerm';
+
+  @override
+  String get allocationCountries => 'Lande';
 }

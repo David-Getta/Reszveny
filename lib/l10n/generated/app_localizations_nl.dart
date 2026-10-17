@@ -2502,4 +2502,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Startscherm';
+
+  @override
+  String get allocationCountries => 'Landen';
 }

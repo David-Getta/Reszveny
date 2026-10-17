@@ -663,5 +663,6 @@
   "alertDeleted": "Jeertinol momtaama",
   "alertsClearTriggered": "Momtu jeertine ɗe huwi",
   "alertsCleared": "{count, plural, =1{Jeertinol 1 momtaama} other{Jeertine {count} momtaama}}",
-  "homeScreenTitle": "Hello arano"
+  "homeScreenTitle": "Hello arano",
+  "allocationCountries": "Leyɗeele"
 }

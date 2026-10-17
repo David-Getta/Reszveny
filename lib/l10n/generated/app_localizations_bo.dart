@@ -2486,4 +2486,7 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'གཙོ་ངོས།';
+
+  @override
+  String get allocationCountries => 'རྒྱལ་ཁབ';
 }

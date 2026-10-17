@@ -663,5 +663,6 @@
   "alertDeleted": "अलर्ट मेटाइयो",
   "alertsClearTriggered": "ट्रिगर भएका अलर्ट हटाउनुहोस्",
   "alertsCleared": "{count, plural, =1{1 अलर्ट हटाइयो} other{{count} अलर्ट हटाइए}}",
-  "homeScreenTitle": "होम स्क्रिन"
+  "homeScreenTitle": "होम स्क्रिन",
+  "allocationCountries": "देश"
 }

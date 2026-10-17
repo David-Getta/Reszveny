@@ -663,5 +663,6 @@
   "alertDeleted": "Pépéling geus dipupus",
   "alertsClearTriggered": "Pupus pépéling anu geus aktip",
   "alertsCleared": "{count, plural, =1{1 pépéling dipupus} other{{count} pépéling dipupus}}",
-  "homeScreenTitle": "Layar utama"
+  "homeScreenTitle": "Layar utama",
+  "allocationCountries": "Nagara"
 }

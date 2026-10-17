@@ -663,5 +663,6 @@
   "alertDeleted": "Alarm gelöscht",
   "alertsClearTriggered": "Ausgelöste Alarme löschen",
   "alertsCleared": "{count, plural, =1{1 Alarm gelöscht} other{{count} Alarme gelöscht}}",
-  "homeScreenTitle": "Startseite"
+  "homeScreenTitle": "Startseite",
+  "allocationCountries": "Länder"
 }

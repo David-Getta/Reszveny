@@ -663,5 +663,6 @@
   "alertDeleted": "ማንቂያ ተሰርዟል",
   "alertsClearTriggered": "የተቀሰቀሱ ማንቂያዎችን አጽዳ",
   "alertsCleared": "{count, plural, =1{1 ማንቂያ ተሰርዟል} other{{count} ማንቂያዎች ተሰርዘዋል}}",
-  "homeScreenTitle": "መነሻ ገጽ"
+  "homeScreenTitle": "መነሻ ገጽ",
+  "allocationCountries": "አገሮች"
 }

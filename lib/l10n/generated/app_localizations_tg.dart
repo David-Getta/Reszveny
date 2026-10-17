@@ -2499,4 +2499,7 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Экрани асосӣ';
+
+  @override
+  String get allocationCountries => 'Кишварҳо';
 }

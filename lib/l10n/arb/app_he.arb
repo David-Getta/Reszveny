@@ -663,5 +663,6 @@
   "alertDeleted": "ההתראה נמחקה",
   "alertsClearTriggered": "ניקוי התראות שהופעלו",
   "alertsCleared": "{count, plural, =1{נוקתה התראה אחת} other{נוקו {count} התראות}}",
-  "homeScreenTitle": "מסך הבית"
+  "homeScreenTitle": "מסך הבית",
+  "allocationCountries": "מדינות"
 }

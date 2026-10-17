@@ -2505,4 +2505,7 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Bogga hore';
+
+  @override
+  String get allocationCountries => 'Waddamada';
 }

@@ -2507,4 +2507,7 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Pantalla d\'inici';
+
+  @override
+  String get allocationCountries => 'Països';
 }

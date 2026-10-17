@@ -2507,4 +2507,7 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Αρχική οθόνη';
+
+  @override
+  String get allocationCountries => 'Χώρες';
 }

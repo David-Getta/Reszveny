@@ -663,5 +663,6 @@
   "alertDeleted": "Alarm slettet",
   "alertsClearTriggered": "Ryd udløste alarmer",
   "alertsCleared": "{count, plural, =1{1 alarm fjernet} other{{count} alarmer fjernet}}",
-  "homeScreenTitle": "Startskærm"
+  "homeScreenTitle": "Startskærm",
+  "allocationCountries": "Lande"
 }

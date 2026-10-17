@@ -2505,4 +2505,7 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Lukaya ya ntete';
+
+  @override
+  String get allocationCountries => 'Bansi';
 }

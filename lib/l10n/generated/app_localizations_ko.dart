@@ -2428,4 +2428,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get homeScreenTitle => '홈 화면';
+
+  @override
+  String get allocationCountries => '국가';
 }

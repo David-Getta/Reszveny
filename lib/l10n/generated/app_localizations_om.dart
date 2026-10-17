@@ -2506,4 +2506,7 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Fuula jalqabaa';
+
+  @override
+  String get allocationCountries => 'Biyyoota';
 }

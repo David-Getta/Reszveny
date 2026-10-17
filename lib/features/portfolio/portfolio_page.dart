@@ -399,7 +399,7 @@ List<Color> allocationColors(AppPalette p) => [
 ];
 
 /// Mi szerint mutassuk a megoszlást.
-enum AllocationBy { positions, sectors, currencies }
+enum AllocationBy { positions, sectors, countries, currencies }
 
 /// Súlyok csoportosítva (legnagyobb elöl); a [label] adja a csoport nevét.
 List<({String label, double weight})> groupWeights(List<PositionValue> rows, String Function(PositionValue) label) {
@@ -425,15 +425,21 @@ class AllocationCard extends StatefulWidget {
 
 class _AllocationCardState extends State<AllocationCard> {
   AllocationBy _by = AllocationBy.positions;
-  Future<Map<String, String?>>? _sectors;
+  Future<Map<String, ({String? sector, String? country})>>? _profiles;
 
-  /// A szektorok a cégprofilokból (egyszer töltjük be, a gyorsítótárból jön).
-  Future<Map<String, String?>> _loadSectors() async {
+  /// A szektor és az ország a cégprofilokból (egyszer töltjük be, a gyorsítótárból jön).
+  Future<Map<String, ({String? sector, String? country})>> _loadProfiles() async {
     final market = AppServices.of(context).marketData;
     final symbols = {for (final r in widget.rows) r.position.symbol};
     final entries = await Future.wait([
       for (final s in symbols)
-        market.profile(s).then((p) => MapEntry(s, p.sector), onError: (Object _) => MapEntry<String, String?>(s, null)),
+        market
+            .profile(s)
+            .then(
+              (p) => MapEntry(s, (sector: p.sector, country: p.country)),
+              onError: (Object _) =>
+                  MapEntry<String, ({String? sector, String? country})>(s, (sector: null, country: null)),
+            ),
     ]);
     return Map.fromEntries(entries);
   }
@@ -451,20 +457,25 @@ class _AllocationCardState extends State<AllocationCard> {
           children: [
             Text(l10n.portfolioAllocation, style: theme.textTheme.titleMedium),
             const SizedBox(height: 10),
-            SegmentedButton<AllocationBy>(
-              key: const ValueKey('allocation-by'),
-              showSelectedIcon: false,
-              style: const ButtonStyle(visualDensity: VisualDensity.compact),
-              segments: [
-                ButtonSegment(value: AllocationBy.positions, label: Text(l10n.allocationPositions)),
-                ButtonSegment(value: AllocationBy.sectors, label: Text(l10n.allocationSectors)),
-                ButtonSegment(value: AllocationBy.currencies, label: Text(l10n.allocationCurrencies)),
-              ],
-              selected: {_by},
-              onSelectionChanged: (v) => setState(() {
-                _by = v.first;
-                if (_by == AllocationBy.sectors) _sectors ??= _loadSectors();
-              }),
+            // Keskeny képernyőn vízszintesen görgethető.
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: SegmentedButton<AllocationBy>(
+                key: const ValueKey('allocation-by'),
+                showSelectedIcon: false,
+                style: const ButtonStyle(visualDensity: VisualDensity.compact),
+                segments: [
+                  ButtonSegment(value: AllocationBy.positions, label: Text(l10n.allocationPositions)),
+                  ButtonSegment(value: AllocationBy.sectors, label: Text(l10n.allocationSectors)),
+                  ButtonSegment(value: AllocationBy.countries, label: Text(l10n.allocationCountries)),
+                  ButtonSegment(value: AllocationBy.currencies, label: Text(l10n.allocationCurrencies)),
+                ],
+                selected: {_by},
+                onSelectionChanged: (v) => setState(() {
+                  _by = v.first;
+                  if (_by == AllocationBy.sectors || _by == AllocationBy.countries) _profiles ??= _loadProfiles();
+                }),
+              ),
             ),
             const SizedBox(height: 12),
             switch (_by) {
@@ -479,16 +490,20 @@ class _AllocationCardState extends State<AllocationCard> {
                 entries: groupWeights(widget.rows, (r) => r.position.currency),
                 fmt: widget.fmt,
               ),
-              AllocationBy.sectors => FutureBuilder<Map<String, String?>>(
-                future: _sectors,
+              AllocationBy.sectors || AllocationBy.countries => FutureBuilder(
+                future: _profiles,
                 builder: (context, snap) {
-                  final sectors = snap.data;
-                  if (sectors == null) return const LinearProgressIndicator();
+                  final profiles = snap.data;
+                  if (profiles == null) return const LinearProgressIndicator();
                   return AllocationBar(
-                    entries: groupWeights(
-                      widget.rows,
-                      (r) => Terms.industry(sectors[r.position.symbol], locale) ?? l10n.notAvailable,
-                    ),
+                    key: ValueKey('allocation-${_by.name}'),
+                    entries: groupWeights(widget.rows, (r) {
+                      final p = profiles[r.position.symbol];
+                      final name = _by == AllocationBy.sectors
+                          ? Terms.industry(p?.sector, locale)
+                          : Terms.country(p?.country, locale);
+                      return name ?? l10n.notAvailable;
+                    }),
                     fmt: widget.fmt,
                   );
                 },

@@ -2508,4 +2508,7 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Omuko ogusooka';
+
+  @override
+  String get allocationCountries => 'Amawanga';
 }

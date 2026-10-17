@@ -2541,4 +2541,7 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Početni ekran';
+
+  @override
+  String get allocationCountries => 'Države';
 }

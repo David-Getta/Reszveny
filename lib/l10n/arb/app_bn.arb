@@ -663,5 +663,6 @@
   "alertDeleted": "সতর্কতা মুছে ফেলা হয়েছে",
   "alertsClearTriggered": "ট্রিগার হওয়া সতর্কতা মুছুন",
   "alertsCleared": "{count, plural, =1{1টি সতর্কতা মুছে ফেলা হয়েছে} other{{count}টি সতর্কতা মুছে ফেলা হয়েছে}}",
-  "homeScreenTitle": "হোম স্ক্রিন"
+  "homeScreenTitle": "হোম স্ক্রিন",
+  "allocationCountries": "দেশ"
 }

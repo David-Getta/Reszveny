@@ -2503,4 +2503,7 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'హోమ్ స్క్రీన్';
+
+  @override
+  String get allocationCountries => 'దేశాలు';
 }

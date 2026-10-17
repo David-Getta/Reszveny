@@ -2419,4 +2419,7 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'ホーム画面';
+
+  @override
+  String get allocationCountries => '国';
 }

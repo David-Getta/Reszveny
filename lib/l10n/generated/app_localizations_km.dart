@@ -2477,4 +2477,7 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'អេក្រង់ដើម';
+
+  @override
+  String get allocationCountries => 'ប្រទេស';
 }

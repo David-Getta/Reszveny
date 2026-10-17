@@ -1995,5 +1995,9 @@
   "homeScreenTitle": "Home screen",
   "@homeScreenTitle": {
     "description": "Settings section title: switches to show or hide the parts of the home screen (Markets today, Favorites, News…)."
+  },
+  "allocationCountries": "Countries",
+  "@allocationCountries": {
+    "description": "Portfolio allocation tab: weights grouped by the companies' home country. Next to 'Positions', 'Sectors', 'Currencies'."
   }
 }

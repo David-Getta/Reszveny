@@ -2489,4 +2489,7 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'هوم اسڪرين';
+
+  @override
+  String get allocationCountries => 'ملڪ';
 }

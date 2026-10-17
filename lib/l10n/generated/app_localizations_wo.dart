@@ -2493,4 +2493,7 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Xët bu njëkk';
+
+  @override
+  String get allocationCountries => 'Réew yi';
 }

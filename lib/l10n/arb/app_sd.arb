@@ -663,5 +663,6 @@
   "alertDeleted": "الرٽ ميٽيو ويو",
   "alertsClearTriggered": "ٽرگر ٿيل الرٽ صاف ڪريو",
   "alertsCleared": "{count, plural, =1{1 الرٽ صاف ڪيو ويو} other{{count} الرٽ صاف ڪيا ويا}}",
-  "homeScreenTitle": "هوم اسڪرين"
+  "homeScreenTitle": "هوم اسڪرين",
+  "allocationCountries": "ملڪ"
 }

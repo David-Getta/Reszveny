@@ -663,5 +663,6 @@
   "alertDeleted": "Đã xóa cảnh báo",
   "alertsClearTriggered": "Xóa các cảnh báo đã kích hoạt",
   "alertsCleared": "{count, plural, =1{Đã xóa 1 cảnh báo} other{Đã xóa {count} cảnh báo}}",
-  "homeScreenTitle": "Màn hình chính"
+  "homeScreenTitle": "Màn hình chính",
+  "allocationCountries": "Quốc gia"
 }

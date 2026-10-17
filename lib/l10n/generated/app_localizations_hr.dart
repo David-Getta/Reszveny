@@ -2542,4 +2542,7 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Početni zaslon';
+
+  @override
+  String get allocationCountries => 'Države';
 }

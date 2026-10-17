@@ -663,5 +663,6 @@
   "alertDeleted": "Оповещение удалено",
   "alertsClearTriggered": "Очистить сработавшие оповещения",
   "alertsCleared": "{count, plural, =1{Удалено 1 оповещение} one{Удалено {count} оповещение} few{Удалено {count} оповещения} many{Удалено {count} оповещений} other{Удалено {count} оповещения}}",
-  "homeScreenTitle": "Главный экран"
+  "homeScreenTitle": "Главный экран",
+  "allocationCountries": "Страны"
 }

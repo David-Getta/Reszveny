@@ -2505,4 +2505,7 @@ class AppLocalizationsRn extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Urupapuro rw\'intango';
+
+  @override
+  String get allocationCountries => 'Ibihugu';
 }

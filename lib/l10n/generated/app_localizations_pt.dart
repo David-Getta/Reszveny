@@ -2503,4 +2503,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Tela inicial';
+
+  @override
+  String get allocationCountries => 'Países';
 }

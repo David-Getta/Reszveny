@@ -2510,4 +2510,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Startseite';
+
+  @override
+  String get allocationCountries => 'Länder';
 }

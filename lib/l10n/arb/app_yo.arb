@@ -663,5 +663,6 @@
   "alertDeleted": "A ti pa ìkìlọ̀ rẹ́",
   "alertsClearTriggered": "Pa àwọn ìkìlọ̀ tó ti ṣẹlẹ̀ rẹ́",
   "alertsCleared": "{count, plural, =1{A ti pa ìkìlọ̀ 1 rẹ́} other{A ti pa ìkìlọ̀ {count} rẹ́}}",
-  "homeScreenTitle": "Ojú-ìwé àkọ́kọ́"
+  "homeScreenTitle": "Ojú-ìwé àkọ́kọ́",
+  "allocationCountries": "Orílẹ̀-èdè"
 }

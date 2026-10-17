@@ -663,5 +663,6 @@
   "alertDeleted": "Alerta a fost ștearsă",
   "alertsClearTriggered": "Șterge alertele declanșate",
   "alertsCleared": "{count, plural, =1{A fost ștearsă 1 alertă} one{A fost ștearsă {count} alertă} few{Au fost șterse {count} alerte} other{Au fost șterse {count} de alerte}}",
-  "homeScreenTitle": "Ecran de pornire"
+  "homeScreenTitle": "Ecran de pornire",
+  "allocationCountries": "Țări"
 }

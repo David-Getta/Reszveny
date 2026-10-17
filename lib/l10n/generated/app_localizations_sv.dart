@@ -2499,4 +2499,7 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Startskärm';
+
+  @override
+  String get allocationCountries => 'Länder';
 }

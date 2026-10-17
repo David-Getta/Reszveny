@@ -663,5 +663,6 @@
   "alertDeleted": "Melding verwijderd",
   "alertsClearTriggered": "Afgegane meldingen wissen",
   "alertsCleared": "{count, plural, =1{1 melding gewist} other{{count} meldingen gewist}}",
-  "homeScreenTitle": "Startscherm"
+  "homeScreenTitle": "Startscherm",
+  "allocationCountries": "Landen"
 }

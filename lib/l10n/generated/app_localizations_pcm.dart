@@ -2498,4 +2498,7 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get homeScreenTitle => 'Main screen';
+
+  @override
+  String get allocationCountries => 'Countries';
 }

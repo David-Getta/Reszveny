@@ -663,5 +663,6 @@
   "alertDeleted": "Hişyarî hate jêbirin",
   "alertsClearTriggered": "Hişyariyên çalakbûyî paqij bike",
   "alertsCleared": "{count, plural, =1{1 hişyarî hate paqijkirin} other{{count} hişyarî hatin paqijkirin}}",
-  "homeScreenTitle": "Ekrana sereke"
+  "homeScreenTitle": "Ekrana sereke",
+  "allocationCountries": "Welat"
 }
