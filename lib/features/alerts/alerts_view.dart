@@ -33,6 +33,8 @@ Future<bool> showAlertDialog(
   AlertKind? initialKind,
   double? initialValue,
   PriceAlert? editing,
+  double? week52High,
+  double? week52Low,
 }) async {
   final created = await showDialog<bool>(
     context: context,
@@ -43,6 +45,8 @@ Future<bool> showAlertDialog(
       initialKind: editing?.kind ?? initialKind,
       initialValue: editing?.value ?? initialValue,
       editing: editing,
+      week52High: week52High,
+      week52Low: week52Low,
     ),
   );
   return created ?? false;
@@ -56,7 +60,13 @@ class _AlertDialog extends StatefulWidget {
     this.initialKind,
     this.initialValue,
     this.editing,
+    this.week52High,
+    this.week52Low,
   });
+
+  /// Az 52 hetes csúcs és mélypont (gyorsgombok: e fölé / alá).
+  final double? week52High;
+  final double? week52Low;
 
   /// Meglévő riasztás szerkesztése (ugyanazzal az azonosítóval).
   final PriceAlert? editing;
@@ -109,9 +119,12 @@ class _AlertDialogState extends State<_AlertDialog> {
           AlertKind.move => 5.0,
           AlertKind.trailing => 10.0,
         };
+    // Az alapértelmezett ±5% kerek szám; a megadott szint (pl. 52 hetes csúcs) pontos marad.
     final text = v == null
         ? ''
-        : (v >= 100 || v == v.roundToDouble() ? v.toStringAsFixed(0) : v.toStringAsFixed(v < 1 ? 4 : 2));
+        : ((value == null && v >= 100) || v == v.roundToDouble()
+              ? v.toStringAsFixed(0)
+              : v.toStringAsFixed(v < 1 ? 4 : 2));
     // A nyelv tizedesjelével (pl. magyarul vessző); a beolvasás mindkettőt érti.
     final comma = NumberFormat.decimalPattern(Fmt(Localizations.localeOf(context).toString()).numberLocale)
         .symbols
@@ -209,6 +222,38 @@ class _AlertDialogState extends State<_AlertDialog> {
                   l10n.alertTrailingHint,
                   key: const ValueKey('alert-trailing-hint'),
                   style: Theme.of(context).textTheme.bodySmall?.copyWith(color: p.muted),
+                ),
+              ],
+              // Gyorsgombok: új 52 hetes csúcs (fölé) vagy mélypont (alá).
+              if (widget.week52High != null || widget.week52Low != null) ...[
+                const SizedBox(height: 12),
+                Wrap(
+                  spacing: 6,
+                  runSpacing: 6,
+                  children: [
+                    if (widget.week52High case final h?)
+                      ActionChip(
+                        key: const ValueKey('alert-52w-high'),
+                        avatar: const Icon(Icons.north_east_rounded, size: 16),
+                        label: Text('${l10n.labelWeek52High} · ${fmt.price(h, widget.currency)}'),
+                        visualDensity: VisualDensity.compact,
+                        onPressed: () => setState(() {
+                          _kind = AlertKind.above;
+                          _prefill(value: h);
+                        }),
+                      ),
+                    if (widget.week52Low case final l?)
+                      ActionChip(
+                        key: const ValueKey('alert-52w-low'),
+                        avatar: const Icon(Icons.south_east_rounded, size: 16),
+                        label: Text('${l10n.labelWeek52Low} · ${fmt.price(l, widget.currency)}'),
+                        visualDensity: VisualDensity.compact,
+                        onPressed: () => setState(() {
+                          _kind = AlertKind.below;
+                          _prefill(value: l);
+                        }),
+                      ),
+                  ],
                 ),
               ],
               // Saját pozíciónál gyors célárak az átlagos vételárhoz képest.

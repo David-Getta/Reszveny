@@ -99,6 +99,8 @@ class _StockDetailPageState extends State<StockDetailPage> {
       symbol: symbol,
       currency: d?.currency,
       currentPrice: d?.quote?.price,
+      week52High: d?.metrics?.week52High,
+      week52Low: d?.metrics?.week52Low,
     );
     if (created) messenger.showSnackBar(SnackBar(content: Text(l10n.alertCreated(symbol))));
   }
