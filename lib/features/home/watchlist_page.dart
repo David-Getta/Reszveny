@@ -12,6 +12,8 @@ import '../../theme/app_theme.dart';
 import '../../widgets/centered_scroll.dart';
 import '../../widgets/desktop_chrome.dart';
 import '../alerts/price_alert.dart';
+import '../events/events_service.dart';
+import '../events/events_view.dart' show eventWhen;
 import '../portfolio/add_lot_dialog.dart' show parseDecimal;
 
 /// A figyelőlista rendezése.
@@ -50,6 +52,16 @@ class _WatchlistPageState extends State<WatchlistPage> {
   final Map<String, Future<StockQuote>> _quotes = {};
   final Map<String, Future<PriceHistory>> _histories = {};
   final Map<String, StockQuote> _loaded = {};
+
+  @override
+  void initState() {
+    super.initState();
+    // A közeli gyorsjelentések a sorokhoz (gyorsítótárból, ha friss); az első
+    // képkocka után, mert a frissítés azonnal értesíti a figyelőket.
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) AppServices.of(context).events.refresh();
+    });
+  }
 
   Future<StockQuote> _quote(String s) => _quotes.putIfAbsent(s, () {
     final f = AppServices.of(context).marketData.quote(s);
@@ -210,6 +222,21 @@ class _WatchlistPageState extends State<WatchlistPage> {
       ..showSnackBar(SnackBar(content: Text(l10n.watchImported(added))));
   }
 
+  /// A részvény 7 napon belüli gyorsjelentése (ha van), a sor jelzéséhez.
+  UpcomingEvent? _soonEarnings(AppServices services, String symbol) {
+    final now = DateTime.now();
+    final today = DateTime(now.year, now.month, now.day);
+    return services.events.events
+        .where(
+          (e) =>
+              e.kind == UpcomingEventKind.earnings &&
+              e.symbol == symbol &&
+              !e.date.isBefore(today) &&
+              e.date.difference(today).inDays <= 7,
+        )
+        .firstOrNull;
+  }
+
   Future<void> _listMenu(String action) async {
     if (action == 'alerts') return _alertAll();
     if (action == 'share') return _share();
@@ -279,7 +306,7 @@ class _WatchlistPageState extends State<WatchlistPage> {
         ],
       ),
       body: ListenableBuilder(
-        listenable: Listenable.merge([services.preferences, services.alerts]),
+        listenable: Listenable.merge([services.preferences, services.alerts, services.events]),
         builder: (context, _) {
           final favorites = services.preferences.favorites;
           if (favorites.isEmpty) {
@@ -313,6 +340,7 @@ class _WatchlistPageState extends State<WatchlistPage> {
             child: _WatchRow(
               symbol: s,
               hasAlert: services.alerts.hasActive(s),
+              earnings: _soonEarnings(services, s),
               quote: _quote(s),
               history: _history(s),
               onTap: () => widget.onOpenSymbol(StockCandidate(symbol: s, companyName: s, confidence: 1)),
@@ -575,6 +603,7 @@ class _WatchRow extends StatelessWidget {
   const _WatchRow({
     required this.symbol,
     this.hasAlert = false,
+    this.earnings,
     required this.quote,
     required this.history,
     required this.onTap,
@@ -585,6 +614,9 @@ class _WatchRow extends StatelessWidget {
 
   /// Van-e aktív árfolyam-riasztás a részvényre (kis harang a ticker mellett).
   final bool hasAlert;
+
+  /// Közeli gyorsjelentés: a ticker alatt „Holnap”, „5 nap múlva”.
+  final UpcomingEvent? earnings;
   final Future<StockQuote> quote;
   final Future<PriceHistory> history;
   final VoidCallback onTap;
@@ -606,26 +638,51 @@ class _WatchRow extends StatelessWidget {
             children: [
               SizedBox(
                 width: 72,
-                child: Row(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.min,
                   children: [
-                    Flexible(
-                      child: Text(
-                        symbol,
-                        overflow: TextOverflow.ellipsis,
-                        style: const TextStyle(fontWeight: FontWeight.w700),
-                      ),
-                    ),
-                    if (hasAlert)
-                      Padding(
-                        padding: const EdgeInsetsDirectional.only(start: 3),
-                        child: Tooltip(
-                          message: l10n.priceAlerts,
-                          child: Icon(
-                            Icons.notifications_active_rounded,
-                            key: ValueKey('watch-alert-$symbol'),
-                            size: 13,
-                            color: p.accent,
+                    Row(
+                      children: [
+                        Flexible(
+                          child: Text(
+                            symbol,
+                            overflow: TextOverflow.ellipsis,
+                            style: const TextStyle(fontWeight: FontWeight.w700),
                           ),
+                        ),
+                        if (hasAlert)
+                          Padding(
+                            padding: const EdgeInsetsDirectional.only(start: 3),
+                            child: Tooltip(
+                              message: l10n.priceAlerts,
+                              child: Icon(
+                                Icons.notifications_active_rounded,
+                                key: ValueKey('watch-alert-$symbol'),
+                                size: 13,
+                                color: p.accent,
+                              ),
+                            ),
+                          ),
+                      ],
+                    ),
+                    if (earnings case final e?)
+                      Tooltip(
+                        message: '${l10n.eventEarnings} · ${fmt.date(e.date)}',
+                        child: Row(
+                          key: ValueKey('watch-earnings-$symbol'),
+                          children: [
+                            Icon(Icons.event_note_rounded, size: 11, color: p.accent),
+                            const SizedBox(width: 3),
+                            Flexible(
+                              child: Text(
+                                eventWhen(l10n, e.date, DateTime.now()),
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: theme.textTheme.labelSmall?.copyWith(color: p.accent),
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                   ],

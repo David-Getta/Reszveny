@@ -158,6 +158,17 @@ void main() {
     expect(find.textContaining('in 5 days'), findsOneWidget);
     expect(find.text('Quarterly results · after the close\nEPS estimate: 1.62'), findsNWidgets(2));
 
+    // A Kedvencek listán a közeli gyorsjelentés a ticker alatt.
+    await tester.tap(find.byKey(const ValueKey('favorites-see-all')));
+    await tester.pumpAndSettle();
+    expect(
+      find.descendant(of: find.byKey(const ValueKey('watch-earnings-MSFT')), matching: find.text('Tomorrow')),
+      findsOneWidget,
+    );
+    expect(find.byKey(const ValueKey('watch-earnings-AAPL')), findsOneWidget);
+    await tester.pageBack();
+    await tester.pumpAndSettle();
+
     await tester.tap(find.byKey(const ValueKey('events-see-all')));
     await tester.pumpAndSettle();
     expect(find.textContaining('Results dates of your favorites'), findsOneWidget);
