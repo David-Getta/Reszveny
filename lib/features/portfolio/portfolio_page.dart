@@ -384,7 +384,9 @@ class _Stat extends StatelessWidget {
         Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Flexible(child: Text(label, style: theme.textTheme.bodySmall?.copyWith(color: p.muted))),
+            Flexible(
+              child: Text(label, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+            ),
             if (info) ...[const SizedBox(width: 4), Icon(Icons.info_outline_rounded, size: 14, color: p.muted)],
           ],
         ),
