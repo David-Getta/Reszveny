@@ -2427,4 +2427,7 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get chartMySells => 'Siyarwarka';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

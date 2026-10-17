@@ -2423,4 +2423,7 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get chartMySells => 'Dina försäljningar';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

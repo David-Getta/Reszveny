@@ -2423,4 +2423,7 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get chartMySells => 'Satışlarınız';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

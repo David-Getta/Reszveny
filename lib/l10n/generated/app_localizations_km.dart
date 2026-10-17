@@ -2401,4 +2401,7 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get chartMySells => 'ការលក់របស់អ្នក';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

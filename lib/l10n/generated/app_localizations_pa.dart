@@ -2417,4 +2417,7 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get chartMySells => 'ਤੁਹਾਡੀਆਂ ਵਿਕਰੀਆਂ';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

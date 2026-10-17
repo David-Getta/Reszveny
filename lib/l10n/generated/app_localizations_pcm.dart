@@ -2422,4 +2422,7 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get chartMySells => 'Wetin you sell';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

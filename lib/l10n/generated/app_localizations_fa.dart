@@ -2418,4 +2418,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get chartMySells => 'فروش‌های شما';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

@@ -2429,4 +2429,7 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get chartMySells => 'Biuvua mupane';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

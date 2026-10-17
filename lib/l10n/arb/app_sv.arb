@@ -645,5 +645,6 @@
   "positionsSortGain": "Högst totalavkastning först",
   "positionsSortToday": "Bäst i dag först",
   "chartMyBuys": "Dina köp",
-  "chartMySells": "Dina försäljningar"
+  "chartMySells": "Dina försäljningar",
+  "shortcutsTitle": "Kortkommandon"
 }

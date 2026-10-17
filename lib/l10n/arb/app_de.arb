@@ -645,5 +645,6 @@
   "positionsSortGain": "Höchste Gesamtrendite zuerst",
   "positionsSortToday": "Beste heute zuerst",
   "chartMyBuys": "Deine Käufe",
-  "chartMySells": "Deine Verkäufe"
+  "chartMySells": "Deine Verkäufe",
+  "shortcutsTitle": "Tastenkürzel"
 }

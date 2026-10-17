@@ -2441,4 +2441,7 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get chartMySells => 'Ваши продажби';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

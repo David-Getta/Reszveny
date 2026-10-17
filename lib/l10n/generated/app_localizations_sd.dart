@@ -2413,4 +2413,7 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get chartMySells => 'توهان جا وڪرا';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

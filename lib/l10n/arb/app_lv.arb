@@ -645,5 +645,6 @@
   "positionsSortGain": "Lielākā kopējā peļņa vispirms",
   "positionsSortToday": "Labākās šodien vispirms",
   "chartMyBuys": "Jūsu pirkumi",
-  "chartMySells": "Jūsu pārdošanas"
+  "chartMySells": "Jūsu pārdošanas",
+  "shortcutsTitle": "Īsinājumtaustiņi"
 }

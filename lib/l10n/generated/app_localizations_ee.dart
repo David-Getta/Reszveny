@@ -2425,4 +2425,7 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get chartMySells => 'Wò nudzadzrawo';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

@@ -2415,4 +2415,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get chartMySells => 'Lần bán của bạn';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

@@ -2422,4 +2422,7 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get chartMySells => 'Dine salg';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

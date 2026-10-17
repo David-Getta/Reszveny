@@ -2430,4 +2430,7 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get chartMySells => 'Gurgurtaawwan kee';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

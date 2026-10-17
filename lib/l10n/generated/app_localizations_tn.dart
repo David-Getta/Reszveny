@@ -2438,4 +2438,7 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get chartMySells => 'Thekiso tsa gago';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

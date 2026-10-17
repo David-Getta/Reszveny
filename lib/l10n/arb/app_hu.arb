@@ -645,5 +645,6 @@
   "positionsSortGain": "Legjobb összhozam elöl",
   "positionsSortToday": "Legjobb mai mozgás elöl",
   "chartMyBuys": "Vételeid",
-  "chartMySells": "Eladásaid"
+  "chartMySells": "Eladásaid",
+  "shortcutsTitle": "Billentyűparancsok"
 }

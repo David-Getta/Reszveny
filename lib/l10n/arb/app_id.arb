@@ -645,5 +645,6 @@
   "positionsSortGain": "Imbal hasil total terbaik dulu",
   "positionsSortToday": "Terbaik hari ini dulu",
   "chartMyBuys": "Pembelian Anda",
-  "chartMySells": "Penjualan Anda"
+  "chartMySells": "Penjualan Anda",
+  "shortcutsTitle": "Pintasan keyboard"
 }

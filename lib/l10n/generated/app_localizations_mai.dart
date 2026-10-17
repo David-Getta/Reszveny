@@ -2415,4 +2415,7 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get chartMySells => 'अहाँक बिक्री';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

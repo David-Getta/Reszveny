@@ -2423,4 +2423,7 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get chartMySells => 'Firotinên te';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

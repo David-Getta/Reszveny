@@ -40,6 +40,7 @@ footer a{color:var(--accent)}
 table.packs{width:100%;border-collapse:collapse;margin-top:8px}table.packs td{padding:8px 0;border-top:1px solid var(--line)}
 table.packs td:last-child{text-align:right;font-weight:600}nav.top{display:flex;justify-content:space-between;align-items:center}
 nav.top a.link{color:var(--accent);text-decoration:none;font-weight:600;font-size:15px}
+.stocks{display:flex;flex-wrap:wrap;gap:8px}.stocks a{text-decoration:none}
 ''';
 
 String _esc(Object? v) => const HtmlEscape().convert('${v ?? ''}');
@@ -251,6 +252,7 @@ String _footer(String lang) {
   final t = _site[lang] ?? _site['en']!;
   return '<footer><p>${_esc(t['disclaimer'])}</p>'
       '<a href="/pricing?lang=$lang">${_esc(t['pricing'])}</a> · '
+      '<a href="/stocks?lang=$lang">${_esc(_stocks[lang]?['indexH1'] ?? 'Popular stocks')}</a> · '
       '<a href="/legal/terms?lang=$lang">${_esc(t['terms'])}</a> · '
       '<a href="/legal/privacy?lang=$lang">${_esc(t['privacy'])}</a></footer></main></body></html>';
 }
@@ -363,8 +365,199 @@ String sitemapXml(String publicUrl) {
   final b = StringBuffer(
     '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n',
   );
-  for (final path in const ['/?lang=en', '/?lang=hu', '/pricing?lang=en', '/pricing?lang=hu']) {
+  for (final path in [
+    '/?lang=en',
+    '/?lang=hu',
+    '/pricing?lang=en',
+    '/pricing?lang=hu',
+    '/stocks?lang=en',
+    '/stocks?lang=hu',
+    for (final s in popularStocks) ...['/stocks/$s?lang=en', '/stocks/$s?lang=hu'],
+  ]) {
     b.write('  <url><loc>${'$publicUrl$path'.replaceAll('&', '&amp;').replaceAll('<', '&lt;')}</loc></url>\n');
   }
   return (b..write('</urlset>\n')).toString();
+}
+
+// ---- Népszerű részvények (a keresőknek) ----
+
+/// A népszerű részvények: mindegyiknek saját oldala van (`/stocks/<ticker>`).
+/// Csak ezek kérhetők le, hogy az oldal ne legyen tetszőleges Finnhub-proxy.
+const popularStocks = [
+  'AAPL', 'MSFT', 'NVDA', 'AMZN', 'GOOGL', 'META', 'TSLA', 'AVGO', 'BRK.B', 'JPM', //
+  'V', 'MA', 'LLY', 'UNH', 'XOM', 'JNJ', 'WMT', 'PG', 'COST', 'HD', //
+  'KO', 'PEP', 'NFLX', 'AMD', 'INTC', 'ADBE', 'CRM', 'ORCL', 'DIS', 'NKE', //
+  'MCD', 'BA', 'PFE', 'MRK', 'CVX', 'TSM', 'ASML', 'PLTR', 'UBER', 'SHOP', //
+];
+
+/// Egy részvény adatai az oldalhoz (Finnhub `profile2` és `quote`); ami nem
+/// érhető el, az `null`.
+typedef StockFacts = ({
+  String symbol,
+  String? name,
+  String? exchange,
+  String? industry,
+  double? marketCapMillions,
+  String? currency,
+  String? country,
+  String? ipo,
+  String? weburl,
+  double? price,
+  double? change,
+  double? changePercent,
+});
+
+const _stocks = {
+  'hu': {
+    'title': '{name} ({symbol}) részvény: árfolyam és AI-elemzés – WhatStock',
+    'desc': 'A(z) {name} ({symbol}) árfolyama, piaci értéke és alapadatai. Fotózd le vagy keresd meg a WhatStockban, és az AI elmagyarázza, mi mozgatja, mik a kockázatok és merre mehet az ár.',
+    'price': 'Árfolyam',
+    'exchange': 'Tőzsde',
+    'industry': 'Iparág',
+    'marketCap': 'Piaci érték',
+    'country': 'Ország',
+    'ipo': 'Tőzsdére lépés',
+    'website': 'Weboldal',
+    'ctaTitle': 'AI-elemzés a(z) {symbol} részvényről',
+    'cta': 'A WhatStock percek alatt elmagyarázza, mi mozgatja a részvényt, mik a kockázatok, mennyit ér, és három forgatókönyvet ad az árfolyamra – a te nyelveden. Kérdezhetsz is utána.',
+    'unavailable': 'Az árfolyam most nem érhető el.',
+    'delayed': 'Az adatok késleltetettek lehetnek, tájékoztató jellegűek.',
+    'others': 'További népszerű részvények',
+    'indexTitle': 'Népszerű részvények – árfolyam és AI-elemzés – WhatStock',
+    'indexH1': 'Népszerű részvények',
+    'indexIntro': 'A legtöbbet keresett amerikai és nemzetközi részvények árfolyama és alapadatai, és mindegyikről AI-elemzés a WhatStock appban.',
+  },
+  'en': {
+    'title': '{name} ({symbol}) stock: price and AI analysis – WhatStock',
+    'desc': '{name} ({symbol}) share price, market cap and key facts. Photograph or search it in WhatStock and the AI explains what moves it, the risks and where the price could go.',
+    'price': 'Price',
+    'exchange': 'Exchange',
+    'industry': 'Industry',
+    'marketCap': 'Market cap',
+    'country': 'Country',
+    'ipo': 'IPO',
+    'website': 'Website',
+    'ctaTitle': 'AI analysis of {symbol}',
+    'cta': 'WhatStock explains in minutes what moves the stock, the risks, the valuation and three scenarios for the price, in your language. You can ask follow-up questions too.',
+    'unavailable': 'The price is not available right now.',
+    'delayed': 'Data may be delayed and is for information only.',
+    'others': 'More popular stocks',
+    'indexTitle': 'Popular stocks – price and AI analysis – WhatStock',
+    'indexH1': 'Popular stocks',
+    'indexIntro': 'Prices and key facts for the most searched US and international stocks, with an AI analysis of each in the WhatStock app.',
+  },
+};
+
+/// Szám a nyelv tizedesjelével, ezres tagolás nélkül (pl. 231,45 vagy 231.45).
+String _num(double v, String lang, {int decimals = 2}) {
+  final s = v.toStringAsFixed(decimals);
+  return lang == 'hu' ? s.replaceAll('.', ',') : s;
+}
+
+/// Piaci érték: millió dollárból „3,45 ezer mrd USD” / „$3.45T”.
+String marketCapText(double millions, String lang, String currency) {
+  if (millions >= 1e6) {
+    final v = _num(millions / 1e6, lang);
+    return lang == 'hu' ? '$v ezer mrd $currency' : '$v T $currency';
+  }
+  if (millions >= 1e3) {
+    final v = _num(millions / 1e3, lang, decimals: 1);
+    return lang == 'hu' ? '$v mrd $currency' : '$v B $currency';
+  }
+  final v = _num(millions, lang, decimals: 0);
+  return lang == 'hu' ? '$v millió $currency' : '$v M $currency';
+}
+
+String _fill(String s, Map<String, String> v) => v.entries.fold(s, (a, e) => a.replaceAll('{${e.key}}', e.value));
+
+/// A letöltés gombjai (Android, Mac, Windows).
+String _downloadButtons(String lang, String downloadBase) {
+  final label = _site[lang]?['download'] ?? 'Download';
+  return [
+    for (final (os, file) in const [
+      ('Android', 'WhatStock-android-arm64.apk'),
+      ('macOS', 'WhatStock-macos.zip'),
+      ('Windows', 'WhatStock-windows-x64.zip'),
+    ])
+      '<a class="btn${os == 'Android' ? '' : ' alt'}" href="${_attr('$downloadBase$file')}">${_esc(label)} · $os</a>',
+  ].join();
+}
+
+String _stockLinks(String lang, {String? except}) =>
+    '<p class="stocks">${[for (final s in popularStocks)
+      if (s != except) '<a class="chip" href="/stocks/${_attr(s)}?lang=$lang">${_esc(s)}</a>'].join(' ')}</p>';
+
+/// Egy népszerű részvény oldala: név, árfolyam, alapadatok, AI-elemzés az appban.
+String stockPage(StockFacts s, {required String lang, required String downloadBase, String? publicUrl}) {
+  final t = _stocks[lang] ?? _stocks['en']!;
+  final name = s.name ?? s.symbol;
+  final vars = {'name': name, 'symbol': s.symbol};
+  final ccy = s.currency ?? 'USD';
+  final b = StringBuffer(
+    _head(
+      lang: lang,
+      title: _fill(t['title']!, vars),
+      description: _fill(t['desc']!, vars),
+      url: publicUrl == null ? null : '$publicUrl/stocks/${s.symbol}?lang=$lang',
+    ),
+  )..write('<div class="card"><h1>${_esc(name)}</h1><div class="sym">${_esc(s.symbol)}');
+  if (s.exchange != null) b.write(' · ${_esc(s.exchange)}');
+  b.write('</div>');
+  if (s.price case final price?) {
+    final up = (s.change ?? 0) >= 0;
+    b.write('<div class="price">${_esc(_num(price, lang))} <small>${_esc(ccy)}</small></div>');
+    if (s.change != null && s.changePercent != null) {
+      final sign = up ? '+' : '−';
+      b.write(
+        '<div style="color:var(${up ? '--bull' : '--bear'});font-weight:600">'
+        '$sign${_esc(_num(s.change!.abs(), lang))} ($sign${_esc(_num(s.changePercent!.abs(), lang))}%)</div>',
+      );
+    }
+  } else {
+    b.write('<p class="muted">${_esc(t['unavailable'])}</p>');
+  }
+  final rows = [
+    if (s.exchange != null) (t['exchange']!, _esc(s.exchange)),
+    if (s.industry != null) (t['industry']!, _esc(s.industry)),
+    if (s.marketCapMillions case final m? when m > 0) (t['marketCap']!, _esc(marketCapText(m, lang, ccy))),
+    if (s.country != null) (t['country']!, _esc(s.country)),
+    if (s.ipo != null) (t['ipo']!, _esc(s.ipo)),
+    if (s.weburl case final w? when w.startsWith('http'))
+      (t['website']!, '<a href="${_attr(w)}" rel="nofollow noopener">${_esc(Uri.tryParse(w)?.host ?? w)}</a>'),
+  ];
+  if (rows.isNotEmpty) {
+    b.write('<table class="packs">');
+    for (final (k, v) in rows) {
+      b.write('<tr><td>${_esc(k)}</td><td>$v</td></tr>');
+    }
+    b.write('</table>');
+  }
+  b
+    ..write('<p class="note">${_esc(t['delayed'])}</p></div>')
+    ..write('<div class="card"><h2 style="margin:0;font-size:20px">${_esc(_fill(t['ctaTitle']!, vars))}</h2>')
+    ..write(
+      '<p class="muted">${_esc(t['cta'])}</p><div class="cta">${_downloadButtons(lang, downloadBase)}</div></div>',
+    )
+    ..write('<h2 style="font-size:18px;margin:28px 0 8px">${_esc(t['others'])}</h2>')
+    ..write(_stockLinks(lang, except: s.symbol))
+    ..write(_footer(lang));
+  return b.toString();
+}
+
+/// A népszerű részvények listája.
+String stocksIndexPage({required String lang, required String downloadBase, String? publicUrl}) {
+  final t = _stocks[lang] ?? _stocks['en']!;
+  return (StringBuffer(
+          _head(
+            lang: lang,
+            title: t['indexTitle']!,
+            description: t['indexIntro']!,
+            url: publicUrl == null ? null : '$publicUrl/stocks?lang=$lang',
+          ),
+        )
+        ..write('<div class="hero"><h1>${_esc(t['indexH1'])}</h1><p>${_esc(t['indexIntro'])}</p></div>')
+        ..write(_stockLinks(lang))
+        ..write('<div class="cta">${_downloadButtons(lang, downloadBase)}</div>')
+        ..write(_footer(lang)))
+      .toString();
 }

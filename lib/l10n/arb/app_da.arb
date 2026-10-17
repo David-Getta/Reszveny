@@ -645,5 +645,6 @@
   "positionsSortGain": "Højeste samlede afkast først",
   "positionsSortToday": "Bedste i dag først",
   "chartMyBuys": "Dine køb",
-  "chartMySells": "Dine salg"
+  "chartMySells": "Dine salg",
+  "shortcutsTitle": "Tastaturgenveje"
 }

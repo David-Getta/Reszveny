@@ -2389,4 +2389,7 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get chartMySells => 'የእርስዎ ሽያጮች';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

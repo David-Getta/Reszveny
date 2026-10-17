@@ -2460,4 +2460,7 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get chartMySells => 'Vânzările tale';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

@@ -2428,4 +2428,7 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get chartMySells => 'Zomwe mwagulitsa';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

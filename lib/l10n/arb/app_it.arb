@@ -645,5 +645,6 @@
   "positionsSortGain": "Miglior rendimento totale prima",
   "positionsSortToday": "Migliori di oggi prima",
   "chartMyBuys": "I tuoi acquisti",
-  "chartMySells": "Le tue vendite"
+  "chartMySells": "Le tue vendite",
+  "shortcutsTitle": "Scorciatoie da tastiera"
 }

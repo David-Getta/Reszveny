@@ -2427,4 +2427,7 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get chartMySells => 'Ne ñemu';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

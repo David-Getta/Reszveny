@@ -2422,4 +2422,7 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get chartMySells => 'Wendia waku';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

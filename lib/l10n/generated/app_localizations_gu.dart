@@ -2417,4 +2417,7 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get chartMySells => 'તમારા વેચાણ';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

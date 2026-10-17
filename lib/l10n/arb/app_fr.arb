@@ -645,5 +645,6 @@
   "positionsSortGain": "Meilleure performance totale d'abord",
   "positionsSortToday": "Meilleures du jour d'abord",
   "chartMyBuys": "Vos achats",
-  "chartMySells": "Vos ventes"
+  "chartMySells": "Vos ventes",
+  "shortcutsTitle": "Raccourcis clavier"
 }

@@ -2432,4 +2432,7 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get chartMySells => 'Vos ventes';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

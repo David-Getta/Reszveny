@@ -2424,4 +2424,7 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get chartMySells => 'ساتقانلىرىڭىز';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

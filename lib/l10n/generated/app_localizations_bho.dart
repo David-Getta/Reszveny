@@ -2417,4 +2417,7 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get chartMySells => 'रउरा बिक्री';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

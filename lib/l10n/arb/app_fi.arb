@@ -645,5 +645,6 @@
   "positionsSortGain": "Suurin kokonaistuotto ensin",
   "positionsSortToday": "Parhaat tänään ensin",
   "chartMyBuys": "Ostosi",
-  "chartMySells": "Myyntisi"
+  "chartMySells": "Myyntisi",
+  "shortcutsTitle": "Pikanäppäimet"
 }

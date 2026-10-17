@@ -645,5 +645,6 @@
   "positionsSortGain": "सबसे ज़्यादा कुल रिटर्न वाले पहले",
   "positionsSortToday": "आज के सबसे अच्छे पहले",
   "chartMyBuys": "आपकी खरीदारी",
-  "chartMySells": "आपकी बिक्री"
+  "chartMySells": "आपकी बिक्री",
+  "shortcutsTitle": "कीबोर्ड शॉर्टकट"
 }

@@ -2420,4 +2420,7 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get chartMySells => 'Vant ou yo';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

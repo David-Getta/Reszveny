@@ -2489,4 +2489,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get chartMySells => 'Ваши продажи';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

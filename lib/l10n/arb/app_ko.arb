@@ -645,5 +645,6 @@
   "positionsSortGain": "총수익률 높은 순",
   "positionsSortToday": "오늘 수익률 높은 순",
   "chartMyBuys": "내 매수",
-  "chartMySells": "내 매도"
+  "chartMySells": "내 매도",
+  "shortcutsTitle": "키보드 단축키"
 }

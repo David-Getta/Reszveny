@@ -645,5 +645,6 @@
   "positionsSortGain": "Сначала лучшая общая доходность",
   "positionsSortToday": "Сначала лучшие за сегодня",
   "chartMyBuys": "Ваши покупки",
-  "chartMySells": "Ваши продажи"
+  "chartMySells": "Ваши продажи",
+  "shortcutsTitle": "Сочетания клавиш"
 }

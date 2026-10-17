@@ -645,5 +645,6 @@
   "positionsSortGain": "ჯერ ყველაზე მაღალი ჯამური შემოსავალი",
   "positionsSortToday": "ჯერ დღის საუკეთესოები",
   "chartMyBuys": "თქვენი შენაძენები",
-  "chartMySells": "თქვენი გაყიდვები"
+  "chartMySells": "თქვენი გაყიდვები",
+  "shortcutsTitle": "კლავიატურის მალსახმობები"
 }

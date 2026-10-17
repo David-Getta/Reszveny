@@ -645,5 +645,6 @@
   "positionsSortGain": "Največji skupni donos najprej",
   "positionsSortToday": "Najboljše danes najprej",
   "chartMyBuys": "Vaši nakupi",
-  "chartMySells": "Vaše prodaje"
+  "chartMySells": "Vaše prodaje",
+  "shortcutsTitle": "Bližnjice na tipkovnici"
 }

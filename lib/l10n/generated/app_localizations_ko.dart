@@ -2352,4 +2352,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get chartMySells => '내 매도';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

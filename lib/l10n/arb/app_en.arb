@@ -1902,5 +1902,6 @@
   "positionsSortGain": "Best total return first",
   "positionsSortToday": "Best today first",
   "chartMyBuys": "Your buys",
-  "chartMySells": "Your sales"
+  "chartMySells": "Your sales",
+  "shortcutsTitle": "Keyboard shortcuts"
 }

@@ -2435,4 +2435,7 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get chartMySells => 'Rantikusqaykikuna';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

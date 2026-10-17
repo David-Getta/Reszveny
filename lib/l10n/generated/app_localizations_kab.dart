@@ -2420,4 +2420,7 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get chartMySells => 'Tizenzin-ik';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

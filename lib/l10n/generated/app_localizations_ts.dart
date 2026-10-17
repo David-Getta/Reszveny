@@ -2438,4 +2438,7 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get chartMySells => 'Leswi u swi xaviseke';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

@@ -2433,4 +2433,7 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get chartMySells => 'Oko ukuthengisileyo';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

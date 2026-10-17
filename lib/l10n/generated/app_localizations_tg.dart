@@ -2423,4 +2423,7 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get chartMySells => 'Фурӯшҳои шумо';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

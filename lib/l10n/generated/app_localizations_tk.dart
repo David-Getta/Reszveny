@@ -2422,4 +2422,7 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get chartMySells => 'Satuwlaryňyz';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

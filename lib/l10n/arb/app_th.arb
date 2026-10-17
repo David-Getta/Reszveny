@@ -645,5 +645,6 @@
   "positionsSortGain": "ผลตอบแทนรวมสูงสุดก่อน",
   "positionsSortToday": "ดีที่สุดวันนี้ก่อน",
   "chartMyBuys": "การซื้อของคุณ",
-  "chartMySells": "การขายของคุณ"
+  "chartMySells": "การขายของคุณ",
+  "shortcutsTitle": "คีย์ลัดแป้นพิมพ์"
 }

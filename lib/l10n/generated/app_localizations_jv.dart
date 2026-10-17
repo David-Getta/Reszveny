@@ -2424,4 +2424,7 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get chartMySells => 'Dodolanmu';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

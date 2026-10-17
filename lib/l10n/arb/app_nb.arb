@@ -645,5 +645,6 @@
   "positionsSortGain": "Høyest totalavkastning først",
   "positionsSortToday": "Best i dag først",
   "chartMyBuys": "Dine kjøp",
-  "chartMySells": "Dine salg"
+  "chartMySells": "Dine salg",
+  "shortcutsTitle": "Hurtigtaster"
 }

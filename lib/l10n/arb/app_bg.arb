@@ -645,5 +645,6 @@
   "positionsSortGain": "Най-голяма обща печалба първо",
   "positionsSortToday": "Най-добри днес първо",
   "chartMyBuys": "Вашите покупки",
-  "chartMySells": "Вашите продажби"
+  "chartMySells": "Вашите продажби",
+  "shortcutsTitle": "Клавишни комбинации"
 }

@@ -4212,6 +4212,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Your sales'**
   String get chartMySells;
+
+  /// No description provided for @shortcutsTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Keyboard shortcuts'**
+  String get shortcutsTitle;
 }
 
 class _AppLocalizationsDelegate

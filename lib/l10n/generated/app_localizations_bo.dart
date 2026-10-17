@@ -2410,4 +2410,7 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get chartMySells => 'ཁྱེད་ཀྱི་འཚོང་བ';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

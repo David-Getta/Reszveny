@@ -2427,4 +2427,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get chartMySells => 'Eladásaid';
+
+  @override
+  String get shortcutsTitle => 'Billentyűparancsok';
 }

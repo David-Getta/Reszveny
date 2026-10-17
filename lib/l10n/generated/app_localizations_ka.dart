@@ -2422,4 +2422,7 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get chartMySells => 'თქვენი გაყიდვები';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

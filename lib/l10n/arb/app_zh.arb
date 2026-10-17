@@ -645,5 +645,6 @@
   "positionsSortGain": "总收益率最高优先",
   "positionsSortToday": "今日表现最佳优先",
   "chartMyBuys": "你的买入",
-  "chartMySells": "你的卖出"
+  "chartMySells": "你的卖出",
+  "shortcutsTitle": "键盘快捷键"
 }

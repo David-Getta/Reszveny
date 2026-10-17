@@ -2422,4 +2422,7 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get chartMySells => 'Таны борлуулалт';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

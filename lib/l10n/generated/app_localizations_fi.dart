@@ -2423,4 +2423,7 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get chartMySells => 'Myyntisi';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

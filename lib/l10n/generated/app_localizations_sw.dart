@@ -2422,4 +2422,7 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get chartMySells => 'Mauzo yako';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

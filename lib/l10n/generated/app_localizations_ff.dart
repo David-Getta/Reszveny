@@ -2416,4 +2416,7 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get chartMySells => 'Ko a yeeyi';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

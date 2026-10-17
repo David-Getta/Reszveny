@@ -2432,4 +2432,7 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get chartMySells => 'Bye watunda';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

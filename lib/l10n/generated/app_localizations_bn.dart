@@ -2420,4 +2420,7 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get chartMySells => 'আপনার বিক্রয়';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

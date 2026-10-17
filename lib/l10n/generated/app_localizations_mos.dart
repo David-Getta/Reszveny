@@ -2408,4 +2408,7 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get chartMySells => 'Fo koosgo';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

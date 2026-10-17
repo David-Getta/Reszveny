@@ -2433,4 +2433,7 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get chartMySells => 'Bitɛki na yo';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

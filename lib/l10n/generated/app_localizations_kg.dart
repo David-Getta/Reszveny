@@ -2429,4 +2429,7 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get chartMySells => 'Mana nge me teka';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

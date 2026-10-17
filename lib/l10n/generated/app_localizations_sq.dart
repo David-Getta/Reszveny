@@ -2428,4 +2428,7 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get chartMySells => 'Shitjet tuaja';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

@@ -2417,4 +2417,7 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get chartMySells => 'Penjualan Anda';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

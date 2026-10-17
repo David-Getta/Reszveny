@@ -2419,4 +2419,7 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get chartMySells => 'I ka feereliw';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

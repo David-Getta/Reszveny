@@ -2428,4 +2428,7 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get chartMySells => 'Iyong mga ibinenta';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

@@ -645,5 +645,6 @@
   "positionsSortGain": "ཁྱོན་བསྡོམས་ཁེ་ཆེ་ཤོས་སྔོན་ལ",
   "positionsSortToday": "དེ་རིང་ལེགས་ཤོས་སྔོན་ལ",
   "chartMyBuys": "ཁྱེད་ཀྱི་ཉོ་བ",
-  "chartMySells": "ཁྱེད་ཀྱི་འཚོང་བ"
+  "chartMySells": "ཁྱེད་ཀྱི་འཚོང་བ",
+  "shortcutsTitle": "མཐེབ་གཞོང་གི་མྱུར་མཐེབ"
 }

@@ -2427,4 +2427,7 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get chartMySells => 'Zvawakatengesa';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

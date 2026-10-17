@@ -645,5 +645,6 @@
   "positionsSortGain": "Највећи укупни принос прво",
   "positionsSortToday": "Најбоље данас прво",
   "chartMyBuys": "Ваше куповине",
-  "chartMySells": "Ваше продаје"
+  "chartMySells": "Ваше продаје",
+  "shortcutsTitle": "Пречице на тастатури"
 }

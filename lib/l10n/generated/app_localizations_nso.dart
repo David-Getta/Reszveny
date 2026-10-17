@@ -2437,4 +2437,7 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get chartMySells => 'Tše o di rekišitšego';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

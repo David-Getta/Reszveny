@@ -2439,4 +2439,7 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get chartMySells => 'Ny fivarotanao';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

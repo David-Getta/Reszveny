@@ -645,5 +645,6 @@
   "positionsSortGain": "トータルリターンの高い順",
   "positionsSortToday": "本日の騰落率の高い順",
   "chartMyBuys": "あなたの購入",
-  "chartMySells": "あなたの売却"
+  "chartMySells": "あなたの売却",
+  "shortcutsTitle": "キーボードショートカット"
 }

@@ -2430,4 +2430,7 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String get chartMySells => 'Ibyo wagurishije';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

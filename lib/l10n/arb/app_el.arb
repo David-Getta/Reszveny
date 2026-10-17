@@ -645,5 +645,6 @@
   "positionsSortGain": "Μεγαλύτερη συνολική απόδοση πρώτα",
   "positionsSortToday": "Καλύτερες σήμερα πρώτα",
   "chartMyBuys": "Οι αγορές σας",
-  "chartMySells": "Οι πωλήσεις σας"
+  "chartMySells": "Οι πωλήσεις σας",
+  "shortcutsTitle": "Συντομεύσεις πληκτρολογίου"
 }

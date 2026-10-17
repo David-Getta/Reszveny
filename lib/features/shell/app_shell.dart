@@ -26,6 +26,7 @@ import '../home/quick_search_controller.dart';
 import '../alerts/alerts_view.dart';
 import '../portfolio/portfolio_page.dart';
 import '../settings/settings_page.dart';
+import 'shortcuts_dialog.dart';
 import '../stock_detail/stock_detail_page.dart';
 
 /// Az app kerete: széles képernyőn oldalsáv (új keresés, előzmények,
@@ -312,6 +313,7 @@ class _AppShellState extends State<AppShell> {
       LogicalKeyboardKey.digit2: () => openOnly(_openPortfolio),
       LogicalKeyboardKey.digit3: () => openOnly(_openAlerts),
       LogicalKeyboardKey.comma: () => openOnly(_openSettings),
+      LogicalKeyboardKey.slash: _showShortcuts,
     };
     return {
       for (final e in actions.entries) ...{
@@ -319,6 +321,11 @@ class _AppShellState extends State<AppShell> {
         SingleActivator(e.key, meta: true): e.value,
       },
     };
+  }
+
+  void _showShortcuts() {
+    final context = _navigatorKey.currentContext;
+    if (context != null) showShortcutsDialog(context);
   }
 
   void _goHome() {
@@ -393,6 +400,7 @@ class _AppShellState extends State<AppShell> {
                         onOpenSettings: _openSettings,
                         onOpenPortfolio: _openPortfolio,
                         onOpenAlerts: _openAlerts,
+                        onShowShortcuts: _showShortcuts,
                       ),
                       Expanded(child: content),
                     ],
@@ -462,6 +470,7 @@ class _Sidebar extends StatelessWidget {
     required this.onOpenSettings,
     required this.onOpenPortfolio,
     required this.onOpenAlerts,
+    required this.onShowShortcuts,
   });
 
   final VoidCallback onHome;
@@ -470,6 +479,7 @@ class _Sidebar extends StatelessWidget {
   final VoidCallback onOpenSettings;
   final VoidCallback onOpenPortfolio;
   final VoidCallback onOpenAlerts;
+  final VoidCallback onShowShortcuts;
 
   @override
   Widget build(BuildContext context) {
@@ -593,7 +603,33 @@ class _Sidebar extends StatelessWidget {
           if (DesktopIntegration.isSupported)
             Padding(
               padding: const EdgeInsets.fromLTRB(24, 8, 16, 16),
-              child: Text(hotkeyHintText(l10n, services), style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(hotkeyHintText(l10n, services), style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+                  const SizedBox(height: 4),
+                  InkWell(
+                    key: const ValueKey('shortcuts-help'),
+                    onTap: onShowShortcuts,
+                    borderRadius: BorderRadius.circular(6),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 4),
+                      child: Row(
+                        children: [
+                          Icon(Icons.keyboard_outlined, size: 16, color: p.muted),
+                          const SizedBox(width: 6),
+                          Flexible(
+                            child: Text(
+                              '${l10n.shortcutsTitle} (${shortcutLabel('/')})',
+                              style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
         ],
       ),
@@ -644,11 +680,7 @@ class _SidebarButton extends StatelessWidget {
                   style: TextStyle(color: color, fontWeight: accent ? FontWeight.w600 : FontWeight.w500),
                 ),
               ),
-              if (shortcut != null)
-                Text(
-                  defaultTargetPlatform == TargetPlatform.macOS ? '⌘$shortcut' : 'Ctrl+$shortcut',
-                  style: TextStyle(color: p.muted, fontSize: 11),
-                ),
+              if (shortcut != null) Text(shortcutLabel(shortcut!), style: TextStyle(color: p.muted, fontSize: 11)),
             ],
           ),
         ),

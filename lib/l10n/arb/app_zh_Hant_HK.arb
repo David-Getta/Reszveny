@@ -645,5 +645,6 @@
   "positionsSortGain": "總回報最高優先",
   "positionsSortToday": "今日表現最佳優先",
   "chartMyBuys": "你的買入",
-  "chartMySells": "你的賣出"
+  "chartMySells": "你的賣出",
+  "shortcutsTitle": "鍵盤快速鍵"
 }

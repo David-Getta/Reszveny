@@ -2432,4 +2432,7 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get chartMySells => 'Imong mga gibaligya';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

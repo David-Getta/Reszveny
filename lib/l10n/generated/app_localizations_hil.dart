@@ -2436,4 +2436,7 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get chartMySells => 'Imo mga ginbaligya';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }

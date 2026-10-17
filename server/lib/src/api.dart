@@ -39,6 +39,7 @@ import 'testers.dart';
 ///   kódjának beváltása (extra elemzések; az ajánló az első elemzésed után kapja meg a sajátját)
 /// - `DELETE /v1/account` → a fiók és a szerveren tárolt adatok törlése (a Stripe-előfizetést lemondja)
 /// - `GET  /pricing` → árak oldal (magyar / angol); `/robots.txt`, `/sitemap.xml` a keresőknek
+/// - `GET  /stocks`, `/stocks/<ticker>` → népszerű részvények oldalai (árfolyam, alapadatok, letöltés)
 /// - `GET  /legal/terms`, `/legal/privacy` → ÁSZF és adatkezelési tájékoztató a `legal/` mappa markdownjából
 /// - `POST /v1/billing/checkout` `{product_id}` → Stripe Checkout URL (böngészős fizetés)
 /// - `POST /v1/billing/portal` → Stripe ügyfélportál URL (csomagváltás, lemondás, számlák)
@@ -183,6 +184,8 @@ class Api {
       ..get('/s/<id>', _sharePage)
       ..get('/', _landing)
       ..get('/pricing', _pricingPage)
+      ..get('/stocks', _stocksIndex)
+      ..get('/stocks/<symbol>', _stockPage)
       ..get('/robots.txt', (Request r) => Response.ok(robotsTxt(publicUrl), headers: {'content-type': 'text/plain'}))
       ..get(
         '/sitemap.xml',
@@ -500,6 +503,73 @@ class Api {
       pricingPage(lang: asked.startsWith('hu') ? 'hu' : 'en', askPerDay: askPerDayPaid, publicUrl: publicUrl),
       headers: {'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=3600'},
     );
+  }
+
+  String _pageLang(Request r) =>
+      (r.url.queryParameters['lang'] ?? r.headers['accept-language'] ?? '').toLowerCase().startsWith('hu')
+      ? 'hu'
+      : 'en';
+
+  Response _stocksIndex(Request r) => Response.ok(
+    stocksIndexPage(lang: _pageLang(r), downloadBase: downloadBaseUrl, publicUrl: publicUrl),
+    headers: {'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=3600'},
+  );
+
+  /// Egy népszerű részvény oldala; más tickerre 404 (nem nyílt Finnhub-proxy).
+  Future<Response> _stockPage(Request r, String symbol) async {
+    final sym = Uri.decodeComponent(symbol).toUpperCase();
+    if (!popularStocks.contains(sym)) return Response.notFound(shareMissingPage(), headers: _htmlType);
+    final facts = await _stockFacts(sym);
+    return Response.ok(
+      stockPage(facts, lang: _pageLang(r), downloadBase: downloadBaseUrl, publicUrl: publicUrl),
+      headers: {..._htmlType, 'cache-control': 'public, max-age=900'},
+    );
+  }
+
+  static const _htmlType = {'content-type': 'text/html; charset=utf-8'};
+
+  /// Részvény-adatok gyorsítótára (1 óra), hogy a keresőrobotok ne fogyasszák a Finnhub-keretet.
+  final _factsCache = <String, (DateTime, StockFacts)>{};
+
+  Future<StockFacts> _stockFacts(String symbol) async {
+    final cached = _factsCache[symbol];
+    if (cached != null && DateTime.now().difference(cached.$1) < const Duration(hours: 1)) return cached.$2;
+    Future<Map<String, dynamic>> get(String path) async {
+      try {
+        final res = await _client
+            .get(
+              Uri.parse('$finnhubBaseUrl$path').replace(queryParameters: {'symbol': symbol}),
+              headers: {'X-Finnhub-Token': finnhubApiKey},
+            )
+            .timeout(const Duration(seconds: 10));
+        final j = res.statusCode == 200 ? jsonDecode(res.body) : null;
+        return j is Map<String, dynamic> ? j : const {};
+      } catch (_) {
+        return const {};
+      }
+    }
+
+    final [p, q] = await Future.wait([get('/stock/profile2'), get('/quote')]);
+    String? str(Object? v) => v is String && v.trim().isNotEmpty ? v.trim() : null;
+    double? num_(Object? v) => v is num ? v.toDouble() : null;
+    final price = num_(q['c']);
+    final facts = (
+      symbol: symbol,
+      name: str(p['name']),
+      exchange: str(p['exchange']),
+      industry: str(p['finnhubIndustry']),
+      marketCapMillions: num_(p['marketCapitalization']),
+      currency: str(p['currency']),
+      country: str(p['country']),
+      ipo: str(p['ipo']),
+      weburl: str(p['weburl']),
+      price: price != null && price > 0 ? price : null,
+      change: num_(q['d']),
+      changePercent: num_(q['dp']),
+    );
+    // Hibás válasz (se név, se ár) nem kerül a gyorsítótárba.
+    if (facts.name != null || facts.price != null) _factsCache[symbol] = (DateTime.now(), facts);
+    return facts;
   }
 
   // ---- Névtelen statisztika ----

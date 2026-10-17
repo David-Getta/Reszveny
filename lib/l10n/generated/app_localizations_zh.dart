@@ -2308,6 +2308,9 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get chartMySells => '你的卖出';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).

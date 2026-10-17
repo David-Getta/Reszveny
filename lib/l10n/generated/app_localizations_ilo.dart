@@ -2440,4 +2440,7 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get chartMySells => 'Dagiti inlakom';
+
+  @override
+  String get shortcutsTitle => 'Keyboard shortcuts';
 }
