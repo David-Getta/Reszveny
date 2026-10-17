@@ -2321,4 +2321,22 @@ class AppLocalizationsRn extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Insobanuro ya AI ishingiye gusa ku mutwe w\'inkuru n\'incamake yayo. Si inama yo gushora imari. Ikoresha urugero rw’ibibazo vyawe rw’umunsi, si isesengura.';
+
+  @override
+  String get watchAlertAll => 'Imenyesha ku mahinduka manini y\'umusi';
+
+  @override
+  String get watchAlertAllHint =>
+      'Imenyesha ry\'igiciro kuri buri mugabane uri kuri uru rutonde: rizovuga igihe uhindutse gutyo mu musi umwe, hejuru canke hasi. Iyisanganwe imenyesha izoguma n\'iryayo.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Hashizweho amamenyesha $count',
+      one: 'Hashizweho imenyesha 1',
+    );
+    return '$_temp0';
+  }
 }

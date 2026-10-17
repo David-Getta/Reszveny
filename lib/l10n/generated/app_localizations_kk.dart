@@ -2313,4 +2313,22 @@ class AppLocalizationsKk extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Тек тақырып пен қысқаша мазмұнға негізделген AI түсіндірмесі. Инвестициялық кеңес емес. Күнделікті сұрақтар лимитіңізден жұмсалады, талдау емес.';
+
+  @override
+  String get watchAlertAll => 'Үлкен күндік өзгерістер туралы ескерту';
+
+  @override
+  String get watchAlertAllHint =>
+      'Осы тізімдегі әр акцияға баға ескертуі: бір күнде осынша жоғары не төмен өзгерсе, хабар береді. Ескертуі бұрыннан бар акциялар өзінікін сақтайды.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ескерту орнатылды',
+      one: '1 ескерту орнатылды',
+    );
+    return '$_temp0';
+  }
 }

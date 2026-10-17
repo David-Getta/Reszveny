@@ -619,5 +619,8 @@
   "earningsResultMiss": "{symbol} ntiyashitse kuri EPS yari yitezwe",
   "earningsResultBody": "EPS yatangajwe {actual}, yari yitezwe {estimate}",
   "newsExplain": "Ibi bisobanura iki?",
-  "newsExplainNote": "Insobanuro ya AI ishingiye gusa ku mutwe w'inkuru n'incamake yayo. Si inama yo gushora imari. Ikoresha urugero rw’ibibazo vyawe rw’umunsi, si isesengura."
+  "newsExplainNote": "Insobanuro ya AI ishingiye gusa ku mutwe w'inkuru n'incamake yayo. Si inama yo gushora imari. Ikoresha urugero rw’ibibazo vyawe rw’umunsi, si isesengura.",
+  "watchAlertAll": "Imenyesha ku mahinduka manini y'umusi",
+  "watchAlertAllHint": "Imenyesha ry'igiciro kuri buri mugabane uri kuri uru rutonde: rizovuga igihe uhindutse gutyo mu musi umwe, hejuru canke hasi. Iyisanganwe imenyesha izoguma n'iryayo.",
+  "watchAlertAllDone": "{count, plural, =1{Hashizweho imenyesha 1} other{Hashizweho amamenyesha {count}}}"
 }

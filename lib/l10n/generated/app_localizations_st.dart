@@ -2327,4 +2327,22 @@ class AppLocalizationsSt extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Tlhaloso ya AI e thehilweng hodima sehlooho le kakaretso ya sona feela. Hase keletso ya ho tsetela. E sebedisa moedi wa hao wa dipotso wa letsatsi le letsatsi, eseng manollo.';
+
+  @override
+  String get watchAlertAll => 'Temoso ya diphetoho tse kgolo tsa letsatsi';
+
+  @override
+  String get watchAlertAllHint =>
+      'Temoso ya theko bakeng sa share e nngwe le e nngwe lenaneng lena: e tla lla ha e fetoha hakana ka letsatsi le le leng, hodimo kapa tlase. Tseo di seng di ena le yona di tla boloka ya tsona.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ho beilwe ditemoso tse $count',
+      one: 'Ho beilwe temoso e le nngwe',
+    );
+    return '$_temp0';
+  }
 }

@@ -619,5 +619,8 @@
   "earningsResultMiss": "{symbol} 每股收益不及预期",
   "earningsResultBody": "实际每股收益 {actual}，预期 {estimate}",
   "newsExplain": "这意味着什么？",
-  "newsExplainNote": "仅根据标题和摘要生成的 AI 解读。不构成投资建议。占用每日提问次数，不消耗分析次数。"
+  "newsExplainNote": "仅根据标题和摘要生成的 AI 解读。不构成投资建议。占用每日提问次数，不消耗分析次数。",
+  "watchAlertAll": "单日大幅波动提醒",
+  "watchAlertAllHint": "为此列表中的每只股票设置价格提醒：单日上涨或下跌达到该幅度时提醒你。已设有此类提醒的股票将保留原有提醒。",
+  "watchAlertAllDone": "{count, plural, =1{已设置 1 个提醒} other{已设置 {count} 个提醒}}"
 }

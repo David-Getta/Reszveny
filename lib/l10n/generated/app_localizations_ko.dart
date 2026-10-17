@@ -2245,4 +2245,22 @@ class AppLocalizationsKo extends AppLocalizations {
   @override
   String get newsExplainNote =>
       '헤드라인과 요약만을 바탕으로 한 AI 설명입니다. 투자 조언이 아닙니다. 분석 횟수가 아닌 하루 질문 한도가 사용됩니다.';
+
+  @override
+  String get watchAlertAll => '큰 일일 변동 알림';
+
+  @override
+  String get watchAlertAllHint =>
+      '이 목록의 모든 종목에 가격 알림을 설정합니다. 하루에 이만큼 오르거나 내리면 알려 줍니다. 이미 알림이 있는 종목은 기존 알림을 유지합니다.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '알림 $count개가 설정되었습니다',
+      one: '알림 1개가 설정되었습니다',
+    );
+    return '$_temp0';
+  }
 }

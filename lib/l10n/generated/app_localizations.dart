@@ -4056,6 +4056,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'An AI explanation based only on the headline and its summary. It is not investment advice. Uses your daily question allowance, not an analysis.'**
   String get newsExplainNote;
+
+  /// Favorites page menu item / dialog title: set a daily-move price alert on every stock in the list at once.
+  ///
+  /// In en, this message translates to:
+  /// **'Alert on big daily moves'**
+  String get watchAlertAll;
+
+  /// No description provided for @watchAlertAllHint.
+  ///
+  /// In en, this message translates to:
+  /// **'A price alert for every stock in this list that goes off when it moves this much in a day, up or down. Stocks that already have one keep theirs.'**
+  String get watchAlertAllHint;
+
+  /// No description provided for @watchAlertAllDone.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 alert set} other{{count} alerts set}}'**
+  String watchAlertAllDone(int count);
 }
 
 class _AppLocalizationsDelegate

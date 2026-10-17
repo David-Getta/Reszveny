@@ -2319,4 +2319,22 @@ class AppLocalizationsHa extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Bayanin AI bisa kanun labarin da taƙaitaccensa kawai. Ba shawarar zuba jari ba ne. Yana amfani da iyakar tambayoyinka na yau da kullum, ba nazari ba.';
+
+  @override
+  String get watchAlertAll => 'Faɗakarwa kan manyan motsin yini';
+
+  @override
+  String get watchAlertAllHint =>
+      'Faɗakarwar farashi ga kowane hannun jari a wannan jeri: za ta yi ƙara idan ya motsa haka a rana ɗaya, sama ko ƙasa. Waɗanda suke da ita tun tuni za su riƙe tasu.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'An saita faɗakarwa $count',
+      one: 'An saita faɗakarwa 1',
+    );
+    return '$_temp0';
+  }
 }

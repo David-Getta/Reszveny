@@ -619,5 +619,8 @@
   "earningsResultMiss": "{symbol} heɓaani EPS jortaaɗo",
   "earningsResultBody": "EPS bayyinaaɗo {actual}, jortaaɗo {estimate}",
   "newsExplain": "Ko ɗum firti?",
-  "newsExplainNote": "Firo AI tuugiiɗo e tiitoonde e coftal mayre tan. Wonaa wasiya e investisman. Ina huutoroo keerol naamne maa ñalnde kala, wonaa ƴeewndo."
+  "newsExplainNote": "Firo AI tuugiiɗo e tiitoonde e coftal mayre tan. Wonaa wasiya e investisman. Ina huutoroo keerol naamne maa ñalnde kala, wonaa ƴeewndo.",
+  "watchAlertAll": "Jeertinol e waylooji mawɗi ñalnde",
+  "watchAlertAllHint": "Jeertinol coggu ngam kala aksiyoŋ e ndee doggol: ina haala so waylii ko ɗuum fof e ñalnde wootere, dow walla les. Ɗe njogiiɗe jeertinol gila adii ndeen ndesay e mum en.",
+  "watchAlertAllDone": "{count, plural, =1{Jeertinol 1 teeltaama} other{Jeertine {count} teeltaama}}"
 }

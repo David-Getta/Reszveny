@@ -2320,4 +2320,22 @@ class AppLocalizationsSo extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Sharaxaad AI oo ku salaysan oo keliya cinwaanka iyo soo koobidda. Ma aha talo maalgashi. Waxay isticmaashaa xadka su’aalahaaga maalinlaha ah, ma aha falanqayn.';
+
+  @override
+  String get watchAlertAll => 'Digniin isbeddelka weyn ee maalinlaha';
+
+  @override
+  String get watchAlertAllHint =>
+      'Digniin qiimo oo loogu talagalay saami kasta oo liiskan ku jira: way ku ogeysiinaysaa marka uu maalin gudaheed intan isu beddelo, kor ama hoos. Kuwa horeba mid u leh way sii haysanayaan kooda.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count digniin ayaa la dejiyay',
+      one: '1 digniin ayaa la dejiyay',
+    );
+    return '$_temp0';
+  }
 }

@@ -2312,4 +2312,22 @@ class AppLocalizationsKab extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Asegzi n AI yebnan kan ɣef uzwel d ugzul-is. Mačči d awellih n usersi n yidrimen. Yesseqdac talast-ik n yisteqsiyen n yal ass, mačči tasledt.';
+
+  @override
+  String get watchAlertAll => 'Alɣu ɣef ibeddilen imeqqranen n wass';
+
+  @override
+  String get watchAlertAllHint =>
+      'Alɣu n ssuma i yal yiwen deg tebdart-a: ad d-yeffeɣ mi ara yettbeddil ayagi deg yiwen wass, d asawen neɣ d akessar. Wid yesɛan yakan alɣu ad ḥerzen win-nsen.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ttwasbadun $count n walɣuten',
+      one: 'Yettwasbadu 1 n walɣu',
+    );
+    return '$_temp0';
+  }
 }

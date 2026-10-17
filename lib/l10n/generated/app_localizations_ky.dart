@@ -2316,4 +2316,22 @@ class AppLocalizationsKy extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Аталышка жана кыскача мазмунга гана негизделген AI түшүндүрмөсү. Инвестициялык кеңеш эмес. Күнүмдүк суроолор чегиңизден сарпталат, талдоо эмес.';
+
+  @override
+  String get watchAlertAll => 'Чоң күндүк өзгөрүүлөр жөнүндө эскертүү';
+
+  @override
+  String get watchAlertAllHint =>
+      'Бул тизмедеги ар бир акцияга баа эскертүүсү: бир күндө ушунча өйдө же ылдый өзгөрсө, кабар берет. Эскертүүсү мурунтан бар акциялар өзүнүкүн сактайт.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count эскертүү коюлду',
+      one: '1 эскертүү коюлду',
+    );
+    return '$_temp0';
+  }
 }

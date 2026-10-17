@@ -2313,4 +2313,22 @@ class AppLocalizationsTr extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Yalnızca başlık ve özete dayanan yapay zekâ açıklaması. Yatırım tavsiyesi değildir. Günlük soru hakkından düşer, analiz hakkı kullanmaz.';
+
+  @override
+  String get watchAlertAll => 'Büyük günlük hareketlerde alarm';
+
+  @override
+  String get watchAlertAllHint =>
+      'Bu listedeki her hisse için bir fiyat alarmı: bir günde bu kadar yukarı ya da aşağı hareket ettiğinde çalar. Zaten alarmı olan hisseler kendininkini korur.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count alarm kuruldu',
+      one: '1 alarm kuruldu',
+    );
+    return '$_temp0';
+  }
 }

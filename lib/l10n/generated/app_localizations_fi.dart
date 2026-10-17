@@ -2315,4 +2315,22 @@ class AppLocalizationsFi extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Tekoälyn selitys, joka perustuu vain otsikkoon ja tiivistelmään. Se ei ole sijoitusneuvontaa. Kuluttaa päivittäistä kysymyskiintiötäsi, ei analyysia.';
+
+  @override
+  String get watchAlertAll => 'Hälytys suurista päivämuutoksista';
+
+  @override
+  String get watchAlertAllHint =>
+      'Hintahälytys jokaiselle tämän listan osakkeelle: se laukeaa, kun osake liikkuu päivässä näin paljon ylös tai alas. Osakkeet, joilla on jo sellainen, pitävät omansa.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hälytystä asetettu',
+      one: '1 hälytys asetettu',
+    );
+    return '$_temp0';
+  }
 }

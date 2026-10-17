@@ -2350,4 +2350,23 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Explicație generată de AI, bazată doar pe titlu și pe rezumat. Nu reprezintă un sfat de investiții. Folosește limita ta zilnică de întrebări, nu o analiză.';
+
+  @override
+  String get watchAlertAll => 'Alertă la mișcări zilnice mari';
+
+  @override
+  String get watchAlertAllHint =>
+      'O alertă de preț pentru fiecare acțiune din această listă, care se declanșează când aceasta se mișcă atât de mult într-o zi, în sus sau în jos. Acțiunile care au deja una și-o păstrează.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Au fost setate $count de alerte',
+      few: 'Au fost setate $count alerte',
+      one: 'A fost setată $count alertă',
+    );
+    return '$_temp0';
+  }
 }

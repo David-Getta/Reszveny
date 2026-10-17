@@ -619,5 +619,8 @@
   "earningsResultMiss": "{symbol} ናብ ዝተጸበ EPS ኣይበጽሐን",
   "earningsResultBody": "ዝተሓበረ EPS {actual}፣ ዝተጸበ {estimate}",
   "newsExplain": "እዚ እንታይ ማለት እዩ?",
-  "newsExplainNote": "ኣብ ኣርእስትን ጽማቕን ጥራይ ዝተመርኮሰ መብርሂ AI። ምኽሪ ወፍሪ ኣይኮነን። ካብ ዕለታዊ ደረት ሕቶታትኩም ይቑጸር እምበር ትንታነ ኣይጥቀምን።"
+  "newsExplainNote": "ኣብ ኣርእስትን ጽማቕን ጥራይ ዝተመርኮሰ መብርሂ AI። ምኽሪ ወፍሪ ኣይኮነን። ካብ ዕለታዊ ደረት ሕቶታትኩም ይቑጸር እምበር ትንታነ ኣይጥቀምን።",
+  "watchAlertAll": "ንዓበይቲ መዓልታዊ ምንቅስቓሳት መጠንቀቕታ",
+  "watchAlertAllHint": "ንነፍሲ ወከፍ ኣክስዮን ኣብዚ ዝርዝር ናይ ዋጋ መጠንቀቕታ፦ ኣብ ሓንቲ መዓልቲ ክንድዚ ንላዕሊ ወይ ንታሕቲ ምስ ተንቀሳቐሰ ይሕብር። ድሮ ዘለዎም ኣክስዮናት ናቶም ይሕዙ።",
+  "watchAlertAllDone": "{count, plural, =1{1 መጠንቀቕታ ተቐሚጡ} other{{count} መጠንቀቕታታት ተቐሚጦም}}"
 }

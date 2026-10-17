@@ -2319,4 +2319,22 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Explicación de IA basada solo en el titular y el resumen. No constituye asesoramiento de inversión. Usa tu límite diario de preguntas, no un análisis.';
+
+  @override
+  String get watchAlertAll => 'Alerta de grandes movimientos diarios';
+
+  @override
+  String get watchAlertAllHint =>
+      'Una alerta de precio para cada acción de esta lista que salta cuando se mueve tanto en un día, al alza o a la baja. Las acciones que ya tienen una la conservan.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Se han creado $count alertas',
+      one: 'Se ha creado 1 alerta',
+    );
+    return '$_temp0';
+  }
 }

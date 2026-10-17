@@ -619,5 +619,8 @@
   "earningsResultMiss": "{symbol}: ambany noho ny EPS notombanana",
   "earningsResultBody": "EPS navoaka {actual}, notombanana {estimate}",
   "newsExplain": "Inona no dikan’izany?",
-  "newsExplainNote": "Fanazavana avy amin’ny AI miorina amin’ny lohateny sy ny famintinana ihany. Tsy torohevitra momba ny fampiasam-bola. Mampiasa ny fetran’ny fanontanianao isan’andro izy, fa tsy famakafakana."
+  "newsExplainNote": "Fanazavana avy amin’ny AI miorina amin’ny lohateny sy ny famintinana ihany. Tsy torohevitra momba ny fampiasam-bola. Mampiasa ny fetran’ny fanontanianao isan’andro izy, fa tsy famakafakana.",
+  "watchAlertAll": "Fampitandremana amin'ny fihetsehana lehibe isan'andro",
+  "watchAlertAllHint": "Fampitandremana momba ny vidiny ho an'ny petra-bola tsirairay ato amin'ity lisitra ity: maneno izy rehefa mihetsika toy izao ao anatin'ny iray andro, miakatra na midina. Izay efa manana dia mitazona ny azy.",
+  "watchAlertAllDone": "{count, plural, =1{Napetraka ny fampitandremana 1} other{Napetraka ny fampitandremana {count}}}"
 }

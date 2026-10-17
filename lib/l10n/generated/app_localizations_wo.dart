@@ -2308,4 +2308,22 @@ class AppLocalizationsWo extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Leeral bu AI defar, mu sukkandiku rekk ci tur bi ak ndaneel li. Du ndigal ci dugal xaalis. Dafay jëfandikoo sa limu laaj yu bés bu nekk, du xayma.';
+
+  @override
+  String get watchAlertAll => 'Artu ci coppite yu mag ci bés';
+
+  @override
+  String get watchAlertAllHint =>
+      'Artu njëg ngir bépp aksiyoŋ ci limm bii: dina la xamal bu coppitee nii ci benn bés, kaw walla suuf. Yi am benn ba noppi dinañu des ak seen bos.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Teg nañu $count artu',
+      one: 'Teg nañu 1 artu',
+    );
+    return '$_temp0';
+  }
 }

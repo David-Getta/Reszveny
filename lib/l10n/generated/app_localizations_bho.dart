@@ -2309,4 +2309,22 @@ class AppLocalizationsBho extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'खाली हेडलाइन आ सारांश पर आधारित AI के व्याख्या। ई निवेश के सलाह ना ह। ई रउआ रोज के सवाल के सीमा से जाला, कवनो विश्लेषण खरच ना होला।';
+
+  @override
+  String get watchAlertAll => 'रोज के बड़ उतार-चढ़ाव पर अलर्ट';
+
+  @override
+  String get watchAlertAllHint =>
+      'एह सूची के हर शेयर खातिर दाम के अलर्ट: एक दिन में एतना ऊपर भा नीचे होखे त बताई। जवना शेयर पर पहिले से अलर्ट बा, ओकर ओइसहीं रही।';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count अलर्ट लगावल गइल',
+      one: '1 अलर्ट लगावल गइल',
+    );
+    return '$_temp0';
+  }
 }

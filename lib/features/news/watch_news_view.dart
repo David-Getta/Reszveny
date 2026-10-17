@@ -148,6 +148,7 @@ Future<void> showNewsExplanation(BuildContext context, WatchedNews news) {
   final services = AppServices.of(context);
   final language = SupportedLocales.languageFor(Localizations.localeOf(context)).englishName;
   final answer = services.newsExplainer.explain(news, language: language);
+  services.telemetry.track('news_explained');
   return showModalBottomSheet<void>(
     context: context,
     showDragHandle: true,

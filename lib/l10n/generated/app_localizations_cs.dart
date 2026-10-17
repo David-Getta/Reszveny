@@ -2370,4 +2370,24 @@ class AppLocalizationsCs extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Vysvětlení od AI jen na základě titulku a shrnutí. Není investičním doporučením. Čerpá z vašeho denního limitu otázek, nespotřebuje analýzu.';
+
+  @override
+  String get watchAlertAll => 'Upozornění na velké denní pohyby';
+
+  @override
+  String get watchAlertAllHint =>
+      'Cenové upozornění pro každou akcii v tomto seznamu, které se ozve, když se za den pohne o tolik nahoru nebo dolů. Akcie, které už nějaké mají, si ho ponechají.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nastaveno $count upozornění',
+      many: 'Nastaveno $count upozornění',
+      few: 'Nastavena $count upozornění',
+      one: 'Nastaveno 1 upozornění',
+    );
+    return '$_temp0';
+  }
 }

@@ -2314,4 +2314,22 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Maelezo ya AI yanayotegemea kichwa cha habari na muhtasari wake pekee. Si ushauri wa uwekezaji. Hutumia kikomo chako cha maswali cha kila siku, si uchambuzi.';
+
+  @override
+  String get watchAlertAll => 'Arifa kwa mabadiliko makubwa ya siku';
+
+  @override
+  String get watchAlertAllHint =>
+      'Arifa ya bei kwa kila hisa katika orodha hii itakayolia inaposogea kiasi hiki kwa siku moja, juu au chini. Hisa ambazo tayari zina arifa zitabaki na zake.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Arifa $count zimewekwa',
+      one: 'Arifa 1 imewekwa',
+    );
+    return '$_temp0';
+  }
 }

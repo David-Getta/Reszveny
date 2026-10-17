@@ -2322,4 +2322,22 @@ class AppLocalizationsOm extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Ibsa AI mata duree fi cuunfaa qofa irratti hundaa\'e. Gorsa invastimantii miti. Daangaa gaaffii guyyaa kee fayyadama, xiinxala miti.';
+
+  @override
+  String get watchAlertAll => 'Akeekkachiisa sochii guddaa guyyaa';
+
+  @override
+  String get watchAlertAllHint =>
+      'Akeekkachiisa gatii aksiyoona tarree kana keessa jiru hundaaf: guyyaa tokkotti hammana yoo ol ykn gadi socho\'e ni beeksisa. Kanneen duraan qaban kan isaanii ni eeggatu.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Akeekkachiisni $count qindaa\'aniiru',
+      one: 'Akeekkachiisni 1 qindaa\'eera',
+    );
+    return '$_temp0';
+  }
 }

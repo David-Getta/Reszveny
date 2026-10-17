@@ -55,6 +55,15 @@ class TelemetryStore {
     'telemetry_on',
     'ask_question',
     'portfolio_review',
+    'daily_brief',
+    'morning_brief',
+    'holdings_read',
+    'news_explained',
+    'list_created',
+    'targets_set',
+    'backup_saved',
+    'backup_restored',
+    'bulk_alerts',
   };
 
   /// Ennyi napig őrizzük a napi összesítést, illetve a napi aktív felhasználók

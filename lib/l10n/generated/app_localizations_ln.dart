@@ -2325,4 +2325,22 @@ class AppLocalizationsLn extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Ndimbola ya AI oyo esalemi kaka na motó ya nsango mpe mokuse na yango. Ezali toli ya kotia mbɔngɔ te. Esalelaka ndelo ya mituna na yo ya mokolo na mokolo, kasi botaleli te.';
+
+  @override
+  String get watchAlertAll => 'Likebisi mpo na mbongwana monene ya mokɔlɔ';
+
+  @override
+  String get watchAlertAllHint =>
+      'Likebisi ya ntalo mpo na aksio nyonso na liste oyo: ekobɛta soki eningani boye na mokɔlɔ moko, likoló to na nse. Oyo ezali na likebisi kala ekobatela ya yango.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Makebisi $count etyami',
+      one: 'Likebisi 1 etyami',
+    );
+    return '$_temp0';
+  }
 }

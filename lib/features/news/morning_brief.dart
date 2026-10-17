@@ -18,6 +18,7 @@ class MorningBrief {
     required this.notifier,
     required this.language,
     required this.title,
+    this.onMade,
     this.interval = const Duration(minutes: 30),
     DateTime Function()? clock,
   }) : _clock = clock ?? DateTime.now;
@@ -30,6 +31,9 @@ class MorningBrief {
   /// Az app nyelve angolul (a kéréshez) és az értesítés címe a felhasználó nyelvén.
   final String Function() language;
   final String Function() title;
+
+  /// Elkészült egy reggeli összefoglaló (a névtelen statisztikához).
+  final void Function()? onMade;
   final Duration interval;
   final DateTime Function() _clock;
 
@@ -63,6 +67,7 @@ class MorningBrief {
       final b = await brief.generate(symbols: symbols, language: language());
       final day = b.at.toIso8601String().substring(0, 10);
       await notifier.show(id: 'brief-$day', title: title(), body: firstSentence(b.text));
+      onMade?.call();
       return true;
     } catch (e) {
       debugPrint('Reggeli összefoglaló nem készült el: $e');

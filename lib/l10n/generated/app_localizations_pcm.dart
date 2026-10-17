@@ -2313,4 +2313,22 @@ class AppLocalizationsPcm extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'AI explanation wey base only on di headline and di summary. E no be investment advice. E dey use your daily question limit, no be analysis.';
+
+  @override
+  String get watchAlertAll => 'Alert for big move for one day';
+
+  @override
+  String get watchAlertAllHint =>
+      'Price alert for every stock wey dey this list: e go ring when e move reach this much for one day, up or down. Stock wey don get one before go keep im own.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'We don set $count alerts',
+      one: 'We don set $count alert',
+    );
+    return '$_temp0';
+  }
 }

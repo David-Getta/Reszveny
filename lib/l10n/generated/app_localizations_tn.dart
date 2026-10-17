@@ -2329,4 +2329,22 @@ class AppLocalizationsTn extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Tlhaloso ya AI e e theilweng fela mo setlhogong le kakaretsong ya sone. Ga se kgakololo ya peeletso. E dirisa tekanyetso ya gago ya dipotso ya letsatsi le letsatsi, e seng tshekatsheko.';
+
+  @override
+  String get watchAlertAll => 'Tlhagiso ya diphetogo tse dikgolo tsa letsatsi';
+
+  @override
+  String get watchAlertAllHint =>
+      'Tlhagiso ya tlhwatlhwa mo share nngwe le nngwe mo lenaaneng leno: e tla lela fa e fetoga go le kalo mo letsatsing le le lengwe, kwa godimo kgotsa kwa tlase. Tse di setseng di na le yone di tla tshola ya tsone.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Go beilwe ditlhagiso di le $count',
+      one: 'Go beilwe tlhagiso e le nngwe',
+    );
+    return '$_temp0';
+  }
 }

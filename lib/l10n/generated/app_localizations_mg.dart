@@ -2330,4 +2330,23 @@ class AppLocalizationsMg extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Fanazavana avy amin’ny AI miorina amin’ny lohateny sy ny famintinana ihany. Tsy torohevitra momba ny fampiasam-bola. Mampiasa ny fetran’ny fanontanianao isan’andro izy, fa tsy famakafakana.';
+
+  @override
+  String get watchAlertAll =>
+      'Fampitandremana amin\'ny fihetsehana lehibe isan\'andro';
+
+  @override
+  String get watchAlertAllHint =>
+      'Fampitandremana momba ny vidiny ho an\'ny petra-bola tsirairay ato amin\'ity lisitra ity: maneno izy rehefa mihetsika toy izao ao anatin\'ny iray andro, miakatra na midina. Izay efa manana dia mitazona ny azy.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Napetraka ny fampitandremana $count',
+      one: 'Napetraka ny fampitandremana 1',
+    );
+    return '$_temp0';
+  }
 }

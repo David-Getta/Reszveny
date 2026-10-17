@@ -10,6 +10,8 @@ import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/centered_scroll.dart';
 import '../../widgets/desktop_chrome.dart';
+import '../alerts/price_alert.dart';
+import '../portfolio/add_lot_dialog.dart' show parseDecimal;
 
 /// A figyelőlista rendezése.
 enum WatchSort { own, gainers, losers, name }
@@ -106,6 +108,7 @@ class _WatchlistPageState extends State<WatchlistPage> {
     final prefs = AppServices.of(context).preferences;
     final name = await _askListName();
     if (name == null || !await prefs.addWatchList(name)) return;
+    if (mounted) AppServices.of(context).telemetry.track('list_created');
     if (withSymbol != null) await prefs.toggleInList(name, withSymbol);
     if (mounted && withSymbol == null) setState(() => _list = name);
   }
@@ -148,7 +151,30 @@ class _WatchlistPageState extends State<WatchlistPage> {
     if (create == true && mounted) await _newList(withSymbol: symbol);
   }
 
+  /// Napi mozgás-riasztás egyszerre az összes látható részvényre (ahol még nincs ilyen).
+  Future<void> _alertAll() async {
+    final services = AppServices.of(context);
+    final l10n = AppLocalizations.of(context);
+    final messenger = ScaffoldMessenger.of(context);
+    final prefs = services.preferences;
+    final symbols = prefs.watchLists.where((l) => l.name == _list).firstOrNull?.symbols ?? prefs.favorites;
+    final percent = await showDialog<double>(context: context, builder: (_) => const _MoveAlertDialog());
+    if (percent == null) return;
+    var added = 0;
+    for (final s in symbols) {
+      final has = services.alerts.forSymbol(s).any((a) => a.isActive && a.kind == AlertKind.move);
+      if (has) continue;
+      await services.alerts.add(symbol: s, kind: AlertKind.move, value: percent);
+      added++;
+    }
+    services.telemetry.track('bulk_alerts');
+    messenger
+      ..hideCurrentSnackBar()
+      ..showSnackBar(SnackBar(content: Text(l10n.watchAlertAllDone(added))));
+  }
+
   Future<void> _listMenu(String action) async {
+    if (action == 'alerts') return _alertAll();
     final prefs = AppServices.of(context).preferences;
     final list = _list;
     if (list == null) return;
@@ -189,11 +215,12 @@ class _WatchlistPageState extends State<WatchlistPage> {
                 PopupMenuItem(key: ValueKey('watch-sort-${v.name}'), value: v, child: Text(label)),
             ],
           ),
-          if (_list != null)
-            PopupMenuButton<String>(
-              key: const ValueKey('watch-list-menu'),
-              onSelected: _listMenu,
-              itemBuilder: (_) => [
+          PopupMenuButton<String>(
+            key: const ValueKey('watch-list-menu'),
+            onSelected: _listMenu,
+            itemBuilder: (_) => [
+              PopupMenuItem(key: const ValueKey('watch-alert-all'), value: 'alerts', child: Text(l10n.watchAlertAll)),
+              if (_list != null) ...[
                 PopupMenuItem(
                   key: const ValueKey('watch-list-rename'),
                   value: 'rename',
@@ -205,7 +232,8 @@ class _WatchlistPageState extends State<WatchlistPage> {
                   child: Text(l10n.watchListDelete),
                 ),
               ],
-            ),
+            ],
+          ),
           const SizedBox(width: 4),
         ],
       ),
@@ -337,6 +365,58 @@ class _WatchlistPageState extends State<WatchlistPage> {
           );
         },
       ),
+    );
+  }
+}
+
+/// A napi mozgás küszöbe (százalék) a tömeges riasztáshoz.
+class _MoveAlertDialog extends StatefulWidget {
+  const _MoveAlertDialog();
+
+  @override
+  State<_MoveAlertDialog> createState() => _MoveAlertDialogState();
+}
+
+class _MoveAlertDialogState extends State<_MoveAlertDialog> {
+  final _controller = TextEditingController(text: '5');
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  void _save() {
+    final v = parseDecimal(_controller.text);
+    if (v != null && v > 0 && v < 100) Navigator.of(context).pop(v);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final p = AppPalette.of(context);
+    return AlertDialog(
+      title: Text(l10n.watchAlertAll),
+      content: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(l10n.watchAlertAllHint, style: Theme.of(context).textTheme.bodySmall?.copyWith(color: p.muted)),
+          const SizedBox(height: 8),
+          TextField(
+            key: const ValueKey('watch-alert-percent'),
+            controller: _controller,
+            autofocus: true,
+            keyboardType: const TextInputType.numberWithOptions(decimal: true),
+            decoration: InputDecoration(labelText: l10n.alertMovePercent, suffixText: '%'),
+            onSubmitted: (_) => _save(),
+          ),
+        ],
+      ),
+      actions: [
+        TextButton(onPressed: () => Navigator.of(context).pop(), child: Text(l10n.cancel)),
+        FilledButton(key: const ValueKey('watch-alert-save'), onPressed: _save, child: Text(l10n.alertSave)),
+      ],
     );
   }
 }

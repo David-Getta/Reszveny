@@ -619,5 +619,8 @@
   "earningsResultMiss": "{symbol} manque le BPA attendu",
   "earningsResultBody": "BPA publié {actual}, attendu {estimate}",
   "newsExplain": "Qu’est-ce que cela signifie ?",
-  "newsExplainNote": "Explication par IA fondée uniquement sur le titre et son résumé. Elle ne constitue pas un conseil en investissement. Utilise votre quota quotidien de questions, pas une analyse."
+  "newsExplainNote": "Explication par IA fondée uniquement sur le titre et son résumé. Elle ne constitue pas un conseil en investissement. Utilise votre quota quotidien de questions, pas une analyse.",
+  "watchAlertAll": "Alerte sur les fortes variations du jour",
+  "watchAlertAllHint": "Une alerte de cours sur chaque action de cette liste, qui se déclenche lorsqu’elle varie autant en une journée, à la hausse comme à la baisse. Les actions qui en ont déjà une la conservent.",
+  "watchAlertAllDone": "{count, plural, =1{1 alerte créée} other{{count} alertes créées}}"
 }

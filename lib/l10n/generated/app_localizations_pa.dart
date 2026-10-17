@@ -2309,4 +2309,22 @@ class AppLocalizationsPa extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'ਸਿਰਫ਼ ਸਿਰਲੇਖ ਅਤੇ ਸਾਰ ’ਤੇ ਆਧਾਰਿਤ AI ਵਿਆਖਿਆ। ਇਹ ਨਿਵੇਸ਼ ਸਲਾਹ ਨਹੀਂ ਹੈ। ਇਹ ਤੁਹਾਡੀ ਰੋਜ਼ਾਨਾ ਸਵਾਲਾਂ ਦੀ ਸੀਮਾ ਵਿੱਚੋਂ ਜਾਂਦਾ ਹੈ, ਕੋਈ ਵਿਸ਼ਲੇਸ਼ਣ ਖ਼ਰਚ ਨਹੀਂ ਹੁੰਦਾ।';
+
+  @override
+  String get watchAlertAll => 'ਵੱਡੇ ਰੋਜ਼ਾਨਾ ਬਦਲਾਅ \'ਤੇ ਅਲਰਟ';
+
+  @override
+  String get watchAlertAllHint =>
+      'ਇਸ ਸੂਚੀ ਦੇ ਹਰ ਸ਼ੇਅਰ ਲਈ ਕੀਮਤ ਅਲਰਟ: ਇੱਕ ਦਿਨ ਵਿੱਚ ਇੰਨਾ ਉੱਪਰ ਜਾਂ ਹੇਠਾਂ ਹਿੱਲਣ \'ਤੇ ਦੱਸੇਗਾ। ਜਿਨ੍ਹਾਂ ਸ਼ੇਅਰਾਂ \'ਤੇ ਪਹਿਲਾਂ ਹੀ ਅਲਰਟ ਹੈ, ਉਨ੍ਹਾਂ ਦਾ ਉਹੀ ਰਹੇਗਾ।';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ਅਲਰਟ ਸੈੱਟ ਕੀਤੇ',
+      one: '1 ਅਲਰਟ ਸੈੱਟ ਕੀਤਾ',
+    );
+    return '$_temp0';
+  }
 }

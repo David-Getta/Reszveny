@@ -2276,4 +2276,22 @@ class AppLocalizationsTi extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'ኣብ ኣርእስትን ጽማቕን ጥራይ ዝተመርኮሰ መብርሂ AI። ምኽሪ ወፍሪ ኣይኮነን። ካብ ዕለታዊ ደረት ሕቶታትኩም ይቑጸር እምበር ትንታነ ኣይጥቀምን።';
+
+  @override
+  String get watchAlertAll => 'ንዓበይቲ መዓልታዊ ምንቅስቓሳት መጠንቀቕታ';
+
+  @override
+  String get watchAlertAllHint =>
+      'ንነፍሲ ወከፍ ኣክስዮን ኣብዚ ዝርዝር ናይ ዋጋ መጠንቀቕታ፦ ኣብ ሓንቲ መዓልቲ ክንድዚ ንላዕሊ ወይ ንታሕቲ ምስ ተንቀሳቐሰ ይሕብር። ድሮ ዘለዎም ኣክስዮናት ናቶም ይሕዙ።';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count መጠንቀቕታታት ተቐሚጦም',
+      one: '1 መጠንቀቕታ ተቐሚጡ',
+    );
+    return '$_temp0';
+  }
 }

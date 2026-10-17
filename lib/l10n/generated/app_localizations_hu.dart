@@ -2319,4 +2319,22 @@ class AppLocalizationsHu extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'AI-magyarázat, csak a cím és az összefoglaló alapján. Nem befektetési tanács. A napi kérdéskeretből megy, elemzést nem fogyaszt.';
+
+  @override
+  String get watchAlertAll => 'Riasztás nagy napi mozgásra';
+
+  @override
+  String get watchAlertAllHint =>
+      'Árfolyam-riasztás a lista minden részvényére: akkor szól, ha egy nap alatt ennyit mozdul, felfelé vagy lefelé. Ahol már van ilyen, az marad.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count riasztás beállítva',
+      one: '1 riasztás beállítva',
+    );
+    return '$_temp0';
+  }
 }

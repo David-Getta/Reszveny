@@ -2306,4 +2306,21 @@ class AppLocalizationsMy extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'ခေါင်းစဉ်နှင့် အနှစ်ချုပ်ကိုသာ အခြေခံထားသော AI ရှင်းလင်းချက်။ ရင်းနှီးမြှုပ်နှံမှု အကြံပြုချက် မဟုတ်ပါ။ နေ့စဉ် မေးခွန်းကန့်သတ်ချက်မှ သုံးပြီး ခွဲခြမ်းစိတ်ဖြာမှု မသုံးပါ။';
+
+  @override
+  String get watchAlertAll => 'နေ့စဉ် ကြီးမားသော ပြောင်းလဲမှုအတွက် သတိပေးချက်';
+
+  @override
+  String get watchAlertAllHint =>
+      'ဤစာရင်းရှိ ရှယ်ယာတိုင်းအတွက် ဈေးနှုန်း သတိပေးချက်- တစ်ရက်အတွင်း ဤမျှ အတက် သို့မဟုတ် အကျ ပြောင်းလဲလျှင် အသိပေးပါမည်။ သတိပေးချက် ရှိပြီးသား ရှယ်ယာများသည် ၎င်းတို့၏ဟာကို ဆက်ထားပါမည်။';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'သတိပေးချက် $count ခု သတ်မှတ်ပြီးပါပြီ',
+    );
+    return '$_temp0';
+  }
 }

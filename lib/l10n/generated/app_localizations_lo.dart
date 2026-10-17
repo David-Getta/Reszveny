@@ -2288,4 +2288,21 @@ class AppLocalizationsLo extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'ຄຳອະທິບາຍຈາກ AI ອີງໃສ່ພຽງຫົວຂໍ້ຂ່າວ ແລະ ບົດສະຫຼຸບເທົ່ານັ້ນ. ບໍ່ແມ່ນຄຳແນະນຳການລົງທຶນ. ໃຊ້ໂຄຕາຄຳຖາມປະຈຳວັນຂອງທ່ານ ບໍ່ແມ່ນການວິເຄາະ.';
+
+  @override
+  String get watchAlertAll => 'ແຈ້ງເຕືອນເມື່ອປ່ຽນແປງລາຍວັນຫຼາຍ';
+
+  @override
+  String get watchAlertAllHint =>
+      'ການແຈ້ງເຕືອນລາຄາສຳລັບທຸກຮຸ້ນໃນລາຍການນີ້ ທີ່ຈະດັງເມື່ອມັນປ່ຽນແປງເທົ່ານີ້ພາຍໃນມື້ດຽວ ທັງຂຶ້ນ ຫຼື ລົງ. ຮຸ້ນທີ່ມີຢູ່ແລ້ວຈະຮັກສາອັນເດີມໄວ້.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ຕັ້ງການແຈ້ງເຕືອນ $count ລາຍການແລ້ວ',
+    );
+    return '$_temp0';
+  }
 }

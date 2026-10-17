@@ -2311,4 +2311,22 @@ class AppLocalizationsBm extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'AI ka ɲɛfɔli min sinsinnen bɛ kunkan ni a kuncɛ dɔrɔn kan. Wari donni ladilikan tɛ. A bɛ bɔ i ka don o don ɲininkaliw hakɛ la, a tɛ sɛgɛsɛgɛli si ta.';
+
+  @override
+  String get watchAlertAll => 'Kunnafoni don yɛlɛma belebeleba kan';
+
+  @override
+  String get watchAlertAllHint =>
+      'Sɔngɔ kunnafoni lisi nin kɔnɔ aksiyɔn kelen kelen bɛɛ ye: a bɛ i ladɔnniya ni a yɛlɛmana nin hakɛ ye don kelen kɔnɔ, sanfɛ walima duguma. Minnu bɛ ni kunnafoni ye kaban, olu ta bɛ to.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kunnafoni $count sigilen don',
+      one: 'Kunnafoni 1 sigilen don',
+    );
+    return '$_temp0';
+  }
 }

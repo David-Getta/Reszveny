@@ -2311,4 +2311,22 @@ class AppLocalizationsSi extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'සිරස්තලය සහ සාරාංශය මත පමණක් පදනම් වූ AI පැහැදිලි කිරීමකි. එය ආයෝජන උපදෙසක් නොවේ. මෙය ඔබේ දෛනික ප්‍රශ්න සීමාවෙන් යයි, විශ්ලේෂණයක් භාවිත නොකරයි.';
+
+  @override
+  String get watchAlertAll => 'විශාල දෛනික වෙනස්වීම් සඳහා ඇඟවීම';
+
+  @override
+  String get watchAlertAllHint =>
+      'මෙම ලැයිස්තුවේ සෑම කොටසකටම මිල ඇඟවීමක්: දිනකදී මෙතරම් ඉහළට හෝ පහළට වෙනස් වූ විට දැනුම් දෙයි. දැනටමත් ඇඟවීමක් ඇති කොටස්වලට ඒවායේම එක ඉතිරි වේ.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ඇඟවීම් $countක් සැකසුවා',
+      one: 'ඇඟවීමක් සැකසුවා',
+    );
+    return '$_temp0';
+  }
 }

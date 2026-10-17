@@ -119,6 +119,7 @@ class BackupCard extends StatelessWidget {
               final text = const JsonEncoder.withIndent(' ').convert(Backup.data(services, now: now));
               try {
                 await saveBackupFile(Uint8List.fromList(utf8.encode(text)), Backup.fileName(now));
+                services.telemetry.track('backup_saved');
               } catch (e) {
                 debugPrint('Mentés nem sikerült: $e');
               }
@@ -138,7 +139,10 @@ class BackupCard extends StatelessWidget {
               } catch (_) {}
               if (text == null) return;
               final backup = Backup.parse(text);
-              if (backup != null) await Backup.restore(services, backup);
+              if (backup != null) {
+                await Backup.restore(services, backup);
+                services.telemetry.track('backup_restored');
+              }
               messenger.showSnackBar(
                 SnackBar(content: Text(backup == null ? l10n.backupInvalid : l10n.backupRestored)),
               );

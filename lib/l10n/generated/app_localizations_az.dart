@@ -2315,4 +2315,22 @@ class AppLocalizationsAz extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Yalnız başlıq və xülasə əsasında AI izahı. İnvestisiya məsləhəti deyil. Gündəlik sual limitinizdən istifadə edir, təhlil sərf etmir.';
+
+  @override
+  String get watchAlertAll => 'Böyük gündəlik dəyişmələrdə xəbərdarlıq';
+
+  @override
+  String get watchAlertAllHint =>
+      'Bu siyahıdakı hər səhm üçün qiymət xəbərdarlığı: bir gündə bu qədər yuxarı və ya aşağı dəyişərsə, xəbər verir. Artıq xəbərdarlığı olan səhmlər onu saxlayır.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count xəbərdarlıq quruldu',
+      one: '1 xəbərdarlıq quruldu',
+    );
+    return '$_temp0';
+  }
 }

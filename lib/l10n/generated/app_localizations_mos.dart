@@ -2300,4 +2300,22 @@ class AppLocalizationsMos extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'AI wilgri, sẽn tik zug-sõngã la a koe-kʋʋnã bala. Pa sagls ligd kẽesg wɛɛngẽ ye. A tũuda f daar fãa sokr sõorã, pa vẽenegr ye.';
+
+  @override
+  String get watchAlertAll => 'Kibay daar toeemd wʋsg yĩnga';
+
+  @override
+  String get watchAlertAllHint =>
+      'Ligd kibay bõn fãa sẽn be liste kãngã pʋgẽ yĩnga: a na n togsa fo, a sã n toeem woto daar a yembre, n zẽk bɩ n sig. Sẽn da tara kibay pĩnda na n gũusa b rẽndã.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'B ningame kibay $count',
+      one: 'B ningame kibay a yembre',
+    );
+    return '$_temp0';
+  }
 }

@@ -680,7 +680,9 @@ class _TargetsDialogState extends State<_TargetsDialog> {
         FilledButton(
           key: const ValueKey('targets-save'),
           onPressed: () async {
-            await AppServices.of(context).preferences.setTargets(_values);
+            final services = AppServices.of(context);
+            await services.preferences.setTargets(_values);
+            services.telemetry.track('targets_set');
             if (context.mounted) Navigator.of(context).pop();
           },
           child: Text(l10n.ok),

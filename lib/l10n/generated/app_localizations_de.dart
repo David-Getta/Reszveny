@@ -2326,4 +2326,22 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'KI-Erklärung, nur auf Basis der Schlagzeile und der Zusammenfassung. Keine Anlageberatung. Zählt zu deinem täglichen Fragenkontingent, nicht als Analyse.';
+
+  @override
+  String get watchAlertAll => 'Alarm bei starken Tagesbewegungen';
+
+  @override
+  String get watchAlertAllHint =>
+      'Ein Kursalarm für jede Aktie dieser Liste, der auslöst, wenn sie sich an einem Tag so stark bewegt – nach oben oder unten. Aktien, die schon einen haben, behalten ihren.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Alarme eingerichtet',
+      one: '1 Alarm eingerichtet',
+    );
+    return '$_temp0';
+  }
 }

@@ -619,5 +619,8 @@
   "earningsResultMiss": "{symbol} ayifinyelelanga ku-EPS elindelekile",
   "earningsResultBody": "I-EPS ebikiwe {actual}, elindelekile {estimate}",
   "newsExplain": "Lokhu kusho ukuthini?",
-  "newsExplainNote": "Incazelo ye-AI esekelwe kuphela esihlokweni nasesifinyezweni saso. Akuyona iseluleko sokutshala imali. Sisebenzisa umkhawulo wakho wemibuzo wansuku zonke, hhayi ukuhlaziya."
+  "newsExplainNote": "Incazelo ye-AI esekelwe kuphela esihlokweni nasesifinyezweni saso. Akuyona iseluleko sokutshala imali. Sisebenzisa umkhawulo wakho wemibuzo wansuku zonke, hhayi ukuhlaziya.",
+  "watchAlertAll": "Isexwayiso sokunyakaza okukhulu kosuku",
+  "watchAlertAllHint": "Isexwayiso senani kusitoko ngasinye kulolu hlu: sizokhala uma sinyakaza kangaka ngosuku olulodwa, phezulu noma phansi. Lezo esezinaso zigcina esazo.",
+  "watchAlertAllDone": "{count, plural, =1{Kusethwe isexwayiso esisodwa} other{Kusethwe izexwayiso ezingu-{count}}}"
 }

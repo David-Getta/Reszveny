@@ -2294,4 +2294,21 @@ class AppLocalizationsKm extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'ការពន្យល់ដោយ AI ផ្អែកតែលើចំណងជើង និងសេចក្តីសង្ខេបប៉ុណ្ណោះ។ មិនមែនជាដំបូន្មានវិនិយោគទេ។ វាប្រើកម្រិតសំណួរប្រចាំថ្ងៃរបស់អ្នក មិនមែនការវិភាគទេ។';
+
+  @override
+  String get watchAlertAll => 'ការជូនដំណឹងពេលប្រែប្រួលខ្លាំងប្រចាំថ្ងៃ';
+
+  @override
+  String get watchAlertAllHint =>
+      'ការជូនដំណឹងតម្លៃសម្រាប់ភាគហ៊ុននីមួយៗក្នុងបញ្ជីនេះ ដែលនឹងរោទ៍នៅពេលវាប្រែប្រួលប៉ុណ្ណេះក្នុងមួយថ្ងៃ ទាំងឡើង ឬចុះ។ ភាគហ៊ុនដែលមានរួចហើយ នឹងរក្សាទុកដដែល។';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'បានកំណត់ការជូនដំណឹង $count',
+    );
+    return '$_temp0';
+  }
 }

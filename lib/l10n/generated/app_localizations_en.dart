@@ -2312,4 +2312,22 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'An AI explanation based only on the headline and its summary. It is not investment advice. Uses your daily question allowance, not an analysis.';
+
+  @override
+  String get watchAlertAll => 'Alert on big daily moves';
+
+  @override
+  String get watchAlertAllHint =>
+      'A price alert for every stock in this list that goes off when it moves this much in a day, up or down. Stocks that already have one keep theirs.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count alerts set',
+      one: '1 alert set',
+    );
+    return '$_temp0';
+  }
 }

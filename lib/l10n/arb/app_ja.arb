@@ -619,5 +619,8 @@
   "earningsResultMiss": "{symbol}はEPS予想を下回りました",
   "earningsResultBody": "EPS実績 {actual}、予想 {estimate}",
   "newsExplain": "これはどういう意味？",
-  "newsExplainNote": "見出しと要約だけに基づく AI の解説です。投資助言ではありません。1日の質問回数を使い、分析回数は消費しません。"
+  "newsExplainNote": "見出しと要約だけに基づく AI の解説です。投資助言ではありません。1日の質問回数を使い、分析回数は消費しません。",
+  "watchAlertAll": "1日の大きな変動でアラート",
+  "watchAlertAllHint": "このリストのすべての銘柄に価格アラートを設定します。1日でこれだけ上下に動くと通知します。すでにアラートがある銘柄はそのまま残ります。",
+  "watchAlertAllDone": "{count, plural, =1{1 件のアラートを設定しました} other{{count} 件のアラートを設定しました}}"
 }

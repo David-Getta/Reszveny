@@ -619,5 +619,8 @@
   "earningsResultMiss": "{symbol} EPS eegame hin geenye",
   "earningsResultBody": "EPS gabaafame {actual}, eegame {estimate}",
   "newsExplain": "Kun maal jechuu dha?",
-  "newsExplainNote": "Ibsa AI mata duree fi cuunfaa qofa irratti hundaa'e. Gorsa invastimantii miti. Daangaa gaaffii guyyaa kee fayyadama, xiinxala miti."
+  "newsExplainNote": "Ibsa AI mata duree fi cuunfaa qofa irratti hundaa'e. Gorsa invastimantii miti. Daangaa gaaffii guyyaa kee fayyadama, xiinxala miti.",
+  "watchAlertAll": "Akeekkachiisa sochii guddaa guyyaa",
+  "watchAlertAllHint": "Akeekkachiisa gatii aksiyoona tarree kana keessa jiru hundaaf: guyyaa tokkotti hammana yoo ol ykn gadi socho'e ni beeksisa. Kanneen duraan qaban kan isaanii ni eeggatu.",
+  "watchAlertAllDone": "{count, plural, =1{Akeekkachiisni 1 qindaa'eera} other{Akeekkachiisni {count} qindaa'aniiru}}"
 }

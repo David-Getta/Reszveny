@@ -2314,4 +2314,22 @@ class AppLocalizationsKa extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'AI-ის განმარტება მხოლოდ სათაურისა და შეჯამების საფუძველზე. არ წარმოადგენს საინვესტიციო რჩევას. იყენებს თქვენს დღიურ კითხვების ლიმიტს და არა ანალიზს.';
+
+  @override
+  String get watchAlertAll => 'გაფრთხილება დიდ დღიურ ცვლილებაზე';
+
+  @override
+  String get watchAlertAllHint =>
+      'ფასის გაფრთხილება ამ სიის ყველა აქციისთვის: ამოქმედდება, როცა ერთ დღეში ამდენით შეიცვლება, ზემოთ ან ქვემოთ. აქციები, რომლებსაც უკვე აქვთ, თავისას შეინარჩუნებენ.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'დაყენდა $count გაფრთხილება',
+      one: 'დაყენდა 1 გაფრთხილება',
+    );
+    return '$_temp0';
+  }
 }

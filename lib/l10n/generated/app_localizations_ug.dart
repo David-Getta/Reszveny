@@ -2316,4 +2316,22 @@ class AppLocalizationsUg extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'پەقەت ماۋزۇ ۋە قىسقىچە مەزمۇنغا ئاساسلانغان AI چۈشەندۈرۈشى. مەبلەغ سېلىش تەۋسىيەسى ئەمەس. كۈندىلىك سوئال چېكىڭىزدىن سەرپ بولىدۇ، تەھلىل ئەمەس.';
+
+  @override
+  String get watchAlertAll => 'چوڭ كۈنلۈك ئۆزگىرىشكە ئاگاھلاندۇرۇش';
+
+  @override
+  String get watchAlertAllHint =>
+      'بۇ تىزىملىكتىكى ھەر بىر پاي چېكىگە باھا ئاگاھلاندۇرۇشى: بىر كۈندە مۇشۇنچىلىك ئۆرلىسە ياكى چۈشسە خەۋەر قىلىدۇ. ئاللىقاچان ئاگاھلاندۇرۇشى بار پاي چەكلىرى ئۆزىنىڭكىنى ساقلايدۇ.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ئاگاھلاندۇرۇش تەڭشەلدى',
+      one: '1 ئاگاھلاندۇرۇش تەڭشەلدى',
+    );
+    return '$_temp0';
+  }
 }

@@ -2324,4 +2324,22 @@ class AppLocalizationsXh extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Ingcaciso ye-AI esekelwe kuphela kwisihloko nesishwankathelo saso. Ayilocebiso lotyalo-mali. Sisebenzisa umda wakho wemibuzo wemihla ngemihla, hayi uhlalutyo.';
+
+  @override
+  String get watchAlertAll => 'Isilumkiso sentshukumo enkulu yosuku';
+
+  @override
+  String get watchAlertAllHint =>
+      'Isilumkiso sexabiso kwisabelo ngasinye kolu luhlu: siya kukhala xa sishukuma kangaka ngosuku olunye, siye phezulu okanye ezantsi. Ezo sele zinaso zigcina esazo.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kusetwe izilumkiso ezi-$count',
+      one: 'Kusetwe isilumkiso esinye',
+    );
+    return '$_temp0';
+  }
 }

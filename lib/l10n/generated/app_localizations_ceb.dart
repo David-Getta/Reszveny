@@ -2323,4 +2323,22 @@ class AppLocalizationsCeb extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Pagpatin-aw sa AI base lamang sa ulohan ug sa katingbanan. Dili kini tambag sa pagpamuhunan. Mogamit kini sa imong adlaw-adlaw nga limitasyon sa pangutana, dili sa pagtuki.';
+
+  @override
+  String get watchAlertAll => 'Alerto sa dagkong lihok sa adlaw';
+
+  @override
+  String get watchAlertAllHint =>
+      'Usa ka alerto sa presyo para sa matag stock niining lista nga mopatingog kon molihok kini ingon niini kadako sulod sa usa ka adlaw, pataas o paubos. Ang mga stock nga duna nay alerto magpabilin sa ilang kaugalingon.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Na-set ang $count ka alerto',
+      one: 'Na-set ang 1 ka alerto',
+    );
+    return '$_temp0';
+  }
 }

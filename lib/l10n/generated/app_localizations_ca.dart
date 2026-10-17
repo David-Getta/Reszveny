@@ -2323,4 +2323,22 @@ class AppLocalizationsCa extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Explicació d’IA basada només en el titular i el resum. No constitueix assessorament d’inversió. Fa servir el teu límit diari de preguntes, no una anàlisi.';
+
+  @override
+  String get watchAlertAll => 'Alerta de grans moviments diaris';
+
+  @override
+  String get watchAlertAllHint =>
+      'Una alerta de preu per a cada acció d’aquesta llista que salta quan es mou tant en un dia, amunt o avall. Les accions que ja en tenen una la conserven.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'S’han definit $count alertes',
+      one: 'S’ha definit 1 alerta',
+    );
+    return '$_temp0';
+  }
 }

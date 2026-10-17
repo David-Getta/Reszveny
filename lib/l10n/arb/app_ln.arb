@@ -619,5 +619,8 @@
   "earningsResultMiss": "{symbol} ekoki te EPS oyo ezelamaki",
   "earningsResultBody": "EPS oyo eyebisami {actual}, ezelamaki {estimate}",
   "newsExplain": "Yango elakisi nini?",
-  "newsExplainNote": "Ndimbola ya AI oyo esalemi kaka na motó ya nsango mpe mokuse na yango. Ezali toli ya kotia mbɔngɔ te. Esalelaka ndelo ya mituna na yo ya mokolo na mokolo, kasi botaleli te."
+  "newsExplainNote": "Ndimbola ya AI oyo esalemi kaka na motó ya nsango mpe mokuse na yango. Ezali toli ya kotia mbɔngɔ te. Esalelaka ndelo ya mituna na yo ya mokolo na mokolo, kasi botaleli te.",
+  "watchAlertAll": "Likebisi mpo na mbongwana monene ya mokɔlɔ",
+  "watchAlertAllHint": "Likebisi ya ntalo mpo na aksio nyonso na liste oyo: ekobɛta soki eningani boye na mokɔlɔ moko, likoló to na nse. Oyo ezali na likebisi kala ekobatela ya yango.",
+  "watchAlertAllDone": "{count, plural, =1{Likebisi 1 etyami} other{Makebisi {count} etyami}}"
 }

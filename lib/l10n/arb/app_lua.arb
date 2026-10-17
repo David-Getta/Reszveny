@@ -619,5 +619,8 @@
   "earningsResultMiss": "{symbol} kafiki ku EPS idibu batekemene to",
   "earningsResultBody": "EPS idibu bamanyishe {actual}, batekemene {estimate}",
   "newsExplain": "Bualu ebu budi bumvuija tshinyi?",
-  "newsExplainNote": "Diumvuija dia AI didi dishindamine anu pa mutu wa lumu ne bukese buawu. Kadiena mibelu ya kuteka mfranga. Bidi bienzeja mukalu wa nkonko yebe ya dituku dionso, kabiyi dikonkonona."
+  "newsExplainNote": "Diumvuija dia AI didi dishindamine anu pa mutu wa lumu ne bukese buawu. Kadiena mibelu ya kuteka mfranga. Bidi bienzeja mukalu wa nkonko yebe ya dituku dionso, kabiyi dikonkonona.",
+  "watchAlertAll": "Dimanyisha bua dishintuluka dinene dia dituku",
+  "watchAlertAllHint": "Dimanyisha dia mushinga bua tshiabu tshionso tshidi mu liste eu: nedituta padi tshishintuluka nunku mu dituku dimue, kulu anyi panshi. Bidi ne dimanyisha kumpala nebishale nadi.",
+  "watchAlertAllDone": "{count, plural, =1{Dimanyisha 1 diateka} other{Mamanyisha {count} maateka}}"
 }

@@ -2309,4 +2309,22 @@ class AppLocalizationsIg extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Nkọwa AI dabere naanị n\'isiokwu na nchịkọta ya. Ọ bụghị ndụmọdụ itinye ego. Ọ na-eji oke ajụjụ gị kwa ụbọchị, ọ bụghị nyocha.';
+
+  @override
+  String get watchAlertAll => 'Ọkwa maka nnukwu mgbanwe kwa ụbọchị';
+
+  @override
+  String get watchAlertAllHint =>
+      'Ọkwa ọnụahịa maka òkè ọ bụla dị na ndepụta a: ọ ga-ada ma ọ gbanwee otu a n\'otu ụbọchị, elu ma ọ bụ ala. Ndị nwere otu ugbu a ga-edobe nke ha.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Edobere ọkwa $count',
+      one: 'Edobere ọkwa 1',
+    );
+    return '$_temp0';
+  }
 }

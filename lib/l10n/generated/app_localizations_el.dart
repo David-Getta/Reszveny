@@ -2322,4 +2322,22 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Εξήγηση από AI μόνο με βάση τον τίτλο και την περίληψη. Δεν αποτελεί επενδυτική συμβουλή. Χρησιμοποιεί το ημερήσιο όριο ερωτήσεών σας, όχι ανάλυση.';
+
+  @override
+  String get watchAlertAll => 'Ειδοποίηση για μεγάλες ημερήσιες κινήσεις';
+
+  @override
+  String get watchAlertAllHint =>
+      'Μια ειδοποίηση τιμής για κάθε μετοχή αυτής της λίστας, που ενεργοποιείται όταν κινηθεί τόσο μέσα σε μία μέρα, προς τα πάνω ή προς τα κάτω. Όσες μετοχές έχουν ήδη μία, την κρατούν.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ορίστηκαν $count ειδοποιήσεις',
+      one: 'Ορίστηκε 1 ειδοποίηση',
+    );
+    return '$_temp0';
+  }
 }

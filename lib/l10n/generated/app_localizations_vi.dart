@@ -2307,4 +2307,22 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Giải thích do AI tạo, chỉ dựa trên tiêu đề và phần tóm tắt. Không phải là lời khuyên đầu tư. Dùng hạn mức câu hỏi hằng ngày của bạn, không dùng lượt phân tích.';
+
+  @override
+  String get watchAlertAll => 'Cảnh báo biến động mạnh trong ngày';
+
+  @override
+  String get watchAlertAllHint =>
+      'Cảnh báo giá cho mọi cổ phiếu trong danh sách này, sẽ báo khi cổ phiếu biến động chừng này trong một ngày, tăng hoặc giảm. Cổ phiếu nào đã có cảnh báo thì giữ nguyên.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Đã đặt $count cảnh báo',
+      one: 'Đã đặt 1 cảnh báo',
+    );
+    return '$_temp0';
+  }
 }

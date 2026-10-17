@@ -2327,4 +2327,22 @@ class AppLocalizationsHil extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Paathag sang AI base lamang sa ulohan kag sa kalubaran sini. Indi ini laygay sa pag-invest. Ginagamit sini ang imo adlaw-adlaw nga limitasyon sang pamangkot, indi ang pagtuki.';
+
+  @override
+  String get watchAlertAll => 'Alerto sa dalagku nga hulag sa adlaw';
+
+  @override
+  String get watchAlertAllHint =>
+      'Isa ka alerto sa presyo para sa kada stock sa sini nga listahan nga magatunog kon maghulag ini sing amo sini kadako sa isa ka adlaw, pataas ukon panaog. Ang mga stock nga may alerto na magapabilin sang ila.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Gin-set ang $count ka alerto',
+      one: 'Gin-set ang 1 ka alerto',
+    );
+    return '$_temp0';
+  }
 }

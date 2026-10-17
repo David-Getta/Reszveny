@@ -181,6 +181,26 @@ void main() {
     expect(s.preferences.favorites, contains('NVDA'));
     expect(find.text('No stocks in this list yet. Tap the list button next to a stock to add it.'), findsOneWidget);
 
+    // Tömeges riasztás a lista részvényeire (most üres a lista: a Mind nézetben próbáljuk).
+    await tester.tap(find.byKey(const ValueKey('watch-list-*')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('watch-list-menu')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('watch-alert-all')));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byKey(const ValueKey('watch-alert-percent')), '4');
+    await tester.tap(find.byKey(const ValueKey('watch-alert-save')));
+    await tester.pumpAndSettle();
+    expect(s.alerts.active.where((a) => a.kind == AlertKind.move).map((a) => a.symbol).toSet(), {
+      'MSFT',
+      'AAPL',
+      'NVDA',
+    });
+    expect(s.alerts.active.firstWhere((a) => a.kind == AlertKind.move).value, 4);
+    expect(find.text('3 alerts set'), findsOneWidget);
+    await tester.tap(find.byKey(const ValueKey('watch-list-Chips')));
+    await tester.pumpAndSettle();
+
     // Átnevezés és törlés a menüből.
     await tester.tap(find.byKey(const ValueKey('watch-list-menu')));
     await tester.pumpAndSettle();

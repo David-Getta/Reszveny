@@ -2312,4 +2312,22 @@ class AppLocalizationsAs extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'কেৱল শিৰোনাম আৰু সাৰাংশৰ ভিত্তিত AI ব্যাখ্যা। ই বিনিয়োগৰ পৰামৰ্শ নহয়। ই আপোনাৰ দৈনিক প্ৰশ্নৰ সীমাৰ পৰা যায়, কোনো বিশ্লেষণ খৰচ নকৰে।';
+
+  @override
+  String get watchAlertAll => 'দৈনিক ডাঙৰ লৰচৰত সতৰ্কবাণী';
+
+  @override
+  String get watchAlertAllHint =>
+      'এই তালিকাৰ প্ৰতিটো শ্বেয়াৰৰ বাবে দামৰ সতৰ্কবাণী: এদিনত ইমানখিনি ওপৰলৈ বা তললৈ লৰচৰ হ\'লে জনাব। যিবোৰৰ ইতিমধ্যে আছে, সেইবোৰৰ আগৰটোৱেই থাকিব।';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countটা সতৰ্কবাণী ছেট কৰা হ\'ল',
+      one: '1টা সতৰ্কবাণী ছেট কৰা হ\'ল',
+    );
+    return '$_temp0';
+  }
 }

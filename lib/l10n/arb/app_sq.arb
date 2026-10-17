@@ -619,5 +619,8 @@
   "earningsResultMiss": "{symbol} nuk arriti EPS-në e pritur",
   "earningsResultBody": "EPS e raportuar {actual}, e pritur {estimate}",
   "newsExplain": "Çfarë do të thotë kjo?",
-  "newsExplainNote": "Shpjegim nga AI bazuar vetëm në titull dhe përmbledhje. Nuk përbën këshillë investimi. Përdor kufirin tuaj ditor të pyetjeve, jo një analizë."
+  "newsExplainNote": "Shpjegim nga AI bazuar vetëm në titull dhe përmbledhje. Nuk përbën këshillë investimi. Përdor kufirin tuaj ditor të pyetjeve, jo një analizë.",
+  "watchAlertAll": "Sinjalizim për lëvizje të mëdha ditore",
+  "watchAlertAllHint": "Një sinjalizim çmimi për çdo aksion në këtë listë, që aktivizohet kur ai lëviz kaq shumë brenda një dite, lart ose poshtë. Aksionet që kanë tashmë një, e mbajnë të tyrin.",
+  "watchAlertAllDone": "{count, plural, =1{U vendos 1 sinjalizim} other{U vendosën {count} sinjalizime}}"
 }

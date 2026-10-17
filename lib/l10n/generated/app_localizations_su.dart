@@ -2316,4 +2316,22 @@ class AppLocalizationsSu extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Katerangan AI anu ngan dumasar kana judul jeung ringkesanana. Lain naséhat investasi. Nganggo wates patarosan sapopoé anjeun, sanés analisis.';
+
+  @override
+  String get watchAlertAll => 'Pépéling pikeun gerak harian gedé';
+
+  @override
+  String get watchAlertAllHint =>
+      'Pépéling harga pikeun unggal saham dina daptar ieu anu disada nalika saham gerak sakitu dina sapoé, naék atawa turun. Saham anu geus boga pépéling tetep maké nu sorangan.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pépéling dipasang',
+      one: '1 pépéling dipasang',
+    );
+    return '$_temp0';
+  }
 }

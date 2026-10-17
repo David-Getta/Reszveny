@@ -2331,4 +2331,22 @@ class AppLocalizationsIlo extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Panangilawlawag ti AI a naibatay laeng iti paulo ken iti pakabuklanna. Saan a balakad iti panagpuonan. Agusar daytoy iti inaldaw a limitasion dagiti saludsod-mo, saan nga iti panaganalisa.';
+
+  @override
+  String get watchAlertAll => 'Pakdaar iti dadakkel nga inaldaw a garaw';
+
+  @override
+  String get watchAlertAllHint =>
+      'Pakdaar iti presio para iti tunggal stock iti daytoy a listaan nga agtimek no gumaraw iti kastoy kadakkel iti maysa nga aldaw, agpangato wenno agpababa. Dagiti stock nga addaanen iti pakdaar ket agtalinaed ti bukodda.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Naikabil ti $count a pakdaar',
+      one: 'Naikabil ti 1 a pakdaar',
+    );
+    return '$_temp0';
+  }
 }

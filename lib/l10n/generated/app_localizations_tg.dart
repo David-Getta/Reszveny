@@ -2315,4 +2315,22 @@ class AppLocalizationsTg extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Шарҳи AI танҳо дар асоси сарлавҳа ва хулосаи он. Маслиҳати сармоягузорӣ нест. Аз ҳадди саволҳои ҳаррӯзаи шумо сарф мешавад, на таҳлил.';
+
+  @override
+  String get watchAlertAll => 'Огоҳӣ дар бораи тағйироти калони рӯзона';
+
+  @override
+  String get watchAlertAllHint =>
+      'Огоҳии нарх барои ҳар саҳми ин рӯйхат: вақте ки дар як рӯз ин қадар боло ё поён равад, хабар медиҳад. Саҳмҳое, ки аллакай огоҳӣ доранд, онро нигоҳ медоранд.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count огоҳӣ гузошта шуд',
+      one: '1 огоҳӣ гузошта шуд',
+    );
+    return '$_temp0';
+  }
 }

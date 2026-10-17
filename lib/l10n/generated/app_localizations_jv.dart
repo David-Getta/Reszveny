@@ -2315,4 +2315,22 @@ class AppLocalizationsJv extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Panjelasan AI mung adhedhasar judhul lan ringkesané. Dudu saran investasi. Nggunakake watesan pitakon saben dina, dudu analisis.';
+
+  @override
+  String get watchAlertAll => 'Pènget kanggo owah-owahan gedhé saben dina';
+
+  @override
+  String get watchAlertAllHint =>
+      'Pènget rega kanggo saben saham ing dhaptar iki sing muni yèn saham obah semono sajroning sedina, munggah utawa mudhun. Saham sing wis duwé pènget tetep nganggo duwèké.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pènget wis dipasang',
+      one: '1 pènget wis dipasang',
+    );
+    return '$_temp0';
+  }
 }

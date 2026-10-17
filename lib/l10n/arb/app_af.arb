@@ -619,5 +619,8 @@
   "earningsResultMiss": "{symbol} het die verwagte WPA nie gehaal nie",
   "earningsResultBody": "Gerapporteerde WPA {actual}, verwag {estimate}",
   "newsExplain": "Wat beteken dit?",
-  "newsExplainNote": "AI-verduideliking slegs gebaseer op die opskrif en die opsomming. Dit is nie beleggingsadvies nie. Dit gebruik jou daaglikse vraagtoelae, nie ’n ontleding nie."
+  "newsExplainNote": "AI-verduideliking slegs gebaseer op die opskrif en die opsomming. Dit is nie beleggingsadvies nie. Dit gebruik jou daaglikse vraagtoelae, nie ’n ontleding nie.",
+  "watchAlertAll": "Alarm by groot daaglikse bewegings",
+  "watchAlertAllHint": "'n Prysalarm vir elke aandeel in hierdie lys wat afgaan wanneer dit soveel in een dag beweeg, op of af. Aandele wat reeds een het, behou dit.",
+  "watchAlertAllDone": "{count, plural, =1{1 alarm gestel} other{{count} alarms gestel}}"
 }

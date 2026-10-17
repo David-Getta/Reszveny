@@ -2323,4 +2323,22 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'தலைப்பு மற்றும் சுருக்கத்தை மட்டுமே அடிப்படையாகக் கொண்ட AI விளக்கம். இது முதலீட்டு ஆலோசனை அல்ல. இது உங்கள் தினசரி கேள்வி வரம்பிலிருந்து செலவாகும், பகுப்பாய்வு எதுவும் செலவாகாது.';
+
+  @override
+  String get watchAlertAll => 'பெரிய தினசரி மாற்றத்துக்கு எச்சரிக்கை';
+
+  @override
+  String get watchAlertAllHint =>
+      'இந்தப் பட்டியலில் உள்ள ஒவ்வொரு பங்கிற்கும் விலை எச்சரிக்கை: ஒரே நாளில் இவ்வளவு மேலே அல்லது கீழே மாறினால் தெரிவிக்கும். ஏற்கெனவே எச்சரிக்கை உள்ள பங்குகளுக்கு அவற்றுடையதே இருக்கும்.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count எச்சரிக்கைகள் அமைக்கப்பட்டன',
+      one: '1 எச்சரிக்கை அமைக்கப்பட்டது',
+    );
+    return '$_temp0';
+  }
 }

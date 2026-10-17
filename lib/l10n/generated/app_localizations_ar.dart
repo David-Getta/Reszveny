@@ -2363,4 +2363,25 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'شرح بالذكاء الاصطناعي يستند فقط إلى العنوان والملخص. لا يُعدّ نصيحة استثمارية. يُحتسب من حدّ الأسئلة اليومي ولا يستهلك تحليلًا.';
+
+  @override
+  String get watchAlertAll => 'تنبيه عند التحركات اليومية الكبيرة';
+
+  @override
+  String get watchAlertAllHint =>
+      'تنبيه سعري لكل سهم في هذه القائمة ينطلق عندما يتحرك بهذا القدر خلال يوم واحد، صعودًا أو هبوطًا. الأسهم التي لديها تنبيه بالفعل تحتفظ به.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'تم ضبط $count تنبيه',
+      many: 'تم ضبط $count تنبيهًا',
+      few: 'تم ضبط $count تنبيهات',
+      two: 'تم ضبط تنبيهين',
+      one: 'تم ضبط تنبيه واحد',
+    );
+    return '$_temp0';
+  }
 }

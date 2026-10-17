@@ -2310,4 +2310,22 @@ class AppLocalizationsFa extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'توضیح هوش مصنوعی فقط بر اساس تیتر و خلاصهٔ آن. توصیه سرمایه‌گذاری نیست. از سهمیهٔ روزانهٔ پرسش‌های شما کم می‌شود، نه از تحلیل‌ها.';
+
+  @override
+  String get watchAlertAll => 'هشدار برای نوسان‌های بزرگ روزانه';
+
+  @override
+  String get watchAlertAllHint =>
+      'هشدار قیمت برای همهٔ سهم‌های این فهرست: وقتی در یک روز این‌قدر بالا یا پایین برود، خبر می‌دهد. سهم‌هایی که از قبل هشدار دارند، همان را نگه می‌دارند.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count هشدار تنظیم شد',
+      one: '1 هشدار تنظیم شد',
+    );
+    return '$_temp0';
+  }
 }

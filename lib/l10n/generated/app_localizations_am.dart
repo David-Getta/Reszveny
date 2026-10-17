@@ -2281,4 +2281,22 @@ class AppLocalizationsAm extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'በርዕሱና በማጠቃለያው ላይ ብቻ የተመሠረተ የAI ማብራሪያ። የኢንቨስትመንት ምክር አይደለም። ከዕለታዊ የጥያቄ ገደብዎ ይቆጠራል እንጂ ትንተና አይጠቀምም።';
+
+  @override
+  String get watchAlertAll => 'ለትልቅ የዕለት ለውጥ ማንቂያ';
+
+  @override
+  String get watchAlertAllHint =>
+      'በዚህ ዝርዝር ውስጥ ላለ እያንዳንዱ አክሲዮን የዋጋ ማንቂያ፦ በአንድ ቀን ይህን ያህል ወደ ላይም ሆነ ወደ ታች ሲለዋወጥ ያሳውቃል። አስቀድሞ ማንቂያ ያላቸው አክሲዮኖች የነበራቸውን ይይዛሉ።';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ማንቂያዎች ተቀናብረዋል',
+      one: '1 ማንቂያ ተቀናብሯል',
+    );
+    return '$_temp0';
+  }
 }

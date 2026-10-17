@@ -619,5 +619,8 @@
   "earningsResultMiss": "Wala makaabot ang {symbol} sa gipaabot nga EPS",
   "earningsResultBody": "Gi-report nga EPS {actual}, gipaabot {estimate}",
   "newsExplain": "Unsa ang buot ipasabot niini?",
-  "newsExplainNote": "Pagpatin-aw sa AI base lamang sa ulohan ug sa katingbanan. Dili kini tambag sa pagpamuhunan. Mogamit kini sa imong adlaw-adlaw nga limitasyon sa pangutana, dili sa pagtuki."
+  "newsExplainNote": "Pagpatin-aw sa AI base lamang sa ulohan ug sa katingbanan. Dili kini tambag sa pagpamuhunan. Mogamit kini sa imong adlaw-adlaw nga limitasyon sa pangutana, dili sa pagtuki.",
+  "watchAlertAll": "Alerto sa dagkong lihok sa adlaw",
+  "watchAlertAllHint": "Usa ka alerto sa presyo para sa matag stock niining lista nga mopatingog kon molihok kini ingon niini kadako sulod sa usa ka adlaw, pataas o paubos. Ang mga stock nga duna nay alerto magpabilin sa ilang kaugalingon.",
+  "watchAlertAllDone": "{count, plural, =1{Na-set ang 1 ka alerto} other{Na-set ang {count} ka alerto}}"
 }

@@ -2322,4 +2322,22 @@ class AppLocalizationsZu extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Incazelo ye-AI esekelwe kuphela esihlokweni nasesifinyezweni saso. Akuyona iseluleko sokutshala imali. Sisebenzisa umkhawulo wakho wemibuzo wansuku zonke, hhayi ukuhlaziya.';
+
+  @override
+  String get watchAlertAll => 'Isexwayiso sokunyakaza okukhulu kosuku';
+
+  @override
+  String get watchAlertAllHint =>
+      'Isexwayiso senani kusitoko ngasinye kulolu hlu: sizokhala uma sinyakaza kangaka ngosuku olulodwa, phezulu noma phansi. Lezo esezinaso zigcina esazo.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kusethwe izexwayiso ezingu-$count',
+      one: 'Kusethwe isexwayiso esisodwa',
+    );
+    return '$_temp0';
+  }
 }

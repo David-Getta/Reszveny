@@ -2353,4 +2353,23 @@ class AppLocalizationsLv extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Mākslīgā intelekta skaidrojums, kas balstīts tikai uz virsrakstu un kopsavilkumu. Tā nav ieguldījumu konsultācija. Izmanto jūsu dienas jautājumu limitu, nevis analīzi.';
+
+  @override
+  String get watchAlertAll => 'Brīdinājums par lielām dienas izmaiņām';
+
+  @override
+  String get watchAlertAllHint =>
+      'Cenas brīdinājums katrai šī saraksta akcijai: tas nostrādās, kad dienas laikā tā mainīsies tik daudz – uz augšu vai uz leju. Akcijas, kurām tāds jau ir, to saglabā.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Iestatīti $count brīdinājumi',
+      one: 'Iestatīts $count brīdinājums',
+      zero: 'Iestatīti $count brīdinājumi',
+    );
+    return '$_temp0';
+  }
 }

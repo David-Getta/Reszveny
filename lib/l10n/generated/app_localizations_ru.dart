@@ -2377,4 +2377,24 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Объяснение от ИИ только на основе заголовка и краткого содержания. Не является инвестиционной рекомендацией. Расходуется дневной лимит вопросов, а не анализ.';
+
+  @override
+  String get watchAlertAll => 'Оповещение о сильных движениях за день';
+
+  @override
+  String get watchAlertAllHint =>
+      'Ценовое оповещение для каждой акции в этом списке: сработает, когда она за день изменится на столько вверх или вниз. Акции, у которых оно уже есть, сохранят своё.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Установлено $count оповещения',
+      many: 'Установлено $count оповещений',
+      few: 'Установлено $count оповещения',
+      one: 'Установлено $count оповещение',
+    );
+    return '$_temp0';
+  }
 }

@@ -2314,4 +2314,22 @@ class AppLocalizationsKi extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Ũtaarĩria wa AI ũrĩa ũrĩ igũrũ rĩa kĩongo na ũhoro mũkuhĩ tu. Ti ũtaaro wa investment. Ĩhũthagĩra mũhaka wa ciũria ciaku cia o mũthenya, ti ũthuthuria.';
+
+  @override
+  String get watchAlertAll => 'Mũmenyithia wa ũgarũrũku mũnene wa mũthenya';
+
+  @override
+  String get watchAlertAllHint =>
+      'Mũmenyithia wa thogora kwa o mũgabo ũrĩa ũrĩ orodha-inĩ ĩno: ũkũhũũra rĩrĩa ũgarũrũka ũũ mũthenya ũmwe, igũrũ kana thĩ. Ũrĩa ũrĩ na ũmwe kũrĩa mbere ũgũtigwo naguo.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Mĩmenyithia $count nĩ yahandwo',
+      one: 'Mũmenyithia 1 nĩ wahandwo',
+    );
+    return '$_temp0';
+  }
 }

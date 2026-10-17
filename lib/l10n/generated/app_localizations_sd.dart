@@ -2305,4 +2305,22 @@ class AppLocalizationsSd extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'صرف سرخي ۽ خلاصي تي ٻڌل AI وضاحت. اها سيڙپڪاري جو مشورو ناهي. اهو توهان جي روزاني سوالن جي حد مان ويندو آهي، ڪو تجزيو خرچ نٿو ٿئي.';
+
+  @override
+  String get watchAlertAll => 'وڏي روزاني لاهه چاڙهه تي الرٽ';
+
+  @override
+  String get watchAlertAllHint =>
+      'هن فهرست جي هر شيئر لاءِ قيمت الرٽ: جڏهن هڪ ڏينهن ۾ ايترو مٿي يا هيٺ ٿئي ته ٻڌائيندو. جن شيئرن تي اڳ ۾ ئي الرٽ آهي، انهن جو اهو ئي رهندو.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count الرٽ مقرر ڪيا ويا',
+      one: '1 الرٽ مقرر ڪيو ويو',
+    );
+    return '$_temp0';
+  }
 }

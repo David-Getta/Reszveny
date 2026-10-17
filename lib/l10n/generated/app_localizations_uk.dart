@@ -2378,4 +2378,24 @@ class AppLocalizationsUk extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Пояснення від ШІ лише на основі заголовка та короткого змісту. Не є інвестиційною порадою. Витрачається денний ліміт запитань, а не аналіз.';
+
+  @override
+  String get watchAlertAll => 'Сповіщення про великі зміни за день';
+
+  @override
+  String get watchAlertAllHint =>
+      'Цінове сповіщення для кожної акції в цьому списку: спрацює, коли за день вона зміниться на стільки вгору чи вниз. Акції, які вже мають таке, зберігають своє.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Встановлено $count сповіщення',
+      many: 'Встановлено $count сповіщень',
+      few: 'Встановлено $count сповіщення',
+      one: 'Встановлено $count сповіщення',
+    );
+    return '$_temp0';
+  }
 }

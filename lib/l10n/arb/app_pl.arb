@@ -619,5 +619,8 @@
   "earningsResultMiss": "{symbol} poniżej oczekiwanego EPS",
   "earningsResultBody": "Raportowany EPS {actual}, oczekiwany {estimate}",
   "newsExplain": "Co to oznacza?",
-  "newsExplainNote": "Wyjaśnienie AI oparte wyłącznie na nagłówku i streszczeniu. Nie stanowi porady inwestycyjnej. Korzysta z dziennego limitu pytań, nie zużywa analizy."
+  "newsExplainNote": "Wyjaśnienie AI oparte wyłącznie na nagłówku i streszczeniu. Nie stanowi porady inwestycyjnej. Korzysta z dziennego limitu pytań, nie zużywa analizy.",
+  "watchAlertAll": "Alert przy dużych ruchach dziennych",
+  "watchAlertAllHint": "Alert cenowy dla każdej spółki z tej listy, który zadziała, gdy w ciągu dnia zmieni się ona o tyle w górę lub w dół. Spółki, które już mają taki alert, zachowują swój.",
+  "watchAlertAllDone": "{count, plural, one{Ustawiono {count} alert} few{Ustawiono {count} alerty} many{Ustawiono {count} alertów} other{Ustawiono {count} alertu}}"
 }

@@ -2307,4 +2307,22 @@ class AppLocalizationsMai extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'मात्र शीर्षक आ सारांश पर आधारित AI व्याख्या। ई निवेशक सलाह नहि अछि। ई अहाँक दैनिक प्रश्न-सीमासँ जाइत अछि, कोनो विश्लेषण खर्च नहि होइत अछि।';
+
+  @override
+  String get watchAlertAll => 'पैघ दैनिक उतार-चढ़ाव पर अलर्ट';
+
+  @override
+  String get watchAlertAllHint =>
+      'एहि सूचीक प्रत्येक शेयर लेल दामक अलर्ट: एक दिनमे एतेक ऊपर वा नीचाँ हेबा पर सूचित करत। जाहि शेयर पर पहिनहि सँ अलर्ट अछि, ओकर ओहिना रहत।';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count अलर्ट लगाओल गेल',
+      one: '1 अलर्ट लगाओल गेल',
+    );
+    return '$_temp0';
+  }
 }

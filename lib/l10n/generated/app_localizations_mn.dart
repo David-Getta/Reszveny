@@ -2314,4 +2314,22 @@ class AppLocalizationsMn extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Зөвхөн гарчиг болон хураангуйд үндэслэсэн AI-ийн тайлбар. Хөрөнгө оруулалтын зөвлөгөө биш. Өдрийн асуултын хязгаараас тань зарцуулна, шинжилгээ биш.';
+
+  @override
+  String get watchAlertAll => 'Өдрийн их хөдөлгөөний сэрэмжлүүлэг';
+
+  @override
+  String get watchAlertAllHint =>
+      'Энэ жагсаалтын хувьцаа бүрт үнийн сэрэмжлүүлэг: нэг өдөрт ийм хэмжээгээр өсөх эсвэл буурахад мэдэгдэнэ. Аль хэдийн сэрэмжлүүлэгтэй хувьцаанууд өөрийнхөө хэвээр үлдэнэ.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count сэрэмжлүүлэг тохирууллаа',
+      one: '1 сэрэмжлүүлэг тохирууллаа',
+    );
+    return '$_temp0';
+  }
 }

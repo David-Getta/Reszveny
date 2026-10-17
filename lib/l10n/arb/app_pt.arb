@@ -619,5 +619,8 @@
   "earningsResultMiss": "{symbol} fica abaixo do LPA esperado",
   "earningsResultBody": "LPA divulgado {actual}, esperado {estimate}",
   "newsExplain": "O que isto significa?",
-  "newsExplainNote": "Explicação de IA baseada apenas no título e no resumo. Não constitui aconselhamento de investimento. Usa o seu limite diário de perguntas, não uma análise."
+  "newsExplainNote": "Explicação de IA baseada apenas no título e no resumo. Não constitui aconselhamento de investimento. Usa o seu limite diário de perguntas, não uma análise.",
+  "watchAlertAll": "Alerta de grandes variações diárias",
+  "watchAlertAllHint": "Um alerta de preço para cada ação desta lista, que dispara quando ela se mexe tanto num dia, para cima ou para baixo. As ações que já têm um mantêm o seu.",
+  "watchAlertAllDone": "{count, plural, =1{1 alerta definido} other{{count} alertas definidos}}"
 }

@@ -2308,4 +2308,22 @@ class AppLocalizationsFf extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Firo AI tuugiiɗo e tiitoonde e coftal mayre tan. Wonaa wasiya e investisman. Ina huutoroo keerol naamne maa ñalnde kala, wonaa ƴeewndo.';
+
+  @override
+  String get watchAlertAll => 'Jeertinol e waylooji mawɗi ñalnde';
+
+  @override
+  String get watchAlertAllHint =>
+      'Jeertinol coggu ngam kala aksiyoŋ e ndee doggol: ina haala so waylii ko ɗuum fof e ñalnde wootere, dow walla les. Ɗe njogiiɗe jeertinol gila adii ndeen ndesay e mum en.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Jeertine $count teeltaama',
+      one: 'Jeertinol 1 teeltaama',
+    );
+    return '$_temp0';
+  }
 }

@@ -2319,4 +2319,22 @@ class AppLocalizationsSn extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Tsananguro yeAI yakavakirwa pamusoro wenhau nepfupiso yayo chete. Haisi zano rekuisa mari. Inoshandisa muganhu wako wemibvunzo wezuva nezuva, kwete ongororo.';
+
+  @override
+  String get watchAlertAll => 'Yambiro pakuchinja kukuru kwezuva';
+
+  @override
+  String get watchAlertAllHint =>
+      'Yambiro remutengo kune yega yega share iri pane rondedzero iyi: richarira kana ichinja zvakadai muzuva rimwe, kumusoro kana pasi. Idzo dzatova neimwe dzicharamba nedzadzo.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Yambiro $count dzaiswa',
+      one: 'Yambiro 1 raiswa',
+    );
+    return '$_temp0';
+  }
 }

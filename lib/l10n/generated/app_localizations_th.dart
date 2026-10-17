@@ -2285,4 +2285,21 @@ class AppLocalizationsTh extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'คำอธิบายจาก AI โดยอิงจากพาดหัวและสรุปข่าวเท่านั้น ไม่ใช่คำแนะนำในการลงทุน ใช้โควตาคำถามรายวันของคุณ ไม่ใช้สิทธิ์การวิเคราะห์';
+
+  @override
+  String get watchAlertAll => 'แจ้งเตือนเมื่อเคลื่อนไหวแรงรายวัน';
+
+  @override
+  String get watchAlertAllHint =>
+      'การแจ้งเตือนราคาสำหรับหุ้นทุกตัวในรายการนี้ ซึ่งจะดังเมื่อหุ้นเคลื่อนไหวเท่านี้ภายในวันเดียว ทั้งขึ้นหรือลง หุ้นที่มีอยู่แล้วจะคงของเดิมไว้';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ตั้งการแจ้งเตือน $count รายการแล้ว',
+    );
+    return '$_temp0';
+  }
 }

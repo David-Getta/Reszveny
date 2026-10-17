@@ -2376,4 +2376,24 @@ class AppLocalizationsSl extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Razlaga umetne inteligence samo na podlagi naslova in povzetka. Ni naložbeni nasvet. Porabi vašo dnevno omejitev vprašanj, ne analize.';
+
+  @override
+  String get watchAlertAll => 'Opozorilo ob velikih dnevnih premikih';
+
+  @override
+  String get watchAlertAllHint =>
+      'Cenovno opozorilo za vsako delnico na tem seznamu, ki se sproži, ko se v enem dnevu premakne za toliko, navzgor ali navzdol. Delnice, ki ga že imajo, obdržijo svojega.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nastavljenih je $count opozoril',
+      few: 'Nastavljena so $count opozorila',
+      two: 'Nastavljeni sta $count opozorili',
+      one: 'Nastavljeno je $count opozorilo',
+    );
+    return '$_temp0';
+  }
 }

@@ -2320,4 +2320,22 @@ class AppLocalizationsNy extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Kufotokozera kwa AI kozikidwa pamutu wa nkhani ndi chidule chake chokha. Si malangizo okhudza kuyika ndalama. Chimagwiritsa ntchito malire a mafunso anu a tsiku ndi tsiku, osati kusanthula.';
+
+  @override
+  String get watchAlertAll => 'Chenjezo pa kusintha kwakukulu kwa tsiku';
+
+  @override
+  String get watchAlertAllHint =>
+      'Chenjezo la mtengo pa gawo lililonse la mndandandawu: lidzalira likasintha chonchi tsiku limodzi, mmwamba kapena pansi. Omwe ali nalo kale adzasunga lawo.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Machenjezo $count akhazikitsidwa',
+      one: 'Chenjezo 1 lakhazikitsidwa',
+    );
+    return '$_temp0';
+  }
 }

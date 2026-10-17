@@ -2324,4 +2324,22 @@ class AppLocalizationsLg extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Ennyinnyonnyola ya AI eyesigamiziddwa ku mutwe gw\'amawulire n\'okufunza kwago kwokka. Si magezi ga kusiga nsimbi. Kikozesa kkomo ly’ebibuuzo byo erya buli lunaku, so si kwekenneenya.';
+
+  @override
+  String get watchAlertAll => 'Okulabula ku nkyukakyuka ennene ez\'olunaku';
+
+  @override
+  String get watchAlertAllHint =>
+      'Okulabula ku bbeeyi eri buli mugabo ku lukalala luno: kujja kuvuga bwe gukyuka bwe kutyo mu lunaku lumu, waggulu oba wansi. Egyo egirina okulabula edda gijja kusigaza kwagyo.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Okulabula $count kuteekeddwawo',
+      one: 'Okulabula 1 kuteekeddwawo',
+    );
+    return '$_temp0';
+  }
 }

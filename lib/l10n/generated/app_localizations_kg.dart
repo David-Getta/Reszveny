@@ -2321,4 +2321,22 @@ class AppLocalizationsKg extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Ntendula ya AI yina me simbama kaka na ntu ya nsangu ti nsuka na yo. Yo ke malongi ya kutula mbongo ve. Yo ke sadilaka ndilu ya biuvu na nge ya konso kilumbu, ve nsosa.';
+
+  @override
+  String get watchAlertAll => 'Lukebisu sambu na nsoba ya nene ya kilumbu';
+
+  @override
+  String get watchAlertAllHint =>
+      'Lukebisu ya ntalu sambu na konso aksio na lisiti yai: yo ta bula ntangu yo ke soba mutindu yai na kilumbu kimosi, na zulu to na nsi. Yina ke ti lukebisu dezia ta bumba ya yo.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Bukebisu $count me tulama',
+      one: 'Lukebisu 1 me tulama',
+    );
+    return '$_temp0';
+  }
 }

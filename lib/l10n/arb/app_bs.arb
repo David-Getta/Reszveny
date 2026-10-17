@@ -619,5 +619,8 @@
   "earningsResultMiss": "{symbol} nije dostigao očekivani EPS",
   "earningsResultBody": "Objavljeni EPS {actual}, očekivani {estimate}",
   "newsExplain": "Šta ovo znači?",
-  "newsExplainNote": "Objašnjenje umjetne inteligencije samo na osnovu naslova i sažetka. Nije investicijski savjet. Troši vaše dnevno ograničenje pitanja, ne analizu."
+  "newsExplainNote": "Objašnjenje umjetne inteligencije samo na osnovu naslova i sažetka. Nije investicijski savjet. Troši vaše dnevno ograničenje pitanja, ne analizu.",
+  "watchAlertAll": "Upozorenje na velike dnevne promjene",
+  "watchAlertAllHint": "Cjenovno upozorenje za svaku dionicu na ovoj listi koje se oglasi kada se ona u jednom danu pomjeri ovoliko, gore ili dolje. Dionice koje ga već imaju zadržavaju svoje.",
+  "watchAlertAllDone": "{count, plural, one{Postavljeno je {count} upozorenje} few{Postavljena su {count} upozorenja} other{Postavljeno je {count} upozorenja}}"
 }

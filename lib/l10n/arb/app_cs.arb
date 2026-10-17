@@ -619,5 +619,8 @@
   "earningsResultMiss": "{symbol} nedosáhl očekávaného EPS",
   "earningsResultBody": "Vykázané EPS {actual}, očekávané {estimate}",
   "newsExplain": "Co to znamená?",
-  "newsExplainNote": "Vysvětlení od AI jen na základě titulku a shrnutí. Není investičním doporučením. Čerpá z vašeho denního limitu otázek, nespotřebuje analýzu."
+  "newsExplainNote": "Vysvětlení od AI jen na základě titulku a shrnutí. Není investičním doporučením. Čerpá z vašeho denního limitu otázek, nespotřebuje analýzu.",
+  "watchAlertAll": "Upozornění na velké denní pohyby",
+  "watchAlertAllHint": "Cenové upozornění pro každou akcii v tomto seznamu, které se ozve, když se za den pohne o tolik nahoru nebo dolů. Akcie, které už nějaké mají, si ho ponechají.",
+  "watchAlertAllDone": "{count, plural, =1{Nastaveno 1 upozornění} few{Nastavena {count} upozornění} many{Nastaveno {count} upozornění} other{Nastaveno {count} upozornění}}"
 }

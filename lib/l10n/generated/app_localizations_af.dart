@@ -2317,4 +2317,22 @@ class AppLocalizationsAf extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'AI-verduideliking slegs gebaseer op die opskrif en die opsomming. Dit is nie beleggingsadvies nie. Dit gebruik jou daaglikse vraagtoelae, nie ’n ontleding nie.';
+
+  @override
+  String get watchAlertAll => 'Alarm by groot daaglikse bewegings';
+
+  @override
+  String get watchAlertAllHint =>
+      '\'n Prysalarm vir elke aandeel in hierdie lys wat afgaan wanneer dit soveel in een dag beweeg, op of af. Aandele wat reeds een het, behou dit.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count alarms gestel',
+      one: '1 alarm gestel',
+    );
+    return '$_temp0';
+  }
 }

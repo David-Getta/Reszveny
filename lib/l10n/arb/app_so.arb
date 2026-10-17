@@ -619,5 +619,8 @@
   "earningsResultMiss": "{symbol} ma gaarin EPS la filayo",
   "earningsResultBody": "EPS la sheegay {actual}, la filayo {estimate}",
   "newsExplain": "Muxuu kan ka dhigan yahay?",
-  "newsExplainNote": "Sharaxaad AI oo ku salaysan oo keliya cinwaanka iyo soo koobidda. Ma aha talo maalgashi. Waxay isticmaashaa xadka su’aalahaaga maalinlaha ah, ma aha falanqayn."
+  "newsExplainNote": "Sharaxaad AI oo ku salaysan oo keliya cinwaanka iyo soo koobidda. Ma aha talo maalgashi. Waxay isticmaashaa xadka su’aalahaaga maalinlaha ah, ma aha falanqayn.",
+  "watchAlertAll": "Digniin isbeddelka weyn ee maalinlaha",
+  "watchAlertAllHint": "Digniin qiimo oo loogu talagalay saami kasta oo liiskan ku jira: way ku ogeysiinaysaa marka uu maalin gudaheed intan isu beddelo, kor ama hoos. Kuwa horeba mid u leh way sii haysanayaan kooda.",
+  "watchAlertAllDone": "{count, plural, =1{1 digniin ayaa la dejiyay} other{{count} digniin ayaa la dejiyay}}"
 }

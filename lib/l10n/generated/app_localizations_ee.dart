@@ -2317,4 +2317,22 @@ class AppLocalizationsEe extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'AI ƒe ɖeɖe me si nɔ te ɖe tanya kple eƒe kpuie ko dzi. Menye aɖaŋuɖoɖo le gadede nu ŋu o. Etsɔna tso wò gbesiagbe nyabiasewo ƒe seɖoƒe me, mezãa dzodzro aɖeke o.';
+
+  @override
+  String get watchAlertAll => 'Nuxlɔ̃ame ɖe ŋkeke ɖeka ƒe tɔtrɔ gãwo ŋu';
+
+  @override
+  String get watchAlertAllHint =>
+      'Asixɔxɔ ŋuti nuxlɔ̃ame na nu ɖesiaɖe le xexlẽdzesi sia me: ne etrɔ alesia le ŋkeke ɖeka me, dzi alo anyi, ekema awɔ dɔ. Esiwo si nuxlɔ̃ame le xoxo la alé wo tɔ ɖe asi.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Woɖo nuxlɔ̃ame $count',
+      one: 'Woɖo nuxlɔ̃ame 1',
+    );
+    return '$_temp0';
+  }
 }

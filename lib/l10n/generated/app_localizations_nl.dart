@@ -2318,4 +2318,22 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'AI-uitleg die alleen gebaseerd is op de kop en de samenvatting. Dit is geen beleggingsadvies. Gebruikt je dagelijkse vragentegoed, geen analyse.';
+
+  @override
+  String get watchAlertAll => 'Melding bij grote dagbewegingen';
+
+  @override
+  String get watchAlertAllHint =>
+      'Een koersmelding voor elk aandeel in deze lijst die afgaat wanneer het op één dag zoveel beweegt, omhoog of omlaag. Aandelen die er al een hebben, houden die.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count meldingen ingesteld',
+      one: '1 melding ingesteld',
+    );
+    return '$_temp0';
+  }
 }

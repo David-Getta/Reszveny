@@ -619,5 +619,8 @@
   "earningsResultMiss": "{symbol} tetuuse ku EPS esuubirwa",
   "earningsResultBody": "EPS eyalangiriddwa {actual}, esuubirwa {estimate}",
   "newsExplain": "Kino kitegeeza ki?",
-  "newsExplainNote": "Ennyinnyonnyola ya AI eyesigamiziddwa ku mutwe gw'amawulire n'okufunza kwago kwokka. Si magezi ga kusiga nsimbi. Kikozesa kkomo ly’ebibuuzo byo erya buli lunaku, so si kwekenneenya."
+  "newsExplainNote": "Ennyinnyonnyola ya AI eyesigamiziddwa ku mutwe gw'amawulire n'okufunza kwago kwokka. Si magezi ga kusiga nsimbi. Kikozesa kkomo ly’ebibuuzo byo erya buli lunaku, so si kwekenneenya.",
+  "watchAlertAll": "Okulabula ku nkyukakyuka ennene ez'olunaku",
+  "watchAlertAllHint": "Okulabula ku bbeeyi eri buli mugabo ku lukalala luno: kujja kuvuga bwe gukyuka bwe kutyo mu lunaku lumu, waggulu oba wansi. Egyo egirina okulabula edda gijja kusigaza kwagyo.",
+  "watchAlertAllDone": "{count, plural, =1{Okulabula 1 kuteekeddwawo} other{Okulabula {count} kuteekeddwawo}}"
 }

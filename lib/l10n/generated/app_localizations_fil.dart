@@ -2320,4 +2320,22 @@ class AppLocalizationsFil extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Paliwanag ng AI batay lamang sa headline at buod nito. Hindi ito payo sa pamumuhunan. Gumagamit ito ng iyong pang-araw-araw na limitasyon sa tanong, hindi ng pagsusuri.';
+
+  @override
+  String get watchAlertAll => 'Alerto sa malalaking galaw sa araw';
+
+  @override
+  String get watchAlertAllHint =>
+      'Isang alerto sa presyo para sa bawat stock sa listahang ito na tutunog kapag gumalaw ito nang ganito kalaki sa isang araw, pataas man o pababa. Mananatili ang alerto ng mga stock na mayroon na nito.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Na-set ang $count alerto',
+      one: 'Na-set ang 1 alerto',
+    );
+    return '$_temp0';
+  }
 }

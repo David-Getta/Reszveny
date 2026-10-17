@@ -2315,4 +2315,22 @@ class AppLocalizationsKu extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Ravekirina AI tenê li ser bingeha sernivîs û kurteyê. Ne şîreta veberhênanê ye. Ji sînorê pirsên te yê rojane tê birîn, ne analîzek.';
+
+  @override
+  String get watchAlertAll => 'Hişyarî ji bo guherînên mezin ên rojane';
+
+  @override
+  String get watchAlertAllHint =>
+      'Hişyariya bihayê ji bo her pişkeke vê lîsteyê: dema ku di rojekê de ev qas bilind an nizm bibe, agahdar dike. Pişkên ku berê yek wan heye, ya xwe diparêzin.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hişyarî hatin danîn',
+      one: '1 hişyarî hat danîn',
+    );
+    return '$_temp0';
+  }
 }

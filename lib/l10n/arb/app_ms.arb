@@ -619,5 +619,8 @@
   "earningsResultMiss": "{symbol} gagal mencapai EPS dijangka",
   "earningsResultBody": "EPS dilaporkan {actual}, dijangka {estimate}",
   "newsExplain": "Apakah maksudnya?",
-  "newsExplainNote": "Penjelasan AI berdasarkan tajuk dan ringkasannya sahaja. Bukan nasihat pelaburan. Menggunakan had soalan harian anda, bukan analisis."
+  "newsExplainNote": "Penjelasan AI berdasarkan tajuk dan ringkasannya sahaja. Bukan nasihat pelaburan. Menggunakan had soalan harian anda, bukan analisis.",
+  "watchAlertAll": "Amaran pergerakan harian besar",
+  "watchAlertAllHint": "Amaran harga untuk setiap saham dalam senarai ini yang berbunyi apabila saham bergerak sebanyak ini dalam sehari, naik atau turun. Saham yang sudah ada amaran mengekalkan amaran sendiri.",
+  "watchAlertAllDone": "{count, plural, =1{1 amaran ditetapkan} other{{count} amaran ditetapkan}}"
 }

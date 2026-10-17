@@ -2320,4 +2320,22 @@ class AppLocalizationsKn extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'ಶೀರ್ಷಿಕೆ ಮತ್ತು ಸಾರಾಂಶವನ್ನು ಮಾತ್ರ ಆಧರಿಸಿದ AI ವಿವರಣೆ. ಇದು ಹೂಡಿಕೆ ಸಲಹೆಯಲ್ಲ. ಇದು ನಿಮ್ಮ ದೈನಂದಿನ ಪ್ರಶ್ನೆ ಮಿತಿಯನ್ನು ಬಳಸುತ್ತದೆ, ವಿಶ್ಲೇಷಣೆಯನ್ನಲ್ಲ.';
+
+  @override
+  String get watchAlertAll => 'ದೊಡ್ಡ ದೈನಂದಿನ ಏರಿಳಿತಕ್ಕೆ ಎಚ್ಚರಿಕೆ';
+
+  @override
+  String get watchAlertAllHint =>
+      'ಈ ಪಟ್ಟಿಯಲ್ಲಿರುವ ಪ್ರತಿಯೊಂದು ಷೇರಿಗೂ ಬೆಲೆ ಎಚ್ಚರಿಕೆ: ಒಂದು ದಿನದಲ್ಲಿ ಇಷ್ಟು ಏರಿದರೆ ಅಥವಾ ಇಳಿದರೆ ತಿಳಿಸುತ್ತದೆ. ಈಗಾಗಲೇ ಎಚ್ಚರಿಕೆ ಇರುವ ಷೇರುಗಳಿಗೆ ಅವುಗಳದ್ದೇ ಉಳಿಯುತ್ತದೆ.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ಎಚ್ಚರಿಕೆಗಳನ್ನು ಹೊಂದಿಸಲಾಗಿದೆ',
+      one: '1 ಎಚ್ಚರಿಕೆ ಹೊಂದಿಸಲಾಗಿದೆ',
+    );
+    return '$_temp0';
+  }
 }

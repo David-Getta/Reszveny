@@ -2320,4 +2320,22 @@ class AppLocalizationsSq extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Shpjegim nga AI bazuar vetëm në titull dhe përmbledhje. Nuk përbën këshillë investimi. Përdor kufirin tuaj ditor të pyetjeve, jo një analizë.';
+
+  @override
+  String get watchAlertAll => 'Sinjalizim për lëvizje të mëdha ditore';
+
+  @override
+  String get watchAlertAllHint =>
+      'Një sinjalizim çmimi për çdo aksion në këtë listë, që aktivizohet kur ai lëviz kaq shumë brenda një dite, lart ose poshtë. Aksionet që kanë tashmë një, e mbajnë të tyrin.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'U vendosën $count sinjalizime',
+      one: 'U vendos 1 sinjalizim',
+    );
+    return '$_temp0';
+  }
 }

@@ -619,5 +619,8 @@
   "earningsResultMiss": "{symbol} blijft onder de verwachte EPS",
   "earningsResultBody": "Gerapporteerde EPS {actual}, verwacht {estimate}",
   "newsExplain": "Wat betekent dit?",
-  "newsExplainNote": "AI-uitleg die alleen gebaseerd is op de kop en de samenvatting. Dit is geen beleggingsadvies. Gebruikt je dagelijkse vragentegoed, geen analyse."
+  "newsExplainNote": "AI-uitleg die alleen gebaseerd is op de kop en de samenvatting. Dit is geen beleggingsadvies. Gebruikt je dagelijkse vragentegoed, geen analyse.",
+  "watchAlertAll": "Melding bij grote dagbewegingen",
+  "watchAlertAllHint": "Een koersmelding voor elk aandeel in deze lijst die afgaat wanneer het op één dag zoveel beweegt, omhoog of omlaag. Aandelen die er al een hebben, houden die.",
+  "watchAlertAllDone": "{count, plural, =1{1 melding ingesteld} other{{count} meldingen ingesteld}}"
 }

@@ -2333,4 +2333,22 @@ class AppLocalizationsMk extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Објаснување од AI само врз основа на насловот и резимето. Не претставува инвестициски совет. Го користи вашиот дневен лимит на прашања, не анализа.';
+
+  @override
+  String get watchAlertAll => 'Известување за големи дневни движења';
+
+  @override
+  String get watchAlertAllHint =>
+      'Ценовно известување за секоја акција на оваа листа што се активира кога таа ќе се помести толку во еден ден, нагоре или надолу. Акциите што веќе имаат такво го задржуваат своето.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Поставени се $count известувања',
+      one: 'Поставено е $count известување',
+    );
+    return '$_temp0';
+  }
 }

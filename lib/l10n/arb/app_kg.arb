@@ -619,5 +619,8 @@
   "earningsResultMiss": "{symbol} me kuma ve na EPS ya bo ke vingila",
   "earningsResultBody": "EPS ya bo me pesa {actual}, ya bo ke vingila {estimate}",
   "newsExplain": "Yai ke tendula nki?",
-  "newsExplainNote": "Ntendula ya AI yina me simbama kaka na ntu ya nsangu ti nsuka na yo. Yo ke malongi ya kutula mbongo ve. Yo ke sadilaka ndilu ya biuvu na nge ya konso kilumbu, ve nsosa."
+  "newsExplainNote": "Ntendula ya AI yina me simbama kaka na ntu ya nsangu ti nsuka na yo. Yo ke malongi ya kutula mbongo ve. Yo ke sadilaka ndilu ya biuvu na nge ya konso kilumbu, ve nsosa.",
+  "watchAlertAll": "Lukebisu sambu na nsoba ya nene ya kilumbu",
+  "watchAlertAllHint": "Lukebisu ya ntalu sambu na konso aksio na lisiti yai: yo ta bula ntangu yo ke soba mutindu yai na kilumbu kimosi, na zulu to na nsi. Yina ke ti lukebisu dezia ta bumba ya yo.",
+  "watchAlertAllDone": "{count, plural, =1{Lukebisu 1 me tulama} other{Bukebisu {count} me tulama}}"
 }

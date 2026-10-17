@@ -2312,4 +2312,22 @@ class AppLocalizationsHt extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Eksplikasyon AI ki baze sèlman sou tit la ak rezime a. Se pa yon konsèy envestisman. Li itilize limit kesyon ou pou chak jou, pa yon analiz.';
+
+  @override
+  String get watchAlertAll => 'Alèt pou gwo mouvman pa jou';
+
+  @override
+  String get watchAlertAllHint =>
+      'Yon alèt pri pou chak aksyon nan lis sa a ki sonnen lè li bouje konsa nan yon jounen, monte oswa desann. Aksyon ki gen youn deja ap kenbe pa yo.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nou mete $count alèt',
+      one: 'Nou mete 1 alèt',
+    );
+    return '$_temp0';
+  }
 }

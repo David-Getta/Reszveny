@@ -2313,4 +2313,22 @@ class AppLocalizationsTk extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Diňe sözbaşy we gysgaça mazmuna esaslanýan AI düşündirişi. Maýa goýum maslahaty däldir. Gündelik sorag çägiňizden harçlanýar, seljerme däl.';
+
+  @override
+  String get watchAlertAll => 'Uly gündelik üýtgeýişler barada duýduryş';
+
+  @override
+  String get watchAlertAllHint =>
+      'Bu sanawdaky her bir paýnama üçin baha duýduryşy: bir günde şunça ýokary ýa-da aşak üýtgese, habar berer. Eýýäm duýduryşy bolan paýnamalar özüninkini saklar.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count duýduryş goýuldy',
+      one: '1 duýduryş goýuldy',
+    );
+    return '$_temp0';
+  }
 }

@@ -2375,4 +2375,24 @@ class AppLocalizationsLt extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'DI paaiškinimas, pagrįstas tik antrašte ir santrauka. Tai nėra investavimo rekomendacija. Naudoja jūsų dienos klausimų limitą, o ne analizę.';
+
+  @override
+  String get watchAlertAll => 'Įspėjimas apie didelius dienos pokyčius';
+
+  @override
+  String get watchAlertAllHint =>
+      'Kainos įspėjimas kiekvienai šio sąrašo akcijai: suveiks, kai per dieną ji pajudės tiek aukštyn arba žemyn. Akcijos, kurios jau turi tokį, pasilieka savąjį.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nustatyta $count įspėjimų',
+      many: 'Nustatyta $count įspėjimo',
+      few: 'Nustatyti $count įspėjimai',
+      one: 'Nustatytas $count įspėjimas',
+    );
+    return '$_temp0';
+  }
 }

@@ -2203,6 +2203,24 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get newsExplainNote => '仅根据标题和摘要生成的 AI 解读。不构成投资建议。占用每日提问次数，不消耗分析次数。';
+
+  @override
+  String get watchAlertAll => '单日大幅波动提醒';
+
+  @override
+  String get watchAlertAllHint =>
+      '为此列表中的每只股票设置价格提醒：单日上涨或下跌达到该幅度时提醒你。已设有此类提醒的股票将保留原有提醒。';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '已设置 $count 个提醒',
+      one: '已设置 1 个提醒',
+    );
+    return '$_temp0';
+  }
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -4402,4 +4420,22 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get newsExplainNote => '僅根據標題及摘要產生的 AI 解讀。並不構成投資建議。佔用每日提問次數，不消耗分析次數。';
+
+  @override
+  String get watchAlertAll => '單日大幅波動提醒';
+
+  @override
+  String get watchAlertAllHint =>
+      '為此清單中的每隻股票設定價格提醒：單日上升或下跌達此幅度時通知你。已設有此類提醒的股票會保留原有提醒。';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '已設定 $count 個提醒',
+      one: '已設定 1 個提醒',
+    );
+    return '$_temp0';
+  }
 }

@@ -2314,4 +2314,22 @@ class AppLocalizationsCkb extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'ڕوونکردنەوەی AI تەنها لەسەر بنەمای سەردێڕ و کورتەکە. ئامۆژگاریی وەبەرهێنان نییە. لە سنووری پرسیارە ڕۆژانەکانت دەبرێت، شیکاری بەکارناهێنێت.';
+
+  @override
+  String get watchAlertAll => 'ئاگادارکردنەوە بۆ جووڵەی گەورەی ڕۆژانە';
+
+  @override
+  String get watchAlertAllHint =>
+      'ئاگادارکردنەوەی نرخ بۆ هەموو پشکێکی ئەم لیستە: کاتێک لە ڕۆژێکدا ئەوەندە بەرز یان نزم دەبێتەوە ئاگادارت دەکاتەوە. ئەو پشکانەی پێشتر یەکێکیان هەیە، هەر ئەوە دەمێنێتەوە.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ئاگادارکردنەوە دانران',
+      one: '1 ئاگادارکردنەوە دانرا',
+    );
+    return '$_temp0';
+  }
 }

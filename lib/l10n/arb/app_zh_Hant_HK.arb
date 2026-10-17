@@ -619,5 +619,8 @@
   "earningsResultMiss": "{symbol} 每股盈利遜預期",
   "earningsResultBody": "實際每股盈利 {actual}，預期 {estimate}",
   "newsExplain": "這代表甚麼？",
-  "newsExplainNote": "僅根據標題及摘要產生的 AI 解讀。並不構成投資建議。佔用每日提問次數，不消耗分析次數。"
+  "newsExplainNote": "僅根據標題及摘要產生的 AI 解讀。並不構成投資建議。佔用每日提問次數，不消耗分析次數。",
+  "watchAlertAll": "單日大幅波動提醒",
+  "watchAlertAllHint": "為此清單中的每隻股票設定價格提醒：單日上升或下跌達此幅度時通知你。已設有此類提醒的股票會保留原有提醒。",
+  "watchAlertAllDone": "{count, plural, =1{已設定 1 個提醒} other{已設定 {count} 個提醒}}"
 }

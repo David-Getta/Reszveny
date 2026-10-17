@@ -2305,4 +2305,22 @@ class AppLocalizationsPs extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'یوازې د سرلیک او لنډیز پر بنسټ د AI تشریح. د پانګونې مشوره نه ده. ستاسو د ورځنیو پوښتنو له حد څخه کمېږي، شننه نه لګوي.';
+
+  @override
+  String get watchAlertAll => 'د لویو ورځنیو بدلونونو خبرتیا';
+
+  @override
+  String get watchAlertAllHint =>
+      'د دې لېست هرې ونډې لپاره د بیې خبرتیا: کله چې په یوه ورځ کې دومره پورته یا ښکته شي، خبر درکوي. هغه ونډې چې دمخه یې لري، خپله ساتي.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count خبرتیاوې وټاکل شوې',
+      one: '1 خبرتیا وټاکل شوه',
+    );
+    return '$_temp0';
+  }
 }

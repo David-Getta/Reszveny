@@ -2314,4 +2314,22 @@ class AppLocalizationsNb extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'AI-forklaring basert kun på overskriften og sammendraget. Det er ikke investeringsråd. Bruker av den daglige spørsmålskvoten din, ikke en analyse.';
+
+  @override
+  String get watchAlertAll => 'Varsel ved store daglige bevegelser';
+
+  @override
+  String get watchAlertAllHint =>
+      'Et kursvarsel for hver aksje i denne listen som slår til når den beveger seg så mye på én dag, opp eller ned. Aksjer som allerede har et, beholder sitt.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count varsler opprettet',
+      one: '1 varsel opprettet',
+    );
+    return '$_temp0';
+  }
 }

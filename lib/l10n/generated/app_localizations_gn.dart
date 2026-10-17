@@ -2319,4 +2319,22 @@ class AppLocalizationsGn extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'AI omyesakãva, titulo ha ñemombyky rupive añoite. Ndahaʼéi ñemoñeʼẽ inversión rehegua. Oipuru ne porandu papapy ára ha ára guarã, ndaha’éi jehesa’ỹijo.';
+
+  @override
+  String get watchAlertAll => 'Momarandu ára ñemonguʼe tuichávape';
+
+  @override
+  String get watchAlertAllHint =>
+      'Hepykue momarandu opavave acción ko listapegua: omomarandúta oñemonguʼérõ kóicha peteĩ árape, yvate térã yvy gotyo. Oguerekóva peteĩ ymaite oñongatu imbaʼe.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Oñemohenda $count momarandu',
+      one: 'Oñemohenda 1 momarandu',
+    );
+    return '$_temp0';
+  }
 }

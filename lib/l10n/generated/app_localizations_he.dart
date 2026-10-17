@@ -2306,4 +2306,22 @@ class AppLocalizationsHe extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'הסבר של AI על סמך הכותרת והתקציר בלבד. אינו מהווה ייעוץ השקעות. נספר במכסת השאלות היומית שלך, לא כניתוח.';
+
+  @override
+  String get watchAlertAll => 'התראה על תנודות יומיות חדות';
+
+  @override
+  String get watchAlertAllHint =>
+      'התראת מחיר לכל מניה ברשימה הזו, שמופעלת כשהיא זזה כך ביום אחד, למעלה או למטה. מניות שכבר יש להן התראה כזו שומרות עליה.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'הוגדרו $count התראות',
+      one: 'הוגדרה התראה אחת',
+    );
+    return '$_temp0';
+  }
 }

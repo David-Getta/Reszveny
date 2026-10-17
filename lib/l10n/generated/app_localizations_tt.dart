@@ -2311,4 +2311,22 @@ class AppLocalizationsTt extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Баш исем һәм кыскача эчтәлеккә генә нигезләнгән AI аңлатмасы. Инвестиция киңәше түгел. Көндәлек сораулар чигегездән тотыла, анализ түгел.';
+
+  @override
+  String get watchAlertAll => 'Зур көнлек үзгәрешләр турында кисәтү';
+
+  @override
+  String get watchAlertAllHint =>
+      'Бу исемлектәге һәр акциягә бәя кисәтүе: бер көндә шулкадәр өскә яки аска үзгәрсә, хәбәр итә. Кисәтүе инде булган акцияләр үзенекен саклый.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count кисәтү куелды',
+      one: '1 кисәтү куелды',
+    );
+    return '$_temp0';
+  }
 }

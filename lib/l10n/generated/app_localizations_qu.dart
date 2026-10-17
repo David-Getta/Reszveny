@@ -2327,4 +2327,22 @@ class AppLocalizationsQu extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'AI sut’ichay, umalliqllapi pisichasqanpi ima sayasqa. Manan qullqi churanapaq yuyaychaychu. Sapa p’unchay tapukuy limitiykita apaykachan, manan t’aqwiytachu.';
+
+  @override
+  String get watchAlertAll => 'Hatun p\'unchaw kuyuypaq willay';
+
+  @override
+  String get watchAlertAllHint =>
+      'Kay listapi sapa acciónpaq chaninpa willaynin: huk p\'unchawpi kayhinata kuyuptin, wichayman utaq uraykuman, willasunki. Ñas willayniyuq kaqkuna paykunapata waqaychanqaku.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count willay churasqa',
+      one: '1 willay churasqa',
+    );
+    return '$_temp0';
+  }
 }

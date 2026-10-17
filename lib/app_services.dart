@@ -118,6 +118,7 @@ class AppServices {
       language: () =>
           SupportedLocales.languageFor(locale.effective(WidgetsBinding.instance.platformDispatcher.locale)).englishName,
       title: () => _l10n().$1.briefTitle,
+      onMade: () => this.telemetry.track('morning_brief'),
     );
     earningsReminder = EarningsReminder(
       events: events,

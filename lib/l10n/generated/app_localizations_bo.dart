@@ -2303,4 +2303,21 @@ class AppLocalizationsBo extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'འགོ་བརྗོད་དང་བསྡུས་དོན་ཁོ་ན་ལ་གཞིགས་པའི་ AI འགྲེལ་བཤད། མ་འཇོག་གི་བསམ་འཆར་མིན། ཉིན་རེའི་དྲི་བའི་ཚད་ནས་འགྲོ་བ་ཡིན་ལ་དབྱེ་ཞིབ་མི་བེད་སྤྱོད།';
+
+  @override
+  String get watchAlertAll => 'ཉིན་རེའི་འགྱུར་བ་ཆེན་པོར་ཉེན་བརྡ།';
+
+  @override
+  String get watchAlertAllHint =>
+      'ཐོ་ཡིག་འདིའི་ནང་གི་མ་འཛུགས་རེ་རེར་རིན་གོང་གི་ཉེན་བརྡ། ཉིན་གཅིག་ལ་གོང་དུ་འམ་འོག་ཏུ་ཚད་འདི་ཙམ་འགྱུར་ན་བརྡ་གཏོང་། སྔར་ནས་ཉེན་བརྡ་ཡོད་པ་རྣམས་དེ་བཞིན་སྡོད།';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ཉེན་བརྡ་ $count བཀོད་ཟིན།',
+    );
+    return '$_temp0';
+  }
 }

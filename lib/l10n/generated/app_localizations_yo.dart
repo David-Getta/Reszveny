@@ -2312,4 +2312,22 @@ class AppLocalizationsYo extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Àlàyé AI tí ó dá lórí àkọlé àti àkópọ̀ rẹ̀ nìkan. Kì í ṣe ìmọ̀ràn ìdókòwò. Ó ń lo ìwọ̀n ìbéèrè ojoojúmọ́ rẹ, kì í ṣe ìtúpalẹ̀.';
+
+  @override
+  String get watchAlertAll => 'Ìkìlọ̀ fún ìyípadà ńlá ojoojúmọ́';
+
+  @override
+  String get watchAlertAllHint =>
+      'Ìkìlọ̀ iye owó fún gbogbo ìpín inú àkójọ yìí tí yóò dún nígbà tí ó bá yí padà tó báyìí ní ọjọ́ kan, sókè tàbí sísàlẹ̀. Àwọn tí ó ti ní ọ̀kan tẹ́lẹ̀ yóò pa tiwọn mọ́.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'A ti ṣètò ìkìlọ̀ $count',
+      one: 'A ti ṣètò ìkìlọ̀ 1',
+    );
+    return '$_temp0';
+  }
 }

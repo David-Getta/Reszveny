@@ -2309,4 +2309,22 @@ class AppLocalizationsGu extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'ફક્ત હેડલાઇન અને સારાંશ પર આધારિત AI સમજૂતી. તે રોકાણ સલાહ નથી. તે તમારી દૈનિક પ્રશ્ન મર્યાદામાંથી જાય છે, કોઈ વિશ્લેષણ વપરાતું નથી.';
+
+  @override
+  String get watchAlertAll => 'મોટી દૈનિક વધઘટ પર ચેતવણી';
+
+  @override
+  String get watchAlertAllHint =>
+      'આ યાદીના દરેક શેર માટે ભાવ ચેતવણી: એક દિવસમાં આટલી ઉપર કે નીચે વધઘટ થાય ત્યારે જાણ કરશે. જેના પર પહેલેથી ચેતવણી છે, તે એમ જ રહેશે.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ચેતવણીઓ સેટ કરી',
+      one: '1 ચેતવણી સેટ કરી',
+    );
+    return '$_temp0';
+  }
 }

@@ -2321,4 +2321,22 @@ class AppLocalizationsLua extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Diumvuija dia AI didi dishindamine anu pa mutu wa lumu ne bukese buawu. Kadiena mibelu ya kuteka mfranga. Bidi bienzeja mukalu wa nkonko yebe ya dituku dionso, kabiyi dikonkonona.';
+
+  @override
+  String get watchAlertAll => 'Dimanyisha bua dishintuluka dinene dia dituku';
+
+  @override
+  String get watchAlertAllHint =>
+      'Dimanyisha dia mushinga bua tshiabu tshionso tshidi mu liste eu: nedituta padi tshishintuluka nunku mu dituku dimue, kulu anyi panshi. Bidi ne dimanyisha kumpala nebishale nadi.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Mamanyisha $count maateka',
+      one: 'Dimanyisha 1 diateka',
+    );
+    return '$_temp0';
+  }
 }

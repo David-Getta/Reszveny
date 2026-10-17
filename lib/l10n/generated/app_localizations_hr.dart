@@ -2355,4 +2355,23 @@ class AppLocalizationsHr extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Objašnjenje umjetne inteligencije samo na temelju naslova i sažetka. Nije investicijski savjet. Troši vaše dnevno ograničenje pitanja, ne analizu.';
+
+  @override
+  String get watchAlertAll => 'Upozorenje na velike dnevne promjene';
+
+  @override
+  String get watchAlertAllHint =>
+      'Cjenovno upozorenje za svaku dionicu na ovom popisu koje se oglasi kada se ona u jednom danu pomakne ovoliko, gore ili dolje. Dionice koje ga već imaju zadržavaju svoje.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Postavljeno je $count upozorenja',
+      few: 'Postavljena su $count upozorenja',
+      one: 'Postavljeno je $count upozorenje',
+    );
+    return '$_temp0';
+  }
 }

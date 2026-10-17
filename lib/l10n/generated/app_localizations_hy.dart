@@ -2321,4 +2321,22 @@ class AppLocalizationsHy extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'AI-ի բացատրություն՝ հիմնված միայն վերնագրի և ամփոփման վրա։ Ներդրումային խորհուրդ չէ։ Օգտագործում է ձեր օրական հարցերի սահմանաչափը, ոչ թե վերլուծություն։';
+
+  @override
+  String get watchAlertAll => 'Ծանուցում օրական մեծ փոփոխությունների դեպքում';
+
+  @override
+  String get watchAlertAllHint =>
+      'Գնային ծանուցում այս ցուցակի յուրաքանչյուր բաժնետոմսի համար. այն կաշխատի, երբ մեկ օրում այսքան փոխվի՝ վեր կամ վար։ Արդեն ծանուցում ունեցող բաժնետոմսերը կպահպանեն իրենցը։';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Սահմանվեց $count ծանուցում',
+      one: 'Սահմանվեց 1 ծանուցում',
+    );
+    return '$_temp0';
+  }
 }

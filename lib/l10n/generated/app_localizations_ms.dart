@@ -2318,4 +2318,22 @@ class AppLocalizationsMs extends AppLocalizations {
   @override
   String get newsExplainNote =>
       'Penjelasan AI berdasarkan tajuk dan ringkasannya sahaja. Bukan nasihat pelaburan. Menggunakan had soalan harian anda, bukan analisis.';
+
+  @override
+  String get watchAlertAll => 'Amaran pergerakan harian besar';
+
+  @override
+  String get watchAlertAllHint =>
+      'Amaran harga untuk setiap saham dalam senarai ini yang berbunyi apabila saham bergerak sebanyak ini dalam sehari, naik atau turun. Saham yang sudah ada amaran mengekalkan amaran sendiri.';
+
+  @override
+  String watchAlertAllDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count amaran ditetapkan',
+      one: '1 amaran ditetapkan',
+    );
+    return '$_temp0';
+  }
 }
