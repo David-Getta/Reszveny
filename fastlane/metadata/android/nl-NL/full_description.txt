@@ -18,6 +18,8 @@ HOUD HET BIJ
 • Vergelijk tot drie aandelen naast elkaar
 • Cijferhistorie, insidertransacties en analistentrends op elke aandelenpagina
 • Portefeuille: aankopen, rendement, dividend, waardeverloop en valutaomrekening – importeer uit CSV of gewoon vanaf een screenshot van je broker
+• Je jaarrendement (geldgewogen), een portefeuilledoel en de S&P 500 in elke grafiek ter vergelijking
+• Exporteer gerealiseerde winsten voor je belastingaangifte en zet komende cijferdata in je agenda
 • Doelverdeling, met wat je moet kopen of verkopen om weer op koers te komen
 • AI-portefeuillecheck: concentratie, sector- en valutablootstelling, gedeelde risico's
 • Koersalerts en trailing stops – ook per e-mail als de app gesloten is

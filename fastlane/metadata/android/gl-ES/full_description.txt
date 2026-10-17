@@ -18,6 +18,8 @@ TODO BAIXO CONTROL
 • Compara ata tres accións lado a lado
 • Historial de resultados, operacións de insiders e tendencias dos analistas na páxina de cada acción
 • Carteira: compras, ganancias, dividendos, evolución do valor e conversión de moeda – impórtaa desde un CSV ou simplemente desde unha captura de pantalla do teu bróker
+• A túa rendibilidade anual (ponderada por diñeiro), un obxectivo para a carteira e o S&P 500 en calquera gráfico para comparar
+• Exporta as ganancias realizadas para a declaración da renda e engade as datas dos próximos resultados ao teu calendario
 • Asignación obxectivo, co que hai que comprar ou vender para volver a ela
 • Revisión da carteira con IA: concentración, exposición por sector e moeda, riscos comúns
 • Alertas de prezo, tamén stops dinámicos – e por correo electrónico coa app pechada

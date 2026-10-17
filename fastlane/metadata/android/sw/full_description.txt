@@ -18,6 +18,8 @@ FUATILIA KILA KITU
 • Linganisha hadi hisa tatu kando kwa kando
 • Historia ya matokeo, miamala ya watu wa ndani na mwenendo wa wachambuzi kwenye ukurasa wa kila hisa
 • Jalada la hisa: ununuzi, faida, gawio, thamani kwa muda na ubadilishaji wa sarafu – ingiza kutoka CSV au kwa urahisi kutoka picha ya skrini ya dalali wako
+• Faida yako ya mwaka (iliyopimwa kwa fedha), lengo la jalada la hisa, na S&P 500 kwenye chati yoyote kwa ulinganisho
+• Hamisha faida zilizopatikana kwa ajili ya ritani yako ya kodi, na ongeza tarehe za matokeo yajayo kwenye kalenda yako
 • Mgawanyo lengwa, pamoja na nini cha kununua au kuuza ili kurudi kwenye lengo
 • Ukaguzi wa jalada kwa AI: mkusanyiko, kutegemea sekta na sarafu, hatari zinazoshirikiwa
 • Arifa za bei, pamoja na trailing stop – pia kwa barua pepe programu ikiwa imefungwa

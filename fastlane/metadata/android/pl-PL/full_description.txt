@@ -18,6 +18,8 @@ BĄDŹ NA BIEŻĄCO
 • Porównanie do trzech akcji obok siebie
 • Historia wyników, transakcje insiderów i trendy rekomendacji analityków na stronie każdej akcji
 • Portfel: zakupy, zyski, dywidendy, wartość w czasie i przeliczanie walut – import z CSV lub po prostu ze zrzutu ekranu z aplikacji maklerskiej
+• Twoja roczna stopa zwrotu (ważona kapitałem), cel dla portfela i S&P 500 na dowolnym wykresie dla porównania
+• Eksport zrealizowanych zysków do zeznania podatkowego i nadchodzące terminy wyników w Twoim kalendarzu
 • Docelowa alokacja, z podpowiedzią, co kupić lub sprzedać, by do niej wrócić
 • Przegląd portfela przez AI: koncentracja, ekspozycja na sektory i waluty, wspólne ryzyka
 • Alerty cenowe, również z kroczącym stopem – także e-mailem, gdy aplikacja jest zamknięta

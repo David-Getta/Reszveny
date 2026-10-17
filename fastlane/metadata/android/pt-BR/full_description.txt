@@ -18,6 +18,8 @@ ACOMPANHE TUDO
 • Compare até três ações lado a lado
 • Histórico de balanços, negociações de insiders e tendências dos analistas na página de cada ação
 • Carteira: compras, ganhos, dividendos, evolução do patrimônio e conversão de moeda – importe de um CSV ou simplesmente de uma captura de tela da sua corretora
+• Sua rentabilidade anual (ponderada pelo dinheiro), uma meta para a carteira e o S&P 500 em qualquer gráfico para comparação
+• Exporte os ganhos realizados para a sua declaração de Imposto de Renda e adicione as próximas datas de balanço ao seu calendário
 • Alocação-alvo, mostrando o que comprar ou vender para voltar ao alvo
 • Revisão da carteira com IA: concentração, exposição a setores e moedas, riscos em comum
 • Alertas de preço e stop móvel – também por e-mail quando o aplicativo está fechado

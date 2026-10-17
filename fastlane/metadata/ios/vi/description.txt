@@ -18,6 +18,8 @@ THEO DÕI DỄ DÀNG
 • So sánh tối đa ba cổ phiếu cạnh nhau
 • Lịch sử kết quả kinh doanh, giao dịch nội bộ và xu hướng đánh giá của giới phân tích trên trang của mỗi cổ phiếu
 • Danh mục: giao dịch mua, lãi lỗ, cổ tức, giá trị theo thời gian và quy đổi tiền tệ – nhập từ CSV hoặc đơn giản từ ảnh chụp màn hình của công ty môi giới
+• Lợi suất hằng năm của bạn (theo trọng số tiền), mục tiêu cho danh mục và S&P 500 trên bất kỳ biểu đồ nào để so sánh
+• Xuất lãi đã thực hiện để khai thuế, và thêm ngày công bố kết quả sắp tới vào lịch của bạn
 • Tỷ trọng mục tiêu, kèm gợi ý nên mua hoặc bán gì để quay về mục tiêu
 • Đánh giá danh mục bằng AI: mức độ tập trung, tỷ trọng theo ngành và tiền tệ, rủi ro chung
 • Cảnh báo giá và cắt lỗ động (trailing stop) – cả qua email khi ứng dụng đã đóng

@@ -18,6 +18,8 @@ SENTIASA PANTAU
 • Bandingkan sehingga tiga saham sebelah-menyebelah
 • Sejarah keputusan kewangan, urus niaga orang dalam dan trend penganalisis pada setiap halaman saham
 • Portfolio: pembelian, keuntungan, dividen, nilai dari semasa ke semasa dan penukaran mata wang – import daripada CSV atau hanya daripada tangkapan skrin broker anda
+• Pulangan tahunan anda (berwajaran wang), sasaran portfolio dan S&P 500 pada mana-mana carta sebagai perbandingan
+• Eksport keuntungan yang direalisasikan untuk penyata cukai anda, dan tambah tarikh keputusan kewangan akan datang ke kalendar anda
 • Peruntukan sasaran, berserta apa yang perlu dibeli atau dijual untuk kembali ke sasaran
 • Semakan portfolio AI: penumpuan, pendedahan sektor dan mata wang, risiko bersama
 • Amaran harga, termasuk trailing stop – juga melalui e-mel apabila aplikasi ditutup

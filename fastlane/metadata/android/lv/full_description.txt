@@ -18,6 +18,8 @@ SEKOJIET LĪDZI
 • Līdz trim akcijām salīdzinājumā blakus
 • Rezultātu vēsture, iekšējo personu darījumi un analītiķu vērtējumu tendences katras akcijas lapā
 • Portfelis: pirkumi, peļņa, dividendes, vērtības izmaiņas laika gaitā un valūtas konvertēšana – imports no CSV vai vienkārši no jūsu brokera ekrānuzņēmuma
+• Jūsu gada ienesīgums (naudā svērts), portfeļa mērķis un S&P 500 jebkurā grafikā salīdzinājumam
+• Realizētās peļņas eksports nodokļu deklarācijai un gaidāmie rezultātu datumi jūsu kalendārā
 • Mērķa sadalījums un tas, ko pirkt vai pārdot, lai atgrieztos pie mērķa
 • AI portfeļa pārskats: koncentrācija, nozaru un valūtu ekspozīcija, kopīgie riski
 • Cenu brīdinājumi un slīdošie stop rīkojumi – arī e-pastā, kad lietotne ir aizvērta

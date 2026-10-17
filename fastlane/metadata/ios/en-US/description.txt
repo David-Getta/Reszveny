@@ -18,6 +18,8 @@ KEEP TRACK
 • Compare up to three stocks side by side
 • Results history, insider trades and analyst trends on every stock page
 • Portfolio: purchases, gains, dividends, value over time and currency conversion – import from CSV or simply from a screenshot of your broker
+• Your annual return (money-weighted), a portfolio goal, and the S&P 500 on any chart for comparison
+• Export realized gains for your tax return, and add upcoming results dates to your calendar
 • Target allocation, with what to buy or sell to get back on target
 • AI portfolio review: concentration, sector and currency exposure, shared risks
 • Price alerts, trailing stops too – also by e-mail when the app is closed

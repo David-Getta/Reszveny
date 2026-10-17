@@ -18,6 +18,8 @@ VISKAS PO RANKA
 • Iki trijų akcijų palyginimas greta
 • Rezultatų istorija, vidinių asmenų sandoriai ir analitikų vertinimų tendencijos kiekvienos akcijos puslapyje
 • Portfelis: pirkimai, pelnas, dividendai, vertės kitimas ir valiutų konvertavimas – importas iš CSV arba tiesiog iš jūsų brokerio ekrano kopijos
+• Jūsų metinė grąža (pinigais svertinė), portfelio tikslas ir S&P 500 bet kuriame grafike palyginimui
+• Realizuoto pelno eksportas mokesčių deklaracijai ir artėjančios rezultatų datos jūsų kalendoriuje
 • Tikslinis paskirstymas ir ką pirkti ar parduoti, kad grįžtumėte prie tikslo
 • DI portfelio apžvalga: koncentracija, priklausomybė nuo sektorių ir valiutų, bendros rizikos
 • Kainos įspėjimai ir slankieji stop nurodymai – ir el. paštu, kai programėlė uždaryta

@@ -18,6 +18,8 @@ SPREMLJAJTE
 • Primerjava do treh delnic drugo ob drugi
 • Zgodovina rezultatov, posli notranjih oseb in trendi analitikov na strani vsake delnice
 • Portfelj: nakupi, dobički, dividende, vrednost skozi čas in pretvorba valut – uvoz iz CSV ali preprosto iz posnetka zaslona vašega borznega posrednika
+• Vaš letni donos (denarno tehtan), cilj portfelja in S&P 500 na katerem koli grafu za primerjavo
+• Izvoz realiziranih dobičkov za davčno napoved in prihodnji datumi rezultatov v vašem koledarju
 • Ciljna razporeditev in kaj kupiti ali prodati, da se vrnete k cilju
 • Pregled portfelja z AI: koncentracija, izpostavljenost sektorjem in valutam, skupna tveganja
 • Cenovna opozorila in drseči stopi – tudi po e-pošti, ko je aplikacija zaprta

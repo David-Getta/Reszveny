@@ -18,6 +18,8 @@ BLY OP HOOGTE
 • Vergelyk tot drie aandele langs mekaar
 • Resultategeskiedenis, insider-transaksies en ontledertendense op elke aandeelblad
 • Portefeulje: aankope, winste, dividende, waarde oor tyd en valuta-omskakeling – voer in uit CSV of sommer uit ’n skermskoot van jou makelaar
+• Jou jaarlikse opbrengs (geldgeweeg), ’n portefeuljedoelwit, en die S&P 500 op enige grafiek ter vergelyking
+• Voer gerealiseerde winste uit vir jou belastingopgawe, en voeg komende resultatedatums by jou kalender
 • Teikentoewysing, met wat om te koop of te verkoop om weer op koers te kom
 • AI-portefeuljeoorsig: konsentrasie, sektor- en valuta-blootstelling, gedeelde risiko’s
 • Pryswaarskuwings, ook volgstoppe – ook per e-pos wanneer die app toe is

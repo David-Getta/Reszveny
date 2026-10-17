@@ -18,6 +18,8 @@ KÖVESD NYOMON
 • Akár három részvény összehasonlítása egymás mellett
 • Gyorsjelentés-történet, bennfentes ügyletek és az elemzői vélemények alakulása minden részvénynél
 • Portfólió: vételek, hozam, osztalék, értékalakulás és átváltás – importálás CSV-ből vagy egyszerűen a brókered képernyőképéből
+• Éves hozam (pénzsúlyozott), portfólió-cél, és bármelyik grafikonon összevetés az S&P 500-zal
+• A realizált nyereség exportja az adóbevalláshoz, a közelgő gyorsjelentések a naptáradba
 • Célarányok, és hogy mit kell venni vagy eladni, hogy visszaállj rájuk
 • AI-portfólióelemzés: koncentráció, szektor- és devizakitettség, közös kockázatok
 • Árfolyam-riasztások, követő stoppal is – csukott appnál e-mailben is

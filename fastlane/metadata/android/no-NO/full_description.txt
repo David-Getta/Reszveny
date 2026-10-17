@@ -18,6 +18,8 @@ HOLD OVERSIKTEN
 • Sammenlign opptil tre aksjer side om side
 • Resultathistorikk, innsidehandler og analytikertrender på hver aksjeside
 • Portefølje: kjøp, gevinster, utbytte, verdiutvikling og valutaomregning – importer fra CSV eller rett og slett fra et skjermbilde fra megleren din
+• Din årlige avkastning (pengevektet), et porteføljemål og S&P 500 i enhver graf til sammenligning
+• Eksporter realiserte gevinster til skattemeldingen, og legg kommende resultatdatoer inn i kalenderen din
 • Målfordeling, med hva du bør kjøpe eller selge for å komme tilbake til målet
 • AI-gjennomgang av porteføljen: konsentrasjon, sektor- og valutaeksponering, felles risikoer
 • Kursvarsler og glidende stopp – også på e-post når appen er lukket

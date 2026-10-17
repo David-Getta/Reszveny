@@ -18,6 +18,8 @@ Dərinliyi (qısa, standart və ya ətraflı) və səviyyəni (başlanğıc və 
 • Üç səhmə qədər yan-yana müqayisə
 • Hər səhm səhifəsində hesabat tarixçəsi, insayder əməliyyatları və analitik meylləri
 • Portfel: alışlar, gəlir, dividendlər, dəyərin zamanla dəyişməsi və valyuta çevirmə – CSV-dən və ya sadəcə brokerinizin ekran görüntüsündən idxal
+• İllik gəlirliliyiniz (pulla çəkilmiş), portfel hədəfi və müqayisə üçün istənilən qrafikdə S&P 500
+• Vergi bəyannaməniz üçün reallaşdırılmış gəlirin ixracı və qarşıdakı hesabat tarixlərinin təqviminizə əlavə edilməsi
 • Hədəf bölgüsü və hədəfə qayıtmaq üçün nəyi almaq və ya satmaq lazım olduğu
 • AI portfel təhlili: konsentrasiya, sektor və valyuta asılılığı, ortaq risklər
 • Qiymət bildirişləri, izləyən stoplar da – tətbiq bağlı olanda e-poçtla da

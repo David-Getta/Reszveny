@@ -18,6 +18,8 @@ SIGUE TUS ACCIONES
 • Compara hasta tres acciones una junto a otra
 • Historial de resultados, operaciones de insiders y tendencias de los analistas en la página de cada acción
 • Cartera: compras, ganancias, dividendos, evolución del valor y conversión de divisas – impórtala desde un CSV o simplemente desde una captura de pantalla de tu bróker
+• Tu rentabilidad anual (ponderada por dinero), un objetivo para la cartera y el S&P 500 en cualquier gráfico para comparar
+• Exporta las ganancias realizadas para tu declaración de la renta y añade las fechas de los próximos resultados a tu calendario
 • Asignación objetivo, con lo que debes comprar o vender para volver a ella
 • Revisión de la cartera con IA: concentración, exposición a sectores y divisas, riesgos compartidos
 • Alertas de precio, también stops dinámicos – y por correo electrónico con la app cerrada

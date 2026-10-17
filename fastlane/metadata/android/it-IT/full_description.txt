@@ -18,6 +18,8 @@ TIENI TUTTO SOTTO CONTROLLO
 • Confronta fino a tre titoli fianco a fianco
 • Storico delle trimestrali, operazioni degli insider e tendenze degli analisti nella pagina di ogni titolo
 • Portafoglio: acquisti, guadagni, dividendi, andamento del valore e conversione valutaria – importa da CSV o semplicemente da uno screenshot del tuo broker
+• Il tuo rendimento annuo (ponderato per il capitale), un obiettivo per il portafoglio e l'S&P 500 su qualsiasi grafico per confronto
+• Esporta le plusvalenze realizzate per la dichiarazione dei redditi e aggiungi le prossime trimestrali al tuo calendario
 • Allocazione obiettivo, con cosa comprare o vendere per tornare in linea
 • Revisione IA del portafoglio: concentrazione, esposizione per settore e valuta, rischi comuni
 • Avvisi di prezzo, anche trailing stop – anche via e-mail quando l'app è chiusa

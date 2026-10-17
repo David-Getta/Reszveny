@@ -18,6 +18,8 @@ NAZORATDA TUTING
 • Uchtagacha aksiyani yonma-yon solishtirish
 • Har bir aksiya sahifasida hisobotlar tarixi, insayder bitimlari va tahlilchilar fikri dinamikasi
 • Portfel: xaridlar, daromad, dividendlar, vaqt boʻyicha qiymat va valyuta konvertatsiyasi – CSV fayldan yoki shunchaki brokeringiz ekran rasmidan import qiling
+• Yillik daromadliligingiz (pul bilan tortilgan), portfel maqsadi va taqqoslash uchun istalgan grafikda S&P 500
+• Soliq deklaratsiyasi uchun realizatsiya qilingan foydani eksport qiling va yaqinlashayotgan hisobot sanalarini taqvimingizga qoʻshing
 • Maqsadli taqsimot va unga qaytish uchun nimani sotib olish yoki sotish kerakligi
 • Portfelni AI bilan koʻrib chiqish: jamlanish, sohalar va valyutalar ulushi, umumiy xatarlar
 • Narx bildirishnomalari va trailing stoplar – ilova yopiq boʻlsa, e-pochta orqali ham

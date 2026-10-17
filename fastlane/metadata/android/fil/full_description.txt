@@ -18,6 +18,8 @@ SUBAYBAYAN
 • Paghambingin ang hanggang tatlong stock nang magkatabi
 • Kasaysayan ng resulta, insider trades at trend ng mga analyst sa bawat pahina ng stock
 • Portfolio: mga binili, kita, dividend, halaga sa paglipas ng panahon at pagpapalit ng pera – i-import mula sa CSV o mula lang sa screenshot ng iyong broker
+• Ang iyong taunang return (money-weighted), isang target para sa portfolio, at ang S&P 500 sa anumang chart para maikumpara
+• I-export ang mga realized gain para sa iyong tax return, at idagdag sa iyong kalendaryo ang mga paparating na petsa ng resulta
 • Target na alokasyon, kasama kung ano ang bibilhin o ibebenta para bumalik sa target
 • Pagsusuri ng portfolio gamit ang AI: konsentrasyon, exposure sa sektor at currency, magkakaparehong panganib
 • Mga alerto sa presyo, pati trailing stop – pati sa e-mail kahit sarado ang app

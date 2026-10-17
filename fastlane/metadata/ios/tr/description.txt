@@ -18,6 +18,8 @@ TAKİPTE KALIN
 • Üç hisseye kadar yan yana karşılaştırma
 • Her hisse sayfasında bilanço geçmişi, içeriden işlemler ve analist eğilimleri
 • Portföy: alımlar, kazançlar, temettüler, zaman içindeki değer ve döviz çevirisi – CSV'den ya da sadece aracı kurumunuzun ekran görüntüsünden içe aktarın
+• Yıllık getiriniz (para ağırlıklı), bir portföy hedefi ve karşılaştırma için her grafikte S&P 500
+• Vergi beyannameniz için gerçekleşen kazançları dışa aktarın, yaklaşan bilanço tarihlerini takviminize ekleyin
 • Hedef dağılım ve hedefe dönmek için neyi alıp satmanız gerektiği
 • Yapay zekâ ile portföy değerlendirmesi: yoğunlaşma, sektör ve döviz dağılımı, ortak riskler
 • Fiyat alarmları ve iz süren stoplar – uygulama kapalıyken e-postayla da

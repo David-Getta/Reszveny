@@ -18,6 +18,8 @@ PRATITE SVE
 • Usporedba do tri dionice jedne uz drugu
 • Povijest rezultata, transakcije insajdera i trendovi analitičara na stranici svake dionice
 • Portfelj: kupnje, dobici, dividende, kretanje vrijednosti i preračunavanje valuta – uvoz iz CSV-a ili jednostavno iz snimke zaslona vašeg brokera
+• Vaš godišnji prinos (ponderiran novcem), cilj portfelja i S&P 500 na bilo kojem grafikonu za usporedbu
+• Izvoz ostvarenih dobitaka za poreznu prijavu i nadolazeći datumi rezultata u vašem kalendaru
 • Ciljana raspodjela, uz ono što treba kupiti ili prodati da se vratite na cilj
 • AI pregled portfelja: koncentracija, izloženost sektorima i valutama, zajednički rizici
 • Obavijesti o cijeni, uključujući pomične stopove – i e-poštom kad je aplikacija zatvorena

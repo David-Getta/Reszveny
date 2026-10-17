@@ -18,6 +18,8 @@ HÅLL KOLL
 • Jämför upp till tre aktier sida vid sida
 • Rapporthistorik, insiderhandel och analytikertrender på varje akties sida
 • Portfölj: köp, avkastning, utdelningar, värde över tid och valutaomräkning – importera från CSV eller helt enkelt från en skärmbild från din mäklare
+• Din årliga avkastning (penningviktad), ett mål för portföljen och S&P 500 i vilket diagram som helst för jämförelse
+• Exportera realiserade vinster till deklarationen och lägg in kommande rapportdatum i din kalender
 • Målfördelning, med vad du behöver köpa eller sälja för att komma tillbaka till målet
 • AI-genomgång av portföljen: koncentration, sektor- och valutaexponering, gemensamma risker
 • Kurslarm och släpande stopp – även via e-post när appen är stängd

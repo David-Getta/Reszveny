@@ -18,6 +18,8 @@ PANTAU SEMUANYA
 • Bandingkan hingga tiga saham berdampingan
 • Riwayat laporan keuangan, transaksi orang dalam, dan tren rekomendasi analis di setiap halaman saham
 • Portofolio: pembelian, keuntungan, dividen, nilai dari waktu ke waktu, dan konversi mata uang – impor dari CSV atau cukup dari tangkapan layar aplikasi broker Anda
+• Imbal hasil tahunan Anda (berbobot uang), target portofolio, dan S&P 500 di grafik mana pun sebagai pembanding
+• Ekspor keuntungan yang terealisasi untuk SPT pajak Anda, dan tambahkan jadwal laporan keuangan mendatang ke kalender Anda
 • Alokasi target, lengkap dengan apa yang perlu dibeli atau dijual untuk kembali ke target
 • Tinjauan portofolio dengan AI: konsentrasi, eksposur sektor dan mata uang, risiko bersama
 • Peringatan harga dan trailing stop – juga lewat email saat aplikasi ditutup

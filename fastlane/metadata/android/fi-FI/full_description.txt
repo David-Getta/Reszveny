@@ -18,6 +18,8 @@ PYSY AJAN TASALLA
 • Vertaa enintään kolmea osaketta rinnakkain
 • Tuloshistoria, sisäpiirikaupat ja analyytikkotrendit jokaisen osakkeen sivulla
 • Salkku: ostot, tuotot, osingot, arvon kehitys ja valuuttamuunnos – tuonti CSV:stä tai yksinkertaisesti välittäjäsi kuvakaappauksesta
+• Vuosituottosi (rahapainotettu), salkun tavoite ja S&P 500 missä tahansa kaaviossa vertailuun
+• Vie toteutuneet voitot veroilmoitusta varten ja lisää tulevat tulosjulkistuspäivät kalenteriisi
 • Tavoitejakauma ja se, mitä ostaa tai myydä, jotta palaat tavoitteeseen
 • Salkun tekoälykatsaus: keskittyminen, toimiala- ja valuuttariski, yhteiset riskit
 • Kurssihälytykset, myös liukuvat stopit – myös sähköpostilla, kun sovellus on suljettu

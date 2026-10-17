@@ -18,6 +18,8 @@ LANDELELA KONKE
 • Qhathanisa amasheya afika kwamathathu eceleni komunye nomunye
 • Umlando wemiphumela, ukuhweba kwabangaphakathi nokuthambekela kwabahlaziyi ekhasini lesheya ngalinye
 • Iphothifoliyo: ukuthenga, inzuzo, izabelo, inani ngokuhamba kwesikhathi nokuguqulwa kwemali – ngenisa kusuka ku-CSV noma nje esithombeni-skrini somthengisi wakho wamasheya
+• Inzuzo yakho yonyaka (elinganiswe ngemali), umgomo wephothifoliyo, ne-S&P 500 kunoma yiliphi ishadi ukuze uqhathanise
+• Thumela ngaphandle inzuzo osuyitholile ukuze ugcwalise imbuyiselo yentela, futhi wengeze izinsuku zemiphumela ezizayo ekhalendeni lakho
 • Ukwabiwa okuhlosiwe, nokuthi yini okufanele uyithenge noma uyithengise ukuze ubuyele kokuhlosiwe
 • Ukubuyekezwa kwephothifoliyo nge-AI: ukugxila, ukuncika emikhakheni nasezimalini, izingozi ezihlanganyelwe
 • Izexwayiso zentengo, nama-trailing stop – nange-imeyili uma uhlelo luvaliwe

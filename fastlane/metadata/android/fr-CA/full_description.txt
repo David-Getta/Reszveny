@@ -18,6 +18,8 @@ SUIVEZ VOS ACTIONS
 • Comparez jusqu'à trois actions côte à côte
 • Historique des résultats, transactions d'initiés et tendances des analystes sur la page de chaque action
 • Portefeuille : achats, plus-values, dividendes, évolution de la valeur et conversion de devises – import depuis un CSV ou simplement depuis une capture d'écran de votre courtier
+• Votre rendement annuel (pondéré par les capitaux), un objectif de portefeuille et le S&P 500 sur n'importe quel graphique pour comparer
+• Exportez vos plus-values réalisées pour votre déclaration d'impôts et ajoutez les prochaines dates de résultats à votre agenda
 • Allocation cible, avec ce qu'il faut acheter ou vendre pour la retrouver
 • Revue du portefeuille par IA : concentration, exposition sectorielle et aux devises, risques communs
 • Alertes de cours, stops suiveurs compris – aussi par e-mail quand l'application est fermée

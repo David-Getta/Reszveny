@@ -18,6 +18,8 @@ ACOMPANHE TUDO
 • Compare até três ações lado a lado
 • Histórico de resultados, transações de insiders e tendências dos analistas na página de cada ação
 • Carteira: compras, ganhos, dividendos, evolução do valor e conversão de moeda – importe de um CSV ou simplesmente de uma captura de ecrã da sua corretora
+• A sua rendibilidade anual (ponderada pelo dinheiro), um objetivo para a carteira e o S&P 500 em qualquer gráfico para comparação
+• Exporte as mais-valias realizadas para a declaração de IRS e adicione as próximas datas de resultados ao seu calendário
 • Alocação-alvo, com o que comprar ou vender para voltar ao objetivo
 • Revisão da carteira com IA: concentração, exposição a setores e moedas, riscos comuns
 • Alertas de preço e stops móveis – também por e-mail com a aplicação fechada

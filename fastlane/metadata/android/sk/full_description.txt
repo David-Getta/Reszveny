@@ -18,6 +18,8 @@ MAJTE PREHĽAD
 • Porovnanie až troch akcií vedľa seba
 • História výsledkov, obchody insiderov a vývoj odporúčaní analytikov na stránke každej akcie
 • Portfólio: nákupy, zisky, dividendy, vývoj hodnoty a prepočet mien – import z CSV alebo jednoducho zo snímky obrazovky od vášho brokera
+• Vaša ročná výnosnosť (peňažne vážená), cieľ portfólia a S&P 500 v ľubovoľnom grafe na porovnanie
+• Export realizovaných ziskov pre daňové priznanie a nadchádzajúce termíny výsledkov do vášho kalendára
 • Cieľová alokácia a čo kúpiť alebo predať, aby ste sa k nej vrátili
 • AI kontrola portfólia: koncentrácia, expozícia voči sektorom a menám, spoločné riziká
 • Cenové upozornenia aj s posuvným stop-lossom – aj e-mailom, keď je aplikácia zatvorená

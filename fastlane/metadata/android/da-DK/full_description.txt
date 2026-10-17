@@ -18,6 +18,8 @@ HOLD ØJE
 • Sammenlign op til tre aktier side om side
 • Regnskabshistorik, insiderhandler og analytikertendenser på hver akties side
 • Portefølje: køb, gevinster, udbytte, værdiudvikling og valutaomregning – importér fra CSV eller blot fra et skærmbillede fra din mægler
+• Dit årlige afkast (pengevægtet), et mål for porteføljen og S&P 500 på enhver graf til sammenligning
+• Eksportér realiserede gevinster til din selvangivelse, og føj kommende regnskabsdatoer til din kalender
 • Målfordeling, med hvad du skal købe eller sælge for at komme tilbage på sporet
 • AI-gennemgang af porteføljen: koncentration, sektor- og valutaeksponering, fælles risici
 • Kursalarmer, også trailing stops – også på e-mail, når appen er lukket

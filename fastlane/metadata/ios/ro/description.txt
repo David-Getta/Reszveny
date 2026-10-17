@@ -18,6 +18,8 @@ Tu alegi profunzimea (scurtă, standard sau detaliată) și nivelul (începător
 • Compară până la trei acțiuni una lângă alta
 • Istoricul rezultatelor, tranzacțiile insiderilor și tendințele analiștilor pe pagina fiecărei acțiuni
 • Portofoliu: achiziții, câștiguri, dividende, evoluția valorii și conversie valutară – import din CSV sau pur și simplu dintr-o captură de ecran de la brokerul tău
+• Randamentul tău anual (ponderat cu banii), un obiectiv pentru portofoliu și S&P 500 pe orice grafic, pentru comparație
+• Exportă câștigurile realizate pentru declarația fiscală și adaugă în calendar datele următoarelor rezultate financiare
 • Alocare-țintă, cu ce să cumperi sau să vinzi ca să revii la țintă
 • Analiza AI a portofoliului: concentrare, expunere pe sectoare și valute, riscuri comune
 • Alerte de preț, inclusiv trailing stop – și pe e-mail când aplicația e închisă

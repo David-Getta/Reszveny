@@ -18,6 +18,8 @@ IM BLICK BEHALTEN
 • Bis zu drei Aktien nebeneinander vergleichen
 • Historie der Quartalszahlen, Insidergeschäfte und Analystentrends auf jeder Aktienseite
 • Portfolio: Käufe, Gewinne, Dividenden, Wertentwicklung und Währungsumrechnung – Import per CSV oder einfach per Screenshot deines Brokers
+• Deine jährliche Rendite (geldgewichtet), ein Portfolioziel und der S&P 500 in jedem Chart zum Vergleich
+• Realisierte Gewinne für die Steuererklärung exportieren und kommende Termine für Quartalszahlen in deinen Kalender übernehmen
 • Zielaufteilung, mit dem, was du kaufen oder verkaufen musst, um wieder im Ziel zu liegen
 • KI-Portfoliocheck: Konzentration, Sektor- und Währungsrisiko, gemeinsame Risiken
 • Kursalarme, auch Trailing Stops – auch per E-Mail, wenn die App geschlossen ist
