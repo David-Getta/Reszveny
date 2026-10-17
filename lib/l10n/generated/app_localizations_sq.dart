@@ -2478,4 +2478,7 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get alertEdit => 'Ndrysho alarmin';
+
+  @override
+  String get positionOpenLots => 'Ende në zotërim (më të vjetrat së pari)';
 }

@@ -2473,4 +2473,8 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get alertEdit => 'Bildirişi redaktə et';
+
+  @override
+  String get positionOpenLots =>
+      'Hələ də əlinizdə olanlar (əvvəlcə ən köhnələr)';
 }

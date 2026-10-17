@@ -2489,4 +2489,7 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get alertEdit => 'Ovay ny fanairana';
+
+  @override
+  String get positionOpenLots => 'Mbola anananao (ny tranainy indrindra aloha)';
 }

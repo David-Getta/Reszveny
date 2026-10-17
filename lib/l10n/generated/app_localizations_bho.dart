@@ -2467,4 +2467,7 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get alertEdit => 'अलर्ट बदलीं';
+
+  @override
+  String get positionOpenLots => 'अबहिंयो रउआ लगे (सबसे पुरान पहिले)';
 }

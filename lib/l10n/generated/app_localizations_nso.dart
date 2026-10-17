@@ -2487,4 +2487,7 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get alertEdit => 'Lokiša temošo';
+
+  @override
+  String get positionOpenLots => 'Sa le go wena (tša kgale pele)';
 }

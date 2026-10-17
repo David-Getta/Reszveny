@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} ti panggepmo a {amount}",
   "portfolioGoalReached": "Nagun-od ti panggep a {amount}",
   "portfolioGoalRemove": "Ikkaten ti panggep",
-  "alertEdit": "I-edit ti alerto"
+  "alertEdit": "I-edit ti alerto",
+  "positionOpenLots": "Adda pay kenka (kadaanan nga umuna)"
 }

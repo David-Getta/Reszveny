@@ -2539,4 +2539,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get alertEdit => 'Изменить оповещение';
+
+  @override
+  String get positionOpenLots => 'Ещё в портфеле (сначала самые ранние)';
 }

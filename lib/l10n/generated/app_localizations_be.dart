@@ -2537,4 +2537,7 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get alertEdit => 'Рэдагаваць апавяшчэнне';
+
+  @override
+  String get positionOpenLots => 'Яшчэ ў партфелі (спачатку старэйшыя)';
 }

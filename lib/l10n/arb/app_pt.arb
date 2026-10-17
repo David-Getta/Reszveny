@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} da sua meta de {amount}",
   "portfolioGoalReached": "Meta de {amount} atingida",
   "portfolioGoalRemove": "Remover meta",
-  "alertEdit": "Editar alerta"
+  "alertEdit": "Editar alerta",
+  "positionOpenLots": "Ainda em carteira (mais antigas primeiro)"
 }

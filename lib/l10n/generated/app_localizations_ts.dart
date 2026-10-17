@@ -2488,4 +2488,7 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get alertEdit => 'Cinca xitiviso';
+
+  @override
+  String get positionOpenLots => 'Swa ha ri swa wena (swa khale ku sungula)';
 }

@@ -2470,4 +2470,7 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get alertEdit => 'Искәртүне үзгәртү';
+
+  @override
+  String get positionOpenLots => 'Һаман сездә (башта иң искеләре)';
 }

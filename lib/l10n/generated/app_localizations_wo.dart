@@ -2466,4 +2466,8 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get alertEdit => 'Soppi artu bi';
+
+  @override
+  String get positionOpenLots =>
+      'Ñu ngi ci sa loxo ba tey (yi gën a yàgg jëkk)';
 }

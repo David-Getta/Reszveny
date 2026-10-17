@@ -2472,4 +2472,7 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get alertEdit => 'Hariri arifa';
+
+  @override
+  String get positionOpenLots => 'Bado unazo (za zamani zaidi kwanza)';
 }

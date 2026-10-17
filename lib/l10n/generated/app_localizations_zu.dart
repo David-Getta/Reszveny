@@ -2481,4 +2481,7 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get alertEdit => 'Hlela isexwayiso';
+
+  @override
+  String get positionOpenLots => 'Kusekuwe (okudala kakhulu kuqala)';
 }

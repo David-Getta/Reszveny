@@ -2472,4 +2472,7 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get alertEdit => 'შეტყობინების რედაქტირება';
+
+  @override
+  String get positionOpenLots => 'კვლავ თქვენს ხელთ (ჯერ უძველესი)';
 }

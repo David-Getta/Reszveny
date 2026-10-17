@@ -2470,4 +2470,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get alertEdit => 'Edit alert';
+
+  @override
+  String get positionOpenLots => 'Still held (oldest first)';
 }

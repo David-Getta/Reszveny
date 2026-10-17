@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · Tshipatshila: {amount}",
   "portfolioGoalReached": "Tshipatshila tshikumbaja: {amount}",
   "portfolioGoalRemove": "Umbusha tshipatshila",
-  "alertEdit": "Shintulula alerte"
+  "alertEdit": "Shintulula alerte",
+  "positionOpenLots": "Bidi anu ne bebe (bia kale kumpala)"
 }

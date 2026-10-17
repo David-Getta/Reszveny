@@ -2517,4 +2517,7 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get alertEdit => 'Уреди обавештење';
+
+  @override
+  String get positionOpenLots => 'Још у поседу (прво најстарије)';
 }

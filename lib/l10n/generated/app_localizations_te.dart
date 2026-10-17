@@ -2477,4 +2477,7 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get alertEdit => 'హెచ్చరికను సవరించండి';
+
+  @override
+  String get positionOpenLots => 'ఇంకా ఉన్నవి (పాతవి ముందుగా)';
 }

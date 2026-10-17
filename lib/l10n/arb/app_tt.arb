@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · максат: {amount}",
   "portfolioGoalReached": "Максатка ирешелде: {amount}",
   "portfolioGoalRemove": "Максатны бетерү",
-  "alertEdit": "Искәртүне үзгәртү"
+  "alertEdit": "Искәртүне үзгәртү",
+  "positionOpenLots": "Һаман сездә (башта иң искеләре)"
 }

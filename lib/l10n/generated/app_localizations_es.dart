@@ -2477,4 +2477,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get alertEdit => 'Editar alerta';
+
+  @override
+  String get positionOpenLots => 'Aún en cartera (primero las más antiguas)';
 }

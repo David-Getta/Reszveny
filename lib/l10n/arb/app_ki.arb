@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · Muoroto: {amount}",
   "portfolioGoalReached": "Muoroto nĩ wakinyĩrwo: {amount}",
   "portfolioGoalRemove": "Ruta muoroto",
-  "alertEdit": "Garũra kĩmenyithia"
+  "alertEdit": "Garũra kĩmenyithia",
+  "positionOpenLots": "Ũrĩ naguo o na rĩu (ma tene mbere)"
 }

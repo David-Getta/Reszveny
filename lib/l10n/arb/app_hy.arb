@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · նպատակ՝ {amount}",
   "portfolioGoalReached": "Նպատակը կատարված է՝ {amount}",
   "portfolioGoalRemove": "Հեռացնել նպատակը",
-  "alertEdit": "Խմբագրել ծանուցումը"
+  "alertEdit": "Խմբագրել ծանուցումը",
+  "positionOpenLots": "Դեռ պահվող (նախ՝ ամենահինները)"
 }

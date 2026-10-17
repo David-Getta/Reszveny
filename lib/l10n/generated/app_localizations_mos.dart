@@ -2458,4 +2458,7 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get alertEdit => 'Toeem gũusgo';
+
+  @override
+  String get positionOpenLots => 'F ne-a hal masã (kʋdemdã n deng)';
 }

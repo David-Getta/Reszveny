@@ -2469,4 +2469,7 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get alertEdit => 'ଆଲର୍ଟ ଏଡିଟ କରନ୍ତୁ';
+
+  @override
+  String get positionOpenLots => 'ଏବେ ବି ଧରି ରଖିଥିବା (ସବୁଠାରୁ ପୁରୁଣା ପ୍ରଥମେ)';
 }

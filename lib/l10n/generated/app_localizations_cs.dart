@@ -2532,4 +2532,7 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get alertEdit => 'Upravit upozornění';
+
+  @override
+  String get positionOpenLots => 'Stále držené (nejstarší první)';
 }

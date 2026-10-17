@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · Usukelo: {amount}",
   "portfolioGoalReached": "Usukelo lufikelelwe: {amount}",
   "portfolioGoalRemove": "Susa usukelo",
-  "alertEdit": "Hlela isilumkiso"
+  "alertEdit": "Hlela isilumkiso",
+  "positionOpenLots": "Zisekuwe (ezona zindala kuqala)"
 }

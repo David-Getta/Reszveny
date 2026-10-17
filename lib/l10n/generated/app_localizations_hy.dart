@@ -2480,4 +2480,7 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get alertEdit => 'Խմբագրել ծանուցումը';
+
+  @override
+  String get positionOpenLots => 'Դեռ պահվող (նախ՝ ամենահինները)';
 }

@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · Lukanu: {amount}",
   "portfolioGoalReached": "Lukanu me lunga: {amount}",
   "portfolioGoalRemove": "Katula lukanu",
-  "alertEdit": "Soba lukebisu"
+  "alertEdit": "Soba lukebisu",
+  "positionOpenLots": "Ntangu yai ve kele na nge (ya ntama ntete)"
 }

@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · Umgomo: {amount}",
   "portfolioGoalReached": "Umgomo ufinyelelwe: {amount}",
   "portfolioGoalRemove": "Susa umgomo",
-  "alertEdit": "Hlela isexwayiso"
+  "alertEdit": "Hlela isexwayiso",
+  "positionOpenLots": "Kusekuwe (okudala kakhulu kuqala)"
 }

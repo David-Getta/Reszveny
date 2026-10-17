@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} នៃគោលដៅ {amount}",
   "portfolioGoalReached": "សម្រេចគោលដៅ {amount} ហើយ",
   "portfolioGoalRemove": "ដកគោលដៅចេញ",
-  "alertEdit": "កែការជូនដំណឹង"
+  "alertEdit": "កែការជូនដំណឹង",
+  "positionOpenLots": "នៅកាន់កាប់ (ចាស់បំផុតមុន)"
 }

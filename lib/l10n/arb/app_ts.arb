@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · Xikongomelo: {amount}",
   "portfolioGoalReached": "Xikongomelo xi fikeleriwile: {amount}",
   "portfolioGoalRemove": "Susa xikongomelo",
-  "alertEdit": "Cinca xitiviso"
+  "alertEdit": "Cinca xitiviso",
+  "positionOpenLots": "Swa ha ri swa wena (swa khale ku sungula)"
 }

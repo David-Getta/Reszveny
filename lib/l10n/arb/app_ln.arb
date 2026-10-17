@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · Mokano: {amount}",
   "portfolioGoalReached": "Okokisi mokano: {amount}",
   "portfolioGoalRemove": "Longola mokano",
-  "alertEdit": "Bongola likebisi"
+  "alertEdit": "Bongola likebisi",
+  "positionOpenLots": "Ezali naino na yo (ya kala liboso)"
 }

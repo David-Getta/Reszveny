@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · Objektif: {amount}",
   "portfolioGoalReached": "Objektif atenn: {amount}",
   "portfolioGoalRemove": "Retire objektif la",
-  "alertEdit": "Modifye alèt la"
+  "alertEdit": "Modifye alèt la",
+  "positionOpenLots": "Toujou genyen (pi ansyen yo anvan)"
 }

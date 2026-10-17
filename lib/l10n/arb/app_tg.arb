@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · ҳадаф: {amount}",
   "portfolioGoalReached": "Ҳадаф иҷро шуд: {amount}",
   "portfolioGoalRemove": "Хориҷ кардани ҳадаф",
-  "alertEdit": "Таҳрири огоҳӣ"
+  "alertEdit": "Таҳрири огоҳӣ",
+  "positionOpenLots": "Ҳоло дар ихтиёри шумо (аввал қадимтаринҳо)"
 }

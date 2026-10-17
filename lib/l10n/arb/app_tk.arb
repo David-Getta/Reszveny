@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · maksat: {amount}",
   "portfolioGoalReached": "Maksada ýetildi: {amount}",
   "portfolioGoalRemove": "Maksady aýyr",
-  "alertEdit": "Duýduryşy üýtget"
+  "alertEdit": "Duýduryşy üýtget",
+  "positionOpenLots": "Henizem elinde bar (ilki iň könesi)"
 }

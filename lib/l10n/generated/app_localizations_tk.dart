@@ -2472,4 +2472,7 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get alertEdit => 'Duýduryşy üýtget';
+
+  @override
+  String get positionOpenLots => 'Henizem elinde bar (ilki iň könesi)';
 }

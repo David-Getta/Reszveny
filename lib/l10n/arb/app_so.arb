@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · Yool: {amount}",
   "portfolioGoalReached": "Yoolka waa la gaadhay: {amount}",
   "portfolioGoalRemove": "Ka saar yoolka",
-  "alertEdit": "Wax ka beddel digniinta"
+  "alertEdit": "Wax ka beddel digniinta",
+  "positionOpenLots": "Weli gacantaada ku jira (kuwa ugu da'da weyn marka hore)"
 }

@@ -2463,4 +2463,7 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get alertEdit => 'خبرتیا سمه کړئ';
+
+  @override
+  String get positionOpenLots => 'لا هم ستاسو سره (تر ټولو زاړه لومړی)';
 }

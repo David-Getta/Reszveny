@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · Taɖodzinu: {amount}",
   "portfolioGoalReached": "Èɖo taɖodzinu: {amount}",
   "portfolioGoalRemove": "Ɖe taɖodzinu ɖa",
-  "alertEdit": "Trɔ nuxlɔ̃ame"
+  "alertEdit": "Trɔ nuxlɔ̃ame",
+  "positionOpenLots": "Ele asiwò kokooko (xoxotɔwo gbã)"
 }

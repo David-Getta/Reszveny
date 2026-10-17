@@ -2467,4 +2467,7 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get alertEdit => 'અલર્ટ એડિટ કરો';
+
+  @override
+  String get positionOpenLots => 'હજુ પણ ધરાવેલા (સૌથી જૂના પહેલા)';
 }

@@ -2473,4 +2473,7 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get alertEdit => 'Редактирай известие';
+
+  @override
+  String get positionOpenLots => 'Все още притежавани (първо най-старите)';
 }

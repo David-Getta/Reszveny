@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · Kaayyoo: {amount}",
   "portfolioGoalReached": "Kaayyoon galma ga'eera: {amount}",
   "portfolioGoalRemove": "Kaayyoo haqi",
-  "alertEdit": "Akeekkachiisa gulaali"
+  "alertEdit": "Akeekkachiisa gulaali",
+  "positionOpenLots": "Ammas harka kee jira (kan durii jalqaba)"
 }

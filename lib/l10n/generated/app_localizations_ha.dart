@@ -2477,4 +2477,7 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get alertEdit => 'Gyara faɗakarwa';
+
+  @override
+  String get positionOpenLots => 'Har yanzu a hannunka (mafi tsufa da farko)';
 }

@@ -2474,4 +2474,7 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get alertEdit => 'Owahi pèngetan';
+
+  @override
+  String get positionOpenLots => 'Isih dicekel (sing paling lawas dhisik)';
 }

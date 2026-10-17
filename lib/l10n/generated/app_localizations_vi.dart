@@ -2465,4 +2465,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get alertEdit => 'Sửa cảnh báo';
+
+  @override
+  String get positionOpenLots => 'Vẫn đang nắm giữ (cũ nhất trước)';
 }

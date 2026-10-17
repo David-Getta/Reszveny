@@ -2491,4 +2491,7 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get alertEdit => 'Уреди известување';
+
+  @override
+  String get positionOpenLots => 'Сè уште во сопственост (прво најстарите)';
 }

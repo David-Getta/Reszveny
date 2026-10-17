@@ -2540,4 +2540,7 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get alertEdit => 'Редагувати сповіщення';
+
+  @override
+  String get positionOpenLots => 'Ще в портфелі (спершу найдавніші)';
 }

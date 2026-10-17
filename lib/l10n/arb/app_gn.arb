@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · Jehupytyrã: {amount}",
   "portfolioGoalReached": "Rehupytýma jehupytyrã: {amount}",
   "portfolioGoalRemove": "Embogue jehupytyrã",
-  "alertEdit": "Emoambue maranduʼi"
+  "alertEdit": "Emoambue maranduʼi",
+  "positionOpenLots": "Oĩ gueteri nde pópe (tujavéva raẽ)"
 }

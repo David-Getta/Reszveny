@@ -2475,4 +2475,7 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get alertEdit => 'Wysig waarskuwing';
+
+  @override
+  String get positionOpenLots => 'Nog besit (oudste eerste)';
 }

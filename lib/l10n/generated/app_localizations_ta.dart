@@ -2481,4 +2481,7 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get alertEdit => 'எச்சரிக்கையைத் திருத்து';
+
+  @override
+  String get positionOpenLots => 'இன்னும் வைத்திருப்பவை (பழையவை முதலில்)';
 }

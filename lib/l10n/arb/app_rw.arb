@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · Intego: {amount}",
   "portfolioGoalReached": "Wageze ku ntego: {amount}",
   "portfolioGoalRemove": "Kuramo intego",
-  "alertEdit": "Hindura imenyesha"
+  "alertEdit": "Hindura imenyesha",
+  "positionOpenLots": "Ibyo ugifite (ibya kera mbere)"
 }

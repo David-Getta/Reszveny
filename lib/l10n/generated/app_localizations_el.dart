@@ -2481,4 +2481,7 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get alertEdit => 'Επεξεργασία ειδοποίησης';
+
+  @override
+  String get positionOpenLots => 'Ακόμη σε κατοχή (πρώτα οι παλαιότερες)';
 }

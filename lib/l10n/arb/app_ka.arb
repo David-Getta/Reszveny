@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · მიზანი: {amount}",
   "portfolioGoalReached": "მიზანი მიღწეულია: {amount}",
   "portfolioGoalRemove": "მიზნის წაშლა",
-  "alertEdit": "შეტყობინების რედაქტირება"
+  "alertEdit": "შეტყობინების რედაქტირება",
+  "positionOpenLots": "კვლავ თქვენს ხელთ (ჯერ უძველესი)"
 }

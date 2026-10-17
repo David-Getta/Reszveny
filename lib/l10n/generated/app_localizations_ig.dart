@@ -2467,4 +2467,7 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get alertEdit => 'Dezie ọkwa';
+
+  @override
+  String get positionOpenLots => 'Ka nọ n\'aka gị (ndị ochie mbụ)';
 }

@@ -2471,4 +2471,7 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get alertEdit => 'الرٹ میں ترمیم کریں';
+
+  @override
+  String get positionOpenLots => 'اب بھی آپ کے پاس (سب سے پرانی پہلے)';
 }

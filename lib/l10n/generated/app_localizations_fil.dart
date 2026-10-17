@@ -2478,4 +2478,7 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get alertEdit => 'I-edit ang alerto';
+
+  @override
+  String get positionOpenLots => 'Hawak pa (pinakaluma muna)';
 }

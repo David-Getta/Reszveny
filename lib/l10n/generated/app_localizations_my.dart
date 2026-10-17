@@ -2463,4 +2463,7 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get alertEdit => 'သတိပေးချက် ပြင်ရန်';
+
+  @override
+  String get positionOpenLots => 'ကိုင်ထားဆဲ (အဟောင်းဆုံး ဦးစွာ)';
 }

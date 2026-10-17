@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} of your {amount} target",
   "portfolioGoalReached": "You don hit your {amount} target",
   "portfolioGoalRemove": "Comot target",
-  "alertEdit": "Change alert"
+  "alertEdit": "Change alert",
+  "positionOpenLots": "Wetin you still hold (oldest first)"
 }

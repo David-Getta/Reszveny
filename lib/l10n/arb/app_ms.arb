@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} daripada sasaran {amount}",
   "portfolioGoalReached": "Sasaran {amount} tercapai",
   "portfolioGoalRemove": "Alih keluar sasaran",
-  "alertEdit": "Edit amaran"
+  "alertEdit": "Edit amaran",
+  "positionOpenLots": "Masih dipegang (tertua dahulu)"
 }

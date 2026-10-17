@@ -2467,4 +2467,7 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get alertEdit => 'Edit peringatan';
+
+  @override
+  String get positionOpenLots => 'Masih dimiliki (terlama dulu)';
 }

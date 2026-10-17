@@ -748,6 +748,8 @@ void main() {
     await _shot(tester, 'sell_dialog_phone_hu');
     await tester.tap(find.byKey(const ValueKey('lot-submit')));
     await tester.pumpAndSettle();
+    // A még meglévő tételek (FIFO) a mai árral számolt nyereséggel.
+    expect(find.byKey(const ValueKey('open-lot-0')), findsOneWidget);
     await _shot(tester, 'transactions_phone_hu');
     await tester.tapAt(const Offset(215, 40));
     await tester.pumpAndSettle();

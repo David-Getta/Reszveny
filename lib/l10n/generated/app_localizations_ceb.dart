@@ -2482,4 +2482,7 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get alertEdit => 'Usba ang alerto';
+
+  @override
+  String get positionOpenLots => 'Gikupot pa (pinakauna una)';
 }

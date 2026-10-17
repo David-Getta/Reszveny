@@ -2483,4 +2483,7 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get alertEdit => 'Bongola likebisi';
+
+  @override
+  String get positionOpenLots => 'Ezali naino na yo (ya kala liboso)';
 }

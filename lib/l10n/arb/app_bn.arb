@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · লক্ষ্য: {amount}",
   "portfolioGoalReached": "লক্ষ্য পূরণ হয়েছে: {amount}",
   "portfolioGoalRemove": "লক্ষ্য সরান",
-  "alertEdit": "সতর্কতা সম্পাদনা করুন"
+  "alertEdit": "সতর্কতা সম্পাদনা করুন",
+  "positionOpenLots": "এখনও ধরে রাখা (সবচেয়ে পুরোনো আগে)"
 }

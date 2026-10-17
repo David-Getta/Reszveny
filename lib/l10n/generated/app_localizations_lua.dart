@@ -2479,4 +2479,7 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get alertEdit => 'Shintulula alerte';
+
+  @override
+  String get positionOpenLots => 'Bidi anu ne bebe (bia kale kumpala)';
 }

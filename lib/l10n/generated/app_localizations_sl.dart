@@ -2538,4 +2538,7 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get alertEdit => 'Uredi opozorilo';
+
+  @override
+  String get positionOpenLots => 'Še v lasti (najstarejši najprej)';
 }

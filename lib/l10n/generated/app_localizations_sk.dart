@@ -2536,4 +2536,7 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get alertEdit => 'Upraviť upozornenie';
+
+  @override
+  String get positionOpenLots => 'Stále držané (najstaršie prvé)';
 }

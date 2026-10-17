@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · στόχος: {amount}",
   "portfolioGoalReached": "Ο στόχος επιτεύχθηκε: {amount}",
   "portfolioGoalRemove": "Αφαίρεση στόχου",
-  "alertEdit": "Επεξεργασία ειδοποίησης"
+  "alertEdit": "Επεξεργασία ειδοποίησης",
+  "positionOpenLots": "Ακόμη σε κατοχή (πρώτα οι παλαιότερες)"
 }

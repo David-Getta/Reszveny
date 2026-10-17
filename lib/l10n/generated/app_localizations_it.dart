@@ -2477,4 +2477,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get alertEdit => 'Modifica avviso';
+
+  @override
+  String get positionOpenLots => 'Ancora in portafoglio (prima i più vecchi)';
 }

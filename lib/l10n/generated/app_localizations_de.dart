@@ -2484,4 +2484,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get alertEdit => 'Alarm bearbeiten';
+
+  @override
+  String get positionOpenLots => 'Noch im Bestand (älteste zuerst)';
 }

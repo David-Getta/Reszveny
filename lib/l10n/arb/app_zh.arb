@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "已达成 {percent} · 目标 {amount}",
   "portfolioGoalReached": "已达成 {amount} 目标",
   "portfolioGoalRemove": "移除目标",
-  "alertEdit": "编辑提醒"
+  "alertEdit": "编辑提醒",
+  "positionOpenLots": "仍持有（最早的在前）"
 }

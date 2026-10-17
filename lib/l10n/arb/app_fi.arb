@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} tavoitteesta {amount}",
   "portfolioGoalReached": "Tavoite {amount} saavutettu",
   "portfolioGoalRemove": "Poista tavoite",
-  "alertEdit": "Muokkaa hälytystä"
+  "alertEdit": "Muokkaa hälytystä",
+  "positionOpenLots": "Yhä hallussa (vanhimmat ensin)"
 }

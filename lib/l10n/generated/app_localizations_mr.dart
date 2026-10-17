@@ -2471,4 +2471,7 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get alertEdit => 'सूचना संपादित करा';
+
+  @override
+  String get positionOpenLots => 'अजूनही तुमच्याकडे (सर्वात जुनी आधी)';
 }

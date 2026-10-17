@@ -2477,4 +2477,7 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get alertEdit => 'Emoambue maranduʼi';
+
+  @override
+  String get positionOpenLots => 'Oĩ gueteri nde pópe (tujavéva raẽ)';
 }

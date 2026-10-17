@@ -2465,4 +2465,7 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get alertEdit => 'अलर्ट बदलू';
+
+  @override
+  String get positionOpenLots => 'एखनो अहाँ लग (सभसँ पुरान पहिने)';
 }

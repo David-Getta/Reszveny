@@ -2470,4 +2470,7 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get alertEdit => 'Ẓreg alɣu';
+
+  @override
+  String get positionOpenLots => 'Mazal ɣur-k (tiqburin d timezwura)';
 }

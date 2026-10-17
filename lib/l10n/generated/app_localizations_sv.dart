@@ -2473,4 +2473,7 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get alertEdit => 'Redigera larm';
+
+  @override
+  String get positionOpenLots => 'Fortfarande ägda (äldsta först)';
 }

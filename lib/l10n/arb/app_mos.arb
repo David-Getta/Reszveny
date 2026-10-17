@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · Raabo: {amount}",
   "portfolioGoalReached": "Raabã paame: {amount}",
   "portfolioGoalRemove": "Yiis raabã",
-  "alertEdit": "Toeem gũusgo"
+  "alertEdit": "Toeem gũusgo",
+  "positionOpenLots": "F ne-a hal masã (kʋdemdã n deng)"
 }

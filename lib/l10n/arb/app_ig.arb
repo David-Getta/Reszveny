@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · Ebumnuche: {amount}",
   "portfolioGoalReached": "Emezuru ebumnuche: {amount}",
   "portfolioGoalRemove": "Wepụ ebumnuche",
-  "alertEdit": "Dezie ọkwa"
+  "alertEdit": "Dezie ọkwa",
+  "positionOpenLots": "Ka nọ n'aka gị (ndị ochie mbụ)"
 }

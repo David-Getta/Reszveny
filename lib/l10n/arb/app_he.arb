@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} מהיעד של {amount}",
   "portfolioGoalReached": "היעד של {amount} הושג",
   "portfolioGoalRemove": "הסרת היעד",
-  "alertEdit": "עריכת התראה"
+  "alertEdit": "עריכת התראה",
+  "positionOpenLots": "עדיין בבעלותך (הוותיקות ביותר קודם)"
 }

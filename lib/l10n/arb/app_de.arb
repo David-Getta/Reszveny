@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} deines Ziels von {amount}",
   "portfolioGoalReached": "Ziel von {amount} erreicht",
   "portfolioGoalRemove": "Ziel entfernen",
-  "alertEdit": "Alarm bearbeiten"
+  "alertEdit": "Alarm bearbeiten",
+  "positionOpenLots": "Noch im Bestand (älteste zuerst)"
 }

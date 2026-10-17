@@ -129,6 +129,10 @@ class Position {
     return (open: open, realized: realized, sold: sold, byYear: byYear, sales: sales);
   }
 
+  /// A még birtokolt vételi tételek (FIFO szerint a legrégebbi fogy el először):
+  /// darab, vételi ár és dátum.
+  List<({double quantity, double price, DateTime? date})> get openLots => List.unmodifiable(_fifo.open);
+
   /// A még birtokolt darabszám.
   double get quantity => _fifo.open.fold(0, (s, l) => s + l.quantity);
 

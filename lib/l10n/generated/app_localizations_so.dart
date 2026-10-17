@@ -2478,4 +2478,8 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get alertEdit => 'Wax ka beddel digniinta';
+
+  @override
+  String get positionOpenLots =>
+      'Weli gacantaada ku jira (kuwa ugu da\'da weyn marka hore)';
 }

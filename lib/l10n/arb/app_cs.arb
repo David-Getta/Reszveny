@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} z cíle {amount}",
   "portfolioGoalReached": "Cíl {amount} splněn",
   "portfolioGoalRemove": "Odebrat cíl",
-  "alertEdit": "Upravit upozornění"
+  "alertEdit": "Upravit upozornění",
+  "positionOpenLots": "Stále držené (nejstarší první)"
 }

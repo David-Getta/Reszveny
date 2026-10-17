@@ -2478,4 +2478,7 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get alertEdit => 'Sinthani chidziwitso';
+
+  @override
+  String get positionOpenLots => 'Zikadali zanu (zakale kwambiri poyamba)';
 }

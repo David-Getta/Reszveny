@@ -2475,4 +2475,7 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get alertEdit => 'Robah béwara';
+
+  @override
+  String get positionOpenLots => 'Masih dicekel (nu pangkolotna heula)';
 }

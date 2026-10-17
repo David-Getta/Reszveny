@@ -2490,4 +2490,7 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get alertEdit => 'I-edit ti alerto';
+
+  @override
+  String get positionOpenLots => 'Adda pay kenka (kadaanan nga umuna)';
 }

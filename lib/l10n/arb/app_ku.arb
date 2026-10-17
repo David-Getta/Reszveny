@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · Armanc: {amount}",
   "portfolioGoalReached": "Gihîştî armancê: {amount}",
   "portfolioGoalRemove": "Armancê rake",
-  "alertEdit": "Hişyariyê biguherîne"
+  "alertEdit": "Hişyariyê biguherîne",
+  "positionOpenLots": "Hîn li ba te (yên herî kevn pêşî)"
 }

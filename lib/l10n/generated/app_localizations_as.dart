@@ -2470,4 +2470,7 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get alertEdit => 'সতৰ্কবাণী সম্পাদনা কৰক';
+
+  @override
+  String get positionOpenLots => 'এতিয়াও ধৰি ৰখা (পুৰণিখিনি প্ৰথমে)';
 }

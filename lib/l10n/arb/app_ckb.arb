@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · ئامانج: {amount}",
   "portfolioGoalReached": "گەیشتیت بە ئامانج: {amount}",
   "portfolioGoalRemove": "لابردنی ئامانج",
-  "alertEdit": "دەستکاریکردنی ئاگادارکەرەوە"
+  "alertEdit": "دەستکاریکردنی ئاگادارکەرەوە",
+  "positionOpenLots": "هێشتا لات ماوە (کۆنترین سەرەتا)"
 }

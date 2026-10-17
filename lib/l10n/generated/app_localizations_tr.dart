@@ -2471,4 +2471,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get alertEdit => 'Alarmı düzenle';
+
+  @override
+  String get positionOpenLots => 'Hâlâ elinizde (en eskiler önce)';
 }

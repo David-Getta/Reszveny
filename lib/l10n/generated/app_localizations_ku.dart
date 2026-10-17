@@ -2473,4 +2473,7 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get alertEdit => 'Hişyariyê biguherîne';
+
+  @override
+  String get positionOpenLots => 'Hîn li ba te (yên herî kevn pêşî)';
 }

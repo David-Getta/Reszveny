@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · Faandaare: {amount}",
   "portfolioGoalReached": "A heɓii faandaare maa: {amount}",
   "portfolioGoalRemove": "Momtu faandaare",
-  "alertEdit": "Waylu tintinol"
+  "alertEdit": "Waylu tintinol",
+  "positionOpenLots": "Ina woodi haa jooni (ɓurɗi ƙiɗɗude adan)"
 }

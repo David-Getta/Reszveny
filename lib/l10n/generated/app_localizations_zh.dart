@@ -2358,6 +2358,9 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get alertEdit => '编辑提醒';
+
+  @override
+  String get positionOpenLots => '仍持有（最早的在前）';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -4712,4 +4715,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get alertEdit => '編輯提示';
+
+  @override
+  String get positionOpenLots => '仍持有（最早的在前）';
 }

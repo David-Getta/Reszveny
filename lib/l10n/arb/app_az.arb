@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · hədəf: {amount}",
   "portfolioGoalReached": "Hədəfə çatdın: {amount}",
   "portfolioGoalRemove": "Hədəfi sil",
-  "alertEdit": "Bildirişi redaktə et"
+  "alertEdit": "Bildirişi redaktə et",
+  "positionOpenLots": "Hələ də əlinizdə olanlar (əvvəlcə ən köhnələr)"
 }

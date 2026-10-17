@@ -2442,4 +2442,7 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get alertEdit => 'แก้ไขการแจ้งเตือน';
+
+  @override
+  String get positionOpenLots => 'ยังถืออยู่ (เก่าสุดก่อน)';
 }

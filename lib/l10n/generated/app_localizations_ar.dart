@@ -2527,4 +2527,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get alertEdit => 'تعديل التنبيه';
+
+  @override
+  String get positionOpenLots => 'لا تزال بحوزتك (الأقدم أولًا)';
 }

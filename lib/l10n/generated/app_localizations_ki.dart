@@ -2472,4 +2472,7 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get alertEdit => 'Garũra kĩmenyithia';
+
+  @override
+  String get positionOpenLots => 'Ũrĩ naguo o na rĩu (ma tene mbere)';
 }

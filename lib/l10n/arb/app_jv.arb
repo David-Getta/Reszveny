@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} saka target {amount}",
   "portfolioGoalReached": "Target {amount} kagayuh",
   "portfolioGoalRemove": "Busak target",
-  "alertEdit": "Owahi pèngetan"
+  "alertEdit": "Owahi pèngetan",
+  "positionOpenLots": "Isih dicekel (sing paling lawas dhisik)"
 }

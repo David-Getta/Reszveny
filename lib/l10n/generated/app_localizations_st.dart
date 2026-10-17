@@ -2486,4 +2486,7 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get alertEdit => 'Fetola tsebiso';
+
+  @override
+  String get positionOpenLots => 'E ntse e le tsa hao (tsa kgale pele)';
 }

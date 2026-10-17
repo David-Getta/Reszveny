@@ -2472,4 +2472,8 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get alertEdit => 'Сэрэмжлүүлэг засах';
+
+  @override
+  String get positionOpenLots =>
+      'Одоо ч эзэмшиж буй (хамгийн эртнийх нь эхэндээ)';
 }

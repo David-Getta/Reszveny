@@ -4284,6 +4284,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Edit alert'**
   String get alertEdit;
+
+  /// Transactions sheet of a position: heading of the list of purchase lots still held after FIFO sales, each with quantity, buy price, date and gain at today's price.
+  ///
+  /// In en, this message translates to:
+  /// **'Still held (oldest first)'**
+  String get positionOpenLots;
 }
 
 class _AppLocalizationsDelegate

@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} 達成 · 目標 {amount}",
   "portfolioGoalReached": "目標 {amount} を達成",
   "portfolioGoalRemove": "目標を削除",
-  "alertEdit": "アラートを編集"
+  "alertEdit": "アラートを編集",
+  "positionOpenLots": "保有中（古い順）"
 }

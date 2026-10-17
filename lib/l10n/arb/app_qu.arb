@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · Hayparina: {amount}",
   "portfolioGoalReached": "Hayparinaman chayarqanki: {amount}",
   "portfolioGoalRemove": "Hayparinata hurquy",
-  "alertEdit": "Willachiyta allichay"
+  "alertEdit": "Willachiyta allichay",
+  "positionOpenLots": "Kunankama hap'isqa (aswan ñawpaqkuna ñawpaqta)"
 }

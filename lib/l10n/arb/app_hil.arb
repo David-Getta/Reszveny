@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} sang imo tulumuron nga {amount}",
   "portfolioGoalReached": "Naabot ang tulumuron nga {amount}",
   "portfolioGoalRemove": "Kuhaa ang tulumuron",
-  "alertEdit": "I-edit ang alerto"
+  "alertEdit": "I-edit ang alerto",
+  "positionOpenLots": "Ginakaptan pa (pinakadaan anay)"
 }

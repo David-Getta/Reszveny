@@ -2470,4 +2470,7 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get alertEdit => 'Modifye alèt la';
+
+  @override
+  String get positionOpenLots => 'Toujou genyen (pi ansyen yo anvan)';
 }

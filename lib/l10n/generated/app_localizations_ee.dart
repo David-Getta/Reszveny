@@ -2475,4 +2475,7 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get alertEdit => 'Trɔ nuxlɔ̃ame';
+
+  @override
+  String get positionOpenLots => 'Ele asiwò kokooko (xoxotɔwo gbã)';
 }

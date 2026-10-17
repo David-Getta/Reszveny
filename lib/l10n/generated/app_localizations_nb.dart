@@ -2472,4 +2472,7 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get alertEdit => 'Rediger varsel';
+
+  @override
+  String get positionOpenLots => 'Fortsatt eid (eldste først)';
 }

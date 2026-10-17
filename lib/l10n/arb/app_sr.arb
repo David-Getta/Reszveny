@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} од циља од {amount}",
   "portfolioGoalReached": "Циљ од {amount} је достигнут",
   "portfolioGoalRemove": "Уклони циљ",
-  "alertEdit": "Уреди обавештење"
+  "alertEdit": "Уреди обавештење",
+  "positionOpenLots": "Још у поседу (прво најстарије)"
 }

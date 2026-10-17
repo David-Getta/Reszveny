@@ -2481,4 +2481,7 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get alertEdit => 'Edita l’alerta';
+
+  @override
+  String get positionOpenLots => 'Encara en cartera (primer les més antigues)';
 }

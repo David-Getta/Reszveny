@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · Intumbero: {amount}",
   "portfolioGoalReached": "Washikiye ku ntumbero: {amount}",
   "portfolioGoalRemove": "Kuramwo intumbero",
-  "alertEdit": "Hindura imenyesha"
+  "alertEdit": "Hindura imenyesha",
+  "positionOpenLots": "Ivyo ukigumana (ivya kera imbere)"
 }

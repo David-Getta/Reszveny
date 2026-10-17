@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} van je doel van {amount}",
   "portfolioGoalReached": "Doel van {amount} bereikt",
   "portfolioGoalRemove": "Doel verwijderen",
-  "alertEdit": "Alert bewerken"
+  "alertEdit": "Alert bewerken",
+  "positionOpenLots": "Nog in bezit (oudste eerst)"
 }

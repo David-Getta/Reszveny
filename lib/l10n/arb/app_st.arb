@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · Sepheo: {amount}",
   "portfolioGoalReached": "Sepheo se fihletswe: {amount}",
   "portfolioGoalRemove": "Tlosa sepheo",
-  "alertEdit": "Fetola tsebiso"
+  "alertEdit": "Fetola tsebiso",
+  "positionOpenLots": "E ntse e le tsa hao (tsa kgale pele)"
 }

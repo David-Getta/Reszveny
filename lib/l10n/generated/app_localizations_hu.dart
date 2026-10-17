@@ -2477,4 +2477,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get alertEdit => 'Riasztás módosítása';
+
+  @override
+  String get positionOpenLots => 'Még meglévő tételek (a legrégebbi elöl)';
 }

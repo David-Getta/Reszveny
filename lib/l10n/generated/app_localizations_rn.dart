@@ -2479,4 +2479,7 @@ class AppLocalizationsRn extends AppLocalizations {
 
   @override
   String get alertEdit => 'Hindura imenyesha';
+
+  @override
+  String get positionOpenLots => 'Ivyo ukigumana (ivya kera imbere)';
 }

@@ -2472,4 +2472,7 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get alertEdit => 'Ескертуді өңдеу';
+
+  @override
+  String get positionOpenLots => 'Әлі де қолыңызда (алдымен ең ескілері)';
 }

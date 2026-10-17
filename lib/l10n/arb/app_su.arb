@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} tina target {amount}",
   "portfolioGoalReached": "Target {amount} kahontal",
   "portfolioGoalRemove": "Hapus target",
-  "alertEdit": "Robah béwara"
+  "alertEdit": "Robah béwara",
+  "positionOpenLots": "Masih dicekel (nu pangkolotna heula)"
 }

@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · Ekiruubirirwa: {amount}",
   "portfolioGoalReached": "Otuuse ku kiruubirirwa: {amount}",
   "portfolioGoalRemove": "Ggyawo ekiruubirirwa",
-  "alertEdit": "Kyusa okulabula"
+  "alertEdit": "Kyusa okulabula",
+  "positionOpenLots": "Bikyali byo (ebyasooka okusooka)"
 }

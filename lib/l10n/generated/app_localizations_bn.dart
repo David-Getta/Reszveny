@@ -2470,4 +2470,7 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get alertEdit => 'সতর্কতা সম্পাদনা করুন';
+
+  @override
+  String get positionOpenLots => 'এখনও ধরে রাখা (সবচেয়ে পুরোনো আগে)';
 }

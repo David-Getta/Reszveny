@@ -2466,4 +2466,7 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get alertEdit => 'Waylu tintinol';
+
+  @override
+  String get positionOpenLots => 'Ina woodi haa jooni (ɓurɗi ƙiɗɗude adan)';
 }

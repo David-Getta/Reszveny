@@ -137,4 +137,25 @@ void main() {
     await tester.pumpAndSettle();
     expect(loads, 1);
   });
+
+  test('open lots after a sale: the oldest purchase is used up first', () {
+    final p = Position(
+      symbol: 'AAPL',
+      currency: 'USD',
+      lots: [
+        PortfolioLot(id: '1', symbol: 'AAPL', quantity: 12, price: 168.4, currency: 'USD', date: DateTime(2024, 11, 4)),
+        PortfolioLot(id: '2', symbol: 'AAPL', quantity: 6, price: 205.1, currency: 'USD', date: DateTime(2025, 8, 19)),
+        PortfolioLot(
+          id: '3',
+          symbol: 'AAPL',
+          quantity: 15,
+          price: 230,
+          currency: 'USD',
+          date: DateTime(2026, 2, 1),
+          sell: true,
+        ),
+      ],
+    );
+    expect(p.openLots.map((o) => (o.quantity, o.price)), [(3.0, 205.1)]);
+  });
 }

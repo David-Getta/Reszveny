@@ -2473,4 +2473,7 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get alertEdit => 'Таҳрири огоҳӣ';
+
+  @override
+  String get positionOpenLots => 'Ҳоло дар ихтиёри шумо (аввал қадимтаринҳо)';
 }

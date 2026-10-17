@@ -2468,4 +2468,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get alertEdit => 'ویرایش هشدار';
+
+  @override
+  String get positionOpenLots => 'هنوز در اختیار (قدیمی‌ترین‌ها اول)';
 }

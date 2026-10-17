@@ -2476,4 +2476,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get alertEdit => 'Alert bewerken';
+
+  @override
+  String get positionOpenLots => 'Nog in bezit (oudste eerst)';
 }

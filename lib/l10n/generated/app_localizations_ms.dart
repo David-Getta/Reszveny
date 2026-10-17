@@ -2476,4 +2476,7 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get alertEdit => 'Edit amaran';
+
+  @override
+  String get positionOpenLots => 'Masih dipegang (tertua dahulu)';
 }

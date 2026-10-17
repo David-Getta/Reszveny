@@ -2495,4 +2495,7 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get alertEdit => 'Editar alerta';
+
+  @override
+  String get positionOpenLots => 'Aínda en carteira (primeiro as máis antigas)';
 }

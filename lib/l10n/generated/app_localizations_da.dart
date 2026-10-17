@@ -2470,4 +2470,7 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get alertEdit => 'Rediger alarm';
+
+  @override
+  String get positionOpenLots => 'Stadig ejet (ældste først)';
 }

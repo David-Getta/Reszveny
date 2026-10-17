@@ -2539,4 +2539,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get alertEdit => 'Edytuj alert';
+
+  @override
+  String get positionOpenLots => 'Nadal posiadane (najpierw najstarsze)';
 }

@@ -2473,4 +2473,7 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get alertEdit => 'دەستکاریکردنی ئاگادارکەرەوە';
+
+  @override
+  String get positionOpenLots => 'هێشتا لات ماوە (کۆنترین سەرەتا)';
 }

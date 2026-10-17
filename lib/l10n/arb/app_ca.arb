@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · objectiu: {amount}",
   "portfolioGoalReached": "Objectiu assolit: {amount}",
   "portfolioGoalRemove": "Elimina l'objectiu",
-  "alertEdit": "Edita l’alerta"
+  "alertEdit": "Edita l’alerta",
+  "positionOpenLots": "Encara en cartera (primer les més antigues)"
 }

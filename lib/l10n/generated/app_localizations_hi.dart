@@ -2470,4 +2470,7 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get alertEdit => 'अलर्ट संपादित करें';
+
+  @override
+  String get positionOpenLots => 'अभी भी आपके पास (सबसे पुरानी पहले)';
 }

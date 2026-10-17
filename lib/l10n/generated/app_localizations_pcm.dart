@@ -2472,4 +2472,7 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get alertEdit => 'Change alert';
+
+  @override
+  String get positionOpenLots => 'Wetin you still hold (oldest first)';
 }

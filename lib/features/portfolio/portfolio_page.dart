@@ -985,6 +985,37 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
                         style: TextStyle(color: gainColor(p, now.realizedGain), fontWeight: FontWeight.w600),
                       ),
                     ),
+                  // A még birtokolt tételek egyenként (ha több vétel volt vagy eladás is):
+                  // darab × vételi ár, dátum, és a mai árral számolt nyereség.
+                  if (!now.isClosed && (now.hasSales || now.openLots.length > 1)) ...[
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(20, 4, 20, 2),
+                      child: Text(
+                        l10n.positionOpenLots,
+                        style: Theme.of(context).textTheme.labelLarge?.copyWith(color: p.muted),
+                      ),
+                    ),
+                    for (final (i, o) in now.openLots.indexed)
+                      ListTile(
+                        key: ValueKey('open-lot-$i'),
+                        dense: true,
+                        leading: Icon(Icons.inventory_2_outlined, color: p.muted, size: 20),
+                        title: Text('${qty(o.quantity)} × ${fmt.money(o.price, now.currency)}'),
+                        subtitle: o.date == null ? null : Text(fmt.date(o.date)),
+                        trailing: currentPrice == null
+                            ? null
+                            : Text(
+                                '${fmt.money((currentPrice - o.price) * o.quantity, now.currency, withSign: true)}\n'
+                                '${fmt.percent((currentPrice / o.price - 1) * 100, withSign: true)}',
+                                textAlign: TextAlign.end,
+                                style: TextStyle(
+                                  color: gainColor(p, currentPrice - o.price),
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                      ),
+                    const Divider(height: 16),
+                  ],
                   for (final lot in lots)
                     ListTile(
                       key: ValueKey('lot-${lot.id}'),

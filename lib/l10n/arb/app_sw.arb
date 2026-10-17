@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} ya lengo lako la {amount}",
   "portfolioGoalReached": "Lengo la {amount} limefikiwa",
   "portfolioGoalRemove": "Ondoa lengo",
-  "alertEdit": "Hariri arifa"
+  "alertEdit": "Hariri arifa",
+  "positionOpenLots": "Bado unazo (za zamani zaidi kwanza)"
 }

@@ -2473,4 +2473,7 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get alertEdit => 'Muokkaa hälytystä';
+
+  @override
+  String get positionOpenLots => 'Yhä hallussa (vanhimmat ensin)';
 }

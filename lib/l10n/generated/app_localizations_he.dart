@@ -2464,4 +2464,7 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get alertEdit => 'עריכת התראה';
+
+  @override
+  String get positionOpenLots => 'עדיין בבעלותך (הוותיקות ביותר קודם)';
 }

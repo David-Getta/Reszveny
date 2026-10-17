@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · Iswi: {amount}",
   "portfolioGoalReached": "Tewwḍeḍ ɣer yiswi: {amount}",
   "portfolioGoalRemove": "Kkes iswi",
-  "alertEdit": "Ẓreg alɣu"
+  "alertEdit": "Ẓreg alɣu",
+  "positionOpenLots": "Mazal ɣur-k (tiqburin d timezwura)"
 }

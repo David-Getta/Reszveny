@@ -2483,4 +2483,7 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get alertEdit => 'Hlela isilumkiso';
+
+  @override
+  String get positionOpenLots => 'Zisekuwe (ezona zindala kuqala)';
 }

@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · objektivi: {amount}",
   "portfolioGoalReached": "Objektivi u arrit: {amount}",
   "portfolioGoalRemove": "Hiq objektivin",
-  "alertEdit": "Ndrysho alarmin"
+  "alertEdit": "Ndrysho alarmin",
+  "positionOpenLots": "Ende në zotërim (më të vjetrat së pari)"
 }

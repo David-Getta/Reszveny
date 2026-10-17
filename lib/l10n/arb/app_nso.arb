@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · Maikemišetšo: {amount}",
   "portfolioGoalReached": "Maikemišetšo a fihleletšwe: {amount}",
   "portfolioGoalRemove": "Tloša maikemišetšo",
-  "alertEdit": "Lokiša temošo"
+  "alertEdit": "Lokiša temošo",
+  "positionOpenLots": "Sa le go wena (tša kgale pele)"
 }

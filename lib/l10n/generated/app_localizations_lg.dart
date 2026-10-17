@@ -2482,4 +2482,7 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get alertEdit => 'Kyusa okulabula';
+
+  @override
+  String get positionOpenLots => 'Bikyali byo (ebyasooka okusooka)';
 }

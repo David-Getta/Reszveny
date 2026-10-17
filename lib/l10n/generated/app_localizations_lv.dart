@@ -2512,4 +2512,7 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get alertEdit => 'Rediģēt brīdinājumu';
+
+  @override
+  String get positionOpenLots => 'Joprojām tavā īpašumā (vecākie vispirms)';
 }

@@ -2445,4 +2445,7 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get alertEdit => 'ແກ້ໄຂການແຈ້ງເຕືອນ';
+
+  @override
+  String get positionOpenLots => 'ຍັງຖືຢູ່ (ເກົ່າສຸດກ່ອນ)';
 }

@@ -2470,4 +2470,7 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get alertEdit => 'अलर्ट सम्पादन गर्नुहोस्';
+
+  @override
+  String get positionOpenLots => 'अझै तपाईंसँग (सबैभन्दा पुरानो पहिले)';
 }

@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · ግብ፦ {amount}",
   "portfolioGoalReached": "ግቡ ተሳክቷል፦ {amount}",
   "portfolioGoalRemove": "ግቡን አስወግድ",
-  "alertEdit": "ማንቂያ አርትዕ"
+  "alertEdit": "ማንቂያ አርትዕ",
+  "positionOpenLots": "አሁንም የተያዙ (የቀደሙት መጀመሪያ)"
 }

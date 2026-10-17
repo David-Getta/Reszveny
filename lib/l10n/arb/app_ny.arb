@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · Cholinga: {amount}",
   "portfolioGoalReached": "Mwakwaniritsa cholinga: {amount}",
   "portfolioGoalRemove": "Chotsani cholinga",
-  "alertEdit": "Sinthani chidziwitso"
+  "alertEdit": "Sinthani chidziwitso",
+  "positionOpenLots": "Zikadali zanu (zakale kwambiri poyamba)"
 }

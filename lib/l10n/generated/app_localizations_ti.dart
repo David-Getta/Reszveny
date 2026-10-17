@@ -2434,4 +2434,7 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get alertEdit => 'መጠንቀቕታ ኣመዓራሪ';
+
+  @override
+  String get positionOpenLots => 'ገና ኣብ ኢድኩም ዘለዉ (ዝኣረጉ መጀመርታ)';
 }

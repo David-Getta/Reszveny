@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} از هدف {amount}",
   "portfolioGoalReached": "هدف {amount} محقق شد",
   "portfolioGoalRemove": "حذف هدف",
-  "alertEdit": "ویرایش هشدار"
+  "alertEdit": "ویرایش هشدار",
+  "positionOpenLots": "هنوز در اختیار (قدیمی‌ترین‌ها اول)"
 }

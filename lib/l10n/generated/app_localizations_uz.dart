@@ -2476,4 +2476,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get alertEdit => 'Bildirishnomani tahrirlash';
+
+  @override
+  String get positionOpenLots => 'Hali ham qoʻlingizda (avval eng eskilari)';
 }

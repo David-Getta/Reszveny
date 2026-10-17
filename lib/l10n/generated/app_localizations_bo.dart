@@ -2460,4 +2460,7 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get alertEdit => 'ཉེན་བརྡ་རྩོམ་སྒྲིག';
+
+  @override
+  String get positionOpenLots => 'ད་དུང་ཉར་ཡོད་པ། (རྙིང་ཤོས་སྔོན་ལ།)';
 }

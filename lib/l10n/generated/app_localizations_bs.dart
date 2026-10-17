@@ -2514,4 +2514,7 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get alertEdit => 'Uredi obavještenje';
+
+  @override
+  String get positionOpenLots => 'Još u posjedu (prvo najstarije)';
 }

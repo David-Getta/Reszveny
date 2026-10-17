@@ -2481,4 +2481,7 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get alertEdit => 'അലേർട്ട് എഡിറ്റ് ചെയ്യുക';
+
+  @override
+  String get positionOpenLots => 'ഇപ്പോഴും കൈവശമുള്ളവ (പഴയവ ആദ്യം)';
 }

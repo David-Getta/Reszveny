@@ -2439,4 +2439,7 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get alertEdit => 'ማንቂያ አርትዕ';
+
+  @override
+  String get positionOpenLots => 'አሁንም የተያዙ (የቀደሙት መጀመሪያ)';
 }

@@ -2469,4 +2469,7 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get alertEdit => 'ඇඟවීම සංස්කරණය කරන්න';
+
+  @override
+  String get positionOpenLots => 'තවමත් ඔබ සතු (පැරණිතම ඒවා පළමුව)';
 }

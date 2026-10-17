@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · Chinangwa: {amount}",
   "portfolioGoalReached": "Wasvika pachinangwa: {amount}",
   "portfolioGoalRemove": "Bvisa chinangwa",
-  "alertEdit": "Gadzirisa chiziviso"
+  "alertEdit": "Gadzirisa chiziviso",
+  "positionOpenLots": "Zvichiri zvako (zvekare kare kutanga)"
 }

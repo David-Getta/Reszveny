@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · લક્ષ્ય: {amount}",
   "portfolioGoalReached": "લક્ષ્ય પૂર્ણ થયું: {amount}",
   "portfolioGoalRemove": "લક્ષ્ય કાઢી નાખો",
-  "alertEdit": "અલર્ટ એડિટ કરો"
+  "alertEdit": "અલર્ટ એડિટ કરો",
+  "positionOpenLots": "હજુ પણ ધરાવેલા (સૌથી જૂના પહેલા)"
 }

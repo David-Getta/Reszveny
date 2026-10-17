@@ -2479,4 +2479,7 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get alertEdit => 'Soba lukebisu';
+
+  @override
+  String get positionOpenLots => 'Ntangu yai ve kele na nge (ya ntama ntete)';
 }

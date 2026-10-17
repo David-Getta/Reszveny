@@ -2402,4 +2402,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get alertEdit => '알림 수정';
+
+  @override
+  String get positionOpenLots => '보유 중 (오래된 순)';
 }

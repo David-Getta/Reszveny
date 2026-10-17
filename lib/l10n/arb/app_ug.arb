@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · نىشان: {amount}",
   "portfolioGoalReached": "نىشانغا يېتىلدى: {amount}",
   "portfolioGoalRemove": "نىشاننى ئۆچۈرۈش",
-  "alertEdit": "ئاگاھلاندۇرۇشنى تەھرىرلەش"
+  "alertEdit": "ئاگاھلاندۇرۇشنى تەھرىرلەش",
+  "positionOpenLots": "تېخى قولىڭىزدا (ئەڭ كونىسى ئالدىدا)"
 }

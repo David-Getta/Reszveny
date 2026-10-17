@@ -2488,4 +2488,8 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get alertEdit => 'Fetola kitsiso';
+
+  @override
+  String get positionOpenLots =>
+      'Tse o santse o na le tsone (tsa bogologolo pele)';
 }

@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} av målet ditt på {amount}",
   "portfolioGoalReached": "Målet på {amount} er nådd",
   "portfolioGoalRemove": "Fjern målet",
-  "alertEdit": "Rediger varsel"
+  "alertEdit": "Rediger varsel",
+  "positionOpenLots": "Fortsatt eid (eldste først)"
 }

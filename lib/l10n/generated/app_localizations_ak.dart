@@ -2471,4 +2471,7 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get alertEdit => 'Sesa kɔkɔbɔ';
+
+  @override
+  String get positionOpenLots => 'Ɛda so wɔ wo nsam (nea edi kan di kan)';
 }

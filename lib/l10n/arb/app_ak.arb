@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · Botaeɛ: {amount}",
   "portfolioGoalReached": "Woadu wo botaeɛ: {amount}",
   "portfolioGoalRemove": "Yi botaeɛ no fi hɔ",
-  "alertEdit": "Sesa kɔkɔbɔ"
+  "alertEdit": "Sesa kɔkɔbɔ",
+  "positionOpenLots": "Ɛda so wɔ wo nsam (nea edi kan di kan)"
 }

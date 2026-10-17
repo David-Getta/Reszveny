@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · இலக்கு: {amount}",
   "portfolioGoalReached": "இலக்கு எட்டப்பட்டது: {amount}",
   "portfolioGoalRemove": "இலக்கை நீக்கு",
-  "alertEdit": "எச்சரிக்கையைத் திருத்து"
+  "alertEdit": "எச்சரிக்கையைத் திருத்து",
+  "positionOpenLots": "இன்னும் வைத்திருப்பவை (பழையவை முதலில்)"
 }

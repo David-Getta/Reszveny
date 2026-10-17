@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · Àfojúsùn: {amount}",
   "portfolioGoalReached": "O ti dé àfojúsùn: {amount}",
   "portfolioGoalRemove": "Yọ àfojúsùn kúrò",
-  "alertEdit": "Ṣàtúnṣe ìkìlọ̀"
+  "alertEdit": "Ṣàtúnṣe ìkìlọ̀",
+  "positionOpenLots": "Ṣì wà lọ́wọ́ rẹ (èyí tó pẹ́ jù lọ kọ́kọ́)"
 }

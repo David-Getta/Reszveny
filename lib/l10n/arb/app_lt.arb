@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · tikslas: {amount}",
   "portfolioGoalReached": "Tikslas pasiektas: {amount}",
   "portfolioGoalRemove": "Pašalinti tikslą",
-  "alertEdit": "Redaguoti įspėjimą"
+  "alertEdit": "Redaguoti įspėjimą",
+  "positionOpenLots": "Vis dar turimi (seniausi pirmiau)"
 }

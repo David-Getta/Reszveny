@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} · ہدف: {amount}",
   "portfolioGoalReached": "ہدف حاصل ہو گیا: {amount}",
   "portfolioGoalRemove": "ہدف ہٹائیں",
-  "alertEdit": "الرٹ میں ترمیم کریں"
+  "alertEdit": "الرٹ میں ترمیم کریں",
+  "positionOpenLots": "اب بھی آپ کے پاس (سب سے پرانی پہلے)"
 }

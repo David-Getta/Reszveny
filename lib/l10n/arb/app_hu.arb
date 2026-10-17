@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} kész · cél: {amount}",
   "portfolioGoalReached": "Cél elérve: {amount}",
   "portfolioGoalRemove": "Cél törlése",
-  "alertEdit": "Riasztás módosítása"
+  "alertEdit": "Riasztás módosítása",
+  "positionOpenLots": "Még meglévő tételek (a legrégebbi elöl)"
 }

@@ -2478,4 +2478,7 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get alertEdit => 'ಅಲರ್ಟ್ ಎಡಿಟ್ ಮಾಡಿ';
+
+  @override
+  String get positionOpenLots => 'ಇನ್ನೂ ಹೊಂದಿರುವವು (ಹಳೆಯದು ಮೊದಲು)';
 }

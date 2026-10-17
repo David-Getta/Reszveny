@@ -2474,4 +2474,7 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get alertEdit => 'ئاگاھلاندۇرۇشنى تەھرىرلەش';
+
+  @override
+  String get positionOpenLots => 'تېخى قولىڭىزدا (ئەڭ كونىسى ئالدىدا)';
 }

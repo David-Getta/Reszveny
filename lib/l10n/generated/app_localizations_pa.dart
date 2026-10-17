@@ -2467,4 +2467,7 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get alertEdit => 'ਅਲਰਟ ਸੋਧੋ';
+
+  @override
+  String get positionOpenLots => 'ਅਜੇ ਵੀ ਤੁਹਾਡੇ ਕੋਲ (ਸਭ ਤੋਂ ਪੁਰਾਣੀਆਂ ਪਹਿਲਾਂ)';
 }

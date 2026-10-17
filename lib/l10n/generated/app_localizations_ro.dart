@@ -2510,4 +2510,7 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get alertEdit => 'Editează alerta';
+
+  @override
+  String get positionOpenLots => 'Încă deținute (cele mai vechi întâi)';
 }

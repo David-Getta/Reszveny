@@ -2475,4 +2475,7 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get alertEdit => 'Эскертмени түзөтүү';
+
+  @override
+  String get positionOpenLots => 'Дагы эле колуңузда (адегенде эң эскилери)';
 }

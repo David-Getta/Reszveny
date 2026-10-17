@@ -2477,4 +2477,7 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get alertEdit => 'Gadzirisa chiziviso';
+
+  @override
+  String get positionOpenLots => 'Zvichiri zvako (zvekare kare kutanga)';
 }

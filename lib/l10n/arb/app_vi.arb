@@ -657,5 +657,6 @@
   "portfolioGoalProgress": "{percent} mục tiêu {amount}",
   "portfolioGoalReached": "Đã đạt mục tiêu {amount}",
   "portfolioGoalRemove": "Xóa mục tiêu",
-  "alertEdit": "Sửa cảnh báo"
+  "alertEdit": "Sửa cảnh báo",
+  "positionOpenLots": "Vẫn đang nắm giữ (cũ nhất trước)"
 }

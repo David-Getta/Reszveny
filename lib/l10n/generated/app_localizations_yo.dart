@@ -2470,4 +2470,7 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get alertEdit => 'Ṣàtúnṣe ìkìlọ̀';
+
+  @override
+  String get positionOpenLots => 'Ṣì wà lọ́wọ́ rẹ (èyí tó pẹ́ jù lọ kọ́kọ́)';
 }

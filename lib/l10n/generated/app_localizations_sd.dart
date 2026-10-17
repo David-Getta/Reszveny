@@ -2463,4 +2463,7 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get alertEdit => 'الرٽ ۾ ترميم ڪريو';
+
+  @override
+  String get positionOpenLots => 'اڃا توهان وٽ (سڀ کان پراڻا پهريان)';
 }
