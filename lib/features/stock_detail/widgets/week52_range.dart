@@ -79,18 +79,25 @@ class Week52Range extends StatelessWidget {
           },
         ),
         const SizedBox(height: 6),
+        // Fent a mélypont és a csúcs, alattuk középen a távolság (keskeny képernyőn is kifér).
         Row(
           children: [
-            Text(fmt.price(low, currency), style: muted),
-            Expanded(
-              child: Text(
-                belowHigh < 0.05 ? l10n.week52AtHigh : l10n.week52BelowHigh(fmt.percent(belowHigh, decimals: 1)),
-                textAlign: TextAlign.center,
-                style: theme.textTheme.bodySmall?.copyWith(fontWeight: FontWeight.w600),
-              ),
+            Flexible(
+              child: Text(fmt.price(low, currency), style: muted, overflow: TextOverflow.ellipsis),
             ),
-            Text(fmt.price(high, currency), style: muted),
+            const Spacer(),
+            Flexible(
+              child: Text(fmt.price(high, currency), style: muted, overflow: TextOverflow.ellipsis),
+            ),
           ],
+        ),
+        const SizedBox(height: 2),
+        Center(
+          child: Text(
+            belowHigh < 0.05 ? l10n.week52AtHigh : l10n.week52BelowHigh(fmt.percent(belowHigh, decimals: 1)),
+            textAlign: TextAlign.center,
+            style: theme.textTheme.bodySmall?.copyWith(fontWeight: FontWeight.w600),
+          ),
         ),
       ],
     );

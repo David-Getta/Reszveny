@@ -641,11 +641,20 @@ class _UpdatesTile extends StatelessWidget {
               leading: const Icon(Icons.info_outline_rounded),
               title: Text(l10n.currentVersion(u.displayVersion ?? '–')),
               subtitle: statusText.isEmpty ? null : Text(statusText, style: TextStyle(color: p.muted)),
+              // Keskeny képernyőn a gomb felirata két sorba törhet.
               trailing: storeOnly
                   ? null
-                  : TextButton(
-                      onPressed: u.status == UpdateStatus.checking ? null : () => u.check(),
-                      child: Text(l10n.checkForUpdates),
+                  : ConstrainedBox(
+                      constraints: const BoxConstraints(maxWidth: 130),
+                      child: TextButton(
+                        onPressed: u.status == UpdateStatus.checking ? null : () => u.check(),
+                        child: Text(
+                          l10n.checkForUpdates,
+                          textAlign: TextAlign.center,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
                     ),
             ),
             if (!storeOnly) ...[
