@@ -1236,6 +1236,8 @@ class _GoalBar extends StatelessWidget {
                   borderRadius: BorderRadius.circular(99),
                   child: LinearProgressIndicator(
                     value: ratio.clamp(0.0, 1.0),
+                    semanticsLabel: l10n.portfolioGoalTitle,
+                    semanticsValue: fmt.percent(ratio * 100, decimals: 0),
                     minHeight: 8,
                     color: ratio >= 1 ? p.positive : p.accent,
                     backgroundColor: p.border,
