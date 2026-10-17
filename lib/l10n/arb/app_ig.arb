@@ -640,5 +640,10 @@
   "watchShare": "Kesaa ndepụta ahụ",
   "watchImport": "Tinye akara ticker",
   "watchImportHint": "Mado akara ticker ndị e ji rịkọm, ohere ma ọ bụ ahịrị ọhụrụ kewaa – dịka ọmụmaatụ, ndepụta mmadụ kesaara gị.",
-  "watchImported": "{count, plural, =0{Enweghị òkè ọhụrụ} =1{Agbakwunyere òkè 1} other{Agbakwunyere òkè {count}}}"
+  "watchImported": "{count, plural, =0{Enweghị òkè ọhụrụ} =1{Agbakwunyere òkè 1} other{Agbakwunyere òkè {count}}}",
+  "positionsSortWeight": "Ndị kacha ukwuu buru ụzọ",
+  "positionsSortGain": "Uru niile kacha elu buru ụzọ",
+  "positionsSortToday": "Ndị kacha mma taa buru ụzọ",
+  "chartMyBuys": "Ihe ị zụrụ",
+  "chartMySells": "Ihe ị rere"
 }

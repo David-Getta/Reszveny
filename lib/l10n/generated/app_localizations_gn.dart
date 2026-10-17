@@ -2412,4 +2412,19 @@ class AppLocalizationsGn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Tuichavéva raẽ';
+
+  @override
+  String get positionsSortGain => 'Ganancia total tuichavéva raẽ';
+
+  @override
+  String get positionsSortToday => 'Ko árape iporãvéva raẽ';
+
+  @override
+  String get chartMyBuys => 'Ne jejogua';
+
+  @override
+  String get chartMySells => 'Ne ñemu';
 }

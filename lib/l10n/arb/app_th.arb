@@ -640,5 +640,10 @@
   "watchShare": "แชร์รายการ",
   "watchImport": "เพิ่มชื่อย่อหุ้น",
   "watchImportHint": "วางชื่อย่อหุ้นที่คั่นด้วยจุลภาค เว้นวรรค หรือขึ้นบรรทัดใหม่ เช่น รายการที่มีคนแชร์ให้คุณ",
-  "watchImported": "{count, plural, =0{ไม่มีหุ้นใหม่} =1{เพิ่มหุ้น 1 ตัวแล้ว} other{เพิ่มหุ้น {count} ตัวแล้ว}}"
+  "watchImported": "{count, plural, =0{ไม่มีหุ้นใหม่} =1{เพิ่มหุ้น 1 ตัวแล้ว} other{เพิ่มหุ้น {count} ตัวแล้ว}}",
+  "positionsSortWeight": "ใหญ่ที่สุดก่อน",
+  "positionsSortGain": "ผลตอบแทนรวมสูงสุดก่อน",
+  "positionsSortToday": "ดีที่สุดวันนี้ก่อน",
+  "chartMyBuys": "การซื้อของคุณ",
+  "chartMySells": "การขายของคุณ"
 }

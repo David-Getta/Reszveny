@@ -2416,4 +2416,19 @@ class AppLocalizationsZu extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Ezinkulu kakhulu kuqala';
+
+  @override
+  String get positionsSortGain => 'Inzuzo ephelele ephezulu kuqala';
+
+  @override
+  String get positionsSortToday => 'Ezihamba phambili namuhla kuqala';
+
+  @override
+  String get chartMyBuys => 'Okuthengile';
+
+  @override
+  String get chartMySells => 'Okuthengisile';
 }

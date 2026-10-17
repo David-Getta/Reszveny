@@ -2399,4 +2399,19 @@ class AppLocalizationsHe extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'הגדולות קודם';
+
+  @override
+  String get positionsSortGain => 'התשואה הכוללת הגבוהה קודם';
+
+  @override
+  String get positionsSortToday => 'הטובות היום קודם';
+
+  @override
+  String get chartMyBuys => 'הקניות שלך';
+
+  @override
+  String get chartMySells => 'המכירות שלך';
 }

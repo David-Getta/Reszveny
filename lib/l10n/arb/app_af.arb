@@ -640,5 +640,10 @@
   "watchShare": "Deel die lys",
   "watchImport": "Voeg aandeelkodes by",
   "watchImportHint": "Plak aandeelkodes geskei deur kommas, spasies of nuwe reëls – byvoorbeeld 'n lys wat iemand met jou gedeel het.",
-  "watchImported": "{count, plural, =0{Geen nuwe aandele nie} =1{1 aandeel bygevoeg} other{{count} aandele bygevoeg}}"
+  "watchImported": "{count, plural, =0{Geen nuwe aandele nie} =1{1 aandeel bygevoeg} other{{count} aandele bygevoeg}}",
+  "positionsSortWeight": "Grootste eerste",
+  "positionsSortGain": "Beste totale opbrengs eerste",
+  "positionsSortToday": "Beste vandag eerste",
+  "chartMyBuys": "Jou aankope",
+  "chartMySells": "Jou verkope"
 }

@@ -640,5 +640,10 @@
   "watchShare": "Pʋɩ liste wã",
   "watchImport": "Paas aksiõ bãnde",
   "watchImportHint": "Ning aksiõ bãnde n welg-b ne virgil, zĩ-vɩɩlg bɩ sẽ-paalga – wala liste ninga sẽn pʋɩ-a ne foo.",
-  "watchImported": "{count, plural, =0{Aksiõ paalg ka be ye} =1{B paasa aksiõ a yembre} other{B paasa aksiõ {count}}}"
+  "watchImported": "{count, plural, =0{Aksiõ paalg ka be ye} =1{B paasa aksiõ a yembre} other{B paasa aksiõ {count}}}",
+  "positionsSortWeight": "Sẽn yaa kãsems n deng",
+  "positionsSortGain": "Nafa gilli sẽn yaa wʋsg n deng",
+  "positionsSortToday": "Rũnda sẽn sõmb n deng",
+  "chartMyBuys": "Fo raaba",
+  "chartMySells": "Fo koosgo"
 }

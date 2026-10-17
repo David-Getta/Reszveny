@@ -2423,4 +2423,19 @@ class AppLocalizationsTs extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Leswikulu ngopfu ku sungula';
+
+  @override
+  String get positionsSortGain => 'Mbuyelo hinkwawo lowukulu ku sungula';
+
+  @override
+  String get positionsSortToday => 'Leswinene ngopfu namuntlha ku sungula';
+
+  @override
+  String get chartMyBuys => 'Leswi u swi xaveke';
+
+  @override
+  String get chartMySells => 'Leswi u swi xaviseke';
 }

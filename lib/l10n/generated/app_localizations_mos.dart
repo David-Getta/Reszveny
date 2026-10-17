@@ -2393,4 +2393,19 @@ class AppLocalizationsMos extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Sẽn yaa kãsems n deng';
+
+  @override
+  String get positionsSortGain => 'Nafa gilli sẽn yaa wʋsg n deng';
+
+  @override
+  String get positionsSortToday => 'Rũnda sẽn sõmb n deng';
+
+  @override
+  String get chartMyBuys => 'Fo raaba';
+
+  @override
+  String get chartMySells => 'Fo koosgo';
 }

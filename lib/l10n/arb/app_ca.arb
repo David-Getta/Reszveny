@@ -640,5 +640,10 @@
   "watchShare": "Comparteix la llista",
   "watchImport": "Afegeix símbols",
   "watchImportHint": "Enganxa símbols separats per comes, espais o salts de línia – per exemple, una llista que algú t’ha compartit.",
-  "watchImported": "{count, plural, =0{Cap acció nova} =1{S’ha afegit 1 acció} other{S’han afegit {count} accions}}"
+  "watchImported": "{count, plural, =0{Cap acció nova} =1{S’ha afegit 1 acció} other{S’han afegit {count} accions}}",
+  "positionsSortWeight": "Més grans primer",
+  "positionsSortGain": "Més rendiment total primer",
+  "positionsSortToday": "Millors d'avui primer",
+  "chartMyBuys": "Les teves compres",
+  "chartMySells": "Les teves vendes"
 }

@@ -640,5 +640,10 @@
   "watchShare": "Gabana olukalala",
   "watchImport": "Yongerako obubonero bwa ticker",
   "watchImportHint": "Teekamu obubonero bwa ticker obwawuddwamu koma, ebbanga oba ennyiriri empya – okugeza olukalala omuntu lw'akuweerezza.",
-  "watchImported": "{count, plural, =0{Tewali migabo mipya} =1{Omugabo 1 gwongeddwako} other{Emigabo {count} gyongeddwako}}"
+  "watchImported": "{count, plural, =0{Tewali migabo mipya} =1{Omugabo 1 gwongeddwako} other{Emigabo {count} gyongeddwako}}",
+  "positionsSortWeight": "Ebisinga obunene bisooke",
+  "positionsSortGain": "Amagoba gonna agasinga bisooke",
+  "positionsSortToday": "Ebisinze leero bisooke",
+  "chartMyBuys": "Bye wagula",
+  "chartMySells": "Bye watunda"
 }

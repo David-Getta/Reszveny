@@ -640,5 +640,10 @@
   "watchShare": "Emoherakuã lista",
   "watchImport": "Embojoaju símbolo",
   "watchImportHint": "Emboja símbolo-kuéra ojeipeʼáva coma, paʼũ térã línea pyahu rupive – techapyrã, peteĩ lista ojekomparti vaʼekue nendive.",
-  "watchImported": "{count, plural, =0{Ndaipóri acción pyahu} =1{Oñembojoaju 1 acción} other{Oñembojoaju {count} acción}}"
+  "watchImported": "{count, plural, =0{Ndaipóri acción pyahu} =1{Oñembojoaju 1 acción} other{Oñembojoaju {count} acción}}",
+  "positionsSortWeight": "Tuichavéva raẽ",
+  "positionsSortGain": "Ganancia total tuichavéva raẽ",
+  "positionsSortToday": "Ko árape iporãvéva raẽ",
+  "chartMyBuys": "Ne jejogua",
+  "chartMySells": "Ne ñemu"
 }

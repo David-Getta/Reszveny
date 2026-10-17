@@ -2405,4 +2405,19 @@ class AppLocalizationsTt extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Иң зурлары башта';
+
+  @override
+  String get positionsSortGain => 'Иң югары гомуми керем башта';
+
+  @override
+  String get positionsSortToday => 'Бүгенге иң яхшылары башта';
+
+  @override
+  String get chartMyBuys => 'Сезнең сатып алулар';
+
+  @override
+  String get chartMySells => 'Сезнең сатулар';
 }

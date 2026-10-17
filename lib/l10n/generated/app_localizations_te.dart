@@ -2412,4 +2412,19 @@ class AppLocalizationsTe extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'అతిపెద్దవి ముందు';
+
+  @override
+  String get positionsSortGain => 'అత్యధిక మొత్తం రాబడి ముందు';
+
+  @override
+  String get positionsSortToday => 'ఈ రోజు ఉత్తమమైనవి ముందు';
+
+  @override
+  String get chartMyBuys => 'మీ కొనుగోళ్లు';
+
+  @override
+  String get chartMySells => 'మీ అమ్మకాలు';
 }

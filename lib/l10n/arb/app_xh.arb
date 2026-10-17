@@ -640,5 +640,10 @@
   "watchShare": "Yabelana ngoluhlu",
   "watchImport": "Yongeza ii-ticker",
   "watchImportHint": "Ncamathisela ii-ticker ezahlulwe ngeekoma, izithuba okanye imigca emitsha – umzekelo, uluhlu omnye umntu awabelane nawe ngalo.",
-  "watchImported": "{count, plural, =0{Akukho zabelo zintsha} =1{Kongezwe isabelo esinye} other{Kongezwe izabelo ezi-{count}}}"
+  "watchImported": "{count, plural, =0{Akukho zabelo zintsha} =1{Kongezwe isabelo esinye} other{Kongezwe izabelo ezi-{count}}}",
+  "positionsSortWeight": "Ezinkulu kakhulu kuqala",
+  "positionsSortGain": "Eyona nzuzo iphelele kuqala",
+  "positionsSortToday": "Ezona zilungileyo namhlanje kuqala",
+  "chartMyBuys": "Oko ukuthengileyo",
+  "chartMySells": "Oko ukuthengisileyo"
 }

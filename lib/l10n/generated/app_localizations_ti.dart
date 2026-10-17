@@ -2369,4 +2369,19 @@ class AppLocalizationsTi extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'ዝዓበዩ ቅድም';
+
+  @override
+  String get positionsSortGain => 'ብዝያዳ ጠቕላላ ትርፊ ቅድም';
+
+  @override
+  String get positionsSortToday => 'ናይ ሎሚ ዝበለጹ ቅድም';
+
+  @override
+  String get chartMyBuys => 'ዕድግታትካ';
+
+  @override
+  String get chartMySells => 'መሸጣታትካ';
 }

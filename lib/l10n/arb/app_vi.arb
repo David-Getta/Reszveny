@@ -640,5 +640,10 @@
   "watchShare": "Chia sẻ danh sách",
   "watchImport": "Thêm mã cổ phiếu",
   "watchImportHint": "Dán các mã cổ phiếu, phân tách bằng dấu phẩy, dấu cách hoặc xuống dòng – ví dụ một danh sách ai đó đã chia sẻ với bạn.",
-  "watchImported": "{count, plural, =0{Không có cổ phiếu mới} =1{Đã thêm 1 cổ phiếu} other{Đã thêm {count} cổ phiếu}}"
+  "watchImported": "{count, plural, =0{Không có cổ phiếu mới} =1{Đã thêm 1 cổ phiếu} other{Đã thêm {count} cổ phiếu}}",
+  "positionsSortWeight": "Lớn nhất trước",
+  "positionsSortGain": "Lợi nhuận tổng cao nhất trước",
+  "positionsSortToday": "Tốt nhất hôm nay trước",
+  "chartMyBuys": "Lần mua của bạn",
+  "chartMySells": "Lần bán của bạn"
 }

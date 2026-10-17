@@ -2413,4 +2413,19 @@ class AppLocalizationsKn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'ಅತಿ ದೊಡ್ಡದು ಮೊದಲು';
+
+  @override
+  String get positionsSortGain => 'ಅತಿ ಹೆಚ್ಚು ಒಟ್ಟು ಆದಾಯ ಮೊದಲು';
+
+  @override
+  String get positionsSortToday => 'ಇಂದಿನ ಅತ್ಯುತ್ತಮ ಮೊದಲು';
+
+  @override
+  String get chartMyBuys => 'ನಿಮ್ಮ ಖರೀದಿಗಳು';
+
+  @override
+  String get chartMySells => 'ನಿಮ್ಮ ಮಾರಾಟಗಳು';
 }

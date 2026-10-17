@@ -640,5 +640,10 @@
   "watchShare": "Sangiza urutonde",
   "watchImport": "Ongeramo ama ticker",
   "watchImportHint": "Omekamo ama ticker atandukanyijwe n'akitso, umwanya cyangwa umurongo mushya – urugero, urutonde umuntu yagusangije.",
-  "watchImported": "{count, plural, =0{Nta migabane mishya} =1{Hongewemo umugabane 1} other{Hongewemo imigabane {count}}}"
+  "watchImported": "{count, plural, =0{Nta migabane mishya} =1{Hongewemo umugabane 1} other{Hongewemo imigabane {count}}}",
+  "positionsSortWeight": "Ibinini cyane mbere",
+  "positionsSortGain": "Inyungu rusange nini mbere",
+  "positionsSortToday": "Ibyiza by'uyu munsi mbere",
+  "chartMyBuys": "Ibyo waguze",
+  "chartMySells": "Ibyo wagurishije"
 }

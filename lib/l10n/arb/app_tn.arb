@@ -640,5 +640,10 @@
   "watchShare": "Abelana lenaane",
   "watchImport": "Tsenya di-ticker",
   "watchImportHint": "Kgomaretsa di-ticker tse di kgaoganngwang ka dikhoma, sekgala kgotsa mela e mesha – sekai, lenaane le mongwe a le abelaneng le wena.",
-  "watchImported": "{count, plural, =0{Ga go na dishere tse dintšhwa} =1{Go okeditswe shere e le nngwe} other{Go okeditswe dishere di le {count}}}"
+  "watchImported": "{count, plural, =0{Ga go na dishere tse dintšhwa} =1{Go okeditswe shere e le nngwe} other{Go okeditswe dishere di le {count}}}",
+  "positionsSortWeight": "Tse dikgolo thata pele",
+  "positionsSortGain": "Poelo yotlhe e kgolo pele",
+  "positionsSortToday": "Tse di siameng thata gompieno pele",
+  "chartMyBuys": "Ditheko tsa gago",
+  "chartMySells": "Thekiso tsa gago"
 }

@@ -640,5 +640,10 @@
   "watchShare": "Kabola liste",
   "watchImport": "Bakisa bilembo ya ticker",
   "watchImportHint": "Tya bilembo ya ticker oyo ekabwani na virgule, esika ya pamba to molɔngɔ ya sika – na ndakisa, liste oyo moto moko akabolelaki yo.",
-  "watchImported": "{count, plural, =0{Aksyo ya sika ezali te} =1{Aksyo 1 ebakisami} other{Baaksyo {count} ebakisami}}"
+  "watchImported": "{count, plural, =0{Aksyo ya sika ezali te} =1{Aksyo 1 ebakisami} other{Baaksyo {count} ebakisami}}",
+  "positionsSortWeight": "Oyo ya monene liboso",
+  "positionsSortGain": "Litomba mobimba mingi liboso",
+  "positionsSortToday": "Oyo ya malamu lɛlɔ liboso",
+  "chartMyBuys": "Bosombi na yo",
+  "chartMySells": "Bitɛki na yo"
 }

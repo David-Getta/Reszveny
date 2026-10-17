@@ -2472,4 +2472,19 @@ class AppLocalizationsLt extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Didžiausios pirmiau';
+
+  @override
+  String get positionsSortGain => 'Didžiausia bendra grąža pirmiau';
+
+  @override
+  String get positionsSortToday => 'Geriausios šiandien pirmiau';
+
+  @override
+  String get chartMyBuys => 'Jūsų pirkimai';
+
+  @override
+  String get chartMySells => 'Jūsų pardavimai';
 }

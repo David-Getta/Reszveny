@@ -640,5 +640,10 @@
   "watchShare": "सूची साझा करू",
   "watchImport": "टिकर जोड़ू",
   "watchImportHint": "कॉमा, स्पेस वा नव पाँती सँ अलग कएल टिकर साटू – जेना कोनो सूची जे केओ अहाँ संग साझा केने हो।",
-  "watchImported": "{count, plural, =0{कोनो नव शेयर नहि} =1{1 शेयर जोड़ल गेल} other{{count} शेयर जोड़ल गेल}}"
+  "watchImported": "{count, plural, =0{कोनो नव शेयर नहि} =1{1 शेयर जोड़ल गेल} other{{count} शेयर जोड़ल गेल}}",
+  "positionsSortWeight": "सभसँ पैघ पहिने",
+  "positionsSortGain": "सभसँ बेसी कुल लाभ पहिने",
+  "positionsSortToday": "आइ सभसँ नीक पहिने",
+  "chartMyBuys": "अहाँक खरीदारी",
+  "chartMySells": "अहाँक बिक्री"
 }

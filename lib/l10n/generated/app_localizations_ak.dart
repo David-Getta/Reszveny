@@ -2406,4 +2406,19 @@ class AppLocalizationsAk extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Nea ɛsõ kɛse di kan';
+
+  @override
+  String get positionsSortGain => 'Mfaso nyinaa a ɛkorɔn di kan';
+
+  @override
+  String get positionsSortToday => 'Ɛnnɛ deɛ ɛyɛ papa di kan';
+
+  @override
+  String get chartMyBuys => 'Wo adetɔ';
+
+  @override
+  String get chartMySells => 'Wo adetɔn';
 }

@@ -2400,4 +2400,19 @@ class AppLocalizationsVi extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Lớn nhất trước';
+
+  @override
+  String get positionsSortGain => 'Lợi nhuận tổng cao nhất trước';
+
+  @override
+  String get positionsSortToday => 'Tốt nhất hôm nay trước';
+
+  @override
+  String get chartMyBuys => 'Lần mua của bạn';
+
+  @override
+  String get chartMySells => 'Lần bán của bạn';
 }

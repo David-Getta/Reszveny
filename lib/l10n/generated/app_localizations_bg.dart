@@ -2408,4 +2408,19 @@ class AppLocalizationsBg extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Най-големите първо';
+
+  @override
+  String get positionsSortGain => 'Най-голяма обща печалба първо';
+
+  @override
+  String get positionsSortToday => 'Най-добри днес първо';
+
+  @override
+  String get chartMyBuys => 'Вашите покупки';
+
+  @override
+  String get chartMySells => 'Вашите продажби';
 }

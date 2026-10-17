@@ -2416,4 +2416,19 @@ class AppLocalizationsEl extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Μεγαλύτερες πρώτα';
+
+  @override
+  String get positionsSortGain => 'Μεγαλύτερη συνολική απόδοση πρώτα';
+
+  @override
+  String get positionsSortToday => 'Καλύτερες σήμερα πρώτα';
+
+  @override
+  String get chartMyBuys => 'Οι αγορές σας';
+
+  @override
+  String get chartMySells => 'Οι πωλήσεις σας';
 }

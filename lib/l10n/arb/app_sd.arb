@@ -640,5 +640,10 @@
   "watchShare": "فهرست شيئر ڪريو",
   "watchImport": "ٽڪر شامل ڪريو",
   "watchImportHint": "ڪاما، خالي جاءِ يا نئين قطار سان الڳ ٿيل ٽڪر پيسٽ ڪريو – مثال طور، اها فهرست جيڪا ڪنهن توهان سان شيئر ڪئي هجي.",
-  "watchImported": "{count, plural, =0{ڪو به نئون شيئر ناهي} =1{1 شيئر شامل ڪيو ويو} other{{count} شيئر شامل ڪيا ويا}}"
+  "watchImported": "{count, plural, =0{ڪو به نئون شيئر ناهي} =1{1 شيئر شامل ڪيو ويو} other{{count} شيئر شامل ڪيا ويا}}",
+  "positionsSortWeight": "سڀ کان وڏا پهرين",
+  "positionsSortGain": "سڀ کان وڌيڪ ڪل منافعو پهرين",
+  "positionsSortToday": "اڄ جا بهترين پهرين",
+  "chartMyBuys": "توهان جون خريداريون",
+  "chartMySells": "توهان جا وڪرا"
 }

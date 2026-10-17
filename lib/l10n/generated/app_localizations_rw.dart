@@ -2415,4 +2415,19 @@ class AppLocalizationsRw extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Ibinini cyane mbere';
+
+  @override
+  String get positionsSortGain => 'Inyungu rusange nini mbere';
+
+  @override
+  String get positionsSortToday => 'Ibyiza by\'uyu munsi mbere';
+
+  @override
+  String get chartMyBuys => 'Ibyo waguze';
+
+  @override
+  String get chartMySells => 'Ibyo wagurishije';
 }

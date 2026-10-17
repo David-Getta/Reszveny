@@ -640,5 +640,10 @@
   "watchShare": "Abelana lenaneo",
   "watchImport": "Oketša matšhwao a ticker",
   "watchImportHint": "Kgomaretša matšhwao a ticker ao a arogantšwego ka khoma, sekgoba goba methalo ye mefsa – mohlala, lenaneo leo motho o mongwe a le abelanego le wena.",
-  "watchImported": "{count, plural, =0{Ga go na dišere tše mpsha} =1{Go okeditšwe šere e 1} other{Go okeditšwe dišere tše {count}}}"
+  "watchImported": "{count, plural, =0{Ga go na dišere tše mpsha} =1{Go okeditšwe šere e 1} other{Go okeditšwe dišere tše {count}}}",
+  "positionsSortWeight": "Tše kgolo kudu pele",
+  "positionsSortGain": "Poelo ka moka ye kgolo pele",
+  "positionsSortToday": "Tše kaone lehono pele",
+  "chartMyBuys": "Tše o di rekilego",
+  "chartMySells": "Tše o di rekišitšego"
 }

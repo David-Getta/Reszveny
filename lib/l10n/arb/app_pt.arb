@@ -640,5 +640,10 @@
   "watchShare": "Compartilhar lista",
   "watchImport": "Adicionar tickers",
   "watchImportHint": "Cole tickers separados por vírgulas, espaços ou quebras de linha – por exemplo, uma lista que alguém compartilhou com você.",
-  "watchImported": "{count, plural, =0{Nenhuma ação nova} =1{1 ação adicionada} other{{count} ações adicionadas}}"
+  "watchImported": "{count, plural, =0{Nenhuma ação nova} =1{1 ação adicionada} other{{count} ações adicionadas}}",
+  "positionsSortWeight": "Maiores primeiro",
+  "positionsSortGain": "Maior retorno total primeiro",
+  "positionsSortToday": "Melhores de hoje primeiro",
+  "chartMyBuys": "Suas compras",
+  "chartMySells": "Suas vendas"
 }

@@ -640,5 +640,10 @@
   "watchShare": "Yabelana ngohlu",
   "watchImport": "Engeza ama-ticker",
   "watchImportHint": "Namathisela ama-ticker ahlukaniswe ngokhefana, izikhala noma imigqa emisha – isibonelo, uhlu othile abelane nawe ngalo.",
-  "watchImported": "{count, plural, =0{Awekho amasheya amasha} =1{Kwengezwe isheya elilodwa} other{Kwengezwe amasheya angu-{count}}}"
+  "watchImported": "{count, plural, =0{Awekho amasheya amasha} =1{Kwengezwe isheya elilodwa} other{Kwengezwe amasheya angu-{count}}}",
+  "positionsSortWeight": "Ezinkulu kakhulu kuqala",
+  "positionsSortGain": "Inzuzo ephelele ephezulu kuqala",
+  "positionsSortToday": "Ezihamba phambili namuhla kuqala",
+  "chartMyBuys": "Okuthengile",
+  "chartMySells": "Okuthengisile"
 }

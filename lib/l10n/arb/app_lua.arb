@@ -640,5 +640,10 @@
   "watchShare": "Abanya liste",
   "watchImport": "Bueja bimanyinu bia ticker",
   "watchImportHint": "Teka bimanyinu bia ticker bitapuluke ne virgule, mpata anyi mulongo mupiamupia – bu mudi liste udi muntu mukuabanyine.",
-  "watchImported": "{count, plural, =0{Kakuena aksio mupiamupia} =1{Aksio 1 yabuejibua} other{Aksio {count} yabuejibua}}"
+  "watchImported": "{count, plural, =0{Kakuena aksio mupiamupia} =1{Aksio 1 yabuejibua} other{Aksio {count} yabuejibua}}",
+  "positionsSortWeight": "Bidi binene bikole kumpala",
+  "positionsSortGain": "Dipeta dionso dikole kumpala",
+  "positionsSortToday": "Bidi bimpe lelu kumpala",
+  "chartMyBuys": "Biuvua musumbe",
+  "chartMySells": "Biuvua mupane"
 }

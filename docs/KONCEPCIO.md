@@ -243,6 +243,8 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 5bk | Portfólió-riasztás (asztali értesítés): ha a teljes portfólió egy nap alatt legalább ±2 / 3 / 5%-ot mozdul, naponta egyszer szól, a legnagyobb mozgóval; hétvégén és ugyanarra a mozgásra nem ismétel | ✅ kész |
 | 5bl | „Mi lett volna, ha befektetsz?” a részvény oldalán: egy választható összeg mai értéke 1, 3 vagy 5 év után (csak árfolyam, osztalék és költség nélkül) | ✅ kész |
 | 5bm | Kedvencek megosztása és beillesztése: a lista tickerei szövegként megoszthatók, és beillesztett tickerek (vessző, szóköz, új sor, $AAPL) egyszerre felvehetők a kedvencekhez és a kiválasztott listára | ✅ kész |
+| 5bn | Portfólió-pozíciók rendezése: legnagyobb elöl, legjobb összhozam, legjobb mai mozgás vagy ticker szerint (az ár nélküliek a végén) | ✅ kész |
+| 5bo | Saját vételek (▲) és eladások (▼) a részvény árfolyamgrafikonján, jelmagyarázattal, ha a látható időtávba esnek | ✅ kész |
 | 5j | Telefonos háttér-értesítés (riasztás) szerverről, APNs / FCM | 🟡 első lépés kész: a szerver 10 percenként nézi a belépett fiókok szinkronizált riasztásait, és e-mailben szól (csukott appnál is, kikapcsolható); a telefonos push (APNs / FCM) a Firebase-projekt és az Apple-kulcs után |
 | 5k | Bolti adatlapok 120 nyelven, képernyőképek, ikon, előnézeti videó | 🟡 adatlap-szövegek 70 bolti nyelven (fastlane-mappa, `docs/BOLTI_ADATLAP.md`), feliratos bolti képek a teszt-harnessből a boltok méreteiben; előnézeti videó és a nem latin írású képek a natív buildből később |
 

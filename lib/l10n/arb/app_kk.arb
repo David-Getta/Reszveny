@@ -640,5 +640,10 @@
   "watchShare": "Тізіммен бөлісу",
   "watchImport": "Тикер қосу",
   "watchImportHint": "Тикерлерді үтір, бос орын немесе жаңа жол арқылы бөліп қойыңыз – мысалы, біреу сізбен бөліскен тізімді.",
-  "watchImported": "{count, plural, =0{Жаңа акция жоқ} =1{1 акция қосылды} other{{count} акция қосылды}}"
+  "watchImported": "{count, plural, =0{Жаңа акция жоқ} =1{1 акция қосылды} other{{count} акция қосылды}}",
+  "positionsSortWeight": "Ең ірілері алдымен",
+  "positionsSortGain": "Ең жоғары жалпы табыс алдымен",
+  "positionsSortToday": "Бүгінгі үздіктер алдымен",
+  "chartMyBuys": "Сіздің сатып алуларыңыз",
+  "chartMySells": "Сіздің сатуларыңыз"
 }

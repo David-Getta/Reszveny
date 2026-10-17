@@ -2412,4 +2412,19 @@ class AppLocalizationsHu extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Legnagyobb elöl';
+
+  @override
+  String get positionsSortGain => 'Legjobb összhozam elöl';
+
+  @override
+  String get positionsSortToday => 'Legjobb mai mozgás elöl';
+
+  @override
+  String get chartMyBuys => 'Vételeid';
+
+  @override
+  String get chartMySells => 'Eladásaid';
 }

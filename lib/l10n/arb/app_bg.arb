@@ -640,5 +640,10 @@
   "watchShare": "Споделяне на списъка",
   "watchImport": "Добавяне на тикери",
   "watchImportHint": "Поставете тикери, разделени със запетаи, интервали или нови редове – например списък, който някой е споделил с вас.",
-  "watchImported": "{count, plural, =0{Няма нови акции} =1{Добавена е 1 акция} other{Добавени са {count} акции}}"
+  "watchImported": "{count, plural, =0{Няма нови акции} =1{Добавена е 1 акция} other{Добавени са {count} акции}}",
+  "positionsSortWeight": "Най-големите първо",
+  "positionsSortGain": "Най-голяма обща печалба първо",
+  "positionsSortToday": "Най-добри днес първо",
+  "chartMyBuys": "Вашите покупки",
+  "chartMySells": "Вашите продажби"
 }

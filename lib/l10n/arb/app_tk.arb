@@ -640,5 +640,10 @@
   "watchShare": "Sanawy paýlaş",
   "watchImport": "Tiker goş",
   "watchImportHint": "Tikerleri otur, boşluk ýa-da täze setir bilen bölüp goý – meselem, kimdir biriniň saňa paýlaşan sanawyny.",
-  "watchImported": "{count, plural, =0{Täze paýnama ýok} =1{1 paýnama goşuldy} other{{count} paýnama goşuldy}}"
+  "watchImported": "{count, plural, =0{Täze paýnama ýok} =1{1 paýnama goşuldy} other{{count} paýnama goşuldy}}",
+  "positionsSortWeight": "Iň ulular ilki",
+  "positionsSortGain": "Iň ýokary jemi girdeji ilki",
+  "positionsSortToday": "Şu günüň iň gowulary ilki",
+  "chartMyBuys": "Satyn alyşlaryňyz",
+  "chartMySells": "Satuwlaryňyz"
 }

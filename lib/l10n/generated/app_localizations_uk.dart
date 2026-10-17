@@ -2475,4 +2475,19 @@ class AppLocalizationsUk extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Спершу найбільші';
+
+  @override
+  String get positionsSortGain => 'Спершу найвища загальна дохідність';
+
+  @override
+  String get positionsSortToday => 'Спершу найкращі за сьогодні';
+
+  @override
+  String get chartMyBuys => 'Ваші купівлі';
+
+  @override
+  String get chartMySells => 'Ваші продажі';
 }

@@ -640,5 +640,10 @@
   "watchShare": "Pín àkójọ náà",
   "watchImport": "Ṣàfikún àmì ìpín",
   "watchImportHint": "Lẹ àwọn àmì ìpín tí a fi kọ́mà, àlàfo tàbí ìlà tuntun yà sọ́tọ̀ – fún àpẹẹrẹ, àkójọ tí ẹnìkan pín fún ọ.",
-  "watchImported": "{count, plural, =0{Kò sí ìpín tuntun} =1{A ti fi ìpín 1 kún un} other{A ti fi ìpín {count} kún un}}"
+  "watchImported": "{count, plural, =0{Kò sí ìpín tuntun} =1{A ti fi ìpín 1 kún un} other{A ti fi ìpín {count} kún un}}",
+  "positionsSortWeight": "Àwọn tó tóbi jù lọ kọ́kọ́",
+  "positionsSortGain": "Èrè àpapọ̀ tó ga jù lọ kọ́kọ́",
+  "positionsSortToday": "Àwọn tó dára jù lónìí kọ́kọ́",
+  "chartMyBuys": "Àwọn ìrajà rẹ",
+  "chartMySells": "Àwọn ìtajà rẹ"
 }

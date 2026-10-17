@@ -640,5 +640,10 @@
   "watchShare": "Lisi nin tila",
   "watchImport": "Aksiyɔn taamasiyɛnw fara a kan",
   "watchImportHint": "Aksiyɔn taamasiyɛnw bila, u faranni ni virgule, yɔrɔ lankolon walima sira kura ye – misali la, lisi min mɔgɔ dɔ ye tila i ni.",
-  "watchImported": "{count, plural, =0{Aksiyɔn kura si tɛ} =1{Aksiyɔn 1 farala a kan} other{Aksiyɔn {count} farala a kan}}"
+  "watchImported": "{count, plural, =0{Aksiyɔn kura si tɛ} =1{Aksiyɔn 1 farala a kan} other{Aksiyɔn {count} farala a kan}}",
+  "positionsSortWeight": "Minnu ka bon kosɛbɛ fɔlɔ",
+  "positionsSortGain": "Tɔnɔ bɛɛ ka bon kosɛbɛ fɔlɔ",
+  "positionsSortToday": "Bi minnu ka ɲi kosɛbɛ fɔlɔ",
+  "chartMyBuys": "I ka sanniw",
+  "chartMySells": "I ka feereliw"
 }

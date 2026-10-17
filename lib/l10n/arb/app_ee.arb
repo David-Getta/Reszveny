@@ -640,5 +640,10 @@
   "watchShare": "Ma xexlẽdzesi la",
   "watchImport": "Tsɔ ticker dzesiwo kpe ɖe eŋu",
   "watchImportHint": "Tsɔ ticker dzesiwo de eme, eye nàma wo kple koma, teƒe ƒuƒlu alo fli yeye – le kpɔɖeŋu me, xexlẽdzesi aɖe si ame aɖe ma na wò.",
-  "watchImported": "{count, plural, =0{Aksiɔn yeye aɖeke meli o} =1{Wotsɔ aksiɔn 1 kpe ɖe eŋu} other{Wotsɔ aksiɔn {count} kpe ɖe eŋu}}"
+  "watchImported": "{count, plural, =0{Aksiɔn yeye aɖeke meli o} =1{Wotsɔ aksiɔn 1 kpe ɖe eŋu} other{Wotsɔ aksiɔn {count} kpe ɖe eŋu}}",
+  "positionsSortWeight": "Esiwo lolo wu gbã",
+  "positionsSortGain": "Viɖe blibo gãtɔ gbã",
+  "positionsSortToday": "Egbe tɔ nyuitɔwo gbã",
+  "chartMyBuys": "Wò nuƒeƒlewo",
+  "chartMySells": "Wò nudzadzrawo"
 }

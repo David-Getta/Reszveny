@@ -640,5 +640,10 @@
   "watchShare": "Lista megosztása",
   "watchImport": "Tickerek hozzáadása",
   "watchImportHint": "Illeszd be a tickereket vesszővel, szóközzel vagy új sorral elválasztva – például egy listát, amit valaki megosztott veled.",
-  "watchImported": "{count, plural, =0{Nincs új részvény} =1{1 részvény hozzáadva} other{{count} részvény hozzáadva}}"
+  "watchImported": "{count, plural, =0{Nincs új részvény} =1{1 részvény hozzáadva} other{{count} részvény hozzáadva}}",
+  "positionsSortWeight": "Legnagyobb elöl",
+  "positionsSortGain": "Legjobb összhozam elöl",
+  "positionsSortToday": "Legjobb mai mozgás elöl",
+  "chartMyBuys": "Vételeid",
+  "chartMySells": "Eladásaid"
 }

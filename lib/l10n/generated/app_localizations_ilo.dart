@@ -2425,4 +2425,19 @@ class AppLocalizationsIlo extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Kadakkelan umuna';
+
+  @override
+  String get positionsSortGain => 'Kangatuan a dagup a ganansia umuna';
+
+  @override
+  String get positionsSortToday => 'Kasayaatan ita nga aldaw umuna';
+
+  @override
+  String get chartMyBuys => 'Dagiti gatangmo';
+
+  @override
+  String get chartMySells => 'Dagiti inlakom';
 }

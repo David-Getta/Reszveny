@@ -2405,4 +2405,19 @@ class AppLocalizationsHt extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Pi gwo an premye';
+
+  @override
+  String get positionsSortGain => 'Pi bon randman total an premye';
+
+  @override
+  String get positionsSortToday => 'Pi bon jodi a an premye';
+
+  @override
+  String get chartMyBuys => 'Acha ou yo';
+
+  @override
+  String get chartMySells => 'Vant ou yo';
 }

@@ -640,5 +640,10 @@
   "watchShare": "यादी शेअर करा",
   "watchImport": "टिकर जोडा",
   "watchImportHint": "स्वल्पविराम, स्पेस किंवा नवीन ओळीने वेगळे केलेले टिकर पेस्ट करा – उदाहरणार्थ, कोणीतरी तुमच्यासोबत शेअर केलेली यादी.",
-  "watchImported": "{count, plural, =0{कोणतेही नवीन शेअर नाहीत} =1{1 शेअर जोडला} other{{count} शेअर जोडले}}"
+  "watchImported": "{count, plural, =0{कोणतेही नवीन शेअर नाहीत} =1{1 शेअर जोडला} other{{count} शेअर जोडले}}",
+  "positionsSortWeight": "सर्वांत मोठे आधी",
+  "positionsSortGain": "सर्वाधिक एकूण परतावा आधी",
+  "positionsSortToday": "आजचे सर्वोत्तम आधी",
+  "chartMyBuys": "तुमची खरेदी",
+  "chartMySells": "तुमची विक्री"
 }

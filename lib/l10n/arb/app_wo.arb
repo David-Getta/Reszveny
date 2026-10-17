@@ -640,5 +640,10 @@
   "watchShare": "Séddoo limm bi",
   "watchImport": "Yokk màndargay aksiyoŋ",
   "watchImportHint": "Taqal màndargay aksiyoŋ yu ñu xàjjale ak wirgil, barab bu dëng walla rëdd bu bees – misaal, limm bu kenn séddoo ak yow.",
-  "watchImported": "{count, plural, =0{Amul aksiyoŋ bu bees} =1{Yokk nañu 1 aksiyoŋ} other{Yokk nañu {count} aksiyoŋ}}"
+  "watchImported": "{count, plural, =0{Amul aksiyoŋ bu bees} =1{Yokk nañu 1 aksiyoŋ} other{Yokk nañu {count} aksiyoŋ}}",
+  "positionsSortWeight": "Yi gëna mag jëkk",
+  "positionsSortGain": "Benefis bu gëna bari jëkk",
+  "positionsSortToday": "Yi gëna baax tey jëkk",
+  "chartMyBuys": "Say jënd",
+  "chartMySells": "Say jaay"
 }

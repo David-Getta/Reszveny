@@ -2404,4 +2404,19 @@ class AppLocalizationsBm extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Minnu ka bon kosɛbɛ fɔlɔ';
+
+  @override
+  String get positionsSortGain => 'Tɔnɔ bɛɛ ka bon kosɛbɛ fɔlɔ';
+
+  @override
+  String get positionsSortToday => 'Bi minnu ka ɲi kosɛbɛ fɔlɔ';
+
+  @override
+  String get chartMyBuys => 'I ka sanniw';
+
+  @override
+  String get chartMySells => 'I ka feereliw';
 }

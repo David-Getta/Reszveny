@@ -640,5 +640,10 @@
   "watchShare": "リストを共有",
   "watchImport": "ティッカーを追加",
   "watchImportHint": "ティッカーシンボルをカンマ、スペース、または改行で区切って貼り付けてください（例：誰かから共有されたリスト）。",
-  "watchImported": "{count, plural, =0{新しい銘柄はありません} =1{1 銘柄を追加しました} other{{count} 銘柄を追加しました}}"
+  "watchImported": "{count, plural, =0{新しい銘柄はありません} =1{1 銘柄を追加しました} other{{count} 銘柄を追加しました}}",
+  "positionsSortWeight": "評価額の大きい順",
+  "positionsSortGain": "トータルリターンの高い順",
+  "positionsSortToday": "本日の騰落率の高い順",
+  "chartMyBuys": "あなたの購入",
+  "chartMySells": "あなたの売却"
 }

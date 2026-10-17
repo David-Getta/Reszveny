@@ -2421,4 +2421,19 @@ class AppLocalizationsHil extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Pinakadako anay';
+
+  @override
+  String get positionsSortGain => 'Pinakadako nga total nga ganansya anay';
+
+  @override
+  String get positionsSortToday => 'Pinakamaayo subong anay';
+
+  @override
+  String get chartMyBuys => 'Imo mga ginbakal';
+
+  @override
+  String get chartMySells => 'Imo mga ginbaligya';
 }

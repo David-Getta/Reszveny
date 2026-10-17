@@ -2474,4 +2474,19 @@ class AppLocalizationsPl extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Największe najpierw';
+
+  @override
+  String get positionsSortGain => 'Najwyższa stopa zwrotu najpierw';
+
+  @override
+  String get positionsSortToday => 'Najlepsze dziś najpierw';
+
+  @override
+  String get chartMyBuys => 'Twoje zakupy';
+
+  @override
+  String get chartMySells => 'Twoje sprzedaże';
 }

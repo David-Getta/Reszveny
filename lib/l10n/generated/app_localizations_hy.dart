@@ -2414,4 +2414,20 @@ class AppLocalizationsHy extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Ամենամեծերը սկզբում';
+
+  @override
+  String get positionsSortGain =>
+      'Ամենաբարձր ընդհանուր եկամտաբերությունը սկզբում';
+
+  @override
+  String get positionsSortToday => 'Այսօրվա լավագույնները սկզբում';
+
+  @override
+  String get chartMyBuys => 'Ձեր գնումները';
+
+  @override
+  String get chartMySells => 'Ձեր վաճառքները';
 }

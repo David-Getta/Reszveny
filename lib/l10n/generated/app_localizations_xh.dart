@@ -2418,4 +2418,19 @@ class AppLocalizationsXh extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Ezinkulu kakhulu kuqala';
+
+  @override
+  String get positionsSortGain => 'Eyona nzuzo iphelele kuqala';
+
+  @override
+  String get positionsSortToday => 'Ezona zilungileyo namhlanje kuqala';
+
+  @override
+  String get chartMyBuys => 'Oko ukuthengileyo';
+
+  @override
+  String get chartMySells => 'Oko ukuthengisileyo';
 }

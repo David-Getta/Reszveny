@@ -2410,4 +2410,19 @@ class AppLocalizationsSu extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Panggedéna heula';
+
+  @override
+  String get positionsSortGain => 'Hasil total pangluhurna heula';
+
+  @override
+  String get positionsSortToday => 'Pangalusna poé ieu heula';
+
+  @override
+  String get chartMyBuys => 'Pameulian anjeun';
+
+  @override
+  String get chartMySells => 'Penjualan anjeun';
 }

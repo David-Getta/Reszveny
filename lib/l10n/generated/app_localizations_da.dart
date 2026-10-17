@@ -2405,4 +2405,19 @@ class AppLocalizationsDa extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Største først';
+
+  @override
+  String get positionsSortGain => 'Højeste samlede afkast først';
+
+  @override
+  String get positionsSortToday => 'Bedste i dag først';
+
+  @override
+  String get chartMyBuys => 'Dine køb';
+
+  @override
+  String get chartMySells => 'Dine salg';
 }

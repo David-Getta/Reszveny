@@ -640,5 +640,10 @@
   "watchShare": "Shiriki orodha",
   "watchImport": "Ongeza ticker",
   "watchImportHint": "Bandika ticker zilizotenganishwa kwa koma, nafasi au mistari mipya – kwa mfano orodha ambayo mtu amekushirikisha.",
-  "watchImported": "{count, plural, =0{Hakuna hisa mpya} =1{Hisa 1 imeongezwa} other{Hisa {count} zimeongezwa}}"
+  "watchImported": "{count, plural, =0{Hakuna hisa mpya} =1{Hisa 1 imeongezwa} other{Hisa {count} zimeongezwa}}",
+  "positionsSortWeight": "Kubwa zaidi kwanza",
+  "positionsSortGain": "Faida ya jumla kubwa zaidi kwanza",
+  "positionsSortToday": "Bora zaidi leo kwanza",
+  "chartMyBuys": "Ununuzi wako",
+  "chartMySells": "Mauzo yako"
 }

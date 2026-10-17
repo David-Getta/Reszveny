@@ -2408,4 +2408,19 @@ class AppLocalizationsKu extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Yên herî mezin pêşî';
+
+  @override
+  String get positionsSortGain => 'Qezenca giştî ya herî zêde pêşî';
+
+  @override
+  String get positionsSortToday => 'Yên herî baş ên îro pêşî';
+
+  @override
+  String get chartMyBuys => 'Kirînên te';
+
+  @override
+  String get chartMySells => 'Firotinên te';
 }

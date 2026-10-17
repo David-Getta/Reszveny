@@ -2293,6 +2293,21 @@ class AppLocalizationsZh extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => '市值最大优先';
+
+  @override
+  String get positionsSortGain => '总收益率最高优先';
+
+  @override
+  String get positionsSortToday => '今日表现最佳优先';
+
+  @override
+  String get chartMyBuys => '你的买入';
+
+  @override
+  String get chartMySells => '你的卖出';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -4582,4 +4597,19 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => '市值最大優先';
+
+  @override
+  String get positionsSortGain => '總回報最高優先';
+
+  @override
+  String get positionsSortToday => '今日表現最佳優先';
+
+  @override
+  String get chartMyBuys => '你的買入';
+
+  @override
+  String get chartMySells => '你的賣出';
 }

@@ -2401,4 +2401,19 @@ class AppLocalizationsWo extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Yi gëna mag jëkk';
+
+  @override
+  String get positionsSortGain => 'Benefis bu gëna bari jëkk';
+
+  @override
+  String get positionsSortToday => 'Yi gëna baax tey jëkk';
+
+  @override
+  String get chartMyBuys => 'Say jënd';
+
+  @override
+  String get chartMySells => 'Say jaay';
 }

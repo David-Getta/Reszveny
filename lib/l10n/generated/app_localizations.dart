@@ -4182,6 +4182,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{count, plural, =0{No new stocks} =1{1 stock added} other{{count} stocks added}}'**
   String watchImported(int count);
+
+  /// No description provided for @positionsSortWeight.
+  ///
+  /// In en, this message translates to:
+  /// **'Largest first'**
+  String get positionsSortWeight;
+
+  /// No description provided for @positionsSortGain.
+  ///
+  /// In en, this message translates to:
+  /// **'Best total return first'**
+  String get positionsSortGain;
+
+  /// No description provided for @positionsSortToday.
+  ///
+  /// In en, this message translates to:
+  /// **'Best today first'**
+  String get positionsSortToday;
+
+  /// No description provided for @chartMyBuys.
+  ///
+  /// In en, this message translates to:
+  /// **'Your buys'**
+  String get chartMyBuys;
+
+  /// No description provided for @chartMySells.
+  ///
+  /// In en, this message translates to:
+  /// **'Your sales'**
+  String get chartMySells;
 }
 
 class _AppLocalizationsDelegate

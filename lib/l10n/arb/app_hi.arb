@@ -640,5 +640,10 @@
   "watchShare": "सूची शेयर करें",
   "watchImport": "टिकर जोड़ें",
   "watchImportHint": "कॉमा, स्पेस या नई लाइन से अलग किए गए टिकर पेस्ट करें – जैसे कोई सूची जो किसी ने आपके साथ शेयर की हो।",
-  "watchImported": "{count, plural, =0{कोई नया स्टॉक नहीं} =1{1 स्टॉक जोड़ा गया} other{{count} स्टॉक जोड़े गए}}"
+  "watchImported": "{count, plural, =0{कोई नया स्टॉक नहीं} =1{1 स्टॉक जोड़ा गया} other{{count} स्टॉक जोड़े गए}}",
+  "positionsSortWeight": "सबसे बड़े पहले",
+  "positionsSortGain": "सबसे ज़्यादा कुल रिटर्न वाले पहले",
+  "positionsSortToday": "आज के सबसे अच्छे पहले",
+  "chartMyBuys": "आपकी खरीदारी",
+  "chartMySells": "आपकी बिक्री"
 }

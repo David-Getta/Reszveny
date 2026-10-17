@@ -640,5 +640,10 @@
   "watchShare": "I-share ang lista",
   "watchImport": "Pagdugang og mga ticker",
   "watchImportHint": "I-paste ang mga ticker nga gibulag sa comma, space o bag-ong linya – pananglitan, usa ka lista nga gi-share kanimo sa usa ka tawo.",
-  "watchImported": "{count, plural, =0{Walay bag-ong stock} =1{Nadugang ang 1 ka stock} other{Nadugang ang {count} ka stock}}"
+  "watchImported": "{count, plural, =0{Walay bag-ong stock} =1{Nadugang ang 1 ka stock} other{Nadugang ang {count} ka stock}}",
+  "positionsSortWeight": "Pinakadako una",
+  "positionsSortGain": "Pinakataas nga total nga ganansya una",
+  "positionsSortToday": "Pinakamaayo karon una",
+  "chartMyBuys": "Imong mga pagpalit",
+  "chartMySells": "Imong mga gibaligya"
 }

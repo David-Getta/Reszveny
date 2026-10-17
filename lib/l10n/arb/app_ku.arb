@@ -640,5 +640,10 @@
   "watchShare": "Lîsteyê parve bike",
   "watchImport": "Sembolên pişkan zêde bike",
   "watchImportHint": "Sembolên pişkan bi bêhnok, valahî an rêzên nû veqetandî bixe – wek mînak lîsteyek ku kesekî bi te re parve kiriye.",
-  "watchImported": "{count, plural, =0{Pişkên nû tune ne} =1{1 pişk hat zêdekirin} other{{count} pişk hatin zêdekirin}}"
+  "watchImported": "{count, plural, =0{Pişkên nû tune ne} =1{1 pişk hat zêdekirin} other{{count} pişk hatin zêdekirin}}",
+  "positionsSortWeight": "Yên herî mezin pêşî",
+  "positionsSortGain": "Qezenca giştî ya herî zêde pêşî",
+  "positionsSortToday": "Yên herî baş ên îro pêşî",
+  "chartMyBuys": "Kirînên te",
+  "chartMySells": "Firotinên te"
 }

@@ -2445,4 +2445,19 @@ class AppLocalizationsRo extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Cele mai mari întâi';
+
+  @override
+  String get positionsSortGain => 'Cel mai mare randament total întâi';
+
+  @override
+  String get positionsSortToday => 'Cele mai bune azi întâi';
+
+  @override
+  String get chartMyBuys => 'Cumpărările tale';
+
+  @override
+  String get chartMySells => 'Vânzările tale';
 }

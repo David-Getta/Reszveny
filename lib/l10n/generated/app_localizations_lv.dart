@@ -2447,4 +2447,19 @@ class AppLocalizationsLv extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Lielākās vispirms';
+
+  @override
+  String get positionsSortGain => 'Lielākā kopējā peļņa vispirms';
+
+  @override
+  String get positionsSortToday => 'Labākās šodien vispirms';
+
+  @override
+  String get chartMyBuys => 'Jūsu pirkumi';
+
+  @override
+  String get chartMySells => 'Jūsu pārdošanas';
 }

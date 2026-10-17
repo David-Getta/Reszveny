@@ -2414,4 +2414,19 @@ class AppLocalizationsLua extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Bidi binene bikole kumpala';
+
+  @override
+  String get positionsSortGain => 'Dipeta dionso dikole kumpala';
+
+  @override
+  String get positionsSortToday => 'Bidi bimpe lelu kumpala';
+
+  @override
+  String get chartMyBuys => 'Biuvua musumbe';
+
+  @override
+  String get chartMySells => 'Biuvua mupane';
 }

@@ -640,5 +640,10 @@
   "watchShare": "Tarree qoodi",
   "watchImport": "Mallattoo aksiyoonaa dabali",
   "watchImportHint": "Mallattoo aksiyoonaa qoodduu, iddoo duwwaa ykn sarara haaraan addaan baafaman maxxansi – fakkeenyaaf tarree namni tokko siif qoode.",
-  "watchImported": "{count, plural, =0{Aksiyoonni haaraan hin jiru} =1{Aksiyoonni 1 dabalameera} other{Aksiyoonni {count} dabalamaniiru}}"
+  "watchImported": "{count, plural, =0{Aksiyoonni haaraan hin jiru} =1{Aksiyoonni 1 dabalameera} other{Aksiyoonni {count} dabalamaniiru}}",
+  "positionsSortWeight": "Kan guddaa dura",
+  "positionsSortGain": "Bu'aa waliigalaa ol aanaa dura",
+  "positionsSortToday": "Kan har'a caalu dura",
+  "chartMyBuys": "Bittaawwan kee",
+  "chartMySells": "Gurgurtaawwan kee"
 }

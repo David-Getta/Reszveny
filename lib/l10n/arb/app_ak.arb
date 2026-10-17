@@ -640,5 +640,10 @@
   "watchShare": "Kyɛ nhyehyɛe no",
   "watchImport": "Fa ticker agyiraehyɛde ka ho",
   "watchImportHint": "Fa ticker agyiraehyɛde hyɛ mu, na fa kɔma, kwan hunu anaa nkyerɛwee foforo tetew mu – sɛ nhwɛso no, nhyehyɛe bi a obi de akyɛ wo.",
-  "watchImported": "{count, plural, =0{Kyɛfa foforo biara nni hɔ} =1{Wɔde kyɛfa 1 aka ho} other{Wɔde kyɛfa {count} aka ho}}"
+  "watchImported": "{count, plural, =0{Kyɛfa foforo biara nni hɔ} =1{Wɔde kyɛfa 1 aka ho} other{Wɔde kyɛfa {count} aka ho}}",
+  "positionsSortWeight": "Nea ɛsõ kɛse di kan",
+  "positionsSortGain": "Mfaso nyinaa a ɛkorɔn di kan",
+  "positionsSortToday": "Ɛnnɛ deɛ ɛyɛ papa di kan",
+  "chartMyBuys": "Wo adetɔ",
+  "chartMySells": "Wo adetɔn"
 }

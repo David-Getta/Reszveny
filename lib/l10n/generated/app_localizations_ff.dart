@@ -2401,4 +2401,19 @@ class AppLocalizationsFf extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Ɓurɓe mawnude adan';
+
+  @override
+  String get positionsSortGain => 'Nafoore timmunde ɓurnde adan';
+
+  @override
+  String get positionsSortToday => 'Ɓurɓe moƴƴude hannde adan';
+
+  @override
+  String get chartMyBuys => 'Ko a soodi';
+
+  @override
+  String get chartMySells => 'Ko a yeeyi';
 }

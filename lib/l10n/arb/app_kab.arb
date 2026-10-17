@@ -640,5 +640,10 @@
   "watchShare": "Bḍu tabdart",
   "watchImport": "Rnu izamulen n uksyun",
   "watchImportHint": "Senṭeḍ izamulen n uksyun yettwafernen s tfeṛḍin, s tallunin neɣ s yizirigen imaynuten – amedya, tabdart i yebḍa yid-k yiwen.",
-  "watchImported": "{count, plural, =0{Ulac aksyun amaynut} =1{Yettwarna-d 1 n uksyun} other{Ttwarnan-d {count} n yiksyunen}}"
+  "watchImported": "{count, plural, =0{Ulac aksyun amaynut} =1{Yettwarna-d 1 n uksyun} other{Ttwarnan-d {count} n yiksyunen}}",
+  "positionsSortWeight": "Wid imeqqranen d imezwura",
+  "positionsSortGain": "Rrbeḥ amatu ameqqran d amezwaru",
+  "positionsSortToday": "Wid yelhan ass-a d imezwura",
+  "chartMyBuys": "Tiɣin-ik",
+  "chartMySells": "Tizenzin-ik"
 }

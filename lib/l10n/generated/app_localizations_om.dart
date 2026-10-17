@@ -2415,4 +2415,19 @@ class AppLocalizationsOm extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Kan guddaa dura';
+
+  @override
+  String get positionsSortGain => 'Bu\'aa waliigalaa ol aanaa dura';
+
+  @override
+  String get positionsSortToday => 'Kan har\'a caalu dura';
+
+  @override
+  String get chartMyBuys => 'Bittaawwan kee';
+
+  @override
+  String get chartMySells => 'Gurgurtaawwan kee';
 }

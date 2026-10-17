@@ -2380,4 +2380,19 @@ class AppLocalizationsLo extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'ໃຫຍ່ທີ່ສຸດກ່ອນ';
+
+  @override
+  String get positionsSortGain => 'ຜົນຕອບແທນລວມສູງສຸດກ່ອນ';
+
+  @override
+  String get positionsSortToday => 'ດີທີ່ສຸດມື້ນີ້ກ່ອນ';
+
+  @override
+  String get chartMyBuys => 'ການຊື້ຂອງທ່ານ';
+
+  @override
+  String get chartMySells => 'ການຂາຍຂອງທ່ານ';
 }

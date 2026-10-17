@@ -640,5 +640,10 @@
   "watchShare": "তালিকা শেয়ার করুন",
   "watchImport": "টিকার যোগ করুন",
   "watchImportHint": "কমা, স্পেস বা নতুন লাইন দিয়ে আলাদা করে টিকার পেস্ট করুন – যেমন কেউ আপনার সাথে শেয়ার করেছে এমন একটি তালিকা।",
-  "watchImported": "{count, plural, =0{কোনো নতুন স্টক নেই} =1{1টি স্টক যোগ হয়েছে} other{{count}টি স্টক যোগ হয়েছে}}"
+  "watchImported": "{count, plural, =0{কোনো নতুন স্টক নেই} =1{1টি স্টক যোগ হয়েছে} other{{count}টি স্টক যোগ হয়েছে}}",
+  "positionsSortWeight": "সবচেয়ে বড় আগে",
+  "positionsSortGain": "সর্বাধিক মোট লাভ আগে",
+  "positionsSortToday": "আজকের সেরা আগে",
+  "chartMyBuys": "আপনার ক্রয়",
+  "chartMySells": "আপনার বিক্রয়"
 }

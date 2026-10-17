@@ -309,6 +309,7 @@ class _DetailsBody extends StatelessWidget {
                       fmt: fmt,
                       currency: cur,
                       levels: chartLevels(context, d.symbol, cur),
+                      markers: chartMarkers(context, d.symbol),
                     ),
                     // Hozamok több időtávon, egy pillantással.
                     ReturnsStrip(history: d.history!, fmt: fmt),
@@ -740,6 +741,12 @@ class _FavoriteButton extends StatelessWidget {
 
 /// A grafikon kiemelt szintjei: a saját átlagár (ha van pozíció ugyanebben a
 /// devizában) és az aktív „fölé megy” / „alá esik” / követő stop riasztások szintje.
+/// A saját (dátummal rögzített) vételek és eladások a grafikonon.
+List<ChartMarker> chartMarkers(BuildContext context, String symbol) => [
+  for (final l in AppServices.of(context).portfolio.lots)
+    if (l.symbol.toUpperCase() == symbol.toUpperCase() && l.date != null) ChartMarker(date: l.date!, sell: l.sell),
+];
+
 List<ChartLevel> chartLevels(BuildContext context, String symbol, String? currency) {
   final services = AppServices.of(context);
   final l10n = AppLocalizations.of(context);

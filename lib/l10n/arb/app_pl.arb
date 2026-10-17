@@ -640,5 +640,10 @@
   "watchShare": "Udostępnij listę",
   "watchImport": "Dodaj symbole",
   "watchImportHint": "Wklej symbole giełdowe oddzielone przecinkami, spacjami lub nowymi wierszami – np. listę, którą ktoś ci udostępnił.",
-  "watchImported": "{count, plural, =0{Brak nowych akcji} =1{Dodano 1 akcję} one{Dodano {count} akcję} few{Dodano {count} akcje} many{Dodano {count} akcji} other{Dodano {count} akcji}}"
+  "watchImported": "{count, plural, =0{Brak nowych akcji} =1{Dodano 1 akcję} one{Dodano {count} akcję} few{Dodano {count} akcje} many{Dodano {count} akcji} other{Dodano {count} akcji}}",
+  "positionsSortWeight": "Największe najpierw",
+  "positionsSortGain": "Najwyższa stopa zwrotu najpierw",
+  "positionsSortToday": "Najlepsze dziś najpierw",
+  "chartMyBuys": "Twoje zakupy",
+  "chartMySells": "Twoje sprzedaże"
 }

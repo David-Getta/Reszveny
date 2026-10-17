@@ -640,5 +640,10 @@
   "watchShare": "分享列表",
   "watchImport": "添加股票代码",
   "watchImportHint": "粘贴以逗号、空格或换行分隔的股票代码，例如别人分享给你的列表。",
-  "watchImported": "{count, plural, =0{没有新股票} =1{已添加 1 只股票} other{已添加 {count} 只股票}}"
+  "watchImported": "{count, plural, =0{没有新股票} =1{已添加 1 只股票} other{已添加 {count} 只股票}}",
+  "positionsSortWeight": "市值最大优先",
+  "positionsSortGain": "总收益率最高优先",
+  "positionsSortToday": "今日表现最佳优先",
+  "chartMyBuys": "你的买入",
+  "chartMySells": "你的卖出"
 }

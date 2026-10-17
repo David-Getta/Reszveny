@@ -2472,4 +2472,19 @@ class AppLocalizationsBe extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Спачатку найбуйнейшыя';
+
+  @override
+  String get positionsSortGain => 'Спачатку найбольшы агульны прыбытак';
+
+  @override
+  String get positionsSortToday => 'Спачатку лепшыя за сёння';
+
+  @override
+  String get chartMyBuys => 'Вашы пакупкі';
+
+  @override
+  String get chartMySells => 'Вашы продажы';
 }

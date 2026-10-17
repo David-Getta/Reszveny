@@ -2386,4 +2386,19 @@ class AppLocalizationsKm extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'ធំបំផុតមុន';
+
+  @override
+  String get positionsSortGain => 'ចំណេញសរុបខ្ពស់បំផុតមុន';
+
+  @override
+  String get positionsSortToday => 'ល្អបំផុតថ្ងៃនេះមុន';
+
+  @override
+  String get chartMyBuys => 'ការទិញរបស់អ្នក';
+
+  @override
+  String get chartMySells => 'ការលក់របស់អ្នក';
 }

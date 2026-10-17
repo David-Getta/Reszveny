@@ -640,5 +640,10 @@
   "watchShare": "فہرست شیئر کریں",
   "watchImport": "ٹکر شامل کریں",
   "watchImportHint": "کوما، اسپیس یا نئی سطر سے الگ کیے گئے ٹکر پیسٹ کریں – مثلاً کوئی فہرست جو کسی نے آپ کے ساتھ شیئر کی ہو۔",
-  "watchImported": "{count, plural, =0{کوئی نیا شیئر نہیں} =1{1 شیئر شامل کر دیا گیا} other{{count} شیئرز شامل کر دیے گئے}}"
+  "watchImported": "{count, plural, =0{کوئی نیا شیئر نہیں} =1{1 شیئر شامل کر دیا گیا} other{{count} شیئرز شامل کر دیے گئے}}",
+  "positionsSortWeight": "سب سے بڑے پہلے",
+  "positionsSortGain": "سب سے زیادہ کل منافع والے پہلے",
+  "positionsSortToday": "آج کے بہترین پہلے",
+  "chartMyBuys": "آپ کی خریداریاں",
+  "chartMySells": "آپ کی فروخت"
 }

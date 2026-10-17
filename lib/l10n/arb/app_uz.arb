@@ -640,5 +640,10 @@
   "watchShare": "Roʻyxatni ulashish",
   "watchImport": "Tiker qoʻshish",
   "watchImportHint": "Tikerlarni vergul, boʻsh joy yoki yangi qator bilan ajratib joylang – masalan, kimdir siz bilan ulashgan roʻyxatni.",
-  "watchImported": "{count, plural, =0{Yangi aksiyalar yoʻq} =1{1 ta aksiya qoʻshildi} other{{count} ta aksiya qoʻshildi}}"
+  "watchImported": "{count, plural, =0{Yangi aksiyalar yoʻq} =1{1 ta aksiya qoʻshildi} other{{count} ta aksiya qoʻshildi}}",
+  "positionsSortWeight": "Eng yiriklari avval",
+  "positionsSortGain": "Eng yuqori umumiy daromad avval",
+  "positionsSortToday": "Bugungi eng yaxshilari avval",
+  "chartMyBuys": "Xaridlaringiz",
+  "chartMySells": "Sotuvlaringiz"
 }

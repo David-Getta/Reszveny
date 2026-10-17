@@ -640,5 +640,10 @@
   "watchShare": "ແບ່ງປັນລາຍການ",
   "watchImport": "ເພີ່ມສັນຍາລັກຮຸ້ນ",
   "watchImportHint": "ວາງສັນຍາລັກຮຸ້ນທີ່ແຍກດ້ວຍເຄື່ອງໝາຍຈຸດ, ຍະຫວ່າງ ຫຼື ແຖວໃໝ່ – ເຊັ່ນ ລາຍການທີ່ມີຄົນແບ່ງປັນໃຫ້ທ່ານ.",
-  "watchImported": "{count, plural, =0{ບໍ່ມີຮຸ້ນໃໝ່} =1{ເພີ່ມຮຸ້ນ 1 ລາຍການແລ້ວ} other{ເພີ່ມຮຸ້ນ {count} ລາຍການແລ້ວ}}"
+  "watchImported": "{count, plural, =0{ບໍ່ມີຮຸ້ນໃໝ່} =1{ເພີ່ມຮຸ້ນ 1 ລາຍການແລ້ວ} other{ເພີ່ມຮຸ້ນ {count} ລາຍການແລ້ວ}}",
+  "positionsSortWeight": "ໃຫຍ່ທີ່ສຸດກ່ອນ",
+  "positionsSortGain": "ຜົນຕອບແທນລວມສູງສຸດກ່ອນ",
+  "positionsSortToday": "ດີທີ່ສຸດມື້ນີ້ກ່ອນ",
+  "chartMyBuys": "ການຊື້ຂອງທ່ານ",
+  "chartMySells": "ການຂາຍຂອງທ່ານ"
 }

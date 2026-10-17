@@ -640,5 +640,10 @@
   "watchShare": "목록 공유",
   "watchImport": "티커 추가",
   "watchImportHint": "티커를 쉼표, 공백 또는 줄바꿈으로 구분해 붙여 넣으세요(예: 누군가 공유해 준 목록).",
-  "watchImported": "{count, plural, =0{새 종목이 없습니다} =1{종목 1개가 추가되었습니다} other{종목 {count}개가 추가되었습니다}}"
+  "watchImported": "{count, plural, =0{새 종목이 없습니다} =1{종목 1개가 추가되었습니다} other{종목 {count}개가 추가되었습니다}}",
+  "positionsSortWeight": "평가액 큰 순",
+  "positionsSortGain": "총수익률 높은 순",
+  "positionsSortToday": "오늘 수익률 높은 순",
+  "chartMyBuys": "내 매수",
+  "chartMySells": "내 매도"
 }

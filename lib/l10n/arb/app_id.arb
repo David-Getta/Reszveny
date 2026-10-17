@@ -640,5 +640,10 @@
   "watchShare": "Bagikan daftar",
   "watchImport": "Tambahkan kode saham",
   "watchImportHint": "Tempel kode saham yang dipisahkan dengan koma, spasi, atau baris baru – misalnya daftar yang dibagikan seseorang kepada Anda.",
-  "watchImported": "{count, plural, =0{Tidak ada saham baru} =1{1 saham ditambahkan} other{{count} saham ditambahkan}}"
+  "watchImported": "{count, plural, =0{Tidak ada saham baru} =1{1 saham ditambahkan} other{{count} saham ditambahkan}}",
+  "positionsSortWeight": "Terbesar dulu",
+  "positionsSortGain": "Imbal hasil total terbaik dulu",
+  "positionsSortToday": "Terbaik hari ini dulu",
+  "chartMyBuys": "Pembelian Anda",
+  "chartMySells": "Penjualan Anda"
 }

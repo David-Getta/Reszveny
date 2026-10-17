@@ -640,5 +640,10 @@
   "watchShare": "Поділитися списком",
   "watchImport": "Додати тікери",
   "watchImportHint": "Вставте тікери через кому, пробіл або з нового рядка – наприклад, список, яким з вами поділилися.",
-  "watchImported": "{count, plural, =0{Нових акцій немає} =1{Додано 1 акцію} one{Додано {count} акцію} few{Додано {count} акції} many{Додано {count} акцій} other{Додано {count} акції}}"
+  "watchImported": "{count, plural, =0{Нових акцій немає} =1{Додано 1 акцію} one{Додано {count} акцію} few{Додано {count} акції} many{Додано {count} акцій} other{Додано {count} акції}}",
+  "positionsSortWeight": "Спершу найбільші",
+  "positionsSortGain": "Спершу найвища загальна дохідність",
+  "positionsSortToday": "Спершу найкращі за сьогодні",
+  "chartMyBuys": "Ваші купівлі",
+  "chartMySells": "Ваші продажі"
 }

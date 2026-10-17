@@ -640,5 +640,10 @@
   "watchShare": "सूची सेयर गर्नुहोस्",
   "watchImport": "टिकर थप्नुहोस्",
   "watchImportHint": "अल्पविराम, खाली ठाउँ वा नयाँ पङ्क्तिले छुट्याइएका टिकरहरू टाँस्नुहोस् – जस्तै कसैले तपाईंसँग सेयर गरेको सूची।",
-  "watchImported": "{count, plural, =0{कुनै नयाँ सेयर छैन} =1{1 सेयर थपियो} other{{count} सेयर थपिए}}"
+  "watchImported": "{count, plural, =0{कुनै नयाँ सेयर छैन} =1{1 सेयर थपियो} other{{count} सेयर थपिए}}",
+  "positionsSortWeight": "सबैभन्दा ठूला पहिले",
+  "positionsSortGain": "सबैभन्दा बढी कुल प्रतिफल पहिले",
+  "positionsSortToday": "आजका उत्कृष्ट पहिले",
+  "chartMyBuys": "तपाईंका खरिदहरू",
+  "chartMySells": "तपाईंका बिक्रीहरू"
 }

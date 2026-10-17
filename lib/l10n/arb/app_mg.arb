@@ -640,5 +640,10 @@
   "watchShare": "Zarao ny lisitra",
   "watchImport": "Hanampy ticker",
   "watchImportHint": "Apetaho ireo ticker sarahin'ny faingo, elanelana na andalana vaovao – ohatra, lisitra nozarain'olona taminao.",
-  "watchImported": "{count, plural, =0{Tsy misy anjara vaovao} =1{Nampiana anjara 1} other{Nampiana anjara {count}}}"
+  "watchImported": "{count, plural, =0{Tsy misy anjara vaovao} =1{Nampiana anjara 1} other{Nampiana anjara {count}}}",
+  "positionsSortWeight": "Ny lehibe indrindra aloha",
+  "positionsSortGain": "Ny tombony tanteraka ambony indrindra aloha",
+  "positionsSortToday": "Ny tsara indrindra androany aloha",
+  "chartMyBuys": "Ny fividiananao",
+  "chartMySells": "Ny fivarotanao"
 }

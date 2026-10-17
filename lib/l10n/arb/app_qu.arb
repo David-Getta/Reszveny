@@ -640,5 +640,10 @@
   "watchShare": "Listata rakinakuy",
   "watchImport": "Ticker yapay",
   "watchImportHint": "Tickerkunata k'askachiy, comawan, ch'usaq k'itiwan utaq musuq siqiwan t'aqasqata – ahinataq, pipas qanwan rakinakusqan lista.",
-  "watchImported": "{count, plural, =0{Mana musuq accionkuna kanchu} =1{1 accion yapakun} other{{count} accion yapakun}}"
+  "watchImported": "{count, plural, =0{Mana musuq accionkuna kanchu} =1{1 accion yapakun} other{{count} accion yapakun}}",
+  "positionsSortWeight": "Aswan hatunkuna ñawpaqta",
+  "positionsSortGain": "Aswan tukuy ganancia ñawpaqta",
+  "positionsSortToday": "Kunan aswan allinkuna ñawpaqta",
+  "chartMyBuys": "Rantisqaykikuna",
+  "chartMySells": "Rantikusqaykikuna"
 }

@@ -2409,4 +2409,19 @@ class AppLocalizationsJv extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Paling gedhé dhisik';
+
+  @override
+  String get positionsSortGain => 'Imbal asil total paling apik dhisik';
+
+  @override
+  String get positionsSortToday => 'Paling apik dina iki dhisik';
+
+  @override
+  String get chartMyBuys => 'Tukonmu';
+
+  @override
+  String get chartMySells => 'Dodolanmu';
 }

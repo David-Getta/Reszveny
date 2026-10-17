@@ -640,5 +640,10 @@
   "watchShare": "სიის გაზიარება",
   "watchImport": "ტიკერების დამატება",
   "watchImportHint": "ჩასვით ტიკერები, გამოყოფილი მძიმით, ჰარით ან ახალი ხაზით – მაგალითად, სია, რომელიც ვიღაცამ გაგიზიარათ.",
-  "watchImported": "{count, plural, =0{ახალი აქციები არ არის} =1{დაემატა 1 აქცია} other{დაემატა {count} აქცია}}"
+  "watchImported": "{count, plural, =0{ახალი აქციები არ არის} =1{დაემატა 1 აქცია} other{დაემატა {count} აქცია}}",
+  "positionsSortWeight": "ჯერ ყველაზე დიდი",
+  "positionsSortGain": "ჯერ ყველაზე მაღალი ჯამური შემოსავალი",
+  "positionsSortToday": "ჯერ დღის საუკეთესოები",
+  "chartMyBuys": "თქვენი შენაძენები",
+  "chartMySells": "თქვენი გაყიდვები"
 }

@@ -2407,4 +2407,19 @@ class AppLocalizationsKi extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Iria nene mũno mbere';
+
+  @override
+  String get positionsSortGain => 'Uumithio wothe mũnene mbere';
+
+  @override
+  String get positionsSortToday => 'Iria njega ũmũthĩ mbere';
+
+  @override
+  String get chartMyBuys => 'Ũgũri waku';
+
+  @override
+  String get chartMySells => 'Wendia waku';
 }

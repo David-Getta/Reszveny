@@ -2406,4 +2406,19 @@ class AppLocalizationsMr extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'सर्वांत मोठे आधी';
+
+  @override
+  String get positionsSortGain => 'सर्वाधिक एकूण परतावा आधी';
+
+  @override
+  String get positionsSortToday => 'आजचे सर्वोत्तम आधी';
+
+  @override
+  String get chartMyBuys => 'तुमची खरेदी';
+
+  @override
+  String get chartMySells => 'तुमची विक्री';
 }

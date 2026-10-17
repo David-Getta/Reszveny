@@ -2398,4 +2398,19 @@ class AppLocalizationsPs extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'تر ټولو لوی لومړی';
+
+  @override
+  String get positionsSortGain => 'تر ټولو ډېره ټوله ګټه لومړی';
+
+  @override
+  String get positionsSortToday => 'د نن ورځې غوره لومړی';
+
+  @override
+  String get chartMyBuys => 'ستاسو پېرودونه';
+
+  @override
+  String get chartMySells => 'ستاسو پلورونه';
 }

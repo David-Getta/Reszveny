@@ -640,5 +640,10 @@
   "watchShare": "Compartir la lista",
   "watchImport": "Añadir símbolos",
   "watchImportHint": "Pega símbolos separados por comas, espacios o saltos de línea; por ejemplo, una lista que alguien te ha compartido.",
-  "watchImported": "{count, plural, =0{No hay acciones nuevas} =1{Se ha añadido 1 acción} other{Se han añadido {count} acciones}}"
+  "watchImported": "{count, plural, =0{No hay acciones nuevas} =1{Se ha añadido 1 acción} other{Se han añadido {count} acciones}}",
+  "positionsSortWeight": "Mayores primero",
+  "positionsSortGain": "Mayor rentabilidad total primero",
+  "positionsSortToday": "Mejores de hoy primero",
+  "chartMyBuys": "Tus compras",
+  "chartMySells": "Tus ventas"
 }

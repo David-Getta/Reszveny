@@ -2395,4 +2395,19 @@ class AppLocalizationsBo extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'ཆེ་ཤོས་སྔོན་ལ';
+
+  @override
+  String get positionsSortGain => 'ཁྱོན་བསྡོམས་ཁེ་ཆེ་ཤོས་སྔོན་ལ';
+
+  @override
+  String get positionsSortToday => 'དེ་རིང་ལེགས་ཤོས་སྔོན་ལ';
+
+  @override
+  String get chartMyBuys => 'ཁྱེད་ཀྱི་ཉོ་བ';
+
+  @override
+  String get chartMySells => 'ཁྱེད་ཀྱི་འཚོང་བ';
 }

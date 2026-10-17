@@ -2405,4 +2405,19 @@ class AppLocalizationsNe extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'सबैभन्दा ठूला पहिले';
+
+  @override
+  String get positionsSortGain => 'सबैभन्दा बढी कुल प्रतिफल पहिले';
+
+  @override
+  String get positionsSortToday => 'आजका उत्कृष्ट पहिले';
+
+  @override
+  String get chartMyBuys => 'तपाईंका खरिदहरू';
+
+  @override
+  String get chartMySells => 'तपाईंका बिक्रीहरू';
 }

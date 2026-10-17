@@ -640,5 +640,10 @@
   "watchShare": "Lijst delen",
   "watchImport": "Tickers toevoegen",
   "watchImportHint": "Plak tickers gescheiden door komma's, spaties of nieuwe regels – bijvoorbeeld een lijst die iemand met je heeft gedeeld.",
-  "watchImported": "{count, plural, =0{Geen nieuwe aandelen} =1{1 aandeel toegevoegd} other{{count} aandelen toegevoegd}}"
+  "watchImported": "{count, plural, =0{Geen nieuwe aandelen} =1{1 aandeel toegevoegd} other{{count} aandelen toegevoegd}}",
+  "positionsSortWeight": "Grootste eerst",
+  "positionsSortGain": "Hoogste totaalrendement eerst",
+  "positionsSortToday": "Beste vandaag eerst",
+  "chartMyBuys": "Jouw aankopen",
+  "chartMySells": "Jouw verkopen"
 }

@@ -2374,4 +2374,19 @@ class AppLocalizationsAm extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'ትልቁ መጀመሪያ';
+
+  @override
+  String get positionsSortGain => 'ከፍተኛ ጠቅላላ ትርፍ መጀመሪያ';
+
+  @override
+  String get positionsSortToday => 'የዛሬ ምርጥ መጀመሪያ';
+
+  @override
+  String get chartMyBuys => 'የእርስዎ ግዢዎች';
+
+  @override
+  String get chartMySells => 'የእርስዎ ሽያጮች';
 }

@@ -640,5 +640,10 @@
   "watchShare": "Siyahını paylaş",
   "watchImport": "Tiker əlavə et",
   "watchImportHint": "Tikerləri vergül, boşluq və ya yeni sətirlə ayıraraq yapışdırın – məsələn, kiminsə sizinlə paylaşdığı siyahını.",
-  "watchImported": "{count, plural, =0{Yeni səhm yoxdur} =1{1 səhm əlavə olundu} other{{count} səhm əlavə olundu}}"
+  "watchImported": "{count, plural, =0{Yeni səhm yoxdur} =1{1 səhm əlavə olundu} other{{count} səhm əlavə olundu}}",
+  "positionsSortWeight": "Ən böyüklər əvvəl",
+  "positionsSortGain": "Ən yüksək ümumi gəlir əvvəl",
+  "positionsSortToday": "Bu günün ən yaxşıları əvvəl",
+  "chartMyBuys": "Alışlarınız",
+  "chartMySells": "Satışlarınız"
 }

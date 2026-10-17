@@ -2407,4 +2407,19 @@ class AppLocalizationsKk extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Ең ірілері алдымен';
+
+  @override
+  String get positionsSortGain => 'Ең жоғары жалпы табыс алдымен';
+
+  @override
+  String get positionsSortToday => 'Бүгінгі үздіктер алдымен';
+
+  @override
+  String get chartMyBuys => 'Сіздің сатып алуларыңыз';
+
+  @override
+  String get chartMySells => 'Сіздің сатуларыңыз';
 }

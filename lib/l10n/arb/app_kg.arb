@@ -640,5 +640,10 @@
   "watchShare": "Kabula lisiti",
   "watchImport": "Yika bidimbu ya ticker",
   "watchImportHint": "Tula bidimbu ya ticker yina me kabwana na virgule, kisika ya mpamba to ndonga ya mpa – mu mbandu, lisiti yina muntu mosi me kabudila nge.",
-  "watchImported": "{count, plural, =0{Ata aksio mosi ya mpa ve} =1{Aksio 1 me kota} other{Baaksio {count} me kota}}"
+  "watchImported": "{count, plural, =0{Ata aksio mosi ya mpa ve} =1{Aksio 1 me kota} other{Baaksio {count} me kota}}",
+  "positionsSortWeight": "Yina ya nene mingi ntete",
+  "positionsSortGain": "Mbakulu ya mvimba ya mingi ntete",
+  "positionsSortToday": "Yina me sala mbote unu ntete",
+  "chartMyBuys": "Mana nge me sumba",
+  "chartMySells": "Mana nge me teka"
 }

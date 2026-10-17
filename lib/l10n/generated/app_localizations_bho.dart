@@ -2402,4 +2402,19 @@ class AppLocalizationsBho extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'सबसे बड़ा पहिले';
+
+  @override
+  String get positionsSortGain => 'सबसे बेसी कुल फायदा पहिले';
+
+  @override
+  String get positionsSortToday => 'आज के सबसे बढ़िया पहिले';
+
+  @override
+  String get chartMyBuys => 'रउरा खरीदारी';
+
+  @override
+  String get chartMySells => 'रउरा बिक्री';
 }

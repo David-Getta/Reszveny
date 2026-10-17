@@ -640,5 +640,10 @@
   "watchShare": "Gaya orodha",
   "watchImport": "Ongera ticker",
   "watchImportHint": "Ĩkĩra ticker cia hisa ciamũranĩtio na koma, kanya kana mũhari mwerũ – ta orodha ĩrĩa mũndũ angĩkũgaĩire.",
-  "watchImported": "{count, plural, =0{Gũtirĩ hisa njerũ} =1{Hisa 1 nĩ yongereirwo} other{Hisa {count} nĩ ciongereirwo}}"
+  "watchImported": "{count, plural, =0{Gũtirĩ hisa njerũ} =1{Hisa 1 nĩ yongereirwo} other{Hisa {count} nĩ ciongereirwo}}",
+  "positionsSortWeight": "Iria nene mũno mbere",
+  "positionsSortGain": "Uumithio wothe mũnene mbere",
+  "positionsSortToday": "Iria njega ũmũthĩ mbere",
+  "chartMyBuys": "Ũgũri waku",
+  "chartMySells": "Wendia waku"
 }

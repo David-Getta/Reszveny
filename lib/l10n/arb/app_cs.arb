@@ -640,5 +640,10 @@
   "watchShare": "Sdílet seznam",
   "watchImport": "Přidat tickery",
   "watchImportHint": "Vložte tickery oddělené čárkami, mezerami nebo novými řádky – třeba seznam, který s vámi někdo sdílel.",
-  "watchImported": "{count, plural, =0{Žádné nové akcie} =1{Přidána 1 akcie} few{Přidány {count} akcie} many{Přidáno {count} akcie} other{Přidáno {count} akcií}}"
+  "watchImported": "{count, plural, =0{Žádné nové akcie} =1{Přidána 1 akcie} few{Přidány {count} akcie} many{Přidáno {count} akcie} other{Přidáno {count} akcií}}",
+  "positionsSortWeight": "Největší první",
+  "positionsSortGain": "Nejvyšší celkový výnos první",
+  "positionsSortToday": "Nejlepší dnes první",
+  "chartMyBuys": "Vaše nákupy",
+  "chartMySells": "Vaše prodeje"
 }

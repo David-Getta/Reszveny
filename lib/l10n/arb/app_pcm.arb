@@ -640,5 +640,10 @@
   "watchShare": "Share di list",
   "watchImport": "Add ticker dem",
   "watchImportHint": "Paste di tickers, separate dem with comma, space or new line – like list wey person share give you.",
-  "watchImported": "{count, plural, =0{No new stock} =1{We don add 1 stock} one{We don add {count} stock} other{We don add {count} stocks}}"
+  "watchImported": "{count, plural, =0{No new stock} =1{We don add 1 stock} one{We don add {count} stock} other{We don add {count} stocks}}",
+  "positionsSortWeight": "Wetin big pass first",
+  "positionsSortGain": "Wetin gain pass overall first",
+  "positionsSortToday": "Wetin do well pass today first",
+  "chartMyBuys": "Wetin you buy",
+  "chartMySells": "Wetin you sell"
 }

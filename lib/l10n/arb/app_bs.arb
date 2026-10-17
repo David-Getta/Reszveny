@@ -640,5 +640,10 @@
   "watchShare": "Podijeli listu",
   "watchImport": "Dodaj tiker simbole",
   "watchImportHint": "Zalijepite tiker simbole odvojene zarezima, razmacima ili novim redovima – na primjer listu koju je neko podijelio s vama.",
-  "watchImported": "{count, plural, =0{Nema novih dionica} =1{Dodana je 1 dionica} one{Dodana je {count} dionica} few{Dodane su {count} dionice} other{Dodano je {count} dionica}}"
+  "watchImported": "{count, plural, =0{Nema novih dionica} =1{Dodana je 1 dionica} one{Dodana je {count} dionica} few{Dodane su {count} dionice} other{Dodano je {count} dionica}}",
+  "positionsSortWeight": "Najveće prvo",
+  "positionsSortGain": "Najveći ukupni prinos prvo",
+  "positionsSortToday": "Najbolje danas prvo",
+  "chartMyBuys": "Vaše kupovine",
+  "chartMySells": "Vaše prodaje"
 }

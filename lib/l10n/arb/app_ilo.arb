@@ -640,5 +640,10 @@
   "watchShare": "I-share ti listaan",
   "watchImport": "Agnayon kadagiti ticker",
   "watchImportHint": "I-paste dagiti ticker a nasina iti comma, space wenno baro a linia – kas pagarigan, listaan nga inshare kenka ti maysa a tao.",
-  "watchImported": "{count, plural, =0{Awan ti baro a stock} =1{Nainayon ti 1 a stock} other{Nainayon ti {count} a stock}}"
+  "watchImported": "{count, plural, =0{Awan ti baro a stock} =1{Nainayon ti 1 a stock} other{Nainayon ti {count} a stock}}",
+  "positionsSortWeight": "Kadakkelan umuna",
+  "positionsSortGain": "Kangatuan a dagup a ganansia umuna",
+  "positionsSortToday": "Kasayaatan ita nga aldaw umuna",
+  "chartMyBuys": "Dagiti gatangmo",
+  "chartMySells": "Dagiti inlakom"
 }

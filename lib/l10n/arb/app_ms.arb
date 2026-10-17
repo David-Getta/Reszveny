@@ -640,5 +640,10 @@
   "watchShare": "Kongsi senarai",
   "watchImport": "Tambah ticker",
   "watchImportHint": "Tampal ticker yang dipisahkan dengan koma, ruang atau baris baharu – contohnya senarai yang dikongsi seseorang dengan anda.",
-  "watchImported": "{count, plural, =0{Tiada saham baharu} =1{1 saham ditambah} other{{count} saham ditambah}}"
+  "watchImported": "{count, plural, =0{Tiada saham baharu} =1{1 saham ditambah} other{{count} saham ditambah}}",
+  "positionsSortWeight": "Terbesar dahulu",
+  "positionsSortGain": "Pulangan keseluruhan terbaik dahulu",
+  "positionsSortToday": "Terbaik hari ini dahulu",
+  "chartMyBuys": "Pembelian anda",
+  "chartMySells": "Jualan anda"
 }

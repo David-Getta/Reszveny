@@ -640,5 +640,10 @@
   "watchShare": "Listeyi paylaş",
   "watchImport": "Hisse sembolü ekle",
   "watchImportHint": "Hisse sembollerini virgül, boşluk veya yeni satırla ayırarak yapıştır – örneğin birinin seninle paylaştığı bir listeyi.",
-  "watchImported": "{count, plural, =0{Yeni hisse yok} =1{1 hisse eklendi} other{{count} hisse eklendi}}"
+  "watchImported": "{count, plural, =0{Yeni hisse yok} =1{1 hisse eklendi} other{{count} hisse eklendi}}",
+  "positionsSortWeight": "En büyükler önce",
+  "positionsSortGain": "En yüksek toplam getiri önce",
+  "positionsSortToday": "Bugün en iyiler önce",
+  "chartMyBuys": "Alışlarınız",
+  "chartMySells": "Satışlarınız"
 }

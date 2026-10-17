@@ -2471,4 +2471,19 @@ class AppLocalizationsSk extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Najväčšie ako prvé';
+
+  @override
+  String get positionsSortGain => 'Najvyšší celkový výnos ako prvé';
+
+  @override
+  String get positionsSortToday => 'Najlepšie dnes ako prvé';
+
+  @override
+  String get chartMyBuys => 'Vaše nákupy';
+
+  @override
+  String get chartMySells => 'Vaše predaje';
 }

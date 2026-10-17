@@ -2398,4 +2398,19 @@ class AppLocalizationsSd extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'سڀ کان وڏا پهرين';
+
+  @override
+  String get positionsSortGain => 'سڀ کان وڌيڪ ڪل منافعو پهرين';
+
+  @override
+  String get positionsSortToday => 'اڄ جا بهترين پهرين';
+
+  @override
+  String get chartMyBuys => 'توهان جون خريداريون';
+
+  @override
+  String get chartMySells => 'توهان جا وڪرا';
 }

@@ -2413,4 +2413,19 @@ class AppLocalizationsSo extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Kuwa ugu waaweyn marka hore';
+
+  @override
+  String get positionsSortGain => 'Faa\'iidada guud ee ugu badan marka hore';
+
+  @override
+  String get positionsSortToday => 'Kuwa ugu fiican maanta marka hore';
+
+  @override
+  String get chartMyBuys => 'Iibsashadaada';
+
+  @override
+  String get chartMySells => 'Iibintaada';
 }

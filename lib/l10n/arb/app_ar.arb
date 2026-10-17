@@ -640,5 +640,10 @@
   "watchShare": "مشاركة القائمة",
   "watchImport": "إضافة رموز الأسهم",
   "watchImportHint": "الصق رموز الأسهم مفصولةً بفواصل أو مسافات أو أسطر جديدة، مثل قائمة شاركها شخص ما معك.",
-  "watchImported": "{count, plural, =0{لا توجد أسهم جديدة} =1{تمت إضافة سهم واحد} =2{تمت إضافة سهمين} few{تمت إضافة {count} أسهم} many{تمت إضافة {count} سهمًا} other{تمت إضافة {count} سهم}}"
+  "watchImported": "{count, plural, =0{لا توجد أسهم جديدة} =1{تمت إضافة سهم واحد} =2{تمت إضافة سهمين} few{تمت إضافة {count} أسهم} many{تمت إضافة {count} سهمًا} other{تمت إضافة {count} سهم}}",
+  "positionsSortWeight": "الأكبر أولًا",
+  "positionsSortGain": "الأعلى عائدًا إجماليًا أولًا",
+  "positionsSortToday": "الأفضل اليوم أولًا",
+  "chartMyBuys": "مشترياتك",
+  "chartMySells": "مبيعاتك"
 }

@@ -2474,4 +2474,19 @@ class AppLocalizationsRu extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Сначала крупнейшие';
+
+  @override
+  String get positionsSortGain => 'Сначала лучшая общая доходность';
+
+  @override
+  String get positionsSortToday => 'Сначала лучшие за сегодня';
+
+  @override
+  String get chartMyBuys => 'Ваши покупки';
+
+  @override
+  String get chartMySells => 'Ваши продажи';
 }

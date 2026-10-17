@@ -2408,4 +2408,19 @@ class AppLocalizationsFi extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Suurimmat ensin';
+
+  @override
+  String get positionsSortGain => 'Suurin kokonaistuotto ensin';
+
+  @override
+  String get positionsSortToday => 'Parhaat tänään ensin';
+
+  @override
+  String get chartMyBuys => 'Ostosi';
+
+  @override
+  String get chartMySells => 'Myyntisi';
 }

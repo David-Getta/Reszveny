@@ -2410,4 +2410,19 @@ class AppLocalizationsEe extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Esiwo lolo wu gbã';
+
+  @override
+  String get positionsSortGain => 'Viɖe blibo gãtɔ gbã';
+
+  @override
+  String get positionsSortToday => 'Egbe tɔ nyuitɔwo gbã';
+
+  @override
+  String get chartMyBuys => 'Wò nuƒeƒlewo';
+
+  @override
+  String get chartMySells => 'Wò nudzadzrawo';
 }

@@ -2407,4 +2407,19 @@ class AppLocalizationsNb extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Største først';
+
+  @override
+  String get positionsSortGain => 'Høyest totalavkastning først';
+
+  @override
+  String get positionsSortToday => 'Best i dag først';
+
+  @override
+  String get chartMyBuys => 'Dine kjøp';
+
+  @override
+  String get chartMySells => 'Dine salg';
 }

@@ -2412,4 +2412,19 @@ class AppLocalizationsPt extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Maiores primeiro';
+
+  @override
+  String get positionsSortGain => 'Maior retorno total primeiro';
+
+  @override
+  String get positionsSortToday => 'Melhores de hoje primeiro';
+
+  @override
+  String get chartMyBuys => 'Suas compras';
+
+  @override
+  String get chartMySells => 'Suas vendas';
 }

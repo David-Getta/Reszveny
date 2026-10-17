@@ -2419,4 +2419,19 @@ class AppLocalizationsDe extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Größte zuerst';
+
+  @override
+  String get positionsSortGain => 'Höchste Gesamtrendite zuerst';
+
+  @override
+  String get positionsSortToday => 'Beste heute zuerst';
+
+  @override
+  String get chartMyBuys => 'Deine Käufe';
+
+  @override
+  String get chartMySells => 'Deine Verkäufe';
 }

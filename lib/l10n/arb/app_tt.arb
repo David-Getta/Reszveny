@@ -640,5 +640,10 @@
   "watchShare": "Исемлекне уртаклашу",
   "watchImport": "Тикерлар өстәү",
   "watchImportHint": "Тикерларны өтер, буш урын яки яңа юл белән аерып куегыз – мәсәлән, кемдер сезнең белән уртаклашкан исемлекне.",
-  "watchImported": "{count, plural, =0{Яңа акцияләр юк} =1{1 акция өстәлде} other{{count} акция өстәлде}}"
+  "watchImported": "{count, plural, =0{Яңа акцияләр юк} =1{1 акция өстәлде} other{{count} акция өстәлде}}",
+  "positionsSortWeight": "Иң зурлары башта",
+  "positionsSortGain": "Иң югары гомуми керем башта",
+  "positionsSortToday": "Бүгенге иң яхшылары башта",
+  "chartMyBuys": "Сезнең сатып алулар",
+  "chartMySells": "Сезнең сатулар"
 }

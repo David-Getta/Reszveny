@@ -877,6 +877,21 @@ void main() {
     await tester.testTextInput.receiveAction(TextInputAction.search);
     await tester.pumpAndSettle();
     await _shot(tester, 'detail_position');
+    // A saját vételek jelölése a grafikonon (5 éves nézet).
+    final legend = find.byKey(const ValueKey('chart-markers-legend'));
+    final fiveYears = find.text('5Y');
+    for (var i = 0; i < 20 && fiveYears.evaluate().isEmpty; i++) {
+      await tester.drag(find.byType(Scrollable).first, const Offset(0, -300));
+      await tester.pumpAndSettle();
+    }
+    await tester.ensureVisible(fiveYears.first);
+    await tester.pumpAndSettle();
+    await tester.tap(fiveYears.first);
+    await tester.pumpAndSettle();
+    expect(legend, findsOneWidget);
+    await Scrollable.ensureVisible(tester.element(fiveYears.first), alignment: 0.1);
+    await tester.pumpAndSettle();
+    await _shot(tester, 'detail_chart_markers');
     await tester.tap(find.byTooltip('Add to portfolio'));
     await tester.pumpAndSettle();
     await _shot(tester, 'add_to_portfolio');

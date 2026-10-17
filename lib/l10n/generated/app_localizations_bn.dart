@@ -2405,4 +2405,19 @@ class AppLocalizationsBn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'সবচেয়ে বড় আগে';
+
+  @override
+  String get positionsSortGain => 'সর্বাধিক মোট লাভ আগে';
+
+  @override
+  String get positionsSortToday => 'আজকের সেরা আগে';
+
+  @override
+  String get chartMyBuys => 'আপনার ক্রয়';
+
+  @override
+  String get chartMySells => 'আপনার বিক্রয়';
 }

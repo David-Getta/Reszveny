@@ -2462,4 +2462,19 @@ class AppLocalizationsAr extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'الأكبر أولًا';
+
+  @override
+  String get positionsSortGain => 'الأعلى عائدًا إجماليًا أولًا';
+
+  @override
+  String get positionsSortToday => 'الأفضل اليوم أولًا';
+
+  @override
+  String get chartMyBuys => 'مشترياتك';
+
+  @override
+  String get chartMySells => 'مبيعاتك';
 }

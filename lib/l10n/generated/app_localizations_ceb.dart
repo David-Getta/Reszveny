@@ -2417,4 +2417,19 @@ class AppLocalizationsCeb extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Pinakadako una';
+
+  @override
+  String get positionsSortGain => 'Pinakataas nga total nga ganansya una';
+
+  @override
+  String get positionsSortToday => 'Pinakamaayo karon una';
+
+  @override
+  String get chartMyBuys => 'Imong mga pagpalit';
+
+  @override
+  String get chartMySells => 'Imong mga gibaligya';
 }

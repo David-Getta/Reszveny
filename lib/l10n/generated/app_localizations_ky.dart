@@ -2410,4 +2410,19 @@ class AppLocalizationsKy extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Эң ирилери биринчи';
+
+  @override
+  String get positionsSortGain => 'Эң жогорку жалпы киреше биринчи';
+
+  @override
+  String get positionsSortToday => 'Бүгүнкү эң жакшылары биринчи';
+
+  @override
+  String get chartMyBuys => 'Сиздин сатып алууларыңыз';
+
+  @override
+  String get chartMySells => 'Сиздин сатууларыңыз';
 }

@@ -2412,4 +2412,19 @@ class AppLocalizationsHa extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Mafi girma farko';
+
+  @override
+  String get positionsSortGain => 'Mafi yawan riba gaba ɗaya farko';
+
+  @override
+  String get positionsSortToday => 'Mafi kyau yau farko';
+
+  @override
+  String get chartMyBuys => 'Sayayyarka';
+
+  @override
+  String get chartMySells => 'Siyarwarka';
 }

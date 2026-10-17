@@ -2420,4 +2420,19 @@ class AppLocalizationsQu extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Aswan hatunkuna ñawpaqta';
+
+  @override
+  String get positionsSortGain => 'Aswan tukuy ganancia ñawpaqta';
+
+  @override
+  String get positionsSortToday => 'Kunan aswan allinkuna ñawpaqta';
+
+  @override
+  String get chartMyBuys => 'Rantisqaykikuna';
+
+  @override
+  String get chartMySells => 'Rantikusqaykikuna';
 }

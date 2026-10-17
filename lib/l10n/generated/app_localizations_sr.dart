@@ -2452,4 +2452,19 @@ class AppLocalizationsSr extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Највеће прво';
+
+  @override
+  String get positionsSortGain => 'Највећи укупни принос прво';
+
+  @override
+  String get positionsSortToday => 'Најбоље данас прво';
+
+  @override
+  String get chartMyBuys => 'Ваше куповине';
+
+  @override
+  String get chartMySells => 'Ваше продаје';
 }

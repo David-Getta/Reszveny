@@ -2408,4 +2408,19 @@ class AppLocalizationsCkb extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'گەورەترین سەرەتا';
+
+  @override
+  String get positionsSortGain => 'زۆرترین قازانجی گشتی سەرەتا';
+
+  @override
+  String get positionsSortToday => 'باشترینی ئەمڕۆ سەرەتا';
+
+  @override
+  String get chartMyBuys => 'کڕینەکانت';
+
+  @override
+  String get chartMySells => 'فرۆشتنەکانت';
 }

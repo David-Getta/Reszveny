@@ -2402,4 +2402,19 @@ class AppLocalizationsGu extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'સૌથી મોટા પહેલા';
+
+  @override
+  String get positionsSortGain => 'સૌથી વધુ કુલ વળતર પહેલા';
+
+  @override
+  String get positionsSortToday => 'આજના શ્રેષ્ઠ પહેલા';
+
+  @override
+  String get chartMyBuys => 'તમારી ખરીદીઓ';
+
+  @override
+  String get chartMySells => 'તમારા વેચાણ';
 }

@@ -2408,4 +2408,19 @@ class AppLocalizationsTg extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Аввал калонтаринҳо';
+
+  @override
+  String get positionsSortGain => 'Аввал бештарин даромади умумӣ';
+
+  @override
+  String get positionsSortToday => 'Аввал беҳтаринҳои имрӯз';
+
+  @override
+  String get chartMyBuys => 'Харидҳои шумо';
+
+  @override
+  String get chartMySells => 'Фурӯшҳои шумо';
 }

@@ -2409,4 +2409,19 @@ class AppLocalizationsUg extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'ئەڭ چوڭلىرى ئالدىدا';
+
+  @override
+  String get positionsSortGain => 'ئومۇمىي پايدىسى ئەڭ يۇقىرىلار ئالدىدا';
+
+  @override
+  String get positionsSortToday => 'بۈگۈنكى ئەڭ ياخشىلار ئالدىدا';
+
+  @override
+  String get chartMyBuys => 'سېتىۋالغانلىرىڭىز';
+
+  @override
+  String get chartMySells => 'ساتقانلىرىڭىز';
 }

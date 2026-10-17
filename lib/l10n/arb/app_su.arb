@@ -640,5 +640,10 @@
   "watchShare": "Bagikeun daptar",
   "watchImport": "Tambahkeun kode saham",
   "watchImportHint": "Témpélkeun kode saham anu dipisahkeun ku koma, spasi atawa baris anyar – contona daptar anu dibagikeun ku batur ka anjeun.",
-  "watchImported": "{count, plural, =0{Teu aya saham anyar} =1{1 saham ditambahkeun} other{{count} saham ditambahkeun}}"
+  "watchImported": "{count, plural, =0{Teu aya saham anyar} =1{1 saham ditambahkeun} other{{count} saham ditambahkeun}}",
+  "positionsSortWeight": "Panggedéna heula",
+  "positionsSortGain": "Hasil total pangluhurna heula",
+  "positionsSortToday": "Pangalusna poé ieu heula",
+  "chartMyBuys": "Pameulian anjeun",
+  "chartMySells": "Penjualan anjeun"
 }

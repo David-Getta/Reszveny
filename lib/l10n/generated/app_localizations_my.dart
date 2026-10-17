@@ -2398,4 +2398,19 @@ class AppLocalizationsMy extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'အကြီးဆုံး အရင်';
+
+  @override
+  String get positionsSortGain => 'စုစုပေါင်းအမြတ် အများဆုံး အရင်';
+
+  @override
+  String get positionsSortToday => 'ယနေ့ အကောင်းဆုံး အရင်';
+
+  @override
+  String get chartMyBuys => 'သင့်ဝယ်ယူမှုများ';
+
+  @override
+  String get chartMySells => 'သင့်ရောင်းချမှုများ';
 }

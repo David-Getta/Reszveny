@@ -2337,4 +2337,19 @@ class AppLocalizationsKo extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => '평가액 큰 순';
+
+  @override
+  String get positionsSortGain => '총수익률 높은 순';
+
+  @override
+  String get positionsSortToday => '오늘 수익률 높은 순';
+
+  @override
+  String get chartMyBuys => '내 매수';
+
+  @override
+  String get chartMySells => '내 매도';
 }

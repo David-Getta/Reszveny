@@ -2424,4 +2424,19 @@ class AppLocalizationsMg extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Ny lehibe indrindra aloha';
+
+  @override
+  String get positionsSortGain => 'Ny tombony tanteraka ambony indrindra aloha';
+
+  @override
+  String get positionsSortToday => 'Ny tsara indrindra androany aloha';
+
+  @override
+  String get chartMyBuys => 'Ny fividiananao';
+
+  @override
+  String get chartMySells => 'Ny fivarotanao';
 }

@@ -2407,4 +2407,19 @@ class AppLocalizationsPcm extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Wetin big pass first';
+
+  @override
+  String get positionsSortGain => 'Wetin gain pass overall first';
+
+  @override
+  String get positionsSortToday => 'Wetin do well pass today first';
+
+  @override
+  String get chartMyBuys => 'Wetin you buy';
+
+  @override
+  String get chartMySells => 'Wetin you sell';
 }

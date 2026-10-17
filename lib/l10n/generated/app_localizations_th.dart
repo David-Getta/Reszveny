@@ -2377,4 +2377,19 @@ class AppLocalizationsTh extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'ใหญ่ที่สุดก่อน';
+
+  @override
+  String get positionsSortGain => 'ผลตอบแทนรวมสูงสุดก่อน';
+
+  @override
+  String get positionsSortToday => 'ดีที่สุดวันนี้ก่อน';
+
+  @override
+  String get chartMyBuys => 'การซื้อของคุณ';
+
+  @override
+  String get chartMySells => 'การขายของคุณ';
 }

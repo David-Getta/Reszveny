@@ -640,5 +640,10 @@
   "watchShare": "Deli seznam",
   "watchImport": "Dodaj borzne oznake",
   "watchImportHint": "Prilepite borzne oznake, ločene z vejicami, presledki ali novimi vrsticami – na primer seznam, ki ga je nekdo delil z vami.",
-  "watchImported": "{count, plural, =0{Ni novih delnic} =1{Dodana je 1 delnica} one{Dodana je {count} delnica} two{Dodani sta {count} delnici} few{Dodane so {count} delnice} other{Dodanih je {count} delnic}}"
+  "watchImported": "{count, plural, =0{Ni novih delnic} =1{Dodana je 1 delnica} one{Dodana je {count} delnica} two{Dodani sta {count} delnici} few{Dodane so {count} delnice} other{Dodanih je {count} delnic}}",
+  "positionsSortWeight": "Največje najprej",
+  "positionsSortGain": "Največji skupni donos najprej",
+  "positionsSortToday": "Najboljše danes najprej",
+  "chartMyBuys": "Vaši nakupi",
+  "chartMySells": "Vaše prodaje"
 }

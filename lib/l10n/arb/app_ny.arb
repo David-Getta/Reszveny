@@ -640,5 +640,10 @@
   "watchShare": "Gawana mndandanda",
   "watchImport": "Onjezani ma ticker",
   "watchImportHint": "Matani ma ticker olekanitsidwa ndi koma, mpata kapena mizere yatsopano – mwachitsanzo mndandanda umene wina wakugawirani.",
-  "watchImported": "{count, plural, =0{Palibe magawo atsopano} =1{Gawo 1 lawonjezedwa} other{Magawo {count} awonjezedwa}}"
+  "watchImported": "{count, plural, =0{Palibe magawo atsopano} =1{Gawo 1 lawonjezedwa} other{Magawo {count} awonjezedwa}}",
+  "positionsSortWeight": "Zazikulu kwambiri poyamba",
+  "positionsSortGain": "Phindu lonse lalikulu poyamba",
+  "positionsSortToday": "Zabwino kwambiri lero poyamba",
+  "chartMyBuys": "Zomwe mwagula",
+  "chartMySells": "Zomwe mwagulitsa"
 }

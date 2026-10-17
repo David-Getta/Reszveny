@@ -2413,4 +2413,19 @@ class AppLocalizationsSq extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Më të mëdhatë së pari';
+
+  @override
+  String get positionsSortGain => 'Kthimi total më i lartë së pari';
+
+  @override
+  String get positionsSortToday => 'Më të mirat e sotme së pari';
+
+  @override
+  String get chartMyBuys => 'Blerjet tuaja';
+
+  @override
+  String get chartMySells => 'Shitjet tuaja';
 }

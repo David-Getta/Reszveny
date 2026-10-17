@@ -2407,4 +2407,19 @@ class AppLocalizationsSw extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Kubwa zaidi kwanza';
+
+  @override
+  String get positionsSortGain => 'Faida ya jumla kubwa zaidi kwanza';
+
+  @override
+  String get positionsSortToday => 'Bora zaidi leo kwanza';
+
+  @override
+  String get chartMyBuys => 'Ununuzi wako';
+
+  @override
+  String get chartMySells => 'Mauzo yako';
 }

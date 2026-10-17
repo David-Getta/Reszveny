@@ -640,5 +640,10 @@
   "watchShare": "Senndu doggol ngol",
   "watchImport": "Ɓeydu kod aksiyoŋ",
   "watchImportHint": "Ɓortin kod aksiyoŋ seerndaaɗi ko virgule, ɓolɗe walla diiɗe kese – ko wayi no doggol goɗɗo senndii e maaɗa.",
-  "watchImported": "{count, plural, =0{Alaa aksiyoŋ kesol} =1{Aksiyoŋ 1 ɓeydaama} other{Aksiyoŋuuji {count} ɓeydaama}}"
+  "watchImported": "{count, plural, =0{Alaa aksiyoŋ kesol} =1{Aksiyoŋ 1 ɓeydaama} other{Aksiyoŋuuji {count} ɓeydaama}}",
+  "positionsSortWeight": "Ɓurɓe mawnude adan",
+  "positionsSortGain": "Nafoore timmunde ɓurnde adan",
+  "positionsSortToday": "Ɓurɓe moƴƴude hannde adan",
+  "chartMyBuys": "Ko a soodi",
+  "chartMySells": "Ko a yeeyi"
 }

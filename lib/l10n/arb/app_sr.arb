@@ -640,5 +640,10 @@
   "watchShare": "Подели листу",
   "watchImport": "Додај тикере",
   "watchImportHint": "Налепите тикере раздвојене зарезима, размацима или новим редовима – на пример листу коју је неко поделио са вама.",
-  "watchImported": "{count, plural, =0{Нема нових акција} =1{Додата је 1 акција} one{Додата је {count} акција} few{Додате су {count} акције} other{Додато је {count} акција}}"
+  "watchImported": "{count, plural, =0{Нема нових акција} =1{Додата је 1 акција} one{Додата је {count} акција} few{Додате су {count} акције} other{Додато је {count} акција}}",
+  "positionsSortWeight": "Највеће прво",
+  "positionsSortGain": "Највећи укупни принос прво",
+  "positionsSortToday": "Најбоље данас прво",
+  "chartMyBuys": "Ваше куповине",
+  "chartMySells": "Ваше продаје"
 }

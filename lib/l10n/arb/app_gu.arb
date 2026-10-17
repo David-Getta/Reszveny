@@ -640,5 +640,10 @@
   "watchShare": "યાદી શેર કરો",
   "watchImport": "ટિકર ઉમેરો",
   "watchImportHint": "અલ્પવિરામ, સ્પેસ અથવા નવી લાઇનથી અલગ કરેલા ટિકર પેસ્ટ કરો – ઉદાહરણ તરીકે, કોઈએ તમારી સાથે શેર કરેલી યાદી.",
-  "watchImported": "{count, plural, =0{કોઈ નવા સ્ટૉક નથી} =1{1 સ્ટૉક ઉમેરાયો} other{{count} સ્ટૉક ઉમેરાયા}}"
+  "watchImported": "{count, plural, =0{કોઈ નવા સ્ટૉક નથી} =1{1 સ્ટૉક ઉમેરાયો} other{{count} સ્ટૉક ઉમેરાયા}}",
+  "positionsSortWeight": "સૌથી મોટા પહેલા",
+  "positionsSortGain": "સૌથી વધુ કુલ વળતર પહેલા",
+  "positionsSortToday": "આજના શ્રેષ્ઠ પહેલા",
+  "chartMyBuys": "તમારી ખરીદીઓ",
+  "chartMySells": "તમારા વેચાણ"
 }

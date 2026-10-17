@@ -640,5 +640,10 @@
   "watchShare": "Del listen",
   "watchImport": "Tilføj tickers",
   "watchImportHint": "Indsæt tickersymboler adskilt af kommaer, mellemrum eller linjeskift – fx en liste, som nogen har delt med dig.",
-  "watchImported": "{count, plural, =0{Ingen nye aktier} =1{1 aktie tilføjet} other{{count} aktier tilføjet}}"
+  "watchImported": "{count, plural, =0{Ingen nye aktier} =1{1 aktie tilføjet} other{{count} aktier tilføjet}}",
+  "positionsSortWeight": "Største først",
+  "positionsSortGain": "Højeste samlede afkast først",
+  "positionsSortToday": "Bedste i dag først",
+  "chartMyBuys": "Dine køb",
+  "chartMySells": "Dine salg"
 }

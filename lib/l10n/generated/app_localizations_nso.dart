@@ -2422,4 +2422,19 @@ class AppLocalizationsNso extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Tše kgolo kudu pele';
+
+  @override
+  String get positionsSortGain => 'Poelo ka moka ye kgolo pele';
+
+  @override
+  String get positionsSortToday => 'Tše kaone lehono pele';
+
+  @override
+  String get chartMyBuys => 'Tše o di rekilego';
+
+  @override
+  String get chartMySells => 'Tše o di rekišitšego';
 }

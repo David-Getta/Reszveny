@@ -640,5 +640,10 @@
   "watchShare": "ዝርዝር ኣካፍል",
   "watchImport": "ምልክታት ኣክሲዮን ወስኽ",
   "watchImportHint": "ብኮማ፣ ባዶ ቦታ ወይ ሓድሽ መስመር ዝተፈላለዩ ምልክታት ኣክሲዮን ለጥፍ – ንኣብነት ሓደ ሰብ ዘካፈለካ ዝርዝር።",
-  "watchImported": "{count, plural, =0{ሓድሽ ኣክሲዮን የለን} =1{1 ኣክሲዮን ተወሲኹ} other{{count} ኣክሲዮናት ተወሲኾም}}"
+  "watchImported": "{count, plural, =0{ሓድሽ ኣክሲዮን የለን} =1{1 ኣክሲዮን ተወሲኹ} other{{count} ኣክሲዮናት ተወሲኾም}}",
+  "positionsSortWeight": "ዝዓበዩ ቅድም",
+  "positionsSortGain": "ብዝያዳ ጠቕላላ ትርፊ ቅድም",
+  "positionsSortToday": "ናይ ሎሚ ዝበለጹ ቅድም",
+  "chartMyBuys": "ዕድግታትካ",
+  "chartMySells": "መሸጣታትካ"
 }

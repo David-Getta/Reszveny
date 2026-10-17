@@ -2405,4 +2405,19 @@ class AppLocalizationsAs extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'সৰ্ববৃহৎ প্ৰথমে';
+
+  @override
+  String get positionsSortGain => 'সৰ্বাধিক মুঠ লাভ প্ৰথমে';
+
+  @override
+  String get positionsSortToday => 'আজিৰ শ্ৰেষ্ঠ প্ৰথমে';
+
+  @override
+  String get chartMyBuys => 'আপোনাৰ ক্ৰয়';
+
+  @override
+  String get chartMySells => 'আপোনাৰ বিক্ৰী';
 }

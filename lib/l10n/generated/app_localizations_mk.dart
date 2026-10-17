@@ -2426,4 +2426,19 @@ class AppLocalizationsMk extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Најголеми прво';
+
+  @override
+  String get positionsSortGain => 'Најголем вкупен принос прво';
+
+  @override
+  String get positionsSortToday => 'Најдобри денес прво';
+
+  @override
+  String get chartMyBuys => 'Ваши купувања';
+
+  @override
+  String get chartMySells => 'Ваши продажби';
 }

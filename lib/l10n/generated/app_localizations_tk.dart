@@ -2407,4 +2407,19 @@ class AppLocalizationsTk extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Iň ulular ilki';
+
+  @override
+  String get positionsSortGain => 'Iň ýokary jemi girdeji ilki';
+
+  @override
+  String get positionsSortToday => 'Şu günüň iň gowulary ilki';
+
+  @override
+  String get chartMyBuys => 'Satyn alyşlaryňyz';
+
+  @override
+  String get chartMySells => 'Satuwlaryňyz';
 }

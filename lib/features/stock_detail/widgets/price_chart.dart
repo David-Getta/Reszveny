@@ -17,6 +17,14 @@ class ChartLevel {
   final Color color;
 }
 
+/// Egy saját tranzakció a grafikonon: vétel (▲ a görbe alatt) vagy eladás (▼ fölötte).
+class ChartMarker {
+  const ChartMarker({required this.date, required this.sell});
+
+  final DateTime date;
+  final bool sell;
+}
+
 /// Egyszerű, függőség nélküli vonaldiagram időtáv-választóval. Az egérrel
 /// (asztali gép) vagy az ujj vízszintes húzásával (telefon) egy függőleges
 /// vonal és pont követi a görbét, felette az adott nap dátumával és árával,
@@ -28,8 +36,12 @@ class PriceChart extends StatefulWidget {
     required this.fmt,
     this.currency,
     this.levels = const [],
+    this.markers = const [],
     this.showChange = true,
   });
+
+  /// A saját vételek és eladások napjai (a látható időtávon kívüliek nem jelennek meg).
+  final List<ChartMarker> markers;
 
   final PriceHistory history;
   final Fmt fmt;
@@ -79,6 +91,12 @@ class _PriceChartState extends State<PriceChart> {
     final theme = Theme.of(context);
     final points = widget.history.lastDays(_days(_range));
     final hover = _hover != null && _hover! < points.length ? _hover : null;
+    final shownMarkers = points.length < 2
+        ? const <ChartMarker>[]
+        : [
+            for (final m in widget.markers)
+              if (!m.date.isBefore(_day(points.first.time)) && !_day(m.date).isAfter(points.last.time)) m,
+          ];
     final first = points.isEmpty ? null : points.first.close;
     double? changeTo(double? v) => first == null || v == null || first == 0 ? null : (v - first) / first * 100;
     // A vonal színe és a jobb felső szám mindig a teljes időszak változása;
@@ -192,6 +210,9 @@ class _PriceChartState extends State<PriceChart> {
                               hoverDate: hover == null ? null : widget.fmt.date(points[hover].time),
                               background: theme.colorScheme.surface,
                               levels: widget.levels,
+                              markers: shownMarkers,
+                              buyColor: p.accent,
+                              sellColor: p.text,
                             ),
                             child: const SizedBox.expand(),
                           ),
@@ -202,6 +223,19 @@ class _PriceChartState extends State<PriceChart> {
           ),
         ),
         const SizedBox(height: 6),
+        if (shownMarkers.isNotEmpty) ...[
+          Wrap(
+            key: const ValueKey('chart-markers-legend'),
+            spacing: 12,
+            children: [
+              if (shownMarkers.any((m) => !m.sell))
+                _LegendItem(icon: Icons.arrow_drop_up_rounded, color: p.accent, label: l10n.chartMyBuys),
+              if (shownMarkers.any((m) => m.sell))
+                _LegendItem(icon: Icons.arrow_drop_down_rounded, color: p.text, label: l10n.chartMySells),
+            ],
+          ),
+          const SizedBox(height: 2),
+        ],
         if (points.length >= 2)
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -217,6 +251,42 @@ class _PriceChartState extends State<PriceChart> {
                 ),
             ],
           ),
+      ],
+    );
+  }
+}
+
+/// A [t] időponthoz legközelebbi pont indexe (a pontok időrendben).
+int nearestChartIndex(List<PricePoint> points, DateTime t) {
+  var lo = 0, hi = points.length - 1;
+  while (hi - lo > 1) {
+    final mid = (lo + hi) >> 1;
+    if (points[mid].time.isAfter(t)) {
+      hi = mid;
+    } else {
+      lo = mid;
+    }
+  }
+  return (t.difference(points[lo].time).abs() <= points[hi].time.difference(t).abs()) ? lo : hi;
+}
+
+DateTime _day(DateTime t) => DateTime(t.year, t.month, t.day);
+
+class _LegendItem extends StatelessWidget {
+  const _LegendItem({required this.icon, required this.color, required this.label});
+
+  final IconData icon;
+  final Color color;
+  final String label;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Icon(icon, size: 20, color: color),
+        Text(label, style: theme.textTheme.bodySmall?.copyWith(color: AppPalette.of(context).muted)),
       ],
     );
   }
@@ -238,9 +308,15 @@ class _LinePainter extends CustomPainter {
     this.hoverDate,
     this.background = const Color(0xFF000000),
     this.levels = const [],
+    this.markers = const [],
+    this.buyColor = const Color(0xFF00C853),
+    this.sellColor = const Color(0xFFFFFFFF),
   });
 
   final List<ChartLevel> levels;
+  final List<ChartMarker> markers;
+  final Color buyColor;
+  final Color sellColor;
 
   /// A látható ársávon kívül ennyivel (a sáv arányában) távolabbi szintet
   /// nem rajzolunk, hogy a görbe ne lapuljon össze.
@@ -388,6 +464,26 @@ class _LinePainter extends CustomPainter {
         ..strokeJoin = StrokeJoin.round,
     );
 
+    // Saját vételek (▲ a görbe alatt) és eladások (▼ fölötte).
+    for (final m in markers) {
+      final o = at(points[nearestChartIndex(points, m.date)]);
+      final dir = m.sell ? -1.0 : 1.0;
+      final tip = Offset(o.dx, o.dy + dir * 5);
+      final tri = Path()
+        ..moveTo(tip.dx, tip.dy)
+        ..lineTo(tip.dx - 5, tip.dy + dir * 8)
+        ..lineTo(tip.dx + 5, tip.dy + dir * 8)
+        ..close();
+      canvas.drawPath(
+        tri,
+        Paint()
+          ..color = background
+          ..style = PaintingStyle.stroke
+          ..strokeWidth = 2,
+      );
+      canvas.drawPath(tri, Paint()..color = m.sell ? sellColor : buyColor);
+    }
+
     // Kijelölés: függőleges vonal, pont a görbén, fölötte dátum és ár.
     final i = hover;
     if (i != null && i >= 0 && i < points.length) {
@@ -431,5 +527,6 @@ class _LinePainter extends CustomPainter {
       old.hover != hover ||
       old.hoverPrice != hoverPrice ||
       old.topPad != topPad ||
-      old.levels != levels;
+      old.levels != levels ||
+      old.markers.length != markers.length;
 }

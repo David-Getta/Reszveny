@@ -640,5 +640,10 @@
   "watchShare": "ዝርዝሩን አጋራ",
   "watchImport": "የአክሲዮን ምልክቶችን አክል",
   "watchImportHint": "በኮማ፣ በክፍተት ወይም በአዲስ መስመር የተለያዩ የአክሲዮን ምልክቶችን ይለጥፉ – ለምሳሌ አንድ ሰው ያጋራዎትን ዝርዝር።",
-  "watchImported": "{count, plural, =0{አዲስ አክሲዮን የለም} =1{1 አክሲዮን ታክሏል} other{{count} አክሲዮኖች ታክለዋል}}"
+  "watchImported": "{count, plural, =0{አዲስ አክሲዮን የለም} =1{1 አክሲዮን ታክሏል} other{{count} አክሲዮኖች ታክለዋል}}",
+  "positionsSortWeight": "ትልቁ መጀመሪያ",
+  "positionsSortGain": "ከፍተኛ ጠቅላላ ትርፍ መጀመሪያ",
+  "positionsSortToday": "የዛሬ ምርጥ መጀመሪያ",
+  "chartMyBuys": "የእርስዎ ግዢዎች",
+  "chartMySells": "የእርስዎ ሽያጮች"
 }

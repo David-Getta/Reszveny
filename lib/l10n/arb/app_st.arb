@@ -640,5 +640,10 @@
   "watchShare": "Arolelana lenane",
   "watchImport": "Kenya di-ticker",
   "watchImportHint": "Kgomaretsa di-ticker tse arohantsweng ka dikhoma, dibaka tse se nang letho kapa mela e metjha – mohlala, lenane leo motho e mong a le arolelaneng le wena.",
-  "watchImported": "{count, plural, =0{Ha ho na dishere tse ntjha} =1{Ho eketsitswe shere e le nngwe} other{Ho eketsitswe dishere tse {count}}}"
+  "watchImported": "{count, plural, =0{Ha ho na dishere tse ntjha} =1{Ho eketsitswe shere e le nngwe} other{Ho eketsitswe dishere tse {count}}}",
+  "positionsSortWeight": "Tse kgolo haholo pele",
+  "positionsSortGain": "Phaello yohle e kgolo pele",
+  "positionsSortToday": "Tse ntle ka ho fetisisa kajeno pele",
+  "chartMyBuys": "Ditheko tsa hao",
+  "chartMySells": "Thekiso tsa hao"
 }

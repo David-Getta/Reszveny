@@ -2416,4 +2416,19 @@ class AppLocalizationsTa extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'பெரியவை முதலில்';
+
+  @override
+  String get positionsSortGain => 'அதிக மொத்த வருவாய் முதலில்';
+
+  @override
+  String get positionsSortToday => 'இன்றைய சிறந்தவை முதலில்';
+
+  @override
+  String get chartMyBuys => 'உங்கள் வாங்குதல்கள்';
+
+  @override
+  String get chartMySells => 'உங்கள் விற்பனைகள்';
 }

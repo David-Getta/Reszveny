@@ -253,22 +253,7 @@ class _PortfolioBody extends StatelessWidget {
                 if (s.rows.where((r) => r.weight > 0).length > 1) AllocationCard(snapshot: s, fmt: fmt),
                 PortfolioHistoryCard(snapshot: s),
                 PortfolioReviewCard(snapshot: s),
-                if (s.rows.isNotEmpty) ...[
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(4, 16, 4, 8),
-                    child: Text(l10n.portfolioPositions, style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),
-                  ),
-                  Card(
-                    child: Column(
-                      children: [
-                        for (final (i, r) in s.rows.indexed) ...[
-                          if (i > 0) const Divider(height: 1),
-                          _PositionTile(row: r, fmt: fmt, onOpenSymbol: onOpenSymbol),
-                        ],
-                      ],
-                    ),
-                  ),
-                ],
+                if (s.rows.isNotEmpty) _PositionsSection(snapshot: s, fmt: fmt, onOpenSymbol: onOpenSymbol),
                 if (s.realizedByYear.isNotEmpty) ...[
                   Padding(
                     padding: const EdgeInsets.fromLTRB(4, 16, 4, 8),
@@ -770,6 +755,91 @@ class AllocationBar extends StatelessWidget {
                 ],
               ),
           ],
+        ),
+      ],
+    );
+  }
+}
+
+/// Mi szerint rendezzük a pozíciókat.
+enum PositionSort { weight, gain, today, name }
+
+/// A pozíciók rendezése: súly (alapból), összes hozam %, mai mozgás %, ticker.
+/// Az ár nélküli pozíciók a végére kerülnek.
+List<PositionValue> sortPositions(List<PositionValue> rows, PositionSort sort) {
+  double? today(PositionValue r) {
+    final price = r.price, change = r.dayChange;
+    return price == null || change == null || price - change == 0 ? null : change / (price - change) * 100;
+  }
+
+  int byValue(double? a, double? b) => a == null ? (b == null ? 0 : 1) : (b == null ? -1 : b.compareTo(a));
+  return switch (sort) {
+    PositionSort.weight => rows,
+    PositionSort.gain => [...rows]..sort((a, b) => byValue(a.gainPercent, b.gainPercent)),
+    PositionSort.today => [...rows]..sort((a, b) => byValue(today(a), today(b))),
+    PositionSort.name => [...rows]..sort((a, b) => a.position.symbol.compareTo(b.position.symbol)),
+  };
+}
+
+/// „Pozíciók” fejléc rendezés-menüvel és a pozíciók listája.
+class _PositionsSection extends StatefulWidget {
+  const _PositionsSection({required this.snapshot, required this.fmt, required this.onOpenSymbol});
+
+  final PortfolioSnapshot snapshot;
+  final Fmt fmt;
+  final ValueChanged<StockCandidate> onOpenSymbol;
+
+  @override
+  State<_PositionsSection> createState() => _PositionsSectionState();
+}
+
+class _PositionsSectionState extends State<_PositionsSection> {
+  PositionSort _sort = PositionSort.weight;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final p = AppPalette.of(context);
+    final theme = Theme.of(context);
+    final rows = sortPositions(widget.snapshot.rows, _sort);
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Padding(
+          padding: const EdgeInsets.fromLTRB(4, 8, 0, 0),
+          child: Row(
+            children: [
+              Expanded(
+                child: Text(l10n.portfolioPositions, style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),
+              ),
+              PopupMenuButton<PositionSort>(
+                key: const ValueKey('positions-sort'),
+                icon: Icon(Icons.sort_rounded, color: p.muted, size: 20),
+                tooltip: l10n.watchSort,
+                initialValue: _sort,
+                onSelected: (v) => setState(() => _sort = v),
+                itemBuilder: (_) => [
+                  for (final (v, label) in [
+                    (PositionSort.weight, l10n.positionsSortWeight),
+                    (PositionSort.gain, l10n.positionsSortGain),
+                    (PositionSort.today, l10n.positionsSortToday),
+                    (PositionSort.name, l10n.watchSortName),
+                  ])
+                    PopupMenuItem(key: ValueKey('positions-sort-${v.name}'), value: v, child: Text(label)),
+                ],
+              ),
+            ],
+          ),
+        ),
+        Card(
+          child: Column(
+            children: [
+              for (final (i, r) in rows.indexed) ...[
+                if (i > 0) const Divider(height: 1),
+                _PositionTile(row: r, fmt: widget.fmt, onOpenSymbol: widget.onOpenSymbol),
+              ],
+            ],
+          ),
         ),
       ],
     );

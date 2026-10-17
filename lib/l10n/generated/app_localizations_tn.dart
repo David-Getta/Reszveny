@@ -2423,4 +2423,19 @@ class AppLocalizationsTn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Tse dikgolo thata pele';
+
+  @override
+  String get positionsSortGain => 'Poelo yotlhe e kgolo pele';
+
+  @override
+  String get positionsSortToday => 'Tse di siameng thata gompieno pele';
+
+  @override
+  String get chartMyBuys => 'Ditheko tsa gago';
+
+  @override
+  String get chartMySells => 'Thekiso tsa gago';
 }

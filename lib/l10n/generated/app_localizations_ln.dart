@@ -2418,4 +2418,19 @@ class AppLocalizationsLn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Oyo ya monene liboso';
+
+  @override
+  String get positionsSortGain => 'Litomba mobimba mingi liboso';
+
+  @override
+  String get positionsSortToday => 'Oyo ya malamu lɛlɔ liboso';
+
+  @override
+  String get chartMyBuys => 'Bosombi na yo';
+
+  @override
+  String get chartMySells => 'Bitɛki na yo';
 }

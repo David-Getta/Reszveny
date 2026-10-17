@@ -2400,4 +2400,19 @@ class AppLocalizationsMai extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'सभसँ पैघ पहिने';
+
+  @override
+  String get positionsSortGain => 'सभसँ बेसी कुल लाभ पहिने';
+
+  @override
+  String get positionsSortToday => 'आइ सभसँ नीक पहिने';
+
+  @override
+  String get chartMyBuys => 'अहाँक खरीदारी';
+
+  @override
+  String get chartMySells => 'अहाँक बिक्री';
 }

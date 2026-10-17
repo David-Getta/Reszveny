@@ -640,5 +640,10 @@
   "watchShare": "اشتراک‌گذاری فهرست",
   "watchImport": "افزودن نمادها",
   "watchImportHint": "نمادهای سهام را جدا‌شده با ویرگول، فاصله یا خط جدید جای‌گذاری کنید – مثلاً فهرستی که کسی با شما به اشتراک گذاشته است.",
-  "watchImported": "{count, plural, =0{سهم جدیدی نیست} =1{1 سهم افزوده شد} other{{count} سهم افزوده شد}}"
+  "watchImported": "{count, plural, =0{سهم جدیدی نیست} =1{1 سهم افزوده شد} other{{count} سهم افزوده شد}}",
+  "positionsSortWeight": "بزرگ‌ترین اول",
+  "positionsSortGain": "بیشترین بازده کل اول",
+  "positionsSortToday": "بهترین امروز اول",
+  "chartMyBuys": "خریدهای شما",
+  "chartMySells": "فروش‌های شما"
 }

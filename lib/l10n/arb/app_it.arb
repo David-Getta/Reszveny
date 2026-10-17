@@ -640,5 +640,10 @@
   "watchShare": "Condividi la lista",
   "watchImport": "Aggiungi simboli",
   "watchImportHint": "Incolla i simboli separati da virgole, spazi o a capo – ad esempio una lista che qualcuno ha condiviso con te.",
-  "watchImported": "{count, plural, =0{Nessun nuovo titolo} =1{1 titolo aggiunto} other{{count} titoli aggiunti}}"
+  "watchImported": "{count, plural, =0{Nessun nuovo titolo} =1{1 titolo aggiunto} other{{count} titoli aggiunti}}",
+  "positionsSortWeight": "Più grandi prima",
+  "positionsSortGain": "Miglior rendimento totale prima",
+  "positionsSortToday": "Migliori di oggi prima",
+  "chartMyBuys": "I tuoi acquisti",
+  "chartMySells": "Le tue vendite"
 }

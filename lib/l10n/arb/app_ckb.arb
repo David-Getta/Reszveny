@@ -640,5 +640,10 @@
   "watchShare": "هاوبەشکردنی لیستەکە",
   "watchImport": "زیادکردنی هێمای پشکەکان",
   "watchImportHint": "هێمای پشکەکان بلکێنە کە بە کۆما، بۆشایی یان هێڵی نوێ جیا کراونەتەوە – بۆ نموونە لیستێک کە کەسێک لەگەڵت هاوبەشی کردووە.",
-  "watchImported": "{count, plural, =0{هیچ پشکێکی نوێ نییە} =1{1 پشک زیادکرا} other{{count} پشک زیادکران}}"
+  "watchImported": "{count, plural, =0{هیچ پشکێکی نوێ نییە} =1{1 پشک زیادکرا} other{{count} پشک زیادکران}}",
+  "positionsSortWeight": "گەورەترین سەرەتا",
+  "positionsSortGain": "زۆرترین قازانجی گشتی سەرەتا",
+  "positionsSortToday": "باشترینی ئەمڕۆ سەرەتا",
+  "chartMyBuys": "کڕینەکانت",
+  "chartMySells": "فرۆشتنەکانت"
 }

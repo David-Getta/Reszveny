@@ -640,5 +640,10 @@
   "watchShare": "Raba jerin",
   "watchImport": "Ƙara alamun ticker",
   "watchImportHint": "Liƙa alamun ticker da aka raba da waƙafi, sarari ko sabon layi – misali jerin da wani ya raba maka.",
-  "watchImported": "{count, plural, =0{Babu sabbin hannayen jari} =1{An ƙara hannun jari 1} other{An ƙara hannayen jari {count}}}"
+  "watchImported": "{count, plural, =0{Babu sabbin hannayen jari} =1{An ƙara hannun jari 1} other{An ƙara hannayen jari {count}}}",
+  "positionsSortWeight": "Mafi girma farko",
+  "positionsSortGain": "Mafi yawan riba gaba ɗaya farko",
+  "positionsSortToday": "Mafi kyau yau farko",
+  "chartMyBuys": "Sayayyarka",
+  "chartMySells": "Siyarwarka"
 }

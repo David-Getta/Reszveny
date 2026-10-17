@@ -1,0 +1,77 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:reszveny/core/models/price_history.dart';
+import 'package:reszveny/core/models/stock_quote.dart';
+import 'package:reszveny/core/util/formatters.dart';
+import 'package:reszveny/features/portfolio/portfolio_page.dart';
+import 'package:reszveny/features/portfolio/portfolio_store.dart';
+import 'package:reszveny/features/portfolio/portfolio_valuation.dart';
+import 'package:reszveny/features/stock_detail/widgets/price_chart.dart';
+import 'package:reszveny/l10n/generated/app_localizations.dart';
+import 'package:reszveny/theme/app_theme.dart';
+
+void main() {
+  test('positions sort by size, total return, today and ticker; missing prices go last', () {
+    Position pos(String s, double cost) => Position(
+      symbol: s,
+      currency: 'USD',
+      lots: [PortfolioLot(id: s, symbol: s, quantity: 10, price: cost, currency: 'USD')],
+    );
+    final snap = PortfolioSnapshot.compute(
+      [pos('AAA', 100), pos('BBB', 10), pos('CCC', 50), pos('DDD', 1)],
+      quotes: {
+        'AAA': const StockQuote(symbol: 'AAA', price: 110, change: -5), // +10%, ma -4,3%
+        'BBB': const StockQuote(symbol: 'BBB', price: 20, change: 1), // +100%, ma +5,3%
+        'CCC': const StockQuote(symbol: 'CCC', price: 40, change: 0), // -20%, ma 0
+      },
+      rate: (_, _) => 1,
+      currency: 'USD',
+    );
+    List<String> order(PositionSort s) => sortPositions(snap.rows, s).map((r) => r.position.symbol).toList();
+    expect(order(PositionSort.weight), ['AAA', 'CCC', 'BBB', 'DDD']);
+    expect(order(PositionSort.gain), ['BBB', 'AAA', 'CCC', 'DDD']);
+    expect(order(PositionSort.today), ['BBB', 'CCC', 'AAA', 'DDD']);
+    expect(order(PositionSort.name), ['AAA', 'BBB', 'CCC', 'DDD']);
+  });
+
+  test('a marker sits on the nearest day of the chart', () {
+    final pts = [for (var i = 0; i < 10; i++) PricePoint(time: DateTime(2026, 1, 1 + i * 3), close: 100.0 + i)];
+    expect(nearestChartIndex(pts, DateTime(2026, 1, 1)), 0);
+    expect(nearestChartIndex(pts, DateTime(2026, 1, 8)), 2);
+    expect(nearestChartIndex(pts, DateTime(2026, 2, 1)), 9);
+  });
+
+  testWidgets('the chart legend appears only when a buy or sale is in the shown range', (tester) async {
+    final end = DateTime(2026, 10, 16);
+    final pts = [
+      for (var i = 400; i >= 0; i--)
+        PricePoint(
+          time: end.subtract(Duration(days: i)),
+          close: 100.0 + i % 7,
+        ),
+    ];
+    Future<void> pump(List<ChartMarker> markers) => tester.pumpWidget(
+      MaterialApp(
+        theme: AppTheme.build(Brightness.dark),
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        supportedLocales: AppLocalizations.supportedLocales,
+        home: Scaffold(
+          body: SizedBox(
+            width: 400,
+            child: PriceChart(
+              history: PriceHistory(symbol: 'X', points: pts),
+              fmt: Fmt('en'),
+              markers: markers,
+            ),
+          ),
+        ),
+      ),
+    );
+    await pump([ChartMarker(date: DateTime(2026, 3, 2), sell: false)]);
+    expect(find.text('Your buys'), findsOneWidget);
+    expect(find.text('Your sales'), findsNothing);
+    // Az 1 éves nézeten kívüli eladás nem látszik.
+    await pump([ChartMarker(date: DateTime(2025, 1, 2), sell: true)]);
+    expect(find.byKey(const ValueKey('chart-markers-legend')), findsNothing);
+  });
+}

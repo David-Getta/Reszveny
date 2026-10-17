@@ -640,5 +640,10 @@
   "watchShare": "Поделиться списком",
   "watchImport": "Добавить тикеры",
   "watchImportHint": "Вставьте тикеры через запятую, пробел или с новой строки – например, список, которым с вами поделились.",
-  "watchImported": "{count, plural, =0{Новых акций нет} =1{Добавлена 1 акция} one{Добавлена {count} акция} few{Добавлено {count} акции} many{Добавлено {count} акций} other{Добавлено {count} акции}}"
+  "watchImported": "{count, plural, =0{Новых акций нет} =1{Добавлена 1 акция} one{Добавлена {count} акция} few{Добавлено {count} акции} many{Добавлено {count} акций} other{Добавлено {count} акции}}",
+  "positionsSortWeight": "Сначала крупнейшие",
+  "positionsSortGain": "Сначала лучшая общая доходность",
+  "positionsSortToday": "Сначала лучшие за сегодня",
+  "chartMyBuys": "Ваши покупки",
+  "chartMySells": "Ваши продажи"
 }

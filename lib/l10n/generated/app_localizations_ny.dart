@@ -2413,4 +2413,19 @@ class AppLocalizationsNy extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Zazikulu kwambiri poyamba';
+
+  @override
+  String get positionsSortGain => 'Phindu lonse lalikulu poyamba';
+
+  @override
+  String get positionsSortToday => 'Zabwino kwambiri lero poyamba';
+
+  @override
+  String get chartMyBuys => 'Zomwe mwagula';
+
+  @override
+  String get chartMySells => 'Zomwe mwagulitsa';
 }

@@ -2412,4 +2412,19 @@ class AppLocalizationsSn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Zvakakura zvikuru kutanga';
+
+  @override
+  String get positionsSortGain => 'Pundutso yose huru kutanga';
+
+  @override
+  String get positionsSortToday => 'Zvakanaka nhasi kutanga';
+
+  @override
+  String get chartMyBuys => 'Zvawakatenga';
+
+  @override
+  String get chartMySells => 'Zvawakatengesa';
 }

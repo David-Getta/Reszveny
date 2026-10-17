@@ -640,5 +640,10 @@
   "watchShare": "Govana rondedzero",
   "watchImport": "Wedzera ma ticker",
   "watchImportHint": "Namira ma ticker akaparadzaniswa nemakoma, nzvimbo isina chinhu kana mitsara mitsva – semuenzaniso rondedzero yawakagoverwa nemumwe munhu.",
-  "watchImported": "{count, plural, =0{Hapana masheya matsva} =1{Sheya 1 rawedzerwa} other{Masheya {count} awedzerwa}}"
+  "watchImported": "{count, plural, =0{Hapana masheya matsva} =1{Sheya 1 rawedzerwa} other{Masheya {count} awedzerwa}}",
+  "positionsSortWeight": "Zvakakura zvikuru kutanga",
+  "positionsSortGain": "Pundutso yose huru kutanga",
+  "positionsSortToday": "Zvakanaka nhasi kutanga",
+  "chartMyBuys": "Zvawakatenga",
+  "chartMySells": "Zvawakatengesa"
 }

@@ -640,5 +640,10 @@
   "watchShare": "Dela listan",
   "watchImport": "Lägg till tickers",
   "watchImportHint": "Klistra in tickers åtskilda med komma, mellanslag eller radbrytningar – till exempel en lista som någon har delat med dig.",
-  "watchImported": "{count, plural, =0{Inga nya aktier} =1{1 aktie har lagts till} other{{count} aktier har lagts till}}"
+  "watchImported": "{count, plural, =0{Inga nya aktier} =1{1 aktie har lagts till} other{{count} aktier har lagts till}}",
+  "positionsSortWeight": "Största först",
+  "positionsSortGain": "Högst totalavkastning först",
+  "positionsSortToday": "Bäst i dag först",
+  "chartMyBuys": "Dina köp",
+  "chartMySells": "Dina försäljningar"
 }

@@ -640,5 +640,10 @@
   "watchShare": "Ndaj listën",
   "watchImport": "Shto simbole",
   "watchImportHint": "Ngjit simbolet e aksioneve të ndara me presje, hapësira ose rreshta të rinj – për shembull një listë që dikush ka ndarë me ty.",
-  "watchImported": "{count, plural, =0{Asnjë aksion i ri} =1{U shtua 1 aksion} other{U shtuan {count} aksione}}"
+  "watchImported": "{count, plural, =0{Asnjë aksion i ri} =1{U shtua 1 aksion} other{U shtuan {count} aksione}}",
+  "positionsSortWeight": "Më të mëdhatë së pari",
+  "positionsSortGain": "Kthimi total më i lartë së pari",
+  "positionsSortToday": "Më të mirat e sotme së pari",
+  "chartMyBuys": "Blerjet tuaja",
+  "chartMySells": "Shitjet tuaja"
 }

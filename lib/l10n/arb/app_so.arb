@@ -640,5 +640,10 @@
   "watchShare": "La wadaag liiska",
   "watchImport": "Ku dar astaamaha saamiyada",
   "watchImportHint": "Ku dheji astaamaha saamiyada oo lagu kala saaray hakad, meel bannaan ama saf cusub – tusaale ahaan liis uu qof kula wadaagay.",
-  "watchImported": "{count, plural, =0{Saami cusub ma jiro} =1{1 saami ayaa lagu daray} other{{count} saami ayaa lagu daray}}"
+  "watchImported": "{count, plural, =0{Saami cusub ma jiro} =1{1 saami ayaa lagu daray} other{{count} saami ayaa lagu daray}}",
+  "positionsSortWeight": "Kuwa ugu waaweyn marka hore",
+  "positionsSortGain": "Faa'iidada guud ee ugu badan marka hore",
+  "positionsSortToday": "Kuwa ugu fiican maanta marka hore",
+  "chartMyBuys": "Iibsashadaada",
+  "chartMySells": "Iibintaada"
 }

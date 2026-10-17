@@ -2328,4 +2328,19 @@ class AppLocalizationsJa extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => '評価額の大きい順';
+
+  @override
+  String get positionsSortGain => 'トータルリターンの高い順';
+
+  @override
+  String get positionsSortToday => '本日の騰落率の高い順';
+
+  @override
+  String get chartMyBuys => 'あなたの購入';
+
+  @override
+  String get chartMySells => 'あなたの売却';
 }

@@ -640,5 +640,10 @@
   "watchShare": "ତାଲିକା ସେୟାର କରନ୍ତୁ",
   "watchImport": "ଟିକର ଯୋଡ଼ନ୍ତୁ",
   "watchImportHint": "କମା, ସ୍ପେସ କିମ୍ବା ନୂଆ ଧାଡ଼ି ଦ୍ୱାରା ଅଲଗା ହୋଇଥିବା ଟିକର ପେଷ୍ଟ କରନ୍ତୁ – ଯେପରି କେହି ଆପଣଙ୍କ ସହ ସେୟାର କରିଥିବା ଏକ ତାଲିକା।",
-  "watchImported": "{count, plural, =0{କୌଣସି ନୂଆ ସେୟାର ନାହିଁ} =1{1ଟି ସେୟାର ଯୋଡ଼ାଗଲା} other{{count}ଟି ସେୟାର ଯୋଡ଼ାଗଲା}}"
+  "watchImported": "{count, plural, =0{କୌଣସି ନୂଆ ସେୟାର ନାହିଁ} =1{1ଟି ସେୟାର ଯୋଡ଼ାଗଲା} other{{count}ଟି ସେୟାର ଯୋଡ଼ାଗଲା}}",
+  "positionsSortWeight": "ସବୁଠୁ ବଡ଼ ପ୍ରଥମେ",
+  "positionsSortGain": "ସର୍ବାଧିକ ମୋଟ ରିଟର୍ନ ପ୍ରଥମେ",
+  "positionsSortToday": "ଆଜିର ଶ୍ରେଷ୍ଠ ପ୍ରଥମେ",
+  "chartMyBuys": "ଆପଣଙ୍କ କ୍ରୟ",
+  "chartMySells": "ଆପଣଙ୍କ ବିକ୍ରୟ"
 }

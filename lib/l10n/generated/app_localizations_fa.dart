@@ -2403,4 +2403,19 @@ class AppLocalizationsFa extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'بزرگ‌ترین اول';
+
+  @override
+  String get positionsSortGain => 'بیشترین بازده کل اول';
+
+  @override
+  String get positionsSortToday => 'بهترین امروز اول';
+
+  @override
+  String get chartMyBuys => 'خریدهای شما';
+
+  @override
+  String get chartMySells => 'فروش‌های شما';
 }

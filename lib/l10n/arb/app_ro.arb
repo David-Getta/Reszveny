@@ -640,5 +640,10 @@
   "watchShare": "Distribuie lista",
   "watchImport": "Adaugă tickere",
   "watchImportHint": "Lipește tickere separate prin virgule, spații sau rânduri noi – de exemplu, o listă pe care cineva a partajat-o cu tine.",
-  "watchImported": "{count, plural, =0{Nicio acțiune nouă} =1{A fost adăugată 1 acțiune} one{A fost adăugată {count} acțiune} few{Au fost adăugate {count} acțiuni} other{Au fost adăugate {count} de acțiuni}}"
+  "watchImported": "{count, plural, =0{Nicio acțiune nouă} =1{A fost adăugată 1 acțiune} one{A fost adăugată {count} acțiune} few{Au fost adăugate {count} acțiuni} other{Au fost adăugate {count} de acțiuni}}",
+  "positionsSortWeight": "Cele mai mari întâi",
+  "positionsSortGain": "Cel mai mare randament total întâi",
+  "positionsSortToday": "Cele mai bune azi întâi",
+  "chartMyBuys": "Cumpărările tale",
+  "chartMySells": "Vânzările tale"
 }

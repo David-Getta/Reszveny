@@ -2407,4 +2407,19 @@ class AppLocalizationsKa extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'ჯერ ყველაზე დიდი';
+
+  @override
+  String get positionsSortGain => 'ჯერ ყველაზე მაღალი ჯამური შემოსავალი';
+
+  @override
+  String get positionsSortToday => 'ჯერ დღის საუკეთესოები';
+
+  @override
+  String get chartMyBuys => 'თქვენი შენაძენები';
+
+  @override
+  String get chartMySells => 'თქვენი გაყიდვები';
 }

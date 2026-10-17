@@ -2405,4 +2405,19 @@ class AppLocalizationsKab extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Wid imeqqranen d imezwura';
+
+  @override
+  String get positionsSortGain => 'Rrbeḥ amatu ameqqran d amezwaru';
+
+  @override
+  String get positionsSortToday => 'Wid yelhan ass-a d imezwura';
+
+  @override
+  String get chartMyBuys => 'Tiɣin-ik';
+
+  @override
+  String get chartMySells => 'Tizenzin-ik';
 }

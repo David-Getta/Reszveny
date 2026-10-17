@@ -2411,4 +2411,19 @@ class AppLocalizationsNl extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Grootste eerst';
+
+  @override
+  String get positionsSortGain => 'Hoogste totaalrendement eerst';
+
+  @override
+  String get positionsSortToday => 'Beste vandaag eerst';
+
+  @override
+  String get chartMyBuys => 'Jouw aankopen';
+
+  @override
+  String get chartMySells => 'Jouw verkopen';
 }

@@ -640,5 +640,10 @@
   "watchShare": "Bagikake dhaptar",
   "watchImport": "Tambahake kode saham",
   "watchImportHint": "Tempelake kode saham sing dipisah nganggo koma, spasi utawa baris anyar – contoné dhaptar sing dibagi wong liya marang kowé.",
-  "watchImported": "{count, plural, =0{Ora ana saham anyar} =1{1 saham wis ditambahake} other{{count} saham wis ditambahake}}"
+  "watchImported": "{count, plural, =0{Ora ana saham anyar} =1{1 saham wis ditambahake} other{{count} saham wis ditambahake}}",
+  "positionsSortWeight": "Paling gedhé dhisik",
+  "positionsSortGain": "Imbal asil total paling apik dhisik",
+  "positionsSortToday": "Paling apik dina iki dhisik",
+  "chartMyBuys": "Tukonmu",
+  "chartMySells": "Dodolanmu"
 }

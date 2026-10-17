@@ -2414,4 +2414,19 @@ class AppLocalizationsKg extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Yina ya nene mingi ntete';
+
+  @override
+  String get positionsSortGain => 'Mbakulu ya mvimba ya mingi ntete';
+
+  @override
+  String get positionsSortToday => 'Yina me sala mbote unu ntete';
+
+  @override
+  String get chartMyBuys => 'Mana nge me sumba';
+
+  @override
+  String get chartMySells => 'Mana nge me teka';
 }

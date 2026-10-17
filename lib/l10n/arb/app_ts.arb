@@ -640,5 +640,10 @@
   "watchShare": "Avelana nxaxamelo",
   "watchImport": "Engetela ti-ticker",
   "watchImportHint": "Namarheta ti-ticker leti hambanisiweke hi tikhoma, swivandla kumbe tilayini letintshwa – xikombiso, nxaxamelo lowu munhu a wu avelaneke na wena.",
-  "watchImported": "{count, plural, =0{A ku na tixere letintshwa} =1{Ku engeteriwe xere yin'we} other{Ku engeteriwe tixere ta {count}}}"
+  "watchImported": "{count, plural, =0{A ku na tixere letintshwa} =1{Ku engeteriwe xere yin'we} other{Ku engeteriwe tixere ta {count}}}",
+  "positionsSortWeight": "Leswikulu ngopfu ku sungula",
+  "positionsSortGain": "Mbuyelo hinkwawo lowukulu ku sungula",
+  "positionsSortToday": "Leswinene ngopfu namuntlha ku sungula",
+  "chartMyBuys": "Leswi u swi xaveke",
+  "chartMySells": "Leswi u swi xaviseke"
 }

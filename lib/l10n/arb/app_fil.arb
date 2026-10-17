@@ -640,5 +640,10 @@
   "watchShare": "Ibahagi ang listahan",
   "watchImport": "Magdagdag ng mga ticker",
   "watchImportHint": "Mag-paste ng mga ticker na pinaghihiwalay ng kuwit, espasyo o bagong linya – halimbawa, isang listahang ibinahagi sa iyo ng iba.",
-  "watchImported": "{count, plural, =0{Walang bagong stock} =1{Naidagdag ang 1 stock} other{Naidagdag ang {count} stock}}"
+  "watchImported": "{count, plural, =0{Walang bagong stock} =1{Naidagdag ang 1 stock} other{Naidagdag ang {count} stock}}",
+  "positionsSortWeight": "Pinakamalaki muna",
+  "positionsSortGain": "Pinakamataas na kabuuang kita muna",
+  "positionsSortToday": "Pinakamahusay ngayon muna",
+  "chartMyBuys": "Iyong mga binili",
+  "chartMySells": "Iyong mga ibinenta"
 }

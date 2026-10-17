@@ -2413,4 +2413,19 @@ class AppLocalizationsFil extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Pinakamalaki muna';
+
+  @override
+  String get positionsSortGain => 'Pinakamataas na kabuuang kita muna';
+
+  @override
+  String get positionsSortToday => 'Pinakamahusay ngayon muna';
+
+  @override
+  String get chartMyBuys => 'Iyong mga binili';
+
+  @override
+  String get chartMySells => 'Iyong mga ibinenta';
 }

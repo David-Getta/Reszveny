@@ -640,5 +640,10 @@
   "watchShare": "لېست شریک کړئ",
   "watchImport": "ټیکرونه زیات کړئ",
   "watchImportHint": "هغه ټیکرونه ولګوئ چې په کامې، تشې یا نوې کرښې سره بېل شوي وي – د بېلګې په توګه هغه لېست چې چا درسره شریک کړی وي.",
-  "watchImported": "{count, plural, =0{نوې ونډې نشته} =1{1 ونډه اضافه شوه} other{{count} ونډې اضافه شوې}}"
+  "watchImported": "{count, plural, =0{نوې ونډې نشته} =1{1 ونډه اضافه شوه} other{{count} ونډې اضافه شوې}}",
+  "positionsSortWeight": "تر ټولو لوی لومړی",
+  "positionsSortGain": "تر ټولو ډېره ټوله ګټه لومړی",
+  "positionsSortToday": "د نن ورځې غوره لومړی",
+  "chartMyBuys": "ستاسو پېرودونه",
+  "chartMySells": "ستاسو پلورونه"
 }

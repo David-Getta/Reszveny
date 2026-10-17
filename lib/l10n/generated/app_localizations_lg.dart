@@ -2417,4 +2417,19 @@ class AppLocalizationsLg extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Ebisinga obunene bisooke';
+
+  @override
+  String get positionsSortGain => 'Amagoba gonna agasinga bisooke';
+
+  @override
+  String get positionsSortToday => 'Ebisinze leero bisooke';
+
+  @override
+  String get chartMyBuys => 'Bye wagula';
+
+  @override
+  String get chartMySells => 'Bye watunda';
 }

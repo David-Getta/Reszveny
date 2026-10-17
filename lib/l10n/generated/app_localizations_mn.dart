@@ -2407,4 +2407,19 @@ class AppLocalizationsMn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Хамгийн том нь эхэнд';
+
+  @override
+  String get positionsSortGain => 'Нийт өгөөж өндөр нь эхэнд';
+
+  @override
+  String get positionsSortToday => 'Өнөөдрийн шилдэг нь эхэнд';
+
+  @override
+  String get chartMyBuys => 'Таны худалдан авалт';
+
+  @override
+  String get chartMySells => 'Таны борлуулалт';
 }

@@ -2411,4 +2411,19 @@ class AppLocalizationsMs extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get positionsSortWeight => 'Terbesar dahulu';
+
+  @override
+  String get positionsSortGain => 'Pulangan keseluruhan terbaik dahulu';
+
+  @override
+  String get positionsSortToday => 'Terbaik hari ini dahulu';
+
+  @override
+  String get chartMyBuys => 'Pembelian anda';
+
+  @override
+  String get chartMySells => 'Jualan anda';
 }
