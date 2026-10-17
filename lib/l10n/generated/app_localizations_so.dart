@@ -2298,4 +2298,19 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Hadafka waa la gaaray';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol wuxuu dhaafay EPS la filayo';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol ma gaarin EPS la filayo';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS la sheegay $actual, la filayo $estimate';
+  }
 }

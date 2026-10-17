@@ -614,5 +614,8 @@
   "targetsSum": "Jimilla: {percent}",
   "rebalanceBuy": "Saya ≈ {amount}",
   "rebalanceSell": "Sayar ≈ {amount}",
-  "rebalanceOk": "Ya kai manufa"
+  "rebalanceOk": "Ya kai manufa",
+  "earningsResultBeat": "{symbol} ya zarce EPS da ake tsammani",
+  "earningsResultMiss": "{symbol} bai kai EPS da ake tsammani ba",
+  "earningsResultBody": "EPS da aka bayyana {actual}, ana tsammani {estimate}"
 }

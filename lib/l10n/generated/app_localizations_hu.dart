@@ -2297,4 +2297,19 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Célon';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol: a várt EPS felett';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol: a várt EPS alatt';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'Jelentett EPS $actual, várt $estimate';
+  }
 }

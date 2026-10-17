@@ -2295,4 +2295,19 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Maqsadda';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol kutilgan EPS’dan oshdi';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol kutilgan EPS’ga yetmadi';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'Eʼlon qilingan EPS $actual, kutilgan $estimate';
+  }
 }

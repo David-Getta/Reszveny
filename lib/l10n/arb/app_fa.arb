@@ -614,5 +614,8 @@
   "targetsSum": "مجموع: {percent}",
   "rebalanceBuy": "خرید ≈ {amount}",
   "rebalanceSell": "فروش ≈ {amount}",
-  "rebalanceOk": "مطابق هدف"
+  "rebalanceOk": "مطابق هدف",
+  "earningsResultBeat": "{symbol} از EPS مورد انتظار فراتر رفت",
+  "earningsResultMiss": "{symbol} به EPS مورد انتظار نرسید",
+  "earningsResultBody": "EPS گزارش‌شده {actual}، مورد انتظار {estimate}"
 }

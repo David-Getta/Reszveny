@@ -1777,5 +1777,34 @@
       }
     }
   },
-  "rebalanceOk": "On target"
+  "rebalanceOk": "On target",
+  "earningsResultBeat": "{symbol} beat the expected EPS",
+  "@earningsResultBeat": {
+    "description": "Desktop notification title after a watched company reported quarterly earnings per share at or above analysts' expectations.",
+    "placeholders": {
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "earningsResultMiss": "{symbol} missed the expected EPS",
+  "@earningsResultMiss": {
+    "description": "Notification title when the reported EPS was below expectations.",
+    "placeholders": {
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "earningsResultBody": "Reported EPS {actual}, expected {estimate}",
+  "@earningsResultBody": {
+    "placeholders": {
+      "actual": {
+        "type": "String"
+      },
+      "estimate": {
+        "type": "String"
+      }
+    }
+  }
 }

@@ -614,5 +614,8 @@
   "targetsSum": "ጠቅላላ፦ {percent}",
   "rebalanceBuy": "ግዛ ≈ {amount}",
   "rebalanceSell": "ሽጥ ≈ {amount}",
-  "rebalanceOk": "ዒላማ ላይ"
+  "rebalanceOk": "ዒላማ ላይ",
+  "earningsResultBeat": "{symbol} ከሚጠበቀው EPS በላይ አስመዝግቧል",
+  "earningsResultMiss": "{symbol} ከሚጠበቀው EPS በታች አስመዝግቧል",
+  "earningsResultBody": "ሪፖርት የተደረገው EPS {actual}፣ የሚጠበቀው {estimate}"
 }

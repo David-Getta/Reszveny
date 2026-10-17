@@ -2301,4 +2301,19 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Naa sa target';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return 'Milapas ang $symbol sa gipaabot nga EPS';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return 'Wala makaabot ang $symbol sa gipaabot nga EPS';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'Gi-report nga EPS $actual, gipaabot $estimate';
+  }
 }

@@ -614,5 +614,8 @@
   "targetsSum": "Разом: {percent}",
   "rebalanceBuy": "Купити ≈ {amount}",
   "rebalanceSell": "Продати ≈ {amount}",
-  "rebalanceOk": "Відповідає цілі"
+  "rebalanceOk": "Відповідає цілі",
+  "earningsResultBeat": "{symbol} перевершив очікуваний EPS",
+  "earningsResultMiss": "{symbol} не досяг очікуваного EPS",
+  "earningsResultBody": "Опублікований EPS {actual}, очікуваний {estimate}"
 }

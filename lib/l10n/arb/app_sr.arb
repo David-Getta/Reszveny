@@ -614,5 +614,8 @@
   "targetsSum": "Укупно: {percent}",
   "rebalanceBuy": "Купи ≈ {amount}",
   "rebalanceSell": "Продај ≈ {amount}",
-  "rebalanceOk": "На циљу"
+  "rebalanceOk": "На циљу",
+  "earningsResultBeat": "{symbol} је надмашио очекивани EPS",
+  "earningsResultMiss": "{symbol} није достигао очекивани EPS",
+  "earningsResultBody": "Објављени EPS {actual}, очекивани {estimate}"
 }

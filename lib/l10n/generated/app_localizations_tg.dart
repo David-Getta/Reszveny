@@ -2293,4 +2293,19 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Мувофиқи мақсад';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol аз EPS-и пешбинишуда гузашт';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol ба EPS-и пешбинишуда нарасид';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS-и эълоншуда $actual, пешбинишуда $estimate';
+  }
 }

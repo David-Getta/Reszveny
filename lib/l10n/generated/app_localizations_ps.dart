@@ -2283,4 +2283,19 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'په هدف کې';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol له متوقع EPS څخه پورته شو';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol متوقع EPS ته ونه رسېد';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'اعلان شوی EPS $actual، متوقع $estimate';
+  }
 }

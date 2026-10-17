@@ -614,5 +614,8 @@
   "targetsSum": "ਕੁੱਲ: {percent}",
   "rebalanceBuy": "ਖਰੀਦੋ ≈ {amount}",
   "rebalanceSell": "ਵੇਚੋ ≈ {amount}",
-  "rebalanceOk": "ਟੀਚੇ 'ਤੇ"
+  "rebalanceOk": "ਟੀਚੇ 'ਤੇ",
+  "earningsResultBeat": "{symbol} ਨੇ ਉਮੀਦ ਕੀਤੇ EPS ਨੂੰ ਪਾਰ ਕੀਤਾ",
+  "earningsResultMiss": "{symbol} ਉਮੀਦ ਕੀਤੇ EPS ਤੱਕ ਨਹੀਂ ਪਹੁੰਚਿਆ",
+  "earningsResultBody": "ਜਾਰੀ ਕੀਤਾ EPS {actual}, ਉਮੀਦ {estimate}"
 }

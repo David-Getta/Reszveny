@@ -614,5 +614,8 @@
   "targetsSum": "Totaal: {percent}",
   "rebalanceBuy": "Koop ≈ {amount}",
   "rebalanceSell": "Verkoop ≈ {amount}",
-  "rebalanceOk": "Op teiken"
+  "rebalanceOk": "Op teiken",
+  "earningsResultBeat": "{symbol} het die verwagte WPA oortref",
+  "earningsResultMiss": "{symbol} het die verwagte WPA nie gehaal nie",
+  "earningsResultBody": "Gerapporteerde WPA {actual}, verwag {estimate}"
 }

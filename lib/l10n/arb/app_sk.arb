@@ -614,5 +614,8 @@
   "targetsSum": "Spolu: {percent}",
   "rebalanceBuy": "Kúpiť ≈ {amount}",
   "rebalanceSell": "Predať ≈ {amount}",
-  "rebalanceOk": "Podľa cieľa"
+  "rebalanceOk": "Podľa cieľa",
+  "earningsResultBeat": "{symbol} prekonal očakávané EPS",
+  "earningsResultMiss": "{symbol} nedosiahol očakávané EPS",
+  "earningsResultBody": "Vykázané EPS {actual}, očakávané {estimate}"
 }

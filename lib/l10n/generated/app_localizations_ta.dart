@@ -2301,4 +2301,19 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'இலக்கில்';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol எதிர்பார்த்த EPS-ஐ மிஞ்சியது';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol எதிர்பார்த்த EPS-ஐ எட்டவில்லை';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'அறிவிக்கப்பட்ட EPS $actual, எதிர்பார்த்தது $estimate';
+  }
 }

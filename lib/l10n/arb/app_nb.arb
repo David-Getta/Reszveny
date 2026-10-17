@@ -614,5 +614,8 @@
   "targetsSum": "Totalt: {percent}",
   "rebalanceBuy": "Kjøp ≈ {amount}",
   "rebalanceSell": "Selg ≈ {amount}",
-  "rebalanceOk": "På mål"
+  "rebalanceOk": "På mål",
+  "earningsResultBeat": "{symbol} slo forventet EPS",
+  "earningsResultMiss": "{symbol} var under forventet EPS",
+  "earningsResultBody": "Rapportert EPS {actual}, forventet {estimate}"
 }

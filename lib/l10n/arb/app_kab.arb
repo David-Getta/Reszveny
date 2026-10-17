@@ -614,5 +614,8 @@
   "targetsSum": "Asemday: {percent}",
   "rebalanceBuy": "Aɣ ≈ {amount}",
   "rebalanceSell": "Zenz ≈ {amount}",
-  "rebalanceOk": "Deg yiswi"
+  "rebalanceOk": "Deg yiswi",
+  "earningsResultBeat": "{symbol} yeɛedda EPS i yettwarǧan",
+  "earningsResultMiss": "{symbol} ur yewweḍ ara ɣer EPS i yettwarǧan",
+  "earningsResultBody": "EPS i d-yettwabedren {actual}, yettwarǧa {estimate}"
 }

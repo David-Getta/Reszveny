@@ -2291,4 +2291,19 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Hedefte';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol beklenen HBK\'yı aştı';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol beklenen HBK\'nın altında kaldı';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'Açıklanan HBK $actual, beklenen $estimate';
+  }
 }

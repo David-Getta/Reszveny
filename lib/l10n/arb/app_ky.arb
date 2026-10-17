@@ -614,5 +614,8 @@
   "targetsSum": "Бардыгы: {percent}",
   "rebalanceBuy": "Сатып алуу ≈ {amount}",
   "rebalanceSell": "Сатуу ≈ {amount}",
-  "rebalanceOk": "Максатта"
+  "rebalanceOk": "Максатта",
+  "earningsResultBeat": "{symbol} күтүлгөн EPSтен ашты",
+  "earningsResultMiss": "{symbol} күтүлгөн EPSке жеткен жок",
+  "earningsResultBody": "Жарыяланган EPS {actual}, күтүлгөн {estimate}"
 }

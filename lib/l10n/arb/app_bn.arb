@@ -614,5 +614,8 @@
   "targetsSum": "মোট: {percent}",
   "rebalanceBuy": "কিনুন ≈ {amount}",
   "rebalanceSell": "বিক্রি করুন ≈ {amount}",
-  "rebalanceOk": "লক্ষ্যে আছে"
+  "rebalanceOk": "লক্ষ্যে আছে",
+  "earningsResultBeat": "{symbol} প্রত্যাশিত EPS ছাড়িয়ে গেছে",
+  "earningsResultMiss": "{symbol} প্রত্যাশিত EPS ছুঁতে পারেনি",
+  "earningsResultBody": "ঘোষিত EPS {actual}, প্রত্যাশিত {estimate}"
 }

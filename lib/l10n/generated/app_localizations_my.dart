@@ -2284,4 +2284,19 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'ပစ်မှတ်အတိုင်း';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol သည် မျှော်မှန်း EPS ထက် ကျော်လွန်သည်';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol သည် မျှော်မှန်း EPS ထက် နည်းသည်';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'ထုတ်ပြန်ထားသော EPS $actual၊ မျှော်မှန်း $estimate';
+  }
 }

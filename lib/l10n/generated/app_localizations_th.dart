@@ -2263,4 +2263,19 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'ตรงเป้าหมาย';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol มี EPS สูงกว่าคาดการณ์';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol มี EPS ต่ำกว่าคาดการณ์';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS ที่รายงาน $actual คาดการณ์ $estimate';
+  }
 }

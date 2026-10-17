@@ -614,5 +614,8 @@
   "targetsSum": "Isamba: {percent}",
   "rebalanceBuy": "Thenga ≈ {amount}",
   "rebalanceSell": "Thengisa ≈ {amount}",
-  "rebalanceOk": "Kumgomo"
+  "rebalanceOk": "Kumgomo",
+  "earningsResultBeat": "{symbol} idlule i-EPS elindelekile",
+  "earningsResultMiss": "{symbol} ayifinyelelanga ku-EPS elindelekile",
+  "earningsResultBody": "I-EPS ebikiwe {actual}, elindelekile {estimate}"
 }

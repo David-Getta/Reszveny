@@ -614,5 +614,8 @@
   "targetsSum": "Yhteensä: {percent}",
   "rebalanceBuy": "Osta ≈ {amount}",
   "rebalanceSell": "Myy ≈ {amount}",
-  "rebalanceOk": "Tavoitteessa"
+  "rebalanceOk": "Tavoitteessa",
+  "earningsResultBeat": "{symbol} ylitti odotetun EPS:n",
+  "earningsResultMiss": "{symbol} jäi odotetusta EPS:stä",
+  "earningsResultBody": "Toteutunut EPS {actual}, odotettu {estimate}"
 }

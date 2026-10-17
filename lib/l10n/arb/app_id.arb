@@ -614,5 +614,8 @@
   "targetsSum": "Total: {percent}",
   "rebalanceBuy": "Beli ≈ {amount}",
   "rebalanceSell": "Jual ≈ {amount}",
-  "rebalanceOk": "Sesuai target"
+  "rebalanceOk": "Sesuai target",
+  "earningsResultBeat": "{symbol} melampaui EPS yang diharapkan",
+  "earningsResultMiss": "{symbol} di bawah EPS yang diharapkan",
+  "earningsResultBody": "EPS yang dilaporkan {actual}, diharapkan {estimate}"
 }

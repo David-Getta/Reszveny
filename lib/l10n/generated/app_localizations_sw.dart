@@ -2292,4 +2292,19 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Imefikia lengo';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol imezidi EPS inayotarajiwa';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol haijafikia EPS inayotarajiwa';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS iliyoripotiwa $actual, inayotarajiwa $estimate';
+  }
 }

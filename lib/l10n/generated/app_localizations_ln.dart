@@ -2303,4 +2303,19 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Ekoki mokano';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol eleki EPS oyo ezelamaki';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol ekoki te EPS oyo ezelamaki';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS oyo eyebisami $actual, ezelamaki $estimate';
+  }
 }

@@ -2294,4 +2294,19 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Saluyu target';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol ngaleuwihan EPS anu diperkirakeun';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol teu nepi ka EPS anu diperkirakeun';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS anu dilaporkeun $actual, diperkirakeun $estimate';
+  }
 }

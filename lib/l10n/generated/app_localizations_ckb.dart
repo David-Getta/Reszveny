@@ -2292,4 +2292,19 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'لەسەر ئامانج';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol لە EPSی چاوەڕوانکراو تێپەڕی';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol نەگەیشتە EPSی چاوەڕوانکراو';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPSی ڕاگەیەنراو $actual، چاوەڕوانکراو $estimate';
+  }
 }

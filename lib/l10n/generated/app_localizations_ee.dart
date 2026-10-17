@@ -2295,4 +2295,19 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Ɖo taɖodzinu';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol ƒe EPS ƒo esi wole mɔ kpɔm ta';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol ƒe EPS mede esi wole mɔ kpɔm o';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS si woɖe gbeƒã $actual, wole mɔ kpɔm $estimate';
+  }
 }

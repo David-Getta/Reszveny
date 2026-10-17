@@ -614,5 +614,8 @@
   "targetsSum": "Jumla: {percent}",
   "rebalanceBuy": "Nunua ≈ {amount}",
   "rebalanceSell": "Uza ≈ {amount}",
-  "rebalanceOk": "Imefikia lengo"
+  "rebalanceOk": "Imefikia lengo",
+  "earningsResultBeat": "{symbol} imezidi EPS inayotarajiwa",
+  "earningsResultMiss": "{symbol} haijafikia EPS inayotarajiwa",
+  "earningsResultBody": "EPS iliyoripotiwa {actual}, inayotarajiwa {estimate}"
 }

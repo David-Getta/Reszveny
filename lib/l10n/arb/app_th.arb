@@ -614,5 +614,8 @@
   "targetsSum": "รวม: {percent}",
   "rebalanceBuy": "ซื้อ ≈ {amount}",
   "rebalanceSell": "ขาย ≈ {amount}",
-  "rebalanceOk": "ตรงเป้าหมาย"
+  "rebalanceOk": "ตรงเป้าหมาย",
+  "earningsResultBeat": "{symbol} มี EPS สูงกว่าคาดการณ์",
+  "earningsResultMiss": "{symbol} มี EPS ต่ำกว่าคาดการณ์",
+  "earningsResultBody": "EPS ที่รายงาน {actual} คาดการณ์ {estimate}"
 }

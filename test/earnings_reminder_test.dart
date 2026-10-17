@@ -22,6 +22,12 @@ class _Market extends DemoMarketDataProvider {
     final d = dates[symbol];
     return d == null ? null : UpcomingEarnings(date: d, hour: 'amc', epsEstimate: 1.62);
   }
+
+  /// A jelentés után megjelenő eredmény (tesztben kézzel állítható).
+  final results = <String, EarningsSurprise>{};
+
+  @override
+  Future<EarningsOverview> earnings(String symbol) async => EarningsOverview(history: [?results[symbol]]);
 }
 
 void main() {
@@ -30,7 +36,12 @@ void main() {
 
   setUp(() => SharedPreferences.setMockInitialValues({}));
 
-  EarningsReminder reminder(_Market market, FakeNotifier notifier, AppPreferences prefs) => EarningsReminder(
+  EarningsReminder reminder(
+    _Market market,
+    FakeNotifier notifier,
+    AppPreferences prefs, {
+    DateTime Function()? clock,
+  }) => EarningsReminder(
     events: EventsService(
       marketData: market,
       preferences: prefs,
@@ -40,6 +51,8 @@ void main() {
     preferences: prefs,
     notifier: notifier,
     describe: (e, {required tomorrow}) => (title: '${e.symbol} ${tomorrow ? 'tomorrow' : 'today'}', body: e.hour ?? ''),
+    describeResult: (symbol, r) => (title: '$symbol ${r.beat == true ? 'beat' : 'missed'}', body: '${r.actual}'),
+    clock: clock,
   );
 
   test('one notification for results tomorrow or today, never twice, none for later ones', () async {
@@ -61,6 +74,27 @@ void main() {
     // Újra (akár újraindítás után is) már nem szól.
     expect(await reminder(market, notifier, prefs).check(), isEmpty);
     expect(notifier.sent.length, 2);
+  });
+
+  test('after the report: one notification with the result, once it is out', () async {
+    final market = _Market({'AAPL': today.add(const Duration(days: 1))});
+    final notifier = FakeNotifier();
+    final prefs = AppPreferences(favorites: const ['AAPL']);
+    await reminder(market, notifier, prefs).check();
+    expect(notifier.sent.single.title, 'AAPL tomorrow');
+
+    // Másnap még nincs eredmény: csend.
+    final later = today.add(const Duration(days: 2));
+    expect(await reminder(market, notifier, prefs, clock: () => later).check(), isEmpty);
+    // Megjelent: egyszer szól.
+    market.results['AAPL'] = EarningsSurprise(
+      period: today.subtract(const Duration(days: 20)),
+      actual: 1.7,
+      estimate: 1.62,
+    );
+    expect(await reminder(market, notifier, prefs, clock: () => later).check(), hasLength(1));
+    expect(notifier.sent.last.title, 'AAPL beat');
+    expect(await reminder(market, notifier, prefs, clock: () => later).check(), isEmpty);
   });
 
   test('off in Settings, or nothing watched: no notification', () async {

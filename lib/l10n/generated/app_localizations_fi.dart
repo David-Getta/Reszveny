@@ -2293,4 +2293,19 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Tavoitteessa';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol ylitti odotetun EPS:n';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol jäi odotetusta EPS:stä';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'Toteutunut EPS $actual, odotettu $estimate';
+  }
 }

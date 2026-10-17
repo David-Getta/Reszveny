@@ -2298,4 +2298,19 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Në synim';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol tejkaloi EPS-në e pritur';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol nuk arriti EPS-në e pritur';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS e raportuar $actual, e pritur $estimate';
+  }
 }

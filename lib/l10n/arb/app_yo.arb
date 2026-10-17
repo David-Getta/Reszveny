@@ -614,5 +614,8 @@
   "targetsSum": "Àpapọ̀: {percent}",
   "rebalanceBuy": "Rà á ≈ {amount}",
   "rebalanceSell": "Tà á ≈ {amount}",
-  "rebalanceOk": "Ó wà ní àfojúsùn"
+  "rebalanceOk": "Ó wà ní àfojúsùn",
+  "earningsResultBeat": "{symbol} ré EPS tí a retí kọjá",
+  "earningsResultMiss": "{symbol} kò dé EPS tí a retí",
+  "earningsResultBody": "EPS tí a kéde {actual}, tí a retí {estimate}"
 }

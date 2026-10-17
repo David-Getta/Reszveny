@@ -2286,4 +2286,19 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Ci jubluwaay bi';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol weesu na EPS bi ñu séentu';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol agsiwul EPS bi ñu séentu';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS bi ñu yégle $actual, bi ñu séentu $estimate';
+  }
 }

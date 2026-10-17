@@ -614,5 +614,8 @@
   "targetsSum": "الإجمالي: {percent}",
   "rebalanceBuy": "شراء ≈ {amount}",
   "rebalanceSell": "بيع ≈ {amount}",
-  "rebalanceOk": "ضمن الهدف"
+  "rebalanceOk": "ضمن الهدف",
+  "earningsResultBeat": "{symbol} تجاوز ربحية السهم المتوقعة",
+  "earningsResultMiss": "{symbol} لم يبلغ ربحية السهم المتوقعة",
+  "earningsResultBody": "ربحية السهم المُعلنة {actual}، المتوقعة {estimate}"
 }

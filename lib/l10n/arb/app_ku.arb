@@ -614,5 +614,8 @@
   "targetsSum": "Tevahî: {percent}",
   "rebalanceBuy": "Bikire ≈ {amount}",
   "rebalanceSell": "Bifiroşe ≈ {amount}",
-  "rebalanceOk": "Li ser armancê"
+  "rebalanceOk": "Li ser armancê",
+  "earningsResultBeat": "{symbol} ji EPS ya tê payîn derbas bû",
+  "earningsResultMiss": "{symbol} negihîşt EPS ya tê payîn",
+  "earningsResultBody": "EPS ya hatî ragihandin {actual}, tê payîn {estimate}"
 }

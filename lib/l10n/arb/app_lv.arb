@@ -614,5 +614,8 @@
   "targetsSum": "Kopā: {percent}",
   "rebalanceBuy": "Pirkt ≈ {amount}",
   "rebalanceSell": "Pārdot ≈ {amount}",
-  "rebalanceOk": "Atbilst mērķim"
+  "rebalanceOk": "Atbilst mērķim",
+  "earningsResultBeat": "{symbol} pārsniedza prognozēto EPS",
+  "earningsResultMiss": "{symbol} nesasniedza prognozēto EPS",
+  "earningsResultBody": "Paziņotais EPS {actual}, prognozētais {estimate}"
 }

@@ -2288,4 +2288,19 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'مطابق هدف';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol از EPS مورد انتظار فراتر رفت';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol به EPS مورد انتظار نرسید';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS گزارش‌شده $actual، مورد انتظار $estimate';
+  }
 }

@@ -210,7 +210,7 @@ class _WatchlistPageState extends State<WatchlistPage> {
         ],
       ),
       body: ListenableBuilder(
-        listenable: services.preferences,
+        listenable: Listenable.merge([services.preferences, services.alerts]),
         builder: (context, _) {
           final favorites = services.preferences.favorites;
           if (favorites.isEmpty) {
@@ -243,6 +243,7 @@ class _WatchlistPageState extends State<WatchlistPage> {
             onDismissed: (_) => _remove(s),
             child: _WatchRow(
               symbol: s,
+              hasAlert: services.alerts.hasActive(s),
               quote: _quote(s),
               history: _history(s),
               onTap: () => widget.onOpenSymbol(StockCandidate(symbol: s, companyName: s, confidence: 1)),
@@ -386,6 +387,7 @@ class _ListNameDialogState extends State<_ListNameDialog> {
 class _WatchRow extends StatelessWidget {
   const _WatchRow({
     required this.symbol,
+    this.hasAlert = false,
     required this.quote,
     required this.history,
     required this.onTap,
@@ -393,6 +395,9 @@ class _WatchRow extends StatelessWidget {
   });
 
   final String symbol;
+
+  /// Van-e aktív árfolyam-riasztás a részvényre (kis harang a ticker mellett).
+  final bool hasAlert;
   final Future<StockQuote> quote;
   final Future<PriceHistory> history;
   final VoidCallback onTap;
@@ -414,7 +419,30 @@ class _WatchRow extends StatelessWidget {
             children: [
               SizedBox(
                 width: 72,
-                child: Text(symbol, style: const TextStyle(fontWeight: FontWeight.w700)),
+                child: Row(
+                  children: [
+                    Flexible(
+                      child: Text(
+                        symbol,
+                        overflow: TextOverflow.ellipsis,
+                        style: const TextStyle(fontWeight: FontWeight.w700),
+                      ),
+                    ),
+                    if (hasAlert)
+                      Padding(
+                        padding: const EdgeInsetsDirectional.only(start: 3),
+                        child: Tooltip(
+                          message: l10n.priceAlerts,
+                          child: Icon(
+                            Icons.notifications_active_rounded,
+                            key: ValueKey('watch-alert-$symbol'),
+                            size: 13,
+                            color: p.accent,
+                          ),
+                        ),
+                      ),
+                  ],
+                ),
               ),
               Expanded(
                 child: FutureBuilder<PriceHistory>(

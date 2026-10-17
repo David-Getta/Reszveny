@@ -614,5 +614,8 @@
   "targetsSum": "جەمئىي: {percent}",
   "rebalanceBuy": "سېتىۋېلىش ≈ {amount}",
   "rebalanceSell": "سېتىش ≈ {amount}",
-  "rebalanceOk": "نىشاندا"
+  "rebalanceOk": "نىشاندا",
+  "earningsResultBeat": "{symbol} مۆلچەردىكى EPS دىن ئاشتى",
+  "earningsResultMiss": "{symbol} مۆلچەردىكى EPS غا يەتمىدى",
+  "earningsResultBody": "ئېلان قىلىنغان EPS {actual}، مۆلچەر {estimate}"
 }

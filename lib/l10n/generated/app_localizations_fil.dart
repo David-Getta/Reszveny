@@ -2298,4 +2298,19 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Nasa target';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return 'Nalampasan ng $symbol ang inaasahang EPS';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return 'Hindi naabot ng $symbol ang inaasahang EPS';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'Iniulat na EPS $actual, inaasahan $estimate';
+  }
 }

@@ -614,5 +614,8 @@
   "targetsSum": "Összesen: {percent}",
   "rebalanceBuy": "Vétel ≈ {amount}",
   "rebalanceSell": "Eladás ≈ {amount}",
-  "rebalanceOk": "Célon"
+  "rebalanceOk": "Célon",
+  "earningsResultBeat": "{symbol}: a várt EPS felett",
+  "earningsResultMiss": "{symbol}: a várt EPS alatt",
+  "earningsResultBody": "Jelentett EPS {actual}, várt {estimate}"
 }

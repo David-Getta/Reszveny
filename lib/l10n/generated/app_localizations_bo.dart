@@ -2281,4 +2281,19 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'དམིགས་ཡུལ་ཐོག';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol: རེ་སྒུག་བྱས་པའི་EPS ལས་མཐོ།';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol: རེ་སྒུག་བྱས་པའི་EPS ལས་དམའ།';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'སྙན་ཞུ་བྱས་པའི་EPS $actual། རེ་སྒུག་བྱས་པ $estimate';
+  }
 }

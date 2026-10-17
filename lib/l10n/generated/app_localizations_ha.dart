@@ -2297,4 +2297,19 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Ya kai manufa';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol ya zarce EPS da ake tsammani';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol bai kai EPS da ake tsammani ba';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS da aka bayyana $actual, ana tsammani $estimate';
+  }
 }

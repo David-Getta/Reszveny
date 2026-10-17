@@ -4026,6 +4026,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'On target'**
   String get rebalanceOk;
+
+  /// Desktop notification title after a watched company reported quarterly earnings per share at or above analysts' expectations.
+  ///
+  /// In en, this message translates to:
+  /// **'{symbol} beat the expected EPS'**
+  String earningsResultBeat(String symbol);
+
+  /// Notification title when the reported EPS was below expectations.
+  ///
+  /// In en, this message translates to:
+  /// **'{symbol} missed the expected EPS'**
+  String earningsResultMiss(String symbol);
+
+  /// No description provided for @earningsResultBody.
+  ///
+  /// In en, this message translates to:
+  /// **'Reported EPS {actual}, expected {estimate}'**
+  String earningsResultBody(String actual, String estimate);
 }
 
 class _AppLocalizationsDelegate

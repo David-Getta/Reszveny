@@ -2289,4 +2289,19 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'A sera laɲini ma';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol ye EPS makɔnɔnen tɛmɛ';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol ma se EPS makɔnɔnen ma';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS fɔlen $actual, makɔnɔnen $estimate';
+  }
 }

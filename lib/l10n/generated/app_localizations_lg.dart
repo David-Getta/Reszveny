@@ -2302,4 +2302,19 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Kituuse ku kigendererwa';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol esukkulumye EPS esuubirwa';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol tetuuse ku EPS esuubirwa';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS eyalangiriddwa $actual, esuubirwa $estimate';
+  }
 }

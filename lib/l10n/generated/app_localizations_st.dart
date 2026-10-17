@@ -2305,4 +2305,19 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Sepheong';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol e fetile EPS e lebelletsweng';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol ha e a fihla EPS e lebelletsweng';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS e tlalehilweng $actual, e lebelletsweng $estimate';
+  }
 }

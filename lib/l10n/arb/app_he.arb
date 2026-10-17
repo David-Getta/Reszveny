@@ -614,5 +614,8 @@
   "targetsSum": "סה״כ: {percent}",
   "rebalanceBuy": "קנייה ≈ {amount}",
   "rebalanceSell": "מכירה ≈ {amount}",
-  "rebalanceOk": "ביעד"
+  "rebalanceOk": "ביעד",
+  "earningsResultBeat": "{symbol}: מעל ה-EPS הצפוי",
+  "earningsResultMiss": "{symbol}: מתחת ל-EPS הצפוי",
+  "earningsResultBody": "EPS מדווח {actual}, צפוי {estimate}"
 }

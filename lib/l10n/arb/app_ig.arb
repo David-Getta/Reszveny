@@ -614,5 +614,8 @@
   "targetsSum": "Ngụkọta: {percent}",
   "rebalanceBuy": "Zụta ≈ {amount}",
   "rebalanceSell": "Ree ≈ {amount}",
-  "rebalanceOk": "Ọ ruru ebumnuche"
+  "rebalanceOk": "Ọ ruru ebumnuche",
+  "earningsResultBeat": "{symbol} karịrị EPS a na-atụ anya ya",
+  "earningsResultMiss": "{symbol} erughị EPS a na-atụ anya ya",
+  "earningsResultBody": "EPS e kwuputara {actual}, a tụrụ anya {estimate}"
 }

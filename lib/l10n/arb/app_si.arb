@@ -614,5 +614,8 @@
   "targetsSum": "එකතුව: {percent}",
   "rebalanceBuy": "මිලදී ගන්න ≈ {amount}",
   "rebalanceSell": "විකුණන්න ≈ {amount}",
-  "rebalanceOk": "ඉලක්කයේ"
+  "rebalanceOk": "ඉලක්කයේ",
+  "earningsResultBeat": "{symbol} අපේක්ෂිත EPS ඉක්මවා ගියේය",
+  "earningsResultMiss": "{symbol} අපේක්ෂිත EPS වෙත නොළඟා විය",
+  "earningsResultBody": "වාර්තා කළ EPS {actual}, අපේක්ෂිත {estimate}"
 }

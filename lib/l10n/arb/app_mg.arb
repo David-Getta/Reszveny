@@ -614,5 +614,8 @@
   "targetsSum": "Totaly: {percent}",
   "rebalanceBuy": "Vidio ≈ {amount}",
   "rebalanceSell": "Amidy ≈ {amount}",
-  "rebalanceOk": "Mifanaraka amin'ny tanjona"
+  "rebalanceOk": "Mifanaraka amin'ny tanjona",
+  "earningsResultBeat": "{symbol}: ambony noho ny EPS notombanana",
+  "earningsResultMiss": "{symbol}: ambany noho ny EPS notombanana",
+  "earningsResultBody": "EPS navoaka {actual}, notombanana {estimate}"
 }

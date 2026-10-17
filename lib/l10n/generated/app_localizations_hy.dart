@@ -2299,4 +2299,19 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Թիրախում է';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol-ը գերազանցեց սպասվող EPS-ը';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol-ը չհասավ սպասվող EPS-ին';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'Հրապարակված EPS $actual, սպասվող $estimate';
+  }
 }

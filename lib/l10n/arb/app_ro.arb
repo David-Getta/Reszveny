@@ -614,5 +614,8 @@
   "targetsSum": "Total: {percent}",
   "rebalanceBuy": "Cumpără ≈ {amount}",
   "rebalanceSell": "Vinde ≈ {amount}",
-  "rebalanceOk": "La țintă"
+  "rebalanceOk": "La țintă",
+  "earningsResultBeat": "{symbol} a depășit EPS-ul așteptat",
+  "earningsResultMiss": "{symbol} sub EPS-ul așteptat",
+  "earningsResultBody": "EPS raportat {actual}, așteptat {estimate}"
 }

@@ -614,5 +614,8 @@
   "targetsSum": "Jumlah: {percent}",
   "rebalanceBuy": "Beuli ≈ {amount}",
   "rebalanceSell": "Jual ≈ {amount}",
-  "rebalanceOk": "Saluyu target"
+  "rebalanceOk": "Saluyu target",
+  "earningsResultBeat": "{symbol} ngaleuwihan EPS anu diperkirakeun",
+  "earningsResultMiss": "{symbol} teu nepi ka EPS anu diperkirakeun",
+  "earningsResultBody": "EPS anu dilaporkeun {actual}, diperkirakeun {estimate}"
 }

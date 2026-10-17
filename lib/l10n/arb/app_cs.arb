@@ -614,5 +614,8 @@
   "targetsSum": "Celkem: {percent}",
   "rebalanceBuy": "Koupit ≈ {amount}",
   "rebalanceSell": "Prodat ≈ {amount}",
-  "rebalanceOk": "Odpovídá cíli"
+  "rebalanceOk": "Odpovídá cíli",
+  "earningsResultBeat": "{symbol} překonal očekávané EPS",
+  "earningsResultMiss": "{symbol} nedosáhl očekávaného EPS",
+  "earningsResultBody": "Vykázané EPS {actual}, očekávané {estimate}"
 }

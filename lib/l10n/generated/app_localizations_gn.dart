@@ -2297,4 +2297,19 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Jehupytyrãme';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol ohasa EPS oñehaʼarõvagui';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol ndohupytýi EPS oñehaʼarõva';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS oñemomaranduva $actual, oñehaʼarõva $estimate';
+  }
 }

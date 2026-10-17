@@ -614,5 +614,8 @@
   "targetsSum": "Gjithsej: {percent}",
   "rebalanceBuy": "Bli ≈ {amount}",
   "rebalanceSell": "Shit ≈ {amount}",
-  "rebalanceOk": "Në synim"
+  "rebalanceOk": "Në synim",
+  "earningsResultBeat": "{symbol} tejkaloi EPS-në e pritur",
+  "earningsResultMiss": "{symbol} nuk arriti EPS-në e pritur",
+  "earningsResultBody": "EPS e raportuar {actual}, e pritur {estimate}"
 }

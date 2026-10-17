@@ -614,5 +614,8 @@
   "targetsSum": "Wadarta: {percent}",
   "rebalanceBuy": "Iibso ≈ {amount}",
   "rebalanceSell": "Iibi ≈ {amount}",
-  "rebalanceOk": "Hadafka waa la gaaray"
+  "rebalanceOk": "Hadafka waa la gaaray",
+  "earningsResultBeat": "{symbol} wuxuu dhaafay EPS la filayo",
+  "earningsResultMiss": "{symbol} ma gaarin EPS la filayo",
+  "earningsResultBody": "EPS la sheegay {actual}, la filayo {estimate}"
 }

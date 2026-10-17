@@ -614,5 +614,8 @@
   "targetsSum": "Нийт: {percent}",
   "rebalanceBuy": "Авах ≈ {amount}",
   "rebalanceSell": "Зарах ≈ {amount}",
-  "rebalanceOk": "Зорилтод хүрсэн"
+  "rebalanceOk": "Зорилтод хүрсэн",
+  "earningsResultBeat": "{symbol} хүлээгдэж буй EPS-ээс давлаа",
+  "earningsResultMiss": "{symbol} хүлээгдэж буй EPS-д хүрсэнгүй",
+  "earningsResultBody": "Тайлагнасан EPS {actual}, хүлээгдэж буй {estimate}"
 }

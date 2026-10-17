@@ -614,5 +614,8 @@
   "targetsSum": "Tổng: {percent}",
   "rebalanceBuy": "Mua ≈ {amount}",
   "rebalanceSell": "Bán ≈ {amount}",
-  "rebalanceOk": "Đạt mục tiêu"
+  "rebalanceOk": "Đạt mục tiêu",
+  "earningsResultBeat": "{symbol} vượt EPS dự kiến",
+  "earningsResultMiss": "{symbol} không đạt EPS dự kiến",
+  "earningsResultBody": "EPS công bố {actual}, dự kiến {estimate}"
 }

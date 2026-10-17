@@ -614,5 +614,8 @@
   "targetsSum": "Gesamt: {percent}",
   "rebalanceBuy": "Kaufen ≈ {amount}",
   "rebalanceSell": "Verkaufen ≈ {amount}",
-  "rebalanceOk": "Im Ziel"
+  "rebalanceOk": "Im Ziel",
+  "earningsResultBeat": "{symbol} übertrifft das erwartete EPS",
+  "earningsResultMiss": "{symbol} verfehlt das erwartete EPS",
+  "earningsResultBody": "Gemeldetes EPS {actual}, erwartet {estimate}"
 }

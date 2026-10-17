@@ -614,5 +614,8 @@
   "targetsSum": "ລວມ: {percent}",
   "rebalanceBuy": "ຊື້ ≈ {amount}",
   "rebalanceSell": "ຂາຍ ≈ {amount}",
-  "rebalanceOk": "ຕາມເປົ້າໝາຍ"
+  "rebalanceOk": "ຕາມເປົ້າໝາຍ",
+  "earningsResultBeat": "{symbol} ສູງກວ່າ EPS ທີ່ຄາດໄວ້",
+  "earningsResultMiss": "{symbol} ຕ່ຳກວ່າ EPS ທີ່ຄາດໄວ້",
+  "earningsResultBody": "EPS ທີ່ລາຍງານ {actual}, ຄາດໄວ້ {estimate}"
 }

@@ -2214,4 +2214,19 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get rebalanceOk => '目標どおり';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbolはEPS予想を上回りました';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbolはEPS予想を下回りました';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS実績 $actual、予想 $estimate';
+  }
 }

@@ -2283,4 +2283,19 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'هدف تي';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol متوقع EPS کان وڌي ويو';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol متوقع EPS کان گهٽ رهيو';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'جاري ڪيل EPS $actual، متوقع $estimate';
+  }
 }

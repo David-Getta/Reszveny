@@ -614,5 +614,8 @@
   "targetsSum": "Totaal: {percent}",
   "rebalanceBuy": "Kopen ≈ {amount}",
   "rebalanceSell": "Verkopen ≈ {amount}",
-  "rebalanceOk": "Op doel"
+  "rebalanceOk": "Op doel",
+  "earningsResultBeat": "{symbol} verslaat de verwachte EPS",
+  "earningsResultMiss": "{symbol} blijft onder de verwachte EPS",
+  "earningsResultBody": "Gerapporteerde EPS {actual}, verwacht {estimate}"
 }

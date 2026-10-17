@@ -614,5 +614,8 @@
   "targetsSum": "Toplam: {percent}",
   "rebalanceBuy": "Al ≈ {amount}",
   "rebalanceSell": "Sat ≈ {amount}",
-  "rebalanceOk": "Hedefte"
+  "rebalanceOk": "Hedefte",
+  "earningsResultBeat": "{symbol} beklenen HBK'yı aştı",
+  "earningsResultMiss": "{symbol} beklenen HBK'nın altında kaldı",
+  "earningsResultBody": "Açıklanan HBK {actual}, beklenen {estimate}"
 }

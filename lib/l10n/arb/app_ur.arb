@@ -614,5 +614,8 @@
   "targetsSum": "کل: {percent}",
   "rebalanceBuy": "خریدیں ≈ {amount}",
   "rebalanceSell": "فروخت کریں ≈ {amount}",
-  "rebalanceOk": "ہدف پر"
+  "rebalanceOk": "ہدف پر",
+  "earningsResultBeat": "{symbol} متوقع EPS سے آگے نکل گیا",
+  "earningsResultMiss": "{symbol} متوقع EPS سے پیچھے رہ گیا",
+  "earningsResultBody": "رپورٹ شدہ EPS {actual}، متوقع {estimate}"
 }

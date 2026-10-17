@@ -614,5 +614,8 @@
   "targetsSum": "Katã: {percent}",
   "rebalanceBuy": "Ƒle ≈ {amount}",
   "rebalanceSell": "Dzra ≈ {amount}",
-  "rebalanceOk": "Ɖo taɖodzinu"
+  "rebalanceOk": "Ɖo taɖodzinu",
+  "earningsResultBeat": "{symbol} ƒe EPS ƒo esi wole mɔ kpɔm ta",
+  "earningsResultMiss": "{symbol} ƒe EPS mede esi wole mɔ kpɔm o",
+  "earningsResultBody": "EPS si woɖe gbeƒã {actual}, wole mɔ kpɔm {estimate}"
 }

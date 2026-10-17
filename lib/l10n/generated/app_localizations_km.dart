@@ -2272,4 +2272,19 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'ត្រូវតាមគោលដៅ';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol លើសពី EPS រំពឹងទុក';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol ទាបជាង EPS រំពឹងទុក';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS ដែលបានរាយការណ៍ $actual រំពឹងទុក $estimate';
+  }
 }

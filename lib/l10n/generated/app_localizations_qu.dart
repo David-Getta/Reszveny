@@ -2305,4 +2305,19 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Munasqapi';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol: suyakusqa EPS-manta aswan';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol: suyakusqa EPS-manta pisi';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'Willakusqa EPS $actual, suyakusqa $estimate';
+  }
 }

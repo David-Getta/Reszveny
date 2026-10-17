@@ -614,5 +614,8 @@
   "targetsSum": "Kabuuan: {percent}",
   "rebalanceBuy": "Bumili ≈ {amount}",
   "rebalanceSell": "Ibenta ≈ {amount}",
-  "rebalanceOk": "Nasa target"
+  "rebalanceOk": "Nasa target",
+  "earningsResultBeat": "Nalampasan ng {symbol} ang inaasahang EPS",
+  "earningsResultMiss": "Hindi naabot ng {symbol} ang inaasahang EPS",
+  "earningsResultBody": "Iniulat na EPS {actual}, inaasahan {estimate}"
 }

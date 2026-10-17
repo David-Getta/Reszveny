@@ -2298,4 +2298,19 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Pa cholinga';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol yaposa EPS yoyembekezeredwa';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol sinafike EPS yoyembekezeredwa';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS yolengezedwa $actual, yoyembekezeredwa $estimate';
+  }
 }

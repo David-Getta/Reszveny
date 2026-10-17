@@ -614,5 +614,8 @@
   "targetsSum": "ମୋଟ: {percent}",
   "rebalanceBuy": "କିଣନ୍ତୁ ≈ {amount}",
   "rebalanceSell": "ବିକ୍ରି କରନ୍ତୁ ≈ {amount}",
-  "rebalanceOk": "ଲକ୍ଷ୍ୟରେ"
+  "rebalanceOk": "ଲକ୍ଷ୍ୟରେ",
+  "earningsResultBeat": "{symbol} ପ୍ରତ୍ୟାଶିତ EPS ଅତିକ୍ରମ କଲା",
+  "earningsResultMiss": "{symbol} ପ୍ରତ୍ୟାଶିତ EPS ରେ ପହଞ୍ଚିଲା ନାହିଁ",
+  "earningsResultBody": "ଘୋଷିତ EPS {actual}, ପ୍ରତ୍ୟାଶିତ {estimate}"
 }

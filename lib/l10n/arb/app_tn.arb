@@ -614,5 +614,8 @@
   "targetsSum": "Palogotlhe: {percent}",
   "rebalanceBuy": "Reka ≈ {amount}",
   "rebalanceSell": "Rekisa ≈ {amount}",
-  "rebalanceOk": "Mo maikaelelong"
+  "rebalanceOk": "Mo maikaelelong",
+  "earningsResultBeat": "{symbol} e fetile EPS e e solofetsweng",
+  "earningsResultMiss": "{symbol} ga e a fitlha EPS e e solofetsweng",
+  "earningsResultBody": "EPS e e begilweng {actual}, e e solofetsweng {estimate}"
 }

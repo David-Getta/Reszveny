@@ -614,5 +614,8 @@
   "targetsSum": "Jami: {percent}",
   "rebalanceBuy": "Sotib olish ≈ {amount}",
   "rebalanceSell": "Sotish ≈ {amount}",
-  "rebalanceOk": "Maqsadda"
+  "rebalanceOk": "Maqsadda",
+  "earningsResultBeat": "{symbol} kutilgan EPS’dan oshdi",
+  "earningsResultMiss": "{symbol} kutilgan EPS’ga yetmadi",
+  "earningsResultBody": "Eʼlon qilingan EPS {actual}, kutilgan {estimate}"
 }

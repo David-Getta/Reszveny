@@ -2291,4 +2291,19 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Maksada laýyk';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol garaşylýan EPS-den geçdi';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol garaşylýan EPS-e ýetmedi';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'Yglan edilen EPS $actual, garaşylýan $estimate';
+  }
 }

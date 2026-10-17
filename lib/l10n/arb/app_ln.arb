@@ -614,5 +614,8 @@
   "targetsSum": "Nyonso: {percent}",
   "rebalanceBuy": "Somba ≈ {amount}",
   "rebalanceSell": "Teka ≈ {amount}",
-  "rebalanceOk": "Ekoki mokano"
+  "rebalanceOk": "Ekoki mokano",
+  "earningsResultBeat": "{symbol} eleki EPS oyo ezelamaki",
+  "earningsResultMiss": "{symbol} ekoki te EPS oyo ezelamaki",
+  "earningsResultBody": "EPS oyo eyebisami {actual}, ezelamaki {estimate}"
 }

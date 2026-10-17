@@ -2300,4 +2300,19 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Εντός στόχου';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol: πάνω από το αναμενόμενο EPS';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol: κάτω από το αναμενόμενο EPS';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'Ανακοινωμένο EPS $actual, αναμενόμενο $estimate';
+  }
 }

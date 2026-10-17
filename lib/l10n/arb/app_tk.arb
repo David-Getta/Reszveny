@@ -614,5 +614,8 @@
   "targetsSum": "Jemi: {percent}",
   "rebalanceBuy": "Satyn al ≈ {amount}",
   "rebalanceSell": "Sat ≈ {amount}",
-  "rebalanceOk": "Maksada laýyk"
+  "rebalanceOk": "Maksada laýyk",
+  "earningsResultBeat": "{symbol} garaşylýan EPS-den geçdi",
+  "earningsResultMiss": "{symbol} garaşylýan EPS-e ýetmedi",
+  "earningsResultBody": "Yglan edilen EPS {actual}, garaşylýan {estimate}"
 }

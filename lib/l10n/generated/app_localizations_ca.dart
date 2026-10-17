@@ -2301,4 +2301,19 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'A l\'objectiu';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol supera el BPA previst';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol no arriba al BPA previst';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'BPA publicat $actual, previst $estimate';
+  }
 }

@@ -614,5 +614,8 @@
   "targetsSum": "合計：{percent}",
   "rebalanceBuy": "購入 ≈ {amount}",
   "rebalanceSell": "売却 ≈ {amount}",
-  "rebalanceOk": "目標どおり"
+  "rebalanceOk": "目標どおり",
+  "earningsResultBeat": "{symbol}はEPS予想を上回りました",
+  "earningsResultMiss": "{symbol}はEPS予想を下回りました",
+  "earningsResultBody": "EPS実績 {actual}、予想 {estimate}"
 }

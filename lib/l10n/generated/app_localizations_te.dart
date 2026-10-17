@@ -2297,4 +2297,19 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'లక్ష్యంలో';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol అంచనా EPSను అధిగమించింది';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol అంచనా EPSను అందుకోలేదు';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'ప్రకటించిన EPS $actual, అంచనా $estimate';
+  }
 }

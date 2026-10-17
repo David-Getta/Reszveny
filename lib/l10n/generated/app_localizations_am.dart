@@ -2259,4 +2259,19 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'ዒላማ ላይ';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol ከሚጠበቀው EPS በላይ አስመዝግቧል';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol ከሚጠበቀው EPS በታች አስመዝግቧል';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'ሪፖርት የተደረገው EPS $actual፣ የሚጠበቀው $estimate';
+  }
 }

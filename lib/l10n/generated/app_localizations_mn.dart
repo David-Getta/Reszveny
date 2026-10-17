@@ -2292,4 +2292,19 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Зорилтод хүрсэн';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol хүлээгдэж буй EPS-ээс давлаа';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol хүлээгдэж буй EPS-д хүрсэнгүй';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'Тайлагнасан EPS $actual, хүлээгдэж буй $estimate';
+  }
 }

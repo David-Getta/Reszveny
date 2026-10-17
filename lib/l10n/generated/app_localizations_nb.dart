@@ -2292,4 +2292,19 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'På mål';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol slo forventet EPS';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol var under forventet EPS';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'Rapportert EPS $actual, forventet $estimate';
+  }
 }

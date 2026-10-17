@@ -2300,4 +2300,19 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Ku ntego';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol yarenze EPS yari yitezwe';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol ntiyageze kuri EPS yari yitezwe';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS yatangajwe $actual, yari yitezwe $estimate';
+  }
 }

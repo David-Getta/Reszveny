@@ -614,5 +614,8 @@
   "targetsSum": "మొత్తం: {percent}",
   "rebalanceBuy": "కొను ≈ {amount}",
   "rebalanceSell": "అమ్ము ≈ {amount}",
-  "rebalanceOk": "లక్ష్యంలో"
+  "rebalanceOk": "లక్ష్యంలో",
+  "earningsResultBeat": "{symbol} అంచనా EPSను అధిగమించింది",
+  "earningsResultMiss": "{symbol} అంచనా EPSను అందుకోలేదు",
+  "earningsResultBody": "ప్రకటించిన EPS {actual}, అంచనా {estimate}"
 }

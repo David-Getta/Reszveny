@@ -614,5 +614,8 @@
   "targetsSum": "Waliigala: {percent}",
   "rebalanceBuy": "Bitadhu ≈ {amount}",
   "rebalanceSell": "Gurguri ≈ {amount}",
-  "rebalanceOk": "Galma irra"
+  "rebalanceOk": "Galma irra",
+  "earningsResultBeat": "{symbol} EPS eegame caale",
+  "earningsResultMiss": "{symbol} EPS eegame hin geenye",
+  "earningsResultBody": "EPS gabaafame {actual}, eegame {estimate}"
 }

@@ -2287,4 +2287,19 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Ọ ruru ebumnuche';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol karịrị EPS a na-atụ anya ya';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol erughị EPS a na-atụ anya ya';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS e kwuputara $actual, a tụrụ anya $estimate';
+  }
 }

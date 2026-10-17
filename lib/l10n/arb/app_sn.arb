@@ -614,5 +614,8 @@
   "targetsSum": "Zvese pamwe: {percent}",
   "rebalanceBuy": "Tenga ≈ {amount}",
   "rebalanceSell": "Tengesa ≈ {amount}",
-  "rebalanceOk": "Pachinangwa"
+  "rebalanceOk": "Pachinangwa",
+  "earningsResultBeat": "{symbol} yapfuura EPS inotarisirwa",
+  "earningsResultMiss": "{symbol} haina kusvika EPS inotarisirwa",
+  "earningsResultBody": "EPS yakaziviswa {actual}, inotarisirwa {estimate}"
 }

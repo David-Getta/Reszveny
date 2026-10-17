@@ -2293,4 +2293,19 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Li ser armancê';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol ji EPS ya tê payîn derbas bû';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol negihîşt EPS ya tê payîn';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS ya hatî ragihandin $actual, tê payîn $estimate';
+  }
 }

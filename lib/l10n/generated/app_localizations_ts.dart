@@ -2307,4 +2307,19 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Eka xikongomelo';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol yi hundzile EPS leyi languteriweke';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol a yi fikanga eka EPS leyi languteriweke';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS leyi vikiweke $actual, leyi languteriweke $estimate';
+  }
 }

@@ -614,5 +614,8 @@
   "targetsSum": "Yonso: {percent}",
   "rebalanceBuy": "Sumba ≈ {amount}",
   "rebalanceSell": "Teka ≈ {amount}",
-  "rebalanceOk": "Na lukanu"
+  "rebalanceOk": "Na lukanu",
+  "earningsResultBeat": "{symbol} me luta EPS ya bo ke vingila",
+  "earningsResultMiss": "{symbol} me kuma ve na EPS ya bo ke vingila",
+  "earningsResultBody": "EPS ya bo me pesa {actual}, ya bo ke vingila {estimate}"
 }

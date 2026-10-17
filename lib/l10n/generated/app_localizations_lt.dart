@@ -2353,4 +2353,19 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Atitinka tikslą';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol viršijo prognozuotą EPS';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol nepasiekė prognozuoto EPS';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'Paskelbtas EPS $actual, prognozuotas $estimate';
+  }
 }

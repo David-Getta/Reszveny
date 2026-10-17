@@ -614,5 +614,8 @@
   "targetsSum": "Hinkwaswo: {percent}",
   "rebalanceBuy": "Xava ≈ {amount}",
   "rebalanceSell": "Xavisa ≈ {amount}",
-  "rebalanceOk": "Eka xikongomelo"
+  "rebalanceOk": "Eka xikongomelo",
+  "earningsResultBeat": "{symbol} yi hundzile EPS leyi languteriweke",
+  "earningsResultMiss": "{symbol} a yi fikanga eka EPS leyi languteriweke",
+  "earningsResultBody": "EPS leyi vikiweke {actual}, leyi languteriweke {estimate}"
 }

@@ -614,5 +614,8 @@
   "targetsSum": "Total : {percent}",
   "rebalanceBuy": "Acheter ≈ {amount}",
   "rebalanceSell": "Vendre ≈ {amount}",
-  "rebalanceOk": "Conforme à la cible"
+  "rebalanceOk": "Conforme à la cible",
+  "earningsResultBeat": "{symbol} dépasse le BPA attendu",
+  "earningsResultMiss": "{symbol} manque le BPA attendu",
+  "earningsResultBody": "BPA publié {actual}, attendu {estimate}"
 }

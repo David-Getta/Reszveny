@@ -614,5 +614,8 @@
   "targetsSum": "Llapan: {percent}",
   "rebalanceBuy": "Rantiy ≈ {amount}",
   "rebalanceSell": "Rantikuy ≈ {amount}",
-  "rebalanceOk": "Munasqapi"
+  "rebalanceOk": "Munasqapi",
+  "earningsResultBeat": "{symbol}: suyakusqa EPS-manta aswan",
+  "earningsResultMiss": "{symbol}: suyakusqa EPS-manta pisi",
+  "earningsResultBody": "Willakusqa EPS {actual}, suyakusqa {estimate}"
 }

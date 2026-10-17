@@ -2294,4 +2294,19 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'نىشاندا';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol مۆلچەردىكى EPS دىن ئاشتى';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol مۆلچەردىكى EPS غا يەتمىدى';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'ئېلان قىلىنغان EPS $actual، مۆلچەر $estimate';
+  }
 }

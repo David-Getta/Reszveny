@@ -701,6 +701,9 @@ void main() {
     final s = _services(locale: const Locale('hu'), portfolio: _samplePortfolio(), currency: 'HUF');
     await pumpApp(tester, s, const Size(430, 1000));
     await _shot(tester, 'home_portfolio_phone_hu');
+    // Kisebb képernyőn (vagy más betűkészlettel) a kártya az alsó menüsor alá csúszhat.
+    await tester.ensureVisible(find.byType(PortfolioSummaryCard));
+    await tester.pumpAndSettle();
     await tester.tap(find.byType(PortfolioSummaryCard));
     await tester.pumpAndSettle();
     await _shot(tester, 'portfolio_phone_hu');

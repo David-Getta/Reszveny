@@ -2278,4 +2278,19 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Ta raabã';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol: EPS sẽn gũudã zugu';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol: EPS sẽn gũudã tẽngre';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS sẽn wilgã $actual, sẽn gũudã $estimate';
+  }
 }

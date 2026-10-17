@@ -614,5 +614,8 @@
   "targetsSum": "Total: {percent}",
   "rebalanceBuy": "Buy ≈ {amount}",
   "rebalanceSell": "Sell ≈ {amount}",
-  "rebalanceOk": "E don reach target"
+  "rebalanceOk": "E don reach target",
+  "earningsResultBeat": "{symbol} pass di EPS wey dem expect",
+  "earningsResultMiss": "{symbol} no reach di EPS wey dem expect",
+  "earningsResultBody": "EPS wey company report {actual}, dem expect {estimate}"
 }

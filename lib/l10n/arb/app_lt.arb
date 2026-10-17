@@ -614,5 +614,8 @@
   "targetsSum": "Iš viso: {percent}",
   "rebalanceBuy": "Pirkti ≈ {amount}",
   "rebalanceSell": "Parduoti ≈ {amount}",
-  "rebalanceOk": "Atitinka tikslą"
+  "rebalanceOk": "Atitinka tikslą",
+  "earningsResultBeat": "{symbol} viršijo prognozuotą EPS",
+  "earningsResultMiss": "{symbol} nepasiekė prognozuoto EPS",
+  "earningsResultBody": "Paskelbtas EPS {actual}, prognozuotas {estimate}"
 }

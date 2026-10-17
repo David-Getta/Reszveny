@@ -2292,4 +2292,19 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Nĩ gũkinyĩte muoroto';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol nĩĩkĩrĩte EPS ĩrĩa yetagĩrĩrwo';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol ndĩkinyĩte EPS ĩrĩa yetagĩrĩrwo';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS ĩrĩa yaheanirwo $actual, yetagĩrĩrwo $estimate';
+  }
 }

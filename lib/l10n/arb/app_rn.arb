@@ -614,5 +614,8 @@
   "targetsSum": "Vyose hamwe: {percent}",
   "rebalanceBuy": "Gura ≈ {amount}",
   "rebalanceSell": "Gurisha ≈ {amount}",
-  "rebalanceOk": "Ku ntumbero"
+  "rebalanceOk": "Ku ntumbero",
+  "earningsResultBeat": "{symbol} yarenze EPS yari yitezwe",
+  "earningsResultMiss": "{symbol} ntiyashitse kuri EPS yari yitezwe",
+  "earningsResultBody": "EPS yatangajwe {actual}, yari yitezwe {estimate}"
 }

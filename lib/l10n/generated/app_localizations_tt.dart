@@ -2289,4 +2289,19 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Максатка туры килә';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol көтелгән EPS-тан узды';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol көтелгән EPS-ка җитмәде';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'Игълан ителгән EPS $actual, көтелгән $estimate';
+  }
 }

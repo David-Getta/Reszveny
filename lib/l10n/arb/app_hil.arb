@@ -614,5 +614,8 @@
   "targetsSum": "Kabilugan: {percent}",
   "rebalanceBuy": "Bakla ≈ {amount}",
   "rebalanceSell": "Ibaligya ≈ {amount}",
-  "rebalanceOk": "Ara sa target"
+  "rebalanceOk": "Ara sa target",
+  "earningsResultBeat": "Nalampasan sang {symbol} ang ginapaabot nga EPS",
+  "earningsResultMiss": "Wala maabot sang {symbol} ang ginapaabot nga EPS",
+  "earningsResultBody": "Gin-report nga EPS {actual}, ginapaabot {estimate}"
 }

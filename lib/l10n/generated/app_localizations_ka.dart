@@ -2292,4 +2292,19 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'მიზანშია';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol-მა მოსალოდნელ EPS-ს გადააჭარბა';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol-მა მოსალოდნელ EPS-ს ვერ მიაღწია';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'გამოქვეყნებული EPS $actual, მოსალოდნელი $estimate';
+  }
 }

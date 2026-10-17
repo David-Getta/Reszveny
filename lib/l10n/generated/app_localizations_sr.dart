@@ -2335,4 +2335,19 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'На циљу';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol је надмашио очекивани EPS';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol није достигао очекивани EPS';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'Објављени EPS $actual, очекивани $estimate';
+  }
 }

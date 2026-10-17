@@ -614,5 +614,8 @@
   "targetsSum": "სულ: {percent}",
   "rebalanceBuy": "ყიდვა ≈ {amount}",
   "rebalanceSell": "გაყიდვა ≈ {amount}",
-  "rebalanceOk": "მიზანშია"
+  "rebalanceOk": "მიზანშია",
+  "earningsResultBeat": "{symbol}-მა მოსალოდნელ EPS-ს გადააჭარბა",
+  "earningsResultMiss": "{symbol}-მა მოსალოდნელ EPS-ს ვერ მიაღწია",
+  "earningsResultBody": "გამოქვეყნებული EPS {actual}, მოსალოდნელი {estimate}"
 }

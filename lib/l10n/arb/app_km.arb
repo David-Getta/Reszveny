@@ -614,5 +614,8 @@
   "targetsSum": "សរុប៖ {percent}",
   "rebalanceBuy": "ទិញ ≈ {amount}",
   "rebalanceSell": "លក់ ≈ {amount}",
-  "rebalanceOk": "ត្រូវតាមគោលដៅ"
+  "rebalanceOk": "ត្រូវតាមគោលដៅ",
+  "earningsResultBeat": "{symbol} លើសពី EPS រំពឹងទុក",
+  "earningsResultMiss": "{symbol} ទាបជាង EPS រំពឹងទុក",
+  "earningsResultBody": "EPS ដែលបានរាយការណ៍ {actual} រំពឹងទុក {estimate}"
 }

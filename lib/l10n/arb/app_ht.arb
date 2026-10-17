@@ -614,5 +614,8 @@
   "targetsSum": "Total: {percent}",
   "rebalanceBuy": "Achte ≈ {amount}",
   "rebalanceSell": "Vann ≈ {amount}",
-  "rebalanceOk": "Sou sib la"
+  "rebalanceOk": "Sou sib la",
+  "earningsResultBeat": "{symbol} depase EPS yo te atann lan",
+  "earningsResultMiss": "{symbol} pa rive nan EPS yo te atann lan",
+  "earningsResultBody": "EPS rapòte {actual}, yo te atann {estimate}"
 }

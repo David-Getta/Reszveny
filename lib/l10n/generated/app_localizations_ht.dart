@@ -2290,4 +2290,19 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Sou sib la';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol depase EPS yo te atann lan';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol pa rive nan EPS yo te atann lan';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS rapòte $actual, yo te atann $estimate';
+  }
 }

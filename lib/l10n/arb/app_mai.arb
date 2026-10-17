@@ -614,5 +614,8 @@
   "targetsSum": "कुल: {percent}",
   "rebalanceBuy": "कीनू ≈ {amount}",
   "rebalanceSell": "बेचू ≈ {amount}",
-  "rebalanceOk": "लक्ष्य पर"
+  "rebalanceOk": "लक्ष्य पर",
+  "earningsResultBeat": "{symbol}: अनुमानित EPS सँ ऊपर",
+  "earningsResultMiss": "{symbol}: अनुमानित EPS सँ नीचाँ",
+  "earningsResultBody": "रिपोर्ट कएल गेल EPS {actual}, अनुमानित {estimate}"
 }

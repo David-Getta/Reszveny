@@ -2355,4 +2355,19 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Zgodnie z celem';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol przebił oczekiwany EPS';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol poniżej oczekiwanego EPS';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'Raportowany EPS $actual, oczekiwany $estimate';
+  }
 }

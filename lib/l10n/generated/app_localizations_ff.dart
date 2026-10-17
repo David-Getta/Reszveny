@@ -2286,4 +2286,19 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'E faandaare';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol ɓurii EPS jortaaɗo';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol heɓaani EPS jortaaɗo';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS bayyinaaɗo $actual, jortaaɗo $estimate';
+  }
 }

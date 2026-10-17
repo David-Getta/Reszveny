@@ -614,5 +614,8 @@
   "targetsSum": "Ընդամենը՝ {percent}",
   "rebalanceBuy": "Գնել ≈ {amount}",
   "rebalanceSell": "Վաճառել ≈ {amount}",
-  "rebalanceOk": "Թիրախում է"
+  "rebalanceOk": "Թիրախում է",
+  "earningsResultBeat": "{symbol}-ը գերազանցեց սպասվող EPS-ը",
+  "earningsResultMiss": "{symbol}-ը չհասավ սպասվող EPS-ին",
+  "earningsResultBody": "Հրապարակված EPS {actual}, սպասվող {estimate}"
 }

@@ -614,5 +614,8 @@
   "targetsSum": "Cəmi: {percent}",
   "rebalanceBuy": "Al ≈ {amount}",
   "rebalanceSell": "Sat ≈ {amount}",
-  "rebalanceOk": "Hədəfdə"
+  "rebalanceOk": "Hədəfdə",
+  "earningsResultBeat": "{symbol} gözlənilən EPS-i üstələdi",
+  "earningsResultMiss": "{symbol} gözlənilən EPS-ə çatmadı",
+  "earningsResultBody": "Açıqlanan EPS {actual}, gözlənilən {estimate}"
 }

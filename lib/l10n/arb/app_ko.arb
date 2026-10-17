@@ -614,5 +614,8 @@
   "targetsSum": "합계: {percent}",
   "rebalanceBuy": "매수 ≈ {amount}",
   "rebalanceSell": "매도 ≈ {amount}",
-  "rebalanceOk": "목표 도달"
+  "rebalanceOk": "목표 도달",
+  "earningsResultBeat": "{symbol} 예상 EPS 상회",
+  "earningsResultMiss": "{symbol} 예상 EPS 하회",
+  "earningsResultBody": "실제 EPS {actual}, 예상 {estimate}"
 }

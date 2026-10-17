@@ -614,5 +614,8 @@
   "targetsSum": "Ne nyinaa: {percent}",
   "rebalanceBuy": "Tɔ ≈ {amount}",
   "rebalanceSell": "Tɔn ≈ {amount}",
-  "rebalanceOk": "Edu botaeɛ so"
+  "rebalanceOk": "Edu botaeɛ so",
+  "earningsResultBeat": "{symbol} EPS boro deɛ wɔhwɛɛ kwan",
+  "earningsResultMiss": "{symbol} EPS anndu deɛ wɔhwɛɛ kwan",
+  "earningsResultBody": "EPS a wɔbɔɔ ho amanneɛ {actual}, wɔhwɛɛ kwan {estimate}"
 }

@@ -2293,4 +2293,19 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'På mål';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol slog förväntad EPS';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol under förväntad EPS';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'Rapporterad EPS $actual, förväntad $estimate';
+  }
 }

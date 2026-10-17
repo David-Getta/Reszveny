@@ -2300,4 +2300,19 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Galma irra';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol EPS eegame caale';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol EPS eegame hin geenye';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS gabaafame $actual, eegame $estimate';
+  }
 }

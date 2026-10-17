@@ -3,6 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:reszveny/app.dart';
 import 'package:reszveny/core/app_preferences.dart';
+import 'package:reszveny/features/alerts/price_alert.dart';
 import 'package:reszveny/features/sync/sync_service.dart';
 import 'package:reszveny/features/home/watchlist_page.dart';
 
@@ -149,10 +150,15 @@ void main() {
     addTearDown(tester.view.reset);
     final s = services();
     await s.preferences.setFavorites(['MSFT', 'AAPL', 'NVDA']);
+    await s.alerts.add(symbol: 'AAPL', kind: AlertKind.above, value: 300, currency: 'USD');
     await tester.pumpWidget(WhatStockApp(services: s));
     await tester.pumpAndSettle();
     await tester.tap(find.byKey(const ValueKey('favorites-see-all')));
     await tester.pumpAndSettle();
+
+    // Az aktív riasztás kis haranggal látszik.
+    expect(find.byKey(const ValueKey('watch-alert-AAPL')), findsOneWidget);
+    expect(find.byKey(const ValueKey('watch-alert-MSFT')), findsNothing);
 
     // A részvény melletti gombbal: új lista, benne a részvénnyel.
     await tester.tap(find.byKey(const ValueKey('watch-addto-NVDA')));

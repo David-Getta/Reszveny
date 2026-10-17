@@ -2300,4 +2300,19 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'ലക്ഷ്യത്തിൽ';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol പ്രതീക്ഷിച്ച EPS മറികടന്നു';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol പ്രതീക്ഷിച്ച EPS എത്തിയില്ല';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'റിപ്പോർട്ട് ചെയ്ത EPS $actual, പ്രതീക്ഷിച്ചത് $estimate';
+  }
 }

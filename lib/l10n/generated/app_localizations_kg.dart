@@ -2299,4 +2299,19 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Na lukanu';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol me luta EPS ya bo ke vingila';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol me kuma ve na EPS ya bo ke vingila';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS ya bo me pesa $actual, ya bo ke vingila $estimate';
+  }
 }

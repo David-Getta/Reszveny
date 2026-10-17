@@ -2301,4 +2301,19 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Conforme à la cible';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol dépasse le BPA attendu';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol manque le BPA attendu';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'BPA publié $actual, attendu $estimate';
+  }
 }

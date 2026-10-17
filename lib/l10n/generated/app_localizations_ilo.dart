@@ -2309,4 +2309,19 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Adda iti target';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return 'Linabsan ti $symbol ti namnamaen nga EPS';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return 'Saan a dimteng ti $symbol iti namnamaen nga EPS';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'Naireport nga EPS $actual, namnamaen $estimate';
+  }
 }

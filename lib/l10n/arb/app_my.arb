@@ -614,5 +614,8 @@
   "targetsSum": "စုစုပေါင်း- {percent}",
   "rebalanceBuy": "ဝယ်ရန် ≈ {amount}",
   "rebalanceSell": "ရောင်းရန် ≈ {amount}",
-  "rebalanceOk": "ပစ်မှတ်အတိုင်း"
+  "rebalanceOk": "ပစ်မှတ်အတိုင်း",
+  "earningsResultBeat": "{symbol} သည် မျှော်မှန်း EPS ထက် ကျော်လွန်သည်",
+  "earningsResultMiss": "{symbol} သည် မျှော်မှန်း EPS ထက် နည်းသည်",
+  "earningsResultBody": "ထုတ်ပြန်ထားသော EPS {actual}၊ မျှော်မှန်း {estimate}"
 }

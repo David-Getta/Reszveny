@@ -614,5 +614,8 @@
   "targetsSum": "ڪل: {percent}",
   "rebalanceBuy": "خريد ڪريو ≈ {amount}",
   "rebalanceSell": "وڪرو ڪريو ≈ {amount}",
-  "rebalanceOk": "هدف تي"
+  "rebalanceOk": "هدف تي",
+  "earningsResultBeat": "{symbol} متوقع EPS کان وڌي ويو",
+  "earningsResultMiss": "{symbol} متوقع EPS کان گهٽ رهيو",
+  "earningsResultBody": "جاري ڪيل EPS {actual}، متوقع {estimate}"
 }

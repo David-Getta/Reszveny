@@ -614,5 +614,8 @@
   "targetsSum": "Lépp: {percent}",
   "rebalanceBuy": "Jënd ≈ {amount}",
   "rebalanceSell": "Jaay ≈ {amount}",
-  "rebalanceOk": "Ci jubluwaay bi"
+  "rebalanceOk": "Ci jubluwaay bi",
+  "earningsResultBeat": "{symbol} weesu na EPS bi ñu séentu",
+  "earningsResultMiss": "{symbol} agsiwul EPS bi ñu séentu",
+  "earningsResultBody": "EPS bi ñu yégle {actual}, bi ñu séentu {estimate}"
 }

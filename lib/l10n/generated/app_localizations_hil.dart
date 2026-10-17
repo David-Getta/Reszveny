@@ -2305,4 +2305,19 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Ara sa target';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return 'Nalampasan sang $symbol ang ginapaabot nga EPS';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return 'Wala maabot sang $symbol ang ginapaabot nga EPS';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'Gin-report nga EPS $actual, ginapaabot $estimate';
+  }
 }

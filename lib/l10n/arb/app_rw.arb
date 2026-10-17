@@ -614,5 +614,8 @@
   "targetsSum": "Igiteranyo: {percent}",
   "rebalanceBuy": "Gura ≈ {amount}",
   "rebalanceSell": "Gurisha ≈ {amount}",
-  "rebalanceOk": "Ku ntego"
+  "rebalanceOk": "Ku ntego",
+  "earningsResultBeat": "{symbol} yarenze EPS yari yitezwe",
+  "earningsResultMiss": "{symbol} ntiyageze kuri EPS yari yitezwe",
+  "earningsResultBody": "EPS yatangajwe {actual}, yari yitezwe {estimate}"
 }

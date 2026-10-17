@@ -614,5 +614,8 @@
   "targetsSum": "Total: {percent}",
   "rebalanceBuy": "Comprar ≈ {amount}",
   "rebalanceSell": "Vender ≈ {amount}",
-  "rebalanceOk": "Na meta"
+  "rebalanceOk": "Na meta",
+  "earningsResultBeat": "{symbol} supera o LPA esperado",
+  "earningsResultMiss": "{symbol} fica abaixo do LPA esperado",
+  "earningsResultBody": "LPA divulgado {actual}, esperado {estimate}"
 }

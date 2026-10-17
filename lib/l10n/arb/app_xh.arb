@@ -614,5 +614,8 @@
   "targetsSum": "Iyonke: {percent}",
   "rebalanceBuy": "Thenga ≈ {amount}",
   "rebalanceSell": "Thengisa ≈ {amount}",
-  "rebalanceOk": "Kwinjongo"
+  "rebalanceOk": "Kwinjongo",
+  "earningsResultBeat": "{symbol} idlule i-EPS elindelekileyo",
+  "earningsResultMiss": "{symbol} ayifikanga kwi-EPS elindelekileyo",
+  "earningsResultBody": "I-EPS exeliweyo {actual}, elindelekileyo {estimate}"
 }

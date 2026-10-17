@@ -2287,4 +2287,19 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'લક્ષ્ય પર';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol એ અપેક્ષિત EPS વટાવ્યો';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol અપેક્ષિત EPS સુધી ન પહોંચ્યો';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'જાહેર કરેલ EPS $actual, અપેક્ષિત $estimate';
+  }
 }

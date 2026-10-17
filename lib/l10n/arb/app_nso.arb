@@ -614,5 +614,8 @@
   "targetsSum": "Palomoka: {percent}",
   "rebalanceBuy": "Reka ≈ {amount}",
   "rebalanceSell": "Rekiša ≈ {amount}",
-  "rebalanceOk": "Go nepo"
+  "rebalanceOk": "Go nepo",
+  "earningsResultBeat": "{symbol}: godimo ga EPS ye e letetšwego",
+  "earningsResultMiss": "{symbol}: ka tlase ga EPS ye e letetšwego",
+  "earningsResultBody": "EPS ye e begilwego {actual}, ye e letetšwego {estimate}"
 }

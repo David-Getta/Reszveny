@@ -614,5 +614,8 @@
   "targetsSum": "合計：{percent}",
   "rebalanceBuy": "買入 ≈ {amount}",
   "rebalanceSell": "賣出 ≈ {amount}",
-  "rebalanceOk": "已達目標"
+  "rebalanceOk": "已達目標",
+  "earningsResultBeat": "{symbol} 每股盈利勝預期",
+  "earningsResultMiss": "{symbol} 每股盈利遜預期",
+  "earningsResultBody": "實際每股盈利 {actual}，預期 {estimate}"
 }

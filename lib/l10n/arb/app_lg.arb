@@ -614,5 +614,8 @@
   "targetsSum": "Byonna awamu: {percent}",
   "rebalanceBuy": "Gula ≈ {amount}",
   "rebalanceSell": "Tunda ≈ {amount}",
-  "rebalanceOk": "Kituuse ku kigendererwa"
+  "rebalanceOk": "Kituuse ku kigendererwa",
+  "earningsResultBeat": "{symbol} esukkulumye EPS esuubirwa",
+  "earningsResultMiss": "{symbol} tetuuse ku EPS esuubirwa",
+  "earningsResultBody": "EPS eyalangiriddwa {actual}, esuubirwa {estimate}"
 }

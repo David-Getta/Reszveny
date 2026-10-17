@@ -2291,4 +2291,19 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'ہدف پر';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol متوقع EPS سے آگے نکل گیا';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol متوقع EPS سے پیچھے رہ گیا';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'رپورٹ شدہ EPS $actual، متوقع $estimate';
+  }
 }

@@ -614,5 +614,8 @@
   "targetsSum": "ཁྱོན་བསྡོམས་: {percent}",
   "rebalanceBuy": "ཉོ ≈ {amount}",
   "rebalanceSell": "འཚོང ≈ {amount}",
-  "rebalanceOk": "དམིགས་ཡུལ་ཐོག"
+  "rebalanceOk": "དམིགས་ཡུལ་ཐོག",
+  "earningsResultBeat": "{symbol}: རེ་སྒུག་བྱས་པའི་EPS ལས་མཐོ།",
+  "earningsResultMiss": "{symbol}: རེ་སྒུག་བྱས་པའི་EPS ལས་དམའ།",
+  "earningsResultBody": "སྙན་ཞུ་བྱས་པའི་EPS {actual}། རེ་སྒུག་བྱས་པ {estimate}"
 }

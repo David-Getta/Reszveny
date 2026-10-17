@@ -614,5 +614,8 @@
   "targetsSum": "Kakaretso: {percent}",
   "rebalanceBuy": "Reka ≈ {amount}",
   "rebalanceSell": "Rekisa ≈ {amount}",
-  "rebalanceOk": "Sepheong"
+  "rebalanceOk": "Sepheong",
+  "earningsResultBeat": "{symbol} e fetile EPS e lebelletsweng",
+  "earningsResultMiss": "{symbol} ha e a fihla EPS e lebelletsweng",
+  "earningsResultBody": "EPS e tlalehilweng {actual}, e lebelletsweng {estimate}"
 }

@@ -2297,4 +2297,19 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Na meta';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol supera o LPA esperado';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol fica abaixo do LPA esperado';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'LPA divulgado $actual, esperado $estimate';
+  }
 }

@@ -614,5 +614,8 @@
   "targetsSum": "Zonse: {percent}",
   "rebalanceBuy": "Gulani ≈ {amount}",
   "rebalanceSell": "Gulitsani ≈ {amount}",
-  "rebalanceOk": "Pa cholinga"
+  "rebalanceOk": "Pa cholinga",
+  "earningsResultBeat": "{symbol} yaposa EPS yoyembekezeredwa",
+  "earningsResultMiss": "{symbol} sinafike EPS yoyembekezeredwa",
+  "earningsResultBody": "EPS yolengezedwa {actual}, yoyembekezeredwa {estimate}"
 }

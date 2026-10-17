@@ -2287,4 +2287,19 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'ਟੀਚੇ \'ਤੇ';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol ਨੇ ਉਮੀਦ ਕੀਤੇ EPS ਨੂੰ ਪਾਰ ਕੀਤਾ';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol ਉਮੀਦ ਕੀਤੇ EPS ਤੱਕ ਨਹੀਂ ਪਹੁੰਚਿਆ';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'ਜਾਰੀ ਕੀਤਾ EPS $actual, ਉਮੀਦ $estimate';
+  }
 }

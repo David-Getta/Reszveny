@@ -2254,4 +2254,19 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'ኣብ ዕላማ';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol ካብ ዝተጸበ EPS ሓሊፉ';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol ናብ ዝተጸበ EPS ኣይበጽሐን';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'ዝተሓበረ EPS $actual፣ ዝተጸበ $estimate';
+  }
 }

@@ -2287,4 +2287,19 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'लक्ष्य पर';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol: अनुमानित EPS से ऊपर';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol: अनुमानित EPS से नीचे';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'घोषित EPS $actual, अनुमानित $estimate';
+  }
 }

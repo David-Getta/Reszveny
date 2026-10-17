@@ -614,5 +614,8 @@
   "targetsSum": "કુલ: {percent}",
   "rebalanceBuy": "ખરીદો ≈ {amount}",
   "rebalanceSell": "વેચો ≈ {amount}",
-  "rebalanceOk": "લક્ષ્ય પર"
+  "rebalanceOk": "લક્ષ્ય પર",
+  "earningsResultBeat": "{symbol} એ અપેક્ષિત EPS વટાવ્યો",
+  "earningsResultMiss": "{symbol} અપેક્ષિત EPS સુધી ન પહોંચ્યો",
+  "earningsResultBody": "જાહેર કરેલ EPS {actual}, અપેક્ષિત {estimate}"
 }

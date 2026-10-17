@@ -614,5 +614,8 @@
   "targetsSum": "Fof: {percent}",
   "rebalanceBuy": "Soodu ≈ {amount}",
   "rebalanceSell": "Yeeyu ≈ {amount}",
-  "rebalanceOk": "E faandaare"
+  "rebalanceOk": "E faandaare",
+  "earningsResultBeat": "{symbol} ɓurii EPS jortaaɗo",
+  "earningsResultMiss": "{symbol} heɓaani EPS jortaaɗo",
+  "earningsResultBody": "EPS bayyinaaɗo {actual}, jortaaɗo {estimate}"
 }

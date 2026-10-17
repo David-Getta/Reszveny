@@ -2284,4 +2284,19 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'ביעד';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol: מעל ה-EPS הצפוי';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol: מתחת ל-EPS הצפוי';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS מדווח $actual, צפוי $estimate';
+  }
 }

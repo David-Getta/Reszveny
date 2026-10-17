@@ -2328,4 +2328,19 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'La țintă';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol a depășit EPS-ul așteptat';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol sub EPS-ul așteptat';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS raportat $actual, așteptat $estimate';
+  }
 }

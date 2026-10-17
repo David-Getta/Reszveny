@@ -2308,4 +2308,19 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Mifanaraka amin\'ny tanjona';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol: ambony noho ny EPS notombanana';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol: ambany noho ny EPS notombanana';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS navoaka $actual, notombanana $estimate';
+  }
 }

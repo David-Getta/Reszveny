@@ -2223,4 +2223,19 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get rebalanceOk => '목표 도달';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol 예상 EPS 상회';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol 예상 EPS 하회';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return '실제 EPS $actual, 예상 $estimate';
+  }
 }

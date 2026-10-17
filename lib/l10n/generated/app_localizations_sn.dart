@@ -2297,4 +2297,19 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Pachinangwa';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol yapfuura EPS inotarisirwa';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol haina kusvika EPS inotarisirwa';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS yakaziviswa $actual, inotarisirwa $estimate';
+  }
 }

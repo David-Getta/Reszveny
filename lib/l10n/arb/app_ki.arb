@@ -614,5 +614,8 @@
   "targetsSum": "Hamwe: {percent}",
   "rebalanceBuy": "Gũra ≈ {amount}",
   "rebalanceSell": "Endia ≈ {amount}",
-  "rebalanceOk": "Nĩ gũkinyĩte muoroto"
+  "rebalanceOk": "Nĩ gũkinyĩte muoroto",
+  "earningsResultBeat": "{symbol} nĩĩkĩrĩte EPS ĩrĩa yetagĩrĩrwo",
+  "earningsResultMiss": "{symbol} ndĩkinyĩte EPS ĩrĩa yetagĩrĩrwo",
+  "earningsResultBody": "EPS ĩrĩa yaheanirwo {actual}, yetagĩrĩrwo {estimate}"
 }

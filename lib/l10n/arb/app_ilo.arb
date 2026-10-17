@@ -614,5 +614,8 @@
   "targetsSum": "Dagup: {percent}",
   "rebalanceBuy": "Gumatang ≈ {amount}",
   "rebalanceSell": "Ilako ≈ {amount}",
-  "rebalanceOk": "Adda iti target"
+  "rebalanceOk": "Adda iti target",
+  "earningsResultBeat": "Linabsan ti {symbol} ti namnamaen nga EPS",
+  "earningsResultMiss": "Saan a dimteng ti {symbol} iti namnamaen nga EPS",
+  "earningsResultBody": "Naireport nga EPS {actual}, namnamaen {estimate}"
 }

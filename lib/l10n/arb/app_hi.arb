@@ -614,5 +614,8 @@
   "targetsSum": "कुल: {percent}",
   "rebalanceBuy": "खरीदें ≈ {amount}",
   "rebalanceSell": "बेचें ≈ {amount}",
-  "rebalanceOk": "लक्ष्य पर"
+  "rebalanceOk": "लक्ष्य पर",
+  "earningsResultBeat": "{symbol} ने अनुमानित EPS को पार किया",
+  "earningsResultMiss": "{symbol} अनुमानित EPS से चूका",
+  "earningsResultBody": "रिपोर्ट किया गया EPS {actual}, अनुमानित {estimate}"
 }

@@ -2285,4 +2285,19 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Đạt mục tiêu';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol vượt EPS dự kiến';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol không đạt EPS dự kiến';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS công bố $actual, dự kiến $estimate';
+  }
 }

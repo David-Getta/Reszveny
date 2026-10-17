@@ -614,5 +614,8 @@
   "targetsSum": "Bionso: {percent}",
   "rebalanceBuy": "Sumba ≈ {amount}",
   "rebalanceSell": "Sumbisha ≈ {amount}",
-  "rebalanceOk": "Mufike ku tshipatshila"
+  "rebalanceOk": "Mufike ku tshipatshila",
+  "earningsResultBeat": "{symbol} mupite EPS idibu batekemene",
+  "earningsResultMiss": "{symbol} kafiki ku EPS idibu batekemene to",
+  "earningsResultBody": "EPS idibu bamanyishe {actual}, batekemene {estimate}"
 }

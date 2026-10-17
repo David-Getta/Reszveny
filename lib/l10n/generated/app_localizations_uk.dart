@@ -2356,4 +2356,19 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Відповідає цілі';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol перевершив очікуваний EPS';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol не досяг очікуваного EPS';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'Опублікований EPS $actual, очікуваний $estimate';
+  }
 }

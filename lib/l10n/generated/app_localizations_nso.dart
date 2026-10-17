@@ -2306,4 +2306,19 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Go nepo';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol: godimo ga EPS ye e letetšwego';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol: ka tlase ga EPS ye e letetšwego';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS ye e begilwego $actual, ye e letetšwego $estimate';
+  }
 }

@@ -2300,4 +2300,19 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Kumgomo';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol idlule i-EPS elindelekile';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol ayifinyelelanga ku-EPS elindelekile';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'I-EPS ebikiwe $actual, elindelekile $estimate';
+  }
 }

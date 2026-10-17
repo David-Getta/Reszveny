@@ -2266,4 +2266,19 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'ຕາມເປົ້າໝາຍ';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol ສູງກວ່າ EPS ທີ່ຄາດໄວ້';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol ຕ່ຳກວ່າ EPS ທີ່ຄາດໄວ້';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS ທີ່ລາຍງານ $actual, ຄາດໄວ້ $estimate';
+  }
 }

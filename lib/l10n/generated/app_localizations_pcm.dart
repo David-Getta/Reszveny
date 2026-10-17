@@ -2291,4 +2291,19 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'E don reach target';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol pass di EPS wey dem expect';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol no reach di EPS wey dem expect';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS wey company report $actual, dem expect $estimate';
+  }
 }

@@ -13,6 +13,7 @@ import 'core/desktop/desktop_integration.dart';
 import 'core/desktop/system_notifier.dart';
 import 'core/util/formatters.dart';
 import 'core/locale_controller.dart';
+import 'core/models/analysis_extras.dart';
 import 'features/account/account_controller.dart';
 import 'features/alerts/alert_monitor.dart';
 import 'features/alerts/price_alert.dart';
@@ -120,6 +121,7 @@ class AppServices {
       preferences: preferences,
       notifier: alertMonitor.notifier,
       describe: describeEarnings,
+      describeResult: describeEarningsResult,
     );
     // Jó élmény után (a 3. elemzésnél) egyszer értékelést kérünk a boltban.
     reports.onGenerated = (_) {
@@ -355,6 +357,19 @@ class AppServices {
           _ => null,
         },
         if (e.epsEstimate != null) l10n.eventEpsEstimate(fmt.number(e.epsEstimate!)),
+      ].join(' · '),
+    );
+  }
+
+  /// A gyorsjelentés eredményének értesítése (várakozás felett vagy alatt).
+  ({String title, String body}) describeEarningsResult(String symbol, EarningsSurprise r) {
+    final (l10n, fmt) = _l10n();
+    final surprise = r.surprise;
+    return (
+      title: r.beat == true ? l10n.earningsResultBeat(symbol) : l10n.earningsResultMiss(symbol),
+      body: [
+        l10n.earningsResultBody(fmt.number(r.actual), fmt.number(r.estimate)),
+        if (surprise != null) fmt.percent(surprise, decimals: 1, withSign: true),
       ].join(' · '),
     );
   }

@@ -614,5 +614,8 @@
   "targetsSum": "ಒಟ್ಟು: {percent}",
   "rebalanceBuy": "ಖರೀದಿಸಿ ≈ {amount}",
   "rebalanceSell": "ಮಾರಾಟ ಮಾಡಿ ≈ {amount}",
-  "rebalanceOk": "ಗುರಿಯಲ್ಲಿದೆ"
+  "rebalanceOk": "ಗುರಿಯಲ್ಲಿದೆ",
+  "earningsResultBeat": "{symbol} ನಿರೀಕ್ಷಿತ EPS ಮೀರಿದೆ",
+  "earningsResultMiss": "{symbol} ನಿರೀಕ್ಷಿತ EPS ತಲುಪಲಿಲ್ಲ",
+  "earningsResultBody": "ವರದಿಯಾದ EPS {actual}, ನಿರೀಕ್ಷಿತ {estimate}"
 }

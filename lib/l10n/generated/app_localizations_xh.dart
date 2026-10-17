@@ -2302,4 +2302,19 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Kwinjongo';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol idlule i-EPS elindelekileyo';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol ayifikanga kwi-EPS elindelekileyo';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'I-EPS exeliweyo $actual, elindelekileyo $estimate';
+  }
 }

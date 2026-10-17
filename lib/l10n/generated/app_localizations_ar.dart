@@ -2341,4 +2341,19 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'ضمن الهدف';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol تجاوز ربحية السهم المتوقعة';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol لم يبلغ ربحية السهم المتوقعة';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'ربحية السهم المُعلنة $actual، المتوقعة $estimate';
+  }
 }

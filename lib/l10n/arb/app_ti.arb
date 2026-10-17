@@ -614,5 +614,8 @@
   "targetsSum": "ድምር፡ {percent}",
   "rebalanceBuy": "ዕደግ ≈ {amount}",
   "rebalanceSell": "ሽጥ ≈ {amount}",
-  "rebalanceOk": "ኣብ ዕላማ"
+  "rebalanceOk": "ኣብ ዕላማ",
+  "earningsResultBeat": "{symbol} ካብ ዝተጸበ EPS ሓሊፉ",
+  "earningsResultMiss": "{symbol} ናብ ዝተጸበ EPS ኣይበጽሐን",
+  "earningsResultBody": "ዝተሓበረ EPS {actual}፣ ዝተጸበ {estimate}"
 }

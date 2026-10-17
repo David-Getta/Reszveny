@@ -2294,4 +2294,19 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Максатта';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol күтүлгөн EPSтен ашты';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol күтүлгөн EPSке жеткен жок';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'Жарыяланган EPS $actual, күтүлгөн $estimate';
+  }
 }

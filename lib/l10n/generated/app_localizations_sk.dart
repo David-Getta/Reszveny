@@ -2352,4 +2352,19 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Podľa cieľa';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol prekonal očakávané EPS';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol nedosiahol očakávané EPS';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'Vykázané EPS $actual, očakávané $estimate';
+  }
 }

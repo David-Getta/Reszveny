@@ -614,5 +614,8 @@
   "targetsSum": "Σύνολο: {percent}",
   "rebalanceBuy": "Αγορά ≈ {amount}",
   "rebalanceSell": "Πώληση ≈ {amount}",
-  "rebalanceOk": "Εντός στόχου"
+  "rebalanceOk": "Εντός στόχου",
+  "earningsResultBeat": "{symbol}: πάνω από το αναμενόμενο EPS",
+  "earningsResultMiss": "{symbol}: κάτω από το αναμενόμενο EPS",
+  "earningsResultBody": "Ανακοινωμένο EPS {actual}, αναμενόμενο {estimate}"
 }

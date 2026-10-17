@@ -614,5 +614,8 @@
   "targetsSum": "ټول: {percent}",
   "rebalanceBuy": "واخلئ ≈ {amount}",
   "rebalanceSell": "وپلورئ ≈ {amount}",
-  "rebalanceOk": "په هدف کې"
+  "rebalanceOk": "په هدف کې",
+  "earningsResultBeat": "{symbol} له متوقع EPS څخه پورته شو",
+  "earningsResultMiss": "{symbol} متوقع EPS ته ونه رسېد",
+  "earningsResultBody": "اعلان شوی EPS {actual}، متوقع {estimate}"
 }

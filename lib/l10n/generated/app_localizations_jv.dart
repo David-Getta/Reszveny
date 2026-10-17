@@ -2293,4 +2293,19 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Pas target';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol ngluwihi EPS sing dikarepake';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol ora tekan EPS sing dikarepake';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS sing dilaporake $actual, dikarepake $estimate';
+  }
 }

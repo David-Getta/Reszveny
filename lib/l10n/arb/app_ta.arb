@@ -614,5 +614,8 @@
   "targetsSum": "மொத்தம்: {percent}",
   "rebalanceBuy": "வாங்கு ≈ {amount}",
   "rebalanceSell": "விற் ≈ {amount}",
-  "rebalanceOk": "இலக்கில்"
+  "rebalanceOk": "இலக்கில்",
+  "earningsResultBeat": "{symbol} எதிர்பார்த்த EPS-ஐ மிஞ்சியது",
+  "earningsResultMiss": "{symbol} எதிர்பார்த்த EPS-ஐ எட்டவில்லை",
+  "earningsResultBody": "அறிவிக்கப்பட்ட EPS {actual}, எதிர்பார்த்தது {estimate}"
 }

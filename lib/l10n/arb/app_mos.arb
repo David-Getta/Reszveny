@@ -614,5 +614,8 @@
   "targetsSum": "Gilli: {percent}",
   "rebalanceBuy": "Da ≈ {amount}",
   "rebalanceSell": "Koose ≈ {amount}",
-  "rebalanceOk": "Ta raabã"
+  "rebalanceOk": "Ta raabã",
+  "earningsResultBeat": "{symbol}: EPS sẽn gũudã zugu",
+  "earningsResultMiss": "{symbol}: EPS sẽn gũudã tẽngre",
+  "earningsResultBody": "EPS sẽn wilgã {actual}, sẽn gũudã {estimate}"
 }

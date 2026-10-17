@@ -2299,4 +2299,19 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Mufike ku tshipatshila';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol mupite EPS idibu batekemene';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol kafiki ku EPS idibu batekemene to';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS idibu bamanyishe $actual, batekemene $estimate';
+  }
 }

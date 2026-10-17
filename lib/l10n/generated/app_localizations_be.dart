@@ -2352,4 +2352,19 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Адпавядае мэце';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol перавысіў чаканы EPS';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol не дасягнуў чаканага EPS';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'Апублікаваны EPS $actual, чаканы $estimate';
+  }
 }

@@ -2298,4 +2298,19 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'ಗುರಿಯಲ್ಲಿದೆ';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol ನಿರೀಕ್ಷಿತ EPS ಮೀರಿದೆ';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol ನಿರೀಕ್ಷಿತ EPS ತಲುಪಲಿಲ್ಲ';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'ವರದಿಯಾದ EPS $actual, ನಿರೀಕ್ಷಿತ $estimate';
+  }
 }

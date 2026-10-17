@@ -614,5 +614,8 @@
   "targetsSum": "Bɛɛ lajɛlen: {percent}",
   "rebalanceBuy": "San ≈ {amount}",
   "rebalanceSell": "Feere ≈ {amount}",
-  "rebalanceOk": "A sera laɲini ma"
+  "rebalanceOk": "A sera laɲini ma",
+  "earningsResultBeat": "{symbol} ye EPS makɔnɔnen tɛmɛ",
+  "earningsResultMiss": "{symbol} ma se EPS makɔnɔnen ma",
+  "earningsResultBody": "EPS fɔlen {actual}, makɔnɔnen {estimate}"
 }

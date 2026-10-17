@@ -2290,4 +2290,19 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Deg yiswi';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol yeɛedda EPS i yettwarǧan';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol ur yewweḍ ara ɣer EPS i yettwarǧan';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'EPS i d-yettwabedren $actual, yettwarǧa $estimate';
+  }
 }

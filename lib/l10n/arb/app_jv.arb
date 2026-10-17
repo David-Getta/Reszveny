@@ -614,5 +614,8 @@
   "targetsSum": "Gunggung: {percent}",
   "rebalanceBuy": "Tuku ≈ {amount}",
   "rebalanceSell": "Dol ≈ {amount}",
-  "rebalanceOk": "Pas target"
+  "rebalanceOk": "Pas target",
+  "earningsResultBeat": "{symbol} ngluwihi EPS sing dikarepake",
+  "earningsResultMiss": "{symbol} ora tekan EPS sing dikarepake",
+  "earningsResultBody": "EPS sing dilaporake {actual}, dikarepake {estimate}"
 }

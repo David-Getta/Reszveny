@@ -614,5 +614,8 @@
   "targetsSum": "Барлыгы: {percent}",
   "rebalanceBuy": "Сатып алу ≈ {amount}",
   "rebalanceSell": "Сату ≈ {amount}",
-  "rebalanceOk": "Максатка туры килә"
+  "rebalanceOk": "Максатка туры килә",
+  "earningsResultBeat": "{symbol} көтелгән EPS-тан узды",
+  "earningsResultMiss": "{symbol} көтелгән EPS-ка җитмәде",
+  "earningsResultBody": "Игълан ителгән EPS {actual}, көтелгән {estimate}"
 }

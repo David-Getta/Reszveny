@@ -614,5 +614,8 @@
   "targetsSum": "Oĩmbáva: {percent}",
   "rebalanceBuy": "Jogua ≈ {amount}",
   "rebalanceSell": "Ñemu ≈ {amount}",
-  "rebalanceOk": "Jehupytyrãme"
+  "rebalanceOk": "Jehupytyrãme",
+  "earningsResultBeat": "{symbol} ohasa EPS oñehaʼarõvagui",
+  "earningsResultMiss": "{symbol} ndohupytýi EPS oñehaʼarõva",
+  "earningsResultBody": "EPS oñemomaranduva {actual}, oñehaʼarõva {estimate}"
 }

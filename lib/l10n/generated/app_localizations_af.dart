@@ -2295,4 +2295,19 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get rebalanceOk => 'Op teiken';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol het die verwagte WPA oortref';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol het die verwagte WPA nie gehaal nie';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return 'Gerapporteerde WPA $actual, verwag $estimate';
+  }
 }

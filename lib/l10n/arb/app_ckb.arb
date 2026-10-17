@@ -614,5 +614,8 @@
   "targetsSum": "کۆی گشتی: {percent}",
   "rebalanceBuy": "کڕین ≈ {amount}",
   "rebalanceSell": "فرۆشتن ≈ {amount}",
-  "rebalanceOk": "لەسەر ئامانج"
+  "rebalanceOk": "لەسەر ئامانج",
+  "earningsResultBeat": "{symbol} لە EPSی چاوەڕوانکراو تێپەڕی",
+  "earningsResultMiss": "{symbol} نەگەیشتە EPSی چاوەڕوانکراو",
+  "earningsResultBody": "EPSی ڕاگەیەنراو {actual}، چاوەڕوانکراو {estimate}"
 }

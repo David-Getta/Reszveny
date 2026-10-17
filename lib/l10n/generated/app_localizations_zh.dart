@@ -2182,6 +2182,21 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get rebalanceOk => '已达目标';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol 每股收益超出预期';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol 每股收益不及预期';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return '实际每股收益 $actual，预期 $estimate';
+  }
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -4360,4 +4375,19 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get rebalanceOk => '已達目標';
+
+  @override
+  String earningsResultBeat(String symbol) {
+    return '$symbol 每股盈利勝預期';
+  }
+
+  @override
+  String earningsResultMiss(String symbol) {
+    return '$symbol 每股盈利遜預期';
+  }
+
+  @override
+  String earningsResultBody(String actual, String estimate) {
+    return '實際每股盈利 $actual，預期 $estimate';
+  }
 }
