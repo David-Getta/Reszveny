@@ -646,5 +646,10 @@
   "positionsSortToday": "הטובות היום קודם",
   "chartMyBuys": "הקניות שלך",
   "chartMySells": "המכירות שלך",
-  "shortcutsTitle": "קיצורי מקשים"
+  "shortcutsTitle": "קיצורי מקשים",
+  "usMarketOpen": "השוק בארה״ב פתוח · נסגר בעוד {time}",
+  "usMarketClosed": "השוק בארה״ב סגור · נפתח בעוד {time}",
+  "durationMinutes": "{minutes} דק׳",
+  "durationHoursMinutes": "{hours} שע׳ {minutes} דק׳",
+  "durationDaysHours": "{days} י׳ {hours} שע׳"
 }

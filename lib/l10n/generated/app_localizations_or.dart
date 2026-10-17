@@ -2421,5 +2421,30 @@ class AppLocalizationsOr extends AppLocalizations {
   String get chartMySells => 'ଆପଣଙ୍କ ବିକ୍ରୟ';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'କୀବୋର୍ଡ ସର୍ଟକଟ';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'ଆମେରିକା ବଜାର ଖୋଲା · $time ପରେ ବନ୍ଦ ହେବ';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'ଆମେରିକା ବଜାର ବନ୍ଦ · $time ପରେ ଖୋଲିବ';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes ମିନିଟ';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours ଘଣ୍ଟା $minutes ମିନିଟ';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days ଦିନ $hours ଘଣ୍ଟା';
+  }
 }

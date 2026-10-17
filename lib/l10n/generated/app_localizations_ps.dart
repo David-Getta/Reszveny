@@ -2415,5 +2415,30 @@ class AppLocalizationsPs extends AppLocalizations {
   String get chartMySells => 'ستاسو پلورونه';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'د کیبورډ شارټکټونه';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'د امریکا بازار خلاص دی · په $time کې بندیږي';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'د امریکا بازار بند دی · په $time کې خلاصیږي';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes دقیقې';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours ساعته $minutes دقیقې';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days ورځې $hours ساعته';
+  }
 }

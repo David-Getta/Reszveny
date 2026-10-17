@@ -2440,5 +2440,30 @@ class AppLocalizationsTs extends AppLocalizations {
   String get chartMySells => 'Leswi u swi xaviseke';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Tindlela to koma ta khibodi';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Makete wa Amerika wu pfulekile · wu ta pfaleka endzhaku ka $time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Makete wa Amerika wu pfalekile · wu ta pfuleka endzhaku ka $time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes min';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours h $minutes min';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days masiku $hours h';
+  }
 }

@@ -2441,5 +2441,30 @@ class AppLocalizationsMg extends AppLocalizations {
   String get chartMySells => 'Ny fivarotanao';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Hitsin-dalana amin\'ny fitendry';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Misokatra ny tsena amerikana · hikatona afaka $time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Mihidy ny tsena amerikana · hisokatra afaka $time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes min';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours ora $minutes min';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days andro $hours ora';
+  }
 }

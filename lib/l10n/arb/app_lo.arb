@@ -646,5 +646,10 @@
   "positionsSortToday": "ດີທີ່ສຸດມື້ນີ້ກ່ອນ",
   "chartMyBuys": "ການຊື້ຂອງທ່ານ",
   "chartMySells": "ການຂາຍຂອງທ່ານ",
-  "shortcutsTitle": "ປຸ່ມລັດແປ້ນພິມ"
+  "shortcutsTitle": "ປຸ່ມລັດແປ້ນພິມ",
+  "usMarketOpen": "ຕະຫຼາດສະຫະລັດເປີດ · ປິດໃນອີກ {time}",
+  "usMarketClosed": "ຕະຫຼາດສະຫະລັດປິດ · ເປີດໃນອີກ {time}",
+  "durationMinutes": "{minutes} ນທ.",
+  "durationHoursMinutes": "{hours} ຊມ. {minutes} ນທ.",
+  "durationDaysHours": "{days} ມື້ {hours} ຊມ."
 }

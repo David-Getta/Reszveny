@@ -2462,5 +2462,30 @@ class AppLocalizationsRo extends AppLocalizations {
   String get chartMySells => 'Vânzările tale';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Scurtături de la tastatură';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Piața SUA deschisă · se închide în $time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Piața SUA închisă · se deschide în $time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes min';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours h $minutes min';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days z $hours h';
+  }
 }

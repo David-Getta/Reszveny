@@ -646,5 +646,10 @@
   "positionsSortToday": "Сначала лучшие за сегодня",
   "chartMyBuys": "Ваши покупки",
   "chartMySells": "Ваши продажи",
-  "shortcutsTitle": "Сочетания клавиш"
+  "shortcutsTitle": "Сочетания клавиш",
+  "usMarketOpen": "Рынок США открыт · закроется через {time}",
+  "usMarketClosed": "Рынок США закрыт · откроется через {time}",
+  "durationMinutes": "{minutes} мин",
+  "durationHoursMinutes": "{hours} ч {minutes} мин",
+  "durationDaysHours": "{days} д {hours} ч"
 }

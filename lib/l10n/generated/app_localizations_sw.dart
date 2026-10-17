@@ -2424,5 +2424,30 @@ class AppLocalizationsSw extends AppLocalizations {
   String get chartMySells => 'Mauzo yako';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Njia za mkato za kibodi';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Soko la Marekani liko wazi · litafungwa baada ya $time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Soko la Marekani limefungwa · litafunguliwa baada ya $time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return 'dak $minutes';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return 'saa $hours dak $minutes';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return 'siku $days saa $hours';
+  }
 }

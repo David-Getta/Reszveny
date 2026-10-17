@@ -646,5 +646,10 @@
   "positionsSortToday": "Спачатку лепшыя за сёння",
   "chartMyBuys": "Вашы пакупкі",
   "chartMySells": "Вашы продажы",
-  "shortcutsTitle": "Спалучэнні клавіш"
+  "shortcutsTitle": "Спалучэнні клавіш",
+  "usMarketOpen": "Рынак ЗША адкрыты · закрыецца праз {time}",
+  "usMarketClosed": "Рынак ЗША зачынены · адкрыецца праз {time}",
+  "durationMinutes": "{minutes} хв",
+  "durationHoursMinutes": "{hours} гадз {minutes} хв",
+  "durationDaysHours": "{days} дз {hours} гадз"
 }

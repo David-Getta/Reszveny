@@ -2439,5 +2439,30 @@ class AppLocalizationsNso extends AppLocalizations {
   String get chartMySells => 'Tše o di rekišitšego';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Ditsela tše kopana tša khiboto';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Mmaraka wa Amerika o bulegile · o tswalelwa ka morago ga $time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Mmaraka wa Amerika o tswaletšwe · o bulwa ka morago ga $time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes min';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours h $minutes min';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days matšatši $hours h';
+  }
 }

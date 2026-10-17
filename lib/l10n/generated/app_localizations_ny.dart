@@ -2430,5 +2430,30 @@ class AppLocalizationsNy extends AppLocalizations {
   String get chartMySells => 'Zomwe mwagulitsa';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Njira zachidule za kiyibodi';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Msika wa ku America uli wotsegula · utsekedwa patatha $time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Msika wa ku America watsekedwa · utsegulidwa patatha $time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes mph';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours ola $minutes mph';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days masiku $hours ola';
+  }
 }

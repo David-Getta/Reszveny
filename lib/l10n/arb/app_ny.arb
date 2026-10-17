@@ -646,5 +646,10 @@
   "positionsSortToday": "Zabwino kwambiri lero poyamba",
   "chartMyBuys": "Zomwe mwagula",
   "chartMySells": "Zomwe mwagulitsa",
-  "shortcutsTitle": "Njira zachidule za kiyibodi"
+  "shortcutsTitle": "Njira zachidule za kiyibodi",
+  "usMarketOpen": "Msika wa ku America uli wotsegula · utsekedwa patatha {time}",
+  "usMarketClosed": "Msika wa ku America watsekedwa · utsegulidwa patatha {time}",
+  "durationMinutes": "{minutes} mph",
+  "durationHoursMinutes": "{hours} ola {minutes} mph",
+  "durationDaysHours": "{days} masiku {hours} ola"
 }

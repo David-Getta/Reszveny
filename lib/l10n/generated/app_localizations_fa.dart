@@ -2420,5 +2420,30 @@ class AppLocalizationsFa extends AppLocalizations {
   String get chartMySells => 'فروش‌های شما';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'میانبرهای صفحه‌کلید';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'بازار آمریکا باز است · $time دیگر بسته می‌شود';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'بازار آمریکا بسته است · $time دیگر باز می‌شود';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes دقیقه';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours ساعت $minutes دقیقه';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days روز $hours ساعت';
+  }
 }

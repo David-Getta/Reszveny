@@ -2425,5 +2425,30 @@ class AppLocalizationsTg extends AppLocalizations {
   String get chartMySells => 'Фурӯшҳои шумо';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Миёнбурҳои клавиатура';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Бозори ИМА кушода аст · то пӯшидан $time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Бозори ИМА пӯшида аст · то кушодан $time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes дақ';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours соат $minutes дақ';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days рӯз $hours соат';
+  }
 }

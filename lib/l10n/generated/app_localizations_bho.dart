@@ -2419,5 +2419,30 @@ class AppLocalizationsBho extends AppLocalizations {
   String get chartMySells => 'रउरा बिक्री';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'कीबोर्ड शॉर्टकट';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'अमेरिकी बाजार खुलल बा · $time में बंद होई';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'अमेरिकी बाजार बंद बा · $time में खुली';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes मिनट';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours घंटा $minutes मिनट';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days दिन $hours घंटा';
+  }
 }

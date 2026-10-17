@@ -2435,5 +2435,30 @@ class AppLocalizationsLn extends AppLocalizations {
   String get chartMySells => 'Bitɛki na yo';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Ba raccourci ya clavier';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Zando ya Amerika efungwami · ekokangama nsima ya $time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Zando ya Amerika ekangami · ekofungwama nsima ya $time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes min';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours h $minutes min';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days mikolo $hours h';
+  }
 }

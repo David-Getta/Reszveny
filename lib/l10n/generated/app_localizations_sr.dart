@@ -2469,5 +2469,30 @@ class AppLocalizationsSr extends AppLocalizations {
   String get chartMySells => 'Ваше продаје';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Пречице на тастатури';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Тржиште САД отворено · затвара се за $time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Тржиште САД затворено · отвара се за $time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes мин';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours ч $minutes мин';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days д $hours ч';
+  }
 }

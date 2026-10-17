@@ -646,5 +646,10 @@
   "positionsSortToday": "Cele mai bune azi întâi",
   "chartMyBuys": "Cumpărările tale",
   "chartMySells": "Vânzările tale",
-  "shortcutsTitle": "Scurtături de la tastatură"
+  "shortcutsTitle": "Scurtături de la tastatură",
+  "usMarketOpen": "Piața SUA deschisă · se închide în {time}",
+  "usMarketClosed": "Piața SUA închisă · se deschide în {time}",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} h {minutes} min",
+  "durationDaysHours": "{days} z {hours} h"
 }

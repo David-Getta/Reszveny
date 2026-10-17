@@ -646,5 +646,10 @@
   "positionsSortToday": "Paling apik dina iki dhisik",
   "chartMyBuys": "Tukonmu",
   "chartMySells": "Dodolanmu",
-  "shortcutsTitle": "Trabasan keyboard"
+  "shortcutsTitle": "Trabasan keyboard",
+  "usMarketOpen": "Pasar AS buka · tutup {time} engkas",
+  "usMarketClosed": "Pasar AS tutup · buka {time} engkas",
+  "durationMinutes": "{minutes} mnt",
+  "durationHoursMinutes": "{hours} jam {minutes} mnt",
+  "durationDaysHours": "{days} dina {hours} jam"
 }

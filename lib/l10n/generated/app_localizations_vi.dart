@@ -2417,5 +2417,30 @@ class AppLocalizationsVi extends AppLocalizations {
   String get chartMySells => 'Lần bán của bạn';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Phím tắt';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Thị trường Mỹ mở cửa · đóng cửa sau $time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Thị trường Mỹ đóng cửa · mở cửa sau $time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes phút';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours giờ $minutes phút';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days ngày $hours giờ';
+  }
 }

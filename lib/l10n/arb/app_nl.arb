@@ -646,5 +646,10 @@
   "positionsSortToday": "Beste vandaag eerst",
   "chartMyBuys": "Jouw aankopen",
   "chartMySells": "Jouw verkopen",
-  "shortcutsTitle": "Sneltoetsen"
+  "shortcutsTitle": "Sneltoetsen",
+  "usMarketOpen": "Amerikaanse markt open · sluit over {time}",
+  "usMarketClosed": "Amerikaanse markt gesloten · opent over {time}",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} u {minutes} min",
+  "durationDaysHours": "{days} d {hours} u"
 }

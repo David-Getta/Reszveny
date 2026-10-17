@@ -646,5 +646,10 @@
   "positionsSortToday": "Бүгүнкү эң жакшылары биринчи",
   "chartMyBuys": "Сиздин сатып алууларыңыз",
   "chartMySells": "Сиздин сатууларыңыз",
-  "shortcutsTitle": "Ыкчам баскычтар"
+  "shortcutsTitle": "Ыкчам баскычтар",
+  "usMarketOpen": "АКШ рыногу ачык · жабылышына {time}",
+  "usMarketClosed": "АКШ рыногу жабык · ачылышына {time}",
+  "durationMinutes": "{minutes} мүн",
+  "durationHoursMinutes": "{hours} саат {minutes} мүн",
+  "durationDaysHours": "{days} күн {hours} саат"
 }

@@ -646,5 +646,10 @@
   "positionsSortToday": "Pinakamaayo karon una",
   "chartMyBuys": "Imong mga pagpalit",
   "chartMySells": "Imong mga gibaligya",
-  "shortcutsTitle": "Mga keyboard shortcut"
+  "shortcutsTitle": "Mga keyboard shortcut",
+  "usMarketOpen": "Abli ang merkado sa US · mosira sulod sa {time}",
+  "usMarketClosed": "Sirado ang merkado sa US · moabli sulod sa {time}",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} oras {minutes} min",
+  "durationDaysHours": "{days} adlaw {hours} oras"
 }

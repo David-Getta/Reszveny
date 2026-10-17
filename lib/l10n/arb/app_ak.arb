@@ -646,5 +646,10 @@
   "positionsSortToday": "Ɛnnɛ deɛ ɛyɛ papa di kan",
   "chartMyBuys": "Wo adetɔ",
   "chartMySells": "Wo adetɔn",
-  "shortcutsTitle": "Kiiboɔd kwan tiawa"
+  "shortcutsTitle": "Kiiboɔd kwan tiawa",
+  "usMarketOpen": "Amerika dwa abue · ɛbɛto mu {time} akyi",
+  "usMarketClosed": "Amerika dwa ato mu · ɛbɛbue {time} akyi",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} dɔn {minutes} min",
+  "durationDaysHours": "{days} nna {hours} dɔn"
 }

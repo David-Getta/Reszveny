@@ -646,5 +646,10 @@
   "positionsSortToday": "Најбоље данас прво",
   "chartMyBuys": "Ваше куповине",
   "chartMySells": "Ваше продаје",
-  "shortcutsTitle": "Пречице на тастатури"
+  "shortcutsTitle": "Пречице на тастатури",
+  "usMarketOpen": "Тржиште САД отворено · затвара се за {time}",
+  "usMarketClosed": "Тржиште САД затворено · отвара се за {time}",
+  "durationMinutes": "{minutes} мин",
+  "durationHoursMinutes": "{hours} ч {minutes} мин",
+  "durationDaysHours": "{days} д {hours} ч"
 }

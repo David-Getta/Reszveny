@@ -646,5 +646,10 @@
   "positionsSortToday": "ഇന്നത്തെ മികച്ചവ ആദ്യം",
   "chartMyBuys": "നിങ്ങളുടെ വാങ്ങലുകൾ",
   "chartMySells": "നിങ്ങളുടെ വിൽപ്പനകൾ",
-  "shortcutsTitle": "കീബോർഡ് ഷോർട്ട്കട്ടുകൾ"
+  "shortcutsTitle": "കീബോർഡ് ഷോർട്ട്കട്ടുകൾ",
+  "usMarketOpen": "യുഎസ് വിപണി തുറന്നിരിക്കുന്നു · അടയ്ക്കാൻ {time} കൂടി",
+  "usMarketClosed": "യുഎസ് വിപണി അടച്ചിരിക്കുന്നു · തുറക്കാൻ {time} കൂടി",
+  "durationMinutes": "{minutes} മി.",
+  "durationHoursMinutes": "{hours} മ. {minutes} മി.",
+  "durationDaysHours": "{days} ദി. {hours} മ."
 }

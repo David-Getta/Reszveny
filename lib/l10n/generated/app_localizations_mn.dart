@@ -2424,5 +2424,30 @@ class AppLocalizationsMn extends AppLocalizations {
   String get chartMySells => 'Таны борлуулалт';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Гарын товчлол';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'АНУ-ын зах зээл нээлттэй · хаагдах хүртэл $time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'АНУ-ын зах зээл хаалттай · нээгдэх хүртэл $time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes мин';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours ц $minutes мин';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days хоног $hours ц';
+  }
 }

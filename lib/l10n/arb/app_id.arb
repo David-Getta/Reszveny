@@ -646,5 +646,10 @@
   "positionsSortToday": "Terbaik hari ini dulu",
   "chartMyBuys": "Pembelian Anda",
   "chartMySells": "Penjualan Anda",
-  "shortcutsTitle": "Pintasan keyboard"
+  "shortcutsTitle": "Pintasan keyboard",
+  "usMarketOpen": "Pasar AS buka · tutup dalam {time}",
+  "usMarketClosed": "Pasar AS tutup · buka dalam {time}",
+  "durationMinutes": "{minutes} mnt",
+  "durationHoursMinutes": "{hours} j {minutes} mnt",
+  "durationDaysHours": "{days} h {hours} j"
 }

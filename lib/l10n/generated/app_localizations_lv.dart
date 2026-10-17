@@ -2464,5 +2464,30 @@ class AppLocalizationsLv extends AppLocalizations {
   String get chartMySells => 'Jūsu pārdošanas';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Īsinājumtaustiņi';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'ASV tirgus atvērts · slēgsies pēc $time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'ASV tirgus slēgts · atvērsies pēc $time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes min';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours h $minutes min';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days d $hours h';
+  }
 }

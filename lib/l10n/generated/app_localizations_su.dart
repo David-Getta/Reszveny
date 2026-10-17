@@ -2427,5 +2427,30 @@ class AppLocalizationsSu extends AppLocalizations {
   String get chartMySells => 'Penjualan anjeun';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Pintasan kibor';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Pasar AS buka · nutup $time deui';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Pasar AS tutup · muka $time deui';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes mnt';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours jam $minutes mnt';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days poé $hours jam';
+  }
 }

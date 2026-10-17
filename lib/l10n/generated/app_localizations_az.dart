@@ -2425,5 +2425,30 @@ class AppLocalizationsAz extends AppLocalizations {
   String get chartMySells => 'Satışlarınız';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Klaviatura qısayolları';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'ABŞ bazarı açıqdır · $time sonra bağlanır';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'ABŞ bazarı bağlıdır · $time sonra açılır';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes dəq';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours saat $minutes dəq';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days gün $hours saat';
+  }
 }

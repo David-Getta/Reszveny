@@ -2410,5 +2410,30 @@ class AppLocalizationsMos extends AppLocalizations {
   String get chartMySells => 'Fo koosgo';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Klavye sor-kʋɩɩlse';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Amerik raaga pakame · na n pagdame $time poorẽ';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Amerik raaga pagdame · na n pakame $time poorẽ';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes min';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours h $minutes min';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days rasem $hours h';
+  }
 }

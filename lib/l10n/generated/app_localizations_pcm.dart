@@ -2424,5 +2424,30 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get chartMySells => 'Wetin you sell';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Keyboard shortcut dem';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'US market don open · e go close in $time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'US market don close · e go open in $time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes min';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours hr $minutes min';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days day $hours hr';
+  }
 }

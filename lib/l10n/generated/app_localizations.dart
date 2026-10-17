@@ -4218,6 +4218,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Keyboard shortcuts'**
   String get shortcutsTitle;
+
+  /// Home screen, next to 'Markets today'. {time} is a short duration like '2 h 15 min'.
+  ///
+  /// In en, this message translates to:
+  /// **'US market open · closes in {time}'**
+  String usMarketOpen(String time);
+
+  /// Same, when the US stock market is closed.
+  ///
+  /// In en, this message translates to:
+  /// **'US market closed · opens in {time}'**
+  String usMarketClosed(String time);
+
+  /// No description provided for @durationMinutes.
+  ///
+  /// In en, this message translates to:
+  /// **'{minutes} min'**
+  String durationMinutes(int minutes);
+
+  /// No description provided for @durationHoursMinutes.
+  ///
+  /// In en, this message translates to:
+  /// **'{hours} h {minutes} min'**
+  String durationHoursMinutes(int hours, int minutes);
+
+  /// No description provided for @durationDaysHours.
+  ///
+  /// In en, this message translates to:
+  /// **'{days} d {hours} h'**
+  String durationDaysHours(int days, int hours);
 }
 
 class _AppLocalizationsDelegate

@@ -646,5 +646,10 @@
   "positionsSortToday": "আজিৰ শ্ৰেষ্ঠ প্ৰথমে",
   "chartMyBuys": "আপোনাৰ ক্ৰয়",
   "chartMySells": "আপোনাৰ বিক্ৰী",
-  "shortcutsTitle": "কীব'ৰ্ড শ্বৰ্টকাট"
+  "shortcutsTitle": "কীব'ৰ্ড শ্বৰ্টকাট",
+  "usMarketOpen": "আমেৰিকাৰ বজাৰ খোলা · {time} পিছত বন্ধ হ'ব",
+  "usMarketClosed": "আমেৰিকাৰ বজাৰ বন্ধ · {time} পিছত খুলিব",
+  "durationMinutes": "{minutes} মিনিট",
+  "durationHoursMinutes": "{hours} ঘণ্টা {minutes} মিনিট",
+  "durationDaysHours": "{days} দিন {hours} ঘণ্টা"
 }

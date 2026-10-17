@@ -2425,5 +2425,30 @@ class AppLocalizationsKu extends AppLocalizations {
   String get chartMySells => 'Firotinên te';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Kurteriyên klavyeyê';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Bazara DYA vekirî ye · di $time de tê girtin';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Bazara DYA girtî ye · di $time de vedibe';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes deq';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours saet $minutes deq';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days roj $hours saet';
+  }
 }

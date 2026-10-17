@@ -2442,5 +2442,30 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get chartMySells => 'Dagiti inlakom';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Dagiti keyboard shortcut';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Nakalukat ti merkado ti US · agrikep kalpasan ti $time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Nakaserra ti merkado ti US · aglukat kalpasan ti $time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes min';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours oras $minutes min';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days aldaw $hours oras';
+  }
 }

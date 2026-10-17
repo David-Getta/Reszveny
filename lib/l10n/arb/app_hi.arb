@@ -646,5 +646,10 @@
   "positionsSortToday": "आज के सबसे अच्छे पहले",
   "chartMyBuys": "आपकी खरीदारी",
   "chartMySells": "आपकी बिक्री",
-  "shortcutsTitle": "कीबोर्ड शॉर्टकट"
+  "shortcutsTitle": "कीबोर्ड शॉर्टकट",
+  "usMarketOpen": "अमेरिकी बाज़ार खुला · {time} में बंद होगा",
+  "usMarketClosed": "अमेरिकी बाज़ार बंद · {time} में खुलेगा",
+  "durationMinutes": "{minutes} मि॰",
+  "durationHoursMinutes": "{hours} घं॰ {minutes} मि॰",
+  "durationDaysHours": "{days} दि॰ {hours} घं॰"
 }

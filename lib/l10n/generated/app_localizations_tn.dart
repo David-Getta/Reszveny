@@ -2440,5 +2440,30 @@ class AppLocalizationsTn extends AppLocalizations {
   String get chartMySells => 'Thekiso tsa gago';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Dikhutswafatso tsa khiboto';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Mmaraka wa Amerika o butswe · o tla tswalwa morago ga $time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Mmaraka wa Amerika o tswetswe · o tla bulwa morago ga $time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes min';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours h $minutes min';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days malatsi $hours h';
+  }
 }

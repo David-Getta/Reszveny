@@ -2425,5 +2425,30 @@ class AppLocalizationsSv extends AppLocalizations {
   String get chartMySells => 'Dina försäljningar';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Kortkommandon';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'USA-marknaden öppen · stänger om $time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'USA-marknaden stängd · öppnar om $time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes min';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours tim $minutes min';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days d $hours tim';
+  }
 }

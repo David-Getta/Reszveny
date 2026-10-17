@@ -646,5 +646,10 @@
   "positionsSortToday": "Best i dag først",
   "chartMyBuys": "Dine kjøp",
   "chartMySells": "Dine salg",
-  "shortcutsTitle": "Hurtigtaster"
+  "shortcutsTitle": "Hurtigtaster",
+  "usMarketOpen": "USA-markedet åpent · stenger om {time}",
+  "usMarketClosed": "USA-markedet stengt · åpner om {time}",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} t {minutes} min",
+  "durationDaysHours": "{days} d {hours} t"
 }

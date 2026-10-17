@@ -2424,5 +2424,30 @@ class AppLocalizationsKi extends AppLocalizations {
   String get chartMySells => 'Wendia waku';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Njĩra cia ihenya cia kibodi';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Thoko ya Amerika nĩ ĩhingũrĩtwo · ĩkũhingwo thutha wa $time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Thoko ya Amerika nĩ ĩhingĩtwo · ĩkũhingũrwo thutha wa $time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes min';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours h $minutes min';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days mĩthenya $hours h';
+  }
 }

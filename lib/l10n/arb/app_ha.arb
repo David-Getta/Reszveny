@@ -646,5 +646,10 @@
   "positionsSortToday": "Mafi kyau yau farko",
   "chartMyBuys": "Sayayyarka",
   "chartMySells": "Siyarwarka",
-  "shortcutsTitle": "Gajerun hanyoyin madannai"
+  "shortcutsTitle": "Gajerun hanyoyin madannai",
+  "usMarketOpen": "Kasuwar Amurka a buɗe · za ta rufe nan da {time}",
+  "usMarketClosed": "Kasuwar Amurka a rufe · za ta buɗe nan da {time}",
+  "durationMinutes": "minti {minutes}",
+  "durationHoursMinutes": "awa {hours} minti {minutes}",
+  "durationDaysHours": "kwana {days} awa {hours}"
 }

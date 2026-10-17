@@ -646,5 +646,10 @@
   "positionsSortToday": "Yi gëna baax tey jëkk",
   "chartMyBuys": "Say jënd",
   "chartMySells": "Say jaay",
-  "shortcutsTitle": "Yoon yu gàtt yu klawie"
+  "shortcutsTitle": "Yoon yu gàtt yu klawie",
+  "usMarketOpen": "Marse Amerig ubbeeku na · dina tëju ci {time}",
+  "usMarketClosed": "Marse Amerig tëju na · dina ubbeeku ci {time}",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} h {minutes} min",
+  "durationDaysHours": "{days} fan {hours} h"
 }

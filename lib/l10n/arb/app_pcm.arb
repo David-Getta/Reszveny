@@ -646,5 +646,10 @@
   "positionsSortToday": "Wetin do well pass today first",
   "chartMyBuys": "Wetin you buy",
   "chartMySells": "Wetin you sell",
-  "shortcutsTitle": "Keyboard shortcut dem"
+  "shortcutsTitle": "Keyboard shortcut dem",
+  "usMarketOpen": "US market don open · e go close in {time}",
+  "usMarketClosed": "US market don close · e go open in {time}",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} hr {minutes} min",
+  "durationDaysHours": "{days} day {hours} hr"
 }

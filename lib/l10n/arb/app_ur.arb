@@ -646,5 +646,10 @@
   "positionsSortToday": "آج کے بہترین پہلے",
   "chartMyBuys": "آپ کی خریداریاں",
   "chartMySells": "آپ کی فروخت",
-  "shortcutsTitle": "کی بورڈ شارٹ کٹس"
+  "shortcutsTitle": "کی بورڈ شارٹ کٹس",
+  "usMarketOpen": "امریکی مارکیٹ کھلی ہے · {time} میں بند ہوگی",
+  "usMarketClosed": "امریکی مارکیٹ بند ہے · {time} میں کھلے گی",
+  "durationMinutes": "{minutes} منٹ",
+  "durationHoursMinutes": "{hours} گھنٹے {minutes} منٹ",
+  "durationDaysHours": "{days} دن {hours} گھنٹے"
 }

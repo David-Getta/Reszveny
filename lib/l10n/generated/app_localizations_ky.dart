@@ -2427,5 +2427,30 @@ class AppLocalizationsKy extends AppLocalizations {
   String get chartMySells => 'Сиздин сатууларыңыз';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Ыкчам баскычтар';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'АКШ рыногу ачык · жабылышына $time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'АКШ рыногу жабык · ачылышына $time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes мүн';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours саат $minutes мүн';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days күн $hours саат';
+  }
 }

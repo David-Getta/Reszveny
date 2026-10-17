@@ -146,6 +146,8 @@ void main() {
     expect(find.byKey(const ValueKey('home-events')), findsOneWidget);
     // A piacok sávja is látszik (demóban nem nyitható meg).
     expect(find.byKey(const ValueKey('home-markets')), findsOneWidget);
+    // Az amerikai piac nyitvatartása a sáv fejlécében.
+    expect(find.textContaining(RegExp(r'^US market (open|closed) · ')), findsOneWidget);
     expect(find.text('S&P 500'), findsOneWidget);
     expect(find.text('+0.42%'), findsOneWidget);
     expect(tester.widget<InkWell>(find.byKey(const ValueKey('market-SPY'))).onTap, isNull);

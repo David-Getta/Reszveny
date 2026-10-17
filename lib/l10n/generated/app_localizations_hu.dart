@@ -2430,4 +2430,29 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get shortcutsTitle => 'Billentyűparancsok';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Az amerikai piac nyitva · zár $time múlva';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Az amerikai piac zárva · nyit $time múlva';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes perc';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours óra $minutes perc';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days nap $hours óra';
+  }
 }

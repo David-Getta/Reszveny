@@ -646,5 +646,10 @@
   "positionsSortToday": "Аввал беҳтаринҳои имрӯз",
   "chartMyBuys": "Харидҳои шумо",
   "chartMySells": "Фурӯшҳои шумо",
-  "shortcutsTitle": "Миёнбурҳои клавиатура"
+  "shortcutsTitle": "Миёнбурҳои клавиатура",
+  "usMarketOpen": "Бозори ИМА кушода аст · то пӯшидан {time}",
+  "usMarketClosed": "Бозори ИМА пӯшида аст · то кушодан {time}",
+  "durationMinutes": "{minutes} дақ",
+  "durationHoursMinutes": "{hours} соат {minutes} дақ",
+  "durationDaysHours": "{days} рӯз {hours} соат"
 }

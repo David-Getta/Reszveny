@@ -2386,5 +2386,30 @@ class AppLocalizationsTi extends AppLocalizations {
   String get chartMySells => 'መሸጣታትካ';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'መሕጸሪታት ሰሌዳ መፋትሕ';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'ዕዳጋ ኣሜሪካ ክፉት እዩ · ድሕሪ $time ይዕጾ';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'ዕዳጋ ኣሜሪካ ዕጹው እዩ · ድሕሪ $time ይኽፈት';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes ደቒ';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours ሰዓት $minutes ደቒ';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days መዓልቲ $hours ሰዓት';
+  }
 }

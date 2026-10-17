@@ -2424,5 +2424,30 @@ class AppLocalizationsTk extends AppLocalizations {
   String get chartMySells => 'Satuwlaryňyz';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Klawiatura düwme utgaşmalary';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'ABŞ bazary açyk · ýapylmagyna $time galdy';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'ABŞ bazary ýapyk · açylmagyna $time galdy';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes min';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours sag $minutes min';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days gün $hours sag';
+  }
 }

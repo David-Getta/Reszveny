@@ -646,5 +646,10 @@
   "positionsSortToday": "오늘 수익률 높은 순",
   "chartMyBuys": "내 매수",
   "chartMySells": "내 매도",
-  "shortcutsTitle": "키보드 단축키"
+  "shortcutsTitle": "키보드 단축키",
+  "usMarketOpen": "미국 시장 개장 · {time} 후 마감",
+  "usMarketClosed": "미국 시장 마감 · {time} 후 개장",
+  "durationMinutes": "{minutes}분",
+  "durationHoursMinutes": "{hours}시간 {minutes}분",
+  "durationDaysHours": "{days}일 {hours}시간"
 }

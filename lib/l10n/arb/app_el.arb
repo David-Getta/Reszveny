@@ -646,5 +646,10 @@
   "positionsSortToday": "Καλύτερες σήμερα πρώτα",
   "chartMyBuys": "Οι αγορές σας",
   "chartMySells": "Οι πωλήσεις σας",
-  "shortcutsTitle": "Συντομεύσεις πληκτρολογίου"
+  "shortcutsTitle": "Συντομεύσεις πληκτρολογίου",
+  "usMarketOpen": "Αγορά ΗΠΑ ανοιχτή · κλείνει σε {time}",
+  "usMarketClosed": "Αγορά ΗΠΑ κλειστή · ανοίγει σε {time}",
+  "durationMinutes": "{minutes} λ.",
+  "durationHoursMinutes": "{hours} ώ. {minutes} λ.",
+  "durationDaysHours": "{days} ημ. {hours} ώ."
 }

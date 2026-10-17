@@ -646,5 +646,10 @@
   "positionsSortToday": "Yina me sala mbote unu ntete",
   "chartMyBuys": "Mana nge me sumba",
   "chartMySells": "Mana nge me teka",
-  "shortcutsTitle": "Ba raccourci ya clavier"
+  "shortcutsTitle": "Ba raccourci ya clavier",
+  "usMarketOpen": "Zandu ya Amerika me kanguka · ta kangama na {time}",
+  "usMarketClosed": "Zandu ya Amerika me kangama · ta kanguka na {time}",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} h {minutes} min",
+  "durationDaysHours": "{days} bilumbu {hours} h"
 }

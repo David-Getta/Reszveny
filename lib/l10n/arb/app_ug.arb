@@ -646,5 +646,10 @@
   "positionsSortToday": "بۈگۈنكى ئەڭ ياخشىلار ئالدىدا",
   "chartMyBuys": "سېتىۋالغانلىرىڭىز",
   "chartMySells": "ساتقانلىرىڭىز",
-  "shortcutsTitle": "كۇنۇپكا تاختىسى تېزلەتمىلىرى"
+  "shortcutsTitle": "كۇنۇپكا تاختىسى تېزلەتمىلىرى",
+  "usMarketOpen": "ئامېرىكا بازىرى ئوچۇق · تاقىلىشقا {time} قالدى",
+  "usMarketClosed": "ئامېرىكا بازىرى تاقاق · ئېچىلىشقا {time} قالدى",
+  "durationMinutes": "{minutes} مىنۇت",
+  "durationHoursMinutes": "{hours} سائەت {minutes} مىنۇت",
+  "durationDaysHours": "{days} كۈن {hours} سائەت"
 }

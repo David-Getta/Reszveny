@@ -646,5 +646,10 @@
   "positionsSortToday": "ჯერ დღის საუკეთესოები",
   "chartMyBuys": "თქვენი შენაძენები",
   "chartMySells": "თქვენი გაყიდვები",
-  "shortcutsTitle": "კლავიატურის მალსახმობები"
+  "shortcutsTitle": "კლავიატურის მალსახმობები",
+  "usMarketOpen": "აშშ ბაზარი ღიაა · დახურვამდე {time}",
+  "usMarketClosed": "აშშ ბაზარი დახურულია · გახსნამდე {time}",
+  "durationMinutes": "{minutes} წთ",
+  "durationHoursMinutes": "{hours} სთ {minutes} წთ",
+  "durationDaysHours": "{days} დღე {hours} სთ"
 }

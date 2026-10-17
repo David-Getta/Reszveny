@@ -646,5 +646,10 @@
   "positionsSortToday": "ਅੱਜ ਦੇ ਸਭ ਤੋਂ ਵਧੀਆ ਪਹਿਲਾਂ",
   "chartMyBuys": "ਤੁਹਾਡੀਆਂ ਖ਼ਰੀਦਾਂ",
   "chartMySells": "ਤੁਹਾਡੀਆਂ ਵਿਕਰੀਆਂ",
-  "shortcutsTitle": "ਕੀਬੋਰਡ ਸ਼ਾਰਟਕੱਟ"
+  "shortcutsTitle": "ਕੀਬੋਰਡ ਸ਼ਾਰਟਕੱਟ",
+  "usMarketOpen": "ਅਮਰੀਕੀ ਬਾਜ਼ਾਰ ਖੁੱਲ੍ਹਾ · {time} ਵਿੱਚ ਬੰਦ ਹੋਵੇਗਾ",
+  "usMarketClosed": "ਅਮਰੀਕੀ ਬਾਜ਼ਾਰ ਬੰਦ · {time} ਵਿੱਚ ਖੁੱਲ੍ਹੇਗਾ",
+  "durationMinutes": "{minutes} ਮਿੰ.",
+  "durationHoursMinutes": "{hours} ਘੰ. {minutes} ਮਿੰ.",
+  "durationDaysHours": "{days} ਦਿਨ {hours} ਘੰ."
 }

@@ -646,5 +646,10 @@
   "positionsSortToday": "Kuwa ugu fiican maanta marka hore",
   "chartMyBuys": "Iibsashadaada",
   "chartMySells": "Iibintaada",
-  "shortcutsTitle": "Furayaasha gaaban ee kiiboodhka"
+  "shortcutsTitle": "Furayaasha gaaban ee kiiboodhka",
+  "usMarketOpen": "Suuqa Mareykanka waa furan yahay · wuxuu xirmayaa {time} kadib",
+  "usMarketClosed": "Suuqa Mareykanka waa xiran yahay · wuxuu furmayaa {time} kadib",
+  "durationMinutes": "{minutes} daq",
+  "durationHoursMinutes": "{hours} saac {minutes} daq",
+  "durationDaysHours": "{days} maalin {hours} saac"
 }

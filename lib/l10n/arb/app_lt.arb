@@ -646,5 +646,10 @@
   "positionsSortToday": "Geriausios šiandien pirmiau",
   "chartMyBuys": "Jūsų pirkimai",
   "chartMySells": "Jūsų pardavimai",
-  "shortcutsTitle": "Spartieji klavišai"
+  "shortcutsTitle": "Spartieji klavišai",
+  "usMarketOpen": "JAV rinka atidaryta · užsidaro po {time}",
+  "usMarketClosed": "JAV rinka uždaryta · atsidaro po {time}",
+  "durationMinutes": "{minutes} min.",
+  "durationHoursMinutes": "{hours} val. {minutes} min.",
+  "durationDaysHours": "{days} d. {hours} val."
 }

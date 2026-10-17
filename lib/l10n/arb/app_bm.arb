@@ -646,5 +646,10 @@
   "positionsSortToday": "Bi minnu ka ɲi kosɛbɛ fɔlɔ",
   "chartMyBuys": "I ka sanniw",
   "chartMySells": "I ka feereliw",
-  "shortcutsTitle": "Clavier sira surunw"
+  "shortcutsTitle": "Clavier sira surunw",
+  "usMarketOpen": "Ameriki sugu dayɛlɛlen don · a bɛ datugu {time} kɔfɛ",
+  "usMarketClosed": "Ameriki sugu datugulen don · a bɛ dayɛlɛ {time} kɔfɛ",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} h {minutes} min",
+  "durationDaysHours": "{days} tile {hours} h"
 }

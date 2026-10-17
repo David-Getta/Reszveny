@@ -2418,5 +2418,30 @@ class AppLocalizationsWo extends AppLocalizations {
   String get chartMySells => 'Say jaay';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Yoon yu gàtt yu klawie';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Marse Amerig ubbeeku na · dina tëju ci $time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Marse Amerig tëju na · dina ubbeeku ci $time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes min';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours h $minutes min';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days fan $hours h';
+  }
 }

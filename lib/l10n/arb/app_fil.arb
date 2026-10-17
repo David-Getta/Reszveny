@@ -646,5 +646,10 @@
   "positionsSortToday": "Pinakamahusay ngayon muna",
   "chartMyBuys": "Iyong mga binili",
   "chartMySells": "Iyong mga ibinenta",
-  "shortcutsTitle": "Mga keyboard shortcut"
+  "shortcutsTitle": "Mga keyboard shortcut",
+  "usMarketOpen": "Bukas ang merkado ng US · magsasara sa loob ng {time}",
+  "usMarketClosed": "Sarado ang merkado ng US · magbubukas sa loob ng {time}",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} oras {minutes} min",
+  "durationDaysHours": "{days} araw {hours} oras"
 }

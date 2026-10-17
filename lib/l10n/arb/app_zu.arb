@@ -646,5 +646,10 @@
   "positionsSortToday": "Ezihamba phambili namuhla kuqala",
   "chartMyBuys": "Okuthengile",
   "chartMySells": "Okuthengisile",
-  "shortcutsTitle": "Izinqamuleli zekhibhodi"
+  "shortcutsTitle": "Izinqamuleli zekhibhodi",
+  "usMarketOpen": "Imakethe yaseMelika ivuliwe · izovalwa ngemva kuka-{time}",
+  "usMarketClosed": "Imakethe yaseMelika ivaliwe · izovulwa ngemva kuka-{time}",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} h {minutes} min",
+  "durationDaysHours": "{days} izinsuku {hours} h"
 }

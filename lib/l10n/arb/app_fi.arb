@@ -646,5 +646,10 @@
   "positionsSortToday": "Parhaat tänään ensin",
   "chartMyBuys": "Ostosi",
   "chartMySells": "Myyntisi",
-  "shortcutsTitle": "Pikanäppäimet"
+  "shortcutsTitle": "Pikanäppäimet",
+  "usMarketOpen": "USA:n pörssi auki · sulkeutuu {time} päästä",
+  "usMarketClosed": "USA:n pörssi kiinni · aukeaa {time} päästä",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} t {minutes} min",
+  "durationDaysHours": "{days} pv {hours} t"
 }

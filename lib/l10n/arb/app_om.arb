@@ -646,5 +646,10 @@
   "positionsSortToday": "Kan har'a caalu dura",
   "chartMyBuys": "Bittaawwan kee",
   "chartMySells": "Gurgurtaawwan kee",
-  "shortcutsTitle": "Furtuuwwan gabaabaa kiiboordii"
+  "shortcutsTitle": "Furtuuwwan gabaabaa kiiboordii",
+  "usMarketOpen": "Gabaan Ameerikaa banaa dha · {time} booda cufama",
+  "usMarketClosed": "Gabaan Ameerikaa cufaa dha · {time} booda banama",
+  "durationMinutes": "daq. {minutes}",
+  "durationHoursMinutes": "sa'a {hours} daq. {minutes}",
+  "durationDaysHours": "guyyaa {days} sa'a {hours}"
 }

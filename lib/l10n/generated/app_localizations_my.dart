@@ -2415,5 +2415,30 @@ class AppLocalizationsMy extends AppLocalizations {
   String get chartMySells => 'သင့်ရောင်းချမှုများ';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'ကီးဘုတ် ဖြတ်လမ်းများ';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'အမေရိကန် စျေးကွက် ဖွင့်ထားသည် · $time အကြာတွင် ပိတ်မည်';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'အမေရိကန် စျေးကွက် ပိတ်ထားသည် · $time အကြာတွင် ဖွင့်မည်';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes မိနစ်';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours နာရီ $minutes မိနစ်';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days ရက် $hours နာရီ';
+  }
 }

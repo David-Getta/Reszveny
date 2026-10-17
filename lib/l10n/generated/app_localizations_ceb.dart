@@ -2434,5 +2434,30 @@ class AppLocalizationsCeb extends AppLocalizations {
   String get chartMySells => 'Imong mga gibaligya';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Mga keyboard shortcut';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Abli ang merkado sa US · mosira sulod sa $time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Sirado ang merkado sa US · moabli sulod sa $time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes min';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours oras $minutes min';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days adlaw $hours oras';
+  }
 }

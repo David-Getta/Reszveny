@@ -646,5 +646,10 @@
   "positionsSortToday": "Pi bon jodi a an premye",
   "chartMyBuys": "Acha ou yo",
   "chartMySells": "Vant ou yo",
-  "shortcutsTitle": "Rakousi klavye"
+  "shortcutsTitle": "Rakousi klavye",
+  "usMarketOpen": "Mache ameriken louvri · ap fèmen nan {time}",
+  "usMarketClosed": "Mache ameriken fèmen · ap louvri nan {time}",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} h {minutes} min",
+  "durationDaysHours": "{days} j {hours} h"
 }

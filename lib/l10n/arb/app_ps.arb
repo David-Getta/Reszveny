@@ -646,5 +646,10 @@
   "positionsSortToday": "د نن ورځې غوره لومړی",
   "chartMyBuys": "ستاسو پېرودونه",
   "chartMySells": "ستاسو پلورونه",
-  "shortcutsTitle": "د کیبورډ شارټکټونه"
+  "shortcutsTitle": "د کیبورډ شارټکټونه",
+  "usMarketOpen": "د امریکا بازار خلاص دی · په {time} کې بندیږي",
+  "usMarketClosed": "د امریکا بازار بند دی · په {time} کې خلاصیږي",
+  "durationMinutes": "{minutes} دقیقې",
+  "durationHoursMinutes": "{hours} ساعته {minutes} دقیقې",
+  "durationDaysHours": "{days} ورځې {hours} ساعته"
 }

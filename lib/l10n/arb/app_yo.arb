@@ -646,5 +646,10 @@
   "positionsSortToday": "Àwọn tó dára jù lónìí kọ́kọ́",
   "chartMyBuys": "Àwọn ìrajà rẹ",
   "chartMySells": "Àwọn ìtajà rẹ",
-  "shortcutsTitle": "Àwọn ọ̀nà àbùjá kíbọ́ọ̀dù"
+  "shortcutsTitle": "Àwọn ọ̀nà àbùjá kíbọ́ọ̀dù",
+  "usMarketOpen": "Ọjà Amẹ́ríkà ṣí sílẹ̀ · yóò tì ní {time} sí i",
+  "usMarketClosed": "Ọjà Amẹ́ríkà ti tì · yóò ṣí ní {time} sí i",
+  "durationMinutes": "ìṣẹ́jú {minutes}",
+  "durationHoursMinutes": "wákàtí {hours} ìṣẹ́jú {minutes}",
+  "durationDaysHours": "ọjọ́ {days} wákàtí {hours}"
 }

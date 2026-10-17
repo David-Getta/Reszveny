@@ -646,5 +646,10 @@
   "positionsSortToday": "Melhores de hoje primeiro",
   "chartMyBuys": "Suas compras",
   "chartMySells": "Suas vendas",
-  "shortcutsTitle": "Atalhos de teclado"
+  "shortcutsTitle": "Atalhos de teclado",
+  "usMarketOpen": "Mercado dos EUA aberto · fecha em {time}",
+  "usMarketClosed": "Mercado dos EUA fechado · abre em {time}",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} h {minutes} min",
+  "durationDaysHours": "{days} d {hours} h"
 }

@@ -646,5 +646,10 @@
   "positionsSortToday": "Egbe tɔ nyuitɔwo gbã",
   "chartMyBuys": "Wò nuƒeƒlewo",
   "chartMySells": "Wò nudzadzrawo",
-  "shortcutsTitle": "Kiboɖi ƒe mɔ kpuiwo"
+  "shortcutsTitle": "Kiboɖi ƒe mɔ kpuiwo",
+  "usMarketOpen": "Amerika ƒe asi ʋu · atu le {time} megbe",
+  "usMarketClosed": "Amerika ƒe asi tu · aʋu le {time} megbe",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} gaƒ. {minutes} min",
+  "durationDaysHours": "{days} ŋkeke {hours} gaƒ."
 }

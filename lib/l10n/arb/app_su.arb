@@ -646,5 +646,10 @@
   "positionsSortToday": "Pangalusna poé ieu heula",
   "chartMyBuys": "Pameulian anjeun",
   "chartMySells": "Penjualan anjeun",
-  "shortcutsTitle": "Pintasan kibor"
+  "shortcutsTitle": "Pintasan kibor",
+  "usMarketOpen": "Pasar AS buka · nutup {time} deui",
+  "usMarketClosed": "Pasar AS tutup · muka {time} deui",
+  "durationMinutes": "{minutes} mnt",
+  "durationHoursMinutes": "{hours} jam {minutes} mnt",
+  "durationDaysHours": "{days} poé {hours} jam"
 }

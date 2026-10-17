@@ -2435,5 +2435,30 @@ class AppLocalizationsXh extends AppLocalizations {
   String get chartMySells => 'Oko ukuthengisileyo';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Iindlela ezimfutshane zekhibhodi';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Imarike yaseMelika ivuliwe · iza kuvalwa emva kwe-$time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Imarike yaseMelika ivaliwe · iza kuvulwa emva kwe-$time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes min';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours h $minutes min';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days iintsuku $hours h';
+  }
 }

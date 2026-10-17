@@ -2421,5 +2421,30 @@ class AppLocalizationsBm extends AppLocalizations {
   String get chartMySells => 'I ka feereliw';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Clavier sira surunw';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Ameriki sugu dayɛlɛlen don · a bɛ datugu $time kɔfɛ';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Ameriki sugu datugulen don · a bɛ dayɛlɛ $time kɔfɛ';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes min';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours h $minutes min';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days tile $hours h';
+  }
 }

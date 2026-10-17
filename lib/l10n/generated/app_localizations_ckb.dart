@@ -2425,5 +2425,30 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get chartMySells => 'فرۆشتنەکانت';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'کورتەڕێکانی تەختەکلیل';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'بازاڕی ئەمریکا کراوەیە · دوای $time دادەخرێت';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'بازاڕی ئەمریکا داخراوە · دوای $time دەکرێتەوە';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes خولەک';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours کاتژمێر $minutes خولەک';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days ڕۆژ $hours کاتژمێر';
+  }
 }

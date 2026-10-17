@@ -2431,5 +2431,30 @@ class AppLocalizationsLua extends AppLocalizations {
   String get chartMySells => 'Biuvua mupane';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Ba raccourci wa clavier';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Tshisalu tsha Amerika ntshibuluke · netshiibuikidibue panyima pa $time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Tshisalu tsha Amerika ntshibuikidibue · netshibuluke panyima pa $time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes min';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours h $minutes min';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days matuku $hours h';
+  }
 }

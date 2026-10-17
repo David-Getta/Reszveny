@@ -2425,5 +2425,30 @@ class AppLocalizationsFi extends AppLocalizations {
   String get chartMySells => 'Myyntisi';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Pikanäppäimet';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'USA:n pörssi auki · sulkeutuu $time päästä';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'USA:n pörssi kiinni · aukeaa $time päästä';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes min';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours t $minutes min';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days pv $hours t';
+  }
 }

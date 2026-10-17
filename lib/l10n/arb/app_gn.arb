@@ -646,5 +646,10 @@
   "positionsSortToday": "Ko árape iporãvéva raẽ",
   "chartMyBuys": "Ne jejogua",
   "chartMySells": "Ne ñemu",
-  "shortcutsTitle": "Mbopyaʼeha teclado-pegua"
+  "shortcutsTitle": "Mbopyaʼeha teclado-pegua",
+  "usMarketOpen": "Merkádo EUA ijurujáva · oñembotýta {time} rire",
+  "usMarketClosed": "Merkádo EUA oñembotypáma · ojepeʼáta {time} rire",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} h {minutes} min",
+  "durationDaysHours": "{days} ára {hours} h"
 }

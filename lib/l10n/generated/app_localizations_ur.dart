@@ -2423,5 +2423,30 @@ class AppLocalizationsUr extends AppLocalizations {
   String get chartMySells => 'آپ کی فروخت';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'کی بورڈ شارٹ کٹس';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'امریکی مارکیٹ کھلی ہے · $time میں بند ہوگی';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'امریکی مارکیٹ بند ہے · $time میں کھلے گی';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes منٹ';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours گھنٹے $minutes منٹ';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days دن $hours گھنٹے';
+  }
 }

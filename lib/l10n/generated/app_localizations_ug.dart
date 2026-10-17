@@ -2426,5 +2426,30 @@ class AppLocalizationsUg extends AppLocalizations {
   String get chartMySells => 'ساتقانلىرىڭىز';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'كۇنۇپكا تاختىسى تېزلەتمىلىرى';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'ئامېرىكا بازىرى ئوچۇق · تاقىلىشقا $time قالدى';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'ئامېرىكا بازىرى تاقاق · ئېچىلىشقا $time قالدى';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes مىنۇت';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours سائەت $minutes مىنۇت';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days كۈن $hours سائەت';
+  }
 }

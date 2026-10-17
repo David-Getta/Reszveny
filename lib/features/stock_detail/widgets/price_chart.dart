@@ -19,10 +19,13 @@ class ChartLevel {
 
 /// Egy saját tranzakció a grafikonon: vétel (▲ a görbe alatt) vagy eladás (▼ fölötte).
 class ChartMarker {
-  const ChartMarker({required this.date, required this.sell});
+  const ChartMarker({required this.date, required this.sell, this.quantity});
 
   final DateTime date;
   final bool sell;
+
+  /// Darabszám (a kijelölt nap feliratához).
+  final double? quantity;
 }
 
 /// Egyszerű, függőség nélküli vonaldiagram időtáv-választóval. Az egérrel
@@ -207,7 +210,7 @@ class _PriceChartState extends State<PriceChart> {
                                       if (hoverChange != null && widget.showChange)
                                         '(${widget.fmt.percent(hoverChange, withSign: true)})',
                                     ].join(' '),
-                              hoverDate: hover == null ? null : widget.fmt.date(points[hover].time),
+                              hoverDate: hover == null ? null : _hoverDate(points[hover].time, shownMarkers),
                               background: theme.colorScheme.surface,
                               levels: widget.levels,
                               markers: shownMarkers,
@@ -271,6 +274,19 @@ int nearestChartIndex(List<PricePoint> points, DateTime t) {
 }
 
 DateTime _day(DateTime t) => DateTime(t.year, t.month, t.day);
+
+extension on _PriceChartState {
+  /// A kijelölt nap dátuma, és ha aznap vettél vagy adtál el: „· ▲ 6” / „· ▼ 4”.
+  String _hoverDate(DateTime t, List<ChartMarker> markers) {
+    final day = _day(t);
+    final trades = [
+      for (final m in markers)
+        if (_day(m.date) == day)
+          '${m.sell ? '▼' : '▲'}${m.quantity == null ? '' : ' ${widget.fmt.number(m.quantity!, decimals: m.quantity! == m.quantity!.roundToDouble() ? 0 : 2)}'}',
+    ];
+    return [widget.fmt.date(t), ...trades].join(' · ');
+  }
+}
 
 class _LegendItem extends StatelessWidget {
   const _LegendItem({required this.icon, required this.color, required this.label});

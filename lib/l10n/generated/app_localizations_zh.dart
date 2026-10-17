@@ -2310,7 +2310,32 @@ class AppLocalizationsZh extends AppLocalizations {
   String get chartMySells => '你的卖出';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => '键盘快捷键';
+
+  @override
+  String usMarketOpen(String time) {
+    return '美股交易中 · $time后收盘';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return '美股已收盘 · $time后开盘';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes 分钟';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours 小时 $minutes 分钟';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days 天 $hours 小时';
+  }
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -4615,4 +4640,32 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get chartMySells => '你的賣出';
+
+  @override
+  String get shortcutsTitle => '鍵盤快速鍵';
+
+  @override
+  String usMarketOpen(String time) {
+    return '美股交易中 · $time後收市';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return '美股已收市 · $time後開市';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes 分鐘';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours 小時 $minutes 分鐘';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days 日 $hours 小時';
+  }
 }

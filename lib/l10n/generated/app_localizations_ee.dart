@@ -2427,5 +2427,30 @@ class AppLocalizationsEe extends AppLocalizations {
   String get chartMySells => 'Wò nudzadzrawo';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Kiboɖi ƒe mɔ kpuiwo';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Amerika ƒe asi ʋu · atu le $time megbe';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Amerika ƒe asi tu · aʋu le $time megbe';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes min';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours gaƒ. $minutes min';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days ŋkeke $hours gaƒ.';
+  }
 }

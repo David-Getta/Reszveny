@@ -2429,5 +2429,30 @@ class AppLocalizationsHa extends AppLocalizations {
   String get chartMySells => 'Siyarwarka';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Gajerun hanyoyin madannai';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Kasuwar Amurka a buɗe · za ta rufe nan da $time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Kasuwar Amurka a rufe · za ta buɗe nan da $time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return 'minti $minutes';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return 'awa $hours minti $minutes';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return 'kwana $days awa $hours';
+  }
 }

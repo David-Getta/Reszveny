@@ -646,5 +646,10 @@
   "positionsSortToday": "Спершу найкращі за сьогодні",
   "chartMyBuys": "Ваші купівлі",
   "chartMySells": "Ваші продажі",
-  "shortcutsTitle": "Сполучення клавіш"
+  "shortcutsTitle": "Сполучення клавіш",
+  "usMarketOpen": "Ринок США відкритий · закриється через {time}",
+  "usMarketClosed": "Ринок США закритий · відкриється через {time}",
+  "durationMinutes": "{minutes} хв",
+  "durationHoursMinutes": "{hours} год {minutes} хв",
+  "durationDaysHours": "{days} дн {hours} год"
 }

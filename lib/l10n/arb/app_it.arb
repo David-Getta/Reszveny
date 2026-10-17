@@ -646,5 +646,10 @@
   "positionsSortToday": "Migliori di oggi prima",
   "chartMyBuys": "I tuoi acquisti",
   "chartMySells": "Le tue vendite",
-  "shortcutsTitle": "Scorciatoie da tastiera"
+  "shortcutsTitle": "Scorciatoie da tastiera",
+  "usMarketOpen": "Mercato USA aperto · chiude tra {time}",
+  "usMarketClosed": "Mercato USA chiuso · apre tra {time}",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} h {minutes} min",
+  "durationDaysHours": "{days} g {hours} h"
 }

@@ -125,6 +125,7 @@ class _UpcomingEventsSectionState extends State<UpcomingEventsSection> {
           children: [
             const SizedBox(height: 24),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Expanded(
                   child: Padding(

@@ -646,5 +646,10 @@
   "positionsSortToday": "Nejlepší dnes první",
   "chartMyBuys": "Vaše nákupy",
   "chartMySells": "Vaše prodeje",
-  "shortcutsTitle": "Klávesové zkratky"
+  "shortcutsTitle": "Klávesové zkratky",
+  "usMarketOpen": "Trh v USA otevřen · zavírá za {time}",
+  "usMarketClosed": "Trh v USA zavřen · otevírá za {time}",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} h {minutes} min",
+  "durationDaysHours": "{days} d {hours} h"
 }

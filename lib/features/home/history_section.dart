@@ -35,6 +35,7 @@ class RecentChips extends StatelessWidget {
           children: [
             const SizedBox(height: 24),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Expanded(
                   child: Padding(
@@ -141,6 +142,7 @@ class _MyAnalysesListState extends State<MyAnalysesList> with _SavedReports {
       children: [
         const SizedBox(height: 24),
         Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Expanded(
               child: Padding(

@@ -646,5 +646,10 @@
   "positionsSortToday": "Şu günüň iň gowulary ilki",
   "chartMyBuys": "Satyn alyşlaryňyz",
   "chartMySells": "Satuwlaryňyz",
-  "shortcutsTitle": "Klawiatura düwme utgaşmalary"
+  "shortcutsTitle": "Klawiatura düwme utgaşmalary",
+  "usMarketOpen": "ABŞ bazary açyk · ýapylmagyna {time} galdy",
+  "usMarketClosed": "ABŞ bazary ýapyk · açylmagyna {time} galdy",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} sag {minutes} min",
+  "durationDaysHours": "{days} gün {hours} sag"
 }

@@ -2432,5 +2432,30 @@ class AppLocalizationsOm extends AppLocalizations {
   String get chartMySells => 'Gurgurtaawwan kee';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Furtuuwwan gabaabaa kiiboordii';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Gabaan Ameerikaa banaa dha · $time booda cufama';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Gabaan Ameerikaa cufaa dha · $time booda banama';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return 'daq. $minutes';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return 'sa\'a $hours daq. $minutes';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return 'guyyaa $days sa\'a $hours';
+  }
 }

@@ -2429,5 +2429,30 @@ class AppLocalizationsGn extends AppLocalizations {
   String get chartMySells => 'Ne ñemu';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Mbopyaʼeha teclado-pegua';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Merkádo EUA ijurujáva · oñembotýta $time rire';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Merkádo EUA oñembotypáma · ojepeʼáta $time rire';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes min';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours h $minutes min';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days ára $hours h';
+  }
 }

@@ -2391,5 +2391,30 @@ class AppLocalizationsAm extends AppLocalizations {
   String get chartMySells => 'የእርስዎ ሽያጮች';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'የቁልፍ ሰሌዳ አቋራጮች';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'የአሜሪካ ገበያ ክፍት ነው · በ$time ውስጥ ይዘጋል';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'የአሜሪካ ገበያ ዝግ ነው · በ$time ውስጥ ይከፈታል';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes ደቂቃ';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours ሰዓት $minutes ደቂቃ';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days ቀን $hours ሰዓት';
+  }
 }

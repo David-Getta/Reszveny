@@ -646,5 +646,10 @@
   "positionsSortToday": "Zvakanaka nhasi kutanga",
   "chartMyBuys": "Zvawakatenga",
   "chartMySells": "Zvawakatengesa",
-  "shortcutsTitle": "Nzira pfupi dzekhibhodi"
+  "shortcutsTitle": "Nzira pfupi dzekhibhodi",
+  "usMarketOpen": "Musika weAmerica wakavhurika · uchavharwa mushure me{time}",
+  "usMarketClosed": "Musika weAmerica wakavharwa · uchavhurwa mushure me{time}",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} h {minutes} min",
+  "durationDaysHours": "{days} mazuva {hours} h"
 }

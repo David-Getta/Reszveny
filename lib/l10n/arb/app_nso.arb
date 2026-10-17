@@ -646,5 +646,10 @@
   "positionsSortToday": "Tše kaone lehono pele",
   "chartMyBuys": "Tše o di rekilego",
   "chartMySells": "Tše o di rekišitšego",
-  "shortcutsTitle": "Ditsela tše kopana tša khiboto"
+  "shortcutsTitle": "Ditsela tše kopana tša khiboto",
+  "usMarketOpen": "Mmaraka wa Amerika o bulegile · o tswalelwa ka morago ga {time}",
+  "usMarketClosed": "Mmaraka wa Amerika o tswaletšwe · o bulwa ka morago ga {time}",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} h {minutes} min",
+  "durationDaysHours": "{days} matšatši {hours} h"
 }

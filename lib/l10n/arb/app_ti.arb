@@ -646,5 +646,10 @@
   "positionsSortToday": "ናይ ሎሚ ዝበለጹ ቅድም",
   "chartMyBuys": "ዕድግታትካ",
   "chartMySells": "መሸጣታትካ",
-  "shortcutsTitle": "መሕጸሪታት ሰሌዳ መፋትሕ"
+  "shortcutsTitle": "መሕጸሪታት ሰሌዳ መፋትሕ",
+  "usMarketOpen": "ዕዳጋ ኣሜሪካ ክፉት እዩ · ድሕሪ {time} ይዕጾ",
+  "usMarketClosed": "ዕዳጋ ኣሜሪካ ዕጹው እዩ · ድሕሪ {time} ይኽፈት",
+  "durationMinutes": "{minutes} ደቒ",
+  "durationHoursMinutes": "{hours} ሰዓት {minutes} ደቒ",
+  "durationDaysHours": "{days} መዓልቲ {hours} ሰዓት"
 }

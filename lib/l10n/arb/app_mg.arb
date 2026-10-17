@@ -646,5 +646,10 @@
   "positionsSortToday": "Ny tsara indrindra androany aloha",
   "chartMyBuys": "Ny fividiananao",
   "chartMySells": "Ny fivarotanao",
-  "shortcutsTitle": "Hitsin-dalana amin'ny fitendry"
+  "shortcutsTitle": "Hitsin-dalana amin'ny fitendry",
+  "usMarketOpen": "Misokatra ny tsena amerikana · hikatona afaka {time}",
+  "usMarketClosed": "Mihidy ny tsena amerikana · hisokatra afaka {time}",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} ora {minutes} min",
+  "durationDaysHours": "{days} andro {hours} ora"
 }

@@ -646,5 +646,10 @@
   "positionsSortToday": "Бүгенге иң яхшылары башта",
   "chartMyBuys": "Сезнең сатып алулар",
   "chartMySells": "Сезнең сатулар",
-  "shortcutsTitle": "Тиз төймәләр"
+  "shortcutsTitle": "Тиз төймәләр",
+  "usMarketOpen": "АКШ базары ачык · ябылуга {time}",
+  "usMarketClosed": "АКШ базары ябык · ачылуга {time}",
+  "durationMinutes": "{minutes} мин",
+  "durationHoursMinutes": "{hours} сәг {minutes} мин",
+  "durationDaysHours": "{days} көн {hours} сәг"
 }

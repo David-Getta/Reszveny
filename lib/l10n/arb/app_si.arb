@@ -646,5 +646,10 @@
   "positionsSortToday": "අද හොඳම පළමුව",
   "chartMyBuys": "ඔබේ මිලදී ගැනීම්",
   "chartMySells": "ඔබේ විකුණුම්",
-  "shortcutsTitle": "යතුරුපුවරු කෙටිමං"
+  "shortcutsTitle": "යතුරුපුවරු කෙටිමං",
+  "usMarketOpen": "ඇමරිකානු වෙළඳපොළ විවෘතයි · වැසීමට {time}",
+  "usMarketClosed": "ඇමරිකානු වෙළඳපොළ වසා ඇත · විවෘත වීමට {time}",
+  "durationMinutes": "මිනි. {minutes}",
+  "durationHoursMinutes": "පැය {hours} මිනි. {minutes}",
+  "durationDaysHours": "දින {days} පැය {hours}"
 }

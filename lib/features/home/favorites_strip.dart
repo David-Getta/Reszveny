@@ -41,6 +41,7 @@ class _FavoritesStripState extends State<FavoritesStrip> {
           children: [
             const SizedBox(height: 24),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Expanded(
                   child: Padding(

@@ -2484,5 +2484,30 @@ class AppLocalizationsCs extends AppLocalizations {
   String get chartMySells => 'Vaše prodeje';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Klávesové zkratky';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Trh v USA otevřen · zavírá za $time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Trh v USA zavřen · otevírá za $time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes min';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours h $minutes min';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days d $hours h';
+  }
 }

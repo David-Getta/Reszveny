@@ -646,5 +646,10 @@
   "positionsSortToday": "Rũnda sẽn sõmb n deng",
   "chartMyBuys": "Fo raaba",
   "chartMySells": "Fo koosgo",
-  "shortcutsTitle": "Klavye sor-kʋɩɩlse"
+  "shortcutsTitle": "Klavye sor-kʋɩɩlse",
+  "usMarketOpen": "Amerik raaga pakame · na n pagdame {time} poorẽ",
+  "usMarketClosed": "Amerik raaga pagdame · na n pakame {time} poorẽ",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} h {minutes} min",
+  "durationDaysHours": "{days} rasem {hours} h"
 }

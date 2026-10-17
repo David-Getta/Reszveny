@@ -646,5 +646,10 @@
   "positionsSortToday": "Iria njega ũmũthĩ mbere",
   "chartMyBuys": "Ũgũri waku",
   "chartMySells": "Wendia waku",
-  "shortcutsTitle": "Njĩra cia ihenya cia kibodi"
+  "shortcutsTitle": "Njĩra cia ihenya cia kibodi",
+  "usMarketOpen": "Thoko ya Amerika nĩ ĩhingũrĩtwo · ĩkũhingwo thutha wa {time}",
+  "usMarketClosed": "Thoko ya Amerika nĩ ĩhingĩtwo · ĩkũhingũrwo thutha wa {time}",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} h {minutes} min",
+  "durationDaysHours": "{days} mĩthenya {hours} h"
 }

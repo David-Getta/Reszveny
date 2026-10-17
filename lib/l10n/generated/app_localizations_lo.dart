@@ -2397,5 +2397,30 @@ class AppLocalizationsLo extends AppLocalizations {
   String get chartMySells => 'ການຂາຍຂອງທ່ານ';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'ປຸ່ມລັດແປ້ນພິມ';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'ຕະຫຼາດສະຫະລັດເປີດ · ປິດໃນອີກ $time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'ຕະຫຼາດສະຫະລັດປິດ · ເປີດໃນອີກ $time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes ນທ.';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours ຊມ. $minutes ນທ.';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days ມື້ $hours ຊມ.';
+  }
 }

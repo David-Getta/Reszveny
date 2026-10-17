@@ -646,5 +646,10 @@
   "positionsSortToday": "Ibyiza by'uyu munsi mbere",
   "chartMyBuys": "Ibyo waguze",
   "chartMySells": "Ibyo wagurishije",
-  "shortcutsTitle": "Inzira z'ubusamo za mwandikisho"
+  "shortcutsTitle": "Inzira z'ubusamo za mwandikisho",
+  "usMarketOpen": "Isoko rya Amerika rirafunguye · rirafunga mu {time}",
+  "usMarketClosed": "Isoko rya Amerika rirafunze · rirafungura mu {time}",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} h {minutes} min",
+  "durationDaysHours": "{days} iminsi {hours} h"
 }

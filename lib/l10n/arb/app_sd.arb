@@ -646,5 +646,10 @@
   "positionsSortToday": "اڄ جا بهترين پهرين",
   "chartMyBuys": "توهان جون خريداريون",
   "chartMySells": "توهان جا وڪرا",
-  "shortcutsTitle": "ڪي بورڊ شارٽ ڪٽس"
+  "shortcutsTitle": "ڪي بورڊ شارٽ ڪٽس",
+  "usMarketOpen": "آمريڪي مارڪيٽ کليل · {time} ۾ بند ٿيندي",
+  "usMarketClosed": "آمريڪي مارڪيٽ بند · {time} ۾ کلندي",
+  "durationMinutes": "{minutes} منٽ",
+  "durationHoursMinutes": "{hours} ڪلاڪ {minutes} منٽ",
+  "durationDaysHours": "{days} ڏينهن {hours} ڪلاڪ"
 }

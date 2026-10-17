@@ -2354,5 +2354,30 @@ class AppLocalizationsKo extends AppLocalizations {
   String get chartMySells => '내 매도';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => '키보드 단축키';
+
+  @override
+  String usMarketOpen(String time) {
+    return '미국 시장 개장 · $time 후 마감';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return '미국 시장 마감 · $time 후 개장';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes분';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours시간 $minutes분';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days일 $hours시간';
+  }
 }

@@ -646,5 +646,10 @@
   "positionsSortToday": "Kunan aswan allinkuna ñawpaqta",
   "chartMyBuys": "Rantisqaykikuna",
   "chartMySells": "Rantikusqaykikuna",
-  "shortcutsTitle": "Teclado atajokuna"
+  "shortcutsTitle": "Teclado atajokuna",
+  "usMarketOpen": "EE. UU. qhatu kichasqa · wichq'akunqa {time}-manta",
+  "usMarketClosed": "EE. UU. qhatu wichq'asqa · kicharikunqa {time}-manta",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} h {minutes} min",
+  "durationDaysHours": "{days} p'unchay {hours} h"
 }

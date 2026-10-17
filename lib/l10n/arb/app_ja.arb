@@ -646,5 +646,10 @@
   "positionsSortToday": "本日の騰落率の高い順",
   "chartMyBuys": "あなたの購入",
   "chartMySells": "あなたの売却",
-  "shortcutsTitle": "キーボードショートカット"
+  "shortcutsTitle": "キーボードショートカット",
+  "usMarketOpen": "米国市場 取引中 · 終了まで {time}",
+  "usMarketClosed": "米国市場 取引時間外 · 開始まで {time}",
+  "durationMinutes": "{minutes} 分",
+  "durationHoursMinutes": "{hours} 時間 {minutes} 分",
+  "durationDaysHours": "{days} 日 {hours} 時間"
 }

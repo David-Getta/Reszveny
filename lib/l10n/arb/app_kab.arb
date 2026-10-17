@@ -646,5 +646,10 @@
   "positionsSortToday": "Wid yelhan ass-a d imezwura",
   "chartMyBuys": "Tiɣin-ik",
   "chartMySells": "Tizenzin-ik",
-  "shortcutsTitle": "Inegzumen n unasiw"
+  "shortcutsTitle": "Inegzumen n unasiw",
+  "usMarketOpen": "Ssuq n Marikan yeldi · ad yemdel deg {time}",
+  "usMarketClosed": "Ssuq n Marikan yemdel · ad yeldi deg {time}",
+  "durationMinutes": "{minutes} tsd",
+  "durationHoursMinutes": "{hours} sr {minutes} tsd",
+  "durationDaysHours": "{days} us {hours} sr"
 }

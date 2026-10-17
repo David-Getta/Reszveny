@@ -646,5 +646,10 @@
   "positionsSortToday": "आजका उत्कृष्ट पहिले",
   "chartMyBuys": "तपाईंका खरिदहरू",
   "chartMySells": "तपाईंका बिक्रीहरू",
-  "shortcutsTitle": "किबोर्ड सर्टकटहरू"
+  "shortcutsTitle": "किबोर्ड सर्टकटहरू",
+  "usMarketOpen": "अमेरिकी बजार खुला · बन्द हुन {time} बाँकी",
+  "usMarketClosed": "अमेरिकी बजार बन्द · खुल्न {time} बाँकी",
+  "durationMinutes": "{minutes} मिनेट",
+  "durationHoursMinutes": "{hours} घण्टा {minutes} मिनेट",
+  "durationDaysHours": "{days} दिन {hours} घण्टा"
 }

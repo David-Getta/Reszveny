@@ -646,5 +646,10 @@
   "positionsSortToday": "باشترینی ئەمڕۆ سەرەتا",
   "chartMyBuys": "کڕینەکانت",
   "chartMySells": "فرۆشتنەکانت",
-  "shortcutsTitle": "کورتەڕێکانی تەختەکلیل"
+  "shortcutsTitle": "کورتەڕێکانی تەختەکلیل",
+  "usMarketOpen": "بازاڕی ئەمریکا کراوەیە · دوای {time} دادەخرێت",
+  "usMarketClosed": "بازاڕی ئەمریکا داخراوە · دوای {time} دەکرێتەوە",
+  "durationMinutes": "{minutes} خولەک",
+  "durationHoursMinutes": "{hours} کاتژمێر {minutes} خولەک",
+  "durationDaysHours": "{days} ڕۆژ {hours} کاتژمێر"
 }

@@ -646,5 +646,10 @@
   "positionsSortToday": "Bugungi eng yaxshilari avval",
   "chartMyBuys": "Xaridlaringiz",
   "chartMySells": "Sotuvlaringiz",
-  "shortcutsTitle": "Tezkor tugmalar"
+  "shortcutsTitle": "Tezkor tugmalar",
+  "usMarketOpen": "AQSh bozori ochiq · yopilishiga {time}",
+  "usMarketClosed": "AQSh bozori yopiq · ochilishiga {time}",
+  "durationMinutes": "{minutes} daq",
+  "durationHoursMinutes": "{hours} soat {minutes} daq",
+  "durationDaysHours": "{days} kun {hours} soat"
 }

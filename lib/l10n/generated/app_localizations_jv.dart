@@ -2426,5 +2426,30 @@ class AppLocalizationsJv extends AppLocalizations {
   String get chartMySells => 'Dodolanmu';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Trabasan keyboard';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Pasar AS buka · tutup $time engkas';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Pasar AS tutup · buka $time engkas';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes mnt';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours jam $minutes mnt';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days dina $hours jam';
+  }
 }

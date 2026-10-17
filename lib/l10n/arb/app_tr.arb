@@ -646,5 +646,10 @@
   "positionsSortToday": "Bugün en iyiler önce",
   "chartMyBuys": "Alışlarınız",
   "chartMySells": "Satışlarınız",
-  "shortcutsTitle": "Klavye kısayolları"
+  "shortcutsTitle": "Klavye kısayolları",
+  "usMarketOpen": "ABD piyasası açık · {time} sonra kapanır",
+  "usMarketClosed": "ABD piyasası kapalı · {time} sonra açılır",
+  "durationMinutes": "{minutes} dk",
+  "durationHoursMinutes": "{hours} sa {minutes} dk",
+  "durationDaysHours": "{days} g {hours} sa"
 }

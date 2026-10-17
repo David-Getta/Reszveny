@@ -646,5 +646,10 @@
   "positionsSortToday": "આજના શ્રેષ્ઠ પહેલા",
   "chartMyBuys": "તમારી ખરીદીઓ",
   "chartMySells": "તમારા વેચાણ",
-  "shortcutsTitle": "કીબોર્ડ શૉર્ટકટ"
+  "shortcutsTitle": "કીબોર્ડ શૉર્ટકટ",
+  "usMarketOpen": "યુએસ બજાર ખુલ્લું · {time}માં બંધ થશે",
+  "usMarketClosed": "યુએસ બજાર બંધ · {time}માં ખુલશે",
+  "durationMinutes": "{minutes} મિનિટ",
+  "durationHoursMinutes": "{hours} કલાક {minutes} મિનિટ",
+  "durationDaysHours": "{days} દિવસ {hours} કલાક"
 }

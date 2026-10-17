@@ -1903,5 +1903,53 @@
   "positionsSortToday": "Best today first",
   "chartMyBuys": "Your buys",
   "chartMySells": "Your sales",
-  "shortcutsTitle": "Keyboard shortcuts"
+  "shortcutsTitle": "Keyboard shortcuts",
+  "usMarketOpen": "US market open · closes in {time}",
+  "usMarketClosed": "US market closed · opens in {time}",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} h {minutes} min",
+  "durationDaysHours": "{days} d {hours} h",
+  "@usMarketOpen": {
+    "description": "Home screen, next to 'Markets today'. {time} is a short duration like '2 h 15 min'.",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "@usMarketClosed": {
+    "description": "Same, when the US stock market is closed.",
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "@durationMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@durationHoursMinutes": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "@durationDaysHours": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "hours": {
+        "type": "int"
+      }
+    }
+  }
 }

@@ -646,5 +646,10 @@
   "positionsSortToday": "Ebisinze leero bisooke",
   "chartMyBuys": "Bye wagula",
   "chartMySells": "Bye watunda",
-  "shortcutsTitle": "Shortcut za kiibodi"
+  "shortcutsTitle": "Shortcut za kiibodi",
+  "usMarketOpen": "Akatale k'Amerika kaggule · kajja kuggalwa mu {time}",
+  "usMarketClosed": "Akatale k'Amerika kaggale · kajja kuggulwa mu {time}",
+  "durationMinutes": "{minutes} ddak.",
+  "durationHoursMinutes": "{hours} ssaawa {minutes} ddak.",
+  "durationDaysHours": "{days} nnaku {hours} ssaawa"
 }

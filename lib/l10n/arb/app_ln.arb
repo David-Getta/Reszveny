@@ -646,5 +646,10 @@
   "positionsSortToday": "Oyo ya malamu lɛlɔ liboso",
   "chartMyBuys": "Bosombi na yo",
   "chartMySells": "Bitɛki na yo",
-  "shortcutsTitle": "Ba raccourci ya clavier"
+  "shortcutsTitle": "Ba raccourci ya clavier",
+  "usMarketOpen": "Zando ya Amerika efungwami · ekokangama nsima ya {time}",
+  "usMarketClosed": "Zando ya Amerika ekangami · ekofungwama nsima ya {time}",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} h {minutes} min",
+  "durationDaysHours": "{days} mikolo {hours} h"
 }

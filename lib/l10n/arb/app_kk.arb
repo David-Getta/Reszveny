@@ -646,5 +646,10 @@
   "positionsSortToday": "Бүгінгі үздіктер алдымен",
   "chartMyBuys": "Сіздің сатып алуларыңыз",
   "chartMySells": "Сіздің сатуларыңыз",
-  "shortcutsTitle": "Пернелер тіркесімдері"
+  "shortcutsTitle": "Пернелер тіркесімдері",
+  "usMarketOpen": "АҚШ нарығы ашық · жабылуына {time}",
+  "usMarketClosed": "АҚШ нарығы жабық · ашылуына {time}",
+  "durationMinutes": "{minutes} мин",
+  "durationHoursMinutes": "{hours} сағ {minutes} мин",
+  "durationDaysHours": "{days} күн {hours} сағ"
 }

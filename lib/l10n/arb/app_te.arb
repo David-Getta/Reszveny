@@ -646,5 +646,10 @@
   "positionsSortToday": "ఈ రోజు ఉత్తమమైనవి ముందు",
   "chartMyBuys": "మీ కొనుగోళ్లు",
   "chartMySells": "మీ అమ్మకాలు",
-  "shortcutsTitle": "కీబోర్డ్ షార్ట్‌కట్‌లు"
+  "shortcutsTitle": "కీబోర్డ్ షార్ట్‌కట్‌లు",
+  "usMarketOpen": "యుఎస్ మార్కెట్ తెరిచి ఉంది · మూసివేతకు ఇంకా {time}",
+  "usMarketClosed": "యుఎస్ మార్కెట్ మూసి ఉంది · తెరవడానికి ఇంకా {time}",
+  "durationMinutes": "{minutes} నిమి",
+  "durationHoursMinutes": "{hours} గం {minutes} నిమి",
+  "durationDaysHours": "{days} రో {hours} గం"
 }

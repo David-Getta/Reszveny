@@ -646,5 +646,10 @@
   "positionsSortToday": "Tốt nhất hôm nay trước",
   "chartMyBuys": "Lần mua của bạn",
   "chartMySells": "Lần bán của bạn",
-  "shortcutsTitle": "Phím tắt"
+  "shortcutsTitle": "Phím tắt",
+  "usMarketOpen": "Thị trường Mỹ mở cửa · đóng cửa sau {time}",
+  "usMarketClosed": "Thị trường Mỹ đóng cửa · mở cửa sau {time}",
+  "durationMinutes": "{minutes} phút",
+  "durationHoursMinutes": "{hours} giờ {minutes} phút",
+  "durationDaysHours": "{days} ngày {hours} giờ"
 }

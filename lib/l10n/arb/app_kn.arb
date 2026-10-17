@@ -646,5 +646,10 @@
   "positionsSortToday": "ಇಂದಿನ ಅತ್ಯುತ್ತಮ ಮೊದಲು",
   "chartMyBuys": "ನಿಮ್ಮ ಖರೀದಿಗಳು",
   "chartMySells": "ನಿಮ್ಮ ಮಾರಾಟಗಳು",
-  "shortcutsTitle": "ಕೀಬೋರ್ಡ್ ಶಾರ್ಟ್‌ಕಟ್‌ಗಳು"
+  "shortcutsTitle": "ಕೀಬೋರ್ಡ್ ಶಾರ್ಟ್‌ಕಟ್‌ಗಳು",
+  "usMarketOpen": "ಯುಎಸ್ ಮಾರುಕಟ್ಟೆ ತೆರೆದಿದೆ · ಮುಚ್ಚಲು {time} ಬಾಕಿ",
+  "usMarketClosed": "ಯುಎಸ್ ಮಾರುಕಟ್ಟೆ ಮುಚ್ಚಿದೆ · ತೆರೆಯಲು {time} ಬಾಕಿ",
+  "durationMinutes": "{minutes} ನಿಮಿ",
+  "durationHoursMinutes": "{hours} ಗಂ {minutes} ನಿಮಿ",
+  "durationDaysHours": "{days} ದಿ {hours} ಗಂ"
 }

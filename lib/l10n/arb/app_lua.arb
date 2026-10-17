@@ -646,5 +646,10 @@
   "positionsSortToday": "Bidi bimpe lelu kumpala",
   "chartMyBuys": "Biuvua musumbe",
   "chartMySells": "Biuvua mupane",
-  "shortcutsTitle": "Ba raccourci wa clavier"
+  "shortcutsTitle": "Ba raccourci wa clavier",
+  "usMarketOpen": "Tshisalu tsha Amerika ntshibuluke · netshiibuikidibue panyima pa {time}",
+  "usMarketClosed": "Tshisalu tsha Amerika ntshibuikidibue · netshibuluke panyima pa {time}",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} h {minutes} min",
+  "durationDaysHours": "{days} matuku {hours} h"
 }

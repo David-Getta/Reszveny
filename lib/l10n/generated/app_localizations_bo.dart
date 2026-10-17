@@ -2412,5 +2412,30 @@ class AppLocalizationsBo extends AppLocalizations {
   String get chartMySells => 'ཁྱེད་ཀྱི་འཚོང་བ';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'མཐེབ་གཞོང་གི་མྱུར་མཐེབ';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'ཨ་རིའི་ཚོང་ར་ཁ་ཕྱེ་ཡོད། · $time རྗེས་སུ་སྒོ་རྒྱག';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'ཨ་རིའི་ཚོང་ར་སྒོ་བརྒྱབ་ཡོད། · $time རྗེས་སུ་སྒོ་འབྱེད';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return 'སྐར་མ་ $minutes';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return 'ཆུ་ཚོད་ $hours སྐར་མ་ $minutes';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return 'ཉིན་ $days ཆུ་ཚོད་ $hours';
+  }
 }

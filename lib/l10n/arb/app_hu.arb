@@ -646,5 +646,10 @@
   "positionsSortToday": "Legjobb mai mozgás elöl",
   "chartMyBuys": "Vételeid",
   "chartMySells": "Eladásaid",
-  "shortcutsTitle": "Billentyűparancsok"
+  "shortcutsTitle": "Billentyűparancsok",
+  "usMarketOpen": "Az amerikai piac nyitva · zár {time} múlva",
+  "usMarketClosed": "Az amerikai piac zárva · nyit {time} múlva",
+  "durationMinutes": "{minutes} perc",
+  "durationHoursMinutes": "{hours} óra {minutes} perc",
+  "durationDaysHours": "{days} nap {hours} óra"
 }

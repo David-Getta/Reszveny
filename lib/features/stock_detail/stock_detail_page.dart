@@ -744,7 +744,8 @@ class _FavoriteButton extends StatelessWidget {
 /// A saját (dátummal rögzített) vételek és eladások a grafikonon.
 List<ChartMarker> chartMarkers(BuildContext context, String symbol) => [
   for (final l in AppServices.of(context).portfolio.lots)
-    if (l.symbol.toUpperCase() == symbol.toUpperCase() && l.date != null) ChartMarker(date: l.date!, sell: l.sell),
+    if (l.symbol.toUpperCase() == symbol.toUpperCase() && l.date != null)
+      ChartMarker(date: l.date!, sell: l.sell, quantity: l.quantity),
 ];
 
 List<ChartLevel> chartLevels(BuildContext context, String symbol, String? currency) {

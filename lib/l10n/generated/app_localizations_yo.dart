@@ -2422,5 +2422,30 @@ class AppLocalizationsYo extends AppLocalizations {
   String get chartMySells => 'Àwọn ìtajà rẹ';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Àwọn ọ̀nà àbùjá kíbọ́ọ̀dù';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Ọjà Amẹ́ríkà ṣí sílẹ̀ · yóò tì ní $time sí i';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Ọjà Amẹ́ríkà ti tì · yóò ṣí ní $time sí i';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return 'ìṣẹ́jú $minutes';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return 'wákàtí $hours ìṣẹ́jú $minutes';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return 'ọjọ́ $days wákàtí $hours';
+  }
 }

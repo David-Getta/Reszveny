@@ -646,5 +646,10 @@
   "positionsSortToday": "ଆଜିର ଶ୍ରେଷ୍ଠ ପ୍ରଥମେ",
   "chartMyBuys": "ଆପଣଙ୍କ କ୍ରୟ",
   "chartMySells": "ଆପଣଙ୍କ ବିକ୍ରୟ",
-  "shortcutsTitle": "କୀବୋର୍ଡ ସର୍ଟକଟ"
+  "shortcutsTitle": "କୀବୋର୍ଡ ସର୍ଟକଟ",
+  "usMarketOpen": "ଆମେରିକା ବଜାର ଖୋଲା · {time} ପରେ ବନ୍ଦ ହେବ",
+  "usMarketClosed": "ଆମେରିକା ବଜାର ବନ୍ଦ · {time} ପରେ ଖୋଲିବ",
+  "durationMinutes": "{minutes} ମିନିଟ",
+  "durationHoursMinutes": "{hours} ଘଣ୍ଟା {minutes} ମିନିଟ",
+  "durationDaysHours": "{days} ଦିନ {hours} ଘଣ୍ଟା"
 }

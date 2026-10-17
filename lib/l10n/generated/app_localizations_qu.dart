@@ -2437,5 +2437,30 @@ class AppLocalizationsQu extends AppLocalizations {
   String get chartMySells => 'Rantikusqaykikuna';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Teclado atajokuna';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'EE. UU. qhatu kichasqa · wichq\'akunqa $time-manta';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'EE. UU. qhatu wichq\'asqa · kicharikunqa $time-manta';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes min';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours h $minutes min';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days p\'unchay $hours h';
+  }
 }

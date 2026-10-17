@@ -646,5 +646,10 @@
   "positionsSortToday": "आइ सभसँ नीक पहिने",
   "chartMyBuys": "अहाँक खरीदारी",
   "chartMySells": "अहाँक बिक्री",
-  "shortcutsTitle": "कीबोर्ड शॉर्टकट"
+  "shortcutsTitle": "कीबोर्ड शॉर्टकट",
+  "usMarketOpen": "अमेरिकी बजार खुजल अछि · {time} मे बन्द होएत",
+  "usMarketClosed": "अमेरिकी बजार बन्द अछि · {time} मे खुजत",
+  "durationMinutes": "{minutes} मिनट",
+  "durationHoursMinutes": "{hours} घंटा {minutes} मिनट",
+  "durationDaysHours": "{days} दिन {hours} घंटा"
 }

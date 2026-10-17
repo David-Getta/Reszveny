@@ -646,5 +646,10 @@
   "positionsSortToday": "ယနေ့ အကောင်းဆုံး အရင်",
   "chartMyBuys": "သင့်ဝယ်ယူမှုများ",
   "chartMySells": "သင့်ရောင်းချမှုများ",
-  "shortcutsTitle": "ကီးဘုတ် ဖြတ်လမ်းများ"
+  "shortcutsTitle": "ကီးဘုတ် ဖြတ်လမ်းများ",
+  "usMarketOpen": "အမေရိကန် စျေးကွက် ဖွင့်ထားသည် · {time} အကြာတွင် ပိတ်မည်",
+  "usMarketClosed": "အမေရိကန် စျေးကွက် ပိတ်ထားသည် · {time} အကြာတွင် ဖွင့်မည်",
+  "durationMinutes": "{minutes} မိနစ်",
+  "durationHoursMinutes": "{hours} နာရီ {minutes} မိနစ်",
+  "durationDaysHours": "{days} ရက် {hours} နာရီ"
 }

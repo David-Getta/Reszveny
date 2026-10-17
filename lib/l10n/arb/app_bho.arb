@@ -646,5 +646,10 @@
   "positionsSortToday": "आज के सबसे बढ़िया पहिले",
   "chartMyBuys": "रउरा खरीदारी",
   "chartMySells": "रउरा बिक्री",
-  "shortcutsTitle": "कीबोर्ड शॉर्टकट"
+  "shortcutsTitle": "कीबोर्ड शॉर्टकट",
+  "usMarketOpen": "अमेरिकी बाजार खुलल बा · {time} में बंद होई",
+  "usMarketClosed": "अमेरिकी बाजार बंद बा · {time} में खुली",
+  "durationMinutes": "{minutes} मिनट",
+  "durationHoursMinutes": "{hours} घंटा {minutes} मिनट",
+  "durationDaysHours": "{days} दिन {hours} घंटा"
 }

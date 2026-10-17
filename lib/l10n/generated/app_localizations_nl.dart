@@ -2428,5 +2428,30 @@ class AppLocalizationsNl extends AppLocalizations {
   String get chartMySells => 'Jouw verkopen';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Sneltoetsen';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Amerikaanse markt open · sluit over $time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Amerikaanse markt gesloten · opent over $time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes min';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours u $minutes min';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days d $hours u';
+  }
 }

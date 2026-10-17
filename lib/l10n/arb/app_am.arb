@@ -646,5 +646,10 @@
   "positionsSortToday": "የዛሬ ምርጥ መጀመሪያ",
   "chartMyBuys": "የእርስዎ ግዢዎች",
   "chartMySells": "የእርስዎ ሽያጮች",
-  "shortcutsTitle": "የቁልፍ ሰሌዳ አቋራጮች"
+  "shortcutsTitle": "የቁልፍ ሰሌዳ አቋራጮች",
+  "usMarketOpen": "የአሜሪካ ገበያ ክፍት ነው · በ{time} ውስጥ ይዘጋል",
+  "usMarketClosed": "የአሜሪካ ገበያ ዝግ ነው · በ{time} ውስጥ ይከፈታል",
+  "durationMinutes": "{minutes} ደቂቃ",
+  "durationHoursMinutes": "{hours} ሰዓት {minutes} ደቂቃ",
+  "durationDaysHours": "{days} ቀን {hours} ሰዓት"
 }

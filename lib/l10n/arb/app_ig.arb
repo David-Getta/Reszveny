@@ -646,5 +646,10 @@
   "positionsSortToday": "Ndị kacha mma taa buru ụzọ",
   "chartMyBuys": "Ihe ị zụrụ",
   "chartMySells": "Ihe ị rere",
-  "shortcutsTitle": "Ụzọ mkpirisi kiibọọdụ"
+  "shortcutsTitle": "Ụzọ mkpirisi kiibọọdụ",
+  "usMarketOpen": "Ahịa US mepere emepe · ga-emechi n'ime {time}",
+  "usMarketClosed": "Ahịa US mechiri emechi · ga-emeghe n'ime {time}",
+  "durationMinutes": "nkeji {minutes}",
+  "durationHoursMinutes": "awa {hours} nkeji {minutes}",
+  "durationDaysHours": "ụbọchị {days} awa {hours}"
 }

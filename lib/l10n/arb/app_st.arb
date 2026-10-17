@@ -646,5 +646,10 @@
   "positionsSortToday": "Tse ntle ka ho fetisisa kajeno pele",
   "chartMyBuys": "Ditheko tsa hao",
   "chartMySells": "Thekiso tsa hao",
-  "shortcutsTitle": "Dikhutsufatso tsa khiboto"
+  "shortcutsTitle": "Dikhutsufatso tsa khiboto",
+  "usMarketOpen": "Mmaraka wa Amerika o bulehile · o tla kwalwa ka mor'a {time}",
+  "usMarketClosed": "Mmaraka wa Amerika o kwetswe · o tla bulwa ka mor'a {time}",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} h {minutes} min",
+  "durationDaysHours": "{days} matsatsi {hours} h"
 }

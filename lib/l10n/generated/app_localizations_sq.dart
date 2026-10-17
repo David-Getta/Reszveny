@@ -2430,5 +2430,30 @@ class AppLocalizationsSq extends AppLocalizations {
   String get chartMySells => 'Shitjet tuaja';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Shkurtoret e tastierës';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Tregu i SHBA-së i hapur · mbyllet pas $time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Tregu i SHBA-së i mbyllur · hapet pas $time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes min';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours orë $minutes min';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days ditë $hours orë';
+  }
 }

@@ -646,5 +646,10 @@
   "positionsSortToday": "Beste vandag eerste",
   "chartMyBuys": "Jou aankope",
   "chartMySells": "Jou verkope",
-  "shortcutsTitle": "Sleutelbordkortpaaie"
+  "shortcutsTitle": "Sleutelbordkortpaaie",
+  "usMarketOpen": "VS-mark oop · sluit oor {time}",
+  "usMarketClosed": "VS-mark gesluit · open oor {time}",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} u {minutes} min",
+  "durationDaysHours": "{days} d {hours} u"
 }

@@ -646,5 +646,10 @@
   "positionsSortToday": "Այսօրվա լավագույնները սկզբում",
   "chartMyBuys": "Ձեր գնումները",
   "chartMySells": "Ձեր վաճառքները",
-  "shortcutsTitle": "Ստեղնային դյուրանցումներ"
+  "shortcutsTitle": "Ստեղնային դյուրանցումներ",
+  "usMarketOpen": "ԱՄՆ շուկան բաց է · կփակվի {time} հետո",
+  "usMarketClosed": "ԱՄՆ շուկան փակ է · կբացվի {time} հետո",
+  "durationMinutes": "{minutes} ր",
+  "durationHoursMinutes": "{hours} ժ {minutes} ր",
+  "durationDaysHours": "{days} օր {hours} ժ"
 }

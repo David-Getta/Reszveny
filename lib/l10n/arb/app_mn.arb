@@ -646,5 +646,10 @@
   "positionsSortToday": "Өнөөдрийн шилдэг нь эхэнд",
   "chartMyBuys": "Таны худалдан авалт",
   "chartMySells": "Таны борлуулалт",
-  "shortcutsTitle": "Гарын товчлол"
+  "shortcutsTitle": "Гарын товчлол",
+  "usMarketOpen": "АНУ-ын зах зээл нээлттэй · хаагдах хүртэл {time}",
+  "usMarketClosed": "АНУ-ын зах зээл хаалттай · нээгдэх хүртэл {time}",
+  "durationMinutes": "{minutes} мин",
+  "durationHoursMinutes": "{hours} ц {minutes} мин",
+  "durationDaysHours": "{days} хоног {hours} ц"
 }

@@ -646,5 +646,10 @@
   "positionsSortToday": "Më të mirat e sotme së pari",
   "chartMyBuys": "Blerjet tuaja",
   "chartMySells": "Shitjet tuaja",
-  "shortcutsTitle": "Shkurtoret e tastierës"
+  "shortcutsTitle": "Shkurtoret e tastierës",
+  "usMarketOpen": "Tregu i SHBA-së i hapur · mbyllet pas {time}",
+  "usMarketClosed": "Tregu i SHBA-së i mbyllur · hapet pas {time}",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} orë {minutes} min",
+  "durationDaysHours": "{days} ditë {hours} orë"
 }

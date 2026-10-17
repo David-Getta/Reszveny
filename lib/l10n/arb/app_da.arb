@@ -646,5 +646,10 @@
   "positionsSortToday": "Bedste i dag først",
   "chartMyBuys": "Dine køb",
   "chartMySells": "Dine salg",
-  "shortcutsTitle": "Tastaturgenveje"
+  "shortcutsTitle": "Tastaturgenveje",
+  "usMarketOpen": "USA-markedet åbent · lukker om {time}",
+  "usMarketClosed": "USA-markedet lukket · åbner om {time}",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} t {minutes} min",
+  "durationDaysHours": "{days} d {hours} t"
 }

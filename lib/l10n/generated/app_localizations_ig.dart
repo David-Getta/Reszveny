@@ -2419,5 +2419,30 @@ class AppLocalizationsIg extends AppLocalizations {
   String get chartMySells => 'Ihe ị rere';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Ụzọ mkpirisi kiibọọdụ';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Ahịa US mepere emepe · ga-emechi n\'ime $time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Ahịa US mechiri emechi · ga-emeghe n\'ime $time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return 'nkeji $minutes';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return 'awa $hours nkeji $minutes';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return 'ụbọchị $days awa $hours';
+  }
 }

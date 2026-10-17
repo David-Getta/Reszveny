@@ -646,5 +646,10 @@
   "positionsSortToday": "আজকের সেরা আগে",
   "chartMyBuys": "আপনার ক্রয়",
   "chartMySells": "আপনার বিক্রয়",
-  "shortcutsTitle": "কীবোর্ড শর্টকাট"
+  "shortcutsTitle": "কীবোর্ড শর্টকাট",
+  "usMarketOpen": "মার্কিন বাজার খোলা · {time} পরে বন্ধ হবে",
+  "usMarketClosed": "মার্কিন বাজার বন্ধ · {time} পরে খুলবে",
+  "durationMinutes": "{minutes} মিনিট",
+  "durationHoursMinutes": "{hours} ঘণ্টা {minutes} মিনিট",
+  "durationDaysHours": "{days} দিন {hours} ঘণ্টা"
 }

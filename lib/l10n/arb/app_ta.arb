@@ -646,5 +646,10 @@
   "positionsSortToday": "இன்றைய சிறந்தவை முதலில்",
   "chartMyBuys": "உங்கள் வாங்குதல்கள்",
   "chartMySells": "உங்கள் விற்பனைகள்",
-  "shortcutsTitle": "கீபோர்டு ஷார்ட்கட்கள்"
+  "shortcutsTitle": "கீபோர்டு ஷார்ட்கட்கள்",
+  "usMarketOpen": "அமெரிக்கச் சந்தை திறந்துள்ளது · மூட இன்னும் {time}",
+  "usMarketClosed": "அமெரிக்கச் சந்தை மூடியுள்ளது · திறக்க இன்னும் {time}",
+  "durationMinutes": "{minutes} நிமி.",
+  "durationHoursMinutes": "{hours} மணி. {minutes} நிமி.",
+  "durationDaysHours": "{days} நா. {hours} மணி."
 }

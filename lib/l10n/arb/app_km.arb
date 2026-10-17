@@ -646,5 +646,10 @@
   "positionsSortToday": "ល្អបំផុតថ្ងៃនេះមុន",
   "chartMyBuys": "ការទិញរបស់អ្នក",
   "chartMySells": "ការលក់របស់អ្នក",
-  "shortcutsTitle": "ផ្លូវកាត់ក្ដារចុច"
+  "shortcutsTitle": "ផ្លូវកាត់ក្ដារចុច",
+  "usMarketOpen": "ផ្សារអាមេរិកបើក · បិទក្នុង {time} ទៀត",
+  "usMarketClosed": "ផ្សារអាមេរិកបិទ · បើកក្នុង {time} ទៀត",
+  "durationMinutes": "{minutes} នាទី",
+  "durationHoursMinutes": "{hours} ម៉ោង {minutes} នាទី",
+  "durationDaysHours": "{days} ថ្ងៃ {hours} ម៉ោង"
 }

@@ -2430,5 +2430,30 @@ class AppLocalizationsSo extends AppLocalizations {
   String get chartMySells => 'Iibintaada';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Furayaasha gaaban ee kiiboodhka';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Suuqa Mareykanka waa furan yahay · wuxuu xirmayaa $time kadib';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Suuqa Mareykanka waa xiran yahay · wuxuu furmayaa $time kadib';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes daq';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours saac $minutes daq';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days maalin $hours saac';
+  }
 }

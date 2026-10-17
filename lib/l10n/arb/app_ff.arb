@@ -646,5 +646,10 @@
   "positionsSortToday": "Ɓurɓe moƴƴude hannde adan",
   "chartMyBuys": "Ko a soodi",
   "chartMySells": "Ko a yeeyi",
-  "shortcutsTitle": "Laawi ɓadaaɗi kilaawiye"
+  "shortcutsTitle": "Laawi ɓadaaɗi kilaawiye",
+  "usMarketOpen": "Luumo Amerik ena udditi · ina uddoo e nder {time}",
+  "usMarketClosed": "Luumo Amerik ena uddii · ina uddita e nder {time}",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} h {minutes} min",
+  "durationDaysHours": "{days} balɗe {hours} h"
 }

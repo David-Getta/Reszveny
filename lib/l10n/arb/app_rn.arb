@@ -646,5 +646,10 @@
   "positionsSortToday": "Ivyiza uno musi imbere",
   "chartMyBuys": "Ivyo waguze",
   "chartMySells": "Ivyo wagurishije",
-  "shortcutsTitle": "Inzira ngufi za clavier"
+  "shortcutsTitle": "Inzira ngufi za clavier",
+  "usMarketOpen": "Isoko rya Amerika ryuguruye · rizugarwa mu {time}",
+  "usMarketClosed": "Isoko rya Amerika ryugaye · rizugururwa mu {time}",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} h {minutes} min",
+  "durationDaysHours": "{days} imisi {hours} h"
 }

@@ -2422,5 +2422,30 @@ class AppLocalizationsKab extends AppLocalizations {
   String get chartMySells => 'Tizenzin-ik';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Inegzumen n unasiw';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Ssuq n Marikan yeldi · ad yemdel deg $time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Ssuq n Marikan yemdel · ad yeldi deg $time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes tsd';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours sr $minutes tsd';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days us $hours sr';
+  }
 }

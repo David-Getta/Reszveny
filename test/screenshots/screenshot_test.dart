@@ -16,6 +16,7 @@ import 'package:package_info_plus/package_info_plus.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:reszveny/features/analysis/analysis_chat.dart';
 import 'package:reszveny/app.dart';
+import 'package:reszveny/features/stock_detail/stock_detail_page.dart';
 import 'package:reszveny/app_services.dart';
 import 'package:reszveny/core/app_preferences.dart';
 import 'package:reszveny/core/backend/backend_client.dart';
@@ -880,8 +881,10 @@ void main() {
     // A saját vételek jelölése a grafikonon (5 éves nézet).
     final legend = find.byKey(const ValueKey('chart-markers-legend'));
     final fiveYears = find.text('5Y');
+    // A részvény oldalát görgetjük (széles nézetben az első görgethető elem az oldalsáv).
+    final page = find.descendant(of: find.byType(StockDetailPage), matching: find.byType(Scrollable)).first;
     for (var i = 0; i < 40 && fiveYears.evaluate().isEmpty; i++) {
-      await tester.drag(find.byType(Scrollable).first, const Offset(0, -300));
+      await tester.drag(page, const Offset(0, -300));
       await tester.pumpAndSettle();
     }
     await tester.ensureVisible(fiveYears.first);

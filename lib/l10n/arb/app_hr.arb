@@ -646,5 +646,10 @@
   "positionsSortToday": "Najbolje danas prvo",
   "chartMyBuys": "Vaše kupnje",
   "chartMySells": "Vaše prodaje",
-  "shortcutsTitle": "Tipkovnički prečaci"
+  "shortcutsTitle": "Tipkovnički prečaci",
+  "usMarketOpen": "Tržište SAD-a otvoreno · zatvara se za {time}",
+  "usMarketClosed": "Tržište SAD-a zatvoreno · otvara se za {time}",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} h {minutes} min",
+  "durationDaysHours": "{days} d {hours} h"
 }

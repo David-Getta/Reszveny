@@ -646,5 +646,10 @@
   "positionsSortToday": "དེ་རིང་ལེགས་ཤོས་སྔོན་ལ",
   "chartMyBuys": "ཁྱེད་ཀྱི་ཉོ་བ",
   "chartMySells": "ཁྱེད་ཀྱི་འཚོང་བ",
-  "shortcutsTitle": "མཐེབ་གཞོང་གི་མྱུར་མཐེབ"
+  "shortcutsTitle": "མཐེབ་གཞོང་གི་མྱུར་མཐེབ",
+  "usMarketOpen": "ཨ་རིའི་ཚོང་ར་ཁ་ཕྱེ་ཡོད། · {time} རྗེས་སུ་སྒོ་རྒྱག",
+  "usMarketClosed": "ཨ་རིའི་ཚོང་ར་སྒོ་བརྒྱབ་ཡོད། · {time} རྗེས་སུ་སྒོ་འབྱེད",
+  "durationMinutes": "སྐར་མ་ {minutes}",
+  "durationHoursMinutes": "ཆུ་ཚོད་ {hours} སྐར་མ་ {minutes}",
+  "durationDaysHours": "ཉིན་ {days} ཆུ་ཚོད་ {hours}"
 }

@@ -646,5 +646,10 @@
   "positionsSortToday": "الأفضل اليوم أولًا",
   "chartMyBuys": "مشترياتك",
   "chartMySells": "مبيعاتك",
-  "shortcutsTitle": "اختصارات لوحة المفاتيح"
+  "shortcutsTitle": "اختصارات لوحة المفاتيح",
+  "usMarketOpen": "السوق الأمريكية مفتوحة · تُغلق بعد {time}",
+  "usMarketClosed": "السوق الأمريكية مغلقة · تُفتح بعد {time}",
+  "durationMinutes": "{minutes} د",
+  "durationHoursMinutes": "{hours} س {minutes} د",
+  "durationDaysHours": "{days} ي {hours} س"
 }

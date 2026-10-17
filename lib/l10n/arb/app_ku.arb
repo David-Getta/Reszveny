@@ -646,5 +646,10 @@
   "positionsSortToday": "Yên herî baş ên îro pêşî",
   "chartMyBuys": "Kirînên te",
   "chartMySells": "Firotinên te",
-  "shortcutsTitle": "Kurteriyên klavyeyê"
+  "shortcutsTitle": "Kurteriyên klavyeyê",
+  "usMarketOpen": "Bazara DYA vekirî ye · di {time} de tê girtin",
+  "usMarketClosed": "Bazara DYA girtî ye · di {time} de vedibe",
+  "durationMinutes": "{minutes} deq",
+  "durationHoursMinutes": "{hours} saet {minutes} deq",
+  "durationDaysHours": "{days} roj {hours} saet"
 }

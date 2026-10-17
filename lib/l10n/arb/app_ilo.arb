@@ -646,5 +646,10 @@
   "positionsSortToday": "Kasayaatan ita nga aldaw umuna",
   "chartMyBuys": "Dagiti gatangmo",
   "chartMySells": "Dagiti inlakom",
-  "shortcutsTitle": "Dagiti keyboard shortcut"
+  "shortcutsTitle": "Dagiti keyboard shortcut",
+  "usMarketOpen": "Nakalukat ti merkado ti US · agrikep kalpasan ti {time}",
+  "usMarketClosed": "Nakaserra ti merkado ti US · aglukat kalpasan ti {time}",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} oras {minutes} min",
+  "durationDaysHours": "{days} aldaw {hours} oras"
 }

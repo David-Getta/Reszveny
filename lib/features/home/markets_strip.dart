@@ -1,9 +1,12 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 import '../../app_services.dart';
 import '../../core/models/stock_candidate.dart';
 import '../../core/models/stock_quote.dart';
 import '../../core/util/formatters.dart';
+import '../../core/util/us_market_hours.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 
@@ -21,8 +24,33 @@ class MarketsStrip extends StatefulWidget {
   State<MarketsStrip> createState() => _MarketsStripState();
 }
 
+/// Időtartam röviden: „2 ó 15 p”, „45 p”, „2 nap 3 ó” (a nyelv szövegeivel).
+String shortDuration(AppLocalizations l10n, Duration d) {
+  final minutes = d.inMinutes.clamp(1, 1 << 30);
+  if (minutes < 60) return l10n.durationMinutes(minutes);
+  if (minutes < 24 * 60) return l10n.durationHoursMinutes(minutes ~/ 60, minutes % 60);
+  return l10n.durationDaysHours(minutes ~/ (24 * 60), (minutes % (24 * 60)) ~/ 60);
+}
+
 class _MarketsStripState extends State<MarketsStrip> {
   Future<List<StockQuote?>>? _quotes;
+
+  /// Percenként frissül a nyitvatartás visszaszámlálása.
+  Timer? _tick;
+
+  @override
+  void initState() {
+    super.initState();
+    _tick = Timer.periodic(const Duration(minutes: 1), (_) {
+      if (mounted) setState(() {});
+    });
+  }
+
+  @override
+  void dispose() {
+    _tick?.cancel();
+    super.dispose();
+  }
 
   @override
   void didChangeDependencies() {
@@ -52,9 +80,10 @@ class _MarketsStripState extends State<MarketsStrip> {
           children: [
             const SizedBox(height: 24),
             Padding(
-              padding: const EdgeInsets.only(left: 4, bottom: 8),
+              padding: const EdgeInsets.only(left: 4),
               child: Text(l10n.marketsToday, style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),
             ),
+            Padding(padding: const EdgeInsets.fromLTRB(4, 2, 0, 8), child: _MarketStatus()),
             Row(
               children: [
                 for (final (i, (symbol, name)) in MarketsStrip.markets.indexed)
@@ -106,6 +135,38 @@ class _MarketsStripState extends State<MarketsStrip> {
           ],
         );
       },
+    );
+  }
+}
+
+/// Az amerikai piac nyitvatartása: nyitva (zöld pont, mikor zár) vagy zárva (mikor nyit).
+class _MarketStatus extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final p = AppPalette.of(context);
+    final theme = Theme.of(context);
+    final now = DateTime.now().toUtc();
+    final s = UsMarketHours.status(now);
+    final left = shortDuration(l10n, s.next.difference(now));
+    return Row(
+      key: const ValueKey('market-status'),
+      children: [
+        Container(
+          width: 7,
+          height: 7,
+          decoration: BoxDecoration(color: s.open ? p.positive : p.muted, shape: BoxShape.circle),
+        ),
+        const SizedBox(width: 6),
+        Flexible(
+          child: Text(
+            s.open ? l10n.usMarketOpen(left) : l10n.usMarketClosed(left),
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
+            style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+          ),
+        ),
+      ],
     );
   }
 }

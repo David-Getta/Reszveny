@@ -2430,5 +2430,30 @@ class AppLocalizationsKn extends AppLocalizations {
   String get chartMySells => 'ನಿಮ್ಮ ಮಾರಾಟಗಳು';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'ಕೀಬೋರ್ಡ್ ಶಾರ್ಟ್‌ಕಟ್‌ಗಳು';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'ಯುಎಸ್ ಮಾರುಕಟ್ಟೆ ತೆರೆದಿದೆ · ಮುಚ್ಚಲು $time ಬಾಕಿ';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'ಯುಎಸ್ ಮಾರುಕಟ್ಟೆ ಮುಚ್ಚಿದೆ · ತೆರೆಯಲು $time ಬಾಕಿ';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes ನಿಮಿ';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours ಗಂ $minutes ನಿಮಿ';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days ದಿ $hours ಗಂ';
+  }
 }

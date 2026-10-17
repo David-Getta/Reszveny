@@ -2418,5 +2418,30 @@ class AppLocalizationsFf extends AppLocalizations {
   String get chartMySells => 'Ko a yeeyi';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Laawi ɓadaaɗi kilaawiye';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Luumo Amerik ena udditi · ina uddoo e nder $time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Luumo Amerik ena uddii · ina uddita e nder $time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes min';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours h $minutes min';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days balɗe $hours h';
+  }
 }

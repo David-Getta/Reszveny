@@ -646,5 +646,10 @@
   "positionsSortToday": "Najboljše danes najprej",
   "chartMyBuys": "Vaši nakupi",
   "chartMySells": "Vaše prodaje",
-  "shortcutsTitle": "Bližnjice na tipkovnici"
+  "shortcutsTitle": "Bližnjice na tipkovnici",
+  "usMarketOpen": "Trg v ZDA odprt · zapre se čez {time}",
+  "usMarketClosed": "Trg v ZDA zaprt · odpre se čez {time}",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} h {minutes} min",
+  "durationDaysHours": "{days} d {hours} h"
 }

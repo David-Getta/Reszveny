@@ -2403,5 +2403,30 @@ class AppLocalizationsKm extends AppLocalizations {
   String get chartMySells => 'ការលក់របស់អ្នក';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'ផ្លូវកាត់ក្ដារចុច';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'ផ្សារអាមេរិកបើក · បិទក្នុង $time ទៀត';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'ផ្សារអាមេរិកបិទ · បើកក្នុង $time ទៀត';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes នាទី';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours ម៉ោង $minutes នាទី';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days ថ្ងៃ $hours ម៉ោង';
+  }
 }

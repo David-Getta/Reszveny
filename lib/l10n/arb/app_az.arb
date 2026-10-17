@@ -646,5 +646,10 @@
   "positionsSortToday": "Bu günün ən yaxşıları əvvəl",
   "chartMyBuys": "Alışlarınız",
   "chartMySells": "Satışlarınız",
-  "shortcutsTitle": "Klaviatura qısayolları"
+  "shortcutsTitle": "Klaviatura qısayolları",
+  "usMarketOpen": "ABŞ bazarı açıqdır · {time} sonra bağlanır",
+  "usMarketClosed": "ABŞ bazarı bağlıdır · {time} sonra açılır",
+  "durationMinutes": "{minutes} dəq",
+  "durationHoursMinutes": "{hours} saat {minutes} dəq",
+  "durationDaysHours": "{days} gün {hours} saat"
 }

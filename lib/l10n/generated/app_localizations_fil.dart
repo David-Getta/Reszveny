@@ -2430,5 +2430,30 @@ class AppLocalizationsFil extends AppLocalizations {
   String get chartMySells => 'Iyong mga ibinenta';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'Mga keyboard shortcut';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'Bukas ang merkado ng US · magsasara sa loob ng $time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'Sarado ang merkado ng US · magbubukas sa loob ng $time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes min';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours oras $minutes min';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days araw $hours oras';
+  }
 }

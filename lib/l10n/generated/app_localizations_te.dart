@@ -2429,5 +2429,30 @@ class AppLocalizationsTe extends AppLocalizations {
   String get chartMySells => 'మీ అమ్మకాలు';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'కీబోర్డ్ షార్ట్‌కట్‌లు';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'యుఎస్ మార్కెట్ తెరిచి ఉంది · మూసివేతకు ఇంకా $time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'యుఎస్ మార్కెట్ మూసి ఉంది · తెరవడానికి ఇంకా $time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes నిమి';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours గం $minutes నిమి';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days రో $hours గం';
+  }
 }

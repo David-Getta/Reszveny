@@ -646,5 +646,10 @@
   "positionsSortToday": "Bora zaidi leo kwanza",
   "chartMyBuys": "Ununuzi wako",
   "chartMySells": "Mauzo yako",
-  "shortcutsTitle": "Njia za mkato za kibodi"
+  "shortcutsTitle": "Njia za mkato za kibodi",
+  "usMarketOpen": "Soko la Marekani liko wazi · litafungwa baada ya {time}",
+  "usMarketClosed": "Soko la Marekani limefungwa · litafunguliwa baada ya {time}",
+  "durationMinutes": "dak {minutes}",
+  "durationHoursMinutes": "saa {hours} dak {minutes}",
+  "durationDaysHours": "siku {days} saa {hours}"
 }

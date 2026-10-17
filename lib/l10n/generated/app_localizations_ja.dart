@@ -2345,5 +2345,30 @@ class AppLocalizationsJa extends AppLocalizations {
   String get chartMySells => 'あなたの売却';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'キーボードショートカット';
+
+  @override
+  String usMarketOpen(String time) {
+    return '米国市場 取引中 · 終了まで $time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return '米国市場 取引時間外 · 開始まで $time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes 分';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours 時間 $minutes 分';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days 日 $hours 時間';
+  }
 }

@@ -2415,5 +2415,30 @@ class AppLocalizationsSd extends AppLocalizations {
   String get chartMySells => 'توهان جا وڪرا';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'ڪي بورڊ شارٽ ڪٽس';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'آمريڪي مارڪيٽ کليل · $time ۾ بند ٿيندي';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'آمريڪي مارڪيٽ بند · $time ۾ کلندي';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes منٽ';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours ڪلاڪ $minutes منٽ';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days ڏينهن $hours ڪلاڪ';
+  }
 }

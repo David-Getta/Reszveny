@@ -646,5 +646,10 @@
   "positionsSortToday": "ดีที่สุดวันนี้ก่อน",
   "chartMyBuys": "การซื้อของคุณ",
   "chartMySells": "การขายของคุณ",
-  "shortcutsTitle": "คีย์ลัดแป้นพิมพ์"
+  "shortcutsTitle": "คีย์ลัดแป้นพิมพ์",
+  "usMarketOpen": "ตลาดสหรัฐฯ เปิด · ปิดในอีก {time}",
+  "usMarketClosed": "ตลาดสหรัฐฯ ปิด · เปิดในอีก {time}",
+  "durationMinutes": "{minutes} นาที",
+  "durationHoursMinutes": "{hours} ชม. {minutes} นาที",
+  "durationDaysHours": "{days} วัน {hours} ชม."
 }

@@ -2424,5 +2424,30 @@ class AppLocalizationsKa extends AppLocalizations {
   String get chartMySells => 'თქვენი გაყიდვები';
 
   @override
-  String get shortcutsTitle => 'Keyboard shortcuts';
+  String get shortcutsTitle => 'კლავიატურის მალსახმობები';
+
+  @override
+  String usMarketOpen(String time) {
+    return 'აშშ ბაზარი ღიაა · დახურვამდე $time';
+  }
+
+  @override
+  String usMarketClosed(String time) {
+    return 'აშშ ბაზარი დახურულია · გახსნამდე $time';
+  }
+
+  @override
+  String durationMinutes(int minutes) {
+    return '$minutes წთ';
+  }
+
+  @override
+  String durationHoursMinutes(int hours, int minutes) {
+    return '$hours სთ $minutes წთ';
+  }
+
+  @override
+  String durationDaysHours(int days, int hours) {
+    return '$days დღე $hours სთ';
+  }
 }

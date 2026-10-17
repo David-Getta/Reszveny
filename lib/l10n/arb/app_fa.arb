@@ -646,5 +646,10 @@
   "positionsSortToday": "بهترین امروز اول",
   "chartMyBuys": "خریدهای شما",
   "chartMySells": "فروش‌های شما",
-  "shortcutsTitle": "میانبرهای صفحه‌کلید"
+  "shortcutsTitle": "میانبرهای صفحه‌کلید",
+  "usMarketOpen": "بازار آمریکا باز است · {time} دیگر بسته می‌شود",
+  "usMarketClosed": "بازار آمریکا بسته است · {time} دیگر باز می‌شود",
+  "durationMinutes": "{minutes} دقیقه",
+  "durationHoursMinutes": "{hours} ساعت {minutes} دقیقه",
+  "durationDaysHours": "{days} روز {hours} ساعت"
 }

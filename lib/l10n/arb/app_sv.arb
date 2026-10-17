@@ -646,5 +646,10 @@
   "positionsSortToday": "Bäst i dag först",
   "chartMyBuys": "Dina köp",
   "chartMySells": "Dina försäljningar",
-  "shortcutsTitle": "Kortkommandon"
+  "shortcutsTitle": "Kortkommandon",
+  "usMarketOpen": "USA-marknaden öppen · stänger om {time}",
+  "usMarketClosed": "USA-marknaden stängd · öppnar om {time}",
+  "durationMinutes": "{minutes} min",
+  "durationHoursMinutes": "{hours} tim {minutes} min",
+  "durationDaysHours": "{days} d {hours} tim"
 }
