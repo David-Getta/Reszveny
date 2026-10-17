@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "लक्ष्य काढा",
   "alertEdit": "सूचना संपादित करा",
   "positionOpenLots": "अजूनही तुमच्याकडे (सर्वात जुनी आधी)",
-  "lotRemoved": "व्यवहार हटवला"
+  "lotRemoved": "व्यवहार हटवला",
+  "alertDeleted": "अलर्ट हटवला",
+  "alertsClearTriggered": "ट्रिगर झालेले अलर्ट साफ करा",
+  "alertsCleared": "{count, plural, =1{1 अलर्ट साफ केला} other{{count} अलर्ट साफ केले}}"
 }

@@ -2483,4 +2483,21 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Tranzakció törölve';
+
+  @override
+  String get alertDeleted => 'Riasztás törölve';
+
+  @override
+  String get alertsClearTriggered => 'Teljesült riasztások törlése';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count riasztás törölve',
+      one: '1 riasztás törölve',
+    );
+    return '$_temp0';
+  }
 }

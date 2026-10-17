@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Remover meta",
   "alertEdit": "Editar alerta",
   "positionOpenLots": "Ainda em carteira (mais antigas primeiro)",
-  "lotRemoved": "Transação excluída"
+  "lotRemoved": "Transação excluída",
+  "alertDeleted": "Alerta excluído",
+  "alertsClearTriggered": "Limpar alertas disparados",
+  "alertsCleared": "{count, plural, =1{1 alerta removido} other{{count} alertas removidos}}"
 }

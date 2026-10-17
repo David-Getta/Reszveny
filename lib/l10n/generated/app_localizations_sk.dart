@@ -2542,4 +2542,23 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Transakcia bola odstránená';
+
+  @override
+  String get alertDeleted => 'Upozornenie odstránené';
+
+  @override
+  String get alertsClearTriggered => 'Vymazať spustené upozornenia';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Vymazaných $count upozornení',
+      many: 'Vymazané $count upozornenia',
+      few: 'Vymazané $count upozornenia',
+      one: 'Vymazané 1 upozornenie',
+    );
+    return '$_temp0';
+  }
 }

@@ -2475,4 +2475,21 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Sanni walima feereli jɔsira';
+
+  @override
+  String get alertDeleted => 'Kunnafoni jɔsira';
+
+  @override
+  String get alertsClearTriggered => 'Kunnafoni wulilenw jɔsi';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kunnafoni $count jɔsira',
+      one: 'Kunnafoni 1 jɔsira',
+    );
+    return '$_temp0';
+  }
 }

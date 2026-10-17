@@ -2477,4 +2477,21 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get lotRemoved => 'İşlem silindi';
+
+  @override
+  String get alertDeleted => 'Alarm silindi';
+
+  @override
+  String get alertsClearTriggered => 'Tetiklenen alarmları temizle';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count alarm temizlendi',
+      one: '1 alarm temizlendi',
+    );
+    return '$_temp0';
+  }
 }

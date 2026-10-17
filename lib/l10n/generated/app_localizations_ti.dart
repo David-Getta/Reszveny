@@ -2440,4 +2440,21 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get lotRemoved => 'ልውውጥ ተሰሪዙ';
+
+  @override
+  String get alertDeleted => 'መጠንቀቕታ ተሰሪዙ';
+
+  @override
+  String get alertsClearTriggered => 'ዝተበገሱ መጠንቀቕታታት ኣጽሪ';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count መጠንቀቕታታት ተሰሪዞም',
+      one: '1 መጠንቀቕታ ተሰሪዙ',
+    );
+    return '$_temp0';
+  }
 }

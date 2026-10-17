@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "ہدف ہٹائیں",
   "alertEdit": "الرٹ میں ترمیم کریں",
   "positionOpenLots": "اب بھی آپ کے پاس (سب سے پرانی پہلے)",
-  "lotRemoved": "لین دین حذف کر دیا گیا"
+  "lotRemoved": "لین دین حذف کر دیا گیا",
+  "alertDeleted": "الرٹ حذف کر دیا گیا",
+  "alertsClearTriggered": "متحرک ہونے والے الرٹس صاف کریں",
+  "alertsCleared": "{count, plural, =1{1 الرٹ صاف کر دیا گیا} other{{count} الرٹ صاف کر دیے گئے}}"
 }

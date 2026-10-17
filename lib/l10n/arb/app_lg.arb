@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Ggyawo ekiruubirirwa",
   "alertEdit": "Kyusa okulabula",
   "positionOpenLots": "Bikyali byo (ebyasooka okusooka)",
-  "lotRemoved": "Ekyaguliddwa oba ekyatundiddwa kisanguddwawo"
+  "lotRemoved": "Ekyaguliddwa oba ekyatundiddwa kisanguddwawo",
+  "alertDeleted": "Okulabula kusanguddwawo",
+  "alertsClearTriggered": "Sangulawo okulabula okwakoze",
+  "alertsCleared": "{count, plural, =1{Okulabula 1 kusanguddwawo} other{Okulabula {count} kusanguddwawo}}"
 }

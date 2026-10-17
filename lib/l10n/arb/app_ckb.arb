@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "لابردنی ئامانج",
   "alertEdit": "دەستکاریکردنی ئاگادارکەرەوە",
   "positionOpenLots": "هێشتا لات ماوە (کۆنترین سەرەتا)",
-  "lotRemoved": "مامەڵەکە سڕایەوە"
+  "lotRemoved": "مامەڵەکە سڕایەوە",
+  "alertDeleted": "ئاگادارکردنەوە سڕایەوە",
+  "alertsClearTriggered": "سڕینەوەی ئاگادارکردنەوە چالاکبووەکان",
+  "alertsCleared": "{count, plural, =1{1 ئاگادارکردنەوە سڕایەوە} other{{count} ئاگادارکردنەوە سڕانەوە}}"
 }

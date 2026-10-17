@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "ដកគោលដៅចេញ",
   "alertEdit": "កែការជូនដំណឹង",
   "positionOpenLots": "នៅកាន់កាប់ (ចាស់បំផុតមុន)",
-  "lotRemoved": "បានលុបប្រតិបត្តិការ"
+  "lotRemoved": "បានលុបប្រតិបត្តិការ",
+  "alertDeleted": "បានលុបការជូនដំណឹង",
+  "alertsClearTriggered": "សម្អាតការជូនដំណឹងដែលបានកើតឡើង",
+  "alertsCleared": "{count, plural, =1{បានសម្អាតការជូនដំណឹង 1} other{បានសម្អាតការជូនដំណឹង {count}}}"
 }

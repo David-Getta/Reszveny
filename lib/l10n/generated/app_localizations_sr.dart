@@ -2523,4 +2523,22 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Трансакција је обрисана';
+
+  @override
+  String get alertDeleted => 'Упозорење је обрисано';
+
+  @override
+  String get alertsClearTriggered => 'Обриши активирана упозорења';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Обрисано је $count упозорења',
+      few: 'Обрисана су $count упозорења',
+      one: 'Обрисано је $count упозорење',
+    );
+    return '$_temp0';
+  }
 }

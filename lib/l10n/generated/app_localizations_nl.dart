@@ -2482,4 +2482,21 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Transactie verwijderd';
+
+  @override
+  String get alertDeleted => 'Melding verwijderd';
+
+  @override
+  String get alertsClearTriggered => 'Afgegane meldingen wissen';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count meldingen gewist',
+      one: '1 melding gewist',
+    );
+    return '$_temp0';
+  }
 }

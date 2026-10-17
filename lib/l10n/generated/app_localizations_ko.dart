@@ -2408,4 +2408,21 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get lotRemoved => '거래를 삭제했습니다';
+
+  @override
+  String get alertDeleted => '알림을 삭제했습니다';
+
+  @override
+  String get alertsClearTriggered => '발동된 알림 지우기';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '알림 $count개를 지웠습니다',
+      one: '알림 1개를 지웠습니다',
+    );
+    return '$_temp0';
+  }
 }

@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Ondoa lengo",
   "alertEdit": "Hariri arifa",
   "positionOpenLots": "Bado unazo (za zamani zaidi kwanza)",
-  "lotRemoved": "Muamala umefutwa"
+  "lotRemoved": "Muamala umefutwa",
+  "alertDeleted": "Arifa imefutwa",
+  "alertsClearTriggered": "Futa arifa zilizotokea",
+  "alertsCleared": "{count, plural, =1{Arifa 1 imefutwa} other{Arifa {count} zimefutwa}}"
 }

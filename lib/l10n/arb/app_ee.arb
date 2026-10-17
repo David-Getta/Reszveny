@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Ɖe taɖodzinu ɖa",
   "alertEdit": "Trɔ nuxlɔ̃ame",
   "positionOpenLots": "Ele asiwò kokooko (xoxotɔwo gbã)",
-  "lotRemoved": "Wotutu nuƒeƒle alo nudzadzra la"
+  "lotRemoved": "Wotutu nuƒeƒle alo nudzadzra la",
+  "alertDeleted": "Wotutu nuxlɔ̃ame",
+  "alertsClearTriggered": "Tutu nuxlɔ̃ame siwo wɔ dɔ",
+  "alertsCleared": "{count, plural, =1{Wotutu nuxlɔ̃ame 1} other{Wotutu nuxlɔ̃ame {count}}}"
 }

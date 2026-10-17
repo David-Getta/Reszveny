@@ -2466,4 +2466,21 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get lotRemoved => 'ཉོ་འཚོང་བསུབས་ཟིན';
+
+  @override
+  String get alertDeleted => 'ཉེན་བརྡ་བསུབས་ཟིན';
+
+  @override
+  String get alertsClearTriggered => 'འགུལ་སློང་བྱུང་བའི་ཉེན་བརྡ་གཙང་སེལ';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ཉེན་བརྡ་ $count བསུབས་ཟིན།',
+      one: 'ཉེན་བརྡ་ 1 བསུབས་ཟིན།',
+    );
+    return '$_temp0';
+  }
 }

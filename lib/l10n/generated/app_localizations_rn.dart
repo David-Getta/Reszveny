@@ -2485,4 +2485,21 @@ class AppLocalizationsRn extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Igikorwa co kugura canke kugurisha cafuswe';
+
+  @override
+  String get alertDeleted => 'Imenyesha ryafuswe';
+
+  @override
+  String get alertsClearTriggered => 'Futa amamenyesha yakozwe';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Hafuswe amamenyesha $count',
+      one: 'Hafuswe imenyesha 1',
+    );
+    return '$_temp0';
+  }
 }

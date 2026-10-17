@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Wepụ ebumnuche",
   "alertEdit": "Dezie ọkwa",
   "positionOpenLots": "Ka nọ n'aka gị (ndị ochie mbụ)",
-  "lotRemoved": "E hichapụla azụmahịa ahụ"
+  "lotRemoved": "E hichapụla azụmahịa ahụ",
+  "alertDeleted": "E hichapụla ọkwa",
+  "alertsClearTriggered": "Hichapụ ọkwa ndị rụrụ ọrụ",
+  "alertsCleared": "{count, plural, =1{E hichapụla ọkwa 1} other{E hichapụla ọkwa {count}}}"
 }

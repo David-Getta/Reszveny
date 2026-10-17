@@ -2479,4 +2479,21 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Tapahtuma poistettu';
+
+  @override
+  String get alertDeleted => 'Hälytys poistettu';
+
+  @override
+  String get alertsClearTriggered => 'Tyhjennä lauenneet hälytykset';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hälytystä poistettu',
+      one: '1 hälytys poistettu',
+    );
+    return '$_temp0';
+  }
 }

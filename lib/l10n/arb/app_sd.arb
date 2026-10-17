@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "مقصد هٽايو",
   "alertEdit": "الرٽ ۾ ترميم ڪريو",
   "positionOpenLots": "اڃا توهان وٽ (سڀ کان پراڻا پهريان)",
-  "lotRemoved": "ليڻ دين ميٽيو ويو"
+  "lotRemoved": "ليڻ دين ميٽيو ويو",
+  "alertDeleted": "الرٽ ميٽيو ويو",
+  "alertsClearTriggered": "ٽرگر ٿيل الرٽ صاف ڪريو",
+  "alertsCleared": "{count, plural, =1{1 الرٽ صاف ڪيو ويو} other{{count} الرٽ صاف ڪيا ويا}}"
 }

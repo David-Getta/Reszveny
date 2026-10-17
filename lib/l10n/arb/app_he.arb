@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "הסרת היעד",
   "alertEdit": "עריכת התראה",
   "positionOpenLots": "עדיין בבעלותך (הוותיקות ביותר קודם)",
-  "lotRemoved": "העסקה נמחקה"
+  "lotRemoved": "העסקה נמחקה",
+  "alertDeleted": "ההתראה נמחקה",
+  "alertsClearTriggered": "ניקוי התראות שהופעלו",
+  "alertsCleared": "{count, plural, =1{נוקתה התראה אחת} other{נוקו {count} התראות}}"
 }

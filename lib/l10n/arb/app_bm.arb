@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Laɲini bɔ a la",
   "alertEdit": "Lasɔmini yɛlɛma",
   "positionOpenLots": "Hali bɛ i bolo (kɔrɔw fɔlɔ)",
-  "lotRemoved": "Sanni walima feereli jɔsira"
+  "lotRemoved": "Sanni walima feereli jɔsira",
+  "alertDeleted": "Kunnafoni jɔsira",
+  "alertsClearTriggered": "Kunnafoni wulilenw jɔsi",
+  "alertsCleared": "{count, plural, =1{Kunnafoni 1 jɔsira} other{Kunnafoni {count} jɔsira}}"
 }

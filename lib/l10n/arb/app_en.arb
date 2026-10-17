@@ -1980,5 +1980,16 @@
   "@positionOpenLots": {
     "description": "Transactions sheet of a position: heading of the list of purchase lots still held after FIFO sales, each with quantity, buy price, date and gain at today's price."
   },
-  "lotRemoved": "Transaction deleted"
+  "lotRemoved": "Transaction deleted",
+  "alertDeleted": "Alert deleted",
+  "alertsClearTriggered": "Clear triggered alerts",
+  "alertsCleared": "{count, plural, =1{1 alert cleared} other{{count} alerts cleared}}",
+  "@alertsCleared": {
+    "description": "Snackbar after removing all triggered alerts (with Undo).",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
 }

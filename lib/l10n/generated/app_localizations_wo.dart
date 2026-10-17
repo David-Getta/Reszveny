@@ -2473,4 +2473,21 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Far nañu jënd walla jaay bi';
+
+  @override
+  String get alertDeleted => 'Far nañu artu bi';
+
+  @override
+  String get alertsClearTriggered => 'Far artu yi dox';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Far nañu $count artu',
+      one: 'Far nañu 1 artu',
+    );
+    return '$_temp0';
+  }
 }

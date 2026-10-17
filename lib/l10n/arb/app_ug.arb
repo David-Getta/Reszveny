@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "نىشاننى ئۆچۈرۈش",
   "alertEdit": "ئاگاھلاندۇرۇشنى تەھرىرلەش",
   "positionOpenLots": "تېخى قولىڭىزدا (ئەڭ كونىسى ئالدىدا)",
-  "lotRemoved": "سودا ئۆچۈرۈلدى"
+  "lotRemoved": "سودا ئۆچۈرۈلدى",
+  "alertDeleted": "ئاگاھلاندۇرۇش ئۆچۈرۈلدى",
+  "alertsClearTriggered": "قوزغالغان ئاگاھلاندۇرۇشلارنى تازىلاش",
+  "alertsCleared": "{count, plural, =1{1 ئاگاھلاندۇرۇش تازىلاندى} other{{count} ئاگاھلاندۇرۇش تازىلاندى}}"
 }

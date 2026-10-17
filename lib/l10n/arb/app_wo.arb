@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Far jublu bi",
   "alertEdit": "Soppi artu bi",
   "positionOpenLots": "Ñu ngi ci sa loxo ba tey (yi gën a yàgg jëkk)",
-  "lotRemoved": "Far nañu jënd walla jaay bi"
+  "lotRemoved": "Far nañu jënd walla jaay bi",
+  "alertDeleted": "Far nañu artu bi",
+  "alertsClearTriggered": "Far artu yi dox",
+  "alertsCleared": "{count, plural, =1{Far nañu 1 artu} other{Far nañu {count} artu}}"
 }

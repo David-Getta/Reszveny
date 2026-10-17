@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Eliminar objetivo",
   "alertEdit": "Editar alerta",
   "positionOpenLots": "Aún en cartera (primero las más antiguas)",
-  "lotRemoved": "Transacción eliminada"
+  "lotRemoved": "Transacción eliminada",
+  "alertDeleted": "Alerta eliminada",
+  "alertsClearTriggered": "Borrar alertas activadas",
+  "alertsCleared": "{count, plural, =1{Se ha borrado 1 alerta} other{Se han borrado {count} alertas}}"
 }

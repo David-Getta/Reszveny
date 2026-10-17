@@ -2470,4 +2470,21 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get lotRemoved => 'העסקה נמחקה';
+
+  @override
+  String get alertDeleted => 'ההתראה נמחקה';
+
+  @override
+  String get alertsClearTriggered => 'ניקוי התראות שהופעלו';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'נוקו $count התראות',
+      one: 'נוקתה התראה אחת',
+    );
+    return '$_temp0';
+  }
 }

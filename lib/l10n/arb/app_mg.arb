@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Esory ny tanjona",
   "alertEdit": "Ovay ny fanairana",
   "positionOpenLots": "Mbola anananao (ny tranainy indrindra aloha)",
-  "lotRemoved": "Voafafa ny fividianana na fivarotana"
+  "lotRemoved": "Voafafa ny fividianana na fivarotana",
+  "alertDeleted": "Voafafa ny fampitandremana",
+  "alertsClearTriggered": "Fafao ireo fampitandremana efa nipoitra",
+  "alertsCleared": "{count, plural, =1{Voafafa ny fampitandremana 1} other{Voafafa ny fampitandremana {count}}}"
 }

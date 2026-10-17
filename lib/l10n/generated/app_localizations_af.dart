@@ -2481,4 +2481,21 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Transaksie uitgevee';
+
+  @override
+  String get alertDeleted => 'Alarm geskrap';
+
+  @override
+  String get alertsClearTriggered => 'Skrap geaktiveerde alarms';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count alarms geskrap',
+      one: '1 alarm geskrap',
+    );
+    return '$_temp0';
+  }
 }

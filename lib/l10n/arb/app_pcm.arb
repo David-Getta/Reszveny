@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Comot target",
   "alertEdit": "Change alert",
   "positionOpenLots": "Wetin you still hold (oldest first)",
-  "lotRemoved": "Di buy or sell don delete"
+  "lotRemoved": "Di buy or sell don delete",
+  "alertDeleted": "Alert don delete",
+  "alertsClearTriggered": "Clear alerts wey don ring",
+  "alertsCleared": "{count, plural, =1{We don clear 1 alert} one{We don clear {count} alert} other{We don clear {count} alerts}}"
 }

@@ -2479,4 +2479,21 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Transaktionen har raderats';
+
+  @override
+  String get alertDeleted => 'Larm borttaget';
+
+  @override
+  String get alertsClearTriggered => 'Rensa utlösta larm';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count larm rensade',
+      one: '1 larm rensat',
+    );
+    return '$_temp0';
+  }
 }

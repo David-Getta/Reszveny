@@ -2473,4 +2473,21 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get lotRemoved => 'વ્યવહાર કાઢી નાખ્યો';
+
+  @override
+  String get alertDeleted => 'ચેતવણી કાઢી નાખી';
+
+  @override
+  String get alertsClearTriggered => 'ટ્રિગર થયેલી ચેતવણીઓ સાફ કરો';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ચેતવણીઓ સાફ કરી',
+      one: '1 ચેતવણી સાફ કરી',
+    );
+    return '$_temp0';
+  }
 }

@@ -2364,6 +2364,23 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get lotRemoved => '已删除交易记录';
+
+  @override
+  String get alertDeleted => '已删除提醒';
+
+  @override
+  String get alertsClearTriggered => '清除已触发的提醒';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '已清除 $count 个提醒',
+      one: '已清除 1 个提醒',
+    );
+    return '$_temp0';
+  }
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -4724,4 +4741,21 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get lotRemoved => '已刪除交易記錄';
+
+  @override
+  String get alertDeleted => '已刪除提醒';
+
+  @override
+  String get alertsClearTriggered => '清除已觸發的提醒';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '已清除 $count 個提醒',
+      one: '已清除 1 個提醒',
+    );
+    return '$_temp0';
+  }
 }

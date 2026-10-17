@@ -214,6 +214,22 @@ class AlertStore extends ChangeNotifier {
     await _changed();
   }
 
+  /// Egy törölt riasztás visszaállítása (visszavonás), változatlanul.
+  Future<void> restore(PriceAlert alert) async {
+    if (_alerts.any((a) => a.id == alert.id)) return;
+    _alerts.add(alert);
+    await _changed();
+  }
+
+  /// Az összes teljesült riasztás törlése; a törölteket adja vissza (visszavonáshoz).
+  Future<List<PriceAlert>> removeTriggered() async {
+    final gone = _alerts.where((a) => !a.isActive).toList();
+    if (gone.isEmpty) return gone;
+    _alerts.removeWhere((a) => !a.isActive);
+    await _changed();
+    return gone;
+  }
+
   Future<void> remove(String id) async {
     _alerts.removeWhere((a) => a.id == id);
     await _changed();

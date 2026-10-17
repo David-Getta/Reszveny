@@ -2478,4 +2478,21 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Transaksjonen er slettet';
+
+  @override
+  String get alertDeleted => 'Varsel slettet';
+
+  @override
+  String get alertsClearTriggered => 'Fjern utløste varsler';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count varsler fjernet',
+      one: '1 varsel fjernet',
+    );
+    return '$_temp0';
+  }
 }

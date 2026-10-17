@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Elimina l'objectiu",
   "alertEdit": "Edita l’alerta",
   "positionOpenLots": "Encara en cartera (primer les més antigues)",
-  "lotRemoved": "S’ha suprimit la transacció"
+  "lotRemoved": "S’ha suprimit la transacció",
+  "alertDeleted": "S’ha suprimit l’alerta",
+  "alertsClearTriggered": "Esborra les alertes activades",
+  "alertsCleared": "{count, plural, =1{S’ha esborrat 1 alerta} other{S’han esborrat {count} alertes}}"
 }

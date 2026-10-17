@@ -2496,4 +2496,21 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Naikkat ti transaksion';
+
+  @override
+  String get alertDeleted => 'Naikkat ti pakdaar';
+
+  @override
+  String get alertsClearTriggered => 'Ikkaten dagiti na-trigger a pakdaar';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Naikkat ti $count a pakdaar',
+      one: 'Naikkat ti 1 a pakdaar',
+    );
+    return '$_temp0';
+  }
 }

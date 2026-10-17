@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Alisin ang layunin",
   "alertEdit": "I-edit ang alerto",
   "positionOpenLots": "Hawak pa (pinakaluma muna)",
-  "lotRemoved": "Nabura ang transaksyon"
+  "lotRemoved": "Nabura ang transaksyon",
+  "alertDeleted": "Nabura ang alerto",
+  "alertsClearTriggered": "I-clear ang mga na-trigger na alerto",
+  "alertsCleared": "{count, plural, =1{Na-clear ang 1 alerto} other{Na-clear ang {count} alerto}}"
 }

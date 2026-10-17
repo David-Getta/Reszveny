@@ -2473,4 +2473,21 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get lotRemoved => 'E hichapụla azụmahịa ahụ';
+
+  @override
+  String get alertDeleted => 'E hichapụla ọkwa';
+
+  @override
+  String get alertsClearTriggered => 'Hichapụ ọkwa ndị rụrụ ọrụ';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'E hichapụla ọkwa $count',
+      one: 'E hichapụla ọkwa 1',
+    );
+    return '$_temp0';
+  }
 }

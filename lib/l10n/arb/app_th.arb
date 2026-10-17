@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "ลบเป้าหมาย",
   "alertEdit": "แก้ไขการแจ้งเตือน",
   "positionOpenLots": "ยังถืออยู่ (เก่าสุดก่อน)",
-  "lotRemoved": "ลบรายการซื้อขายแล้ว"
+  "lotRemoved": "ลบรายการซื้อขายแล้ว",
+  "alertDeleted": "ลบการแจ้งเตือนแล้ว",
+  "alertsClearTriggered": "ล้างการแจ้งเตือนที่ทำงานแล้ว",
+  "alertsCleared": "{count, plural, =1{ล้างการแจ้งเตือน 1 รายการแล้ว} other{ล้างการแจ้งเตือน {count} รายการแล้ว}}"
 }

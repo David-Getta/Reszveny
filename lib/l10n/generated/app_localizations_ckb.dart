@@ -2479,4 +2479,21 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get lotRemoved => 'مامەڵەکە سڕایەوە';
+
+  @override
+  String get alertDeleted => 'ئاگادارکردنەوە سڕایەوە';
+
+  @override
+  String get alertsClearTriggered => 'سڕینەوەی ئاگادارکردنەوە چالاکبووەکان';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ئاگادارکردنەوە سڕانەوە',
+      one: '1 ئاگادارکردنەوە سڕایەوە',
+    );
+    return '$_temp0';
+  }
 }

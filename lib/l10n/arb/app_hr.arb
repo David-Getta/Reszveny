@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Ukloni cilj",
   "alertEdit": "Uredi obavijest",
   "positionOpenLots": "Još u posjedu (prvo najstarije)",
-  "lotRemoved": "Transakcija izbrisana"
+  "lotRemoved": "Transakcija izbrisana",
+  "alertDeleted": "Upozorenje je izbrisano",
+  "alertsClearTriggered": "Izbriši aktivirana upozorenja",
+  "alertsCleared": "{count, plural, =1{Izbrisano je 1 upozorenje} one{Izbrisano je {count} upozorenje} few{Izbrisana su {count} upozorenja} other{Izbrisano je {count} upozorenja}}"
 }

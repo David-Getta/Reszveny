@@ -2448,4 +2448,21 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get lotRemoved => 'ลบรายการซื้อขายแล้ว';
+
+  @override
+  String get alertDeleted => 'ลบการแจ้งเตือนแล้ว';
+
+  @override
+  String get alertsClearTriggered => 'ล้างการแจ้งเตือนที่ทำงานแล้ว';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ล้างการแจ้งเตือน $count รายการแล้ว',
+      one: 'ล้างการแจ้งเตือน 1 รายการแล้ว',
+    );
+    return '$_temp0';
+  }
 }

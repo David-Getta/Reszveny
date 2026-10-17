@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Embogue jehupytyrã",
   "alertEdit": "Emoambue maranduʼi",
   "positionOpenLots": "Oĩ gueteri nde pópe (tujavéva raẽ)",
-  "lotRemoved": "Oñemboguete jejogua térã ñemu"
+  "lotRemoved": "Oñemboguete jejogua térã ñemu",
+  "alertDeleted": "Oñemboguete momarandu",
+  "alertsClearTriggered": "Embogue momarandu oñemyendyvaʼekue",
+  "alertsCleared": "{count, plural, =1{Oñemboguete 1 momarandu} other{Oñemboguete {count} momarandu}}"
 }

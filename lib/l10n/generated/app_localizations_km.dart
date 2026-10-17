@@ -2457,4 +2457,21 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get lotRemoved => 'បានលុបប្រតិបត្តិការ';
+
+  @override
+  String get alertDeleted => 'បានលុបការជូនដំណឹង';
+
+  @override
+  String get alertsClearTriggered => 'សម្អាតការជូនដំណឹងដែលបានកើតឡើង';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'បានសម្អាតការជូនដំណឹង $count',
+      one: 'បានសម្អាតការជូនដំណឹង 1',
+    );
+    return '$_temp0';
+  }
 }

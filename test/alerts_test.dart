@@ -238,4 +238,37 @@ void main() {
     expect(s.alerts.alerts.single.value, 320);
     expect(s.alerts.alerts.single.isActive, isTrue);
   });
+
+  testWidgets('deleting an alert can be undone; triggered alerts are cleared at once', (tester) async {
+    tester.view.physicalSize = const Size(1200, 1600);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final s = services();
+    final keep = await s.alerts.add(symbol: 'AAPL', kind: AlertKind.above, value: 300, currency: 'USD');
+    for (final sym in ['MSFT', 'NVDA']) {
+      final a = await s.alerts.add(symbol: sym, kind: AlertKind.move, value: 5);
+      await s.alerts.markTriggered(a.id, DateTime(2026, 10, 1), 100);
+    }
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Price alerts').first);
+    await tester.pumpAndSettle();
+
+    await tester.tap(find.byKey(ValueKey('alert-delete-${keep.id}')));
+    await tester.pumpAndSettle();
+    expect(s.alerts.alerts.where((a) => a.isActive), isEmpty);
+    expect(find.text('Alert deleted'), findsOneWidget);
+    await tester.tap(find.text('Undo'));
+    await tester.pumpAndSettle();
+    expect(s.alerts.alerts.where((a) => a.isActive).single.id, keep.id);
+
+    await tester.tap(find.byKey(const ValueKey('alerts-clear-triggered')));
+    await tester.pumpAndSettle();
+    expect(s.alerts.alerts, hasLength(1));
+    expect(find.text('2 alerts cleared'), findsOneWidget);
+    expect(find.byKey(const ValueKey('alerts-clear-triggered')), findsNothing);
+    await tester.tap(find.text('Undo'));
+    await tester.pumpAndSettle();
+    expect(s.alerts.alerts, hasLength(3));
+  });
 }

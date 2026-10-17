@@ -2495,4 +2495,21 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Voafafa ny fividianana na fivarotana';
+
+  @override
+  String get alertDeleted => 'Voafafa ny fampitandremana';
+
+  @override
+  String get alertsClearTriggered => 'Fafao ireo fampitandremana efa nipoitra';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Voafafa ny fampitandremana $count',
+      one: 'Voafafa ny fampitandremana 1',
+    );
+    return '$_temp0';
+  }
 }

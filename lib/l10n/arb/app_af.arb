@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Verwyder doelwit",
   "alertEdit": "Wysig waarskuwing",
   "positionOpenLots": "Nog besit (oudste eerste)",
-  "lotRemoved": "Transaksie uitgevee"
+  "lotRemoved": "Transaksie uitgevee",
+  "alertDeleted": "Alarm geskrap",
+  "alertsClearTriggered": "Skrap geaktiveerde alarms",
+  "alertsCleared": "{count, plural, =1{1 alarm geskrap} other{{count} alarms geskrap}}"
 }

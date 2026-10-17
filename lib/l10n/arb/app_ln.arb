@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Longola mokano",
   "alertEdit": "Bongola likebisi",
   "positionOpenLots": "Ezali naino na yo (ya kala liboso)",
-  "lotRemoved": "Bosombi to boteki elimwisami"
+  "lotRemoved": "Bosombi to boteki elimwisami",
+  "alertDeleted": "Likebisi elimwisami",
+  "alertsClearTriggered": "Limwisa makebisi oyo esalaki",
+  "alertsCleared": "{count, plural, =1{Likebisi 1 elimwisami} other{Makebisi {count} elimwisami}}"
 }

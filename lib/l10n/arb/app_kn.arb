@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "ಗುರಿ ತೆಗೆದುಹಾಕಿ",
   "alertEdit": "ಅಲರ್ಟ್ ಎಡಿಟ್ ಮಾಡಿ",
   "positionOpenLots": "ಇನ್ನೂ ಹೊಂದಿರುವವು (ಹಳೆಯದು ಮೊದಲು)",
-  "lotRemoved": "ವಹಿವಾಟನ್ನು ಅಳಿಸಲಾಗಿದೆ"
+  "lotRemoved": "ವಹಿವಾಟನ್ನು ಅಳಿಸಲಾಗಿದೆ",
+  "alertDeleted": "ಎಚ್ಚರಿಕೆಯನ್ನು ಅಳಿಸಲಾಗಿದೆ",
+  "alertsClearTriggered": "ಟ್ರಿಗರ್ ಆದ ಎಚ್ಚರಿಕೆಗಳನ್ನು ತೆರವುಗೊಳಿಸಿ",
+  "alertsCleared": "{count, plural, =1{1 ಎಚ್ಚರಿಕೆಯನ್ನು ತೆರವುಗೊಳಿಸಲಾಗಿದೆ} other{{count} ಎಚ್ಚರಿಕೆಗಳನ್ನು ತೆರವುಗೊಳಿಸಲಾಗಿದೆ}}"
 }

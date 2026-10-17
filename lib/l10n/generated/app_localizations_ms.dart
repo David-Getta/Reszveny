@@ -2482,4 +2482,21 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Transaksi dipadam';
+
+  @override
+  String get alertDeleted => 'Amaran dipadam';
+
+  @override
+  String get alertsClearTriggered => 'Padam amaran yang dicetuskan';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count amaran dipadam',
+      one: '1 amaran dipadam',
+    );
+    return '$_temp0';
+  }
 }

@@ -2469,4 +2469,21 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get lotRemoved => 'အရောင်းအဝယ်ကို ဖျက်လိုက်ပြီ';
+
+  @override
+  String get alertDeleted => 'သတိပေးချက်ကို ဖျက်လိုက်ပြီ';
+
+  @override
+  String get alertsClearTriggered => 'အသက်ဝင်ခဲ့သော သတိပေးချက်များကို ရှင်းရန်';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'သတိပေးချက် $count ခု ရှင်းပြီးပါပြီ',
+      one: 'သတိပေးချက် 1 ခု ရှင်းပြီးပါပြီ',
+    );
+    return '$_temp0';
+  }
 }

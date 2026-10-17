@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Usuń cel",
   "alertEdit": "Edytuj alert",
   "positionOpenLots": "Nadal posiadane (najpierw najstarsze)",
-  "lotRemoved": "Usunięto transakcję"
+  "lotRemoved": "Usunięto transakcję",
+  "alertDeleted": "Usunięto alert",
+  "alertsClearTriggered": "Wyczyść uruchomione alerty",
+  "alertsCleared": "{count, plural, =1{Wyczyszczono 1 alert} one{Wyczyszczono {count} alert} few{Wyczyszczono {count} alerty} many{Wyczyszczono {count} alertów} other{Wyczyszczono {count} alertu}}"
 }

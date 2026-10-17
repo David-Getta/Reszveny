@@ -2478,4 +2478,21 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Muamala umefutwa';
+
+  @override
+  String get alertDeleted => 'Arifa imefutwa';
+
+  @override
+  String get alertsClearTriggered => 'Futa arifa zilizotokea';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Arifa $count zimefutwa',
+      one: 'Arifa 1 imefutwa',
+    );
+    return '$_temp0';
+  }
 }

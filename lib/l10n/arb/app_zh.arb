@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "移除目标",
   "alertEdit": "编辑提醒",
   "positionOpenLots": "仍持有（最早的在前）",
-  "lotRemoved": "已删除交易记录"
+  "lotRemoved": "已删除交易记录",
+  "alertDeleted": "已删除提醒",
+  "alertsClearTriggered": "清除已触发的提醒",
+  "alertsCleared": "{count, plural, =1{已清除 1 个提醒} other{已清除 {count} 个提醒}}"
 }

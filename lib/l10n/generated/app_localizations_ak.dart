@@ -2477,4 +2477,21 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Wɔapopa adetɔ anaa adetɔn no';
+
+  @override
+  String get alertDeleted => 'Wɔapopa kɔkɔbɔ';
+
+  @override
+  String get alertsClearTriggered => 'Popa kɔkɔbɔ a ayɛ adwuma';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Wɔapopa kɔkɔbɔ $count',
+      one: 'Wɔapopa kɔkɔbɔ 1',
+    );
+    return '$_temp0';
+  }
 }

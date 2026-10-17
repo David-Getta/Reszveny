@@ -2484,4 +2484,21 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Kugula kapena kugulitsa kwachotsedwa';
+
+  @override
+  String get alertDeleted => 'Chenjezo lachotsedwa';
+
+  @override
+  String get alertsClearTriggered => 'Chotsani machenjezo amene alira';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Machenjezo $count achotsedwa',
+      one: 'Chenjezo 1 lachotsedwa',
+    );
+    return '$_temp0';
+  }
 }

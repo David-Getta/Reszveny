@@ -2495,4 +2495,21 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Theko kgotsa thekiso e phimotswe';
+
+  @override
+  String get alertDeleted => 'Tlhagiso e phimotswe';
+
+  @override
+  String get alertsClearTriggered => 'Phimola ditlhagiso tse di diragetseng';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Go phimotswe ditlhagiso di le $count',
+      one: 'Go phimotswe tlhagiso e le nngwe',
+    );
+    return '$_temp0';
+  }
 }

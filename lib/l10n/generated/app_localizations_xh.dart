@@ -2489,4 +2489,21 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Intengiselwano icinyiwe';
+
+  @override
+  String get alertDeleted => 'Isilumkiso sicinyiwe';
+
+  @override
+  String get alertsClearTriggered => 'Cima izilumkiso eziqalisiweyo';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kucinywe izilumkiso ezi-$count',
+      one: 'Kucinywe isilumkiso esinye',
+    );
+    return '$_temp0';
+  }
 }

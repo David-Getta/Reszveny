@@ -2518,4 +2518,22 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Darījums izdzēsts';
+
+  @override
+  String get alertDeleted => 'Brīdinājums izdzēsts';
+
+  @override
+  String get alertsClearTriggered => 'Notīrīt nostrādājušos brīdinājumus';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Notīrīti $count brīdinājumi',
+      one: 'Notīrīts $count brīdinājums',
+      zero: 'Notīrīti $count brīdinājumi',
+    );
+    return '$_temp0';
+  }
 }

@@ -2543,4 +2543,23 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Аперацыя выдалена';
+
+  @override
+  String get alertDeleted => 'Апавяшчэнне выдалена';
+
+  @override
+  String get alertsClearTriggered => 'Ачысціць спрацаваныя апавяшчэнні';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ачышчана $count апавяшчэння',
+      many: 'Ачышчана $count апавяшчэнняў',
+      few: 'Ачышчана $count апавяшчэнні',
+      one: 'Ачышчана $count апавяшчэнне',
+    );
+    return '$_temp0';
+  }
 }

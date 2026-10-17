@@ -2451,4 +2451,21 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get lotRemoved => 'ລຶບທຸລະກຳແລ້ວ';
+
+  @override
+  String get alertDeleted => 'ລຶບການແຈ້ງເຕືອນແລ້ວ';
+
+  @override
+  String get alertsClearTriggered => 'ລຶບການແຈ້ງເຕືອນທີ່ເກີດຂຶ້ນແລ້ວ';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ລຶບການແຈ້ງເຕືອນ $count ລາຍການແລ້ວ',
+      one: 'ລຶບການແຈ້ງເຕືອນ 1 ລາຍການແລ້ວ',
+    );
+    return '$_temp0';
+  }
 }

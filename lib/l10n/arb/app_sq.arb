@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Hiq objektivin",
   "alertEdit": "Ndrysho alarmin",
   "positionOpenLots": "Ende në zotërim (më të vjetrat së pari)",
-  "lotRemoved": "Transaksioni u fshi"
+  "lotRemoved": "Transaksioni u fshi",
+  "alertDeleted": "Sinjalizimi u fshi",
+  "alertsClearTriggered": "Pastro sinjalizimet e aktivizuara",
+  "alertsCleared": "{count, plural, =1{U pastrua 1 sinjalizim} other{U pastruan {count} sinjalizime}}"
 }

@@ -2478,4 +2478,21 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Операция жойылды';
+
+  @override
+  String get alertDeleted => 'Ескерту жойылды';
+
+  @override
+  String get alertsClearTriggered => 'Іске қосылған ескертулерді тазалау';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ескерту тазаланды',
+      one: '1 ескерту тазаланды',
+    );
+    return '$_temp0';
+  }
 }

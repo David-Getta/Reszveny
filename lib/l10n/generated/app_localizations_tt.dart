@@ -2476,4 +2476,21 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Операция бетерелде';
+
+  @override
+  String get alertDeleted => 'Кисәтү бетерелде';
+
+  @override
+  String get alertsClearTriggered => 'Эшләгән кисәтүләрне чистарту';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count кисәтү чистартылды',
+      one: '1 кисәтү чистартылды',
+    );
+    return '$_temp0';
+  }
 }

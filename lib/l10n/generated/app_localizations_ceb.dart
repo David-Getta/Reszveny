@@ -2488,4 +2488,21 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Napapas ang transaksyon';
+
+  @override
+  String get alertDeleted => 'Napapas ang alerto';
+
+  @override
+  String get alertsClearTriggered => 'Papasa ang mga na-trigger nga alerto';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Napapas ang $count ka alerto',
+      one: 'Napapas ang 1 ka alerto',
+    );
+    return '$_temp0';
+  }
 }

@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Fjern målet",
   "alertEdit": "Rediger varsel",
   "positionOpenLots": "Fortsatt eid (eldste først)",
-  "lotRemoved": "Transaksjonen er slettet"
+  "lotRemoved": "Transaksjonen er slettet",
+  "alertDeleted": "Varsel slettet",
+  "alertsClearTriggered": "Fjern utløste varsler",
+  "alertsCleared": "{count, plural, =1{1 varsel fjernet} other{{count} varsler fjernet}}"
 }

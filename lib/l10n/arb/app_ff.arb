@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Momtu faandaare",
   "alertEdit": "Waylu tintinol",
   "positionOpenLots": "Ina woodi haa jooni (ɓurɗi ƙiɗɗude adan)",
-  "lotRemoved": "Soodgol walla yeeyugol momtaama"
+  "lotRemoved": "Soodgol walla yeeyugol momtaama",
+  "alertDeleted": "Jeertinol momtaama",
+  "alertsClearTriggered": "Momtu jeertine ɗe huwi",
+  "alertsCleared": "{count, plural, =1{Jeertinol 1 momtaama} other{Jeertine {count} momtaama}}"
 }

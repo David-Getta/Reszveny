@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "ዕላማ ኣልግስ",
   "alertEdit": "መጠንቀቕታ ኣመዓራሪ",
   "positionOpenLots": "ገና ኣብ ኢድኩም ዘለዉ (ዝኣረጉ መጀመርታ)",
-  "lotRemoved": "ልውውጥ ተሰሪዙ"
+  "lotRemoved": "ልውውጥ ተሰሪዙ",
+  "alertDeleted": "መጠንቀቕታ ተሰሪዙ",
+  "alertsClearTriggered": "ዝተበገሱ መጠንቀቕታታት ኣጽሪ",
+  "alertsCleared": "{count, plural, =1{1 መጠንቀቕታ ተሰሪዙ} other{{count} መጠንቀቕታታት ተሰሪዞም}}"
 }

@@ -2477,4 +2477,21 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get lotRemoved => 'لین دین حذف کر دیا گیا';
+
+  @override
+  String get alertDeleted => 'الرٹ حذف کر دیا گیا';
+
+  @override
+  String get alertsClearTriggered => 'متحرک ہونے والے الرٹس صاف کریں';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count الرٹ صاف کر دیے گئے',
+      one: '1 الرٹ صاف کر دیا گیا',
+    );
+    return '$_temp0';
+  }
 }

@@ -2485,4 +2485,21 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Macaamilka waa la tirtiray';
+
+  @override
+  String get alertDeleted => 'Digniinta waa la tirtiray';
+
+  @override
+  String get alertsClearTriggered => 'Tirtir digniinaha dhacay';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count digniin ayaa la tirtiray',
+      one: '1 digniin ayaa la tirtiray',
+    );
+    return '$_temp0';
+  }
 }

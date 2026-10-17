@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Tlosa sepheo",
   "alertEdit": "Fetola tsebiso",
   "positionOpenLots": "E ntse e le tsa hao (tsa kgale pele)",
-  "lotRemoved": "Theko kapa thekiso e hlakotswe"
+  "lotRemoved": "Theko kapa thekiso e hlakotswe",
+  "alertDeleted": "Temoso e hlakotswe",
+  "alertsClearTriggered": "Hlakola ditemoso tse etsahetseng",
+  "alertsCleared": "{count, plural, =1{Ho hlakotswe temoso e le nngwe} other{Ho hlakotswe ditemoso tse {count}}}"
 }

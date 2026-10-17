@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Retire objektif la",
   "alertEdit": "Modifye alèt la",
   "positionOpenLots": "Toujou genyen (pi ansyen yo anvan)",
-  "lotRemoved": "Tranzaksyon efase"
+  "lotRemoved": "Tranzaksyon efase",
+  "alertDeleted": "Alèt la efase",
+  "alertsClearTriggered": "Efase alèt ki deklanche yo",
+  "alertsCleared": "{count, plural, =1{1 alèt efase} other{{count} alèt efase}}"
 }

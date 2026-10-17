@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "લક્ષ્ય કાઢી નાખો",
   "alertEdit": "અલર્ટ એડિટ કરો",
   "positionOpenLots": "હજુ પણ ધરાવેલા (સૌથી જૂના પહેલા)",
-  "lotRemoved": "વ્યવહાર કાઢી નાખ્યો"
+  "lotRemoved": "વ્યવહાર કાઢી નાખ્યો",
+  "alertDeleted": "ચેતવણી કાઢી નાખી",
+  "alertsClearTriggered": "ટ્રિગર થયેલી ચેતવણીઓ સાફ કરો",
+  "alertsCleared": "{count, plural, =1{1 ચેતવણી સાફ કરી} other{{count} ચેતવણીઓ સાફ કરી}}"
 }

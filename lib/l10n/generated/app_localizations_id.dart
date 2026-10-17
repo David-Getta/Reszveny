@@ -2473,4 +2473,21 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Transaksi dihapus';
+
+  @override
+  String get alertDeleted => 'Peringatan dihapus';
+
+  @override
+  String get alertsClearTriggered => 'Hapus peringatan yang terpicu';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count peringatan dihapus',
+      one: '1 peringatan dihapus',
+    );
+    return '$_temp0';
+  }
 }

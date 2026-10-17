@@ -2478,4 +2478,21 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Amal pozuldy';
+
+  @override
+  String get alertDeleted => 'Duýduryş pozuldy';
+
+  @override
+  String get alertsClearTriggered => 'Işlän duýduryşlary arassala';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count duýduryş arassalandy',
+      one: '1 duýduryş arassalandy',
+    );
+    return '$_temp0';
+  }
 }

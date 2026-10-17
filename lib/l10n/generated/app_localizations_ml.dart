@@ -2487,4 +2487,21 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get lotRemoved => 'ഇടപാട് ഇല്ലാതാക്കി';
+
+  @override
+  String get alertDeleted => 'അലേർട്ട് ഇല്ലാതാക്കി';
+
+  @override
+  String get alertsClearTriggered => 'ട്രിഗർ ആയ അലേർട്ടുകൾ മായ്ക്കുക';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count അലേർട്ടുകൾ മായ്ച്ചു',
+      one: '1 അലേർട്ട് മായ്ച്ചു',
+    );
+    return '$_temp0';
+  }
 }

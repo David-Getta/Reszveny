@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Максатны бетерү",
   "alertEdit": "Искәртүне үзгәртү",
   "positionOpenLots": "Һаман сездә (башта иң искеләре)",
-  "lotRemoved": "Операция бетерелде"
+  "lotRemoved": "Операция бетерелде",
+  "alertDeleted": "Кисәтү бетерелде",
+  "alertsClearTriggered": "Эшләгән кисәтүләрне чистарту",
+  "alertsCleared": "{count, plural, =1{1 кисәтү чистартылды} other{{count} кисәтү чистартылды}}"
 }

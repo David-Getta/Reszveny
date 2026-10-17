@@ -2476,4 +2476,21 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get lotRemoved => 'A ti pa ìdúnàdúrà rẹ́';
+
+  @override
+  String get alertDeleted => 'A ti pa ìkìlọ̀ rẹ́';
+
+  @override
+  String get alertsClearTriggered => 'Pa àwọn ìkìlọ̀ tó ti ṣẹlẹ̀ rẹ́';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'A ti pa ìkìlọ̀ $count rẹ́',
+      one: 'A ti pa ìkìlọ̀ 1 rẹ́',
+    );
+    return '$_temp0';
+  }
 }

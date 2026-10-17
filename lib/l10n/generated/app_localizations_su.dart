@@ -2481,4 +2481,21 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Transaksi geus dipupus';
+
+  @override
+  String get alertDeleted => 'Pépéling geus dipupus';
+
+  @override
+  String get alertsClearTriggered => 'Pupus pépéling anu geus aktip';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pépéling dipupus',
+      one: '1 pépéling dipupus',
+    );
+    return '$_temp0';
+  }
 }

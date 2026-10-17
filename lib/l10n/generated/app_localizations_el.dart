@@ -2487,4 +2487,21 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Η συναλλαγή διαγράφηκε';
+
+  @override
+  String get alertDeleted => 'Η ειδοποίηση διαγράφηκε';
+
+  @override
+  String get alertsClearTriggered => 'Εκκαθάριση ενεργοποιημένων ειδοποιήσεων';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Διαγράφηκαν $count ειδοποιήσεις',
+      one: 'Διαγράφηκε 1 ειδοποίηση',
+    );
+    return '$_temp0';
+  }
 }

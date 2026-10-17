@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Armancê rake",
   "alertEdit": "Hişyariyê biguherîne",
   "positionOpenLots": "Hîn li ba te (yên herî kevn pêşî)",
-  "lotRemoved": "Danûstandin hate jêbirin"
+  "lotRemoved": "Danûstandin hate jêbirin",
+  "alertDeleted": "Hişyarî hate jêbirin",
+  "alertsClearTriggered": "Hişyariyên çalakbûyî paqij bike",
+  "alertsCleared": "{count, plural, =1{1 hişyarî hate paqijkirin} other{{count} hişyarî hatin paqijkirin}}"
 }

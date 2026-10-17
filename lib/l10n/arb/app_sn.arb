@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Bvisa chinangwa",
   "alertEdit": "Gadzirisa chiziviso",
   "positionOpenLots": "Zvichiri zvako (zvekare kare kutanga)",
-  "lotRemoved": "Kutenga kana kutengesa kwadzimwa"
+  "lotRemoved": "Kutenga kana kutengesa kwadzimwa",
+  "alertDeleted": "Yambiro radzimwa",
+  "alertsClearTriggered": "Dzima yambiro dzaitika",
+  "alertsCleared": "{count, plural, =1{Yambiro 1 radzimwa} other{Yambiro {count} dzadzimwa}}"
 }

@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "লক্ষ্য আঁতৰাওক",
   "alertEdit": "সতৰ্কবাণী সম্পাদনা কৰক",
   "positionOpenLots": "এতিয়াও ধৰি ৰখা (পুৰণিখিনি প্ৰথমে)",
-  "lotRemoved": "লেনদেন মচা হ'ল"
+  "lotRemoved": "লেনদেন মচা হ'ল",
+  "alertDeleted": "সতৰ্কবাণী মচা হ'ল",
+  "alertsClearTriggered": "সক্ৰিয় হোৱা সতৰ্কবাণী মচক",
+  "alertsCleared": "{count, plural, =1{1টা সতৰ্কবাণী মচা হ'ল} other{{count}টা সতৰ্কবাণী মচা হ'ল}}"
 }

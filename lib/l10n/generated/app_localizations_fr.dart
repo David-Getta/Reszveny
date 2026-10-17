@@ -2488,4 +2488,21 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Transaction supprimée';
+
+  @override
+  String get alertDeleted => 'Alerte supprimée';
+
+  @override
+  String get alertsClearTriggered => 'Effacer les alertes déclenchées';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count alertes effacées',
+      one: '1 alerte effacée',
+    );
+    return '$_temp0';
+  }
 }

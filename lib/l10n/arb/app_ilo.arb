@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Ikkaten ti panggep",
   "alertEdit": "I-edit ti alerto",
   "positionOpenLots": "Adda pay kenka (kadaanan nga umuna)",
-  "lotRemoved": "Naikkat ti transaksion"
+  "lotRemoved": "Naikkat ti transaksion",
+  "alertDeleted": "Naikkat ti pakdaar",
+  "alertsClearTriggered": "Ikkaten dagiti na-trigger a pakdaar",
+  "alertsCleared": "{count, plural, =1{Naikkat ti 1 a pakdaar} other{Naikkat ti {count} a pakdaar}}"
 }

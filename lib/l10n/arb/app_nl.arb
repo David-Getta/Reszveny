@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Doel verwijderen",
   "alertEdit": "Alert bewerken",
   "positionOpenLots": "Nog in bezit (oudste eerst)",
-  "lotRemoved": "Transactie verwijderd"
+  "lotRemoved": "Transactie verwijderd",
+  "alertDeleted": "Melding verwijderd",
+  "alertsClearTriggered": "Afgegane meldingen wissen",
+  "alertsCleared": "{count, plural, =1{1 melding gewist} other{{count} meldingen gewist}}"
 }

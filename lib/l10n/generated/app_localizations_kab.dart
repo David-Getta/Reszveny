@@ -2476,4 +2476,21 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Tiɣin neɣ uznuzu yettwakkes';
+
+  @override
+  String get alertDeleted => 'Alɣu yettwakkes';
+
+  @override
+  String get alertsClearTriggered => 'Sfeḍ ilɣuten yettwasekren';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ttwakksen $count n walɣuten',
+      one: 'Yettwakkes 1 n walɣu',
+    );
+    return '$_temp0';
+  }
 }

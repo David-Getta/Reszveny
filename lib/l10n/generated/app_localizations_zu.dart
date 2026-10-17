@@ -2487,4 +2487,21 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Ukuthenga noma ukuthengisa kususiwe';
+
+  @override
+  String get alertDeleted => 'Isexwayiso sisusiwe';
+
+  @override
+  String get alertsClearTriggered => 'Sula izexwayiso eziqalisiwe';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kususwe izexwayiso ezingu-$count',
+      one: 'Kususwe isexwayiso esisodwa',
+    );
+    return '$_temp0';
+  }
 }

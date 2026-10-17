@@ -2485,4 +2485,21 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Kusumba anyi kusumbisha kuajimijibua';
+
+  @override
+  String get alertDeleted => 'Dimanyisha diajimijibua';
+
+  @override
+  String get alertsClearTriggered => 'Jimija mamanyisha avua mambule';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Mamanyisha $count majimijibua',
+      one: 'Dimanyisha 1 diajimijibua',
+    );
+    return '$_temp0';
+  }
 }

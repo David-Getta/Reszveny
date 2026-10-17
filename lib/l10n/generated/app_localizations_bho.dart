@@ -2473,4 +2473,21 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get lotRemoved => 'लेन-देन मिटा दिहल गइल';
+
+  @override
+  String get alertDeleted => 'अलर्ट मिटा दिहल गइल';
+
+  @override
+  String get alertsClearTriggered => 'चालू भइल अलर्ट साफ करीं';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count अलर्ट साफ कइल गइल',
+      one: '1 अलर्ट साफ कइल गइल',
+    );
+    return '$_temp0';
+  }
 }

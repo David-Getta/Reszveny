@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Αφαίρεση στόχου",
   "alertEdit": "Επεξεργασία ειδοποίησης",
   "positionOpenLots": "Ακόμη σε κατοχή (πρώτα οι παλαιότερες)",
-  "lotRemoved": "Η συναλλαγή διαγράφηκε"
+  "lotRemoved": "Η συναλλαγή διαγράφηκε",
+  "alertDeleted": "Η ειδοποίηση διαγράφηκε",
+  "alertsClearTriggered": "Εκκαθάριση ενεργοποιημένων ειδοποιήσεων",
+  "alertsCleared": "{count, plural, =1{Διαγράφηκε 1 ειδοποίηση} other{Διαγράφηκαν {count} ειδοποιήσεις}}"
 }

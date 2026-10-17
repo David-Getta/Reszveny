@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Susa usukelo",
   "alertEdit": "Hlela isilumkiso",
   "positionOpenLots": "Zisekuwe (ezona zindala kuqala)",
-  "lotRemoved": "Intengiselwano icinyiwe"
+  "lotRemoved": "Intengiselwano icinyiwe",
+  "alertDeleted": "Isilumkiso sicinyiwe",
+  "alertsClearTriggered": "Cima izilumkiso eziqalisiweyo",
+  "alertsCleared": "{count, plural, =1{Kucinywe isilumkiso esinye} other{Kucinywe izilumkiso ezi-{count}}}"
 }

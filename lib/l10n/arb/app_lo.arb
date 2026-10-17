@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "ລຶບເປົ້າໝາຍ",
   "alertEdit": "ແກ້ໄຂການແຈ້ງເຕືອນ",
   "positionOpenLots": "ຍັງຖືຢູ່ (ເກົ່າສຸດກ່ອນ)",
-  "lotRemoved": "ລຶບທຸລະກຳແລ້ວ"
+  "lotRemoved": "ລຶບທຸລະກຳແລ້ວ",
+  "alertDeleted": "ລຶບການແຈ້ງເຕືອນແລ້ວ",
+  "alertsClearTriggered": "ລຶບການແຈ້ງເຕືອນທີ່ເກີດຂຶ້ນແລ້ວ",
+  "alertsCleared": "{count, plural, =1{ລຶບການແຈ້ງເຕືອນ 1 ລາຍການແລ້ວ} other{ລຶບການແຈ້ງເຕືອນ {count} ລາຍການແລ້ວ}}"
 }

@@ -2483,4 +2483,21 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Transação excluída';
+
+  @override
+  String get alertDeleted => 'Alerta excluído';
+
+  @override
+  String get alertsClearTriggered => 'Limpar alertas disparados';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count alertas removidos',
+      one: '1 alerta removido',
+    );
+    return '$_temp0';
+  }
 }

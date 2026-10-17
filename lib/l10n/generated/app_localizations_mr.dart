@@ -2477,4 +2477,21 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get lotRemoved => 'व्यवहार हटवला';
+
+  @override
+  String get alertDeleted => 'अलर्ट हटवला';
+
+  @override
+  String get alertsClearTriggered => 'ट्रिगर झालेले अलर्ट साफ करा';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count अलर्ट साफ केले',
+      one: '1 अलर्ट साफ केला',
+    );
+    return '$_temp0';
+  }
 }

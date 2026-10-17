@@ -2516,4 +2516,22 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Tranzacția a fost ștearsă';
+
+  @override
+  String get alertDeleted => 'Alerta a fost ștearsă';
+
+  @override
+  String get alertsClearTriggered => 'Șterge alertele declanșate';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Au fost șterse $count de alerte',
+      few: 'Au fost șterse $count alerte',
+      one: 'A fost ștearsă $count alertă',
+    );
+    return '$_temp0';
+  }
 }

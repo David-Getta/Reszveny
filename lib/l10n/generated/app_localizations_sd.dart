@@ -2469,4 +2469,21 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get lotRemoved => 'ليڻ دين ميٽيو ويو';
+
+  @override
+  String get alertDeleted => 'الرٽ ميٽيو ويو';
+
+  @override
+  String get alertsClearTriggered => 'ٽرگر ٿيل الرٽ صاف ڪريو';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count الرٽ صاف ڪيا ويا',
+      one: '1 الرٽ صاف ڪيو ويو',
+    );
+    return '$_temp0';
+  }
 }

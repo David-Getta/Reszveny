@@ -4296,6 +4296,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Transaction deleted'**
   String get lotRemoved;
+
+  /// No description provided for @alertDeleted.
+  ///
+  /// In en, this message translates to:
+  /// **'Alert deleted'**
+  String get alertDeleted;
+
+  /// No description provided for @alertsClearTriggered.
+  ///
+  /// In en, this message translates to:
+  /// **'Clear triggered alerts'**
+  String get alertsClearTriggered;
+
+  /// Snackbar after removing all triggered alerts (with Undo).
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 alert cleared} other{{count} alerts cleared}}'**
+  String alertsCleared(int count);
 }
 
 class _AppLocalizationsDelegate

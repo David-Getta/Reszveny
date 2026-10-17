@@ -2476,4 +2476,21 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Tranzaksyon efase';
+
+  @override
+  String get alertDeleted => 'Alèt la efase';
+
+  @override
+  String get alertsClearTriggered => 'Efase alèt ki deklanche yo';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count alèt efase',
+      one: '1 alèt efase',
+    );
+    return '$_temp0';
+  }
 }

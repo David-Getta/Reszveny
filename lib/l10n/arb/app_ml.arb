@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "ലക്ഷ്യം നീക്കം ചെയ്യുക",
   "alertEdit": "അലേർട്ട് എഡിറ്റ് ചെയ്യുക",
   "positionOpenLots": "ഇപ്പോഴും കൈവശമുള്ളവ (പഴയവ ആദ്യം)",
-  "lotRemoved": "ഇടപാട് ഇല്ലാതാക്കി"
+  "lotRemoved": "ഇടപാട് ഇല്ലാതാക്കി",
+  "alertDeleted": "അലേർട്ട് ഇല്ലാതാക്കി",
+  "alertsClearTriggered": "ട്രിഗർ ആയ അലേർട്ടുകൾ മായ്ക്കുക",
+  "alertsCleared": "{count, plural, =1{1 അലേർട്ട് മായ്ച്ചു} other{{count} അലേർട്ടുകൾ മായ്ച്ചു}}"
 }

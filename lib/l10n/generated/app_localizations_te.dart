@@ -2483,4 +2483,21 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get lotRemoved => 'లావాదేవీ తొలగించబడింది';
+
+  @override
+  String get alertDeleted => 'అలర్ట్ తొలగించబడింది';
+
+  @override
+  String get alertsClearTriggered => 'ట్రిగ్గర్ అయిన అలర్ట్‌లను క్లియర్ చేయండి';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count అలర్ట్‌లు క్లియర్ చేయబడ్డాయి',
+      one: '1 అలర్ట్ క్లియర్ చేయబడింది',
+    );
+    return '$_temp0';
+  }
 }

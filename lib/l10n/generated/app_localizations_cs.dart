@@ -2538,4 +2538,23 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Transakce smazána';
+
+  @override
+  String get alertDeleted => 'Upozornění smazáno';
+
+  @override
+  String get alertsClearTriggered => 'Vymazat spuštěná upozornění';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Vymazáno $count upozornění',
+      many: 'Vymazáno $count upozornění',
+      few: 'Vymazána $count upozornění',
+      one: 'Vymazáno 1 upozornění',
+    );
+    return '$_temp0';
+  }
 }

@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Удалить цель",
   "alertEdit": "Изменить оповещение",
   "positionOpenLots": "Ещё в портфеле (сначала самые ранние)",
-  "lotRemoved": "Сделка удалена"
+  "lotRemoved": "Сделка удалена",
+  "alertDeleted": "Оповещение удалено",
+  "alertsClearTriggered": "Очистить сработавшие оповещения",
+  "alertsCleared": "{count, plural, =1{Удалено 1 оповещение} one{Удалено {count} оповещение} few{Удалено {count} оповещения} many{Удалено {count} оповещений} other{Удалено {count} оповещения}}"
 }

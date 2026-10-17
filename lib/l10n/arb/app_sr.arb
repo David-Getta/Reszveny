@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Уклони циљ",
   "alertEdit": "Уреди обавештење",
   "positionOpenLots": "Још у поседу (прво најстарије)",
-  "lotRemoved": "Трансакција је обрисана"
+  "lotRemoved": "Трансакција је обрисана",
+  "alertDeleted": "Упозорење је обрисано",
+  "alertsClearTriggered": "Обриши активирана упозорења",
+  "alertsCleared": "{count, plural, =1{Обрисано је 1 упозорење} one{Обрисано је {count} упозорење} few{Обрисана су {count} упозорења} other{Обрисано је {count} упозорења}}"
 }

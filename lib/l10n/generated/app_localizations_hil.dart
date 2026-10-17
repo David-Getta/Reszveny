@@ -2492,4 +2492,21 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Napanas ang transaksyon';
+
+  @override
+  String get alertDeleted => 'Napanas ang alerto';
+
+  @override
+  String get alertsClearTriggered => 'Panasa ang mga na-trigger nga alerto';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Napanas ang $count ka alerto',
+      one: 'Napanas ang 1 ka alerto',
+    );
+    return '$_temp0';
+  }
 }

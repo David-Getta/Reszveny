@@ -2492,4 +2492,21 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Theko kapa thekiso e hlakotswe';
+
+  @override
+  String get alertDeleted => 'Temoso e hlakotswe';
+
+  @override
+  String get alertsClearTriggered => 'Hlakola ditemoso tse etsahetseng';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ho hlakotswe ditemoso tse $count',
+      one: 'Ho hlakotswe temoso e le nngwe',
+    );
+    return '$_temp0';
+  }
 }

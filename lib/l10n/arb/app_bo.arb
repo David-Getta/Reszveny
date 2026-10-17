@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "དམིགས་ཚད་སུབ",
   "alertEdit": "ཉེན་བརྡ་རྩོམ་སྒྲིག",
   "positionOpenLots": "ད་དུང་ཉར་ཡོད་པ། (རྙིང་ཤོས་སྔོན་ལ།)",
-  "lotRemoved": "ཉོ་འཚོང་བསུབས་ཟིན"
+  "lotRemoved": "ཉོ་འཚོང་བསུབས་ཟིན",
+  "alertDeleted": "ཉེན་བརྡ་བསུབས་ཟིན",
+  "alertsClearTriggered": "འགུལ་སློང་བྱུང་བའི་ཉེན་བརྡ་གཙང་སེལ",
+  "alertsCleared": "{count, plural, =1{ཉེན་བརྡ་ 1 བསུབས་ཟིན།} other{ཉེན་བརྡ་ {count} བསུབས་ཟིན།}}"
 }

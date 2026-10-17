@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "მიზნის წაშლა",
   "alertEdit": "შეტყობინების რედაქტირება",
   "positionOpenLots": "კვლავ თქვენს ხელთ (ჯერ უძველესი)",
-  "lotRemoved": "ტრანზაქცია წაიშალა"
+  "lotRemoved": "ტრანზაქცია წაიშალა",
+  "alertDeleted": "გაფრთხილება წაიშალა",
+  "alertsClearTriggered": "ამოქმედებული გაფრთხილებების გასუფთავება",
+  "alertsCleared": "{count, plural, =1{წაიშალა 1 გაფრთხილება} other{წაიშალა {count} გაფრთხილება}}"
 }

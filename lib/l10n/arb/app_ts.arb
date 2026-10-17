@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Susa xikongomelo",
   "alertEdit": "Cinca xitiviso",
   "positionOpenLots": "Swa ha ri swa wena (swa khale ku sungula)",
-  "lotRemoved": "Xixaviwa kumbe xixavisiwa xi suriwile"
+  "lotRemoved": "Xixaviwa kumbe xixavisiwa xi suriwile",
+  "alertDeleted": "Xitsundzuxo xi suriwile",
+  "alertsClearTriggered": "Sula switsundzuxo leswi humeleleke",
+  "alertsCleared": "{count, plural, =1{Ku suriwe xitsundzuxo xin'we} other{Ku suriwe switsundzuxo swa {count}}}"
 }

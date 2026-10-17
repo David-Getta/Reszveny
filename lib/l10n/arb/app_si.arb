@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "ඉලක්කය ඉවත් කරන්න",
   "alertEdit": "ඇඟවීම සංස්කරණය කරන්න",
   "positionOpenLots": "තවමත් ඔබ සතු (පැරණිතම ඒවා පළමුව)",
-  "lotRemoved": "ගනුදෙනුව මකා දමන ලදී"
+  "lotRemoved": "ගනුදෙනුව මකා දමන ලදී",
+  "alertDeleted": "ඇඟවීම මකා දමන ලදී",
+  "alertsClearTriggered": "ක්‍රියාත්මක වූ ඇඟවීම් හිස් කරන්න",
+  "alertsCleared": "{count, plural, =1{ඇඟවීමක් ඉවත් කළා} other{ඇඟවීම් {count}ක් ඉවත් කළා}}"
 }

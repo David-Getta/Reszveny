@@ -2492,4 +2492,21 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Rantiy rantikuyqa pichasqaña';
+
+  @override
+  String get alertDeleted => 'Willay pichasqaña';
+
+  @override
+  String get alertsClearTriggered => 'Rikhurirqan willaykunata pichay';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count willay pichasqa',
+      one: '1 willay pichasqa',
+    );
+    return '$_temp0';
+  }
 }

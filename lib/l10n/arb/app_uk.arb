@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Видалити ціль",
   "alertEdit": "Редагувати сповіщення",
   "positionOpenLots": "Ще в портфелі (спершу найдавніші)",
-  "lotRemoved": "Операцію видалено"
+  "lotRemoved": "Операцію видалено",
+  "alertDeleted": "Сповіщення видалено",
+  "alertsClearTriggered": "Очистити спрацьовані сповіщення",
+  "alertsCleared": "{count, plural, =1{Видалено 1 сповіщення} one{Видалено {count} сповіщення} few{Видалено {count} сповіщення} many{Видалено {count} сповіщень} other{Видалено {count} сповіщення}}"
 }

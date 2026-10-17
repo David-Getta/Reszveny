@@ -2483,4 +2483,21 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get lotRemoved => 'An share ma\'amala';
+
+  @override
+  String get alertDeleted => 'An share faɗakarwa';
+
+  @override
+  String get alertsClearTriggered => 'Share faɗakarwar da suka tashi';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'An share faɗakarwa $count',
+      one: 'An share faɗakarwa 1',
+    );
+    return '$_temp0';
+  }
 }

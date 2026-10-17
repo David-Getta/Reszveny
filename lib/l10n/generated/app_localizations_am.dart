@@ -2445,4 +2445,21 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get lotRemoved => 'ግብይቱ ተሰርዟል';
+
+  @override
+  String get alertDeleted => 'ማንቂያ ተሰርዟል';
+
+  @override
+  String get alertsClearTriggered => 'የተቀሰቀሱ ማንቂያዎችን አጽዳ';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ማንቂያዎች ተሰርዘዋል',
+      one: '1 ማንቂያ ተሰርዟል',
+    );
+    return '$_temp0';
+  }
 }

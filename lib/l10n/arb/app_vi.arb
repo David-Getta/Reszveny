@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Xóa mục tiêu",
   "alertEdit": "Sửa cảnh báo",
   "positionOpenLots": "Vẫn đang nắm giữ (cũ nhất trước)",
-  "lotRemoved": "Đã xóa giao dịch"
+  "lotRemoved": "Đã xóa giao dịch",
+  "alertDeleted": "Đã xóa cảnh báo",
+  "alertsClearTriggered": "Xóa các cảnh báo đã kích hoạt",
+  "alertsCleared": "{count, plural, =1{Đã xóa 1 cảnh báo} other{Đã xóa {count} cảnh báo}}"
 }

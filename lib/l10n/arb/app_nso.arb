@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Tloša maikemišetšo",
   "alertEdit": "Lokiša temošo",
   "positionOpenLots": "Sa le go wena (tša kgale pele)",
-  "lotRemoved": "Thekišano e phumotšwe"
+  "lotRemoved": "Thekišano e phumotšwe",
+  "alertDeleted": "Temošo e phumotšwe",
+  "alertsClearTriggered": "Phumola ditemošo tše di diragetšego",
+  "alertsCleared": "{count, plural, =1{Go phumotšwe temošo e 1} other{Go phumotšwe ditemošo tše {count}}}"
 }

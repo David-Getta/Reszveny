@@ -2489,4 +2489,21 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Bosombi to boteki elimwisami';
+
+  @override
+  String get alertDeleted => 'Likebisi elimwisami';
+
+  @override
+  String get alertsClearTriggered => 'Limwisa makebisi oyo esalaki';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Makebisi $count elimwisami',
+      one: 'Likebisi 1 elimwisami',
+    );
+    return '$_temp0';
+  }
 }

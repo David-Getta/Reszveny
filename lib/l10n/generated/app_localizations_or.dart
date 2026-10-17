@@ -2475,4 +2475,21 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get lotRemoved => 'କାରବାର ଡିଲିଟ ହେଲା';
+
+  @override
+  String get alertDeleted => 'ସତର୍କତା ଡିଲିଟ ହେଲା';
+
+  @override
+  String get alertsClearTriggered => 'ଟ୍ରିଗର ହୋଇଥିବା ସତର୍କତା ସଫା କରନ୍ତୁ';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countଟି ସତର୍କତା ସଫା ହେଲା',
+      one: '1ଟି ସତର୍କତା ସଫା ହେଲା',
+    );
+    return '$_temp0';
+  }
 }

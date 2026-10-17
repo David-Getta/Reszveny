@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Yọ àfojúsùn kúrò",
   "alertEdit": "Ṣàtúnṣe ìkìlọ̀",
   "positionOpenLots": "Ṣì wà lọ́wọ́ rẹ (èyí tó pẹ́ jù lọ kọ́kọ́)",
-  "lotRemoved": "A ti pa ìdúnàdúrà rẹ́"
+  "lotRemoved": "A ti pa ìdúnàdúrà rẹ́",
+  "alertDeleted": "A ti pa ìkìlọ̀ rẹ́",
+  "alertsClearTriggered": "Pa àwọn ìkìlọ̀ tó ti ṣẹlẹ̀ rẹ́",
+  "alertsCleared": "{count, plural, =1{A ti pa ìkìlọ̀ 1 rẹ́} other{A ti pa ìkìlọ̀ {count} rẹ́}}"
 }

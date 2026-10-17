@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Maqsadni olib tashlash",
   "alertEdit": "Bildirishnomani tahrirlash",
   "positionOpenLots": "Hali ham qoʻlingizda (avval eng eskilari)",
-  "lotRemoved": "Operatsiya oʻchirildi"
+  "lotRemoved": "Operatsiya oʻchirildi",
+  "alertDeleted": "Ogohlantirish oʻchirildi",
+  "alertsClearTriggered": "Ishga tushgan ogohlantirishlarni tozalash",
+  "alertsCleared": "{count, plural, =1{1 ta ogohlantirish tozalandi} other{{count} ta ogohlantirish tozalandi}}"
 }

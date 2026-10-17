@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Hapus target",
   "alertEdit": "Robah béwara",
   "positionOpenLots": "Masih dicekel (nu pangkolotna heula)",
-  "lotRemoved": "Transaksi geus dipupus"
+  "lotRemoved": "Transaksi geus dipupus",
+  "alertDeleted": "Pépéling geus dipupus",
+  "alertsClearTriggered": "Pupus pépéling anu geus aktip",
+  "alertsCleared": "{count, plural, =1{1 pépéling dipupus} other{{count} pépéling dipupus}}"
 }

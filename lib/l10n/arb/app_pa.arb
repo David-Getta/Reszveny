@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "ਟੀਚਾ ਹਟਾਓ",
   "alertEdit": "ਅਲਰਟ ਸੋਧੋ",
   "positionOpenLots": "ਅਜੇ ਵੀ ਤੁਹਾਡੇ ਕੋਲ (ਸਭ ਤੋਂ ਪੁਰਾਣੀਆਂ ਪਹਿਲਾਂ)",
-  "lotRemoved": "ਲੈਣ-ਦੇਣ ਮਿਟਾਇਆ ਗਿਆ"
+  "lotRemoved": "ਲੈਣ-ਦੇਣ ਮਿਟਾਇਆ ਗਿਆ",
+  "alertDeleted": "ਅਲਰਟ ਮਿਟਾਇਆ ਗਿਆ",
+  "alertsClearTriggered": "ਟ੍ਰਿਗਰ ਹੋਏ ਅਲਰਟ ਸਾਫ਼ ਕਰੋ",
+  "alertsCleared": "{count, plural, =1{1 ਅਲਰਟ ਸਾਫ਼ ਕੀਤਾ} other{{count} ਅਲਰਟ ਸਾਫ਼ ਕੀਤੇ}}"
 }

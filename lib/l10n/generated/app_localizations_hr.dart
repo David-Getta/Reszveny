@@ -2521,4 +2521,22 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Transakcija izbrisana';
+
+  @override
+  String get alertDeleted => 'Upozorenje je izbrisano';
+
+  @override
+  String get alertsClearTriggered => 'Izbriši aktivirana upozorenja';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Izbrisano je $count upozorenja',
+      few: 'Izbrisana su $count upozorenja',
+      one: 'Izbrisano je $count upozorenje',
+    );
+    return '$_temp0';
+  }
 }

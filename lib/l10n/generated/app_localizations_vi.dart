@@ -2471,4 +2471,21 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Đã xóa giao dịch';
+
+  @override
+  String get alertDeleted => 'Đã xóa cảnh báo';
+
+  @override
+  String get alertsClearTriggered => 'Xóa các cảnh báo đã kích hoạt';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Đã xóa $count cảnh báo',
+      one: 'Đã xóa 1 cảnh báo',
+    );
+    return '$_temp0';
+  }
 }

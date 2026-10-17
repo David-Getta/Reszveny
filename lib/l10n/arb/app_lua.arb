@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Umbusha tshipatshila",
   "alertEdit": "Shintulula alerte",
   "positionOpenLots": "Bidi anu ne bebe (bia kale kumpala)",
-  "lotRemoved": "Kusumba anyi kusumbisha kuajimijibua"
+  "lotRemoved": "Kusumba anyi kusumbisha kuajimijibua",
+  "alertDeleted": "Dimanyisha diajimijibua",
+  "alertsClearTriggered": "Jimija mamanyisha avua mambule",
+  "alertsCleared": "{count, plural, =1{Dimanyisha 1 diajimijibua} other{Mamanyisha {count} majimijibua}}"
 }

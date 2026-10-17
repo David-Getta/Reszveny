@@ -2471,4 +2471,21 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get lotRemoved => 'लेन-देन मेटाओल गेल';
+
+  @override
+  String get alertDeleted => 'अलर्ट मेटाओल गेल';
+
+  @override
+  String get alertsClearTriggered => 'ट्रिगर भेल अलर्ट साफ करू';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count अलर्ट साफ कएल गेल',
+      one: '1 अलर्ट साफ कएल गेल',
+    );
+    return '$_temp0';
+  }
 }

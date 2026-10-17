@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Отстрани ја целта",
   "alertEdit": "Уреди известување",
   "positionOpenLots": "Сè уште во сопственост (прво најстарите)",
-  "lotRemoved": "Трансакцијата е избришана"
+  "lotRemoved": "Трансакцијата е избришана",
+  "alertDeleted": "Известувањето е избришано",
+  "alertsClearTriggered": "Исчисти ги активираните известувања",
+  "alertsCleared": "{count, plural, =1{Исчистено е 1 известување} one{Исчистено е {count} известување} other{Исчистени се {count} известувања}}"
 }

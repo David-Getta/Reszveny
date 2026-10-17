@@ -2493,4 +2493,21 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Thekišano e phumotšwe';
+
+  @override
+  String get alertDeleted => 'Temošo e phumotšwe';
+
+  @override
+  String get alertsClearTriggered => 'Phumola ditemošo tše di diragetšego';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Go phumotšwe ditemošo tše $count',
+      one: 'Go phumotšwe temošo e 1',
+    );
+    return '$_temp0';
+  }
 }

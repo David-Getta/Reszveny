@@ -2480,4 +2480,21 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Transaksi wis dibusak';
+
+  @override
+  String get alertDeleted => 'Pènget wis dibusak';
+
+  @override
+  String get alertsClearTriggered => 'Busak pènget sing wis aktif';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pènget wis dibusak',
+      one: '1 pènget wis dibusak',
+    );
+    return '$_temp0';
+  }
 }

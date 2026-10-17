@@ -2479,4 +2479,21 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Danûstandin hate jêbirin';
+
+  @override
+  String get alertDeleted => 'Hişyarî hate jêbirin';
+
+  @override
+  String get alertsClearTriggered => 'Hişyariyên çalakbûyî paqij bike';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hişyarî hatin paqijkirin',
+      one: '1 hişyarî hate paqijkirin',
+    );
+    return '$_temp0';
+  }
 }

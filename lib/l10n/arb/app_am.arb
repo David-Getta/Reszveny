@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "ግቡን አስወግድ",
   "alertEdit": "ማንቂያ አርትዕ",
   "positionOpenLots": "አሁንም የተያዙ (የቀደሙት መጀመሪያ)",
-  "lotRemoved": "ግብይቱ ተሰርዟል"
+  "lotRemoved": "ግብይቱ ተሰርዟል",
+  "alertDeleted": "ማንቂያ ተሰርዟል",
+  "alertsClearTriggered": "የተቀሰቀሱ ማንቂያዎችን አጽዳ",
+  "alertsCleared": "{count, plural, =1{1 ማንቂያ ተሰርዟል} other{{count} ማንቂያዎች ተሰርዘዋል}}"
 }

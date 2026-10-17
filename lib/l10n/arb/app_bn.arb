@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "লক্ষ্য সরান",
   "alertEdit": "সতর্কতা সম্পাদনা করুন",
   "positionOpenLots": "এখনও ধরে রাখা (সবচেয়ে পুরোনো আগে)",
-  "lotRemoved": "লেনদেন মুছে ফেলা হয়েছে"
+  "lotRemoved": "লেনদেন মুছে ফেলা হয়েছে",
+  "alertDeleted": "সতর্কতা মুছে ফেলা হয়েছে",
+  "alertsClearTriggered": "ট্রিগার হওয়া সতর্কতা মুছুন",
+  "alertsCleared": "{count, plural, =1{1টি সতর্কতা মুছে ফেলা হয়েছে} other{{count}টি সতর্কতা মুছে ফেলা হয়েছে}}"
 }

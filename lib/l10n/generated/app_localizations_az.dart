@@ -2480,4 +2480,21 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Əməliyyat silindi';
+
+  @override
+  String get alertDeleted => 'Xəbərdarlıq silindi';
+
+  @override
+  String get alertsClearTriggered => 'İşə düşmüş xəbərdarlıqları təmizlə';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count xəbərdarlıq təmizləndi',
+      one: '1 xəbərdarlıq təmizləndi',
+    );
+    return '$_temp0';
+  }
 }

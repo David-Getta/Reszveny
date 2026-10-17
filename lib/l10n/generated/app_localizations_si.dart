@@ -2475,4 +2475,21 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get lotRemoved => 'ගනුදෙනුව මකා දමන ලදී';
+
+  @override
+  String get alertDeleted => 'ඇඟවීම මකා දමන ලදී';
+
+  @override
+  String get alertsClearTriggered => 'ක්‍රියාත්මක වූ ඇඟවීම් හිස් කරන්න';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ඇඟවීම් $countක් ඉවත් කළා',
+      one: 'ඇඟවීමක් ඉවත් කළා',
+    );
+    return '$_temp0';
+  }
 }

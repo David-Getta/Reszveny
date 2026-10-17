@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Ruta muoroto",
   "alertEdit": "Garũra kĩmenyithia",
   "positionOpenLots": "Ũrĩ naguo o na rĩu (ma tene mbere)",
-  "lotRemoved": "Ũgũri kana ũendia weherio"
+  "lotRemoved": "Ũgũri kana ũendia weherio",
+  "alertDeleted": "Mũmenyithia nĩ weherio",
+  "alertsClearTriggered": "Eheria mĩmenyithia ĩrĩa yaambĩrĩirie",
+  "alertsCleared": "{count, plural, =1{Mũmenyithia 1 nĩ weherio} other{Mĩmenyithia {count} nĩ yeherio}}"
 }

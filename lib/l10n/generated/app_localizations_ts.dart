@@ -2494,4 +2494,21 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Xixaviwa kumbe xixavisiwa xi suriwile';
+
+  @override
+  String get alertDeleted => 'Xitsundzuxo xi suriwile';
+
+  @override
+  String get alertsClearTriggered => 'Sula switsundzuxo leswi humeleleke';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ku suriwe switsundzuxo swa $count',
+      one: 'Ku suriwe xitsundzuxo xin\'we',
+    );
+    return '$_temp0';
+  }
 }

@@ -2484,4 +2484,21 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Transaksioni u fshi';
+
+  @override
+  String get alertDeleted => 'Sinjalizimi u fshi';
+
+  @override
+  String get alertsClearTriggered => 'Pastro sinjalizimet e aktivizuara';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'U pastruan $count sinjalizime',
+      one: 'U pastrua 1 sinjalizim',
+    );
+    return '$_temp0';
+  }
 }

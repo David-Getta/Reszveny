@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Yiis raabã",
   "alertEdit": "Toeem gũusgo",
   "positionOpenLots": "F ne-a hal masã (kʋdemdã n deng)",
-  "lotRemoved": "Raabã bɩ koosgã yẽesame"
+  "lotRemoved": "Raabã bɩ koosgã yẽesame",
+  "alertDeleted": "Kibay yẽesame",
+  "alertsClearTriggered": "Yẽes kibay nins sẽn yikã",
+  "alertsCleared": "{count, plural, =1{B yẽesame kibay a yembre} other{B yẽesame kibay {count}}}"
 }

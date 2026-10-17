@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "حذف هدف",
   "alertEdit": "ویرایش هشدار",
   "positionOpenLots": "هنوز در اختیار (قدیمی‌ترین‌ها اول)",
-  "lotRemoved": "تراکنش حذف شد"
+  "lotRemoved": "تراکنش حذف شد",
+  "alertDeleted": "هشدار حذف شد",
+  "alertsClearTriggered": "پاک کردن هشدارهای فعال‌شده",
+  "alertsCleared": "{count, plural, =1{1 هشدار پاک شد} other{{count} هشدار پاک شد}}"
 }

@@ -2399,4 +2399,21 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get lotRemoved => '取引を削除しました';
+
+  @override
+  String get alertDeleted => 'アラートを削除しました';
+
+  @override
+  String get alertsClearTriggered => '作動済みのアラートを消去';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 件のアラートを消去しました',
+      one: '1 件のアラートを消去しました',
+    );
+    return '$_temp0';
+  }
 }

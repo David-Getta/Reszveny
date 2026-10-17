@@ -2487,4 +2487,21 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get lotRemoved => 'பரிவர்த்தனை நீக்கப்பட்டது';
+
+  @override
+  String get alertDeleted => 'எச்சரிக்கை நீக்கப்பட்டது';
+
+  @override
+  String get alertsClearTriggered => 'தூண்டப்பட்ட எச்சரிக்கைகளை அழி';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count எச்சரிக்கைகள் அழிக்கப்பட்டன',
+      one: '1 எச்சரிக்கை அழிக்கப்பட்டது',
+    );
+    return '$_temp0';
+  }
 }

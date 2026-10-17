@@ -2478,4 +2478,21 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Ũgũri kana ũendia weherio';
+
+  @override
+  String get alertDeleted => 'Mũmenyithia nĩ weherio';
+
+  @override
+  String get alertsClearTriggered => 'Eheria mĩmenyithia ĩrĩa yaambĩrĩirie';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Mĩmenyithia $count nĩ yeherio',
+      one: 'Mũmenyithia 1 nĩ weherio',
+    );
+    return '$_temp0';
+  }
 }

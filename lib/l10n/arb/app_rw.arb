@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Kuramo intego",
   "alertEdit": "Hindura imenyesha",
   "positionOpenLots": "Ibyo ugifite (ibya kera mbere)",
-  "lotRemoved": "Igikorwa cyo kugura cyangwa kugurisha cyasibwe"
+  "lotRemoved": "Igikorwa cyo kugura cyangwa kugurisha cyasibwe",
+  "alertDeleted": "Imenyesha ryasibwe",
+  "alertsClearTriggered": "Siba amamenyesha yabaye",
+  "alertsCleared": "{count, plural, =1{Hasibwe imenyesha 1} other{Hasibwe amamenyesha {count}}}"
 }

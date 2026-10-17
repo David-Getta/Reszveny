@@ -2479,4 +2479,21 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Транзакцията е изтрита';
+
+  @override
+  String get alertDeleted => 'Известието е изтрито';
+
+  @override
+  String get alertsClearTriggered => 'Изчисти задействаните известия';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Изчистени са $count известия',
+      one: 'Изчистено е 1 известие',
+    );
+    return '$_temp0';
+  }
 }

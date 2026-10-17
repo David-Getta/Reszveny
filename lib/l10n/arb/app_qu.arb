@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Hayparinata hurquy",
   "alertEdit": "Willachiyta allichay",
   "positionOpenLots": "Kunankama hap'isqa (aswan ñawpaqkuna ñawpaqta)",
-  "lotRemoved": "Rantiy rantikuyqa pichasqaña"
+  "lotRemoved": "Rantiy rantikuyqa pichasqaña",
+  "alertDeleted": "Willay pichasqaña",
+  "alertsClearTriggered": "Rikhurirqan willaykunata pichay",
+  "alertsCleared": "{count, plural, =1{1 willay pichasqa} other{{count} willay pichasqa}}"
 }

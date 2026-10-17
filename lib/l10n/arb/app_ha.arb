@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Cire buri",
   "alertEdit": "Gyara faɗakarwa",
   "positionOpenLots": "Har yanzu a hannunka (mafi tsufa da farko)",
-  "lotRemoved": "An share ma'amala"
+  "lotRemoved": "An share ma'amala",
+  "alertDeleted": "An share faɗakarwa",
+  "alertsClearTriggered": "Share faɗakarwar da suka tashi",
+  "alertsCleared": "{count, plural, =1{An share faɗakarwa 1} other{An share faɗakarwa {count}}}"
 }

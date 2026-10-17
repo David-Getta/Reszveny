@@ -2472,4 +2472,21 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Soodgol walla yeeyugol momtaama';
+
+  @override
+  String get alertDeleted => 'Jeertinol momtaama';
+
+  @override
+  String get alertsClearTriggered => 'Momtu jeertine ɗe huwi';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Jeertine $count momtaama',
+      one: 'Jeertinol 1 momtaama',
+    );
+    return '$_temp0';
+  }
 }

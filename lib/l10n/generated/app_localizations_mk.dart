@@ -2497,4 +2497,21 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Трансакцијата е избришана';
+
+  @override
+  String get alertDeleted => 'Известувањето е избришано';
+
+  @override
+  String get alertsClearTriggered => 'Исчисти ги активираните известувања';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Исчистени се $count известувања',
+      one: 'Исчистено е $count известување',
+    );
+    return '$_temp0';
+  }
 }

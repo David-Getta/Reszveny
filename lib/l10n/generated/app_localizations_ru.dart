@@ -2545,4 +2545,23 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Сделка удалена';
+
+  @override
+  String get alertDeleted => 'Оповещение удалено';
+
+  @override
+  String get alertsClearTriggered => 'Очистить сработавшие оповещения';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Удалено $count оповещения',
+      many: 'Удалено $count оповещений',
+      few: 'Удалено $count оповещения',
+      one: 'Удалено $count оповещение',
+    );
+    return '$_temp0';
+  }
 }

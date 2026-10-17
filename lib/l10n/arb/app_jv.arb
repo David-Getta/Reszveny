@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Busak target",
   "alertEdit": "Owahi pèngetan",
   "positionOpenLots": "Isih dicekel (sing paling lawas dhisik)",
-  "lotRemoved": "Transaksi wis dibusak"
+  "lotRemoved": "Transaksi wis dibusak",
+  "alertDeleted": "Pènget wis dibusak",
+  "alertsClearTriggered": "Busak pènget sing wis aktif",
+  "alertsCleared": "{count, plural, =1{1 pènget wis dibusak} other{{count} pènget wis dibusak}}"
 }

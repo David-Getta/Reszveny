@@ -2478,4 +2478,21 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Di buy or sell don delete';
+
+  @override
+  String get alertDeleted => 'Alert don delete';
+
+  @override
+  String get alertsClearTriggered => 'Clear alerts wey don ring';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'We don clear $count alerts',
+      one: 'We don clear $count alert',
+    );
+    return '$_temp0';
+  }
 }

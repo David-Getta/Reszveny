@@ -2483,4 +2483,21 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Kutenga kana kutengesa kwadzimwa';
+
+  @override
+  String get alertDeleted => 'Yambiro radzimwa';
+
+  @override
+  String get alertsClearTriggered => 'Dzima yambiro dzaitika';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Yambiro $count dzadzimwa',
+      one: 'Yambiro 1 radzimwa',
+    );
+    return '$_temp0';
+  }
 }

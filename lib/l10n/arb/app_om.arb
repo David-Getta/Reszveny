@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Kaayyoo haqi",
   "alertEdit": "Akeekkachiisa gulaali",
   "positionOpenLots": "Ammas harka kee jira (kan durii jalqaba)",
-  "lotRemoved": "Bittaan ykn gurgurtaan haqameera"
+  "lotRemoved": "Bittaan ykn gurgurtaan haqameera",
+  "alertDeleted": "Akeekkachiisni haqameera",
+  "alertsClearTriggered": "Akeekkachiisota ka'an haqi",
+  "alertsCleared": "{count, plural, =1{Akeekkachiisni 1 haqameera} other{Akeekkachiisni {count} haqamaniiru}}"
 }

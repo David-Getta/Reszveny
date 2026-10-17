@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Alih keluar sasaran",
   "alertEdit": "Edit amaran",
   "positionOpenLots": "Masih dipegang (tertua dahulu)",
-  "lotRemoved": "Transaksi dipadam"
+  "lotRemoved": "Transaksi dipadam",
+  "alertDeleted": "Amaran dipadam",
+  "alertsClearTriggered": "Padam amaran yang dicetuskan",
+  "alertsCleared": "{count, plural, =1{1 amaran dipadam} other{{count} amaran dipadam}}"
 }

@@ -2479,4 +2479,21 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Гүйлгээг устгалаа';
+
+  @override
+  String get alertDeleted => 'Сэрэмжлүүлэг устгалаа';
+
+  @override
+  String get alertsClearTriggered => 'Идэвхжсэн сэрэмжлүүлгийг цэвэрлэх';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count сэрэмжлүүлэг цэвэрлэлээ',
+      one: '1 сэрэмжлүүлэг цэвэрлэлээ',
+    );
+    return '$_temp0';
+  }
 }

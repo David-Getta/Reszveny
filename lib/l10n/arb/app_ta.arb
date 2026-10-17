@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "இலக்கை நீக்கு",
   "alertEdit": "எச்சரிக்கையைத் திருத்து",
   "positionOpenLots": "இன்னும் வைத்திருப்பவை (பழையவை முதலில்)",
-  "lotRemoved": "பரிவர்த்தனை நீக்கப்பட்டது"
+  "lotRemoved": "பரிவர்த்தனை நீக்கப்பட்டது",
+  "alertDeleted": "எச்சரிக்கை நீக்கப்பட்டது",
+  "alertsClearTriggered": "தூண்டப்பட்ட எச்சரிக்கைகளை அழி",
+  "alertsCleared": "{count, plural, =1{1 எச்சரிக்கை அழிக்கப்பட்டது} other{{count} எச்சரிக்கைகள் அழிக்கப்பட்டன}}"
 }

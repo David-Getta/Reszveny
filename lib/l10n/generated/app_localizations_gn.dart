@@ -2483,4 +2483,21 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Oñemboguete jejogua térã ñemu';
+
+  @override
+  String get alertDeleted => 'Oñemboguete momarandu';
+
+  @override
+  String get alertsClearTriggered => 'Embogue momarandu oñemyendyvaʼekue';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Oñemboguete $count momarandu',
+      one: 'Oñemboguete 1 momarandu',
+    );
+    return '$_temp0';
+  }
 }

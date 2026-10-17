@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Tlosa maikaelelo",
   "alertEdit": "Fetola kitsiso",
   "positionOpenLots": "Tse o santse o na le tsone (tsa bogologolo pele)",
-  "lotRemoved": "Theko kgotsa thekiso e phimotswe"
+  "lotRemoved": "Theko kgotsa thekiso e phimotswe",
+  "alertDeleted": "Tlhagiso e phimotswe",
+  "alertsClearTriggered": "Phimola ditlhagiso tse di diragetseng",
+  "alertsCleared": "{count, plural, =1{Go phimotswe tlhagiso e le nngwe} other{Go phimotswe ditlhagiso di le {count}}}"
 }

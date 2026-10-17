@@ -310,9 +310,21 @@ class AlertTile extends StatelessWidget {
               onPressed: () => services.alerts.rearm(a.id),
             ),
           IconButton(
+            key: ValueKey('alert-delete-${a.id}'),
             tooltip: l10n.alertDelete,
             icon: Icon(Icons.delete_outline_rounded, color: p.negative),
-            onPressed: () => services.alerts.remove(a.id),
+            onPressed: () async {
+              final messenger = ScaffoldMessenger.of(context);
+              await services.alerts.remove(a.id);
+              messenger
+                ..hideCurrentSnackBar()
+                ..showSnackBar(
+                  SnackBar(
+                    content: Text(l10n.alertDeleted),
+                    action: SnackBarAction(label: l10n.undo, onPressed: () => services.alerts.restore(a)),
+                  ),
+                );
+            },
           ),
         ],
       ),
@@ -440,7 +452,37 @@ class AlertsPage extends StatelessWidget {
                           ),
                         ),
                       if (active.isNotEmpty) group(active),
-                      if (triggered.isNotEmpty) ...[const SizedBox(height: 12), group(triggered)],
+                      if (triggered.isNotEmpty) ...[
+                        const SizedBox(height: 12),
+                        group(triggered),
+                        Align(
+                          alignment: AlignmentDirectional.centerEnd,
+                          child: TextButton.icon(
+                            key: const ValueKey('alerts-clear-triggered'),
+                            onPressed: () async {
+                              final messenger = ScaffoldMessenger.of(context);
+                              final gone = await services.alerts.removeTriggered();
+                              messenger
+                                ..hideCurrentSnackBar()
+                                ..showSnackBar(
+                                  SnackBar(
+                                    content: Text(l10n.alertsCleared(gone.length)),
+                                    action: SnackBarAction(
+                                      label: l10n.undo,
+                                      onPressed: () async {
+                                        for (final a in gone) {
+                                          await services.alerts.restore(a);
+                                        }
+                                      },
+                                    ),
+                                  ),
+                                );
+                            },
+                            icon: const Icon(Icons.clear_all_rounded, size: 18),
+                            label: Text(l10n.alertsClearTriggered),
+                          ),
+                        ),
+                      ],
                       const SizedBox(height: 12),
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 4),

@@ -2484,4 +2484,21 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get lotRemoved => 'ವಹಿವಾಟನ್ನು ಅಳಿಸಲಾಗಿದೆ';
+
+  @override
+  String get alertDeleted => 'ಎಚ್ಚರಿಕೆಯನ್ನು ಅಳಿಸಲಾಗಿದೆ';
+
+  @override
+  String get alertsClearTriggered => 'ಟ್ರಿಗರ್ ಆದ ಎಚ್ಚರಿಕೆಗಳನ್ನು ತೆರವುಗೊಳಿಸಿ';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ಎಚ್ಚರಿಕೆಗಳನ್ನು ತೆರವುಗೊಳಿಸಲಾಗಿದೆ',
+      one: '1 ಎಚ್ಚರಿಕೆಯನ್ನು ತೆರವುಗೊಳಿಸಲಾಗಿದೆ',
+    );
+    return '$_temp0';
+  }
 }

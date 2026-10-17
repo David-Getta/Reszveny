@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "लक्ष्य हटाउनुहोस्",
   "alertEdit": "अलर्ट सम्पादन गर्नुहोस्",
   "positionOpenLots": "अझै तपाईंसँग (सबैभन्दा पुरानो पहिले)",
-  "lotRemoved": "कारोबार मेटाइयो"
+  "lotRemoved": "कारोबार मेटाइयो",
+  "alertDeleted": "अलर्ट मेटाइयो",
+  "alertsClearTriggered": "ट्रिगर भएका अलर्ट हटाउनुहोस्",
+  "alertsCleared": "{count, plural, =1{1 अलर्ट हटाइयो} other{{count} अलर्ट हटाइए}}"
 }

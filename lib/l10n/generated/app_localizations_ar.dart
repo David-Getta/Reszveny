@@ -2533,4 +2533,24 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get lotRemoved => 'تم حذف المعاملة';
+
+  @override
+  String get alertDeleted => 'تم حذف التنبيه';
+
+  @override
+  String get alertsClearTriggered => 'مسح التنبيهات المُفعَّلة';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'تم مسح $count تنبيه',
+      many: 'تم مسح $count تنبيهًا',
+      few: 'تم مسح $count تنبيهات',
+      two: 'تم مسح تنبيهين',
+      one: 'تم مسح تنبيه واحد',
+    );
+    return '$_temp0';
+  }
 }

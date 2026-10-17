@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Rimuovi obiettivo",
   "alertEdit": "Modifica avviso",
   "positionOpenLots": "Ancora in portafoglio (prima i più vecchi)",
-  "lotRemoved": "Transazione eliminata"
+  "lotRemoved": "Transazione eliminata",
+  "alertDeleted": "Avviso eliminato",
+  "alertsClearTriggered": "Cancella avvisi scattati",
+  "alertsCleared": "{count, plural, =1{1 avviso cancellato} other{{count} avvisi cancellati}}"
 }

@@ -2488,4 +2488,21 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Ekyaguliddwa oba ekyatundiddwa kisanguddwawo';
+
+  @override
+  String get alertDeleted => 'Okulabula kusanguddwawo';
+
+  @override
+  String get alertsClearTriggered => 'Sangulawo okulabula okwakoze';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Okulabula $count kusanguddwawo',
+      one: 'Okulabula 1 kusanguddwawo',
+    );
+    return '$_temp0';
+  }
 }

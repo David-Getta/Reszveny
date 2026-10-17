@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Kuramwo intumbero",
   "alertEdit": "Hindura imenyesha",
   "positionOpenLots": "Ivyo ukigumana (ivya kera imbere)",
-  "lotRemoved": "Igikorwa co kugura canke kugurisha cafuswe"
+  "lotRemoved": "Igikorwa co kugura canke kugurisha cafuswe",
+  "alertDeleted": "Imenyesha ryafuswe",
+  "alertsClearTriggered": "Futa amamenyesha yakozwe",
+  "alertsCleared": "{count, plural, =1{Hafuswe imenyesha 1} other{Hafuswe amamenyesha {count}}}"
 }

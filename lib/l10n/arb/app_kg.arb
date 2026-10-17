@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Katula lukanu",
   "alertEdit": "Soba lukebisu",
   "positionOpenLots": "Ntangu yai ve kele na nge (ya ntama ntete)",
-  "lotRemoved": "Kusumba to kuteka me zimbisama"
+  "lotRemoved": "Kusumba to kuteka me zimbisama",
+  "alertDeleted": "Lukebisu me zimbisama",
+  "alertsClearTriggered": "Zimbisa bukebisu yina me salaka",
+  "alertsCleared": "{count, plural, =1{Lukebisu 1 me zimbisama} other{Bukebisu {count} me zimbisama}}"
 }

@@ -2469,4 +2469,21 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get lotRemoved => 'راکړه ورکړه ړنګه شوه';
+
+  @override
+  String get alertDeleted => 'خبرتیا ړنګه شوه';
+
+  @override
+  String get alertsClearTriggered => 'فعاله شوې خبرتیاوې پاکې کړئ';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count خبرتیاوې پاکې شوې',
+      one: '1 خبرتیا پاکه شوه',
+    );
+    return '$_temp0';
+  }
 }

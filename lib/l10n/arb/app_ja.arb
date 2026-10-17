@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "目標を削除",
   "alertEdit": "アラートを編集",
   "positionOpenLots": "保有中（古い順）",
-  "lotRemoved": "取引を削除しました"
+  "lotRemoved": "取引を削除しました",
+  "alertDeleted": "アラートを削除しました",
+  "alertsClearTriggered": "作動済みのアラートを消去",
+  "alertsCleared": "{count, plural, =1{1 件のアラートを消去しました} other{{count} 件のアラートを消去しました}}"
 }

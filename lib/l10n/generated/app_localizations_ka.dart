@@ -2478,4 +2478,21 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get lotRemoved => 'ტრანზაქცია წაიშალა';
+
+  @override
+  String get alertDeleted => 'გაფრთხილება წაიშალა';
+
+  @override
+  String get alertsClearTriggered => 'ამოქმედებული გაფრთხილებების გასუფთავება';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'წაიშალა $count გაფრთხილება',
+      one: 'წაიშალა 1 გაფრთხილება',
+    );
+    return '$_temp0';
+  }
 }

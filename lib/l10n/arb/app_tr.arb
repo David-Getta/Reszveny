@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Hedefi kaldır",
   "alertEdit": "Alarmı düzenle",
   "positionOpenLots": "Hâlâ elinizde (en eskiler önce)",
-  "lotRemoved": "İşlem silindi"
+  "lotRemoved": "İşlem silindi",
+  "alertDeleted": "Alarm silindi",
+  "alertsClearTriggered": "Tetiklenen alarmları temizle",
+  "alertsCleared": "{count, plural, =1{1 alarm temizlendi} other{{count} alarm temizlendi}}"
 }

@@ -2481,4 +2481,21 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Wotutu nuƒeƒle alo nudzadzra la';
+
+  @override
+  String get alertDeleted => 'Wotutu nuxlɔ̃ame';
+
+  @override
+  String get alertsClearTriggered => 'Tutu nuxlɔ̃ame siwo wɔ dɔ';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Wotutu nuxlɔ̃ame $count',
+      one: 'Wotutu nuxlɔ̃ame 1',
+    );
+    return '$_temp0';
+  }
 }

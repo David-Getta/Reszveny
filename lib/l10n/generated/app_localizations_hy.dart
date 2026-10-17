@@ -2486,4 +2486,21 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Գործարքը ջնջվեց';
+
+  @override
+  String get alertDeleted => 'Ծանուցումը ջնջվեց';
+
+  @override
+  String get alertsClearTriggered => 'Մաքրել գործարկված ծանուցումները';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Մաքրվեց $count ծանուցում',
+      one: 'Մաքրվեց 1 ծանուցում',
+    );
+    return '$_temp0';
+  }
 }

@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Tangtanga ang tumong",
   "alertEdit": "Usba ang alerto",
   "positionOpenLots": "Gikupot pa (pinakauna una)",
-  "lotRemoved": "Napapas ang transaksyon"
+  "lotRemoved": "Napapas ang transaksyon",
+  "alertDeleted": "Napapas ang alerto",
+  "alertsClearTriggered": "Papasa ang mga na-trigger nga alerto",
+  "alertsCleared": "{count, plural, =1{Napapas ang 1 ka alerto} other{Napapas ang {count} ka alerto}}"
 }

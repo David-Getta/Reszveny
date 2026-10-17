@@ -2543,4 +2543,23 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Operacija ištrinta';
+
+  @override
+  String get alertDeleted => 'Įspėjimas ištrintas';
+
+  @override
+  String get alertsClearTriggered => 'Išvalyti suveikusius įspėjimus';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Išvalyta $count įspėjimų',
+      many: 'Išvalyta $count įspėjimo',
+      few: 'Išvalyti $count įspėjimai',
+      one: 'Išvalytas $count įspėjimas',
+    );
+    return '$_temp0';
+  }
 }

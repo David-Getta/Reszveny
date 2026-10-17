@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Odstrániť cieľ",
   "alertEdit": "Upraviť upozornenie",
   "positionOpenLots": "Stále držané (najstaršie prvé)",
-  "lotRemoved": "Transakcia bola odstránená"
+  "lotRemoved": "Transakcia bola odstránená",
+  "alertDeleted": "Upozornenie odstránené",
+  "alertsClearTriggered": "Vymazať spustené upozornenia",
+  "alertsCleared": "{count, plural, =1{Vymazané 1 upozornenie} few{Vymazané {count} upozornenia} many{Vymazané {count} upozornenia} other{Vymazaných {count} upozornení}}"
 }

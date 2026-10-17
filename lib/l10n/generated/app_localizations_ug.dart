@@ -2480,4 +2480,21 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get lotRemoved => 'سودا ئۆچۈرۈلدى';
+
+  @override
+  String get alertDeleted => 'ئاگاھلاندۇرۇش ئۆچۈرۈلدى';
+
+  @override
+  String get alertsClearTriggered => 'قوزغالغان ئاگاھلاندۇرۇشلارنى تازىلاش';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ئاگاھلاندۇرۇش تازىلاندى',
+      one: '1 ئاگاھلاندۇرۇش تازىلاندى',
+    );
+    return '$_temp0';
+  }
 }

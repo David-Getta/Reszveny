@@ -2501,4 +2501,21 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Eliminouse a transacción';
+
+  @override
+  String get alertDeleted => 'Eliminouse a alerta';
+
+  @override
+  String get alertsClearTriggered => 'Borrar alertas activadas';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Borráronse $count alertas',
+      one: 'Borrouse $count alerta',
+    );
+    return '$_temp0';
+  }
 }

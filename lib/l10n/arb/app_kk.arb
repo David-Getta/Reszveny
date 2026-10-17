@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Мақсатты жою",
   "alertEdit": "Ескертуді өңдеу",
   "positionOpenLots": "Әлі де қолыңызда (алдымен ең ескілері)",
-  "lotRemoved": "Операция жойылды"
+  "lotRemoved": "Операция жойылды",
+  "alertDeleted": "Ескерту жойылды",
+  "alertsClearTriggered": "Іске қосылған ескертулерді тазалау",
+  "alertsCleared": "{count, plural, =1{1 ескерту тазаланды} other{{count} ескерту тазаланды}}"
 }

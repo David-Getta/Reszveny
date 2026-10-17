@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "लक्ष्य हटाउ",
   "alertEdit": "अलर्ट बदलू",
   "positionOpenLots": "एखनो अहाँ लग (सभसँ पुरान पहिने)",
-  "lotRemoved": "लेन-देन मेटाओल गेल"
+  "lotRemoved": "लेन-देन मेटाओल गेल",
+  "alertDeleted": "अलर्ट मेटाओल गेल",
+  "alertsClearTriggered": "ट्रिगर भेल अलर्ट साफ करू",
+  "alertsCleared": "{count, plural, =1{1 अलर्ट साफ कएल गेल} other{{count} अलर्ट साफ कएल गेल}}"
 }

@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Ta bort mål",
   "alertEdit": "Redigera larm",
   "positionOpenLots": "Fortfarande ägda (äldsta först)",
-  "lotRemoved": "Transaktionen har raderats"
+  "lotRemoved": "Transaktionen har raderats",
+  "alertDeleted": "Larm borttaget",
+  "alertsClearTriggered": "Rensa utlösta larm",
+  "alertsCleared": "{count, plural, =1{1 larm rensat} other{{count} larm rensade}}"
 }

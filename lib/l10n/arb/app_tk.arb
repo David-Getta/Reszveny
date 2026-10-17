@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "Maksady aýyr",
   "alertEdit": "Duýduryşy üýtget",
   "positionOpenLots": "Henizem elinde bar (ilki iň könesi)",
-  "lotRemoved": "Amal pozuldy"
+  "lotRemoved": "Amal pozuldy",
+  "alertDeleted": "Duýduryş pozuldy",
+  "alertsClearTriggered": "Işlän duýduryşlary arassala",
+  "alertsCleared": "{count, plural, =1{1 duýduryş arassalandy} other{{count} duýduryş arassalandy}}"
 }

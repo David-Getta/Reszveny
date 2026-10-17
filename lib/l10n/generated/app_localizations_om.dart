@@ -2486,4 +2486,21 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Bittaan ykn gurgurtaan haqameera';
+
+  @override
+  String get alertDeleted => 'Akeekkachiisni haqameera';
+
+  @override
+  String get alertsClearTriggered => 'Akeekkachiisota ka\'an haqi';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Akeekkachiisni $count haqamaniiru',
+      one: 'Akeekkachiisni 1 haqameera',
+    );
+    return '$_temp0';
+  }
 }

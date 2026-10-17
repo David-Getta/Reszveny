@@ -2479,4 +2479,21 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Амалиёт нест карда шуд';
+
+  @override
+  String get alertDeleted => 'Огоҳӣ нест карда шуд';
+
+  @override
+  String get alertsClearTriggered => 'Тоза кардани огоҳиҳои фаъолшуда';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count огоҳӣ тоза карда шуд',
+      one: '1 огоҳӣ тоза карда шуд',
+    );
+    return '$_temp0';
+  }
 }

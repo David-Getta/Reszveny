@@ -659,5 +659,8 @@
   "portfolioGoalRemove": "ଲକ୍ଷ୍ୟ ହଟାନ୍ତୁ",
   "alertEdit": "ଆଲର୍ଟ ଏଡିଟ କରନ୍ତୁ",
   "positionOpenLots": "ଏବେ ବି ଧରି ରଖିଥିବା (ସବୁଠାରୁ ପୁରୁଣା ପ୍ରଥମେ)",
-  "lotRemoved": "କାରବାର ଡିଲିଟ ହେଲା"
+  "lotRemoved": "କାରବାର ଡିଲିଟ ହେଲା",
+  "alertDeleted": "ସତର୍କତା ଡିଲିଟ ହେଲା",
+  "alertsClearTriggered": "ଟ୍ରିଗର ହୋଇଥିବା ସତର୍କତା ସଫା କରନ୍ତୁ",
+  "alertsCleared": "{count, plural, =1{1ଟି ସତର୍କତା ସଫା ହେଲା} other{{count}ଟି ସତର୍କତା ସଫା ହେଲା}}"
 }

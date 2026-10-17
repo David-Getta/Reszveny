@@ -2474,4 +2474,21 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get lotRemoved => 'تراکنش حذف شد';
+
+  @override
+  String get alertDeleted => 'هشدار حذف شد';
+
+  @override
+  String get alertsClearTriggered => 'پاک کردن هشدارهای فعال‌شده';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count هشدار پاک شد',
+      one: '1 هشدار پاک شد',
+    );
+    return '$_temp0';
+  }
 }

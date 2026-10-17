@@ -2482,4 +2482,22 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Operatsiya oʻchirildi';
+
+  @override
+  String get alertDeleted => 'Ogohlantirish oʻchirildi';
+
+  @override
+  String get alertsClearTriggered =>
+      'Ishga tushgan ogohlantirishlarni tozalash';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ta ogohlantirish tozalandi',
+      one: '1 ta ogohlantirish tozalandi',
+    );
+    return '$_temp0';
+  }
 }

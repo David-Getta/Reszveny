@@ -2485,4 +2485,21 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get lotRemoved => 'Kusumba to kuteka me zimbisama';
+
+  @override
+  String get alertDeleted => 'Lukebisu me zimbisama';
+
+  @override
+  String get alertsClearTriggered => 'Zimbisa bukebisu yina me salaka';
+
+  @override
+  String alertsCleared(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Bukebisu $count me zimbisama',
+      one: 'Lukebisu 1 me zimbisama',
+    );
+    return '$_temp0';
+  }
 }
