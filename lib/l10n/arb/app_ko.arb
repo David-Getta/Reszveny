@@ -658,5 +658,6 @@
   "portfolioGoalReached": "목표 {amount} 달성",
   "portfolioGoalRemove": "목표 삭제",
   "alertEdit": "알림 수정",
-  "positionOpenLots": "보유 중 (오래된 순)"
+  "positionOpenLots": "보유 중 (오래된 순)",
+  "lotRemoved": "거래를 삭제했습니다"
 }

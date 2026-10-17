@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Woadu wo botaeɛ: {amount}",
   "portfolioGoalRemove": "Yi botaeɛ no fi hɔ",
   "alertEdit": "Sesa kɔkɔbɔ",
-  "positionOpenLots": "Ɛda so wɔ wo nsam (nea edi kan di kan)"
+  "positionOpenLots": "Ɛda so wɔ wo nsam (nea edi kan di kan)",
+  "lotRemoved": "Wɔapopa adetɔ anaa adetɔn no"
 }

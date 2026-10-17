@@ -2473,4 +2473,7 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'अझै तपाईंसँग (सबैभन्दा पुरानो पहिले)';
+
+  @override
+  String get lotRemoved => 'कारोबार मेटाइयो';
 }

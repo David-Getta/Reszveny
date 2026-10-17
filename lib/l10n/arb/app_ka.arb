@@ -658,5 +658,6 @@
   "portfolioGoalReached": "მიზანი მიღწეულია: {amount}",
   "portfolioGoalRemove": "მიზნის წაშლა",
   "alertEdit": "შეტყობინების რედაქტირება",
-  "positionOpenLots": "კვლავ თქვენს ხელთ (ჯერ უძველესი)"
+  "positionOpenLots": "კვლავ თქვენს ხელთ (ჯერ უძველესი)",
+  "lotRemoved": "ტრანზაქცია წაიშალა"
 }

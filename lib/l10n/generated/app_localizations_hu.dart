@@ -2480,4 +2480,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Még meglévő tételek (a legrégebbi elöl)';
+
+  @override
+  String get lotRemoved => 'Tranzakció törölve';
 }

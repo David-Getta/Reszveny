@@ -2468,4 +2468,7 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'एखनो अहाँ लग (सभसँ पुरान पहिने)';
+
+  @override
+  String get lotRemoved => 'लेन-देन मेटाओल गेल';
 }

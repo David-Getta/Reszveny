@@ -2540,4 +2540,7 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Vis dar turimi (seniausi pirmiau)';
+
+  @override
+  String get lotRemoved => 'Operacija ištrinta';
 }

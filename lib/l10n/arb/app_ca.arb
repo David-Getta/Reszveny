@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Objectiu assolit: {amount}",
   "portfolioGoalRemove": "Elimina l'objectiu",
   "alertEdit": "Edita l’alerta",
-  "positionOpenLots": "Encara en cartera (primer les més antigues)"
+  "positionOpenLots": "Encara en cartera (primer les més antigues)",
+  "lotRemoved": "S’ha suprimit la transacció"
 }

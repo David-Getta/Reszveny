@@ -2480,4 +2480,7 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Oĩ gueteri nde pópe (tujavéva raẽ)';
+
+  @override
+  String get lotRemoved => 'Oñemboguete jejogua térã ñemu';
 }

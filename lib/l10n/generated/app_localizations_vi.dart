@@ -2468,4 +2468,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Vẫn đang nắm giữ (cũ nhất trước)';
+
+  @override
+  String get lotRemoved => 'Đã xóa giao dịch';
 }

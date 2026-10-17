@@ -2466,4 +2466,7 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'لا هم ستاسو سره (تر ټولو زاړه لومړی)';
+
+  @override
+  String get lotRemoved => 'راکړه ورکړه ړنګه شوه';
 }

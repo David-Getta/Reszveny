@@ -658,5 +658,6 @@
   "portfolioGoalReached": "已达成 {amount} 目标",
   "portfolioGoalRemove": "移除目标",
   "alertEdit": "编辑提醒",
-  "positionOpenLots": "仍持有（最早的在前）"
+  "positionOpenLots": "仍持有（最早的在前）",
+  "lotRemoved": "已删除交易记录"
 }

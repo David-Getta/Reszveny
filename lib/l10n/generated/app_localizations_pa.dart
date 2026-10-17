@@ -2470,4 +2470,7 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'ਅਜੇ ਵੀ ਤੁਹਾਡੇ ਕੋਲ (ਸਭ ਤੋਂ ਪੁਰਾਣੀਆਂ ਪਹਿਲਾਂ)';
+
+  @override
+  String get lotRemoved => 'ਲੈਣ-ਦੇਣ ਮਿਟਾਇਆ ਗਿਆ';
 }

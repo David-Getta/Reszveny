@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Maikemišetšo a fihleletšwe: {amount}",
   "portfolioGoalRemove": "Tloša maikemišetšo",
   "alertEdit": "Lokiša temošo",
-  "positionOpenLots": "Sa le go wena (tša kgale pele)"
+  "positionOpenLots": "Sa le go wena (tša kgale pele)",
+  "lotRemoved": "Thekišano e phumotšwe"
 }

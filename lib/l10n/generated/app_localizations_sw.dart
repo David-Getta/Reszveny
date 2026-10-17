@@ -2475,4 +2475,7 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Bado unazo (za zamani zaidi kwanza)';
+
+  @override
+  String get lotRemoved => 'Muamala umefutwa';
 }

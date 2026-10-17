@@ -2487,4 +2487,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Noch im Bestand (älteste zuerst)';
+
+  @override
+  String get lotRemoved => 'Transaktion gelöscht';
 }

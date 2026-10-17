@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Maqsadga erishildi: {amount}",
   "portfolioGoalRemove": "Maqsadni olib tashlash",
   "alertEdit": "Bildirishnomani tahrirlash",
-  "positionOpenLots": "Hali ham qoʻlingizda (avval eng eskilari)"
+  "positionOpenLots": "Hali ham qoʻlingizda (avval eng eskilari)",
+  "lotRemoved": "Operatsiya oʻchirildi"
 }

@@ -2541,4 +2541,7 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Še v lasti (najstarejši najprej)';
+
+  @override
+  String get lotRemoved => 'Transakcija izbrisana';
 }

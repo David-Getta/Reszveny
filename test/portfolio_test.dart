@@ -390,6 +390,17 @@ void main() {
     expect(find.textContaining('Sold 4'), findsOneWidget);
     expect(find.text('Realized: +200.00 USD'), findsOneWidget);
 
+    // Egy tranzakció törlése visszavonható, amíg a lap nyitva van.
+    final sale = s.portfolio.lots.firstWhere((l) => l.sell);
+    await tester.tap(find.descendant(of: find.byKey(ValueKey('lot-${sale.id}')), matching: find.text('Remove')));
+    await tester.pumpAndSettle();
+    expect(s.portfolio.lots.where((l) => l.sell), isEmpty);
+    expect(find.text('Transaction deleted'), findsOneWidget);
+    await tester.tap(find.byKey(const ValueKey('lot-undo')));
+    await tester.pumpAndSettle();
+    expect(s.portfolio.lots.where((l) => l.sell).single.id, sale.id);
+    expect(find.byKey(const ValueKey('lot-removed')), findsNothing);
+
     // A maradék: a „Mind” gomb kitölti a darabszámot.
     await tester.tap(find.byKey(const ValueKey('position-sell')));
     await tester.pumpAndSettle();

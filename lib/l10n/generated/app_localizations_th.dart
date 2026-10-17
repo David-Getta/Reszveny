@@ -2445,4 +2445,7 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'ยังถืออยู่ (เก่าสุดก่อน)';
+
+  @override
+  String get lotRemoved => 'ลบรายการซื้อขายแล้ว';
 }

@@ -2467,4 +2467,7 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'עדיין בבעלותך (הוותיקות ביותר קודם)';
+
+  @override
+  String get lotRemoved => 'העסקה נמחקה';
 }

@@ -265,6 +265,14 @@ class PortfolioStore extends ChangeNotifier {
     await _save();
   }
 
+  /// Egy törölt tranzakció visszaállítása (visszavonás), változatlan azonosítóval.
+  Future<void> restore(PortfolioLot lot) async {
+    if (_lots.any((l) => l.id == lot.id)) return;
+    _lots.add(lot);
+    notifyListeners();
+    await _save();
+  }
+
   Future<void> remove(String id) async {
     _lots.removeWhere((l) => l.id == id);
     notifyListeners();

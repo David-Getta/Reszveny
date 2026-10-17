@@ -2482,4 +2482,7 @@ class AppLocalizationsRn extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Ivyo ukigumana (ivya kera imbere)';
+
+  @override
+  String get lotRemoved => 'Igikorwa co kugura canke kugurisha cafuswe';
 }

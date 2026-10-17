@@ -2474,4 +2474,7 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Hâlâ elinizde (en eskiler önce)';
+
+  @override
+  String get lotRemoved => 'İşlem silindi';
 }

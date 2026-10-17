@@ -2476,4 +2476,7 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Все още притежавани (първо най-старите)';
+
+  @override
+  String get lotRemoved => 'Транзакцията е изтрита';
 }

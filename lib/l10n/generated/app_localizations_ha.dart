@@ -2480,4 +2480,7 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Har yanzu a hannunka (mafi tsufa da farko)';
+
+  @override
+  String get lotRemoved => 'An share ma\'amala';
 }

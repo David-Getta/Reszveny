@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Kaayyoon galma ga'eera: {amount}",
   "portfolioGoalRemove": "Kaayyoo haqi",
   "alertEdit": "Akeekkachiisa gulaali",
-  "positionOpenLots": "Ammas harka kee jira (kan durii jalqaba)"
+  "positionOpenLots": "Ammas harka kee jira (kan durii jalqaba)",
+  "lotRemoved": "Bittaan ykn gurgurtaan haqameera"
 }

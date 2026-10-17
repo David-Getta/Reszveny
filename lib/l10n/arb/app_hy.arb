@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Նպատակը կատարված է՝ {amount}",
   "portfolioGoalRemove": "Հեռացնել նպատակը",
   "alertEdit": "Խմբագրել ծանուցումը",
-  "positionOpenLots": "Դեռ պահվող (նախ՝ ամենահինները)"
+  "positionOpenLots": "Դեռ պահվող (նախ՝ ամենահինները)",
+  "lotRemoved": "Գործարքը ջնջվեց"
 }

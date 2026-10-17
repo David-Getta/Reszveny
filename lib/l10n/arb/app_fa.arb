@@ -658,5 +658,6 @@
   "portfolioGoalReached": "هدف {amount} محقق شد",
   "portfolioGoalRemove": "حذف هدف",
   "alertEdit": "ویرایش هشدار",
-  "positionOpenLots": "هنوز در اختیار (قدیمی‌ترین‌ها اول)"
+  "positionOpenLots": "هنوز در اختیار (قدیمی‌ترین‌ها اول)",
+  "lotRemoved": "تراکنش حذف شد"
 }

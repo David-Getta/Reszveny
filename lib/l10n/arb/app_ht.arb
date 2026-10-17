@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Objektif atenn: {amount}",
   "portfolioGoalRemove": "Retire objektif la",
   "alertEdit": "Modifye alèt la",
-  "positionOpenLots": "Toujou genyen (pi ansyen yo anvan)"
+  "positionOpenLots": "Toujou genyen (pi ansyen yo anvan)",
+  "lotRemoved": "Tranzaksyon efase"
 }

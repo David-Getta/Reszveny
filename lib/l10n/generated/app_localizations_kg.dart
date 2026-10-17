@@ -2482,4 +2482,7 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Ntangu yai ve kele na nge (ya ntama ntete)';
+
+  @override
+  String get lotRemoved => 'Kusumba to kuteka me zimbisama';
 }

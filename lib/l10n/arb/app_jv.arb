@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Target {amount} kagayuh",
   "portfolioGoalRemove": "Busak target",
   "alertEdit": "Owahi pèngetan",
-  "positionOpenLots": "Isih dicekel (sing paling lawas dhisik)"
+  "positionOpenLots": "Isih dicekel (sing paling lawas dhisik)",
+  "lotRemoved": "Transaksi wis dibusak"
 }

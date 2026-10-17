@@ -2485,4 +2485,7 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Gikupot pa (pinakauna una)';
+
+  @override
+  String get lotRemoved => 'Napapas ang transaksyon';
 }

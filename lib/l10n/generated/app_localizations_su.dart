@@ -2478,4 +2478,7 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Masih dicekel (nu pangkolotna heula)';
+
+  @override
+  String get lotRemoved => 'Transaksi geus dipupus';
 }

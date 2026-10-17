@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Target {amount} tercapai",
   "portfolioGoalRemove": "Hapus target",
   "alertEdit": "Edit peringatan",
-  "positionOpenLots": "Masih dimiliki (terlama dulu)"
+  "positionOpenLots": "Masih dimiliki (terlama dulu)",
+  "lotRemoved": "Transaksi dihapus"
 }

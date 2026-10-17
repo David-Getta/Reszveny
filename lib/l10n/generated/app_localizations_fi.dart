@@ -2476,4 +2476,7 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Yhä hallussa (vanhimmat ensin)';
+
+  @override
+  String get lotRemoved => 'Tapahtuma poistettu';
 }

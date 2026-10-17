@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Cilj od {amount} je dostignut",
   "portfolioGoalRemove": "Ukloni cilj",
   "alertEdit": "Uredi obavještenje",
-  "positionOpenLots": "Još u posjedu (prvo najstarije)"
+  "positionOpenLots": "Još u posjedu (prvo najstarije)",
+  "lotRemoved": "Transakcija je obrisana"
 }

@@ -2473,4 +2473,7 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Һаман сездә (башта иң искеләре)';
+
+  @override
+  String get lotRemoved => 'Операция бетерелде';
 }

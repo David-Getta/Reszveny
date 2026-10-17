@@ -658,5 +658,6 @@
   "portfolioGoalReached": "लक्ष्य पूरा भइल: {amount}",
   "portfolioGoalRemove": "लक्ष्य हटाईं",
   "alertEdit": "अलर्ट बदलीं",
-  "positionOpenLots": "अबहिंयो रउआ लगे (सबसे पुरान पहिले)"
+  "positionOpenLots": "अबहिंयो रउआ लगे (सबसे पुरान पहिले)",
+  "lotRemoved": "लेन-देन मिटा दिहल गइल"
 }

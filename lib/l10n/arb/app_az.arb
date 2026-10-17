@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Hədəfə çatdın: {amount}",
   "portfolioGoalRemove": "Hədəfi sil",
   "alertEdit": "Bildirişi redaktə et",
-  "positionOpenLots": "Hələ də əlinizdə olanlar (əvvəlcə ən köhnələr)"
+  "positionOpenLots": "Hələ də əlinizdə olanlar (əvvəlcə ən köhnələr)",
+  "lotRemoved": "Əməliyyat silindi"
 }

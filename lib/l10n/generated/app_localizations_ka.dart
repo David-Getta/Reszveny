@@ -2475,4 +2475,7 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'კვლავ თქვენს ხელთ (ჯერ უძველესი)';
+
+  @override
+  String get lotRemoved => 'ტრანზაქცია წაიშალა';
 }

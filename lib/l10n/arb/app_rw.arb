@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Wageze ku ntego: {amount}",
   "portfolioGoalRemove": "Kuramo intego",
   "alertEdit": "Hindura imenyesha",
-  "positionOpenLots": "Ibyo ugifite (ibya kera mbere)"
+  "positionOpenLots": "Ibyo ugifite (ibya kera mbere)",
+  "lotRemoved": "Igikorwa cyo kugura cyangwa kugurisha cyasibwe"
 }

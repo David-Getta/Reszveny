@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Objectif atteint : {amount}",
   "portfolioGoalRemove": "Supprimer l'objectif",
   "alertEdit": "Modifier l’alerte",
-  "positionOpenLots": "Toujours détenus (les plus anciens d’abord)"
+  "positionOpenLots": "Toujours détenus (les plus anciens d’abord)",
+  "lotRemoved": "Transaction supprimée"
 }

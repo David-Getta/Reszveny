@@ -658,5 +658,6 @@
   "portfolioGoalReached": "ಗುರಿ ತಲುಪಿದೆ: {amount}",
   "portfolioGoalRemove": "ಗುರಿ ತೆಗೆದುಹಾಕಿ",
   "alertEdit": "ಅಲರ್ಟ್ ಎಡಿಟ್ ಮಾಡಿ",
-  "positionOpenLots": "ಇನ್ನೂ ಹೊಂದಿರುವವು (ಹಳೆಯದು ಮೊದಲು)"
+  "positionOpenLots": "ಇನ್ನೂ ಹೊಂದಿರುವವು (ಹಳೆಯದು ಮೊದಲು)",
+  "lotRemoved": "ವಹಿವಾಟನ್ನು ಅಳಿಸಲಾಗಿದೆ"
 }

@@ -658,5 +658,6 @@
   "portfolioGoalReached": "نىشانغا يېتىلدى: {amount}",
   "portfolioGoalRemove": "نىشاننى ئۆچۈرۈش",
   "alertEdit": "ئاگاھلاندۇرۇشنى تەھرىرلەش",
-  "positionOpenLots": "تېخى قولىڭىزدا (ئەڭ كونىسى ئالدىدا)"
+  "positionOpenLots": "تېخى قولىڭىزدا (ئەڭ كونىسى ئالدىدا)",
+  "lotRemoved": "سودا ئۆچۈرۈلدى"
 }

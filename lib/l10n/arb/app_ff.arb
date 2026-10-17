@@ -658,5 +658,6 @@
   "portfolioGoalReached": "A heɓii faandaare maa: {amount}",
   "portfolioGoalRemove": "Momtu faandaare",
   "alertEdit": "Waylu tintinol",
-  "positionOpenLots": "Ina woodi haa jooni (ɓurɗi ƙiɗɗude adan)"
+  "positionOpenLots": "Ina woodi haa jooni (ɓurɗi ƙiɗɗude adan)",
+  "lotRemoved": "Soodgol walla yeeyugol momtaama"
 }

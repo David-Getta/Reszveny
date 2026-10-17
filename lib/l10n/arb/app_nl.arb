@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Doel van {amount} bereikt",
   "portfolioGoalRemove": "Doel verwijderen",
   "alertEdit": "Alert bewerken",
-  "positionOpenLots": "Nog in bezit (oudste eerst)"
+  "positionOpenLots": "Nog in bezit (oudste eerst)",
+  "lotRemoved": "Transactie verwijderd"
 }

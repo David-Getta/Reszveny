@@ -2466,4 +2466,7 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'اڃا توهان وٽ (سڀ کان پراڻا پهريان)';
+
+  @override
+  String get lotRemoved => 'ليڻ دين ميٽيو ويو';
 }

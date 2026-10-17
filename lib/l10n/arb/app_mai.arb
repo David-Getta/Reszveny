@@ -658,5 +658,6 @@
   "portfolioGoalReached": "लक्ष्य पूरा भेल: {amount}",
   "portfolioGoalRemove": "लक्ष्य हटाउ",
   "alertEdit": "अलर्ट बदलू",
-  "positionOpenLots": "एखनो अहाँ लग (सभसँ पुरान पहिने)"
+  "positionOpenLots": "एखनो अहाँ लग (सभसँ पुरान पहिने)",
+  "lotRemoved": "लेन-देन मेटाओल गेल"
 }

@@ -2474,4 +2474,7 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Ɛda so wɔ wo nsam (nea edi kan di kan)';
+
+  @override
+  String get lotRemoved => 'Wɔapopa adetɔ anaa adetɔn no';
 }

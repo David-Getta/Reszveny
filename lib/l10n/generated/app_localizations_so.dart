@@ -2482,4 +2482,7 @@ class AppLocalizationsSo extends AppLocalizations {
   @override
   String get positionOpenLots =>
       'Weli gacantaada ku jira (kuwa ugu da\'da weyn marka hore)';
+
+  @override
+  String get lotRemoved => 'Macaamilka waa la tirtiray';
 }

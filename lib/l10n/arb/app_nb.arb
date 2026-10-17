@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Målet på {amount} er nådd",
   "portfolioGoalRemove": "Fjern målet",
   "alertEdit": "Rediger varsel",
-  "positionOpenLots": "Fortsatt eid (eldste først)"
+  "positionOpenLots": "Fortsatt eid (eldste først)",
+  "lotRemoved": "Transaksjonen er slettet"
 }

@@ -2472,4 +2472,7 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Hali bɛ i bolo (kɔrɔw fɔlɔ)';
+
+  @override
+  String get lotRemoved => 'Sanni walima feereli jɔsira';
 }

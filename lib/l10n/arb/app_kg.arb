@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Lukanu me lunga: {amount}",
   "portfolioGoalRemove": "Katula lukanu",
   "alertEdit": "Soba lukebisu",
-  "positionOpenLots": "Ntangu yai ve kele na nge (ya ntama ntete)"
+  "positionOpenLots": "Ntangu yai ve kele na nge (ya ntama ntete)",
+  "lotRemoved": "Kusumba to kuteka me zimbisama"
 }

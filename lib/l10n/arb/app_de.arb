@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Ziel von {amount} erreicht",
   "portfolioGoalRemove": "Ziel entfernen",
   "alertEdit": "Alarm bearbeiten",
-  "positionOpenLots": "Noch im Bestand (älteste zuerst)"
+  "positionOpenLots": "Noch im Bestand (älteste zuerst)",
+  "lotRemoved": "Transaktion gelöscht"
 }

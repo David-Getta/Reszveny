@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Gihîştî armancê: {amount}",
   "portfolioGoalRemove": "Armancê rake",
   "alertEdit": "Hişyariyê biguherîne",
-  "positionOpenLots": "Hîn li ba te (yên herî kevn pêşî)"
+  "positionOpenLots": "Hîn li ba te (yên herî kevn pêşî)",
+  "lotRemoved": "Danûstandin hate jêbirin"
 }

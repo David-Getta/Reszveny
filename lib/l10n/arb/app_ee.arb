@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Èɖo taɖodzinu: {amount}",
   "portfolioGoalRemove": "Ɖe taɖodzinu ɖa",
   "alertEdit": "Trɔ nuxlɔ̃ame",
-  "positionOpenLots": "Ele asiwò kokooko (xoxotɔwo gbã)"
+  "positionOpenLots": "Ele asiwò kokooko (xoxotɔwo gbã)",
+  "lotRemoved": "Wotutu nuƒeƒle alo nudzadzra la"
 }

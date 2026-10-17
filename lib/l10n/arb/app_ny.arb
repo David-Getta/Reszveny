@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Mwakwaniritsa cholinga: {amount}",
   "portfolioGoalRemove": "Chotsani cholinga",
   "alertEdit": "Sinthani chidziwitso",
-  "positionOpenLots": "Zikadali zanu (zakale kwambiri poyamba)"
+  "positionOpenLots": "Zikadali zanu (zakale kwambiri poyamba)",
+  "lotRemoved": "Kugula kapena kugulitsa kwachotsedwa"
 }

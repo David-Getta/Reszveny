@@ -2474,4 +2474,7 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'اب بھی آپ کے پاس (سب سے پرانی پہلے)';
+
+  @override
+  String get lotRemoved => 'لین دین حذف کر دیا گیا';
 }

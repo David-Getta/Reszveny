@@ -658,5 +658,6 @@
   "portfolioGoalReached": "An cimma buri: {amount}",
   "portfolioGoalRemove": "Cire buri",
   "alertEdit": "Gyara faɗakarwa",
-  "positionOpenLots": "Har yanzu a hannunka (mafi tsufa da farko)"
+  "positionOpenLots": "Har yanzu a hannunka (mafi tsufa da farko)",
+  "lotRemoved": "An share ma'amala"
 }

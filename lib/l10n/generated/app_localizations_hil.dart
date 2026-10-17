@@ -2489,4 +2489,7 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Ginakaptan pa (pinakadaan anay)';
+
+  @override
+  String get lotRemoved => 'Napanas ang transaksyon';
 }

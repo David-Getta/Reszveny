@@ -2515,4 +2515,7 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Joprojām tavā īpašumā (vecākie vispirms)';
+
+  @override
+  String get lotRemoved => 'Darījums izdzēsts';
 }

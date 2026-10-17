@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Mērķis sasniegts: {amount}",
   "portfolioGoalRemove": "Noņemt mērķi",
   "alertEdit": "Rediģēt brīdinājumu",
-  "positionOpenLots": "Joprojām tavā īpašumā (vecākie vispirms)"
+  "positionOpenLots": "Joprojām tavā īpašumā (vecākie vispirms)",
+  "lotRemoved": "Darījums izdzēsts"
 }

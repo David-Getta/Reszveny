@@ -658,5 +658,6 @@
   "portfolioGoalReached": "లక్ష్యం చేరుకుంది: {amount}",
   "portfolioGoalRemove": "లక్ష్యాన్ని తీసివేయి",
   "alertEdit": "హెచ్చరికను సవరించండి",
-  "positionOpenLots": "ఇంకా ఉన్నవి (పాతవి ముందుగా)"
+  "positionOpenLots": "ఇంకా ఉన్నవి (పాతవి ముందుగా)",
+  "lotRemoved": "లావాదేవీ తొలగించబడింది"
 }

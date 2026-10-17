@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Tikslas pasiektas: {amount}",
   "portfolioGoalRemove": "Pašalinti tikslą",
   "alertEdit": "Redaguoti įspėjimą",
-  "positionOpenLots": "Vis dar turimi (seniausi pirmiau)"
+  "positionOpenLots": "Vis dar turimi (seniausi pirmiau)",
+  "lotRemoved": "Operacija ištrinta"
 }

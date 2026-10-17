@@ -2483,4 +2483,7 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Դեռ պահվող (նախ՝ ամենահինները)';
+
+  @override
+  String get lotRemoved => 'Գործարքը ջնջվեց';
 }

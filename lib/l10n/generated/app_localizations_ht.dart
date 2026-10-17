@@ -2473,4 +2473,7 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Toujou genyen (pi ansyen yo anvan)';
+
+  @override
+  String get lotRemoved => 'Tranzaksyon efase';
 }

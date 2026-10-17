@@ -2481,4 +2481,7 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'ಇನ್ನೂ ಹೊಂದಿರುವವು (ಹಳೆಯದು ಮೊದಲು)';
+
+  @override
+  String get lotRemoved => 'ವಹಿವಾಟನ್ನು ಅಳಿಸಲಾಗಿದೆ';
 }

@@ -2492,4 +2492,7 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Mbola anananao (ny tranainy indrindra aloha)';
+
+  @override
+  String get lotRemoved => 'Voafafa ny fividianana na fivarotana';
 }

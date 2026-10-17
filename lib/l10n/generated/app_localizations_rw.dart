@@ -2483,4 +2483,7 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Ibyo ugifite (ibya kera mbere)';
+
+  @override
+  String get lotRemoved => 'Igikorwa cyo kugura cyangwa kugurisha cyasibwe';
 }

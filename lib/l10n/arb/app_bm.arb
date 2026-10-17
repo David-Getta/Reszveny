@@ -658,5 +658,6 @@
   "portfolioGoalReached": "I ye i ka laɲini sɔrɔ: {amount}",
   "portfolioGoalRemove": "Laɲini bɔ a la",
   "alertEdit": "Lasɔmini yɛlɛma",
-  "positionOpenLots": "Hali bɛ i bolo (kɔrɔw fɔlɔ)"
+  "positionOpenLots": "Hali bɛ i bolo (kɔrɔw fɔlɔ)",
+  "lotRemoved": "Sanni walima feereli jɔsira"
 }

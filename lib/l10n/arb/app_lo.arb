@@ -658,5 +658,6 @@
   "portfolioGoalReached": "ບັນລຸເປົ້າໝາຍ {amount} ແລ້ວ",
   "portfolioGoalRemove": "ລຶບເປົ້າໝາຍ",
   "alertEdit": "ແກ້ໄຂການແຈ້ງເຕືອນ",
-  "positionOpenLots": "ຍັງຖືຢູ່ (ເກົ່າສຸດກ່ອນ)"
+  "positionOpenLots": "ຍັງຖືຢູ່ (ເກົ່າສຸດກ່ອນ)",
+  "lotRemoved": "ລຶບທຸລະກຳແລ້ວ"
 }

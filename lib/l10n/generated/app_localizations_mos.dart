@@ -2461,4 +2461,7 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'F ne-a hal masã (kʋdemdã n deng)';
+
+  @override
+  String get lotRemoved => 'Raabã bɩ koosgã yẽesame';
 }

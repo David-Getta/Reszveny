@@ -2477,4 +2477,7 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'تېخى قولىڭىزدا (ئەڭ كونىسى ئالدىدا)';
+
+  @override
+  String get lotRemoved => 'سودا ئۆچۈرۈلدى';
 }

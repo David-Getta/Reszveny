@@ -658,5 +658,6 @@
   "portfolioGoalReached": "היעד של {amount} הושג",
   "portfolioGoalRemove": "הסרת היעד",
   "alertEdit": "עריכת התראה",
-  "positionOpenLots": "עדיין בבעלותך (הוותיקות ביותר קודם)"
+  "positionOpenLots": "עדיין בבעלותך (הוותיקות ביותר קודם)",
+  "lotRemoved": "העסקה נמחקה"
 }

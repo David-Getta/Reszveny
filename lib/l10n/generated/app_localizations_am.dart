@@ -2442,4 +2442,7 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'አሁንም የተያዙ (የቀደሙት መጀመሪያ)';
+
+  @override
+  String get lotRemoved => 'ግብይቱ ተሰርዟል';
 }

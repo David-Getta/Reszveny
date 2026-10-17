@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Ҳадаф иҷро шуд: {amount}",
   "portfolioGoalRemove": "Хориҷ кардани ҳадаф",
   "alertEdit": "Таҳрири огоҳӣ",
-  "positionOpenLots": "Ҳоло дар ихтиёри шумо (аввал қадимтаринҳо)"
+  "positionOpenLots": "Ҳоло дар ихтиёри шумо (аввал қадимтаринҳо)",
+  "lotRemoved": "Амалиёт нест карда шуд"
 }

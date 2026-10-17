@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Tewwḍeḍ ɣer yiswi: {amount}",
   "portfolioGoalRemove": "Kkes iswi",
   "alertEdit": "Ẓreg alɣu",
-  "positionOpenLots": "Mazal ɣur-k (tiqburin d timezwura)"
+  "positionOpenLots": "Mazal ɣur-k (tiqburin d timezwura)",
+  "lotRemoved": "Tiɣin neɣ uznuzu yettwakkes"
 }

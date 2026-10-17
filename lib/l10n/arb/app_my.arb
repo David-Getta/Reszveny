@@ -658,5 +658,6 @@
   "portfolioGoalReached": "ပန်းတိုင် {amount} ပြည့်မီပြီ",
   "portfolioGoalRemove": "ပန်းတိုင် ဖယ်ရှားရန်",
   "alertEdit": "သတိပေးချက် ပြင်ရန်",
-  "positionOpenLots": "ကိုင်ထားဆဲ (အဟောင်းဆုံး ဦးစွာ)"
+  "positionOpenLots": "ကိုင်ထားဆဲ (အဟောင်းဆုံး ဦးစွာ)",
+  "lotRemoved": "အရောင်းအဝယ်ကို ဖျက်လိုက်ပြီ"
 }

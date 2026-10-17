@@ -658,5 +658,6 @@
   "portfolioGoalReached": "ہدف حاصل ہو گیا: {amount}",
   "portfolioGoalRemove": "ہدف ہٹائیں",
   "alertEdit": "الرٹ میں ترمیم کریں",
-  "positionOpenLots": "اب بھی آپ کے پاس (سب سے پرانی پہلے)"
+  "positionOpenLots": "اب بھی آپ کے پاس (سب سے پرانی پہلے)",
+  "lotRemoved": "لین دین حذف کر دیا گیا"
 }

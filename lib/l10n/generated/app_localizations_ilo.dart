@@ -2493,4 +2493,7 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Adda pay kenka (kadaanan nga umuna)';
+
+  @override
+  String get lotRemoved => 'Naikkat ti transaksion';
 }

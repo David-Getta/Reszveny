@@ -2476,4 +2476,7 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'هێشتا لات ماوە (کۆنترین سەرەتا)';
+
+  @override
+  String get lotRemoved => 'مامەڵەکە سڕایەوە';
 }

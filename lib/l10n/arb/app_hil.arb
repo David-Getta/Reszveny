@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Naabot ang tulumuron nga {amount}",
   "portfolioGoalRemove": "Kuhaa ang tulumuron",
   "alertEdit": "I-edit ang alerto",
-  "positionOpenLots": "Ginakaptan pa (pinakadaan anay)"
+  "positionOpenLots": "Ginakaptan pa (pinakadaan anay)",
+  "lotRemoved": "Napanas ang transaksyon"
 }

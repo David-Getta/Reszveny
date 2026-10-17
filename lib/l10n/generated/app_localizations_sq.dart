@@ -2481,4 +2481,7 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Ende në zotërim (më të vjetrat së pari)';
+
+  @override
+  String get lotRemoved => 'Transaksioni u fshi';
 }

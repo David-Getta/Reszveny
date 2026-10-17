@@ -658,5 +658,6 @@
   "portfolioGoalReached": "موخې ته ورسېدئ: {amount}",
   "portfolioGoalRemove": "موخه لرې کړئ",
   "alertEdit": "خبرتیا سمه کړئ",
-  "positionOpenLots": "لا هم ستاسو سره (تر ټولو زاړه لومړی)"
+  "positionOpenLots": "لا هم ستاسو سره (تر ټولو زاړه لومړی)",
+  "lotRemoved": "راکړه ورکړه ړنګه شوه"
 }

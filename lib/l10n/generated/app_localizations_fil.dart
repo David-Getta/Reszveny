@@ -2481,4 +2481,7 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Hawak pa (pinakaluma muna)';
+
+  @override
+  String get lotRemoved => 'Nabura ang transaksyon';
 }

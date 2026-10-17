@@ -658,5 +658,6 @@
   "portfolioGoalReached": "དམིགས་ཚད་ལ་སླེབས་སོང་། {amount}",
   "portfolioGoalRemove": "དམིགས་ཚད་སུབ",
   "alertEdit": "ཉེན་བརྡ་རྩོམ་སྒྲིག",
-  "positionOpenLots": "ད་དུང་ཉར་ཡོད་པ། (རྙིང་ཤོས་སྔོན་ལ།)"
+  "positionOpenLots": "ད་དུང་ཉར་ཡོད་པ། (རྙིང་ཤོས་སྔོན་ལ།)",
+  "lotRemoved": "ཉོ་འཚོང་བསུབས་ཟིན"
 }

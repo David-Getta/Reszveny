@@ -2475,4 +2475,7 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Henizem elinde bar (ilki iň könesi)';
+
+  @override
+  String get lotRemoved => 'Amal pozuldy';
 }

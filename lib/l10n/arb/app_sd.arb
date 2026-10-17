@@ -658,5 +658,6 @@
   "portfolioGoalReached": "مقصد حاصل ٿيو: {amount}",
   "portfolioGoalRemove": "مقصد هٽايو",
   "alertEdit": "الرٽ ۾ ترميم ڪريو",
-  "positionOpenLots": "اڃا توهان وٽ (سڀ کان پراڻا پهريان)"
+  "positionOpenLots": "اڃا توهان وٽ (سڀ کان پراڻا پهريان)",
+  "lotRemoved": "ليڻ دين ميٽيو ويو"
 }

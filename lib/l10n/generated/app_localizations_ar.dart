@@ -2530,4 +2530,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'لا تزال بحوزتك (الأقدم أولًا)';
+
+  @override
+  String get lotRemoved => 'تم حذف المعاملة';
 }

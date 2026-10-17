@@ -2473,4 +2473,7 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'এখনও ধরে রাখা (সবচেয়ে পুরোনো আগে)';
+
+  @override
+  String get lotRemoved => 'লেনদেন মুছে ফেলা হয়েছে';
 }

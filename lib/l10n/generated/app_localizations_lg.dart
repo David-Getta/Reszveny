@@ -2485,4 +2485,7 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Bikyali byo (ebyasooka okusooka)';
+
+  @override
+  String get lotRemoved => 'Ekyaguliddwa oba ekyatundiddwa kisanguddwawo';
 }

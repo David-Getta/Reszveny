@@ -2482,4 +2482,7 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Bidi anu ne bebe (bia kale kumpala)';
+
+  @override
+  String get lotRemoved => 'Kusumba anyi kusumbisha kuajimijibua';
 }

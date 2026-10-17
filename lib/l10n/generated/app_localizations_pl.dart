@@ -2542,4 +2542,7 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Nadal posiadane (najpierw najstarsze)';
+
+  @override
+  String get lotRemoved => 'Usunięto transakcję';
 }

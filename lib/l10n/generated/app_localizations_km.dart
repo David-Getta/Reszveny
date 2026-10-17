@@ -2454,4 +2454,7 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'នៅកាន់កាប់ (ចាស់បំផុតមុន)';
+
+  @override
+  String get lotRemoved => 'បានលុបប្រតិបត្តិការ';
 }

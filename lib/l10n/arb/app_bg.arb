@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Целта от {amount} е постигната",
   "portfolioGoalRemove": "Премахни целта",
   "alertEdit": "Редактирай известие",
-  "positionOpenLots": "Все още притежавани (първо най-старите)"
+  "positionOpenLots": "Все още притежавани (първо най-старите)",
+  "lotRemoved": "Транзакцията е изтрита"
 }

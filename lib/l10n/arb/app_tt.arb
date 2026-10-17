@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Максатка ирешелде: {amount}",
   "portfolioGoalRemove": "Максатны бетерү",
   "alertEdit": "Искәртүне үзгәртү",
-  "positionOpenLots": "Һаман сездә (башта иң искеләре)"
+  "positionOpenLots": "Һаман сездә (башта иң искеләре)",
+  "lotRemoved": "Операция бетерелде"
 }

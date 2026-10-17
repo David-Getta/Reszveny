@@ -2479,4 +2479,7 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Hali ham qoʻlingizda (avval eng eskilari)';
+
+  @override
+  String get lotRemoved => 'Operatsiya oʻchirildi';
 }

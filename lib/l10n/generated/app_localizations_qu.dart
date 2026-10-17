@@ -2489,4 +2489,7 @@ class AppLocalizationsQu extends AppLocalizations {
   @override
   String get positionOpenLots =>
       'Kunankama hap\'isqa (aswan ñawpaqkuna ñawpaqta)';
+
+  @override
+  String get lotRemoved => 'Rantiy rantikuyqa pichasqaña';
 }

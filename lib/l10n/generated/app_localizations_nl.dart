@@ -2479,4 +2479,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Nog in bezit (oudste eerst)';
+
+  @override
+  String get lotRemoved => 'Transactie verwijderd';
 }

@@ -2473,4 +2473,7 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Stadig ejet (ældste først)';
+
+  @override
+  String get lotRemoved => 'Transaktionen er slettet';
 }

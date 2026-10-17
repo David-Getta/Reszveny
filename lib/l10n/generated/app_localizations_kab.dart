@@ -2473,4 +2473,7 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Mazal ɣur-k (tiqburin d timezwura)';
+
+  @override
+  String get lotRemoved => 'Tiɣin neɣ uznuzu yettwakkes';
 }

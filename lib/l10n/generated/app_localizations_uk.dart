@@ -2543,4 +2543,7 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Ще в портфелі (спершу найдавніші)';
+
+  @override
+  String get lotRemoved => 'Операцію видалено';
 }

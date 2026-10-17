@@ -2484,4 +2484,7 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Kusekuwe (okudala kakhulu kuqala)';
+
+  @override
+  String get lotRemoved => 'Ukuthenga noma ukuthengisa kususiwe';
 }

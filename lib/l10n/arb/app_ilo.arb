@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Nagun-od ti panggep a {amount}",
   "portfolioGoalRemove": "Ikkaten ti panggep",
   "alertEdit": "I-edit ti alerto",
-  "positionOpenLots": "Adda pay kenka (kadaanan nga umuna)"
+  "positionOpenLots": "Adda pay kenka (kadaanan nga umuna)",
+  "lotRemoved": "Naikkat ti transaksion"
 }

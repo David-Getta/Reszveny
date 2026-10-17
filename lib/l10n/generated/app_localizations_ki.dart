@@ -2475,4 +2475,7 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Ũrĩ naguo o na rĩu (ma tene mbere)';
+
+  @override
+  String get lotRemoved => 'Ũgũri kana ũendia weherio';
 }

@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Мақсат орындалды: {amount}",
   "portfolioGoalRemove": "Мақсатты жою",
   "alertEdit": "Ескертуді өңдеу",
-  "positionOpenLots": "Әлі де қолыңызда (алдымен ең ескілері)"
+  "positionOpenLots": "Әлі де қолыңызда (алдымен ең ескілері)",
+  "lotRemoved": "Операция жойылды"
 }

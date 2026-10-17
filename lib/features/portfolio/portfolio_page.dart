@@ -929,6 +929,8 @@ class _PositionTile extends StatelessWidget {
 /// Egy pozíció tranzakciói (vételek és eladások) törlés-gombbal, fölöttük az
 /// eladás gombja (ha még van birtokolt darab) és a realizált nyereség.
 Future<void> showPurchasesSheet(BuildContext context, Position position, {double? currentPrice}) {
+  // A legutóbb törölt tranzakció (visszavonható, amíg a lap nyitva van).
+  final removed = ValueNotifier<PortfolioLot?>(null);
   return showModalBottomSheet<void>(
     context: context,
     showDragHandle: true,
@@ -940,7 +942,7 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
       final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
       String qty(double q) => fmt.number(q, decimals: q == q.roundToDouble() ? 0 : 4);
       return ListenableBuilder(
-        listenable: services.portfolio,
+        listenable: Listenable.merge([services.portfolio, removed]),
         builder: (context, _) {
           final lots = services.portfolio.lots.where((l) => l.symbol == position.symbol).toList()
             ..sort((a, b) => (b.date ?? DateTime(0)).compareTo(a.date ?? DateTime(0)));
@@ -977,6 +979,26 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
                       ],
                     ),
                   ),
+                  if (removed.value case final r?)
+                    Padding(
+                      key: const ValueKey('lot-removed'),
+                      padding: const EdgeInsets.fromLTRB(20, 0, 12, 8),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Text(l10n.lotRemoved, style: TextStyle(color: p.muted)),
+                          ),
+                          TextButton(
+                            key: const ValueKey('lot-undo'),
+                            onPressed: () {
+                              removed.value = null;
+                              services.portfolio.restore(r);
+                            },
+                            child: Text(l10n.undo),
+                          ),
+                        ],
+                      ),
+                    ),
                   if (now.hasSales)
                     Padding(
                       padding: const EdgeInsets.fromLTRB(20, 0, 20, 8),
@@ -1028,7 +1050,10 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
                       ),
                       subtitle: lot.date == null ? null : Text(fmt.date(lot.date)),
                       trailing: TextButton.icon(
-                        onPressed: () => services.portfolio.remove(lot.id),
+                        onPressed: () {
+                          removed.value = lot;
+                          services.portfolio.remove(lot.id);
+                        },
                         icon: const Icon(Icons.delete_outline_rounded, size: 18),
                         label: Text(l10n.portfolioRemove),
                         style: TextButton.styleFrom(foregroundColor: p.negative),

@@ -658,5 +658,6 @@
   "portfolioGoalReached": "You don hit your {amount} target",
   "portfolioGoalRemove": "Comot target",
   "alertEdit": "Change alert",
-  "positionOpenLots": "Wetin you still hold (oldest first)"
+  "positionOpenLots": "Wetin you still hold (oldest first)",
+  "lotRemoved": "Di buy or sell don delete"
 }

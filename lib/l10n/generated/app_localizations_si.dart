@@ -2472,4 +2472,7 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'තවමත් ඔබ සතු (පැරණිතම ඒවා පළමුව)';
+
+  @override
+  String get lotRemoved => 'ගනුදෙනුව මකා දමන ලදී';
 }

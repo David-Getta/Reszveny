@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Naabot ang layunin: {amount}",
   "portfolioGoalRemove": "Alisin ang layunin",
   "alertEdit": "I-edit ang alerto",
-  "positionOpenLots": "Hawak pa (pinakaluma muna)"
+  "positionOpenLots": "Hawak pa (pinakaluma muna)",
+  "lotRemoved": "Nabura ang transaksyon"
 }

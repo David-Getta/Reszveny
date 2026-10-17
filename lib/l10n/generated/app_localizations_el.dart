@@ -2484,4 +2484,7 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Ακόμη σε κατοχή (πρώτα οι παλαιότερες)';
+
+  @override
+  String get lotRemoved => 'Η συναλλαγή διαγράφηκε';
 }

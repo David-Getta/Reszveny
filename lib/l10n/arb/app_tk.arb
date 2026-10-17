@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Maksada ýetildi: {amount}",
   "portfolioGoalRemove": "Maksady aýyr",
   "alertEdit": "Duýduryşy üýtget",
-  "positionOpenLots": "Henizem elinde bar (ilki iň könesi)"
+  "positionOpenLots": "Henizem elinde bar (ilki iň könesi)",
+  "lotRemoved": "Amal pozuldy"
 }

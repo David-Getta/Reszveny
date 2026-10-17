@@ -2470,4 +2470,7 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Ka nọ n\'aka gị (ndị ochie mbụ)';
+
+  @override
+  String get lotRemoved => 'E hichapụla azụmahịa ahụ';
 }

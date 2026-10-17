@@ -2396,4 +2396,7 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get positionOpenLots => '保有中（古い順）';
+
+  @override
+  String get lotRemoved => '取引を削除しました';
 }

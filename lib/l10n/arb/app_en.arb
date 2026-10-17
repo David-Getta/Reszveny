@@ -1979,5 +1979,6 @@
   "positionOpenLots": "Still held (oldest first)",
   "@positionOpenLots": {
     "description": "Transactions sheet of a position: heading of the list of purchase lots still held after FIFO sales, each with quantity, buy price, date and gain at today's price."
-  }
+  },
+  "lotRemoved": "Transaction deleted"
 }

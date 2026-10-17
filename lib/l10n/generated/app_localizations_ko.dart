@@ -2405,4 +2405,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get positionOpenLots => '보유 중 (오래된 순)';
+
+  @override
+  String get lotRemoved => '거래를 삭제했습니다';
 }

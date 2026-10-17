@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Lengo la {amount} limefikiwa",
   "portfolioGoalRemove": "Ondoa lengo",
   "alertEdit": "Hariri arifa",
-  "positionOpenLots": "Bado unazo (za zamani zaidi kwanza)"
+  "positionOpenLots": "Bado unazo (za zamani zaidi kwanza)",
+  "lotRemoved": "Muamala umefutwa"
 }

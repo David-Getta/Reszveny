@@ -658,5 +658,6 @@
   "portfolioGoalReached": "O ti dé àfojúsùn: {amount}",
   "portfolioGoalRemove": "Yọ àfojúsùn kúrò",
   "alertEdit": "Ṣàtúnṣe ìkìlọ̀",
-  "positionOpenLots": "Ṣì wà lọ́wọ́ rẹ (èyí tó pẹ́ jù lọ kọ́kọ́)"
+  "positionOpenLots": "Ṣì wà lọ́wọ́ rẹ (èyí tó pẹ́ jù lọ kọ́kọ́)",
+  "lotRemoved": "A ti pa ìdúnàdúrà rẹ́"
 }

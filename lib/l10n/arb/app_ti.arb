@@ -658,5 +658,6 @@
   "portfolioGoalReached": "ዕላማ ተወቒዑ፦ {amount}",
   "portfolioGoalRemove": "ዕላማ ኣልግስ",
   "alertEdit": "መጠንቀቕታ ኣመዓራሪ",
-  "positionOpenLots": "ገና ኣብ ኢድኩም ዘለዉ (ዝኣረጉ መጀመርታ)"
+  "positionOpenLots": "ገና ኣብ ኢድኩም ዘለዉ (ዝኣረጉ መጀመርታ)",
+  "lotRemoved": "ልውውጥ ተሰሪዙ"
 }

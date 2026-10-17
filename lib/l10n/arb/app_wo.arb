@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Agsi nga ci sa jublu: {amount}",
   "portfolioGoalRemove": "Far jublu bi",
   "alertEdit": "Soppi artu bi",
-  "positionOpenLots": "Ñu ngi ci sa loxo ba tey (yi gën a yàgg jëkk)"
+  "positionOpenLots": "Ñu ngi ci sa loxo ba tey (yi gën a yàgg jëkk)",
+  "lotRemoved": "Far nañu jënd walla jaay bi"
 }

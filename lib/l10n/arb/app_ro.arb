@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Obiectivul de {amount} a fost atins",
   "portfolioGoalRemove": "Elimină obiectivul",
   "alertEdit": "Editează alerta",
-  "positionOpenLots": "Încă deținute (cele mai vechi întâi)"
+  "positionOpenLots": "Încă deținute (cele mai vechi întâi)",
+  "lotRemoved": "Tranzacția a fost ștearsă"
 }

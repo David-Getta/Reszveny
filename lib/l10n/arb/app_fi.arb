@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Tavoite {amount} saavutettu",
   "portfolioGoalRemove": "Poista tavoite",
   "alertEdit": "Muokkaa hälytystä",
-  "positionOpenLots": "Yhä hallussa (vanhimmat ensin)"
+  "positionOpenLots": "Yhä hallussa (vanhimmat ensin)",
+  "lotRemoved": "Tapahtuma poistettu"
 }

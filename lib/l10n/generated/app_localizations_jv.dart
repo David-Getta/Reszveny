@@ -2477,4 +2477,7 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Isih dicekel (sing paling lawas dhisik)';
+
+  @override
+  String get lotRemoved => 'Transaksi wis dibusak';
 }

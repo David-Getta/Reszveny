@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Muoroto nĩ wakinyĩrwo: {amount}",
   "portfolioGoalRemove": "Ruta muoroto",
   "alertEdit": "Garũra kĩmenyithia",
-  "positionOpenLots": "Ũrĩ naguo o na rĩu (ma tene mbere)"
+  "positionOpenLots": "Ũrĩ naguo o na rĩu (ma tene mbere)",
+  "lotRemoved": "Ũgũri kana ũendia weherio"
 }

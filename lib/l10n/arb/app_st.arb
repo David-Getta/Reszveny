@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Sepheo se fihletswe: {amount}",
   "portfolioGoalRemove": "Tlosa sepheo",
   "alertEdit": "Fetola tsebiso",
-  "positionOpenLots": "E ntse e le tsa hao (tsa kgale pele)"
+  "positionOpenLots": "E ntse e le tsa hao (tsa kgale pele)",
+  "lotRemoved": "Theko kapa thekiso e hlakotswe"
 }

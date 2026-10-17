@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Objektivi u arrit: {amount}",
   "portfolioGoalRemove": "Hiq objektivin",
   "alertEdit": "Ndrysho alarmin",
-  "positionOpenLots": "Ende në zotërim (më të vjetrat së pari)"
+  "positionOpenLots": "Ende në zotërim (më të vjetrat së pari)",
+  "lotRemoved": "Transaksioni u fshi"
 }

@@ -2471,4 +2471,7 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'هنوز در اختیار (قدیمی‌ترین‌ها اول)';
+
+  @override
+  String get lotRemoved => 'تراکنش حذف شد';
 }

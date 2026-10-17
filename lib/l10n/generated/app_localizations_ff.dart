@@ -2469,4 +2469,7 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Ina woodi haa jooni (ɓurɗi ƙiɗɗude adan)';
+
+  @override
+  String get lotRemoved => 'Soodgol walla yeeyugol momtaama';
 }

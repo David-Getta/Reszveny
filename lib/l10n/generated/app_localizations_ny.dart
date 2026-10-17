@@ -2481,4 +2481,7 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Zikadali zanu (zakale kwambiri poyamba)';
+
+  @override
+  String get lotRemoved => 'Kugula kapena kugulitsa kwachotsedwa';
 }

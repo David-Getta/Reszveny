@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Raabã paame: {amount}",
   "portfolioGoalRemove": "Yiis raabã",
   "alertEdit": "Toeem gũusgo",
-  "positionOpenLots": "F ne-a hal masã (kʋdemdã n deng)"
+  "positionOpenLots": "F ne-a hal masã (kʋdemdã n deng)",
+  "lotRemoved": "Raabã bɩ koosgã yẽesame"
 }

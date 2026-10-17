@@ -2476,4 +2476,7 @@ class AppLocalizationsMn extends AppLocalizations {
   @override
   String get positionOpenLots =>
       'Одоо ч эзэмшиж буй (хамгийн эртнийх нь эхэндээ)';
+
+  @override
+  String get lotRemoved => 'Гүйлгээг устгалаа';
 }

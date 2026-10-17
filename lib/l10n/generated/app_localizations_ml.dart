@@ -2484,4 +2484,7 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'ഇപ്പോഴും കൈവശമുള്ളവ (പഴയവ ആദ്യം)';
+
+  @override
+  String get lotRemoved => 'ഇടപാട് ഇല്ലാതാക്കി';
 }

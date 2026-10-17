@@ -2490,4 +2490,7 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Sa le go wena (tša kgale pele)';
+
+  @override
+  String get lotRemoved => 'Thekišano e phumotšwe';
 }

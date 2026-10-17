@@ -2480,4 +2480,7 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Zvichiri zvako (zvekare kare kutanga)';
+
+  @override
+  String get lotRemoved => 'Kutenga kana kutengesa kwadzimwa';
 }

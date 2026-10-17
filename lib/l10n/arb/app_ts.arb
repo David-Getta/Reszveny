@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Xikongomelo xi fikeleriwile: {amount}",
   "portfolioGoalRemove": "Susa xikongomelo",
   "alertEdit": "Cinca xitiviso",
-  "positionOpenLots": "Swa ha ri swa wena (swa khale ku sungula)"
+  "positionOpenLots": "Swa ha ri swa wena (swa khale ku sungula)",
+  "lotRemoved": "Xixaviwa kumbe xixavisiwa xi suriwile"
 }

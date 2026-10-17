@@ -2480,4 +2480,7 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'ఇంకా ఉన్నవి (పాతవి ముందుగా)';
+
+  @override
+  String get lotRemoved => 'లావాదేవీ తొలగించబడింది';
 }

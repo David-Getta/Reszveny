@@ -658,5 +658,6 @@
   "portfolioGoalReached": "লক্ষ্য পূৰণ হ'ল: {amount}",
   "portfolioGoalRemove": "লক্ষ্য আঁতৰাওক",
   "alertEdit": "সতৰ্কবাণী সম্পাদনা কৰক",
-  "positionOpenLots": "এতিয়াও ধৰি ৰখা (পুৰণিখিনি প্ৰথমে)"
+  "positionOpenLots": "এতিয়াও ধৰি ৰখা (পুৰণিখিনি প্ৰথমে)",
+  "lotRemoved": "লেনদেন মচা হ'ল"
 }

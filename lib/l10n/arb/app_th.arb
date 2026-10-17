@@ -658,5 +658,6 @@
   "portfolioGoalReached": "ถึงเป้าหมาย {amount} แล้ว",
   "portfolioGoalRemove": "ลบเป้าหมาย",
   "alertEdit": "แก้ไขการแจ้งเตือน",
-  "positionOpenLots": "ยังถืออยู่ (เก่าสุดก่อน)"
+  "positionOpenLots": "ยังถืออยู่ (เก่าสุดก่อน)",
+  "lotRemoved": "ลบรายการซื้อขายแล้ว"
 }

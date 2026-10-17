@@ -658,5 +658,6 @@
   "portfolioGoalReached": "ଲକ୍ଷ୍ୟ ପୂରଣ ହେଲା: {amount}",
   "portfolioGoalRemove": "ଲକ୍ଷ୍ୟ ହଟାନ୍ତୁ",
   "alertEdit": "ଆଲର୍ଟ ଏଡିଟ କରନ୍ତୁ",
-  "positionOpenLots": "ଏବେ ବି ଧରି ରଖିଥିବା (ସବୁଠାରୁ ପୁରୁଣା ପ୍ରଥମେ)"
+  "positionOpenLots": "ଏବେ ବି ଧରି ରଖିଥିବା (ସବୁଠାରୁ ପୁରୁଣା ପ୍ରଥମେ)",
+  "lotRemoved": "କାରବାର ଡିଲିଟ ହେଲା"
 }

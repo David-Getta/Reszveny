@@ -2480,4 +2480,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Aún en cartera (primero las más antiguas)';
+
+  @override
+  String get lotRemoved => 'Transacción eliminada';
 }

@@ -2483,4 +2483,7 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Ammas harka kee jira (kan durii jalqaba)';
+
+  @override
+  String get lotRemoved => 'Bittaan ykn gurgurtaan haqameera';
 }

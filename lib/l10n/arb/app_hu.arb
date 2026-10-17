@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Cél elérve: {amount}",
   "portfolioGoalRemove": "Cél törlése",
   "alertEdit": "Riasztás módosítása",
-  "positionOpenLots": "Még meglévő tételek (a legrégebbi elöl)"
+  "positionOpenLots": "Még meglévő tételek (a legrégebbi elöl)",
+  "lotRemoved": "Tranzakció törölve"
 }

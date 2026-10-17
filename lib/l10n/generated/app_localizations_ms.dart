@@ -2479,4 +2479,7 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Masih dipegang (tertua dahulu)';
+
+  @override
+  String get lotRemoved => 'Transaksi dipadam';
 }

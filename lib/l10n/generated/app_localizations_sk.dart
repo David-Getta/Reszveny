@@ -2539,4 +2539,7 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Stále držané (najstaršie prvé)';
+
+  @override
+  String get lotRemoved => 'Transakcia bola odstránená';
 }

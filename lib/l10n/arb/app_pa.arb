@@ -658,5 +658,6 @@
   "portfolioGoalReached": "ਟੀਚਾ ਪੂਰਾ ਹੋਇਆ: {amount}",
   "portfolioGoalRemove": "ਟੀਚਾ ਹਟਾਓ",
   "alertEdit": "ਅਲਰਟ ਸੋਧੋ",
-  "positionOpenLots": "ਅਜੇ ਵੀ ਤੁਹਾਡੇ ਕੋਲ (ਸਭ ਤੋਂ ਪੁਰਾਣੀਆਂ ਪਹਿਲਾਂ)"
+  "positionOpenLots": "ਅਜੇ ਵੀ ਤੁਹਾਡੇ ਕੋਲ (ਸਭ ਤੋਂ ਪੁਰਾਣੀਆਂ ਪਹਿਲਾਂ)",
+  "lotRemoved": "ਲੈਣ-ਦੇਣ ਮਿਟਾਇਆ ਗਿਆ"
 }

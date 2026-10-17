@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Washikiye ku ntumbero: {amount}",
   "portfolioGoalRemove": "Kuramwo intumbero",
   "alertEdit": "Hindura imenyesha",
-  "positionOpenLots": "Ivyo ukigumana (ivya kera imbere)"
+  "positionOpenLots": "Ivyo ukigumana (ivya kera imbere)",
+  "lotRemoved": "Igikorwa co kugura canke kugurisha cafuswe"
 }

@@ -2470,4 +2470,7 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'હજુ પણ ધરાવેલા (સૌથી જૂના પહેલા)';
+
+  @override
+  String get lotRemoved => 'વ્યવહાર કાઢી નાખ્યો';
 }

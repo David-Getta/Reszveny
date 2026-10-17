@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Tratra ny tanjona: {amount}",
   "portfolioGoalRemove": "Esory ny tanjona",
   "alertEdit": "Ovay ny fanairana",
-  "positionOpenLots": "Mbola anananao (ny tranainy indrindra aloha)"
+  "positionOpenLots": "Mbola anananao (ny tranainy indrindra aloha)",
+  "lotRemoved": "Voafafa ny fividianana na fivarotana"
 }

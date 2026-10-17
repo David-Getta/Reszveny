@@ -2540,4 +2540,7 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Яшчэ ў партфелі (спачатку старэйшыя)';
+
+  @override
+  String get lotRemoved => 'Аперацыя выдалена';
 }

@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Зорилт биелсэн: {amount}",
   "portfolioGoalRemove": "Зорилт хасах",
   "alertEdit": "Сэрэмжлүүлэг засах",
-  "positionOpenLots": "Одоо ч эзэмшиж буй (хамгийн эртнийх нь эхэндээ)"
+  "positionOpenLots": "Одоо ч эзэмшиж буй (хамгийн эртнийх нь эхэндээ)",
+  "lotRemoved": "Гүйлгээг устгалаа"
 }

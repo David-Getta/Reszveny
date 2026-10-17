@@ -2475,4 +2475,7 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Wetin you still hold (oldest first)';
+
+  @override
+  String get lotRemoved => 'Di buy or sell don delete';
 }

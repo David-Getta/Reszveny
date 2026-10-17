@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Okokisi mokano: {amount}",
   "portfolioGoalRemove": "Longola mokano",
   "alertEdit": "Bongola likebisi",
-  "positionOpenLots": "Ezali naino na yo (ya kala liboso)"
+  "positionOpenLots": "Ezali naino na yo (ya kala liboso)",
+  "lotRemoved": "Bosombi to boteki elimwisami"
 }

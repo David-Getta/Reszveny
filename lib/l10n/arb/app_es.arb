@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Objetivo de {amount} alcanzado",
   "portfolioGoalRemove": "Eliminar objetivo",
   "alertEdit": "Editar alerta",
-  "positionOpenLots": "Aún en cartera (primero las más antiguas)"
+  "positionOpenLots": "Aún en cartera (primero las más antiguas)",
+  "lotRemoved": "Transacción eliminada"
 }

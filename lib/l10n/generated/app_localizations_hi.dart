@@ -2473,4 +2473,7 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'अभी भी आपके पास (सबसे पुरानी पहले)';
+
+  @override
+  String get lotRemoved => 'लेन-देन हटाया गया';
 }

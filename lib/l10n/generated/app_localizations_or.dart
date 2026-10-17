@@ -2472,4 +2472,7 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'ଏବେ ବି ଧରି ରଖିଥିବା (ସବୁଠାରୁ ପୁରୁଣା ପ୍ରଥମେ)';
+
+  @override
+  String get lotRemoved => 'କାରବାର ଡିଲିଟ ହେଲା';
 }

@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Umgomo ufinyelelwe: {amount}",
   "portfolioGoalRemove": "Susa umgomo",
   "alertEdit": "Hlela isexwayiso",
-  "positionOpenLots": "Kusekuwe (okudala kakhulu kuqala)"
+  "positionOpenLots": "Kusekuwe (okudala kakhulu kuqala)",
+  "lotRemoved": "Ukuthenga noma ukuthengisa kususiwe"
 }

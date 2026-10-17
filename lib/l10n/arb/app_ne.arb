@@ -658,5 +658,6 @@
   "portfolioGoalReached": "लक्ष्य पूरा भयो: {amount}",
   "portfolioGoalRemove": "लक्ष्य हटाउनुहोस्",
   "alertEdit": "अलर्ट सम्पादन गर्नुहोस्",
-  "positionOpenLots": "अझै तपाईंसँग (सबैभन्दा पुरानो पहिले)"
+  "positionOpenLots": "अझै तपाईंसँग (सबैभन्दा पुरानो पहिले)",
+  "lotRemoved": "कारोबार मेटाइयो"
 }

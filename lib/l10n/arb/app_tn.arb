@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Maikaelelo a fitlheletswe: {amount}",
   "portfolioGoalRemove": "Tlosa maikaelelo",
   "alertEdit": "Fetola kitsiso",
-  "positionOpenLots": "Tse o santse o na le tsone (tsa bogologolo pele)"
+  "positionOpenLots": "Tse o santse o na le tsone (tsa bogologolo pele)",
+  "lotRemoved": "Theko kgotsa thekiso e phimotswe"
 }

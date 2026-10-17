@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Target {amount} kahontal",
   "portfolioGoalRemove": "Hapus target",
   "alertEdit": "Robah béwara",
-  "positionOpenLots": "Masih dicekel (nu pangkolotna heula)"
+  "positionOpenLots": "Masih dicekel (nu pangkolotna heula)",
+  "lotRemoved": "Transaksi geus dipupus"
 }

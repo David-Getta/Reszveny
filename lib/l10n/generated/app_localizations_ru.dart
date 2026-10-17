@@ -2542,4 +2542,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Ещё в портфеле (сначала самые ранние)';
+
+  @override
+  String get lotRemoved => 'Сделка удалена';
 }

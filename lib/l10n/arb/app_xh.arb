@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Usukelo lufikelelwe: {amount}",
   "portfolioGoalRemove": "Susa usukelo",
   "alertEdit": "Hlela isilumkiso",
-  "positionOpenLots": "Zisekuwe (ezona zindala kuqala)"
+  "positionOpenLots": "Zisekuwe (ezona zindala kuqala)",
+  "lotRemoved": "Intengiselwano icinyiwe"
 }

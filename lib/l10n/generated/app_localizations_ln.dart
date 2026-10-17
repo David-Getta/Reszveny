@@ -2486,4 +2486,7 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Ezali naino na yo (ya kala liboso)';
+
+  @override
+  String get lotRemoved => 'Bosombi to boteki elimwisami';
 }

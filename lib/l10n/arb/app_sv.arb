@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Målet på {amount} är nått",
   "portfolioGoalRemove": "Ta bort mål",
   "alertEdit": "Redigera larm",
-  "positionOpenLots": "Fortfarande ägda (äldsta först)"
+  "positionOpenLots": "Fortfarande ägda (äldsta först)",
+  "lotRemoved": "Transaktionen har raderats"
 }

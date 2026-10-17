@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Tshipatshila tshikumbaja: {amount}",
   "portfolioGoalRemove": "Umbusha tshipatshila",
   "alertEdit": "Shintulula alerte",
-  "positionOpenLots": "Bidi anu ne bebe (bia kale kumpala)"
+  "positionOpenLots": "Bidi anu ne bebe (bia kale kumpala)",
+  "lotRemoved": "Kusumba anyi kusumbisha kuajimijibua"
 }

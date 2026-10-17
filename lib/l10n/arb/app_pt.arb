@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Meta de {amount} atingida",
   "portfolioGoalRemove": "Remover meta",
   "alertEdit": "Editar alerta",
-  "positionOpenLots": "Ainda em carteira (mais antigas primeiro)"
+  "positionOpenLots": "Ainda em carteira (mais antigas primeiro)",
+  "lotRemoved": "Transação excluída"
 }

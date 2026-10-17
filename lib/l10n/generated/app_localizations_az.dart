@@ -2477,4 +2477,7 @@ class AppLocalizationsAz extends AppLocalizations {
   @override
   String get positionOpenLots =>
       'Hələ də əlinizdə olanlar (əvvəlcə ən köhnələr)';
+
+  @override
+  String get lotRemoved => 'Əməliyyat silindi';
 }

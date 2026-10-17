@@ -4290,6 +4290,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Still held (oldest first)'**
   String get positionOpenLots;
+
+  /// No description provided for @lotRemoved.
+  ///
+  /// In en, this message translates to:
+  /// **'Transaction deleted'**
+  String get lotRemoved;
 }
 
 class _AppLocalizationsDelegate

@@ -2463,4 +2463,7 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'ད་དུང་ཉར་ཡོད་པ། (རྙིང་ཤོས་སྔོན་ལ།)';
+
+  @override
+  String get lotRemoved => 'ཉོ་འཚོང་བསུབས་ཟིན';
 }

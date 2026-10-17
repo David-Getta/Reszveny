@@ -2478,4 +2478,7 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Nog besit (oudste eerste)';
+
+  @override
+  String get lotRemoved => 'Transaksie uitgevee';
 }

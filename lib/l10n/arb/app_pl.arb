@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Cel osiągnięty: {amount}",
   "portfolioGoalRemove": "Usuń cel",
   "alertEdit": "Edytuj alert",
-  "positionOpenLots": "Nadal posiadane (najpierw najstarsze)"
+  "positionOpenLots": "Nadal posiadane (najpierw najstarsze)",
+  "lotRemoved": "Usunięto transakcję"
 }

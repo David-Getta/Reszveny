@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Emezuru ebumnuche: {amount}",
   "portfolioGoalRemove": "Wepụ ebumnuche",
   "alertEdit": "Dezie ọkwa",
-  "positionOpenLots": "Ka nọ n'aka gị (ndị ochie mbụ)"
+  "positionOpenLots": "Ka nọ n'aka gị (ndị ochie mbụ)",
+  "lotRemoved": "E hichapụla azụmahịa ahụ"
 }

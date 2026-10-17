@@ -2489,4 +2489,7 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'E ntse e le tsa hao (tsa kgale pele)';
+
+  @override
+  String get lotRemoved => 'Theko kapa thekiso e hlakotswe';
 }

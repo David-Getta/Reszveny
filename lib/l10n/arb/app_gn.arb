@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Rehupytýma jehupytyrã: {amount}",
   "portfolioGoalRemove": "Embogue jehupytyrã",
   "alertEdit": "Emoambue maranduʼi",
-  "positionOpenLots": "Oĩ gueteri nde pópe (tujavéva raẽ)"
+  "positionOpenLots": "Oĩ gueteri nde pópe (tujavéva raẽ)",
+  "lotRemoved": "Oñemboguete jejogua térã ñemu"
 }

@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Ціль {amount} досягнуто",
   "portfolioGoalRemove": "Видалити ціль",
   "alertEdit": "Редагувати сповіщення",
-  "positionOpenLots": "Ще в портфелі (спершу найдавніші)"
+  "positionOpenLots": "Ще в портфелі (спершу найдавніші)",
+  "lotRemoved": "Операцію видалено"
 }

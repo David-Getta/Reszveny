@@ -2470,4 +2470,7 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'अबहिंयो रउआ लगे (सबसे पुरान पहिले)';
+
+  @override
+  String get lotRemoved => 'लेन-देन मिटा दिहल गइल';
 }

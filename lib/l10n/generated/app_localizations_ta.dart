@@ -2484,4 +2484,7 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'இன்னும் வைத்திருப்பவை (பழையவை முதலில்)';
+
+  @override
+  String get lotRemoved => 'பரிவர்த்தனை நீக்கப்பட்டது';
 }

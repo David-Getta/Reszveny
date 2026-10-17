@@ -2513,4 +2513,7 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Încă deținute (cele mai vechi întâi)';
+
+  @override
+  String get lotRemoved => 'Tranzacția a fost ștearsă';
 }

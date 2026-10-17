@@ -2535,4 +2535,7 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Stále držené (nejstarší první)';
+
+  @override
+  String get lotRemoved => 'Transakce smazána';
 }

@@ -2486,4 +2486,7 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Zisekuwe (ezona zindala kuqala)';
+
+  @override
+  String get lotRemoved => 'Intengiselwano icinyiwe';
 }

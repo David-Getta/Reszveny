@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Cieľ {amount} splnený",
   "portfolioGoalRemove": "Odstrániť cieľ",
   "alertEdit": "Upraviť upozornenie",
-  "positionOpenLots": "Stále držané (najstaršie prvé)"
+  "positionOpenLots": "Stále držané (najstaršie prvé)",
+  "lotRemoved": "Transakcia bola odstránená"
 }

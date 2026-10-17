@@ -2520,4 +2520,7 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Још у поседу (прво најстарије)';
+
+  @override
+  String get lotRemoved => 'Трансакција је обрисана';
 }

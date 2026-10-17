@@ -2448,4 +2448,7 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'ຍັງຖືຢູ່ (ເກົ່າສຸດກ່ອນ)';
+
+  @override
+  String get lotRemoved => 'ລຶບທຸລະກຳແລ້ວ';
 }

@@ -658,5 +658,6 @@
   "portfolioGoalReached": "تم بلوغ الهدف: {amount}",
   "portfolioGoalRemove": "إزالة الهدف",
   "alertEdit": "تعديل التنبيه",
-  "positionOpenLots": "لا تزال بحوزتك (الأقدم أولًا)"
+  "positionOpenLots": "لا تزال بحوزتك (الأقدم أولًا)",
+  "lotRemoved": "تم حذف المعاملة"
 }

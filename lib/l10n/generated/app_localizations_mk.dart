@@ -2494,4 +2494,7 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Сè уште во сопственост (прво најстарите)';
+
+  @override
+  String get lotRemoved => 'Трансакцијата е избришана';
 }

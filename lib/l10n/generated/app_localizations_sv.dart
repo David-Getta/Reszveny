@@ -2476,4 +2476,7 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Fortfarande ägda (äldsta först)';
+
+  @override
+  String get lotRemoved => 'Transaktionen har raderats';
 }

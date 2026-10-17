@@ -2480,4 +2480,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Ancora in portafoglio (prima i più vecchi)';
+
+  @override
+  String get lotRemoved => 'Transazione eliminata';
 }

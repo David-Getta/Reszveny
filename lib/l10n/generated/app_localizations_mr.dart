@@ -2474,4 +2474,7 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'अजूनही तुमच्याकडे (सर्वात जुनी आधी)';
+
+  @override
+  String get lotRemoved => 'व्यवहार हटवला';
 }

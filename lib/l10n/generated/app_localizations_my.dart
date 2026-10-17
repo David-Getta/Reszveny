@@ -2466,4 +2466,7 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'ကိုင်ထားဆဲ (အဟောင်းဆုံး ဦးစွာ)';
+
+  @override
+  String get lotRemoved => 'အရောင်းအဝယ်ကို ဖျက်လိုက်ပြီ';
 }

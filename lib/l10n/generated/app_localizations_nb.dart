@@ -2475,4 +2475,7 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Fortsatt eid (eldste først)';
+
+  @override
+  String get lotRemoved => 'Transaksjonen er slettet';
 }

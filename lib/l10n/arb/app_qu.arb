@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Hayparinaman chayarqanki: {amount}",
   "portfolioGoalRemove": "Hayparinata hurquy",
   "alertEdit": "Willachiyta allichay",
-  "positionOpenLots": "Kunankama hap'isqa (aswan ñawpaqkuna ñawpaqta)"
+  "positionOpenLots": "Kunankama hap'isqa (aswan ñawpaqkuna ñawpaqta)",
+  "lotRemoved": "Rantiy rantikuyqa pichasqaña"
 }

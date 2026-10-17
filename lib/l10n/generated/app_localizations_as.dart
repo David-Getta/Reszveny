@@ -2473,4 +2473,7 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'এতিয়াও ধৰি ৰখা (পুৰণিখিনি প্ৰথমে)';
+
+  @override
+  String get lotRemoved => 'লেনদেন মচা হ\'ল';
 }

@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Максат аткарылды: {amount}",
   "portfolioGoalRemove": "Максатты өчүрүү",
   "alertEdit": "Эскертмени түзөтүү",
-  "positionOpenLots": "Дагы эле колуңузда (адегенде эң эскилери)"
+  "positionOpenLots": "Дагы эле колуңузда (адегенде эң эскилери)",
+  "lotRemoved": "Транзакция өчүрүлдү"
 }

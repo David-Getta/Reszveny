@@ -658,5 +658,6 @@
   "portfolioGoalReached": "Ο στόχος επιτεύχθηκε: {amount}",
   "portfolioGoalRemove": "Αφαίρεση στόχου",
   "alertEdit": "Επεξεργασία ειδοποίησης",
-  "positionOpenLots": "Ακόμη σε κατοχή (πρώτα οι παλαιότερες)"
+  "positionOpenLots": "Ακόμη σε κατοχή (πρώτα οι παλαιότερες)",
+  "lotRemoved": "Η συναλλαγή διαγράφηκε"
 }

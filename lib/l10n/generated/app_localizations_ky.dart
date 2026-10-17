@@ -2478,4 +2478,7 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get positionOpenLots => 'Дагы эле колуңузда (адегенде эң эскилери)';
+
+  @override
+  String get lotRemoved => 'Транзакция өчүрүлдү';
 }
