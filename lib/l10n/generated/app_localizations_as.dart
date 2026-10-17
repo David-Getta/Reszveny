@@ -2310,10 +2310,6 @@ class AppLocalizationsAs extends AppLocalizations {
   String get newsExplain => 'ইয়াৰ অৰ্থ কি?';
 
   @override
-  String get newsExplainNote =>
-      'কেৱল শিৰোনাম আৰু সাৰাংশৰ ভিত্তিত AI ব্যাখ্যা। ই বিনিয়োগৰ পৰামৰ্শ নহয়। ই আপোনাৰ দৈনিক প্ৰশ্নৰ সীমাৰ পৰা যায়, কোনো বিশ্লেষণ খৰচ নকৰে।';
-
-  @override
   String get watchAlertAll => 'দৈনিক ডাঙৰ লৰচৰত সতৰ্কবাণী';
 
   @override
@@ -2499,4 +2495,8 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get allocationCountries => 'দেশ';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI ব্যাখ্যা: ই ৱেবত তথ্যবোৰ বিচাৰে, প্ৰবন্ধটো খোলে আৰু উৎসটো কিমান বিশ্বাসযোগ্য তাক বিচাৰ কৰে। ই বিনিয়োগৰ পৰামৰ্শ নহয়। ই আপোনাৰ দৈনিক প্ৰশ্নৰ সীমাৰ পৰা যায়, কোনো বিশ্লেষণ খৰচ নকৰে।';
 }

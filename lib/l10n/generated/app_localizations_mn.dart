@@ -2312,10 +2312,6 @@ class AppLocalizationsMn extends AppLocalizations {
   String get newsExplain => 'Энэ юу гэсэн үг вэ?';
 
   @override
-  String get newsExplainNote =>
-      'Зөвхөн гарчиг болон хураангуйд үндэслэсэн AI-ийн тайлбар. Хөрөнгө оруулалтын зөвлөгөө биш. Өдрийн асуултын хязгаараас тань зарцуулна, шинжилгээ биш.';
-
-  @override
   String get watchAlertAll => 'Өдрийн их хөдөлгөөний сэрэмжлүүлэг';
 
   @override
@@ -2502,4 +2498,8 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Улс';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI-ийн тайлбар: баримтыг вэбээс хайж, нийтлэлийг нээн, эх сурвалж хэр найдвартай болохыг үнэлнэ. Хөрөнгө оруулалтын зөвлөгөө биш. Өдрийн асуултын хязгаараас тань зарцуулна, шинжилгээ биш.';
 }

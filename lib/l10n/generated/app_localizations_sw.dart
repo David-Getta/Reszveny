@@ -2312,10 +2312,6 @@ class AppLocalizationsSw extends AppLocalizations {
   String get newsExplain => 'Hii inamaanisha nini?';
 
   @override
-  String get newsExplainNote =>
-      'Maelezo ya AI yanayotegemea kichwa cha habari na muhtasari wake pekee. Si ushauri wa uwekezaji. Hutumia kikomo chako cha maswali cha kila siku, si uchambuzi.';
-
-  @override
   String get watchAlertAll => 'Arifa kwa mabadiliko makubwa ya siku';
 
   @override
@@ -2501,4 +2497,8 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Nchi';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Maelezo ya AI: hutafuta ukweli mtandaoni, hufungua makala na kutathmini jinsi chanzo kinavyoaminika. Si ushauri wa uwekezaji. Hutumia kikomo chako cha maswali cha kila siku, si uchambuzi.';
 }

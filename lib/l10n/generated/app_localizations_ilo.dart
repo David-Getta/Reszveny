@@ -2329,10 +2329,6 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get newsExplain => 'Ania ti kayat a sawen daytoy?';
 
   @override
-  String get newsExplainNote =>
-      'Panangilawlawag ti AI a naibatay laeng iti paulo ken iti pakabuklanna. Saan a balakad iti panagpuonan. Agusar daytoy iti inaldaw a limitasion dagiti saludsod-mo, saan nga iti panaganalisa.';
-
-  @override
   String get watchAlertAll => 'Pakdaar iti dadakkel nga inaldaw a garaw';
 
   @override
@@ -2519,4 +2515,8 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Pagilian';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Panangilawlawag ti AI: sapulenna dagiti pudno iti web, lukatanna ti artikulo ken timbangenna no kasano a mapagtalkan ti taudan. Saan a balakad iti panagpuonan. Agusar daytoy iti inaldaw a limitasion dagiti saludsod-mo, saan nga iti panaganalisa.';
 }

@@ -2319,10 +2319,6 @@ class AppLocalizationsKg extends AppLocalizations {
   String get newsExplain => 'Yai ke tendula nki?';
 
   @override
-  String get newsExplainNote =>
-      'Ntendula ya AI yina me simbama kaka na ntu ya nsangu ti nsuka na yo. Yo ke malongi ya kutula mbongo ve. Yo ke sadilaka ndilu ya biuvu na nge ya konso kilumbu, ve nsosa.';
-
-  @override
   String get watchAlertAll => 'Lukebisu sambu na nsoba ya nene ya kilumbu';
 
   @override
@@ -2508,4 +2504,8 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Bansi';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Ntendula ya AI: yo ke sosaka bambangu na Internet, ke kangula disolo mpi ke tadilaka nki mutindu ntuku ke ya kukwikama. Yo ke malongi ya kutula mbongo ve. Yo ke sadilaka ndilu ya biuvu na nge ya konso kilumbu, ve nsosa.';
 }

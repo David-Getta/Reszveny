@@ -2311,10 +2311,6 @@ class AppLocalizationsTr extends AppLocalizations {
   String get newsExplain => 'Bu ne anlama geliyor?';
 
   @override
-  String get newsExplainNote =>
-      'Yalnızca başlık ve özete dayanan yapay zekâ açıklaması. Yatırım tavsiyesi değildir. Günlük soru hakkından düşer, analiz hakkı kullanmaz.';
-
-  @override
   String get watchAlertAll => 'Büyük günlük hareketlerde alarm';
 
   @override
@@ -2500,4 +2496,8 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Ülkeler';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Yapay zekâ açıklaması: Bilgileri web’de araştırır, haberi açar ve kaynağın ne kadar güvenilir olduğunu değerlendirir. Yatırım tavsiyesi değildir. Günlük soru hakkından düşer, analiz hakkı kullanmaz.';
 }

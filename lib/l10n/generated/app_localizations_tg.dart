@@ -2313,10 +2313,6 @@ class AppLocalizationsTg extends AppLocalizations {
   String get newsExplain => 'Ин чӣ маъно дорад?';
 
   @override
-  String get newsExplainNote =>
-      'Шарҳи AI танҳо дар асоси сарлавҳа ва хулосаи он. Маслиҳати сармоягузорӣ нест. Аз ҳадди саволҳои ҳаррӯзаи шумо сарф мешавад, на таҳлил.';
-
-  @override
   String get watchAlertAll => 'Огоҳӣ дар бораи тағйироти калони рӯзона';
 
   @override
@@ -2502,4 +2498,8 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Кишварҳо';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Шарҳи AI: далелҳоро дар интернет меҷӯяд, мақоларо мекушояд ва арзёбӣ мекунад, ки манбаъ то чӣ андоза боэътимод аст. Маслиҳати сармоягузорӣ нест. Аз ҳадди саволҳои ҳаррӯзаи шумо сарф мешавад, на таҳлил.';
 }

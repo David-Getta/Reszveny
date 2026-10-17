@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol} ndĩkinyĩte EPS ĩrĩa yetagĩrĩrwo",
   "earningsResultBody": "EPS ĩrĩa yaheanirwo {actual}, yetagĩrĩrwo {estimate}",
   "newsExplain": "Ũũ nĩ kuuga atĩa?",
-  "newsExplainNote": "Ũtaarĩria wa AI ũrĩa ũrĩ igũrũ rĩa kĩongo na ũhoro mũkuhĩ tu. Ti ũtaaro wa investment. Ĩhũthagĩra mũhaka wa ciũria ciaku cia o mũthenya, ti ũthuthuria.",
   "watchAlertAll": "Mũmenyithia wa ũgarũrũku mũnene wa mũthenya",
   "watchAlertAllHint": "Mũmenyithia wa thogora kwa o mũgabo ũrĩa ũrĩ orodha-inĩ ĩno: ũkũhũũra rĩrĩa ũgarũrũka ũũ mũthenya ũmwe, igũrũ kana thĩ. Ũrĩa ũrĩ na ũmwe kũrĩa mbere ũgũtigwo naguo.",
   "watchAlertAllDone": "{count, plural, =1{Mũmenyithia 1 nĩ wahandwo} other{Mĩmenyithia {count} nĩ yahandwo}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Eheria mĩmenyithia ĩrĩa yaambĩrĩirie",
   "alertsCleared": "{count, plural, =1{Mũmenyithia 1 nĩ weherio} other{Mĩmenyithia {count} nĩ yeherio}}",
   "homeScreenTitle": "Ithangũ rĩa mbere",
-  "allocationCountries": "Mabũrũri"
+  "allocationCountries": "Mabũrũri",
+  "newsExplainNoteResearch": "Ũtaarĩria wa AI: ũcaragia ma ya ũhoro internet-inĩ, ũkahingũra gĩcunjĩ kĩu na ũgathima ũrĩa kĩhumo kĩu kĩĩhokeku. Ti ũtaaro wa investment. Ĩhũthagĩra mũhaka wa ciũria ciaku cia o mũthenya, ti ũthuthuria."
 }

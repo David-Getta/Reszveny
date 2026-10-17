@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol}: ka tlase ga EPS ye e letetšwego",
   "earningsResultBody": "EPS ye e begilwego {actual}, ye e letetšwego {estimate}",
   "newsExplain": "Se se ra goreng?",
-  "newsExplainNote": "Tlhalošo ya AI yeo e theilwego fela hlogong ya taba le kakaretšong ya yona. Ga se keletšo ya peeletšo. E diriša moedi wa gago wa dipotšišo wa letšatši le letšatši, e sego tshekatsheko.",
   "watchAlertAll": "Temošo ya diphetogo tše kgolo tša letšatši",
   "watchAlertAllHint": "Temošo ya theko go šere ye nngwe le ye nngwe lenaneong le: e tla lla ge e šikinyega ka mo letšatšing le tee, godimo goba fase. Tšeo di šetšego di na le yona di tla dula le ya tšona.",
   "watchAlertAllDone": "{count, plural, =1{Go beilwe temošo e 1} other{Go beilwe ditemošo tše {count}}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Phumola ditemošo tše di diragetšego",
   "alertsCleared": "{count, plural, =1{Go phumotšwe temošo e 1} other{Go phumotšwe ditemošo tše {count}}}",
   "homeScreenTitle": "Letlakala la mathomo",
-  "allocationCountries": "Dinaga"
+  "allocationCountries": "Dinaga",
+  "newsExplainNoteResearch": "Tlhalošo ya AI: e nyaka dintlha wepeng, e bula sengwalwa gomme e lekola gore mothopo o a botega gakaakang. Ga se keletšo ya peeletšo. E diriša moedi wa gago wa dipotšišo wa letšatši le letšatši, e sego tshekatsheko."
 }

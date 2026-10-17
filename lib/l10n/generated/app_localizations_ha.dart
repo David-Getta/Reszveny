@@ -2317,10 +2317,6 @@ class AppLocalizationsHa extends AppLocalizations {
   String get newsExplain => 'Me wannan yake nufi?';
 
   @override
-  String get newsExplainNote =>
-      'Bayanin AI bisa kanun labarin da taƙaitaccensa kawai. Ba shawarar zuba jari ba ne. Yana amfani da iyakar tambayoyinka na yau da kullum, ba nazari ba.';
-
-  @override
   String get watchAlertAll => 'Faɗakarwa kan manyan motsin yini';
 
   @override
@@ -2506,4 +2502,8 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Ƙasashe';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Bayanin AI: yana bincika gaskiyar lamarin a yanar gizo, yana buɗe labarin kuma yana tantance yadda madogarar take da aminci. Ba shawarar zuba jari ba ne. Yana amfani da iyakar tambayoyinka na yau da kullum, ba nazari ba.';
 }

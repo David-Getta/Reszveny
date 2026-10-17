@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol} verfehlt das erwartete EPS",
   "earningsResultBody": "Gemeldetes EPS {actual}, erwartet {estimate}",
   "newsExplain": "Was bedeutet das?",
-  "newsExplainNote": "KI-Erklärung, nur auf Basis der Schlagzeile und der Zusammenfassung. Keine Anlageberatung. Zählt zu deinem täglichen Fragenkontingent, nicht als Analyse.",
   "watchAlertAll": "Alarm bei starken Tagesbewegungen",
   "watchAlertAllHint": "Ein Kursalarm für jede Aktie dieser Liste, der auslöst, wenn sie sich an einem Tag so stark bewegt – nach oben oder unten. Aktien, die schon einen haben, behalten ihren.",
   "watchAlertAllDone": "{count, plural, =1{1 Alarm eingerichtet} other{{count} Alarme eingerichtet}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Ausgelöste Alarme löschen",
   "alertsCleared": "{count, plural, =1{1 Alarm gelöscht} other{{count} Alarme gelöscht}}",
   "homeScreenTitle": "Startseite",
-  "allocationCountries": "Länder"
+  "allocationCountries": "Länder",
+  "newsExplainNoteResearch": "KI-Erklärung: Sie recherchiert die Fakten im Web, öffnet den Artikel und bewertet, wie verlässlich die Quelle ist. Keine Anlageberatung. Zählt zu deinem täglichen Fragenkontingent, nicht als Analyse."
 }

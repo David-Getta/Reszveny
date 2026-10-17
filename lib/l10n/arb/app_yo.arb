@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol} kò dé EPS tí a retí",
   "earningsResultBody": "EPS tí a kéde {actual}, tí a retí {estimate}",
   "newsExplain": "Kí ni èyí túmọ̀ sí?",
-  "newsExplainNote": "Àlàyé AI tí ó dá lórí àkọlé àti àkópọ̀ rẹ̀ nìkan. Kì í ṣe ìmọ̀ràn ìdókòwò. Ó ń lo ìwọ̀n ìbéèrè ojoojúmọ́ rẹ, kì í ṣe ìtúpalẹ̀.",
   "watchAlertAll": "Ìkìlọ̀ fún ìyípadà ńlá ojoojúmọ́",
   "watchAlertAllHint": "Ìkìlọ̀ iye owó fún gbogbo ìpín inú àkójọ yìí tí yóò dún nígbà tí ó bá yí padà tó báyìí ní ọjọ́ kan, sókè tàbí sísàlẹ̀. Àwọn tí ó ti ní ọ̀kan tẹ́lẹ̀ yóò pa tiwọn mọ́.",
   "watchAlertAllDone": "{count, plural, =1{A ti ṣètò ìkìlọ̀ 1} other{A ti ṣètò ìkìlọ̀ {count}}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Pa àwọn ìkìlọ̀ tó ti ṣẹlẹ̀ rẹ́",
   "alertsCleared": "{count, plural, =1{A ti pa ìkìlọ̀ 1 rẹ́} other{A ti pa ìkìlọ̀ {count} rẹ́}}",
   "homeScreenTitle": "Ojú-ìwé àkọ́kọ́",
-  "allocationCountries": "Orílẹ̀-èdè"
+  "allocationCountries": "Orílẹ̀-èdè",
+  "newsExplainNoteResearch": "Àlàyé AI: ó ń wá òtítọ́ lórí ayélujára, ó ń ṣí àpilẹ̀kọ náà, ó sì ń ṣàyẹ̀wò bí orísun náà ṣe ṣeé gbẹ́kẹ̀lé tó. Kì í ṣe ìmọ̀ràn ìdókòwò. Ó ń lo ìwọ̀n ìbéèrè ojoojúmọ́ rẹ, kì í ṣe ìtúpalẹ̀."
 }

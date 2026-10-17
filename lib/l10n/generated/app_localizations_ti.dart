@@ -2274,10 +2274,6 @@ class AppLocalizationsTi extends AppLocalizations {
   String get newsExplain => 'እዚ እንታይ ማለት እዩ?';
 
   @override
-  String get newsExplainNote =>
-      'ኣብ ኣርእስትን ጽማቕን ጥራይ ዝተመርኮሰ መብርሂ AI። ምኽሪ ወፍሪ ኣይኮነን። ካብ ዕለታዊ ደረት ሕቶታትኩም ይቑጸር እምበር ትንታነ ኣይጥቀምን።';
-
-  @override
   String get watchAlertAll => 'ንዓበይቲ መዓልታዊ ምንቅስቓሳት መጠንቀቕታ';
 
   @override
@@ -2463,4 +2459,8 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get allocationCountries => 'ሃገራት';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'መብርሂ AI፦ ሓቅታት ኣብ መርበብ ሓበሬታ ይደሊ፣ ነቲ ጽሑፍ ይኸፍት፣ እቲ ምንጪ ክሳብ ክንደይ ተኣማኒ ምዃኑ ድማ ይግምግም። ምኽሪ ወፍሪ ኣይኮነን። ካብ ዕለታዊ ደረት ሕቶታትኩም ይቑጸር እምበር ትንታነ ኣይጥቀምን።';
 }

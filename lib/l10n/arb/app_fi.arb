@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol} jäi odotetusta EPS:stä",
   "earningsResultBody": "Toteutunut EPS {actual}, odotettu {estimate}",
   "newsExplain": "Mitä tämä tarkoittaa?",
-  "newsExplainNote": "Tekoälyn selitys, joka perustuu vain otsikkoon ja tiivistelmään. Se ei ole sijoitusneuvontaa. Kuluttaa päivittäistä kysymyskiintiötäsi, ei analyysia.",
   "watchAlertAll": "Hälytys suurista päivämuutoksista",
   "watchAlertAllHint": "Hintahälytys jokaiselle tämän listan osakkeelle: se laukeaa, kun osake liikkuu päivässä näin paljon ylös tai alas. Osakkeet, joilla on jo sellainen, pitävät omansa.",
   "watchAlertAllDone": "{count, plural, =1{1 hälytys asetettu} other{{count} hälytystä asetettu}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Tyhjennä lauenneet hälytykset",
   "alertsCleared": "{count, plural, =1{1 hälytys poistettu} other{{count} hälytystä poistettu}}",
   "homeScreenTitle": "Aloitusnäkymä",
-  "allocationCountries": "Maat"
+  "allocationCountries": "Maat",
+  "newsExplainNoteResearch": "Tekoälyn selitys: se tarkistaa tosiasiat verkosta, avaa artikkelin ja arvioi, kuinka luotettava lähde on. Se ei ole sijoitusneuvontaa. Kuluttaa päivittäistä kysymyskiintiötäsi, ei analyysia."
 }

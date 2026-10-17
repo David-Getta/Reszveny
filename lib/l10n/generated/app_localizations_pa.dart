@@ -2307,10 +2307,6 @@ class AppLocalizationsPa extends AppLocalizations {
   String get newsExplain => 'ਇਸ ਦਾ ਕੀ ਮਤਲਬ ਹੈ?';
 
   @override
-  String get newsExplainNote =>
-      'ਸਿਰਫ਼ ਸਿਰਲੇਖ ਅਤੇ ਸਾਰ ’ਤੇ ਆਧਾਰਿਤ AI ਵਿਆਖਿਆ। ਇਹ ਨਿਵੇਸ਼ ਸਲਾਹ ਨਹੀਂ ਹੈ। ਇਹ ਤੁਹਾਡੀ ਰੋਜ਼ਾਨਾ ਸਵਾਲਾਂ ਦੀ ਸੀਮਾ ਵਿੱਚੋਂ ਜਾਂਦਾ ਹੈ, ਕੋਈ ਵਿਸ਼ਲੇਸ਼ਣ ਖ਼ਰਚ ਨਹੀਂ ਹੁੰਦਾ।';
-
-  @override
   String get watchAlertAll => 'ਵੱਡੇ ਰੋਜ਼ਾਨਾ ਬਦਲਾਅ \'ਤੇ ਅਲਰਟ';
 
   @override
@@ -2496,4 +2492,8 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get allocationCountries => 'ਦੇਸ਼';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI ਵਿਆਖਿਆ: ਇਹ ਵੈੱਬ ’ਤੇ ਤੱਥ ਖੋਜਦਾ ਹੈ, ਲੇਖ ਖੋਲ੍ਹਦਾ ਹੈ ਅਤੇ ਪਰਖਦਾ ਹੈ ਕਿ ਸਰੋਤ ਕਿੰਨਾ ਭਰੋਸੇਯੋਗ ਹੈ। ਇਹ ਨਿਵੇਸ਼ ਸਲਾਹ ਨਹੀਂ ਹੈ। ਇਹ ਤੁਹਾਡੀ ਰੋਜ਼ਾਨਾ ਸਵਾਲਾਂ ਦੀ ਸੀਮਾ ਵਿੱਚੋਂ ਜਾਂਦਾ ਹੈ, ਕੋਈ ਵਿਸ਼ਲੇਸ਼ਣ ਖ਼ਰਚ ਨਹੀਂ ਹੁੰਦਾ।';
 }

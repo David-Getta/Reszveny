@@ -2376,10 +2376,6 @@ class AppLocalizationsUk extends AppLocalizations {
   String get newsExplain => 'Що це означає?';
 
   @override
-  String get newsExplainNote =>
-      'Пояснення від ШІ лише на основі заголовка та короткого змісту. Не є інвестиційною порадою. Витрачається денний ліміт запитань, а не аналіз.';
-
-  @override
   String get watchAlertAll => 'Сповіщення про великі зміни за день';
 
   @override
@@ -2571,4 +2567,8 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Країни';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Пояснення від ШІ: перевіряє факти в інтернеті, відкриває статтю й оцінює, наскільки надійне джерело. Не є інвестиційною порадою. Витрачається денний ліміт запитань, а не аналіз.';
 }

@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol} ma se EPS makɔnɔnen ma",
   "earningsResultBody": "EPS fɔlen {actual}, makɔnɔnen {estimate}",
   "newsExplain": "Nin kɔrɔ ye mun ye?",
-  "newsExplainNote": "AI ka ɲɛfɔli min sinsinnen bɛ kunkan ni a kuncɛ dɔrɔn kan. Wari donni ladilikan tɛ. A bɛ bɔ i ka don o don ɲininkaliw hakɛ la, a tɛ sɛgɛsɛgɛli si ta.",
   "watchAlertAll": "Kunnafoni don yɛlɛma belebeleba kan",
   "watchAlertAllHint": "Sɔngɔ kunnafoni lisi nin kɔnɔ aksiyɔn kelen kelen bɛɛ ye: a bɛ i ladɔnniya ni a yɛlɛmana nin hakɛ ye don kelen kɔnɔ, sanfɛ walima duguma. Minnu bɛ ni kunnafoni ye kaban, olu ta bɛ to.",
   "watchAlertAllDone": "{count, plural, =1{Kunnafoni 1 sigilen don} other{Kunnafoni {count} sigilen don}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Kunnafoni wulilenw jɔsi",
   "alertsCleared": "{count, plural, =1{Kunnafoni 1 jɔsira} other{Kunnafoni {count} jɔsira}}",
   "homeScreenTitle": "Ɲɛ fɔlɔ",
-  "allocationCountries": "Jamanaw"
+  "allocationCountries": "Jamanaw",
+  "newsExplainNoteResearch": "AI ka ɲɛfɔli: a bɛ tiɲɛw ɲini ɛntɛrinɛti kan, ka sɛbɛn in da wuli, ka a jateminɛ ni bɔyɔrɔ in bɛ se ka da a la cogo min na. Wari donni ladilikan tɛ. A bɛ bɔ i ka don o don ɲininkaliw hakɛ la, a tɛ sɛgɛsɛgɛli si ta."
 }

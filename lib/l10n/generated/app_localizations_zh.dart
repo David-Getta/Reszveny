@@ -2202,9 +2202,6 @@ class AppLocalizationsZh extends AppLocalizations {
   String get newsExplain => '这意味着什么？';
 
   @override
-  String get newsExplainNote => '仅根据标题和摘要生成的 AI 解读。不构成投资建议。占用每日提问次数，不消耗分析次数。';
-
-  @override
   String get watchAlertAll => '单日大幅波动提醒';
 
   @override
@@ -2387,6 +2384,10 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get allocationCountries => '国家';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI 解读：在网上查证事实，打开原文，并评估来源的可靠程度。不构成投资建议。占用每日提问次数，不消耗分析次数。';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -4585,9 +4586,6 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get newsExplain => '這代表甚麼？';
 
   @override
-  String get newsExplainNote => '僅根據標題及摘要產生的 AI 解讀。並不構成投資建議。佔用每日提問次數，不消耗分析次數。';
-
-  @override
   String get watchAlertAll => '單日大幅波動提醒';
 
   @override
@@ -4770,4 +4768,8 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get allocationCountries => '國家';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI 解讀：在網上查證事實，開啟原文，並評估來源的可靠程度。並不構成投資建議。佔用每日提問次數，不消耗分析次數。';
 }

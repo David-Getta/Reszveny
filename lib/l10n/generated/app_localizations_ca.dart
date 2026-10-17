@@ -2321,10 +2321,6 @@ class AppLocalizationsCa extends AppLocalizations {
   String get newsExplain => 'Què vol dir això?';
 
   @override
-  String get newsExplainNote =>
-      'Explicació d’IA basada només en el titular i el resum. No constitueix assessorament d’inversió. Fa servir el teu límit diari de preguntes, no una anàlisi.';
-
-  @override
   String get watchAlertAll => 'Alerta de grans moviments diaris';
 
   @override
@@ -2510,4 +2506,8 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Països';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Explicació d’IA: busca els fets al web, obre l’article i valora la fiabilitat de la font. No constitueix assessorament d’inversió. Fa servir el teu límit diari de preguntes, no una anàlisi.';
 }

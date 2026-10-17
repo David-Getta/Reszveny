@@ -2351,10 +2351,6 @@ class AppLocalizationsLv extends AppLocalizations {
   String get newsExplain => 'Ko tas nozīmē?';
 
   @override
-  String get newsExplainNote =>
-      'Mākslīgā intelekta skaidrojums, kas balstīts tikai uz virsrakstu un kopsavilkumu. Tā nav ieguldījumu konsultācija. Izmanto jūsu dienas jautājumu limitu, nevis analīzi.';
-
-  @override
   String get watchAlertAll => 'Brīdinājums par lielām dienas izmaiņām';
 
   @override
@@ -2542,4 +2538,8 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Valstis';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Mākslīgā intelekta skaidrojums: tas meklē faktus tīmeklī, atver rakstu un izvērtē, cik uzticams ir avots. Tā nav ieguldījumu konsultācija. Izmanto jūsu dienas jautājumu limitu, nevis analīzi.';
 }

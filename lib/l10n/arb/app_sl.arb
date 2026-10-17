@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol} ni dosegel pričakovanega EPS",
   "earningsResultBody": "Objavljeni EPS {actual}, pričakovani {estimate}",
   "newsExplain": "Kaj to pomeni?",
-  "newsExplainNote": "Razlaga umetne inteligence samo na podlagi naslova in povzetka. Ni naložbeni nasvet. Porabi vašo dnevno omejitev vprašanj, ne analize.",
   "watchAlertAll": "Opozorilo ob velikih dnevnih premikih",
   "watchAlertAllHint": "Cenovno opozorilo za vsako delnico na tem seznamu, ki se sproži, ko se v enem dnevu premakne za toliko, navzgor ali navzdol. Delnice, ki ga že imajo, obdržijo svojega.",
   "watchAlertAllDone": "{count, plural, one{Nastavljeno je {count} opozorilo} two{Nastavljeni sta {count} opozorili} few{Nastavljena so {count} opozorila} other{Nastavljenih je {count} opozoril}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Počisti sprožena opozorila",
   "alertsCleared": "{count, plural, =1{Počiščeno je 1 opozorilo} one{Počiščeno je {count} opozorilo} two{Počiščeni sta {count} opozorili} few{Počiščena so {count} opozorila} other{Počiščenih je {count} opozoril}}",
   "homeScreenTitle": "Začetni zaslon",
-  "allocationCountries": "Države"
+  "allocationCountries": "Države",
+  "newsExplainNoteResearch": "Razlaga umetne inteligence: dejstva preveri na spletu, odpre članek in oceni, kako zanesljiv je vir. Ni naložbeni nasvet. Porabi vašo dnevno omejitev vprašanj, ne analize."
 }

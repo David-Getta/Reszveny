@@ -2301,10 +2301,6 @@ class AppLocalizationsBo extends AppLocalizations {
   String get newsExplain => 'འདིའི་དོན་གང་ཡིན།';
 
   @override
-  String get newsExplainNote =>
-      'འགོ་བརྗོད་དང་བསྡུས་དོན་ཁོ་ན་ལ་གཞིགས་པའི་ AI འགྲེལ་བཤད། མ་འཇོག་གི་བསམ་འཆར་མིན། ཉིན་རེའི་དྲི་བའི་ཚད་ནས་འགྲོ་བ་ཡིན་ལ་དབྱེ་ཞིབ་མི་བེད་སྤྱོད།';
-
-  @override
   String get watchAlertAll => 'ཉིན་རེའི་འགྱུར་བ་ཆེན་པོར་ཉེན་བརྡ།';
 
   @override
@@ -2489,4 +2485,8 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get allocationCountries => 'རྒྱལ་ཁབ';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI འགྲེལ་བཤད། དྲ་རྒྱའི་ཐོག་དངོས་ཡོད་གནས་ཚུལ་འཚོལ་བ་དང་། རྩོམ་ཡིག་ཁ་ཕྱེ་བ། འབྱུང་ཁུངས་ཇི་ཙམ་ཡིད་ཆེས་རུང་བ་ལ་དཔྱད་པ་བཅས་བྱེད། མ་འཇོག་གི་བསམ་འཆར་མིན། ཉིན་རེའི་དྲི་བའི་ཚད་ནས་འགྲོ་བ་ཡིན་ལ་དབྱེ་ཞིབ་མི་བེད་སྤྱོད།';
 }

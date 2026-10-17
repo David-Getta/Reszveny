@@ -2234,10 +2234,6 @@ class AppLocalizationsJa extends AppLocalizations {
   String get newsExplain => 'これはどういう意味？';
 
   @override
-  String get newsExplainNote =>
-      '見出しと要約だけに基づく AI の解説です。投資助言ではありません。1日の質問回数を使い、分析回数は消費しません。';
-
-  @override
   String get watchAlertAll => '1日の大きな変動でアラート';
 
   @override
@@ -2422,4 +2418,8 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get allocationCountries => '国';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI の解説です。Web で事実を調べ、記事を開いて、情報源の信頼性を評価します。投資助言ではありません。1日の質問回数を使い、分析回数は消費しません。';
 }

@@ -2312,10 +2312,6 @@ class AppLocalizationsKi extends AppLocalizations {
   String get newsExplain => 'Ũũ nĩ kuuga atĩa?';
 
   @override
-  String get newsExplainNote =>
-      'Ũtaarĩria wa AI ũrĩa ũrĩ igũrũ rĩa kĩongo na ũhoro mũkuhĩ tu. Ti ũtaaro wa investment. Ĩhũthagĩra mũhaka wa ciũria ciaku cia o mũthenya, ti ũthuthuria.';
-
-  @override
   String get watchAlertAll => 'Mũmenyithia wa ũgarũrũku mũnene wa mũthenya';
 
   @override
@@ -2501,4 +2497,8 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Mabũrũri';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Ũtaarĩria wa AI: ũcaragia ma ya ũhoro internet-inĩ, ũkahingũra gĩcunjĩ kĩu na ũgathima ũrĩa kĩhumo kĩu kĩĩhokeku. Ti ũtaaro wa investment. Ĩhũthagĩra mũhaka wa ciũria ciaku cia o mũthenya, ti ũthuthuria.';
 }

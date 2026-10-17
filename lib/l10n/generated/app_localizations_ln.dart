@@ -2323,10 +2323,6 @@ class AppLocalizationsLn extends AppLocalizations {
   String get newsExplain => 'Yango elakisi nini?';
 
   @override
-  String get newsExplainNote =>
-      'Ndimbola ya AI oyo esalemi kaka na motó ya nsango mpe mokuse na yango. Ezali toli ya kotia mbɔngɔ te. Esalelaka ndelo ya mituna na yo ya mokolo na mokolo, kasi botaleli te.';
-
-  @override
   String get watchAlertAll => 'Likebisi mpo na mbongwana monene ya mokɔlɔ';
 
   @override
@@ -2512,4 +2508,8 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Mikili';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Ndimbola ya AI: eluki makambo ya solo na Internet, efungoli lisolo mpe etali soki source yango ekoki kotyelama motema boni. Ezali toli ya kotia mbɔngɔ te. Esalelaka ndelo ya mituna na yo ya mokolo na mokolo, kasi botaleli te.';
 }

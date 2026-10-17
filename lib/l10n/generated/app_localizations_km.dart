@@ -2292,10 +2292,6 @@ class AppLocalizationsKm extends AppLocalizations {
   String get newsExplain => 'តើនេះមានន័យដូចម្តេច?';
 
   @override
-  String get newsExplainNote =>
-      'ការពន្យល់ដោយ AI ផ្អែកតែលើចំណងជើង និងសេចក្តីសង្ខេបប៉ុណ្ណោះ។ មិនមែនជាដំបូន្មានវិនិយោគទេ។ វាប្រើកម្រិតសំណួរប្រចាំថ្ងៃរបស់អ្នក មិនមែនការវិភាគទេ។';
-
-  @override
   String get watchAlertAll => 'ការជូនដំណឹងពេលប្រែប្រួលខ្លាំងប្រចាំថ្ងៃ';
 
   @override
@@ -2480,4 +2476,8 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get allocationCountries => 'ប្រទេស';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'ការពន្យល់ដោយ AI៖ វាស្វែងរកការពិតនៅលើបណ្ដាញ បើកអត្ថបទ ហើយវាយតម្លៃថាប្រភពគួរឱ្យទុកចិត្តប៉ុណ្ណា។ មិនមែនជាដំបូន្មានវិនិយោគទេ។ វាប្រើកម្រិតសំណួរប្រចាំថ្ងៃរបស់អ្នក មិនមែនការវិភាគទេ។';
 }

@@ -2314,10 +2314,6 @@ class AppLocalizationsUg extends AppLocalizations {
   String get newsExplain => 'بۇ نېمە دېگەنلىك؟';
 
   @override
-  String get newsExplainNote =>
-      'پەقەت ماۋزۇ ۋە قىسقىچە مەزمۇنغا ئاساسلانغان AI چۈشەندۈرۈشى. مەبلەغ سېلىش تەۋسىيەسى ئەمەس. كۈندىلىك سوئال چېكىڭىزدىن سەرپ بولىدۇ، تەھلىل ئەمەس.';
-
-  @override
   String get watchAlertAll => 'چوڭ كۈنلۈك ئۆزگىرىشكە ئاگاھلاندۇرۇش';
 
   @override
@@ -2503,4 +2499,8 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get allocationCountries => 'دۆلەتلەر';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI چۈشەندۈرۈشى: پاكىتلارنى توردىن ئىزدەيدۇ، ماقالىنى ئاچىدۇ ۋە مەنبەنىڭ قانچىلىك ئىشەنچلىك ئىكەنلىكىنى باھالايدۇ. مەبلەغ سېلىش تەۋسىيەسى ئەمەس. كۈندىلىك سوئال چېكىڭىزدىن سەرپ بولىدۇ، تەھلىل ئەمەس.';
 }

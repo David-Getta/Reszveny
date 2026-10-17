@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol} negihîşt EPS ya tê payîn",
   "earningsResultBody": "EPS ya hatî ragihandin {actual}, tê payîn {estimate}",
   "newsExplain": "Ev tê çi wateyê?",
-  "newsExplainNote": "Ravekirina AI tenê li ser bingeha sernivîs û kurteyê. Ne şîreta veberhênanê ye. Ji sînorê pirsên te yê rojane tê birîn, ne analîzek.",
   "watchAlertAll": "Hişyarî ji bo guherînên mezin ên rojane",
   "watchAlertAllHint": "Hişyariya bihayê ji bo her pişkeke vê lîsteyê: dema ku di rojekê de ev qas bilind an nizm bibe, agahdar dike. Pişkên ku berê yek wan heye, ya xwe diparêzin.",
   "watchAlertAllDone": "{count, plural, =1{1 hişyarî hat danîn} other{{count} hişyarî hatin danîn}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Hişyariyên çalakbûyî paqij bike",
   "alertsCleared": "{count, plural, =1{1 hişyarî hate paqijkirin} other{{count} hişyarî hatin paqijkirin}}",
   "homeScreenTitle": "Ekrana sereke",
-  "allocationCountries": "Welat"
+  "allocationCountries": "Welat",
+  "newsExplainNoteResearch": "Ravekirina AI: ew rastiyan li ser webê lê dikole, gotarê vedike û dinirxîne ka çavkanî çiqas pêbawer e. Ne şîreta veberhênanê ye. Ji sînorê pirsên te yê rojane tê birîn, ne analîzek."
 }

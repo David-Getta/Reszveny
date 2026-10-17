@@ -2314,10 +2314,6 @@ class AppLocalizationsSu extends AppLocalizations {
   String get newsExplain => 'Ieu hartosna naon?';
 
   @override
-  String get newsExplainNote =>
-      'Katerangan AI anu ngan dumasar kana judul jeung ringkesanana. Lain naséhat investasi. Nganggo wates patarosan sapopoé anjeun, sanés analisis.';
-
-  @override
   String get watchAlertAll => 'Pépéling pikeun gerak harian gedé';
 
   @override
@@ -2504,4 +2500,8 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Nagara';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Katerangan AI: néangan fakta di wéb, muka artikelna, sarta meunteun sabaraha bisa dipercaya sumberna. Lain naséhat investasi. Nganggo wates patarosan sapopoé anjeun, sanés analisis.';
 }

@@ -2313,10 +2313,6 @@ class AppLocalizationsKu extends AppLocalizations {
   String get newsExplain => 'Ev tê çi wateyê?';
 
   @override
-  String get newsExplainNote =>
-      'Ravekirina AI tenê li ser bingeha sernivîs û kurteyê. Ne şîreta veberhênanê ye. Ji sînorê pirsên te yê rojane tê birîn, ne analîzek.';
-
-  @override
   String get watchAlertAll => 'Hişyarî ji bo guherînên mezin ên rojane';
 
   @override
@@ -2502,4 +2498,8 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Welat';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Ravekirina AI: ew rastiyan li ser webê lê dikole, gotarê vedike û dinirxîne ka çavkanî çiqas pêbawer e. Ne şîreta veberhênanê ye. Ji sînorê pirsên te yê rojane tê birîn, ne analîzek.';
 }

@@ -2311,10 +2311,6 @@ class AppLocalizationsTk extends AppLocalizations {
   String get newsExplain => 'Bu näme aňladýar?';
 
   @override
-  String get newsExplainNote =>
-      'Diňe sözbaşy we gysgaça mazmuna esaslanýan AI düşündirişi. Maýa goýum maslahaty däldir. Gündelik sorag çägiňizden harçlanýar, seljerme däl.';
-
-  @override
   String get watchAlertAll => 'Uly gündelik üýtgeýişler barada duýduryş';
 
   @override
@@ -2501,4 +2497,8 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Ýurtlar';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI düşündirişi: faktlary internetde gözleýär, makalany açýar we çeşmäniň näderejede ygtybarlydygyna baha berýär. Maýa goýum maslahaty däldir. Gündelik sorag çägiňizden harçlanýar, seljerme däl.';
 }

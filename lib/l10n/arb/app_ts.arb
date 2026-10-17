@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol} a yi fikanga eka EPS leyi languteriweke",
   "earningsResultBody": "EPS leyi vikiweke {actual}, leyi languteriweke {estimate}",
   "newsExplain": "Leswi swi vula yini?",
-  "newsExplainNote": "Nhlamuselo ya AI leyi simekiweke ntsena eka nhloko ya mahungu ni nkatsakanyo wa wona. A hi ndzayo ya vuvekisi. Yi tirhisa ndzelekano wa wena wa swivutiso wa siku na siku, ku nga ri nxopaxopo.",
   "watchAlertAll": "Xitsundzuxo xa ku cinca lokukulu ka siku",
   "watchAlertAllHint": "Xitsundzuxo xa nxavo eka xiave xin'wana na xin'wana eka nxaxamelo lowu: xi ta rila loko xi cinca hi ndlela leyi hi siku rin'we, ehenhla kumbe ehansi. Leswi se swi nga na xona swi ta hlayisa xa swona.",
   "watchAlertAllDone": "{count, plural, =1{Ku vekiwe xitsundzuxo xin'we} other{Ku vekiwe switsundzuxo swa {count}}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Sula switsundzuxo leswi humeleleke",
   "alertsCleared": "{count, plural, =1{Ku suriwe xitsundzuxo xin'we} other{Ku suriwe switsundzuxo swa {count}}}",
   "homeScreenTitle": "Tluka ro sungula",
-  "allocationCountries": "Matiko"
+  "allocationCountries": "Matiko",
+  "newsExplainNoteResearch": "Nhlamuselo ya AI: yi lavisisa ntiyiso ewebeni, yi pfula xitsalwa naswona yi kambela leswaku xihlovo xi tshembeka ku fikela kwihi. A hi ndzayo ya vuvekisi. Yi tirhisa ndzelekano wa wena wa swivutiso wa siku na siku, ku nga ri nxopaxopo."
 }

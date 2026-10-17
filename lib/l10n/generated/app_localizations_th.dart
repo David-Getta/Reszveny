@@ -2283,10 +2283,6 @@ class AppLocalizationsTh extends AppLocalizations {
   String get newsExplain => 'หมายความว่าอย่างไร';
 
   @override
-  String get newsExplainNote =>
-      'คำอธิบายจาก AI โดยอิงจากพาดหัวและสรุปข่าวเท่านั้น ไม่ใช่คำแนะนำในการลงทุน ใช้โควตาคำถามรายวันของคุณ ไม่ใช้สิทธิ์การวิเคราะห์';
-
-  @override
   String get watchAlertAll => 'แจ้งเตือนเมื่อเคลื่อนไหวแรงรายวัน';
 
   @override
@@ -2471,4 +2467,8 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get allocationCountries => 'ประเทศ';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'คำอธิบายจาก AI ที่ค้นหาข้อเท็จจริงบนเว็บ เปิดอ่านบทความ และประเมินว่าแหล่งที่มาน่าเชื่อถือเพียงใด ไม่ใช่คำแนะนำในการลงทุน ใช้โควตาคำถามรายวันของคุณ ไม่ใช้สิทธิ์การวิเคราะห์';
 }

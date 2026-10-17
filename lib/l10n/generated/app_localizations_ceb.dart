@@ -2321,10 +2321,6 @@ class AppLocalizationsCeb extends AppLocalizations {
   String get newsExplain => 'Unsa ang buot ipasabot niini?';
 
   @override
-  String get newsExplainNote =>
-      'Pagpatin-aw sa AI base lamang sa ulohan ug sa katingbanan. Dili kini tambag sa pagpamuhunan. Mogamit kini sa imong adlaw-adlaw nga limitasyon sa pangutana, dili sa pagtuki.';
-
-  @override
   String get watchAlertAll => 'Alerto sa dagkong lihok sa adlaw';
 
   @override
@@ -2511,4 +2507,8 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Nasud';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Pagpatin-aw sa AI: pangitaon niini ang mga kamatuoran sa web, ablihan ang artikulo ug timbangon kon unsa ka kasaligan ang tinubdan. Dili kini tambag sa pagpamuhunan. Mogamit kini sa imong adlaw-adlaw nga limitasyon sa pangutana, dili sa pagtuki.';
 }

@@ -2309,10 +2309,6 @@ class AppLocalizationsTt extends AppLocalizations {
   String get newsExplain => 'Бу нәрсәне аңлата?';
 
   @override
-  String get newsExplainNote =>
-      'Баш исем һәм кыскача эчтәлеккә генә нигезләнгән AI аңлатмасы. Инвестиция киңәше түгел. Көндәлек сораулар чигегездән тотыла, анализ түгел.';
-
-  @override
   String get watchAlertAll => 'Зур көнлек үзгәрешләр турында кисәтү';
 
   @override
@@ -2499,4 +2495,8 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Илләр';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI аңлатмасы: фактларны интернетта эзли, мәкаләне ача һәм чыганакның никадәр ышанычлы булуын бәяли. Инвестиция киңәше түгел. Көндәлек сораулар чигегездән тотыла, анализ түгел.';
 }

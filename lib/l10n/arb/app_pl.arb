@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol} poniżej oczekiwanego EPS",
   "earningsResultBody": "Raportowany EPS {actual}, oczekiwany {estimate}",
   "newsExplain": "Co to oznacza?",
-  "newsExplainNote": "Wyjaśnienie AI oparte wyłącznie na nagłówku i streszczeniu. Nie stanowi porady inwestycyjnej. Korzysta z dziennego limitu pytań, nie zużywa analizy.",
   "watchAlertAll": "Alert przy dużych ruchach dziennych",
   "watchAlertAllHint": "Alert cenowy dla każdej spółki z tej listy, który zadziała, gdy w ciągu dnia zmieni się ona o tyle w górę lub w dół. Spółki, które już mają taki alert, zachowują swój.",
   "watchAlertAllDone": "{count, plural, one{Ustawiono {count} alert} few{Ustawiono {count} alerty} many{Ustawiono {count} alertów} other{Ustawiono {count} alertu}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Wyczyść uruchomione alerty",
   "alertsCleared": "{count, plural, =1{Wyczyszczono 1 alert} one{Wyczyszczono {count} alert} few{Wyczyszczono {count} alerty} many{Wyczyszczono {count} alertów} other{Wyczyszczono {count} alertu}}",
   "homeScreenTitle": "Ekran główny",
-  "allocationCountries": "Kraje"
+  "allocationCountries": "Kraje",
+  "newsExplainNoteResearch": "Wyjaśnienie AI: sprawdza fakty w sieci, otwiera artykuł i ocenia, na ile wiarygodne jest źródło. Nie stanowi porady inwestycyjnej. Korzysta z dziennego limitu pytań, nie zużywa analizy."
 }

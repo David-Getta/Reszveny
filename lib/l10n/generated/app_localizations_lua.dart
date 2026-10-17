@@ -2319,10 +2319,6 @@ class AppLocalizationsLua extends AppLocalizations {
   String get newsExplain => 'Bualu ebu budi bumvuija tshinyi?';
 
   @override
-  String get newsExplainNote =>
-      'Diumvuija dia AI didi dishindamine anu pa mutu wa lumu ne bukese buawu. Kadiena mibelu ya kuteka mfranga. Bidi bienzeja mukalu wa nkonko yebe ya dituku dionso, kabiyi dikonkonona.';
-
-  @override
   String get watchAlertAll => 'Dimanyisha bua dishintuluka dinene dia dituku';
 
   @override
@@ -2508,4 +2504,8 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Matunga';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Diumvuija dia AI: didi dikeba malu a bulelela ku Internet, dibulula mukanda ne dimona mushindu udi mpokolo eu mua kueyemenyibua. Kadiena mibelu ya kuteka mfranga. Bidi bienzeja mukalu wa nkonko yebe ya dituku dionso, kabiyi dikonkonona.';
 }

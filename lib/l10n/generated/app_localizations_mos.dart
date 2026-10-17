@@ -2298,10 +2298,6 @@ class AppLocalizationsMos extends AppLocalizations {
   String get newsExplain => 'Woto rata n yeel bõe?';
 
   @override
-  String get newsExplainNote =>
-      'AI wilgri, sẽn tik zug-sõngã la a koe-kʋʋnã bala. Pa sagls ligd kẽesg wɛɛngẽ ye. A tũuda f daar fãa sokr sõorã, pa vẽenegr ye.';
-
-  @override
   String get watchAlertAll => 'Kibay daar toeemd wʋsg yĩnga';
 
   @override
@@ -2487,4 +2483,8 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Tẽnse';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI wilgri: a baoodame sɩd-kãensã internet zugu, n pakd sɛbrã, la a gesd bãngr zĩigã sẽn tõe n teeg a to to-to wã. Pa sagls ligd kẽesg wɛɛngẽ ye. A tũuda f daar fãa sokr sõorã, pa vẽenegr ye.';
 }

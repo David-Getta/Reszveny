@@ -2318,10 +2318,6 @@ class AppLocalizationsSo extends AppLocalizations {
   String get newsExplain => 'Muxuu kan ka dhigan yahay?';
 
   @override
-  String get newsExplainNote =>
-      'Sharaxaad AI oo ku salaysan oo keliya cinwaanka iyo soo koobidda. Ma aha talo maalgashi. Waxay isticmaashaa xadka su’aalahaaga maalinlaha ah, ma aha falanqayn.';
-
-  @override
   String get watchAlertAll => 'Digniin isbeddelka weyn ee maalinlaha';
 
   @override
@@ -2508,4 +2504,8 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Waddamada';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Sharaxaad AI: waxay xaqiiqooyinka ka raadisaa shabakadda, waxay furtaa maqaalka, waxayna qiimaysaa inta isha la isku halayn karo. Ma aha talo maalgashi. Waxay isticmaashaa xadka su’aalahaaga maalinlaha ah, ma aha falanqayn.';
 }

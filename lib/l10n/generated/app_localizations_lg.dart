@@ -2322,10 +2322,6 @@ class AppLocalizationsLg extends AppLocalizations {
   String get newsExplain => 'Kino kitegeeza ki?';
 
   @override
-  String get newsExplainNote =>
-      'Ennyinnyonnyola ya AI eyesigamiziddwa ku mutwe gw\'amawulire n\'okufunza kwago kwokka. Si magezi ga kusiga nsimbi. Kikozesa kkomo ly’ebibuuzo byo erya buli lunaku, so si kwekenneenya.';
-
-  @override
   String get watchAlertAll => 'Okulabula ku nkyukakyuka ennene ez\'olunaku';
 
   @override
@@ -2511,4 +2507,8 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Amawanga';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Ennyinnyonnyola ya AI: enoonya amazima ku mukutu, eggulawo ekiwandiiko, era epima ensibuko bw\'eyesigika. Si magezi ga kusiga nsimbi. Kikozesa kkomo ly’ebibuuzo byo erya buli lunaku, so si kwekenneenya.';
 }

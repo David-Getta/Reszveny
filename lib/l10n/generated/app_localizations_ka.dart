@@ -2312,10 +2312,6 @@ class AppLocalizationsKa extends AppLocalizations {
   String get newsExplain => 'რას ნიშნავს ეს?';
 
   @override
-  String get newsExplainNote =>
-      'AI-ის განმარტება მხოლოდ სათაურისა და შეჯამების საფუძველზე. არ წარმოადგენს საინვესტიციო რჩევას. იყენებს თქვენს დღიურ კითხვების ლიმიტს და არა ანალიზს.';
-
-  @override
   String get watchAlertAll => 'გაფრთხილება დიდ დღიურ ცვლილებაზე';
 
   @override
@@ -2501,4 +2497,8 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get allocationCountries => 'ქვეყნები';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI-ის განმარტება: ის ინტერნეტში ამოწმებს ფაქტებს, ხსნის სტატიას და აფასებს, რამდენად სანდოა წყარო. არ წარმოადგენს საინვესტიციო რჩევას. იყენებს თქვენს დღიურ კითხვების ლიმიტს და არა ანალიზს.';
 }

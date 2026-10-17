@@ -2373,10 +2373,6 @@ class AppLocalizationsLt extends AppLocalizations {
   String get newsExplain => 'Ką tai reiškia?';
 
   @override
-  String get newsExplainNote =>
-      'DI paaiškinimas, pagrįstas tik antrašte ir santrauka. Tai nėra investavimo rekomendacija. Naudoja jūsų dienos klausimų limitą, o ne analizę.';
-
-  @override
   String get watchAlertAll => 'Įspėjimas apie didelius dienos pokyčius';
 
   @override
@@ -2568,4 +2564,8 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Šalys';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'DI paaiškinimas: jis patikrina faktus internete, atidaro straipsnį ir įvertina, kiek patikimas šaltinis. Tai nėra investavimo rekomendacija. Naudoja jūsų dienos klausimų limitą, o ne analizę.';
 }

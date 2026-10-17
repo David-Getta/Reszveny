@@ -2320,10 +2320,6 @@ class AppLocalizationsEl extends AppLocalizations {
   String get newsExplain => 'Τι σημαίνει αυτό;';
 
   @override
-  String get newsExplainNote =>
-      'Εξήγηση από AI μόνο με βάση τον τίτλο και την περίληψη. Δεν αποτελεί επενδυτική συμβουλή. Χρησιμοποιεί το ημερήσιο όριο ερωτήσεών σας, όχι ανάλυση.';
-
-  @override
   String get watchAlertAll => 'Ειδοποίηση για μεγάλες ημερήσιες κινήσεις';
 
   @override
@@ -2510,4 +2506,8 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Χώρες';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Εξήγηση από AI: αναζητά τα στοιχεία στο διαδίκτυο, ανοίγει το άρθρο και κρίνει πόσο αξιόπιστη είναι η πηγή. Δεν αποτελεί επενδυτική συμβουλή. Χρησιμοποιεί το ημερήσιο όριο ερωτήσεών σας, όχι ανάλυση.';
 }

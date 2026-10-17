@@ -2317,10 +2317,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get newsExplain => 'O que isto significa?';
 
   @override
-  String get newsExplainNote =>
-      'Explicação de IA baseada apenas no título e no resumo. Não constitui aconselhamento de investimento. Usa o seu limite diário de perguntas, não uma análise.';
-
-  @override
   String get watchAlertAll => 'Alerta de grandes variações diárias';
 
   @override
@@ -2506,4 +2502,8 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Países';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Explicação de IA: pesquisa os factos na web, abre o artigo e avalia a fiabilidade da fonte. Não constitui aconselhamento de investimento. Usa o seu limite diário de perguntas, não uma análise.';
 }

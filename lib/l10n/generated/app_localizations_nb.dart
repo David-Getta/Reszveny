@@ -2312,10 +2312,6 @@ class AppLocalizationsNb extends AppLocalizations {
   String get newsExplain => 'Hva betyr dette?';
 
   @override
-  String get newsExplainNote =>
-      'AI-forklaring basert kun på overskriften og sammendraget. Det er ikke investeringsråd. Bruker av den daglige spørsmålskvoten din, ikke en analyse.';
-
-  @override
   String get watchAlertAll => 'Varsel ved store daglige bevegelser';
 
   @override
@@ -2501,4 +2497,8 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Land';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI-forklaring: den slår opp fakta på nettet, åpner artikkelen og vurderer hvor pålitelig kilden er. Det er ikke investeringsråd. Bruker av den daglige spørsmålskvoten din, ikke en analyse.';
 }

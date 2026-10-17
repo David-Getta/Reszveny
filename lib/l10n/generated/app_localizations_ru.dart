@@ -2375,10 +2375,6 @@ class AppLocalizationsRu extends AppLocalizations {
   String get newsExplain => 'Что это значит?';
 
   @override
-  String get newsExplainNote =>
-      'Объяснение от ИИ только на основе заголовка и краткого содержания. Не является инвестиционной рекомендацией. Расходуется дневной лимит вопросов, а не анализ.';
-
-  @override
   String get watchAlertAll => 'Оповещение о сильных движениях за день';
 
   @override
@@ -2570,4 +2566,8 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Страны';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Объяснение от ИИ: проверяет факты в интернете, открывает статью и оценивает, насколько надёжен источник. Не является инвестиционной рекомендацией. Расходуется дневной лимит вопросов, а не анализ.';
 }

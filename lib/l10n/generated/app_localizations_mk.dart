@@ -2331,10 +2331,6 @@ class AppLocalizationsMk extends AppLocalizations {
   String get newsExplain => 'Што значи ова?';
 
   @override
-  String get newsExplainNote =>
-      'Објаснување од AI само врз основа на насловот и резимето. Не претставува инвестициски совет. Го користи вашиот дневен лимит на прашања, не анализа.';
-
-  @override
   String get watchAlertAll => 'Известување за големи дневни движења';
 
   @override
@@ -2520,4 +2516,8 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Држави';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Објаснување од AI: ги проверува фактите на интернет, ја отвора статијата и проценува колку е сигурен изворот. Не претставува инвестициски совет. Го користи вашиот дневен лимит на прашања, не анализа.';
 }

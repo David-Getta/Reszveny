@@ -2321,10 +2321,6 @@ class AppLocalizationsTa extends AppLocalizations {
   String get newsExplain => 'இதன் அர்த்தம் என்ன?';
 
   @override
-  String get newsExplainNote =>
-      'தலைப்பு மற்றும் சுருக்கத்தை மட்டுமே அடிப்படையாகக் கொண்ட AI விளக்கம். இது முதலீட்டு ஆலோசனை அல்ல. இது உங்கள் தினசரி கேள்வி வரம்பிலிருந்து செலவாகும், பகுப்பாய்வு எதுவும் செலவாகாது.';
-
-  @override
   String get watchAlertAll => 'பெரிய தினசரி மாற்றத்துக்கு எச்சரிக்கை';
 
   @override
@@ -2510,4 +2506,8 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get allocationCountries => 'நாடுகள்';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI விளக்கம்: இது இணையத்தில் உண்மைகளைத் தேடி, கட்டுரையைத் திறந்து, ஆதாரம் எவ்வளவு நம்பகமானது என்பதை மதிப்பிடுகிறது. இது முதலீட்டு ஆலோசனை அல்ல. இது உங்கள் தினசரி கேள்வி வரம்பிலிருந்து செலவாகும், பகுப்பாய்வு எதுவும் செலவாகாது.';
 }

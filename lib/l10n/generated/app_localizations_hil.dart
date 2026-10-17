@@ -2325,10 +2325,6 @@ class AppLocalizationsHil extends AppLocalizations {
   String get newsExplain => 'Ano ang buot silingon sini?';
 
   @override
-  String get newsExplainNote =>
-      'Paathag sang AI base lamang sa ulohan kag sa kalubaran sini. Indi ini laygay sa pag-invest. Ginagamit sini ang imo adlaw-adlaw nga limitasyon sang pamangkot, indi ang pagtuki.';
-
-  @override
   String get watchAlertAll => 'Alerto sa dalagku nga hulag sa adlaw';
 
   @override
@@ -2515,4 +2511,8 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Pungsod';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Paathag sang AI: ginapangita sini ang mga kamatuoran sa web, ginabuksan ang artikulo kag ginatimbang kon daw ano ka masaligan ang ginhalinan. Indi ini laygay sa pag-invest. Ginagamit sini ang imo adlaw-adlaw nga limitasyon sang pamangkot, indi ang pagtuki.';
 }

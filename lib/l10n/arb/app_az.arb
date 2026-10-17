@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol} gözlənilən EPS-ə çatmadı",
   "earningsResultBody": "Açıqlanan EPS {actual}, gözlənilən {estimate}",
   "newsExplain": "Bu nə deməkdir?",
-  "newsExplainNote": "Yalnız başlıq və xülasə əsasında AI izahı. İnvestisiya məsləhəti deyil. Gündəlik sual limitinizdən istifadə edir, təhlil sərf etmir.",
   "watchAlertAll": "Böyük gündəlik dəyişmələrdə xəbərdarlıq",
   "watchAlertAllHint": "Bu siyahıdakı hər səhm üçün qiymət xəbərdarlığı: bir gündə bu qədər yuxarı və ya aşağı dəyişərsə, xəbər verir. Artıq xəbərdarlığı olan səhmlər onu saxlayır.",
   "watchAlertAllDone": "{count, plural, =1{1 xəbərdarlıq quruldu} other{{count} xəbərdarlıq quruldu}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "İşə düşmüş xəbərdarlıqları təmizlə",
   "alertsCleared": "{count, plural, =1{1 xəbərdarlıq təmizləndi} other{{count} xəbərdarlıq təmizləndi}}",
   "homeScreenTitle": "Əsas ekran",
-  "allocationCountries": "Ölkələr"
+  "allocationCountries": "Ölkələr",
+  "newsExplainNoteResearch": "AI izahı: faktları internetdə axtarır, məqaləni açır və mənbənin nə qədər etibarlı olduğunu qiymətləndirir. İnvestisiya məsləhəti deyil. Gündəlik sual limitinizdən istifadə edir, təhlil sərf etmir."
 }

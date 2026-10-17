@@ -2318,10 +2318,6 @@ class AppLocalizationsFil extends AppLocalizations {
   String get newsExplain => 'Ano ang ibig sabihin nito?';
 
   @override
-  String get newsExplainNote =>
-      'Paliwanag ng AI batay lamang sa headline at buod nito. Hindi ito payo sa pamumuhunan. Gumagamit ito ng iyong pang-araw-araw na limitasyon sa tanong, hindi ng pagsusuri.';
-
-  @override
   String get watchAlertAll => 'Alerto sa malalaking galaw sa araw';
 
   @override
@@ -2507,4 +2503,8 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Bansa';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Paliwanag ng AI: hinahanap nito ang mga katotohanan sa web, binubuksan ang artikulo at sinusuri kung gaano kapani-paniwala ang pinagmulan. Hindi ito payo sa pamumuhunan. Gumagamit ito ng iyong pang-araw-araw na limitasyon sa tanong, hindi ng pagsusuri.';
 }

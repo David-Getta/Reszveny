@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol} ntiyageze kuri EPS yari yitezwe",
   "earningsResultBody": "EPS yatangajwe {actual}, yari yitezwe {estimate}",
   "newsExplain": "Ibi bisobanuye iki?",
-  "newsExplainNote": "Ibisobanuro bya AI bishingiye gusa ku mutwe w'inkuru n'incamake yayo. Si inama yo gushora imari. Ikoresha umubare ntarengwa w’ibibazo byawe bya buri munsi, si isesengura.",
   "watchAlertAll": "Imenyesha ku mihindagurikire minini y'umunsi",
   "watchAlertAllHint": "Imenyesha ry'igiciro kuri buri mugabane uri kuri uru rutonde: rizavuga igihe uhindutse gutya mu munsi umwe, uzamuka cyangwa umanuka. Iyari isanganywe imenyesha izagumana iryayo.",
   "watchAlertAllDone": "{count, plural, =1{Hashyizweho imenyesha 1} other{Hashyizweho amamenyesha {count}}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Siba amamenyesha yabaye",
   "alertsCleared": "{count, plural, =1{Hasibwe imenyesha 1} other{Hasibwe amamenyesha {count}}}",
   "homeScreenTitle": "Ahabanza",
-  "allocationCountries": "Ibihugu"
+  "allocationCountries": "Ibihugu",
+  "newsExplainNoteResearch": "Ibisobanuro bya AI: ishakisha ukuri kuri murandasi, ifungura inkuru kandi igasuzuma uko inkomoko yizewe. Si inama yo gushora imari. Ikoresha umubare ntarengwa w’ibibazo byawe bya buri munsi, si isesengura."
 }

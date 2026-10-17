@@ -2317,10 +2317,6 @@ class AppLocalizationsGn extends AppLocalizations {
   String get newsExplain => 'Mbaʼépa heʼise kóva?';
 
   @override
-  String get newsExplainNote =>
-      'AI omyesakãva, titulo ha ñemombyky rupive añoite. Ndahaʼéi ñemoñeʼẽ inversión rehegua. Oipuru ne porandu papapy ára ha ára guarã, ndaha’éi jehesa’ỹijo.';
-
-  @override
   String get watchAlertAll => 'Momarandu ára ñemonguʼe tuichávape';
 
   @override
@@ -2506,4 +2502,8 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Tetãkuéra';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI omyesakãva: oheka umi añeteguáva ñandutípe, oipe\'a pe jehaipy ha ohecha mba\'éichapa ojeroviakuaa pe teñoiha. Ndahaʼéi ñemoñeʼẽ inversión rehegua. Oipuru ne porandu papapy ára ha ára guarã, ndaha’éi jehesa’ỹijo.';
 }

@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol} haijafikia EPS inayotarajiwa",
   "earningsResultBody": "EPS iliyoripotiwa {actual}, inayotarajiwa {estimate}",
   "newsExplain": "Hii inamaanisha nini?",
-  "newsExplainNote": "Maelezo ya AI yanayotegemea kichwa cha habari na muhtasari wake pekee. Si ushauri wa uwekezaji. Hutumia kikomo chako cha maswali cha kila siku, si uchambuzi.",
   "watchAlertAll": "Arifa kwa mabadiliko makubwa ya siku",
   "watchAlertAllHint": "Arifa ya bei kwa kila hisa katika orodha hii itakayolia inaposogea kiasi hiki kwa siku moja, juu au chini. Hisa ambazo tayari zina arifa zitabaki na zake.",
   "watchAlertAllDone": "{count, plural, =1{Arifa 1 imewekwa} other{Arifa {count} zimewekwa}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Futa arifa zilizotokea",
   "alertsCleared": "{count, plural, =1{Arifa 1 imefutwa} other{Arifa {count} zimefutwa}}",
   "homeScreenTitle": "Skrini ya mwanzo",
-  "allocationCountries": "Nchi"
+  "allocationCountries": "Nchi",
+  "newsExplainNoteResearch": "Maelezo ya AI: hutafuta ukweli mtandaoni, hufungua makala na kutathmini jinsi chanzo kinavyoaminika. Si ushauri wa uwekezaji. Hutumia kikomo chako cha maswali cha kila siku, si uchambuzi."
 }

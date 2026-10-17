@@ -2325,10 +2325,6 @@ class AppLocalizationsSt extends AppLocalizations {
   String get newsExplain => 'See se bolelang?';
 
   @override
-  String get newsExplainNote =>
-      'Tlhaloso ya AI e thehilweng hodima sehlooho le kakaretso ya sona feela. Hase keletso ya ho tsetela. E sebedisa moedi wa hao wa dipotso wa letsatsi le letsatsi, eseng manollo.';
-
-  @override
   String get watchAlertAll => 'Temoso ya diphetoho tse kgolo tsa letsatsi';
 
   @override
@@ -2515,4 +2511,8 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Dinaha';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Tlhaloso ya AI: e batla dintlha inthaneteng, e bula sengolwa mme e lekola hore na mohlodi o tshepahala hakae. Hase keletso ya ho tsetela. E sebedisa moedi wa hao wa dipotso wa letsatsi le letsatsi, eseng manollo.';
 }

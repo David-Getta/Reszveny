@@ -2319,10 +2319,6 @@ class AppLocalizationsHy extends AppLocalizations {
   String get newsExplain => 'Ի՞նչ է սա նշանակում';
 
   @override
-  String get newsExplainNote =>
-      'AI-ի բացատրություն՝ հիմնված միայն վերնագրի և ամփոփման վրա։ Ներդրումային խորհուրդ չէ։ Օգտագործում է ձեր օրական հարցերի սահմանաչափը, ոչ թե վերլուծություն։';
-
-  @override
   String get watchAlertAll => 'Ծանուցում օրական մեծ փոփոխությունների դեպքում';
 
   @override
@@ -2509,4 +2505,8 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Երկրներ';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI-ի բացատրություն՝ այն ստուգում է փաստերը համացանցում, բացում է հոդվածը և գնահատում, թե որքան հուսալի է աղբյուրը։ Ներդրումային խորհուրդ չէ։ Օգտագործում է ձեր օրական հարցերի սահմանաչափը, ոչ թե վերլուծություն։';
 }

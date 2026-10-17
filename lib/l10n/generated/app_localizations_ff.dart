@@ -2306,10 +2306,6 @@ class AppLocalizationsFf extends AppLocalizations {
   String get newsExplain => 'Ko ɗum firti?';
 
   @override
-  String get newsExplainNote =>
-      'Firo AI tuugiiɗo e tiitoonde e coftal mayre tan. Wonaa wasiya e investisman. Ina huutoroo keerol naamne maa ñalnde kala, wonaa ƴeewndo.';
-
-  @override
   String get watchAlertAll => 'Jeertinol e waylooji mawɗi ñalnde';
 
   @override
@@ -2495,4 +2491,8 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Leyɗeele';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Firo AI: ina yiylo goonga ɗen e geese, ina uddita winndannde nden, ina ƴeewa no iwdi ndi hoolniri. Wonaa wasiya e investisman. Ina huutoroo keerol naamne maa ñalnde kala, wonaa ƴeewndo.';
 }

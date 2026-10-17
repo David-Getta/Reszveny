@@ -4051,12 +4051,6 @@ abstract class AppLocalizations {
   /// **'What does this mean?'**
   String get newsExplain;
 
-  /// No description provided for @newsExplainNote.
-  ///
-  /// In en, this message translates to:
-  /// **'An AI explanation based only on the headline and its summary. It is not investment advice. Uses your daily question allowance, not an analysis.'**
-  String get newsExplainNote;
-
   /// Favorites page menu item / dialog title: set a daily-move price alert on every stock in the list at once.
   ///
   /// In en, this message translates to:
@@ -4326,6 +4320,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Countries'**
   String get allocationCountries;
+
+  /// Small note under the AI news explanation (the 'What does this mean?' sheet), which now researches the web and rates the source.
+  ///
+  /// In en, this message translates to:
+  /// **'An AI explanation: it looks the facts up on the web, opens the article and judges how reliable the source is. It is not investment advice. Uses your daily question allowance, not an analysis.'**
+  String get newsExplainNoteResearch;
 }
 
 class _AppLocalizationsDelegate

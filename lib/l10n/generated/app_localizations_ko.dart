@@ -2243,10 +2243,6 @@ class AppLocalizationsKo extends AppLocalizations {
   String get newsExplain => '이게 무슨 뜻인가요?';
 
   @override
-  String get newsExplainNote =>
-      '헤드라인과 요약만을 바탕으로 한 AI 설명입니다. 투자 조언이 아닙니다. 분석 횟수가 아닌 하루 질문 한도가 사용됩니다.';
-
-  @override
   String get watchAlertAll => '큰 일일 변동 알림';
 
   @override
@@ -2431,4 +2427,8 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get allocationCountries => '국가';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI 설명입니다. 웹에서 사실을 찾아보고, 기사를 열어 출처가 얼마나 신뢰할 만한지 판단합니다. 투자 조언이 아닙니다. 분석 횟수가 아닌 하루 질문 한도가 사용됩니다.';
 }

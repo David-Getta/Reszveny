@@ -2304,10 +2304,6 @@ class AppLocalizationsHe extends AppLocalizations {
   String get newsExplain => 'מה זה אומר?';
 
   @override
-  String get newsExplainNote =>
-      'הסבר של AI על סמך הכותרת והתקציר בלבד. אינו מהווה ייעוץ השקעות. נספר במכסת השאלות היומית שלך, לא כניתוח.';
-
-  @override
   String get watchAlertAll => 'התראה על תנודות יומיות חדות';
 
   @override
@@ -2493,4 +2489,8 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get allocationCountries => 'מדינות';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'הסבר של AI: הוא בודק את העובדות ברשת, פותח את הכתבה ומעריך עד כמה המקור אמין. אינו מהווה ייעוץ השקעות. נספר במכסת השאלות היומית שלך, לא כניתוח.';
 }

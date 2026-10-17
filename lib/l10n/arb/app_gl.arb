@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol} non alcanza o BPA esperado",
   "earningsResultBody": "BPA publicado {actual}, esperado {estimate}",
   "newsExplain": "Que significa isto?",
-  "newsExplainNote": "Explicación de IA baseada só no titular e no resumo. Non constitúe asesoramento de investimento. Usa o teu límite diario de preguntas, non unha análise.",
   "watchAlertAll": "Alerta de grandes movementos diarios",
   "watchAlertAllHint": "Unha alerta de prezo para cada acción desta lista que salta cando se move tanto nun día, á alza ou á baixa. As accións que xa teñen unha consérvana.",
   "watchAlertAllDone": "{count, plural, one{Creouse {count} alerta} other{Creáronse {count} alertas}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Borrar alertas activadas",
   "alertsCleared": "{count, plural, =1{Borrouse 1 alerta} one{Borrouse {count} alerta} other{Borráronse {count} alertas}}",
   "homeScreenTitle": "Pantalla de inicio",
-  "allocationCountries": "Países"
+  "allocationCountries": "Países",
+  "newsExplainNoteResearch": "Explicación de IA: busca os datos na web, abre o artigo e valora a fiabilidade da fonte. Non constitúe asesoramento de investimento. Usa o teu límite diario de preguntas, non unha análise."
 }

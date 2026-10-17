@@ -2307,10 +2307,6 @@ class AppLocalizationsIg extends AppLocalizations {
   String get newsExplain => 'Gịnị ka nke a pụtara?';
 
   @override
-  String get newsExplainNote =>
-      'Nkọwa AI dabere naanị n\'isiokwu na nchịkọta ya. Ọ bụghị ndụmọdụ itinye ego. Ọ na-eji oke ajụjụ gị kwa ụbọchị, ọ bụghị nyocha.';
-
-  @override
   String get watchAlertAll => 'Ọkwa maka nnukwu mgbanwe kwa ụbọchị';
 
   @override
@@ -2496,4 +2492,8 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Mba';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Nkọwa AI: ọ na-achọ eziokwu n\'ịntanetị, mepee isiokwu ahụ ma tụlee ma ebe e si nweta ya bụ nke a pụrụ ịtụkwasị obi. Ọ bụghị ndụmọdụ itinye ego. Ọ na-eji oke ajụjụ gị kwa ụbọchị, ọ bụghị nyocha.';
 }

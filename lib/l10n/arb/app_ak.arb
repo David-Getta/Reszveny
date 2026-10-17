@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol} EPS anndu deɛ wɔhwɛɛ kwan",
   "earningsResultBody": "EPS a wɔbɔɔ ho amanneɛ {actual}, wɔhwɛɛ kwan {estimate}",
   "newsExplain": "Dɛn na eyi kyerɛ?",
-  "newsExplainNote": "AI nkyerɛkyerɛmu a egyina asɛmti no ne ne mua nko ara so. Ɛnyɛ sikahyɛmu ho afotu. Ɛfiri wo nsɛmmisa a ɛsɛ da biara mu, ɛnni nhwehwɛmu biara.",
   "watchAlertAll": "Kɔkɔbɔ wɔ da koro nsakrae kɛse ho",
   "watchAlertAllHint": "Boɔ ho kɔkɔbɔ ma kyɛfa biara a ɛwɔ nhyehyɛe yi mu: ɛbɛbɔ wo kɔkɔ sɛ ɛsesa saa dodow yi da koro mu, ɛkɔ soro anaa fam. Deɛ ɛwɔ bi dada no bɛkora ne deɛ.",
   "watchAlertAllDone": "{count, plural, =1{Wɔde kɔkɔbɔ 1 asi hɔ} other{Wɔde kɔkɔbɔ {count} asi hɔ}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Popa kɔkɔbɔ a ayɛ adwuma",
   "alertsCleared": "{count, plural, =1{Wɔapopa kɔkɔbɔ 1} other{Wɔapopa kɔkɔbɔ {count}}}",
   "homeScreenTitle": "Fie skrin",
-  "allocationCountries": "Aman"
+  "allocationCountries": "Aman",
+  "newsExplainNoteResearch": "AI nkyerɛkyerɛmu: ɛhwehwɛ nokwasɛm no wɔ intanɛt so, ebue asɛm no na ɛhwɛ sɛnea wobetumi de wo ho ato fibea no so. Ɛnyɛ sikahyɛmu ho afotu. Ɛfiri wo nsɛmmisa a ɛsɛ da biara mu, ɛnni nhwehwɛmu biara."
 }

@@ -2307,10 +2307,6 @@ class AppLocalizationsGu extends AppLocalizations {
   String get newsExplain => 'આનો અર્થ શું છે?';
 
   @override
-  String get newsExplainNote =>
-      'ફક્ત હેડલાઇન અને સારાંશ પર આધારિત AI સમજૂતી. તે રોકાણ સલાહ નથી. તે તમારી દૈનિક પ્રશ્ન મર્યાદામાંથી જાય છે, કોઈ વિશ્લેષણ વપરાતું નથી.';
-
-  @override
   String get watchAlertAll => 'મોટી દૈનિક વધઘટ પર ચેતવણી';
 
   @override
@@ -2496,4 +2492,8 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get allocationCountries => 'દેશ';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI સમજૂતી: તે વેબ પર તથ્યો શોધે છે, લેખ ખોલે છે અને સ્રોત કેટલો વિશ્વસનીય છે તેનું મૂલ્યાંકન કરે છે. તે રોકાણ સલાહ નથી. તે તમારી દૈનિક પ્રશ્ન મર્યાદામાંથી જાય છે, કોઈ વિશ્લેષણ વપરાતું નથી.';
 }

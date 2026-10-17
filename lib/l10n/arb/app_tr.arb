@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol} beklenen HBK'nın altında kaldı",
   "earningsResultBody": "Açıklanan HBK {actual}, beklenen {estimate}",
   "newsExplain": "Bu ne anlama geliyor?",
-  "newsExplainNote": "Yalnızca başlık ve özete dayanan yapay zekâ açıklaması. Yatırım tavsiyesi değildir. Günlük soru hakkından düşer, analiz hakkı kullanmaz.",
   "watchAlertAll": "Büyük günlük hareketlerde alarm",
   "watchAlertAllHint": "Bu listedeki her hisse için bir fiyat alarmı: bir günde bu kadar yukarı ya da aşağı hareket ettiğinde çalar. Zaten alarmı olan hisseler kendininkini korur.",
   "watchAlertAllDone": "{count, plural, =1{1 alarm kuruldu} other{{count} alarm kuruldu}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Tetiklenen alarmları temizle",
   "alertsCleared": "{count, plural, =1{1 alarm temizlendi} other{{count} alarm temizlendi}}",
   "homeScreenTitle": "Ana ekran",
-  "allocationCountries": "Ülkeler"
+  "allocationCountries": "Ülkeler",
+  "newsExplainNoteResearch": "Yapay zekâ açıklaması: Bilgileri web’de araştırır, haberi açar ve kaynağın ne kadar güvenilir olduğunu değerlendirir. Yatırım tavsiyesi değildir. Günlük soru hakkından düşer, analiz hakkı kullanmaz."
 }

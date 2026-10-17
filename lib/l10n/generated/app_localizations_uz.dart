@@ -2315,10 +2315,6 @@ class AppLocalizationsUz extends AppLocalizations {
   String get newsExplain => 'Bu nimani anglatadi?';
 
   @override
-  String get newsExplainNote =>
-      'Faqat sarlavha va qisqacha mazmunga asoslangan AI izohi. Bu investitsiya maslahati emas. Kunlik savollar limitingizdan sarflanadi, tahlil emas.';
-
-  @override
   String get watchAlertAll => 'Katta kunlik oʻzgarishlar haqida ogohlantirish';
 
   @override
@@ -2506,4 +2502,8 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Mamlakatlar';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI izohi: faktlarni internetda qidiradi, maqolani ochadi va manba qanchalik ishonchli ekanini baholaydi. Bu investitsiya maslahati emas. Kunlik savollar limitingizdan sarflanadi, tahlil emas.';
 }

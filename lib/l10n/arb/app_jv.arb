@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol} ora tekan EPS sing dikarepake",
   "earningsResultBody": "EPS sing dilaporake {actual}, dikarepake {estimate}",
   "newsExplain": "Iki tegesé apa?",
-  "newsExplainNote": "Panjelasan AI mung adhedhasar judhul lan ringkesané. Dudu saran investasi. Nggunakake watesan pitakon saben dina, dudu analisis.",
   "watchAlertAll": "Pènget kanggo owah-owahan gedhé saben dina",
   "watchAlertAllHint": "Pènget rega kanggo saben saham ing dhaptar iki sing muni yèn saham obah semono sajroning sedina, munggah utawa mudhun. Saham sing wis duwé pènget tetep nganggo duwèké.",
   "watchAlertAllDone": "{count, plural, =1{1 pènget wis dipasang} other{{count} pènget wis dipasang}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Busak pènget sing wis aktif",
   "alertsCleared": "{count, plural, =1{1 pènget wis dibusak} other{{count} pènget wis dibusak}}",
   "homeScreenTitle": "Layar utama",
-  "allocationCountries": "Negara"
+  "allocationCountries": "Negara",
+  "newsExplainNoteResearch": "Panjelasan AI: nggolèki fakta ing web, mbukak artikelé lan netepaké sepira bisa dipercaya sumberé. Dudu saran investasi. Nggunakake watesan pitakon saben dina, dudu analisis."
 }

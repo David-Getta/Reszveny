@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol} متوقع EPS کان گهٽ رهيو",
   "earningsResultBody": "جاري ڪيل EPS {actual}، متوقع {estimate}",
   "newsExplain": "هن جو مطلب ڇا آهي؟",
-  "newsExplainNote": "صرف سرخي ۽ خلاصي تي ٻڌل AI وضاحت. اها سيڙپڪاري جو مشورو ناهي. اهو توهان جي روزاني سوالن جي حد مان ويندو آهي، ڪو تجزيو خرچ نٿو ٿئي.",
   "watchAlertAll": "وڏي روزاني لاهه چاڙهه تي الرٽ",
   "watchAlertAllHint": "هن فهرست جي هر شيئر لاءِ قيمت الرٽ: جڏهن هڪ ڏينهن ۾ ايترو مٿي يا هيٺ ٿئي ته ٻڌائيندو. جن شيئرن تي اڳ ۾ ئي الرٽ آهي، انهن جو اهو ئي رهندو.",
   "watchAlertAllDone": "{count, plural, =1{1 الرٽ مقرر ڪيو ويو} other{{count} الرٽ مقرر ڪيا ويا}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "ٽرگر ٿيل الرٽ صاف ڪريو",
   "alertsCleared": "{count, plural, =1{1 الرٽ صاف ڪيو ويو} other{{count} الرٽ صاف ڪيا ويا}}",
   "homeScreenTitle": "هوم اسڪرين",
-  "allocationCountries": "ملڪ"
+  "allocationCountries": "ملڪ",
+  "newsExplainNoteResearch": "AI وضاحت: اها ويب تي حقيقتون ڳولي ٿي، مضمون کولي ٿي ۽ جانچي ٿي ته ذريعو ڪيترو قابلِ اعتبار آهي. اها سيڙپڪاري جو مشورو ناهي. اهو توهان جي روزاني سوالن جي حد مان ويندو آهي، ڪو تجزيو خرچ نٿو ٿئي."
 }

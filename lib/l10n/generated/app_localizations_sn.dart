@@ -2317,10 +2317,6 @@ class AppLocalizationsSn extends AppLocalizations {
   String get newsExplain => 'Izvi zvinorevei?';
 
   @override
-  String get newsExplainNote =>
-      'Tsananguro yeAI yakavakirwa pamusoro wenhau nepfupiso yayo chete. Haisi zano rekuisa mari. Inoshandisa muganhu wako wemibvunzo wezuva nezuva, kwete ongororo.';
-
-  @override
   String get watchAlertAll => 'Yambiro pakuchinja kukuru kwezuva';
 
   @override
@@ -2506,4 +2502,8 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Nyika';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Tsananguro yeAI: inotsvaga chokwadi painternet, inovhura nyaya yacho uye inoongorora kuti kwazvakabva kunovimbika sei. Haisi zano rekuisa mari. Inoshandisa muganhu wako wemibvunzo wezuva nezuva, kwete ongororo.';
 }

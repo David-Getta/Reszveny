@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol} nesasniedza prognozēto EPS",
   "earningsResultBody": "Paziņotais EPS {actual}, prognozētais {estimate}",
   "newsExplain": "Ko tas nozīmē?",
-  "newsExplainNote": "Mākslīgā intelekta skaidrojums, kas balstīts tikai uz virsrakstu un kopsavilkumu. Tā nav ieguldījumu konsultācija. Izmanto jūsu dienas jautājumu limitu, nevis analīzi.",
   "watchAlertAll": "Brīdinājums par lielām dienas izmaiņām",
   "watchAlertAllHint": "Cenas brīdinājums katrai šī saraksta akcijai: tas nostrādās, kad dienas laikā tā mainīsies tik daudz – uz augšu vai uz leju. Akcijas, kurām tāds jau ir, to saglabā.",
   "watchAlertAllDone": "{count, plural, zero{Iestatīti {count} brīdinājumi} one{Iestatīts {count} brīdinājums} other{Iestatīti {count} brīdinājumi}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Notīrīt nostrādājušos brīdinājumus",
   "alertsCleared": "{count, plural, =1{Notīrīts 1 brīdinājums} zero{Notīrīti {count} brīdinājumi} one{Notīrīts {count} brīdinājums} other{Notīrīti {count} brīdinājumi}}",
   "homeScreenTitle": "Sākuma ekrāns",
-  "allocationCountries": "Valstis"
+  "allocationCountries": "Valstis",
+  "newsExplainNoteResearch": "Mākslīgā intelekta skaidrojums: tas meklē faktus tīmeklī, atver rakstu un izvērtē, cik uzticams ir avots. Tā nav ieguldījumu konsultācija. Izmanto jūsu dienas jautājumu limitu, nevis analīzi."
 }

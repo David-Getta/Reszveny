@@ -619,7 +619,6 @@
   "earningsResultMiss": "Saan a dimteng ti {symbol} iti namnamaen nga EPS",
   "earningsResultBody": "Naireport nga EPS {actual}, namnamaen {estimate}",
   "newsExplain": "Ania ti kayat a sawen daytoy?",
-  "newsExplainNote": "Panangilawlawag ti AI a naibatay laeng iti paulo ken iti pakabuklanna. Saan a balakad iti panagpuonan. Agusar daytoy iti inaldaw a limitasion dagiti saludsod-mo, saan nga iti panaganalisa.",
   "watchAlertAll": "Pakdaar iti dadakkel nga inaldaw a garaw",
   "watchAlertAllHint": "Pakdaar iti presio para iti tunggal stock iti daytoy a listaan nga agtimek no gumaraw iti kastoy kadakkel iti maysa nga aldaw, agpangato wenno agpababa. Dagiti stock nga addaanen iti pakdaar ket agtalinaed ti bukodda.",
   "watchAlertAllDone": "{count, plural, =1{Naikabil ti 1 a pakdaar} other{Naikabil ti {count} a pakdaar}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Ikkaten dagiti na-trigger a pakdaar",
   "alertsCleared": "{count, plural, =1{Naikkat ti 1 a pakdaar} other{Naikkat ti {count} a pakdaar}}",
   "homeScreenTitle": "Umuna a screen",
-  "allocationCountries": "Pagilian"
+  "allocationCountries": "Pagilian",
+  "newsExplainNoteResearch": "Panangilawlawag ti AI: sapulenna dagiti pudno iti web, lukatanna ti artikulo ken timbangenna no kasano a mapagtalkan ti taudan. Saan a balakad iti panagpuonan. Agusar daytoy iti inaldaw a limitasion dagiti saludsod-mo, saan nga iti panaganalisa."
 }

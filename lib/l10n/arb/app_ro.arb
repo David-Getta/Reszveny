@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol} sub EPS-ul așteptat",
   "earningsResultBody": "EPS raportat {actual}, așteptat {estimate}",
   "newsExplain": "Ce înseamnă asta?",
-  "newsExplainNote": "Explicație generată de AI, bazată doar pe titlu și pe rezumat. Nu reprezintă un sfat de investiții. Folosește limita ta zilnică de întrebări, nu o analiză.",
   "watchAlertAll": "Alertă la mișcări zilnice mari",
   "watchAlertAllHint": "O alertă de preț pentru fiecare acțiune din această listă, care se declanșează când aceasta se mișcă atât de mult într-o zi, în sus sau în jos. Acțiunile care au deja una și-o păstrează.",
   "watchAlertAllDone": "{count, plural, one{A fost setată {count} alertă} few{Au fost setate {count} alerte} other{Au fost setate {count} de alerte}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Șterge alertele declanșate",
   "alertsCleared": "{count, plural, =1{A fost ștearsă 1 alertă} one{A fost ștearsă {count} alertă} few{Au fost șterse {count} alerte} other{Au fost șterse {count} de alerte}}",
   "homeScreenTitle": "Ecran de pornire",
-  "allocationCountries": "Țări"
+  "allocationCountries": "Țări",
+  "newsExplainNoteResearch": "Explicație generată de AI: caută faptele pe web, deschide articolul și evaluează cât de credibilă este sursa. Nu reprezintă un sfat de investiții. Folosește limita ta zilnică de întrebări, nu o analiză."
 }

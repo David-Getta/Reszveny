@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol} teu nepi ka EPS anu diperkirakeun",
   "earningsResultBody": "EPS anu dilaporkeun {actual}, diperkirakeun {estimate}",
   "newsExplain": "Ieu hartosna naon?",
-  "newsExplainNote": "Katerangan AI anu ngan dumasar kana judul jeung ringkesanana. Lain naséhat investasi. Nganggo wates patarosan sapopoé anjeun, sanés analisis.",
   "watchAlertAll": "Pépéling pikeun gerak harian gedé",
   "watchAlertAllHint": "Pépéling harga pikeun unggal saham dina daptar ieu anu disada nalika saham gerak sakitu dina sapoé, naék atawa turun. Saham anu geus boga pépéling tetep maké nu sorangan.",
   "watchAlertAllDone": "{count, plural, =1{1 pépéling dipasang} other{{count} pépéling dipasang}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Pupus pépéling anu geus aktip",
   "alertsCleared": "{count, plural, =1{1 pépéling dipupus} other{{count} pépéling dipupus}}",
   "homeScreenTitle": "Layar utama",
-  "allocationCountries": "Nagara"
+  "allocationCountries": "Nagara",
+  "newsExplainNoteResearch": "Katerangan AI: néangan fakta di wéb, muka artikelna, sarta meunteun sabaraha bisa dipercaya sumberna. Lain naséhat investasi. Nganggo wates patarosan sapopoé anjeun, sanés analisis."
 }

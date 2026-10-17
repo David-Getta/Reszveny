@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol} erughị EPS a na-atụ anya ya",
   "earningsResultBody": "EPS e kwuputara {actual}, a tụrụ anya {estimate}",
   "newsExplain": "Gịnị ka nke a pụtara?",
-  "newsExplainNote": "Nkọwa AI dabere naanị n'isiokwu na nchịkọta ya. Ọ bụghị ndụmọdụ itinye ego. Ọ na-eji oke ajụjụ gị kwa ụbọchị, ọ bụghị nyocha.",
   "watchAlertAll": "Ọkwa maka nnukwu mgbanwe kwa ụbọchị",
   "watchAlertAllHint": "Ọkwa ọnụahịa maka òkè ọ bụla dị na ndepụta a: ọ ga-ada ma ọ gbanwee otu a n'otu ụbọchị, elu ma ọ bụ ala. Ndị nwere otu ugbu a ga-edobe nke ha.",
   "watchAlertAllDone": "{count, plural, =1{Edobere ọkwa 1} other{Edobere ọkwa {count}}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Hichapụ ọkwa ndị rụrụ ọrụ",
   "alertsCleared": "{count, plural, =1{E hichapụla ọkwa 1} other{E hichapụla ọkwa {count}}}",
   "homeScreenTitle": "Ibe mbụ",
-  "allocationCountries": "Mba"
+  "allocationCountries": "Mba",
+  "newsExplainNoteResearch": "Nkọwa AI: ọ na-achọ eziokwu n'ịntanetị, mepee isiokwu ahụ ma tụlee ma ebe e si nweta ya bụ nke a pụrụ ịtụkwasị obi. Ọ bụghị ndụmọdụ itinye ego. Ọ na-eji oke ajụjụ gị kwa ụbọchị, ọ bụghị nyocha."
 }

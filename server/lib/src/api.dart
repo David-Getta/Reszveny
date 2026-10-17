@@ -1332,6 +1332,11 @@ class Api {
   static const askMaxChars = 80000;
   static const askMaxTokens = 1500;
 
+  /// Utánanézéses kérdésnél: több kimeneti token, legfeljebb 3 keresés és 2 megnyitott oldal.
+  static const askResearchMaxTokens = 2500;
+  static const askMaxSearches = 3;
+  static const askMaxFetches = 2;
+
   /// A kérdés-kérés ellenőrzése: felváltva felhasználó és asszisztens, a
   /// felhasználóé az első és az utolsó, csak szöveg, korlátos hossz. `null`, ha nem jó.
   static ({Object? system, List<Map<String, dynamic>> messages})? checkAskRequest(Map<String, dynamic> body) {
@@ -1375,7 +1380,8 @@ class Api {
   Future<Response> _ask(Request r) async {
     final uid = _userId(r);
     if (uid == null) return _error(401, 'unauthorized');
-    final req = checkAskRequest(await _body(r));
+    final raw = await _body(r);
+    final req = checkAskRequest(raw);
     if (req == null) return _error(400, 'bad_request');
     final e = store.entitlement(uid);
     if (e.tier == null && e.extra <= 0) return _error(402, 'no_plan');
@@ -1385,17 +1391,41 @@ class Api {
       return _error(429, 'ask_limit');
     }
     store.logAskCall(uid);
-    final upstream = await _forwardAnthropic(
-      jsonEncode({
-        'model': trial ? trialModel : anthropicModel,
-        'max_tokens': askMaxTokens,
-        'system': ?req.system,
-        'messages': req.messages,
-        'output_config': {'effort': 'low'},
-      }),
-      null,
-    );
+    // Utánanézés (pl. a „Mit jelent ez?” hírmagyarázat): fizetős csomagban kevés
+    // webkeresés és oldalmegnyitás; próbaidőben eszközök nélkül.
+    final tools = trial ? null : askResearchTools(raw['tools']);
+    final body = jsonEncode({
+      'model': trial ? trialModel : anthropicModel,
+      'max_tokens': tools == null ? askMaxTokens : askResearchMaxTokens,
+      'system': ?req.system,
+      'messages': req.messages,
+      'output_config': {'effort': 'low'},
+      'tools': ?tools,
+    });
+    var upstream = await _forwardAnthropic(body, null);
+    if (tools != null && _rejectedWebFetch(upstream)) upstream = await _forwardAnthropic(withoutWebFetch(body), null);
     return Response(upstream.statusCode, body: upstream.body, headers: {'content-type': 'application/json'});
+  }
+
+  /// A kérdéshez kért kutató eszközök szűrve: csak webkeresés (legfeljebb
+  /// [askMaxSearches]) és oldalmegnyitás (legfeljebb [askMaxFetches], korlátozott
+  /// mérettel). `null`, ha nincs ilyen eszköz a kérésben.
+  static List<Map<String, dynamic>>? askResearchTools(Object? tools) {
+    if (tools is! List) return null;
+    int cap(Object? asked, int limit) => asked is int && asked > 0 && asked < limit ? asked : limit;
+    final out = <Map<String, dynamic>>[
+      for (final t in tools)
+        if (t is Map && '${t['type']}'.startsWith('web_search'))
+          {'type': t['type'], 'name': 'web_search', 'max_uses': cap(t['max_uses'], askMaxSearches)}
+        else if (t is Map && '${t['type']}'.startsWith('web_fetch'))
+          {
+            'type': t['type'],
+            'name': 'web_fetch',
+            'max_uses': cap(t['max_uses'], askMaxFetches),
+            'max_content_tokens': cap(t['max_content_tokens'], Depth.maxFetchTokens),
+          },
+    ];
+    return out.isEmpty ? null : out;
   }
 
   Future<Response> _anthropicPassthrough(Request r) async {

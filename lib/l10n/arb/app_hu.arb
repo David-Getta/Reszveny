@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol}: a várt EPS alatt",
   "earningsResultBody": "Jelentett EPS {actual}, várt {estimate}",
   "newsExplain": "Mit jelent ez?",
-  "newsExplainNote": "AI-magyarázat, csak a cím és az összefoglaló alapján. Nem befektetési tanács. A napi kérdéskeretből megy, elemzést nem fogyaszt.",
   "watchAlertAll": "Riasztás nagy napi mozgásra",
   "watchAlertAllHint": "Árfolyam-riasztás a lista minden részvényére: akkor szól, ha egy nap alatt ennyit mozdul, felfelé vagy lefelé. Ahol már van ilyen, az marad.",
   "watchAlertAllDone": "{count, plural, =1{1 riasztás beállítva} other{{count} riasztás beállítva}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Teljesült riasztások törlése",
   "alertsCleared": "{count, plural, =1{1 riasztás törölve} other{{count} riasztás törölve}}",
   "homeScreenTitle": "Kezdőképernyő",
-  "allocationCountries": "Országok"
+  "allocationCountries": "Országok",
+  "newsExplainNoteResearch": "AI-magyarázat: utánanéz a tényeknek a weben, megnyitja a cikket, és megítéli, mennyire hiteles a forrás. Nem befektetési tanács. A napi kérdéskeretből megy, elemzést nem fogyaszt."
 }

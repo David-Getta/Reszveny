@@ -2312,10 +2312,6 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get newsExplain => 'ئەمە واتای چییە؟';
 
   @override
-  String get newsExplainNote =>
-      'ڕوونکردنەوەی AI تەنها لەسەر بنەمای سەردێڕ و کورتەکە. ئامۆژگاریی وەبەرهێنان نییە. لە سنووری پرسیارە ڕۆژانەکانت دەبرێت، شیکاری بەکارناهێنێت.';
-
-  @override
   String get watchAlertAll => 'ئاگادارکردنەوە بۆ جووڵەی گەورەی ڕۆژانە';
 
   @override
@@ -2502,4 +2498,8 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get allocationCountries => 'وڵاتەکان';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'ڕوونکردنەوەی AI: ڕاستییەکان لە وێب دەگەڕێت، وتارەکە دەکاتەوە و هەڵدەسەنگێنێت سەرچاوەکە چەندە متمانەپێکراوە. ئامۆژگاریی وەبەرهێنان نییە. لە سنووری پرسیارە ڕۆژانەکانت دەبرێت، شیکاری بەکارناهێنێت.';
 }

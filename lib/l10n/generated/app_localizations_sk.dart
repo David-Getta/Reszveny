@@ -2372,10 +2372,6 @@ class AppLocalizationsSk extends AppLocalizations {
   String get newsExplain => 'Čo to znamená?';
 
   @override
-  String get newsExplainNote =>
-      'Vysvetlenie od AI iba na základe titulku a zhrnutia. Nie je investičným odporúčaním. Čerpá z vášho denného limitu otázok, nespotrebuje analýzu.';
-
-  @override
   String get watchAlertAll => 'Upozornenie na veľké denné pohyby';
 
   @override
@@ -2567,4 +2563,8 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Krajiny';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Vysvetlenie od AI: vyhľadá fakty na webe, otvorí článok a posúdi, aký spoľahlivý je zdroj. Nie je investičným odporúčaním. Čerpá z vášho denného limitu otázok, nespotrebuje analýzu.';
 }

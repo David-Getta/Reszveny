@@ -2307,10 +2307,6 @@ class AppLocalizationsId extends AppLocalizations {
   String get newsExplain => 'Apa artinya ini?';
 
   @override
-  String get newsExplainNote =>
-      'Penjelasan AI yang hanya berdasarkan judul dan ringkasannya. Bukan saran investasi. Memakai kuota pertanyaan harian Anda, bukan analisis.';
-
-  @override
   String get watchAlertAll => 'Peringatan untuk pergerakan harian besar';
 
   @override
@@ -2496,4 +2492,8 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Negara';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Penjelasan AI: mencari fakta di web, membuka artikelnya, dan menilai seberapa tepercaya sumbernya. Bukan saran investasi. Memakai kuota pertanyaan harian Anda, bukan analisis.';
 }

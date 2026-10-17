@@ -163,7 +163,21 @@ Rules:
 
 /// Rövid szöveges válasz a „Kérdezz” végponton (a napi kérdéskeretből); a hibák
 /// az elemzés hibakódjaival jönnek. Az összefoglaló és a hírmagyarázat is ezt használja.
-Future<String> askText(AppConfig config, http.Client client, Map<String, dynamic> body) async {
+Future<String> askText(AppConfig config, http.Client client, Map<String, dynamic> body) async =>
+    (await askWithSources(config, client, body)).text;
+
+/// Egy forrás, amire a válasz hivatkozik (webkeresés vagy megnyitott oldal).
+typedef AskSource = ({String title, String url});
+
+/// Mint az [askText], de a webkeresés idézett forrásait is visszaadja (címmel és
+/// URL-lel, ismétlés nélkül, legfeljebb [maxSources]). Ha a válasz nem idéz, a
+/// keresési találatok elejéből választ.
+Future<({String text, List<AskSource> sources})> askWithSources(
+  AppConfig config,
+  http.Client client,
+  Map<String, dynamic> body, {
+  int maxSources = 4,
+}) async {
   final http.Response res;
   try {
     res = await client
@@ -188,18 +202,40 @@ Future<String> askText(AppConfig config, http.Client client, Map<String, dynamic
     throw AnalysisException(AppErrorCode.aiHttp, detail: '${res.statusCode}', cause: res.body);
   }
   final String text;
+  final sources = <AskSource>[];
   try {
     final j = jsonDecode(utf8.decode(res.bodyBytes)) as Map<String, dynamic>;
     if (j['stop_reason'] == 'refusal') throw const AnalysisException(AppErrorCode.aiRefused);
+    final content = (j['content'] as List? ?? const []).whereType<Map>().toList();
     text = [
-      for (final b in (j['content'] as List? ?? const []))
-        if (b is Map && b['type'] == 'text') b['text'] as String? ?? '',
+      for (final b in content)
+        if (b['type'] == 'text') b['text'] as String? ?? '',
     ].join().trim();
+    void add(Object? url, Object? title) {
+      if (url is! String || !url.startsWith('http') || sources.length >= maxSources) return;
+      if (sources.any((s) => s.url == url)) return;
+      final t = title is String && title.trim().isNotEmpty ? title.trim() : (Uri.tryParse(url)?.host ?? url);
+      sources.add((title: t, url: url));
+    }
+
+    for (final b in content) {
+      for (final c in (b['citations'] as List? ?? const []).whereType<Map>()) {
+        add(c['url'], c['title']);
+      }
+    }
+    if (sources.isEmpty) {
+      for (final b in content.where((b) => b['type'] == 'web_search_tool_result')) {
+        final results = b['content'];
+        for (final r in (results is List ? results : const []).whereType<Map>()) {
+          add(r['url'], r['title']);
+        }
+      }
+    }
   } on AppException {
     rethrow;
   } catch (e) {
     throw AnalysisException(AppErrorCode.aiBadResponse, cause: e);
   }
   if (text.isEmpty) throw const AnalysisException(AppErrorCode.aiBadResponse);
-  return text;
+  return (text: text, sources: sources);
 }

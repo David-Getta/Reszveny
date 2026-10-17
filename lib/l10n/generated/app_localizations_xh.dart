@@ -2322,10 +2322,6 @@ class AppLocalizationsXh extends AppLocalizations {
   String get newsExplain => 'Oku kuthetha ukuthini?';
 
   @override
-  String get newsExplainNote =>
-      'Ingcaciso ye-AI esekelwe kuphela kwisihloko nesishwankathelo saso. Ayilocebiso lotyalo-mali. Sisebenzisa umda wakho wemibuzo wemihla ngemihla, hayi uhlalutyo.';
-
-  @override
   String get watchAlertAll => 'Isilumkiso sentshukumo enkulu yosuku';
 
   @override
@@ -2512,4 +2508,8 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Amazwe';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Ingcaciso ye-AI: ikhangela iinyani kwiwebhu, ivule inqaku kwaye ivavanye ukuba umthombo uthembeke kangakanani. Ayilocebiso lotyalo-mali. Sisebenzisa umda wakho wemibuzo wemihla ngemihla, hayi uhlalutyo.';
 }

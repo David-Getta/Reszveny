@@ -2309,10 +2309,6 @@ class AppLocalizationsSi extends AppLocalizations {
   String get newsExplain => 'මෙහි තේරුම කුමක්ද?';
 
   @override
-  String get newsExplainNote =>
-      'සිරස්තලය සහ සාරාංශය මත පමණක් පදනම් වූ AI පැහැදිලි කිරීමකි. එය ආයෝජන උපදෙසක් නොවේ. මෙය ඔබේ දෛනික ප්‍රශ්න සීමාවෙන් යයි, විශ්ලේෂණයක් භාවිත නොකරයි.';
-
-  @override
   String get watchAlertAll => 'විශාල දෛනික වෙනස්වීම් සඳහා ඇඟවීම';
 
   @override
@@ -2498,4 +2494,8 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get allocationCountries => 'රටවල්';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI පැහැදිලි කිරීමකි: එය වෙබයේ කරුණු සොයා බලයි, ලිපිය විවෘත කර මූලාශ්‍රය කෙතරම් විශ්වාසදායීදැයි තක්සේරු කරයි. එය ආයෝජන උපදෙසක් නොවේ. මෙය ඔබේ දෛනික ප්‍රශ්න සීමාවෙන් යයි, විශ්ලේෂණයක් භාවිත නොකරයි.';
 }

@@ -2305,10 +2305,6 @@ class AppLocalizationsMai extends AppLocalizations {
   String get newsExplain => 'एकर की अर्थ अछि?';
 
   @override
-  String get newsExplainNote =>
-      'मात्र शीर्षक आ सारांश पर आधारित AI व्याख्या। ई निवेशक सलाह नहि अछि। ई अहाँक दैनिक प्रश्न-सीमासँ जाइत अछि, कोनो विश्लेषण खर्च नहि होइत अछि।';
-
-  @override
   String get watchAlertAll => 'पैघ दैनिक उतार-चढ़ाव पर अलर्ट';
 
   @override
@@ -2494,4 +2490,8 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get allocationCountries => 'देश';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI व्याख्या: ई वेब पर तथ्य खोजैत अछि, लेख खोलैत अछि आ परखैत अछि जे स्रोत कतेक भरोसेमंद अछि। ई निवेशक सलाह नहि अछि। ई अहाँक दैनिक प्रश्न-सीमासँ जाइत अछि, कोनो विश्लेषण खर्च नहि होइत अछि।';
 }

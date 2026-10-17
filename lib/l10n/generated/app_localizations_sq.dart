@@ -2318,10 +2318,6 @@ class AppLocalizationsSq extends AppLocalizations {
   String get newsExplain => 'Çfarë do të thotë kjo?';
 
   @override
-  String get newsExplainNote =>
-      'Shpjegim nga AI bazuar vetëm në titull dhe përmbledhje. Nuk përbën këshillë investimi. Përdor kufirin tuaj ditor të pyetjeve, jo një analizë.';
-
-  @override
   String get watchAlertAll => 'Sinjalizim për lëvizje të mëdha ditore';
 
   @override
@@ -2507,4 +2503,8 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Vendet';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Shpjegim nga AI: kërkon faktet në internet, hap artikullin dhe vlerëson sa i besueshëm është burimi. Nuk përbën këshillë investimi. Përdor kufirin tuaj ditor të pyetjeve, jo një analizë.';
 }

@@ -2313,10 +2313,6 @@ class AppLocalizationsAz extends AppLocalizations {
   String get newsExplain => 'Bu nə deməkdir?';
 
   @override
-  String get newsExplainNote =>
-      'Yalnız başlıq və xülasə əsasında AI izahı. İnvestisiya məsləhəti deyil. Gündəlik sual limitinizdən istifadə edir, təhlil sərf etmir.';
-
-  @override
   String get watchAlertAll => 'Böyük gündəlik dəyişmələrdə xəbərdarlıq';
 
   @override
@@ -2503,4 +2499,8 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Ölkələr';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI izahı: faktları internetdə axtarır, məqaləni açır və mənbənin nə qədər etibarlı olduğunu qiymətləndirir. İnvestisiya məsləhəti deyil. Gündəlik sual limitinizdən istifadə edir, təhlil sərf etmir.';
 }

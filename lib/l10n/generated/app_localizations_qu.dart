@@ -2325,10 +2325,6 @@ class AppLocalizationsQu extends AppLocalizations {
   String get newsExplain => 'Kayqa imatataq niyta munan?';
 
   @override
-  String get newsExplainNote =>
-      'AI sut’ichay, umalliqllapi pisichasqanpi ima sayasqa. Manan qullqi churanapaq yuyaychaychu. Sapa p’unchay tapukuy limitiykita apaykachan, manan t’aqwiytachu.';
-
-  @override
   String get watchAlertAll => 'Hatun p\'unchaw kuyuypaq willay';
 
   @override
@@ -2515,4 +2511,8 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Suyukuna';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI sut’ichay: web nisqapi chiqap kaqkunata maskhan, qillqata kichan, pukyuqa hayk’a iñinapaq kasqanta chaninchan. Manan qullqi churanapaq yuyaychaychu. Sapa p’unchay tapukuy limitiykita apaykachan, manan t’aqwiytachu.';
 }

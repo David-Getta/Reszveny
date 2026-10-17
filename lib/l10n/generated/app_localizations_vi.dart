@@ -2305,10 +2305,6 @@ class AppLocalizationsVi extends AppLocalizations {
   String get newsExplain => 'Điều này có nghĩa là gì?';
 
   @override
-  String get newsExplainNote =>
-      'Giải thích do AI tạo, chỉ dựa trên tiêu đề và phần tóm tắt. Không phải là lời khuyên đầu tư. Dùng hạn mức câu hỏi hằng ngày của bạn, không dùng lượt phân tích.';
-
-  @override
   String get watchAlertAll => 'Cảnh báo biến động mạnh trong ngày';
 
   @override
@@ -2494,4 +2490,8 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Quốc gia';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Giải thích do AI tạo: AI tra cứu thông tin trên web, mở bài báo và đánh giá mức độ đáng tin cậy của nguồn. Không phải là lời khuyên đầu tư. Dùng hạn mức câu hỏi hằng ngày của bạn, không dùng lượt phân tích.';
 }

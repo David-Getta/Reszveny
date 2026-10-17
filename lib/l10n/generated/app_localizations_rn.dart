@@ -2319,10 +2319,6 @@ class AppLocalizationsRn extends AppLocalizations {
   String get newsExplain => 'Ibi bisobanura iki?';
 
   @override
-  String get newsExplainNote =>
-      'Insobanuro ya AI ishingiye gusa ku mutwe w\'inkuru n\'incamake yayo. Si inama yo gushora imari. Ikoresha urugero rw’ibibazo vyawe rw’umunsi, si isesengura.';
-
-  @override
   String get watchAlertAll => 'Imenyesha ku mahinduka manini y\'umusi';
 
   @override
@@ -2508,4 +2504,8 @@ class AppLocalizationsRn extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Ibihugu';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Insobanuro ya AI: irondera ukuri kuri internet, ikugurura inkuru kandi igasuzuma ingene inkomoko yizigirwa. Si inama yo gushora imari. Ikoresha urugero rw’ibibazo vyawe rw’umunsi, si isesengura.';
 }

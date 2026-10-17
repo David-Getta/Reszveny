@@ -2318,10 +2318,6 @@ class AppLocalizationsKn extends AppLocalizations {
   String get newsExplain => 'ಇದರ ಅರ್ಥವೇನು?';
 
   @override
-  String get newsExplainNote =>
-      'ಶೀರ್ಷಿಕೆ ಮತ್ತು ಸಾರಾಂಶವನ್ನು ಮಾತ್ರ ಆಧರಿಸಿದ AI ವಿವರಣೆ. ಇದು ಹೂಡಿಕೆ ಸಲಹೆಯಲ್ಲ. ಇದು ನಿಮ್ಮ ದೈನಂದಿನ ಪ್ರಶ್ನೆ ಮಿತಿಯನ್ನು ಬಳಸುತ್ತದೆ, ವಿಶ್ಲೇಷಣೆಯನ್ನಲ್ಲ.';
-
-  @override
   String get watchAlertAll => 'ದೊಡ್ಡ ದೈನಂದಿನ ಏರಿಳಿತಕ್ಕೆ ಎಚ್ಚರಿಕೆ';
 
   @override
@@ -2507,4 +2503,8 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get allocationCountries => 'ದೇಶಗಳು';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI ವಿವರಣೆ: ಇದು ವೆಬ್‌ನಲ್ಲಿ ಸಂಗತಿಗಳನ್ನು ಹುಡುಕುತ್ತದೆ, ಲೇಖನವನ್ನು ತೆರೆಯುತ್ತದೆ ಮತ್ತು ಮೂಲ ಎಷ್ಟು ವಿಶ್ವಾಸಾರ್ಹ ಎಂಬುದನ್ನು ನಿರ್ಣಯಿಸುತ್ತದೆ. ಇದು ಹೂಡಿಕೆ ಸಲಹೆಯಲ್ಲ. ಇದು ನಿಮ್ಮ ದೈನಂದಿನ ಪ್ರಶ್ನೆ ಮಿತಿಯನ್ನು ಬಳಸುತ್ತದೆ, ವಿಶ್ಲೇಷಣೆಯನ್ನಲ್ಲ.';
 }

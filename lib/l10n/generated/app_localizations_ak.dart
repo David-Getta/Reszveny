@@ -2311,10 +2311,6 @@ class AppLocalizationsAk extends AppLocalizations {
   String get newsExplain => 'Dɛn na eyi kyerɛ?';
 
   @override
-  String get newsExplainNote =>
-      'AI nkyerɛkyerɛmu a egyina asɛmti no ne ne mua nko ara so. Ɛnyɛ sikahyɛmu ho afotu. Ɛfiri wo nsɛmmisa a ɛsɛ da biara mu, ɛnni nhwehwɛmu biara.';
-
-  @override
   String get watchAlertAll => 'Kɔkɔbɔ wɔ da koro nsakrae kɛse ho';
 
   @override
@@ -2500,4 +2496,8 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Aman';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI nkyerɛkyerɛmu: ɛhwehwɛ nokwasɛm no wɔ intanɛt so, ebue asɛm no na ɛhwɛ sɛnea wobetumi de wo ho ato fibea no so. Ɛnyɛ sikahyɛmu ho afotu. Ɛfiri wo nsɛmmisa a ɛsɛ da biara mu, ɛnni nhwehwɛmu biara.';
 }

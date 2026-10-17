@@ -2303,10 +2303,6 @@ class AppLocalizationsPs extends AppLocalizations {
   String get newsExplain => 'دا څه معنا لري؟';
 
   @override
-  String get newsExplainNote =>
-      'یوازې د سرلیک او لنډیز پر بنسټ د AI تشریح. د پانګونې مشوره نه ده. ستاسو د ورځنیو پوښتنو له حد څخه کمېږي، شننه نه لګوي.';
-
-  @override
   String get watchAlertAll => 'د لویو ورځنیو بدلونونو خبرتیا';
 
   @override
@@ -2492,4 +2488,8 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get allocationCountries => 'هېوادونه';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'د AI تشریح: په وېب کې حقایق لټوي، مقاله پرانیزي او ارزوي چې سرچینه څومره د باور وړ ده. د پانګونې مشوره نه ده. ستاسو د ورځنیو پوښتنو له حد څخه کمېږي، شننه نه لګوي.';
 }

@@ -2327,10 +2327,6 @@ class AppLocalizationsTn extends AppLocalizations {
   String get newsExplain => 'Se se kaya eng?';
 
   @override
-  String get newsExplainNote =>
-      'Tlhaloso ya AI e e theilweng fela mo setlhogong le kakaretsong ya sone. Ga se kgakololo ya peeletso. E dirisa tekanyetso ya gago ya dipotso ya letsatsi le letsatsi, e seng tshekatsheko.';
-
-  @override
   String get watchAlertAll => 'Tlhagiso ya diphetogo tse dikgolo tsa letsatsi';
 
   @override
@@ -2518,4 +2514,8 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Dinaga';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Tlhaloso ya AI: e batla dintlha mo inthaneteng, e bula athikele mme e sekaseka gore motswedi o ikanyega go le kana kang. Ga se kgakololo ya peeletso. E dirisa tekanyetso ya gago ya dipotso ya letsatsi le letsatsi, e seng tshekatsheko.';
 }

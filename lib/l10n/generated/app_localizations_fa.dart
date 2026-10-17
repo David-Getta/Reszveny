@@ -2308,10 +2308,6 @@ class AppLocalizationsFa extends AppLocalizations {
   String get newsExplain => 'این یعنی چه؟';
 
   @override
-  String get newsExplainNote =>
-      'توضیح هوش مصنوعی فقط بر اساس تیتر و خلاصهٔ آن. توصیه سرمایه‌گذاری نیست. از سهمیهٔ روزانهٔ پرسش‌های شما کم می‌شود، نه از تحلیل‌ها.';
-
-  @override
   String get watchAlertAll => 'هشدار برای نوسان‌های بزرگ روزانه';
 
   @override
@@ -2497,4 +2493,8 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get allocationCountries => 'کشورها';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'توضیح هوش مصنوعی: واقعیت‌ها را در وب جست‌وجو می‌کند، مقاله را باز می‌کند و میزان اعتبار منبع را می‌سنجد. توصیه سرمایه‌گذاری نیست. از سهمیهٔ روزانهٔ پرسش‌های شما کم می‌شود، نه از تحلیل‌ها.';
 }

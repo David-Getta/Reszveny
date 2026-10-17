@@ -2375,10 +2375,6 @@ class AppLocalizationsPl extends AppLocalizations {
   String get newsExplain => 'Co to oznacza?';
 
   @override
-  String get newsExplainNote =>
-      'Wyjaśnienie AI oparte wyłącznie na nagłówku i streszczeniu. Nie stanowi porady inwestycyjnej. Korzysta z dziennego limitu pytań, nie zużywa analizy.';
-
-  @override
   String get watchAlertAll => 'Alert przy dużych ruchach dziennych';
 
   @override
@@ -2570,4 +2566,8 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Kraje';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Wyjaśnienie AI: sprawdza fakty w sieci, otwiera artykuł i ocenia, na ile wiarygodne jest źródło. Nie stanowi porady inwestycyjnej. Korzysta z dziennego limitu pytań, nie zużywa analizy.';
 }

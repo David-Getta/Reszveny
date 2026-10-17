@@ -2310,10 +2310,6 @@ class AppLocalizationsYo extends AppLocalizations {
   String get newsExplain => 'Kí ni èyí túmọ̀ sí?';
 
   @override
-  String get newsExplainNote =>
-      'Àlàyé AI tí ó dá lórí àkọlé àti àkópọ̀ rẹ̀ nìkan. Kì í ṣe ìmọ̀ràn ìdókòwò. Ó ń lo ìwọ̀n ìbéèrè ojoojúmọ́ rẹ, kì í ṣe ìtúpalẹ̀.';
-
-  @override
   String get watchAlertAll => 'Ìkìlọ̀ fún ìyípadà ńlá ojoojúmọ́';
 
   @override
@@ -2499,4 +2495,8 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Orílẹ̀-èdè';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Àlàyé AI: ó ń wá òtítọ́ lórí ayélujára, ó ń ṣí àpilẹ̀kọ náà, ó sì ń ṣàyẹ̀wò bí orísun náà ṣe ṣeé gbẹ́kẹ̀lé tó. Kì í ṣe ìmọ̀ràn ìdókòwò. Ó ń lo ìwọ̀n ìbéèrè ojoojúmọ́ rẹ, kì í ṣe ìtúpalẹ̀.';
 }

@@ -2309,10 +2309,6 @@ class AppLocalizationsBm extends AppLocalizations {
   String get newsExplain => 'Nin kɔrɔ ye mun ye?';
 
   @override
-  String get newsExplainNote =>
-      'AI ka ɲɛfɔli min sinsinnen bɛ kunkan ni a kuncɛ dɔrɔn kan. Wari donni ladilikan tɛ. A bɛ bɔ i ka don o don ɲininkaliw hakɛ la, a tɛ sɛgɛsɛgɛli si ta.';
-
-  @override
   String get watchAlertAll => 'Kunnafoni don yɛlɛma belebeleba kan';
 
   @override
@@ -2498,4 +2494,8 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Jamanaw';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI ka ɲɛfɔli: a bɛ tiɲɛw ɲini ɛntɛrinɛti kan, ka sɛbɛn in da wuli, ka a jateminɛ ni bɔyɔrɔ in bɛ se ka da a la cogo min na. Wari donni ladilikan tɛ. A bɛ bɔ i ka don o don ɲininkaliw hakɛ la, a tɛ sɛgɛsɛgɛli si ta.';
 }

@@ -2320,10 +2320,6 @@ class AppLocalizationsOm extends AppLocalizations {
   String get newsExplain => 'Kun maal jechuu dha?';
 
   @override
-  String get newsExplainNote =>
-      'Ibsa AI mata duree fi cuunfaa qofa irratti hundaa\'e. Gorsa invastimantii miti. Daangaa gaaffii guyyaa kee fayyadama, xiinxala miti.';
-
-  @override
   String get watchAlertAll => 'Akeekkachiisa sochii guddaa guyyaa';
 
   @override
@@ -2509,4 +2505,8 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Biyyoota';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Ibsa AI: dhugaawwan interneetii irratti barbaada, barruu sana bana, madda sana hammam amanamaa akka ta\'e madaala. Gorsa invastimantii miti. Daangaa gaaffii guyyaa kee fayyadama, xiinxala miti.';
 }

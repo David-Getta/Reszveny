@@ -2315,10 +2315,6 @@ class AppLocalizationsEe extends AppLocalizations {
   String get newsExplain => 'Nukae esia fia?';
 
   @override
-  String get newsExplainNote =>
-      'AI ƒe ɖeɖe me si nɔ te ɖe tanya kple eƒe kpuie ko dzi. Menye aɖaŋuɖoɖo le gadede nu ŋu o. Etsɔna tso wò gbesiagbe nyabiasewo ƒe seɖoƒe me, mezãa dzodzro aɖeke o.';
-
-  @override
   String get watchAlertAll => 'Nuxlɔ̃ame ɖe ŋkeke ɖeka ƒe tɔtrɔ gãwo ŋu';
 
   @override
@@ -2504,4 +2500,8 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Dukɔwo';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI ƒe ɖeɖe me: edia nyateƒenyawo le internet dzi, eʋua nyatia eye wòkpɔa ale si woate ŋu aɖo ŋu ɖe dzɔtsoƒe la ŋu. Menye aɖaŋuɖoɖo le gadede nu ŋu o. Etsɔna tso wò gbesiagbe nyabiasewo ƒe seɖoƒe me, mezãa dzodzro aɖeke o.';
 }

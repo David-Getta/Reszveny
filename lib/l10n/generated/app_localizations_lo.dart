@@ -2286,10 +2286,6 @@ class AppLocalizationsLo extends AppLocalizations {
   String get newsExplain => 'ນີ້ໝາຍຄວາມວ່າແນວໃດ?';
 
   @override
-  String get newsExplainNote =>
-      'ຄຳອະທິບາຍຈາກ AI ອີງໃສ່ພຽງຫົວຂໍ້ຂ່າວ ແລະ ບົດສະຫຼຸບເທົ່ານັ້ນ. ບໍ່ແມ່ນຄຳແນະນຳການລົງທຶນ. ໃຊ້ໂຄຕາຄຳຖາມປະຈຳວັນຂອງທ່ານ ບໍ່ແມ່ນການວິເຄາະ.';
-
-  @override
   String get watchAlertAll => 'ແຈ້ງເຕືອນເມື່ອປ່ຽນແປງລາຍວັນຫຼາຍ';
 
   @override
@@ -2474,4 +2470,8 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get allocationCountries => 'ປະເທດ';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'ຄຳອະທິບາຍຈາກ AI: ມັນຊອກຫາຂໍ້ເທັດຈິງໃນເວັບ, ເປີດບົດຄວາມ ແລະ ປະເມີນວ່າແຫຼ່ງທີ່ມາໜ້າເຊື່ອຖືພຽງໃດ. ບໍ່ແມ່ນຄຳແນະນຳການລົງທຶນ. ໃຊ້ໂຄຕາຄຳຖາມປະຈຳວັນຂອງທ່ານ ບໍ່ແມ່ນການວິເຄາະ.';
 }

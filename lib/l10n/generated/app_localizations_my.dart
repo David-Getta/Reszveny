@@ -2304,10 +2304,6 @@ class AppLocalizationsMy extends AppLocalizations {
   String get newsExplain => 'ဤသည်မှာ ဘာကို ဆိုလိုသနည်း။';
 
   @override
-  String get newsExplainNote =>
-      'ခေါင်းစဉ်နှင့် အနှစ်ချုပ်ကိုသာ အခြေခံထားသော AI ရှင်းလင်းချက်။ ရင်းနှီးမြှုပ်နှံမှု အကြံပြုချက် မဟုတ်ပါ။ နေ့စဉ် မေးခွန်းကန့်သတ်ချက်မှ သုံးပြီး ခွဲခြမ်းစိတ်ဖြာမှု မသုံးပါ။';
-
-  @override
   String get watchAlertAll => 'နေ့စဉ် ကြီးမားသော ပြောင်းလဲမှုအတွက် သတိပေးချက်';
 
   @override
@@ -2492,4 +2488,8 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get allocationCountries => 'နိုင်ငံ';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI ရှင်းလင်းချက်- ဝဘ်ပေါ်တွင် အချက်အလက်များကို ရှာဖွေပြီး ဆောင်းပါးကိုဖွင့်ကာ ရင်းမြစ် မည်မျှ ယုံကြည်စိတ်ချရသည်ကို အကဲဖြတ်ပါသည်။ ရင်းနှီးမြှုပ်နှံမှု အကြံပြုချက် မဟုတ်ပါ။ နေ့စဉ် မေးခွန်းကန့်သတ်ချက်မှ သုံးပြီး ခွဲခြမ်းစိတ်ဖြာမှု မသုံးပါ။';
 }

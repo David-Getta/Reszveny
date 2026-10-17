@@ -2324,10 +2324,6 @@ class AppLocalizationsDe extends AppLocalizations {
   String get newsExplain => 'Was bedeutet das?';
 
   @override
-  String get newsExplainNote =>
-      'KI-Erklärung, nur auf Basis der Schlagzeile und der Zusammenfassung. Keine Anlageberatung. Zählt zu deinem täglichen Fragenkontingent, nicht als Analyse.';
-
-  @override
   String get watchAlertAll => 'Alarm bei starken Tagesbewegungen';
 
   @override
@@ -2513,4 +2509,8 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Länder';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'KI-Erklärung: Sie recherchiert die Fakten im Web, öffnet den Artikel und bewertet, wie verlässlich die Quelle ist. Keine Anlageberatung. Zählt zu deinem täglichen Fragenkontingent, nicht als Analyse.';
 }

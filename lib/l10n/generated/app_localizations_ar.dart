@@ -2361,10 +2361,6 @@ class AppLocalizationsAr extends AppLocalizations {
   String get newsExplain => 'ماذا يعني هذا؟';
 
   @override
-  String get newsExplainNote =>
-      'شرح بالذكاء الاصطناعي يستند فقط إلى العنوان والملخص. لا يُعدّ نصيحة استثمارية. يُحتسب من حدّ الأسئلة اليومي ولا يستهلك تحليلًا.';
-
-  @override
   String get watchAlertAll => 'تنبيه عند التحركات اليومية الكبيرة';
 
   @override
@@ -2559,4 +2555,8 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get allocationCountries => 'الدول';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'شرح بالذكاء الاصطناعي: يبحث عن الحقائق على الويب، ويفتح المقال، ويقيّم مدى موثوقية المصدر. لا يُعدّ نصيحة استثمارية. يُحتسب من حدّ الأسئلة اليومي ولا يستهلك تحليلًا.';
 }

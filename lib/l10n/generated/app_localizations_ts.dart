@@ -2327,10 +2327,6 @@ class AppLocalizationsTs extends AppLocalizations {
   String get newsExplain => 'Leswi swi vula yini?';
 
   @override
-  String get newsExplainNote =>
-      'Nhlamuselo ya AI leyi simekiweke ntsena eka nhloko ya mahungu ni nkatsakanyo wa wona. A hi ndzayo ya vuvekisi. Yi tirhisa ndzelekano wa wena wa swivutiso wa siku na siku, ku nga ri nxopaxopo.';
-
-  @override
   String get watchAlertAll => 'Xitsundzuxo xa ku cinca lokukulu ka siku';
 
   @override
@@ -2517,4 +2513,8 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Matiko';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Nhlamuselo ya AI: yi lavisisa ntiyiso ewebeni, yi pfula xitsalwa naswona yi kambela leswaku xihlovo xi tshembeka ku fikela kwihi. A hi ndzayo ya vuvekisi. Yi tirhisa ndzelekano wa wena wa swivutiso wa siku na siku, ku nga ri nxopaxopo.';
 }

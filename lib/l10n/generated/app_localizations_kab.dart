@@ -2310,10 +2310,6 @@ class AppLocalizationsKab extends AppLocalizations {
   String get newsExplain => 'D acu i d-yebɣa ad yini waya?';
 
   @override
-  String get newsExplainNote =>
-      'Asegzi n AI yebnan kan ɣef uzwel d ugzul-is. Mačči d awellih n usersi n yidrimen. Yesseqdac talast-ik n yisteqsiyen n yal ass, mačči tasledt.';
-
-  @override
   String get watchAlertAll => 'Alɣu ɣef ibeddilen imeqqranen n wass';
 
   @override
@@ -2499,4 +2495,8 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Timura';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Asegzi n AI: yettnadi tidet deg web, yeldi amagrad, yerna yettwazen acḥal yettwamman uɣbalu. Mačči d awellih n usersi n yidrimen. Yesseqdac talast-ik n yisteqsiyen n yal ass, mačči tasledt.';
 }

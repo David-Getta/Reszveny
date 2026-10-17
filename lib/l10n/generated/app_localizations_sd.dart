@@ -2303,10 +2303,6 @@ class AppLocalizationsSd extends AppLocalizations {
   String get newsExplain => 'هن جو مطلب ڇا آهي؟';
 
   @override
-  String get newsExplainNote =>
-      'صرف سرخي ۽ خلاصي تي ٻڌل AI وضاحت. اها سيڙپڪاري جو مشورو ناهي. اهو توهان جي روزاني سوالن جي حد مان ويندو آهي، ڪو تجزيو خرچ نٿو ٿئي.';
-
-  @override
   String get watchAlertAll => 'وڏي روزاني لاهه چاڙهه تي الرٽ';
 
   @override
@@ -2492,4 +2488,8 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get allocationCountries => 'ملڪ';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI وضاحت: اها ويب تي حقيقتون ڳولي ٿي، مضمون کولي ٿي ۽ جانچي ٿي ته ذريعو ڪيترو قابلِ اعتبار آهي. اها سيڙپڪاري جو مشورو ناهي. اهو توهان جي روزاني سوالن جي حد مان ويندو آهي، ڪو تجزيو خرچ نٿو ٿئي.';
 }

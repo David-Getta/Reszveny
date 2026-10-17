@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol} nepasiekė prognozuoto EPS",
   "earningsResultBody": "Paskelbtas EPS {actual}, prognozuotas {estimate}",
   "newsExplain": "Ką tai reiškia?",
-  "newsExplainNote": "DI paaiškinimas, pagrįstas tik antrašte ir santrauka. Tai nėra investavimo rekomendacija. Naudoja jūsų dienos klausimų limitą, o ne analizę.",
   "watchAlertAll": "Įspėjimas apie didelius dienos pokyčius",
   "watchAlertAllHint": "Kainos įspėjimas kiekvienai šio sąrašo akcijai: suveiks, kai per dieną ji pajudės tiek aukštyn arba žemyn. Akcijos, kurios jau turi tokį, pasilieka savąjį.",
   "watchAlertAllDone": "{count, plural, one{Nustatytas {count} įspėjimas} few{Nustatyti {count} įspėjimai} many{Nustatyta {count} įspėjimo} other{Nustatyta {count} įspėjimų}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Išvalyti suveikusius įspėjimus",
   "alertsCleared": "{count, plural, =1{Išvalytas 1 įspėjimas} one{Išvalytas {count} įspėjimas} few{Išvalyti {count} įspėjimai} many{Išvalyta {count} įspėjimo} other{Išvalyta {count} įspėjimų}}",
   "homeScreenTitle": "Pradžios ekranas",
-  "allocationCountries": "Šalys"
+  "allocationCountries": "Šalys",
+  "newsExplainNoteResearch": "DI paaiškinimas: jis patikrina faktus internete, atidaro straipsnį ir įvertina, kiek patikimas šaltinis. Tai nėra investavimo rekomendacija. Naudoja jūsų dienos klausimų limitą, o ne analizę."
 }

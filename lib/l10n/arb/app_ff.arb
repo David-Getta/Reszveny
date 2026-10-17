@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol} heɓaani EPS jortaaɗo",
   "earningsResultBody": "EPS bayyinaaɗo {actual}, jortaaɗo {estimate}",
   "newsExplain": "Ko ɗum firti?",
-  "newsExplainNote": "Firo AI tuugiiɗo e tiitoonde e coftal mayre tan. Wonaa wasiya e investisman. Ina huutoroo keerol naamne maa ñalnde kala, wonaa ƴeewndo.",
   "watchAlertAll": "Jeertinol e waylooji mawɗi ñalnde",
   "watchAlertAllHint": "Jeertinol coggu ngam kala aksiyoŋ e ndee doggol: ina haala so waylii ko ɗuum fof e ñalnde wootere, dow walla les. Ɗe njogiiɗe jeertinol gila adii ndeen ndesay e mum en.",
   "watchAlertAllDone": "{count, plural, =1{Jeertinol 1 teeltaama} other{Jeertine {count} teeltaama}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Momtu jeertine ɗe huwi",
   "alertsCleared": "{count, plural, =1{Jeertinol 1 momtaama} other{Jeertine {count} momtaama}}",
   "homeScreenTitle": "Hello arano",
-  "allocationCountries": "Leyɗeele"
+  "allocationCountries": "Leyɗeele",
+  "newsExplainNoteResearch": "Firo AI: ina yiylo goonga ɗen e geese, ina uddita winndannde nden, ina ƴeewa no iwdi ndi hoolniri. Wonaa wasiya e investisman. Ina huutoroo keerol naamne maa ñalnde kala, wonaa ƴeewndo."
 }

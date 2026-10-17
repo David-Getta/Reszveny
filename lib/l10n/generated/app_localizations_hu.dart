@@ -2317,10 +2317,6 @@ class AppLocalizationsHu extends AppLocalizations {
   String get newsExplain => 'Mit jelent ez?';
 
   @override
-  String get newsExplainNote =>
-      'AI-magyarázat, csak a cím és az összefoglaló alapján. Nem befektetési tanács. A napi kérdéskeretből megy, elemzést nem fogyaszt.';
-
-  @override
   String get watchAlertAll => 'Riasztás nagy napi mozgásra';
 
   @override
@@ -2506,4 +2502,8 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Országok';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI-magyarázat: utánanéz a tényeknek a weben, megnyitja a cikket, és megítéli, mennyire hiteles a forrás. Nem befektetési tanács. A napi kérdéskeretből megy, elemzést nem fogyaszt.';
 }

@@ -2348,10 +2348,6 @@ class AppLocalizationsRo extends AppLocalizations {
   String get newsExplain => 'Ce înseamnă asta?';
 
   @override
-  String get newsExplainNote =>
-      'Explicație generată de AI, bazată doar pe titlu și pe rezumat. Nu reprezintă un sfat de investiții. Folosește limita ta zilnică de întrebări, nu o analiză.';
-
-  @override
   String get watchAlertAll => 'Alertă la mișcări zilnice mari';
 
   @override
@@ -2540,4 +2536,8 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Țări';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Explicație generată de AI: caută faptele pe web, deschide articolul și evaluează cât de credibilă este sursa. Nu reprezintă un sfat de investiții. Folosește limita ta zilnică de întrebări, nu o analiză.';
 }

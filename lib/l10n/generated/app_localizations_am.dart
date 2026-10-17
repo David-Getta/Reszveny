@@ -2279,10 +2279,6 @@ class AppLocalizationsAm extends AppLocalizations {
   String get newsExplain => 'ይህ ምን ማለት ነው?';
 
   @override
-  String get newsExplainNote =>
-      'በርዕሱና በማጠቃለያው ላይ ብቻ የተመሠረተ የAI ማብራሪያ። የኢንቨስትመንት ምክር አይደለም። ከዕለታዊ የጥያቄ ገደብዎ ይቆጠራል እንጂ ትንተና አይጠቀምም።';
-
-  @override
   String get watchAlertAll => 'ለትልቅ የዕለት ለውጥ ማንቂያ';
 
   @override
@@ -2468,4 +2464,8 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get allocationCountries => 'አገሮች';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'የAI ማብራሪያ፦ እውነታዎቹን በድር ላይ ይፈልጋል፣ ጽሑፉን ይከፍታል፣ ምንጩ ምን ያህል አስተማማኝ እንደሆነም ይገመግማል። የኢንቨስትመንት ምክር አይደለም። ከዕለታዊ የጥያቄ ገደብዎ ይቆጠራል እንጂ ትንተና አይጠቀምም።';
 }

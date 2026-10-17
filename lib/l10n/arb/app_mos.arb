@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol}: EPS sẽn gũudã tẽngre",
   "earningsResultBody": "EPS sẽn wilgã {actual}, sẽn gũudã {estimate}",
   "newsExplain": "Woto rata n yeel bõe?",
-  "newsExplainNote": "AI wilgri, sẽn tik zug-sõngã la a koe-kʋʋnã bala. Pa sagls ligd kẽesg wɛɛngẽ ye. A tũuda f daar fãa sokr sõorã, pa vẽenegr ye.",
   "watchAlertAll": "Kibay daar toeemd wʋsg yĩnga",
   "watchAlertAllHint": "Ligd kibay bõn fãa sẽn be liste kãngã pʋgẽ yĩnga: a na n togsa fo, a sã n toeem woto daar a yembre, n zẽk bɩ n sig. Sẽn da tara kibay pĩnda na n gũusa b rẽndã.",
   "watchAlertAllDone": "{count, plural, =1{B ningame kibay a yembre} other{B ningame kibay {count}}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Yẽes kibay nins sẽn yikã",
   "alertsCleared": "{count, plural, =1{B yẽesame kibay a yembre} other{B yẽesame kibay {count}}}",
   "homeScreenTitle": "Sebr pipi",
-  "allocationCountries": "Tẽnse"
+  "allocationCountries": "Tẽnse",
+  "newsExplainNoteResearch": "AI wilgri: a baoodame sɩd-kãensã internet zugu, n pakd sɛbrã, la a gesd bãngr zĩigã sẽn tõe n teeg a to to-to wã. Pa sagls ligd kẽesg wɛɛngẽ ye. A tũuda f daar fãa sokr sõorã, pa vẽenegr ye."
 }

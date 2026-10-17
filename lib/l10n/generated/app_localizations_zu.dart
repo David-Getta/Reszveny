@@ -2320,10 +2320,6 @@ class AppLocalizationsZu extends AppLocalizations {
   String get newsExplain => 'Lokhu kusho ukuthini?';
 
   @override
-  String get newsExplainNote =>
-      'Incazelo ye-AI esekelwe kuphela esihlokweni nasesifinyezweni saso. Akuyona iseluleko sokutshala imali. Sisebenzisa umkhawulo wakho wemibuzo wansuku zonke, hhayi ukuhlaziya.';
-
-  @override
   String get watchAlertAll => 'Isexwayiso sokunyakaza okukhulu kosuku';
 
   @override
@@ -2510,4 +2506,8 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Amazwe';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Incazelo ye-AI: ifuna amaqiniso kuwebhu, ivule i-athikili futhi ihlole ukuthi umthombo uthembeke kangakanani. Akuyona iseluleko sokutshala imali. Sisebenzisa umkhawulo wakho wemibuzo wansuku zonke, hhayi ukuhlaziya.';
 }

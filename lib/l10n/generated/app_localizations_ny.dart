@@ -2318,10 +2318,6 @@ class AppLocalizationsNy extends AppLocalizations {
   String get newsExplain => 'Kodi izi zikutanthauza chiyani?';
 
   @override
-  String get newsExplainNote =>
-      'Kufotokozera kwa AI kozikidwa pamutu wa nkhani ndi chidule chake chokha. Si malangizo okhudza kuyika ndalama. Chimagwiritsa ntchito malire a mafunso anu a tsiku ndi tsiku, osati kusanthula.';
-
-  @override
   String get watchAlertAll => 'Chenjezo pa kusintha kwakukulu kwa tsiku';
 
   @override
@@ -2507,4 +2503,8 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Mayiko';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Kufotokozera kwa AI: chimafufuza zoona pa intaneti, chimatsegula nkhaniyo ndipo chimawunika kuti gwero lake ndi lodalirika bwanji. Si malangizo okhudza kuyika ndalama. Chimagwiritsa ntchito malire a mafunso anu a tsiku ndi tsiku, osati kusanthula.';
 }

@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol} ga e a fitlha EPS e e solofetsweng",
   "earningsResultBody": "EPS e e begilweng {actual}, e e solofetsweng {estimate}",
   "newsExplain": "Se se kaya eng?",
-  "newsExplainNote": "Tlhaloso ya AI e e theilweng fela mo setlhogong le kakaretsong ya sone. Ga se kgakololo ya peeletso. E dirisa tekanyetso ya gago ya dipotso ya letsatsi le letsatsi, e seng tshekatsheko.",
   "watchAlertAll": "Tlhagiso ya diphetogo tse dikgolo tsa letsatsi",
   "watchAlertAllHint": "Tlhagiso ya tlhwatlhwa mo share nngwe le nngwe mo lenaaneng leno: e tla lela fa e fetoga go le kalo mo letsatsing le le lengwe, kwa godimo kgotsa kwa tlase. Tse di setseng di na le yone di tla tshola ya tsone.",
   "watchAlertAllDone": "{count, plural, =1{Go beilwe tlhagiso e le nngwe} other{Go beilwe ditlhagiso di le {count}}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Phimola ditlhagiso tse di diragetseng",
   "alertsCleared": "{count, plural, =1{Go phimotswe tlhagiso e le nngwe} other{Go phimotswe ditlhagiso di le {count}}}",
   "homeScreenTitle": "Tsebe ya ntlha",
-  "allocationCountries": "Dinaga"
+  "allocationCountries": "Dinaga",
+  "newsExplainNoteResearch": "Tlhaloso ya AI: e batla dintlha mo inthaneteng, e bula athikele mme e sekaseka gore motswedi o ikanyega go le kana kang. Ga se kgakololo ya peeletso. E dirisa tekanyetso ya gago ya dipotso ya letsatsi le letsatsi, e seng tshekatsheko."
 }

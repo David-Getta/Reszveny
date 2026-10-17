@@ -2372,10 +2372,6 @@ class AppLocalizationsBe extends AppLocalizations {
   String get newsExplain => 'Што гэта значыць?';
 
   @override
-  String get newsExplainNote =>
-      'Тлумачэнне AI толькі на аснове загалоўка і кароткага зместу. Не з’яўляецца інвестыцыйнай парадай. Выкарыстоўвае дзённы ліміт пытанняў, а не аналіз.';
-
-  @override
   String get watchAlertAll => 'Апавяшчэнне пра вялікія змены за дзень';
 
   @override
@@ -2568,4 +2564,8 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Краіны';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Тлумачэнне AI: шукае факты ў інтэрнэце, адкрывае артыкул і ацэньвае, наколькі надзейная крыніца. Не з’яўляецца інвестыцыйнай парадай. Выкарыстоўвае дзённы ліміт пытанняў, а не аналіз.';
 }

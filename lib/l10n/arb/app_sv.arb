@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol} under förväntad EPS",
   "earningsResultBody": "Rapporterad EPS {actual}, förväntad {estimate}",
   "newsExplain": "Vad betyder det här?",
-  "newsExplainNote": "AI-förklaring baserad enbart på rubriken och sammanfattningen. Det är inte investeringsrådgivning. Använder din dagliga frågekvot, inte en analys.",
   "watchAlertAll": "Larm vid stora dagsrörelser",
   "watchAlertAllHint": "Ett kurslarm för varje aktie i den här listan som går igång när den rör sig så mycket på en dag, uppåt eller nedåt. Aktier som redan har ett behåller sitt.",
   "watchAlertAllDone": "{count, plural, =1{1 larm skapat} other{{count} larm skapade}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Rensa utlösta larm",
   "alertsCleared": "{count, plural, =1{1 larm rensat} other{{count} larm rensade}}",
   "homeScreenTitle": "Startskärm",
-  "allocationCountries": "Länder"
+  "allocationCountries": "Länder",
+  "newsExplainNoteResearch": "AI-förklaring: den kollar fakta på webben, öppnar artikeln och bedömer hur tillförlitlig källan är. Det är inte investeringsrådgivning. Använder din dagliga frågekvot, inte en analys."
 }

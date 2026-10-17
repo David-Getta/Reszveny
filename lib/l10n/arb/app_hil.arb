@@ -619,7 +619,6 @@
   "earningsResultMiss": "Wala maabot sang {symbol} ang ginapaabot nga EPS",
   "earningsResultBody": "Gin-report nga EPS {actual}, ginapaabot {estimate}",
   "newsExplain": "Ano ang buot silingon sini?",
-  "newsExplainNote": "Paathag sang AI base lamang sa ulohan kag sa kalubaran sini. Indi ini laygay sa pag-invest. Ginagamit sini ang imo adlaw-adlaw nga limitasyon sang pamangkot, indi ang pagtuki.",
   "watchAlertAll": "Alerto sa dalagku nga hulag sa adlaw",
   "watchAlertAllHint": "Isa ka alerto sa presyo para sa kada stock sa sini nga listahan nga magatunog kon maghulag ini sing amo sini kadako sa isa ka adlaw, pataas ukon panaog. Ang mga stock nga may alerto na magapabilin sang ila.",
   "watchAlertAllDone": "{count, plural, =1{Gin-set ang 1 ka alerto} other{Gin-set ang {count} ka alerto}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Panasa ang mga na-trigger nga alerto",
   "alertsCleared": "{count, plural, =1{Napanas ang 1 ka alerto} other{Napanas ang {count} ka alerto}}",
   "homeScreenTitle": "Panguna nga screen",
-  "allocationCountries": "Pungsod"
+  "allocationCountries": "Pungsod",
+  "newsExplainNoteResearch": "Paathag sang AI: ginapangita sini ang mga kamatuoran sa web, ginabuksan ang artikulo kag ginatimbang kon daw ano ka masaligan ang ginhalinan. Indi ini laygay sa pag-invest. Ginagamit sini ang imo adlaw-adlaw nga limitasyon sang pamangkot, indi ang pagtuki."
 }

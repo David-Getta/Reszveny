@@ -235,7 +235,7 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 5bc | Gyorsjelentés eredménye értesítésben: a jelentés után (ha előtte emlékeztettünk rá) egyszer szól, hogy a cég a várt EPS felett vagy alatt teljesített, a számokkal | ✅ kész |
 | 5bd | A Kedvencek listán kis harang jelzi az aktív árfolyam-riasztást | ✅ kész |
 | 5be | Elrendezés-ellenőrzés keskeny telefonon (340 px, 1,4× betű): kezdőlap, részvény oldal, portfólió, riasztások, beállítások – a kilógó sorok javítva, állandó teszttel | ✅ kész |
-| 5bf | „Mit jelent ez?” a híreknél: néhány mondatos AI-magyarázat arról, mi történt és mit jelenthet a részvényre (csak a cím és az összefoglaló alapján, a kérdéskeretből) | ✅ kész |
+| 5bf | „Mit jelent ez?” a híreknél: néhány mondatos AI-magyarázat arról, mi történt és mit jelenthet a részvényre; utánanéz a weben (legfeljebb 3 keresés, a cikk megnyitása), tisztázza a cégek kapcsolatát, megítéli a forrás hitelességét, és linkeli a felhasznált forrásokat (a kérdéskeretből) | ✅ kész |
 | 5bg | Tömeges riasztás a Kedvencek oldalról: napi mozgás-riasztás (pl. ±5%) egyszerre a lista minden részvényére, ahol még nincs ilyen | ✅ kész |
 | 5bh | Realizált nyereség exportja CSV-be az adóbevalláshoz: eladásonként dátum, ticker, darab, eladási ár, bevétel, FIFO bekerülési érték, nyereség, pénznem | ✅ kész |
 | 5bi | Éves hozam a portfólió összesítőjén: pénzsúlyozott (XIRR) a vételek és eladások dátumával, ha az első vétel legalább egyéves; magyarázat koppintásra | ✅ kész |

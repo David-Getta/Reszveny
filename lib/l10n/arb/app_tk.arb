@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol} garaşylýan EPS-e ýetmedi",
   "earningsResultBody": "Yglan edilen EPS {actual}, garaşylýan {estimate}",
   "newsExplain": "Bu näme aňladýar?",
-  "newsExplainNote": "Diňe sözbaşy we gysgaça mazmuna esaslanýan AI düşündirişi. Maýa goýum maslahaty däldir. Gündelik sorag çägiňizden harçlanýar, seljerme däl.",
   "watchAlertAll": "Uly gündelik üýtgeýişler barada duýduryş",
   "watchAlertAllHint": "Bu sanawdaky her bir paýnama üçin baha duýduryşy: bir günde şunça ýokary ýa-da aşak üýtgese, habar berer. Eýýäm duýduryşy bolan paýnamalar özüninkini saklar.",
   "watchAlertAllDone": "{count, plural, =1{1 duýduryş goýuldy} other{{count} duýduryş goýuldy}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Işlän duýduryşlary arassala",
   "alertsCleared": "{count, plural, =1{1 duýduryş arassalandy} other{{count} duýduryş arassalandy}}",
   "homeScreenTitle": "Baş ekran",
-  "allocationCountries": "Ýurtlar"
+  "allocationCountries": "Ýurtlar",
+  "newsExplainNoteResearch": "AI düşündirişi: faktlary internetde gözleýär, makalany açýar we çeşmäniň näderejede ygtybarlydygyna baha berýär. Maýa goýum maslahaty däldir. Gündelik sorag çägiňizden harçlanýar, seljerme däl."
 }

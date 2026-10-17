@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol}: מתחת ל-EPS הצפוי",
   "earningsResultBody": "EPS מדווח {actual}, צפוי {estimate}",
   "newsExplain": "מה זה אומר?",
-  "newsExplainNote": "הסבר של AI על סמך הכותרת והתקציר בלבד. אינו מהווה ייעוץ השקעות. נספר במכסת השאלות היומית שלך, לא כניתוח.",
   "watchAlertAll": "התראה על תנודות יומיות חדות",
   "watchAlertAllHint": "התראת מחיר לכל מניה ברשימה הזו, שמופעלת כשהיא זזה כך ביום אחד, למעלה או למטה. מניות שכבר יש להן התראה כזו שומרות עליה.",
   "watchAlertAllDone": "{count, plural, =1{הוגדרה התראה אחת} other{הוגדרו {count} התראות}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "ניקוי התראות שהופעלו",
   "alertsCleared": "{count, plural, =1{נוקתה התראה אחת} other{נוקו {count} התראות}}",
   "homeScreenTitle": "מסך הבית",
-  "allocationCountries": "מדינות"
+  "allocationCountries": "מדינות",
+  "newsExplainNoteResearch": "הסבר של AI: הוא בודק את העובדות ברשת, פותח את הכתבה ומעריך עד כמה המקור אמין. אינו מהווה ייעוץ השקעות. נספר במכסת השאלות היומית שלך, לא כניתוח."
 }

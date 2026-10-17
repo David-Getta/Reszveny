@@ -54,7 +54,13 @@ void main() {
     expect(user, contains('Stock: NVDA'));
     expect(user, contains('Headline: Nvidia beats estimates'));
     expect(user, contains('Summary: Revenue rose 50%.'));
+    expect(user, contains('URL: https://n'));
     expect(NewsExplainer.systemPrompt, contains('Never invent facts'));
+    // Utánanéz: kevés webkeresés és a cikk megnyitása, és a forrás hitelességét is megítéli.
+    expect(NewsExplainer.systemPrompt, contains('how reliable the source looks'));
+    final tools = (body['tools'] as List).cast<Map>();
+    expect(tools.map((t) => t['name']), ['web_search', 'web_fetch']);
+    expect(tools.first['max_uses'], NewsExplainer.maxSearches);
   });
 
   testWidgets('"What does this mean?" on a news item: asked once, shown in a sheet', (tester) async {
@@ -64,11 +70,30 @@ void main() {
     var calls = 0;
     final client = MockClient((req) async {
       calls++;
+      // Az első kérésnél a fiók nem engedi az oldalmegnyitást: nélküle újrapróbálja.
+      final tools = (jsonDecode(req.body) as Map)['tools'] as List;
+      if (tools.any((t) => (t as Map)['name'] == 'web_fetch')) {
+        return http.Response('{"error":{"message":"web_fetch is not enabled"}}', 400);
+      }
       return http.Response(
         jsonEncode({
           'stop_reason': 'end_turn',
           'content': [
-            {'type': 'text', 'text': 'Nvidia did better than expected. It may support the price.'},
+            {'type': 'server_tool_use', 'name': 'web_search'},
+            {
+              'type': 'web_search_tool_result',
+              'content': [
+                {'type': 'web_search_result', 'url': 'https://example.com/other', 'title': 'Other'},
+              ],
+            },
+            {
+              'type': 'text',
+              'text': 'Nvidia did better than expected. ',
+              'citations': [
+                {'type': 'web_search_result_location', 'url': 'https://www.reuters.com/x', 'title': 'Reuters report'},
+              ],
+            },
+            {'type': 'text', 'text': 'It may support the price.'},
           ],
         }),
         200,
@@ -96,11 +121,15 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.byKey(const ValueKey('news-explanation')), findsOneWidget);
     expect(find.text('Nvidia did better than expected. It may support the price.'), findsOneWidget);
+    // A hivatkozott forrás linkként (a nem idézett keresési találat nem).
+    expect(find.text('Reuters report · www.reuters.com'), findsOneWidget);
+    expect(find.byKey(const ValueKey('news-source-1')), findsNothing);
+    expect(calls, 2);
     // Másodszor a tárolt magyarázat jön.
     Navigator.of(tester.element(find.byKey(const ValueKey('news-explanation')))).pop();
     await tester.pumpAndSettle();
     await tester.tap(button);
     await tester.pumpAndSettle();
-    expect(calls, 1);
+    expect(calls, 2);
   });
 }

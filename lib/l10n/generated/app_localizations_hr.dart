@@ -2353,10 +2353,6 @@ class AppLocalizationsHr extends AppLocalizations {
   String get newsExplain => 'Što ovo znači?';
 
   @override
-  String get newsExplainNote =>
-      'Objašnjenje umjetne inteligencije samo na temelju naslova i sažetka. Nije investicijski savjet. Troši vaše dnevno ograničenje pitanja, ne analizu.';
-
-  @override
   String get watchAlertAll => 'Upozorenje na velike dnevne promjene';
 
   @override
@@ -2545,4 +2541,8 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Države';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Objašnjenje umjetne inteligencije: traži činjenice na internetu, otvara članak i procjenjuje koliko je izvor pouzdan. Nije investicijski savjet. Troši vaše dnevno ograničenje pitanja, ne analizu.';
 }

@@ -6,6 +6,7 @@ import 'package:shelf/shelf.dart';
 import 'package:test/test.dart';
 import 'package:whatstock_server/src/api.dart';
 import 'package:whatstock_server/src/db.dart';
+import 'package:whatstock_server/src/plans.dart';
 import 'package:whatstock_server/src/purchase_verifier.dart';
 
 void main() {
@@ -81,6 +82,76 @@ void main() {
     store.save(store.entitlement(uid)..tier = 'pro');
     await post('/v1/ask', ask(['Q1', 'A1', 'Q2']), token: token);
     expect(upstream.last['model'], 'claude-opus-5-5');
+  });
+
+  test('research questions on a paid plan: few searches and page fetches, capped; other tools dropped', () async {
+    final (token, uid) = await newUser();
+    store.save(store.entitlement(uid)..tier = 'pro');
+    await post('/v1/ask', {
+      ...ask(['What links Nvidia and CoreWeave?']),
+      'tools': [
+        {'type': 'web_search_20260209', 'name': 'web_search', 'max_uses': 50},
+        {'type': 'web_fetch_20260209', 'name': 'web_fetch', 'max_uses': 9, 'max_content_tokens': 999999},
+        {'type': 'code_execution_20250825', 'name': 'code'},
+      ],
+    }, token: token);
+    final sent = upstream.single;
+    expect(sent['max_tokens'], Api.askResearchMaxTokens);
+    expect(sent['tools'], [
+      {'type': 'web_search_20260209', 'name': 'web_search', 'max_uses': Api.askMaxSearches},
+      {
+        'type': 'web_fetch_20260209',
+        'name': 'web_fetch',
+        'max_uses': Api.askMaxFetches,
+        'max_content_tokens': Depth.maxFetchTokens,
+      },
+    ]);
+    expect(Api.askResearchTools(null), isNull);
+    expect(
+      Api.askResearchTools([
+        {'type': 'bash'},
+      ]),
+      isNull,
+    );
+  });
+
+  test('if page fetching is not enabled for the account, the question runs without it', () async {
+    final calls = <Map<String, dynamic>>[];
+    api = Api(
+      store: store,
+      anthropicApiKey: 'sk-test',
+      finnhubApiKey: 'fh',
+      verifier: const DevVerifier(),
+      client: MockClient((req) async {
+        final b = (jsonDecode(req.body) as Map).cast<String, dynamic>();
+        calls.add(b);
+        final hasFetch = (b['tools'] as List? ?? const []).any((t) => '${(t as Map)['type']}'.startsWith('web_fetch'));
+        return hasFetch
+            ? http.Response('{"error":{"message":"web_fetch is not enabled"}}', 400)
+            : http.Response(
+                jsonEncode({
+                  'stop_reason': 'end_turn',
+                  'content': [
+                    {'type': 'text', 'text': 'Ok.'},
+                  ],
+                }),
+                200,
+              );
+      }),
+    );
+    final (token, uid) = await newUser();
+    store.save(store.entitlement(uid)..tier = 'max');
+    final (status, body) = await post('/v1/ask', {
+      ...ask(['Q']),
+      'tools': [
+        {'type': 'web_search_20260209', 'name': 'web_search'},
+        {'type': 'web_fetch_20260209', 'name': 'web_fetch'},
+      ],
+    }, token: token);
+    expect(status, 200);
+    expect(body['content'][0]['text'], 'Ok.');
+    expect(calls, hasLength(2));
+    expect((calls.last['tools'] as List).single['name'], 'web_search');
   });
 
   test('daily limit, malformed conversations and accounts without a plan are refused', () async {

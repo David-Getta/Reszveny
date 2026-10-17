@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol} sotto l'EPS atteso",
   "earningsResultBody": "EPS comunicato {actual}, atteso {estimate}",
   "newsExplain": "Che cosa significa?",
-  "newsExplainNote": "Spiegazione dell’IA basata solo sul titolo e sul riassunto. Non costituisce un consiglio di investimento. Usa il tuo limite giornaliero di domande, non un’analisi.",
   "watchAlertAll": "Avviso sui grandi movimenti giornalieri",
   "watchAlertAllHint": "Un avviso di prezzo per ogni titolo di questa lista, che scatta quando si muove così tanto in un giorno, al rialzo o al ribasso. I titoli che ne hanno già uno mantengono il proprio.",
   "watchAlertAllDone": "{count, plural, =1{1 avviso impostato} other{{count} avvisi impostati}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Cancella avvisi scattati",
   "alertsCleared": "{count, plural, =1{1 avviso cancellato} other{{count} avvisi cancellati}}",
   "homeScreenTitle": "Schermata iniziale",
-  "allocationCountries": "Paesi"
+  "allocationCountries": "Paesi",
+  "newsExplainNoteResearch": "Spiegazione dell’IA: cerca i fatti sul web, apre l’articolo e valuta quanto è affidabile la fonte. Non costituisce un consiglio di investimento. Usa il tuo limite giornaliero di domande, non un’analisi."
 }

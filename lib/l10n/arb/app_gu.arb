@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol} અપેક્ષિત EPS સુધી ન પહોંચ્યો",
   "earningsResultBody": "જાહેર કરેલ EPS {actual}, અપેક્ષિત {estimate}",
   "newsExplain": "આનો અર્થ શું છે?",
-  "newsExplainNote": "ફક્ત હેડલાઇન અને સારાંશ પર આધારિત AI સમજૂતી. તે રોકાણ સલાહ નથી. તે તમારી દૈનિક પ્રશ્ન મર્યાદામાંથી જાય છે, કોઈ વિશ્લેષણ વપરાતું નથી.",
   "watchAlertAll": "મોટી દૈનિક વધઘટ પર ચેતવણી",
   "watchAlertAllHint": "આ યાદીના દરેક શેર માટે ભાવ ચેતવણી: એક દિવસમાં આટલી ઉપર કે નીચે વધઘટ થાય ત્યારે જાણ કરશે. જેના પર પહેલેથી ચેતવણી છે, તે એમ જ રહેશે.",
   "watchAlertAllDone": "{count, plural, =1{1 ચેતવણી સેટ કરી} other{{count} ચેતવણીઓ સેટ કરી}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "ટ્રિગર થયેલી ચેતવણીઓ સાફ કરો",
   "alertsCleared": "{count, plural, =1{1 ચેતવણી સાફ કરી} other{{count} ચેતવણીઓ સાફ કરી}}",
   "homeScreenTitle": "હોમ સ્ક્રીન",
-  "allocationCountries": "દેશ"
+  "allocationCountries": "દેશ",
+  "newsExplainNoteResearch": "AI સમજૂતી: તે વેબ પર તથ્યો શોધે છે, લેખ ખોલે છે અને સ્રોત કેટલો વિશ્વસનીય છે તેનું મૂલ્યાંકન કરે છે. તે રોકાણ સલાહ નથી. તે તમારી દૈનિક પ્રશ્ન મર્યાદામાંથી જાય છે, કોઈ વિશ્લેષણ વપરાતું નથી."
 }

@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol} sinafike EPS yoyembekezeredwa",
   "earningsResultBody": "EPS yolengezedwa {actual}, yoyembekezeredwa {estimate}",
   "newsExplain": "Kodi izi zikutanthauza chiyani?",
-  "newsExplainNote": "Kufotokozera kwa AI kozikidwa pamutu wa nkhani ndi chidule chake chokha. Si malangizo okhudza kuyika ndalama. Chimagwiritsa ntchito malire a mafunso anu a tsiku ndi tsiku, osati kusanthula.",
   "watchAlertAll": "Chenjezo pa kusintha kwakukulu kwa tsiku",
   "watchAlertAllHint": "Chenjezo la mtengo pa gawo lililonse la mndandandawu: lidzalira likasintha chonchi tsiku limodzi, mmwamba kapena pansi. Omwe ali nalo kale adzasunga lawo.",
   "watchAlertAllDone": "{count, plural, =1{Chenjezo 1 lakhazikitsidwa} other{Machenjezo {count} akhazikitsidwa}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Chotsani machenjezo amene alira",
   "alertsCleared": "{count, plural, =1{Chenjezo 1 lachotsedwa} other{Machenjezo {count} achotsedwa}}",
   "homeScreenTitle": "Tsamba loyamba",
-  "allocationCountries": "Mayiko"
+  "allocationCountries": "Mayiko",
+  "newsExplainNoteResearch": "Kufotokozera kwa AI: chimafufuza zoona pa intaneti, chimatsegula nkhaniyo ndipo chimawunika kuti gwero lake ndi lodalirika bwanji. Si malangizo okhudza kuyika ndalama. Chimagwiritsa ntchito malire a mafunso anu a tsiku ndi tsiku, osati kusanthula."
 }

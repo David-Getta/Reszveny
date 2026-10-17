@@ -2313,10 +2313,6 @@ class AppLocalizationsJv extends AppLocalizations {
   String get newsExplain => 'Iki tegesé apa?';
 
   @override
-  String get newsExplainNote =>
-      'Panjelasan AI mung adhedhasar judhul lan ringkesané. Dudu saran investasi. Nggunakake watesan pitakon saben dina, dudu analisis.';
-
-  @override
   String get watchAlertAll => 'Pènget kanggo owah-owahan gedhé saben dina';
 
   @override
@@ -2503,4 +2499,8 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Negara';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Panjelasan AI: nggolèki fakta ing web, mbukak artikelé lan netepaké sepira bisa dipercaya sumberé. Dudu saran investasi. Nggunakake watesan pitakon saben dina, dudu analisis.';
 }

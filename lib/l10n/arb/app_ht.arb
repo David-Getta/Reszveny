@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol} pa rive nan EPS yo te atann lan",
   "earningsResultBody": "EPS rapòte {actual}, yo te atann {estimate}",
   "newsExplain": "Kisa sa vle di?",
-  "newsExplainNote": "Eksplikasyon AI ki baze sèlman sou tit la ak rezime a. Se pa yon konsèy envestisman. Li itilize limit kesyon ou pou chak jou, pa yon analiz.",
   "watchAlertAll": "Alèt pou gwo mouvman pa jou",
   "watchAlertAllHint": "Yon alèt pri pou chak aksyon nan lis sa a ki sonnen lè li bouje konsa nan yon jounen, monte oswa desann. Aksyon ki gen youn deja ap kenbe pa yo.",
   "watchAlertAllDone": "{count, plural, =1{Nou mete 1 alèt} other{Nou mete {count} alèt}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Efase alèt ki deklanche yo",
   "alertsCleared": "{count, plural, =1{1 alèt efase} other{{count} alèt efase}}",
   "homeScreenTitle": "Ekran akèy",
-  "allocationCountries": "Peyi"
+  "allocationCountries": "Peyi",
+  "newsExplainNoteResearch": "Eksplikasyon AI: li chèche enfòmasyon yo sou entènèt, li louvri atik la epi li evalye kijan sous la serye. Se pa yon konsèy envestisman. Li itilize limit kesyon ou pou chak jou, pa yon analiz."
 }

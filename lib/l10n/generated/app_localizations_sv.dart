@@ -2313,10 +2313,6 @@ class AppLocalizationsSv extends AppLocalizations {
   String get newsExplain => 'Vad betyder det här?';
 
   @override
-  String get newsExplainNote =>
-      'AI-förklaring baserad enbart på rubriken och sammanfattningen. Det är inte investeringsrådgivning. Använder din dagliga frågekvot, inte en analys.';
-
-  @override
   String get watchAlertAll => 'Larm vid stora dagsrörelser';
 
   @override
@@ -2502,4 +2498,8 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Länder';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI-förklaring: den kollar fakta på webben, öppnar artikeln och bedömer hur tillförlitlig källan är. Det är inte investeringsrådgivning. Använder din dagliga frågekvot, inte en analys.';
 }

@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol}: suyakusqa EPS-manta pisi",
   "earningsResultBody": "Willakusqa EPS {actual}, suyakusqa {estimate}",
   "newsExplain": "Kayqa imatataq niyta munan?",
-  "newsExplainNote": "AI sut’ichay, umalliqllapi pisichasqanpi ima sayasqa. Manan qullqi churanapaq yuyaychaychu. Sapa p’unchay tapukuy limitiykita apaykachan, manan t’aqwiytachu.",
   "watchAlertAll": "Hatun p'unchaw kuyuypaq willay",
   "watchAlertAllHint": "Kay listapi sapa acciónpaq chaninpa willaynin: huk p'unchawpi kayhinata kuyuptin, wichayman utaq uraykuman, willasunki. Ñas willayniyuq kaqkuna paykunapata waqaychanqaku.",
   "watchAlertAllDone": "{count, plural, =1{1 willay churasqa} other{{count} willay churasqa}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Rikhurirqan willaykunata pichay",
   "alertsCleared": "{count, plural, =1{1 willay pichasqa} other{{count} willay pichasqa}}",
   "homeScreenTitle": "Qallariy pantalla",
-  "allocationCountries": "Suyukuna"
+  "allocationCountries": "Suyukuna",
+  "newsExplainNoteResearch": "AI sut’ichay: web nisqapi chiqap kaqkunata maskhan, qillqata kichan, pukyuqa hayk’a iñinapaq kasqanta chaninchan. Manan qullqi churanapaq yuyaychaychu. Sapa p’unchay tapukuy limitiykita apaykachan, manan t’aqwiytachu."
 }

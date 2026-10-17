@@ -2310,10 +2310,6 @@ class AppLocalizationsHt extends AppLocalizations {
   String get newsExplain => 'Kisa sa vle di?';
 
   @override
-  String get newsExplainNote =>
-      'Eksplikasyon AI ki baze sèlman sou tit la ak rezime a. Se pa yon konsèy envestisman. Li itilize limit kesyon ou pou chak jou, pa yon analiz.';
-
-  @override
   String get watchAlertAll => 'Alèt pou gwo mouvman pa jou';
 
   @override
@@ -2499,4 +2495,8 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Peyi';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Eksplikasyon AI: li chèche enfòmasyon yo sou entènèt, li louvri atik la epi li evalye kijan sous la serye. Se pa yon konsèy envestisman. Li itilize limit kesyon ou pou chak jou, pa yon analiz.';
 }

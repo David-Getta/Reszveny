@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol} ayifikanga kwi-EPS elindelekileyo",
   "earningsResultBody": "I-EPS exeliweyo {actual}, elindelekileyo {estimate}",
   "newsExplain": "Oku kuthetha ukuthini?",
-  "newsExplainNote": "Ingcaciso ye-AI esekelwe kuphela kwisihloko nesishwankathelo saso. Ayilocebiso lotyalo-mali. Sisebenzisa umda wakho wemibuzo wemihla ngemihla, hayi uhlalutyo.",
   "watchAlertAll": "Isilumkiso sentshukumo enkulu yosuku",
   "watchAlertAllHint": "Isilumkiso sexabiso kwisabelo ngasinye kolu luhlu: siya kukhala xa sishukuma kangaka ngosuku olunye, siye phezulu okanye ezantsi. Ezo sele zinaso zigcina esazo.",
   "watchAlertAllDone": "{count, plural, =1{Kusetwe isilumkiso esinye} other{Kusetwe izilumkiso ezi-{count}}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Cima izilumkiso eziqalisiweyo",
   "alertsCleared": "{count, plural, =1{Kucinywe isilumkiso esinye} other{Kucinywe izilumkiso ezi-{count}}}",
   "homeScreenTitle": "Isikrini sokuqala",
-  "allocationCountries": "Amazwe"
+  "allocationCountries": "Amazwe",
+  "newsExplainNoteResearch": "Ingcaciso ye-AI: ikhangela iinyani kwiwebhu, ivule inqaku kwaye ivavanye ukuba umthombo uthembeke kangakanani. Ayilocebiso lotyalo-mali. Sisebenzisa umda wakho wemibuzo wemihla ngemihla, hayi uhlalutyo."
 }

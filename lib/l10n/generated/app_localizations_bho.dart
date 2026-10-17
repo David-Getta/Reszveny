@@ -2307,10 +2307,6 @@ class AppLocalizationsBho extends AppLocalizations {
   String get newsExplain => 'एकर का मतलब बा?';
 
   @override
-  String get newsExplainNote =>
-      'खाली हेडलाइन आ सारांश पर आधारित AI के व्याख्या। ई निवेश के सलाह ना ह। ई रउआ रोज के सवाल के सीमा से जाला, कवनो विश्लेषण खरच ना होला।';
-
-  @override
   String get watchAlertAll => 'रोज के बड़ उतार-चढ़ाव पर अलर्ट';
 
   @override
@@ -2496,4 +2492,8 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get allocationCountries => 'देश';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI के व्याख्या: ई वेब पर तथ्य खोजेला, लेख खोलेला आ परखेला कि स्रोत केतना भरोसेमंद बा। ई निवेश के सलाह ना ह। ई रउआ रोज के सवाल के सीमा से जाला, कवनो विश्लेषण खरच ना होला।';
 }

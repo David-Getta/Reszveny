@@ -2314,10 +2314,6 @@ class AppLocalizationsKy extends AppLocalizations {
   String get newsExplain => 'Бул эмнени билдирет?';
 
   @override
-  String get newsExplainNote =>
-      'Аталышка жана кыскача мазмунга гана негизделген AI түшүндүрмөсү. Инвестициялык кеңеш эмес. Күнүмдүк суроолор чегиңизден сарпталат, талдоо эмес.';
-
-  @override
   String get watchAlertAll => 'Чоң күндүк өзгөрүүлөр жөнүндө эскертүү';
 
   @override
@@ -2504,4 +2500,8 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Өлкөлөр';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI түшүндүрмөсү: фактыларды интернеттен издейт, макаланы ачат жана булактын канчалык ишенимдүү экенин баалайт. Инвестициялык кеңеш эмес. Күнүмдүк суроолор чегиңизден сарпталат, талдоо эмес.';
 }

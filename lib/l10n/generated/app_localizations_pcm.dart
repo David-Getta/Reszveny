@@ -2311,10 +2311,6 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get newsExplain => 'Wetin dis one mean?';
 
   @override
-  String get newsExplainNote =>
-      'AI explanation wey base only on di headline and di summary. E no be investment advice. E dey use your daily question limit, no be analysis.';
-
-  @override
   String get watchAlertAll => 'Alert for big move for one day';
 
   @override
@@ -2501,4 +2497,8 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Countries';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI explanation: e dey check di facts for web, open di article and judge how di source reliable reach. E no be investment advice. E dey use your daily question limit, no be analysis.';
 }

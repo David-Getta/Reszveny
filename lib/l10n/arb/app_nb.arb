@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol} var under forventet EPS",
   "earningsResultBody": "Rapportert EPS {actual}, forventet {estimate}",
   "newsExplain": "Hva betyr dette?",
-  "newsExplainNote": "AI-forklaring basert kun på overskriften og sammendraget. Det er ikke investeringsråd. Bruker av den daglige spørsmålskvoten din, ikke en analyse.",
   "watchAlertAll": "Varsel ved store daglige bevegelser",
   "watchAlertAllHint": "Et kursvarsel for hver aksje i denne listen som slår til når den beveger seg så mye på én dag, opp eller ned. Aksjer som allerede har et, beholder sitt.",
   "watchAlertAllDone": "{count, plural, =1{1 varsel opprettet} other{{count} varsler opprettet}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "Fjern utløste varsler",
   "alertsCleared": "{count, plural, =1{1 varsel fjernet} other{{count} varsler fjernet}}",
   "homeScreenTitle": "Startskjerm",
-  "allocationCountries": "Land"
+  "allocationCountries": "Land",
+  "newsExplainNoteResearch": "AI-forklaring: den slår opp fakta på nettet, åpner artikkelen og vurderer hvor pålitelig kilden er. Det er ikke investeringsråd. Bruker av den daglige spørsmålskvoten din, ikke en analyse."
 }

@@ -2311,10 +2311,6 @@ class AppLocalizationsUr extends AppLocalizations {
   String get newsExplain => 'اس کا کیا مطلب ہے؟';
 
   @override
-  String get newsExplainNote =>
-      'صرف سرخی اور خلاصے پر مبنی AI وضاحت۔ یہ سرمایہ کاری کا مشورہ نہیں ہے۔ یہ آپ کی روزانہ سوالات کی حد سے جاتا ہے، کوئی تجزیہ خرچ نہیں ہوتا۔';
-
-  @override
   String get watchAlertAll => 'بڑی روزانہ تبدیلی پر الرٹ';
 
   @override
@@ -2500,4 +2496,8 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get allocationCountries => 'ممالک';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'AI وضاحت: یہ ویب پر حقائق تلاش کرتا ہے، مضمون کھولتا ہے اور جانچتا ہے کہ ماخذ کتنا قابلِ اعتماد ہے۔ یہ سرمایہ کاری کا مشورہ نہیں ہے۔ یہ آپ کی روزانہ سوالات کی حد سے جاتا ہے، کوئی تجزیہ خرچ نہیں ہوتا۔';
 }

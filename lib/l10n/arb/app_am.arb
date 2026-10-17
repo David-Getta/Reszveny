@@ -619,7 +619,6 @@
   "earningsResultMiss": "{symbol} ከሚጠበቀው EPS በታች አስመዝግቧል",
   "earningsResultBody": "ሪፖርት የተደረገው EPS {actual}፣ የሚጠበቀው {estimate}",
   "newsExplain": "ይህ ምን ማለት ነው?",
-  "newsExplainNote": "በርዕሱና በማጠቃለያው ላይ ብቻ የተመሠረተ የAI ማብራሪያ። የኢንቨስትመንት ምክር አይደለም። ከዕለታዊ የጥያቄ ገደብዎ ይቆጠራል እንጂ ትንተና አይጠቀምም።",
   "watchAlertAll": "ለትልቅ የዕለት ለውጥ ማንቂያ",
   "watchAlertAllHint": "በዚህ ዝርዝር ውስጥ ላለ እያንዳንዱ አክሲዮን የዋጋ ማንቂያ፦ በአንድ ቀን ይህን ያህል ወደ ላይም ሆነ ወደ ታች ሲለዋወጥ ያሳውቃል። አስቀድሞ ማንቂያ ያላቸው አክሲዮኖች የነበራቸውን ይይዛሉ።",
   "watchAlertAllDone": "{count, plural, =1{1 ማንቂያ ተቀናብሯል} other{{count} ማንቂያዎች ተቀናብረዋል}}",
@@ -664,5 +663,6 @@
   "alertsClearTriggered": "የተቀሰቀሱ ማንቂያዎችን አጽዳ",
   "alertsCleared": "{count, plural, =1{1 ማንቂያ ተሰርዟል} other{{count} ማንቂያዎች ተሰርዘዋል}}",
   "homeScreenTitle": "መነሻ ገጽ",
-  "allocationCountries": "አገሮች"
+  "allocationCountries": "አገሮች",
+  "newsExplainNoteResearch": "የAI ማብራሪያ፦ እውነታዎቹን በድር ላይ ይፈልጋል፣ ጽሑፉን ይከፍታል፣ ምንጩ ምን ያህል አስተማማኝ እንደሆነም ይገመግማል። የኢንቨስትመንት ምክር አይደለም። ከዕለታዊ የጥያቄ ገደብዎ ይቆጠራል እንጂ ትንተና አይጠቀምም።"
 }

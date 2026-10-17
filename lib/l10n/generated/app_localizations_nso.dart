@@ -2326,10 +2326,6 @@ class AppLocalizationsNso extends AppLocalizations {
   String get newsExplain => 'Se se ra goreng?';
 
   @override
-  String get newsExplainNote =>
-      'Tlhalošo ya AI yeo e theilwego fela hlogong ya taba le kakaretšong ya yona. Ga se keletšo ya peeletšo. E diriša moedi wa gago wa dipotšišo wa letšatši le letšatši, e sego tshekatsheko.';
-
-  @override
   String get watchAlertAll => 'Temošo ya diphetogo tše kgolo tša letšatši';
 
   @override
@@ -2516,4 +2512,8 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get allocationCountries => 'Dinaga';
+
+  @override
+  String get newsExplainNoteResearch =>
+      'Tlhalošo ya AI: e nyaka dintlha wepeng, e bula sengwalwa gomme e lekola gore mothopo o a botega gakaakang. Ga se keletšo ya peeletšo. E diriša moedi wa gago wa dipotšišo wa letšatši le letšatši, e sego tshekatsheko.';
 }
