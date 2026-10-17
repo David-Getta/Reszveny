@@ -2350,4 +2350,61 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Add am to calendar (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Portfolio alert';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Notification when your whole portfolio move reach this much for one day.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Off';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Your portfolio don go up $percent today';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Your portfolio don come down $percent today';
+  }
+
+  @override
+  String get whatIfTitle => 'Wetin for happen if you don invest?';
+
+  @override
+  String get whatIfAmount => 'Amount';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount wey you invest $period ago for dey worth today';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Na only di share price we use: dividend, charges and tax no dey inside. Wetin e gain before no mean say e go gain like dat for future.';
+
+  @override
+  String get watchShare => 'Share di list';
+
+  @override
+  String get watchImport => 'Add ticker dem';
+
+  @override
+  String get watchImportHint =>
+      'Paste di tickers, separate dem with comma, space or new line – like list wey person share give you.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'We don add $count stocks',
+      one: 'We don add $count stock',
+      zero: 'No new stock',
+    );
+    return '$_temp0';
+  }
 }

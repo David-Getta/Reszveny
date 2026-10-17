@@ -28,6 +28,8 @@ class AppPreferences extends ChangeNotifier {
     this.weeklyDigest = false,
     this.earningsReminders = true,
     this.morningBrief = false,
+    this.portfolioMoveAlert = 0,
+    this.portfolioMoveNotified,
     List<WatchList> watchLists = const [],
     Map<String, double> targets = const {},
   }) : _lists = List.of(watchLists),
@@ -57,6 +59,8 @@ class AppPreferences extends ChangeNotifier {
   static const _weeklyDigestKey = 'weekly_digest';
   static const _earningsRemindersKey = 'earnings_reminders';
   static const _morningBriefKey = 'morning_brief';
+  static const _portfolioMoveKey = 'portfolio_move_alert';
+  static const _portfolioMoveNotifiedKey = 'portfolio_move_notified';
   static const _targetsKey = 'portfolio_targets';
   static const _listsKey = 'watch_lists';
 
@@ -121,6 +125,16 @@ class AppPreferences extends ChangeNotifier {
 
   /// Reggelente magától elkészül a napi összefoglaló (amíg az app fut).
   bool morningBrief;
+
+  /// Értesítés, ha a teljes portfólió egy nap alatt legalább ennyi %-ot mozdul (0: ki).
+  double portfolioMoveAlert;
+
+  /// A legutóbbi portfólió-értesítés napja és mozgása (`2026-10-16|-3.2`), hogy
+  /// naponta egyszer szóljon, és ugyanazt a mozgást ne jelezze újra.
+  String? portfolioMoveNotified;
+
+  /// A választható küszöbök a beállításokban.
+  static const portfolioMoveSteps = [2.0, 3.0, 5.0];
 
   final List<WatchList> _lists;
 
@@ -198,6 +212,8 @@ class AppPreferences extends ChangeNotifier {
         weeklyDigest: prefs.getBool(_weeklyDigestKey) ?? false,
         earningsReminders: prefs.getBool(_earningsRemindersKey) ?? true,
         morningBrief: prefs.getBool(_morningBriefKey) ?? false,
+        portfolioMoveAlert: prefs.getDouble(_portfolioMoveKey) ?? 0,
+        portfolioMoveNotified: prefs.getString(_portfolioMoveNotifiedKey),
         watchLists: WatchList.parseAll(prefs.getString(_listsKey)),
         targets: parseTargets(prefs.getString(_targetsKey)),
       );
@@ -284,6 +300,35 @@ class AppPreferences extends ChangeNotifier {
     await _saveLists();
   }
 
+  /// Több ticker egyszerre a kedvencek végére (és a [list] listára, ha meg van
+  /// adva), a megadott sorrendben. Az új tételek számát adja vissza.
+  Future<int> addSymbols(List<String> symbols, {String? list}) async {
+    final l = list == null ? null : _listNamed(list);
+    final inList = [...?l?.symbols];
+    var added = 0;
+    for (final raw in symbols) {
+      final s = raw.trim().toUpperCase();
+      if (s.isEmpty) continue;
+      var isNew = false;
+      if (!_favorites.contains(s)) {
+        _favorites.add(s);
+        isNew = true;
+      }
+      if (l != null && !inList.contains(s)) {
+        inList.add(s);
+        isNew = true;
+      }
+      if (isNew) added++;
+    }
+    if (l != null) _lists[_lists.indexOf(l)] = WatchList(name: l.name, symbols: inList);
+    notifyListeners();
+    await _save((p) async {
+      await p.setStringList(_favoritesKey, _favorites);
+      await p.setString(_listsKey, jsonEncode([for (final l in _lists) l.toJson()]));
+    });
+    return added;
+  }
+
   /// Az összes saját lista cseréje (szinkronkor a fiók adataira).
   Future<void> setWatchLists(List<WatchList> lists) async {
     _lists
@@ -305,6 +350,18 @@ class AppPreferences extends ChangeNotifier {
     morningBrief = enabled;
     notifyListeners();
     await _save((p) => p.setBool(_morningBriefKey, enabled));
+  }
+
+  Future<void> setPortfolioMoveAlert(double percent) async {
+    if (portfolioMoveAlert == percent) return;
+    portfolioMoveAlert = percent;
+    notifyListeners();
+    await _save((p) => p.setDouble(_portfolioMoveKey, percent));
+  }
+
+  Future<void> setPortfolioMoveNotified(String value) async {
+    portfolioMoveNotified = value;
+    await _save((p) => p.setString(_portfolioMoveNotifiedKey, value));
   }
 
   Future<void> setEarningsReminders(bool enabled) async {

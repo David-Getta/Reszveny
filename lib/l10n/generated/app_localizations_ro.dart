@@ -2387,4 +2387,62 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Adaugă în calendar (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Alertă de portofoliu';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'O notificare când întregul tău portofoliu se mișcă atât de mult într-o zi.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Dezactivată';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Portofoliul tău a crescut azi cu $percent';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Portofoliul tău a scăzut azi cu $percent';
+  }
+
+  @override
+  String get whatIfTitle => 'Și dacă ai fi investit?';
+
+  @override
+  String get whatIfAmount => 'Sumă';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount investiți acum $period ar valora azi';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Doar pe baza prețului acțiunii: dividendele, comisioanele și taxele nu sunt incluse. Randamentele trecute nu prezic randamentele viitoare.';
+
+  @override
+  String get watchShare => 'Distribuie lista';
+
+  @override
+  String get watchImport => 'Adaugă tickere';
+
+  @override
+  String get watchImportHint =>
+      'Lipește tickere separate prin virgule, spații sau rânduri noi – de exemplu, o listă pe care cineva a partajat-o cu tine.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Au fost adăugate $count de acțiuni',
+      few: 'Au fost adăugate $count acțiuni',
+      one: 'A fost adăugată $count acțiune',
+      zero: 'Nicio acțiune nouă',
+    );
+    return '$_temp0';
+  }
 }

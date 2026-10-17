@@ -2359,4 +2359,61 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Afegir al calendari (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Alerta de cartera';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Una notificació quan tota la teva cartera es mou tant en un dia.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Desactivada';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'La teva cartera puja un $percent avui';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'La teva cartera baixa un $percent avui';
+  }
+
+  @override
+  String get whatIfTitle => 'I si hi haguessis invertit?';
+
+  @override
+  String get whatIfAmount => 'Import';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount invertits fa $period valdrien avui';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Basat només en el preu de l’acció: no inclou dividends, comissions ni impostos. Les rendibilitats passades no prediuen les futures.';
+
+  @override
+  String get watchShare => 'Comparteix la llista';
+
+  @override
+  String get watchImport => 'Afegeix símbols';
+
+  @override
+  String get watchImportHint =>
+      'Enganxa símbols separats per comes, espais o salts de línia – per exemple, una llista que algú t’ha compartit.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'S’han afegit $count accions',
+      one: 'S’ha afegit 1 acció',
+      zero: 'Cap acció nova',
+    );
+    return '$_temp0';
+  }
 }

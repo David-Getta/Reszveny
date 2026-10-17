@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Tinye na kalenda (.ics)",
   "portfolioAnnualReturn": "Uru kwa afọ",
   "portfolioPerYear": "{percent} / afọ",
-  "portfolioAnnualReturnHint": "Uru kwa afọ dabere n'ego (XIRR): ọ na-atụle mgbe ị zụrụ na mgbe ị rere, ya mere ego ị tinyere mgbe e mesịrị anaghị emebi ya. A na-egosi ya ozugbo ihe mbụ ị zụrụ gbara opekata mpe otu afọ; dividend esoghị na ya."
+  "portfolioAnnualReturnHint": "Uru kwa afọ dabere n'ego (XIRR): ọ na-atụle mgbe ị zụrụ na mgbe ị rere, ya mere ego ị tinyere mgbe e mesịrị anaghị emebi ya. A na-egosi ya ozugbo ihe mbụ ị zụrụ gbara opekata mpe otu afọ; dividend esoghị na ya.",
+  "portfolioMoveAlertTitle": "Ọkwa pọtfolio",
+  "portfolioMoveAlertSubtitle": "Ọkwa mgbe pọtfolio gị niile gbanwere nke a n'otu ụbọchị.",
+  "portfolioMoveAlertOff": "Agbanyụrụ",
+  "portfolioMoveUp": "Pọtfolio gị arịgoro {percent} taa",
+  "portfolioMoveDown": "Pọtfolio gị agbadala {percent} taa",
+  "whatIfTitle": "Ọ bụrụ na i tinyere ego?",
+  "whatIfAmount": "Ego ole",
+  "whatIfResult": "{amount} e tinyere {period} gara aga ga-adị ugbu a",
+  "whatIfNote": "Dabere naanị na ọnụahịa òkè: dividend, ụgwọ ọrụ na ụtụ isi esoghị. Uru gara aga anaghị ebu amụma uru ga-abịa.",
+  "watchShare": "Kesaa ndepụta ahụ",
+  "watchImport": "Tinye akara ticker",
+  "watchImportHint": "Mado akara ticker ndị e ji rịkọm, ohere ma ọ bụ ahịrị ọhụrụ kewaa – dịka ọmụmaatụ, ndepụta mmadụ kesaara gị.",
+  "watchImported": "{count, plural, =0{Enweghị òkè ọhụrụ} =1{Agbakwunyere òkè 1} other{Agbakwunyere òkè {count}}}"
 }

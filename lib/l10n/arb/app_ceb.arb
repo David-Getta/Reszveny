@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Idugang sa kalendaryo (.ics)",
   "portfolioAnnualReturn": "Tinuig nga kita",
   "portfolioPerYear": "{percent} / tuig",
-  "portfolioAnnualReturnHint": "Tinuig nga kita nga gitimbang sa kwarta (XIRR): gikonsiderar niini kanus-a ka mipalit ug mibaligya, mao nga ang kwarta nga gidugang sa ulahi dili makatuis niini. Ipakita kini kung ang imong unang pagpalit labing menos usa na ka tuig; wala gilakip ang mga dibidendo."
+  "portfolioAnnualReturnHint": "Tinuig nga kita nga gitimbang sa kwarta (XIRR): gikonsiderar niini kanus-a ka mipalit ug mibaligya, mao nga ang kwarta nga gidugang sa ulahi dili makatuis niini. Ipakita kini kung ang imong unang pagpalit labing menos usa na ka tuig; wala gilakip ang mga dibidendo.",
+  "portfolioMoveAlertTitle": "Alerto sa portfolio",
+  "portfolioMoveAlertSubtitle": "Usa ka pahibalo kon ang tibuok nimong portfolio molihok ingon niini kadako sulod sa usa ka adlaw.",
+  "portfolioMoveAlertOff": "Gipalong",
+  "portfolioMoveUp": "Mitaas og {percent} ang imong portfolio karon",
+  "portfolioMoveDown": "Mius-os og {percent} ang imong portfolio karon",
+  "whatIfTitle": "Unsa kaha kon nag-invest ka?",
+  "whatIfAmount": "Kantidad",
+  "whatIfResult": "Ang {amount} nga gi-invest {period} na ang milabay nagkantidad unta karon og",
+  "whatIfNote": "Base lang sa presyo sa share: wala maapil ang dibidendo, bayronon ug buhis. Ang miaging kita dili magtagna sa umaabot.",
+  "watchShare": "I-share ang lista",
+  "watchImport": "Pagdugang og mga ticker",
+  "watchImportHint": "I-paste ang mga ticker nga gibulag sa comma, space o bag-ong linya – pananglitan, usa ka lista nga gi-share kanimo sa usa ka tawo.",
+  "watchImported": "{count, plural, =0{Walay bag-ong stock} =1{Nadugang ang 1 ka stock} other{Nadugang ang {count} ka stock}}"
 }

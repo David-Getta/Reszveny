@@ -2350,4 +2350,61 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Күнтізбеге қосу (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Портфель хабарландыруы';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Бүкіл портфеліңіз бір күнде осынша өзгергенде хабарландыру.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Өшірулі';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Портфеліңіз бүгін $percent өсті';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Портфеліңіз бүгін $percent төмендеді';
+  }
+
+  @override
+  String get whatIfTitle => 'Инвестиция салғаныңызда не болар еді?';
+
+  @override
+  String get whatIfAmount => 'Сома';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$period бұрын салынған $amount бүгін мынаған тең болар еді';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Тек акция бағасына негізделген: дивидендтер, комиссиялар мен салықтар есепке алынбаған. Өткен табыстылық болашақты болжамайды.';
+
+  @override
+  String get watchShare => 'Тізіммен бөлісу';
+
+  @override
+  String get watchImport => 'Тикер қосу';
+
+  @override
+  String get watchImportHint =>
+      'Тикерлерді үтір, бос орын немесе жаңа жол арқылы бөліп қойыңыз – мысалы, біреу сізбен бөліскен тізімді.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count акция қосылды',
+      one: '1 акция қосылды',
+      zero: 'Жаңа акция жоқ',
+    );
+    return '$_temp0';
+  }
 }

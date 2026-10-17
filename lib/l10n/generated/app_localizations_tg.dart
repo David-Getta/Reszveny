@@ -2351,4 +2351,61 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Илова ба тақвим (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Огоҳии портфел';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Огоҳинома, вақте ки тамоми портфели шумо дар як рӯз ин қадар тағйир меёбад.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Хомӯш';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Портфели шумо имрӯз $percent боло рафт';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Портфели шумо имрӯз $percent поён рафт';
+  }
+
+  @override
+  String get whatIfTitle => 'Агар шумо сармоягузорӣ мекардед?';
+
+  @override
+  String get whatIfAmount => 'Маблағ';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount, ки $period пеш сармоягузорӣ шуда буд, имрӯз меарзид';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Танҳо бар асоси нархи саҳм: дивидендҳо, ҳаққи хизмат ва андозҳо дохил нестанд. Даромади гузашта даромади ояндаро пешгӯӣ намекунад.';
+
+  @override
+  String get watchShare => 'Мубодилаи рӯйхат';
+
+  @override
+  String get watchImport => 'Илова кардани тикерҳо';
+
+  @override
+  String get watchImportHint =>
+      'Тикерҳоро бо вергул, фосила ё сатри нав ҷудо карда гузоред – масалан, рӯйхате, ки касе бо шумо мубодила кардааст.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count саҳмия илова шуд',
+      one: '1 саҳмия илова шуд',
+      zero: 'Саҳмияҳои нав нестанд',
+    );
+    return '$_temp0';
+  }
 }

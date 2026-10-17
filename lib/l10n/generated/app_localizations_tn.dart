@@ -2366,4 +2366,61 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Tsenya mo khalendareng (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Tlhagiso ya phothefolio';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Kitsiso fa phothefolio ya gago yotlhe e fetoga go le kalo ka letsatsi le le lengwe.';
+
+  @override
+  String get portfolioMoveAlertOff => 'E timilwe';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Phothefolio ya gago e oketsegile ka $percent gompieno';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Phothefolio ya gago e fokotsegile ka $percent gompieno';
+  }
+
+  @override
+  String get whatIfTitle => 'Go ka bo go ntse jang fa o ka bo o beeleditse?';
+
+  @override
+  String get whatIfAmount => 'Palo';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return 'Fa o ka bo o beeleditse $amount ka paka ya $period, gompieno e ka bo e le boleng jwa';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Go theilwe fela mo tlhwatlhwa ya seabe: dividende, dituelo le lekgetho ga di a akarediwa. Dipoelo tsa nako e e fetileng ga di bolelele pele tsa isago.';
+
+  @override
+  String get watchShare => 'Abelana lenaane';
+
+  @override
+  String get watchImport => 'Tsenya di-ticker';
+
+  @override
+  String get watchImportHint =>
+      'Kgomaretsa di-ticker tse di kgaoganngwang ka dikhoma, sekgala kgotsa mela e mesha – sekai, lenaane le mongwe a le abelaneng le wena.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Go okeditswe dishere di le $count',
+      one: 'Go okeditswe shere e le nngwe',
+      zero: 'Ga go na dishere tse dintšhwa',
+    );
+    return '$_temp0';
+  }
 }

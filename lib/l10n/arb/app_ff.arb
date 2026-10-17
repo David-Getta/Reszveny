@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Ɓeydu e kalandiye (.ics)",
   "portfolioAnnualReturn": "Nafoore hitaande",
   "portfolioPerYear": "{percent} / hitaande",
-  "portfolioAnnualReturnHint": "Nafoore hitaande peesaande e ceede (XIRR): ina jaggita sahaaji ɗi soodu-ɗaa e ɗi yeeyu-ɗaa, ngam ceede ɓeydaaɗe caggal ɗee nattataa ɗum. Ina hollee so soodgol maa adiingol hewtii hitaande wootere fof; geɗal nafoore naatnaaka."
+  "portfolioAnnualReturnHint": "Nafoore hitaande peesaande e ceede (XIRR): ina jaggita sahaaji ɗi soodu-ɗaa e ɗi yeeyu-ɗaa, ngam ceede ɓeydaaɗe caggal ɗee nattataa ɗum. Ina hollee so soodgol maa adiingol hewtii hitaande wootere fof; geɗal nafoore naatnaaka.",
+  "portfolioMoveAlertTitle": "Jeertinol portfolio",
+  "portfolioMoveAlertSubtitle": "Tintinol so portfolio maa fof wayliima ɗuum e ñalawma gootal.",
+  "portfolioMoveAlertOff": "Ñifaama",
+  "portfolioMoveUp": "Portfolio maa ɓeydiima {percent} hannde",
+  "portfolioMoveDown": "Portfolio maa ustiima {percent} hannde",
+  "whatIfTitle": "Si a waɗii ceede, hol ko ɗum wonata?",
+  "whatIfAmount": "Limoore",
+  "whatIfResult": "Si a waɗii {amount} e nder {period}, hannde ɗum foti",
+  "whatIfNote": "Ina tuugii e coggu aksiyoŋ tan: geɗal nafoore, njoɓdi e lempooji naataani. Ŋeɗu ɓennuɗu hollataa ko arata.",
+  "watchShare": "Senndu doggol ngol",
+  "watchImport": "Ɓeydu kod aksiyoŋ",
+  "watchImportHint": "Ɓortin kod aksiyoŋ seerndaaɗi ko virgule, ɓolɗe walla diiɗe kese – ko wayi no doggol goɗɗo senndii e maaɗa.",
+  "watchImported": "{count, plural, =0{Alaa aksiyoŋ kesol} =1{Aksiyoŋ 1 ɓeydaama} other{Aksiyoŋuuji {count} ɓeydaama}}"
 }

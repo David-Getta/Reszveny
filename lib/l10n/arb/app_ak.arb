@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Fa ka kalenda ho (.ics)",
   "portfolioAnnualReturn": "Afe mfaso",
   "portfolioPerYear": "{percent} / afe",
-  "portfolioAnnualReturnHint": "Mfaso a ɛgyina sika so afe biara (XIRR): ɛhwɛ bere a wotɔe ne bere a wotɔn, enti sika a wode ka ho akyiri no nsɛe no. Yɛkyerɛ no bere a w'adetɔ a edi kan no adi afe koro anaa nea ɛboro saa; mfaso kyɛ nka ho."
+  "portfolioAnnualReturnHint": "Mfaso a ɛgyina sika so afe biara (XIRR): ɛhwɛ bere a wotɔe ne bere a wotɔn, enti sika a wode ka ho akyiri no nsɛe no. Yɛkyerɛ no bere a w'adetɔ a edi kan no adi afe koro anaa nea ɛboro saa; mfaso kyɛ nka ho.",
+  "portfolioMoveAlertTitle": "Portfolio kɔkɔbɔ",
+  "portfolioMoveAlertSubtitle": "Wɔbɛbɔ wo amanneɛ sɛ wo portfolio nyinaa sesa saa dodow yi da koro mu a.",
+  "portfolioMoveAlertOff": "Adum",
+  "portfolioMoveUp": "Wo portfolio akɔ soro {percent} ɛnnɛ",
+  "portfolioMoveDown": "Wo portfolio aba fam {percent} ɛnnɛ",
+  "whatIfTitle": "Sɛ wode sika hyɛɛ mu a, anka ɛbɛyɛ dɛn?",
+  "whatIfAmount": "Sika dodow",
+  "whatIfResult": "Sɛ wode {amount} hyɛɛ mu {period} a atwam no a, nnɛ anka ɛsom",
+  "whatIfNote": "Egyina kyɛfa no bo nkutoo so: mfaso kyɛ, ka ne towtua nka ho. Mfaso a atwam no nkyerɛ deɛ ɛbɛba daakye.",
+  "watchShare": "Kyɛ nhyehyɛe no",
+  "watchImport": "Fa ticker agyiraehyɛde ka ho",
+  "watchImportHint": "Fa ticker agyiraehyɛde hyɛ mu, na fa kɔma, kwan hunu anaa nkyerɛwee foforo tetew mu – sɛ nhwɛso no, nhyehyɛe bi a obi de akyɛ wo.",
+  "watchImported": "{count, plural, =0{Kyɛfa foforo biara nni hɔ} =1{Wɔde kyɛfa 1 aka ho} other{Wɔde kyɛfa {count} aka ho}}"
 }

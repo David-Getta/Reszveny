@@ -2350,4 +2350,61 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Senenama goş (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Portfel duýduryşy';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Tutuş portfeliňiz bir günde şunça üýtgände duýduryş.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Öçük';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Portfeliňiz şu gün $percent ýokarlandy';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Portfeliňiz şu gün $percent aşaklady';
+  }
+
+  @override
+  String get whatIfTitle => 'Maýa goýan bolsadyňyz näme bolardy?';
+
+  @override
+  String get whatIfAmount => 'Mukdar';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$period öň goýlan $amount şu gün şunça bolardy';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Diňe paýnamanyň bahasyna esaslanýar: diwidendler, ýygymlar we salgytlar girizilmedi. Geçmişdäki girdeji geljekdäkini çaklamaýar.';
+
+  @override
+  String get watchShare => 'Sanawy paýlaş';
+
+  @override
+  String get watchImport => 'Tiker goş';
+
+  @override
+  String get watchImportHint =>
+      'Tikerleri otur, boşluk ýa-da täze setir bilen bölüp goý – meselem, kimdir biriniň saňa paýlaşan sanawyny.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count paýnama goşuldy',
+      one: '1 paýnama goşuldy',
+      zero: 'Täze paýnama ýok',
+    );
+    return '$_temp0';
+  }
 }

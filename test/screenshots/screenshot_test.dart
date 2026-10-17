@@ -814,6 +814,12 @@ void main() {
     await tester.drag(find.byType(Scrollable).first, const Offset(0, 250));
     await tester.pumpAndSettle();
     await _shot(tester, 'returns_phone_hu');
+    // „Mi lett volna, ha…” közvetlenül a grafikon alatt.
+    await tester.ensureVisible(find.byKey(const ValueKey('what-if')));
+    await tester.pumpAndSettle();
+    await tester.drag(find.byType(Scrollable).first, const Offset(0, 420));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'what_if_phone_hu');
     final insiders = find.byKey(const ValueKey('insiders-card'));
     for (var i = 0; i < 20 && insiders.evaluate().isEmpty; i++) {
       await tester.drag(find.byType(Scrollable).first, const Offset(0, -300));

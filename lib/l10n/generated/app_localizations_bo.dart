@@ -2338,4 +2338,61 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'ལོ་ཐོར་སྣོན (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'མ་འཛུགས་ཉེན་བརྡ།';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'ཁྱེད་ཀྱི་མ་འཛུགས་ཧྲིལ་པོ་ཉིན་གཅིག་ལ་འདི་ཙམ་འགྱུར་ན་བརྡ་ཐོ།';
+
+  @override
+  String get portfolioMoveAlertOff => 'སྒོ་བརྒྱབ།';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'དེ་རིང་ཁྱེད་ཀྱི་མ་འཛུགས་ $percent འཕར་སོང་།';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'དེ་རིང་ཁྱེད་ཀྱི་མ་འཛུགས་ $percent ཆག་སོང་།';
+  }
+
+  @override
+  String get whatIfTitle => 'གལ་ཏེ་མ་འཇོག་བྱས་ན་ཅི་འགྱུར།';
+
+  @override
+  String get whatIfAmount => 'གྲངས་འབོར།';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$period སྔོན་ལ་མ་འཇོག་བྱས་པའི་ $amount གྱི་དེ་རིང་གི་རིན་ཐང་།';
+  }
+
+  @override
+  String get whatIfNote =>
+      'མ་ཤེར་གྱི་རིན་གོང་ཁོ་ན་ལ་གཞི་བཅོལ་ཡོད། ཁེ་བགོ་དང་འགྲོ་གྲོན། ཁྲལ་འབབ་བཅས་མ་ཚུད། སྔོན་གྱི་ཁེ་ཕན་གྱིས་མ་འོངས་པའི་ཁེ་ཕན་སྔོན་དཔག་མི་བྱེད།';
+
+  @override
+  String get watchShare => 'ཐོ་ཡིག་མཉམ་སྤྱོད།';
+
+  @override
+  String get watchImport => 'ཧུར་ཁག་ཨང་རྟགས་ཁ་སྣོན།';
+
+  @override
+  String get watchImportHint =>
+      'ཧུར་ཁག་ཨང་རྟགས་རྣམས་ , དང་བར་སྟོང་། ཡང་ན་ཕྲེང་གསར་པས་ཁ་ཕྲལ་ནས་སྦྱོར་རོགས། དཔེར་ན། མི་ཞིག་གིས་ཁྱེད་ལ་མཉམ་སྤྱོད་བྱས་པའི་ཐོ་ཡིག';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ཧུར་ཁག་ $count ཁ་སྣོན་བྱས་ཟིན།',
+      one: 'ཧུར་ཁག་ 1 ཁ་སྣོན་བྱས་ཟིན།',
+      zero: 'ཧུར་ཁག་གསར་པ་མེད།',
+    );
+    return '$_temp0';
+  }
 }

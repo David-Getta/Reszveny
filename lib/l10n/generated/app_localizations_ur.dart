@@ -2349,4 +2349,61 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'کیلنڈر میں شامل کریں (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'پورٹ فولیو الرٹ';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'جب آپ کا پورا پورٹ فولیو ایک دن میں اتنا ہلے تو اطلاع۔';
+
+  @override
+  String get portfolioMoveAlertOff => 'بند';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'آج آپ کا پورٹ فولیو $percent بڑھا';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'آج آپ کا پورٹ فولیو $percent گرا';
+  }
+
+  @override
+  String get whatIfTitle => 'اگر آپ نے سرمایہ کاری کی ہوتی؟';
+
+  @override
+  String get whatIfAmount => 'رقم';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$period پہلے لگائے گئے $amount کی آج مالیت ہوتی';
+  }
+
+  @override
+  String get whatIfNote =>
+      'صرف شیئر کی قیمت پر مبنی: ڈیویڈنڈ، فیس اور ٹیکس شامل نہیں۔ ماضی کا منافع مستقبل کے منافع کی پیش گوئی نہیں کرتا۔';
+
+  @override
+  String get watchShare => 'فہرست شیئر کریں';
+
+  @override
+  String get watchImport => 'ٹکر شامل کریں';
+
+  @override
+  String get watchImportHint =>
+      'کوما، اسپیس یا نئی سطر سے الگ کیے گئے ٹکر پیسٹ کریں – مثلاً کوئی فہرست جو کسی نے آپ کے ساتھ شیئر کی ہو۔';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count شیئرز شامل کر دیے گئے',
+      one: '1 شیئر شامل کر دیا گیا',
+      zero: 'کوئی نیا شیئر نہیں',
+    );
+    return '$_temp0';
+  }
 }

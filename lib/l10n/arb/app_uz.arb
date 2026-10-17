@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Taqvimga qoʻshish (.ics)",
   "portfolioAnnualReturn": "Yillik daromadlilik",
   "portfolioPerYear": "{percent} / yil",
-  "portfolioAnnualReturnHint": "Pul oqimlari boʻyicha tortilgan yillik daromadlilik (XIRR): qachon sotib olganingiz va sotganingizni hisobga oladi, shuning uchun keyinroq qoʻshilgan pul uni buzmaydi. Birinchi xaridingizga kamida bir yil toʻlganda koʻrsatiladi; dividendlar kiritilmagan."
+  "portfolioAnnualReturnHint": "Pul oqimlari boʻyicha tortilgan yillik daromadlilik (XIRR): qachon sotib olganingiz va sotganingizni hisobga oladi, shuning uchun keyinroq qoʻshilgan pul uni buzmaydi. Birinchi xaridingizga kamida bir yil toʻlganda koʻrsatiladi; dividendlar kiritilmagan.",
+  "portfolioMoveAlertTitle": "Portfel ogohlantirishi",
+  "portfolioMoveAlertSubtitle": "Butun portfelingiz bir kunda shuncha oʻzgarganda bildirishnoma.",
+  "portfolioMoveAlertOff": "Oʻchiq",
+  "portfolioMoveUp": "Portfelingiz bugun {percent} ga oʻsdi",
+  "portfolioMoveDown": "Portfelingiz bugun {percent} ga tushdi",
+  "whatIfTitle": "Sarmoya kiritganingizda nima boʻlardi?",
+  "whatIfAmount": "Summa",
+  "whatIfResult": "{period} oldin kiritilgan {amount} bugun shuncha boʻlardi",
+  "whatIfNote": "Faqat aksiya narxiga asoslangan: dividendlar, komissiyalar va soliqlar hisobga olinmagan. Oʻtgan daromad kelajakdagisini bashorat qilmaydi.",
+  "watchShare": "Roʻyxatni ulashish",
+  "watchImport": "Tiker qoʻshish",
+  "watchImportHint": "Tikerlarni vergul, boʻsh joy yoki yangi qator bilan ajratib joylang – masalan, kimdir siz bilan ulashgan roʻyxatni.",
+  "watchImported": "{count, plural, =0{Yangi aksiyalar yoʻq} =1{1 ta aksiya qoʻshildi} other{{count} ta aksiya qoʻshildi}}"
 }

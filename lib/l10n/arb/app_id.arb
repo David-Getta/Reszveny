@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Tambahkan ke kalender (.ics)",
   "portfolioAnnualReturn": "Imbal hasil tahunan",
   "portfolioPerYear": "{percent} / tahun",
-  "portfolioAnnualReturnHint": "Imbal hasil tahunan tertimbang uang (XIRR): memperhitungkan kapan Anda membeli dan menjual, sehingga uang yang ditambahkan belakangan tidak mendistorsinya. Ditampilkan setelah pembelian pertama Anda berusia minimal satu tahun; dividen tidak termasuk."
+  "portfolioAnnualReturnHint": "Imbal hasil tahunan tertimbang uang (XIRR): memperhitungkan kapan Anda membeli dan menjual, sehingga uang yang ditambahkan belakangan tidak mendistorsinya. Ditampilkan setelah pembelian pertama Anda berusia minimal satu tahun; dividen tidak termasuk.",
+  "portfolioMoveAlertTitle": "Peringatan portofolio",
+  "portfolioMoveAlertSubtitle": "Notifikasi saat seluruh portofoliomu bergerak sebesar ini dalam sehari.",
+  "portfolioMoveAlertOff": "Mati",
+  "portfolioMoveUp": "Portofoliomu naik {percent} hari ini",
+  "portfolioMoveDown": "Portofoliomu turun {percent} hari ini",
+  "whatIfTitle": "Bagaimana jika Anda berinvestasi?",
+  "whatIfAmount": "Jumlah",
+  "whatIfResult": "{amount} yang diinvestasikan {period} lalu kini bernilai",
+  "whatIfNote": "Hanya berdasarkan harga saham: dividen, biaya, dan pajak tidak termasuk. Imbal hasil masa lalu tidak memprediksi imbal hasil di masa depan.",
+  "watchShare": "Bagikan daftar",
+  "watchImport": "Tambahkan kode saham",
+  "watchImportHint": "Tempel kode saham yang dipisahkan dengan koma, spasi, atau baris baru – misalnya daftar yang dibagikan seseorang kepada Anda.",
+  "watchImported": "{count, plural, =0{Tidak ada saham baru} =1{1 saham ditambahkan} other{{count} saham ditambahkan}}"
 }

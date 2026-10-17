@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Dodaj do kalendarza (.ics)",
   "portfolioAnnualReturn": "Roczna stopa zwrotu",
   "portfolioPerYear": "{percent} / rok",
-  "portfolioAnnualReturnHint": "Roczna stopa zwrotu ważona kapitałem (XIRR): uwzględnia terminy zakupów i sprzedaży, więc pieniądze dodane później jej nie zniekształcają. Wyświetlana, gdy twój pierwszy zakup ma co najmniej rok; dywidendy nie są uwzględnione."
+  "portfolioAnnualReturnHint": "Roczna stopa zwrotu ważona kapitałem (XIRR): uwzględnia terminy zakupów i sprzedaży, więc pieniądze dodane później jej nie zniekształcają. Wyświetlana, gdy twój pierwszy zakup ma co najmniej rok; dywidendy nie są uwzględnione.",
+  "portfolioMoveAlertTitle": "Alert portfela",
+  "portfolioMoveAlertSubtitle": "Powiadomienie, gdy cały portfel zmieni się o tyle w ciągu dnia.",
+  "portfolioMoveAlertOff": "Wyłączony",
+  "portfolioMoveUp": "Twój portfel zyskał dziś {percent}",
+  "portfolioMoveDown": "Twój portfel stracił dziś {percent}",
+  "whatIfTitle": "A gdyby tak zainwestować?",
+  "whatIfAmount": "Kwota",
+  "whatIfResult": "{amount} zainwestowane {period} temu byłoby dziś warte",
+  "whatIfNote": "Tylko na podstawie ceny akcji: dywidendy, opłaty i podatki nie są uwzględnione. Przeszłe stopy zwrotu nie przewidują przyszłych.",
+  "watchShare": "Udostępnij listę",
+  "watchImport": "Dodaj symbole",
+  "watchImportHint": "Wklej symbole giełdowe oddzielone przecinkami, spacjami lub nowymi wierszami – np. listę, którą ktoś ci udostępnił.",
+  "watchImported": "{count, plural, =0{Brak nowych akcji} =1{Dodano 1 akcję} one{Dodano {count} akcję} few{Dodano {count} akcje} many{Dodano {count} akcji} other{Dodano {count} akcji}}"
 }

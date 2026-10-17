@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Shyira kuri kalendari (.ics)",
   "portfolioAnnualReturn": "Inyungu ku mwaka",
   "portfolioPerYear": "{percent} / umwaka",
-  "portfolioAnnualReturnHint": "Inyungu ku mwaka ipimwa hashingiwe ku mafaranga (XIRR): yita ku gihe waguriye n'igihe wagurishirije, bityo amafaranga wongeyemo nyuma ntayigoreka. Igaragara iyo ibyo waguze bwa mbere bimaze nibura umwaka; inyungu ku migabane ntizirimo."
+  "portfolioAnnualReturnHint": "Inyungu ku mwaka ipimwa hashingiwe ku mafaranga (XIRR): yita ku gihe waguriye n'igihe wagurishirije, bityo amafaranga wongeyemo nyuma ntayigoreka. Igaragara iyo ibyo waguze bwa mbere bimaze nibura umwaka; inyungu ku migabane ntizirimo.",
+  "portfolioMoveAlertTitle": "Imenyesha rya portfolio",
+  "portfolioMoveAlertSubtitle": "Imenyesha igihe portfolio yawe yose ihindutse bingana gutya mu munsi umwe.",
+  "portfolioMoveAlertOff": "Bizimije",
+  "portfolioMoveUp": "Portfolio yawe yazamutseho {percent} uyu munsi",
+  "portfolioMoveDown": "Portfolio yawe yagabanutseho {percent} uyu munsi",
+  "whatIfTitle": "Iyo uba warashoye?",
+  "whatIfAmount": "Amafaranga",
+  "whatIfResult": "Iyo ushora {amount} mu gihe cy'{period}, uyu munsi byari kuba bifite agaciro ka",
+  "whatIfNote": "Bishingiye gusa ku giciro cy'umugabane: inyungu ku migabane, amafaranga ya serivisi n'imisoro ntibirimo. Inyungu zabanje ntizigaragaza iz'ahazaza.",
+  "watchShare": "Sangiza urutonde",
+  "watchImport": "Ongeramo ama ticker",
+  "watchImportHint": "Omekamo ama ticker atandukanyijwe n'akitso, umwanya cyangwa umurongo mushya – urugero, urutonde umuntu yagusangije.",
+  "watchImported": "{count, plural, =0{Nta migabane mishya} =1{Hongewemo umugabane 1} other{Hongewemo imigabane {count}}}"
 }

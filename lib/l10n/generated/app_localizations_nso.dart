@@ -2365,4 +2365,61 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Oketša go khalendara (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Temošo ya potefolio';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Tsebišo ge potefolio ya gago ka moka e šutha ka tše kaalo ka letšatši le tee.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Timilwe';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Potefolio ya gago e rotogile ka $percent lehono';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Potefolio ya gago e theogile ka $percent lehono';
+  }
+
+  @override
+  String get whatIfTitle => 'Go ka be go le bjang ge o be o beeletše?';
+
+  @override
+  String get whatIfAmount => 'Palo';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return 'Ge o be o beeletše $amount ka nako ya $period, lehono e be e tla ba ya boleng bja';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Go theilwe fela godimo ga theko ya seabelo: dividende, ditefelo le motšhelo ga di akaretšwe. Dipoelo tša nakong ye e fetilego ga di bontšhe tša ka moso.';
+
+  @override
+  String get watchShare => 'Abelana lenaneo';
+
+  @override
+  String get watchImport => 'Oketša matšhwao a ticker';
+
+  @override
+  String get watchImportHint =>
+      'Kgomaretša matšhwao a ticker ao a arogantšwego ka khoma, sekgoba goba methalo ye mefsa – mohlala, lenaneo leo motho o mongwe a le abelanego le wena.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Go okeditšwe dišere tše $count',
+      one: 'Go okeditšwe šere e 1',
+      zero: 'Ga go na dišere tše mpsha',
+    );
+    return '$_temp0';
+  }
 }

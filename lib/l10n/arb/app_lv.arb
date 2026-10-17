@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Pievienot kalendāram (.ics)",
   "portfolioAnnualReturn": "Gada ienesīgums",
   "portfolioPerYear": "{percent} gadā",
-  "portfolioAnnualReturnHint": "Naudas plūsmās svērtais gada ienesīgums (XIRR): ņem vērā, kad jūs pirkāt un pārdevāt, tāpēc vēlāk pievienota nauda to neizkropļo. Tiek rādīts, kad jūsu pirmajam pirkumam ir vismaz gads; dividendes nav iekļautas."
+  "portfolioAnnualReturnHint": "Naudas plūsmās svērtais gada ienesīgums (XIRR): ņem vērā, kad jūs pirkāt un pārdevāt, tāpēc vēlāk pievienota nauda to neizkropļo. Tiek rādīts, kad jūsu pirmajam pirkumam ir vismaz gads; dividendes nav iekļautas.",
+  "portfolioMoveAlertTitle": "Portfeļa brīdinājums",
+  "portfolioMoveAlertSubtitle": "Paziņojums, kad viss tavs portfelis vienā dienā mainās tik daudz.",
+  "portfolioMoveAlertOff": "Izslēgts",
+  "portfolioMoveUp": "Tavs portfelis šodien pieaudzis par {percent}",
+  "portfolioMoveDown": "Tavs portfelis šodien krities par {percent}",
+  "whatIfTitle": "Ja nu jūs būtu ieguldījuši?",
+  "whatIfAmount": "Summa",
+  "whatIfResult": "Ieguldījums {amount} (periods: {period}) šodien būtu vērts",
+  "whatIfNote": "Tikai pēc akcijas cenas: dividendes, komisijas un nodokļi nav iekļauti. Pagātnes ienesīgums neparedz nākotnes ienesīgumu.",
+  "watchShare": "Kopīgot sarakstu",
+  "watchImport": "Pievienot simbolus",
+  "watchImportHint": "Ielīmējiet akciju simbolus, atdalot tos ar komatiem, atstarpēm vai jaunām rindām, – piemēram, sarakstu, ar ko kāds ar jums ir dalījies.",
+  "watchImported": "{count, plural, =0{Nav jaunu akciju} =1{Pievienota 1 akcija} zero{Pievienotas {count} akcijas} one{Pievienota {count} akcija} other{Pievienotas {count} akcijas}}"
 }

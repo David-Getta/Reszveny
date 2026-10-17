@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Fi kún kàlẹ́ńdà (.ics)",
   "portfolioAnnualReturn": "Èrè ọdọọdún",
   "portfolioPerYear": "{percent} / ọdún",
-  "portfolioAnnualReturnHint": "Èrè ọdọọdún tí a wọ̀n pẹ̀lú owó (XIRR): ó ń ka ìgbà tí o rà àti tí o tà sí, nítorí náà owó tí o fi kún un lẹ́yìn kò ní yí i po. A máa ń fi hàn nígbà tí ìrajà rẹ àkọ́kọ́ bá ti pé ọdún kan ó kéré tán; èrè ìpín kò sí nínú rẹ̀."
+  "portfolioAnnualReturnHint": "Èrè ọdọọdún tí a wọ̀n pẹ̀lú owó (XIRR): ó ń ka ìgbà tí o rà àti tí o tà sí, nítorí náà owó tí o fi kún un lẹ́yìn kò ní yí i po. A máa ń fi hàn nígbà tí ìrajà rẹ àkọ́kọ́ bá ti pé ọdún kan ó kéré tán; èrè ìpín kò sí nínú rẹ̀.",
+  "portfolioMoveAlertTitle": "Ìkìlọ̀ pọ́tífólíò",
+  "portfolioMoveAlertSubtitle": "Ìfitónilétí nígbà tí gbogbo pọ́tífólíò rẹ bá yí padà tó báyìí ní ọjọ́ kan.",
+  "portfolioMoveAlertOff": "Pípa",
+  "portfolioMoveUp": "Pọ́tífólíò rẹ ti gòkè {percent} lónìí",
+  "portfolioMoveDown": "Pọ́tífólíò rẹ ti lọ sílẹ̀ {percent} lónìí",
+  "whatIfTitle": "Tí o bá ti dókòwò ńkọ́?",
+  "whatIfAmount": "Iye owó",
+  "whatIfResult": "{amount} tí o dókòwò ní {period} sẹ́yìn ìbá tó lónìí",
+  "whatIfNote": "Ó dá lórí iye owó ìpín nìkan: èrè ìpín, owó iṣẹ́ àti owó orí kò sí nínú rẹ̀. Èrè àtẹ̀yìnwá kò sọ tọjọ́ iwájú.",
+  "watchShare": "Pín àkójọ náà",
+  "watchImport": "Ṣàfikún àmì ìpín",
+  "watchImportHint": "Lẹ àwọn àmì ìpín tí a fi kọ́mà, àlàfo tàbí ìlà tuntun yà sọ́tọ̀ – fún àpẹẹrẹ, àkójọ tí ẹnìkan pín fún ọ.",
+  "watchImported": "{count, plural, =0{Kò sí ìpín tuntun} =1{A ti fi ìpín 1 kún un} other{A ti fi ìpín {count} kún un}}"
 }

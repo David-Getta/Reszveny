@@ -2341,4 +2341,61 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'ڪئلينڊر ۾ شامل ڪريو (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'پورٽ فوليو الرٽ';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'جڏهن توهان جو سڄو پورٽ فوليو هڪ ڏينهن ۾ ايترو لاهه چاڙهه ڪري ته اطلاع.';
+
+  @override
+  String get portfolioMoveAlertOff => 'بند';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'اڄ توهان جو پورٽ فوليو $percent وڌيو';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'اڄ توهان جو پورٽ فوليو $percent گهٽيو';
+  }
+
+  @override
+  String get whatIfTitle => 'جيڪڏهن توهان سيڙپ ڪئي هجي ها؟';
+
+  @override
+  String get whatIfAmount => 'رقم';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$period اڳ سيڙپ ڪيل $amount اڄ هجن ها';
+  }
+
+  @override
+  String get whatIfNote =>
+      'رڳو شيئر جي قيمت تي ٻڌل: ڊيويڊنڊ، فيس ۽ ٽيڪس شامل ناهن. ماضي جو منافعو مستقبل جي منافعي جي اڳڪٿي نٿو ڪري.';
+
+  @override
+  String get watchShare => 'فهرست شيئر ڪريو';
+
+  @override
+  String get watchImport => 'ٽڪر شامل ڪريو';
+
+  @override
+  String get watchImportHint =>
+      'ڪاما، خالي جاءِ يا نئين قطار سان الڳ ٿيل ٽڪر پيسٽ ڪريو – مثال طور، اها فهرست جيڪا ڪنهن توهان سان شيئر ڪئي هجي.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count شيئر شامل ڪيا ويا',
+      one: '1 شيئر شامل ڪيو ويو',
+      zero: 'ڪو به نئون شيئر ناهي',
+    );
+    return '$_temp0';
+  }
 }

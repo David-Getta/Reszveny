@@ -2345,4 +2345,61 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Tambahkan ke kalender (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Peringatan portofolio';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Notifikasi saat seluruh portofoliomu bergerak sebesar ini dalam sehari.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Mati';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Portofoliomu naik $percent hari ini';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Portofoliomu turun $percent hari ini';
+  }
+
+  @override
+  String get whatIfTitle => 'Bagaimana jika Anda berinvestasi?';
+
+  @override
+  String get whatIfAmount => 'Jumlah';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount yang diinvestasikan $period lalu kini bernilai';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Hanya berdasarkan harga saham: dividen, biaya, dan pajak tidak termasuk. Imbal hasil masa lalu tidak memprediksi imbal hasil di masa depan.';
+
+  @override
+  String get watchShare => 'Bagikan daftar';
+
+  @override
+  String get watchImport => 'Tambahkan kode saham';
+
+  @override
+  String get watchImportHint =>
+      'Tempel kode saham yang dipisahkan dengan koma, spasi, atau baris baru – misalnya daftar yang dibagikan seseorang kepada Anda.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count saham ditambahkan',
+      one: '1 saham ditambahkan',
+      zero: 'Tidak ada saham baru',
+    );
+    return '$_temp0';
+  }
 }

@@ -44,7 +44,9 @@ import 'features/news/watch_news.dart';
 import 'features/notes/notes_store.dart';
 import 'features/portfolio/portfolio_review.dart';
 import 'features/portfolio/holdings_reader.dart';
+import 'features/portfolio/portfolio_move_watcher.dart';
 import 'features/portfolio/portfolio_store.dart';
+import 'features/portfolio/portfolio_valuation.dart';
 import 'features/sync/sync_service.dart';
 import 'features/recognition/claude_vision_recognizer.dart';
 import 'features/recognition/stock_recognizer.dart';
@@ -119,6 +121,14 @@ class AppServices {
           SupportedLocales.languageFor(locale.effective(WidgetsBinding.instance.platformDispatcher.locale)).englishName,
       title: () => _l10n().$1.briefTitle,
       onMade: () => this.telemetry.track('morning_brief'),
+    );
+    portfolioMoveWatcher = PortfolioMoveWatcher(
+      portfolio: this.portfolio,
+      preferences: preferences,
+      notifier: alertMonitor.notifier,
+      snapshot: _portfolioSnapshot,
+      describe: describePortfolioMove,
+      onNotified: () => this.telemetry.track('portfolio_move'),
     );
     earningsReminder = EarningsReminder(
       events: events,
@@ -302,6 +312,9 @@ class AppServices {
   /// Asztali értesítés a figyelt részvények gyorsjelentése előtt.
   late final EarningsReminder earningsReminder;
 
+  /// Értesítés a teljes portfólió nagy napi mozgásáról (ha be van kapcsolva).
+  late final PortfolioMoveWatcher portfolioMoveWatcher;
+
   /// Reggelente magától elkészülő napi összefoglaló (ha be van kapcsolva).
   late final MorningBrief morningBrief;
 
@@ -350,6 +363,33 @@ class AppServices {
       l10n = lookupAppLocalizations(SupportedLocales.fallback);
     }
     return (l10n, Fmt(appLocale.toString(), na: l10n.notAvailable));
+  }
+
+  /// A portfólió pillanatképe a felületen kívül (értesítésekhez), az app nyelve
+  /// szerinti összesítő pénznemben.
+  Future<PortfolioSnapshot> _portfolioSnapshot() {
+    final positions = portfolio.positions;
+    final device = WidgetsBinding.instance.platformDispatcher.locale;
+    return PortfolioSnapshot.load(
+      positions,
+      marketData: marketData,
+      fx: fx,
+      currency: PortfolioSnapshot.totalCurrency(positions, displayCurrency(locale.effective(device))),
+    );
+  }
+
+  /// A portfólió-riasztás szövege: irány és %, az összeg és a legnagyobb mozgó.
+  ({String title, String body}) describePortfolioMove(PortfolioSnapshot s) {
+    final (l10n, fmt) = _l10n();
+    final pct = fmt.percent(s.dayGainPercent!.abs(), decimals: 1);
+    final mover = biggestMover(s);
+    return (
+      title: s.dayGain >= 0 ? l10n.portfolioMoveUp(pct) : l10n.portfolioMoveDown(pct),
+      body: [
+        fmt.money(s.dayGain, s.currency, withSign: true),
+        if (mover != null) '${mover.symbol} ${fmt.percent(mover.percent, decimals: 1, withSign: true)}',
+      ].join(' · '),
+    );
   }
 
   /// A gyorsjelentés-emlékeztető szövege a felhasználó nyelvén.

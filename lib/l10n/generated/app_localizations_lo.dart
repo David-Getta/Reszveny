@@ -2323,4 +2323,61 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'ເພີ່ມໃສ່ປະຕິທິນ (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'ແຈ້ງເຕືອນພອດໂຟລິໂອ';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'ແຈ້ງເຕືອນເມື່ອພອດໂຟລິໂອທັງໝົດຂອງທ່ານປ່ຽນແປງຫຼາຍເທົ່ານີ້ໃນໜຶ່ງມື້.';
+
+  @override
+  String get portfolioMoveAlertOff => 'ປິດ';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'ພອດໂຟລິໂອຂອງທ່ານເພີ່ມຂຶ້ນ $percent ມື້ນີ້';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'ພອດໂຟລິໂອຂອງທ່ານຫຼຸດລົງ $percent ມື້ນີ້';
+  }
+
+  @override
+  String get whatIfTitle => 'ຖ້າເຈົ້າໄດ້ລົງທຶນ?';
+
+  @override
+  String get whatIfAmount => 'ຈຳນວນເງິນ';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount ທີ່ລົງທຶນເມື່ອ $periodກ່ອນ ຈະມີມູນຄ່າໃນມື້ນີ້';
+  }
+
+  @override
+  String get whatIfNote =>
+      'ອີງໃສ່ລາຄາຫຸ້ນເທົ່ານັ້ນ: ບໍ່ລວມເງິນປັນຜົນ, ຄ່າທຳນຽມ ແລະ ພາສີ. ຜົນຕອບແທນໃນອະດີດບໍ່ໄດ້ຄາດເດົາຜົນຕອບແທນໃນອະນາຄົດ.';
+
+  @override
+  String get watchShare => 'ແບ່ງປັນລາຍການ';
+
+  @override
+  String get watchImport => 'ເພີ່ມສັນຍາລັກຮຸ້ນ';
+
+  @override
+  String get watchImportHint =>
+      'ວາງສັນຍາລັກຮຸ້ນທີ່ແຍກດ້ວຍເຄື່ອງໝາຍຈຸດ, ຍະຫວ່າງ ຫຼື ແຖວໃໝ່ – ເຊັ່ນ ລາຍການທີ່ມີຄົນແບ່ງປັນໃຫ້ທ່ານ.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ເພີ່ມຮຸ້ນ $count ລາຍການແລ້ວ',
+      one: 'ເພີ່ມຮຸ້ນ 1 ລາຍການແລ້ວ',
+      zero: 'ບໍ່ມີຮຸ້ນໃໝ່',
+    );
+    return '$_temp0';
+  }
 }

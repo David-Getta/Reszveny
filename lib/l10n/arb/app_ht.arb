@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Ajoute nan kalandriye (.ics)",
   "portfolioAnnualReturn": "Rannman anyèl",
   "portfolioPerYear": "{percent} / ane",
-  "portfolioAnnualReturnHint": "Rannman anyèl ki peze selon lajan an (XIRR): li konte ki lè ou te achte ak vann, kidonk lajan ou ajoute pita pa defòme l. Li parèt depi premye acha ou gen omwen yon ane; dividann yo pa ladan l."
+  "portfolioAnnualReturnHint": "Rannman anyèl ki peze selon lajan an (XIRR): li konte ki lè ou te achte ak vann, kidonk lajan ou ajoute pita pa defòme l. Li parèt depi premye acha ou gen omwen yon ane; dividann yo pa ladan l.",
+  "portfolioMoveAlertTitle": "Alèt pòtfolyo",
+  "portfolioMoveAlertSubtitle": "Yon notifikasyon lè tout pòtfolyo w bouje konsa nan yon jou.",
+  "portfolioMoveAlertOff": "Fèmen",
+  "portfolioMoveUp": "Pòtfolyo w monte {percent} jodi a",
+  "portfolioMoveDown": "Pòtfolyo w desann {percent} jodi a",
+  "whatIfTitle": "E si ou te envesti?",
+  "whatIfAmount": "Montan",
+  "whatIfResult": "{amount} ou te envesti sa gen {period} ta vo jodi a",
+  "whatIfNote": "Sa baze sèlman sou pri aksyon an: dividann, frè ak taks pa ladan l. Rannman pase yo pa predi sa k ap vini.",
+  "watchShare": "Pataje lis la",
+  "watchImport": "Ajoute senbòl",
+  "watchImportHint": "Kole senbòl yo separe ak vigil, espas oswa nouvo liy – pa egzanp yon lis yon moun pataje avè w.",
+  "watchImported": "{count, plural, =0{Pa gen nouvo aksyon} =1{Nou ajoute 1 aksyon} other{Nou ajoute {count} aksyon}}"
 }

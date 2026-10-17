@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Yongeza kwikhalenda (.ics)",
   "portfolioAnnualReturn": "Inzuzo yonyaka",
   "portfolioPerYear": "{percent} / unyaka",
-  "portfolioAnnualReturnHint": "Inzuzo yonyaka ekalwe ngemali (XIRR): ithathela ingqalelo ukuba uthenge nini kwaye uthengise nini, ngoko imali eyongezwe kamva ayiyiphazamisi. Iboniswa xa sele kudlule unyaka omnye ubuncinane uthenge okokuqala; ii-dividend azibandakanywanga."
+  "portfolioAnnualReturnHint": "Inzuzo yonyaka ekalwe ngemali (XIRR): ithathela ingqalelo ukuba uthenge nini kwaye uthengise nini, ngoko imali eyongezwe kamva ayiyiphazamisi. Iboniswa xa sele kudlule unyaka omnye ubuncinane uthenge okokuqala; ii-dividend azibandakanywanga.",
+  "portfolioMoveAlertTitle": "Isilumkiso sepotifoliyo",
+  "portfolioMoveAlertSubtitle": "Isaziso xa ipotifoliyo yakho yonke ishukuma ngolu hlobo ngosuku olunye.",
+  "portfolioMoveAlertOff": "Icinyiwe",
+  "portfolioMoveUp": "Ipotifoliyo yakho inyuke nge-{percent} namhlanje",
+  "portfolioMoveDown": "Ipotifoliyo yakho yehle nge-{percent} namhlanje",
+  "whatIfTitle": "Kunjani ukuba ubutyalile?",
+  "whatIfAmount": "Isixa",
+  "whatIfResult": "{amount} etyalwe (ixesha: {period}) ngoku ibiya kuba nexabiso",
+  "whatIfNote": "Isekelwe kwixabiso lesabelo kuphela: ii-dividend, iifizi neerhafu azibandakanywanga. Iingeniso zangaphambili azixeli kwangaphambili ezizayo.",
+  "watchShare": "Yabelana ngoluhlu",
+  "watchImport": "Yongeza ii-ticker",
+  "watchImportHint": "Ncamathisela ii-ticker ezahlulwe ngeekoma, izithuba okanye imigca emitsha – umzekelo, uluhlu omnye umntu awabelane nawe ngalo.",
+  "watchImported": "{count, plural, =0{Akukho zabelo zintsha} =1{Kongezwe isabelo esinye} other{Kongezwe izabelo ezi-{count}}}"
 }

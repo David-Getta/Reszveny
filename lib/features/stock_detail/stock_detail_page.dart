@@ -33,6 +33,7 @@ import 'widgets/section_card.dart';
 import 'widgets/returns_strip.dart';
 import 'widgets/statements_table.dart';
 import 'widgets/week52_range.dart';
+import 'widgets/what_if_card.dart';
 import '../../widgets/centered_scroll.dart';
 
 /// A részletes nézet: minden tudnivaló egy részvényről, szekciókra bontva.
@@ -315,6 +316,9 @@ class _DetailsBody extends StatelessWidget {
                 ),
               ),
       ),
+      // „Mi lett volna, ha…” 1, 3 vagy 5 éve befektetem?
+      if (d.history != null && err(DetailSection.chart) == null)
+        WhatIfCard(history: d.history!, currency: cur, fmt: fmt),
 
       // Árfolyam
       SectionCard(

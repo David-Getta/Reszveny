@@ -2351,4 +2351,61 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Li salnameyê zêde bike (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Hişyariya portfolyoyê';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Agahdariyek dema ku tevahiya portfolyoya te di rojekê de ev qas diguhere.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Girtî';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Portfolyoya te îro $percent bilind bû';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Portfolyoya te îro $percent daket';
+  }
+
+  @override
+  String get whatIfTitle => 'Ger te veberhênan kiriba?';
+
+  @override
+  String get whatIfAmount => 'Mîqdar';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount ya ku $period berê hatibû veberhênan, îro dê bihêja';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Tenê li ser bihayê pişkê ye: dîvîdend, xerc û bac ne tê de ne. Qezencên berê pêşerojê pêşbînî nakin.';
+
+  @override
+  String get watchShare => 'Lîsteyê parve bike';
+
+  @override
+  String get watchImport => 'Sembolên pişkan zêde bike';
+
+  @override
+  String get watchImportHint =>
+      'Sembolên pişkan bi bêhnok, valahî an rêzên nû veqetandî bixe – wek mînak lîsteyek ku kesekî bi te re parve kiriye.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pişk hatin zêdekirin',
+      one: '1 pişk hat zêdekirin',
+      zero: 'Pişkên nû tune ne',
+    );
+    return '$_temp0';
+  }
 }

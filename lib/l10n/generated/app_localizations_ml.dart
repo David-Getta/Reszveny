@@ -2359,4 +2359,61 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'കലണ്ടറിലേക്ക് ചേർക്കുക (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'പോർട്ട്‌ഫോളിയോ അലേർട്ട്';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'നിങ്ങളുടെ മുഴുവൻ പോർട്ട്‌ഫോളിയോയും ഒരു ദിവസം ഇത്രയും ചാഞ്ചാടുമ്പോൾ ഒരു അറിയിപ്പ്.';
+
+  @override
+  String get portfolioMoveAlertOff => 'ഓഫ്';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'നിങ്ങളുടെ പോർട്ട്‌ഫോളിയോ ഇന്ന് $percent ഉയർന്നു';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'നിങ്ങളുടെ പോർട്ട്‌ഫോളിയോ ഇന്ന് $percent ഇടിഞ്ഞു';
+  }
+
+  @override
+  String get whatIfTitle => 'നിക്ഷേപിച്ചിരുന്നെങ്കിൽ?';
+
+  @override
+  String get whatIfAmount => 'തുക';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$period മുമ്പ് നിക്ഷേപിച്ച $amount ഇന്ന് ആകുമായിരുന്നു';
+  }
+
+  @override
+  String get whatIfNote =>
+      'ഓഹരി വിലയെ മാത്രം അടിസ്ഥാനമാക്കി: ലാഭവിഹിതം, ഫീസ്, നികുതി എന്നിവ ഉൾപ്പെടുന്നില്ല. മുൻകാല വരുമാനം ഭാവി വരുമാനം പ്രവചിക്കുന്നില്ല.';
+
+  @override
+  String get watchShare => 'ലിസ്റ്റ് പങ്കിടുക';
+
+  @override
+  String get watchImport => 'ടിക്കറുകൾ ചേർക്കുക';
+
+  @override
+  String get watchImportHint =>
+      'കോമ, സ്‌പെയ്‌സ് അല്ലെങ്കിൽ പുതിയ വരി ഉപയോഗിച്ച് വേർതിരിച്ച ടിക്കറുകൾ ഒട്ടിക്കുക – ഉദാഹരണത്തിന്, ആരെങ്കിലും നിങ്ങളുമായി പങ്കിട്ട ലിസ്റ്റ്.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ഓഹരികൾ ചേർത്തു',
+      one: '1 ഓഹരി ചേർത്തു',
+      zero: 'പുതിയ ഓഹരികളൊന്നുമില്ല',
+    );
+    return '$_temp0';
+  }
 }

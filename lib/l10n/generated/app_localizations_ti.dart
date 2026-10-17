@@ -2312,4 +2312,61 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'ናብ ዓውደ ኣዋርሕ ወስኽ (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'ናይ ፖርትፎሊዮ መጠንቀቕታ';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'ኩሉ ፖርትፎሊዮኻ ኣብ ሓደ መዓልቲ ክንድዚ ምስ ዝንቀሳቐስ መፍለጢ።';
+
+  @override
+  String get portfolioMoveAlertOff => 'ጠፊኡ';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'ፖርትፎሊዮኻ ሎሚ $percent ወሲኹ';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'ፖርትፎሊዮኻ ሎሚ $percent ጎዲሉ';
+  }
+
+  @override
+  String get whatIfTitle => 'ኢንቨስት እንተትገብሩ እንታይ ምኾነ?';
+
+  @override
+  String get whatIfAmount => 'መጠን';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return 'ቅድሚ $period ዝተወፈረ $amount ሎሚ ዝህልዎ ዋጋ';
+  }
+
+  @override
+  String get whatIfNote =>
+      'ኣብ ዋጋ ኣክስዮን ጥራይ ዝተመስረተ፤ ብጽሒት ትርፊ፣ ክፍሊታትን ግብርታትን ኣይተኣተዉን። ዝሓለፈ ኣታዊ ንመጻኢ ኣይትንብዮን።';
+
+  @override
+  String get watchShare => 'ዝርዝር ኣካፍል';
+
+  @override
+  String get watchImport => 'ምልክታት ኣክሲዮን ወስኽ';
+
+  @override
+  String get watchImportHint =>
+      'ብኮማ፣ ባዶ ቦታ ወይ ሓድሽ መስመር ዝተፈላለዩ ምልክታት ኣክሲዮን ለጥፍ – ንኣብነት ሓደ ሰብ ዘካፈለካ ዝርዝር።';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ኣክሲዮናት ተወሲኾም',
+      one: '1 ኣክሲዮን ተወሲኹ',
+      zero: 'ሓድሽ ኣክሲዮን የለን',
+    );
+    return '$_temp0';
+  }
 }

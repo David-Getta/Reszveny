@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Senenama goş (.ics)",
   "portfolioAnnualReturn": "Ýyllyk girdejililik",
   "portfolioPerYear": "{percent} / ýyl",
-  "portfolioAnnualReturnHint": "Pul akymlary boýunça agramlandyrylan ýyllyk girdejililik (XIRR): haçan satyn alandygyňyzy we satandygyňyzy hasaba alýar, şonuň üçin soňra goşulan pul ony ýoýmaýar. Ilkinji satyn alşyňyza azyndan bir ýyl dolanda görkezilýär; diwidendler goşulmaýar."
+  "portfolioAnnualReturnHint": "Pul akymlary boýunça agramlandyrylan ýyllyk girdejililik (XIRR): haçan satyn alandygyňyzy we satandygyňyzy hasaba alýar, şonuň üçin soňra goşulan pul ony ýoýmaýar. Ilkinji satyn alşyňyza azyndan bir ýyl dolanda görkezilýär; diwidendler goşulmaýar.",
+  "portfolioMoveAlertTitle": "Portfel duýduryşy",
+  "portfolioMoveAlertSubtitle": "Tutuş portfeliňiz bir günde şunça üýtgände duýduryş.",
+  "portfolioMoveAlertOff": "Öçük",
+  "portfolioMoveUp": "Portfeliňiz şu gün {percent} ýokarlandy",
+  "portfolioMoveDown": "Portfeliňiz şu gün {percent} aşaklady",
+  "whatIfTitle": "Maýa goýan bolsadyňyz näme bolardy?",
+  "whatIfAmount": "Mukdar",
+  "whatIfResult": "{period} öň goýlan {amount} şu gün şunça bolardy",
+  "whatIfNote": "Diňe paýnamanyň bahasyna esaslanýar: diwidendler, ýygymlar we salgytlar girizilmedi. Geçmişdäki girdeji geljekdäkini çaklamaýar.",
+  "watchShare": "Sanawy paýlaş",
+  "watchImport": "Tiker goş",
+  "watchImportHint": "Tikerleri otur, boşluk ýa-da täze setir bilen bölüp goý – meselem, kimdir biriniň saňa paýlaşan sanawyny.",
+  "watchImported": "{count, plural, =0{Täze paýnama ýok} =1{1 paýnama goşuldy} other{{count} paýnama goşuldy}}"
 }

@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Pridėti į kalendorių (.ics)",
   "portfolioAnnualReturn": "Metinė grąža",
   "portfolioPerYear": "{percent} per metus",
-  "portfolioAnnualReturnHint": "Pinigais svertinė metinė grąža (XIRR): atsižvelgia į tai, kada pirkote ir pardavėte, todėl vėliau pridėti pinigai jos neiškreipia. Rodoma, kai nuo pirmojo jūsų pirkimo praeina bent metai; dividendai neįtraukti."
+  "portfolioAnnualReturnHint": "Pinigais svertinė metinė grąža (XIRR): atsižvelgia į tai, kada pirkote ir pardavėte, todėl vėliau pridėti pinigai jos neiškreipia. Rodoma, kai nuo pirmojo jūsų pirkimo praeina bent metai; dividendai neįtraukti.",
+  "portfolioMoveAlertTitle": "Portfelio įspėjimas",
+  "portfolioMoveAlertSubtitle": "Pranešimas, kai visas tavo portfelis per dieną pasikeičia tiek.",
+  "portfolioMoveAlertOff": "Išjungta",
+  "portfolioMoveUp": "Tavo portfelis šiandien pakilo {percent}",
+  "portfolioMoveDown": "Tavo portfelis šiandien nukrito {percent}",
+  "whatIfTitle": "O jeigu būtumėte investavę?",
+  "whatIfAmount": "Suma",
+  "whatIfResult": "{amount} investicija (laikotarpis: {period}) šiandien būtų verta",
+  "whatIfNote": "Tik pagal akcijos kainą: dividendai, mokesčiai ir komisiniai neįtraukti. Ankstesnė grąža neprognozuoja būsimos.",
+  "watchShare": "Bendrinti sąrašą",
+  "watchImport": "Pridėti simbolius",
+  "watchImportHint": "Įklijuokite akcijų simbolius, atskirtus kableliais, tarpais arba naujomis eilutėmis – pavyzdžiui, sąrašą, kuriuo kas nors su jumis pasidalijo.",
+  "watchImported": "{count, plural, =0{Naujų akcijų nėra} =1{Pridėta 1 akcija} one{Pridėta {count} akcija} few{Pridėtos {count} akcijos} many{Pridėta {count} akcijos} other{Pridėta {count} akcijų}}"
 }

@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Rnu ɣer uwitay (.ics)",
   "portfolioAnnualReturn": "Afaris n useggas",
   "portfolioPerYear": "{percent} / aseggas",
-  "portfolioAnnualReturnHint": "Afaris n useggas yettwaktalen s yidrimen (XIRR): yettak azal i wakud deg i d-teɣiḍ akked wakud deg i tzenzeḍ, ihi idrimen i d-ternuḍ ar zdat ur t-ssexsaren ara. Yettban mi ara iɛeddi useggas ma drus seg usaɣ-ik amezwaru; dividand ur yettwasiden ara."
+  "portfolioAnnualReturnHint": "Afaris n useggas yettwaktalen s yidrimen (XIRR): yettak azal i wakud deg i d-teɣiḍ akked wakud deg i tzenzeḍ, ihi idrimen i d-ternuḍ ar zdat ur t-ssexsaren ara. Yettban mi ara iɛeddi useggas ma drus seg usaɣ-ik amezwaru; dividand ur yettwasiden ara.",
+  "portfolioMoveAlertTitle": "Alɣu n uportfolio",
+  "portfolioMoveAlertSubtitle": "Alɣu mi ara yembeddel uportfolio-k akk s waya deg yiwen n wass.",
+  "portfolioMoveAlertOff": "Yensa",
+  "portfolioMoveUp": "Aportfolio-k yuli s {percent} ass-a",
+  "portfolioMoveDown": "Aportfolio-k yeɣli s {percent} ass-a",
+  "whatIfTitle": "Ma lemmer tserseḍ idrimen?",
+  "whatIfAmount": "Azal",
+  "whatIfResult": "{amount} yettwasersen send {period} ad yili wazal-nsen ass-a",
+  "whatIfNote": "Yebna kan ɣef ssuma n tasɣunt: dividand, ixelṣen d tbaḍin ur dduklen ara. Igmaḍ yezrin ur d-sbeggnen ara wid ara d-yasen.",
+  "watchShare": "Bḍu tabdart",
+  "watchImport": "Rnu izamulen n uksyun",
+  "watchImportHint": "Senṭeḍ izamulen n uksyun yettwafernen s tfeṛḍin, s tallunin neɣ s yizirigen imaynuten – amedya, tabdart i yebḍa yid-k yiwen.",
+  "watchImported": "{count, plural, =0{Ulac aksyun amaynut} =1{Yettwarna-d 1 n uksyun} other{Ttwarnan-d {count} n yiksyunen}}"
 }

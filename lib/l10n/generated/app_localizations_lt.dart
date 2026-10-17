@@ -2413,4 +2413,63 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Pridėti į kalendorių (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Portfelio įspėjimas';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Pranešimas, kai visas tavo portfelis per dieną pasikeičia tiek.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Išjungta';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Tavo portfelis šiandien pakilo $percent';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Tavo portfelis šiandien nukrito $percent';
+  }
+
+  @override
+  String get whatIfTitle => 'O jeigu būtumėte investavę?';
+
+  @override
+  String get whatIfAmount => 'Suma';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount investicija (laikotarpis: $period) šiandien būtų verta';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Tik pagal akcijos kainą: dividendai, mokesčiai ir komisiniai neįtraukti. Ankstesnė grąža neprognozuoja būsimos.';
+
+  @override
+  String get watchShare => 'Bendrinti sąrašą';
+
+  @override
+  String get watchImport => 'Pridėti simbolius';
+
+  @override
+  String get watchImportHint =>
+      'Įklijuokite akcijų simbolius, atskirtus kableliais, tarpais arba naujomis eilutėmis – pavyzdžiui, sąrašą, kuriuo kas nors su jumis pasidalijo.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Pridėta $count akcijų',
+      many: 'Pridėta $count akcijos',
+      few: 'Pridėtos $count akcijos',
+      one: 'Pridėta $count akcija',
+      zero: 'Naujų akcijų nėra',
+    );
+    return '$_temp0';
+  }
 }

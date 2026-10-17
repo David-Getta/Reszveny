@@ -2353,4 +2353,61 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Tambahkeun ka kalénder (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Béwara portofolio';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Béwara nalika sakabéh portofolio anjeun gerak sakitu dina sapoé.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Pareum';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Portofolio anjeun naék $percent poé ieu';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Portofolio anjeun turun $percent poé ieu';
+  }
+
+  @override
+  String get whatIfTitle => 'Kumaha upami anjeun investasi?';
+
+  @override
+  String get whatIfAmount => 'Jumlah';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount anu diinvestasikeun $period ka tukang ayeuna hargana';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Ngan dumasar kana harga saham: dividén, biaya, jeung pajeg teu kaasup. Hasil ti tukang henteu ngaramal hasil ka hareup.';
+
+  @override
+  String get watchShare => 'Bagikeun daptar';
+
+  @override
+  String get watchImport => 'Tambahkeun kode saham';
+
+  @override
+  String get watchImportHint =>
+      'Témpélkeun kode saham anu dipisahkeun ku koma, spasi atawa baris anyar – contona daptar anu dibagikeun ku batur ka anjeun.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count saham ditambahkeun',
+      one: '1 saham ditambahkeun',
+      zero: 'Teu aya saham anyar',
+    );
+    return '$_temp0';
+  }
 }

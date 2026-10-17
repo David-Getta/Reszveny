@@ -2391,4 +2391,62 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Dodaj u kalendar (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Upozorenje za portfolio';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Obavještenje kada se cijeli vaš portfolio pomjeri ovoliko u jednom danu.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Isključeno';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Vaš portfolio je danas porastao za $percent';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Vaš portfolio je danas pao za $percent';
+  }
+
+  @override
+  String get whatIfTitle => 'Šta da ste uložili?';
+
+  @override
+  String get whatIfAmount => 'Iznos';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return 'Ulaganje od $amount (period: $period) danas bi vrijedilo';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Samo na osnovu cijene dionice: dividende, naknade i porezi nisu uključeni. Prošli prinosi ne predviđaju buduće.';
+
+  @override
+  String get watchShare => 'Podijeli listu';
+
+  @override
+  String get watchImport => 'Dodaj tiker simbole';
+
+  @override
+  String get watchImportHint =>
+      'Zalijepite tiker simbole odvojene zarezima, razmacima ili novim redovima – na primjer listu koju je neko podijelio s vama.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Dodano je $count dionica',
+      few: 'Dodane su $count dionice',
+      one: 'Dodana je $count dionica',
+      zero: 'Nema novih dionica',
+    );
+    return '$_temp0';
+  }
 }

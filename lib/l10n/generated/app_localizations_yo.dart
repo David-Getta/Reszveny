@@ -2348,4 +2348,61 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Fi kún kàlẹ́ńdà (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Ìkìlọ̀ pọ́tífólíò';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Ìfitónilétí nígbà tí gbogbo pọ́tífólíò rẹ bá yí padà tó báyìí ní ọjọ́ kan.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Pípa';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Pọ́tífólíò rẹ ti gòkè $percent lónìí';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Pọ́tífólíò rẹ ti lọ sílẹ̀ $percent lónìí';
+  }
+
+  @override
+  String get whatIfTitle => 'Tí o bá ti dókòwò ńkọ́?';
+
+  @override
+  String get whatIfAmount => 'Iye owó';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount tí o dókòwò ní $period sẹ́yìn ìbá tó lónìí';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Ó dá lórí iye owó ìpín nìkan: èrè ìpín, owó iṣẹ́ àti owó orí kò sí nínú rẹ̀. Èrè àtẹ̀yìnwá kò sọ tọjọ́ iwájú.';
+
+  @override
+  String get watchShare => 'Pín àkójọ náà';
+
+  @override
+  String get watchImport => 'Ṣàfikún àmì ìpín';
+
+  @override
+  String get watchImportHint =>
+      'Lẹ àwọn àmì ìpín tí a fi kọ́mà, àlàfo tàbí ìlà tuntun yà sọ́tọ̀ – fún àpẹẹrẹ, àkójọ tí ẹnìkan pín fún ọ.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'A ti fi ìpín $count kún un',
+      one: 'A ti fi ìpín 1 kún un',
+      zero: 'Kò sí ìpín tuntun',
+    );
+    return '$_temp0';
+  }
 }

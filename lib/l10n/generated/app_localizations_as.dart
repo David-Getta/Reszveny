@@ -2348,4 +2348,61 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'কেলেণ্ডাৰত যোগ কৰক (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'পৰ্টফ\'লিঅ\' সতৰ্কবাণী';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'আপোনাৰ সমগ্ৰ পৰ্টফ\'লিঅ\' এদিনত ইমানখিনি লৰচৰ হ\'লে এটা জাননী।';
+
+  @override
+  String get portfolioMoveAlertOff => 'অফ';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'আজি আপোনাৰ পৰ্টফ\'লিঅ\' $percent বাঢ়িছে';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'আজি আপোনাৰ পৰ্টফ\'লিঅ\' $percent কমিছে';
+  }
+
+  @override
+  String get whatIfTitle => 'যদি বিনিয়োগ কৰিলেহেঁতেন?';
+
+  @override
+  String get whatIfAmount => 'পৰিমাণ';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$period আগতে বিনিয়োগ কৰা $amount আজি হ\'লহেঁতেন';
+  }
+
+  @override
+  String get whatIfNote =>
+      'কেৱল শ্বেয়াৰৰ দামৰ ওপৰত ভিত্তি কৰি: লভ্যাংশ, মাচুল আৰু কৰ অন্তৰ্ভুক্ত নহয়। অতীতৰ লাভে ভৱিষ্যতৰ লাভৰ পূৰ্বাভাস নিদিয়ে।';
+
+  @override
+  String get watchShare => 'তালিকাখন শ্বেয়াৰ কৰক';
+
+  @override
+  String get watchImport => 'টিকাৰ যোগ কৰক';
+
+  @override
+  String get watchImportHint =>
+      'কমা, স্পেচ বা নতুন শাৰীৰে পৃথক কৰি টিকাৰবোৰ পেষ্ট কৰক – উদাহৰণস্বৰূপে, কোনোবাই আপোনাক শ্বেয়াৰ কৰা এখন তালিকা।';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countটা শ্বেয়াৰ যোগ কৰা হ\'ল',
+      one: '1টা শ্বেয়াৰ যোগ কৰা হ\'ল',
+      zero: 'কোনো নতুন শ্বেয়াৰ নাই',
+    );
+    return '$_temp0';
+  }
 }

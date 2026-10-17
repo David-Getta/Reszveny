@@ -2336,4 +2336,61 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Paas kalandiyẽ pʋgẽ (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Portfolio kɩbare';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Gũusgu f portfolio wã fãa sã n toeem woto rasem a yembr pʋgẽ.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Kisgame';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'F portfolio wã zĩiga $percent rũnda';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'F portfolio wã sigame $percent rũnda';
+  }
+
+  @override
+  String get whatIfTitle => 'Fo sã n da kẽes ligdi?';
+
+  @override
+  String get whatIfAmount => 'Ligd sõore';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return 'Fo sã n da kẽes $amount $period pʋgẽ, rũndã a na n yaa';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Yaa aksyõ yaoobã bal zugu: dividãnd, ligd sẽn yaod la lampo pa be ye. Pĩnd yɩɩbã pa wilgd beoog yɩɩbã ye.';
+
+  @override
+  String get watchShare => 'Pʋɩ liste wã';
+
+  @override
+  String get watchImport => 'Paas aksiõ bãnde';
+
+  @override
+  String get watchImportHint =>
+      'Ning aksiõ bãnde n welg-b ne virgil, zĩ-vɩɩlg bɩ sẽ-paalga – wala liste ninga sẽn pʋɩ-a ne foo.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'B paasa aksiõ $count',
+      one: 'B paasa aksiõ a yembre',
+      zero: 'Aksiõ paalg ka be ye',
+    );
+    return '$_temp0';
+  }
 }

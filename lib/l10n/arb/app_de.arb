@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Zum Kalender hinzufügen (.ics)",
   "portfolioAnnualReturn": "Jahresrendite",
   "portfolioPerYear": "{percent} / Jahr",
-  "portfolioAnnualReturnHint": "Geldgewichtete Jahresrendite (XIRR): berücksichtigt, wann du gekauft und verkauft hast, sodass später eingezahltes Geld sie nicht verzerrt. Wird angezeigt, sobald dein erster Kauf mindestens ein Jahr zurückliegt; Dividenden sind nicht enthalten."
+  "portfolioAnnualReturnHint": "Geldgewichtete Jahresrendite (XIRR): berücksichtigt, wann du gekauft und verkauft hast, sodass später eingezahltes Geld sie nicht verzerrt. Wird angezeigt, sobald dein erster Kauf mindestens ein Jahr zurückliegt; Dividenden sind nicht enthalten.",
+  "portfolioMoveAlertTitle": "Portfolio-Alarm",
+  "portfolioMoveAlertSubtitle": "Eine Benachrichtigung, wenn sich dein gesamtes Portfolio an einem Tag so stark bewegt.",
+  "portfolioMoveAlertOff": "Aus",
+  "portfolioMoveUp": "Dein Portfolio liegt heute {percent} im Plus",
+  "portfolioMoveDown": "Dein Portfolio liegt heute {percent} im Minus",
+  "whatIfTitle": "Was wäre, wenn du investiert hättest?",
+  "whatIfAmount": "Betrag",
+  "whatIfResult": "{amount}, {period} lang investiert, wären heute wert",
+  "whatIfNote": "Nur auf Basis des Aktienkurses: Dividenden, Gebühren und Steuern sind nicht berücksichtigt. Vergangene Renditen sagen nichts über künftige aus.",
+  "watchShare": "Liste teilen",
+  "watchImport": "Ticker hinzufügen",
+  "watchImportHint": "Tickersymbole durch Kommas, Leerzeichen oder Zeilenumbrüche getrennt einfügen – zum Beispiel eine Liste, die jemand mit dir geteilt hat.",
+  "watchImported": "{count, plural, =0{Keine neuen Aktien} =1{1 Aktie hinzugefügt} other{{count} Aktien hinzugefügt}}"
 }

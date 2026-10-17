@@ -2360,4 +2360,61 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Idugang sa kalendaryo (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Alerto sa portfolio';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Usa ka pahibalo kon ang tibuok nimong portfolio molihok ingon niini kadako sulod sa usa ka adlaw.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Gipalong';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Mitaas og $percent ang imong portfolio karon';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Mius-os og $percent ang imong portfolio karon';
+  }
+
+  @override
+  String get whatIfTitle => 'Unsa kaha kon nag-invest ka?';
+
+  @override
+  String get whatIfAmount => 'Kantidad';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return 'Ang $amount nga gi-invest $period na ang milabay nagkantidad unta karon og';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Base lang sa presyo sa share: wala maapil ang dibidendo, bayronon ug buhis. Ang miaging kita dili magtagna sa umaabot.';
+
+  @override
+  String get watchShare => 'I-share ang lista';
+
+  @override
+  String get watchImport => 'Pagdugang og mga ticker';
+
+  @override
+  String get watchImportHint =>
+      'I-paste ang mga ticker nga gibulag sa comma, space o bag-ong linya – pananglitan, usa ka lista nga gi-share kanimo sa usa ka tawo.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nadugang ang $count ka stock',
+      one: 'Nadugang ang 1 ka stock',
+      zero: 'Walay bag-ong stock',
+    );
+    return '$_temp0';
+  }
 }

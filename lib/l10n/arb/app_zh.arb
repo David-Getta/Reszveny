@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "添加到日历 (.ics)",
   "portfolioAnnualReturn": "年化收益率",
   "portfolioPerYear": "{percent} / 年",
-  "portfolioAnnualReturnHint": "资金加权年化收益率（XIRR）：会考虑你买入和卖出的时间，因此后来追加的资金不会造成偏差。首次买入满一年后显示；不含股息。"
+  "portfolioAnnualReturnHint": "资金加权年化收益率（XIRR）：会考虑你买入和卖出的时间，因此后来追加的资金不会造成偏差。首次买入满一年后显示；不含股息。",
+  "portfolioMoveAlertTitle": "持仓异动提醒",
+  "portfolioMoveAlertSubtitle": "当你的整体持仓单日波动达到此幅度时发送通知。",
+  "portfolioMoveAlertOff": "关闭",
+  "portfolioMoveUp": "你的持仓今日上涨 {percent}",
+  "portfolioMoveDown": "你的持仓今日下跌 {percent}",
+  "whatIfTitle": "如果当初投资了呢？",
+  "whatIfAmount": "金额",
+  "whatIfResult": "{period}前投资的{amount}，现在价值",
+  "whatIfNote": "仅基于股价计算：不含股息、费用和税费。过往回报不代表未来表现。",
+  "watchShare": "分享列表",
+  "watchImport": "添加股票代码",
+  "watchImportHint": "粘贴以逗号、空格或换行分隔的股票代码，例如别人分享给你的列表。",
+  "watchImported": "{count, plural, =0{没有新股票} =1{已添加 1 只股票} other{已添加 {count} 只股票}}"
 }

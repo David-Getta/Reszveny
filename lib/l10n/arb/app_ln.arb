@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Bakisa na manaka (.ics)",
   "portfolioAnnualReturn": "Litomba ya mobu",
   "portfolioPerYear": "{percent} / mobu",
-  "portfolioAnnualReturnHint": "Litomba ya mobu oyo epimami na mbɔngɔ (XIRR): etalaka ntango osombaki mpe otekaki, yango wana mbɔngɔ oyo obakisaki na nsima ebebisaka yango te. Emonisamaka soki bosombi na yo ya liboso ekoki ata mobu moko; ba-dividende ezali kati te."
+  "portfolioAnnualReturnHint": "Litomba ya mobu oyo epimami na mbɔngɔ (XIRR): etalaka ntango osombaki mpe otekaki, yango wana mbɔngɔ oyo obakisaki na nsima ebebisaka yango te. Emonisamaka soki bosombi na yo ya liboso ekoki ata mobu moko; ba-dividende ezali kati te.",
+  "portfolioMoveAlertTitle": "Likebisi ya portefeuille",
+  "portfolioMoveAlertSubtitle": "Liyebisi ntango portefeuille na yo mobimba eningani boye na mokolo moko.",
+  "portfolioMoveAlertOff": "Ekangami",
+  "portfolioMoveUp": "Portefeuille na yo emati {percent} lɛlɔ",
+  "portfolioMoveDown": "Portefeuille na yo ekiti {percent} lɛlɔ",
+  "whatIfTitle": "Soki otiaki mbɔngɔ?",
+  "whatIfAmount": "Motuya",
+  "whatIfResult": "Soki otiaki {amount} {period} eleki, lelo ekozala na motuya ya",
+  "whatIfNote": "Etongami kaka na ntalo ya action: ba-dividende, ba-frais mpe mpako ezali te. Matomba ya kala elakisaka te oyo ya mikolo ekoya.",
+  "watchShare": "Kabola liste",
+  "watchImport": "Bakisa bilembo ya ticker",
+  "watchImportHint": "Tya bilembo ya ticker oyo ekabwani na virgule, esika ya pamba to molɔngɔ ya sika – na ndakisa, liste oyo moto moko akabolelaki yo.",
+  "watchImported": "{count, plural, =0{Aksyo ya sika ezali te} =1{Aksyo 1 ebakisami} other{Baaksyo {count} ebakisami}}"
 }

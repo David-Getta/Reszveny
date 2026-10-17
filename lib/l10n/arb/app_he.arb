@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "הוספה ליומן (.ics)",
   "portfolioAnnualReturn": "תשואה שנתית",
   "portfolioPerYear": "{percent} לשנה",
-  "portfolioAnnualReturnHint": "תשואה שנתית משוקללת לפי תזרימי הכסף (XIRR): מתחשבת במועדי הקנייה והמכירה, כך שכסף שנוסף מאוחר יותר לא מעוות אותה. מוצגת לאחר שחלפה לפחות שנה מהרכישה הראשונה שלך; דיבידנדים אינם נכללים."
+  "portfolioAnnualReturnHint": "תשואה שנתית משוקללת לפי תזרימי הכסף (XIRR): מתחשבת במועדי הקנייה והמכירה, כך שכסף שנוסף מאוחר יותר לא מעוות אותה. מוצגת לאחר שחלפה לפחות שנה מהרכישה הראשונה שלך; דיבידנדים אינם נכללים.",
+  "portfolioMoveAlertTitle": "התראת תיק",
+  "portfolioMoveAlertSubtitle": "התראה כשכל התיק שלך זז בשיעור כזה ביום אחד.",
+  "portfolioMoveAlertOff": "כבוי",
+  "portfolioMoveUp": "התיק שלך עלה היום ב-{percent}",
+  "portfolioMoveDown": "התיק שלך ירד היום ב-{percent}",
+  "whatIfTitle": "מה אילו השקעת?",
+  "whatIfAmount": "סכום",
+  "whatIfResult": "{amount} שהושקעו לפני {period} היו שווים היום",
+  "whatIfNote": "מבוסס על מחיר המניה בלבד: דיבידנדים, עמלות ומסים אינם כלולים. תשואות עבר אינן מנבאות תשואות עתידיות.",
+  "watchShare": "שיתוף הרשימה",
+  "watchImport": "הוספת סימולים",
+  "watchImportHint": "יש להדביק סימולי מניות מופרדים בפסיקים, ברווחים או בשורות חדשות – למשל רשימה שמישהו שיתף איתך.",
+  "watchImported": "{count, plural, =0{אין מניות חדשות} =1{נוספה מניה אחת} other{נוספו {count} מניות}}"
 }

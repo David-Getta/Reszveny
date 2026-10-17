@@ -2356,4 +2356,61 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Idagdag sa kalendaryo (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Alerto sa portfolio';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Isang notification kapag gumalaw nang ganito kalaki ang buong portfolio mo sa isang araw.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Naka-off';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Tumaas nang $percent ang portfolio mo ngayon';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Bumaba nang $percent ang portfolio mo ngayon';
+  }
+
+  @override
+  String get whatIfTitle => 'Paano kung nag-invest ka?';
+
+  @override
+  String get whatIfAmount => 'Halaga';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return 'Ang $amount na in-invest $period na ang nakalipas ay nagkakahalaga sana ngayon ng';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Batay lang sa presyo ng share: hindi kasama ang dibidendo, bayarin at buwis. Hindi hinuhulaan ng mga nakaraang kita ang mga susunod.';
+
+  @override
+  String get watchShare => 'Ibahagi ang listahan';
+
+  @override
+  String get watchImport => 'Magdagdag ng mga ticker';
+
+  @override
+  String get watchImportHint =>
+      'Mag-paste ng mga ticker na pinaghihiwalay ng kuwit, espasyo o bagong linya – halimbawa, isang listahang ibinahagi sa iyo ng iba.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Naidagdag ang $count stock',
+      one: 'Naidagdag ang 1 stock',
+      zero: 'Walang bagong stock',
+    );
+    return '$_temp0';
+  }
 }

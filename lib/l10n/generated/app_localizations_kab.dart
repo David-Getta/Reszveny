@@ -2348,4 +2348,61 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Rnu ɣer uwitay (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Alɣu n uportfolio';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Alɣu mi ara yembeddel uportfolio-k akk s waya deg yiwen n wass.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Yensa';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Aportfolio-k yuli s $percent ass-a';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Aportfolio-k yeɣli s $percent ass-a';
+  }
+
+  @override
+  String get whatIfTitle => 'Ma lemmer tserseḍ idrimen?';
+
+  @override
+  String get whatIfAmount => 'Azal';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount yettwasersen send $period ad yili wazal-nsen ass-a';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Yebna kan ɣef ssuma n tasɣunt: dividand, ixelṣen d tbaḍin ur dduklen ara. Igmaḍ yezrin ur d-sbeggnen ara wid ara d-yasen.';
+
+  @override
+  String get watchShare => 'Bḍu tabdart';
+
+  @override
+  String get watchImport => 'Rnu izamulen n uksyun';
+
+  @override
+  String get watchImportHint =>
+      'Senṭeḍ izamulen n uksyun yettwafernen s tfeṛḍin, s tallunin neɣ s yizirigen imaynuten – amedya, tabdart i yebḍa yid-k yiwen.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ttwarnan-d $count n yiksyunen',
+      one: 'Yettwarna-d 1 n uksyun',
+      zero: 'Ulac aksyun amaynut',
+    );
+    return '$_temp0';
+  }
 }

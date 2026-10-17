@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Bueja mu kalandriye (.ics)",
   "portfolioAnnualReturn": "Dipeta dia tshidimu",
   "portfolioPerYear": "{percent} / tshidimu",
-  "portfolioAnnualReturnHint": "Dipeta dia tshidimu didibu bapime ne mfranga (XIRR): didi ditangila tshikondo tshiwakasumba ne tshiwakasumbisha, nunku mfranga yuudi musakidile pashishe kayena idinyanga to. Didi dimweneka padi tshisumbu tshiebe tshia kumpala tshikumbaja tshidimu tshimue to kupita; ba-dividende kabavuamu to."
+  "portfolioAnnualReturnHint": "Dipeta dia tshidimu didibu bapime ne mfranga (XIRR): didi ditangila tshikondo tshiwakasumba ne tshiwakasumbisha, nunku mfranga yuudi musakidile pashishe kayena idinyanga to. Didi dimweneka padi tshisumbu tshiebe tshia kumpala tshikumbaja tshidimu tshimue to kupita; ba-dividende kabavuamu to.",
+  "portfolioMoveAlertTitle": "Dimanyisha dia portefeuille",
+  "portfolioMoveAlertSubtitle": "Dimanyisha padi portefeuille webe yonso ishintuluka nunku mu dituku dimue.",
+  "portfolioMoveAlertOff": "Mijima",
+  "portfolioMoveUp": "Portefeuille webe mubande {percent} lelu",
+  "portfolioMoveDown": "Portefeuille webe mupuekele {percent} lelu",
+  "whatIfTitle": "Bu wewe muikale muteke mfranga?",
+  "whatIfAmount": "Bungi",
+  "whatIfResult": "Bu wewe muikale muteke {amount} mu tshikondo tshia {period}, lelu bivua ne mushinga wa",
+  "whatIfNote": "Bidi bishindamene anu pa mushinga wa action: ba-dividende, makuta a mudimu ne bitadi kabiyi mu bualu ebu to. Bipeta bia kale kabiyi bileja bia kumpala to.",
+  "watchShare": "Abanya liste",
+  "watchImport": "Bueja bimanyinu bia ticker",
+  "watchImportHint": "Teka bimanyinu bia ticker bitapuluke ne virgule, mpata anyi mulongo mupiamupia – bu mudi liste udi muntu mukuabanyine.",
+  "watchImported": "{count, plural, =0{Kakuena aksio mupiamupia} =1{Aksio 1 yabuejibua} other{Aksio {count} yabuejibua}}"
 }

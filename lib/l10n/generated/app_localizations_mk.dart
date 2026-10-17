@@ -2369,4 +2369,61 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Додај во календар (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Известување за портфолиото';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Известување кога целото твое портфолио ќе се помести толку за еден ден.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Исклучено';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Твоето портфолио денес порасна за $percent';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Твоето портфолио денес падна за $percent';
+  }
+
+  @override
+  String get whatIfTitle => 'Што ако сте инвестирале?';
+
+  @override
+  String get whatIfAmount => 'Износ';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount инвестирани пред $period денес би вределе';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Само врз основа на цената на акцијата: дивидендите, провизиите и даноците не се вклучени. Минатите приноси не ги предвидуваат идните.';
+
+  @override
+  String get watchShare => 'Сподели ја листата';
+
+  @override
+  String get watchImport => 'Додај тикери';
+
+  @override
+  String get watchImportHint =>
+      'Залепи тикери одделени со запирки, празни места или нови редови – на пример листа што некој ја споделил со тебе.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Додадени се $count акции',
+      one: 'Додадена е $count акција',
+      zero: 'Нема нови акции',
+    );
+    return '$_temp0';
+  }
 }

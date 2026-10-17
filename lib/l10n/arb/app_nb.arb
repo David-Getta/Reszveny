@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Legg til i kalender (.ics)",
   "portfolioAnnualReturn": "Årlig avkastning",
   "portfolioPerYear": "{percent} / år",
-  "portfolioAnnualReturnHint": "Pengevektet årlig avkastning (XIRR): tar hensyn til når du kjøpte og solgte, slik at penger som er lagt til senere, ikke forvrenger den. Vises når det første kjøpet ditt er minst ett år gammelt; utbytte er ikke inkludert."
+  "portfolioAnnualReturnHint": "Pengevektet årlig avkastning (XIRR): tar hensyn til når du kjøpte og solgte, slik at penger som er lagt til senere, ikke forvrenger den. Vises når det første kjøpet ditt er minst ett år gammelt; utbytte er ikke inkludert.",
+  "portfolioMoveAlertTitle": "Porteføljevarsel",
+  "portfolioMoveAlertSubtitle": "Et varsel når hele porteføljen din beveger seg så mye på én dag.",
+  "portfolioMoveAlertOff": "Av",
+  "portfolioMoveUp": "Porteføljen din er opp {percent} i dag",
+  "portfolioMoveDown": "Porteføljen din er ned {percent} i dag",
+  "whatIfTitle": "Hva om du hadde investert?",
+  "whatIfAmount": "Beløp",
+  "whatIfResult": "{amount} investert for {period} siden ville i dag vært verdt",
+  "whatIfNote": "Kun basert på aksjekursen: utbytte, gebyrer og skatt er ikke tatt med. Tidligere avkastning forutsier ikke fremtidig avkastning.",
+  "watchShare": "Del listen",
+  "watchImport": "Legg til tickere",
+  "watchImportHint": "Lim inn tickere atskilt med komma, mellomrom eller linjeskift – for eksempel en liste noen har delt med deg.",
+  "watchImported": "{count, plural, =0{Ingen nye aksjer} =1{1 aksje lagt til} other{{count} aksjer lagt til}}"
 }

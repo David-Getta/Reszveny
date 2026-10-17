@@ -2341,4 +2341,61 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'ပြက္ခဒိန်သို့ ထည့်ရန် (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'ပေါ့ဖိုလီယို သတိပေးချက်';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'သင်၏ ပေါ့ဖိုလီယို တစ်ခုလုံး တစ်ရက်အတွင်း ဤမျှ ပြောင်းလဲသည့်အခါ အသိပေးချက်။';
+
+  @override
+  String get portfolioMoveAlertOff => 'ပိတ်';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'သင်၏ ပေါ့ဖိုလီယို ယနေ့ $percent တက်သွားသည်';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'သင်၏ ပေါ့ဖိုလီယို ယနေ့ $percent ကျသွားသည်';
+  }
+
+  @override
+  String get whatIfTitle => 'ရင်းနှီးမြှုပ်နှံခဲ့ရင် ဘယ်လိုဖြစ်မလဲ။';
+
+  @override
+  String get whatIfAmount => 'ပမာဏ';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return 'လွန်ခဲ့သော $periodက ရင်းနှီးခဲ့သော $amount ၏ ယနေ့တန်ဖိုး';
+  }
+
+  @override
+  String get whatIfNote =>
+      'ရှယ်ယာဈေးနှုန်းကိုသာ အခြေခံသည်- အမြတ်ဝေစု၊ ကြေးများနှင့် အခွန်များ မပါဝင်ပါ။ ယခင်အမြတ်များက အနာဂတ်အမြတ်ကို ခန့်မှန်းမပေးပါ။';
+
+  @override
+  String get watchShare => 'စာရင်းကို မျှဝေရန်';
+
+  @override
+  String get watchImport => 'ရှယ်ယာသင်္ကေတများ ထည့်ရန်';
+
+  @override
+  String get watchImportHint =>
+      'ကော်မာ၊ နေရာလွတ် သို့မဟုတ် စာကြောင်းအသစ်ဖြင့် ခွဲထားသော ရှယ်ယာသင်္ကေတများကို ကူးထည့်ပါ – ဥပမာ တစ်စုံတစ်ယောက်က သင့်ထံ မျှဝေထားသော စာရင်း။';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ရှယ်ယာ $count ခု ထည့်ပြီးပါပြီ',
+      one: 'ရှယ်ယာ 1 ခု ထည့်ပြီးပါပြီ',
+      zero: 'ရှယ်ယာအသစ် မရှိပါ',
+    );
+    return '$_temp0';
+  }
 }

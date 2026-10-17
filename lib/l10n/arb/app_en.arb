@@ -1846,5 +1846,56 @@
   "eventsAddToCalendar": "Add to calendar (.ics)",
   "@eventsAddToCalendar": {
     "description": "Tooltip of the button on the Upcoming events page that saves all events as an .ics calendar file."
+  },
+  "portfolioMoveAlertTitle": "Portfolio alert",
+  "portfolioMoveAlertSubtitle": "A notification when your whole portfolio moves this much in a day.",
+  "portfolioMoveAlertOff": "Off",
+  "portfolioMoveUp": "Your portfolio is up {percent} today",
+  "portfolioMoveDown": "Your portfolio is down {percent} today",
+  "@portfolioMoveUp": {
+    "description": "Desktop notification title when the whole portfolio rose at least the chosen threshold today; percent like '3.2%'.",
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      }
+    }
+  },
+  "@portfolioMoveDown": {
+    "description": "Same, when it fell.",
+    "placeholders": {
+      "percent": {
+        "type": "String"
+      }
+    }
+  },
+  "@portfolioMoveAlertOff": {
+    "description": "Dropdown option: the portfolio alert is turned off."
+  },
+  "whatIfTitle": "What if you had invested?",
+  "whatIfAmount": "Amount",
+  "whatIfResult": "{amount} invested {period} ago would be worth today",
+  "whatIfNote": "Based on the share price only: dividends, fees and taxes are not included. Past returns don't predict future ones.",
+  "@whatIfResult": {
+    "description": "Above the big result number on the 'What if' card. {amount} like '1,000.00 USD', {period} like '5 years' (from longTermYears).",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "period": {
+        "type": "String"
+      }
+    }
+  },
+  "watchShare": "Share the list",
+  "watchImport": "Add tickers",
+  "watchImportHint": "Paste tickers separated by commas, spaces or new lines – for example a list someone shared with you.",
+  "watchImported": "{count, plural, =0{No new stocks} =1{1 stock added} other{{count} stocks added}}",
+  "@watchImported": {
+    "description": "Snackbar after pasting tickers into the favorites.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   }
 }

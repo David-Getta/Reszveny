@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Shto në kalendar (.ics)",
   "portfolioAnnualReturn": "Rendimenti vjetor",
   "portfolioPerYear": "{percent} / vit",
-  "portfolioAnnualReturnHint": "Rendimenti vjetor i ponderuar me paratë (XIRR): merr parasysh kur keni blerë dhe shitur, kështu që paratë e shtuara më vonë nuk e shtrembërojnë. Shfaqet kur blerja juaj e parë të jetë të paktën një vjeçe; dividendët nuk përfshihen."
+  "portfolioAnnualReturnHint": "Rendimenti vjetor i ponderuar me paratë (XIRR): merr parasysh kur keni blerë dhe shitur, kështu që paratë e shtuara më vonë nuk e shtrembërojnë. Shfaqet kur blerja juaj e parë të jetë të paktën një vjeçe; dividendët nuk përfshihen.",
+  "portfolioMoveAlertTitle": "Sinjalizim për portofolin",
+  "portfolioMoveAlertSubtitle": "Një njoftim kur i gjithë portofoli yt lëviz kaq shumë brenda një dite.",
+  "portfolioMoveAlertOff": "Joaktiv",
+  "portfolioMoveUp": "Portofoli yt është rritur sot me {percent}",
+  "portfolioMoveDown": "Portofoli yt ka rënë sot me {percent}",
+  "whatIfTitle": "Po sikur të kishe investuar?",
+  "whatIfAmount": "Shuma",
+  "whatIfResult": "{amount} të investuara {period} më parë do të vlenin sot",
+  "whatIfNote": "Vetëm në bazë të çmimit të aksionit: dividendët, tarifat dhe taksat nuk përfshihen. Kthimet e kaluara nuk parashikojnë ato të ardhshme.",
+  "watchShare": "Ndaj listën",
+  "watchImport": "Shto simbole",
+  "watchImportHint": "Ngjit simbolet e aksioneve të ndara me presje, hapësira ose rreshta të rinj – për shembull një listë që dikush ka ndarë me ty.",
+  "watchImported": "{count, plural, =0{Asnjë aksion i ri} =1{U shtua 1 aksion} other{U shtuan {count} aksione}}"
 }

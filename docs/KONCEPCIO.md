@@ -240,6 +240,9 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 5bh | Realizált nyereség exportja CSV-be az adóbevalláshoz: eladásonként dátum, ticker, darab, eladási ár, bevétel, FIFO bekerülési érték, nyereség, pénznem | ✅ kész |
 | 5bi | Éves hozam a portfólió összesítőjén: pénzsúlyozott (XIRR) a vételek és eladások dátumával, ha az első vétel legalább egyéves; magyarázat koppintásra | ✅ kész |
 | 5bj | Közelgő események a naptárba: az események oldaláról egy .ics fájl (Google, Apple, Outlook), egész napos bejegyzésekkel; állandó azonosítóval, így újraimportáláskor frissül, nem duplázódik | ✅ kész |
+| 5bk | Portfólió-riasztás (asztali értesítés): ha a teljes portfólió egy nap alatt legalább ±2 / 3 / 5%-ot mozdul, naponta egyszer szól, a legnagyobb mozgóval; hétvégén és ugyanarra a mozgásra nem ismétel | ✅ kész |
+| 5bl | „Mi lett volna, ha befektetsz?” a részvény oldalán: egy választható összeg mai értéke 1, 3 vagy 5 év után (csak árfolyam, osztalék és költség nélkül) | ✅ kész |
+| 5bm | Kedvencek megosztása és beillesztése: a lista tickerei szövegként megoszthatók, és beillesztett tickerek (vessző, szóköz, új sor, $AAPL) egyszerre felvehetők a kedvencekhez és a kiválasztott listára | ✅ kész |
 | 5j | Telefonos háttér-értesítés (riasztás) szerverről, APNs / FCM | 🟡 első lépés kész: a szerver 10 percenként nézi a belépett fiókok szinkronizált riasztásait, és e-mailben szól (csukott appnál is, kikapcsolható); a telefonos push (APNs / FCM) a Firebase-projekt és az Apple-kulcs után |
 | 5k | Bolti adatlapok 120 nyelven, képernyőképek, ikon, előnézeti videó | 🟡 adatlap-szövegek 70 bolti nyelven (fastlane-mappa, `docs/BOLTI_ADATLAP.md`), feliratos bolti képek a teszt-harnessből a boltok méreteiben; előnézeti videó és a nem latin írású képek a natív buildből később |
 

@@ -2349,4 +2349,61 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Fa ka kalenda ho (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Portfolio kɔkɔbɔ';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Wɔbɛbɔ wo amanneɛ sɛ wo portfolio nyinaa sesa saa dodow yi da koro mu a.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Adum';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Wo portfolio akɔ soro $percent ɛnnɛ';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Wo portfolio aba fam $percent ɛnnɛ';
+  }
+
+  @override
+  String get whatIfTitle => 'Sɛ wode sika hyɛɛ mu a, anka ɛbɛyɛ dɛn?';
+
+  @override
+  String get whatIfAmount => 'Sika dodow';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return 'Sɛ wode $amount hyɛɛ mu $period a atwam no a, nnɛ anka ɛsom';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Egyina kyɛfa no bo nkutoo so: mfaso kyɛ, ka ne towtua nka ho. Mfaso a atwam no nkyerɛ deɛ ɛbɛba daakye.';
+
+  @override
+  String get watchShare => 'Kyɛ nhyehyɛe no';
+
+  @override
+  String get watchImport => 'Fa ticker agyiraehyɛde ka ho';
+
+  @override
+  String get watchImportHint =>
+      'Fa ticker agyiraehyɛde hyɛ mu, na fa kɔma, kwan hunu anaa nkyerɛwee foforo tetew mu – sɛ nhwɛso no, nhyehyɛe bi a obi de akyɛ wo.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Wɔde kyɛfa $count aka ho',
+      one: 'Wɔde kyɛfa 1 aka ho',
+      zero: 'Kyɛfa foforo biara nni hɔ',
+    );
+    return '$_temp0';
+  }
 }

@@ -2350,4 +2350,61 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Хуанлид нэмэх (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Багцын мэдэгдэл';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Таны багц бүхэлдээ нэг өдөрт ийм хэмжээгээр хөдлөхөд мэдэгдэл ирнэ.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Унтраастай';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Таны багц өнөөдөр $percent өслөө';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Таны багц өнөөдөр $percent буурлаа';
+  }
+
+  @override
+  String get whatIfTitle => 'Хэрэв та хөрөнгө оруулсан бол?';
+
+  @override
+  String get whatIfAmount => 'Дүн';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount хөрөнгө оруулалт (хугацаа: $period) өнөөдөр ийм үнэтэй байх байсан';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Зөвхөн хувьцааны үнэд үндэслэсэн: ногдол ашиг, шимтгэл, татвар ороогүй. Өнгөрсөн өгөөж ирээдүйн өгөөжийг таамаглахгүй.';
+
+  @override
+  String get watchShare => 'Жагсаалтыг хуваалцах';
+
+  @override
+  String get watchImport => 'Тикер нэмэх';
+
+  @override
+  String get watchImportHint =>
+      'Тикерүүдийг таслал, хоосон зай эсвэл шинэ мөрөөр тусгаарлан буулгана уу – жишээ нь хэн нэгний тантай хуваалцсан жагсаалт.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count хувьцаа нэмэгдлээ',
+      one: '1 хувьцаа нэмэгдлээ',
+      zero: 'Шинэ хувьцаа алга',
+    );
+    return '$_temp0';
+  }
 }

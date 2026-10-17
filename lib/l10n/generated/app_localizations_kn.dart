@@ -2356,4 +2356,61 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'ಕ್ಯಾಲೆಂಡರ್‌ಗೆ ಸೇರಿಸಿ (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'ಪೋರ್ಟ್‌ಫೋಲಿಯೊ ಎಚ್ಚರಿಕೆ';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'ನಿಮ್ಮ ಸಂಪೂರ್ಣ ಪೋರ್ಟ್‌ಫೋಲಿಯೊ ಒಂದೇ ದಿನದಲ್ಲಿ ಇಷ್ಟು ಏರಿಳಿತ ಕಂಡಾಗ ಅಧಿಸೂಚನೆ.';
+
+  @override
+  String get portfolioMoveAlertOff => 'ಆಫ್';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'ಇಂದು ನಿಮ್ಮ ಪೋರ್ಟ್‌ಫೋಲಿಯೊ $percent ಏರಿದೆ';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'ಇಂದು ನಿಮ್ಮ ಪೋರ್ಟ್‌ಫೋಲಿಯೊ $percent ಇಳಿದಿದೆ';
+  }
+
+  @override
+  String get whatIfTitle => 'ನೀವು ಹೂಡಿಕೆ ಮಾಡಿದ್ದರೆ?';
+
+  @override
+  String get whatIfAmount => 'ಮೊತ್ತ';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount ಹೂಡಿಕೆ (ಅವಧಿ: $period) ಇಂದು ಇಷ್ಟು ಮೌಲ್ಯದ್ದಾಗುತ್ತಿತ್ತು';
+  }
+
+  @override
+  String get whatIfNote =>
+      'ಷೇರಿನ ಬೆಲೆಯ ಆಧಾರದಲ್ಲಿ ಮಾತ್ರ: ಡಿವಿಡೆಂಡ್, ಶುಲ್ಕಗಳು ಮತ್ತು ತೆರಿಗೆಗಳು ಸೇರಿಲ್ಲ. ಹಿಂದಿನ ಆದಾಯ ಭವಿಷ್ಯದ ಆದಾಯವನ್ನು ಮುನ್ಸೂಚಿಸುವುದಿಲ್ಲ.';
+
+  @override
+  String get watchShare => 'ಪಟ್ಟಿಯನ್ನು ಹಂಚಿಕೊಳ್ಳಿ';
+
+  @override
+  String get watchImport => 'ಟಿಕರ್‌ಗಳನ್ನು ಸೇರಿಸಿ';
+
+  @override
+  String get watchImportHint =>
+      'ಅಲ್ಪವಿರಾಮ, ಸ್ಪೇಸ್ ಅಥವಾ ಹೊಸ ಸಾಲುಗಳಿಂದ ಬೇರ್ಪಡಿಸಿದ ಟಿಕರ್‌ಗಳನ್ನು ಅಂಟಿಸಿ – ಉದಾಹರಣೆಗೆ, ಯಾರಾದರೂ ನಿಮ್ಮೊಂದಿಗೆ ಹಂಚಿಕೊಂಡ ಪಟ್ಟಿ.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ಷೇರುಗಳನ್ನು ಸೇರಿಸಲಾಗಿದೆ',
+      one: '1 ಷೇರು ಸೇರಿಸಲಾಗಿದೆ',
+      zero: 'ಹೊಸ ಷೇರುಗಳಿಲ್ಲ',
+    );
+    return '$_temp0';
+  }
 }

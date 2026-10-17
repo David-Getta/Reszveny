@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Gattako ku kalenda (.ics)",
   "portfolioAnnualReturn": "Amagoba ga buli mwaka",
   "portfolioPerYear": "{percent} / omwaka",
-  "portfolioAnnualReturnHint": "Amagoba ga buli mwaka agapimiddwa ku nsimbi (XIRR): gatunuulira ddi lwe wagula ne lwe watunda, n'olwekyo ensimbi ze wayongerako oluvannyuma tezigatabula. Galagibwa ng'ekyo kye wasooka okugula kiweza waakiri omwaka gumu; amagoba ku migabo tegazingiddwamu."
+  "portfolioAnnualReturnHint": "Amagoba ga buli mwaka agapimiddwa ku nsimbi (XIRR): gatunuulira ddi lwe wagula ne lwe watunda, n'olwekyo ensimbi ze wayongerako oluvannyuma tezigatabula. Galagibwa ng'ekyo kye wasooka okugula kiweza waakiri omwaka gumu; amagoba ku migabo tegazingiddwamu.",
+  "portfolioMoveAlertTitle": "Okulabula ku portfolio",
+  "portfolioMoveAlertSubtitle": "Obubaka nga portfolio yo yonna ekyuse bwe kati mu lunaku lumu.",
+  "portfolioMoveAlertOff": "Kiziddwako",
+  "portfolioMoveUp": "Portfolio yo erinnye {percent} leero",
+  "portfolioMoveDown": "Portfolio yo ekka {percent} leero",
+  "whatIfTitle": "Singa wateeka ssente?",
+  "whatIfAmount": "Omuwendo",
+  "whatIfResult": "Singa wateeka {amount} okumala {period}, leero zandibadde",
+  "whatIfNote": "Kisinziira ku bbeeyi y’omugabo yokka: amagoba ku migabo, ebisale n’emisolo tebiriimu. Amagoba ag’emabega tegalagula ga mu maaso.",
+  "watchShare": "Gabana olukalala",
+  "watchImport": "Yongerako obubonero bwa ticker",
+  "watchImportHint": "Teekamu obubonero bwa ticker obwawuddwamu koma, ebbanga oba ennyiriri empya – okugeza olukalala omuntu lw'akuweerezza.",
+  "watchImported": "{count, plural, =0{Tewali migabo mipya} =1{Omugabo 1 gwongeddwako} other{Emigabo {count} gyongeddwako}}"
 }

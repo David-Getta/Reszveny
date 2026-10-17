@@ -2373,4 +2373,61 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Engadir ao calendario (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Alerta de carteira';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Unha notificación cando toda a túa carteira se move tanto nun día.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Desactivada';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'A túa carteira sobe un $percent hoxe';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'A túa carteira baixa un $percent hoxe';
+  }
+
+  @override
+  String get whatIfTitle => 'E se investiras?';
+
+  @override
+  String get whatIfAmount => 'Importe';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount investidos hai $period valerían hoxe';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Baseado só no prezo da acción: non inclúe dividendos, comisións nin impostos. As rendibilidades pasadas non predín as futuras.';
+
+  @override
+  String get watchShare => 'Compartir a lista';
+
+  @override
+  String get watchImport => 'Engadir símbolos';
+
+  @override
+  String get watchImportHint =>
+      'Pega símbolos separados por comas, espazos ou saltos de liña; por exemplo, unha lista que alguén compartiu contigo.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Engadíronse $count accións',
+      one: 'Engadiuse $count acción',
+      zero: 'Ningunha acción nova',
+    );
+    return '$_temp0';
+  }
 }

@@ -2351,4 +2351,61 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Təqvimə əlavə et (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Portfel bildirişi';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Bütün portfeliniz bir gündə bu qədər dəyişəndə bildiriş.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Söndürülüb';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Portfeliniz bu gün $percent artıb';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Portfeliniz bu gün $percent azalıb';
+  }
+
+  @override
+  String get whatIfTitle => 'İnvestisiya etsəydiniz nə olardı?';
+
+  @override
+  String get whatIfAmount => 'Məbləğ';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$period əvvəl yatırılan $amount bu gün bu qədər olardı';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Yalnız səhm qiymətinə əsaslanır: dividendlər, komissiyalar və vergilər daxil deyil. Keçmiş gəlirlər gələcək gəlirləri proqnozlaşdırmır.';
+
+  @override
+  String get watchShare => 'Siyahını paylaş';
+
+  @override
+  String get watchImport => 'Tiker əlavə et';
+
+  @override
+  String get watchImportHint =>
+      'Tikerləri vergül, boşluq və ya yeni sətirlə ayıraraq yapışdırın – məsələn, kiminsə sizinlə paylaşdığı siyahını.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count səhm əlavə olundu',
+      one: '1 səhm əlavə olundu',
+      zero: 'Yeni səhm yoxdur',
+    );
+    return '$_temp0';
+  }
 }

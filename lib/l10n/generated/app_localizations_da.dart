@@ -2348,4 +2348,61 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Føj til kalender (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Porteføljealarm';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'En notifikation, når hele din portefølje bevæger sig så meget på en dag.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Fra';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Din portefølje er steget $percent i dag';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Din portefølje er faldet $percent i dag';
+  }
+
+  @override
+  String get whatIfTitle => 'Hvad hvis du havde investeret?';
+
+  @override
+  String get whatIfAmount => 'Beløb';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount investeret for $period siden ville i dag være værd';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Kun baseret på aktiekursen: udbytte, gebyrer og skat er ikke medregnet. Tidligere afkast forudsiger ikke fremtidige.';
+
+  @override
+  String get watchShare => 'Del listen';
+
+  @override
+  String get watchImport => 'Tilføj tickers';
+
+  @override
+  String get watchImportHint =>
+      'Indsæt tickersymboler adskilt af kommaer, mellemrum eller linjeskift – fx en liste, som nogen har delt med dig.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count aktier tilføjet',
+      one: '1 aktie tilføjet',
+      zero: 'Ingen nye aktier',
+    );
+    return '$_temp0';
+  }
 }

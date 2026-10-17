@@ -2413,4 +2413,63 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Дадаць у каляндар (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Апавяшчэнне пра партфель';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Апавяшчэнне, калі ўвесь ваш партфель за дзень змяняецца на столькі.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Выключана';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Ваш партфель сёння вырас на $percent';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Ваш партфель сёння ўпаў на $percent';
+  }
+
+  @override
+  String get whatIfTitle => 'А калі б вы ўклалі?';
+
+  @override
+  String get whatIfAmount => 'Сума';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount, укладзеныя $period таму, сёння каштавалі б';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Толькі па кошце акцыі: дывідэнды, камісіі і падаткі не ўлічаны. Мінулая даходнасць не прадказвае будучую.';
+
+  @override
+  String get watchShare => 'Падзяліцца спісам';
+
+  @override
+  String get watchImport => 'Дадаць тыкеры';
+
+  @override
+  String get watchImportHint =>
+      'Устаўце тыкеры праз коску, прабел або з новага радка – напрыклад, спіс, якім з вамі хтосьці падзяліўся.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Дададзена $count акцыі',
+      many: 'Дададзена $count акцый',
+      few: 'Дададзены $count акцыі',
+      one: 'Дададзена $count акцыя',
+      zero: 'Няма новых акцый',
+    );
+    return '$_temp0';
+  }
 }

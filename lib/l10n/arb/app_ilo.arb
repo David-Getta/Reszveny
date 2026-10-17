@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Inayon iti kalendario (.ics)",
   "portfolioAnnualReturn": "Tinawen a ganansia",
   "portfolioPerYear": "{percent} / tawen",
-  "portfolioAnnualReturnHint": "Tinawen a ganansia a natimbang iti kuarta (XIRR): ibilangna no kaano ti panaggatang ken panaglakom, isu a ti kuarta a nainayon kalpasanna ket saanna a mapadakes. Maipakita no nakalabesen ti uray maysa a tawen manipud iti umuna a gatangmo; saan a nairaman dagiti dibidendo."
+  "portfolioAnnualReturnHint": "Tinawen a ganansia a natimbang iti kuarta (XIRR): ibilangna no kaano ti panaggatang ken panaglakom, isu a ti kuarta a nainayon kalpasanna ket saanna a mapadakes. Maipakita no nakalabesen ti uray maysa a tawen manipud iti umuna a gatangmo; saan a nairaman dagiti dibidendo.",
+  "portfolioMoveAlertTitle": "Alerto ti portfolio",
+  "portfolioMoveAlertSubtitle": "Pakaammo no ti intero a portfoliom ket gumaraw iti kastoy kadakel iti maysa nga aldaw.",
+  "portfolioMoveAlertOff": "Naiddep",
+  "portfolioMoveUp": "Immangato ti portfoliom iti {percent} ita nga aldaw",
+  "portfolioMoveDown": "Bimmaba ti portfoliom iti {percent} ita nga aldaw",
+  "whatIfTitle": "No nagpuonanka koma?",
+  "whatIfAmount": "Gatad",
+  "whatIfResult": "Ti {amount} a naipuonan {period} ti napalabas ket agbalor koma ita iti",
+  "whatIfNote": "Naibatay laeng iti presio ti share: saan a karaman dagiti dibidendo, bayad ken buis. Saan nga ipakpakauna dagiti napalabas a ganansia dagiti masakbayan.",
+  "watchShare": "I-share ti listaan",
+  "watchImport": "Agnayon kadagiti ticker",
+  "watchImportHint": "I-paste dagiti ticker a nasina iti comma, space wenno baro a linia – kas pagarigan, listaan nga inshare kenka ti maysa a tao.",
+  "watchImported": "{count, plural, =0{Awan ti baro a stock} =1{Nainayon ti 1 a stock} other{Nainayon ti {count} a stock}}"
 }

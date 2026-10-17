@@ -2359,4 +2359,61 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Engeza kukhalenda (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Isexwayiso sephothifoliyo';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Isaziso lapho iphothifoliyo yakho yonke inyakaza kangaka ngosuku olulodwa.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Kucishiwe';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Iphothifoliyo yakho ikhuphuke ngo-$percent namuhla';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Iphothifoliyo yakho yehle ngo-$percent namuhla';
+  }
+
+  @override
+  String get whatIfTitle => 'Kungaba njani ukube utshalile?';
+
+  @override
+  String get whatIfAmount => 'Inani';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount etshaliwe (isikhathi: $period) namuhla ibizoba nenani';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Kusekelwe entengweni yesabelo kuphela: ama-dividend, izimali nezintela akufakiwe. Imbuyiselo yangaphambilini ayibikezeli ezizayo.';
+
+  @override
+  String get watchShare => 'Yabelana ngohlu';
+
+  @override
+  String get watchImport => 'Engeza ama-ticker';
+
+  @override
+  String get watchImportHint =>
+      'Namathisela ama-ticker ahlukaniswe ngokhefana, izikhala noma imigqa emisha – isibonelo, uhlu othile abelane nawe ngalo.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kwengezwe amasheya angu-$count',
+      one: 'Kwengezwe isheya elilodwa',
+      zero: 'Awekho amasheya amasha',
+    );
+    return '$_temp0';
+  }
 }

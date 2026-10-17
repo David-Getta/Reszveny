@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Embojuaju arapapahápe (.ics)",
   "portfolioAnnualReturn": "Rendimiento arýpe",
   "portfolioPerYear": "{percent} / ary",
-  "portfolioAnnualReturnHint": "Rendimiento arýpe oñepesáva viru rehe (XIRR): ohecha araka'épa rejogua ha reñemu, upévare viru remoĩvéva upéi ndombyaíri chupe. Ojehechauka ne jejogua peteĩha ohasa rire ary peteĩ, sa'ive ramo; dividendo ndoikéi."
+  "portfolioAnnualReturnHint": "Rendimiento arýpe oñepesáva viru rehe (XIRR): ohecha araka'épa rejogua ha reñemu, upévare viru remoĩvéva upéi ndombyaíri chupe. Ojehechauka ne jejogua peteĩha ohasa rire ary peteĩ, sa'ive ramo; dividendo ndoikéi.",
+  "portfolioMoveAlertTitle": "Portafólio marandu",
+  "portfolioMoveAlertSubtitle": "Marandu nde portafólio entero oñemonguʼe péicha peteĩ árape.",
+  "portfolioMoveAlertOff": "Mbogue",
+  "portfolioMoveUp": "Nde portafólio ojupi {percent} ko árape",
+  "portfolioMoveDown": "Nde portafólio oguejy {percent} ko árape",
+  "whatIfTitle": "Mbaʼéichapa oikóta reinvertíramo?",
+  "whatIfAmount": "Mboýpa",
+  "whatIfResult": "{amount} oñeinvertíva {period} mboyve hepýta ko árape",
+  "whatIfNote": "Oñemopyenda acción repy añónte: ndoikéi dividendo, ñehepymeʼẽ ha impuesto. Ganancia ohasavaʼekue ndohechaukái tenondeguáva.",
+  "watchShare": "Emoherakuã lista",
+  "watchImport": "Embojoaju símbolo",
+  "watchImportHint": "Emboja símbolo-kuéra ojeipeʼáva coma, paʼũ térã línea pyahu rupive – techapyrã, peteĩ lista ojekomparti vaʼekue nendive.",
+  "watchImported": "{count, plural, =0{Ndaipóri acción pyahu} =1{Oñembojoaju 1 acción} other{Oñembojoaju {count} acción}}"
 }

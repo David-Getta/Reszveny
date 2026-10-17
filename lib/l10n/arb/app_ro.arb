@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Adaugă în calendar (.ics)",
   "portfolioAnnualReturn": "Randament anual",
   "portfolioPerYear": "{percent} / an",
-  "portfolioAnnualReturnHint": "Randament anual ponderat cu banii (XIRR): ține cont de momentul în care ai cumpărat și ai vândut, așa că banii adăugați ulterior nu îl distorsionează. Se afișează când prima ta cumpărare are cel puțin un an; dividendele nu sunt incluse."
+  "portfolioAnnualReturnHint": "Randament anual ponderat cu banii (XIRR): ține cont de momentul în care ai cumpărat și ai vândut, așa că banii adăugați ulterior nu îl distorsionează. Se afișează când prima ta cumpărare are cel puțin un an; dividendele nu sunt incluse.",
+  "portfolioMoveAlertTitle": "Alertă de portofoliu",
+  "portfolioMoveAlertSubtitle": "O notificare când întregul tău portofoliu se mișcă atât de mult într-o zi.",
+  "portfolioMoveAlertOff": "Dezactivată",
+  "portfolioMoveUp": "Portofoliul tău a crescut azi cu {percent}",
+  "portfolioMoveDown": "Portofoliul tău a scăzut azi cu {percent}",
+  "whatIfTitle": "Și dacă ai fi investit?",
+  "whatIfAmount": "Sumă",
+  "whatIfResult": "{amount} investiți acum {period} ar valora azi",
+  "whatIfNote": "Doar pe baza prețului acțiunii: dividendele, comisioanele și taxele nu sunt incluse. Randamentele trecute nu prezic randamentele viitoare.",
+  "watchShare": "Distribuie lista",
+  "watchImport": "Adaugă tickere",
+  "watchImportHint": "Lipește tickere separate prin virgule, spații sau rânduri noi – de exemplu, o listă pe care cineva a partajat-o cu tine.",
+  "watchImported": "{count, plural, =0{Nicio acțiune nouă} =1{A fost adăugată 1 acțiune} one{A fost adăugată {count} acțiune} few{Au fost adăugate {count} acțiuni} other{Au fost adăugate {count} de acțiuni}}"
 }

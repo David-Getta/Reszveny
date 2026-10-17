@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Yokk ci kalandiriye bi (.ics)",
   "portfolioAnnualReturn": "Benefis bu at",
   "portfolioPerYear": "{percent} / at",
-  "portfolioAnnualReturnHint": "Benefis bu at bu ñu natt ci xaalis bi (XIRR): dafay xool kañ nga jënd ak kañ nga jaay, kon xaalis bi nga yokk ginnaaw du ko yàq. Dañu koy wone su sa jënd bu jëkk weesoo benn at lu néew-néew; dividand yi bokkuñu ci."
+  "portfolioAnnualReturnHint": "Benefis bu at bu ñu natt ci xaalis bi (XIRR): dafay xool kañ nga jënd ak kañ nga jaay, kon xaalis bi nga yokk ginnaaw du ko yàq. Dañu koy wone su sa jënd bu jëkk weesoo benn at lu néew-néew; dividand yi bokkuñu ci.",
+  "portfolioMoveAlertTitle": "Artu portfolio",
+  "portfolioMoveAlertSubtitle": "Yégle bu sa portfolio yépp coppitee nii ci benn bés.",
+  "portfolioMoveAlertOff": "Fey",
+  "portfolioMoveUp": "Sa portfolio yokku na {percent} tey",
+  "portfolioMoveDown": "Sa portfolio wàcc na {percent} tey",
+  "whatIfTitle": "Lu am bu nga dugaloon xaalis?",
+  "whatIfAmount": "Limu xaalis",
+  "whatIfResult": "Bu nga dugaloon {amount} ci diirub {period}, tey dina tollu",
+  "whatIfNote": "Dafa sukkandiku rekk ci njëgu aksiyoŋ bi: dividand, peyu liggéey ak galag bokku ci. Ñeel gu weesu waxul lu ëllëg di indi.",
+  "watchShare": "Séddoo limm bi",
+  "watchImport": "Yokk màndargay aksiyoŋ",
+  "watchImportHint": "Taqal màndargay aksiyoŋ yu ñu xàjjale ak wirgil, barab bu dëng walla rëdd bu bees – misaal, limm bu kenn séddoo ak yow.",
+  "watchImported": "{count, plural, =0{Amul aksiyoŋ bu bees} =1{Yokk nañu 1 aksiyoŋ} other{Yokk nañu {count} aksiyoŋ}}"
 }

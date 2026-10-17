@@ -2415,4 +2415,63 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Dodaj do kalendarza (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Alert portfela';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Powiadomienie, gdy cały portfel zmieni się o tyle w ciągu dnia.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Wyłączony';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Twój portfel zyskał dziś $percent';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Twój portfel stracił dziś $percent';
+  }
+
+  @override
+  String get whatIfTitle => 'A gdyby tak zainwestować?';
+
+  @override
+  String get whatIfAmount => 'Kwota';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount zainwestowane $period temu byłoby dziś warte';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Tylko na podstawie ceny akcji: dywidendy, opłaty i podatki nie są uwzględnione. Przeszłe stopy zwrotu nie przewidują przyszłych.';
+
+  @override
+  String get watchShare => 'Udostępnij listę';
+
+  @override
+  String get watchImport => 'Dodaj symbole';
+
+  @override
+  String get watchImportHint =>
+      'Wklej symbole giełdowe oddzielone przecinkami, spacjami lub nowymi wierszami – np. listę, którą ktoś ci udostępnił.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Dodano $count akcji',
+      many: 'Dodano $count akcji',
+      few: 'Dodano $count akcje',
+      one: 'Dodano $count akcję',
+      zero: 'Brak nowych akcji',
+    );
+    return '$_temp0';
+  }
 }

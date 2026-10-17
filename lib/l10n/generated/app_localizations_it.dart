@@ -2355,4 +2355,61 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Aggiungi al calendario (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Avviso portafoglio';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Una notifica quando il tuo intero portafoglio si muove così tanto in un giorno.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Disattivato';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Il tuo portafoglio oggi è in rialzo del $percent';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Il tuo portafoglio oggi è in ribasso del $percent';
+  }
+
+  @override
+  String get whatIfTitle => 'E se avessi investito?';
+
+  @override
+  String get whatIfAmount => 'Importo';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount investiti $period fa oggi varrebbero';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Basato solo sul prezzo dell’azione: dividendi, commissioni e tasse non sono inclusi. I rendimenti passati non prevedono quelli futuri.';
+
+  @override
+  String get watchShare => 'Condividi la lista';
+
+  @override
+  String get watchImport => 'Aggiungi simboli';
+
+  @override
+  String get watchImportHint =>
+      'Incolla i simboli separati da virgole, spazi o a capo – ad esempio una lista che qualcuno ha condiviso con te.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count titoli aggiunti',
+      one: '1 titolo aggiunto',
+      zero: 'Nessun nuovo titolo',
+    );
+    return '$_temp0';
+  }
 }

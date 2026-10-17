@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "ናብ ዓውደ ኣዋርሕ ወስኽ (.ics)",
   "portfolioAnnualReturn": "ዓመታዊ ትርፊ",
   "portfolioPerYear": "{percent} / ዓመት",
-  "portfolioAnnualReturnHint": "ብገንዘብ ዝተመዘነ ዓመታዊ ትርፊ (XIRR)፦ መዓስ ከም ዝዓደግኩምን ዝሸጥኩምን ኣብ ግምት የእቱ፣ ስለዚ ደሓር ዝተወሰኸ ገንዘብ ኣየዛብዖን። ቀዳማይ ዕድጊትኩም እንተወሓደ ሓደ ዓመት ምስ መልአ ይርአ፤ ብጽሒት ትርፊ ኣይተሓወሰን።"
+  "portfolioAnnualReturnHint": "ብገንዘብ ዝተመዘነ ዓመታዊ ትርፊ (XIRR)፦ መዓስ ከም ዝዓደግኩምን ዝሸጥኩምን ኣብ ግምት የእቱ፣ ስለዚ ደሓር ዝተወሰኸ ገንዘብ ኣየዛብዖን። ቀዳማይ ዕድጊትኩም እንተወሓደ ሓደ ዓመት ምስ መልአ ይርአ፤ ብጽሒት ትርፊ ኣይተሓወሰን።",
+  "portfolioMoveAlertTitle": "ናይ ፖርትፎሊዮ መጠንቀቕታ",
+  "portfolioMoveAlertSubtitle": "ኩሉ ፖርትፎሊዮኻ ኣብ ሓደ መዓልቲ ክንድዚ ምስ ዝንቀሳቐስ መፍለጢ።",
+  "portfolioMoveAlertOff": "ጠፊኡ",
+  "portfolioMoveUp": "ፖርትፎሊዮኻ ሎሚ {percent} ወሲኹ",
+  "portfolioMoveDown": "ፖርትፎሊዮኻ ሎሚ {percent} ጎዲሉ",
+  "whatIfTitle": "ኢንቨስት እንተትገብሩ እንታይ ምኾነ?",
+  "whatIfAmount": "መጠን",
+  "whatIfResult": "ቅድሚ {period} ዝተወፈረ {amount} ሎሚ ዝህልዎ ዋጋ",
+  "whatIfNote": "ኣብ ዋጋ ኣክስዮን ጥራይ ዝተመስረተ፤ ብጽሒት ትርፊ፣ ክፍሊታትን ግብርታትን ኣይተኣተዉን። ዝሓለፈ ኣታዊ ንመጻኢ ኣይትንብዮን።",
+  "watchShare": "ዝርዝር ኣካፍል",
+  "watchImport": "ምልክታት ኣክሲዮን ወስኽ",
+  "watchImportHint": "ብኮማ፣ ባዶ ቦታ ወይ ሓድሽ መስመር ዝተፈላለዩ ምልክታት ኣክሲዮን ለጥፍ – ንኣብነት ሓደ ሰብ ዘካፈለካ ዝርዝር።",
+  "watchImported": "{count, plural, =0{ሓድሽ ኣክሲዮን የለን} =1{1 ኣክሲዮን ተወሲኹ} other{{count} ኣክሲዮናት ተወሲኾም}}"
 }

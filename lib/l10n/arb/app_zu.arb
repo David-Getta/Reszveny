@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Engeza kukhalenda (.ics)",
   "portfolioAnnualReturn": "Inzuzo yonyaka",
   "portfolioPerYear": "{percent} / unyaka",
-  "portfolioAnnualReturnHint": "Inzuzo yonyaka ekalwe ngemali (XIRR): ibheka ukuthi uthenge nini futhi wathengisa nini, ngakho imali eyengezwe kamuva ayiyiphazamisi. Iboniswa uma sekudlule okungenani unyaka owodwa kusukela uthenge okokuqala; ama-dividend awafakiwe."
+  "portfolioAnnualReturnHint": "Inzuzo yonyaka ekalwe ngemali (XIRR): ibheka ukuthi uthenge nini futhi wathengisa nini, ngakho imali eyengezwe kamuva ayiyiphazamisi. Iboniswa uma sekudlule okungenani unyaka owodwa kusukela uthenge okokuqala; ama-dividend awafakiwe.",
+  "portfolioMoveAlertTitle": "Isexwayiso sephothifoliyo",
+  "portfolioMoveAlertSubtitle": "Isaziso lapho iphothifoliyo yakho yonke inyakaza kangaka ngosuku olulodwa.",
+  "portfolioMoveAlertOff": "Kucishiwe",
+  "portfolioMoveUp": "Iphothifoliyo yakho ikhuphuke ngo-{percent} namuhla",
+  "portfolioMoveDown": "Iphothifoliyo yakho yehle ngo-{percent} namuhla",
+  "whatIfTitle": "Kungaba njani ukube utshalile?",
+  "whatIfAmount": "Inani",
+  "whatIfResult": "{amount} etshaliwe (isikhathi: {period}) namuhla ibizoba nenani",
+  "whatIfNote": "Kusekelwe entengweni yesabelo kuphela: ama-dividend, izimali nezintela akufakiwe. Imbuyiselo yangaphambilini ayibikezeli ezizayo.",
+  "watchShare": "Yabelana ngohlu",
+  "watchImport": "Engeza ama-ticker",
+  "watchImportHint": "Namathisela ama-ticker ahlukaniswe ngokhefana, izikhala noma imigqa emisha – isibonelo, uhlu othile abelane nawe ngalo.",
+  "watchImported": "{count, plural, =0{Awekho amasheya amasha} =1{Kwengezwe isheya elilodwa} other{Kwengezwe amasheya angu-{count}}}"
 }

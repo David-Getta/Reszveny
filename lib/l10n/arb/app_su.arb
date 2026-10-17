@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Tambahkeun ka kalénder (.ics)",
   "portfolioAnnualReturn": "Imbal hasil taunan",
   "portfolioPerYear": "{percent} / taun",
-  "portfolioAnnualReturnHint": "Imbal hasil taunan anu ditimbang dumasar artos (XIRR): ngitung iraha anjeun meuli jeung ngajual, jadi artos anu ditambahkeun engké henteu ngaganggu itunganana. Ditémbongkeun saatos pameulian munggaran anjeun sahenteuna sataun; dividén henteu kaasup."
+  "portfolioAnnualReturnHint": "Imbal hasil taunan anu ditimbang dumasar artos (XIRR): ngitung iraha anjeun meuli jeung ngajual, jadi artos anu ditambahkeun engké henteu ngaganggu itunganana. Ditémbongkeun saatos pameulian munggaran anjeun sahenteuna sataun; dividén henteu kaasup.",
+  "portfolioMoveAlertTitle": "Béwara portofolio",
+  "portfolioMoveAlertSubtitle": "Béwara nalika sakabéh portofolio anjeun gerak sakitu dina sapoé.",
+  "portfolioMoveAlertOff": "Pareum",
+  "portfolioMoveUp": "Portofolio anjeun naék {percent} poé ieu",
+  "portfolioMoveDown": "Portofolio anjeun turun {percent} poé ieu",
+  "whatIfTitle": "Kumaha upami anjeun investasi?",
+  "whatIfAmount": "Jumlah",
+  "whatIfResult": "{amount} anu diinvestasikeun {period} ka tukang ayeuna hargana",
+  "whatIfNote": "Ngan dumasar kana harga saham: dividén, biaya, jeung pajeg teu kaasup. Hasil ti tukang henteu ngaramal hasil ka hareup.",
+  "watchShare": "Bagikeun daptar",
+  "watchImport": "Tambahkeun kode saham",
+  "watchImportHint": "Témpélkeun kode saham anu dipisahkeun ku koma, spasi atawa baris anyar – contona daptar anu dibagikeun ku batur ka anjeun.",
+  "watchImported": "{count, plural, =0{Teu aya saham anyar} =1{1 saham ditambahkeun} other{{count} saham ditambahkeun}}"
 }

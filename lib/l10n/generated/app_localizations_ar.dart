@@ -2402,4 +2402,64 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'إضافة إلى التقويم (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'تنبيه المحفظة';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'إشعار عندما تتحرك محفظتك بالكامل بهذا القدر خلال يوم واحد.';
+
+  @override
+  String get portfolioMoveAlertOff => 'إيقاف';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'ارتفعت محفظتك بنسبة $percent اليوم';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'انخفضت محفظتك بنسبة $percent اليوم';
+  }
+
+  @override
+  String get whatIfTitle => 'ماذا لو استثمرت؟';
+
+  @override
+  String get whatIfAmount => 'المبلغ';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return 'لو استثمرت $amount قبل $period، لبلغت قيمتها اليوم';
+  }
+
+  @override
+  String get whatIfNote =>
+      'يستند إلى سعر السهم فقط: لا تشمل التوزيعات والرسوم والضرائب. العوائد السابقة لا تتنبأ بالعوائد المستقبلية.';
+
+  @override
+  String get watchShare => 'مشاركة القائمة';
+
+  @override
+  String get watchImport => 'إضافة رموز الأسهم';
+
+  @override
+  String get watchImportHint =>
+      'الصق رموز الأسهم مفصولةً بفواصل أو مسافات أو أسطر جديدة، مثل قائمة شاركها شخص ما معك.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'تمت إضافة $count سهم',
+      many: 'تمت إضافة $count سهمًا',
+      few: 'تمت إضافة $count أسهم',
+      two: 'تمت إضافة سهمين',
+      one: 'تمت إضافة سهم واحد',
+      zero: 'لا توجد أسهم جديدة',
+    );
+    return '$_temp0';
+  }
 }

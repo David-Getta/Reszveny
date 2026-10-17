@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "カレンダーに追加 (.ics)",
   "portfolioAnnualReturn": "年率リターン",
   "portfolioPerYear": "{percent} / 年",
-  "portfolioAnnualReturnHint": "金額加重の年率リターン（XIRR）：購入・売却のタイミングを考慮するため、あとから追加した資金で数値がゆがむことはありません。最初の購入から1年以上経過すると表示されます。配当は含まれません。"
+  "portfolioAnnualReturnHint": "金額加重の年率リターン（XIRR）：購入・売却のタイミングを考慮するため、あとから追加した資金で数値がゆがむことはありません。最初の購入から1年以上経過すると表示されます。配当は含まれません。",
+  "portfolioMoveAlertTitle": "ポートフォリオ通知",
+  "portfolioMoveAlertSubtitle": "ポートフォリオ全体が1日でこれだけ動いたときに通知します。",
+  "portfolioMoveAlertOff": "オフ",
+  "portfolioMoveUp": "本日、ポートフォリオが{percent}上昇しました",
+  "portfolioMoveDown": "本日、ポートフォリオが{percent}下落しました",
+  "whatIfTitle": "もし投資していたら？",
+  "whatIfAmount": "金額",
+  "whatIfResult": "{period}前に投資した{amount}の現在の価値",
+  "whatIfNote": "株価のみに基づく計算です。配当、手数料、税金は含まれません。過去のリターンは将来のリターンを示すものではありません。",
+  "watchShare": "リストを共有",
+  "watchImport": "ティッカーを追加",
+  "watchImportHint": "ティッカーシンボルをカンマ、スペース、または改行で区切って貼り付けてください（例：誰かから共有されたリスト）。",
+  "watchImported": "{count, plural, =0{新しい銘柄はありません} =1{1 銘柄を追加しました} other{{count} 銘柄を追加しました}}"
 }

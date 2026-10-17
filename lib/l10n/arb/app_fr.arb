@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Ajouter au calendrier (.ics)",
   "portfolioAnnualReturn": "Rendement annuel",
   "portfolioPerYear": "{percent} / an",
-  "portfolioAnnualReturnHint": "Rendement annuel pondéré par les capitaux (XIRR) : il tient compte du moment où vous avez acheté et vendu, de sorte que l’argent ajouté plus tard ne le fausse pas. Affiché dès que votre premier achat a au moins un an ; les dividendes ne sont pas inclus."
+  "portfolioAnnualReturnHint": "Rendement annuel pondéré par les capitaux (XIRR) : il tient compte du moment où vous avez acheté et vendu, de sorte que l’argent ajouté plus tard ne le fausse pas. Affiché dès que votre premier achat a au moins un an ; les dividendes ne sont pas inclus.",
+  "portfolioMoveAlertTitle": "Alerte portefeuille",
+  "portfolioMoveAlertSubtitle": "Une notification lorsque l’ensemble de votre portefeuille varie autant en une journée.",
+  "portfolioMoveAlertOff": "Désactivée",
+  "portfolioMoveUp": "Votre portefeuille est en hausse de {percent} aujourd’hui",
+  "portfolioMoveDown": "Votre portefeuille est en baisse de {percent} aujourd’hui",
+  "whatIfTitle": "Et si vous aviez investi ?",
+  "whatIfAmount": "Montant",
+  "whatIfResult": "{amount} investis il y a {period} vaudraient aujourd’hui",
+  "whatIfNote": "Basé uniquement sur le cours de l’action : dividendes, frais et impôts non inclus. Les performances passées ne préjugent pas des performances futures.",
+  "watchShare": "Partager la liste",
+  "watchImport": "Ajouter des symboles",
+  "watchImportHint": "Collez des symboles séparés par des virgules, des espaces ou des retours à la ligne – par exemple une liste que quelqu’un vous a partagée.",
+  "watchImported": "{count, plural, =0{Aucune nouvelle action} =1{1 action ajoutée} other{{count} actions ajoutées}}"
 }

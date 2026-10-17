@@ -2354,4 +2354,61 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Taqvimga qoʻshish (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Portfel ogohlantirishi';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Butun portfelingiz bir kunda shuncha oʻzgarganda bildirishnoma.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Oʻchiq';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Portfelingiz bugun $percent ga oʻsdi';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Portfelingiz bugun $percent ga tushdi';
+  }
+
+  @override
+  String get whatIfTitle => 'Sarmoya kiritganingizda nima boʻlardi?';
+
+  @override
+  String get whatIfAmount => 'Summa';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$period oldin kiritilgan $amount bugun shuncha boʻlardi';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Faqat aksiya narxiga asoslangan: dividendlar, komissiyalar va soliqlar hisobga olinmagan. Oʻtgan daromad kelajakdagisini bashorat qilmaydi.';
+
+  @override
+  String get watchShare => 'Roʻyxatni ulashish';
+
+  @override
+  String get watchImport => 'Tiker qoʻshish';
+
+  @override
+  String get watchImportHint =>
+      'Tikerlarni vergul, boʻsh joy yoki yangi qator bilan ajratib joylang – masalan, kimdir siz bilan ulashgan roʻyxatni.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ta aksiya qoʻshildi',
+      one: '1 ta aksiya qoʻshildi',
+      zero: 'Yangi aksiyalar yoʻq',
+    );
+    return '$_temp0';
+  }
 }

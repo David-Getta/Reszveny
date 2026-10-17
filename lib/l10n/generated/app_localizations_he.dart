@@ -2342,4 +2342,61 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'הוספה ליומן (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'התראת תיק';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'התראה כשכל התיק שלך זז בשיעור כזה ביום אחד.';
+
+  @override
+  String get portfolioMoveAlertOff => 'כבוי';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'התיק שלך עלה היום ב-$percent';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'התיק שלך ירד היום ב-$percent';
+  }
+
+  @override
+  String get whatIfTitle => 'מה אילו השקעת?';
+
+  @override
+  String get whatIfAmount => 'סכום';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount שהושקעו לפני $period היו שווים היום';
+  }
+
+  @override
+  String get whatIfNote =>
+      'מבוסס על מחיר המניה בלבד: דיבידנדים, עמלות ומסים אינם כלולים. תשואות עבר אינן מנבאות תשואות עתידיות.';
+
+  @override
+  String get watchShare => 'שיתוף הרשימה';
+
+  @override
+  String get watchImport => 'הוספת סימולים';
+
+  @override
+  String get watchImportHint =>
+      'יש להדביק סימולי מניות מופרדים בפסיקים, ברווחים או בשורות חדשות – למשל רשימה שמישהו שיתף איתך.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'נוספו $count מניות',
+      one: 'נוספה מניה אחת',
+      zero: 'אין מניות חדשות',
+    );
+    return '$_temp0';
+  }
 }

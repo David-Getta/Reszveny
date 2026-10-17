@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Idagdag sa kalendaryo (.ics)",
   "portfolioAnnualReturn": "Taunang kita",
   "portfolioPerYear": "{percent} / taon",
-  "portfolioAnnualReturnHint": "Money-weighted na taunang kita (XIRR): isinasaalang-alang nito kung kailan ka bumili at nagbenta, kaya hindi ito nababaluktot ng perang idinagdag mo kalaunan. Lalabas ito kapag isang taon na man lang ang una mong pagbili; hindi kasama ang mga dibidendo."
+  "portfolioAnnualReturnHint": "Money-weighted na taunang kita (XIRR): isinasaalang-alang nito kung kailan ka bumili at nagbenta, kaya hindi ito nababaluktot ng perang idinagdag mo kalaunan. Lalabas ito kapag isang taon na man lang ang una mong pagbili; hindi kasama ang mga dibidendo.",
+  "portfolioMoveAlertTitle": "Alerto sa portfolio",
+  "portfolioMoveAlertSubtitle": "Isang notification kapag gumalaw nang ganito kalaki ang buong portfolio mo sa isang araw.",
+  "portfolioMoveAlertOff": "Naka-off",
+  "portfolioMoveUp": "Tumaas nang {percent} ang portfolio mo ngayon",
+  "portfolioMoveDown": "Bumaba nang {percent} ang portfolio mo ngayon",
+  "whatIfTitle": "Paano kung nag-invest ka?",
+  "whatIfAmount": "Halaga",
+  "whatIfResult": "Ang {amount} na in-invest {period} na ang nakalipas ay nagkakahalaga sana ngayon ng",
+  "whatIfNote": "Batay lang sa presyo ng share: hindi kasama ang dibidendo, bayarin at buwis. Hindi hinuhulaan ng mga nakaraang kita ang mga susunod.",
+  "watchShare": "Ibahagi ang listahan",
+  "watchImport": "Magdagdag ng mga ticker",
+  "watchImportHint": "Mag-paste ng mga ticker na pinaghihiwalay ng kuwit, espasyo o bagong linya – halimbawa, isang listahang ibinahagi sa iyo ng iba.",
+  "watchImported": "{count, plural, =0{Walang bagong stock} =1{Naidagdag ang 1 stock} other{Naidagdag ang {count} stock}}"
 }

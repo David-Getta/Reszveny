@@ -2414,4 +2414,63 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Dodaj v koledar (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Opozorilo za portfelj';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Obvestilo, ko se tvoj celoten portfelj v enem dnevu premakne za toliko.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Izklopljeno';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Tvoj portfelj je danes zrasel za $percent';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Tvoj portfelj je danes padel za $percent';
+  }
+
+  @override
+  String get whatIfTitle => 'Kaj, če bi investirali?';
+
+  @override
+  String get whatIfAmount => 'Znesek';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return 'Naložba $amount za $period bi bila danes vredna';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Samo na podlagi cene delnice: dividende, provizije in davki niso vključeni. Pretekli donosi ne napovedujejo prihodnjih.';
+
+  @override
+  String get watchShare => 'Deli seznam';
+
+  @override
+  String get watchImport => 'Dodaj borzne oznake';
+
+  @override
+  String get watchImportHint =>
+      'Prilepite borzne oznake, ločene z vejicami, presledki ali novimi vrsticami – na primer seznam, ki ga je nekdo delil z vami.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Dodanih je $count delnic',
+      few: 'Dodane so $count delnice',
+      two: 'Dodani sta $count delnici',
+      one: 'Dodana je $count delnica',
+      zero: 'Ni novih delnic',
+    );
+    return '$_temp0';
+  }
 }

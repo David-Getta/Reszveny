@@ -2408,4 +2408,63 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Přidat do kalendáře (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Upozornění na portfolio';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Oznámení, když se celé vaše portfolio za den pohne o tolik.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Vypnuto';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Vaše portfolio dnes vzrostlo o $percent';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Vaše portfolio dnes kleslo o $percent';
+  }
+
+  @override
+  String get whatIfTitle => 'Co kdybyste investovali?';
+
+  @override
+  String get whatIfAmount => 'Částka';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return 'Investice $amount na $period by dnes měla hodnotu';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Pouze na základě ceny akcie: dividendy, poplatky a daně nejsou zahrnuty. Minulé výnosy nepředpovídají budoucí.';
+
+  @override
+  String get watchShare => 'Sdílet seznam';
+
+  @override
+  String get watchImport => 'Přidat tickery';
+
+  @override
+  String get watchImportHint =>
+      'Vložte tickery oddělené čárkami, mezerami nebo novými řádky – třeba seznam, který s vámi někdo sdílel.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Přidáno $count akcií',
+      many: 'Přidáno $count akcie',
+      few: 'Přidány $count akcie',
+      one: 'Přidána 1 akcie',
+      zero: 'Žádné nové akcie',
+    );
+    return '$_temp0';
+  }
 }

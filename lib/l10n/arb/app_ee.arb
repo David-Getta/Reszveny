@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Tsɔ kpe ɖe kalenda ŋu (.ics)",
   "portfolioAnnualReturn": "Ƒe sia ƒe viɖe",
   "portfolioPerYear": "{percent} / ƒe",
-  "portfolioAnnualReturnHint": "Ƒe sia ƒe viɖe si wokpɔ le ga si nède eme nu (XIRR): ebua ɣeyiɣi si nèƒle nu kple esi nèdzra nu ŋu, eya ta ga si nètsɔ kpe ɖe eŋu emegbe megblẽa nu le eŋu o. Wofiana ne wò nuƒeƒle gbãtɔ xɔ ƒe ɖeka ya teti; viɖemama mele eme o."
+  "portfolioAnnualReturnHint": "Ƒe sia ƒe viɖe si wokpɔ le ga si nède eme nu (XIRR): ebua ɣeyiɣi si nèƒle nu kple esi nèdzra nu ŋu, eya ta ga si nètsɔ kpe ɖe eŋu emegbe megblẽa nu le eŋu o. Wofiana ne wò nuƒeƒle gbãtɔ xɔ ƒe ɖeka ya teti; viɖemama mele eme o.",
+  "portfolioMoveAlertTitle": "Portfolio nuxlɔ̃ame",
+  "portfolioMoveAlertSubtitle": "Gbeƒãɖeɖe ne wò portfolio blibo la trɔ alesia le ŋkeke ɖeka me.",
+  "portfolioMoveAlertOff": "Etsi",
+  "portfolioMoveUp": "Wò portfolio dzi ɖe edzi {percent} egbe",
+  "portfolioMoveDown": "Wò portfolio ɖe kpɔtɔ {percent} egbe",
+  "whatIfTitle": "Ne èdo ga ɖe eme ɖe, aleke wòanɔ?",
+  "whatIfAmount": "Home xexlẽ",
+  "whatIfResult": "Ne èdo {amount} ɖe eme le {period} si va yi me la, egbe anɔ asi",
+  "whatIfNote": "Enɔ te ɖe aksiɔ̃ ƒe asi ko dzi: viɖemama, fewo kple adzɔ mele eme o. Viɖe siwo va yi meɖea fia viɖe siwo gbɔna o.",
+  "watchShare": "Ma xexlẽdzesi la",
+  "watchImport": "Tsɔ ticker dzesiwo kpe ɖe eŋu",
+  "watchImportHint": "Tsɔ ticker dzesiwo de eme, eye nàma wo kple koma, teƒe ƒuƒlu alo fli yeye – le kpɔɖeŋu me, xexlẽdzesi aɖe si ame aɖe ma na wò.",
+  "watchImported": "{count, plural, =0{Aksiɔn yeye aɖeke meli o} =1{Wotsɔ aksiɔn 1 kpe ɖe eŋu} other{Wotsɔ aksiɔn {count} kpe ɖe eŋu}}"
 }

@@ -2349,4 +2349,61 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Takvime ekle (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Portföy uyarısı';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Portföyünün tamamı bir günde bu kadar hareket ettiğinde bildirim.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Kapalı';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Portföyün bugün $percent yükseldi';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Portföyün bugün $percent düştü';
+  }
+
+  @override
+  String get whatIfTitle => 'Yatırım yapsaydınız?';
+
+  @override
+  String get whatIfAmount => 'Tutar';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$period önce yatırılan $amount bugün şu kadar ederdi';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Yalnızca hisse fiyatına dayanır: temettüler, ücretler ve vergiler dahil değildir. Geçmiş getiriler gelecekteki getirileri öngörmez.';
+
+  @override
+  String get watchShare => 'Listeyi paylaş';
+
+  @override
+  String get watchImport => 'Hisse sembolü ekle';
+
+  @override
+  String get watchImportHint =>
+      'Hisse sembollerini virgül, boşluk veya yeni satırla ayırarak yapıştır – örneğin birinin seninle paylaştığı bir listeyi.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hisse eklendi',
+      one: '1 hisse eklendi',
+      zero: 'Yeni hisse yok',
+    );
+    return '$_temp0';
+  }
 }

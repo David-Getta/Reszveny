@@ -2366,4 +2366,61 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Engetela eka khalendara (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Xilemukiso xa phothifoliyo';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Xitiviso loko phothifoliyo ya wena hinkwayo yi cinca hi mpimo lowu hi siku rin\'we.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Ku timiwile';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Phothifoliyo ya wena yi tlakukile hi $percent namuntlha';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Phothifoliyo ya wena yi rhelerile hi $percent namuntlha';
+  }
+
+  @override
+  String get whatIfTitle => 'Swi ta va njhani loko a wu vekisile?';
+
+  @override
+  String get whatIfAmount => 'Ntsengo';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return 'Loko a wu vekisile $amount hi nkarhi wa $period, namuntlha a swi ta va na nkoka wa';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Swi sekeriwile ntsena eka nxavo wa xiave: dividende, mihakelo ni xibalo a swi katsiwanga. Mbuyelo wa khale a wu vuli wa vumundzuku.';
+
+  @override
+  String get watchShare => 'Avelana nxaxamelo';
+
+  @override
+  String get watchImport => 'Engetela ti-ticker';
+
+  @override
+  String get watchImportHint =>
+      'Namarheta ti-ticker leti hambanisiweke hi tikhoma, swivandla kumbe tilayini letintshwa – xikombiso, nxaxamelo lowu munhu a wu avelaneke na wena.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ku engeteriwe tixere ta $count',
+      one: 'Ku engeteriwe xere yin\'we',
+      zero: 'A ku na tixere letintshwa',
+    );
+    return '$_temp0';
+  }
 }

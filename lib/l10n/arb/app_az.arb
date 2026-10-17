@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Təqvimə əlavə et (.ics)",
   "portfolioAnnualReturn": "İllik gəlirlilik",
   "portfolioPerYear": "{percent} / il",
-  "portfolioAnnualReturnHint": "Pul axınları ilə çəkili illik gəlirlilik (XIRR): nə vaxt aldığınızı və satdığınızı nəzərə alır, buna görə sonradan əlavə edilən pul onu təhrif etmir. İlk alışınızdan ən azı bir il keçdikdə göstərilir; dividendlər daxil deyil."
+  "portfolioAnnualReturnHint": "Pul axınları ilə çəkili illik gəlirlilik (XIRR): nə vaxt aldığınızı və satdığınızı nəzərə alır, buna görə sonradan əlavə edilən pul onu təhrif etmir. İlk alışınızdan ən azı bir il keçdikdə göstərilir; dividendlər daxil deyil.",
+  "portfolioMoveAlertTitle": "Portfel bildirişi",
+  "portfolioMoveAlertSubtitle": "Bütün portfeliniz bir gündə bu qədər dəyişəndə bildiriş.",
+  "portfolioMoveAlertOff": "Söndürülüb",
+  "portfolioMoveUp": "Portfeliniz bu gün {percent} artıb",
+  "portfolioMoveDown": "Portfeliniz bu gün {percent} azalıb",
+  "whatIfTitle": "İnvestisiya etsəydiniz nə olardı?",
+  "whatIfAmount": "Məbləğ",
+  "whatIfResult": "{period} əvvəl yatırılan {amount} bu gün bu qədər olardı",
+  "whatIfNote": "Yalnız səhm qiymətinə əsaslanır: dividendlər, komissiyalar və vergilər daxil deyil. Keçmiş gəlirlər gələcək gəlirləri proqnozlaşdırmır.",
+  "watchShare": "Siyahını paylaş",
+  "watchImport": "Tiker əlavə et",
+  "watchImportHint": "Tikerləri vergül, boşluq və ya yeni sətirlə ayıraraq yapışdırın – məsələn, kiminsə sizinlə paylaşdığı siyahını.",
+  "watchImported": "{count, plural, =0{Yeni səhm yoxdur} =1{1 səhm əlavə olundu} other{{count} səhm əlavə olundu}}"
 }

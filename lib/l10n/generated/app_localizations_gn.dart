@@ -2355,4 +2355,61 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Embojuaju arapapahápe (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Portafólio marandu';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Marandu nde portafólio entero oñemonguʼe péicha peteĩ árape.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Mbogue';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Nde portafólio ojupi $percent ko árape';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Nde portafólio oguejy $percent ko árape';
+  }
+
+  @override
+  String get whatIfTitle => 'Mbaʼéichapa oikóta reinvertíramo?';
+
+  @override
+  String get whatIfAmount => 'Mboýpa';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount oñeinvertíva $period mboyve hepýta ko árape';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Oñemopyenda acción repy añónte: ndoikéi dividendo, ñehepymeʼẽ ha impuesto. Ganancia ohasavaʼekue ndohechaukái tenondeguáva.';
+
+  @override
+  String get watchShare => 'Emoherakuã lista';
+
+  @override
+  String get watchImport => 'Embojoaju símbolo';
+
+  @override
+  String get watchImportHint =>
+      'Emboja símbolo-kuéra ojeipeʼáva coma, paʼũ térã línea pyahu rupive – techapyrã, peteĩ lista ojekomparti vaʼekue nendive.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Oñembojoaju $count acción',
+      one: 'Oñembojoaju 1 acción',
+      zero: 'Ndaipóri acción pyahu',
+    );
+    return '$_temp0';
+  }
 }

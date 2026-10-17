@@ -2357,4 +2357,61 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Yika mu kalandrie (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Nkebisu ya portefeuille';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Nkebisu ntangu portefeuille na nge yonso me kukidi mutindu yai na kilumbu mosi.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Me kangama';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Portefeuille na nge me tombuka $percent unu';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Portefeuille na nge me kulumuka $percent unu';
+  }
+
+  @override
+  String get whatIfTitle => 'Inki zolaka kuvanda kana nge tulaka mbongo?';
+
+  @override
+  String get whatIfAmount => 'Ntalu';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount yina nge tulaka na ntangu ya $period zolaka kuvanda ti ntalu bubu yai ya';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Yo me simbama kaka na ntalu ya action: badividende, bafrè ti bimpôt kele ve na kati. Mbasa ya ntama ke songaka ve yina ta kwisa.';
+
+  @override
+  String get watchShare => 'Kabula lisiti';
+
+  @override
+  String get watchImport => 'Yika bidimbu ya ticker';
+
+  @override
+  String get watchImportHint =>
+      'Tula bidimbu ya ticker yina me kabwana na virgule, kisika ya mpamba to ndonga ya mpa – mu mbandu, lisiti yina muntu mosi me kabudila nge.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Baaksio $count me kota',
+      one: 'Aksio 1 me kota',
+      zero: 'Ata aksio mosi ya mpa ve',
+    );
+    return '$_temp0';
+  }
 }

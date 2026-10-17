@@ -627,5 +627,18 @@
   "portfolioAnnualReturn": "Éves hozam",
   "portfolioPerYear": "{percent} / év",
   "portfolioAnnualReturnHint": "Pénzsúlyozott éves hozam (XIRR): számít, mikor vettél és adtál el, így a később betett pénz nem torzítja. Akkor látszik, ha az első vételed legalább egyéves; az osztalék nincs benne.",
-  "eventsAddToCalendar": "Hozzáadás a naptárhoz (.ics)"
+  "eventsAddToCalendar": "Hozzáadás a naptárhoz (.ics)",
+  "portfolioMoveAlertTitle": "Portfólió-riasztás",
+  "portfolioMoveAlertSubtitle": "Értesítés, ha a teljes portfóliód egy nap alatt ennyit mozdul.",
+  "portfolioMoveAlertOff": "Ki",
+  "portfolioMoveUp": "A portfóliód ma {percent}-kal emelkedett",
+  "portfolioMoveDown": "A portfóliód ma {percent}-kal esett",
+  "whatIfTitle": "Mi lett volna, ha befektetsz?",
+  "whatIfAmount": "Összeg",
+  "whatIfResult": "{period} ezelőtt befektetett {amount} ma ennyit érne",
+  "whatIfNote": "Csak az árfolyam alapján: az osztalék, a díjak és az adó nincs benne. A múltbeli hozam nem jelzi előre a jövőbelit.",
+  "watchShare": "Lista megosztása",
+  "watchImport": "Tickerek hozzáadása",
+  "watchImportHint": "Illeszd be a tickereket vesszővel, szóközzel vagy új sorral elválasztva – például egy listát, amit valaki megosztott veled.",
+  "watchImported": "{count, plural, =0{Nincs új részvény} =1{1 részvény hozzáadva} other{{count} részvény hozzáadva}}"
 }

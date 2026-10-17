@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Fara kalandiriye kan (.ics)",
   "portfolioAnnualReturn": "San o san tɔnɔ",
   "portfolioPerYear": "{percent} / san",
-  "portfolioAnnualReturnHint": "Tɔnɔ san o san min sumana ni wari ye (XIRR): a bɛ i ka sanni ni i ka feereli waati jate, o la wari min farala a kan kɔfɛ, o tɛ a tiɲɛ. A bɛ jira ni i ka sanni fɔlɔ sera san kelen ma walima ka tɛmɛ; tɔnɔ tilali tɛ a la."
+  "portfolioAnnualReturnHint": "Tɔnɔ san o san min sumana ni wari ye (XIRR): a bɛ i ka sanni ni i ka feereli waati jate, o la wari min farala a kan kɔfɛ, o tɛ a tiɲɛ. A bɛ jira ni i ka sanni fɔlɔ sera san kelen ma walima ka tɛmɛ; tɔnɔ tilali tɛ a la.",
+  "portfolioMoveAlertTitle": "Portfolio lasɔmini",
+  "portfolioMoveAlertSubtitle": "Kunnafoni ni i ka portfolio bɛɛ yɛlɛmana nin hakɛ ye tile kelen kɔnɔ.",
+  "portfolioMoveAlertOff": "Datugulen",
+  "portfolioMoveUp": "I ka portfolio yɛlɛla {percent} bi",
+  "portfolioMoveDown": "I ka portfolio jiginna {percent} bi",
+  "whatIfTitle": "N'i tun ye wari don, a tun bɛna kɛ di?",
+  "whatIfAmount": "Hakɛ",
+  "whatIfResult": "N'i tun ye {amount} don {period} kɔfɛ, a sɔngɔ tun bɛna kɛ bi",
+  "whatIfNote": "A sinsinnen bɛ aksiyɔn sɔngɔ dɔrɔn kan: tɔnɔ tilali, sara ni nisɔngɔw tɛ a la. Tɛmɛnen tɔnɔw tɛ nata tɔnɔw jira.",
+  "watchShare": "Lisi nin tila",
+  "watchImport": "Aksiyɔn taamasiyɛnw fara a kan",
+  "watchImportHint": "Aksiyɔn taamasiyɛnw bila, u faranni ni virgule, yɔrɔ lankolon walima sira kura ye – misali la, lisi min mɔgɔ dɔ ye tila i ni.",
+  "watchImported": "{count, plural, =0{Aksiyɔn kura si tɛ} =1{Aksiyɔn 1 farala a kan} other{Aksiyɔn {count} farala a kan}}"
 }

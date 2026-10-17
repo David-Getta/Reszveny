@@ -2344,4 +2344,61 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Ɓeydu e kalandiye (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Jeertinol portfolio';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Tintinol so portfolio maa fof wayliima ɗuum e ñalawma gootal.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Ñifaama';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Portfolio maa ɓeydiima $percent hannde';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Portfolio maa ustiima $percent hannde';
+  }
+
+  @override
+  String get whatIfTitle => 'Si a waɗii ceede, hol ko ɗum wonata?';
+
+  @override
+  String get whatIfAmount => 'Limoore';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return 'Si a waɗii $amount e nder $period, hannde ɗum foti';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Ina tuugii e coggu aksiyoŋ tan: geɗal nafoore, njoɓdi e lempooji naataani. Ŋeɗu ɓennuɗu hollataa ko arata.';
+
+  @override
+  String get watchShare => 'Senndu doggol ngol';
+
+  @override
+  String get watchImport => 'Ɓeydu kod aksiyoŋ';
+
+  @override
+  String get watchImportHint =>
+      'Ɓortin kod aksiyoŋ seerndaaɗi ko virgule, ɓolɗe walla diiɗe kese – ko wayi no doggol goɗɗo senndii e maaɗa.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Aksiyoŋuuji $count ɓeydaama',
+      one: 'Aksiyoŋ 1 ɓeydaama',
+      zero: 'Alaa aksiyoŋ kesol',
+    );
+    return '$_temp0';
+  }
 }

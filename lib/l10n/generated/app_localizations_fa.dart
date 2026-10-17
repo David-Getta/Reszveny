@@ -2346,4 +2346,61 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'افزودن به تقویم (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'هشدار سبد سهام';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'اعلانی وقتی کل سبد سهام شما در یک روز این‌قدر تغییر کند.';
+
+  @override
+  String get portfolioMoveAlertOff => 'خاموش';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'سبد سهام شما امروز $percent بالا رفت';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'سبد سهام شما امروز $percent پایین آمد';
+  }
+
+  @override
+  String get whatIfTitle => 'اگر سرمایه‌گذاری می‌کردید چه می‌شد؟';
+
+  @override
+  String get whatIfAmount => 'مبلغ';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount که $period پیش سرمایه‌گذاری شده بود، امروز می‌ارزید';
+  }
+
+  @override
+  String get whatIfNote =>
+      'فقط بر اساس قیمت سهم: سود نقدی، کارمزدها و مالیات لحاظ نشده‌اند. بازده گذشته پیش‌بینی‌کنندهٔ بازده آینده نیست.';
+
+  @override
+  String get watchShare => 'اشتراک‌گذاری فهرست';
+
+  @override
+  String get watchImport => 'افزودن نمادها';
+
+  @override
+  String get watchImportHint =>
+      'نمادهای سهام را جدا‌شده با ویرگول، فاصله یا خط جدید جای‌گذاری کنید – مثلاً فهرستی که کسی با شما به اشتراک گذاشته است.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count سهم افزوده شد',
+      one: '1 سهم افزوده شد',
+      zero: 'سهم جدیدی نیست',
+    );
+    return '$_temp0';
+  }
 }

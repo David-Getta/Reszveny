@@ -2364,4 +2364,61 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Kenya khalendareng (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Temoso ya phothefolio';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Tsebiso ha phothefolio ya hao kaofela e fetoha hakana ka letsatsi le le leng.';
+
+  @override
+  String get portfolioMoveAlertOff => 'E timile';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Phothefolio ya hao e nyolohile ka $percent kajeno';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Phothefolio ya hao e theohile ka $percent kajeno';
+  }
+
+  @override
+  String get whatIfTitle => 'Ho ka be ho le jwang ha o ne o tsetetse?';
+
+  @override
+  String get whatIfAmount => 'Palo';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return 'Ha o ne o tsetetse $amount ka nako ya $period, kajeno e ne e tla ba ya boleng ba';
+  }
+
+  @override
+  String get whatIfNote =>
+      'E thehilwe feela hodima theko ya seabo: dividende, ditefello le lekgetho ha di a kenyeletswa. Dipoelo tsa nako e fetileng ha di bolele esale pele tsa nako e tlang.';
+
+  @override
+  String get watchShare => 'Arolelana lenane';
+
+  @override
+  String get watchImport => 'Kenya di-ticker';
+
+  @override
+  String get watchImportHint =>
+      'Kgomaretsa di-ticker tse arohantsweng ka dikhoma, dibaka tse se nang letho kapa mela e metjha – mohlala, lenane leo motho e mong a le arolelaneng le wena.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ho eketsitswe dishere tse $count',
+      one: 'Ho eketsitswe shere e le nngwe',
+      zero: 'Ha ho na dishere tse ntjha',
+    );
+    return '$_temp0';
+  }
 }

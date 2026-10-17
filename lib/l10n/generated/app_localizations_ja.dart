@@ -2272,4 +2272,60 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'カレンダーに追加 (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'ポートフォリオ通知';
+
+  @override
+  String get portfolioMoveAlertSubtitle => 'ポートフォリオ全体が1日でこれだけ動いたときに通知します。';
+
+  @override
+  String get portfolioMoveAlertOff => 'オフ';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return '本日、ポートフォリオが$percent上昇しました';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return '本日、ポートフォリオが$percent下落しました';
+  }
+
+  @override
+  String get whatIfTitle => 'もし投資していたら？';
+
+  @override
+  String get whatIfAmount => '金額';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$period前に投資した$amountの現在の価値';
+  }
+
+  @override
+  String get whatIfNote =>
+      '株価のみに基づく計算です。配当、手数料、税金は含まれません。過去のリターンは将来のリターンを示すものではありません。';
+
+  @override
+  String get watchShare => 'リストを共有';
+
+  @override
+  String get watchImport => 'ティッカーを追加';
+
+  @override
+  String get watchImportHint =>
+      'ティッカーシンボルをカンマ、スペース、または改行で区切って貼り付けてください（例：誰かから共有されたリスト）。';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 銘柄を追加しました',
+      one: '1 銘柄を追加しました',
+      zero: '新しい銘柄はありません',
+    );
+    return '$_temp0';
+  }
 }

@@ -2350,4 +2350,61 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Ongeza kwenye kalenda (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Tahadhari ya jalada';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Arifa wakati jalada lako lote linaposogea kiasi hiki kwa siku moja.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Imezimwa';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Jalada lako limepanda $percent leo';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Jalada lako limeshuka $percent leo';
+  }
+
+  @override
+  String get whatIfTitle => 'Je, kama ungewekeza?';
+
+  @override
+  String get whatIfAmount => 'Kiasi';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return 'Uwekezaji wa $amount kwa kipindi cha $period leo ungekuwa na thamani ya';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Imetokana na bei ya hisa pekee: gawio, ada na kodi hazijajumuishwa. Faida za zamani hazitabiri za baadaye.';
+
+  @override
+  String get watchShare => 'Shiriki orodha';
+
+  @override
+  String get watchImport => 'Ongeza ticker';
+
+  @override
+  String get watchImportHint =>
+      'Bandika ticker zilizotenganishwa kwa koma, nafasi au mistari mipya – kwa mfano orodha ambayo mtu amekushirikisha.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Hisa $count zimeongezwa',
+      one: 'Hisa 1 imeongezwa',
+      zero: 'Hakuna hisa mpya',
+    );
+    return '$_temp0';
+  }
 }

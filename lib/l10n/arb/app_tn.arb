@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Tsenya mo khalendareng (.ics)",
   "portfolioAnnualReturn": "Poelo ya ngwaga",
   "portfolioPerYear": "{percent} / ngwaga",
-  "portfolioAnnualReturnHint": "Poelo ya ngwaga e e lekanngwang ka madi (XIRR): e tsaya tsia gore o rekile le go rekisa leng, ka jalo madi a a okeditsweng moragonyana ga a e sokamise. E bontshiwa fa theko ya gago ya ntlha e setse e na le ngwaga bonnye; dividende ga e a akarediwa."
+  "portfolioAnnualReturnHint": "Poelo ya ngwaga e e lekanngwang ka madi (XIRR): e tsaya tsia gore o rekile le go rekisa leng, ka jalo madi a a okeditsweng moragonyana ga a e sokamise. E bontshiwa fa theko ya gago ya ntlha e setse e na le ngwaga bonnye; dividende ga e a akarediwa.",
+  "portfolioMoveAlertTitle": "Tlhagiso ya phothefolio",
+  "portfolioMoveAlertSubtitle": "Kitsiso fa phothefolio ya gago yotlhe e fetoga go le kalo ka letsatsi le le lengwe.",
+  "portfolioMoveAlertOff": "E timilwe",
+  "portfolioMoveUp": "Phothefolio ya gago e oketsegile ka {percent} gompieno",
+  "portfolioMoveDown": "Phothefolio ya gago e fokotsegile ka {percent} gompieno",
+  "whatIfTitle": "Go ka bo go ntse jang fa o ka bo o beeleditse?",
+  "whatIfAmount": "Palo",
+  "whatIfResult": "Fa o ka bo o beeleditse {amount} ka paka ya {period}, gompieno e ka bo e le boleng jwa",
+  "whatIfNote": "Go theilwe fela mo tlhwatlhwa ya seabe: dividende, dituelo le lekgetho ga di a akarediwa. Dipoelo tsa nako e e fetileng ga di bolelele pele tsa isago.",
+  "watchShare": "Abelana lenaane",
+  "watchImport": "Tsenya di-ticker",
+  "watchImportHint": "Kgomaretsa di-ticker tse di kgaoganngwang ka dikhoma, sekgala kgotsa mela e mesha – sekai, lenaane le mongwe a le abelaneng le wena.",
+  "watchImported": "{count, plural, =0{Ga go na dishere tse dintšhwa} =1{Go okeditswe shere e le nngwe} other{Go okeditswe dishere di le {count}}}"
 }

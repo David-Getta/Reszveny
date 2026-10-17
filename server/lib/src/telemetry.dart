@@ -63,6 +63,8 @@ class TelemetryStore {
     'targets_set',
     'backup_saved',
     'calendar_exported',
+    'portfolio_move',
+    'tickers_imported',
     'backup_restored',
     'bulk_alerts',
   };

@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Thêm vào lịch (.ics)",
   "portfolioAnnualReturn": "Lợi nhuận hằng năm",
   "portfolioPerYear": "{percent} / năm",
-  "portfolioAnnualReturnHint": "Lợi nhuận hằng năm theo trọng số tiền (XIRR): tính đến thời điểm bạn mua và bán, nên tiền nạp thêm sau này không làm sai lệch con số. Hiển thị khi lần mua đầu tiên của bạn đã được ít nhất một năm; không bao gồm cổ tức."
+  "portfolioAnnualReturnHint": "Lợi nhuận hằng năm theo trọng số tiền (XIRR): tính đến thời điểm bạn mua và bán, nên tiền nạp thêm sau này không làm sai lệch con số. Hiển thị khi lần mua đầu tiên của bạn đã được ít nhất một năm; không bao gồm cổ tức.",
+  "portfolioMoveAlertTitle": "Cảnh báo danh mục",
+  "portfolioMoveAlertSubtitle": "Thông báo khi toàn bộ danh mục của bạn biến động chừng này trong một ngày.",
+  "portfolioMoveAlertOff": "Tắt",
+  "portfolioMoveUp": "Danh mục của bạn hôm nay tăng {percent}",
+  "portfolioMoveDown": "Danh mục của bạn hôm nay giảm {percent}",
+  "whatIfTitle": "Nếu bạn đã đầu tư thì sao?",
+  "whatIfAmount": "Số tiền",
+  "whatIfResult": "{amount} đầu tư từ {period} trước sẽ có giá trị hôm nay là",
+  "whatIfNote": "Chỉ dựa trên giá cổ phiếu: không bao gồm cổ tức, phí và thuế. Lợi nhuận trong quá khứ không dự báo lợi nhuận tương lai.",
+  "watchShare": "Chia sẻ danh sách",
+  "watchImport": "Thêm mã cổ phiếu",
+  "watchImportHint": "Dán các mã cổ phiếu, phân tách bằng dấu phẩy, dấu cách hoặc xuống dòng – ví dụ một danh sách ai đó đã chia sẻ với bạn.",
+  "watchImported": "{count, plural, =0{Không có cổ phiếu mới} =1{Đã thêm 1 cổ phiếu} other{Đã thêm {count} cổ phiếu}}"
 }

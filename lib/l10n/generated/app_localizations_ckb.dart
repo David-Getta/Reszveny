@@ -2351,4 +2351,61 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'زیادکردن بۆ ڕۆژژمێر (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'ئاگاداری پۆرتفۆلیۆ';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'ئاگادارکردنەوەیەک کاتێک هەموو پۆرتفۆلیۆکەت لە ڕۆژێکدا ئەوەندە دەجووڵێت.';
+
+  @override
+  String get portfolioMoveAlertOff => 'کوژاوە';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'پۆرتفۆلیۆکەت ئەمڕۆ $percent بەرز بووەوە';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'پۆرتفۆلیۆکەت ئەمڕۆ $percent دابەزی';
+  }
+
+  @override
+  String get whatIfTitle => 'ئەگەر وەبەرهێنانت کردبا؟';
+
+  @override
+  String get whatIfAmount => 'بڕ';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount کە $period لەمەوبەر وەبەرهێنرابا، ئەمڕۆ بەهاکەی دەبوو';
+  }
+
+  @override
+  String get whatIfNote =>
+      'تەنها لەسەر بنەمای نرخی پشکە: قازانجی پشک، کرێ و باج لەخۆ ناگرێت. داهاتی ڕابردوو پێشبینی داهاتی داهاتوو ناکات.';
+
+  @override
+  String get watchShare => 'هاوبەشکردنی لیستەکە';
+
+  @override
+  String get watchImport => 'زیادکردنی هێمای پشکەکان';
+
+  @override
+  String get watchImportHint =>
+      'هێمای پشکەکان بلکێنە کە بە کۆما، بۆشایی یان هێڵی نوێ جیا کراونەتەوە – بۆ نموونە لیستێک کە کەسێک لەگەڵت هاوبەشی کردووە.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count پشک زیادکران',
+      one: '1 پشک زیادکرا',
+      zero: 'هیچ پشکێکی نوێ نییە',
+    );
+    return '$_temp0';
+  }
 }

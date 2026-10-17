@@ -2357,4 +2357,61 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Ավելացնել օրացույցում (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Պորտֆելի ծանուցում';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Ծանուցում, երբ ամբողջ պորտֆելը մեկ օրում այսքան է փոխվում։';
+
+  @override
+  String get portfolioMoveAlertOff => 'Անջատված';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Պորտֆելն այսօր աճել է $percent-ով';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Պորտֆելն այսօր նվազել է $percent-ով';
+  }
+
+  @override
+  String get whatIfTitle => 'Իսկ եթե ներդնեիք?';
+
+  @override
+  String get whatIfAmount => 'Գումար';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$period առաջ ներդրված $amount այսօր կարժենար';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Միայն բաժնետոմսի գնի հիման վրա․ շահաբաժինները, միջնորդավճարները և հարկերը ներառված չեն։ Անցյալ եկամտաբերությունը չի կանխատեսում ապագան։';
+
+  @override
+  String get watchShare => 'Կիսվել ցուցակով';
+
+  @override
+  String get watchImport => 'Ավելացնել թիքերներ';
+
+  @override
+  String get watchImportHint =>
+      'Տեղադրեք թիքերները՝ բաժանված ստորակետերով, բացատներով կամ նոր տողերով, օրինակ՝ ինչ-որ մեկի կողմից ձեզ հետ կիսված ցուցակ։';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ավելացվեց $count բաժնետոմս',
+      one: 'Ավելացվեց 1 բաժնետոմս',
+      zero: 'Նոր բաժնետոմսեր չկան',
+    );
+    return '$_temp0';
+  }
 }

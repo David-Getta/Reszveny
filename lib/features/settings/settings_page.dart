@@ -302,6 +302,8 @@ class SettingsPage extends StatelessWidget {
                             onChanged: services.preferences.setEarningsReminders,
                           ),
                         ),
+                        const Divider(height: 1),
+                        const _PortfolioMoveTile(),
                       ],
                     ),
                   ),
@@ -765,6 +767,38 @@ class _DoubleOptionTile extends StatelessWidget {
           ],
         );
       },
+    );
+  }
+}
+
+/// Portfólió-riasztás: ki, vagy értesítés ±2 / 3 / 5%-os napi mozgásnál.
+class _PortfolioMoveTile extends StatelessWidget {
+  const _PortfolioMoveTile();
+
+  @override
+  Widget build(BuildContext context) {
+    final services = AppServices.of(context);
+    final l10n = AppLocalizations.of(context);
+    final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
+    final prefs = services.preferences;
+    return ListenableBuilder(
+      listenable: prefs,
+      builder: (context, _) => ListTile(
+        leading: const Icon(Icons.pie_chart_outline_rounded),
+        title: Text(l10n.portfolioMoveAlertTitle),
+        subtitle: Text(l10n.portfolioMoveAlertSubtitle),
+        trailing: DropdownButton<double>(
+          key: const ValueKey('portfolio-move-alert'),
+          value: prefs.portfolioMoveAlert,
+          underline: const SizedBox.shrink(),
+          items: [
+            DropdownMenuItem(value: 0, child: Text(l10n.portfolioMoveAlertOff)),
+            for (final v in AppPreferences.portfolioMoveSteps)
+              DropdownMenuItem(value: v, child: Text('±${fmt.percent(v, decimals: 0)}')),
+          ],
+          onChanged: (v) => prefs.setPortfolioMoveAlert(v ?? 0),
+        ),
+      ),
     );
   }
 }

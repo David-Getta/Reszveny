@@ -2239,6 +2239,60 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => '添加到日历 (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => '持仓异动提醒';
+
+  @override
+  String get portfolioMoveAlertSubtitle => '当你的整体持仓单日波动达到此幅度时发送通知。';
+
+  @override
+  String get portfolioMoveAlertOff => '关闭';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return '你的持仓今日上涨 $percent';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return '你的持仓今日下跌 $percent';
+  }
+
+  @override
+  String get whatIfTitle => '如果当初投资了呢？';
+
+  @override
+  String get whatIfAmount => '金额';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$period前投资的$amount，现在价值';
+  }
+
+  @override
+  String get whatIfNote => '仅基于股价计算：不含股息、费用和税费。过往回报不代表未来表现。';
+
+  @override
+  String get watchShare => '分享列表';
+
+  @override
+  String get watchImport => '添加股票代码';
+
+  @override
+  String get watchImportHint => '粘贴以逗号、空格或换行分隔的股票代码，例如别人分享给你的列表。';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '已添加 $count 只股票',
+      one: '已添加 1 只股票',
+      zero: '没有新股票',
+    );
+    return '$_temp0';
+  }
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -4474,4 +4528,58 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get eventsAddToCalendar => '加入日曆 (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => '持倉異動提示';
+
+  @override
+  String get portfolioMoveAlertSubtitle => '當你的整體持倉單日波動達到此幅度時發出通知。';
+
+  @override
+  String get portfolioMoveAlertOff => '關閉';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return '你的持倉今日上升 $percent';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return '你的持倉今日下跌 $percent';
+  }
+
+  @override
+  String get whatIfTitle => '如果當初投資了？';
+
+  @override
+  String get whatIfAmount => '金額';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$period前投資的$amount，現時價值';
+  }
+
+  @override
+  String get whatIfNote => '只按股價計算：不包括股息、費用及稅項。過往回報並不預示未來表現。';
+
+  @override
+  String get watchShare => '分享清單';
+
+  @override
+  String get watchImport => '加入股票代號';
+
+  @override
+  String get watchImportHint => '貼上以逗號、空格或換行分隔的股票代號，例如別人分享給你的清單。';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '已加入 $count 隻股票',
+      one: '已加入 1 隻股票',
+      zero: '沒有新股票',
+    );
+    return '$_temp0';
+  }
 }

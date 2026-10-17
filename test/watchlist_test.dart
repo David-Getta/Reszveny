@@ -3,6 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:reszveny/app.dart';
 import 'package:reszveny/core/app_preferences.dart';
+import 'package:reszveny/core/share/share_text.dart';
 import 'package:reszveny/features/alerts/price_alert.dart';
 import 'package:reszveny/features/sync/sync_service.dart';
 import 'package:reszveny/features/home/watchlist_page.dart';
@@ -208,5 +209,50 @@ void main() {
     await tester.pumpAndSettle();
     expect(s.preferences.watchLists, isEmpty);
     expect(find.byKey(const ValueKey('watch-MSFT')), findsOneWidget);
+  });
+
+  test('tickers are read from pasted text', () {
+    expect(parseTickers('aapl, MSFT;  \$nvda\nOTP.BD 2024 brk-b aapl ##'), ['AAPL', 'MSFT', 'NVDA', 'OTP.BD', 'BRK-B']);
+    expect(parseTickers(''), isEmpty);
+  });
+
+  testWidgets('share a list as text and paste tickers into another one', (tester) async {
+    tester.view.physicalSize = const Size(1200, 2400);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final shared = <String>[];
+    final original = shareText;
+    shareText = (text, {subject, origin}) async => shared.add('$subject|$text');
+    addTearDown(() => shareText = original);
+    final s = services();
+    await s.preferences.setFavorites(['MSFT', 'AAPL']);
+    await s.preferences.addWatchList('Chips');
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('favorites-see-all')));
+    await tester.pumpAndSettle();
+
+    await tester.tap(find.byKey(const ValueKey('watch-list-menu')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('watch-share')));
+    await tester.pumpAndSettle();
+    expect(shared.single, 'WhatStock · Favorites|MSFT, AAPL');
+
+    // A „Chips” listába beillesztve: a kedvencekhez és a listához is bekerülnek.
+    await tester.tap(find.byKey(const ValueKey('watch-list-Chips')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('watch-list-menu')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('watch-import')));
+    await tester.pumpAndSettle();
+    expect(tester.widget<FilledButton>(find.byKey(const ValueKey('watch-import-ok'))).onPressed, isNull);
+    await tester.enterText(find.byKey(const ValueKey('watch-import-text')), 'nvda, AMD\nmsft');
+    await tester.pumpAndSettle();
+    expect(find.text('NVDA · AMD · MSFT'), findsOneWidget);
+    await tester.tap(find.byKey(const ValueKey('watch-import-ok')));
+    await tester.pumpAndSettle();
+    expect(s.preferences.favorites, ['MSFT', 'AAPL', 'NVDA', 'AMD']);
+    expect(s.preferences.watchLists.single.symbols, ['NVDA', 'AMD', 'MSFT']);
+    expect(find.text('3 stocks added'), findsOneWidget);
   });
 }

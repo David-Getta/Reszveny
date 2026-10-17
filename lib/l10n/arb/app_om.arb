@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Kaalaandariitti dabali (.ics)",
   "portfolioAnnualReturn": "Bu'aa waggaa",
   "portfolioPerYear": "{percent} / waggaa",
-  "portfolioAnnualReturnHint": "Bu'aa waggaa maallaqaan madaalame (XIRR): yeroo itti bitte fi gurgurte ni ilaala, kanaaf maallaqni booda dabalame hin jallisu. Erga bittaan kee jalqabaa yoo xiqqaate waggaa tokko guutee booda ni mul'ata; qoodni bu'aa hin dabalamne."
+  "portfolioAnnualReturnHint": "Bu'aa waggaa maallaqaan madaalame (XIRR): yeroo itti bitte fi gurgurte ni ilaala, kanaaf maallaqni booda dabalame hin jallisu. Erga bittaan kee jalqabaa yoo xiqqaate waggaa tokko guutee booda ni mul'ata; qoodni bu'aa hin dabalamne.",
+  "portfolioMoveAlertTitle": "Akeekkachiisa poortfooliyoo",
+  "portfolioMoveAlertSubtitle": "Beeksisa yeroo poortfooliyoon kee guutuun guyyaa tokkotti hammana socho'u.",
+  "portfolioMoveAlertOff": "Cufaa",
+  "portfolioMoveUp": "Poortfooliyoon kee har'a {percent} ol ka'eera",
+  "portfolioMoveDown": "Poortfooliyoon kee har'a {percent} gad bu'eera",
+  "whatIfTitle": "Osoo invastii gootee jiraattee hoo?",
+  "whatIfAmount": "Hanga",
+  "whatIfResult": "{amount} {period} dura invastii godhame har'a gatii kana qabaata ture",
+  "whatIfNote": "Gatii aksiyoonaa qofa irratti hundaa'a: qoodni bu'aa, kaffaltiin tajaajilaa fi gibirri hin hammatamne. Bu'aan darbe kan gara fuulduraa hin raaguu.",
+  "watchShare": "Tarree qoodi",
+  "watchImport": "Mallattoo aksiyoonaa dabali",
+  "watchImportHint": "Mallattoo aksiyoonaa qoodduu, iddoo duwwaa ykn sarara haaraan addaan baafaman maxxansi – fakkeenyaaf tarree namni tokko siif qoode.",
+  "watchImported": "{count, plural, =0{Aksiyoonni haaraan hin jiru} =1{Aksiyoonni 1 dabalameera} other{Aksiyoonni {count} dabalamaniiru}}"
 }

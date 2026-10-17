@@ -2347,4 +2347,61 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'දින දර්ශනයට එක් කරන්න (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'කළඹ ඇඟවීම';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'ඔබේ මුළු කළඹම එක දිනකදී මෙතරම් වෙනස් වූ විට දැනුම්දීමක්.';
+
+  @override
+  String get portfolioMoveAlertOff => 'අක්‍රියයි';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'ඔබේ කළඹ අද $percentකින් ඉහළ ගියේය';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'ඔබේ කළඹ අද $percentකින් පහළ ගියේය';
+  }
+
+  @override
+  String get whatIfTitle => 'ඔබ ආයෝජනය කළා නම්?';
+
+  @override
+  String get whatIfAmount => 'මුදල';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$periodකට පෙර ආයෝජනය කළ $amount අද වටින්නේ';
+  }
+
+  @override
+  String get whatIfNote =>
+      'කොටස් මිල මත පමණක් පදනම් වේ: ලාභාංශ, ගාස්තු සහ බදු ඇතුළත් නොවේ. අතීත ප්‍රතිලාභ අනාගත ප්‍රතිලාභ පුරෝකථනය නොකරයි.';
+
+  @override
+  String get watchShare => 'ලැයිස්තුව බෙදා ගන්න';
+
+  @override
+  String get watchImport => 'ටිකර් එක් කරන්න';
+
+  @override
+  String get watchImportHint =>
+      'කොමා, හිස්තැන් හෝ නව පේළි මගින් වෙන් කළ ටිකර් අලවන්න – උදාහරණයක් ලෙස, යමෙකු ඔබ සමඟ බෙදා ගත් ලැයිස්තුවක්.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'කොටස් $countක් එක් කළා',
+      one: 'කොටසක් එක් කළා',
+      zero: 'නව කොටස් නැත',
+    );
+    return '$_temp0';
+  }
 }

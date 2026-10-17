@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Engadir ao calendario (.ics)",
   "portfolioAnnualReturn": "Rendibilidade anual",
   "portfolioPerYear": "{percent} / ano",
-  "portfolioAnnualReturnHint": "Rendibilidade anual ponderada polo capital (XIRR): ten en conta cando compraches e vendiches, así que os cartos engadidos máis tarde non a distorsionan. Móstrase cando a túa primeira compra ten polo menos un ano; non inclúe dividendos."
+  "portfolioAnnualReturnHint": "Rendibilidade anual ponderada polo capital (XIRR): ten en conta cando compraches e vendiches, así que os cartos engadidos máis tarde non a distorsionan. Móstrase cando a túa primeira compra ten polo menos un ano; non inclúe dividendos.",
+  "portfolioMoveAlertTitle": "Alerta de carteira",
+  "portfolioMoveAlertSubtitle": "Unha notificación cando toda a túa carteira se move tanto nun día.",
+  "portfolioMoveAlertOff": "Desactivada",
+  "portfolioMoveUp": "A túa carteira sobe un {percent} hoxe",
+  "portfolioMoveDown": "A túa carteira baixa un {percent} hoxe",
+  "whatIfTitle": "E se investiras?",
+  "whatIfAmount": "Importe",
+  "whatIfResult": "{amount} investidos hai {period} valerían hoxe",
+  "whatIfNote": "Baseado só no prezo da acción: non inclúe dividendos, comisións nin impostos. As rendibilidades pasadas non predín as futuras.",
+  "watchShare": "Compartir a lista",
+  "watchImport": "Engadir símbolos",
+  "watchImportHint": "Pega símbolos separados por comas, espazos ou saltos de liña; por exemplo, unha lista que alguén compartiu contigo.",
+  "watchImported": "{count, plural, =0{Ningunha acción nova} =1{Engadiuse 1 acción} one{Engadiuse {count} acción} other{Engadíronse {count} accións}}"
 }

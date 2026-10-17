@@ -2343,4 +2343,61 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Thêm vào lịch (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Cảnh báo danh mục';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Thông báo khi toàn bộ danh mục của bạn biến động chừng này trong một ngày.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Tắt';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Danh mục của bạn hôm nay tăng $percent';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Danh mục của bạn hôm nay giảm $percent';
+  }
+
+  @override
+  String get whatIfTitle => 'Nếu bạn đã đầu tư thì sao?';
+
+  @override
+  String get whatIfAmount => 'Số tiền';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount đầu tư từ $period trước sẽ có giá trị hôm nay là';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Chỉ dựa trên giá cổ phiếu: không bao gồm cổ tức, phí và thuế. Lợi nhuận trong quá khứ không dự báo lợi nhuận tương lai.';
+
+  @override
+  String get watchShare => 'Chia sẻ danh sách';
+
+  @override
+  String get watchImport => 'Thêm mã cổ phiếu';
+
+  @override
+  String get watchImportHint =>
+      'Dán các mã cổ phiếu, phân tách bằng dấu phẩy, dấu cách hoặc xuống dòng – ví dụ một danh sách ai đó đã chia sẻ với bạn.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Đã thêm $count cổ phiếu',
+      one: 'Đã thêm 1 cổ phiếu',
+      zero: 'Không có cổ phiếu mới',
+    );
+    return '$_temp0';
+  }
 }

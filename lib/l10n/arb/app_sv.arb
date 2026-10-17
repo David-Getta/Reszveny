@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Lägg till i kalendern (.ics)",
   "portfolioAnnualReturn": "Årlig avkastning",
   "portfolioPerYear": "{percent} / år",
-  "portfolioAnnualReturnHint": "Penningviktad årlig avkastning (XIRR): tar hänsyn till när du köpte och sålde, så pengar som lagts till senare inte förvränger den. Visas när ditt första köp är minst ett år gammalt; utdelningar ingår inte."
+  "portfolioAnnualReturnHint": "Penningviktad årlig avkastning (XIRR): tar hänsyn till när du köpte och sålde, så pengar som lagts till senare inte förvränger den. Visas när ditt första köp är minst ett år gammalt; utdelningar ingår inte.",
+  "portfolioMoveAlertTitle": "Portföljlarm",
+  "portfolioMoveAlertSubtitle": "En notis när hela din portfölj rör sig så mycket på en dag.",
+  "portfolioMoveAlertOff": "Av",
+  "portfolioMoveUp": "Din portfölj är upp {percent} i dag",
+  "portfolioMoveDown": "Din portfölj är ned {percent} i dag",
+  "whatIfTitle": "Tänk om du hade investerat?",
+  "whatIfAmount": "Belopp",
+  "whatIfResult": "{amount} investerat för {period} sedan skulle i dag vara värt",
+  "whatIfNote": "Baseras endast på aktiekursen: utdelningar, avgifter och skatter ingår inte. Historisk avkastning förutsäger inte framtida.",
+  "watchShare": "Dela listan",
+  "watchImport": "Lägg till tickers",
+  "watchImportHint": "Klistra in tickers åtskilda med komma, mellanslag eller radbrytningar – till exempel en lista som någon har delat med dig.",
+  "watchImported": "{count, plural, =0{Inga nya aktier} =1{1 aktie har lagts till} other{{count} aktier har lagts till}}"
 }

@@ -4104,6 +4104,84 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Add to calendar (.ics)'**
   String get eventsAddToCalendar;
+
+  /// No description provided for @portfolioMoveAlertTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Portfolio alert'**
+  String get portfolioMoveAlertTitle;
+
+  /// No description provided for @portfolioMoveAlertSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'A notification when your whole portfolio moves this much in a day.'**
+  String get portfolioMoveAlertSubtitle;
+
+  /// Dropdown option: the portfolio alert is turned off.
+  ///
+  /// In en, this message translates to:
+  /// **'Off'**
+  String get portfolioMoveAlertOff;
+
+  /// Desktop notification title when the whole portfolio rose at least the chosen threshold today; percent like '3.2%'.
+  ///
+  /// In en, this message translates to:
+  /// **'Your portfolio is up {percent} today'**
+  String portfolioMoveUp(String percent);
+
+  /// Same, when it fell.
+  ///
+  /// In en, this message translates to:
+  /// **'Your portfolio is down {percent} today'**
+  String portfolioMoveDown(String percent);
+
+  /// No description provided for @whatIfTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'What if you had invested?'**
+  String get whatIfTitle;
+
+  /// No description provided for @whatIfAmount.
+  ///
+  /// In en, this message translates to:
+  /// **'Amount'**
+  String get whatIfAmount;
+
+  /// Above the big result number on the 'What if' card. {amount} like '1,000.00 USD', {period} like '5 years' (from longTermYears).
+  ///
+  /// In en, this message translates to:
+  /// **'{amount} invested {period} ago would be worth today'**
+  String whatIfResult(String amount, String period);
+
+  /// No description provided for @whatIfNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Based on the share price only: dividends, fees and taxes are not included. Past returns don\'t predict future ones.'**
+  String get whatIfNote;
+
+  /// No description provided for @watchShare.
+  ///
+  /// In en, this message translates to:
+  /// **'Share the list'**
+  String get watchShare;
+
+  /// No description provided for @watchImport.
+  ///
+  /// In en, this message translates to:
+  /// **'Add tickers'**
+  String get watchImport;
+
+  /// No description provided for @watchImportHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Paste tickers separated by commas, spaces or new lines – for example a list someone shared with you.'**
+  String get watchImportHint;
+
+  /// Snackbar after pasting tickers into the favorites.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{No new stocks} =1{1 stock added} other{{count} stocks added}}'**
+  String watchImported(int count);
 }
 
 class _AppLocalizationsDelegate

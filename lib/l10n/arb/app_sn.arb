@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Wedzera kukarenda (.ics)",
   "portfolioAnnualReturn": "Pundutso yegore",
   "portfolioPerYear": "{percent} / gore",
-  "portfolioAnnualReturnHint": "Pundutso yegore inoyerwa nemari (XIRR): inofunga kuti wakatenga uye wakatengesa rini, saka mari inowedzerwa gare gare haiikanganise. Inoratidzwa kana kutenga kwako kwekutanga kwave negore rimwe zvishoma; dhividhendi hadzina kubatanidzwa."
+  "portfolioAnnualReturnHint": "Pundutso yegore inoyerwa nemari (XIRR): inofunga kuti wakatenga uye wakatengesa rini, saka mari inowedzerwa gare gare haiikanganise. Inoratidzwa kana kutenga kwako kwekutanga kwave negore rimwe zvishoma; dhividhendi hadzina kubatanidzwa.",
+  "portfolioMoveAlertTitle": "Yambiro yepotiforiyo",
+  "portfolioMoveAlertSubtitle": "Chiziviso kana potiforiyo yako yose yachinja zvakadai muzuva rimwe.",
+  "portfolioMoveAlertOff": "Yakadzimwa",
+  "portfolioMoveUp": "Potiforiyo yako yakwira ne-{percent} nhasi",
+  "portfolioMoveDown": "Potiforiyo yako yadzika ne-{percent} nhasi",
+  "whatIfTitle": "Dai wakaisa mari?",
+  "whatIfAmount": "Huwandu",
+  "whatIfResult": "Dai wakaisa {amount} mukati me{period}, nhasi zvaizove zvakakosha",
+  "whatIfNote": "Zvinobva pamutengo wechikamu chete: dhividhendi, mari dzekubhadhara nemitero hazvisanganisirwi. Purofiti dzakapfuura hadzifanotaure dzeramangwana.",
+  "watchShare": "Govana rondedzero",
+  "watchImport": "Wedzera ma ticker",
+  "watchImportHint": "Namira ma ticker akaparadzaniswa nemakoma, nzvimbo isina chinhu kana mitsara mitsva – semuenzaniso rondedzero yawakagoverwa nemumwe munhu.",
+  "watchImported": "{count, plural, =0{Hapana masheya matsva} =1{Sheya 1 rawedzerwa} other{Masheya {count} awedzerwa}}"
 }

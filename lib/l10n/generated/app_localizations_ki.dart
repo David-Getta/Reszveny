@@ -2350,4 +2350,61 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Ongerera harĩ kalenda (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Kũmenyithia gwa portfolio';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Imenyithia rĩrĩa portfolio yaku yothe yagarũrũka ũguo mũthenya ũmwe.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Hingĩte';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Portfolio yaku nĩyambata $percent ũmũthĩ';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Portfolio yaku nĩyaharũrũka $percent ũmũthĩ';
+  }
+
+  @override
+  String get whatIfTitle => 'Kũngĩkorũo ũrĩ waigĩte mbeca?';
+
+  @override
+  String get whatIfAmount => 'Mũigana';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount ciigĩtwo kwa ihinda rĩa $period ũmũthĩ ingĩkorũo irĩ na thogora wa';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Ĩrũmĩrĩire thogora wa share wiki: dividend, marĩhi na igooti itiri thĩinĩ. Uumithio wa tene ndũrathaga wa thutha.';
+
+  @override
+  String get watchShare => 'Gaya orodha';
+
+  @override
+  String get watchImport => 'Ongera ticker';
+
+  @override
+  String get watchImportHint =>
+      'Ĩkĩra ticker cia hisa ciamũranĩtio na koma, kanya kana mũhari mwerũ – ta orodha ĩrĩa mũndũ angĩkũgaĩire.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Hisa $count nĩ ciongereirwo',
+      one: 'Hisa 1 nĩ yongereirwo',
+      zero: 'Gũtirĩ hisa njerũ',
+    );
+    return '$_temp0';
+  }
 }

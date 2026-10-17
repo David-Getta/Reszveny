@@ -2345,4 +2345,61 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Tinye na kalenda (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Ọkwa pọtfolio';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Ọkwa mgbe pọtfolio gị niile gbanwere nke a n\'otu ụbọchị.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Agbanyụrụ';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Pọtfolio gị arịgoro $percent taa';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Pọtfolio gị agbadala $percent taa';
+  }
+
+  @override
+  String get whatIfTitle => 'Ọ bụrụ na i tinyere ego?';
+
+  @override
+  String get whatIfAmount => 'Ego ole';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount e tinyere $period gara aga ga-adị ugbu a';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Dabere naanị na ọnụahịa òkè: dividend, ụgwọ ọrụ na ụtụ isi esoghị. Uru gara aga anaghị ebu amụma uru ga-abịa.';
+
+  @override
+  String get watchShare => 'Kesaa ndepụta ahụ';
+
+  @override
+  String get watchImport => 'Tinye akara ticker';
+
+  @override
+  String get watchImportHint =>
+      'Mado akara ticker ndị e ji rịkọm, ohere ma ọ bụ ahịrị ọhụrụ kewaa – dịka ọmụmaatụ, ndepụta mmadụ kesaara gị.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Agbakwunyere òkè $count',
+      one: 'Agbakwunyere òkè 1',
+      zero: 'Enweghị òkè ọhụrụ',
+    );
+    return '$_temp0';
+  }
 }

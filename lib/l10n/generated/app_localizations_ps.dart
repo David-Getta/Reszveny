@@ -2341,4 +2341,61 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'جنتري ته ورزیات کړئ (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'د پورټفولیو خبرتیا';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'خبرتیا کله چې ستاسو ټول پورټفولیو په یوه ورځ کې دومره بدل شي.';
+
+  @override
+  String get portfolioMoveAlertOff => 'بند';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'ستاسو پورټفولیو نن $percent لوړ شو';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'ستاسو پورټفولیو نن $percent ټیټ شو';
+  }
+
+  @override
+  String get whatIfTitle => 'که مو پانګونه کړې وای؟';
+
+  @override
+  String get whatIfAmount => 'مقدار';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount چې $period مخکې پانګونه شوې وای، نن به یې ارزښت وای';
+  }
+
+  @override
+  String get whatIfNote =>
+      'یوازې د ونډې پر بیه ولاړ دی: د ونډې ګټه، فیسونه او مالیات پکې نه دي شامل. تېرې ګټې د راتلونکو وړاندوینه نه کوي.';
+
+  @override
+  String get watchShare => 'لېست شریک کړئ';
+
+  @override
+  String get watchImport => 'ټیکرونه زیات کړئ';
+
+  @override
+  String get watchImportHint =>
+      'هغه ټیکرونه ولګوئ چې په کامې، تشې یا نوې کرښې سره بېل شوي وي – د بېلګې په توګه هغه لېست چې چا درسره شریک کړی وي.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ونډې اضافه شوې',
+      one: '1 ونډه اضافه شوه',
+      zero: 'نوې ونډې نشته',
+    );
+    return '$_temp0';
+  }
 }

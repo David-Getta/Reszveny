@@ -2351,4 +2351,61 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Lisää kalenteriin (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Salkkuhälytys';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Ilmoitus, kun koko salkkusi liikkuu näin paljon päivässä.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Pois';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Salkkusi on tänään $percent plussalla';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Salkkusi on tänään $percent miinuksella';
+  }
+
+  @override
+  String get whatIfTitle => 'Entä jos olisit sijoittanut?';
+
+  @override
+  String get whatIfAmount => 'Summa';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$period sitten sijoitettu $amount olisi tänään arvoltaan';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Perustuu vain osakkeen hintaan: osinkoja, kuluja ja veroja ei ole huomioitu. Aiempi tuotto ei ennusta tulevaa.';
+
+  @override
+  String get watchShare => 'Jaa lista';
+
+  @override
+  String get watchImport => 'Lisää osaketunnuksia';
+
+  @override
+  String get watchImportHint =>
+      'Liitä osaketunnukset pilkuilla, välilyönneillä tai rivinvaihdoilla erotettuina – esimerkiksi lista, jonka joku on jakanut kanssasi.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count osaketta lisätty',
+      one: '1 osake lisätty',
+      zero: 'Ei uusia osakkeita',
+    );
+    return '$_temp0';
+  }
 }

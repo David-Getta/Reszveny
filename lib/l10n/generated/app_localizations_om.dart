@@ -2358,4 +2358,61 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Kaalaandariitti dabali (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Akeekkachiisa poortfooliyoo';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Beeksisa yeroo poortfooliyoon kee guutuun guyyaa tokkotti hammana socho\'u.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Cufaa';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Poortfooliyoon kee har\'a $percent ol ka\'eera';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Poortfooliyoon kee har\'a $percent gad bu\'eera';
+  }
+
+  @override
+  String get whatIfTitle => 'Osoo invastii gootee jiraattee hoo?';
+
+  @override
+  String get whatIfAmount => 'Hanga';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount $period dura invastii godhame har\'a gatii kana qabaata ture';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Gatii aksiyoonaa qofa irratti hundaa\'a: qoodni bu\'aa, kaffaltiin tajaajilaa fi gibirri hin hammatamne. Bu\'aan darbe kan gara fuulduraa hin raaguu.';
+
+  @override
+  String get watchShare => 'Tarree qoodi';
+
+  @override
+  String get watchImport => 'Mallattoo aksiyoonaa dabali';
+
+  @override
+  String get watchImportHint =>
+      'Mallattoo aksiyoonaa qoodduu, iddoo duwwaa ykn sarara haaraan addaan baafaman maxxansi – fakkeenyaaf tarree namni tokko siif qoode.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Aksiyoonni $count dabalamaniiru',
+      one: 'Aksiyoonni 1 dabalameera',
+      zero: 'Aksiyoonni haaraan hin jiru',
+    );
+    return '$_temp0';
+  }
 }

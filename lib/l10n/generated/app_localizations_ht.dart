@@ -2348,4 +2348,61 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Ajoute nan kalandriye (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Alèt pòtfolyo';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Yon notifikasyon lè tout pòtfolyo w bouje konsa nan yon jou.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Fèmen';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Pòtfolyo w monte $percent jodi a';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Pòtfolyo w desann $percent jodi a';
+  }
+
+  @override
+  String get whatIfTitle => 'E si ou te envesti?';
+
+  @override
+  String get whatIfAmount => 'Montan';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount ou te envesti sa gen $period ta vo jodi a';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Sa baze sèlman sou pri aksyon an: dividann, frè ak taks pa ladan l. Rannman pase yo pa predi sa k ap vini.';
+
+  @override
+  String get watchShare => 'Pataje lis la';
+
+  @override
+  String get watchImport => 'Ajoute senbòl';
+
+  @override
+  String get watchImportHint =>
+      'Kole senbòl yo separe ak vigil, espas oswa nouvo liy – pa egzanp yon lis yon moun pataje avè w.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nou ajoute $count aksyon',
+      one: 'Nou ajoute 1 aksyon',
+      zero: 'Pa gen nouvo aksyon',
+    );
+    return '$_temp0';
+  }
 }

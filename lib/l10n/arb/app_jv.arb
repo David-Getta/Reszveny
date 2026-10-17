@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Tambahake menyang kalender (.ics)",
   "portfolioAnnualReturn": "Imbal hasil taunan",
   "portfolioPerYear": "{percent} / taun",
-  "portfolioAnnualReturnHint": "Imbal hasil taunan sing ditimbang miturut dhuwit (XIRR): ngetung kapan sampeyan tuku lan adol, dadi dhuwit sing ditambahake mengko ora ngrusak itungane. Ditampilake yen tukon pisanan sampeyan wis paling ora setaun; dividen ora kalebu."
+  "portfolioAnnualReturnHint": "Imbal hasil taunan sing ditimbang miturut dhuwit (XIRR): ngetung kapan sampeyan tuku lan adol, dadi dhuwit sing ditambahake mengko ora ngrusak itungane. Ditampilake yen tukon pisanan sampeyan wis paling ora setaun; dividen ora kalebu.",
+  "portfolioMoveAlertTitle": "Pangéling portofolio",
+  "portfolioMoveAlertSubtitle": "Notifikasi nalika kabèh portofoliomu obah samono iki sajroning sedina.",
+  "portfolioMoveAlertOff": "Mati",
+  "portfolioMoveUp": "Portofoliomu munggah {percent} dina iki",
+  "portfolioMoveDown": "Portofoliomu mudhun {percent} dina iki",
+  "whatIfTitle": "Kepiye yen sampeyan nandur modal?",
+  "whatIfAmount": "Jumlah",
+  "whatIfResult": "{amount} sing diinvestasekake {period} kepungkur saiki regane",
+  "whatIfNote": "Mung adhedhasar rega saham: dividen, biaya, lan pajek ora dilebokake. Asil biyen ora mbadhe asil ing mbesuk.",
+  "watchShare": "Bagikake dhaptar",
+  "watchImport": "Tambahake kode saham",
+  "watchImportHint": "Tempelake kode saham sing dipisah nganggo koma, spasi utawa baris anyar – contoné dhaptar sing dibagi wong liya marang kowé.",
+  "watchImported": "{count, plural, =0{Ora ana saham anyar} =1{1 saham wis ditambahake} other{{count} saham wis ditambahake}}"
 }

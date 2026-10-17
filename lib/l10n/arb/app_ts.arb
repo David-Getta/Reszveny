@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Engetela eka khalendara (.ics)",
   "portfolioAnnualReturn": "Mbuyelo wa lembe",
   "portfolioPerYear": "{percent} / lembe",
-  "portfolioAnnualReturnHint": "Mbuyelo wa lembe lowu pimiweke hi mali (XIRR): wu languta loko u xavile ni loko u xavisile, hikwalaho mali lama engeteriweke endzhaku a ma wu onhi. Wu kombisiwa loko xixaviwa xa wena xo sungula xi hetile lembe rin'we hi xitsongo; dividende a yi katsiwanga."
+  "portfolioAnnualReturnHint": "Mbuyelo wa lembe lowu pimiweke hi mali (XIRR): wu languta loko u xavile ni loko u xavisile, hikwalaho mali lama engeteriweke endzhaku a ma wu onhi. Wu kombisiwa loko xixaviwa xa wena xo sungula xi hetile lembe rin'we hi xitsongo; dividende a yi katsiwanga.",
+  "portfolioMoveAlertTitle": "Xilemukiso xa phothifoliyo",
+  "portfolioMoveAlertSubtitle": "Xitiviso loko phothifoliyo ya wena hinkwayo yi cinca hi mpimo lowu hi siku rin'we.",
+  "portfolioMoveAlertOff": "Ku timiwile",
+  "portfolioMoveUp": "Phothifoliyo ya wena yi tlakukile hi {percent} namuntlha",
+  "portfolioMoveDown": "Phothifoliyo ya wena yi rhelerile hi {percent} namuntlha",
+  "whatIfTitle": "Swi ta va njhani loko a wu vekisile?",
+  "whatIfAmount": "Ntsengo",
+  "whatIfResult": "Loko a wu vekisile {amount} hi nkarhi wa {period}, namuntlha a swi ta va na nkoka wa",
+  "whatIfNote": "Swi sekeriwile ntsena eka nxavo wa xiave: dividende, mihakelo ni xibalo a swi katsiwanga. Mbuyelo wa khale a wu vuli wa vumundzuku.",
+  "watchShare": "Avelana nxaxamelo",
+  "watchImport": "Engetela ti-ticker",
+  "watchImportHint": "Namarheta ti-ticker leti hambanisiweke hi tikhoma, swivandla kumbe tilayini letintshwa – xikombiso, nxaxamelo lowu munhu a wu avelaneke na wena.",
+  "watchImported": "{count, plural, =0{A ku na tixere letintshwa} =1{Ku engeteriwe xere yin'we} other{Ku engeteriwe tixere ta {count}}}"
 }

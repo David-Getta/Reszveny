@@ -2354,4 +2354,61 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Toevoegen aan agenda (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Portefeuillemelding';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Een melding als je hele portefeuille op één dag zoveel beweegt.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Uit';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Je portefeuille staat vandaag $percent hoger';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Je portefeuille staat vandaag $percent lager';
+  }
+
+  @override
+  String get whatIfTitle => 'Wat als je had geïnvesteerd?';
+
+  @override
+  String get whatIfAmount => 'Bedrag';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount geïnvesteerd $period geleden zou nu waard zijn';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Alleen gebaseerd op de aandelenkoers: dividenden, kosten en belastingen zijn niet meegerekend. Rendementen uit het verleden voorspellen geen toekomstige.';
+
+  @override
+  String get watchShare => 'Lijst delen';
+
+  @override
+  String get watchImport => 'Tickers toevoegen';
+
+  @override
+  String get watchImportHint =>
+      'Plak tickers gescheiden door komma\'s, spaties of nieuwe regels – bijvoorbeeld een lijst die iemand met je heeft gedeeld.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count aandelen toegevoegd',
+      one: '1 aandeel toegevoegd',
+      zero: 'Geen nieuwe aandelen',
+    );
+    return '$_temp0';
+  }
 }

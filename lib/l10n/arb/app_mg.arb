@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Ampio amin'ny tetiandro (.ics)",
   "portfolioAnnualReturn": "Tombony isan-taona",
   "portfolioPerYear": "{percent} / taona",
-  "portfolioAnnualReturnHint": "Tombony isan-taona voalanja araka ny vola (XIRR): mihevitra ny fotoana nividiananao sy nivarotanao, ka tsy manodinkodina azy ny vola nampidirina taty aoriana. Aseho rehefa feno herintaona farafahakeliny ny fividiananao voalohany; tsy tafiditra ny dividenda."
+  "portfolioAnnualReturnHint": "Tombony isan-taona voalanja araka ny vola (XIRR): mihevitra ny fotoana nividiananao sy nivarotanao, ka tsy manodinkodina azy ny vola nampidirina taty aoriana. Aseho rehefa feno herintaona farafahakeliny ny fividiananao voalohany; tsy tafiditra ny dividenda.",
+  "portfolioMoveAlertTitle": "Fampitandremana portfolio",
+  "portfolioMoveAlertSubtitle": "Fampandrenesana rehefa mihetsika toy izao ao anatin'ny iray andro ny portfolio-nao manontolo.",
+  "portfolioMoveAlertOff": "Maty",
+  "portfolioMoveUp": "Niakatra {percent} androany ny portfolio-nao",
+  "portfolioMoveDown": "Nidina {percent} androany ny portfolio-nao",
+  "whatIfTitle": "Ahoana raha nampiasa vola ianao?",
+  "whatIfAmount": "Vola",
+  "whatIfResult": "{amount} napetraka {period} lasa izay dia ho mitentina anio",
+  "whatIfNote": "Mifototra amin'ny vidin'ny action ihany: tsy tafiditra ny dividenda, ny sarany ary ny hetra. Ny tombony lasa dia tsy maminavina ny ho avy.",
+  "watchShare": "Zarao ny lisitra",
+  "watchImport": "Hanampy ticker",
+  "watchImportHint": "Apetaho ireo ticker sarahin'ny faingo, elanelana na andalana vaovao – ohatra, lisitra nozarain'olona taminao.",
+  "watchImported": "{count, plural, =0{Tsy misy anjara vaovao} =1{Nampiana anjara 1} other{Nampiana anjara {count}}}"
 }

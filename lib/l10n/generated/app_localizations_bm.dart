@@ -2347,4 +2347,61 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Fara kalandiriye kan (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Portfolio lasɔmini';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Kunnafoni ni i ka portfolio bɛɛ yɛlɛmana nin hakɛ ye tile kelen kɔnɔ.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Datugulen';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'I ka portfolio yɛlɛla $percent bi';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'I ka portfolio jiginna $percent bi';
+  }
+
+  @override
+  String get whatIfTitle => 'N\'i tun ye wari don, a tun bɛna kɛ di?';
+
+  @override
+  String get whatIfAmount => 'Hakɛ';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return 'N\'i tun ye $amount don $period kɔfɛ, a sɔngɔ tun bɛna kɛ bi';
+  }
+
+  @override
+  String get whatIfNote =>
+      'A sinsinnen bɛ aksiyɔn sɔngɔ dɔrɔn kan: tɔnɔ tilali, sara ni nisɔngɔw tɛ a la. Tɛmɛnen tɔnɔw tɛ nata tɔnɔw jira.';
+
+  @override
+  String get watchShare => 'Lisi nin tila';
+
+  @override
+  String get watchImport => 'Aksiyɔn taamasiyɛnw fara a kan';
+
+  @override
+  String get watchImportHint =>
+      'Aksiyɔn taamasiyɛnw bila, u faranni ni virgule, yɔrɔ lankolon walima sira kura ye – misali la, lisi min mɔgɔ dɔ ye tila i ni.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Aksiyɔn $count farala a kan',
+      one: 'Aksiyɔn 1 farala a kan',
+      zero: 'Aksiyɔn kura si tɛ',
+    );
+    return '$_temp0';
+  }
 }

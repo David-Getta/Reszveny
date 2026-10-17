@@ -2355,4 +2355,61 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Wedzera kukarenda (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Yambiro yepotiforiyo';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Chiziviso kana potiforiyo yako yose yachinja zvakadai muzuva rimwe.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Yakadzimwa';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Potiforiyo yako yakwira ne-$percent nhasi';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Potiforiyo yako yadzika ne-$percent nhasi';
+  }
+
+  @override
+  String get whatIfTitle => 'Dai wakaisa mari?';
+
+  @override
+  String get whatIfAmount => 'Huwandu';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return 'Dai wakaisa $amount mukati me$period, nhasi zvaizove zvakakosha';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Zvinobva pamutengo wechikamu chete: dhividhendi, mari dzekubhadhara nemitero hazvisanganisirwi. Purofiti dzakapfuura hadzifanotaure dzeramangwana.';
+
+  @override
+  String get watchShare => 'Govana rondedzero';
+
+  @override
+  String get watchImport => 'Wedzera ma ticker';
+
+  @override
+  String get watchImportHint =>
+      'Namira ma ticker akaparadzaniswa nemakoma, nzvimbo isina chinhu kana mitsara mitsva – semuenzaniso rondedzero yawakagoverwa nemumwe munhu.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Masheya $count awedzerwa',
+      one: 'Sheya 1 rawedzerwa',
+      zero: 'Hapana masheya matsva',
+    );
+    return '$_temp0';
+  }
 }

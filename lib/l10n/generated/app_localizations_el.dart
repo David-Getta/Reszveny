@@ -2359,4 +2359,61 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Προσθήκη στο ημερολόγιο (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Ειδοποίηση χαρτοφυλακίου';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Ειδοποίηση όταν ολόκληρο το χαρτοφυλάκιό σας κινείται τόσο μέσα σε μία μέρα.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Ανενεργή';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Το χαρτοφυλάκιό σας ανέβηκε $percent σήμερα';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Το χαρτοφυλάκιό σας έπεσε $percent σήμερα';
+  }
+
+  @override
+  String get whatIfTitle => 'Κι αν είχατε επενδύσει;';
+
+  @override
+  String get whatIfAmount => 'Ποσό';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount που επενδύθηκαν πριν από $period θα άξιζαν σήμερα';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Μόνο με βάση την τιμή της μετοχής: δεν περιλαμβάνονται μερίσματα, χρεώσεις και φόροι. Οι παλαιότερες αποδόσεις δεν προβλέπουν τις μελλοντικές.';
+
+  @override
+  String get watchShare => 'Κοινοποίηση λίστας';
+
+  @override
+  String get watchImport => 'Προσθήκη συμβόλων';
+
+  @override
+  String get watchImportHint =>
+      'Επικολλήστε σύμβολα μετοχών χωρισμένα με κόμματα, κενά ή νέες γραμμές – για παράδειγμα μια λίστα που μοιράστηκε κάποιος μαζί σας.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Προστέθηκαν $count μετοχές',
+      one: 'Προστέθηκε 1 μετοχή',
+      zero: 'Καμία νέα μετοχή',
+    );
+    return '$_temp0';
+  }
 }

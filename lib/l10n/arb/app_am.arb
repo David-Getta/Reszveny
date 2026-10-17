@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "ወደ ቀን መቁጠሪያ አክል (.ics)",
   "portfolioAnnualReturn": "ዓመታዊ ተመላሽ",
   "portfolioPerYear": "{percent} / ዓመት",
-  "portfolioAnnualReturnHint": "በገንዘብ የተመዘነ ዓመታዊ ተመላሽ (XIRR)፦ መቼ እንደገዙና እንደሸጡ ግምት ውስጥ ያስገባል፣ ስለዚህ በኋላ የተጨመረ ገንዘብ አያዛባውም። የመጀመሪያ ግዢዎ ቢያንስ አንድ ዓመት ሲሞላው ይታያል፤ የትርፍ ድርሻ አልተካተተም።"
+  "portfolioAnnualReturnHint": "በገንዘብ የተመዘነ ዓመታዊ ተመላሽ (XIRR)፦ መቼ እንደገዙና እንደሸጡ ግምት ውስጥ ያስገባል፣ ስለዚህ በኋላ የተጨመረ ገንዘብ አያዛባውም። የመጀመሪያ ግዢዎ ቢያንስ አንድ ዓመት ሲሞላው ይታያል፤ የትርፍ ድርሻ አልተካተተም።",
+  "portfolioMoveAlertTitle": "የፖርትፎሊዮ ማንቂያ",
+  "portfolioMoveAlertSubtitle": "መላው ፖርትፎሊዮዎ በአንድ ቀን ይህን ያህል ሲንቀሳቀስ ማሳወቂያ።",
+  "portfolioMoveAlertOff": "ጠፍቷል",
+  "portfolioMoveUp": "ፖርትፎሊዮዎ ዛሬ በ{percent} ጨምሯል",
+  "portfolioMoveDown": "ፖርትፎሊዮዎ ዛሬ በ{percent} ቀንሷል",
+  "whatIfTitle": "ኢንቨስት ብታደርግ ኖሮ?",
+  "whatIfAmount": "መጠን",
+  "whatIfResult": "ከ{period} በፊት ኢንቨስት የተደረገ {amount} ዛሬ የሚያወጣው",
+  "whatIfNote": "በአክሲዮኑ ዋጋ ላይ ብቻ የተመሠረተ ነው፤ የትርፍ ድርሻ፣ ክፍያዎች እና ግብሮች አልተካተቱም። ያለፈ ትርፍ የወደፊቱን አይተነብይም።",
+  "watchShare": "ዝርዝሩን አጋራ",
+  "watchImport": "የአክሲዮን ምልክቶችን አክል",
+  "watchImportHint": "በኮማ፣ በክፍተት ወይም በአዲስ መስመር የተለያዩ የአክሲዮን ምልክቶችን ይለጥፉ – ለምሳሌ አንድ ሰው ያጋራዎትን ዝርዝር።",
+  "watchImported": "{count, plural, =0{አዲስ አክሲዮን የለም} =1{1 አክሲዮን ታክሏል} other{{count} አክሲዮኖች ታክለዋል}}"
 }

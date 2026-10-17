@@ -2350,4 +2350,61 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'კალენდარში დამატება (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'პორტფელის შეტყობინება';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'შეტყობინება, როცა შენი მთლიანი პორტფელი ერთ დღეში ამდენით იცვლება.';
+
+  @override
+  String get portfolioMoveAlertOff => 'გამორთული';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'შენი პორტფელი დღეს $percent-ით გაიზარდა';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'შენი პორტფელი დღეს $percent-ით შემცირდა';
+  }
+
+  @override
+  String get whatIfTitle => 'რა იქნებოდა, ინვესტიცია რომ ჩაგედოთ?';
+
+  @override
+  String get whatIfAmount => 'თანხა';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount ინვესტიცია (პერიოდი: $period) დღეს ეღირებოდა';
+  }
+
+  @override
+  String get whatIfNote =>
+      'ეფუძნება მხოლოდ აქციის ფასს: დივიდენდები, საკომისიოები და გადასახადები არ არის გათვალისწინებული. წარსული შემოსავლიანობა მომავალს არ წინასწარმეტყველებს.';
+
+  @override
+  String get watchShare => 'სიის გაზიარება';
+
+  @override
+  String get watchImport => 'ტიკერების დამატება';
+
+  @override
+  String get watchImportHint =>
+      'ჩასვით ტიკერები, გამოყოფილი მძიმით, ჰარით ან ახალი ხაზით – მაგალითად, სია, რომელიც ვიღაცამ გაგიზიარათ.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'დაემატა $count აქცია',
+      one: 'დაემატა 1 აქცია',
+      zero: 'ახალი აქციები არ არის',
+    );
+    return '$_temp0';
+  }
 }

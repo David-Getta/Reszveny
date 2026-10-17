@@ -2348,4 +2348,61 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Календарьга өстәү (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Портфель искәртмәсе';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Бөтен портфелегез бер көндә шулкадәр үзгәргәндә белдерү.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Сүнек';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Портфелегез бүген $percent күтәрелде';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Портфелегез бүген $percent төште';
+  }
+
+  @override
+  String get whatIfTitle => 'Инвестицияләсәгез, нәрсә булыр иде?';
+
+  @override
+  String get whatIfAmount => 'Сумма';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$period элек салынган $amount бүген шулкадәр булыр иде';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Акция бәясенә генә нигезләнгән: дивидендлар, комиссияләр һәм салымнар исәпкә алынмаган. Үткән керем киләчәкне фаразламый.';
+
+  @override
+  String get watchShare => 'Исемлекне уртаклашу';
+
+  @override
+  String get watchImport => 'Тикерлар өстәү';
+
+  @override
+  String get watchImportHint =>
+      'Тикерларны өтер, буш урын яки яңа юл белән аерып куегыз – мәсәлән, кемдер сезнең белән уртаклашкан исемлекне.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count акция өстәлде',
+      one: '1 акция өстәлде',
+      zero: 'Яңа акцияләр юк',
+    );
+    return '$_temp0';
+  }
 }

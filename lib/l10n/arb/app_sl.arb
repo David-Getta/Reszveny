@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Dodaj v koledar (.ics)",
   "portfolioAnnualReturn": "Letni donos",
   "portfolioPerYear": "{percent} / leto",
-  "portfolioAnnualReturnHint": "Denarno tehtani letni donos (XIRR): upošteva, kdaj ste kupovali in prodajali, zato ga pozneje dodan denar ne izkrivlja. Prikaže se, ko je vaš prvi nakup star vsaj eno leto; dividende niso vključene."
+  "portfolioAnnualReturnHint": "Denarno tehtani letni donos (XIRR): upošteva, kdaj ste kupovali in prodajali, zato ga pozneje dodan denar ne izkrivlja. Prikaže se, ko je vaš prvi nakup star vsaj eno leto; dividende niso vključene.",
+  "portfolioMoveAlertTitle": "Opozorilo za portfelj",
+  "portfolioMoveAlertSubtitle": "Obvestilo, ko se tvoj celoten portfelj v enem dnevu premakne za toliko.",
+  "portfolioMoveAlertOff": "Izklopljeno",
+  "portfolioMoveUp": "Tvoj portfelj je danes zrasel za {percent}",
+  "portfolioMoveDown": "Tvoj portfelj je danes padel za {percent}",
+  "whatIfTitle": "Kaj, če bi investirali?",
+  "whatIfAmount": "Znesek",
+  "whatIfResult": "Naložba {amount} za {period} bi bila danes vredna",
+  "whatIfNote": "Samo na podlagi cene delnice: dividende, provizije in davki niso vključeni. Pretekli donosi ne napovedujejo prihodnjih.",
+  "watchShare": "Deli seznam",
+  "watchImport": "Dodaj borzne oznake",
+  "watchImportHint": "Prilepite borzne oznake, ločene z vejicami, presledki ali novimi vrsticami – na primer seznam, ki ga je nekdo delil z vami.",
+  "watchImported": "{count, plural, =0{Ni novih delnic} =1{Dodana je 1 delnica} one{Dodana je {count} delnica} two{Dodani sta {count} delnici} few{Dodane so {count} delnice} other{Dodanih je {count} delnic}}"
 }

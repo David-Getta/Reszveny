@@ -2320,4 +2320,61 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'เพิ่มในปฏิทิน (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'แจ้งเตือนพอร์ต';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'แจ้งเตือนเมื่อพอร์ตทั้งหมดของคุณเปลี่ยนแปลงมากขนาดนี้ภายในวันเดียว';
+
+  @override
+  String get portfolioMoveAlertOff => 'ปิด';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'พอร์ตของคุณขึ้น $percent วันนี้';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'พอร์ตของคุณลง $percent วันนี้';
+  }
+
+  @override
+  String get whatIfTitle => 'ถ้าคุณลงทุนไว้ล่ะ?';
+
+  @override
+  String get whatIfAmount => 'จำนวนเงิน';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount ที่ลงทุนเมื่อ $periodก่อน จะมีมูลค่าในวันนี้';
+  }
+
+  @override
+  String get whatIfNote =>
+      'คำนวณจากราคาหุ้นเท่านั้น ไม่รวมเงินปันผล ค่าธรรมเนียม และภาษี ผลตอบแทนในอดีตไม่ได้บ่งชี้ผลตอบแทนในอนาคต';
+
+  @override
+  String get watchShare => 'แชร์รายการ';
+
+  @override
+  String get watchImport => 'เพิ่มชื่อย่อหุ้น';
+
+  @override
+  String get watchImportHint =>
+      'วางชื่อย่อหุ้นที่คั่นด้วยจุลภาค เว้นวรรค หรือขึ้นบรรทัดใหม่ เช่น รายการที่มีคนแชร์ให้คุณ';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'เพิ่มหุ้น $count ตัวแล้ว',
+      one: 'เพิ่มหุ้น 1 ตัวแล้ว',
+      zero: 'ไม่มีหุ้นใหม่',
+    );
+    return '$_temp0';
+  }
 }

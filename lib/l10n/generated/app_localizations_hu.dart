@@ -2355,4 +2355,61 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Hozzáadás a naptárhoz (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Portfólió-riasztás';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Értesítés, ha a teljes portfóliód egy nap alatt ennyit mozdul.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Ki';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'A portfóliód ma $percent-kal emelkedett';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'A portfóliód ma $percent-kal esett';
+  }
+
+  @override
+  String get whatIfTitle => 'Mi lett volna, ha befektetsz?';
+
+  @override
+  String get whatIfAmount => 'Összeg';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$period ezelőtt befektetett $amount ma ennyit érne';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Csak az árfolyam alapján: az osztalék, a díjak és az adó nincs benne. A múltbeli hozam nem jelzi előre a jövőbelit.';
+
+  @override
+  String get watchShare => 'Lista megosztása';
+
+  @override
+  String get watchImport => 'Tickerek hozzáadása';
+
+  @override
+  String get watchImportHint =>
+      'Illeszd be a tickereket vesszővel, szóközzel vagy új sorral elválasztva – például egy listát, amit valaki megosztott veled.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count részvény hozzáadva',
+      one: '1 részvény hozzáadva',
+      zero: 'Nincs új részvény',
+    );
+    return '$_temp0';
+  }
 }

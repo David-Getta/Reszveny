@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Voeg by kalender (.ics)",
   "portfolioAnnualReturn": "Jaarlikse opbrengs",
   "portfolioPerYear": "{percent} / jaar",
-  "portfolioAnnualReturnHint": "Geldgeweegde jaarlikse opbrengs (XIRR): dit neem in ag wanneer jy gekoop en verkoop het, sodat geld wat later bygevoeg is dit nie skeeftrek nie. Word gewys sodra jou eerste aankoop minstens 'n jaar oud is; dividende is nie ingesluit nie."
+  "portfolioAnnualReturnHint": "Geldgeweegde jaarlikse opbrengs (XIRR): dit neem in ag wanneer jy gekoop en verkoop het, sodat geld wat later bygevoeg is dit nie skeeftrek nie. Word gewys sodra jou eerste aankoop minstens 'n jaar oud is; dividende is nie ingesluit nie.",
+  "portfolioMoveAlertTitle": "Portefeulje-waarskuwing",
+  "portfolioMoveAlertSubtitle": "’n Kennisgewing wanneer jou hele portefeulje so veel in een dag beweeg.",
+  "portfolioMoveAlertOff": "Af",
+  "portfolioMoveUp": "Jou portefeulje is vandag {percent} hoër",
+  "portfolioMoveDown": "Jou portefeulje is vandag {percent} laer",
+  "whatIfTitle": "Wat as jy belê het?",
+  "whatIfAmount": "Bedrag",
+  "whatIfResult": "{amount} wat {period} gelede belê is, sou vandag werd wees",
+  "whatIfNote": "Slegs op die aandeelprys gebaseer: dividende, fooie en belasting is nie ingesluit nie. Vorige opbrengste voorspel nie toekomstige opbrengste nie.",
+  "watchShare": "Deel die lys",
+  "watchImport": "Voeg aandeelkodes by",
+  "watchImportHint": "Plak aandeelkodes geskei deur kommas, spasies of nuwe reëls – byvoorbeeld 'n lys wat iemand met jou gedeel het.",
+  "watchImported": "{count, plural, =0{Geen nuwe aandele nie} =1{1 aandeel bygevoeg} other{{count} aandele bygevoeg}}"
 }

@@ -2348,4 +2348,61 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'ক্যালেন্ডারে যোগ করুন (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'পোর্টফোলিও অ্যালার্ট';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'আপনার পুরো পোর্টফোলিও এক দিনে এতটা নড়লে একটি বিজ্ঞপ্তি।';
+
+  @override
+  String get portfolioMoveAlertOff => 'বন্ধ';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'আজ আপনার পোর্টফোলিও $percent বেড়েছে';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'আজ আপনার পোর্টফোলিও $percent কমেছে';
+  }
+
+  @override
+  String get whatIfTitle => 'বিনিয়োগ করলে কী হতো?';
+
+  @override
+  String get whatIfAmount => 'পরিমাণ';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$period আগে বিনিয়োগ করা $amount আজ হতো';
+  }
+
+  @override
+  String get whatIfNote =>
+      'শুধু শেয়ারের দামের ভিত্তিতে: ডিভিডেন্ড, ফি ও কর অন্তর্ভুক্ত নয়। অতীতের রিটার্ন ভবিষ্যতের রিটার্নের পূর্বাভাস দেয় না।';
+
+  @override
+  String get watchShare => 'তালিকা শেয়ার করুন';
+
+  @override
+  String get watchImport => 'টিকার যোগ করুন';
+
+  @override
+  String get watchImportHint =>
+      'কমা, স্পেস বা নতুন লাইন দিয়ে আলাদা করে টিকার পেস্ট করুন – যেমন কেউ আপনার সাথে শেয়ার করেছে এমন একটি তালিকা।';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countটি স্টক যোগ হয়েছে',
+      one: '1টি স্টক যোগ হয়েছে',
+      zero: 'কোনো নতুন স্টক নেই',
+    );
+    return '$_temp0';
+  }
 }

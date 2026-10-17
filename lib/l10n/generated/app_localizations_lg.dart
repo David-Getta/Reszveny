@@ -2360,4 +2360,61 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Gattako ku kalenda (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Okulabula ku portfolio';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Obubaka nga portfolio yo yonna ekyuse bwe kati mu lunaku lumu.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Kiziddwako';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Portfolio yo erinnye $percent leero';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Portfolio yo ekka $percent leero';
+  }
+
+  @override
+  String get whatIfTitle => 'Singa wateeka ssente?';
+
+  @override
+  String get whatIfAmount => 'Omuwendo';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return 'Singa wateeka $amount okumala $period, leero zandibadde';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Kisinziira ku bbeeyi y’omugabo yokka: amagoba ku migabo, ebisale n’emisolo tebiriimu. Amagoba ag’emabega tegalagula ga mu maaso.';
+
+  @override
+  String get watchShare => 'Gabana olukalala';
+
+  @override
+  String get watchImport => 'Yongerako obubonero bwa ticker';
+
+  @override
+  String get watchImportHint =>
+      'Teekamu obubonero bwa ticker obwawuddwamu koma, ebbanga oba ennyiriri empya – okugeza olukalala omuntu lw\'akuweerezza.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Emigabo $count gyongeddwako',
+      one: 'Omugabo 1 gwongeddwako',
+      zero: 'Tewali migabo mipya',
+    );
+    return '$_temp0';
+  }
 }

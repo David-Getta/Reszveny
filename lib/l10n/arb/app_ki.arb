@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Ongerera harĩ kalenda (.ics)",
   "portfolioAnnualReturn": "Uumithio wa mwaka",
   "portfolioPerYear": "{percent} / mwaka",
-  "portfolioAnnualReturnHint": "Uumithio wa mwaka ũrĩa ũthimĩtwo na mbeca (XIRR): ũtaraga rĩrĩa wagũrire na rĩrĩa wendirie, nĩ ũndũ ũcio mbeca iria wongerire thuutha itiũthũkagia. Ũkuonanio rĩrĩa ũgũri waku wa mbere wakinyia mwaka ũmwe kana makĩria; dividend ndĩtaranĩtio."
+  "portfolioAnnualReturnHint": "Uumithio wa mwaka ũrĩa ũthimĩtwo na mbeca (XIRR): ũtaraga rĩrĩa wagũrire na rĩrĩa wendirie, nĩ ũndũ ũcio mbeca iria wongerire thuutha itiũthũkagia. Ũkuonanio rĩrĩa ũgũri waku wa mbere wakinyia mwaka ũmwe kana makĩria; dividend ndĩtaranĩtio.",
+  "portfolioMoveAlertTitle": "Kũmenyithia gwa portfolio",
+  "portfolioMoveAlertSubtitle": "Imenyithia rĩrĩa portfolio yaku yothe yagarũrũka ũguo mũthenya ũmwe.",
+  "portfolioMoveAlertOff": "Hingĩte",
+  "portfolioMoveUp": "Portfolio yaku nĩyambata {percent} ũmũthĩ",
+  "portfolioMoveDown": "Portfolio yaku nĩyaharũrũka {percent} ũmũthĩ",
+  "whatIfTitle": "Kũngĩkorũo ũrĩ waigĩte mbeca?",
+  "whatIfAmount": "Mũigana",
+  "whatIfResult": "{amount} ciigĩtwo kwa ihinda rĩa {period} ũmũthĩ ingĩkorũo irĩ na thogora wa",
+  "whatIfNote": "Ĩrũmĩrĩire thogora wa share wiki: dividend, marĩhi na igooti itiri thĩinĩ. Uumithio wa tene ndũrathaga wa thutha.",
+  "watchShare": "Gaya orodha",
+  "watchImport": "Ongera ticker",
+  "watchImportHint": "Ĩkĩra ticker cia hisa ciamũranĩtio na koma, kanya kana mũhari mwerũ – ta orodha ĩrĩa mũndũ angĩkũgaĩire.",
+  "watchImported": "{count, plural, =0{Gũtirĩ hisa njerũ} =1{Hisa 1 nĩ yongereirwo} other{Hisa {count} nĩ ciongereirwo}}"
 }

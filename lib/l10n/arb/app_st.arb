@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Kenya khalendareng (.ics)",
   "portfolioAnnualReturn": "Poelo ya selemo",
   "portfolioPerYear": "{percent} / selemo",
-  "portfolioAnnualReturnHint": "Poelo ya selemo e lekantsweng ka tjhelete (XIRR): e ela hloko hore o rekile le ho rekisa neng, kahoo tjhelete e kentsweng hamorao ha e e sothe. E bontshwa ha theko ya hao ya pele e se e le selemo bonyane; dividende ha e a kenyeletswa."
+  "portfolioAnnualReturnHint": "Poelo ya selemo e lekantsweng ka tjhelete (XIRR): e ela hloko hore o rekile le ho rekisa neng, kahoo tjhelete e kentsweng hamorao ha e e sothe. E bontshwa ha theko ya hao ya pele e se e le selemo bonyane; dividende ha e a kenyeletswa.",
+  "portfolioMoveAlertTitle": "Temoso ya phothefolio",
+  "portfolioMoveAlertSubtitle": "Tsebiso ha phothefolio ya hao kaofela e fetoha hakana ka letsatsi le le leng.",
+  "portfolioMoveAlertOff": "E timile",
+  "portfolioMoveUp": "Phothefolio ya hao e nyolohile ka {percent} kajeno",
+  "portfolioMoveDown": "Phothefolio ya hao e theohile ka {percent} kajeno",
+  "whatIfTitle": "Ho ka be ho le jwang ha o ne o tsetetse?",
+  "whatIfAmount": "Palo",
+  "whatIfResult": "Ha o ne o tsetetse {amount} ka nako ya {period}, kajeno e ne e tla ba ya boleng ba",
+  "whatIfNote": "E thehilwe feela hodima theko ya seabo: dividende, ditefello le lekgetho ha di a kenyeletswa. Dipoelo tsa nako e fetileng ha di bolele esale pele tsa nako e tlang.",
+  "watchShare": "Arolelana lenane",
+  "watchImport": "Kenya di-ticker",
+  "watchImportHint": "Kgomaretsa di-ticker tse arohantsweng ka dikhoma, dibaka tse se nang letho kapa mela e metjha – mohlala, lenane leo motho e mong a le arolelaneng le wena.",
+  "watchImported": "{count, plural, =0{Ha ho na dishere tse ntjha} =1{Ho eketsitswe shere e le nngwe} other{Ho eketsitswe dishere tse {count}}}"
 }

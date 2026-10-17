@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Takvime ekle (.ics)",
   "portfolioAnnualReturn": "Yıllık getiri",
   "portfolioPerYear": "{percent} / yıl",
-  "portfolioAnnualReturnHint": "Para ağırlıklı yıllık getiri (XIRR): ne zaman alıp sattığınızı hesaba katar, böylece sonradan eklenen para onu çarpıtmaz. İlk alışınızın üzerinden en az bir yıl geçince gösterilir; temettüler dahil değildir."
+  "portfolioAnnualReturnHint": "Para ağırlıklı yıllık getiri (XIRR): ne zaman alıp sattığınızı hesaba katar, böylece sonradan eklenen para onu çarpıtmaz. İlk alışınızın üzerinden en az bir yıl geçince gösterilir; temettüler dahil değildir.",
+  "portfolioMoveAlertTitle": "Portföy uyarısı",
+  "portfolioMoveAlertSubtitle": "Portföyünün tamamı bir günde bu kadar hareket ettiğinde bildirim.",
+  "portfolioMoveAlertOff": "Kapalı",
+  "portfolioMoveUp": "Portföyün bugün {percent} yükseldi",
+  "portfolioMoveDown": "Portföyün bugün {percent} düştü",
+  "whatIfTitle": "Yatırım yapsaydınız?",
+  "whatIfAmount": "Tutar",
+  "whatIfResult": "{period} önce yatırılan {amount} bugün şu kadar ederdi",
+  "whatIfNote": "Yalnızca hisse fiyatına dayanır: temettüler, ücretler ve vergiler dahil değildir. Geçmiş getiriler gelecekteki getirileri öngörmez.",
+  "watchShare": "Listeyi paylaş",
+  "watchImport": "Hisse sembolü ekle",
+  "watchImportHint": "Hisse sembollerini virgül, boşluk veya yeni satırla ayırarak yapıştır – örneğin birinin seninle paylaştığı bir listeyi.",
+  "watchImported": "{count, plural, =0{Yeni hisse yok} =1{1 hisse eklendi} other{{count} hisse eklendi}}"
 }

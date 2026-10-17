@@ -2343,4 +2343,61 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'कैलेंडरमे जोड़ू (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'पोर्टफोलियो अलर्ट';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'जखन अहाँक पूरा पोर्टफोलियो एक दिनमे एतेक हिलय, तखन सूचना।';
+
+  @override
+  String get portfolioMoveAlertOff => 'बंद';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'आइ अहाँक पोर्टफोलियो $percent बढ़ल अछि';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'आइ अहाँक पोर्टफोलियो $percent घटल अछि';
+  }
+
+  @override
+  String get whatIfTitle => 'जँ अहाँ निवेश केने रहितहुँ तँ?';
+
+  @override
+  String get whatIfAmount => 'राशि';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$period पहिने निवेश कएल $amount आइ होइत';
+  }
+
+  @override
+  String get whatIfNote =>
+      'केवल शेयरक दाम पर आधारित: लाभांश, शुल्क आ कर सम्मिलित नहि अछि। पछिला रिटर्न भविष्यक रिटर्नक पूर्वानुमान नहि करैत अछि।';
+
+  @override
+  String get watchShare => 'सूची साझा करू';
+
+  @override
+  String get watchImport => 'टिकर जोड़ू';
+
+  @override
+  String get watchImportHint =>
+      'कॉमा, स्पेस वा नव पाँती सँ अलग कएल टिकर साटू – जेना कोनो सूची जे केओ अहाँ संग साझा केने हो।';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count शेयर जोड़ल गेल',
+      one: '1 शेयर जोड़ल गेल',
+      zero: 'कोनो नव शेयर नहि',
+    );
+    return '$_temp0';
+  }
 }

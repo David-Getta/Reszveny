@@ -2353,4 +2353,61 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Tsɔ kpe ɖe kalenda ŋu (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Portfolio nuxlɔ̃ame';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Gbeƒãɖeɖe ne wò portfolio blibo la trɔ alesia le ŋkeke ɖeka me.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Etsi';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Wò portfolio dzi ɖe edzi $percent egbe';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Wò portfolio ɖe kpɔtɔ $percent egbe';
+  }
+
+  @override
+  String get whatIfTitle => 'Ne èdo ga ɖe eme ɖe, aleke wòanɔ?';
+
+  @override
+  String get whatIfAmount => 'Home xexlẽ';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return 'Ne èdo $amount ɖe eme le $period si va yi me la, egbe anɔ asi';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Enɔ te ɖe aksiɔ̃ ƒe asi ko dzi: viɖemama, fewo kple adzɔ mele eme o. Viɖe siwo va yi meɖea fia viɖe siwo gbɔna o.';
+
+  @override
+  String get watchShare => 'Ma xexlẽdzesi la';
+
+  @override
+  String get watchImport => 'Tsɔ ticker dzesiwo kpe ɖe eŋu';
+
+  @override
+  String get watchImportHint =>
+      'Tsɔ ticker dzesiwo de eme, eye nàma wo kple koma, teƒe ƒuƒlu alo fli yeye – le kpɔɖeŋu me, xexlẽdzesi aɖe si ame aɖe ma na wò.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Wotsɔ aksiɔn $count kpe ɖe eŋu',
+      one: 'Wotsɔ aksiɔn 1 kpe ɖe eŋu',
+      zero: 'Aksiɔn yeye aɖeke meli o',
+    );
+    return '$_temp0';
+  }
 }

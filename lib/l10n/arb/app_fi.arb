@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Lisää kalenteriin (.ics)",
   "portfolioAnnualReturn": "Vuosituotto",
   "portfolioPerYear": "{percent} / vuosi",
-  "portfolioAnnualReturnHint": "Rahapainotteinen vuosituotto (XIRR): ottaa huomioon, milloin ostit ja myit, joten myöhemmin lisätty raha ei vääristä sitä. Näytetään, kun ensimmäinen ostosi on vähintään vuoden vanha; osinkoja ei ole mukana."
+  "portfolioAnnualReturnHint": "Rahapainotteinen vuosituotto (XIRR): ottaa huomioon, milloin ostit ja myit, joten myöhemmin lisätty raha ei vääristä sitä. Näytetään, kun ensimmäinen ostosi on vähintään vuoden vanha; osinkoja ei ole mukana.",
+  "portfolioMoveAlertTitle": "Salkkuhälytys",
+  "portfolioMoveAlertSubtitle": "Ilmoitus, kun koko salkkusi liikkuu näin paljon päivässä.",
+  "portfolioMoveAlertOff": "Pois",
+  "portfolioMoveUp": "Salkkusi on tänään {percent} plussalla",
+  "portfolioMoveDown": "Salkkusi on tänään {percent} miinuksella",
+  "whatIfTitle": "Entä jos olisit sijoittanut?",
+  "whatIfAmount": "Summa",
+  "whatIfResult": "{period} sitten sijoitettu {amount} olisi tänään arvoltaan",
+  "whatIfNote": "Perustuu vain osakkeen hintaan: osinkoja, kuluja ja veroja ei ole huomioitu. Aiempi tuotto ei ennusta tulevaa.",
+  "watchShare": "Jaa lista",
+  "watchImport": "Lisää osaketunnuksia",
+  "watchImportHint": "Liitä osaketunnukset pilkuilla, välilyönneillä tai rivinvaihdoilla erotettuina – esimerkiksi lista, jonka joku on jakanut kanssasi.",
+  "watchImported": "{count, plural, =0{Ei uusia osakkeita} =1{1 osake lisätty} other{{count} osaketta lisätty}}"
 }

@@ -2347,4 +2347,61 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'କ୍ୟାଲେଣ୍ଡରରେ ଯୋଡ଼ନ୍ତୁ (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'ପୋର୍ଟଫୋଲିଓ ଆଲର୍ଟ';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'ଆପଣଙ୍କ ସମଗ୍ର ପୋର୍ଟଫୋଲିଓ ଦିନକରେ ଏତିକି ହଲଚଲ ହେଲେ ଏକ ବିଜ୍ଞପ୍ତି।';
+
+  @override
+  String get portfolioMoveAlertOff => 'ବନ୍ଦ';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'ଆଜି ଆପଣଙ୍କ ପୋର୍ଟଫୋଲିଓ $percent ବଢ଼ିଛି';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'ଆଜି ଆପଣଙ୍କ ପୋର୍ଟଫୋଲିଓ $percent କମିଛି';
+  }
+
+  @override
+  String get whatIfTitle => 'ଯଦି ଆପଣ ନିବେଶ କରିଥାନ୍ତେ?';
+
+  @override
+  String get whatIfAmount => 'ପରିମାଣ';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$period ପୂର୍ବରୁ ନିବେଶ କରାଯାଇଥିବା $amount ଆଜି ହୋଇଥାନ୍ତା';
+  }
+
+  @override
+  String get whatIfNote =>
+      'କେବଳ ସେୟାର ମୂଲ୍ୟ ଉପରେ ଆଧାରିତ: ଲାଭାଂଶ, ଶୁଳ୍କ ଓ କର ଅନ୍ତର୍ଭୁକ୍ତ ନୁହେଁ। ଅତୀତର ରିଟର୍ଣ୍ଣ ଭବିଷ୍ୟତର ରିଟର୍ଣ୍ଣର ପୂର୍ବାନୁମାନ କରେ ନାହିଁ।';
+
+  @override
+  String get watchShare => 'ତାଲିକା ସେୟାର କରନ୍ତୁ';
+
+  @override
+  String get watchImport => 'ଟିକର ଯୋଡ଼ନ୍ତୁ';
+
+  @override
+  String get watchImportHint =>
+      'କମା, ସ୍ପେସ କିମ୍ବା ନୂଆ ଧାଡ଼ି ଦ୍ୱାରା ଅଲଗା ହୋଇଥିବା ଟିକର ପେଷ୍ଟ କରନ୍ତୁ – ଯେପରି କେହି ଆପଣଙ୍କ ସହ ସେୟାର କରିଥିବା ଏକ ତାଲିକା।';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countଟି ସେୟାର ଯୋଡ଼ାଗଲା',
+      one: '1ଟି ସେୟାର ଯୋଡ଼ାଗଲା',
+      zero: 'କୌଣସି ନୂଆ ସେୟାର ନାହିଁ',
+    );
+    return '$_temp0';
+  }
 }

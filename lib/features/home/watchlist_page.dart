@@ -5,6 +5,7 @@ import '../../core/app_preferences.dart';
 import '../../core/models/price_history.dart';
 import '../../core/models/stock_candidate.dart';
 import '../../core/models/stock_quote.dart';
+import '../../core/share/share_text.dart';
 import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
@@ -15,6 +16,18 @@ import '../portfolio/add_lot_dialog.dart' show parseDecimal;
 
 /// A figyelőlista rendezése.
 enum WatchSort { own, gainers, losers, name }
+
+/// Tickerek kiolvasása beillesztett szövegből: vessző, pontosvessző, szóköz vagy
+/// új sor választja el őket; a `$AAPL` alak is jó. Ismétlés és puszta szám nélkül.
+List<String> parseTickers(String text) {
+  final out = <String>[];
+  for (final t in text.toUpperCase().split(RegExp(r'[\s,;]+'))) {
+    final s = t.startsWith(r'$') ? t.substring(1) : t;
+    if (!RegExp(r'^[A-Z0-9][A-Z0-9.\-]{0,14}$').hasMatch(s) || !RegExp('[A-Z]').hasMatch(s)) continue;
+    if (!out.contains(s)) out.add(s);
+  }
+  return out;
+}
 
 /// A kedvencek teljes listája: ár, napi változás és 30 napos mini-grafikon.
 /// Saját sorrendben húzással átrendezhető, elhúzva törölhető (visszavonható);
@@ -173,8 +186,34 @@ class _WatchlistPageState extends State<WatchlistPage> {
       ..showSnackBar(SnackBar(content: Text(l10n.watchAlertAllDone(added))));
   }
 
+  /// A látható lista tickerei szövegként (pl. üzenetben elküldhető, és egy
+  /// másik WhatStockba beilleszthető).
+  Future<void> _share() async {
+    final l10n = AppLocalizations.of(context);
+    final prefs = AppServices.of(context).preferences;
+    final symbols = prefs.watchLists.where((l) => l.name == _list).firstOrNull?.symbols ?? prefs.favorites;
+    if (symbols.isEmpty) return;
+    await shareText(symbols.join(', '), subject: 'WhatStock · ${_list ?? l10n.favorites}');
+  }
+
+  /// Beillesztett tickerek felvétele a kedvencekhez (és a kiválasztott listára).
+  Future<void> _import() async {
+    final services = AppServices.of(context);
+    final l10n = AppLocalizations.of(context);
+    final messenger = ScaffoldMessenger.of(context);
+    final text = await showDialog<String>(context: context, builder: (_) => const _ImportTickersDialog());
+    if (text == null) return;
+    final added = await services.preferences.addSymbols(parseTickers(text), list: _list);
+    services.telemetry.track('tickers_imported');
+    messenger
+      ..hideCurrentSnackBar()
+      ..showSnackBar(SnackBar(content: Text(l10n.watchImported(added))));
+  }
+
   Future<void> _listMenu(String action) async {
     if (action == 'alerts') return _alertAll();
+    if (action == 'share') return _share();
+    if (action == 'import') return _import();
     final prefs = AppServices.of(context).preferences;
     final list = _list;
     if (list == null) return;
@@ -220,6 +259,8 @@ class _WatchlistPageState extends State<WatchlistPage> {
             onSelected: _listMenu,
             itemBuilder: (_) => [
               PopupMenuItem(key: const ValueKey('watch-alert-all'), value: 'alerts', child: Text(l10n.watchAlertAll)),
+              PopupMenuItem(key: const ValueKey('watch-share'), value: 'share', child: Text(l10n.watchShare)),
+              PopupMenuItem(key: const ValueKey('watch-import'), value: 'import', child: Text(l10n.watchImport)),
               if (_list != null) ...[
                 PopupMenuItem(
                   key: const ValueKey('watch-list-rename'),
@@ -416,6 +457,72 @@ class _MoveAlertDialogState extends State<_MoveAlertDialog> {
       actions: [
         TextButton(onPressed: () => Navigator.of(context).pop(), child: Text(l10n.cancel)),
         FilledButton(key: const ValueKey('watch-alert-save'), onPressed: _save, child: Text(l10n.alertSave)),
+      ],
+    );
+  }
+}
+
+/// Tickerek beillesztése (pl. egy megosztott listából vagy egy táblázatból).
+class _ImportTickersDialog extends StatefulWidget {
+  const _ImportTickersDialog();
+
+  @override
+  State<_ImportTickersDialog> createState() => _ImportTickersDialogState();
+}
+
+class _ImportTickersDialogState extends State<_ImportTickersDialog> {
+  final _controller = TextEditingController();
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final p = AppPalette.of(context);
+    final found = parseTickers(_controller.text);
+    return AlertDialog(
+      title: Text(l10n.watchImport),
+      content: SingleChildScrollView(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(l10n.watchImportHint, style: Theme.of(context).textTheme.bodySmall?.copyWith(color: p.muted)),
+            const SizedBox(height: 8),
+            TextField(
+              key: const ValueKey('watch-import-text'),
+              controller: _controller,
+              autofocus: true,
+              minLines: 3,
+              maxLines: 6,
+              textCapitalization: TextCapitalization.characters,
+              onChanged: (_) => setState(() {}),
+              decoration: const InputDecoration(hintText: 'AAPL, MSFT, OTP.BD'),
+            ),
+            if (found.isNotEmpty) ...[
+              const SizedBox(height: 8),
+              Text(
+                found.join(' · '),
+                key: const ValueKey('watch-import-found'),
+                maxLines: 3,
+                overflow: TextOverflow.ellipsis,
+                style: Theme.of(context).textTheme.bodySmall?.copyWith(color: p.accent),
+              ),
+            ],
+          ],
+        ),
+      ),
+      actions: [
+        TextButton(onPressed: () => Navigator.of(context).pop(), child: Text(l10n.cancel)),
+        FilledButton(
+          key: const ValueKey('watch-import-ok'),
+          onPressed: found.isEmpty ? null : () => Navigator.of(context).pop(_controller.text),
+          child: Text(l10n.portfolioImportButton),
+        ),
       ],
     );
   }

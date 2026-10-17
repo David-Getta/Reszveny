@@ -2352,4 +2352,61 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'كالېندارغا قوشۇش (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'مەبلەغ بىرىكمىسى ئاگاھلاندۇرۇشى';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'پۈتۈن مەبلەغ بىرىكمىڭىز بىر كۈندە مۇشۇنچىلىك ئۆزگەرگەندە ئۇقتۇرۇش.';
+
+  @override
+  String get portfolioMoveAlertOff => 'تاقاق';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'مەبلەغ بىرىكمىڭىز بۈگۈن $percent ئۆستى';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'مەبلەغ بىرىكمىڭىز بۈگۈن $percent تۆۋەنلىدى';
+  }
+
+  @override
+  String get whatIfTitle => 'مەبلەغ سالغان بولسىڭىز قانداق بولاتتى؟';
+
+  @override
+  String get whatIfAmount => 'سومما';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$period ئىلگىرى سېلىنغان $amount بۈگۈن مۇنچىلىك بولاتتى';
+  }
+
+  @override
+  String get whatIfNote =>
+      'پەقەت پاي چېكى باھاسىغا ئاساسلانغان: پايدا ئۈلۈشى، ھەق ۋە باج ئۆز ئىچىگە ئېلىنمىغان. ئۆتمۈشتىكى پايدا كەلگۈسىنى مۆلچەرلىمەيدۇ.';
+
+  @override
+  String get watchShare => 'تىزىملىكنى ھەمبەھىرلەش';
+
+  @override
+  String get watchImport => 'پاي چېكى كودى قوشۇش';
+
+  @override
+  String get watchImportHint =>
+      'پەش، بوشلۇق ياكى يېڭى قۇر بىلەن ئايرىلغان پاي چېكى كودلىرىنى چاپلاڭ – مەسىلەن، بىرەرسى سىز بىلەن ھەمبەھىرلىگەن تىزىملىك.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count پاي چېكى قوشۇلدى',
+      one: '1 پاي چېكى قوشۇلدى',
+      zero: 'يېڭى پاي چېكى يوق',
+    );
+    return '$_temp0';
+  }
 }

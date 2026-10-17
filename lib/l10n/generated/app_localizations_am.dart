@@ -2317,4 +2317,61 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'ወደ ቀን መቁጠሪያ አክል (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'የፖርትፎሊዮ ማንቂያ';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'መላው ፖርትፎሊዮዎ በአንድ ቀን ይህን ያህል ሲንቀሳቀስ ማሳወቂያ።';
+
+  @override
+  String get portfolioMoveAlertOff => 'ጠፍቷል';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'ፖርትፎሊዮዎ ዛሬ በ$percent ጨምሯል';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'ፖርትፎሊዮዎ ዛሬ በ$percent ቀንሷል';
+  }
+
+  @override
+  String get whatIfTitle => 'ኢንቨስት ብታደርግ ኖሮ?';
+
+  @override
+  String get whatIfAmount => 'መጠን';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return 'ከ$period በፊት ኢንቨስት የተደረገ $amount ዛሬ የሚያወጣው';
+  }
+
+  @override
+  String get whatIfNote =>
+      'በአክሲዮኑ ዋጋ ላይ ብቻ የተመሠረተ ነው፤ የትርፍ ድርሻ፣ ክፍያዎች እና ግብሮች አልተካተቱም። ያለፈ ትርፍ የወደፊቱን አይተነብይም።';
+
+  @override
+  String get watchShare => 'ዝርዝሩን አጋራ';
+
+  @override
+  String get watchImport => 'የአክሲዮን ምልክቶችን አክል';
+
+  @override
+  String get watchImportHint =>
+      'በኮማ፣ በክፍተት ወይም በአዲስ መስመር የተለያዩ የአክሲዮን ምልክቶችን ይለጥፉ – ለምሳሌ አንድ ሰው ያጋራዎትን ዝርዝር።';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count አክሲዮኖች ታክለዋል',
+      one: '1 አክሲዮን ታክሏል',
+      zero: 'አዲስ አክሲዮን የለም',
+    );
+    return '$_temp0';
+  }
 }

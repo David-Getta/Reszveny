@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Li salnameyê zêde bike (.ics)",
   "portfolioAnnualReturn": "Qezenca salane",
   "portfolioPerYear": "{percent} / sal",
-  "portfolioAnnualReturnHint": "Qezenca salane ya li gorî pereyan pîvandî (XIRR): dema ku te kirî û firotî dihesibîne, ji ber vê yekê pereyên ku paşê hatine zêdekirin wê naguherînin. Gava kirîna te ya yekem herî kêm salek kevn be tê nîşandan; dîvîdend tê de nînin."
+  "portfolioAnnualReturnHint": "Qezenca salane ya li gorî pereyan pîvandî (XIRR): dema ku te kirî û firotî dihesibîne, ji ber vê yekê pereyên ku paşê hatine zêdekirin wê naguherînin. Gava kirîna te ya yekem herî kêm salek kevn be tê nîşandan; dîvîdend tê de nînin.",
+  "portfolioMoveAlertTitle": "Hişyariya portfolyoyê",
+  "portfolioMoveAlertSubtitle": "Agahdariyek dema ku tevahiya portfolyoya te di rojekê de ev qas diguhere.",
+  "portfolioMoveAlertOff": "Girtî",
+  "portfolioMoveUp": "Portfolyoya te îro {percent} bilind bû",
+  "portfolioMoveDown": "Portfolyoya te îro {percent} daket",
+  "whatIfTitle": "Ger te veberhênan kiriba?",
+  "whatIfAmount": "Mîqdar",
+  "whatIfResult": "{amount} ya ku {period} berê hatibû veberhênan, îro dê bihêja",
+  "whatIfNote": "Tenê li ser bihayê pişkê ye: dîvîdend, xerc û bac ne tê de ne. Qezencên berê pêşerojê pêşbînî nakin.",
+  "watchShare": "Lîsteyê parve bike",
+  "watchImport": "Sembolên pişkan zêde bike",
+  "watchImportHint": "Sembolên pişkan bi bêhnok, valahî an rêzên nû veqetandî bixe – wek mînak lîsteyek ku kesekî bi te re parve kiriye.",
+  "watchImported": "{count, plural, =0{Pişkên nû tune ne} =1{1 pişk hat zêdekirin} other{{count} pişk hatin zêdekirin}}"
 }

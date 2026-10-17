@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Adicionar ao calendário (.ics)",
   "portfolioAnnualReturn": "Rentabilidade anual",
   "portfolioPerYear": "{percent} / ano",
-  "portfolioAnnualReturnHint": "Rentabilidade anual ponderada pelo dinheiro (XIRR): considera quando você comprou e vendeu, então o dinheiro adicionado depois não a distorce. Exibida quando sua primeira compra tiver pelo menos um ano; os dividendos não estão incluídos."
+  "portfolioAnnualReturnHint": "Rentabilidade anual ponderada pelo dinheiro (XIRR): considera quando você comprou e vendeu, então o dinheiro adicionado depois não a distorce. Exibida quando sua primeira compra tiver pelo menos um ano; os dividendos não estão incluídos.",
+  "portfolioMoveAlertTitle": "Alerta da carteira",
+  "portfolioMoveAlertSubtitle": "Uma notificação quando toda a sua carteira variar tanto em um dia.",
+  "portfolioMoveAlertOff": "Desativado",
+  "portfolioMoveUp": "Sua carteira subiu {percent} hoje",
+  "portfolioMoveDown": "Sua carteira caiu {percent} hoje",
+  "whatIfTitle": "E se tivesse investido?",
+  "whatIfAmount": "Montante",
+  "whatIfResult": "{amount} investidos há {period} valeriam hoje",
+  "whatIfNote": "Baseado apenas no preço da ação: dividendos, comissões e impostos não estão incluídos. Rendibilidades passadas não preveem as futuras.",
+  "watchShare": "Compartilhar lista",
+  "watchImport": "Adicionar tickers",
+  "watchImportHint": "Cole tickers separados por vírgulas, espaços ou quebras de linha – por exemplo, uma lista que alguém compartilhou com você.",
+  "watchImported": "{count, plural, =0{Nenhuma ação nova} =1{1 ação adicionada} other{{count} ações adicionadas}}"
 }

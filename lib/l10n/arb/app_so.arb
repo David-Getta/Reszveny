@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Ku dar kalandarka (.ics)",
   "portfolioAnnualReturn": "Faa'iidada sannadlaha",
   "portfolioPerYear": "{percent} / sannad",
-  "portfolioAnnualReturnHint": "Faa'iidada sannadlaha ah ee lacagta lagu miisaamay (XIRR): waxay tixgelisaa goorta aad iibsatay iyo goorta aad iibisay, sidaas darteed lacagta dambe lagu daray ma qalloociso. Waxaa la muujiyaa marka iibsashadaada ugu horreysa ay jirto ugu yaraan hal sano; qaybaha faa'iidada kuma jiraan."
+  "portfolioAnnualReturnHint": "Faa'iidada sannadlaha ah ee lacagta lagu miisaamay (XIRR): waxay tixgelisaa goorta aad iibsatay iyo goorta aad iibisay, sidaas darteed lacagta dambe lagu daray ma qalloociso. Waxaa la muujiyaa marka iibsashadaada ugu horreysa ay jirto ugu yaraan hal sano; qaybaha faa'iidada kuma jiraan.",
+  "portfolioMoveAlertTitle": "Digniinta boortfoliyaha",
+  "portfolioMoveAlertSubtitle": "Ogeysiis marka boortfoliyahaaga oo dhan uu isbeddelo intaas maalin gudaheed.",
+  "portfolioMoveAlertOff": "Dansan",
+  "portfolioMoveUp": "Boortfoliyahaagu maanta wuu kordhay {percent}",
+  "portfolioMoveDown": "Boortfoliyahaagu maanta hoos ayuu u dhacay {percent}",
+  "whatIfTitle": "Haddii aad maalgashan lahayd?",
+  "whatIfAmount": "Lacagta",
+  "whatIfResult": "{amount} oo la maalgashaday {period} ka hor maanta waxay noqon lahayd",
+  "whatIfNote": "Waxay ku salaysan tahay qiimaha saamiga oo keliya: qaybaha faa'iidada, khidmadaha iyo canshuuraha laguma darin. Faa'iidadii hore ma saadaaliso tan mustaqbalka.",
+  "watchShare": "La wadaag liiska",
+  "watchImport": "Ku dar astaamaha saamiyada",
+  "watchImportHint": "Ku dheji astaamaha saamiyada oo lagu kala saaray hakad, meel bannaan ama saf cusub – tusaale ahaan liis uu qof kula wadaagay.",
+  "watchImported": "{count, plural, =0{Saami cusub ma jiro} =1{1 saami ayaa lagu daray} other{{count} saami ayaa lagu daray}}"
 }

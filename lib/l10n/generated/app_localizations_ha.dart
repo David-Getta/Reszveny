@@ -2355,4 +2355,61 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Ƙara zuwa kalanda (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Faɗakarwar fayil';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Sanarwa idan dukkan fayil ɗinka ya motsa haka a rana ɗaya.';
+
+  @override
+  String get portfolioMoveAlertOff => 'A kashe';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Fayil ɗinka ya tashi da $percent yau';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Fayil ɗinka ya sauka da $percent yau';
+  }
+
+  @override
+  String get whatIfTitle => 'Da ka zuba jari fa?';
+
+  @override
+  String get whatIfAmount => 'Adadi';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return 'Da ka zuba $amount tsawon $period, yau zai kai';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Ya dogara ne kan farashin hannun jari kawai: ba a haɗa rabon riba, kuɗaɗen sabis da haraji ba. Ribar da ta gabata ba ta hasashen ta nan gaba.';
+
+  @override
+  String get watchShare => 'Raba jerin';
+
+  @override
+  String get watchImport => 'Ƙara alamun ticker';
+
+  @override
+  String get watchImportHint =>
+      'Liƙa alamun ticker da aka raba da waƙafi, sarari ko sabon layi – misali jerin da wani ya raba maka.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'An ƙara hannayen jari $count',
+      one: 'An ƙara hannun jari 1',
+      zero: 'Babu sabbin hannayen jari',
+    );
+    return '$_temp0';
+  }
 }

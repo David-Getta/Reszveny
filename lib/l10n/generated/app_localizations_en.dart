@@ -2348,4 +2348,61 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Add to calendar (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Portfolio alert';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'A notification when your whole portfolio moves this much in a day.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Off';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Your portfolio is up $percent today';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Your portfolio is down $percent today';
+  }
+
+  @override
+  String get whatIfTitle => 'What if you had invested?';
+
+  @override
+  String get whatIfAmount => 'Amount';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount invested $period ago would be worth today';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Based on the share price only: dividends, fees and taxes are not included. Past returns don\'t predict future ones.';
+
+  @override
+  String get watchShare => 'Share the list';
+
+  @override
+  String get watchImport => 'Add tickers';
+
+  @override
+  String get watchImportHint =>
+      'Paste tickers separated by commas, spaces or new lines – for example a list someone shared with you.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count stocks added',
+      one: '1 stock added',
+      zero: 'No new stocks',
+    );
+    return '$_temp0';
+  }
 }

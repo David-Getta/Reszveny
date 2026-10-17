@@ -2356,4 +2356,61 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Shto në kalendar (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Sinjalizim për portofolin';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Një njoftim kur i gjithë portofoli yt lëviz kaq shumë brenda një dite.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Joaktiv';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Portofoli yt është rritur sot me $percent';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Portofoli yt ka rënë sot me $percent';
+  }
+
+  @override
+  String get whatIfTitle => 'Po sikur të kishe investuar?';
+
+  @override
+  String get whatIfAmount => 'Shuma';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount të investuara $period më parë do të vlenin sot';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Vetëm në bazë të çmimit të aksionit: dividendët, tarifat dhe taksat nuk përfshihen. Kthimet e kaluara nuk parashikojnë ato të ardhshme.';
+
+  @override
+  String get watchShare => 'Ndaj listën';
+
+  @override
+  String get watchImport => 'Shto simbole';
+
+  @override
+  String get watchImportHint =>
+      'Ngjit simbolet e aksioneve të ndara me presje, hapësira ose rreshta të rinj – për shembull një listë që dikush ka ndarë me ty.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'U shtuan $count aksione',
+      one: 'U shtua 1 aksion',
+      zero: 'Asnjë aksion i ri',
+    );
+    return '$_temp0';
+  }
 }

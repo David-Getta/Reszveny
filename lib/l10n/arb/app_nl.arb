@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Toevoegen aan agenda (.ics)",
   "portfolioAnnualReturn": "Jaarrendement",
   "portfolioPerYear": "{percent} / jaar",
-  "portfolioAnnualReturnHint": "Geldgewogen jaarrendement (XIRR): houdt rekening met wanneer je hebt gekocht en verkocht, zodat later toegevoegd geld het niet vertekent. Wordt getoond zodra je eerste aankoop minstens een jaar oud is; dividenden zijn niet meegerekend."
+  "portfolioAnnualReturnHint": "Geldgewogen jaarrendement (XIRR): houdt rekening met wanneer je hebt gekocht en verkocht, zodat later toegevoegd geld het niet vertekent. Wordt getoond zodra je eerste aankoop minstens een jaar oud is; dividenden zijn niet meegerekend.",
+  "portfolioMoveAlertTitle": "Portefeuillemelding",
+  "portfolioMoveAlertSubtitle": "Een melding als je hele portefeuille op één dag zoveel beweegt.",
+  "portfolioMoveAlertOff": "Uit",
+  "portfolioMoveUp": "Je portefeuille staat vandaag {percent} hoger",
+  "portfolioMoveDown": "Je portefeuille staat vandaag {percent} lager",
+  "whatIfTitle": "Wat als je had geïnvesteerd?",
+  "whatIfAmount": "Bedrag",
+  "whatIfResult": "{amount} geïnvesteerd {period} geleden zou nu waard zijn",
+  "whatIfNote": "Alleen gebaseerd op de aandelenkoers: dividenden, kosten en belastingen zijn niet meegerekend. Rendementen uit het verleden voorspellen geen toekomstige.",
+  "watchShare": "Lijst delen",
+  "watchImport": "Tickers toevoegen",
+  "watchImportHint": "Plak tickers gescheiden door komma's, spaties of nieuwe regels – bijvoorbeeld een lijst die iemand met je heeft gedeeld.",
+  "watchImported": "{count, plural, =0{Geen nieuwe aandelen} =1{1 aandeel toegevoegd} other{{count} aandelen toegevoegd}}"
 }

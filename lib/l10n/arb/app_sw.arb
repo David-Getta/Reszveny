@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Ongeza kwenye kalenda (.ics)",
   "portfolioAnnualReturn": "Faida ya mwaka",
   "portfolioPerYear": "{percent} / mwaka",
-  "portfolioAnnualReturnHint": "Faida ya mwaka iliyopimwa kwa fedha (XIRR): inazingatia ulinunua na kuuza lini, kwa hivyo pesa zilizoongezwa baadaye haziipotoshi. Huonyeshwa ununuzi wako wa kwanza ukifikisha angalau mwaka mmoja; gawio halijajumuishwa."
+  "portfolioAnnualReturnHint": "Faida ya mwaka iliyopimwa kwa fedha (XIRR): inazingatia ulinunua na kuuza lini, kwa hivyo pesa zilizoongezwa baadaye haziipotoshi. Huonyeshwa ununuzi wako wa kwanza ukifikisha angalau mwaka mmoja; gawio halijajumuishwa.",
+  "portfolioMoveAlertTitle": "Tahadhari ya jalada",
+  "portfolioMoveAlertSubtitle": "Arifa wakati jalada lako lote linaposogea kiasi hiki kwa siku moja.",
+  "portfolioMoveAlertOff": "Imezimwa",
+  "portfolioMoveUp": "Jalada lako limepanda {percent} leo",
+  "portfolioMoveDown": "Jalada lako limeshuka {percent} leo",
+  "whatIfTitle": "Je, kama ungewekeza?",
+  "whatIfAmount": "Kiasi",
+  "whatIfResult": "Uwekezaji wa {amount} kwa kipindi cha {period} leo ungekuwa na thamani ya",
+  "whatIfNote": "Imetokana na bei ya hisa pekee: gawio, ada na kodi hazijajumuishwa. Faida za zamani hazitabiri za baadaye.",
+  "watchShare": "Shiriki orodha",
+  "watchImport": "Ongeza ticker",
+  "watchImportHint": "Bandika ticker zilizotenganishwa kwa koma, nafasi au mistari mipya – kwa mfano orodha ambayo mtu amekushirikisha.",
+  "watchImported": "{count, plural, =0{Hakuna hisa mpya} =1{Hisa 1 imeongezwa} other{Hisa {count} zimeongezwa}}"
 }

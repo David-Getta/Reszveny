@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Přidat do kalendáře (.ics)",
   "portfolioAnnualReturn": "Roční výnos",
   "portfolioPerYear": "{percent} / rok",
-  "portfolioAnnualReturnHint": "Peněžně vážený roční výnos (XIRR): zohledňuje, kdy jste nakupovali a prodávali, takže ho později vložené peníze nezkreslí. Zobrazí se, jakmile bude váš první nákup starý alespoň rok; dividendy nejsou zahrnuty."
+  "portfolioAnnualReturnHint": "Peněžně vážený roční výnos (XIRR): zohledňuje, kdy jste nakupovali a prodávali, takže ho později vložené peníze nezkreslí. Zobrazí se, jakmile bude váš první nákup starý alespoň rok; dividendy nejsou zahrnuty.",
+  "portfolioMoveAlertTitle": "Upozornění na portfolio",
+  "portfolioMoveAlertSubtitle": "Oznámení, když se celé vaše portfolio za den pohne o tolik.",
+  "portfolioMoveAlertOff": "Vypnuto",
+  "portfolioMoveUp": "Vaše portfolio dnes vzrostlo o {percent}",
+  "portfolioMoveDown": "Vaše portfolio dnes kleslo o {percent}",
+  "whatIfTitle": "Co kdybyste investovali?",
+  "whatIfAmount": "Částka",
+  "whatIfResult": "Investice {amount} na {period} by dnes měla hodnotu",
+  "whatIfNote": "Pouze na základě ceny akcie: dividendy, poplatky a daně nejsou zahrnuty. Minulé výnosy nepředpovídají budoucí.",
+  "watchShare": "Sdílet seznam",
+  "watchImport": "Přidat tickery",
+  "watchImportHint": "Vložte tickery oddělené čárkami, mezerami nebo novými řádky – třeba seznam, který s vámi někdo sdílel.",
+  "watchImported": "{count, plural, =0{Žádné nové akcie} =1{Přidána 1 akcie} few{Přidány {count} akcie} many{Přidáno {count} akcie} other{Přidáno {count} akcií}}"
 }

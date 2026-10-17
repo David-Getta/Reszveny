@@ -2348,4 +2348,61 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'कैलेंडर में जोड़ें (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'पोर्टफ़ोलियो अलर्ट';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'जब आपका पूरा पोर्टफ़ोलियो एक दिन में इतना हिले, तब सूचना।';
+
+  @override
+  String get portfolioMoveAlertOff => 'बंद';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'आज आपका पोर्टफ़ोलियो $percent ऊपर है';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'आज आपका पोर्टफ़ोलियो $percent नीचे है';
+  }
+
+  @override
+  String get whatIfTitle => 'अगर आपने निवेश किया होता?';
+
+  @override
+  String get whatIfAmount => 'राशि';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$period पहले निवेश किए गए $amount की आज कीमत होती';
+  }
+
+  @override
+  String get whatIfNote =>
+      'सिर्फ़ शेयर की कीमत पर आधारित: लाभांश, शुल्क और कर शामिल नहीं हैं। पिछला रिटर्न भविष्य के रिटर्न का अनुमान नहीं देता।';
+
+  @override
+  String get watchShare => 'सूची शेयर करें';
+
+  @override
+  String get watchImport => 'टिकर जोड़ें';
+
+  @override
+  String get watchImportHint =>
+      'कॉमा, स्पेस या नई लाइन से अलग किए गए टिकर पेस्ट करें – जैसे कोई सूची जो किसी ने आपके साथ शेयर की हो।';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count स्टॉक जोड़े गए',
+      one: '1 स्टॉक जोड़ा गया',
+      zero: 'कोई नया स्टॉक नहीं',
+    );
+    return '$_temp0';
+  }
 }

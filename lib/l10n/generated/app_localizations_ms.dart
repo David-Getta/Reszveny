@@ -2354,4 +2354,61 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Tambah ke kalendar (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Amaran portfolio';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Pemberitahuan apabila seluruh portfolio anda bergerak sebanyak ini dalam sehari.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Mati';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Portfolio anda naik $percent hari ini';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Portfolio anda turun $percent hari ini';
+  }
+
+  @override
+  String get whatIfTitle => 'Bagaimana jika anda melabur?';
+
+  @override
+  String get whatIfAmount => 'Jumlah';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount yang dilaburkan $period lalu kini bernilai';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Berdasarkan harga saham sahaja: dividen, yuran dan cukai tidak termasuk. Pulangan lalu tidak meramalkan pulangan masa hadapan.';
+
+  @override
+  String get watchShare => 'Kongsi senarai';
+
+  @override
+  String get watchImport => 'Tambah ticker';
+
+  @override
+  String get watchImportHint =>
+      'Tampal ticker yang dipisahkan dengan koma, ruang atau baris baharu – contohnya senarai yang dikongsi seseorang dengan anda.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count saham ditambah',
+      one: '1 saham ditambah',
+      zero: 'Tiada saham baharu',
+    );
+    return '$_temp0';
+  }
 }

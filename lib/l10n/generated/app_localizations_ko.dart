@@ -2281,4 +2281,60 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => '캘린더에 추가 (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => '포트폴리오 알림';
+
+  @override
+  String get portfolioMoveAlertSubtitle => '포트폴리오 전체가 하루에 이만큼 움직이면 알려 드립니다.';
+
+  @override
+  String get portfolioMoveAlertOff => '끄기';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return '오늘 포트폴리오가 $percent 상승했습니다';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return '오늘 포트폴리오가 $percent 하락했습니다';
+  }
+
+  @override
+  String get whatIfTitle => '그때 투자했다면?';
+
+  @override
+  String get whatIfAmount => '금액';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$period 전에 투자한 $amount의 현재 가치';
+  }
+
+  @override
+  String get whatIfNote =>
+      '주가만을 기준으로 하며 배당금, 수수료, 세금은 포함되지 않습니다. 과거 수익률은 미래 수익률을 예측하지 않습니다.';
+
+  @override
+  String get watchShare => '목록 공유';
+
+  @override
+  String get watchImport => '티커 추가';
+
+  @override
+  String get watchImportHint =>
+      '티커를 쉼표, 공백 또는 줄바꿈으로 구분해 붙여 넣으세요(예: 누군가 공유해 준 목록).';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '종목 $count개가 추가되었습니다',
+      one: '종목 1개가 추가되었습니다',
+      zero: '새 종목이 없습니다',
+    );
+    return '$_temp0';
+  }
 }

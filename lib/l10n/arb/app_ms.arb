@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Tambah ke kalendar (.ics)",
   "portfolioAnnualReturn": "Pulangan tahunan",
   "portfolioPerYear": "{percent} / tahun",
-  "portfolioAnnualReturnHint": "Pulangan tahunan berwajaran wang (XIRR): mengambil kira bila anda membeli dan menjual, jadi wang yang ditambah kemudian tidak memesongkannya. Dipaparkan setelah pembelian pertama anda berusia sekurang-kurangnya setahun; dividen tidak termasuk."
+  "portfolioAnnualReturnHint": "Pulangan tahunan berwajaran wang (XIRR): mengambil kira bila anda membeli dan menjual, jadi wang yang ditambah kemudian tidak memesongkannya. Dipaparkan setelah pembelian pertama anda berusia sekurang-kurangnya setahun; dividen tidak termasuk.",
+  "portfolioMoveAlertTitle": "Amaran portfolio",
+  "portfolioMoveAlertSubtitle": "Pemberitahuan apabila seluruh portfolio anda bergerak sebanyak ini dalam sehari.",
+  "portfolioMoveAlertOff": "Mati",
+  "portfolioMoveUp": "Portfolio anda naik {percent} hari ini",
+  "portfolioMoveDown": "Portfolio anda turun {percent} hari ini",
+  "whatIfTitle": "Bagaimana jika anda melabur?",
+  "whatIfAmount": "Jumlah",
+  "whatIfResult": "{amount} yang dilaburkan {period} lalu kini bernilai",
+  "whatIfNote": "Berdasarkan harga saham sahaja: dividen, yuran dan cukai tidak termasuk. Pulangan lalu tidak meramalkan pulangan masa hadapan.",
+  "watchShare": "Kongsi senarai",
+  "watchImport": "Tambah ticker",
+  "watchImportHint": "Tampal ticker yang dipisahkan dengan koma, ruang atau baris baharu – contohnya senarai yang dikongsi seseorang dengan anda.",
+  "watchImported": "{count, plural, =0{Tiada saham baharu} =1{1 saham ditambah} other{{count} saham ditambah}}"
 }

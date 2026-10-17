@@ -2363,4 +2363,61 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Kalendariuman yapay (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Portafolio willachiy';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Willachiy, tukuy portafolioyki huk p\'unchawpi chhayna kuyuriptin.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Wañuchisqa';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Portafolioyki kunan $percent wicharirqan';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Portafolioyki kunan $percent uraykurqan';
+  }
+
+  @override
+  String get whatIfTitle => '¿Imaynataq kanman qullqita churaspaqa?';
+
+  @override
+  String get whatIfAmount => 'Qullqi';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$period ñawpaqta churasqa $amount kunan chaninchakunman';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Acción chaninllapim tiyan: dividendokuna, pagokuna, impuestokunapas manam yapasqachu. Ñawpa gananciakunaqa manam hamuqta willanchu.';
+
+  @override
+  String get watchShare => 'Listata rakinakuy';
+
+  @override
+  String get watchImport => 'Ticker yapay';
+
+  @override
+  String get watchImportHint =>
+      'Tickerkunata k\'askachiy, comawan, ch\'usaq k\'itiwan utaq musuq siqiwan t\'aqasqata – ahinataq, pipas qanwan rakinakusqan lista.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count accion yapakun',
+      one: '1 accion yapakun',
+      zero: 'Mana musuq accionkuna kanchu',
+    );
+    return '$_temp0';
+  }
 }

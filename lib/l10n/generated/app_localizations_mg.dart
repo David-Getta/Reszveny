@@ -2367,4 +2367,61 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Ampio amin\'ny tetiandro (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Fampitandremana portfolio';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Fampandrenesana rehefa mihetsika toy izao ao anatin\'ny iray andro ny portfolio-nao manontolo.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Maty';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Niakatra $percent androany ny portfolio-nao';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Nidina $percent androany ny portfolio-nao';
+  }
+
+  @override
+  String get whatIfTitle => 'Ahoana raha nampiasa vola ianao?';
+
+  @override
+  String get whatIfAmount => 'Vola';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount napetraka $period lasa izay dia ho mitentina anio';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Mifototra amin\'ny vidin\'ny action ihany: tsy tafiditra ny dividenda, ny sarany ary ny hetra. Ny tombony lasa dia tsy maminavina ny ho avy.';
+
+  @override
+  String get watchShare => 'Zarao ny lisitra';
+
+  @override
+  String get watchImport => 'Hanampy ticker';
+
+  @override
+  String get watchImportHint =>
+      'Apetaho ireo ticker sarahin\'ny faingo, elanelana na andalana vaovao – ohatra, lisitra nozarain\'olona taminao.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nampiana anjara $count',
+      one: 'Nampiana anjara 1',
+      zero: 'Tsy misy anjara vaovao',
+    );
+    return '$_temp0';
+  }
 }

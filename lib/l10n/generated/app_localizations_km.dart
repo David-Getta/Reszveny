@@ -2329,4 +2329,61 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'បន្ថែមទៅប្រតិទិន (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'ការជូនដំណឹងផលប័ត្រ';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'ការជូនដំណឹងនៅពេលផលប័ត្រទាំងមូលរបស់អ្នកប្រែប្រួលប៉ុណ្ណេះក្នុងមួយថ្ងៃ។';
+
+  @override
+  String get portfolioMoveAlertOff => 'បិទ';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'ផលប័ត្ររបស់អ្នកកើនឡើង $percent ថ្ងៃនេះ';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'ផលប័ត្ររបស់អ្នកធ្លាក់ចុះ $percent ថ្ងៃនេះ';
+  }
+
+  @override
+  String get whatIfTitle => 'ចុះបើអ្នកបានវិនិយោគ?';
+
+  @override
+  String get whatIfAmount => 'ចំនួនទឹកប្រាក់';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount ដែលបានវិនិយោគកាលពី $periodមុន នឹងមានតម្លៃនៅថ្ងៃនេះ';
+  }
+
+  @override
+  String get whatIfNote =>
+      'ផ្អែកលើតម្លៃភាគហ៊ុនតែប៉ុណ្ណោះ៖ មិនរួមបញ្ចូលភាគលាភ កម្រៃសេវា និងពន្ធទេ។ ផលចំណេញកាលពីមុនមិនព្យាករណ៍ផលចំណេញនាពេលអនាគតទេ។';
+
+  @override
+  String get watchShare => 'ចែករំលែកបញ្ជី';
+
+  @override
+  String get watchImport => 'បន្ថែមនិមិត្តសញ្ញាភាគហ៊ុន';
+
+  @override
+  String get watchImportHint =>
+      'បិទភ្ជាប់និមិត្តសញ្ញាភាគហ៊ុនដែលបំបែកដោយសញ្ញាក្បៀស ដកឃ្លា ឬបន្ទាត់ថ្មី ឧទាហរណ៍ បញ្ជីដែលនរណាម្នាក់បានចែករំលែកជាមួយអ្នក។';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'បានបន្ថែមភាគហ៊ុន $count',
+      one: 'បានបន្ថែមភាគហ៊ុន 1',
+      zero: 'គ្មានភាគហ៊ុនថ្មីទេ',
+    );
+    return '$_temp0';
+  }
 }

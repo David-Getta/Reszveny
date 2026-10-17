@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Dodaj u kalendar (.ics)",
   "portfolioAnnualReturn": "Godišnji prinos",
   "portfolioPerYear": "{percent} / god.",
-  "portfolioAnnualReturnHint": "Novčano ponderirani godišnji prinos (XIRR): uzima u obzir kada ste kupovali i prodavali, pa ga kasnije dodani novac ne iskrivljuje. Prikazuje se kad vaša prva kupnja bude stara barem godinu dana; dividende nisu uključene."
+  "portfolioAnnualReturnHint": "Novčano ponderirani godišnji prinos (XIRR): uzima u obzir kada ste kupovali i prodavali, pa ga kasnije dodani novac ne iskrivljuje. Prikazuje se kad vaša prva kupnja bude stara barem godinu dana; dividende nisu uključene.",
+  "portfolioMoveAlertTitle": "Upozorenje za portfelj",
+  "portfolioMoveAlertSubtitle": "Obavijest kada se cijeli tvoj portfelj u jednom danu pomakne ovoliko.",
+  "portfolioMoveAlertOff": "Isključeno",
+  "portfolioMoveUp": "Tvoj portfelj danas je porastao za {percent}",
+  "portfolioMoveDown": "Tvoj portfelj danas je pao za {percent}",
+  "whatIfTitle": "Što da ste uložili?",
+  "whatIfAmount": "Iznos",
+  "whatIfResult": "Ulaganje od {amount} (razdoblje: {period}) danas bi vrijedilo",
+  "whatIfNote": "Samo na temelju cijene dionice: dividende, naknade i porezi nisu uključeni. Prošli prinosi ne predviđaju buduće.",
+  "watchShare": "Podijeli popis",
+  "watchImport": "Dodaj ticker simbole",
+  "watchImportHint": "Zalijepite ticker simbole odvojene zarezima, razmacima ili novim redovima – na primjer popis koji je netko podijelio s vama.",
+  "watchImported": "{count, plural, =0{Nema novih dionica} =1{Dodana je 1 dionica} one{Dodana je {count} dionica} few{Dodane su {count} dionice} other{Dodano je {count} dionica}}"
 }

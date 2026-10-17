@@ -2353,4 +2353,61 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Voeg by kalender (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Portefeulje-waarskuwing';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      '’n Kennisgewing wanneer jou hele portefeulje so veel in een dag beweeg.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Af';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Jou portefeulje is vandag $percent hoër';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Jou portefeulje is vandag $percent laer';
+  }
+
+  @override
+  String get whatIfTitle => 'Wat as jy belê het?';
+
+  @override
+  String get whatIfAmount => 'Bedrag';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount wat $period gelede belê is, sou vandag werd wees';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Slegs op die aandeelprys gebaseer: dividende, fooie en belasting is nie ingesluit nie. Vorige opbrengste voorspel nie toekomstige opbrengste nie.';
+
+  @override
+  String get watchShare => 'Deel die lys';
+
+  @override
+  String get watchImport => 'Voeg aandeelkodes by';
+
+  @override
+  String get watchImportHint =>
+      'Plak aandeelkodes geskei deur kommas, spasies of nuwe reëls – byvoorbeeld \'n lys wat iemand met jou gedeel het.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count aandele bygevoeg',
+      one: '1 aandeel bygevoeg',
+      zero: 'Geen nuwe aandele nie',
+    );
+    return '$_temp0';
+  }
 }

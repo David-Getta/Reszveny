@@ -2356,4 +2356,61 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get eventsAddToCalendar => 'Ku dar kalandarka (.ics)';
+
+  @override
+  String get portfolioMoveAlertTitle => 'Digniinta boortfoliyaha';
+
+  @override
+  String get portfolioMoveAlertSubtitle =>
+      'Ogeysiis marka boortfoliyahaaga oo dhan uu isbeddelo intaas maalin gudaheed.';
+
+  @override
+  String get portfolioMoveAlertOff => 'Dansan';
+
+  @override
+  String portfolioMoveUp(String percent) {
+    return 'Boortfoliyahaagu maanta wuu kordhay $percent';
+  }
+
+  @override
+  String portfolioMoveDown(String percent) {
+    return 'Boortfoliyahaagu maanta hoos ayuu u dhacay $percent';
+  }
+
+  @override
+  String get whatIfTitle => 'Haddii aad maalgashan lahayd?';
+
+  @override
+  String get whatIfAmount => 'Lacagta';
+
+  @override
+  String whatIfResult(String amount, String period) {
+    return '$amount oo la maalgashaday $period ka hor maanta waxay noqon lahayd';
+  }
+
+  @override
+  String get whatIfNote =>
+      'Waxay ku salaysan tahay qiimaha saamiga oo keliya: qaybaha faa\'iidada, khidmadaha iyo canshuuraha laguma darin. Faa\'iidadii hore ma saadaaliso tan mustaqbalka.';
+
+  @override
+  String get watchShare => 'La wadaag liiska';
+
+  @override
+  String get watchImport => 'Ku dar astaamaha saamiyada';
+
+  @override
+  String get watchImportHint =>
+      'Ku dheji astaamaha saamiyada oo lagu kala saaray hakad, meel bannaan ama saf cusub – tusaale ahaan liis uu qof kula wadaagay.';
+
+  @override
+  String watchImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count saami ayaa lagu daray',
+      one: '1 saami ayaa lagu daray',
+      zero: 'Saami cusub ma jiro',
+    );
+    return '$_temp0';
+  }
 }

@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Kalendariuman yapay (.ics)",
   "portfolioAnnualReturn": "Watapaq rendimiento",
   "portfolioPerYear": "{percent} / wata",
-  "portfolioAnnualReturnHint": "Qullqiwan pesasqa watapaq rendimiento (XIRR): hayk'ap rantisqaykita, rantikusqaykitapas qhawan, chaymi qhipaman yapasqa qullqiqa mana pantachinchu. Rikuchikun ñawpaq rantisqayki huk watayuq kaptin; dividendokunaqa manam yapasqachu."
+  "portfolioAnnualReturnHint": "Qullqiwan pesasqa watapaq rendimiento (XIRR): hayk'ap rantisqaykita, rantikusqaykitapas qhawan, chaymi qhipaman yapasqa qullqiqa mana pantachinchu. Rikuchikun ñawpaq rantisqayki huk watayuq kaptin; dividendokunaqa manam yapasqachu.",
+  "portfolioMoveAlertTitle": "Portafolio willachiy",
+  "portfolioMoveAlertSubtitle": "Willachiy, tukuy portafolioyki huk p'unchawpi chhayna kuyuriptin.",
+  "portfolioMoveAlertOff": "Wañuchisqa",
+  "portfolioMoveUp": "Portafolioyki kunan {percent} wicharirqan",
+  "portfolioMoveDown": "Portafolioyki kunan {percent} uraykurqan",
+  "whatIfTitle": "¿Imaynataq kanman qullqita churaspaqa?",
+  "whatIfAmount": "Qullqi",
+  "whatIfResult": "{period} ñawpaqta churasqa {amount} kunan chaninchakunman",
+  "whatIfNote": "Acción chaninllapim tiyan: dividendokuna, pagokuna, impuestokunapas manam yapasqachu. Ñawpa gananciakunaqa manam hamuqta willanchu.",
+  "watchShare": "Listata rakinakuy",
+  "watchImport": "Ticker yapay",
+  "watchImportHint": "Tickerkunata k'askachiy, comawan, ch'usaq k'itiwan utaq musuq siqiwan t'aqasqata – ahinataq, pipas qanwan rakinakusqan lista.",
+  "watchImported": "{count, plural, =0{Mana musuq accionkuna kanchu} =1{1 accion yapakun} other{{count} accion yapakun}}"
 }

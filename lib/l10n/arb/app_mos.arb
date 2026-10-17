@@ -627,5 +627,18 @@
   "eventsAddToCalendar": "Paas kalandiyẽ pʋgẽ (.ics)",
   "portfolioAnnualReturn": "Yʋʋmd nafa",
   "portfolioPerYear": "{percent} / yʋʋmde",
-  "portfolioAnnualReturnHint": "Yʋʋmd nafa sẽn makd ne ligdi (XIRR): a gẽesda wakat ning f sẽn da la f sẽn koosã, rẽ n so tɩ ligd ning f sẽn paas poorã pa sãamd-a ye. B wilgda-a f raab pipiigã sã n ta yʋʋmd a yembr bal; dividãnd pa be pʋgẽ ye."
+  "portfolioAnnualReturnHint": "Yʋʋmd nafa sẽn makd ne ligdi (XIRR): a gẽesda wakat ning f sẽn da la f sẽn koosã, rẽ n so tɩ ligd ning f sẽn paas poorã pa sãamd-a ye. B wilgda-a f raab pipiigã sã n ta yʋʋmd a yembr bal; dividãnd pa be pʋgẽ ye.",
+  "portfolioMoveAlertTitle": "Portfolio kɩbare",
+  "portfolioMoveAlertSubtitle": "Gũusgu f portfolio wã fãa sã n toeem woto rasem a yembr pʋgẽ.",
+  "portfolioMoveAlertOff": "Kisgame",
+  "portfolioMoveUp": "F portfolio wã zĩiga {percent} rũnda",
+  "portfolioMoveDown": "F portfolio wã sigame {percent} rũnda",
+  "whatIfTitle": "Fo sã n da kẽes ligdi?",
+  "whatIfAmount": "Ligd sõore",
+  "whatIfResult": "Fo sã n da kẽes {amount} {period} pʋgẽ, rũndã a na n yaa",
+  "whatIfNote": "Yaa aksyõ yaoobã bal zugu: dividãnd, ligd sẽn yaod la lampo pa be ye. Pĩnd yɩɩbã pa wilgd beoog yɩɩbã ye.",
+  "watchShare": "Pʋɩ liste wã",
+  "watchImport": "Paas aksiõ bãnde",
+  "watchImportHint": "Ning aksiõ bãnde n welg-b ne virgil, zĩ-vɩɩlg bɩ sẽ-paalga – wala liste ninga sẽn pʋɩ-a ne foo.",
+  "watchImported": "{count, plural, =0{Aksiõ paalg ka be ye} =1{B paasa aksiõ a yembre} other{B paasa aksiõ {count}}}"
 }
