@@ -260,6 +260,7 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 5cb | Kezdőképernyő testreszabása: a beállításokban kikapcsolható a Piacok ma, A nap a részvényeiddel, a Portfólió, a Kedvencek, az Események, a Hírek és az Elemzéseim | ✅ kész |
 | 5cc | Portfólió megoszlása országok szerint is (a cégprofilok székhelye alapján, lefordított országnevekkel); a fülsor keskeny képernyőn görgethető | ✅ kész |
 | 5cd | Riasztás-ablak: gyorsgomb az 52 hetes csúcsra (fölé) és mélypontra (alá), pontos szinttel; a megadott szintek (átlagár %, csúcs) nem kerekednek egészre | ✅ kész |
+| 5ce | Kérdezz az elemzésről: ha a kérdéshez újabb vagy hiányzó tény kell (friss hír, cégek kapcsolata), legfeljebb 2 webkereséssel utánanéz, a források a válasz alatt; közös „Források” elem a hírmagyarázattal | ✅ kész |
 | 5j | Telefonos háttér-értesítés (riasztás) szerverről, APNs / FCM | 🟡 első lépés kész: a szerver 10 percenként nézi a belépett fiókok szinkronizált riasztásait, és e-mailben szól (csukott appnál is, kikapcsolható); a telefonos push (APNs / FCM) a Firebase-projekt és az Apple-kulcs után |
 | 5k | Bolti adatlapok 120 nyelven, képernyőképek, ikon, előnézeti videó | 🟡 adatlap-szövegek 70 bolti nyelven (fastlane-mappa, `docs/BOLTI_ADATLAP.md`), feliratos bolti képek a teszt-harnessből a boltok méreteiben; előnézeti videó és a nem latin írású képek a natív buildből később |
 

@@ -9,6 +9,7 @@ import '../../l10n/supported_locales.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/centered_scroll.dart';
 import '../../widgets/desktop_chrome.dart';
+import '../../widgets/source_links.dart';
 import '../analysis/stale_report.dart' show analysisAgeText;
 import 'news_explainer.dart' show NewsExplanation;
 import 'watch_news.dart';
@@ -183,36 +184,7 @@ Future<void> showNewsExplanation(BuildContext context, WatchedNews news) {
                     children: [
                       Text(e.text, style: theme.textTheme.bodyLarge?.copyWith(height: 1.45)),
                       // A webkeresés forrásai: koppintásra megnyílnak a böngészőben.
-                      if (e.sources.isNotEmpty) ...[
-                        const SizedBox(height: 14),
-                        Text(l10n.aiSources, style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),
-                        for (final (i, s) in e.sources.indexed)
-                          InkWell(
-                            key: ValueKey('news-source-$i'),
-                            onTap: () {
-                              final uri = Uri.tryParse(s.url);
-                              if (uri != null) launchUrl(uri, mode: LaunchMode.externalApplication);
-                            },
-                            child: Padding(
-                              padding: const EdgeInsets.symmetric(vertical: 5),
-                              child: Row(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Icon(Icons.link_rounded, size: 16, color: p.accent),
-                                  const SizedBox(width: 6),
-                                  Expanded(
-                                    child: Text(
-                                      '${s.title} · ${Uri.tryParse(s.url)?.host ?? ''}',
-                                      maxLines: 2,
-                                      overflow: TextOverflow.ellipsis,
-                                      style: theme.textTheme.bodySmall?.copyWith(color: p.accent),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                      ],
+                      SourceLinks(sources: e.sources, keyPrefix: 'news-source'),
                     ],
                   );
                 },

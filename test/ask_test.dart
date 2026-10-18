@@ -65,11 +65,18 @@ class _Analyst implements StockAnalyst {
   }) async => _report(details.symbol, at: DateTime.now());
 }
 
-http.Response _answer(String text) => http.Response(
+http.Response _answer(String text, {String? sourceUrl}) => http.Response(
   jsonEncode({
     'stop_reason': 'end_turn',
     'content': [
-      {'type': 'text', 'text': text},
+      {
+        'type': 'text',
+        'text': text,
+        if (sourceUrl != null)
+          'citations': [
+            {'type': 'web_search_result_location', 'url': sourceUrl, 'title': 'China sales report'},
+          ],
+      },
     ],
   }),
   200,
@@ -129,6 +136,10 @@ void main() {
     ]);
     expect((sent.last['messages'] as List).map((m) => m['role']), ['user', 'assistant', 'user']);
     expect(((sent.last['system'] as List).single as Map)['cache_control'], {'type': 'ephemeral'});
+    // Újabb vagy hiányzó tényekhez legfeljebb két webkeresés.
+    expect(sent.last['tools'], [
+      {'type': 'web_search_20260209', 'name': 'web_search', 'max_uses': AnalysisChat.maxSearches},
+    ]);
     expect(chat.questionsLeft(r), AnalysisChat.maxQuestions - 2);
 
     fail = true;
@@ -169,7 +180,10 @@ void main() {
         client: MockClient((req) async {
           final msgs = (jsonDecode(req.body) as Map)['messages'] as List;
           questions.add(msgs.last['content'] as String);
-          return _answer('China demand is the biggest risk: about a fifth of revenue.');
+          return _answer(
+            'China demand is the biggest risk: about a fifth of revenue.',
+            sourceUrl: 'https://www.ft.com/china',
+          );
         }),
       ),
     );
@@ -190,6 +204,7 @@ void main() {
     await tester.pumpAndSettle();
     expect(questions, ['What is the biggest risk?']);
     expect(find.text('China demand is the biggest risk: about a fifth of revenue.'), findsOneWidget);
+    expect(find.text('China sales report · www.ft.com'), findsOneWidget);
     expect(find.byKey(const ValueKey('ask-suggest-0')), findsNothing);
 
     await tester.enterText(find.byKey(const ValueKey('ask-input')), 'And regulation?');

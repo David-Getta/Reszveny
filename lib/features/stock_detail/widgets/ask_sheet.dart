@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 
 import '../../../app_services.dart';
 import '../../../core/models/stock_report.dart';
+import '../../analysis/analysis_chat.dart' show ChatMessage;
 import '../../../l10n/error_messages.dart';
 import '../../../l10n/generated/app_localizations.dart';
 import '../../../l10n/supported_locales.dart';
 import '../../../theme/app_theme.dart';
+import '../../../widgets/source_links.dart';
 import 'section_card.dart';
 
 /// „Kérdezz az elemzésről” gomb az elemzés alján.
@@ -146,7 +148,7 @@ class _AskSheetState extends State<_AskSheet> {
                         ],
                       ),
                     ],
-                    for (final m in thread) _Bubble(message: m.text, fromUser: m.fromUser),
+                    for (final m in thread) _Bubble(message: m),
                     if (busy)
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 10),
@@ -211,10 +213,11 @@ class _AskSheetState extends State<_AskSheet> {
 }
 
 class _Bubble extends StatelessWidget {
-  const _Bubble({required this.message, required this.fromUser});
+  const _Bubble({required this.message});
 
-  final String message;
-  final bool fromUser;
+  final ChatMessage message;
+
+  bool get fromUser => message.fromUser;
 
   @override
   Widget build(BuildContext context) {
@@ -230,7 +233,14 @@ class _Bubble extends StatelessWidget {
           color: fromUser ? p.accent.withValues(alpha: 0.16) : theme.colorScheme.surfaceContainerHighest,
           borderRadius: BorderRadius.circular(16),
         ),
-        child: SelectableText(message, style: theme.textTheme.bodyMedium?.copyWith(height: 1.45)),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            SelectableText(message.text, style: theme.textTheme.bodyMedium?.copyWith(height: 1.45)),
+            SourceLinks(sources: message.sources, keyPrefix: 'ask-source'),
+          ],
+        ),
       ),
     );
   }

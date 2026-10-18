@@ -6,20 +6,24 @@ import 'package:http/http.dart' as http;
 import '../../core/config/app_config.dart';
 import '../../core/errors.dart';
 import '../../core/models/stock_report.dart';
-import 'claude_stock_analyst.dart';
+import '../news/daily_brief.dart' show AskSource, askWithSources;
 
 /// Egy üzenet a „Kérdezz az elemzésről” beszélgetésben.
 class ChatMessage {
-  const ChatMessage({required this.fromUser, required this.text});
+  const ChatMessage({required this.fromUser, required this.text, this.sources = const []});
 
   final bool fromUser;
   final String text;
+
+  /// A válaszhoz használt webes források (ha a modell utánanézett).
+  final List<AskSource> sources;
 }
 
 /// „Kérdezz az elemzésről”: rövid, a felhasználó nyelvén adott válaszok egy
-/// elkészült elemzésről. A modell az elemzés szövegét és számait kapja meg
-/// (webkeresés nélkül), így olcsó és gyors. Beszélgetésenként legfeljebb
-/// [maxQuestions] kérdés (a kontextus és a költség korlátos marad).
+/// elkészült elemzésről. A modell az elemzés szövegét és számait kapja meg, és
+/// ha a kérdéshez újabb vagy hiányzó tény kell, legfeljebb [maxSearches]
+/// webkereséssel utánanéz (fizetős csomagban; a források a válasz alatt).
+/// Beszélgetésenként legfeljebb [maxQuestions] kérdés.
 class AnalysisChat extends ChangeNotifier {
   AnalysisChat({required this.config, http.Client? client, DateTime Function()? clock})
     : _client = client ?? http.Client(),
@@ -30,6 +34,9 @@ class AnalysisChat extends ChangeNotifier {
   final DateTime Function() _clock;
 
   static const maxQuestions = 6;
+
+  /// Kérdésenként legfeljebb ennyi webkeresés (a szerver is korlátozza).
+  static const maxSearches = 2;
 
   /// A portfólió-elemzés jelentésének „tickere”.
   static const portfolioSymbol = 'PORTFOLIO';
@@ -58,7 +65,7 @@ class AnalysisChat extends ChangeNotifier {
     notifyListeners();
     try {
       final answer = await _send(report, list, companyName: companyName, language: language);
-      list.add(ChatMessage(fromUser: false, text: answer));
+      list.add(ChatMessage(fromUser: false, text: answer.text, sources: answer.sources));
     } catch (_) {
       list.removeLast();
       rethrow;
@@ -68,12 +75,12 @@ class AnalysisChat extends ChangeNotifier {
     }
   }
 
-  Future<String> _send(
+  Future<({String text, List<AskSource> sources})> _send(
     StockReport report,
     List<ChatMessage> history, {
     required String companyName,
     required String language,
-  }) async {
+  }) {
     final body = {
       'model': config.anthropicModel,
       'max_tokens': 1500,
@@ -89,41 +96,11 @@ class AnalysisChat extends ChangeNotifier {
         for (final m in history) {'role': m.fromUser ? 'user' : 'assistant', 'content': m.text},
       ],
       'output_config': {'effort': 'low'},
+      'tools': [
+        {'type': 'web_search_20260209', 'name': 'web_search', 'max_uses': maxSearches},
+      ],
     };
-    final http.Response res;
-    try {
-      res = await _client
-          .post(
-            Uri.parse(config.askEndpoint),
-            headers: {
-              'content-type': 'application/json',
-              if (config.anthropicApiKey.isNotEmpty) 'x-api-key': config.anthropicApiKey,
-              'anthropic-version': ClaudeStockAnalyst.anthropicVersion,
-            },
-            body: jsonEncode(body),
-          )
-          .timeout(const Duration(minutes: 2));
-    } on Exception catch (e) {
-      throw AnalysisException(AppErrorCode.aiUnreachable, cause: e);
-    }
-    if (res.statusCode == 429 && res.body.contains('ask_limit')) throw const AnalysisException(AppErrorCode.askLimit);
-    if (res.statusCode == 402) throw AnalysisException(ClaudeStockAnalyst.quotaErrorFor(res.body), cause: res.body);
-    if (res.statusCode != 200) {
-      throw AnalysisException(AppErrorCode.aiHttp, detail: '${res.statusCode}', cause: res.body);
-    }
-    final Map<String, dynamic> j;
-    try {
-      j = jsonDecode(utf8.decode(res.bodyBytes)) as Map<String, dynamic>;
-    } on FormatException catch (e) {
-      throw AnalysisException(AppErrorCode.aiBadResponse, cause: e);
-    }
-    if (j['stop_reason'] == 'refusal') throw const AnalysisException(AppErrorCode.aiRefused);
-    final text = [
-      for (final b in (j['content'] as List? ?? const []))
-        if (b is Map && b['type'] == 'text') b['text'] as String? ?? '',
-    ].join().trim();
-    if (text.isEmpty) throw const AnalysisException(AppErrorCode.aiBadResponse);
-    return text;
+    return askWithSources(config, _client, body);
   }
 
   /// A rendszerprompt: szerep, szabályok és az elemzés teljes szövege számokkal.
@@ -152,8 +129,11 @@ class AnalysisChat extends ChangeNotifier {
         'no headings, tables or Markdown emphasis.',
       )
       ..writeln(
-        '- Base the answer on the analysis below and on general financial knowledge. You cannot search the web: '
-        'if the question needs newer facts than the analysis, say so and suggest making a new analysis.',
+        '- Base the answer on the analysis below and on general financial knowledge. If the question needs facts '
+        'that are newer than the analysis or missing from it (recent news, how two companies are connected, a '
+        'figure the analysis lacks), use web search if it is available, at most a couple of searches, and say in '
+        'a few words where the fact comes from. If web search is not available, say that the question needs newer '
+        'facts and suggest making a new analysis. Never invent facts.',
       )
       ..writeln('- Explain terms simply when asked. Show the arithmetic when you compute a number from the analysis.')
       ..writeln(
