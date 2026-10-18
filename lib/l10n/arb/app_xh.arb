@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{Kucinywe isilumkiso esinye} other{Kucinywe izilumkiso ezi-{count}}}",
   "homeScreenTitle": "Isikrini sokuqala",
   "allocationCountries": "Amazwe",
-  "newsExplainNoteResearch": "Ingcaciso ye-AI: ikhangela iinyani kwiwebhu, ivule inqaku kwaye ivavanye ukuba umthombo uthembeke kangakanani. Ayilocebiso lotyalo-mali. Sisebenzisa umda wakho wemibuzo wemihla ngemihla, hayi uhlalutyo."
+  "newsExplainNoteResearch": "Ingcaciso ye-AI: ikhangela iinyani kwiwebhu, ivule inqaku kwaye ivavanye ukuba umthombo uthembeke kangakanani. Ayilocebiso lotyalo-mali. Sisebenzisa umda wakho wemibuzo wemihla ngemihla, hayi uhlalutyo.",
+  "sourceOfficial": "Esemthethweni",
+  "sourcePressRelease": "Ingxelo yoonondaba",
+  "sourceMajorNews": "Umthombo omkhulu",
+  "sourceOpinion": "Uluvo"
 }

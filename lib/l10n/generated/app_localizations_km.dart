@@ -2480,4 +2480,16 @@ class AppLocalizationsKm extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'ការពន្យល់ដោយ AI៖ វាស្វែងរកការពិតនៅលើបណ្ដាញ បើកអត្ថបទ ហើយវាយតម្លៃថាប្រភពគួរឱ្យទុកចិត្តប៉ុណ្ណា។ មិនមែនជាដំបូន្មានវិនិយោគទេ។ វាប្រើកម្រិតសំណួរប្រចាំថ្ងៃរបស់អ្នក មិនមែនការវិភាគទេ។';
+
+  @override
+  String get sourceOfficial => 'ផ្លូវការ';
+
+  @override
+  String get sourcePressRelease => 'សេចក្តីប្រកាសព័ត៌មាន';
+
+  @override
+  String get sourceMajorNews => 'ប្រព័ន្ធផ្សព្វផ្សាយធំ';
+
+  @override
+  String get sourceOpinion => 'មតិ';
 }

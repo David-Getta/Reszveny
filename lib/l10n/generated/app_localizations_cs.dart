@@ -2563,4 +2563,16 @@ class AppLocalizationsCs extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Vysvětlení od AI: dohledá fakta na webu, otevře článek a posoudí, jak spolehlivý je zdroj. Není investičním doporučením. Čerpá z vašeho denního limitu otázek, nespotřebuje analýzu.';
+
+  @override
+  String get sourceOfficial => 'Oficiální';
+
+  @override
+  String get sourcePressRelease => 'Tisková zpráva';
+
+  @override
+  String get sourceMajorNews => 'Velké médium';
+
+  @override
+  String get sourceOpinion => 'Názor';
 }

@@ -2511,4 +2511,16 @@ class AppLocalizationsLg extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Ennyinnyonnyola ya AI: enoonya amazima ku mukutu, eggulawo ekiwandiiko, era epima ensibuko bw\'eyesigika. Si magezi ga kusiga nsimbi. Kikozesa kkomo ly’ebibuuzo byo erya buli lunaku, so si kwekenneenya.';
+
+  @override
+  String get sourceOfficial => 'Ekyakakasibwa';
+
+  @override
+  String get sourcePressRelease => 'Ekirango';
+
+  @override
+  String get sourceMajorNews => 'Omukutu omunene';
+
+  @override
+  String get sourceOpinion => 'Endowooza';
 }

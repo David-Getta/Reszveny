@@ -2503,4 +2503,16 @@ class AppLocalizationsAz extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI izahı: faktları internetdə axtarır, məqaləni açır və mənbənin nə qədər etibarlı olduğunu qiymətləndirir. İnvestisiya məsləhəti deyil. Gündəlik sual limitinizdən istifadə edir, təhlil sərf etmir.';
+
+  @override
+  String get sourceOfficial => 'Rəsmi';
+
+  @override
+  String get sourcePressRelease => 'Press-reliz';
+
+  @override
+  String get sourceMajorNews => 'Böyük media';
+
+  @override
+  String get sourceOpinion => 'Rəy';
 }

@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{Likebisi 1 elimwisami} other{Makebisi {count} elimwisami}}",
   "homeScreenTitle": "Lokasa ya liboso",
   "allocationCountries": "Mikili",
-  "newsExplainNoteResearch": "Ndimbola ya AI: eluki makambo ya solo na Internet, efungoli lisolo mpe etali soki source yango ekoki kotyelama motema boni. Ezali toli ya kotia mbɔngɔ te. Esalelaka ndelo ya mituna na yo ya mokolo na mokolo, kasi botaleli te."
+  "newsExplainNoteResearch": "Ndimbola ya AI: eluki makambo ya solo na Internet, efungoli lisolo mpe etali soki source yango ekoki kotyelama motema boni. Ezali toli ya kotia mbɔngɔ te. Esalelaka ndelo ya mituna na yo ya mokolo na mokolo, kasi botaleli te.",
+  "sourceOfficial": "Ofisiele",
+  "sourcePressRelease": "Liyebisi",
+  "sourceMajorNews": "Zulunalo monene",
+  "sourceOpinion": "Likanisi"
 }

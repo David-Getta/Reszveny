@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{Arifa 1 imefutwa} other{Arifa {count} zimefutwa}}",
   "homeScreenTitle": "Skrini ya mwanzo",
   "allocationCountries": "Nchi",
-  "newsExplainNoteResearch": "Maelezo ya AI: hutafuta ukweli mtandaoni, hufungua makala na kutathmini jinsi chanzo kinavyoaminika. Si ushauri wa uwekezaji. Hutumia kikomo chako cha maswali cha kila siku, si uchambuzi."
+  "newsExplainNoteResearch": "Maelezo ya AI: hutafuta ukweli mtandaoni, hufungua makala na kutathmini jinsi chanzo kinavyoaminika. Si ushauri wa uwekezaji. Hutumia kikomo chako cha maswali cha kila siku, si uchambuzi.",
+  "sourceOfficial": "Rasmi",
+  "sourcePressRelease": "Taarifa",
+  "sourceMajorNews": "Chombo kikuu",
+  "sourceOpinion": "Maoni"
 }

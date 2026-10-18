@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{We don clear 1 alert} one{We don clear {count} alert} other{We don clear {count} alerts}}",
   "homeScreenTitle": "Main screen",
   "allocationCountries": "Countries",
-  "newsExplainNoteResearch": "AI explanation: e dey check di facts for web, open di article and judge how di source reliable reach. E no be investment advice. E dey use your daily question limit, no be analysis."
+  "newsExplainNoteResearch": "AI explanation: e dey check di facts for web, open di article and judge how di source reliable reach. E no be investment advice. E dey use your daily question limit, no be analysis.",
+  "sourceOfficial": "Official",
+  "sourcePressRelease": "Press release",
+  "sourceMajorNews": "Big media",
+  "sourceOpinion": "Opinion"
 }

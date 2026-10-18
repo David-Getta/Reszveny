@@ -2496,4 +2496,16 @@ class AppLocalizationsIg extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Nkọwa AI: ọ na-achọ eziokwu n\'ịntanetị, mepee isiokwu ahụ ma tụlee ma ebe e si nweta ya bụ nke a pụrụ ịtụkwasị obi. Ọ bụghị ndụmọdụ itinye ego. Ọ na-eji oke ajụjụ gị kwa ụbọchị, ọ bụghị nyocha.';
+
+  @override
+  String get sourceOfficial => 'Nke ikike';
+
+  @override
+  String get sourcePressRelease => 'Ọkwa';
+
+  @override
+  String get sourceMajorNews => 'Mgbasaozi ukwu';
+
+  @override
+  String get sourceOpinion => 'Echiche';
 }

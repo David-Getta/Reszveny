@@ -2492,4 +2492,16 @@ class AppLocalizationsMy extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI ရှင်းလင်းချက်- ဝဘ်ပေါ်တွင် အချက်အလက်များကို ရှာဖွေပြီး ဆောင်းပါးကိုဖွင့်ကာ ရင်းမြစ် မည်မျှ ယုံကြည်စိတ်ချရသည်ကို အကဲဖြတ်ပါသည်။ ရင်းနှီးမြှုပ်နှံမှု အကြံပြုချက် မဟုတ်ပါ။ နေ့စဉ် မေးခွန်းကန့်သတ်ချက်မှ သုံးပြီး ခွဲခြမ်းစိတ်ဖြာမှု မသုံးပါ။';
+
+  @override
+  String get sourceOfficial => 'တရားဝင်';
+
+  @override
+  String get sourcePressRelease => 'သတင်းထုတ်ပြန်ချက်';
+
+  @override
+  String get sourceMajorNews => 'အဓိကမီဒီယာ';
+
+  @override
+  String get sourceOpinion => 'အမြင်';
 }

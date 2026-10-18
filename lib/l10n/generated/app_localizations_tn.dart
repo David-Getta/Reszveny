@@ -2518,4 +2518,16 @@ class AppLocalizationsTn extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Tlhaloso ya AI: e batla dintlha mo inthaneteng, e bula athikele mme e sekaseka gore motswedi o ikanyega go le kana kang. Ga se kgakololo ya peeletso. E dirisa tekanyetso ya gago ya dipotso ya letsatsi le letsatsi, e seng tshekatsheko.';
+
+  @override
+  String get sourceOfficial => 'Semmuso';
+
+  @override
+  String get sourcePressRelease => 'Kitsiso';
+
+  @override
+  String get sourceMajorNews => 'Kgatiso e kgolo';
+
+  @override
+  String get sourceOpinion => 'Kakanyo';
 }

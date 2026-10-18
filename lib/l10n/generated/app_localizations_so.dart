@@ -2508,4 +2508,16 @@ class AppLocalizationsSo extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Sharaxaad AI: waxay xaqiiqooyinka ka raadisaa shabakadda, waxay furtaa maqaalka, waxayna qiimaysaa inta isha la isku halayn karo. Ma aha talo maalgashi. Waxay isticmaashaa xadka su’aalahaaga maalinlaha ah, ma aha falanqayn.';
+
+  @override
+  String get sourceOfficial => 'Rasmi';
+
+  @override
+  String get sourcePressRelease => 'War-saxaafadeed';
+
+  @override
+  String get sourceMajorNews => 'Warbaahin weyn';
+
+  @override
+  String get sourceOpinion => 'Aragti';
 }

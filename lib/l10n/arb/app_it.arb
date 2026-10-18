@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{1 avviso cancellato} other{{count} avvisi cancellati}}",
   "homeScreenTitle": "Schermata iniziale",
   "allocationCountries": "Paesi",
-  "newsExplainNoteResearch": "Spiegazione dell’IA: cerca i fatti sul web, apre l’articolo e valuta quanto è affidabile la fonte. Non costituisce un consiglio di investimento. Usa il tuo limite giornaliero di domande, non un’analisi."
+  "newsExplainNoteResearch": "Spiegazione dell’IA: cerca i fatti sul web, apre l’articolo e valuta quanto è affidabile la fonte. Non costituisce un consiglio di investimento. Usa il tuo limite giornaliero di domande, non un’analisi.",
+  "sourceOfficial": "Ufficiale",
+  "sourcePressRelease": "Comunicato",
+  "sourceMajorNews": "Grande testata",
+  "sourceOpinion": "Opinione"
 }

@@ -2509,4 +2509,16 @@ class AppLocalizationsOm extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Ibsa AI: dhugaawwan interneetii irratti barbaada, barruu sana bana, madda sana hammam amanamaa akka ta\'e madaala. Gorsa invastimantii miti. Daangaa gaaffii guyyaa kee fayyadama, xiinxala miti.';
+
+  @override
+  String get sourceOfficial => 'Kan seeraa';
+
+  @override
+  String get sourcePressRelease => 'Ibsa miidiyaa';
+
+  @override
+  String get sourceMajorNews => 'Miidiyaa guddaa';
+
+  @override
+  String get sourceOpinion => 'Yaada';
 }

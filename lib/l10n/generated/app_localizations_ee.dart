@@ -2504,4 +2504,16 @@ class AppLocalizationsEe extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI ƒe ɖeɖe me: edia nyateƒenyawo le internet dzi, eʋua nyatia eye wòkpɔa ale si woate ŋu aɖo ŋu ɖe dzɔtsoƒe la ŋu. Menye aɖaŋuɖoɖo le gadede nu ŋu o. Etsɔna tso wò gbesiagbe nyabiasewo ƒe seɖoƒe me, mezãa dzodzro aɖeke o.';
+
+  @override
+  String get sourceOfficial => 'Wo ŋutɔ tɔ';
+
+  @override
+  String get sourcePressRelease => 'Gbeƒãɖeɖe';
+
+  @override
+  String get sourceMajorNews => 'Nyadzɔdzɔ gã';
+
+  @override
+  String get sourceOpinion => 'Susu';
 }

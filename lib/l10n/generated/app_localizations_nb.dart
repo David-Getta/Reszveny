@@ -2501,4 +2501,16 @@ class AppLocalizationsNb extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI-forklaring: den slår opp fakta på nettet, åpner artikkelen og vurderer hvor pålitelig kilden er. Det er ikke investeringsråd. Bruker av den daglige spørsmålskvoten din, ikke en analyse.';
+
+  @override
+  String get sourceOfficial => 'Offisielt';
+
+  @override
+  String get sourcePressRelease => 'Pressemelding';
+
+  @override
+  String get sourceMajorNews => 'Stort medium';
+
+  @override
+  String get sourceOpinion => 'Mening';
 }

@@ -2510,4 +2510,16 @@ class AppLocalizationsCa extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Explicació d’IA: busca els fets al web, obre l’article i valora la fiabilitat de la font. No constitueix assessorament d’inversió. Fa servir el teu límit diari de preguntes, no una anàlisi.';
+
+  @override
+  String get sourceOfficial => 'Oficial';
+
+  @override
+  String get sourcePressRelease => 'Nota de premsa';
+
+  @override
+  String get sourceMajorNews => 'Gran mitjà';
+
+  @override
+  String get sourceOpinion => 'Opinió';
 }

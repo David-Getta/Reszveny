@@ -2499,4 +2499,16 @@ class AppLocalizationsYo extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Àlàyé AI: ó ń wá òtítọ́ lórí ayélujára, ó ń ṣí àpilẹ̀kọ náà, ó sì ń ṣàyẹ̀wò bí orísun náà ṣe ṣeé gbẹ́kẹ̀lé tó. Kì í ṣe ìmọ̀ràn ìdókòwò. Ó ń lo ìwọ̀n ìbéèrè ojoojúmọ́ rẹ, kì í ṣe ìtúpalẹ̀.';
+
+  @override
+  String get sourceOfficial => 'Ti àṣẹ';
+
+  @override
+  String get sourcePressRelease => 'Ìkéde';
+
+  @override
+  String get sourceMajorNews => 'Ìròyìn ńlá';
+
+  @override
+  String get sourceOpinion => 'Èrò';
 }

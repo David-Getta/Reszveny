@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{1 alarm temizlendi} other{{count} alarm temizlendi}}",
   "homeScreenTitle": "Ana ekran",
   "allocationCountries": "Ülkeler",
-  "newsExplainNoteResearch": "Yapay zekâ açıklaması: Bilgileri web’de araştırır, haberi açar ve kaynağın ne kadar güvenilir olduğunu değerlendirir. Yatırım tavsiyesi değildir. Günlük soru hakkından düşer, analiz hakkı kullanmaz."
+  "newsExplainNoteResearch": "Yapay zekâ açıklaması: Bilgileri web’de araştırır, haberi açar ve kaynağın ne kadar güvenilir olduğunu değerlendirir. Yatırım tavsiyesi değildir. Günlük soru hakkından düşer, analiz hakkı kullanmaz.",
+  "sourceOfficial": "Resmi",
+  "sourcePressRelease": "Basın bülteni",
+  "sourceMajorNews": "Büyük medya",
+  "sourceOpinion": "Görüş"
 }

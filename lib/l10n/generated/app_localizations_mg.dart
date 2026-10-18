@@ -2518,4 +2518,16 @@ class AppLocalizationsMg extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Fanazavana avy amin’ny AI: mikaroka ireo zava-misy ao amin’ny tranonkala izy, manokatra ilay lahatsoratra ary manombana ny maha-azo itokisana ny loharano. Tsy torohevitra momba ny fampiasam-bola. Mampiasa ny fetran’ny fanontanianao isan’andro izy, fa tsy famakafakana.';
+
+  @override
+  String get sourceOfficial => 'Ofisialy';
+
+  @override
+  String get sourcePressRelease => 'Fanambarana';
+
+  @override
+  String get sourceMajorNews => 'Gazety lehibe';
+
+  @override
+  String get sourceOpinion => 'Hevitra';
 }

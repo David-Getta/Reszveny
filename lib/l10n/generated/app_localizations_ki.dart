@@ -2501,4 +2501,16 @@ class AppLocalizationsKi extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Ũtaarĩria wa AI: ũcaragia ma ya ũhoro internet-inĩ, ũkahingũra gĩcunjĩ kĩu na ũgathima ũrĩa kĩhumo kĩu kĩĩhokeku. Ti ũtaaro wa investment. Ĩhũthagĩra mũhaka wa ciũria ciaku cia o mũthenya, ti ũthuthuria.';
+
+  @override
+  String get sourceOfficial => 'Rasimi';
+
+  @override
+  String get sourcePressRelease => 'Ũhoro wa kampuni';
+
+  @override
+  String get sourceMajorNews => 'Kĩhumo kĩnene';
+
+  @override
+  String get sourceOpinion => 'Mwĩciria';
 }

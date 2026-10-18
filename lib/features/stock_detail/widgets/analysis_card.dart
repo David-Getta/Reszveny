@@ -18,6 +18,7 @@ import '../../../l10n/error_messages.dart';
 import '../../../l10n/generated/app_localizations.dart';
 import '../../../l10n/supported_locales.dart';
 import '../../../theme/app_theme.dart';
+import '../../../widgets/source_links.dart' show SourceTag;
 import 'outlook_view.dart';
 import 'ask_sheet.dart';
 import 'report_changes.dart';
@@ -273,6 +274,7 @@ class _AnalysisCardState extends State<AnalysisCard> {
                                 style: theme.textTheme.bodySmall?.copyWith(color: p.accent),
                               ),
                             ),
+                            SourceTag(url: src.url),
                           ],
                         ),
                       ),

@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{Wɔapopa kɔkɔbɔ 1} other{Wɔapopa kɔkɔbɔ {count}}}",
   "homeScreenTitle": "Fie skrin",
   "allocationCountries": "Aman",
-  "newsExplainNoteResearch": "AI nkyerɛkyerɛmu: ɛhwehwɛ nokwasɛm no wɔ intanɛt so, ebue asɛm no na ɛhwɛ sɛnea wobetumi de wo ho ato fibea no so. Ɛnyɛ sikahyɛmu ho afotu. Ɛfiri wo nsɛmmisa a ɛsɛ da biara mu, ɛnni nhwehwɛmu biara."
+  "newsExplainNoteResearch": "AI nkyerɛkyerɛmu: ɛhwehwɛ nokwasɛm no wɔ intanɛt so, ebue asɛm no na ɛhwɛ sɛnea wobetumi de wo ho ato fibea no so. Ɛnyɛ sikahyɛmu ho afotu. Ɛfiri wo nsɛmmisa a ɛsɛ da biara mu, ɛnni nhwehwɛmu biara.",
+  "sourceOfficial": "Ankasa",
+  "sourcePressRelease": "Amanneɛbɔ",
+  "sourceMajorNews": "Kaseɛbɔ kɛse",
+  "sourceOpinion": "Adwene"
 }

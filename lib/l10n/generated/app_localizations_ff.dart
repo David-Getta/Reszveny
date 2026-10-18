@@ -2495,4 +2495,16 @@ class AppLocalizationsFf extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Firo AI: ina yiylo goonga ɗen e geese, ina uddita winndannde nden, ina ƴeewa no iwdi ndi hoolniri. Wonaa wasiya e investisman. Ina huutoroo keerol naamne maa ñalnde kala, wonaa ƴeewndo.';
+
+  @override
+  String get sourceOfficial => 'Laawɗungal';
+
+  @override
+  String get sourcePressRelease => 'Habrudi';
+
+  @override
+  String get sourceMajorNews => 'Jaaynde mawnde';
+
+  @override
+  String get sourceOpinion => 'Miijo';
 }

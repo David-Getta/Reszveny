@@ -2512,4 +2512,16 @@ class AppLocalizationsLn extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Ndimbola ya AI: eluki makambo ya solo na Internet, efungoli lisolo mpe etali soki source yango ekoki kotyelama motema boni. Ezali toli ya kotia mbɔngɔ te. Esalelaka ndelo ya mituna na yo ya mokolo na mokolo, kasi botaleli te.';
+
+  @override
+  String get sourceOfficial => 'Ofisiele';
+
+  @override
+  String get sourcePressRelease => 'Liyebisi';
+
+  @override
+  String get sourceMajorNews => 'Zulunalo monene';
+
+  @override
+  String get sourceOpinion => 'Likanisi';
 }

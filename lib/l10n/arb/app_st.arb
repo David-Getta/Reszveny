@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{Ho hlakotswe temoso e le nngwe} other{Ho hlakotswe ditemoso tse {count}}}",
   "homeScreenTitle": "Leqephe la qalo",
   "allocationCountries": "Dinaha",
-  "newsExplainNoteResearch": "Tlhaloso ya AI: e batla dintlha inthaneteng, e bula sengolwa mme e lekola hore na mohlodi o tshepahala hakae. Hase keletso ya ho tsetela. E sebedisa moedi wa hao wa dipotso wa letsatsi le letsatsi, eseng manollo."
+  "newsExplainNoteResearch": "Tlhaloso ya AI: e batla dintlha inthaneteng, e bula sengolwa mme e lekola hore na mohlodi o tshepahala hakae. Hase keletso ya ho tsetela. E sebedisa moedi wa hao wa dipotso wa letsatsi le letsatsi, eseng manollo.",
+  "sourceOfficial": "Semmuso",
+  "sourcePressRelease": "Tsebiso",
+  "sourceMajorNews": "Khatiso e kgolo",
+  "sourceOpinion": "Maikutlo"
 }

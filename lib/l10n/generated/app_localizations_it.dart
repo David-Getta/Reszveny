@@ -2506,4 +2506,16 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Spiegazione dell’IA: cerca i fatti sul web, apre l’articolo e valuta quanto è affidabile la fonte. Non costituisce un consiglio di investimento. Usa il tuo limite giornaliero di domande, non un’analisi.';
+
+  @override
+  String get sourceOfficial => 'Ufficiale';
+
+  @override
+  String get sourcePressRelease => 'Comunicato';
+
+  @override
+  String get sourceMajorNews => 'Grande testata';
+
+  @override
+  String get sourceOpinion => 'Opinione';
 }

@@ -2507,4 +2507,16 @@ class AppLocalizationsFil extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Paliwanag ng AI: hinahanap nito ang mga katotohanan sa web, binubuksan ang artikulo at sinusuri kung gaano kapani-paniwala ang pinagmulan. Hindi ito payo sa pamumuhunan. Gumagamit ito ng iyong pang-araw-araw na limitasyon sa tanong, hindi ng pagsusuri.';
+
+  @override
+  String get sourceOfficial => 'Opisyal';
+
+  @override
+  String get sourcePressRelease => 'Pahayag';
+
+  @override
+  String get sourceMajorNews => 'Malaking media';
+
+  @override
+  String get sourceOpinion => 'Opinyon';
 }

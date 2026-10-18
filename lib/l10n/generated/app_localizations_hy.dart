@@ -2509,4 +2509,16 @@ class AppLocalizationsHy extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI-ի բացատրություն՝ այն ստուգում է փաստերը համացանցում, բացում է հոդվածը և գնահատում, թե որքան հուսալի է աղբյուրը։ Ներդրումային խորհուրդ չէ։ Օգտագործում է ձեր օրական հարցերի սահմանաչափը, ոչ թե վերլուծություն։';
+
+  @override
+  String get sourceOfficial => 'Պաշտոնական';
+
+  @override
+  String get sourcePressRelease => 'Մամուլի հաղորդագրություն';
+
+  @override
+  String get sourceMajorNews => 'Խոշոր լրատվամիջոց';
+
+  @override
+  String get sourceOpinion => 'Կարծիք';
 }

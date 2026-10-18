@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{Kususwe isexwayiso esisodwa} other{Kususwe izexwayiso ezingu-{count}}}",
   "homeScreenTitle": "Isikrini sasekhaya",
   "allocationCountries": "Amazwe",
-  "newsExplainNoteResearch": "Incazelo ye-AI: ifuna amaqiniso kuwebhu, ivule i-athikili futhi ihlole ukuthi umthombo uthembeke kangakanani. Akuyona iseluleko sokutshala imali. Sisebenzisa umkhawulo wakho wemibuzo wansuku zonke, hhayi ukuhlaziya."
+  "newsExplainNoteResearch": "Incazelo ye-AI: ifuna amaqiniso kuwebhu, ivule i-athikili futhi ihlole ukuthi umthombo uthembeke kangakanani. Akuyona iseluleko sokutshala imali. Sisebenzisa umkhawulo wakho wemibuzo wansuku zonke, hhayi ukuhlaziya.",
+  "sourceOfficial": "Okusemthethweni",
+  "sourcePressRelease": "Isitatimende",
+  "sourceMajorNews": "Abezindaba abakhulu",
+  "sourceOpinion": "Umbono"
 }

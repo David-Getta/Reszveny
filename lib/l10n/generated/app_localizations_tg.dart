@@ -2502,4 +2502,16 @@ class AppLocalizationsTg extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Шарҳи AI: далелҳоро дар интернет меҷӯяд, мақоларо мекушояд ва арзёбӣ мекунад, ки манбаъ то чӣ андоза боэътимод аст. Маслиҳати сармоягузорӣ нест. Аз ҳадди саволҳои ҳаррӯзаи шумо сарф мешавад, на таҳлил.';
+
+  @override
+  String get sourceOfficial => 'Расмӣ';
+
+  @override
+  String get sourcePressRelease => 'Пресс-релиз';
+
+  @override
+  String get sourceMajorNews => 'ВАО-и бузург';
+
+  @override
+  String get sourceOpinion => 'Андеша';
 }

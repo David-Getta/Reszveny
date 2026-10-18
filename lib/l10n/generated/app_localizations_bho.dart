@@ -2496,4 +2496,16 @@ class AppLocalizationsBho extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI के व्याख्या: ई वेब पर तथ्य खोजेला, लेख खोलेला आ परखेला कि स्रोत केतना भरोसेमंद बा। ई निवेश के सलाह ना ह। ई रउआ रोज के सवाल के सीमा से जाला, कवनो विश्लेषण खरच ना होला।';
+
+  @override
+  String get sourceOfficial => 'आधिकारिक';
+
+  @override
+  String get sourcePressRelease => 'प्रेस रिलीज';
+
+  @override
+  String get sourceMajorNews => 'बड़ मीडिया';
+
+  @override
+  String get sourceOpinion => 'राय';
 }

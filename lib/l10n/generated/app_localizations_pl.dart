@@ -2570,4 +2570,16 @@ class AppLocalizationsPl extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Wyjaśnienie AI: sprawdza fakty w sieci, otwiera artykuł i ocenia, na ile wiarygodne jest źródło. Nie stanowi porady inwestycyjnej. Korzysta z dziennego limitu pytań, nie zużywa analizy.';
+
+  @override
+  String get sourceOfficial => 'Oficjalne';
+
+  @override
+  String get sourcePressRelease => 'Komunikat';
+
+  @override
+  String get sourceMajorNews => 'Duże medium';
+
+  @override
+  String get sourceOpinion => 'Opinia';
 }

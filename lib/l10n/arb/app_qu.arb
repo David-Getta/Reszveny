@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{1 willay pichasqa} other{{count} willay pichasqa}}",
   "homeScreenTitle": "Qallariy pantalla",
   "allocationCountries": "Suyukuna",
-  "newsExplainNoteResearch": "AI sut’ichay: web nisqapi chiqap kaqkunata maskhan, qillqata kichan, pukyuqa hayk’a iñinapaq kasqanta chaninchan. Manan qullqi churanapaq yuyaychaychu. Sapa p’unchay tapukuy limitiykita apaykachan, manan t’aqwiytachu."
+  "newsExplainNoteResearch": "AI sut’ichay: web nisqapi chiqap kaqkunata maskhan, qillqata kichan, pukyuqa hayk’a iñinapaq kasqanta chaninchan. Manan qullqi churanapaq yuyaychaychu. Sapa p’unchay tapukuy limitiykita apaykachan, manan t’aqwiytachu.",
+  "sourceOfficial": "Oficial",
+  "sourcePressRelease": "Willakuy",
+  "sourceMajorNews": "Hatun willakuq",
+  "sourceOpinion": "Yuyay"
 }

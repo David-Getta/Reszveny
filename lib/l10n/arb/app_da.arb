@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{1 alarm fjernet} other{{count} alarmer fjernet}}",
   "homeScreenTitle": "Startskærm",
   "allocationCountries": "Lande",
-  "newsExplainNoteResearch": "AI-forklaring: den slår fakta op på nettet, åbner artiklen og vurderer, hvor pålidelig kilden er. Det er ikke investeringsrådgivning. Det bruger af din daglige spørgsmålskvote, ikke en analyse."
+  "newsExplainNoteResearch": "AI-forklaring: den slår fakta op på nettet, åbner artiklen og vurderer, hvor pålidelig kilden er. Det er ikke investeringsrådgivning. Det bruger af din daglige spørgsmålskvote, ikke en analyse.",
+  "sourceOfficial": "Officiel",
+  "sourcePressRelease": "Pressemeddelelse",
+  "sourceMajorNews": "Stort medie",
+  "sourceOpinion": "Mening"
 }

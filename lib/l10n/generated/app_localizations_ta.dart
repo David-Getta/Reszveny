@@ -2510,4 +2510,16 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI விளக்கம்: இது இணையத்தில் உண்மைகளைத் தேடி, கட்டுரையைத் திறந்து, ஆதாரம் எவ்வளவு நம்பகமானது என்பதை மதிப்பிடுகிறது. இது முதலீட்டு ஆலோசனை அல்ல. இது உங்கள் தினசரி கேள்வி வரம்பிலிருந்து செலவாகும், பகுப்பாய்வு எதுவும் செலவாகாது.';
+
+  @override
+  String get sourceOfficial => 'அதிகாரப்பூர்வம்';
+
+  @override
+  String get sourcePressRelease => 'செய்திக்குறிப்பு';
+
+  @override
+  String get sourceMajorNews => 'முன்னணி ஊடகம்';
+
+  @override
+  String get sourceOpinion => 'கருத்து';
 }

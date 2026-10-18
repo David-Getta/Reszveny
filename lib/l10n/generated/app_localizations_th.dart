@@ -2471,4 +2471,16 @@ class AppLocalizationsTh extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'คำอธิบายจาก AI ที่ค้นหาข้อเท็จจริงบนเว็บ เปิดอ่านบทความ และประเมินว่าแหล่งที่มาน่าเชื่อถือเพียงใด ไม่ใช่คำแนะนำในการลงทุน ใช้โควตาคำถามรายวันของคุณ ไม่ใช้สิทธิ์การวิเคราะห์';
+
+  @override
+  String get sourceOfficial => 'ทางการ';
+
+  @override
+  String get sourcePressRelease => 'ข่าวประชาสัมพันธ์';
+
+  @override
+  String get sourceMajorNews => 'สื่อหลัก';
+
+  @override
+  String get sourceOpinion => 'ความเห็น';
 }

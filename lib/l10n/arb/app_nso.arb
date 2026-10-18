@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{Go phumotšwe temošo e 1} other{Go phumotšwe ditemošo tše {count}}}",
   "homeScreenTitle": "Letlakala la mathomo",
   "allocationCountries": "Dinaga",
-  "newsExplainNoteResearch": "Tlhalošo ya AI: e nyaka dintlha wepeng, e bula sengwalwa gomme e lekola gore mothopo o a botega gakaakang. Ga se keletšo ya peeletšo. E diriša moedi wa gago wa dipotšišo wa letšatši le letšatši, e sego tshekatsheko."
+  "newsExplainNoteResearch": "Tlhalošo ya AI: e nyaka dintlha wepeng, e bula sengwalwa gomme e lekola gore mothopo o a botega gakaakang. Ga se keletšo ya peeletšo. E diriša moedi wa gago wa dipotšišo wa letšatši le letšatši, e sego tshekatsheko.",
+  "sourceOfficial": "Semmušo",
+  "sourcePressRelease": "Tsebišo",
+  "sourceMajorNews": "Kgatišo ye kgolo",
+  "sourceOpinion": "Kgopolo"
 }

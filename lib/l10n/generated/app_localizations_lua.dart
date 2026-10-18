@@ -2508,4 +2508,16 @@ class AppLocalizationsLua extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Diumvuija dia AI: didi dikeba malu a bulelela ku Internet, dibulula mukanda ne dimona mushindu udi mpokolo eu mua kueyemenyibua. Kadiena mibelu ya kuteka mfranga. Bidi bienzeja mukalu wa nkonko yebe ya dituku dionso, kabiyi dikonkonona.';
+
+  @override
+  String get sourceOfficial => 'Bya bukokeshi';
+
+  @override
+  String get sourcePressRelease => 'Mukenji wa kompanyi';
+
+  @override
+  String get sourceMajorNews => 'Lumu lunene';
+
+  @override
+  String get sourceOpinion => 'Meji';
 }

@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{Dimanyisha 1 diajimijibua} other{Mamanyisha {count} majimijibua}}",
   "homeScreenTitle": "Dibeji dia kumpala",
   "allocationCountries": "Matunga",
-  "newsExplainNoteResearch": "Diumvuija dia AI: didi dikeba malu a bulelela ku Internet, dibulula mukanda ne dimona mushindu udi mpokolo eu mua kueyemenyibua. Kadiena mibelu ya kuteka mfranga. Bidi bienzeja mukalu wa nkonko yebe ya dituku dionso, kabiyi dikonkonona."
+  "newsExplainNoteResearch": "Diumvuija dia AI: didi dikeba malu a bulelela ku Internet, dibulula mukanda ne dimona mushindu udi mpokolo eu mua kueyemenyibua. Kadiena mibelu ya kuteka mfranga. Bidi bienzeja mukalu wa nkonko yebe ya dituku dionso, kabiyi dikonkonona.",
+  "sourceOfficial": "Bya bukokeshi",
+  "sourcePressRelease": "Mukenji wa kompanyi",
+  "sourceMajorNews": "Lumu lunene",
+  "sourceOpinion": "Meji"
 }

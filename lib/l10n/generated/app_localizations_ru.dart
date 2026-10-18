@@ -2570,4 +2570,16 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Объяснение от ИИ: проверяет факты в интернете, открывает статью и оценивает, насколько надёжен источник. Не является инвестиционной рекомендацией. Расходуется дневной лимит вопросов, а не анализ.';
+
+  @override
+  String get sourceOfficial => 'Официально';
+
+  @override
+  String get sourcePressRelease => 'Пресс-релиз';
+
+  @override
+  String get sourceMajorNews => 'Крупное СМИ';
+
+  @override
+  String get sourceOpinion => 'Мнение';
 }

@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{已清除 1 个提醒} other{已清除 {count} 个提醒}}",
   "homeScreenTitle": "首页",
   "allocationCountries": "国家",
-  "newsExplainNoteResearch": "AI 解读：在网上查证事实，打开原文，并评估来源的可靠程度。不构成投资建议。占用每日提问次数，不消耗分析次数。"
+  "newsExplainNoteResearch": "AI 解读：在网上查证事实，打开原文，并评估来源的可靠程度。不构成投资建议。占用每日提问次数，不消耗分析次数。",
+  "sourceOfficial": "官方",
+  "sourcePressRelease": "新闻稿",
+  "sourceMajorNews": "主流媒体",
+  "sourceOpinion": "观点"
 }

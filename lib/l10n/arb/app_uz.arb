@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{1 ta ogohlantirish tozalandi} other{{count} ta ogohlantirish tozalandi}}",
   "homeScreenTitle": "Bosh ekran",
   "allocationCountries": "Mamlakatlar",
-  "newsExplainNoteResearch": "AI izohi: faktlarni internetda qidiradi, maqolani ochadi va manba qanchalik ishonchli ekanini baholaydi. Bu investitsiya maslahati emas. Kunlik savollar limitingizdan sarflanadi, tahlil emas."
+  "newsExplainNoteResearch": "AI izohi: faktlarni internetda qidiradi, maqolani ochadi va manba qanchalik ishonchli ekanini baholaydi. Bu investitsiya maslahati emas. Kunlik savollar limitingizdan sarflanadi, tahlil emas.",
+  "sourceOfficial": "Rasmiy",
+  "sourcePressRelease": "Press-reliz",
+  "sourceMajorNews": "Yirik OAV",
+  "sourceOpinion": "Fikr"
 }

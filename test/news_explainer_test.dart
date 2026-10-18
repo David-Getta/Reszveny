@@ -123,6 +123,8 @@ void main() {
     expect(find.text('Nvidia did better than expected. It may support the price.'), findsOneWidget);
     // A hivatkozott forrás linkként (a nem idézett keresési találat nem).
     expect(find.text('Reuters report · www.reuters.com'), findsOneWidget);
+    // A forrás jellege kis címkén: a Reuters vezető hírforrás.
+    expect(find.byKey(const ValueKey('source-tag-majorNews')), findsOneWidget);
     expect(find.byKey(const ValueKey('news-source-1')), findsNothing);
     expect(calls, 2);
     // Másodszor a tárolt magyarázat jön.

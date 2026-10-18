@@ -2501,4 +2501,16 @@ class AppLocalizationsTk extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI düşündirişi: faktlary internetde gözleýär, makalany açýar we çeşmäniň näderejede ygtybarlydygyna baha berýär. Maýa goýum maslahaty däldir. Gündelik sorag çägiňizden harçlanýar, seljerme däl.';
+
+  @override
+  String get sourceOfficial => 'Resmi';
+
+  @override
+  String get sourcePressRelease => 'Metbugat beýannamasy';
+
+  @override
+  String get sourceMajorNews => 'Iri media';
+
+  @override
+  String get sourceOpinion => 'Pikir';
 }

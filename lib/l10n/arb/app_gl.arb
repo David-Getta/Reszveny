@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{Borrouse 1 alerta} one{Borrouse {count} alerta} other{Borráronse {count} alertas}}",
   "homeScreenTitle": "Pantalla de inicio",
   "allocationCountries": "Países",
-  "newsExplainNoteResearch": "Explicación de IA: busca os datos na web, abre o artigo e valora a fiabilidade da fonte. Non constitúe asesoramento de investimento. Usa o teu límite diario de preguntas, non unha análise."
+  "newsExplainNoteResearch": "Explicación de IA: busca os datos na web, abre o artigo e valora a fiabilidade da fonte. Non constitúe asesoramento de investimento. Usa o teu límite diario de preguntas, non unha análise.",
+  "sourceOfficial": "Oficial",
+  "sourcePressRelease": "Nota de prensa",
+  "sourceMajorNews": "Gran medio",
+  "sourceOpinion": "Opinión"
 }

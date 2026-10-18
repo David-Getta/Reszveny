@@ -2498,4 +2498,16 @@ class AppLocalizationsOr extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI ବ୍ୟାଖ୍ୟା: ଏହା ୱେବରେ ତଥ୍ୟ ଖୋଜେ, ଲେଖଟି ଖୋଲେ ଏବଂ ଉତ୍ସଟି କେତେ ବିଶ୍ୱସନୀୟ ତାହା ଆକଳନ କରେ। ଏହା ନିବେଶ ପରାମର୍ଶ ନୁହେଁ। ଏହା ଆପଣଙ୍କ ଦୈନିକ ପ୍ରଶ୍ନ ସୀମାରୁ ଯାଏ, କୌଣସି ବିଶ୍ଳେଷଣ ଖର୍ଚ୍ଚ ହୁଏ ନାହିଁ।';
+
+  @override
+  String get sourceOfficial => 'ଆଧିକାରିକ';
+
+  @override
+  String get sourcePressRelease => 'ପ୍ରେସ ବିଜ୍ଞପ୍ତି';
+
+  @override
+  String get sourceMajorNews => 'ପ୍ରମୁଖ ଗଣମାଧ୍ୟମ';
+
+  @override
+  String get sourceOpinion => 'ମତାମତ';
 }

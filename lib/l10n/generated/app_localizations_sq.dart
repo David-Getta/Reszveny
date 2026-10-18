@@ -2507,4 +2507,16 @@ class AppLocalizationsSq extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Shpjegim nga AI: kërkon faktet në internet, hap artikullin dhe vlerëson sa i besueshëm është burimi. Nuk përbën këshillë investimi. Përdor kufirin tuaj ditor të pyetjeve, jo një analizë.';
+
+  @override
+  String get sourceOfficial => 'Zyrtare';
+
+  @override
+  String get sourcePressRelease => 'Njoftim për shtyp';
+
+  @override
+  String get sourceMajorNews => 'Media e madhe';
+
+  @override
+  String get sourceOpinion => 'Opinion';
 }

@@ -2517,4 +2517,16 @@ class AppLocalizationsTs extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Nhlamuselo ya AI: yi lavisisa ntiyiso ewebeni, yi pfula xitsalwa naswona yi kambela leswaku xihlovo xi tshembeka ku fikela kwihi. A hi ndzayo ya vuvekisi. Yi tirhisa ndzelekano wa wena wa swivutiso wa siku na siku, ku nga ri nxopaxopo.';
+
+  @override
+  String get sourceOfficial => 'Swa ximfumo';
+
+  @override
+  String get sourcePressRelease => 'Xitiviso';
+
+  @override
+  String get sourceMajorNews => 'Phephahungu lerikulu';
+
+  @override
+  String get sourceOpinion => 'Mavonelo';
 }

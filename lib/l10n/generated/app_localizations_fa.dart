@@ -2497,4 +2497,16 @@ class AppLocalizationsFa extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'توضیح هوش مصنوعی: واقعیت‌ها را در وب جست‌وجو می‌کند، مقاله را باز می‌کند و میزان اعتبار منبع را می‌سنجد. توصیه سرمایه‌گذاری نیست. از سهمیهٔ روزانهٔ پرسش‌های شما کم می‌شود، نه از تحلیل‌ها.';
+
+  @override
+  String get sourceOfficial => 'رسمی';
+
+  @override
+  String get sourcePressRelease => 'بیانیه مطبوعاتی';
+
+  @override
+  String get sourceMajorNews => 'رسانه بزرگ';
+
+  @override
+  String get sourceOpinion => 'دیدگاه';
 }

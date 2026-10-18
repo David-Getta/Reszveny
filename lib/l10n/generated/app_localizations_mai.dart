@@ -2494,4 +2494,16 @@ class AppLocalizationsMai extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI व्याख्या: ई वेब पर तथ्य खोजैत अछि, लेख खोलैत अछि आ परखैत अछि जे स्रोत कतेक भरोसेमंद अछि। ई निवेशक सलाह नहि अछि। ई अहाँक दैनिक प्रश्न-सीमासँ जाइत अछि, कोनो विश्लेषण खर्च नहि होइत अछि।';
+
+  @override
+  String get sourceOfficial => 'आधिकारिक';
+
+  @override
+  String get sourcePressRelease => 'प्रेस विज्ञप्ति';
+
+  @override
+  String get sourceMajorNews => 'पैघ मीडिया';
+
+  @override
+  String get sourceOpinion => 'विचार';
 }

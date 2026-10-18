@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{Napapas ang 1 ka alerto} other{Napapas ang {count} ka alerto}}",
   "homeScreenTitle": "Panguna nga screen",
   "allocationCountries": "Nasud",
-  "newsExplainNoteResearch": "Pagpatin-aw sa AI: pangitaon niini ang mga kamatuoran sa web, ablihan ang artikulo ug timbangon kon unsa ka kasaligan ang tinubdan. Dili kini tambag sa pagpamuhunan. Mogamit kini sa imong adlaw-adlaw nga limitasyon sa pangutana, dili sa pagtuki."
+  "newsExplainNoteResearch": "Pagpatin-aw sa AI: pangitaon niini ang mga kamatuoran sa web, ablihan ang artikulo ug timbangon kon unsa ka kasaligan ang tinubdan. Dili kini tambag sa pagpamuhunan. Mogamit kini sa imong adlaw-adlaw nga limitasyon sa pangutana, dili sa pagtuki.",
+  "sourceOfficial": "Opisyal",
+  "sourcePressRelease": "Pahibalo",
+  "sourceMajorNews": "Dakong media",
+  "sourceOpinion": "Opinyon"
 }

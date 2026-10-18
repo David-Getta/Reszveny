@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{1 xəbərdarlıq təmizləndi} other{{count} xəbərdarlıq təmizləndi}}",
   "homeScreenTitle": "Əsas ekran",
   "allocationCountries": "Ölkələr",
-  "newsExplainNoteResearch": "AI izahı: faktları internetdə axtarır, məqaləni açır və mənbənin nə qədər etibarlı olduğunu qiymətləndirir. İnvestisiya məsləhəti deyil. Gündəlik sual limitinizdən istifadə edir, təhlil sərf etmir."
+  "newsExplainNoteResearch": "AI izahı: faktları internetdə axtarır, məqaləni açır və mənbənin nə qədər etibarlı olduğunu qiymətləndirir. İnvestisiya məsləhəti deyil. Gündəlik sual limitinizdən istifadə edir, təhlil sərf etmir.",
+  "sourceOfficial": "Rəsmi",
+  "sourcePressRelease": "Press-reliz",
+  "sourceMajorNews": "Böyük media",
+  "sourceOpinion": "Rəy"
 }

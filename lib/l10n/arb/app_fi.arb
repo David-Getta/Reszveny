@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{1 hälytys poistettu} other{{count} hälytystä poistettu}}",
   "homeScreenTitle": "Aloitusnäkymä",
   "allocationCountries": "Maat",
-  "newsExplainNoteResearch": "Tekoälyn selitys: se tarkistaa tosiasiat verkosta, avaa artikkelin ja arvioi, kuinka luotettava lähde on. Se ei ole sijoitusneuvontaa. Kuluttaa päivittäistä kysymyskiintiötäsi, ei analyysia."
+  "newsExplainNoteResearch": "Tekoälyn selitys: se tarkistaa tosiasiat verkosta, avaa artikkelin ja arvioi, kuinka luotettava lähde on. Se ei ole sijoitusneuvontaa. Kuluttaa päivittäistä kysymyskiintiötäsi, ei analyysia.",
+  "sourceOfficial": "Virallinen",
+  "sourcePressRelease": "Tiedote",
+  "sourceMajorNews": "Suuri media",
+  "sourceOpinion": "Mielipide"
 }

@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{1 ማንቂያ ተሰርዟል} other{{count} ማንቂያዎች ተሰርዘዋል}}",
   "homeScreenTitle": "መነሻ ገጽ",
   "allocationCountries": "አገሮች",
-  "newsExplainNoteResearch": "የAI ማብራሪያ፦ እውነታዎቹን በድር ላይ ይፈልጋል፣ ጽሑፉን ይከፍታል፣ ምንጩ ምን ያህል አስተማማኝ እንደሆነም ይገመግማል። የኢንቨስትመንት ምክር አይደለም። ከዕለታዊ የጥያቄ ገደብዎ ይቆጠራል እንጂ ትንተና አይጠቀምም።"
+  "newsExplainNoteResearch": "የAI ማብራሪያ፦ እውነታዎቹን በድር ላይ ይፈልጋል፣ ጽሑፉን ይከፍታል፣ ምንጩ ምን ያህል አስተማማኝ እንደሆነም ይገመግማል። የኢንቨስትመንት ምክር አይደለም። ከዕለታዊ የጥያቄ ገደብዎ ይቆጠራል እንጂ ትንተና አይጠቀምም።",
+  "sourceOfficial": "ይፋዊ",
+  "sourcePressRelease": "ጋዜጣዊ መግለጫ",
+  "sourceMajorNews": "ዋና ሚዲያ",
+  "sourceOpinion": "አስተያየት"
 }

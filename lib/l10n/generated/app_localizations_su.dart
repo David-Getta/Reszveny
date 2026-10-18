@@ -2504,4 +2504,16 @@ class AppLocalizationsSu extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Katerangan AI: néangan fakta di wéb, muka artikelna, sarta meunteun sabaraha bisa dipercaya sumberna. Lain naséhat investasi. Nganggo wates patarosan sapopoé anjeun, sanés analisis.';
+
+  @override
+  String get sourceOfficial => 'Resmi';
+
+  @override
+  String get sourcePressRelease => 'Siaran pers';
+
+  @override
+  String get sourceMajorNews => 'Média gedé';
+
+  @override
+  String get sourceOpinion => 'Pamadegan';
 }

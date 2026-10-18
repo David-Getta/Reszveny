@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{1 peringatan dihapus} other{{count} peringatan dihapus}}",
   "homeScreenTitle": "Layar utama",
   "allocationCountries": "Negara",
-  "newsExplainNoteResearch": "Penjelasan AI: mencari fakta di web, membuka artikelnya, dan menilai seberapa tepercaya sumbernya. Bukan saran investasi. Memakai kuota pertanyaan harian Anda, bukan analisis."
+  "newsExplainNoteResearch": "Penjelasan AI: mencari fakta di web, membuka artikelnya, dan menilai seberapa tepercaya sumbernya. Bukan saran investasi. Memakai kuota pertanyaan harian Anda, bukan analisis.",
+  "sourceOfficial": "Resmi",
+  "sourcePressRelease": "Siaran pers",
+  "sourceMajorNews": "Media besar",
+  "sourceOpinion": "Opini"
 }

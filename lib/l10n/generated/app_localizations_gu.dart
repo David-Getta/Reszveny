@@ -2496,4 +2496,16 @@ class AppLocalizationsGu extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI સમજૂતી: તે વેબ પર તથ્યો શોધે છે, લેખ ખોલે છે અને સ્રોત કેટલો વિશ્વસનીય છે તેનું મૂલ્યાંકન કરે છે. તે રોકાણ સલાહ નથી. તે તમારી દૈનિક પ્રશ્ન મર્યાદામાંથી જાય છે, કોઈ વિશ્લેષણ વપરાતું નથી.';
+
+  @override
+  String get sourceOfficial => 'અધિકૃત';
+
+  @override
+  String get sourcePressRelease => 'પ્રેસ રિલીઝ';
+
+  @override
+  String get sourceMajorNews => 'મુખ્ય મીડિયા';
+
+  @override
+  String get sourceOpinion => 'અભિપ્રાય';
 }

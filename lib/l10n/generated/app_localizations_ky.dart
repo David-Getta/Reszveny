@@ -2504,4 +2504,16 @@ class AppLocalizationsKy extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI түшүндүрмөсү: фактыларды интернеттен издейт, макаланы ачат жана булактын канчалык ишенимдүү экенин баалайт. Инвестициялык кеңеш эмес. Күнүмдүк суроолор чегиңизден сарпталат, талдоо эмес.';
+
+  @override
+  String get sourceOfficial => 'Расмий';
+
+  @override
+  String get sourcePressRelease => 'Пресс-релиз';
+
+  @override
+  String get sourceMajorNews => 'Ири ЖМК';
+
+  @override
+  String get sourceOpinion => 'Пикир';
 }

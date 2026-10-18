@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{1 larm rensat} other{{count} larm rensade}}",
   "homeScreenTitle": "Startskärm",
   "allocationCountries": "Länder",
-  "newsExplainNoteResearch": "AI-förklaring: den kollar fakta på webben, öppnar artikeln och bedömer hur tillförlitlig källan är. Det är inte investeringsrådgivning. Använder din dagliga frågekvot, inte en analys."
+  "newsExplainNoteResearch": "AI-förklaring: den kollar fakta på webben, öppnar artikeln och bedömer hur tillförlitlig källan är. Det är inte investeringsrådgivning. Använder din dagliga frågekvot, inte en analys.",
+  "sourceOfficial": "Officiell",
+  "sourcePressRelease": "Pressmeddelande",
+  "sourceMajorNews": "Stort medium",
+  "sourceOpinion": "Åsikt"
 }

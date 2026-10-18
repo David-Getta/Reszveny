@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{Okulabula 1 kusanguddwawo} other{Okulabula {count} kusanguddwawo}}",
   "homeScreenTitle": "Omuko ogusooka",
   "allocationCountries": "Amawanga",
-  "newsExplainNoteResearch": "Ennyinnyonnyola ya AI: enoonya amazima ku mukutu, eggulawo ekiwandiiko, era epima ensibuko bw'eyesigika. Si magezi ga kusiga nsimbi. Kikozesa kkomo ly’ebibuuzo byo erya buli lunaku, so si kwekenneenya."
+  "newsExplainNoteResearch": "Ennyinnyonnyola ya AI: enoonya amazima ku mukutu, eggulawo ekiwandiiko, era epima ensibuko bw'eyesigika. Si magezi ga kusiga nsimbi. Kikozesa kkomo ly’ebibuuzo byo erya buli lunaku, so si kwekenneenya.",
+  "sourceOfficial": "Ekyakakasibwa",
+  "sourcePressRelease": "Ekirango",
+  "sourceMajorNews": "Omukutu omunene",
+  "sourceOpinion": "Endowooza"
 }

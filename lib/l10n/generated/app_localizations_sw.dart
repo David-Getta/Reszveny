@@ -2501,4 +2501,16 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Maelezo ya AI: hutafuta ukweli mtandaoni, hufungua makala na kutathmini jinsi chanzo kinavyoaminika. Si ushauri wa uwekezaji. Hutumia kikomo chako cha maswali cha kila siku, si uchambuzi.';
+
+  @override
+  String get sourceOfficial => 'Rasmi';
+
+  @override
+  String get sourcePressRelease => 'Taarifa';
+
+  @override
+  String get sourceMajorNews => 'Chombo kikuu';
+
+  @override
+  String get sourceOpinion => 'Maoni';
 }

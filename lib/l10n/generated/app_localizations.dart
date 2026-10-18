@@ -4326,6 +4326,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'An AI explanation: it looks the facts up on the web, opens the article and judges how reliable the source is. It is not investment advice. Uses your daily question allowance, not an analysis.'**
   String get newsExplainNoteResearch;
+
+  /// Tiny tag next to a source link: an exchange/regulator filing or the company's investor-relations site.
+  ///
+  /// In en, this message translates to:
+  /// **'Official'**
+  String get sourceOfficial;
+
+  /// Tiny tag next to a source link: the company's own press release (PR Newswire, Business Wire…).
+  ///
+  /// In en, this message translates to:
+  /// **'Press release'**
+  String get sourcePressRelease;
+
+  /// Tiny tag next to a source link: a major news agency or leading business paper (Reuters, Bloomberg, FT…).
+  ///
+  /// In en, this message translates to:
+  /// **'Major outlet'**
+  String get sourceMajorNews;
+
+  /// Tiny tag next to a source link: opinion, analyst blog or stock-tip site (Motley Fool, Seeking Alpha…).
+  ///
+  /// In en, this message translates to:
+  /// **'Opinion'**
+  String get sourceOpinion;
 }
 
 class _AppLocalizationsDelegate

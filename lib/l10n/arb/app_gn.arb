@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{Oñemboguete 1 momarandu} other{Oñemboguete {count} momarandu}}",
   "homeScreenTitle": "Ñepyrũha",
   "allocationCountries": "Tetãkuéra",
-  "newsExplainNoteResearch": "AI omyesakãva: oheka umi añeteguáva ñandutípe, oipe'a pe jehaipy ha ohecha mba'éichapa ojeroviakuaa pe teñoiha. Ndahaʼéi ñemoñeʼẽ inversión rehegua. Oipuru ne porandu papapy ára ha ára guarã, ndaha’éi jehesa’ỹijo."
+  "newsExplainNoteResearch": "AI omyesakãva: oheka umi añeteguáva ñandutípe, oipe'a pe jehaipy ha ohecha mba'éichapa ojeroviakuaa pe teñoiha. Ndahaʼéi ñemoñeʼẽ inversión rehegua. Oipuru ne porandu papapy ára ha ára guarã, ndaha’éi jehesa’ỹijo.",
+  "sourceOfficial": "Añetegua",
+  "sourcePressRelease": "Marandu",
+  "sourceMajorNews": "Ñemyasãi tuicha",
+  "sourceOpinion": "Temiandu"
 }

@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{A ti pa ìkìlọ̀ 1 rẹ́} other{A ti pa ìkìlọ̀ {count} rẹ́}}",
   "homeScreenTitle": "Ojú-ìwé àkọ́kọ́",
   "allocationCountries": "Orílẹ̀-èdè",
-  "newsExplainNoteResearch": "Àlàyé AI: ó ń wá òtítọ́ lórí ayélujára, ó ń ṣí àpilẹ̀kọ náà, ó sì ń ṣàyẹ̀wò bí orísun náà ṣe ṣeé gbẹ́kẹ̀lé tó. Kì í ṣe ìmọ̀ràn ìdókòwò. Ó ń lo ìwọ̀n ìbéèrè ojoojúmọ́ rẹ, kì í ṣe ìtúpalẹ̀."
+  "newsExplainNoteResearch": "Àlàyé AI: ó ń wá òtítọ́ lórí ayélujára, ó ń ṣí àpilẹ̀kọ náà, ó sì ń ṣàyẹ̀wò bí orísun náà ṣe ṣeé gbẹ́kẹ̀lé tó. Kì í ṣe ìmọ̀ràn ìdókòwò. Ó ń lo ìwọ̀n ìbéèrè ojoojúmọ́ rẹ, kì í ṣe ìtúpalẹ̀.",
+  "sourceOfficial": "Ti àṣẹ",
+  "sourcePressRelease": "Ìkéde",
+  "sourceMajorNews": "Ìròyìn ńlá",
+  "sourceOpinion": "Èrò"
 }

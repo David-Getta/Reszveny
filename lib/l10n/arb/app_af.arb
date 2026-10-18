@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{1 alarm geskrap} other{{count} alarms geskrap}}",
   "homeScreenTitle": "Tuisskerm",
   "allocationCountries": "Lande",
-  "newsExplainNoteResearch": "AI-verduideliking: dit soek die feite op die web na, maak die artikel oop en beoordeel hoe betroubaar die bron is. Dit is nie beleggingsadvies nie. Dit gebruik jou daaglikse vraagtoelae, nie ’n ontleding nie."
+  "newsExplainNoteResearch": "AI-verduideliking: dit soek die feite op die web na, maak die artikel oop en beoordeel hoe betroubaar die bron is. Dit is nie beleggingsadvies nie. Dit gebruik jou daaglikse vraagtoelae, nie ’n ontleding nie.",
+  "sourceOfficial": "Amptelik",
+  "sourcePressRelease": "Persverklaring",
+  "sourceMajorNews": "Groot media",
+  "sourceOpinion": "Mening"
 }

@@ -2511,4 +2511,16 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Explication par IA : elle vérifie les faits sur le web, ouvre l’article et évalue la fiabilité de la source. Elle ne constitue pas un conseil en investissement. Utilise votre quota quotidien de questions, pas une analyse.';
+
+  @override
+  String get sourceOfficial => 'Officiel';
+
+  @override
+  String get sourcePressRelease => 'Communiqué';
+
+  @override
+  String get sourceMajorNews => 'Grand média';
+
+  @override
+  String get sourceOpinion => 'Opinion';
 }

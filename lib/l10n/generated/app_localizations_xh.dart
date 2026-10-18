@@ -2512,4 +2512,16 @@ class AppLocalizationsXh extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Ingcaciso ye-AI: ikhangela iinyani kwiwebhu, ivule inqaku kwaye ivavanye ukuba umthombo uthembeke kangakanani. Ayilocebiso lotyalo-mali. Sisebenzisa umda wakho wemibuzo wemihla ngemihla, hayi uhlalutyo.';
+
+  @override
+  String get sourceOfficial => 'Esemthethweni';
+
+  @override
+  String get sourcePressRelease => 'Ingxelo yoonondaba';
+
+  @override
+  String get sourceMajorNews => 'Umthombo omkhulu';
+
+  @override
+  String get sourceOpinion => 'Uluvo';
 }

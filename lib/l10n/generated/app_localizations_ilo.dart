@@ -2519,4 +2519,16 @@ class AppLocalizationsIlo extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Panangilawlawag ti AI: sapulenna dagiti pudno iti web, lukatanna ti artikulo ken timbangenna no kasano a mapagtalkan ti taudan. Saan a balakad iti panagpuonan. Agusar daytoy iti inaldaw a limitasion dagiti saludsod-mo, saan nga iti panaganalisa.';
+
+  @override
+  String get sourceOfficial => 'Opisial';
+
+  @override
+  String get sourcePressRelease => 'Pakaammo';
+
+  @override
+  String get sourceMajorNews => 'Dakkel a media';
+
+  @override
+  String get sourceOpinion => 'Kapanunotan';
 }

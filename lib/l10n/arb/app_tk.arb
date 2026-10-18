@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{1 duýduryş arassalandy} other{{count} duýduryş arassalandy}}",
   "homeScreenTitle": "Baş ekran",
   "allocationCountries": "Ýurtlar",
-  "newsExplainNoteResearch": "AI düşündirişi: faktlary internetde gözleýär, makalany açýar we çeşmäniň näderejede ygtybarlydygyna baha berýär. Maýa goýum maslahaty däldir. Gündelik sorag çägiňizden harçlanýar, seljerme däl."
+  "newsExplainNoteResearch": "AI düşündirişi: faktlary internetde gözleýär, makalany açýar we çeşmäniň näderejede ygtybarlydygyna baha berýär. Maýa goýum maslahaty däldir. Gündelik sorag çägiňizden harçlanýar, seljerme däl.",
+  "sourceOfficial": "Resmi",
+  "sourcePressRelease": "Metbugat beýannamasy",
+  "sourceMajorNews": "Iri media",
+  "sourceOpinion": "Pikir"
 }

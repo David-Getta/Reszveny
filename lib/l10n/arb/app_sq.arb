@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{U pastrua 1 sinjalizim} other{U pastruan {count} sinjalizime}}",
   "homeScreenTitle": "Ekrani bazë",
   "allocationCountries": "Vendet",
-  "newsExplainNoteResearch": "Shpjegim nga AI: kërkon faktet në internet, hap artikullin dhe vlerëson sa i besueshëm është burimi. Nuk përbën këshillë investimi. Përdor kufirin tuaj ditor të pyetjeve, jo një analizë."
+  "newsExplainNoteResearch": "Shpjegim nga AI: kërkon faktet në internet, hap artikullin dhe vlerëson sa i besueshëm është burimi. Nuk përbën këshillë investimi. Përdor kufirin tuaj ditor të pyetjeve, jo një analizë.",
+  "sourceOfficial": "Zyrtare",
+  "sourcePressRelease": "Njoftim për shtyp",
+  "sourceMajorNews": "Media e madhe",
+  "sourceOpinion": "Opinion"
 }

@@ -2509,4 +2509,16 @@ class AppLocalizationsRw extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Ibisobanuro bya AI: ishakisha ukuri kuri murandasi, ifungura inkuru kandi igasuzuma uko inkomoko yizewe. Si inama yo gushora imari. Ikoresha umubare ntarengwa w’ibibazo byawe bya buri munsi, si isesengura.';
+
+  @override
+  String get sourceOfficial => 'Byemewe';
+
+  @override
+  String get sourcePressRelease => 'Itangazo';
+
+  @override
+  String get sourceMajorNews => 'Ikinyamakuru gikomeye';
+
+  @override
+  String get sourceOpinion => 'Igitekerezo';
 }

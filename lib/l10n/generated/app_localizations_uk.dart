@@ -2571,4 +2571,16 @@ class AppLocalizationsUk extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Пояснення від ШІ: перевіряє факти в інтернеті, відкриває статтю й оцінює, наскільки надійне джерело. Не є інвестиційною порадою. Витрачається денний ліміт запитань, а не аналіз.';
+
+  @override
+  String get sourceOfficial => 'Офіційно';
+
+  @override
+  String get sourcePressRelease => 'Пресреліз';
+
+  @override
+  String get sourceMajorNews => 'Провідне ЗМІ';
+
+  @override
+  String get sourceOpinion => 'Думка';
 }

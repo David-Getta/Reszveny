@@ -2501,4 +2501,16 @@ class AppLocalizationsPcm extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI explanation: e dey check di facts for web, open di article and judge how di source reliable reach. E no be investment advice. E dey use your daily question limit, no be analysis.';
+
+  @override
+  String get sourceOfficial => 'Official';
+
+  @override
+  String get sourcePressRelease => 'Press release';
+
+  @override
+  String get sourceMajorNews => 'Big media';
+
+  @override
+  String get sourceOpinion => 'Opinion';
 }

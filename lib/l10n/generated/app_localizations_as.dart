@@ -2499,4 +2499,16 @@ class AppLocalizationsAs extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI ব্যাখ্যা: ই ৱেবত তথ্যবোৰ বিচাৰে, প্ৰবন্ধটো খোলে আৰু উৎসটো কিমান বিশ্বাসযোগ্য তাক বিচাৰ কৰে। ই বিনিয়োগৰ পৰামৰ্শ নহয়। ই আপোনাৰ দৈনিক প্ৰশ্নৰ সীমাৰ পৰা যায়, কোনো বিশ্লেষণ খৰচ নকৰে।';
+
+  @override
+  String get sourceOfficial => 'আনুষ্ঠানিক';
+
+  @override
+  String get sourcePressRelease => 'প্ৰেছ বিজ্ঞপ্তি';
+
+  @override
+  String get sourceMajorNews => 'মূল মাধ্যম';
+
+  @override
+  String get sourceOpinion => 'মতামত';
 }

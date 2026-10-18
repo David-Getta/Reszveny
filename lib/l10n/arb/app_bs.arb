@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{Obrisano je 1 upozorenje} one{Obrisano je {count} upozorenje} few{Obrisana su {count} upozorenja} other{Obrisano je {count} upozorenja}}",
   "homeScreenTitle": "Početni ekran",
   "allocationCountries": "Države",
-  "newsExplainNoteResearch": "Objašnjenje umjetne inteligencije: traži činjenice na internetu, otvara članak i procjenjuje koliko je izvor pouzdan. Nije investicijski savjet. Troši vaše dnevno ograničenje pitanja, ne analizu."
+  "newsExplainNoteResearch": "Objašnjenje umjetne inteligencije: traži činjenice na internetu, otvara članak i procjenjuje koliko je izvor pouzdan. Nije investicijski savjet. Troši vaše dnevno ograničenje pitanja, ne analizu.",
+  "sourceOfficial": "Zvanično",
+  "sourcePressRelease": "Saopćenje",
+  "sourceMajorNews": "Veliki medij",
+  "sourceOpinion": "Mišljenje"
 }

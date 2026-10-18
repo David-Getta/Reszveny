@@ -2498,4 +2498,16 @@ class AppLocalizationsBm extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI ka ɲɛfɔli: a bɛ tiɲɛw ɲini ɛntɛrinɛti kan, ka sɛbɛn in da wuli, ka a jateminɛ ni bɔyɔrɔ in bɛ se ka da a la cogo min na. Wari donni ladilikan tɛ. A bɛ bɔ i ka don o don ɲininkaliw hakɛ la, a tɛ sɛgɛsɛgɛli si ta.';
+
+  @override
+  String get sourceOfficial => 'Ofisiyɛli';
+
+  @override
+  String get sourcePressRelease => 'Kunnafonidi';
+
+  @override
+  String get sourceMajorNews => 'Kibaru ba';
+
+  @override
+  String get sourceOpinion => 'Hakilina';
 }

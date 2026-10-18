@@ -2542,4 +2542,16 @@ class AppLocalizationsLv extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Mākslīgā intelekta skaidrojums: tas meklē faktus tīmeklī, atver rakstu un izvērtē, cik uzticams ir avots. Tā nav ieguldījumu konsultācija. Izmanto jūsu dienas jautājumu limitu, nevis analīzi.';
+
+  @override
+  String get sourceOfficial => 'Oficiāli';
+
+  @override
+  String get sourcePressRelease => 'Preses relīze';
+
+  @override
+  String get sourceMajorNews => 'Lielais medijs';
+
+  @override
+  String get sourceOpinion => 'Viedoklis';
 }

@@ -2504,4 +2504,16 @@ class AppLocalizationsAf extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI-verduideliking: dit soek die feite op die web na, maak die artikel oop en beoordeel hoe betroubaar die bron is. Dit is nie beleggingsadvies nie. Dit gebruik jou daaglikse vraagtoelae, nie ’n ontleding nie.';
+
+  @override
+  String get sourceOfficial => 'Amptelik';
+
+  @override
+  String get sourcePressRelease => 'Persverklaring';
+
+  @override
+  String get sourceMajorNews => 'Groot media';
+
+  @override
+  String get sourceOpinion => 'Mening';
 }

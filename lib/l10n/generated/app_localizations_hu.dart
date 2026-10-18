@@ -2506,4 +2506,16 @@ class AppLocalizationsHu extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI-magyarázat: utánanéz a tényeknek a weben, megnyitja a cikket, és megítéli, mennyire hiteles a forrás. Nem befektetési tanács. A napi kérdéskeretből megy, elemzést nem fogyaszt.';
+
+  @override
+  String get sourceOfficial => 'Hivatalos';
+
+  @override
+  String get sourcePressRelease => 'Sajtóközlemény';
+
+  @override
+  String get sourceMajorNews => 'Vezető lap';
+
+  @override
+  String get sourceOpinion => 'Vélemény';
 }

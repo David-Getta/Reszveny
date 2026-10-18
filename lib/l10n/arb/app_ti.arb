@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{1 መጠንቀቕታ ተሰሪዙ} other{{count} መጠንቀቕታታት ተሰሪዞም}}",
   "homeScreenTitle": "መበገሲ ገጽ",
   "allocationCountries": "ሃገራት",
-  "newsExplainNoteResearch": "መብርሂ AI፦ ሓቅታት ኣብ መርበብ ሓበሬታ ይደሊ፣ ነቲ ጽሑፍ ይኸፍት፣ እቲ ምንጪ ክሳብ ክንደይ ተኣማኒ ምዃኑ ድማ ይግምግም። ምኽሪ ወፍሪ ኣይኮነን። ካብ ዕለታዊ ደረት ሕቶታትኩም ይቑጸር እምበር ትንታነ ኣይጥቀምን።"
+  "newsExplainNoteResearch": "መብርሂ AI፦ ሓቅታት ኣብ መርበብ ሓበሬታ ይደሊ፣ ነቲ ጽሑፍ ይኸፍት፣ እቲ ምንጪ ክሳብ ክንደይ ተኣማኒ ምዃኑ ድማ ይግምግም። ምኽሪ ወፍሪ ኣይኮነን። ካብ ዕለታዊ ደረት ሕቶታትኩም ይቑጸር እምበር ትንታነ ኣይጥቀምን።",
+  "sourceOfficial": "ወግዓዊ",
+  "sourcePressRelease": "መግለጺ ጋዜጣ",
+  "sourceMajorNews": "ዓብዪ ማዕከን",
+  "sourceOpinion": "ርእይቶ"
 }

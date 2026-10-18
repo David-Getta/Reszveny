@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{Mũmenyithia 1 nĩ weherio} other{Mĩmenyithia {count} nĩ yeherio}}",
   "homeScreenTitle": "Ithangũ rĩa mbere",
   "allocationCountries": "Mabũrũri",
-  "newsExplainNoteResearch": "Ũtaarĩria wa AI: ũcaragia ma ya ũhoro internet-inĩ, ũkahingũra gĩcunjĩ kĩu na ũgathima ũrĩa kĩhumo kĩu kĩĩhokeku. Ti ũtaaro wa investment. Ĩhũthagĩra mũhaka wa ciũria ciaku cia o mũthenya, ti ũthuthuria."
+  "newsExplainNoteResearch": "Ũtaarĩria wa AI: ũcaragia ma ya ũhoro internet-inĩ, ũkahingũra gĩcunjĩ kĩu na ũgathima ũrĩa kĩhumo kĩu kĩĩhokeku. Ti ũtaaro wa investment. Ĩhũthagĩra mũhaka wa ciũria ciaku cia o mũthenya, ti ũthuthuria.",
+  "sourceOfficial": "Rasimi",
+  "sourcePressRelease": "Ũhoro wa kampuni",
+  "sourceMajorNews": "Kĩhumo kĩnene",
+  "sourceOpinion": "Mwĩciria"
 }

@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{1 riasztás törölve} other{{count} riasztás törölve}}",
   "homeScreenTitle": "Kezdőképernyő",
   "allocationCountries": "Országok",
-  "newsExplainNoteResearch": "AI-magyarázat: utánanéz a tényeknek a weben, megnyitja a cikket, és megítéli, mennyire hiteles a forrás. Nem befektetési tanács. A napi kérdéskeretből megy, elemzést nem fogyaszt."
+  "newsExplainNoteResearch": "AI-magyarázat: utánanéz a tényeknek a weben, megnyitja a cikket, és megítéli, mennyire hiteles a forrás. Nem befektetési tanács. A napi kérdéskeretből megy, elemzést nem fogyaszt.",
+  "sourceOfficial": "Hivatalos",
+  "sourcePressRelease": "Sajtóközlemény",
+  "sourceMajorNews": "Vezető lap",
+  "sourceOpinion": "Vélemény"
 }

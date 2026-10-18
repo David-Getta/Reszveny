@@ -2507,4 +2507,16 @@ class AppLocalizationsKn extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI ವಿವರಣೆ: ಇದು ವೆಬ್‌ನಲ್ಲಿ ಸಂಗತಿಗಳನ್ನು ಹುಡುಕುತ್ತದೆ, ಲೇಖನವನ್ನು ತೆರೆಯುತ್ತದೆ ಮತ್ತು ಮೂಲ ಎಷ್ಟು ವಿಶ್ವಾಸಾರ್ಹ ಎಂಬುದನ್ನು ನಿರ್ಣಯಿಸುತ್ತದೆ. ಇದು ಹೂಡಿಕೆ ಸಲಹೆಯಲ್ಲ. ಇದು ನಿಮ್ಮ ದೈನಂದಿನ ಪ್ರಶ್ನೆ ಮಿತಿಯನ್ನು ಬಳಸುತ್ತದೆ, ವಿಶ್ಲೇಷಣೆಯನ್ನಲ್ಲ.';
+
+  @override
+  String get sourceOfficial => 'ಅಧಿಕೃತ';
+
+  @override
+  String get sourcePressRelease => 'ಪತ್ರಿಕಾ ಪ್ರಕಟಣೆ';
+
+  @override
+  String get sourceMajorNews => 'ಪ್ರಮುಖ ಮಾಧ್ಯಮ';
+
+  @override
+  String get sourceOpinion => 'ಅಭಿಪ್ರಾಯ';
 }

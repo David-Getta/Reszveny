@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{E hichapụla ọkwa 1} other{E hichapụla ọkwa {count}}}",
   "homeScreenTitle": "Ibe mbụ",
   "allocationCountries": "Mba",
-  "newsExplainNoteResearch": "Nkọwa AI: ọ na-achọ eziokwu n'ịntanetị, mepee isiokwu ahụ ma tụlee ma ebe e si nweta ya bụ nke a pụrụ ịtụkwasị obi. Ọ bụghị ndụmọdụ itinye ego. Ọ na-eji oke ajụjụ gị kwa ụbọchị, ọ bụghị nyocha."
+  "newsExplainNoteResearch": "Nkọwa AI: ọ na-achọ eziokwu n'ịntanetị, mepee isiokwu ahụ ma tụlee ma ebe e si nweta ya bụ nke a pụrụ ịtụkwasị obi. Ọ bụghị ndụmọdụ itinye ego. Ọ na-eji oke ajụjụ gị kwa ụbọchị, ọ bụghị nyocha.",
+  "sourceOfficial": "Nke ikike",
+  "sourcePressRelease": "Ọkwa",
+  "sourceMajorNews": "Mgbasaozi ukwu",
+  "sourceOpinion": "Echiche"
 }

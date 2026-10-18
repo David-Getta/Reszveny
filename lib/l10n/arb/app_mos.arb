@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{B yẽesame kibay a yembre} other{B yẽesame kibay {count}}}",
   "homeScreenTitle": "Sebr pipi",
   "allocationCountries": "Tẽnse",
-  "newsExplainNoteResearch": "AI wilgri: a baoodame sɩd-kãensã internet zugu, n pakd sɛbrã, la a gesd bãngr zĩigã sẽn tõe n teeg a to to-to wã. Pa sagls ligd kẽesg wɛɛngẽ ye. A tũuda f daar fãa sokr sõorã, pa vẽenegr ye."
+  "newsExplainNoteResearch": "AI wilgri: a baoodame sɩd-kãensã internet zugu, n pakd sɛbrã, la a gesd bãngr zĩigã sẽn tõe n teeg a to to-to wã. Pa sagls ligd kẽesg wɛɛngẽ ye. A tũuda f daar fãa sokr sõorã, pa vẽenegr ye.",
+  "sourceOfficial": "Ofisiel",
+  "sourcePressRelease": "Koɛ-moonego",
+  "sourceMajorNews": "Kibay-zĩ kãsenga",
+  "sourceOpinion": "Tagsgo"
 }

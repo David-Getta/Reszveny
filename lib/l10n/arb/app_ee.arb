@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{Wotutu nuxlɔ̃ame 1} other{Wotutu nuxlɔ̃ame {count}}}",
   "homeScreenTitle": "Axa gbãtɔ",
   "allocationCountries": "Dukɔwo",
-  "newsExplainNoteResearch": "AI ƒe ɖeɖe me: edia nyateƒenyawo le internet dzi, eʋua nyatia eye wòkpɔa ale si woate ŋu aɖo ŋu ɖe dzɔtsoƒe la ŋu. Menye aɖaŋuɖoɖo le gadede nu ŋu o. Etsɔna tso wò gbesiagbe nyabiasewo ƒe seɖoƒe me, mezãa dzodzro aɖeke o."
+  "newsExplainNoteResearch": "AI ƒe ɖeɖe me: edia nyateƒenyawo le internet dzi, eʋua nyatia eye wòkpɔa ale si woate ŋu aɖo ŋu ɖe dzɔtsoƒe la ŋu. Menye aɖaŋuɖoɖo le gadede nu ŋu o. Etsɔna tso wò gbesiagbe nyabiasewo ƒe seɖoƒe me, mezãa dzodzro aɖeke o.",
+  "sourceOfficial": "Wo ŋutɔ tɔ",
+  "sourcePressRelease": "Gbeƒãɖeɖe",
+  "sourceMajorNews": "Nyadzɔdzɔ gã",
+  "sourceOpinion": "Susu"
 }

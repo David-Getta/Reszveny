@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{S’ha esborrat 1 alerta} other{S’han esborrat {count} alertes}}",
   "homeScreenTitle": "Pantalla d'inici",
   "allocationCountries": "Països",
-  "newsExplainNoteResearch": "Explicació d’IA: busca els fets al web, obre l’article i valora la fiabilitat de la font. No constitueix assessorament d’inversió. Fa servir el teu límit diari de preguntes, no una anàlisi."
+  "newsExplainNoteResearch": "Explicació d’IA: busca els fets al web, obre l’article i valora la fiabilitat de la font. No constitueix assessorament d’inversió. Fa servir el teu límit diari de preguntes, no una anàlisi.",
+  "sourceOfficial": "Oficial",
+  "sourcePressRelease": "Nota de premsa",
+  "sourceMajorNews": "Gran mitjà",
+  "sourceOpinion": "Opinió"
 }

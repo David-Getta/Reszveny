@@ -2463,4 +2463,16 @@ class AppLocalizationsTi extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'መብርሂ AI፦ ሓቅታት ኣብ መርበብ ሓበሬታ ይደሊ፣ ነቲ ጽሑፍ ይኸፍት፣ እቲ ምንጪ ክሳብ ክንደይ ተኣማኒ ምዃኑ ድማ ይግምግም። ምኽሪ ወፍሪ ኣይኮነን። ካብ ዕለታዊ ደረት ሕቶታትኩም ይቑጸር እምበር ትንታነ ኣይጥቀምን።';
+
+  @override
+  String get sourceOfficial => 'ወግዓዊ';
+
+  @override
+  String get sourcePressRelease => 'መግለጺ ጋዜጣ';
+
+  @override
+  String get sourceMajorNews => 'ዓብዪ ማዕከን';
+
+  @override
+  String get sourceOpinion => 'ርእይቶ';
 }

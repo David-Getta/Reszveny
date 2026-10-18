@@ -2544,4 +2544,16 @@ class AppLocalizationsBs extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Objašnjenje umjetne inteligencije: traži činjenice na internetu, otvara članak i procjenjuje koliko je izvor pouzdan. Nije investicijski savjet. Troši vaše dnevno ograničenje pitanja, ne analizu.';
+
+  @override
+  String get sourceOfficial => 'Zvanično';
+
+  @override
+  String get sourcePressRelease => 'Saopćenje';
+
+  @override
+  String get sourceMajorNews => 'Veliki medij';
+
+  @override
+  String get sourceOpinion => 'Mišljenje';
 }

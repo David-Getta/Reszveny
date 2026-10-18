@@ -2499,4 +2499,16 @@ class AppLocalizationsKab extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Asegzi n AI: yettnadi tidet deg web, yeldi amagrad, yerna yettwazen acḥal yettwamman uɣbalu. Mačči d awellih n usersi n yidrimen. Yesseqdac talast-ik n yisteqsiyen n yal ass, mačči tasledt.';
+
+  @override
+  String get sourceOfficial => 'Unṣib';
+
+  @override
+  String get sourcePressRelease => 'Tamselɣut';
+
+  @override
+  String get sourceMajorNews => 'Amidya ameqqran';
+
+  @override
+  String get sourceOpinion => 'Tamuɣli';
 }

@@ -2520,4 +2520,16 @@ class AppLocalizationsMk extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Објаснување од AI: ги проверува фактите на интернет, ја отвора статијата и проценува колку е сигурен изворот. Не претставува инвестициски совет. Го користи вашиот дневен лимит на прашања, не анализа.';
+
+  @override
+  String get sourceOfficial => 'Официјално';
+
+  @override
+  String get sourcePressRelease => 'Соопштение';
+
+  @override
+  String get sourceMajorNews => 'Голем медиум';
+
+  @override
+  String get sourceOpinion => 'Мислење';
 }

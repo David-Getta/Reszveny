@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{1 alerte effacée} other{{count} alertes effacées}}",
   "homeScreenTitle": "Écran d’accueil",
   "allocationCountries": "Pays",
-  "newsExplainNoteResearch": "Explication par IA : elle vérifie les faits sur le web, ouvre l’article et évalue la fiabilité de la source. Elle ne constitue pas un conseil en investissement. Utilise votre quota quotidien de questions, pas une analyse."
+  "newsExplainNoteResearch": "Explication par IA : elle vérifie les faits sur le web, ouvre l’article et évalue la fiabilité de la source. Elle ne constitue pas un conseil en investissement. Utilise votre quota quotidien de questions, pas une analyse.",
+  "sourceOfficial": "Officiel",
+  "sourcePressRelease": "Communiqué",
+  "sourceMajorNews": "Grand média",
+  "sourceOpinion": "Opinion"
 }

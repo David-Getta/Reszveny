@@ -2503,4 +2503,16 @@ class AppLocalizationsJv extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Panjelasan AI: nggolèki fakta ing web, mbukak artikelé lan netepaké sepira bisa dipercaya sumberé. Dudu saran investasi. Nggunakake watesan pitakon saben dina, dudu analisis.';
+
+  @override
+  String get sourceOfficial => 'Resmi';
+
+  @override
+  String get sourcePressRelease => 'Siaran pers';
+
+  @override
+  String get sourceMajorNews => 'Media gedhé';
+
+  @override
+  String get sourceOpinion => 'Panemu';
 }

@@ -2496,4 +2496,16 @@ class AppLocalizationsWo extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Leeral bu AI defar: dafay seet dëgg yi ci web bi, ubbi jukki bi te natt ba ban dayo la fi ñu ko jële wóore. Du ndigal ci dugal xaalis. Dafay jëfandikoo sa limu laaj yu bés bu nekk, du xayma.';
+
+  @override
+  String get sourceOfficial => 'Ofisiyel';
+
+  @override
+  String get sourcePressRelease => 'Yégle';
+
+  @override
+  String get sourceMajorNews => 'Médiya bu mag';
+
+  @override
+  String get sourceOpinion => 'Xalaat';
 }

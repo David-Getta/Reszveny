@@ -2506,4 +2506,16 @@ class AppLocalizationsHa extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Bayanin AI: yana bincika gaskiyar lamarin a yanar gizo, yana buɗe labarin kuma yana tantance yadda madogarar take da aminci. Ba shawarar zuba jari ba ne. Yana amfani da iyakar tambayoyinka na yau da kullum, ba nazari ba.';
+
+  @override
+  String get sourceOfficial => 'Na hukuma';
+
+  @override
+  String get sourcePressRelease => 'Sanarwa';
+
+  @override
+  String get sourceMajorNews => 'Babbar jarida';
+
+  @override
+  String get sourceOpinion => 'Ra\'ayi';
 }

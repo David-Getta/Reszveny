@@ -2487,4 +2487,16 @@ class AppLocalizationsMos extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI wilgri: a baoodame sɩd-kãensã internet zugu, n pakd sɛbrã, la a gesd bãngr zĩigã sẽn tõe n teeg a to to-to wã. Pa sagls ligd kẽesg wɛɛngẽ ye. A tũuda f daar fãa sokr sõorã, pa vẽenegr ye.';
+
+  @override
+  String get sourceOfficial => 'Ofisiel';
+
+  @override
+  String get sourcePressRelease => 'Koɛ-moonego';
+
+  @override
+  String get sourceMajorNews => 'Kibay-zĩ kãsenga';
+
+  @override
+  String get sourceOpinion => 'Tagsgo';
 }

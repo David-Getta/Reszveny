@@ -2502,4 +2502,16 @@ class AppLocalizationsSv extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI-förklaring: den kollar fakta på webben, öppnar artikeln och bedömer hur tillförlitlig källan är. Det är inte investeringsrådgivning. Använder din dagliga frågekvot, inte en analys.';
+
+  @override
+  String get sourceOfficial => 'Officiell';
+
+  @override
+  String get sourcePressRelease => 'Pressmeddelande';
+
+  @override
+  String get sourceMajorNews => 'Stort medium';
+
+  @override
+  String get sourceOpinion => 'Åsikt';
 }

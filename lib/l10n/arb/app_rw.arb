@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{Hasibwe imenyesha 1} other{Hasibwe amamenyesha {count}}}",
   "homeScreenTitle": "Ahabanza",
   "allocationCountries": "Ibihugu",
-  "newsExplainNoteResearch": "Ibisobanuro bya AI: ishakisha ukuri kuri murandasi, ifungura inkuru kandi igasuzuma uko inkomoko yizewe. Si inama yo gushora imari. Ikoresha umubare ntarengwa w’ibibazo byawe bya buri munsi, si isesengura."
+  "newsExplainNoteResearch": "Ibisobanuro bya AI: ishakisha ukuri kuri murandasi, ifungura inkuru kandi igasuzuma uko inkomoko yizewe. Si inama yo gushora imari. Ikoresha umubare ntarengwa w’ibibazo byawe bya buri munsi, si isesengura.",
+  "sourceOfficial": "Byemewe",
+  "sourcePressRelease": "Itangazo",
+  "sourceMajorNews": "Ikinyamakuru gikomeye",
+  "sourceOpinion": "Igitekerezo"
 }

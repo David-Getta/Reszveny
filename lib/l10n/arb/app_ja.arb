@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{1 件のアラートを消去しました} other{{count} 件のアラートを消去しました}}",
   "homeScreenTitle": "ホーム画面",
   "allocationCountries": "国",
-  "newsExplainNoteResearch": "AI の解説です。Web で事実を調べ、記事を開いて、情報源の信頼性を評価します。投資助言ではありません。1日の質問回数を使い、分析回数は消費しません。"
+  "newsExplainNoteResearch": "AI の解説です。Web で事実を調べ、記事を開いて、情報源の信頼性を評価します。投資助言ではありません。1日の質問回数を使い、分析回数は消費しません。",
+  "sourceOfficial": "公式",
+  "sourcePressRelease": "プレスリリース",
+  "sourceMajorNews": "大手メディア",
+  "sourceOpinion": "意見"
 }

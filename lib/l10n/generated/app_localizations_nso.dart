@@ -2516,4 +2516,16 @@ class AppLocalizationsNso extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Tlhalošo ya AI: e nyaka dintlha wepeng, e bula sengwalwa gomme e lekola gore mothopo o a botega gakaakang. Ga se keletšo ya peeletšo. E diriša moedi wa gago wa dipotšišo wa letšatši le letšatši, e sego tshekatsheko.';
+
+  @override
+  String get sourceOfficial => 'Semmušo';
+
+  @override
+  String get sourcePressRelease => 'Tsebišo';
+
+  @override
+  String get sourceMajorNews => 'Kgatišo ye kgolo';
+
+  @override
+  String get sourceOpinion => 'Kgopolo';
 }

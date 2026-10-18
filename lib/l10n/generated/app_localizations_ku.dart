@@ -2502,4 +2502,16 @@ class AppLocalizationsKu extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Ravekirina AI: ew rastiyan li ser webê lê dikole, gotarê vedike û dinirxîne ka çavkanî çiqas pêbawer e. Ne şîreta veberhênanê ye. Ji sînorê pirsên te yê rojane tê birîn, ne analîzek.';
+
+  @override
+  String get sourceOfficial => 'Fermî';
+
+  @override
+  String get sourcePressRelease => 'Daxuyanî';
+
+  @override
+  String get sourceMajorNews => 'Medyaya mezin';
+
+  @override
+  String get sourceOpinion => 'Nêrîn';
 }

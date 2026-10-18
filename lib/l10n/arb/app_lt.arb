@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{Išvalytas 1 įspėjimas} one{Išvalytas {count} įspėjimas} few{Išvalyti {count} įspėjimai} many{Išvalyta {count} įspėjimo} other{Išvalyta {count} įspėjimų}}",
   "homeScreenTitle": "Pradžios ekranas",
   "allocationCountries": "Šalys",
-  "newsExplainNoteResearch": "DI paaiškinimas: jis patikrina faktus internete, atidaro straipsnį ir įvertina, kiek patikimas šaltinis. Tai nėra investavimo rekomendacija. Naudoja jūsų dienos klausimų limitą, o ne analizę."
+  "newsExplainNoteResearch": "DI paaiškinimas: jis patikrina faktus internete, atidaro straipsnį ir įvertina, kiek patikimas šaltinis. Tai nėra investavimo rekomendacija. Naudoja jūsų dienos klausimų limitą, o ne analizę.",
+  "sourceOfficial": "Oficialu",
+  "sourcePressRelease": "Pranešimas spaudai",
+  "sourceMajorNews": "Didžioji žiniasklaida",
+  "sourceOpinion": "Nuomonė"
 }

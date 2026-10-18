@@ -2502,4 +2502,16 @@ class AppLocalizationsCkb extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'ڕوونکردنەوەی AI: ڕاستییەکان لە وێب دەگەڕێت، وتارەکە دەکاتەوە و هەڵدەسەنگێنێت سەرچاوەکە چەندە متمانەپێکراوە. ئامۆژگاریی وەبەرهێنان نییە. لە سنووری پرسیارە ڕۆژانەکانت دەبرێت، شیکاری بەکارناهێنێت.';
+
+  @override
+  String get sourceOfficial => 'فەرمی';
+
+  @override
+  String get sourcePressRelease => 'ڕاگەیەندراو';
+
+  @override
+  String get sourceMajorNews => 'میدیای گەورە';
+
+  @override
+  String get sourceOpinion => 'ڕا';
 }

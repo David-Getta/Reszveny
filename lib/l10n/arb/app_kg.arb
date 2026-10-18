@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{Lukebisu 1 me zimbisama} other{Bukebisu {count} me zimbisama}}",
   "homeScreenTitle": "Lukaya ya ntete",
   "allocationCountries": "Bansi",
-  "newsExplainNoteResearch": "Ntendula ya AI: yo ke sosaka bambangu na Internet, ke kangula disolo mpi ke tadilaka nki mutindu ntuku ke ya kukwikama. Yo ke malongi ya kutula mbongo ve. Yo ke sadilaka ndilu ya biuvu na nge ya konso kilumbu, ve nsosa."
+  "newsExplainNoteResearch": "Ntendula ya AI: yo ke sosaka bambangu na Internet, ke kangula disolo mpi ke tadilaka nki mutindu ntuku ke ya kukwikama. Yo ke malongi ya kutula mbongo ve. Yo ke sadilaka ndilu ya biuvu na nge ya konso kilumbu, ve nsosa.",
+  "sourceOfficial": "Ya kimfumu",
+  "sourcePressRelease": "Nsangu ya kompani",
+  "sourceMajorNews": "Zulunalu ya nene",
+  "sourceOpinion": "Mabanza"
 }

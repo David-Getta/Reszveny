@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{Yambiro 1 radzimwa} other{Yambiro {count} dzadzimwa}}",
   "homeScreenTitle": "Peji rekutanga",
   "allocationCountries": "Nyika",
-  "newsExplainNoteResearch": "Tsananguro yeAI: inotsvaga chokwadi painternet, inovhura nyaya yacho uye inoongorora kuti kwazvakabva kunovimbika sei. Haisi zano rekuisa mari. Inoshandisa muganhu wako wemibvunzo wezuva nezuva, kwete ongororo."
+  "newsExplainNoteResearch": "Tsananguro yeAI: inotsvaga chokwadi painternet, inovhura nyaya yacho uye inoongorora kuti kwazvakabva kunovimbika sei. Haisi zano rekuisa mari. Inoshandisa muganhu wako wemibvunzo wezuva nezuva, kwete ongororo.",
+  "sourceOfficial": "Zvepamutemo",
+  "sourcePressRelease": "Chiziviso",
+  "sourceMajorNews": "Bepanhau guru",
+  "sourceOpinion": "Pfungwa"
 }

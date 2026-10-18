@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{已清除 1 個提醒} other{已清除 {count} 個提醒}}",
   "homeScreenTitle": "主頁",
   "allocationCountries": "國家",
-  "newsExplainNoteResearch": "AI 解讀：在網上查證事實，開啟原文，並評估來源的可靠程度。並不構成投資建議。佔用每日提問次數，不消耗分析次數。"
+  "newsExplainNoteResearch": "AI 解讀：在網上查證事實，開啟原文，並評估來源的可靠程度。並不構成投資建議。佔用每日提問次數，不消耗分析次數。",
+  "sourceOfficial": "官方",
+  "sourcePressRelease": "新聞稿",
+  "sourceMajorNews": "主流傳媒",
+  "sourceOpinion": "觀點"
 }

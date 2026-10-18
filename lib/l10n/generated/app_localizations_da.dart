@@ -2499,4 +2499,16 @@ class AppLocalizationsDa extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI-forklaring: den slår fakta op på nettet, åbner artiklen og vurderer, hvor pålidelig kilden er. Det er ikke investeringsrådgivning. Det bruger af din daglige spørgsmålskvote, ikke en analyse.';
+
+  @override
+  String get sourceOfficial => 'Officiel';
+
+  @override
+  String get sourcePressRelease => 'Pressemeddelelse';
+
+  @override
+  String get sourceMajorNews => 'Stort medie';
+
+  @override
+  String get sourceOpinion => 'Mening';
 }

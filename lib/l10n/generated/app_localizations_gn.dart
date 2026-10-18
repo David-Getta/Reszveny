@@ -2506,4 +2506,16 @@ class AppLocalizationsGn extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI omyesakãva: oheka umi añeteguáva ñandutípe, oipe\'a pe jehaipy ha ohecha mba\'éichapa ojeroviakuaa pe teñoiha. Ndahaʼéi ñemoñeʼẽ inversión rehegua. Oipuru ne porandu papapy ára ha ára guarã, ndaha’éi jehesa’ỹijo.';
+
+  @override
+  String get sourceOfficial => 'Añetegua';
+
+  @override
+  String get sourcePressRelease => 'Marandu';
+
+  @override
+  String get sourceMajorNews => 'Ñemyasãi tuicha';
+
+  @override
+  String get sourceOpinion => 'Temiandu';
 }

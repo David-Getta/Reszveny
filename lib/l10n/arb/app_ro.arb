@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{A fost ștearsă 1 alertă} one{A fost ștearsă {count} alertă} few{Au fost șterse {count} alerte} other{Au fost șterse {count} de alerte}}",
   "homeScreenTitle": "Ecran de pornire",
   "allocationCountries": "Țări",
-  "newsExplainNoteResearch": "Explicație generată de AI: caută faptele pe web, deschide articolul și evaluează cât de credibilă este sursa. Nu reprezintă un sfat de investiții. Folosește limita ta zilnică de întrebări, nu o analiză."
+  "newsExplainNoteResearch": "Explicație generată de AI: caută faptele pe web, deschide articolul și evaluează cât de credibilă este sursa. Nu reprezintă un sfat de investiții. Folosește limita ta zilnică de întrebări, nu o analiză.",
+  "sourceOfficial": "Oficial",
+  "sourcePressRelease": "Comunicat",
+  "sourceMajorNews": "Publicație majoră",
+  "sourceOpinion": "Opinie"
 }

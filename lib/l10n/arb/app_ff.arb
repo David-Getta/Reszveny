@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{Jeertinol 1 momtaama} other{Jeertine {count} momtaama}}",
   "homeScreenTitle": "Hello arano",
   "allocationCountries": "Leyɗeele",
-  "newsExplainNoteResearch": "Firo AI: ina yiylo goonga ɗen e geese, ina uddita winndannde nden, ina ƴeewa no iwdi ndi hoolniri. Wonaa wasiya e investisman. Ina huutoroo keerol naamne maa ñalnde kala, wonaa ƴeewndo."
+  "newsExplainNoteResearch": "Firo AI: ina yiylo goonga ɗen e geese, ina uddita winndannde nden, ina ƴeewa no iwdi ndi hoolniri. Wonaa wasiya e investisman. Ina huutoroo keerol naamne maa ñalnde kala, wonaa ƴeewndo.",
+  "sourceOfficial": "Laawɗungal",
+  "sourcePressRelease": "Habrudi",
+  "sourceMajorNews": "Jaaynde mawnde",
+  "sourceOpinion": "Miijo"
 }

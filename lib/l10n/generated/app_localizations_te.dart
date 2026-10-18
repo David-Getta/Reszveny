@@ -2506,4 +2506,16 @@ class AppLocalizationsTe extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI వివరణ: ఇది వెబ్‌లో వాస్తవాలను వెతుకుతుంది, కథనాన్ని తెరుస్తుంది, మూలం ఎంత నమ్మదగినదో అంచనా వేస్తుంది. ఇది పెట్టుబడి సలహా కాదు. ఇది మీ రోజువారీ ప్రశ్నల పరిమితి నుంచి వెళ్తుంది, ఎలాంటి విశ్లేషణనూ వాడదు.';
+
+  @override
+  String get sourceOfficial => 'అధికారిక';
+
+  @override
+  String get sourcePressRelease => 'పత్రికా ప్రకటన';
+
+  @override
+  String get sourceMajorNews => 'ప్రముఖ మీడియా';
+
+  @override
+  String get sourceOpinion => 'అభిప్రాయం';
 }

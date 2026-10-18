@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{1 خبرتیا پاکه شوه} other{{count} خبرتیاوې پاکې شوې}}",
   "homeScreenTitle": "کور پاڼه",
   "allocationCountries": "هېوادونه",
-  "newsExplainNoteResearch": "د AI تشریح: په وېب کې حقایق لټوي، مقاله پرانیزي او ارزوي چې سرچینه څومره د باور وړ ده. د پانګونې مشوره نه ده. ستاسو د ورځنیو پوښتنو له حد څخه کمېږي، شننه نه لګوي."
+  "newsExplainNoteResearch": "د AI تشریح: په وېب کې حقایق لټوي، مقاله پرانیزي او ارزوي چې سرچینه څومره د باور وړ ده. د پانګونې مشوره نه ده. ستاسو د ورځنیو پوښتنو له حد څخه کمېږي، شننه نه لګوي.",
+  "sourceOfficial": "رسمي",
+  "sourcePressRelease": "مطبوعاتي اعلامیه",
+  "sourceMajorNews": "لوی رسنۍ",
+  "sourceOpinion": "نظر"
 }

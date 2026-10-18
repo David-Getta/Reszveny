@@ -2515,4 +2515,16 @@ class AppLocalizationsQu extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI sut’ichay: web nisqapi chiqap kaqkunata maskhan, qillqata kichan, pukyuqa hayk’a iñinapaq kasqanta chaninchan. Manan qullqi churanapaq yuyaychaychu. Sapa p’unchay tapukuy limitiykita apaykachan, manan t’aqwiytachu.';
+
+  @override
+  String get sourceOfficial => 'Oficial';
+
+  @override
+  String get sourcePressRelease => 'Willakuy';
+
+  @override
+  String get sourceMajorNews => 'Hatun willakuq';
+
+  @override
+  String get sourceOpinion => 'Yuyay';
 }

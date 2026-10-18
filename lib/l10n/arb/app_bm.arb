@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{Kunnafoni 1 jɔsira} other{Kunnafoni {count} jɔsira}}",
   "homeScreenTitle": "Ɲɛ fɔlɔ",
   "allocationCountries": "Jamanaw",
-  "newsExplainNoteResearch": "AI ka ɲɛfɔli: a bɛ tiɲɛw ɲini ɛntɛrinɛti kan, ka sɛbɛn in da wuli, ka a jateminɛ ni bɔyɔrɔ in bɛ se ka da a la cogo min na. Wari donni ladilikan tɛ. A bɛ bɔ i ka don o don ɲininkaliw hakɛ la, a tɛ sɛgɛsɛgɛli si ta."
+  "newsExplainNoteResearch": "AI ka ɲɛfɔli: a bɛ tiɲɛw ɲini ɛntɛrinɛti kan, ka sɛbɛn in da wuli, ka a jateminɛ ni bɔyɔrɔ in bɛ se ka da a la cogo min na. Wari donni ladilikan tɛ. A bɛ bɔ i ka don o don ɲininkaliw hakɛ la, a tɛ sɛgɛsɛgɛli si ta.",
+  "sourceOfficial": "Ofisiyɛli",
+  "sourcePressRelease": "Kunnafonidi",
+  "sourceMajorNews": "Kibaru ba",
+  "sourceOpinion": "Hakilina"
 }

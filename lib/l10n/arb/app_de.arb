@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{1 Alarm gelöscht} other{{count} Alarme gelöscht}}",
   "homeScreenTitle": "Startseite",
   "allocationCountries": "Länder",
-  "newsExplainNoteResearch": "KI-Erklärung: Sie recherchiert die Fakten im Web, öffnet den Artikel und bewertet, wie verlässlich die Quelle ist. Keine Anlageberatung. Zählt zu deinem täglichen Fragenkontingent, nicht als Analyse."
+  "newsExplainNoteResearch": "KI-Erklärung: Sie recherchiert die Fakten im Web, öffnet den Artikel und bewertet, wie verlässlich die Quelle ist. Keine Anlageberatung. Zählt zu deinem täglichen Fragenkontingent, nicht als Analyse.",
+  "sourceOfficial": "Offiziell",
+  "sourcePressRelease": "Pressemitteilung",
+  "sourceMajorNews": "Leitmedium",
+  "sourceOpinion": "Meinung"
 }

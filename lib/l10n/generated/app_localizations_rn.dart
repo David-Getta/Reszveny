@@ -2508,4 +2508,16 @@ class AppLocalizationsRn extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Insobanuro ya AI: irondera ukuri kuri internet, ikugurura inkuru kandi igasuzuma ingene inkomoko yizigirwa. Si inama yo gushora imari. Ikoresha urugero rw’ibibazo vyawe rw’umunsi, si isesengura.';
+
+  @override
+  String get sourceOfficial => 'Ivyemewe';
+
+  @override
+  String get sourcePressRelease => 'Itangazo';
+
+  @override
+  String get sourceMajorNews => 'Ikinyamakuru gikomeye';
+
+  @override
+  String get sourceOpinion => 'Iciyumviro';
 }

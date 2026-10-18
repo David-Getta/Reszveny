@@ -2500,4 +2500,16 @@ class AppLocalizationsUr extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI وضاحت: یہ ویب پر حقائق تلاش کرتا ہے، مضمون کھولتا ہے اور جانچتا ہے کہ ماخذ کتنا قابلِ اعتماد ہے۔ یہ سرمایہ کاری کا مشورہ نہیں ہے۔ یہ آپ کی روزانہ سوالات کی حد سے جاتا ہے، کوئی تجزیہ خرچ نہیں ہوتا۔';
+
+  @override
+  String get sourceOfficial => 'سرکاری';
+
+  @override
+  String get sourcePressRelease => 'پریس ریلیز';
+
+  @override
+  String get sourceMajorNews => 'بڑا میڈیا';
+
+  @override
+  String get sourceOpinion => 'رائے';
 }

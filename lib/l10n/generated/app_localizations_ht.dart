@@ -2499,4 +2499,16 @@ class AppLocalizationsHt extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Eksplikasyon AI: li chèche enfòmasyon yo sou entènèt, li louvri atik la epi li evalye kijan sous la serye. Se pa yon konsèy envestisman. Li itilize limit kesyon ou pou chak jou, pa yon analiz.';
+
+  @override
+  String get sourceOfficial => 'Ofisyèl';
+
+  @override
+  String get sourcePressRelease => 'Kominike';
+
+  @override
+  String get sourceMajorNews => 'Gwo medya';
+
+  @override
+  String get sourceOpinion => 'Opinyon';
 }

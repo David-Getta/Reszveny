@@ -2499,4 +2499,16 @@ class AppLocalizationsHi extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI व्याख्या: यह वेब पर तथ्यों की जाँच करता है, लेख खोलता है और आकलन करता है कि स्रोत कितना भरोसेमंद है। यह निवेश सलाह नहीं है। यह आपके दैनिक सवालों की सीमा से जाता है, कोई विश्लेषण खर्च नहीं होता।';
+
+  @override
+  String get sourceOfficial => 'आधिकारिक';
+
+  @override
+  String get sourcePressRelease => 'प्रेस विज्ञप्ति';
+
+  @override
+  String get sourceMajorNews => 'बड़ा मीडिया';
+
+  @override
+  String get sourceOpinion => 'राय';
 }

@@ -2422,4 +2422,16 @@ class AppLocalizationsJa extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI の解説です。Web で事実を調べ、記事を開いて、情報源の信頼性を評価します。投資助言ではありません。1日の質問回数を使い、分析回数は消費しません。';
+
+  @override
+  String get sourceOfficial => '公式';
+
+  @override
+  String get sourcePressRelease => 'プレスリリース';
+
+  @override
+  String get sourceMajorNews => '大手メディア';
+
+  @override
+  String get sourceOpinion => '意見';
 }

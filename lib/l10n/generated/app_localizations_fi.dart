@@ -2502,4 +2502,16 @@ class AppLocalizationsFi extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Tekoälyn selitys: se tarkistaa tosiasiat verkosta, avaa artikkelin ja arvioi, kuinka luotettava lähde on. Se ei ole sijoitusneuvontaa. Kuluttaa päivittäistä kysymyskiintiötäsi, ei analyysia.';
+
+  @override
+  String get sourceOfficial => 'Virallinen';
+
+  @override
+  String get sourcePressRelease => 'Tiedote';
+
+  @override
+  String get sourceMajorNews => 'Suuri media';
+
+  @override
+  String get sourceOpinion => 'Mielipide';
 }

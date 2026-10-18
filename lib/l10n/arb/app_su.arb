@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{1 pépéling dipupus} other{{count} pépéling dipupus}}",
   "homeScreenTitle": "Layar utama",
   "allocationCountries": "Nagara",
-  "newsExplainNoteResearch": "Katerangan AI: néangan fakta di wéb, muka artikelna, sarta meunteun sabaraha bisa dipercaya sumberna. Lain naséhat investasi. Nganggo wates patarosan sapopoé anjeun, sanés analisis."
+  "newsExplainNoteResearch": "Katerangan AI: néangan fakta di wéb, muka artikelna, sarta meunteun sabaraha bisa dipercaya sumberna. Lain naséhat investasi. Nganggo wates patarosan sapopoé anjeun, sanés analisis.",
+  "sourceOfficial": "Resmi",
+  "sourcePressRelease": "Siaran pers",
+  "sourceMajorNews": "Média gedé",
+  "sourceOpinion": "Pamadegan"
 }

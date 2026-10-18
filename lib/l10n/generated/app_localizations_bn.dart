@@ -2499,4 +2499,16 @@ class AppLocalizationsBn extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI ব্যাখ্যা: এটি ওয়েবে তথ্য যাচাই করে, নিবন্ধটি খোলে এবং উৎসটি কতটা নির্ভরযোগ্য তা বিচার করে। এটি বিনিয়োগ পরামর্শ নয়। এটি আপনার দৈনিক প্রশ্নের সীমা থেকে যায়, কোনো বিশ্লেষণ খরচ হয় না।';
+
+  @override
+  String get sourceOfficial => 'অফিসিয়াল';
+
+  @override
+  String get sourcePressRelease => 'প্রেস বিজ্ঞপ্তি';
+
+  @override
+  String get sourceMajorNews => 'প্রধান গণমাধ্যম';
+
+  @override
+  String get sourceOpinion => 'মতামত';
 }

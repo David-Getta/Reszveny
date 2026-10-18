@@ -2502,4 +2502,16 @@ class AppLocalizationsBg extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Обяснение от AI: проверява фактите в интернет, отваря статията и преценява колко надежден е източникът. Не представлява инвестиционен съвет. Използва дневния ви лимит за въпроси, не анализ.';
+
+  @override
+  String get sourceOfficial => 'Официално';
+
+  @override
+  String get sourcePressRelease => 'Прессъобщение';
+
+  @override
+  String get sourceMajorNews => 'Водеща медия';
+
+  @override
+  String get sourceOpinion => 'Мнение';
 }

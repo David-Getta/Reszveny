@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{Voafafa ny fampitandremana 1} other{Voafafa ny fampitandremana {count}}}",
   "homeScreenTitle": "Efijery fandraisana",
   "allocationCountries": "Firenena",
-  "newsExplainNoteResearch": "Fanazavana avy amin’ny AI: mikaroka ireo zava-misy ao amin’ny tranonkala izy, manokatra ilay lahatsoratra ary manombana ny maha-azo itokisana ny loharano. Tsy torohevitra momba ny fampiasam-bola. Mampiasa ny fetran’ny fanontanianao isan’andro izy, fa tsy famakafakana."
+  "newsExplainNoteResearch": "Fanazavana avy amin’ny AI: mikaroka ireo zava-misy ao amin’ny tranonkala izy, manokatra ilay lahatsoratra ary manombana ny maha-azo itokisana ny loharano. Tsy torohevitra momba ny fampiasam-bola. Mampiasa ny fetran’ny fanontanianao isan’andro izy, fa tsy famakafakana.",
+  "sourceOfficial": "Ofisialy",
+  "sourcePressRelease": "Fanambarana",
+  "sourceMajorNews": "Gazety lehibe",
+  "sourceOpinion": "Hevitra"
 }

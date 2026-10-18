@@ -2493,4 +2493,16 @@ class AppLocalizationsHe extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'הסבר של AI: הוא בודק את העובדות ברשת, פותח את הכתבה ומעריך עד כמה המקור אמין. אינו מהווה ייעוץ השקעות. נספר במכסת השאלות היומית שלך, לא כניתוח.';
+
+  @override
+  String get sourceOfficial => 'רשמי';
+
+  @override
+  String get sourcePressRelease => 'הודעה לעיתונות';
+
+  @override
+  String get sourceMajorNews => 'תקשורת מובילה';
+
+  @override
+  String get sourceOpinion => 'דעה';
 }

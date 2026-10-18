@@ -2559,4 +2559,16 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'شرح بالذكاء الاصطناعي: يبحث عن الحقائق على الويب، ويفتح المقال، ويقيّم مدى موثوقية المصدر. لا يُعدّ نصيحة استثمارية. يُحتسب من حدّ الأسئلة اليومي ولا يستهلك تحليلًا.';
+
+  @override
+  String get sourceOfficial => 'رسمي';
+
+  @override
+  String get sourcePressRelease => 'بيان صحفي';
+
+  @override
+  String get sourceMajorNews => 'إعلام رئيسي';
+
+  @override
+  String get sourceOpinion => 'رأي';
 }

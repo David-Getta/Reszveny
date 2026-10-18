@@ -2500,4 +2500,16 @@ class AppLocalizationsTr extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Yapay zekâ açıklaması: Bilgileri web’de araştırır, haberi açar ve kaynağın ne kadar güvenilir olduğunu değerlendirir. Yatırım tavsiyesi değildir. Günlük soru hakkından düşer, analiz hakkı kullanmaz.';
+
+  @override
+  String get sourceOfficial => 'Resmi';
+
+  @override
+  String get sourcePressRelease => 'Basın bülteni';
+
+  @override
+  String get sourceMajorNews => 'Büyük medya';
+
+  @override
+  String get sourceOpinion => 'Görüş';
 }

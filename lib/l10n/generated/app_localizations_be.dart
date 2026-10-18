@@ -2568,4 +2568,16 @@ class AppLocalizationsBe extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Тлумачэнне AI: шукае факты ў інтэрнэце, адкрывае артыкул і ацэньвае, наколькі надзейная крыніца. Не з’яўляецца інвестыцыйнай парадай. Выкарыстоўвае дзённы ліміт пытанняў, а не аналіз.';
+
+  @override
+  String get sourceOfficial => 'Афіцыйна';
+
+  @override
+  String get sourcePressRelease => 'Прэс-рэліз';
+
+  @override
+  String get sourceMajorNews => 'Буйное СМІ';
+
+  @override
+  String get sourceOpinion => 'Меркаванне';
 }

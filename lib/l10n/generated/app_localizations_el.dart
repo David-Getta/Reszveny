@@ -2510,4 +2510,16 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Εξήγηση από AI: αναζητά τα στοιχεία στο διαδίκτυο, ανοίγει το άρθρο και κρίνει πόσο αξιόπιστη είναι η πηγή. Δεν αποτελεί επενδυτική συμβουλή. Χρησιμοποιεί το ημερήσιο όριο ερωτήσεών σας, όχι ανάλυση.';
+
+  @override
+  String get sourceOfficial => 'Επίσημο';
+
+  @override
+  String get sourcePressRelease => 'Δελτίο Τύπου';
+
+  @override
+  String get sourceMajorNews => 'Μεγάλο μέσο';
+
+  @override
+  String get sourceOpinion => 'Άποψη';
 }

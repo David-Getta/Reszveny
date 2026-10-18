@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{Napanas ang 1 ka alerto} other{Napanas ang {count} ka alerto}}",
   "homeScreenTitle": "Panguna nga screen",
   "allocationCountries": "Pungsod",
-  "newsExplainNoteResearch": "Paathag sang AI: ginapangita sini ang mga kamatuoran sa web, ginabuksan ang artikulo kag ginatimbang kon daw ano ka masaligan ang ginhalinan. Indi ini laygay sa pag-invest. Ginagamit sini ang imo adlaw-adlaw nga limitasyon sang pamangkot, indi ang pagtuki."
+  "newsExplainNoteResearch": "Paathag sang AI: ginapangita sini ang mga kamatuoran sa web, ginabuksan ang artikulo kag ginatimbang kon daw ano ka masaligan ang ginhalinan. Indi ini laygay sa pag-invest. Ginagamit sini ang imo adlaw-adlaw nga limitasyon sang pamangkot, indi ang pagtuki.",
+  "sourceOfficial": "Opisyal",
+  "sourcePressRelease": "Pahayag",
+  "sourceMajorNews": "Dakung media",
+  "sourceOpinion": "Opinyon"
 }

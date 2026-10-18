@@ -2502,4 +2502,16 @@ class AppLocalizationsMn extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI-ийн тайлбар: баримтыг вэбээс хайж, нийтлэлийг нээн, эх сурвалж хэр найдвартай болохыг үнэлнэ. Хөрөнгө оруулалтын зөвлөгөө биш. Өдрийн асуултын хязгаараас тань зарцуулна, шинжилгээ биш.';
+
+  @override
+  String get sourceOfficial => 'Албан ёсны';
+
+  @override
+  String get sourcePressRelease => 'Хэвлэлийн мэдээ';
+
+  @override
+  String get sourceMajorNews => 'Томоохон хэвлэл';
+
+  @override
+  String get sourceOpinion => 'Үзэл бодол';
 }

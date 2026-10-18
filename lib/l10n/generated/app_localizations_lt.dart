@@ -2568,4 +2568,16 @@ class AppLocalizationsLt extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'DI paaiškinimas: jis patikrina faktus internete, atidaro straipsnį ir įvertina, kiek patikimas šaltinis. Tai nėra investavimo rekomendacija. Naudoja jūsų dienos klausimų limitą, o ne analizę.';
+
+  @override
+  String get sourceOfficial => 'Oficialu';
+
+  @override
+  String get sourcePressRelease => 'Pranešimas spaudai';
+
+  @override
+  String get sourceMajorNews => 'Didžioji žiniasklaida';
+
+  @override
+  String get sourceOpinion => 'Nuomonė';
 }

@@ -2489,4 +2489,16 @@ class AppLocalizationsBo extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI འགྲེལ་བཤད། དྲ་རྒྱའི་ཐོག་དངོས་ཡོད་གནས་ཚུལ་འཚོལ་བ་དང་། རྩོམ་ཡིག་ཁ་ཕྱེ་བ། འབྱུང་ཁུངས་ཇི་ཙམ་ཡིད་ཆེས་རུང་བ་ལ་དཔྱད་པ་བཅས་བྱེད། མ་འཇོག་གི་བསམ་འཆར་མིན། ཉིན་རེའི་དྲི་བའི་ཚད་ནས་འགྲོ་བ་ཡིན་ལ་དབྱེ་ཞིབ་མི་བེད་སྤྱོད།';
+
+  @override
+  String get sourceOfficial => 'གཞུང་འབྲེལ';
+
+  @override
+  String get sourcePressRelease => 'གསར་འགྱུར་གསལ་བསྒྲགས';
+
+  @override
+  String get sourceMajorNews => 'བརྒྱུད་ལམ་གཙོ་བོ';
+
+  @override
+  String get sourceOpinion => 'བསམ་ཚུལ';
 }

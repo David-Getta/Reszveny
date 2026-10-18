@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{Wyczyszczono 1 alert} one{Wyczyszczono {count} alert} few{Wyczyszczono {count} alerty} many{Wyczyszczono {count} alertów} other{Wyczyszczono {count} alertu}}",
   "homeScreenTitle": "Ekran główny",
   "allocationCountries": "Kraje",
-  "newsExplainNoteResearch": "Wyjaśnienie AI: sprawdza fakty w sieci, otwiera artykuł i ocenia, na ile wiarygodne jest źródło. Nie stanowi porady inwestycyjnej. Korzysta z dziennego limitu pytań, nie zużywa analizy."
+  "newsExplainNoteResearch": "Wyjaśnienie AI: sprawdza fakty w sieci, otwiera artykuł i ocenia, na ile wiarygodne jest źródło. Nie stanowi porady inwestycyjnej. Korzysta z dziennego limitu pytań, nie zużywa analizy.",
+  "sourceOfficial": "Oficjalne",
+  "sourcePressRelease": "Komunikat",
+  "sourceMajorNews": "Duże medium",
+  "sourceOpinion": "Opinia"
 }

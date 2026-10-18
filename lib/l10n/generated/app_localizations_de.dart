@@ -2513,4 +2513,16 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'KI-Erklärung: Sie recherchiert die Fakten im Web, öffnet den Artikel und bewertet, wie verlässlich die Quelle ist. Keine Anlageberatung. Zählt zu deinem täglichen Fragenkontingent, nicht als Analyse.';
+
+  @override
+  String get sourceOfficial => 'Offiziell';
+
+  @override
+  String get sourcePressRelease => 'Pressemitteilung';
+
+  @override
+  String get sourceMajorNews => 'Leitmedium';
+
+  @override
+  String get sourceOpinion => 'Meinung';
 }

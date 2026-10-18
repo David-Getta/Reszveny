@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{Go phimotswe tlhagiso e le nngwe} other{Go phimotswe ditlhagiso di le {count}}}",
   "homeScreenTitle": "Tsebe ya ntlha",
   "allocationCountries": "Dinaga",
-  "newsExplainNoteResearch": "Tlhaloso ya AI: e batla dintlha mo inthaneteng, e bula athikele mme e sekaseka gore motswedi o ikanyega go le kana kang. Ga se kgakololo ya peeletso. E dirisa tekanyetso ya gago ya dipotso ya letsatsi le letsatsi, e seng tshekatsheko."
+  "newsExplainNoteResearch": "Tlhaloso ya AI: e batla dintlha mo inthaneteng, e bula athikele mme e sekaseka gore motswedi o ikanyega go le kana kang. Ga se kgakololo ya peeletso. E dirisa tekanyetso ya gago ya dipotso ya letsatsi le letsatsi, e seng tshekatsheko.",
+  "sourceOfficial": "Semmuso",
+  "sourcePressRelease": "Kitsiso",
+  "sourceMajorNews": "Kgatiso e kgolo",
+  "sourceOpinion": "Kakanyo"
 }

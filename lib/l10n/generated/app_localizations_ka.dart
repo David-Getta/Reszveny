@@ -2501,4 +2501,16 @@ class AppLocalizationsKa extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI-ის განმარტება: ის ინტერნეტში ამოწმებს ფაქტებს, ხსნის სტატიას და აფასებს, რამდენად სანდოა წყარო. არ წარმოადგენს საინვესტიციო რჩევას. იყენებს თქვენს დღიურ კითხვების ლიმიტს და არა ანალიზს.';
+
+  @override
+  String get sourceOfficial => 'ოფიციალური';
+
+  @override
+  String get sourcePressRelease => 'პრესრელიზი';
+
+  @override
+  String get sourceMajorNews => 'წამყვანი მედია';
+
+  @override
+  String get sourceOpinion => 'მოსაზრება';
 }

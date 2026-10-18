@@ -2499,4 +2499,16 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'An AI explanation: it looks the facts up on the web, opens the article and judges how reliable the source is. It is not investment advice. Uses your daily question allowance, not an analysis.';
+
+  @override
+  String get sourceOfficial => 'Official';
+
+  @override
+  String get sourcePressRelease => 'Press release';
+
+  @override
+  String get sourceMajorNews => 'Major outlet';
+
+  @override
+  String get sourceOpinion => 'Opinion';
 }

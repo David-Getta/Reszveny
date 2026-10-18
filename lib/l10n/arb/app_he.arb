@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{נוקתה התראה אחת} other{נוקו {count} התראות}}",
   "homeScreenTitle": "מסך הבית",
   "allocationCountries": "מדינות",
-  "newsExplainNoteResearch": "הסבר של AI: הוא בודק את העובדות ברשת, פותח את הכתבה ומעריך עד כמה המקור אמין. אינו מהווה ייעוץ השקעות. נספר במכסת השאלות היומית שלך, לא כניתוח."
+  "newsExplainNoteResearch": "הסבר של AI: הוא בודק את העובדות ברשת, פותח את הכתבה ומעריך עד כמה המקור אמין. אינו מהווה ייעוץ השקעות. נספר במכסת השאלות היומית שלך, לא כניתוח.",
+  "sourceOfficial": "רשמי",
+  "sourcePressRelease": "הודעה לעיתונות",
+  "sourceMajorNews": "תקשורת מובילה",
+  "sourceOpinion": "דעה"
 }

@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{Na-clear ang 1 alerto} other{Na-clear ang {count} alerto}}",
   "homeScreenTitle": "Pangunahing screen",
   "allocationCountries": "Bansa",
-  "newsExplainNoteResearch": "Paliwanag ng AI: hinahanap nito ang mga katotohanan sa web, binubuksan ang artikulo at sinusuri kung gaano kapani-paniwala ang pinagmulan. Hindi ito payo sa pamumuhunan. Gumagamit ito ng iyong pang-araw-araw na limitasyon sa tanong, hindi ng pagsusuri."
+  "newsExplainNoteResearch": "Paliwanag ng AI: hinahanap nito ang mga katotohanan sa web, binubuksan ang artikulo at sinusuri kung gaano kapani-paniwala ang pinagmulan. Hindi ito payo sa pamumuhunan. Gumagamit ito ng iyong pang-araw-araw na limitasyon sa tanong, hindi ng pagsusuri.",
+  "sourceOfficial": "Opisyal",
+  "sourcePressRelease": "Pahayag",
+  "sourceMajorNews": "Malaking media",
+  "sourceOpinion": "Opinyon"
 }

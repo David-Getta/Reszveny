@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{Hafuswe imenyesha 1} other{Hafuswe amamenyesha {count}}}",
   "homeScreenTitle": "Urupapuro rw'intango",
   "allocationCountries": "Ibihugu",
-  "newsExplainNoteResearch": "Insobanuro ya AI: irondera ukuri kuri internet, ikugurura inkuru kandi igasuzuma ingene inkomoko yizigirwa. Si inama yo gushora imari. Ikoresha urugero rw’ibibazo vyawe rw’umunsi, si isesengura."
+  "newsExplainNoteResearch": "Insobanuro ya AI: irondera ukuri kuri internet, ikugurura inkuru kandi igasuzuma ingene inkomoko yizigirwa. Si inama yo gushora imari. Ikoresha urugero rw’ibibazo vyawe rw’umunsi, si isesengura.",
+  "sourceOfficial": "Ivyemewe",
+  "sourcePressRelease": "Itangazo",
+  "sourceMajorNews": "Ikinyamakuru gikomeye",
+  "sourceOpinion": "Iciyumviro"
 }

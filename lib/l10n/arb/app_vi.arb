@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{Đã xóa 1 cảnh báo} other{Đã xóa {count} cảnh báo}}",
   "homeScreenTitle": "Màn hình chính",
   "allocationCountries": "Quốc gia",
-  "newsExplainNoteResearch": "Giải thích do AI tạo: AI tra cứu thông tin trên web, mở bài báo và đánh giá mức độ đáng tin cậy của nguồn. Không phải là lời khuyên đầu tư. Dùng hạn mức câu hỏi hằng ngày của bạn, không dùng lượt phân tích."
+  "newsExplainNoteResearch": "Giải thích do AI tạo: AI tra cứu thông tin trên web, mở bài báo và đánh giá mức độ đáng tin cậy của nguồn. Không phải là lời khuyên đầu tư. Dùng hạn mức câu hỏi hằng ngày của bạn, không dùng lượt phân tích.",
+  "sourceOfficial": "Chính thức",
+  "sourcePressRelease": "Thông cáo báo chí",
+  "sourceMajorNews": "Báo lớn",
+  "sourceOpinion": "Ý kiến"
 }

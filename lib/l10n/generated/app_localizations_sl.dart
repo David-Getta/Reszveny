@@ -2569,4 +2569,16 @@ class AppLocalizationsSl extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Razlaga umetne inteligence: dejstva preveri na spletu, odpre članek in oceni, kako zanesljiv je vir. Ni naložbeni nasvet. Porabi vašo dnevno omejitev vprašanj, ne analize.';
+
+  @override
+  String get sourceOfficial => 'Uradno';
+
+  @override
+  String get sourcePressRelease => 'Medijsko sporočilo';
+
+  @override
+  String get sourceMajorNews => 'Velik medij';
+
+  @override
+  String get sourceOpinion => 'Mnenje';
 }

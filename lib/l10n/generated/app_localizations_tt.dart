@@ -2499,4 +2499,16 @@ class AppLocalizationsTt extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI аңлатмасы: фактларны интернетта эзли, мәкаләне ача һәм чыганакның никадәр ышанычлы булуын бәяли. Инвестиция киңәше түгел. Көндәлек сораулар чигегездән тотыла, анализ түгел.';
+
+  @override
+  String get sourceOfficial => 'Рәсми';
+
+  @override
+  String get sourcePressRelease => 'Пресс-релиз';
+
+  @override
+  String get sourceMajorNews => 'Эре медиа';
+
+  @override
+  String get sourceOpinion => 'Фикер';
 }

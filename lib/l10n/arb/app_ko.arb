@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{알림 1개를 지웠습니다} other{알림 {count}개를 지웠습니다}}",
   "homeScreenTitle": "홈 화면",
   "allocationCountries": "국가",
-  "newsExplainNoteResearch": "AI 설명입니다. 웹에서 사실을 찾아보고, 기사를 열어 출처가 얼마나 신뢰할 만한지 판단합니다. 투자 조언이 아닙니다. 분석 횟수가 아닌 하루 질문 한도가 사용됩니다."
+  "newsExplainNoteResearch": "AI 설명입니다. 웹에서 사실을 찾아보고, 기사를 열어 출처가 얼마나 신뢰할 만한지 판단합니다. 투자 조언이 아닙니다. 분석 횟수가 아닌 하루 질문 한도가 사용됩니다.",
+  "sourceOfficial": "공식",
+  "sourcePressRelease": "보도자료",
+  "sourceMajorNews": "주요 언론",
+  "sourceOpinion": "의견"
 }

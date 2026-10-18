@@ -2503,4 +2503,16 @@ class AppLocalizationsUg extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI چۈشەندۈرۈشى: پاكىتلارنى توردىن ئىزدەيدۇ، ماقالىنى ئاچىدۇ ۋە مەنبەنىڭ قانچىلىك ئىشەنچلىك ئىكەنلىكىنى باھالايدۇ. مەبلەغ سېلىش تەۋسىيەسى ئەمەس. كۈندىلىك سوئال چېكىڭىزدىن سەرپ بولىدۇ، تەھلىل ئەمەس.';
+
+  @override
+  String get sourceOfficial => 'رەسمىي';
+
+  @override
+  String get sourcePressRelease => 'ئاخبارات باياناتى';
+
+  @override
+  String get sourceMajorNews => 'چوڭ مېدىيا';
+
+  @override
+  String get sourceOpinion => 'كۆز قاراش';
 }

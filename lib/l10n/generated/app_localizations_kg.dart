@@ -2508,4 +2508,16 @@ class AppLocalizationsKg extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Ntendula ya AI: yo ke sosaka bambangu na Internet, ke kangula disolo mpi ke tadilaka nki mutindu ntuku ke ya kukwikama. Yo ke malongi ya kutula mbongo ve. Yo ke sadilaka ndilu ya biuvu na nge ya konso kilumbu, ve nsosa.';
+
+  @override
+  String get sourceOfficial => 'Ya kimfumu';
+
+  @override
+  String get sourcePressRelease => 'Nsangu ya kompani';
+
+  @override
+  String get sourceMajorNews => 'Zulunalu ya nene';
+
+  @override
+  String get sourceOpinion => 'Mabanza';
 }

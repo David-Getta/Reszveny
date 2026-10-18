@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{Far nañu 1 artu} other{Far nañu {count} artu}}",
   "homeScreenTitle": "Xët bu njëkk",
   "allocationCountries": "Réew yi",
-  "newsExplainNoteResearch": "Leeral bu AI defar: dafay seet dëgg yi ci web bi, ubbi jukki bi te natt ba ban dayo la fi ñu ko jële wóore. Du ndigal ci dugal xaalis. Dafay jëfandikoo sa limu laaj yu bés bu nekk, du xayma."
+  "newsExplainNoteResearch": "Leeral bu AI defar: dafay seet dëgg yi ci web bi, ubbi jukki bi te natt ba ban dayo la fi ñu ko jële wóore. Du ndigal ci dugal xaalis. Dafay jëfandikoo sa limu laaj yu bés bu nekk, du xayma.",
+  "sourceOfficial": "Ofisiyel",
+  "sourcePressRelease": "Yégle",
+  "sourceMajorNews": "Médiya bu mag",
+  "sourceOpinion": "Xalaat"
 }

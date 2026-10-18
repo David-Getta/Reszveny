@@ -2506,4 +2506,16 @@ class AppLocalizationsSn extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Tsananguro yeAI: inotsvaga chokwadi painternet, inovhura nyaya yacho uye inoongorora kuti kwazvakabva kunovimbika sei. Haisi zano rekuisa mari. Inoshandisa muganhu wako wemibvunzo wezuva nezuva, kwete ongororo.';
+
+  @override
+  String get sourceOfficial => 'Zvepamutemo';
+
+  @override
+  String get sourcePressRelease => 'Chiziviso';
+
+  @override
+  String get sourceMajorNews => 'Bepanhau guru';
+
+  @override
+  String get sourceOpinion => 'Pfungwa';
 }

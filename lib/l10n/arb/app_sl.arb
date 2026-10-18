@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{Počiščeno je 1 opozorilo} one{Počiščeno je {count} opozorilo} two{Počiščeni sta {count} opozorili} few{Počiščena so {count} opozorila} other{Počiščenih je {count} opozoril}}",
   "homeScreenTitle": "Začetni zaslon",
   "allocationCountries": "Države",
-  "newsExplainNoteResearch": "Razlaga umetne inteligence: dejstva preveri na spletu, odpre članek in oceni, kako zanesljiv je vir. Ni naložbeni nasvet. Porabi vašo dnevno omejitev vprašanj, ne analize."
+  "newsExplainNoteResearch": "Razlaga umetne inteligence: dejstva preveri na spletu, odpre članek in oceni, kako zanesljiv je vir. Ni naložbeni nasvet. Porabi vašo dnevno omejitev vprašanj, ne analize.",
+  "sourceOfficial": "Uradno",
+  "sourcePressRelease": "Medijsko sporočilo",
+  "sourceMajorNews": "Velik medij",
+  "sourceOpinion": "Mnenje"
 }

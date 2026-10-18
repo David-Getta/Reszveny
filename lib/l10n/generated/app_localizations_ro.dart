@@ -2540,4 +2540,16 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Explicație generată de AI: caută faptele pe web, deschide articolul și evaluează cât de credibilă este sursa. Nu reprezintă un sfat de investiții. Folosește limita ta zilnică de întrebări, nu o analiză.';
+
+  @override
+  String get sourceOfficial => 'Oficial';
+
+  @override
+  String get sourcePressRelease => 'Comunicat';
+
+  @override
+  String get sourceMajorNews => 'Publicație majoră';
+
+  @override
+  String get sourceOpinion => 'Opinie';
 }

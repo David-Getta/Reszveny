@@ -2492,4 +2492,16 @@ class AppLocalizationsSd extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI وضاحت: اها ويب تي حقيقتون ڳولي ٿي، مضمون کولي ٿي ۽ جانچي ٿي ته ذريعو ڪيترو قابلِ اعتبار آهي. اها سيڙپڪاري جو مشورو ناهي. اهو توهان جي روزاني سوالن جي حد مان ويندو آهي، ڪو تجزيو خرچ نٿو ٿئي.';
+
+  @override
+  String get sourceOfficial => 'سرڪاري';
+
+  @override
+  String get sourcePressRelease => 'پريس رليز';
+
+  @override
+  String get sourceMajorNews => 'وڏو ميڊيا';
+
+  @override
+  String get sourceOpinion => 'راءِ';
 }

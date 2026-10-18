@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{An share faɗakarwa 1} other{An share faɗakarwa {count}}}",
   "homeScreenTitle": "Shafin farko",
   "allocationCountries": "Ƙasashe",
-  "newsExplainNoteResearch": "Bayanin AI: yana bincika gaskiyar lamarin a yanar gizo, yana buɗe labarin kuma yana tantance yadda madogarar take da aminci. Ba shawarar zuba jari ba ne. Yana amfani da iyakar tambayoyinka na yau da kullum, ba nazari ba."
+  "newsExplainNoteResearch": "Bayanin AI: yana bincika gaskiyar lamarin a yanar gizo, yana buɗe labarin kuma yana tantance yadda madogarar take da aminci. Ba shawarar zuba jari ba ne. Yana amfani da iyakar tambayoyinka na yau da kullum, ba nazari ba.",
+  "sourceOfficial": "Na hukuma",
+  "sourcePressRelease": "Sanarwa",
+  "sourceMajorNews": "Babbar jarida",
+  "sourceOpinion": "Ra'ayi"
 }

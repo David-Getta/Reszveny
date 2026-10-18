@@ -2515,4 +2515,16 @@ class AppLocalizationsHil extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Paathag sang AI: ginapangita sini ang mga kamatuoran sa web, ginabuksan ang artikulo kag ginatimbang kon daw ano ka masaligan ang ginhalinan. Indi ini laygay sa pag-invest. Ginagamit sini ang imo adlaw-adlaw nga limitasyon sang pamangkot, indi ang pagtuki.';
+
+  @override
+  String get sourceOfficial => 'Opisyal';
+
+  @override
+  String get sourcePressRelease => 'Pahayag';
+
+  @override
+  String get sourceMajorNews => 'Dakung media';
+
+  @override
+  String get sourceOpinion => 'Opinyon';
 }

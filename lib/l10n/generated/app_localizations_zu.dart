@@ -2510,4 +2510,16 @@ class AppLocalizationsZu extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Incazelo ye-AI: ifuna amaqiniso kuwebhu, ivule i-athikili futhi ihlole ukuthi umthombo uthembeke kangakanani. Akuyona iseluleko sokutshala imali. Sisebenzisa umkhawulo wakho wemibuzo wansuku zonke, hhayi ukuhlaziya.';
+
+  @override
+  String get sourceOfficial => 'Okusemthethweni';
+
+  @override
+  String get sourcePressRelease => 'Isitatimende';
+
+  @override
+  String get sourceMajorNews => 'Abezindaba abakhulu';
+
+  @override
+  String get sourceOpinion => 'Umbono';
 }

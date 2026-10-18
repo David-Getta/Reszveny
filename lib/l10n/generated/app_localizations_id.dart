@@ -2496,4 +2496,16 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Penjelasan AI: mencari fakta di web, membuka artikelnya, dan menilai seberapa tepercaya sumbernya. Bukan saran investasi. Memakai kuota pertanyaan harian Anda, bukan analisis.';
+
+  @override
+  String get sourceOfficial => 'Resmi';
+
+  @override
+  String get sourcePressRelease => 'Siaran pers';
+
+  @override
+  String get sourceMajorNews => 'Media besar';
+
+  @override
+  String get sourceOpinion => 'Opini';
 }

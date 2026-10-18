@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{1 pènget wis dibusak} other{{count} pènget wis dibusak}}",
   "homeScreenTitle": "Layar utama",
   "allocationCountries": "Negara",
-  "newsExplainNoteResearch": "Panjelasan AI: nggolèki fakta ing web, mbukak artikelé lan netepaké sepira bisa dipercaya sumberé. Dudu saran investasi. Nggunakake watesan pitakon saben dina, dudu analisis."
+  "newsExplainNoteResearch": "Panjelasan AI: nggolèki fakta ing web, mbukak artikelé lan netepaké sepira bisa dipercaya sumberé. Dudu saran investasi. Nggunakake watesan pitakon saben dina, dudu analisis.",
+  "sourceOfficial": "Resmi",
+  "sourcePressRelease": "Siaran pers",
+  "sourceMajorNews": "Media gedhé",
+  "sourceOpinion": "Panemu"
 }

@@ -2002,5 +2002,21 @@
   "newsExplainNoteResearch": "An AI explanation: it looks the facts up on the web, opens the article and judges how reliable the source is. It is not investment advice. Uses your daily question allowance, not an analysis.",
   "@newsExplainNoteResearch": {
     "description": "Small note under the AI news explanation (the 'What does this mean?' sheet), which now researches the web and rates the source."
+  },
+  "sourceOfficial": "Official",
+  "sourcePressRelease": "Press release",
+  "sourceMajorNews": "Major outlet",
+  "sourceOpinion": "Opinion",
+  "@sourceOfficial": {
+    "description": "Tiny tag next to a source link: an exchange/regulator filing or the company's investor-relations site."
+  },
+  "@sourcePressRelease": {
+    "description": "Tiny tag next to a source link: the company's own press release (PR Newswire, Business Wire…)."
+  },
+  "@sourceMajorNews": {
+    "description": "Tiny tag next to a source link: a major news agency or leading business paper (Reuters, Bloomberg, FT…)."
+  },
+  "@sourceOpinion": {
+    "description": "Tiny tag next to a source link: opinion, analyst blog or stock-tip site (Motley Fool, Seeking Alpha…)."
   }
 }

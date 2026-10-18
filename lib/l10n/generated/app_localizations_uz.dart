@@ -2506,4 +2506,16 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI izohi: faktlarni internetda qidiradi, maqolani ochadi va manba qanchalik ishonchli ekanini baholaydi. Bu investitsiya maslahati emas. Kunlik savollar limitingizdan sarflanadi, tahlil emas.';
+
+  @override
+  String get sourceOfficial => 'Rasmiy';
+
+  @override
+  String get sourcePressRelease => 'Press-reliz';
+
+  @override
+  String get sourceMajorNews => 'Yirik OAV';
+
+  @override
+  String get sourceOpinion => 'Fikr';
 }

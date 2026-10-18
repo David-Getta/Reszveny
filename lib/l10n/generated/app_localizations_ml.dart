@@ -2510,4 +2510,16 @@ class AppLocalizationsMl extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI വിശദീകരണം: ഇത് വെബിൽ വസ്തുതകൾ തിരയുന്നു, ലേഖനം തുറക്കുന്നു, ഉറവിടം എത്രത്തോളം വിശ്വസനീയമാണെന്ന് വിലയിരുത്തുന്നു. ഇത് നിക്ഷേപ ഉപദേശമല്ല. ഇത് നിങ്ങളുടെ ദൈനംദിന ചോദ്യ പരിധിയിൽ നിന്നാണ്, വിശകലനം ഉപയോഗിക്കില്ല.';
+
+  @override
+  String get sourceOfficial => 'ഔദ്യോഗികം';
+
+  @override
+  String get sourcePressRelease => 'പത്രക്കുറിപ്പ്';
+
+  @override
+  String get sourceMajorNews => 'പ്രമുഖ മാധ്യമം';
+
+  @override
+  String get sourceOpinion => 'അഭിപ്രായം';
 }

@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{1 melding gewist} other{{count} meldingen gewist}}",
   "homeScreenTitle": "Startscherm",
   "allocationCountries": "Landen",
-  "newsExplainNoteResearch": "AI-uitleg: zoekt de feiten op het web op, opent het artikel en beoordeelt hoe betrouwbaar de bron is. Dit is geen beleggingsadvies. Gebruikt je dagelijkse vragentegoed, geen analyse."
+  "newsExplainNoteResearch": "AI-uitleg: zoekt de feiten op het web op, opent het artikel en beoordeelt hoe betrouwbaar de bron is. Dit is geen beleggingsadvies. Gebruikt je dagelijkse vragentegoed, geen analyse.",
+  "sourceOfficial": "Officieel",
+  "sourcePressRelease": "Persbericht",
+  "sourceMajorNews": "Groot medium",
+  "sourceOpinion": "Opinie"
 }

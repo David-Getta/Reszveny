@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{Yettwakkes 1 n walɣu} other{Ttwakksen {count} n walɣuten}}",
   "homeScreenTitle": "Agdil agejdan",
   "allocationCountries": "Timura",
-  "newsExplainNoteResearch": "Asegzi n AI: yettnadi tidet deg web, yeldi amagrad, yerna yettwazen acḥal yettwamman uɣbalu. Mačči d awellih n usersi n yidrimen. Yesseqdac talast-ik n yisteqsiyen n yal ass, mačči tasledt."
+  "newsExplainNoteResearch": "Asegzi n AI: yettnadi tidet deg web, yeldi amagrad, yerna yettwazen acḥal yettwamman uɣbalu. Mačči d awellih n usersi n yidrimen. Yesseqdac talast-ik n yisteqsiyen n yal ass, mačči tasledt.",
+  "sourceOfficial": "Unṣib",
+  "sourcePressRelease": "Tamselɣut",
+  "sourceMajorNews": "Amidya ameqqran",
+  "sourceOpinion": "Tamuɣli"
 }

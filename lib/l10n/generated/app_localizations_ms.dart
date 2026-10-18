@@ -2505,4 +2505,16 @@ class AppLocalizationsMs extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Penjelasan AI: ia mencari fakta di web, membuka artikel dan menilai sejauh mana sumber itu boleh dipercayai. Bukan nasihat pelaburan. Menggunakan had soalan harian anda, bukan analisis.';
+
+  @override
+  String get sourceOfficial => 'Rasmi';
+
+  @override
+  String get sourcePressRelease => 'Kenyataan media';
+
+  @override
+  String get sourceMajorNews => 'Media utama';
+
+  @override
+  String get sourceOpinion => 'Pendapat';
 }

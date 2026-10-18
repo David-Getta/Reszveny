@@ -664,5 +664,9 @@
   "alertsCleared": "{count, plural, =1{1 hişyarî hate paqijkirin} other{{count} hişyarî hatin paqijkirin}}",
   "homeScreenTitle": "Ekrana sereke",
   "allocationCountries": "Welat",
-  "newsExplainNoteResearch": "Ravekirina AI: ew rastiyan li ser webê lê dikole, gotarê vedike û dinirxîne ka çavkanî çiqas pêbawer e. Ne şîreta veberhênanê ye. Ji sînorê pirsên te yê rojane tê birîn, ne analîzek."
+  "newsExplainNoteResearch": "Ravekirina AI: ew rastiyan li ser webê lê dikole, gotarê vedike û dinirxîne ka çavkanî çiqas pêbawer e. Ne şîreta veberhênanê ye. Ji sînorê pirsên te yê rojane tê birîn, ne analîzek.",
+  "sourceOfficial": "Fermî",
+  "sourcePressRelease": "Daxuyanî",
+  "sourceMajorNews": "Medyaya mezin",
+  "sourceOpinion": "Nêrîn"
 }

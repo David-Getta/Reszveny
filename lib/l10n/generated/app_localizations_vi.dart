@@ -2494,4 +2494,16 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Giải thích do AI tạo: AI tra cứu thông tin trên web, mở bài báo và đánh giá mức độ đáng tin cậy của nguồn. Không phải là lời khuyên đầu tư. Dùng hạn mức câu hỏi hằng ngày của bạn, không dùng lượt phân tích.';
+
+  @override
+  String get sourceOfficial => 'Chính thức';
+
+  @override
+  String get sourcePressRelease => 'Thông cáo báo chí';
+
+  @override
+  String get sourceMajorNews => 'Báo lớn';
+
+  @override
+  String get sourceOpinion => 'Ý kiến';
 }

@@ -2507,4 +2507,16 @@ class AppLocalizationsNy extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Kufotokozera kwa AI: chimafufuza zoona pa intaneti, chimatsegula nkhaniyo ndipo chimawunika kuti gwero lake ndi lodalirika bwanji. Si malangizo okhudza kuyika ndalama. Chimagwiritsa ntchito malire a mafunso anu a tsiku ndi tsiku, osati kusanthula.';
+
+  @override
+  String get sourceOfficial => 'Zovomerezeka';
+
+  @override
+  String get sourcePressRelease => 'Chilengezo';
+
+  @override
+  String get sourceMajorNews => 'Nyuzipepala yayikulu';
+
+  @override
+  String get sourceOpinion => 'Maganizo';
 }

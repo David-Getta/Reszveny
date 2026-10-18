@@ -2468,4 +2468,16 @@ class AppLocalizationsAm extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'የAI ማብራሪያ፦ እውነታዎቹን በድር ላይ ይፈልጋል፣ ጽሑፉን ይከፍታል፣ ምንጩ ምን ያህል አስተማማኝ እንደሆነም ይገመግማል። የኢንቨስትመንት ምክር አይደለም። ከዕለታዊ የጥያቄ ገደብዎ ይቆጠራል እንጂ ትንተና አይጠቀምም።';
+
+  @override
+  String get sourceOfficial => 'ይፋዊ';
+
+  @override
+  String get sourcePressRelease => 'ጋዜጣዊ መግለጫ';
+
+  @override
+  String get sourceMajorNews => 'ዋና ሚዲያ';
+
+  @override
+  String get sourceOpinion => 'አስተያየት';
 }

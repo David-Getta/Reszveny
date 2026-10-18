@@ -2515,4 +2515,16 @@ class AppLocalizationsSt extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'Tlhaloso ya AI: e batla dintlha inthaneteng, e bula sengolwa mme e lekola hore na mohlodi o tshepahala hakae. Hase keletso ya ho tsetela. E sebedisa moedi wa hao wa dipotso wa letsatsi le letsatsi, eseng manollo.';
+
+  @override
+  String get sourceOfficial => 'Semmuso';
+
+  @override
+  String get sourcePressRelease => 'Tsebiso';
+
+  @override
+  String get sourceMajorNews => 'Khatiso e kgolo';
+
+  @override
+  String get sourceOpinion => 'Maikutlo';
 }

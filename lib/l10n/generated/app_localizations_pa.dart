@@ -2496,4 +2496,16 @@ class AppLocalizationsPa extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'AI ਵਿਆਖਿਆ: ਇਹ ਵੈੱਬ ’ਤੇ ਤੱਥ ਖੋਜਦਾ ਹੈ, ਲੇਖ ਖੋਲ੍ਹਦਾ ਹੈ ਅਤੇ ਪਰਖਦਾ ਹੈ ਕਿ ਸਰੋਤ ਕਿੰਨਾ ਭਰੋਸੇਯੋਗ ਹੈ। ਇਹ ਨਿਵੇਸ਼ ਸਲਾਹ ਨਹੀਂ ਹੈ। ਇਹ ਤੁਹਾਡੀ ਰੋਜ਼ਾਨਾ ਸਵਾਲਾਂ ਦੀ ਸੀਮਾ ਵਿੱਚੋਂ ਜਾਂਦਾ ਹੈ, ਕੋਈ ਵਿਸ਼ਲੇਸ਼ਣ ਖ਼ਰਚ ਨਹੀਂ ਹੁੰਦਾ।';
+
+  @override
+  String get sourceOfficial => 'ਅਧਿਕਾਰਤ';
+
+  @override
+  String get sourcePressRelease => 'ਪ੍ਰੈੱਸ ਰਿਲੀਜ਼';
+
+  @override
+  String get sourceMajorNews => 'ਵੱਡਾ ਮੀਡੀਆ';
+
+  @override
+  String get sourceOpinion => 'ਰਾਏ';
 }

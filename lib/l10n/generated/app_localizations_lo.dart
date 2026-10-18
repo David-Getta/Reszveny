@@ -2474,4 +2474,16 @@ class AppLocalizationsLo extends AppLocalizations {
   @override
   String get newsExplainNoteResearch =>
       'ຄຳອະທິບາຍຈາກ AI: ມັນຊອກຫາຂໍ້ເທັດຈິງໃນເວັບ, ເປີດບົດຄວາມ ແລະ ປະເມີນວ່າແຫຼ່ງທີ່ມາໜ້າເຊື່ອຖືພຽງໃດ. ບໍ່ແມ່ນຄຳແນະນຳການລົງທຶນ. ໃຊ້ໂຄຕາຄຳຖາມປະຈຳວັນຂອງທ່ານ ບໍ່ແມ່ນການວິເຄາະ.';
+
+  @override
+  String get sourceOfficial => 'ທາງການ';
+
+  @override
+  String get sourcePressRelease => 'ຖະແຫຼງຂ່າວ';
+
+  @override
+  String get sourceMajorNews => 'ສື່ໃຫຍ່';
+
+  @override
+  String get sourceOpinion => 'ຄຳເຫັນ';
 }
