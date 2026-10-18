@@ -1,4 +1,7 @@
+import 'dart:convert';
+
 import 'package:http/http.dart' as http;
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../core/config/app_config.dart';
 import '../../core/errors.dart';
@@ -11,9 +14,19 @@ typedef NewsExplanation = ({String text, List<AskSource> sources});
 /// „Mit jelent ez?”: néhány mondatos AI-magyarázat egy hírről – mi történt, és
 /// mit jelenthet a részvényre. Röviden utánanéz a weben (a cégek kapcsolata, a
 /// kulcsállítások, megnyitja a cikket), és értékeli a forrás hitelességét. A napi
-/// kérdéskeretből; hírenként egyszer kéri le (az app futása alatt).
+/// kérdéskeretből; hírenként egyszer kéri le, és a készüléken is megőrzi
+/// ([keepFor] ideig, legfeljebb [maxStored] darabot), hogy újraindítás után se
+/// fogyasszon újra.
 class NewsExplainer {
-  NewsExplainer({required this.config, http.Client? client}) : _client = client ?? http.Client();
+  NewsExplainer({required this.config, http.Client? client, DateTime Function()? clock})
+    : _client = client ?? http.Client(),
+      _clock = clock ?? DateTime.now;
+
+  final DateTime Function() _clock;
+
+  static const _storeKey = 'news_explanations';
+  static const keepFor = Duration(days: 7);
+  static const maxStored = 60;
 
   final AppConfig config;
   final http.Client _client;
@@ -67,12 +80,72 @@ Rules:
   Future<NewsExplanation> explain(WatchedNews n, {required String language}) {
     if (!config.hasAnthropicKey) return Future.error(const AnalysisException(AppErrorCode.aiNotConfigured));
     final key = '$language|${n.item.url.isEmpty ? n.item.headline : n.item.url}';
-    final f = _cache[key] ??= _ask(requestBody(n, language: language, model: config.anthropicModel));
+    final f = _cache[key] ??= _storedOrAsk(key, n, language);
     f.catchError((Object _) {
       _cache.remove(key);
       return (text: '', sources: const <AskSource>[]);
     });
     return f;
+  }
+
+  /// A készüléken tárolt magyarázat, ha friss; különben lekérés és mentés.
+  Future<NewsExplanation> _storedOrAsk(String key, WatchedNews n, String language) async {
+    final stored = await _load();
+    final hit = stored[key];
+    if (hit != null) return hit.explanation;
+    final e = await _ask(requestBody(n, language: language, model: config.anthropicModel));
+    await _save({...stored, key: (at: _clock(), explanation: e)});
+    return e;
+  }
+
+  Future<Map<String, ({DateTime at, NewsExplanation explanation})>> _load() async {
+    final out = <String, ({DateTime at, NewsExplanation explanation})>{};
+    try {
+      final raw = (await SharedPreferences.getInstance()).getString(_storeKey);
+      final j = raw == null ? null : jsonDecode(raw);
+      if (j is! Map) return out;
+      final cutoff = _clock().subtract(keepFor);
+      for (final e in j.entries) {
+        final v = e.value;
+        if (v is! Map || v['text'] is! String) continue;
+        final at = DateTime.tryParse('${v['at']}');
+        if (at == null || at.isBefore(cutoff)) continue;
+        out['${e.key}'] = (
+          at: at,
+          explanation: (
+            text: v['text'] as String,
+            sources: [
+              for (final s in (v['sources'] is List ? v['sources'] as List : const []))
+                if (s is Map && s['url'] is String) (title: '${s['title'] ?? ''}', url: s['url'] as String),
+            ],
+          ),
+        );
+      }
+    } catch (_) {
+      // Sérült tároló: újrakérjük.
+    }
+    return out;
+  }
+
+  Future<void> _save(Map<String, ({DateTime at, NewsExplanation explanation})> all) async {
+    final kept = all.entries.toList()..sort((a, b) => b.value.at.compareTo(a.value.at));
+    try {
+      await (await SharedPreferences.getInstance()).setString(
+        _storeKey,
+        jsonEncode({
+          for (final e in kept.take(maxStored))
+            e.key: {
+              'at': e.value.at.toIso8601String(),
+              'text': e.value.explanation.text,
+              'sources': [
+                for (final s in e.value.explanation.sources) {'title': s.title, 'url': s.url},
+              ],
+            },
+        }),
+      );
+    } catch (_) {
+      // A tárolás hibája nem akadályozza a működést.
+    }
   }
 
   /// Ha a fiókban nincs engedélyezve az oldalmegnyitás (400), nélküle kérjük újra.

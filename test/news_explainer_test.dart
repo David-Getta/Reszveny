@@ -132,4 +132,48 @@ void main() {
     await tester.pumpAndSettle();
     expect(calls, 2);
   });
+
+  test('explanations are kept on the device for a week, so a restart does not ask again', () async {
+    var calls = 0;
+    final client = MockClient((req) async {
+      calls++;
+      return http.Response(
+        jsonEncode({
+          'stop_reason': 'end_turn',
+          'content': [
+            {
+              'type': 'text',
+              'text': 'Explained $calls.',
+              'citations': [
+                {'url': 'https://www.reuters.com/a', 'title': 'Reuters'},
+              ],
+            },
+          ],
+        }),
+        200,
+        headers: {'content-type': 'application/json; charset=utf-8'},
+      );
+    });
+    const config = AppConfig(backendUrl: 'https://api.test');
+    final news = WatchedNews(
+      symbol: 'NVDA',
+      item: NewsItem(headline: 'H', url: 'https://n/1', publishedAt: DateTime.utc(2026, 10, 15)),
+    );
+    var now = DateTime(2026, 10, 18, 9);
+    NewsExplainer make() => NewsExplainer(config: config, client: client, clock: () => now);
+
+    final first = await make().explain(news, language: 'Hungarian');
+    expect(first.text, 'Explained 1.');
+    // Új példány (újraindítás): a tárolt magyarázat jön, forrással együtt.
+    final again = await make().explain(news, language: 'Hungarian');
+    expect(again.text, 'Explained 1.');
+    expect(again.sources.single.url, 'https://www.reuters.com/a');
+    expect(calls, 1);
+    // Más nyelven külön kérés.
+    await make().explain(news, language: 'English');
+    expect(calls, 2);
+    // Egy hét után lejár.
+    now = now.add(const Duration(days: 8));
+    expect((await make().explain(news, language: 'Hungarian')).text, 'Explained 3.');
+  });
 }
