@@ -4350,6 +4350,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Opinion'**
   String get sourceOpinion;
+
+  /// Button on the earnings card of a stock (and the title of the sheet it opens): asks the AI to summarize the most recent quarterly results.
+  ///
+  /// In en, this message translates to:
+  /// **'What was in the latest report?'**
+  String get earningsSummaryButton;
+
+  /// Small note under the AI summary of the latest quarterly results.
+  ///
+  /// In en, this message translates to:
+  /// **'AI summary of the company\'s results announcement and the press coverage it finds on the web. Not investment advice. Uses your daily question allowance, not an analysis.'**
+  String get earningsSummaryNote;
 }
 
 class _AppLocalizationsDelegate

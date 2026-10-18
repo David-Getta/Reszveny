@@ -668,5 +668,7 @@
   "sourceOfficial": "Rasmi",
   "sourcePressRelease": "Kenyataan media",
   "sourceMajorNews": "Media utama",
-  "sourceOpinion": "Pendapat"
+  "sourceOpinion": "Pendapat",
+  "earningsSummaryButton": "Apakah isi laporan terkini?",
+  "earningsSummaryNote": "Ringkasan AI tentang pengumuman keputusan syarikat dan liputan media yang ditemuinya di web. Bukan nasihat pelaburan. Menggunakan had soalan harian anda, bukan analisis."
 }

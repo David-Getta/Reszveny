@@ -2508,4 +2508,11 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Xalaat';
+
+  @override
+  String get earningsSummaryButton => 'Lan moo nekkoon ci rapoor bu mujj bi?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Gàttal bu AI defar ci yégle njureefu sosete bi ak li jaaynde yi bind ci, mu gis ko ci web bi. Du ndigal ci dugal xaalis. Dafay jëfandikoo sa limu laaj yu bés bu nekk, du xayma.';
 }

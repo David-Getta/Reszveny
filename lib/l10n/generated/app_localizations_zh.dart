@@ -2400,6 +2400,13 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get sourceOpinion => '观点';
+
+  @override
+  String get earningsSummaryButton => '最新财报说了什么？';
+
+  @override
+  String get earningsSummaryNote =>
+      'AI 汇总公司的业绩公告以及在网上找到的媒体报道。不构成投资建议。占用每日提问次数，不消耗分析次数。';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -4796,4 +4803,11 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get sourceOpinion => '觀點';
+
+  @override
+  String get earningsSummaryButton => '最新業績有甚麼內容？';
+
+  @override
+  String get earningsSummaryNote =>
+      'AI 概括公司的業績公告，以及在網上找到的傳媒報道。並不構成投資建議。佔用每日提問次數，不消耗分析次數。';
 }

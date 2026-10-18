@@ -2582,4 +2582,11 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Мнение';
+
+  @override
+  String get earningsSummaryButton => 'Что было в последнем отчёте?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Краткое изложение от ИИ: сообщение компании о результатах и публикации в прессе, которые он находит в интернете. Не является инвестиционной рекомендацией. Расходуется дневной лимит вопросов, а не анализ.';
 }

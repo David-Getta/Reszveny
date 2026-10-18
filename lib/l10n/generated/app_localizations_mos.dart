@@ -2499,4 +2499,12 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Tagsgo';
+
+  @override
+  String get earningsSummaryButton =>
+      'Bõe n da be kibar-sebr sẽn yaa pʋgdẽ wã pʋgẽ?';
+
+  @override
+  String get earningsSummaryNote =>
+      'AI koe-bõonga kompaanyã ligd-yɛl kibarã la kibar-tʋʋmdbã sẽn gʋls a zugu, a sẽn yã internet zugã. Pa sagls ligd kẽesg wɛɛngẽ ye. A tũuda f daar fãa sokr sõorã, pa vẽenegr ye.';
 }

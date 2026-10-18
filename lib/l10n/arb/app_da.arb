@@ -668,5 +668,7 @@
   "sourceOfficial": "Officiel",
   "sourcePressRelease": "Pressemeddelelse",
   "sourceMajorNews": "Stort medie",
-  "sourceOpinion": "Mening"
+  "sourceOpinion": "Mening",
+  "earningsSummaryButton": "Hvad stod der i det seneste regnskab?",
+  "earningsSummaryNote": "AI-resumé af selskabets regnskabsmeddelelse og den presseomtale, den finder på nettet. Det er ikke investeringsrådgivning. Det bruger af din daglige spørgsmålskvote, ikke en analyse."
 }

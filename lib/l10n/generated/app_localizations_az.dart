@@ -2515,4 +2515,11 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Rəy';
+
+  @override
+  String get earningsSummaryButton => 'Son hesabatda nə var idi?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Şirkətin nəticələr açıqlamasının və internetdə tapdığı mətbuat xəbərlərinin AI xülasəsi. İnvestisiya məsləhəti deyil. Gündəlik sual limitinizdən istifadə edir, təhlil sərf etmir.';
 }

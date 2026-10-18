@@ -668,5 +668,7 @@
   "sourceOfficial": "Oficjalne",
   "sourcePressRelease": "Komunikat",
   "sourceMajorNews": "Duże medium",
-  "sourceOpinion": "Opinia"
+  "sourceOpinion": "Opinia",
+  "earningsSummaryButton": "Co było w ostatnim raporcie?",
+  "earningsSummaryNote": "Podsumowanie AI komunikatu spółki o wynikach i doniesień prasowych, które znajduje w sieci. Nie stanowi porady inwestycyjnej. Korzysta z dziennego limitu pytań, nie zużywa analizy."
 }

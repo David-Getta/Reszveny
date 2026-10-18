@@ -2516,4 +2516,11 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Pamadegan';
+
+  @override
+  String get earningsSummaryButton => 'Naon eusi laporan panganyarna?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Ringkesan AI ngeunaan pengumuman hasil pausahaan jeung liputan média anu kapanggih di wéb. Lain naséhat investasi. Nganggo wates patarosan sapopoé anjeun, sanés analisis.';
 }

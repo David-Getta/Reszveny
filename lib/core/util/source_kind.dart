@@ -47,5 +47,10 @@ SourceKind? sourceKindOf(String url) {
   if (any(_pressRelease)) return SourceKind.pressRelease;
   if (any(_majorNews)) return SourceKind.majorNews;
   if (any(_opinion)) return SourceKind.opinion;
+  // Ismeretlen webhelyen a cég saját oldalai az útvonalról: befektetői oldal,
+  // illetve sajtószoba (pl. apple.com/newsroom).
+  final path = uri!.path.toLowerCase();
+  if (RegExp(r'^/(investors?|investor-relations)(/|$)').hasMatch(path)) return SourceKind.official;
+  if (RegExp(r'^/(newsroom|press-releases?|pressroom)(/|$)').hasMatch(path)) return SourceKind.pressRelease;
   return null;
 }

@@ -2517,4 +2517,11 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Pendapat';
+
+  @override
+  String get earningsSummaryButton => 'Apakah isi laporan terkini?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Ringkasan AI tentang pengumuman keputusan syarikat dan liputan media yang ditemuinya di web. Bukan nasihat pelaburan. Menggunakan had soalan harian anda, bukan analisis.';
 }

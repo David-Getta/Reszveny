@@ -2531,4 +2531,11 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Kapanunotan';
+
+  @override
+  String get earningsSummaryButton => 'Ania ti linaon ti kabaruan a report?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Pakabuklan ti AI iti pakaammo ti resulta ti kompania ken dagiti damag maipapan iti daytoy a nasarakanna iti web. Saan a balakad iti panagpuonan. Agusar daytoy iti inaldaw a limitasion dagiti saludsod-mo, saan nga iti panaganalisa.';
 }

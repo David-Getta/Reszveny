@@ -2513,4 +2513,11 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Mwĩciria';
+
+  @override
+  String get earningsSummaryButton => 'Nĩ kĩĩ kĩarĩ ripoti-inĩ ya kũrigĩrĩria?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Ũhoro mũkuhĩ wa AI wa kũmenyithia maumĩrĩra ma kampuni na ũhoro wa ngathiti ũrĩa wonaga internet-inĩ. Ti ũtaaro wa investment. Ĩhũthagĩra mũhaka wa ciũria ciaku cia o mũthenya, ti ũthuthuria.';
 }

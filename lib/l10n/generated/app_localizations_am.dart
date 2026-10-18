@@ -2480,4 +2480,11 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'አስተያየት';
+
+  @override
+  String get earningsSummaryButton => 'በመጨረሻው ሪፖርት ውስጥ ምን ነበር?';
+
+  @override
+  String get earningsSummaryNote =>
+      'የኩባንያው የውጤት ማስታወቂያ እና በድር ላይ የሚያገኘው የሚዲያ ዘገባ የAI ማጠቃለያ። የኢንቨስትመንት ምክር አይደለም። ከዕለታዊ የጥያቄ ገደብዎ ይቆጠራል እንጂ ትንተና አይጠቀምም።';
 }

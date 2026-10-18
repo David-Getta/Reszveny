@@ -2518,4 +2518,11 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Temiandu';
+
+  @override
+  String get earningsSummaryButton => 'Mbaʼépa oĩ pe marandu pahaitégui?';
+
+  @override
+  String get earningsSummaryNote =>
+      'AI ombyky pe empresa resultado ñemomarandu ha umi kuatiañeʼẽ marandu otopáva ñandutípe. Ndahaʼéi ñemoñeʼẽ inversión rehegua. Oipuru ne porandu papapy ára ha ára guarã, ndaha’éi jehesa’ỹijo.';
 }

@@ -2525,4 +2525,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Meinung';
+
+  @override
+  String get earningsSummaryButton => 'Was stand im letzten Bericht?';
+
+  @override
+  String get earningsSummaryNote =>
+      'KI-Zusammenfassung der Ergebnismitteilung des Unternehmens und der Presseberichte, die sie im Web findet. Keine Anlageberatung. Zählt zu deinem täglichen Fragenkontingent, nicht als Analyse.';
 }

@@ -2509,4 +2509,11 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'دیدگاه';
+
+  @override
+  String get earningsSummaryButton => 'در آخرین گزارش چه بود؟';
+
+  @override
+  String get earningsSummaryNote =>
+      'خلاصهٔ هوش مصنوعی از اطلاعیهٔ نتایج شرکت و پوشش رسانه‌ای که در وب پیدا می‌کند. توصیه سرمایه‌گذاری نیست. از سهمیهٔ روزانهٔ پرسش‌های شما کم می‌شود، نه از تحلیل‌ها.';
 }

@@ -2515,4 +2515,11 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'كۆز قاراش';
+
+  @override
+  String get earningsSummaryButton => 'ئەڭ يېڭى دوكلاتتا نېمىلەر بار ئىدى؟';
+
+  @override
+  String get earningsSummaryNote =>
+      'شىركەتنىڭ نەتىجە ئېلانى ۋە توردىن تاپقان ئاخبارات خەۋەرلىرىنىڭ AI قىسقىچە مەزمۇنى. مەبلەغ سېلىش تەۋسىيەسى ئەمەس. كۈندىلىك سوئال چېكىڭىزدىن سەرپ بولىدۇ، تەھلىل ئەمەس.';
 }

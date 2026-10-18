@@ -2516,4 +2516,11 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Susu';
+
+  @override
+  String get earningsSummaryButton => 'Nu kae nɔ nyatakaka mamlɛtɔ la me?';
+
+  @override
+  String get earningsSummaryNote =>
+      'AI ƒe kpuie ŋlɔ le dɔwɔƒea ƒe viɖe ŋuti gbeƒãɖeɖe kple nyadzɔdzɔŋlɔlawo ƒe nyatakaka siwo wòkpɔ le internet dzi ŋu. Menye aɖaŋuɖoɖo le gadede nu ŋu o. Etsɔna tso wò gbesiagbe nyabiasewo ƒe seɖoƒe me, mezãa dzodzro aɖeke o.';
 }

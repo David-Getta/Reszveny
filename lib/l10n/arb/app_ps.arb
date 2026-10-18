@@ -668,5 +668,7 @@
   "sourceOfficial": "رسمي",
   "sourcePressRelease": "مطبوعاتي اعلامیه",
   "sourceMajorNews": "لوی رسنۍ",
-  "sourceOpinion": "نظر"
+  "sourceOpinion": "نظر",
+  "earningsSummaryButton": "په وروستي راپور کې څه وو؟",
+  "earningsSummaryNote": "د شرکت د پایلو د اعلان او هغو رسنیزو خبرونو د AI لنډیز چې په وېب کې یې مومي. د پانګونې مشوره نه ده. ستاسو د ورځنیو پوښتنو له حد څخه کمېږي، شننه نه لګوي."
 }

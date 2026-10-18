@@ -2554,4 +2554,11 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Viedoklis';
+
+  @override
+  String get earningsSummaryButton => 'Kas bija jaunākajā pārskatā?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Mākslīgā intelekta kopsavilkums par uzņēmuma rezultātu paziņojumu un preses publikācijām, ko tas atrod tīmeklī. Tā nav ieguldījumu konsultācija. Izmanto jūsu dienas jautājumu limitu, nevis analīzi.';
 }

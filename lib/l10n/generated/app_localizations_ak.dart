@@ -2512,4 +2512,11 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Adwene';
+
+  @override
+  String get earningsSummaryButton => 'Dɛn na ɛwɔ amanneɛbɔ a ɛtwa toɔ no mu?';
+
+  @override
+  String get earningsSummaryNote =>
+      'AI tiawa a ɛfa adwumakuo no mfaso ho amanneɛbɔ ne nsɛm a nsɛmmɔnenafoɔ akyerɛw wɔ ho a ɛhu wɔ intanɛt so. Ɛnyɛ sikahyɛmu ho afotu. Ɛfiri wo nsɛmmisa a ɛsɛ da biara mu, ɛnni nhwehwɛmu biara.';
 }

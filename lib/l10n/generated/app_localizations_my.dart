@@ -2504,4 +2504,11 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'အမြင်';
+
+  @override
+  String get earningsSummaryButton => 'နောက်ဆုံးအစီရင်ခံစာတွင် ဘာပါခဲ့သလဲ။';
+
+  @override
+  String get earningsSummaryNote =>
+      'ကုမ္ပဏီ၏ ရလဒ်ထုတ်ပြန်ချက်နှင့် ဝဘ်ပေါ်တွင် တွေ့ရှိသော သတင်းဖော်ပြချက်များကို AI ဖြင့် အနှစ်ချုပ်ထားခြင်း။ ရင်းနှီးမြှုပ်နှံမှု အကြံပြုချက် မဟုတ်ပါ။ နေ့စဉ် မေးခွန်းကန့်သတ်ချက်မှ သုံးပြီး ခွဲခြမ်းစိတ်ဖြာမှု မသုံးပါ။';
 }

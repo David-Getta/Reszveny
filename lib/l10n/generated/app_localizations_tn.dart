@@ -2530,4 +2530,12 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Kakanyo';
+
+  @override
+  String get earningsSummaryButton =>
+      'Go ne go na le eng mo pegong ya bosheng?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Tshobokanyo ya AI ya kitsiso ya dipoelo tsa khampani le dikgang tsa bobegaditaba tse e di bonang mo inthaneteng. Ga se kgakololo ya peeletso. E dirisa tekanyetso ya gago ya dipotso ya letsatsi le letsatsi, e seng tshekatsheko.';
 }

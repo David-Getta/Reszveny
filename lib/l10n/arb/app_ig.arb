@@ -668,5 +668,7 @@
   "sourceOfficial": "Nke ikike",
   "sourcePressRelease": "Ọkwa",
   "sourceMajorNews": "Mgbasaozi ukwu",
-  "sourceOpinion": "Echiche"
+  "sourceOpinion": "Echiche",
+  "earningsSummaryButton": "Gịnị dị na akụkọ kacha ọhụrụ?",
+  "earningsSummaryNote": "Nchịkọta AI nke ọkwa nsonaazụ ụlọ ọrụ ahụ na akụkọ ndị nta akụkọ ọ chọtara n'ịntanetị. Ọ bụghị ndụmọdụ itinye ego. Ọ na-eji oke ajụjụ gị kwa ụbọchị, ọ bụghị nyocha."
 }

@@ -668,5 +668,7 @@
   "sourceOfficial": "Okusemthethweni",
   "sourcePressRelease": "Isitatimende",
   "sourceMajorNews": "Abezindaba abakhulu",
-  "sourceOpinion": "Umbono"
+  "sourceOpinion": "Umbono",
+  "earningsSummaryButton": "Bekukhona ini embikweni wakamuva?",
+  "earningsSummaryNote": "Isifinyezo se-AI sesimemezelo semiphumela yenkampani kanye nezindaba zabezindaba esizithola kuwebhu. Akuyona iseluleko sokutshala imali. Sisebenzisa umkhawulo wakho wemibuzo wansuku zonke, hhayi ukuhlaziya."
 }

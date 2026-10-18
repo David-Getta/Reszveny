@@ -2483,4 +2483,11 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'ความเห็น';
+
+  @override
+  String get earningsSummaryButton => 'รายงานล่าสุดมีอะไรบ้าง';
+
+  @override
+  String get earningsSummaryNote =>
+      'สรุปโดย AI จากการประกาศผลประกอบการของบริษัทและข่าวในสื่อที่ค้นพบบนเว็บ ไม่ใช่คำแนะนำในการลงทุน ใช้โควตาคำถามรายวันของคุณ ไม่ใช้สิทธิ์การวิเคราะห์';
 }

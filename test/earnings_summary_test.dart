@@ -1,0 +1,159 @@
+import 'dart:convert';
+
+import 'package:flutter/material.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:http/http.dart' as http;
+import 'package:http/testing.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:reszveny/app.dart';
+import 'package:reszveny/app_services.dart';
+import 'package:reszveny/core/app_preferences.dart';
+import 'package:reszveny/core/config/app_config.dart';
+import 'package:reszveny/core/desktop/desktop_integration.dart';
+import 'package:reszveny/core/locale_controller.dart';
+import 'package:reszveny/core/models/analysis_extras.dart';
+import 'package:reszveny/features/analysis/claude_stock_analyst.dart';
+import 'package:reszveny/features/analysis/report_store.dart';
+import 'package:reszveny/features/billing/entitlement_service.dart';
+import 'package:reszveny/features/capture/capture_service.dart';
+import 'package:reszveny/features/market_data/demo_market_data_provider.dart';
+import 'package:reszveny/features/market_data/market_data_provider.dart';
+import 'package:reszveny/features/news/earnings_summarizer.dart';
+import 'package:reszveny/features/recognition/stock_recognizer.dart';
+
+import 'app_widget_test.dart' show FakeNotifier;
+
+class _NoRecognizer implements StockRecognizer {
+  @override
+  String get name => 'test';
+
+  @override
+  Future<RecognitionResult> recognize(CapturedImage image, {String outputLanguage = 'English'}) async =>
+      const RecognitionResult(candidates: []);
+}
+
+/// Az utolsó ismert negyedév fél éve zárult: nincs friss jelentés.
+class _OldEarnings extends DemoMarketDataProvider {
+  _OldEarnings() : super(latency: Duration.zero);
+
+  @override
+  Future<EarningsOverview> earnings(String symbol) async => EarningsOverview(
+    history: [EarningsSurprise(period: DateTime.now().subtract(const Duration(days: 200)), actual: 1.2, estimate: 1.1)],
+  );
+}
+
+http.Response _answer(String text, {String url = 'https://investor.apple.com/q3', String title = 'Apple Q3 results'}) =>
+    http.Response(
+      jsonEncode({
+        'stop_reason': 'end_turn',
+        'content': [
+          {
+            'type': 'text',
+            'text': text,
+            'citations': [
+              {'type': 'web_search_result_location', 'url': url, 'title': title},
+            ],
+          },
+        ],
+      }),
+      200,
+      headers: {'content-type': 'application/json; charset=utf-8'},
+    );
+
+const _config = AppConfig(backendUrl: 'https://api.test');
+
+AppServices _services(MarketDataProvider market, http.Client client) => AppServices(
+  alertNotifier: FakeNotifier(),
+  config: _config,
+  capture: CaptureService(),
+  recognizer: _NoRecognizer(),
+  marketData: market,
+  locale: LocaleController(),
+  preferences: AppPreferences(),
+  desktop: DesktopIntegration(),
+  reports: ReportStore(analyst: ClaudeStockAnalyst(config: _config)),
+  entitlements: EntitlementService(),
+  earningsSummarizer: EarningsSummarizer(config: _config, client: client),
+);
+
+Future<void> _openAapl(WidgetTester tester, AppServices services) async {
+  tester.view.physicalSize = const Size(1200, 9000);
+  tester.view.devicePixelRatio = 1;
+  addTearDown(tester.view.reset);
+  await tester.pumpWidget(WhatStockApp(services: services));
+  await tester.pumpAndSettle();
+  await tester.enterText(find.byType(TextField).first, 'AAPL');
+  await tester.testTextInput.receiveAction(TextInputAction.search);
+  await tester.pumpAndSettle();
+}
+
+void main() {
+  setUp(() => SharedPreferences.setMockInitialValues({}));
+
+  test('the request: web search and page reading, the stock, the language and the last quarter', () {
+    final body = EarningsSummarizer.requestBody(
+      symbol: 'AAPL',
+      companyName: 'Apple Inc.',
+      language: 'Hungarian',
+      today: DateTime(2026, 10, 18),
+      lastPeriod: DateTime(2026, 9, 30),
+    );
+    final tools = body['tools'] as List;
+    expect(tools.map((t) => (t as Map)['name']), ['web_search', 'web_fetch']);
+    expect((tools.first as Map)['max_uses'], EarningsSummarizer.maxSearches);
+    final user = ((body['messages'] as List).single as Map)['content'] as String;
+    expect(user, contains('Language: Hungarian'));
+    expect(user, contains('Stock: Apple Inc. (AAPL)'));
+    expect(user, contains('Last quarter in our data ended: 2026-09-30'));
+    final system = ((body['system'] as List).single as Map)['text'] as String;
+    expect(system, contains('press release'));
+    expect(system, contains('Never invent facts'));
+  });
+
+  test('summaries are kept per stock, language and quarter, also across restarts', () async {
+    var calls = 0;
+    final client = MockClient((req) async => _answer('Summary ${++calls}.'));
+    EarningsSummarizer make() => EarningsSummarizer(config: _config, client: client);
+    Future<String> ask(String language, DateTime period) async => (await make().summarize(
+      symbol: 'AAPL',
+      companyName: 'Apple Inc.',
+      language: language,
+      lastPeriod: period,
+    )).text;
+
+    expect(await ask('English', DateTime(2026, 6, 30)), 'Summary 1.');
+    expect(await ask('English', DateTime(2026, 6, 30)), 'Summary 1.');
+    expect(calls, 1);
+    // Új negyedév vagy más nyelv: új kérés.
+    expect(await ask('English', DateTime(2026, 9, 30)), 'Summary 2.');
+    expect(await ask('Hungarian', DateTime(2026, 9, 30)), 'Summary 3.');
+  });
+
+  testWidgets('"What was in the latest report?" on the earnings card: a summary with its sources', (tester) async {
+    var calls = 0;
+    final client = MockClient((req) async {
+      calls++;
+      expect((req.body), contains('Apple Inc. (AAPL)'));
+      return _answer('Apple beat expectations: revenue grew 8%.');
+    });
+    await _openAapl(tester, _services(DemoMarketDataProvider(latency: Duration.zero), client));
+    final button = find.byKey(const ValueKey('earnings-summary'));
+    expect(button, findsOneWidget);
+    expect(find.text('What was in the latest report?'), findsOneWidget);
+    await tester.ensureVisible(button);
+    await tester.tap(button);
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('earnings-summary-sheet')), findsOneWidget);
+    expect(find.text('Apple beat expectations: revenue grew 8%.'), findsOneWidget);
+    expect(find.text('Apple Q3 results · investor.apple.com'), findsOneWidget);
+    // Az IR-oldal hivatalos forrás.
+    expect(find.byKey(const ValueKey('source-tag-official')), findsOneWidget);
+    expect(calls, 1);
+  });
+
+  testWidgets('no recent quarter: no summary button', (tester) async {
+    await _openAapl(tester, _services(_OldEarnings(), MockClient((_) async => _answer('x'))));
+    expect(find.byKey(const ValueKey('earnings-card')), findsOneWidget);
+    expect(find.byKey(const ValueKey('earnings-summary')), findsNothing);
+  });
+}

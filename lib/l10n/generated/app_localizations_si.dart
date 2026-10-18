@@ -2510,4 +2510,11 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'මතය';
+
+  @override
+  String get earningsSummaryButton => 'නවතම වාර්තාවේ තිබුණේ මොනවාද?';
+
+  @override
+  String get earningsSummaryNote =>
+      'සමාගමේ ප්‍රතිඵල නිවේදනය සහ වෙබයේ සොයාගන්නා මාධ්‍ය වාර්තා පිළිබඳ AI සාරාංශයකි. එය ආයෝජන උපදෙසක් නොවේ. මෙය ඔබේ දෛනික ප්‍රශ්න සීමාවෙන් යයි, විශ්ලේෂණයක් භාවිත නොකරයි.';
 }

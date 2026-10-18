@@ -1,15 +1,13 @@
-import 'dart:convert';
-
 import 'package:http/http.dart' as http;
-import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../core/config/app_config.dart';
 import '../../core/errors.dart';
 import 'daily_brief.dart' show AskSource, askWithSources;
+import 'research_store.dart';
 import 'watch_news.dart';
 
 /// A magyarázat és a felhasznált források.
-typedef NewsExplanation = ({String text, List<AskSource> sources});
+typedef NewsExplanation = ResearchResult;
 
 /// „Mit jelent ez?”: néhány mondatos AI-magyarázat egy hírről – mi történt, és
 /// mit jelenthet a részvényre. Röviden utánanéz a weben (a cégek kapcsolata, a
@@ -20,11 +18,10 @@ typedef NewsExplanation = ({String text, List<AskSource> sources});
 class NewsExplainer {
   NewsExplainer({required this.config, http.Client? client, DateTime Function()? clock})
     : _client = client ?? http.Client(),
-      _clock = clock ?? DateTime.now;
+      _store = ResearchStore('news_explanations', keepFor: keepFor, maxStored: maxStored, clock: clock);
 
-  final DateTime Function() _clock;
+  final ResearchStore _store;
 
-  static const _storeKey = 'news_explanations';
   static const keepFor = Duration(days: 7);
   static const maxStored = 60;
 
@@ -89,64 +86,8 @@ Rules:
   }
 
   /// A készüléken tárolt magyarázat, ha friss; különben lekérés és mentés.
-  Future<NewsExplanation> _storedOrAsk(String key, WatchedNews n, String language) async {
-    final stored = await _load();
-    final hit = stored[key];
-    if (hit != null) return hit.explanation;
-    final e = await _ask(requestBody(n, language: language, model: config.anthropicModel));
-    await _save({...stored, key: (at: _clock(), explanation: e)});
-    return e;
-  }
-
-  Future<Map<String, ({DateTime at, NewsExplanation explanation})>> _load() async {
-    final out = <String, ({DateTime at, NewsExplanation explanation})>{};
-    try {
-      final raw = (await SharedPreferences.getInstance()).getString(_storeKey);
-      final j = raw == null ? null : jsonDecode(raw);
-      if (j is! Map) return out;
-      final cutoff = _clock().subtract(keepFor);
-      for (final e in j.entries) {
-        final v = e.value;
-        if (v is! Map || v['text'] is! String) continue;
-        final at = DateTime.tryParse('${v['at']}');
-        if (at == null || at.isBefore(cutoff)) continue;
-        out['${e.key}'] = (
-          at: at,
-          explanation: (
-            text: v['text'] as String,
-            sources: [
-              for (final s in (v['sources'] is List ? v['sources'] as List : const []))
-                if (s is Map && s['url'] is String) (title: '${s['title'] ?? ''}', url: s['url'] as String),
-            ],
-          ),
-        );
-      }
-    } catch (_) {
-      // Sérült tároló: újrakérjük.
-    }
-    return out;
-  }
-
-  Future<void> _save(Map<String, ({DateTime at, NewsExplanation explanation})> all) async {
-    final kept = all.entries.toList()..sort((a, b) => b.value.at.compareTo(a.value.at));
-    try {
-      await (await SharedPreferences.getInstance()).setString(
-        _storeKey,
-        jsonEncode({
-          for (final e in kept.take(maxStored))
-            e.key: {
-              'at': e.value.at.toIso8601String(),
-              'text': e.value.explanation.text,
-              'sources': [
-                for (final s in e.value.explanation.sources) {'title': s.title, 'url': s.url},
-              ],
-            },
-        }),
-      );
-    } catch (_) {
-      // A tárolás hibája nem akadályozza a működést.
-    }
-  }
+  Future<NewsExplanation> _storedOrAsk(String key, WatchedNews n, String language) =>
+      _store.get(key, () => _ask(requestBody(n, language: language, model: config.anthropicModel)));
 
   /// Ha a fiókban nincs engedélyezve az oldalmegnyitás (400), nélküle kérjük újra.
   Future<NewsExplanation> _ask(Map<String, dynamic> body) async {

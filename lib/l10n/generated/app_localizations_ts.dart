@@ -2529,4 +2529,12 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Mavonelo';
+
+  @override
+  String get earningsSummaryButton =>
+      'A ku ri na yini eka xiviko xa sweswinyana?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Nkomiso wa AI wa xitiviso xa mbuyelo wa khamphani ni mahungu ya vuhaxi lawa yi ma kumaka ewebeni. A hi ndzayo ya vuvekisi. Yi tirhisa ndzelekano wa wena wa swivutiso wa siku na siku, ku nga ri nxopaxopo.';
 }

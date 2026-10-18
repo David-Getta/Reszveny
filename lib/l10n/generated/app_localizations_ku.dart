@@ -2514,4 +2514,11 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Nêrîn';
+
+  @override
+  String get earningsSummaryButton => 'Di rapora dawî de çi hebû?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Kurteya AI ya ragihandina encamên şirketê û nûçeyên çapemeniyê yên ku li ser webê dibîne. Ne şîreta veberhênanê ye. Ji sînorê pirsên te yê rojane tê birîn, ne analîzek.';
 }

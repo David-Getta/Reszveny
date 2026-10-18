@@ -2511,4 +2511,11 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Фикер';
+
+  @override
+  String get earningsSummaryButton => 'Соңгы хисапта нәрсә бар иде?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Компаниянең нәтиҗәләр турында белдерүенең һәм интернетта тапкан матбугат язмаларының AI кыскача эчтәлеге. Инвестиция киңәше түгел. Көндәлек сораулар чигегездән тотыла, анализ түгел.';
 }

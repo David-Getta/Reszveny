@@ -2510,4 +2510,11 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'ମତାମତ';
+
+  @override
+  String get earningsSummaryButton => 'ସର୍ବଶେଷ ରିପୋର୍ଟରେ କ’ଣ ଥିଲା?';
+
+  @override
+  String get earningsSummaryNote =>
+      'କମ୍ପାନୀର ଫଳାଫଳ ଘୋଷଣା ଏବଂ ୱେବରେ ମିଳୁଥିବା ଗଣମାଧ୍ୟମ ଖବରର AI ସାରାଂଶ। ଏହା ନିବେଶ ପରାମର୍ଶ ନୁହେଁ। ଏହା ଆପଣଙ୍କ ଦୈନିକ ପ୍ରଶ୍ନ ସୀମାରୁ ଯାଏ, କୌଣସି ବିଶ୍ଳେଷଣ ଖର୍ଚ୍ଚ ହୁଏ ନାହିଁ।';
 }

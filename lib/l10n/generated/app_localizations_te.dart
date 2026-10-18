@@ -2518,4 +2518,11 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'అభిప్రాయం';
+
+  @override
+  String get earningsSummaryButton => 'తాజా నివేదికలో ఏముంది?';
+
+  @override
+  String get earningsSummaryNote =>
+      'కంపెనీ ఫలితాల ప్రకటన, వెబ్‌లో దొరికే మీడియా కథనాల AI సారాంశం. ఇది పెట్టుబడి సలహా కాదు. ఇది మీ రోజువారీ ప్రశ్నల పరిమితి నుంచి వెళ్తుంది, ఎలాంటి విశ్లేషణనూ వాడదు.';
 }

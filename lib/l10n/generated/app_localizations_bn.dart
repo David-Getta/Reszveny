@@ -2511,4 +2511,11 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'মতামত';
+
+  @override
+  String get earningsSummaryButton => 'সর্বশেষ রিপোর্টে কী ছিল?';
+
+  @override
+  String get earningsSummaryNote =>
+      'কোম্পানির ফলাফল ঘোষণা এবং ওয়েবে পাওয়া সংবাদমাধ্যমের প্রতিবেদনের AI সারাংশ। এটি বিনিয়োগ পরামর্শ নয়। এটি আপনার দৈনিক প্রশ্নের সীমা থেকে যায়, কোনো বিশ্লেষণ খরচ হয় না।';
 }

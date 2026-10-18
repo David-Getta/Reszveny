@@ -2530,4 +2530,11 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Hevitra';
+
+  @override
+  String get earningsSummaryButton => 'Inona no tao amin’ny tatitra farany?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Famintinana avy amin’ny AI momba ny fanambaran’ny orinasa ny vokany sy ny lahatsoratry ny mpanao gazety hitany ao amin’ny tranonkala. Tsy torohevitra momba ny fampiasam-bola. Mampiasa ny fetran’ny fanontanianao isan’andro izy, fa tsy famakafakana.';
 }

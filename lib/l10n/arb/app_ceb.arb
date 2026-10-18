@@ -668,5 +668,7 @@
   "sourceOfficial": "Opisyal",
   "sourcePressRelease": "Pahibalo",
   "sourceMajorNews": "Dakong media",
-  "sourceOpinion": "Opinyon"
+  "sourceOpinion": "Opinyon",
+  "earningsSummaryButton": "Unsa ang sulod sa pinakabag-ong report?",
+  "earningsSummaryNote": "Katingbanan sa AI sa pahibalo sa resulta sa kompanya ug sa mga balita bahin niini nga makit-an niini sa web. Dili kini tambag sa pagpamuhunan. Mogamit kini sa imong adlaw-adlaw nga limitasyon sa pangutana, dili sa pagtuki."
 }

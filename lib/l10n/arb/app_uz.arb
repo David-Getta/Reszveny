@@ -668,5 +668,7 @@
   "sourceOfficial": "Rasmiy",
   "sourcePressRelease": "Press-reliz",
   "sourceMajorNews": "Yirik OAV",
-  "sourceOpinion": "Fikr"
+  "sourceOpinion": "Fikr",
+  "earningsSummaryButton": "Soʻnggi hisobotda nima bor edi?",
+  "earningsSummaryNote": "Kompaniyaning natijalar haqidagi eʼloni va internetda topgan matbuot xabarlarining AI xulosasi. Bu investitsiya maslahati emas. Kunlik savollar limitingizdan sarflanadi, tahlil emas."
 }

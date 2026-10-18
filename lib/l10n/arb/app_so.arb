@@ -668,5 +668,7 @@
   "sourceOfficial": "Rasmi",
   "sourcePressRelease": "War-saxaafadeed",
   "sourceMajorNews": "Warbaahin weyn",
-  "sourceOpinion": "Aragti"
+  "sourceOpinion": "Aragti",
+  "earningsSummaryButton": "Maxaa ku jiray warbixintii ugu dambeysay?",
+  "earningsSummaryNote": "Soo koobid AI ah oo ku saabsan ku dhawaaqista natiijooyinka shirkadda iyo warbixinnada warbaahinta ee ay ka hesho shabakadda. Ma aha talo maalgashi. Waxay isticmaashaa xadka su’aalahaaga maalinlaha ah, ma aha falanqayn."
 }

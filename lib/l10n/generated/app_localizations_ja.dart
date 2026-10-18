@@ -2434,4 +2434,11 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get sourceOpinion => '意見';
+
+  @override
+  String get earningsSummaryButton => '最新の決算の内容は？';
+
+  @override
+  String get earningsSummaryNote =>
+      '会社の決算発表と、Web で見つかった報道を AI が要約します。投資助言ではありません。1日の質問回数を使い、分析回数は消費しません。';
 }

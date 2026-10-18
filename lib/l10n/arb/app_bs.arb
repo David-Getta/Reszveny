@@ -668,5 +668,7 @@
   "sourceOfficial": "Zvanično",
   "sourcePressRelease": "Saopćenje",
   "sourceMajorNews": "Veliki medij",
-  "sourceOpinion": "Mišljenje"
+  "sourceOpinion": "Mišljenje",
+  "earningsSummaryButton": "Šta je bilo u posljednjem izvještaju?",
+  "earningsSummaryNote": "Sažetak umjetne inteligencije o objavi rezultata kompanije i medijskim izvještajima koje pronađe na internetu. Nije investicijski savjet. Troši vaše dnevno ograničenje pitanja, ne analizu."
 }

@@ -2514,4 +2514,11 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Үзэл бодол';
+
+  @override
+  String get earningsSummaryButton => 'Сүүлийн тайланд юу байсан бэ?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Компанийн үр дүнгийн мэдэгдэл болон вэбээс олсон хэвлэлийн мэдээний AI хураангуй. Хөрөнгө оруулалтын зөвлөгөө биш. Өдрийн асуултын хязгаараас тань зарцуулна, шинжилгээ биш.';
 }

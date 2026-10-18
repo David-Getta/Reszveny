@@ -2518,4 +2518,11 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Vélemény';
+
+  @override
+  String get earningsSummaryButton => 'Mi volt a legutóbbi gyorsjelentésben?';
+
+  @override
+  String get earningsSummaryNote =>
+      'AI-összefoglaló a cég eredményközleményéből és a weben talált sajtóvisszhangból. Nem befektetési tanács. A napi kérdéskeretből megy, elemzést nem fogyaszt.';
 }

@@ -668,5 +668,7 @@
   "sourceOfficial": "Semmuso",
   "sourcePressRelease": "Kitsiso",
   "sourceMajorNews": "Kgatiso e kgolo",
-  "sourceOpinion": "Kakanyo"
+  "sourceOpinion": "Kakanyo",
+  "earningsSummaryButton": "Go ne go na le eng mo pegong ya bosheng?",
+  "earningsSummaryNote": "Tshobokanyo ya AI ya kitsiso ya dipoelo tsa khampani le dikgang tsa bobegaditaba tse e di bonang mo inthaneteng. Ga se kgakololo ya peeletso. E dirisa tekanyetso ya gago ya dipotso ya letsatsi le letsatsi, e seng tshekatsheko."
 }

@@ -2523,4 +2523,11 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Endowooza';
+
+  @override
+  String get earningsSummaryButton => 'Kiki ekyali mu lipoota esembyeyo?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Mu bufunze okuva mu AI ku birango by\'ebivudde mu kkampuni n\'amawulire g\'empapula g\'esanga ku mukutu. Si magezi ga kusiga nsimbi. Kikozesa kkomo ly’ebibuuzo byo erya buli lunaku, so si kwekenneenya.';
 }

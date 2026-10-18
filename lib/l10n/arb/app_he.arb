@@ -668,5 +668,7 @@
   "sourceOfficial": "רשמי",
   "sourcePressRelease": "הודעה לעיתונות",
   "sourceMajorNews": "תקשורת מובילה",
-  "sourceOpinion": "דעה"
+  "sourceOpinion": "דעה",
+  "earningsSummaryButton": "מה היה בדוח האחרון?",
+  "earningsSummaryNote": "סיכום של AI של הודעת התוצאות של החברה ושל הסיקור התקשורתי שהוא מוצא ברשת. אינו מהווה ייעוץ השקעות. נספר במכסת השאלות היומית שלך, לא כניתוח."
 }

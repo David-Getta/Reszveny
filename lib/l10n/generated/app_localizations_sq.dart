@@ -2519,4 +2519,11 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Opinion';
+
+  @override
+  String get earningsSummaryButton => 'Çfarë kishte në raportin e fundit?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Përmbledhje nga AI e njoftimit të rezultateve të kompanisë dhe e mbulimit në shtyp që gjen në internet. Nuk përbën këshillë investimi. Përdor kufirin tuaj ditor të pyetjeve, jo një analizë.';
 }

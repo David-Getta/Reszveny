@@ -2513,4 +2513,11 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Пікір';
+
+  @override
+  String get earningsSummaryButton => 'Соңғы есепте не болды?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Компанияның нәтижелер туралы хабарламасы мен интернеттен тапқан баспасөз жарияланымдарының AI қорытындысы. Инвестициялық кеңес емес. Күнделікті сұрақтар лимитіңізден жұмсалады, талдау емес.';
 }

@@ -2510,4 +2510,11 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Hakilina';
+
+  @override
+  String get earningsSummaryButton => 'Mun tun bɛ kibaru laban in kɔnɔ?';
+
+  @override
+  String get earningsSummaryNote =>
+      'AI ka kuma surun sosiyete ka tɔnɔ kibaru ni kunnafonidisɛbɛnw ka sɛbɛnni minnu a bɛ sɔrɔ ɛntɛrinɛti kan. Wari donni ladilikan tɛ. A bɛ bɔ i ka don o don ɲininkaliw hakɛ la, a tɛ sɛgɛsɛgɛli si ta.';
 }

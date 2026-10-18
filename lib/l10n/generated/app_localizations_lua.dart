@@ -2520,4 +2520,11 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Meji';
+
+  @override
+  String get earningsSummaryButton => 'Tshivua mu lapolo wa ndekelu ntshinyi?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Diumvuija dikese dia AI dia dimanyisha dia mapeta a kompani ne dia malu adi bijadiki bifunde, adi dipeta ku Internet. Kadiena mibelu ya kuteka mfranga. Bidi bienzeja mukalu wa nkonko yebe ya dituku dionso, kabiyi dikonkonona.';
 }

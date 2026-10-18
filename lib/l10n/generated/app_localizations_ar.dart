@@ -2571,4 +2571,11 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'رأي';
+
+  @override
+  String get earningsSummaryButton => 'ماذا تضمّن أحدث تقرير؟';
+
+  @override
+  String get earningsSummaryNote =>
+      'ملخّص بالذكاء الاصطناعي لإعلان نتائج الشركة والتغطية الصحفية التي يجدها على الويب. لا يُعدّ نصيحة استثمارية. يُحتسب من حدّ الأسئلة اليومي ولا يستهلك تحليلًا.';
 }

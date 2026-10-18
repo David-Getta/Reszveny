@@ -37,6 +37,7 @@ import 'package:reszveny/features/home/quick_bar.dart';
 import 'package:reszveny/features/alerts/price_alert.dart';
 import 'package:reszveny/features/fx/fx_service.dart';
 import 'package:reszveny/features/market_data/demo_market_data_provider.dart';
+import 'package:reszveny/features/news/earnings_summarizer.dart';
 import 'package:reszveny/features/portfolio/portfolio_page.dart';
 import 'package:reszveny/features/portfolio/portfolio_store.dart';
 import 'package:reszveny/features/recognition/stock_recognizer.dart';
@@ -144,6 +145,7 @@ AppServices _services({
   bool store = false,
   CaptureService? capture,
   HoldingsReader? holdingsReader,
+  EarningsSummarizer? earningsSummarizer,
 }) {
   final ent = _entitlements();
   // Backend-módban fiók kártya és jogi linkek; a szerver egy utánzat.
@@ -180,6 +182,7 @@ AppServices _services({
     entitlements: ent,
     billing: DemoBillingService(latency: Duration.zero),
     chat: chat,
+    earningsSummarizer: earningsSummarizer,
   );
 }
 
@@ -1146,6 +1149,50 @@ void main() {
     Scrollable.ensureVisible(tester.element(card), alignment: 0.15);
     await tester.pumpAndSettle();
     await _shot(tester, 'referral_phone_hu');
+  });
+
+  testWidgets('latest earnings report summary (hungarian, phone)', (tester) async {
+    final summarizer = EarningsSummarizer(
+      config: const AppConfig(backendUrl: 'https://api.test'),
+      client: MockClient(
+        (req) async => http.Response(
+          jsonEncode({
+            'stop_reason': 'end_turn',
+            'content': [
+              {
+                'type': 'text',
+                'text':
+                    'Az Apple július 30-án jelentette a júniusi negyedévet. A bevétel 94 milliárd dollár lett '
+                    '(+8%), az egy részvényre jutó eredmény 1,57 dollár, mindkettő a várakozás fölött.\n\n'
+                    '- A szolgáltatások bevétele rekordot döntött.\n'
+                    '- Kínában 4%-kal nőttek az eladások.\n\n'
+                    'A cég a következő negyedévre is növekedést vár. A részvény másnap 2%-ot emelkedett. '
+                    'Érdemes figyelni az iPhone-szezon első heteit.',
+                'citations': [
+                  {
+                    'url': 'https://www.apple.com/newsroom/2026/07/apple-reports-third-quarter-results/',
+                    'title': 'Apple reports third quarter results',
+                  },
+                  {'url': 'https://www.reuters.com/technology/apple-results', 'title': 'Apple beats estimates'},
+                ],
+              },
+            ],
+          }),
+          200,
+          headers: {'content-type': 'application/json; charset=utf-8'},
+        ),
+      ),
+    );
+    await pumpApp(tester, _services(locale: const Locale('hu'), earningsSummarizer: summarizer), const Size(430, 932));
+    await tester.enterText(find.byType(TextField), 'AAPL');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    final button = find.byKey(const ValueKey('earnings-summary'));
+    await tester.scrollUntilVisible(button, 300, scrollable: find.byType(Scrollable).first);
+    await tester.pumpAndSettle();
+    await tester.tap(button);
+    await tester.pumpAndSettle();
+    await _shot(tester, 'earnings_summary_phone_hu');
   });
 
   testWidgets('asking for anonymous statistics on the home screen (hungarian, phone)', (tester) async {

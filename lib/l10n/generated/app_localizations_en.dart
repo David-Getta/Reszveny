@@ -2511,4 +2511,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Opinion';
+
+  @override
+  String get earningsSummaryButton => 'What was in the latest report?';
+
+  @override
+  String get earningsSummaryNote =>
+      'AI summary of the company\'s results announcement and the press coverage it finds on the web. Not investment advice. Uses your daily question allowance, not an analysis.';
 }

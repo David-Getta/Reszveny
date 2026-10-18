@@ -2557,4 +2557,11 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Mišljenje';
+
+  @override
+  String get earningsSummaryButton => 'Što je bilo u posljednjem izvješću?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Sažetak umjetne inteligencije o objavi rezultata tvrtke i medijskim napisima koje pronađe na internetu. Nije investicijski savjet. Troši vaše dnevno ograničenje pitanja, ne analizu.';
 }

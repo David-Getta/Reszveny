@@ -2486,4 +2486,11 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'ຄຳເຫັນ';
+
+  @override
+  String get earningsSummaryButton => 'ລາຍງານລ່າສຸດມີຫຍັງແດ່?';
+
+  @override
+  String get earningsSummaryNote =>
+      'ບົດສະຫຼຸບຈາກ AI ກ່ຽວກັບການປະກາດຜົນປະກອບການຂອງບໍລິສັດ ແລະ ຂ່າວໃນສື່ທີ່ມັນພົບໃນເວັບ. ບໍ່ແມ່ນຄຳແນະນຳການລົງທຶນ. ໃຊ້ໂຄຕາຄຳຖາມປະຈຳວັນຂອງທ່ານ ບໍ່ແມ່ນການວິເຄາະ.';
 }

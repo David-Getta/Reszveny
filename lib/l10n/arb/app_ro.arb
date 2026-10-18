@@ -668,5 +668,7 @@
   "sourceOfficial": "Oficial",
   "sourcePressRelease": "Comunicat",
   "sourceMajorNews": "Publicație majoră",
-  "sourceOpinion": "Opinie"
+  "sourceOpinion": "Opinie",
+  "earningsSummaryButton": "Ce a fost în cel mai recent raport?",
+  "earningsSummaryNote": "Rezumat generat de AI al anunțului de rezultate al companiei și al relatărilor din presă pe care le găsește pe web. Nu reprezintă un sfat de investiții. Folosește limita ta zilnică de întrebări, nu o analiză."
 }

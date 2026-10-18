@@ -668,5 +668,7 @@
   "sourceOfficial": "නිල",
   "sourcePressRelease": "මාධ්‍ය නිවේදනය",
   "sourceMajorNews": "ප්‍රධාන මාධ්‍ය",
-  "sourceOpinion": "මතය"
+  "sourceOpinion": "මතය",
+  "earningsSummaryButton": "නවතම වාර්තාවේ තිබුණේ මොනවාද?",
+  "earningsSummaryNote": "සමාගමේ ප්‍රතිඵල නිවේදනය සහ වෙබයේ සොයාගන්නා මාධ්‍ය වාර්තා පිළිබඳ AI සාරාංශයකි. එය ආයෝජන උපදෙසක් නොවේ. මෙය ඔබේ දෛනික ප්‍රශ්න සීමාවෙන් යයි, විශ්ලේෂණයක් භාවිත නොකරයි."
 }

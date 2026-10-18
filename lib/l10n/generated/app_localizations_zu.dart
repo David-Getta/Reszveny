@@ -2522,4 +2522,11 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Umbono';
+
+  @override
+  String get earningsSummaryButton => 'Bekukhona ini embikweni wakamuva?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Isifinyezo se-AI sesimemezelo semiphumela yenkampani kanye nezindaba zabezindaba esizithola kuwebhu. Akuyona iseluleko sokutshala imali. Sisebenzisa umkhawulo wakho wemibuzo wansuku zonke, hhayi ukuhlaziya.';
 }

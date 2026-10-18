@@ -2536,4 +2536,11 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Opinión';
+
+  @override
+  String get earningsSummaryButton => 'Que dicía o último informe?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Resumo de IA do anuncio de resultados da empresa e da cobertura de prensa que atopa na web. Non constitúe asesoramento de investimento. Usa o teu límite diario de preguntas, non unha análise.';
 }

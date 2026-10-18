@@ -3,18 +3,28 @@ import 'package:flutter/material.dart';
 import '../../../app_services.dart';
 import '../../../core/models/analysis_extras.dart';
 import '../../../core/util/formatters.dart';
+import '../../../l10n/error_messages.dart';
 import '../../../l10n/generated/app_localizations.dart';
+import '../../../l10n/supported_locales.dart';
 import '../../../theme/app_theme.dart';
+import '../../../widgets/source_links.dart';
 import '../../events/events_view.dart' show eventWhen;
+import '../../news/research_store.dart' show ResearchResult;
 import 'section_card.dart';
 
 /// „Gyorsjelentések”: a következő jelentés napja és a várt EPS, alatta az utolsó
 /// negyedévek várt (üres kör) és jelentett (teli kör) EPS-e, a meglepetéssel.
 /// Ha nincs adat (pl. nem USA-részvény), a kártya nem jelenik meg.
 class EarningsCard extends StatefulWidget {
-  const EarningsCard({super.key, required this.symbol, this.now});
+  const EarningsCard({super.key, required this.symbol, String? companyName, this.now})
+    : companyName = companyName ?? symbol;
 
   final String symbol;
+  final String companyName;
+
+  /// Ennyi napon belül lezárt negyedévről kérhető AI-összefoglaló (a jelentés
+  /// általában 3–6 héttel a negyedév vége után jön ki).
+  static const summaryMaxAgeDays = 150;
 
   /// Tesztben rögzített „ma”.
   final DateTime? now;
@@ -52,6 +62,9 @@ class _EarningsCardState extends State<EarningsCard> {
             if (e.actual != null && e.estimate != null) e,
         ];
         final beats = quarters.where((e) => e.beat == true).length;
+        final latest = data.history.where((e) => e.actual != null).firstOrNull;
+        final today = widget.now ?? DateTime.now();
+        final canSummarize = latest != null && today.difference(latest.period).inDays <= EarningsCard.summaryMaxAgeDays;
         final muted = theme.textTheme.bodySmall?.copyWith(color: p.muted);
         return SectionCard(
           key: const ValueKey('earnings-card'),
@@ -109,12 +122,90 @@ class _EarningsCardState extends State<EarningsCard> {
                 const SizedBox(height: 6),
                 Text(l10n.earningsBeats(beats, quarters.length), key: const ValueKey('earnings-beats'), style: muted),
               ],
+              if (canSummarize) ...[
+                const SizedBox(height: 8),
+                TextButton.icon(
+                  key: const ValueKey('earnings-summary'),
+                  style: TextButton.styleFrom(padding: const EdgeInsets.symmetric(horizontal: 8)),
+                  icon: const Icon(Icons.auto_awesome_outlined, size: 18),
+                  label: Text(l10n.earningsSummaryButton),
+                  onPressed: () => showEarningsSummary(
+                    context,
+                    symbol: widget.symbol,
+                    companyName: widget.companyName,
+                    lastPeriod: latest.period,
+                  ),
+                ),
+              ],
             ],
           ),
         );
       },
     );
   }
+}
+
+/// „Mi volt a legutóbbi gyorsjelentésben?” alsó lapon: az AI utánanéz a cég
+/// közleményének és a sajtónak, a végén a források.
+Future<void> showEarningsSummary(
+  BuildContext context, {
+  required String symbol,
+  required String companyName,
+  DateTime? lastPeriod,
+}) {
+  final services = AppServices.of(context);
+  final language = SupportedLocales.languageFor(Localizations.localeOf(context)).englishName;
+  final answer = services.earningsSummarizer.summarize(
+    symbol: symbol,
+    companyName: companyName,
+    language: language,
+    lastPeriod: lastPeriod,
+  );
+  services.telemetry.track('earnings_summary');
+  return showModalBottomSheet<void>(
+    context: context,
+    showDragHandle: true,
+    isScrollControlled: true,
+    builder: (context) {
+      final l10n = AppLocalizations.of(context);
+      final p = AppPalette.of(context);
+      final theme = Theme.of(context);
+      return SafeArea(
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
+          child: Column(
+            key: const ValueKey('earnings-summary-sheet'),
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text('$symbol · $companyName', style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),
+              const SizedBox(height: 6),
+              Text(l10n.earningsSummaryButton, style: theme.textTheme.titleMedium),
+              const SizedBox(height: 14),
+              FutureBuilder<ResearchResult>(
+                future: answer,
+                builder: (context, snap) {
+                  if (snap.hasError) {
+                    return Text(errorMessage(l10n, snap.error!), style: TextStyle(color: p.negative));
+                  }
+                  final r = snap.data;
+                  if (r == null) return const LinearProgressIndicator();
+                  return Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SelectableText(r.text, style: theme.textTheme.bodyLarge?.copyWith(height: 1.45)),
+                      SourceLinks(sources: r.sources, keyPrefix: 'earnings-source'),
+                    ],
+                  );
+                },
+              ),
+              const SizedBox(height: 14),
+              Text(l10n.earningsSummaryNote, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+            ],
+          ),
+        ),
+      );
+    },
+  );
 }
 
 /// Negyedévenként egy oszlop: fent a meglepetés, középen a két pont, lent a hónap.

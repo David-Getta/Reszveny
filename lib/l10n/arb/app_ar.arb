@@ -668,5 +668,7 @@
   "sourceOfficial": "رسمي",
   "sourcePressRelease": "بيان صحفي",
   "sourceMajorNews": "إعلام رئيسي",
-  "sourceOpinion": "رأي"
+  "sourceOpinion": "رأي",
+  "earningsSummaryButton": "ماذا تضمّن أحدث تقرير؟",
+  "earningsSummaryNote": "ملخّص بالذكاء الاصطناعي لإعلان نتائج الشركة والتغطية الصحفية التي يجدها على الويب. لا يُعدّ نصيحة استثمارية. يُحتسب من حدّ الأسئلة اليومي ولا يستهلك تحليلًا."
 }

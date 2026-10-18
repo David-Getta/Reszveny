@@ -668,5 +668,7 @@
   "sourceOfficial": "Ofisiyel",
   "sourcePressRelease": "Yégle",
   "sourceMajorNews": "Médiya bu mag",
-  "sourceOpinion": "Xalaat"
+  "sourceOpinion": "Xalaat",
+  "earningsSummaryButton": "Lan moo nekkoon ci rapoor bu mujj bi?",
+  "earningsSummaryNote": "Gàttal bu AI defar ci yégle njureefu sosete bi ak li jaaynde yi bind ci, mu gis ko ci web bi. Du ndigal ci dugal xaalis. Dafay jëfandikoo sa limu laaj yu bés bu nekk, du xayma."
 }

@@ -2579,4 +2579,11 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Názor';
+
+  @override
+  String get earningsSummaryButton => 'Čo bolo v poslednej správe?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Zhrnutie od AI: oznámenie výsledkov spoločnosti a mediálne ohlasy, ktoré nájde na webe. Nie je investičným odporúčaním. Čerpá z vášho denného limitu otázok, nespotrebuje analýzu.';
 }

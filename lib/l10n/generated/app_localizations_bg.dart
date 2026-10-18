@@ -2514,4 +2514,11 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Мнение';
+
+  @override
+  String get earningsSummaryButton => 'Какво имаше в последния отчет?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Обобщение от AI на съобщението на компанията за резултатите и на медийното отразяване, което намира в интернет. Не представлява инвестиционен съвет. Използва дневния ви лимит за въпроси, не анализ.';
 }

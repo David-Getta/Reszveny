@@ -2511,4 +2511,11 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'राय';
+
+  @override
+  String get earningsSummaryButton => 'ताज़ा रिपोर्ट में क्या था?';
+
+  @override
+  String get earningsSummaryNote =>
+      'कंपनी के नतीजों की घोषणा और वेब पर मिली मीडिया कवरेज का AI सारांश। यह निवेश सलाह नहीं है। यह आपके दैनिक सवालों की सीमा से जाता है, कोई विश्लेषण खर्च नहीं होता।';
 }

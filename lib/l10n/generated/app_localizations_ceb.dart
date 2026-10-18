@@ -2523,4 +2523,11 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Opinyon';
+
+  @override
+  String get earningsSummaryButton => 'Unsa ang sulod sa pinakabag-ong report?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Katingbanan sa AI sa pahibalo sa resulta sa kompanya ug sa mga balita bahin niini nga makit-an niini sa web. Dili kini tambag sa pagpamuhunan. Mogamit kini sa imong adlaw-adlaw nga limitasyon sa pangutana, dili sa pagtuki.';
 }

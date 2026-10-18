@@ -2527,4 +2527,11 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Maikutlo';
+
+  @override
+  String get earningsSummaryButton => 'Ho ne ho le eng tlalehong ya morao-rao?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Kakaretso ya AI ya phatlalatso ya diphetho tsa khampani le ditaba tsa boralitaba tseo e di fumanang inthaneteng. Hase keletso ya ho tsetela. E sebedisa moedi wa hao wa dipotso wa letsatsi le letsatsi, eseng manollo.';
 }

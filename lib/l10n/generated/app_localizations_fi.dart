@@ -2514,4 +2514,11 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Mielipide';
+
+  @override
+  String get earningsSummaryButton => 'Mitä viime raportissa oli?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Tekoälyn tiivistelmä yhtiön tulosjulkistuksesta ja sen löytämästä mediauutisoinnista verkossa. Se ei ole sijoitusneuvontaa. Kuluttaa päivittäistä kysymyskiintiötäsi, ei analyysia.';
 }

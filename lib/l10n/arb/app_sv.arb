@@ -668,5 +668,7 @@
   "sourceOfficial": "Officiell",
   "sourcePressRelease": "Pressmeddelande",
   "sourceMajorNews": "Stort medium",
-  "sourceOpinion": "Åsikt"
+  "sourceOpinion": "Åsikt",
+  "earningsSummaryButton": "Vad stod i den senaste rapporten?",
+  "earningsSummaryNote": "AI-sammanfattning av bolagets resultatbesked och den pressbevakning den hittar på webben. Det är inte investeringsrådgivning. Använder din dagliga frågekvot, inte en analys."
 }

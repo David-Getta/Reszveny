@@ -668,5 +668,7 @@
   "sourceOfficial": "Esemthethweni",
   "sourcePressRelease": "Ingxelo yoonondaba",
   "sourceMajorNews": "Umthombo omkhulu",
-  "sourceOpinion": "Uluvo"
+  "sourceOpinion": "Uluvo",
+  "earningsSummaryButton": "Bekukho ntoni kwingxelo yamva nje?",
+  "earningsSummaryNote": "Isishwankathelo se-AI sesibhengezo seziphumo zenkampani kunye neendaba zoshicilelo esizifumana kwiwebhu. Ayilocebiso lotyalo-mali. Sisebenzisa umda wakho wemibuzo wemihla ngemihla, hayi uhlalutyo."
 }

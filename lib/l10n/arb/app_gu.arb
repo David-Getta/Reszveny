@@ -668,5 +668,7 @@
   "sourceOfficial": "અધિકૃત",
   "sourcePressRelease": "પ્રેસ રિલીઝ",
   "sourceMajorNews": "મુખ્ય મીડિયા",
-  "sourceOpinion": "અભિપ્રાય"
+  "sourceOpinion": "અભિપ્રાય",
+  "earningsSummaryButton": "તાજેતરના રિપોર્ટમાં શું હતું?",
+  "earningsSummaryNote": "કંપનીની પરિણામ જાહેરાત અને વેબ પર મળતા અખબારી અહેવાલોનો AI સારાંશ. તે રોકાણ સલાહ નથી. તે તમારી દૈનિક પ્રશ્ન મર્યાદામાંથી જાય છે, કોઈ વિશ્લેષણ વપરાતું નથી."
 }

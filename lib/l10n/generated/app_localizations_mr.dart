@@ -2512,4 +2512,11 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'मत';
+
+  @override
+  String get earningsSummaryButton => 'ताज्या अहवालात काय होते?';
+
+  @override
+  String get earningsSummaryNote =>
+      'कंपनीच्या निकाल घोषणेचा आणि वेबवर मिळालेल्या माध्यमांतील वृत्तांचा AI सारांश. हा गुंतवणूक सल्ला नाही. हे तुमच्या दैनिक प्रश्न-मर्यादेतून जाते, कोणतेही विश्लेषण खर्च होत नाही.';
 }

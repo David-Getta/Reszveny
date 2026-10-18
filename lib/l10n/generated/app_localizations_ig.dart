@@ -2508,4 +2508,11 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Echiche';
+
+  @override
+  String get earningsSummaryButton => 'Gịnị dị na akụkọ kacha ọhụrụ?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Nchịkọta AI nke ọkwa nsonaazụ ụlọ ọrụ ahụ na akụkọ ndị nta akụkọ ọ chọtara n\'ịntanetị. Ọ bụghị ndụmọdụ itinye ego. Ọ na-eji oke ajụjụ gị kwa ụbọchị, ọ bụghị nyocha.';
 }

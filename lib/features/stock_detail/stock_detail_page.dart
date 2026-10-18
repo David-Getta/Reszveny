@@ -460,7 +460,7 @@ class _DetailsBody extends StatelessWidget {
       ),
 
       // Gyorsjelentések: a következő és az utolsó negyedévek EPS-e
-      EarningsCard(symbol: d.symbol),
+      EarningsCard(symbol: d.symbol, companyName: p?.name ?? candidate.companyName),
 
       // Bennfentes ügyletek (90 nap, nyílt piaci vételek és eladások)
       InsidersCard(symbol: d.symbol, currency: cur),

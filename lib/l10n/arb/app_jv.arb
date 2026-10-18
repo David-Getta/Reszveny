@@ -668,5 +668,7 @@
   "sourceOfficial": "Resmi",
   "sourcePressRelease": "Siaran pers",
   "sourceMajorNews": "Media gedhé",
-  "sourceOpinion": "Panemu"
+  "sourceOpinion": "Panemu",
+  "earningsSummaryButton": "Apa isiné laporan paling anyar?",
+  "earningsSummaryNote": "Ringkesan AI saka pengumuman asil perusahaan lan liputan média sing ditemokaké ing web. Dudu saran investasi. Nggunakake watesan pitakon saben dina, dudu analisis."
 }

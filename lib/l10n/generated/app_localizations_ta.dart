@@ -2522,4 +2522,11 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'கருத்து';
+
+  @override
+  String get earningsSummaryButton => 'சமீபத்திய அறிக்கையில் என்ன இருந்தது?';
+
+  @override
+  String get earningsSummaryNote =>
+      'நிறுவனத்தின் முடிவுகள் அறிவிப்பு மற்றும் இணையத்தில் கிடைக்கும் ஊடகச் செய்திகளின் AI சுருக்கம். இது முதலீட்டு ஆலோசனை அல்ல. இது உங்கள் தினசரி கேள்வி வரம்பிலிருந்து செலவாகும், பகுப்பாய்வு எதுவும் செலவாகாது.';
 }

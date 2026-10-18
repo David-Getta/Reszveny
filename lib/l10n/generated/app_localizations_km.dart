@@ -2492,4 +2492,11 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'មតិ';
+
+  @override
+  String get earningsSummaryButton => 'តើរបាយការណ៍ចុងក្រោយមានអ្វីខ្លះ?';
+
+  @override
+  String get earningsSummaryNote =>
+      'សេចក្ដីសង្ខេបដោយ AI អំពីការប្រកាសលទ្ធផលរបស់ក្រុមហ៊ុន និងការផ្សាយព័ត៌មានដែលវារកឃើញនៅលើបណ្ដាញ។ មិនមែនជាដំបូន្មានវិនិយោគទេ។ វាប្រើកម្រិតសំណួរប្រចាំថ្ងៃរបស់អ្នក មិនមែនការវិភាគទេ។';
 }

@@ -668,5 +668,7 @@
   "sourceOfficial": "Swa ximfumo",
   "sourcePressRelease": "Xitiviso",
   "sourceMajorNews": "Phephahungu lerikulu",
-  "sourceOpinion": "Mavonelo"
+  "sourceOpinion": "Mavonelo",
+  "earningsSummaryButton": "A ku ri na yini eka xiviko xa sweswinyana?",
+  "earningsSummaryNote": "Nkomiso wa AI wa xitiviso xa mbuyelo wa khamphani ni mahungu ya vuhaxi lawa yi ma kumaka ewebeni. A hi ndzayo ya vuvekisi. Yi tirhisa ndzelekano wa wena wa swivutiso wa siku na siku, ku nga ri nxopaxopo."
 }

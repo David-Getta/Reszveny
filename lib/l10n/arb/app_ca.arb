@@ -668,5 +668,7 @@
   "sourceOfficial": "Oficial",
   "sourcePressRelease": "Nota de premsa",
   "sourceMajorNews": "Gran mitjà",
-  "sourceOpinion": "Opinió"
+  "sourceOpinion": "Opinió",
+  "earningsSummaryButton": "Què deia l’últim informe?",
+  "earningsSummaryNote": "Resum d’IA de l’anunci de resultats de l’empresa i de la cobertura de premsa que troba al web. No constitueix assessorament d’inversió. Fa servir el teu límit diari de preguntes, no una anàlisi."
 }

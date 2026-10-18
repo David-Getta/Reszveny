@@ -2513,4 +2513,11 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Opinion';
+
+  @override
+  String get earningsSummaryButton => 'Wetin dey di latest report?';
+
+  @override
+  String get earningsSummaryNote =>
+      'AI summary of di company result announcement and di press talk wey e find for web. E no be investment advice. E dey use your daily question limit, no be analysis.';
 }

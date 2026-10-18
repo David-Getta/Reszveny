@@ -668,5 +668,7 @@
   "sourceOfficial": "Resmi",
   "sourcePressRelease": "Basın bülteni",
   "sourceMajorNews": "Büyük medya",
-  "sourceOpinion": "Görüş"
+  "sourceOpinion": "Görüş",
+  "earningsSummaryButton": "Son bilançoda neler vardı?",
+  "earningsSummaryNote": "Şirketin sonuç açıklamasının ve web’de bulduğu basın haberlerinin yapay zekâ özeti. Yatırım tavsiyesi değildir. Günlük soru hakkından düşer, analiz hakkı kullanmaz."
 }

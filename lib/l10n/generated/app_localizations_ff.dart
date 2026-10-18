@@ -2507,4 +2507,11 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Miijo';
+
+  @override
+  String get earningsSummaryButton => 'Ko woni e jaŋtorde sakkitiinde ndee?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Ɓeyngugol AI bayyinannde ngalluuji sosiyetee oo e kabaruuji jaaynde ɗi o yiyi e geese. Wonaa wasiya e investisman. Ina huutoroo keerol naamne maa ñalnde kala, wonaa ƴeewndo.';
 }

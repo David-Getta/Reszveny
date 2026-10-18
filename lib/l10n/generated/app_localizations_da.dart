@@ -2511,4 +2511,11 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Mening';
+
+  @override
+  String get earningsSummaryButton => 'Hvad stod der i det seneste regnskab?';
+
+  @override
+  String get earningsSummaryNote =>
+      'AI-resumé af selskabets regnskabsmeddelelse og den presseomtale, den finder på nettet. Det er ikke investeringsrådgivning. Det bruger af din daglige spørgsmålskvote, ikke en analyse.';
 }

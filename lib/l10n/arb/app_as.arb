@@ -668,5 +668,7 @@
   "sourceOfficial": "আনুষ্ঠানিক",
   "sourcePressRelease": "প্ৰেছ বিজ্ঞপ্তি",
   "sourceMajorNews": "মূল মাধ্যম",
-  "sourceOpinion": "মতামত"
+  "sourceOpinion": "মতামত",
+  "earningsSummaryButton": "শেহতীয়া প্ৰতিবেদনত কি আছিল?",
+  "earningsSummaryNote": "কোম্পানীৰ ফলাফল ঘোষণা আৰু ৱেবত পোৱা সংবাদ প্ৰতিবেদনৰ AI সাৰাংশ। ই বিনিয়োগৰ পৰামৰ্শ নহয়। ই আপোনাৰ দৈনিক প্ৰশ্নৰ সীমাৰ পৰা যায়, কোনো বিশ্লেষণ খৰচ নকৰে।"
 }

@@ -2519,4 +2519,11 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Opinyon';
+
+  @override
+  String get earningsSummaryButton => 'Ano ang laman ng pinakabagong ulat?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Buod ng AI ng anunsyo ng resulta ng kumpanya at ng mga balitang nahanap nito sa web. Hindi ito payo sa pamumuhunan. Gumagamit ito ng iyong pang-araw-araw na limitasyon sa tanong, hindi ng pagsusuri.';
 }

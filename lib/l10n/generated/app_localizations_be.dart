@@ -2580,4 +2580,11 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Меркаванне';
+
+  @override
+  String get earningsSummaryButton => 'Што было ў апошняй справаздачы?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Кароткі змест ад AI: паведамленне кампаніі пра вынікі і публікацыі ў прэсе, якія ён знаходзіць у інтэрнэце. Не з’яўляецца інвестыцыйнай парадай. Выкарыстоўвае дзённы ліміт пытанняў, а не аналіз.';
 }

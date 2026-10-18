@@ -2513,4 +2513,12 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Maoni';
+
+  @override
+  String get earningsSummaryButton =>
+      'Ripoti ya hivi karibuni ilikuwa na nini?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Muhtasari wa AI wa tangazo la matokeo ya kampuni na habari za vyombo vya habari inazozipata mtandaoni. Si ushauri wa uwekezaji. Hutumia kikomo chako cha maswali cha kila siku, si uchambuzi.';
 }

@@ -2580,4 +2580,11 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Nuomonė';
+
+  @override
+  String get earningsSummaryButton => 'Kas buvo naujausioje ataskaitoje?';
+
+  @override
+  String get earningsSummaryNote =>
+      'DI santrauka apie bendrovės rezultatų paskelbimą ir žiniasklaidos pranešimus, kuriuos jis randa internete. Tai nėra investavimo rekomendacija. Naudoja jūsų dienos klausimų limitą, o ne analizę.';
 }

@@ -2475,4 +2475,11 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'ርእይቶ';
+
+  @override
+  String get earningsSummaryButton => 'ኣብቲ ናይ መወዳእታ ጸብጻብ እንታይ ነበረ?';
+
+  @override
+  String get earningsSummaryNote =>
+      'ናይ AI ጽማቕ ብዛዕባ መግለጺ ውጽኢት እቲ ትካልን ኣብ መርበብ ሓበሬታ ዝረኽቦ ጸብጻባት ማዕከናት ዜናን። ምኽሪ ወፍሪ ኣይኮነን። ካብ ዕለታዊ ደረት ሕቶታትኩም ይቑጸር እምበር ትንታነ ኣይጥቀምን።';
 }

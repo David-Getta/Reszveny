@@ -2513,4 +2513,11 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Mening';
+
+  @override
+  String get earningsSummaryButton => 'Hva sto i den siste rapporten?';
+
+  @override
+  String get earningsSummaryNote =>
+      'AI-sammendrag av selskapets resultatmelding og pressedekningen den finner på nettet. Det er ikke investeringsråd. Bruker av den daglige spørsmålskvoten din, ikke en analyse.';
 }

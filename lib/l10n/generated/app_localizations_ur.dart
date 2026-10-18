@@ -2512,4 +2512,11 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'رائے';
+
+  @override
+  String get earningsSummaryButton => 'تازہ رپورٹ میں کیا تھا؟';
+
+  @override
+  String get earningsSummaryNote =>
+      'کمپنی کے نتائج کے اعلان اور ویب پر ملنے والی میڈیا کوریج کا AI خلاصہ۔ یہ سرمایہ کاری کا مشورہ نہیں ہے۔ یہ آپ کی روزانہ سوالات کی حد سے جاتا ہے، کوئی تجزیہ خرچ نہیں ہوتا۔';
 }

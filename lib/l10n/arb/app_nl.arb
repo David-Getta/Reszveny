@@ -668,5 +668,7 @@
   "sourceOfficial": "Officieel",
   "sourcePressRelease": "Persbericht",
   "sourceMajorNews": "Groot medium",
-  "sourceOpinion": "Opinie"
+  "sourceOpinion": "Opinie",
+  "earningsSummaryButton": "Wat stond er in het laatste rapport?",
+  "earningsSummaryNote": "AI-samenvatting van de resultatenpublicatie van het bedrijf en de berichtgeving die het op het web vindt. Dit is geen beleggingsadvies. Gebruikt je dagelijkse vragentegoed, geen analyse."
 }

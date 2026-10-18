@@ -2511,4 +2511,11 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Èrò';
+
+  @override
+  String get earningsSummaryButton => 'Kí ló wà nínú ìròyìn tó kẹ́yìn?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Àkópọ̀ AI ti ìkéde àbájáde ilé-iṣẹ́ náà àti ìròyìn àwọn oníròyìn tí ó rí lórí ayélujára. Kì í ṣe ìmọ̀ràn ìdókòwò. Ó ń lo ìwọ̀n ìbéèrè ojoojúmọ́ rẹ, kì í ṣe ìtúpalẹ̀.';
 }

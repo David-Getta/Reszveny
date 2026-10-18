@@ -2527,4 +2527,11 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Yuyay';
+
+  @override
+  String get earningsSummaryButton => '¿Ima kasharqa qhipa willakuypi?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Empresaq resultadonkunata willakusqanmanta, webpi tarisqan willakuykunamantawan AI pisichasqa. Manan qullqi churanapaq yuyaychaychu. Sapa p’unchay tapukuy limitiykita apaykachan, manan t’aqwiytachu.';
 }

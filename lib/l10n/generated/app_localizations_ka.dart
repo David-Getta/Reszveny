@@ -2513,4 +2513,11 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'მოსაზრება';
+
+  @override
+  String get earningsSummaryButton => 'რა ეწერა ბოლო ანგარიშში?';
+
+  @override
+  String get earningsSummaryNote =>
+      'AI-ის შეჯამება კომპანიის შედეგების განცხადებისა და ინტერნეტში ნაპოვნი მედიაგაშუქების შესახებ. არ წარმოადგენს საინვესტიციო რჩევას. იყენებს თქვენს დღიურ კითხვების ლიმიტს და არა ანალიზს.';
 }

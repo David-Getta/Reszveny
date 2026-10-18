@@ -2516,4 +2516,11 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Mening';
+
+  @override
+  String get earningsSummaryButton => 'Wat was in die jongste verslag?';
+
+  @override
+  String get earningsSummaryNote =>
+      'AI-opsomming van die maatskappy se resultate-aankondiging en die persdekking wat dit op die web vind. Dit is nie beleggingsadvies nie. Dit gebruik jou daaglikse vraagtoelae, nie ’n ontleding nie.';
 }

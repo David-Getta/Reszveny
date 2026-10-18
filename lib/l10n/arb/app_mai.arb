@@ -668,5 +668,7 @@
   "sourceOfficial": "आधिकारिक",
   "sourcePressRelease": "प्रेस विज्ञप्ति",
   "sourceMajorNews": "पैघ मीडिया",
-  "sourceOpinion": "विचार"
+  "sourceOpinion": "विचार",
+  "earningsSummaryButton": "नवीनतम रिपोर्टमे की छल?",
+  "earningsSummaryNote": "कंपनीक परिणाम घोषणा आ वेबपर भेटल मीडिया कवरेजक AI सारांश। ई निवेशक सलाह नहि अछि। ई अहाँक दैनिक प्रश्न-सीमासँ जाइत अछि, कोनो विश्लेषण खर्च नहि होइत अछि।"
 }

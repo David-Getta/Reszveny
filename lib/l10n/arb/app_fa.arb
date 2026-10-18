@@ -668,5 +668,7 @@
   "sourceOfficial": "رسمی",
   "sourcePressRelease": "بیانیه مطبوعاتی",
   "sourceMajorNews": "رسانه بزرگ",
-  "sourceOpinion": "دیدگاه"
+  "sourceOpinion": "دیدگاه",
+  "earningsSummaryButton": "در آخرین گزارش چه بود؟",
+  "earningsSummaryNote": "خلاصهٔ هوش مصنوعی از اطلاعیهٔ نتایج شرکت و پوشش رسانه‌ای که در وب پیدا می‌کند. توصیه سرمایه‌گذاری نیست. از سهمیهٔ روزانهٔ پرسش‌های شما کم می‌شود، نه از تحلیل‌ها."
 }

@@ -2513,4 +2513,11 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Pikir';
+
+  @override
+  String get earningsSummaryButton => 'Soňky hasabatda näme bardy?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Kompaniýanyň netijeler baradaky beýannamasynyň we internetde tapan metbugat habarlarynyň AI gysgaça mazmuny. Maýa goýum maslahaty däldir. Gündelik sorag çägiňizden harçlanýar, seljerme däl.';
 }

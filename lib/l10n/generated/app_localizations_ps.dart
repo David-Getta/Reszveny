@@ -2504,4 +2504,11 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'نظر';
+
+  @override
+  String get earningsSummaryButton => 'په وروستي راپور کې څه وو؟';
+
+  @override
+  String get earningsSummaryNote =>
+      'د شرکت د پایلو د اعلان او هغو رسنیزو خبرونو د AI لنډیز چې په وېب کې یې مومي. د پانګونې مشوره نه ده. ستاسو د ورځنیو پوښتنو له حد څخه کمېږي، شننه نه لګوي.';
 }

@@ -668,5 +668,7 @@
   "sourceOfficial": "Oficial",
   "sourcePressRelease": "Willakuy",
   "sourceMajorNews": "Hatun willakuq",
-  "sourceOpinion": "Yuyay"
+  "sourceOpinion": "Yuyay",
+  "earningsSummaryButton": "¿Ima kasharqa qhipa willakuypi?",
+  "earningsSummaryNote": "Empresaq resultadonkunata willakusqanmanta, webpi tarisqan willakuykunamantawan AI pisichasqa. Manan qullqi churanapaq yuyaychaychu. Sapa p’unchay tapukuy limitiykita apaykachan, manan t’aqwiytachu."
 }

@@ -2518,4 +2518,11 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Ra\'ayi';
+
+  @override
+  String get earningsSummaryButton => 'Me ke cikin rahoton baya-bayan nan?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Taƙaitaccen bayanin AI na sanarwar sakamakon kamfanin da rahotannin jaridu da ya samu a yanar gizo. Ba shawarar zuba jari ba ne. Yana amfani da iyakar tambayoyinka na yau da kullum, ba nazari ba.';
 }

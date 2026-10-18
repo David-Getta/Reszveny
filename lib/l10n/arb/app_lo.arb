@@ -668,5 +668,7 @@
   "sourceOfficial": "ທາງການ",
   "sourcePressRelease": "ຖະແຫຼງຂ່າວ",
   "sourceMajorNews": "ສື່ໃຫຍ່",
-  "sourceOpinion": "ຄຳເຫັນ"
+  "sourceOpinion": "ຄຳເຫັນ",
+  "earningsSummaryButton": "ລາຍງານລ່າສຸດມີຫຍັງແດ່?",
+  "earningsSummaryNote": "ບົດສະຫຼຸບຈາກ AI ກ່ຽວກັບການປະກາດຜົນປະກອບການຂອງບໍລິສັດ ແລະ ຂ່າວໃນສື່ທີ່ມັນພົບໃນເວັບ. ບໍ່ແມ່ນຄຳແນະນຳການລົງທຶນ. ໃຊ້ໂຄຕາຄຳຖາມປະຈຳວັນຂອງທ່ານ ບໍ່ແມ່ນການວິເຄາະ."
 }

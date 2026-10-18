@@ -2552,4 +2552,11 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Opinie';
+
+  @override
+  String get earningsSummaryButton => 'Ce a fost în cel mai recent raport?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Rezumat generat de AI al anunțului de rezultate al companiei și al relatărilor din presă pe care le găsește pe web. Nu reprezintă un sfat de investiții. Folosește limita ta zilnică de întrebări, nu o analiză.';
 }

@@ -2511,4 +2511,11 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Opinyon';
+
+  @override
+  String get earningsSummaryButton => 'Kisa ki te nan dènye rapò a?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Rezime AI sou anons rezilta konpayi an ak sa laprès di sou li li jwenn sou entènèt. Se pa yon konsèy envestisman. Li itilize limit kesyon ou pou chak jou, pa yon analiz.';
 }

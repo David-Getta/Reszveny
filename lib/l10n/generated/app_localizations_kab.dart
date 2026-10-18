@@ -2511,4 +2511,11 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Tamuɣli';
+
+  @override
+  String get earningsSummaryButton => 'D acu i yellan deg uneqqis aneggaru?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Agzul n AI n ubeddar n yigmaḍ n tkebbanit d wayen d-qqaren yiɣmisen i yufa deg web. Mačči d awellih n usersi n yidrimen. Yesseqdac talast-ik n yisteqsiyen n yal ass, mačči tasledt.';
 }

@@ -668,5 +668,7 @@
   "sourceOfficial": "Oficiálne",
   "sourcePressRelease": "Tlačová správa",
   "sourceMajorNews": "Veľké médium",
-  "sourceOpinion": "Názor"
+  "sourceOpinion": "Názor",
+  "earningsSummaryButton": "Čo bolo v poslednej správe?",
+  "earningsSummaryNote": "Zhrnutie od AI: oznámenie výsledkov spoločnosti a mediálne ohlasy, ktoré nájde na webe. Nie je investičným odporúčaním. Čerpá z vášho denného limitu otázok, nespotrebuje analýzu."
 }

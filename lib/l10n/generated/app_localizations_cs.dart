@@ -2575,4 +2575,11 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Názor';
+
+  @override
+  String get earningsSummaryButton => 'Co bylo v poslední zprávě?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Shrnutí od AI: oznámení výsledků společnosti a mediální ohlasy, které najde na webu. Není investičním doporučením. Čerpá z vašeho denního limitu otázek, nespotřebuje analýzu.';
 }

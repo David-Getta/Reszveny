@@ -2519,4 +2519,11 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'ಅಭಿಪ್ರಾಯ';
+
+  @override
+  String get earningsSummaryButton => 'ಇತ್ತೀಚಿನ ವರದಿಯಲ್ಲಿ ಏನಿತ್ತು?';
+
+  @override
+  String get earningsSummaryNote =>
+      'ಕಂಪನಿಯ ಫಲಿತಾಂಶ ಪ್ರಕಟಣೆ ಮತ್ತು ವೆಬ್‌ನಲ್ಲಿ ಸಿಗುವ ಮಾಧ್ಯಮ ವರದಿಗಳ AI ಸಾರಾಂಶ. ಇದು ಹೂಡಿಕೆ ಸಲಹೆಯಲ್ಲ. ಇದು ನಿಮ್ಮ ದೈನಂದಿನ ಪ್ರಶ್ನೆ ಮಿತಿಯನ್ನು ಬಳಸುತ್ತದೆ, ವಿಶ್ಲೇಷಣೆಯನ್ನಲ್ಲ.';
 }

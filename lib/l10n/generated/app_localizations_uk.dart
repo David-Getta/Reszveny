@@ -2583,4 +2583,11 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Думка';
+
+  @override
+  String get earningsSummaryButton => 'Що було в останньому звіті?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Короткий виклад від ШІ: повідомлення компанії про результати та публікації в пресі, які він знаходить в інтернеті. Не є інвестиційною порадою. Витрачається денний ліміт запитань, а не аналіз.';
 }

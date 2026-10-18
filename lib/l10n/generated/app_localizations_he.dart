@@ -2505,4 +2505,11 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'דעה';
+
+  @override
+  String get earningsSummaryButton => 'מה היה בדוח האחרון?';
+
+  @override
+  String get earningsSummaryNote =>
+      'סיכום של AI של הודעת התוצאות של החברה ושל הסיקור התקשורתי שהוא מוצא ברשת. אינו מהווה ייעוץ השקעות. נספר במכסת השאלות היומית שלך, לא כניתוח.';
 }

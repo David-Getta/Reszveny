@@ -2514,4 +2514,11 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'ڕا';
+
+  @override
+  String get earningsSummaryButton => 'لە دوایین ڕاپۆرتدا چی هەبوو؟';
+
+  @override
+  String get earningsSummaryNote =>
+      'پوختەی AI بۆ ڕاگەیاندنی ئەنجامەکانی کۆمپانیاکە و ئەو هەواڵانەی ڕۆژنامەگەری کە لە وێبدا دەیاندۆزێتەوە. ئامۆژگاریی وەبەرهێنان نییە. لە سنووری پرسیارە ڕۆژانەکانت دەبرێت، شیکاری بەکارناهێنێت.';
 }

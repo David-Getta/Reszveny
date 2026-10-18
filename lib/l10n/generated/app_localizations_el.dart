@@ -2522,4 +2522,11 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Άποψη';
+
+  @override
+  String get earningsSummaryButton => 'Τι έλεγε η τελευταία έκθεση;';
+
+  @override
+  String get earningsSummaryNote =>
+      'Σύνοψη από AI της ανακοίνωσης αποτελεσμάτων της εταιρείας και των δημοσιευμάτων που βρίσκει στο διαδίκτυο. Δεν αποτελεί επενδυτική συμβουλή. Χρησιμοποιεί το ημερήσιο όριο ερωτήσεών σας, όχι ανάλυση.';
 }

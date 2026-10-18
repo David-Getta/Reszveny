@@ -59,6 +59,7 @@ class TelemetryStore {
     'morning_brief',
     'holdings_read',
     'news_explained',
+    'earnings_summary',
     'list_created',
     'targets_set',
     'backup_saved',

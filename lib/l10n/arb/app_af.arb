@@ -668,5 +668,7 @@
   "sourceOfficial": "Amptelik",
   "sourcePressRelease": "Persverklaring",
   "sourceMajorNews": "Groot media",
-  "sourceOpinion": "Mening"
+  "sourceOpinion": "Mening",
+  "earningsSummaryButton": "Wat was in die jongste verslag?",
+  "earningsSummaryNote": "AI-opsomming van die maatskappy se resultate-aankondiging en die persdekking wat dit op die web vind. Dit is nie beleggingsadvies nie. Dit gebruik jou daaglikse vraagtoelae, nie ’n ontleding nie."
 }

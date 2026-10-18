@@ -2528,4 +2528,12 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Kgopolo';
+
+  @override
+  String get earningsSummaryButton =>
+      'Go be go na le eng pegong ya moragorago?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Kakaretšo ya AI ya kgoeletšo ya dipoelo tša khamphani le ditaba tša kgatišo tšeo e di hwetšago wepeng. Ga se keletšo ya peeletšo. E diriša moedi wa gago wa dipotšišo wa letšatši le letšatši, e sego tshekatsheko.';
 }

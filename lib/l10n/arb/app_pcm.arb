@@ -668,5 +668,7 @@
   "sourceOfficial": "Official",
   "sourcePressRelease": "Press release",
   "sourceMajorNews": "Big media",
-  "sourceOpinion": "Opinion"
+  "sourceOpinion": "Opinion",
+  "earningsSummaryButton": "Wetin dey di latest report?",
+  "earningsSummaryNote": "AI summary of di company result announcement and di press talk wey e find for web. E no be investment advice. E dey use your daily question limit, no be analysis."
 }

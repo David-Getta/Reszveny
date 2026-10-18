@@ -668,5 +668,7 @@
   "sourceOfficial": "अधिकृत",
   "sourcePressRelease": "प्रसिद्धीपत्रक",
   "sourceMajorNews": "मोठे माध्यम",
-  "sourceOpinion": "मत"
+  "sourceOpinion": "मत",
+  "earningsSummaryButton": "ताज्या अहवालात काय होते?",
+  "earningsSummaryNote": "कंपनीच्या निकाल घोषणेचा आणि वेबवर मिळालेल्या माध्यमांतील वृत्तांचा AI सारांश. हा गुंतवणूक सल्ला नाही. हे तुमच्या दैनिक प्रश्न-मर्यादेतून जाते, कोणतेही विश्लेषण खर्च होत नाही."
 }

@@ -2520,4 +2520,11 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Mabanza';
+
+  @override
+  String get earningsSummaryButton => 'Inki vandaka na rapore ya nsuka?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Ntendula ya nkufi ya AI ya nsangu ya ba résultats ya kompani mpi ya bansangu ya bazulunalu yina yo ke mona na Internet. Yo ke malongi ya kutula mbongo ve. Yo ke sadilaka ndilu ya biuvu na nge ya konso kilumbu, ve nsosa.';
 }

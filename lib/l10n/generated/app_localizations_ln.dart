@@ -2524,4 +2524,11 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Likanisi';
+
+  @override
+  String get earningsSummaryButton => 'Nini ezalaki na rapport ya suka?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Bokuse ya AI ya liyebisi ya ba résultats ya kompani mpe ya mikanda ya bapanzi-nsango oyo ezwi na Internet. Ezali toli ya kotia mbɔngɔ te. Esalelaka ndelo ya mituna na yo ya mokolo na mokolo, kasi botaleli te.';
 }

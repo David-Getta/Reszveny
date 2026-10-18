@@ -2508,4 +2508,11 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'राय';
+
+  @override
+  String get earningsSummaryButton => 'पिछला रिपोर्ट में का रहे?';
+
+  @override
+  String get earningsSummaryNote =>
+      'कंपनी के नतीजा के घोषणा आ वेब पर मिलल खबरन के AI सारांश। ई निवेश के सलाह ना ह। ई रउआ रोज के सवाल के सीमा से जाला, कवनो विश्लेषण खरच ना होला।';
 }

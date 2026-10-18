@@ -2521,4 +2521,11 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Igitekerezo';
+
+  @override
+  String get earningsSummaryButton => 'Ni iki cyari muri raporo iheruka?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Incamake ya AI y’itangazo ry’ibyavuye mu kigo n’ibyo itangazamakuru ryanditse ibona kuri murandasi. Si inama yo gushora imari. Ikoresha umubare ntarengwa w’ibibazo byawe bya buri munsi, si isesengura.';
 }

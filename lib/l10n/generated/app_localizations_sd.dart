@@ -2504,4 +2504,11 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'راءِ';
+
+  @override
+  String get earningsSummaryButton => 'تازي رپورٽ ۾ ڇا هو؟';
+
+  @override
+  String get earningsSummaryNote =>
+      'ڪمپنيءَ جي نتيجن جي اعلان ۽ ويب تي مليل ميڊيا ڪوريج جو AI خلاصو. اها سيڙپڪاري جو مشورو ناهي. اهو توهان جي روزاني سوالن جي حد مان ويندو آهي، ڪو تجزيو خرچ نٿو ٿئي.';
 }

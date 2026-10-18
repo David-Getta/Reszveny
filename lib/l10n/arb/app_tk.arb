@@ -668,5 +668,7 @@
   "sourceOfficial": "Resmi",
   "sourcePressRelease": "Metbugat beýannamasy",
   "sourceMajorNews": "Iri media",
-  "sourceOpinion": "Pikir"
+  "sourceOpinion": "Pikir",
+  "earningsSummaryButton": "Soňky hasabatda näme bardy?",
+  "earningsSummaryNote": "Kompaniýanyň netijeler baradaky beýannamasynyň we internetde tapan metbugat habarlarynyň AI gysgaça mazmuny. Maýa goýum maslahaty däldir. Gündelik sorag çägiňizden harçlanýar, seljerme däl."
 }

@@ -668,5 +668,7 @@
   "sourceOfficial": "Hivatalos",
   "sourcePressRelease": "Sajtóközlemény",
   "sourceMajorNews": "Vezető lap",
-  "sourceOpinion": "Vélemény"
+  "sourceOpinion": "Vélemény",
+  "earningsSummaryButton": "Mi volt a legutóbbi gyorsjelentésben?",
+  "earningsSummaryNote": "AI-összefoglaló a cég eredményközleményéből és a weben talált sajtóvisszhangból. Nem befektetési tanács. A napi kérdéskeretből megy, elemzést nem fogyaszt."
 }

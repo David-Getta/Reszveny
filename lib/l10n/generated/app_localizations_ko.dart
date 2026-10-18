@@ -2443,4 +2443,11 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get sourceOpinion => '의견';
+
+  @override
+  String get earningsSummaryButton => '최근 실적 발표 내용은?';
+
+  @override
+  String get earningsSummaryNote =>
+      '회사의 실적 발표와 웹에서 찾은 언론 보도를 AI가 요약합니다. 투자 조언이 아닙니다. 분석 횟수가 아닌 하루 질문 한도가 사용됩니다.';
 }

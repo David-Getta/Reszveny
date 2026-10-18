@@ -2508,4 +2508,11 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'અભિપ્રાય';
+
+  @override
+  String get earningsSummaryButton => 'તાજેતરના રિપોર્ટમાં શું હતું?';
+
+  @override
+  String get earningsSummaryNote =>
+      'કંપનીની પરિણામ જાહેરાત અને વેબ પર મળતા અખબારી અહેવાલોનો AI સારાંશ. તે રોકાણ સલાહ નથી. તે તમારી દૈનિક પ્રશ્ન મર્યાદામાંથી જાય છે, કોઈ વિશ્લેષણ વપરાતું નથી.';
 }

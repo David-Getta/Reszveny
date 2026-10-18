@@ -2556,4 +2556,11 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Mišljenje';
+
+  @override
+  String get earningsSummaryButton => 'Šta je bilo u posljednjem izvještaju?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Sažetak umjetne inteligencije o objavi rezultata kompanije i medijskim izvještajima koje pronađe na internetu. Nije investicijski savjet. Troši vaše dnevno ograničenje pitanja, ne analizu.';
 }

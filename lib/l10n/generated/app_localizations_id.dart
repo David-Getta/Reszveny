@@ -2508,4 +2508,11 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Opini';
+
+  @override
+  String get earningsSummaryButton => 'Apa isi laporan terbaru?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Ringkasan AI atas pengumuman hasil kinerja perusahaan dan liputan media yang ditemukannya di web. Bukan saran investasi. Memakai kuota pertanyaan harian Anda, bukan analisis.';
 }

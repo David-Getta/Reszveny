@@ -668,5 +668,7 @@
   "sourceOfficial": "سرڪاري",
   "sourcePressRelease": "پريس رليز",
   "sourceMajorNews": "وڏو ميڊيا",
-  "sourceOpinion": "راءِ"
+  "sourceOpinion": "راءِ",
+  "earningsSummaryButton": "تازي رپورٽ ۾ ڇا هو؟",
+  "earningsSummaryNote": "ڪمپنيءَ جي نتيجن جي اعلان ۽ ويب تي مليل ميڊيا ڪوريج جو AI خلاصو. اها سيڙپڪاري جو مشورو ناهي. اهو توهان جي روزاني سوالن جي حد مان ويندو آهي، ڪو تجزيو خرچ نٿو ٿئي."
 }

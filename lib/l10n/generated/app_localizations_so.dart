@@ -2520,4 +2520,12 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Aragti';
+
+  @override
+  String get earningsSummaryButton =>
+      'Maxaa ku jiray warbixintii ugu dambeysay?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Soo koobid AI ah oo ku saabsan ku dhawaaqista natiijooyinka shirkadda iyo warbixinnada warbaahinta ee ay ka hesho shabakadda. Ma aha talo maalgashi. Waxay isticmaashaa xadka su’aalahaaga maalinlaha ah, ma aha falanqayn.';
 }

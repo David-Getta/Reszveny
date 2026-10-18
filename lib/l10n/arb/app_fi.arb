@@ -668,5 +668,7 @@
   "sourceOfficial": "Virallinen",
   "sourcePressRelease": "Tiedote",
   "sourceMajorNews": "Suuri media",
-  "sourceOpinion": "Mielipide"
+  "sourceOpinion": "Mielipide",
+  "earningsSummaryButton": "Mitä viime raportissa oli?",
+  "earningsSummaryNote": "Tekoälyn tiivistelmä yhtiön tulosjulkistuksesta ja sen löytämästä mediauutisoinnista verkossa. Se ei ole sijoitusneuvontaa. Kuluttaa päivittäistä kysymyskiintiötäsi, ei analyysia."
 }

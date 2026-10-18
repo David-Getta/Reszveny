@@ -668,5 +668,7 @@
   "sourceOfficial": "ይፋዊ",
   "sourcePressRelease": "ጋዜጣዊ መግለጫ",
   "sourceMajorNews": "ዋና ሚዲያ",
-  "sourceOpinion": "አስተያየት"
+  "sourceOpinion": "አስተያየት",
+  "earningsSummaryButton": "በመጨረሻው ሪፖርት ውስጥ ምን ነበር?",
+  "earningsSummaryNote": "የኩባንያው የውጤት ማስታወቂያ እና በድር ላይ የሚያገኘው የሚዲያ ዘገባ የAI ማጠቃለያ። የኢንቨስትመንት ምክር አይደለም። ከዕለታዊ የጥያቄ ገደብዎ ይቆጠራል እንጂ ትንተና አይጠቀምም።"
 }

@@ -2527,4 +2527,12 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Opinyon';
+
+  @override
+  String get earningsSummaryButton =>
+      'Ano ang sulod sang pinakabag-o nga report?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Kalip-ot sang AI sang paanunsyo sang resulta sang kompanya kag sang mga balita nga nakita sini sa web. Indi ini laygay sa pag-invest. Ginagamit sini ang imo adlaw-adlaw nga limitasyon sang pamangkot, indi ang pagtuki.';
 }

@@ -668,5 +668,7 @@
   "sourceOfficial": "Rasmi",
   "sourcePressRelease": "Taarifa",
   "sourceMajorNews": "Chombo kikuu",
-  "sourceOpinion": "Maoni"
+  "sourceOpinion": "Maoni",
+  "earningsSummaryButton": "Ripoti ya hivi karibuni ilikuwa na nini?",
+  "earningsSummaryNote": "Muhtasari wa AI wa tangazo la matokeo ya kampuni na habari za vyombo vya habari inazozipata mtandaoni. Si ushauri wa uwekezaji. Hutumia kikomo chako cha maswali cha kila siku, si uchambuzi."
 }

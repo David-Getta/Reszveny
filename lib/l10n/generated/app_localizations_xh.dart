@@ -2524,4 +2524,11 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Uluvo';
+
+  @override
+  String get earningsSummaryButton => 'Bekukho ntoni kwingxelo yamva nje?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Isishwankathelo se-AI sesibhengezo seziphumo zenkampani kunye neendaba zoshicilelo esizifumana kwiwebhu. Ayilocebiso lotyalo-mali. Sisebenzisa umda wakho wemibuzo wemihla ngemihla, hayi uhlalutyo.';
 }

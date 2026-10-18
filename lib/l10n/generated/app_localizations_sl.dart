@@ -2581,4 +2581,11 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Mnenje';
+
+  @override
+  String get earningsSummaryButton => 'Kaj je bilo v zadnjem poročilu?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Povzetek umetne inteligence o objavi rezultatov podjetja in medijskem poročanju, ki ga najde na spletu. Ni naložbeni nasvet. Porabi vašo dnevno omejitev vprašanj, ne analize.';
 }

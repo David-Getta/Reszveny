@@ -2514,4 +2514,11 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Андеша';
+
+  @override
+  String get earningsSummaryButton => 'Дар ҳисоботи охирин чӣ буд?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Хулосаи AI аз эълони натиҷаҳои ширкат ва хабарҳои матбуот, ки дар интернет пайдо мекунад. Маслиҳати сармоягузорӣ нест. Аз ҳадди саволҳои ҳаррӯзаи шумо сарф мешавад, на таҳлил.';
 }

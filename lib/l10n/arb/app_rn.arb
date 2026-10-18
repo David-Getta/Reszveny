@@ -668,5 +668,7 @@
   "sourceOfficial": "Ivyemewe",
   "sourcePressRelease": "Itangazo",
   "sourceMajorNews": "Ikinyamakuru gikomeye",
-  "sourceOpinion": "Iciyumviro"
+  "sourceOpinion": "Iciyumviro",
+  "earningsSummaryButton": "Ni ibiki vyari muri raporo iheruka?",
+  "earningsSummaryNote": "Incamake ya AI y’itangazo ry’ivyavuye mu sosiyete n’ivyo ibinyamakuru vyavuze ibona kuri internet. Si inama yo gushora imari. Ikoresha urugero rw’ibibazo vyawe rw’umunsi, si isesengura."
 }

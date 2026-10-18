@@ -2518,4 +2518,11 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Opinione';
+
+  @override
+  String get earningsSummaryButton => 'Cosa diceva l’ultimo report?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Riepilogo dell’IA del comunicato sui risultati dell’azienda e della copertura stampa che trova sul web. Non costituisce un consiglio di investimento. Usa il tuo limite giornaliero di domande, non un’analisi.';
 }

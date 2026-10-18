@@ -2506,4 +2506,11 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'विचार';
+
+  @override
+  String get earningsSummaryButton => 'नवीनतम रिपोर्टमे की छल?';
+
+  @override
+  String get earningsSummaryNote =>
+      'कंपनीक परिणाम घोषणा आ वेबपर भेटल मीडिया कवरेजक AI सारांश। ई निवेशक सलाह नहि अछि। ई अहाँक दैनिक प्रश्न-सीमासँ जाइत अछि, कोनो विश्लेषण खर्च नहि होइत अछि।';
 }

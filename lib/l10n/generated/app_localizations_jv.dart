@@ -2515,4 +2515,11 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Panemu';
+
+  @override
+  String get earningsSummaryButton => 'Apa isiné laporan paling anyar?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Ringkesan AI saka pengumuman asil perusahaan lan liputan média sing ditemokaké ing web. Dudu saran investasi. Nggunakake watesan pitakon saben dina, dudu analisis.';
 }

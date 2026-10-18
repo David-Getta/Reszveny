@@ -2508,4 +2508,11 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'ਰਾਏ';
+
+  @override
+  String get earningsSummaryButton => 'ਤਾਜ਼ਾ ਰਿਪੋਰਟ ਵਿੱਚ ਕੀ ਸੀ?';
+
+  @override
+  String get earningsSummaryNote =>
+      'ਕੰਪਨੀ ਦੇ ਨਤੀਜਿਆਂ ਦੇ ਐਲਾਨ ਅਤੇ ਵੈੱਬ ’ਤੇ ਮਿਲੀ ਮੀਡੀਆ ਕਵਰੇਜ ਦਾ AI ਸਾਰ। ਇਹ ਨਿਵੇਸ਼ ਸਲਾਹ ਨਹੀਂ ਹੈ। ਇਹ ਤੁਹਾਡੀ ਰੋਜ਼ਾਨਾ ਸਵਾਲਾਂ ਦੀ ਸੀਮਾ ਵਿੱਚੋਂ ਜਾਂਦਾ ਹੈ, ਕੋਈ ਵਿਸ਼ਲੇਸ਼ਣ ਖ਼ਰਚ ਨਹੀਂ ਹੁੰਦਾ।';
 }

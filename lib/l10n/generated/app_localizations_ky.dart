@@ -2516,4 +2516,11 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Пикир';
+
+  @override
+  String get earningsSummaryButton => 'Акыркы отчетто эмне болду?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Компаниянын натыйжалар тууралуу билдирүүсүнүн жана интернеттен тапкан басма сөз материалдарынын AI корутундусу. Инвестициялык кеңеш эмес. Күнүмдүк суроолор чегиңизден сарпталат, талдоо эмес.';
 }

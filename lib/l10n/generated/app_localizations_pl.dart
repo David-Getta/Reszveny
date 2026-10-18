@@ -2582,4 +2582,11 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Opinia';
+
+  @override
+  String get earningsSummaryButton => 'Co było w ostatnim raporcie?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Podsumowanie AI komunikatu spółki o wynikach i doniesień prasowych, które znajduje w sieci. Nie stanowi porady inwestycyjnej. Korzysta z dziennego limitu pytań, nie zużywa analizy.';
 }

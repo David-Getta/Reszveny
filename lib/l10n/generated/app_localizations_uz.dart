@@ -2518,4 +2518,11 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Fikr';
+
+  @override
+  String get earningsSummaryButton => 'Soʻnggi hisobotda nima bor edi?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Kompaniyaning natijalar haqidagi eʼloni va internetda topgan matbuot xabarlarining AI xulosasi. Bu investitsiya maslahati emas. Kunlik savollar limitingizdan sarflanadi, tahlil emas.';
 }

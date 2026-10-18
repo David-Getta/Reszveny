@@ -2506,4 +2506,11 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Ý kiến';
+
+  @override
+  String get earningsSummaryButton => 'Báo cáo mới nhất có gì?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Tóm tắt do AI tạo về thông báo kết quả kinh doanh của công ty và các bài báo mà AI tìm thấy trên web. Không phải là lời khuyên đầu tư. Dùng hạn mức câu hỏi hằng ngày của bạn, không dùng lượt phân tích.';
 }

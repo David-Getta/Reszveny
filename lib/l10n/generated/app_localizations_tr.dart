@@ -2512,4 +2512,11 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get sourceOpinion => 'Görüş';
+
+  @override
+  String get earningsSummaryButton => 'Son bilançoda neler vardı?';
+
+  @override
+  String get earningsSummaryNote =>
+      'Şirketin sonuç açıklamasının ve web’de bulduğu basın haberlerinin yapay zekâ özeti. Yatırım tavsiyesi değildir. Günlük soru hakkından düşer, analiz hakkı kullanmaz.';
 }

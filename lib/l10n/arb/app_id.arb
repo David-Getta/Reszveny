@@ -668,5 +668,7 @@
   "sourceOfficial": "Resmi",
   "sourcePressRelease": "Siaran pers",
   "sourceMajorNews": "Media besar",
-  "sourceOpinion": "Opini"
+  "sourceOpinion": "Opini",
+  "earningsSummaryButton": "Apa isi laporan terbaru?",
+  "earningsSummaryNote": "Ringkasan AI atas pengumuman hasil kinerja perusahaan dan liputan media yang ditemukannya di web. Bukan saran investasi. Memakai kuota pertanyaan harian Anda, bukan analisis."
 }

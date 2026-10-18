@@ -39,6 +39,7 @@ import 'features/market_data/finnhub_market_data_provider.dart';
 import 'features/market_data/market_data_provider.dart';
 import 'features/news/daily_brief.dart';
 import 'features/news/morning_brief.dart';
+import 'features/news/earnings_summarizer.dart';
 import 'features/news/news_explainer.dart';
 import 'features/news/watch_news.dart';
 import 'features/notes/notes_store.dart';
@@ -83,6 +84,7 @@ class AppServices {
     DailyBrief Function(WatchNewsService news)? dailyBrief,
     HoldingsReader? holdingsReader,
     NewsExplainer? newsExplainer,
+    EarningsSummarizer? earningsSummarizer,
   }) : fx = fx ?? FxService(),
        updates = updates ?? UpdateService(config: config),
        portfolio = portfolio ?? PortfolioStore(),
@@ -94,6 +96,7 @@ class AppServices {
        chat = chat ?? AnalysisChat(config: config, client: backend?.authenticated),
        holdingsReader = holdingsReader ?? HoldingsReader(config: config, client: backend?.authenticated),
        newsExplainer = newsExplainer ?? NewsExplainer(config: config, client: backend?.authenticated),
+       earningsSummarizer = earningsSummarizer ?? EarningsSummarizer(config: config, client: backend?.authenticated),
        telemetry = telemetry ?? Telemetry(preferences: preferences, sink: backend?.sendTelemetry) {
     this.telemetry.versionOf ??= () => this.updates.currentVersion;
     events = EventsService(
@@ -286,6 +289,9 @@ class AppServices {
 
   /// „Mit jelent ez?” – rövid AI-magyarázat egy hírről.
   final NewsExplainer newsExplainer;
+
+  /// „Mi volt a legutóbbi gyorsjelentésben?” – AI-összefoglaló webes forrásokkal.
+  final EarningsSummarizer earningsSummarizer;
 
   /// Saját jegyzetek részvényenként (csak a készüléken).
   final NotesStore notes;
