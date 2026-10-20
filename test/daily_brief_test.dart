@@ -21,6 +21,7 @@ import 'package:reszveny/features/news/daily_brief.dart';
 import 'package:reszveny/features/events/events_service.dart';
 import 'package:reszveny/features/fx/fx_service.dart';
 import 'package:reszveny/features/portfolio/portfolio_store.dart';
+import 'package:reszveny/features/news/research_follow_up.dart';
 import 'package:reszveny/features/news/watch_news.dart';
 import 'package:reszveny/features/recognition/stock_recognizer.dart';
 
@@ -84,11 +85,17 @@ void main() {
     final sent = <Map<String, dynamic>>[];
     final client = MockClient((req) async {
       sent.add({'url': req.url.toString(), 'body': jsonDecode(req.body)});
+      final question = req.body.contains('Question:');
       return http.Response(
         jsonEncode({
           'stop_reason': 'end_turn',
           'content': [
-            {'type': 'text', 'text': 'A quiet day overall.\n- NVDA +3.0%: results beat estimates.'},
+            {
+              'type': 'text',
+              'text': question
+                  ? 'Because the data-centre guidance was raised.'
+                  : 'A quiet day overall.\n- NVDA +3.0%: results beat estimates.',
+            },
           ],
         }),
         200,
@@ -110,6 +117,7 @@ void main() {
       entitlements: EntitlementService(),
       // Az összefoglaló a teszt utánzott kliensével.
       dailyBrief: (news) => DailyBrief(config: config, marketData: market, news: news, client: client),
+      researchFollowUp: ResearchFollowUp(config: config, client: client),
     );
     await tester.pumpWidget(WhatStockApp(services: services));
     await tester.pumpAndSettle();
@@ -123,6 +131,14 @@ void main() {
     expect(user, isNot(contains('reports_in_days')));
     expect(user, isNot(contains('"reported"')));
     expect(find.byKey(const ValueKey('daily-brief-refresh')), findsOneWidget);
+    // Kérdés az összefoglalóról: a kártya alján, a szöveggel együtt megy a kérdés.
+    await tester.enterText(find.byKey(const ValueKey('followup-field')), 'Why did NVDA rise?');
+    await tester.tap(find.byKey(const ValueKey('followup-send')));
+    await tester.pumpAndSettle();
+    expect(find.text('Because the data-centre guidance was raised.'), findsOneWidget);
+    final asked = ((sent.last['body'] as Map)['messages'] as List).single as Map;
+    expect(asked['content'], contains('Subject: Today with your stocks'));
+    expect(asked['content'], contains('Note:\nA quiet day overall.'));
 
     // Újraindítás után a mai összefoglaló megmarad.
     final again = DailyBrief(config: config, marketData: market, news: services.news, client: client);

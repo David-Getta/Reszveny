@@ -6,6 +6,7 @@ import '../../l10n/error_messages.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../l10n/supported_locales.dart';
 import '../../theme/app_theme.dart';
+import '../../widgets/research_sheet.dart' show ResearchFollowUpPanel;
 
 /// „A nap a részvényeiddel” kártya a kezdőképernyőn: gombnyomásra rövid
 /// AI-összefoglaló a figyelt részvények mai mozgásáról és híreiről; a mai
@@ -88,6 +89,16 @@ class _DailyBriefCardState extends State<DailyBriefCard> {
                     SelectableText(last.text, style: theme.textTheme.bodyMedium?.copyWith(height: 1.45)),
                     const SizedBox(height: 6),
                     Text(fmt.dateTime(last.at), style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+                    // Kérdés az összefoglalóról („miért esett az NVDA?”), a napi kérdéskeretből.
+                    if (services.config.hasAnthropicKey) ...[
+                      const SizedBox(height: 10),
+                      ResearchFollowUpPanel(
+                        key: const ValueKey('daily-brief-followup'),
+                        note: last.text,
+                        subject: l10n.briefTitle,
+                        sourceKeyPrefix: 'daily-brief-source',
+                      ),
+                    ],
                   ] else ...[
                     Text(l10n.briefHint, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
                     const SizedBox(height: 10),
