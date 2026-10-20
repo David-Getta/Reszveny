@@ -1315,7 +1315,32 @@ void main() {
   });
 
   testWidgets('comparing three stocks (hungarian, phone)', (tester) async {
-    await pumpApp(tester, _services(locale: const Locale('hu')), const Size(430, 932));
+    const config = AppConfig(backendUrl: 'https://api.test');
+    final followUp = ResearchFollowUp(
+      config: config,
+      client: MockClient(
+        (req) async => http.Response(
+          jsonEncode({
+            'stop_reason': 'end_turn',
+            'content': [
+              {
+                'type': 'text',
+                'text':
+                    'Értékeltségben az Apple az olcsóbb: alacsonyabb az előretekintő P/E-je és a P/S-e, miközben a '
+                    'tőkearányos megtérülése a legmagasabb. Az NVIDIA a növekedésben vezet, de ezt az ára is tükrözi.',
+              },
+            ],
+          }),
+          200,
+          headers: {'content-type': 'application/json; charset=utf-8'},
+        ),
+      ),
+    );
+    await pumpApp(
+      tester,
+      _services(locale: const Locale('hu'), backend: true, researchFollowUp: followUp),
+      const Size(430, 932),
+    );
     await tester.enterText(find.byType(TextField), 'AAPL');
     await tester.testTextInput.receiveAction(TextInputAction.search);
     await tester.pumpAndSettle();
@@ -1328,6 +1353,15 @@ void main() {
     await tester.tap(find.byKey(const ValueKey('compare-pick-NVDA')));
     await tester.pumpAndSettle();
     await _shot(tester, 'compare_phone_hu');
+    // Kérdés az összehasonlításról: a táblázat alatt.
+    final panel = find.byKey(const ValueKey('compare-followup'));
+    await tester.scrollUntilVisible(panel, 300, scrollable: find.byType(Scrollable).first);
+    await tester.enterText(find.byKey(const ValueKey('followup-field')), 'Melyik az olcsóbb és miért?');
+    await tester.tap(find.byKey(const ValueKey('followup-send')));
+    await tester.pumpAndSettle();
+    await tester.drag(find.byType(Scrollable).first, const Offset(0, -600));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'compare_question_phone_hu');
   });
 
   testWidgets('first launch onboarding (hungarian, phone)', (tester) async {

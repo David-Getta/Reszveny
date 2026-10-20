@@ -66,6 +66,10 @@ void main() {
       find.text('Positions without a price or exchange rate are left out of the totals. No current price for 1796.HK.'),
       findsOneWidget,
     );
+    // Friss negyedéves eredmény a pozíció alatt (a demó: 1,15 a várt 1,12 helyett).
+    expect(find.byKey(const ValueKey('position-result-AAPL')), findsOneWidget);
+    expect(find.text('EPS +2.7%'), findsOneWidget);
+    expect(find.byKey(const ValueKey('position-result-1796.HK')), findsNothing);
   });
 
   testWidgets('only unpriced positions: no "today" and "gain" lines, just the note', (tester) async {

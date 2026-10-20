@@ -912,6 +912,21 @@ class _PositionTile extends StatelessWidget {
                       l10n.positionDividend(fmt.money(d, ccy)),
                       style: theme.textTheme.bodySmall?.copyWith(color: p.positive),
                     ),
+                  // Friss negyedéves eredmény (mint a Kedvencek listán): „EPS +2,7%”.
+                  if (AppServices.of(context).events.recent.where((r) => r.symbol == pos.symbol).firstOrNull
+                      case final r? when r.result.surprise != null)
+                    Tooltip(
+                      message:
+                          '${r.result.beat == true ? l10n.earningsResultBeat(pos.symbol) : l10n.earningsResultMiss(pos.symbol)}'
+                          ' · ${l10n.earningsResultBody(fmt.number(r.result.actual), fmt.number(r.result.estimate))}',
+                      child: Text(
+                        'EPS ${fmt.percent(r.result.surprise, withSign: true, decimals: 1)}',
+                        key: ValueKey('position-result-${pos.symbol}'),
+                        style: theme.textTheme.labelSmall?.copyWith(
+                          color: r.result.beat == true ? p.positive : p.negative,
+                        ),
+                      ),
+                    ),
                 ],
               ),
             ),
