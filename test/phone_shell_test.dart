@@ -183,6 +183,11 @@ void main() {
     await tapSaved(tester, 'MSFT');
     expect(find.byKey(const ValueKey('stale-new-results')), findsOneWidget);
     expect(find.textContaining('MSFT has published new quarterly results since this analysis'), findsOneWidget);
+    // A kérdésből rögtön kérhető a gyorsjelentés AI-összefoglalója.
+    await tester.tap(find.byKey(const ValueKey('stale-summary')));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('earnings-summary-sheet')), findsOneWidget);
+    expect(find.text('What was in the latest report?'), findsWidgets);
   });
 
   testWidgets('results still to come: no badge', (tester) async {

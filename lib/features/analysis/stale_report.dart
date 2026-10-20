@@ -5,6 +5,7 @@ import '../../core/models/stock_report.dart';
 import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
+import '../stock_detail/widgets/earnings_card.dart' show showEarningsSummary;
 
 /// „3 órája”, „2 napja”: mennyi ideje készült az elemzés.
 String analysisAgeText(AppLocalizations l10n, DateTime generatedAt, {DateTime? now}) {
@@ -16,6 +17,39 @@ String analysisAgeText(AppLocalizations l10n, DateTime generatedAt, {DateTime? n
 /// A régi elemzés kérdésének szövege a gombok fölé: mennyibe kerül az új.
 String _costLine(AppLocalizations l10n, AppServices services, String symbol) =>
     l10n.aiDepthCost(services.analysisOptions(symbol: symbol).cost);
+
+/// „Mi volt a legutóbbi gyorsjelentésben?” link, ha az elemzés óta új jelentés
+/// jött: az AI-összefoglaló lapja nyílik (a legutóbbi negyedévhez kötve).
+class _SummaryLink extends StatelessWidget {
+  const _SummaryLink({required this.report});
+
+  final StockReport report;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    return TextButton.icon(
+      key: const ValueKey('stale-summary'),
+      style: TextButton.styleFrom(
+        padding: const EdgeInsets.symmetric(horizontal: 8),
+        visualDensity: VisualDensity.compact,
+      ),
+      icon: const Icon(Icons.auto_awesome_outlined, size: 18),
+      label: Text(l10n.earningsSummaryButton),
+      onPressed: () async {
+        final services = AppServices.of(context);
+        DateTime? period;
+        try {
+          period = (await services.marketData.earnings(report.symbol)).history.firstOrNull?.period;
+        } catch (_) {
+          period = null;
+        }
+        if (!context.mounted) return;
+        await showEarningsSummary(context, symbol: report.symbol, companyName: report.symbol, lastPeriod: period);
+      },
+    );
+  }
+}
 
 /// Párbeszéd egy 12 óránál régebbi elemzés megnyitásakor: `true` = új elemzés,
 /// `false` = a korábbi jó lesz, `null` = mégsem nyitja meg.
@@ -40,7 +74,11 @@ Future<bool?> askStaleChoice(BuildContext context, StockReport report) {
               key: const ValueKey('stale-new-results'),
               style: TextStyle(color: AppPalette.of(context).accent, fontWeight: FontWeight.w600),
             ),
-            const SizedBox(height: 10),
+            Align(
+              alignment: AlignmentDirectional.centerStart,
+              child: _SummaryLink(report: report),
+            ),
+            const SizedBox(height: 6),
           ],
           Text(l10n.staleBody(analysisAgeText(l10n, report.generatedAt))),
         ],
@@ -114,6 +152,18 @@ class StaleReportPrompt extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 6),
+          if (services.reports.hasNewResults(report)) ...[
+            Text(
+              l10n.staleNewResults(
+                report.symbol,
+                Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable).date(report.nextEarnings),
+              ),
+              key: const ValueKey('stale-new-results'),
+              style: theme.textTheme.bodyMedium?.copyWith(color: p.accent, fontWeight: FontWeight.w600),
+            ),
+            _SummaryLink(report: report),
+            const SizedBox(height: 4),
+          ],
           Text(
             l10n.staleBody(analysisAgeText(l10n, report.generatedAt)),
             style: theme.textTheme.bodyMedium?.copyWith(color: p.muted),

@@ -161,6 +161,8 @@ Future<void> showEarningsSummary(
     language: language,
     lastPeriod: lastPeriod,
   );
+  // A hibát a lap FutureBuildere mutatja; addig ne számítson kezeletlennek.
+  answer.ignore();
   services.telemetry.track('earnings_summary');
   return showModalBottomSheet<void>(
     context: context,
