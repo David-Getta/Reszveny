@@ -38,6 +38,7 @@ import 'package:reszveny/features/alerts/price_alert.dart';
 import 'package:reszveny/features/fx/fx_service.dart';
 import 'package:reszveny/features/market_data/demo_market_data_provider.dart';
 import 'package:reszveny/features/news/earnings_summarizer.dart';
+import 'package:reszveny/features/news/research_follow_up.dart';
 import 'package:reszveny/features/portfolio/portfolio_page.dart';
 import 'package:reszveny/features/portfolio/portfolio_store.dart';
 import 'package:reszveny/features/recognition/stock_recognizer.dart';
@@ -153,6 +154,7 @@ AppServices _services({
   CaptureService? capture,
   HoldingsReader? holdingsReader,
   EarningsSummarizer? earningsSummarizer,
+  ResearchFollowUp? researchFollowUp,
 }) {
   final ent = _entitlements();
   // Backend-módban fiók kártya és jogi linkek; a szerver egy utánzat.
@@ -190,6 +192,7 @@ AppServices _services({
     billing: DemoBillingService(latency: Duration.zero),
     chat: chat,
     earningsSummarizer: earningsSummarizer,
+    researchFollowUp: researchFollowUp,
   );
 }
 
@@ -1159,13 +1162,19 @@ void main() {
   });
 
   testWidgets('latest earnings report summary (hungarian, phone)', (tester) async {
-    final summarizer = EarningsSummarizer(
-      config: const AppConfig(backendUrl: 'https://api.test'),
-      client: MockClient(
-        (req) async => http.Response(
-          jsonEncode({
-            'stop_reason': 'end_turn',
-            'content': [
+    final client = MockClient(
+      (req) async => http.Response(
+        jsonEncode({
+          'stop_reason': 'end_turn',
+          'content': [
+            if (req.body.contains('Question:'))
+              {
+                'type': 'text',
+                'text':
+                    'A számok jók voltak, de a cég a karácsonyi negyedévre a vártnál óvatosabb kilátást adott, '
+                    'és a kínai eladások lassulása is nyomta a hangulatot. A piac előre a gyengébb kilátást árazta.',
+              }
+            else
               {
                 'type': 'text',
                 'text':
@@ -1183,14 +1192,20 @@ void main() {
                   {'url': 'https://www.reuters.com/technology/apple-results', 'title': 'Apple beats estimates'},
                 ],
               },
-            ],
-          }),
-          200,
-          headers: {'content-type': 'application/json; charset=utf-8'},
-        ),
+          ],
+        }),
+        200,
+        headers: {'content-type': 'application/json; charset=utf-8'},
       ),
     );
-    await pumpApp(tester, _services(locale: const Locale('hu'), earningsSummarizer: summarizer), const Size(430, 932));
+    const config = AppConfig(backendUrl: 'https://api.test');
+    final summarizer = EarningsSummarizer(config: config, client: client);
+    final followUp = ResearchFollowUp(config: config, client: client);
+    await pumpApp(
+      tester,
+      _services(locale: const Locale('hu'), earningsSummarizer: summarizer, researchFollowUp: followUp),
+      const Size(430, 932),
+    );
     await tester.enterText(find.byType(TextField), 'AAPL');
     await tester.testTextInput.receiveAction(TextInputAction.search);
     await tester.pumpAndSettle();
@@ -1200,6 +1215,16 @@ void main() {
     await tester.tap(button);
     await tester.pumpAndSettle();
     await _shot(tester, 'earnings_summary_phone_hu');
+    // Kérdés az összefoglalóról: a válasz a lap alján.
+    await tester.enterText(
+      find.byKey(const ValueKey('followup-field')),
+      'Miért esett az árfolyam a jó számok ellenére?',
+    );
+    await tester.tap(find.byKey(const ValueKey('followup-send')));
+    await tester.pumpAndSettle();
+    await tester.drag(find.byKey(const ValueKey('earnings-summary-sheet')), const Offset(0, -400));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'earnings_followup_phone_hu');
   });
 
   testWidgets('a description in the search: the "ask the AI" suggestion (hungarian, phone)', (tester) async {
