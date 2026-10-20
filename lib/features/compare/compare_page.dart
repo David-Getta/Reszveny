@@ -9,6 +9,7 @@ import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../l10n/supported_locales.dart';
 import '../../theme/app_theme.dart';
+import '../../widgets/research_sheet.dart' show ResearchFollowUpPanel;
 import '../stock_detail/widgets/outlook_view.dart';
 import 'compare_rows.dart';
 
@@ -247,6 +248,16 @@ class _ComparePageState extends State<ComparePage> {
             ],
           ),
         ),
+        // Kérdés az összehasonlításról (a táblázat szövegként megy az AI-nak).
+        if (AppServices.of(context).config.hasAnthropicKey && stocks.any((d) => d != null)) ...[
+          const SizedBox(height: 20),
+          ResearchFollowUpPanel(
+            key: const ValueKey('compare-followup'),
+            note: compareRowsAsText(_symbols, rows),
+            subject: _symbols.join(' vs '),
+            sourceKeyPrefix: 'compare-followup-source',
+          ),
+        ],
       ],
     );
   }

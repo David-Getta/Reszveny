@@ -119,3 +119,10 @@ List<CompareRow> buildCompareRows(
     ],
   ];
 }
+
+/// Az összehasonlítás szövegként (az AI-kérdéshez): soronként a felirat és az
+/// oszlopok értékei, a hiányzó érték kötőjellel.
+String compareRowsAsText(List<String> symbols, List<CompareRow> rows) => [
+  'Columns: ${symbols.join(' | ')}',
+  for (final r in rows) '${r.label}: ${r.values.map((v) => v ?? '-').join(' | ')}',
+].join('\n');

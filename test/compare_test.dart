@@ -1,5 +1,9 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:http/testing.dart';
+import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:reszveny/app.dart';
 import 'package:reszveny/app_services.dart';
@@ -14,6 +18,7 @@ import 'package:reszveny/features/billing/entitlement_service.dart';
 import 'package:reszveny/features/capture/capture_service.dart';
 import 'package:reszveny/features/compare/compare_rows.dart';
 import 'package:reszveny/features/market_data/demo_market_data_provider.dart';
+import 'package:reszveny/features/news/research_follow_up.dart';
 import 'package:reszveny/features/recognition/stock_recognizer.dart';
 import 'package:reszveny/l10n/generated/app_localizations.dart';
 
@@ -70,6 +75,11 @@ void main() {
     expect(surprise.values[2], isNull);
     expect(surprise.best, isNotNull);
     expect(withEarnings.firstWhere((r) => r.label == 'Next report').values[0], isNotNull);
+    // Szövegként az AI-kérdéshez: oszlopok és soronként az értékek.
+    final text = compareRowsAsText(['AAPL', 'MSFT', 'X'], rows);
+    expect(text, startsWith('Columns: AAPL | MSFT | X\n'));
+    expect(text, contains('P/E (trailing): 35.20 | '));
+    expect(text, contains(' | -\n'));
   });
 
   testWidgets('compare from a stock page: pick a second stock, then remove one', (tester) async {
@@ -122,6 +132,58 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text('Microsoft Corporation'), findsNothing);
     expect(find.byKey(const ValueKey('compare-add')), findsOneWidget);
+  });
+
+  testWidgets('a question about the comparison: the table goes to the AI as text, the answer shows up', (tester) async {
+    tester.view.physicalSize = const Size(1200, 3000);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    const config = AppConfig(backendUrl: 'https://api.test');
+    final asked = <String>[];
+    final client = MockClient((req) async {
+      asked.add((((jsonDecode(req.body) as Map)['messages'] as List).single as Map)['content'] as String);
+      return http.Response(
+        jsonEncode({
+          'stop_reason': 'end_turn',
+          'content': [
+            {'type': 'text', 'text': 'Microsoft trades at a lower trailing P/E, but Apple grew faster last year.'},
+          ],
+        }),
+        200,
+        headers: {'content-type': 'application/json; charset=utf-8'},
+      );
+    });
+    final services = AppServices(
+      alertNotifier: FakeNotifier(),
+      config: config,
+      capture: CaptureService(),
+      recognizer: _NoRecognizer(),
+      marketData: DemoMarketDataProvider(latency: Duration.zero),
+      locale: LocaleController(),
+      preferences: AppPreferences(favorites: const ['MSFT']),
+      desktop: DesktopIntegration(),
+      reports: ReportStore(analyst: ClaudeStockAnalyst(config: config)),
+      entitlements: EntitlementService(),
+      researchFollowUp: ResearchFollowUp(config: config, client: client),
+    );
+    await tester.pumpWidget(WhatStockApp(services: services));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byType(TextField), 'AAPL');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('compare-open')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('compare-pick-MSFT')));
+    await tester.pumpAndSettle();
+    final panel = find.byKey(const ValueKey('compare-followup'));
+    await tester.scrollUntilVisible(panel, 300, scrollable: find.byType(Scrollable).first);
+    await tester.enterText(find.byKey(const ValueKey('followup-field')), 'Which one is cheaper?');
+    await tester.tap(find.byKey(const ValueKey('followup-send')));
+    await tester.pumpAndSettle();
+    expect(find.text('Microsoft trades at a lower trailing P/E, but Apple grew faster last year.'), findsOneWidget);
+    expect(asked.single, contains('Subject: AAPL vs MSFT'));
+    expect(asked.single, contains('Columns: AAPL | MSFT'));
+    expect(asked.single, contains('P/E (trailing): 35.20 | 37.90'));
   });
 
   testWidgets('similar companies on a stock page: open one, or compare them all', (tester) async {

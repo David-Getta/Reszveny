@@ -18,7 +18,7 @@ class ResearchFollowUp {
   static const maxQuestionChars = 300;
 
   static const systemPrompt = '''
-You answer a private investor's follow-up question about a short research note the app showed them (a news explanation, a quarterly results summary or a description of a fund). The note is given below the question.
+You answer a private investor's follow-up question about a short research note the app showed them (a news explanation, a quarterly results summary, a description of a fund, or a side-by-side table of key figures of a few stocks). The note is given below the question.
 Rules:
 - Answer in the requested language, plainly, in at most about 90 words; "- " bullets are fine.
 - Build on the note; use the web search only if the question needs a fact the note does not contain, and say what you found.

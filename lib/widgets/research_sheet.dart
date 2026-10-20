@@ -61,7 +61,11 @@ Future<void> showResearchSheet(
                         SourceLinks(sources: r.sources, keyPrefix: sourceKeyPrefix),
                         if (r.text.isNotEmpty) ...[
                           const SizedBox(height: 12),
-                          _FollowUp(note: r.text, subject: eyebrow, sourceKeyPrefix: '$sourceKeyPrefix-followup'),
+                          ResearchFollowUpPanel(
+                            note: r.text,
+                            subject: eyebrow,
+                            sourceKeyPrefix: '$sourceKeyPrefix-followup',
+                          ),
                         ],
                       ],
                     );
@@ -78,19 +82,25 @@ Future<void> showResearchSheet(
   );
 }
 
-/// Kérdés a kész szövegről: mező, küldés, alatta a válasz(ok) a forrásokkal.
-class _FollowUp extends StatefulWidget {
-  const _FollowUp({required this.note, required this.subject, required this.sourceKeyPrefix});
+/// Kérdés egy kész szövegről (kutatási jegyzet vagy összehasonlítás): mező,
+/// küldés, alatta a válasz(ok) a forrásokkal. A napi kérdéskeretből.
+class ResearchFollowUpPanel extends StatefulWidget {
+  const ResearchFollowUpPanel({
+    super.key,
+    required this.note,
+    required this.subject,
+    this.sourceKeyPrefix = 'followup-source',
+  });
 
   final String note;
   final String subject;
   final String sourceKeyPrefix;
 
   @override
-  State<_FollowUp> createState() => _FollowUpState();
+  State<ResearchFollowUpPanel> createState() => _ResearchFollowUpPanelState();
 }
 
-class _FollowUpState extends State<_FollowUp> {
+class _ResearchFollowUpPanelState extends State<ResearchFollowUpPanel> {
   final _controller = TextEditingController();
   final _turns = <({String question, Future<ResearchResult> answer})>[];
 
