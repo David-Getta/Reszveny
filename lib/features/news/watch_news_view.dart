@@ -3,15 +3,13 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../app_services.dart';
 import '../../core/models/stock_candidate.dart';
-import '../../l10n/error_messages.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../l10n/supported_locales.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/centered_scroll.dart';
 import '../../widgets/desktop_chrome.dart';
-import '../../widgets/source_links.dart';
+import '../../widgets/research_sheet.dart';
 import '../analysis/stale_report.dart' show analysisAgeText;
-import 'news_explainer.dart' show NewsExplanation;
 import 'watch_news.dart';
 
 /// „Hírek a részvényeidről” a kezdőképernyőn: a portfólió és a kedvencek
@@ -149,53 +147,18 @@ class WatchNewsTile extends StatelessWidget {
 /// A hír magyarázata alsó lapon: a cím, alatta az AI néhány mondata.
 Future<void> showNewsExplanation(BuildContext context, WatchedNews news) {
   final services = AppServices.of(context);
+  final l10n = AppLocalizations.of(context);
   final language = SupportedLocales.languageFor(Localizations.localeOf(context)).englishName;
   final answer = services.newsExplainer.explain(news, language: language);
   services.telemetry.track('news_explained');
-  return showModalBottomSheet<void>(
-    context: context,
-    showDragHandle: true,
-    isScrollControlled: true,
-    builder: (context) {
-      final l10n = AppLocalizations.of(context);
-      final p = AppPalette.of(context);
-      final theme = Theme.of(context);
-      return SafeArea(
-        child: SingleChildScrollView(
-          padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
-          child: Column(
-            key: const ValueKey('news-explanation'),
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text('${news.symbol} · ${l10n.newsExplain}', style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),
-              const SizedBox(height: 6),
-              Text(news.item.headline, style: theme.textTheme.titleMedium),
-              const SizedBox(height: 14),
-              FutureBuilder<NewsExplanation>(
-                future: answer,
-                builder: (context, snap) {
-                  if (snap.hasError) {
-                    return Text(errorMessage(l10n, snap.error!), style: TextStyle(color: p.negative));
-                  }
-                  final e = snap.data;
-                  if (e == null) return const LinearProgressIndicator();
-                  return Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(e.text, style: theme.textTheme.bodyLarge?.copyWith(height: 1.45)),
-                      // A webkeresés forrásai: koppintásra megnyílnak a böngészőben.
-                      SourceLinks(sources: e.sources, keyPrefix: 'news-source'),
-                    ],
-                  );
-                },
-              ),
-              const SizedBox(height: 14),
-              Text(l10n.newsExplainNoteResearch, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
-            ],
-          ),
-        ),
-      );
-    },
+  return showResearchSheet(
+    context,
+    sheetKey: const ValueKey('news-explanation'),
+    eyebrow: '${news.symbol} · ${l10n.newsExplain}',
+    title: news.item.headline,
+    answer: answer,
+    note: l10n.newsExplainNoteResearch,
+    sourceKeyPrefix: 'news-source',
   );
 }
 

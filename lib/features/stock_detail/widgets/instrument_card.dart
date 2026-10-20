@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 
 import '../../../app_services.dart';
-import '../../../l10n/error_messages.dart';
 import '../../../l10n/generated/app_localizations.dart';
 import '../../../l10n/supported_locales.dart';
 import '../../../theme/app_theme.dart';
-import '../../../widgets/source_links.dart';
-import '../../news/research_store.dart' show ResearchResult;
+import '../../../widgets/research_sheet.dart';
 import 'section_card.dart';
 
 /// „Mi ez a papír?” kártya olyan tickernél, amelyhez nincs cégprofil (ETF, alap,
@@ -51,6 +49,7 @@ Future<void> showInstrumentExplanation(
   String? exchange,
 }) {
   final services = AppServices.of(context);
+  final l10n = AppLocalizations.of(context);
   final language = SupportedLocales.languageFor(Localizations.localeOf(context)).englishName;
   final answer = services.instrumentExplainer.explain(
     symbol: symbol,
@@ -58,54 +57,14 @@ Future<void> showInstrumentExplanation(
     language: language,
     exchange: exchange,
   );
-  // A hibát a lap FutureBuildere mutatja; addig ne számítson kezeletlennek.
-  answer.ignore();
   services.telemetry.track('instrument_explained');
-  return showModalBottomSheet<void>(
-    context: context,
-    showDragHandle: true,
-    isScrollControlled: true,
-    builder: (context) {
-      final l10n = AppLocalizations.of(context);
-      final p = AppPalette.of(context);
-      final theme = Theme.of(context);
-      return SafeArea(
-        child: SingleChildScrollView(
-          padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
-          child: Column(
-            key: const ValueKey('instrument-sheet'),
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                name.isEmpty || name == symbol ? symbol : '$symbol · $name',
-                style: theme.textTheme.labelLarge?.copyWith(color: p.muted),
-              ),
-              const SizedBox(height: 6),
-              Text(l10n.instrumentAsk, style: theme.textTheme.titleMedium),
-              const SizedBox(height: 14),
-              FutureBuilder<ResearchResult>(
-                future: answer,
-                builder: (context, snap) {
-                  if (snap.hasError) {
-                    return Text(errorMessage(l10n, snap.error!), style: TextStyle(color: p.negative));
-                  }
-                  final r = snap.data;
-                  if (r == null) return const LinearProgressIndicator();
-                  return Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      SelectableText(r.text, style: theme.textTheme.bodyLarge?.copyWith(height: 1.45)),
-                      SourceLinks(sources: r.sources, keyPrefix: 'instrument-source'),
-                    ],
-                  );
-                },
-              ),
-              const SizedBox(height: 14),
-              Text(l10n.instrumentNote, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
-            ],
-          ),
-        ),
-      );
-    },
+  return showResearchSheet(
+    context,
+    sheetKey: const ValueKey('instrument-sheet'),
+    eyebrow: name.isEmpty || name == symbol ? symbol : '$symbol · $name',
+    title: l10n.instrumentAsk,
+    answer: answer,
+    note: l10n.instrumentNote,
+    sourceKeyPrefix: 'instrument-source',
   );
 }
