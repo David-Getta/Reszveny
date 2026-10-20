@@ -116,6 +116,12 @@ class AppServices {
         dailyBrief?.call(news) ??
         DailyBrief(config: config, marketData: marketData, news: news, client: backend?.authenticated);
     brief.upcoming ??= () => events.events;
+    brief.fx ??= () {
+      final pair = FxService.homePair(
+        displayCurrency(locale.effective(WidgetsBinding.instance.platformDispatcher.locale)),
+      );
+      return this.fx.recent(pair.$1, pair.$2);
+    };
     alertMonitor = AlertMonitor(
       store: this.alerts,
       marketData: marketData,

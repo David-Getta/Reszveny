@@ -19,6 +19,7 @@ import 'package:reszveny/features/capture/capture_service.dart';
 import 'package:reszveny/features/market_data/demo_market_data_provider.dart';
 import 'package:reszveny/features/news/daily_brief.dart';
 import 'package:reszveny/features/events/events_service.dart';
+import 'package:reszveny/features/fx/fx_service.dart';
 import 'package:reszveny/features/portfolio/portfolio_store.dart';
 import 'package:reszveny/features/news/watch_news.dart';
 import 'package:reszveny/features/recognition/stock_recognizer.dart';
@@ -61,9 +62,12 @@ void main() {
       ],
       language: 'Hungarian',
       today: DateTime(2026, 10, 16),
+      homeCurrency: (pair: 'USD/HUF', rate: 361.0, changePercent: 0.2778),
     );
     final user = ((body['messages'] as List).single as Map)['content'] as String;
     expect(user, contains('Language: Hungarian'));
+    expect(user, contains('Home currency (JSON): {"pair":"USD/HUF","rate":361.0,"change_today_pct":0.28}'));
+    expect(DailyBrief.systemPrompt, contains('"home_currency"'));
     expect(user, contains('"symbol":"NVDA","change_today_pct":2.98,"price":187.6,"currency":"USD"'));
     expect(user, contains('"headlines":["Nvidia beats"]'));
     expect(user, contains('{"symbol":"OTP","headlines":[],"reports_in_days":1}'));
@@ -154,12 +158,20 @@ void main() {
             news: WatchNewsService(marketData: market, preferences: prefs, portfolio: PortfolioStore()),
             client: client,
           )
+          ..fx = () async {
+            return [
+              FxRate(from: 'USD', to: 'HUF', rate: 360, date: DateTime(2026, 10, 19)),
+              FxRate(from: 'USD', to: 'HUF', rate: 361.8, date: DateTime(2026, 10, 20)),
+            ];
+          }
           ..upcoming = () => [
             UpcomingEvent(symbol: 'AAPL', date: today, kind: UpcomingEventKind.earnings),
             UpcomingEvent(symbol: 'MSFT', date: today.add(const Duration(days: 3)), kind: UpcomingEventKind.earnings),
           ];
     await brief.generate(symbols: ['AAPL', 'MSFT'], language: 'English');
     final user = sent.single;
+    // A saját devizapár napi mozgása is az adatok között (+0,5%).
+    expect(user, contains('"pair":"USD/HUF","rate":361.8,"change_today_pct":0.5'));
     // A demó utolsó negyedéve: 1,15 a várt 1,12 helyett.
     expect(user, contains('"reported":{"eps":1.15,"expected_eps":1.12,"beat":true}'));
     expect(user, contains('"reports_in_days":0'));

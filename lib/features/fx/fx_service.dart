@@ -96,6 +96,13 @@ class FxService extends ChangeNotifier {
     });
   }
 
+  /// A „saját” devizapár: a dollár a megjelenítési pénznemben (USD/HUF); ha az
+  /// dollár vagy nem jegyzett, akkor EUR/USD.
+  static (String, String) homePair(String? displayCurrency) {
+    final c = displayCurrency?.toUpperCase();
+    return c == null || c == 'USD' || !isSupported(c) ? ('EUR', 'USD') : ('USD', c);
+  }
+
   final Map<String, (DateTime, List<FxRate>)> _recent = {};
 
   /// Az utolsó napok árfolyamai (időrendben, legfeljebb [days] napra vissza),

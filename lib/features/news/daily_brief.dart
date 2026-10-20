@@ -10,6 +10,7 @@ import '../../core/models/analysis_extras.dart';
 import '../../core/models/stock_quote.dart';
 import '../analysis/claude_stock_analyst.dart';
 import '../events/events_service.dart';
+import '../fx/fx_service.dart';
 import '../market_data/market_data_provider.dart';
 import 'watch_news.dart';
 
@@ -52,6 +53,10 @@ class DailyBrief extends ChangeNotifier {
   /// A közelgő események (gyorsjelentések), ha vannak: a mai/holnapi jelentés
   /// és a friss eredmény is bekerül az összefoglalóba.
   List<UpcomingEvent> Function()? upcoming;
+
+  /// A saját devizapár utolsó napjai (USD a megjelenítési pénznemben), ha van:
+  /// a napi elmozdulás bekerül az adatok közé.
+  Future<List<FxRate>> Function()? fx;
 
   /// Ennyi napon belüli jelentés kerül szóba.
   static const earningsWithinDays = 7;
@@ -105,6 +110,7 @@ Rules:
 - Write in the requested language, the way a native financial journalist would brief a friend: plain words, no jargon.
 - 90-160 words. Start with one sentence on the overall picture, then "- " bullets for the notable movers (biggest absolute changes first, at most 5).
 - Explain a move only with what the headlines support; if no headline explains it, say the reason is not clear from the news. Never invent news, numbers or dates.
+- If "home_currency" is given and its daily move is at least 0.3%, add one clause about it in the opening sentence (for example that the forint weakened 0.5% against the dollar), because it changes what foreign holdings are worth in the reader's currency; otherwise leave it out.
 - A stock with "reported" data has just published quarterly results: say in its bullet whether earnings per share beat or missed expectations, with the two numbers. A stock with "reports_in_days" reports soon: mention the day briefly (0 = today, 1 = tomorrow). Mention other upcoming events only if a headline does.
 - Do not tell the reader to buy or sell; you do not know their situation.
 - Plain text only: no headings, tables or Markdown emphasis.''';
@@ -115,6 +121,7 @@ Rules:
     required List<BriefStock> stocks,
     required String language,
     required DateTime today,
+    BriefFx? homeCurrency,
     String model = '',
   }) => {
     'model': model,
@@ -127,6 +134,7 @@ Rules:
         'role': 'user',
         'content':
             'Language: $language\nToday: ${today.toIso8601String().substring(0, 10)}\n'
+            '${homeCurrency == null ? '' : 'Home currency (JSON): ${jsonEncode({'pair': homeCurrency.pair, 'rate': homeCurrency.rate, if (homeCurrency.changePercent != null) 'change_today_pct': double.parse(homeCurrency.changePercent!.toStringAsFixed(2))})}\n'}'
             'Stocks (JSON): ${jsonEncode([
               for (final s in stocks) {
                   'symbol': s.symbol,
@@ -183,7 +191,28 @@ Rules:
           reported: reported,
         ));
       }
-      final body = requestBody(stocks: stocks, language: language, today: _clock(), model: config.anthropicModel);
+      BriefFx? home;
+      try {
+        final rates = await fx?.call() ?? const <FxRate>[];
+        if (rates.isNotEmpty) {
+          final last = rates.last;
+          final prev = rates.length > 1 ? rates[rates.length - 2] : null;
+          home = (
+            pair: '${last.from}/${last.to}',
+            rate: last.rate,
+            changePercent: prev == null ? null : (last.rate / prev.rate - 1) * 100,
+          );
+        }
+      } catch (_) {
+        home = null;
+      }
+      final body = requestBody(
+        stocks: stocks,
+        language: language,
+        today: _clock(),
+        homeCurrency: home,
+        model: config.anthropicModel,
+      );
       final text = await askText(config, _client, body);
       final brief = Brief(text: text, at: _clock(), language: language);
       _last = brief;
@@ -197,6 +226,9 @@ Rules:
     }
   }
 }
+
+/// A saját devizapár a napi összefoglalóhoz (pl. USD/HUF, 361,2, +0,3%).
+typedef BriefFx = ({String pair, double rate, double? changePercent});
 
 /// Egy részvény adatai a napi összefoglalóhoz.
 typedef BriefStock = ({

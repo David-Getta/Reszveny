@@ -23,10 +23,7 @@ class MarketsStrip extends StatefulWidget {
 
   /// A mutatott devizapár: a dollár a megjelenítési pénznemben (USD/HUF); ha az
   /// dollár vagy nem jegyzett, akkor EUR/USD.
-  static (String, String) fxPair(String? displayCurrency) {
-    final c = displayCurrency?.toUpperCase();
-    return c == null || c == 'USD' || !FxService.isSupported(c) ? ('EUR', 'USD') : ('USD', c);
-  }
+  static (String, String) fxPair(String? displayCurrency) => FxService.homePair(displayCurrency);
 
   @override
   State<MarketsStrip> createState() => _MarketsStripState();
