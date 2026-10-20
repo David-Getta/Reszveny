@@ -26,6 +26,9 @@ PANTAU SEMUANYA
 • Jadwal laporan keuangan dan pengingat untuk saham Anda, serta ringkasan mingguan lewat email
 • Catatan pribadi Anda untuk setiap saham, dan file cadangan yang bisa Anda simpan
 • Masuk dengan email Anda agar semuanya tersinkron di semua perangkat Anda
+• Ketik deskripsi seperti “tech 100 ETF” dan AI mencari tahu saham atau reksa dana mana yang Anda maksud; ETF dan reksa dana mendapat penjelasan sederhana “Apa ini?”
+• “Apa isi laporan terbaru?” – ringkasan AI atas laporan keuangan kuartalan beserta sumbernya, dan hasil terbaru saham Anda dalam sekali lihat
+• Ajukan pertanyaan lanjutan tentang catatan AI mana pun, dan tentang perbandingan
 
 DI KOMPUTER ANDA
 Di Mac dan Windows, WhatStock ada di bilah menu atau baki sistem: tekan pintasan dari mana saja, ketik kode saham atau tempel tangkapan layar, dan analisis pun terbuka.

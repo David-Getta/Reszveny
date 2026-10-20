@@ -20,6 +20,8 @@ import '../../l10n/supported_locales.dart';
 import '../../theme/app_theme.dart';
 import '../billing/usage_chip.dart';
 import '../home/candidate_sheet.dart';
+import '../events/events_service.dart';
+import '../events/events_view.dart' show eventWhen;
 import '../home/home_page.dart';
 import '../home/quick_bar.dart';
 import '../home/quick_search_controller.dart';
@@ -290,7 +292,10 @@ class _AppShellState extends State<AppShell> {
       quickSearch: l10n.trayQuickSearch,
       quit: l10n.trayQuit,
       tooltip: l10n.appTitle,
-      stocks: [for (final (i, s) in symbols.indexed) (symbol: s, label: trayStockLabel(s, quotes[i], fmt))],
+      stocks: [
+        for (final (i, s) in symbols.indexed)
+          (symbol: s, label: trayStockLabel(s, quotes[i], fmt, earningsWhen: _trayEarningsWhen(services, l10n, s))),
+      ],
       onStock: services.alertMonitor.requestOpen,
       portfolio: snapshot == null ? null : trayPortfolioLabel(l10n.portfolio, snapshot, fmt),
       onPortfolio: () {
@@ -298,6 +303,17 @@ class _AppShellState extends State<AppShell> {
         _openPortfolio();
       },
     );
+  }
+
+  /// A 7 napon belüli gyorsjelentés szövege a tálcamenühöz („Holnap”, „5 nap múlva”).
+  String? _trayEarningsWhen(AppServices services, AppLocalizations l10n, String symbol) {
+    final now = DateTime.now();
+    final today = DateTime(now.year, now.month, now.day);
+    final e = services.events.events
+        .where((e) => e.kind == UpcomingEventKind.earnings && e.symbol == symbol && !e.date.isBefore(today))
+        .where((e) => e.date.difference(today).inDays < 7)
+        .firstOrNull;
+    return e == null ? null : eventWhen(l10n, e.date, now);
   }
 
   void _openSymbol(StockCandidate candidate) {
@@ -735,10 +751,13 @@ String trayPortfolioLabel(String title, PortfolioSnapshot s, Fmt fmt) {
   return '$title   $arrow ${fmt.percent(c.abs())}   ${fmt.money(s.dayGain, s.currency, withSign: true)}';
 }
 
-String trayStockLabel(String symbol, StockQuote? q, Fmt fmt) {
-  if (q == null) return symbol;
+/// A tálcamenü egy sora: ticker, ár, napi változás; ha 7 napon belül
+/// gyorsjelentés jön, a végén „📅 Holnap” ([earningsWhen] a nyelv szövege).
+String trayStockLabel(String symbol, StockQuote? q, Fmt fmt, {String? earningsWhen}) {
+  final suffix = earningsWhen == null ? '' : '   📅 $earningsWhen';
+  if (q == null) return '$symbol$suffix';
   final c = q.changePercent;
-  if (c == null) return '$symbol   ${fmt.number(q.price)}';
+  if (c == null) return '$symbol   ${fmt.number(q.price)}$suffix';
   final arrow = c > 0 ? '▲' : (c < 0 ? '▼' : '•');
-  return '$symbol   ${fmt.number(q.price)}   $arrow ${fmt.percent(c.abs())}';
+  return '$symbol   ${fmt.number(q.price)}   $arrow ${fmt.percent(c.abs())}$suffix';
 }

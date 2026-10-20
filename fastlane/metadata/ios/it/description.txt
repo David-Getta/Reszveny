@@ -26,6 +26,9 @@ TIENI TUTTO SOTTO CONTROLLO
 • Date delle trimestrali e promemoria per i tuoi titoli, e un riepilogo settimanale via e-mail
 • Le tue note su ogni titolo e un file di backup da conservare
 • Accedi con la tua e-mail per avere tutto sincronizzato su tutti i tuoi dispositivi
+• Scrivi una descrizione come “tech 100 ETF” e l'IA capisce quale titolo o fondo intendi; ETF e fondi hanno una spiegazione in linguaggio semplice: “Che cos'è?”
+• “Cosa c'era nell'ultima trimestrale?” – un riepilogo IA dei risultati trimestrali con le fonti, e i risultati freschi dei tuoi titoli a colpo d'occhio
+• Fai domande su qualsiasi nota dell'IA, e anche su un confronto
 
 SUL TUO COMPUTER
 Su Mac e Windows, WhatStock vive nella barra dei menu o nell'area di notifica: premi la scorciatoia da qualsiasi punto, digita un ticker o incolla uno screenshot, e l'analisi si apre.

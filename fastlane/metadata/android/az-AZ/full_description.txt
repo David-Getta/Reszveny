@@ -26,6 +26,9 @@ Dərinliyi (qısa, standart və ya ətraflı) və səviyyəni (başlanğıc və 
 • Səhmləriniz üçün hesabat tarixləri və xatırlatmalar, həftəlik e-poçt xülasəsi
 • Hər səhm üzrə öz qeydləriniz və saxlaya biləcəyiniz ehtiyat nüsxə faylı
 • Hər şeyi bütün cihazlarınızda sinxron saxlamaq üçün e-poçtunuzla daxil olun
+• “tech 100 ETF” kimi bir təsvir yazın, AI hansı səhmi və ya fondu nəzərdə tutduğunuzu müəyyən edir; ETF-lər və fondlar üçün sadə dildə “Bu nədir?” izahı var
+• “Son hesabatda nə var idi?” – rüblük nəticələrin mənbələrlə AI xülasəsi və səhmlərinizin təzə nəticələri bir baxışda
+• İstənilən AI qeydi və müqayisə barədə əlavə suallar verin
 
 KOMPÜTERİNİZDƏ
 Mac və Windows-da WhatStock menyu panelində və ya sistem tepsisində yerləşir: istənilən yerdən qısayolu basın, tikeri yazın və ya ekran görüntüsünü yapışdırın – təhlil açılır.

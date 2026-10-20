@@ -26,6 +26,9 @@ KEEP TRACK
 • Results dates and reminders for your stocks, and a weekly summary by e-mail
 • Your own notes on each stock, and a backup file you can keep
 • Sign in with your e-mail to keep everything in sync on all your devices
+• Type a description like “tech 100 ETF” and the AI works out which stock or fund you mean; ETFs and funds get a plain-language “What is this?” explanation
+• “What was in the latest report?” – an AI summary of the quarterly results with sources, and your stocks’ fresh results at a glance
+• Ask follow-up questions about any AI note, and about a comparison
 
 ON YOUR COMPUTER
 On Mac and Windows, WhatStock lives in the menu bar or system tray: press the shortcut from anywhere, type a ticker or paste a screenshot, and the analysis opens.

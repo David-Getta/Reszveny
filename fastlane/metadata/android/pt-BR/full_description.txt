@@ -26,6 +26,9 @@ ACOMPANHE TUDO
 • Datas de balanço e lembretes para suas ações, e um resumo semanal por e-mail
 • Suas próprias anotações sobre cada ação, e um arquivo de backup que você pode guardar
 • Entre com seu e-mail para manter tudo sincronizado em todos os seus dispositivos
+• Digite uma descrição como “tech 100 ETF” e a IA descobre a que ação ou fundo você se refere; ETFs e fundos ganham uma explicação em linguagem simples: “O que é isso?”
+• “O que tinha no último balanço?” – um resumo com IA dos resultados trimestrais com fontes, e os resultados recentes das suas ações em um só olhar
+• Faça outras perguntas sobre qualquer nota da IA, e também sobre uma comparação
 
 NO SEU COMPUTADOR
 No Mac e no Windows, o WhatStock fica na barra de menus ou na bandeja do sistema: aperte o atalho de qualquer lugar, digite um ticker ou cole um print, e a análise abre.

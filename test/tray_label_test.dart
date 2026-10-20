@@ -17,6 +17,16 @@ void main() {
       'MSFT   512.30   ▼ 0.72%',
     );
     expect(trayStockLabel('OTP', null, fmt), 'OTP');
+    // Közeli gyorsjelentés a sor végén.
+    expect(
+      trayStockLabel(
+        'NVDA',
+        const StockQuote(symbol: 'NVDA', price: 187.6, changePercent: 2.98),
+        fmt,
+        earningsWhen: 'Tomorrow',
+      ),
+      'NVDA   187.60   ▲ 2.98%   📅 Tomorrow',
+    );
   });
 
   test('the portfolio line: the day’s change in percent and amount', () {

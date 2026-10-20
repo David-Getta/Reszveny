@@ -26,6 +26,9 @@ PRATITE SVE
 • Datumi rezultata i podsjetnici za vaše dionice te tjedni sažetak e-poštom
 • Vlastite bilješke za svaku dionicu i sigurnosna kopija u datoteci koju možete čuvati
 • Prijavite se e-poštom i sve će biti sinkronizirano na svim vašim uređajima
+• Upišite opis poput „tech 100 ETF” i AI shvaća koju dionicu ili fond mislite; ETF-ovi i fondovi dobivaju razumljivo objašnjenje „Što je ovo?”
+• „Što je bilo u zadnjem izvještaju?” – AI sažetak kvartalnih rezultata s izvorima, i svježi rezultati vaših dionica na prvi pogled
+• Postavljajte dodatna pitanja o bilo kojoj AI bilješci, kao i o usporedbi
 
 NA VAŠEM RAČUNALU
 Na Macu i Windowsu WhatStock je u traci izbornika ili na programskoj traci: pritisnite prečac s bilo kojeg mjesta, upišite oznaku dionice ili zalijepite snimku zaslona i analiza se otvara.

@@ -26,6 +26,9 @@ BĄDŹ NA BIEŻĄCO
 • Terminy wyników Twoich spółek z przypomnieniami i cotygodniowe podsumowanie e-mailem
 • Własne notatki do każdej akcji i plik kopii zapasowej, który możesz zachować
 • Zaloguj się adresem e-mail, a wszystko będzie zsynchronizowane na wszystkich Twoich urządzeniach
+• Wpisz opis, np. „tech 100 ETF”, a AI ustali, o którą akcję lub fundusz Ci chodzi; ETF-y i fundusze mają zrozumiałe wyjaśnienie „Co to jest?”
+• „Co było w ostatnim raporcie?” – podsumowanie AI wyników kwartalnych ze źródłami, a także świeże wyniki Twoich akcji w jednym spojrzeniu
+• Zadawaj dodatkowe pytania o każdą notatkę AI, a także o porównanie
 
 NA KOMPUTERZE
 Na Macu i Windowsie WhatStock znajduje się na pasku menu lub w zasobniku systemowym: naciśnij skrót z dowolnego miejsca, wpisz ticker albo wklej zrzut ekranu – i analiza się otwiera.

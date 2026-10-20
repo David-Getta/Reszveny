@@ -26,6 +26,9 @@ HOUD HET BIJ
 • Cijferdata en herinneringen voor je aandelen, en een wekelijkse samenvatting per e-mail
 • Je eigen notities bij elk aandeel, en een back-upbestand dat je kunt bewaren
 • Log in met je e-mailadres en alles blijft gesynchroniseerd op al je apparaten
+• Typ een omschrijving zoals “tech 100 ETF” en de AI zoekt uit welk aandeel of fonds je bedoelt; ETF's en fondsen krijgen een begrijpelijke uitleg: “Wat is dit?”
+• “Wat stond er in het laatste rapport?” – een AI-samenvatting van de kwartaalcijfers met bronnen, en de verse cijfers van je aandelen in één oogopslag
+• Stel vervolgvragen over elke AI-notitie, en over een vergelijking
 
 OP JE COMPUTER
 Op Mac en Windows zit WhatStock in de menubalk of het systeemvak: druk waar je ook bent op de sneltoets, typ een ticker of plak een screenshot, en de analyse opent.

@@ -26,6 +26,9 @@ Tu alegi profunzimea (scurtă, standard sau detaliată) și nivelul (începător
 • Datele rezultatelor și mementouri pentru acțiunile tale, plus un rezumat săptămânal pe e-mail
 • Notițele tale pentru fiecare acțiune și un fișier de backup pe care îl poți păstra
 • Conectează-te cu adresa de e-mail ca să ai totul sincronizat pe toate dispozitivele tale
+• Scrie o descriere precum „tech 100 ETF” și AI-ul își dă seama la ce acțiune sau fond te referi; ETF-urile și fondurile au o explicație pe înțelesul tuturor: „Ce este acesta?”
+• „Ce a fost în ultimul raport?” – un rezumat AI al rezultatelor trimestriale cu surse, și rezultatele proaspete ale acțiunilor tale dintr-o privire
+• Pune întrebări suplimentare despre orice notă AI, și despre o comparație
 
 PE CALCULATORUL TĂU
 Pe Mac și Windows, WhatStock stă în bara de meniu sau în zona de notificare: apasă scurtătura de oriunde, tastează un simbol bursier sau lipește o captură de ecran, și analiza se deschide.

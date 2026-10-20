@@ -26,6 +26,9 @@ HOLD OVERSIKTEN
 • Resultatdatoer og påminnelser for aksjene dine, og en ukentlig oppsummering på e-post
 • Egne notater for hver aksje, og en sikkerhetskopifil du kan ta vare på
 • Logg inn med e-postadressen din, så holdes alt synkronisert på alle enhetene dine
+• Skriv en beskrivelse som «tech 100 ETF», og AI-en finner ut hvilken aksje eller hvilket fond du mener; ETF-er og fond får en «Hva er dette?»-forklaring i klart språk
+• «Hva sto i den siste rapporten?» – en AI-oppsummering av kvartalsresultatet med kilder, og de ferske resultatene for aksjene dine med ett blikk
+• Still oppfølgingsspørsmål om ethvert AI-notat, og om en sammenligning
 
 PÅ DATAMASKINEN
 På Mac og Windows ligger WhatStock i menylinjen eller systemstatusfeltet: trykk hurtigtasten hvor som helst fra, skriv inn en ticker eller lim inn et skjermbilde, så åpnes analysen.

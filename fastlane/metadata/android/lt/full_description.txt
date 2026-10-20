@@ -26,6 +26,9 @@ VISKAS PO RANKA
 • Jūsų akcijų rezultatų datos ir priminimai bei savaitinė suvestinė el. paštu
 • Jūsų pačių užrašai apie kiekvieną akciją ir atsarginės kopijos failas, kurį galite pasilikti
 • Prisijunkite el. paštu ir viskas bus sinchronizuota visuose jūsų įrenginiuose
+• Įveskite aprašymą, pavyzdžiui „tech 100 ETF“, ir DI nustato, kurią akciją ar fondą turite omenyje; ETF ir fondai gauna paprastą paaiškinimą „Kas tai?“
+• „Kas buvo naujausioje ataskaitoje?“ – DI suvestinė apie ketvirčio rezultatus su šaltiniais, ir naujausi jūsų akcijų rezultatai vienu žvilgsniu
+• Užduokite papildomų klausimų apie bet kurią DI pastabą ir apie palyginimą
 
 JŪSŲ KOMPIUTERYJE
 „Mac“ ir „Windows“ kompiuteriuose WhatStock gyvena meniu juostoje arba sistemos dėkle: bet kur paspauskite spartųjį klavišą, įveskite tikerį arba įklijuokite ekrano kopiją, ir analizė atsidarys.

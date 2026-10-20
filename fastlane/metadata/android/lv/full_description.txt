@@ -26,6 +26,9 @@ SEKOJIET LĪDZI
 • Jūsu akciju rezultātu datumi un atgādinājumi, kā arī iknedēļas kopsavilkums e-pastā
 • Jūsu piezīmes par katru akciju un rezerves kopijas fails, ko varat paturēt
 • Piesakieties ar e-pastu, lai viss būtu sinhronizēts visās jūsu ierīcēs
+• Ierakstiet aprakstu, piemēram, “tech 100 ETF”, un AI noskaidro, kuru akciju vai fondu domājat; ETF un fondiem ir vienkāršs skaidrojums “Kas tas ir?”
+• “Kas bija jaunākajā pārskatā?” – AI kopsavilkums par ceturkšņa rezultātiem ar avotiem, un jūsu akciju jaunākie rezultāti vienā skatienā
+• Uzdodiet papildu jautājumus par jebkuru AI piezīmi un arī par salīdzinājumu
 
 JŪSU DATORĀ
 Mac un Windows datoros WhatStock atrodas izvēļņu joslā vai sistēmas teknē: nospiediet īsinājumtaustiņu no jebkuras vietas, ierakstiet tickeri vai ielīmējiet ekrānuzņēmumu, un analīze atveras.

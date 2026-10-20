@@ -26,6 +26,9 @@ SPREMLJAJTE
 • Datumi rezultatov in opomniki za vaše delnice ter tedenski povzetek po e-pošti
 • Lastni zapiski za vsako delnico in varnostna kopija v datoteki, ki jo lahko shranite
 • Prijavite se z e-poštnim naslovom in vse bo usklajeno v vseh vaših napravah
+• Vpišite opis, na primer „tech 100 ETF“, in AI ugotovi, katero delnico ali sklad imate v mislih; ETF-i in skladi dobijo razumljivo razlago „Kaj je to?“
+• „Kaj je bilo v zadnjem poročilu?“ – povzetek AI četrtletnih rezultatov z viri, in sveži rezultati vaših delnic na en pogled
+• Postavite dodatna vprašanja o kateri koli opombi AI in o primerjavi
 
 NA RAČUNALNIKU
 Na Macu in v sistemu Windows je WhatStock v menijski vrstici ali sistemskem pladnju: kjerkoli pritisnite bližnjico, vnesite oznako delnice ali prilepite posnetek zaslona in analiza se odpre.

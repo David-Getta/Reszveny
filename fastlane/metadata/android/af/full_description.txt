@@ -26,6 +26,9 @@ BLY OP HOOGTE
 • Resultatedatums en herinneringe vir jou aandele, en ’n weeklikse opsomming per e-pos
 • Jou eie notas oor elke aandeel, en ’n rugsteunlêer wat jy kan hou
 • Meld aan met jou e-pos om alles op al jou toestelle gesinkroniseer te hou
+• Tik ’n beskrywing soos “tech 100 ETF” in, en die AI werk uit watter aandeel of fonds jy bedoel; ETF’s en fondse kry ’n “Wat is dit?”-verduideliking in gewone taal
+• “Wat was in die jongste verslag?” – ’n AI-opsomming van die kwartaalresultate met bronne, en jou aandele se vars resultate met een oogopslag
+• Vra opvolgvrae oor enige AI-nota, en oor ’n vergelyking
 
 OP JOU REKENAAR
 Op Mac en Windows woon WhatStock in die kieslysbalk of stelselbalk: druk die kortpad van enige plek af, tik ’n ticker of plak ’n skermskoot, en die ontleding maak oop.

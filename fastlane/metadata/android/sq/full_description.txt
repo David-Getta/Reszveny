@@ -26,6 +26,9 @@ NDIQNI GJITHÇKA
 • Datat e rezultateve dhe kujtesat për aksionet tuaja, si dhe një përmbledhje javore me e-mail
 • Shënimet tuaja për çdo aksion dhe një skedar kopjeje rezervë që mund ta ruani
 • Hyni me e-mailin tuaj dhe gjithçka sinkronizohet në të gjitha pajisjet tuaja
+• Shkruani një përshkrim si “tech 100 ETF” dhe AI kupton cilin aksion ose fond keni parasysh; ETF-të dhe fondet kanë një shpjegim në gjuhë të thjeshtë: “Çfarë është kjo?”
+• “Çfarë kishte në raportin e fundit?” – një përmbledhje me AI e rezultateve tremujore me burime, dhe rezultatet e freskëta të aksioneve tuaja me një shikim
+• Bëni pyetje shtesë për çdo shënim të AI-së, si dhe për një krahasim
 
 NË KOMPJUTER
 Në Mac dhe Windows, WhatStock qëndron në shiritin e menysë ose në shiritin e sistemit: shtypni shkurtoren nga kudo, shkruani një simbol aksioni ose ngjitni një pamje ekrani dhe analiza hapet.

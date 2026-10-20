@@ -26,6 +26,9 @@ NAZORATDA TUTING
 • Aksiyalaringizning hisobot sanalari va eslatmalar, e-pochta orqali haftalik xulosa
 • Har bir aksiya boʻyicha oʻz qaydlaringiz va saqlab qoʻyish mumkin boʻlgan zaxira fayl
 • E-pochtangiz bilan kiring – hammasi barcha qurilmalaringizda sinxronlanadi
+• “tech 100 ETF” kabi tavsif yozing, AI qaysi aksiya yoki fondni nazarda tutganingizni aniqlaydi; ETF va fondlar uchun sodda tilda “Bu nima?” izohi bor
+• “Soʻnggi hisobotda nima bor edi?” – manbalar bilan chorak natijalarining AI xulosasi va aksiyalaringizning yangi natijalari bir qarashda
+• Istalgan AI qaydi va solishtirish haqida qoʻshimcha savollar bering
 
 KOMPYUTERINGIZDA
 Mac va Windowsda WhatStock menyu satrida yoki tizim panelida turadi: istalgan joydan tezkor tugmalarni bosing, tiker kiriting yoki skrinshotni joylang – tahlil ochiladi.

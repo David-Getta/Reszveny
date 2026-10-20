@@ -26,6 +26,9 @@ HOLD ØJE
 • Regnskabsdatoer og påmindelser for dine aktier og en ugentlig opsummering på e-mail
 • Dine egne noter til hver aktie og en backupfil, du kan gemme
 • Log ind med din e-mail, og hav alt synkroniseret på alle dine enheder
+• Skriv en beskrivelse som ”tech 100 ETF”, og AI’en finder ud af, hvilken aktie eller fond du mener; ETF’er og fonde får en ”Hvad er det?”-forklaring i almindeligt sprog
+• ”Hvad stod der i det seneste regnskab?” – et AI-resumé af kvartalsregnskabet med kilder, og dine aktiers friske tal med ét blik
+• Stil opfølgende spørgsmål til enhver AI-note, og til en sammenligning
 
 PÅ DIN COMPUTER
 På Mac og Windows bor WhatStock i menulinjen eller i systembakken: tryk på genvejen hvor som helst fra, skriv en ticker eller indsæt et skærmbillede, og analysen åbner.

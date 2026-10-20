@@ -26,6 +26,9 @@ SENTIASA PANTAU
 • Tarikh keputusan kewangan dan peringatan bagi saham anda, serta ringkasan mingguan melalui e-mel
 • Nota anda sendiri bagi setiap saham, dan fail sandaran yang boleh anda simpan
 • Log masuk dengan e-mel anda untuk menyegerakkan segala-galanya pada semua peranti anda
+• Taip penerangan seperti “tech 100 ETF” dan AI mengenal pasti saham atau dana yang anda maksudkan; ETF dan dana mendapat penjelasan mudah “Apakah ini?”
+• “Apa yang ada dalam laporan terkini?” – ringkasan AI tentang keputusan suku tahunan dengan sumber, dan keputusan terbaharu saham anda sepintas lalu
+• Tanya soalan susulan tentang mana-mana nota AI, dan tentang perbandingan
 
 DI KOMPUTER ANDA
 Pada Mac dan Windows, WhatStock berada di bar menu atau dulang sistem: tekan pintasan dari mana-mana, taip ticker atau tampal tangkapan skrin, dan analisis dibuka.

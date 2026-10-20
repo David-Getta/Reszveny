@@ -852,14 +852,18 @@ class _PositionsSectionState extends State<_PositionsSection> {
             ],
           ),
         ),
-        Card(
-          child: Column(
-            children: [
-              for (final (i, r) in rows.indexed) ...[
-                if (i > 0) const Divider(height: 1),
-                _PositionTile(row: r, fmt: widget.fmt, onOpenSymbol: widget.onOpenSymbol),
+        // Az események (friss eredmények) betöltésére is frissül a lista.
+        ListenableBuilder(
+          listenable: AppServices.of(context).events,
+          builder: (context, _) => Card(
+            child: Column(
+              children: [
+                for (final (i, r) in rows.indexed) ...[
+                  if (i > 0) const Divider(height: 1),
+                  _PositionTile(row: r, fmt: widget.fmt, onOpenSymbol: widget.onOpenSymbol),
+                ],
               ],
-            ],
+            ),
           ),
         ),
       ],

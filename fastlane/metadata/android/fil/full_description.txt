@@ -26,6 +26,9 @@ SUBAYBAYAN
 • Mga petsa ng resulta at paalala para sa iyong mga stock, at lingguhang buod sa e-mail
 • Sarili mong mga tala sa bawat stock, at backup file na maitatabi mo
 • Mag-sign in gamit ang iyong e-mail para naka-sync ang lahat sa lahat ng iyong device
+• Mag-type ng paglalarawan gaya ng “tech 100 ETF” at aalamin ng AI kung aling stock o fund ang ibig mong sabihin; may simpleng paliwanag na “Ano ito?” ang mga ETF at fund
+• “Ano ang nasa pinakabagong report?” – buod ng AI ng quarterly results na may mga sanggunian, at ang mga bagong resulta ng iyong mga stock sa isang tingin
+• Magtanong pa tungkol sa anumang AI note, at tungkol sa isang paghahambing
 
 SA IYONG COMPUTER
 Sa Mac at Windows, nasa menu bar o system tray ang WhatStock: pindutin ang shortcut kahit saan, mag-type ng ticker o mag-paste ng screenshot, at bubukas ang pagsusuri.

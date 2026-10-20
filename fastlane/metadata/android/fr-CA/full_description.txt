@@ -26,6 +26,9 @@ SUIVEZ VOS ACTIONS
 • Dates de résultats et rappels pour vos actions, et un récapitulatif hebdomadaire par e-mail
 • Vos propres notes sur chaque action, et un fichier de sauvegarde à conserver
 • Connectez-vous avec votre e-mail pour tout synchroniser sur tous vos appareils
+• Tapez une description comme « tech 100 ETF » et l'IA trouve l'action ou le fonds que vous voulez dire ; les ETF et les fonds ont une explication en langage clair : « Qu'est-ce que c'est ? »
+• « Qu'y avait-il dans le dernier rapport ? » – un résumé par IA des résultats trimestriels avec les sources, et les derniers résultats de vos actions en un coup d'œil
+• Posez des questions de suivi sur n'importe quelle note de l'IA, et sur une comparaison
 
 SUR VOTRE ORDINATEUR
 Sur Mac et Windows, WhatStock se loge dans la barre des menus ou la zone de notification : appuyez sur le raccourci où que vous soyez, saisissez un ticker ou collez une capture d'écran, et l'analyse s'ouvre.

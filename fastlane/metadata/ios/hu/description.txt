@@ -26,6 +26,9 @@ KÖVESD NYOMON
 • A részvényeid gyorsjelentés-napjai emlékeztetővel, és heti összefoglaló e-mailben
 • Saját jegyzetek minden részvényhez, és biztonsági mentés fájlba
 • Lépj be az e-mail-címeddel, és minden eszközödön ugyanaz lesz minden
+• Írj be egy leírást („tech 100 ETF”), és az AI kitalálja, melyik részvényre vagy alapra gondolsz; az ETF-ekhez és alapokhoz közérthető „Mi ez a papír?” magyarázat jár
+• „Mi volt a legutóbbi gyorsjelentésben?” – AI-összefoglaló a negyedéves eredményről forrásokkal, és a részvényeid friss eredményei egy pillantásra
+• Kérdezz vissza bármelyik AI-jegyzetről és az összehasonlításról is
 
 A SZÁMÍTÓGÉPEDEN
 Macen és Windowson a WhatStock a menüsorban vagy a tálcán vár: nyomd meg a gyorsbillentyűt bárhol, írj be egy tickert vagy illessz be egy képernyőfotót, és megnyílik az elemzés.

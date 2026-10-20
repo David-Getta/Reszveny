@@ -26,6 +26,9 @@ MĚJTE PŘEHLED
 • Data výsledků vašich akcií s připomenutím a týdenní souhrn e-mailem
 • Vlastní poznámky ke každé akcii a záložní soubor, který si můžete uschovat
 • Přihlaste se e-mailem a mějte vše synchronizované na všech svých zařízeních
+• Napište popis jako „tech 100 ETF“ a AI pozná, kterou akcii nebo fond máte na mysli; ETF a fondy dostanou srozumitelné vysvětlení „Co to je?“
+• „Co bylo v poslední zprávě?“ – AI souhrn čtvrtletních výsledků se zdroji a čerstvé výsledky vašich akcií na jeden pohled
+• Doptávejte se na jakoukoli AI poznámku i na srovnání
 
 NA VAŠEM POČÍTAČI
 Na Macu a ve Windows sídlí WhatStock v řádku nabídek nebo v oznamovací oblasti: odkudkoli stiskněte klávesovou zkratku, napište ticker nebo vložte snímek obrazovky a analýza se otevře.

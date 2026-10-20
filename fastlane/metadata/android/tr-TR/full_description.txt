@@ -26,6 +26,9 @@ TAKİPTE KALIN
 • Hisselerinizin bilanço tarihleri ve hatırlatıcılar, e-postayla haftalık özet
 • Her hisse için kendi notlarınız ve saklayabileceğiniz bir yedek dosyası
 • E-postanızla giriş yapın, her şey tüm cihazlarınızda senkronize olsun
+• “tech 100 ETF” gibi bir açıklama yazın, yapay zekâ hangi hisseyi veya fonu kastettiğinizi bulur; ETF'ler ve fonlar için sade dilde bir “Bu nedir?” açıklaması var
+• “Son bilançoda ne vardı?” – çeyrek sonuçlarının kaynaklı yapay zekâ özeti ve hisselerinizin yeni sonuçları tek bakışta
+• Herhangi bir yapay zekâ notu ve bir karşılaştırma hakkında ek sorular sorun
 
 BİLGİSAYARINIZDA
 Mac ve Windows'ta WhatStock menü çubuğunda veya sistem tepsisinde durur: kısayola her yerden basın, bir hisse kodu yazın ya da bir ekran görüntüsü yapıştırın, analiz açılır.
