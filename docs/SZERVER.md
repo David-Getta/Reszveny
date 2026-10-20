@@ -136,6 +136,16 @@ szerveren tárolt fiókcsomaggal szinkronizálja (`GET`/`PUT /v1/sync`, legfelje
 e-mailes fiók írhat; a fiók törlésekor ez is törlődik. Az adatkezelési tájékoztatóba ezt is bele
 kell írni (portfólió és jegyzetek a szerveren, ha a felhasználó belép).
 
+## Megosztott AI-válaszok (gyorsjelentés-összefoglaló, hírmagyarázat)
+
+A „Mi volt a legutóbbi gyorsjelentésben?” és a „Mit jelent ez?” válaszai nem személyesek: ugyanaz
+a cég, negyedév és nyelv (vagy ugyanaz a cikk és nyelv) mindenkinek ugyanazt jelenti. A kliens
+ezért a `/v1/ask` kérésben egy `shared_cache` kulcsot küld (`earnings|AAPL|2026-09-30|Hungarian`,
+illetve `news|<a cikk URL-jének lenyomata>|Hungarian`); a szerver a kutatással készült, teljes
+választ a `shared_answers` táblában 30 napig őrzi, és a következő felhasználónak onnan adja
+(Anthropic-hívás és napi kérdéskeret nélkül, `x-whatstock-cache: hit` fejléccel). Személyes
+adat nincs benne: csak a cég/cikk és a nyelv. Próbaidős (eszközök nélküli) válasz nem kerül a tárba.
+
 ## Riasztás e-mailben (csukott appnál is)
 
 A szerver `ALERT_CHECK_MINUTES` percenként (alapból 10; 0 = ki) végignézi az e-mailes fiókok

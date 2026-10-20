@@ -137,6 +137,11 @@ class Store {
         rewarded_at TEXT
       );
       CREATE INDEX IF NOT EXISTS referrals_referrer ON referrals(referrer_id);
+      CREATE TABLE IF NOT EXISTS shared_answers (
+        key TEXT PRIMARY KEY,
+        body TEXT NOT NULL,
+        created_at TEXT NOT NULL
+      );
     ''');
     // Fiók-oszlopok (meglévő adatbázisokhoz is).
     final cols = _db.select('PRAGMA table_info(users)').map((r) => r['name'] as String).toSet();
@@ -620,6 +625,27 @@ class Store {
     _db.execute('DELETE FROM ask_calls WHERE created_at < ?', [
       now.subtract(const Duration(days: 2)).toIso8601String(),
     ]);
+  }
+
+  /// Megosztott kutatási válasz (pl. egy cég negyedéves összefoglalója): ha
+  /// egy felhasználó már lekérte, a többiek ugyanazt kapják [maxAge]-en belül.
+  String? sharedAnswer(String key, Duration maxAge) {
+    final rows = _db.select('SELECT body, created_at FROM shared_answers WHERE key = ?', [key]);
+    if (rows.isEmpty) return null;
+    final at = _date(rows.first['created_at']);
+    if (at == null || clock().toUtc().difference(at) > maxAge) return null;
+    return rows.first['body'] as String;
+  }
+
+  /// A válasz eltárolása; a [keepFor]-nál régebbi sorokat közben törli.
+  void saveSharedAnswer(String key, String body, {Duration keepFor = const Duration(days: 30)}) {
+    final now = clock().toUtc();
+    _db.execute('INSERT OR REPLACE INTO shared_answers (key, body, created_at) VALUES (?, ?, ?)', [
+      key,
+      body,
+      now.toIso8601String(),
+    ]);
+    _db.execute('DELETE FROM shared_answers WHERE created_at < ?', [now.subtract(keepFor).toIso8601String()]);
   }
 
   void close() => _db.close();

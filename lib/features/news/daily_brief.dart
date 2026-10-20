@@ -169,6 +169,28 @@ Future<String> askText(AppConfig config, http.Client client, Map<String, dynamic
 /// Egy forrás, amire a válasz hivatkozik (webkeresés vagy megnyitott oldal).
 typedef AskSource = ({String title, String url});
 
+/// A kérés `shared_cache` kulcsa: a szerver ezen tárolja a kutatással készült
+/// választ, és a többi felhasználónak ugyanazt adja (kérés és keret nélkül).
+/// Csak egyszerű jelek lehetnek benne (`|`, betűk, számok, `_.:-`).
+const sharedCacheField = 'shared_cache';
+
+/// Egy tetszőleges szöveg (pl. URL) rövid, állandó lenyomata a megosztott
+/// kulcsba: két 32 bites FNV-1a (eltérő kezdőértékkel), 16 hexa jegy. A szorzás
+/// 16 bites darabokban megy, hogy a weben (53 bites számok) is ugyanaz jöjjön ki.
+String stableDigest(String s) {
+  final bytes = utf8.encode(s);
+  String fnv(int seed) {
+    var h = seed;
+    for (final b in bytes) {
+      final x = h ^ b;
+      h = ((x & 0xffff) * 0x01000193 + ((((x >> 16) & 0xffff) * 0x01000193) & 0xffff) << 16) & 0xffffffff;
+    }
+    return h.toRadixString(16).padLeft(8, '0');
+  }
+
+  return fnv(0x811c9dc5) + fnv(0x811c9dc5 ^ 0x5bd1e995);
+}
+
 /// Mint az [askText], de a webkeresés idézett forrásait is visszaadja (címmel és
 /// URL-lel, ismétlés nélkül, legfeljebb [maxSources]). Ha a válasz nem idéz, a
 /// keresési találatok elejéből választ.
@@ -179,6 +201,13 @@ Future<({String text, List<AskSource> sources})> askWithSources(
   int maxSources = 4,
 }) async {
   final http.Response res;
+  // A megosztott-tár kulcsot csak a saját szerver érti; közvetlen hívásnál kimarad.
+  final sent = config.hasBackend
+      ? body
+      : {
+          for (final e in body.entries)
+            if (e.key != sharedCacheField) e.key: e.value,
+        };
   try {
     res = await client
         .post(
@@ -188,7 +217,7 @@ Future<({String text, List<AskSource> sources})> askWithSources(
             if (config.anthropicApiKey.isNotEmpty) 'x-api-key': config.anthropicApiKey,
             'anthropic-version': ClaudeStockAnalyst.anthropicVersion,
           },
-          body: jsonEncode(body),
+          body: jsonEncode(sent),
         )
         .timeout(const Duration(minutes: 2));
   } on Exception catch (e) {

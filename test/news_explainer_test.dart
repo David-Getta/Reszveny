@@ -17,6 +17,7 @@ import 'package:reszveny/features/analysis/report_store.dart';
 import 'package:reszveny/features/billing/entitlement_service.dart';
 import 'package:reszveny/features/capture/capture_service.dart';
 import 'package:reszveny/features/market_data/demo_market_data_provider.dart';
+import 'package:reszveny/features/news/daily_brief.dart' show stableDigest;
 import 'package:reszveny/features/news/news_explainer.dart';
 import 'package:reszveny/features/news/watch_news.dart';
 import 'package:reszveny/features/recognition/stock_recognizer.dart';
@@ -61,6 +62,10 @@ void main() {
     final tools = (body['tools'] as List).cast<Map>();
     expect(tools.map((t) => t['name']), ['web_search', 'web_fetch']);
     expect(tools.first['max_uses'], NewsExplainer.maxSearches);
+    // A szerver megosztott tára: a cikk címének lenyomata és a nyelv.
+    expect(body['shared_cache'], matches(RegExp(r'^news\|[0-9a-f]{16}\|Hungarian$')));
+    expect(stableDigest('https://a'), isNot(stableDigest('https://b')));
+    expect(stableDigest('x'), stableDigest('x'));
   });
 
   testWidgets('"What does this mean?" on a news item: asked once, shown in a sheet', (tester) async {

@@ -2,7 +2,7 @@ import 'package:http/http.dart' as http;
 
 import '../../core/config/app_config.dart';
 import '../../core/errors.dart';
-import 'daily_brief.dart' show askWithSources;
+import 'daily_brief.dart' show askWithSources, sharedCacheField;
 import 'research_store.dart';
 
 /// „Mi volt a legutóbbi gyorsjelentésben?”: AI-összefoglaló a cég legutóbbi
@@ -47,6 +47,10 @@ Rules:
   }) => {
     'model': model,
     'max_tokens': 1500,
+    // Ugyanaz a negyedév ugyanazon a nyelven minden felhasználónak ugyanaz: a szerver megosztja.
+    sharedCacheField:
+        'earnings|${symbol.toUpperCase()}|${lastPeriod?.toIso8601String().substring(0, 10) ?? '-'}|'
+        '${language.replaceAll(RegExp(r'[^A-Za-z0-9_-]'), '_')}',
     'system': [
       {'type': 'text', 'text': systemPrompt},
     ],

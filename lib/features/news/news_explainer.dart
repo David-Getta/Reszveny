@@ -2,7 +2,7 @@ import 'package:http/http.dart' as http;
 
 import '../../core/config/app_config.dart';
 import '../../core/errors.dart';
-import 'daily_brief.dart' show AskSource, askWithSources;
+import 'daily_brief.dart' show AskSource, askWithSources, sharedCacheField, stableDigest;
 import 'research_store.dart';
 import 'watch_news.dart';
 
@@ -50,6 +50,9 @@ Rules:
   static Map<String, dynamic> requestBody(WatchedNews n, {required String language, String model = ''}) => {
     'model': model,
     'max_tokens': 1500,
+    // Ugyanaz a cikk ugyanazon a nyelven: a szerver megosztja a magyarázatot.
+    if (n.item.url.isNotEmpty)
+      sharedCacheField: 'news|${stableDigest(n.item.url)}|${language.replaceAll(RegExp(r'[^A-Za-z0-9_-]'), '_')}',
     'system': [
       {'type': 'text', 'text': systemPrompt},
     ],

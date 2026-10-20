@@ -1385,6 +1385,13 @@ class Api {
     if (req == null) return _error(400, 'bad_request');
     final e = store.entitlement(uid);
     if (e.tier == null && e.extra <= 0) return _error(402, 'no_plan');
+    // Megosztott válasz (pl. egy cég negyedéves összefoglalója adott nyelven):
+    // ha már valaki lekérte, mindenki ugyanazt kapja, kérés és keret nélkül.
+    final cacheKey = sharedCacheKey(raw['shared_cache']);
+    final cached = cacheKey == null ? null : store.sharedAnswer(cacheKey, sharedAnswerKeepFor);
+    if (cached != null) {
+      return Response.ok(cached, headers: {'content-type': 'application/json', 'x-whatstock-cache': 'hit'});
+    }
     final trial = e.tier == null || e.tier == 'trial';
     final limit = trial ? askPerDayTrial : askPerDayPaid;
     if (store.askCallsSince(uid, store.clock().subtract(const Duration(days: 1))) >= limit) {
@@ -1404,7 +1411,30 @@ class Api {
     });
     var upstream = await _forwardAnthropic(body, null);
     if (tools != null && _rejectedWebFetch(upstream)) upstream = await _forwardAnthropic(withoutWebFetch(body), null);
+    // Csak a kutatással (eszközökkel) készült, sikeres válasz kerül a megosztott tárba.
+    if (cacheKey != null && tools != null && upstream.statusCode == 200 && _isCompleteAnswer(upstream.body)) {
+      store.saveSharedAnswer(cacheKey, upstream.body, keepFor: sharedAnswerKeepFor);
+    }
     return Response(upstream.statusCode, body: upstream.body, headers: {'content-type': 'application/json'});
+  }
+
+  /// A megosztott válaszok ennyi ideig élnek a szerveren.
+  static const sharedAnswerKeepFor = Duration(days: 30);
+
+  /// A kliens megosztott-tár kulcsa, ha szabályos (rövid, csak egyszerű jelek).
+  static String? sharedCacheKey(Object? v) =>
+      v is String && v.length >= 8 && v.length <= 160 && RegExp(r'^[A-Za-z0-9|_.:-]+$').hasMatch(v) ? v : null;
+
+  /// Teljes, szöveges válasz (nem elutasítás, nem csonka).
+  static bool _isCompleteAnswer(String body) {
+    try {
+      final j = jsonDecode(body) as Map<String, dynamic>;
+      final content = (j['content'] as List? ?? const []).whereType<Map>();
+      return j['stop_reason'] == 'end_turn' &&
+          content.any((b) => b['type'] == 'text' && '${b['text']}'.trim().isNotEmpty);
+    } catch (_) {
+      return false;
+    }
   }
 
   /// A kérdéshez kért kutató eszközök szűrve: csak webkeresés (legfeljebb

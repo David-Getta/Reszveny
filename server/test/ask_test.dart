@@ -154,6 +154,44 @@ void main() {
     expect((calls.last['tools'] as List).single['name'], 'web_search');
   });
 
+  test('a shared research answer: the second user gets it from the server without a new call or a question', () async {
+    final (t1, u1) = await newUser();
+    store.save(store.entitlement(u1)..tier = 'pro');
+    final req = {
+      ...ask(['Summarize the latest quarter.']),
+      'shared_cache': 'earnings|AAPL|2026-09-30|Hungarian',
+    };
+    final (s1, b1) = await post('/v1/ask', req, token: t1);
+    expect(s1, 200);
+    expect(b1['content'][0]['text'], 'Answer.');
+    expect(upstream, hasLength(1));
+    // Másik (akár próbaidős) felhasználó: a tárolt válasz, kérés és keret nélkül.
+    final (t2, u2) = await newUser();
+    store.save(store.entitlement(u2)..tier = 'trial');
+    final (s2, b2) = await post('/v1/ask', req, token: t2);
+    expect((s2, b2['content'][0]['text']), (200, 'Answer.'));
+    expect(upstream, hasLength(1));
+    expect(store.askCallsSince(u2, DateTime(2000)), 0);
+    // Más kulcs (más negyedév vagy nyelv): új kérés.
+    await post('/v1/ask', {...req, 'shared_cache': 'earnings|AAPL|2026-09-30|English'}, token: t1);
+    expect(upstream, hasLength(2));
+    // 30 nap után lejár.
+    store.clock = () => DateTime.utc(2026, 12, 1);
+    await post('/v1/ask', req, token: t1);
+    expect(upstream, hasLength(3));
+    // Szabálytalan kulcs figyelmen kívül; eszköz nélküli (próbaidős) válasz nem kerül a tárba.
+    expect(Api.sharedCacheKey('a b'), isNull);
+    expect(Api.sharedCacheKey('short'), isNull);
+    expect(Api.sharedCacheKey('news|abc123|English'), 'news|abc123|English');
+    final trialReq = {
+      ...ask(['Q']),
+      'shared_cache': 'news|trial-only|English',
+    };
+    await post('/v1/ask', trialReq, token: t2);
+    await post('/v1/ask', trialReq, token: t2);
+    expect(upstream, hasLength(5));
+  });
+
   test('daily limit, malformed conversations and accounts without a plan are refused', () async {
     final (token, uid) = await newUser();
     store.save(store.entitlement(uid)..tier = 'trial');

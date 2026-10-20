@@ -105,6 +105,8 @@ void main() {
     expect(user, contains('Language: Hungarian'));
     expect(user, contains('Stock: Apple Inc. (AAPL)'));
     expect(user, contains('Last quarter in our data ended: 2026-09-30'));
+    // A szerver megosztott tára: cég, negyedév és nyelv.
+    expect(body['shared_cache'], 'earnings|AAPL|2026-09-30|Hungarian');
     final system = ((body['system'] as List).single as Map)['text'] as String;
     expect(system, contains('press release'));
     expect(system, contains('Never invent facts'));
