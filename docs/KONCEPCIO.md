@@ -286,6 +286,7 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 5db | Gyorspanel (⌥⇧Space, macOS): leírásnak látszó beírásra az AI fejti meg a részvényt/ETF-et, ha a kereső nem találja | ✅ kész |
 | 5dc | ETF/alap oldala: az üres cégspecifikus kártyák (értékelés, pénzügyek, kimutatások, elemzők) kimaradnak, ha nincs hozzájuk adat | ✅ kész |
 | 5dd | A megfejtett leírások megmaradnak a készüléken („tech 100 etf” → QQQ): másodszor AI nélkül nyílik, gépelés közben javaslat; legfeljebb 50 | ✅ kész |
+| 5de | AI-portfólióelemzés ETF-tudatos: a cégprofil nélküli pozíciót (ETF, alap) kosárként kezeli, a szektor- és országkitettségbe beszámítja, és jelzi a feltevést | ✅ kész |
 | 5j | Telefonos háttér-értesítés (riasztás) szerverről, APNs / FCM | 🟡 első lépés kész: a szerver 10 percenként nézi a belépett fiókok szinkronizált riasztásait, és e-mailben szól (csukott appnál is, kikapcsolható); a telefonos push (APNs / FCM) a Firebase-projekt és az Apple-kulcs után |
 | 5k | Bolti adatlapok 120 nyelven, képernyőképek, ikon, előnézeti videó | 🟡 adatlap-szövegek 70 bolti nyelven (fastlane-mappa, `docs/BOLTI_ADATLAP.md`), feliratos bolti képek a teszt-harnessből a boltok méreteiben (4 kép: felismerés, elemzés, portfólió, gyorsjelentés-összefoglaló kérdéssel); előnézeti videó és a nem latin írású képek a natív buildből később |
 

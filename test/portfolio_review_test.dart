@@ -52,6 +52,9 @@ void main() {
     expect(user, contains('Today: 2026-10-15'));
     expect(user, contains('"total_value":5319150'));
     expect(user, contains('"symbol":"AAPL","sector":"Technology","currency":"USD","weight_pct":62.5'));
+    // Cégprofil nélküli pozíció (ETF): jelzés az adatokban és a szabály a promptban.
+    expect(ReviewHolding(symbol: 'QQQ', weight: 10, currency: 'USD').toJson()['note'], contains('probably an ETF'));
+    expect(PortfolioReviewer.systemPrompt, contains('treat it as a basket'));
     expect(body.containsKey('tools'), isFalse);
     expect((body['output_config'] as Map)['format'], isNotNull);
     expect(PortfolioReviewer.systemPrompt, contains('rather than telling the reader what to buy or sell'));

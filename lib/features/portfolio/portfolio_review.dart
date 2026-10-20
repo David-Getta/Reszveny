@@ -45,6 +45,8 @@ class ReviewHolding {
     'symbol': symbol,
     'name': ?name,
     'sector': ?sector,
+    // Cégprofil nélkül (ETF, alap, letéti jegy): a modell kosárként kezelje.
+    if (name == null && sector == null) 'note': 'no company profile – probably an ETF, a fund or a depositary receipt',
     'country': ?country,
     'currency': currency,
     'weight_pct': double.parse(weight.toStringAsFixed(1)),
@@ -118,7 +120,7 @@ Work only from the provided data and your general knowledge (no web access); giv
 
 Write in the requested language the way a native financial journalist would, plainly and without jargon (explain a term the first time you use it). Sections, in this order (kind: content):
 - summary: 2-3 sentences on the overall picture and the single most important point.
-- diversification: concentration (largest positions, top-3 weight), sector and country spread, and what is missing.
+- diversification: concentration (largest positions, top-3 weight), sector and country spread, and what is missing. A holding marked with a "note" has no company profile: it is probably an ETF or a fund – treat it as a basket (the index or theme it tracks, from its ticker and your knowledge), count its exposure in the sector and country spread accordingly, and say what you assumed.
 - currency: the currency split and what a move in the main currencies would do to the reader's home-currency value.
 - risks: risks shared by several positions (same theme, supplier, rate sensitivity, valuation level, beta), and the biggest single point of failure.
 - income: dividend yield of the portfolio and of the main payers; skip the section only if no position pays.
