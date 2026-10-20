@@ -28,7 +28,8 @@ class NotesStore extends ChangeNotifier {
   static const _key = 'stock_notes';
 
   /// Egy jegyzet legfeljebb ennyi karakter.
-  static const maxLength = 1000;
+  /// Elég egy-két mentett AI-jegyzetnek is a saját sorok mellett.
+  static const maxLength = 4000;
 
   final Map<String, StockNote> _notes;
 

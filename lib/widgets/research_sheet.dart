@@ -4,6 +4,7 @@ import '../app_services.dart';
 import '../core/share/share_text.dart';
 import '../core/util/formatters.dart';
 import '../features/news/daily_brief.dart' show AskSource;
+import '../features/notes/notes_store.dart' show NotesStore;
 import '../features/news/research_store.dart' show ResearchResult;
 import '../l10n/error_messages.dart';
 import '../l10n/generated/app_localizations.dart';
@@ -247,7 +248,10 @@ class _SaveNoteButtonState extends State<_SaveNoteButton> {
       widget.text.trim(),
       for (final s in widget.sources) s.url,
     ].join('\n');
-    await services.notes.set(widget.symbol, existing.isEmpty ? entry : '$existing\n\n$entry');
+    // A saját sorok maradnak; ha nem fér el, a bejegyzés vége marad le.
+    final room = NotesStore.maxLength - (existing.isEmpty ? 0 : existing.length + 2);
+    final fitted = entry.length > room ? entry.substring(0, room.clamp(0, entry.length)) : entry;
+    await services.notes.set(widget.symbol, existing.isEmpty ? fitted : '$existing\n\n$fitted');
     services.telemetry.track('research_saved_note');
     if (mounted) setState(() => _saved = true);
   }

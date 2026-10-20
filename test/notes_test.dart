@@ -21,7 +21,7 @@ void main() {
     expect(reloaded.of('AAPL')?.text, 'Services growth, buyback.');
     await reloaded.set('AAPL', '');
     expect((await NotesStore.load()).of('AAPL'), isNull);
-    await store.set('X', 'a' * 1500);
+    await store.set('X', 'a' * (NotesStore.maxLength + 500));
     expect(store.of('X')!.text.length, NotesStore.maxLength);
   });
 
