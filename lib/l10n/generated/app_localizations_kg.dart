@@ -2556,4 +2556,9 @@ class AppLocalizationsKg extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Yuvula AI: « $query »';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Ka kuena ntalu ya bubu ya $symbols ko.';
+  }
 }

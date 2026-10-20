@@ -2546,4 +2546,9 @@ class AppLocalizationsHt extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Mande AI a: « $query »';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Pa gen pri aktyèl pou $symbols.';
+  }
 }

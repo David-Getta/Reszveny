@@ -2550,4 +2550,9 @@ class AppLocalizationsTg extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Аз AI пурсед: «$query»';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Барои $symbols нархи ҷорӣ мавҷуд нест.';
+  }
 }

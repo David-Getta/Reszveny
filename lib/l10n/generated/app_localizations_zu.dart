@@ -2557,4 +2557,9 @@ class AppLocalizationsZu extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Buza i-AI: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Ayikho intengo yamanje ye-$symbols.';
+  }
 }

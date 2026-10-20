@@ -2551,4 +2551,9 @@ class AppLocalizationsUg extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'AI دىن سوراڭ: «$query»';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return '$symbols ئۈچۈن نۆۋەتتىكى باھا يوق.';
+  }
 }

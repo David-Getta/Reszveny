@@ -678,5 +678,6 @@
   "instrumentHint": "Gũtirĩ ũhoro wa kampuni wa rũũri rũrũ – no ĩkorwo ĩrĩ ETF, fund kana depositary receipt. Ũria AI nĩ kĩĩ, nĩ kĩĩ kĩrĩ thĩinĩ wayo, na ĩrutaga mbeca cigana.",
   "instrumentAsk": "Gĩkĩ nĩ kĩĩ?",
   "instrumentNote": "Ũtaarĩria wa AI kuuma rũhuko-inĩ rwa fund rwa mũrutani na mĩhuko ya mbeca ĩrĩa wonaga internet-inĩ. Ti ũtaaro wa investment. Ĩhũthagĩra mũhaka wa ciũria ciaku cia o mũthenya, ti ũthuthuria.",
-  "suggestAskAi": "Ũria AI: “{query}”"
+  "suggestAskAi": "Ũria AI: “{query}”",
+  "portfolioNoPriceFor": "Gũtirĩ thogora wa rĩu wa {symbols}."
 }

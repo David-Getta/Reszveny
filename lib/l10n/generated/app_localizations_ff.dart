@@ -2542,4 +2542,9 @@ class AppLocalizationsFf extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Naamnu AI: « $query »';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Coggu jooni alaa wonande $symbols.';
+  }
 }

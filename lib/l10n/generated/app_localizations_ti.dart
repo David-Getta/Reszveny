@@ -2510,4 +2510,9 @@ class AppLocalizationsTi extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'ንAI ሕተቱ፦ «$query»';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'ን$symbols ህሉው ዋጋ የለን።';
+  }
 }

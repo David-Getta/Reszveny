@@ -2478,4 +2478,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'AI에게 질문: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return '$symbols의 현재 가격이 없습니다.';
+  }
 }

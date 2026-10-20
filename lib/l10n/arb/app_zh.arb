@@ -678,5 +678,6 @@
   "instrumentHint": "该代码没有公司资料，可能是 ETF、基金或存托凭证。问问 AI 它是什么、持有什么以及费用多少。",
   "instrumentAsk": "这是什么？",
   "instrumentNote": "AI 根据发行方的基金页面以及在网上找到的财经网站进行说明。不构成投资建议。占用每日提问次数，不消耗分析次数。",
-  "suggestAskAi": "问问 AI：“{query}”"
+  "suggestAskAi": "问问 AI：“{query}”",
+  "portfolioNoPriceFor": "{symbols}暂无当前价格。"
 }

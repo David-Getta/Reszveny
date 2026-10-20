@@ -2554,4 +2554,9 @@ class AppLocalizationsIt extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Chiedi all’IA: «$query»';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Nessun prezzo attuale per $symbols.';
+  }
 }

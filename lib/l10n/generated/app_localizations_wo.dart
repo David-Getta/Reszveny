@@ -2543,4 +2543,9 @@ class AppLocalizationsWo extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Laaj AI: « $query »';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Amul njëg bu léegi ngir $symbols.';
+  }
 }

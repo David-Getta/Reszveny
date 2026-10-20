@@ -678,5 +678,6 @@
   "instrumentHint": "Ora ana profil perusahaan kanggo simbol iki – bisa uga ETF, dana, utawa depositary receipt. Takon AI apa iki, apa isiné, lan pira ragadé.",
   "instrumentAsk": "Apa iki?",
   "instrumentNote": "Katrangan AI saka kaca dana penerbit lan situs finansial sing ditemokaké ing web. Dudu saran investasi. Nggunakake watesan pitakon saben dina, dudu analisis.",
-  "suggestAskAi": "Takon AI: “{query}”"
+  "suggestAskAi": "Takon AI: “{query}”",
+  "portfolioNoPriceFor": "Ora ana rega saiki kanggo {symbols}."
 }

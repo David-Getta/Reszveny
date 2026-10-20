@@ -678,5 +678,6 @@
   "instrumentHint": "Non esiste un profilo aziendale per questo simbolo: potrebbe essere un ETF, un fondo o un certificato di deposito. Chiedi all’IA che cos’è, cosa contiene e quanto costa.",
   "instrumentAsk": "Che cos’è?",
   "instrumentNote": "Spiegazione dell’IA basata sulla pagina del fondo dell’emittente e sui siti finanziari che trova sul web. Non costituisce un consiglio di investimento. Usa il tuo limite giornaliero di domande, non un’analisi.",
-  "suggestAskAi": "Chiedi all’IA: «{query}»"
+  "suggestAskAi": "Chiedi all’IA: «{query}»",
+  "portfolioNoPriceFor": "Nessun prezzo attuale per {symbols}."
 }

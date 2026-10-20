@@ -678,5 +678,6 @@
   "instrumentHint": "Mallattoo kanaaf piroofaayilii dhaabbataa hin jiru – ETF, fandii yookiin ragaa kuufamaa ta'uu danda'a. AI gaafadhu inni maal akka ta'e, maal akka qabatee fi baasii isaa hammam akka ta'e.",
   "instrumentAsk": "Kun maali?",
   "instrumentNote": "Ibsa AI fuula fandii baasaa fi marsariitiiwwan faayinaansii interneetii irratti argatu irraa. Gorsa invastimantii miti. Daangaa gaaffii guyyaa kee fayyadama, xiinxala miti.",
-  "suggestAskAi": "AI gaafadhu: “{query}”"
+  "suggestAskAi": "AI gaafadhu: “{query}”",
+  "portfolioNoPriceFor": "Gatiin ammaa {symbols} hin jiru."
 }

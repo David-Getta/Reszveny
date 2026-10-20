@@ -2567,4 +2567,9 @@ class AppLocalizationsIlo extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Isaludsod iti AI: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Awan ti agdama a presio para iti $symbols.';
+  }
 }

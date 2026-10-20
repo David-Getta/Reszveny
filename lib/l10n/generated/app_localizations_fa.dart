@@ -2544,4 +2544,9 @@ class AppLocalizationsFa extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'از هوش مصنوعی بپرسید: «$query»';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'قیمت فعلی برای $symbols موجود نیست.';
+  }
 }

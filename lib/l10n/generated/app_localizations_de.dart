@@ -2561,4 +2561,9 @@ class AppLocalizationsDe extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'KI fragen: „$query“';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Kein aktueller Kurs für $symbols.';
+  }
 }

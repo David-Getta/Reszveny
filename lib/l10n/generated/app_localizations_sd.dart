@@ -2540,4 +2540,9 @@ class AppLocalizationsSd extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'AI کان پڇو: «$query»';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return '$symbols لاءِ موجوده قيمت موجود ناهي.';
+  }
 }

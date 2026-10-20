@@ -678,5 +678,6 @@
   "instrumentHint": "Det finns ingen bolagsprofil för den här symbolen – det kan vara en ETF, en fond eller ett depåbevis. Fråga AI:n vad det är, vad det innehåller och vad det kostar.",
   "instrumentAsk": "Vad är det här?",
   "instrumentNote": "AI-förklaring utifrån utgivarens fondsida och finanssajter den hittar på webben. Det är inte investeringsrådgivning. Använder din dagliga frågekvot, inte en analys.",
-  "suggestAskAi": "Fråga AI:n: ”{query}”"
+  "suggestAskAi": "Fråga AI:n: ”{query}”",
+  "portfolioNoPriceFor": "Ingen aktuell kurs för {symbols}."
 }

@@ -2553,4 +2553,9 @@ class AppLocalizationsSn extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Bvunza AI: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Hapana mutengo wazvino we $symbols.';
+  }
 }

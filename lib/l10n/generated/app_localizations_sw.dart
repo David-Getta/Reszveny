@@ -2549,4 +2549,9 @@ class AppLocalizationsSw extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Uliza AI: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Hakuna bei ya sasa kwa $symbols.';
+  }
 }

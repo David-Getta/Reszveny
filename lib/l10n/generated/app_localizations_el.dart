@@ -2557,4 +2557,9 @@ class AppLocalizationsEl extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Ρωτήστε το AI: «$query»';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Δεν υπάρχει τρέχουσα τιμή για $symbols.';
+  }
 }

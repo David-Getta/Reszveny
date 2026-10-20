@@ -2564,4 +2564,9 @@ class AppLocalizationsNso extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Botšiša AI: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Ga go na theko ya bjale ya $symbols.';
+  }
 }

@@ -2548,4 +2548,9 @@ class AppLocalizationsKi extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Ũria AI: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Gũtirĩ thogora wa rĩu wa $symbols.';
+  }
 }

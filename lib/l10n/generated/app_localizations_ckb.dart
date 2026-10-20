@@ -2549,4 +2549,9 @@ class AppLocalizationsCkb extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'لە AI بپرسە: «$query»';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'نرخی ئێستا بۆ $symbols نییە.';
+  }
 }

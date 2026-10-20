@@ -2555,4 +2555,9 @@ class AppLocalizationsNy extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Funsani AI: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Palibe mtengo wapano wa $symbols.';
+  }
 }

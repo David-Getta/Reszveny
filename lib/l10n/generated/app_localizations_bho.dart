@@ -2544,4 +2544,9 @@ class AppLocalizationsBho extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'AI से पूछीं: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return '$symbols खातिर अबही के दाम उपलब्ध नइखे।';
+  }
 }

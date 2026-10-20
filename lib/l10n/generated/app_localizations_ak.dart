@@ -2547,4 +2547,9 @@ class AppLocalizationsAk extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Bisa AI no: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Seesei bo biara nni hɔ mma $symbols.';
+  }
 }

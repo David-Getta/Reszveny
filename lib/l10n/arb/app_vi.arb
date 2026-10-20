@@ -678,5 +678,6 @@
   "instrumentHint": "Không có hồ sơ công ty cho mã này – đây có thể là ETF, quỹ hoặc chứng chỉ lưu ký. Hãy hỏi AI xem đây là gì, nắm giữ những gì và chi phí bao nhiêu.",
   "instrumentAsk": "Đây là gì?",
   "instrumentNote": "Giải thích do AI tạo từ trang quỹ của tổ chức phát hành và các trang tài chính mà AI tìm thấy trên web. Không phải là lời khuyên đầu tư. Dùng hạn mức câu hỏi hằng ngày của bạn, không dùng lượt phân tích.",
-  "suggestAskAi": "Hỏi AI: “{query}”"
+  "suggestAskAi": "Hỏi AI: “{query}”",
+  "portfolioNoPriceFor": "Không có giá hiện tại cho {symbols}."
 }

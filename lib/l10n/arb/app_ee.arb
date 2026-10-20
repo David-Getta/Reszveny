@@ -678,5 +678,6 @@
   "instrumentHint": "Dɔwɔƒe ŋuti nyatakaka aɖeke meli na dzesi sia o – ate ŋu anye ETF, ga dzraɖoƒe alo depositary receipt. Bia AI be nu kae wònye, nu kawo le eme, eye nenie wòxɔna.",
   "instrumentAsk": "Nu kae nye esia?",
   "instrumentNote": "AI ƒe numeɖeɖe tso ɖetɔ la ƒe ga dzraɖoƒe axa kple gaŋutinyawo ƒe nutowo siwo wòkpɔ le internet dzi. Menye aɖaŋuɖoɖo le gadede nu ŋu o. Etsɔna tso wò gbesiagbe nyabiasewo ƒe seɖoƒe me, mezãa dzodzro aɖeke o.",
-  "suggestAskAi": "Bia AI: “{query}”"
+  "suggestAskAi": "Bia AI: “{query}”",
+  "portfolioNoPriceFor": "Fifia asi aɖeke meli na {symbols} o."
 }

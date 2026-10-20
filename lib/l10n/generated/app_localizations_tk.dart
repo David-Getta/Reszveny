@@ -2549,4 +2549,9 @@ class AppLocalizationsTk extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'AI-dan soraň: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return '$symbols üçin häzirki baha ýok.';
+  }
 }

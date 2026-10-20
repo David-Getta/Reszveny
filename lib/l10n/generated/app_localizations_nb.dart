@@ -2548,4 +2548,9 @@ class AppLocalizationsNb extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Spør AI-en: «$query»';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Ingen aktuell kurs for $symbols.';
+  }
 }

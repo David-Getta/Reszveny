@@ -2546,4 +2546,9 @@ class AppLocalizationsKab extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Steqsi AI: « $query »';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Ulac ssuma tamirant i $symbols.';
+  }
 }

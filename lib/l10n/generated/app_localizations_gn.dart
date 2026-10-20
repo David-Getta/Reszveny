@@ -2553,4 +2553,9 @@ class AppLocalizationsGn extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Eporandu AI-pe: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Ndaipóri $symbols tepy ko\'ag̃agua.';
+  }
 }

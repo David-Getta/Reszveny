@@ -2556,4 +2556,9 @@ class AppLocalizationsRn extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Baza AI: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Nta giciro ca none ca $symbols.';
+  }
 }

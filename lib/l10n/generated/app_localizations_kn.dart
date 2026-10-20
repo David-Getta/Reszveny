@@ -2555,4 +2555,9 @@ class AppLocalizationsKn extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'AI ಅನ್ನು ಕೇಳಿ: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return '$symbols ಗೆ ಪ್ರಸ್ತುತ ಬೆಲೆ ಲಭ್ಯವಿಲ್ಲ.';
+  }
 }

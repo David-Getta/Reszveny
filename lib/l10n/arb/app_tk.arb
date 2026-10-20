@@ -678,5 +678,6 @@
   "instrumentHint": "Bu nyşan üçin kompaniýa profili ýok – bu ETF, gazna ýa-da depozitar şahadatnama bolup biler. AI-dan bu näme, düzüminde näme bar we näçe çykdajy edýär diýip soraň.",
   "instrumentAsk": "Bu näme?",
   "instrumentNote": "Emitentiň gazna sahypasyna we internetde tapan maliýe saýtlaryna esaslanan AI düşündirişi. Maýa goýum maslahaty däldir. Gündelik sorag çägiňizden harçlanýar, seljerme däl.",
-  "suggestAskAi": "AI-dan soraň: “{query}”"
+  "suggestAskAi": "AI-dan soraň: “{query}”",
+  "portfolioNoPriceFor": "{symbols} üçin häzirki baha ýok."
 }

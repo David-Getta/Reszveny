@@ -333,7 +333,12 @@ class _PortfolioBody extends StatelessWidget {
                 if (s.hasExcluded)
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
-                    child: Text(l10n.portfolioExcluded, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+                    child: Text(
+                      '${l10n.portfolioExcluded} '
+                      '${l10n.portfolioNoPriceFor(s.rows.where((r) => !r.inTotal).map((r) => r.position.symbol).join(', '))}',
+                      key: const ValueKey('portfolio-excluded'),
+                      style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                    ),
                   ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 4),
@@ -1134,8 +1139,17 @@ class PortfolioSummaryCard extends StatelessWidget {
                               s == null ? '…' : (s.unknown ? l10n.notAvailable : fmt.money(s.value, s.currency)),
                               style: theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w700),
                             ),
+                            // Ár nélküli papírok (pl. nem USA-részvény): nevesítve, nem csak „n/a”.
+                            if (s != null && s.hasExcluded)
+                              Text(
+                                l10n.portfolioNoPriceFor(
+                                  s.rows.where((r) => !r.inTotal).map((r) => r.position.symbol).join(', '),
+                                ),
+                                key: const ValueKey('portfolio-no-price'),
+                                style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                              ),
                             // A változások az érték alatt, hogy keskeny képernyőn se lógjanak ki.
-                            if (s != null)
+                            if (s != null && !s.unknown)
                               Wrap(
                                 spacing: 12,
                                 children: [

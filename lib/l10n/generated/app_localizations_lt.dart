@@ -2615,4 +2615,9 @@ class AppLocalizationsLt extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Klausti DI: „$query“';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Nėra dabartinės $symbols kainos.';
+  }
 }

@@ -2549,4 +2549,9 @@ class AppLocalizationsFi extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Kysy tekoälyltä: ”$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Ei nykyistä hintaa kohteille $symbols.';
+  }
 }

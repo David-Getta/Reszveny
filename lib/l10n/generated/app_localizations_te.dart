@@ -2554,4 +2554,9 @@ class AppLocalizationsTe extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'AIని అడగండి: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return '$symbols కోసం ప్రస్తుత ధర అందుబాటులో లేదు.';
+  }
 }

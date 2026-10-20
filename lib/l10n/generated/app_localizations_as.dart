@@ -2547,4 +2547,9 @@ class AppLocalizationsAs extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'AIক সোধক: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return '$symbols-ৰ বাবে বৰ্তমানৰ দাম নাই।';
+  }
 }

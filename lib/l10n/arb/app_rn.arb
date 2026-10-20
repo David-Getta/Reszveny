@@ -678,5 +678,6 @@
   "instrumentHint": "Nta makuru y’isosiyete ari ku kimenyetso iki – gishobora kuba ETF, ikigega canke icemezo c’ibitsa. Baza AI ico ari co, ico kirimwo n’ico gitwara.",
   "instrumentAsk": "Iki ni iki?",
   "instrumentNote": "Insiguro ya AI ivuye ku rupapuro rw’ikigega rw’uwagishinze no ku mbuga z’imari ibona kuri internet. Si inama yo gushora imari. Ikoresha urugero rw’ibibazo vyawe rw’umunsi, si isesengura.",
-  "suggestAskAi": "Baza AI: “{query}”"
+  "suggestAskAi": "Baza AI: “{query}”",
+  "portfolioNoPriceFor": "Nta giciro ca none ca {symbols}."
 }

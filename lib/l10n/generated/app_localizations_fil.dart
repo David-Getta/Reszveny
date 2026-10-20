@@ -2555,4 +2555,9 @@ class AppLocalizationsFil extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Itanong sa AI: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Walang kasalukuyang presyo para sa $symbols.';
+  }
 }

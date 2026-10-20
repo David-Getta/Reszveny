@@ -4410,6 +4410,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Ask the AI: “{query}”'**
   String suggestAskAi(String query);
+
+  /// Note on the portfolio card and page naming the positions that have no current price (e.g. a non-US stock the data provider does not cover), so the total leaves them out. {symbols} is a comma-separated list of tickers.
+  ///
+  /// In en, this message translates to:
+  /// **'No current price for {symbols}.'**
+  String portfolioNoPriceFor(String symbols);
 }
 
 class _AppLocalizationsDelegate

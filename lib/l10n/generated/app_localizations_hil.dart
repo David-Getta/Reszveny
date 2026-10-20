@@ -2564,4 +2564,9 @@ class AppLocalizationsHil extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Pamangkuta ang AI: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Wala sang presyo subong para sa $symbols.';
+  }
 }

@@ -2550,4 +2550,9 @@ class AppLocalizationsJv extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Takon AI: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Ora ana rega saiki kanggo $symbols.';
+  }
 }

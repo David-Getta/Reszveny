@@ -2535,4 +2535,9 @@ class AppLocalizationsMos extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Sok AI: « $query »';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return '$symbols koosg ka be masã ye.';
+  }
 }

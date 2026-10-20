@@ -678,5 +678,6 @@
   "instrumentHint": "Hakuna wasifu wa kampuni kwa alama hii – inaweza kuwa ETF, mfuko au hati ya amana. Uliza AI ni nini, ina nini ndani na inagharimu kiasi gani.",
   "instrumentAsk": "Hii ni nini?",
   "instrumentNote": "Ufafanuzi wa AI kutoka ukurasa wa mfuko wa mtoaji na tovuti za kifedha inazozipata mtandaoni. Si ushauri wa uwekezaji. Hutumia kikomo chako cha maswali cha kila siku, si uchambuzi.",
-  "suggestAskAi": "Uliza AI: “{query}”"
+  "suggestAskAi": "Uliza AI: “{query}”",
+  "portfolioNoPriceFor": "Hakuna bei ya sasa kwa {symbols}."
 }

@@ -2592,4 +2592,9 @@ class AppLocalizationsHr extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Pitajte AI: „$query“';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Nema trenutačne cijene za $symbols.';
+  }
 }

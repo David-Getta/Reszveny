@@ -2553,4 +2553,9 @@ class AppLocalizationsHa extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Tambayi AI: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Babu farashin yanzu na $symbols.';
+  }
 }

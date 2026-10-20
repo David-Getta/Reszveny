@@ -2547,4 +2547,9 @@ class AppLocalizationsTt extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'AI-дан сорау: «$query»';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return '$symbols өчен агымдагы бәя юк.';
+  }
 }

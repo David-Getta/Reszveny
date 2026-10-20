@@ -678,5 +678,6 @@
   "instrumentHint": "Tsy misy mombamomba ny orinasa ho an’ity marika ity – mety ho ETF, tahiry na taratasy fanamarinana petra-bola izy io. Anontanio ny AI hoe inona izy io, inona no ao anatiny ary ohatrinona ny vidiny.",
   "instrumentAsk": "Inona ity?",
   "instrumentNote": "Fanazavana avy amin’ny AI avy amin’ny pejin’ny tahiry an’ny mpamoaka sy ny tranonkala ara-bola hitany ao amin’ny tranonkala. Tsy torohevitra momba ny fampiasam-bola. Mampiasa ny fetran’ny fanontanianao isan’andro izy, fa tsy famakafakana.",
-  "suggestAskAi": "Anontanio ny AI: « {query} »"
+  "suggestAskAi": "Anontanio ny AI: « {query} »",
+  "portfolioNoPriceFor": "Tsy misy vidiny ankehitriny ho an'ny {symbols}."
 }

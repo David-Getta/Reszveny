@@ -2540,4 +2540,9 @@ class AppLocalizationsHe extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'לשאול את ה-AI: „$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'אין מחיר נוכחי עבור $symbols.';
+  }
 }

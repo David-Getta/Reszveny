@@ -2559,4 +2559,9 @@ class AppLocalizationsCeb extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Pangutan-a ang AI: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Walay presyo karon alang sa $symbols.';
+  }
 }

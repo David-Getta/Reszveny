@@ -678,5 +678,6 @@
   "instrumentHint": "Alikho iphrofayili yenkampani yalolu phawu – kungaba yi-ETF, isikhwama semali noma isitifiketi sediphozithi. Buza i-AI ukuthi yini, iqukethe ini nokuthi ibiza malini.",
   "instrumentAsk": "Yini lena?",
   "instrumentNote": "Incazelo ye-AI evela ekhasini lesikhwama lomkhiphi nakumawebhusayithi ezezimali esiwathola kuwebhu. Akuyona iseluleko sokutshala imali. Sisebenzisa umkhawulo wakho wemibuzo wansuku zonke, hhayi ukuhlaziya.",
-  "suggestAskAi": "Buza i-AI: “{query}”"
+  "suggestAskAi": "Buza i-AI: “{query}”",
+  "portfolioNoPriceFor": "Ayikho intengo yamanje ye-{symbols}."
 }

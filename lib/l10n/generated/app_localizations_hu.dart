@@ -2553,4 +2553,9 @@ class AppLocalizationsHu extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Kérdezzük meg az AI-t: „$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Nincs aktuális ár: $symbols.';
+  }
 }

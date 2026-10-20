@@ -2469,4 +2469,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'AI に聞く：「$query」';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return '$symbolsの現在の株価はありません。';
+  }
 }

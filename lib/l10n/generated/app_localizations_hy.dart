@@ -2557,4 +2557,9 @@ class AppLocalizationsHy extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Հարցնել AI-ին՝ «$query»';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return '$symbols-ի ընթացիկ գինը չկա։';
+  }
 }

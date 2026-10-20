@@ -2558,4 +2558,9 @@ class AppLocalizationsTa extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'AI-யிடம் கேளுங்கள்: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return '$symbols-க்கு தற்போதைய விலை கிடைக்கவில்லை.';
+  }
 }

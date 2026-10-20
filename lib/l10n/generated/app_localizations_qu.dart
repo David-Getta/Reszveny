@@ -2563,4 +2563,9 @@ class AppLocalizationsQu extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'AI-ta tapuy: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return '$symbols-paq kunan chaninnin mana kanchu.';
+  }
 }

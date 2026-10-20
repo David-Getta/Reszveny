@@ -2559,4 +2559,9 @@ class AppLocalizationsXh extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Buza i-AI: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Akukho xabiso langoku kwi-$symbols.';
+  }
 }

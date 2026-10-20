@@ -678,5 +678,6 @@
   "instrumentHint": "Šiam simboliui nėra įmonės profilio – tai gali būti ETF, fondas arba depozitoriumo pakvitavimas. Paklauskite DI, kas tai, ką jis turi ir kiek kainuoja.",
   "instrumentAsk": "Kas tai?",
   "instrumentNote": "DI paaiškinimas pagal emitento fondo puslapį ir finansų svetaines, kurias jis randa internete. Tai nėra investavimo rekomendacija. Naudoja jūsų dienos klausimų limitą, o ne analizę.",
-  "suggestAskAi": "Klausti DI: „{query}“"
+  "suggestAskAi": "Klausti DI: „{query}“",
+  "portfolioNoPriceFor": "Nėra dabartinės {symbols} kainos."
 }

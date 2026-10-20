@@ -2548,4 +2548,9 @@ class AppLocalizationsPcm extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Ask di AI: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return '$symbols no get current price.';
+  }
 }

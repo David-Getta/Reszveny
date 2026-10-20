@@ -678,5 +678,6 @@
   "instrumentHint": "このシンボルには企業情報がありません。ETF、ファンド、または預託証券の可能性があります。これが何か、何を保有し、コストはいくらかを AI に聞いてみましょう。",
   "instrumentAsk": "これは何？",
   "instrumentNote": "発行体のファンドページと Web で見つかった金融サイトをもとに AI が説明します。投資助言ではありません。1日の質問回数を使い、分析回数は消費しません。",
-  "suggestAskAi": "AI に聞く：「{query}」"
+  "suggestAskAi": "AI に聞く：「{query}」",
+  "portfolioNoPriceFor": "{symbols}の現在の株価はありません。"
 }

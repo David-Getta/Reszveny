@@ -2550,4 +2550,9 @@ class AppLocalizationsKu extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Ji AI bipirse: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Ji bo $symbols bihayê niha tune.';
+  }
 }

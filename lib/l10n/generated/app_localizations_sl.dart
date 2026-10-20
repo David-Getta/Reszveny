@@ -2617,4 +2617,9 @@ class AppLocalizationsSl extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Vprašajte AI: »$query«';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Ni trenutne cene za $symbols.';
+  }
 }

@@ -2527,4 +2527,9 @@ class AppLocalizationsKm extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'សួរ AI៖ «$query»';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'គ្មានតម្លៃបច្ចុប្បន្នសម្រាប់ $symbols ទេ។';
+  }
 }

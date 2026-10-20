@@ -2610,4 +2610,9 @@ class AppLocalizationsCs extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Zeptat se AI: „$query“';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Pro $symbols není k dispozici aktuální cena.';
+  }
 }

@@ -2545,4 +2545,9 @@ class AppLocalizationsBm extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'AI ɲininka: « $query »';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return '$symbols sisan sɔngɔ tɛ yen.';
+  }
 }

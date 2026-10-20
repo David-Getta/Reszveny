@@ -2551,4 +2551,9 @@ class AppLocalizationsAz extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'AI-dən soruşun: «$query»';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return '$symbols üçün cari qiymət yoxdur.';
+  }
 }

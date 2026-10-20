@@ -678,5 +678,6 @@
   "instrumentHint": "Adwumakuo ho nsɛm biara nni hɔ mma saa symbol yi – ebia ɛyɛ ETF, fund anaa depositary receipt. Bisa AI no sɛ ɛyɛ dɛn, dɛn na ɛwɔ mu, na ne bo yɛ sɛn.",
   "instrumentAsk": "Ɛyɛ dɛn?",
   "instrumentNote": "AI nkyerɛkyerɛmu a ɛfiri deɛ ɔde baeɛ no fund krataafa ne sikasɛm nkrataafa a ɛhu wɔ intanɛt so. Ɛnyɛ sikahyɛmu ho afotu. Ɛfiri wo nsɛmmisa a ɛsɛ da biara mu, ɛnni nhwehwɛmu biara.",
-  "suggestAskAi": "Bisa AI no: “{query}”"
+  "suggestAskAi": "Bisa AI no: “{query}”",
+  "portfolioNoPriceFor": "Seesei bo biara nni hɔ mma {symbols}."
 }

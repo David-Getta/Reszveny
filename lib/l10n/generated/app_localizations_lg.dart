@@ -2558,4 +2558,9 @@ class AppLocalizationsLg extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Buuza AI: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Tewali bbeeyi ya kati eya $symbols.';
+  }
 }

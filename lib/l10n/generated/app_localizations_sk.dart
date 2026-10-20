@@ -2614,4 +2614,9 @@ class AppLocalizationsSk extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Opýtať sa AI: „$query“';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Pre $symbols nie je k dispozícii aktuálna cena.';
+  }
 }

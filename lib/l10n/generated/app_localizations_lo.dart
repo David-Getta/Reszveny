@@ -2521,4 +2521,9 @@ class AppLocalizationsLo extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'ຖາມ AI: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'ບໍ່ມີລາຄາປັດຈຸບັນສຳລັບ $symbols';
+  }
 }

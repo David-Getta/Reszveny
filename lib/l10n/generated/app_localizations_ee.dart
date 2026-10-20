@@ -2551,4 +2551,9 @@ class AppLocalizationsEe extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Bia AI: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Fifia asi aɖeke meli na $symbols o.';
+  }
 }

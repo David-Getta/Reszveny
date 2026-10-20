@@ -2541,4 +2541,9 @@ class AppLocalizationsVi extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Hỏi AI: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Không có giá hiện tại cho $symbols.';
+  }
 }

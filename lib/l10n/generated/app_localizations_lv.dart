@@ -2589,4 +2589,9 @@ class AppLocalizationsLv extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Jautāt AI: „$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Pozīcijām $symbols nav pašreizējās cenas.';
+  }
 }

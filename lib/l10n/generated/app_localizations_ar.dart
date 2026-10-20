@@ -2606,4 +2606,9 @@ class AppLocalizationsAr extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'اسأل الذكاء الاصطناعي: «$query»';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'لا يوجد سعر حالي لـ $symbols.';
+  }
 }

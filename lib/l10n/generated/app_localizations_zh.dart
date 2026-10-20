@@ -2435,6 +2435,11 @@ class AppLocalizationsZh extends AppLocalizations {
   String suggestAskAi(String query) {
     return '问问 AI：“$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return '$symbols暂无当前价格。';
+  }
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -4865,5 +4870,10 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   @override
   String suggestAskAi(String query) {
     return '問 AI：「$query」';
+  }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return '$symbols沒有目前股價。';
   }
 }

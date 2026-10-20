@@ -678,5 +678,6 @@
   "instrumentHint": "Za ovaj simbol ne postoji profil kompanije – možda je riječ o ETF-u, fondu ili depozitnoj potvrdi. Pitajte AI šta je to, šta sadrži i koliko košta.",
   "instrumentAsk": "Šta je ovo?",
   "instrumentNote": "Objašnjenje umjetne inteligencije na osnovu stranice fonda kod izdavaoca i finansijskih stranica koje pronađe na internetu. Nije investicijski savjet. Troši vaše dnevno ograničenje pitanja, ne analizu.",
-  "suggestAskAi": "Pitajte AI: „{query}“"
+  "suggestAskAi": "Pitajte AI: „{query}“",
+  "portfolioNoPriceFor": "Nema trenutne cijene za {symbols}."
 }

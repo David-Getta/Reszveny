@@ -2615,4 +2615,9 @@ class AppLocalizationsBe extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Спытаць у AI: «$query»';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Няма актуальнай цаны для $symbols.';
+  }
 }

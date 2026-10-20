@@ -2539,4 +2539,9 @@ class AppLocalizationsPs extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'له AI وپوښتئ: «$query»';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'د $symbols لپاره اوسنۍ بیه نشته.';
+  }
 }

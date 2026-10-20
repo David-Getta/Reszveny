@@ -678,5 +678,6 @@
   "instrumentHint": "Palibe mbiri ya kampani ya chizindikiro ichi – chingakhale ETF, thumba la ndalama kapena chikalata cha depositi. Funsani AI kuti ndi chiyani, chili ndi chiyani ndipo mtengo wake ndi wotani.",
   "instrumentAsk": "Ichi ndi chiyani?",
   "instrumentNote": "Kufotokozera kwa AI kuchokera patsamba la thumba la wotulutsa ndi masamba azachuma omwe chimapeza pa intaneti. Si malangizo okhudza kuyika ndalama. Chimagwiritsa ntchito malire a mafunso anu a tsiku ndi tsiku, osati kusanthula.",
-  "suggestAskAi": "Funsani AI: “{query}”"
+  "suggestAskAi": "Funsani AI: “{query}”",
+  "portfolioNoPriceFor": "Palibe mtengo wapano wa {symbols}."
 }

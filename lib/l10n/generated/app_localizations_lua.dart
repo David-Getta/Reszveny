@@ -2555,4 +2555,9 @@ class AppLocalizationsLua extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Ebeja AI: « $query »';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Kakuena mushinga wa mpindieu wa $symbols.';
+  }
 }

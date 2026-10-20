@@ -2557,4 +2557,9 @@ class AppLocalizationsOm extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'AI gaafadhu: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Gatiin ammaa $symbols hin jiru.';
+  }
 }

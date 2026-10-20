@@ -2549,4 +2549,9 @@ class AppLocalizationsKa extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'ჰკითხეთ AI-ს: „$query“';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return '$symbols-ის მიმდინარე ფასი არ არის.';
+  }
 }

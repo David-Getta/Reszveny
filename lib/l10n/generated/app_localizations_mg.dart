@@ -2566,4 +2566,9 @@ class AppLocalizationsMg extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Anontanio ny AI: « $query »';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Tsy misy vidiny ankehitriny ho an\'ny $symbols.';
+  }
 }

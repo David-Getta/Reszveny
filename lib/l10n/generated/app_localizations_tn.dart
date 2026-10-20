@@ -2566,4 +2566,9 @@ class AppLocalizationsTn extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Botsa AI: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Ga go na tlhwatlhwa ya gompieno ya $symbols.';
+  }
 }

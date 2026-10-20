@@ -678,5 +678,6 @@
   "instrumentHint": "Tälle tunnukselle ei ole yritysprofiilia – kyse voi olla ETF:stä, rahastosta tai talletustodistuksesta. Kysy tekoälyltä, mikä se on, mitä se sisältää ja mitä se maksaa.",
   "instrumentAsk": "Mikä tämä on?",
   "instrumentNote": "Tekoälyn selitys liikkeeseenlaskijan rahastosivun ja sen verkosta löytämien taloussivustojen perusteella. Se ei ole sijoitusneuvontaa. Kuluttaa päivittäistä kysymyskiintiötäsi, ei analyysia.",
-  "suggestAskAi": "Kysy tekoälyltä: ”{query}”"
+  "suggestAskAi": "Kysy tekoälyltä: ”{query}”",
+  "portfolioNoPriceFor": "Ei nykyistä hintaa kohteille {symbols}."
 }

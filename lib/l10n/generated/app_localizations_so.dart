@@ -2557,4 +2557,9 @@ class AppLocalizationsSo extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Weydii AI: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return '$symbols ma laha qiime hadda ah.';
+  }
 }

@@ -2588,4 +2588,9 @@ class AppLocalizationsRo extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Întreabă AI: „$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Nu există preț curent pentru $symbols.';
+  }
 }

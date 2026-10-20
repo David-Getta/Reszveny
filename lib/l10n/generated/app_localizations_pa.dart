@@ -2544,4 +2544,9 @@ class AppLocalizationsPa extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'AI ਨੂੰ ਪੁੱਛੋ: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return '$symbols ਲਈ ਮੌਜੂਦਾ ਕੀਮਤ ਉਪਲਬਧ ਨਹੀਂ ਹੈ।';
+  }
 }

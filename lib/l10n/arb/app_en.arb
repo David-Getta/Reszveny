@@ -2059,5 +2059,10 @@
   "@suggestAskAi": {
     "description": "Suggestion row under the search field when the typed text looks like a description (e.g. \"tech 100 etf\") and the market search finds nothing: tapping it asks the AI which stock or ETF is meant.",
     "placeholders": {"query": {"type": "String"}}
+  },
+  "portfolioNoPriceFor": "No current price for {symbols}.",
+  "@portfolioNoPriceFor": {
+    "description": "Note on the portfolio card and page naming the positions that have no current price (e.g. a non-US stock the data provider does not cover), so the total leaves them out. {symbols} is a comma-separated list of tickers.",
+    "placeholders": {"symbols": {"type": "String"}}
   }
 }

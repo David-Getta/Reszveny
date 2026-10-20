@@ -678,5 +678,6 @@
   "instrumentHint": "Šim simbolam nav uzņēmuma profila – tas var būt ETF, fonds vai depozitārais sertifikāts. Pajautājiet mākslīgajam intelektam, kas tas ir, ko tas satur un cik tas maksā.",
   "instrumentAsk": "Kas tas ir?",
   "instrumentNote": "Mākslīgā intelekta skaidrojums pēc emitenta fonda lapas un finanšu vietnēm, ko tas atrod tīmeklī. Tā nav ieguldījumu konsultācija. Izmanto jūsu dienas jautājumu limitu, nevis analīzi.",
-  "suggestAskAi": "Jautāt AI: „{query}”"
+  "suggestAskAi": "Jautāt AI: „{query}”",
+  "portfolioNoPriceFor": "Pozīcijām {symbols} nav pašreizējās cenas."
 }

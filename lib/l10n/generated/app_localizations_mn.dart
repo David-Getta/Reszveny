@@ -2549,4 +2549,9 @@ class AppLocalizationsMn extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'AI-аас асуух: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return '$symbols-д одоогийн үнэ байхгүй.';
+  }
 }

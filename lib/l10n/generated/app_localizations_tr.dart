@@ -2548,4 +2548,9 @@ class AppLocalizationsTr extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Yapay zekâya sorun: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return '$symbols için güncel fiyat yok.';
+  }
 }

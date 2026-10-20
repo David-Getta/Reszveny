@@ -2552,4 +2552,9 @@ class AppLocalizationsKy extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'AI-дан суроо: «$query»';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return '$symbols үчүн учурдагы баа жок.';
+  }
 }

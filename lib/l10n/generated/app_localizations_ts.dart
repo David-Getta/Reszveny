@@ -2565,4 +2565,9 @@ class AppLocalizationsTs extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Vutisa AI: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'A ku na nxavo wa sweswi wa $symbols.';
+  }
 }

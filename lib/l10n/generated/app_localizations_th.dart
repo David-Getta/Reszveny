@@ -2518,4 +2518,9 @@ class AppLocalizationsTh extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'ถาม AI: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'ไม่มีราคาปัจจุบันสำหรับ $symbols';
+  }
 }

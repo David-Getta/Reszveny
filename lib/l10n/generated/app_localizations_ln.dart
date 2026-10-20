@@ -2559,4 +2559,9 @@ class AppLocalizationsLn extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Tuna AI: « $query »';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Ntalo ya sikoyo ezali te mpo na $symbols.';
+  }
 }

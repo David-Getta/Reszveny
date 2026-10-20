@@ -2537,4 +2537,9 @@ class AppLocalizationsBo extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'AI ལ་དྲིས། “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return '$symbols ལ་ད་ལྟའི་གོང་ཚད་མེད།';
+  }
 }

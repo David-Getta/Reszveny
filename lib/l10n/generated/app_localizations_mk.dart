@@ -2567,4 +2567,9 @@ class AppLocalizationsMk extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Прашајте го AI: „$query“';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Нема актуелна цена за $symbols.';
+  }
 }

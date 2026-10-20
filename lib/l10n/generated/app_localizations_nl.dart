@@ -2552,4 +2552,9 @@ class AppLocalizationsNl extends AppLocalizations {
   String suggestAskAi(String query) {
     return 'Vraag het de AI: “$query”';
   }
+
+  @override
+  String portfolioNoPriceFor(String symbols) {
+    return 'Geen actuele koers voor $symbols.';
+  }
 }
