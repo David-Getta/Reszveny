@@ -38,6 +38,8 @@ import 'package:reszveny/features/alerts/price_alert.dart';
 import 'package:reszveny/features/fx/fx_service.dart';
 import 'package:reszveny/features/market_data/demo_market_data_provider.dart';
 import 'package:reszveny/features/news/earnings_summarizer.dart';
+import 'package:reszveny/features/news/daily_brief.dart';
+import 'package:reszveny/features/news/watch_news.dart';
 import 'package:reszveny/features/news/research_follow_up.dart';
 import 'package:reszveny/features/portfolio/portfolio_page.dart';
 import 'package:reszveny/features/portfolio/portfolio_store.dart';
@@ -155,6 +157,7 @@ AppServices _services({
   HoldingsReader? holdingsReader,
   EarningsSummarizer? earningsSummarizer,
   ResearchFollowUp? researchFollowUp,
+  DailyBrief Function(WatchNewsService news)? dailyBrief,
 }) {
   final ent = _entitlements();
   // Backend-módban fiók kártya és jogi linkek; a szerver egy utánzat.
@@ -193,6 +196,7 @@ AppServices _services({
     chat: chat,
     earningsSummarizer: earningsSummarizer,
     researchFollowUp: researchFollowUp,
+    dailyBrief: dailyBrief,
   );
 }
 
@@ -1234,6 +1238,58 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.byKey(const ValueKey('suggestion-ai')), findsOneWidget);
     await _shot(tester, 'search_ai_suggestion_phone_hu');
+  });
+
+  testWidgets('the daily brief with a question (hungarian, phone)', (tester) async {
+    const config = AppConfig(backendUrl: 'https://api.test');
+    final client = MockClient((req) async {
+      final question = req.body.contains('Question:');
+      return http.Response(
+        jsonEncode({
+          'stop_reason': 'end_turn',
+          'content': [
+            {
+              'type': 'text',
+              'text': question
+                  ? 'Az NVIDIA azért emelkedett, mert a negyedéves számai és az adatközponti kilátása is a várakozás '
+                        'fölött voltak; a többi papírodat inkább az általános hangulat mozgatta.'
+                  : 'Nyugodt nap volt, a portfóliód enyhén pluszban zárt.\n\n'
+                        '- NVDA +3,0%: a gyorsjelentés és az adatközponti kilátás a várt felett.\n'
+                        '- AAPL +0,9%: iPhone-rendelések, nincs külön hír.\n'
+                        '- OTP +1,1%: a bankszektor erősödött a régióban.',
+            },
+          ],
+        }),
+        200,
+        headers: {'content-type': 'application/json; charset=utf-8'},
+      );
+    });
+    await pumpApp(
+      tester,
+      _services(
+        locale: const Locale('hu'),
+        backend: true,
+        dailyBrief: (news) => DailyBrief(
+          config: config,
+          marketData: DemoMarketDataProvider(latency: Duration.zero),
+          news: news,
+          client: client,
+        ),
+        researchFollowUp: ResearchFollowUp(config: config, client: client),
+      ),
+      const Size(430, 932),
+    );
+    final run = find.byKey(const ValueKey('daily-brief-run'));
+    await tester.scrollUntilVisible(run, 200, scrollable: find.byType(Scrollable).first);
+    await tester.tap(run);
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byKey(const ValueKey('followup-field')), 'Miért emelkedett az NVDA?');
+    await tester.tap(find.byKey(const ValueKey('followup-send')));
+    await tester.pumpAndSettle();
+    final panel = find.byKey(const ValueKey('daily-brief-followup'));
+    Scrollable.ensureVisible(tester.element(panel), alignment: 0.6);
+    await tester.pumpAndSettle();
+    await _shot(tester, 'daily_brief_question_phone_hu');
   });
 
   testWidgets('asking for anonymous statistics on the home screen (hungarian, phone)', (tester) async {
