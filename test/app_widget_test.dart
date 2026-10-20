@@ -20,6 +20,7 @@ import 'package:reszveny/features/billing/demo_billing_service.dart';
 import 'package:reszveny/features/billing/entitlement_service.dart';
 import 'package:reszveny/features/billing/plan.dart';
 import 'package:reszveny/features/capture/capture_service.dart';
+import 'package:reszveny/features/fx/fx_service.dart';
 import 'package:reszveny/features/market_data/demo_market_data_provider.dart';
 import 'package:reszveny/features/recognition/stock_recognizer.dart';
 import 'package:reszveny/widgets/collapsible.dart';
@@ -33,16 +34,17 @@ class _NoRecognizer implements StockRecognizer {
       const RecognitionResult(candidates: []);
 }
 
-AppServices services({Locale? locale, AlertNotifier? notifier}) {
+AppServices services({Locale? locale, AlertNotifier? notifier, FxService? fx, AppPreferences? preferences}) {
   final ent = _entitlements();
   return AppServices(
+    fx: fx,
     alertNotifier: notifier ?? FakeNotifier(),
     config: const AppConfig(),
     capture: CaptureService(),
     recognizer: _NoRecognizer(),
     marketData: DemoMarketDataProvider(latency: Duration.zero),
     locale: LocaleController(initial: locale),
-    preferences: AppPreferences(),
+    preferences: preferences ?? AppPreferences(),
     desktop: DesktopIntegration(),
     reports: ReportStore(analyst: _FakeAnalyst(), entitlements: ent),
     entitlements: ent,

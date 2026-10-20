@@ -8,6 +8,7 @@ import '../../core/models/stock_quote.dart';
 import '../../core/util/formatters.dart';
 import '../../core/util/us_market_hours.dart';
 import '../../l10n/generated/app_localizations.dart';
+import '../fx/fx_service.dart';
 import '../../theme/app_theme.dart';
 
 /// „Piacok ma”: a nagy amerikai indexek napi változása az őket követő ETF-ek
@@ -19,6 +20,13 @@ class MarketsStrip extends StatefulWidget {
 
   /// (ETF, a követett index neve).
   static const markets = [('SPY', 'S&P 500'), ('QQQ', 'Nasdaq 100'), ('DIA', 'Dow Jones')];
+
+  /// A mutatott devizapár: a dollár a megjelenítési pénznemben (USD/HUF); ha az
+  /// dollár vagy nem jegyzett, akkor EUR/USD.
+  static (String, String) fxPair(String? displayCurrency) {
+    final c = displayCurrency?.toUpperCase();
+    return c == null || c == 'USD' || !FxService.isSupported(c) ? ('EUR', 'USD') : ('USD', c);
+  }
 
   @override
   State<MarketsStrip> createState() => _MarketsStripState();
@@ -34,6 +42,8 @@ String shortDuration(AppLocalizations l10n, Duration d) {
 
 class _MarketsStripState extends State<MarketsStrip> {
   Future<List<StockQuote?>>? _quotes;
+  Future<List<FxRate>>? _fx;
+  (String, String)? _pair;
 
   /// Percenként frissül a nyitvatartás visszaszámlálása.
   Timer? _tick;
@@ -55,11 +65,17 @@ class _MarketsStripState extends State<MarketsStrip> {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    final market = AppServices.of(context).marketData;
+    final services = AppServices.of(context);
+    final market = services.marketData;
     _quotes ??= Future.wait([
       for (final (s, _) in MarketsStrip.markets)
         market.quote(s).then<StockQuote?>((q) => q, onError: (Object _) => null),
     ]);
+    final pair = MarketsStrip.fxPair(services.displayCurrency(Localizations.localeOf(context)));
+    if (pair != _pair) {
+      _pair = pair;
+      _fx = services.fx.recent(pair.$1, pair.$2);
+    }
   }
 
   @override
@@ -131,6 +147,38 @@ class _MarketsStripState extends State<MarketsStrip> {
                       ),
                     ),
               ],
+            ),
+            // A dollár (vagy az euró) árfolyama a saját pénznemben, a napi változással (ECB).
+            FutureBuilder<List<FxRate>>(
+              future: _fx,
+              builder: (context, snap) {
+                final rates = snap.data ?? const [];
+                if (rates.isEmpty) return const SizedBox.shrink();
+                final last = rates.last;
+                final prev = rates.length > 1 ? rates[rates.length - 2] : null;
+                final change = prev == null ? null : (last.rate / prev.rate - 1) * 100;
+                return Padding(
+                  padding: const EdgeInsets.fromLTRB(4, 8, 0, 0),
+                  child: Text.rich(
+                    TextSpan(
+                      children: [
+                        TextSpan(
+                          text: '${last.from}/${last.to} ',
+                          style: const TextStyle(fontWeight: FontWeight.w600),
+                        ),
+                        TextSpan(text: fmt.number(last.rate, decimals: last.rate < 10 ? 4 : 2)),
+                        if (change != null)
+                          TextSpan(
+                            text: ' · ${fmt.percent(change, withSign: true)}',
+                            style: TextStyle(color: change >= 0 ? p.positive : p.negative, fontWeight: FontWeight.w600),
+                          ),
+                      ],
+                    ),
+                    key: const ValueKey('market-fx'),
+                    style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                  ),
+                );
+              },
             ),
           ],
         );

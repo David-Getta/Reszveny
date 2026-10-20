@@ -66,6 +66,13 @@ FxService _fx() => FxService(
   client: MockClient((req) async {
     final from = req.url.queryParameters['from']!, to = req.url.queryParameters['to']!;
     final rate = _usdPer[from]! / _usdPer[to]!;
+    // Időszakos lekérés (a „Piacok ma” devizasora): két nap, +0,3%-os napi változással.
+    if (req.url.path.contains('..')) {
+      return http.Response(
+        '{"amount":1,"base":"$from","rates":{"2026-10-08":{"$to":${rate / 1.003}},"2026-10-09":{"$to":$rate}}}',
+        200,
+      );
+    }
     return http.Response('{"amount":1,"base":"$from","date":"2026-10-09","rates":{"$to":$rate}}', 200);
   }),
 );

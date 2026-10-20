@@ -96,6 +96,51 @@ class FxService extends ChangeNotifier {
     });
   }
 
+  final Map<String, (DateTime, List<FxRate>)> _recent = {};
+
+  /// Az utolsó napok árfolyamai (időrendben, legfeljebb [days] napra vissza),
+  /// a napi változáshoz; egy óráig memóriában marad. Hiba esetén üres lista.
+  Future<List<FxRate>> recent(String from, String to, {int days = 8}) async {
+    final f = from.toUpperCase(), t = to.toUpperCase();
+    if (f == t || !isSupported(f) || !isSupported(t)) return const [];
+    final key = '$f>$t';
+    final cached = _recent[key];
+    if (cached != null && DateTime.now().difference(cached.$1) < const Duration(hours: 1)) return cached.$2;
+    try {
+      final end = DateTime.now().toUtc();
+      final start = end.subtract(Duration(days: days));
+      String d(DateTime x) => x.toIso8601String().substring(0, 10);
+      final res = await _client
+          .get(Uri.parse('$baseUrl/${d(start)}..${d(end)}').replace(queryParameters: {'from': f, 'to': t}))
+          .timeout(const Duration(seconds: 15));
+      if (res.statusCode != 200) return const [];
+      final series = parseSeries(jsonDecode(res.body) as Map<String, dynamic>, f, t);
+      _recent[key] = (DateTime.now(), series);
+      return series;
+    } catch (e) {
+      debugPrint('Árfolyam-sorozat lekérése nem sikerült ($key): $e');
+      return const [];
+    }
+  }
+
+  /// A Frankfurter időszakos válasza: `{"rates":{"2026-10-13":{"HUF":355.2},…}}`,
+  /// időrendben. Ha a válasz egynapos (`"rates":{"HUF":…}`), egy elem.
+  static List<FxRate> parseSeries(Map<String, dynamic> j, String from, String to) {
+    final rates = (j['rates'] as Map?)?.cast<String, dynamic>() ?? const {};
+    final out = <FxRate>[];
+    for (final e in rates.entries) {
+      final day = DateTime.tryParse(e.key);
+      final v = e.value is Map ? (e.value as Map)[to] : null;
+      if (day != null && v is num) out.add(FxRate(from: from, to: to, rate: v.toDouble(), date: day));
+    }
+    if (out.isEmpty) {
+      final single = parseLatest(j, from, to);
+      if (single != null) out.add(single);
+    }
+    out.sort((a, b) => a.date.compareTo(b.date));
+    return out;
+  }
+
   /// Azonnali (már gyorsítótárazott) árfolyam, szinkron megjelenítéshez.
   FxRate? cachedRate(String from, String to) => _cache['${from.toUpperCase()}>${to.toUpperCase()}'];
 
