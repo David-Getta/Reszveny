@@ -2548,4 +2548,18 @@ class AppLocalizationsIlo extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'Amammuen no ania a stock ti kayatmo a sawen…';
+
+  @override
+  String get instrumentTitle => 'Maipapan iti daytoy nga instrumento';
+
+  @override
+  String get instrumentHint =>
+      'Awan ti profile ti kompania para iti daytoy a simbolo – mabalin a ETF, fund wenno depositary receipt daytoy. Saludsodem ti AI no ania daytoy, ania ti linaonna ken mano ti gastosna.';
+
+  @override
+  String get instrumentAsk => 'Ania daytoy?';
+
+  @override
+  String get instrumentNote =>
+      'Panangilawlawag ti AI manipud iti fund page ti nangipaay ken kadagiti financial site a nasarakanna iti web. Saan a balakad iti panagpuonan. Agusar daytoy iti inaldaw a limitasion dagiti saludsod-mo, saan nga iti panaganalisa.';
 }

@@ -2598,4 +2598,18 @@ class AppLocalizationsSl extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'Ugotavljanje, katero delnico imate v mislih …';
+
+  @override
+  String get instrumentTitle => 'O tem instrumentu';
+
+  @override
+  String get instrumentHint =>
+      'Za ta simbol ni profila podjetja – lahko gre za ETF, sklad ali potrdilo o deponiranju. Vprašajte AI, kaj je to, kaj vsebuje in koliko stane.';
+
+  @override
+  String get instrumentAsk => 'Kaj je to?';
+
+  @override
+  String get instrumentNote =>
+      'Pojasnilo umetne inteligence na podlagi strani sklada pri izdajatelju in finančnih spletnih mest, ki jih najde na spletu. Ni naložbeni nasvet. Porabi vašo dnevno omejitev vprašanj, ne analize.';
 }

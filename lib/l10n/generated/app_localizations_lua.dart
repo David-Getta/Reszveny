@@ -2536,4 +2536,18 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Tudi tukeba action yudi wamba…';
+
+  @override
+  String get instrumentTitle => 'Bualu bua tshintu etshi';
+
+  @override
+  String get instrumentHint =>
+      'Kakuena malu a kompani bua tshimanyinu etshi – tshidi mua kuikala ETF, fond anyi mukanda wa dépôt. Ebeja AI ntshinyi tshidi, ntshinyi tshidi munda ne mushinga watshi udi bungi munyi.';
+
+  @override
+  String get instrumentAsk => 'Etshi ntshinyi?';
+
+  @override
+  String get instrumentNote =>
+      'Diumvuija dia AI didi difuma ku dibeji dia fond dia mupatudi ne ku ba site ya mfranga idi dipeta ku Internet. Kadiena mibelu ya kuteka mfranga. Bidi bienzeja mukalu wa nkonko yebe ya dituku dionso, kabiyi dikonkonona.';
 }

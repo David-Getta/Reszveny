@@ -673,5 +673,9 @@
   "earningsSummaryNote": "Empresaq resultadonkunata willakusqanmanta, webpi tarisqan willakuykunamantawan AI pisichasqa. Manan qullqi churanapaq yuyaychaychu. Sapa p’unchay tapukuy limitiykita apaykachan, manan t’aqwiytachu.",
   "compareLastSurprise": "Qayna kimsa killa EPS vs suyakusqa",
   "compareNextReport": "Qatiq willakuy",
-  "resolvingDescription": "Mayqin accionta ninki chayta maskhachkan…"
+  "resolvingDescription": "Mayqin accionta ninki chayta maskhachkan…",
+  "instrumentTitle": "Kay instrumentomanta",
+  "instrumentHint": "Kay símbolopaq mana empresa perfil kanchu – ETF, fondo utaq certificado de depósito kanman. AI-ta tapuy imachus kasqanta, imakunachus chaypi kasqanta, hayk’achus chaninninta.",
+  "instrumentAsk": "¿Imataq kayri?",
+  "instrumentNote": "Emisorpa fondo paginanmanta, webpi tarisqan qullqi sitiokunamantawan AI sut’inchasqa. Manan qullqi churanapaq yuyaychaychu. Sapa p’unchay tapukuy limitiykita apaykachan, manan t’aqwiytachu."
 }

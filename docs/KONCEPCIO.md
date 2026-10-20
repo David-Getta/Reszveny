@@ -271,6 +271,7 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 5cm | „A nap a részvényeiddel”: a ma (vagy az elmúlt 2 napban) jelentő cég friss EPS-e a várthoz képest, és a héten jelentők napja is bekerül az AI adataiba, így az összefoglaló a gyorsjelentést is említi | ✅ kész |
 | 5cn | Összehasonlítás: két új sor – az utolsó negyedév EPS-meglepetése (a nagyobb nyer) és a következő jelentés napja | ✅ kész |
 | 5co | Leírás alapján keresés: ha a beírt szöveg nem ticker és a piaci kereső nem találja („tech 100 etf”, „a legnagyobb magyar bank”), az AI találja ki, melyik részvény vagy ETF (egy biztos jelöltnél rögtön megnyílik, többnél választólap); nem fogyaszt elemzést | ✅ kész |
+| 5cp | „Mi ez a papír?” – cégprofil nélküli tickernél (ETF, alap, letéti jegy) kártya, gombbal AI-magyarázat: mi ez, mit követ és tart, költség, méret, osztalék, kockázatok – webes forrásokkal; papíronként és nyelvenként egyszer, 30 napig megőrizve, a szerver megosztja | ✅ kész |
 | 5j | Telefonos háttér-értesítés (riasztás) szerverről, APNs / FCM | 🟡 első lépés kész: a szerver 10 percenként nézi a belépett fiókok szinkronizált riasztásait, és e-mailben szól (csukott appnál is, kikapcsolható); a telefonos push (APNs / FCM) a Firebase-projekt és az Apple-kulcs után |
 | 5k | Bolti adatlapok 120 nyelven, képernyőképek, ikon, előnézeti videó | 🟡 adatlap-szövegek 70 bolti nyelven (fastlane-mappa, `docs/BOLTI_ADATLAP.md`), feliratos bolti képek a teszt-harnessből a boltok méreteiben; előnézeti videó és a nem latin írású képek a natív buildből később |
 

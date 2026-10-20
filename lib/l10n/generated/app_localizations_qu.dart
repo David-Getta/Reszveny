@@ -2544,4 +2544,18 @@ class AppLocalizationsQu extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'Mayqin accionta ninki chayta maskhachkan…';
+
+  @override
+  String get instrumentTitle => 'Kay instrumentomanta';
+
+  @override
+  String get instrumentHint =>
+      'Kay símbolopaq mana empresa perfil kanchu – ETF, fondo utaq certificado de depósito kanman. AI-ta tapuy imachus kasqanta, imakunachus chaypi kasqanta, hayk’achus chaninninta.';
+
+  @override
+  String get instrumentAsk => '¿Imataq kayri?';
+
+  @override
+  String get instrumentNote =>
+      'Emisorpa fondo paginanmanta, webpi tarisqan qullqi sitiokunamantawan AI sut’inchasqa. Manan qullqi churanapaq yuyaychaychu. Sapa p’unchay tapukuy limitiykita apaykachan, manan t’aqwiytachu.';
 }

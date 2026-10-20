@@ -2543,4 +2543,18 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'E batla shere eo o e bolelang…';
+
+  @override
+  String get instrumentTitle => 'Ka sesebediswa sena';
+
+  @override
+  String get instrumentHint =>
+      'Ha ho na profaele ya khampani bakeng sa letshwao lena – e ka ba ETF, letlole kapa setifikeiti sa depositi. Botsa AI hore na ke eng, e na le eng le hore na e bitsa bokae.';
+
+  @override
+  String get instrumentAsk => 'Ke eng sena?';
+
+  @override
+  String get instrumentNote =>
+      'Tlhaloso ya AI e tswang leqepheng la letlole la mofani le diwebosaete tsa ditjhelete tseo e di fumanang inthaneteng. Hase keletso ya ho tsetela. E sebedisa moedi wa hao wa dipotso wa letsatsi le letsatsi, eseng manollo.';
 }

@@ -40,6 +40,7 @@ import 'features/market_data/market_data_provider.dart';
 import 'features/news/daily_brief.dart';
 import 'features/news/morning_brief.dart';
 import 'features/news/earnings_summarizer.dart';
+import 'features/news/instrument_explainer.dart';
 import 'features/news/news_explainer.dart';
 import 'features/news/watch_news.dart';
 import 'features/notes/notes_store.dart';
@@ -87,6 +88,7 @@ class AppServices {
     NewsExplainer? newsExplainer,
     EarningsSummarizer? earningsSummarizer,
     DescriptionResolver? descriptionResolver,
+    InstrumentExplainer? instrumentExplainer,
   }) : fx = fx ?? FxService(),
        updates = updates ?? UpdateService(config: config),
        portfolio = portfolio ?? PortfolioStore(),
@@ -100,6 +102,7 @@ class AppServices {
        newsExplainer = newsExplainer ?? NewsExplainer(config: config, client: backend?.authenticated),
        earningsSummarizer = earningsSummarizer ?? EarningsSummarizer(config: config, client: backend?.authenticated),
        descriptionResolver = descriptionResolver ?? DescriptionResolver(config: config, client: backend?.authenticated),
+       instrumentExplainer = instrumentExplainer ?? InstrumentExplainer(config: config, client: backend?.authenticated),
        telemetry = telemetry ?? Telemetry(preferences: preferences, sink: backend?.sendTelemetry) {
     this.telemetry.versionOf ??= () => this.updates.currentVersion;
     events = EventsService(
@@ -299,6 +302,9 @@ class AppServices {
 
   /// Szöveges leírás („tech 100 etf”) → részvény vagy ETF, ha a kereső nem találja.
   final DescriptionResolver descriptionResolver;
+
+  /// „Mi ez a papír?” – AI-magyarázat ETF-hez, alaphoz (cégprofil nélküli tickerhez).
+  final InstrumentExplainer instrumentExplainer;
 
   /// Saját jegyzetek részvényenként (csak a készüléken).
   final NotesStore notes;

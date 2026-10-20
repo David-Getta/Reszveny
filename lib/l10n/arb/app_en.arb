@@ -2038,5 +2038,21 @@
   "resolvingDescription": "Working out which stock you mean…",
   "@resolvingDescription": {
     "description": "Progress text on the home screen while the AI works out which stock or ETF a typed description (e.g. \"tech 100 etf\") refers to."
+  },
+  "instrumentTitle": "About this instrument",
+  "@instrumentTitle": {
+    "description": "Title of the card on a stock page shown when the ticker has no company profile (an ETF, a fund, an ADR\u2026)."
+  },
+  "instrumentHint": "There is no company profile for this symbol – it may be an ETF, a fund or a depositary receipt. Ask the AI what it is, what it holds and what it costs.",
+  "@instrumentHint": {
+    "description": "Explanation text on the 'About this instrument' card, above the button."
+  },
+  "instrumentAsk": "What is this?",
+  "@instrumentAsk": {
+    "description": "Button on the 'About this instrument' card (and the title of the sheet it opens): asks the AI to explain the ETF/fund."
+  },
+  "instrumentNote": "AI explanation from the issuer's fund page and financial sites found on the web. Not investment advice. Uses your daily question allowance, not an analysis.",
+  "@instrumentNote": {
+    "description": "Small note under the AI explanation of an ETF/fund."
   }
 }

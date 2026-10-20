@@ -4380,6 +4380,30 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Working out which stock you mean…'**
   String get resolvingDescription;
+
+  /// Title of the card on a stock page shown when the ticker has no company profile (an ETF, a fund, an ADR…).
+  ///
+  /// In en, this message translates to:
+  /// **'About this instrument'**
+  String get instrumentTitle;
+
+  /// Explanation text on the 'About this instrument' card, above the button.
+  ///
+  /// In en, this message translates to:
+  /// **'There is no company profile for this symbol – it may be an ETF, a fund or a depositary receipt. Ask the AI what it is, what it holds and what it costs.'**
+  String get instrumentHint;
+
+  /// Button on the 'About this instrument' card (and the title of the sheet it opens): asks the AI to explain the ETF/fund.
+  ///
+  /// In en, this message translates to:
+  /// **'What is this?'**
+  String get instrumentAsk;
+
+  /// Small note under the AI explanation of an ETF/fund.
+  ///
+  /// In en, this message translates to:
+  /// **'AI explanation from the issuer\'s fund page and financial sites found on the web. Not investment advice. Uses your daily question allowance, not an analysis.'**
+  String get instrumentNote;
 }
 
 class _AppLocalizationsDelegate

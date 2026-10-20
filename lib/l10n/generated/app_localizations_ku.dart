@@ -2531,4 +2531,18 @@ class AppLocalizationsKu extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'Tê diyarkirin ka mebesta te kîjan pişk e…';
+
+  @override
+  String get instrumentTitle => 'Derbarê vê amûrê';
+
+  @override
+  String get instrumentHint =>
+      'Ji bo vê sembolê profîla şirketê tune – dibe ku ETF, fond an jî belgeya emanetê be. Ji AI bipirse ev çi ye, çi di nav de heye û çiqas lêçûn dike.';
+
+  @override
+  String get instrumentAsk => 'Ev çi ye?';
+
+  @override
+  String get instrumentNote =>
+      'Ravekirina AI ji rûpela fondê ya derxeran û malperên aborî yên ku li ser webê dibîne. Ne şîreta veberhênanê ye. Ji sînorê pirsên te yê rojane tê birîn, ne analîzek.';
 }

@@ -2530,4 +2530,18 @@ class AppLocalizationsTk extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'Haýsy paýnamany göz öňünde tutýandygyňyz kesgitlenýär…';
+
+  @override
+  String get instrumentTitle => 'Bu gural barada';
+
+  @override
+  String get instrumentHint =>
+      'Bu nyşan üçin kompaniýa profili ýok – bu ETF, gazna ýa-da depozitar şahadatnama bolup biler. AI-dan bu näme, düzüminde näme bar we näçe çykdajy edýär diýip soraň.';
+
+  @override
+  String get instrumentAsk => 'Bu näme?';
+
+  @override
+  String get instrumentNote =>
+      'Emitentiň gazna sahypasyna we internetde tapan maliýe saýtlaryna esaslanan AI düşündirişi. Maýa goýum maslahaty däldir. Gündelik sorag çägiňizden harçlanýar, seljerme däl.';
 }

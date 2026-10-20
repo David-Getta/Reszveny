@@ -2521,4 +2521,18 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'מזהים לאיזו מניה התכוונת…';
+
+  @override
+  String get instrumentTitle => 'על המכשיר הזה';
+
+  @override
+  String get instrumentHint =>
+      'אין פרופיל חברה לסימול הזה – ייתכן שמדובר בתעודת סל (ETF), בקרן או בתעודת פיקדון. שאלו את ה-AI מה זה, מה הוא מחזיק וכמה הוא עולה.';
+
+  @override
+  String get instrumentAsk => 'מה זה?';
+
+  @override
+  String get instrumentNote =>
+      'הסבר של AI על בסיס עמוד הקרן אצל המנפיק ואתרים פיננסיים שהוא מוצא ברשת. אינו מהווה ייעוץ השקעות. נספר במכסת השאלות היומית שלך, לא כניתוח.';
 }

@@ -2532,4 +2532,18 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Míele akpa si nèdi la dim…';
+
+  @override
+  String get instrumentTitle => 'Tso dɔwɔnu sia ŋu';
+
+  @override
+  String get instrumentHint =>
+      'Dɔwɔƒe ŋuti nyatakaka aɖeke meli na dzesi sia o – ate ŋu anye ETF, ga dzraɖoƒe alo depositary receipt. Bia AI be nu kae wònye, nu kawo le eme, eye nenie wòxɔna.';
+
+  @override
+  String get instrumentAsk => 'Nu kae nye esia?';
+
+  @override
+  String get instrumentNote =>
+      'AI ƒe numeɖeɖe tso ɖetɔ la ƒe ga dzraɖoƒe axa kple gaŋutinyawo ƒe nutowo siwo wòkpɔ le internet dzi. Menye aɖaŋuɖoɖo le gadede nu ŋu o. Etsɔna tso wò gbesiagbe nyabiasewo ƒe seɖoƒe me, mezãa dzodzro aɖeke o.';
 }

@@ -2532,4 +2532,18 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Néangan saham nu dimaksud ku anjeun…';
+
+  @override
+  String get instrumentTitle => 'Ngeunaan instrumén ieu';
+
+  @override
+  String get instrumentHint =>
+      'Teu aya profil pausahaan pikeun simbol ieu – bisa jadi ETF, dana, atawa depositary receipt. Tanyakeun ka AI naon éta, naon eusina, sareng sabaraha wargina.';
+
+  @override
+  String get instrumentAsk => 'Naon ieu?';
+
+  @override
+  String get instrumentNote =>
+      'Katerangan AI tina halaman dana penerbit sareng situs kauangan anu kapanggih di wéb. Lain naséhat investasi. Nganggo wates patarosan sapopoé anjeun, sanés analisis.';
 }

@@ -2529,4 +2529,18 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Nĩtũracaria hisa ĩrĩa ũrenda kuuga…';
+
+  @override
+  String get instrumentTitle => 'Ũhoro wa kĩndũ gĩkĩ kĩa wonjoria';
+
+  @override
+  String get instrumentHint =>
+      'Gũtirĩ ũhoro wa kampuni wa rũũri rũrũ – no ĩkorwo ĩrĩ ETF, fund kana depositary receipt. Ũria AI nĩ kĩĩ, nĩ kĩĩ kĩrĩ thĩinĩ wayo, na ĩrutaga mbeca cigana.';
+
+  @override
+  String get instrumentAsk => 'Gĩkĩ nĩ kĩĩ?';
+
+  @override
+  String get instrumentNote =>
+      'Ũtaarĩria wa AI kuuma rũhuko-inĩ rwa fund rwa mũrutani na mĩhuko ya mbeca ĩrĩa wonaga internet-inĩ. Ti ũtaaro wa investment. Ĩhũthagĩra mũhaka wa ciũria ciaku cia o mũthenya, ti ũthuthuria.';
 }

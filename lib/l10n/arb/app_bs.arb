@@ -673,5 +673,9 @@
   "earningsSummaryNote": "Sažetak umjetne inteligencije o objavi rezultata kompanije i medijskim izvještajima koje pronađe na internetu. Nije investicijski savjet. Troši vaše dnevno ograničenje pitanja, ne analizu.",
   "compareLastSurprise": "EPS zadnjeg kvartala vs. očekivani",
   "compareNextReport": "Sljedeći izvještaj",
-  "resolvingDescription": "Utvrđujemo na koju dionicu mislite…"
+  "resolvingDescription": "Utvrđujemo na koju dionicu mislite…",
+  "instrumentTitle": "O ovom instrumentu",
+  "instrumentHint": "Za ovaj simbol ne postoji profil kompanije – možda je riječ o ETF-u, fondu ili depozitnoj potvrdi. Pitajte AI šta je to, šta sadrži i koliko košta.",
+  "instrumentAsk": "Šta je ovo?",
+  "instrumentNote": "Objašnjenje umjetne inteligencije na osnovu stranice fonda kod izdavaoca i finansijskih stranica koje pronađe na internetu. Nije investicijski savjet. Troši vaše dnevno ograničenje pitanja, ne analizu."
 }

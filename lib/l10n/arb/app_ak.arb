@@ -673,5 +673,9 @@
   "earningsSummaryNote": "AI tiawa a ɛfa adwumakuo no mfaso ho amanneɛbɔ ne nsɛm a nsɛmmɔnenafoɔ akyerɛw wɔ ho a ɛhu wɔ intanɛt so. Ɛnyɛ sikahyɛmu ho afotu. Ɛfiri wo nsɛmmisa a ɛsɛ da biara mu, ɛnni nhwehwɛmu biara.",
   "compareLastSurprise": "Kwata a etwaam EPS ne nea wɔhwɛ kwan",
   "compareNextReport": "Akontaabu a ɛdi hɔ",
-  "resolvingDescription": "Ɛrehwehwɛ kyɛfa a worekyerɛ…"
+  "resolvingDescription": "Ɛrehwehwɛ kyɛfa a worekyerɛ…",
+  "instrumentTitle": "Saa instrument yi ho asɛm",
+  "instrumentHint": "Adwumakuo ho nsɛm biara nni hɔ mma saa symbol yi – ebia ɛyɛ ETF, fund anaa depositary receipt. Bisa AI no sɛ ɛyɛ dɛn, dɛn na ɛwɔ mu, na ne bo yɛ sɛn.",
+  "instrumentAsk": "Ɛyɛ dɛn?",
+  "instrumentNote": "AI nkyerɛkyerɛmu a ɛfiri deɛ ɔde baeɛ no fund krataafa ne sikasɛm nkrataafa a ɛhu wɔ intanɛt so. Ɛnyɛ sikahyɛmu ho afotu. Ɛfiri wo nsɛmmisa a ɛsɛ da biara mu, ɛnni nhwehwɛmu biara."
 }

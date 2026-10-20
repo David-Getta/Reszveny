@@ -2591,4 +2591,18 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Zjišťuji, kterou akcii máte na mysli…';
+
+  @override
+  String get instrumentTitle => 'O tomto instrumentu';
+
+  @override
+  String get instrumentHint =>
+      'K tomuto symbolu neexistuje profil společnosti – může jít o ETF, fond nebo depozitní certifikát. Zeptejte se AI, co to je, co obsahuje a kolik stojí.';
+
+  @override
+  String get instrumentAsk => 'Co to je?';
+
+  @override
+  String get instrumentNote =>
+      'Vysvětlení od AI na základě stránky fondu u emitenta a finančních webů, které najde na internetu. Není investičním doporučením. Čerpá z vašeho denního limitu otázek, nespotřebuje analýzu.';
 }

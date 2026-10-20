@@ -2529,4 +2529,18 @@ class AppLocalizationsUr extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'پتا لگایا جا رہا ہے کہ آپ کا مطلب کون سا شیئر ہے…';
+
+  @override
+  String get instrumentTitle => 'اس انسٹرومنٹ کے بارے میں';
+
+  @override
+  String get instrumentHint =>
+      'اس سمبل کے لیے کوئی کمپنی پروفائل نہیں ہے – یہ ETF، فنڈ یا ڈپازٹری رسید ہو سکتا ہے۔ AI سے پوچھیں کہ یہ کیا ہے، اس میں کیا ہے اور اس کی لاگت کیا ہے۔';
+
+  @override
+  String get instrumentAsk => 'یہ کیا ہے؟';
+
+  @override
+  String get instrumentNote =>
+      'جاری کنندہ کے فنڈ پیج اور ویب پر ملنے والی مالیاتی سائٹس سے AI وضاحت۔ یہ سرمایہ کاری کا مشورہ نہیں ہے۔ یہ آپ کی روزانہ سوالات کی حد سے جاتا ہے، کوئی تجزیہ خرچ نہیں ہوتا۔';
 }

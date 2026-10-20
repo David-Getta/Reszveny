@@ -2527,4 +2527,18 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'N ap chèche konnen ki aksyon ou vle di…';
+
+  @override
+  String get instrumentTitle => 'Sou enstriman sa a';
+
+  @override
+  String get instrumentHint =>
+      'Pa gen pwofil konpayi pou senbòl sa a – li ka yon ETF, yon fon oswa yon sètifika depo. Mande AI a kisa li ye, kisa li genyen ladan l ak konbyen li koute.';
+
+  @override
+  String get instrumentAsk => 'Kisa sa ye?';
+
+  @override
+  String get instrumentNote =>
+      'Eksplikasyon AI ki soti nan paj fon emetè a ak sit finansye li jwenn sou entènèt. Se pa yon konsèy envestisman. Li itilize limit kesyon ou pou chak jou, pa yon analiz.';
 }

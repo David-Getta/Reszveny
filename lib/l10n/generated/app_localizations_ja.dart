@@ -2450,4 +2450,18 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'どの銘柄かを特定中…';
+
+  @override
+  String get instrumentTitle => 'この銘柄について';
+
+  @override
+  String get instrumentHint =>
+      'このシンボルには企業情報がありません。ETF、ファンド、または預託証券の可能性があります。これが何か、何を保有し、コストはいくらかを AI に聞いてみましょう。';
+
+  @override
+  String get instrumentAsk => 'これは何？';
+
+  @override
+  String get instrumentNote =>
+      '発行体のファンドページと Web で見つかった金融サイトをもとに AI が説明します。投資助言ではありません。1日の質問回数を使い、分析回数は消費しません。';
 }

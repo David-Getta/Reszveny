@@ -2530,4 +2530,18 @@ class AppLocalizationsKa extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'მიმდინარეობს იმის დადგენა, რომელ აქციას გულისხმობთ…';
+
+  @override
+  String get instrumentTitle => 'ამ ინსტრუმენტის შესახებ';
+
+  @override
+  String get instrumentHint =>
+      'ამ სიმბოლოსთვის კომპანიის პროფილი არ არსებობს – შესაძლოა ეს იყოს ETF, ფონდი ან დეპოზიტარული ხელწერილი. ჰკითხეთ AI-ს, რა არის, რას შეიცავს და რა ღირს.';
+
+  @override
+  String get instrumentAsk => 'რა არის ეს?';
+
+  @override
+  String get instrumentNote =>
+      'AI-ის განმარტება ემიტენტის ფონდის გვერდისა და ინტერნეტში ნაპოვნი ფინანსური საიტების საფუძველზე. არ წარმოადგენს საინვესტიციო რჩევას. იყენებს თქვენს დღიურ კითხვების ლიმიტს და არა ანალიზს.';
 }

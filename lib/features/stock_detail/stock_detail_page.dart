@@ -26,6 +26,7 @@ import '../news/watch_news.dart';
 import '../news/watch_news_view.dart' show showNewsExplanation;
 import 'widgets/converted_price.dart';
 import 'widgets/earnings_card.dart';
+import 'widgets/instrument_card.dart';
 import 'widgets/insiders_card.dart';
 import 'widgets/kv_table.dart';
 import 'widgets/peers_strip.dart';
@@ -404,6 +405,14 @@ class _DetailsBody extends StatelessWidget {
                 ],
               ),
       ),
+
+      // Cégprofil nélküli papír (ETF, alap, ADR): „Mi ez a papír?” AI-magyarázat
+      if (q != null && (p == null || (p.industry == null && p.sector == null)))
+        InstrumentCard(
+          symbol: d.symbol,
+          name: p?.name ?? candidate.companyName,
+          exchange: p?.exchange ?? candidate.exchange,
+        ),
 
       // Azonosítás
       SectionCard(

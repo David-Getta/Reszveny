@@ -2538,4 +2538,18 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Ithola isheya osho ngalo…';
+
+  @override
+  String get instrumentTitle => 'Mayelana naleli thuluzi';
+
+  @override
+  String get instrumentHint =>
+      'Alikho iphrofayili yenkampani yalolu phawu – kungaba yi-ETF, isikhwama semali noma isitifiketi sediphozithi. Buza i-AI ukuthi yini, iqukethe ini nokuthi ibiza malini.';
+
+  @override
+  String get instrumentAsk => 'Yini lena?';
+
+  @override
+  String get instrumentNote =>
+      'Incazelo ye-AI evela ekhasini lesikhwama lomkhiphi nakumawebhusayithi ezezimali esiwathola kuwebhu. Akuyona iseluleko sokutshala imali. Sisebenzisa umkhawulo wakho wemibuzo wansuku zonke, hhayi ukuhlaziya.';
 }

@@ -2491,4 +2491,18 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'እትብልዎ ኣክሲዮን ኣየናይ ምዃኑ ይልለ ኣሎ…';
+
+  @override
+  String get instrumentTitle => 'ብዛዕባ እዚ መሳርሒ';
+
+  @override
+  String get instrumentHint =>
+      'ነዚ ምልክት ናይ ትካል መግለጺ የለን – ETF፣ ፈንድ ወይ ናይ ተቐማጢ ወረቐት ክኸውን ይኽእል። እንታይ ምዃኑ፣ እንታይ ከም ዝሓዘን ክንደይ ከም ዝኽፈሉን AI ሕተቱ።';
+
+  @override
+  String get instrumentAsk => 'እዚ እንታይ እዩ?';
+
+  @override
+  String get instrumentNote =>
+      'ናይ AI መብርሂ ካብ ገጽ ፈንድ ናይ ኣውጻኢን ኣብ መርበብ ሓበሬታ ዝረኽቦ ፋይናንሳዊ መርበባትን። ምኽሪ ወፍሪ ኣይኮነን። ካብ ዕለታዊ ደረት ሕቶታትኩም ይቑጸር እምበር ትንታነ ኣይጥቀምን።';
 }

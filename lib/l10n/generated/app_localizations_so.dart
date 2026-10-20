@@ -2538,4 +2538,18 @@ class AppLocalizationsSo extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'Waxaa la ogaanayaa saamiga aad ula jeeddo…';
+
+  @override
+  String get instrumentTitle => 'Ku saabsan qalabkan';
+
+  @override
+  String get instrumentHint =>
+      'Ma jiro astaan shirkad oo loogu talagalay calaamaddan – waxay noqon kartaa ETF, sanduuq ama rasiid kayd. Weydii AI waxa ay tahay, waxa ay haysato iyo inta ay ku kacayso.';
+
+  @override
+  String get instrumentAsk => 'Waa maxay tan?';
+
+  @override
+  String get instrumentNote =>
+      'Sharaxaad AI ah oo ka timid bogga sanduuqa ee soo saaraha iyo boggaga maaliyadda ee ay ka hesho shabakadda. Ma aha talo maalgashi. Waxay isticmaashaa xadka su’aalahaaga maalinlaha ah, ma aha falanqayn.';
 }

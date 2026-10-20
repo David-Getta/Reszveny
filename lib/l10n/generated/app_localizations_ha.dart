@@ -2534,4 +2534,18 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Ana gano wane hannun jari kake nufi…';
+
+  @override
+  String get instrumentTitle => 'Game da wannan kadara';
+
+  @override
+  String get instrumentHint =>
+      'Babu bayanin kamfani ga wannan alama – yana iya zama ETF, asusu ko takardar shaidar ajiya. Tambayi AI me ne shi, me ke cikinsa da kuma nawa ne kuɗinsa.';
+
+  @override
+  String get instrumentAsk => 'Me ne wannan?';
+
+  @override
+  String get instrumentNote =>
+      'Bayanin AI daga shafin asusun mai bayarwa da shafukan kuɗi da ya samu a yanar gizo. Ba shawarar zuba jari ba ne. Yana amfani da iyakar tambayoyinka na yau da kullum, ba nazari ba.';
 }

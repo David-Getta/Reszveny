@@ -2547,4 +2547,18 @@ class AppLocalizationsMg extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'Mamantatra hoe inona ny aksiona tianao holazaina…';
+
+  @override
+  String get instrumentTitle => 'Momba ity fitaovana ity';
+
+  @override
+  String get instrumentHint =>
+      'Tsy misy mombamomba ny orinasa ho an’ity marika ity – mety ho ETF, tahiry na taratasy fanamarinana petra-bola izy io. Anontanio ny AI hoe inona izy io, inona no ao anatiny ary ohatrinona ny vidiny.';
+
+  @override
+  String get instrumentAsk => 'Inona ity?';
+
+  @override
+  String get instrumentNote =>
+      'Fanazavana avy amin’ny AI avy amin’ny pejin’ny tahiry an’ny mpamoaka sy ny tranonkala ara-bola hitany ao amin’ny tranonkala. Tsy torohevitra momba ny fampiasam-bola. Mampiasa ny fetran’ny fanontanianao isan’andro izy, fa tsy famakafakana.';
 }

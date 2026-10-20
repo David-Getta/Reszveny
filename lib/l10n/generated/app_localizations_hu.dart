@@ -2534,4 +2534,18 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Kitaláljuk, melyik részvényre gondolsz…';
+
+  @override
+  String get instrumentTitle => 'Erről a papírról';
+
+  @override
+  String get instrumentHint =>
+      'Ehhez a tickerhez nincs cégprofil – lehet, hogy ETF, alap vagy letéti jegy. Kérdezd meg az AI-t, mi ez, mit tart és mennyibe kerül.';
+
+  @override
+  String get instrumentAsk => 'Mi ez a papír?';
+
+  @override
+  String get instrumentNote =>
+      'AI-magyarázat a kibocsátó oldaláról és a weben talált pénzügyi oldalakról. Nem befektetési tanács. A napi kérdéskeretből megy, elemzést nem fogyaszt.';
 }

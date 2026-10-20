@@ -2536,4 +2536,18 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Tikufufuza sheya yomwe mukutanthauza…';
+
+  @override
+  String get instrumentTitle => 'Za chida ichi';
+
+  @override
+  String get instrumentHint =>
+      'Palibe mbiri ya kampani ya chizindikiro ichi – chingakhale ETF, thumba la ndalama kapena chikalata cha depositi. Funsani AI kuti ndi chiyani, chili ndi chiyani ndipo mtengo wake ndi wotani.';
+
+  @override
+  String get instrumentAsk => 'Ichi ndi chiyani?';
+
+  @override
+  String get instrumentNote =>
+      'Kufotokozera kwa AI kuchokera patsamba la thumba la wotulutsa ndi masamba azachuma omwe chimapeza pa intaneti. Si malangizo okhudza kuyika ndalama. Chimagwiritsa ntchito malire a mafunso anu a tsiku ndi tsiku, osati kusanthula.';
 }

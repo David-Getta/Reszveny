@@ -2547,4 +2547,18 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'E batla shere e o e kayang…';
+
+  @override
+  String get instrumentTitle => 'Ka ga sedirisiwa seno';
+
+  @override
+  String get instrumentHint =>
+      'Ga go na porofaele ya khampani ya letshwao leno – e ka nna ETF, letlole kgotsa setifikeiti sa tipositi. Botsa AI gore ke eng, e tshotse eng le gore e ja bokae.';
+
+  @override
+  String get instrumentAsk => 'Ke eng seno?';
+
+  @override
+  String get instrumentNote =>
+      'Tlhaloso ya AI go tswa mo tsebeng ya letlole ya morekisi le diwebosaete tsa ditšhelete tse e di bonang mo inthaneteng. Ga se kgakololo ya peeletso. E dirisa tekanyetso ya gago ya dipotso ya letsatsi le letsatsi, e seng tshekatsheko.';
 }

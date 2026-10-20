@@ -2527,4 +2527,18 @@ class AppLocalizationsOr extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'ଆପଣ କେଉଁ ସେୟାର କହୁଛନ୍ତି ତାହା ଚିହ୍ନଟ କରାଯାଉଛି…';
+
+  @override
+  String get instrumentTitle => 'ଏହି ଇନଷ୍ଟ୍ରୁମେଣ୍ଟ ବିଷୟରେ';
+
+  @override
+  String get instrumentHint =>
+      'ଏହି ସିମ୍ବଲ ପାଇଁ କୌଣସି କମ୍ପାନୀ ପ୍ରୋଫାଇଲ ନାହିଁ – ଏହା ଏକ ETF, ଫଣ୍ଡ ବା ଡିପୋଜିଟରୀ ରସିଦ ହୋଇପାରେ। AI କୁ ପଚାରନ୍ତୁ ଏହା କ’ଣ, ଏଥିରେ କ’ଣ ଅଛି ଏବଂ ଏହାର ଖର୍ଚ୍ଚ କେତେ।';
+
+  @override
+  String get instrumentAsk => 'ଏହା କ’ଣ?';
+
+  @override
+  String get instrumentNote =>
+      'ଜାରିକର୍ତ୍ତାର ଫଣ୍ଡ ପୃଷ୍ଠା ଏବଂ ୱେବରେ ମିଳୁଥିବା ଆର୍ଥିକ ସାଇଟରୁ AI ବ୍ୟାଖ୍ୟା। ଏହା ନିବେଶ ପରାମର୍ଶ ନୁହେଁ। ଏହା ଆପଣଙ୍କ ଦୈନିକ ପ୍ରଶ୍ନ ସୀମାରୁ ଯାଏ, କୌଣସି ବିଶ୍ଳେଷଣ ଖର୍ଚ୍ଚ ହୁଏ ନାହିଁ।';
 }

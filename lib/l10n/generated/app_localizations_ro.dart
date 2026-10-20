@@ -2569,4 +2569,18 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'Se identifică acțiunea la care te referi…';
+
+  @override
+  String get instrumentTitle => 'Despre acest instrument';
+
+  @override
+  String get instrumentHint =>
+      'Nu există un profil de companie pentru acest simbol – poate fi un ETF, un fond sau un certificat de depozit. Întreabă AI-ul ce este, ce conține și cât costă.';
+
+  @override
+  String get instrumentAsk => 'Ce este asta?';
+
+  @override
+  String get instrumentNote =>
+      'Explicație generată de AI pe baza paginii fondului de la emitent și a site-urilor financiare pe care le găsește pe web. Nu reprezintă un sfat de investiții. Folosește limita ta zilnică de întrebări, nu o analiză.';
 }

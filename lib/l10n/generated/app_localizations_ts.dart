@@ -2546,4 +2546,18 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Hi lava xere leyi u vulaka yona…';
+
+  @override
+  String get instrumentTitle => 'Mayelana na xitirhisiwa lexi';
+
+  @override
+  String get instrumentHint =>
+      'A ku na profayili ya khamphani ya mfungho lowu – xi nga va ETF, nkwama kumbe xitifikheti xa depoziti. Vutisa AI leswaku i yini, xi na yini endzeni na leswaku xi durha ku fika kwihi.';
+
+  @override
+  String get instrumentAsk => 'I yini lexi?';
+
+  @override
+  String get instrumentNote =>
+      'Nhlamuselo ya AI ku suka eka pheji ya nkwama ya muhumelerisi na tiwebsayiti ta timali leti yi ti kumaka ewebeni. A hi ndzayo ya vuvekisi. Yi tirhisa ndzelekano wa wena wa swivutiso wa siku na siku, ku nga ri nxopaxopo.';
 }

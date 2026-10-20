@@ -2596,4 +2596,18 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Вызначаем, якую акцыю вы маеце на ўвазе…';
+
+  @override
+  String get instrumentTitle => 'Пра гэты інструмент';
+
+  @override
+  String get instrumentHint =>
+      'Для гэтага сімвала няма профілю кампаніі – гэта можа быць ETF, фонд або дэпазітарная распіска. Спытайце ў AI, што гэта, што ў яго ўваходзіць і колькі гэта каштуе.';
+
+  @override
+  String get instrumentAsk => 'Што гэта?';
+
+  @override
+  String get instrumentNote =>
+      'Тлумачэнне ад AI на падставе старонкі фонду ў эмітэнта і фінансавых сайтаў, якія ён знаходзіць у інтэрнэце. Не з’яўляецца інвестыцыйнай парадай. Выкарыстоўвае дзённы ліміт пытанняў, а не аналіз.';
 }

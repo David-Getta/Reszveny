@@ -2528,4 +2528,18 @@ class AppLocalizationsAs extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'আপুনি কোনটো শ্বেয়াৰ বুজাইছে চিনাক্ত কৰি থকা হৈছে…';
+
+  @override
+  String get instrumentTitle => 'এই ইনষ্ট্ৰুমেণ্টৰ বিষয়ে';
+
+  @override
+  String get instrumentHint =>
+      'এই চিহ্নৰ বাবে কোনো কোম্পানীৰ প্ৰফাইল নাই – ই এটা ETF, ফাণ্ড বা ডিপজিটৰী ৰিচিপ্ট হ’ব পাৰে। AI-ক সোধক ই কি, ইয়াত কি আছে আৰু ইয়াৰ খৰচ কিমান।';
+
+  @override
+  String get instrumentAsk => 'এইটো কি?';
+
+  @override
+  String get instrumentNote =>
+      'জাৰীকৰ্তাৰ ফাণ্ড পৃষ্ঠা আৰু ৱেবত পোৱা বিত্তীয় ছাইটৰ পৰা AI ব্যাখ্যা। ই বিনিয়োগৰ পৰামৰ্শ নহয়। ই আপোনাৰ দৈনিক প্ৰশ্নৰ সীমাৰ পৰা যায়, কোনো বিশ্লেষণ খৰচ নকৰে।';
 }

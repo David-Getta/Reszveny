@@ -2599,4 +2599,18 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'Определяем, какую акцию вы имеете в виду…';
+
+  @override
+  String get instrumentTitle => 'Об этом инструменте';
+
+  @override
+  String get instrumentHint =>
+      'Для этого тикера нет профиля компании – это может быть ETF, фонд или депозитарная расписка. Спросите у ИИ, что это, что входит в его состав и сколько это стоит.';
+
+  @override
+  String get instrumentAsk => 'Что это?';
+
+  @override
+  String get instrumentNote =>
+      'Объяснение от ИИ на основе страницы фонда у эмитента и финансовых сайтов, которые он находит в интернете. Не является инвестиционной рекомендацией. Расходуется дневной лимит вопросов, а не анализ.';
 }

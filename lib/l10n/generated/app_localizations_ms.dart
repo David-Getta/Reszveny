@@ -2534,4 +2534,18 @@ class AppLocalizationsMs extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'Mengenal pasti saham yang anda maksudkan…';
+
+  @override
+  String get instrumentTitle => 'Tentang instrumen ini';
+
+  @override
+  String get instrumentHint =>
+      'Tiada profil syarikat untuk simbol ini – ia mungkin ETF, dana atau resit depositari. Tanya AI apakah ia, apa yang dipegangnya dan berapa kosnya.';
+
+  @override
+  String get instrumentAsk => 'Apakah ini?';
+
+  @override
+  String get instrumentNote =>
+      'Penjelasan AI daripada halaman dana penerbit dan laman kewangan yang ditemuinya di web. Bukan nasihat pelaburan. Menggunakan had soalan harian anda, bukan analisis.';
 }

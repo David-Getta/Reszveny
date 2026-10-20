@@ -673,5 +673,9 @@
   "earningsSummaryNote": "Rezime AI sou anons rezilta konpayi an ak sa laprès di sou li li jwenn sou entènèt. Se pa yon konsèy envestisman. Li itilize limit kesyon ou pou chak jou, pa yon analiz.",
   "compareLastSurprise": "EPS dènye trimès vs. sa yo atann",
   "compareNextReport": "Pwochen rapò",
-  "resolvingDescription": "N ap chèche konnen ki aksyon ou vle di…"
+  "resolvingDescription": "N ap chèche konnen ki aksyon ou vle di…",
+  "instrumentTitle": "Sou enstriman sa a",
+  "instrumentHint": "Pa gen pwofil konpayi pou senbòl sa a – li ka yon ETF, yon fon oswa yon sètifika depo. Mande AI a kisa li ye, kisa li genyen ladan l ak konbyen li koute.",
+  "instrumentAsk": "Kisa sa ye?",
+  "instrumentNote": "Eksplikasyon AI ki soti nan paj fon emetè a ak sit finansye li jwenn sou entènèt. Se pa yon konsèy envestisman. Li itilize limit kesyon ou pou chak jou, pa yon analiz."
 }

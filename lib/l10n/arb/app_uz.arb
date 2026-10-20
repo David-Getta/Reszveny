@@ -673,5 +673,9 @@
   "earningsSummaryNote": "Kompaniyaning natijalar haqidagi eʼloni va internetda topgan matbuot xabarlarining AI xulosasi. Bu investitsiya maslahati emas. Kunlik savollar limitingizdan sarflanadi, tahlil emas.",
   "compareLastSurprise": "Soʻnggi chorak EPS vs kutilgan",
   "compareNextReport": "Keyingi hisobot",
-  "resolvingDescription": "Qaysi aksiyani nazarda tutganingiz aniqlanmoqda…"
+  "resolvingDescription": "Qaysi aksiyani nazarda tutganingiz aniqlanmoqda…",
+  "instrumentTitle": "Bu instrument haqida",
+  "instrumentHint": "Bu simvol uchun kompaniya profili yoʻq – bu ETF, fond yoki depozitar tilxat boʻlishi mumkin. AI dan bu nima, tarkibida nima bor va qancha turishini soʻrang.",
+  "instrumentAsk": "Bu nima?",
+  "instrumentNote": "Emitentning fond sahifasi va internetda topgan moliyaviy saytlarga asoslangan AI izohi. Bu investitsiya maslahati emas. Kunlik savollar limitingizdan sarflanadi, tahlil emas."
 }

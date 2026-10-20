@@ -673,5 +673,9 @@
   "earningsSummaryNote": "Përmbledhje nga AI e njoftimit të rezultateve të kompanisë dhe e mbulimit në shtyp që gjen në internet. Nuk përbën këshillë investimi. Përdor kufirin tuaj ditor të pyetjeve, jo një analizë.",
   "compareLastSurprise": "EPS tremujori i fundit vs. i pritur",
   "compareNextReport": "Raporti i radhës",
-  "resolvingDescription": "Duke përcaktuar cilin aksion keni parasysh…"
+  "resolvingDescription": "Duke përcaktuar cilin aksion keni parasysh…",
+  "instrumentTitle": "Rreth këtij instrumenti",
+  "instrumentHint": "Nuk ka profil kompanie për këtë simbol – mund të jetë një ETF, një fond ose një certifikatë depozitare. Pyesni AI-n çfarë është, çfarë përmban dhe sa kushton.",
+  "instrumentAsk": "Çfarë është kjo?",
+  "instrumentNote": "Shpjegim nga AI bazuar në faqen e fondit të emetuesit dhe në faqet financiare që gjen në internet. Nuk përbën këshillë investimi. Përdor kufirin tuaj ditor të pyetjeve, jo një analizë."
 }

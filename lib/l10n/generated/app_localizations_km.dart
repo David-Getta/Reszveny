@@ -2508,4 +2508,18 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'កំពុងកំណត់ថាអ្នកចង់សំដៅលើភាគហ៊ុនមួយណា…';
+
+  @override
+  String get instrumentTitle => 'អំពីឧបករណ៍នេះ';
+
+  @override
+  String get instrumentHint =>
+      'មិនមានប្រវត្តិរូបក្រុមហ៊ុនសម្រាប់និមិត្តសញ្ញានេះទេ – វាអាចជា ETF មូលនិធិ ឬវិញ្ញាបនបត្របញ្ញើ។ សួរ AI ថាវាជាអ្វី មានអ្វីនៅក្នុងនោះ និងថ្លៃប៉ុន្មាន។';
+
+  @override
+  String get instrumentAsk => 'នេះជាអ្វី?';
+
+  @override
+  String get instrumentNote =>
+      'ការពន្យល់ដោយ AI ពីទំព័រមូលនិធិរបស់អ្នកបោះផ្សាយ និងគេហទំព័រហិរញ្ញវត្ថុដែលវារកឃើញនៅលើបណ្ដាញ។ មិនមែនជាដំបូន្មានវិនិយោគទេ។ វាប្រើកម្រិតសំណួរប្រចាំថ្ងៃរបស់អ្នក មិនមែនការវិភាគទេ។';
 }

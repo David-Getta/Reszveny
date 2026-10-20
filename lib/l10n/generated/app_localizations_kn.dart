@@ -2536,4 +2536,18 @@ class AppLocalizationsKn extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'ನೀವು ಯಾವ ಷೇರನ್ನು ಉದ್ದೇಶಿಸಿದ್ದೀರಿ ಎಂದು ಗುರುತಿಸಲಾಗುತ್ತಿದೆ…';
+
+  @override
+  String get instrumentTitle => 'ಈ ಸಾಧನದ ಬಗ್ಗೆ';
+
+  @override
+  String get instrumentHint =>
+      'ಈ ಸಂಕೇತಕ್ಕೆ ಕಂಪನಿ ಪ್ರೊಫೈಲ್ ಇಲ್ಲ – ಇದು ETF, ಫಂಡ್ ಅಥವಾ ಡಿಪಾಸಿಟರಿ ರಸೀದಿ ಆಗಿರಬಹುದು. ಇದು ಏನು, ಇದರಲ್ಲಿ ಏನಿದೆ ಮತ್ತು ಇದರ ವೆಚ್ಚ ಎಷ್ಟು ಎಂದು AI ಅನ್ನು ಕೇಳಿ.';
+
+  @override
+  String get instrumentAsk => 'ಇದು ಏನು?';
+
+  @override
+  String get instrumentNote =>
+      'ವಿತರಕರ ಫಂಡ್ ಪುಟ ಮತ್ತು ವೆಬ್‌ನಲ್ಲಿ ಸಿಗುವ ಹಣಕಾಸು ಸೈಟ್‌ಗಳಿಂದ AI ವಿವರಣೆ. ಇದು ಹೂಡಿಕೆ ಸಲಹೆಯಲ್ಲ. ಇದು ನಿಮ್ಮ ದೈನಂದಿನ ಪ್ರಶ್ನೆ ಮಿತಿಯನ್ನು ಬಳಸುತ್ತದೆ, ವಿಶ್ಲೇಷಣೆಯನ್ನಲ್ಲ.';
 }

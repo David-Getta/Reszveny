@@ -2459,4 +2459,18 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get resolvingDescription => '어떤 종목인지 확인 중…';
+
+  @override
+  String get instrumentTitle => '이 종목에 대해';
+
+  @override
+  String get instrumentHint =>
+      '이 심볼에는 기업 프로필이 없습니다. ETF, 펀드 또는 예탁증서일 수 있습니다. 이것이 무엇인지, 무엇을 담고 있는지, 비용은 얼마인지 AI에게 물어보세요.';
+
+  @override
+  String get instrumentAsk => '이게 뭔가요?';
+
+  @override
+  String get instrumentNote =>
+      '발행사의 펀드 페이지와 웹에서 찾은 금융 사이트를 바탕으로 AI가 설명합니다. 투자 조언이 아닙니다. 분석 횟수가 아닌 하루 질문 한도가 사용됩니다.';
 }

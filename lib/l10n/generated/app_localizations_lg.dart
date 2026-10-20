@@ -2539,4 +2539,18 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Tuzuula mugabo gw\'otegeeza…';
+
+  @override
+  String get instrumentTitle => 'Ebikwata ku kintu kino';
+
+  @override
+  String get instrumentHint =>
+      'Tewali bikwata ku kkampuni ku kabonero kano – kiyinza okuba ETF, fund oba depositary receipt. Buuza AI kye kiri, kirimu ki, era kisaasaanya ki.';
+
+  @override
+  String get instrumentAsk => 'Kino kiki?';
+
+  @override
+  String get instrumentNote =>
+      'Okunnyonnyola kwa AI okuva ku lupapula lwa fund lw’oyo agifulumya n’emikutu gy’ebyensimbi gy’esanga ku mukutu. Si magezi ga kusiga nsimbi. Kikozesa kkomo ly’ebibuuzo byo erya buli lunaku, so si kwekenneenya.';
 }

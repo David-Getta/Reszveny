@@ -2537,4 +2537,18 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Turimo gushaka umugabane ushaka kuvuga…';
+
+  @override
+  String get instrumentTitle => 'Ibyerekeye iki gikoresho';
+
+  @override
+  String get instrumentHint =>
+      'Nta mwirondoro w’ikigo uhari kuri iki kimenyetso – gishobora kuba ETF, ikigega cyangwa icyemezo cy’ububiko. Baza AI icyo ari cyo, icyo kirimo n’ikiguzi cyacyo.';
+
+  @override
+  String get instrumentAsk => 'Iki ni iki?';
+
+  @override
+  String get instrumentNote =>
+      'Ibisobanuro bya AI bishingiye ku rupapuro rw’ikigega rw’uwagishinze no ku mbuga z’imari ibona kuri murandasi. Si inama yo gushora imari. Ikoresha umubare ntarengwa w’ibibazo byawe bya buri munsi, si isesengura.';
 }

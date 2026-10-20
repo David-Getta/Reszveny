@@ -673,5 +673,9 @@
   "earningsSummaryNote": "Isifinyezo se-AI sesimemezelo semiphumela yenkampani kanye nezindaba zabezindaba esizithola kuwebhu. Akuyona iseluleko sokutshala imali. Sisebenzisa umkhawulo wakho wemibuzo wansuku zonke, hhayi ukuhlaziya.",
   "compareLastSurprise": "I-EPS yekota edlule vs elindelekile",
   "compareNextReport": "Umbiko olandelayo",
-  "resolvingDescription": "Ithola isheya osho ngalo…"
+  "resolvingDescription": "Ithola isheya osho ngalo…",
+  "instrumentTitle": "Mayelana naleli thuluzi",
+  "instrumentHint": "Alikho iphrofayili yenkampani yalolu phawu – kungaba yi-ETF, isikhwama semali noma isitifiketi sediphozithi. Buza i-AI ukuthi yini, iqukethe ini nokuthi ibiza malini.",
+  "instrumentAsk": "Yini lena?",
+  "instrumentNote": "Incazelo ye-AI evela ekhasini lesikhwama lomkhiphi nakumawebhusayithi ezezimali esiwathola kuwebhu. Akuyona iseluleko sokutshala imali. Sisebenzisa umkhawulo wakho wemibuzo wansuku zonke, hhayi ukuhlaziya."
 }

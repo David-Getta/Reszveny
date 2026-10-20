@@ -2596,4 +2596,18 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Nustatoma, kurią akciją turite omenyje…';
+
+  @override
+  String get instrumentTitle => 'Apie šį instrumentą';
+
+  @override
+  String get instrumentHint =>
+      'Šiam simboliui nėra įmonės profilio – tai gali būti ETF, fondas arba depozitoriumo pakvitavimas. Paklauskite DI, kas tai, ką jis turi ir kiek kainuoja.';
+
+  @override
+  String get instrumentAsk => 'Kas tai?';
+
+  @override
+  String get instrumentNote =>
+      'DI paaiškinimas pagal emitento fondo puslapį ir finansų svetaines, kurias jis randa internete. Tai nėra investavimo rekomendacija. Naudoja jūsų dienos klausimų limitą, o ne analizę.';
 }

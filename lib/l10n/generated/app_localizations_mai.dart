@@ -2523,4 +2523,18 @@ class AppLocalizationsMai extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'पता लगाओल जा रहल अछि जे अहाँ कोन शेयरक बात कऽ रहल छी…';
+
+  @override
+  String get instrumentTitle => 'एहि इंस्ट्रूमेंटक बारेमे';
+
+  @override
+  String get instrumentHint =>
+      'एहि सिंबलक लेल कोनो कंपनी प्रोफाइल नहि अछि – ई ETF, फंड वा डिपॉजिटरी रिसीट भऽ सकैत अछि। AI सँ पुछू जे ई की अछि, एहिमे की अछि आ एकर खर्च कतेक अछि।';
+
+  @override
+  String get instrumentAsk => 'ई की अछि?';
+
+  @override
+  String get instrumentNote =>
+      'जारीकर्ताक फंड पेज आ वेबपर भेटल वित्तीय साइटसँ AI व्याख्या। ई निवेशक सलाह नहि अछि। ई अहाँक दैनिक प्रश्न-सीमासँ जाइत अछि, कोनो विश्लेषण खर्च नहि होइत अछि।';
 }

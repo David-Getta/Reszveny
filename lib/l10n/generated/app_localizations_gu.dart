@@ -2524,4 +2524,18 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'તમે કયો શેર કહો છો તે શોધી રહ્યા છીએ…';
+
+  @override
+  String get instrumentTitle => 'આ ઇન્સ્ટ્રુમેન્ટ વિશે';
+
+  @override
+  String get instrumentHint =>
+      'આ સિમ્બોલ માટે કોઈ કંપની પ્રોફાઇલ નથી – તે ETF, ફંડ અથવા ડિપોઝિટરી રિસીટ હોઈ શકે છે. AI ને પૂછો કે તે શું છે, તેમાં શું છે અને તેનો ખર્ચ કેટલો છે.';
+
+  @override
+  String get instrumentAsk => 'આ શું છે?';
+
+  @override
+  String get instrumentNote =>
+      'ઇશ્યુઅરના ફંડ પેજ અને વેબ પર મળતી નાણાકીય સાઇટ્સ પરથી AI સમજૂતી. તે રોકાણ સલાહ નથી. તે તમારી દૈનિક પ્રશ્ન મર્યાદામાંથી જાય છે, કોઈ વિશ્લેષણ વપરાતું નથી.';
 }

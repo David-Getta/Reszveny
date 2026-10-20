@@ -2538,4 +2538,18 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Εντοπισμός της μετοχής που εννοείτε…';
+
+  @override
+  String get instrumentTitle => 'Σχετικά με αυτό το προϊόν';
+
+  @override
+  String get instrumentHint =>
+      'Δεν υπάρχει εταιρικό προφίλ για αυτό το σύμβολο – μπορεί να είναι ETF, αμοιβαίο κεφάλαιο ή αποθετήριος τίτλος. Ρωτήστε το AI τι είναι, τι περιέχει και πόσο κοστίζει.';
+
+  @override
+  String get instrumentAsk => 'Τι είναι αυτό;';
+
+  @override
+  String get instrumentNote =>
+      'Εξήγηση από AI με βάση την ιστοσελίδα του εκδότη για το προϊόν και χρηματοοικονομικούς ιστότοπους που βρίσκει στο διαδίκτυο. Δεν αποτελεί επενδυτική συμβουλή. Χρησιμοποιεί το ημερήσιο όριο ερωτήσεών σας, όχι ανάλυση.';
 }

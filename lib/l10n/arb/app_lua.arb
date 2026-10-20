@@ -673,5 +673,9 @@
   "earningsSummaryNote": "Diumvuija dikese dia AI dia dimanyisha dia mapeta a kompani ne dia malu adi bijadiki bifunde, adi dipeta ku Internet. Kadiena mibelu ya kuteka mfranga. Bidi bienzeja mukalu wa nkonko yebe ya dituku dionso, kabiyi dikonkonona.",
   "compareLastSurprise": "EPS wa trimestre mushale vs batekemene",
   "compareNextReport": "Rapport udi ulonda",
-  "resolvingDescription": "Tudi tukeba action yudi wamba…"
+  "resolvingDescription": "Tudi tukeba action yudi wamba…",
+  "instrumentTitle": "Bualu bua tshintu etshi",
+  "instrumentHint": "Kakuena malu a kompani bua tshimanyinu etshi – tshidi mua kuikala ETF, fond anyi mukanda wa dépôt. Ebeja AI ntshinyi tshidi, ntshinyi tshidi munda ne mushinga watshi udi bungi munyi.",
+  "instrumentAsk": "Etshi ntshinyi?",
+  "instrumentNote": "Diumvuija dia AI didi difuma ku dibeji dia fond dia mupatudi ne ku ba site ya mfranga idi dipeta ku Internet. Kadiena mibelu ya kuteka mfranga. Bidi bienzeja mukalu wa nkonko yebe ya dituku dionso, kabiyi dikonkonona."
 }

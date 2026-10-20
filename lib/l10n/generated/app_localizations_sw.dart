@@ -2530,4 +2530,18 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Inabaini hisa unayomaanisha…';
+
+  @override
+  String get instrumentTitle => 'Kuhusu hati hii';
+
+  @override
+  String get instrumentHint =>
+      'Hakuna wasifu wa kampuni kwa alama hii – inaweza kuwa ETF, mfuko au hati ya amana. Uliza AI ni nini, ina nini ndani na inagharimu kiasi gani.';
+
+  @override
+  String get instrumentAsk => 'Hii ni nini?';
+
+  @override
+  String get instrumentNote =>
+      'Ufafanuzi wa AI kutoka ukurasa wa mfuko wa mtoaji na tovuti za kifedha inazozipata mtandaoni. Si ushauri wa uwekezaji. Hutumia kikomo chako cha maswali cha kila siku, si uchambuzi.';
 }

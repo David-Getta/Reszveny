@@ -2516,4 +2516,18 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'D baooda aksiõ ning f sẽn dat n yeelã…';
+
+  @override
+  String get instrumentTitle => 'Teoog kãngã yelle';
+
+  @override
+  String get instrumentHint =>
+      'Kompaanyã kibar ka be makr kãngã yĩng ye – a tõe n yaa ETF, ligd-koglg bɩ depo sebre. Sok AI a yaa bõe, bõe n be a pʋgẽ la a ligd yaa wãna.';
+
+  @override
+  String get instrumentAsk => 'Yaa bõe?';
+
+  @override
+  String get instrumentNote =>
+      'AI bilgr sẽn yit yiisdã ligd-koglg seb-neng la ligd zĩis nins a sẽn yã internet zugã. Pa sagls ligd kẽesg wɛɛngẽ ye. A tũuda f daar fãa sokr sõorã, pa vẽenegr ye.';
 }

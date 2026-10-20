@@ -2529,4 +2529,18 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'We dey find out which stock you mean…';
+
+  @override
+  String get instrumentTitle => 'About dis instrument';
+
+  @override
+  String get instrumentHint =>
+      'No company profile dey for dis symbol – e fit be ETF, fund or depositary receipt. Ask di AI wetin e be, wetin dey inside and how much e cost.';
+
+  @override
+  String get instrumentAsk => 'Wetin be dis?';
+
+  @override
+  String get instrumentNote =>
+      'AI explanation from di issuer fund page and money sites wey e find for web. E no be investment advice. E dey use your daily question limit, no be analysis.';
 }

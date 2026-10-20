@@ -2532,4 +2532,18 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Bepaal watter aandeel jy bedoel…';
+
+  @override
+  String get instrumentTitle => 'Oor hierdie instrument';
+
+  @override
+  String get instrumentHint =>
+      'Daar is geen maatskappyprofiel vir hierdie simbool nie – dit kan ’n ETF, ’n fonds of ’n depotbewys wees. Vra die AI wat dit is, wat dit hou en wat dit kos.';
+
+  @override
+  String get instrumentAsk => 'Wat is dit?';
+
+  @override
+  String get instrumentNote =>
+      'AI-verduideliking uit die uitgewer se fondsblad en finansiële webwerwe wat dit op die web vind. Dit is nie beleggingsadvies nie. Dit gebruik jou daaglikse vraagtoelae, nie ’n ontleding nie.';
 }

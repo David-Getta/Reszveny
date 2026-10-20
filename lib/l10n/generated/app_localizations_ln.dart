@@ -2540,4 +2540,18 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Ezali koluka action oyo olingi koloba…';
+
+  @override
+  String get instrumentTitle => 'Na ntina ya esaleli oyo';
+
+  @override
+  String get instrumentHint =>
+      'Profil ya kompani ezali te mpo na elembo oyo – ekoki kozala ETF, fonds to mokanda ya dépôt. Tuna AI yango ezali nini, nini ezali na kati mpe ntalo na yango ezali boni.';
+
+  @override
+  String get instrumentAsk => 'Oyo ezali nini?';
+
+  @override
+  String get instrumentNote =>
+      'Ndimbola ya AI oyo euti na lokasa ya fonds ya mobimisi mpe na ba site ya mbɔngɔ oyo ezwi na Internet. Ezali toli ya kotia mbɔngɔ te. Esalelaka ndelo ya mituna na yo ya mokolo na mokolo, kasi botaleli te.';
 }

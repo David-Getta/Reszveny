@@ -673,5 +673,9 @@
   "earningsSummaryNote": "Soo koobid AI ah oo ku saabsan ku dhawaaqista natiijooyinka shirkadda iyo warbixinnada warbaahinta ee ay ka hesho shabakadda. Ma aha talo maalgashi. Waxay isticmaashaa xadka su’aalahaaga maalinlaha ah, ma aha falanqayn.",
   "compareLastSurprise": "EPS rubucii u dambeeyay vs la filayo",
   "compareNextReport": "Warbixinta xigta",
-  "resolvingDescription": "Waxaa la ogaanayaa saamiga aad ula jeeddo…"
+  "resolvingDescription": "Waxaa la ogaanayaa saamiga aad ula jeeddo…",
+  "instrumentTitle": "Ku saabsan qalabkan",
+  "instrumentHint": "Ma jiro astaan shirkad oo loogu talagalay calaamaddan – waxay noqon kartaa ETF, sanduuq ama rasiid kayd. Weydii AI waxa ay tahay, waxa ay haysato iyo inta ay ku kacayso.",
+  "instrumentAsk": "Waa maxay tan?",
+  "instrumentNote": "Sharaxaad AI ah oo ka timid bogga sanduuqa ee soo saaraha iyo boggaga maaliyadda ee ay ka hesho shabakadda. Ma aha talo maalgashi. Waxay isticmaashaa xadka su’aalahaaga maalinlaha ah, ma aha falanqayn."
 }

@@ -2545,4 +2545,18 @@ class AppLocalizationsHil extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'Ginapat-od kon ano nga stock ang buot mo silingon…';
+
+  @override
+  String get instrumentTitle => 'Parte sa sini nga instrumento';
+
+  @override
+  String get instrumentHint =>
+      'Wala sang profile sang kompanya para sa sini nga simbolo – mahimo nga ETF, fund ukon depositary receipt ini. Pamangkuta ang AI kon ano ini, ano ang sulod sini kag pila ang gasto sini.';
+
+  @override
+  String get instrumentAsk => 'Ano ini?';
+
+  @override
+  String get instrumentNote =>
+      'Paathag sang AI halin sa fund page sang nag-isyu kag sa mga financial site nga nakita sini sa web. Indi ini laygay sa pag-invest. Ginagamit sini ang imo adlaw-adlaw nga limitasyon sang pamangkot, indi ang pagtuki.';
 }

@@ -673,5 +673,9 @@
   "earningsSummaryNote": "Kakaretšo ya AI ya kgoeletšo ya dipoelo tša khamphani le ditaba tša kgatišo tšeo e di hwetšago wepeng. Ga se keletšo ya peeletšo. E diriša moedi wa gago wa dipotšišo wa letšatši le letšatši, e sego tshekatsheko.",
   "compareLastSurprise": "EPS kotara ya go feta vs e letetšwego",
   "compareNextReport": "Pego ye e latelago",
-  "resolvingDescription": "E lemoga šere yeo o e bolelago…"
+  "resolvingDescription": "E lemoga šere yeo o e bolelago…",
+  "instrumentTitle": "Ka ga sedirišwa se",
+  "instrumentHint": "Ga go na profaele ya khamphani ya leswao le – e ka ba ETF, sekhwama goba setifikeiti sa tipositi. Botšiša AI gore ke eng, e swere eng le gore e bitša bokae.",
+  "instrumentAsk": "Ke eng se?",
+  "instrumentNote": "Tlhaloso ya AI go tšwa letlakaleng la sekhwama la mongwadi le diwebosaete tša ditšhelete tšeo e di hwetšago wepeng. Ga se keletšo ya peeletšo. E diriša moedi wa gago wa dipotšišo wa letšatši le letšatši, e sego tshekatsheko."
 }

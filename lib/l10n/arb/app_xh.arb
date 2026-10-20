@@ -673,5 +673,9 @@
   "earningsSummaryNote": "Isishwankathelo se-AI sesibhengezo seziphumo zenkampani kunye neendaba zoshicilelo esizifumana kwiwebhu. Ayilocebiso lotyalo-mali. Sisebenzisa umda wakho wemibuzo wemihla ngemihla, hayi uhlalutyo.",
   "compareLastSurprise": "I-EPS yekota edlulileyo vs elindelekileyo",
   "compareNextReport": "Ingxelo elandelayo",
-  "resolvingDescription": "Ifumanisa isabelo othetha ngaso…"
+  "resolvingDescription": "Ifumanisa isabelo othetha ngaso…",
+  "instrumentTitle": "Malunga nesi sixhobo",
+  "instrumentHint": "Akukho profayile yenkampani yolu phawu – inokuba yi-ETF, ingxowa-mali okanye isatifikethi sedipozithi. Buza i-AI ukuba yintoni, iqulethe ntoni nokuba ixabisa kangakanani.",
+  "instrumentAsk": "Yintoni le?",
+  "instrumentNote": "Ingcaciso ye-AI esuka kwiphepha lengxowa-mali lomkhuphi nakwiisayithi zezemali ezifumana kwiwebhu. Ayilocebiso lotyalo-mali. Sisebenzisa umda wakho wemibuzo wemihla ngemihla, hayi uhlalutyo."
 }

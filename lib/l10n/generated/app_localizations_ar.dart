@@ -2587,4 +2587,18 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'جارٍ تحديد السهم الذي تقصده…';
+
+  @override
+  String get instrumentTitle => 'حول هذه الأداة';
+
+  @override
+  String get instrumentHint =>
+      'لا يوجد ملف شركة لهذا الرمز – قد يكون صندوقًا متداولًا (ETF) أو صندوقًا أو إيصال إيداع. اسأل الذكاء الاصطناعي ما هو، وما الذي يحتويه، وما تكلفته.';
+
+  @override
+  String get instrumentAsk => 'ما هذا؟';
+
+  @override
+  String get instrumentNote =>
+      'شرح بالذكاء الاصطناعي من صفحة الصندوق لدى الجهة المُصدِرة والمواقع المالية التي يجدها على الويب. لا يُعدّ نصيحة استثمارية. يُحتسب من حدّ الأسئلة اليومي ولا يستهلك تحليلًا.';
 }

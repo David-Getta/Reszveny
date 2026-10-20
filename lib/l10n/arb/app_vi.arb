@@ -673,5 +673,9 @@
   "earningsSummaryNote": "Tóm tắt do AI tạo về thông báo kết quả kinh doanh của công ty và các bài báo mà AI tìm thấy trên web. Không phải là lời khuyên đầu tư. Dùng hạn mức câu hỏi hằng ngày của bạn, không dùng lượt phân tích.",
   "compareLastSurprise": "EPS quý trước so với dự kiến",
   "compareNextReport": "Báo cáo tiếp theo",
-  "resolvingDescription": "Đang xác định cổ phiếu bạn muốn nói…"
+  "resolvingDescription": "Đang xác định cổ phiếu bạn muốn nói…",
+  "instrumentTitle": "Về công cụ này",
+  "instrumentHint": "Không có hồ sơ công ty cho mã này – đây có thể là ETF, quỹ hoặc chứng chỉ lưu ký. Hãy hỏi AI xem đây là gì, nắm giữ những gì và chi phí bao nhiêu.",
+  "instrumentAsk": "Đây là gì?",
+  "instrumentNote": "Giải thích do AI tạo từ trang quỹ của tổ chức phát hành và các trang tài chính mà AI tìm thấy trên web. Không phải là lời khuyên đầu tư. Dùng hạn mức câu hỏi hằng ngày của bạn, không dùng lượt phân tích."
 }

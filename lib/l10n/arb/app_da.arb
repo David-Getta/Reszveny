@@ -673,5 +673,9 @@
   "earningsSummaryNote": "AI-resumé af selskabets regnskabsmeddelelse og den presseomtale, den finder på nettet. Det er ikke investeringsrådgivning. Det bruger af din daglige spørgsmålskvote, ikke en analyse.",
   "compareLastSurprise": "Seneste kvartals EPS vs. forventet",
   "compareNextReport": "Næste regnskab",
-  "resolvingDescription": "Finder ud af, hvilken aktie du mener…"
+  "resolvingDescription": "Finder ud af, hvilken aktie du mener…",
+  "instrumentTitle": "Om dette instrument",
+  "instrumentHint": "Der findes ingen virksomhedsprofil for dette symbol – det kan være en ETF, en fond eller et depotbevis. Spørg AI’en, hvad det er, hvad det indeholder, og hvad det koster.",
+  "instrumentAsk": "Hvad er dette?",
+  "instrumentNote": "AI-forklaring ud fra udstederens fondsside og finanssider, den finder på nettet. Det er ikke investeringsrådgivning. Det bruger af din daglige spørgsmålskvote, ikke en analyse."
 }

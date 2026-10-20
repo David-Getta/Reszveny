@@ -2540,4 +2540,18 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'Identification de l\'action que vous recherchez…';
+
+  @override
+  String get instrumentTitle => 'À propos de cet instrument';
+
+  @override
+  String get instrumentHint =>
+      'Il n’existe pas de profil d’entreprise pour ce symbole : il peut s’agir d’un ETF, d’un fonds ou d’un certificat de dépôt. Demandez à l’IA ce que c’est, ce qu’il contient et ce qu’il coûte.';
+
+  @override
+  String get instrumentAsk => 'Qu’est-ce que c’est ?';
+
+  @override
+  String get instrumentNote =>
+      'Explication par IA à partir de la page du fonds chez l’émetteur et de sites financiers trouvés sur le web. Ne constitue pas un conseil en investissement. Utilise votre quota quotidien de questions, pas une analyse.';
 }

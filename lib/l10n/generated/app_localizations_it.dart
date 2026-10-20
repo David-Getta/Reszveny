@@ -2535,4 +2535,18 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'Identificazione dell\'azione a cui ti riferisci…';
+
+  @override
+  String get instrumentTitle => 'Informazioni su questo strumento';
+
+  @override
+  String get instrumentHint =>
+      'Non esiste un profilo aziendale per questo simbolo: potrebbe essere un ETF, un fondo o un certificato di deposito. Chiedi all’IA che cos’è, cosa contiene e quanto costa.';
+
+  @override
+  String get instrumentAsk => 'Che cos’è?';
+
+  @override
+  String get instrumentNote =>
+      'Spiegazione dell’IA basata sulla pagina del fondo dell’emittente e sui siti finanziari che trova sul web. Non costituisce un consiglio di investimento. Usa il tuo limite giornaliero di domande, non un’analisi.';
 }

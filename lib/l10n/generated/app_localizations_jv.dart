@@ -2531,4 +2531,18 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Nemtokake saham sing sampeyan maksud…';
+
+  @override
+  String get instrumentTitle => 'Babagan instrumen iki';
+
+  @override
+  String get instrumentHint =>
+      'Ora ana profil perusahaan kanggo simbol iki – bisa uga ETF, dana, utawa depositary receipt. Takon AI apa iki, apa isiné, lan pira ragadé.';
+
+  @override
+  String get instrumentAsk => 'Apa iki?';
+
+  @override
+  String get instrumentNote =>
+      'Katrangan AI saka kaca dana penerbit lan situs finansial sing ditemokaké ing web. Dudu saran investasi. Nggunakake watesan pitakon saben dina, dudu analisis.';
 }

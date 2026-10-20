@@ -2534,4 +2534,18 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Kutsvaga sheya yauri kureva…';
+
+  @override
+  String get instrumentTitle => 'Nezvechishandiso ichi';
+
+  @override
+  String get instrumentHint =>
+      'Hapana ruzivo rwekambani rwechiratidzo ichi – chinogona kuva ETF, homwe yemari kana gwaro redhipoziti. Bvunza AI kuti chii, chine chii mukati uye chinodhura zvakadii.';
+
+  @override
+  String get instrumentAsk => 'Ichi chii?';
+
+  @override
+  String get instrumentNote =>
+      'Tsananguro yeAI kubva papeji yehomwe yemari yemubudisi nemasaiti emari ainowana painternet. Haisi zano rekuisa mari. Inoshandisa muganhu wako wemibvunzo wezuva nezuva, kwete ongororo.';
 }

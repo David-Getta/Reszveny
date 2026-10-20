@@ -2530,4 +2530,18 @@ class AppLocalizationsKk extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'Қай акцияны айтып отырғаныңыз анықталуда…';
+
+  @override
+  String get instrumentTitle => 'Бұл құрал туралы';
+
+  @override
+  String get instrumentHint =>
+      'Бұл символ үшін компания профилі жоқ – бұл ETF, қор немесе депозитарлық қолхат болуы мүмкін. AI-дан бұл не, құрамында не бар және бағасы қанша екенін сұраңыз.';
+
+  @override
+  String get instrumentAsk => 'Бұл не?';
+
+  @override
+  String get instrumentNote =>
+      'Эмитенттің қор беті мен интернеттен тапқан қаржы сайттары негізіндегі AI түсіндірмесі. Инвестициялық кеңес емес. Күнделікті сұрақтар лимитіңізден жұмсалады, талдау емес.';
 }

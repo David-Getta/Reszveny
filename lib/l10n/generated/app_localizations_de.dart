@@ -2542,4 +2542,18 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'Es wird ermittelt, welche Aktie du meinst…';
+
+  @override
+  String get instrumentTitle => 'Über dieses Instrument';
+
+  @override
+  String get instrumentHint =>
+      'Für dieses Symbol gibt es kein Unternehmensprofil – es könnte ein ETF, ein Fonds oder ein Hinterlegungsschein sein. Frag die KI, was es ist, was es enthält und was es kostet.';
+
+  @override
+  String get instrumentAsk => 'Was ist das?';
+
+  @override
+  String get instrumentNote =>
+      'KI-Erklärung auf Basis der Fondsseite des Emittenten und von Finanzseiten, die sie im Web findet. Keine Anlageberatung. Zählt zu deinem täglichen Fragenkontingent, nicht als Analyse.';
 }

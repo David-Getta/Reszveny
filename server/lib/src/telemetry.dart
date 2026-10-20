@@ -61,6 +61,7 @@ class TelemetryStore {
     'news_explained',
     'earnings_summary',
     'description_resolved',
+    'instrument_explained',
     'list_created',
     'targets_set',
     'backup_saved',

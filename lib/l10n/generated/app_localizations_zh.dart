@@ -2416,6 +2416,20 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get resolvingDescription => '正在确定你指的是哪只股票…';
+
+  @override
+  String get instrumentTitle => '关于该标的';
+
+  @override
+  String get instrumentHint =>
+      '该代码没有公司资料，可能是 ETF、基金或存托凭证。问问 AI 它是什么、持有什么以及费用多少。';
+
+  @override
+  String get instrumentAsk => '这是什么？';
+
+  @override
+  String get instrumentNote =>
+      'AI 根据发行方的基金页面以及在网上找到的财经网站进行说明。不构成投资建议。占用每日提问次数，不消耗分析次数。';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -4828,4 +4842,18 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get resolvingDescription => '正在確定你所指的股票…';
+
+  @override
+  String get instrumentTitle => '關於此產品';
+
+  @override
+  String get instrumentHint =>
+      '此代號沒有公司資料，可能是 ETF、基金或預託證券。問問 AI 它是甚麼、持有甚麼以及費用多少。';
+
+  @override
+  String get instrumentAsk => '這是甚麼？';
+
+  @override
+  String get instrumentNote =>
+      'AI 根據發行商的基金頁面以及在網上找到的財經網站作出解釋。並不構成投資建議。佔用每日提問次數，不消耗分析次數。';
 }

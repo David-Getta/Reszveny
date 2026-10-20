@@ -673,5 +673,9 @@
   "earningsSummaryNote": "Nkomiso wa AI wa xitiviso xa mbuyelo wa khamphani ni mahungu ya vuhaxi lawa yi ma kumaka ewebeni. A hi ndzayo ya vuvekisi. Yi tirhisa ndzelekano wa wena wa swivutiso wa siku na siku, ku nga ri nxopaxopo.",
   "compareLastSurprise": "EPS leyi hundzeke vs leyi languteriweke",
   "compareNextReport": "Xiviko lexi landzelaka",
-  "resolvingDescription": "Hi lava xere leyi u vulaka yona…"
+  "resolvingDescription": "Hi lava xere leyi u vulaka yona…",
+  "instrumentTitle": "Mayelana na xitirhisiwa lexi",
+  "instrumentHint": "A ku na profayili ya khamphani ya mfungho lowu – xi nga va ETF, nkwama kumbe xitifikheti xa depoziti. Vutisa AI leswaku i yini, xi na yini endzeni na leswaku xi durha ku fika kwihi.",
+  "instrumentAsk": "I yini lexi?",
+  "instrumentNote": "Nhlamuselo ya AI ku suka eka pheji ya nkwama ya muhumelerisi na tiwebsayiti ta timali leti yi ti kumaka ewebeni. A hi ndzayo ya vuvekisi. Yi tirhisa ndzelekano wa wena wa swivutiso wa siku na siku, ku nga ri nxopaxopo."
 }

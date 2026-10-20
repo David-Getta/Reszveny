@@ -2525,4 +2525,18 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'در حال تشخیص سهمی که منظورتان است…';
+
+  @override
+  String get instrumentTitle => 'دربارهٔ این ابزار';
+
+  @override
+  String get instrumentHint =>
+      'برای این نماد پروفایل شرکتی وجود ندارد – ممکن است ETF، صندوق یا رسید سپرده باشد. از هوش مصنوعی بپرسید این چیست، چه چیزی در آن است و چقدر هزینه دارد.';
+
+  @override
+  String get instrumentAsk => 'این چیست؟';
+
+  @override
+  String get instrumentNote =>
+      'توضیح هوش مصنوعی بر اساس صفحهٔ صندوق در سایت ناشر و سایت‌های مالی‌ای که در وب پیدا می‌کند. توصیه سرمایه‌گذاری نیست. از سهمیهٔ روزانهٔ پرسش‌های شما کم می‌شود، نه از تحلیل‌ها.';
 }

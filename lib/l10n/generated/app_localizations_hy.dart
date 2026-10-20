@@ -2538,4 +2538,18 @@ class AppLocalizationsHy extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'Պարզվում է, թե որ բաժնետոմսն եք նկատի ունեցել…';
+
+  @override
+  String get instrumentTitle => 'Այս գործիքի մասին';
+
+  @override
+  String get instrumentHint =>
+      'Այս սիմվոլի համար ընկերության պրոֆիլ չկա. դա կարող է լինել ETF, ֆոնդ կամ դեպոզիտար ստացական։ Հարցրեք AI-ին, թե ինչ է դա, ինչ է պարունակում և ինչ արժե։';
+
+  @override
+  String get instrumentAsk => 'Ի՞նչ է սա';
+
+  @override
+  String get instrumentNote =>
+      'AI-ի բացատրություն՝ թողարկողի ֆոնդի էջի և համացանցում գտած ֆինանսական կայքերի հիման վրա։ Ներդրումային խորհուրդ չէ։ Օգտագործում է ձեր օրական հարցերի սահմանաչափը, ոչ թե վերլուծություն։';
 }

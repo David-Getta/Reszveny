@@ -2540,4 +2540,18 @@ class AppLocalizationsMl extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'നിങ്ങൾ ഉദ്ദേശിക്കുന്ന ഓഹരി ഏതാണെന്ന് കണ്ടെത്തുന്നു…';
+
+  @override
+  String get instrumentTitle => 'ഈ ഇൻസ്ട്രുമെന്റിനെക്കുറിച്ച്';
+
+  @override
+  String get instrumentHint =>
+      'ഈ ചിഹ്നത്തിന് കമ്പനി പ്രൊഫൈൽ ഇല്ല – ഇത് ഒരു ETF, ഫണ്ട് അല്ലെങ്കിൽ ഡിപ്പോസിറ്ററി രസീത് ആയിരിക്കാം. ഇത് എന്താണ്, ഇതിൽ എന്താണുള്ളത്, ഇതിന്റെ ചെലവ് എത്ര എന്ന് AI-യോട് ചോദിക്കൂ.';
+
+  @override
+  String get instrumentAsk => 'ഇത് എന്താണ്?';
+
+  @override
+  String get instrumentNote =>
+      'ഇഷ്യൂവറുടെ ഫണ്ട് പേജിൽ നിന്നും വെബിൽ കണ്ടെത്തുന്ന സാമ്പത്തിക സൈറ്റുകളിൽ നിന്നുമുള്ള AI വിശദീകരണം. ഇത് നിക്ഷേപ ഉപദേശമല്ല. ഇത് നിങ്ങളുടെ ദൈനംദിന ചോദ്യ പരിധിയിൽ നിന്നാണ്, വിശകലനം ഉപയോഗിക്കില്ല.';
 }

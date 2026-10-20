@@ -673,5 +673,9 @@
   "earningsSummaryNote": "Ũhoro mũkuhĩ wa AI wa kũmenyithia maumĩrĩra ma kampuni na ũhoro wa ngathiti ũrĩa wonaga internet-inĩ. Ti ũtaaro wa investment. Ĩhũthagĩra mũhaka wa ciũria ciaku cia o mũthenya, ti ũthuthuria.",
   "compareLastSurprise": "EPS ĩthiru vs ĩrĩa yetagĩrĩrwo",
   "compareNextReport": "Ripoti ĩrĩa ĩrũmĩrĩire",
-  "resolvingDescription": "Nĩtũracaria hisa ĩrĩa ũrenda kuuga…"
+  "resolvingDescription": "Nĩtũracaria hisa ĩrĩa ũrenda kuuga…",
+  "instrumentTitle": "Ũhoro wa kĩndũ gĩkĩ kĩa wonjoria",
+  "instrumentHint": "Gũtirĩ ũhoro wa kampuni wa rũũri rũrũ – no ĩkorwo ĩrĩ ETF, fund kana depositary receipt. Ũria AI nĩ kĩĩ, nĩ kĩĩ kĩrĩ thĩinĩ wayo, na ĩrutaga mbeca cigana.",
+  "instrumentAsk": "Gĩkĩ nĩ kĩĩ?",
+  "instrumentNote": "Ũtaarĩria wa AI kuuma rũhuko-inĩ rwa fund rwa mũrutani na mĩhuko ya mbeca ĩrĩa wonaga internet-inĩ. Ti ũtaaro wa investment. Ĩhũthagĩra mũhaka wa ciũria ciaku cia o mũthenya, ti ũthuthuria."
 }

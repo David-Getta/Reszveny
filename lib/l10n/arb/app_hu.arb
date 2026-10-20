@@ -673,5 +673,9 @@
   "earningsSummaryNote": "AI-összefoglaló a cég eredményközleményéből és a weben talált sajtóvisszhangból. Nem befektetési tanács. A napi kérdéskeretből megy, elemzést nem fogyaszt.",
   "compareLastSurprise": "Utolsó negyedév EPS a várthoz képest",
   "compareNextReport": "Következő jelentés",
-  "resolvingDescription": "Kitaláljuk, melyik részvényre gondolsz…"
+  "resolvingDescription": "Kitaláljuk, melyik részvényre gondolsz…",
+  "instrumentTitle": "Erről a papírról",
+  "instrumentHint": "Ehhez a tickerhez nincs cégprofil – lehet, hogy ETF, alap vagy letéti jegy. Kérdezd meg az AI-t, mi ez, mit tart és mennyibe kerül.",
+  "instrumentAsk": "Mi ez a papír?",
+  "instrumentNote": "AI-magyarázat a kibocsátó oldaláról és a weben talált pénzügyi oldalakról. Nem befektetési tanács. A napi kérdéskeretből megy, elemzést nem fogyaszt."
 }

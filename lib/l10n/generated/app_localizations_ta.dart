@@ -2539,4 +2539,18 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'நீங்கள் குறிப்பிடும் பங்கு எது என்று கண்டறியப்படுகிறது…';
+
+  @override
+  String get instrumentTitle => 'இந்த கருவி பற்றி';
+
+  @override
+  String get instrumentHint =>
+      'இந்த குறியீட்டிற்கு நிறுவன சுயவிவரம் இல்லை – இது ஒரு ETF, நிதி அல்லது வைப்புச் சான்றிதழாக இருக்கலாம். இது என்ன, இதில் என்ன உள்ளது, இதன் செலவு என்ன என்று AI-யிடம் கேளுங்கள்.';
+
+  @override
+  String get instrumentAsk => 'இது என்ன?';
+
+  @override
+  String get instrumentNote =>
+      'வெளியீட்டாளரின் நிதிப் பக்கம் மற்றும் இணையத்தில் கிடைக்கும் நிதி தளங்களின் அடிப்படையில் AI விளக்கம். இது முதலீட்டு ஆலோசனை அல்ல. இது உங்கள் தினசரி கேள்வி வரம்பிலிருந்து செலவாகும், பகுப்பாய்வு எதுவும் செலவாகாது.';
 }

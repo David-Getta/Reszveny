@@ -2533,4 +2533,18 @@ class AppLocalizationsKy extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'Кайсы акцияны айтып жатканыңыз аныкталууда…';
+
+  @override
+  String get instrumentTitle => 'Бул инструмент жөнүндө';
+
+  @override
+  String get instrumentHint =>
+      'Бул символ үчүн компаниянын профили жок – бул ETF, фонд же депозитардык тилкат болушу мүмкүн. AIдан бул эмне, анын курамында эмне бар жана канча турарын сураңыз.';
+
+  @override
+  String get instrumentAsk => 'Бул эмне?';
+
+  @override
+  String get instrumentNote =>
+      'Эмитенттин фонд барагы менен интернеттен тапкан каржы сайттарынын негизиндеги AI түшүндүрмөсү. Инвестициялык кеңеш эмес. Күнүмдүк суроолор чегиңизден сарпталат, талдоо эмес.';
 }

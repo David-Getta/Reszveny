@@ -2534,4 +2534,18 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Ohekahína acción ereséva…';
+
+  @override
+  String get instrumentTitle => 'Ko instrumento rehegua';
+
+  @override
+  String get instrumentHint =>
+      'Ndaipóri empresa perfil ko símbolo-pe g̃uarã – ikatu haʼe peteĩ ETF, fondo térã certificado de depósito. Eporandu AI-pe mbaʼépa, mbaʼépa oguereko ha mbovýpa hepy.';
+
+  @override
+  String get instrumentAsk => 'Mbaʼépa kóva?';
+
+  @override
+  String get instrumentNote =>
+      'AI omyesakã pe emisor fondo kuatiarogue ha umi sitio financiero otopáva ñandutípe rupive. Ndahaʼéi ñemoñeʼẽ inversión rehegua. Oipuru ne porandu papapy ára ha ára guarã, ndahaʼéi jehesaʼỹijo.';
 }

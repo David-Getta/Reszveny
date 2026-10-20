@@ -2531,4 +2531,18 @@ class AppLocalizationsTg extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'Муайян карда мешавад, ки шумо кадом саҳмияро дар назар доред…';
+
+  @override
+  String get instrumentTitle => 'Дар бораи ин абзор';
+
+  @override
+  String get instrumentHint =>
+      'Барои ин рамз профили ширкат нест – он метавонад ETF, фонд ё расиди депозитарӣ бошад. Аз AI пурсед, ки ин чист, чӣ дар бар мегирад ва чанд пул меистад.';
+
+  @override
+  String get instrumentAsk => 'Ин чист?';
+
+  @override
+  String get instrumentNote =>
+      'Шарҳи AI дар асоси саҳифаи фонд дар сомонаи эмитент ва сомонаҳои молиявӣ, ки дар интернет пайдо мекунад. Маслиҳати сармоягузорӣ нест. Аз ҳадди саволҳои ҳаррӯзаи шумо сарф мешавад, на таҳлил.';
 }

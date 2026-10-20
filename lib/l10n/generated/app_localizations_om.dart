@@ -2538,4 +2538,18 @@ class AppLocalizationsOm extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'Aksiyoona ati jechuu barbaadde adda baafamaa jira…';
+
+  @override
+  String get instrumentTitle => 'Waa\'ee meeshaa kanaa';
+
+  @override
+  String get instrumentHint =>
+      'Mallattoo kanaaf piroofaayilii dhaabbataa hin jiru – ETF, fandii yookiin ragaa kuufamaa ta\'uu danda\'a. AI gaafadhu inni maal akka ta\'e, maal akka qabatee fi baasii isaa hammam akka ta\'e.';
+
+  @override
+  String get instrumentAsk => 'Kun maali?';
+
+  @override
+  String get instrumentNote =>
+      'Ibsa AI fuula fandii baasaa fi marsariitiiwwan faayinaansii interneetii irratti argatu irraa. Gorsa invastimantii miti. Daangaa gaaffii guyyaa kee fayyadama, xiinxala miti.';
 }

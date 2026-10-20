@@ -673,5 +673,9 @@
   "earningsSummaryNote": "Şirketin sonuç açıklamasının ve web’de bulduğu basın haberlerinin yapay zekâ özeti. Yatırım tavsiyesi değildir. Günlük soru hakkından düşer, analiz hakkı kullanmaz.",
   "compareLastSurprise": "Son çeyrek HBK vs. beklenen",
   "compareNextReport": "Sonraki bilanço",
-  "resolvingDescription": "Hangi hisseyi kastettiğiniz belirleniyor…"
+  "resolvingDescription": "Hangi hisseyi kastettiğiniz belirleniyor…",
+  "instrumentTitle": "Bu enstrüman hakkında",
+  "instrumentHint": "Bu sembol için şirket profili yok – bir ETF, fon veya depo sertifikası olabilir. Yapay zekâya ne olduğunu, neleri içerdiğini ve maliyetini sor.",
+  "instrumentAsk": "Bu nedir?",
+  "instrumentNote": "İhraççının fon sayfası ve web’de bulduğu finans sitelerine dayanan yapay zekâ açıklaması. Yatırım tavsiyesi değildir. Günlük soru hakkından düşer, analiz hakkı kullanmaz."
 }

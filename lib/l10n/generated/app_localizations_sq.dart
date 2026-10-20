@@ -2536,4 +2536,18 @@ class AppLocalizationsSq extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'Duke përcaktuar cilin aksion keni parasysh…';
+
+  @override
+  String get instrumentTitle => 'Rreth këtij instrumenti';
+
+  @override
+  String get instrumentHint =>
+      'Nuk ka profil kompanie për këtë simbol – mund të jetë një ETF, një fond ose një certifikatë depozitare. Pyesni AI-n çfarë është, çfarë përmban dhe sa kushton.';
+
+  @override
+  String get instrumentAsk => 'Çfarë është kjo?';
+
+  @override
+  String get instrumentNote =>
+      'Shpjegim nga AI bazuar në faqen e fondit të emetuesit dhe në faqet financiare që gjen në internet. Nuk përbën këshillë investimi. Përdor kufirin tuaj ditor të pyetjeve, jo një analizë.';
 }

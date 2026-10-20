@@ -673,5 +673,9 @@
   "earningsSummaryNote": "Riepilogo dell’IA del comunicato sui risultati dell’azienda e della copertura stampa che trova sul web. Non costituisce un consiglio di investimento. Usa il tuo limite giornaliero di domande, non un’analisi.",
   "compareLastSurprise": "EPS ultimo trimestre vs. atteso",
   "compareNextReport": "Prossimi risultati",
-  "resolvingDescription": "Identificazione dell'azione a cui ti riferisci…"
+  "resolvingDescription": "Identificazione dell'azione a cui ti riferisci…",
+  "instrumentTitle": "Informazioni su questo strumento",
+  "instrumentHint": "Non esiste un profilo aziendale per questo simbolo: potrebbe essere un ETF, un fondo o un certificato di deposito. Chiedi all’IA che cos’è, cosa contiene e quanto costa.",
+  "instrumentAsk": "Che cos’è?",
+  "instrumentNote": "Spiegazione dell’IA basata sulla pagina del fondo dell’emittente e sui siti finanziari che trova sul web. Non costituisce un consiglio di investimento. Usa il tuo limite giornaliero di domande, non un’analisi."
 }

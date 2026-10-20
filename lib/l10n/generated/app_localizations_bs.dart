@@ -2572,4 +2572,18 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Utvrđujemo na koju dionicu mislite…';
+
+  @override
+  String get instrumentTitle => 'O ovom instrumentu';
+
+  @override
+  String get instrumentHint =>
+      'Za ovaj simbol ne postoji profil kompanije – možda je riječ o ETF-u, fondu ili depozitnoj potvrdi. Pitajte AI šta je to, šta sadrži i koliko košta.';
+
+  @override
+  String get instrumentAsk => 'Šta je ovo?';
+
+  @override
+  String get instrumentNote =>
+      'Objašnjenje umjetne inteligencije na osnovu stranice fonda kod izdavaoca i finansijskih stranica koje pronađe na internetu. Nije investicijski savjet. Troši vaše dnevno ograničenje pitanja, ne analizu.';
 }

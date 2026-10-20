@@ -2527,4 +2527,18 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Working out which stock you mean…';
+
+  @override
+  String get instrumentTitle => 'About this instrument';
+
+  @override
+  String get instrumentHint =>
+      'There is no company profile for this symbol – it may be an ETF, a fund or a depositary receipt. Ask the AI what it is, what it holds and what it costs.';
+
+  @override
+  String get instrumentAsk => 'What is this?';
+
+  @override
+  String get instrumentNote =>
+      'AI explanation from the issuer\'s fund page and financial sites found on the web. Not investment advice. Uses your daily question allowance, not an analysis.';
 }

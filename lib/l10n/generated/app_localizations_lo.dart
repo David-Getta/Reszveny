@@ -2502,4 +2502,18 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'ກຳລັງກວດຫາວ່າທ່ານໝາຍຖິງຮຸ້ນໃດ…';
+
+  @override
+  String get instrumentTitle => 'ກ່ຽວກັບເຄື່ອງມືນີ້';
+
+  @override
+  String get instrumentHint =>
+      'ບໍ່ມີຂໍ້ມູນບໍລິສັດສຳລັບສັນຍາລັກນີ້ – ອາດຈະເປັນ ETF, ກອງທຶນ ຫຼື ໃບຮັບຝາກຫຼັກທຣັບ. ຖາມ AI ວ່າມັນຄືຫຍັງ, ມີຫຍັງຢູ່ໃນນັ້ນ ແລະ ຄ່າໃຊ້ຈ່າຍເທົ່າໃດ.';
+
+  @override
+  String get instrumentAsk => 'ນີ້ຄືຫຍັງ?';
+
+  @override
+  String get instrumentNote =>
+      'ຄຳອະທິບາຍຈາກ AI ອີງຕາມໜ້ານຳສະເໜີກອງທຶນຂອງຜູ້ອອກ ແລະ ເວັບໄຊການເງິນທີ່ມັນພົບໃນເວັບ. ບໍ່ແມ່ນຄຳແນະນຳການລົງທຶນ. ໃຊ້ໂຄຕາຄຳຖາມປະຈຳວັນຂອງທ່ານ ບໍ່ແມ່ນການວິເຄາະ.';
 }

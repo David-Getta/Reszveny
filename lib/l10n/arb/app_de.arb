@@ -673,5 +673,9 @@
   "earningsSummaryNote": "KI-Zusammenfassung der Ergebnismitteilung des Unternehmens und der Presseberichte, die sie im Web findet. Keine Anlageberatung. Zählt zu deinem täglichen Fragenkontingent, nicht als Analyse.",
   "compareLastSurprise": "EPS letztes Quartal vs. erwartet",
   "compareNextReport": "Nächster Bericht",
-  "resolvingDescription": "Es wird ermittelt, welche Aktie du meinst…"
+  "resolvingDescription": "Es wird ermittelt, welche Aktie du meinst…",
+  "instrumentTitle": "Über dieses Instrument",
+  "instrumentHint": "Für dieses Symbol gibt es kein Unternehmensprofil – es könnte ein ETF, ein Fonds oder ein Hinterlegungsschein sein. Frag die KI, was es ist, was es enthält und was es kostet.",
+  "instrumentAsk": "Was ist das?",
+  "instrumentNote": "KI-Erklärung auf Basis der Fondsseite des Emittenten und von Finanzseiten, die sie im Web findet. Keine Anlageberatung. Zählt zu deinem täglichen Fragenkontingent, nicht als Analyse."
 }

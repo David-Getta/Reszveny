@@ -2526,4 +2526,18 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'I bɛ aksiyɔn min fɛ, o bɛ ka ɲini…';
+
+  @override
+  String get instrumentTitle => 'Nin fɛn in kan';
+
+  @override
+  String get instrumentHint =>
+      'Sosiyete kunnafoni tɛ nin taamasiyɛn in na – a bɛ se ka kɛ ETF ye, fond walima dɛpozitɛri sɛbɛn. AI ɲininka a ye mun ye, mun bɛ a kɔnɔ ani a sɔngɔ ye joli ye.';
+
+  @override
+  String get instrumentAsk => 'Nin ye mun ye?';
+
+  @override
+  String get instrumentNote =>
+      'AI ka ɲɛfɔli min bɔra fond bɔbaga ka ɲɛ kan ani wariko siti minnu a bɛ sɔrɔ ɛntɛrinɛti kan. Wari donni ladilikan tɛ. A bɛ bɔ i ka don o don ɲininkaliw hakɛ la, a tɛ sɛgɛsɛgɛli si ta.';
 }

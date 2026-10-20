@@ -2570,4 +2570,18 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Nosaka, kuru akciju jūs domājat…';
+
+  @override
+  String get instrumentTitle => 'Par šo instrumentu';
+
+  @override
+  String get instrumentHint =>
+      'Šim simbolam nav uzņēmuma profila – tas var būt ETF, fonds vai depozitārais sertifikāts. Pajautājiet mākslīgajam intelektam, kas tas ir, ko tas satur un cik tas maksā.';
+
+  @override
+  String get instrumentAsk => 'Kas tas ir?';
+
+  @override
+  String get instrumentNote =>
+      'Mākslīgā intelekta skaidrojums pēc emitenta fonda lapas un finanšu vietnēm, ko tas atrod tīmeklī. Tā nav ieguldījumu konsultācija. Izmanto jūsu dienas jautājumu limitu, nevis analīzi.';
 }

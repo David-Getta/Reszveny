@@ -2530,4 +2530,18 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'ئەو پشکەی مەبەستتە دیاری دەکرێت…';
+
+  @override
+  String get instrumentTitle => 'دەربارەی ئەم ئامرازە';
+
+  @override
+  String get instrumentHint =>
+      'هیچ پرۆفایلێکی کۆمپانیا بۆ ئەم هێمایە نییە – لەوانەیە ETF، سندوق یان پسوولەی سپاردن بێت. لە AI بپرسە ئەمە چییە، چی لەخۆدەگرێت و تێچووی چەندە.';
+
+  @override
+  String get instrumentAsk => 'ئەمە چییە؟';
+
+  @override
+  String get instrumentNote =>
+      'ڕوونکردنەوەی AI لە پەڕەی سندوقی دەرکەر و ئەو ماڵپەڕە داراییانەی لە وێبدا دەیاندۆزێتەوە. ئامۆژگاریی وەبەرهێنان نییە. لە سنووری پرسیارە ڕۆژانەکانت دەبرێت، شیکاری بەکارناهێنێت.';
 }

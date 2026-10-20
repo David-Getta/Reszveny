@@ -2545,4 +2545,18 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'E lemoga šere yeo o e bolelago…';
+
+  @override
+  String get instrumentTitle => 'Ka ga sedirišwa se';
+
+  @override
+  String get instrumentHint =>
+      'Ga go na profaele ya khamphani ya leswao le – e ka ba ETF, sekhwama goba setifikeiti sa tipositi. Botšiša AI gore ke eng, e swere eng le gore e bitša bokae.';
+
+  @override
+  String get instrumentAsk => 'Ke eng se?';
+
+  @override
+  String get instrumentNote =>
+      'Tlhaloso ya AI go tšwa letlakaleng la sekhwama la mongwadi le diwebosaete tša ditšhelete tšeo e di hwetšago wepeng. Ga se keletšo ya peeletšo. E diriša moedi wa gago wa dipotšišo wa letšatši le letšatši, e sego tshekatsheko.';
 }

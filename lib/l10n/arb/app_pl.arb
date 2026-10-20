@@ -673,5 +673,9 @@
   "earningsSummaryNote": "Podsumowanie AI komunikatu spółki o wynikach i doniesień prasowych, które znajduje w sieci. Nie stanowi porady inwestycyjnej. Korzysta z dziennego limitu pytań, nie zużywa analizy.",
   "compareLastSurprise": "EPS za ostatni kwartał vs oczekiwany",
   "compareNextReport": "Następny raport",
-  "resolvingDescription": "Ustalanie, o którą akcję chodzi…"
+  "resolvingDescription": "Ustalanie, o którą akcję chodzi…",
+  "instrumentTitle": "O tym instrumencie",
+  "instrumentHint": "Dla tego symbolu nie ma profilu spółki – może to być ETF, fundusz lub kwit depozytowy. Zapytaj AI, co to jest, co zawiera i ile kosztuje.",
+  "instrumentAsk": "Co to jest?",
+  "instrumentNote": "Wyjaśnienie AI na podstawie strony funduszu u emitenta i serwisów finansowych, które znajduje w sieci. Nie stanowi porady inwestycyjnej. Korzysta z dziennego limitu pytań, nie zużywa analizy."
 }

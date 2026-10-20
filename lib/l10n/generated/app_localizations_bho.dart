@@ -2525,4 +2525,18 @@ class AppLocalizationsBho extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'पता लगावल जा रहल बा कि रउआ कवन शेयर के बात करत बानी…';
+
+  @override
+  String get instrumentTitle => 'ई इंस्ट्रूमेंट के बारे में';
+
+  @override
+  String get instrumentHint =>
+      'ई सिंबल खातिर कंपनी के कवनो प्रोफाइल नइखे – ई ETF, फंड भा डिपॉजिटरी रिसीट हो सकेला। AI से पूछीं कि ई का ह, एह में का ह आ एकर खरचा केतना ह।';
+
+  @override
+  String get instrumentAsk => 'ई का ह?';
+
+  @override
+  String get instrumentNote =>
+      'जारीकर्ता के फंड पेज आ वेब पर मिलल वित्तीय साइटन से AI के समझावल। ई निवेश के सलाह ना ह। ई रउआ रोज के सवाल के सीमा से जाला, कवनो विश्लेषण खरच ना होला।';
 }

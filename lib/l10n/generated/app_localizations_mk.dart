@@ -2548,4 +2548,18 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Се утврдува на која акција мислите…';
+
+  @override
+  String get instrumentTitle => 'За овој инструмент';
+
+  @override
+  String get instrumentHint =>
+      'За овој симбол нема профил на компанија – може да е ETF, фонд или депозитарна потврда. Прашајте го AI што е тоа, што содржи и колку чини.';
+
+  @override
+  String get instrumentAsk => 'Што е ова?';
+
+  @override
+  String get instrumentNote =>
+      'Објаснување од AI врз основа на страницата на фондот кај издавачот и финансиски сајтови што ги наоѓа на интернет. Не претставува инвестициски совет. Го користи вашиот дневен лимит на прашања, не анализа.';
 }

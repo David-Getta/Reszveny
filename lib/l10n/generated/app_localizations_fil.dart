@@ -2536,4 +2536,18 @@ class AppLocalizationsFil extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'Inaalam kung aling stock ang ibig mong sabihin…';
+
+  @override
+  String get instrumentTitle => 'Tungkol sa instrumentong ito';
+
+  @override
+  String get instrumentHint =>
+      'Walang profile ng kumpanya para sa simbolong ito – maaaring ETF, fund o depositary receipt ito. Tanungin ang AI kung ano ito, ano ang laman nito at magkano ang gastos nito.';
+
+  @override
+  String get instrumentAsk => 'Ano ito?';
+
+  @override
+  String get instrumentNote =>
+      'Paliwanag ng AI mula sa fund page ng issuer at sa mga financial site na nahanap nito sa web. Hindi ito payo sa pamumuhunan. Gumagamit ito ng iyong pang-araw-araw na limitasyon sa tanong, hindi ng pagsusuri.';
 }

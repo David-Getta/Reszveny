@@ -2528,4 +2528,18 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Ɛrehwehwɛ kyɛfa a worekyerɛ…';
+
+  @override
+  String get instrumentTitle => 'Saa instrument yi ho asɛm';
+
+  @override
+  String get instrumentHint =>
+      'Adwumakuo ho nsɛm biara nni hɔ mma saa symbol yi – ebia ɛyɛ ETF, fund anaa depositary receipt. Bisa AI no sɛ ɛyɛ dɛn, dɛn na ɛwɔ mu, na ne bo yɛ sɛn.';
+
+  @override
+  String get instrumentAsk => 'Ɛyɛ dɛn?';
+
+  @override
+  String get instrumentNote =>
+      'AI nkyerɛkyerɛmu a ɛfiri deɛ ɔde baeɛ no fund krataafa ne sikasɛm nkrataafa a ɛhu wɔ intanɛt so. Ɛnyɛ sikahyɛmu ho afotu. Ɛfiri wo nsɛmmisa a ɛsɛ da biara mu, ɛnni nhwehwɛmu biara.';
 }

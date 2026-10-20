@@ -2537,4 +2537,18 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Kusosa action yina nge ketuba…';
+
+  @override
+  String get instrumentTitle => 'Mambu ya kisadilu yai';
+
+  @override
+  String get instrumentHint =>
+      'Ntendula ya kompani kele ve sambu na kidimbu yai – yo lenda vanda ETF, fond to mukanda ya depo. Yufula AI yo kele inki, inki kele na kati mpi ntalu na yo kele ikwa.';
+
+  @override
+  String get instrumentAsk => 'Yai kele inki?';
+
+  @override
+  String get instrumentNote =>
+      'Ntendula ya AI yina me katuka na lutiti ya fond ya mubasisi mpi na ba site ya mbongo yina yo ke mona na Internet. Yo ke malongi ya kutula mbongo ve. Yo ke sadilaka ndilu ya biuvu na nge ya konso kilumbu, ve nsosa.';
 }

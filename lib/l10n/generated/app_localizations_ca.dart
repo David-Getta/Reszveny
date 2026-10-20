@@ -2538,4 +2538,18 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Esbrinant quina acció vols dir…';
+
+  @override
+  String get instrumentTitle => 'Sobre aquest instrument';
+
+  @override
+  String get instrumentHint =>
+      'No hi ha perfil d’empresa per a aquest símbol: pot ser un ETF, un fons o un certificat de dipòsit. Pregunta a la IA què és, què conté i quant costa.';
+
+  @override
+  String get instrumentAsk => 'Què és això?';
+
+  @override
+  String get instrumentNote =>
+      'Explicació d’IA a partir de la pàgina del fons de l’emissor i de webs financers que troba a Internet. No constitueix assessorament d’inversió. Fa servir el teu límit diari de preguntes, no una anàlisi.';
 }

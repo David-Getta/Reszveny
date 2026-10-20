@@ -2527,4 +2527,18 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Anadi n waksyun i d-tebdreḍ…';
+
+  @override
+  String get instrumentTitle => 'Ɣef wallal-agi';
+
+  @override
+  String get instrumentHint =>
+      'Ulac amaɣnu n tkebbanit i wezwel-agi – yezmer ad yili d ETF, d asagen neɣ d aselkin n usersi. Steqsi AI d acu-t, d acu yellan deg-s d wacḥal yeswa.';
+
+  @override
+  String get instrumentAsk => 'D acu-t wagi?';
+
+  @override
+  String get instrumentNote =>
+      'Asegzi n AI seg usebter n usagen n win i t-id-yessufɣen d yismal n tedrimt i yufa deg web. Mačči d awellih n usersi n yidrimen. Yesseqdac talast-ik n yisteqsiyen n yal ass, mačči tasledt.';
 }

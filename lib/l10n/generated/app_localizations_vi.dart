@@ -2522,4 +2522,18 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Đang xác định cổ phiếu bạn muốn nói…';
+
+  @override
+  String get instrumentTitle => 'Về công cụ này';
+
+  @override
+  String get instrumentHint =>
+      'Không có hồ sơ công ty cho mã này – đây có thể là ETF, quỹ hoặc chứng chỉ lưu ký. Hãy hỏi AI xem đây là gì, nắm giữ những gì và chi phí bao nhiêu.';
+
+  @override
+  String get instrumentAsk => 'Đây là gì?';
+
+  @override
+  String get instrumentNote =>
+      'Giải thích do AI tạo từ trang quỹ của tổ chức phát hành và các trang tài chính mà AI tìm thấy trên web. Không phải là lời khuyên đầu tư. Dùng hạn mức câu hỏi hằng ngày của bạn, không dùng lượt phân tích.';
 }

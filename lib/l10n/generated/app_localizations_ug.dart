@@ -2532,4 +2532,18 @@ class AppLocalizationsUg extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'سىز دېمەكچى بولغان پاي چېكى ئېنىقلىنىۋاتىدۇ…';
+
+  @override
+  String get instrumentTitle => 'بۇ قورال ھەققىدە';
+
+  @override
+  String get instrumentHint =>
+      'بۇ بەلگە ئۈچۈن شىركەت ئارخىپى يوق – بۇ ETF، فوند ياكى ئامانەت تالونى بولۇشى مۇمكىن. AI دىن بۇ نېمە، ئىچىدە نېمە بار ۋە قانچە پۇل كېتىدىغانلىقىنى سوراڭ.';
+
+  @override
+  String get instrumentAsk => 'بۇ نېمە؟';
+
+  @override
+  String get instrumentNote =>
+      'چىقارغۇچىنىڭ فوند بېتى ۋە توردىن تاپقان مالىيە تور بەتلىرىگە ئاساسلانغان AI چۈشەندۈرۈشى. مەبلەغ سېلىش تەۋسىيەسى ئەمەس. كۈندىلىك سوئال چېكىڭىزدىن سەرپ بولىدۇ، تەھلىل ئەمەس.';
 }

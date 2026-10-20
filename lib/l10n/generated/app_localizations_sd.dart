@@ -2521,4 +2521,18 @@ class AppLocalizationsSd extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'معلوم ڪيو پيو وڃي ته توهان جو مطلب ڪهڙو شيئر آهي…';
+
+  @override
+  String get instrumentTitle => 'هن اوزار بابت';
+
+  @override
+  String get instrumentHint =>
+      'هن علامت لاءِ ڪمپنيءَ جو ڪو پروفائيل ناهي – اهو ETF، فنڊ يا ڊپازيٽري رسيد ٿي سگهي ٿو. AI کان پڇو ته اهو ڇا آهي، ان ۾ ڇا آهي ۽ ان جي قيمت ڪيتري آهي.';
+
+  @override
+  String get instrumentAsk => 'هي ڇا آهي؟';
+
+  @override
+  String get instrumentNote =>
+      'جاري ڪندڙ جي فنڊ صفحي ۽ ويب تي مليل مالي سائيٽن تان AI وضاحت. اها سيڙپڪاري جو مشورو ناهي. اهو توهان جي روزاني سوالن جي حد مان ويندو آهي، ڪو تجزيو خرچ نٿو ٿئي.';
 }

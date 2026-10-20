@@ -673,5 +673,9 @@
   "earningsSummaryNote": "Ringkasan AI atas pengumuman hasil kinerja perusahaan dan liputan media yang ditemukannya di web. Bukan saran investasi. Memakai kuota pertanyaan harian Anda, bukan analisis.",
   "compareLastSurprise": "EPS kuartal lalu vs. diharapkan",
   "compareNextReport": "Laporan berikutnya",
-  "resolvingDescription": "Mencari tahu saham mana yang Anda maksud…"
+  "resolvingDescription": "Mencari tahu saham mana yang Anda maksud…",
+  "instrumentTitle": "Tentang instrumen ini",
+  "instrumentHint": "Tidak ada profil perusahaan untuk simbol ini – mungkin ini ETF, reksa dana, atau depositary receipt. Tanyakan kepada AI apa ini, apa isinya, dan berapa biayanya.",
+  "instrumentAsk": "Apa ini?",
+  "instrumentNote": "Penjelasan AI dari halaman produk penerbit dan situs keuangan yang ditemukannya di web. Bukan saran investasi. Memakai kuota pertanyaan harian Anda, bukan analisis."
 }

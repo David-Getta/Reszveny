@@ -2528,4 +2528,18 @@ class AppLocalizationsTt extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'Сез кайсы акцияне күздә тотканыгыз билгеләнә…';
+
+  @override
+  String get instrumentTitle => 'Бу инструмент турында';
+
+  @override
+  String get instrumentHint =>
+      'Бу символ өчен компания профиле юк – бу ETF, фонд яки депозитар расписка булырга мөмкин. AIдан бу нәрсә, аның эчендә нәрсә бар һәм ул күпме тора икәнен сорагыз.';
+
+  @override
+  String get instrumentAsk => 'Бу нәрсә?';
+
+  @override
+  String get instrumentNote =>
+      'Эмитентның фонд битенә һәм интернетта тапкан финанс сайтларына нигезләнгән AI аңлатмасы. Инвестиция киңәше түгел. Көндәлек сораулар чигегездән тотыла, анализ түгел.';
 }

@@ -2518,4 +2518,18 @@ class AppLocalizationsBo extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'ཁྱེད་རང་གིས་བཤད་པའི་ཧུར་ཁག་གང་ཡིན་ངོས་འཛིན་བྱེད་བཞིན་པ…';
+
+  @override
+  String get instrumentTitle => 'ཡོ་བྱད་འདིའི་སྐོར།';
+
+  @override
+  String get instrumentHint =>
+      'མཚོན་རྟགས་འདིར་ཀུང་སིའི་ངོ་སྤྲོད་མེད། ETF དང་མ་དངུལ་ཚོགས་པ། ཡང་ན་གཏའ་འཇོག་བྱུང་འཛིན་ཡིན་སྲིད། འདི་ཅི་ཞིག་ཡིན་པ་དང་ནང་དུ་ཅི་ཡོད་པ། རིན་གོང་ཅི་ཙམ་ཡིན་པ་ AI ལ་དྲིས།';
+
+  @override
+  String get instrumentAsk => 'འདི་ཅི་ཞིག་རེད།';
+
+  @override
+  String get instrumentNote =>
+      'སྤེལ་མཁན་གྱི་མ་དངུལ་ཤོག་ངོས་དང་དྲ་རྒྱའི་ཐོག་རྙེད་པའི་དངུལ་རྩིས་དྲ་ཚིགས་ལས་བྱུང་བའི་ AI འགྲེལ་བཤད། མ་འཇོག་གི་བསམ་འཆར་མིན། ཉིན་རེའི་དྲི་བའི་ཚད་ནས་འགྲོ་བ་ཡིན་ལ་དབྱེ་ཞིབ་མི་བེད་སྤྱོད།';
 }

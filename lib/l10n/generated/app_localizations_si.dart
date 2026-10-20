@@ -2526,4 +2526,18 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'ඔබ අදහස් කරන කොටස කුමක්දැයි සොයමින්…';
+
+  @override
+  String get instrumentTitle => 'මේ උපකරණය ගැන';
+
+  @override
+  String get instrumentHint =>
+      'මේ සංකේතයට සමාගම් පැතිකඩක් නැත – එය ETF එකක්, අරමුදලක් හෝ තැන්පතු රිසිට්පතක් විය හැකිය. එය කුමක්ද, එහි ඇත්තේ මොනවාද, එහි පිරිවැය කීයද යන්න AI ගෙන් අසන්න.';
+
+  @override
+  String get instrumentAsk => 'මේ මොකක්ද?';
+
+  @override
+  String get instrumentNote =>
+      'නිකුත්කරුගේ අරමුදල් පිටුව සහ වෙබයේ සොයාගන්නා මූල්‍ය වෙබ් අඩවි මත පදනම් වූ AI පැහැදිලි කිරීමකි. එය ආයෝජන උපදෙසක් නොවේ. මෙය ඔබේ දෛනික ප්‍රශ්න සීමාවෙන් යයි, විශ්ලේෂණයක් භාවිත නොකරයි.';
 }

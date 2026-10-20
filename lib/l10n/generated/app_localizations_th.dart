@@ -2499,4 +2499,18 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'กำลังค้นหาว่าคุณหมายถึงหุ้นตัวใด…';
+
+  @override
+  String get instrumentTitle => 'เกี่ยวกับตราสารนี้';
+
+  @override
+  String get instrumentHint =>
+      'ไม่มีข้อมูลบริษัทสำหรับสัญลักษณ์นี้ อาจเป็น ETF กองทุน หรือใบรับฝากหลักทรัพย์ ถาม AI ว่ามันคืออะไร ถืออะไรอยู่ และมีค่าใช้จ่ายเท่าไร';
+
+  @override
+  String get instrumentAsk => 'นี่คืออะไร';
+
+  @override
+  String get instrumentNote =>
+      'คำอธิบายโดย AI จากหน้ากองทุนของผู้ออกและเว็บไซต์การเงินที่ค้นพบบนเว็บ ไม่ใช่คำแนะนำในการลงทุน ใช้โควตาคำถามรายวันของคุณ ไม่ใช้สิทธิ์การวิเคราะห์';
 }

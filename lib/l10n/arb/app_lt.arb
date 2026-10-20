@@ -673,5 +673,9 @@
   "earningsSummaryNote": "DI santrauka apie bendrovės rezultatų paskelbimą ir žiniasklaidos pranešimus, kuriuos jis randa internete. Tai nėra investavimo rekomendacija. Naudoja jūsų dienos klausimų limitą, o ne analizę.",
   "compareLastSurprise": "Paskutinio ketvirčio EPS vs prognozė",
   "compareNextReport": "Kita ataskaita",
-  "resolvingDescription": "Nustatoma, kurią akciją turite omenyje…"
+  "resolvingDescription": "Nustatoma, kurią akciją turite omenyje…",
+  "instrumentTitle": "Apie šį instrumentą",
+  "instrumentHint": "Šiam simboliui nėra įmonės profilio – tai gali būti ETF, fondas arba depozitoriumo pakvitavimas. Paklauskite DI, kas tai, ką jis turi ir kiek kainuoja.",
+  "instrumentAsk": "Kas tai?",
+  "instrumentNote": "DI paaiškinimas pagal emitento fondo puslapį ir finansų svetaines, kurias jis randa internete. Tai nėra investavimo rekomendacija. Naudoja jūsų dienos klausimų limitą, o ne analizę."
 }

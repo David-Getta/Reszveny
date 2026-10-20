@@ -2540,4 +2540,18 @@ class AppLocalizationsCeb extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'Gisusi kung unsa nga stock ang imong gipasabot…';
+
+  @override
+  String get instrumentTitle => 'Bahin niini nga instrumento';
+
+  @override
+  String get instrumentHint =>
+      'Walay profile sa kompanya alang niini nga simbolo – mahimong ETF, fund o depositary receipt kini. Pangutan-a ang AI unsa kini, unsa ang sulod niini ug pila ang gasto niini.';
+
+  @override
+  String get instrumentAsk => 'Unsa kini?';
+
+  @override
+  String get instrumentNote =>
+      'Pagpatin-aw sa AI gikan sa fund page sa nag-isyu ug sa mga financial site nga makit-an niini sa web. Dili kini tambag sa pagpamuhunan. Mogamit kini sa imong adlaw-adlaw nga limitasyon sa pangutana, dili sa pagtuki.';
 }

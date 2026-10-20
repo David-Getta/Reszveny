@@ -673,5 +673,9 @@
   "earningsSummaryNote": "Nchịkọta AI nke ọkwa nsonaazụ ụlọ ọrụ ahụ na akụkọ ndị nta akụkọ ọ chọtara n'ịntanetị. Ọ bụghị ndụmọdụ itinye ego. Ọ na-eji oke ajụjụ gị kwa ụbọchị, ọ bụghị nyocha.",
   "compareLastSurprise": "EPS nkeji gara aga vs. atụrụ anya",
   "compareNextReport": "Akụkọ na-esote",
-  "resolvingDescription": "Na-achọpụta stock ị bu n'uche…"
+  "resolvingDescription": "Na-achọpụta stock ị bu n'uche…",
+  "instrumentTitle": "Maka ngwa ego a",
+  "instrumentHint": "Enweghị profaịlụ ụlọ ọrụ maka akara a – ọ nwere ike ịbụ ETF, fund ma ọ bụ depositary receipt. Jụọ AI ihe ọ bụ, ihe dị n'ime ya na ego ole ọ na-efu.",
+  "instrumentAsk": "Gịnị bụ nke a?",
+  "instrumentNote": "Nkọwa AI sitere na peeji fund nke onye nyere ya na saịtị ego ndị ọ chọtara n'ịntanetị. Ọ bụghị ndụmọdụ itinye ego. Ọ na-eji oke ajụjụ gị kwa ụbọchị, ọ bụghị nyocha."
 }

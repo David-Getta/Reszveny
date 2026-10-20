@@ -673,5 +673,9 @@
   "earningsSummaryNote": "Pakabuklan ti AI iti pakaammo ti resulta ti kompania ken dagiti damag maipapan iti daytoy a nasarakanna iti web. Saan a balakad iti panagpuonan. Agusar daytoy iti inaldaw a limitasion dagiti saludsod-mo, saan nga iti panaganalisa.",
   "compareLastSurprise": "EPS napalabas a kuarter vs. namnamaen",
   "compareNextReport": "Sumaruno a report",
-  "resolvingDescription": "Amammuen no ania a stock ti kayatmo a sawen…"
+  "resolvingDescription": "Amammuen no ania a stock ti kayatmo a sawen…",
+  "instrumentTitle": "Maipapan iti daytoy nga instrumento",
+  "instrumentHint": "Awan ti profile ti kompania para iti daytoy a simbolo – mabalin a ETF, fund wenno depositary receipt daytoy. Saludsodem ti AI no ania daytoy, ania ti linaonna ken mano ti gastosna.",
+  "instrumentAsk": "Ania daytoy?",
+  "instrumentNote": "Panangilawlawag ti AI manipud iti fund page ti nangipaay ken kadagiti financial site a nasarakanna iti web. Saan a balakad iti panagpuonan. Agusar daytoy iti inaldaw a limitasion dagiti saludsod-mo, saan nga iti panaganalisa."
 }

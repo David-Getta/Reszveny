@@ -673,5 +673,9 @@
   "earningsSummaryNote": "Tshobokanyo ya AI ya kitsiso ya dipoelo tsa khampani le dikgang tsa bobegaditaba tse e di bonang mo inthaneteng. Ga se kgakololo ya peeletso. E dirisa tekanyetso ya gago ya dipotso ya letsatsi le letsatsi, e seng tshekatsheko.",
   "compareLastSurprise": "EPS kotara e fetileng vs e solofetsweng",
   "compareNextReport": "Pego e e latelang",
-  "resolvingDescription": "E batla shere e o e kayang…"
+  "resolvingDescription": "E batla shere e o e kayang…",
+  "instrumentTitle": "Ka ga sedirisiwa seno",
+  "instrumentHint": "Ga go na porofaele ya khampani ya letshwao leno – e ka nna ETF, letlole kgotsa setifikeiti sa tipositi. Botsa AI gore ke eng, e tshotse eng le gore e ja bokae.",
+  "instrumentAsk": "Ke eng seno?",
+  "instrumentNote": "Tlhaloso ya AI go tswa mo tsebeng ya letlole ya morekisi le diwebosaete tsa ditšhelete tse e di bonang mo inthaneteng. Ga se kgakololo ya peeletso. E dirisa tekanyetso ya gago ya dipotso ya letsatsi le letsatsi, e seng tshekatsheko."
 }

@@ -2530,4 +2530,18 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Selvitetään, mitä osaketta tarkoitat…';
+
+  @override
+  String get instrumentTitle => 'Tietoa tästä instrumentista';
+
+  @override
+  String get instrumentHint =>
+      'Tälle tunnukselle ei ole yritysprofiilia – kyse voi olla ETF:stä, rahastosta tai talletustodistuksesta. Kysy tekoälyltä, mikä se on, mitä se sisältää ja mitä se maksaa.';
+
+  @override
+  String get instrumentAsk => 'Mikä tämä on?';
+
+  @override
+  String get instrumentNote =>
+      'Tekoälyn selitys liikkeeseenlaskijan rahastosivun ja sen verkosta löytämien taloussivustojen perusteella. Se ei ole sijoitusneuvontaa. Kuluttaa päivittäistä kysymyskiintiötäsi, ei analyysia.';
 }

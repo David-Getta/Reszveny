@@ -673,5 +673,9 @@
   "earningsSummaryNote": "Tekoälyn tiivistelmä yhtiön tulosjulkistuksesta ja sen löytämästä mediauutisoinnista verkossa. Se ei ole sijoitusneuvontaa. Kuluttaa päivittäistä kysymyskiintiötäsi, ei analyysia.",
   "compareLastSurprise": "Edellisen kvartaalin EPS vs. odotettu",
   "compareNextReport": "Seuraava tulosjulkistus",
-  "resolvingDescription": "Selvitetään, mitä osaketta tarkoitat…"
+  "resolvingDescription": "Selvitetään, mitä osaketta tarkoitat…",
+  "instrumentTitle": "Tietoa tästä instrumentista",
+  "instrumentHint": "Tälle tunnukselle ei ole yritysprofiilia – kyse voi olla ETF:stä, rahastosta tai talletustodistuksesta. Kysy tekoälyltä, mikä se on, mitä se sisältää ja mitä se maksaa.",
+  "instrumentAsk": "Mikä tämä on?",
+  "instrumentNote": "Tekoälyn selitys liikkeeseenlaskijan rahastosivun ja sen verkosta löytämien taloussivustojen perusteella. Se ei ole sijoitusneuvontaa. Kuluttaa päivittäistä kysymyskiintiötäsi, ei analyysia."
 }

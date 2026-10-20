@@ -2535,4 +2535,18 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'Qaysi aksiyani nazarda tutganingiz aniqlanmoqda…';
+
+  @override
+  String get instrumentTitle => 'Bu instrument haqida';
+
+  @override
+  String get instrumentHint =>
+      'Bu simvol uchun kompaniya profili yoʻq – bu ETF, fond yoki depozitar tilxat boʻlishi mumkin. AI dan bu nima, tarkibida nima bor va qancha turishini soʻrang.';
+
+  @override
+  String get instrumentAsk => 'Bu nima?';
+
+  @override
+  String get instrumentNote =>
+      'Emitentning fond sahifasi va internetda topgan moliyaviy saytlarga asoslangan AI izohi. Bu investitsiya maslahati emas. Kunlik savollar limitingizdan sarflanadi, tahlil emas.';
 }

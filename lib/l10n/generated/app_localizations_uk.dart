@@ -2599,4 +2599,18 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Визначаємо, яку акцію ви маєте на увазі…';
+
+  @override
+  String get instrumentTitle => 'Про цей інструмент';
+
+  @override
+  String get instrumentHint =>
+      'Для цього символу немає профілю компанії – це може бути ETF, фонд або депозитарна розписка. Запитайте ШІ, що це, що входить до його складу і скільки це коштує.';
+
+  @override
+  String get instrumentAsk => 'Що це?';
+
+  @override
+  String get instrumentNote =>
+      'Пояснення від ШІ на основі сторінки фонду в емітента та фінансових сайтів, які він знаходить в інтернеті. Не є інвестиційною порадою. Витрачається денний ліміт запитань, а не аналіз.';
 }

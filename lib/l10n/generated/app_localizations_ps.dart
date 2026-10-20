@@ -2520,4 +2520,18 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'دا معلومېږي چې ستاسو مطلب کومه ونډه ده…';
+
+  @override
+  String get instrumentTitle => 'د دې وسیلې په اړه';
+
+  @override
+  String get instrumentHint =>
+      'د دې سمبول لپاره د شرکت پروفایل نشته – کېدای شي ETF، فنډ یا د امانت رسید وي. له AI وپوښتئ دا څه دی، څه پکې دي او څومره لګښت لري.';
+
+  @override
+  String get instrumentAsk => 'دا څه دی؟';
+
+  @override
+  String get instrumentNote =>
+      'د خپرونکي د فنډ پاڼې او هغو مالي وېبپاڼو له مخې د AI تشریح چې په وېب کې یې مومي. د پانګونې مشوره نه ده. ستاسو د ورځنیو پوښتنو له حد څخه کمېږي، شننه نه لګوي.';
 }

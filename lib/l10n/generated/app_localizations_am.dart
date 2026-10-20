@@ -2496,4 +2496,18 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'የትኛውን አክሲዮን እንደፈለጉ በመለየት ላይ…';
+
+  @override
+  String get instrumentTitle => 'ስለዚህ መሣሪያ';
+
+  @override
+  String get instrumentHint =>
+      'ለዚህ ምልክት የኩባንያ መገለጫ የለም – ETF፣ ፈንድ ወይም የተቀማጭ ሰርተፊኬት ሊሆን ይችላል። ምን እንደሆነ፣ ምን እንደሚይዝ እና ምን ያህል እንደሚያስወጣ AI ን ይጠይቁ።';
+
+  @override
+  String get instrumentAsk => 'ይህ ምንድን ነው?';
+
+  @override
+  String get instrumentNote =>
+      'ከአውጪው የፈንድ ገጽ እና በድር ላይ ከሚገኙ የፋይናንስ ጣቢያዎች የተገኘ የAI ማብራሪያ። የኢንቨስትመንት ምክር አይደለም። ከዕለታዊ የጥያቄ ገደብዎ ይቆጠራል እንጂ ትንተና አይጠቀምም።';
 }

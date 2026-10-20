@@ -2523,4 +2523,18 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Ina ƴeewa aksiyoŋ mo njiɗ-ɗaa…';
+
+  @override
+  String get instrumentTitle => 'Ko faati e kuutorgal ngal';
+
+  @override
+  String get instrumentHint =>
+      'Alaa humpito sosiyetee e maande ndee – ina waawi wonde ETF, fonndo walla ɗerewol depoo. Naamno AI ko woni ɗum, ko woni e mum e no foti coggu mum.';
+
+  @override
+  String get instrumentAsk => 'Ko woni ɗum?';
+
+  @override
+  String get instrumentNote =>
+      'Faccirde AI ummoraade e hello fonndo yaltinoowo e lowe ngalu ɗe o yiyi e geese. Wonaa wasiya e investisman. Ina huutoroo keerol naamne maa ñalnde kala, wonaa ƴeewndo.';
 }

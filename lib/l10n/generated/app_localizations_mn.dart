@@ -2530,4 +2530,18 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Таны хэлж буй хувьцааг тодорхойлж байна…';
+
+  @override
+  String get instrumentTitle => 'Энэ хэрэглүүрийн тухай';
+
+  @override
+  String get instrumentHint =>
+      'Энэ тэмдэгт компанийн танилцуулга байхгүй – энэ нь ETF, сан эсвэл хадгаламжийн баримт байж болно. Энэ юу вэ, юу агуулдаг вэ, зардал нь хэд вэ гэдгийг AI-аас асуугаарай.';
+
+  @override
+  String get instrumentAsk => 'Энэ юу вэ?';
+
+  @override
+  String get instrumentNote =>
+      'Эмитентийн сангийн хуудас болон вэбээс олсон санхүүгийн сайтуудад тулгуурласан AI тайлбар. Хөрөнгө оруулалтын зөвлөгөө биш. Өдрийн асуултын хязгаараас тань зарцуулна, шинжилгээ биш.';
 }

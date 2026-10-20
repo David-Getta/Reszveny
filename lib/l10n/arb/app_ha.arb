@@ -673,5 +673,9 @@
   "earningsSummaryNote": "Taƙaitaccen bayanin AI na sanarwar sakamakon kamfanin da rahotannin jaridu da ya samu a yanar gizo. Ba shawarar zuba jari ba ne. Yana amfani da iyakar tambayoyinka na yau da kullum, ba nazari ba.",
   "compareLastSurprise": "EPS na kwata ta ƙarshe da tsammani",
   "compareNextReport": "Rahoto na gaba",
-  "resolvingDescription": "Ana gano wane hannun jari kake nufi…"
+  "resolvingDescription": "Ana gano wane hannun jari kake nufi…",
+  "instrumentTitle": "Game da wannan kadara",
+  "instrumentHint": "Babu bayanin kamfani ga wannan alama – yana iya zama ETF, asusu ko takardar shaidar ajiya. Tambayi AI me ne shi, me ke cikinsa da kuma nawa ne kuɗinsa.",
+  "instrumentAsk": "Me ne wannan?",
+  "instrumentNote": "Bayanin AI daga shafin asusun mai bayarwa da shafukan kuɗi da ya samu a yanar gizo. Ba shawarar zuba jari ba ne. Yana amfani da iyakar tambayoyinka na yau da kullum, ba nazari ba."
 }

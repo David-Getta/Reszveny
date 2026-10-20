@@ -673,5 +673,9 @@
   "earningsSummaryNote": "Resumo de IA do anúncio de resultados da empresa e da cobertura da imprensa que encontra na web. Não constitui aconselhamento de investimento. Usa o seu limite diário de perguntas, não uma análise.",
   "compareLastSurprise": "LPA último trimestre vs. esperado",
   "compareNextReport": "Próximo resultado",
-  "resolvingDescription": "A identificar a ação a que se refere…"
+  "resolvingDescription": "A identificar a ação a que se refere…",
+  "instrumentTitle": "Sobre este instrumento",
+  "instrumentHint": "Não há perfil de empresa para este símbolo – pode ser um ETF, um fundo ou um certificado de depósito. Pergunte à IA o que é, o que contém e quanto custa.",
+  "instrumentAsk": "O que é isto?",
+  "instrumentNote": "Explicação de IA a partir da página do fundo do emitente e de sites financeiros que encontra na web. Não constitui aconselhamento de investimento. Usa o seu limite diário de perguntas, não uma análise."
 }

@@ -673,5 +673,9 @@
   "earningsSummaryNote": "AI 概括公司的業績公告，以及在網上找到的傳媒報道。並不構成投資建議。佔用每日提問次數，不消耗分析次數。",
   "compareLastSurprise": "上季每股盈利 vs 預期",
   "compareNextReport": "下次業績公佈",
-  "resolvingDescription": "正在確定你所指的股票…"
+  "resolvingDescription": "正在確定你所指的股票…",
+  "instrumentTitle": "關於此產品",
+  "instrumentHint": "此代號沒有公司資料，可能是 ETF、基金或預託證券。問問 AI 它是甚麼、持有甚麼以及費用多少。",
+  "instrumentAsk": "這是甚麼？",
+  "instrumentNote": "AI 根據發行商的基金頁面以及在網上找到的財經網站作出解釋。並不構成投資建議。佔用每日提問次數，不消耗分析次數。"
 }

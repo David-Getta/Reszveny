@@ -2540,4 +2540,18 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Ifumanisa isabelo othetha ngaso…';
+
+  @override
+  String get instrumentTitle => 'Malunga nesi sixhobo';
+
+  @override
+  String get instrumentHint =>
+      'Akukho profayile yenkampani yolu phawu – inokuba yi-ETF, ingxowa-mali okanye isatifikethi sedipozithi. Buza i-AI ukuba yintoni, iqulethe ntoni nokuba ixabisa kangakanani.';
+
+  @override
+  String get instrumentAsk => 'Yintoni le?';
+
+  @override
+  String get instrumentNote =>
+      'Ingcaciso ye-AI esuka kwiphepha lengxowa-mali lomkhuphi nakwiisayithi zezemali ezifumana kwiwebhu. Ayilocebiso lotyalo-mali. Sisebenzisa umda wakho wemibuzo wemihla ngemihla, hayi uhlalutyo.';
 }

@@ -2530,4 +2530,18 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Определяме коя акция имате предвид…';
+
+  @override
+  String get instrumentTitle => 'За този инструмент';
+
+  @override
+  String get instrumentHint =>
+      'За този символ няма фирмен профил – може да е ETF, фонд или депозитарна разписка. Попитайте AI какво е, какво съдържа и колко струва.';
+
+  @override
+  String get instrumentAsk => 'Какво е това?';
+
+  @override
+  String get instrumentNote =>
+      'Обяснение от AI по страницата на фонда при емитента и финансови сайтове, които намира в интернет. Не представлява инвестиционен съвет. Използва дневния ви лимит за въпроси, не анализ.';
 }

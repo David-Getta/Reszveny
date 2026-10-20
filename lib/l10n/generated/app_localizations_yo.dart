@@ -2527,4 +2527,18 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'À ń wá ìpín tí o ní lọ́kàn…';
+
+  @override
+  String get instrumentTitle => 'Nípa ohun èlò ìdókòwò yìí';
+
+  @override
+  String get instrumentHint =>
+      'Kò sí ìwé ìdánimọ̀ ilé-iṣẹ́ fún àmì yìí – ó lè jẹ́ ETF, owó-ìkójọpọ̀ tàbí ìwé-ẹ̀rí ìfowópamọ́. Béèrè lọ́wọ́ AI kí ni, kí ló wà nínú rẹ̀ àti iye tí ó ná.';
+
+  @override
+  String get instrumentAsk => 'Kí nìyí?';
+
+  @override
+  String get instrumentNote =>
+      'Àlàyé AI láti ojú-ìwé owó-ìkójọpọ̀ ti olùpèsè àti àwọn ojú-òpó ètò ìnáwó tí ó rí lórí ayélujára. Kì í ṣe ìmọ̀ràn ìdókòwò. Ó ń lo ìwọ̀n ìbéèrè ojoojúmọ́ rẹ, kì í ṣe ìtúpalẹ̀.';
 }

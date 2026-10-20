@@ -2529,4 +2529,18 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get resolvingDescription => 'Finner ut hvilken aksje du mener…';
+
+  @override
+  String get instrumentTitle => 'Om dette instrumentet';
+
+  @override
+  String get instrumentHint =>
+      'Det finnes ingen selskapsprofil for dette symbolet – det kan være et ETF, et fond eller et depotbevis. Spør AI-en hva det er, hva det inneholder og hva det koster.';
+
+  @override
+  String get instrumentAsk => 'Hva er dette?';
+
+  @override
+  String get instrumentNote =>
+      'AI-forklaring basert på utstederens fondsside og finanssider den finner på nettet. Det er ikke investeringsråd. Bruker av den daglige spørsmålskvoten din, ikke en analyse.';
 }

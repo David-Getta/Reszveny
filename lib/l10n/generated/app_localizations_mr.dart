@@ -2529,4 +2529,18 @@ class AppLocalizationsMr extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'तुम्हाला कोणता शेअर म्हणायचा आहे ते शोधत आहोत…';
+
+  @override
+  String get instrumentTitle => 'या इन्स्ट्रुमेंटबद्दल';
+
+  @override
+  String get instrumentHint =>
+      'या सिंबलसाठी कंपनी प्रोफाइल नाही – हे ETF, फंड किंवा डिपॉझिटरी रिसीट असू शकते. हे काय आहे, यात काय आहे आणि याचा खर्च किती आहे, हे AI ला विचारा.';
+
+  @override
+  String get instrumentAsk => 'हे काय आहे?';
+
+  @override
+  String get instrumentNote =>
+      'जारीकर्त्याच्या फंड पेजवरून आणि वेबवर मिळालेल्या आर्थिक साइट्सवरून AI चे स्पष्टीकरण. हा गुंतवणूक सल्ला नाही. हे तुमच्या दैनिक प्रश्न-मर्यादेतून जाते, कोणतेही विश्लेषण खर्च होत नाही.';
 }

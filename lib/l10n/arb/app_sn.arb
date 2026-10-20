@@ -673,5 +673,9 @@
   "earningsSummaryNote": "Pfupiso yeAI yechiziviso chemhedzisiro yekambani nenhau dzemapepanhau dzainowana painternet. Haisi zano rekuisa mari. Inoshandisa muganhu wako wemibvunzo wezuva nezuva, kwete ongororo.",
   "compareLastSurprise": "EPS yekota yapfuura vs inotarisirwa",
   "compareNextReport": "Chirevo chinotevera",
-  "resolvingDescription": "Kutsvaga sheya yauri kureva…"
+  "resolvingDescription": "Kutsvaga sheya yauri kureva…",
+  "instrumentTitle": "Nezvechishandiso ichi",
+  "instrumentHint": "Hapana ruzivo rwekambani rwechiratidzo ichi – chinogona kuva ETF, homwe yemari kana gwaro redhipoziti. Bvunza AI kuti chii, chine chii mukati uye chinodhura zvakadii.",
+  "instrumentAsk": "Ichi chii?",
+  "instrumentNote": "Tsananguro yeAI kubva papeji yehomwe yemari yemubudisi nemasaiti emari ainowana painternet. Haisi zano rekuisa mari. Inoshandisa muganhu wako wemibvunzo wezuva nezuva, kwete ongororo."
 }

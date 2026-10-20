@@ -2529,4 +2529,18 @@ class AppLocalizationsTr extends AppLocalizations {
   @override
   String get resolvingDescription =>
       'Hangi hisseyi kastettiğiniz belirleniyor…';
+
+  @override
+  String get instrumentTitle => 'Bu enstrüman hakkında';
+
+  @override
+  String get instrumentHint =>
+      'Bu sembol için şirket profili yok – bir ETF, fon veya depo sertifikası olabilir. Yapay zekâya ne olduğunu, neleri içerdiğini ve maliyetini sor.';
+
+  @override
+  String get instrumentAsk => 'Bu nedir?';
+
+  @override
+  String get instrumentNote =>
+      'İhraççının fon sayfası ve web’de bulduğu finans sitelerine dayanan yapay zekâ açıklaması. Yatırım tavsiyesi değildir. Günlük soru hakkından düşer, analiz hakkı kullanmaz.';
 }
