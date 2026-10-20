@@ -2525,4 +2525,13 @@ class AppLocalizationsSn extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Pfupiso yeAI yechiziviso chemhedzisiro yekambani nenhau dzemapepanhau dzainowana painternet. Haisi zano rekuisa mari. Inoshandisa muganhu wako wemibvunzo wezuva nezuva, kwete ongororo.';
+
+  @override
+  String get compareLastSurprise => 'EPS yekota yapfuura vs inotarisirwa';
+
+  @override
+  String get compareNextReport => 'Chirevo chinotevera';
+
+  @override
+  String get resolvingDescription => 'Kutsvaga sheya yauri kureva…';
 }

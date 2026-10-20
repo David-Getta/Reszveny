@@ -670,5 +670,8 @@
   "sourceMajorNews": "Médiya bu mag",
   "sourceOpinion": "Xalaat",
   "earningsSummaryButton": "Lan moo nekkoon ci rapoor bu mujj bi?",
-  "earningsSummaryNote": "Gàttal bu AI defar ci yégle njureefu sosete bi ak li jaaynde yi bind ci, mu gis ko ci web bi. Du ndigal ci dugal xaalis. Dafay jëfandikoo sa limu laaj yu bés bu nekk, du xayma."
+  "earningsSummaryNote": "Gàttal bu AI defar ci yégle njureefu sosete bi ak li jaaynde yi bind ci, mu gis ko ci web bi. Du ndigal ci dugal xaalis. Dafay jëfandikoo sa limu laaj yu bés bu nekk, du xayma.",
+  "compareLastSurprise": "EPS bu mujj vs bi ñu séentu",
+  "compareNextReport": "Njureef bi ci topp",
+  "resolvingDescription": "Ñu ngi wut aksiyoŋ bi nga bëgg a wax…"
 }

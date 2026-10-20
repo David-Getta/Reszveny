@@ -2528,4 +2528,14 @@ class AppLocalizationsOm extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Cuunfaa AI beeksisa bu\'aa dhaabbatichaa fi gabaasa miidiyaa interneetii irratti argatuu. Gorsa invastimantii miti. Daangaa gaaffii guyyaa kee fayyadama, xiinxala miti.';
+
+  @override
+  String get compareLastSurprise => 'EPS kurmaana darbe vs eegame';
+
+  @override
+  String get compareNextReport => 'Gabaasa itti aanu';
+
+  @override
+  String get resolvingDescription =>
+      'Aksiyoona ati jechuu barbaadde adda baafamaa jira…';
 }

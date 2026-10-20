@@ -2530,4 +2530,14 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Résumé par IA de la publication des résultats de l’entreprise et de la couverture médiatique trouvée sur le web. Ne constitue pas un conseil en investissement. Utilise votre quota quotidien de questions, pas une analyse.';
+
+  @override
+  String get compareLastSurprise => 'BPA dernier trimestre vs attendu';
+
+  @override
+  String get compareNextReport => 'Prochaine publication';
+
+  @override
+  String get resolvingDescription =>
+      'Identification de l\'action que vous recherchez…';
 }

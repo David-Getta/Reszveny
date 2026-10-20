@@ -2534,4 +2534,13 @@ class AppLocalizationsSt extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Kakaretso ya AI ya phatlalatso ya diphetho tsa khampani le ditaba tsa boralitaba tseo e di fumanang inthaneteng. Hase keletso ya ho tsetela. E sebedisa moedi wa hao wa dipotso wa letsatsi le letsatsi, eseng manollo.';
+
+  @override
+  String get compareLastSurprise => 'EPS e fetileng vs e lebelletsweng';
+
+  @override
+  String get compareNextReport => 'Tlaleho e latelang';
+
+  @override
+  String get resolvingDescription => 'E batla shere eo o e bolelang…';
 }

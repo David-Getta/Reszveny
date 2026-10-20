@@ -670,5 +670,8 @@
   "sourceMajorNews": "Media utama",
   "sourceOpinion": "Pendapat",
   "earningsSummaryButton": "Apakah isi laporan terkini?",
-  "earningsSummaryNote": "Ringkasan AI tentang pengumuman keputusan syarikat dan liputan media yang ditemuinya di web. Bukan nasihat pelaburan. Menggunakan had soalan harian anda, bukan analisis."
+  "earningsSummaryNote": "Ringkasan AI tentang pengumuman keputusan syarikat dan liputan media yang ditemuinya di web. Bukan nasihat pelaburan. Menggunakan had soalan harian anda, bukan analisis.",
+  "compareLastSurprise": "EPS suku terakhir vs. dijangka",
+  "compareNextReport": "Laporan seterusnya",
+  "resolvingDescription": "Mengenal pasti saham yang anda maksudkan…"
 }

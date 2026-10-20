@@ -2517,4 +2517,13 @@ class AppLocalizationsSi extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'සමාගමේ ප්‍රතිඵල නිවේදනය සහ වෙබයේ සොයාගන්නා මාධ්‍ය වාර්තා පිළිබඳ AI සාරාංශයකි. එය ආයෝජන උපදෙසක් නොවේ. මෙය ඔබේ දෛනික ප්‍රශ්න සීමාවෙන් යයි, විශ්ලේෂණයක් භාවිත නොකරයි.';
+
+  @override
+  String get compareLastSurprise => 'පසුගිය කාර්තු EPS vs අපේක්ෂිත';
+
+  @override
+  String get compareNextReport => 'ඊළඟ වාර්තාව';
+
+  @override
+  String get resolvingDescription => 'ඔබ අදහස් කරන කොටස කුමක්දැයි සොයමින්…';
 }

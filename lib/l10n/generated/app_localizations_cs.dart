@@ -2582,4 +2582,13 @@ class AppLocalizationsCs extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Shrnutí od AI: oznámení výsledků společnosti a mediální ohlasy, které najde na webu. Není investičním doporučením. Čerpá z vašeho denního limitu otázek, nespotřebuje analýzu.';
+
+  @override
+  String get compareLastSurprise => 'EPS za poslední kvartál vs. očekávání';
+
+  @override
+  String get compareNextReport => 'Další zpráva';
+
+  @override
+  String get resolvingDescription => 'Zjišťuji, kterou akcii máte na mysli…';
 }

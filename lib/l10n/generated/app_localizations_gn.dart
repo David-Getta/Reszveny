@@ -2525,4 +2525,13 @@ class AppLocalizationsGn extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'AI ombyky pe empresa resultado ñemomarandu ha umi kuatiañeʼẽ marandu otopáva ñandutípe. Ndahaʼéi ñemoñeʼẽ inversión rehegua. Oipuru ne porandu papapy ára ha ára guarã, ndaha’éi jehesa’ỹijo.';
+
+  @override
+  String get compareLastSurprise => 'EPS ohasavaʼekue vs. oñehaʼarõva';
+
+  @override
+  String get compareNextReport => 'Informe oúva';
+
+  @override
+  String get resolvingDescription => 'Ohekahína acción ereséva…';
 }

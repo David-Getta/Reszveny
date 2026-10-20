@@ -2520,4 +2520,14 @@ class AppLocalizationsTk extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Kompaniýanyň netijeler baradaky beýannamasynyň we internetde tapan metbugat habarlarynyň AI gysgaça mazmuny. Maýa goýum maslahaty däldir. Gündelik sorag çägiňizden harçlanýar, seljerme däl.';
+
+  @override
+  String get compareLastSurprise => 'Soňky çärýek EPS vs garaşylýan';
+
+  @override
+  String get compareNextReport => 'Indiki hasabat';
+
+  @override
+  String get resolvingDescription =>
+      'Haýsy paýnamany göz öňünde tutýandygyňyz kesgitlenýär…';
 }

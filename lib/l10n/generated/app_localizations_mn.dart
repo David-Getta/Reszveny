@@ -2521,4 +2521,13 @@ class AppLocalizationsMn extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Компанийн үр дүнгийн мэдэгдэл болон вэбээс олсон хэвлэлийн мэдээний AI хураангуй. Хөрөнгө оруулалтын зөвлөгөө биш. Өдрийн асуултын хязгаараас тань зарцуулна, шинжилгээ биш.';
+
+  @override
+  String get compareLastSurprise => 'Сүүлийн улирлын EPS vs хүлээлт';
+
+  @override
+  String get compareNextReport => 'Дараагийн тайлан';
+
+  @override
+  String get resolvingDescription => 'Таны хэлж буй хувьцааг тодорхойлж байна…';
 }

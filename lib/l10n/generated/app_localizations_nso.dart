@@ -2536,4 +2536,13 @@ class AppLocalizationsNso extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Kakaretšo ya AI ya kgoeletšo ya dipoelo tša khamphani le ditaba tša kgatišo tšeo e di hwetšago wepeng. Ga se keletšo ya peeletšo. E diriša moedi wa gago wa dipotšišo wa letšatši le letšatši, e sego tshekatsheko.';
+
+  @override
+  String get compareLastSurprise => 'EPS kotara ya go feta vs e letetšwego';
+
+  @override
+  String get compareNextReport => 'Pego ye e latelago';
+
+  @override
+  String get resolvingDescription => 'E lemoga šere yeo o e bolelago…';
 }

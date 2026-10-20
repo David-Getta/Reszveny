@@ -2520,4 +2520,14 @@ class AppLocalizationsKa extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'AI-ის შეჯამება კომპანიის შედეგების განცხადებისა და ინტერნეტში ნაპოვნი მედიაგაშუქების შესახებ. არ წარმოადგენს საინვესტიციო რჩევას. იყენებს თქვენს დღიურ კითხვების ლიმიტს და არა ანალიზს.';
+
+  @override
+  String get compareLastSurprise => 'ბოლო კვარტლის EPS vs მოსალოდნელი';
+
+  @override
+  String get compareNextReport => 'შემდეგი ანგარიში';
+
+  @override
+  String get resolvingDescription =>
+      'მიმდინარეობს იმის დადგენა, რომელ აქციას გულისხმობთ…';
 }

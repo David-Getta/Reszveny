@@ -670,5 +670,8 @@
   "sourceMajorNews": "Groot medium",
   "sourceOpinion": "Opinie",
   "earningsSummaryButton": "Wat stond er in het laatste rapport?",
-  "earningsSummaryNote": "AI-samenvatting van de resultatenpublicatie van het bedrijf en de berichtgeving die het op het web vindt. Dit is geen beleggingsadvies. Gebruikt je dagelijkse vragentegoed, geen analyse."
+  "earningsSummaryNote": "AI-samenvatting van de resultatenpublicatie van het bedrijf en de berichtgeving die het op het web vindt. Dit is geen beleggingsadvies. Gebruikt je dagelijkse vragentegoed, geen analyse.",
+  "compareLastSurprise": "EPS laatste kwartaal vs. verwacht",
+  "compareNextReport": "Volgende cijfers",
+  "resolvingDescription": "Bepalen welk aandeel je bedoelt…"
 }

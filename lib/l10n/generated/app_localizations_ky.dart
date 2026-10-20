@@ -2523,4 +2523,14 @@ class AppLocalizationsKy extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Компаниянын натыйжалар тууралуу билдирүүсүнүн жана интернеттен тапкан басма сөз материалдарынын AI корутундусу. Инвестициялык кеңеш эмес. Күнүмдүк суроолор чегиңизден сарпталат, талдоо эмес.';
+
+  @override
+  String get compareLastSurprise => 'Акыркы чейрек EPS vs күтүлгөн';
+
+  @override
+  String get compareNextReport => 'Кийинки отчет';
+
+  @override
+  String get resolvingDescription =>
+      'Кайсы акцияны айтып жатканыңыз аныкталууда…';
 }

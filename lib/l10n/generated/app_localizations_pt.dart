@@ -2525,4 +2525,13 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Resumo de IA do anúncio de resultados da empresa e da cobertura da imprensa que encontra na web. Não constitui aconselhamento de investimento. Usa o seu limite diário de perguntas, não uma análise.';
+
+  @override
+  String get compareLastSurprise => 'LPA último trimestre vs. esperado';
+
+  @override
+  String get compareNextReport => 'Próximo resultado';
+
+  @override
+  String get resolvingDescription => 'A identificar a ação a que se refere…';
 }

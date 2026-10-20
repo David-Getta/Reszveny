@@ -670,5 +670,8 @@
   "sourceMajorNews": "Lumu lunene",
   "sourceOpinion": "Meji",
   "earningsSummaryButton": "Tshivua mu lapolo wa ndekelu ntshinyi?",
-  "earningsSummaryNote": "Diumvuija dikese dia AI dia dimanyisha dia mapeta a kompani ne dia malu adi bijadiki bifunde, adi dipeta ku Internet. Kadiena mibelu ya kuteka mfranga. Bidi bienzeja mukalu wa nkonko yebe ya dituku dionso, kabiyi dikonkonona."
+  "earningsSummaryNote": "Diumvuija dikese dia AI dia dimanyisha dia mapeta a kompani ne dia malu adi bijadiki bifunde, adi dipeta ku Internet. Kadiena mibelu ya kuteka mfranga. Bidi bienzeja mukalu wa nkonko yebe ya dituku dionso, kabiyi dikonkonona.",
+  "compareLastSurprise": "EPS wa trimestre mushale vs batekemene",
+  "compareNextReport": "Rapport udi ulonda",
+  "resolvingDescription": "Tudi tukeba action yudi wamba…"
 }

@@ -2517,4 +2517,14 @@ class AppLocalizationsOr extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'କମ୍ପାନୀର ଫଳାଫଳ ଘୋଷଣା ଏବଂ ୱେବରେ ମିଳୁଥିବା ଗଣମାଧ୍ୟମ ଖବରର AI ସାରାଂଶ। ଏହା ନିବେଶ ପରାମର୍ଶ ନୁହେଁ। ଏହା ଆପଣଙ୍କ ଦୈନିକ ପ୍ରଶ୍ନ ସୀମାରୁ ଯାଏ, କୌଣସି ବିଶ୍ଳେଷଣ ଖର୍ଚ୍ଚ ହୁଏ ନାହିଁ।';
+
+  @override
+  String get compareLastSurprise => 'ଗତ ତ୍ରୈମାସିକ EPS ବନାମ ପ୍ରତ୍ୟାଶିତ';
+
+  @override
+  String get compareNextReport => 'ପରବର୍ତ୍ତୀ ରିପୋର୍ଟ';
+
+  @override
+  String get resolvingDescription =>
+      'ଆପଣ କେଉଁ ସେୟାର କହୁଛନ୍ତି ତାହା ଚିହ୍ନଟ କରାଯାଉଛି…';
 }

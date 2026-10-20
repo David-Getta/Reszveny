@@ -2537,4 +2537,14 @@ class AppLocalizationsMg extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Famintinana avy amin’ny AI momba ny fanambaran’ny orinasa ny vokany sy ny lahatsoratry ny mpanao gazety hitany ao amin’ny tranonkala. Tsy torohevitra momba ny fampiasam-bola. Mampiasa ny fetran’ny fanontanianao isan’andro izy, fa tsy famakafakana.';
+
+  @override
+  String get compareLastSurprise => 'EPS telovolana farany vs notombanana';
+
+  @override
+  String get compareNextReport => 'Tatitra manaraka';
+
+  @override
+  String get resolvingDescription =>
+      'Mamantatra hoe inona ny aksiona tianao holazaina…';
 }

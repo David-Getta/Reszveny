@@ -2521,4 +2521,13 @@ class AppLocalizationsCkb extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'پوختەی AI بۆ ڕاگەیاندنی ئەنجامەکانی کۆمپانیاکە و ئەو هەواڵانەی ڕۆژنامەگەری کە لە وێبدا دەیاندۆزێتەوە. ئامۆژگاریی وەبەرهێنان نییە. لە سنووری پرسیارە ڕۆژانەکانت دەبرێت، شیکاری بەکارناهێنێت.';
+
+  @override
+  String get compareLastSurprise => 'EPSی چارەکی کۆتایی بەرامبەر چاوەڕوانکراو';
+
+  @override
+  String get compareNextReport => 'ڕاپۆرتی داهاتوو';
+
+  @override
+  String get resolvingDescription => 'ئەو پشکەی مەبەستتە دیاری دەکرێت…';
 }

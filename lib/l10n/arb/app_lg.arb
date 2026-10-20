@@ -670,5 +670,8 @@
   "sourceMajorNews": "Omukutu omunene",
   "sourceOpinion": "Endowooza",
   "earningsSummaryButton": "Kiki ekyali mu lipoota esembyeyo?",
-  "earningsSummaryNote": "Mu bufunze okuva mu AI ku birango by'ebivudde mu kkampuni n'amawulire g'empapula g'esanga ku mukutu. Si magezi ga kusiga nsimbi. Kikozesa kkomo ly’ebibuuzo byo erya buli lunaku, so si kwekenneenya."
+  "earningsSummaryNote": "Mu bufunze okuva mu AI ku birango by'ebivudde mu kkampuni n'amawulire g'empapula g'esanga ku mukutu. Si magezi ga kusiga nsimbi. Kikozesa kkomo ly’ebibuuzo byo erya buli lunaku, so si kwekenneenya.",
+  "compareLastSurprise": "EPS ey'ekitundu ekyayita vs esuubirwa",
+  "compareNextReport": "Lipoota eddako",
+  "resolvingDescription": "Tuzuula mugabo gw'otegeeza…"
 }

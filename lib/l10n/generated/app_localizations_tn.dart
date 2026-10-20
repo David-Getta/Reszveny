@@ -2538,4 +2538,13 @@ class AppLocalizationsTn extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Tshobokanyo ya AI ya kitsiso ya dipoelo tsa khampani le dikgang tsa bobegaditaba tse e di bonang mo inthaneteng. Ga se kgakololo ya peeletso. E dirisa tekanyetso ya gago ya dipotso ya letsatsi le letsatsi, e seng tshekatsheko.';
+
+  @override
+  String get compareLastSurprise => 'EPS kotara e fetileng vs e solofetsweng';
+
+  @override
+  String get compareNextReport => 'Pego e e latelang';
+
+  @override
+  String get resolvingDescription => 'E batla shere e o e kayang…';
 }

@@ -2534,4 +2534,14 @@ class AppLocalizationsQu extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Empresaq resultadonkunata willakusqanmanta, webpi tarisqan willakuykunamantawan AI pisichasqa. Manan qullqi churanapaq yuyaychaychu. Sapa p’unchay tapukuy limitiykita apaykachan, manan t’aqwiytachu.';
+
+  @override
+  String get compareLastSurprise => 'Qayna kimsa killa EPS vs suyakusqa';
+
+  @override
+  String get compareNextReport => 'Qatiq willakuy';
+
+  @override
+  String get resolvingDescription =>
+      'Mayqin accionta ninki chayta maskhachkan…';
 }

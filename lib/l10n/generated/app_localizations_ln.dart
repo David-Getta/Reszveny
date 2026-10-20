@@ -2531,4 +2531,13 @@ class AppLocalizationsLn extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Bokuse ya AI ya liyebisi ya ba résultats ya kompani mpe ya mikanda ya bapanzi-nsango oyo ezwi na Internet. Ezali toli ya kotia mbɔngɔ te. Esalelaka ndelo ya mituna na yo ya mokolo na mokolo, kasi botaleli te.';
+
+  @override
+  String get compareLastSurprise => 'EPS ya trimestre eleki vs oyo ezelamaki';
+
+  @override
+  String get compareNextReport => 'Rapport oyo ekoya';
+
+  @override
+  String get resolvingDescription => 'Ezali koluka action oyo olingi koloba…';
 }

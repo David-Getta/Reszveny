@@ -2450,4 +2450,13 @@ class AppLocalizationsKo extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       '회사의 실적 발표와 웹에서 찾은 언론 보도를 AI가 요약합니다. 투자 조언이 아닙니다. 분석 횟수가 아닌 하루 질문 한도가 사용됩니다.';
+
+  @override
+  String get compareLastSurprise => '지난 분기 EPS vs 예상';
+
+  @override
+  String get compareNextReport => '다음 실적 발표';
+
+  @override
+  String get resolvingDescription => '어떤 종목인지 확인 중…';
 }

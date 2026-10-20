@@ -2530,4 +2530,14 @@ class AppLocalizationsMl extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'കമ്പനിയുടെ ഫല പ്രഖ്യാപനത്തിന്റെയും വെബിൽ കണ്ടെത്തുന്ന മാധ്യമ റിപ്പോർട്ടുകളുടെയും AI സംഗ്രഹം. ഇത് നിക്ഷേപ ഉപദേശമല്ല. ഇത് നിങ്ങളുടെ ദൈനംദിന ചോദ്യ പരിധിയിൽ നിന്നാണ്, വിശകലനം ഉപയോഗിക്കില്ല.';
+
+  @override
+  String get compareLastSurprise => 'കഴിഞ്ഞ പാദ EPS vs പ്രതീക്ഷിച്ചത്';
+
+  @override
+  String get compareNextReport => 'അടുത്ത റിപ്പോർട്ട്';
+
+  @override
+  String get resolvingDescription =>
+      'നിങ്ങൾ ഉദ്ദേശിക്കുന്ന ഓഹരി ഏതാണെന്ന് കണ്ടെത്തുന്നു…';
 }

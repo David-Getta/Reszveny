@@ -2559,4 +2559,14 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Rezumat generat de AI al anunțului de rezultate al companiei și al relatărilor din presă pe care le găsește pe web. Nu reprezintă un sfat de investiții. Folosește limita ta zilnică de întrebări, nu o analiză.';
+
+  @override
+  String get compareLastSurprise => 'EPS ultimul trimestru vs. așteptat';
+
+  @override
+  String get compareNextReport => 'Următorul raport';
+
+  @override
+  String get resolvingDescription =>
+      'Se identifică acțiunea la care te referi…';
 }

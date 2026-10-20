@@ -2525,4 +2525,14 @@ class AppLocalizationsTe extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'కంపెనీ ఫలితాల ప్రకటన, వెబ్‌లో దొరికే మీడియా కథనాల AI సారాంశం. ఇది పెట్టుబడి సలహా కాదు. ఇది మీ రోజువారీ ప్రశ్నల పరిమితి నుంచి వెళ్తుంది, ఎలాంటి విశ్లేషణనూ వాడదు.';
+
+  @override
+  String get compareLastSurprise => 'గత త్రైమాసిక EPS vs అంచనా';
+
+  @override
+  String get compareNextReport => 'తదుపరి నివేదిక';
+
+  @override
+  String get resolvingDescription =>
+      'మీరు ఏ స్టాక్ గురించి చెబుతున్నారో గుర్తిస్తున్నాం…';
 }

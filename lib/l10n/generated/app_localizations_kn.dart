@@ -2526,4 +2526,14 @@ class AppLocalizationsKn extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'ಕಂಪನಿಯ ಫಲಿತಾಂಶ ಪ್ರಕಟಣೆ ಮತ್ತು ವೆಬ್‌ನಲ್ಲಿ ಸಿಗುವ ಮಾಧ್ಯಮ ವರದಿಗಳ AI ಸಾರಾಂಶ. ಇದು ಹೂಡಿಕೆ ಸಲಹೆಯಲ್ಲ. ಇದು ನಿಮ್ಮ ದೈನಂದಿನ ಪ್ರಶ್ನೆ ಮಿತಿಯನ್ನು ಬಳಸುತ್ತದೆ, ವಿಶ್ಲೇಷಣೆಯನ್ನಲ್ಲ.';
+
+  @override
+  String get compareLastSurprise => 'ಕಳೆದ ತ್ರೈಮಾಸಿಕ EPS vs ನಿರೀಕ್ಷಿತ';
+
+  @override
+  String get compareNextReport => 'ಮುಂದಿನ ವರದಿ';
+
+  @override
+  String get resolvingDescription =>
+      'ನೀವು ಯಾವ ಷೇರನ್ನು ಉದ್ದೇಶಿಸಿದ್ದೀರಿ ಎಂದು ಗುರುತಿಸಲಾಗುತ್ತಿದೆ…';
 }

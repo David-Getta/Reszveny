@@ -2528,4 +2528,14 @@ class AppLocalizationsSo extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Soo koobid AI ah oo ku saabsan ku dhawaaqista natiijooyinka shirkadda iyo warbixinnada warbaahinta ee ay ka hesho shabakadda. Ma aha talo maalgashi. Waxay isticmaashaa xadka su’aalahaaga maalinlaha ah, ma aha falanqayn.';
+
+  @override
+  String get compareLastSurprise => 'EPS rubucii u dambeeyay vs la filayo';
+
+  @override
+  String get compareNextReport => 'Warbixinta xigta';
+
+  @override
+  String get resolvingDescription =>
+      'Waxaa la ogaanayaa saamiga aad ula jeeddo…';
 }

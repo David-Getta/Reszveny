@@ -2521,4 +2521,14 @@ class AppLocalizationsTg extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Хулосаи AI аз эълони натиҷаҳои ширкат ва хабарҳои матбуот, ки дар интернет пайдо мекунад. Маслиҳати сармоягузорӣ нест. Аз ҳадди саволҳои ҳаррӯзаи шумо сарф мешавад, на таҳлил.';
+
+  @override
+  String get compareLastSurprise => 'EPS-и семоҳаи охир vs пешбинӣ';
+
+  @override
+  String get compareNextReport => 'Ҳисоботи навбатӣ';
+
+  @override
+  String get resolvingDescription =>
+      'Муайян карда мешавад, ки шумо кадом саҳмияро дар назар доред…';
 }

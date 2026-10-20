@@ -50,6 +50,7 @@ import 'features/portfolio/portfolio_store.dart';
 import 'features/portfolio/portfolio_valuation.dart';
 import 'features/sync/sync_service.dart';
 import 'features/recognition/claude_vision_recognizer.dart';
+import 'features/recognition/description_resolver.dart';
 import 'features/recognition/stock_recognizer.dart';
 import 'features/updates/update_service.dart';
 import 'l10n/generated/app_localizations.dart';
@@ -85,6 +86,7 @@ class AppServices {
     HoldingsReader? holdingsReader,
     NewsExplainer? newsExplainer,
     EarningsSummarizer? earningsSummarizer,
+    DescriptionResolver? descriptionResolver,
   }) : fx = fx ?? FxService(),
        updates = updates ?? UpdateService(config: config),
        portfolio = portfolio ?? PortfolioStore(),
@@ -97,6 +99,7 @@ class AppServices {
        holdingsReader = holdingsReader ?? HoldingsReader(config: config, client: backend?.authenticated),
        newsExplainer = newsExplainer ?? NewsExplainer(config: config, client: backend?.authenticated),
        earningsSummarizer = earningsSummarizer ?? EarningsSummarizer(config: config, client: backend?.authenticated),
+       descriptionResolver = descriptionResolver ?? DescriptionResolver(config: config, client: backend?.authenticated),
        telemetry = telemetry ?? Telemetry(preferences: preferences, sink: backend?.sendTelemetry) {
     this.telemetry.versionOf ??= () => this.updates.currentVersion;
     events = EventsService(
@@ -293,6 +296,9 @@ class AppServices {
 
   /// „Mi volt a legutóbbi gyorsjelentésben?” – AI-összefoglaló webes forrásokkal.
   final EarningsSummarizer earningsSummarizer;
+
+  /// Szöveges leírás („tech 100 etf”) → részvény vagy ETF, ha a kereső nem találja.
+  final DescriptionResolver descriptionResolver;
 
   /// Saját jegyzetek részvényenként (csak a készüléken).
   final NotesStore notes;

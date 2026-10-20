@@ -2487,4 +2487,13 @@ class AppLocalizationsAm extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'የኩባንያው የውጤት ማስታወቂያ እና በድር ላይ የሚያገኘው የሚዲያ ዘገባ የAI ማጠቃለያ። የኢንቨስትመንት ምክር አይደለም። ከዕለታዊ የጥያቄ ገደብዎ ይቆጠራል እንጂ ትንተና አይጠቀምም።';
+
+  @override
+  String get compareLastSurprise => 'የመጨረሻው ሩብ ዓመት EPS ከተጠበቀው ጋር';
+
+  @override
+  String get compareNextReport => 'ቀጣይ ሪፖርት';
+
+  @override
+  String get resolvingDescription => 'የትኛውን አክሲዮን እንደፈለጉ በመለየት ላይ…';
 }

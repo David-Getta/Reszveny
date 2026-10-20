@@ -2566,4 +2566,13 @@ class AppLocalizationsSr extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Сажетак вештачке интелигенције о објави резултата компаније и медијским написима које проналази на интернету. Не представља инвестициони савет. Троши ваше дневно ограничење питања, не анализу.';
+
+  @override
+  String get compareLastSurprise => 'EPS последњи квартал vs. очекивани';
+
+  @override
+  String get compareNextReport => 'Следећи извештај';
+
+  @override
+  String get resolvingDescription => 'Утврђујемо на коју акцију мислите…';
 }

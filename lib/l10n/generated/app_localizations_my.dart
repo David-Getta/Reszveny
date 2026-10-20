@@ -2511,4 +2511,13 @@ class AppLocalizationsMy extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'ကုမ္ပဏီ၏ ရလဒ်ထုတ်ပြန်ချက်နှင့် ဝဘ်ပေါ်တွင် တွေ့ရှိသော သတင်းဖော်ပြချက်များကို AI ဖြင့် အနှစ်ချုပ်ထားခြင်း။ ရင်းနှီးမြှုပ်နှံမှု အကြံပြုချက် မဟုတ်ပါ။ နေ့စဉ် မေးခွန်းကန့်သတ်ချက်မှ သုံးပြီး ခွဲခြမ်းစိတ်ဖြာမှု မသုံးပါ။';
+
+  @override
+  String get compareLastSurprise => 'ပြီးခဲ့သော သုံးလပတ် EPS နှင့် မျှော်မှန်း';
+
+  @override
+  String get compareNextReport => 'နောက် အစီရင်ခံစာ';
+
+  @override
+  String get resolvingDescription => 'သင်ဆိုလိုသော ရှယ်ယာကို ရှာဖွေနေသည်…';
 }

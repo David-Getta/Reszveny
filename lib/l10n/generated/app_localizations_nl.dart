@@ -2524,4 +2524,13 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'AI-samenvatting van de resultatenpublicatie van het bedrijf en de berichtgeving die het op het web vindt. Dit is geen beleggingsadvies. Gebruikt je dagelijkse vragentegoed, geen analyse.';
+
+  @override
+  String get compareLastSurprise => 'EPS laatste kwartaal vs. verwacht';
+
+  @override
+  String get compareNextReport => 'Volgende cijfers';
+
+  @override
+  String get resolvingDescription => 'Bepalen welk aandeel je bedoelt…';
 }

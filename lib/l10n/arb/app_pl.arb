@@ -670,5 +670,8 @@
   "sourceMajorNews": "Duże medium",
   "sourceOpinion": "Opinia",
   "earningsSummaryButton": "Co było w ostatnim raporcie?",
-  "earningsSummaryNote": "Podsumowanie AI komunikatu spółki o wynikach i doniesień prasowych, które znajduje w sieci. Nie stanowi porady inwestycyjnej. Korzysta z dziennego limitu pytań, nie zużywa analizy."
+  "earningsSummaryNote": "Podsumowanie AI komunikatu spółki o wynikach i doniesień prasowych, które znajduje w sieci. Nie stanowi porady inwestycyjnej. Korzysta z dziennego limitu pytań, nie zużywa analizy.",
+  "compareLastSurprise": "EPS za ostatni kwartał vs oczekiwany",
+  "compareNextReport": "Następny raport",
+  "resolvingDescription": "Ustalanie, o którą akcję chodzi…"
 }

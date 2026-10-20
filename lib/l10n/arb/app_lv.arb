@@ -670,5 +670,8 @@
   "sourceMajorNews": "Lielais medijs",
   "sourceOpinion": "Viedoklis",
   "earningsSummaryButton": "Kas bija jaunākajā pārskatā?",
-  "earningsSummaryNote": "Mākslīgā intelekta kopsavilkums par uzņēmuma rezultātu paziņojumu un preses publikācijām, ko tas atrod tīmeklī. Tā nav ieguldījumu konsultācija. Izmanto jūsu dienas jautājumu limitu, nevis analīzi."
+  "earningsSummaryNote": "Mākslīgā intelekta kopsavilkums par uzņēmuma rezultātu paziņojumu un preses publikācijām, ko tas atrod tīmeklī. Tā nav ieguldījumu konsultācija. Izmanto jūsu dienas jautājumu limitu, nevis analīzi.",
+  "compareLastSurprise": "Pēdējā ceturkšņa EPS vs prognoze",
+  "compareNextReport": "Nākamais pārskats",
+  "resolvingDescription": "Nosaka, kuru akciju jūs domājat…"
 }

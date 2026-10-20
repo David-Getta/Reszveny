@@ -2441,4 +2441,13 @@ class AppLocalizationsJa extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       '会社の決算発表と、Web で見つかった報道を AI が要約します。投資助言ではありません。1日の質問回数を使い、分析回数は消費しません。';
+
+  @override
+  String get compareLastSurprise => '前四半期EPS vs 予想';
+
+  @override
+  String get compareNextReport => '次回決算';
+
+  @override
+  String get resolvingDescription => 'どの銘柄かを特定中…';
 }

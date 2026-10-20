@@ -2520,4 +2520,14 @@ class AppLocalizationsKk extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Компанияның нәтижелер туралы хабарламасы мен интернеттен тапқан баспасөз жарияланымдарының AI қорытындысы. Инвестициялық кеңес емес. Күнделікті сұрақтар лимитіңізден жұмсалады, талдау емес.';
+
+  @override
+  String get compareLastSurprise => 'Соңғы тоқсан EPS vs күтілген';
+
+  @override
+  String get compareNextReport => 'Келесі есеп';
+
+  @override
+  String get resolvingDescription =>
+      'Қай акцияны айтып отырғаныңыз анықталуда…';
 }

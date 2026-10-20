@@ -670,5 +670,8 @@
   "sourceMajorNews": "ዋና ሚዲያ",
   "sourceOpinion": "አስተያየት",
   "earningsSummaryButton": "በመጨረሻው ሪፖርት ውስጥ ምን ነበር?",
-  "earningsSummaryNote": "የኩባንያው የውጤት ማስታወቂያ እና በድር ላይ የሚያገኘው የሚዲያ ዘገባ የAI ማጠቃለያ። የኢንቨስትመንት ምክር አይደለም። ከዕለታዊ የጥያቄ ገደብዎ ይቆጠራል እንጂ ትንተና አይጠቀምም።"
+  "earningsSummaryNote": "የኩባንያው የውጤት ማስታወቂያ እና በድር ላይ የሚያገኘው የሚዲያ ዘገባ የAI ማጠቃለያ። የኢንቨስትመንት ምክር አይደለም። ከዕለታዊ የጥያቄ ገደብዎ ይቆጠራል እንጂ ትንተና አይጠቀምም።",
+  "compareLastSurprise": "የመጨረሻው ሩብ ዓመት EPS ከተጠበቀው ጋር",
+  "compareNextReport": "ቀጣይ ሪፖርት",
+  "resolvingDescription": "የትኛውን አክሲዮን እንደፈለጉ በመለየት ላይ…"
 }

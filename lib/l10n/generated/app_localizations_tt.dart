@@ -2518,4 +2518,14 @@ class AppLocalizationsTt extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Компаниянең нәтиҗәләр турында белдерүенең һәм интернетта тапкан матбугат язмаларының AI кыскача эчтәлеге. Инвестиция киңәше түгел. Көндәлек сораулар чигегездән тотыла, анализ түгел.';
+
+  @override
+  String get compareLastSurprise => 'Соңгы квартал EPS vs көтелгән';
+
+  @override
+  String get compareNextReport => 'Киләсе хисап';
+
+  @override
+  String get resolvingDescription =>
+      'Сез кайсы акцияне күздә тотканыгыз билгеләнә…';
 }

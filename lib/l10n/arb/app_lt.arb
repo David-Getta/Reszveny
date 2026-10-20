@@ -670,5 +670,8 @@
   "sourceMajorNews": "Didžioji žiniasklaida",
   "sourceOpinion": "Nuomonė",
   "earningsSummaryButton": "Kas buvo naujausioje ataskaitoje?",
-  "earningsSummaryNote": "DI santrauka apie bendrovės rezultatų paskelbimą ir žiniasklaidos pranešimus, kuriuos jis randa internete. Tai nėra investavimo rekomendacija. Naudoja jūsų dienos klausimų limitą, o ne analizę."
+  "earningsSummaryNote": "DI santrauka apie bendrovės rezultatų paskelbimą ir žiniasklaidos pranešimus, kuriuos jis randa internete. Tai nėra investavimo rekomendacija. Naudoja jūsų dienos klausimų limitą, o ne analizę.",
+  "compareLastSurprise": "Paskutinio ketvirčio EPS vs prognozė",
+  "compareNextReport": "Kita ataskaita",
+  "resolvingDescription": "Nustatoma, kurią akciją turite omenyje…"
 }

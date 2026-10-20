@@ -2515,4 +2515,13 @@ class AppLocalizationsIg extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Nchịkọta AI nke ọkwa nsonaazụ ụlọ ọrụ ahụ na akụkọ ndị nta akụkọ ọ chọtara n\'ịntanetị. Ọ bụghị ndụmọdụ itinye ego. Ọ na-eji oke ajụjụ gị kwa ụbọchị, ọ bụghị nyocha.';
+
+  @override
+  String get compareLastSurprise => 'EPS nkeji gara aga vs. atụrụ anya';
+
+  @override
+  String get compareNextReport => 'Akụkọ na-esote';
+
+  @override
+  String get resolvingDescription => 'Na-achọpụta stock ị bu n\'uche…';
 }

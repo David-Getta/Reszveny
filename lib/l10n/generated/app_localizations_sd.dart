@@ -2511,4 +2511,14 @@ class AppLocalizationsSd extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'ڪمپنيءَ جي نتيجن جي اعلان ۽ ويب تي مليل ميڊيا ڪوريج جو AI خلاصو. اها سيڙپڪاري جو مشورو ناهي. اهو توهان جي روزاني سوالن جي حد مان ويندو آهي، ڪو تجزيو خرچ نٿو ٿئي.';
+
+  @override
+  String get compareLastSurprise => 'گذريل ٽه ماهي EPS بمقابله متوقع';
+
+  @override
+  String get compareNextReport => 'ايندڙ رپورٽ';
+
+  @override
+  String get resolvingDescription =>
+      'معلوم ڪيو پيو وڃي ته توهان جو مطلب ڪهڙو شيئر آهي…';
 }

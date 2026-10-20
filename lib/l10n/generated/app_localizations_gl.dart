@@ -2543,4 +2543,13 @@ class AppLocalizationsGl extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Resumo de IA do anuncio de resultados da empresa e da cobertura de prensa que atopa na web. Non constitúe asesoramento de investimento. Usa o teu límite diario de preguntas, non unha análise.';
+
+  @override
+  String get compareLastSurprise => 'BPA último trimestre vs. esperado';
+
+  @override
+  String get compareNextReport => 'Próximo informe';
+
+  @override
+  String get resolvingDescription => 'Descubrindo a que acción te refires…';
 }

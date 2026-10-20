@@ -2519,4 +2519,13 @@ class AppLocalizationsAk extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'AI tiawa a ɛfa adwumakuo no mfaso ho amanneɛbɔ ne nsɛm a nsɛmmɔnenafoɔ akyerɛw wɔ ho a ɛhu wɔ intanɛt so. Ɛnyɛ sikahyɛmu ho afotu. Ɛfiri wo nsɛmmisa a ɛsɛ da biara mu, ɛnni nhwehwɛmu biara.';
+
+  @override
+  String get compareLastSurprise => 'Kwata a etwaam EPS ne nea wɔhwɛ kwan';
+
+  @override
+  String get compareNextReport => 'Akontaabu a ɛdi hɔ';
+
+  @override
+  String get resolvingDescription => 'Ɛrehwehwɛ kyɛfa a worekyerɛ…';
 }

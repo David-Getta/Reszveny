@@ -2512,4 +2512,13 @@ class AppLocalizationsHe extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'סיכום של AI של הודעת התוצאות של החברה ושל הסיקור התקשורתי שהוא מוצא ברשת. אינו מהווה ייעוץ השקעות. נספר במכסת השאלות היומית שלך, לא כניתוח.';
+
+  @override
+  String get compareLastSurprise => 'EPS רבעון אחרון מול צפוי';
+
+  @override
+  String get compareNextReport => 'הדוח הבא';
+
+  @override
+  String get resolvingDescription => 'מזהים לאיזו מניה התכוונת…';
 }

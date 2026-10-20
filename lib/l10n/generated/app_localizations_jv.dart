@@ -2522,4 +2522,13 @@ class AppLocalizationsJv extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Ringkesan AI saka pengumuman asil perusahaan lan liputan média sing ditemokaké ing web. Dudu saran investasi. Nggunakake watesan pitakon saben dina, dudu analisis.';
+
+  @override
+  String get compareLastSurprise => 'EPS kuartal pungkasan vs. dikarepake';
+
+  @override
+  String get compareNextReport => 'Laporan sabanjure';
+
+  @override
+  String get resolvingDescription => 'Nemtokake saham sing sampeyan maksud…';
 }

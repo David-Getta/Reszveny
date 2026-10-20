@@ -2529,4 +2529,13 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Σύνοψη από AI της ανακοίνωσης αποτελεσμάτων της εταιρείας και των δημοσιευμάτων που βρίσκει στο διαδίκτυο. Δεν αποτελεί επενδυτική συμβουλή. Χρησιμοποιεί το ημερήσιο όριο ερωτήσεών σας, όχι ανάλυση.';
+
+  @override
+  String get compareLastSurprise => 'EPS τελευταίου τριμήνου vs αναμενόμενο';
+
+  @override
+  String get compareNextReport => 'Επόμενη ανακοίνωση';
+
+  @override
+  String get resolvingDescription => 'Εντοπισμός της μετοχής που εννοείτε…';
 }

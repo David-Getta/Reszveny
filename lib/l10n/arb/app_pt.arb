@@ -670,5 +670,8 @@
   "sourceMajorNews": "Grande imprensa",
   "sourceOpinion": "Opinião",
   "earningsSummaryButton": "O que dizia o último relatório?",
-  "earningsSummaryNote": "Resumo de IA do anúncio de resultados da empresa e da cobertura da imprensa que encontra na web. Não constitui aconselhamento de investimento. Usa o seu limite diário de perguntas, não uma análise."
+  "earningsSummaryNote": "Resumo de IA do anúncio de resultados da empresa e da cobertura da imprensa que encontra na web. Não constitui aconselhamento de investimento. Usa o seu limite diário de perguntas, não uma análise.",
+  "compareLastSurprise": "LPA último trimestre vs. esperado",
+  "compareNextReport": "Próximo resultado",
+  "resolvingDescription": "A identificar a ação a que se refere…"
 }

@@ -2508,4 +2508,14 @@ class AppLocalizationsBo extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'ཀུང་སིའི་གྲུབ་འབྲས་གསལ་བསྒྲགས་དང་དྲ་རྒྱའི་ཐོག་རྙེད་པའི་གསར་འགྱུར་སྙན་ཞུའི་AI བསྡུས་དོན། མ་འཇོག་གི་བསམ་འཆར་མིན། ཉིན་རེའི་དྲི་བའི་ཚད་ནས་འགྲོ་བ་ཡིན་ལ་དབྱེ་ཞིབ་མི་བེད་སྤྱོད།';
+
+  @override
+  String get compareLastSurprise => 'སྔོན་མའི་དུས་བཞི་EPS དང་རེ་སྒུག';
+
+  @override
+  String get compareNextReport => 'རྗེས་མའི་སྙན་ཞུ';
+
+  @override
+  String get resolvingDescription =>
+      'ཁྱེད་རང་གིས་བཤད་པའི་ཧུར་ཁག་གང་ཡིན་ངོས་འཛིན་བྱེད་བཞིན་པ…';
 }

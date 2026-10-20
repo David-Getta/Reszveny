@@ -60,6 +60,7 @@ class TelemetryStore {
     'holdings_read',
     'news_explained',
     'earnings_summary',
+    'description_resolved',
     'list_created',
     'targets_set',
     'backup_saved',

@@ -2520,4 +2520,13 @@ class AppLocalizationsKi extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Ũhoro mũkuhĩ wa AI wa kũmenyithia maumĩrĩra ma kampuni na ũhoro wa ngathiti ũrĩa wonaga internet-inĩ. Ti ũtaaro wa investment. Ĩhũthagĩra mũhaka wa ciũria ciaku cia o mũthenya, ti ũthuthuria.';
+
+  @override
+  String get compareLastSurprise => 'EPS ĩthiru vs ĩrĩa yetagĩrĩrwo';
+
+  @override
+  String get compareNextReport => 'Ripoti ĩrĩa ĩrũmĩrĩire';
+
+  @override
+  String get resolvingDescription => 'Nĩtũracaria hisa ĩrĩa ũrenda kuuga…';
 }

@@ -2527,4 +2527,14 @@ class AppLocalizationsKg extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Ntendula ya nkufi ya AI ya nsangu ya ba résultats ya kompani mpi ya bansangu ya bazulunalu yina yo ke mona na Internet. Yo ke malongi ya kutula mbongo ve. Yo ke sadilaka ndilu ya biuvu na nge ya konso kilumbu, ve nsosa.';
+
+  @override
+  String get compareLastSurprise =>
+      'EPS ya trimestre ya nsuka vs ya ke vingila';
+
+  @override
+  String get compareNextReport => 'Rapport ya me landa';
+
+  @override
+  String get resolvingDescription => 'Kusosa action yina nge ketuba…';
 }

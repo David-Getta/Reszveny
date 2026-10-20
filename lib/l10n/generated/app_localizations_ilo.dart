@@ -2538,4 +2538,14 @@ class AppLocalizationsIlo extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Pakabuklan ti AI iti pakaammo ti resulta ti kompania ken dagiti damag maipapan iti daytoy a nasarakanna iti web. Saan a balakad iti panagpuonan. Agusar daytoy iti inaldaw a limitasion dagiti saludsod-mo, saan nga iti panaganalisa.';
+
+  @override
+  String get compareLastSurprise => 'EPS napalabas a kuarter vs. namnamaen';
+
+  @override
+  String get compareNextReport => 'Sumaruno a report';
+
+  @override
+  String get resolvingDescription =>
+      'Amammuen no ania a stock ti kayatmo a sawen…';
 }

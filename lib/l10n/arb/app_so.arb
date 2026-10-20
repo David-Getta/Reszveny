@@ -670,5 +670,8 @@
   "sourceMajorNews": "Warbaahin weyn",
   "sourceOpinion": "Aragti",
   "earningsSummaryButton": "Maxaa ku jiray warbixintii ugu dambeysay?",
-  "earningsSummaryNote": "Soo koobid AI ah oo ku saabsan ku dhawaaqista natiijooyinka shirkadda iyo warbixinnada warbaahinta ee ay ka hesho shabakadda. Ma aha talo maalgashi. Waxay isticmaashaa xadka su’aalahaaga maalinlaha ah, ma aha falanqayn."
+  "earningsSummaryNote": "Soo koobid AI ah oo ku saabsan ku dhawaaqista natiijooyinka shirkadda iyo warbixinnada warbaahinta ee ay ka hesho shabakadda. Ma aha talo maalgashi. Waxay isticmaashaa xadka su’aalahaaga maalinlaha ah, ma aha falanqayn.",
+  "compareLastSurprise": "EPS rubucii u dambeeyay vs la filayo",
+  "compareNextReport": "Warbixinta xigta",
+  "resolvingDescription": "Waxaa la ogaanayaa saamiga aad ula jeeddo…"
 }

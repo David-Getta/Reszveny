@@ -2587,4 +2587,13 @@ class AppLocalizationsLt extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'DI santrauka apie bendrovės rezultatų paskelbimą ir žiniasklaidos pranešimus, kuriuos jis randa internete. Tai nėra investavimo rekomendacija. Naudoja jūsų dienos klausimų limitą, o ne analizę.';
+
+  @override
+  String get compareLastSurprise => 'Paskutinio ketvirčio EPS vs prognozė';
+
+  @override
+  String get compareNextReport => 'Kita ataskaita';
+
+  @override
+  String get resolvingDescription => 'Nustatoma, kurią akciją turite omenyje…';
 }

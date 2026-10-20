@@ -2529,4 +2529,13 @@ class AppLocalizationsZu extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Isifinyezo se-AI sesimemezelo semiphumela yenkampani kanye nezindaba zabezindaba esizithola kuwebhu. Akuyona iseluleko sokutshala imali. Sisebenzisa umkhawulo wakho wemibuzo wansuku zonke, hhayi ukuhlaziya.';
+
+  @override
+  String get compareLastSurprise => 'I-EPS yekota edlule vs elindelekile';
+
+  @override
+  String get compareNextReport => 'Umbiko olandelayo';
+
+  @override
+  String get resolvingDescription => 'Ithola isheya osho ngalo…';
 }

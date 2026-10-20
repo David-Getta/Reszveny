@@ -2518,4 +2518,13 @@ class AppLocalizationsHt extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Rezime AI sou anons rezilta konpayi an ak sa laprès di sou li li jwenn sou entènèt. Se pa yon konsèy envestisman. Li itilize limit kesyon ou pou chak jou, pa yon analiz.';
+
+  @override
+  String get compareLastSurprise => 'EPS dènye trimès vs. sa yo atann';
+
+  @override
+  String get compareNextReport => 'Pwochen rapò';
+
+  @override
+  String get resolvingDescription => 'N ap chèche konnen ki aksyon ou vle di…';
 }

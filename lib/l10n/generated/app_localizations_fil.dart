@@ -2526,4 +2526,14 @@ class AppLocalizationsFil extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Buod ng AI ng anunsyo ng resulta ng kumpanya at ng mga balitang nahanap nito sa web. Hindi ito payo sa pamumuhunan. Gumagamit ito ng iyong pang-araw-araw na limitasyon sa tanong, hindi ng pagsusuri.';
+
+  @override
+  String get compareLastSurprise => 'EPS ng nakaraang quarter vs. inaasahan';
+
+  @override
+  String get compareNextReport => 'Susunod na ulat';
+
+  @override
+  String get resolvingDescription =>
+      'Inaalam kung aling stock ang ibig mong sabihin…';
 }

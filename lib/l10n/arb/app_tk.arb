@@ -670,5 +670,8 @@
   "sourceMajorNews": "Iri media",
   "sourceOpinion": "Pikir",
   "earningsSummaryButton": "Soňky hasabatda näme bardy?",
-  "earningsSummaryNote": "Kompaniýanyň netijeler baradaky beýannamasynyň we internetde tapan metbugat habarlarynyň AI gysgaça mazmuny. Maýa goýum maslahaty däldir. Gündelik sorag çägiňizden harçlanýar, seljerme däl."
+  "earningsSummaryNote": "Kompaniýanyň netijeler baradaky beýannamasynyň we internetde tapan metbugat habarlarynyň AI gysgaça mazmuny. Maýa goýum maslahaty däldir. Gündelik sorag çägiňizden harçlanýar, seljerme däl.",
+  "compareLastSurprise": "Soňky çärýek EPS vs garaşylýan",
+  "compareNextReport": "Indiki hasabat",
+  "resolvingDescription": "Haýsy paýnamany göz öňünde tutýandygyňyz kesgitlenýär…"
 }

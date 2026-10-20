@@ -2537,4 +2537,13 @@ class AppLocalizationsTs extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Nkomiso wa AI wa xitiviso xa mbuyelo wa khamphani ni mahungu ya vuhaxi lawa yi ma kumaka ewebeni. A hi ndzayo ya vuvekisi. Yi tirhisa ndzelekano wa wena wa swivutiso wa siku na siku, ku nga ri nxopaxopo.';
+
+  @override
+  String get compareLastSurprise => 'EPS leyi hundzeke vs leyi languteriweke';
+
+  @override
+  String get compareNextReport => 'Xiviko lexi landzelaka';
+
+  @override
+  String get resolvingDescription => 'Hi lava xere leyi u vulaka yona…';
 }

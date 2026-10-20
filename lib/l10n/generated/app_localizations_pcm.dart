@@ -2520,4 +2520,13 @@ class AppLocalizationsPcm extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'AI summary of di company result announcement and di press talk wey e find for web. E no be investment advice. E dey use your daily question limit, no be analysis.';
+
+  @override
+  String get compareLastSurprise => 'Last quarter EPS vs wetin dem expect';
+
+  @override
+  String get compareNextReport => 'Next report';
+
+  @override
+  String get resolvingDescription => 'We dey find out which stock you mean…';
 }

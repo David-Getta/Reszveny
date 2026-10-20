@@ -2521,4 +2521,13 @@ class AppLocalizationsSv extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'AI-sammanfattning av bolagets resultatbesked och den pressbevakning den hittar på webben. Det är inte investeringsrådgivning. Använder din dagliga frågekvot, inte en analys.';
+
+  @override
+  String get compareLastSurprise => 'Senaste kvartalets EPS vs. förväntat';
+
+  @override
+  String get compareNextReport => 'Nästa rapport';
+
+  @override
+  String get resolvingDescription => 'Tar reda på vilken aktie du menar…';
 }

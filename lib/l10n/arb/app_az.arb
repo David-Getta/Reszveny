@@ -670,5 +670,8 @@
   "sourceMajorNews": "Böyük media",
   "sourceOpinion": "Rəy",
   "earningsSummaryButton": "Son hesabatda nə var idi?",
-  "earningsSummaryNote": "Şirkətin nəticələr açıqlamasının və internetdə tapdığı mətbuat xəbərlərinin AI xülasəsi. İnvestisiya məsləhəti deyil. Gündəlik sual limitinizdən istifadə edir, təhlil sərf etmir."
+  "earningsSummaryNote": "Şirkətin nəticələr açıqlamasının və internetdə tapdığı mətbuat xəbərlərinin AI xülasəsi. İnvestisiya məsləhəti deyil. Gündəlik sual limitinizdən istifadə edir, təhlil sərf etmir.",
+  "compareLastSurprise": "Son rüb EPS vs. gözlənilən",
+  "compareNextReport": "Növbəti hesabat",
+  "resolvingDescription": "Hansı səhmi nəzərdə tutduğunuz müəyyən edilir…"
 }

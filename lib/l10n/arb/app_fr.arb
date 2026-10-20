@@ -670,5 +670,8 @@
   "sourceMajorNews": "Grand média",
   "sourceOpinion": "Opinion",
   "earningsSummaryButton": "Que disait le dernier rapport ?",
-  "earningsSummaryNote": "Résumé par IA de la publication des résultats de l’entreprise et de la couverture médiatique trouvée sur le web. Ne constitue pas un conseil en investissement. Utilise votre quota quotidien de questions, pas une analyse."
+  "earningsSummaryNote": "Résumé par IA de la publication des résultats de l’entreprise et de la couverture médiatique trouvée sur le web. Ne constitue pas un conseil en investissement. Utilise votre quota quotidien de questions, pas une analyse.",
+  "compareLastSurprise": "BPA dernier trimestre vs attendu",
+  "compareNextReport": "Prochaine publication",
+  "resolvingDescription": "Identification de l'action que vous recherchez…"
 }

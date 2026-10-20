@@ -670,5 +670,8 @@
   "sourceMajorNews": "Gran medio",
   "sourceOpinion": "Opinión",
   "earningsSummaryButton": "¿Qué decía el último informe?",
-  "earningsSummaryNote": "Resumen de IA del anuncio de resultados de la empresa y de la cobertura de prensa que encuentra en la web. No constituye asesoramiento de inversión. Usa tu límite diario de preguntas, no un análisis."
+  "earningsSummaryNote": "Resumen de IA del anuncio de resultados de la empresa y de la cobertura de prensa que encuentra en la web. No constituye asesoramiento de inversión. Usa tu límite diario de preguntas, no un análisis.",
+  "compareLastSurprise": "BPA último trimestre vs. esperado",
+  "compareNextReport": "Próximo informe",
+  "resolvingDescription": "Averiguando a qué acción te refieres…"
 }

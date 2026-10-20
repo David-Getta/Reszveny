@@ -2531,4 +2531,13 @@ class AppLocalizationsXh extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Isishwankathelo se-AI sesibhengezo seziphumo zenkampani kunye neendaba zoshicilelo esizifumana kwiwebhu. Ayilocebiso lotyalo-mali. Sisebenzisa umda wakho wemibuzo wemihla ngemihla, hayi uhlalutyo.';
+
+  @override
+  String get compareLastSurprise => 'I-EPS yekota edlulileyo vs elindelekileyo';
+
+  @override
+  String get compareNextReport => 'Ingxelo elandelayo';
+
+  @override
+  String get resolvingDescription => 'Ifumanisa isabelo othetha ngaso…';
 }

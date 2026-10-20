@@ -2523,4 +2523,13 @@ class AppLocalizationsAf extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'AI-opsomming van die maatskappy se resultate-aankondiging en die persdekking wat dit op die web vind. Dit is nie beleggingsadvies nie. Dit gebruik jou daaglikse vraagtoelae, nie ’n ontleding nie.';
+
+  @override
+  String get compareLastSurprise => 'Laaste kwartaal WPA vs. verwag';
+
+  @override
+  String get compareNextReport => 'Volgende verslag';
+
+  @override
+  String get resolvingDescription => 'Bepaal watter aandeel jy bedoel…';
 }

@@ -670,5 +670,8 @@
   "sourceMajorNews": "Medyaya mezin",
   "sourceOpinion": "Nêrîn",
   "earningsSummaryButton": "Di rapora dawî de çi hebû?",
-  "earningsSummaryNote": "Kurteya AI ya ragihandina encamên şirketê û nûçeyên çapemeniyê yên ku li ser webê dibîne. Ne şîreta veberhênanê ye. Ji sînorê pirsên te yê rojane tê birîn, ne analîzek."
+  "earningsSummaryNote": "Kurteya AI ya ragihandina encamên şirketê û nûçeyên çapemeniyê yên ku li ser webê dibîne. Ne şîreta veberhênanê ye. Ji sînorê pirsên te yê rojane tê birîn, ne analîzek.",
+  "compareLastSurprise": "EPS ya dawî li hember ya tê payîn",
+  "compareNextReport": "Rapora bê",
+  "resolvingDescription": "Tê diyarkirin ka mebesta te kîjan pişk e…"
 }

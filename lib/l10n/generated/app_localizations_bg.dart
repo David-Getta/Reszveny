@@ -2521,4 +2521,13 @@ class AppLocalizationsBg extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Обобщение от AI на съобщението на компанията за резултатите и на медийното отразяване, което намира в интернет. Не представлява инвестиционен съвет. Използва дневния ви лимит за въпроси, не анализ.';
+
+  @override
+  String get compareLastSurprise => 'EPS посл. тримесечие vs. очаквана';
+
+  @override
+  String get compareNextReport => 'Следващ отчет';
+
+  @override
+  String get resolvingDescription => 'Определяме коя акция имате предвид…';
 }

@@ -670,5 +670,8 @@
   "sourceMajorNews": "Veľké médium",
   "sourceOpinion": "Názor",
   "earningsSummaryButton": "Čo bolo v poslednej správe?",
-  "earningsSummaryNote": "Zhrnutie od AI: oznámenie výsledkov spoločnosti a mediálne ohlasy, ktoré nájde na webe. Nie je investičným odporúčaním. Čerpá z vášho denného limitu otázok, nespotrebuje analýzu."
+  "earningsSummaryNote": "Zhrnutie od AI: oznámenie výsledkov spoločnosti a mediálne ohlasy, ktoré nájde na webe. Nie je investičným odporúčaním. Čerpá z vášho denného limitu otázok, nespotrebuje analýzu.",
+  "compareLastSurprise": "EPS za posledný kvartál vs. očakávané",
+  "compareNextReport": "Ďalšia správa",
+  "resolvingDescription": "Zisťujem, ktorú akciu máte na mysli…"
 }

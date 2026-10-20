@@ -2514,4 +2514,13 @@ class AppLocalizationsFf extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Ɓeyngugol AI bayyinannde ngalluuji sosiyetee oo e kabaruuji jaaynde ɗi o yiyi e geese. Wonaa wasiya e investisman. Ina huutoroo keerol naamne maa ñalnde kala, wonaa ƴeewndo.';
+
+  @override
+  String get compareLastSurprise => 'EPS kuartaal ɓennuɗo e jortaaɗo';
+
+  @override
+  String get compareNextReport => 'Jaŋtol garowol';
+
+  @override
+  String get resolvingDescription => 'Ina ƴeewa aksiyoŋ mo njiɗ-ɗaa…';
 }

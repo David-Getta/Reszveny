@@ -2516,4 +2516,13 @@ class AppLocalizationsFa extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'خلاصهٔ هوش مصنوعی از اطلاعیهٔ نتایج شرکت و پوشش رسانه‌ای که در وب پیدا می‌کند. توصیه سرمایه‌گذاری نیست. از سهمیهٔ روزانهٔ پرسش‌های شما کم می‌شود، نه از تحلیل‌ها.';
+
+  @override
+  String get compareLastSurprise => 'EPS فصل گذشته در برابر مورد انتظار';
+
+  @override
+  String get compareNextReport => 'گزارش بعدی';
+
+  @override
+  String get resolvingDescription => 'در حال تشخیص سهمی که منظورتان است…';
 }

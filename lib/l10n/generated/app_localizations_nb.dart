@@ -2520,4 +2520,13 @@ class AppLocalizationsNb extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'AI-sammendrag av selskapets resultatmelding og pressedekningen den finner på nettet. Det er ikke investeringsråd. Bruker av den daglige spørsmålskvoten din, ikke en analyse.';
+
+  @override
+  String get compareLastSurprise => 'Siste kvartals EPS vs. forventet';
+
+  @override
+  String get compareNextReport => 'Neste rapport';
+
+  @override
+  String get resolvingDescription => 'Finner ut hvilken aksje du mener…';
 }

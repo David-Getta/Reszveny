@@ -670,5 +670,8 @@
   "sourceMajorNews": "Velik medij",
   "sourceOpinion": "Mnenje",
   "earningsSummaryButton": "Kaj je bilo v zadnjem poročilu?",
-  "earningsSummaryNote": "Povzetek umetne inteligence o objavi rezultatov podjetja in medijskem poročanju, ki ga najde na spletu. Ni naložbeni nasvet. Porabi vašo dnevno omejitev vprašanj, ne analize."
+  "earningsSummaryNote": "Povzetek umetne inteligence o objavi rezultatov podjetja in medijskem poročanju, ki ga najde na spletu. Ni naložbeni nasvet. Porabi vašo dnevno omejitev vprašanj, ne analize.",
+  "compareLastSurprise": "EPS zadnjega četrtletja vs. pričakovani",
+  "compareNextReport": "Naslednje poročilo",
+  "resolvingDescription": "Ugotavljanje, katero delnico imate v mislih …"
 }

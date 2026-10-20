@@ -2490,4 +2490,13 @@ class AppLocalizationsTh extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'สรุปโดย AI จากการประกาศผลประกอบการของบริษัทและข่าวในสื่อที่ค้นพบบนเว็บ ไม่ใช่คำแนะนำในการลงทุน ใช้โควตาคำถามรายวันของคุณ ไม่ใช้สิทธิ์การวิเคราะห์';
+
+  @override
+  String get compareLastSurprise => 'EPS ไตรมาสล่าสุด vs คาดการณ์';
+
+  @override
+  String get compareNextReport => 'รายงานครั้งถัดไป';
+
+  @override
+  String get resolvingDescription => 'กำลังค้นหาว่าคุณหมายถึงหุ้นตัวใด…';
 }

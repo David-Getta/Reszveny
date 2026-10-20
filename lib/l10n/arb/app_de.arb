@@ -670,5 +670,8 @@
   "sourceMajorNews": "Leitmedium",
   "sourceOpinion": "Meinung",
   "earningsSummaryButton": "Was stand im letzten Bericht?",
-  "earningsSummaryNote": "KI-Zusammenfassung der Ergebnismitteilung des Unternehmens und der Presseberichte, die sie im Web findet. Keine Anlageberatung. Zählt zu deinem täglichen Fragenkontingent, nicht als Analyse."
+  "earningsSummaryNote": "KI-Zusammenfassung der Ergebnismitteilung des Unternehmens und der Presseberichte, die sie im Web findet. Keine Anlageberatung. Zählt zu deinem täglichen Fragenkontingent, nicht als Analyse.",
+  "compareLastSurprise": "EPS letztes Quartal vs. erwartet",
+  "compareNextReport": "Nächster Bericht",
+  "resolvingDescription": "Es wird ermittelt, welche Aktie du meinst…"
 }

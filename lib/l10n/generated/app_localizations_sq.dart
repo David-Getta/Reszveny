@@ -2526,4 +2526,14 @@ class AppLocalizationsSq extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Përmbledhje nga AI e njoftimit të rezultateve të kompanisë dhe e mbulimit në shtyp që gjen në internet. Nuk përbën këshillë investimi. Përdor kufirin tuaj ditor të pyetjeve, jo një analizë.';
+
+  @override
+  String get compareLastSurprise => 'EPS tremujori i fundit vs. i pritur';
+
+  @override
+  String get compareNextReport => 'Raporti i radhës';
+
+  @override
+  String get resolvingDescription =>
+      'Duke përcaktuar cilin aksion keni parasysh…';
 }

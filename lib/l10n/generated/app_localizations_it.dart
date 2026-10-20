@@ -2525,4 +2525,14 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Riepilogo dell’IA del comunicato sui risultati dell’azienda e della copertura stampa che trova sul web. Non costituisce un consiglio di investimento. Usa il tuo limite giornaliero di domande, non un’analisi.';
+
+  @override
+  String get compareLastSurprise => 'EPS ultimo trimestre vs. atteso';
+
+  @override
+  String get compareNextReport => 'Prossimi risultati';
+
+  @override
+  String get resolvingDescription =>
+      'Identificazione dell\'azione a cui ti riferisci…';
 }

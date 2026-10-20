@@ -670,5 +670,8 @@
   "sourceMajorNews": "Dakung media",
   "sourceOpinion": "Opinyon",
   "earningsSummaryButton": "Ano ang sulod sang pinakabag-o nga report?",
-  "earningsSummaryNote": "Kalip-ot sang AI sang paanunsyo sang resulta sang kompanya kag sang mga balita nga nakita sini sa web. Indi ini laygay sa pag-invest. Ginagamit sini ang imo adlaw-adlaw nga limitasyon sang pamangkot, indi ang pagtuki."
+  "earningsSummaryNote": "Kalip-ot sang AI sang paanunsyo sang resulta sang kompanya kag sang mga balita nga nakita sini sa web. Indi ini laygay sa pag-invest. Ginagamit sini ang imo adlaw-adlaw nga limitasyon sang pamangkot, indi ang pagtuki.",
+  "compareLastSurprise": "EPS nagligad kwarter vs. ginapaabot",
+  "compareNextReport": "Masunod nga report",
+  "resolvingDescription": "Ginapat-od kon ano nga stock ang buot mo silingon…"
 }

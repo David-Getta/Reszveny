@@ -2513,4 +2513,14 @@ class AppLocalizationsMai extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'कंपनीक परिणाम घोषणा आ वेबपर भेटल मीडिया कवरेजक AI सारांश। ई निवेशक सलाह नहि अछि। ई अहाँक दैनिक प्रश्न-सीमासँ जाइत अछि, कोनो विश्लेषण खर्च नहि होइत अछि।';
+
+  @override
+  String get compareLastSurprise => 'पछिला त्रैमासिक EPS बनाम अनुमानित';
+
+  @override
+  String get compareNextReport => 'अगिला रिपोर्ट';
+
+  @override
+  String get resolvingDescription =>
+      'पता लगाओल जा रहल अछि जे अहाँ कोन शेयरक बात कऽ रहल छी…';
 }

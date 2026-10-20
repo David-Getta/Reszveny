@@ -2522,4 +2522,14 @@ class AppLocalizationsUg extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'شىركەتنىڭ نەتىجە ئېلانى ۋە توردىن تاپقان ئاخبارات خەۋەرلىرىنىڭ AI قىسقىچە مەزمۇنى. مەبلەغ سېلىش تەۋسىيەسى ئەمەس. كۈندىلىك سوئال چېكىڭىزدىن سەرپ بولىدۇ، تەھلىل ئەمەس.';
+
+  @override
+  String get compareLastSurprise => 'ئاخىرقى پەسىل EPS vs مۆلچەر';
+
+  @override
+  String get compareNextReport => 'كېيىنكى دوكلات';
+
+  @override
+  String get resolvingDescription =>
+      'سىز دېمەكچى بولغان پاي چېكى ئېنىقلىنىۋاتىدۇ…';
 }

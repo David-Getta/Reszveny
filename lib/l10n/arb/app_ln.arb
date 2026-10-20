@@ -670,5 +670,8 @@
   "sourceMajorNews": "Zulunalo monene",
   "sourceOpinion": "Likanisi",
   "earningsSummaryButton": "Nini ezalaki na rapport ya suka?",
-  "earningsSummaryNote": "Bokuse ya AI ya liyebisi ya ba résultats ya kompani mpe ya mikanda ya bapanzi-nsango oyo ezwi na Internet. Ezali toli ya kotia mbɔngɔ te. Esalelaka ndelo ya mituna na yo ya mokolo na mokolo, kasi botaleli te."
+  "earningsSummaryNote": "Bokuse ya AI ya liyebisi ya ba résultats ya kompani mpe ya mikanda ya bapanzi-nsango oyo ezwi na Internet. Ezali toli ya kotia mbɔngɔ te. Esalelaka ndelo ya mituna na yo ya mokolo na mokolo, kasi botaleli te.",
+  "compareLastSurprise": "EPS ya trimestre eleki vs oyo ezelamaki",
+  "compareNextReport": "Rapport oyo ekoya",
+  "resolvingDescription": "Ezali koluka action oyo olingi koloba…"
 }

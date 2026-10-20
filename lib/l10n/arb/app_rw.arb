@@ -670,5 +670,8 @@
   "sourceMajorNews": "Ikinyamakuru gikomeye",
   "sourceOpinion": "Igitekerezo",
   "earningsSummaryButton": "Ni iki cyari muri raporo iheruka?",
-  "earningsSummaryNote": "Incamake ya AI y’itangazo ry’ibyavuye mu kigo n’ibyo itangazamakuru ryanditse ibona kuri murandasi. Si inama yo gushora imari. Ikoresha umubare ntarengwa w’ibibazo byawe bya buri munsi, si isesengura."
+  "earningsSummaryNote": "Incamake ya AI y’itangazo ry’ibyavuye mu kigo n’ibyo itangazamakuru ryanditse ibona kuri murandasi. Si inama yo gushora imari. Ikoresha umubare ntarengwa w’ibibazo byawe bya buri munsi, si isesengura.",
+  "compareLastSurprise": "EPS y'igihembwe gishize vs yitezwe",
+  "compareNextReport": "Raporo ikurikira",
+  "resolvingDescription": "Turimo gushaka umugabane ushaka kuvuga…"
 }

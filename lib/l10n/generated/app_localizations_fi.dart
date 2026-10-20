@@ -2521,4 +2521,13 @@ class AppLocalizationsFi extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Tekoälyn tiivistelmä yhtiön tulosjulkistuksesta ja sen löytämästä mediauutisoinnista verkossa. Se ei ole sijoitusneuvontaa. Kuluttaa päivittäistä kysymyskiintiötäsi, ei analyysia.';
+
+  @override
+  String get compareLastSurprise => 'Edellisen kvartaalin EPS vs. odotettu';
+
+  @override
+  String get compareNextReport => 'Seuraava tulosjulkistus';
+
+  @override
+  String get resolvingDescription => 'Selvitetään, mitä osaketta tarkoitat…';
 }

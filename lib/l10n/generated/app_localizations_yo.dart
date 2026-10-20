@@ -2518,4 +2518,13 @@ class AppLocalizationsYo extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Àkópọ̀ AI ti ìkéde àbájáde ilé-iṣẹ́ náà àti ìròyìn àwọn oníròyìn tí ó rí lórí ayélujára. Kì í ṣe ìmọ̀ràn ìdókòwò. Ó ń lo ìwọ̀n ìbéèrè ojoojúmọ́ rẹ, kì í ṣe ìtúpalẹ̀.';
+
+  @override
+  String get compareLastSurprise => 'EPS ìdámẹ́rin tó kọjá vs tí a retí';
+
+  @override
+  String get compareNextReport => 'Ìjábọ̀ tó kàn';
+
+  @override
+  String get resolvingDescription => 'À ń wá ìpín tí o ní lọ́kàn…';
 }

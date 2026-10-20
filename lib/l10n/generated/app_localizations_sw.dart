@@ -2521,4 +2521,13 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Muhtasari wa AI wa tangazo la matokeo ya kampuni na habari za vyombo vya habari inazozipata mtandaoni. Si ushauri wa uwekezaji. Hutumia kikomo chako cha maswali cha kila siku, si uchambuzi.';
+
+  @override
+  String get compareLastSurprise => 'EPS robo iliyopita vs inayotarajiwa';
+
+  @override
+  String get compareNextReport => 'Ripoti ijayo';
+
+  @override
+  String get resolvingDescription => 'Inabaini hisa unayomaanisha…';
 }

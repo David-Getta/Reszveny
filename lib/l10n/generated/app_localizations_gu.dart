@@ -2515,4 +2515,13 @@ class AppLocalizationsGu extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'કંપનીની પરિણામ જાહેરાત અને વેબ પર મળતા અખબારી અહેવાલોનો AI સારાંશ. તે રોકાણ સલાહ નથી. તે તમારી દૈનિક પ્રશ્ન મર્યાદામાંથી જાય છે, કોઈ વિશ્લેષણ વપરાતું નથી.';
+
+  @override
+  String get compareLastSurprise => 'ગત ત્રિમાસિક EPS વિ. અપેક્ષિત';
+
+  @override
+  String get compareNextReport => 'આગામી રિપોર્ટ';
+
+  @override
+  String get resolvingDescription => 'તમે કયો શેર કહો છો તે શોધી રહ્યા છીએ…';
 }

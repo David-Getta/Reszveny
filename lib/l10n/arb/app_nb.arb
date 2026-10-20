@@ -670,5 +670,8 @@
   "sourceMajorNews": "Stort medium",
   "sourceOpinion": "Mening",
   "earningsSummaryButton": "Hva sto i den siste rapporten?",
-  "earningsSummaryNote": "AI-sammendrag av selskapets resultatmelding og pressedekningen den finner på nettet. Det er ikke investeringsråd. Bruker av den daglige spørsmålskvoten din, ikke en analyse."
+  "earningsSummaryNote": "AI-sammendrag av selskapets resultatmelding og pressedekningen den finner på nettet. Det er ikke investeringsråd. Bruker av den daglige spørsmålskvoten din, ikke en analyse.",
+  "compareLastSurprise": "Siste kvartals EPS vs. forventet",
+  "compareNextReport": "Neste rapport",
+  "resolvingDescription": "Finner ut hvilken aksje du mener…"
 }

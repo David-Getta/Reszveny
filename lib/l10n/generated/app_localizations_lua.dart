@@ -2527,4 +2527,13 @@ class AppLocalizationsLua extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Diumvuija dikese dia AI dia dimanyisha dia mapeta a kompani ne dia malu adi bijadiki bifunde, adi dipeta ku Internet. Kadiena mibelu ya kuteka mfranga. Bidi bienzeja mukalu wa nkonko yebe ya dituku dionso, kabiyi dikonkonona.';
+
+  @override
+  String get compareLastSurprise => 'EPS wa trimestre mushale vs batekemene';
+
+  @override
+  String get compareNextReport => 'Rapport udi ulonda';
+
+  @override
+  String get resolvingDescription => 'Tudi tukeba action yudi wamba…';
 }

@@ -670,5 +670,8 @@
   "sourceMajorNews": "Media gedhé",
   "sourceOpinion": "Panemu",
   "earningsSummaryButton": "Apa isiné laporan paling anyar?",
-  "earningsSummaryNote": "Ringkesan AI saka pengumuman asil perusahaan lan liputan média sing ditemokaké ing web. Dudu saran investasi. Nggunakake watesan pitakon saben dina, dudu analisis."
+  "earningsSummaryNote": "Ringkesan AI saka pengumuman asil perusahaan lan liputan média sing ditemokaké ing web. Dudu saran investasi. Nggunakake watesan pitakon saben dina, dudu analisis.",
+  "compareLastSurprise": "EPS kuartal pungkasan vs. dikarepake",
+  "compareNextReport": "Laporan sabanjure",
+  "resolvingDescription": "Nemtokake saham sing sampeyan maksud…"
 }

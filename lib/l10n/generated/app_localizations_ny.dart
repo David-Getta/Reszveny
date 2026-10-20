@@ -2527,4 +2527,13 @@ class AppLocalizationsNy extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Chidule cha AI cha chilengezo cha zotsatira za kampaniyo ndi nkhani za atolankhani zomwe chimapeza pa intaneti. Si malangizo okhudza kuyika ndalama. Chimagwiritsa ntchito malire a mafunso anu a tsiku ndi tsiku, osati kusanthula.';
+
+  @override
+  String get compareLastSurprise => 'EPS ya kotala yapita vs yoyembekezeredwa';
+
+  @override
+  String get compareNextReport => 'Lipoti lotsatira';
+
+  @override
+  String get resolvingDescription => 'Tikufufuza sheya yomwe mukutanthauza…';
 }

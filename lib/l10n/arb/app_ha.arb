@@ -670,5 +670,8 @@
   "sourceMajorNews": "Babbar jarida",
   "sourceOpinion": "Ra'ayi",
   "earningsSummaryButton": "Me ke cikin rahoton baya-bayan nan?",
-  "earningsSummaryNote": "Taƙaitaccen bayanin AI na sanarwar sakamakon kamfanin da rahotannin jaridu da ya samu a yanar gizo. Ba shawarar zuba jari ba ne. Yana amfani da iyakar tambayoyinka na yau da kullum, ba nazari ba."
+  "earningsSummaryNote": "Taƙaitaccen bayanin AI na sanarwar sakamakon kamfanin da rahotannin jaridu da ya samu a yanar gizo. Ba shawarar zuba jari ba ne. Yana amfani da iyakar tambayoyinka na yau da kullum, ba nazari ba.",
+  "compareLastSurprise": "EPS na kwata ta ƙarshe da tsammani",
+  "compareNextReport": "Rahoto na gaba",
+  "resolvingDescription": "Ana gano wane hannun jari kake nufi…"
 }

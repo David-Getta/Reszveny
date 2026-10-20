@@ -670,5 +670,8 @@
   "sourceMajorNews": "主流傳媒",
   "sourceOpinion": "觀點",
   "earningsSummaryButton": "最新業績有甚麼內容？",
-  "earningsSummaryNote": "AI 概括公司的業績公告，以及在網上找到的傳媒報道。並不構成投資建議。佔用每日提問次數，不消耗分析次數。"
+  "earningsSummaryNote": "AI 概括公司的業績公告，以及在網上找到的傳媒報道。並不構成投資建議。佔用每日提問次數，不消耗分析次數。",
+  "compareLastSurprise": "上季每股盈利 vs 預期",
+  "compareNextReport": "下次業績公佈",
+  "resolvingDescription": "正在確定你所指的股票…"
 }

@@ -4362,6 +4362,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'AI summary of the company\'s results announcement and the press coverage it finds on the web. Not investment advice. Uses your daily question allowance, not an analysis.'**
   String get earningsSummaryNote;
+
+  /// Row label in the stock comparison table: by how many % the last quarter's earnings per share beat (+) or missed (-) analysts' expectations.
+  ///
+  /// In en, this message translates to:
+  /// **'Last quarter EPS vs. expected'**
+  String get compareLastSurprise;
+
+  /// Row label in the stock comparison table: the date of the company's next quarterly results.
+  ///
+  /// In en, this message translates to:
+  /// **'Next report'**
+  String get compareNextReport;
+
+  /// Progress text on the home screen while the AI works out which stock or ETF a typed description (e.g. "tech 100 etf") refers to.
+  ///
+  /// In en, this message translates to:
+  /// **'Working out which stock you mean…'**
+  String get resolvingDescription;
 }
 
 class _AppLocalizationsDelegate

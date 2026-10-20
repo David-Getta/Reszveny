@@ -2522,4 +2522,14 @@ class AppLocalizationsAz extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Şirkətin nəticələr açıqlamasının və internetdə tapdığı mətbuat xəbərlərinin AI xülasəsi. İnvestisiya məsləhəti deyil. Gündəlik sual limitinizdən istifadə edir, təhlil sərf etmir.';
+
+  @override
+  String get compareLastSurprise => 'Son rüb EPS vs. gözlənilən';
+
+  @override
+  String get compareNextReport => 'Növbəti hesabat';
+
+  @override
+  String get resolvingDescription =>
+      'Hansı səhmi nəzərdə tutduğunuz müəyyən edilir…';
 }

@@ -2511,4 +2511,13 @@ class AppLocalizationsPs extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'د شرکت د پایلو د اعلان او هغو رسنیزو خبرونو د AI لنډیز چې په وېب کې یې مومي. د پانګونې مشوره نه ده. ستاسو د ورځنیو پوښتنو له حد څخه کمېږي، شننه نه لګوي.';
+
+  @override
+  String get compareLastSurprise => 'د وروستۍ درېمیاشتنۍ EPS په پرتله متوقع';
+
+  @override
+  String get compareNextReport => 'بل راپور';
+
+  @override
+  String get resolvingDescription => 'دا معلومېږي چې ستاسو مطلب کومه ونډه ده…';
 }

@@ -24,6 +24,7 @@ import '../market_data/demo_market_data_provider.dart';
 import 'favorites_strip.dart';
 import 'markets_strip.dart';
 import '../portfolio/portfolio_page.dart';
+import '../recognition/description_resolver.dart';
 import '../recognition/stock_recognizer.dart';
 import '../updates/update_banner.dart';
 import '../billing/usage_chip.dart';
@@ -168,6 +169,9 @@ class _HomePageState extends State<HomePage> {
     if (results.isEmpty) {
       if (looksLikeTicker) {
         _open(StockCandidate(symbol: q.toUpperCase(), companyName: q.toUpperCase(), confidence: 1));
+      } else if (DescriptionResolver.looksLikeDescription(q) && services.config.hasAnthropicKey) {
+        // Leírás („tech 100 etf”): az AI találja ki, melyik részvény vagy ETF.
+        await _resolveDescription(q);
       } else {
         _showError(MarketDataException(AppErrorCode.noResults, detail: q));
       }
@@ -178,6 +182,39 @@ class _HomePageState extends State<HomePage> {
       return;
     }
     setState(() => _results = results);
+  }
+
+  /// Az AI megfejtése egy leírásra: egy biztos jelöltnél rögtön megnyitja,
+  /// többnél a választólap jön; ha semmi, a „nincs találat” üzenet.
+  Future<void> _resolveDescription(String q) async {
+    final services = AppServices.of(context);
+    final l10n = AppLocalizations.of(context);
+    setState(() {
+      _busy = true;
+      _busyLabel = l10n.resolvingDescription;
+    });
+    RecognitionResult result;
+    try {
+      final language = SupportedLocales.languageFor(Localizations.localeOf(context));
+      result = await services.descriptionResolver.resolve(q, outputLanguage: language.englishName);
+      services.telemetry.track('description_resolved');
+    } catch (_) {
+      result = const RecognitionResult(candidates: []);
+    }
+    if (!mounted) return;
+    setState(() => _busy = false);
+    if (result.isEmpty) {
+      _showError(MarketDataException(AppErrorCode.noResults, detail: q));
+      return;
+    }
+    final best = result.best!;
+    if (result.candidates.length == 1 && best.isConfident) {
+      _open(best);
+      return;
+    }
+    final chosen = await showCandidateSheet(context, result);
+    if (chosen == null || !mounted) return;
+    _open(chosen);
   }
 
   Future<void> _capture(bool camera) => _recognizeFrom(() async {

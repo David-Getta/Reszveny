@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../app_services.dart';
+import '../../core/models/analysis_extras.dart';
 import '../../core/models/stock_candidate.dart';
 import '../../core/models/stock_details.dart';
 import '../../core/models/stock_report.dart';
@@ -36,6 +37,7 @@ class ComparePage extends StatefulWidget {
 class _ComparePageState extends State<ComparePage> {
   late final List<String> _symbols = [...widget.symbols.map((s) => s.toUpperCase())];
   final Map<String, Future<StockDetails>> _details = {};
+  final Map<String, Future<EarningsOverview?>> _earnings = {};
   final Map<String, StockReport?> _reports = {};
   bool _askedOnce = false;
   Future<List<StockDetails?>>? _all;
@@ -45,6 +47,9 @@ class _ComparePageState extends State<ComparePage> {
   void _combine() => _all = Future.wait([
     for (final s in _symbols) _details[s]!.then<StockDetails?>((d) => d, onError: (Object _) => null),
   ]);
+
+  /// A gyorsjelentés-adatok oszloponként (hiba vagy hiány esetén `null`).
+  Future<List<EarningsOverview?>> _allEarnings() => Future.wait([for (final s in _symbols) _earnings[s]!]);
 
   @override
   void didChangeDependencies() {
@@ -63,6 +68,10 @@ class _ComparePageState extends State<ComparePage> {
   void _load(String symbol) {
     final services = AppServices.of(context);
     _details.putIfAbsent(symbol, () => services.marketData.details(symbol));
+    _earnings.putIfAbsent(
+      symbol,
+      () => services.marketData.earnings(symbol).then<EarningsOverview?>((e) => e, onError: (Object _) => null),
+    );
     if (!_reports.containsKey(symbol)) {
       _reports[symbol] = null;
       final language = SupportedLocales.languageFor(Localizations.localeOf(context)).englishName;
@@ -93,8 +102,6 @@ class _ComparePageState extends State<ComparePage> {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
-    final p = AppPalette.of(context);
-    final theme = Theme.of(context);
     final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
     return Scaffold(
       appBar: AppBar(
@@ -117,111 +124,130 @@ class _ComparePageState extends State<ComparePage> {
             return const Center(child: CircularProgressIndicator());
           }
           final stocks = snap.data!;
-          final rows = buildCompareRows(l10n, fmt, stocks);
-          const labelWidth = 132.0, colWidth = 118.0;
-          Widget cell(String? text, {bool best = false, bool head = false, double width = colWidth}) => Container(
-            width: width,
-            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 9),
-            decoration: best
-                ? BoxDecoration(color: p.positive.withValues(alpha: 0.14), borderRadius: BorderRadius.circular(8))
-                : null,
-            child: Text(
-              text ?? '—',
-              maxLines: head ? 2 : 3,
-              overflow: TextOverflow.ellipsis,
-              style: head
-                  ? theme.textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w700)
-                  : theme.textTheme.bodyMedium?.copyWith(
-                      fontWeight: best ? FontWeight.w700 : null,
-                      color: best ? p.positive : (text == null ? p.muted : null),
-                    ),
-            ),
-          );
-
-          return ListView(
-            padding: const EdgeInsets.fromLTRB(12, 8, 12, 32),
-            children: [
-              Text(l10n.compareHint, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
-              const SizedBox(height: 10),
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    // Fejléc: ticker, cégnév, eltávolítás.
-                    Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const SizedBox(width: labelWidth),
-                        for (final (i, s) in _symbols.indexed)
-                          SizedBox(
-                            width: colWidth,
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Row(
-                                  children: [
-                                    Expanded(
-                                      child: InkWell(
-                                        onTap: widget.onOpenSymbol == null
-                                            ? null
-                                            : () => widget.onOpenSymbol!(
-                                                StockCandidate(symbol: s, companyName: stocks[i]?.profile?.name ?? s),
-                                              ),
-                                        child: cell(s, head: true),
-                                      ),
-                                    ),
-                                    if (_symbols.length > 1)
-                                      IconButton(
-                                        key: ValueKey('compare-remove-$s'),
-                                        tooltip: l10n.compareRemove,
-                                        visualDensity: VisualDensity.compact,
-                                        icon: Icon(Icons.close_rounded, size: 16, color: p.muted),
-                                        onPressed: () => _remove(s),
-                                      ),
-                                  ],
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.symmetric(horizontal: 8),
-                                  child: Text(
-                                    stocks[i] == null ? l10n.notAvailable : (stocks[i]!.profile?.name ?? ''),
-                                    maxLines: 2,
-                                    overflow: TextOverflow.ellipsis,
-                                    style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                      ],
-                    ),
-                    const SizedBox(height: 6),
-                    for (final (r, row) in rows.indexed)
-                      Container(
-                        color: r.isEven ? p.border.withValues(alpha: 0.25) : null,
-                        child: Row(
-                          children: [
-                            cell(row.label, width: labelWidth),
-                            for (final (i, v) in row.values.indexed) cell(v, best: row.best == i),
-                          ],
-                        ),
-                      ),
-                    const SizedBox(height: 14),
-                    // Az elmentett elemzések lényege.
-                    Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        cell(l10n.aiSectionTitle, width: labelWidth),
-                        for (final s in _symbols) _AnalysisCell(report: _reports[s], width: colWidth, fmt: fmt),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-            ],
+          return FutureBuilder<List<EarningsOverview?>>(
+            future: _allEarnings(),
+            builder: (context, earningsSnap) {
+              final earnings = earningsSnap.data;
+              final rows = buildCompareRows(
+                l10n,
+                fmt,
+                stocks,
+                earnings: earnings != null && earnings.length == _symbols.length ? earnings : null,
+              );
+              return _table(context, stocks, rows);
+            },
           );
         },
       ),
+    );
+  }
+
+  Widget _table(BuildContext context, List<StockDetails?> stocks, List<CompareRow> rows) {
+    final l10n = AppLocalizations.of(context);
+    final p = AppPalette.of(context);
+    final theme = Theme.of(context);
+    final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
+    const labelWidth = 132.0, colWidth = 118.0;
+    Widget cell(String? text, {bool best = false, bool head = false, double width = colWidth}) => Container(
+      width: width,
+      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 9),
+      decoration: best
+          ? BoxDecoration(color: p.positive.withValues(alpha: 0.14), borderRadius: BorderRadius.circular(8))
+          : null,
+      child: Text(
+        text ?? '—',
+        maxLines: head ? 2 : 3,
+        overflow: TextOverflow.ellipsis,
+        style: head
+            ? theme.textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w700)
+            : theme.textTheme.bodyMedium?.copyWith(
+                fontWeight: best ? FontWeight.w700 : null,
+                color: best ? p.positive : (text == null ? p.muted : null),
+              ),
+      ),
+    );
+
+    return ListView(
+      padding: const EdgeInsets.fromLTRB(12, 8, 12, 32),
+      children: [
+        Text(l10n.compareHint, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+        const SizedBox(height: 10),
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              // Fejléc: ticker, cégnév, eltávolítás.
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const SizedBox(width: labelWidth),
+                  for (final (i, s) in _symbols.indexed)
+                    SizedBox(
+                      width: colWidth,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            children: [
+                              Expanded(
+                                child: InkWell(
+                                  onTap: widget.onOpenSymbol == null
+                                      ? null
+                                      : () => widget.onOpenSymbol!(
+                                          StockCandidate(symbol: s, companyName: stocks[i]?.profile?.name ?? s),
+                                        ),
+                                  child: cell(s, head: true),
+                                ),
+                              ),
+                              if (_symbols.length > 1)
+                                IconButton(
+                                  key: ValueKey('compare-remove-$s'),
+                                  tooltip: l10n.compareRemove,
+                                  visualDensity: VisualDensity.compact,
+                                  icon: Icon(Icons.close_rounded, size: 16, color: p.muted),
+                                  onPressed: () => _remove(s),
+                                ),
+                            ],
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 8),
+                            child: Text(
+                              stocks[i] == null ? l10n.notAvailable : (stocks[i]!.profile?.name ?? ''),
+                              maxLines: 2,
+                              overflow: TextOverflow.ellipsis,
+                              style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                ],
+              ),
+              const SizedBox(height: 6),
+              for (final (r, row) in rows.indexed)
+                Container(
+                  color: r.isEven ? p.border.withValues(alpha: 0.25) : null,
+                  child: Row(
+                    children: [
+                      cell(row.label, width: labelWidth),
+                      for (final (i, v) in row.values.indexed) cell(v, best: row.best == i),
+                    ],
+                  ),
+                ),
+              const SizedBox(height: 14),
+              // Az elmentett elemzések lényege.
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  cell(l10n.aiSectionTitle, width: labelWidth),
+                  for (final s in _symbols) _AnalysisCell(report: _reports[s], width: colWidth, fmt: fmt),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ],
     );
   }
 }

@@ -670,5 +670,8 @@
   "sourceMajorNews": "Büyük medya",
   "sourceOpinion": "Görüş",
   "earningsSummaryButton": "Son bilançoda neler vardı?",
-  "earningsSummaryNote": "Şirketin sonuç açıklamasının ve web’de bulduğu basın haberlerinin yapay zekâ özeti. Yatırım tavsiyesi değildir. Günlük soru hakkından düşer, analiz hakkı kullanmaz."
+  "earningsSummaryNote": "Şirketin sonuç açıklamasının ve web’de bulduğu basın haberlerinin yapay zekâ özeti. Yatırım tavsiyesi değildir. Günlük soru hakkından düşer, analiz hakkı kullanmaz.",
+  "compareLastSurprise": "Son çeyrek HBK vs. beklenen",
+  "compareNextReport": "Sonraki bilanço",
+  "resolvingDescription": "Hangi hisseyi kastettiğiniz belirleniyor…"
 }

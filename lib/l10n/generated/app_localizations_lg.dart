@@ -2530,4 +2530,13 @@ class AppLocalizationsLg extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Mu bufunze okuva mu AI ku birango by\'ebivudde mu kkampuni n\'amawulire g\'empapula g\'esanga ku mukutu. Si magezi ga kusiga nsimbi. Kikozesa kkomo ly’ebibuuzo byo erya buli lunaku, so si kwekenneenya.';
+
+  @override
+  String get compareLastSurprise => 'EPS ey\'ekitundu ekyayita vs esuubirwa';
+
+  @override
+  String get compareNextReport => 'Lipoota eddako';
+
+  @override
+  String get resolvingDescription => 'Tuzuula mugabo gw\'otegeeza…';
 }

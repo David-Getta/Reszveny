@@ -6,6 +6,7 @@ import '../../core/errors.dart';
 import '../../core/models/stock_candidate.dart';
 import '../../l10n/error_messages.dart';
 import '../../l10n/supported_locales.dart';
+import '../recognition/description_resolver.dart';
 import 'candidate_sheet.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
@@ -69,12 +70,22 @@ class _QuickBarState extends State<QuickBar> {
     final services = AppServices.of(context);
     final q = query.trim();
     if (q.isEmpty || _busy) return;
+    final language = SupportedLocales.languageFor(Localizations.localeOf(context));
     setState(() => _busy = true);
     List<StockCandidate> results = const [];
     try {
       results = await services.marketData.search(q);
     } catch (_) {
       results = const [];
+    }
+    // Leírás („tech 100 etf”): ha a kereső nem találja, az AI fejti meg.
+    if (results.isEmpty && DescriptionResolver.looksLikeDescription(q) && services.config.hasAnthropicKey) {
+      try {
+        results = (await services.descriptionResolver.resolve(q, outputLanguage: language.englishName)).candidates;
+        services.telemetry.track('description_resolved');
+      } catch (_) {
+        results = const [];
+      }
     }
     if (!mounted) return;
     setState(() => _busy = false);

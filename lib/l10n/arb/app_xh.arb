@@ -670,5 +670,8 @@
   "sourceMajorNews": "Umthombo omkhulu",
   "sourceOpinion": "Uluvo",
   "earningsSummaryButton": "Bekukho ntoni kwingxelo yamva nje?",
-  "earningsSummaryNote": "Isishwankathelo se-AI sesibhengezo seziphumo zenkampani kunye neendaba zoshicilelo esizifumana kwiwebhu. Ayilocebiso lotyalo-mali. Sisebenzisa umda wakho wemibuzo wemihla ngemihla, hayi uhlalutyo."
+  "earningsSummaryNote": "Isishwankathelo se-AI sesibhengezo seziphumo zenkampani kunye neendaba zoshicilelo esizifumana kwiwebhu. Ayilocebiso lotyalo-mali. Sisebenzisa umda wakho wemibuzo wemihla ngemihla, hayi uhlalutyo.",
+  "compareLastSurprise": "I-EPS yekota edlulileyo vs elindelekileyo",
+  "compareNextReport": "Ingxelo elandelayo",
+  "resolvingDescription": "Ifumanisa isabelo othetha ngaso…"
 }

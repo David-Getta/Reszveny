@@ -2561,4 +2561,13 @@ class AppLocalizationsLv extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Mākslīgā intelekta kopsavilkums par uzņēmuma rezultātu paziņojumu un preses publikācijām, ko tas atrod tīmeklī. Tā nav ieguldījumu konsultācija. Izmanto jūsu dienas jautājumu limitu, nevis analīzi.';
+
+  @override
+  String get compareLastSurprise => 'Pēdējā ceturkšņa EPS vs prognoze';
+
+  @override
+  String get compareNextReport => 'Nākamais pārskats';
+
+  @override
+  String get resolvingDescription => 'Nosaka, kuru akciju jūs domājat…';
 }

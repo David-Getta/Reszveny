@@ -2518,4 +2518,13 @@ class AppLocalizationsKab extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Agzul n AI n ubeddar n yigmaḍ n tkebbanit d wayen d-qqaren yiɣmisen i yufa deg web. Mačči d awellih n usersi n yidrimen. Yesseqdac talast-ik n yisteqsiyen n yal ass, mačči tasledt.';
+
+  @override
+  String get compareLastSurprise => 'EPS aneggaru vs i yettwarǧan';
+
+  @override
+  String get compareNextReport => 'Aneqqis d-iteddun';
+
+  @override
+  String get resolvingDescription => 'Anadi n waksyun i d-tebdreḍ…';
 }

@@ -2525,4 +2525,14 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Kompaniyaning natijalar haqidagi eʼloni va internetda topgan matbuot xabarlarining AI xulosasi. Bu investitsiya maslahati emas. Kunlik savollar limitingizdan sarflanadi, tahlil emas.';
+
+  @override
+  String get compareLastSurprise => 'Soʻnggi chorak EPS vs kutilgan';
+
+  @override
+  String get compareNextReport => 'Keyingi hisobot';
+
+  @override
+  String get resolvingDescription =>
+      'Qaysi aksiyani nazarda tutganingiz aniqlanmoqda…';
 }

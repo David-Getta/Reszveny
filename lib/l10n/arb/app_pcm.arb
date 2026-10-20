@@ -670,5 +670,8 @@
   "sourceMajorNews": "Big media",
   "sourceOpinion": "Opinion",
   "earningsSummaryButton": "Wetin dey di latest report?",
-  "earningsSummaryNote": "AI summary of di company result announcement and di press talk wey e find for web. E no be investment advice. E dey use your daily question limit, no be analysis."
+  "earningsSummaryNote": "AI summary of di company result announcement and di press talk wey e find for web. E no be investment advice. E dey use your daily question limit, no be analysis.",
+  "compareLastSurprise": "Last quarter EPS vs wetin dem expect",
+  "compareNextReport": "Next report",
+  "resolvingDescription": "We dey find out which stock you mean…"
 }

@@ -2519,4 +2519,14 @@ class AppLocalizationsTr extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Şirketin sonuç açıklamasının ve web’de bulduğu basın haberlerinin yapay zekâ özeti. Yatırım tavsiyesi değildir. Günlük soru hakkından düşer, analiz hakkı kullanmaz.';
+
+  @override
+  String get compareLastSurprise => 'Son çeyrek HBK vs. beklenen';
+
+  @override
+  String get compareNextReport => 'Sonraki bilanço';
+
+  @override
+  String get resolvingDescription =>
+      'Hangi hisseyi kastettiğiniz belirleniyor…';
 }

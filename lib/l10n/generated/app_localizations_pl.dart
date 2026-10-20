@@ -2589,4 +2589,13 @@ class AppLocalizationsPl extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Podsumowanie AI komunikatu spółki o wynikach i doniesień prasowych, które znajduje w sieci. Nie stanowi porady inwestycyjnej. Korzysta z dziennego limitu pytań, nie zużywa analizy.';
+
+  @override
+  String get compareLastSurprise => 'EPS za ostatni kwartał vs oczekiwany';
+
+  @override
+  String get compareNextReport => 'Następny raport';
+
+  @override
+  String get resolvingDescription => 'Ustalanie, o którą akcję chodzi…';
 }

@@ -670,5 +670,8 @@
   "sourceMajorNews": "Groot media",
   "sourceOpinion": "Mening",
   "earningsSummaryButton": "Wat was in die jongste verslag?",
-  "earningsSummaryNote": "AI-opsomming van die maatskappy se resultate-aankondiging en die persdekking wat dit op die web vind. Dit is nie beleggingsadvies nie. Dit gebruik jou daaglikse vraagtoelae, nie ’n ontleding nie."
+  "earningsSummaryNote": "AI-opsomming van die maatskappy se resultate-aankondiging en die persdekking wat dit op die web vind. Dit is nie beleggingsadvies nie. Dit gebruik jou daaglikse vraagtoelae, nie ’n ontleding nie.",
+  "compareLastSurprise": "Laaste kwartaal WPA vs. verwag",
+  "compareNextReport": "Volgende verslag",
+  "resolvingDescription": "Bepaal watter aandeel jy bedoel…"
 }

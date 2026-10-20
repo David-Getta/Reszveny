@@ -2515,4 +2515,13 @@ class AppLocalizationsWo extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Gàttal bu AI defar ci yégle njureefu sosete bi ak li jaaynde yi bind ci, mu gis ko ci web bi. Du ndigal ci dugal xaalis. Dafay jëfandikoo sa limu laaj yu bés bu nekk, du xayma.';
+
+  @override
+  String get compareLastSurprise => 'EPS bu mujj vs bi ñu séentu';
+
+  @override
+  String get compareNextReport => 'Njureef bi ci topp';
+
+  @override
+  String get resolvingDescription => 'Ñu ngi wut aksiyoŋ bi nga bëgg a wax…';
 }

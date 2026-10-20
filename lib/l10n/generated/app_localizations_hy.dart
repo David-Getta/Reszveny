@@ -2528,4 +2528,14 @@ class AppLocalizationsHy extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'AI-ի ամփոփում ընկերության արդյունքների հրապարակման և համացանցում գտած մամուլի արձագանքների մասին։ Ներդրումային խորհուրդ չէ։ Օգտագործում է ձեր օրական հարցերի սահմանաչափը, ոչ թե վերլուծություն։';
+
+  @override
+  String get compareLastSurprise => 'Վերջին եռամսյակի EPS vs սպասվող';
+
+  @override
+  String get compareNextReport => 'Հաջորդ հաշվետվություն';
+
+  @override
+  String get resolvingDescription =>
+      'Պարզվում է, թե որ բաժնետոմսն եք նկատի ունեցել…';
 }

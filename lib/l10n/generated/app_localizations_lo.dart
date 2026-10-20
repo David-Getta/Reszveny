@@ -2493,4 +2493,13 @@ class AppLocalizationsLo extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'ບົດສະຫຼຸບຈາກ AI ກ່ຽວກັບການປະກາດຜົນປະກອບການຂອງບໍລິສັດ ແລະ ຂ່າວໃນສື່ທີ່ມັນພົບໃນເວັບ. ບໍ່ແມ່ນຄຳແນະນຳການລົງທຶນ. ໃຊ້ໂຄຕາຄຳຖາມປະຈຳວັນຂອງທ່ານ ບໍ່ແມ່ນການວິເຄາະ.';
+
+  @override
+  String get compareLastSurprise => 'EPS ໄຕມາດຜ່ານມາ ທຽບກັບ ຄາດໄວ້';
+
+  @override
+  String get compareNextReport => 'ລາຍງານຄັ້ງຕໍ່ໄປ';
+
+  @override
+  String get resolvingDescription => 'ກຳລັງກວດຫາວ່າທ່ານໝາຍຖິງຮຸ້ນໃດ…';
 }

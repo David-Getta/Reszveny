@@ -2518,4 +2518,13 @@ class AppLocalizationsDa extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'AI-resumé af selskabets regnskabsmeddelelse og den presseomtale, den finder på nettet. Det er ikke investeringsrådgivning. Det bruger af din daglige spørgsmålskvote, ikke en analyse.';
+
+  @override
+  String get compareLastSurprise => 'Seneste kvartals EPS vs. forventet';
+
+  @override
+  String get compareNextReport => 'Næste regnskab';
+
+  @override
+  String get resolvingDescription => 'Finder ud af, hvilken aktie du mener…';
 }

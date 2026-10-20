@@ -670,5 +670,8 @@
   "sourceMajorNews": "ዓብዪ ማዕከን",
   "sourceOpinion": "ርእይቶ",
   "earningsSummaryButton": "ኣብቲ ናይ መወዳእታ ጸብጻብ እንታይ ነበረ?",
-  "earningsSummaryNote": "ናይ AI ጽማቕ ብዛዕባ መግለጺ ውጽኢት እቲ ትካልን ኣብ መርበብ ሓበሬታ ዝረኽቦ ጸብጻባት ማዕከናት ዜናን። ምኽሪ ወፍሪ ኣይኮነን። ካብ ዕለታዊ ደረት ሕቶታትኩም ይቑጸር እምበር ትንታነ ኣይጥቀምን።"
+  "earningsSummaryNote": "ናይ AI ጽማቕ ብዛዕባ መግለጺ ውጽኢት እቲ ትካልን ኣብ መርበብ ሓበሬታ ዝረኽቦ ጸብጻባት ማዕከናት ዜናን። ምኽሪ ወፍሪ ኣይኮነን። ካብ ዕለታዊ ደረት ሕቶታትኩም ይቑጸር እምበር ትንታነ ኣይጥቀምን።",
+  "compareLastSurprise": "EPS ናይ ዝሓለፈ ርብዒ ዓመት ምስ ዝተጸበ",
+  "compareNextReport": "ዝቕጽል ጸብጻብ",
+  "resolvingDescription": "እትብልዎ ኣክሲዮን ኣየናይ ምዃኑ ይልለ ኣሎ…"
 }

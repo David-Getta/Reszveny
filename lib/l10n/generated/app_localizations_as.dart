@@ -2518,4 +2518,14 @@ class AppLocalizationsAs extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'কোম্পানীৰ ফলাফল ঘোষণা আৰু ৱেবত পোৱা সংবাদ প্ৰতিবেদনৰ AI সাৰাংশ। ই বিনিয়োগৰ পৰামৰ্শ নহয়। ই আপোনাৰ দৈনিক প্ৰশ্নৰ সীমাৰ পৰা যায়, কোনো বিশ্লেষণ খৰচ নকৰে।';
+
+  @override
+  String get compareLastSurprise => 'শেষ ত্ৰৈমাসিক EPS বনাম প্ৰত্যাশিত';
+
+  @override
+  String get compareNextReport => 'পৰৱৰ্তী প্ৰতিবেদন';
+
+  @override
+  String get resolvingDescription =>
+      'আপুনি কোনটো শ্বেয়াৰ বুজাইছে চিনাক্ত কৰি থকা হৈছে…';
 }

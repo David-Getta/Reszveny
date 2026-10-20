@@ -2528,4 +2528,13 @@ class AppLocalizationsRw extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Incamake ya AI y’itangazo ry’ibyavuye mu kigo n’ibyo itangazamakuru ryanditse ibona kuri murandasi. Si inama yo gushora imari. Ikoresha umubare ntarengwa w’ibibazo byawe bya buri munsi, si isesengura.';
+
+  @override
+  String get compareLastSurprise => 'EPS y\'igihembwe gishize vs yitezwe';
+
+  @override
+  String get compareNextReport => 'Raporo ikurikira';
+
+  @override
+  String get resolvingDescription => 'Turimo gushaka umugabane ushaka kuvuga…';
 }

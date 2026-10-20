@@ -2518,4 +2518,14 @@ class AppLocalizationsHi extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'कंपनी के नतीजों की घोषणा और वेब पर मिली मीडिया कवरेज का AI सारांश। यह निवेश सलाह नहीं है। यह आपके दैनिक सवालों की सीमा से जाता है, कोई विश्लेषण खर्च नहीं होता।';
+
+  @override
+  String get compareLastSurprise => 'पिछली तिमाही EPS बनाम अनुमानित';
+
+  @override
+  String get compareNextReport => 'अगली रिपोर्ट';
+
+  @override
+  String get resolvingDescription =>
+      'पता लगाया जा रहा है कि आपका मतलब कौन सा शेयर है…';
 }

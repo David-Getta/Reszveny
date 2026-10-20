@@ -2587,4 +2587,13 @@ class AppLocalizationsBe extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Кароткі змест ад AI: паведамленне кампаніі пра вынікі і публікацыі ў прэсе, якія ён знаходзіць у інтэрнэце. Не з’яўляецца інвестыцыйнай парадай. Выкарыстоўвае дзённы ліміт пытанняў, а не аналіз.';
+
+  @override
+  String get compareLastSurprise => 'EPS за апошні квартал vs чаканы';
+
+  @override
+  String get compareNextReport => 'Наступная справаздача';
+
+  @override
+  String get resolvingDescription => 'Вызначаем, якую акцыю вы маеце на ўвазе…';
 }

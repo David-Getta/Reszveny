@@ -2578,4 +2578,13 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'ملخّص بالذكاء الاصطناعي لإعلان نتائج الشركة والتغطية الصحفية التي يجدها على الويب. لا يُعدّ نصيحة استثمارية. يُحتسب من حدّ الأسئلة اليومي ولا يستهلك تحليلًا.';
+
+  @override
+  String get compareLastSurprise => 'ربحية السهم للربع الأخير مقابل المتوقع';
+
+  @override
+  String get compareNextReport => 'التقرير القادم';
+
+  @override
+  String get resolvingDescription => 'جارٍ تحديد السهم الذي تقصده…';
 }

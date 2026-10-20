@@ -2589,4 +2589,14 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Краткое изложение от ИИ: сообщение компании о результатах и публикации в прессе, которые он находит в интернете. Не является инвестиционной рекомендацией. Расходуется дневной лимит вопросов, а не анализ.';
+
+  @override
+  String get compareLastSurprise => 'EPS за последний квартал vs ожидания';
+
+  @override
+  String get compareNextReport => 'Следующий отчёт';
+
+  @override
+  String get resolvingDescription =>
+      'Определяем, какую акцию вы имеете в виду…';
 }

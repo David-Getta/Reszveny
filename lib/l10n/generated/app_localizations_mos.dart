@@ -2507,4 +2507,13 @@ class AppLocalizationsMos extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'AI koe-bõonga kompaanyã ligd-yɛl kibarã la kibar-tʋʋmdbã sẽn gʋls a zugu, a sẽn yã internet zugã. Pa sagls ligd kẽesg wɛɛngẽ ye. A tũuda f daar fãa sokr sõorã, pa vẽenegr ye.';
+
+  @override
+  String get compareLastSurprise => 'Kiuug sẽn loogã EPS ne sẽn gũudã';
+
+  @override
+  String get compareNextReport => 'Kibay sẽn watẽ';
+
+  @override
+  String get resolvingDescription => 'D baooda aksiõ ning f sẽn dat n yeelã…';
 }

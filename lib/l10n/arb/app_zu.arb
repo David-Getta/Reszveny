@@ -670,5 +670,8 @@
   "sourceMajorNews": "Abezindaba abakhulu",
   "sourceOpinion": "Umbono",
   "earningsSummaryButton": "Bekukhona ini embikweni wakamuva?",
-  "earningsSummaryNote": "Isifinyezo se-AI sesimemezelo semiphumela yenkampani kanye nezindaba zabezindaba esizithola kuwebhu. Akuyona iseluleko sokutshala imali. Sisebenzisa umkhawulo wakho wemibuzo wansuku zonke, hhayi ukuhlaziya."
+  "earningsSummaryNote": "Isifinyezo se-AI sesimemezelo semiphumela yenkampani kanye nezindaba zabezindaba esizithola kuwebhu. Akuyona iseluleko sokutshala imali. Sisebenzisa umkhawulo wakho wemibuzo wansuku zonke, hhayi ukuhlaziya.",
+  "compareLastSurprise": "I-EPS yekota edlule vs elindelekile",
+  "compareNextReport": "Umbiko olandelayo",
+  "resolvingDescription": "Ithola isheya osho ngalo…"
 }

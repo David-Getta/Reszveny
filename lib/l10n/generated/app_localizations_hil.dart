@@ -2535,4 +2535,14 @@ class AppLocalizationsHil extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Kalip-ot sang AI sang paanunsyo sang resulta sang kompanya kag sang mga balita nga nakita sini sa web. Indi ini laygay sa pag-invest. Ginagamit sini ang imo adlaw-adlaw nga limitasyon sang pamangkot, indi ang pagtuki.';
+
+  @override
+  String get compareLastSurprise => 'EPS nagligad kwarter vs. ginapaabot';
+
+  @override
+  String get compareNextReport => 'Masunod nga report';
+
+  @override
+  String get resolvingDescription =>
+      'Ginapat-od kon ano nga stock ang buot mo silingon…';
 }

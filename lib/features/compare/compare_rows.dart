@@ -1,3 +1,4 @@
+import '../../core/models/analysis_extras.dart';
 import '../../core/models/stock_details.dart';
 import '../../core/models/stock_metrics.dart';
 import '../../core/util/formatters.dart';
@@ -37,7 +38,12 @@ int? bestIndex(List<double?> values, Better better) {
 /// Az összehasonlítás sorai: árfolyam, értékeltség, növekedés, jövedelmezőség,
 /// eladósodottság, osztalék, kockázat. A pénzösszegek oszloponként a saját
 /// devizájukban.
-List<CompareRow> buildCompareRows(AppLocalizations l10n, Fmt fmt, List<StockDetails?> stocks) {
+List<CompareRow> buildCompareRows(
+  AppLocalizations l10n,
+  Fmt fmt,
+  List<StockDetails?> stocks, {
+  List<EarningsOverview?>? earnings,
+}) {
   List<double?> metric(double? Function(StockMetrics m) f) => [
     for (final d in stocks) d?.metrics == null ? null : f(d!.metrics!),
   ];
@@ -96,5 +102,20 @@ List<CompareRow> buildCompareRows(AppLocalizations l10n, Fmt fmt, List<StockDeta
     row(l10n.labelDebtToEquity, metric((m) => m.debtToEquity), num, Better.lower),
     row(l10n.labelDividendYield, metric((m) => m.dividendYield), pct, Better.higher),
     row(l10n.labelBeta, metric((m) => m.beta), num, Better.none),
+    // Gyorsjelentések: az utolsó negyedév EPS-meglepetése (a nagyobb a jobb) és a következő jelentés napja.
+    if (earnings != null) ...[
+      row(
+        l10n.compareLastSurprise,
+        [
+          for (final (i, e) in earnings.indexed)
+            stocks[i] == null ? null : e?.history.where((h) => h.surprise != null).firstOrNull?.surprise,
+        ],
+        (v, _) => fmt.percent(v, withSign: true, decimals: 1),
+        Better.higher,
+      ),
+      CompareRow(l10n.compareNextReport, [
+        for (final (i, e) in earnings.indexed) stocks[i] == null || e?.next == null ? null : fmt.date(e!.next!.date),
+      ]),
+    ],
   ];
 }

@@ -2590,4 +2590,13 @@ class AppLocalizationsUk extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Короткий виклад від ШІ: повідомлення компанії про результати та публікації в пресі, які він знаходить в інтернеті. Не є інвестиційною порадою. Витрачається денний ліміт запитань, а не аналіз.';
+
+  @override
+  String get compareLastSurprise => 'EPS за останній квартал vs очікуваний';
+
+  @override
+  String get compareNextReport => 'Наступний звіт';
+
+  @override
+  String get resolvingDescription => 'Визначаємо, яку акцію ви маєте на увазі…';
 }

@@ -2519,4 +2519,14 @@ class AppLocalizationsMr extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'कंपनीच्या निकाल घोषणेचा आणि वेबवर मिळालेल्या माध्यमांतील वृत्तांचा AI सारांश. हा गुंतवणूक सल्ला नाही. हे तुमच्या दैनिक प्रश्न-मर्यादेतून जाते, कोणतेही विश्लेषण खर्च होत नाही.';
+
+  @override
+  String get compareLastSurprise => 'गत तिमाही EPS वि. अपेक्षित';
+
+  @override
+  String get compareNextReport => 'पुढील अहवाल';
+
+  @override
+  String get resolvingDescription =>
+      'तुम्हाला कोणता शेअर म्हणायचा आहे ते शोधत आहोत…';
 }

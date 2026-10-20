@@ -670,5 +670,8 @@
   "sourceMajorNews": "주요 언론",
   "sourceOpinion": "의견",
   "earningsSummaryButton": "최근 실적 발표 내용은?",
-  "earningsSummaryNote": "회사의 실적 발표와 웹에서 찾은 언론 보도를 AI가 요약합니다. 투자 조언이 아닙니다. 분석 횟수가 아닌 하루 질문 한도가 사용됩니다."
+  "earningsSummaryNote": "회사의 실적 발표와 웹에서 찾은 언론 보도를 AI가 요약합니다. 투자 조언이 아닙니다. 분석 횟수가 아닌 하루 질문 한도가 사용됩니다.",
+  "compareLastSurprise": "지난 분기 EPS vs 예상",
+  "compareNextReport": "다음 실적 발표",
+  "resolvingDescription": "어떤 종목인지 확인 중…"
 }

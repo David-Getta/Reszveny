@@ -2482,4 +2482,13 @@ class AppLocalizationsTi extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'ናይ AI ጽማቕ ብዛዕባ መግለጺ ውጽኢት እቲ ትካልን ኣብ መርበብ ሓበሬታ ዝረኽቦ ጸብጻባት ማዕከናት ዜናን። ምኽሪ ወፍሪ ኣይኮነን። ካብ ዕለታዊ ደረት ሕቶታትኩም ይቑጸር እምበር ትንታነ ኣይጥቀምን።';
+
+  @override
+  String get compareLastSurprise => 'EPS ናይ ዝሓለፈ ርብዒ ዓመት ምስ ዝተጸበ';
+
+  @override
+  String get compareNextReport => 'ዝቕጽል ጸብጻብ';
+
+  @override
+  String get resolvingDescription => 'እትብልዎ ኣክሲዮን ኣየናይ ምዃኑ ይልለ ኣሎ…';
 }

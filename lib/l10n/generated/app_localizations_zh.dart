@@ -2407,6 +2407,15 @@ class AppLocalizationsZh extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'AI 汇总公司的业绩公告以及在网上找到的媒体报道。不构成投资建议。占用每日提问次数，不消耗分析次数。';
+
+  @override
+  String get compareLastSurprise => '上季每股收益 vs 预期';
+
+  @override
+  String get compareNextReport => '下次财报';
+
+  @override
+  String get resolvingDescription => '正在确定你指的是哪只股票…';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -4810,4 +4819,13 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   @override
   String get earningsSummaryNote =>
       'AI 概括公司的業績公告，以及在網上找到的傳媒報道。並不構成投資建議。佔用每日提問次數，不消耗分析次數。';
+
+  @override
+  String get compareLastSurprise => '上季每股盈利 vs 預期';
+
+  @override
+  String get compareNextReport => '下次業績公佈';
+
+  @override
+  String get resolvingDescription => '正在確定你所指的股票…';
 }

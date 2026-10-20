@@ -2517,4 +2517,13 @@ class AppLocalizationsBm extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'AI ka kuma surun sosiyete ka tɔnɔ kibaru ni kunnafonidisɛbɛnw ka sɛbɛnni minnu a bɛ sɔrɔ ɛntɛrinɛti kan. Wari donni ladilikan tɛ. A bɛ bɔ i ka don o don ɲininkaliw hakɛ la, a tɛ sɛgɛsɛgɛli si ta.';
+
+  @override
+  String get compareLastSurprise => 'Kalo saba tɛmɛnen EPS ni makɔnɔnen';
+
+  @override
+  String get compareNextReport => 'Jatebɔ nata';
+
+  @override
+  String get resolvingDescription => 'I bɛ aksiyɔn min fɛ, o bɛ ka ɲini…';
 }

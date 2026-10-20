@@ -670,5 +670,8 @@
   "sourceMajorNews": "Yirik OAV",
   "sourceOpinion": "Fikr",
   "earningsSummaryButton": "Soʻnggi hisobotda nima bor edi?",
-  "earningsSummaryNote": "Kompaniyaning natijalar haqidagi eʼloni va internetda topgan matbuot xabarlarining AI xulosasi. Bu investitsiya maslahati emas. Kunlik savollar limitingizdan sarflanadi, tahlil emas."
+  "earningsSummaryNote": "Kompaniyaning natijalar haqidagi eʼloni va internetda topgan matbuot xabarlarining AI xulosasi. Bu investitsiya maslahati emas. Kunlik savollar limitingizdan sarflanadi, tahlil emas.",
+  "compareLastSurprise": "Soʻnggi chorak EPS vs kutilgan",
+  "compareNextReport": "Keyingi hisobot",
+  "resolvingDescription": "Qaysi aksiyani nazarda tutganingiz aniqlanmoqda…"
 }

@@ -2515,4 +2515,14 @@ class AppLocalizationsBho extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'कंपनी के नतीजा के घोषणा आ वेब पर मिलल खबरन के AI सारांश। ई निवेश के सलाह ना ह। ई रउआ रोज के सवाल के सीमा से जाला, कवनो विश्लेषण खरच ना होला।';
+
+  @override
+  String get compareLastSurprise => 'पिछला तिमाही EPS बनाम अनुमानित';
+
+  @override
+  String get compareNextReport => 'अगिला रिपोर्ट';
+
+  @override
+  String get resolvingDescription =>
+      'पता लगावल जा रहल बा कि रउआ कवन शेयर के बात करत बानी…';
 }

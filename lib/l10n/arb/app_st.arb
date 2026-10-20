@@ -670,5 +670,8 @@
   "sourceMajorNews": "Khatiso e kgolo",
   "sourceOpinion": "Maikutlo",
   "earningsSummaryButton": "Ho ne ho le eng tlalehong ya morao-rao?",
-  "earningsSummaryNote": "Kakaretso ya AI ya phatlalatso ya diphetho tsa khampani le ditaba tsa boralitaba tseo e di fumanang inthaneteng. Hase keletso ya ho tsetela. E sebedisa moedi wa hao wa dipotso wa letsatsi le letsatsi, eseng manollo."
+  "earningsSummaryNote": "Kakaretso ya AI ya phatlalatso ya diphetho tsa khampani le ditaba tsa boralitaba tseo e di fumanang inthaneteng. Hase keletso ya ho tsetela. E sebedisa moedi wa hao wa dipotso wa letsatsi le letsatsi, eseng manollo.",
+  "compareLastSurprise": "EPS e fetileng vs e lebelletsweng",
+  "compareNextReport": "Tlaleho e latelang",
+  "resolvingDescription": "E batla shere eo o e bolelang…"
 }

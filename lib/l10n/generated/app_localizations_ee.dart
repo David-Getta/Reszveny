@@ -2523,4 +2523,13 @@ class AppLocalizationsEe extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'AI ƒe kpuie ŋlɔ le dɔwɔƒea ƒe viɖe ŋuti gbeƒãɖeɖe kple nyadzɔdzɔŋlɔlawo ƒe nyatakaka siwo wòkpɔ le internet dzi ŋu. Menye aɖaŋuɖoɖo le gadede nu ŋu o. Etsɔna tso wò gbesiagbe nyabiasewo ƒe seɖoƒe me, mezãa dzodzro aɖeke o.';
+
+  @override
+  String get compareLastSurprise => 'EPS si va yi kple esi wole mɔ kpɔm';
+
+  @override
+  String get compareNextReport => 'Akɔntabubu si kplɔe ɖo';
+
+  @override
+  String get resolvingDescription => 'Míele akpa si nèdi la dim…';
 }

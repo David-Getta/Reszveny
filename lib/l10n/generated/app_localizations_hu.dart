@@ -2525,4 +2525,13 @@ class AppLocalizationsHu extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'AI-összefoglaló a cég eredményközleményéből és a weben talált sajtóvisszhangból. Nem befektetési tanács. A napi kérdéskeretből megy, elemzést nem fogyaszt.';
+
+  @override
+  String get compareLastSurprise => 'Utolsó negyedév EPS a várthoz képest';
+
+  @override
+  String get compareNextReport => 'Következő jelentés';
+
+  @override
+  String get resolvingDescription => 'Kitaláljuk, melyik részvényre gondolsz…';
 }

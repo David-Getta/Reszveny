@@ -57,6 +57,19 @@ void main() {
     expect(ret.best, isNotNull);
     final fromHigh = rows.firstWhere((r) => r.label == 'From 52-week high');
     expect(fromHigh.values[0], '-2.44%'); // 231,45 / 237,23 − 1
+    // Gyorsjelentés-adatokkal két sor több: a meglepetés (a nagyobb nyer) és a következő nap.
+    expect(rows.any((r) => r.label == 'Next report'), isFalse);
+    final withEarnings = buildCompareRows(
+      lookupAppLocalizations(const Locale('en')),
+      Fmt('en'),
+      stocks,
+      earnings: [await market.earnings('AAPL'), await market.earnings('MSFT'), null],
+    );
+    final surprise = withEarnings.firstWhere((r) => r.label == 'Last quarter EPS vs. expected');
+    expect(surprise.values[0], '+2.7%');
+    expect(surprise.values[2], isNull);
+    expect(surprise.best, isNotNull);
+    expect(withEarnings.firstWhere((r) => r.label == 'Next report').values[0], isNotNull);
   });
 
   testWidgets('compare from a stock page: pick a second stock, then remove one', (tester) async {
@@ -91,6 +104,10 @@ void main() {
     expect(find.text('Microsoft Corporation'), findsOneWidget);
     expect(find.text('P/E (trailing)'), findsOneWidget);
     expect(find.text('No analysis yet'), findsNWidgets(2));
+    // Gyorsjelentések: az utolsó negyedév meglepetése és a következő jelentés napja.
+    expect(find.text('Last quarter EPS vs. expected'), findsOneWidget);
+    expect(find.text('Next report'), findsOneWidget);
+    expect(find.text('+2.7%'), findsWidgets); // a demó: 1,15 a várt 1,12 helyett
 
     // Harmadik: beírt tickerrel.
     await tester.tap(find.byKey(const ValueKey('compare-add')));

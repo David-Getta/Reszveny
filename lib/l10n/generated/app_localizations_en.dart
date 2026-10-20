@@ -2518,4 +2518,13 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'AI summary of the company\'s results announcement and the press coverage it finds on the web. Not investment advice. Uses your daily question allowance, not an analysis.';
+
+  @override
+  String get compareLastSurprise => 'Last quarter EPS vs. expected';
+
+  @override
+  String get compareNextReport => 'Next report';
+
+  @override
+  String get resolvingDescription => 'Working out which stock you mean…';
 }

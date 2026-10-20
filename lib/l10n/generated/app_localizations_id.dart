@@ -2515,4 +2515,14 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get earningsSummaryNote =>
       'Ringkasan AI atas pengumuman hasil kinerja perusahaan dan liputan media yang ditemukannya di web. Bukan saran investasi. Memakai kuota pertanyaan harian Anda, bukan analisis.';
+
+  @override
+  String get compareLastSurprise => 'EPS kuartal lalu vs. diharapkan';
+
+  @override
+  String get compareNextReport => 'Laporan berikutnya';
+
+  @override
+  String get resolvingDescription =>
+      'Mencari tahu saham mana yang Anda maksud…';
 }
