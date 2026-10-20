@@ -17,6 +17,11 @@ typedef EarningsLookup = Future<DateTime?> Function(String symbol, DateTime from
 /// A részvény legfrissebb híre [from] és [to] között (cím és link), vagy `null`.
 typedef HeadlineLookup = Future<({String title, String url})?> Function(String symbol, DateTime from, DateTime to);
 
+/// A legutóbbi negyedéves eredmény (jelentett és várt EPS, a negyedév vége), ha
+/// a negyedév [since] után zárult; különben `null`.
+typedef LastResult = ({double actual, double estimate, DateTime period});
+typedef ResultLookup = Future<LastResult?> Function(String symbol, DateTime since);
+
 /// Heti összefoglaló e-mail (bekapcsolható, `weekly_digest: true` a
 /// szinkronizált adatban): hétfő reggelente megírja, hogyan mozogtak az előző
 /// héten a portfólió és a kedvencek részvényei, és melyiküknek jön
@@ -28,6 +33,7 @@ class DigestSender {
     required this.week,
     required this.earnings,
     this.headline,
+    this.results,
     this.pause = Duration.zero,
     DateTime Function()? clock,
   }) : _clock = clock ?? DateTime.now;
@@ -39,6 +45,10 @@ class DigestSender {
 
   /// Ha meg van adva, a hét legnagyobb mozgásai mellé a friss hír is bekerül.
   final HeadlineLookup? headline;
+
+  /// Ha meg van adva, a [resultDays] napon belül zárult negyedév eredménye is bekerül.
+  final ResultLookup? results;
+  static const resultDays = 45;
 
   /// Fiókonként legfeljebb ennyi hír (a legnagyobb heti mozgásokhoz).
   static const maxHeadlines = 5;
@@ -126,6 +136,8 @@ class DigestSender {
       if (accounts.isEmpty) return 0;
       final moves = <String, WeekMove>{};
       final upcoming = <String, DateTime>{};
+      final fresh = <String, LastResult>{};
+      final since = now.subtract(const Duration(days: resultDays));
       final from = DateTime.utc(now.year, now.month, now.day);
       final to = from.add(const Duration(days: earningsDays));
       var first = true;
@@ -140,6 +152,12 @@ class DigestSender {
           final e = await earnings(s, from, to);
           if (e != null) upcoming[s] = e;
         } catch (_) {}
+        if (results case final r?) {
+          try {
+            final v = await r(s, since);
+            if (v != null) fresh[s] = v;
+          } catch (_) {}
+        }
       }
       // A hírek csak a fiókonkénti legnagyobb heti mozgásokhoz kellenek.
       final news = <String, ({String title, String url})?>{};
@@ -178,6 +196,7 @@ class DigestSender {
                 upcoming[sym],
                 headline: heads[sym]?.title,
                 url: heads[sym]?.url,
+                result: fresh[sym],
               ),
         ];
         final portfolio = lines(s.portfolio), favorites = lines(s.favorites);
@@ -271,6 +290,23 @@ class DigestSender {
       }
       b.writeln();
     }
+    // Friss negyedéves eredmények: jelentett és várt EPS, a meglepetés százaléka.
+    final reported = all.where((l) => l.result != null).toList()
+      ..sort((a, b) => b.result!.period.compareTo(a.result!.period));
+    if (reported.isNotEmpty) {
+      b.writeln(hu ? 'Friss gyorsjelentések:' : 'Fresh quarterly results:');
+      for (final l in reported) {
+        final r = l.result!;
+        final surprise = r.estimate == 0 ? null : (r.actual / r.estimate - 1) * 100;
+        final beat = r.actual >= r.estimate;
+        b.writeln(
+          '  ${l.symbol} – EPS ${_n(r.actual)} (${hu ? 'várt' : 'expected'} ${_n(r.estimate)}'
+          '${surprise == null ? '' : ', ${_pct(surprise, hu: hu)}'}) – '
+          '${beat ? (hu ? 'a várt felett' : 'above expectations') : (hu ? 'a várt alatt' : 'below expectations')}',
+        );
+      }
+      b.writeln();
+    }
     final withNews = all.where((l) => l.headline != null).toList()
       ..sort((a, b) => (b.weekChange ?? 0).abs().compareTo((a.weekChange ?? 0).abs()));
     if (withNews.isNotEmpty) {
@@ -307,11 +343,23 @@ class DigestSender {
 
 /// Egy részvény sora az összefoglalóban.
 class DigestLine {
-  const DigestLine(this.symbol, this.price, this.weekChange, this.currency, this.earnings, {this.headline, this.url});
+  const DigestLine(
+    this.symbol,
+    this.price,
+    this.weekChange,
+    this.currency,
+    this.earnings, {
+    this.headline,
+    this.url,
+    this.result,
+  });
 
   /// A hét legfrissebb híre a részvényről (csak a legnagyobb mozgásoknál).
   final String? headline;
   final String? url;
+
+  /// A nemrég zárult negyedév eredménye (jelentett és várt EPS), ha van.
+  final LastResult? result;
 
   final String symbol;
   final double price;

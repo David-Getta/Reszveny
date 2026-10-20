@@ -40,6 +40,7 @@ void main() {
       return moves[s];
     },
     earnings: (s, from, to) async => s == 'MSFT' ? DateTime.utc(2026, 10, 28) : null,
+    results: (s, since) async => s == 'AAPL' ? (actual: 1.15, estimate: 1.12, period: DateTime.utc(2026, 9, 30)) : null,
     headline: (s, from, to) async {
       newsAsked.add(s);
       return s == 'NVDA' ? (title: 'Nvidia beats estimates', url: 'https://news.test/nvda') : null;
@@ -92,6 +93,7 @@ void main() {
     );
     expect(mail.text, contains('Kedvencek\n  MSFT   430.10 USD   +0,4%\n'));
     expect(mail.text, contains('Gyorsjelentés a következő két hétben:\n  MSFT – okt. 28.'));
+    expect(mail.text, contains('Friss gyorsjelentések:\n  AAPL – EPS 1.15 (várt 1.12, +2,7%) – a várt felett'));
     expect(mail.text, contains('a heti adat nem volt elérhető'));
     expect(asked.toSet(), {'AAPL', 'NVDA', 'OTP', 'MSFT'});
     // Hír csak a heti változással rendelkező, legnagyobb mozgásokhoz (az OTP-nek nincs).
@@ -111,13 +113,23 @@ void main() {
 
   test('the English e-mail', () {
     final (subject, text) = DigestSender.digestEmail(
-      [DigestLine('AAPL', 231.45, -2.5, 'USD', DateTime.utc(2026, 10, 30))],
+      [
+        DigestLine(
+          'AAPL',
+          231.45,
+          -2.5,
+          'USD',
+          DateTime.utc(2026, 10, 30),
+          result: (actual: 1.15, estimate: 1.12, period: DateTime.utc(2026, 9, 30)),
+        ),
+      ],
       const [],
       hu: false,
     );
     expect(subject, 'WhatStock weekly summary: AAPL −2.5%');
     expect(text, contains('Portfolio\n  AAPL   231.45 USD   −2.5%'));
     expect(text, contains('Results due in the next two weeks:\n  AAPL – Oct 30'));
+    expect(text, contains('Fresh quarterly results:\n  AAPL – EPS 1.15 (expected 1.12, +2.7%) – above expectations'));
     expect(text, isNot(contains('Favorites')));
     expect(text, contains('turn off the weekly summary in the app, in Settings'));
   });

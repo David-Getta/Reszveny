@@ -658,6 +658,7 @@ class Api {
     week: _weekMove,
     earnings: _earningsDate,
     headline: _latestHeadline,
+    results: _lastResult,
     pause: twelveDataApiKey.isEmpty ? const Duration(seconds: 1) : const Duration(seconds: 8),
   );
 
@@ -726,6 +727,25 @@ class Api {
           ),
     ]..sort((a, b) => b.at.compareTo(a.at));
     return items.isEmpty ? null : (title: items.first.title, url: items.first.url);
+  }
+
+  /// A legutóbbi negyedéves eredmény (Finnhub `/stock/earnings`), ha a negyedév
+  /// [since] után zárult és a jelentett és a várt EPS is megvan.
+  Future<LastResult?> _lastResult(String symbol, DateTime since) async {
+    final res = await _client
+        .get(
+          Uri.parse('$finnhubBaseUrl/stock/earnings').replace(queryParameters: {'symbol': symbol, 'limit': '1'}),
+          headers: {'X-Finnhub-Token': finnhubApiKey},
+        )
+        .timeout(const Duration(seconds: 15));
+    if (res.statusCode != 200) return null;
+    final j = jsonDecode(res.body);
+    if (j is! List || j.isEmpty || j.first is! Map) return null;
+    final e = j.first as Map;
+    final actual = e['actual'], estimate = e['estimate'];
+    final period = DateTime.tryParse('${e['period']}');
+    if (actual is! num || estimate is! num || period == null || period.isBefore(since)) return null;
+    return (actual: actual.toDouble(), estimate: estimate.toDouble(), period: period);
   }
 
   Future<DateTime?> _earningsDate(String symbol, DateTime from, DateTime to) async {

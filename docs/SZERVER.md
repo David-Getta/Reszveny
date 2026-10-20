@@ -182,6 +182,9 @@ lekérdezések között 8 másodperc szünetet tart az ingyenes keret miatt. A s
 `DIGEST_CHECK_MINUTES` percenként (alapból 60; 0 = ki) nézi, kinek esedékes; egy fióknak hat és fél
 napon belül nem megy újra (`digest_log` tábla). Nyelve a felhasználóé (magyar vagy angol).
 
+A levélben a 45 napon belül zárult negyedév eredménye is szerepel („Friss gyorsjelentések”: jelentett és várt
+EPS, meglepetés %), a Finnhub `/stock/earnings` végpontjáról, részvényenként egy hívással.
+
 ## Később (éles indulás előtt)
 
 - `VERIFY_MODE=store` a bolti fiókok és az 5b után; Stripe-kulcsok (`STRIPE_*`) az asztali és webes
