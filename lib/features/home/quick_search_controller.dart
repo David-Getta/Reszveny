@@ -2,6 +2,7 @@ import 'dart:async';
 
 import '../../core/desktop/quick_panel.dart';
 import '../../core/models/stock_candidate.dart';
+import '../recognition/description_resolver.dart';
 
 /// A natív gyorskereső panel logikája: gépelés közben (rövid várakozás után)
 /// keres, üres mezőnél a kedvenceket és a legutóbbiakat ajánlja, Enterre
@@ -16,11 +17,16 @@ class QuickSearchController implements QuickPanelHandler {
     required this.open,
     required this.pasteImage,
     required this.openWindow,
+    this.resolve,
     this.debounce = const Duration(milliseconds: 180),
   });
 
   final NativeQuickPanel panel;
   final Future<List<StockCandidate>> Function(String query) search;
+
+  /// Leírás („tech 100 etf”) megfejtése az AI-val, ha a kereső nem talál semmit;
+  /// `null`, ha nincs AI.
+  final Future<List<StockCandidate>> Function(String query)? resolve;
   final List<String> Function() favorites;
   final List<String> Function() recent;
   final String Function() recentTitle;
@@ -83,6 +89,9 @@ class QuickSearchController implements QuickPanelHandler {
     List<StockCandidate> results;
     try {
       results = await search(q);
+      if (results.isEmpty && resolve != null && DescriptionResolver.looksLikeDescription(q)) {
+        results = await resolve!(q);
+      }
     } catch (_) {
       results = const [];
     } finally {

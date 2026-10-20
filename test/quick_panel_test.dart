@@ -103,6 +103,31 @@ void main() {
       expect(_sent('setBusy').map((c) => (c.arguments as Map)['busy']), [true, false]);
     });
 
+    test('a description the search cannot place is handed to the AI resolver', () async {
+      final resolved = <String>[];
+      final c = QuickSearchController(
+        panel: panel,
+        search: (q) async => const [],
+        resolve: (q) async {
+          resolved.add(q);
+          return [const StockCandidate(symbol: 'QQQ', companyName: 'Invesco QQQ Trust', confidence: 0.95)];
+        },
+        favorites: () => const [],
+        recent: () => const [],
+        recentTitle: () => 'Recent',
+        open: (cand) async => opened.add(cand),
+        pasteImage: () async {},
+        openWindow: () async {},
+      );
+      await c.onSubmit('tech 100 etf', null);
+      expect(resolved, ['tech 100 etf']);
+      expect(opened.last.symbol, 'QQQ');
+      // Tickerre nem kérdezi az AI-t: azonnal megnyitja.
+      await c.onSubmit('nvda', null);
+      expect(resolved, hasLength(1));
+      expect(opened.last.symbol, 'NVDA');
+    });
+
     test('a pending search is dropped once enter was pressed', () async {
       controller.onQuery('ap');
       await controller.onSubmit('ap', null);

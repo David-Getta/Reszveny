@@ -226,6 +226,13 @@ class _AppShellState extends State<AppShell> {
           QuickSearchController(
             panel: panel,
             search: services.marketData.search,
+            // Leírásra („tech 100 etf”) az AI fejti meg a részvényt, ha a kereső nem találja.
+            resolve: services.config.hasAnthropicKey
+                ? (q) async => (await services.descriptionResolver.resolve(
+                    q,
+                    outputLanguage: SupportedLocales.languageFor(Localizations.localeOf(context)).englishName,
+                  )).candidates
+                : null,
             favorites: () => services.preferences.favorites,
             recent: () => services.preferences.recent,
             recentTitle: () => AppLocalizations.of(context).recentSearches,
