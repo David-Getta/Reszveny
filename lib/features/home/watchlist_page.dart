@@ -341,6 +341,7 @@ class _WatchlistPageState extends State<WatchlistPage> {
               symbol: s,
               hasAlert: services.alerts.hasActive(s),
               earnings: _soonEarnings(services, s),
+              result: services.events.recent.where((r) => r.symbol == s).firstOrNull,
               hasNote: services.notes.of(s)?.text.trim().isNotEmpty ?? false,
               quote: _quote(s),
               history: _history(s),
@@ -605,6 +606,7 @@ class _WatchRow extends StatelessWidget {
     required this.symbol,
     this.hasAlert = false,
     this.earnings,
+    this.result,
     this.hasNote = false,
     required this.quote,
     required this.history,
@@ -619,6 +621,9 @@ class _WatchRow extends StatelessWidget {
 
   /// Közeli gyorsjelentés: a ticker alatt „Holnap”, „5 nap múlva”.
   final UpcomingEvent? earnings;
+
+  /// Friss negyedéves eredmény: ha nincs közeli jelentés, a ticker alatt „EPS +2,7%”.
+  final RecentResult? result;
 
   /// Van-e saját jegyzet a részvényhez (kis ikon a ticker mellett).
   final bool hasNote;
@@ -684,6 +689,33 @@ class _WatchRow extends StatelessWidget {
                           ),
                       ],
                     ),
+                    if (result case final r? when earnings == null && r.result.surprise != null)
+                      Tooltip(
+                        message:
+                            '${r.result.beat == true ? l10n.earningsResultBeat(symbol) : l10n.earningsResultMiss(symbol)}'
+                            ' · ${l10n.earningsResultBody(fmt.number(r.result.actual), fmt.number(r.result.estimate))}',
+                        child: Row(
+                          key: ValueKey('watch-result-$symbol'),
+                          children: [
+                            Icon(
+                              r.result.beat == true ? Icons.trending_up_rounded : Icons.trending_down_rounded,
+                              size: 11,
+                              color: r.result.beat == true ? p.positive : p.negative,
+                            ),
+                            const SizedBox(width: 3),
+                            Flexible(
+                              child: Text(
+                                'EPS ${fmt.percent(r.result.surprise, withSign: true, decimals: 1)}',
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: theme.textTheme.labelSmall?.copyWith(
+                                  color: r.result.beat == true ? p.positive : p.negative,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
                     if (earnings case final e?)
                       Tooltip(
                         message: '${l10n.eventEarnings} · ${fmt.date(e.date)}',

@@ -165,6 +165,9 @@ void main() {
     await s.notes.set('MSFT', 'Felhő-üzletág figyelése');
     await tester.pumpAndSettle();
     expect(find.byKey(const ValueKey('watch-note-MSFT')), findsOneWidget);
+    // Friss negyedéves eredmény a ticker alatt (a demó: 1,15 a várt 1,12 helyett).
+    expect(find.byKey(const ValueKey('watch-result-MSFT')), findsOneWidget);
+    expect(find.text('EPS +2.7%'), findsWidgets);
 
     // A részvény melletti gombbal: új lista, benne a részvénnyel.
     await tester.tap(find.byKey(const ValueKey('watch-addto-NVDA')));
