@@ -2550,4 +2550,7 @@ class AppLocalizationsSi extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols සඳහා වත්මන් මිලක් නොමැත.';
   }
+
+  @override
+  String get eventsRecentResults => 'මෑතකදී වාර්තා කළ ප්‍රතිඵල';
 }

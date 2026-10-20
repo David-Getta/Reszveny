@@ -2571,4 +2571,7 @@ class AppLocalizationsTn extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Ga go na tlhwatlhwa ya gompieno ya $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Dipoelo tse di sa tswang go begwa';
 }

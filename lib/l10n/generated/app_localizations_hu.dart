@@ -2558,4 +2558,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Nincs aktuális ár: $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Friss gyorsjelentések';
 }

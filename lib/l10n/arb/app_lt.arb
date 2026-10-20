@@ -679,5 +679,6 @@
   "instrumentAsk": "Kas tai?",
   "instrumentNote": "DI paaiškinimas pagal emitento fondo puslapį ir finansų svetaines, kurias jis randa internete. Tai nėra investavimo rekomendacija. Naudoja jūsų dienos klausimų limitą, o ne analizę.",
   "suggestAskAi": "Klausti DI: „{query}“",
-  "portfolioNoPriceFor": "Nėra dabartinės {symbols} kainos."
+  "portfolioNoPriceFor": "Nėra dabartinės {symbols} kainos.",
+  "eventsRecentResults": "Neseniai paskelbti rezultatai"
 }

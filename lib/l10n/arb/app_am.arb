@@ -679,5 +679,6 @@
   "instrumentAsk": "ይህ ምንድን ነው?",
   "instrumentNote": "ከአውጪው የፈንድ ገጽ እና በድር ላይ ከሚገኙ የፋይናንስ ጣቢያዎች የተገኘ የAI ማብራሪያ። የኢንቨስትመንት ምክር አይደለም። ከዕለታዊ የጥያቄ ገደብዎ ይቆጠራል እንጂ ትንተና አይጠቀምም።",
   "suggestAskAi": "AIን ይጠይቁ፦ «{query}»",
-  "portfolioNoPriceFor": "ለ{symbols} የአሁኑ ዋጋ የለም።"
+  "portfolioNoPriceFor": "ለ{symbols} የአሁኑ ዋጋ የለም።",
+  "eventsRecentResults": "በቅርቡ የተዘገቡ ውጤቶች"
 }

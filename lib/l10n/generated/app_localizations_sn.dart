@@ -2558,4 +2558,7 @@ class AppLocalizationsSn extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Hapana mutengo wazvino we $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Mhedzisiro ichangoziviswa';
 }

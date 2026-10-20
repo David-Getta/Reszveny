@@ -2549,4 +2549,7 @@ class AppLocalizationsId extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Tidak ada harga terkini untuk $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Laporan terbaru';
 }

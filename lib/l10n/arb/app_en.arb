@@ -2064,5 +2064,9 @@
   "@portfolioNoPriceFor": {
     "description": "Note on the portfolio card and page naming the positions that have no current price (e.g. a non-US stock the data provider does not cover), so the total leaves them out. {symbols} is a comma-separated list of tickers.",
     "placeholders": {"symbols": {"type": "String"}}
+  },
+  "eventsRecentResults": "Recently reported",
+  "@eventsRecentResults": {
+    "description": "Section title on the events page: the quarterly results your favorite/portfolio companies published recently (EPS vs. expected), each with a link to the AI summary."
   }
 }

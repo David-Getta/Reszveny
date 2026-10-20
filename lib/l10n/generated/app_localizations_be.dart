@@ -2620,4 +2620,7 @@ class AppLocalizationsBe extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Няма актуальнай цаны для $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Нядаўна апублікаваныя вынікі';
 }

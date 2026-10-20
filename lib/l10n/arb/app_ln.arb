@@ -679,5 +679,6 @@
   "instrumentAsk": "Oyo ezali nini?",
   "instrumentNote": "Ndimbola ya AI oyo euti na lokasa ya fonds ya mobimisi mpe na ba site ya mbɔngɔ oyo ezwi na Internet. Ezali toli ya kotia mbɔngɔ te. Esalelaka ndelo ya mituna na yo ya mokolo na mokolo, kasi botaleli te.",
   "suggestAskAi": "Tuna AI: « {query} »",
-  "portfolioNoPriceFor": "Ntalo ya sikoyo ezali te mpo na {symbols}."
+  "portfolioNoPriceFor": "Ntalo ya sikoyo ezali te mpo na {symbols}.",
+  "eventsRecentResults": "Ba résultats ya sika"
 }

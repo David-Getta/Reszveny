@@ -2562,4 +2562,7 @@ class AppLocalizationsCa extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'No hi ha preu actual per a $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Resultats publicats recentment';
 }

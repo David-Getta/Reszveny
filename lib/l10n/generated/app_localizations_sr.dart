@@ -2599,4 +2599,7 @@ class AppLocalizationsSr extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Нема тренутне цене за $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Недавно објављени резултати';
 }

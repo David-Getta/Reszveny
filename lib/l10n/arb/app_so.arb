@@ -679,5 +679,6 @@
   "instrumentAsk": "Waa maxay tan?",
   "instrumentNote": "Sharaxaad AI ah oo ka timid bogga sanduuqa ee soo saaraha iyo boggaga maaliyadda ee ay ka hesho shabakadda. Ma aha talo maalgashi. Waxay isticmaashaa xadka su’aalahaaga maalinlaha ah, ma aha falanqayn.",
   "suggestAskAi": "Weydii AI: “{query}”",
-  "portfolioNoPriceFor": "{symbols} ma laha qiime hadda ah."
+  "portfolioNoPriceFor": "{symbols} ma laha qiime hadda ah.",
+  "eventsRecentResults": "Natiijooyinka dhawaan la sheegay"
 }

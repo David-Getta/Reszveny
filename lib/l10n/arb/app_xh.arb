@@ -679,5 +679,6 @@
   "instrumentAsk": "Yintoni le?",
   "instrumentNote": "Ingcaciso ye-AI esuka kwiphepha lengxowa-mali lomkhuphi nakwiisayithi zezemali ezifumana kwiwebhu. Ayilocebiso lotyalo-mali. Sisebenzisa umda wakho wemibuzo wemihla ngemihla, hayi uhlalutyo.",
   "suggestAskAi": "Buza i-AI: “{query}”",
-  "portfolioNoPriceFor": "Akukho xabiso langoku kwi-{symbols}."
+  "portfolioNoPriceFor": "Akukho xabiso langoku kwi-{symbols}.",
+  "eventsRecentResults": "Iziphumo ezisandula kuxelwa"
 }

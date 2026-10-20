@@ -2553,4 +2553,7 @@ class AppLocalizationsNb extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Ingen aktuell kurs for $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Nylig rapporterte resultater';
 }

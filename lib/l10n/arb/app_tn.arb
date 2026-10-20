@@ -679,5 +679,6 @@
   "instrumentAsk": "Ke eng seno?",
   "instrumentNote": "Tlhaloso ya AI go tswa mo tsebeng ya letlole ya morekisi le diwebosaete tsa ditšhelete tse e di bonang mo inthaneteng. Ga se kgakololo ya peeletso. E dirisa tekanyetso ya gago ya dipotso ya letsatsi le letsatsi, e seng tshekatsheko.",
   "suggestAskAi": "Botsa AI: “{query}”",
-  "portfolioNoPriceFor": "Ga go na tlhwatlhwa ya gompieno ya {symbols}."
+  "portfolioNoPriceFor": "Ga go na tlhwatlhwa ya gompieno ya {symbols}.",
+  "eventsRecentResults": "Dipoelo tse di sa tswang go begwa"
 }

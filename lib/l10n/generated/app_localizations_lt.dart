@@ -2620,4 +2620,7 @@ class AppLocalizationsLt extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Nėra dabartinės $symbols kainos.';
   }
+
+  @override
+  String get eventsRecentResults => 'Neseniai paskelbti rezultatai';
 }

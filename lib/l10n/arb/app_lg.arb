@@ -679,5 +679,6 @@
   "instrumentAsk": "Kino kiki?",
   "instrumentNote": "Okunnyonnyola kwa AI okuva ku lupapula lwa fund lw’oyo agifulumya n’emikutu gy’ebyensimbi gy’esanga ku mukutu. Si magezi ga kusiga nsimbi. Kikozesa kkomo ly’ebibuuzo byo erya buli lunaku, so si kwekenneenya.",
   "suggestAskAi": "Buuza AI: “{query}”",
-  "portfolioNoPriceFor": "Tewali bbeeyi ya kati eya {symbols}."
+  "portfolioNoPriceFor": "Tewali bbeeyi ya kati eya {symbols}.",
+  "eventsRecentResults": "Ebivudde ebyakalangirirwa"
 }

@@ -2554,4 +2554,7 @@ class AppLocalizationsTk extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols üçin häzirki baha ýok.';
   }
+
+  @override
+  String get eventsRecentResults => 'Ýaňy-ýakynda yglan edilen netijeler';
 }

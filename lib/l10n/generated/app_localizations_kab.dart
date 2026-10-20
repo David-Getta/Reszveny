@@ -2551,4 +2551,7 @@ class AppLocalizationsKab extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Ulac ssuma tamirant i $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Igmaḍ i d-yettwabedren melmi kan';
 }

@@ -2564,4 +2564,7 @@ class AppLocalizationsFr extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Pas de cours actuel pour $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Résultats récents';
 }

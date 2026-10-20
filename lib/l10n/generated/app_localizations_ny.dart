@@ -2560,4 +2560,7 @@ class AppLocalizationsNy extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Palibe mtengo wapano wa $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Zotsatira zolengezedwa posachedwa';
 }

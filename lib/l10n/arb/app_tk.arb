@@ -679,5 +679,6 @@
   "instrumentAsk": "Bu näme?",
   "instrumentNote": "Emitentiň gazna sahypasyna we internetde tapan maliýe saýtlaryna esaslanan AI düşündirişi. Maýa goýum maslahaty däldir. Gündelik sorag çägiňizden harçlanýar, seljerme däl.",
   "suggestAskAi": "AI-dan soraň: “{query}”",
-  "portfolioNoPriceFor": "{symbols} üçin häzirki baha ýok."
+  "portfolioNoPriceFor": "{symbols} üçin häzirki baha ýok.",
+  "eventsRecentResults": "Ýaňy-ýakynda yglan edilen netijeler"
 }

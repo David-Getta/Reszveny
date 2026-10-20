@@ -679,5 +679,6 @@
   "instrumentAsk": "Kaj je to?",
   "instrumentNote": "Pojasnilo umetne inteligence na podlagi strani sklada pri izdajatelju in finančnih spletnih mest, ki jih najde na spletu. Ni naložbeni nasvet. Porabi vašo dnevno omejitev vprašanj, ne analize.",
   "suggestAskAi": "Vprašajte AI: »{query}«",
-  "portfolioNoPriceFor": "Ni trenutne cene za {symbols}."
+  "portfolioNoPriceFor": "Ni trenutne cene za {symbols}.",
+  "eventsRecentResults": "Nedavno objavljeni rezultati"
 }

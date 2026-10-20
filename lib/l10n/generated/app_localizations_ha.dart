@@ -2558,4 +2558,7 @@ class AppLocalizationsHa extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Babu farashin yanzu na $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Sakamakon da aka bayyana kwanan nan';
 }

@@ -2572,4 +2572,7 @@ class AppLocalizationsMk extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Нема актуелна цена за $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Неодамна објавени резултати';
 }

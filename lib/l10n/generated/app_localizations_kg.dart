@@ -2561,4 +2561,7 @@ class AppLocalizationsKg extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Ka kuena ntalu ya bubu ya $symbols ko.';
   }
+
+  @override
+  String get eventsRecentResults => 'Ba résultats ya mpa';
 }

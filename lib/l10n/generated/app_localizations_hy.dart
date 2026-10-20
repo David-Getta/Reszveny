@@ -2562,4 +2562,7 @@ class AppLocalizationsHy extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols-ի ընթացիկ գինը չկա։';
   }
+
+  @override
+  String get eventsRecentResults => 'Վերջերս հրապարակված արդյունքներ';
 }

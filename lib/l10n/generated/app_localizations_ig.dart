@@ -2548,4 +2548,7 @@ class AppLocalizationsIg extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Enweghị ọnụahịa ugbu a maka $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Nsonaazụ e kwuputara nso nso a';
 }

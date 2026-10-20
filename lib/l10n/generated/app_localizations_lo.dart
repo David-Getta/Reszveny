@@ -2526,4 +2526,7 @@ class AppLocalizationsLo extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'ບໍ່ມີລາຄາປັດຈຸບັນສຳລັບ $symbols';
   }
+
+  @override
+  String get eventsRecentResults => 'ຜົນປະກອບການທີ່ລາຍງານຫຼ້າສຸດ';
 }

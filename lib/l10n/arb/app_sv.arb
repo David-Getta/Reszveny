@@ -679,5 +679,6 @@
   "instrumentAsk": "Vad är det här?",
   "instrumentNote": "AI-förklaring utifrån utgivarens fondsida och finanssajter den hittar på webben. Det är inte investeringsrådgivning. Använder din dagliga frågekvot, inte en analys.",
   "suggestAskAi": "Fråga AI:n: ”{query}”",
-  "portfolioNoPriceFor": "Ingen aktuell kurs för {symbols}."
+  "portfolioNoPriceFor": "Ingen aktuell kurs för {symbols}.",
+  "eventsRecentResults": "Senaste kvartalsrapporter"
 }

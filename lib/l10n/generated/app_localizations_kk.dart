@@ -2554,4 +2554,7 @@ class AppLocalizationsKk extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols үшін ағымдағы баға жоқ.';
   }
+
+  @override
+  String get eventsRecentResults => 'Жақында жарияланған нәтижелер';
 }

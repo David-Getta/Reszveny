@@ -679,5 +679,6 @@
   "instrumentAsk": "Bu nedir?",
   "instrumentNote": "İhraççının fon sayfası ve web’de bulduğu finans sitelerine dayanan yapay zekâ açıklaması. Yatırım tavsiyesi değildir. Günlük soru hakkından düşer, analiz hakkı kullanmaz.",
   "suggestAskAi": "Yapay zekâya sorun: “{query}”",
-  "portfolioNoPriceFor": "{symbols} için güncel fiyat yok."
+  "portfolioNoPriceFor": "{symbols} için güncel fiyat yok.",
+  "eventsRecentResults": "Son açıklanan bilançolar"
 }

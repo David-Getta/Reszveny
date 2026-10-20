@@ -2564,4 +2564,7 @@ class AppLocalizationsMl extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols-ന് നിലവിലെ വില ലഭ്യമല്ല.';
   }
+
+  @override
+  String get eventsRecentResults => 'അടുത്തിടെ റിപ്പോർട്ട് ചെയ്ത ഫലങ്ങൾ';
 }

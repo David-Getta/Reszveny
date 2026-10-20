@@ -2572,4 +2572,7 @@ class AppLocalizationsIlo extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Awan ti agdama a presio para iti $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Kabarbaro a naireport a resulta';
 }

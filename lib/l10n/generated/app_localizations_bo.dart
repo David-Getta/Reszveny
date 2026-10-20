@@ -2542,4 +2542,7 @@ class AppLocalizationsBo extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols ལ་ད་ལྟའི་གོང་ཚད་མེད།';
   }
+
+  @override
+  String get eventsRecentResults => 'ཉེ་ཆར་སྙན་ཞུ་བྱས་པའི་གྲུབ་འབྲས';
 }

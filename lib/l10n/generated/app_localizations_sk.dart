@@ -2619,4 +2619,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Pre $symbols nie je k dispozícii aktuálna cena.';
   }
+
+  @override
+  String get eventsRecentResults => 'Nedávno zverejnené výsledky';
 }

@@ -2474,4 +2474,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbolsの現在の株価はありません。';
   }
+
+  @override
+  String get eventsRecentResults => '最近の決算';
 }

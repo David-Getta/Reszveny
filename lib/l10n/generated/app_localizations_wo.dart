@@ -2548,4 +2548,7 @@ class AppLocalizationsWo extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Amul njëg bu léegi ngir $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Njureef yu bees yi ñu yégle';
 }

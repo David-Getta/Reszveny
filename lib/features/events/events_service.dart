@@ -10,6 +10,9 @@ import '../portfolio/portfolio_store.dart';
 
 enum UpcomingEventKind { earnings, catalyst }
 
+/// Egy figyelt részvény friss negyedéves eredménye.
+typedef RecentResult = ({String symbol, EarningsSurprise result});
+
 /// Egy közelgő esemény: gyorsjelentés (piaci adatból) vagy egy elemzésben
 /// megjelölt esemény (a felhasználó nyelvén, ahogy az elemzés írta).
 class UpcomingEvent {
@@ -62,8 +65,16 @@ class EventsService extends ChangeNotifier {
   static const parallel = 4;
   static const cacheFor = Duration(hours: 12);
 
-  final Map<String, (DateTime at, UpcomingEarnings? next)> _earnings = {};
+  final Map<String, (DateTime at, EarningsOverview overview)> _earnings = {};
   List<UpcomingEvent> _events = const [];
+  List<RecentResult> _recent = const [];
+
+  /// Ennyi napon belül zárult negyedév eredménye számít frissnek.
+  static const recentDays = 45;
+
+  /// A figyelt részvények friss (már megjelent) negyedéves eredményei, a
+  /// legújabb negyedév elöl.
+  List<RecentResult> get recent => _recent;
   bool _loading = false;
   bool _loaded = false;
 
@@ -97,7 +108,7 @@ class EventsService extends ChangeNotifier {
           final cached = _earnings[s];
           if (!force && cached != null && _clock().difference(cached.$1) < cacheFor) continue;
           try {
-            _earnings[s] = (_clock(), await marketData.nextEarnings(s).timeout(const Duration(seconds: 20)));
+            _earnings[s] = (_clock(), await marketData.earnings(s).timeout(const Duration(seconds: 20)));
           } catch (e) {
             // Egy részvény hibája nem akadályozza a többit.
             debugPrint('Gyorsjelentés-dátum nem tölthető ($s): $e');
@@ -109,7 +120,7 @@ class EventsService extends ChangeNotifier {
 
       final list = <UpcomingEvent>[
         for (final s in symbols)
-          if (_earnings[s]?.$2 case final e? when inRange(_day(e.date)))
+          if (_earnings[s]?.$2.next case final e? when inRange(_day(e.date)))
             UpcomingEvent(
               symbol: s,
               date: _day(e.date),
@@ -141,6 +152,18 @@ class EventsService extends ChangeNotifier {
         return byDate != 0 ? byDate : a.symbol.compareTo(b.symbol);
       });
       _events = list;
+      // Friss eredmények: a legutóbbi negyedév, ha [recentDays] napon belül zárult.
+      final recent =
+          <RecentResult>[
+            for (final s in symbols)
+              if (_earnings[s]?.$2.history.where((h) => h.actual != null && h.estimate != null).firstOrNull
+                  case final r? when !r.period.isAfter(today) && today.difference(_day(r.period)).inDays <= recentDays)
+                (symbol: s, result: r),
+          ]..sort((a, b) {
+            final byPeriod = b.result.period.compareTo(a.result.period);
+            return byPeriod != 0 ? byPeriod : a.symbol.compareTo(b.symbol);
+          });
+      _recent = recent;
       _loaded = true;
     } finally {
       _loading = false;

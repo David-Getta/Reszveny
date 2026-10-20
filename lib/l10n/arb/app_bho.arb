@@ -679,5 +679,6 @@
   "instrumentAsk": "ई का ह?",
   "instrumentNote": "जारीकर्ता के फंड पेज आ वेब पर मिलल वित्तीय साइटन से AI के समझावल। ई निवेश के सलाह ना ह। ई रउआ रोज के सवाल के सीमा से जाला, कवनो विश्लेषण खरच ना होला।",
   "suggestAskAi": "AI से पूछीं: “{query}”",
-  "portfolioNoPriceFor": "{symbols} खातिर अबही के दाम उपलब्ध नइखे।"
+  "portfolioNoPriceFor": "{symbols} खातिर अबही के दाम उपलब्ध नइखे।",
+  "eventsRecentResults": "हाले के घोषित नतीजा"
 }

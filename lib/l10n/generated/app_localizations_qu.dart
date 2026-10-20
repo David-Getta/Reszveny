@@ -2568,4 +2568,7 @@ class AppLocalizationsQu extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols-paq kunan chaninnin mana kanchu.';
   }
+
+  @override
+  String get eventsRecentResults => 'Chayraq willakusqa willakuykuna';
 }

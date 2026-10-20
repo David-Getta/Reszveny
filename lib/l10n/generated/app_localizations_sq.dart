@@ -2560,4 +2560,7 @@ class AppLocalizationsSq extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Nuk ka çmim aktual për $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Rezultatet e fundit';
 }

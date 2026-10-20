@@ -2551,4 +2551,7 @@ class AppLocalizationsOr extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols ପାଇଁ ବର୍ତ୍ତମାନର ଦର ଉପଲବ୍ଧ ନାହିଁ।';
   }
+
+  @override
+  String get eventsRecentResults => 'ସମ୍ପ୍ରତି ଘୋଷିତ ଫଳାଫଳ';
 }

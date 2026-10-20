@@ -2545,4 +2545,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'אין מחיר נוכחי עבור $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'דוחות שפורסמו לאחרונה';
 }

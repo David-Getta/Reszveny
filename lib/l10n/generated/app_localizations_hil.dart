@@ -2569,4 +2569,7 @@ class AppLocalizationsHil extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Wala sang presyo subong para sa $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Bag-o lang gin-report nga resulta';
 }

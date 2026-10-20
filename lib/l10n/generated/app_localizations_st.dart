@@ -2567,4 +2567,7 @@ class AppLocalizationsSt extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Ha ho theko ya hona jwale ya $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Diphetho tse sa tswa tlalehwa';
 }

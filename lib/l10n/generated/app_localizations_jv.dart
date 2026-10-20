@@ -2555,4 +2555,7 @@ class AppLocalizationsJv extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Ora ana rega saiki kanggo $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Laporan anyar';
 }

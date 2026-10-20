@@ -2553,4 +2553,7 @@ class AppLocalizationsKi extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Gũtirĩ thogora wa rĩu wa $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Maumĩrĩra marĩa maheanirwo ica ikuhĩ';
 }

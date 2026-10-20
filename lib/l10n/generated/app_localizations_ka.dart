@@ -2554,4 +2554,7 @@ class AppLocalizationsKa extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols-ის მიმდინარე ფასი არ არის.';
   }
+
+  @override
+  String get eventsRecentResults => 'ახლახან გამოქვეყნებული შედეგები';
 }

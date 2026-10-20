@@ -2562,4 +2562,7 @@ class AppLocalizationsSo extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols ma laha qiime hadda ah.';
   }
+
+  @override
+  String get eventsRecentResults => 'Natiijooyinka dhawaan la sheegay';
 }

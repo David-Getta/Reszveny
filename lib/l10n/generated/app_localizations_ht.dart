@@ -2551,4 +2551,7 @@ class AppLocalizationsHt extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Pa gen pri aktyèl pou $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Rezilta ki fèk pibliye';
 }

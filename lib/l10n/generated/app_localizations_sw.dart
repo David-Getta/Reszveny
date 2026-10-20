@@ -2554,4 +2554,7 @@ class AppLocalizationsSw extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Hakuna bei ya sasa kwa $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Matokeo yaliyoripotiwa hivi karibuni';
 }

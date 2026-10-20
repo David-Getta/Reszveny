@@ -679,5 +679,6 @@
   "instrumentAsk": "Mbaʼépa kóva?",
   "instrumentNote": "AI omyesakã pe emisor fondo kuatiarogue ha umi sitio financiero otopáva ñandutípe rupive. Ndahaʼéi ñemoñeʼẽ inversión rehegua. Oipuru ne porandu papapy ára ha ára guarã, ndahaʼéi jehesaʼỹijo.",
   "suggestAskAi": "Eporandu AI-pe: “{query}”",
-  "portfolioNoPriceFor": "Ndaipóri {symbols} tepy ko'ag̃agua."
+  "portfolioNoPriceFor": "Ndaipóri {symbols} tepy ko'ag̃agua.",
+  "eventsRecentResults": "Resultado pyahu oñemomarandúva"
 }

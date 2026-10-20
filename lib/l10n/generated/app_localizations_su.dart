@@ -2556,4 +2556,7 @@ class AppLocalizationsSu extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Teu aya harga ayeuna pikeun $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Laporan anyar';
 }

@@ -679,5 +679,6 @@
   "instrumentAsk": "እዚ እንታይ እዩ?",
   "instrumentNote": "ናይ AI መብርሂ ካብ ገጽ ፈንድ ናይ ኣውጻኢን ኣብ መርበብ ሓበሬታ ዝረኽቦ ፋይናንሳዊ መርበባትን። ምኽሪ ወፍሪ ኣይኮነን። ካብ ዕለታዊ ደረት ሕቶታትኩም ይቑጸር እምበር ትንታነ ኣይጥቀምን።",
   "suggestAskAi": "ንAI ሕተቱ፦ «{query}»",
-  "portfolioNoPriceFor": "ን{symbols} ህሉው ዋጋ የለን።"
+  "portfolioNoPriceFor": "ን{symbols} ህሉው ዋጋ የለን።",
+  "eventsRecentResults": "ኣብ ቀረባ እዋን ዝተሓበረ ውጽኢት"
 }

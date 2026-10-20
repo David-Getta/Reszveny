@@ -679,5 +679,6 @@
   "instrumentAsk": "I yini lexi?",
   "instrumentNote": "Nhlamuselo ya AI ku suka eka pheji ya nkwama ya muhumelerisi na tiwebsayiti ta timali leti yi ti kumaka ewebeni. A hi ndzayo ya vuvekisi. Yi tirhisa ndzelekano wa wena wa swivutiso wa siku na siku, ku nga ri nxopaxopo.",
   "suggestAskAi": "Vutisa AI: “{query}”",
-  "portfolioNoPriceFor": "A ku na nxavo wa sweswi wa {symbols}."
+  "portfolioNoPriceFor": "A ku na nxavo wa sweswi wa {symbols}.",
+  "eventsRecentResults": "Mbuyelo lowu ha ku vikiwaka"
 }

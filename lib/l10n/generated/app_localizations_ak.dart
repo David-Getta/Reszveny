@@ -2552,4 +2552,7 @@ class AppLocalizationsAk extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Seesei bo biara nni hɔ mma $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Akontaabu a wɔabɔ ho amanneɛ nnansa yi';
 }

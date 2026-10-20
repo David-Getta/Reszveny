@@ -106,6 +106,9 @@ void main() {
     ]);
     expect(s.events.first.hour, 'amc');
     expect(market.calls..sort(), ['AAPL', 'MSFT']);
+    // Friss eredmények: a demó utolsó negyedéve (1,15 a várt 1,12 helyett) mindkettőnél.
+    expect(s.recent.map((r) => r.symbol), ['AAPL', 'MSFT']);
+    expect(s.recent.first.result.actual, 1.15);
 
     await s.refresh();
     expect(market.calls, hasLength(2), reason: 'cached');
@@ -173,6 +176,15 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.textContaining('Results dates of your favorites'), findsOneWidget);
     expect(find.text('GTC keynote\nFrom your analysis'), findsOneWidget);
+    // Friss eredmények: várt felett, a számokkal; a ✨ gomb az AI-összefoglalót nyitja.
+    expect(find.text('Recently reported'), findsOneWidget);
+    expect(find.text('AAPL beat the expected EPS'), findsOneWidget);
+    expect(find.textContaining('Reported EPS 1.15, expected 1.12 · +2.7%'), findsNWidgets(2));
+    await tester.tap(find.byKey(const ValueKey('recent-summary-AAPL')));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('earnings-summary-sheet')), findsOneWidget);
+    Navigator.of(tester.element(find.byKey(const ValueKey('earnings-summary-sheet')))).pop();
+    await tester.pumpAndSettle();
 
     // Az összes esemény a naptárba (.ics).
     final saved = <String, String>{};

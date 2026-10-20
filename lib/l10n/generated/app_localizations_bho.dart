@@ -2549,4 +2549,7 @@ class AppLocalizationsBho extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols खातिर अबही के दाम उपलब्ध नइखे।';
   }
+
+  @override
+  String get eventsRecentResults => 'हाले के घोषित नतीजा';
 }

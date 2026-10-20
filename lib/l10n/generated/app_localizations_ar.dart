@@ -2611,4 +2611,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'لا يوجد سعر حالي لـ $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'النتائج المُعلنة مؤخرًا';
 }

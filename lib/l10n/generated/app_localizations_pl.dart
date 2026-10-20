@@ -2622,4 +2622,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Brak aktualnej ceny dla $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Niedawno opublikowane wyniki';
 }

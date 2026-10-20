@@ -2549,4 +2549,7 @@ class AppLocalizationsFa extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'قیمت فعلی برای $symbols موجود نیست.';
   }
+
+  @override
+  String get eventsRecentResults => 'نتایج تازه اعلام‌شده';
 }

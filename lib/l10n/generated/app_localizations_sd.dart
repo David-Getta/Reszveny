@@ -2545,4 +2545,7 @@ class AppLocalizationsSd extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols لاءِ موجوده قيمت موجود ناهي.';
   }
+
+  @override
+  String get eventsRecentResults => 'تازو جاري ڪيل نتيجا';
 }

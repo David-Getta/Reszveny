@@ -2571,4 +2571,7 @@ class AppLocalizationsMg extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Tsy misy vidiny ankehitriny ho an\'ny $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Vokatra vao navoaka';
 }

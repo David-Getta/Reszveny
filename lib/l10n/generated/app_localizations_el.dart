@@ -2562,4 +2562,7 @@ class AppLocalizationsEl extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Δεν υπάρχει τρέχουσα τιμή για $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Πρόσφατα αποτελέσματα';
 }

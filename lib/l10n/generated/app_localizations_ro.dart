@@ -2593,4 +2593,7 @@ class AppLocalizationsRo extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Nu există preț curent pentru $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Rezultate recente';
 }

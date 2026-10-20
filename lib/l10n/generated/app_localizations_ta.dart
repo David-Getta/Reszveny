@@ -2563,4 +2563,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols-க்கு தற்போதைய விலை கிடைக்கவில்லை.';
   }
+
+  @override
+  String get eventsRecentResults => 'சமீபத்தில் அறிவிக்கப்பட்ட முடிவுகள்';
 }

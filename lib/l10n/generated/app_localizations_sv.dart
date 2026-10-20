@@ -2554,4 +2554,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Ingen aktuell kurs för $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Senaste kvartalsrapporter';
 }

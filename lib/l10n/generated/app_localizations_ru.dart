@@ -2623,4 +2623,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Нет текущей цены для $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Свежая отчётность';
 }

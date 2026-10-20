@@ -2566,4 +2566,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Kein aktueller Kurs für $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Frische Quartalszahlen';
 }

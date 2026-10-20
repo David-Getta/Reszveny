@@ -679,5 +679,6 @@
   "instrumentAsk": "Bu nədir?",
   "instrumentNote": "Emitentin fond səhifəsindən və internetdə tapdığı maliyyə saytlarından AI izahı. İnvestisiya məsləhəti deyil. Gündəlik sual limitinizdən istifadə edir, təhlil sərf etmir.",
   "suggestAskAi": "AI-dən soruşun: «{query}»",
-  "portfolioNoPriceFor": "{symbols} üçün cari qiymət yoxdur."
+  "portfolioNoPriceFor": "{symbols} üçün cari qiymət yoxdur.",
+  "eventsRecentResults": "Son açıqlanan nəticələr"
 }

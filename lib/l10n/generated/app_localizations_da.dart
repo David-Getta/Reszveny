@@ -2551,4 +2551,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Ingen aktuel kurs for $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Seneste regnskaber';
 }

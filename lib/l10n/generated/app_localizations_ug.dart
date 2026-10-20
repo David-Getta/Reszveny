@@ -2556,4 +2556,7 @@ class AppLocalizationsUg extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols ئۈچۈن نۆۋەتتىكى باھا يوق.';
   }
+
+  @override
+  String get eventsRecentResults => 'يېقىندا ئېلان قىلىنغان نەتىجىلەر';
 }

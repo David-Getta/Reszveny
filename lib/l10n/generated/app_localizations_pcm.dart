@@ -2553,4 +2553,7 @@ class AppLocalizationsPcm extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols no get current price.';
   }
+
+  @override
+  String get eventsRecentResults => 'Result wey dem just report';
 }

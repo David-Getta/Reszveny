@@ -2559,4 +2559,7 @@ class AppLocalizationsTe extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols కోసం ప్రస్తుత ధర అందుబాటులో లేదు.';
   }
+
+  @override
+  String get eventsRecentResults => 'ఇటీవల ప్రకటించిన ఫలితాలు';
 }

@@ -2563,4 +2563,7 @@ class AppLocalizationsLg extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Tewali bbeeyi ya kati eya $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Ebivudde ebyakalangirirwa';
 }

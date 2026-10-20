@@ -2556,4 +2556,7 @@ class AppLocalizationsAz extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols üçün cari qiymət yoxdur.';
   }
+
+  @override
+  String get eventsRecentResults => 'Son açıqlanan nəticələr';
 }

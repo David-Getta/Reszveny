@@ -2540,4 +2540,7 @@ class AppLocalizationsMos extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols koosg ka be masã ye.';
   }
+
+  @override
+  String get eventsRecentResults => 'Ligd-yɛl paal sẽn wilgã';
 }

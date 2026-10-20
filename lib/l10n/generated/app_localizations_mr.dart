@@ -2553,4 +2553,7 @@ class AppLocalizationsMr extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols साठी वर्तमान किंमत उपलब्ध नाही.';
   }
+
+  @override
+  String get eventsRecentResults => 'नुकतेच जाहीर झालेले निकाल';
 }

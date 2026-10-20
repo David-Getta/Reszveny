@@ -2550,4 +2550,7 @@ class AppLocalizationsBm extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols sisan sɔngɔ tɛ yen.';
   }
+
+  @override
+  String get eventsRecentResults => 'Jatebɔ fɔlen kuraw';
 }

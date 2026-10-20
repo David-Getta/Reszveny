@@ -2547,4 +2547,7 @@ class AppLocalizationsMai extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols लेल वर्तमान दाम उपलब्ध नहि अछि।';
   }
+
+  @override
+  String get eventsRecentResults => 'हालहि रिपोर्ट कएल गेल परिणाम';
 }

@@ -2562,4 +2562,7 @@ class AppLocalizationsOm extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Gatiin ammaa $symbols hin jiru.';
   }
+
+  @override
+  String get eventsRecentResults => 'Bu\'aa dhiheenya gabaafame';
 }

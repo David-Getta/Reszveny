@@ -2561,4 +2561,7 @@ class AppLocalizationsRw extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Nta giciro cya none cya $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Ibyatangajwe vuba';
 }

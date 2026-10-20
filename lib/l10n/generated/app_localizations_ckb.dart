@@ -2554,4 +2554,7 @@ class AppLocalizationsCkb extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'نرخی ئێستا بۆ $symbols نییە.';
   }
+
+  @override
+  String get eventsRecentResults => 'ئەنجامەکانی تازە ڕاگەیەنراو';
 }

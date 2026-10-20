@@ -2553,4 +2553,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols کے لیے موجودہ قیمت دستیاب نہیں۔';
   }
+
+  @override
+  String get eventsRecentResults => 'حال ہی میں رپورٹ شدہ نتائج';
 }

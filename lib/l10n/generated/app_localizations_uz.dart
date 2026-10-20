@@ -2559,4 +2559,7 @@ class AppLocalizationsUz extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols uchun joriy narx yoʻq.';
   }
+
+  @override
+  String get eventsRecentResults => 'Yaqinda eʼlon qilingan natijalar';
 }

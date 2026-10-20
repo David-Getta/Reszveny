@@ -2570,4 +2570,7 @@ class AppLocalizationsTs extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'A ku na nxavo wa sweswi wa $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Mbuyelo lowu ha ku vikiwaka';
 }

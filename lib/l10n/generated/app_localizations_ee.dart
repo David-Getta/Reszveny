@@ -2556,4 +2556,7 @@ class AppLocalizationsEe extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Fifia asi aɖeke meli na $symbols o.';
   }
+
+  @override
+  String get eventsRecentResults => 'Akɔntabubu siwo woɖe gbeƒã nyitsɔ laa';
 }

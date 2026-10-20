@@ -2523,4 +2523,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'ไม่มีราคาปัจจุบันสำหรับ $symbols';
   }
+
+  @override
+  String get eventsRecentResults => 'ผลประกอบการที่รายงานล่าสุด';
 }

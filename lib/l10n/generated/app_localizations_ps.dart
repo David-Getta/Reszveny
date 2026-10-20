@@ -2544,4 +2544,7 @@ class AppLocalizationsPs extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'د $symbols لپاره اوسنۍ بیه نشته.';
   }
+
+  @override
+  String get eventsRecentResults => 'وروستۍ اعلان شوې پایلې';
 }

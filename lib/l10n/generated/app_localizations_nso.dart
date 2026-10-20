@@ -2569,4 +2569,7 @@ class AppLocalizationsNso extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Ga go na theko ya bjale ya $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Dipoelo tše di sa tšwago go begwa';
 }

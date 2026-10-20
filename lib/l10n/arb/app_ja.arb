@@ -679,5 +679,6 @@
   "instrumentAsk": "これは何？",
   "instrumentNote": "発行体のファンドページと Web で見つかった金融サイトをもとに AI が説明します。投資助言ではありません。1日の質問回数を使い、分析回数は消費しません。",
   "suggestAskAi": "AI に聞く：「{query}」",
-  "portfolioNoPriceFor": "{symbols}の現在の株価はありません。"
+  "portfolioNoPriceFor": "{symbols}の現在の株価はありません。",
+  "eventsRecentResults": "最近の決算"
 }

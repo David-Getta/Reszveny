@@ -679,5 +679,6 @@
   "instrumentAsk": "Què és això?",
   "instrumentNote": "Explicació d’IA a partir de la pàgina del fons de l’emissor i de webs financers que troba a Internet. No constitueix assessorament d’inversió. Fa servir el teu límit diari de preguntes, no una anàlisi.",
   "suggestAskAi": "Pregunta a la IA: «{query}»",
-  "portfolioNoPriceFor": "No hi ha preu actual per a {symbols}."
+  "portfolioNoPriceFor": "No hi ha preu actual per a {symbols}.",
+  "eventsRecentResults": "Resultats publicats recentment"
 }

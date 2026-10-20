@@ -2554,4 +2554,7 @@ class AppLocalizationsBg extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Няма актуална цена за $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Наскоро отчетени резултати';
 }

@@ -2564,4 +2564,7 @@ class AppLocalizationsXh extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Akukho xabiso langoku kwi-$symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Iziphumo ezisandula kuxelwa';
 }

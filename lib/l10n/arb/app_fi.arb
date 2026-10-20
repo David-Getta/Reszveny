@@ -679,5 +679,6 @@
   "instrumentAsk": "Mikä tämä on?",
   "instrumentNote": "Tekoälyn selitys liikkeeseenlaskijan rahastosivun ja sen verkosta löytämien taloussivustojen perusteella. Se ei ole sijoitusneuvontaa. Kuluttaa päivittäistä kysymyskiintiötäsi, ei analyysia.",
   "suggestAskAi": "Kysy tekoälyltä: ”{query}”",
-  "portfolioNoPriceFor": "Ei nykyistä hintaa kohteille {symbols}."
+  "portfolioNoPriceFor": "Ei nykyistä hintaa kohteille {symbols}.",
+  "eventsRecentResults": "Tuoreet tulokset"
 }

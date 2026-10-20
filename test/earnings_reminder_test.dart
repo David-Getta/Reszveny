@@ -27,7 +27,8 @@ class _Market extends DemoMarketDataProvider {
   final results = <String, EarningsSurprise>{};
 
   @override
-  Future<EarningsOverview> earnings(String symbol) async => EarningsOverview(history: [?results[symbol]]);
+  Future<EarningsOverview> earnings(String symbol) async =>
+      EarningsOverview(history: [?results[symbol]], next: await nextEarnings(symbol));
 }
 
 void main() {

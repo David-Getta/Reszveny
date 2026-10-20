@@ -2560,4 +2560,7 @@ class AppLocalizationsFil extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Walang kasalukuyang presyo para sa $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Kamakailang iniulat na resulta';
 }

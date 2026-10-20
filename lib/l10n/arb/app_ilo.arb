@@ -679,5 +679,6 @@
   "instrumentAsk": "Ania daytoy?",
   "instrumentNote": "Panangilawlawag ti AI manipud iti fund page ti nangipaay ken kadagiti financial site a nasarakanna iti web. Saan a balakad iti panagpuonan. Agusar daytoy iti inaldaw a limitasion dagiti saludsod-mo, saan nga iti panaganalisa.",
   "suggestAskAi": "Isaludsod iti AI: “{query}”",
-  "portfolioNoPriceFor": "Awan ti agdama a presio para iti {symbols}."
+  "portfolioNoPriceFor": "Awan ti agdama a presio para iti {symbols}.",
+  "eventsRecentResults": "Kabarbaro a naireport a resulta"
 }

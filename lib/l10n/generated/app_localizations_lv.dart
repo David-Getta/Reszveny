@@ -2594,4 +2594,7 @@ class AppLocalizationsLv extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Pozīcijām $symbols nav pašreizējās cenas.';
   }
+
+  @override
+  String get eventsRecentResults => 'Nesen paziņotie rezultāti';
 }

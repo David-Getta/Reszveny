@@ -679,5 +679,6 @@
   "instrumentAsk": "Was ist das?",
   "instrumentNote": "KI-Erklärung auf Basis der Fondsseite des Emittenten und von Finanzseiten, die sie im Web findet. Keine Anlageberatung. Zählt zu deinem täglichen Fragenkontingent, nicht als Analyse.",
   "suggestAskAi": "KI fragen: „{query}“",
-  "portfolioNoPriceFor": "Kein aktueller Kurs für {symbols}."
+  "portfolioNoPriceFor": "Kein aktueller Kurs für {symbols}.",
+  "eventsRecentResults": "Frische Quartalszahlen"
 }

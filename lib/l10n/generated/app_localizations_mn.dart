@@ -2554,4 +2554,7 @@ class AppLocalizationsMn extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols-д одоогийн үнэ байхгүй.';
   }
+
+  @override
+  String get eventsRecentResults => 'Саяхан гарсан тайлан';
 }

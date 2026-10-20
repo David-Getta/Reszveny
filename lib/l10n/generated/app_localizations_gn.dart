@@ -2558,4 +2558,7 @@ class AppLocalizationsGn extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Ndaipóri $symbols tepy ko\'ag̃agua.';
   }
+
+  @override
+  String get eventsRecentResults => 'Resultado pyahu oñemomarandúva';
 }

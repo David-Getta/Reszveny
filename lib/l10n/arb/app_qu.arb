@@ -679,5 +679,6 @@
   "instrumentAsk": "¿Imataq kayri?",
   "instrumentNote": "Emisorpa fondo paginanmanta, webpi tarisqan qullqi sitiokunamantawan AI sut’inchasqa. Manan qullqi churanapaq yuyaychaychu. Sapa p’unchay tapukuy limitiykita apaykachan, manan t’aqwiytachu.",
   "suggestAskAi": "AI-ta tapuy: “{query}”",
-  "portfolioNoPriceFor": "{symbols}-paq kunan chaninnin mana kanchu."
+  "portfolioNoPriceFor": "{symbols}-paq kunan chaninnin mana kanchu.",
+  "eventsRecentResults": "Chayraq willakusqa willakuykuna"
 }

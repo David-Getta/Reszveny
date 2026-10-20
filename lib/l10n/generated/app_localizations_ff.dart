@@ -2547,4 +2547,7 @@ class AppLocalizationsFf extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Coggu jooni alaa wonande $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Ngalluuji kesi bayyinaaɗi';
 }

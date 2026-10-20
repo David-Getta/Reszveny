@@ -2560,4 +2560,7 @@ class AppLocalizationsLua extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Kakuena mushinga wa mpindieu wa $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Mapeta mapiamapia bamanyishe';
 }

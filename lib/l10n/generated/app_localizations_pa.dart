@@ -2549,4 +2549,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols ਲਈ ਮੌਜੂਦਾ ਕੀਮਤ ਉਪਲਬਧ ਨਹੀਂ ਹੈ।';
   }
+
+  @override
+  String get eventsRecentResults => 'ਹਾਲ ਹੀ ਵਿੱਚ ਜਾਰੀ ਨਤੀਜੇ';
 }

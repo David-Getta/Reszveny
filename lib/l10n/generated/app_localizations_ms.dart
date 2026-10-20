@@ -2558,4 +2558,7 @@ class AppLocalizationsMs extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Tiada harga semasa untuk $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Keputusan terkini dilaporkan';
 }

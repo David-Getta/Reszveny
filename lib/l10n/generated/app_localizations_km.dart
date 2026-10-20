@@ -2532,4 +2532,7 @@ class AppLocalizationsKm extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'គ្មានតម្លៃបច្ចុប្បន្នសម្រាប់ $symbols ទេ។';
   }
+
+  @override
+  String get eventsRecentResults => 'លទ្ធផលដែលទើបរាយការណ៍';
 }

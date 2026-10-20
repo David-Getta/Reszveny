@@ -4416,6 +4416,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'No current price for {symbols}.'**
   String portfolioNoPriceFor(String symbols);
+
+  /// Section title on the events page: the quarterly results your favorite/portfolio companies published recently (EPS vs. expected), each with a link to the AI summary.
+  ///
+  /// In en, this message translates to:
+  /// **'Recently reported'**
+  String get eventsRecentResults;
 }
 
 class _AppLocalizationsDelegate

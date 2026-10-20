@@ -2561,4 +2561,7 @@ class AppLocalizationsRn extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Nta giciro ca none ca $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Ivyatangajwe vuba';
 }

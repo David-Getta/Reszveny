@@ -2560,4 +2560,7 @@ class AppLocalizationsKn extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols ಗೆ ಪ್ರಸ್ತುತ ಬೆಲೆ ಲಭ್ಯವಿಲ್ಲ.';
   }
+
+  @override
+  String get eventsRecentResults => 'ಇತ್ತೀಚೆಗೆ ವರದಿಯಾದ ಫಲಿತಾಂಶಗಳು';
 }

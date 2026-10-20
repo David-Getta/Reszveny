@@ -679,5 +679,6 @@
   "instrumentAsk": "Gĩkĩ nĩ kĩĩ?",
   "instrumentNote": "Ũtaarĩria wa AI kuuma rũhuko-inĩ rwa fund rwa mũrutani na mĩhuko ya mbeca ĩrĩa wonaga internet-inĩ. Ti ũtaaro wa investment. Ĩhũthagĩra mũhaka wa ciũria ciaku cia o mũthenya, ti ũthuthuria.",
   "suggestAskAi": "Ũria AI: “{query}”",
-  "portfolioNoPriceFor": "Gũtirĩ thogora wa rĩu wa {symbols}."
+  "portfolioNoPriceFor": "Gũtirĩ thogora wa rĩu wa {symbols}.",
+  "eventsRecentResults": "Maumĩrĩra marĩa maheanirwo ica ikuhĩ"
 }

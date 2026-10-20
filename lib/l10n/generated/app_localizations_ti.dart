@@ -2515,4 +2515,7 @@ class AppLocalizationsTi extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'ን$symbols ህሉው ዋጋ የለን።';
   }
+
+  @override
+  String get eventsRecentResults => 'ኣብ ቀረባ እዋን ዝተሓበረ ውጽኢት';
 }

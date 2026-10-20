@@ -2520,4 +2520,7 @@ class AppLocalizationsAm extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'ለ$symbols የአሁኑ ዋጋ የለም።';
   }
+
+  @override
+  String get eventsRecentResults => 'በቅርቡ የተዘገቡ ውጤቶች';
 }

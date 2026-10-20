@@ -679,5 +679,6 @@
   "instrumentAsk": "Apakah ini?",
   "instrumentNote": "Penjelasan AI daripada halaman dana penerbit dan laman kewangan yang ditemuinya di web. Bukan nasihat pelaburan. Menggunakan had soalan harian anda, bukan analisis.",
   "suggestAskAi": "Tanya AI: “{query}”",
-  "portfolioNoPriceFor": "Tiada harga semasa untuk {symbols}."
+  "portfolioNoPriceFor": "Tiada harga semasa untuk {symbols}.",
+  "eventsRecentResults": "Keputusan terkini dilaporkan"
 }

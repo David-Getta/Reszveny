@@ -2553,4 +2553,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols için güncel fiyat yok.';
   }
+
+  @override
+  String get eventsRecentResults => 'Son açıklanan bilançolar';
 }

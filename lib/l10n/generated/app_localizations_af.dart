@@ -2556,4 +2556,7 @@ class AppLocalizationsAf extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Geen huidige prys vir $symbols nie.';
   }
+
+  @override
+  String get eventsRecentResults => 'Onlangs gerapporteer';
 }

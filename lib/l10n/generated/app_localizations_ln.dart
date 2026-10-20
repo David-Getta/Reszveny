@@ -2564,4 +2564,7 @@ class AppLocalizationsLn extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Ntalo ya sikoyo ezali te mpo na $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Ba résultats ya sika';
 }

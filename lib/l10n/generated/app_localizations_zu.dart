@@ -2562,4 +2562,7 @@ class AppLocalizationsZu extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Ayikho intengo yamanje ye-$symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Imiphumela esanda kubikwa';
 }

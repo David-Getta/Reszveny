@@ -2557,4 +2557,7 @@ class AppLocalizationsNl extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Geen actuele koers voor $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Recente kwartaalcijfers';
 }

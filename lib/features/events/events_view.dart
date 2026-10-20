@@ -11,6 +11,7 @@ import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/centered_scroll.dart';
+import '../stock_detail/widgets/earnings_card.dart' show showEarningsSummary;
 import 'calendar_export.dart';
 import 'events_service.dart';
 
@@ -291,12 +292,93 @@ class EventsPage extends StatelessWidget {
                         ],
                       ),
                     ),
+                  // Friss eredmények: a már megjelent negyedéves számok, AI-összefoglalóval.
+                  if (services.events.recent.isNotEmpty) ...[
+                    const SizedBox(height: 24),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 4, bottom: 8),
+                      child: Text(
+                        l10n.eventsRecentResults,
+                        style: theme.textTheme.labelLarge?.copyWith(color: p.muted),
+                      ),
+                    ),
+                    Card(
+                      key: const ValueKey('recent-results'),
+                      margin: EdgeInsets.zero,
+                      child: Column(
+                        children: [
+                          for (final (i, r) in services.events.recent.indexed) ...[
+                            if (i > 0) const Divider(height: 1),
+                            RecentResultTile(
+                              item: r,
+                              onOpenSymbol: (c) {
+                                Navigator.of(context).pop();
+                                onOpenSymbol(c);
+                              },
+                            ),
+                          ],
+                        ],
+                      ),
+                    ),
+                  ],
                 ],
               ),
             ),
           );
         },
       ),
+    );
+  }
+}
+
+/// Egy friss negyedéves eredmény: várt felett vagy alatt, a számokkal; a ✨
+/// gombbal az AI-összefoglaló, a sorra koppintva a részvény nyílik.
+class RecentResultTile extends StatelessWidget {
+  const RecentResultTile({super.key, required this.item, required this.onOpenSymbol});
+
+  final RecentResult item;
+  final ValueChanged<StockCandidate> onOpenSymbol;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final p = AppPalette.of(context);
+    final theme = Theme.of(context);
+    final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
+    final r = item.result;
+    final beat = r.beat == true;
+    final surprise = r.surprise;
+    return ListTile(
+      key: ValueKey('recent-${item.symbol}'),
+      leading: CircleAvatar(
+        radius: 18,
+        backgroundColor: (beat ? p.positive : p.negative).withValues(alpha: 0.15),
+        child: Icon(
+          beat ? Icons.trending_up_rounded : Icons.trending_down_rounded,
+          size: 18,
+          color: beat ? p.positive : p.negative,
+        ),
+      ),
+      title: Text(
+        beat ? l10n.earningsResultBeat(item.symbol) : l10n.earningsResultMiss(item.symbol),
+        style: const TextStyle(fontWeight: FontWeight.w600),
+      ),
+      subtitle: Text(
+        [
+          l10n.earningsResultBody(fmt.number(r.actual), fmt.number(r.estimate)),
+          if (surprise != null) fmt.percent(surprise, decimals: 1, withSign: true),
+          fmt.date(r.period),
+        ].join(' · '),
+        style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+      ),
+      trailing: IconButton(
+        key: ValueKey('recent-summary-${item.symbol}'),
+        tooltip: l10n.earningsSummaryButton,
+        icon: Icon(Icons.auto_awesome_outlined, size: 20, color: p.accent),
+        onPressed: () =>
+            showEarningsSummary(context, symbol: item.symbol, companyName: item.symbol, lastPeriod: r.period),
+      ),
+      onTap: () => onOpenSymbol(StockCandidate(symbol: item.symbol, companyName: item.symbol, confidence: 1)),
     );
   }
 }

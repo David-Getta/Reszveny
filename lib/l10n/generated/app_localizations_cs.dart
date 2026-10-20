@@ -2615,4 +2615,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Pro $symbols není k dispozici aktuální cena.';
   }
+
+  @override
+  String get eventsRecentResults => 'Nedávno zveřejněné výsledky';
 }

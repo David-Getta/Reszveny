@@ -679,5 +679,6 @@
   "instrumentAsk": "دا څه دی؟",
   "instrumentNote": "د خپرونکي د فنډ پاڼې او هغو مالي وېبپاڼو له مخې د AI تشریح چې په وېب کې یې مومي. د پانګونې مشوره نه ده. ستاسو د ورځنیو پوښتنو له حد څخه کمېږي، شننه نه لګوي.",
   "suggestAskAi": "له AI وپوښتئ: «{query}»",
-  "portfolioNoPriceFor": "د {symbols} لپاره اوسنۍ بیه نشته."
+  "portfolioNoPriceFor": "د {symbols} لپاره اوسنۍ بیه نشته.",
+  "eventsRecentResults": "وروستۍ اعلان شوې پایلې"
 }

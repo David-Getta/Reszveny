@@ -2555,4 +2555,7 @@ class AppLocalizationsTg extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Барои $symbols нархи ҷорӣ мавҷуд нест.';
   }
+
+  @override
+  String get eventsRecentResults => 'Натиҷаҳои ба наздикӣ эълоншуда';
 }

@@ -679,5 +679,6 @@
   "instrumentAsk": "Đây là gì?",
   "instrumentNote": "Giải thích do AI tạo từ trang quỹ của tổ chức phát hành và các trang tài chính mà AI tìm thấy trên web. Không phải là lời khuyên đầu tư. Dùng hạn mức câu hỏi hằng ngày của bạn, không dùng lượt phân tích.",
   "suggestAskAi": "Hỏi AI: “{query}”",
-  "portfolioNoPriceFor": "Không có giá hiện tại cho {symbols}."
+  "portfolioNoPriceFor": "Không có giá hiện tại cho {symbols}.",
+  "eventsRecentResults": "Kết quả kinh doanh mới công bố"
 }

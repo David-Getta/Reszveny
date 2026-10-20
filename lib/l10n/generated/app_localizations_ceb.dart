@@ -2564,4 +2564,7 @@ class AppLocalizationsCeb extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Walay presyo karon alang sa $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Bag-ong gi-report nga resulta';
 }

@@ -2544,4 +2544,7 @@ class AppLocalizationsMy extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols အတွက် လက်ရှိဈေးနှုန်း မရှိပါ။';
   }
+
+  @override
+  String get eventsRecentResults => 'မကြာသေးမီ ထုတ်ပြန်ထားသော ရလဒ်များ';
 }

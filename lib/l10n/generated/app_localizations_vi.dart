@@ -2546,4 +2546,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Không có giá hiện tại cho $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Kết quả kinh doanh mới công bố';
 }

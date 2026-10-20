@@ -2555,4 +2555,7 @@ class AppLocalizationsKu extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Ji bo $symbols bihayê niha tune.';
   }
+
+  @override
+  String get eventsRecentResults => 'Encamên nû ragihandî';
 }

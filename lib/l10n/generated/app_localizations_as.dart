@@ -2552,4 +2552,7 @@ class AppLocalizationsAs extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols-ৰ বাবে বৰ্তমানৰ দাম নাই।';
   }
+
+  @override
+  String get eventsRecentResults => 'সম্প্ৰতি ঘোষিত ফলাফল';
 }

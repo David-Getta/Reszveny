@@ -679,5 +679,6 @@
   "instrumentAsk": "Kas tas ir?",
   "instrumentNote": "Mākslīgā intelekta skaidrojums pēc emitenta fonda lapas un finanšu vietnēm, ko tas atrod tīmeklī. Tā nav ieguldījumu konsultācija. Izmanto jūsu dienas jautājumu limitu, nevis analīzi.",
   "suggestAskAi": "Jautāt AI: „{query}”",
-  "portfolioNoPriceFor": "Pozīcijām {symbols} nav pašreizējās cenas."
+  "portfolioNoPriceFor": "Pozīcijām {symbols} nav pašreizējās cenas.",
+  "eventsRecentResults": "Nesen paziņotie rezultāti"
 }

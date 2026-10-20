@@ -679,5 +679,6 @@
   "instrumentAsk": "Co to jest?",
   "instrumentNote": "Wyjaśnienie AI na podstawie strony funduszu u emitenta i serwisów finansowych, które znajduje w sieci. Nie stanowi porady inwestycyjnej. Korzysta z dziennego limitu pytań, nie zużywa analizy.",
   "suggestAskAi": "Zapytaj AI: „{query}”",
-  "portfolioNoPriceFor": "Brak aktualnej ceny dla {symbols}."
+  "portfolioNoPriceFor": "Brak aktualnej ceny dla {symbols}.",
+  "eventsRecentResults": "Niedawno opublikowane wyniki"
 }

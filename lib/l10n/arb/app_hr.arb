@@ -679,5 +679,6 @@
   "instrumentAsk": "Što je ovo?",
   "instrumentNote": "Objašnjenje umjetne inteligencije na temelju stranice fonda kod izdavatelja i financijskih stranica koje pronađe na internetu. Nije investicijski savjet. Troši vaše dnevno ograničenje pitanja, ne analizu.",
   "suggestAskAi": "Pitajte AI: „{query}“",
-  "portfolioNoPriceFor": "Nema trenutačne cijene za {symbols}."
+  "portfolioNoPriceFor": "Nema trenutačne cijene za {symbols}.",
+  "eventsRecentResults": "Nedavno objavljeni rezultati"
 }

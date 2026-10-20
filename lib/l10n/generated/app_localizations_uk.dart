@@ -2623,4 +2623,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Немає поточної ціни для $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Нещодавно опубліковані звіти';
 }

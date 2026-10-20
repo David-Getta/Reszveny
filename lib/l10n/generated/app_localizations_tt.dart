@@ -2552,4 +2552,7 @@ class AppLocalizationsTt extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols өчен агымдагы бәя юк.';
   }
+
+  @override
+  String get eventsRecentResults => 'Күптән түгел игълан ителгән нәтиҗәләр';
 }

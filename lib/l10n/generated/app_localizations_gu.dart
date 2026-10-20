@@ -2548,4 +2548,7 @@ class AppLocalizationsGu extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols માટે વર્તમાન ભાવ ઉપલબ્ધ નથી.';
   }
+
+  @override
+  String get eventsRecentResults => 'હાલમાં જાહેર થયેલાં પરિણામો';
 }

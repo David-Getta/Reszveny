@@ -2483,4 +2483,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols의 현재 가격이 없습니다.';
   }
+
+  @override
+  String get eventsRecentResults => '최근 발표된 실적';
 }

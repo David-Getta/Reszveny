@@ -2440,6 +2440,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols暂无当前价格。';
   }
+
+  @override
+  String get eventsRecentResults => '最新财报';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -4876,4 +4879,7 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String portfolioNoPriceFor(String symbols) {
     return '$symbols沒有目前股價。';
   }
+
+  @override
+  String get eventsRecentResults => '最新業績';
 }

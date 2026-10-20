@@ -2554,4 +2554,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String portfolioNoPriceFor(String symbols) {
     return 'Ei nykyistä hintaa kohteille $symbols.';
   }
+
+  @override
+  String get eventsRecentResults => 'Tuoreet tulokset';
 }
