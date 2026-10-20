@@ -161,6 +161,11 @@ jobs:
   release:
     name: GitHub Release
     needs: [version, android, windows, macos, web]
+    # Akkor is kiadás készül, ha valamelyik platform buildje elmaradt (pl. a macOS
+    # futtató nem vette fel a munkát): a kész fájlok felkerülnek, a hiányzó
+    # platform a sikertelen jobok újrafuttatásával („Re-run failed jobs”) pótolható,
+    # a kiadás ugyanazzal a taggel bővül.
+    if: ${{ always() && needs.version.result == 'success' && needs.version.outputs.exists != 'true' && (needs.android.result == 'success' || needs.windows.result == 'success' || needs.macos.result == 'success' || needs.web.result == 'success') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@v4
@@ -183,3 +188,5 @@ jobs:
             - **macOS:** csomagold ki a `WhatStock-macos.zip` fájlt, húzd az appot a Programok mappába, majd jobb klikk → Megnyitás (az app nincs aláírva).
             - **Web:** a `WhatStock-web.zip` bármilyen statikus tárhelyre feltölthető.
             - **iOS / iPadOS:** aláírás nélkül nem telepíthető; ehhez Apple fejlesztői fiók és TestFlight kell.
+
+            Ha valamelyik platform fájlja hiányzik, annak a buildje elmaradt (pl. a macOS-futtató nem állt rendelkezésre); a sikertelen jobok újrafuttatása után ide kerül.
