@@ -1224,7 +1224,7 @@ void main() {
       find.byKey(const ValueKey('followup-field')),
       'Miért esett az árfolyam a jó számok ellenére?',
     );
-    await tester.tap(find.byKey(const ValueKey('followup-send')));
+    await tester.testTextInput.receiveAction(TextInputAction.send);
     await tester.pumpAndSettle();
     await tester.drag(find.byKey(const ValueKey('earnings-summary-sheet')), const Offset(0, -400));
     await tester.pumpAndSettle();
@@ -1284,7 +1284,7 @@ void main() {
     await tester.tap(run);
     await tester.pumpAndSettle();
     await tester.enterText(find.byKey(const ValueKey('followup-field')), 'Miért emelkedett az NVDA?');
-    await tester.tap(find.byKey(const ValueKey('followup-send')));
+    await tester.testTextInput.receiveAction(TextInputAction.send);
     await tester.pumpAndSettle();
     final panel = find.byKey(const ValueKey('daily-brief-followup'));
     Scrollable.ensureVisible(tester.element(panel), alignment: 0.6);
@@ -1413,7 +1413,7 @@ void main() {
     final panel = find.byKey(const ValueKey('compare-followup'));
     await tester.scrollUntilVisible(panel, 300, scrollable: find.byType(Scrollable).first);
     await tester.enterText(find.byKey(const ValueKey('followup-field')), 'Melyik az olcsóbb és miért?');
-    await tester.tap(find.byKey(const ValueKey('followup-send')));
+    await tester.testTextInput.receiveAction(TextInputAction.send);
     await tester.pumpAndSettle();
     await tester.drag(find.byType(Scrollable).first, const Offset(0, -600));
     await tester.pumpAndSettle();
@@ -1576,7 +1576,7 @@ void main() {
               ? 'Miért esett az árfolyam a jó számok ellenére?'
               : 'Why did the stock fall despite good numbers?',
         );
-        await tester.tap(find.byKey(const ValueKey('followup-send')));
+        await tester.testTextInput.receiveAction(TextInputAction.send);
         await tester.pumpAndSettle();
         await tester.drag(
           find.byKey(const ValueKey('earnings-summary-sheet')),
