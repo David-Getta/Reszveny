@@ -169,7 +169,7 @@ void main() {
 
   test('v2.4: market view and key debate, unit checks, suspect data, dated knowledge, exact percentages', () {
     const p = ClaudeStockAnalyst.systemPrompt;
-    expect(ClaudeStockAnalyst.promptVersion, 'v2.4');
+    expect(ClaudeStockAnalyst.promptVersion, startsWith('v2.'));
     expect(p, contains('the one or two open questions that will decide'));
     expect(p, contains('agrees or disagrees with the market'));
     expect(p, contains('pence in London'));
@@ -426,7 +426,7 @@ void main() {
     final details = StockDetails(
       symbol: 'AAPL',
       quote: const StockQuote(symbol: 'AAPL', price: 231.45, change: 2.15, changePercent: 0.94),
-      profile: const CompanyProfile(symbol: 'AAPL', name: 'Apple Inc.', currency: 'USD'),
+      profile: const CompanyProfile(symbol: 'AAPL', name: 'Apple Inc.', currency: 'USD', sector: 'Technology'),
       news: [
         NewsItem(
           headline: 'Apple launches',
@@ -441,6 +441,21 @@ void main() {
     expect(msg, contains('"price": 231.45'));
     expect(msg, contains('"headline": "Apple launches"'));
     expect(msg, isNot(contains('null')));
+    // Cégprofillal nincs „mi ez a papír” megjegyzés.
+    expect(msg, isNot(contains('instrument_note')));
+  });
+
+  test('without a company profile (ETF, fund): the message flags it and the prompt says how to analyse it', () {
+    final etf = StockDetails(
+      symbol: 'QQQ',
+      quote: StockQuote(symbol: 'QQQ', price: 512.3, timestamp: DateTime(2026)),
+    );
+    final msg = ClaudeStockAnalyst.buildUserMessage(etf, outputLanguage: 'English');
+    expect(msg, contains('"instrument_note"'));
+    expect(msg, contains('may be an ETF'));
+    expect(ClaudeStockAnalyst.systemPrompt, contains('# If it is not an ordinary company share'));
+    expect(ClaudeStockAnalyst.systemPrompt, contains('expense ratio'));
+    expect(ClaudeStockAnalyst.promptVersion, 'v2.5');
   });
 
   test('StockReport survives a JSON round trip (disk cache)', () {

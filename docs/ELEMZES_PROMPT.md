@@ -3,7 +3,7 @@
 Ez a dokumentum az AI-elemzés rendszerpromptjának második változatát és a tervezési
 döntéseket tartalmazza.
 
-**Állapot: v2.4 beépítve** (a változások a 7–10. pontban). A rendszerprompt a `lib/features/analysis/claude_stock_analyst.dart`
+**Állapot: v2.5 beépítve** (a változások a 7–10. pontban). A rendszerprompt a `lib/features/analysis/claude_stock_analyst.dart`
 fájlban van (`systemPrompt`), és minden felhasználónál bájtra azonos, így gyorsítótárazható. A
 beállításoktól függő részek (webkeresés-keret, hossz, olvasói szint, ellenérv, helyi szemszög) a
 felhasználói üzenet elején, a „Report settings” blokkban mennek (`buildSettings`). Az alábbi 3. pont
@@ -346,6 +346,18 @@ nagyobb betűmérettel kitolhatta a címet; most az érték új sorba kerül, il
 
 Az önellenőrzés is bővült: egyeznek-e a mértékegységek és devizák, a százalékok a mostani árból
 jönnek-e, és minden katalizátor a mai nap utáni-e.
+
+## 11. v2.5 (2026-10-20): ETF, alap, letéti jegy
+
+Ha a tickerhez nincs cégprofil (iparág és szektor nélkül), a felhasználói üzenet `instrument_note`
+mezője jelzi, hogy ez valószínűleg ETF, alap, trust vagy letéti jegy. A rendszerprompt új
+„If it is not an ordinary company share” szakasza szerint a modell előbb azonosítja a papírt, és
+alapként elemzi: kibocsátó, mit követ és tart (index, legnagyobb pozíciók, szektorok, fizikai vagy
+szintetikus, tőkeáttét, devizafedezés), költséghányad, méret és kor, osztalékkezelés, követési hiba,
+likviditás; a „fundamentumok” a mögöttes index értékeltsége és koncentrációja; a cégspecifikus
+ellenőrzések (számvitel, vállalatirányítás, bennfentesek) kimaradnak, hacsak a struktúra nem veti
+fel őket. Letéti jegynél a mögöttes cég elemzése plusz a jegy-specifikus pontok (arány, díjak,
+deviza, hazai jegyzés, kivezetési kockázat). A kimeneti formátum változatlan.
 
 ## Portfólióelemzés (2026-10-15)
 
