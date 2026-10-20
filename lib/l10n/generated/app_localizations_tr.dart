@@ -2556,4 +2556,10 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Son açıklanan bilançolar';
+
+  @override
+  String get saveToNotes => 'Notlarıma kaydet';
+
+  @override
+  String get savedToNotes => 'Notlarınıza kaydedildi';
 }

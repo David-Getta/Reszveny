@@ -680,5 +680,7 @@
   "instrumentNote": "Asegzi n AI seg usebter n usagen n win i t-id-yessufɣen d yismal n tedrimt i yufa deg web. Mačči d awellih n usersi n yidrimen. Yesseqdac talast-ik n yisteqsiyen n yal ass, mačči tasledt.",
   "suggestAskAi": "Steqsi AI: « {query} »",
   "portfolioNoPriceFor": "Ulac ssuma tamirant i {symbols}.",
-  "eventsRecentResults": "Igmaḍ i d-yettwabedren melmi kan"
+  "eventsRecentResults": "Igmaḍ i d-yettwabedren melmi kan",
+  "saveToNotes": "Sekles deg tizmilin-iw",
+  "savedToNotes": "Yettwasekles deg tizmilin-ik"
 }

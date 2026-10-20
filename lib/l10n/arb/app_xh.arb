@@ -680,5 +680,7 @@
   "instrumentNote": "Ingcaciso ye-AI esuka kwiphepha lengxowa-mali lomkhuphi nakwiisayithi zezemali ezifumana kwiwebhu. Ayilocebiso lotyalo-mali. Sisebenzisa umda wakho wemibuzo wemihla ngemihla, hayi uhlalutyo.",
   "suggestAskAi": "Buza i-AI: “{query}”",
   "portfolioNoPriceFor": "Akukho xabiso langoku kwi-{symbols}.",
-  "eventsRecentResults": "Iziphumo ezisandula kuxelwa"
+  "eventsRecentResults": "Iziphumo ezisandula kuxelwa",
+  "saveToNotes": "Gcina kumanqaku am",
+  "savedToNotes": "Igciniwe kumanqaku akho"
 }

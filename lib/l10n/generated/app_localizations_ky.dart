@@ -2560,4 +2560,10 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Жакында жарыяланган натыйжалар';
+
+  @override
+  String get saveToNotes => 'Жазууларыма сактоо';
+
+  @override
+  String get savedToNotes => 'Жазууларыңызга сакталды';
 }

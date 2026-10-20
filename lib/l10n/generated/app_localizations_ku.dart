@@ -2558,4 +2558,10 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Encamên nû ragihandî';
+
+  @override
+  String get saveToNotes => 'Di notên min de tomar bike';
+
+  @override
+  String get savedToNotes => 'Di notên te de hat tomarkirin';
 }

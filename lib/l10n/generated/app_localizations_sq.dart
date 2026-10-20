@@ -2563,4 +2563,10 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Rezultatet e fundit';
+
+  @override
+  String get saveToNotes => 'Ruaj te shënimet e mia';
+
+  @override
+  String get savedToNotes => 'U ruajt te shënimet tuaja';
 }

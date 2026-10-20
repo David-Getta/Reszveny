@@ -2599,4 +2599,10 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Nedavno objavljeni rezultati';
+
+  @override
+  String get saveToNotes => 'Sačuvaj u moje bilješke';
+
+  @override
+  String get savedToNotes => 'Sačuvano u vaše bilješke';
 }

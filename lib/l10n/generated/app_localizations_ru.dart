@@ -2626,4 +2626,10 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Свежая отчётность';
+
+  @override
+  String get saveToNotes => 'Сохранить в мои заметки';
+
+  @override
+  String get savedToNotes => 'Сохранено в ваших заметках';
 }

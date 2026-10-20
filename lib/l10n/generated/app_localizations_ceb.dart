@@ -2567,4 +2567,10 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Bag-ong gi-report nga resulta';
+
+  @override
+  String get saveToNotes => 'I-save sa akong mga nota';
+
+  @override
+  String get savedToNotes => 'Na-save sa imong mga nota';
 }

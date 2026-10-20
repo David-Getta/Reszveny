@@ -2573,4 +2573,10 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Mbuyelo lowu ha ku vikiwaka';
+
+  @override
+  String get saveToNotes => 'Hlayisa eka tinotsi ta mina';
+
+  @override
+  String get savedToNotes => 'Yi hlayisiwile eka tinotsi ta wena';
 }

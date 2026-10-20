@@ -2569,4 +2569,10 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Frische Quartalszahlen';
+
+  @override
+  String get saveToNotes => 'In meine Notizen speichern';
+
+  @override
+  String get savedToNotes => 'In deinen Notizen gespeichert';
 }

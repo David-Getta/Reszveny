@@ -2563,4 +2563,10 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Mapeta mapiamapia bamanyishe';
+
+  @override
+  String get saveToNotes => 'Lama mu mifundu yanyi';
+
+  @override
+  String get savedToNotes => 'Mmalame mu mifundu yebe';
 }

@@ -680,5 +680,7 @@
   "instrumentNote": "Faccirde AI ummoraade e hello fonndo yaltinoowo e lowe ngalu ɗe o yiyi e geese. Wonaa wasiya e investisman. Ina huutoroo keerol naamne maa ñalnde kala, wonaa ƴeewndo.",
   "suggestAskAi": "Naamnu AI: « {query} »",
   "portfolioNoPriceFor": "Coggu jooni alaa wonande {symbols}.",
-  "eventsRecentResults": "Ngalluuji kesi bayyinaaɗi"
+  "eventsRecentResults": "Ngalluuji kesi bayyinaaɗi",
+  "saveToNotes": "Mooftu e binndi am",
+  "savedToNotes": "Mooftaama e binndi maa"
 }

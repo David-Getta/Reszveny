@@ -2547,4 +2547,10 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'وروستۍ اعلان شوې پایلې';
+
+  @override
+  String get saveToNotes => 'زما یادښتونو کې خوندي کړئ';
+
+  @override
+  String get savedToNotes => 'ستاسو یادښتونو کې خوندي شو';
 }

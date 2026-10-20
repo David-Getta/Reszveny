@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../app_services.dart';
 import '../core/share/share_text.dart';
+import '../core/util/formatters.dart';
+import '../features/news/daily_brief.dart' show AskSource;
 import '../features/news/research_store.dart' show ResearchResult;
 import '../l10n/error_messages.dart';
 import '../l10n/generated/app_localizations.dart';
@@ -21,6 +23,7 @@ Future<void> showResearchSheet(
   required Future<ResearchResult> answer,
   required String note,
   required String sourceKeyPrefix,
+  String? symbol,
 }) {
   // A hibát a lap FutureBuildere mutatja; addig ne számítson kezeletlennek.
   answer.ignore();
@@ -62,26 +65,34 @@ Future<void> showResearchSheet(
                         SourceLinks(sources: r.sources, keyPrefix: sourceKeyPrefix),
                         if (r.text.isNotEmpty) ...[
                           const SizedBox(height: 8),
-                          // Megosztás szövegként: cím, a válasz, a források és a megjegyzés.
-                          Align(
-                            alignment: AlignmentDirectional.centerEnd,
-                            child: TextButton.icon(
-                              key: const ValueKey('research-share'),
-                              style: TextButton.styleFrom(visualDensity: VisualDensity.compact),
-                              icon: const Icon(Icons.ios_share_rounded, size: 18),
-                              label: Text(l10n.shareAsText),
-                              onPressed: () => shareText(
-                                [
-                                  '$eyebrow · $title',
-                                  '',
-                                  r.text,
-                                  if (r.sources.isNotEmpty) ...['', for (final s in r.sources) '${s.title}: ${s.url}'],
-                                  '',
-                                  note,
-                                ].join('\n'),
-                                subject: '$eyebrow · $title',
+                          // Megosztás szövegként, és mentés a részvény jegyzetébe.
+                          Wrap(
+                            alignment: WrapAlignment.end,
+                            spacing: 4,
+                            children: [
+                              if (symbol != null)
+                                _SaveNoteButton(symbol: symbol, title: title, text: r.text, sources: r.sources),
+                              TextButton.icon(
+                                key: const ValueKey('research-share'),
+                                style: TextButton.styleFrom(visualDensity: VisualDensity.compact),
+                                icon: const Icon(Icons.ios_share_rounded, size: 18),
+                                label: Text(l10n.shareAsText),
+                                onPressed: () => shareText(
+                                  [
+                                    '$eyebrow · $title',
+                                    '',
+                                    r.text,
+                                    if (r.sources.isNotEmpty) ...[
+                                      '',
+                                      for (final s in r.sources) '${s.title}: ${s.url}',
+                                    ],
+                                    '',
+                                    note,
+                                  ].join('\n'),
+                                  subject: '$eyebrow · $title',
+                                ),
                               ),
-                            ),
+                            ],
                           ),
                           const SizedBox(height: 4),
                           ResearchFollowUpPanel(
@@ -206,6 +217,50 @@ class _ResearchFollowUpPanelState extends State<ResearchFollowUpPanel> {
           ],
         ),
       ],
+    );
+  }
+}
+
+/// „Mentés a jegyzeteimbe”: a válasz a részvény saját jegyzetének végére kerül
+/// (dátummal és címmel); mentés után pipa, és nem menthető kétszer.
+class _SaveNoteButton extends StatefulWidget {
+  const _SaveNoteButton({required this.symbol, required this.title, required this.text, required this.sources});
+
+  final String symbol;
+  final String title;
+  final String text;
+  final List<AskSource> sources;
+
+  @override
+  State<_SaveNoteButton> createState() => _SaveNoteButtonState();
+}
+
+class _SaveNoteButtonState extends State<_SaveNoteButton> {
+  bool _saved = false;
+
+  Future<void> _save() async {
+    final services = AppServices.of(context);
+    final fmt = Fmt(Localizations.localeOf(context).toString(), na: '');
+    final existing = services.notes.of(widget.symbol)?.text.trim() ?? '';
+    final entry = [
+      '${fmt.date(DateTime.now())} · ${widget.title}',
+      widget.text.trim(),
+      for (final s in widget.sources) s.url,
+    ].join('\n');
+    await services.notes.set(widget.symbol, existing.isEmpty ? entry : '$existing\n\n$entry');
+    services.telemetry.track('research_saved_note');
+    if (mounted) setState(() => _saved = true);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    return TextButton.icon(
+      key: const ValueKey('research-save-note'),
+      style: TextButton.styleFrom(visualDensity: VisualDensity.compact),
+      icon: Icon(_saved ? Icons.check_rounded : Icons.sticky_note_2_outlined, size: 18),
+      label: Text(_saved ? l10n.savedToNotes : l10n.saveToNotes),
+      onPressed: _saved ? null : _save,
     );
   }
 }

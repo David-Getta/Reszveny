@@ -2561,4 +2561,10 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Mhedzisiro ichangoziviswa';
+
+  @override
+  String get saveToNotes => 'Chengetedza muzvinyorwa zvangu';
+
+  @override
+  String get savedToNotes => 'Zvachengetedzwa muzvinyorwa zvako';
 }

@@ -680,5 +680,7 @@
   "instrumentNote": "Àlàyé AI láti ojú-ìwé owó-ìkójọpọ̀ ti olùpèsè àti àwọn ojú-òpó ètò ìnáwó tí ó rí lórí ayélujára. Kì í ṣe ìmọ̀ràn ìdókòwò. Ó ń lo ìwọ̀n ìbéèrè ojoojúmọ́ rẹ, kì í ṣe ìtúpalẹ̀.",
   "suggestAskAi": "Béèrè lọ́wọ́ AI: “{query}”",
   "portfolioNoPriceFor": "Kò sí iye owó lọ́wọ́lọ́wọ́ fún {symbols}.",
-  "eventsRecentResults": "Àbájáde tí a ṣẹ̀ṣẹ̀ kéde"
+  "eventsRecentResults": "Àbájáde tí a ṣẹ̀ṣẹ̀ kéde",
+  "saveToNotes": "Fi pamọ́ sí àwọn àkọsílẹ̀ mi",
+  "savedToNotes": "Ti fi pamọ́ sí àwọn àkọsílẹ̀ rẹ"
 }

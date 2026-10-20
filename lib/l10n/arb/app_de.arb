@@ -680,5 +680,7 @@
   "instrumentNote": "KI-Erklärung auf Basis der Fondsseite des Emittenten und von Finanzseiten, die sie im Web findet. Keine Anlageberatung. Zählt zu deinem täglichen Fragenkontingent, nicht als Analyse.",
   "suggestAskAi": "KI fragen: „{query}“",
   "portfolioNoPriceFor": "Kein aktueller Kurs für {symbols}.",
-  "eventsRecentResults": "Frische Quartalszahlen"
+  "eventsRecentResults": "Frische Quartalszahlen",
+  "saveToNotes": "In meine Notizen speichern",
+  "savedToNotes": "In deinen Notizen gespeichert"
 }

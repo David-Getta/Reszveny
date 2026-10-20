@@ -2551,4 +2551,10 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Nsonaazụ e kwuputara nso nso a';
+
+  @override
+  String get saveToNotes => 'Chekwaa na ndetu m';
+
+  @override
+  String get savedToNotes => 'Echekwara na ndetu gị';
 }

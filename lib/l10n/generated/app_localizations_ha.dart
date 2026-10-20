@@ -2561,4 +2561,10 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Sakamakon da aka bayyana kwanan nan';
+
+  @override
+  String get saveToNotes => 'Ajiye a bayanaina';
+
+  @override
+  String get savedToNotes => 'An ajiye a bayananka';
 }

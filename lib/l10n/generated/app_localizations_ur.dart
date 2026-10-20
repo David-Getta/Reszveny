@@ -2556,4 +2556,10 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'حال ہی میں رپورٹ شدہ نتائج';
+
+  @override
+  String get saveToNotes => 'میرے نوٹس میں محفوظ کریں';
+
+  @override
+  String get savedToNotes => 'آپ کے نوٹس میں محفوظ ہو گیا';
 }

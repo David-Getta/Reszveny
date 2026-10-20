@@ -2555,4 +2555,10 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'সম্প্রতি ঘোষিত ফলাফল';
+
+  @override
+  String get saveToNotes => 'আমার নোটে সেভ করুন';
+
+  @override
+  String get savedToNotes => 'আপনার নোটে সেভ হয়েছে';
 }

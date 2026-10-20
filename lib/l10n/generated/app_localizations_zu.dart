@@ -2565,4 +2565,10 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Imiphumela esanda kubikwa';
+
+  @override
+  String get saveToNotes => 'Londoloza kumanothi ami';
+
+  @override
+  String get savedToNotes => 'Kulondolozwe kumanothi akho';
 }

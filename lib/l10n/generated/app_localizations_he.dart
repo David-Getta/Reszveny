@@ -2548,4 +2548,10 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'דוחות שפורסמו לאחרונה';
+
+  @override
+  String get saveToNotes => 'שמירה בהערות שלי';
+
+  @override
+  String get savedToNotes => 'נשמר בהערות שלך';
 }

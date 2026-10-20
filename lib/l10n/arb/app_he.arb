@@ -680,5 +680,7 @@
   "instrumentNote": "הסבר של AI על בסיס עמוד הקרן אצל המנפיק ואתרים פיננסיים שהוא מוצא ברשת. אינו מהווה ייעוץ השקעות. נספר במכסת השאלות היומית שלך, לא כניתוח.",
   "suggestAskAi": "לשאול את ה-AI: „{query}”",
   "portfolioNoPriceFor": "אין מחיר נוכחי עבור {symbols}.",
-  "eventsRecentResults": "דוחות שפורסמו לאחרונה"
+  "eventsRecentResults": "דוחות שפורסמו לאחרונה",
+  "saveToNotes": "שמירה בהערות שלי",
+  "savedToNotes": "נשמר בהערות שלך"
 }

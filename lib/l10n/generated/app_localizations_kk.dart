@@ -2557,4 +2557,10 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Жақында жарияланған нәтижелер';
+
+  @override
+  String get saveToNotes => 'Жазбаларыма сақтау';
+
+  @override
+  String get savedToNotes => 'Жазбаларыңызға сақталды';
 }

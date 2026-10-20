@@ -2561,4 +2561,10 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Resultado pyahu oñemomarandúva';
+
+  @override
+  String get saveToNotes => 'Eñongatu che jehaipyrépe';
+
+  @override
+  String get savedToNotes => 'Oñeñongatúma nde jehaipyrépe';
 }

@@ -680,5 +680,7 @@
   "instrumentNote": "Tlhaloso ya AI e tswang leqepheng la letlole la mofani le diwebosaete tsa ditjhelete tseo e di fumanang inthaneteng. Hase keletso ya ho tsetela. E sebedisa moedi wa hao wa dipotso wa letsatsi le letsatsi, eseng manollo.",
   "suggestAskAi": "Botsa AI: “{query}”",
   "portfolioNoPriceFor": "Ha ho theko ya hona jwale ya {symbols}.",
-  "eventsRecentResults": "Diphetho tse sa tswa tlalehwa"
+  "eventsRecentResults": "Diphetho tse sa tswa tlalehwa",
+  "saveToNotes": "Boloka dintlheng tsa ka",
+  "savedToNotes": "E bolokilwe dintlheng tsa hao"
 }

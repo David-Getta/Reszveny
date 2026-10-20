@@ -2558,4 +2558,10 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Laporan anyar';
+
+  @override
+  String get saveToNotes => 'Simpen ing cathetanku';
+
+  @override
+  String get savedToNotes => 'Wis disimpen ing cathetanmu';
 }

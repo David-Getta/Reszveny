@@ -2556,4 +2556,10 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Maumĩrĩra marĩa maheanirwo ica ikuhĩ';
+
+  @override
+  String get saveToNotes => 'Iga maandĩko-inĩ makwa';
+
+  @override
+  String get savedToNotes => 'Nĩyaigĩtwo maandĩko-inĩ maku';
 }

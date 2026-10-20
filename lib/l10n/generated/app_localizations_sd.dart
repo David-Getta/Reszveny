@@ -2548,4 +2548,10 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'تازو جاري ڪيل نتيجا';
+
+  @override
+  String get saveToNotes => 'منهنجي نوٽس ۾ محفوظ ڪريو';
+
+  @override
+  String get savedToNotes => 'توهان جي نوٽس ۾ محفوظ ٿيو';
 }

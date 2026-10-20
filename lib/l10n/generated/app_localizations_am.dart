@@ -2523,4 +2523,10 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'በቅርቡ የተዘገቡ ውጤቶች';
+
+  @override
+  String get saveToNotes => 'ወደ ማስታወሻዎቼ አስቀምጥ';
+
+  @override
+  String get savedToNotes => 'በማስታወሻዎችዎ ተቀምጧል';
 }

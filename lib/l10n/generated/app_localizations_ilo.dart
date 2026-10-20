@@ -2575,4 +2575,10 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Kabarbaro a naireport a resulta';
+
+  @override
+  String get saveToNotes => 'I-save kadagiti notak';
+
+  @override
+  String get savedToNotes => 'Nai-save kadagiti notam';
 }

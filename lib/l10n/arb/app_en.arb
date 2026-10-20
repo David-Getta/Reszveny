@@ -2068,5 +2068,13 @@
   "eventsRecentResults": "Recently reported",
   "@eventsRecentResults": {
     "description": "Section title on the events page: the quarterly results your favorite/portfolio companies published recently (EPS vs. expected), each with a link to the AI summary."
+  },
+  "saveToNotes": "Save to my notes",
+  "@saveToNotes": {
+    "description": "Button under an AI research note (news explanation, results summary, fund description): appends the note to the user's own notes on that stock."
+  },
+  "savedToNotes": "Saved to your notes",
+  "@savedToNotes": {
+    "description": "The same button after saving (disabled, with a check mark)."
   }
 }

@@ -2575,4 +2575,10 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Неодамна објавени резултати';
+
+  @override
+  String get saveToNotes => 'Зачувај во моите белешки';
+
+  @override
+  String get savedToNotes => 'Зачувано во вашите белешки';
 }

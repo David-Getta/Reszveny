@@ -2535,4 +2535,10 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'លទ្ធផលដែលទើបរាយការណ៍';
+
+  @override
+  String get saveToNotes => 'រក្សាទុកក្នុងកំណត់ចំណាំរបស់ខ្ញុំ';
+
+  @override
+  String get savedToNotes => 'បានរក្សាទុកក្នុងកំណត់ចំណាំរបស់អ្នក';
 }

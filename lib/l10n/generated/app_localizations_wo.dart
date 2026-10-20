@@ -2551,4 +2551,10 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Njureef yu bees yi ñu yégle';
+
+  @override
+  String get saveToNotes => 'Denc ci samay notu';
+
+  @override
+  String get savedToNotes => 'Dencu na ci say notu';
 }

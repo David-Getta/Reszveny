@@ -2562,4 +2562,10 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Yaqinda eʼlon qilingan natijalar';
+
+  @override
+  String get saveToNotes => 'Qaydlarimga saqlash';
+
+  @override
+  String get savedToNotes => 'Qaydlaringizga saqlandi';
 }

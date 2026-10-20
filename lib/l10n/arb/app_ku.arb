@@ -680,5 +680,7 @@
   "instrumentNote": "Ravekirina AI ji rûpela fondê ya derxeran û malperên aborî yên ku li ser webê dibîne. Ne şîreta veberhênanê ye. Ji sînorê pirsên te yê rojane tê birîn, ne analîzek.",
   "suggestAskAi": "Ji AI bipirse: “{query}”",
   "portfolioNoPriceFor": "Ji bo {symbols} bihayê niha tune.",
-  "eventsRecentResults": "Encamên nû ragihandî"
+  "eventsRecentResults": "Encamên nû ragihandî",
+  "saveToNotes": "Di notên min de tomar bike",
+  "savedToNotes": "Di notên te de hat tomarkirin"
 }

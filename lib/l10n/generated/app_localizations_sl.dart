@@ -2625,4 +2625,10 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Nedavno objavljeni rezultati';
+
+  @override
+  String get saveToNotes => 'Shrani v moje zapiske';
+
+  @override
+  String get savedToNotes => 'Shranjeno v vaše zapiske';
 }

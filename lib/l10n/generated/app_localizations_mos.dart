@@ -2543,4 +2543,10 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Ligd-yɛl paal sẽn wilgã';
+
+  @override
+  String get saveToNotes => 'Bĩng m gʋlsgã pʋgẽ';
+
+  @override
+  String get savedToNotes => 'Bĩnga f gʋlsgã pʋgẽ';
 }

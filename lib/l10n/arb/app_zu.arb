@@ -680,5 +680,7 @@
   "instrumentNote": "Incazelo ye-AI evela ekhasini lesikhwama lomkhiphi nakumawebhusayithi ezezimali esiwathola kuwebhu. Akuyona iseluleko sokutshala imali. Sisebenzisa umkhawulo wakho wemibuzo wansuku zonke, hhayi ukuhlaziya.",
   "suggestAskAi": "Buza i-AI: “{query}”",
   "portfolioNoPriceFor": "Ayikho intengo yamanje ye-{symbols}.",
-  "eventsRecentResults": "Imiphumela esanda kubikwa"
+  "eventsRecentResults": "Imiphumela esanda kubikwa",
+  "saveToNotes": "Londoloza kumanothi ami",
+  "savedToNotes": "Kulondolozwe kumanothi akho"
 }

@@ -2565,4 +2565,10 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Bu\'aa dhiheenya gabaafame';
+
+  @override
+  String get saveToNotes => 'Yaadannoo kootti olkaa\'i';
+
+  @override
+  String get savedToNotes => 'Yaadannoo keetti olkaa\'ame';
 }

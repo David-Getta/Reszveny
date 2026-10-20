@@ -2555,4 +2555,10 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'সম্প্ৰতি ঘোষিত ফলাফল';
+
+  @override
+  String get saveToNotes => 'মোৰ টোকাত সাঁচক';
+
+  @override
+  String get savedToNotes => 'আপোনাৰ টোকাত সাঁচি থোৱা হ\'ল';
 }

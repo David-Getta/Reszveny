@@ -2443,6 +2443,12 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get eventsRecentResults => '最新财报';
+
+  @override
+  String get saveToNotes => '保存到我的笔记';
+
+  @override
+  String get savedToNotes => '已保存到您的笔记';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -4882,4 +4888,10 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get eventsRecentResults => '最新業績';
+
+  @override
+  String get saveToNotes => '儲存至我的筆記';
+
+  @override
+  String get savedToNotes => '已儲存至你的筆記';
 }

@@ -2556,4 +2556,10 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Nylig rapporterte resultater';
+
+  @override
+  String get saveToNotes => 'Lagre i mine notater';
+
+  @override
+  String get savedToNotes => 'Lagret i notatene dine';
 }

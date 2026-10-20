@@ -2557,4 +2557,10 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Senaste kvartalsrapporter';
+
+  @override
+  String get saveToNotes => 'Spara i mina anteckningar';
+
+  @override
+  String get savedToNotes => 'Sparat i dina anteckningar';
 }

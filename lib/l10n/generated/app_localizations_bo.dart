@@ -2545,4 +2545,10 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'ཉེ་ཆར་སྙན་ཞུ་བྱས་པའི་གྲུབ་འབྲས';
+
+  @override
+  String get saveToNotes => 'ངའི་ཟིན་ཐོར་ཉར་ཚགས།';
+
+  @override
+  String get savedToNotes => 'ཁྱེད་ཀྱི་ཟིན་ཐོར་ཉར་ཟིན།';
 }

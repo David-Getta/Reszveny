@@ -66,5 +66,6 @@ Future<void> showInstrumentExplanation(
     answer: answer,
     note: l10n.instrumentNote,
     sourceKeyPrefix: 'instrument-source',
+    symbol: symbol,
   );
 }

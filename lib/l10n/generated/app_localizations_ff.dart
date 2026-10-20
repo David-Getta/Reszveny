@@ -2550,4 +2550,10 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Ngalluuji kesi bayyinaaɗi';
+
+  @override
+  String get saveToNotes => 'Mooftu e binndi am';
+
+  @override
+  String get savedToNotes => 'Mooftaama e binndi maa';
 }

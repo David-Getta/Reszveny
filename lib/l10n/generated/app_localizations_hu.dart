@@ -2561,4 +2561,10 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Friss gyorsjelentések';
+
+  @override
+  String get saveToNotes => 'Mentés a jegyzeteimbe';
+
+  @override
+  String get savedToNotes => 'Elmentve a jegyzeteidbe';
 }

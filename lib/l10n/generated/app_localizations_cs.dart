@@ -2618,4 +2618,10 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Nedávno zveřejněné výsledky';
+
+  @override
+  String get saveToNotes => 'Uložit do mých poznámek';
+
+  @override
+  String get savedToNotes => 'Uloženo do vašich poznámek';
 }

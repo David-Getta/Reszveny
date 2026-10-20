@@ -2557,4 +2557,10 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Саяхан гарсан тайлан';
+
+  @override
+  String get saveToNotes => 'Миний тэмдэглэлд хадгалах';
+
+  @override
+  String get savedToNotes => 'Таны тэмдэглэлд хадгалагдсан';
 }

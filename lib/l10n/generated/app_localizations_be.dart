@@ -2623,4 +2623,10 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Нядаўна апублікаваныя вынікі';
+
+  @override
+  String get saveToNotes => 'Захаваць у мае нататкі';
+
+  @override
+  String get savedToNotes => 'Захавана ў вашых нататках';
 }

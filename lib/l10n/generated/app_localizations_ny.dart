@@ -2563,4 +2563,10 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Zotsatira zolengezedwa posachedwa';
+
+  @override
+  String get saveToNotes => 'Sungani ku zolemba zanga';
+
+  @override
+  String get savedToNotes => 'Zasungidwa ku zolemba zanu';
 }

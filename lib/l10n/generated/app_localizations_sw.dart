@@ -2557,4 +2557,10 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Matokeo yaliyoripotiwa hivi karibuni';
+
+  @override
+  String get saveToNotes => 'Hifadhi kwenye madokezo yangu';
+
+  @override
+  String get savedToNotes => 'Imehifadhiwa kwenye madokezo yako';
 }

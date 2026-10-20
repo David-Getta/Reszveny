@@ -2552,4 +2552,10 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Laporan terbaru';
+
+  @override
+  String get saveToNotes => 'Simpan ke catatan saya';
+
+  @override
+  String get savedToNotes => 'Tersimpan di catatan Anda';
 }

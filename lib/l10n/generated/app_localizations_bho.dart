@@ -2552,4 +2552,10 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'हाले के घोषित नतीजा';
+
+  @override
+  String get saveToNotes => 'हमार नोट में सेव करीं';
+
+  @override
+  String get savedToNotes => 'रउआ के नोट में सेव हो गइल';
 }

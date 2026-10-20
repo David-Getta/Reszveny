@@ -169,6 +169,7 @@ Future<void> showEarningsSummary(
     answer: answer,
     note: l10n.earningsSummaryNote,
     sourceKeyPrefix: 'earnings-source',
+    symbol: symbol,
   );
 }
 

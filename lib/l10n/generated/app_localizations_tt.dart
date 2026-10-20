@@ -2555,4 +2555,10 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Күптән түгел игълан ителгән нәтиҗәләр';
+
+  @override
+  String get saveToNotes => 'Язмаларыма саклау';
+
+  @override
+  String get savedToNotes => 'Язмаларыгызга сакланды';
 }

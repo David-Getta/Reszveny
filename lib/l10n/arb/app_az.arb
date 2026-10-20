@@ -680,5 +680,7 @@
   "instrumentNote": "Emitentin fond səhifəsindən və internetdə tapdığı maliyyə saytlarından AI izahı. İnvestisiya məsləhəti deyil. Gündəlik sual limitinizdən istifadə edir, təhlil sərf etmir.",
   "suggestAskAi": "AI-dən soruşun: «{query}»",
   "portfolioNoPriceFor": "{symbols} üçün cari qiymət yoxdur.",
-  "eventsRecentResults": "Son açıqlanan nəticələr"
+  "eventsRecentResults": "Son açıqlanan nəticələr",
+  "saveToNotes": "Qeydlərimə yadda saxla",
+  "savedToNotes": "Qeydlərinizə yadda saxlanıldı"
 }

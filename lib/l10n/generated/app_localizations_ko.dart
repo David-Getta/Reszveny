@@ -2486,4 +2486,10 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get eventsRecentResults => '최근 발표된 실적';
+
+  @override
+  String get saveToNotes => '내 메모에 저장';
+
+  @override
+  String get savedToNotes => '메모에 저장됨';
 }

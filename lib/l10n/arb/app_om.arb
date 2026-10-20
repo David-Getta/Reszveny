@@ -680,5 +680,7 @@
   "instrumentNote": "Ibsa AI fuula fandii baasaa fi marsariitiiwwan faayinaansii interneetii irratti argatu irraa. Gorsa invastimantii miti. Daangaa gaaffii guyyaa kee fayyadama, xiinxala miti.",
   "suggestAskAi": "AI gaafadhu: “{query}”",
   "portfolioNoPriceFor": "Gatiin ammaa {symbols} hin jiru.",
-  "eventsRecentResults": "Bu'aa dhiheenya gabaafame"
+  "eventsRecentResults": "Bu'aa dhiheenya gabaafame",
+  "saveToNotes": "Yaadannoo kootti olkaa'i",
+  "savedToNotes": "Yaadannoo keetti olkaa'ame"
 }

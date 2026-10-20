@@ -2567,4 +2567,10 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Iziphumo ezisandula kuxelwa';
+
+  @override
+  String get saveToNotes => 'Gcina kumanqaku am';
+
+  @override
+  String get savedToNotes => 'Igciniwe kumanqaku akho';
 }

@@ -2557,4 +2557,10 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'ახლახან გამოქვეყნებული შედეგები';
+
+  @override
+  String get saveToNotes => 'ჩემს ჩანაწერებში შენახვა';
+
+  @override
+  String get savedToNotes => 'შენახულია თქვენს ჩანაწერებში';
 }

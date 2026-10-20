@@ -2565,4 +2565,10 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Natiijooyinka dhawaan la sheegay';
+
+  @override
+  String get saveToNotes => 'Ku kaydi qoraalladayda';
+
+  @override
+  String get savedToNotes => 'Waxaa lagu kaydiyay qoraalladaada';
 }

@@ -2559,4 +2559,10 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Onlangs gerapporteer';
+
+  @override
+  String get saveToNotes => 'Stoor in my notas';
+
+  @override
+  String get savedToNotes => 'In jou notas gestoor';
 }

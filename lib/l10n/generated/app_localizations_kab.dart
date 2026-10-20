@@ -2554,4 +2554,10 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Igmaḍ i d-yettwabedren melmi kan';
+
+  @override
+  String get saveToNotes => 'Sekles deg tizmilin-iw';
+
+  @override
+  String get savedToNotes => 'Yettwasekles deg tizmilin-ik';
 }

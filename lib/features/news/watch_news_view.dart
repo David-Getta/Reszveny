@@ -159,6 +159,7 @@ Future<void> showNewsExplanation(BuildContext context, WatchedNews news) {
     answer: answer,
     note: l10n.newsExplainNoteResearch,
     sourceKeyPrefix: 'news-source',
+    symbol: news.symbol,
   );
 }
 

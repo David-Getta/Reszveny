@@ -680,5 +680,7 @@
   "instrumentNote": "İhraççının fon sayfası ve web’de bulduğu finans sitelerine dayanan yapay zekâ açıklaması. Yatırım tavsiyesi değildir. Günlük soru hakkından düşer, analiz hakkı kullanmaz.",
   "suggestAskAi": "Yapay zekâya sorun: “{query}”",
   "portfolioNoPriceFor": "{symbols} için güncel fiyat yok.",
-  "eventsRecentResults": "Son açıklanan bilançolar"
+  "eventsRecentResults": "Son açıklanan bilançolar",
+  "saveToNotes": "Notlarıma kaydet",
+  "savedToNotes": "Notlarınıza kaydedildi"
 }

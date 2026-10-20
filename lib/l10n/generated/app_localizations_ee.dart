@@ -2559,4 +2559,10 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Akɔntabubu siwo woɖe gbeƒã nyitsɔ laa';
+
+  @override
+  String get saveToNotes => 'Dzra ɖo ɖe nye nuŋlɔɖiwo me';
+
+  @override
+  String get savedToNotes => 'Wodzrae ɖo ɖe wò nuŋlɔɖiwo me';
 }

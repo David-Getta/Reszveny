@@ -680,5 +680,7 @@
   "instrumentNote": "Emitentning fond sahifasi va internetda topgan moliyaviy saytlarga asoslangan AI izohi. Bu investitsiya maslahati emas. Kunlik savollar limitingizdan sarflanadi, tahlil emas.",
   "suggestAskAi": "AI-dan soʻrang: “{query}”",
   "portfolioNoPriceFor": "{symbols} uchun joriy narx yoʻq.",
-  "eventsRecentResults": "Yaqinda eʼlon qilingan natijalar"
+  "eventsRecentResults": "Yaqinda eʼlon qilingan natijalar",
+  "saveToNotes": "Qaydlarimga saqlash",
+  "savedToNotes": "Qaydlaringizga saqlandi"
 }

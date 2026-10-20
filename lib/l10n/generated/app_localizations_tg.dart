@@ -2558,4 +2558,10 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Натиҷаҳои ба наздикӣ эълоншуда';
+
+  @override
+  String get saveToNotes => 'Ба қайдҳои ман нигоҳ доштан';
+
+  @override
+  String get savedToNotes => 'Дар қайдҳои шумо нигоҳ дошта шуд';
 }

@@ -2559,4 +2559,10 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'يېقىندا ئېلان قىلىنغان نەتىجىلەر';
+
+  @override
+  String get saveToNotes => 'خاتىرىلىرىمگە ساقلاش';
+
+  @override
+  String get savedToNotes => 'خاتىرىلىرىڭىزگە ساقلاندى';
 }

@@ -2563,4 +2563,10 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'ಇತ್ತೀಚೆಗೆ ವರದಿಯಾದ ಫಲಿತಾಂಶಗಳು';
+
+  @override
+  String get saveToNotes => 'ನನ್ನ ಟಿಪ್ಪಣಿಗಳಿಗೆ ಉಳಿಸಿ';
+
+  @override
+  String get savedToNotes => 'ನಿಮ್ಮ ಟಿಪ್ಪಣಿಗಳಿಗೆ ಉಳಿಸಲಾಗಿದೆ';
 }

@@ -680,5 +680,7 @@
   "instrumentNote": "Vysvetlenie od AI na základe stránky fondu u emitenta a finančných webov, ktoré nájde na internete. Nie je investičným odporúčaním. Čerpá z vášho denného limitu otázok, nespotrebuje analýzu.",
   "suggestAskAi": "Opýtať sa AI: „{query}“",
   "portfolioNoPriceFor": "Pre {symbols} nie je k dispozícii aktuálna cena.",
-  "eventsRecentResults": "Nedávno zverejnené výsledky"
+  "eventsRecentResults": "Nedávno zverejnené výsledky",
+  "saveToNotes": "Uložiť do mojich poznámok",
+  "savedToNotes": "Uložené do vašich poznámok"
 }

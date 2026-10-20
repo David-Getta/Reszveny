@@ -2623,4 +2623,10 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Neseniai paskelbti rezultatai';
+
+  @override
+  String get saveToNotes => 'Išsaugoti mano užrašuose';
+
+  @override
+  String get savedToNotes => 'Išsaugota jūsų užrašuose';
 }

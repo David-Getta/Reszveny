@@ -2555,4 +2555,10 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'हालै प्रकाशित नतिजा';
+
+  @override
+  String get saveToNotes => 'मेरा टिपोटहरूमा सेभ गर्नुहोस्';
+
+  @override
+  String get savedToNotes => 'तपाईंका टिपोटहरूमा सेभ भयो';
 }

@@ -2557,4 +2557,10 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Наскоро отчетени резултати';
+
+  @override
+  String get saveToNotes => 'Запази в моите бележки';
+
+  @override
+  String get savedToNotes => 'Запазено в бележките ви';
 }

@@ -680,5 +680,7 @@
   "instrumentNote": "AI-uitleg op basis van de fondspagina van de uitgever en financiële sites die het op het web vindt. Dit is geen beleggingsadvies. Gebruikt je dagelijkse vragentegoed, geen analyse.",
   "suggestAskAi": "Vraag het de AI: “{query}”",
   "portfolioNoPriceFor": "Geen actuele koers voor {symbols}.",
-  "eventsRecentResults": "Recente kwartaalcijfers"
+  "eventsRecentResults": "Recente kwartaalcijfers",
+  "saveToNotes": "Opslaan in mijn notities",
+  "savedToNotes": "Opgeslagen in je notities"
 }

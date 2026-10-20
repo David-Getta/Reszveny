@@ -139,7 +139,8 @@ void main() {
       expect((req.body), contains('Apple Inc. (AAPL)'));
       return _answer('Apple beat expectations: revenue grew 8%.');
     });
-    await _openAapl(tester, _services(DemoMarketDataProvider(latency: Duration.zero), client));
+    final s = _services(DemoMarketDataProvider(latency: Duration.zero), client);
+    await _openAapl(tester, s);
     final button = find.byKey(const ValueKey('earnings-summary'));
     expect(button, findsOneWidget);
     expect(find.text('What was in the latest report?'), findsOneWidget);
@@ -163,6 +164,14 @@ void main() {
     expect(shared.single, contains('Apple beat expectations: revenue grew 8%.'));
     expect(shared.single, contains('Apple Q3 results: https://investor.apple.com/q3'));
     expect(shared.single, contains('Not investment advice.'));
+    // Mentés a jegyzetbe: dátum, cím, szöveg, források; másodszor nem menthető.
+    await tester.tap(find.byKey(const ValueKey('research-save-note')));
+    await tester.pumpAndSettle();
+    final note = s.notes.of('AAPL')!.text;
+    expect(note, contains('What was in the latest report?\nApple beat expectations: revenue grew 8%.'));
+    expect(note, contains('https://investor.apple.com/q3'));
+    expect(find.text('Saved to your notes'), findsOneWidget);
+    expect(tester.widget<TextButton>(find.byKey(const ValueKey('research-save-note'))).onPressed, isNull);
   });
 
   testWidgets('tapping the "beat/missed" notification opens the stock with the summary sheet', (tester) async {

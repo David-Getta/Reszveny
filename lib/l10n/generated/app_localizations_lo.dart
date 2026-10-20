@@ -2529,4 +2529,10 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'ຜົນປະກອບການທີ່ລາຍງານຫຼ້າສຸດ';
+
+  @override
+  String get saveToNotes => 'ເກັບໄວ້ໃນບັນທຶກຂອງຂ້ອຍ';
+
+  @override
+  String get savedToNotes => 'ເກັບໄວ້ໃນບັນທຶກຂອງທ່ານແລ້ວ';
 }

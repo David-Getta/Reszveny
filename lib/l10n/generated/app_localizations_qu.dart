@@ -2571,4 +2571,10 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Chayraq willakusqa willakuykuna';
+
+  @override
+  String get saveToNotes => 'Qillqasqaykunaman waqaychay';
+
+  @override
+  String get savedToNotes => 'Qillqasqaykikunaman waqaychasqa';
 }

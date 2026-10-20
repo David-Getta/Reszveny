@@ -680,5 +680,7 @@
   "instrumentNote": "Tekoälyn selitys liikkeeseenlaskijan rahastosivun ja sen verkosta löytämien taloussivustojen perusteella. Se ei ole sijoitusneuvontaa. Kuluttaa päivittäistä kysymyskiintiötäsi, ei analyysia.",
   "suggestAskAi": "Kysy tekoälyltä: ”{query}”",
   "portfolioNoPriceFor": "Ei nykyistä hintaa kohteille {symbols}.",
-  "eventsRecentResults": "Tuoreet tulokset"
+  "eventsRecentResults": "Tuoreet tulokset",
+  "saveToNotes": "Tallenna omiin muistiinpanoihin",
+  "savedToNotes": "Tallennettu muistiinpanoihisi"
 }

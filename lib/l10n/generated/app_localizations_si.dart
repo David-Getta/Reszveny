@@ -2553,4 +2553,10 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'මෑතකදී වාර්තා කළ ප්‍රතිඵල';
+
+  @override
+  String get saveToNotes => 'මගේ සටහන්වලට සුරකින්න';
+
+  @override
+  String get savedToNotes => 'ඔබේ සටහන්වලට සුරැකිණි';
 }

@@ -2564,4 +2564,10 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Ba résultats ya mpa';
+
+  @override
+  String get saveToNotes => 'Bumba na ba note na mono';
+
+  @override
+  String get savedToNotes => 'Yo me bumbama na ba note na nge';
 }

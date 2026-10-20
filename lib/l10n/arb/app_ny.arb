@@ -680,5 +680,7 @@
   "instrumentNote": "Kufotokozera kwa AI kuchokera patsamba la thumba la wotulutsa ndi masamba azachuma omwe chimapeza pa intaneti. Si malangizo okhudza kuyika ndalama. Chimagwiritsa ntchito malire a mafunso anu a tsiku ndi tsiku, osati kusanthula.",
   "suggestAskAi": "Funsani AI: “{query}”",
   "portfolioNoPriceFor": "Palibe mtengo wapano wa {symbols}.",
-  "eventsRecentResults": "Zotsatira zolengezedwa posachedwa"
+  "eventsRecentResults": "Zotsatira zolengezedwa posachedwa",
+  "saveToNotes": "Sungani ku zolemba zanga",
+  "savedToNotes": "Zasungidwa ku zolemba zanu"
 }

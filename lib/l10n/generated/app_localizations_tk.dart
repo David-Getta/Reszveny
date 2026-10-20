@@ -2557,4 +2557,10 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Ýaňy-ýakynda yglan edilen netijeler';
+
+  @override
+  String get saveToNotes => 'Belliklerime ýazdyr';
+
+  @override
+  String get savedToNotes => 'Bellikleriňize ýazdyryldy';
 }

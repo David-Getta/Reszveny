@@ -2551,4 +2551,10 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'હાલમાં જાહેર થયેલાં પરિણામો';
+
+  @override
+  String get saveToNotes => 'મારી નોંધોમાં સાચવો';
+
+  @override
+  String get savedToNotes => 'તમારી નોંધોમાં સાચવ્યું';
 }

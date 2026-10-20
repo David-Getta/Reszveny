@@ -680,5 +680,7 @@
   "instrumentNote": "Ibisobanuro bya AI bishingiye ku rupapuro rw’ikigega rw’uwagishinze no ku mbuga z’imari ibona kuri murandasi. Si inama yo gushora imari. Ikoresha umubare ntarengwa w’ibibazo byawe bya buri munsi, si isesengura.",
   "suggestAskAi": "Baza AI: “{query}”",
   "portfolioNoPriceFor": "Nta giciro cya none cya {symbols}.",
-  "eventsRecentResults": "Ibyatangajwe vuba"
+  "eventsRecentResults": "Ibyatangajwe vuba",
+  "saveToNotes": "Bika mu byo nanditse",
+  "savedToNotes": "Byabitswe mu byo wanditse"
 }

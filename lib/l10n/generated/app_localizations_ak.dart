@@ -2555,4 +2555,10 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Akontaabu a wɔabɔ ho amanneɛ nnansa yi';
+
+  @override
+  String get saveToNotes => 'Kora wɔ me nkyerɛwee mu';
+
+  @override
+  String get savedToNotes => 'Wɔakora wɔ wo nkyerɛwee mu';
 }

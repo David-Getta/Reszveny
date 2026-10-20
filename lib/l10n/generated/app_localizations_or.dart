@@ -2554,4 +2554,10 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'ସମ୍ପ୍ରତି ଘୋଷିତ ଫଳାଫଳ';
+
+  @override
+  String get saveToNotes => 'ମୋ ନୋଟ୍‌ରେ ସେଭ୍ କରନ୍ତୁ';
+
+  @override
+  String get savedToNotes => 'ଆପଣଙ୍କ ନୋଟ୍‌ରେ ସେଭ୍ ହୋଇଛି';
 }

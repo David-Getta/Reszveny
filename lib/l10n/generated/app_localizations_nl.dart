@@ -2560,4 +2560,10 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Recente kwartaalcijfers';
+
+  @override
+  String get saveToNotes => 'Opslaan in mijn notities';
+
+  @override
+  String get savedToNotes => 'Opgeslagen in je notities';
 }

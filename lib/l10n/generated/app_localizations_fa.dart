@@ -2552,4 +2552,10 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'نتایج تازه اعلام‌شده';
+
+  @override
+  String get saveToNotes => 'ذخیره در یادداشت‌هایم';
+
+  @override
+  String get savedToNotes => 'در یادداشت‌هایتان ذخیره شد';
 }

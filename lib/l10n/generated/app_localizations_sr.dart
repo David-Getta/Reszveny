@@ -2602,4 +2602,10 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Недавно објављени резултати';
+
+  @override
+  String get saveToNotes => 'Сачувај у моје белешке';
+
+  @override
+  String get savedToNotes => 'Сачувано у ваше белешке';
 }

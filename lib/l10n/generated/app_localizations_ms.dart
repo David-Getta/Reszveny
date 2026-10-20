@@ -2561,4 +2561,10 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Keputusan terkini dilaporkan';
+
+  @override
+  String get saveToNotes => 'Simpan ke nota saya';
+
+  @override
+  String get savedToNotes => 'Disimpan dalam nota anda';
 }

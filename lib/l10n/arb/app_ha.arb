@@ -680,5 +680,7 @@
   "instrumentNote": "Bayanin AI daga shafin asusun mai bayarwa da shafukan kuɗi da ya samu a yanar gizo. Ba shawarar zuba jari ba ne. Yana amfani da iyakar tambayoyinka na yau da kullum, ba nazari ba.",
   "suggestAskAi": "Tambayi AI: “{query}”",
   "portfolioNoPriceFor": "Babu farashin yanzu na {symbols}.",
-  "eventsRecentResults": "Sakamakon da aka bayyana kwanan nan"
+  "eventsRecentResults": "Sakamakon da aka bayyana kwanan nan",
+  "saveToNotes": "Ajiye a bayanaina",
+  "savedToNotes": "An ajiye a bayananka"
 }

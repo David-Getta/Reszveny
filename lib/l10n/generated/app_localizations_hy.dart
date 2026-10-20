@@ -2565,4 +2565,10 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Վերջերս հրապարակված արդյունքներ';
+
+  @override
+  String get saveToNotes => 'Պահել իմ նշումներում';
+
+  @override
+  String get savedToNotes => 'Պահվել է ձեր նշումներում';
 }

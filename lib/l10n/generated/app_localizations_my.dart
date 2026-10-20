@@ -2547,4 +2547,10 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'မကြာသေးမီ ထုတ်ပြန်ထားသော ရလဒ်များ';
+
+  @override
+  String get saveToNotes => 'ကျွန်ုပ်၏ မှတ်စုများသို့ သိမ်းရန်';
+
+  @override
+  String get savedToNotes => 'သင့်မှတ်စုများသို့ သိမ်းပြီးပါပြီ';
 }

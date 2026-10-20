@@ -680,5 +680,7 @@
   "instrumentNote": "AI explanation from di issuer fund page and money sites wey e find for web. E no be investment advice. E dey use your daily question limit, no be analysis.",
   "suggestAskAi": "Ask di AI: “{query}”",
   "portfolioNoPriceFor": "{symbols} no get current price.",
-  "eventsRecentResults": "Result wey dem just report"
+  "eventsRecentResults": "Result wey dem just report",
+  "saveToNotes": "Save to my notes",
+  "savedToNotes": "E don save to your notes"
 }

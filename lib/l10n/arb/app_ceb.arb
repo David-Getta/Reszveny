@@ -680,5 +680,7 @@
   "instrumentNote": "Pagpatin-aw sa AI gikan sa fund page sa nag-isyu ug sa mga financial site nga makit-an niini sa web. Dili kini tambag sa pagpamuhunan. Mogamit kini sa imong adlaw-adlaw nga limitasyon sa pangutana, dili sa pagtuki.",
   "suggestAskAi": "Pangutan-a ang AI: “{query}”",
   "portfolioNoPriceFor": "Walay presyo karon alang sa {symbols}.",
-  "eventsRecentResults": "Bag-ong gi-report nga resulta"
+  "eventsRecentResults": "Bag-ong gi-report nga resulta",
+  "saveToNotes": "I-save sa akong mga nota",
+  "savedToNotes": "Na-save sa imong mga nota"
 }

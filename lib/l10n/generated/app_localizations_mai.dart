@@ -2550,4 +2550,10 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'हालहि रिपोर्ट कएल गेल परिणाम';
+
+  @override
+  String get saveToNotes => 'हमर नोटमे सेव करू';
+
+  @override
+  String get savedToNotes => 'अहाँक नोटमे सेव भऽ गेल';
 }

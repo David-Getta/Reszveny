@@ -2626,4 +2626,10 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Нещодавно опубліковані звіти';
+
+  @override
+  String get saveToNotes => 'Зберегти в мої нотатки';
+
+  @override
+  String get savedToNotes => 'Збережено у ваших нотатках';
 }

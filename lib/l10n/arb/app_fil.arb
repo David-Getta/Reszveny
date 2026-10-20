@@ -680,5 +680,7 @@
   "instrumentNote": "Paliwanag ng AI mula sa fund page ng issuer at sa mga financial site na nahanap nito sa web. Hindi ito payo sa pamumuhunan. Gumagamit ito ng iyong pang-araw-araw na limitasyon sa tanong, hindi ng pagsusuri.",
   "suggestAskAi": "Itanong sa AI: “{query}”",
   "portfolioNoPriceFor": "Walang kasalukuyang presyo para sa {symbols}.",
-  "eventsRecentResults": "Kamakailang iniulat na resulta"
+  "eventsRecentResults": "Kamakailang iniulat na resulta",
+  "saveToNotes": "I-save sa aking mga tala",
+  "savedToNotes": "Na-save sa iyong mga tala"
 }

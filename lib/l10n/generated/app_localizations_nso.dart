@@ -2572,4 +2572,10 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Dipoelo tše di sa tšwago go begwa';
+
+  @override
+  String get saveToNotes => 'Boloka go dintlha tša ka';
+
+  @override
+  String get savedToNotes => 'E bolokilwe go dintlha tša gago';
 }

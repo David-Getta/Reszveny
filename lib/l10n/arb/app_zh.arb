@@ -680,5 +680,7 @@
   "instrumentNote": "AI 根据发行方的基金页面以及在网上找到的财经网站进行说明。不构成投资建议。占用每日提问次数，不消耗分析次数。",
   "suggestAskAi": "问问 AI：“{query}”",
   "portfolioNoPriceFor": "{symbols}暂无当前价格。",
-  "eventsRecentResults": "最新财报"
+  "eventsRecentResults": "最新财报",
+  "saveToNotes": "保存到我的笔记",
+  "savedToNotes": "已保存到您的笔记"
 }

@@ -2566,4 +2566,10 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'சமீபத்தில் அறிவிக்கப்பட்ட முடிவுகள்';
+
+  @override
+  String get saveToNotes => 'எனது குறிப்புகளில் சேமி';
+
+  @override
+  String get savedToNotes => 'உங்கள் குறிப்புகளில் சேமிக்கப்பட்டது';
 }

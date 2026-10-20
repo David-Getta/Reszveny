@@ -680,5 +680,7 @@
   "instrumentNote": "AI bilgr sẽn yit yiisdã ligd-koglg seb-neng la ligd zĩis nins a sẽn yã internet zugã. Pa sagls ligd kẽesg wɛɛngẽ ye. A tũuda f daar fãa sokr sõorã, pa vẽenegr ye.",
   "suggestAskAi": "Sok AI: « {query} »",
   "portfolioNoPriceFor": "{symbols} koosg ka be masã ye.",
-  "eventsRecentResults": "Ligd-yɛl paal sẽn wilgã"
+  "eventsRecentResults": "Ligd-yɛl paal sẽn wilgã",
+  "saveToNotes": "Bĩng m gʋlsgã pʋgẽ",
+  "savedToNotes": "Bĩnga f gʋlsgã pʋgẽ"
 }

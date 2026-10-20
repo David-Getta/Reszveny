@@ -4422,6 +4422,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Recently reported'**
   String get eventsRecentResults;
+
+  /// Button under an AI research note (news explanation, results summary, fund description): appends the note to the user's own notes on that stock.
+  ///
+  /// In en, this message translates to:
+  /// **'Save to my notes'**
+  String get saveToNotes;
+
+  /// The same button after saving (disabled, with a check mark).
+  ///
+  /// In en, this message translates to:
+  /// **'Saved to your notes'**
+  String get savedToNotes;
 }
 
 class _AppLocalizationsDelegate

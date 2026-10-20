@@ -2554,4 +2554,10 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Àbájáde tí a ṣẹ̀ṣẹ̀ kéde';
+
+  @override
+  String get saveToNotes => 'Fi pamọ́ sí àwọn àkọsílẹ̀ mi';
+
+  @override
+  String get savedToNotes => 'Ti fi pamọ́ sí àwọn àkọsílẹ̀ rẹ';
 }

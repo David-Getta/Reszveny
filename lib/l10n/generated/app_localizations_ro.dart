@@ -2596,4 +2596,10 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Rezultate recente';
+
+  @override
+  String get saveToNotes => 'Salvează în notițele mele';
+
+  @override
+  String get savedToNotes => 'Salvat în notițele tale';
 }

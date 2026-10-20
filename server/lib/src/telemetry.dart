@@ -63,6 +63,7 @@ class TelemetryStore {
     'description_resolved',
     'instrument_explained',
     'research_followup',
+    'research_saved_note',
     'shared_cache_hit',
     'shared_cache_store',
     'list_created',

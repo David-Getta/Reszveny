@@ -2572,4 +2572,10 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Bag-o lang gin-report nga resulta';
+
+  @override
+  String get saveToNotes => 'I-save sa akon mga nota';
+
+  @override
+  String get savedToNotes => 'Na-save sa imo mga nota';
 }

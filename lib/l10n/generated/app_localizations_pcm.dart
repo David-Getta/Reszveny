@@ -2556,4 +2556,10 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Result wey dem just report';
+
+  @override
+  String get saveToNotes => 'Save to my notes';
+
+  @override
+  String get savedToNotes => 'E don save to your notes';
 }

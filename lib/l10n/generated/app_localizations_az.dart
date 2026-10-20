@@ -2559,4 +2559,10 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Son açıqlanan nəticələr';
+
+  @override
+  String get saveToNotes => 'Qeydlərimə yadda saxla';
+
+  @override
+  String get savedToNotes => 'Qeydlərinizə yadda saxlanıldı';
 }

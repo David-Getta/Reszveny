@@ -2597,4 +2597,10 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Nesen paziņotie rezultāti';
+
+  @override
+  String get saveToNotes => 'Saglabāt manās piezīmēs';
+
+  @override
+  String get savedToNotes => 'Saglabāts jūsu piezīmēs';
 }

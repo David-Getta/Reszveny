@@ -2622,4 +2622,10 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Nedávno zverejnené výsledky';
+
+  @override
+  String get saveToNotes => 'Uložiť do mojich poznámok';
+
+  @override
+  String get savedToNotes => 'Uložené do vašich poznámok';
 }

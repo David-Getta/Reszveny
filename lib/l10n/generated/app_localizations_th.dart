@@ -2526,4 +2526,10 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'ผลประกอบการที่รายงานล่าสุด';
+
+  @override
+  String get saveToNotes => 'เก็บไว้ในบันทึกของฉัน';
+
+  @override
+  String get savedToNotes => 'เก็บไว้ในบันทึกของคุณแล้ว';
 }

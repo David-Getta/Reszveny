@@ -2549,4 +2549,10 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Kết quả kinh doanh mới công bố';
+
+  @override
+  String get saveToNotes => 'Lưu vào ghi chú của tôi';
+
+  @override
+  String get savedToNotes => 'Đã lưu vào ghi chú của bạn';
 }

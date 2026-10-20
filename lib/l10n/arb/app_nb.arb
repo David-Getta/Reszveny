@@ -680,5 +680,7 @@
   "instrumentNote": "AI-forklaring basert på utstederens fondsside og finanssider den finner på nettet. Det er ikke investeringsråd. Bruker av den daglige spørsmålskvoten din, ikke en analyse.",
   "suggestAskAi": "Spør AI-en: «{query}»",
   "portfolioNoPriceFor": "Ingen aktuell kurs for {symbols}.",
-  "eventsRecentResults": "Nylig rapporterte resultater"
+  "eventsRecentResults": "Nylig rapporterte resultater",
+  "saveToNotes": "Lagre i mine notater",
+  "savedToNotes": "Lagret i notatene dine"
 }

@@ -2570,4 +2570,10 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Diphetho tse sa tswa tlalehwa';
+
+  @override
+  String get saveToNotes => 'Boloka dintlheng tsa ka';
+
+  @override
+  String get savedToNotes => 'E bolokilwe dintlheng tsa hao';
 }

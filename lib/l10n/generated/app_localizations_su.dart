@@ -2559,4 +2559,10 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Laporan anyar';
+
+  @override
+  String get saveToNotes => 'Simpen ka catetan abdi';
+
+  @override
+  String get savedToNotes => 'Parantos disimpen dina catetan anjeun';
 }

@@ -680,5 +680,7 @@
   "instrumentNote": "Objašnjenje umjetne inteligencije na osnovu stranice fonda kod izdavaoca i finansijskih stranica koje pronađe na internetu. Nije investicijski savjet. Troši vaše dnevno ograničenje pitanja, ne analizu.",
   "suggestAskAi": "Pitajte AI: „{query}“",
   "portfolioNoPriceFor": "Nema trenutne cijene za {symbols}.",
-  "eventsRecentResults": "Nedavno objavljeni rezultati"
+  "eventsRecentResults": "Nedavno objavljeni rezultati",
+  "saveToNotes": "Sačuvaj u moje bilješke",
+  "savedToNotes": "Sačuvano u vaše bilješke"
 }

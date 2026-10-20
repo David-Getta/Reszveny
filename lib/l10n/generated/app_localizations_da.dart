@@ -2554,4 +2554,10 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Seneste regnskaber';
+
+  @override
+  String get saveToNotes => 'Gem i mine noter';
+
+  @override
+  String get savedToNotes => 'Gemt i dine noter';
 }

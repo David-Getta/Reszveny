@@ -2563,4 +2563,10 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Kamakailang iniulat na resulta';
+
+  @override
+  String get saveToNotes => 'I-save sa aking mga tala';
+
+  @override
+  String get savedToNotes => 'Na-save sa iyong mga tala';
 }

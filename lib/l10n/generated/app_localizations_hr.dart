@@ -2600,4 +2600,10 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Nedavno objavljeni rezultati';
+
+  @override
+  String get saveToNotes => 'Spremi u moje bilješke';
+
+  @override
+  String get savedToNotes => 'Spremljeno u vaše bilješke';
 }

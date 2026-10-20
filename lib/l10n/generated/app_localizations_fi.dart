@@ -2557,4 +2557,10 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Tuoreet tulokset';
+
+  @override
+  String get saveToNotes => 'Tallenna omiin muistiinpanoihin';
+
+  @override
+  String get savedToNotes => 'Tallennettu muistiinpanoihisi';
 }

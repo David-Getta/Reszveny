@@ -2565,4 +2565,10 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Πρόσφατα αποτελέσματα';
+
+  @override
+  String get saveToNotes => 'Αποθήκευση στις σημειώσεις μου';
+
+  @override
+  String get savedToNotes => 'Αποθηκεύτηκε στις σημειώσεις σας';
 }

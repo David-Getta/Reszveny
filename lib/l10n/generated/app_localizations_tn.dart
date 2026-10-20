@@ -2574,4 +2574,10 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Dipoelo tse di sa tswang go begwa';
+
+  @override
+  String get saveToNotes => 'Boloka mo dintlheng tsa me';
+
+  @override
+  String get savedToNotes => 'E bolokilwe mo dintlheng tsa gago';
 }

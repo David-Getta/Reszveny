@@ -2567,4 +2567,10 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'അടുത്തിടെ റിപ്പോർട്ട് ചെയ്ത ഫലങ്ങൾ';
+
+  @override
+  String get saveToNotes => 'എന്റെ കുറിപ്പുകളിൽ സേവ് ചെയ്യുക';
+
+  @override
+  String get savedToNotes => 'നിങ്ങളുടെ കുറിപ്പുകളിൽ സേവ് ചെയ്തു';
 }

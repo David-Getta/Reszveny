@@ -680,5 +680,7 @@
   "instrumentNote": "AI ƒe numeɖeɖe tso ɖetɔ la ƒe ga dzraɖoƒe axa kple gaŋutinyawo ƒe nutowo siwo wòkpɔ le internet dzi. Menye aɖaŋuɖoɖo le gadede nu ŋu o. Etsɔna tso wò gbesiagbe nyabiasewo ƒe seɖoƒe me, mezãa dzodzro aɖeke o.",
   "suggestAskAi": "Bia AI: “{query}”",
   "portfolioNoPriceFor": "Fifia asi aɖeke meli na {symbols} o.",
-  "eventsRecentResults": "Akɔntabubu siwo woɖe gbeƒã nyitsɔ laa"
+  "eventsRecentResults": "Akɔntabubu siwo woɖe gbeƒã nyitsɔ laa",
+  "saveToNotes": "Dzra ɖo ɖe nye nuŋlɔɖiwo me",
+  "savedToNotes": "Wodzrae ɖo ɖe wò nuŋlɔɖiwo me"
 }

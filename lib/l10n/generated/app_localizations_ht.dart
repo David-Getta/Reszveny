@@ -2554,4 +2554,10 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Rezilta ki fèk pibliye';
+
+  @override
+  String get saveToNotes => 'Anrejistre nan nòt mwen yo';
+
+  @override
+  String get savedToNotes => 'Anrejistre nan nòt ou yo';
 }

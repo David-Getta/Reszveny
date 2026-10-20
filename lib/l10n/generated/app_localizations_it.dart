@@ -2562,4 +2562,10 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Risultati recenti';
+
+  @override
+  String get saveToNotes => 'Salva nelle mie note';
+
+  @override
+  String get savedToNotes => 'Salvato nelle tue note';
 }

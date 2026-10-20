@@ -680,5 +680,7 @@
   "instrumentNote": "AI 根據發行商的基金頁面以及在網上找到的財經網站作出解釋。並不構成投資建議。佔用每日提問次數，不消耗分析次數。",
   "suggestAskAi": "問 AI：「{query}」",
   "portfolioNoPriceFor": "{symbols}沒有目前股價。",
-  "eventsRecentResults": "最新業績"
+  "eventsRecentResults": "最新業績",
+  "saveToNotes": "儲存至我的筆記",
+  "savedToNotes": "已儲存至你的筆記"
 }

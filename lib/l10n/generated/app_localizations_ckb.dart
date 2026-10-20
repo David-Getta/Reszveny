@@ -2557,4 +2557,10 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'ئەنجامەکانی تازە ڕاگەیەنراو';
+
+  @override
+  String get saveToNotes => 'پاشەکەوتکردن لە تێبینییەکانم';
+
+  @override
+  String get savedToNotes => 'لە تێبینییەکانت پاشەکەوت کرا';
 }

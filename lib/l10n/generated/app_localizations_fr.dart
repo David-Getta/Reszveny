@@ -2567,4 +2567,10 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Résultats récents';
+
+  @override
+  String get saveToNotes => 'Enregistrer dans mes notes';
+
+  @override
+  String get savedToNotes => 'Enregistré dans vos notes';
 }

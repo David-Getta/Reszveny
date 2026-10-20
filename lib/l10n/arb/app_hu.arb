@@ -680,5 +680,7 @@
   "instrumentNote": "AI-magyarázat a kibocsátó oldaláról és a weben talált pénzügyi oldalakról. Nem befektetési tanács. A napi kérdéskeretből megy, elemzést nem fogyaszt.",
   "suggestAskAi": "Kérdezzük meg az AI-t: „{query}”",
   "portfolioNoPriceFor": "Nincs aktuális ár: {symbols}.",
-  "eventsRecentResults": "Friss gyorsjelentések"
+  "eventsRecentResults": "Friss gyorsjelentések",
+  "saveToNotes": "Mentés a jegyzeteimbe",
+  "savedToNotes": "Elmentve a jegyzeteidbe"
 }

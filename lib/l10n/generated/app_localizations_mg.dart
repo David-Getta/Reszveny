@@ -2574,4 +2574,10 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Vokatra vao navoaka';
+
+  @override
+  String get saveToNotes => 'Tehirizo ao amin\'ny naotiko';
+
+  @override
+  String get savedToNotes => 'Voatahiry ao amin\'ny naotinao';
 }

@@ -2625,4 +2625,10 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Niedawno opublikowane wyniki';
+
+  @override
+  String get saveToNotes => 'Zapisz w moich notatkach';
+
+  @override
+  String get savedToNotes => 'Zapisano w twoich notatkach';
 }

@@ -2552,4 +2552,10 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'ਹਾਲ ਹੀ ਵਿੱਚ ਜਾਰੀ ਨਤੀਜੇ';
+
+  @override
+  String get saveToNotes => 'ਮੇਰੇ ਨੋਟਾਂ ਵਿੱਚ ਸੇਵ ਕਰੋ';
+
+  @override
+  String get savedToNotes => 'ਤੁਹਾਡੇ ਨੋਟਾਂ ਵਿੱਚ ਸੇਵ ਹੋ ਗਿਆ';
 }

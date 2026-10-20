@@ -2614,4 +2614,10 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'النتائج المُعلنة مؤخرًا';
+
+  @override
+  String get saveToNotes => 'حفظ في ملاحظاتي';
+
+  @override
+  String get savedToNotes => 'تم الحفظ في ملاحظاتك';
 }

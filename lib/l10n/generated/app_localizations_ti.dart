@@ -2518,4 +2518,10 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'ኣብ ቀረባ እዋን ዝተሓበረ ውጽኢት';
+
+  @override
+  String get saveToNotes => 'ናብ ማስታወሻታተይ ኣቐምጥ';
+
+  @override
+  String get savedToNotes => 'ኣብ ማስታወሻታትኩም ተቐሚጡ';
 }

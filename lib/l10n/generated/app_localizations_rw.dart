@@ -2564,4 +2564,10 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Ibyatangajwe vuba';
+
+  @override
+  String get saveToNotes => 'Bika mu byo nanditse';
+
+  @override
+  String get savedToNotes => 'Byabitswe mu byo wanditse';
 }

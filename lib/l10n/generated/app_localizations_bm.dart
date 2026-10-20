@@ -2553,4 +2553,10 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Jatebɔ fɔlen kuraw';
+
+  @override
+  String get saveToNotes => 'A mara n ka sɛbɛnniw la';
+
+  @override
+  String get savedToNotes => 'A marala i ka sɛbɛnniw la';
 }

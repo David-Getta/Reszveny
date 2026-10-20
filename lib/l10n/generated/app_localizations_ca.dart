@@ -2565,4 +2565,10 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Resultats publicats recentment';
+
+  @override
+  String get saveToNotes => 'Desar a les meves notes';
+
+  @override
+  String get savedToNotes => 'Desat a les teves notes';
 }

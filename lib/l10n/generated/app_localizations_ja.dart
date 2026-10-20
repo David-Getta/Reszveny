@@ -2477,4 +2477,10 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get eventsRecentResults => '最近の決算';
+
+  @override
+  String get saveToNotes => '自分のメモに保存';
+
+  @override
+  String get savedToNotes => 'メモに保存しました';
 }

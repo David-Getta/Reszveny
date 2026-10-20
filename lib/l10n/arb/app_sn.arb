@@ -680,5 +680,7 @@
   "instrumentNote": "Tsananguro yeAI kubva papeji yehomwe yemari yemubudisi nemasaiti emari ainowana painternet. Haisi zano rekuisa mari. Inoshandisa muganhu wako wemibvunzo wezuva nezuva, kwete ongororo.",
   "suggestAskAi": "Bvunza AI: “{query}”",
   "portfolioNoPriceFor": "Hapana mutengo wazvino we {symbols}.",
-  "eventsRecentResults": "Mhedzisiro ichangoziviswa"
+  "eventsRecentResults": "Mhedzisiro ichangoziviswa",
+  "saveToNotes": "Chengetedza muzvinyorwa zvangu",
+  "savedToNotes": "Zvachengetedzwa muzvinyorwa zvako"
 }

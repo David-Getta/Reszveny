@@ -680,5 +680,7 @@
   "instrumentNote": "Paathag sang AI halin sa fund page sang nag-isyu kag sa mga financial site nga nakita sini sa web. Indi ini laygay sa pag-invest. Ginagamit sini ang imo adlaw-adlaw nga limitasyon sang pamangkot, indi ang pagtuki.",
   "suggestAskAi": "Pamangkuta ang AI: “{query}”",
   "portfolioNoPriceFor": "Wala sang presyo subong para sa {symbols}.",
-  "eventsRecentResults": "Bag-o lang gin-report nga resulta"
+  "eventsRecentResults": "Bag-o lang gin-report nga resulta",
+  "saveToNotes": "I-save sa akon mga nota",
+  "savedToNotes": "Na-save sa imo mga nota"
 }

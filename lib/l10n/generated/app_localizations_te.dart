@@ -2562,4 +2562,10 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'ఇటీవల ప్రకటించిన ఫలితాలు';
+
+  @override
+  String get saveToNotes => 'నా గమనికలలో సేవ్ చేయండి';
+
+  @override
+  String get savedToNotes => 'మీ గమనికలలో సేవ్ అయింది';
 }

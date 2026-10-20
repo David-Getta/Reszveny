@@ -2579,4 +2579,10 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Resultados recentes';
+
+  @override
+  String get saveToNotes => 'Gardar nas miñas notas';
+
+  @override
+  String get savedToNotes => 'Gardado nas túas notas';
 }

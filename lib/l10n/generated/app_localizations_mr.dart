@@ -2556,4 +2556,10 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'नुकतेच जाहीर झालेले निकाल';
+
+  @override
+  String get saveToNotes => 'माझ्या नोंदींमध्ये सेव्ह करा';
+
+  @override
+  String get savedToNotes => 'तुमच्या नोंदींमध्ये सेव्ह केले';
 }

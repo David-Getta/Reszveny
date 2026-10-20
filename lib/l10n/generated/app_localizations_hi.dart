@@ -2555,4 +2555,10 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'हाल में घोषित नतीजे';
+
+  @override
+  String get saveToNotes => 'मेरे नोट्स में सेव करें';
+
+  @override
+  String get savedToNotes => 'आपके नोट्स में सेव हो गया';
 }

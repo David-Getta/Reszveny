@@ -2567,4 +2567,10 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get eventsRecentResults => 'Ba résultats ya sika';
+
+  @override
+  String get saveToNotes => 'Bomba na ba note na ngai';
+
+  @override
+  String get savedToNotes => 'Ebombami na ba note na yo';
 }

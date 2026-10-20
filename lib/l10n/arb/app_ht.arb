@@ -680,5 +680,7 @@
   "instrumentNote": "Eksplikasyon AI ki soti nan paj fon emetè a ak sit finansye li jwenn sou entènèt. Se pa yon konsèy envestisman. Li itilize limit kesyon ou pou chak jou, pa yon analiz.",
   "suggestAskAi": "Mande AI a: « {query} »",
   "portfolioNoPriceFor": "Pa gen pri aktyèl pou {symbols}.",
-  "eventsRecentResults": "Rezilta ki fèk pibliye"
+  "eventsRecentResults": "Rezilta ki fèk pibliye",
+  "saveToNotes": "Anrejistre nan nòt mwen yo",
+  "savedToNotes": "Anrejistre nan nòt ou yo"
 }
