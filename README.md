@@ -60,6 +60,12 @@ számítás (részvényenkénti eredmény × szorzó) és bizonyosság, legyező
 Vezérlés `--dart-define`-nal: `ANTHROPIC_REPORT_EFFORT` (`low`…`max`, alap `high`),
 `ANTHROPIC_WEB_SEARCH` (`true`/`false`, alap `true`).
 
+- **Leírás alapján keresés**: ha a beírás nem ticker és a piaci kereső nem találja („tech 100 etf”, „a legnagyobb magyar bank”), az AI találja ki, melyik részvényre vagy ETF-re gondolsz; gépelés közben „Kérdezzük meg az AI-t” javaslat.
+- **„Mi ez a papír?”**: cégprofil nélküli tickernél (ETF, alap, letéti jegy) AI-magyarázat webes forrásokkal: mit követ és tart, költség, méret, osztalék, kockázatok. Az AI-elemzés is alapként elemzi az ETF-eket.
+- **„Mi volt a legutóbbi gyorsjelentésben?”**: AI-összefoglaló a negyedéves eredményről (a cég közleménye és a sajtó alapján, forrásokkal); a friss eredmények az események oldalán, a kedvenceknél és a portfólió-sorokon is látszanak („EPS +2,7%”).
+- **Kérdezz vissza**: a hírmagyarázat, a gyorsjelentés-összefoglaló, az ETF-magyarázat és az összehasonlító táblázat alatt is kérdezhetsz; a válasz a megkapott szövegből (szükség esetén egy webkereséssel) jön, és minden kutatási lap szövegként megosztható.
+- **Megosztott AI-válaszok**: a gyorsjelentés-összefoglalót és a hírmagyarázatot a szerver 30 napig őrzi, így a következő felhasználó Anthropic-hívás és kérdéskeret nélkül kapja.
+
 ## Hogyan működik
 
 1. **Kép** – kamera vagy galéria (asztali gépen fájlválasztó).
