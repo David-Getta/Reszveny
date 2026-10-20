@@ -61,6 +61,31 @@ class _StockDetailPageState extends State<StockDetailPage> {
 
   Future<StockDetails> _fetch() => AppServices.of(context).marketData.details(widget.candidate.symbol);
 
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) => _openRequestedSummary());
+  }
+
+  /// Az értesítésről („X a várt felett teljesített”) nyitva rögtön az
+  /// AI-összefoglaló lapja is jön.
+  Future<void> _openRequestedSummary() async {
+    if (!mounted) return;
+    final services = AppServices.of(context);
+    final symbol = widget.candidate.symbol.toUpperCase();
+    if (!services.alertMonitor.takeSummaryRequest(symbol)) return;
+    String? name;
+    DateTime? period;
+    try {
+      name = (await _future)?.profile?.name;
+      period = (await services.marketData.earnings(symbol)).history.firstOrNull?.period;
+    } catch (_) {
+      // Név és negyedév nélkül is kérhető.
+    }
+    if (!mounted) return;
+    await showEarningsSummary(context, symbol: symbol, companyName: name ?? symbol, lastPeriod: period);
+  }
+
   /// Vétel rögzítése a betöltött árral és pénznemmel (ha még tölt, megvárja).
   Future<void> _addToPortfolio() async {
     final l10n = AppLocalizations.of(context);

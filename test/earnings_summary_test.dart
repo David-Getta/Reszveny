@@ -153,6 +153,31 @@ void main() {
     expect(calls, 1);
   });
 
+  testWidgets('tapping the "beat/missed" notification opens the stock with the summary sheet', (tester) async {
+    final client = MockClient((req) async => _answer('Apple beat expectations.'));
+    final s = _services(DemoMarketDataProvider(latency: Duration.zero), client);
+    // Ablakkezelő nincs a tesztben: az értesítés csak az appon belül nyit.
+    DesktopIntegration.debugSupportedOverride = false;
+    addTearDown(() => DesktopIntegration.debugSupportedOverride = null);
+    tester.view.physicalSize = const Size(1200, 2400);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    s.openNotification('result-AAPL-2026-10-15');
+    await tester.pumpAndSettle();
+    expect(find.text('Apple Inc.'), findsWidgets);
+    expect(find.byKey(const ValueKey('earnings-summary-sheet')), findsOneWidget);
+    expect(find.text('Apple beat expectations.'), findsOneWidget);
+    // Egy másik értesítés (emlékeztető) csak a részvényt nyitja.
+    Navigator.of(tester.element(find.byKey(const ValueKey('earnings-summary-sheet')))).pop();
+    await tester.pumpAndSettle();
+    s.openNotification('earnings-MSFT-2026-10-20');
+    await tester.pumpAndSettle();
+    expect(find.text('Microsoft Corporation'), findsWidgets);
+    expect(find.byKey(const ValueKey('earnings-summary-sheet')), findsNothing);
+  });
+
   testWidgets('no recent quarter: no summary button', (tester) async {
     await _openAapl(tester, _services(_OldEarnings(), MockClient((_) async => _answer('x'))));
     expect(find.byKey(const ValueKey('earnings-card')), findsOneWidget);

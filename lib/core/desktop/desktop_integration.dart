@@ -406,16 +406,21 @@ class DesktopIntegration extends ChangeNotifier with WindowListener, TrayListene
   /// Vissza a teljes ablakhoz (pl. egy találat megnyitásakor).
   Future<void> showFullWindow() async {
     if (!isSupported) return;
-    if (_quickBar) {
-      _quickBar = false;
-      notifyListeners();
-      await windowManager.setAlwaysOnTop(false);
-      await windowManager.setResizable(true);
-      await windowManager.setSize(_lastFullSize);
-      await windowManager.center();
+    try {
+      if (_quickBar) {
+        _quickBar = false;
+        notifyListeners();
+        await windowManager.setAlwaysOnTop(false);
+        await windowManager.setResizable(true);
+        await windowManager.setSize(_lastFullSize);
+        await windowManager.center();
+      }
+      await windowManager.show().timeout(const Duration(seconds: 3));
+      await windowManager.focus().timeout(const Duration(seconds: 3));
+    } catch (e) {
+      // Ablakkezelő nélkül (vagy ha nem válaszol) is menjen tovább a megnyitás.
+      debugPrint('Ablak előtérbe hozása nem sikerült: $e');
     }
-    await windowManager.show();
-    await windowManager.focus();
   }
 
   /// Ha közben megadták az engedélyt, a figyelést rendszerszintűre váltjuk.

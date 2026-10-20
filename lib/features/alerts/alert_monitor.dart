@@ -48,9 +48,20 @@ class AlertMonitor extends ChangeNotifier {
   /// Értesítésre koppintás után megnyitandó részvény (a keret figyeli).
   final ValueNotifier<String?> openRequest = ValueNotifier(null);
 
-  void requestOpen(String symbol) {
+  void requestOpen(String symbol, {bool summary = false}) {
+    _pendingSummary = summary ? symbol.toUpperCase() : null;
     openRequest.value = null;
     openRequest.value = symbol;
+  }
+
+  /// Az értesítésről (gyorsjelentés eredménye) megnyitott részvénynél rögtön az
+  /// összefoglaló is kell; a részvény oldala egyszer kéri el.
+  String? _pendingSummary;
+
+  bool takeSummaryRequest(String symbol) {
+    if (_pendingSummary != symbol.toUpperCase()) return false;
+    _pendingSummary = null;
+    return true;
   }
 
   /// Rendszeres ellenőrzés indítása (az első rögtön lefut).

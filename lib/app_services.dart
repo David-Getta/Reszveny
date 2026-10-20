@@ -112,7 +112,7 @@ class AppServices {
     alertMonitor = AlertMonitor(
       store: this.alerts,
       marketData: marketData,
-      notifier: alertNotifier ?? SystemNotifier(onClick: _openAlert),
+      notifier: alertNotifier ?? SystemNotifier(onClick: openNotification),
       describe: describeAlertHit,
     );
     morningBrief = MorningBrief(
@@ -350,7 +350,11 @@ class AppServices {
   }
 
   /// Értesítésre koppintás: a riasztás részvénye nyíljon meg.
-  void _openAlert(String id) {
+  /// Koppintás egy rendszerértesítésre: a hozzá tartozó részvény nyílik meg.
+  void openNotification(String id) {
+    // Gyorsjelentés eredménye: `result-<ticker>-<nap>` – a részvény és az AI-összefoglaló.
+    final result = RegExp(r'^result-(.+)-\d{4}-\d{2}-\d{2}$').firstMatch(id);
+    if (result != null) return alertMonitor.requestOpen(result[1]!, summary: true);
     // Gyorsjelentés-emlékeztető: `earnings-<ticker>-<nap>`.
     final earnings = RegExp(r'^earnings-(.+)-\d{4}-\d{2}-\d{2}$').firstMatch(id);
     if (earnings != null) return alertMonitor.requestOpen(earnings[1]!);
