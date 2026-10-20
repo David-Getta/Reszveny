@@ -72,6 +72,11 @@ class EventsService extends ChangeNotifier {
   /// Ennyi napon belül zárult negyedév eredménye számít frissnek.
   static const recentDays = 45;
 
+  /// Legfeljebb ennyi részvénynél kérjük le az eredmény-előzményt is (két hívás
+  /// részvényenként); a többinél csak a következő dátumot, hogy sok kedvencnél
+  /// se fussunk bele az adatszolgáltató percenkénti korlátjába.
+  static const recentMaxSymbols = 15;
+
   /// A figyelt részvények friss (már megjelent) negyedéves eredményei, a
   /// legújabb negyedév elöl.
   List<RecentResult> get recent => _recent;
@@ -101,6 +106,7 @@ class EventsService extends ChangeNotifier {
       bool inRange(DateTime d) => !d.isBefore(today) && !d.isAfter(until);
 
       final symbols = watched;
+      final withHistory = symbols.take(recentMaxSymbols).toSet();
       final queue = [...symbols];
       Future<void> worker() async {
         while (queue.isNotEmpty) {
@@ -108,7 +114,10 @@ class EventsService extends ChangeNotifier {
           final cached = _earnings[s];
           if (!force && cached != null && _clock().difference(cached.$1) < cacheFor) continue;
           try {
-            _earnings[s] = (_clock(), await marketData.earnings(s).timeout(const Duration(seconds: 20)));
+            final overview = withHistory.contains(s)
+                ? await marketData.earnings(s).timeout(const Duration(seconds: 20))
+                : EarningsOverview(next: await marketData.nextEarnings(s).timeout(const Duration(seconds: 20)));
+            _earnings[s] = (_clock(), overview);
           } catch (e) {
             // Egy részvény hibája nem akadályozza a többit.
             debugPrint('Gyorsjelentés-dátum nem tölthető ($s): $e');
