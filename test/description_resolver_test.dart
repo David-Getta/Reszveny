@@ -126,6 +126,23 @@ void main() {
     expect(find.text('SPDR Gold Shares'), findsOneWidget);
     expect(find.text('iShares Gold Trust'), findsOneWidget);
     expect(sent, hasLength(2));
+
+    // A választott jelölt megmarad: ugyanarra a leírásra AI nélkül nyílik, és gépelés közben javaslat.
+    await tester.tap(find.text('SPDR Gold Shares'));
+    await tester.pumpAndSettle();
+    expect(s.preferences.resolvedFor('Gold ETF')!.symbol, 'GLD');
+    await tester.pageBack();
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byType(TextField).first, 'gold');
+    await tester.pump();
+    expect(find.byKey(const ValueKey('suggestion-GLD')), findsOneWidget);
+    await tester.enterText(find.byType(TextField).first, 'gold etf');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    expect(find.text('GLD'), findsWidgets);
+    expect(sent, hasLength(2), reason: 'no new AI call');
+    // Újraindítás után is megvan.
+    expect((await AppPreferences.load()).resolvedFor('gold etf')!.symbol, 'GLD');
   });
 
   testWidgets('a plain ticker or a short text never asks the AI', (tester) async {

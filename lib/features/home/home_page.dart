@@ -127,6 +127,9 @@ class _HomePageState extends State<HomePage> {
     final local = [
       for (final s in {...prefs.favorites, ...prefs.recent})
         if (s.startsWith(upper)) StockCandidate(symbol: s, companyName: s, confidence: 1),
+      // Korábban megfejtett leírás („tech 100 etf” → QQQ): azonnal, AI nélkül.
+      for (final r in prefs.resolvedStartingWith(q))
+        StockCandidate(symbol: r.symbol, companyName: r.name, confidence: 1),
     ].take(3).toList();
     setState(() {
       _suggestions = local;
@@ -189,6 +192,9 @@ class _HomePageState extends State<HomePage> {
     if (results.isEmpty) {
       if (looksLikeTicker) {
         _open(StockCandidate(symbol: q.toUpperCase(), companyName: q.toUpperCase(), confidence: 1));
+      } else if (services.preferences.resolvedFor(q) case final r?) {
+        // Korábban megfejtett leírás: AI nélkül.
+        _open(StockCandidate(symbol: r.symbol, companyName: r.name, confidence: 1));
       } else if (DescriptionResolver.looksLikeDescription(q) && services.config.hasAnthropicKey) {
         // Leírás („tech 100 etf”): az AI találja ki, melyik részvény vagy ETF.
         await _resolveDescription(q);
@@ -228,12 +234,10 @@ class _HomePageState extends State<HomePage> {
       return;
     }
     final best = result.best!;
-    if (result.candidates.length == 1 && best.isConfident) {
-      _open(best);
-      return;
-    }
-    final chosen = await showCandidateSheet(context, result);
+    final chosen = result.candidates.length == 1 && best.isConfident ? best : await showCandidateSheet(context, result);
     if (chosen == null || !mounted) return;
+    // Megjegyezzük: legközelebb AI nélkül.
+    unawaited(services.preferences.rememberResolved(q, symbol: chosen.symbol, name: chosen.companyName));
     _open(chosen);
   }
 

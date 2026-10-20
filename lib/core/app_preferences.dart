@@ -67,6 +67,7 @@ class AppPreferences extends ChangeNotifier {
   static const _targetsKey = 'portfolio_targets';
   static const _goalKey = 'portfolio_goal';
   static const _hiddenHomeKey = 'home_hidden';
+  static const _resolvedKey = 'resolved_descriptions';
 
   /// A kezdőképernyő elrejthető részei (azonosítók a beállításokhoz).
   static const homeSections = ['markets', 'brief', 'portfolio', 'favorites', 'events', 'news', 'analyses'];
@@ -135,6 +136,48 @@ class AppPreferences extends ChangeNotifier {
   bool morningBrief;
 
   final Set<String> _hiddenHome;
+
+  /// Az AI által megfejtett leírások („tech 100 etf” → QQQ): másodszor már
+  /// AI-hívás nélkül nyílik, és gépelés közben javaslatként is megjelenik.
+  final Map<String, ({String symbol, String name})> _resolved = {};
+  static const maxResolved = 50;
+
+  static String _descriptionKey(String q) => q.trim().toLowerCase().replaceAll(RegExp(r'\s+'), ' ');
+
+  ({String symbol, String name})? resolvedFor(String query) => _resolved[_descriptionKey(query)];
+
+  /// A leírásokhoz tartozó megjegyzett találatok, amelyek [prefix]-szel kezdődnek.
+  List<({String query, String symbol, String name})> resolvedStartingWith(String prefix) {
+    final p = _descriptionKey(prefix);
+    if (p.isEmpty) return const [];
+    return [
+      for (final e in _resolved.entries)
+        if (e.key.startsWith(p)) (query: e.key, symbol: e.value.symbol, name: e.value.name),
+    ];
+  }
+
+  Future<void> rememberResolved(String query, {required String symbol, required String name}) async {
+    final key = _descriptionKey(query);
+    if (key.length < 4 || symbol.isEmpty) return;
+    _resolved.remove(key);
+    _resolved[key] = (symbol: symbol.toUpperCase(), name: name);
+    while (_resolved.length > maxResolved) {
+      _resolved.remove(_resolved.keys.first);
+    }
+    await _save(
+      (p) => p.setStringList(_resolvedKey, [
+        for (final e in _resolved.entries) '${e.key}|${e.value.symbol}|${e.value.name.replaceAll('|', ' ')}',
+      ]),
+    );
+  }
+
+  void _loadResolved(List<String>? raw) {
+    for (final line in raw ?? const <String>[]) {
+      final parts = line.split('|');
+      if (parts.length < 2 || parts[0].isEmpty || parts[1].isEmpty) continue;
+      _resolved[parts[0]] = (symbol: parts[1], name: parts.length > 2 ? parts.sublist(2).join('|') : parts[1]);
+    }
+  }
 
   /// Látszik-e a kezdőképernyő adott része (alapból mind).
   bool showsHome(String section) => !_hiddenHome.contains(section);
@@ -225,7 +268,7 @@ class AppPreferences extends ChangeNotifier {
       final prefs = await SharedPreferences.getInstance();
       final mode = ThemeMode.values.asNameMap()[prefs.getString(_themeKey) ?? ''] ?? ThemeMode.system;
       final hk = prefs.getString(_hotkeyKey);
-      return AppPreferences(
+      final loaded = AppPreferences(
         themeMode: mode,
         recent: prefs.getStringList(_recentKey) ?? const [],
         favorites: prefs.getStringList(_favoritesKey) ?? const [],
@@ -254,6 +297,8 @@ class AppPreferences extends ChangeNotifier {
         watchLists: WatchList.parseAll(prefs.getString(_listsKey)),
         targets: parseTargets(prefs.getString(_targetsKey)),
       );
+      loaded._loadResolved(prefs.getStringList(_resolvedKey));
+      return loaded;
     } catch (_) {
       return AppPreferences();
     }
