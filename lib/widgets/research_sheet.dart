@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../app_services.dart';
+import '../core/share/share_text.dart';
 import '../features/news/research_store.dart' show ResearchResult;
 import '../l10n/error_messages.dart';
 import '../l10n/generated/app_localizations.dart';
@@ -60,7 +61,29 @@ Future<void> showResearchSheet(
                         // A webkeresés forrásai: koppintásra megnyílnak a böngészőben.
                         SourceLinks(sources: r.sources, keyPrefix: sourceKeyPrefix),
                         if (r.text.isNotEmpty) ...[
-                          const SizedBox(height: 12),
+                          const SizedBox(height: 8),
+                          // Megosztás szövegként: cím, a válasz, a források és a megjegyzés.
+                          Align(
+                            alignment: AlignmentDirectional.centerEnd,
+                            child: TextButton.icon(
+                              key: const ValueKey('research-share'),
+                              style: TextButton.styleFrom(visualDensity: VisualDensity.compact),
+                              icon: const Icon(Icons.ios_share_rounded, size: 18),
+                              label: Text(l10n.shareAsText),
+                              onPressed: () => shareText(
+                                [
+                                  '$eyebrow · $title',
+                                  '',
+                                  r.text,
+                                  if (r.sources.isNotEmpty) ...['', for (final s in r.sources) '${s.title}: ${s.url}'],
+                                  '',
+                                  note,
+                                ].join('\n'),
+                                subject: '$eyebrow · $title',
+                              ),
+                            ),
+                          ),
+                          const SizedBox(height: 4),
                           ResearchFollowUpPanel(
                             note: r.text,
                             subject: eyebrow,

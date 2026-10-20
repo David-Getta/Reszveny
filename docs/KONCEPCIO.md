@@ -282,6 +282,7 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 5cx | Kérdezz az összehasonlításról: az összehasonlító táblázat alatt kérdésmező, a táblázat szövegként megy az AI-nak (pl. „melyik az olcsóbb és miért?”), a napi kérdéskeretből | ✅ kész |
 | 5cy | Portfólió-pozíciók: a friss negyedéves eredmény a sor alatt („EPS +2,7%”, zöld/piros), a súgóban a számokkal | ✅ kész |
 | 5cz | Tálca/menüsor: a kedvencek sorában a 7 napon belüli gyorsjelentés („📅 Holnap”) | ✅ kész |
+| 5da | Kutatási lapok megosztása szövegként (cím, válasz, források, megjegyzés); a szerver számolja a megosztott AI-válaszok találatait és tárolásait (admin) | ✅ kész |
 | 5j | Telefonos háttér-értesítés (riasztás) szerverről, APNs / FCM | 🟡 első lépés kész: a szerver 10 percenként nézi a belépett fiókok szinkronizált riasztásait, és e-mailben szól (csukott appnál is, kikapcsolható); a telefonos push (APNs / FCM) a Firebase-projekt és az Apple-kulcs után |
 | 5k | Bolti adatlapok 120 nyelven, képernyőképek, ikon, előnézeti videó | 🟡 adatlap-szövegek 70 bolti nyelven (fastlane-mappa, `docs/BOLTI_ADATLAP.md`), feliratos bolti képek a teszt-harnessből a boltok méreteiben; előnézeti videó és a nem latin írású képek a natív buildből később |
 

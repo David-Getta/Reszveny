@@ -1390,6 +1390,7 @@ class Api {
     final cacheKey = sharedCacheKey(raw['shared_cache']);
     final cached = cacheKey == null ? null : store.sharedAnswer(cacheKey, sharedAnswerKeepFor);
     if (cached != null) {
+      telemetry.bump('shared_cache_hit');
       return Response.ok(cached, headers: {'content-type': 'application/json', 'x-whatstock-cache': 'hit'});
     }
     final trial = e.tier == null || e.tier == 'trial';
@@ -1414,6 +1415,7 @@ class Api {
     // Csak a kutatással (eszközökkel) készült, sikeres válasz kerül a megosztott tárba.
     if (cacheKey != null && tools != null && upstream.statusCode == 200 && _isCompleteAnswer(upstream.body)) {
       store.saveSharedAnswer(cacheKey, upstream.body, keepFor: sharedAnswerKeepFor);
+      telemetry.bump('shared_cache_store');
     }
     return Response(upstream.statusCode, body: upstream.body, headers: {'content-type': 'application/json'});
   }

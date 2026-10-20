@@ -172,6 +172,9 @@ void main() {
     expect((s2, b2['content'][0]['text']), (200, 'Answer.'));
     expect(upstream, hasLength(1));
     expect(store.askCallsSince(u2, DateTime(2000)), 0);
+    // A szerver számolja a találatokat és a tárolásokat (az admin oldalhoz).
+    expect(api.telemetry.countOn('shared_cache_hit', DateTime.now()), 1);
+    expect(api.telemetry.countOn('shared_cache_store', DateTime.now()), 1);
     // Más kulcs (más negyedév vagy nyelv): új kérés.
     await post('/v1/ask', {...req, 'shared_cache': 'earnings|AAPL|2026-09-30|English'}, token: t1);
     expect(upstream, hasLength(2));

@@ -63,6 +63,8 @@ class TelemetryStore {
     'description_resolved',
     'instrument_explained',
     'research_followup',
+    'shared_cache_hit',
+    'shared_cache_store',
     'list_created',
     'targets_set',
     'backup_saved',
@@ -92,6 +94,25 @@ class TelemetryStore {
   }
 
   /// Egy app-küldés feldolgozása: `{platform, version, events: {név: db}, errors: [{message, stack}]}`.
+  /// Szerveroldali számláló (pl. a megosztott AI-válaszok találatai): a napi
+  /// eseményszámokhoz adódik, „server” platformmal.
+  void bump(String name, {int by = 1}) {
+    if (!knownEvents.contains(name) || by <= 0) return;
+    _db.execute(
+      'INSERT INTO event_counts (day, name, platform, version, count) VALUES (?, ?, ?, ?, ?) '
+      'ON CONFLICT(day, name, platform, version) DO UPDATE SET count = count + excluded.count',
+      [_day(clock().toUtc()), name, 'server', '-', by],
+    );
+  }
+
+  /// Egy esemény összesített száma egy napon (teszthez és az admin oldalhoz).
+  int countOn(String name, DateTime day) =>
+      _db.select('SELECT COALESCE(SUM(count), 0) AS n FROM event_counts WHERE day = ? AND name = ?', [
+            _day(day.toUtc()),
+            name,
+          ]).first['n']
+          as int;
+
   void record(String userId, Map<String, dynamic> batch) {
     final now = clock().toUtc();
     final day = _day(now);

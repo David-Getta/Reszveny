@@ -9,6 +9,7 @@ import 'package:reszveny/app.dart';
 import 'package:reszveny/app_services.dart';
 import 'package:reszveny/core/app_preferences.dart';
 import 'package:reszveny/core/config/app_config.dart';
+import 'package:reszveny/core/share/share_text.dart';
 import 'package:reszveny/core/desktop/desktop_integration.dart';
 import 'package:reszveny/core/locale_controller.dart';
 import 'package:reszveny/core/models/analysis_extras.dart';
@@ -151,6 +152,17 @@ void main() {
     // Az IR-oldal hivatalos forrás.
     expect(find.byKey(const ValueKey('source-tag-official')), findsOneWidget);
     expect(calls, 1);
+    // Megosztás szövegként: cím, szöveg, források, megjegyzés.
+    final shared = <String>[];
+    final original = shareText;
+    shareText = (text, {subject, origin}) async => shared.add('$subject\n$text');
+    addTearDown(() => shareText = original);
+    await tester.tap(find.byKey(const ValueKey('research-share')));
+    await tester.pumpAndSettle();
+    expect(shared.single, startsWith('AAPL · Apple Inc. · What was in the latest report?\n'));
+    expect(shared.single, contains('Apple beat expectations: revenue grew 8%.'));
+    expect(shared.single, contains('Apple Q3 results: https://investor.apple.com/q3'));
+    expect(shared.single, contains('Not investment advice.'));
   });
 
   testWidgets('tapping the "beat/missed" notification opens the stock with the summary sheet', (tester) async {
