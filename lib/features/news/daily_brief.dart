@@ -6,8 +6,10 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../core/config/app_config.dart';
 import '../../core/errors.dart';
+import '../../core/models/analysis_extras.dart';
 import '../../core/models/stock_quote.dart';
 import '../analysis/claude_stock_analyst.dart';
+import '../events/events_service.dart';
 import '../market_data/market_data_provider.dart';
 import 'watch_news.dart';
 
@@ -46,6 +48,16 @@ class DailyBrief extends ChangeNotifier {
   final AppConfig config;
   final MarketDataProvider marketData;
   final WatchNewsService news;
+
+  /// A közelgő események (gyorsjelentések), ha vannak: a mai/holnapi jelentés
+  /// és a friss eredmény is bekerül az összefoglalóba.
+  List<UpcomingEvent> Function()? upcoming;
+
+  /// Ennyi napon belüli jelentés kerül szóba.
+  static const earningsWithinDays = 7;
+
+  /// Ennyi napja jelentett cég eredménye kerül az adatok közé.
+  static const reportedWithinDays = 2;
   final http.Client _client;
   final DateTime Function() _clock;
 
@@ -93,14 +105,14 @@ Rules:
 - Write in the requested language, the way a native financial journalist would brief a friend: plain words, no jargon.
 - 90-160 words. Start with one sentence on the overall picture, then "- " bullets for the notable movers (biggest absolute changes first, at most 5).
 - Explain a move only with what the headlines support; if no headline explains it, say the reason is not clear from the news. Never invent news, numbers or dates.
-- Mention upcoming events only if a headline does.
+- A stock with "reported" data has just published quarterly results: say in its bullet whether earnings per share beat or missed expectations, with the two numbers. A stock with "reports_in_days" reports soon: mention the day briefly (0 = today, 1 = tomorrow). Mention other upcoming events only if a headline does.
 - Do not tell the reader to buy or sell; you do not know their situation.
 - Plain text only: no headings, tables or Markdown emphasis.''';
 
-  /// A kérés törzse: a részvények napi változása és friss hírei JSON-ban.
+  /// A kérés törzse: a részvények napi változása, friss hírei, és ha van, a
+  /// közeli gyorsjelentés napja vagy a friss eredmény, JSON-ban.
   static Map<String, dynamic> requestBody({
-    required List<({String symbol, double? changePercent, double? price, String? currency, List<String> headlines})>
-    stocks,
+    required List<BriefStock> stocks,
     required String language,
     required DateTime today,
     String model = '',
@@ -116,7 +128,15 @@ Rules:
         'content':
             'Language: $language\nToday: ${today.toIso8601String().substring(0, 10)}\n'
             'Stocks (JSON): ${jsonEncode([
-              for (final s in stocks) {'symbol': s.symbol, if (s.changePercent != null) 'change_today_pct': double.parse(s.changePercent!.toStringAsFixed(2)), if (s.price != null) 'price': s.price, 'currency': ?s.currency, 'headlines': s.headlines},
+              for (final s in stocks) {
+                  'symbol': s.symbol,
+                  if (s.changePercent != null) 'change_today_pct': double.parse(s.changePercent!.toStringAsFixed(2)),
+                  if (s.price != null) 'price': s.price,
+                  'currency': ?s.currency,
+                  'headlines': s.headlines,
+                  if (s.reportsInDays != null) 'reports_in_days': s.reportsInDays,
+                  if (s.reported case final r? when r.actual != null && r.estimate != null) 'reported': {'eps': r.actual, 'expected_eps': r.estimate, 'beat': r.beat},
+                },
             ])}',
       },
     ],
@@ -134,18 +154,35 @@ Rules:
       final quotes = await Future.wait([
         for (final s in picked) marketData.quote(s).then<StockQuote?>((q) => q, onError: (Object _) => null),
       ]);
-      final stocks = [
-        for (final (i, s) in picked.indexed)
-          (
-            symbol: s,
-            changePercent: quotes[i]?.changePercent,
-            price: quotes[i]?.price,
-            currency: null as String?,
-            headlines: [
-              for (final n in news.news.where((n) => n.symbol == s).take(headlinesPerSymbol)) n.item.headline,
-            ],
-          ),
-      ];
+      final today = _clock();
+      final day = DateTime(today.year, today.month, today.day);
+      final stocks = <BriefStock>[];
+      for (final (i, s) in picked.indexed) {
+        // Közeli gyorsjelentés: hány nap múlva; ma vagy az elmúlt napokban: a friss eredmény.
+        final e = (upcoming?.call() ?? const <UpcomingEvent>[])
+            .where((e) => e.symbol == s && e.kind == UpcomingEventKind.earnings)
+            .firstOrNull;
+        final inDays = e == null ? null : DateTime(e.date.year, e.date.month, e.date.day).difference(day).inDays;
+        EarningsSurprise? reported;
+        if (inDays != null && inDays <= 0 && inDays >= -reportedWithinDays) {
+          try {
+            reported = (await marketData.earnings(s)).history
+                .where((h) => h.actual != null && h.estimate != null && day.difference(h.period).inDays <= 120)
+                .firstOrNull;
+          } catch (_) {
+            reported = null;
+          }
+        }
+        stocks.add((
+          symbol: s,
+          changePercent: quotes[i]?.changePercent,
+          price: quotes[i]?.price,
+          currency: null as String?,
+          headlines: [for (final n in news.news.where((n) => n.symbol == s).take(headlinesPerSymbol)) n.item.headline],
+          reportsInDays: inDays != null && inDays >= 0 && inDays <= earningsWithinDays ? inDays : null,
+          reported: reported,
+        ));
+      }
       final body = requestBody(stocks: stocks, language: language, today: _clock(), model: config.anthropicModel);
       final text = await askText(config, _client, body);
       final brief = Brief(text: text, at: _clock(), language: language);
@@ -160,6 +197,17 @@ Rules:
     }
   }
 }
+
+/// Egy részvény adatai a napi összefoglalóhoz.
+typedef BriefStock = ({
+  String symbol,
+  double? changePercent,
+  double? price,
+  String? currency,
+  List<String> headlines,
+  int? reportsInDays,
+  EarningsSurprise? reported,
+});
 
 /// Rövid szöveges válasz a „Kérdezz” végponton (a napi kérdéskeretből); a hibák
 /// az elemzés hibakódjaival jönnek. Az összefoglaló és a hírmagyarázat is ezt használja.

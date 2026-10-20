@@ -268,6 +268,7 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 5cj | Devizasor a „Piacok ma” alatt: a dollár a megjelenítési pénznemben (USD/HUF; dollár-pénznemnél EUR/USD) az ECB napi árfolyamával és a napi változással, egy óráig gyorsítótárazva | ✅ kész |
 | 5ck | „Frissítsük az elemzést?” kérdés és kártya: ha az elemzés óta új gyorsjelentés jött, linkkel rögtön kérhető a jelentés AI-összefoglalója | ✅ kész |
 | 5cl | A gyorsjelentés eredményéről szóló értesítésre koppintva a részvény és rögtön az AI-összefoglaló lapja nyílik; az ablak előtérbe hozása nem akaszthatja meg a megnyitást | ✅ kész |
+| 5cm | „A nap a részvényeiddel”: a ma (vagy az elmúlt 2 napban) jelentő cég friss EPS-e a várthoz képest, és a héten jelentők napja is bekerül az AI adataiba, így az összefoglaló a gyorsjelentést is említi | ✅ kész |
 | 5j | Telefonos háttér-értesítés (riasztás) szerverről, APNs / FCM | 🟡 első lépés kész: a szerver 10 percenként nézi a belépett fiókok szinkronizált riasztásait, és e-mailben szól (csukott appnál is, kikapcsolható); a telefonos push (APNs / FCM) a Firebase-projekt és az Apple-kulcs után |
 | 5k | Bolti adatlapok 120 nyelven, képernyőképek, ikon, előnézeti videó | 🟡 adatlap-szövegek 70 bolti nyelven (fastlane-mappa, `docs/BOLTI_ADATLAP.md`), feliratos bolti képek a teszt-harnessből a boltok méreteiben; előnézeti videó és a nem latin írású képek a natív buildből később |
 

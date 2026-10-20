@@ -109,6 +109,7 @@ class AppServices {
     brief =
         dailyBrief?.call(news) ??
         DailyBrief(config: config, marketData: marketData, news: news, client: backend?.authenticated);
+    brief.upcoming ??= () => events.events;
     alertMonitor = AlertMonitor(
       store: this.alerts,
       marketData: marketData,
