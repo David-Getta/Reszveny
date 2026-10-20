@@ -677,5 +677,6 @@
   "instrumentTitle": "Tentang instrumen ini",
   "instrumentHint": "Tiada profil syarikat untuk simbol ini – ia mungkin ETF, dana atau resit depositari. Tanya AI apakah ia, apa yang dipegangnya dan berapa kosnya.",
   "instrumentAsk": "Apakah ini?",
-  "instrumentNote": "Penjelasan AI daripada halaman dana penerbit dan laman kewangan yang ditemuinya di web. Bukan nasihat pelaburan. Menggunakan had soalan harian anda, bukan analisis."
+  "instrumentNote": "Penjelasan AI daripada halaman dana penerbit dan laman kewangan yang ditemuinya di web. Bukan nasihat pelaburan. Menggunakan had soalan harian anda, bukan analisis.",
+  "suggestAskAi": "Tanya AI: “{query}”"
 }

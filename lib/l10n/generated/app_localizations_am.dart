@@ -2510,4 +2510,9 @@ class AppLocalizationsAm extends AppLocalizations {
   @override
   String get instrumentNote =>
       'ከአውጪው የፈንድ ገጽ እና በድር ላይ ከሚገኙ የፋይናንስ ጣቢያዎች የተገኘ የAI ማብራሪያ። የኢንቨስትመንት ምክር አይደለም። ከዕለታዊ የጥያቄ ገደብዎ ይቆጠራል እንጂ ትንተና አይጠቀምም።';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'AIን ይጠይቁ፦ «$query»';
+  }
 }

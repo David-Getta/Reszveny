@@ -677,5 +677,6 @@
   "instrumentTitle": "Malunga nesi sixhobo",
   "instrumentHint": "Akukho profayile yenkampani yolu phawu – inokuba yi-ETF, ingxowa-mali okanye isatifikethi sedipozithi. Buza i-AI ukuba yintoni, iqulethe ntoni nokuba ixabisa kangakanani.",
   "instrumentAsk": "Yintoni le?",
-  "instrumentNote": "Ingcaciso ye-AI esuka kwiphepha lengxowa-mali lomkhuphi nakwiisayithi zezemali ezifumana kwiwebhu. Ayilocebiso lotyalo-mali. Sisebenzisa umda wakho wemibuzo wemihla ngemihla, hayi uhlalutyo."
+  "instrumentNote": "Ingcaciso ye-AI esuka kwiphepha lengxowa-mali lomkhuphi nakwiisayithi zezemali ezifumana kwiwebhu. Ayilocebiso lotyalo-mali. Sisebenzisa umda wakho wemibuzo wemihla ngemihla, hayi uhlalutyo.",
+  "suggestAskAi": "Buza i-AI: “{query}”"
 }

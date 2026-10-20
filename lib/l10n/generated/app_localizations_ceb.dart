@@ -2554,4 +2554,9 @@ class AppLocalizationsCeb extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Pagpatin-aw sa AI gikan sa fund page sa nag-isyu ug sa mga financial site nga makit-an niini sa web. Dili kini tambag sa pagpamuhunan. Mogamit kini sa imong adlaw-adlaw nga limitasyon sa pangutana, dili sa pagtuki.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Pangutan-a ang AI: “$query”';
+  }
 }

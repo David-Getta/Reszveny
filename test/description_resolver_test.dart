@@ -102,6 +102,11 @@ void main() {
     await tester.pumpAndSettle();
     final field = find.byType(TextField).first;
     await tester.enterText(field, 'tech 100 etf');
+    // Gépelés közben: nincs piaci találat, ezért az „AI-t kérdezzük” sor jelenik meg.
+    await tester.pump(const Duration(milliseconds: 450));
+    await tester.pump();
+    expect(find.byKey(const ValueKey('suggestion-ai')), findsOneWidget);
+    expect(find.text('Ask the AI: “tech 100 etf”'), findsOneWidget);
     await tester.testTextInput.receiveAction(TextInputAction.search);
     await tester.pumpAndSettle();
     expect(sent.single, '/v1/anthropic/v1/messages');
@@ -113,7 +118,10 @@ void main() {
     await tester.pageBack();
     await tester.pumpAndSettle();
     await tester.enterText(find.byType(TextField).first, 'gold etf');
-    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pump(const Duration(milliseconds: 450));
+    await tester.pump();
+    // A javaslat-sorra koppintva ugyanaz történik, mint Enterre.
+    await tester.tap(find.byKey(const ValueKey('suggestion-ai')));
     await tester.pumpAndSettle();
     expect(find.text('SPDR Gold Shares'), findsOneWidget);
     expect(find.text('iShares Gold Trust'), findsOneWidget);

@@ -2545,4 +2545,9 @@ class AppLocalizationsJv extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Katrangan AI saka kaca dana penerbit lan situs finansial sing ditemokaké ing web. Dudu saran investasi. Nggunakake watesan pitakon saben dina, dudu analisis.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Takon AI: “$query”';
+  }
 }

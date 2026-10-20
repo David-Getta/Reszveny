@@ -2601,4 +2601,9 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get instrumentNote =>
       'شرح بالذكاء الاصطناعي من صفحة الصندوق لدى الجهة المُصدِرة والمواقع المالية التي يجدها على الويب. لا يُعدّ نصيحة استثمارية. يُحتسب من حدّ الأسئلة اليومي ولا يستهلك تحليلًا.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'اسأل الذكاء الاصطناعي: «$query»';
+  }
 }

@@ -2544,4 +2544,9 @@ class AppLocalizationsKa extends AppLocalizations {
   @override
   String get instrumentNote =>
       'AI-ის განმარტება ემიტენტის ფონდის გვერდისა და ინტერნეტში ნაპოვნი ფინანსური საიტების საფუძველზე. არ წარმოადგენს საინვესტიციო რჩევას. იყენებს თქვენს დღიურ კითხვების ლიმიტს და არა ანალიზს.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'ჰკითხეთ AI-ს: „$query“';
+  }
 }

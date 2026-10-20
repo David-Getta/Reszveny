@@ -2545,4 +2545,9 @@ class AppLocalizationsKu extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Ravekirina AI ji rûpela fondê ya derxeran û malperên aborî yên ku li ser webê dibîne. Ne şîreta veberhênanê ye. Ji sînorê pirsên te yê rojane tê birîn, ne analîzek.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Ji AI bipirse: “$query”';
+  }
 }

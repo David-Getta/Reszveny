@@ -2539,4 +2539,9 @@ class AppLocalizationsFa extends AppLocalizations {
   @override
   String get instrumentNote =>
       'توضیح هوش مصنوعی بر اساس صفحهٔ صندوق در سایت ناشر و سایت‌های مالی‌ای که در وب پیدا می‌کند. توصیه سرمایه‌گذاری نیست. از سهمیهٔ روزانهٔ پرسش‌های شما کم می‌شود، نه از تحلیل‌ها.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'از هوش مصنوعی بپرسید: «$query»';
+  }
 }

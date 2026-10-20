@@ -2548,4 +2548,9 @@ class AppLocalizationsGn extends AppLocalizations {
   @override
   String get instrumentNote =>
       'AI omyesakã pe emisor fondo kuatiarogue ha umi sitio financiero otopáva ñandutípe rupive. Ndahaʼéi ñemoñeʼẽ inversión rehegua. Oipuru ne porandu papapy ára ha ára guarã, ndahaʼéi jehesaʼỹijo.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Eporandu AI-pe: “$query”';
+  }
 }

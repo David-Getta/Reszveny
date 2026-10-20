@@ -2543,4 +2543,9 @@ class AppLocalizationsTr extends AppLocalizations {
   @override
   String get instrumentNote =>
       'İhraççının fon sayfası ve web’de bulduğu finans sitelerine dayanan yapay zekâ açıklaması. Yatırım tavsiyesi değildir. Günlük soru hakkından düşer, analiz hakkı kullanmaz.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Yapay zekâya sorun: “$query”';
+  }
 }

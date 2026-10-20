@@ -2541,4 +2541,9 @@ class AppLocalizationsHt extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Eksplikasyon AI ki soti nan paj fon emetè a ak sit finansye li jwenn sou entènèt. Se pa yon konsèy envestisman. Li itilize limit kesyon ou pou chak jou, pa yon analiz.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Mande AI a: « $query »';
+  }
 }

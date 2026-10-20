@@ -2553,4 +2553,9 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String get instrumentNote =>
       'வெளியீட்டாளரின் நிதிப் பக்கம் மற்றும் இணையத்தில் கிடைக்கும் நிதி தளங்களின் அடிப்படையில் AI விளக்கம். இது முதலீட்டு ஆலோசனை அல்ல. இது உங்கள் தினசரி கேள்வி வரம்பிலிருந்து செலவாகும், பகுப்பாய்வு எதுவும் செலவாகாது.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'AI-யிடம் கேளுங்கள்: “$query”';
+  }
 }

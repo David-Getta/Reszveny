@@ -2541,4 +2541,9 @@ class AppLocalizationsYo extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Àlàyé AI láti ojú-ìwé owó-ìkójọpọ̀ ti olùpèsè àti àwọn ojú-òpó ètò ìnáwó tí ó rí lórí ayélujára. Kì í ṣe ìmọ̀ràn ìdókòwò. Ó ń lo ìwọ̀n ìbéèrè ojoojúmọ́ rẹ, kì í ṣe ìtúpalẹ̀.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Béèrè lọ́wọ́ AI: “$query”';
+  }
 }

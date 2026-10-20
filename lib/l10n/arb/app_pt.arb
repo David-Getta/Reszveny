@@ -677,5 +677,6 @@
   "instrumentTitle": "Sobre este instrumento",
   "instrumentHint": "Não há perfil de empresa para este símbolo – pode ser um ETF, um fundo ou um certificado de depósito. Pergunte à IA o que é, o que contém e quanto custa.",
   "instrumentAsk": "O que é isto?",
-  "instrumentNote": "Explicação de IA a partir da página do fundo do emitente e de sites financeiros que encontra na web. Não constitui aconselhamento de investimento. Usa o seu limite diário de perguntas, não uma análise."
+  "instrumentNote": "Explicação de IA a partir da página do fundo do emitente e de sites financeiros que encontra na web. Não constitui aconselhamento de investimento. Usa o seu limite diário de perguntas, não uma análise.",
+  "suggestAskAi": "Perguntar à IA: «{query}»"
 }

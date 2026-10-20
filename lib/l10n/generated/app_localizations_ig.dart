@@ -2538,4 +2538,9 @@ class AppLocalizationsIg extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Nkọwa AI sitere na peeji fund nke onye nyere ya na saịtị ego ndị ọ chọtara n\'ịntanetị. Ọ bụghị ndụmọdụ itinye ego. Ọ na-eji oke ajụjụ gị kwa ụbọchị, ọ bụghị nyocha.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Jụọ AI: “$query”';
+  }
 }

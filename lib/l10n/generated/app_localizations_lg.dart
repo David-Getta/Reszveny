@@ -2553,4 +2553,9 @@ class AppLocalizationsLg extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Okunnyonnyola kwa AI okuva ku lupapula lwa fund lw’oyo agifulumya n’emikutu gy’ebyensimbi gy’esanga ku mukutu. Si magezi ga kusiga nsimbi. Kikozesa kkomo ly’ebibuuzo byo erya buli lunaku, so si kwekenneenya.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Buuza AI: “$query”';
+  }
 }

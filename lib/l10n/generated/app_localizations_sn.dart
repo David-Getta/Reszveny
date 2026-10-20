@@ -2548,4 +2548,9 @@ class AppLocalizationsSn extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Tsananguro yeAI kubva papeji yehomwe yemari yemubudisi nemasaiti emari ainowana painternet. Haisi zano rekuisa mari. Inoshandisa muganhu wako wemibvunzo wezuva nezuva, kwete ongororo.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Bvunza AI: “$query”';
+  }
 }

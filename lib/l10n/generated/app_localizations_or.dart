@@ -2541,4 +2541,9 @@ class AppLocalizationsOr extends AppLocalizations {
   @override
   String get instrumentNote =>
       'ଜାରିକର୍ତ୍ତାର ଫଣ୍ଡ ପୃଷ୍ଠା ଏବଂ ୱେବରେ ମିଳୁଥିବା ଆର୍ଥିକ ସାଇଟରୁ AI ବ୍ୟାଖ୍ୟା। ଏହା ନିବେଶ ପରାମର୍ଶ ନୁହେଁ। ଏହା ଆପଣଙ୍କ ଦୈନିକ ପ୍ରଶ୍ନ ସୀମାରୁ ଯାଏ, କୌଣସି ବିଶ୍ଳେଷଣ ଖର୍ଚ୍ଚ ହୁଏ ନାହିଁ।';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'AI କୁ ପଚାରନ୍ତୁ: “$query”';
+  }
 }

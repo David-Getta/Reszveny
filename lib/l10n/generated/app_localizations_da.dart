@@ -2541,4 +2541,9 @@ class AppLocalizationsDa extends AppLocalizations {
   @override
   String get instrumentNote =>
       'AI-forklaring ud fra udstederens fondsside og finanssider, den finder på nettet. Det er ikke investeringsrådgivning. Det bruger af din daglige spørgsmålskvote, ikke en analyse.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Spørg AI’en: ”$query”';
+  }
 }

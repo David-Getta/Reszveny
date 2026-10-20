@@ -2534,4 +2534,9 @@ class AppLocalizationsPs extends AppLocalizations {
   @override
   String get instrumentNote =>
       'د خپرونکي د فنډ پاڼې او هغو مالي وېبپاڼو له مخې د AI تشریح چې په وېب کې یې مومي. د پانګونې مشوره نه ده. ستاسو د ورځنیو پوښتنو له حد څخه کمېږي، شننه نه لګوي.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'له AI وپوښتئ: «$query»';
+  }
 }

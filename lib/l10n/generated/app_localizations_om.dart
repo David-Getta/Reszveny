@@ -2552,4 +2552,9 @@ class AppLocalizationsOm extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Ibsa AI fuula fandii baasaa fi marsariitiiwwan faayinaansii interneetii irratti argatu irraa. Gorsa invastimantii miti. Daangaa gaaffii guyyaa kee fayyadama, xiinxala miti.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'AI gaafadhu: “$query”';
+  }
 }

@@ -2558,4 +2558,9 @@ class AppLocalizationsQu extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Emisorpa fondo paginanmanta, webpi tarisqan qullqi sitiokunamantawan AI sut’inchasqa. Manan qullqi churanapaq yuyaychaychu. Sapa p’unchay tapukuy limitiykita apaykachan, manan t’aqwiytachu.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'AI-ta tapuy: “$query”';
+  }
 }

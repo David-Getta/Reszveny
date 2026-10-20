@@ -2534,4 +2534,9 @@ class AppLocalizationsMy extends AppLocalizations {
   @override
   String get instrumentNote =>
       'ထုတ်ဝေသူ၏ ရန်ပုံငွေစာမျက်နှာနှင့် ဝဘ်ပေါ်တွင် တွေ့ရှိသော ဘဏ္ဍာရေးဆိုက်များမှ AI ရှင်းလင်းချက်။ ရင်းနှီးမြှုပ်နှံမှု အကြံပြုချက် မဟုတ်ပါ။ နေ့စဉ် မေးခွန်းကန့်သတ်ချက်မှ သုံးပြီး ခွဲခြမ်းစိတ်ဖြာမှု မသုံးပါ။';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'AI ကို မေးပါ - “$query”';
+  }
 }

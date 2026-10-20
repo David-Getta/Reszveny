@@ -2552,4 +2552,9 @@ class AppLocalizationsCa extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Explicació d’IA a partir de la pàgina del fons de l’emissor i de webs financers que troba a Internet. No constitueix assessorament d’inversió. Fa servir el teu límit diari de preguntes, no una anàlisi.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Pregunta a la IA: «$query»';
+  }
 }

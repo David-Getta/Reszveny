@@ -2613,4 +2613,9 @@ class AppLocalizationsUk extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Пояснення від ШІ на основі сторінки фонду в емітента та фінансових сайтів, які він знаходить в інтернеті. Не є інвестиційною порадою. Витрачається денний ліміт запитань, а не аналіз.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Запитати ШІ: «$query»';
+  }
 }

@@ -2543,4 +2543,9 @@ class AppLocalizationsKi extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Ũtaarĩria wa AI kuuma rũhuko-inĩ rwa fund rwa mũrutani na mĩhuko ya mbeca ĩrĩa wonaga internet-inĩ. Ti ũtaaro wa investment. Ĩhũthagĩra mũhaka wa ciũria ciaku cia o mũthenya, ti ũthuthuria.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Ũria AI: “$query”';
+  }
 }

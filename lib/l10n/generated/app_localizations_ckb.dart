@@ -2544,4 +2544,9 @@ class AppLocalizationsCkb extends AppLocalizations {
   @override
   String get instrumentNote =>
       'ڕوونکردنەوەی AI لە پەڕەی سندوقی دەرکەر و ئەو ماڵپەڕە داراییانەی لە وێبدا دەیاندۆزێتەوە. ئامۆژگاریی وەبەرهێنان نییە. لە سنووری پرسیارە ڕۆژانەکانت دەبرێت، شیکاری بەکارناهێنێت.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'لە AI بپرسە: «$query»';
+  }
 }

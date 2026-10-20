@@ -2535,4 +2535,9 @@ class AppLocalizationsSd extends AppLocalizations {
   @override
   String get instrumentNote =>
       'جاري ڪندڙ جي فنڊ صفحي ۽ ويب تي مليل مالي سائيٽن تان AI وضاحت. اها سيڙپڪاري جو مشورو ناهي. اهو توهان جي روزاني سوالن جي حد مان ويندو آهي، ڪو تجزيو خرچ نٿو ٿئي.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'AI کان پڇو: «$query»';
+  }
 }

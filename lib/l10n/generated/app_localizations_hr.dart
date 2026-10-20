@@ -2587,4 +2587,9 @@ class AppLocalizationsHr extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Objašnjenje umjetne inteligencije na temelju stranice fonda kod izdavatelja i financijskih stranica koje pronađe na internetu. Nije investicijski savjet. Troši vaše dnevno ograničenje pitanja, ne analizu.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Pitajte AI: „$query“';
+  }
 }

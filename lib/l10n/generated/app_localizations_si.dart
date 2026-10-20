@@ -2540,4 +2540,9 @@ class AppLocalizationsSi extends AppLocalizations {
   @override
   String get instrumentNote =>
       'නිකුත්කරුගේ අරමුදල් පිටුව සහ වෙබයේ සොයාගන්නා මූල්‍ය වෙබ් අඩවි මත පදනම් වූ AI පැහැදිලි කිරීමකි. එය ආයෝජන උපදෙසක් නොවේ. මෙය ඔබේ දෛනික ප්‍රශ්න සීමාවෙන් යයි, විශ්ලේෂණයක් භාවිත නොකරයි.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'AI ගෙන් අසන්න: “$query”';
+  }
 }

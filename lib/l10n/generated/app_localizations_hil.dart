@@ -2559,4 +2559,9 @@ class AppLocalizationsHil extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Paathag sang AI halin sa fund page sang nag-isyu kag sa mga financial site nga nakita sini sa web. Indi ini laygay sa pag-invest. Ginagamit sini ang imo adlaw-adlaw nga limitasyon sang pamangkot, indi ang pagtuki.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Pamangkuta ang AI: “$query”';
+  }
 }

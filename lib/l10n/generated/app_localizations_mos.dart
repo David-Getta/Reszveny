@@ -2530,4 +2530,9 @@ class AppLocalizationsMos extends AppLocalizations {
   @override
   String get instrumentNote =>
       'AI bilgr sẽn yit yiisdã ligd-koglg seb-neng la ligd zĩis nins a sẽn yã internet zugã. Pa sagls ligd kẽesg wɛɛngẽ ye. A tũuda f daar fãa sokr sõorã, pa vẽenegr ye.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Sok AI: « $query »';
+  }
 }

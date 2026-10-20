@@ -2505,4 +2505,9 @@ class AppLocalizationsTi extends AppLocalizations {
   @override
   String get instrumentNote =>
       'ናይ AI መብርሂ ካብ ገጽ ፈንድ ናይ ኣውጻኢን ኣብ መርበብ ሓበሬታ ዝረኽቦ ፋይናንሳዊ መርበባትን። ምኽሪ ወፍሪ ኣይኮነን። ካብ ዕለታዊ ደረት ሕቶታትኩም ይቑጸር እምበር ትንታነ ኣይጥቀምን።';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'ንAI ሕተቱ፦ «$query»';
+  }
 }

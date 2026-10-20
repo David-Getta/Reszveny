@@ -2552,4 +2552,9 @@ class AppLocalizationsZu extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Incazelo ye-AI evela ekhasini lesikhwama lomkhiphi nakumawebhusayithi ezezimali esiwathola kuwebhu. Akuyona iseluleko sokutshala imali. Sisebenzisa umkhawulo wakho wemibuzo wansuku zonke, hhayi ukuhlaziya.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Buza i-AI: “$query”';
+  }
 }

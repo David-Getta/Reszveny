@@ -2612,4 +2612,9 @@ class AppLocalizationsPl extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Wyjaśnienie AI na podstawie strony funduszu u emitenta i serwisów finansowych, które znajduje w sieci. Nie stanowi porady inwestycyjnej. Korzysta z dziennego limitu pytań, nie zużywa analizy.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Zapytaj AI: „$query”';
+  }
 }

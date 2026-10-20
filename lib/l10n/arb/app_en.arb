@@ -2054,5 +2054,10 @@
   "instrumentNote": "AI explanation from the issuer's fund page and financial sites found on the web. Not investment advice. Uses your daily question allowance, not an analysis.",
   "@instrumentNote": {
     "description": "Small note under the AI explanation of an ETF/fund."
+  },
+  "suggestAskAi": "Ask the AI: “{query}”",
+  "@suggestAskAi": {
+    "description": "Suggestion row under the search field when the typed text looks like a description (e.g. \"tech 100 etf\") and the market search finds nothing: tapping it asks the AI which stock or ETF is meant.",
+    "placeholders": {"query": {"type": "String"}}
   }
 }

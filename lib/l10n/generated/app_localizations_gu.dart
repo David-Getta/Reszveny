@@ -2538,4 +2538,9 @@ class AppLocalizationsGu extends AppLocalizations {
   @override
   String get instrumentNote =>
       'ઇશ્યુઅરના ફંડ પેજ અને વેબ પર મળતી નાણાકીય સાઇટ્સ પરથી AI સમજૂતી. તે રોકાણ સલાહ નથી. તે તમારી દૈનિક પ્રશ્ન મર્યાદામાંથી જાય છે, કોઈ વિશ્લેષણ વપરાતું નથી.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'AIને પૂછો: “$query”';
+  }
 }

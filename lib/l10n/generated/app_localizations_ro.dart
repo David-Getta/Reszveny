@@ -2583,4 +2583,9 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Explicație generată de AI pe baza paginii fondului de la emitent și a site-urilor financiare pe care le găsește pe web. Nu reprezintă un sfat de investiții. Folosește limita ta zilnică de întrebări, nu o analiză.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Întreabă AI: „$query”';
+  }
 }

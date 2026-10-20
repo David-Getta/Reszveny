@@ -2554,4 +2554,9 @@ class AppLocalizationsLn extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Ndimbola ya AI oyo euti na lokasa ya fonds ya mobimisi mpe na ba site ya mbɔngɔ oyo ezwi na Internet. Ezali toli ya kotia mbɔngɔ te. Esalelaka ndelo ya mituna na yo ya mokolo na mokolo, kasi botaleli te.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Tuna AI: « $query »';
+  }
 }

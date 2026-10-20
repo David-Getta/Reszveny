@@ -677,5 +677,6 @@
   "instrumentTitle": "Ibyerekeye iki gikoresho",
   "instrumentHint": "Nta mwirondoro w’ikigo uhari kuri iki kimenyetso – gishobora kuba ETF, ikigega cyangwa icyemezo cy’ububiko. Baza AI icyo ari cyo, icyo kirimo n’ikiguzi cyacyo.",
   "instrumentAsk": "Iki ni iki?",
-  "instrumentNote": "Ibisobanuro bya AI bishingiye ku rupapuro rw’ikigega rw’uwagishinze no ku mbuga z’imari ibona kuri murandasi. Si inama yo gushora imari. Ikoresha umubare ntarengwa w’ibibazo byawe bya buri munsi, si isesengura."
+  "instrumentNote": "Ibisobanuro bya AI bishingiye ku rupapuro rw’ikigega rw’uwagishinze no ku mbuga z’imari ibona kuri murandasi. Si inama yo gushora imari. Ikoresha umubare ntarengwa w’ibibazo byawe bya buri munsi, si isesengura.",
+  "suggestAskAi": "Baza AI: “{query}”"
 }

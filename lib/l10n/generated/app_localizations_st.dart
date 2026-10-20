@@ -2557,4 +2557,9 @@ class AppLocalizationsSt extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Tlhaloso ya AI e tswang leqepheng la letlole la mofani le diwebosaete tsa ditjhelete tseo e di fumanang inthaneteng. Hase keletso ya ho tsetela. E sebedisa moedi wa hao wa dipotso wa letsatsi le letsatsi, eseng manollo.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Botsa AI: “$query”';
+  }
 }

@@ -2539,4 +2539,9 @@ class AppLocalizationsBho extends AppLocalizations {
   @override
   String get instrumentNote =>
       'जारीकर्ता के फंड पेज आ वेब पर मिलल वित्तीय साइटन से AI के समझावल। ई निवेश के सलाह ना ह। ई रउआ रोज के सवाल के सीमा से जाला, कवनो विश्लेषण खरच ना होला।';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'AI से पूछीं: “$query”';
+  }
 }

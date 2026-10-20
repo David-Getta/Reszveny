@@ -2516,4 +2516,9 @@ class AppLocalizationsLo extends AppLocalizations {
   @override
   String get instrumentNote =>
       'ຄຳອະທິບາຍຈາກ AI ອີງຕາມໜ້ານຳສະເໜີກອງທຶນຂອງຜູ້ອອກ ແລະ ເວັບໄຊການເງິນທີ່ມັນພົບໃນເວັບ. ບໍ່ແມ່ນຄຳແນະນຳການລົງທຶນ. ໃຊ້ໂຄຕາຄຳຖາມປະຈຳວັນຂອງທ່ານ ບໍ່ແມ່ນການວິເຄາະ.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'ຖາມ AI: “$query”';
+  }
 }

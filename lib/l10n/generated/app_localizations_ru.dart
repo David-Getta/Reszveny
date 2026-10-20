@@ -2613,4 +2613,9 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Объяснение от ИИ на основе страницы фонда у эмитента и финансовых сайтов, которые он находит в интернете. Не является инвестиционной рекомендацией. Расходуется дневной лимит вопросов, а не анализ.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Спросить ИИ: «$query»';
+  }
 }

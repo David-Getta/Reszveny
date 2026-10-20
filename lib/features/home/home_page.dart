@@ -62,6 +62,9 @@ class _HomePageState extends State<HomePage> {
   /// Gépelés közbeni javaslatok: azonnal a kedvencekből és a legutóbbiakból,
   /// rövid szünet után a piaci keresőből is.
   List<StockCandidate> _suggestions = const [];
+
+  /// Leírásnak látszó beírás piaci találat nélkül: „Kérdezzük meg az AI-t” sor.
+  String? _aiSuggestion;
   String _suggestFor = '';
   Timer? _debounce;
   static const suggestDelay = Duration(milliseconds: 400);
@@ -96,7 +99,12 @@ class _HomePageState extends State<HomePage> {
   void _clearSuggestions() {
     _debounce?.cancel();
     _suggestFor = '';
-    if (_suggestions.isNotEmpty) setState(() => _suggestions = const []);
+    if (_suggestions.isNotEmpty || _aiSuggestion != null) {
+      setState(() {
+        _suggestions = const [];
+        _aiSuggestion = null;
+      });
+    }
   }
 
   void _onQueryChanged() {
@@ -105,7 +113,12 @@ class _HomePageState extends State<HomePage> {
     _suggestFor = q;
     _debounce?.cancel();
     if (q.length < 2 || _busy) {
-      if (_suggestions.isNotEmpty) setState(() => _suggestions = const []);
+      if (_suggestions.isNotEmpty || _aiSuggestion != null) {
+        setState(() {
+          _suggestions = const [];
+          _aiSuggestion = null;
+        });
+      }
       return;
     }
     final services = AppServices.of(context);
@@ -115,23 +128,30 @@ class _HomePageState extends State<HomePage> {
       for (final s in {...prefs.favorites, ...prefs.recent})
         if (s.startsWith(upper)) StockCandidate(symbol: s, companyName: s, confidence: 1),
     ].take(3).toList();
-    setState(() => _suggestions = local);
+    setState(() {
+      _suggestions = local;
+      _aiSuggestion = null;
+    });
+    final canAsk = DescriptionResolver.looksLikeDescription(q) && services.config.hasAnthropicKey;
     _debounce = Timer(suggestDelay, () async {
+      List<StockCandidate> found = const [];
       try {
-        final found = await services.marketData.search(q);
-        if (!mounted || _query.text.trim() != q) return;
-        final seen = {for (final c in local) c.symbol};
-        setState(
-          () => _suggestions = [
-            // A piaci találat cégnevet is ad: ugyanannál a tickernél azt mutatjuk.
-            for (final c in local) found.where((f) => f.symbol == c.symbol).firstOrNull ?? c,
-            for (final f in found)
-              if (seen.add(f.symbol)) f,
-          ].take(maxSuggestions).toList(),
-        );
+        found = await services.marketData.search(q);
       } catch (_) {
         // Javaslat nélkül is kereshet (Enterrel).
       }
+      if (!mounted || _query.text.trim() != q) return;
+      final seen = {for (final c in local) c.symbol};
+      setState(() {
+        _suggestions = [
+          // A piaci találat cégnevet is ad: ugyanannál a tickernél azt mutatjuk.
+          for (final c in local) found.where((f) => f.symbol == c.symbol).firstOrNull ?? c,
+          for (final f in found)
+            if (seen.add(f.symbol)) f,
+        ].take(maxSuggestions).toList();
+        // Se saját, se piaci találat egy leírásra: az AI-t lehet kérdezni.
+        _aiSuggestion = canAsk && _suggestions.isEmpty ? q : null;
+      });
     });
   }
 
@@ -370,12 +390,24 @@ class _HomePageState extends State<HomePage> {
                         ),
                     ],
                   ),
-                  if (_suggestions.isNotEmpty && !_busy)
+                  if ((_suggestions.isNotEmpty || _aiSuggestion != null) && !_busy)
                     Card(
                       key: const ValueKey('search-suggestions'),
                       margin: const EdgeInsets.only(top: 8),
                       child: Column(
                         children: [
+                          if (_aiSuggestion case final ai?)
+                            ListTile(
+                              key: const ValueKey('suggestion-ai'),
+                              dense: true,
+                              leading: Icon(Icons.auto_awesome_outlined, size: 18, color: p.accent),
+                              title: Text(l10n.suggestAskAi(ai), maxLines: 2, overflow: TextOverflow.ellipsis),
+                              onTap: () {
+                                _clearSuggestions();
+                                FocusScope.of(context).unfocus();
+                                _resolveDescription(ai);
+                              },
+                            ),
                           for (final (i, c) in _suggestions.indexed) ...[
                             if (i > 0) const Divider(height: 1),
                             ListTile(

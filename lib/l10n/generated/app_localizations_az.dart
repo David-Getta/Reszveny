@@ -2546,4 +2546,9 @@ class AppLocalizationsAz extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Emitentin fond səhifəsindən və internetdə tapdığı maliyyə saytlarından AI izahı. İnvestisiya məsləhəti deyil. Gündəlik sual limitinizdən istifadə edir, təhlil sərf etmir.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'AI-dən soruşun: «$query»';
+  }
 }

@@ -2556,4 +2556,9 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get instrumentNote =>
       'KI-Erklärung auf Basis der Fondsseite des Emittenten und von Finanzseiten, die sie im Web findet. Keine Anlageberatung. Zählt zu deinem täglichen Fragenkontingent, nicht als Analyse.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'KI fragen: „$query“';
+  }
 }

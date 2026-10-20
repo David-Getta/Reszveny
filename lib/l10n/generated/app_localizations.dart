@@ -4404,6 +4404,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'AI explanation from the issuer\'s fund page and financial sites found on the web. Not investment advice. Uses your daily question allowance, not an analysis.'**
   String get instrumentNote;
+
+  /// Suggestion row under the search field when the typed text looks like a description (e.g. "tech 100 etf") and the market search finds nothing: tapping it asks the AI which stock or ETF is meant.
+  ///
+  /// In en, this message translates to:
+  /// **'Ask the AI: “{query}”'**
+  String suggestAskAi(String query);
 }
 
 class _AppLocalizationsDelegate

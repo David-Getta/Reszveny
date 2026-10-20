@@ -2473,4 +2473,9 @@ class AppLocalizationsKo extends AppLocalizations {
   @override
   String get instrumentNote =>
       '발행사의 펀드 페이지와 웹에서 찾은 금융 사이트를 바탕으로 AI가 설명합니다. 투자 조언이 아닙니다. 분석 횟수가 아닌 하루 질문 한도가 사용됩니다.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'AI에게 질문: “$query”';
+  }
 }

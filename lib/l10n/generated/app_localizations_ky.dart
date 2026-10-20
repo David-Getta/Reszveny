@@ -2547,4 +2547,9 @@ class AppLocalizationsKy extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Эмитенттин фонд барагы менен интернеттен тапкан каржы сайттарынын негизиндеги AI түшүндүрмөсү. Инвестициялык кеңеш эмес. Күнүмдүк суроолор чегиңизден сарпталат, талдоо эмес.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'AI-дан суроо: «$query»';
+  }
 }

@@ -2544,4 +2544,9 @@ class AppLocalizationsTk extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Emitentiň gazna sahypasyna we internetde tapan maliýe saýtlaryna esaslanan AI düşündirişi. Maýa goýum maslahaty däldir. Gündelik sorag çägiňizden harçlanýar, seljerme däl.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'AI-dan soraň: “$query”';
+  }
 }

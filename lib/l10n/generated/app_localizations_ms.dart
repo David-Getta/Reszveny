@@ -2548,4 +2548,9 @@ class AppLocalizationsMs extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Penjelasan AI daripada halaman dana penerbit dan laman kewangan yang ditemuinya di web. Bukan nasihat pelaburan. Menggunakan had soalan harian anda, bukan analisis.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Tanya AI: “$query”';
+  }
 }

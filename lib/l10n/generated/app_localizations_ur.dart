@@ -2543,4 +2543,9 @@ class AppLocalizationsUr extends AppLocalizations {
   @override
   String get instrumentNote =>
       'جاری کنندہ کے فنڈ پیج اور ویب پر ملنے والی مالیاتی سائٹس سے AI وضاحت۔ یہ سرمایہ کاری کا مشورہ نہیں ہے۔ یہ آپ کی روزانہ سوالات کی حد سے جاتا ہے، کوئی تجزیہ خرچ نہیں ہوتا۔';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'AI سے پوچھیں: “$query”';
+  }
 }

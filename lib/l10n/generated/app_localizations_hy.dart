@@ -2552,4 +2552,9 @@ class AppLocalizationsHy extends AppLocalizations {
   @override
   String get instrumentNote =>
       'AI-ի բացատրություն՝ թողարկողի ֆոնդի էջի և համացանցում գտած ֆինանսական կայքերի հիման վրա։ Ներդրումային խորհուրդ չէ։ Օգտագործում է ձեր օրական հարցերի սահմանաչափը, ոչ թե վերլուծություն։';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Հարցնել AI-ին՝ «$query»';
+  }
 }

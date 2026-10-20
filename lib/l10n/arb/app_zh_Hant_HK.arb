@@ -677,5 +677,6 @@
   "instrumentTitle": "關於此產品",
   "instrumentHint": "此代號沒有公司資料，可能是 ETF、基金或預託證券。問問 AI 它是甚麼、持有甚麼以及費用多少。",
   "instrumentAsk": "這是甚麼？",
-  "instrumentNote": "AI 根據發行商的基金頁面以及在網上找到的財經網站作出解釋。並不構成投資建議。佔用每日提問次數，不消耗分析次數。"
+  "instrumentNote": "AI 根據發行商的基金頁面以及在網上找到的財經網站作出解釋。並不構成投資建議。佔用每日提問次數，不消耗分析次數。",
+  "suggestAskAi": "問 AI：「{query}」"
 }

@@ -2548,4 +2548,9 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Explicación de IA a partir de la página del fondo del emisor y de sitios financieros que encuentra en la web. No constituye asesoramiento de inversión. Usa tu límite diario de preguntas, no un análisis.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Pregúntale a la IA: «$query»';
+  }
 }

@@ -2550,4 +2550,9 @@ class AppLocalizationsFil extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Paliwanag ng AI mula sa fund page ng issuer at sa mga financial site na nahanap nito sa web. Hindi ito payo sa pamumuhunan. Gumagamit ito ng iyong pang-araw-araw na limitasyon sa tanong, hindi ng pagsusuri.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Itanong sa AI: “$query”';
+  }
 }

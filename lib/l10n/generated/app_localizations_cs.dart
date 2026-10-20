@@ -2605,4 +2605,9 @@ class AppLocalizationsCs extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Vysvětlení od AI na základě stránky fondu u emitenta a finančních webů, které najde na internetu. Není investičním doporučením. Čerpá z vašeho denního limitu otázek, nespotřebuje analýzu.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Zeptat se AI: „$query“';
+  }
 }

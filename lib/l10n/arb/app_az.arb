@@ -677,5 +677,6 @@
   "instrumentTitle": "Bu alət haqqında",
   "instrumentHint": "Bu simvol üçün şirkət profili yoxdur – bu ETF, fond və ya depozitar qəbz ola bilər. AI-dan soruşun: bu nədir, nəyi saxlayır və nə qədər xərc tələb edir.",
   "instrumentAsk": "Bu nədir?",
-  "instrumentNote": "Emitentin fond səhifəsindən və internetdə tapdığı maliyyə saytlarından AI izahı. İnvestisiya məsləhəti deyil. Gündəlik sual limitinizdən istifadə edir, təhlil sərf etmir."
+  "instrumentNote": "Emitentin fond səhifəsindən və internetdə tapdığı maliyyə saytlarından AI izahı. İnvestisiya məsləhəti deyil. Gündəlik sual limitinizdən istifadə edir, təhlil sərf etmir.",
+  "suggestAskAi": "AI-dən soruşun: «{query}»"
 }

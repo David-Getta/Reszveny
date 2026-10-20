@@ -2541,4 +2541,9 @@ class AppLocalizationsKab extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Asegzi n AI seg usebter n usagen n win i t-id-yessufɣen d yismal n tedrimt i yufa deg web. Mačči d awellih n usersi n yidrimen. Yesseqdac talast-ik n yisteqsiyen n yal ass, mačči tasledt.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Steqsi AI: « $query »';
+  }
 }

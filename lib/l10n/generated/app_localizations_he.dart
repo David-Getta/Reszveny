@@ -2535,4 +2535,9 @@ class AppLocalizationsHe extends AppLocalizations {
   @override
   String get instrumentNote =>
       'הסבר של AI על בסיס עמוד הקרן אצל המנפיק ואתרים פיננסיים שהוא מוצא ברשת. אינו מהווה ייעוץ השקעות. נספר במכסת השאלות היומית שלך, לא כניתוח.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'לשאול את ה-AI: „$query”';
+  }
 }

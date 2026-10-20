@@ -2542,4 +2542,9 @@ class AppLocalizationsAs extends AppLocalizations {
   @override
   String get instrumentNote =>
       'জাৰীকৰ্তাৰ ফাণ্ড পৃষ্ঠা আৰু ৱেবত পোৱা বিত্তীয় ছাইটৰ পৰা AI ব্যাখ্যা। ই বিনিয়োগৰ পৰামৰ্শ নহয়। ই আপোনাৰ দৈনিক প্ৰশ্নৰ সীমাৰ পৰা যায়, কোনো বিশ্লেষণ খৰচ নকৰে।';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'AIক সোধক: “$query”';
+  }
 }

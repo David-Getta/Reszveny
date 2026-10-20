@@ -2549,4 +2549,9 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Emitentning fond sahifasi va internetda topgan moliyaviy saytlarga asoslangan AI izohi. Bu investitsiya maslahati emas. Kunlik savollar limitingizdan sarflanadi, tahlil emas.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'AI-dan soʻrang: “$query”';
+  }
 }

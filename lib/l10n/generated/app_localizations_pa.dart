@@ -2539,4 +2539,9 @@ class AppLocalizationsPa extends AppLocalizations {
   @override
   String get instrumentNote =>
       'ਜਾਰੀਕਰਤਾ ਦੇ ਫੰਡ ਪੇਜ ਅਤੇ ਵੈੱਬ ’ਤੇ ਮਿਲੀਆਂ ਵਿੱਤੀ ਸਾਈਟਾਂ ਤੋਂ AI ਵਿਆਖਿਆ। ਇਹ ਨਿਵੇਸ਼ ਸਲਾਹ ਨਹੀਂ ਹੈ। ਇਹ ਤੁਹਾਡੀ ਰੋਜ਼ਾਨਾ ਸਵਾਲਾਂ ਦੀ ਸੀਮਾ ਵਿੱਚੋਂ ਜਾਂਦਾ ਹੈ, ਕੋਈ ਵਿਸ਼ਲੇਸ਼ਣ ਖ਼ਰਚ ਨਹੀਂ ਹੁੰਦਾ।';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'AI ਨੂੰ ਪੁੱਛੋ: “$query”';
+  }
 }

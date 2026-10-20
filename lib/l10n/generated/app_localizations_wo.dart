@@ -2538,4 +2538,9 @@ class AppLocalizationsWo extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Leeral bu AI defar ci xëtu fon bu ki ko génne ak sit yu koppar yi mu gis ci web bi. Du ndigal ci dugal xaalis. Dafay jëfandikoo sa limu laaj yu bés bu nekk, du xayma.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Laaj AI: « $query »';
+  }
 }

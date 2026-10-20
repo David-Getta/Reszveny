@@ -2540,4 +2540,9 @@ class AppLocalizationsBm extends AppLocalizations {
   @override
   String get instrumentNote =>
       'AI ka ɲɛfɔli min bɔra fond bɔbaga ka ɲɛ kan ani wariko siti minnu a bɛ sɔrɔ ɛntɛrinɛti kan. Wari donni ladilikan tɛ. A bɛ bɔ i ka don o don ɲininkaliw hakɛ la, a tɛ sɛgɛsɛgɛli si ta.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'AI ɲininka: « $query »';
+  }
 }

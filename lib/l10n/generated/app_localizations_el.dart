@@ -2552,4 +2552,9 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Εξήγηση από AI με βάση την ιστοσελίδα του εκδότη για το προϊόν και χρηματοοικονομικούς ιστότοπους που βρίσκει στο διαδίκτυο. Δεν αποτελεί επενδυτική συμβουλή. Χρησιμοποιεί το ημερήσιο όριο ερωτήσεών σας, όχι ανάλυση.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Ρωτήστε το AI: «$query»';
+  }
 }

@@ -2542,4 +2542,9 @@ class AppLocalizationsTt extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Эмитентның фонд битенә һәм интернетта тапкан финанс сайтларына нигезләнгән AI аңлатмасы. Инвестиция киңәше түгел. Көндәлек сораулар чигегездән тотыла, анализ түгел.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'AI-дан сорау: «$query»';
+  }
 }

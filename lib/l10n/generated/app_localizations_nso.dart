@@ -2559,4 +2559,9 @@ class AppLocalizationsNso extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Tlhaloso ya AI go tšwa letlakaleng la sekhwama la mongwadi le diwebosaete tša ditšhelete tšeo e di hwetšago wepeng. Ga se keletšo ya peeletšo. E diriša moedi wa gago wa dipotšišo wa letšatši le letšatši, e sego tshekatsheko.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Botšiša AI: “$query”';
+  }
 }

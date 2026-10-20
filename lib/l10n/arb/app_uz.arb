@@ -677,5 +677,6 @@
   "instrumentTitle": "Bu instrument haqida",
   "instrumentHint": "Bu simvol uchun kompaniya profili yoʻq – bu ETF, fond yoki depozitar tilxat boʻlishi mumkin. AI dan bu nima, tarkibida nima bor va qancha turishini soʻrang.",
   "instrumentAsk": "Bu nima?",
-  "instrumentNote": "Emitentning fond sahifasi va internetda topgan moliyaviy saytlarga asoslangan AI izohi. Bu investitsiya maslahati emas. Kunlik savollar limitingizdan sarflanadi, tahlil emas."
+  "instrumentNote": "Emitentning fond sahifasi va internetda topgan moliyaviy saytlarga asoslangan AI izohi. Bu investitsiya maslahati emas. Kunlik savollar limitingizdan sarflanadi, tahlil emas.",
+  "suggestAskAi": "AI-dan soʻrang: “{query}”"
 }

@@ -677,5 +677,6 @@
   "instrumentTitle": "Ebikwata ku kintu kino",
   "instrumentHint": "Tewali bikwata ku kkampuni ku kabonero kano – kiyinza okuba ETF, fund oba depositary receipt. Buuza AI kye kiri, kirimu ki, era kisaasaanya ki.",
   "instrumentAsk": "Kino kiki?",
-  "instrumentNote": "Okunnyonnyola kwa AI okuva ku lupapula lwa fund lw’oyo agifulumya n’emikutu gy’ebyensimbi gy’esanga ku mukutu. Si magezi ga kusiga nsimbi. Kikozesa kkomo ly’ebibuuzo byo erya buli lunaku, so si kwekenneenya."
+  "instrumentNote": "Okunnyonnyola kwa AI okuva ku lupapula lwa fund lw’oyo agifulumya n’emikutu gy’ebyensimbi gy’esanga ku mukutu. Si magezi ga kusiga nsimbi. Kikozesa kkomo ly’ebibuuzo byo erya buli lunaku, so si kwekenneenya.",
+  "suggestAskAi": "Buuza AI: “{query}”"
 }

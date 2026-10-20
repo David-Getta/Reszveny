@@ -2532,4 +2532,9 @@ class AppLocalizationsBo extends AppLocalizations {
   @override
   String get instrumentNote =>
       'སྤེལ་མཁན་གྱི་མ་དངུལ་ཤོག་ངོས་དང་དྲ་རྒྱའི་ཐོག་རྙེད་པའི་དངུལ་རྩིས་དྲ་ཚིགས་ལས་བྱུང་བའི་ AI འགྲེལ་བཤད། མ་འཇོག་གི་བསམ་འཆར་མིན། ཉིན་རེའི་དྲི་བའི་ཚད་ནས་འགྲོ་བ་ཡིན་ལ་དབྱེ་ཞིབ་མི་བེད་སྤྱོད།';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'AI ལ་དྲིས། “$query”';
+  }
 }

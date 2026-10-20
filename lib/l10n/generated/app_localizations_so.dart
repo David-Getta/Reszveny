@@ -2552,4 +2552,9 @@ class AppLocalizationsSo extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Sharaxaad AI ah oo ka timid bogga sanduuqa ee soo saaraha iyo boggaga maaliyadda ee ay ka hesho shabakadda. Ma aha talo maalgashi. Waxay isticmaashaa xadka su’aalahaaga maalinlaha ah, ma aha falanqayn.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Weydii AI: “$query”';
+  }
 }

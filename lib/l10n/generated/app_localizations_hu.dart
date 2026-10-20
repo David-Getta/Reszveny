@@ -2548,4 +2548,9 @@ class AppLocalizationsHu extends AppLocalizations {
   @override
   String get instrumentNote =>
       'AI-magyarázat a kibocsátó oldaláról és a weben talált pénzügyi oldalakról. Nem befektetési tanács. A napi kérdéskeretből megy, elemzést nem fogyaszt.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Kérdezzük meg az AI-t: „$query”';
+  }
 }

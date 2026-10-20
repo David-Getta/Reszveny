@@ -2544,4 +2544,9 @@ class AppLocalizationsMn extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Эмитентийн сангийн хуудас болон вэбээс олсон санхүүгийн сайтуудад тулгуурласан AI тайлбар. Хөрөнгө оруулалтын зөвлөгөө биш. Өдрийн асуултын хязгаараас тань зарцуулна, шинжилгээ биш.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'AI-аас асуух: “$query”';
+  }
 }

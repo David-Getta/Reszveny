@@ -2544,4 +2544,9 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Ufafanuzi wa AI kutoka ukurasa wa mfuko wa mtoaji na tovuti za kifedha inazozipata mtandaoni. Si ushauri wa uwekezaji. Hutumia kikomo chako cha maswali cha kila siku, si uchambuzi.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Uliza AI: “$query”';
+  }
 }

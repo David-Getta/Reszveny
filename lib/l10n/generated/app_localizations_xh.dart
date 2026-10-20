@@ -2554,4 +2554,9 @@ class AppLocalizationsXh extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Ingcaciso ye-AI esuka kwiphepha lengxowa-mali lomkhuphi nakwiisayithi zezemali ezifumana kwiwebhu. Ayilocebiso lotyalo-mali. Sisebenzisa umda wakho wemibuzo wemihla ngemihla, hayi uhlalutyo.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Buza i-AI: “$query”';
+  }
 }

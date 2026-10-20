@@ -2546,4 +2546,9 @@ class AppLocalizationsSu extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Katerangan AI tina halaman dana penerbit sareng situs kauangan anu kapanggih di wéb. Lain naséhat investasi. Nganggo wates patarosan sapopoé anjeun, sanés analisis.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Tanya ka AI: “$query”';
+  }
 }

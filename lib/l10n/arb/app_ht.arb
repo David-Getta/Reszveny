@@ -677,5 +677,6 @@
   "instrumentTitle": "Sou enstriman sa a",
   "instrumentHint": "Pa gen pwofil konpayi pou senbòl sa a – li ka yon ETF, yon fon oswa yon sètifika depo. Mande AI a kisa li ye, kisa li genyen ladan l ak konbyen li koute.",
   "instrumentAsk": "Kisa sa ye?",
-  "instrumentNote": "Eksplikasyon AI ki soti nan paj fon emetè a ak sit finansye li jwenn sou entènèt. Se pa yon konsèy envestisman. Li itilize limit kesyon ou pou chak jou, pa yon analiz."
+  "instrumentNote": "Eksplikasyon AI ki soti nan paj fon emetè a ak sit finansye li jwenn sou entènèt. Se pa yon konsèy envestisman. Li itilize limit kesyon ou pou chak jou, pa yon analiz.",
+  "suggestAskAi": "Mande AI a: « {query} »"
 }

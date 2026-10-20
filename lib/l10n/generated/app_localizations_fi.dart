@@ -2544,4 +2544,9 @@ class AppLocalizationsFi extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Tekoälyn selitys liikkeeseenlaskijan rahastosivun ja sen verkosta löytämien taloussivustojen perusteella. Se ei ole sijoitusneuvontaa. Kuluttaa päivittäistä kysymyskiintiötäsi, ei analyysia.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Kysy tekoälyltä: ”$query”';
+  }
 }

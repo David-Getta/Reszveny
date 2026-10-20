@@ -2560,4 +2560,9 @@ class AppLocalizationsTs extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Nhlamuselo ya AI ku suka eka pheji ya nkwama ya muhumelerisi na tiwebsayiti ta timali leti yi ti kumaka ewebeni. A hi ndzayo ya vuvekisi. Yi tirhisa ndzelekano wa wena wa swivutiso wa siku na siku, ku nga ri nxopaxopo.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Vutisa AI: “$query”';
+  }
 }

@@ -2542,4 +2542,9 @@ class AppLocalizationsAk extends AppLocalizations {
   @override
   String get instrumentNote =>
       'AI nkyerɛkyerɛmu a ɛfiri deɛ ɔde baeɛ no fund krataafa ne sikasɛm nkrataafa a ɛhu wɔ intanɛt so. Ɛnyɛ sikahyɛmu ho afotu. Ɛfiri wo nsɛmmisa a ɛsɛ da biara mu, ɛnni nhwehwɛmu biara.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Bisa AI no: “$query”';
+  }
 }

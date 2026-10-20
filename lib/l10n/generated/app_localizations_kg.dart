@@ -2551,4 +2551,9 @@ class AppLocalizationsKg extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Ntendula ya AI yina me katuka na lutiti ya fond ya mubasisi mpi na ba site ya mbongo yina yo ke mona na Internet. Yo ke malongi ya kutula mbongo ve. Yo ke sadilaka ndilu ya biuvu na nge ya konso kilumbu, ve nsosa.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Yuvula AI: « $query »';
+  }
 }

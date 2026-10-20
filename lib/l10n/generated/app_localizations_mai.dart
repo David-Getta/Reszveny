@@ -2537,4 +2537,9 @@ class AppLocalizationsMai extends AppLocalizations {
   @override
   String get instrumentNote =>
       'जारीकर्ताक फंड पेज आ वेबपर भेटल वित्तीय साइटसँ AI व्याख्या। ई निवेशक सलाह नहि अछि। ई अहाँक दैनिक प्रश्न-सीमासँ जाइत अछि, कोनो विश्लेषण खर्च नहि होइत अछि।';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'AI सँ पुछू: “$query”';
+  }
 }

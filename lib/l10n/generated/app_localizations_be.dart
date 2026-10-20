@@ -2610,4 +2610,9 @@ class AppLocalizationsBe extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Тлумачэнне ад AI на падставе старонкі фонду ў эмітэнта і фінансавых сайтаў, якія ён знаходзіць у інтэрнэце. Не з’яўляецца інвестыцыйнай парадай. Выкарыстоўвае дзённы ліміт пытанняў, а не аналіз.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Спытаць у AI: «$query»';
+  }
 }

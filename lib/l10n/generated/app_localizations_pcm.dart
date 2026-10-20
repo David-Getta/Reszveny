@@ -2543,4 +2543,9 @@ class AppLocalizationsPcm extends AppLocalizations {
   @override
   String get instrumentNote =>
       'AI explanation from di issuer fund page and money sites wey e find for web. E no be investment advice. E dey use your daily question limit, no be analysis.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Ask di AI: “$query”';
+  }
 }

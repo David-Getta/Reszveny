@@ -2551,4 +2551,9 @@ class AppLocalizationsRn extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Insiguro ya AI ivuye ku rupapuro rw’ikigega rw’uwagishinze no ku mbuga z’imari ibona kuri internet. Si inama yo gushora imari. Ikoresha urugero rw’ibibazo vyawe rw’umunsi, si isesengura.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Baza AI: “$query”';
+  }
 }

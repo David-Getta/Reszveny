@@ -2536,4 +2536,9 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Giải thích do AI tạo từ trang quỹ của tổ chức phát hành và các trang tài chính mà AI tìm thấy trên web. Không phải là lời khuyên đầu tư. Dùng hạn mức câu hỏi hằng ngày của bạn, không dùng lượt phân tích.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Hỏi AI: “$query”';
+  }
 }

@@ -2610,4 +2610,9 @@ class AppLocalizationsLt extends AppLocalizations {
   @override
   String get instrumentNote =>
       'DI paaiškinimas pagal emitento fondo puslapį ir finansų svetaines, kurias jis randa internete. Tai nėra investavimo rekomendacija. Naudoja jūsų dienos klausimų limitą, o ne analizę.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Klausti DI: „$query“';
+  }
 }

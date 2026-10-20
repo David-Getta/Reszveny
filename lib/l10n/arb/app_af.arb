@@ -677,5 +677,6 @@
   "instrumentTitle": "Oor hierdie instrument",
   "instrumentHint": "Daar is geen maatskappyprofiel vir hierdie simbool nie – dit kan ’n ETF, ’n fonds of ’n depotbewys wees. Vra die AI wat dit is, wat dit hou en wat dit kos.",
   "instrumentAsk": "Wat is dit?",
-  "instrumentNote": "AI-verduideliking uit die uitgewer se fondsblad en finansiële webwerwe wat dit op die web vind. Dit is nie beleggingsadvies nie. Dit gebruik jou daaglikse vraagtoelae, nie ’n ontleding nie."
+  "instrumentNote": "AI-verduideliking uit die uitgewer se fondsblad en finansiële webwerwe wat dit op die web vind. Dit is nie beleggingsadvies nie. Dit gebruik jou daaglikse vraagtoelae, nie ’n ontleding nie.",
+  "suggestAskAi": "Vra die AI: “{query}”"
 }

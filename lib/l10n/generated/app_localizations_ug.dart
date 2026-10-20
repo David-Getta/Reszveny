@@ -2546,4 +2546,9 @@ class AppLocalizationsUg extends AppLocalizations {
   @override
   String get instrumentNote =>
       'چىقارغۇچىنىڭ فوند بېتى ۋە توردىن تاپقان مالىيە تور بەتلىرىگە ئاساسلانغان AI چۈشەندۈرۈشى. مەبلەغ سېلىش تەۋسىيەسى ئەمەس. كۈندىلىك سوئال چېكىڭىزدىن سەرپ بولىدۇ، تەھلىل ئەمەس.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'AI دىن سوراڭ: «$query»';
+  }
 }

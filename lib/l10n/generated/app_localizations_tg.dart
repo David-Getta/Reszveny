@@ -2545,4 +2545,9 @@ class AppLocalizationsTg extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Шарҳи AI дар асоси саҳифаи фонд дар сомонаи эмитент ва сомонаҳои молиявӣ, ки дар интернет пайдо мекунад. Маслиҳати сармоягузорӣ нест. Аз ҳадди саволҳои ҳаррӯзаи шумо сарф мешавад, на таҳлил.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Аз AI пурсед: «$query»';
+  }
 }

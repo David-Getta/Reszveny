@@ -2589,4 +2589,9 @@ class AppLocalizationsSr extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Објашњење вештачке интелигенције на основу странице фонда код издаваоца и финансијских сајтова које проналази на интернету. Не представља инвестициони савет. Троши ваше дневно ограничење питања, не анализу.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Питајте AI: „$query“';
+  }
 }

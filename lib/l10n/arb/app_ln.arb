@@ -677,5 +677,6 @@
   "instrumentTitle": "Na ntina ya esaleli oyo",
   "instrumentHint": "Profil ya kompani ezali te mpo na elembo oyo – ekoki kozala ETF, fonds to mokanda ya dépôt. Tuna AI yango ezali nini, nini ezali na kati mpe ntalo na yango ezali boni.",
   "instrumentAsk": "Oyo ezali nini?",
-  "instrumentNote": "Ndimbola ya AI oyo euti na lokasa ya fonds ya mobimisi mpe na ba site ya mbɔngɔ oyo ezwi na Internet. Ezali toli ya kotia mbɔngɔ te. Esalelaka ndelo ya mituna na yo ya mokolo na mokolo, kasi botaleli te."
+  "instrumentNote": "Ndimbola ya AI oyo euti na lokasa ya fonds ya mobimisi mpe na ba site ya mbɔngɔ oyo ezwi na Internet. Ezali toli ya kotia mbɔngɔ te. Esalelaka ndelo ya mituna na yo ya mokolo na mokolo, kasi botaleli te.",
+  "suggestAskAi": "Tuna AI: « {query} »"
 }

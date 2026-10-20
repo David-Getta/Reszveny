@@ -2562,4 +2562,9 @@ class AppLocalizationsMk extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Објаснување од AI врз основа на страницата на фондот кај издавачот и финансиски сајтови што ги наоѓа на интернет. Не претставува инвестициски совет. Го користи вашиот дневен лимит на прашања, не анализа.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Прашајте го AI: „$query“';
+  }
 }

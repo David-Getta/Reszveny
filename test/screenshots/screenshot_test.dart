@@ -1202,6 +1202,15 @@ void main() {
     await _shot(tester, 'earnings_summary_phone_hu');
   });
 
+  testWidgets('a description in the search: the "ask the AI" suggestion (hungarian, phone)', (tester) async {
+    await pumpApp(tester, _services(locale: const Locale('hu'), backend: true), const Size(430, 932));
+    await tester.enterText(find.byType(TextField), 'tech 100 etf');
+    await tester.pump(const Duration(milliseconds: 450));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('suggestion-ai')), findsOneWidget);
+    await _shot(tester, 'search_ai_suggestion_phone_hu');
+  });
+
   testWidgets('asking for anonymous statistics on the home screen (hungarian, phone)', (tester) async {
     await pumpApp(tester, _services(locale: const Locale('hu'), backend: true), const Size(430, 932));
     final card = find.byKey(const ValueKey('telemetry-consent'));

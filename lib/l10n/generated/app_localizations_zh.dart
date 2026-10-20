@@ -2430,6 +2430,11 @@ class AppLocalizationsZh extends AppLocalizations {
   @override
   String get instrumentNote =>
       'AI 根据发行方的基金页面以及在网上找到的财经网站进行说明。不构成投资建议。占用每日提问次数，不消耗分析次数。';
+
+  @override
+  String suggestAskAi(String query) {
+    return '问问 AI：“$query”';
+  }
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -4856,4 +4861,9 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   @override
   String get instrumentNote =>
       'AI 根據發行商的基金頁面以及在網上找到的財經網站作出解釋。並不構成投資建議。佔用每日提問次數，不消耗分析次數。';
+
+  @override
+  String suggestAskAi(String query) {
+    return '問 AI：「$query」';
+  }
 }

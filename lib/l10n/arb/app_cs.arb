@@ -677,5 +677,6 @@
   "instrumentTitle": "O tomto instrumentu",
   "instrumentHint": "K tomuto symbolu neexistuje profil společnosti – může jít o ETF, fond nebo depozitní certifikát. Zeptejte se AI, co to je, co obsahuje a kolik stojí.",
   "instrumentAsk": "Co to je?",
-  "instrumentNote": "Vysvětlení od AI na základě stránky fondu u emitenta a finančních webů, které najde na internetu. Není investičním doporučením. Čerpá z vašeho denního limitu otázek, nespotřebuje analýzu."
+  "instrumentNote": "Vysvětlení od AI na základě stránky fondu u emitenta a finančních webů, které najde na internetu. Není investičním doporučením. Čerpá z vašeho denního limitu otázek, nespotřebuje analýzu.",
+  "suggestAskAi": "Zeptat se AI: „{query}“"
 }

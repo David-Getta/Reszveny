@@ -2562,4 +2562,9 @@ class AppLocalizationsIlo extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Panangilawlawag ti AI manipud iti fund page ti nangipaay ken kadagiti financial site a nasarakanna iti web. Saan a balakad iti panagpuonan. Agusar daytoy iti inaldaw a limitasion dagiti saludsod-mo, saan nga iti panaganalisa.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Isaludsod iti AI: “$query”';
+  }
 }

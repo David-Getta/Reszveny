@@ -2584,4 +2584,9 @@ class AppLocalizationsLv extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Mākslīgā intelekta skaidrojums pēc emitenta fonda lapas un finanšu vietnēm, ko tas atrod tīmeklī. Tā nav ieguldījumu konsultācija. Izmanto jūsu dienas jautājumu limitu, nevis analīzi.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Jautāt AI: „$query”';
+  }
 }

@@ -2464,4 +2464,9 @@ class AppLocalizationsJa extends AppLocalizations {
   @override
   String get instrumentNote =>
       '発行体のファンドページと Web で見つかった金融サイトをもとに AI が説明します。投資助言ではありません。1日の質問回数を使い、分析回数は消費しません。';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'AI に聞く：「$query」';
+  }
 }

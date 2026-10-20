@@ -2522,4 +2522,9 @@ class AppLocalizationsKm extends AppLocalizations {
   @override
   String get instrumentNote =>
       'ការពន្យល់ដោយ AI ពីទំព័រមូលនិធិរបស់អ្នកបោះផ្សាយ និងគេហទំព័រហិរញ្ញវត្ថុដែលវារកឃើញនៅលើបណ្ដាញ។ មិនមែនជាដំបូន្មានវិនិយោគទេ។ វាប្រើកម្រិតសំណួរប្រចាំថ្ងៃរបស់អ្នក មិនមែនការវិភាគទេ។';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'សួរ AI៖ «$query»';
+  }
 }

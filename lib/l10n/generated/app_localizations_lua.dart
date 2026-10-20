@@ -2550,4 +2550,9 @@ class AppLocalizationsLua extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Diumvuija dia AI didi difuma ku dibeji dia fond dia mupatudi ne ku ba site ya mfranga idi dipeta ku Internet. Kadiena mibelu ya kuteka mfranga. Bidi bienzeja mukalu wa nkonko yebe ya dituku dionso, kabiyi dikonkonona.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Ebeja AI: « $query »';
+  }
 }

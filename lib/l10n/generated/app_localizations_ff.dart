@@ -2537,4 +2537,9 @@ class AppLocalizationsFf extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Faccirde AI ummoraade e hello fonndo yaltinoowo e lowe ngalu ɗe o yiyi e geese. Wonaa wasiya e investisman. Ina huutoroo keerol naamne maa ñalnde kala, wonaa ƴeewndo.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Naamnu AI: « $query »';
+  }
 }

@@ -2550,4 +2550,9 @@ class AppLocalizationsNy extends AppLocalizations {
   @override
   String get instrumentNote =>
       'Kufotokozera kwa AI kuchokera patsamba la thumba la wotulutsa ndi masamba azachuma omwe chimapeza pa intaneti. Si malangizo okhudza kuyika ndalama. Chimagwiritsa ntchito malire a mafunso anu a tsiku ndi tsiku, osati kusanthula.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'Funsani AI: “$query”';
+  }
 }

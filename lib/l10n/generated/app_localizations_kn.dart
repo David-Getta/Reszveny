@@ -2550,4 +2550,9 @@ class AppLocalizationsKn extends AppLocalizations {
   @override
   String get instrumentNote =>
       'ವಿತರಕರ ಫಂಡ್ ಪುಟ ಮತ್ತು ವೆಬ್‌ನಲ್ಲಿ ಸಿಗುವ ಹಣಕಾಸು ಸೈಟ್‌ಗಳಿಂದ AI ವಿವರಣೆ. ಇದು ಹೂಡಿಕೆ ಸಲಹೆಯಲ್ಲ. ಇದು ನಿಮ್ಮ ದೈನಂದಿನ ಪ್ರಶ್ನೆ ಮಿತಿಯನ್ನು ಬಳಸುತ್ತದೆ, ವಿಶ್ಲೇಷಣೆಯನ್ನಲ್ಲ.';
+
+  @override
+  String suggestAskAi(String query) {
+    return 'AI ಅನ್ನು ಕೇಳಿ: “$query”';
+  }
 }
