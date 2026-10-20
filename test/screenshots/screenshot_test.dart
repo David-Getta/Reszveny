@@ -1401,7 +1401,54 @@ void main() {
     for (final device in _storeDevices) {
       testWidgets('store ${device.name} $lang', (tester) async {
         final l10n = lookupAppLocalizations(Locale(lang));
-        final s = _services(locale: Locale(lang), portfolio: _samplePortfolio(), alerts: _sampleAlerts(), store: true);
+        // A 4. kép: gyorsjelentés-összefoglaló kérdéssel (a válasz utánzat, a bolti nyelveken).
+        const aiConfig = AppConfig(backendUrl: 'https://api.test');
+        final aiClient = MockClient((req) async {
+          final question = req.body.contains('Question:');
+          final text = lang == 'hu'
+              ? (question
+                    ? 'A számok jók voltak, de a cég a karácsonyi negyedévre a vártnál óvatosabb kilátást adott, és a '
+                          'kínai eladások lassulása is nyomta a hangulatot.'
+                    : 'Az Apple július 30-án jelentette a júniusi negyedévet. A bevétel 94 milliárd dollár lett (+8%), '
+                          'az egy részvényre jutó eredmény 1,57 dollár, mindkettő a várakozás fölött.\n\n'
+                          '- A szolgáltatások bevétele rekordot döntött.\n- Kínában 4%-kal nőttek az eladások.\n\n'
+                          'A cég a következő negyedévre is növekedést vár. A részvény másnap 2%-ot emelkedett.')
+              : (question
+                    ? 'The numbers were good, but guidance for the holiday quarter was more cautious than expected, '
+                          'and slowing sales in China weighed on sentiment.'
+                    : 'Apple reported its June quarter on 30 July. Revenue came in at \$94 billion (+8%) and earnings '
+                          'per share at \$1.57, both above expectations.\n\n- Services revenue set a record.\n'
+                          '- Sales in China grew 4%.\n\nThe company expects growth to continue next quarter. '
+                          'The stock rose 2% the next day.');
+          return http.Response(
+            jsonEncode({
+              'stop_reason': 'end_turn',
+              'content': [
+                {
+                  'type': 'text',
+                  'text': text,
+                  'citations': [
+                    {
+                      'url': 'https://www.apple.com/newsroom/2026/07/apple-reports-third-quarter-results/',
+                      'title': 'Apple reports third quarter results',
+                    },
+                    {'url': 'https://www.reuters.com/technology/apple-results', 'title': 'Apple beats estimates'},
+                  ],
+                },
+              ],
+            }),
+            200,
+            headers: {'content-type': 'application/json; charset=utf-8'},
+          );
+        });
+        final s = _services(
+          locale: Locale(lang),
+          portfolio: _samplePortfolio(),
+          alerts: _sampleAlerts(),
+          store: true,
+          earningsSummarizer: EarningsSummarizer(config: aiConfig, client: aiClient),
+          researchFollowUp: ResearchFollowUp(config: aiConfig, client: aiClient),
+        );
         await _pumpStore(tester, s, device, l10n.onboardTitle1, l10n.onboardBody1);
         await _storeShot(tester, device, '${lang}_${device.name}_1');
 
@@ -1436,6 +1483,52 @@ void main() {
         await tester.tap(device.name == 'desktop' || device.name == 'ipad13' ? tab.first : tab.last);
         await tester.pumpAndSettle();
         await _storeShot(tester, device, '${lang}_${device.name}_3');
+
+        // 4. kép: „Mi volt a legutóbbi gyorsjelentésben?” a kérdezz-vissza válasszal.
+        await _setCaption(tester, l10n.earningsSummaryButton, l10n.earningsSummaryNote);
+        // Vissza a kezdőképernyőre: széles elrendezésben az oldalsáv, telefonon az alsó sáv „Keresés” füle.
+        if (device.name == 'desktop' || device.name == 'ipad13') {
+          await tester.tap(find.byKey(const ValueKey('sidebar-home')));
+        } else {
+          await tester.tap(
+            find.descendant(
+              of: find.byKey(const ValueKey('phone-nav')),
+              matching: find.text(
+                MaterialLocalizations.of(tester.element(find.byType(Scaffold).first)).searchFieldLabel,
+              ),
+            ),
+          );
+        }
+        await tester.pumpAndSettle();
+        await tester.enterText(find.byType(TextField).first, 'AAPL');
+        await tester.testTextInput.receiveAction(TextInputAction.search);
+        await tester.pumpAndSettle();
+        final summary = find.byKey(const ValueKey('earnings-summary'));
+        // Széles elrendezésben az első görgethető az oldalsáv: a részvény oldalát görgetjük.
+        final page = find.descendant(of: find.byType(StockDetailPage), matching: find.byType(Scrollable)).first;
+        for (var i = 0; i < 30 && summary.evaluate().isEmpty; i++) {
+          await tester.drag(page, const Offset(0, -250));
+          await tester.pumpAndSettle();
+        }
+        await tester.ensureVisible(summary);
+        await tester.pumpAndSettle();
+        await tester.tap(summary);
+        await tester.pumpAndSettle();
+        await tester.enterText(
+          find.byKey(const ValueKey('followup-field')),
+          lang == 'hu'
+              ? 'Miért esett az árfolyam a jó számok ellenére?'
+              : 'Why did the stock fall despite good numbers?',
+        );
+        await tester.tap(find.byKey(const ValueKey('followup-send')));
+        await tester.pumpAndSettle();
+        await tester.drag(
+          find.byKey(const ValueKey('earnings-summary-sheet')),
+          const Offset(0, -300),
+          warnIfMissed: false,
+        );
+        await tester.pumpAndSettle();
+        await _storeShot(tester, device, '${lang}_${device.name}_4');
         CollapseStore.instance.reset();
       });
     }
