@@ -223,6 +223,8 @@ class _DetailsBody extends StatelessWidget {
     String? err(DetailSection s) => d.errors[s] == null ? null : errorMessage(l10n, d.errors[s]!);
 
     final glossary = metricGlossary(l10n);
+    // Cégprofil nélküli papír (ETF, alap): az üres cégspecifikus kártyák kimaradnak.
+    final isInstrument = q != null && (p == null || (p.industry == null && p.sector == null));
     final sections = <Widget>[
       const OfflineBanner(),
       // Fejléc: név, ár, változás. Keskeny képernyőn (telefon) az ár a név alá
@@ -436,62 +438,64 @@ class _DetailsBody extends StatelessWidget {
       ),
 
       // Értékelés
-      SectionCard(
-        title: l10n.sectionValuation,
-        child: err(DetailSection.metrics) != null
-            ? SectionError(err(DetailSection.metrics)!)
-            : KvTable(
-                missing: l10n.notAvailable,
-                hints: glossary,
-                hintTitle: l10n.glossTitle,
-                rows: [
-                  (l10n.labelMarketCap, p?.marketCap == null ? null : fmt.compact(p!.marketCap, currency: cur)),
-                  (
-                    l10n.labelSharesOutstanding,
-                    p?.sharesOutstanding == null ? null : fmt.compact(p!.sharesOutstanding),
-                  ),
-                  (l10n.labelPeTrailing, m?.peTrailing == null ? null : fmt.number(m!.peTrailing)),
-                  (l10n.labelPeForward, m?.peForward == null ? null : fmt.number(m!.peForward)),
-                  (l10n.labelPb, m?.pb == null ? null : fmt.number(m!.pb)),
-                  (l10n.labelPs, m?.ps == null ? null : fmt.number(m!.ps)),
-                  (l10n.labelEvToFcf, m?.evToEbitda == null ? null : fmt.number(m!.evToEbitda)),
-                  (l10n.labelPeg, m?.peg == null ? null : fmt.number(m!.peg)),
-                  (l10n.labelEps, m?.eps == null ? null : fmt.price(m!.eps, cur)),
-                  (l10n.labelBeta, m?.beta == null ? null : fmt.number(m!.beta)),
-                ],
-              ),
-      ),
+      if (!(isInstrument && m == null && p?.marketCap == null))
+        SectionCard(
+          title: l10n.sectionValuation,
+          child: err(DetailSection.metrics) != null
+              ? SectionError(err(DetailSection.metrics)!)
+              : KvTable(
+                  missing: l10n.notAvailable,
+                  hints: glossary,
+                  hintTitle: l10n.glossTitle,
+                  rows: [
+                    (l10n.labelMarketCap, p?.marketCap == null ? null : fmt.compact(p!.marketCap, currency: cur)),
+                    (
+                      l10n.labelSharesOutstanding,
+                      p?.sharesOutstanding == null ? null : fmt.compact(p!.sharesOutstanding),
+                    ),
+                    (l10n.labelPeTrailing, m?.peTrailing == null ? null : fmt.number(m!.peTrailing)),
+                    (l10n.labelPeForward, m?.peForward == null ? null : fmt.number(m!.peForward)),
+                    (l10n.labelPb, m?.pb == null ? null : fmt.number(m!.pb)),
+                    (l10n.labelPs, m?.ps == null ? null : fmt.number(m!.ps)),
+                    (l10n.labelEvToFcf, m?.evToEbitda == null ? null : fmt.number(m!.evToEbitda)),
+                    (l10n.labelPeg, m?.peg == null ? null : fmt.number(m!.peg)),
+                    (l10n.labelEps, m?.eps == null ? null : fmt.price(m!.eps, cur)),
+                    (l10n.labelBeta, m?.beta == null ? null : fmt.number(m!.beta)),
+                  ],
+                ),
+        ),
 
       // Pénzügyek
-      SectionCard(
-        title: l10n.sectionFinancials,
-        child: err(DetailSection.metrics) != null
-            ? SectionError(err(DetailSection.metrics)!)
-            : KvTable(
-                missing: l10n.notAvailable,
-                hints: glossary,
-                hintTitle: l10n.glossTitle,
-                rows: [
-                  (l10n.labelRevenueTtm, m?.revenueTtm == null ? null : fmt.compact(m!.revenueTtm, currency: cur)),
-                  (
-                    l10n.labelNetIncomeTtm,
-                    m?.netIncomeTtm == null ? null : fmt.compact(m!.netIncomeTtm, currency: cur),
-                  ),
-                  (l10n.labelGrossMargin, m?.grossMargin == null ? null : fmt.percent(m!.grossMargin)),
-                  (l10n.labelOperatingMargin, m?.operatingMargin == null ? null : fmt.percent(m!.operatingMargin)),
-                  (l10n.labelNetMargin, m?.netMargin == null ? null : fmt.percent(m!.netMargin)),
-                  (l10n.labelRoe, m?.roe == null ? null : fmt.percent(m!.roe)),
-                  (l10n.labelRoa, m?.roa == null ? null : fmt.percent(m!.roa)),
-                  (l10n.labelDebtToEquity, m?.debtToEquity == null ? null : fmt.number(m!.debtToEquity)),
-                  (l10n.labelCurrentRatio, m?.currentRatio == null ? null : fmt.number(m!.currentRatio)),
-                  (
-                    l10n.labelRevenueGrowth,
-                    m?.revenueGrowth == null ? null : fmt.percent(m!.revenueGrowth, withSign: true),
-                  ),
-                  (l10n.labelEpsGrowth, m?.epsGrowth == null ? null : fmt.percent(m!.epsGrowth, withSign: true)),
-                ],
-              ),
-      ),
+      if (!(isInstrument && m == null))
+        SectionCard(
+          title: l10n.sectionFinancials,
+          child: err(DetailSection.metrics) != null
+              ? SectionError(err(DetailSection.metrics)!)
+              : KvTable(
+                  missing: l10n.notAvailable,
+                  hints: glossary,
+                  hintTitle: l10n.glossTitle,
+                  rows: [
+                    (l10n.labelRevenueTtm, m?.revenueTtm == null ? null : fmt.compact(m!.revenueTtm, currency: cur)),
+                    (
+                      l10n.labelNetIncomeTtm,
+                      m?.netIncomeTtm == null ? null : fmt.compact(m!.netIncomeTtm, currency: cur),
+                    ),
+                    (l10n.labelGrossMargin, m?.grossMargin == null ? null : fmt.percent(m!.grossMargin)),
+                    (l10n.labelOperatingMargin, m?.operatingMargin == null ? null : fmt.percent(m!.operatingMargin)),
+                    (l10n.labelNetMargin, m?.netMargin == null ? null : fmt.percent(m!.netMargin)),
+                    (l10n.labelRoe, m?.roe == null ? null : fmt.percent(m!.roe)),
+                    (l10n.labelRoa, m?.roa == null ? null : fmt.percent(m!.roa)),
+                    (l10n.labelDebtToEquity, m?.debtToEquity == null ? null : fmt.number(m!.debtToEquity)),
+                    (l10n.labelCurrentRatio, m?.currentRatio == null ? null : fmt.number(m!.currentRatio)),
+                    (
+                      l10n.labelRevenueGrowth,
+                      m?.revenueGrowth == null ? null : fmt.percent(m!.revenueGrowth, withSign: true),
+                    ),
+                    (l10n.labelEpsGrowth, m?.epsGrowth == null ? null : fmt.percent(m!.epsGrowth, withSign: true)),
+                  ],
+                ),
+        ),
 
       // Gyorsjelentések: a következő és az utolsó negyedévek EPS-e
       EarningsCard(symbol: d.symbol, companyName: p?.name ?? candidate.companyName),
@@ -500,14 +504,15 @@ class _DetailsBody extends StatelessWidget {
       InsidersCard(symbol: d.symbol, currency: cur),
 
       // Éves kimutatások
-      SectionCard(
-        title: l10n.sectionStatements,
-        child: err(DetailSection.statements) != null
-            ? SectionError(err(DetailSection.statements)!)
-            : d.statements == null || d.statements!.isEmpty
-            ? Text(l10n.notAvailable)
-            : StatementsTable(statements: d.statements!, fmt: fmt, currency: cur),
-      ),
+      if (!(isInstrument && (d.statements == null || d.statements!.isEmpty)))
+        SectionCard(
+          title: l10n.sectionStatements,
+          child: err(DetailSection.statements) != null
+              ? SectionError(err(DetailSection.statements)!)
+              : d.statements == null || d.statements!.isEmpty
+              ? Text(l10n.notAvailable)
+              : StatementsTable(statements: d.statements!, fmt: fmt, currency: cur),
+        ),
 
       // Osztalék
       SectionCard(
@@ -551,14 +556,15 @@ class _DetailsBody extends StatelessWidget {
       ),
 
       // Elemzők
-      SectionCard(
-        title: l10n.sectionAnalysts,
-        child: err(DetailSection.consensus) != null
-            ? SectionError(err(DetailSection.consensus)!)
-            : d.consensus == null
-            ? Text(l10n.notAvailable)
-            : _ConsensusView(consensus: d.consensus!, fmt: fmt),
-      ),
+      if (!(isInstrument && d.consensus == null))
+        SectionCard(
+          title: l10n.sectionAnalysts,
+          child: err(DetailSection.consensus) != null
+              ? SectionError(err(DetailSection.consensus)!)
+              : d.consensus == null
+              ? Text(l10n.notAvailable)
+              : _ConsensusView(consensus: d.consensus!, fmt: fmt),
+        ),
 
       // Hírek
       SectionCard(

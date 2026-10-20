@@ -134,6 +134,11 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.byKey(const ValueKey('instrument-card')), findsOneWidget);
     expect(find.text('About this instrument'), findsOneWidget);
+    // Az üres cégspecifikus kártyák (értékelés, pénzügyek, kimutatások, elemzők) kimaradnak.
+    expect(find.text('Valuation'), findsNothing);
+    expect(find.text('Financials'), findsNothing);
+    expect(find.text('Financial statements (annual)'), findsNothing);
+    expect(find.text('Analyst ratings'), findsNothing);
     final button = find.byKey(const ValueKey('instrument-ask'));
     await tester.ensureVisible(button);
     await tester.tap(button);
@@ -167,5 +172,7 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text('Apple Inc.'), findsWidgets);
     expect(find.byKey(const ValueKey('instrument-card')), findsNothing);
+    // A cégspecifikus kártyák megvannak (a lista lusta: az elsőt nézzük).
+    expect(find.text('Valuation'), findsOneWidget);
   });
 }
