@@ -214,6 +214,36 @@ void main() {
       expect(find.descendant(of: next, matching: find.textContaining('HUF')), findsOneWidget);
     });
 
+    test('year-over-year change of the dividend income', () {
+      expect(yearChange(112, 100), closeTo(12, 1e-9));
+      expect(yearChange(80, 100), closeTo(-20, 1e-9));
+      expect(yearChange(50, 0), isNull);
+    });
+
+    testWidgets('the yearly list shows the change against the previous year, not for the running year', (tester) async {
+      tester.view.physicalSize = const Size(1200, 2600);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.reset);
+      final s = services();
+      final year = DateTime.now().year;
+      await s.portfolio.add(symbol: 'AAPL', quantity: 10, price: 200, currency: 'USD', date: DateTime(year - 3, 5, 2));
+      await s.portfolio.addDividend(symbol: 'AAPL', amount: 100, currency: 'USD', date: DateTime(year - 2, 6, 1));
+      await s.portfolio.addDividend(symbol: 'AAPL', amount: 112, currency: 'USD', date: DateTime(year - 1, 6, 1));
+      await s.portfolio.addDividend(symbol: 'AAPL', amount: 30, currency: 'USD', date: DateTime(year, 1, 10));
+      await tester.pumpWidget(WhatStockApp(services: s));
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('Portfolio').first);
+      await tester.pumpAndSettle();
+      final card = find.byKey(const ValueKey('portfolio-dividends-received'));
+      await tester.ensureVisible(card);
+      await tester.pumpAndSettle();
+      expect(find.byKey(ValueKey('dividends-year-change-${year - 1}')), findsOneWidget);
+      expect(find.text('+12%'), findsOneWidget);
+      // Az első évhez nincs előző, a folyó évhez nincs százalék.
+      expect(find.byKey(ValueKey('dividends-year-change-${year - 2}')), findsNothing);
+      expect(find.byKey(ValueKey('dividends-year-change-$year')), findsNothing);
+    });
+
     test('two currencies for one stock (two brokers) are separate series, never summed together', () {
       final out = expectedDividends(
         [

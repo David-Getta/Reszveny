@@ -7,6 +7,7 @@ import '../../theme/app_theme.dart';
 import '../../widgets/metric_hint.dart';
 import 'add_lot_dialog.dart' show parseDecimal;
 import 'dividend_forecast.dart';
+import 'portfolio_page.dart' show gainColor;
 import 'portfolio_store.dart';
 
 /// „Kapott osztalékok” kártya a portfólió oldalon: az idei és az összes kapott
@@ -131,6 +132,8 @@ class DividendsCard extends StatelessWidget {
                           ),
                           if (years.length > 1) ...[
                             const SizedBox(height: 10),
+                            // Évenként az összeg és – ha az előző évből is van tétel – a változás hozzá képest
+                            // (a folyó év csak részeredmény, ezért ott nincs százalék).
                             for (final y in years)
                               Padding(
                                 key: ValueKey('dividends-year-$y'),
@@ -140,6 +143,20 @@ class DividendsCard extends StatelessWidget {
                                     Expanded(
                                       child: Text('$y', style: TextStyle(color: p.muted)),
                                     ),
+                                    if (y != year && years.contains(y - 1))
+                                      if (yearChange(
+                                            sum(all.where((d) => d.date?.year == y)),
+                                            sum(all.where((d) => d.date?.year == y - 1)),
+                                          )
+                                          case final c?)
+                                        Padding(
+                                          padding: const EdgeInsets.only(right: 10),
+                                          child: Text(
+                                            fmt.percent(c, withSign: true, decimals: 0),
+                                            key: ValueKey('dividends-year-change-$y'),
+                                            style: theme.textTheme.bodySmall?.copyWith(color: gainColor(p, c)),
+                                          ),
+                                        ),
                                     Text(fmt.money(sum(all.where((d) => d.date?.year == y)), currency)),
                                   ],
                                 ),

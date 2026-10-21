@@ -97,7 +97,11 @@ Future<double?> convertedDividends(FxService fx, Iterable<DividendRecord> divide
   return any ? sum : null;
 }
 
-/// Becsült összeg: „~ 2,60 USD" – az Események, a kártyák és a naptár egyformán.
+/// Egy év osztaléka az előző évhez képest, százalékban; `null`, ha az előző év
+/// összege nem pozitív (nincs mihez mérni).
+double? yearChange(double current, double previous) => previous > 0 ? (current / previous - 1) * 100 : null;
+
+/// Becsült összeg: „~ 2,60 USD” – az Események, a kártyák és a naptár egyformán.
 String approxMoney(Fmt fmt, double amount, String currency) => '~ ${fmt.money(amount, currency)}';
 
 /// A kifizetések közti medián távolságból a ritmus napokban (30 / 91 / 182 / 365);
