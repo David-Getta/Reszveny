@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "{symbols} साठी वर्तमान किंमत उपलब्ध नाही.",
   "eventsRecentResults": "नुकतेच जाहीर झालेले निकाल",
   "saveToNotes": "माझ्या नोंदींमध्ये सेव्ह करा",
-  "savedToNotes": "तुमच्या नोंदींमध्ये सेव्ह केले"
+  "savedToNotes": "तुमच्या नोंदींमध्ये सेव्ह केले",
+  "portfolioDividendsReceived": "मिळालेला लाभांश",
+  "portfolioDividendsThisYear": "या वर्षी",
+  "portfolioDividendsAllTime": "आतापर्यंत एकूण",
+  "portfolioAddDividend": "लाभांश जोडा",
+  "portfolioDividendAmount": "मिळालेली रक्कम ({currency})",
+  "portfolioDividendDate": "देय दिनांक",
+  "portfolioDividendsEmpty": "अजून कोणताही लाभांश नोंदवलेला नाही. ते हाताने जोडा किंवा तुमच्या ब्रोकरची एक्सपोर्ट फाइल इंपोर्ट करा – त्यातील लाभांशाच्या ओळीही घेतल्या जातात.",
+  "portfolioDividendsImported": "{count, plural, =1{1 लाभांश जोडला} other{{count} लाभांश जोडले}}",
+  "portfolioExportDividends": "लाभांश एक्सपोर्ट करा (CSV)",
+  "portfolioDividendDeleted": "लाभांश हटवला",
+  "portfolioDividendsHint": "रकमा तुमच्या खात्यात जशा आल्या तशा, पेआउट चलनात; एकूण रकमा आजच्या दराने रूपांतरित केल्या जातात. कर विवरणपत्रासाठी तुमच्या ब्रोकरचे स्टेटमेंट वापरा."
 }

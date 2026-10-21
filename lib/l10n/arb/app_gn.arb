@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Ndaipóri {symbols} tepy ko'ag̃agua.",
   "eventsRecentResults": "Resultado pyahu oñemomarandúva",
   "saveToNotes": "Eñongatu che jehaipyrépe",
-  "savedToNotes": "Oñeñongatúma nde jehaipyrépe"
+  "savedToNotes": "Oñeñongatúma nde jehaipyrépe",
+  "portfolioDividendsReceived": "Dividendo og̃uahẽva",
+  "portfolioDividendsThisYear": "Ko ary",
+  "portfolioDividendsAllTime": "Opa ára",
+  "portfolioAddDividend": "Embojoapy dividendo",
+  "portfolioDividendAmount": "Pira pire og̃uahẽva ({currency})",
+  "portfolioDividendDate": "Jehepyme'ẽ ára",
+  "portfolioDividendsEmpty": "Ndaipóri gueteri dividendo oñemboguapýva. Embojoapy nde pópe, térã egueru nde broker export – umi dividendo tysýi avei ojegueraha.",
+  "portfolioDividendsImported": "{count, plural, =1{1 dividendo oñembojoapy} other{{count} dividendo oñembojoapy}}",
+  "portfolioExportDividends": "Enohẽ dividendo (CSV)",
+  "portfolioDividendDeleted": "Dividendo oñemboguepa",
+  "portfolioDividendsHint": "Pira pire og̃uahẽ haguéicha nde cuenta-pe, jehepyme'ẽ viru-pe; opavave oñembohasa ko árape oĩva cambio-pe. Nde impuesto declaración-rã, eipuru nde broker extracto."
 }

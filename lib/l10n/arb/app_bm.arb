@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "{symbols} sisan sɔngɔ tɛ yen.",
   "eventsRecentResults": "Jatebɔ fɔlen kuraw",
   "saveToNotes": "A mara n ka sɛbɛnniw la",
-  "savedToNotes": "A marala i ka sɛbɛnniw la"
+  "savedToNotes": "A marala i ka sɛbɛnniw la",
+  "portfolioDividendsReceived": "Dividandi sɔrɔlenw",
+  "portfolioDividendsThisYear": "Ɲinan san",
+  "portfolioDividendsAllTime": "Waati bɛɛ",
+  "portfolioAddDividend": "Dividandi dɔ fara a kan",
+  "portfolioDividendAmount": "Wari sɔrɔlen ({currency})",
+  "portfolioDividendDate": "Sarali don",
+  "portfolioDividendsEmpty": "Dividandi si ma sɛbɛn fɔlɔ. Aw k'a sɛbɛn ni bolo ye, walima ka aw ka broker ka export fayili lase – a dividandi sɛbɛnsiraw fana bɛ ta.",
+  "portfolioDividendsImported": "{count, plural, =1{Dividandi 1 farala a kan} other{Dividandi {count} farala a kan}}",
+  "portfolioExportDividends": "Dividandiw labɔ (CSV)",
+  "portfolioDividendDeleted": "Dividandi bɔra",
+  "portfolioDividendsHint": "Wari hakɛw i n'a fɔ u sera aw ka jate kan cogo min na, sarali wari la; jatebɔ bɛɛ bɛ yɛlɛma ni bi sɔngɔ ye. Aw ka nisɔngɔ sɛbɛn kama, aw ka broker ka sɛbɛn de bɛ baara kɛ ni a ye."
 }

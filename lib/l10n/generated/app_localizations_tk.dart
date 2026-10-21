@@ -2563,4 +2563,49 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Bellikleriňize ýazdyryldy';
+
+  @override
+  String get portfolioDividendsReceived => 'Alnan diwidendler';
+
+  @override
+  String get portfolioDividendsThisYear => 'Şu ýyl';
+
+  @override
+  String get portfolioDividendsAllTime => 'Jemi';
+
+  @override
+  String get portfolioAddDividend => 'Diwidend goş';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Alnan möçber ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Töleg senesi';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Häzirlikçe diwidend ýazylmady. Olary el bilen goşuň ýa-da brokeriňiziň eksportyny import ediň – onuň diwidend setirleri hem alynýar.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count diwidend goşuldy',
+      one: '1 diwidend goşuldy',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Diwidendleri eksport et (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Diwidend pozuldy';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Möçberler hasabyňyza gelen görnüşinde, töleg walýutasynda; jemler şu günki kurs bilen öwrülýär. Salgyt beýannamasy üçin brokeriňiziň hasabatyny ulanyň.';
 }

@@ -2629,4 +2629,51 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Захавана ў вашых нататках';
+
+  @override
+  String get portfolioDividendsReceived => 'Атрыманыя дывідэнды';
+
+  @override
+  String get portfolioDividendsThisYear => 'Сёлета';
+
+  @override
+  String get portfolioDividendsAllTime => 'За ўвесь час';
+
+  @override
+  String get portfolioAddDividend => 'Дадаць дывідэнд';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Атрыманая сума ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Дата выплаты';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Дывідэнды пакуль не запісаныя. Дадайце іх уручную або імпартуйце экспарт вашага брокера – радкі з дывідэндамі таксама падхопяцца.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Дададзена $count дывідэнду',
+      many: 'Дададзена $count дывідэндаў',
+      few: 'Дададзена $count дывідэнды',
+      one: 'Дададзены $count дывідэнд',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Экспартаваць дывідэнды (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Дывідэнд выдалены';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Сумы такія, як яны прыйшлі на ваш рахунак, у валюце выплаты; вынікі пераводзяцца па сённяшнім курсе. Для падатковай дэкларацыі карыстайцеся выпіскай вашага брокера.';
 }

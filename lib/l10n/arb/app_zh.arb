@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "{symbols}暂无当前价格。",
   "eventsRecentResults": "最新财报",
   "saveToNotes": "保存到我的笔记",
-  "savedToNotes": "已保存到您的笔记"
+  "savedToNotes": "已保存到您的笔记",
+  "portfolioDividendsReceived": "已收股息",
+  "portfolioDividendsThisYear": "今年",
+  "portfolioDividendsAllTime": "累计",
+  "portfolioAddDividend": "添加股息",
+  "portfolioDividendAmount": "实收金额（{currency}）",
+  "portfolioDividendDate": "派息日期",
+  "portfolioDividendsEmpty": "尚未记录任何股息。可手动添加，或导入券商的导出文件，其中的股息记录也会被识别。",
+  "portfolioDividendsImported": "{count, plural, =1{已添加 1 笔股息} other{已添加 {count} 笔股息}}",
+  "portfolioExportDividends": "导出股息（CSV）",
+  "portfolioDividendDeleted": "股息已删除",
+  "portfolioDividendsHint": "金额以到账时的派息货币显示；合计按今日汇率换算。报税请以券商对账单为准。"
 }

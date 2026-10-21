@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Немає поточної ціни для {symbols}.",
   "eventsRecentResults": "Нещодавно опубліковані звіти",
   "saveToNotes": "Зберегти в мої нотатки",
-  "savedToNotes": "Збережено у ваших нотатках"
+  "savedToNotes": "Збережено у ваших нотатках",
+  "portfolioDividendsReceived": "Отримані дивіденди",
+  "portfolioDividendsThisYear": "Цього року",
+  "portfolioDividendsAllTime": "За весь час",
+  "portfolioAddDividend": "Додати дивіденд",
+  "portfolioDividendAmount": "Отримана сума ({currency})",
+  "portfolioDividendDate": "Дата виплати",
+  "portfolioDividendsEmpty": "Дивідендів ще не записано. Додайте їх вручну або імпортуйте вивантаження від брокера – рядки з дивідендами також буде враховано.",
+  "portfolioDividendsImported": "{count, plural, =1{Додано 1 дивіденд} one{Додано {count} дивіденд} few{Додано {count} дивіденди} many{Додано {count} дивідендів} other{Додано {count} дивіденда}}",
+  "portfolioExportDividends": "Експорт дивідендів (CSV)",
+  "portfolioDividendDeleted": "Дивіденд видалено",
+  "portfolioDividendsHint": "Суми такі, якими вони надійшли на ваш рахунок, у валюті виплати; підсумки перераховано за сьогоднішнім курсом. Для податкової декларації використовуйте звіт брокера."
 }

@@ -2557,4 +2557,49 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Echekwara na ndetu gị';
+
+  @override
+  String get portfolioDividendsReceived => 'Nkesa uru enwetara';
+
+  @override
+  String get portfolioDividendsThisYear => 'Afọ a';
+
+  @override
+  String get portfolioDividendsAllTime => 'Oge niile';
+
+  @override
+  String get portfolioAddDividend => 'Tinye nkesa uru';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Ego enwetara ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Ụbọchị ịkwụ ụgwọ';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Edebanyebeghị nkesa uru ọ bụla. Tinye ha n\'aka, ma ọ bụ bubata export nke broker gị – a na-ewerekwa ahịrị nkesa uru ya.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Etinyere nkesa uru $count',
+      one: 'Etinyere nkesa uru 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Bupụ nkesa uru (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Ehichapụla nkesa uru';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Ego ndị ahụ dị ka ha si bata n\'akaụntụ gị, n\'ego e ji kwụọ; a na-agbanwe mkpokọta na ọnụ ahịa taa. Maka nkwupụta ụtụ isi gị, jiri akwụkwọ nkọwa nke broker gị.';
 }

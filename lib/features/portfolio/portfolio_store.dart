@@ -60,6 +60,45 @@ class PortfolioLot {
   }
 }
 
+/// Egy kapott osztalék: melyik részvénytől, mikor, mennyi (a kifizetés teljes
+/// összege a kifizetés pénznemében, adó után, ahogy a számlára érkezett).
+class DividendRecord {
+  const DividendRecord({
+    required this.id,
+    required this.symbol,
+    required this.amount,
+    required this.currency,
+    this.date,
+  });
+
+  final String id;
+  final String symbol;
+  final double amount;
+  final String currency;
+  final DateTime? date;
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'symbol': symbol,
+    'amount': amount,
+    'currency': currency,
+    if (date != null) 'date': date!.toIso8601String().substring(0, 10),
+  };
+
+  static DividendRecord? fromJson(Map<String, dynamic> j) {
+    final symbol = (j['symbol'] as String? ?? '').trim().toUpperCase();
+    final a = j['amount'];
+    if (symbol.isEmpty || a is! num || a <= 0) return null;
+    return DividendRecord(
+      id: j['id'] as String? ?? '${symbol}_d${DateTime.now().microsecondsSinceEpoch}',
+      symbol: symbol,
+      amount: a.toDouble(),
+      currency: (j['currency'] as String? ?? 'USD').toUpperCase(),
+      date: DateTime.tryParse(j['date'] as String? ?? ''),
+    );
+  }
+}
+
 typedef _Fifo = ({
   List<({double quantity, double price, DateTime? date})> open,
   double realized,
@@ -167,22 +206,43 @@ class Position {
   }
 }
 
-/// A portfólió: vételek listája, csak a készüléken tárolva (SharedPreferences).
+/// A portfólió: a tranzakciók és a kapott osztalékok listája, a készüléken
+/// tárolva (SharedPreferences); fiókkal szinkronizálva.
 class PortfolioStore extends ChangeNotifier {
-  PortfolioStore({List<PortfolioLot> lots = const []}) : _lots = List.of(lots);
+  PortfolioStore({List<PortfolioLot> lots = const [], List<DividendRecord> dividends = const []})
+    : _lots = List.of(lots),
+      _dividends = List.of(dividends);
 
   static const _key = 'portfolio_lots';
+  static const _dividendsKey = 'portfolio_dividends';
 
   final List<PortfolioLot> _lots;
+  final List<DividendRecord> _dividends;
   List<PortfolioLot> get lots => List.unmodifiable(_lots);
   bool get isEmpty => _lots.isEmpty;
+
+  /// A kapott osztalékok, az újabb elöl (dátum nélküli a végén).
+  List<DividendRecord> get dividends =>
+      List.unmodifiable([..._dividends]..sort((a, b) => (b.date ?? DateTime(0)).compareTo(a.date ?? DateTime(0))));
+
+  /// Egy részvény kapott osztalékai (az újabb elöl).
+  List<DividendRecord> dividendsOf(String symbol) {
+    final s = symbol.toUpperCase();
+    return [
+      for (final d in dividends)
+        if (d.symbol == s) d,
+    ];
+  }
 
   static Future<PortfolioStore> load() async {
     try {
       final prefs = await SharedPreferences.getInstance();
       final raw = prefs.getString(_key);
-      if (raw == null) return PortfolioStore();
-      return PortfolioStore(lots: parse(raw));
+      final rawDividends = prefs.getString(_dividendsKey);
+      return PortfolioStore(
+        lots: raw == null ? const [] : parse(raw),
+        dividends: rawDividends == null ? const [] : parseDividends(rawDividends),
+      );
     } catch (_) {
       return PortfolioStore();
     }
@@ -194,6 +254,14 @@ class PortfolioStore extends ChangeNotifier {
     return [
       for (final e in (v is List ? v : const []))
         if (e is Map) ?PortfolioLot.fromJson(e.cast<String, dynamic>()),
+    ];
+  }
+
+  static List<DividendRecord> parseDividends(String raw) {
+    final v = jsonDecode(raw);
+    return [
+      for (final e in (v is List ? v : const []))
+        if (e is Map) ?DividendRecord.fromJson(e.cast<String, dynamic>()),
     ];
   }
 
@@ -258,9 +326,53 @@ class PortfolioStore extends ChangeNotifier {
     await _save();
   }
 
-  /// Minden vétel törlése (fióktörléskor, ha a felhasználó ezt is kéri).
+  /// Minden vétel és osztalék törlése (fióktörléskor, ha a felhasználó ezt is kéri).
   Future<void> clear() async {
     _lots.clear();
+    _dividends.clear();
+    notifyListeners();
+    await _save();
+  }
+
+  Future<DividendRecord> addDividend({
+    required String symbol,
+    required double amount,
+    required String currency,
+    DateTime? date,
+  }) async {
+    final s = symbol.trim().toUpperCase();
+    final d = DividendRecord(
+      id: '${s}_d${DateTime.now().microsecondsSinceEpoch}',
+      symbol: s,
+      amount: amount,
+      currency: currency.toUpperCase(),
+      date: date,
+    );
+    _dividends.add(d);
+    notifyListeners();
+    await _save();
+    return d;
+  }
+
+  Future<void> removeDividend(String id) async {
+    _dividends.removeWhere((d) => d.id == id);
+    notifyListeners();
+    await _save();
+  }
+
+  /// Egy törölt osztalék visszaállítása (visszavonás), változatlan azonosítóval.
+  Future<void> restoreDividend(DividendRecord d) async {
+    if (_dividends.any((x) => x.id == d.id)) return;
+    _dividends.add(d);
+    notifyListeners();
+    await _save();
+  }
+
+  /// Az összes osztalék cseréje (szinkronkor a fiók adataira).
+  Future<void> replaceAllDividends(List<DividendRecord> dividends) async {
+    _dividends
+      ..clear()
+      ..addAll(dividends);
     notifyListeners();
     await _save();
   }
@@ -283,6 +395,7 @@ class PortfolioStore extends ChangeNotifier {
     try {
       final prefs = await SharedPreferences.getInstance();
       await prefs.setString(_key, jsonEncode(_lots.map((l) => l.toJson()).toList()));
+      await prefs.setString(_dividendsKey, jsonEncode(_dividends.map((d) => d.toJson()).toList()));
     } catch (_) {
       // A tárolás hibája nem akadályozza a működést.
     }

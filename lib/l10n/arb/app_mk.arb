@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Нема актуелна цена за {symbols}.",
   "eventsRecentResults": "Неодамна објавени резултати",
   "saveToNotes": "Зачувај во моите белешки",
-  "savedToNotes": "Зачувано во вашите белешки"
+  "savedToNotes": "Зачувано во вашите белешки",
+  "portfolioDividendsReceived": "Примени дивиденди",
+  "portfolioDividendsThisYear": "Оваа година",
+  "portfolioDividendsAllTime": "Вкупно досега",
+  "portfolioAddDividend": "Додај дивиденда",
+  "portfolioDividendAmount": "Примен износ ({currency})",
+  "portfolioDividendDate": "Датум на исплата",
+  "portfolioDividendsEmpty": "Сè уште нема евидентирани дивиденди. Додајте ги рачно или увезете го извозот од вашиот брокер – се преземаат и редовите со дивиденди.",
+  "portfolioDividendsImported": "{count, plural, =1{Додадена е 1 дивиденда} other{Додадени се {count} дивиденди}}",
+  "portfolioExportDividends": "Извези дивиденди (CSV)",
+  "portfolioDividendDeleted": "Дивидендата е избришана",
+  "portfolioDividendsHint": "Износите се како што пристигнале на вашата сметка, во валутата на исплата; збировите се конвертираат по денешниот курс. За даночната пријава користете го извештајот од вашиот брокер."
 }

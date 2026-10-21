@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "ለ{symbols} የአሁኑ ዋጋ የለም።",
   "eventsRecentResults": "በቅርቡ የተዘገቡ ውጤቶች",
   "saveToNotes": "ወደ ማስታወሻዎቼ አስቀምጥ",
-  "savedToNotes": "በማስታወሻዎችዎ ተቀምጧል"
+  "savedToNotes": "በማስታወሻዎችዎ ተቀምጧል",
+  "portfolioDividendsReceived": "የተቀበሉት የትርፍ ድርሻዎች",
+  "portfolioDividendsThisYear": "በዚህ ዓመት",
+  "portfolioDividendsAllTime": "ሁሉም ጊዜ",
+  "portfolioAddDividend": "የትርፍ ድርሻ ያክሉ",
+  "portfolioDividendAmount": "የተቀበሉት መጠን ({currency})",
+  "portfolioDividendDate": "የክፍያ ቀን",
+  "portfolioDividendsEmpty": "እስካሁን የተመዘገበ የትርፍ ድርሻ የለም። በእጅ ያክሉ፣ ወይም የደላላዎን ወጪ ፋይል ያስመጡ – የትርፍ ድርሻ ረድፎቹም ይወሰዳሉ።",
+  "portfolioDividendsImported": "{count, plural, =1{1 የትርፍ ድርሻ ታክሏል} other{{count} የትርፍ ድርሻዎች ታክለዋል}}",
+  "portfolioExportDividends": "የትርፍ ድርሻዎችን ላክ (CSV)",
+  "portfolioDividendDeleted": "የትርፍ ድርሻ ተሰርዟል",
+  "portfolioDividendsHint": "መጠኖቹ በመለያዎ ላይ እንደደረሱ፣ በክፍያው ምንዛሬ ናቸው፤ ድምሮች በዛሬው ዋጋ ይቀየራሉ። ለግብር መግለጫዎ የደላላዎን መግለጫ ይጠቀሙ።"
 }

@@ -84,6 +84,14 @@ class PositionCard extends StatelessWidget {
                   value: fmt.money(pos.realizedGain, ccy, withSign: true),
                   color: gainColor(p, pos.realizedGain),
                 ),
+              // A kapott osztalékok a pozíció pénznemében (a más pénznemű tételek nélkül).
+              if (services.portfolio.dividendsOf(pos.symbol).where((d) => d.currency == ccy) case final ds
+                  when ds.isNotEmpty)
+                _Figure(
+                  key: const ValueKey('position-dividends'),
+                  label: l10n.portfolioDividendsReceived,
+                  value: fmt.money(ds.fold<double>(0, (sum, d) => sum + d.amount), ccy),
+                ),
             ],
           ),
         );

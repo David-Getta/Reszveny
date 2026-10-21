@@ -2577,4 +2577,49 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Qillqasqaykikunaman waqaychasqa';
+
+  @override
+  String get portfolioDividendsReceived => 'Chaskisqa dividendokuna';
+
+  @override
+  String get portfolioDividendsThisYear => 'Kay wata';
+
+  @override
+  String get portfolioDividendsAllTime => 'Tukuy pacha';
+
+  @override
+  String get portfolioAddDividend => 'Dividendota yapay';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Chaskisqa qullqi ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Pagana p\'unchaw';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Manaraq ima dividendopas qillqasqachu. Makiwan yapay, utaq brokerniykipa exportninta apamuy – chaypi dividendo siq\'ikunapas hap\'isqa kanku.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dividendokuna yapasqa',
+      one: '1 dividendo yapasqa',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Dividendokunata lluqsichiy (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividendo qulluchisqa';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Qullqikuna imaynam cuentaykiman chayamurqan hina, pagana qullqipi; tukuy yupaykuna kunan p\'unchaw chaninwan tikrasqa. Impuesto willakuyniykipaq, brokerniykipa willakuyninta llamk\'achiy.';
 }

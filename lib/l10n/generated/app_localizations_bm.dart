@@ -2559,4 +2559,49 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get savedToNotes => 'A marala i ka sɛbɛnniw la';
+
+  @override
+  String get portfolioDividendsReceived => 'Dividandi sɔrɔlenw';
+
+  @override
+  String get portfolioDividendsThisYear => 'Ɲinan san';
+
+  @override
+  String get portfolioDividendsAllTime => 'Waati bɛɛ';
+
+  @override
+  String get portfolioAddDividend => 'Dividandi dɔ fara a kan';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Wari sɔrɔlen ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Sarali don';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Dividandi si ma sɛbɛn fɔlɔ. Aw k\'a sɛbɛn ni bolo ye, walima ka aw ka broker ka export fayili lase – a dividandi sɛbɛnsiraw fana bɛ ta.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Dividandi $count farala a kan',
+      one: 'Dividandi 1 farala a kan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Dividandiw labɔ (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividandi bɔra';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Wari hakɛw i n\'a fɔ u sera aw ka jate kan cogo min na, sarali wari la; jatebɔ bɛɛ bɛ yɛlɛma ni bi sɔngɔ ye. Aw ka nisɔngɔ sɛbɛn kama, aw ka broker ka sɛbɛn de bɛ baara kɛ ni a ye.';
 }

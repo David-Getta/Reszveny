@@ -2561,4 +2561,49 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Wɔakora wɔ wo nkyerɛwee mu';
+
+  @override
+  String get portfolioDividendsReceived => 'Dividend a woanya';
+
+  @override
+  String get portfolioDividendsThisYear => 'Afe yi';
+
+  @override
+  String get portfolioDividendsAllTime => 'Bere nyinaa';
+
+  @override
+  String get portfolioAddDividend => 'Fa dividend ka ho';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Sika a woanya ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Da a wɔtuaa';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Wɔnkyerɛw dividend biara nnya. Fa wo nsa kyerɛw, anaa fa wo broker export no bra – ɛfa dividend nkyerɛwee no nso.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Wɔde dividend $count aka ho',
+      one: 'Wɔde dividend 1 aka ho',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Fa dividend kɔ (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Wɔayi dividend no afi hɔ';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Sika dodow sɛnea ɛbaa wo akontaabu so, wɔ sika a wɔde tuaa mu; wɔde nnɛ bo na ɛsesa nea aboaboa ano no. Fa wo broker nkrataa di dwuma ma wo tow.';
 }

@@ -2554,4 +2554,49 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get savedToNotes => 'توهان جي نوٽس ۾ محفوظ ٿيو';
+
+  @override
+  String get portfolioDividendsReceived => 'وصول ٿيل ڊيويڊنڊ';
+
+  @override
+  String get portfolioDividendsThisYear => 'هن سال';
+
+  @override
+  String get portfolioDividendsAllTime => 'هيستائين ڪل';
+
+  @override
+  String get portfolioAddDividend => 'ڊيويڊنڊ شامل ڪريو';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'وصول ٿيل رقم ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'ادائگي جي تاريخ';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'اڃا ڪو ڊيويڊنڊ رڪارڊ نه ٿيو آهي. هٿ سان شامل ڪريو، يا پنهنجي بروڪر جي ايڪسپورٽ فائل امپورٽ ڪريو – ان جون ڊيويڊنڊ قطارون به ورتيون وينديون.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ڊيويڊنڊ شامل ٿيا',
+      one: '1 ڊيويڊنڊ شامل ٿيو',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'ڊيويڊنڊ ايڪسپورٽ ڪريو (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'ڊيويڊنڊ ڊاهيو ويو';
+
+  @override
+  String get portfolioDividendsHint =>
+      'رقمون جيئن توهان جي اڪائونٽ ۾ آيون، ادائگي جي ڪرنسي ۾؛ ڪل رقمون اڄ جي اگهه تي تبديل ڪيون وڃن ٿيون. ٽيڪس ريٽرن لاءِ پنهنجي بروڪر جو اسٽيٽمينٽ استعمال ڪريو.';
 }

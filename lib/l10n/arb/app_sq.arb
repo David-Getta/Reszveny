@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Nuk ka çmim aktual për {symbols}.",
   "eventsRecentResults": "Rezultatet e fundit",
   "saveToNotes": "Ruaj te shënimet e mia",
-  "savedToNotes": "U ruajt te shënimet tuaja"
+  "savedToNotes": "U ruajt te shënimet tuaja",
+  "portfolioDividendsReceived": "Dividendë të marrë",
+  "portfolioDividendsThisYear": "Këtë vit",
+  "portfolioDividendsAllTime": "Gjithsej",
+  "portfolioAddDividend": "Shto dividend",
+  "portfolioDividendAmount": "Shuma e marrë ({currency})",
+  "portfolioDividendDate": "Data e pagesës",
+  "portfolioDividendsEmpty": "Ende nuk ka dividendë të regjistruar. Shtojini me dorë ose importoni eksportin e brokerit tuaj – rreshtat e dividendëve merren gjithashtu.",
+  "portfolioDividendsImported": "{count, plural, =1{U shtua 1 dividend} other{U shtuan {count} dividendë}}",
+  "portfolioExportDividends": "Eksporto dividendët (CSV)",
+  "portfolioDividendDeleted": "Dividendi u fshi",
+  "portfolioDividendsHint": "Shumat ashtu si mbërritën në llogarinë tuaj, në monedhën e pagesës; totalet konvertohen me kursin e sotëm. Për deklaratën tatimore përdorni pasqyrën e brokerit tuaj."
 }

@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "{symbols} uchun joriy narx yoʻq.",
   "eventsRecentResults": "Yaqinda eʼlon qilingan natijalar",
   "saveToNotes": "Qaydlarimga saqlash",
-  "savedToNotes": "Qaydlaringizga saqlandi"
+  "savedToNotes": "Qaydlaringizga saqlandi",
+  "portfolioDividendsReceived": "Olingan dividendlar",
+  "portfolioDividendsThisYear": "Shu yil",
+  "portfolioDividendsAllTime": "Jami",
+  "portfolioAddDividend": "Dividend qoʻshish",
+  "portfolioDividendAmount": "Olingan summa ({currency})",
+  "portfolioDividendDate": "Toʻlov sanasi",
+  "portfolioDividendsEmpty": "Hali dividendlar yozilmagan. Ularni qoʻlda qoʻshing yoki brokeringiz eksportini import qiling – undagi dividend qatorlari ham olinadi.",
+  "portfolioDividendsImported": "{count, plural, =1{1 dividend qoʻshildi} other{{count} dividend qoʻshildi}}",
+  "portfolioExportDividends": "Dividendlarni eksport qilish (CSV)",
+  "portfolioDividendDeleted": "Dividend oʻchirildi",
+  "portfolioDividendsHint": "Summalar hisobingizga kelgan holatda, toʻlov valyutasida; jami bugungi kurs boʻyicha konvertatsiya qilinadi. Soliq deklaratsiyasi uchun brokeringiz hisobotidan foydalaning."
 }

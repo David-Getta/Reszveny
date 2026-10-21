@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Ntalo ya sikoyo ezali te mpo na {symbols}.",
   "eventsRecentResults": "Ba résultats ya sika",
   "saveToNotes": "Bomba na ba note na ngai",
-  "savedToNotes": "Ebombami na ba note na yo"
+  "savedToNotes": "Ebombami na ba note na yo",
+  "portfolioDividendsReceived": "Ba dividende oyo ozwaki",
+  "portfolioDividendsThisYear": "Mbula oyo",
+  "portfolioDividendsAllTime": "Ntango nyonso",
+  "portfolioAddDividend": "Bakisa dividende",
+  "portfolioDividendAmount": "Mbongo oyo ozwaki ({currency})",
+  "portfolioDividendDate": "Mokolo ya kofuta",
+  "portfolioDividendsEmpty": "Dividende moko te ekomami naino. Bakisa yango na maboko, to kotisa export ya broker na yo – ba ligne na yango ya dividende ekozwama mpe.",
+  "portfolioDividendsImported": "{count, plural, =1{Dividende 1 ebakisami} other{Ba dividende {count} ebakisami}}",
+  "portfolioExportDividends": "Bimisa ba dividende (CSV)",
+  "portfolioDividendDeleted": "Dividende elongolami",
+  "portfolioDividendsHint": "Mbongo ndenge ekómaki na compte na yo, na mbongo ya kofuta; ba total ebongwanaka na ntalo ya lelo. Mpo na déclaration ya mpako na yo, salela relevé ya broker na yo."
 }

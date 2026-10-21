@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Ingen aktuell kurs för {symbols}.",
   "eventsRecentResults": "Senaste kvartalsrapporter",
   "saveToNotes": "Spara i mina anteckningar",
-  "savedToNotes": "Sparat i dina anteckningar"
+  "savedToNotes": "Sparat i dina anteckningar",
+  "portfolioDividendsReceived": "Mottagna utdelningar",
+  "portfolioDividendsThisYear": "I år",
+  "portfolioDividendsAllTime": "Totalt",
+  "portfolioAddDividend": "Lägg till utdelning",
+  "portfolioDividendAmount": "Mottaget belopp ({currency})",
+  "portfolioDividendDate": "Utbetalningsdatum",
+  "portfolioDividendsEmpty": "Inga utdelningar registrerade ännu. Lägg till dem manuellt eller importera exporten från din mäklare – utdelningsraderna läses också in.",
+  "portfolioDividendsImported": "{count, plural, =1{1 utdelning tillagd} other{{count} utdelningar tillagda}}",
+  "portfolioExportDividends": "Exportera utdelningar (CSV)",
+  "portfolioDividendDeleted": "Utdelning borttagen",
+  "portfolioDividendsHint": "Beloppen som de kom in på ditt konto, i utbetalningsvalutan; summor räknas om till dagens kurs. Använd mäklarens kontrolluppgifter till deklarationen."
 }

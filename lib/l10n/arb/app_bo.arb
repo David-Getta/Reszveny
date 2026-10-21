@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "{symbols} ལ་ད་ལྟའི་གོང་ཚད་མེད།",
   "eventsRecentResults": "ཉེ་ཆར་སྙན་ཞུ་བྱས་པའི་གྲུབ་འབྲས",
   "saveToNotes": "ངའི་ཟིན་ཐོར་ཉར་ཚགས།",
-  "savedToNotes": "ཁྱེད་ཀྱི་ཟིན་ཐོར་ཉར་ཟིན།"
+  "savedToNotes": "ཁྱེད་ཀྱི་ཟིན་ཐོར་ཉར་ཟིན།",
+  "portfolioDividendsReceived": "ཐོབ་པའི་ཁེ་བགོས།",
+  "portfolioDividendsThisYear": "ད་ལོ།",
+  "portfolioDividendsAllTime": "དུས་ཡུན་ཡོངས།",
+  "portfolioAddDividend": "ཁེ་བགོས་ཁ་སྣོན།",
+  "portfolioDividendAmount": "ཐོབ་པའི་དངུལ་འབོར། ({currency})",
+  "portfolioDividendDate": "སྤྲོད་པའི་ཚེས་གྲངས།",
+  "portfolioDividendsEmpty": "ད་དུང་ཁེ་བགོས་གང་ཡང་ཐོ་འགོད་བྱས་མེད། ལག་ཐོག་ནས་ཁ་སྣོན་བྱོས། ཡང་ན་ཁྱེད་ཀྱི་ཚོང་བར་གྱི་ཕྱིར་གཏོང་ཡིག་ཆ་ནང་འདྲེན་བྱོས། དེའི་ཁེ་བགོས་ཐིག་ཕྲེང་ཡང་ལེན་གི་ཡོད།",
+  "portfolioDividendsImported": "{count, plural, =1{ཁེ་བགོས་ 1 ཁ་སྣོན་བྱས།} other{ཁེ་བགོས་ {count} ཁ་སྣོན་བྱས།}}",
+  "portfolioExportDividends": "ཁེ་བགོས་ཕྱིར་གཏོང། (CSV)",
+  "portfolioDividendDeleted": "ཁེ་བགོས་བསུབས་ཟིན།",
+  "portfolioDividendsHint": "དངུལ་འབོར་ནི་ཁྱེད་ཀྱི་རྩིས་ཁྲར་འབྱོར་བ་ལྟར་སྤྲོད་དངུལ་གྱི་དངུལ་ལུགས་ཐོག་ཡིན། བསྡོམས་འབོར་དེ་རིང་གི་བརྗེ་ཚད་ལྟར་བསྒྱུར་ཡོད། ཁྱེད་ཀྱི་ཁྲལ་ཐོ་ཆེད་ཚོང་བར་གྱི་རྩིས་ཐོ་བེད་སྤྱོད་གནང་རོགས།"
 }

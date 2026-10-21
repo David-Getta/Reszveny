@@ -2573,4 +2573,49 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Igciniwe kumanqaku akho';
+
+  @override
+  String get portfolioDividendsReceived => 'Izahlulo ezifunyenweyo';
+
+  @override
+  String get portfolioDividendsThisYear => 'Kulo nyaka';
+
+  @override
+  String get portfolioDividendsAllTime => 'Lonke ixesha';
+
+  @override
+  String get portfolioAddDividend => 'Yongeza isahlulo';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Imali efunyenweyo ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Umhla wentlawulo';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Akukho zahlulo zirekhodiweyo okwangoku. Zongeze ngesandla, okanye ungenise ifayile ye-export yebroker yakho – nemigca yayo yezahlulo iyathathwa.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Izahlulo ezi-$count zongeziwe',
+      one: 'Isahlulo esi-1 songeziwe',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Khupha izahlulo (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Isahlulo sicinyiwe';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Izixa njengoko zifike kwiakhawunti yakho, ngemali yentlawulo; amanani apheleleyo aguqulelwa ngexabiso lanamhlanje. Kwingxelo yakho yerhafu, sebenzisa ingxelo yebroker yakho.';
 }

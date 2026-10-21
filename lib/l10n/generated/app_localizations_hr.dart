@@ -2606,4 +2606,50 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Spremljeno u vaše bilješke';
+
+  @override
+  String get portfolioDividendsReceived => 'Primljene dividende';
+
+  @override
+  String get portfolioDividendsThisYear => 'Ove godine';
+
+  @override
+  String get portfolioDividendsAllTime => 'Od početka';
+
+  @override
+  String get portfolioAddDividend => 'Dodaj dividendu';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Primljeni iznos ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Datum isplate';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Još nema zabilježenih dividendi. Dodajte ih ručno ili uvezite izvoz svog brokera – preuzimaju se i njegovi redovi s dividendama.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Dodano $count dividendi',
+      few: 'Dodane $count dividende',
+      one: 'Dodana $count dividenda',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Izvezi dividende (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividenda izbrisana';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Iznosi onakvi kakvi su stigli na vaš račun, u valuti isplate; ukupni iznosi preračunavaju se po današnjem tečaju. Za poreznu prijavu koristite izvadak svog brokera.';
 }

@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Ka kuena ntalu ya bubu ya {symbols} ko.",
   "eventsRecentResults": "Ba résultats ya mpa",
   "saveToNotes": "Bumba na ba note na mono",
-  "savedToNotes": "Yo me bumbama na ba note na nge"
+  "savedToNotes": "Yo me bumbama na ba note na nge",
+  "portfolioDividendsReceived": "Ba dividende ya nge bakaka",
+  "portfolioDividendsThisYear": "Mvula yai",
+  "portfolioDividendsAllTime": "Ntangu yonso",
+  "portfolioAddDividend": "Yika dividende",
+  "portfolioDividendAmount": "Mbongo ya nge bakaka ({currency})",
+  "portfolioDividendDate": "Kilumbu ya kufuta",
+  "portfolioDividendsEmpty": "Ata dividende mosi ve me sonikwa ntete. Yika yo na maboko, to kotisa export ya broker na nge – ba ligne ya dividende na yo mpi ke bakama.",
+  "portfolioDividendsImported": "{count, plural, =1{Dividende 1 me yikama} other{Ba dividende {count} me yikama}}",
+  "portfolioExportDividends": "Basisa ba dividende (CSV)",
+  "portfolioDividendDeleted": "Dividende me katulwa",
+  "portfolioDividendsHint": "Mbongo mutindu yo kwisaka na konti na nge, na mbongo ya kufuta; ba total ke balulwa na ntalu ya bubu. Sambu na mukanda na nge ya mpaku, sadila mukanda ya broker na nge."
 }

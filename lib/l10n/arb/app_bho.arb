@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "{symbols} खातिर अबही के दाम उपलब्ध नइखे।",
   "eventsRecentResults": "हाले के घोषित नतीजा",
   "saveToNotes": "हमार नोट में सेव करीं",
-  "savedToNotes": "रउआ के नोट में सेव हो गइल"
+  "savedToNotes": "रउआ के नोट में सेव हो गइल",
+  "portfolioDividendsReceived": "मिलल डिविडेंड",
+  "portfolioDividendsThisYear": "ए साल",
+  "portfolioDividendsAllTime": "अब तक ले",
+  "portfolioAddDividend": "डिविडेंड जोड़ीं",
+  "portfolioDividendAmount": "मिलल रकम ({currency})",
+  "portfolioDividendDate": "भुगतान के तारीख",
+  "portfolioDividendsEmpty": "अबहीं ले कवनो डिविडेंड दर्ज नइखे। हाथ से जोड़ीं, भा आपन ब्रोकर के एक्सपोर्ट इम्पोर्ट करीं – ओकर डिविडेंड वाला पंक्ति भी ले लिहल जाला।",
+  "portfolioDividendsImported": "{count, plural, =1{1 डिविडेंड जोड़ल गइल} other{{count} डिविडेंड जोड़ल गइल}}",
+  "portfolioExportDividends": "डिविडेंड एक्सपोर्ट करीं (CSV)",
+  "portfolioDividendDeleted": "डिविडेंड हटावल गइल",
+  "portfolioDividendsHint": "रकम ओइसहीं जइसे रउआ खाता में आइल, भुगतान के मुद्रा में; कुल आज के दर पर बदलल जाला। टैक्स रिटर्न खातिर आपन ब्रोकर के स्टेटमेंट के इस्तेमाल करीं।"
 }

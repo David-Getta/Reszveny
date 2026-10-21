@@ -735,6 +735,27 @@ void main() {
     await _shot(tester, 'portfolio_targets_phone_hu');
   });
 
+  testWidgets('dividends received on a phone (hungarian)', (tester) async {
+    final portfolio = _samplePortfolio();
+    await portfolio.addDividend(symbol: 'AAPL', amount: 4.68, currency: 'USD', date: DateTime(2026, 8, 14));
+    await portfolio.addDividend(symbol: 'MSFT', amount: 3.64, currency: 'USD', date: DateTime(2026, 9, 11));
+    await portfolio.addDividend(symbol: 'OTP', amount: 58800, currency: 'HUF', date: DateTime(2026, 6, 2));
+    await portfolio.addDividend(symbol: 'AAPL', amount: 4.32, currency: 'USD', date: DateTime(2026, 5, 15));
+    await portfolio.addDividend(symbol: 'NVDA', amount: 0.2, currency: 'USD', date: DateTime(2026, 6, 26));
+    final s = _services(locale: const Locale('hu'), portfolio: portfolio, currency: 'HUF');
+    await pumpApp(tester, s, const Size(430, 1000));
+    await tester.tap(find.text('Portfólió').last);
+    await tester.pumpAndSettle();
+    final card = find.byKey(const ValueKey('portfolio-dividends-received'));
+    for (var i = 0; i < 30 && card.evaluate().isEmpty; i++) {
+      await tester.drag(find.byType(Scrollable).first, const Offset(0, -300));
+      await tester.pumpAndSettle();
+    }
+    await tester.ensureVisible(card);
+    await tester.pumpAndSettle();
+    await _shot(tester, 'portfolio_dividends_phone_hu');
+  });
+
   testWidgets('selling shares on a phone (hungarian)', (tester) async {
     final portfolio = _samplePortfolio();
     await portfolio.add(

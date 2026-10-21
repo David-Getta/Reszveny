@@ -2563,4 +2563,49 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Жазбаларыңызға сақталды';
+
+  @override
+  String get portfolioDividendsReceived => 'Алынған дивидендтер';
+
+  @override
+  String get portfolioDividendsThisYear => 'Биыл';
+
+  @override
+  String get portfolioDividendsAllTime => 'Барлық уақыт';
+
+  @override
+  String get portfolioAddDividend => 'Дивиденд қосу';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Алынған сома ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Төлем күні';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Дивидендтер әлі жазылмаған. Қолмен қосыңыз немесе брокеріңіздің экспортын импорттаңыз – ондағы дивиденд жолдары да алынады.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count дивиденд қосылды',
+      one: '1 дивиденд қосылды',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Дивидендтерді экспорттау (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Дивиденд жойылды';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Сомалар шотыңызға келген күйінде, төлем валютасында; жиындар бүгінгі бағам бойынша айырбасталады. Салық декларациясы үшін брокеріңіздің үзінді көшірмесін пайдаланыңыз.';
 }

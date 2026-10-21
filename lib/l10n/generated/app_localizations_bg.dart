@@ -2563,4 +2563,49 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Запазено в бележките ви';
+
+  @override
+  String get portfolioDividendsReceived => 'Получени дивиденти';
+
+  @override
+  String get portfolioDividendsThisYear => 'Тази година';
+
+  @override
+  String get portfolioDividendsAllTime => 'За целия период';
+
+  @override
+  String get portfolioAddDividend => 'Добавяне на дивидент';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Получена сума ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Дата на плащане';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Още няма записани дивиденти. Добавете ги ръчно или импортирайте експорта от вашия брокер – редовете с дивиденти също се разпознават.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Добавени са $count дивидента',
+      one: 'Добавен е 1 дивидент',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Експортиране на дивиденти (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Дивидентът е изтрит';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Сумите са такива, каквито са постъпили по сметката ви, във валутата на изплащане; общите суми се преизчисляват по днешния курс. За данъчната декларация използвайте извлечението от брокера си.';
 }

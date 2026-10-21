@@ -2571,4 +2571,49 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Kulondolozwe kumanothi akho';
+
+  @override
+  String get portfolioDividendsReceived => 'Izabelo zenzuzo ezitholiwe';
+
+  @override
+  String get portfolioDividendsThisYear => 'Kulo nyaka';
+
+  @override
+  String get portfolioDividendsAllTime => 'Sonke isikhathi';
+
+  @override
+  String get portfolioAddDividend => 'Engeza isabelo senzuzo';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Imali etholiwe ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Usuku lokukhokha';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Azikho izabelo zenzuzo ezirekhodiwe okwamanje. Zengeze ngesandla, noma ungenise ifayela le-export le-broker yakho – imigqa yalo yezabelo zenzuzo nayo iyathathwa.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Izabelo zenzuzo ezi-$count zengeziwe',
+      one: 'Isabelo senzuzo esi-1 sengeziwe',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Khipha izabelo zenzuzo (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Isabelo senzuzo sisusiwe';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Amanani njengoba efike ku-akhawunti yakho, ngemali yokukhokha; amanani aphelele aguqulwa ngesilinganiso sanamuhla. Kwimbuyiselo yentela yakho, sebenzisa isitatimende se-broker yakho.';
 }

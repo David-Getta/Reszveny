@@ -2555,4 +2555,49 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Đã lưu vào ghi chú của bạn';
+
+  @override
+  String get portfolioDividendsReceived => 'Cổ tức đã nhận';
+
+  @override
+  String get portfolioDividendsThisYear => 'Năm nay';
+
+  @override
+  String get portfolioDividendsAllTime => 'Tổng cộng';
+
+  @override
+  String get portfolioAddDividend => 'Thêm cổ tức';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Số tiền đã nhận ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Ngày chi trả';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Chưa có cổ tức nào được ghi lại. Thêm thủ công hoặc nhập file xuất từ công ty chứng khoán của bạn – các dòng cổ tức trong đó cũng được nhận diện.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Đã thêm $count khoản cổ tức',
+      one: 'Đã thêm 1 khoản cổ tức',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Xuất cổ tức (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Đã xóa cổ tức';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Số tiền đúng như đã về tài khoản của bạn, theo đồng tiền chi trả; tổng được quy đổi theo tỷ giá hôm nay. Khi kê khai thuế, hãy dùng sao kê của công ty chứng khoán.';
 }

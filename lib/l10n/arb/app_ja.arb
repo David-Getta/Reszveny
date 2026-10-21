@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "{symbols}の現在の株価はありません。",
   "eventsRecentResults": "最近の決算",
   "saveToNotes": "自分のメモに保存",
-  "savedToNotes": "メモに保存しました"
+  "savedToNotes": "メモに保存しました",
+  "portfolioDividendsReceived": "受取配当金",
+  "portfolioDividendsThisYear": "今年",
+  "portfolioDividendsAllTime": "累計",
+  "portfolioAddDividend": "配当を追加",
+  "portfolioDividendAmount": "受取金額（{currency}）",
+  "portfolioDividendDate": "支払日",
+  "portfolioDividendsEmpty": "配当はまだ記録されていません。手動で追加するか、証券会社のエクスポートをインポートしてください。配当の行も取り込まれます。",
+  "portfolioDividendsImported": "{count, plural, =1{配当1件を追加しました} other{配当{count}件を追加しました}}",
+  "portfolioExportDividends": "配当をエクスポート（CSV）",
+  "portfolioDividendDeleted": "配当を削除しました",
+  "portfolioDividendsHint": "金額は口座に入金されたとおりの支払通貨で表示し、合計は本日のレートで換算しています。確定申告には証券会社の報告書をご利用ください。"
 }

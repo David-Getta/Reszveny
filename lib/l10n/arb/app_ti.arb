@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "ን{symbols} ህሉው ዋጋ የለን።",
   "eventsRecentResults": "ኣብ ቀረባ እዋን ዝተሓበረ ውጽኢት",
   "saveToNotes": "ናብ ማስታወሻታተይ ኣቐምጥ",
-  "savedToNotes": "ኣብ ማስታወሻታትኩም ተቐሚጡ"
+  "savedToNotes": "ኣብ ማስታወሻታትኩም ተቐሚጡ",
+  "portfolioDividendsReceived": "ዝተቐበልካዮም ድቪደንድታት",
+  "portfolioDividendsThisYear": "ሎሚ ዓመት",
+  "portfolioDividendsAllTime": "ኩሉ ግዜ",
+  "portfolioAddDividend": "ድቪደንድ ወስኽ",
+  "portfolioDividendAmount": "ዝተቐበልካዮ መጠን ({currency})",
+  "portfolioDividendDate": "ዕለት ክፍሊት",
+  "portfolioDividendsEmpty": "ክሳብ ሕጂ ዝተመዝገበ ድቪደንድ የለን። ብኢድካ ወስኾም፣ ወይ ናይ ብሮከርካ ኤክስፖርት ኣእቱ – ናይ ድቪደንድ መስመራቱ እውን ይውሰዱ።",
+  "portfolioDividendsImported": "{count, plural, =1{1 ድቪደንድ ተወሲኹ} other{{count} ድቪደንድታት ተወሲኾም}}",
+  "portfolioExportDividends": "ድቪደንድታት ኤክስፖርት ግበር (CSV)",
+  "portfolioDividendDeleted": "ድቪደንድ ተሰሪዙ",
+  "portfolioDividendsHint": "መጠናት ከምቲ ኣብ ሕሳብካ ዝበጽሐ፣ ብባጤራ ክፍሊት፤ ድምር ብናይ ሎሚ ሸርፊ ይቀየር። ንመግለጺ ግብሪኻ፣ ናይ ብሮከርካ መግለጺ ተጠቐም።"
 }

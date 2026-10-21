@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "{symbols} өчен агымдагы бәя юк.",
   "eventsRecentResults": "Күптән түгел игълан ителгән нәтиҗәләр",
   "saveToNotes": "Язмаларыма саклау",
-  "savedToNotes": "Язмаларыгызга сакланды"
+  "savedToNotes": "Язмаларыгызга сакланды",
+  "portfolioDividendsReceived": "Алынган дивидендлар",
+  "portfolioDividendsThisYear": "Бу ел",
+  "portfolioDividendsAllTime": "Барлыгы",
+  "portfolioAddDividend": "Дивиденд өстәргә",
+  "portfolioDividendAmount": "Алынган сумма ({currency})",
+  "portfolioDividendDate": "Түләү датасы",
+  "portfolioDividendsEmpty": "Дивидендлар әлегә язылмаган. Аларны кул белән өстәгез яки брокерыгызның экспортын импортлагыз – аның дивиденд юллары да алына.",
+  "portfolioDividendsImported": "{count, plural, =1{1 дивиденд өстәлде} other{{count} дивиденд өстәлде}}",
+  "portfolioExportDividends": "Дивидендларны экспортлау (CSV)",
+  "portfolioDividendDeleted": "Дивиденд бетерелде",
+  "portfolioDividendsHint": "Суммалар хисабыгызга килгәнчә, түләү валютасында; җәмгылар бүгенге курс буенча күчерелә. Салым декларациясе өчен брокерыгызның хисабын кулланыгыз."
 }

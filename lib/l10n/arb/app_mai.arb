@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "{symbols} लेल वर्तमान दाम उपलब्ध नहि अछि।",
   "eventsRecentResults": "हालहि रिपोर्ट कएल गेल परिणाम",
   "saveToNotes": "हमर नोटमे सेव करू",
-  "savedToNotes": "अहाँक नोटमे सेव भऽ गेल"
+  "savedToNotes": "अहाँक नोटमे सेव भऽ गेल",
+  "portfolioDividendsReceived": "प्राप्त डिविडेंड",
+  "portfolioDividendsThisYear": "एहि साल",
+  "portfolioDividendsAllTime": "आइ धरि",
+  "portfolioAddDividend": "डिविडेंड जोड़ू",
+  "portfolioDividendAmount": "प्राप्त राशि ({currency})",
+  "portfolioDividendDate": "भुगतानक तारीख",
+  "portfolioDividendsEmpty": "एखन धरि कोनो डिविडेंड दर्ज नहि अछि। हाथसँ जोड़ू, वा अपन ब्रोकरक एक्सपोर्ट इम्पोर्ट करू – ओकर डिविडेंड पंक्ति सेहो लेल जाइत अछि।",
+  "portfolioDividendsImported": "{count, plural, =1{1 डिविडेंड जोड़ल गेल} other{{count} डिविडेंड जोड़ल गेल}}",
+  "portfolioExportDividends": "डिविडेंड एक्सपोर्ट करू (CSV)",
+  "portfolioDividendDeleted": "डिविडेंड हटाओल गेल",
+  "portfolioDividendsHint": "राशि जेना अहाँक खातामे आएल, भुगतानक मुद्रामे; कुल आइक दर पर बदलल जाइत अछि। टैक्स रिटर्नक लेल अपन ब्रोकरक स्टेटमेंट प्रयोग करू।"
 }

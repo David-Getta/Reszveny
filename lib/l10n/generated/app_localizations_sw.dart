@@ -2563,4 +2563,49 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Imehifadhiwa kwenye madokezo yako';
+
+  @override
+  String get portfolioDividendsReceived => 'Gawio lililopokelewa';
+
+  @override
+  String get portfolioDividendsThisYear => 'Mwaka huu';
+
+  @override
+  String get portfolioDividendsAllTime => 'Jumla ya muda wote';
+
+  @override
+  String get portfolioAddDividend => 'Ongeza gawio';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Kiasi kilichopokelewa ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Tarehe ya malipo';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Hakuna gawio lililorekodiwa bado. Liongeze kwa mkono, au leta faili la broker wako – safu zake za gawio pia zitachukuliwa.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Magawio $count yameongezwa',
+      one: 'Gawio 1 limeongezwa',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Hamisha magawio (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Gawio limefutwa';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Kiasi kama kilivyoingia kwenye akaunti yako, katika sarafu ya malipo; jumla hubadilishwa kwa kiwango cha leo. Kwa marejesho ya kodi, tumia taarifa ya broker wako.';
 }

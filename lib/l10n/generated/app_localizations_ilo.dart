@@ -2581,4 +2581,49 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Nai-save kadagiti notam';
+
+  @override
+  String get portfolioDividendsReceived => 'Naawat a dibidendo';
+
+  @override
+  String get portfolioDividendsThisYear => 'Daytoy a tawen';
+
+  @override
+  String get portfolioDividendsAllTime => 'Amin a panawen';
+
+  @override
+  String get portfolioAddDividend => 'Inayon ti dibidendo';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Kantidad a naawat ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Petsa ti panagbayad';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Awan pay ti nairekord a dibidendo. Inayon dagitoy babaen ti ima, wenno i-import ti export ti broker-mo – maala met dagiti linia ti dibidendo daytoy.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count a dibidendo ti nainayon',
+      one: '1 dibidendo ti nainayon',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'I-export dagiti dibidendo (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Naikkat ti dibidendo';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Dagiti kantidad kas iti isasangpetda iti account-mo, iti currency ti panagbayad; dagiti total ket na-convert iti rate ita. Para iti tax return-mo, usarem ti statement ti broker-mo.';
 }

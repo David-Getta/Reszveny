@@ -2560,4 +2560,49 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get savedToNotes => 'ଆପଣଙ୍କ ନୋଟ୍‌ରେ ସେଭ୍ ହୋଇଛି';
+
+  @override
+  String get portfolioDividendsReceived => 'ପ୍ରାପ୍ତ ଡିଭିଡେଣ୍ଡ';
+
+  @override
+  String get portfolioDividendsThisYear => 'ଏହି ବର୍ଷ';
+
+  @override
+  String get portfolioDividendsAllTime => 'ଏପର୍ୟ୍ୟନ୍ତ ମୋଟ';
+
+  @override
+  String get portfolioAddDividend => 'ଡିଭିଡେଣ୍ଡ ଯୋଡ଼ନ୍ତୁ';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'ପ୍ରାପ୍ତ ରାଶି ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'ଦେୟ ତାରିଖ';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'ଏପର୍ୟ୍ୟନ୍ତ କୌଣସି ଡିଭିଡେଣ୍ଡ ରେକର୍ଡ ହୋଇନାହିଁ। ହାତରେ ଯୋଡ଼ନ୍ତୁ, କିମ୍ବା ଆପଣଙ୍କ ବ୍ରୋକରର ଏକ୍ସପୋର୍ଟ ଇମ୍ପୋର୍ଟ କରନ୍ତୁ – ତାହାର ଡିଭିଡେଣ୍ଡ ଧାଡ଼ିଗୁଡ଼ିକ ମଧ୍ୟ ନିଆଯାଏ।';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ଡିଭିଡେଣ୍ଡ ଯୋଡ଼ା ହେଲା',
+      one: '1 ଡିଭିଡେଣ୍ଡ ଯୋଡ଼ା ହେଲା',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'ଡିଭିଡେଣ୍ଡ ଏକ୍ସପୋର୍ଟ କରନ୍ତୁ (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'ଡିଭିଡେଣ୍ଡ ଡିଲିଟ୍ ହେଲା';
+
+  @override
+  String get portfolioDividendsHint =>
+      'ରାଶି ଆପଣଙ୍କ ଖାତାରେ ଯେପରି ଆସିଲା, ପେଆଉଟ୍ ମୁଦ୍ରାରେ; ମୋଟ ରାଶି ଆଜିର ଦରରେ ରୂପାନ୍ତରିତ ହୁଏ। ଟିକସ ରିଟର୍ଣ୍ଣ ପାଇଁ ଆପଣଙ୍କ ବ୍ରୋକରର ଷ୍ଟେଟମେଣ୍ଟ ବ୍ୟବହାର କରନ୍ତୁ।';
 }

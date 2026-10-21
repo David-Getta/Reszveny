@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Pro {symbols} není k dispozici aktuální cena.",
   "eventsRecentResults": "Nedávno zveřejněné výsledky",
   "saveToNotes": "Uložit do mých poznámek",
-  "savedToNotes": "Uloženo do vašich poznámek"
+  "savedToNotes": "Uloženo do vašich poznámek",
+  "portfolioDividendsReceived": "Přijaté dividendy",
+  "portfolioDividendsThisYear": "Letos",
+  "portfolioDividendsAllTime": "Za celou dobu",
+  "portfolioAddDividend": "Přidat dividendu",
+  "portfolioDividendAmount": "Přijatá částka ({currency})",
+  "portfolioDividendDate": "Datum výplaty",
+  "portfolioDividendsEmpty": "Zatím nejsou zaznamenány žádné dividendy. Přidejte je ručně nebo importujte export od svého brokera – řádky s dividendami se načtou také.",
+  "portfolioDividendsImported": "{count, plural, =1{Přidána 1 dividenda} few{Přidány {count} dividendy} many{Přidáno {count} dividendy} other{Přidáno {count} dividend}}",
+  "portfolioExportDividends": "Exportovat dividendy (CSV)",
+  "portfolioDividendDeleted": "Dividenda smazána",
+  "portfolioDividendsHint": "Částky tak, jak dorazily na váš účet, v měně výplaty; součty jsou převedeny dnešním kurzem. Pro daňové přiznání použijte výpis od svého brokera."
 }

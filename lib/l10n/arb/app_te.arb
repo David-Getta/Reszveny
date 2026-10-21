@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "{symbols} కోసం ప్రస్తుత ధర అందుబాటులో లేదు.",
   "eventsRecentResults": "ఇటీవల ప్రకటించిన ఫలితాలు",
   "saveToNotes": "నా గమనికలలో సేవ్ చేయండి",
-  "savedToNotes": "మీ గమనికలలో సేవ్ అయింది"
+  "savedToNotes": "మీ గమనికలలో సేవ్ అయింది",
+  "portfolioDividendsReceived": "అందుకున్న డివిడెండ్లు",
+  "portfolioDividendsThisYear": "ఈ సంవత్సరం",
+  "portfolioDividendsAllTime": "ఇప్పటివరకు మొత్తం",
+  "portfolioAddDividend": "డివిడెండ్ జోడించండి",
+  "portfolioDividendAmount": "అందుకున్న మొత్తం ({currency})",
+  "portfolioDividendDate": "చెల్లింపు తేదీ",
+  "portfolioDividendsEmpty": "ఇంకా డివిడెండ్లు నమోదు కాలేదు. వాటిని మాన్యువల్‌గా జోడించండి, లేదా మీ బ్రోకర్ ఎక్స్‌పోర్ట్‌ను ఇంపోర్ట్ చేయండి – అందులోని డివిడెండ్ వరుసలు కూడా తీసుకోబడతాయి.",
+  "portfolioDividendsImported": "{count, plural, =1{1 డివిడెండ్ జోడించబడింది} other{{count} డివిడెండ్లు జోడించబడ్డాయి}}",
+  "portfolioExportDividends": "డివిడెండ్లను ఎక్స్‌పోర్ట్ చేయండి (CSV)",
+  "portfolioDividendDeleted": "డివిడెండ్ తొలగించబడింది",
+  "portfolioDividendsHint": "మొత్తాలు మీ ఖాతాలోకి వచ్చినట్లుగా, చెల్లింపు కరెన్సీలో; మొత్తం విలువలు నేటి రేటుతో మార్చబడతాయి. పన్ను రిటర్న్ కోసం మీ బ్రోకర్ స్టేట్‌మెంట్ ఉపయోగించండి."
 }

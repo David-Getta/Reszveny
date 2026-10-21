@@ -2564,4 +2564,49 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Дар қайдҳои шумо нигоҳ дошта шуд';
+
+  @override
+  String get portfolioDividendsReceived => 'Дивидендҳои гирифташуда';
+
+  @override
+  String get portfolioDividendsThisYear => 'Соли ҷорӣ';
+
+  @override
+  String get portfolioDividendsAllTime => 'Дар маҷмӯъ';
+
+  @override
+  String get portfolioAddDividend => 'Илова кардани дивиденд';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Маблағи гирифташуда ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Санаи пардохт';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Ҳоло ягон дивиденд сабт нашудааст. Онҳоро дастӣ илова кунед ё содироти брокери худро ворид кунед – сатрҳои дивиденди он ҳам гирифта мешаванд.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count дивиденд илова шуд',
+      one: '1 дивиденд илова шуд',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Содироти дивидендҳо (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Дивиденд нест карда шуд';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Маблағҳо тавре ки ба ҳисоби шумо омадаанд, бо асъори пардохт; ҷамъбастҳо бо қурби имрӯза табдил дода мешаванд. Барои эъломияи андоз ҳисоботи брокери худро истифода баред.';
 }

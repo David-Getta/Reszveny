@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Tewali bbeeyi ya kati eya {symbols}.",
   "eventsRecentResults": "Ebivudde ebyakalangirirwa",
   "saveToNotes": "Tereka mu biwandiiko byange",
-  "savedToNotes": "Kitereddwa mu biwandiiko byo"
+  "savedToNotes": "Kitereddwa mu biwandiiko byo",
+  "portfolioDividendsReceived": "Dividendi ezafunibwa",
+  "portfolioDividendsThisYear": "Omwaka guno",
+  "portfolioDividendsAllTime": "Ebiseera byonna",
+  "portfolioAddDividend": "Yongerako dividendi",
+  "portfolioDividendAmount": "Ssente ezafunibwa ({currency})",
+  "portfolioDividendDate": "Olunaku lw'okusasula",
+  "portfolioDividendsEmpty": "Tewannabaawo dividendi ewandiikiddwa. Ziyongereko n'engalo, oba leeta export ya broker wo – ennyiriri zaayo eza dividendi nazo zitwalibwa.",
+  "portfolioDividendsImported": "{count, plural, =1{Dividendi 1 eyongeddwako} other{Dividendi {count} ziyongeddwako}}",
+  "portfolioExportDividends": "Fulumya dividendi (CSV)",
+  "portfolioDividendDeleted": "Dividendi esanguddwa",
+  "portfolioDividendsHint": "Ssente nga bwe zaatuuka ku akawunti yo, mu ssente ez'okusasula; omugatte gukyusibwa ku mutindo gwa leero. Ku lipoota yo ey'omusolo, kozesa ekiwandiiko kya broker wo."
 }

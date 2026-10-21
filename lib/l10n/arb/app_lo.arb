@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "ບໍ່ມີລາຄາປັດຈຸບັນສຳລັບ {symbols}",
   "eventsRecentResults": "ຜົນປະກອບການທີ່ລາຍງານຫຼ້າສຸດ",
   "saveToNotes": "ເກັບໄວ້ໃນບັນທຶກຂອງຂ້ອຍ",
-  "savedToNotes": "ເກັບໄວ້ໃນບັນທຶກຂອງທ່ານແລ້ວ"
+  "savedToNotes": "ເກັບໄວ້ໃນບັນທຶກຂອງທ່ານແລ້ວ",
+  "portfolioDividendsReceived": "ເງິນປັນຜົນທີ່ໄດ້ຮັບ",
+  "portfolioDividendsThisYear": "ປີນີ້",
+  "portfolioDividendsAllTime": "ທັງໝົດ",
+  "portfolioAddDividend": "ເພີ່ມເງິນປັນຜົນ",
+  "portfolioDividendAmount": "ຈຳນວນທີ່ໄດ້ຮັບ ({currency})",
+  "portfolioDividendDate": "ວັນທີຈ່າຍ",
+  "portfolioDividendsEmpty": "ຍັງບໍ່ມີເງິນປັນຜົນທີ່ບັນທຶກໄວ້. ເພີ່ມດ້ວຍຕົນເອງ ຫຼື ນຳເຂົ້າໄຟລ໌ສົ່ງອອກຈາກໂບຣກເກີຂອງທ່ານ – ແຖວເງິນປັນຜົນຂອງມັນກໍຈະຖືກເກັບເຊັ່ນກັນ.",
+  "portfolioDividendsImported": "{count, plural, =1{ເພີ່ມເງິນປັນຜົນ 1 ລາຍການແລ້ວ} other{ເພີ່ມເງິນປັນຜົນ {count} ລາຍການແລ້ວ}}",
+  "portfolioExportDividends": "ສົ່ງອອກເງິນປັນຜົນ (CSV)",
+  "portfolioDividendDeleted": "ລຶບເງິນປັນຜົນແລ້ວ",
+  "portfolioDividendsHint": "ຈຳນວນເງິນຕາມທີ່ເຂົ້າບັນຊີຂອງທ່ານ ໃນສະກຸນເງິນທີ່ຈ່າຍ; ຍອດລວມຖືກແປງຕາມອັດຕາມື້ນີ້. ສຳລັບການແຈ້ງພາສີ ໃຫ້ໃຊ້ໃບລາຍງານຈາກໂບຣກເກີຂອງທ່ານ."
 }

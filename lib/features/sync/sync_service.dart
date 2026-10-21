@@ -136,6 +136,7 @@ class SyncService extends ChangeNotifier {
     'watch_lists': [for (final l in preferences.watchLists) l.toJson()],
     if (preferences.targets.isNotEmpty) 'targets': preferences.targets,
     'lots': [for (final l in portfolio.lots) l.toJson()],
+    'dividends': [for (final d in portfolio.dividends) d.toJson()],
     'alerts': [for (final a in alerts.alerts) a.toJson()],
     'notes': {for (final e in notes.all.entries) e.key: e.value.toJson()},
   };
@@ -193,6 +194,7 @@ class SyncService extends ChangeNotifier {
       // Célarányok: tickerenként a helyi nyer.
       'targets': {...AppPreferences.parseTargets(remote['targets']), ...AppPreferences.parseTargets(local['targets'])},
       'lots': byId(local['lots'], remote['lots']),
+      'dividends': byId(local['dividends'], remote['dividends']),
       'alerts': alertsMerged,
       'notes': mergedNotes,
     };
@@ -245,6 +247,10 @@ class SyncService extends ChangeNotifier {
     await preferences.setEmailAlerts(data['email_alerts'] != false);
     await preferences.setWeeklyDigest(data['weekly_digest'] == true);
     await portfolio.replaceAll([for (final j in maps(data['lots'])) ?PortfolioLot.fromJson(j)]);
+    // Régi csomagban (korábbi app) nincs osztaléklista: akkor a helyi marad.
+    if (data['dividends'] is List) {
+      await portfolio.replaceAllDividends([for (final j in maps(data['dividends'])) ?DividendRecord.fromJson(j)]);
+    }
     await alerts.replaceAll([for (final j in maps(data['alerts'])) ?PriceAlert.fromJson(j)]);
     await notes.replaceAll({
       for (final e in (data['notes'] as Map? ?? const {}).entries) '${e.key}': ?StockNote.fromJson(e.value),

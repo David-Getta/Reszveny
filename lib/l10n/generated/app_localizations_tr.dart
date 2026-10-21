@@ -2562,4 +2562,49 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Notlarınıza kaydedildi';
+
+  @override
+  String get portfolioDividendsReceived => 'Alınan temettüler';
+
+  @override
+  String get portfolioDividendsThisYear => 'Bu yıl';
+
+  @override
+  String get portfolioDividendsAllTime => 'Tüm zamanlar';
+
+  @override
+  String get portfolioAddDividend => 'Temettü ekle';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Alınan tutar ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Ödeme tarihi';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Henüz kayıtlı temettü yok. Elle ekleyin veya aracı kurumunuzun dışa aktarım dosyasını içe aktarın – temettü satırları da alınır.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count temettü eklendi',
+      one: '1 temettü eklendi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Temettüleri dışa aktar (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Temettü silindi';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Tutarlar hesabınıza geldiği şekliyle, ödeme para biriminde; toplamlar bugünkü kurla çevrilir. Vergi beyannameniz için aracı kurumunuzun ekstresini kullanın.';
 }

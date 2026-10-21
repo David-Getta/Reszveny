@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Geen huidige prys vir {symbols} nie.",
   "eventsRecentResults": "Onlangs gerapporteer",
   "saveToNotes": "Stoor in my notas",
-  "savedToNotes": "In jou notas gestoor"
+  "savedToNotes": "In jou notas gestoor",
+  "portfolioDividendsReceived": "Dividende ontvang",
+  "portfolioDividendsThisYear": "Vanjaar",
+  "portfolioDividendsAllTime": "Totaal",
+  "portfolioAddDividend": "Voeg dividend by",
+  "portfolioDividendAmount": "Bedrag ontvang ({currency})",
+  "portfolioDividendDate": "Betaaldatum",
+  "portfolioDividendsEmpty": "Nog geen dividende aangeteken nie. Voeg dit met die hand by, of voer jou makelaar se uitvoer in – die dividendrye word ook opgetel.",
+  "portfolioDividendsImported": "{count, plural, =1{1 dividend bygevoeg} other{{count} dividende bygevoeg}}",
+  "portfolioExportDividends": "Voer dividende uit (CSV)",
+  "portfolioDividendDeleted": "Dividend verwyder",
+  "portfolioDividendsHint": "Bedrae soos dit op jou rekening aangekom het, in die uitbetalingsgeldeenheid; totale word teen vandag se koers omgeskakel. Gebruik jou makelaar se staat vir jou belastingopgawe."
 }

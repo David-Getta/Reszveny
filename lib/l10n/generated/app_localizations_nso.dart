@@ -2578,4 +2578,49 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get savedToNotes => 'E bolokilwe go dintlha tša gago';
+
+  @override
+  String get portfolioDividendsReceived => 'Dividende tše di amogetšwego';
+
+  @override
+  String get portfolioDividendsThisYear => 'Ngwaga wo';
+
+  @override
+  String get portfolioDividendsAllTime => 'Ka moka';
+
+  @override
+  String get portfolioAddDividend => 'Oketša dividende';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Tšhelete ye e amogetšwego ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Letšatši la tefo';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Ga go na dividende tše di rekotilwego go fihla ga bjale. Di oketše ka seatla, goba o tsenye faele ya export ya broker ya gago – mela ya yona ya dividende le yona e a tšewa.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Dividende tše $count di oketšitšwe',
+      one: 'Dividende e 1 e oketšitšwe',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Ntšha dividende (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividende e phumotšwe';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Ditšhelete ka moo di fihlilego akhaontong ya gago, ka tšhelete ya tefo; dipalomoka di fetolelwa ka reiti ya lehono. Bakeng sa pušetšo ya motšhelo, šomiša setatamente sa broker ya gago.';
 }

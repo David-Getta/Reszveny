@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "{symbols} için güncel fiyat yok.",
   "eventsRecentResults": "Son açıklanan bilançolar",
   "saveToNotes": "Notlarıma kaydet",
-  "savedToNotes": "Notlarınıza kaydedildi"
+  "savedToNotes": "Notlarınıza kaydedildi",
+  "portfolioDividendsReceived": "Alınan temettüler",
+  "portfolioDividendsThisYear": "Bu yıl",
+  "portfolioDividendsAllTime": "Tüm zamanlar",
+  "portfolioAddDividend": "Temettü ekle",
+  "portfolioDividendAmount": "Alınan tutar ({currency})",
+  "portfolioDividendDate": "Ödeme tarihi",
+  "portfolioDividendsEmpty": "Henüz kayıtlı temettü yok. Elle ekleyin veya aracı kurumunuzun dışa aktarım dosyasını içe aktarın – temettü satırları da alınır.",
+  "portfolioDividendsImported": "{count, plural, =1{1 temettü eklendi} other{{count} temettü eklendi}}",
+  "portfolioExportDividends": "Temettüleri dışa aktar (CSV)",
+  "portfolioDividendDeleted": "Temettü silindi",
+  "portfolioDividendsHint": "Tutarlar hesabınıza geldiği şekliyle, ödeme para biriminde; toplamlar bugünkü kurla çevrilir. Vergi beyannameniz için aracı kurumunuzun ekstresini kullanın."
 }

@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Babu farashin yanzu na {symbols}.",
   "eventsRecentResults": "Sakamakon da aka bayyana kwanan nan",
   "saveToNotes": "Ajiye a bayanaina",
-  "savedToNotes": "An ajiye a bayananka"
+  "savedToNotes": "An ajiye a bayananka",
+  "portfolioDividendsReceived": "Rabon riba da aka karɓa",
+  "portfolioDividendsThisYear": "Bana",
+  "portfolioDividendsAllTime": "Tun farko",
+  "portfolioAddDividend": "Ƙara rabon riba",
+  "portfolioDividendAmount": "Adadin da aka karɓa ({currency})",
+  "portfolioDividendDate": "Ranar biya",
+  "portfolioDividendsEmpty": "Ba a rubuta wani rabon riba ba tukuna. Ƙara da hannu, ko shigo da fitarwar dillalinka – layukan rabon riba na ciki ma ana ɗaukarsu.",
+  "portfolioDividendsImported": "{count, plural, =1{An ƙara rabon riba 1} other{An ƙara rabon riba {count}}}",
+  "portfolioExportDividends": "Fitar da rabon riba (CSV)",
+  "portfolioDividendDeleted": "An goge rabon riba",
+  "portfolioDividendsHint": "Adadin kamar yadda ya shiga asusunka, a kuɗin biya; jimillolin ana canza su da farashin yau. Don bayanin harajinka, yi amfani da takardar dillalinka."
 }

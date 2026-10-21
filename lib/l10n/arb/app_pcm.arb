@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "{symbols} no get current price.",
   "eventsRecentResults": "Result wey dem just report",
   "saveToNotes": "Save to my notes",
-  "savedToNotes": "E don save to your notes"
+  "savedToNotes": "E don save to your notes",
+  "portfolioDividendsReceived": "Dividend wey you collect",
+  "portfolioDividendsThisYear": "Dis year",
+  "portfolioDividendsAllTime": "All time",
+  "portfolioAddDividend": "Add dividend",
+  "portfolioDividendAmount": "Amount wey you collect ({currency})",
+  "portfolioDividendDate": "Payment date",
+  "portfolioDividendsEmpty": "No dividend dey record yet. Add dem by hand, or import your broker export – e go pick di dividend rows too.",
+  "portfolioDividendsImported": "{count, plural, =1{1 dividend don add} other{{count} dividends don add}}",
+  "portfolioExportDividends": "Export dividends (CSV)",
+  "portfolioDividendDeleted": "Dividend don delete",
+  "portfolioDividendsHint": "Di amounts na as dem enter your account, for di currency wey dem pay; we use today rate convert di totals. For your tax return, use your broker statement."
 }

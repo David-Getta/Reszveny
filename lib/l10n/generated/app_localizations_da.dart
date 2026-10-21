@@ -2560,4 +2560,49 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Gemt i dine noter';
+
+  @override
+  String get portfolioDividendsReceived => 'Modtaget udbytte';
+
+  @override
+  String get portfolioDividendsThisYear => 'I år';
+
+  @override
+  String get portfolioDividendsAllTime => 'Siden start';
+
+  @override
+  String get portfolioAddDividend => 'Tilføj udbytte';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Modtaget beløb ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Udbetalingsdato';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Ingen udbytter registreret endnu. Tilføj dem manuelt, eller importér din brokers eksport – dens udbytterækker hentes også.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count udbytter tilføjet',
+      one: '1 udbytte tilføjet',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Eksportér udbytter (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Udbytte slettet';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Beløb som de blev indsat på din konto, i udbetalingsvalutaen; totaler omregnes til dagens kurs. Brug din brokers opgørelse til din selvangivelse.';
 }

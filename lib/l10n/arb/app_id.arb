@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Tidak ada harga terkini untuk {symbols}.",
   "eventsRecentResults": "Laporan terbaru",
   "saveToNotes": "Simpan ke catatan saya",
-  "savedToNotes": "Tersimpan di catatan Anda"
+  "savedToNotes": "Tersimpan di catatan Anda",
+  "portfolioDividendsReceived": "Dividen diterima",
+  "portfolioDividendsThisYear": "Tahun ini",
+  "portfolioDividendsAllTime": "Sepanjang waktu",
+  "portfolioAddDividend": "Tambah dividen",
+  "portfolioDividendAmount": "Jumlah diterima ({currency})",
+  "portfolioDividendDate": "Tanggal pembayaran",
+  "portfolioDividendsEmpty": "Belum ada dividen yang dicatat. Tambahkan secara manual, atau impor ekspor dari broker Anda – baris dividennya juga akan diambil.",
+  "portfolioDividendsImported": "{count, plural, =1{1 dividen ditambahkan} other{{count} dividen ditambahkan}}",
+  "portfolioExportDividends": "Ekspor dividen (CSV)",
+  "portfolioDividendDeleted": "Dividen dihapus",
+  "portfolioDividendsHint": "Jumlah sesuai yang masuk ke akun Anda, dalam mata uang pembayaran; total dikonversi dengan kurs hari ini. Untuk laporan pajak, gunakan laporan dari broker Anda."
 }

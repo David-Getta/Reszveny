@@ -2566,4 +2566,49 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Opgeslagen in je notities';
+
+  @override
+  String get portfolioDividendsReceived => 'Ontvangen dividend';
+
+  @override
+  String get portfolioDividendsThisYear => 'Dit jaar';
+
+  @override
+  String get portfolioDividendsAllTime => 'Totaal';
+
+  @override
+  String get portfolioAddDividend => 'Dividend toevoegen';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Ontvangen bedrag ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Uitbetalingsdatum';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Nog geen dividend vastgelegd. Voeg het handmatig toe of importeer de export van je broker – de dividendregels worden ook overgenomen.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dividenden toegevoegd',
+      one: '1 dividend toegevoegd',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Dividend exporteren (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividend verwijderd';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Bedragen zoals ze op je rekening binnenkwamen, in de uitbetalingsvaluta; totalen worden omgerekend tegen de koers van vandaag. Gebruik voor je belastingaangifte het overzicht van je broker.';
 }

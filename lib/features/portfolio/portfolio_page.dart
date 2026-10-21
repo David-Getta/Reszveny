@@ -9,6 +9,7 @@ import '../../theme/app_theme.dart';
 import '../../widgets/desktop_chrome.dart';
 import 'add_lot_dialog.dart';
 import 'csv_dialog.dart';
+import 'dividends_card.dart';
 import 'holdings_import.dart';
 import 'portfolio_history.dart';
 import 'portfolio_review_card.dart';
@@ -292,6 +293,7 @@ class _PortfolioBody extends StatelessWidget {
                     ),
                   ),
                 ],
+                DividendsCard(currency: ccy),
                 if (s.closed.isNotEmpty) ...[
                   Padding(
                     padding: const EdgeInsets.fromLTRB(4, 16, 4, 8),

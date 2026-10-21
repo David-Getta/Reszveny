@@ -2576,4 +2576,49 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get savedToNotes => 'E bolokilwe dintlheng tsa hao';
+
+  @override
+  String get portfolioDividendsReceived => 'Dividende tse amohetsweng';
+
+  @override
+  String get portfolioDividendsThisYear => 'Selemong sena';
+
+  @override
+  String get portfolioDividendsAllTime => 'Kaofela';
+
+  @override
+  String get portfolioAddDividend => 'Eketsa dividende';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Chelete e amohetsweng ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Letsatsi la tefo';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Ha ho dividende tse tlalehilweng ho fihlela joale. Di eketse ka letsoho, kapa o kenye faele ya export ya broker ya hao – mela ya yona ya dividende le yona e a nkuwa.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Dividende tse $count di eketsitswe',
+      one: 'Dividende e 1 e eketsitswe',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Ntsha dividende (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividende e hlakotswe';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Dichelete kamoo di fihlileng akhaontong ya hao, ka chelete ya tefo; dipalohare di fetolelwa ka sekhahla sa kajeno. Bakeng sa lekgetho la hao, sebedisa setatemente sa broker ya hao.';
 }

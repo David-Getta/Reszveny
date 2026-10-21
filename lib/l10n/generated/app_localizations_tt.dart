@@ -2561,4 +2561,49 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Язмаларыгызга сакланды';
+
+  @override
+  String get portfolioDividendsReceived => 'Алынган дивидендлар';
+
+  @override
+  String get portfolioDividendsThisYear => 'Бу ел';
+
+  @override
+  String get portfolioDividendsAllTime => 'Барлыгы';
+
+  @override
+  String get portfolioAddDividend => 'Дивиденд өстәргә';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Алынган сумма ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Түләү датасы';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Дивидендлар әлегә язылмаган. Аларны кул белән өстәгез яки брокерыгызның экспортын импортлагыз – аның дивиденд юллары да алына.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count дивиденд өстәлде',
+      one: '1 дивиденд өстәлде',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Дивидендларны экспортлау (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Дивиденд бетерелде';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Суммалар хисабыгызга килгәнчә, түләү валютасында; җәмгылар бүгенге курс буенча күчерелә. Салым декларациясе өчен брокерыгызның хисабын кулланыгыз.';
 }

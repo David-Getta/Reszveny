@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Brak aktualnej ceny dla {symbols}.",
   "eventsRecentResults": "Niedawno opublikowane wyniki",
   "saveToNotes": "Zapisz w moich notatkach",
-  "savedToNotes": "Zapisano w twoich notatkach"
+  "savedToNotes": "Zapisano w twoich notatkach",
+  "portfolioDividendsReceived": "Otrzymane dywidendy",
+  "portfolioDividendsThisYear": "W tym roku",
+  "portfolioDividendsAllTime": "Łącznie",
+  "portfolioAddDividend": "Dodaj dywidendę",
+  "portfolioDividendAmount": "Otrzymana kwota ({currency})",
+  "portfolioDividendDate": "Data wypłaty",
+  "portfolioDividendsEmpty": "Brak zapisanych dywidend. Dodaj je ręcznie lub zaimportuj eksport od swojego brokera – wiersze z dywidendami też zostaną wczytane.",
+  "portfolioDividendsImported": "{count, plural, =1{Dodano 1 dywidendę} few{Dodano {count} dywidendy} many{Dodano {count} dywidend} other{Dodano {count} dywidendy}}",
+  "portfolioExportDividends": "Eksportuj dywidendy (CSV)",
+  "portfolioDividendDeleted": "Dywidenda usunięta",
+  "portfolioDividendsHint": "Kwoty takie, jakie wpłynęły na Twoje konto, w walucie wypłaty; sumy przeliczane są po dzisiejszym kursie. Do rozliczenia podatkowego użyj zestawienia od brokera."
 }

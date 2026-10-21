@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "គ្មានតម្លៃបច្ចុប្បន្នសម្រាប់ {symbols} ទេ។",
   "eventsRecentResults": "លទ្ធផលដែលទើបរាយការណ៍",
   "saveToNotes": "រក្សាទុកក្នុងកំណត់ចំណាំរបស់ខ្ញុំ",
-  "savedToNotes": "បានរក្សាទុកក្នុងកំណត់ចំណាំរបស់អ្នក"
+  "savedToNotes": "បានរក្សាទុកក្នុងកំណត់ចំណាំរបស់អ្នក",
+  "portfolioDividendsReceived": "ភាគលាភដែលបានទទួល",
+  "portfolioDividendsThisYear": "ឆ្នាំនេះ",
+  "portfolioDividendsAllTime": "គ្រប់ពេល",
+  "portfolioAddDividend": "បន្ថែមភាគលាភ",
+  "portfolioDividendAmount": "ចំនួនទឹកប្រាក់ដែលបានទទួល ({currency})",
+  "portfolioDividendDate": "កាលបរិច្ឆេទទូទាត់",
+  "portfolioDividendsEmpty": "មិនទាន់មានភាគលាភបានកត់ត្រានៅឡើយទេ។ បន្ថែមដោយដៃ ឬនាំចូលឯកសារនាំចេញពីឈ្មួញកណ្តាលរបស់អ្នក – ជួរភាគលាភរបស់វាក៏ត្រូវបានយកផងដែរ។",
+  "portfolioDividendsImported": "{count, plural, =1{បានបន្ថែមភាគលាភ 1} other{បានបន្ថែមភាគលាភ {count}}}",
+  "portfolioExportDividends": "នាំចេញភាគលាភ (CSV)",
+  "portfolioDividendDeleted": "បានលុបភាគលាភ",
+  "portfolioDividendsHint": "ចំនួនទឹកប្រាក់ដូចដែលបានមកដល់គណនីរបស់អ្នក ជារូបិយប័ណ្ណនៃការទូទាត់; សរុបត្រូវបានប្តូរតាមអត្រាថ្ងៃនេះ។ សម្រាប់ការប្រកាសពន្ធ សូមប្រើរបាយការណ៍ឈ្មួញកណ្តាលរបស់អ្នក។"
 }

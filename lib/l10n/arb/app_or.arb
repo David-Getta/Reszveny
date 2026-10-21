@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "{symbols} ପାଇଁ ବର୍ତ୍ତମାନର ଦର ଉପଲବ୍ଧ ନାହିଁ।",
   "eventsRecentResults": "ସମ୍ପ୍ରତି ଘୋଷିତ ଫଳାଫଳ",
   "saveToNotes": "ମୋ ନୋଟ୍‌ରେ ସେଭ୍ କରନ୍ତୁ",
-  "savedToNotes": "ଆପଣଙ୍କ ନୋଟ୍‌ରେ ସେଭ୍ ହୋଇଛି"
+  "savedToNotes": "ଆପଣଙ୍କ ନୋଟ୍‌ରେ ସେଭ୍ ହୋଇଛି",
+  "portfolioDividendsReceived": "ପ୍ରାପ୍ତ ଡିଭିଡେଣ୍ଡ",
+  "portfolioDividendsThisYear": "ଏହି ବର୍ଷ",
+  "portfolioDividendsAllTime": "ଏପର୍ୟ୍ୟନ୍ତ ମୋଟ",
+  "portfolioAddDividend": "ଡିଭିଡେଣ୍ଡ ଯୋଡ଼ନ୍ତୁ",
+  "portfolioDividendAmount": "ପ୍ରାପ୍ତ ରାଶି ({currency})",
+  "portfolioDividendDate": "ଦେୟ ତାରିଖ",
+  "portfolioDividendsEmpty": "ଏପର୍ୟ୍ୟନ୍ତ କୌଣସି ଡିଭିଡେଣ୍ଡ ରେକର୍ଡ ହୋଇନାହିଁ। ହାତରେ ଯୋଡ଼ନ୍ତୁ, କିମ୍ବା ଆପଣଙ୍କ ବ୍ରୋକରର ଏକ୍ସପୋର୍ଟ ଇମ୍ପୋର୍ଟ କରନ୍ତୁ – ତାହାର ଡିଭିଡେଣ୍ଡ ଧାଡ଼ିଗୁଡ଼ିକ ମଧ୍ୟ ନିଆଯାଏ।",
+  "portfolioDividendsImported": "{count, plural, =1{1 ଡିଭିଡେଣ୍ଡ ଯୋଡ଼ା ହେଲା} other{{count} ଡିଭିଡେଣ୍ଡ ଯୋଡ଼ା ହେଲା}}",
+  "portfolioExportDividends": "ଡିଭିଡେଣ୍ଡ ଏକ୍ସପୋର୍ଟ କରନ୍ତୁ (CSV)",
+  "portfolioDividendDeleted": "ଡିଭିଡେଣ୍ଡ ଡିଲିଟ୍ ହେଲା",
+  "portfolioDividendsHint": "ରାଶି ଆପଣଙ୍କ ଖାତାରେ ଯେପରି ଆସିଲା, ପେଆଉଟ୍ ମୁଦ୍ରାରେ; ମୋଟ ରାଶି ଆଜିର ଦରରେ ରୂପାନ୍ତରିତ ହୁଏ। ଟିକସ ରିଟର୍ଣ୍ଣ ପାଇଁ ଆପଣଙ୍କ ବ୍ରୋକରର ଷ୍ଟେଟମେଣ୍ଟ ବ୍ୟବହାର କରନ୍ତୁ।"
 }

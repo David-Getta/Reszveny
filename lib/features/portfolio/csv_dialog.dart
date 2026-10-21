@@ -23,7 +23,12 @@ class PortfolioCsvMenu extends StatelessWidget {
       icon: const Icon(Icons.more_vert_rounded),
       onSelected: (v) async {
         if (v == 'export') {
-          await shareText(portfolioCsv(services.portfolio.lots), subject: 'WhatStock portfolio.csv');
+          await shareText(
+            portfolioCsv(services.portfolio.lots, dividends: services.portfolio.dividends),
+            subject: 'WhatStock portfolio.csv',
+          );
+        } else if (v == 'dividends') {
+          await shareText(dividendsCsv(services.portfolio.dividends), subject: 'WhatStock dividends.csv');
         } else if (v == 'realized') {
           await shareText(realizedCsv(services.portfolio.allPositions), subject: 'WhatStock realized-gains.csv');
         } else if (v == 'photo') {
@@ -47,6 +52,12 @@ class PortfolioCsvMenu extends StatelessWidget {
               leading: const Icon(Icons.receipt_long_outlined),
               title: Text(l10n.portfolioExportRealized),
             ),
+          ),
+        if (services.portfolio.dividends.isNotEmpty)
+          PopupMenuItem(
+            key: const ValueKey('portfolio-export-dividends'),
+            value: 'dividends',
+            child: ListTile(leading: const Icon(Icons.payments_outlined), title: Text(l10n.portfolioExportDividends)),
           ),
         PopupMenuItem(
           key: const ValueKey('portfolio-import-photo'),
@@ -92,11 +103,21 @@ Future<void> showPortfolioImport(BuildContext context) async {
     );
     added++;
   }
+  // Kapott osztalékok: ugyanaz a tétel (ticker, összeg, dátum) nem kerül be kétszer.
+  String dKey(String symbol, double amount, DateTime? d) => '$symbol|$amount|${d?.toIso8601String().substring(0, 10)}';
+  final existingDividends = {for (final d in services.portfolio.dividends) dKey(d.symbol, d.amount, d.date)};
+  var addedDividends = 0;
+  for (final d in result.dividends) {
+    if (!existingDividends.add(dKey(d.symbol, d.amount, d.date))) continue;
+    await services.portfolio.addDividend(symbol: d.symbol, amount: d.amount, currency: d.currency, date: d.date);
+    addedDividends++;
+  }
   messenger.showSnackBar(
     SnackBar(
       content: Text(
         [
           l10n.portfolioImported(added),
+          if (addedDividends > 0) l10n.portfolioDividendsImported(addedDividends),
           if (result.skipped > 0) l10n.portfolioImportSkipped(result.skipped),
         ].join(' · '),
       ),

@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Nta giciro ca none ca {symbols}.",
   "eventsRecentResults": "Ivyatangajwe vuba",
   "saveToNotes": "Bika mu vyo nanditse",
-  "savedToNotes": "Vyabitswe mu vyo wanditse"
+  "savedToNotes": "Vyabitswe mu vyo wanditse",
+  "portfolioDividendsReceived": "Amadividende yakiriwe",
+  "portfolioDividendsThisYear": "Uyu mwaka",
+  "portfolioDividendsAllTime": "Vyose kuva kera",
+  "portfolioAddDividend": "Ongerako idividende",
+  "portfolioDividendAmount": "Amahera yakiriwe ({currency})",
+  "portfolioDividendDate": "Itariki yo kuriha",
+  "portfolioDividendsEmpty": "Nta dividende yandikwa gushika ubu. Zongereko n'ukuboko, canke winjize export ya broker wawe – imirongo yayo y'amadividende nayo iratorwa.",
+  "portfolioDividendsImported": "{count, plural, =1{Idividende 1 ryongewe} other{Amadividende {count} yongewe}}",
+  "portfolioExportDividends": "Sohora amadividende (CSV)",
+  "portfolioDividendDeleted": "Idividende ryafuswe",
+  "portfolioDividendsHint": "Amahera nk'uko yashitse kuri konti yawe, mu mahera yo kuriha; ivyose bihindurwa ku giciro ca none. Ku bijanye n'ikori, koresha urupapuro rwa broker wawe."
 }

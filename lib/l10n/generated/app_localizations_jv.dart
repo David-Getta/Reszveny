@@ -2564,4 +2564,49 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Wis disimpen ing cathetanmu';
+
+  @override
+  String get portfolioDividendsReceived => 'Dividen sing ditampa';
+
+  @override
+  String get portfolioDividendsThisYear => 'Taun iki';
+
+  @override
+  String get portfolioDividendsAllTime => 'Kabeh wektu';
+
+  @override
+  String get portfolioAddDividend => 'Tambah dividen';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Jumlah sing ditampa ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Tanggal pembayaran';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Durung ana dividen sing dicathet. Tambahna kanthi manual, utawa impor ekspor saka broker sampeyan – baris dividen uga dijupuk.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dividen ditambahake',
+      one: '1 dividen ditambahake',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Ekspor dividen (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividen dibusak';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Jumlah kaya sing mlebu ing akun sampeyan, ing mata uang pembayaran; total dikonversi nganggo kurs dina iki. Kanggo laporan pajak, gunakna laporan saka broker sampeyan.';
 }

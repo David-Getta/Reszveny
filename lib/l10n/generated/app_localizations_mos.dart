@@ -2549,4 +2549,49 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Bĩnga f gʋlsgã pʋgẽ';
+
+  @override
+  String get portfolioDividendsReceived => 'Dividand nins f sẽn paam';
+
+  @override
+  String get portfolioDividendsThisYear => 'Yʋʋm-kãngã';
+
+  @override
+  String get portfolioDividendsAllTime => 'Fãa';
+
+  @override
+  String get portfolioAddDividend => 'Paas dividand';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Ligd ning f sẽn paam ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Yaoob daar';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Dividand ka gʋls ye. Paas-b ne f nug, bɩ f kẽes f broker-ã export – a dividand gʋlsgã me n dɩkd.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Dividand $count paasame',
+      one: 'Dividand 1 paasame',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Yiis dividand rãmbã (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividand yiisame';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Ligdã yaa wa a sẽn wa f kont pʋgẽ, ne yaoob ligdã; a fãa toeemda ne rũndã kʋʋngã. F lampo sebrã yĩnga, tũnug ne f broker-ã sebrã.';
 }

@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Awan ti agdama a presio para iti {symbols}.",
   "eventsRecentResults": "Kabarbaro a naireport a resulta",
   "saveToNotes": "I-save kadagiti notak",
-  "savedToNotes": "Nai-save kadagiti notam"
+  "savedToNotes": "Nai-save kadagiti notam",
+  "portfolioDividendsReceived": "Naawat a dibidendo",
+  "portfolioDividendsThisYear": "Daytoy a tawen",
+  "portfolioDividendsAllTime": "Amin a panawen",
+  "portfolioAddDividend": "Inayon ti dibidendo",
+  "portfolioDividendAmount": "Kantidad a naawat ({currency})",
+  "portfolioDividendDate": "Petsa ti panagbayad",
+  "portfolioDividendsEmpty": "Awan pay ti nairekord a dibidendo. Inayon dagitoy babaen ti ima, wenno i-import ti export ti broker-mo – maala met dagiti linia ti dibidendo daytoy.",
+  "portfolioDividendsImported": "{count, plural, =1{1 dibidendo ti nainayon} other{{count} a dibidendo ti nainayon}}",
+  "portfolioExportDividends": "I-export dagiti dibidendo (CSV)",
+  "portfolioDividendDeleted": "Naikkat ti dibidendo",
+  "portfolioDividendsHint": "Dagiti kantidad kas iti isasangpetda iti account-mo, iti currency ti panagbayad; dagiti total ket na-convert iti rate ita. Para iti tax return-mo, usarem ti statement ti broker-mo."
 }

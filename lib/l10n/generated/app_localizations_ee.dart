@@ -2565,4 +2565,49 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Wodzrae ɖo ɖe wò nuŋlɔɖiwo me';
+
+  @override
+  String get portfolioDividendsReceived => 'Dividend siwo woxɔ';
+
+  @override
+  String get portfolioDividendsThisYear => 'Ƒe sia';
+
+  @override
+  String get portfolioDividendsAllTime => 'Ɣeyiɣiawo katã';
+
+  @override
+  String get portfolioAddDividend => 'Tsɔ dividend kpe ɖe eŋu';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Ga si woxɔ ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Fexexe ŋkeke';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Womeŋlɔ dividend aɖeke ɖi haɖe o. Tsɔ asi ŋlɔe, alo tsɔ wò broker ƒe export vɛ – wotsɔa eƒe dividend fliawo hã.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Wotsɔ dividend $count kpe ɖe eŋu',
+      one: 'Wotsɔ dividend 1 kpe ɖe eŋu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Ɖe dividendwo ɖe go (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Wotutu dividend la';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Ga home siwo va wò akɔnta dzi tututu, le fexexe ƒe gaŋkɔ me; wotrɔa ƒuƒoƒowo le egbe ƒe asi nu. Na wò adzɔxexe ƒe agbalẽ la, zã wò broker ƒe akɔnta agbalẽ.';
 }

@@ -2564,4 +2564,49 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Di notên te de hat tomarkirin';
+
+  @override
+  String get portfolioDividendsReceived => 'Dividendên wergirtî';
+
+  @override
+  String get portfolioDividendsThisYear => 'Îsal';
+
+  @override
+  String get portfolioDividendsAllTime => 'Hemû dem';
+
+  @override
+  String get portfolioAddDividend => 'Dividend lê zêde bike';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Mîqdara wergirtî ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Dîroka dayînê';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Hîn tu dividend nehatiye tomarkirin. Bi destan lê zêde bike, an eksporta brokerê xwe import bike – rêzên dividendê wê jî tên girtin.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dividend hatin zêdekirin',
+      one: '1 dividend hat zêdekirin',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Dividendan eksport bike (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividend hat jêbirin';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Mîqdar wek ku gihîştine hesabê te, bi diravê dayînê; giştî bi rêjeya îro tên veguhertin. Ji bo danezana baca xwe, raporta brokerê xwe bi kar bîne.';
 }

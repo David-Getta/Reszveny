@@ -2565,4 +2565,49 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Qeydlərinizə yadda saxlanıldı';
+
+  @override
+  String get portfolioDividendsReceived => 'Alınan dividendlər';
+
+  @override
+  String get portfolioDividendsThisYear => 'Bu il';
+
+  @override
+  String get portfolioDividendsAllTime => 'Bütün dövr';
+
+  @override
+  String get portfolioAddDividend => 'Dividend əlavə et';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Alınan məbləğ ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Ödəniş tarixi';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Hələ heç bir dividend qeyd edilməyib. Əl ilə əlavə edin və ya brokerinizin ixrac faylını idxal edin – oradakı dividend sətirləri də götürülür.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dividend əlavə edildi',
+      one: '1 dividend əlavə edildi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Dividendləri ixrac et (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividend silindi';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Məbləğlər hesabınıza gəldiyi kimi, ödəniş valyutasında; cəmlər bugünkü məzənnə ilə çevrilir. Vergi bəyannaməniz üçün brokerinizin hesabatından istifadə edin.';
 }

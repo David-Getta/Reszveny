@@ -2553,4 +2553,49 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get savedToNotes => 'သင့်မှတ်စုများသို့ သိမ်းပြီးပါပြီ';
+
+  @override
+  String get portfolioDividendsReceived => 'ရရှိထားသော အမြတ်ဝေစုများ';
+
+  @override
+  String get portfolioDividendsThisYear => 'ယခုနှစ်';
+
+  @override
+  String get portfolioDividendsAllTime => 'စုစုပေါင်း';
+
+  @override
+  String get portfolioAddDividend => 'အမြတ်ဝေစု ထည့်ရန်';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'ရရှိသည့်ပမာဏ ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'ပေးချေသည့်ရက်';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'အမြတ်ဝေစု မှတ်တမ်းမရှိသေးပါ။ ကိုယ်တိုင်ထည့်ပါ၊ သို့မဟုတ် သင့်ဘရိုကာ၏ export ဖိုင်ကို တင်သွင်းပါ – ထိုဖိုင်ထဲမှ အမြတ်ဝေစုအတန်းများကိုလည်း ဖမ်းယူပါသည်။';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'အမြတ်ဝေစု $count ခု ထည့်ပြီး',
+      one: 'အမြတ်ဝေစု 1 ခု ထည့်ပြီး',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'အမြတ်ဝေစုများ ထုတ်ယူရန် (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'အမြတ်ဝေစုကို ဖျက်ပြီး';
+
+  @override
+  String get portfolioDividendsHint =>
+      'ပမာဏများသည် သင့်အကောင့်ထဲ ရောက်ရှိလာသည့်အတိုင်း၊ ပေးချေငွေကြေးဖြင့် ဖြစ်သည်။ စုစုပေါင်းကို ယနေ့နှုန်းဖြင့် ပြောင်းလဲတွက်ချက်သည်။ အခွန်ကြေညာလွှာအတွက် သင့်ဘရိုကာ၏ ရှင်းတမ်းကို အသုံးပြုပါ။';
 }

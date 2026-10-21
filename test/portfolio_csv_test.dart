@@ -59,17 +59,26 @@ void main() {
       ('AAPL', 0.5, 240.0, 'USD', DateTime(2025, 9, 1), true),
     ]);
     expect(revolut.skipped, 0);
+    // Az osztaléksor kapott osztalékként jön át (a teljes összeggel).
+    expect(revolut.dividends.map((d) => (d.symbol, d.amount, d.currency, d.date)), [
+      ('AAPL', 0.5, 'USD', DateTime(2025, 5, 15)),
+    ]);
 
     final t212 = parsePortfolioCsv(
       'Action,Time,ISIN,Ticker,Name,No. of shares,Price / share,Currency (Price / share),Exchange rate,Total,'
       'Currency (Total)\n'
       'Deposit,2025-01-02 10:00:00,,,,,,,,500,EUR\n'
       'Market buy,2025-01-02 10:05:11,US5949181045,MSFT,Microsoft,1.5,410.20,USD,1.04,592.10,EUR\n'
-      'Limit sell,2025-06-10 16:20:00,US5949181045,MSFT,Microsoft,0.5,450,USD,1.10,204.55,EUR\n',
+      'Limit sell,2025-06-10 16:20:00,US5949181045,MSFT,Microsoft,0.5,450,USD,1.10,204.55,EUR\n'
+      'Dividend (Ordinary),2025-06-12 09:00:00,US5949181045,MSFT,Microsoft,1,0.83,USD,1.12,0.74,EUR\n',
     );
     expect(t212.lots.map((l) => (l.symbol, l.quantity, l.price, l.currency, l.sell)), [
       ('MSFT', 1.5, 410.2, 'USD', false),
       ('MSFT', 0.5, 450.0, 'USD', true),
+    ]);
+    // Az osztalék a „Total” oszlop összege, a számla pénznemében.
+    expect(t212.dividends.map((d) => (d.symbol, d.amount, d.currency, d.date)), [
+      ('MSFT', 0.74, 'EUR', DateTime(2025, 6, 12)),
     ]);
 
     final ibkr = parsePortfolioCsv(
@@ -79,13 +88,21 @@ void main() {
       'Trades,Data,Order,Stocks,USD,NVDA,"2025-03-14, 10:31:12",10,120.5,-1205\n'
       'Trades,Data,Order,Stocks,EUR,ASML,"2025-04-02, 09:00:01",-2,640.25,1280.5\n'
       'Trades,SubTotal,,Stocks,USD,NVDA,,10,,-1205\n'
-      'Dividends,Header,Currency,Date,Description,Amount\n',
+      'Dividends,Header,Currency,Date,Description,Amount\n'
+      'Dividends,Data,USD,2025-06-27,NVDA(US67066G1040) Cash Dividend USD 0.01 per Share (Ordinary Dividend),0.1\n'
+      'Dividends,Data,EUR,2025-05-07,"ASML(NL0010273215) Cash Dividend EUR 1.84 per Share (Ordinary Dividend)",3.68\n'
+      'Dividends,Data,Total,,,3.78\n',
     );
     expect(ibkr.lots.map((l) => (l.symbol, l.quantity, l.price, l.currency, l.date, l.sell)), [
       ('NVDA', 10.0, 120.5, 'USD', DateTime(2025, 3, 14), false),
       ('ASML', 2.0, 640.25, 'EUR', DateTime(2025, 4, 2), true),
     ]);
     expect(ibkr.skipped, 0);
+    // A „Dividends” szakasz sorai: ticker a leírás elejéről; az összesítő sor kimarad.
+    expect(ibkr.dividends.map((d) => (d.symbol, d.amount, d.currency, d.date)), [
+      ('NVDA', 0.1, 'USD', DateTime(2025, 6, 27)),
+      ('ASML', 3.68, 'EUR', DateTime(2025, 5, 7)),
+    ]);
   });
 
   test('quoted fields keep their commas and quotes', () {
@@ -102,6 +119,32 @@ void main() {
     expect(back.skipped, 0);
     expect(back.lots.first.price, 199.99);
     expect(back.lots.map((l) => l.sell), [false, true]);
+  });
+
+  test('dividends: exported as dividend rows and read back; a separate CSV for the tax return', () {
+    const lots = [PortfolioLot(id: 'a', symbol: 'AAPL', quantity: 3, price: 199.99, currency: 'USD')];
+    final dividends = [
+      DividendRecord(id: 'd1', symbol: 'AAPL', amount: 0.75, currency: 'USD', date: DateTime(2026, 2, 13)),
+      DividendRecord(id: 'd2', symbol: 'OTP', amount: 24000, currency: 'HUF', date: DateTime(2025, 6, 2)),
+    ];
+    final csv = portfolioCsv(lots, dividends: dividends);
+    expect(csv, contains('AAPL,,0.75,USD,2026-02-13,dividend'));
+    final back = parsePortfolioCsv(csv);
+    expect(back.skipped, 0);
+    expect(back.lots, hasLength(1));
+    expect(back.dividends.map((d) => (d.symbol, d.amount, d.currency, d.date)), [
+      ('AAPL', 0.75, 'USD', DateTime(2026, 2, 13)),
+      ('OTP', 24000.0, 'HUF', DateTime(2025, 6, 2)),
+    ]);
+    // Fejléc nélkül is: a hatodik oszlop „dividend”, az összeg az ár helyén.
+    final plain = parsePortfolioCsv('AAPL;;0,75;USD;2026-02-13;dividend\nMSFT;2;400;USD;2026-01-05');
+    expect(plain.dividends.single.amount, 0.75);
+    expect(plain.lots.single.symbol, 'MSFT');
+    expect(plain.skipped, 0);
+    expect(
+      dividendsCsv(dividends),
+      'date,symbol,amount,currency\n2025-06-02,OTP,24000,HUF\n2026-02-13,AAPL,0.75,USD\n',
+    );
   });
 
   test('realized gains: one row per sale with the FIFO cost basis, in date order', () {

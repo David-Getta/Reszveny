@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Kein aktueller Kurs für {symbols}.",
   "eventsRecentResults": "Frische Quartalszahlen",
   "saveToNotes": "In meine Notizen speichern",
-  "savedToNotes": "In deinen Notizen gespeichert"
+  "savedToNotes": "In deinen Notizen gespeichert",
+  "portfolioDividendsReceived": "Erhaltene Dividenden",
+  "portfolioDividendsThisYear": "Dieses Jahr",
+  "portfolioDividendsAllTime": "Gesamt",
+  "portfolioAddDividend": "Dividende hinzufügen",
+  "portfolioDividendAmount": "Erhaltener Betrag ({currency})",
+  "portfolioDividendDate": "Zahlungsdatum",
+  "portfolioDividendsEmpty": "Noch keine Dividenden erfasst. Trage sie von Hand ein oder importiere den Export deines Brokers – dessen Dividendenzeilen werden ebenfalls übernommen.",
+  "portfolioDividendsImported": "{count, plural, =1{1 Dividende hinzugefügt} other{{count} Dividenden hinzugefügt}}",
+  "portfolioExportDividends": "Dividenden exportieren (CSV)",
+  "portfolioDividendDeleted": "Dividende gelöscht",
+  "portfolioDividendsHint": "Beträge, wie sie auf deinem Konto eingegangen sind, in der Auszahlungswährung; Summen werden zum heutigen Kurs umgerechnet. Für die Steuererklärung nutze die Abrechnung deines Brokers."
 }

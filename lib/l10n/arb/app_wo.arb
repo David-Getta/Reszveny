@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Amul njëg bu léegi ngir {symbols}.",
   "eventsRecentResults": "Njureef yu bees yi ñu yégle",
   "saveToNotes": "Denc ci samay notu",
-  "savedToNotes": "Dencu na ci say notu"
+  "savedToNotes": "Dencu na ci say notu",
+  "portfolioDividendsReceived": "Dividande yi ñu jot",
+  "portfolioDividendsThisYear": "At mii",
+  "portfolioDividendsAllTime": "Lépp",
+  "portfolioAddDividend": "Yokk dividande",
+  "portfolioDividendAmount": "Xaalis bi ñu jot ({currency})",
+  "portfolioDividendDate": "Bésu fey",
+  "portfolioDividendsEmpty": "Amul dividande bu ñu bind ba tey. Yokk leen ak sa loxo, walla nga indi export bu sa broker – ay rëdd dividande yu ci nekk itam dañu leen di jël.",
+  "portfolioDividendsImported": "{count, plural, =1{1 dividande la ñu yokk} other{{count} dividande la ñu yokk}}",
+  "portfolioExportDividends": "Génne dividande yi (CSV)",
+  "portfolioDividendDeleted": "Dividande bi far na",
+  "portfolioDividendsHint": "Xaalis yi ni ñu dugge ci sa kont, ci xaalisu fey bi; lépp dañu koy soppi ci njëgu tey. Ngir sa impo, jëfandikool kayitu sa broker."
 }

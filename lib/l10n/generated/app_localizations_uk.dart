@@ -2632,4 +2632,51 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Збережено у ваших нотатках';
+
+  @override
+  String get portfolioDividendsReceived => 'Отримані дивіденди';
+
+  @override
+  String get portfolioDividendsThisYear => 'Цього року';
+
+  @override
+  String get portfolioDividendsAllTime => 'За весь час';
+
+  @override
+  String get portfolioAddDividend => 'Додати дивіденд';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Отримана сума ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Дата виплати';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Дивідендів ще не записано. Додайте їх вручну або імпортуйте вивантаження від брокера – рядки з дивідендами також буде враховано.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Додано $count дивіденда',
+      many: 'Додано $count дивідендів',
+      few: 'Додано $count дивіденди',
+      one: 'Додано $count дивіденд',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Експорт дивідендів (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Дивіденд видалено';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Суми такі, якими вони надійшли на ваш рахунок, у валюті виплати; підсумки перераховано за сьогоднішнім курсом. Для податкової декларації використовуйте звіт брокера.';
 }

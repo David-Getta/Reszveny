@@ -2571,4 +2571,49 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Desat a les teves notes';
+
+  @override
+  String get portfolioDividendsReceived => 'Dividends rebuts';
+
+  @override
+  String get portfolioDividendsThisYear => 'Aquest any';
+
+  @override
+  String get portfolioDividendsAllTime => 'Des de l\'inici';
+
+  @override
+  String get portfolioAddDividend => 'Afegir dividend';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Import rebut ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Data de pagament';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Encara no hi ha dividends registrats. Afegeix-los a mà o importa l\'exportació del teu bròquer: les seves files de dividends també es recullen.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dividends afegits',
+      one: '1 dividend afegit',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Exportar dividends (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividend eliminat';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Imports tal com van arribar al teu compte, en la moneda del pagament; els totals es converteixen al canvi d\'avui. Per a la declaració de la renda, fes servir l\'extracte del teu bròquer.';
 }

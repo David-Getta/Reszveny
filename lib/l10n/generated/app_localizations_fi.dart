@@ -2563,4 +2563,49 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Tallennettu muistiinpanoihisi';
+
+  @override
+  String get portfolioDividendsReceived => 'Saadut osingot';
+
+  @override
+  String get portfolioDividendsThisYear => 'Tänä vuonna';
+
+  @override
+  String get portfolioDividendsAllTime => 'Koko ajalta';
+
+  @override
+  String get portfolioAddDividend => 'Lisää osinko';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Saatu summa ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Maksupäivä';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Osinkoja ei ole vielä kirjattu. Lisää ne käsin tai tuo välittäjäsi vientitiedosto – myös sen osinkorivit poimitaan.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count osinkoa lisätty',
+      one: '1 osinko lisätty',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Vie osingot (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Osinko poistettu';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Summat sellaisina kuin ne tulivat tilillesi, maksuvaluutassa; yhteissummat muunnetaan tämän päivän kurssilla. Käytä veroilmoitukseen välittäjäsi raporttia.';
 }

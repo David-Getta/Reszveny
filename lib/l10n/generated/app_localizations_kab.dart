@@ -2560,4 +2560,49 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Yettwasekles deg tizmilin-ik';
+
+  @override
+  String get portfolioDividendsReceived => 'Dividendes yettwaṭṭfen';
+
+  @override
+  String get portfolioDividendsThisYear => 'Aseggas-a';
+
+  @override
+  String get portfolioDividendsAllTime => 'Akk akud';
+
+  @override
+  String get portfolioAddDividend => 'Rnu dividende';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Azal yettwaṭṭef ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Azemz n lexlaṣ';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Ulac dividende yettwakelsen ar tura. Rnu-ten s ufus, neɣ kter asifeḍ n broker-ik – izirigen-is n dividendes ad ttwaṭṭfen daɣen.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ttwarnan $count dividendes',
+      one: 'Yettwarna 1 dividende',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Sifeḍ dividendes (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividende yettwakkes';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Azalen akken i d-wwḍen ɣer umiḍan-ik, s tedrimt n lexlaṣ; igmaḍ ttwabeddlen s ssuma n wass-a. I tsemmelt-ik n tebzert, seqdec aɣmis n broker-ik.';
 }

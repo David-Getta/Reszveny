@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "{symbols} සඳහා වත්මන් මිලක් නොමැත.",
   "eventsRecentResults": "මෑතකදී වාර්තා කළ ප්‍රතිඵල",
   "saveToNotes": "මගේ සටහන්වලට සුරකින්න",
-  "savedToNotes": "ඔබේ සටහන්වලට සුරැකිණි"
+  "savedToNotes": "ඔබේ සටහන්වලට සුරැකිණි",
+  "portfolioDividendsReceived": "ලැබුණු ලාභාංශ",
+  "portfolioDividendsThisYear": "මේ වසරේ",
+  "portfolioDividendsAllTime": "මේ දක්වා මුළු",
+  "portfolioAddDividend": "ලාභාංශය එක් කරන්න",
+  "portfolioDividendAmount": "ලැබුණු මුදල ({currency})",
+  "portfolioDividendDate": "ගෙවීම් දිනය",
+  "portfolioDividendsEmpty": "තවම ලාභාංශ කිසිවක් සටහන් කර නැත. අතින් එක් කරන්න, නැතහොත් ඔබේ බ්‍රෝකර්ගේ export ගොනුව import කරන්න – එහි ලාභාංශ පේළි ද ගනු ලැබේ.",
+  "portfolioDividendsImported": "{count, plural, =1{ලාභාංශ 1ක් එක් කළා} other{ලාභාංශ {count}ක් එක් කළා}}",
+  "portfolioExportDividends": "ලාභාංශ export කරන්න (CSV)",
+  "portfolioDividendDeleted": "ලාභාංශය මකා දැමුවා",
+  "portfolioDividendsHint": "මුදල් ඔබේ ගිණුමට ලැබුණු ආකාරයටම, ගෙවීම් මුදල් වර්ගයෙන්; එකතු අද අනුපාතයට පරිවර්තනය කෙරේ. බදු වාර්තාව සඳහා ඔබේ බ්‍රෝකර්ගේ ප්‍රකාශය භාවිත කරන්න."
 }

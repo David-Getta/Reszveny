@@ -2561,4 +2561,49 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get savedToNotes => 'तपाईंका टिपोटहरूमा सेभ भयो';
+
+  @override
+  String get portfolioDividendsReceived => 'प्राप्त लाभांश';
+
+  @override
+  String get portfolioDividendsThisYear => 'यस वर्ष';
+
+  @override
+  String get portfolioDividendsAllTime => 'अहिलेसम्म जम्मा';
+
+  @override
+  String get portfolioAddDividend => 'लाभांश थप्नुहोस्';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'प्राप्त रकम ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'भुक्तानी मिति';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'अहिलेसम्म कुनै लाभांश रेकर्ड गरिएको छैन। हातैले थप्नुहोस्, वा आफ्नो ब्रोकरको एक्सपोर्ट इम्पोर्ट गर्नुहोस् – त्यसका लाभांश पङ्क्तिहरू पनि लिइन्छन्।';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count लाभांश थपिए',
+      one: '1 लाभांश थपियो',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'लाभांश एक्सपोर्ट गर्नुहोस् (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'लाभांश मेटाइयो';
+
+  @override
+  String get portfolioDividendsHint =>
+      'रकमहरू तपाईंको खातामा आएअनुसार, भुक्तानी मुद्रामा; जम्मा रकम आजको दरमा रूपान्तरण गरिन्छ। कर विवरणका लागि आफ्नो ब्रोकरको स्टेटमेन्ट प्रयोग गर्नुहोस्।';
 }

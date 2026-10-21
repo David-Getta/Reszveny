@@ -2532,4 +2532,49 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get savedToNotes => 'เก็บไว้ในบันทึกของคุณแล้ว';
+
+  @override
+  String get portfolioDividendsReceived => 'เงินปันผลที่ได้รับ';
+
+  @override
+  String get portfolioDividendsThisYear => 'ปีนี้';
+
+  @override
+  String get portfolioDividendsAllTime => 'ทั้งหมด';
+
+  @override
+  String get portfolioAddDividend => 'เพิ่มเงินปันผล';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'จำนวนเงินที่ได้รับ ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'วันที่จ่าย';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'ยังไม่มีการบันทึกเงินปันผล เพิ่มด้วยตนเอง หรือนำเข้าไฟล์ส่งออกจากโบรกเกอร์ของคุณ ระบบจะดึงแถวเงินปันผลมาด้วย';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'เพิ่มเงินปันผล $count รายการแล้ว',
+      one: 'เพิ่มเงินปันผล 1 รายการแล้ว',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'ส่งออกเงินปันผล (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'ลบเงินปันผลแล้ว';
+
+  @override
+  String get portfolioDividendsHint =>
+      'จำนวนเงินตามที่เข้าบัญชีของคุณ ในสกุลเงินที่จ่าย ยอดรวมแปลงด้วยอัตราวันนี้ สำหรับการยื่นภาษี โปรดใช้รายงานจากโบรกเกอร์ของคุณ';
 }

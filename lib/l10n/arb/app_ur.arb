@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "{symbols} کے لیے موجودہ قیمت دستیاب نہیں۔",
   "eventsRecentResults": "حال ہی میں رپورٹ شدہ نتائج",
   "saveToNotes": "میرے نوٹس میں محفوظ کریں",
-  "savedToNotes": "آپ کے نوٹس میں محفوظ ہو گیا"
+  "savedToNotes": "آپ کے نوٹس میں محفوظ ہو گیا",
+  "portfolioDividendsReceived": "موصول شدہ ڈیویڈنڈ",
+  "portfolioDividendsThisYear": "اس سال",
+  "portfolioDividendsAllTime": "اب تک کل",
+  "portfolioAddDividend": "ڈیویڈنڈ شامل کریں",
+  "portfolioDividendAmount": "موصول شدہ رقم ({currency})",
+  "portfolioDividendDate": "ادائیگی کی تاریخ",
+  "portfolioDividendsEmpty": "ابھی تک کوئی ڈیویڈنڈ ریکارڈ نہیں ہوا۔ ہاتھ سے شامل کریں، یا اپنے بروکر کی ایکسپورٹ فائل امپورٹ کریں – اس کی ڈیویڈنڈ قطاریں بھی لے لی جاتی ہیں۔",
+  "portfolioDividendsImported": "{count, plural, =1{1 ڈیویڈنڈ شامل کیا گیا} other{{count} ڈیویڈنڈ شامل کیے گئے}}",
+  "portfolioExportDividends": "ڈیویڈنڈ ایکسپورٹ کریں (CSV)",
+  "portfolioDividendDeleted": "ڈیویڈنڈ حذف کر دیا گیا",
+  "portfolioDividendsHint": "رقمیں جیسے آپ کے اکاؤنٹ میں آئیں، ادائیگی کی کرنسی میں؛ کل رقمیں آج کے ریٹ پر تبدیل کی جاتی ہیں۔ ٹیکس ریٹرن کے لیے اپنے بروکر کا اسٹیٹمنٹ استعمال کریں۔"
 }

@@ -2529,4 +2529,49 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get savedToNotes => 'በማስታወሻዎችዎ ተቀምጧል';
+
+  @override
+  String get portfolioDividendsReceived => 'የተቀበሉት የትርፍ ድርሻዎች';
+
+  @override
+  String get portfolioDividendsThisYear => 'በዚህ ዓመት';
+
+  @override
+  String get portfolioDividendsAllTime => 'ሁሉም ጊዜ';
+
+  @override
+  String get portfolioAddDividend => 'የትርፍ ድርሻ ያክሉ';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'የተቀበሉት መጠን ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'የክፍያ ቀን';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'እስካሁን የተመዘገበ የትርፍ ድርሻ የለም። በእጅ ያክሉ፣ ወይም የደላላዎን ወጪ ፋይል ያስመጡ – የትርፍ ድርሻ ረድፎቹም ይወሰዳሉ።';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count የትርፍ ድርሻዎች ታክለዋል',
+      one: '1 የትርፍ ድርሻ ታክሏል',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'የትርፍ ድርሻዎችን ላክ (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'የትርፍ ድርሻ ተሰርዟል';
+
+  @override
+  String get portfolioDividendsHint =>
+      'መጠኖቹ በመለያዎ ላይ እንደደረሱ፣ በክፍያው ምንዛሬ ናቸው፤ ድምሮች በዛሬው ዋጋ ይቀየራሉ። ለግብር መግለጫዎ የደላላዎን መግለጫ ይጠቀሙ።';
 }

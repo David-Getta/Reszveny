@@ -2535,4 +2535,49 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get savedToNotes => 'ເກັບໄວ້ໃນບັນທຶກຂອງທ່ານແລ້ວ';
+
+  @override
+  String get portfolioDividendsReceived => 'ເງິນປັນຜົນທີ່ໄດ້ຮັບ';
+
+  @override
+  String get portfolioDividendsThisYear => 'ປີນີ້';
+
+  @override
+  String get portfolioDividendsAllTime => 'ທັງໝົດ';
+
+  @override
+  String get portfolioAddDividend => 'ເພີ່ມເງິນປັນຜົນ';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'ຈຳນວນທີ່ໄດ້ຮັບ ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'ວັນທີຈ່າຍ';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'ຍັງບໍ່ມີເງິນປັນຜົນທີ່ບັນທຶກໄວ້. ເພີ່ມດ້ວຍຕົນເອງ ຫຼື ນຳເຂົ້າໄຟລ໌ສົ່ງອອກຈາກໂບຣກເກີຂອງທ່ານ – ແຖວເງິນປັນຜົນຂອງມັນກໍຈະຖືກເກັບເຊັ່ນກັນ.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ເພີ່ມເງິນປັນຜົນ $count ລາຍການແລ້ວ',
+      one: 'ເພີ່ມເງິນປັນຜົນ 1 ລາຍການແລ້ວ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'ສົ່ງອອກເງິນປັນຜົນ (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'ລຶບເງິນປັນຜົນແລ້ວ';
+
+  @override
+  String get portfolioDividendsHint =>
+      'ຈຳນວນເງິນຕາມທີ່ເຂົ້າບັນຊີຂອງທ່ານ ໃນສະກຸນເງິນທີ່ຈ່າຍ; ຍອດລວມຖືກແປງຕາມອັດຕາມື້ນີ້. ສຳລັບການແຈ້ງພາສີ ໃຫ້ໃຊ້ໃບລາຍງານຈາກໂບຣກເກີຂອງທ່ານ.';
 }

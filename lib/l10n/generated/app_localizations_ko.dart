@@ -2492,4 +2492,49 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get savedToNotes => '메모에 저장됨';
+
+  @override
+  String get portfolioDividendsReceived => '수령한 배당금';
+
+  @override
+  String get portfolioDividendsThisYear => '올해';
+
+  @override
+  String get portfolioDividendsAllTime => '전체 기간';
+
+  @override
+  String get portfolioAddDividend => '배당금 추가';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return '수령 금액 ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => '지급일';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      '아직 기록된 배당금이 없습니다. 직접 추가하거나 증권사 내보내기 파일을 가져오세요. 배당금 행도 함께 인식됩니다.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '배당금 $count건이 추가되었습니다',
+      one: '배당금 1건이 추가되었습니다',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => '배당금 내보내기 (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => '배당금이 삭제되었습니다';
+
+  @override
+  String get portfolioDividendsHint =>
+      '금액은 계좌에 입금된 그대로 지급 통화로 표시되며, 합계는 오늘 환율로 환산됩니다. 세금 신고에는 증권사 명세서를 사용하세요.';
 }

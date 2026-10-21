@@ -2541,4 +2541,49 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get savedToNotes => 'បានរក្សាទុកក្នុងកំណត់ចំណាំរបស់អ្នក';
+
+  @override
+  String get portfolioDividendsReceived => 'ភាគលាភដែលបានទទួល';
+
+  @override
+  String get portfolioDividendsThisYear => 'ឆ្នាំនេះ';
+
+  @override
+  String get portfolioDividendsAllTime => 'គ្រប់ពេល';
+
+  @override
+  String get portfolioAddDividend => 'បន្ថែមភាគលាភ';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'ចំនួនទឹកប្រាក់ដែលបានទទួល ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'កាលបរិច្ឆេទទូទាត់';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'មិនទាន់មានភាគលាភបានកត់ត្រានៅឡើយទេ។ បន្ថែមដោយដៃ ឬនាំចូលឯកសារនាំចេញពីឈ្មួញកណ្តាលរបស់អ្នក – ជួរភាគលាភរបស់វាក៏ត្រូវបានយកផងដែរ។';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'បានបន្ថែមភាគលាភ $count',
+      one: 'បានបន្ថែមភាគលាភ 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'នាំចេញភាគលាភ (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'បានលុបភាគលាភ';
+
+  @override
+  String get portfolioDividendsHint =>
+      'ចំនួនទឹកប្រាក់ដូចដែលបានមកដល់គណនីរបស់អ្នក ជារូបិយប័ណ្ណនៃការទូទាត់; សរុបត្រូវបានប្តូរតាមអត្រាថ្ងៃនេះ។ សម្រាប់ការប្រកាសពន្ធ សូមប្រើរបាយការណ៍ឈ្មួញកណ្តាលរបស់អ្នក។';
 }

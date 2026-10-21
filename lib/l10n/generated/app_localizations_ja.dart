@@ -2483,4 +2483,49 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get savedToNotes => 'メモに保存しました';
+
+  @override
+  String get portfolioDividendsReceived => '受取配当金';
+
+  @override
+  String get portfolioDividendsThisYear => '今年';
+
+  @override
+  String get portfolioDividendsAllTime => '累計';
+
+  @override
+  String get portfolioAddDividend => '配当を追加';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return '受取金額（$currency）';
+  }
+
+  @override
+  String get portfolioDividendDate => '支払日';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      '配当はまだ記録されていません。手動で追加するか、証券会社のエクスポートをインポートしてください。配当の行も取り込まれます。';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '配当$count件を追加しました',
+      one: '配当1件を追加しました',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => '配当をエクスポート（CSV）';
+
+  @override
+  String get portfolioDividendDeleted => '配当を削除しました';
+
+  @override
+  String get portfolioDividendsHint =>
+      '金額は口座に入金されたとおりの支払通貨で表示し、合計は本日のレートで換算しています。確定申告には証券会社の報告書をご利用ください。';
 }

@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Fifia asi aɖeke meli na {symbols} o.",
   "eventsRecentResults": "Akɔntabubu siwo woɖe gbeƒã nyitsɔ laa",
   "saveToNotes": "Dzra ɖo ɖe nye nuŋlɔɖiwo me",
-  "savedToNotes": "Wodzrae ɖo ɖe wò nuŋlɔɖiwo me"
+  "savedToNotes": "Wodzrae ɖo ɖe wò nuŋlɔɖiwo me",
+  "portfolioDividendsReceived": "Dividend siwo woxɔ",
+  "portfolioDividendsThisYear": "Ƒe sia",
+  "portfolioDividendsAllTime": "Ɣeyiɣiawo katã",
+  "portfolioAddDividend": "Tsɔ dividend kpe ɖe eŋu",
+  "portfolioDividendAmount": "Ga si woxɔ ({currency})",
+  "portfolioDividendDate": "Fexexe ŋkeke",
+  "portfolioDividendsEmpty": "Womeŋlɔ dividend aɖeke ɖi haɖe o. Tsɔ asi ŋlɔe, alo tsɔ wò broker ƒe export vɛ – wotsɔa eƒe dividend fliawo hã.",
+  "portfolioDividendsImported": "{count, plural, =1{Wotsɔ dividend 1 kpe ɖe eŋu} other{Wotsɔ dividend {count} kpe ɖe eŋu}}",
+  "portfolioExportDividends": "Ɖe dividendwo ɖe go (CSV)",
+  "portfolioDividendDeleted": "Wotutu dividend la",
+  "portfolioDividendsHint": "Ga home siwo va wò akɔnta dzi tututu, le fexexe ƒe gaŋkɔ me; wotrɔa ƒuƒoƒowo le egbe ƒe asi nu. Na wò adzɔxexe ƒe agbalẽ la, zã wò broker ƒe akɔnta agbalẽ."
 }

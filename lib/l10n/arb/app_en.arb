@@ -2041,7 +2041,7 @@
   },
   "instrumentTitle": "About this instrument",
   "@instrumentTitle": {
-    "description": "Title of the card on a stock page shown when the ticker has no company profile (an ETF, a fund, an ADR\u2026)."
+    "description": "Title of the card on a stock page shown when the ticker has no company profile (an ETF, a fund, an ADR…)."
   },
   "instrumentHint": "There is no company profile for this symbol – it may be an ETF, a fund or a depositary receipt. Ask the AI what it is, what it holds and what it costs.",
   "@instrumentHint": {
@@ -2058,12 +2058,20 @@
   "suggestAskAi": "Ask the AI: “{query}”",
   "@suggestAskAi": {
     "description": "Suggestion row under the search field when the typed text looks like a description (e.g. \"tech 100 etf\") and the market search finds nothing: tapping it asks the AI which stock or ETF is meant.",
-    "placeholders": {"query": {"type": "String"}}
+    "placeholders": {
+      "query": {
+        "type": "String"
+      }
+    }
   },
   "portfolioNoPriceFor": "No current price for {symbols}.",
   "@portfolioNoPriceFor": {
     "description": "Note on the portfolio card and page naming the positions that have no current price (e.g. a non-US stock the data provider does not cover), so the total leaves them out. {symbols} is a comma-separated list of tickers.",
-    "placeholders": {"symbols": {"type": "String"}}
+    "placeholders": {
+      "symbols": {
+        "type": "String"
+      }
+    }
   },
   "eventsRecentResults": "Recently reported",
   "@eventsRecentResults": {
@@ -2076,5 +2084,60 @@
   "savedToNotes": "Saved to your notes",
   "@savedToNotes": {
     "description": "The same button after saving (disabled, with a check mark)."
+  },
+  "portfolioDividendsReceived": "Dividends received",
+  "@portfolioDividendsReceived": {
+    "description": "Card title on the portfolio page and a figure on the stock page: cash dividends the user actually received."
+  },
+  "portfolioDividendsThisYear": "This year",
+  "@portfolioDividendsThisYear": {
+    "description": "Label of the dividends received in the current calendar year."
+  },
+  "portfolioDividendsAllTime": "All time",
+  "@portfolioDividendsAllTime": {
+    "description": "Label of all dividends received so far."
+  },
+  "portfolioAddDividend": "Add dividend",
+  "@portfolioAddDividend": {
+    "description": "Button and dialog title for recording a dividend payment by hand."
+  },
+  "portfolioDividendAmount": "Amount received ({currency})",
+  "@portfolioDividendAmount": {
+    "description": "Field label in the add-dividend dialog: the total cash received, after tax.",
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD"
+      }
+    }
+  },
+  "portfolioDividendDate": "Payment date",
+  "@portfolioDividendDate": {
+    "description": "Date row in the add-dividend dialog."
+  },
+  "portfolioDividendsEmpty": "No dividends recorded yet. Add them by hand, or import your broker's export – its dividend rows are picked up too.",
+  "@portfolioDividendsEmpty": {
+    "description": "Empty state of the dividends card."
+  },
+  "portfolioDividendsImported": "{count, plural, =1{1 dividend added} other{{count} dividends added}}",
+  "@portfolioDividendsImported": {
+    "description": "After importing a broker export: how many dividend payments were added.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "portfolioExportDividends": "Export dividends (CSV)",
+  "@portfolioExportDividends": {
+    "description": "Menu item: share the received dividends as a CSV file."
+  },
+  "portfolioDividendDeleted": "Dividend deleted",
+  "@portfolioDividendDeleted": {
+    "description": "Snackbar after deleting a dividend record; an Undo button follows."
+  },
+  "portfolioDividendsHint": "Amounts as they arrived on your account, in the payout currency; totals are converted at today's rate. For your tax return, use your broker's statement.",
+  "@portfolioDividendsHint": {
+    "description": "Small print under the dividends card."
   }
 }

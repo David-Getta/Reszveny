@@ -2585,4 +2585,49 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Gardado nas túas notas';
+
+  @override
+  String get portfolioDividendsReceived => 'Dividendos recibidos';
+
+  @override
+  String get portfolioDividendsThisYear => 'Este ano';
+
+  @override
+  String get portfolioDividendsAllTime => 'Histórico';
+
+  @override
+  String get portfolioAddDividend => 'Engadir dividendo';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Importe recibido ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Data de pagamento';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Aínda non hai dividendos rexistrados. Engádeos a man ou importa a exportación do teu corredor: as súas filas de dividendos tamén se recollen.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dividendos engadidos',
+      one: '1 dividendo engadido',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Exportar dividendos (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividendo eliminado';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Importes tal como chegaron á túa conta, na moeda de pagamento; os totais convértense ao cambio de hoxe. Para a declaración da renda, usa o extracto do teu corredor.';
 }

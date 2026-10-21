@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "A ku na nxavo wa sweswi wa {symbols}.",
   "eventsRecentResults": "Mbuyelo lowu ha ku vikiwaka",
   "saveToNotes": "Hlayisa eka tinotsi ta mina",
-  "savedToNotes": "Yi hlayisiwile eka tinotsi ta wena"
+  "savedToNotes": "Yi hlayisiwile eka tinotsi ta wena",
+  "portfolioDividendsReceived": "Tidividende leti amukeriweke",
+  "portfolioDividendsThisYear": "Lembe leri",
+  "portfolioDividendsAllTime": "Hinkwaswo",
+  "portfolioAddDividend": "Engetela dividende",
+  "portfolioDividendAmount": "Mali leyi amukeriweke ({currency})",
+  "portfolioDividendDate": "Siku ra ku hakela",
+  "portfolioDividendsEmpty": "A ku na tidividende leti tsariweke ku fikela sweswi. Ti engetele hi voko, kumbe u nghenisa fayili ya export ya broker wa wena – mitila ya yona ya tidividende na yona ya tekiwa.",
+  "portfolioDividendsImported": "{count, plural, =1{Dividende 1 yi engeteriwile} other{Tidividende ta {count} ti engeteriwile}}",
+  "portfolioExportDividends": "Humesa tidividende (CSV)",
+  "portfolioDividendDeleted": "Dividende yi susiwile",
+  "portfolioDividendsHint": "Mali hilaha yi fikeke eka akhawunti ya wena, hi mali ya ku hakela; tinhlayo hinkwato ti hundzuluxiwa hi mpimo wa namuntlha. Eka xibalo xa wena, tirhisa xitatimende xa broker wa wena."
 }

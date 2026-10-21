@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "{symbols}-д одоогийн үнэ байхгүй.",
   "eventsRecentResults": "Саяхан гарсан тайлан",
   "saveToNotes": "Миний тэмдэглэлд хадгалах",
-  "savedToNotes": "Таны тэмдэглэлд хадгалагдсан"
+  "savedToNotes": "Таны тэмдэглэлд хадгалагдсан",
+  "portfolioDividendsReceived": "Хүлээн авсан ногдол ашиг",
+  "portfolioDividendsThisYear": "Энэ жил",
+  "portfolioDividendsAllTime": "Нийт",
+  "portfolioAddDividend": "Ногдол ашиг нэмэх",
+  "portfolioDividendAmount": "Хүлээн авсан дүн ({currency})",
+  "portfolioDividendDate": "Төлбөрийн огноо",
+  "portfolioDividendsEmpty": "Ногдол ашиг бүртгэгдээгүй байна. Гараар нэмэх, эсвэл брокерийнхоо экспортыг импортлоорой – түүний ногдол ашгийн мөрүүд ч мөн уншигдана.",
+  "portfolioDividendsImported": "{count, plural, =1{1 ногдол ашиг нэмэгдсэн} other{{count} ногдол ашиг нэмэгдсэн}}",
+  "portfolioExportDividends": "Ногдол ашгийг экспортлох (CSV)",
+  "portfolioDividendDeleted": "Ногдол ашгийг устгасан",
+  "portfolioDividendsHint": "Дүнгүүд таны данс руу орж ирсэн хэлбэрээр, төлбөрийн валютаар; нийлбэрийг өнөөдрийн ханшаар хөрвүүлнэ. Татварын тайландаа брокерийнхоо хуулгыг ашиглана уу."
 }

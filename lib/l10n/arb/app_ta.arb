@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "{symbols}-க்கு தற்போதைய விலை கிடைக்கவில்லை.",
   "eventsRecentResults": "சமீபத்தில் அறிவிக்கப்பட்ட முடிவுகள்",
   "saveToNotes": "எனது குறிப்புகளில் சேமி",
-  "savedToNotes": "உங்கள் குறிப்புகளில் சேமிக்கப்பட்டது"
+  "savedToNotes": "உங்கள் குறிப்புகளில் சேமிக்கப்பட்டது",
+  "portfolioDividendsReceived": "பெறப்பட்ட ஈவுத்தொகை",
+  "portfolioDividendsThisYear": "இந்த ஆண்டு",
+  "portfolioDividendsAllTime": "இதுவரை மொத்தம்",
+  "portfolioAddDividend": "ஈவுத்தொகையைச் சேர்",
+  "portfolioDividendAmount": "பெறப்பட்ட தொகை ({currency})",
+  "portfolioDividendDate": "செலுத்திய தேதி",
+  "portfolioDividendsEmpty": "இதுவரை ஈவுத்தொகை எதுவும் பதிவு செய்யப்படவில்லை. கைமுறையாகச் சேர்க்கவும், அல்லது உங்கள் புரோக்கரின் ஏற்றுமதி கோப்பை இறக்குமதி செய்யவும் – அதில் உள்ள ஈவுத்தொகை வரிசைகளும் எடுக்கப்படும்.",
+  "portfolioDividendsImported": "{count, plural, =1{1 ஈவுத்தொகை சேர்க்கப்பட்டது} other{{count} ஈவுத்தொகைகள் சேர்க்கப்பட்டன}}",
+  "portfolioExportDividends": "ஈவுத்தொகையை ஏற்றுமதி செய் (CSV)",
+  "portfolioDividendDeleted": "ஈவுத்தொகை நீக்கப்பட்டது",
+  "portfolioDividendsHint": "தொகைகள் உங்கள் கணக்கில் வந்தபடியே, செலுத்தப்பட்ட நாணயத்தில்; மொத்தங்கள் இன்றைய விகிதத்தில் மாற்றப்படுகின்றன. வரி அறிக்கைக்கு உங்கள் புரோக்கரின் அறிக்கையைப் பயன்படுத்தவும்."
 }

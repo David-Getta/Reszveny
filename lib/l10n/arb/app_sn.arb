@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Hapana mutengo wazvino we {symbols}.",
   "eventsRecentResults": "Mhedzisiro ichangoziviswa",
   "saveToNotes": "Chengetedza muzvinyorwa zvangu",
-  "savedToNotes": "Zvachengetedzwa muzvinyorwa zvako"
+  "savedToNotes": "Zvachengetedzwa muzvinyorwa zvako",
+  "portfolioDividendsReceived": "Madividendi akagamuchirwa",
+  "portfolioDividendsThisYear": "Gore rino",
+  "portfolioDividendsAllTime": "Zvose kusvika zvino",
+  "portfolioAddDividend": "Wedzera dividendi",
+  "portfolioDividendAmount": "Mari yakagamuchirwa ({currency})",
+  "portfolioDividendDate": "Zuva rekubhadhara",
+  "portfolioDividendsEmpty": "Hapana madividendi akanyorwa parizvino. Awedzere nemaoko, kana kuti pinza faira re-export rebroker wako – mitsara yaro yemadividendi inotorwawo.",
+  "portfolioDividendsImported": "{count, plural, =1{Dividendi 1 rawedzerwa} other{Madividendi {count} awedzerwa}}",
+  "portfolioExportDividends": "Buditsa madividendi (CSV)",
+  "portfolioDividendDeleted": "Dividendi radzimwa",
+  "portfolioDividendsHint": "Mari sezvayakasvika muakaunti yako, mumari yekubhadhara; zvose zvinoshandurwa nemutengo wanhasi. Pamutero wako, shandisa chinyorwa chebroker wako."
 }

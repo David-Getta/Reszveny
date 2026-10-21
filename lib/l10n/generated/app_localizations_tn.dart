@@ -2580,4 +2580,49 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get savedToNotes => 'E bolokilwe mo dintlheng tsa gago';
+
+  @override
+  String get portfolioDividendsReceived => 'Dividente tse di amogetsweng';
+
+  @override
+  String get portfolioDividendsThisYear => 'Ngwaga ono';
+
+  @override
+  String get portfolioDividendsAllTime => 'Tsotlhe';
+
+  @override
+  String get portfolioAddDividend => 'Oketsa dividente';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Madi a a amogetsweng ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Letlha la tuelo';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Ga go na dividente tse di kwadilweng go fitlha jaanong. Di oketse ka seatla, kgotsa o tsenye faele ya export ya broker wa gago – mela ya yone ya dividente le yone e a tsewa.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Dividente tse $count di oketswe',
+      one: 'Dividente e 1 e oketswe',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Ntsha dividente (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividente e phimotswe';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Madi jaaka a gorogile mo akhaontong ya gago, ka madi a tuelo; dipalogotlhe di fetolelwa ka reiti ya gompieno. Mo lekgethong la gago, dirisa setatemente sa broker wa gago.';
 }

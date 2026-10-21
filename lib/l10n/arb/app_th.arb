@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "ไม่มีราคาปัจจุบันสำหรับ {symbols}",
   "eventsRecentResults": "ผลประกอบการที่รายงานล่าสุด",
   "saveToNotes": "เก็บไว้ในบันทึกของฉัน",
-  "savedToNotes": "เก็บไว้ในบันทึกของคุณแล้ว"
+  "savedToNotes": "เก็บไว้ในบันทึกของคุณแล้ว",
+  "portfolioDividendsReceived": "เงินปันผลที่ได้รับ",
+  "portfolioDividendsThisYear": "ปีนี้",
+  "portfolioDividendsAllTime": "ทั้งหมด",
+  "portfolioAddDividend": "เพิ่มเงินปันผล",
+  "portfolioDividendAmount": "จำนวนเงินที่ได้รับ ({currency})",
+  "portfolioDividendDate": "วันที่จ่าย",
+  "portfolioDividendsEmpty": "ยังไม่มีการบันทึกเงินปันผล เพิ่มด้วยตนเอง หรือนำเข้าไฟล์ส่งออกจากโบรกเกอร์ของคุณ ระบบจะดึงแถวเงินปันผลมาด้วย",
+  "portfolioDividendsImported": "{count, plural, =1{เพิ่มเงินปันผล 1 รายการแล้ว} other{เพิ่มเงินปันผล {count} รายการแล้ว}}",
+  "portfolioExportDividends": "ส่งออกเงินปันผล (CSV)",
+  "portfolioDividendDeleted": "ลบเงินปันผลแล้ว",
+  "portfolioDividendsHint": "จำนวนเงินตามที่เข้าบัญชีของคุณ ในสกุลเงินที่จ่าย ยอดรวมแปลงด้วยอัตราวันนี้ สำหรับการยื่นภาษี โปรดใช้รายงานจากโบรกเกอร์ของคุณ"
 }

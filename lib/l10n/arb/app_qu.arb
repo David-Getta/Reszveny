@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "{symbols}-paq kunan chaninnin mana kanchu.",
   "eventsRecentResults": "Chayraq willakusqa willakuykuna",
   "saveToNotes": "Qillqasqaykunaman waqaychay",
-  "savedToNotes": "Qillqasqaykikunaman waqaychasqa"
+  "savedToNotes": "Qillqasqaykikunaman waqaychasqa",
+  "portfolioDividendsReceived": "Chaskisqa dividendokuna",
+  "portfolioDividendsThisYear": "Kay wata",
+  "portfolioDividendsAllTime": "Tukuy pacha",
+  "portfolioAddDividend": "Dividendota yapay",
+  "portfolioDividendAmount": "Chaskisqa qullqi ({currency})",
+  "portfolioDividendDate": "Pagana p'unchaw",
+  "portfolioDividendsEmpty": "Manaraq ima dividendopas qillqasqachu. Makiwan yapay, utaq brokerniykipa exportninta apamuy – chaypi dividendo siq'ikunapas hap'isqa kanku.",
+  "portfolioDividendsImported": "{count, plural, =1{1 dividendo yapasqa} other{{count} dividendokuna yapasqa}}",
+  "portfolioExportDividends": "Dividendokunata lluqsichiy (CSV)",
+  "portfolioDividendDeleted": "Dividendo qulluchisqa",
+  "portfolioDividendsHint": "Qullqikuna imaynam cuentaykiman chayamurqan hina, pagana qullqipi; tukuy yupaykuna kunan p'unchaw chaninwan tikrasqa. Impuesto willakuyniykipaq, brokerniykipa willakuyninta llamk'achiy."
 }

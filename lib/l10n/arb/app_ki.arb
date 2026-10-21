@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Gũtirĩ thogora wa rĩu wa {symbols}.",
   "eventsRecentResults": "Maumĩrĩra marĩa maheanirwo ica ikuhĩ",
   "saveToNotes": "Iga maandĩko-inĩ makwa",
-  "savedToNotes": "Nĩyaigĩtwo maandĩko-inĩ maku"
+  "savedToNotes": "Nĩyaigĩtwo maandĩko-inĩ maku",
+  "portfolioDividendsReceived": "Mĩgai ya faida yamũkĩrĩtwo",
+  "portfolioDividendsThisYear": "Mwaka ũyũ",
+  "portfolioDividendsAllTime": "Mahinda mothe",
+  "portfolioAddDividend": "Ongerera mũgai wa faida",
+  "portfolioDividendAmount": "Mbeca iria ciamũkĩrĩtwo ({currency})",
+  "portfolioDividendDate": "Mũthenya wa kũrĩha",
+  "portfolioDividendsEmpty": "Gũtirĩ mũgai wa faida wandĩkĩtwo o na ũmwe. Mongerere na guoko, kana ũrehe export ya broker waku – mĩhari yayo ya mĩgai ya faida o nayo nĩ yoyagwo.",
+  "portfolioDividendsImported": "{count, plural, =1{Mũgai wa faida 1 nĩwongereirwo} other{Mĩgai ya faida {count} nĩyongereirwo}}",
+  "portfolioExportDividends": "Ruta mĩgai ya faida (CSV)",
+  "portfolioDividendDeleted": "Mũgai wa faida nĩweherio",
+  "portfolioDividendsHint": "Mbeca o ta ũrĩa ciakinyire akaũnti-inĩ yaku, na mbeca cia kũrĩhwo; mũigana wothe ũgarũragwo na thogora wa ũmũthĩ. Nĩ ũndũ wa riboti yaku ya mũthiaro, hũthĩra riboti ya broker waku."
 }

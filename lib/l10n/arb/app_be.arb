@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Няма актуальнай цаны для {symbols}.",
   "eventsRecentResults": "Нядаўна апублікаваныя вынікі",
   "saveToNotes": "Захаваць у мае нататкі",
-  "savedToNotes": "Захавана ў вашых нататках"
+  "savedToNotes": "Захавана ў вашых нататках",
+  "portfolioDividendsReceived": "Атрыманыя дывідэнды",
+  "portfolioDividendsThisYear": "Сёлета",
+  "portfolioDividendsAllTime": "За ўвесь час",
+  "portfolioAddDividend": "Дадаць дывідэнд",
+  "portfolioDividendAmount": "Атрыманая сума ({currency})",
+  "portfolioDividendDate": "Дата выплаты",
+  "portfolioDividendsEmpty": "Дывідэнды пакуль не запісаныя. Дадайце іх уручную або імпартуйце экспарт вашага брокера – радкі з дывідэндамі таксама падхопяцца.",
+  "portfolioDividendsImported": "{count, plural, =1{Дададзены 1 дывідэнд} one{Дададзены {count} дывідэнд} few{Дададзена {count} дывідэнды} many{Дададзена {count} дывідэндаў} other{Дададзена {count} дывідэнду}}",
+  "portfolioExportDividends": "Экспартаваць дывідэнды (CSV)",
+  "portfolioDividendDeleted": "Дывідэнд выдалены",
+  "portfolioDividendsHint": "Сумы такія, як яны прыйшлі на ваш рахунак, у валюце выплаты; вынікі пераводзяцца па сённяшнім курсе. Для падатковай дэкларацыі карыстайцеся выпіскай вашага брокера."
 }

@@ -2560,4 +2560,49 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Ti fi pamọ́ sí àwọn àkọsílẹ̀ rẹ';
+
+  @override
+  String get portfolioDividendsReceived => 'Ìpín èrè tí o gbà';
+
+  @override
+  String get portfolioDividendsThisYear => 'Ọdún yìí';
+
+  @override
+  String get portfolioDividendsAllTime => 'Láti ìbẹ̀rẹ̀';
+
+  @override
+  String get portfolioAddDividend => 'Fi ìpín èrè kún';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Owó tí o gbà ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Ọjọ́ ìsanwó';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Kò sí ìpín èrè tí a kọ sílẹ̀ síbẹ̀. Fi wọ́n kún pẹ̀lú ọwọ́, tàbí kí o gbé fáìlì export broker rẹ wọlé – a ó mú àwọn ìlà ìpín èrè inú rẹ̀ pẹ̀lú.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'A fi ìpín èrè $count kún',
+      one: 'A fi ìpín èrè 1 kún',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Gbé ìpín èrè jáde (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'A ti pa ìpín èrè rẹ́';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Owó gẹ́gẹ́ bí ó ṣe wọ àkáǹtì rẹ, nínú owó ìsanwó; a yí àpapọ̀ padà ní ìwọ̀n òní. Fún ìkéde owó-orí rẹ, lo ìwé àkọsílẹ̀ broker rẹ.';
 }

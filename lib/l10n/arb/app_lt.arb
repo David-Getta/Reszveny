@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Nėra dabartinės {symbols} kainos.",
   "eventsRecentResults": "Neseniai paskelbti rezultatai",
   "saveToNotes": "Išsaugoti mano užrašuose",
-  "savedToNotes": "Išsaugota jūsų užrašuose"
+  "savedToNotes": "Išsaugota jūsų užrašuose",
+  "portfolioDividendsReceived": "Gauti dividendai",
+  "portfolioDividendsThisYear": "Šiemet",
+  "portfolioDividendsAllTime": "Per visą laiką",
+  "portfolioAddDividend": "Pridėti dividendą",
+  "portfolioDividendAmount": "Gauta suma ({currency})",
+  "portfolioDividendDate": "Išmokėjimo data",
+  "portfolioDividendsEmpty": "Dividendų dar neįrašyta. Pridėkite juos ranka arba importuokite savo brokerio eksportą – jo dividendų eilutės taip pat nuskaitomos.",
+  "portfolioDividendsImported": "{count, plural, =1{Pridėtas 1 dividendas} one{Pridėtas {count} dividendas} few{Pridėti {count} dividendai} many{Pridėta {count} dividendo} other{Pridėta {count} dividendų}}",
+  "portfolioExportDividends": "Eksportuoti dividendus (CSV)",
+  "portfolioDividendDeleted": "Dividendas ištrintas",
+  "portfolioDividendsHint": "Sumos tokios, kokios atėjo į jūsų sąskaitą, išmokėjimo valiuta; bendros sumos konvertuojamos šiandienos kursu. Mokesčių deklaracijai naudokite savo brokerio išrašą."
 }

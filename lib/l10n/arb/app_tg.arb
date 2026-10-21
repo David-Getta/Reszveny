@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Барои {symbols} нархи ҷорӣ мавҷуд нест.",
   "eventsRecentResults": "Натиҷаҳои ба наздикӣ эълоншуда",
   "saveToNotes": "Ба қайдҳои ман нигоҳ доштан",
-  "savedToNotes": "Дар қайдҳои шумо нигоҳ дошта шуд"
+  "savedToNotes": "Дар қайдҳои шумо нигоҳ дошта шуд",
+  "portfolioDividendsReceived": "Дивидендҳои гирифташуда",
+  "portfolioDividendsThisYear": "Соли ҷорӣ",
+  "portfolioDividendsAllTime": "Дар маҷмӯъ",
+  "portfolioAddDividend": "Илова кардани дивиденд",
+  "portfolioDividendAmount": "Маблағи гирифташуда ({currency})",
+  "portfolioDividendDate": "Санаи пардохт",
+  "portfolioDividendsEmpty": "Ҳоло ягон дивиденд сабт нашудааст. Онҳоро дастӣ илова кунед ё содироти брокери худро ворид кунед – сатрҳои дивиденди он ҳам гирифта мешаванд.",
+  "portfolioDividendsImported": "{count, plural, =1{1 дивиденд илова шуд} other{{count} дивиденд илова шуд}}",
+  "portfolioExportDividends": "Содироти дивидендҳо (CSV)",
+  "portfolioDividendDeleted": "Дивиденд нест карда шуд",
+  "portfolioDividendsHint": "Маблағҳо тавре ки ба ҳисоби шумо омадаанд, бо асъори пардохт; ҷамъбастҳо бо қурби имрӯза табдил дода мешаванд. Барои эъломияи андоз ҳисоботи брокери худро истифода баред."
 }

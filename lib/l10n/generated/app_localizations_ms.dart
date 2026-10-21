@@ -2567,4 +2567,49 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Disimpan dalam nota anda';
+
+  @override
+  String get portfolioDividendsReceived => 'Dividen diterima';
+
+  @override
+  String get portfolioDividendsThisYear => 'Tahun ini';
+
+  @override
+  String get portfolioDividendsAllTime => 'Sepanjang masa';
+
+  @override
+  String get portfolioAddDividend => 'Tambah dividen';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Jumlah diterima ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Tarikh pembayaran';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Belum ada dividen direkodkan. Tambah secara manual, atau import eksport daripada broker anda – baris dividennya turut diambil.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dividen ditambah',
+      one: '1 dividen ditambah',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Eksport dividen (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividen dipadamkan';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Jumlah seperti yang diterima dalam akaun anda, dalam mata wang pembayaran; jumlah keseluruhan ditukar pada kadar hari ini. Untuk penyata cukai, gunakan penyata broker anda.';
 }

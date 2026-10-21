@@ -2556,4 +2556,49 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Mooftaama e binndi maa';
+
+  @override
+  String get portfolioDividendsReceived => 'Dividendeeji heɓaaɗi';
+
+  @override
+  String get portfolioDividendsThisYear => 'Hitaande ndee';
+
+  @override
+  String get portfolioDividendsAllTime => 'Sahaa fof';
+
+  @override
+  String get portfolioAddDividend => 'Ɓeydu dividende';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Keewal heɓaangal ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Ñalnde yoɓdi';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Dividende winndaaka tawo. Ɓeydu ɗum e junngo, walla naatnu export broker maa – gorol dividende makko kadi ƴettete.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Dividendeeji $count ɓeydaama',
+      one: 'Dividende 1 ɓeydaama',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Yaltin dividendeeji (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividende momtaama';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Keeweele no ɗe ari e konte maa, e kaalis yoɓdi; kuuɓtidinal waylete e coggu hannde. Ngam winndannde lempoo maa, huutoro ɓataake broker maa.';
 }

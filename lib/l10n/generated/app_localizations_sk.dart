@@ -2628,4 +2628,51 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Uložené do vašich poznámok';
+
+  @override
+  String get portfolioDividendsReceived => 'Prijaté dividendy';
+
+  @override
+  String get portfolioDividendsThisYear => 'Tento rok';
+
+  @override
+  String get portfolioDividendsAllTime => 'Celkovo';
+
+  @override
+  String get portfolioAddDividend => 'Pridať dividendu';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Prijatá suma ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Dátum výplaty';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Zatiaľ nie sú zaznamenané žiadne dividendy. Pridajte ich ručne alebo importujte export od svojho brokera – načítajú sa aj riadky s dividendami.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Pridaných $count dividend',
+      many: 'Pridaných $count dividendy',
+      few: 'Pridané $count dividendy',
+      one: 'Pridaná 1 dividenda',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Exportovať dividendy (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividenda odstránená';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Sumy tak, ako prišli na váš účet, v mene výplaty; súčty sa prepočítavajú dnešným kurzom. Na daňové priznanie použite výpis od svojho brokera.';
 }

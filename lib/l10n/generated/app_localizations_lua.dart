@@ -2569,4 +2569,49 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Mmalame mu mifundu yebe';
+
+  @override
+  String get portfolioDividendsReceived => 'Dividende idi bapete';
+
+  @override
+  String get portfolioDividendsThisYear => 'Tshidimu etshi';
+
+  @override
+  String get portfolioDividendsAllTime => 'Bikondo bionso';
+
+  @override
+  String get portfolioAddDividend => 'Sakidila dividende';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Makuta mapete ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Dituku dia difuta';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Kakuena dividende nansha umue mufunda too ne mpindieu. Sakidila yiyi ne bianza, anyi tuala export wa broker webe – milongo yende ya dividende idi yangata kabidi.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Dividende $count mmisakidibua',
+      one: 'Dividende 1 mmusakidibua',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Patula dividende (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividende mmujimija';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Makuta mu mushindu uakafikawu mu konte webe, mu makuta a difuta; bungi bujima budi bushintuluka ku mushinga wa lelu. Bua mukanda webe wa mpaku, enza mudimu ne mukanda wa broker webe.';
 }

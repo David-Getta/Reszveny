@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Ji bo {symbols} bihayê niha tune.",
   "eventsRecentResults": "Encamên nû ragihandî",
   "saveToNotes": "Di notên min de tomar bike",
-  "savedToNotes": "Di notên te de hat tomarkirin"
+  "savedToNotes": "Di notên te de hat tomarkirin",
+  "portfolioDividendsReceived": "Dividendên wergirtî",
+  "portfolioDividendsThisYear": "Îsal",
+  "portfolioDividendsAllTime": "Hemû dem",
+  "portfolioAddDividend": "Dividend lê zêde bike",
+  "portfolioDividendAmount": "Mîqdara wergirtî ({currency})",
+  "portfolioDividendDate": "Dîroka dayînê",
+  "portfolioDividendsEmpty": "Hîn tu dividend nehatiye tomarkirin. Bi destan lê zêde bike, an eksporta brokerê xwe import bike – rêzên dividendê wê jî tên girtin.",
+  "portfolioDividendsImported": "{count, plural, =1{1 dividend hat zêdekirin} other{{count} dividend hatin zêdekirin}}",
+  "portfolioExportDividends": "Dividendan eksport bike (CSV)",
+  "portfolioDividendDeleted": "Dividend hat jêbirin",
+  "portfolioDividendsHint": "Mîqdar wek ku gihîştine hesabê te, bi diravê dayînê; giştî bi rêjeya îro tên veguhertin. Ji bo danezana baca xwe, raporta brokerê xwe bi kar bîne."
 }

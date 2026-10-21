@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Nessun prezzo attuale per {symbols}.",
   "eventsRecentResults": "Risultati recenti",
   "saveToNotes": "Salva nelle mie note",
-  "savedToNotes": "Salvato nelle tue note"
+  "savedToNotes": "Salvato nelle tue note",
+  "portfolioDividendsReceived": "Dividendi ricevuti",
+  "portfolioDividendsThisYear": "Quest’anno",
+  "portfolioDividendsAllTime": "Dall’inizio",
+  "portfolioAddDividend": "Aggiungi dividendo",
+  "portfolioDividendAmount": "Importo ricevuto ({currency})",
+  "portfolioDividendDate": "Data di pagamento",
+  "portfolioDividendsEmpty": "Nessun dividendo registrato finora. Aggiungili a mano o importa l’esportazione del tuo broker: vengono rilevate anche le sue righe dei dividendi.",
+  "portfolioDividendsImported": "{count, plural, =1{1 dividendo aggiunto} other{{count} dividendi aggiunti}}",
+  "portfolioExportDividends": "Esporta dividendi (CSV)",
+  "portfolioDividendDeleted": "Dividendo eliminato",
+  "portfolioDividendsHint": "Importi così come sono arrivati sul tuo conto, nella valuta di pagamento; i totali sono convertiti al cambio di oggi. Per la dichiarazione dei redditi usa l’estratto conto del tuo broker."
 }

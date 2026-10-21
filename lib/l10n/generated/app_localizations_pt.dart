@@ -2567,4 +2567,49 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Salvo nas suas notas';
+
+  @override
+  String get portfolioDividendsReceived => 'Dividendos recebidos';
+
+  @override
+  String get portfolioDividendsThisYear => 'Este ano';
+
+  @override
+  String get portfolioDividendsAllTime => 'Total acumulado';
+
+  @override
+  String get portfolioAddDividend => 'Adicionar dividendo';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Valor recebido ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Data do pagamento';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Nenhum dividendo registrado ainda. Adicione manualmente ou importe o extrato da sua corretora – as linhas de dividendos também são reconhecidas.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dividendos adicionados',
+      one: '1 dividendo adicionado',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Exportar dividendos (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividendo excluído';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Valores como chegaram na sua conta, na moeda do pagamento; os totais são convertidos pela cotação de hoje. Para a declaração de imposto, use o informe da sua corretora.';
 }

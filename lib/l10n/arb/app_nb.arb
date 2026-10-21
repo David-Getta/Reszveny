@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Ingen aktuell kurs for {symbols}.",
   "eventsRecentResults": "Nylig rapporterte resultater",
   "saveToNotes": "Lagre i mine notater",
-  "savedToNotes": "Lagret i notatene dine"
+  "savedToNotes": "Lagret i notatene dine",
+  "portfolioDividendsReceived": "Mottatt utbytte",
+  "portfolioDividendsThisYear": "I år",
+  "portfolioDividendsAllTime": "Totalt",
+  "portfolioAddDividend": "Legg til utbytte",
+  "portfolioDividendAmount": "Mottatt beløp ({currency})",
+  "portfolioDividendDate": "Utbetalingsdato",
+  "portfolioDividendsEmpty": "Ingen utbytter registrert enda. Legg dem til manuelt, eller importer eksporten fra megleren din – utbytteradene hentes også inn.",
+  "portfolioDividendsImported": "{count, plural, =1{1 utbytte lagt til} other{{count} utbytter lagt til}}",
+  "portfolioExportDividends": "Eksporter utbytte (CSV)",
+  "portfolioDividendDeleted": "Utbytte slettet",
+  "portfolioDividendsHint": "Beløpene er slik de kom inn på kontoen din, i utbetalingsvalutaen; summer omregnes til dagens kurs. Bruk meglerens årsoppgave til skattemeldingen."
 }

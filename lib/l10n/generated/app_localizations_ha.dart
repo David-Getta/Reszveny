@@ -2567,4 +2567,49 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get savedToNotes => 'An ajiye a bayananka';
+
+  @override
+  String get portfolioDividendsReceived => 'Rabon riba da aka karɓa';
+
+  @override
+  String get portfolioDividendsThisYear => 'Bana';
+
+  @override
+  String get portfolioDividendsAllTime => 'Tun farko';
+
+  @override
+  String get portfolioAddDividend => 'Ƙara rabon riba';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Adadin da aka karɓa ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Ranar biya';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Ba a rubuta wani rabon riba ba tukuna. Ƙara da hannu, ko shigo da fitarwar dillalinka – layukan rabon riba na ciki ma ana ɗaukarsu.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'An ƙara rabon riba $count',
+      one: 'An ƙara rabon riba 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Fitar da rabon riba (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'An goge rabon riba';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Adadin kamar yadda ya shiga asusunka, a kuɗin biya; jimillolin ana canza su da farashin yau. Don bayanin harajinka, yi amfani da takardar dillalinka.';
 }

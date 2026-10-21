@@ -2558,4 +2558,49 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Tersimpan di catatan Anda';
+
+  @override
+  String get portfolioDividendsReceived => 'Dividen diterima';
+
+  @override
+  String get portfolioDividendsThisYear => 'Tahun ini';
+
+  @override
+  String get portfolioDividendsAllTime => 'Sepanjang waktu';
+
+  @override
+  String get portfolioAddDividend => 'Tambah dividen';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Jumlah diterima ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Tanggal pembayaran';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Belum ada dividen yang dicatat. Tambahkan secara manual, atau impor ekspor dari broker Anda – baris dividennya juga akan diambil.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dividen ditambahkan',
+      one: '1 dividen ditambahkan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Ekspor dividen (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividen dihapus';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Jumlah sesuai yang masuk ke akun Anda, dalam mata uang pembayaran; total dikonversi dengan kurs hari ini. Untuk laporan pajak, gunakan laporan dari broker Anda.';
 }

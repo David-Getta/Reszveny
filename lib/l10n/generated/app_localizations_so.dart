@@ -2571,4 +2571,49 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Waxaa lagu kaydiyay qoraalladaada';
+
+  @override
+  String get portfolioDividendsReceived => 'Faa\'iido-saamiyada la helay';
+
+  @override
+  String get portfolioDividendsThisYear => 'Sannadkan';
+
+  @override
+  String get portfolioDividendsAllTime => 'Wadarta guud';
+
+  @override
+  String get portfolioAddDividend => 'Ku dar faa\'iido-saami';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Lacagta la helay ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Taariikhda bixinta';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Weli faa\'iido-saami lama diiwaangelin. Gacanta ku dar, ama soo dejiso faylka dhoofinta ee broker-kaaga – safafka faa\'iido-saamiyadiisa sidoo kale waa la qaadaa.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count faa\'iido-saami la daray',
+      one: '1 faa\'iido-saami la daray',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Dhoofi faa\'iido-saamiyada (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Faa\'iido-saami la tirtiray';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Lacagaha sida ay ku soo galeen akoonkaaga, lacagta lagu bixiyay; wadarta waxaa lagu beddelaa sarrifka maanta. Canshuurtaada, isticmaal warbixinta broker-kaaga.';
 }

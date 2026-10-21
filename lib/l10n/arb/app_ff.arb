@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Coggu jooni alaa wonande {symbols}.",
   "eventsRecentResults": "Ngalluuji kesi bayyinaaɗi",
   "saveToNotes": "Mooftu e binndi am",
-  "savedToNotes": "Mooftaama e binndi maa"
+  "savedToNotes": "Mooftaama e binndi maa",
+  "portfolioDividendsReceived": "Dividendeeji heɓaaɗi",
+  "portfolioDividendsThisYear": "Hitaande ndee",
+  "portfolioDividendsAllTime": "Sahaa fof",
+  "portfolioAddDividend": "Ɓeydu dividende",
+  "portfolioDividendAmount": "Keewal heɓaangal ({currency})",
+  "portfolioDividendDate": "Ñalnde yoɓdi",
+  "portfolioDividendsEmpty": "Dividende winndaaka tawo. Ɓeydu ɗum e junngo, walla naatnu export broker maa – gorol dividende makko kadi ƴettete.",
+  "portfolioDividendsImported": "{count, plural, =1{Dividende 1 ɓeydaama} other{Dividendeeji {count} ɓeydaama}}",
+  "portfolioExportDividends": "Yaltin dividendeeji (CSV)",
+  "portfolioDividendDeleted": "Dividende momtaama",
+  "portfolioDividendsHint": "Keeweele no ɗe ari e konte maa, e kaalis yoɓdi; kuuɓtidinal waylete e coggu hannde. Ngam winndannde lempoo maa, huutoro ɓataake broker maa."
 }

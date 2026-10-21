@@ -2578,4 +2578,49 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Na-save sa imo mga nota';
+
+  @override
+  String get portfolioDividendsReceived => 'Nabaton nga dibidendo';
+
+  @override
+  String get portfolioDividendsThisYear => 'Sini nga tuig';
+
+  @override
+  String get portfolioDividendsAllTime => 'Tanan nga tion';
+
+  @override
+  String get portfolioAddDividend => 'Idugang ang dibidendo';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Kantidad nga nabaton ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Petsa sang pagbayad';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Wala pa sang narekord nga dibidendo. Idugang ini sa kamot, ukon i-import ang export sang imo broker – ginakuha man ang mga linya sang dibidendo sini.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dibidendo ang gindugang',
+      one: '1 dibidendo ang gindugang',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'I-export ang mga dibidendo (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Napanas ang dibidendo';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Mga kantidad suno sa pag-abot sini sa imo account, sa currency sang pagbayad; ang mga total gina-convert sa rate subong. Para sa imo tax return, gamita ang statement sang imo broker.';
 }

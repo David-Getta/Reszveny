@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Pas de cours actuel pour {symbols}.",
   "eventsRecentResults": "Résultats récents",
   "saveToNotes": "Enregistrer dans mes notes",
-  "savedToNotes": "Enregistré dans vos notes"
+  "savedToNotes": "Enregistré dans vos notes",
+  "portfolioDividendsReceived": "Dividendes reçus",
+  "portfolioDividendsThisYear": "Cette année",
+  "portfolioDividendsAllTime": "Depuis le début",
+  "portfolioAddDividend": "Ajouter un dividende",
+  "portfolioDividendAmount": "Montant reçu ({currency})",
+  "portfolioDividendDate": "Date de paiement",
+  "portfolioDividendsEmpty": "Aucun dividende enregistré pour l’instant. Ajoutez-les à la main ou importez l’export de votre courtier : ses lignes de dividendes sont aussi récupérées.",
+  "portfolioDividendsImported": "{count, plural, =1{1 dividende ajouté} other{{count} dividendes ajoutés}}",
+  "portfolioExportDividends": "Exporter les dividendes (CSV)",
+  "portfolioDividendDeleted": "Dividende supprimé",
+  "portfolioDividendsHint": "Montants tels qu’ils sont arrivés sur votre compte, dans la devise de versement ; les totaux sont convertis au cours du jour. Pour votre déclaration d’impôts, utilisez le relevé de votre courtier."
 }

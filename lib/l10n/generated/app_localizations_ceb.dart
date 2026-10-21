@@ -2573,4 +2573,49 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Na-save sa imong mga nota';
+
+  @override
+  String get portfolioDividendsReceived => 'Nadawat nga dibidendo';
+
+  @override
+  String get portfolioDividendsThisYear => 'Karong tuiga';
+
+  @override
+  String get portfolioDividendsAllTime => 'Tanang panahon';
+
+  @override
+  String get portfolioAddDividend => 'Idugang ang dibidendo';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Kantidad nga nadawat ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Petsa sa pagbayad';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Wala pay narekord nga dibidendo. Idugang kini nga manwal, o i-import ang export sa imong broker – makuha usab ang mga linya sa dibidendo niini.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dibidendo ang nadugang',
+      one: '1 dibidendo ang nadugang',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'I-export ang mga dibidendo (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Napapas ang dibidendo';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Mga kantidad sumala sa pag-abot niini sa imong account, sa currency sa pagbayad; ang mga total gi-convert sa karon nga rate. Alang sa imong tax return, gamita ang statement sa imong broker.';
 }

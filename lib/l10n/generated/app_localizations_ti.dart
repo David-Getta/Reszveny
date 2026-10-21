@@ -2524,4 +2524,49 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get savedToNotes => 'ኣብ ማስታወሻታትኩም ተቐሚጡ';
+
+  @override
+  String get portfolioDividendsReceived => 'ዝተቐበልካዮም ድቪደንድታት';
+
+  @override
+  String get portfolioDividendsThisYear => 'ሎሚ ዓመት';
+
+  @override
+  String get portfolioDividendsAllTime => 'ኩሉ ግዜ';
+
+  @override
+  String get portfolioAddDividend => 'ድቪደንድ ወስኽ';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'ዝተቐበልካዮ መጠን ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'ዕለት ክፍሊት';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'ክሳብ ሕጂ ዝተመዝገበ ድቪደንድ የለን። ብኢድካ ወስኾም፣ ወይ ናይ ብሮከርካ ኤክስፖርት ኣእቱ – ናይ ድቪደንድ መስመራቱ እውን ይውሰዱ።';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ድቪደንድታት ተወሲኾም',
+      one: '1 ድቪደንድ ተወሲኹ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'ድቪደንድታት ኤክስፖርት ግበር (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'ድቪደንድ ተሰሪዙ';
+
+  @override
+  String get portfolioDividendsHint =>
+      'መጠናት ከምቲ ኣብ ሕሳብካ ዝበጽሐ፣ ብባጤራ ክፍሊት፤ ድምር ብናይ ሎሚ ሸርፊ ይቀየር። ንመግለጺ ግብሪኻ፣ ናይ ብሮከርካ መግለጺ ተጠቐም።';
 }

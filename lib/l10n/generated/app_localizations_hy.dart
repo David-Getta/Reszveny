@@ -2571,4 +2571,49 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Պահվել է ձեր նշումներում';
+
+  @override
+  String get portfolioDividendsReceived => 'Ստացված շահաբաժիններ';
+
+  @override
+  String get portfolioDividendsThisYear => 'Այս տարի';
+
+  @override
+  String get portfolioDividendsAllTime => 'Ամբողջ ընթացքում';
+
+  @override
+  String get portfolioAddDividend => 'Ավելացնել շահաբաժին';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Ստացված գումար ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Վճարման ամսաթիվ';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Շահաբաժիններ դեռ գրանցված չեն։ Ավելացրեք ձեռքով կամ ներմուծեք ձեր բրոքերի արտահանումը՝ դրա շահաբաժինների տողերը նույնպես վերցվում են։';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ավելացվել է $count շահաբաժին',
+      one: 'Ավելացվել է 1 շահաբաժին',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Արտահանել շահաբաժինները (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Շահաբաժինը ջնջված է';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Գումարները՝ այնպես, ինչպես հասել են ձեր հաշվին, վճարման արժույթով. հանրագումարները փոխարկվում են այսօրվա փոխարժեքով։ Հարկային հայտարարագրի համար օգտագործեք ձեր բրոքերի քաղվածքը։';
 }

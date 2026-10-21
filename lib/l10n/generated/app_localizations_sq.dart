@@ -2569,4 +2569,49 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get savedToNotes => 'U ruajt te shënimet tuaja';
+
+  @override
+  String get portfolioDividendsReceived => 'Dividendë të marrë';
+
+  @override
+  String get portfolioDividendsThisYear => 'Këtë vit';
+
+  @override
+  String get portfolioDividendsAllTime => 'Gjithsej';
+
+  @override
+  String get portfolioAddDividend => 'Shto dividend';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Shuma e marrë ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Data e pagesës';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Ende nuk ka dividendë të regjistruar. Shtojini me dorë ose importoni eksportin e brokerit tuaj – rreshtat e dividendëve merren gjithashtu.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'U shtuan $count dividendë',
+      one: 'U shtua 1 dividend',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Eksporto dividendët (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividendi u fshi';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Shumat ashtu si mbërritën në llogarinë tuaj, në monedhën e pagesës; totalet konvertohen me kursin e sotëm. Për deklaratën tatimore përdorni pasqyrën e brokerit tuaj.';
 }

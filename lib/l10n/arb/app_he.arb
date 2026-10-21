@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "אין מחיר נוכחי עבור {symbols}.",
   "eventsRecentResults": "דוחות שפורסמו לאחרונה",
   "saveToNotes": "שמירה בהערות שלי",
-  "savedToNotes": "נשמר בהערות שלך"
+  "savedToNotes": "נשמר בהערות שלך",
+  "portfolioDividendsReceived": "דיבידנדים שהתקבלו",
+  "portfolioDividendsThisYear": "השנה",
+  "portfolioDividendsAllTime": "כל התקופה",
+  "portfolioAddDividend": "הוספת דיבידנד",
+  "portfolioDividendAmount": "סכום שהתקבל ({currency})",
+  "portfolioDividendDate": "תאריך תשלום",
+  "portfolioDividendsEmpty": "עדיין לא נרשמו דיבידנדים. אפשר להוסיף אותם ידנית או לייבא את קובץ הייצוא של הברוקר – גם שורות הדיבידנד שבו נקלטות.",
+  "portfolioDividendsImported": "{count, plural, =1{נוסף דיבידנד אחד} two{נוספו {count} דיבידנדים} other{נוספו {count} דיבידנדים}}",
+  "portfolioExportDividends": "ייצוא דיבידנדים (CSV)",
+  "portfolioDividendDeleted": "הדיבידנד נמחק",
+  "portfolioDividendsHint": "הסכומים כפי שהגיעו לחשבון, במטבע התשלום; הסיכומים מומרים לפי שער היום. לדוח המס יש להשתמש בדוח של הברוקר."
 }

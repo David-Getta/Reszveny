@@ -2559,4 +2559,49 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get savedToNotes => 'ඔබේ සටහන්වලට සුරැකිණි';
+
+  @override
+  String get portfolioDividendsReceived => 'ලැබුණු ලාභාංශ';
+
+  @override
+  String get portfolioDividendsThisYear => 'මේ වසරේ';
+
+  @override
+  String get portfolioDividendsAllTime => 'මේ දක්වා මුළු';
+
+  @override
+  String get portfolioAddDividend => 'ලාභාංශය එක් කරන්න';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'ලැබුණු මුදල ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'ගෙවීම් දිනය';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'තවම ලාභාංශ කිසිවක් සටහන් කර නැත. අතින් එක් කරන්න, නැතහොත් ඔබේ බ්‍රෝකර්ගේ export ගොනුව import කරන්න – එහි ලාභාංශ පේළි ද ගනු ලැබේ.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ලාභාංශ $countක් එක් කළා',
+      one: 'ලාභාංශ 1ක් එක් කළා',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'ලාභාංශ export කරන්න (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'ලාභාංශය මකා දැමුවා';
+
+  @override
+  String get portfolioDividendsHint =>
+      'මුදල් ඔබේ ගිණුමට ලැබුණු ආකාරයටම, ගෙවීම් මුදල් වර්ගයෙන්; එකතු අද අනුපාතයට පරිවර්තනය කෙරේ. බදු වාර්තාව සඳහා ඔබේ බ්‍රෝකර්ගේ ප්‍රකාශය භාවිත කරන්න.';
 }

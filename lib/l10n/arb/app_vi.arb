@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Không có giá hiện tại cho {symbols}.",
   "eventsRecentResults": "Kết quả kinh doanh mới công bố",
   "saveToNotes": "Lưu vào ghi chú của tôi",
-  "savedToNotes": "Đã lưu vào ghi chú của bạn"
+  "savedToNotes": "Đã lưu vào ghi chú của bạn",
+  "portfolioDividendsReceived": "Cổ tức đã nhận",
+  "portfolioDividendsThisYear": "Năm nay",
+  "portfolioDividendsAllTime": "Tổng cộng",
+  "portfolioAddDividend": "Thêm cổ tức",
+  "portfolioDividendAmount": "Số tiền đã nhận ({currency})",
+  "portfolioDividendDate": "Ngày chi trả",
+  "portfolioDividendsEmpty": "Chưa có cổ tức nào được ghi lại. Thêm thủ công hoặc nhập file xuất từ công ty chứng khoán của bạn – các dòng cổ tức trong đó cũng được nhận diện.",
+  "portfolioDividendsImported": "{count, plural, =1{Đã thêm 1 khoản cổ tức} other{Đã thêm {count} khoản cổ tức}}",
+  "portfolioExportDividends": "Xuất cổ tức (CSV)",
+  "portfolioDividendDeleted": "Đã xóa cổ tức",
+  "portfolioDividendsHint": "Số tiền đúng như đã về tài khoản của bạn, theo đồng tiền chi trả; tổng được quy đổi theo tỷ giá hôm nay. Khi kê khai thuế, hãy dùng sao kê của công ty chứng khoán."
 }

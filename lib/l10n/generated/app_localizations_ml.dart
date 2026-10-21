@@ -2573,4 +2573,50 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get savedToNotes => 'നിങ്ങളുടെ കുറിപ്പുകളിൽ സേവ് ചെയ്തു';
+
+  @override
+  String get portfolioDividendsReceived => 'ലഭിച്ച ഡിവിഡന്റുകൾ';
+
+  @override
+  String get portfolioDividendsThisYear => 'ഈ വർഷം';
+
+  @override
+  String get portfolioDividendsAllTime => 'ഇതുവരെ ആകെ';
+
+  @override
+  String get portfolioAddDividend => 'ഡിവിഡന്റ് ചേർക്കുക';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'ലഭിച്ച തുക ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'പേയ്‌മെന്റ് തീയതി';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'ഇതുവരെ ഡിവിഡന്റുകളൊന്നും രേഖപ്പെടുത്തിയിട്ടില്ല. അവ നേരിട്ട് ചേർക്കുക, അല്ലെങ്കിൽ നിങ്ങളുടെ ബ്രോക്കറുടെ എക്സ്പോർട്ട് ഇംപോർട്ട് ചെയ്യുക – അതിലെ ഡിവിഡന്റ് വരികളും എടുക്കും.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ഡിവിഡന്റുകൾ ചേർത്തു',
+      one: '1 ഡിവിഡന്റ് ചേർത്തു',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends =>
+      'ഡിവിഡന്റുകൾ എക്സ്പോർട്ട് ചെയ്യുക (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'ഡിവിഡന്റ് ഇല്ലാതാക്കി';
+
+  @override
+  String get portfolioDividendsHint =>
+      'തുകകൾ നിങ്ങളുടെ അക്കൗണ്ടിൽ എത്തിയതുപോലെ, പേഔട്ട് കറൻസിയിൽ; ആകെത്തുകകൾ ഇന്നത്തെ നിരക്കിൽ മാറ്റുന്നു. നികുതി റിട്ടേണിനായി നിങ്ങളുടെ ബ്രോക്കറുടെ സ്റ്റേറ്റ്‌മെന്റ് ഉപയോഗിക്കുക.';
 }

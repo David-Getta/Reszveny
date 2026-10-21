@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Ulac ssuma tamirant i {symbols}.",
   "eventsRecentResults": "Igmaḍ i d-yettwabedren melmi kan",
   "saveToNotes": "Sekles deg tizmilin-iw",
-  "savedToNotes": "Yettwasekles deg tizmilin-ik"
+  "savedToNotes": "Yettwasekles deg tizmilin-ik",
+  "portfolioDividendsReceived": "Dividendes yettwaṭṭfen",
+  "portfolioDividendsThisYear": "Aseggas-a",
+  "portfolioDividendsAllTime": "Akk akud",
+  "portfolioAddDividend": "Rnu dividende",
+  "portfolioDividendAmount": "Azal yettwaṭṭef ({currency})",
+  "portfolioDividendDate": "Azemz n lexlaṣ",
+  "portfolioDividendsEmpty": "Ulac dividende yettwakelsen ar tura. Rnu-ten s ufus, neɣ kter asifeḍ n broker-ik – izirigen-is n dividendes ad ttwaṭṭfen daɣen.",
+  "portfolioDividendsImported": "{count, plural, =1{Yettwarna 1 dividende} other{Ttwarnan {count} dividendes}}",
+  "portfolioExportDividends": "Sifeḍ dividendes (CSV)",
+  "portfolioDividendDeleted": "Dividende yettwakkes",
+  "portfolioDividendsHint": "Azalen akken i d-wwḍen ɣer umiḍan-ik, s tedrimt n lexlaṣ; igmaḍ ttwabeddlen s ssuma n wass-a. I tsemmelt-ik n tebzert, seqdec aɣmis n broker-ik."
 }

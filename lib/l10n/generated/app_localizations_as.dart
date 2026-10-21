@@ -2561,4 +2561,49 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get savedToNotes => 'আপোনাৰ টোকাত সাঁচি থোৱা হ\'ল';
+
+  @override
+  String get portfolioDividendsReceived => 'প্ৰাপ্ত লাভাংশ';
+
+  @override
+  String get portfolioDividendsThisYear => 'এই বছৰ';
+
+  @override
+  String get portfolioDividendsAllTime => 'সকলো সময়';
+
+  @override
+  String get portfolioAddDividend => 'লাভাংশ যোগ কৰক';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'প্ৰাপ্ত পৰিমাণ ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'পৰিশোধৰ তাৰিখ';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'এতিয়ালৈকে কোনো লাভাংশ লিপিবদ্ধ কৰা হোৱা নাই। হাতে যোগ কৰক, বা আপোনাৰ ব্ৰোকাৰৰ এক্সপোৰ্ট আমদানি কৰক – তাৰ লাভাংশৰ শাৰীসমূহো লোৱা হয়।';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countটা লাভাংশ যোগ কৰা হ\'ল',
+      one: '1টা লাভাংশ যোগ কৰা হ\'ল',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'লাভাংশ এক্সপোৰ্ট কৰক (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'লাভাংশ মচা হ\'ল';
+
+  @override
+  String get portfolioDividendsHint =>
+      'পৰিমাণসমূহ আপোনাৰ একাউণ্টত অহাৰ দৰে, পৰিশোধৰ মুদ্ৰাত; মুঠ আজিৰ হাৰত ৰূপান্তৰিত হয়। কৰ ৰিটাৰ্ণৰ বাবে আপোনাৰ ব্ৰোকাৰৰ বিবৃতি ব্যৱহাৰ কৰক।';
 }

@@ -2560,4 +2560,49 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Saved to your notes';
+
+  @override
+  String get portfolioDividendsReceived => 'Dividends received';
+
+  @override
+  String get portfolioDividendsThisYear => 'This year';
+
+  @override
+  String get portfolioDividendsAllTime => 'All time';
+
+  @override
+  String get portfolioAddDividend => 'Add dividend';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Amount received ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Payment date';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'No dividends recorded yet. Add them by hand, or import your broker\'s export – its dividend rows are picked up too.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dividends added',
+      one: '1 dividend added',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Export dividends (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividend deleted';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Amounts as they arrived on your account, in the payout currency; totals are converted at today\'s rate. For your tax return, use your broker\'s statement.';
 }

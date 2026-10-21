@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Ayikho intengo yamanje ye-{symbols}.",
   "eventsRecentResults": "Imiphumela esanda kubikwa",
   "saveToNotes": "Londoloza kumanothi ami",
-  "savedToNotes": "Kulondolozwe kumanothi akho"
+  "savedToNotes": "Kulondolozwe kumanothi akho",
+  "portfolioDividendsReceived": "Izabelo zenzuzo ezitholiwe",
+  "portfolioDividendsThisYear": "Kulo nyaka",
+  "portfolioDividendsAllTime": "Sonke isikhathi",
+  "portfolioAddDividend": "Engeza isabelo senzuzo",
+  "portfolioDividendAmount": "Imali etholiwe ({currency})",
+  "portfolioDividendDate": "Usuku lokukhokha",
+  "portfolioDividendsEmpty": "Azikho izabelo zenzuzo ezirekhodiwe okwamanje. Zengeze ngesandla, noma ungenise ifayela le-export le-broker yakho – imigqa yalo yezabelo zenzuzo nayo iyathathwa.",
+  "portfolioDividendsImported": "{count, plural, =1{Isabelo senzuzo esi-1 sengeziwe} other{Izabelo zenzuzo ezi-{count} zengeziwe}}",
+  "portfolioExportDividends": "Khipha izabelo zenzuzo (CSV)",
+  "portfolioDividendDeleted": "Isabelo senzuzo sisusiwe",
+  "portfolioDividendsHint": "Amanani njengoba efike ku-akhawunti yakho, ngemali yokukhokha; amanani aphelele aguqulwa ngesilinganiso sanamuhla. Kwimbuyiselo yentela yakho, sebenzisa isitatimende se-broker yakho."
 }

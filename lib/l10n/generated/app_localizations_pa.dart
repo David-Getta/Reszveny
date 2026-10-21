@@ -2558,4 +2558,49 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get savedToNotes => 'ਤੁਹਾਡੇ ਨੋਟਾਂ ਵਿੱਚ ਸੇਵ ਹੋ ਗਿਆ';
+
+  @override
+  String get portfolioDividendsReceived => 'ਪ੍ਰਾਪਤ ਡਿਵੀਡੈਂਡ';
+
+  @override
+  String get portfolioDividendsThisYear => 'ਇਸ ਸਾਲ';
+
+  @override
+  String get portfolioDividendsAllTime => 'ਹੁਣ ਤੱਕ ਕੁੱਲ';
+
+  @override
+  String get portfolioAddDividend => 'ਡਿਵੀਡੈਂਡ ਸ਼ਾਮਲ ਕਰੋ';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'ਪ੍ਰਾਪਤ ਰਕਮ ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'ਭੁਗਤਾਨ ਦੀ ਤਾਰੀਖ';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'ਹਾਲੇ ਕੋਈ ਡਿਵੀਡੈਂਡ ਦਰਜ ਨਹੀਂ ਹੈ। ਹੱਥੀਂ ਸ਼ਾਮਲ ਕਰੋ, ਜਾਂ ਆਪਣੇ ਬ੍ਰੋਕਰ ਦੀ ਐਕਸਪੋਰਟ ਫਾਈਲ ਇੰਪੋਰਟ ਕਰੋ – ਉਸ ਦੀਆਂ ਡਿਵੀਡੈਂਡ ਕਤਾਰਾਂ ਵੀ ਲੈ ਲਈਆਂ ਜਾਂਦੀਆਂ ਹਨ।';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ਡਿਵੀਡੈਂਡ ਸ਼ਾਮਲ ਕੀਤੇ',
+      one: '1 ਡਿਵੀਡੈਂਡ ਸ਼ਾਮਲ ਕੀਤਾ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'ਡਿਵੀਡੈਂਡ ਐਕਸਪੋਰਟ ਕਰੋ (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'ਡਿਵੀਡੈਂਡ ਮਿਟਾਇਆ ਗਿਆ';
+
+  @override
+  String get portfolioDividendsHint =>
+      'ਰਕਮਾਂ ਜਿਵੇਂ ਤੁਹਾਡੇ ਖਾਤੇ ਵਿੱਚ ਆਈਆਂ, ਭੁਗਤਾਨ ਦੀ ਮੁਦਰਾ ਵਿੱਚ; ਕੁੱਲ ਰਕਮਾਂ ਅੱਜ ਦੇ ਰੇਟ ’ਤੇ ਬਦਲੀਆਂ ਜਾਂਦੀਆਂ ਹਨ। ਟੈਕਸ ਰਿਟਰਨ ਲਈ ਆਪਣੇ ਬ੍ਰੋਕਰ ਦੀ ਸਟੇਟਮੈਂਟ ਵਰਤੋ।';
 }

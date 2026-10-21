@@ -2557,4 +2557,49 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Dencu na ci say notu';
+
+  @override
+  String get portfolioDividendsReceived => 'Dividande yi ñu jot';
+
+  @override
+  String get portfolioDividendsThisYear => 'At mii';
+
+  @override
+  String get portfolioDividendsAllTime => 'Lépp';
+
+  @override
+  String get portfolioAddDividend => 'Yokk dividande';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Xaalis bi ñu jot ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Bésu fey';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Amul dividande bu ñu bind ba tey. Yokk leen ak sa loxo, walla nga indi export bu sa broker – ay rëdd dividande yu ci nekk itam dañu leen di jël.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dividande la ñu yokk',
+      one: '1 dividande la ñu yokk',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Génne dividande yi (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividande bi far na';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Xaalis yi ni ñu dugge ci sa kont, ci xaalisu fey bi; lépp dañu koy soppi ci njëgu tey. Ngir sa impo, jëfandikool kayitu sa broker.';
 }

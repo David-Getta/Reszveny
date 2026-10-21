@@ -2571,4 +2571,49 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Αποθηκεύτηκε στις σημειώσεις σας';
+
+  @override
+  String get portfolioDividendsReceived => 'Εισπραχθέντα μερίσματα';
+
+  @override
+  String get portfolioDividendsThisYear => 'Φέτος';
+
+  @override
+  String get portfolioDividendsAllTime => 'Συνολικά';
+
+  @override
+  String get portfolioAddDividend => 'Προσθήκη μερίσματος';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Ποσό που εισπράχθηκε ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Ημερομηνία πληρωμής';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Δεν έχουν καταγραφεί μερίσματα ακόμη. Προσθέστε τα χειροκίνητα ή εισαγάγετε την εξαγωγή του χρηματιστή σας – οι γραμμές μερισμάτων της συλλέγονται επίσης.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Προστέθηκαν $count μερίσματα',
+      one: 'Προστέθηκε 1 μέρισμα',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Εξαγωγή μερισμάτων (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Το μέρισμα διαγράφηκε';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Ποσά όπως πιστώθηκαν στον λογαριασμό σας, στο νόμισμα της πληρωμής· τα σύνολα μετατρέπονται με τη σημερινή ισοτιμία. Για τη φορολογική δήλωση χρησιμοποιήστε την κατάσταση του χρηματιστή σας.';
 }

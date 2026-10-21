@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "{symbols}-এর বর্তমান দাম নেই।",
   "eventsRecentResults": "সম্প্রতি ঘোষিত ফলাফল",
   "saveToNotes": "আমার নোটে সেভ করুন",
-  "savedToNotes": "আপনার নোটে সেভ হয়েছে"
+  "savedToNotes": "আপনার নোটে সেভ হয়েছে",
+  "portfolioDividendsReceived": "প্রাপ্ত ডিভিডেন্ড",
+  "portfolioDividendsThisYear": "এ বছর",
+  "portfolioDividendsAllTime": "সর্বকাল",
+  "portfolioAddDividend": "ডিভিডেন্ড যোগ করুন",
+  "portfolioDividendAmount": "প্রাপ্ত পরিমাণ ({currency})",
+  "portfolioDividendDate": "পরিশোধের তারিখ",
+  "portfolioDividendsEmpty": "এখনও কোনো ডিভিডেন্ড নথিভুক্ত হয়নি। হাতে যোগ করুন, বা আপনার ব্রোকারের এক্সপোর্ট ইম্পোর্ট করুন – এর ডিভিডেন্ডের সারিগুলোও নেওয়া হয়।",
+  "portfolioDividendsImported": "{count, plural, =1{1টি ডিভিডেন্ড যোগ হয়েছে} other{{count}টি ডিভিডেন্ড যোগ হয়েছে}}",
+  "portfolioExportDividends": "ডিভিডেন্ড এক্সপোর্ট করুন (CSV)",
+  "portfolioDividendDeleted": "ডিভিডেন্ড মুছে ফেলা হয়েছে",
+  "portfolioDividendsHint": "পরিমাণগুলো আপনার অ্যাকাউন্টে যেভাবে এসেছে, পরিশোধের মুদ্রায়; মোট আজকের দরে রূপান্তরিত। কর রিটার্নের জন্য আপনার ব্রোকারের স্টেটমেন্ট ব্যবহার করুন।"
 }

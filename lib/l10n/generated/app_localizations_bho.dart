@@ -2558,4 +2558,49 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get savedToNotes => 'रउआ के नोट में सेव हो गइल';
+
+  @override
+  String get portfolioDividendsReceived => 'मिलल डिविडेंड';
+
+  @override
+  String get portfolioDividendsThisYear => 'ए साल';
+
+  @override
+  String get portfolioDividendsAllTime => 'अब तक ले';
+
+  @override
+  String get portfolioAddDividend => 'डिविडेंड जोड़ीं';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'मिलल रकम ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'भुगतान के तारीख';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'अबहीं ले कवनो डिविडेंड दर्ज नइखे। हाथ से जोड़ीं, भा आपन ब्रोकर के एक्सपोर्ट इम्पोर्ट करीं – ओकर डिविडेंड वाला पंक्ति भी ले लिहल जाला।';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count डिविडेंड जोड़ल गइल',
+      one: '1 डिविडेंड जोड़ल गइल',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'डिविडेंड एक्सपोर्ट करीं (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'डिविडेंड हटावल गइल';
+
+  @override
+  String get portfolioDividendsHint =>
+      'रकम ओइसहीं जइसे रउआ खाता में आइल, भुगतान के मुद्रा में; कुल आज के दर पर बदलल जाला। टैक्स रिटर्न खातिर आपन ब्रोकर के स्टेटमेंट के इस्तेमाल करीं।';
 }

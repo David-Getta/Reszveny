@@ -2575,4 +2575,49 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get savedToNotes => 'In deinen Notizen gespeichert';
+
+  @override
+  String get portfolioDividendsReceived => 'Erhaltene Dividenden';
+
+  @override
+  String get portfolioDividendsThisYear => 'Dieses Jahr';
+
+  @override
+  String get portfolioDividendsAllTime => 'Gesamt';
+
+  @override
+  String get portfolioAddDividend => 'Dividende hinzufügen';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Erhaltener Betrag ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Zahlungsdatum';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Noch keine Dividenden erfasst. Trage sie von Hand ein oder importiere den Export deines Brokers – dessen Dividendenzeilen werden ebenfalls übernommen.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Dividenden hinzugefügt',
+      one: '1 Dividende hinzugefügt',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Dividenden exportieren (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividende gelöscht';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Beträge, wie sie auf deinem Konto eingegangen sind, in der Auszahlungswährung; Summen werden zum heutigen Kurs umgerechnet. Für die Steuererklärung nutze die Abrechnung deines Brokers.';
 }

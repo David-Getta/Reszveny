@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Enweghị ọnụahịa ugbu a maka {symbols}.",
   "eventsRecentResults": "Nsonaazụ e kwuputara nso nso a",
   "saveToNotes": "Chekwaa na ndetu m",
-  "savedToNotes": "Echekwara na ndetu gị"
+  "savedToNotes": "Echekwara na ndetu gị",
+  "portfolioDividendsReceived": "Nkesa uru enwetara",
+  "portfolioDividendsThisYear": "Afọ a",
+  "portfolioDividendsAllTime": "Oge niile",
+  "portfolioAddDividend": "Tinye nkesa uru",
+  "portfolioDividendAmount": "Ego enwetara ({currency})",
+  "portfolioDividendDate": "Ụbọchị ịkwụ ụgwọ",
+  "portfolioDividendsEmpty": "Edebanyebeghị nkesa uru ọ bụla. Tinye ha n'aka, ma ọ bụ bubata export nke broker gị – a na-ewerekwa ahịrị nkesa uru ya.",
+  "portfolioDividendsImported": "{count, plural, =1{Etinyere nkesa uru 1} other{Etinyere nkesa uru {count}}}",
+  "portfolioExportDividends": "Bupụ nkesa uru (CSV)",
+  "portfolioDividendDeleted": "Ehichapụla nkesa uru",
+  "portfolioDividendsHint": "Ego ndị ahụ dị ka ha si bata n'akaụntụ gị, n'ego e ji kwụọ; a na-agbanwe mkpokọta na ọnụ ahịa taa. Maka nkwupụta ụtụ isi gị, jiri akwụkwọ nkọwa nke broker gị."
 }

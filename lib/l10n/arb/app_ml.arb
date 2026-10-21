@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "{symbols}-ന് നിലവിലെ വില ലഭ്യമല്ല.",
   "eventsRecentResults": "അടുത്തിടെ റിപ്പോർട്ട് ചെയ്ത ഫലങ്ങൾ",
   "saveToNotes": "എന്റെ കുറിപ്പുകളിൽ സേവ് ചെയ്യുക",
-  "savedToNotes": "നിങ്ങളുടെ കുറിപ്പുകളിൽ സേവ് ചെയ്തു"
+  "savedToNotes": "നിങ്ങളുടെ കുറിപ്പുകളിൽ സേവ് ചെയ്തു",
+  "portfolioDividendsReceived": "ലഭിച്ച ഡിവിഡന്റുകൾ",
+  "portfolioDividendsThisYear": "ഈ വർഷം",
+  "portfolioDividendsAllTime": "ഇതുവരെ ആകെ",
+  "portfolioAddDividend": "ഡിവിഡന്റ് ചേർക്കുക",
+  "portfolioDividendAmount": "ലഭിച്ച തുക ({currency})",
+  "portfolioDividendDate": "പേയ്‌മെന്റ് തീയതി",
+  "portfolioDividendsEmpty": "ഇതുവരെ ഡിവിഡന്റുകളൊന്നും രേഖപ്പെടുത്തിയിട്ടില്ല. അവ നേരിട്ട് ചേർക്കുക, അല്ലെങ്കിൽ നിങ്ങളുടെ ബ്രോക്കറുടെ എക്സ്പോർട്ട് ഇംപോർട്ട് ചെയ്യുക – അതിലെ ഡിവിഡന്റ് വരികളും എടുക്കും.",
+  "portfolioDividendsImported": "{count, plural, =1{1 ഡിവിഡന്റ് ചേർത്തു} other{{count} ഡിവിഡന്റുകൾ ചേർത്തു}}",
+  "portfolioExportDividends": "ഡിവിഡന്റുകൾ എക്സ്പോർട്ട് ചെയ്യുക (CSV)",
+  "portfolioDividendDeleted": "ഡിവിഡന്റ് ഇല്ലാതാക്കി",
+  "portfolioDividendsHint": "തുകകൾ നിങ്ങളുടെ അക്കൗണ്ടിൽ എത്തിയതുപോലെ, പേഔട്ട് കറൻസിയിൽ; ആകെത്തുകകൾ ഇന്നത്തെ നിരക്കിൽ മാറ്റുന്നു. നികുതി റിട്ടേണിനായി നിങ്ങളുടെ ബ്രോക്കറുടെ സ്റ്റേറ്റ്‌മെന്റ് ഉപയോഗിക്കുക."
 }

@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "{symbols} ئۈچۈن نۆۋەتتىكى باھا يوق.",
   "eventsRecentResults": "يېقىندا ئېلان قىلىنغان نەتىجىلەر",
   "saveToNotes": "خاتىرىلىرىمگە ساقلاش",
-  "savedToNotes": "خاتىرىلىرىڭىزگە ساقلاندى"
+  "savedToNotes": "خاتىرىلىرىڭىزگە ساقلاندى",
+  "portfolioDividendsReceived": "تاپشۇرۇۋالغان دىۋىدېندلار",
+  "portfolioDividendsThisYear": "بۇ يىل",
+  "portfolioDividendsAllTime": "جەمئىي",
+  "portfolioAddDividend": "دىۋىدېند قوشۇش",
+  "portfolioDividendAmount": "تاپشۇرۇۋالغان سومما ({currency})",
+  "portfolioDividendDate": "پۇل تۆلەش چېسلاسى",
+  "portfolioDividendsEmpty": "تېخى دىۋىدېند خاتىرىلەنمىدى. قولدا قوشۇڭ ياكى دەللالىڭىزنىڭ ئېكسپورت ھۆججىتىنى ئىمپورت قىلىڭ – ئۇنىڭدىكى دىۋىدېند قۇرلىرىمۇ ئېلىنىدۇ.",
+  "portfolioDividendsImported": "{count, plural, =1{1 دىۋىدېند قوشۇلدى} other{{count} دىۋىدېند قوشۇلدى}}",
+  "portfolioExportDividends": "دىۋىدېندلارنى ئېكسپورت قىلىش (CSV)",
+  "portfolioDividendDeleted": "دىۋىدېند ئۆچۈرۈلدى",
+  "portfolioDividendsHint": "سوممىلار ھېساباتىڭىزغا كەلگەن بويىچە، تۆلەش پۇل بىرلىكىدە؛ جەمئىي سومما بۈگۈنكى پەرق بويىچە ئالماشتۇرۇلىدۇ. باج مەلۇماتىڭىز ئۈچۈن دەللالىڭىزنىڭ ھېسابات جەدۋىلىنى ئىشلىتىڭ."
 }

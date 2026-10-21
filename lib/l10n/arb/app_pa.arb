@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "{symbols} ਲਈ ਮੌਜੂਦਾ ਕੀਮਤ ਉਪਲਬਧ ਨਹੀਂ ਹੈ।",
   "eventsRecentResults": "ਹਾਲ ਹੀ ਵਿੱਚ ਜਾਰੀ ਨਤੀਜੇ",
   "saveToNotes": "ਮੇਰੇ ਨੋਟਾਂ ਵਿੱਚ ਸੇਵ ਕਰੋ",
-  "savedToNotes": "ਤੁਹਾਡੇ ਨੋਟਾਂ ਵਿੱਚ ਸੇਵ ਹੋ ਗਿਆ"
+  "savedToNotes": "ਤੁਹਾਡੇ ਨੋਟਾਂ ਵਿੱਚ ਸੇਵ ਹੋ ਗਿਆ",
+  "portfolioDividendsReceived": "ਪ੍ਰਾਪਤ ਡਿਵੀਡੈਂਡ",
+  "portfolioDividendsThisYear": "ਇਸ ਸਾਲ",
+  "portfolioDividendsAllTime": "ਹੁਣ ਤੱਕ ਕੁੱਲ",
+  "portfolioAddDividend": "ਡਿਵੀਡੈਂਡ ਸ਼ਾਮਲ ਕਰੋ",
+  "portfolioDividendAmount": "ਪ੍ਰਾਪਤ ਰਕਮ ({currency})",
+  "portfolioDividendDate": "ਭੁਗਤਾਨ ਦੀ ਤਾਰੀਖ",
+  "portfolioDividendsEmpty": "ਹਾਲੇ ਕੋਈ ਡਿਵੀਡੈਂਡ ਦਰਜ ਨਹੀਂ ਹੈ। ਹੱਥੀਂ ਸ਼ਾਮਲ ਕਰੋ, ਜਾਂ ਆਪਣੇ ਬ੍ਰੋਕਰ ਦੀ ਐਕਸਪੋਰਟ ਫਾਈਲ ਇੰਪੋਰਟ ਕਰੋ – ਉਸ ਦੀਆਂ ਡਿਵੀਡੈਂਡ ਕਤਾਰਾਂ ਵੀ ਲੈ ਲਈਆਂ ਜਾਂਦੀਆਂ ਹਨ।",
+  "portfolioDividendsImported": "{count, plural, =1{1 ਡਿਵੀਡੈਂਡ ਸ਼ਾਮਲ ਕੀਤਾ} other{{count} ਡਿਵੀਡੈਂਡ ਸ਼ਾਮਲ ਕੀਤੇ}}",
+  "portfolioExportDividends": "ਡਿਵੀਡੈਂਡ ਐਕਸਪੋਰਟ ਕਰੋ (CSV)",
+  "portfolioDividendDeleted": "ਡਿਵੀਡੈਂਡ ਮਿਟਾਇਆ ਗਿਆ",
+  "portfolioDividendsHint": "ਰਕਮਾਂ ਜਿਵੇਂ ਤੁਹਾਡੇ ਖਾਤੇ ਵਿੱਚ ਆਈਆਂ, ਭੁਗਤਾਨ ਦੀ ਮੁਦਰਾ ਵਿੱਚ; ਕੁੱਲ ਰਕਮਾਂ ਅੱਜ ਦੇ ਰੇਟ ’ਤੇ ਬਦਲੀਆਂ ਜਾਂਦੀਆਂ ਹਨ। ਟੈਕਸ ਰਿਟਰਨ ਲਈ ਆਪਣੇ ਬ੍ਰੋਕਰ ਦੀ ਸਟੇਟਮੈਂਟ ਵਰਤੋ।"
 }

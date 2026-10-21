@@ -2563,4 +2563,49 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Таны тэмдэглэлд хадгалагдсан';
+
+  @override
+  String get portfolioDividendsReceived => 'Хүлээн авсан ногдол ашиг';
+
+  @override
+  String get portfolioDividendsThisYear => 'Энэ жил';
+
+  @override
+  String get portfolioDividendsAllTime => 'Нийт';
+
+  @override
+  String get portfolioAddDividend => 'Ногдол ашиг нэмэх';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Хүлээн авсан дүн ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Төлбөрийн огноо';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Ногдол ашиг бүртгэгдээгүй байна. Гараар нэмэх, эсвэл брокерийнхоо экспортыг импортлоорой – түүний ногдол ашгийн мөрүүд ч мөн уншигдана.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ногдол ашиг нэмэгдсэн',
+      one: '1 ногдол ашиг нэмэгдсэн',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Ногдол ашгийг экспортлох (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Ногдол ашгийг устгасан';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Дүнгүүд таны данс руу орж ирсэн хэлбэрээр, төлбөрийн валютаар; нийлбэрийг өнөөдрийн ханшаар хөрвүүлнэ. Татварын тайландаа брокерийнхоо хуулгыг ашиглана уу.';
 }

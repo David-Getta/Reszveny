@@ -2631,4 +2631,51 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Zapisano w twoich notatkach';
+
+  @override
+  String get portfolioDividendsReceived => 'Otrzymane dywidendy';
+
+  @override
+  String get portfolioDividendsThisYear => 'W tym roku';
+
+  @override
+  String get portfolioDividendsAllTime => 'Łącznie';
+
+  @override
+  String get portfolioAddDividend => 'Dodaj dywidendę';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Otrzymana kwota ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Data wypłaty';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Brak zapisanych dywidend. Dodaj je ręcznie lub zaimportuj eksport od swojego brokera – wiersze z dywidendami też zostaną wczytane.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Dodano $count dywidendy',
+      many: 'Dodano $count dywidend',
+      few: 'Dodano $count dywidendy',
+      one: 'Dodano 1 dywidendę',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Eksportuj dywidendy (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dywidenda usunięta';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Kwoty takie, jakie wpłynęły na Twoje konto, w walucie wypłaty; sumy przeliczane są po dzisiejszym kursie. Do rozliczenia podatkowego użyj zestawienia od brokera.';
 }

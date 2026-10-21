@@ -2570,4 +2570,49 @@ class AppLocalizationsRn extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Vyabitswe mu vyo wanditse';
+
+  @override
+  String get portfolioDividendsReceived => 'Amadividende yakiriwe';
+
+  @override
+  String get portfolioDividendsThisYear => 'Uyu mwaka';
+
+  @override
+  String get portfolioDividendsAllTime => 'Vyose kuva kera';
+
+  @override
+  String get portfolioAddDividend => 'Ongerako idividende';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Amahera yakiriwe ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Itariki yo kuriha';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Nta dividende yandikwa gushika ubu. Zongereko n\'ukuboko, canke winjize export ya broker wawe – imirongo yayo y\'amadividende nayo iratorwa.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Amadividende $count yongewe',
+      one: 'Idividende 1 ryongewe',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Sohora amadividende (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Idividende ryafuswe';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Amahera nk\'uko yashitse kuri konti yawe, mu mahera yo kuriha; ivyose bihindurwa ku giciro ca none. Ku bijanye n\'ikori, koresha urupapuro rwa broker wawe.';
 }

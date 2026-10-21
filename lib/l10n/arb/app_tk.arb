@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "{symbols} üçin häzirki baha ýok.",
   "eventsRecentResults": "Ýaňy-ýakynda yglan edilen netijeler",
   "saveToNotes": "Belliklerime ýazdyr",
-  "savedToNotes": "Bellikleriňize ýazdyryldy"
+  "savedToNotes": "Bellikleriňize ýazdyryldy",
+  "portfolioDividendsReceived": "Alnan diwidendler",
+  "portfolioDividendsThisYear": "Şu ýyl",
+  "portfolioDividendsAllTime": "Jemi",
+  "portfolioAddDividend": "Diwidend goş",
+  "portfolioDividendAmount": "Alnan möçber ({currency})",
+  "portfolioDividendDate": "Töleg senesi",
+  "portfolioDividendsEmpty": "Häzirlikçe diwidend ýazylmady. Olary el bilen goşuň ýa-da brokeriňiziň eksportyny import ediň – onuň diwidend setirleri hem alynýar.",
+  "portfolioDividendsImported": "{count, plural, =1{1 diwidend goşuldy} other{{count} diwidend goşuldy}}",
+  "portfolioExportDividends": "Diwidendleri eksport et (CSV)",
+  "portfolioDividendDeleted": "Diwidend pozuldy",
+  "portfolioDividendsHint": "Möçberler hasabyňyza gelen görnüşinde, töleg walýutasynda; jemler şu günki kurs bilen öwrülýär. Salgyt beýannamasy üçin brokeriňiziň hasabatyny ulanyň."
 }

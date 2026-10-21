@@ -2560,4 +2560,49 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Anrejistre nan nòt ou yo';
+
+  @override
+  String get portfolioDividendsReceived => 'Dividann ou resevwa';
+
+  @override
+  String get portfolioDividendsThisYear => 'Ane sa a';
+
+  @override
+  String get portfolioDividendsAllTime => 'Depi kòmansman';
+
+  @override
+  String get portfolioAddDividend => 'Ajoute dividann';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Montan ou resevwa ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Dat peman';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Poko gen okenn dividann ki anrejistre. Ajoute yo alamen, oswa enpòte ekspò koutye w la – liy dividann li yo ap pran tou.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dividann ajoute',
+      one: '1 dividann ajoute',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Ekspòte dividann (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividann efase';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Montan yo jan yo te rive sou kont ou, nan lajan peman an; total yo konvèti nan to jodi a. Pou deklarasyon taks ou, sèvi ak relve koutye w la.';
 }

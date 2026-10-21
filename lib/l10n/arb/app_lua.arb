@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Kakuena mushinga wa mpindieu wa {symbols}.",
   "eventsRecentResults": "Mapeta mapiamapia bamanyishe",
   "saveToNotes": "Lama mu mifundu yanyi",
-  "savedToNotes": "Mmalame mu mifundu yebe"
+  "savedToNotes": "Mmalame mu mifundu yebe",
+  "portfolioDividendsReceived": "Dividende idi bapete",
+  "portfolioDividendsThisYear": "Tshidimu etshi",
+  "portfolioDividendsAllTime": "Bikondo bionso",
+  "portfolioAddDividend": "Sakidila dividende",
+  "portfolioDividendAmount": "Makuta mapete ({currency})",
+  "portfolioDividendDate": "Dituku dia difuta",
+  "portfolioDividendsEmpty": "Kakuena dividende nansha umue mufunda too ne mpindieu. Sakidila yiyi ne bianza, anyi tuala export wa broker webe – milongo yende ya dividende idi yangata kabidi.",
+  "portfolioDividendsImported": "{count, plural, =1{Dividende 1 mmusakidibua} other{Dividende {count} mmisakidibua}}",
+  "portfolioExportDividends": "Patula dividende (CSV)",
+  "portfolioDividendDeleted": "Dividende mmujimija",
+  "portfolioDividendsHint": "Makuta mu mushindu uakafikawu mu konte webe, mu makuta a difuta; bungi bujima budi bushintuluka ku mushinga wa lelu. Bua mukanda webe wa mpaku, enza mudimu ne mukanda wa broker webe."
 }

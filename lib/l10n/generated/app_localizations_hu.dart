@@ -2567,4 +2567,49 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Elmentve a jegyzeteidbe';
+
+  @override
+  String get portfolioDividendsReceived => 'Kapott osztalékok';
+
+  @override
+  String get portfolioDividendsThisYear => 'Idén';
+
+  @override
+  String get portfolioDividendsAllTime => 'Összesen';
+
+  @override
+  String get portfolioAddDividend => 'Osztalék felvétele';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Kapott összeg ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Kifizetés napja';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Még nincs rögzített osztalék. Vedd fel kézzel, vagy importáld a brókered exportját – annak osztaléksorai is bekerülnek.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count osztalék felvéve',
+      one: '1 osztalék felvéve',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Osztalékok exportja (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Osztalék törölve';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Az összegek úgy, ahogy a számlára érkeztek, a kifizetés pénznemében; az összesítés a mai árfolyamon átváltva. Az adóbevalláshoz a brókered kimutatása az irányadó.';
 }

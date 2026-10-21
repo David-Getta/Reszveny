@@ -2620,4 +2620,52 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get savedToNotes => 'تم الحفظ في ملاحظاتك';
+
+  @override
+  String get portfolioDividendsReceived => 'توزيعات الأرباح المستلمة';
+
+  @override
+  String get portfolioDividendsThisYear => 'هذا العام';
+
+  @override
+  String get portfolioDividendsAllTime => 'منذ البداية';
+
+  @override
+  String get portfolioAddDividend => 'إضافة توزيعات أرباح';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'المبلغ المستلم ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'تاريخ الدفع';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'لم تُسجَّل أي توزيعات أرباح بعد. أضفها يدويًا، أو استورد ملف التصدير من وسيطك – تُلتقط صفوف التوزيعات فيه أيضًا.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'تمت إضافة $count توزيعة أرباح',
+      many: 'تمت إضافة $count توزيعة أرباح',
+      few: 'تمت إضافة $count توزيعات أرباح',
+      two: 'تمت إضافة توزيعتَي أرباح',
+      one: 'تمت إضافة توزيعة أرباح واحدة',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'تصدير توزيعات الأرباح (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'تم حذف توزيعة الأرباح';
+
+  @override
+  String get portfolioDividendsHint =>
+      'المبالغ كما وصلت إلى حسابك، بعملة الدفع؛ وتُحوَّل المجاميع بسعر اليوم. لإقرارك الضريبي، استخدم كشف حساب وسيطك.';
 }

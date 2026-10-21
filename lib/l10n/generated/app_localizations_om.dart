@@ -2571,4 +2571,49 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Yaadannoo keetti olkaa\'ame';
+
+  @override
+  String get portfolioDividendsReceived => 'Diviidendii argame';
+
+  @override
+  String get portfolioDividendsThisYear => 'Bara kana';
+
+  @override
+  String get portfolioDividendsAllTime => 'Waliigala';
+
+  @override
+  String get portfolioAddDividend => 'Diviidendii dabali';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Maallaqa argame ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Guyyaa kaffaltii';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Hanga ammaatti diviidendiin galmaa\'e hin jiru. Harkaan dabali, yookiin faayilii ekspoortii birookerii keetii galchi – tarreewwan diviidendii isaas ni fudhatamu.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Diviidendii $count dabalaman',
+      one: 'Diviidendii 1 dabalame',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Diviidendii ekspoortii godhi (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Diviidendiin haqame';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Maallaqni akkuma herrega kee irra ga\'etti, maallaqa kaffaltiitiin; ida\'amni sadarkaa har\'aatiin jijjiirama. Gabaasa gibiraa keetiif, ibsa birookerii keetii fayyadami.';
 }

@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "{symbols} માટે વર્તમાન ભાવ ઉપલબ્ધ નથી.",
   "eventsRecentResults": "હાલમાં જાહેર થયેલાં પરિણામો",
   "saveToNotes": "મારી નોંધોમાં સાચવો",
-  "savedToNotes": "તમારી નોંધોમાં સાચવ્યું"
+  "savedToNotes": "તમારી નોંધોમાં સાચવ્યું",
+  "portfolioDividendsReceived": "મળેલ ડિવિડન્ડ",
+  "portfolioDividendsThisYear": "આ વર્ષે",
+  "portfolioDividendsAllTime": "અત્યાર સુધી",
+  "portfolioAddDividend": "ડિવિડન્ડ ઉમેરો",
+  "portfolioDividendAmount": "મળેલી રકમ ({currency})",
+  "portfolioDividendDate": "ચુકવણીની તારીખ",
+  "portfolioDividendsEmpty": "હજી સુધી કોઈ ડિવિડન્ડ નોંધાયું નથી. હાથે ઉમેરો, અથવા તમારા બ્રોકરનું એક્સપોર્ટ ઇમ્પોર્ટ કરો – તેની ડિવિડન્ડ હરોળો પણ લેવાય છે.",
+  "portfolioDividendsImported": "{count, plural, =1{1 ડિવિડન્ડ ઉમેરાયું} other{{count} ડિવિડન્ડ ઉમેરાયાં}}",
+  "portfolioExportDividends": "ડિવિડન્ડ એક્સપોર્ટ કરો (CSV)",
+  "portfolioDividendDeleted": "ડિવિડન્ડ કાઢી નાખ્યું",
+  "portfolioDividendsHint": "રકમો તમારા ખાતામાં જેમ આવી તેમ, ચુકવણીની કરન્સીમાં; કુલ આજના દરે રૂપાંતરિત થાય છે. ટેક્સ રિટર્ન માટે તમારા બ્રોકરનું સ્ટેટમેન્ટ વાપરો."
 }

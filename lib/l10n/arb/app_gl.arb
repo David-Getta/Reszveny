@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Non hai prezo actual para {symbols}.",
   "eventsRecentResults": "Resultados recentes",
   "saveToNotes": "Gardar nas miñas notas",
-  "savedToNotes": "Gardado nas túas notas"
+  "savedToNotes": "Gardado nas túas notas",
+  "portfolioDividendsReceived": "Dividendos recibidos",
+  "portfolioDividendsThisYear": "Este ano",
+  "portfolioDividendsAllTime": "Histórico",
+  "portfolioAddDividend": "Engadir dividendo",
+  "portfolioDividendAmount": "Importe recibido ({currency})",
+  "portfolioDividendDate": "Data de pagamento",
+  "portfolioDividendsEmpty": "Aínda non hai dividendos rexistrados. Engádeos a man ou importa a exportación do teu corredor: as súas filas de dividendos tamén se recollen.",
+  "portfolioDividendsImported": "{count, plural, =1{1 dividendo engadido} other{{count} dividendos engadidos}}",
+  "portfolioExportDividends": "Exportar dividendos (CSV)",
+  "portfolioDividendDeleted": "Dividendo eliminado",
+  "portfolioDividendsHint": "Importes tal como chegaron á túa conta, na moeda de pagamento; os totais convértense ao cambio de hoxe. Para a declaración da renda, usa o extracto do teu corredor."
 }

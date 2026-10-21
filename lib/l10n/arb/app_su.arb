@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Teu aya harga ayeuna pikeun {symbols}.",
   "eventsRecentResults": "Laporan anyar",
   "saveToNotes": "Simpen ka catetan abdi",
-  "savedToNotes": "Parantos disimpen dina catetan anjeun"
+  "savedToNotes": "Parantos disimpen dina catetan anjeun",
+  "portfolioDividendsReceived": "Dividen anu katampi",
+  "portfolioDividendsThisYear": "Taun ieu",
+  "portfolioDividendsAllTime": "Sadayana",
+  "portfolioAddDividend": "Tambihkeun dividen",
+  "portfolioDividendAmount": "Jumlah anu katampi ({currency})",
+  "portfolioDividendDate": "Tanggal pamayaran",
+  "portfolioDividendsEmpty": "Can aya dividen anu kacatet. Tambihkeun sacara manual, atanapi impor ékspor ti broker anjeun – baris dividenna ogé bakal kacandak.",
+  "portfolioDividendsImported": "{count, plural, =1{1 dividen ditambihkeun} other{{count} dividen ditambihkeun}}",
+  "portfolioExportDividends": "Ékspor dividen (CSV)",
+  "portfolioDividendDeleted": "Dividen dihapus",
+  "portfolioDividendsHint": "Jumlah sakumaha asupna kana akun anjeun, dina mata uang pamayaran; totalna dikonvérsi ku kurs dinten ieu. Kanggo laporan pajeg, anggo laporan ti broker anjeun."
 }

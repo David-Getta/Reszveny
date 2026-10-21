@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "{symbols} үчүн учурдагы баа жок.",
   "eventsRecentResults": "Жакында жарыяланган натыйжалар",
   "saveToNotes": "Жазууларыма сактоо",
-  "savedToNotes": "Жазууларыңызга сакталды"
+  "savedToNotes": "Жазууларыңызга сакталды",
+  "portfolioDividendsReceived": "Алынган дивиденддер",
+  "portfolioDividendsThisYear": "Бул жыл",
+  "portfolioDividendsAllTime": "Бардык убакыт",
+  "portfolioAddDividend": "Дивиденд кошуу",
+  "portfolioDividendAmount": "Алынган сумма ({currency})",
+  "portfolioDividendDate": "Төлөм күнү",
+  "portfolioDividendsEmpty": "Дивиденддер азырынча жазыла элек. Кол менен кошуңуз же брокериңиздин экспортун импорттоңуз – андагы дивиденд саптары да алынат.",
+  "portfolioDividendsImported": "{count, plural, =1{1 дивиденд кошулду} other{{count} дивиденд кошулду}}",
+  "portfolioExportDividends": "Дивиденддерди экспорттоо (CSV)",
+  "portfolioDividendDeleted": "Дивиденд өчүрүлдү",
+  "portfolioDividendsHint": "Суммалар эсебиңизге келгендей, төлөм валютасында; жыйынтыктар бүгүнкү курс боюнча которулат. Салык декларациясы үчүн брокериңиздин көчүрмөсүн колдонуңуз."
 }

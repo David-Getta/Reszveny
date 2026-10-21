@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "{symbols}沒有目前股價。",
   "eventsRecentResults": "最新業績",
   "saveToNotes": "儲存至我的筆記",
-  "savedToNotes": "已儲存至你的筆記"
+  "savedToNotes": "已儲存至你的筆記",
+  "portfolioDividendsReceived": "已收股息",
+  "portfolioDividendsThisYear": "今年",
+  "portfolioDividendsAllTime": "累計",
+  "portfolioAddDividend": "新增股息",
+  "portfolioDividendAmount": "實收金額（{currency}）",
+  "portfolioDividendDate": "派息日期",
+  "portfolioDividendsEmpty": "尚未記錄任何股息。可手動新增，或匯入經紀商的匯出檔案，其中的股息記錄亦會被識別。",
+  "portfolioDividendsImported": "{count, plural, =1{已新增 1 筆股息} other{已新增 {count} 筆股息}}",
+  "portfolioExportDividends": "匯出股息（CSV）",
+  "portfolioDividendDeleted": "股息已刪除",
+  "portfolioDividendsHint": "金額以到賬時的派息貨幣顯示；合計按今日匯率換算。報稅請以經紀商的結單為準。"
 }

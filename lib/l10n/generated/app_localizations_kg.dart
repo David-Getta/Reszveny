@@ -2570,4 +2570,49 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Yo me bumbama na ba note na nge';
+
+  @override
+  String get portfolioDividendsReceived => 'Ba dividende ya nge bakaka';
+
+  @override
+  String get portfolioDividendsThisYear => 'Mvula yai';
+
+  @override
+  String get portfolioDividendsAllTime => 'Ntangu yonso';
+
+  @override
+  String get portfolioAddDividend => 'Yika dividende';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Mbongo ya nge bakaka ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Kilumbu ya kufuta';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Ata dividende mosi ve me sonikwa ntete. Yika yo na maboko, to kotisa export ya broker na nge – ba ligne ya dividende na yo mpi ke bakama.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ba dividende $count me yikama',
+      one: 'Dividende 1 me yikama',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Basisa ba dividende (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividende me katulwa';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Mbongo mutindu yo kwisaka na konti na nge, na mbongo ya kufuta; ba total ke balulwa na ntalu ya bubu. Sambu na mukanda na nge ya mpaku, sadila mukanda ya broker na nge.';
 }

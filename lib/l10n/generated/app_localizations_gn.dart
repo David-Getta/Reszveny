@@ -2567,4 +2567,49 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Oñeñongatúma nde jehaipyrépe';
+
+  @override
+  String get portfolioDividendsReceived => 'Dividendo og̃uahẽva';
+
+  @override
+  String get portfolioDividendsThisYear => 'Ko ary';
+
+  @override
+  String get portfolioDividendsAllTime => 'Opa ára';
+
+  @override
+  String get portfolioAddDividend => 'Embojoapy dividendo';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Pira pire og̃uahẽva ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Jehepyme\'ẽ ára';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Ndaipóri gueteri dividendo oñemboguapýva. Embojoapy nde pópe, térã egueru nde broker export – umi dividendo tysýi avei ojegueraha.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dividendo oñembojoapy',
+      one: '1 dividendo oñembojoapy',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Enohẽ dividendo (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividendo oñemboguepa';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Pira pire og̃uahẽ haguéicha nde cuenta-pe, jehepyme\'ẽ viru-pe; opavave oñembohasa ko árape oĩva cambio-pe. Nde impuesto declaración-rã, eipuru nde broker extracto.';
 }

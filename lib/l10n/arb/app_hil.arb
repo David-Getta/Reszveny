@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Wala sang presyo subong para sa {symbols}.",
   "eventsRecentResults": "Bag-o lang gin-report nga resulta",
   "saveToNotes": "I-save sa akon mga nota",
-  "savedToNotes": "Na-save sa imo mga nota"
+  "savedToNotes": "Na-save sa imo mga nota",
+  "portfolioDividendsReceived": "Nabaton nga dibidendo",
+  "portfolioDividendsThisYear": "Sini nga tuig",
+  "portfolioDividendsAllTime": "Tanan nga tion",
+  "portfolioAddDividend": "Idugang ang dibidendo",
+  "portfolioDividendAmount": "Kantidad nga nabaton ({currency})",
+  "portfolioDividendDate": "Petsa sang pagbayad",
+  "portfolioDividendsEmpty": "Wala pa sang narekord nga dibidendo. Idugang ini sa kamot, ukon i-import ang export sang imo broker – ginakuha man ang mga linya sang dibidendo sini.",
+  "portfolioDividendsImported": "{count, plural, =1{1 dibidendo ang gindugang} other{{count} dibidendo ang gindugang}}",
+  "portfolioExportDividends": "I-export ang mga dibidendo (CSV)",
+  "portfolioDividendDeleted": "Napanas ang dibidendo",
+  "portfolioDividendsHint": "Mga kantidad suno sa pag-abot sini sa imo account, sa currency sang pagbayad; ang mga total gina-convert sa rate subong. Para sa imo tax return, gamita ang statement sang imo broker."
 }

@@ -2568,4 +2568,49 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Qaydlaringizga saqlandi';
+
+  @override
+  String get portfolioDividendsReceived => 'Olingan dividendlar';
+
+  @override
+  String get portfolioDividendsThisYear => 'Shu yil';
+
+  @override
+  String get portfolioDividendsAllTime => 'Jami';
+
+  @override
+  String get portfolioAddDividend => 'Dividend qoʻshish';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Olingan summa ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Toʻlov sanasi';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Hali dividendlar yozilmagan. Ularni qoʻlda qoʻshing yoki brokeringiz eksportini import qiling – undagi dividend qatorlari ham olinadi.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dividend qoʻshildi',
+      one: '1 dividend qoʻshildi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Dividendlarni eksport qilish (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividend oʻchirildi';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Summalar hisobingizga kelgan holatda, toʻlov valyutasida; jami bugungi kurs boʻyicha konvertatsiya qilinadi. Soliq deklaratsiyasi uchun brokeringiz hisobotidan foydalaning.';
 }

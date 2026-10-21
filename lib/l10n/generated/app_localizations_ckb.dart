@@ -2563,4 +2563,49 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get savedToNotes => 'لە تێبینییەکانت پاشەکەوت کرا';
+
+  @override
+  String get portfolioDividendsReceived => 'پشکی قازانجی وەرگیراو';
+
+  @override
+  String get portfolioDividendsThisYear => 'ئەم ساڵ';
+
+  @override
+  String get portfolioDividendsAllTime => 'هەموو کات';
+
+  @override
+  String get portfolioAddDividend => 'پشکی قازانج زیاد بکە';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'بڕی وەرگیراو ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'ڕێکەوتی پارەدان';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'هێشتا هیچ پشکی قازانج تۆمار نەکراوە. بە دەست زیادیان بکە، یان هەناردەی بڕۆکەرەکەت هاوردە بکە – ڕیزەکانی پشکی قازانجیش وەردەگیرێن.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count پشکی قازانج زیادکرا',
+      one: '1 پشکی قازانج زیادکرا',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'هەناردەکردنی پشکی قازانج (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'پشکی قازانج سڕایەوە';
+
+  @override
+  String get portfolioDividendsHint =>
+      'بڕەکان وەک ئەوەی گەیشتوونە هەژمارەکەت، بە دراوی پارەدان؛ کۆکان بە نرخی ئەمڕۆ دەگۆڕدرێن. بۆ ڕاپۆرتی باجەکەت، بەیاننامەی بڕۆکەرەکەت بەکاربهێنە.';
 }

@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Walang kasalukuyang presyo para sa {symbols}.",
   "eventsRecentResults": "Kamakailang iniulat na resulta",
   "saveToNotes": "I-save sa aking mga tala",
-  "savedToNotes": "Na-save sa iyong mga tala"
+  "savedToNotes": "Na-save sa iyong mga tala",
+  "portfolioDividendsReceived": "Natanggap na dibidendo",
+  "portfolioDividendsThisYear": "Ngayong taon",
+  "portfolioDividendsAllTime": "Kabuuan",
+  "portfolioAddDividend": "Magdagdag ng dibidendo",
+  "portfolioDividendAmount": "Halagang natanggap ({currency})",
+  "portfolioDividendDate": "Petsa ng pagbabayad",
+  "portfolioDividendsEmpty": "Wala pang naitalang dibidendo. Idagdag ang mga ito nang manu-mano, o i-import ang export ng iyong broker – kukunin din ang mga row ng dibidendo nito.",
+  "portfolioDividendsImported": "{count, plural, =1{1 dibidendo ang naidagdag} other{{count} dibidendo ang naidagdag}}",
+  "portfolioExportDividends": "I-export ang mga dibidendo (CSV)",
+  "portfolioDividendDeleted": "Nabura ang dibidendo",
+  "portfolioDividendsHint": "Mga halaga ayon sa pagdating nito sa iyong account, sa currency ng pagbabayad; ang mga kabuuan ay naka-convert sa rate ngayon. Para sa iyong tax return, gamitin ang statement ng iyong broker."
 }

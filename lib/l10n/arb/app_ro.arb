@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Nu există preț curent pentru {symbols}.",
   "eventsRecentResults": "Rezultate recente",
   "saveToNotes": "Salvează în notițele mele",
-  "savedToNotes": "Salvat în notițele tale"
+  "savedToNotes": "Salvat în notițele tale",
+  "portfolioDividendsReceived": "Dividende încasate",
+  "portfolioDividendsThisYear": "Anul acesta",
+  "portfolioDividendsAllTime": "Total",
+  "portfolioAddDividend": "Adaugă dividend",
+  "portfolioDividendAmount": "Suma încasată ({currency})",
+  "portfolioDividendDate": "Data plății",
+  "portfolioDividendsEmpty": "Niciun dividend înregistrat încă. Adaugă-le manual sau importă exportul de la broker – rândurile cu dividende sunt preluate și ele.",
+  "portfolioDividendsImported": "{count, plural, =1{1 dividend adăugat} few{{count} dividende adăugate} other{{count} de dividende adăugate}}",
+  "portfolioExportDividends": "Exportă dividendele (CSV)",
+  "portfolioDividendDeleted": "Dividend șters",
+  "portfolioDividendsHint": "Sumele așa cum au ajuns în contul tău, în moneda plății; totalurile sunt convertite la cursul de azi. Pentru declarația fiscală, folosește extrasul brokerului."
 }

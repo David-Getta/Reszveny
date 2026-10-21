@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Ha ho theko ya hona jwale ya {symbols}.",
   "eventsRecentResults": "Diphetho tse sa tswa tlalehwa",
   "saveToNotes": "Boloka dintlheng tsa ka",
-  "savedToNotes": "E bolokilwe dintlheng tsa hao"
+  "savedToNotes": "E bolokilwe dintlheng tsa hao",
+  "portfolioDividendsReceived": "Dividende tse amohetsweng",
+  "portfolioDividendsThisYear": "Selemong sena",
+  "portfolioDividendsAllTime": "Kaofela",
+  "portfolioAddDividend": "Eketsa dividende",
+  "portfolioDividendAmount": "Chelete e amohetsweng ({currency})",
+  "portfolioDividendDate": "Letsatsi la tefo",
+  "portfolioDividendsEmpty": "Ha ho dividende tse tlalehilweng ho fihlela joale. Di eketse ka letsoho, kapa o kenye faele ya export ya broker ya hao – mela ya yona ya dividende le yona e a nkuwa.",
+  "portfolioDividendsImported": "{count, plural, =1{Dividende e 1 e eketsitswe} other{Dividende tse {count} di eketsitswe}}",
+  "portfolioExportDividends": "Ntsha dividende (CSV)",
+  "portfolioDividendDeleted": "Dividende e hlakotswe",
+  "portfolioDividendsHint": "Dichelete kamoo di fihlileng akhaontong ya hao, ka chelete ya tefo; dipalohare di fetolelwa ka sekhahla sa kajeno. Bakeng sa lekgetho la hao, sebedisa setatemente sa broker ya hao."
 }

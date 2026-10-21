@@ -2558,4 +2558,49 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get savedToNotes => 'در یادداشت‌هایتان ذخیره شد';
+
+  @override
+  String get portfolioDividendsReceived => 'سود سهام دریافت‌شده';
+
+  @override
+  String get portfolioDividendsThisYear => 'امسال';
+
+  @override
+  String get portfolioDividendsAllTime => 'از ابتدا';
+
+  @override
+  String get portfolioAddDividend => 'افزودن سود سهام';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'مبلغ دریافتی ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'تاریخ پرداخت';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'هنوز سود سهامی ثبت نشده است. آن را دستی اضافه کنید یا فایل خروجی کارگزارتان را وارد کنید – ردیف‌های سود سهام آن هم برداشته می‌شوند.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count سود سهام اضافه شد',
+      one: '1 سود سهام اضافه شد',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'خروجی سود سهام (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'سود سهام حذف شد';
+
+  @override
+  String get portfolioDividendsHint =>
+      'مبالغ همان‌طور که به حسابتان رسیده‌اند، به ارز پرداخت؛ جمع‌ها با نرخ امروز تبدیل می‌شوند. برای اظهارنامه مالیاتی از صورت‌حساب کارگزارتان استفاده کنید.';
 }

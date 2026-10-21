@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Ingen aktuel kurs for {symbols}.",
   "eventsRecentResults": "Seneste regnskaber",
   "saveToNotes": "Gem i mine noter",
-  "savedToNotes": "Gemt i dine noter"
+  "savedToNotes": "Gemt i dine noter",
+  "portfolioDividendsReceived": "Modtaget udbytte",
+  "portfolioDividendsThisYear": "I år",
+  "portfolioDividendsAllTime": "Siden start",
+  "portfolioAddDividend": "Tilføj udbytte",
+  "portfolioDividendAmount": "Modtaget beløb ({currency})",
+  "portfolioDividendDate": "Udbetalingsdato",
+  "portfolioDividendsEmpty": "Ingen udbytter registreret endnu. Tilføj dem manuelt, eller importér din brokers eksport – dens udbytterækker hentes også.",
+  "portfolioDividendsImported": "{count, plural, =1{1 udbytte tilføjet} other{{count} udbytter tilføjet}}",
+  "portfolioExportDividends": "Eksportér udbytter (CSV)",
+  "portfolioDividendDeleted": "Udbytte slettet",
+  "portfolioDividendsHint": "Beløb som de blev indsat på din konto, i udbetalingsvalutaen; totaler omregnes til dagens kurs. Brug din brokers opgørelse til din selvangivelse."
 }

@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Δεν υπάρχει τρέχουσα τιμή για {symbols}.",
   "eventsRecentResults": "Πρόσφατα αποτελέσματα",
   "saveToNotes": "Αποθήκευση στις σημειώσεις μου",
-  "savedToNotes": "Αποθηκεύτηκε στις σημειώσεις σας"
+  "savedToNotes": "Αποθηκεύτηκε στις σημειώσεις σας",
+  "portfolioDividendsReceived": "Εισπραχθέντα μερίσματα",
+  "portfolioDividendsThisYear": "Φέτος",
+  "portfolioDividendsAllTime": "Συνολικά",
+  "portfolioAddDividend": "Προσθήκη μερίσματος",
+  "portfolioDividendAmount": "Ποσό που εισπράχθηκε ({currency})",
+  "portfolioDividendDate": "Ημερομηνία πληρωμής",
+  "portfolioDividendsEmpty": "Δεν έχουν καταγραφεί μερίσματα ακόμη. Προσθέστε τα χειροκίνητα ή εισαγάγετε την εξαγωγή του χρηματιστή σας – οι γραμμές μερισμάτων της συλλέγονται επίσης.",
+  "portfolioDividendsImported": "{count, plural, =1{Προστέθηκε 1 μέρισμα} other{Προστέθηκαν {count} μερίσματα}}",
+  "portfolioExportDividends": "Εξαγωγή μερισμάτων (CSV)",
+  "portfolioDividendDeleted": "Το μέρισμα διαγράφηκε",
+  "portfolioDividendsHint": "Ποσά όπως πιστώθηκαν στον λογαριασμό σας, στο νόμισμα της πληρωμής· τα σύνολα μετατρέπονται με τη σημερινή ισοτιμία. Για τη φορολογική δήλωση χρησιμοποιήστε την κατάσταση του χρηματιστή σας."
 }

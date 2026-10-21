@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "{symbols} ಗೆ ಪ್ರಸ್ತುತ ಬೆಲೆ ಲಭ್ಯವಿಲ್ಲ.",
   "eventsRecentResults": "ಇತ್ತೀಚೆಗೆ ವರದಿಯಾದ ಫಲಿತಾಂಶಗಳು",
   "saveToNotes": "ನನ್ನ ಟಿಪ್ಪಣಿಗಳಿಗೆ ಉಳಿಸಿ",
-  "savedToNotes": "ನಿಮ್ಮ ಟಿಪ್ಪಣಿಗಳಿಗೆ ಉಳಿಸಲಾಗಿದೆ"
+  "savedToNotes": "ನಿಮ್ಮ ಟಿಪ್ಪಣಿಗಳಿಗೆ ಉಳಿಸಲಾಗಿದೆ",
+  "portfolioDividendsReceived": "ಪಡೆದ ಡಿವಿಡೆಂಡ್‌ಗಳು",
+  "portfolioDividendsThisYear": "ಈ ವರ್ಷ",
+  "portfolioDividendsAllTime": "ಇದುವರೆಗೆ",
+  "portfolioAddDividend": "ಡಿವಿಡೆಂಡ್ ಸೇರಿಸಿ",
+  "portfolioDividendAmount": "ಪಡೆದ ಮೊತ್ತ ({currency})",
+  "portfolioDividendDate": "ಪಾವತಿ ದಿನಾಂಕ",
+  "portfolioDividendsEmpty": "ಇನ್ನೂ ಯಾವುದೇ ಡಿವಿಡೆಂಡ್ ದಾಖಲಾಗಿಲ್ಲ. ಕೈಯಾರೆ ಸೇರಿಸಿ, ಅಥವಾ ನಿಮ್ಮ ಬ್ರೋಕರ್‌ನ ಎಕ್ಸ್‌ಪೋರ್ಟ್ ಇಂಪೋರ್ಟ್ ಮಾಡಿ – ಅದರ ಡಿವಿಡೆಂಡ್ ಸಾಲುಗಳನ್ನೂ ತೆಗೆದುಕೊಳ್ಳಲಾಗುತ್ತದೆ.",
+  "portfolioDividendsImported": "{count, plural, =1{1 ಡಿವಿಡೆಂಡ್ ಸೇರಿಸಲಾಗಿದೆ} other{{count} ಡಿವಿಡೆಂಡ್‌ಗಳನ್ನು ಸೇರಿಸಲಾಗಿದೆ}}",
+  "portfolioExportDividends": "ಡಿವಿಡೆಂಡ್‌ಗಳನ್ನು ಎಕ್ಸ್‌ಪೋರ್ಟ್ ಮಾಡಿ (CSV)",
+  "portfolioDividendDeleted": "ಡಿವಿಡೆಂಡ್ ಅಳಿಸಲಾಗಿದೆ",
+  "portfolioDividendsHint": "ಮೊತ್ತಗಳು ನಿಮ್ಮ ಖಾತೆಗೆ ಬಂದಂತೆಯೇ, ಪಾವತಿ ಕರೆನ್ಸಿಯಲ್ಲಿ; ಒಟ್ಟು ಮೊತ್ತಗಳನ್ನು ಇಂದಿನ ದರದಲ್ಲಿ ಪರಿವರ್ತಿಸಲಾಗಿದೆ. ತೆರಿಗೆ ರಿಟರ್ನ್‌ಗೆ ನಿಮ್ಮ ಬ್ರೋಕರ್‌ನ ಸ್ಟೇಟ್‌ಮೆಂಟ್ ಬಳಸಿ."
 }

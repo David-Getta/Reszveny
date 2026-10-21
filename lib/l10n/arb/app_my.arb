@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "{symbols} အတွက် လက်ရှိဈေးနှုန်း မရှိပါ။",
   "eventsRecentResults": "မကြာသေးမီ ထုတ်ပြန်ထားသော ရလဒ်များ",
   "saveToNotes": "ကျွန်ုပ်၏ မှတ်စုများသို့ သိမ်းရန်",
-  "savedToNotes": "သင့်မှတ်စုများသို့ သိမ်းပြီးပါပြီ"
+  "savedToNotes": "သင့်မှတ်စုများသို့ သိမ်းပြီးပါပြီ",
+  "portfolioDividendsReceived": "ရရှိထားသော အမြတ်ဝေစုများ",
+  "portfolioDividendsThisYear": "ယခုနှစ်",
+  "portfolioDividendsAllTime": "စုစုပေါင်း",
+  "portfolioAddDividend": "အမြတ်ဝေစု ထည့်ရန်",
+  "portfolioDividendAmount": "ရရှိသည့်ပမာဏ ({currency})",
+  "portfolioDividendDate": "ပေးချေသည့်ရက်",
+  "portfolioDividendsEmpty": "အမြတ်ဝေစု မှတ်တမ်းမရှိသေးပါ။ ကိုယ်တိုင်ထည့်ပါ၊ သို့မဟုတ် သင့်ဘရိုကာ၏ export ဖိုင်ကို တင်သွင်းပါ – ထိုဖိုင်ထဲမှ အမြတ်ဝေစုအတန်းများကိုလည်း ဖမ်းယူပါသည်။",
+  "portfolioDividendsImported": "{count, plural, =1{အမြတ်ဝေစု 1 ခု ထည့်ပြီး} other{အမြတ်ဝေစု {count} ခု ထည့်ပြီး}}",
+  "portfolioExportDividends": "အမြတ်ဝေစုများ ထုတ်ယူရန် (CSV)",
+  "portfolioDividendDeleted": "အမြတ်ဝေစုကို ဖျက်ပြီး",
+  "portfolioDividendsHint": "ပမာဏများသည် သင့်အကောင့်ထဲ ရောက်ရှိလာသည့်အတိုင်း၊ ပေးချေငွေကြေးဖြင့် ဖြစ်သည်။ စုစုပေါင်းကို ယနေ့နှုန်းဖြင့် ပြောင်းလဲတွက်ချက်သည်။ အခွန်ကြေညာလွှာအတွက် သင့်ဘရိုကာ၏ ရှင်းတမ်းကို အသုံးပြုပါ။"
 }

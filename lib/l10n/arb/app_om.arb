@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Gatiin ammaa {symbols} hin jiru.",
   "eventsRecentResults": "Bu'aa dhiheenya gabaafame",
   "saveToNotes": "Yaadannoo kootti olkaa'i",
-  "savedToNotes": "Yaadannoo keetti olkaa'ame"
+  "savedToNotes": "Yaadannoo keetti olkaa'ame",
+  "portfolioDividendsReceived": "Diviidendii argame",
+  "portfolioDividendsThisYear": "Bara kana",
+  "portfolioDividendsAllTime": "Waliigala",
+  "portfolioAddDividend": "Diviidendii dabali",
+  "portfolioDividendAmount": "Maallaqa argame ({currency})",
+  "portfolioDividendDate": "Guyyaa kaffaltii",
+  "portfolioDividendsEmpty": "Hanga ammaatti diviidendiin galmaa'e hin jiru. Harkaan dabali, yookiin faayilii ekspoortii birookerii keetii galchi – tarreewwan diviidendii isaas ni fudhatamu.",
+  "portfolioDividendsImported": "{count, plural, =1{Diviidendii 1 dabalame} other{Diviidendii {count} dabalaman}}",
+  "portfolioExportDividends": "Diviidendii ekspoortii godhi (CSV)",
+  "portfolioDividendDeleted": "Diviidendiin haqame",
+  "portfolioDividendsHint": "Maallaqni akkuma herrega kee irra ga'etti, maallaqa kaffaltiitiin; ida'amni sadarkaa har'aatiin jijjiirama. Gabaasa gibiraa keetiif, ibsa birookerii keetii fayyadami."
 }

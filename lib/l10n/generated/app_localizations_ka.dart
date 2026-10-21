@@ -2563,4 +2563,49 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get savedToNotes => 'შენახულია თქვენს ჩანაწერებში';
+
+  @override
+  String get portfolioDividendsReceived => 'მიღებული დივიდენდები';
+
+  @override
+  String get portfolioDividendsThisYear => 'წელს';
+
+  @override
+  String get portfolioDividendsAllTime => 'მთელი პერიოდი';
+
+  @override
+  String get portfolioAddDividend => 'დივიდენდის დამატება';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'მიღებული თანხა ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'გადახდის თარიღი';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'დივიდენდები ჯერ არ არის ჩაწერილი. დაამატეთ ხელით ან შემოიტანეთ თქვენი ბროკერის ექსპორტი – მისი დივიდენდების სტრიქონებიც აღიქმება.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'დაემატა $count დივიდენდი',
+      one: 'დაემატა 1 დივიდენდი',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'დივიდენდების ექსპორტი (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'დივიდენდი წაიშალა';
+
+  @override
+  String get portfolioDividendsHint =>
+      'თანხები ისე, როგორც ჩაირიცხა თქვენს ანგარიშზე, გადახდის ვალუტაში; ჯამები კონვერტირდება დღევანდელი კურსით. საგადასახადო დეკლარაციისთვის გამოიყენეთ თქვენი ბროკერის ამონაწერი.';
 }

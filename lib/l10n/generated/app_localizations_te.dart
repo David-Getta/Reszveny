@@ -2568,4 +2568,50 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get savedToNotes => 'మీ గమనికలలో సేవ్ అయింది';
+
+  @override
+  String get portfolioDividendsReceived => 'అందుకున్న డివిడెండ్లు';
+
+  @override
+  String get portfolioDividendsThisYear => 'ఈ సంవత్సరం';
+
+  @override
+  String get portfolioDividendsAllTime => 'ఇప్పటివరకు మొత్తం';
+
+  @override
+  String get portfolioAddDividend => 'డివిడెండ్ జోడించండి';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'అందుకున్న మొత్తం ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'చెల్లింపు తేదీ';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'ఇంకా డివిడెండ్లు నమోదు కాలేదు. వాటిని మాన్యువల్‌గా జోడించండి, లేదా మీ బ్రోకర్ ఎక్స్‌పోర్ట్‌ను ఇంపోర్ట్ చేయండి – అందులోని డివిడెండ్ వరుసలు కూడా తీసుకోబడతాయి.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count డివిడెండ్లు జోడించబడ్డాయి',
+      one: '1 డివిడెండ్ జోడించబడింది',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends =>
+      'డివిడెండ్లను ఎక్స్‌పోర్ట్ చేయండి (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'డివిడెండ్ తొలగించబడింది';
+
+  @override
+  String get portfolioDividendsHint =>
+      'మొత్తాలు మీ ఖాతాలోకి వచ్చినట్లుగా, చెల్లింపు కరెన్సీలో; మొత్తం విలువలు నేటి రేటుతో మార్చబడతాయి. పన్ను రిటర్న్ కోసం మీ బ్రోకర్ స్టేట్‌మెంట్ ఉపయోగించండి.';
 }

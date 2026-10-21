@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Seesei bo biara nni hɔ mma {symbols}.",
   "eventsRecentResults": "Akontaabu a wɔabɔ ho amanneɛ nnansa yi",
   "saveToNotes": "Kora wɔ me nkyerɛwee mu",
-  "savedToNotes": "Wɔakora wɔ wo nkyerɛwee mu"
+  "savedToNotes": "Wɔakora wɔ wo nkyerɛwee mu",
+  "portfolioDividendsReceived": "Dividend a woanya",
+  "portfolioDividendsThisYear": "Afe yi",
+  "portfolioDividendsAllTime": "Bere nyinaa",
+  "portfolioAddDividend": "Fa dividend ka ho",
+  "portfolioDividendAmount": "Sika a woanya ({currency})",
+  "portfolioDividendDate": "Da a wɔtuaa",
+  "portfolioDividendsEmpty": "Wɔnkyerɛw dividend biara nnya. Fa wo nsa kyerɛw, anaa fa wo broker export no bra – ɛfa dividend nkyerɛwee no nso.",
+  "portfolioDividendsImported": "{count, plural, =1{Wɔde dividend 1 aka ho} other{Wɔde dividend {count} aka ho}}",
+  "portfolioExportDividends": "Fa dividend kɔ (CSV)",
+  "portfolioDividendDeleted": "Wɔayi dividend no afi hɔ",
+  "portfolioDividendsHint": "Sika dodow sɛnea ɛbaa wo akontaabu so, wɔ sika a wɔde tuaa mu; wɔde nnɛ bo na ɛsesa nea aboaboa ano no. Fa wo broker nkrataa di dwuma ma wo tow."
 }

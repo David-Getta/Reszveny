@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Kò sí iye owó lọ́wọ́lọ́wọ́ fún {symbols}.",
   "eventsRecentResults": "Àbájáde tí a ṣẹ̀ṣẹ̀ kéde",
   "saveToNotes": "Fi pamọ́ sí àwọn àkọsílẹ̀ mi",
-  "savedToNotes": "Ti fi pamọ́ sí àwọn àkọsílẹ̀ rẹ"
+  "savedToNotes": "Ti fi pamọ́ sí àwọn àkọsílẹ̀ rẹ",
+  "portfolioDividendsReceived": "Ìpín èrè tí o gbà",
+  "portfolioDividendsThisYear": "Ọdún yìí",
+  "portfolioDividendsAllTime": "Láti ìbẹ̀rẹ̀",
+  "portfolioAddDividend": "Fi ìpín èrè kún",
+  "portfolioDividendAmount": "Owó tí o gbà ({currency})",
+  "portfolioDividendDate": "Ọjọ́ ìsanwó",
+  "portfolioDividendsEmpty": "Kò sí ìpín èrè tí a kọ sílẹ̀ síbẹ̀. Fi wọ́n kún pẹ̀lú ọwọ́, tàbí kí o gbé fáìlì export broker rẹ wọlé – a ó mú àwọn ìlà ìpín èrè inú rẹ̀ pẹ̀lú.",
+  "portfolioDividendsImported": "{count, plural, =1{A fi ìpín èrè 1 kún} other{A fi ìpín èrè {count} kún}}",
+  "portfolioExportDividends": "Gbé ìpín èrè jáde (CSV)",
+  "portfolioDividendDeleted": "A ti pa ìpín èrè rẹ́",
+  "portfolioDividendsHint": "Owó gẹ́gẹ́ bí ó ṣe wọ àkáǹtì rẹ, nínú owó ìsanwó; a yí àpapọ̀ padà ní ìwọ̀n òní. Fún ìkéde owó-orí rẹ, lo ìwé àkọsílẹ̀ broker rẹ."
 }

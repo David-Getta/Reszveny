@@ -2554,4 +2554,50 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get savedToNotes => 'נשמר בהערות שלך';
+
+  @override
+  String get portfolioDividendsReceived => 'דיבידנדים שהתקבלו';
+
+  @override
+  String get portfolioDividendsThisYear => 'השנה';
+
+  @override
+  String get portfolioDividendsAllTime => 'כל התקופה';
+
+  @override
+  String get portfolioAddDividend => 'הוספת דיבידנד';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'סכום שהתקבל ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'תאריך תשלום';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'עדיין לא נרשמו דיבידנדים. אפשר להוסיף אותם ידנית או לייבא את קובץ הייצוא של הברוקר – גם שורות הדיבידנד שבו נקלטות.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'נוספו $count דיבידנדים',
+      two: 'נוספו $count דיבידנדים',
+      one: 'נוסף דיבידנד אחד',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'ייצוא דיבידנדים (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'הדיבידנד נמחק';
+
+  @override
+  String get portfolioDividendsHint =>
+      'הסכומים כפי שהגיעו לחשבון, במטבע התשלום; הסיכומים מומרים לפי שער היום. לדוח המס יש להשתמש בדוח של הברוקר.';
 }

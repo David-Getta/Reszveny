@@ -2563,4 +2563,49 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Sparat i dina anteckningar';
+
+  @override
+  String get portfolioDividendsReceived => 'Mottagna utdelningar';
+
+  @override
+  String get portfolioDividendsThisYear => 'I år';
+
+  @override
+  String get portfolioDividendsAllTime => 'Totalt';
+
+  @override
+  String get portfolioAddDividend => 'Lägg till utdelning';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Mottaget belopp ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Utbetalningsdatum';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Inga utdelningar registrerade ännu. Lägg till dem manuellt eller importera exporten från din mäklare – utdelningsraderna läses också in.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count utdelningar tillagda',
+      one: '1 utdelning tillagd',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Exportera utdelningar (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Utdelning borttagen';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Beloppen som de kom in på ditt konto, i utbetalningsvalutan; summor räknas om till dagens kurs. Använd mäklarens kontrolluppgifter till deklarationen.';
 }

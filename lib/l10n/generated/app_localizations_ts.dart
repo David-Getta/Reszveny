@@ -2579,4 +2579,49 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Yi hlayisiwile eka tinotsi ta wena';
+
+  @override
+  String get portfolioDividendsReceived => 'Tidividende leti amukeriweke';
+
+  @override
+  String get portfolioDividendsThisYear => 'Lembe leri';
+
+  @override
+  String get portfolioDividendsAllTime => 'Hinkwaswo';
+
+  @override
+  String get portfolioAddDividend => 'Engetela dividende';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Mali leyi amukeriweke ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Siku ra ku hakela';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'A ku na tidividende leti tsariweke ku fikela sweswi. Ti engetele hi voko, kumbe u nghenisa fayili ya export ya broker wa wena – mitila ya yona ya tidividende na yona ya tekiwa.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Tidividende ta $count ti engeteriwile',
+      one: 'Dividende 1 yi engeteriwile',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Humesa tidividende (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividende yi susiwile';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Mali hilaha yi fikeke eka akhawunti ya wena, hi mali ya ku hakela; tinhlayo hinkwato ti hundzuluxiwa hi mpimo wa namuntlha. Eka xibalo xa wena, tirhisa xitatimende xa broker wa wena.';
 }

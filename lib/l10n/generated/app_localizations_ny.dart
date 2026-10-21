@@ -2569,4 +2569,49 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Zasungidwa ku zolemba zanu';
+
+  @override
+  String get portfolioDividendsReceived => 'Madividendi olandiridwa';
+
+  @override
+  String get portfolioDividendsThisYear => 'Chaka chino';
+
+  @override
+  String get portfolioDividendsAllTime => 'Nthawi zonse';
+
+  @override
+  String get portfolioAddDividend => 'Onjezani dividendi';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Ndalama zolandiridwa ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Tsiku lolipira';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Palibe madividendi olembedwa pakali pano. Awonjezereni pamanja, kapena tengani fayilo ya export ya broker wanu – mizere yake ya madividendi imatengedwanso.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Madividendi $count awonjezedwa',
+      one: 'Dividendi 1 yawonjezedwa',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Tumizani madividendi (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividendi yachotsedwa';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Ndalama monga momwe zinafikira mu akaunti yanu, mu ndalama yolipira; ziwerengero zonse zimasinthidwa pa mtengo wa lero. Pa msonkho wanu, gwiritsani ntchito chikalata cha broker wanu.';
 }

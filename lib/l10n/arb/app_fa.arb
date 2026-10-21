@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "قیمت فعلی برای {symbols} موجود نیست.",
   "eventsRecentResults": "نتایج تازه اعلام‌شده",
   "saveToNotes": "ذخیره در یادداشت‌هایم",
-  "savedToNotes": "در یادداشت‌هایتان ذخیره شد"
+  "savedToNotes": "در یادداشت‌هایتان ذخیره شد",
+  "portfolioDividendsReceived": "سود سهام دریافت‌شده",
+  "portfolioDividendsThisYear": "امسال",
+  "portfolioDividendsAllTime": "از ابتدا",
+  "portfolioAddDividend": "افزودن سود سهام",
+  "portfolioDividendAmount": "مبلغ دریافتی ({currency})",
+  "portfolioDividendDate": "تاریخ پرداخت",
+  "portfolioDividendsEmpty": "هنوز سود سهامی ثبت نشده است. آن را دستی اضافه کنید یا فایل خروجی کارگزارتان را وارد کنید – ردیف‌های سود سهام آن هم برداشته می‌شوند.",
+  "portfolioDividendsImported": "{count, plural, =1{1 سود سهام اضافه شد} other{{count} سود سهام اضافه شد}}",
+  "portfolioExportDividends": "خروجی سود سهام (CSV)",
+  "portfolioDividendDeleted": "سود سهام حذف شد",
+  "portfolioDividendsHint": "مبالغ همان‌طور که به حسابتان رسیده‌اند، به ارز پرداخت؛ جمع‌ها با نرخ امروز تبدیل می‌شوند. برای اظهارنامه مالیاتی از صورت‌حساب کارگزارتان استفاده کنید."
 }

@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "{symbols} لاءِ موجوده قيمت موجود ناهي.",
   "eventsRecentResults": "تازو جاري ڪيل نتيجا",
   "saveToNotes": "منهنجي نوٽس ۾ محفوظ ڪريو",
-  "savedToNotes": "توهان جي نوٽس ۾ محفوظ ٿيو"
+  "savedToNotes": "توهان جي نوٽس ۾ محفوظ ٿيو",
+  "portfolioDividendsReceived": "وصول ٿيل ڊيويڊنڊ",
+  "portfolioDividendsThisYear": "هن سال",
+  "portfolioDividendsAllTime": "هيستائين ڪل",
+  "portfolioAddDividend": "ڊيويڊنڊ شامل ڪريو",
+  "portfolioDividendAmount": "وصول ٿيل رقم ({currency})",
+  "portfolioDividendDate": "ادائگي جي تاريخ",
+  "portfolioDividendsEmpty": "اڃا ڪو ڊيويڊنڊ رڪارڊ نه ٿيو آهي. هٿ سان شامل ڪريو، يا پنهنجي بروڪر جي ايڪسپورٽ فائل امپورٽ ڪريو – ان جون ڊيويڊنڊ قطارون به ورتيون وينديون.",
+  "portfolioDividendsImported": "{count, plural, =1{1 ڊيويڊنڊ شامل ٿيو} other{{count} ڊيويڊنڊ شامل ٿيا}}",
+  "portfolioExportDividends": "ڊيويڊنڊ ايڪسپورٽ ڪريو (CSV)",
+  "portfolioDividendDeleted": "ڊيويڊنڊ ڊاهيو ويو",
+  "portfolioDividendsHint": "رقمون جيئن توهان جي اڪائونٽ ۾ آيون، ادائگي جي ڪرنسي ۾؛ ڪل رقمون اڄ جي اگهه تي تبديل ڪيون وڃن ٿيون. ٽيڪس ريٽرن لاءِ پنهنجي بروڪر جو اسٽيٽمينٽ استعمال ڪريو."
 }

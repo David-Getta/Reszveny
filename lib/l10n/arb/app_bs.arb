@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Nema trenutne cijene za {symbols}.",
   "eventsRecentResults": "Nedavno objavljeni rezultati",
   "saveToNotes": "Sačuvaj u moje bilješke",
-  "savedToNotes": "Sačuvano u vaše bilješke"
+  "savedToNotes": "Sačuvano u vaše bilješke",
+  "portfolioDividendsReceived": "Primljene dividende",
+  "portfolioDividendsThisYear": "Ove godine",
+  "portfolioDividendsAllTime": "Od početka",
+  "portfolioAddDividend": "Dodaj dividendu",
+  "portfolioDividendAmount": "Primljeni iznos ({currency})",
+  "portfolioDividendDate": "Datum isplate",
+  "portfolioDividendsEmpty": "Još nema zabilježenih dividendi. Dodajte ih ručno ili uvezite izvoz svog brokera – njegovi redovi s dividendama se također preuzimaju.",
+  "portfolioDividendsImported": "{count, plural, =1{Dodana 1 dividenda} one{Dodana {count} dividenda} few{Dodane {count} dividende} other{Dodano {count} dividendi}}",
+  "portfolioExportDividends": "Izvezi dividende (CSV)",
+  "portfolioDividendDeleted": "Dividenda izbrisana",
+  "portfolioDividendsHint": "Iznosi onakvi kakvi su stigli na vaš račun, u valuti isplate; ukupni iznosi se preračunavaju po današnjem kursu. Za poreznu prijavu koristite izvod svog brokera."
 }

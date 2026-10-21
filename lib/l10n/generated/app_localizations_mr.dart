@@ -2562,4 +2562,49 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get savedToNotes => 'तुमच्या नोंदींमध्ये सेव्ह केले';
+
+  @override
+  String get portfolioDividendsReceived => 'मिळालेला लाभांश';
+
+  @override
+  String get portfolioDividendsThisYear => 'या वर्षी';
+
+  @override
+  String get portfolioDividendsAllTime => 'आतापर्यंत एकूण';
+
+  @override
+  String get portfolioAddDividend => 'लाभांश जोडा';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'मिळालेली रक्कम ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'देय दिनांक';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'अजून कोणताही लाभांश नोंदवलेला नाही. ते हाताने जोडा किंवा तुमच्या ब्रोकरची एक्सपोर्ट फाइल इंपोर्ट करा – त्यातील लाभांशाच्या ओळीही घेतल्या जातात.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count लाभांश जोडले',
+      one: '1 लाभांश जोडला',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'लाभांश एक्सपोर्ट करा (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'लाभांश हटवला';
+
+  @override
+  String get portfolioDividendsHint =>
+      'रकमा तुमच्या खात्यात जशा आल्या तशा, पेआउट चलनात; एकूण रकमा आजच्या दराने रूपांतरित केल्या जातात. कर विवरणपत्रासाठी तुमच्या ब्रोकरचे स्टेटमेंट वापरा.';
 }

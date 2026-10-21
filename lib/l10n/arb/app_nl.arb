@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Geen actuele koers voor {symbols}.",
   "eventsRecentResults": "Recente kwartaalcijfers",
   "saveToNotes": "Opslaan in mijn notities",
-  "savedToNotes": "Opgeslagen in je notities"
+  "savedToNotes": "Opgeslagen in je notities",
+  "portfolioDividendsReceived": "Ontvangen dividend",
+  "portfolioDividendsThisYear": "Dit jaar",
+  "portfolioDividendsAllTime": "Totaal",
+  "portfolioAddDividend": "Dividend toevoegen",
+  "portfolioDividendAmount": "Ontvangen bedrag ({currency})",
+  "portfolioDividendDate": "Uitbetalingsdatum",
+  "portfolioDividendsEmpty": "Nog geen dividend vastgelegd. Voeg het handmatig toe of importeer de export van je broker – de dividendregels worden ook overgenomen.",
+  "portfolioDividendsImported": "{count, plural, =1{1 dividend toegevoegd} other{{count} dividenden toegevoegd}}",
+  "portfolioExportDividends": "Dividend exporteren (CSV)",
+  "portfolioDividendDeleted": "Dividend verwijderd",
+  "portfolioDividendsHint": "Bedragen zoals ze op je rekening binnenkwamen, in de uitbetalingsvaluta; totalen worden omgerekend tegen de koers van vandaag. Gebruik voor je belastingaangifte het overzicht van je broker."
 }

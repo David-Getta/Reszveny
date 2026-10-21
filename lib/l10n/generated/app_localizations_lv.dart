@@ -2603,4 +2603,50 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Saglabāts jūsu piezīmēs';
+
+  @override
+  String get portfolioDividendsReceived => 'Saņemtās dividendes';
+
+  @override
+  String get portfolioDividendsThisYear => 'Šogad';
+
+  @override
+  String get portfolioDividendsAllTime => 'Visu laiku';
+
+  @override
+  String get portfolioAddDividend => 'Pievienot dividendi';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Saņemtā summa ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Izmaksas datums';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Dividendes vēl nav reģistrētas. Pievienojiet tās manuāli vai importējiet sava brokera eksportu – tiks nolasītas arī tā dividenžu rindas.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Pievienotas $count dividendes',
+      one: 'Pievienota $count dividende',
+      zero: 'Pievienotas $count dividendes',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Eksportēt dividendes (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividende izdzēsta';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Summas tādas, kādas tās ienāca jūsu kontā, izmaksas valūtā; kopsummas pārrēķinātas pēc šodienas kursa. Nodokļu deklarācijai izmantojiet sava brokera izrakstu.';
 }

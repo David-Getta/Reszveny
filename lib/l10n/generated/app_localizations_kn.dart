@@ -2569,4 +2569,50 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get savedToNotes => 'ನಿಮ್ಮ ಟಿಪ್ಪಣಿಗಳಿಗೆ ಉಳಿಸಲಾಗಿದೆ';
+
+  @override
+  String get portfolioDividendsReceived => 'ಪಡೆದ ಡಿವಿಡೆಂಡ್‌ಗಳು';
+
+  @override
+  String get portfolioDividendsThisYear => 'ಈ ವರ್ಷ';
+
+  @override
+  String get portfolioDividendsAllTime => 'ಇದುವರೆಗೆ';
+
+  @override
+  String get portfolioAddDividend => 'ಡಿವಿಡೆಂಡ್ ಸೇರಿಸಿ';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'ಪಡೆದ ಮೊತ್ತ ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'ಪಾವತಿ ದಿನಾಂಕ';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'ಇನ್ನೂ ಯಾವುದೇ ಡಿವಿಡೆಂಡ್ ದಾಖಲಾಗಿಲ್ಲ. ಕೈಯಾರೆ ಸೇರಿಸಿ, ಅಥವಾ ನಿಮ್ಮ ಬ್ರೋಕರ್‌ನ ಎಕ್ಸ್‌ಪೋರ್ಟ್ ಇಂಪೋರ್ಟ್ ಮಾಡಿ – ಅದರ ಡಿವಿಡೆಂಡ್ ಸಾಲುಗಳನ್ನೂ ತೆಗೆದುಕೊಳ್ಳಲಾಗುತ್ತದೆ.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ಡಿವಿಡೆಂಡ್‌ಗಳನ್ನು ಸೇರಿಸಲಾಗಿದೆ',
+      one: '1 ಡಿವಿಡೆಂಡ್ ಸೇರಿಸಲಾಗಿದೆ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends =>
+      'ಡಿವಿಡೆಂಡ್‌ಗಳನ್ನು ಎಕ್ಸ್‌ಪೋರ್ಟ್ ಮಾಡಿ (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'ಡಿವಿಡೆಂಡ್ ಅಳಿಸಲಾಗಿದೆ';
+
+  @override
+  String get portfolioDividendsHint =>
+      'ಮೊತ್ತಗಳು ನಿಮ್ಮ ಖಾತೆಗೆ ಬಂದಂತೆಯೇ, ಪಾವತಿ ಕರೆನ್ಸಿಯಲ್ಲಿ; ಒಟ್ಟು ಮೊತ್ತಗಳನ್ನು ಇಂದಿನ ದರದಲ್ಲಿ ಪರಿವರ್ತಿಸಲಾಗಿದೆ. ತೆರಿಗೆ ರಿಟರ್ನ್‌ಗೆ ನಿಮ್ಮ ಬ್ರೋಕರ್‌ನ ಸ್ಟೇಟ್‌ಮೆಂಟ್ ಬಳಸಿ.';
 }

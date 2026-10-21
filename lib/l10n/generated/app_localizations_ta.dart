@@ -2572,4 +2572,49 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get savedToNotes => 'உங்கள் குறிப்புகளில் சேமிக்கப்பட்டது';
+
+  @override
+  String get portfolioDividendsReceived => 'பெறப்பட்ட ஈவுத்தொகை';
+
+  @override
+  String get portfolioDividendsThisYear => 'இந்த ஆண்டு';
+
+  @override
+  String get portfolioDividendsAllTime => 'இதுவரை மொத்தம்';
+
+  @override
+  String get portfolioAddDividend => 'ஈவுத்தொகையைச் சேர்';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'பெறப்பட்ட தொகை ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'செலுத்திய தேதி';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'இதுவரை ஈவுத்தொகை எதுவும் பதிவு செய்யப்படவில்லை. கைமுறையாகச் சேர்க்கவும், அல்லது உங்கள் புரோக்கரின் ஏற்றுமதி கோப்பை இறக்குமதி செய்யவும் – அதில் உள்ள ஈவுத்தொகை வரிசைகளும் எடுக்கப்படும்.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ஈவுத்தொகைகள் சேர்க்கப்பட்டன',
+      one: '1 ஈவுத்தொகை சேர்க்கப்பட்டது',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'ஈவுத்தொகையை ஏற்றுமதி செய் (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'ஈவுத்தொகை நீக்கப்பட்டது';
+
+  @override
+  String get portfolioDividendsHint =>
+      'தொகைகள் உங்கள் கணக்கில் வந்தபடியே, செலுத்தப்பட்ட நாணயத்தில்; மொத்தங்கள் இன்றைய விகிதத்தில் மாற்றப்படுகின்றன. வரி அறிக்கைக்கு உங்கள் புரோக்கரின் அறிக்கையைப் பயன்படுத்தவும்.';
 }

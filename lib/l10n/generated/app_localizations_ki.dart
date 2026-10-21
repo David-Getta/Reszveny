@@ -2562,4 +2562,49 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Nĩyaigĩtwo maandĩko-inĩ maku';
+
+  @override
+  String get portfolioDividendsReceived => 'Mĩgai ya faida yamũkĩrĩtwo';
+
+  @override
+  String get portfolioDividendsThisYear => 'Mwaka ũyũ';
+
+  @override
+  String get portfolioDividendsAllTime => 'Mahinda mothe';
+
+  @override
+  String get portfolioAddDividend => 'Ongerera mũgai wa faida';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Mbeca iria ciamũkĩrĩtwo ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Mũthenya wa kũrĩha';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Gũtirĩ mũgai wa faida wandĩkĩtwo o na ũmwe. Mongerere na guoko, kana ũrehe export ya broker waku – mĩhari yayo ya mĩgai ya faida o nayo nĩ yoyagwo.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Mĩgai ya faida $count nĩyongereirwo',
+      one: 'Mũgai wa faida 1 nĩwongereirwo',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Ruta mĩgai ya faida (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Mũgai wa faida nĩweherio';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Mbeca o ta ũrĩa ciakinyire akaũnti-inĩ yaku, na mbeca cia kũrĩhwo; mũigana wothe ũgarũragwo na thogora wa ũmũthĩ. Nĩ ũndũ wa riboti yaku ya mũthiaro, hũthĩra riboti ya broker waku.';
 }

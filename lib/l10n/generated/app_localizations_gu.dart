@@ -2557,4 +2557,49 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get savedToNotes => 'તમારી નોંધોમાં સાચવ્યું';
+
+  @override
+  String get portfolioDividendsReceived => 'મળેલ ડિવિડન્ડ';
+
+  @override
+  String get portfolioDividendsThisYear => 'આ વર્ષે';
+
+  @override
+  String get portfolioDividendsAllTime => 'અત્યાર સુધી';
+
+  @override
+  String get portfolioAddDividend => 'ડિવિડન્ડ ઉમેરો';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'મળેલી રકમ ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'ચુકવણીની તારીખ';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'હજી સુધી કોઈ ડિવિડન્ડ નોંધાયું નથી. હાથે ઉમેરો, અથવા તમારા બ્રોકરનું એક્સપોર્ટ ઇમ્પોર્ટ કરો – તેની ડિવિડન્ડ હરોળો પણ લેવાય છે.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ડિવિડન્ડ ઉમેરાયાં',
+      one: '1 ડિવિડન્ડ ઉમેરાયું',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'ડિવિડન્ડ એક્સપોર્ટ કરો (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'ડિવિડન્ડ કાઢી નાખ્યું';
+
+  @override
+  String get portfolioDividendsHint =>
+      'રકમો તમારા ખાતામાં જેમ આવી તેમ, ચુકવણીની કરન્સીમાં; કુલ આજના દરે રૂપાંતરિત થાય છે. ટેક્સ રિટર્ન માટે તમારા બ્રોકરનું સ્ટેટમેન્ટ વાપરો.';
 }

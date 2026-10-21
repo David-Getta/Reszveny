@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "{symbols} koosg ka be masã ye.",
   "eventsRecentResults": "Ligd-yɛl paal sẽn wilgã",
   "saveToNotes": "Bĩng m gʋlsgã pʋgẽ",
-  "savedToNotes": "Bĩnga f gʋlsgã pʋgẽ"
+  "savedToNotes": "Bĩnga f gʋlsgã pʋgẽ",
+  "portfolioDividendsReceived": "Dividand nins f sẽn paam",
+  "portfolioDividendsThisYear": "Yʋʋm-kãngã",
+  "portfolioDividendsAllTime": "Fãa",
+  "portfolioAddDividend": "Paas dividand",
+  "portfolioDividendAmount": "Ligd ning f sẽn paam ({currency})",
+  "portfolioDividendDate": "Yaoob daar",
+  "portfolioDividendsEmpty": "Dividand ka gʋls ye. Paas-b ne f nug, bɩ f kẽes f broker-ã export – a dividand gʋlsgã me n dɩkd.",
+  "portfolioDividendsImported": "{count, plural, =1{Dividand 1 paasame} other{Dividand {count} paasame}}",
+  "portfolioExportDividends": "Yiis dividand rãmbã (CSV)",
+  "portfolioDividendDeleted": "Dividand yiisame",
+  "portfolioDividendsHint": "Ligdã yaa wa a sẽn wa f kont pʋgẽ, ne yaoob ligdã; a fãa toeemda ne rũndã kʋʋngã. F lampo sebrã yĩnga, tũnug ne f broker-ã sebrã."
 }

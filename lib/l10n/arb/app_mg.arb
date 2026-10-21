@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Tsy misy vidiny ankehitriny ho an'ny {symbols}.",
   "eventsRecentResults": "Vokatra vao navoaka",
   "saveToNotes": "Tehirizo ao amin'ny naotiko",
-  "savedToNotes": "Voatahiry ao amin'ny naotinao"
+  "savedToNotes": "Voatahiry ao amin'ny naotinao",
+  "portfolioDividendsReceived": "Dividandy voaray",
+  "portfolioDividendsThisYear": "Ity taona ity",
+  "portfolioDividendsAllTime": "Hatramin'izay",
+  "portfolioAddDividend": "Hanampy dividandy",
+  "portfolioDividendAmount": "Vola voaray ({currency})",
+  "portfolioDividendDate": "Daty fandoavana",
+  "portfolioDividendsEmpty": "Mbola tsy misy dividandy voarakitra. Ampio tanana izy ireo, na ampidiro ny fanondranana avy amin'ny broker-nao – raisina koa ny andalana dividandy ao anatiny.",
+  "portfolioDividendsImported": "{count, plural, =1{Dividandy 1 nampiana} other{Dividandy {count} nampiana}}",
+  "portfolioExportDividends": "Hamoaka ny dividandy (CSV)",
+  "portfolioDividendDeleted": "Dividandy voafafa",
+  "portfolioDividendsHint": "Ny vola araka ny nahatongavany tao amin'ny kaontinao, amin'ny vola fandoavana; ny totaly dia ovaina amin'ny tahan'ny androany. Ho an'ny fanambaranao hetra, ampiasao ny tatitra avy amin'ny broker-nao."
 }

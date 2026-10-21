@@ -2562,4 +2562,49 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Lagret i notatene dine';
+
+  @override
+  String get portfolioDividendsReceived => 'Mottatt utbytte';
+
+  @override
+  String get portfolioDividendsThisYear => 'I år';
+
+  @override
+  String get portfolioDividendsAllTime => 'Totalt';
+
+  @override
+  String get portfolioAddDividend => 'Legg til utbytte';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Mottatt beløp ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Utbetalingsdato';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Ingen utbytter registrert enda. Legg dem til manuelt, eller importer eksporten fra megleren din – utbytteradene hentes også inn.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count utbytter lagt til',
+      one: '1 utbytte lagt til',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Eksporter utbytte (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Utbytte slettet';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Beløpene er slik de kom inn på kontoen din, i utbetalingsvalutaen; summer omregnes til dagens kurs. Bruk meglerens årsoppgave til skattemeldingen.';
 }

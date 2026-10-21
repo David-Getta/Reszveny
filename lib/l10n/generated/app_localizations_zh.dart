@@ -2449,6 +2449,50 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get savedToNotes => '已保存到您的笔记';
+
+  @override
+  String get portfolioDividendsReceived => '已收股息';
+
+  @override
+  String get portfolioDividendsThisYear => '今年';
+
+  @override
+  String get portfolioDividendsAllTime => '累计';
+
+  @override
+  String get portfolioAddDividend => '添加股息';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return '实收金额（$currency）';
+  }
+
+  @override
+  String get portfolioDividendDate => '派息日期';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      '尚未记录任何股息。可手动添加，或导入券商的导出文件，其中的股息记录也会被识别。';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '已添加 $count 笔股息',
+      one: '已添加 1 笔股息',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => '导出股息（CSV）';
+
+  @override
+  String get portfolioDividendDeleted => '股息已删除';
+
+  @override
+  String get portfolioDividendsHint => '金额以到账时的派息货币显示；合计按今日汇率换算。报税请以券商对账单为准。';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -4894,4 +4938,48 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get savedToNotes => '已儲存至你的筆記';
+
+  @override
+  String get portfolioDividendsReceived => '已收股息';
+
+  @override
+  String get portfolioDividendsThisYear => '今年';
+
+  @override
+  String get portfolioDividendsAllTime => '累計';
+
+  @override
+  String get portfolioAddDividend => '新增股息';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return '實收金額（$currency）';
+  }
+
+  @override
+  String get portfolioDividendDate => '派息日期';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      '尚未記錄任何股息。可手動新增，或匯入經紀商的匯出檔案，其中的股息記錄亦會被識別。';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '已新增 $count 筆股息',
+      one: '已新增 1 筆股息',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => '匯出股息（CSV）';
+
+  @override
+  String get portfolioDividendDeleted => '股息已刪除';
+
+  @override
+  String get portfolioDividendsHint => '金額以到賬時的派息貨幣顯示；合計按今日匯率換算。報稅請以經紀商的結單為準。';
 }

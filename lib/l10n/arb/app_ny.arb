@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Palibe mtengo wapano wa {symbols}.",
   "eventsRecentResults": "Zotsatira zolengezedwa posachedwa",
   "saveToNotes": "Sungani ku zolemba zanga",
-  "savedToNotes": "Zasungidwa ku zolemba zanu"
+  "savedToNotes": "Zasungidwa ku zolemba zanu",
+  "portfolioDividendsReceived": "Madividendi olandiridwa",
+  "portfolioDividendsThisYear": "Chaka chino",
+  "portfolioDividendsAllTime": "Nthawi zonse",
+  "portfolioAddDividend": "Onjezani dividendi",
+  "portfolioDividendAmount": "Ndalama zolandiridwa ({currency})",
+  "portfolioDividendDate": "Tsiku lolipira",
+  "portfolioDividendsEmpty": "Palibe madividendi olembedwa pakali pano. Awonjezereni pamanja, kapena tengani fayilo ya export ya broker wanu – mizere yake ya madividendi imatengedwanso.",
+  "portfolioDividendsImported": "{count, plural, =1{Dividendi 1 yawonjezedwa} other{Madividendi {count} awonjezedwa}}",
+  "portfolioExportDividends": "Tumizani madividendi (CSV)",
+  "portfolioDividendDeleted": "Dividendi yachotsedwa",
+  "portfolioDividendsHint": "Ndalama monga momwe zinafikira mu akaunti yanu, mu ndalama yolipira; ziwerengero zonse zimasinthidwa pa mtengo wa lero. Pa msonkho wanu, gwiritsani ntchito chikalata cha broker wanu."
 }

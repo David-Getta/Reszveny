@@ -2580,4 +2580,49 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Voatahiry ao amin\'ny naotinao';
+
+  @override
+  String get portfolioDividendsReceived => 'Dividandy voaray';
+
+  @override
+  String get portfolioDividendsThisYear => 'Ity taona ity';
+
+  @override
+  String get portfolioDividendsAllTime => 'Hatramin\'izay';
+
+  @override
+  String get portfolioAddDividend => 'Hanampy dividandy';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Vola voaray ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Daty fandoavana';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Mbola tsy misy dividandy voarakitra. Ampio tanana izy ireo, na ampidiro ny fanondranana avy amin\'ny broker-nao – raisina koa ny andalana dividandy ao anatiny.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Dividandy $count nampiana',
+      one: 'Dividandy 1 nampiana',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Hamoaka ny dividandy (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividandy voafafa';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Ny vola araka ny nahatongavany tao amin\'ny kaontinao, amin\'ny vola fandoavana; ny totaly dia ovaina amin\'ny tahan\'ny androany. Ho an\'ny fanambaranao hetra, ampiasao ny tatitra avy amin\'ny broker-nao.';
 }

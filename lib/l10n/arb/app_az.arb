@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "{symbols} üçün cari qiymət yoxdur.",
   "eventsRecentResults": "Son açıqlanan nəticələr",
   "saveToNotes": "Qeydlərimə yadda saxla",
-  "savedToNotes": "Qeydlərinizə yadda saxlanıldı"
+  "savedToNotes": "Qeydlərinizə yadda saxlanıldı",
+  "portfolioDividendsReceived": "Alınan dividendlər",
+  "portfolioDividendsThisYear": "Bu il",
+  "portfolioDividendsAllTime": "Bütün dövr",
+  "portfolioAddDividend": "Dividend əlavə et",
+  "portfolioDividendAmount": "Alınan məbləğ ({currency})",
+  "portfolioDividendDate": "Ödəniş tarixi",
+  "portfolioDividendsEmpty": "Hələ heç bir dividend qeyd edilməyib. Əl ilə əlavə edin və ya brokerinizin ixrac faylını idxal edin – oradakı dividend sətirləri də götürülür.",
+  "portfolioDividendsImported": "{count, plural, =1{1 dividend əlavə edildi} other{{count} dividend əlavə edildi}}",
+  "portfolioExportDividends": "Dividendləri ixrac et (CSV)",
+  "portfolioDividendDeleted": "Dividend silindi",
+  "portfolioDividendsHint": "Məbləğlər hesabınıza gəldiyi kimi, ödəniş valyutasında; cəmlər bugünkü məzənnə ilə çevrilir. Vergi bəyannaməniz üçün brokerinizin hesabatından istifadə edin."
 }

@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Pa gen pri aktyèl pou {symbols}.",
   "eventsRecentResults": "Rezilta ki fèk pibliye",
   "saveToNotes": "Anrejistre nan nòt mwen yo",
-  "savedToNotes": "Anrejistre nan nòt ou yo"
+  "savedToNotes": "Anrejistre nan nòt ou yo",
+  "portfolioDividendsReceived": "Dividann ou resevwa",
+  "portfolioDividendsThisYear": "Ane sa a",
+  "portfolioDividendsAllTime": "Depi kòmansman",
+  "portfolioAddDividend": "Ajoute dividann",
+  "portfolioDividendAmount": "Montan ou resevwa ({currency})",
+  "portfolioDividendDate": "Dat peman",
+  "portfolioDividendsEmpty": "Poko gen okenn dividann ki anrejistre. Ajoute yo alamen, oswa enpòte ekspò koutye w la – liy dividann li yo ap pran tou.",
+  "portfolioDividendsImported": "{count, plural, =1{1 dividann ajoute} other{{count} dividann ajoute}}",
+  "portfolioExportDividends": "Ekspòte dividann (CSV)",
+  "portfolioDividendDeleted": "Dividann efase",
+  "portfolioDividendsHint": "Montan yo jan yo te rive sou kont ou, nan lajan peman an; total yo konvèti nan to jodi a. Pou deklarasyon taks ou, sèvi ak relve koutye w la."
 }

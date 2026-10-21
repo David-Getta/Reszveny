@@ -2562,4 +2562,49 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get savedToNotes => 'E don save to your notes';
+
+  @override
+  String get portfolioDividendsReceived => 'Dividend wey you collect';
+
+  @override
+  String get portfolioDividendsThisYear => 'Dis year';
+
+  @override
+  String get portfolioDividendsAllTime => 'All time';
+
+  @override
+  String get portfolioAddDividend => 'Add dividend';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Amount wey you collect ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Payment date';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'No dividend dey record yet. Add dem by hand, or import your broker export – e go pick di dividend rows too.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dividends don add',
+      one: '1 dividend don add',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Export dividends (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividend don delete';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Di amounts na as dem enter your account, for di currency wey dem pay; we use today rate convert di totals. For your tax return, use your broker statement.';
 }

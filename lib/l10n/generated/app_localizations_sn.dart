@@ -2567,4 +2567,49 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Zvachengetedzwa muzvinyorwa zvako';
+
+  @override
+  String get portfolioDividendsReceived => 'Madividendi akagamuchirwa';
+
+  @override
+  String get portfolioDividendsThisYear => 'Gore rino';
+
+  @override
+  String get portfolioDividendsAllTime => 'Zvose kusvika zvino';
+
+  @override
+  String get portfolioAddDividend => 'Wedzera dividendi';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Mari yakagamuchirwa ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Zuva rekubhadhara';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Hapana madividendi akanyorwa parizvino. Awedzere nemaoko, kana kuti pinza faira re-export rebroker wako – mitsara yaro yemadividendi inotorwawo.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Madividendi $count awedzerwa',
+      one: 'Dividendi 1 rawedzerwa',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Buditsa madividendi (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividendi radzimwa';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Mari sezvayakasvika muakaunti yako, mumari yekubhadhara; zvose zvinoshandurwa nemutengo wanhasi. Pamutero wako, shandisa chinyorwa chebroker wako.';
 }

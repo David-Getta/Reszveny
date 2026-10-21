@@ -2632,4 +2632,51 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Сохранено в ваших заметках';
+
+  @override
+  String get portfolioDividendsReceived => 'Полученные дивиденды';
+
+  @override
+  String get portfolioDividendsThisYear => 'В этом году';
+
+  @override
+  String get portfolioDividendsAllTime => 'За всё время';
+
+  @override
+  String get portfolioAddDividend => 'Добавить дивиденд';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Полученная сумма ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Дата выплаты';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Дивиденды пока не записаны. Добавьте их вручную или импортируйте выгрузку от брокера – строки с дивидендами тоже будут учтены.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Добавлено $count дивиденда',
+      many: 'Добавлено $count дивидендов',
+      few: 'Добавлено $count дивиденда',
+      one: 'Добавлен $count дивиденд',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Экспорт дивидендов (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Дивиденд удалён';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Суммы такие, какими они пришли на ваш счёт, в валюте выплаты; итоги пересчитаны по сегодняшнему курсу. Для налоговой декларации используйте отчёт брокера.';
 }

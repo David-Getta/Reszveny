@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "{symbols} ma laha qiime hadda ah.",
   "eventsRecentResults": "Natiijooyinka dhawaan la sheegay",
   "saveToNotes": "Ku kaydi qoraalladayda",
-  "savedToNotes": "Waxaa lagu kaydiyay qoraalladaada"
+  "savedToNotes": "Waxaa lagu kaydiyay qoraalladaada",
+  "portfolioDividendsReceived": "Faa'iido-saamiyada la helay",
+  "portfolioDividendsThisYear": "Sannadkan",
+  "portfolioDividendsAllTime": "Wadarta guud",
+  "portfolioAddDividend": "Ku dar faa'iido-saami",
+  "portfolioDividendAmount": "Lacagta la helay ({currency})",
+  "portfolioDividendDate": "Taariikhda bixinta",
+  "portfolioDividendsEmpty": "Weli faa'iido-saami lama diiwaangelin. Gacanta ku dar, ama soo dejiso faylka dhoofinta ee broker-kaaga – safafka faa'iido-saamiyadiisa sidoo kale waa la qaadaa.",
+  "portfolioDividendsImported": "{count, plural, =1{1 faa'iido-saami la daray} other{{count} faa'iido-saami la daray}}",
+  "portfolioExportDividends": "Dhoofi faa'iido-saamiyada (CSV)",
+  "portfolioDividendDeleted": "Faa'iido-saami la tirtiray",
+  "portfolioDividendsHint": "Lacagaha sida ay ku soo galeen akoonkaaga, lacagta lagu bixiyay; wadarta waxaa lagu beddelaa sarrifka maanta. Canshuurtaada, isticmaal warbixinta broker-kaaga."
 }

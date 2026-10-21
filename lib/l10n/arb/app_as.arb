@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "{symbols}-ৰ বাবে বৰ্তমানৰ দাম নাই।",
   "eventsRecentResults": "সম্প্ৰতি ঘোষিত ফলাফল",
   "saveToNotes": "মোৰ টোকাত সাঁচক",
-  "savedToNotes": "আপোনাৰ টোকাত সাঁচি থোৱা হ'ল"
+  "savedToNotes": "আপোনাৰ টোকাত সাঁচি থোৱা হ'ল",
+  "portfolioDividendsReceived": "প্ৰাপ্ত লাভাংশ",
+  "portfolioDividendsThisYear": "এই বছৰ",
+  "portfolioDividendsAllTime": "সকলো সময়",
+  "portfolioAddDividend": "লাভাংশ যোগ কৰক",
+  "portfolioDividendAmount": "প্ৰাপ্ত পৰিমাণ ({currency})",
+  "portfolioDividendDate": "পৰিশোধৰ তাৰিখ",
+  "portfolioDividendsEmpty": "এতিয়ালৈকে কোনো লাভাংশ লিপিবদ্ধ কৰা হোৱা নাই। হাতে যোগ কৰক, বা আপোনাৰ ব্ৰোকাৰৰ এক্সপোৰ্ট আমদানি কৰক – তাৰ লাভাংশৰ শাৰীসমূহো লোৱা হয়।",
+  "portfolioDividendsImported": "{count, plural, =1{1টা লাভাংশ যোগ কৰা হ'ল} other{{count}টা লাভাংশ যোগ কৰা হ'ল}}",
+  "portfolioExportDividends": "লাভাংশ এক্সপোৰ্ট কৰক (CSV)",
+  "portfolioDividendDeleted": "লাভাংশ মচা হ'ল",
+  "portfolioDividendsHint": "পৰিমাণসমূহ আপোনাৰ একাউণ্টত অহাৰ দৰে, পৰিশোধৰ মুদ্ৰাত; মুঠ আজিৰ হাৰত ৰূপান্তৰিত হয়। কৰ ৰিটাৰ্ণৰ বাবে আপোনাৰ ব্ৰোকাৰৰ বিবৃতি ব্যৱহাৰ কৰক।"
 }

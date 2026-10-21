@@ -3,8 +3,9 @@ import 'portfolio_store.dart';
 
 /// A portfólió tranzakciói CSV-ben (táblázatkezelőbe, másik appba):
 /// `symbol,quantity,price,currency,date,side`, ponttal mint tizedesjel; a `side`
-/// `buy` vagy `sell`.
-String portfolioCsv(List<PortfolioLot> lots) {
+/// `buy` vagy `sell`. A kapott osztalékok `dividend` sorként, a teljes összeg a
+/// `price` oszlopban, darabszám nélkül – így a saját export vissza is olvasható.
+String portfolioCsv(List<PortfolioLot> lots, {List<DividendRecord> dividends = const []}) {
   String n(double v) => v == v.roundToDouble() ? v.toStringAsFixed(0) : v.toString();
   final b = StringBuffer('symbol,quantity,price,currency,date,side\n');
   for (final l in lots) {
@@ -18,6 +19,27 @@ String portfolioCsv(List<PortfolioLot> lots) {
         l.sell ? 'sell' : 'buy',
       ].join(','),
     );
+  }
+  for (final d in dividends) {
+    b.writeln(
+      [d.symbol, '', n(d.amount), d.currency, d.date?.toIso8601String().substring(0, 10) ?? '', 'dividend'].join(','),
+    );
+  }
+  return b.toString();
+}
+
+/// A kapott osztalékok CSV-ben (az adóbevalláshoz): dátum, ticker, összeg,
+/// pénznem, időrendben.
+String dividendsCsv(List<DividendRecord> dividends) {
+  String n(double v) {
+    final t = v.toStringAsFixed(4).replaceFirst(RegExp(r'\.?0+$'), '');
+    return t == '-0' ? '0' : t;
+  }
+
+  final rows = [...dividends]..sort((a, b) => (a.date ?? DateTime(9999)).compareTo(b.date ?? DateTime(9999)));
+  final b = StringBuffer('date,symbol,amount,currency\n');
+  for (final d in rows) {
+    b.writeln([d.date?.toIso8601String().substring(0, 10) ?? '', d.symbol, n(d.amount), d.currency].join(','));
   }
   return b.toString();
 }
@@ -72,11 +94,22 @@ class ImportedLot {
   final bool sell;
 }
 
-/// A beolvasás eredménye: a jó sorok és a kihagyottak száma.
+/// Egy beolvasott osztaléksor (még nem került a portfólióba).
+class ImportedDividend {
+  const ImportedDividend({required this.symbol, required this.amount, required this.currency, this.date});
+
+  final String symbol;
+  final double amount;
+  final String currency;
+  final DateTime? date;
+}
+
+/// A beolvasás eredménye: a jó sorok, a kapott osztalékok és a kihagyottak száma.
 class CsvImport {
-  const CsvImport(this.lots, this.skipped);
+  const CsvImport(this.lots, this.skipped, {this.dividends = const []});
 
   final List<ImportedLot> lots;
+  final List<ImportedDividend> dividends;
   final int skipped;
 }
 
@@ -118,6 +151,9 @@ const _roles = <String, Set<String>>{
   'currency': {'currency', 'currencypriceshare', 'pricecurrency', 'currencyprimary'},
   'date': {'date', 'time', 'datetime', 'tradedate'},
   'side': {'type', 'action', 'side', 'buysell', 'transactiontype'},
+  // Az osztaléksor összege (Revolut „Total Amount”, Trading 212 „Total”).
+  'total': {'total', 'totalamount', 'amount', 'netamount'},
+  'totalcurrency': {'currencytotal'},
 };
 
 /// Fejlécsor felismerése: oszlopszerep → index, ha van ticker, darabszám és ár.
@@ -157,11 +193,12 @@ DateTime? _date(String raw) {
 /// pontosvessző (ilyenkor a tizedesjel lehet vessző) vagy vessző.
 ///
 /// Ha van felismerhető fejlécsor (pl. a Revolut, a Trading 212 vagy az
-/// Interactive Brokers exportja), az oszlopok név szerint; a vételen és
-/// eladáson kívüli sorokat (osztalék, befizetés) csendben kihagyja. Fejléc
-/// nélkül a sorrend: `ticker, darab, ár, pénznem, dátum, side`; a pénznem és a
-/// dátum elhagyható (pénznem nélkül [defaultCurrency]). Eladás: `sell` a
-/// hatodik oszlopban, illetve negatív darabszám.
+/// Interactive Brokers exportja), az oszlopok név szerint; az osztaléksorok
+/// kapott osztalékként jönnek át, a többi nem vétel és nem eladás sort
+/// (befizetés, díj) csendben kihagyja. Fejléc nélkül a sorrend: `ticker, darab,
+/// ár, pénznem, dátum, side`; a pénznem és a dátum elhagyható (pénznem nélkül
+/// [defaultCurrency]). Eladás: `sell` a hatodik oszlopban, illetve negatív
+/// darabszám; osztalék: `dividend`, az összeg az ár oszlopában.
 CsvImport parsePortfolioCsv(String text, {String defaultCurrency = 'USD'}) {
   final lines = [
     for (final l in text.split(RegExp(r'\r?\n')))
@@ -184,16 +221,28 @@ CsvImport _withHeader(
   String defaultCurrency,
 ) {
   final lots = <ImportedLot>[];
+  final dividends = <ImportedDividend>[];
   var skipped = 0;
   String cell(List<String> f, String role) {
     final i = col[role];
     return i == null || i >= f.length ? '' : f[i];
   }
 
-  // Interactive Brokers kimutatás: „Trades,Header,…” után csak a „Trades,Data,…” sorok számítanak.
+  // Interactive Brokers kimutatás: „Trades,Header,…” után csak a „Trades,Data,…”
+  // sorok számítanak; a „Dividends” szakasz sorai kapott osztalékok.
   final sections = header.length > 1 && header[1].toLowerCase() == 'header';
+  Map<String, int>? dividendCols;
   for (final line in lines) {
     final f = splitCsvLine(line, sections ? sep : _separator(line));
+    if (sections && f.length > 1 && f[0].toLowerCase() == 'dividends') {
+      if (f[1].toLowerCase() == 'header') {
+        dividendCols = {for (final (i, c) in f.indexed) c.toLowerCase().replaceAll(RegExp(r'[^a-z]'), ''): i};
+      } else if (f[1].toLowerCase() == 'data' && dividendCols != null) {
+        final d = _ibkrDividend(f, dividendCols);
+        if (d != null) dividends.add(d);
+      }
+      continue;
+    }
     if (sections && (f.length < 2 || f[0] != header[0] || f[1].toLowerCase() != 'data')) continue;
     // Ha nincs „side” oszlop, a fejlécen túli első mező is lehet „sell”.
     final side = (col.containsKey('side') ? cell(f, 'side') : (f.length > header.length ? f[header.length] : ''))
@@ -207,9 +256,24 @@ CsvImport _withHeader(
     } else if (side.contains('buy') || side == 'b' || side == 'bot') {
       sell = false;
     }
-    // Osztalék, befizetés, díj stb.: nem vétel és nem eladás.
-    if (sell == null) continue;
     final symbol = cell(f, 'symbol').toUpperCase();
+    if (side.contains('dividend')) {
+      // Kapott osztalék: a teljes összeg (ha nincs külön oszlopa, az ár oszlopában).
+      final (amount, amountCcy) = _price(col.containsKey('total') ? cell(f, 'total') : cell(f, 'price'));
+      final totalCcy = cell(f, 'totalcurrency').toUpperCase();
+      final ccyCell = cell(f, 'currency').toUpperCase();
+      final ccy = _currency.hasMatch(totalCcy)
+          ? totalCcy
+          : (amountCcy ?? (_currency.hasMatch(ccyCell) ? ccyCell : defaultCurrency));
+      if (_symbol.hasMatch(symbol) && amount != null && amount > 0) {
+        dividends.add(ImportedDividend(symbol: symbol, amount: amount, currency: ccy, date: _date(cell(f, 'date'))));
+      } else {
+        skipped++;
+      }
+      continue;
+    }
+    // Befizetés, díj stb.: nem vétel és nem eladás.
+    if (sell == null) continue;
     final quantity = signed?.abs();
     final (price, priceCcy) = _price(cell(f, 'price'));
     if (!_symbol.hasMatch(symbol) || quantity == null || quantity <= 0 || price == null || price <= 0) {
@@ -229,11 +293,27 @@ CsvImport _withHeader(
       ),
     );
   }
-  return CsvImport(lots, skipped);
+  return CsvImport(lots, skipped, dividends: dividends);
+}
+
+/// Az IBKR „Dividends,Data,…” sora: a ticker a leírás elején
+/// („AAPL(US0378331005) Cash Dividend USD 0.25 per Share”), az összeg a sor végén.
+ImportedDividend? _ibkrDividend(List<String> f, Map<String, int> col) {
+  String cell(String name) {
+    final i = col[name];
+    return i == null || i >= f.length ? '' : f[i];
+  }
+
+  final symbol = RegExp(r'^([A-Z0-9.\-]{1,15})\s*\(').firstMatch(cell('description'))?.group(1);
+  final amount = parseDecimal(cell('amount').replaceAll(RegExp(r'[^0-9,.\-]'), ''));
+  final ccy = cell('currency').toUpperCase();
+  if (symbol == null || amount == null || amount <= 0 || !_currency.hasMatch(ccy)) return null;
+  return ImportedDividend(symbol: symbol, amount: amount, currency: ccy, date: _date(cell('date')));
 }
 
 CsvImport _positional(List<String> lines, String defaultCurrency) {
   final lots = <ImportedLot>[];
+  final dividends = <ImportedDividend>[];
   var skipped = 0;
   var first = true;
   for (final line in lines) {
@@ -241,6 +321,19 @@ CsvImport _positional(List<String> lines, String defaultCurrency) {
     final symbol = f.isNotEmpty ? f[0].toUpperCase() : '';
     final signed = f.length > 1 ? parseDecimal(f[1]) : null;
     final side = f.length > 5 ? f[5].toLowerCase() : '';
+    if (side == 'dividend') {
+      final amount = f.length > 2 ? parseDecimal(f[2]) : null;
+      final ccy = f.length > 3 && _currency.hasMatch(f[3].toUpperCase()) ? f[3].toUpperCase() : defaultCurrency;
+      if (_symbol.hasMatch(symbol) && amount != null && amount > 0) {
+        dividends.add(
+          ImportedDividend(symbol: symbol, amount: amount, currency: ccy, date: f.length > 4 ? _date(f[4]) : null),
+        );
+      } else {
+        skipped++;
+      }
+      first = false;
+      continue;
+    }
     final sell = (signed != null && signed < 0) || side == 'sell' || side == 's';
     final quantity = signed?.abs();
     final price = f.length > 2 ? parseDecimal(f[2]) : null;
@@ -256,5 +349,5 @@ CsvImport _positional(List<String> lines, String defaultCurrency) {
     final date = f.length > 4 ? _date(f[4]) : null;
     lots.add(ImportedLot(symbol: symbol, quantity: quantity, price: price, currency: ccy, date: date, sell: sell));
   }
-  return CsvImport(lots, skipped);
+  return CsvImport(lots, skipped, dividends: dividends);
 }

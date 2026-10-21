@@ -2602,4 +2602,50 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Salvat în notițele tale';
+
+  @override
+  String get portfolioDividendsReceived => 'Dividende încasate';
+
+  @override
+  String get portfolioDividendsThisYear => 'Anul acesta';
+
+  @override
+  String get portfolioDividendsAllTime => 'Total';
+
+  @override
+  String get portfolioAddDividend => 'Adaugă dividend';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Suma încasată ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Data plății';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Niciun dividend înregistrat încă. Adaugă-le manual sau importă exportul de la broker – rândurile cu dividende sunt preluate și ele.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count de dividende adăugate',
+      few: '$count dividende adăugate',
+      one: '1 dividend adăugat',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Exportă dividendele (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividend șters';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Sumele așa cum au ajuns în contul tău, în moneda plății; totalurile sunt convertite la cursul de azi. Pentru declarația fiscală, folosește extrasul brokerului.';
 }

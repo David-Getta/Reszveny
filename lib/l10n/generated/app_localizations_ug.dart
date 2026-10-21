@@ -2565,4 +2565,49 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get savedToNotes => 'خاتىرىلىرىڭىزگە ساقلاندى';
+
+  @override
+  String get portfolioDividendsReceived => 'تاپشۇرۇۋالغان دىۋىدېندلار';
+
+  @override
+  String get portfolioDividendsThisYear => 'بۇ يىل';
+
+  @override
+  String get portfolioDividendsAllTime => 'جەمئىي';
+
+  @override
+  String get portfolioAddDividend => 'دىۋىدېند قوشۇش';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'تاپشۇرۇۋالغان سومما ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'پۇل تۆلەش چېسلاسى';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'تېخى دىۋىدېند خاتىرىلەنمىدى. قولدا قوشۇڭ ياكى دەللالىڭىزنىڭ ئېكسپورت ھۆججىتىنى ئىمپورت قىلىڭ – ئۇنىڭدىكى دىۋىدېند قۇرلىرىمۇ ئېلىنىدۇ.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count دىۋىدېند قوشۇلدى',
+      one: '1 دىۋىدېند قوشۇلدى',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'دىۋىدېندلارنى ئېكسپورت قىلىش (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'دىۋىدېند ئۆچۈرۈلدى';
+
+  @override
+  String get portfolioDividendsHint =>
+      'سوممىلار ھېساباتىڭىزغا كەلگەن بويىچە، تۆلەش پۇل بىرلىكىدە؛ جەمئىي سومما بۈگۈنكى پەرق بويىچە ئالماشتۇرۇلىدۇ. باج مەلۇماتىڭىز ئۈچۈن دەللالىڭىزنىڭ ھېسابات جەدۋىلىنى ئىشلىتىڭ.';
 }

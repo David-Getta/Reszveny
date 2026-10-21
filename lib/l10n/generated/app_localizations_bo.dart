@@ -2551,4 +2551,49 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get savedToNotes => 'ཁྱེད་ཀྱི་ཟིན་ཐོར་ཉར་ཟིན།';
+
+  @override
+  String get portfolioDividendsReceived => 'ཐོབ་པའི་ཁེ་བགོས།';
+
+  @override
+  String get portfolioDividendsThisYear => 'ད་ལོ།';
+
+  @override
+  String get portfolioDividendsAllTime => 'དུས་ཡུན་ཡོངས།';
+
+  @override
+  String get portfolioAddDividend => 'ཁེ་བགོས་ཁ་སྣོན།';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'ཐོབ་པའི་དངུལ་འབོར། ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'སྤྲོད་པའི་ཚེས་གྲངས།';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'ད་དུང་ཁེ་བགོས་གང་ཡང་ཐོ་འགོད་བྱས་མེད། ལག་ཐོག་ནས་ཁ་སྣོན་བྱོས། ཡང་ན་ཁྱེད་ཀྱི་ཚོང་བར་གྱི་ཕྱིར་གཏོང་ཡིག་ཆ་ནང་འདྲེན་བྱོས། དེའི་ཁེ་བགོས་ཐིག་ཕྲེང་ཡང་ལེན་གི་ཡོད།';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ཁེ་བགོས་ $count ཁ་སྣོན་བྱས།',
+      one: 'ཁེ་བགོས་ 1 ཁ་སྣོན་བྱས།',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'ཁེ་བགོས་ཕྱིར་གཏོང། (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'ཁེ་བགོས་བསུབས་ཟིན།';
+
+  @override
+  String get portfolioDividendsHint =>
+      'དངུལ་འབོར་ནི་ཁྱེད་ཀྱི་རྩིས་ཁྲར་འབྱོར་བ་ལྟར་སྤྲོད་དངུལ་གྱི་དངུལ་ལུགས་ཐོག་ཡིན། བསྡོམས་འབོར་དེ་རིང་གི་བརྗེ་ཚད་ལྟར་བསྒྱུར་ཡོད། ཁྱེད་ཀྱི་ཁྲལ་ཐོ་ཆེད་ཚོང་བར་གྱི་རྩིས་ཐོ་བེད་སྤྱོད་གནང་རོགས།';
 }

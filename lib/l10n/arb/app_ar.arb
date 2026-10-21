@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "لا يوجد سعر حالي لـ {symbols}.",
   "eventsRecentResults": "النتائج المُعلنة مؤخرًا",
   "saveToNotes": "حفظ في ملاحظاتي",
-  "savedToNotes": "تم الحفظ في ملاحظاتك"
+  "savedToNotes": "تم الحفظ في ملاحظاتك",
+  "portfolioDividendsReceived": "توزيعات الأرباح المستلمة",
+  "portfolioDividendsThisYear": "هذا العام",
+  "portfolioDividendsAllTime": "منذ البداية",
+  "portfolioAddDividend": "إضافة توزيعات أرباح",
+  "portfolioDividendAmount": "المبلغ المستلم ({currency})",
+  "portfolioDividendDate": "تاريخ الدفع",
+  "portfolioDividendsEmpty": "لم تُسجَّل أي توزيعات أرباح بعد. أضفها يدويًا، أو استورد ملف التصدير من وسيطك – تُلتقط صفوف التوزيعات فيه أيضًا.",
+  "portfolioDividendsImported": "{count, plural, =1{تمت إضافة توزيعة أرباح واحدة} two{تمت إضافة توزيعتَي أرباح} few{تمت إضافة {count} توزيعات أرباح} many{تمت إضافة {count} توزيعة أرباح} other{تمت إضافة {count} توزيعة أرباح}}",
+  "portfolioExportDividends": "تصدير توزيعات الأرباح (CSV)",
+  "portfolioDividendDeleted": "تم حذف توزيعة الأرباح",
+  "portfolioDividendsHint": "المبالغ كما وصلت إلى حسابك، بعملة الدفع؛ وتُحوَّل المجاميع بسعر اليوم. لإقرارك الضريبي، استخدم كشف حساب وسيطك."
 }

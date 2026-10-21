@@ -2572,4 +2572,49 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Kitereddwa mu biwandiiko byo';
+
+  @override
+  String get portfolioDividendsReceived => 'Dividendi ezafunibwa';
+
+  @override
+  String get portfolioDividendsThisYear => 'Omwaka guno';
+
+  @override
+  String get portfolioDividendsAllTime => 'Ebiseera byonna';
+
+  @override
+  String get portfolioAddDividend => 'Yongerako dividendi';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Ssente ezafunibwa ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Olunaku lw\'okusasula';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Tewannabaawo dividendi ewandiikiddwa. Ziyongereko n\'engalo, oba leeta export ya broker wo – ennyiriri zaayo eza dividendi nazo zitwalibwa.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Dividendi $count ziyongeddwako',
+      one: 'Dividendi 1 eyongeddwako',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Fulumya dividendi (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividendi esanguddwa';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Ssente nga bwe zaatuuka ku akawunti yo, mu ssente ez\'okusasula; omugatte gukyusibwa ku mutindo gwa leero. Ku lipoota yo ey\'omusolo, kozesa ekiwandiiko kya broker wo.';
 }

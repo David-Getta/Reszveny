@@ -87,13 +87,16 @@ void main() {
     expect(a.preferences.favorites, ['MSFT', 'AAPL']);
     expect(a.notes.of('MSFT')?.text, 'Cloud growth.');
 
-    // Mindkét oldalon változás → összefésülés, semmi nem vész el.
+    // Mindkét oldalon változás → összefésülés, semmi nem vész el (a kapott osztalék is átmegy).
     await a.preferences.toggleFavorite('NVDA');
     await b.alerts.add(symbol: 'AAPL', kind: AlertKind.above, value: 250, currency: 'USD');
+    await b.portfolio.addDividend(symbol: 'AAPL', amount: 2.5, currency: 'USD', date: DateTime(2026, 2, 13));
     await b.sync.syncNow();
     await a.sync.syncNow();
     expect(a.preferences.favorites, containsAll(['NVDA', 'MSFT', 'AAPL']));
     expect(a.alerts.alerts.single.value, 250);
+    expect(a.portfolio.dividends.single.amount, 2.5);
+    expect((server.data!['dividends'] as List).single['symbol'], 'AAPL');
     await b.sync.syncNow();
     expect(b.preferences.favorites, containsAll(['NVDA', 'MSFT', 'AAPL']));
 

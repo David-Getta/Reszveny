@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "نرخی ئێستا بۆ {symbols} نییە.",
   "eventsRecentResults": "ئەنجامەکانی تازە ڕاگەیەنراو",
   "saveToNotes": "پاشەکەوتکردن لە تێبینییەکانم",
-  "savedToNotes": "لە تێبینییەکانت پاشەکەوت کرا"
+  "savedToNotes": "لە تێبینییەکانت پاشەکەوت کرا",
+  "portfolioDividendsReceived": "پشکی قازانجی وەرگیراو",
+  "portfolioDividendsThisYear": "ئەم ساڵ",
+  "portfolioDividendsAllTime": "هەموو کات",
+  "portfolioAddDividend": "پشکی قازانج زیاد بکە",
+  "portfolioDividendAmount": "بڕی وەرگیراو ({currency})",
+  "portfolioDividendDate": "ڕێکەوتی پارەدان",
+  "portfolioDividendsEmpty": "هێشتا هیچ پشکی قازانج تۆمار نەکراوە. بە دەست زیادیان بکە، یان هەناردەی بڕۆکەرەکەت هاوردە بکە – ڕیزەکانی پشکی قازانجیش وەردەگیرێن.",
+  "portfolioDividendsImported": "{count, plural, =1{1 پشکی قازانج زیادکرا} other{{count} پشکی قازانج زیادکرا}}",
+  "portfolioExportDividends": "هەناردەکردنی پشکی قازانج (CSV)",
+  "portfolioDividendDeleted": "پشکی قازانج سڕایەوە",
+  "portfolioDividendsHint": "بڕەکان وەک ئەوەی گەیشتوونە هەژمارەکەت، بە دراوی پارەدان؛ کۆکان بە نرخی ئەمڕۆ دەگۆڕدرێن. بۆ ڕاپۆرتی باجەکەت، بەیاننامەی بڕۆکەرەکەت بەکاربهێنە."
 }

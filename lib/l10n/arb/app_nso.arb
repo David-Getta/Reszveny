@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Ga go na theko ya bjale ya {symbols}.",
   "eventsRecentResults": "Dipoelo tše di sa tšwago go begwa",
   "saveToNotes": "Boloka go dintlha tša ka",
-  "savedToNotes": "E bolokilwe go dintlha tša gago"
+  "savedToNotes": "E bolokilwe go dintlha tša gago",
+  "portfolioDividendsReceived": "Dividende tše di amogetšwego",
+  "portfolioDividendsThisYear": "Ngwaga wo",
+  "portfolioDividendsAllTime": "Ka moka",
+  "portfolioAddDividend": "Oketša dividende",
+  "portfolioDividendAmount": "Tšhelete ye e amogetšwego ({currency})",
+  "portfolioDividendDate": "Letšatši la tefo",
+  "portfolioDividendsEmpty": "Ga go na dividende tše di rekotilwego go fihla ga bjale. Di oketše ka seatla, goba o tsenye faele ya export ya broker ya gago – mela ya yona ya dividende le yona e a tšewa.",
+  "portfolioDividendsImported": "{count, plural, =1{Dividende e 1 e oketšitšwe} other{Dividende tše {count} di oketšitšwe}}",
+  "portfolioExportDividends": "Ntšha dividende (CSV)",
+  "portfolioDividendDeleted": "Dividende e phumotšwe",
+  "portfolioDividendsHint": "Ditšhelete ka moo di fihlilego akhaontong ya gago, ka tšhelete ya tefo; dipalomoka di fetolelwa ka reiti ya lehono. Bakeng sa pušetšo ya motšhelo, šomiša setatamente sa broker ya gago."
 }

@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "Ei nykyistä hintaa kohteille {symbols}.",
   "eventsRecentResults": "Tuoreet tulokset",
   "saveToNotes": "Tallenna omiin muistiinpanoihin",
-  "savedToNotes": "Tallennettu muistiinpanoihisi"
+  "savedToNotes": "Tallennettu muistiinpanoihisi",
+  "portfolioDividendsReceived": "Saadut osingot",
+  "portfolioDividendsThisYear": "Tänä vuonna",
+  "portfolioDividendsAllTime": "Koko ajalta",
+  "portfolioAddDividend": "Lisää osinko",
+  "portfolioDividendAmount": "Saatu summa ({currency})",
+  "portfolioDividendDate": "Maksupäivä",
+  "portfolioDividendsEmpty": "Osinkoja ei ole vielä kirjattu. Lisää ne käsin tai tuo välittäjäsi vientitiedosto – myös sen osinkorivit poimitaan.",
+  "portfolioDividendsImported": "{count, plural, =1{1 osinko lisätty} other{{count} osinkoa lisätty}}",
+  "portfolioExportDividends": "Vie osingot (CSV)",
+  "portfolioDividendDeleted": "Osinko poistettu",
+  "portfolioDividendsHint": "Summat sellaisina kuin ne tulivat tilillesi, maksuvaluutassa; yhteissummat muunnetaan tämän päivän kurssilla. Käytä veroilmoitukseen välittäjäsi raporttia."
 }

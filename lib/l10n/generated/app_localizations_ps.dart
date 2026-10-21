@@ -2553,4 +2553,49 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get savedToNotes => 'ستاسو یادښتونو کې خوندي شو';
+
+  @override
+  String get portfolioDividendsReceived => 'ترلاسه شوي ډیویډنډونه';
+
+  @override
+  String get portfolioDividendsThisYear => 'سږکال';
+
+  @override
+  String get portfolioDividendsAllTime => 'تر اوسه ټول';
+
+  @override
+  String get portfolioAddDividend => 'ډیویډنډ اضافه کړئ';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'ترلاسه شوې اندازه ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'د تادیې نېټه';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'تر اوسه هیڅ ډیویډنډ ثبت نه دی. په لاس يې اضافه کړئ، یا د خپل بروکر اکسپورټ وارد کړئ – د هغه د ډیویډنډ کرښې هم اخیستل کېږي.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ډیویډنډونه اضافه شول',
+      one: '1 ډیویډنډ اضافه شو',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'ډیویډنډونه صادر کړئ (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'ډیویډنډ حذف شو';
+
+  @override
+  String get portfolioDividendsHint =>
+      'اندازې هغسې دي چې ستاسو حساب ته راغلي، د تادیې په اسعارو؛ مجموعې د نن ورځې په نرخ بدلېږي. د مالیې راپور لپاره د خپل بروکر بیان وکاروئ.';
 }

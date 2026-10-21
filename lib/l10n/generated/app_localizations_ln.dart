@@ -2573,4 +2573,49 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get savedToNotes => 'Ebombami na ba note na yo';
+
+  @override
+  String get portfolioDividendsReceived => 'Ba dividende oyo ozwaki';
+
+  @override
+  String get portfolioDividendsThisYear => 'Mbula oyo';
+
+  @override
+  String get portfolioDividendsAllTime => 'Ntango nyonso';
+
+  @override
+  String get portfolioAddDividend => 'Bakisa dividende';
+
+  @override
+  String portfolioDividendAmount(String currency) {
+    return 'Mbongo oyo ozwaki ($currency)';
+  }
+
+  @override
+  String get portfolioDividendDate => 'Mokolo ya kofuta';
+
+  @override
+  String get portfolioDividendsEmpty =>
+      'Dividende moko te ekomami naino. Bakisa yango na maboko, to kotisa export ya broker na yo – ba ligne na yango ya dividende ekozwama mpe.';
+
+  @override
+  String portfolioDividendsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ba dividende $count ebakisami',
+      one: 'Dividende 1 ebakisami',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get portfolioExportDividends => 'Bimisa ba dividende (CSV)';
+
+  @override
+  String get portfolioDividendDeleted => 'Dividende elongolami';
+
+  @override
+  String get portfolioDividendsHint =>
+      'Mbongo ndenge ekómaki na compte na yo, na mbongo ya kofuta; ba total ebongwanaka na ntalo ya lelo. Mpo na déclaration ya mpako na yo, salela relevé ya broker na yo.';
 }

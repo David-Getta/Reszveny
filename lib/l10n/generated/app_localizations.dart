@@ -4434,6 +4434,72 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Saved to your notes'**
   String get savedToNotes;
+
+  /// Card title on the portfolio page and a figure on the stock page: cash dividends the user actually received.
+  ///
+  /// In en, this message translates to:
+  /// **'Dividends received'**
+  String get portfolioDividendsReceived;
+
+  /// Label of the dividends received in the current calendar year.
+  ///
+  /// In en, this message translates to:
+  /// **'This year'**
+  String get portfolioDividendsThisYear;
+
+  /// Label of all dividends received so far.
+  ///
+  /// In en, this message translates to:
+  /// **'All time'**
+  String get portfolioDividendsAllTime;
+
+  /// Button and dialog title for recording a dividend payment by hand.
+  ///
+  /// In en, this message translates to:
+  /// **'Add dividend'**
+  String get portfolioAddDividend;
+
+  /// Field label in the add-dividend dialog: the total cash received, after tax.
+  ///
+  /// In en, this message translates to:
+  /// **'Amount received ({currency})'**
+  String portfolioDividendAmount(String currency);
+
+  /// Date row in the add-dividend dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'Payment date'**
+  String get portfolioDividendDate;
+
+  /// Empty state of the dividends card.
+  ///
+  /// In en, this message translates to:
+  /// **'No dividends recorded yet. Add them by hand, or import your broker\'s export – its dividend rows are picked up too.'**
+  String get portfolioDividendsEmpty;
+
+  /// After importing a broker export: how many dividend payments were added.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 dividend added} other{{count} dividends added}}'**
+  String portfolioDividendsImported(int count);
+
+  /// Menu item: share the received dividends as a CSV file.
+  ///
+  /// In en, this message translates to:
+  /// **'Export dividends (CSV)'**
+  String get portfolioExportDividends;
+
+  /// Snackbar after deleting a dividend record; an Undo button follows.
+  ///
+  /// In en, this message translates to:
+  /// **'Dividend deleted'**
+  String get portfolioDividendDeleted;
+
+  /// Small print under the dividends card.
+  ///
+  /// In en, this message translates to:
+  /// **'Amounts as they arrived on your account, in the payout currency; totals are converted at today\'s rate. For your tax return, use your broker\'s statement.'**
+  String get portfolioDividendsHint;
 }
 
 class _AppLocalizationsDelegate

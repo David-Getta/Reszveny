@@ -682,5 +682,16 @@
   "portfolioNoPriceFor": "No hi ha preu actual per a {symbols}.",
   "eventsRecentResults": "Resultats publicats recentment",
   "saveToNotes": "Desar a les meves notes",
-  "savedToNotes": "Desat a les teves notes"
+  "savedToNotes": "Desat a les teves notes",
+  "portfolioDividendsReceived": "Dividends rebuts",
+  "portfolioDividendsThisYear": "Aquest any",
+  "portfolioDividendsAllTime": "Des de l'inici",
+  "portfolioAddDividend": "Afegir dividend",
+  "portfolioDividendAmount": "Import rebut ({currency})",
+  "portfolioDividendDate": "Data de pagament",
+  "portfolioDividendsEmpty": "Encara no hi ha dividends registrats. Afegeix-los a mà o importa l'exportació del teu bròquer: les seves files de dividends també es recullen.",
+  "portfolioDividendsImported": "{count, plural, =1{1 dividend afegit} other{{count} dividends afegits}}",
+  "portfolioExportDividends": "Exportar dividends (CSV)",
+  "portfolioDividendDeleted": "Dividend eliminat",
+  "portfolioDividendsHint": "Imports tal com van arribar al teu compte, en la moneda del pagament; els totals es converteixen al canvi d'avui. Per a la declaració de la renda, fes servir l'extracte del teu bròquer."
 }
