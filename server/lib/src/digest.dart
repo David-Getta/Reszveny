@@ -138,6 +138,17 @@ class DigestSender {
     ]..sort((a, b) => a.date.compareTo(b.date));
   }
 
+  /// Az idén (a [now] évében, [now]-ig) kapott osztalékok pénznemenként
+  /// összegezve, a pénznem szerint rendezve.
+  static Map<String, double> dividendsYearToDate(Map<String, dynamic> data, {required DateTime now}) {
+    final sums = <String, double>{};
+    for (final d in _dividendRecords(data)) {
+      if (d.date.year != now.year || d.date.isAfter(now)) continue;
+      sums[d.currency] = (sums[d.currency] ?? 0) + d.amount;
+    }
+    return {for (final k in sums.keys.toList()..sort()) k: sums[k]!};
+  }
+
   /// A következő [days] napban várható osztalékok a még birtokolt részvényekre,
   /// a rögzített kifizetések ritmusából – ugyanaz a becslés, mint az appban
   /// (`lib/features/portfolio/dividend_forecast.dart`; a küszöböket a kettőben
@@ -286,6 +297,7 @@ class DigestSender {
             favorites,
             hu: acc.data['lang'] == 'hu',
             dividends: dividendsOf(acc.data, now: now),
+            yearToDate: dividendsYearToDate(acc.data, now: now),
             expected: expectedDividendsOf(acc.data, now: now),
           );
           await mailer.send(acc.email, subject: subject, text: text);
@@ -335,6 +347,7 @@ class DigestSender {
     required bool hu,
     List<DigestDividend> dividends = const [],
     List<DigestDividend> expected = const [],
+    Map<String, double> yearToDate = const {},
   }) {
     int byChange(DigestLine a, DigestLine b) => (b.weekChange ?? -1e9).compareTo(a.weekChange ?? -1e9);
     portfolio = [...portfolio]..sort(byChange);
@@ -404,6 +417,11 @@ class DigestSender {
       b.writeln(hu ? 'Kapott osztalékok a héten:' : 'Dividends received this week:');
       for (final d in dividends) {
         b.writeln('  ${d.symbol} – ${_n(d.amount)} ${d.currency} (${_date(d.date, hu: hu)})');
+      }
+      // Az idei összesítés pénznemenként (átváltás nélkül – a szerver nem ismer árfolyamot).
+      if (yearToDate.isNotEmpty) {
+        final parts = [for (final e in yearToDate.entries) '${_n(e.value)} ${e.key}'];
+        b.writeln('  ${hu ? 'Idén eddig' : 'This year so far'}: ${parts.join(', ')}');
       }
       b.writeln();
     }

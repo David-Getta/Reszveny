@@ -144,9 +144,15 @@ void main() {
       hu: false,
       dividends: [(symbol: 'AAPL', amount: 2.5, currency: 'USD', date: DateTime.utc(2026, 10, 14))],
       expected: [(symbol: 'KO', amount: 5.1, currency: 'USD', date: DateTime.utc(2026, 10, 28))],
+      yearToDate: {'HUF': 58800, 'USD': 12.3},
     );
     expect(subject, 'WhatStock weekly summary: AAPL −2.5%');
-    expect(text, contains('Dividends received this week:\n  AAPL – 2.50 USD (Oct 14)'));
+    expect(
+      text,
+      contains(
+        'Dividends received this week:\n  AAPL – 2.50 USD (Oct 14)\n  This year so far: 58800.00 HUF, 12.30 USD',
+      ),
+    );
     expect(
       text,
       contains('Dividends expected in the next two weeks (from your recorded payments):\n  KO – ~5.10 USD (Oct 28)'),
@@ -173,6 +179,19 @@ void main() {
     }, now: now);
     expect(ds.map((d) => (d.symbol, d.amount, d.currency)), [('AAPL', 2.5, 'USD'), ('MSFT', 0.83, 'USD')]);
     expect(DigestSender.dividendsOf({}, now: now), isEmpty);
+    // Idei összesítés pénznemenként: a tavalyi és a jövőbeli tétel kimarad.
+    final ytd = DigestSender.dividendsYearToDate({
+      'dividends': [
+        {'symbol': 'AAPL', 'amount': 2.5, 'currency': 'USD', 'date': '2026-10-14'},
+        {'symbol': 'MSFT', 'amount': 0.83, 'currency': 'USD', 'date': '2026-03-12'},
+        {'symbol': 'OTP', 'amount': 24000, 'currency': 'HUF', 'date': '2026-06-02'},
+        {'symbol': 'AAPL', 'amount': 2.4, 'currency': 'USD', 'date': '2025-11-13'},
+        {'symbol': 'AAPL', 'amount': 2.6, 'currency': 'USD', 'date': '2026-11-13'},
+      ],
+    }, now: now);
+    expect(ytd.keys, ['HUF', 'USD']);
+    expect(ytd['USD'], closeTo(3.33, 1e-9));
+    expect(ytd['HUF'], 24000);
   });
 
   test('expected dividends in the next two weeks: held stocks with a rhythm in the recorded payments', () {
