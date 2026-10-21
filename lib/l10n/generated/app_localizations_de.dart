@@ -2755,4 +2755,14 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Technische Signale';
+
+  @override
+  String get glossaryPageTitle => 'Glossar';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Einfache Erklärungen zu jeder Kennzahl in der App, von KGV (P/E) bis RSI';
+
+  @override
+  String get glossarySearchHint => 'Glossar durchsuchen';
 }

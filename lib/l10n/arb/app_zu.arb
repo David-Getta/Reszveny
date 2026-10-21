@@ -727,5 +727,8 @@
   "signalCrossedBelow": "liweqile ngaphansi kwesilinganiso sezinsuku ezingu-200",
   "signalAlertsTitle": "Izaziso zezimpawu zobuchwepheshe",
   "signalAlertsSubtitle": "Kanye ngosuku, uma isitoko osilandelayo sithengisiwe ngokweqile noma sithengwe ngokweqile (RSI), noma intengo yaso inqamula isilinganiso sezinsuku ezingu-200.",
-  "signalAlertsNotification": "Izimpawu zobuchwepheshe"
+  "signalAlertsNotification": "Izimpawu zobuchwepheshe",
+  "glossaryPageTitle": "Uhlu lwamagama",
+  "glossaryPageSubtitle": "Izincazelo ezilula zazo zonke izinombolo i-app ezibonisayo, kusukela ku-P/E kuya ku-RSI",
+  "glossarySearchHint": "Sesha ohlwini lwamagama"
 }

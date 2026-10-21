@@ -2807,4 +2807,14 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'إشارات فنية';
+
+  @override
+  String get glossaryPageTitle => 'مسرد المصطلحات';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'شروح بسيطة لكل رقم يعرضه التطبيق، من P/E إلى RSI';
+
+  @override
+  String get glossarySearchHint => 'البحث في المسرد';
 }

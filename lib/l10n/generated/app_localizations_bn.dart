@@ -2741,4 +2741,14 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'টেকনিক্যাল সিগন্যাল';
+
+  @override
+  String get glossaryPageTitle => 'শব্দকোষ';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'অ্যাপে দেখানো প্রতিটি সংখ্যার সহজ ব্যাখ্যা, P/E থেকে RSI পর্যন্ত';
+
+  @override
+  String get glossarySearchHint => 'শব্দকোষে খুঁজুন';
 }

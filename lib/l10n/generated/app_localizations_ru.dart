@@ -2816,4 +2816,14 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Технические сигналы';
+
+  @override
+  String get glossaryPageTitle => 'Глоссарий';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Простые объяснения каждого показателя в приложении, от P/E до RSI';
+
+  @override
+  String get glossarySearchHint => 'Поиск по глоссарию';
 }

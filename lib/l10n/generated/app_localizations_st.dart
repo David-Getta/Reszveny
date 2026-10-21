@@ -2758,4 +2758,14 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Matshwao a botekgeniki';
+
+  @override
+  String get glossaryPageTitle => 'Lenane la mantsoe';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Ditlhaloso tse bonolo tsa palo e nngwe le e nngwe eo app e e bontshang, ho tloha ho P/E ho isa ho RSI';
+
+  @override
+  String get glossarySearchHint => 'Batla lenaneng la mantsoe';
 }

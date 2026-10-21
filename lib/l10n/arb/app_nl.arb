@@ -727,5 +727,8 @@
   "signalCrossedBelow": "onder het 200-daags gemiddelde gekruist",
   "signalAlertsTitle": "Meldingen over technische signalen",
   "signalAlertsSubtitle": "Eén keer per dag, wanneer een aandeel dat je volgt oversold of overbought wordt (RSI), of de koers het 200-daags gemiddelde kruist.",
-  "signalAlertsNotification": "Technische signalen"
+  "signalAlertsNotification": "Technische signalen",
+  "glossaryPageTitle": "Begrippenlijst",
+  "glossaryPageSubtitle": "Eenvoudige uitleg van elk cijfer dat de app toont, van P/E tot RSI",
+  "glossarySearchHint": "Zoeken in de begrippenlijst"
 }

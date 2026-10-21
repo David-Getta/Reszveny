@@ -727,5 +727,8 @@
   "signalCrossedBelow": "ka hoos martay celceliska 200 maalmood",
   "signalAlertsTitle": "Ogeysiisyada calaamadaha farsamo",
   "signalAlertsSubtitle": "Hal mar maalintii, marka saami aad la socoto si xad-dhaaf loo iibiyay ama si xad-dhaaf loo iibsaday (RSI), ama qiimihiisu ka gudbo celceliska 200 maalmood.",
-  "signalAlertsNotification": "Calaamadaha farsamo"
+  "signalAlertsNotification": "Calaamadaha farsamo",
+  "glossaryPageTitle": "Qaamuuska ereyada",
+  "glossaryPageSubtitle": "Sharaxaad fudud oo tiro kasta oo appku muujiyo, laga bilaabo P/E ilaa RSI",
+  "glossarySearchHint": "Ka raadi qaamuuska"
 }

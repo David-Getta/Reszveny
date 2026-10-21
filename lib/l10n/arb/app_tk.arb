@@ -727,5 +727,8 @@
   "signalCrossedBelow": "200 günlük ortalamadan aşak geçdi",
   "signalAlertsTitle": "Tehniki signal habarnamalary",
   "signalAlertsSubtitle": "Günde bir gezek, yzarlaýan paýnamaňyz aşa satylan ýa-da aşa satyn alnan (RSI) bolanda, ýa-da onuň bahasy 200 günlük ortalamany kesip geçende.",
-  "signalAlertsNotification": "Tehniki signallar"
+  "signalAlertsNotification": "Tehniki signallar",
+  "glossaryPageTitle": "Sözlük",
+  "glossaryPageSubtitle": "Programmanyň görkezýän her sanynyň ýönekeý düşündirişi, P/E-den RSI-e çenli",
+  "glossarySearchHint": "Sözlükde gözle"
 }

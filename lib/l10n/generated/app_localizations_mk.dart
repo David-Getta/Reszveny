@@ -2761,4 +2761,14 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Технички сигнали';
+
+  @override
+  String get glossaryPageTitle => 'Поимник';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Едноставни објаснувања за секоја бројка што ја прикажува апликацијата, од P/E до RSI';
+
+  @override
+  String get glossarySearchHint => 'Пребарај во поимникот';
 }

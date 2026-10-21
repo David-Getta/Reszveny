@@ -2749,4 +2749,14 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'సాంకేతిక సిగ్నల్‌లు';
+
+  @override
+  String get glossaryPageTitle => 'పదకోశం';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'P/E నుండి RSI వరకు, యాప్ చూపే ప్రతి సంఖ్యకు సరళమైన వివరణలు';
+
+  @override
+  String get glossarySearchHint => 'పదకోశంలో వెతకండి';
 }

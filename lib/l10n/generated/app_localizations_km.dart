@@ -2721,4 +2721,14 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'សញ្ញាបច្ចេកទេស';
+
+  @override
+  String get glossaryPageTitle => 'សទ្ទានុក្រម';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'ការពន្យល់សាមញ្ញអំពីតួលេខនីមួយៗដែលកម្មវិធីបង្ហាញ ពី P/E ដល់ RSI';
+
+  @override
+  String get glossarySearchHint => 'ស្វែងរកក្នុងសទ្ទានុក្រម';
 }

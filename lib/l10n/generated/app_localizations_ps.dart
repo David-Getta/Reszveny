@@ -2733,4 +2733,14 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'تخنیکي سیګنالونه';
+
+  @override
+  String get glossaryPageTitle => 'د اصطلاحاتو لړلیک';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'د اپ د هر شمېر ساده تشریح، له P/E څخه تر RSI پورې';
+
+  @override
+  String get glossarySearchHint => 'په اصطلاحاتو کې لټون';
 }

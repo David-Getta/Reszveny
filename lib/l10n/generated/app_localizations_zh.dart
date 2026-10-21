@@ -2623,6 +2623,15 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => '技术信号';
+
+  @override
+  String get glossaryPageTitle => '术语表';
+
+  @override
+  String get glossaryPageSubtitle => '用通俗语言解释应用中显示的每个指标，从 P/E 到 RSI';
+
+  @override
+  String get glossarySearchHint => '搜索术语表';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -5242,4 +5251,13 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get signalAlertsNotification => '技術訊號';
+
+  @override
+  String get glossaryPageTitle => '詞彙表';
+
+  @override
+  String get glossaryPageSubtitle => '以淺白文字解釋應用程式顯示的每個指標，從 P/E 到 RSI';
+
+  @override
+  String get glossarySearchHint => '搜尋詞彙表';
 }

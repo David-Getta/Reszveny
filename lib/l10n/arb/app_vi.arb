@@ -727,5 +727,8 @@
   "signalCrossedBelow": "cắt xuống dưới trung bình 200 ngày",
   "signalAlertsTitle": "Thông báo tín hiệu kỹ thuật",
   "signalAlertsSubtitle": "Mỗi ngày một lần, khi cổ phiếu bạn theo dõi rơi vào vùng quá bán hoặc quá mua (RSI), hoặc giá cắt qua trung bình 200 ngày.",
-  "signalAlertsNotification": "Tín hiệu kỹ thuật"
+  "signalAlertsNotification": "Tín hiệu kỹ thuật",
+  "glossaryPageTitle": "Bảng thuật ngữ",
+  "glossaryPageSubtitle": "Giải thích đơn giản mọi chỉ số ứng dụng hiển thị, từ P/E đến RSI",
+  "glossarySearchHint": "Tìm trong bảng thuật ngữ"
 }

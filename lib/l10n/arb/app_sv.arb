@@ -727,5 +727,8 @@
   "signalCrossedBelow": "bröt ned genom 200-dagars medel",
   "signalAlertsTitle": "Aviseringar om tekniska signaler",
   "signalAlertsSubtitle": "En gång om dagen, när en aktie du följer blir översåld eller överköpt (RSI), eller kursen korsar 200-dagars medel.",
-  "signalAlertsNotification": "Tekniska signaler"
+  "signalAlertsNotification": "Tekniska signaler",
+  "glossaryPageTitle": "Ordlista",
+  "glossaryPageSubtitle": "Enkla förklaringar av alla tal appen visar, från P/E till RSI",
+  "glossarySearchHint": "Sök i ordlistan"
 }

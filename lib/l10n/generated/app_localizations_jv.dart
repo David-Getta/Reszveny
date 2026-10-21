@@ -2744,4 +2744,14 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Sinyal teknikal';
+
+  @override
+  String get glossaryPageTitle => 'Glosarium';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Katrangan prasaja saben angka sing ditampilake aplikasi, saka P/E nganti RSI';
+
+  @override
+  String get glossarySearchHint => 'Golèk ing glosarium';
 }

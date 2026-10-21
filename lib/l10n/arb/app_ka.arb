@@ -727,5 +727,8 @@
   "signalCrossedBelow": "200-დღიან საშუალოს ქვემოთ გადაკვეთა",
   "signalAlertsTitle": "ტექნიკური სიგნალების შეტყობინებები",
   "signalAlertsSubtitle": "დღეში ერთხელ, როცა შენ მიერ თვალყურის დევნებული აქცია ზედმეტად გაყიდული ან ზედმეტად ნაყიდი ხდება (RSI), ან მისი ფასი 200-დღიან საშუალოს კვეთს.",
-  "signalAlertsNotification": "ტექნიკური სიგნალები"
+  "signalAlertsNotification": "ტექნიკური სიგნალები",
+  "glossaryPageTitle": "ტერმინების ლექსიკონი",
+  "glossaryPageSubtitle": "აპში ნაჩვენები ყველა მაჩვენებლის მარტივი განმარტება, P/E-დან RSI-მდე",
+  "glossarySearchHint": "ძიება ლექსიკონში"
 }

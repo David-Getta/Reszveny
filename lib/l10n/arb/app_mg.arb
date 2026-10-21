@@ -727,5 +727,8 @@
   "signalCrossedBelow": "nidina ambanin'ny salan'isa 200 andro",
   "signalAlertsTitle": "Fampandrenesana momba ny famantarana teknika",
   "signalAlertsSubtitle": "Indray mandeha isan'andro, rehefa lasa voavarotra be loatra na voavidy be loatra (RSI) ny orinasa arahinao, na miampita ny salan'isa 200 andro ny vidiny.",
-  "signalAlertsNotification": "Famantarana teknika"
+  "signalAlertsNotification": "Famantarana teknika",
+  "glossaryPageTitle": "Rakibolana",
+  "glossaryPageSubtitle": "Fanazavana tsotra momba ny isa rehetra asehon'ny rindranasa, manomboka amin'ny P/E ka hatramin'ny RSI",
+  "glossarySearchHint": "Hikaroka ao amin'ny rakibolana"
 }

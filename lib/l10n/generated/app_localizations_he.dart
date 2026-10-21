@@ -2736,4 +2736,14 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'אותות טכניים';
+
+  @override
+  String get glossaryPageTitle => 'מילון מונחים';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'הסברים פשוטים לכל נתון שהאפליקציה מציגה, מ-P/E ועד RSI';
+
+  @override
+  String get glossarySearchHint => 'חיפוש במילון המונחים';
 }

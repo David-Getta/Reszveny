@@ -727,5 +727,8 @@
   "signalCrossedBelow": "nagpanaog sa idalom sang 200 ka adlaw nga average",
   "signalAlertsTitle": "Mga pahibalo sa teknikal nga signal",
   "signalAlertsSubtitle": "Makaisa sa isa ka adlaw, kon ang isa ka stock nga ginasunod mo mangin oversold ukon overbought (RSI), ukon ang presyo sini maglabang sa iya 200 ka adlaw nga average.",
-  "signalAlertsNotification": "Mga teknikal nga signal"
+  "signalAlertsNotification": "Mga teknikal nga signal",
+  "glossaryPageTitle": "Glosaryo",
+  "glossaryPageSubtitle": "Simple nga mga paathag sa kada numero nga ginapakita sang app, halin sa P/E tubtob RSI",
+  "glossarySearchHint": "Pangitaa sa glosaryo"
 }

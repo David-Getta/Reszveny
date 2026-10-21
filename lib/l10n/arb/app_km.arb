@@ -727,5 +727,8 @@
   "signalCrossedBelow": "បានធ្លាក់ក្រោមមធ្យម ២០០ ថ្ងៃ",
   "signalAlertsTitle": "ការជូនដំណឹងសញ្ញាបច្ចេកទេស",
   "signalAlertsSubtitle": "ម្តងក្នុងមួយថ្ងៃ នៅពេលភាគហ៊ុនដែលអ្នកតាមដានក្លាយជាលក់លើសកម្រិត ឬទិញលើសកម្រិត (RSI) ឬតម្លៃរបស់វាឆ្លងកាត់មធ្យម ២០០ ថ្ងៃ។",
-  "signalAlertsNotification": "សញ្ញាបច្ចេកទេស"
+  "signalAlertsNotification": "សញ្ញាបច្ចេកទេស",
+  "glossaryPageTitle": "សទ្ទានុក្រម",
+  "glossaryPageSubtitle": "ការពន្យល់សាមញ្ញអំពីតួលេខនីមួយៗដែលកម្មវិធីបង្ហាញ ពី P/E ដល់ RSI",
+  "glossarySearchHint": "ស្វែងរកក្នុងសទ្ទានុក្រម"
 }

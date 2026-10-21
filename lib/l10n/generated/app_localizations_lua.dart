@@ -2750,4 +2750,14 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Bimanyinu bia tekinike';
+
+  @override
+  String get glossaryPageTitle => 'Diumvuija dia miaku';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Diumvuija dipepele dia nomba yonso idi app uleja, kutuadija ku P/E too ne ku RSI';
+
+  @override
+  String get glossarySearchHint => 'Keba mu diumvuija dia miaku';
 }

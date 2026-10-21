@@ -2735,4 +2735,14 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Tín hiệu kỹ thuật';
+
+  @override
+  String get glossaryPageTitle => 'Bảng thuật ngữ';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Giải thích đơn giản mọi chỉ số ứng dụng hiển thị, từ P/E đến RSI';
+
+  @override
+  String get glossarySearchHint => 'Tìm trong bảng thuật ngữ';
 }

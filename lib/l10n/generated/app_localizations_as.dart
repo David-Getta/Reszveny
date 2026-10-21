@@ -2741,4 +2741,14 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'কাৰিকৰী সংকেত';
+
+  @override
+  String get glossaryPageTitle => 'শব্দকোষ';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'এপটোৱে দেখুওৱা প্ৰতিটো সংখ্যাৰ সৰল ব্যাখ্যা, P/E ৰ পৰা RSI লৈকে';
+
+  @override
+  String get glossarySearchHint => 'শব্দকোষত সন্ধান কৰক';
 }

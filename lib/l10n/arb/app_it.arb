@@ -727,5 +727,8 @@
   "signalCrossedBelow": "ha rotto al ribasso la media a 200 giorni",
   "signalAlertsTitle": "Notifiche sui segnali tecnici",
   "signalAlertsSubtitle": "Una volta al giorno, quando un titolo che segui diventa ipervenduto o ipercomprato (RSI), o il suo prezzo attraversa la media a 200 giorni.",
-  "signalAlertsNotification": "Segnali tecnici"
+  "signalAlertsNotification": "Segnali tecnici",
+  "glossaryPageTitle": "Glossario",
+  "glossaryPageSubtitle": "Spiegazioni semplici di ogni dato mostrato dall’app, dal P/E all’RSI",
+  "glossarySearchHint": "Cerca nel glossario"
 }

@@ -727,5 +727,8 @@
   "signalCrossedBelow": "yamanutse munsi y'impuzandengo y'imisi 200",
   "signalAlertsTitle": "Imenyesha y'ibimenyetso vya tekinike",
   "signalAlertsSubtitle": "Rimwe ku musi, igihe umugabane ukurikirana wagurishijwe cane canke waguzwe cane (RSI), canke igiciro cawo kirenze impuzandengo y'imisi 200.",
-  "signalAlertsNotification": "Ibimenyetso vya tekinike"
+  "signalAlertsNotification": "Ibimenyetso vya tekinike",
+  "glossaryPageTitle": "Insiguro y'amajambo",
+  "glossaryPageSubtitle": "Insiguro zoroshe z'igitigiri cose porogarama yerekana, kuva ku P/E gushika ku RSI",
+  "glossarySearchHint": "Rondera mu nsiguro y'amajambo"
 }

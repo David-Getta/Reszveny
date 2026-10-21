@@ -2736,4 +2736,14 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Maandeeji teknik';
+
+  @override
+  String get glossaryPageTitle => 'Ɓaŋngirde kelme';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Pirtoore newiinde kala limoore nde app ndee hollata, gila P/E haa RSI';
+
+  @override
+  String get glossarySearchHint => 'Yiylo e ɓaŋngirde kelme';
 }

@@ -2734,4 +2734,14 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'ٽيڪنيڪل سگنل';
+
+  @override
+  String get glossaryPageTitle => 'لغت';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'P/E کان RSI تائين، ايپ ۾ ڏيکاريل هر انگ جي سادي وضاحت';
+
+  @override
+  String get glossarySearchHint => 'لغت ۾ ڳوليو';
 }

@@ -2745,4 +2745,14 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Sinyal téknis';
+
+  @override
+  String get glossaryPageTitle => 'Daptar istilah';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Katerangan basajan unggal angka anu dipidangkeun aplikasi, ti P/E dugi ka RSI';
+
+  @override
+  String get glossarySearchHint => 'Paluruh dina daptar istilah';
 }

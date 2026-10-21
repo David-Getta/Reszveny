@@ -2745,4 +2745,14 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Texniki siqnallar';
+
+  @override
+  String get glossaryPageTitle => 'Lüğət';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Tətbiqin göstərdiyi hər rəqəmin sadə izahı, P/E-dən RSI-yə qədər';
+
+  @override
+  String get glossarySearchHint => 'Lüğətdə axtar';
 }

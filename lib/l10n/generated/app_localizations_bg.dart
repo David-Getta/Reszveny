@@ -2743,4 +2743,14 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Технически сигнали';
+
+  @override
+  String get glossaryPageTitle => 'Речник';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Прости обяснения на всеки показател в приложението, от P/E до RSI';
+
+  @override
+  String get glossarySearchHint => 'Търсене в речника';
 }

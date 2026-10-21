@@ -2736,4 +2736,14 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'तकनीकी संकेत';
+
+  @override
+  String get glossaryPageTitle => 'शब्दावली';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'ऐपमे देखाओल हरेक आँकड़ाक सरल व्याख्या, P/E सँ RSI धरि';
+
+  @override
+  String get glossarySearchHint => 'शब्दावलीमे खोजू';
 }

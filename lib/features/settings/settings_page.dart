@@ -20,6 +20,7 @@ import '../billing/trial_upsell.dart';
 import '../billing/usage_chip.dart';
 import 'backup.dart';
 import 'telemetry_consent.dart';
+import 'glossary_page.dart';
 import 'language_picker.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../l10n/supported_locales.dart';
@@ -399,6 +400,17 @@ class SettingsPage extends StatelessWidget {
                 Card(
                   child: Column(
                     children: [
+                      // Fogalomtár: az összes mutató magyarázata egy helyen.
+                      ListTile(
+                        key: const ValueKey('settings-glossary'),
+                        leading: const Icon(Icons.menu_book_outlined),
+                        title: Text(l10n.glossaryPageTitle),
+                        subtitle: Text(l10n.glossaryPageSubtitle),
+                        trailing: const Icon(Icons.chevron_right_rounded),
+                        onTap: () =>
+                            Navigator.of(context).push(MaterialPageRoute<void>(builder: (_) => const GlossaryPage())),
+                      ),
+                      const Divider(height: 1),
                       if (services.telemetry.available) ...[const TelemetrySwitchTile(), const Divider(height: 1)],
                       ListTile(
                         leading: const Icon(Icons.storage_outlined),

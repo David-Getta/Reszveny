@@ -2785,4 +2785,14 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Tehniskie signāli';
+
+  @override
+  String get glossaryPageTitle => 'Terminu vārdnīca';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Vienkārši skaidrojumi katram lietotnes rādītājam, no P/E līdz RSI';
+
+  @override
+  String get glossarySearchHint => 'Meklēt vārdnīcā';
 }

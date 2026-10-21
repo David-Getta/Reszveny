@@ -727,5 +727,8 @@
   "signalCrossedBelow": "unter den 200-Tage-Durchschnitt gefallen",
   "signalAlertsTitle": "Benachrichtigungen zu technischen Signalen",
   "signalAlertsSubtitle": "Einmal täglich, wenn eine Aktie, der du folgst, überverkauft oder überkauft wird (RSI) oder ihr Kurs den 200-Tage-Durchschnitt kreuzt.",
-  "signalAlertsNotification": "Technische Signale"
+  "signalAlertsNotification": "Technische Signale",
+  "glossaryPageTitle": "Glossar",
+  "glossaryPageSubtitle": "Einfache Erklärungen zu jeder Kennzahl in der App, von KGV (P/E) bis RSI",
+  "glossarySearchHint": "Glossar durchsuchen"
 }

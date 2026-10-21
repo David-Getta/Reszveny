@@ -2741,4 +2741,14 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'तकनीकी संकेत';
+
+  @override
+  String get glossaryPageTitle => 'शब्दावली';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'ऐप में दिखने वाले हर आँकड़े की सरल व्याख्या, P/E से RSI तक';
+
+  @override
+  String get glossarySearchHint => 'शब्दावली में खोजें';
 }

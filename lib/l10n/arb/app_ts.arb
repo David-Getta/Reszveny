@@ -727,5 +727,8 @@
   "signalCrossedBelow": "yi tsemakanyile ehansi ka avhareji ya masiku ya 200",
   "signalAlertsTitle": "Switiviso swa mikombiso ya thekiniki",
   "signalAlertsSubtitle": "Kan'we hi siku, loko xiyere lexi u xi landzelelaka xi xavisiwe ngopfu kumbe xi xaviwe ngopfu (RSI), kumbe ntsengo wa xona wu tsemakanya avhareji ya masiku ya 200.",
-  "signalAlertsNotification": "Mikombiso ya thekiniki"
+  "signalAlertsNotification": "Mikombiso ya thekiniki",
+  "glossaryPageTitle": "Nxaxamelo wa marito",
+  "glossaryPageSubtitle": "Tinhlamuselo to olova ta nomboro yin'wana ni yin'wana leyi app yi yi kombisaka, ku suka eka P/E ku ya eka RSI",
+  "glossarySearchHint": "Lava eka nxaxamelo wa marito"
 }

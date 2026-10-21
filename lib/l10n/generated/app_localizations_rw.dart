@@ -2752,4 +2752,14 @@ class AppLocalizationsRw extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Ibimenyetso bya tekiniki';
+
+  @override
+  String get glossaryPageTitle => 'Ibisobanuro by\'amagambo';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Ibisobanuro byoroshye by\'imibare yose porogaramu yerekana, kuva ku P/E kugeza ku RSI';
+
+  @override
+  String get glossarySearchHint => 'Shakisha mu bisobanuro by\'amagambo';
 }

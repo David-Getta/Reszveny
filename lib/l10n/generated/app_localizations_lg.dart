@@ -2752,4 +2752,14 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Obubonero obwa tekinika';
+
+  @override
+  String get glossaryPageTitle => 'Ennyinyonnyola y\'ebigambo';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Ennyinyonnyola ennyangu eya buli muwendo app gw\'eraga, okuva ku P/E okutuuka ku RSI';
+
+  @override
+  String get glossarySearchHint => 'Noonya mu nnyinyonnyola y\'ebigambo';
 }

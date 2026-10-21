@@ -2752,4 +2752,14 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Bidimbu ya teknike';
+
+  @override
+  String get glossaryPageTitle => 'Dikisionere ya bangogo';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Bansangu ya pete sambu na konso ntalu yina app ke songa, banda na P/E tii na RSI';
+
+  @override
+  String get glossarySearchHint => 'Sosa na dikisionere';
 }

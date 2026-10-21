@@ -2729,4 +2729,14 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Tekniik bãnd rãmba';
+
+  @override
+  String get glossaryPageTitle => 'Gom-biis võor';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Wilgr sẽn yaa nana ne nimbr fãa ãpl wã sẽn wilgd, sẽn sɩng ne P/E n tãag RSI';
+
+  @override
+  String get glossarySearchHint => 'Bao gom-biis võor pʋgẽ';
 }

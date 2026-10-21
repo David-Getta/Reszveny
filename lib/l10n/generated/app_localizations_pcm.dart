@@ -2742,4 +2742,14 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Technical signals';
+
+  @override
+  String get glossaryPageTitle => 'Glossary';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Simple explanation of every number wey di app dey show, from P/E to RSI';
+
+  @override
+  String get glossarySearchHint => 'Search di glossary';
 }

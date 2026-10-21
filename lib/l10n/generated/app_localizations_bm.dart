@@ -2739,4 +2739,14 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Tekiniki taamasiyɛnw';
+
+  @override
+  String get glossaryPageTitle => 'Daɲɛgafe';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Jatew bɛɛ ɲɛfɔli nɔgɔman minnu bɛ jira app kɔnɔ, k\'a ta P/E la ka se RSI ma';
+
+  @override
+  String get glossarySearchHint => 'Ɲini daɲɛgafe kɔnɔ';
 }

@@ -727,5 +727,8 @@
   "signalCrossedBelow": "200 günlük ortalamanın altına indi",
   "signalAlertsTitle": "Teknik sinyal bildirimleri",
   "signalAlertsSubtitle": "Günde bir kez, takip ettiğiniz bir hisse aşırı satım veya aşırı alım (RSI) bölgesine girdiğinde ya da fiyatı 200 günlük ortalamayı kestiğinde.",
-  "signalAlertsNotification": "Teknik sinyaller"
+  "signalAlertsNotification": "Teknik sinyaller",
+  "glossaryPageTitle": "Sözlük",
+  "glossaryPageSubtitle": "Uygulamadaki her rakamın sade açıklaması, P/E'den RSI'ya",
+  "glossarySearchHint": "Sözlükte ara"
 }

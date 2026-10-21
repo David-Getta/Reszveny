@@ -727,5 +727,8 @@
   "signalCrossedBelow": "аз миёнаи 200-рӯза поён гузашт",
   "signalAlertsTitle": "Огоҳиномаҳо дар бораи сигналҳои техникӣ",
   "signalAlertsSubtitle": "Як бор дар рӯз, вақте ки саҳмияи пайгиришудаи шумо аз ҳад зиёд фурӯхта шуда ё аз ҳад зиёд харида шуда (RSI) мегардад, ё нархи он миёнаи 200-рӯзаро мебурад.",
-  "signalAlertsNotification": "Сигналҳои техникӣ"
+  "signalAlertsNotification": "Сигналҳои техникӣ",
+  "glossaryPageTitle": "Луғати истилоҳот",
+  "glossaryPageSubtitle": "Шарҳи оддии ҳар як нишондиҳандаи барнома, аз P/E то RSI",
+  "glossarySearchHint": "Ҷустуҷӯ дар луғат"
 }

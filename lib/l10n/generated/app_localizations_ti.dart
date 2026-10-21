@@ -2704,4 +2704,14 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'ቴክኒካዊ ምልክታት';
+
+  @override
+  String get glossaryPageTitle => 'መዝገበ ቃላት';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'ካብ P/E ክሳብ RSI፣ እቲ መተግበሪ ዘርእዮ ነፍሲ ወከፍ ቁጽሪ ቀሊል መግለጺ';
+
+  @override
+  String get glossarySearchHint => 'ኣብ መዝገበ ቃላት ድለ';
 }

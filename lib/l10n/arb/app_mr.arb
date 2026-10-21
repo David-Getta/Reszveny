@@ -727,5 +727,8 @@
   "signalCrossedBelow": "२०० दिवसांच्या सरासरीच्या खाली गेला",
   "signalAlertsTitle": "तांत्रिक संकेत सूचना",
   "signalAlertsSubtitle": "दिवसातून एकदा, जेव्हा तुम्ही फॉलो करत असलेला स्टॉक ओव्हरसोल्ड किंवा ओव्हरबॉट (RSI) होतो, किंवा त्याची किंमत २०० दिवसांची सरासरी ओलांडते.",
-  "signalAlertsNotification": "तांत्रिक संकेत"
+  "signalAlertsNotification": "तांत्रिक संकेत",
+  "glossaryPageTitle": "शब्दकोश",
+  "glossaryPageSubtitle": "P/E पासून RSI पर्यंत, अ‍ॅप दाखवणाऱ्या प्रत्येक आकड्याचे सोपे स्पष्टीकरण",
+  "glossarySearchHint": "शब्दकोशात शोधा"
 }

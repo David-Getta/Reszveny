@@ -2744,4 +2744,14 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Imenyithia cia tekiniki';
+
+  @override
+  String get glossaryPageTitle => 'Mataaro ma ciugo';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Ũtaarĩria mũhũthũ wa namba ciothe iria app ĩyo yonanagia, kuuma P/E nginya RSI';
+
+  @override
+  String get glossarySearchHint => 'Caria thĩinĩ wa mataaro';
 }

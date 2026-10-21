@@ -2671,4 +2671,13 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => '기술적 신호';
+
+  @override
+  String get glossaryPageTitle => '용어집';
+
+  @override
+  String get glossaryPageSubtitle => '앱에 표시되는 모든 수치를 쉽게 설명, P/E부터 RSI까지';
+
+  @override
+  String get glossarySearchHint => '용어집 검색';
 }

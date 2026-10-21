@@ -2659,4 +2659,13 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'テクニカルシグナル';
+
+  @override
+  String get glossaryPageTitle => '用語集';
+
+  @override
+  String get glossaryPageSubtitle => 'アプリに表示される数値をやさしく解説、P/EからRSIまで';
+
+  @override
+  String get glossarySearchHint => '用語集を検索';
 }

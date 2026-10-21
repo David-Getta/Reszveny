@@ -727,5 +727,8 @@
   "signalCrossedBelow": "ትሕቲ ማእከላይ ናይ 200 መዓልቲ ወሪዱ",
   "signalAlertsTitle": "መፍለጥታት ቴክኒካዊ ምልክታት",
   "signalAlertsSubtitle": "ኣብ መዓልቲ ሓደ ግዜ፣ ትከታተሎ ኣክስዮን ብዙሕ ተሸይጡ ወይ ብዙሕ ተዓዲጉ (RSI) ምስ ዝኸውን፣ ወይ ዋጋኡ ማእከላይ ናይ 200 መዓልቲ ምስ ዝሰግር።",
-  "signalAlertsNotification": "ቴክኒካዊ ምልክታት"
+  "signalAlertsNotification": "ቴክኒካዊ ምልክታት",
+  "glossaryPageTitle": "መዝገበ ቃላት",
+  "glossaryPageSubtitle": "ካብ P/E ክሳብ RSI፣ እቲ መተግበሪ ዘርእዮ ነፍሲ ወከፍ ቁጽሪ ቀሊል መግለጺ",
+  "glossarySearchHint": "ኣብ መዝገበ ቃላት ድለ"
 }

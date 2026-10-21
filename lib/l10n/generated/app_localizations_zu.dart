@@ -2753,4 +2753,14 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Izimpawu zobuchwepheshe';
+
+  @override
+  String get glossaryPageTitle => 'Uhlu lwamagama';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Izincazelo ezilula zazo zonke izinombolo i-app ezibonisayo, kusukela ku-P/E kuya ku-RSI';
+
+  @override
+  String get glossarySearchHint => 'Sesha ohlwini lwamagama';
 }

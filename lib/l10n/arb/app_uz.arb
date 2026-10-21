@@ -727,5 +727,8 @@
   "signalCrossedBelow": "200 kunlik o'rtachadan pastga tushdi",
   "signalAlertsTitle": "Texnik signal bildirishnomalari",
   "signalAlertsSubtitle": "Kuniga bir marta, siz kuzatayotgan aksiya haddan ortiq sotilgan yoki haddan ortiq sotib olingan (RSI) holatga kirganda, yoki uning narxi 200 kunlik o'rtachani kesib o'tganda.",
-  "signalAlertsNotification": "Texnik signallar"
+  "signalAlertsNotification": "Texnik signallar",
+  "glossaryPageTitle": "Atamalar lug‘ati",
+  "glossaryPageSubtitle": "Ilova ko‘rsatadigan har bir ko‘rsatkichning sodda izohi, P/E dan RSI gacha",
+  "glossarySearchHint": "Lug‘atdan qidirish"
 }

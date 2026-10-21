@@ -2743,4 +2743,14 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Tehniki signallar';
+
+  @override
+  String get glossaryPageTitle => 'Sözlük';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Programmanyň görkezýän her sanynyň ýönekeý düşündirişi, P/E-den RSI-e çenli';
+
+  @override
+  String get glossarySearchHint => 'Sözlükde gözle';
 }

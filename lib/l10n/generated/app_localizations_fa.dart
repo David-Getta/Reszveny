@@ -2738,4 +2738,14 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'سیگنال‌های تکنیکال';
+
+  @override
+  String get glossaryPageTitle => 'واژه‌نامه';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'توضیح ساده هر عددی که برنامه نشان می‌دهد، از P/E تا RSI';
+
+  @override
+  String get glossarySearchHint => 'جستجو در واژه‌نامه';
 }

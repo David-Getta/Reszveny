@@ -727,5 +727,8 @@
   "signalCrossedBelow": "kaloi nën mesataren 200-ditore",
   "signalAlertsTitle": "Njoftime për sinjale teknike",
   "signalAlertsSubtitle": "Një herë në ditë, kur një aksion që ndiqni bëhet e mbishitur ose e mbiblerë (RSI), ose çmimi i tij kalon mesataren 200-ditore.",
-  "signalAlertsNotification": "Sinjale teknike"
+  "signalAlertsNotification": "Sinjale teknike",
+  "glossaryPageTitle": "Fjalorth",
+  "glossaryPageSubtitle": "Shpjegime të thjeshta për çdo shifër që tregon aplikacioni, nga P/E deri te RSI",
+  "glossarySearchHint": "Kërko në fjalorth"
 }

@@ -2747,4 +2747,14 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Señales técnicas';
+
+  @override
+  String get glossaryPageTitle => 'Glosario';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Explicaciones sencillas de cada cifra que muestra la app, del P/E al RSI';
+
+  @override
+  String get glossarySearchHint => 'Buscar en el glosario';
 }

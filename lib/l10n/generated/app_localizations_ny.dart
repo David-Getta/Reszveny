@@ -2749,4 +2749,14 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Zizindikiro zaukadaulo';
+
+  @override
+  String get glossaryPageTitle => 'Mndandanda wa mawu';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Mafotokozedwe osavuta a nambala iliyonse yomwe pulogalamuyi imasonyeza, kuyambira P/E mpaka RSI';
+
+  @override
+  String get glossarySearchHint => 'Sakani mu mndandanda wa mawu';
 }

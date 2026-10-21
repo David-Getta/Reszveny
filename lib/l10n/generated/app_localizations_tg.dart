@@ -2744,4 +2744,14 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Сигналҳои техникӣ';
+
+  @override
+  String get glossaryPageTitle => 'Луғати истилоҳот';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Шарҳи оддии ҳар як нишондиҳандаи барнома, аз P/E то RSI';
+
+  @override
+  String get glossarySearchHint => 'Ҷустуҷӯ дар луғат';
 }

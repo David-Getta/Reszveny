@@ -2737,4 +2737,14 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Màndargay teknik';
+
+  @override
+  String get glossaryPageTitle => 'Limu baat yi';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Leeral yu yomb ci lim bu nekk bi app bi di wone, dale ko ci P/E ba ci RSI';
+
+  @override
+  String get glossarySearchHint => 'Seet ci limu baat yi';
 }

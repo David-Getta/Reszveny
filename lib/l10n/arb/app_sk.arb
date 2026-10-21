@@ -727,5 +727,8 @@
   "signalCrossedBelow": "prerazila pod 200-dňový priemer",
   "signalAlertsTitle": "Upozornenia na technické signály",
   "signalAlertsSubtitle": "Raz denne, keď sa akcia, ktorú sledujete, stane prepredanou alebo prekúpenou (RSI), alebo jej cena pretne 200-dňový priemer.",
-  "signalAlertsNotification": "Technické signály"
+  "signalAlertsNotification": "Technické signály",
+  "glossaryPageTitle": "Slovník pojmov",
+  "glossaryPageSubtitle": "Jednoduché vysvetlenia každého čísla v aplikácii, od P/E po RSI",
+  "glossarySearchHint": "Hľadať v slovníku"
 }

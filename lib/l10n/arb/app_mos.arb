@@ -727,5 +727,8 @@
   "signalCrossedBelow": "sig n lʋɩ rasem 200 pʋgẽ sũur-sũurã tẽngr",
   "signalAlertsTitle": "Tekniik bãnd rãmb kibay",
   "signalAlertsSubtitle": "Daar fãa vugr bala, f sẽn gũusd tʋʋm-pʋg ning b koos-a wʋsg tɩ looge bɩ b da-a wʋsg tɩ looge (RSI), bɩ a ligdã sẽn pɩʋʋg rasem 200 pʋgẽ sũur-sũurã.",
-  "signalAlertsNotification": "Tekniik bãnd rãmba"
+  "signalAlertsNotification": "Tekniik bãnd rãmba",
+  "glossaryPageTitle": "Gom-biis võor",
+  "glossaryPageSubtitle": "Wilgr sẽn yaa nana ne nimbr fãa ãpl wã sẽn wilgd, sẽn sɩng ne P/E n tãag RSI",
+  "glossarySearchHint": "Bao gom-biis võor pʋgẽ"
 }

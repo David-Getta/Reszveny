@@ -2741,4 +2741,14 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Tɛknikal nsɛnkyerɛnne';
+
+  @override
+  String get glossaryPageTitle => 'Nsɛmfua nkyerɛase';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Nkyerɛkyerɛmu a ɛyɛ mmerɛw fa akontaabu biara a app no kyerɛ ho, fi P/E kosi RSI';
+
+  @override
+  String get glossarySearchHint => 'Hwehwɛ wɔ nsɛmfua nkyerɛase no mu';
 }

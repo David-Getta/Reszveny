@@ -2790,4 +2790,14 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Технички сигнали';
+
+  @override
+  String get glossaryPageTitle => 'Појмовник';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Једноставна објашњења свих бројки које апликација приказује, од P/E до RSI';
+
+  @override
+  String get glossarySearchHint => 'Претражи појмовник';
 }

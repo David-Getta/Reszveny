@@ -2760,4 +2760,14 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Matšhupetšo a setegeniki';
+
+  @override
+  String get glossaryPageTitle => 'Lenaneo la mareo';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Ditlhaloso tše bonolo tša palo ye nngwe le ye nngwe yeo app e e bontšhago, go tloga go P/E go fihla go RSI';
+
+  @override
+  String get glossarySearchHint => 'Nyaka ka lenaneong la mareo';
 }

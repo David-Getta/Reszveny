@@ -727,5 +727,8 @@
   "signalCrossedBelow": "a 200 napos átlaga alá került",
   "signalAlertsTitle": "Technikai jelzés-értesítés",
   "signalAlertsSubtitle": "Naponta egyszer, ha egy figyelt részvény RSI-je túladott vagy túlvett lesz, vagy az ára átlépi a 200 napos átlagát.",
-  "signalAlertsNotification": "Technikai jelzések"
+  "signalAlertsNotification": "Technikai jelzések",
+  "glossaryPageTitle": "Fogalomtár",
+  "glossaryPageSubtitle": "Közérthető magyarázat az app minden mutatójához, a P/E-től az RSI-ig",
+  "glossarySearchHint": "Keresés a fogalomtárban"
 }

@@ -2743,4 +2743,14 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Tekniset signaalit';
+
+  @override
+  String get glossaryPageTitle => 'Sanasto';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Selkeät selitykset jokaiselle sovelluksen luvulle, P/E:stä RSI:hin';
+
+  @override
+  String get glossarySearchHint => 'Hae sanastosta';
 }

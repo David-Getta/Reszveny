@@ -2749,4 +2749,14 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Mga technical signal';
+
+  @override
+  String get glossaryPageTitle => 'Glosaryo';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Simpleng paliwanag sa bawat numerong ipinapakita ng app, mula P/E hanggang RSI';
+
+  @override
+  String get glossarySearchHint => 'Maghanap sa glosaryo';
 }

@@ -727,5 +727,8 @@
   "signalCrossedBelow": "yadutsa pansi pa avareji ya masiku 200",
   "signalAlertsTitle": "Zidziwitso za zizindikiro zaukadaulo",
   "signalAlertsSubtitle": "Kamodzi patsiku, pamene sitoko yomwe mukutsatira yagulitsidwa kwambiri kapena yagulidwa kwambiri (RSI), kapena mtengo wake wadutsa avareji ya masiku 200.",
-  "signalAlertsNotification": "Zizindikiro zaukadaulo"
+  "signalAlertsNotification": "Zizindikiro zaukadaulo",
+  "glossaryPageTitle": "Mndandanda wa mawu",
+  "glossaryPageSubtitle": "Mafotokozedwe osavuta a nambala iliyonse yomwe pulogalamuyi imasonyeza, kuyambira P/E mpaka RSI",
+  "glossarySearchHint": "Sakani mu mndandanda wa mawu"
 }

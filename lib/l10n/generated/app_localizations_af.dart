@@ -2745,4 +2745,14 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Tegniese seine';
+
+  @override
+  String get glossaryPageTitle => 'Woordelys';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Eenvoudige verduidelikings van elke syfer wat die app toon, van P/E tot RSI';
+
+  @override
+  String get glossarySearchHint => 'Deursoek die woordelys';
 }

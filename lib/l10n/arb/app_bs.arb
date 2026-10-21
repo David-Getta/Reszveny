@@ -727,5 +727,8 @@
   "signalCrossedBelow": "probio ispod 200-dnevnog prosjeka",
   "signalAlertsTitle": "Obavještenja o tehničkim signalima",
   "signalAlertsSubtitle": "Jednom dnevno, kada dionica koju pratite postane preprodana ili prekupljena (RSI), ili kada njena cijena pređe 200-dnevni prosjek.",
-  "signalAlertsNotification": "Tehnički signali"
+  "signalAlertsNotification": "Tehnički signali",
+  "glossaryPageTitle": "Pojmovnik",
+  "glossaryPageSubtitle": "Jednostavna objašnjenja svake brojke u aplikaciji, od P/E do RSI",
+  "glossarySearchHint": "Pretraži pojmovnik"
 }

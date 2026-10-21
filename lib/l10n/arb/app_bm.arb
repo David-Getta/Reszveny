@@ -727,5 +727,8 @@
   "signalCrossedBelow": "a jiginna tile 200 cɛmancɛ jukɔrɔ",
   "signalAlertsTitle": "Tekiniki taamasiyɛnw kunnafoniw",
   "signalAlertsSubtitle": "Siɲɛ kelen tile kɔnɔ, ni i bɛ aksiyɔn min kɔlɔsi, a feerela ka tɛmɛ walima a sanna ka tɛmɛ (RSI), walima n’a sɔngɔ tɛmɛna tile 200 cɛmancɛ kan.",
-  "signalAlertsNotification": "Tekiniki taamasiyɛnw"
+  "signalAlertsNotification": "Tekiniki taamasiyɛnw",
+  "glossaryPageTitle": "Daɲɛgafe",
+  "glossaryPageSubtitle": "Jatew bɛɛ ɲɛfɔli nɔgɔman minnu bɛ jira app kɔnɔ, k'a ta P/E la ka se RSI ma",
+  "glossarySearchHint": "Ɲini daɲɛgafe kɔnɔ"
 }

@@ -727,5 +727,8 @@
   "signalCrossedBelow": "премина под 200-дневниот просек",
   "signalAlertsTitle": "Известувања за технички сигнали",
   "signalAlertsSubtitle": "Еднаш дневно, кога акција што ја следите ќе стане препродадена или прекупена (RSI), или нејзината цена ќе го пресече 200-дневниот просек.",
-  "signalAlertsNotification": "Технички сигнали"
+  "signalAlertsNotification": "Технички сигнали",
+  "glossaryPageTitle": "Поимник",
+  "glossaryPageSubtitle": "Едноставни објаснувања за секоја бројка што ја прикажува апликацијата, од P/E до RSI",
+  "glossarySearchHint": "Пребарај во поимникот"
 }

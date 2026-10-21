@@ -727,5 +727,8 @@
   "signalCrossedBelow": "yo me kulumuka na nsi ya kati-kati ya bilumbu 200",
   "signalAlertsTitle": "Nkebisu ya bidimbu ya teknike",
   "signalAlertsSubtitle": "Mbala mosi na kilumbu, ntangu action yina nge ke landaka bo tekaka yo mingi to bo sumbaka yo mingi (RSI), to ntalu na yo me sabuka kati-kati ya bilumbu 200.",
-  "signalAlertsNotification": "Bidimbu ya teknike"
+  "signalAlertsNotification": "Bidimbu ya teknike",
+  "glossaryPageTitle": "Dikisionere ya bangogo",
+  "glossaryPageSubtitle": "Bansangu ya pete sambu na konso ntalu yina app ke songa, banda na P/E tii na RSI",
+  "glossarySearchHint": "Sosa na dikisionere"
 }

@@ -2751,4 +2751,14 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Τεχνικά σήματα';
+
+  @override
+  String get glossaryPageTitle => 'Γλωσσάρι';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Απλές επεξηγήσεις για κάθε μέγεθος της εφαρμογής, από το P/E έως τον RSI';
+
+  @override
+  String get glossarySearchHint => 'Αναζήτηση στο γλωσσάρι';
 }

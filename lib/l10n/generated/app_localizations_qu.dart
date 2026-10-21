@@ -2757,4 +2757,14 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Tecnico señalkuna';
+
+  @override
+  String get glossaryPageTitle => 'Rimaykunapa sutichaynin';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Appa rikuchisqan sapa yupaypa sasa mana kaq sutichaynin, P/E-manta RSI-kama';
+
+  @override
+  String get glossarySearchHint => 'Rimaykunapa sutichayninpi maskay';
 }

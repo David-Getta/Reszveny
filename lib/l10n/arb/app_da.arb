@@ -727,5 +727,8 @@
   "signalCrossedBelow": "krydsede under sit 200-dages gennemsnit",
   "signalAlertsTitle": "Notifikationer om tekniske signaler",
   "signalAlertsSubtitle": "Én gang om dagen, når en aktie, du følger, bliver oversolgt eller overkøbt (RSI), eller dens kurs krydser 200-dages gennemsnittet.",
-  "signalAlertsNotification": "Tekniske signaler"
+  "signalAlertsNotification": "Tekniske signaler",
+  "glossaryPageTitle": "Ordliste",
+  "glossaryPageSubtitle": "Enkle forklaringer på hvert tal, appen viser, fra P/E til RSI",
+  "glossarySearchHint": "Søg i ordlisten"
 }

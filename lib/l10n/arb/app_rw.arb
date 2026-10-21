@@ -727,5 +727,8 @@
   "signalCrossedBelow": "yamanutse munsi y'impuzandengo y'iminsi 200",
   "signalAlertsTitle": "Imenyesha ry'ibimenyetso bya tekiniki",
   "signalAlertsSubtitle": "Rimwe ku munsi, iyo umugabane ukurikirana wagurishijwe cyane cyangwa waguzwe cyane (RSI), cyangwa igiciro cyawo kirenze impuzandengo y'iminsi 200.",
-  "signalAlertsNotification": "Ibimenyetso bya tekiniki"
+  "signalAlertsNotification": "Ibimenyetso bya tekiniki",
+  "glossaryPageTitle": "Ibisobanuro by'amagambo",
+  "glossaryPageSubtitle": "Ibisobanuro byoroshye by'imibare yose porogaramu yerekana, kuva ku P/E kugeza ku RSI",
+  "glossarySearchHint": "Shakisha mu bisobanuro by'amagambo"
 }

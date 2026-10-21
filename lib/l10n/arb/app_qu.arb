@@ -727,5 +727,8 @@
   "signalCrossedBelow": "200 p'unchaw chawpi uranman urayrirqan",
   "signalAlertsTitle": "Tecnico señalkunamanta willaykuna",
   "signalAlertsSubtitle": "Sapa p'unchaw huk kuti, qhawasqayki acción nishu vendesqa utaq nishu rantisqa (RSI) kaptin, utaq chaninnin 200 p'unchaw chawpita chimpaptin.",
-  "signalAlertsNotification": "Tecnico señalkuna"
+  "signalAlertsNotification": "Tecnico señalkuna",
+  "glossaryPageTitle": "Rimaykunapa sutichaynin",
+  "glossaryPageSubtitle": "Appa rikuchisqan sapa yupaypa sasa mana kaq sutichaynin, P/E-manta RSI-kama",
+  "glossarySearchHint": "Rimaykunapa sutichayninpi maskay"
 }

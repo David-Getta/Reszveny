@@ -727,5 +727,8 @@
   "signalCrossedBelow": "ከ200 ቀን አማካዩ በታች አቋርጧል",
   "signalAlertsTitle": "የቴክኒካል ምልክት ማሳወቂያዎች",
   "signalAlertsSubtitle": "በቀን አንድ ጊዜ፣ የሚከታተሉት አክሲዮን ከመጠን በላይ የተሸጠ ወይም ከመጠን በላይ የተገዛ ሲሆን (RSI)፣ ወይም ዋጋው የ200 ቀን አማካዩን ሲያቋርጥ።",
-  "signalAlertsNotification": "የቴክኒካል ምልክቶች"
+  "signalAlertsNotification": "የቴክኒካል ምልክቶች",
+  "glossaryPageTitle": "መዝገበ ቃላት",
+  "glossaryPageSubtitle": "መተግበሪያው ከሚያሳየው ከP/E እስከ RSI ያለ እያንዳንዱ አኃዝ ቀላል ማብራሪያ",
+  "glossarySearchHint": "በመዝገበ ቃላቱ ውስጥ ይፈልጉ"
 }

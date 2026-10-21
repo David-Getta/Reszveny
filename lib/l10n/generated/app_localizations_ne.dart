@@ -2741,4 +2741,14 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'प्राविधिक संकेतहरू';
+
+  @override
+  String get glossaryPageTitle => 'शब्दावली';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'P/E देखि RSI सम्म, एपले देखाउने हरेक अङ्कको सरल व्याख्या';
+
+  @override
+  String get glossarySearchHint => 'शब्दावलीमा खोज्नुहोस्';
 }

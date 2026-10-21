@@ -727,5 +727,8 @@
   "signalCrossedBelow": "له ۲۰۰ ورځني اوسط ښکته تېر شو",
   "signalAlertsTitle": "د تخنیکي سیګنالونو خبرتیاوې",
   "signalAlertsSubtitle": "په ورځ یو ځل، کله چې ستاسو تعقیب شوی سټاک ډېر پلورل شوی یا ډېر پېرودل شوی (RSI) شي، یا بیه یې له ۲۰۰ ورځني اوسط تېره شي.",
-  "signalAlertsNotification": "تخنیکي سیګنالونه"
+  "signalAlertsNotification": "تخنیکي سیګنالونه",
+  "glossaryPageTitle": "د اصطلاحاتو لړلیک",
+  "glossaryPageSubtitle": "د اپ د هر شمېر ساده تشریح، له P/E څخه تر RSI پورې",
+  "glossarySearchHint": "په اصطلاحاتو کې لټون"
 }

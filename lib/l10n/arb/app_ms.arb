@@ -727,5 +727,8 @@
   "signalCrossedBelow": "menembusi ke bawah purata 200 hari",
   "signalAlertsTitle": "Pemberitahuan isyarat teknikal",
   "signalAlertsSubtitle": "Sekali sehari, apabila saham yang anda ikuti menjadi terlebih jual atau terlebih beli (RSI), atau harganya melintasi purata 200 hari.",
-  "signalAlertsNotification": "Isyarat teknikal"
+  "signalAlertsNotification": "Isyarat teknikal",
+  "glossaryPageTitle": "Glosari",
+  "glossaryPageSubtitle": "Penjelasan mudah bagi setiap angka yang dipaparkan apl, daripada P/E hingga RSI",
+  "glossarySearchHint": "Cari dalam glosari"
 }

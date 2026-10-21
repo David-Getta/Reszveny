@@ -2754,4 +2754,14 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'ടെക്നിക്കൽ സിഗ്നലുകൾ';
+
+  @override
+  String get glossaryPageTitle => 'പദാവലി';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'P/E മുതൽ RSI വരെ, ആപ്പ് കാണിക്കുന്ന ഓരോ കണക്കിന്റെയും ലളിതമായ വിശദീകരണങ്ങൾ';
+
+  @override
+  String get glossarySearchHint => 'പദാവലിയിൽ തിരയുക';
 }

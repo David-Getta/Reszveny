@@ -2742,4 +2742,14 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'तांत्रिक संकेत';
+
+  @override
+  String get glossaryPageTitle => 'शब्दकोश';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'P/E पासून RSI पर्यंत, अ‍ॅप दाखवणाऱ्या प्रत्येक आकड्याचे सोपे स्पष्टीकरण';
+
+  @override
+  String get glossarySearchHint => 'शब्दकोशात शोधा';
 }

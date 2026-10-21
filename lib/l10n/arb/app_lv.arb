@@ -727,5 +727,8 @@
   "signalCrossedBelow": "nokrita zem 200 dienu vidējā",
   "signalAlertsTitle": "Paziņojumi par tehniskajiem signāliem",
   "signalAlertsSubtitle": "Reizi dienā, kad akcija, kurai tu seko, kļūst pārpārdota vai pārpirkta (RSI), vai tās cena šķērso 200 dienu vidējo.",
-  "signalAlertsNotification": "Tehniskie signāli"
+  "signalAlertsNotification": "Tehniskie signāli",
+  "glossaryPageTitle": "Terminu vārdnīca",
+  "glossaryPageSubtitle": "Vienkārši skaidrojumi katram lietotnes rādītājam, no P/E līdz RSI",
+  "glossarySearchHint": "Meklēt vārdnīcā"
 }

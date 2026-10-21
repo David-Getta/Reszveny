@@ -2761,4 +2761,14 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Mikombiso ya thekiniki';
+
+  @override
+  String get glossaryPageTitle => 'Nxaxamelo wa marito';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Tinhlamuselo to olova ta nomboro yin\'wana ni yin\'wana leyi app yi yi kombisaka, ku suka eka P/E ku ya eka RSI';
+
+  @override
+  String get glossarySearchHint => 'Lava eka nxaxamelo wa marito';
 }

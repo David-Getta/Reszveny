@@ -727,5 +727,8 @@
   "signalCrossedBelow": "200 दिनक औसतसँ नीचाँ गेल",
   "signalAlertsTitle": "तकनीकी संकेत सूचना",
   "signalAlertsSubtitle": "दिनमे एक बेर, जखन अहाँ जे स्टॉक फॉलो करैत छी से ओवरसोल्ड वा ओवरबॉट (RSI) भऽ जाए, वा ओकर दाम 200 दिनक औसत पार करए।",
-  "signalAlertsNotification": "तकनीकी संकेत"
+  "signalAlertsNotification": "तकनीकी संकेत",
+  "glossaryPageTitle": "शब्दावली",
+  "glossaryPageSubtitle": "ऐपमे देखाओल हरेक आँकड़ाक सरल व्याख्या, P/E सँ RSI धरि",
+  "glossarySearchHint": "शब्दावलीमे खोजू"
 }

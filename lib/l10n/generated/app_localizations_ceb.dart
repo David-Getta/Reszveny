@@ -2753,4 +2753,14 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Mga teknikal nga signal';
+
+  @override
+  String get glossaryPageTitle => 'Glosaryo';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Yano nga mga pagpasabot sa matag numero nga gipakita sa app, gikan sa P/E hangtod RSI';
+
+  @override
+  String get glossarySearchHint => 'Pangitaa sa glosaryo';
 }

@@ -2744,4 +2744,14 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Sînyalên teknîkî';
+
+  @override
+  String get glossaryPageTitle => 'Ferhengok';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Ravekirinên hêsan ên her hejmara ku sepan nîşan dide, ji P/E heta RSI';
+
+  @override
+  String get glossarySearchHint => 'Di ferhengokê de bigere';
 }

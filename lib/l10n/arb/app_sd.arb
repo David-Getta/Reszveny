@@ -727,5 +727,8 @@
   "signalCrossedBelow": "200 ڏينهن جي سراسري هيٺ ويو",
   "signalAlertsTitle": "ٽيڪنيڪل سگنل نوٽيفڪيشن",
   "signalAlertsSubtitle": "ڏينهن ۾ هڪ دفعو، جڏهن توهان جو فالو ڪيل اسٽاڪ اوور سولڊ يا اوور بوٽ (RSI) ٿئي، يا ان جي قيمت 200 ڏينهن جي سراسري کي پار ڪري.",
-  "signalAlertsNotification": "ٽيڪنيڪل سگنل"
+  "signalAlertsNotification": "ٽيڪنيڪل سگنل",
+  "glossaryPageTitle": "لغت",
+  "glossaryPageSubtitle": "P/E کان RSI تائين، ايپ ۾ ڏيکاريل هر انگ جي سادي وضاحت",
+  "glossarySearchHint": "لغت ۾ ڳوليو"
 }

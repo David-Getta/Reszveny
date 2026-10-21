@@ -2747,4 +2747,14 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Technikai jelzések';
+
+  @override
+  String get glossaryPageTitle => 'Fogalomtár';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Közérthető magyarázat az app minden mutatójához, a P/E-től az RSI-ig';
+
+  @override
+  String get glossarySearchHint => 'Keresés a fogalomtárban';
 }

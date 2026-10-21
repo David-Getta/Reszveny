@@ -2731,4 +2731,14 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'ལག་རྩལ་བརྡ་རྟགས།';
+
+  @override
+  String get glossaryPageTitle => 'ཐ་སྙད་རེའུ་མིག';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'མཉེན་ཆས་ནང་སྟོན་པའི་གྲངས་ཀ་རེ་རེའི་འགྲེལ་བཤད་ལྷུག་པོ། P/E ནས་ RSI བར།';
+
+  @override
+  String get glossarySearchHint => 'ཐ་སྙད་རེའུ་མིག་ནང་འཚོལ།';
 }

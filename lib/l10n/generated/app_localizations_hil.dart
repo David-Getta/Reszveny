@@ -2760,4 +2760,14 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Mga teknikal nga signal';
+
+  @override
+  String get glossaryPageTitle => 'Glosaryo';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Simple nga mga paathag sa kada numero nga ginapakita sang app, halin sa P/E tubtob RSI';
+
+  @override
+  String get glossarySearchHint => 'Pangitaa sa glosaryo';
 }

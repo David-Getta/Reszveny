@@ -727,5 +727,8 @@
   "signalCrossedBelow": "ekiti na nse ya katikati ya mikolo 200",
   "signalAlertsTitle": "Liyebisi ya bilembo ya tekinike",
   "signalAlertsSubtitle": "Mbala moko na mokolo, ntango action oyo ozali kolanda etekami mingi to esombami mingi (RSI), to ntalo na yango eleki katikati ya mikolo 200.",
-  "signalAlertsNotification": "Bilembo ya tekinike"
+  "signalAlertsNotification": "Bilembo ya tekinike",
+  "glossaryPageTitle": "Ndimbola ya maloba",
+  "glossaryPageSubtitle": "Ndimbola ya pete ya motángo nyonso oyo app ezali kolakisa, banda na P/E tii na RSI",
+  "glossarySearchHint": "Luka na ndimbola ya maloba"
 }

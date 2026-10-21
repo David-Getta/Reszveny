@@ -2749,4 +2749,14 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Sinjale teknike';
+
+  @override
+  String get glossaryPageTitle => 'Fjalorth';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Shpjegime të thjeshta për çdo shifër që tregon aplikacioni, nga P/E deri te RSI';
+
+  @override
+  String get glossarySearchHint => 'Kërko në fjalorth';
 }

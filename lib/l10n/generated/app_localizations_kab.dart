@@ -2740,4 +2740,14 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Izmulen itiknikanen';
+
+  @override
+  String get glossaryPageTitle => 'Amawal';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Isegziyen ifessasen n yal uṭṭun i d-yeskanay usnas, seg P/E ɣer RSI';
+
+  @override
+  String get glossarySearchHint => 'Nadi deg umawal';
 }

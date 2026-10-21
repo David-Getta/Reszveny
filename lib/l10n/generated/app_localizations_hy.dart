@@ -2751,4 +2751,14 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Տեխնիկական ազդանշաններ';
+
+  @override
+  String get glossaryPageTitle => 'Բառարան';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Հավելվածի ցույց տված յուրաքանչյուր ցուցանիշի պարզ բացատրություն՝ P/E-ից մինչև RSI';
+
+  @override
+  String get glossarySearchHint => 'Փնտրել բառարանում';
 }

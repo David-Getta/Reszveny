@@ -2746,4 +2746,14 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Technische signalen';
+
+  @override
+  String get glossaryPageTitle => 'Begrippenlijst';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Eenvoudige uitleg van elk cijfer dat de app toont, van P/E tot RSI';
+
+  @override
+  String get glossarySearchHint => 'Zoeken in de begrippenlijst';
 }

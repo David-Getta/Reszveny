@@ -2751,4 +2751,14 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Mallattoolee teeknikaa';
+
+  @override
+  String get glossaryPageTitle => 'Hiika jechootaa';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Ibsa salphaa lakkoofsa hunda appiin agarsiisu, P/E irraa hanga RSI';
+
+  @override
+  String get glossarySearchHint => 'Hiika jechootaa keessa barbaadi';
 }

@@ -727,5 +727,8 @@
   "signalCrossedBelow": "bumaba sa ilalim ng 200-araw na average",
   "signalAlertsTitle": "Mga notification sa technical signal",
   "signalAlertsSubtitle": "Isang beses sa isang araw, kapag ang isang stock na sinusundan mo ay naging oversold o overbought (RSI), o tumawid ang presyo nito sa 200-araw na average nito.",
-  "signalAlertsNotification": "Mga technical signal"
+  "signalAlertsNotification": "Mga technical signal",
+  "glossaryPageTitle": "Glosaryo",
+  "glossaryPageSubtitle": "Simpleng paliwanag sa bawat numerong ipinapakita ng app, mula P/E hanggang RSI",
+  "glossarySearchHint": "Maghanap sa glosaryo"
 }

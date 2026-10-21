@@ -2811,4 +2811,14 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Technické signály';
+
+  @override
+  String get glossaryPageTitle => 'Slovník pojmov';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Jednoduché vysvetlenia každého čísla v aplikácii, od P/E po RSI';
+
+  @override
+  String get glossarySearchHint => 'Hľadať v slovníku';
 }

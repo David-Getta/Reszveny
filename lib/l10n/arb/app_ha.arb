@@ -727,5 +727,8 @@
   "signalCrossedBelow": "ya sauka ƙasa da matsakaicin kwana 200",
   "signalAlertsTitle": "Sanarwar siginar fasaha",
   "signalAlertsSubtitle": "Sau ɗaya a rana, idan wani hannun jari da kake bibiya an sayar fiye da kima ko an saya fiye da kima (RSI), ko farashinsa ya ketare matsakaicin kwana 200.",
-  "signalAlertsNotification": "Siginonin fasaha"
+  "signalAlertsNotification": "Siginonin fasaha",
+  "glossaryPageTitle": "Ƙamus na kalmomi",
+  "glossaryPageSubtitle": "Bayani mai sauƙi kan kowace alkaluma da manhajar ke nunawa, daga P/E har RSI",
+  "glossarySearchHint": "Bincika a cikin ƙamus"
 }

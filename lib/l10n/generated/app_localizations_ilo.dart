@@ -2763,4 +2763,14 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Dagiti teknikal a senial';
+
+  @override
+  String get glossaryPageTitle => 'Glosario';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Simple a panangilawlawag iti tunggal numero nga ipakita ti app, manipud P/E agingga RSI';
+
+  @override
+  String get glossarySearchHint => 'Agbirok iti glosario';
 }

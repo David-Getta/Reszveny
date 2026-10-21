@@ -2752,4 +2752,14 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'தொழில்நுட்பச் சமிக்ஞைகள்';
+
+  @override
+  String get glossaryPageTitle => 'சொற்களஞ்சியம்';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'P/E முதல் RSI வரை, செயலி காட்டும் ஒவ்வொரு எண்ணுக்கும் எளிய விளக்கங்கள்';
+
+  @override
+  String get glossarySearchHint => 'சொற்களஞ்சியத்தில் தேடுங்கள்';
 }

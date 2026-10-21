@@ -2748,4 +2748,14 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Texnik signallar';
+
+  @override
+  String get glossaryPageTitle => 'Atamalar lug‘ati';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Ilova ko‘rsatadigan har bir ko‘rsatkichning sodda izohi, P/E dan RSI gacha';
+
+  @override
+  String get glossarySearchHint => 'Lug‘atdan qidirish';
 }

@@ -727,5 +727,8 @@
   "signalCrossedBelow": "ohasa 200 ára mbytepegua guýpe",
   "signalAlertsTitle": "Marandu señal técnica rehegua",
   "signalAlertsSubtitle": "Peteĩ jey peteĩ árape, peteĩ acción reseguíva oñemuitereíva térã ojejoguaitereíva (RSI) jave, térã hepykue ohasa jave 200 ára mbytepegua.",
-  "signalAlertsNotification": "Señal técnica"
+  "signalAlertsNotification": "Señal técnica",
+  "glossaryPageTitle": "Ñeʼẽryru",
+  "glossaryPageSubtitle": "Ñemyesakã ndahasýiva opaite papapy app ohechaukáva rehe, P/E guive RSI peve",
+  "glossarySearchHint": "Eheka ñeʼẽryrúpe"
 }

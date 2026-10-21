@@ -2740,4 +2740,14 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Siyal teknik';
+
+  @override
+  String get glossaryPageTitle => 'Glosè';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Eksplikasyon senp pou chak chif aplikasyon an montre, soti nan P/E rive nan RSI';
+
+  @override
+  String get glossarySearchHint => 'Chèche nan glosè a';
 }

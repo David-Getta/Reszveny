@@ -727,5 +727,8 @@
   "signalCrossedBelow": "२०० दिने औसतभन्दा तल गयो",
   "signalAlertsTitle": "प्राविधिक संकेत सूचनाहरू",
   "signalAlertsSubtitle": "दिनमा एक पटक, तपाईंले फलो गर्नुभएको स्टक ओभरसोल्ड वा ओभरबट (RSI) हुँदा, वा त्यसको मूल्यले २०० दिने औसत पार गर्दा।",
-  "signalAlertsNotification": "प्राविधिक संकेतहरू"
+  "signalAlertsNotification": "प्राविधिक संकेतहरू",
+  "glossaryPageTitle": "शब्दावली",
+  "glossaryPageSubtitle": "P/E देखि RSI सम्म, एपले देखाउने हरेक अङ्कको सरल व्याख्या",
+  "glossarySearchHint": "शब्दावलीमा खोज्नुहोस्"
 }

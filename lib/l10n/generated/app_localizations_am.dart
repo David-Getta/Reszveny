@@ -2709,4 +2709,14 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'የቴክኒካል ምልክቶች';
+
+  @override
+  String get glossaryPageTitle => 'መዝገበ ቃላት';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'መተግበሪያው ከሚያሳየው ከP/E እስከ RSI ያለ እያንዳንዱ አኃዝ ቀላል ማብራሪያ';
+
+  @override
+  String get glossarySearchHint => 'በመዝገበ ቃላቱ ውስጥ ይፈልጉ';
 }

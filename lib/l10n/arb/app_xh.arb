@@ -727,5 +727,8 @@
   "signalCrossedBelow": "inqumle ngaphantsi komndilili weentsuku ezingama-200",
   "signalAlertsTitle": "Izaziso zemiqondiso yobuchwepheshe",
   "signalAlertsSubtitle": "Kanye ngosuku, xa isabelo osilandelayo sithengisiwe ngokugqithisileyo okanye sithengwe ngokugqithisileyo (RSI), okanye ixabiso laso linqumla umndilili weentsuku ezingama-200.",
-  "signalAlertsNotification": "Imiqondiso yobuchwepheshe"
+  "signalAlertsNotification": "Imiqondiso yobuchwepheshe",
+  "glossaryPageTitle": "Uluhlu lwamagama",
+  "glossaryPageSubtitle": "Iingcaciso ezilula zalo lonke inani eliboniswa yi-app, ukusuka ku-P/E ukuya ku-RSI",
+  "glossarySearchHint": "Khangela kuluhlu lwamagama"
 }

@@ -727,5 +727,8 @@
   "signalCrossedBelow": "пресече 200-дневната средна надолу",
   "signalAlertsTitle": "Известия за технически сигнали",
   "signalAlertsSubtitle": "Веднъж дневно, когато акция, която следите, стане свръхпродадена или свръхкупена (RSI), или цената ѝ пресече 200-дневната средна.",
-  "signalAlertsNotification": "Технически сигнали"
+  "signalAlertsNotification": "Технически сигнали",
+  "glossaryPageTitle": "Речник",
+  "glossaryPageSubtitle": "Прости обяснения на всеки показател в приложението, от P/E до RSI",
+  "glossarySearchHint": "Търсене в речника"
 }

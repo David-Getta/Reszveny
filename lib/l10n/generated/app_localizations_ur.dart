@@ -2742,4 +2742,14 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'تکنیکی سگنل';
+
+  @override
+  String get glossaryPageTitle => 'لغت';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'P/E سے RSI تک، ایپ میں دکھائے گئے ہر اعداد و شمار کی آسان وضاحت';
+
+  @override
+  String get glossarySearchHint => 'لغت میں تلاش کریں';
 }

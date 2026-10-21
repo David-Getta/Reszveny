@@ -2738,4 +2738,14 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Sinyal teknikal';
+
+  @override
+  String get glossaryPageTitle => 'Glosarium';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Penjelasan sederhana setiap angka yang ditampilkan aplikasi, dari P/E hingga RSI';
+
+  @override
+  String get glossarySearchHint => 'Cari di glosarium';
 }

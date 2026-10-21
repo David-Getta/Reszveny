@@ -2808,4 +2808,14 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Technické signály';
+
+  @override
+  String get glossaryPageTitle => 'Slovníček';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Srozumitelné vysvětlení každého údaje v aplikaci, od P/E po RSI';
+
+  @override
+  String get glossarySearchHint => 'Hledat ve slovníčku';
 }

@@ -2753,4 +2753,14 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Bilembo ya tekinike';
+
+  @override
+  String get glossaryPageTitle => 'Ndimbola ya maloba';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Ndimbola ya pete ya motángo nyonso oyo app ezali kolakisa, banda na P/E tii na RSI';
+
+  @override
+  String get glossarySearchHint => 'Luka na ndimbola ya maloba';
 }

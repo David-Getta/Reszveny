@@ -727,5 +727,8 @@
   "signalCrossedBelow": "nembus ka handapeun rata-rata 200 poé",
   "signalAlertsTitle": "Béwara sinyal téknis",
   "signalAlertsSubtitle": "Sakali sapoé, nalika saham anu anjeun tuturkeun jadi kaleuwihan dijual atanapi kaleuwihan dibeuli (RSI), atanapi hargana meuntas rata-rata 200 poé.",
-  "signalAlertsNotification": "Sinyal téknis"
+  "signalAlertsNotification": "Sinyal téknis",
+  "glossaryPageTitle": "Daptar istilah",
+  "glossaryPageSubtitle": "Katerangan basajan unggal angka anu dipidangkeun aplikasi, ti P/E dugi ka RSI",
+  "glossarySearchHint": "Paluruh dina daptar istilah"
 }

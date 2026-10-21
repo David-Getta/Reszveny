@@ -727,5 +727,8 @@
   "signalCrossedBelow": "cruzou por baixo da súa media de 200 días",
   "signalAlertsTitle": "Notificacións de sinais técnicos",
   "signalAlertsSubtitle": "Unha vez ao día, cando unha acción que segues pasa a estar sobrevendida ou sobrecomprada (RSI), ou o seu prezo cruza a media de 200 días.",
-  "signalAlertsNotification": "Sinais técnicos"
+  "signalAlertsNotification": "Sinais técnicos",
+  "glossaryPageTitle": "Glosario",
+  "glossaryPageSubtitle": "Explicacións sinxelas de cada cifra que mostra a app, do P/E ao RSI",
+  "glossarySearchHint": "Buscar no glosario"
 }

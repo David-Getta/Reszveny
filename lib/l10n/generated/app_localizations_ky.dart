@@ -2746,4 +2746,14 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Техникалык сигналдар';
+
+  @override
+  String get glossaryPageTitle => 'Глоссарий';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Колдонмо көрсөткөн ар бир көрсөткүчтүн жөнөкөй түшүндүрмөсү, P/E-ден RSI-ге чейин';
+
+  @override
+  String get glossarySearchHint => 'Глоссарийден издөө';
 }

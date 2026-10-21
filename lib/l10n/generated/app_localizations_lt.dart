@@ -2813,4 +2813,14 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Techniniai signalai';
+
+  @override
+  String get glossaryPageTitle => 'Žodynėlis';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Paprasti kiekvieno programėlės rodiklio paaiškinimai, nuo P/E iki RSI';
+
+  @override
+  String get glossarySearchHint => 'Ieškoti žodynėlyje';
 }

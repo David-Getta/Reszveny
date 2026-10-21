@@ -2743,4 +2743,14 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Техник дохио';
+
+  @override
+  String get glossaryPageTitle => 'Нэр томьёоны тайлбар';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Аппын харуулдаг бүх үзүүлэлтийн энгийн тайлбар, P/E-ээс RSI хүртэл';
+
+  @override
+  String get glossarySearchHint => 'Тайлбар толиос хайх';
 }

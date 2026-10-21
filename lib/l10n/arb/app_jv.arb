@@ -727,5 +727,8 @@
   "signalCrossedBelow": "mudhun ngliwati rata-rata 200 dina",
   "signalAlertsTitle": "Notifikasi sinyal teknikal",
   "signalAlertsSubtitle": "Sedina sepisan, nalika saham sing kok tutaké dadi jenuh adol utawa jenuh tuku (RSI), utawa regané ngliwati rata-rata 200 dina.",
-  "signalAlertsNotification": "Sinyal teknikal"
+  "signalAlertsNotification": "Sinyal teknikal",
+  "glossaryPageTitle": "Glosarium",
+  "glossaryPageSubtitle": "Katrangan prasaja saben angka sing ditampilake aplikasi, saka P/E nganti RSI",
+  "glossarySearchHint": "Golèk ing glosarium"
 }

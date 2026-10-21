@@ -2737,4 +2737,14 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Akara teknikal';
+
+  @override
+  String get glossaryPageTitle => 'Nkọwa okwu';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Nkọwa dị mfe maka ọnụọgụ ọ bụla ngwa a na-egosi, site na P/E ruo RSI';
+
+  @override
+  String get glossarySearchHint => 'Chọọ na nkọwa okwu';
 }

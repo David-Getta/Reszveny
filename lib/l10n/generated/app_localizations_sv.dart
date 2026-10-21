@@ -2743,4 +2743,14 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Tekniska signaler';
+
+  @override
+  String get glossaryPageTitle => 'Ordlista';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Enkla förklaringar av alla tal appen visar, från P/E till RSI';
+
+  @override
+  String get glossarySearchHint => 'Sök i ordlistan';
 }

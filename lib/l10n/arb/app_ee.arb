@@ -727,5 +727,8 @@
   "signalCrossedBelow": "eɖiɖi ŋkeke 200 ƒe titina la te",
   "signalAlertsTitle": "Tɛknikal dzesiwo ŋuti gbeƒãɖeɖewo",
   "signalAlertsSubtitle": "Zi ɖeka gbe sia gbe, ne akpa aɖe si yome nèdzena wodzrae wu alo woƒlee wu (RSI), alo eƒe asi tso ŋkeke 200 ƒe titina la.",
-  "signalAlertsNotification": "Tɛknikal dzesiwo"
+  "signalAlertsNotification": "Tɛknikal dzesiwo",
+  "glossaryPageTitle": "Nyagɔmeɖeɖe",
+  "glossaryPageSubtitle": "Xexlẽdzesi ɖe sia ɖe si app la ɖena fia la ƒe gɔmeɖeɖe bɔbɔe, tso P/E dzi va ɖo RSI",
+  "glossarySearchHint": "Di le nyagɔmeɖeɖea me"
 }

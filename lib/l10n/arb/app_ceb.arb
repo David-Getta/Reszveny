@@ -727,5 +727,8 @@
   "signalCrossedBelow": "mikanaog ubos sa 200 ka adlaw nga average",
   "signalAlertsTitle": "Mga pahibalo sa teknikal nga signal",
   "signalAlertsSubtitle": "Kausa sa usa ka adlaw, kon ang usa ka stock nga imong gisubay mahimong oversold o overbought (RSI), o ang presyo niini molabang sa iyang 200 ka adlaw nga average.",
-  "signalAlertsNotification": "Mga teknikal nga signal"
+  "signalAlertsNotification": "Mga teknikal nga signal",
+  "glossaryPageTitle": "Glosaryo",
+  "glossaryPageSubtitle": "Yano nga mga pagpasabot sa matag numero nga gipakita sa app, gikan sa P/E hangtod RSI",
+  "glossarySearchHint": "Pangitaa sa glosaryo"
 }

@@ -727,5 +727,8 @@
   "signalCrossedBelow": "200 көнлек уртачадан аска төште",
   "signalAlertsTitle": "Техник сигналлар турында белдерүләр",
   "signalAlertsSubtitle": "Көнгә бер тапкыр, сез күзәткән акция артык сатылган яки артык сатып алынган (RSI) булганда, яки аның бәясе 200 көнлек уртачаны кисеп үткәндә.",
-  "signalAlertsNotification": "Техник сигналлар"
+  "signalAlertsNotification": "Техник сигналлар",
+  "glossaryPageTitle": "Терминнар сүзлеге",
+  "glossaryPageSubtitle": "Кушымта күрсәткән һәр күрсәткечнең гади аңлатмасы, P/E-дан RSI-га кадәр",
+  "glossarySearchHint": "Сүзлектә эзләү"
 }

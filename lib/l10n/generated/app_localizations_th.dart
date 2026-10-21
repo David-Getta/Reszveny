@@ -2712,4 +2712,14 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'สัญญาณทางเทคนิค';
+
+  @override
+  String get glossaryPageTitle => 'อภิธานศัพท์';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'คำอธิบายง่าย ๆ ของทุกตัวเลขที่แอปแสดง ตั้งแต่ P/E ถึง RSI';
+
+  @override
+  String get glossarySearchHint => 'ค้นหาในอภิธานศัพท์';
 }

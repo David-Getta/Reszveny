@@ -2815,4 +2815,14 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Sygnały techniczne';
+
+  @override
+  String get glossaryPageTitle => 'Słowniczek';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Proste wyjaśnienia każdej liczby w aplikacji, od P/E po RSI';
+
+  @override
+  String get glossarySearchHint => 'Szukaj w słowniczku';
 }

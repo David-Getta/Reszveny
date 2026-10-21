@@ -727,5 +727,8 @@
   "signalCrossedBelow": "200 ദിവസ ശരാശരിക്ക് താഴെ കടന്നു",
   "signalAlertsTitle": "ടെക്നിക്കൽ സിഗ്നൽ അറിയിപ്പുകൾ",
   "signalAlertsSubtitle": "ദിവസത്തിൽ ഒരിക്കൽ, നിങ്ങൾ പിന്തുടരുന്ന ഒരു ഓഹരി ഓവർസോൾഡ് അല്ലെങ്കിൽ ഓവർബോട്ട് (RSI) ആകുമ്പോഴോ, അതിന്റെ വില 200 ദിവസ ശരാശരി മുറിച്ചുകടക്കുമ്പോഴോ.",
-  "signalAlertsNotification": "ടെക്നിക്കൽ സിഗ്നലുകൾ"
+  "signalAlertsNotification": "ടെക്നിക്കൽ സിഗ്നലുകൾ",
+  "glossaryPageTitle": "പദാവലി",
+  "glossaryPageSubtitle": "P/E മുതൽ RSI വരെ, ആപ്പ് കാണിക്കുന്ന ഓരോ കണക്കിന്റെയും ലളിതമായ വിശദീകരണങ്ങൾ",
+  "glossarySearchHint": "പദാവലിയിൽ തിരയുക"
 }

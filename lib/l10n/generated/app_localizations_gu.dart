@@ -2737,4 +2737,14 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'ટેક્નિકલ સિગ્નલ';
+
+  @override
+  String get glossaryPageTitle => 'શબ્દાવલિ';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'ઍપ બતાવે તે દરેક આંકડાની સરળ સમજૂતી, P/E થી RSI સુધી';
+
+  @override
+  String get glossarySearchHint => 'શબ્દાવલિમાં શોધો';
 }

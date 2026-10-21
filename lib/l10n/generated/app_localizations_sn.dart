@@ -2747,4 +2747,14 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Zviratidzo zvetekiniki';
+
+  @override
+  String get glossaryPageTitle => 'Tsanangudzo yemazwi';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Tsanangudzo dziri nyore dzenhamba dzose dzinoratidzwa neapp, kubva pa P/E kusvika pa RSI';
+
+  @override
+  String get glossarySearchHint => 'Tsvaga mutsanangudzo yemazwi';
 }

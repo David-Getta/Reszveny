@@ -727,5 +727,8 @@
   "signalCrossedBelow": "prebila pod 200-dnevno povprečje",
   "signalAlertsTitle": "Obvestila o tehničnih signalih",
   "signalAlertsSubtitle": "Enkrat na dan, ko delnica, ki ji sledite, postane preprodana ali prekupljena (RSI) ali njena cena prečka 200-dnevno povprečje.",
-  "signalAlertsNotification": "Tehnični signali"
+  "signalAlertsNotification": "Tehnični signali",
+  "glossaryPageTitle": "Slovar pojmov",
+  "glossaryPageSubtitle": "Preproste razlage vsake številke v aplikaciji, od P/E do RSI",
+  "glossarySearchHint": "Išči po slovarju"
 }

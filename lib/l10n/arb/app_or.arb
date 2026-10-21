@@ -727,5 +727,8 @@
   "signalCrossedBelow": "୨୦୦ ଦିନର ହାରାହାରି ତଳକୁ ଗଲା",
   "signalAlertsTitle": "ଟେକ୍ନିକାଲ ସିଗନାଲ ବିଜ୍ଞପ୍ତି",
   "signalAlertsSubtitle": "ଦିନକୁ ଥରେ, ଯେତେବେଳେ ଆପଣ ଅନୁସରଣ କରୁଥିବା ଷ୍ଟକ ଓଭରସୋଲ୍ଡ କିମ୍ବା ଓଭରବଟ୍ (RSI) ହୁଏ, କିମ୍ବା ତାହାର ମୂଲ୍ୟ ୨୦୦ ଦିନର ହାରାହାରିକୁ ଅତିକ୍ରମ କରେ।",
-  "signalAlertsNotification": "ଟେକ୍ନିକାଲ ସିଗନାଲ"
+  "signalAlertsNotification": "ଟେକ୍ନିକାଲ ସିଗନାଲ",
+  "glossaryPageTitle": "ଶବ୍ଦକୋଷ",
+  "glossaryPageSubtitle": "P/E ରୁ RSI ପର୍ୟ୍ୟନ୍ତ, ଆପ୍ ଦେଖାଉଥିବା ପ୍ରତ୍ୟେକ ସଂଖ୍ୟାର ସରଳ ବ୍ୟାଖ୍ୟା",
+  "glossarySearchHint": "ଶବ୍ଦକୋଷରେ ଖୋଜନ୍ତୁ"
 }

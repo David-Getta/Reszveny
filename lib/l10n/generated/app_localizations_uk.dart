@@ -2816,4 +2816,14 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Технічні сигнали';
+
+  @override
+  String get glossaryPageTitle => 'Глосарій';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Прості пояснення кожного показника в застосунку, від P/E до RSI';
+
+  @override
+  String get glossarySearchHint => 'Пошук у глосарії';
 }

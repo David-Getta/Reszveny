@@ -2715,4 +2715,14 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'ສັນຍານເຕັກນິກ';
+
+  @override
+  String get glossaryPageTitle => 'ອະທິບາຍຄຳສັບ';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'ຄຳອະທິບາຍແບບງ່າຍຂອງທຸກຕົວເລກທີ່ແອັບສະແດງ ຕັ້ງແຕ່ P/E ຈົນຮອດ RSI';
+
+  @override
+  String get glossarySearchHint => 'ຊອກຫາໃນຄຳສັບ';
 }

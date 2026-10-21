@@ -2740,4 +2740,14 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'ଟେକ୍ନିକାଲ ସିଗନାଲ';
+
+  @override
+  String get glossaryPageTitle => 'ଶବ୍ଦକୋଷ';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'P/E ରୁ RSI ପର୍ୟ୍ୟନ୍ତ, ଆପ୍ ଦେଖାଉଥିବା ପ୍ରତ୍ୟେକ ସଂଖ୍ୟାର ସରଳ ବ୍ୟାଖ୍ୟା';
+
+  @override
+  String get glossarySearchHint => 'ଶବ୍ଦକୋଷରେ ଖୋଜନ୍ତୁ';
 }

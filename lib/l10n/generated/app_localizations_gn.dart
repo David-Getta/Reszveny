@@ -2747,4 +2747,14 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Señal técnica';
+
+  @override
+  String get glossaryPageTitle => 'Ñeʼẽryru';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Ñemyesakã ndahasýiva opaite papapy app ohechaukáva rehe, P/E guive RSI peve';
+
+  @override
+  String get glossarySearchHint => 'Eheka ñeʼẽryrúpe';
 }

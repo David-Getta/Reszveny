@@ -727,5 +727,8 @@
   "signalCrossedBelow": "a franchi sa moyenne 200 jours à la baisse",
   "signalAlertsTitle": "Notifications de signaux techniques",
   "signalAlertsSubtitle": "Une fois par jour, lorsqu’une action que vous suivez passe en survente ou en surachat (RSI), ou que son cours croise sa moyenne 200 jours.",
-  "signalAlertsNotification": "Signaux techniques"
+  "signalAlertsNotification": "Signaux techniques",
+  "glossaryPageTitle": "Glossaire",
+  "glossaryPageSubtitle": "Des explications simples de chaque chiffre affiché par l’app, du P/E au RSI",
+  "glossarySearchHint": "Rechercher dans le glossaire"
 }

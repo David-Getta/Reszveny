@@ -2815,4 +2815,14 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Tehnični signali';
+
+  @override
+  String get glossaryPageTitle => 'Slovar pojmov';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Preproste razlage vsake številke v aplikaciji, od P/E do RSI';
+
+  @override
+  String get glossarySearchHint => 'Išči po slovarju';
 }

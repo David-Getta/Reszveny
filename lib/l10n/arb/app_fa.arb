@@ -727,5 +727,8 @@
   "signalCrossedBelow": "میانگین ۲۰۰ روزه را رو به پایین شکست",
   "signalAlertsTitle": "اعلان‌های سیگنال تکنیکال",
   "signalAlertsSubtitle": "یک بار در روز، وقتی سهامی که دنبال می‌کنید به اشباع فروش یا اشباع خرید (RSI) برسد، یا قیمت آن از میانگین ۲۰۰ روزه عبور کند.",
-  "signalAlertsNotification": "سیگنال‌های تکنیکال"
+  "signalAlertsNotification": "سیگنال‌های تکنیکال",
+  "glossaryPageTitle": "واژه‌نامه",
+  "glossaryPageSubtitle": "توضیح ساده هر عددی که برنامه نشان می‌دهد، از P/E تا RSI",
+  "glossarySearchHint": "جستجو در واژه‌نامه"
 }

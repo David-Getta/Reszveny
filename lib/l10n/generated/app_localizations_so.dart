@@ -2751,4 +2751,14 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Calaamadaha farsamo';
+
+  @override
+  String get glossaryPageTitle => 'Qaamuuska ereyada';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Sharaxaad fudud oo tiro kasta oo appku muujiyo, laga bilaabo P/E ilaa RSI';
+
+  @override
+  String get glossarySearchHint => 'Ka raadi qaamuuska';
 }

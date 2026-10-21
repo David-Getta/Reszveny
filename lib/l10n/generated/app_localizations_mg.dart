@@ -2761,4 +2761,14 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Famantarana teknika';
+
+  @override
+  String get glossaryPageTitle => 'Rakibolana';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Fanazavana tsotra momba ny isa rehetra asehon\'ny rindranasa, manomboka amin\'ny P/E ka hatramin\'ny RSI';
+
+  @override
+  String get glossarySearchHint => 'Hikaroka ao amin\'ny rakibolana';
 }

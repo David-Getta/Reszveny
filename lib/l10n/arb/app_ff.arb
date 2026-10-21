@@ -727,5 +727,8 @@
   "signalCrossedBelow": "jippii les hakkundeyel balɗe 200",
   "signalAlertsTitle": "Tintinooli maandeeji teknik",
   "signalAlertsSubtitle": "Laawol gootol e ñalawma, so aksiyoŋ ngo rewataa yeeyaama burtii walla soodaama burtii (RSI), walla coggu mum ɓennii hakkundeyel balɗe 200.",
-  "signalAlertsNotification": "Maandeeji teknik"
+  "signalAlertsNotification": "Maandeeji teknik",
+  "glossaryPageTitle": "Ɓaŋngirde kelme",
+  "glossaryPageSubtitle": "Pirtoore newiinde kala limoore nde app ndee hollata, gila P/E haa RSI",
+  "glossarySearchHint": "Yiylo e ɓaŋngirde kelme"
 }

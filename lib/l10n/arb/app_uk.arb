@@ -727,5 +727,8 @@
   "signalCrossedBelow": "пробила вниз середню за 200 днів",
   "signalAlertsTitle": "Сповіщення про технічні сигнали",
   "signalAlertsSubtitle": "Раз на день, коли акція, за якою ви стежите, входить у зону перепроданості чи перекупленості (RSI) або її ціна перетинає середню за 200 днів.",
-  "signalAlertsNotification": "Технічні сигнали"
+  "signalAlertsNotification": "Технічні сигнали",
+  "glossaryPageTitle": "Глосарій",
+  "glossaryPageSubtitle": "Прості пояснення кожного показника в застосунку, від P/E до RSI",
+  "glossarySearchHint": "Пошук у глосарії"
 }

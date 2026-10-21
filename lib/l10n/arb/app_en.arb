@@ -2330,5 +2330,17 @@
   "signalAlertsNotification": "Technical signals",
   "@signalAlertsNotification": {
     "description": "Title of that system notification; the body lists the stocks with their signals."
+  },
+  "glossaryPageTitle": "Glossary",
+  "@glossaryPageTitle": {
+    "description": "Title of a page (opened from Settings) that lists every financial figure the app shows with its plain-language explanation; also the Settings tile title."
+  },
+  "glossaryPageSubtitle": "Plain explanations of every figure the app shows, from P/E to RSI",
+  "@glossaryPageSubtitle": {
+    "description": "Subtitle of the Settings tile that opens the glossary page."
+  },
+  "glossarySearchHint": "Search the glossary",
+  "@glossarySearchHint": {
+    "description": "Hint text of the search field at the top of the glossary page."
   }
 }

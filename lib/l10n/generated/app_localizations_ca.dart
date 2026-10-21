@@ -2751,4 +2751,14 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Senyals tècnics';
+
+  @override
+  String get glossaryPageTitle => 'Glossari';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Explicacions senzilles de cada xifra que mostra l’app, del P/E al RSI';
+
+  @override
+  String get glossarySearchHint => 'Cerca al glossari';
 }

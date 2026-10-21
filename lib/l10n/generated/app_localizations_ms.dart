@@ -2747,4 +2747,14 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Isyarat teknikal';
+
+  @override
+  String get glossaryPageTitle => 'Glosari';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Penjelasan mudah bagi setiap angka yang dipaparkan apl, daripada P/E hingga RSI';
+
+  @override
+  String get glossarySearchHint => 'Cari dalam glosari';
 }

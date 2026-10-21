@@ -2738,4 +2738,14 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'तकनीकी संकेत';
+
+  @override
+  String get glossaryPageTitle => 'शब्दावली';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'ऐप में देखावल हर आंकड़ा के सरल बयान, P/E से RSI तक';
+
+  @override
+  String get glossarySearchHint => 'शब्दावली में खोजीं';
 }

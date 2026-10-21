@@ -727,5 +727,8 @@
   "signalCrossedBelow": "200 दिन के औसत से नीचे गया",
   "signalAlertsTitle": "तकनीकी संकेत सूचनाएँ",
   "signalAlertsSubtitle": "दिन में एक बार, जब आपके द्वारा फ़ॉलो किया गया कोई स्टॉक ओवरसोल्ड या ओवरबॉट (RSI) हो जाए, या उसकी कीमत 200 दिन के औसत को पार करे।",
-  "signalAlertsNotification": "तकनीकी संकेत"
+  "signalAlertsNotification": "तकनीकी संकेत",
+  "glossaryPageTitle": "शब्दावली",
+  "glossaryPageSubtitle": "ऐप में दिखने वाले हर आँकड़े की सरल व्याख्या, P/E से RSI तक",
+  "glossarySearchHint": "शब्दावली में खोजें"
 }

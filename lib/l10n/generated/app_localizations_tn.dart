@@ -2762,4 +2762,14 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Matshwao a thekeniki';
+
+  @override
+  String get glossaryPageTitle => 'Lenaane la mafoko';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Ditlhaloso tse di motlhofo tsa palo nngwe le nngwe e app e e bontshang, go tswa go P/E go ya go RSI';
+
+  @override
+  String get glossarySearchHint => 'Batla mo lenaaneng la mafoko';
 }

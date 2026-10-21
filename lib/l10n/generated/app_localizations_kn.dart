@@ -2750,4 +2750,14 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'ತಾಂತ್ರಿಕ ಸಿಗ್ನಲ್‌ಗಳು';
+
+  @override
+  String get glossaryPageTitle => 'ಪದಕೋಶ';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'ಆ್ಯಪ್ ತೋರಿಸುವ ಪ್ರತಿ ಅಂಕಿಯ ಸರಳ ವಿವರಣೆ, P/E ಯಿಂದ RSI ವರೆಗೆ';
+
+  @override
+  String get glossarySearchHint => 'ಪದಕೋಶದಲ್ಲಿ ಹುಡುಕಿ';
 }

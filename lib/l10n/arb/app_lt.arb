@@ -727,5 +727,8 @@
   "signalCrossedBelow": "kirto 200 dienų vidurkį žemyn",
   "signalAlertsTitle": "Pranešimai apie techninius signalus",
   "signalAlertsSubtitle": "Kartą per dieną, kai tavo sekama akcija tampa perparduota ar perpirkta (RSI) arba jos kaina kerta 200 dienų vidurkį.",
-  "signalAlertsNotification": "Techniniai signalai"
+  "signalAlertsNotification": "Techniniai signalai",
+  "glossaryPageTitle": "Žodynėlis",
+  "glossaryPageSubtitle": "Paprasti kiekvieno programėlės rodiklio paaiškinimai, nuo P/E iki RSI",
+  "glossarySearchHint": "Ieškoti žodynėlyje"
 }

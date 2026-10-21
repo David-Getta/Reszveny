@@ -2743,4 +2743,14 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'ტექნიკური სიგნალები';
+
+  @override
+  String get glossaryPageTitle => 'ტერმინების ლექსიკონი';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'აპში ნაჩვენები ყველა მაჩვენებლის მარტივი განმარტება, P/E-დან RSI-მდე';
+
+  @override
+  String get glossarySearchHint => 'ძიება ლექსიკონში';
 }

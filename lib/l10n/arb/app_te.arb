@@ -727,5 +727,8 @@
   "signalCrossedBelow": "200 రోజుల సగటు కిందకి దాటింది",
   "signalAlertsTitle": "సాంకేతిక సిగ్నల్ నోటిఫికేషన్‌లు",
   "signalAlertsSubtitle": "రోజుకు ఒకసారి, మీరు ఫాలో అవుతున్న స్టాక్ ఓవర్‌సోల్డ్ లేదా ఓవర్‌బాట్ (RSI) అయినప్పుడు, లేదా దాని ధర 200 రోజుల సగటును దాటినప్పుడు.",
-  "signalAlertsNotification": "సాంకేతిక సిగ్నల్‌లు"
+  "signalAlertsNotification": "సాంకేతిక సిగ్నల్‌లు",
+  "glossaryPageTitle": "పదకోశం",
+  "glossaryPageSubtitle": "P/E నుండి RSI వరకు, యాప్ చూపే ప్రతి సంఖ్యకు సరళమైన వివరణలు",
+  "glossarySearchHint": "పదకోశంలో వెతకండి"
 }

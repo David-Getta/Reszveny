@@ -727,5 +727,8 @@
   "signalCrossedBelow": "下穿200日均线",
   "signalAlertsTitle": "技术信号通知",
   "signalAlertsSubtitle": "每天一次，当您关注的股票进入超卖或超买（RSI）状态，或其价格穿越200日均线时。",
-  "signalAlertsNotification": "技术信号"
+  "signalAlertsNotification": "技术信号",
+  "glossaryPageTitle": "术语表",
+  "glossaryPageSubtitle": "用通俗语言解释应用中显示的每个指标，从 P/E 到 RSI",
+  "glossarySearchHint": "搜索术语表"
 }

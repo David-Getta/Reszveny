@@ -727,5 +727,8 @@
   "signalCrossedBelow": "200 દિવસની સરેરાશથી નીચે ગયો",
   "signalAlertsTitle": "ટેક્નિકલ સિગ્નલની સૂચનાઓ",
   "signalAlertsSubtitle": "દિવસમાં એક વાર, જ્યારે તમે ફોલો કરતા કોઈ સ્ટોક ઓવરસોલ્ડ અથવા ઓવરબૉટ (RSI) થાય, અથવા તેની કિંમત 200 દિવસની સરેરાશને ઓળંગે.",
-  "signalAlertsNotification": "ટેક્નિકલ સિગ્નલ"
+  "signalAlertsNotification": "ટેક્નિકલ સિગ્નલ",
+  "glossaryPageTitle": "શબ્દાવલિ",
+  "glossaryPageSubtitle": "ઍપ બતાવે તે દરેક આંકડાની સરળ સમજૂતી, P/E થી RSI સુધી",
+  "glossarySearchHint": "શબ્દાવલિમાં શોધો"
 }

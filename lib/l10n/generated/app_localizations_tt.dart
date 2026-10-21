@@ -2741,4 +2741,14 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Техник сигналлар';
+
+  @override
+  String get glossaryPageTitle => 'Терминнар сүзлеге';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Кушымта күрсәткән һәр күрсәткечнең гади аңлатмасы, P/E-дан RSI-га кадәр';
+
+  @override
+  String get glossarySearchHint => 'Сүзлектә эзләү';
 }

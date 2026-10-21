@@ -727,5 +727,8 @@
   "signalCrossedBelow": "mbuluka muinshi mua pankatshi pa matuku 200",
   "signalAlertsTitle": "Dimanyisha dia bimanyinu bia tekinike",
   "signalAlertsSubtitle": "Musangu umue ku dituku, padi action iudi ulonda bapana bikole anyi basumba bikole (RSI), anyi mushinga wayi usabuka pankatshi pa matuku 200.",
-  "signalAlertsNotification": "Bimanyinu bia tekinike"
+  "signalAlertsNotification": "Bimanyinu bia tekinike",
+  "glossaryPageTitle": "Diumvuija dia miaku",
+  "glossaryPageSubtitle": "Diumvuija dipepele dia nomba yonso idi app uleja, kutuadija ku P/E too ne ku RSI",
+  "glossarySearchHint": "Keba mu diumvuija dia miaku"
 }

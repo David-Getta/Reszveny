@@ -2738,4 +2738,14 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'ਤਕਨੀਕੀ ਸਿਗਨਲ';
+
+  @override
+  String get glossaryPageTitle => 'ਸ਼ਬਦਾਵਲੀ';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'P/E ਤੋਂ RSI ਤੱਕ, ਐਪ ਵਿੱਚ ਦਿਖਾਏ ਹਰ ਅੰਕੜੇ ਦੀ ਸਰਲ ਵਿਆਖਿਆ';
+
+  @override
+  String get glossarySearchHint => 'ਸ਼ਬਦਾਵਲੀ ਵਿੱਚ ਖੋਜੋ';
 }

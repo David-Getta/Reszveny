@@ -2739,4 +2739,14 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'තාක්ෂණික සංඥා';
+
+  @override
+  String get glossaryPageTitle => 'පද මාලාව';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'P/E සිට RSI දක්වා, යෙදුම පෙන්වන සෑම අගයක් ගැනම සරල පැහැදිලි කිරීම්';
+
+  @override
+  String get glossarySearchHint => 'පද මාලාවේ සොයන්න';
 }

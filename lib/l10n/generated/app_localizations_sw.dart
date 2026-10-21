@@ -2743,4 +2743,14 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Ishara za kiufundi';
+
+  @override
+  String get glossaryPageTitle => 'Kamusi ya istilahi';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Maelezo rahisi ya kila namba inayoonyeshwa na programu, kutoka P/E hadi RSI';
+
+  @override
+  String get glossarySearchHint => 'Tafuta katika kamusi';
 }

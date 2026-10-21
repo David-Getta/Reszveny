@@ -2747,4 +2747,14 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Siginonin fasaha';
+
+  @override
+  String get glossaryPageTitle => 'Ƙamus na kalmomi';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Bayani mai sauƙi kan kowace alkaluma da manhajar ke nunawa, daga P/E har RSI';
+
+  @override
+  String get glossarySearchHint => 'Bincika a cikin ƙamus';
 }

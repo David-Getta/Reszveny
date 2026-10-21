@@ -727,5 +727,8 @@
   "signalCrossedBelow": "දින 200 සාමාන්‍යයට පහළින් ගියේය",
   "signalAlertsTitle": "තාක්ෂණික සංඥා දැනුම්දීම්",
   "signalAlertsSubtitle": "දිනකට වරක්, ඔබ අනුගමනය කරන කොටසක් අධික විකිණීම හෝ අධික මිලදී ගැනීම (RSI) තත්ත්වයට පත් වූ විට, හෝ එහි මිල දින 200 සාමාන්‍යය තරණය කළ විට.",
-  "signalAlertsNotification": "තාක්ෂණික සංඥා"
+  "signalAlertsNotification": "තාක්ෂණික සංඥා",
+  "glossaryPageTitle": "පද මාලාව",
+  "glossaryPageSubtitle": "P/E සිට RSI දක්වා, යෙදුම පෙන්වන සෑම අගයක් ගැනම සරල පැහැදිලි කිරීම්",
+  "glossarySearchHint": "පද මාලාවේ සොයන්න"
 }

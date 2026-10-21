@@ -727,5 +727,8 @@
   "signalCrossedBelow": "200 günlük ortanı aşağı kəsdi",
   "signalAlertsTitle": "Texniki siqnal bildirişləri",
   "signalAlertsSubtitle": "Gündə bir dəfə, izlədiyiniz səhm həddindən artıq satılmış və ya həddindən artıq alınmış olduqda (RSI), yaxud qiyməti 200 günlük ortanı keçdikdə.",
-  "signalAlertsNotification": "Texniki siqnallar"
+  "signalAlertsNotification": "Texniki siqnallar",
+  "glossaryPageTitle": "Lüğət",
+  "glossaryPageSubtitle": "Tətbiqin göstərdiyi hər rəqəmin sadə izahı, P/E-dən RSI-yə qədər",
+  "glossarySearchHint": "Lüğətdə axtar"
 }

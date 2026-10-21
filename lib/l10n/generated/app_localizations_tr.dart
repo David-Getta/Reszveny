@@ -2742,4 +2742,14 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Teknik sinyaller';
+
+  @override
+  String get glossaryPageTitle => 'Sözlük';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Uygulamadaki her rakamın sade açıklaması, P/E\'den RSI\'ya';
+
+  @override
+  String get glossarySearchHint => 'Sözlükte ara';
 }

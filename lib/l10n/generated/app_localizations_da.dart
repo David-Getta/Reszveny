@@ -2740,4 +2740,14 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Tekniske signaler';
+
+  @override
+  String get glossaryPageTitle => 'Ordliste';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Enkle forklaringer på hvert tal, appen viser, fra P/E til RSI';
+
+  @override
+  String get glossarySearchHint => 'Søg i ordlisten';
 }

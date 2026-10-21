@@ -2784,4 +2784,14 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Semnale tehnice';
+
+  @override
+  String get glossaryPageTitle => 'Glosar';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Explicații simple pentru fiecare cifră afișată de aplicație, de la P/E la RSI';
+
+  @override
+  String get glossarySearchHint => 'Caută în glosar';
 }

@@ -2745,4 +2745,14 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Tɛknikal dzesiwo';
+
+  @override
+  String get glossaryPageTitle => 'Nyagɔmeɖeɖe';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Xexlẽdzesi ɖe sia ɖe si app la ɖena fia la ƒe gɔmeɖeɖe bɔbɔe, tso P/E dzi va ɖo RSI';
+
+  @override
+  String get glossarySearchHint => 'Di le nyagɔmeɖeɖea me';
 }

@@ -2733,4 +2733,14 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'နည်းပညာဆိုင်ရာ အချက်ပြများ';
+
+  @override
+  String get glossaryPageTitle => 'ဝေါဟာရ အဘိဓာန်';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'P/E မှ RSI အထိ အက်ပ်ပြသသော ကိန်းဂဏန်းတိုင်းအတွက် ရိုးရှင်းသော ရှင်းလင်းချက်များ';
+
+  @override
+  String get glossarySearchHint => 'ဝေါဟာရ အဘိဓာန်တွင် ရှာရန်';
 }

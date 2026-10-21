@@ -2755,4 +2755,14 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Imiqondiso yobuchwepheshe';
+
+  @override
+  String get glossaryPageTitle => 'Uluhlu lwamagama';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Iingcaciso ezilula zalo lonke inani eliboniswa yi-app, ukusuka ku-P/E ukuya ku-RSI';
+
+  @override
+  String get glossarySearchHint => 'Khangela kuluhlu lwamagama';
 }

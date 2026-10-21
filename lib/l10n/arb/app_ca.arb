@@ -727,5 +727,8 @@
   "signalCrossedBelow": "ha creuat per sota la mitjana de 200 dies",
   "signalAlertsTitle": "Notificacions de senyals tècnics",
   "signalAlertsSubtitle": "Un cop al dia, quan una acció que segueixes passa a sobrevenuda o sobrecomprada (RSI), o el seu preu creua la mitjana de 200 dies.",
-  "signalAlertsNotification": "Senyals tècnics"
+  "signalAlertsNotification": "Senyals tècnics",
+  "glossaryPageTitle": "Glossari",
+  "glossaryPageSubtitle": "Explicacions senzilles de cada xifra que mostra l’app, del P/E al RSI",
+  "glossarySearchHint": "Cerca al glossari"
 }

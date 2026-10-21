@@ -2743,4 +2743,14 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'سیگناڵە تەکنیکییەکان';
+
+  @override
+  String get glossaryPageTitle => 'فەرهەنگۆک';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'ڕوونکردنەوەی سادەی هەر ژمارەیەک کە ئەپەکە پیشانی دەدات، لە P/E تا RSI';
+
+  @override
+  String get glossarySearchHint => 'گەڕان لە فەرهەنگۆک';
 }

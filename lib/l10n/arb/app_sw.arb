@@ -727,5 +727,8 @@
   "signalCrossedBelow": "imeshuka chini ya wastani wa siku 200",
   "signalAlertsTitle": "Arifa za ishara za kiufundi",
   "signalAlertsSubtitle": "Mara moja kwa siku, hisa unayofuatilia inapokuwa imeuzwa kupita kiasi au imenunuliwa kupita kiasi (RSI), au bei yake inapovuka wastani wa siku 200.",
-  "signalAlertsNotification": "Ishara za kiufundi"
+  "signalAlertsNotification": "Ishara za kiufundi",
+  "glossaryPageTitle": "Kamusi ya istilahi",
+  "glossaryPageSubtitle": "Maelezo rahisi ya kila namba inayoonyeshwa na programu, kutoka P/E hadi RSI",
+  "glossarySearchHint": "Tafuta katika kamusi"
 }

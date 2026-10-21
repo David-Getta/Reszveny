@@ -727,5 +727,8 @@
   "signalCrossedBelow": "bimmaba iti baba ti average ti 200 nga aldaw",
   "signalAlertsTitle": "Dagiti pakaammo ti teknikal a senial",
   "signalAlertsSubtitle": "Maminsan iti maysa nga aldaw, no ti maysa a stock a sursurotem ket agbalin nga oversold wenno overbought (RSI), wenno ti presiona ket lumasat iti average ti 200 nga aldaw.",
-  "signalAlertsNotification": "Dagiti teknikal a senial"
+  "signalAlertsNotification": "Dagiti teknikal a senial",
+  "glossaryPageTitle": "Glosario",
+  "glossaryPageSubtitle": "Simple a panangilawlawag iti tunggal numero nga ipakita ti app, manipud P/E agingga RSI",
+  "glossarySearchHint": "Agbirok iti glosario"
 }

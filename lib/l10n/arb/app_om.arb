@@ -727,5 +727,8 @@
   "signalCrossedBelow": "giddugaleessa guyyaa 200 gadi ce'e",
   "signalAlertsTitle": "Beeksisa mallattoo teeknikaa",
   "signalAlertsSubtitle": "Guyyaatti al tokko, yeroo aksiyoonni ati hordoftu baay'ee gurgurame yookiin baay'ee bitame (RSI) ta'u, yookiin gatiin isaa giddugaleessa guyyaa 200 qaxxaamuru.",
-  "signalAlertsNotification": "Mallattoolee teeknikaa"
+  "signalAlertsNotification": "Mallattoolee teeknikaa",
+  "glossaryPageTitle": "Hiika jechootaa",
+  "glossaryPageSubtitle": "Ibsa salphaa lakkoofsa hunda appiin agarsiisu, P/E irraa hanga RSI",
+  "glossarySearchHint": "Hiika jechootaa keessa barbaadi"
 }

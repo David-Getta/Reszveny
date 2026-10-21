@@ -727,5 +727,8 @@
   "signalCrossedBelow": "laski 200 päivän keskiarvon alapuolelle",
   "signalAlertsTitle": "Ilmoitukset teknisistä signaaleista",
   "signalAlertsSubtitle": "Kerran päivässä, kun seuraamasi osake muuttuu ylimyydyksi tai yliostetuksi (RSI) tai sen kurssi leikkaa 200 päivän keskiarvon.",
-  "signalAlertsNotification": "Tekniset signaalit"
+  "signalAlertsNotification": "Tekniset signaalit",
+  "glossaryPageTitle": "Sanasto",
+  "glossaryPageSubtitle": "Selkeät selitykset jokaiselle sovelluksen luvulle, P/E:stä RSI:hin",
+  "glossarySearchHint": "Hae sanastosta"
 }

@@ -727,5 +727,8 @@
   "signalCrossedBelow": "հատել է 200-օրյա միջինը ներքև",
   "signalAlertsTitle": "Տեխնիկական ազդանշանների ծանուցումներ",
   "signalAlertsSubtitle": "Օրը մեկ անգամ, երբ ձեր հետևած բաժնետոմսը դառնում է գերվաճառված կամ գերգնված (RSI), կամ դրա գինը հատում է 200-օրյա միջինը։",
-  "signalAlertsNotification": "Տեխնիկական ազդանշաններ"
+  "signalAlertsNotification": "Տեխնիկական ազդանշաններ",
+  "glossaryPageTitle": "Բառարան",
+  "glossaryPageSubtitle": "Հավելվածի ցույց տված յուրաքանչյուր ցուցանիշի պարզ բացատրություն՝ P/E-ից մինչև RSI",
+  "glossarySearchHint": "Փնտրել բառարանում"
 }

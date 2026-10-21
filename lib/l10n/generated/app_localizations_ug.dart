@@ -2745,4 +2745,14 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'تېخنىكىلىق سىگناللار';
+
+  @override
+  String get glossaryPageTitle => 'ئاتالغۇلار لۇغىتى';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'ئەپ كۆرسەتكەن ھەربىر سانغا ئاددىي چۈشەندۈرۈش، P/E دىن RSI غىچە';
+
+  @override
+  String get glossarySearchHint => 'لۇغەتتىن ئىزدەش';
 }

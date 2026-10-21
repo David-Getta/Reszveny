@@ -727,5 +727,8 @@
   "signalCrossedBelow": "jàll na ci suuf digg-diggu 200 fan",
   "signalAlertsTitle": "Yégle yu teknik yu màndargay",
   "signalAlertsSubtitle": "Benn yoon bés bu nekk, bu aksiyoŋ bi ngay topp jaay nañu ko lu ëpp walla jënd nañu ko lu ëpp (RSI), walla njëg la jàll digg-diggu 200 fan.",
-  "signalAlertsNotification": "Màndargay teknik"
+  "signalAlertsNotification": "Màndargay teknik",
+  "glossaryPageTitle": "Limu baat yi",
+  "glossaryPageSubtitle": "Leeral yu yomb ci lim bu nekk bi app bi di wone, dale ko ci P/E ba ci RSI",
+  "glossarySearchHint": "Seet ci limu baat yi"
 }

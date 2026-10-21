@@ -2740,4 +2740,14 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get signalAlertsNotification => 'Àwọn àmì ìmọ̀-ẹ̀rọ';
+
+  @override
+  String get glossaryPageTitle => 'Àtòjọ àwọn ọ̀rọ̀';
+
+  @override
+  String get glossaryPageSubtitle =>
+      'Àlàyé rírọrùn fún gbogbo nọ́mbà tí ìṣàfilọ́lẹ̀ náà ń fi hàn, láti P/E dé RSI';
+
+  @override
+  String get glossarySearchHint => 'Wá nínú àtòjọ àwọn ọ̀rọ̀';
 }

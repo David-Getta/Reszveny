@@ -727,5 +727,8 @@
   "signalCrossedBelow": "gafere n'okpuru nkezi ụbọchị 200 ya",
   "signalAlertsTitle": "Ọkwa akara teknikal",
   "signalAlertsSubtitle": "Otu ugboro n'ụbọchị, mgbe stock ị na-eso erela ya karịa ma ọ bụ azụrụ ya karịa (RSI), ma ọ bụ mgbe ọnụahịa ya gafere nkezi ụbọchị 200 ya.",
-  "signalAlertsNotification": "Akara teknikal"
+  "signalAlertsNotification": "Akara teknikal",
+  "glossaryPageTitle": "Nkọwa okwu",
+  "glossaryPageSubtitle": "Nkọwa dị mfe maka ọnụọgụ ọ bụla ngwa a na-egosi, site na P/E ruo RSI",
+  "glossarySearchHint": "Chọọ na nkọwa okwu"
 }

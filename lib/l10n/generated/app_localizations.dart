@@ -4704,6 +4704,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Technical signals'**
   String get signalAlertsNotification;
+
+  /// Title of a page (opened from Settings) that lists every financial figure the app shows with its plain-language explanation; also the Settings tile title.
+  ///
+  /// In en, this message translates to:
+  /// **'Glossary'**
+  String get glossaryPageTitle;
+
+  /// Subtitle of the Settings tile that opens the glossary page.
+  ///
+  /// In en, this message translates to:
+  /// **'Plain explanations of every figure the app shows, from P/E to RSI'**
+  String get glossaryPageSubtitle;
+
+  /// Hint text of the search field at the top of the glossary page.
+  ///
+  /// In en, this message translates to:
+  /// **'Search the glossary'**
+  String get glossarySearchHint;
 }
 
 class _AppLocalizationsDelegate

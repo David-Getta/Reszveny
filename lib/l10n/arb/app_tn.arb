@@ -727,5 +727,8 @@
   "signalCrossedBelow": "e kgabagantse ka tlase ga palogare ya malatsi a 200",
   "signalAlertsTitle": "Dikitsiso tsa matshwao a thekeniki",
   "signalAlertsSubtitle": "Gangwe ka letsatsi, fa sheya e o e latelang e rekisitswe thata kgotsa e rekilwe thata (RSI), kgotsa tlhwatlhwa ya yone e kgabaganya palogare ya malatsi a 200.",
-  "signalAlertsNotification": "Matshwao a thekeniki"
+  "signalAlertsNotification": "Matshwao a thekeniki",
+  "glossaryPageTitle": "Lenaane la mafoko",
+  "glossaryPageSubtitle": "Ditlhaloso tse di motlhofo tsa palo nngwe le nngwe e app e e bontshang, go tswa go P/E go ya go RSI",
+  "glossarySearchHint": "Batla mo lenaaneng la mafoko"
 }

@@ -727,5 +727,8 @@
   "signalCrossedBelow": "menembus ke bawah rata-rata 200 hari",
   "signalAlertsTitle": "Notifikasi sinyal teknikal",
   "signalAlertsSubtitle": "Sekali sehari, saat saham yang kamu ikuti menjadi jenuh jual atau jenuh beli (RSI), atau harganya melintasi rata-rata 200 hari.",
-  "signalAlertsNotification": "Sinyal teknikal"
+  "signalAlertsNotification": "Sinyal teknikal",
+  "glossaryPageTitle": "Glosarium",
+  "glossaryPageSubtitle": "Penjelasan sederhana setiap angka yang ditampilkan aplikasi, dari P/E hingga RSI",
+  "glossarySearchHint": "Cari di glosarium"
 }

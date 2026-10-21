@@ -727,5 +727,8 @@
   "signalCrossedBelow": "akɔ ne nna 200 nkyemu no ase",
   "signalAlertsTitle": "Tɛknikal nsɛnkyerɛnne ho amanneɛbɔ",
   "signalAlertsSubtitle": "Da koro pɛn, sɛ kyɛfa bi a wodi akyi no wɔatɔn no dodo anaa wɔatɔ no dodo (RSI), anaa ne bo twam ne nna 200 nkyemu no a.",
-  "signalAlertsNotification": "Tɛknikal nsɛnkyerɛnne"
+  "signalAlertsNotification": "Tɛknikal nsɛnkyerɛnne",
+  "glossaryPageTitle": "Nsɛmfua nkyerɛase",
+  "glossaryPageSubtitle": "Nkyerɛkyerɛmu a ɛyɛ mmerɛw fa akontaabu biara a app no kyerɛ ho, fi P/E kosi RSI",
+  "glossarySearchHint": "Hwehwɛ wɔ nsɛmfua nkyerɛase no mu"
 }

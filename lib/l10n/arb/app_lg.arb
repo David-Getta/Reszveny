@@ -727,5 +727,8 @@
   "signalCrossedBelow": "gukkide wansi wa wakati w'ennaku 200",
   "signalAlertsTitle": "Obubaka ku bubonero obwa tekinika",
   "signalAlertsSubtitle": "Omulundi gumu buli lunaku, nga omugabo gw'ogoberera gutundiddwa ennyo oba gugulidwa ennyo (RSI), oba omuwendo gwagwo gusomose wakati w'ennaku 200.",
-  "signalAlertsNotification": "Obubonero obwa tekinika"
+  "signalAlertsNotification": "Obubonero obwa tekinika",
+  "glossaryPageTitle": "Ennyinyonnyola y'ebigambo",
+  "glossaryPageSubtitle": "Ennyinyonnyola ennyangu eya buli muwendo app gw'eraga, okuva ku P/E okutuuka ku RSI",
+  "glossarySearchHint": "Noonya mu nnyinyonnyola y'ebigambo"
 }

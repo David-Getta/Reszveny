@@ -727,5 +727,8 @@
   "signalCrossedBelow": "перасекла 200-дзённую сярэднюю ўніз",
   "signalAlertsTitle": "Апавяшчэнні пра тэхнічныя сігналы",
   "signalAlertsSubtitle": "Раз на дзень, калі акцыя, за якой вы сочыце, пераходзіць у перапраданасць або перакупленасць (RSI), або яе цана перасякае 200-дзённую сярэднюю.",
-  "signalAlertsNotification": "Тэхнічныя сігналы"
+  "signalAlertsNotification": "Тэхнічныя сігналы",
+  "glossaryPageTitle": "Гласарый",
+  "glossaryPageSubtitle": "Простыя тлумачэнні кожнага паказчыка ў праграме, ад P/E да RSI",
+  "glossarySearchHint": "Пошук у гласарыі"
 }

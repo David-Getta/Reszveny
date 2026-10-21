@@ -727,5 +727,8 @@
   "signalCrossedBelow": "ji navîniya 200 rojan ber bi jêr derbas bû",
   "signalAlertsTitle": "Agahdariyên sînyalên teknîkî",
   "signalAlertsSubtitle": "Rojê carekê, dema ku pişkeke ku tu dişopînî zêde firotî an zêde kirî (RSI) dibe, an jî bihayê wê navîniya 200 rojan derbas dike.",
-  "signalAlertsNotification": "Sînyalên teknîkî"
+  "signalAlertsNotification": "Sînyalên teknîkî",
+  "glossaryPageTitle": "Ferhengok",
+  "glossaryPageSubtitle": "Ravekirinên hêsan ên her hejmara ku sepan nîşan dide, ji P/E heta RSI",
+  "glossarySearchHint": "Di ferhengokê de bigere"
 }
