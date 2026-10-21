@@ -260,6 +260,19 @@ void main() {
       expect(yearChange(0, 100), isNull, reason: 'átváltás nélküli év: nincs −100 %');
     });
 
+    test('the 12-month sum: dated, not future, converted with the given rate; null without usable items', () {
+      final ds = [
+        rec('KO', DateTime(2026, 9, 1), 5),
+        rec('KO', DateTime(2026, 3, 1), 900, currency: 'HUF'),
+        rec('KO', DateTime(2026, 12, 1), 50),
+        DividendRecord(id: 'x', symbol: 'KO', amount: 7, currency: 'USD'),
+      ];
+      final now = DateTime(2026, 10, 21);
+      expect(dividendsLast12Months(ds, now: now, rate: (d) => d.currency == 'USD' ? 1.0 : 0.0027), closeTo(7.43, 1e-9));
+      expect(dividendsLast12Months(ds, now: now, rate: (d) => d.currency == 'USD' ? 1.0 : null), 5);
+      expect(dividendsLast12Months(ds, now: now, rate: (_) => null), isNull);
+    });
+
     test('year-over-year change of the dividend income', () {
       expect(yearChange(112, 100), closeTo(12, 1e-9));
       expect(yearChange(80, 100), closeTo(-20, 1e-9));

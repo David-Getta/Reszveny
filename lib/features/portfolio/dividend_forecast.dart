@@ -66,6 +66,18 @@ double? yieldOnCost(
   double? Function(DividendRecord d)? rate,
 }) {
   if (cost <= 0) return null;
+  final sum = dividendsLast12Months(dividends, now: now, rate: rate);
+  return sum == null ? null : sum / cost * 100;
+}
+
+/// Az utolsó 12 hónap (dátumozott, nem jövőbeli) kapott osztalékának összege;
+/// a [rate] a tétel átváltása (`null`: a tétel kimarad). `null`, ha egy tétel
+/// sem számolható – a hozam, a főoldali sor és az elemzések ugyanezt használják.
+double? dividendsLast12Months(
+  Iterable<DividendRecord> dividends, {
+  required DateTime now,
+  double? Function(DividendRecord d)? rate,
+}) {
   final from = DateTime(now.year - 1, now.month, now.day);
   var sum = 0.0;
   var any = false;
@@ -77,7 +89,7 @@ double? yieldOnCost(
     sum += d.amount * r;
     any = true;
   }
-  return any ? sum / cost * 100 : null;
+  return any ? sum : null;
 }
 
 /// A tételek összege a [to] pénznemben a mai árfolyamon (a [fx] adja); az

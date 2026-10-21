@@ -52,6 +52,7 @@ import 'features/notes/notes_store.dart';
 import 'features/portfolio/portfolio_review.dart';
 import 'features/portfolio/holdings_reader.dart';
 import 'features/portfolio/portfolio_move_watcher.dart';
+import 'features/portfolio/dividend_forecast.dart' show dividendsLast12Months;
 import 'features/portfolio/portfolio_store.dart';
 import 'features/portfolio/portfolio_valuation.dart';
 import 'features/sync/sync_service.dart';
@@ -560,19 +561,11 @@ class AppServices {
 
   /// Az elmúlt 12 hónapban a részvényből kapott osztalék a megadott pénznemben;
   /// a más pénznemű tételek a már ismert (gyorsítótárazott) árfolyammal; `null`, ha nincs.
-  double? _dividendsReceived12m(String symbol, String currency) {
-    final now = DateTime.now();
-    final from = DateTime(now.year - 1, now.month, now.day);
-    var sum = 0.0;
-    for (final d in portfolio.dividendsOf(symbol)) {
-      final date = d.date;
-      if (date == null || date.isBefore(from) || date.isAfter(now)) continue;
-      final rate = d.currency == currency ? 1.0 : fx.cachedRate(d.currency, currency)?.rate;
-      if (rate == null) continue;
-      sum += d.amount * rate;
-    }
-    return sum > 0 ? sum : null;
-  }
+  double? _dividendsReceived12m(String symbol, String currency) => dividendsLast12Months(
+    portfolio.dividendsOf(symbol),
+    now: DateTime.now(),
+    rate: (d) => d.currency == currency ? 1.0 : fx.cachedRate(d.currency, currency)?.rate,
+  );
 
   /// A ténylegesen használt megjelenítési pénznem (beállítás vagy a rendszerből).
   String? displayCurrency(Locale locale) {
