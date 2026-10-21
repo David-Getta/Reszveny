@@ -335,6 +335,14 @@ void main() {
     expect(find.byKey(const ValueKey('dividend-expected-AAPL')), findsOneWidget);
     expect(find.text('Expected next'), findsOneWidget);
     expect(find.textContaining('~ 2.60 USD'), findsOneWidget);
+    // Megérkezett: a + gomb a várható adatokkal előre kitöltött párbeszédet nyit.
+    await tester.tap(find.byKey(const ValueKey('dividend-expected-add-AAPL')));
+    await tester.pumpAndSettle();
+    expect(find.text('Add dividend'), findsOneWidget);
+    expect(tester.widget<TextField>(find.byKey(const ValueKey('dividend-amount'))).controller!.text, '2.60');
+    expect(tester.widget<TextField>(find.byKey(const ValueKey('dividend-symbol'))).controller!.text, 'AAPL');
+    await tester.tap(find.text('Cancel'));
+    await tester.pumpAndSettle();
     await s.portfolio.removeDividend(s.portfolio.dividends.firstWhere((d) => d.amount == 2.6).id);
     await s.portfolio.removeDividend(
       s.portfolio.dividends.firstWhere((d) => d.amount == 2.5 && d.date == q.subtract(const Duration(days: 91))).id,

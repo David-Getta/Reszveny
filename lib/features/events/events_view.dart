@@ -13,6 +13,7 @@ import '../../theme/app_theme.dart';
 import '../../widgets/centered_scroll.dart';
 import '../stock_detail/widgets/earnings_card.dart' show showEarningsSummary;
 import '../portfolio/dividend_forecast.dart' show approxMoney;
+import '../portfolio/dividends_card.dart' show showAddDividendDialog;
 import 'calendar_export.dart';
 import 'events_service.dart';
 
@@ -220,6 +221,21 @@ class EventTile extends StatelessWidget {
         ],
       ),
       subtitle: Text(detail == null ? title : '$title\n$detail', maxLines: 3, overflow: TextOverflow.ellipsis),
+      // Várható osztaléknál: megérkezett → egy koppintással rögzíthető, előre kitöltve.
+      trailing: e.kind == UpcomingEventKind.dividend && e.amount != null && e.currency != null
+          ? IconButton(
+              key: ValueKey('event-dividend-add-${e.symbol}'),
+              tooltip: l10n.portfolioAddDividend,
+              icon: Icon(Icons.add_circle_outline_rounded, color: p.muted),
+              onPressed: () => showAddDividendDialog(
+                context,
+                symbol: e.symbol,
+                currency: e.currency!,
+                amount: e.amount,
+                date: e.date,
+              ),
+            )
+          : null,
       onTap: () => onOpenSymbol(StockCandidate(symbol: e.symbol, companyName: e.symbol)),
     );
   }

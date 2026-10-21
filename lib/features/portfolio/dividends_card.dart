@@ -186,6 +186,20 @@ class DividendsCard extends StatelessWidget {
                               ),
                             ),
                             Text(approxMoney(fmt, x.amount, x.currency), style: TextStyle(color: p.muted)),
+                            // Megérkezett: egy koppintással rögzíthető a várható adatokkal előre kitöltve.
+                            IconButton(
+                              key: ValueKey('dividend-expected-add-${x.symbol}'),
+                              tooltip: l10n.portfolioAddDividend,
+                              visualDensity: VisualDensity.compact,
+                              icon: Icon(Icons.add_circle_outline_rounded, size: 18, color: p.muted),
+                              onPressed: () => showAddDividendDialog(
+                                context,
+                                symbol: x.symbol,
+                                currency: x.currency,
+                                amount: x.amount,
+                                date: x.date,
+                              ),
+                            ),
                           ],
                         ),
                       ),
@@ -264,22 +278,34 @@ class DividendsCard extends StatelessWidget {
 
 /// Kapott osztalék kézi felvétele: ticker, összeg, pénznem és a kifizetés napja.
 /// `true`-val tér vissza, ha bekerült.
-Future<bool> showAddDividendDialog(BuildContext context, {String? symbol, required String currency}) async {
+/// Osztalék felvétele; [amount] és [date] a várható kifizetésből előre kitöltve
+/// (akkor a megadott pénznem az irányadó, nem a pozícióé).
+Future<bool> showAddDividendDialog(
+  BuildContext context, {
+  String? symbol,
+  required String currency,
+  double? amount,
+  DateTime? date,
+}) async {
   final services = AppServices.of(context);
   // Ismert részvénynél a pozíció pénzneme a valószínű; különben az összesítésé.
-  final ccy = symbol == null ? currency : (services.portfolio.positionOf(symbol)?.currency ?? currency);
+  final ccy = symbol == null || amount != null
+      ? currency
+      : (services.portfolio.positionOf(symbol)?.currency ?? currency);
   final added = await showDialog<bool>(
     context: context,
-    builder: (_) => _AddDividendDialog(symbol: symbol, currency: ccy),
+    builder: (_) => _AddDividendDialog(symbol: symbol, currency: ccy, amount: amount, date: date),
   );
   return added ?? false;
 }
 
 class _AddDividendDialog extends StatefulWidget {
-  const _AddDividendDialog({this.symbol, required this.currency});
+  const _AddDividendDialog({this.symbol, required this.currency, this.amount, this.date});
 
   final String? symbol;
   final String currency;
+  final double? amount;
+  final DateTime? date;
 
   @override
   State<_AddDividendDialog> createState() => _AddDividendDialogState();
@@ -287,9 +313,9 @@ class _AddDividendDialog extends StatefulWidget {
 
 class _AddDividendDialogState extends State<_AddDividendDialog> {
   late final _symbol = TextEditingController(text: widget.symbol ?? '');
-  final _amount = TextEditingController();
+  late final _amount = TextEditingController(text: widget.amount == null ? '' : widget.amount!.toStringAsFixed(2));
   late final _currency = TextEditingController(text: widget.currency);
-  DateTime _date = DateTime.now();
+  late DateTime _date = widget.date ?? DateTime.now();
   bool _symbolError = false;
   String? _amountError;
   bool _currencyError = false;
