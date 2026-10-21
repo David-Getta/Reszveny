@@ -97,6 +97,31 @@ void main() {
     expect(find.text('Nothing moved much.'), findsOneWidget);
   });
 
+  test('a second check within a day is skipped; after a day away it reports against the earlier snapshot', () async {
+    SharedPreferences.setMockInitialValues({});
+    var now = DateTime(2026, 10, 20, 9);
+    final s = services(preferences: AppPreferences(favorites: ['AAPL']));
+    final away = AwaySummary(
+      marketData: s.marketData,
+      preferences: s.preferences,
+      portfolio: s.portfolio,
+      alerts: s.alerts,
+      events: s.events,
+      clock: () => now,
+    );
+    await away.check();
+    expect(away.report, isNull);
+    now = DateTime(2026, 10, 20, 15);
+    await away.check();
+    expect(away.report, isNull, reason: 'még aznap: nincs újabb ellenőrzés');
+    // A mentett pillanatképben az ár; egy nappal később ehhez mér (nem mozdult: csendes).
+    now = DateTime(2026, 10, 21, 12);
+    await away.check();
+    expect(away.report, isNotNull);
+    expect(away.report!.since, DateTime(2026, 10, 20, 9));
+    expect(away.report!.isQuiet, isTrue);
+  });
+
   testWidgets('the section can be hidden in settings', (tester) async {
     SharedPreferences.setMockInitialValues({
       AwaySummary.storeKey: _snapshot(DateTime.now().subtract(const Duration(days: 3)), {'AAPL': 200}),

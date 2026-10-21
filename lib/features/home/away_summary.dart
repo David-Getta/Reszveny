@@ -63,16 +63,19 @@ class AwaySummary extends ChangeNotifier {
 
   AwayReport? _report;
   AwayReport? get report => _report;
-  bool _checked = false;
+  DateTime? _lastCheck;
 
   /// A portfólió részvényei elöl, utána a kedvencek.
   List<String> get watched =>
       {for (final p in portfolio.positions) p.symbol.toUpperCase(), ...preferences.favorites}.take(maxSymbols).toList();
 
-  /// Egyszer, indításkor: az előző pillanatkép alapján a jelentés, majd az új pillanatkép.
+  /// Indításkor (és előtérbe kerüléskor, ha azóta legalább [minAway] telt el –
+  /// telefonon az app ritkán indul újra): az előző pillanatkép alapján a
+  /// jelentés, majd az új pillanatkép.
   Future<void> check() async {
-    if (_checked) return;
-    _checked = true;
+    final now = _clock();
+    if (_lastCheck case final last? when now.difference(last) < minAway) return;
+    _lastCheck = now;
     final symbols = watched;
     if (symbols.isEmpty) return;
     SharedPreferences prefs;
@@ -82,7 +85,6 @@ class AwaySummary extends ChangeNotifier {
       return;
     }
     final prev = _parse(prefs.getString(storeKey));
-    final now = _clock();
     final prices = <String, double>{};
     await Future.wait([
       for (final s in symbols)

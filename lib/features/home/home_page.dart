@@ -50,7 +50,7 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
   bool _busy = false;
   String? _busyLabel;
   List<StockCandidate>? _results;
@@ -80,6 +80,13 @@ class _HomePageState extends State<HomePage> {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) AppServices.of(context).away.check();
     });
+    WidgetsBinding.instance.addObserver(this);
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    // Telefonon az app napokig a háttérben lehet: előtérbe kerüléskor is nézzük.
+    if (state == AppLifecycleState.resumed && mounted) AppServices.of(context).away.check();
   }
 
   /// A keresőmező fókusza (a Ctrl/⌘+K billentyűparancshoz).
@@ -93,6 +100,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
     HomePage.focusSearch.removeListener(_focusSearch);
     _searchFocus.dispose();
     _debounce?.cancel();
