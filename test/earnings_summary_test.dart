@@ -21,6 +21,7 @@ import 'package:reszveny/features/market_data/demo_market_data_provider.dart';
 import 'package:reszveny/features/market_data/market_data_provider.dart';
 import 'package:reszveny/features/news/earnings_summarizer.dart';
 import 'package:reszveny/features/recognition/stock_recognizer.dart';
+import 'package:reszveny/features/stock_detail/stock_detail_page.dart';
 
 import 'app_widget_test.dart' show FakeNotifier;
 
@@ -172,6 +173,18 @@ void main() {
     expect(note, contains('https://investor.apple.com/q3'));
     expect(find.text('Saved to your notes'), findsOneWidget);
     expect(tester.widget<TextButton>(find.byKey(const ValueKey('research-save-note'))).onPressed, isNull);
+    // A részvény oldalán a jegyzet mezője azonnal mutatja a mentett szöveget.
+    Navigator.of(tester.element(find.byKey(const ValueKey('earnings-summary-sheet')))).pop();
+    await tester.pumpAndSettle();
+    final field = find.byKey(const ValueKey('notes-field'));
+    for (var i = 0; i < 30 && field.evaluate().isEmpty; i++) {
+      await tester.drag(
+        find.descendant(of: find.byType(StockDetailPage), matching: find.byType(Scrollable)).first,
+        const Offset(0, -400),
+      );
+      await tester.pumpAndSettle();
+    }
+    expect(tester.widget<TextField>(field).controller!.text, contains('Apple beat expectations: revenue grew 8%.'));
   });
 
   testWidgets('tapping the "beat/missed" notification opens the stock with the summary sheet', (tester) async {

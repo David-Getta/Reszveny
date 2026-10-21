@@ -26,11 +26,26 @@ class _NotesCardState extends State<NotesCard> {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    _text ??= TextEditingController(text: AppServices.of(context).notes.of(widget.symbol)?.text ?? '');
+    if (_notes == null) {
+      _notes = AppServices.of(context).notes;
+      _text = TextEditingController(text: _notes!.of(widget.symbol)?.text ?? '');
+      // Ha a jegyzet máshonnan változik (mentett AI-jegyzet, szinkron), a mező követi.
+      _notes!.addListener(_onStoreChanged);
+    }
+  }
+
+  void _onStoreChanged() {
+    final t = _notes!.of(widget.symbol)?.text ?? '';
+    if (t == _text!.text || (_debounce?.isActive ?? false)) return;
+    _text!.value = TextEditingValue(
+      text: t,
+      selection: TextSelection.collapsed(offset: t.length),
+    );
   }
 
   @override
   void dispose() {
+    _notes?.removeListener(_onStoreChanged);
     // Kilépéskor a még nem mentett szöveg is mentődik.
     if (_debounce?.isActive ?? false) {
       _debounce!.cancel();
@@ -43,7 +58,6 @@ class _NotesCardState extends State<NotesCard> {
   NotesStore? _notes;
 
   void _changed(String value) {
-    _notes = AppServices.of(context).notes;
     _debounce?.cancel();
     _debounce = Timer(const Duration(milliseconds: 600), () => _notes!.set(widget.symbol, value));
   }
