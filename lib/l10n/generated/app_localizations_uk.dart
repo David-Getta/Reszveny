@@ -2679,4 +2679,33 @@ class AppLocalizationsUk extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Суми такі, якими вони надійшли на ваш рахунок, у валюті виплати; підсумки перераховано за сьогоднішнім курсом. Для податкової декларації використовуйте звіт брокера.';
+
+  @override
+  String get awayTitle => 'Поки вас не було';
+
+  @override
+  String awaySince(String when) {
+    return 'З $when';
+  }
+
+  @override
+  String get awayQuiet => 'Нічого особливо не змінилося.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Спрацювало $count сповіщення',
+      many: 'Спрацювало $count сповіщень',
+      few: 'Спрацювало $count сповіщення',
+      one: 'Спрацювало $count сповіщення',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Опублікували звіти: $symbols';
+  }
 }

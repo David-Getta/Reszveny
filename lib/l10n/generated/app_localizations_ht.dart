@@ -2605,4 +2605,31 @@ class AppLocalizationsHt extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Montan yo jan yo te rive sou kont ou, nan lajan peman an; total yo konvèti nan to jodi a. Pou deklarasyon taks ou, sèvi ak relve koutye w la.';
+
+  @override
+  String get awayTitle => 'Pandan ou pa t la';
+
+  @override
+  String awaySince(String when) {
+    return 'Depi $when';
+  }
+
+  @override
+  String get awayQuiet => 'Anyen pa t deplase anpil.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count alèt deklanche',
+      one: '1 alèt deklanche',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Rezilta pibliye: $symbols';
+  }
 }

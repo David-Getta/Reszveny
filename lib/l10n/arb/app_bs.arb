@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{Dodana 1 dividenda} one{Dodana {count} dividenda} few{Dodane {count} dividende} other{Dodano {count} dividendi}}",
   "portfolioExportDividends": "Izvezi dividende (CSV)",
   "portfolioDividendDeleted": "Dividenda izbrisana",
-  "portfolioDividendsHint": "Iznosi onakvi kakvi su stigli na vaš račun, u valuti isplate; ukupni iznosi se preračunavaju po današnjem kursu. Za poreznu prijavu koristite izvod svog brokera."
+  "portfolioDividendsHint": "Iznosi onakvi kakvi su stigli na vaš račun, u valuti isplate; ukupni iznosi se preračunavaju po današnjem kursu. Za poreznu prijavu koristite izvod svog brokera.",
+  "awayTitle": "Dok ste bili odsutni",
+  "awaySince": "Od {when}",
+  "awayQuiet": "Ništa se nije mnogo promijenilo.",
+  "awayAlerts": "{count, plural, =1{Aktivirano 1 upozorenje} one{Aktivirano {count} upozorenje} few{Aktivirana {count} upozorenja} other{Aktivirano {count} upozorenja}}",
+  "awayReported": "Objavili rezultate: {symbols}"
 }

@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{נוסף דיבידנד אחד} two{נוספו {count} דיבידנדים} other{נוספו {count} דיבידנדים}}",
   "portfolioExportDividends": "ייצוא דיבידנדים (CSV)",
   "portfolioDividendDeleted": "הדיבידנד נמחק",
-  "portfolioDividendsHint": "הסכומים כפי שהגיעו לחשבון, במטבע התשלום; הסיכומים מומרים לפי שער היום. לדוח המס יש להשתמש בדוח של הברוקר."
+  "portfolioDividendsHint": "הסכומים כפי שהגיעו לחשבון, במטבע התשלום; הסיכומים מומרים לפי שער היום. לדוח המס יש להשתמש בדוח של הברוקר.",
+  "awayTitle": "בזמן שלא היית",
+  "awaySince": "מאז {when}",
+  "awayQuiet": "לא היו תנועות משמעותיות.",
+  "awayAlerts": "{count, plural, =1{הופעלה התרעה אחת} two{הופעלו שתי התרעות} other{הופעלו {count} התרעות}}",
+  "awayReported": "פרסמו תוצאות: {symbols}"
 }

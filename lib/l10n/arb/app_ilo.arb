@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 dibidendo ti nainayon} other{{count} a dibidendo ti nainayon}}",
   "portfolioExportDividends": "I-export dagiti dibidendo (CSV)",
   "portfolioDividendDeleted": "Naikkat ti dibidendo",
-  "portfolioDividendsHint": "Dagiti kantidad kas iti isasangpetda iti account-mo, iti currency ti panagbayad; dagiti total ket na-convert iti rate ita. Para iti tax return-mo, usarem ti statement ti broker-mo."
+  "portfolioDividendsHint": "Dagiti kantidad kas iti isasangpetda iti account-mo, iti currency ti panagbayad; dagiti total ket na-convert iti rate ita. Para iti tax return-mo, usarem ti statement ti broker-mo.",
+  "awayTitle": "Bayat nga awanka",
+  "awaySince": "Manipud {when}",
+  "awayQuiet": "Awan ti nagbaliw unay.",
+  "awayAlerts": "{count, plural, =1{1 nga alerto ti na-trigger} other{{count} nga alerto ti na-trigger}}",
+  "awayReported": "Nangipablaak iti resulta: {symbols}"
 }

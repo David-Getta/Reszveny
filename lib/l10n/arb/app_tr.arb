@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 temettü eklendi} other{{count} temettü eklendi}}",
   "portfolioExportDividends": "Temettüleri dışa aktar (CSV)",
   "portfolioDividendDeleted": "Temettü silindi",
-  "portfolioDividendsHint": "Tutarlar hesabınıza geldiği şekliyle, ödeme para biriminde; toplamlar bugünkü kurla çevrilir. Vergi beyannameniz için aracı kurumunuzun ekstresini kullanın."
+  "portfolioDividendsHint": "Tutarlar hesabınıza geldiği şekliyle, ödeme para biriminde; toplamlar bugünkü kurla çevrilir. Vergi beyannameniz için aracı kurumunuzun ekstresini kullanın.",
+  "awayTitle": "Siz yokken",
+  "awaySince": "{when} tarihinden beri",
+  "awayQuiet": "Pek bir hareket olmadı.",
+  "awayAlerts": "{count, plural, =1{1 alarm tetiklendi} other{{count} alarm tetiklendi}}",
+  "awayReported": "Açıklanan sonuçlar: {symbols}"
 }

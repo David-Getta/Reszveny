@@ -2614,4 +2614,31 @@ class AppLocalizationsLua extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Makuta mu mushindu uakafikawu mu konte webe, mu makuta a difuta; bungi bujima budi bushintuluka ku mushinga wa lelu. Bua mukanda webe wa mpaku, enza mudimu ne mukanda wa broker webe.';
+
+  @override
+  String get awayTitle => 'Pauvua kuyi muikale';
+
+  @override
+  String awaySince(String when) {
+    return 'Kutuadijila ku $when';
+  }
+
+  @override
+  String get awayQuiet => 'Kakuena tshintu tshiakashintuluka bikole to.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Madimuija $count akapatuka',
+      one: 'Didimuija 1 diakapatuka',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Bakapatula bipeta biabu: $symbols';
+  }
 }

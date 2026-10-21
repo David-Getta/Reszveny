@@ -2614,4 +2614,31 @@ class AppLocalizationsSq extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Shumat ashtu si mbërritën në llogarinë tuaj, në monedhën e pagesës; totalet konvertohen me kursin e sotëm. Për deklaratën tatimore përdorni pasqyrën e brokerit tuaj.';
+
+  @override
+  String get awayTitle => 'Ndërsa ishit larg';
+
+  @override
+  String awaySince(String when) {
+    return 'Që nga $when';
+  }
+
+  @override
+  String get awayQuiet => 'Asgjë nuk lëvizi shumë.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count alarme u aktivizuan',
+      one: '1 alarm u aktivizua',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Rezultate të publikuara: $symbols';
+  }
 }

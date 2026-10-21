@@ -2613,4 +2613,31 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Summalar hisobingizga kelgan holatda, toʻlov valyutasida; jami bugungi kurs boʻyicha konvertatsiya qilinadi. Soliq deklaratsiyasi uchun brokeringiz hisobotidan foydalaning.';
+
+  @override
+  String get awayTitle => 'Siz yoʻq boʻlganda';
+
+  @override
+  String awaySince(String when) {
+    return '${when}dan beri';
+  }
+
+  @override
+  String get awayQuiet => 'Katta oʻzgarish boʻlmadi.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ta ogohlantirish ishga tushdi',
+      one: '1 ta ogohlantirish ishga tushdi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Natijalar eʼlon qilindi: $symbols';
+  }
 }

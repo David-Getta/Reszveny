@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{Mũgai wa faida 1 nĩwongereirwo} other{Mĩgai ya faida {count} nĩyongereirwo}}",
   "portfolioExportDividends": "Ruta mĩgai ya faida (CSV)",
   "portfolioDividendDeleted": "Mũgai wa faida nĩweherio",
-  "portfolioDividendsHint": "Mbeca o ta ũrĩa ciakinyire akaũnti-inĩ yaku, na mbeca cia kũrĩhwo; mũigana wothe ũgarũragwo na thogora wa ũmũthĩ. Nĩ ũndũ wa riboti yaku ya mũthiaro, hũthĩra riboti ya broker waku."
+  "portfolioDividendsHint": "Mbeca o ta ũrĩa ciakinyire akaũnti-inĩ yaku, na mbeca cia kũrĩhwo; mũigana wothe ũgarũragwo na thogora wa ũmũthĩ. Nĩ ũndũ wa riboti yaku ya mũthiaro, hũthĩra riboti ya broker waku.",
+  "awayTitle": "Rĩrĩa ũtaarĩ ho",
+  "awaySince": "Kuuma {when}",
+  "awayQuiet": "Gũtirĩ kĩndũ kĩacenjirie mũno.",
+  "awayAlerts": "{count, plural, =1{Kĩmenyithia 1 nĩkĩaumire} other{Imenyithia {count} nĩciaumire}}",
+  "awayReported": "Nĩmaarutire moimĩrĩro: {symbols}"
 }

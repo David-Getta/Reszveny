@@ -2608,4 +2608,31 @@ class AppLocalizationsSv extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Beloppen som de kom in på ditt konto, i utbetalningsvalutan; summor räknas om till dagens kurs. Använd mäklarens kontrolluppgifter till deklarationen.';
+
+  @override
+  String get awayTitle => 'Medan du var borta';
+
+  @override
+  String awaySince(String when) {
+    return 'Sedan $when';
+  }
+
+  @override
+  String get awayQuiet => 'Inte mycket har rört sig.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count larm utlösta',
+      one: '1 larm utlöst',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Rapporterade resultat: $symbols';
+  }
 }

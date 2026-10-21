@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{Etinyere nkesa uru 1} other{Etinyere nkesa uru {count}}}",
   "portfolioExportDividends": "Bupụ nkesa uru (CSV)",
   "portfolioDividendDeleted": "Ehichapụla nkesa uru",
-  "portfolioDividendsHint": "Ego ndị ahụ dị ka ha si bata n'akaụntụ gị, n'ego e ji kwụọ; a na-agbanwe mkpokọta na ọnụ ahịa taa. Maka nkwupụta ụtụ isi gị, jiri akwụkwọ nkọwa nke broker gị."
+  "portfolioDividendsHint": "Ego ndị ahụ dị ka ha si bata n'akaụntụ gị, n'ego e ji kwụọ; a na-agbanwe mkpokọta na ọnụ ahịa taa. Maka nkwupụta ụtụ isi gị, jiri akwụkwọ nkọwa nke broker gị.",
+  "awayTitle": "Mgbe ị nọghị",
+  "awaySince": "Kemgbe {when}",
+  "awayQuiet": "Ọ dịghị ihe gbanwere nke ukwuu.",
+  "awayAlerts": "{count, plural, =1{Ọkwa 1 dara} other{Ọkwa {count} dara}}",
+  "awayReported": "Kwupụtara nsonaazụ: {symbols}"
 }

@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{Diviidendii 1 dabalame} other{Diviidendii {count} dabalaman}}",
   "portfolioExportDividends": "Diviidendii ekspoortii godhi (CSV)",
   "portfolioDividendDeleted": "Diviidendiin haqame",
-  "portfolioDividendsHint": "Maallaqni akkuma herrega kee irra ga'etti, maallaqa kaffaltiitiin; ida'amni sadarkaa har'aatiin jijjiirama. Gabaasa gibiraa keetiif, ibsa birookerii keetii fayyadami."
+  "portfolioDividendsHint": "Maallaqni akkuma herrega kee irra ga'etti, maallaqa kaffaltiitiin; ida'amni sadarkaa har'aatiin jijjiirama. Gabaasa gibiraa keetiif, ibsa birookerii keetii fayyadami.",
+  "awayTitle": "Yeroo ati hin turin",
+  "awaySince": "{when} irraa eegalee",
+  "awayQuiet": "Wanti baay'ee jijjiirame hin jiru.",
+  "awayAlerts": "{count, plural, =1{Akeekkachiisa 1 ka'e} other{Akeekkachiisa {count} ka'an}}",
+  "awayReported": "Bu'aa gabaafame: {symbols}"
 }

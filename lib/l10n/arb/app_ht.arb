@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 dividann ajoute} other{{count} dividann ajoute}}",
   "portfolioExportDividends": "Ekspòte dividann (CSV)",
   "portfolioDividendDeleted": "Dividann efase",
-  "portfolioDividendsHint": "Montan yo jan yo te rive sou kont ou, nan lajan peman an; total yo konvèti nan to jodi a. Pou deklarasyon taks ou, sèvi ak relve koutye w la."
+  "portfolioDividendsHint": "Montan yo jan yo te rive sou kont ou, nan lajan peman an; total yo konvèti nan to jodi a. Pou deklarasyon taks ou, sèvi ak relve koutye w la.",
+  "awayTitle": "Pandan ou pa t la",
+  "awaySince": "Depi {when}",
+  "awayQuiet": "Anyen pa t deplase anpil.",
+  "awayAlerts": "{count, plural, =1{1 alèt deklanche} other{{count} alèt deklanche}}",
+  "awayReported": "Rezilta pibliye: {symbols}"
 }

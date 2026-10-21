@@ -2610,4 +2610,31 @@ class AppLocalizationsSu extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Jumlah sakumaha asupna kana akun anjeun, dina mata uang pamayaran; totalna dikonvérsi ku kurs dinten ieu. Kanggo laporan pajeg, anggo laporan ti broker anjeun.';
+
+  @override
+  String get awayTitle => 'Nalika anjeun teu aya';
+
+  @override
+  String awaySince(String when) {
+    return 'Ti $when';
+  }
+
+  @override
+  String get awayQuiet => 'Teu aya nu robih pisan.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count peringatan dipicu',
+      one: '1 peringatan dipicu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Hasil anu dilaporkeun: $symbols';
+  }
 }

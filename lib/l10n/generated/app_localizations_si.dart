@@ -2604,4 +2604,31 @@ class AppLocalizationsSi extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'මුදල් ඔබේ ගිණුමට ලැබුණු ආකාරයටම, ගෙවීම් මුදල් වර්ගයෙන්; එකතු අද අනුපාතයට පරිවර්තනය කෙරේ. බදු වාර්තාව සඳහා ඔබේ බ්‍රෝකර්ගේ ප්‍රකාශය භාවිත කරන්න.';
+
+  @override
+  String get awayTitle => 'ඔබ නොසිටි අතරතුර';
+
+  @override
+  String awaySince(String when) {
+    return '$when සිට';
+  }
+
+  @override
+  String get awayQuiet => 'විශේෂ වෙනසක් සිදු වී නැත.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ඇඟවීම් $countක් ක්‍රියාත්මක විය',
+      one: 'ඇඟවීම් 1ක් ක්‍රියාත්මක විය',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'ප්‍රතිඵල නිකුත් කළා: $symbols';
+  }
 }

@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 የትርፍ ድርሻ ታክሏል} other{{count} የትርፍ ድርሻዎች ታክለዋል}}",
   "portfolioExportDividends": "የትርፍ ድርሻዎችን ላክ (CSV)",
   "portfolioDividendDeleted": "የትርፍ ድርሻ ተሰርዟል",
-  "portfolioDividendsHint": "መጠኖቹ በመለያዎ ላይ እንደደረሱ፣ በክፍያው ምንዛሬ ናቸው፤ ድምሮች በዛሬው ዋጋ ይቀየራሉ። ለግብር መግለጫዎ የደላላዎን መግለጫ ይጠቀሙ።"
+  "portfolioDividendsHint": "መጠኖቹ በመለያዎ ላይ እንደደረሱ፣ በክፍያው ምንዛሬ ናቸው፤ ድምሮች በዛሬው ዋጋ ይቀየራሉ። ለግብር መግለጫዎ የደላላዎን መግለጫ ይጠቀሙ።",
+  "awayTitle": "እርስዎ በሌሉበት ጊዜ",
+  "awaySince": "ከ{when} ጀምሮ",
+  "awayQuiet": "ብዙም የተለወጠ ነገር የለም።",
+  "awayAlerts": "{count, plural, =1{1 ማስጠንቀቂያ ተነሳ} other{{count} ማስጠንቀቂያዎች ተነሱ}}",
+  "awayReported": "ውጤቶቻቸውን ያሳወቁ፦ {symbols}"
 }

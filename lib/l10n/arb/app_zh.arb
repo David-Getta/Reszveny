@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{已添加 1 笔股息} other{已添加 {count} 笔股息}}",
   "portfolioExportDividends": "导出股息（CSV）",
   "portfolioDividendDeleted": "股息已删除",
-  "portfolioDividendsHint": "金额以到账时的派息货币显示；合计按今日汇率换算。报税请以券商对账单为准。"
+  "portfolioDividendsHint": "金额以到账时的派息货币显示；合计按今日汇率换算。报税请以券商对账单为准。",
+  "awayTitle": "您离开期间",
+  "awaySince": "自 {when} 起",
+  "awayQuiet": "没有明显变动。",
+  "awayAlerts": "{count, plural, =1{1 个提醒已触发} other{{count} 个提醒已触发}}",
+  "awayReported": "已公布财报：{symbols}"
 }

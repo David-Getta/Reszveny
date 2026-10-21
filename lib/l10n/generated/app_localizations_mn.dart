@@ -2608,4 +2608,31 @@ class AppLocalizationsMn extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Дүнгүүд таны данс руу орж ирсэн хэлбэрээр, төлбөрийн валютаар; нийлбэрийг өнөөдрийн ханшаар хөрвүүлнэ. Татварын тайландаа брокерийнхоо хуулгыг ашиглана уу.';
+
+  @override
+  String get awayTitle => 'Таныг эзгүй байх хооронд';
+
+  @override
+  String awaySince(String when) {
+    return '$when-с хойш';
+  }
+
+  @override
+  String get awayQuiet => 'Онцын хөдөлгөөн гарсангүй.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count сэрэмжлүүлэг идэвхжсэн',
+      one: '1 сэрэмжлүүлэг идэвхжсэн',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Үр дүн зарласан: $symbols';
+  }
 }

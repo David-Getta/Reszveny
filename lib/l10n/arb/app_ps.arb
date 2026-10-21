@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 ډیویډنډ اضافه شو} other{{count} ډیویډنډونه اضافه شول}}",
   "portfolioExportDividends": "ډیویډنډونه صادر کړئ (CSV)",
   "portfolioDividendDeleted": "ډیویډنډ حذف شو",
-  "portfolioDividendsHint": "اندازې هغسې دي چې ستاسو حساب ته راغلي، د تادیې په اسعارو؛ مجموعې د نن ورځې په نرخ بدلېږي. د مالیې راپور لپاره د خپل بروکر بیان وکاروئ."
+  "portfolioDividendsHint": "اندازې هغسې دي چې ستاسو حساب ته راغلي، د تادیې په اسعارو؛ مجموعې د نن ورځې په نرخ بدلېږي. د مالیې راپور لپاره د خپل بروکر بیان وکاروئ.",
+  "awayTitle": "کله چې تاسو نه وئ",
+  "awaySince": "له {when} راهیسې",
+  "awayQuiet": "څه ډېر بدلون نه و.",
+  "awayAlerts": "{count, plural, =1{1 خبرتیا فعاله شوه} other{{count} خبرتیاوې فعالې شوې}}",
+  "awayReported": "خپرې شوې پایلې: {symbols}"
 }

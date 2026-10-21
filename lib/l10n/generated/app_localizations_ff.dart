@@ -2601,4 +2601,31 @@ class AppLocalizationsFf extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Keeweele no ɗe ari e konte maa, e kaalis yoɓdi; kuuɓtidinal waylete e coggu hannde. Ngam winndannde lempoo maa, huutoro ɓataake broker maa.';
+
+  @override
+  String get awayTitle => 'Tuma nde a woodaano';
+
+  @override
+  String awaySince(String when) {
+    return 'Gila $when';
+  }
+
+  @override
+  String get awayQuiet => 'Hay huunde dillaani sanne.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Tintinooli $count yaltii',
+      one: 'Tintinol 1 yaltii',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Ɓe yaltini keɓe maɓɓe: $symbols';
+  }
 }

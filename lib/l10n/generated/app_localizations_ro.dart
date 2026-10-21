@@ -2648,4 +2648,32 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Sumele așa cum au ajuns în contul tău, în moneda plății; totalurile sunt convertite la cursul de azi. Pentru declarația fiscală, folosește extrasul brokerului.';
+
+  @override
+  String get awayTitle => 'Cât ai lipsit';
+
+  @override
+  String awaySince(String when) {
+    return 'Din $when';
+  }
+
+  @override
+  String get awayQuiet => 'Nimic nu s-a mișcat prea mult.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count de alerte declanșate',
+      few: '$count alerte declanșate',
+      one: '1 alertă declanșată',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Rezultate raportate: $symbols';
+  }
 }

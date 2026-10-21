@@ -2616,4 +2616,31 @@ class AppLocalizationsHy extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Գումարները՝ այնպես, ինչպես հասել են ձեր հաշվին, վճարման արժույթով. հանրագումարները փոխարկվում են այսօրվա փոխարժեքով։ Հարկային հայտարարագրի համար օգտագործեք ձեր բրոքերի քաղվածքը։';
+
+  @override
+  String get awayTitle => 'Քանի դեռ բացակայում էիք';
+
+  @override
+  String awaySince(String when) {
+    return '$when-ից';
+  }
+
+  @override
+  String get awayQuiet => 'Գրեթե ոչինչ չի փոխվել։';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Գործարկվել է $count ծանուցում',
+      one: 'Գործարկվել է 1 ծանուցում',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Հրապարակել են արդյունքները՝ $symbols';
+  }
 }

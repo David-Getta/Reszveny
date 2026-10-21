@@ -2676,4 +2676,33 @@ class AppLocalizationsLt extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Sumos tokios, kokios atėjo į jūsų sąskaitą, išmokėjimo valiuta; bendros sumos konvertuojamos šiandienos kursu. Mokesčių deklaracijai naudokite savo brokerio išrašą.';
+
+  @override
+  String get awayTitle => 'Kol jūsų nebuvo';
+
+  @override
+  String awaySince(String when) {
+    return 'Nuo $when';
+  }
+
+  @override
+  String get awayQuiet => 'Niekas labai nepasikeitė.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Suveikė $count įspėjimų',
+      many: 'Suveikė $count įspėjimo',
+      few: 'Suveikė $count įspėjimai',
+      one: 'Suveikė $count įspėjimas',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Paskelbė rezultatus: $symbols';
+  }
 }

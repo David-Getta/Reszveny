@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 faa'iido-saami la daray} other{{count} faa'iido-saami la daray}}",
   "portfolioExportDividends": "Dhoofi faa'iido-saamiyada (CSV)",
   "portfolioDividendDeleted": "Faa'iido-saami la tirtiray",
-  "portfolioDividendsHint": "Lacagaha sida ay ku soo galeen akoonkaaga, lacagta lagu bixiyay; wadarta waxaa lagu beddelaa sarrifka maanta. Canshuurtaada, isticmaal warbixinta broker-kaaga."
+  "portfolioDividendsHint": "Lacagaha sida ay ku soo galeen akoonkaaga, lacagta lagu bixiyay; wadarta waxaa lagu beddelaa sarrifka maanta. Canshuurtaada, isticmaal warbixinta broker-kaaga.",
+  "awayTitle": "Intaad maqnayd",
+  "awaySince": "Laga soo bilaabo {when}",
+  "awayQuiet": "Wax badan isma beddelin.",
+  "awayAlerts": "{count, plural, =1{1 digniin ayaa shaqeysay} other{{count} digniin ayaa shaqeeyay}}",
+  "awayReported": "Natiijooyin la shaaciyay: {symbols}"
 }

@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{تمت إضافة توزيعة أرباح واحدة} two{تمت إضافة توزيعتَي أرباح} few{تمت إضافة {count} توزيعات أرباح} many{تمت إضافة {count} توزيعة أرباح} other{تمت إضافة {count} توزيعة أرباح}}",
   "portfolioExportDividends": "تصدير توزيعات الأرباح (CSV)",
   "portfolioDividendDeleted": "تم حذف توزيعة الأرباح",
-  "portfolioDividendsHint": "المبالغ كما وصلت إلى حسابك، بعملة الدفع؛ وتُحوَّل المجاميع بسعر اليوم. لإقرارك الضريبي، استخدم كشف حساب وسيطك."
+  "portfolioDividendsHint": "المبالغ كما وصلت إلى حسابك، بعملة الدفع؛ وتُحوَّل المجاميع بسعر اليوم. لإقرارك الضريبي، استخدم كشف حساب وسيطك.",
+  "awayTitle": "أثناء غيابك",
+  "awaySince": "منذ {when}",
+  "awayQuiet": "لم يتحرك شيء كثيرًا.",
+  "awayAlerts": "{count, plural, zero{لم يتم تفعيل أي تنبيه} =1{تم تفعيل تنبيه واحد} =2{تم تفعيل تنبيهين} few{تم تفعيل {count} تنبيهات} many{تم تفعيل {count} تنبيهًا} other{تم تفعيل {count} تنبيه}}",
+  "awayReported": "أعلنت نتائجها: {symbols}"
 }

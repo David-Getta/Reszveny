@@ -2605,4 +2605,31 @@ class AppLocalizationsOr extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'ରାଶି ଆପଣଙ୍କ ଖାତାରେ ଯେପରି ଆସିଲା, ପେଆଉଟ୍ ମୁଦ୍ରାରେ; ମୋଟ ରାଶି ଆଜିର ଦରରେ ରୂପାନ୍ତରିତ ହୁଏ। ଟିକସ ରିଟର୍ଣ୍ଣ ପାଇଁ ଆପଣଙ୍କ ବ୍ରୋକରର ଷ୍ଟେଟମେଣ୍ଟ ବ୍ୟବହାର କରନ୍ତୁ।';
+
+  @override
+  String get awayTitle => 'ଆପଣ ନଥିବା ସମୟରେ';
+
+  @override
+  String awaySince(String when) {
+    return '$when ଠାରୁ';
+  }
+
+  @override
+  String get awayQuiet => 'ବିଶେଷ କିଛି ବଦଳିନାହିଁ।';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ଆଲର୍ଟ ଟ୍ରିଗର ହେଲା',
+      one: '1 ଆଲର୍ଟ ଟ୍ରିଗର ହେଲା',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'ଫଳାଫଳ ଘୋଷିତ: $symbols';
+  }
 }

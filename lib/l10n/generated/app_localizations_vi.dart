@@ -2600,4 +2600,31 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Số tiền đúng như đã về tài khoản của bạn, theo đồng tiền chi trả; tổng được quy đổi theo tỷ giá hôm nay. Khi kê khai thuế, hãy dùng sao kê của công ty chứng khoán.';
+
+  @override
+  String get awayTitle => 'Trong lúc bạn vắng mặt';
+
+  @override
+  String awaySince(String when) {
+    return 'Từ $when';
+  }
+
+  @override
+  String get awayQuiet => 'Không có biến động đáng kể.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count cảnh báo đã kích hoạt',
+      one: '1 cảnh báo đã kích hoạt',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Đã công bố kết quả: $symbols';
+  }
 }

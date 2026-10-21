@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 utdelning tillagd} other{{count} utdelningar tillagda}}",
   "portfolioExportDividends": "Exportera utdelningar (CSV)",
   "portfolioDividendDeleted": "Utdelning borttagen",
-  "portfolioDividendsHint": "Beloppen som de kom in på ditt konto, i utbetalningsvalutan; summor räknas om till dagens kurs. Använd mäklarens kontrolluppgifter till deklarationen."
+  "portfolioDividendsHint": "Beloppen som de kom in på ditt konto, i utbetalningsvalutan; summor räknas om till dagens kurs. Använd mäklarens kontrolluppgifter till deklarationen.",
+  "awayTitle": "Medan du var borta",
+  "awaySince": "Sedan {when}",
+  "awayQuiet": "Inte mycket har rört sig.",
+  "awayAlerts": "{count, plural, =1{1 larm utlöst} other{{count} larm utlösta}}",
+  "awayReported": "Rapporterade resultat: {symbols}"
 }

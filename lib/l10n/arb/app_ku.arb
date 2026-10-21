@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 dividend hat zêdekirin} other{{count} dividend hatin zêdekirin}}",
   "portfolioExportDividends": "Dividendan eksport bike (CSV)",
   "portfolioDividendDeleted": "Dividend hat jêbirin",
-  "portfolioDividendsHint": "Mîqdar wek ku gihîştine hesabê te, bi diravê dayînê; giştî bi rêjeya îro tên veguhertin. Ji bo danezana baca xwe, raporta brokerê xwe bi kar bîne."
+  "portfolioDividendsHint": "Mîqdar wek ku gihîştine hesabê te, bi diravê dayînê; giştî bi rêjeya îro tên veguhertin. Ji bo danezana baca xwe, raporta brokerê xwe bi kar bîne.",
+  "awayTitle": "Dema tu ne li vir bûyî",
+  "awaySince": "Ji {when} ve",
+  "awayQuiet": "Tiştek zêde neguherî.",
+  "awayAlerts": "{count, plural, =1{1 hişyarî çalak bû} other{{count} hişyarî çalak bûn}}",
+  "awayReported": "Encam eşkere kirin: {symbols}"
 }

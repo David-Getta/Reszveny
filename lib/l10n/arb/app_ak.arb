@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{Wɔde dividend 1 aka ho} other{Wɔde dividend {count} aka ho}}",
   "portfolioExportDividends": "Fa dividend kɔ (CSV)",
   "portfolioDividendDeleted": "Wɔayi dividend no afi hɔ",
-  "portfolioDividendsHint": "Sika dodow sɛnea ɛbaa wo akontaabu so, wɔ sika a wɔde tuaa mu; wɔde nnɛ bo na ɛsesa nea aboaboa ano no. Fa wo broker nkrataa di dwuma ma wo tow."
+  "portfolioDividendsHint": "Sika dodow sɛnea ɛbaa wo akontaabu so, wɔ sika a wɔde tuaa mu; wɔde nnɛ bo na ɛsesa nea aboaboa ano no. Fa wo broker nkrataa di dwuma ma wo tow.",
+  "awayTitle": "Bere a wonni hɔ no",
+  "awaySince": "Efi {when}",
+  "awayQuiet": "Biribiara anhinhim kɛse.",
+  "awayAlerts": "{count, plural, =1{Kɔkɔbɔ 1 na ɛbaa} other{Kɔkɔbɔ {count} na ɛbaa}}",
+  "awayReported": "Adwuma mu nsunsuanso a wɔdaa no adi: {symbols}"
 }

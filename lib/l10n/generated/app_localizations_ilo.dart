@@ -2626,4 +2626,31 @@ class AppLocalizationsIlo extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Dagiti kantidad kas iti isasangpetda iti account-mo, iti currency ti panagbayad; dagiti total ket na-convert iti rate ita. Para iti tax return-mo, usarem ti statement ti broker-mo.';
+
+  @override
+  String get awayTitle => 'Bayat nga awanka';
+
+  @override
+  String awaySince(String when) {
+    return 'Manipud $when';
+  }
+
+  @override
+  String get awayQuiet => 'Awan ti nagbaliw unay.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count nga alerto ti na-trigger',
+      one: '1 nga alerto ti na-trigger',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Nangipablaak iti resulta: $symbols';
+  }
 }

@@ -2616,4 +2616,31 @@ class AppLocalizationsSo extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Lacagaha sida ay ku soo galeen akoonkaaga, lacagta lagu bixiyay; wadarta waxaa lagu beddelaa sarrifka maanta. Canshuurtaada, isticmaal warbixinta broker-kaaga.';
+
+  @override
+  String get awayTitle => 'Intaad maqnayd';
+
+  @override
+  String awaySince(String when) {
+    return 'Laga soo bilaabo $when';
+  }
+
+  @override
+  String get awayQuiet => 'Wax badan isma beddelin.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count digniin ayaa shaqeeyay',
+      one: '1 digniin ayaa shaqeysay',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Natiijooyin la shaaciyay: $symbols';
+  }
 }

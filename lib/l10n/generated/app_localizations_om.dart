@@ -2616,4 +2616,31 @@ class AppLocalizationsOm extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Maallaqni akkuma herrega kee irra ga\'etti, maallaqa kaffaltiitiin; ida\'amni sadarkaa har\'aatiin jijjiirama. Gabaasa gibiraa keetiif, ibsa birookerii keetii fayyadami.';
+
+  @override
+  String get awayTitle => 'Yeroo ati hin turin';
+
+  @override
+  String awaySince(String when) {
+    return '$when irraa eegalee';
+  }
+
+  @override
+  String get awayQuiet => 'Wanti baay\'ee jijjiirame hin jiru.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Akeekkachiisa $count ka\'an',
+      one: 'Akeekkachiisa 1 ka\'e',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Bu\'aa gabaafame: $symbols';
+  }
 }

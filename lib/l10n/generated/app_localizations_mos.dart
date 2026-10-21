@@ -2594,4 +2594,31 @@ class AppLocalizationsMos extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Ligdã yaa wa a sẽn wa f kont pʋgẽ, ne yaoob ligdã; a fãa toeemda ne rũndã kʋʋngã. F lampo sebrã yĩnga, tũnug ne f broker-ã sebrã.';
+
+  @override
+  String get awayTitle => 'F sẽn da ka be wã';
+
+  @override
+  String awaySince(String when) {
+    return 'Sẽn sɩng $when';
+  }
+
+  @override
+  String get awayQuiet => 'Bũmb ka toeem wʋsg ye.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Keoogo $count n yik',
+      one: 'Keoog a 1 n yik',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Biisã sẽn togs: $symbols';
+  }
 }

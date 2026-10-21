@@ -2602,4 +2602,31 @@ class AppLocalizationsIg extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Ego ndị ahụ dị ka ha si bata n\'akaụntụ gị, n\'ego e ji kwụọ; a na-agbanwe mkpokọta na ọnụ ahịa taa. Maka nkwupụta ụtụ isi gị, jiri akwụkwọ nkọwa nke broker gị.';
+
+  @override
+  String get awayTitle => 'Mgbe ị nọghị';
+
+  @override
+  String awaySince(String when) {
+    return 'Kemgbe $when';
+  }
+
+  @override
+  String get awayQuiet => 'Ọ dịghị ihe gbanwere nke ukwuu.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ọkwa $count dara',
+      one: 'Ọkwa 1 dara',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Kwupụtara nsonaazụ: $symbols';
+  }
 }

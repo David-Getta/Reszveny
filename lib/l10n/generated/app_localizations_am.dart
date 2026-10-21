@@ -2574,4 +2574,31 @@ class AppLocalizationsAm extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'መጠኖቹ በመለያዎ ላይ እንደደረሱ፣ በክፍያው ምንዛሬ ናቸው፤ ድምሮች በዛሬው ዋጋ ይቀየራሉ። ለግብር መግለጫዎ የደላላዎን መግለጫ ይጠቀሙ።';
+
+  @override
+  String get awayTitle => 'እርስዎ በሌሉበት ጊዜ';
+
+  @override
+  String awaySince(String when) {
+    return 'ከ$when ጀምሮ';
+  }
+
+  @override
+  String get awayQuiet => 'ብዙም የተለወጠ ነገር የለም።';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ማስጠንቀቂያዎች ተነሱ',
+      one: '1 ማስጠንቀቂያ ተነሳ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'ውጤቶቻቸውን ያሳወቁ፦ $symbols';
+  }
 }

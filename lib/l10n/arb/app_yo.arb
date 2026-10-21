@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{A fi ìpín èrè 1 kún} other{A fi ìpín èrè {count} kún}}",
   "portfolioExportDividends": "Gbé ìpín èrè jáde (CSV)",
   "portfolioDividendDeleted": "A ti pa ìpín èrè rẹ́",
-  "portfolioDividendsHint": "Owó gẹ́gẹ́ bí ó ṣe wọ àkáǹtì rẹ, nínú owó ìsanwó; a yí àpapọ̀ padà ní ìwọ̀n òní. Fún ìkéde owó-orí rẹ, lo ìwé àkọsílẹ̀ broker rẹ."
+  "portfolioDividendsHint": "Owó gẹ́gẹ́ bí ó ṣe wọ àkáǹtì rẹ, nínú owó ìsanwó; a yí àpapọ̀ padà ní ìwọ̀n òní. Fún ìkéde owó-orí rẹ, lo ìwé àkọsílẹ̀ broker rẹ.",
+  "awayTitle": "Nígbà tí o kò sí",
+  "awaySince": "Láti {when}",
+  "awayQuiet": "Kò sí ohun tó yí padà púpọ̀.",
+  "awayAlerts": "{count, plural, =1{Ìkìlọ̀ 1 ti dún} other{Ìkìlọ̀ {count} ti dún}}",
+  "awayReported": "Àbájáde tí a tẹ̀jáde: {symbols}"
 }

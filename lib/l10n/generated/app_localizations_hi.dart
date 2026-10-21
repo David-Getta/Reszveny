@@ -2606,4 +2606,31 @@ class AppLocalizationsHi extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'राशियाँ वैसी ही जैसी आपके खाते में आईं, भुगतान की मुद्रा में; कुल आज की दर पर बदला जाता है। टैक्स रिटर्न के लिए अपने ब्रोकर का स्टेटमेंट इस्तेमाल करें।';
+
+  @override
+  String get awayTitle => 'जब आप दूर थे';
+
+  @override
+  String awaySince(String when) {
+    return '$when से';
+  }
+
+  @override
+  String get awayQuiet => 'कुछ खास नहीं बदला।';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count अलर्ट ट्रिगर हुए',
+      one: '1 अलर्ट ट्रिगर हुआ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'नतीजे जारी किए: $symbols';
+  }
 }

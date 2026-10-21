@@ -2604,4 +2604,31 @@ class AppLocalizationsBm extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Wari hakɛw i n\'a fɔ u sera aw ka jate kan cogo min na, sarali wari la; jatebɔ bɛɛ bɛ yɛlɛma ni bi sɔngɔ ye. Aw ka nisɔngɔ sɛbɛn kama, aw ka broker ka sɛbɛn de bɛ baara kɛ ni a ye.';
+
+  @override
+  String get awayTitle => 'I tun tɛ yen tuma na';
+
+  @override
+  String awaySince(String when) {
+    return 'Kabini $when';
+  }
+
+  @override
+  String get awayQuiet => 'Foyi ma yɛlɛma kosɛbɛ.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Lasɔmini $count bɔra',
+      one: 'Lasɔmini 1 bɔra',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Jaabiw labɔlen: $symbols';
+  }
 }

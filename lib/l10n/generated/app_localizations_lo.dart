@@ -2580,4 +2580,31 @@ class AppLocalizationsLo extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'ຈຳນວນເງິນຕາມທີ່ເຂົ້າບັນຊີຂອງທ່ານ ໃນສະກຸນເງິນທີ່ຈ່າຍ; ຍອດລວມຖືກແປງຕາມອັດຕາມື້ນີ້. ສຳລັບການແຈ້ງພາສີ ໃຫ້ໃຊ້ໃບລາຍງານຈາກໂບຣກເກີຂອງທ່ານ.';
+
+  @override
+  String get awayTitle => 'ຕອນທ່ານບໍ່ຢູ່';
+
+  @override
+  String awaySince(String when) {
+    return 'ຕັ້ງແຕ່ $when';
+  }
+
+  @override
+  String get awayQuiet => 'ບໍ່ມີຫຍັງປ່ຽນແປງຫຼາຍ.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ການແຈ້ງເຕືອນ $count ລາຍການຖືກກະຕຸ້ນ',
+      one: 'ການແຈ້ງເຕືອນ 1 ລາຍການຖືກກະຕຸ້ນ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'ປະກາດຜົນປະກອບການ: $symbols';
+  }
 }

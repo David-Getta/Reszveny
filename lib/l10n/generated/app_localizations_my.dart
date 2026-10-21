@@ -2598,4 +2598,31 @@ class AppLocalizationsMy extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'ပမာဏများသည် သင့်အကောင့်ထဲ ရောက်ရှိလာသည့်အတိုင်း၊ ပေးချေငွေကြေးဖြင့် ဖြစ်သည်။ စုစုပေါင်းကို ယနေ့နှုန်းဖြင့် ပြောင်းလဲတွက်ချက်သည်။ အခွန်ကြေညာလွှာအတွက် သင့်ဘရိုကာ၏ ရှင်းတမ်းကို အသုံးပြုပါ။';
+
+  @override
+  String get awayTitle => 'သင်မရှိစဉ်';
+
+  @override
+  String awaySince(String when) {
+    return '$when မှစ၍';
+  }
+
+  @override
+  String get awayQuiet => 'သိသာသော အပြောင်းအလဲ မရှိပါ။';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'သတိပေးချက် $count ခု အသက်ဝင်ခဲ့သည်',
+      one: 'သတိပေးချက် 1 ခု အသက်ဝင်ခဲ့သည်',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'ရလဒ်ထုတ်ပြန်ပြီး: $symbols';
+  }
 }

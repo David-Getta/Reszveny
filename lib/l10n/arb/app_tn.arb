@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{Dividente e 1 e oketswe} other{Dividente tse {count} di oketswe}}",
   "portfolioExportDividends": "Ntsha dividente (CSV)",
   "portfolioDividendDeleted": "Dividente e phimotswe",
-  "portfolioDividendsHint": "Madi jaaka a gorogile mo akhaontong ya gago, ka madi a tuelo; dipalogotlhe di fetolelwa ka reiti ya gompieno. Mo lekgethong la gago, dirisa setatemente sa broker wa gago."
+  "portfolioDividendsHint": "Madi jaaka a gorogile mo akhaontong ya gago, ka madi a tuelo; dipalogotlhe di fetolelwa ka reiti ya gompieno. Mo lekgethong la gago, dirisa setatemente sa broker wa gago.",
+  "awayTitle": "Fa o ne o seyo",
+  "awaySince": "Go tloga ka {when}",
+  "awayQuiet": "Ga go sepe se se fetogileng thata.",
+  "awayAlerts": "{count, plural, =1{Tlhagiso e 1 e tsositswe} other{Ditlhagiso tse {count} di tsositswe}}",
+  "awayReported": "Dipholo tse di begilweng: {symbols}"
 }

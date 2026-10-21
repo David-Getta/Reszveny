@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 dibidendo ang nadugang} other{{count} dibidendo ang nadugang}}",
   "portfolioExportDividends": "I-export ang mga dibidendo (CSV)",
   "portfolioDividendDeleted": "Napapas ang dibidendo",
-  "portfolioDividendsHint": "Mga kantidad sumala sa pag-abot niini sa imong account, sa currency sa pagbayad; ang mga total gi-convert sa karon nga rate. Alang sa imong tax return, gamita ang statement sa imong broker."
+  "portfolioDividendsHint": "Mga kantidad sumala sa pag-abot niini sa imong account, sa currency sa pagbayad; ang mga total gi-convert sa karon nga rate. Alang sa imong tax return, gamita ang statement sa imong broker.",
+  "awayTitle": "Samtang wala ka",
+  "awaySince": "Sukad {when}",
+  "awayQuiet": "Wala kaayoy nausab.",
+  "awayAlerts": "{count, plural, =1{1 ka alerto ang na-trigger} other{{count} ka alerto ang na-trigger}}",
+  "awayReported": "Nagpagawas og resulta: {symbols}"
 }

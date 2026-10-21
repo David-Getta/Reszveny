@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{An ƙara rabon riba 1} other{An ƙara rabon riba {count}}}",
   "portfolioExportDividends": "Fitar da rabon riba (CSV)",
   "portfolioDividendDeleted": "An goge rabon riba",
-  "portfolioDividendsHint": "Adadin kamar yadda ya shiga asusunka, a kuɗin biya; jimillolin ana canza su da farashin yau. Don bayanin harajinka, yi amfani da takardar dillalinka."
+  "portfolioDividendsHint": "Adadin kamar yadda ya shiga asusunka, a kuɗin biya; jimillolin ana canza su da farashin yau. Don bayanin harajinka, yi amfani da takardar dillalinka.",
+  "awayTitle": "Lokacin da ba ka nan",
+  "awaySince": "Tun {when}",
+  "awayQuiet": "Babu abin da ya canja sosai.",
+  "awayAlerts": "{count, plural, =1{Faɗakarwa 1 ta kunna} other{Faɗakarwa {count} sun kunna}}",
+  "awayReported": "Sun fitar da sakamako: {symbols}"
 }

@@ -2601,4 +2601,31 @@ class AppLocalizationsMai extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'राशि जेना अहाँक खातामे आएल, भुगतानक मुद्रामे; कुल आइक दर पर बदलल जाइत अछि। टैक्स रिटर्नक लेल अपन ब्रोकरक स्टेटमेंट प्रयोग करू।';
+
+  @override
+  String get awayTitle => 'जखन अहाँ दूर छलहुँ';
+
+  @override
+  String awaySince(String when) {
+    return '$when सँ';
+  }
+
+  @override
+  String get awayQuiet => 'किछु खास नहि बदलल।';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count अलर्ट ट्रिगर भेल',
+      one: '1 अलर्ट ट्रिगर भेल',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'परिणाम जारी केलक: $symbols';
+  }
 }

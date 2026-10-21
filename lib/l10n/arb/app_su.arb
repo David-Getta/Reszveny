@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 dividen ditambihkeun} other{{count} dividen ditambihkeun}}",
   "portfolioExportDividends": "Ékspor dividen (CSV)",
   "portfolioDividendDeleted": "Dividen dihapus",
-  "portfolioDividendsHint": "Jumlah sakumaha asupna kana akun anjeun, dina mata uang pamayaran; totalna dikonvérsi ku kurs dinten ieu. Kanggo laporan pajeg, anggo laporan ti broker anjeun."
+  "portfolioDividendsHint": "Jumlah sakumaha asupna kana akun anjeun, dina mata uang pamayaran; totalna dikonvérsi ku kurs dinten ieu. Kanggo laporan pajeg, anggo laporan ti broker anjeun.",
+  "awayTitle": "Nalika anjeun teu aya",
+  "awaySince": "Ti {when}",
+  "awayQuiet": "Teu aya nu robih pisan.",
+  "awayAlerts": "{count, plural, =1{1 peringatan dipicu} other{{count} peringatan dipicu}}",
+  "awayReported": "Hasil anu dilaporkeun: {symbols}"
 }

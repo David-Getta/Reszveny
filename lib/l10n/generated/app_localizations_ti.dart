@@ -2569,4 +2569,31 @@ class AppLocalizationsTi extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'መጠናት ከምቲ ኣብ ሕሳብካ ዝበጽሐ፣ ብባጤራ ክፍሊት፤ ድምር ብናይ ሎሚ ሸርፊ ይቀየር። ንመግለጺ ግብሪኻ፣ ናይ ብሮከርካ መግለጺ ተጠቐም።';
+
+  @override
+  String get awayTitle => 'ኣብዘይነበርኩምሉ እዋን';
+
+  @override
+  String awaySince(String when) {
+    return 'ካብ $when';
+  }
+
+  @override
+  String get awayQuiet => 'ብዙሕ ዝተለወጠ ነገር የለን።';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count መጠንቀቕታታት ተበጊሶም',
+      one: '1 መጠንቀቕታ ተበጊሱ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'ዝተገልጸ ውጽኢት: $symbols';
+  }
 }

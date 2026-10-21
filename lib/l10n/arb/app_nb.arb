@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 utbytte lagt til} other{{count} utbytter lagt til}}",
   "portfolioExportDividends": "Eksporter utbytte (CSV)",
   "portfolioDividendDeleted": "Utbytte slettet",
-  "portfolioDividendsHint": "Beløpene er slik de kom inn på kontoen din, i utbetalingsvalutaen; summer omregnes til dagens kurs. Bruk meglerens årsoppgave til skattemeldingen."
+  "portfolioDividendsHint": "Beløpene er slik de kom inn på kontoen din, i utbetalingsvalutaen; summer omregnes til dagens kurs. Bruk meglerens årsoppgave til skattemeldingen.",
+  "awayTitle": "Mens du var borte",
+  "awaySince": "Siden {when}",
+  "awayQuiet": "Lite har beveget seg.",
+  "awayAlerts": "{count, plural, =1{1 varsel utløst} other{{count} varsler utløst}}",
+  "awayReported": "Rapporterte resultater: {symbols}"
 }

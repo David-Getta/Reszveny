@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 Dividende hinzugefügt} other{{count} Dividenden hinzugefügt}}",
   "portfolioExportDividends": "Dividenden exportieren (CSV)",
   "portfolioDividendDeleted": "Dividende gelöscht",
-  "portfolioDividendsHint": "Beträge, wie sie auf deinem Konto eingegangen sind, in der Auszahlungswährung; Summen werden zum heutigen Kurs umgerechnet. Für die Steuererklärung nutze die Abrechnung deines Brokers."
+  "portfolioDividendsHint": "Beträge, wie sie auf deinem Konto eingegangen sind, in der Auszahlungswährung; Summen werden zum heutigen Kurs umgerechnet. Für die Steuererklärung nutze die Abrechnung deines Brokers.",
+  "awayTitle": "Während du weg warst",
+  "awaySince": "Seit {when}",
+  "awayQuiet": "Es hat sich kaum etwas bewegt.",
+  "awayAlerts": "{count, plural, =1{1 Alarm ausgelöst} other{{count} Alarme ausgelöst}}",
+  "awayReported": "Ergebnisse veröffentlicht: {symbols}"
 }

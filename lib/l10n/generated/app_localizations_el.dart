@@ -2616,4 +2616,31 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Ποσά όπως πιστώθηκαν στον λογαριασμό σας, στο νόμισμα της πληρωμής· τα σύνολα μετατρέπονται με τη σημερινή ισοτιμία. Για τη φορολογική δήλωση χρησιμοποιήστε την κατάσταση του χρηματιστή σας.';
+
+  @override
+  String get awayTitle => 'Όσο λείπατε';
+
+  @override
+  String awaySince(String when) {
+    return 'Από $when';
+  }
+
+  @override
+  String get awayQuiet => 'Τίποτα δεν κινήθηκε ιδιαίτερα.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ενεργοποιήθηκαν $count ειδοποιήσεις',
+      one: 'Ενεργοποιήθηκε 1 ειδοποίηση',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Ανακοίνωσαν αποτελέσματα: $symbols';
+  }
 }

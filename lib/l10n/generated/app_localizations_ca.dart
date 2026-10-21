@@ -2616,4 +2616,31 @@ class AppLocalizationsCa extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Imports tal com van arribar al teu compte, en la moneda del pagament; els totals es converteixen al canvi d\'avui. Per a la declaració de la renda, fes servir l\'extracte del teu bròquer.';
+
+  @override
+  String get awayTitle => 'Mentre eres fora';
+
+  @override
+  String awaySince(String when) {
+    return 'Des de $when';
+  }
+
+  @override
+  String get awayQuiet => 'No s\'ha mogut gaire res.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'S\'han activat $count alertes',
+      one: 'S\'ha activat 1 alerta',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Resultats publicats: $symbols';
+  }
 }

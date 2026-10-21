@@ -2586,4 +2586,31 @@ class AppLocalizationsKm extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'ចំនួនទឹកប្រាក់ដូចដែលបានមកដល់គណនីរបស់អ្នក ជារូបិយប័ណ្ណនៃការទូទាត់; សរុបត្រូវបានប្តូរតាមអត្រាថ្ងៃនេះ។ សម្រាប់ការប្រកាសពន្ធ សូមប្រើរបាយការណ៍ឈ្មួញកណ្តាលរបស់អ្នក។';
+
+  @override
+  String get awayTitle => 'ពេលអ្នកមិននៅ';
+
+  @override
+  String awaySince(String when) {
+    return 'ចាប់ពី $when';
+  }
+
+  @override
+  String get awayQuiet => 'មិនមានអ្វីផ្លាស់ប្តូរច្រើនទេ។';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ការជូនដំណឹង $count បានកើតឡើង',
+      one: 'ការជូនដំណឹង 1 បានកើតឡើង',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'បានប្រកាសលទ្ធផល៖ $symbols';
+  }
 }

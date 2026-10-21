@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{Dividandi 1 farala a kan} other{Dividandi {count} farala a kan}}",
   "portfolioExportDividends": "Dividandiw labɔ (CSV)",
   "portfolioDividendDeleted": "Dividandi bɔra",
-  "portfolioDividendsHint": "Wari hakɛw i n'a fɔ u sera aw ka jate kan cogo min na, sarali wari la; jatebɔ bɛɛ bɛ yɛlɛma ni bi sɔngɔ ye. Aw ka nisɔngɔ sɛbɛn kama, aw ka broker ka sɛbɛn de bɛ baara kɛ ni a ye."
+  "portfolioDividendsHint": "Wari hakɛw i n'a fɔ u sera aw ka jate kan cogo min na, sarali wari la; jatebɔ bɛɛ bɛ yɛlɛma ni bi sɔngɔ ye. Aw ka nisɔngɔ sɛbɛn kama, aw ka broker ka sɛbɛn de bɛ baara kɛ ni a ye.",
+  "awayTitle": "I tun tɛ yen tuma na",
+  "awaySince": "Kabini {when}",
+  "awayQuiet": "Foyi ma yɛlɛma kosɛbɛ.",
+  "awayAlerts": "{count, plural, =1{Lasɔmini 1 bɔra} other{Lasɔmini {count} bɔra}}",
+  "awayReported": "Jaabiw labɔlen: {symbols}"
 }

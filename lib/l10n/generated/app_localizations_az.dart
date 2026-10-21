@@ -2610,4 +2610,31 @@ class AppLocalizationsAz extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Məbləğlər hesabınıza gəldiyi kimi, ödəniş valyutasında; cəmlər bugünkü məzənnə ilə çevrilir. Vergi bəyannaməniz üçün brokerinizin hesabatından istifadə edin.';
+
+  @override
+  String get awayTitle => 'Siz yox ikən';
+
+  @override
+  String awaySince(String when) {
+    return '$when tarixindən';
+  }
+
+  @override
+  String get awayQuiet => 'Çox bir şey dəyişmədi.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count xəbərdarlıq işə düşdü',
+      one: '1 xəbərdarlıq işə düşdü',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Nəticələrini açıqladı: $symbols';
+  }
 }

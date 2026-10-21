@@ -32,6 +32,7 @@ import 'package:reszveny/features/billing/demo_billing_service.dart';
 import 'package:reszveny/features/billing/entitlement_service.dart';
 import 'package:reszveny/features/billing/plan.dart';
 import 'package:reszveny/features/capture/capture_service.dart';
+import 'package:reszveny/features/home/away_summary.dart';
 import 'package:reszveny/features/portfolio/holdings_reader.dart';
 import 'package:reszveny/features/home/quick_bar.dart';
 import 'package:reszveny/features/alerts/price_alert.dart';
@@ -733,6 +734,23 @@ void main() {
     await tester.ensureVisible(find.byKey(const ValueKey('target-MSFT')));
     await tester.pumpAndSettle();
     await _shot(tester, 'portfolio_targets_phone_hu');
+  });
+
+  testWidgets('home with the „while you were away” card on a phone (hungarian)', (tester) async {
+    final now = DateTime.now();
+    final yesterday = now.subtract(const Duration(days: 1)).toIso8601String().substring(0, 10);
+    SharedPreferences.setMockInitialValues({
+      AwaySummary.storeKey: jsonEncode({
+        'at': now.subtract(const Duration(days: 3, hours: 2)).toIso8601String(),
+        'prices': {'AAPL': 220.0, 'NVDA': 195.0, 'MSFT': 512.30},
+        'earnings': {'NVDA': yesterday},
+      }),
+    });
+    final s = _services(locale: const Locale('hu'), portfolio: _samplePortfolio(), currency: 'HUF');
+    await pumpApp(tester, s, const Size(430, 1000));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('home-away')), findsOneWidget);
+    await _shot(tester, 'home_away_phone_hu');
   });
 
   testWidgets('dividends received on a phone (hungarian)', (tester) async {

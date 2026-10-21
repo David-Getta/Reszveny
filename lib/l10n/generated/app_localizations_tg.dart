@@ -2609,4 +2609,31 @@ class AppLocalizationsTg extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Маблағҳо тавре ки ба ҳисоби шумо омадаанд, бо асъори пардохт; ҷамъбастҳо бо қурби имрӯза табдил дода мешаванд. Барои эъломияи андоз ҳисоботи брокери худро истифода баред.';
+
+  @override
+  String get awayTitle => 'Ҳангоми набудани шумо';
+
+  @override
+  String awaySince(String when) {
+    return 'Аз $when';
+  }
+
+  @override
+  String get awayQuiet => 'Чизи зиёде тағйир наёфт.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count огоҳӣ фаъол шуд',
+      one: '1 огоҳӣ фаъол шуд',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Натиҷаҳои нашршуда: $symbols';
+  }
 }

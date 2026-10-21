@@ -2623,4 +2623,31 @@ class AppLocalizationsNso extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Ditšhelete ka moo di fihlilego akhaontong ya gago, ka tšhelete ya tefo; dipalomoka di fetolelwa ka reiti ya lehono. Bakeng sa pušetšo ya motšhelo, šomiša setatamente sa broker ya gago.';
+
+  @override
+  String get awayTitle => 'Ge o be o se gona';
+
+  @override
+  String awaySince(String when) {
+    return 'Go tloga ka $when';
+  }
+
+  @override
+  String get awayQuiet => 'Ga go selo seo se fetogilego kudu.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ditemošo tše $count di tsošitšwe',
+      one: 'Temošo e 1 e tsošitšwe',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Dipoelo tše begilwego: $symbols';
+  }
 }

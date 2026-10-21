@@ -2596,4 +2596,31 @@ class AppLocalizationsBo extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'དངུལ་འབོར་ནི་ཁྱེད་ཀྱི་རྩིས་ཁྲར་འབྱོར་བ་ལྟར་སྤྲོད་དངུལ་གྱི་དངུལ་ལུགས་ཐོག་ཡིན། བསྡོམས་འབོར་དེ་རིང་གི་བརྗེ་ཚད་ལྟར་བསྒྱུར་ཡོད། ཁྱེད་ཀྱི་ཁྲལ་ཐོ་ཆེད་ཚོང་བར་གྱི་རྩིས་ཐོ་བེད་སྤྱོད་གནང་རོགས།';
+
+  @override
+  String get awayTitle => 'ཁྱེད་རང་མེད་སྐབས།';
+
+  @override
+  String awaySince(String when) {
+    return '$when ནས།';
+  }
+
+  @override
+  String get awayQuiet => 'གང་ཡང་ཆེར་འགྱུར་བ་མ་བྱུང་།';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'དྲན་སྐུལ་ $count བྱུང་།',
+      one: 'དྲན་སྐུལ་ 1 བྱུང་།',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'གྲུབ་འབྲས་བསྒྲགས་པ། $symbols';
+  }
 }

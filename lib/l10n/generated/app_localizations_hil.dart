@@ -2623,4 +2623,31 @@ class AppLocalizationsHil extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Mga kantidad suno sa pag-abot sini sa imo account, sa currency sang pagbayad; ang mga total gina-convert sa rate subong. Para sa imo tax return, gamita ang statement sang imo broker.';
+
+  @override
+  String get awayTitle => 'Samtang wala ka';
+
+  @override
+  String awaySince(String when) {
+    return 'Halin $when';
+  }
+
+  @override
+  String get awayQuiet => 'Wala sing daku nga nagbag-o.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count alerto ang na-trigger',
+      one: '1 alerto ang na-trigger',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Nagpagwa sang resulta: $symbols';
+  }
 }

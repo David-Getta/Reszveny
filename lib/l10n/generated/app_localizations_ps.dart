@@ -2598,4 +2598,31 @@ class AppLocalizationsPs extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'اندازې هغسې دي چې ستاسو حساب ته راغلي، د تادیې په اسعارو؛ مجموعې د نن ورځې په نرخ بدلېږي. د مالیې راپور لپاره د خپل بروکر بیان وکاروئ.';
+
+  @override
+  String get awayTitle => 'کله چې تاسو نه وئ';
+
+  @override
+  String awaySince(String when) {
+    return 'له $when راهیسې';
+  }
+
+  @override
+  String get awayQuiet => 'څه ډېر بدلون نه و.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count خبرتیاوې فعالې شوې',
+      one: '1 خبرتیا فعاله شوه',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'خپرې شوې پایلې: $symbols';
+  }
 }

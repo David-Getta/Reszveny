@@ -2620,4 +2620,31 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Beträge, wie sie auf deinem Konto eingegangen sind, in der Auszahlungswährung; Summen werden zum heutigen Kurs umgerechnet. Für die Steuererklärung nutze die Abrechnung deines Brokers.';
+
+  @override
+  String get awayTitle => 'Während du weg warst';
+
+  @override
+  String awaySince(String when) {
+    return 'Seit $when';
+  }
+
+  @override
+  String get awayQuiet => 'Es hat sich kaum etwas bewegt.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Alarme ausgelöst',
+      one: '1 Alarm ausgelöst',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Ergebnisse veröffentlicht: $symbols';
+  }
 }

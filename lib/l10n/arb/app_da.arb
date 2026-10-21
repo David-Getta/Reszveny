@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 udbytte tilføjet} other{{count} udbytter tilføjet}}",
   "portfolioExportDividends": "Eksportér udbytter (CSV)",
   "portfolioDividendDeleted": "Udbytte slettet",
-  "portfolioDividendsHint": "Beløb som de blev indsat på din konto, i udbetalingsvalutaen; totaler omregnes til dagens kurs. Brug din brokers opgørelse til din selvangivelse."
+  "portfolioDividendsHint": "Beløb som de blev indsat på din konto, i udbetalingsvalutaen; totaler omregnes til dagens kurs. Brug din brokers opgørelse til din selvangivelse.",
+  "awayTitle": "Mens du var væk",
+  "awaySince": "Siden {when}",
+  "awayQuiet": "Intet bevægede sig meget.",
+  "awayAlerts": "{count, plural, =1{1 alarm udløst} other{{count} alarmer udløst}}",
+  "awayReported": "Offentliggjorde resultater: {symbols}"
 }

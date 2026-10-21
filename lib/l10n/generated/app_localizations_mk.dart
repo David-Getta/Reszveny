@@ -2626,4 +2626,31 @@ class AppLocalizationsMk extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Износите се како што пристигнале на вашата сметка, во валутата на исплата; збировите се конвертираат по денешниот курс. За даночната пријава користете го извештајот од вашиот брокер.';
+
+  @override
+  String get awayTitle => 'Додека ве немаше';
+
+  @override
+  String awaySince(String when) {
+    return 'Од $when';
+  }
+
+  @override
+  String get awayQuiet => 'Ништо не се помести многу.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Активирани $count аларми',
+      one: 'Активиран 1 аларм',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Објавени резултати: $symbols';
+  }
 }

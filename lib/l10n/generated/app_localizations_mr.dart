@@ -2607,4 +2607,31 @@ class AppLocalizationsMr extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'रकमा तुमच्या खात्यात जशा आल्या तशा, पेआउट चलनात; एकूण रकमा आजच्या दराने रूपांतरित केल्या जातात. कर विवरणपत्रासाठी तुमच्या ब्रोकरचे स्टेटमेंट वापरा.';
+
+  @override
+  String get awayTitle => 'तुम्ही नसताना';
+
+  @override
+  String awaySince(String when) {
+    return '$when पासून';
+  }
+
+  @override
+  String get awayQuiet => 'फारशी हालचाल झाली नाही.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count अलर्ट ट्रिगर झाले',
+      one: '1 अलर्ट ट्रिगर झाला',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'निकाल जाहीर: $symbols';
+  }
 }

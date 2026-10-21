@@ -4500,6 +4500,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Amounts as they arrived on your account, in the payout currency; totals are converted at today\'s rate. For your tax return, use your broker\'s statement.'**
   String get portfolioDividendsHint;
+
+  /// Card title on the home screen, shown when the app is opened after at least 20 hours: what happened to the user's stocks since their last visit. Also the name of this section in Settings.
+  ///
+  /// In en, this message translates to:
+  /// **'While you were away'**
+  String get awayTitle;
+
+  /// Subtitle of that card: the date and time of the last visit.
+  ///
+  /// In en, this message translates to:
+  /// **'Since {when}'**
+  String awaySince(String when);
+
+  /// Shown when none of the user's stocks moved more than 1% since the last visit.
+  ///
+  /// In en, this message translates to:
+  /// **'Nothing moved much.'**
+  String get awayQuiet;
+
+  /// Line on the card: how many price alerts went off since the last visit.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 alert triggered} other{{count} alerts triggered}}'**
+  String awayAlerts(int count);
+
+  /// Line on the card: which of the user's companies published quarterly results since the last visit.
+  ///
+  /// In en, this message translates to:
+  /// **'Reported results: {symbols}'**
+  String awayReported(String symbols);
 }
 
 class _AppLocalizationsDelegate

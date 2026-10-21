@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 dividend adăugat} few{{count} dividende adăugate} other{{count} de dividende adăugate}}",
   "portfolioExportDividends": "Exportă dividendele (CSV)",
   "portfolioDividendDeleted": "Dividend șters",
-  "portfolioDividendsHint": "Sumele așa cum au ajuns în contul tău, în moneda plății; totalurile sunt convertite la cursul de azi. Pentru declarația fiscală, folosește extrasul brokerului."
+  "portfolioDividendsHint": "Sumele așa cum au ajuns în contul tău, în moneda plății; totalurile sunt convertite la cursul de azi. Pentru declarația fiscală, folosește extrasul brokerului.",
+  "awayTitle": "Cât ai lipsit",
+  "awaySince": "Din {when}",
+  "awayQuiet": "Nimic nu s-a mișcat prea mult.",
+  "awayAlerts": "{count, plural, =1{1 alertă declanșată} few{{count} alerte declanșate} other{{count} de alerte declanșate}}",
+  "awayReported": "Rezultate raportate: {symbols}"
 }

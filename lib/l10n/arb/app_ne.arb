@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 लाभांश थपियो} other{{count} लाभांश थपिए}}",
   "portfolioExportDividends": "लाभांश एक्सपोर्ट गर्नुहोस् (CSV)",
   "portfolioDividendDeleted": "लाभांश मेटाइयो",
-  "portfolioDividendsHint": "रकमहरू तपाईंको खातामा आएअनुसार, भुक्तानी मुद्रामा; जम्मा रकम आजको दरमा रूपान्तरण गरिन्छ। कर विवरणका लागि आफ्नो ब्रोकरको स्टेटमेन्ट प्रयोग गर्नुहोस्।"
+  "portfolioDividendsHint": "रकमहरू तपाईंको खातामा आएअनुसार, भुक्तानी मुद्रामा; जम्मा रकम आजको दरमा रूपान्तरण गरिन्छ। कर विवरणका लागि आफ्नो ब्रोकरको स्टेटमेन्ट प्रयोग गर्नुहोस्।",
+  "awayTitle": "तपाईं नहुँदा",
+  "awaySince": "{when} देखि",
+  "awayQuiet": "खासै केही चलेन।",
+  "awayAlerts": "{count, plural, =1{1 अलर्ट ट्रिगर भयो} other{{count} अलर्ट ट्रिगर भए}}",
+  "awayReported": "नतिजा प्रकाशित: {symbols}"
 }

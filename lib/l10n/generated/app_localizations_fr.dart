@@ -2618,4 +2618,31 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Montants tels qu’ils sont arrivés sur votre compte, dans la devise de versement ; les totaux sont convertis au cours du jour. Pour votre déclaration d’impôts, utilisez le relevé de votre courtier.';
+
+  @override
+  String get awayTitle => 'Pendant votre absence';
+
+  @override
+  String awaySince(String when) {
+    return 'Depuis $when';
+  }
+
+  @override
+  String get awayQuiet => 'Rien n’a beaucoup bougé.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count alertes déclenchées',
+      one: '1 alerte déclenchée',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Résultats publiés : $symbols';
+  }
 }

@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 ડિવિડન્ડ ઉમેરાયું} other{{count} ડિવિડન્ડ ઉમેરાયાં}}",
   "portfolioExportDividends": "ડિવિડન્ડ એક્સપોર્ટ કરો (CSV)",
   "portfolioDividendDeleted": "ડિવિડન્ડ કાઢી નાખ્યું",
-  "portfolioDividendsHint": "રકમો તમારા ખાતામાં જેમ આવી તેમ, ચુકવણીની કરન્સીમાં; કુલ આજના દરે રૂપાંતરિત થાય છે. ટેક્સ રિટર્ન માટે તમારા બ્રોકરનું સ્ટેટમેન્ટ વાપરો."
+  "portfolioDividendsHint": "રકમો તમારા ખાતામાં જેમ આવી તેમ, ચુકવણીની કરન્સીમાં; કુલ આજના દરે રૂપાંતરિત થાય છે. ટેક્સ રિટર્ન માટે તમારા બ્રોકરનું સ્ટેટમેન્ટ વાપરો.",
+  "awayTitle": "તમે દૂર હતા ત્યારે",
+  "awaySince": "{when}થી",
+  "awayQuiet": "ખાસ કંઈ બદલાયું નથી.",
+  "awayAlerts": "{count, plural, =1{1 અલર્ટ ટ્રિગર થયો} other{{count} અલર્ટ ટ્રિગર થયા}}",
+  "awayReported": "પરિણામો જાહેર કર્યા: {symbols}"
 }

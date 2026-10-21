@@ -2671,4 +2671,33 @@ class AppLocalizationsCs extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Částky tak, jak dorazily na váš účet, v měně výplaty; součty jsou převedeny dnešním kurzem. Pro daňové přiznání použijte výpis od svého brokera.';
+
+  @override
+  String get awayTitle => 'Zatímco jste byli pryč';
+
+  @override
+  String awaySince(String when) {
+    return 'Od $when';
+  }
+
+  @override
+  String get awayQuiet => 'Nic se moc nehnulo.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Spuštěno $count upozornění',
+      many: 'Spuštěno $count upozornění',
+      few: 'Spuštěna $count upozornění',
+      one: 'Spuštěno 1 upozornění',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Zveřejněné výsledky: $symbols';
+  }
 }

@@ -2649,4 +2649,32 @@ class AppLocalizationsLv extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Summas tādas, kādas tās ienāca jūsu kontā, izmaksas valūtā; kopsummas pārrēķinātas pēc šodienas kursa. Nodokļu deklarācijai izmantojiet sava brokera izrakstu.';
+
+  @override
+  String get awayTitle => 'Kamēr jūs nebijāt klāt';
+
+  @override
+  String awaySince(String when) {
+    return 'No $when';
+  }
+
+  @override
+  String get awayQuiet => 'Nekas īpaši nemainījās.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Aktivizēti $count brīdinājumi',
+      one: 'Aktivizēts $count brīdinājums',
+      zero: 'Aktivizēti $count brīdinājumi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Publicēja rezultātus: $symbols';
+  }
 }

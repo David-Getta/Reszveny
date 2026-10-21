@@ -2617,4 +2617,31 @@ class AppLocalizationsLg extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Ssente nga bwe zaatuuka ku akawunti yo, mu ssente ez\'okusasula; omugatte gukyusibwa ku mutindo gwa leero. Ku lipoota yo ey\'omusolo, kozesa ekiwandiiko kya broker wo.';
+
+  @override
+  String get awayTitle => 'Bwe wabadde toliiwo';
+
+  @override
+  String awaySince(String when) {
+    return 'Okuva $when';
+  }
+
+  @override
+  String get awayQuiet => 'Tewali kyakyuse nnyo.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Okulabula $count kuzze',
+      one: 'Okulabula 1 kuzze',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Baafulumizza ebivuddemu: $symbols';
+  }
 }

@@ -2606,4 +2606,31 @@ class AppLocalizationsAs extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'পৰিমাণসমূহ আপোনাৰ একাউণ্টত অহাৰ দৰে, পৰিশোধৰ মুদ্ৰাত; মুঠ আজিৰ হাৰত ৰূপান্তৰিত হয়। কৰ ৰিটাৰ্ণৰ বাবে আপোনাৰ ব্ৰোকাৰৰ বিবৃতি ব্যৱহাৰ কৰক।';
+
+  @override
+  String get awayTitle => 'আপুনি অনুপস্থিত থকা সময়ত';
+
+  @override
+  String awaySince(String when) {
+    return '$whenৰ পৰা';
+  }
+
+  @override
+  String get awayQuiet => 'বিশেষ একো সলনি হোৱা নাই।';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countটা সতৰ্কবাণী সক্ৰিয় হৈছে',
+      one: '1টা সতৰ্কবাণী সক্ৰিয় হৈছে',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'ফলাফল ঘোষণা কৰিলে: $symbols';
+  }
 }

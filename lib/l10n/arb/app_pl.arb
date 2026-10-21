@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{Dodano 1 dywidendę} few{Dodano {count} dywidendy} many{Dodano {count} dywidend} other{Dodano {count} dywidendy}}",
   "portfolioExportDividends": "Eksportuj dywidendy (CSV)",
   "portfolioDividendDeleted": "Dywidenda usunięta",
-  "portfolioDividendsHint": "Kwoty takie, jakie wpłynęły na Twoje konto, w walucie wypłaty; sumy przeliczane są po dzisiejszym kursie. Do rozliczenia podatkowego użyj zestawienia od brokera."
+  "portfolioDividendsHint": "Kwoty takie, jakie wpłynęły na Twoje konto, w walucie wypłaty; sumy przeliczane są po dzisiejszym kursie. Do rozliczenia podatkowego użyj zestawienia od brokera.",
+  "awayTitle": "Gdy cię nie było",
+  "awaySince": "Od {when}",
+  "awayQuiet": "Niewiele się zmieniło.",
+  "awayAlerts": "{count, plural, =1{1 alert uruchomiony} few{{count} alerty uruchomione} many{{count} alertów uruchomionych} other{{count} alertu uruchomionego}}",
+  "awayReported": "Opublikowane wyniki: {symbols}"
 }

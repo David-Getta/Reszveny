@@ -2608,4 +2608,31 @@ class AppLocalizationsKk extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Сомалар шотыңызға келген күйінде, төлем валютасында; жиындар бүгінгі бағам бойынша айырбасталады. Салық декларациясы үшін брокеріңіздің үзінді көшірмесін пайдаланыңыз.';
+
+  @override
+  String get awayTitle => 'Сіз болмаған кезде';
+
+  @override
+  String awaySince(String when) {
+    return '$when бастап';
+  }
+
+  @override
+  String get awayQuiet => 'Көп нәрсе өзгерген жоқ.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count хабарландыру іске қосылды',
+      one: '1 хабарландыру іске қосылды',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Нәтижелерін жариялады: $symbols';
+  }
 }

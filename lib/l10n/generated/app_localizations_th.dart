@@ -2577,4 +2577,31 @@ class AppLocalizationsTh extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'จำนวนเงินตามที่เข้าบัญชีของคุณ ในสกุลเงินที่จ่าย ยอดรวมแปลงด้วยอัตราวันนี้ สำหรับการยื่นภาษี โปรดใช้รายงานจากโบรกเกอร์ของคุณ';
+
+  @override
+  String get awayTitle => 'ขณะที่คุณไม่อยู่';
+
+  @override
+  String awaySince(String when) {
+    return 'ตั้งแต่ $when';
+  }
+
+  @override
+  String get awayQuiet => 'ไม่มีอะไรเปลี่ยนแปลงมากนัก';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'การแจ้งเตือน $count รายการทำงาน',
+      one: 'การแจ้งเตือน 1 รายการทำงาน',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'ประกาศผลประกอบการ: $symbols';
+  }
 }

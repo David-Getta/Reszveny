@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{Dividende 1 ɓeydaama} other{Dividendeeji {count} ɓeydaama}}",
   "portfolioExportDividends": "Yaltin dividendeeji (CSV)",
   "portfolioDividendDeleted": "Dividende momtaama",
-  "portfolioDividendsHint": "Keeweele no ɗe ari e konte maa, e kaalis yoɓdi; kuuɓtidinal waylete e coggu hannde. Ngam winndannde lempoo maa, huutoro ɓataake broker maa."
+  "portfolioDividendsHint": "Keeweele no ɗe ari e konte maa, e kaalis yoɓdi; kuuɓtidinal waylete e coggu hannde. Ngam winndannde lempoo maa, huutoro ɓataake broker maa.",
+  "awayTitle": "Tuma nde a woodaano",
+  "awaySince": "Gila {when}",
+  "awayQuiet": "Hay huunde dillaani sanne.",
+  "awayAlerts": "{count, plural, =1{Tintinol 1 yaltii} other{Tintinooli {count} yaltii}}",
+  "awayReported": "Ɓe yaltini keɓe maɓɓe: {symbols}"
 }

@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{Dividende 1 mmusakidibua} other{Dividende {count} mmisakidibua}}",
   "portfolioExportDividends": "Patula dividende (CSV)",
   "portfolioDividendDeleted": "Dividende mmujimija",
-  "portfolioDividendsHint": "Makuta mu mushindu uakafikawu mu konte webe, mu makuta a difuta; bungi bujima budi bushintuluka ku mushinga wa lelu. Bua mukanda webe wa mpaku, enza mudimu ne mukanda wa broker webe."
+  "portfolioDividendsHint": "Makuta mu mushindu uakafikawu mu konte webe, mu makuta a difuta; bungi bujima budi bushintuluka ku mushinga wa lelu. Bua mukanda webe wa mpaku, enza mudimu ne mukanda wa broker webe.",
+  "awayTitle": "Pauvua kuyi muikale",
+  "awaySince": "Kutuadijila ku {when}",
+  "awayQuiet": "Kakuena tshintu tshiakashintuluka bikole to.",
+  "awayAlerts": "{count, plural, =1{Didimuija 1 diakapatuka} other{Madimuija {count} akapatuka}}",
+  "awayReported": "Bakapatula bipeta biabu: {symbols}"
 }

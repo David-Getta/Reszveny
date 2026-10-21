@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{U shtua 1 dividend} other{U shtuan {count} dividendë}}",
   "portfolioExportDividends": "Eksporto dividendët (CSV)",
   "portfolioDividendDeleted": "Dividendi u fshi",
-  "portfolioDividendsHint": "Shumat ashtu si mbërritën në llogarinë tuaj, në monedhën e pagesës; totalet konvertohen me kursin e sotëm. Për deklaratën tatimore përdorni pasqyrën e brokerit tuaj."
+  "portfolioDividendsHint": "Shumat ashtu si mbërritën në llogarinë tuaj, në monedhën e pagesës; totalet konvertohen me kursin e sotëm. Për deklaratën tatimore përdorni pasqyrën e brokerit tuaj.",
+  "awayTitle": "Ndërsa ishit larg",
+  "awaySince": "Që nga {when}",
+  "awayQuiet": "Asgjë nuk lëvizi shumë.",
+  "awayAlerts": "{count, plural, =1{1 alarm u aktivizua} other{{count} alarme u aktivizuan}}",
+  "awayReported": "Rezultate të publikuara: {symbols}"
 }

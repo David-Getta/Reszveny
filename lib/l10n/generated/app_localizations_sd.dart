@@ -2599,4 +2599,31 @@ class AppLocalizationsSd extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'رقمون جيئن توهان جي اڪائونٽ ۾ آيون، ادائگي جي ڪرنسي ۾؛ ڪل رقمون اڄ جي اگهه تي تبديل ڪيون وڃن ٿيون. ٽيڪس ريٽرن لاءِ پنهنجي بروڪر جو اسٽيٽمينٽ استعمال ڪريو.';
+
+  @override
+  String get awayTitle => 'جڏهن توهان موجود نه هئا';
+
+  @override
+  String awaySince(String when) {
+    return '$when کان';
+  }
+
+  @override
+  String get awayQuiet => 'ڪا خاص تبديلي نه آئي.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count الرٽ فعال ٿيا',
+      one: '1 الرٽ فعال ٿيو',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'نتيجا جاري ٿيا: $symbols';
+  }
 }

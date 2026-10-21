@@ -2606,4 +2606,31 @@ class AppLocalizationsTt extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Суммалар хисабыгызга килгәнчә, түләү валютасында; җәмгылар бүгенге курс буенча күчерелә. Салым декларациясе өчен брокерыгызның хисабын кулланыгыз.';
+
+  @override
+  String get awayTitle => 'Сез булмаганда';
+
+  @override
+  String awaySince(String when) {
+    return '$when бирле';
+  }
+
+  @override
+  String get awayQuiet => 'Әллә ни үзгәреш булмады.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count искәртү эшләде',
+      one: '1 искәртү эшләде',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Нәтиҗәләр игълан ителде: $symbols';
+  }
 }

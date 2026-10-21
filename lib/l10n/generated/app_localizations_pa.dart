@@ -2603,4 +2603,31 @@ class AppLocalizationsPa extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'ਰਕਮਾਂ ਜਿਵੇਂ ਤੁਹਾਡੇ ਖਾਤੇ ਵਿੱਚ ਆਈਆਂ, ਭੁਗਤਾਨ ਦੀ ਮੁਦਰਾ ਵਿੱਚ; ਕੁੱਲ ਰਕਮਾਂ ਅੱਜ ਦੇ ਰੇਟ ’ਤੇ ਬਦਲੀਆਂ ਜਾਂਦੀਆਂ ਹਨ। ਟੈਕਸ ਰਿਟਰਨ ਲਈ ਆਪਣੇ ਬ੍ਰੋਕਰ ਦੀ ਸਟੇਟਮੈਂਟ ਵਰਤੋ।';
+
+  @override
+  String get awayTitle => 'ਜਦੋਂ ਤੁਸੀਂ ਨਹੀਂ ਸੀ';
+
+  @override
+  String awaySince(String when) {
+    return '$when ਤੋਂ';
+  }
+
+  @override
+  String get awayQuiet => 'ਕੁਝ ਖਾਸ ਨਹੀਂ ਬਦਲਿਆ।';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ਅਲਰਟ ਟ੍ਰਿਗਰ ਹੋਏ',
+      one: '1 ਅਲਰਟ ਟ੍ਰਿਗਰ ਹੋਇਆ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'ਨਤੀਜੇ ਜਾਰੀ: $symbols';
+  }
 }

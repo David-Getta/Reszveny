@@ -2605,4 +2605,31 @@ class AppLocalizationsKab extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Azalen akken i d-wwḍen ɣer umiḍan-ik, s tedrimt n lexlaṣ; igmaḍ ttwabeddlen s ssuma n wass-a. I tsemmelt-ik n tebzert, seqdec aɣmis n broker-ik.';
+
+  @override
+  String get awayTitle => 'Mi ulac-ik';
+
+  @override
+  String awaySince(String when) {
+    return 'Seg $when';
+  }
+
+  @override
+  String get awayQuiet => 'Ulac ayen i ibeddlen aṭas.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count n yilɣa i yekkren',
+      one: '1 n ulɣu i yekkren',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Ssufɣen-d igmaḍ: $symbols';
+  }
 }

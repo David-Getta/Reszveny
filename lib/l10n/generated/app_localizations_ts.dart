@@ -2624,4 +2624,31 @@ class AppLocalizationsTs extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Mali hilaha yi fikeke eka akhawunti ya wena, hi mali ya ku hakela; tinhlayo hinkwato ti hundzuluxiwa hi mpimo wa namuntlha. Eka xibalo xa wena, tirhisa xitatimende xa broker wa wena.';
+
+  @override
+  String get awayTitle => 'Loko u nga ri kona';
+
+  @override
+  String awaySince(String when) {
+    return 'Ku sukela $when';
+  }
+
+  @override
+  String get awayQuiet => 'A ku na lexi cinceke ngopfu.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Swilemukiso swa $count swi pfurile',
+      one: 'Xilemukiso 1 xi pfurile',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Mbuyelo lowu vikiweke: $symbols';
+  }
 }

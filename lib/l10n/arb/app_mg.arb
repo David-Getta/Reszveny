@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{Dividandy 1 nampiana} other{Dividandy {count} nampiana}}",
   "portfolioExportDividends": "Hamoaka ny dividandy (CSV)",
   "portfolioDividendDeleted": "Dividandy voafafa",
-  "portfolioDividendsHint": "Ny vola araka ny nahatongavany tao amin'ny kaontinao, amin'ny vola fandoavana; ny totaly dia ovaina amin'ny tahan'ny androany. Ho an'ny fanambaranao hetra, ampiasao ny tatitra avy amin'ny broker-nao."
+  "portfolioDividendsHint": "Ny vola araka ny nahatongavany tao amin'ny kaontinao, amin'ny vola fandoavana; ny totaly dia ovaina amin'ny tahan'ny androany. Ho an'ny fanambaranao hetra, ampiasao ny tatitra avy amin'ny broker-nao.",
+  "awayTitle": "Raha mbola tsy teto ianao",
+  "awaySince": "Nanomboka ny {when}",
+  "awayQuiet": "Tsy nisy niova firy.",
+  "awayAlerts": "{count, plural, =1{Fampitandremana 1 nipoitra} other{Fampitandremana {count} nipoitra}}",
+  "awayReported": "Vokatra navoaka: {symbols}"
 }

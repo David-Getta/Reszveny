@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{Đã thêm 1 khoản cổ tức} other{Đã thêm {count} khoản cổ tức}}",
   "portfolioExportDividends": "Xuất cổ tức (CSV)",
   "portfolioDividendDeleted": "Đã xóa cổ tức",
-  "portfolioDividendsHint": "Số tiền đúng như đã về tài khoản của bạn, theo đồng tiền chi trả; tổng được quy đổi theo tỷ giá hôm nay. Khi kê khai thuế, hãy dùng sao kê của công ty chứng khoán."
+  "portfolioDividendsHint": "Số tiền đúng như đã về tài khoản của bạn, theo đồng tiền chi trả; tổng được quy đổi theo tỷ giá hôm nay. Khi kê khai thuế, hãy dùng sao kê của công ty chứng khoán.",
+  "awayTitle": "Trong lúc bạn vắng mặt",
+  "awaySince": "Từ {when}",
+  "awayQuiet": "Không có biến động đáng kể.",
+  "awayAlerts": "{count, plural, =1{1 cảnh báo đã kích hoạt} other{{count} cảnh báo đã kích hoạt}}",
+  "awayReported": "Đã công bố kết quả: {symbols}"
 }

@@ -2609,4 +2609,31 @@ class AppLocalizationsKu extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Mîqdar wek ku gihîştine hesabê te, bi diravê dayînê; giştî bi rêjeya îro tên veguhertin. Ji bo danezana baca xwe, raporta brokerê xwe bi kar bîne.';
+
+  @override
+  String get awayTitle => 'Dema tu ne li vir bûyî';
+
+  @override
+  String awaySince(String when) {
+    return 'Ji $when ve';
+  }
+
+  @override
+  String get awayQuiet => 'Tiştek zêde neguherî.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hişyarî çalak bûn',
+      one: '1 hişyarî çalak bû',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Encam eşkere kirin: $symbols';
+  }
 }

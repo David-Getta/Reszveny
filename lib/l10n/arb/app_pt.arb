@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 dividendo adicionado} other{{count} dividendos adicionados}}",
   "portfolioExportDividends": "Exportar dividendos (CSV)",
   "portfolioDividendDeleted": "Dividendo excluído",
-  "portfolioDividendsHint": "Valores como chegaram na sua conta, na moeda do pagamento; os totais são convertidos pela cotação de hoje. Para a declaração de imposto, use o informe da sua corretora."
+  "portfolioDividendsHint": "Valores como chegaram na sua conta, na moeda do pagamento; os totais são convertidos pela cotação de hoje. Para a declaração de imposto, use o informe da sua corretora.",
+  "awayTitle": "Enquanto você esteve fora",
+  "awaySince": "Desde {when}",
+  "awayQuiet": "Nada se mexeu muito.",
+  "awayAlerts": "{count, plural, =1{1 alerta disparado} other{{count} alertas disparados}}",
+  "awayReported": "Resultados divulgados: {symbols}"
 }

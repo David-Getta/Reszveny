@@ -2603,4 +2603,31 @@ class AppLocalizationsFa extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'مبالغ همان‌طور که به حسابتان رسیده‌اند، به ارز پرداخت؛ جمع‌ها با نرخ امروز تبدیل می‌شوند. برای اظهارنامه مالیاتی از صورت‌حساب کارگزارتان استفاده کنید.';
+
+  @override
+  String get awayTitle => 'در غیاب شما';
+
+  @override
+  String awaySince(String when) {
+    return 'از $when';
+  }
+
+  @override
+  String get awayQuiet => 'چیزی تغییر چندانی نکرد.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count هشدار فعال شد',
+      one: '۱ هشدار فعال شد',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'نتایج خود را اعلام کردند: $symbols';
+  }
 }

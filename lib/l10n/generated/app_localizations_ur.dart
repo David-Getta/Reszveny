@@ -2607,4 +2607,31 @@ class AppLocalizationsUr extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'رقمیں جیسے آپ کے اکاؤنٹ میں آئیں، ادائیگی کی کرنسی میں؛ کل رقمیں آج کے ریٹ پر تبدیل کی جاتی ہیں۔ ٹیکس ریٹرن کے لیے اپنے بروکر کا اسٹیٹمنٹ استعمال کریں۔';
+
+  @override
+  String get awayTitle => 'جب آپ موجود نہیں تھے';
+
+  @override
+  String awaySince(String when) {
+    return '$when سے';
+  }
+
+  @override
+  String get awayQuiet => 'کوئی خاص تبدیلی نہیں ہوئی۔';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count الرٹس ٹرگر ہوئے',
+      one: '1 الرٹ ٹرگر ہوا',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'نتائج جاری: $symbols';
+  }
 }

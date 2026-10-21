@@ -2537,4 +2537,31 @@ class AppLocalizationsKo extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       '금액은 계좌에 입금된 그대로 지급 통화로 표시되며, 합계는 오늘 환율로 환산됩니다. 세금 신고에는 증권사 명세서를 사용하세요.';
+
+  @override
+  String get awayTitle => '자리를 비운 동안';
+
+  @override
+  String awaySince(String when) {
+    return '$when 이후';
+  }
+
+  @override
+  String get awayQuiet => '큰 변동은 없었습니다.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '알림 $count건 발생',
+      one: '알림 1건 발생',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return '실적 발표: $symbols';
+  }
 }

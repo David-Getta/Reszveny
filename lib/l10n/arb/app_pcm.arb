@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 dividend don add} other{{count} dividends don add}}",
   "portfolioExportDividends": "Export dividends (CSV)",
   "portfolioDividendDeleted": "Dividend don delete",
-  "portfolioDividendsHint": "Di amounts na as dem enter your account, for di currency wey dem pay; we use today rate convert di totals. For your tax return, use your broker statement."
+  "portfolioDividendsHint": "Di amounts na as dem enter your account, for di currency wey dem pay; we use today rate convert di totals. For your tax return, use your broker statement.",
+  "awayTitle": "While you no dey",
+  "awaySince": "Since {when}",
+  "awayQuiet": "Nothing really move.",
+  "awayAlerts": "{count, plural, =1{1 alert don trigger} other{{count} alerts don trigger}}",
+  "awayReported": "Results wey dem report: {symbols}"
 }

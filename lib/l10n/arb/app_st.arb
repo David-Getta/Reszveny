@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{Dividende e 1 e eketsitswe} other{Dividende tse {count} di eketsitswe}}",
   "portfolioExportDividends": "Ntsha dividende (CSV)",
   "portfolioDividendDeleted": "Dividende e hlakotswe",
-  "portfolioDividendsHint": "Dichelete kamoo di fihlileng akhaontong ya hao, ka chelete ya tefo; dipalohare di fetolelwa ka sekhahla sa kajeno. Bakeng sa lekgetho la hao, sebedisa setatemente sa broker ya hao."
+  "portfolioDividendsHint": "Dichelete kamoo di fihlileng akhaontong ya hao, ka chelete ya tefo; dipalohare di fetolelwa ka sekhahla sa kajeno. Bakeng sa lekgetho la hao, sebedisa setatemente sa broker ya hao.",
+  "awayTitle": "Ha o ne o le sieo",
+  "awaySince": "Ho tloha ka {when}",
+  "awayQuiet": "Ha ho letho le fetohileng haholo.",
+  "awayAlerts": "{count, plural, =1{Temoso e 1 e tsositswe} other{Ditemoso tse {count} di tsositswe}}",
+  "awayReported": "Diphetho tse tlalehilweng: {symbols}"
 }

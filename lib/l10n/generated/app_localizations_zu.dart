@@ -2616,4 +2616,31 @@ class AppLocalizationsZu extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Amanani njengoba efike ku-akhawunti yakho, ngemali yokukhokha; amanani aphelele aguqulwa ngesilinganiso sanamuhla. Kwimbuyiselo yentela yakho, sebenzisa isitatimende se-broker yakho.';
+
+  @override
+  String get awayTitle => 'Ngenkathi ungekho';
+
+  @override
+  String awaySince(String when) {
+    return 'Kusukela $when';
+  }
+
+  @override
+  String get awayQuiet => 'Akukho okushintshile kakhulu.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Izexwayiso $count ziqalisiwe',
+      one: 'Isexwayiso 1 siqalisiwe',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Imiphumela ememezelwe: $symbols';
+  }
 }

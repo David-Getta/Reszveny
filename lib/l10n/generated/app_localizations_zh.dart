@@ -2493,6 +2493,33 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get portfolioDividendsHint => '金额以到账时的派息货币显示；合计按今日汇率换算。报税请以券商对账单为准。';
+
+  @override
+  String get awayTitle => '您离开期间';
+
+  @override
+  String awaySince(String when) {
+    return '自 $when 起';
+  }
+
+  @override
+  String get awayQuiet => '没有明显变动。';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 个提醒已触发',
+      one: '1 个提醒已触发',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return '已公布财报：$symbols';
+  }
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -4982,4 +5009,31 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get portfolioDividendsHint => '金額以到賬時的派息貨幣顯示；合計按今日匯率換算。報稅請以經紀商的結單為準。';
+
+  @override
+  String get awayTitle => '你離開期間';
+
+  @override
+  String awaySince(String when) {
+    return '自 $when 起';
+  }
+
+  @override
+  String get awayQuiet => '沒有明顯變動。';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 個提示已觸發',
+      one: '1 個提示已觸發',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return '已公布業績：$symbols';
+  }
 }

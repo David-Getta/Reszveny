@@ -2625,4 +2625,31 @@ class AppLocalizationsMg extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Ny vola araka ny nahatongavany tao amin\'ny kaontinao, amin\'ny vola fandoavana; ny totaly dia ovaina amin\'ny tahan\'ny androany. Ho an\'ny fanambaranao hetra, ampiasao ny tatitra avy amin\'ny broker-nao.';
+
+  @override
+  String get awayTitle => 'Raha mbola tsy teto ianao';
+
+  @override
+  String awaySince(String when) {
+    return 'Nanomboka ny $when';
+  }
+
+  @override
+  String get awayQuiet => 'Tsy nisy niova firy.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Fampitandremana $count nipoitra',
+      one: 'Fampitandremana 1 nipoitra',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Vokatra navoaka: $symbols';
+  }
 }

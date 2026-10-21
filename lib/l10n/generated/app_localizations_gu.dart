@@ -2602,4 +2602,31 @@ class AppLocalizationsGu extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'રકમો તમારા ખાતામાં જેમ આવી તેમ, ચુકવણીની કરન્સીમાં; કુલ આજના દરે રૂપાંતરિત થાય છે. ટેક્સ રિટર્ન માટે તમારા બ્રોકરનું સ્ટેટમેન્ટ વાપરો.';
+
+  @override
+  String get awayTitle => 'તમે દૂર હતા ત્યારે';
+
+  @override
+  String awaySince(String when) {
+    return '$whenથી';
+  }
+
+  @override
+  String get awayQuiet => 'ખાસ કંઈ બદલાયું નથી.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count અલર્ટ ટ્રિગર થયા',
+      one: '1 અલર્ટ ટ્રિગર થયો',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'પરિણામો જાહેર કર્યા: $symbols';
+  }
 }

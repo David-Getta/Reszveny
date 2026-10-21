@@ -2618,4 +2618,31 @@ class AppLocalizationsLn extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Mbongo ndenge ekómaki na compte na yo, na mbongo ya kofuta; ba total ebongwanaka na ntalo ya lelo. Mpo na déclaration ya mpako na yo, salela relevé ya broker na yo.';
+
+  @override
+  String get awayTitle => 'Ntango ozalaki te';
+
+  @override
+  String awaySince(String when) {
+    return 'Banda $when';
+  }
+
+  @override
+  String get awayQuiet => 'Eloko moko te ebongwanaki mingi.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Makebisi $count ebimaki',
+      one: 'Likebisi 1 ebimaki',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Babimisi ba résultats na bango: $symbols';
+  }
 }

@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{Dividendi 1 eyongeddwako} other{Dividendi {count} ziyongeddwako}}",
   "portfolioExportDividends": "Fulumya dividendi (CSV)",
   "portfolioDividendDeleted": "Dividendi esanguddwa",
-  "portfolioDividendsHint": "Ssente nga bwe zaatuuka ku akawunti yo, mu ssente ez'okusasula; omugatte gukyusibwa ku mutindo gwa leero. Ku lipoota yo ey'omusolo, kozesa ekiwandiiko kya broker wo."
+  "portfolioDividendsHint": "Ssente nga bwe zaatuuka ku akawunti yo, mu ssente ez'okusasula; omugatte gukyusibwa ku mutindo gwa leero. Ku lipoota yo ey'omusolo, kozesa ekiwandiiko kya broker wo.",
+  "awayTitle": "Bwe wabadde toliiwo",
+  "awaySince": "Okuva {when}",
+  "awayQuiet": "Tewali kyakyuse nnyo.",
+  "awayAlerts": "{count, plural, =1{Okulabula 1 kuzze} other{Okulabula {count} kuzze}}",
+  "awayReported": "Baafulumizza ebivuddemu: {symbols}"
 }

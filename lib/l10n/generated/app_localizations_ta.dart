@@ -2617,4 +2617,31 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'தொகைகள் உங்கள் கணக்கில் வந்தபடியே, செலுத்தப்பட்ட நாணயத்தில்; மொத்தங்கள் இன்றைய விகிதத்தில் மாற்றப்படுகின்றன. வரி அறிக்கைக்கு உங்கள் புரோக்கரின் அறிக்கையைப் பயன்படுத்தவும்.';
+
+  @override
+  String get awayTitle => 'நீங்கள் இல்லாத போது';
+
+  @override
+  String awaySince(String when) {
+    return '$when முதல்';
+  }
+
+  @override
+  String get awayQuiet => 'பெரிய மாற்றம் எதுவும் இல்லை.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count எச்சரிக்கைகள் தூண்டப்பட்டன',
+      one: '1 எச்சரிக்கை தூண்டப்பட்டது',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'முடிவுகள் வெளியிடப்பட்டன: $symbols';
+  }
 }

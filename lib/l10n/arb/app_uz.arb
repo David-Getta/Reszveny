@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 dividend qoʻshildi} other{{count} dividend qoʻshildi}}",
   "portfolioExportDividends": "Dividendlarni eksport qilish (CSV)",
   "portfolioDividendDeleted": "Dividend oʻchirildi",
-  "portfolioDividendsHint": "Summalar hisobingizga kelgan holatda, toʻlov valyutasida; jami bugungi kurs boʻyicha konvertatsiya qilinadi. Soliq deklaratsiyasi uchun brokeringiz hisobotidan foydalaning."
+  "portfolioDividendsHint": "Summalar hisobingizga kelgan holatda, toʻlov valyutasida; jami bugungi kurs boʻyicha konvertatsiya qilinadi. Soliq deklaratsiyasi uchun brokeringiz hisobotidan foydalaning.",
+  "awayTitle": "Siz yoʻq boʻlganda",
+  "awaySince": "{when}dan beri",
+  "awayQuiet": "Katta oʻzgarish boʻlmadi.",
+  "awayAlerts": "{count, plural, =1{1 ta ogohlantirish ishga tushdi} other{{count} ta ogohlantirish ishga tushdi}}",
+  "awayReported": "Natijalar eʼlon qilindi: {symbols}"
 }

@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 osinko lisätty} other{{count} osinkoa lisätty}}",
   "portfolioExportDividends": "Vie osingot (CSV)",
   "portfolioDividendDeleted": "Osinko poistettu",
-  "portfolioDividendsHint": "Summat sellaisina kuin ne tulivat tilillesi, maksuvaluutassa; yhteissummat muunnetaan tämän päivän kurssilla. Käytä veroilmoitukseen välittäjäsi raporttia."
+  "portfolioDividendsHint": "Summat sellaisina kuin ne tulivat tilillesi, maksuvaluutassa; yhteissummat muunnetaan tämän päivän kurssilla. Käytä veroilmoitukseen välittäjäsi raporttia.",
+  "awayTitle": "Kun olit poissa",
+  "awaySince": "Alkaen {when}",
+  "awayQuiet": "Mikään ei liikkunut paljoa.",
+  "awayAlerts": "{count, plural, =1{1 hälytys lauennut} other{{count} hälytystä lauennut}}",
+  "awayReported": "Tulokset julkaistu: {symbols}"
 }

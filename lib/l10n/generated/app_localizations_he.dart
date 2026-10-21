@@ -2600,4 +2600,32 @@ class AppLocalizationsHe extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'הסכומים כפי שהגיעו לחשבון, במטבע התשלום; הסיכומים מומרים לפי שער היום. לדוח המס יש להשתמש בדוח של הברוקר.';
+
+  @override
+  String get awayTitle => 'בזמן שלא היית';
+
+  @override
+  String awaySince(String when) {
+    return 'מאז $when';
+  }
+
+  @override
+  String get awayQuiet => 'לא היו תנועות משמעותיות.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'הופעלו $count התרעות',
+      two: 'הופעלו שתי התרעות',
+      one: 'הופעלה התרעה אחת',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'פרסמו תוצאות: $symbols';
+  }
 }

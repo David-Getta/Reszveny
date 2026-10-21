@@ -2668,4 +2668,35 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'المبالغ كما وصلت إلى حسابك، بعملة الدفع؛ وتُحوَّل المجاميع بسعر اليوم. لإقرارك الضريبي، استخدم كشف حساب وسيطك.';
+
+  @override
+  String get awayTitle => 'أثناء غيابك';
+
+  @override
+  String awaySince(String when) {
+    return 'منذ $when';
+  }
+
+  @override
+  String get awayQuiet => 'لم يتحرك شيء كثيرًا.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'تم تفعيل $count تنبيه',
+      many: 'تم تفعيل $count تنبيهًا',
+      few: 'تم تفعيل $count تنبيهات',
+      two: 'تم تفعيل تنبيهين',
+      one: 'تم تفعيل تنبيه واحد',
+      zero: 'لم يتم تفعيل أي تنبيه',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'أعلنت نتائجها: $symbols';
+  }
 }

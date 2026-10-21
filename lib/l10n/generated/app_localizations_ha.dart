@@ -2612,4 +2612,31 @@ class AppLocalizationsHa extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Adadin kamar yadda ya shiga asusunka, a kuɗin biya; jimillolin ana canza su da farashin yau. Don bayanin harajinka, yi amfani da takardar dillalinka.';
+
+  @override
+  String get awayTitle => 'Lokacin da ba ka nan';
+
+  @override
+  String awaySince(String when) {
+    return 'Tun $when';
+  }
+
+  @override
+  String get awayQuiet => 'Babu abin da ya canja sosai.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Faɗakarwa $count sun kunna',
+      one: 'Faɗakarwa 1 ta kunna',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Sun fitar da sakamako: $symbols';
+  }
 }

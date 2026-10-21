@@ -2678,4 +2678,33 @@ class AppLocalizationsPl extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Kwoty takie, jakie wpłynęły na Twoje konto, w walucie wypłaty; sumy przeliczane są po dzisiejszym kursie. Do rozliczenia podatkowego użyj zestawienia od brokera.';
+
+  @override
+  String get awayTitle => 'Gdy cię nie było';
+
+  @override
+  String awaySince(String when) {
+    return 'Od $when';
+  }
+
+  @override
+  String get awayQuiet => 'Niewiele się zmieniło.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count alertu uruchomionego',
+      many: '$count alertów uruchomionych',
+      few: '$count alerty uruchomione',
+      one: '1 alert uruchomiony',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Opublikowane wyniki: $symbols';
+  }
 }

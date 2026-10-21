@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 dividande la ñu yokk} other{{count} dividande la ñu yokk}}",
   "portfolioExportDividends": "Génne dividande yi (CSV)",
   "portfolioDividendDeleted": "Dividande bi far na",
-  "portfolioDividendsHint": "Xaalis yi ni ñu dugge ci sa kont, ci xaalisu fey bi; lépp dañu koy soppi ci njëgu tey. Ngir sa impo, jëfandikool kayitu sa broker."
+  "portfolioDividendsHint": "Xaalis yi ni ñu dugge ci sa kont, ci xaalisu fey bi; lépp dañu koy soppi ci njëgu tey. Ngir sa impo, jëfandikool kayitu sa broker.",
+  "awayTitle": "Bi nga fi nekkul",
+  "awaySince": "Li dale {when}",
+  "awayQuiet": "Dara soppikuwul lu bari.",
+  "awayAlerts": "{count, plural, =1{1 artu moo tàkk} other{{count} artu ñoo tàkk}}",
+  "awayReported": "Njureef yi ñu yëgle: {symbols}"
 }

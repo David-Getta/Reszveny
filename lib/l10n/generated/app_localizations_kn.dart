@@ -2615,4 +2615,31 @@ class AppLocalizationsKn extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'ಮೊತ್ತಗಳು ನಿಮ್ಮ ಖಾತೆಗೆ ಬಂದಂತೆಯೇ, ಪಾವತಿ ಕರೆನ್ಸಿಯಲ್ಲಿ; ಒಟ್ಟು ಮೊತ್ತಗಳನ್ನು ಇಂದಿನ ದರದಲ್ಲಿ ಪರಿವರ್ತಿಸಲಾಗಿದೆ. ತೆರಿಗೆ ರಿಟರ್ನ್‌ಗೆ ನಿಮ್ಮ ಬ್ರೋಕರ್‌ನ ಸ್ಟೇಟ್‌ಮೆಂಟ್ ಬಳಸಿ.';
+
+  @override
+  String get awayTitle => 'ನೀವು ದೂರವಿದ್ದಾಗ';
+
+  @override
+  String awaySince(String when) {
+    return '$when ರಿಂದ';
+  }
+
+  @override
+  String get awayQuiet => 'ವಿಶೇಷವಾಗಿ ಏನೂ ಬದಲಾಗಿಲ್ಲ.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ಅಲರ್ಟ್‌ಗಳು ಟ್ರಿಗರ್ ಆಗಿವೆ',
+      one: '1 ಅಲರ್ಟ್ ಟ್ರಿಗರ್ ಆಗಿದೆ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'ಫಲಿತಾಂಶ ಪ್ರಕಟಿಸಿದವು: $symbols';
+  }
 }

@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{Idividende 1 ryongewemo} other{Amadividende {count} yongewemo}}",
   "portfolioExportDividends": "Sohora amadividende (CSV)",
   "portfolioDividendDeleted": "Idividende ryasibwe",
-  "portfolioDividendsHint": "Amafaranga nk'uko yageze kuri konti yawe, mu ifaranga yishyuwemo; ibyose bihindurwa ku gipimo cy'uyu munsi. Ku imenyekanisha ry'imisoro, koresha inyandiko ya broker wawe."
+  "portfolioDividendsHint": "Amafaranga nk'uko yageze kuri konti yawe, mu ifaranga yishyuwemo; ibyose bihindurwa ku gipimo cy'uyu munsi. Ku imenyekanisha ry'imisoro, koresha inyandiko ya broker wawe.",
+  "awayTitle": "Igihe wari udahari",
+  "awaySince": "Kuva {when}",
+  "awayQuiet": "Nta kintu cyahindutse cyane.",
+  "awayAlerts": "{count, plural, =1{Imenyesha 1 ryakoze} other{Amamenyesha {count} yakoze}}",
+  "awayReported": "Ibisubizo byatangajwe: {symbols}"
 }

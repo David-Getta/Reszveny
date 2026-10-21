@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 dividend toegevoegd} other{{count} dividenden toegevoegd}}",
   "portfolioExportDividends": "Dividend exporteren (CSV)",
   "portfolioDividendDeleted": "Dividend verwijderd",
-  "portfolioDividendsHint": "Bedragen zoals ze op je rekening binnenkwamen, in de uitbetalingsvaluta; totalen worden omgerekend tegen de koers van vandaag. Gebruik voor je belastingaangifte het overzicht van je broker."
+  "portfolioDividendsHint": "Bedragen zoals ze op je rekening binnenkwamen, in de uitbetalingsvaluta; totalen worden omgerekend tegen de koers van vandaag. Gebruik voor je belastingaangifte het overzicht van je broker.",
+  "awayTitle": "Terwijl je weg was",
+  "awaySince": "Sinds {when}",
+  "awayQuiet": "Er is weinig bewogen.",
+  "awayAlerts": "{count, plural, =1{1 alert geactiveerd} other{{count} alerts geactiveerd}}",
+  "awayReported": "Resultaten gerapporteerd: {symbols}"
 }

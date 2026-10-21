@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{Dividendi 1 yawonjezedwa} other{Madividendi {count} awonjezedwa}}",
   "portfolioExportDividends": "Tumizani madividendi (CSV)",
   "portfolioDividendDeleted": "Dividendi yachotsedwa",
-  "portfolioDividendsHint": "Ndalama monga momwe zinafikira mu akaunti yanu, mu ndalama yolipira; ziwerengero zonse zimasinthidwa pa mtengo wa lero. Pa msonkho wanu, gwiritsani ntchito chikalata cha broker wanu."
+  "portfolioDividendsHint": "Ndalama monga momwe zinafikira mu akaunti yanu, mu ndalama yolipira; ziwerengero zonse zimasinthidwa pa mtengo wa lero. Pa msonkho wanu, gwiritsani ntchito chikalata cha broker wanu.",
+  "awayTitle": "Pamene munali kulibe",
+  "awaySince": "Kuyambira {when}",
+  "awayQuiet": "Palibe chomwe chasintha kwambiri.",
+  "awayAlerts": "{count, plural, =1{Chenjezo 1 lalira} other{Machenjezo {count} alira}}",
+  "awayReported": "Zotsatira zalengezedwa: {symbols}"
 }

@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 dividend afegit} other{{count} dividends afegits}}",
   "portfolioExportDividends": "Exportar dividends (CSV)",
   "portfolioDividendDeleted": "Dividend eliminat",
-  "portfolioDividendsHint": "Imports tal com van arribar al teu compte, en la moneda del pagament; els totals es converteixen al canvi d'avui. Per a la declaració de la renda, fes servir l'extracte del teu bròquer."
+  "portfolioDividendsHint": "Imports tal com van arribar al teu compte, en la moneda del pagament; els totals es converteixen al canvi d'avui. Per a la declaració de la renda, fes servir l'extracte del teu bròquer.",
+  "awayTitle": "Mentre eres fora",
+  "awaySince": "Des de {when}",
+  "awayQuiet": "No s'ha mogut gaire res.",
+  "awayAlerts": "{count, plural, =1{S'ha activat 1 alerta} other{S'han activat {count} alertes}}",
+  "awayReported": "Resultats publicats: {symbols}"
 }

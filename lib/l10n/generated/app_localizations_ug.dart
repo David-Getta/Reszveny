@@ -2610,4 +2610,31 @@ class AppLocalizationsUg extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'سوممىلار ھېساباتىڭىزغا كەلگەن بويىچە، تۆلەش پۇل بىرلىكىدە؛ جەمئىي سومما بۈگۈنكى پەرق بويىچە ئالماشتۇرۇلىدۇ. باج مەلۇماتىڭىز ئۈچۈن دەللالىڭىزنىڭ ھېسابات جەدۋىلىنى ئىشلىتىڭ.';
+
+  @override
+  String get awayTitle => 'سىز يوق چاغدا';
+
+  @override
+  String awaySince(String when) {
+    return '$when دىن باشلاپ';
+  }
+
+  @override
+  String get awayQuiet => 'كۆپ ئۆزگىرىش بولمىدى.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ئاگاھلاندۇرۇش قوزغىتىلدى',
+      one: '1 ئاگاھلاندۇرۇش قوزغىتىلدى',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'ئېلان قىلىنغان نەتىجىلەر: $symbols';
+  }
 }

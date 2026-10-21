@@ -2678,4 +2678,33 @@ class AppLocalizationsSl extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Zneski, kot so prišli na vaš račun, v valuti izplačila; skupni zneski so preračunani po današnjem tečaju. Za davčno napoved uporabite izpisek svojega borznega posrednika.';
+
+  @override
+  String get awayTitle => 'Medtem ko vas ni bilo';
+
+  @override
+  String awaySince(String when) {
+    return 'Od $when';
+  }
+
+  @override
+  String get awayQuiet => 'Ni se veliko premaknilo.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Sproženih $count opozoril',
+      few: 'Sprožena $count opozorila',
+      two: 'Sproženi $count opozorili',
+      one: 'Sproženo 1 opozorilo',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Objavljeni rezultati: $symbols';
+  }
 }

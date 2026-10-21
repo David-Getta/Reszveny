@@ -2606,4 +2606,31 @@ class AppLocalizationsBn extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'পরিমাণগুলো আপনার অ্যাকাউন্টে যেভাবে এসেছে, পরিশোধের মুদ্রায়; মোট আজকের দরে রূপান্তরিত। কর রিটার্নের জন্য আপনার ব্রোকারের স্টেটমেন্ট ব্যবহার করুন।';
+
+  @override
+  String get awayTitle => 'আপনি যখন দূরে ছিলেন';
+
+  @override
+  String awaySince(String when) {
+    return '$when থেকে';
+  }
+
+  @override
+  String get awayQuiet => 'বিশেষ কিছু বদলায়নি।';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countটি অ্যালার্ট ট্রিগার হয়েছে',
+      one: '1টি অ্যালার্ট ট্রিগার হয়েছে',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'ফলাফল প্রকাশ করেছে: $symbols';
+  }
 }

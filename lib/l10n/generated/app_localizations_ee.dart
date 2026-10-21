@@ -2610,4 +2610,31 @@ class AppLocalizationsEe extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Ga home siwo va wò akɔnta dzi tututu, le fexexe ƒe gaŋkɔ me; wotrɔa ƒuƒoƒowo le egbe ƒe asi nu. Na wò adzɔxexe ƒe agbalẽ la, zã wò broker ƒe akɔnta agbalẽ.';
+
+  @override
+  String get awayTitle => 'Esi mèli o';
+
+  @override
+  String awaySince(String when) {
+    return 'Tso $when';
+  }
+
+  @override
+  String get awayQuiet => 'Naneke metrɔ boo o.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nuxlɔ̃ame $count dzɔ',
+      one: 'Nuxlɔ̃ame 1 dzɔ',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Woɖe gbeƒã woƒe metsonuwo: $symbols';
+  }
 }

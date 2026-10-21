@@ -2614,4 +2614,31 @@ class AppLocalizationsTe extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'మొత్తాలు మీ ఖాతాలోకి వచ్చినట్లుగా, చెల్లింపు కరెన్సీలో; మొత్తం విలువలు నేటి రేటుతో మార్చబడతాయి. పన్ను రిటర్న్ కోసం మీ బ్రోకర్ స్టేట్‌మెంట్ ఉపయోగించండి.';
+
+  @override
+  String get awayTitle => 'మీరు లేనప్పుడు';
+
+  @override
+  String awaySince(String when) {
+    return '$when నుండి';
+  }
+
+  @override
+  String get awayQuiet => 'పెద్దగా ఏమీ కదలలేదు.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count అలర్ట్‌లు ట్రిగ్గర్ అయ్యాయి',
+      one: '1 అలర్ట్ ట్రిగ్గర్ అయింది',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'ఫలితాలు ప్రకటించాయి: $symbols';
+  }
 }

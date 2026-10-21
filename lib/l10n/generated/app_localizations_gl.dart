@@ -2630,4 +2630,31 @@ class AppLocalizationsGl extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Importes tal como chegaron á túa conta, na moeda de pagamento; os totais convértense ao cambio de hoxe. Para a declaración da renda, usa o extracto do teu corredor.';
+
+  @override
+  String get awayTitle => 'Mentres non estabas';
+
+  @override
+  String awaySince(String when) {
+    return 'Desde $when';
+  }
+
+  @override
+  String get awayQuiet => 'Nada se moveu moito.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count alertas activadas',
+      one: '1 alerta activada',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Resultados publicados: $symbols';
+  }
 }

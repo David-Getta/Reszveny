@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 ድቪደንድ ተወሲኹ} other{{count} ድቪደንድታት ተወሲኾም}}",
   "portfolioExportDividends": "ድቪደንድታት ኤክስፖርት ግበር (CSV)",
   "portfolioDividendDeleted": "ድቪደንድ ተሰሪዙ",
-  "portfolioDividendsHint": "መጠናት ከምቲ ኣብ ሕሳብካ ዝበጽሐ፣ ብባጤራ ክፍሊት፤ ድምር ብናይ ሎሚ ሸርፊ ይቀየር። ንመግለጺ ግብሪኻ፣ ናይ ብሮከርካ መግለጺ ተጠቐም።"
+  "portfolioDividendsHint": "መጠናት ከምቲ ኣብ ሕሳብካ ዝበጽሐ፣ ብባጤራ ክፍሊት፤ ድምር ብናይ ሎሚ ሸርፊ ይቀየር። ንመግለጺ ግብሪኻ፣ ናይ ብሮከርካ መግለጺ ተጠቐም።",
+  "awayTitle": "ኣብዘይነበርኩምሉ እዋን",
+  "awaySince": "ካብ {when}",
+  "awayQuiet": "ብዙሕ ዝተለወጠ ነገር የለን።",
+  "awayAlerts": "{count, plural, =1{1 መጠንቀቕታ ተበጊሱ} other{{count} መጠንቀቕታታት ተበጊሶም}}",
+  "awayReported": "ዝተገልጸ ውጽኢት: {symbols}"
 }

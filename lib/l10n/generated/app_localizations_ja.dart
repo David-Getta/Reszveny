@@ -2528,4 +2528,31 @@ class AppLocalizationsJa extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       '金額は口座に入金されたとおりの支払通貨で表示し、合計は本日のレートで換算しています。確定申告には証券会社の報告書をご利用ください。';
+
+  @override
+  String get awayTitle => '離れていた間に';
+
+  @override
+  String awaySince(String when) {
+    return '$when以降';
+  }
+
+  @override
+  String get awayQuiet => '大きな値動きはありませんでした。';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'アラート$count件が発動',
+      one: 'アラート1件が発動',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return '決算発表: $symbols';
+  }
 }

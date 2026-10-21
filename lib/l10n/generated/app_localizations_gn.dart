@@ -2612,4 +2612,31 @@ class AppLocalizationsGn extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Pira pire og̃uahẽ haguéicha nde cuenta-pe, jehepyme\'ẽ viru-pe; opavave oñembohasa ko árape oĩva cambio-pe. Nde impuesto declaración-rã, eipuru nde broker extracto.';
+
+  @override
+  String get awayTitle => 'Nereĩ aja';
+
+  @override
+  String awaySince(String when) {
+    return '$when guive';
+  }
+
+  @override
+  String get awayQuiet => 'Mbaʼeve nokambiái heta.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ñemomarandu oiko',
+      one: '1 ñemomarandu oiko',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Resultado oñemoherakuã: $symbols';
+  }
 }

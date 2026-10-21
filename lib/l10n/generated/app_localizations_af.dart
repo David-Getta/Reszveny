@@ -2610,4 +2610,31 @@ class AppLocalizationsAf extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Bedrae soos dit op jou rekening aangekom het, in die uitbetalingsgeldeenheid; totale word teen vandag se koers omgeskakel. Gebruik jou makelaar se staat vir jou belastingopgawe.';
+
+  @override
+  String get awayTitle => 'Terwyl jy weg was';
+
+  @override
+  String awaySince(String when) {
+    return 'Sedert $when';
+  }
+
+  @override
+  String get awayQuiet => 'Niks het veel beweeg nie.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count waarskuwings geaktiveer',
+      one: '1 waarskuwing geaktiveer',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Resultate bekendgemaak: $symbols';
+  }
 }

@@ -2608,4 +2608,31 @@ class AppLocalizationsTk extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Möçberler hasabyňyza gelen görnüşinde, töleg walýutasynda; jemler şu günki kurs bilen öwrülýär. Salgyt beýannamasy üçin brokeriňiziň hasabatyny ulanyň.';
+
+  @override
+  String get awayTitle => 'Siz ýok wagtyňyz';
+
+  @override
+  String awaySince(String when) {
+    return '$when bäri';
+  }
+
+  @override
+  String get awayQuiet => 'Köp zat üýtgemedi.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count duýduryş işe girdi',
+      one: '1 duýduryş işe girdi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Netijeler yglan edildi: $symbols';
+  }
 }

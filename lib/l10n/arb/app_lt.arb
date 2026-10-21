@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{Pridėtas 1 dividendas} one{Pridėtas {count} dividendas} few{Pridėti {count} dividendai} many{Pridėta {count} dividendo} other{Pridėta {count} dividendų}}",
   "portfolioExportDividends": "Eksportuoti dividendus (CSV)",
   "portfolioDividendDeleted": "Dividendas ištrintas",
-  "portfolioDividendsHint": "Sumos tokios, kokios atėjo į jūsų sąskaitą, išmokėjimo valiuta; bendros sumos konvertuojamos šiandienos kursu. Mokesčių deklaracijai naudokite savo brokerio išrašą."
+  "portfolioDividendsHint": "Sumos tokios, kokios atėjo į jūsų sąskaitą, išmokėjimo valiuta; bendros sumos konvertuojamos šiandienos kursu. Mokesčių deklaracijai naudokite savo brokerio išrašą.",
+  "awayTitle": "Kol jūsų nebuvo",
+  "awaySince": "Nuo {when}",
+  "awayQuiet": "Niekas labai nepasikeitė.",
+  "awayAlerts": "{count, plural, =1{Suveikė 1 įspėjimas} one{Suveikė {count} įspėjimas} few{Suveikė {count} įspėjimai} many{Suveikė {count} įspėjimo} other{Suveikė {count} įspėjimų}}",
+  "awayReported": "Paskelbė rezultatus: {symbols}"
 }

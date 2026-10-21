@@ -2622,4 +2622,31 @@ class AppLocalizationsQu extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Qullqikuna imaynam cuentaykiman chayamurqan hina, pagana qullqipi; tukuy yupaykuna kunan p\'unchaw chaninwan tikrasqa. Impuesto willakuyniykipaq, brokerniykipa willakuyninta llamk\'achiy.';
+
+  @override
+  String get awayTitle => 'Mana kashaqtiyki';
+
+  @override
+  String awaySince(String when) {
+    return '${when}manta';
+  }
+
+  @override
+  String get awayQuiet => 'Manam imapas anchata kuyurqanchu.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count willakuykuna rikch\'arirqa',
+      one: '1 willakuy rikch\'arirqa',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Resultadokuna willasqa: $symbols';
+  }
 }

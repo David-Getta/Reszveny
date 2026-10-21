@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 dividen ditambah} other{{count} dividen ditambah}}",
   "portfolioExportDividends": "Eksport dividen (CSV)",
   "portfolioDividendDeleted": "Dividen dipadamkan",
-  "portfolioDividendsHint": "Jumlah seperti yang diterima dalam akaun anda, dalam mata wang pembayaran; jumlah keseluruhan ditukar pada kadar hari ini. Untuk penyata cukai, gunakan penyata broker anda."
+  "portfolioDividendsHint": "Jumlah seperti yang diterima dalam akaun anda, dalam mata wang pembayaran; jumlah keseluruhan ditukar pada kadar hari ini. Untuk penyata cukai, gunakan penyata broker anda.",
+  "awayTitle": "Semasa anda tiada",
+  "awaySince": "Sejak {when}",
+  "awayQuiet": "Tiada pergerakan ketara.",
+  "awayAlerts": "{count, plural, =1{1 amaran dicetuskan} other{{count} amaran dicetuskan}}",
+  "awayReported": "Keputusan dilaporkan: {symbols}"
 }

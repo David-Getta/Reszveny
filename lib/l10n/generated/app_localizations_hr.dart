@@ -2652,4 +2652,32 @@ class AppLocalizationsHr extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Iznosi onakvi kakvi su stigli na vaš račun, u valuti isplate; ukupni iznosi preračunavaju se po današnjem tečaju. Za poreznu prijavu koristite izvadak svog brokera.';
+
+  @override
+  String get awayTitle => 'Dok ste bili odsutni';
+
+  @override
+  String awaySince(String when) {
+    return 'Od $when';
+  }
+
+  @override
+  String get awayQuiet => 'Ništa se nije puno promijenilo.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Aktivirano $count upozorenja',
+      few: 'Aktivirana $count upozorenja',
+      one: 'Aktivirano $count upozorenje',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Objavili rezultate: $symbols';
+  }
 }

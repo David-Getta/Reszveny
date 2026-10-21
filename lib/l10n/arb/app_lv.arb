@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{Pievienota 1 dividende} zero{Pievienotas {count} dividendes} one{Pievienota {count} dividende} other{Pievienotas {count} dividendes}}",
   "portfolioExportDividends": "Eksportēt dividendes (CSV)",
   "portfolioDividendDeleted": "Dividende izdzēsta",
-  "portfolioDividendsHint": "Summas tādas, kādas tās ienāca jūsu kontā, izmaksas valūtā; kopsummas pārrēķinātas pēc šodienas kursa. Nodokļu deklarācijai izmantojiet sava brokera izrakstu."
+  "portfolioDividendsHint": "Summas tādas, kādas tās ienāca jūsu kontā, izmaksas valūtā; kopsummas pārrēķinātas pēc šodienas kursa. Nodokļu deklarācijai izmantojiet sava brokera izrakstu.",
+  "awayTitle": "Kamēr jūs nebijāt klāt",
+  "awaySince": "No {when}",
+  "awayQuiet": "Nekas īpaši nemainījās.",
+  "awayAlerts": "{count, plural, =1{Aktivizēts 1 brīdinājums} zero{Aktivizēti {count} brīdinājumi} one{Aktivizēts {count} brīdinājums} other{Aktivizēti {count} brīdinājumi}}",
+  "awayReported": "Publicēja rezultātus: {symbols}"
 }

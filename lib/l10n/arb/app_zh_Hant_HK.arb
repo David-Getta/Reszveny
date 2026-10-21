@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{已新增 1 筆股息} other{已新增 {count} 筆股息}}",
   "portfolioExportDividends": "匯出股息（CSV）",
   "portfolioDividendDeleted": "股息已刪除",
-  "portfolioDividendsHint": "金額以到賬時的派息貨幣顯示；合計按今日匯率換算。報稅請以經紀商的結單為準。"
+  "portfolioDividendsHint": "金額以到賬時的派息貨幣顯示；合計按今日匯率換算。報稅請以經紀商的結單為準。",
+  "awayTitle": "你離開期間",
+  "awaySince": "自 {when} 起",
+  "awayQuiet": "沒有明顯變動。",
+  "awayAlerts": "{count, plural, =1{1 個提示已觸發} other{{count} 個提示已觸發}}",
+  "awayReported": "已公布業績：{symbols}"
 }

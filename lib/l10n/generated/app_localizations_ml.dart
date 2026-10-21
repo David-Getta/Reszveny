@@ -2619,4 +2619,31 @@ class AppLocalizationsMl extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'തുകകൾ നിങ്ങളുടെ അക്കൗണ്ടിൽ എത്തിയതുപോലെ, പേഔട്ട് കറൻസിയിൽ; ആകെത്തുകകൾ ഇന്നത്തെ നിരക്കിൽ മാറ്റുന്നു. നികുതി റിട്ടേണിനായി നിങ്ങളുടെ ബ്രോക്കറുടെ സ്റ്റേറ്റ്‌മെന്റ് ഉപയോഗിക്കുക.';
+
+  @override
+  String get awayTitle => 'നിങ്ങൾ ഇല്ലാതിരുന്നപ്പോൾ';
+
+  @override
+  String awaySince(String when) {
+    return '$when മുതൽ';
+  }
+
+  @override
+  String get awayQuiet => 'കാര്യമായ മാറ്റമൊന്നുമില്ല.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count അലേർട്ടുകൾ പ്രവർത്തനക്ഷമമായി',
+      one: '1 അലേർട്ട് പ്രവർത്തനക്ഷമമായി',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'ഫലങ്ങൾ പ്രഖ്യാപിച്ചു: $symbols';
+  }
 }

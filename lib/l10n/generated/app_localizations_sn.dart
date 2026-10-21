@@ -2612,4 +2612,31 @@ class AppLocalizationsSn extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Mari sezvayakasvika muakaunti yako, mumari yekubhadhara; zvose zvinoshandurwa nemutengo wanhasi. Pamutero wako, shandisa chinyorwa chebroker wako.';
+
+  @override
+  String get awayTitle => 'Pawaive usipo';
+
+  @override
+  String awaySince(String when) {
+    return 'Kubva $when';
+  }
+
+  @override
+  String get awayQuiet => 'Hapana chakanyanya kuchinja.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Yambiro $count dzarira',
+      one: 'Yambiro 1 yarira',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Mhedzisiro dzakaburitswa: $symbols';
+  }
 }

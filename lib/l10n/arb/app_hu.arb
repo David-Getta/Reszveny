@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 osztalék felvéve} other{{count} osztalék felvéve}}",
   "portfolioExportDividends": "Osztalékok exportja (CSV)",
   "portfolioDividendDeleted": "Osztalék törölve",
-  "portfolioDividendsHint": "Az összegek úgy, ahogy a számlára érkeztek, a kifizetés pénznemében; az összesítés a mai árfolyamon átváltva. Az adóbevalláshoz a brókered kimutatása az irányadó."
+  "portfolioDividendsHint": "Az összegek úgy, ahogy a számlára érkeztek, a kifizetés pénznemében; az összesítés a mai árfolyamon átváltva. Az adóbevalláshoz a brókered kimutatása az irányadó.",
+  "awayTitle": "Amíg távol voltál",
+  "awaySince": "{when} óta",
+  "awayQuiet": "Nem történt nagy mozgás.",
+  "awayAlerts": "{count, plural, =1{1 riasztás teljesült} other{{count} riasztás teljesült}}",
+  "awayReported": "Gyorsjelentést adott: {symbols}"
 }

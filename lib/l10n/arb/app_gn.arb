@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 dividendo oñembojoapy} other{{count} dividendo oñembojoapy}}",
   "portfolioExportDividends": "Enohẽ dividendo (CSV)",
   "portfolioDividendDeleted": "Dividendo oñemboguepa",
-  "portfolioDividendsHint": "Pira pire og̃uahẽ haguéicha nde cuenta-pe, jehepyme'ẽ viru-pe; opavave oñembohasa ko árape oĩva cambio-pe. Nde impuesto declaración-rã, eipuru nde broker extracto."
+  "portfolioDividendsHint": "Pira pire og̃uahẽ haguéicha nde cuenta-pe, jehepyme'ẽ viru-pe; opavave oñembohasa ko árape oĩva cambio-pe. Nde impuesto declaración-rã, eipuru nde broker extracto.",
+  "awayTitle": "Nereĩ aja",
+  "awaySince": "{when} guive",
+  "awayQuiet": "Mbaʼeve nokambiái heta.",
+  "awayAlerts": "{count, plural, =1{1 ñemomarandu oiko} other{{count} ñemomarandu oiko}}",
+  "awayReported": "Resultado oñemoherakuã: {symbols}"
 }

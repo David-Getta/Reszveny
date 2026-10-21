@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{배당금 1건이 추가되었습니다} other{배당금 {count}건이 추가되었습니다}}",
   "portfolioExportDividends": "배당금 내보내기 (CSV)",
   "portfolioDividendDeleted": "배당금이 삭제되었습니다",
-  "portfolioDividendsHint": "금액은 계좌에 입금된 그대로 지급 통화로 표시되며, 합계는 오늘 환율로 환산됩니다. 세금 신고에는 증권사 명세서를 사용하세요."
+  "portfolioDividendsHint": "금액은 계좌에 입금된 그대로 지급 통화로 표시되며, 합계는 오늘 환율로 환산됩니다. 세금 신고에는 증권사 명세서를 사용하세요.",
+  "awayTitle": "자리를 비운 동안",
+  "awaySince": "{when} 이후",
+  "awayQuiet": "큰 변동은 없었습니다.",
+  "awayAlerts": "{count, plural, =1{알림 1건 발생} other{알림 {count}건 발생}}",
+  "awayReported": "실적 발표: {symbols}"
 }

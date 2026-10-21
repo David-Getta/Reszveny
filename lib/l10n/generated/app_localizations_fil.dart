@@ -2614,4 +2614,31 @@ class AppLocalizationsFil extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Mga halaga ayon sa pagdating nito sa iyong account, sa currency ng pagbabayad; ang mga kabuuan ay naka-convert sa rate ngayon. Para sa iyong tax return, gamitin ang statement ng iyong broker.';
+
+  @override
+  String get awayTitle => 'Habang wala ka';
+
+  @override
+  String awaySince(String when) {
+    return 'Mula $when';
+  }
+
+  @override
+  String get awayQuiet => 'Walang gaanong gumalaw.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count alerto ang na-trigger',
+      one: '1 alerto ang na-trigger',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Naglabas ng resulta: $symbols';
+  }
 }

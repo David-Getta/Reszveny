@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1টা লাভাংশ যোগ কৰা হ'ল} other{{count}টা লাভাংশ যোগ কৰা হ'ল}}",
   "portfolioExportDividends": "লাভাংশ এক্সপোৰ্ট কৰক (CSV)",
   "portfolioDividendDeleted": "লাভাংশ মচা হ'ল",
-  "portfolioDividendsHint": "পৰিমাণসমূহ আপোনাৰ একাউণ্টত অহাৰ দৰে, পৰিশোধৰ মুদ্ৰাত; মুঠ আজিৰ হাৰত ৰূপান্তৰিত হয়। কৰ ৰিটাৰ্ণৰ বাবে আপোনাৰ ব্ৰোকাৰৰ বিবৃতি ব্যৱহাৰ কৰক।"
+  "portfolioDividendsHint": "পৰিমাণসমূহ আপোনাৰ একাউণ্টত অহাৰ দৰে, পৰিশোধৰ মুদ্ৰাত; মুঠ আজিৰ হাৰত ৰূপান্তৰিত হয়। কৰ ৰিটাৰ্ণৰ বাবে আপোনাৰ ব্ৰোকাৰৰ বিবৃতি ব্যৱহাৰ কৰক।",
+  "awayTitle": "আপুনি অনুপস্থিত থকা সময়ত",
+  "awaySince": "{when}ৰ পৰা",
+  "awayQuiet": "বিশেষ একো সলনি হোৱা নাই।",
+  "awayAlerts": "{count, plural, =1{1টা সতৰ্কবাণী সক্ৰিয় হৈছে} other{{count}টা সতৰ্কবাণী সক্ৰিয় হৈছে}}",
+  "awayReported": "ফলাফল ঘোষণা কৰিলে: {symbols}"
 }

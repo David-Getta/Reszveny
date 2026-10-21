@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 سود سهام اضافه شد} other{{count} سود سهام اضافه شد}}",
   "portfolioExportDividends": "خروجی سود سهام (CSV)",
   "portfolioDividendDeleted": "سود سهام حذف شد",
-  "portfolioDividendsHint": "مبالغ همان‌طور که به حسابتان رسیده‌اند، به ارز پرداخت؛ جمع‌ها با نرخ امروز تبدیل می‌شوند. برای اظهارنامه مالیاتی از صورت‌حساب کارگزارتان استفاده کنید."
+  "portfolioDividendsHint": "مبالغ همان‌طور که به حسابتان رسیده‌اند، به ارز پرداخت؛ جمع‌ها با نرخ امروز تبدیل می‌شوند. برای اظهارنامه مالیاتی از صورت‌حساب کارگزارتان استفاده کنید.",
+  "awayTitle": "در غیاب شما",
+  "awaySince": "از {when}",
+  "awayQuiet": "چیزی تغییر چندانی نکرد.",
+  "awayAlerts": "{count, plural, =1{۱ هشدار فعال شد} other{{count} هشدار فعال شد}}",
+  "awayReported": "نتایج خود را اعلام کردند: {symbols}"
 }

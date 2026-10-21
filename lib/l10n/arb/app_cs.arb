@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{Přidána 1 dividenda} few{Přidány {count} dividendy} many{Přidáno {count} dividendy} other{Přidáno {count} dividend}}",
   "portfolioExportDividends": "Exportovat dividendy (CSV)",
   "portfolioDividendDeleted": "Dividenda smazána",
-  "portfolioDividendsHint": "Částky tak, jak dorazily na váš účet, v měně výplaty; součty jsou převedeny dnešním kurzem. Pro daňové přiznání použijte výpis od svého brokera."
+  "portfolioDividendsHint": "Částky tak, jak dorazily na váš účet, v měně výplaty; součty jsou převedeny dnešním kurzem. Pro daňové přiznání použijte výpis od svého brokera.",
+  "awayTitle": "Zatímco jste byli pryč",
+  "awaySince": "Od {when}",
+  "awayQuiet": "Nic se moc nehnulo.",
+  "awayAlerts": "{count, plural, =1{Spuštěno 1 upozornění} few{Spuštěna {count} upozornění} many{Spuštěno {count} upozornění} other{Spuštěno {count} upozornění}}",
+  "awayReported": "Zveřejněné výsledky: {symbols}"
 }

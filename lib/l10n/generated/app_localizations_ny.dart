@@ -2614,4 +2614,31 @@ class AppLocalizationsNy extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Ndalama monga momwe zinafikira mu akaunti yanu, mu ndalama yolipira; ziwerengero zonse zimasinthidwa pa mtengo wa lero. Pa msonkho wanu, gwiritsani ntchito chikalata cha broker wanu.';
+
+  @override
+  String get awayTitle => 'Pamene munali kulibe';
+
+  @override
+  String awaySince(String when) {
+    return 'Kuyambira $when';
+  }
+
+  @override
+  String get awayQuiet => 'Palibe chomwe chasintha kwambiri.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Machenjezo $count alira',
+      one: 'Chenjezo 1 lalira',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Zotsatira zalengezedwa: $symbols';
+  }
 }

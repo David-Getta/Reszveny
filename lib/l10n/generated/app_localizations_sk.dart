@@ -2675,4 +2675,32 @@ class AppLocalizationsSk extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Sumy tak, ako prišli na váš účet, v mene výplaty; súčty sa prepočítavajú dnešným kurzom. Na daňové priznanie použite výpis od svojho brokera.';
+
+  @override
+  String get awayTitle => 'Kým ste boli preč';
+
+  @override
+  String awaySince(String when) {
+    return 'Od $when';
+  }
+
+  @override
+  String get awayQuiet => 'Veľa sa nepohlo.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Spustilo sa $count upozornení',
+      few: 'Spustili sa $count upozornenia',
+      one: 'Spustilo sa 1 upozornenie',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Zverejnené výsledky: $symbols';
+  }
 }

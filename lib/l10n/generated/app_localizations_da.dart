@@ -2605,4 +2605,31 @@ class AppLocalizationsDa extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Beløb som de blev indsat på din konto, i udbetalingsvalutaen; totaler omregnes til dagens kurs. Brug din brokers opgørelse til din selvangivelse.';
+
+  @override
+  String get awayTitle => 'Mens du var væk';
+
+  @override
+  String awaySince(String when) {
+    return 'Siden $when';
+  }
+
+  @override
+  String get awayQuiet => 'Intet bevægede sig meget.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count alarmer udløst',
+      one: '1 alarm udløst',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Offentliggjorde resultater: $symbols';
+  }
 }

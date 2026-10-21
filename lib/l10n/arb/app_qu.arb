@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 dividendo yapasqa} other{{count} dividendokuna yapasqa}}",
   "portfolioExportDividends": "Dividendokunata lluqsichiy (CSV)",
   "portfolioDividendDeleted": "Dividendo qulluchisqa",
-  "portfolioDividendsHint": "Qullqikuna imaynam cuentaykiman chayamurqan hina, pagana qullqipi; tukuy yupaykuna kunan p'unchaw chaninwan tikrasqa. Impuesto willakuyniykipaq, brokerniykipa willakuyninta llamk'achiy."
+  "portfolioDividendsHint": "Qullqikuna imaynam cuentaykiman chayamurqan hina, pagana qullqipi; tukuy yupaykuna kunan p'unchaw chaninwan tikrasqa. Impuesto willakuyniykipaq, brokerniykipa willakuyninta llamk'achiy.",
+  "awayTitle": "Mana kashaqtiyki",
+  "awaySince": "{when}manta",
+  "awayQuiet": "Manam imapas anchata kuyurqanchu.",
+  "awayAlerts": "{count, plural, =1{1 willakuy rikch'arirqa} other{{count} willakuykuna rikch'arirqa}}",
+  "awayReported": "Resultadokuna willasqa: {symbols}"
 }

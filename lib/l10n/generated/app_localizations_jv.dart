@@ -2609,4 +2609,31 @@ class AppLocalizationsJv extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Jumlah kaya sing mlebu ing akun sampeyan, ing mata uang pembayaran; total dikonversi nganggo kurs dina iki. Kanggo laporan pajak, gunakna laporan saka broker sampeyan.';
+
+  @override
+  String get awayTitle => 'Nalika sampeyan ora ana';
+
+  @override
+  String awaySince(String when) {
+    return 'Wiwit $when';
+  }
+
+  @override
+  String get awayQuiet => 'Ora akeh sing owah.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count peringatan kepicu',
+      one: '1 peringatan kepicu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Ngumumake asil: $symbols';
+  }
 }

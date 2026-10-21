@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 डिविडेंड जोड़ा गया} other{{count} डिविडेंड जोड़े गए}}",
   "portfolioExportDividends": "डिविडेंड एक्सपोर्ट करें (CSV)",
   "portfolioDividendDeleted": "डिविडेंड हटाया गया",
-  "portfolioDividendsHint": "राशियाँ वैसी ही जैसी आपके खाते में आईं, भुगतान की मुद्रा में; कुल आज की दर पर बदला जाता है। टैक्स रिटर्न के लिए अपने ब्रोकर का स्टेटमेंट इस्तेमाल करें।"
+  "portfolioDividendsHint": "राशियाँ वैसी ही जैसी आपके खाते में आईं, भुगतान की मुद्रा में; कुल आज की दर पर बदला जाता है। टैक्स रिटर्न के लिए अपने ब्रोकर का स्टेटमेंट इस्तेमाल करें।",
+  "awayTitle": "जब आप दूर थे",
+  "awaySince": "{when} से",
+  "awayQuiet": "कुछ खास नहीं बदला।",
+  "awayAlerts": "{count, plural, =1{1 अलर्ट ट्रिगर हुआ} other{{count} अलर्ट ट्रिगर हुए}}",
+  "awayReported": "नतीजे जारी किए: {symbols}"
 }

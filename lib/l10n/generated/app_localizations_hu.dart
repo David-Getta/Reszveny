@@ -2612,4 +2612,31 @@ class AppLocalizationsHu extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Az összegek úgy, ahogy a számlára érkeztek, a kifizetés pénznemében; az összesítés a mai árfolyamon átváltva. Az adóbevalláshoz a brókered kimutatása az irányadó.';
+
+  @override
+  String get awayTitle => 'Amíg távol voltál';
+
+  @override
+  String awaySince(String when) {
+    return '$when óta';
+  }
+
+  @override
+  String get awayQuiet => 'Nem történt nagy mozgás.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count riasztás teljesült',
+      one: '1 riasztás teljesült',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Gyorsjelentést adott: $symbols';
+  }
 }

@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{Dividendi 1 rawedzerwa} other{Madividendi {count} awedzerwa}}",
   "portfolioExportDividends": "Buditsa madividendi (CSV)",
   "portfolioDividendDeleted": "Dividendi radzimwa",
-  "portfolioDividendsHint": "Mari sezvayakasvika muakaunti yako, mumari yekubhadhara; zvose zvinoshandurwa nemutengo wanhasi. Pamutero wako, shandisa chinyorwa chebroker wako."
+  "portfolioDividendsHint": "Mari sezvayakasvika muakaunti yako, mumari yekubhadhara; zvose zvinoshandurwa nemutengo wanhasi. Pamutero wako, shandisa chinyorwa chebroker wako.",
+  "awayTitle": "Pawaive usipo",
+  "awaySince": "Kubva {when}",
+  "awayQuiet": "Hapana chakanyanya kuchinja.",
+  "awayAlerts": "{count, plural, =1{Yambiro 1 yarira} other{Yambiro {count} dzarira}}",
+  "awayReported": "Mhedzisiro dzakaburitswa: {symbols}"
 }

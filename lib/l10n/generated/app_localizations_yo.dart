@@ -2605,4 +2605,31 @@ class AppLocalizationsYo extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Owó gẹ́gẹ́ bí ó ṣe wọ àkáǹtì rẹ, nínú owó ìsanwó; a yí àpapọ̀ padà ní ìwọ̀n òní. Fún ìkéde owó-orí rẹ, lo ìwé àkọsílẹ̀ broker rẹ.';
+
+  @override
+  String get awayTitle => 'Nígbà tí o kò sí';
+
+  @override
+  String awaySince(String when) {
+    return 'Láti $when';
+  }
+
+  @override
+  String get awayQuiet => 'Kò sí ohun tó yí padà púpọ̀.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ìkìlọ̀ $count ti dún',
+      one: 'Ìkìlọ̀ 1 ti dún',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Àbájáde tí a tẹ̀jáde: $symbols';
+  }
 }

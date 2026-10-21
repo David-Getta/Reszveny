@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{Dividende 1 me yikama} other{Ba dividende {count} me yikama}}",
   "portfolioExportDividends": "Basisa ba dividende (CSV)",
   "portfolioDividendDeleted": "Dividende me katulwa",
-  "portfolioDividendsHint": "Mbongo mutindu yo kwisaka na konti na nge, na mbongo ya kufuta; ba total ke balulwa na ntalu ya bubu. Sambu na mukanda na nge ya mpaku, sadila mukanda ya broker na nge."
+  "portfolioDividendsHint": "Mbongo mutindu yo kwisaka na konti na nge, na mbongo ya kufuta; ba total ke balulwa na ntalu ya bubu. Sambu na mukanda na nge ya mpaku, sadila mukanda ya broker na nge.",
+  "awayTitle": "Ntangu nge vandaka ve",
+  "awaySince": "Tuka {when}",
+  "awayQuiet": "Kima ve me soba mingi.",
+  "awayAlerts": "{count, plural, =1{Lukebisu 1 me basika} other{Balukebisu {count} me basika}}",
+  "awayReported": "Ba rezulta me basika: {symbols}"
 }

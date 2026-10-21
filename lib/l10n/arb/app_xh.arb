@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{Isahlulo esi-1 songeziwe} other{Izahlulo ezi-{count} zongeziwe}}",
   "portfolioExportDividends": "Khupha izahlulo (CSV)",
   "portfolioDividendDeleted": "Isahlulo sicinyiwe",
-  "portfolioDividendsHint": "Izixa njengoko zifike kwiakhawunti yakho, ngemali yentlawulo; amanani apheleleyo aguqulelwa ngexabiso lanamhlanje. Kwingxelo yakho yerhafu, sebenzisa ingxelo yebroker yakho."
+  "portfolioDividendsHint": "Izixa njengoko zifike kwiakhawunti yakho, ngemali yentlawulo; amanani apheleleyo aguqulelwa ngexabiso lanamhlanje. Kwingxelo yakho yerhafu, sebenzisa ingxelo yebroker yakho.",
+  "awayTitle": "Ngexesha wawungekho",
+  "awaySince": "Ukususela {when}",
+  "awayQuiet": "Akukho nto itshintshe kakhulu.",
+  "awayAlerts": "{count, plural, =1{Isilumkiso 1 siqalisiwe} other{Izilumkiso {count} ziqalisiwe}}",
+  "awayReported": "Iziphumo ezipapashiweyo: {symbols}"
 }

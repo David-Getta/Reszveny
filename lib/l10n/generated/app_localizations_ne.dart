@@ -2606,4 +2606,31 @@ class AppLocalizationsNe extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'रकमहरू तपाईंको खातामा आएअनुसार, भुक्तानी मुद्रामा; जम्मा रकम आजको दरमा रूपान्तरण गरिन्छ। कर विवरणका लागि आफ्नो ब्रोकरको स्टेटमेन्ट प्रयोग गर्नुहोस्।';
+
+  @override
+  String get awayTitle => 'तपाईं नहुँदा';
+
+  @override
+  String awaySince(String when) {
+    return '$when देखि';
+  }
+
+  @override
+  String get awayQuiet => 'खासै केही चलेन।';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count अलर्ट ट्रिगर भए',
+      one: '1 अलर्ट ट्रिगर भयो',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'नतिजा प्रकाशित: $symbols';
+  }
 }

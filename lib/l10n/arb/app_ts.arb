@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{Dividende 1 yi engeteriwile} other{Tidividende ta {count} ti engeteriwile}}",
   "portfolioExportDividends": "Humesa tidividende (CSV)",
   "portfolioDividendDeleted": "Dividende yi susiwile",
-  "portfolioDividendsHint": "Mali hilaha yi fikeke eka akhawunti ya wena, hi mali ya ku hakela; tinhlayo hinkwato ti hundzuluxiwa hi mpimo wa namuntlha. Eka xibalo xa wena, tirhisa xitatimende xa broker wa wena."
+  "portfolioDividendsHint": "Mali hilaha yi fikeke eka akhawunti ya wena, hi mali ya ku hakela; tinhlayo hinkwato ti hundzuluxiwa hi mpimo wa namuntlha. Eka xibalo xa wena, tirhisa xitatimende xa broker wa wena.",
+  "awayTitle": "Loko u nga ri kona",
+  "awaySince": "Ku sukela {when}",
+  "awayQuiet": "A ku na lexi cinceke ngopfu.",
+  "awayAlerts": "{count, plural, =1{Xilemukiso 1 xi pfurile} other{Swilemukiso swa {count} swi pfurile}}",
+  "awayReported": "Mbuyelo lowu vikiweke: {symbols}"
 }

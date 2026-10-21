@@ -2603,4 +2603,31 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Jumlah sesuai yang masuk ke akun Anda, dalam mata uang pembayaran; total dikonversi dengan kurs hari ini. Untuk laporan pajak, gunakan laporan dari broker Anda.';
+
+  @override
+  String get awayTitle => 'Saat Anda tidak ada';
+
+  @override
+  String awaySince(String when) {
+    return 'Sejak $when';
+  }
+
+  @override
+  String get awayQuiet => 'Tidak banyak yang berubah.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count peringatan terpicu',
+      one: '1 peringatan terpicu',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Hasil dilaporkan: $symbols';
+  }
 }

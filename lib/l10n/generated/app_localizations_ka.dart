@@ -2608,4 +2608,31 @@ class AppLocalizationsKa extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'თანხები ისე, როგორც ჩაირიცხა თქვენს ანგარიშზე, გადახდის ვალუტაში; ჯამები კონვერტირდება დღევანდელი კურსით. საგადასახადო დეკლარაციისთვის გამოიყენეთ თქვენი ბროკერის ამონაწერი.';
+
+  @override
+  String get awayTitle => 'სანამ არ იყავით';
+
+  @override
+  String awaySince(String when) {
+    return '$when-დან';
+  }
+
+  @override
+  String get awayQuiet => 'თითქმის არაფერი შეცვლილა.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'გააქტიურდა $count შეტყობინება',
+      one: 'გააქტიურდა 1 შეტყობინება',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'გამოაქვეყნეს შედეგები: $symbols';
+  }
 }

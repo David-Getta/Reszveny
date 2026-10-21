@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 diwidend goşuldy} other{{count} diwidend goşuldy}}",
   "portfolioExportDividends": "Diwidendleri eksport et (CSV)",
   "portfolioDividendDeleted": "Diwidend pozuldy",
-  "portfolioDividendsHint": "Möçberler hasabyňyza gelen görnüşinde, töleg walýutasynda; jemler şu günki kurs bilen öwrülýär. Salgyt beýannamasy üçin brokeriňiziň hasabatyny ulanyň."
+  "portfolioDividendsHint": "Möçberler hasabyňyza gelen görnüşinde, töleg walýutasynda; jemler şu günki kurs bilen öwrülýär. Salgyt beýannamasy üçin brokeriňiziň hasabatyny ulanyň.",
+  "awayTitle": "Siz ýok wagtyňyz",
+  "awaySince": "{when} bäri",
+  "awayQuiet": "Köp zat üýtgemedi.",
+  "awayAlerts": "{count, plural, =1{1 duýduryş işe girdi} other{{count} duýduryş işe girdi}}",
+  "awayReported": "Netijeler yglan edildi: {symbols}"
 }

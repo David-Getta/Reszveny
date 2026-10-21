@@ -2607,4 +2607,31 @@ class AppLocalizationsPcm extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Di amounts na as dem enter your account, for di currency wey dem pay; we use today rate convert di totals. For your tax return, use your broker statement.';
+
+  @override
+  String get awayTitle => 'While you no dey';
+
+  @override
+  String awaySince(String when) {
+    return 'Since $when';
+  }
+
+  @override
+  String get awayQuiet => 'Nothing really move.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count alerts don trigger',
+      one: '1 alert don trigger',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Results wey dem report: $symbols';
+  }
 }

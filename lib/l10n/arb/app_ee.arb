@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{Wotsɔ dividend 1 kpe ɖe eŋu} other{Wotsɔ dividend {count} kpe ɖe eŋu}}",
   "portfolioExportDividends": "Ɖe dividendwo ɖe go (CSV)",
   "portfolioDividendDeleted": "Wotutu dividend la",
-  "portfolioDividendsHint": "Ga home siwo va wò akɔnta dzi tututu, le fexexe ƒe gaŋkɔ me; wotrɔa ƒuƒoƒowo le egbe ƒe asi nu. Na wò adzɔxexe ƒe agbalẽ la, zã wò broker ƒe akɔnta agbalẽ."
+  "portfolioDividendsHint": "Ga home siwo va wò akɔnta dzi tututu, le fexexe ƒe gaŋkɔ me; wotrɔa ƒuƒoƒowo le egbe ƒe asi nu. Na wò adzɔxexe ƒe agbalẽ la, zã wò broker ƒe akɔnta agbalẽ.",
+  "awayTitle": "Esi mèli o",
+  "awaySince": "Tso {when}",
+  "awayQuiet": "Naneke metrɔ boo o.",
+  "awayAlerts": "{count, plural, =1{Nuxlɔ̃ame 1 dzɔ} other{Nuxlɔ̃ame {count} dzɔ}}",
+  "awayReported": "Woɖe gbeƒã woƒe metsonuwo: {symbols}"
 }

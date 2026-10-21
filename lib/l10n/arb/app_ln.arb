@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{Dividende 1 ebakisami} other{Ba dividende {count} ebakisami}}",
   "portfolioExportDividends": "Bimisa ba dividende (CSV)",
   "portfolioDividendDeleted": "Dividende elongolami",
-  "portfolioDividendsHint": "Mbongo ndenge ekómaki na compte na yo, na mbongo ya kofuta; ba total ebongwanaka na ntalo ya lelo. Mpo na déclaration ya mpako na yo, salela relevé ya broker na yo."
+  "portfolioDividendsHint": "Mbongo ndenge ekómaki na compte na yo, na mbongo ya kofuta; ba total ebongwanaka na ntalo ya lelo. Mpo na déclaration ya mpako na yo, salela relevé ya broker na yo.",
+  "awayTitle": "Ntango ozalaki te",
+  "awaySince": "Banda {when}",
+  "awayQuiet": "Eloko moko te ebongwanaki mingi.",
+  "awayAlerts": "{count, plural, =1{Likebisi 1 ebimaki} other{Makebisi {count} ebimaki}}",
+  "awayReported": "Babimisi ba résultats na bango: {symbols}"
 }

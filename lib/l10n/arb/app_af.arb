@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 dividend bygevoeg} other{{count} dividende bygevoeg}}",
   "portfolioExportDividends": "Voer dividende uit (CSV)",
   "portfolioDividendDeleted": "Dividend verwyder",
-  "portfolioDividendsHint": "Bedrae soos dit op jou rekening aangekom het, in die uitbetalingsgeldeenheid; totale word teen vandag se koers omgeskakel. Gebruik jou makelaar se staat vir jou belastingopgawe."
+  "portfolioDividendsHint": "Bedrae soos dit op jou rekening aangekom het, in die uitbetalingsgeldeenheid; totale word teen vandag se koers omgeskakel. Gebruik jou makelaar se staat vir jou belastingopgawe.",
+  "awayTitle": "Terwyl jy weg was",
+  "awaySince": "Sedert {when}",
+  "awayQuiet": "Niks het veel beweeg nie.",
+  "awayAlerts": "{count, plural, =1{1 waarskuwing geaktiveer} other{{count} waarskuwings geaktiveer}}",
+  "awayReported": "Resultate bekendgemaak: {symbols}"
 }

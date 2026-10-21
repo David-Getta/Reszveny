@@ -2612,4 +2612,31 @@ class AppLocalizationsMs extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Jumlah seperti yang diterima dalam akaun anda, dalam mata wang pembayaran; jumlah keseluruhan ditukar pada kadar hari ini. Untuk penyata cukai, gunakan penyata broker anda.';
+
+  @override
+  String get awayTitle => 'Semasa anda tiada';
+
+  @override
+  String awaySince(String when) {
+    return 'Sejak $when';
+  }
+
+  @override
+  String get awayQuiet => 'Tiada pergerakan ketara.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count amaran dicetuskan',
+      one: '1 amaran dicetuskan',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Keputusan dilaporkan: $symbols';
+  }
 }

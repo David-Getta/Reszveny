@@ -32,6 +32,7 @@ import 'features/billing/web_checkout_billing_service.dart';
 import 'features/capture/capture_service.dart';
 import 'features/events/earnings_reminder.dart';
 import 'features/events/events_service.dart';
+import 'features/home/away_summary.dart';
 import 'features/fx/fx_service.dart';
 import 'features/market_data/caching_market_data_provider.dart';
 import 'features/market_data/demo_market_data_provider.dart';
@@ -115,6 +116,13 @@ class AppServices {
       reports: reports,
     );
     news = WatchNewsService(marketData: marketData, preferences: preferences, portfolio: this.portfolio);
+    away = AwaySummary(
+      marketData: marketData,
+      preferences: preferences,
+      portfolio: this.portfolio,
+      alerts: this.alerts,
+      events: events,
+    );
     brief =
         dailyBrief?.call(news) ??
         DailyBrief(config: config, marketData: marketData, news: news, client: backend?.authenticated);
@@ -329,6 +337,9 @@ class AppServices {
 
   /// Közelgő gyorsjelentések és az elemzések eseményei.
   late final EventsService events;
+
+  /// „Amíg távol voltál”: a figyelt részvények mozgása a legutóbbi látogatás óta.
+  late final AwaySummary away;
 
   /// A portfólió és a kedvencek friss hírei (kezdőképernyő).
   late final WatchNewsService news;

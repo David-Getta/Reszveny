@@ -2605,4 +2605,31 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Amounts as they arrived on your account, in the payout currency; totals are converted at today\'s rate. For your tax return, use your broker\'s statement.';
+
+  @override
+  String get awayTitle => 'While you were away';
+
+  @override
+  String awaySince(String when) {
+    return 'Since $when';
+  }
+
+  @override
+  String get awayQuiet => 'Nothing moved much.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count alerts triggered',
+      one: '1 alert triggered',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Reported results: $symbols';
+  }
 }

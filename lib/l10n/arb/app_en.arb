@@ -2139,5 +2139,42 @@
   "portfolioDividendsHint": "Amounts as they arrived on your account, in the payout currency; totals are converted at today's rate. For your tax return, use your broker's statement.",
   "@portfolioDividendsHint": {
     "description": "Small print under the dividends card."
+  },
+  "awayTitle": "While you were away",
+  "@awayTitle": {
+    "description": "Card title on the home screen, shown when the app is opened after at least 20 hours: what happened to the user's stocks since their last visit. Also the name of this section in Settings."
+  },
+  "awaySince": "Since {when}",
+  "@awaySince": {
+    "description": "Subtitle of that card: the date and time of the last visit.",
+    "placeholders": {
+      "when": {
+        "type": "String",
+        "example": "Oct 18, 14:05"
+      }
+    }
+  },
+  "awayQuiet": "Nothing moved much.",
+  "@awayQuiet": {
+    "description": "Shown when none of the user's stocks moved more than 1% since the last visit."
+  },
+  "awayAlerts": "{count, plural, =1{1 alert triggered} other{{count} alerts triggered}}",
+  "@awayAlerts": {
+    "description": "Line on the card: how many price alerts went off since the last visit.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "awayReported": "Reported results: {symbols}",
+  "@awayReported": {
+    "description": "Line on the card: which of the user's companies published quarterly results since the last visit.",
+    "placeholders": {
+      "symbols": {
+        "type": "String",
+        "example": "AAPL, MSFT"
+      }
+    }
   }
 }

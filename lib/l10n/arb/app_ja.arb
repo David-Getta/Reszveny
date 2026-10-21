@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{配当1件を追加しました} other{配当{count}件を追加しました}}",
   "portfolioExportDividends": "配当をエクスポート（CSV）",
   "portfolioDividendDeleted": "配当を削除しました",
-  "portfolioDividendsHint": "金額は口座に入金されたとおりの支払通貨で表示し、合計は本日のレートで換算しています。確定申告には証券会社の報告書をご利用ください。"
+  "portfolioDividendsHint": "金額は口座に入金されたとおりの支払通貨で表示し、合計は本日のレートで換算しています。確定申告には証券会社の報告書をご利用ください。",
+  "awayTitle": "離れていた間に",
+  "awaySince": "{when}以降",
+  "awayQuiet": "大きな値動きはありませんでした。",
+  "awayAlerts": "{count, plural, =1{アラート1件が発動} other{アラート{count}件が発動}}",
+  "awayReported": "決算発表: {symbols}"
 }

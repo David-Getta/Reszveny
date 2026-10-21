@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 डिविडेंड जोड़ल गइल} other{{count} डिविडेंड जोड़ल गइल}}",
   "portfolioExportDividends": "डिविडेंड एक्सपोर्ट करीं (CSV)",
   "portfolioDividendDeleted": "डिविडेंड हटावल गइल",
-  "portfolioDividendsHint": "रकम ओइसहीं जइसे रउआ खाता में आइल, भुगतान के मुद्रा में; कुल आज के दर पर बदलल जाला। टैक्स रिटर्न खातिर आपन ब्रोकर के स्टेटमेंट के इस्तेमाल करीं।"
+  "portfolioDividendsHint": "रकम ओइसहीं जइसे रउआ खाता में आइल, भुगतान के मुद्रा में; कुल आज के दर पर बदलल जाला। टैक्स रिटर्न खातिर आपन ब्रोकर के स्टेटमेंट के इस्तेमाल करीं।",
+  "awayTitle": "जब रउआ दूर रहनी",
+  "awaySince": "{when} से",
+  "awayQuiet": "कुछु खास ना बदलल।",
+  "awayAlerts": "{count, plural, =1{1 अलर्ट चालू भइल} other{{count} अलर्ट चालू भइल}}",
+  "awayReported": "रिजल्ट जारी कइल: {symbols}"
 }

@@ -2608,4 +2608,31 @@ class AppLocalizationsBg extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Сумите са такива, каквито са постъпили по сметката ви, във валутата на изплащане; общите суми се преизчисляват по днешния курс. За данъчната декларация използвайте извлечението от брокера си.';
+
+  @override
+  String get awayTitle => 'Докато ви нямаше';
+
+  @override
+  String awaySince(String when) {
+    return 'От $when';
+  }
+
+  @override
+  String get awayQuiet => 'Нищо не се промени особено.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Задействани са $count сигнала',
+      one: 'Задействан е 1 сигнал',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Публикуваха резултати: $symbols';
+  }
 }

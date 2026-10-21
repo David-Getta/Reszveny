@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 ڈیویڈنڈ شامل کیا گیا} other{{count} ڈیویڈنڈ شامل کیے گئے}}",
   "portfolioExportDividends": "ڈیویڈنڈ ایکسپورٹ کریں (CSV)",
   "portfolioDividendDeleted": "ڈیویڈنڈ حذف کر دیا گیا",
-  "portfolioDividendsHint": "رقمیں جیسے آپ کے اکاؤنٹ میں آئیں، ادائیگی کی کرنسی میں؛ کل رقمیں آج کے ریٹ پر تبدیل کی جاتی ہیں۔ ٹیکس ریٹرن کے لیے اپنے بروکر کا اسٹیٹمنٹ استعمال کریں۔"
+  "portfolioDividendsHint": "رقمیں جیسے آپ کے اکاؤنٹ میں آئیں، ادائیگی کی کرنسی میں؛ کل رقمیں آج کے ریٹ پر تبدیل کی جاتی ہیں۔ ٹیکس ریٹرن کے لیے اپنے بروکر کا اسٹیٹمنٹ استعمال کریں۔",
+  "awayTitle": "جب آپ موجود نہیں تھے",
+  "awaySince": "{when} سے",
+  "awayQuiet": "کوئی خاص تبدیلی نہیں ہوئی۔",
+  "awayAlerts": "{count, plural, =1{1 الرٹ ٹرگر ہوا} other{{count} الرٹس ٹرگر ہوئے}}",
+  "awayReported": "نتائج جاری: {symbols}"
 }

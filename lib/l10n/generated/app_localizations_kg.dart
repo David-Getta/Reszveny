@@ -2615,4 +2615,31 @@ class AppLocalizationsKg extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Mbongo mutindu yo kwisaka na konti na nge, na mbongo ya kufuta; ba total ke balulwa na ntalu ya bubu. Sambu na mukanda na nge ya mpaku, sadila mukanda ya broker na nge.';
+
+  @override
+  String get awayTitle => 'Ntangu nge vandaka ve';
+
+  @override
+  String awaySince(String when) {
+    return 'Tuka $when';
+  }
+
+  @override
+  String get awayQuiet => 'Kima ve me soba mingi.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Balukebisu $count me basika',
+      one: 'Lukebisu 1 me basika',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Ba rezulta me basika: $symbols';
+  }
 }

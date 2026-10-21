@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{Dividand 1 paasame} other{Dividand {count} paasame}}",
   "portfolioExportDividends": "Yiis dividand rãmbã (CSV)",
   "portfolioDividendDeleted": "Dividand yiisame",
-  "portfolioDividendsHint": "Ligdã yaa wa a sẽn wa f kont pʋgẽ, ne yaoob ligdã; a fãa toeemda ne rũndã kʋʋngã. F lampo sebrã yĩnga, tũnug ne f broker-ã sebrã."
+  "portfolioDividendsHint": "Ligdã yaa wa a sẽn wa f kont pʋgẽ, ne yaoob ligdã; a fãa toeemda ne rũndã kʋʋngã. F lampo sebrã yĩnga, tũnug ne f broker-ã sebrã.",
+  "awayTitle": "F sẽn da ka be wã",
+  "awaySince": "Sẽn sɩng {when}",
+  "awayQuiet": "Bũmb ka toeem wʋsg ye.",
+  "awayAlerts": "{count, plural, =1{Keoog a 1 n yik} other{Keoogo {count} n yik}}",
+  "awayReported": "Biisã sẽn togs: {symbols}"
 }

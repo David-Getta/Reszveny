@@ -2606,4 +2606,31 @@ class AppLocalizationsAk extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Sika dodow sɛnea ɛbaa wo akontaabu so, wɔ sika a wɔde tuaa mu; wɔde nnɛ bo na ɛsesa nea aboaboa ano no. Fa wo broker nkrataa di dwuma ma wo tow.';
+
+  @override
+  String get awayTitle => 'Bere a wonni hɔ no';
+
+  @override
+  String awaySince(String when) {
+    return 'Efi $when';
+  }
+
+  @override
+  String get awayQuiet => 'Biribiara anhinhim kɛse.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kɔkɔbɔ $count na ɛbaa',
+      one: 'Kɔkɔbɔ 1 na ɛbaa',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Adwuma mu nsunsuanso a wɔdaa no adi: $symbols';
+  }
 }

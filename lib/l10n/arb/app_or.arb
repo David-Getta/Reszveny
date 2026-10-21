@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 ଡିଭିଡେଣ୍ଡ ଯୋଡ଼ା ହେଲା} other{{count} ଡିଭିଡେଣ୍ଡ ଯୋଡ଼ା ହେଲା}}",
   "portfolioExportDividends": "ଡିଭିଡେଣ୍ଡ ଏକ୍ସପୋର୍ଟ କରନ୍ତୁ (CSV)",
   "portfolioDividendDeleted": "ଡିଭିଡେଣ୍ଡ ଡିଲିଟ୍ ହେଲା",
-  "portfolioDividendsHint": "ରାଶି ଆପଣଙ୍କ ଖାତାରେ ଯେପରି ଆସିଲା, ପେଆଉଟ୍ ମୁଦ୍ରାରେ; ମୋଟ ରାଶି ଆଜିର ଦରରେ ରୂପାନ୍ତରିତ ହୁଏ। ଟିକସ ରିଟର୍ଣ୍ଣ ପାଇଁ ଆପଣଙ୍କ ବ୍ରୋକରର ଷ୍ଟେଟମେଣ୍ଟ ବ୍ୟବହାର କରନ୍ତୁ।"
+  "portfolioDividendsHint": "ରାଶି ଆପଣଙ୍କ ଖାତାରେ ଯେପରି ଆସିଲା, ପେଆଉଟ୍ ମୁଦ୍ରାରେ; ମୋଟ ରାଶି ଆଜିର ଦରରେ ରୂପାନ୍ତରିତ ହୁଏ। ଟିକସ ରିଟର୍ଣ୍ଣ ପାଇଁ ଆପଣଙ୍କ ବ୍ରୋକରର ଷ୍ଟେଟମେଣ୍ଟ ବ୍ୟବହାର କରନ୍ତୁ।",
+  "awayTitle": "ଆପଣ ନଥିବା ସମୟରେ",
+  "awaySince": "{when} ଠାରୁ",
+  "awayQuiet": "ବିଶେଷ କିଛି ବଦଳିନାହିଁ।",
+  "awayAlerts": "{count, plural, =1{1 ଆଲର୍ଟ ଟ୍ରିଗର ହେଲା} other{{count} ଆଲର୍ଟ ଟ୍ରିଗର ହେଲା}}",
+  "awayReported": "ଫଳାଫଳ ଘୋଷିତ: {symbols}"
 }

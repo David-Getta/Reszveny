@@ -2603,4 +2603,31 @@ class AppLocalizationsBho extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'रकम ओइसहीं जइसे रउआ खाता में आइल, भुगतान के मुद्रा में; कुल आज के दर पर बदलल जाला। टैक्स रिटर्न खातिर आपन ब्रोकर के स्टेटमेंट के इस्तेमाल करीं।';
+
+  @override
+  String get awayTitle => 'जब रउआ दूर रहनी';
+
+  @override
+  String awaySince(String when) {
+    return '$when से';
+  }
+
+  @override
+  String get awayQuiet => 'कुछु खास ना बदलल।';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count अलर्ट चालू भइल',
+      one: '1 अलर्ट चालू भइल',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'रिजल्ट जारी कइल: $symbols';
+  }
 }

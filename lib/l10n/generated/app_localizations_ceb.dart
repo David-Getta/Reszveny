@@ -2618,4 +2618,31 @@ class AppLocalizationsCeb extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Mga kantidad sumala sa pag-abot niini sa imong account, sa currency sa pagbayad; ang mga total gi-convert sa karon nga rate. Alang sa imong tax return, gamita ang statement sa imong broker.';
+
+  @override
+  String get awayTitle => 'Samtang wala ka';
+
+  @override
+  String awaySince(String when) {
+    return 'Sukad $when';
+  }
+
+  @override
+  String get awayQuiet => 'Wala kaayoy nausab.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ka alerto ang na-trigger',
+      one: '1 ka alerto ang na-trigger',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Nagpagawas og resulta: $symbols';
+  }
 }

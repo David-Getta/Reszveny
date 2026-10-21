@@ -317,6 +317,7 @@ class SettingsPage extends StatelessWidget {
                       children: [
                         for (final (i, (id, label)) in [
                           ('markets', l10n.marketsToday),
+                          ('away', l10n.awayTitle),
                           ('brief', l10n.briefTitle),
                           ('portfolio', l10n.portfolio),
                           ('favorites', l10n.favorites),

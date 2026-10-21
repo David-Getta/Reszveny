@@ -6,6 +6,7 @@ import 'package:flutter/services.dart';
 import '../news/daily_brief_card.dart';
 import '../news/watch_news_view.dart';
 import '../events/events_view.dart';
+import 'away_summary_card.dart';
 import '../settings/telemetry_consent.dart';
 import '../../widgets/hotkey_hint.dart';
 
@@ -75,6 +76,10 @@ class _HomePageState extends State<HomePage> {
     super.initState();
     _query.addListener(_onQueryChanged);
     HomePage.focusSearch.addListener(_focusSearch);
+    // „Amíg távol voltál”: az előző látogatás óta történtek (ha legalább egy nap telt el).
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) AppServices.of(context).away.check();
+    });
   }
 
   /// A keresőmező fókusza (a Ctrl/⌘+K billentyűparancshoz).
@@ -457,6 +462,7 @@ class _HomePageState extends State<HomePage> {
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
                           if (show('markets')) MarketsStrip(onOpenSymbol: widget.onOpenSymbol),
+                          if (show('away')) AwaySummaryCard(onOpenSymbol: widget.onOpenSymbol),
                           if (show('brief')) const DailyBriefCard(),
                           if (show('portfolio')) PortfolioSummaryCard(onOpenSymbol: widget.onOpenSymbol),
                           if (show('favorites')) FavoritesStrip(onOpenSymbol: widget.onOpenSymbol),

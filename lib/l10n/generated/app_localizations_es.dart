@@ -2612,4 +2612,31 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Importes tal como llegaron a tu cuenta, en la moneda de pago; los totales se convierten al tipo de cambio de hoy. Para tu declaración de impuestos, usa el extracto de tu bróker.';
+
+  @override
+  String get awayTitle => 'Mientras no estabas';
+
+  @override
+  String awaySince(String when) {
+    return 'Desde $when';
+  }
+
+  @override
+  String get awayQuiet => 'Nada se movió mucho.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count alertas activadas',
+      one: '1 alerta activada',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Resultados publicados: $symbols';
+  }
 }

@@ -2607,4 +2607,31 @@ class AppLocalizationsTr extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Tutarlar hesabınıza geldiği şekliyle, ödeme para biriminde; toplamlar bugünkü kurla çevrilir. Vergi beyannameniz için aracı kurumunuzun ekstresini kullanın.';
+
+  @override
+  String get awayTitle => 'Siz yokken';
+
+  @override
+  String awaySince(String when) {
+    return '$when tarihinden beri';
+  }
+
+  @override
+  String get awayQuiet => 'Pek bir hareket olmadı.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count alarm tetiklendi',
+      one: '1 alarm tetiklendi',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Açıklanan sonuçlar: $symbols';
+  }
 }

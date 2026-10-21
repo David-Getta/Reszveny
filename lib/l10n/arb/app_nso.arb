@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{Dividende e 1 e oketšitšwe} other{Dividende tše {count} di oketšitšwe}}",
   "portfolioExportDividends": "Ntšha dividende (CSV)",
   "portfolioDividendDeleted": "Dividende e phumotšwe",
-  "portfolioDividendsHint": "Ditšhelete ka moo di fihlilego akhaontong ya gago, ka tšhelete ya tefo; dipalomoka di fetolelwa ka reiti ya lehono. Bakeng sa pušetšo ya motšhelo, šomiša setatamente sa broker ya gago."
+  "portfolioDividendsHint": "Ditšhelete ka moo di fihlilego akhaontong ya gago, ka tšhelete ya tefo; dipalomoka di fetolelwa ka reiti ya lehono. Bakeng sa pušetšo ya motšhelo, šomiša setatamente sa broker ya gago.",
+  "awayTitle": "Ge o be o se gona",
+  "awaySince": "Go tloga ka {when}",
+  "awayQuiet": "Ga go selo seo se fetogilego kudu.",
+  "awayAlerts": "{count, plural, =1{Temošo e 1 e tsošitšwe} other{Ditemošo tše {count} di tsošitšwe}}",
+  "awayReported": "Dipoelo tše begilwego: {symbols}"
 }

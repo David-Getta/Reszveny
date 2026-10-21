@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{Yettwarna 1 dividende} other{Ttwarnan {count} dividendes}}",
   "portfolioExportDividends": "Sifeḍ dividendes (CSV)",
   "portfolioDividendDeleted": "Dividende yettwakkes",
-  "portfolioDividendsHint": "Azalen akken i d-wwḍen ɣer umiḍan-ik, s tedrimt n lexlaṣ; igmaḍ ttwabeddlen s ssuma n wass-a. I tsemmelt-ik n tebzert, seqdec aɣmis n broker-ik."
+  "portfolioDividendsHint": "Azalen akken i d-wwḍen ɣer umiḍan-ik, s tedrimt n lexlaṣ; igmaḍ ttwabeddlen s ssuma n wass-a. I tsemmelt-ik n tebzert, seqdec aɣmis n broker-ik.",
+  "awayTitle": "Mi ulac-ik",
+  "awaySince": "Seg {when}",
+  "awayQuiet": "Ulac ayen i ibeddlen aṭas.",
+  "awayAlerts": "{count, plural, =1{1 n ulɣu i yekkren} other{{count} n yilɣa i yekkren}}",
+  "awayReported": "Ssufɣen-d igmaḍ: {symbols}"
 }

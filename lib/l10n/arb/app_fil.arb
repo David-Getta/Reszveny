@@ -693,5 +693,10 @@
   "portfolioDividendsImported": "{count, plural, =1{1 dibidendo ang naidagdag} other{{count} dibidendo ang naidagdag}}",
   "portfolioExportDividends": "I-export ang mga dibidendo (CSV)",
   "portfolioDividendDeleted": "Nabura ang dibidendo",
-  "portfolioDividendsHint": "Mga halaga ayon sa pagdating nito sa iyong account, sa currency ng pagbabayad; ang mga kabuuan ay naka-convert sa rate ngayon. Para sa iyong tax return, gamitin ang statement ng iyong broker."
+  "portfolioDividendsHint": "Mga halaga ayon sa pagdating nito sa iyong account, sa currency ng pagbabayad; ang mga kabuuan ay naka-convert sa rate ngayon. Para sa iyong tax return, gamitin ang statement ng iyong broker.",
+  "awayTitle": "Habang wala ka",
+  "awaySince": "Mula {when}",
+  "awayQuiet": "Walang gaanong gumalaw.",
+  "awayAlerts": "{count, plural, =1{1 alerto ang na-trigger} other{{count} alerto ang na-trigger}}",
+  "awayReported": "Naglabas ng resulta: {symbols}"
 }

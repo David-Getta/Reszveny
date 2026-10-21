@@ -2608,4 +2608,31 @@ class AppLocalizationsCkb extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'بڕەکان وەک ئەوەی گەیشتوونە هەژمارەکەت، بە دراوی پارەدان؛ کۆکان بە نرخی ئەمڕۆ دەگۆڕدرێن. بۆ ڕاپۆرتی باجەکەت، بەیاننامەی بڕۆکەرەکەت بەکاربهێنە.';
+
+  @override
+  String get awayTitle => 'لە کاتی نەبوونت';
+
+  @override
+  String awaySince(String when) {
+    return 'لە $whenەوە';
+  }
+
+  @override
+  String get awayQuiet => 'هیچ شتێک زۆر نەگۆڕا.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ئاگادارکردنەوە چالاک بوون',
+      one: '1 ئاگادارکردنەوە چالاک بوو',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'ئەنجامەکانیان ڕاگەیاند: $symbols';
+  }
 }

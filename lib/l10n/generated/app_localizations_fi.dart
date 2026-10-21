@@ -2608,4 +2608,31 @@ class AppLocalizationsFi extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Summat sellaisina kuin ne tulivat tilillesi, maksuvaluutassa; yhteissummat muunnetaan tämän päivän kurssilla. Käytä veroilmoitukseen välittäjäsi raporttia.';
+
+  @override
+  String get awayTitle => 'Kun olit poissa';
+
+  @override
+  String awaySince(String when) {
+    return 'Alkaen $when';
+  }
+
+  @override
+  String get awayQuiet => 'Mikään ei liikkunut paljoa.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hälytystä lauennut',
+      one: '1 hälytys lauennut',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Tulokset julkaistu: $symbols';
+  }
 }

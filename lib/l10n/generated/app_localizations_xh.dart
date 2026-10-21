@@ -2618,4 +2618,31 @@ class AppLocalizationsXh extends AppLocalizations {
   @override
   String get portfolioDividendsHint =>
       'Izixa njengoko zifike kwiakhawunti yakho, ngemali yentlawulo; amanani apheleleyo aguqulelwa ngexabiso lanamhlanje. Kwingxelo yakho yerhafu, sebenzisa ingxelo yebroker yakho.';
+
+  @override
+  String get awayTitle => 'Ngexesha wawungekho';
+
+  @override
+  String awaySince(String when) {
+    return 'Ukususela $when';
+  }
+
+  @override
+  String get awayQuiet => 'Akukho nto itshintshe kakhulu.';
+
+  @override
+  String awayAlerts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Izilumkiso $count ziqalisiwe',
+      one: 'Isilumkiso 1 siqalisiwe',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String awayReported(String symbols) {
+    return 'Iziphumo ezipapashiweyo: $symbols';
+  }
 }
