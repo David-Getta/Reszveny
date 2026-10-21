@@ -1451,7 +1451,17 @@ void main() {
         ).toJson(),
       ),
     });
-    await pumpApp(tester, _services(locale: const Locale('hu')), const Size(430, 932));
+    // Két negyedéves AAPL-osztalék: a következő ~11 nap múlva várható (esemény is).
+    final portfolio = _samplePortfolio();
+    final last = DateTime.now().subtract(const Duration(days: 80));
+    await portfolio.addDividend(
+      symbol: 'AAPL',
+      amount: 4.32,
+      currency: 'USD',
+      date: last.subtract(const Duration(days: 91)),
+    );
+    await portfolio.addDividend(symbol: 'AAPL', amount: 4.68, currency: 'USD', date: last);
+    await pumpApp(tester, _services(locale: const Locale('hu'), portfolio: portfolio), const Size(430, 932));
     final section = find.byKey(const ValueKey('home-events'));
     await tester.scrollUntilVisible(section, 200, scrollable: find.byType(Scrollable).first);
     Scrollable.ensureVisible(tester.element(section), alignment: 0.3);
