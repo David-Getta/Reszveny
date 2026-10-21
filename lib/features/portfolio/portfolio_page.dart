@@ -7,6 +7,7 @@ import '../../l10n/generated/app_localizations.dart';
 import '../../l10n/terms.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/desktop_chrome.dart';
+import '../../widgets/metric_hint.dart';
 import 'add_lot_dialog.dart';
 import 'csv_dialog.dart';
 import 'dividend_forecast.dart' show convertedDividends;
@@ -263,17 +264,12 @@ class _PortfolioBody extends StatelessWidget {
                                 value: fmt.money(s.cash, ccy),
                               ),
                             if (s.annualReturn case final r?)
-                              Tooltip(
-                                message: l10n.portfolioAnnualReturnHint,
-                                triggerMode: TooltipTriggerMode.tap,
-                                showDuration: const Duration(seconds: 6),
-                                child: _Stat(
-                                  key: const ValueKey('portfolio-annual-return'),
-                                  label: l10n.portfolioAnnualReturn,
-                                  value: l10n.portfolioPerYear(fmt.percent(r * 100, withSign: true)),
-                                  color: gainColor(p, r),
-                                  info: true,
-                                ),
+                              _Stat(
+                                key: const ValueKey('portfolio-annual-return'),
+                                label: l10n.portfolioAnnualReturn,
+                                value: l10n.portfolioPerYear(fmt.percent(r * 100, withSign: true)),
+                                color: gainColor(p, r),
+                                hint: l10n.portfolioAnnualReturnHint,
                               ),
                             if (s.realized != 0 || s.closed.isNotEmpty)
                               _Stat(
@@ -404,7 +400,7 @@ class _PortfolioBody extends StatelessWidget {
 }
 
 class _Stat extends StatelessWidget {
-  const _Stat({super.key, required this.label, required this.value, this.sub, this.color, this.info = false});
+  const _Stat({super.key, required this.label, required this.value, this.sub, this.color, this.hint});
 
   final String label;
   final String value;
@@ -412,7 +408,9 @@ class _Stat extends StatelessWidget {
   final Color? color;
 
   /// Kis „i” ikon a címke mellett: koppintásra magyarázat jelenik meg.
-  final bool info;
+
+  /// A mutató magyarázata (ⓘ ikon, koppintásra párbeszéd).
+  final String? hint;
 
   @override
   Widget build(BuildContext context) {
@@ -422,14 +420,10 @@ class _Stat extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,
       children: [
-        Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Flexible(
-              child: Text(label, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
-            ),
-            if (info) ...[const SizedBox(width: 4), Icon(Icons.info_outline_rounded, size: 14, color: p.muted)],
-          ],
+        HintedLabel(
+          label: label,
+          hint: hint,
+          style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
         ),
         const SizedBox(height: 2),
         Text(

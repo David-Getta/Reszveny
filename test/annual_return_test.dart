@@ -108,10 +108,12 @@ void main() {
     final stat = find.byKey(const ValueKey('portfolio-annual-return'));
     expect(stat, findsOneWidget);
     expect(find.descendant(of: stat, matching: find.textContaining('/ year')), findsOneWidget);
-    await tester.tap(stat);
-    await tester.pump(const Duration(milliseconds: 300));
+    // ⓘ: a magyarázat párbeszédben, az OK-val zárva.
+    await tester.tap(find.descendant(of: stat, matching: find.byKey(const ValueKey('hint-Annual return'))));
+    await tester.pumpAndSettle();
     expect(find.textContaining('XIRR'), findsOneWidget);
-    await tester.pumpAndSettle(const Duration(seconds: 7));
+    await tester.tap(find.text('OK'));
+    await tester.pumpAndSettle();
 
     // A részvény oldalán, a „Pozícióm” kártyán is.
     await tester.tap(find.text('AAPL').last);

@@ -70,16 +70,12 @@ class PositionCard extends StatelessWidget {
               ),
               if (row.value case final v?)
                 if (positionsAnnualReturn([pos], (_) => 1, v, now) case final r?)
-                  Tooltip(
-                    message: l10n.portfolioAnnualReturnHint,
-                    triggerMode: TooltipTriggerMode.tap,
-                    showDuration: const Duration(seconds: 6),
-                    child: MetricFigure(
-                      key: const ValueKey('position-annual-return'),
-                      label: l10n.portfolioAnnualReturn,
-                      value: l10n.portfolioPerYear(fmt.percent(r * 100, withSign: true)),
-                      color: gainColor(p, r),
-                    ),
+                  MetricFigure(
+                    key: const ValueKey('position-annual-return'),
+                    label: l10n.portfolioAnnualReturn,
+                    value: l10n.portfolioPerYear(fmt.percent(r * 100, withSign: true)),
+                    color: gainColor(p, r),
+                    hint: l10n.portfolioAnnualReturnHint,
                   ),
               if (pos.hasSales)
                 MetricFigure(
