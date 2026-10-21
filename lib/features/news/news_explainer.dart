@@ -2,7 +2,8 @@ import 'package:http/http.dart' as http;
 
 import '../../core/config/app_config.dart';
 import '../../core/errors.dart';
-import 'daily_brief.dart' show AskSource, askWithSources, sharedCacheField, stableDigest;
+import 'cached_research.dart';
+import 'daily_brief.dart' show AskSource, sharedCacheField, stableDigest;
 import 'research_store.dart';
 import 'watch_news.dart';
 
@@ -89,20 +90,8 @@ Rules:
   }
 
   /// A készüléken tárolt magyarázat, ha friss; különben lekérés és mentés.
-  Future<NewsExplanation> _storedOrAsk(String key, WatchedNews n, String language) =>
-      _store.get(key, () => _ask(requestBody(n, language: language, model: config.anthropicModel)));
-
-  /// Ha a fiókban nincs engedélyezve az oldalmegnyitás (400), nélküle kérjük újra.
-  Future<NewsExplanation> _ask(Map<String, dynamic> body) async {
-    try {
-      return await askWithSources(config, _client, body);
-    } on AnalysisException catch (e) {
-      if (e.code != AppErrorCode.aiHttp || !'${e.cause}'.contains('web_fetch')) rethrow;
-      final tools = [
-        for (final t in body['tools'] as List)
-          if (!'${(t as Map)['type']}'.startsWith('web_fetch')) t,
-      ];
-      return askWithSources(config, _client, {...body, 'tools': tools});
-    }
-  }
+  Future<NewsExplanation> _storedOrAsk(String key, WatchedNews n, String language) => _store.get(
+    key,
+    () => askWithFetchFallback(config, _client, requestBody(n, language: language, model: config.anthropicModel)),
+  );
 }
