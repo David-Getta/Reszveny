@@ -783,7 +783,10 @@ class _WatchRow extends StatelessWidget {
                                 child: Row(
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
-                                    Icon(Icons.auto_awesome_outlined, size: 12, color: p.accent),
+                                    Tooltip(
+                                      message: l10n.moveWhyButton,
+                                      child: Icon(Icons.auto_awesome_outlined, size: 12, color: p.accent),
+                                    ),
                                     const SizedBox(width: 3),
                                     Text(
                                       fmt.percent(pct, withSign: true),

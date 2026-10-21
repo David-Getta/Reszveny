@@ -163,9 +163,12 @@ class _MarketsStripState extends State<MarketsStrip> {
                                             name: name,
                                             changePercent: pct,
                                           ),
-                                          child: Padding(
-                                            padding: const EdgeInsets.all(2),
-                                            child: Icon(Icons.auto_awesome_outlined, size: 13, color: p.accent),
+                                          child: Tooltip(
+                                            message: l10n.moveWhyButton,
+                                            child: Padding(
+                                              padding: const EdgeInsets.all(2),
+                                              child: Icon(Icons.auto_awesome_outlined, size: 13, color: p.accent),
+                                            ),
                                           ),
                                         ),
                                       ],
