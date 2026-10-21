@@ -161,6 +161,22 @@ void main() {
     expect(m['favorites'], ['A', 'B']);
     expect((m['lots'] as List).map((l) => (l['id'], l['quantity'])), [('1', 1), ('2', 2)]);
     expect(m['splits'], isEmpty, reason: 'régi csomagokban nincs felaprózás');
+    // Ugyanaz a felaprózás két eszközről (más azonosítóval) az összefésülés után egyszer.
+    final split = {'symbol': 'NVDA', 'from': 1, 'to': 10, 'date': '2024-06-10'};
+    final both = SyncService.merge(
+      {
+        'splits': [
+          {...split, 'id': 'a'},
+        ],
+      },
+      {
+        'splits': [
+          {...split, 'id': 'b'},
+          {...split, 'id': 'c', 'date': '2025-01-02'},
+        ],
+      },
+    );
+    expect((both['splits'] as List).map((s) => s['id']), ['a', 'c']);
     expect((m['notes'] as Map)['A'], newer);
     expect((m['notes'] as Map)['B'], newer);
   });

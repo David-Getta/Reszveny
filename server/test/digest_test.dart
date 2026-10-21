@@ -308,6 +308,36 @@ void main() {
     expect(s.currencies['OTP'], 'HUF');
   });
 
+  test('holdings follow the synced stock splits (dated lots before the day; duplicates once)', () {
+    Map<String, dynamic> l(String side, num q, String date) => {
+      'symbol': 'NVDA',
+      'quantity': q,
+      'price': 1,
+      'currency': 'USD',
+      'date': date,
+      if (side == 'sell') 'side': 'sell',
+    };
+    // 10 régi × 10 = 100 új; utána 60 eladva → 40 marad (felaprózás nélkül negatív lenne).
+    final h = DigestSender.holdingsOf({
+      'lots': [l('buy', 10, '2024-03-01'), l('sell', 60, '2024-07-01')],
+      'splits': [
+        {'id': 'a', 'symbol': 'nvda', 'from': 1, 'to': 10, 'date': '2024-06-10'},
+        // Ugyanaz egy másik eszközről (más azonosítóval): csak egyszer számít.
+        {'id': 'b', 'symbol': 'NVDA', 'from': 1, 'to': 10, 'date': '2024-06-10'},
+        {'id': 'c', 'symbol': 'NVDA', 'from': 0, 'to': 10, 'date': '2024-06-10'},
+      ],
+    });
+    expect(h.held, {'NVDA': 40.0});
+    // Összevonás (1:10) után a teljes eladás: már nem birtokolt.
+    final r = DigestSender.holdingsOf({
+      'lots': [l('buy', 100, '2020-01-01'), l('sell', 10, '2022-01-01')],
+      'splits': [
+        {'id': 'd', 'symbol': 'NVDA', 'from': 10, 'to': 1, 'date': '2021-01-01'},
+      ],
+    });
+    expect(r.held, isEmpty);
+  });
+
   test('weekly change from a Twelve Data time series (newest first)', () {
     final m = Api.weekMoveFromTimeSeries({
       'status': 'ok',

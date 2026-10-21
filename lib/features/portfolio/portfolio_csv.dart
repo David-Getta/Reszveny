@@ -137,18 +137,22 @@ class CsvImport {
 ImportedSplit? _split(String symbol, String to, String from, String date) {
   // Táblázatkezelőből „10.00” is lehet: szám, ha egész értékű.
   int? whole(String s) {
-    final v = parseDecimal(s.replaceAll(RegExp(r'[^0-9,.\-]'), ''));
+    final v = _decimal(s);
     return v != null && v == v.roundToDouble() ? v.round() : null;
   }
 
   final t = whole(to), f = whole(from);
   final d = _date(date);
-  if (!_symbol.hasMatch(symbol) || t == null || f == null || t < 1 || f < 1 || t == f || d == null) return null;
+  if (!_symbol.hasMatch(symbol) || t == null || f == null || !SplitRecord.validRatio(f, t) || d == null) return null;
   return ImportedSplit(symbol: symbol, from: f, to: t, date: d);
 }
 
 final _symbol = RegExp(r'^[A-Z0-9][A-Z0-9.\-:^]{0,14}$');
 final _currency = RegExp(r'^[A-Z]{3}$');
+final _nonNumeric = RegExp(r'[^0-9,.\-]');
+
+/// Szám egy cellából, a pénznemjelek, szóközök és egyéb jelek nélkül.
+double? _decimal(String s) => parseDecimal(s.replaceAll(_nonNumeric, ''));
 
 /// Egy CSV-sor mezői: idézőjelek között az elválasztó és a `""` is lehet a mezőben.
 List<String> splitCsvLine(String line, String sep) {
@@ -220,7 +224,7 @@ DateTime? _date(String raw) {
 /// Ár, akár pénznemmel együtt („USD 182.50”, „182,50 EUR”): a szám és a pénznem.
 (double?, String?) _price(String raw) {
   final ccy = RegExp(r'\b([A-Z]{3})\b').firstMatch(raw)?.group(1);
-  return (parseDecimal(raw.replaceAll(RegExp(r'[^0-9,.\-]'), '')), ccy);
+  return (_decimal(raw), ccy);
 }
 
 /// Beillesztett sorok beolvasása, megengedően: a mezőelválasztó tabulátor,
@@ -295,7 +299,7 @@ CsvImport _withHeader(
     // Ha nincs „side” oszlop, a fejlécen túli első mező is lehet „sell”.
     final side = (col.containsKey('side') ? cell(f, 'side') : (f.length > header.length ? f[header.length] : ''))
         .toLowerCase();
-    final signed = parseDecimal(cell(f, 'quantity').replaceAll(RegExp(r'[^0-9,.\-]'), ''));
+    final signed = _decimal(cell(f, 'quantity'));
     bool? sell;
     if (side.isEmpty) {
       sell = signed != null && signed < 0;
@@ -371,7 +375,7 @@ ImportedDividend? _ibkrDividend(List<String> f, Map<String, int> col, {bool allo
   }
 
   final symbol = RegExp(r'^([A-Z0-9.\-]{1,15})\s*\(').firstMatch(cell('description'))?.group(1);
-  final amount = parseDecimal(cell('amount').replaceAll(RegExp(r'[^0-9,.\-]'), ''));
+  final amount = _decimal(cell('amount'));
   final ccy = cell('currency').toUpperCase();
   if (symbol == null || amount == null || (!allowNegative && amount <= 0) || !_currency.hasMatch(ccy)) return null;
   return ImportedDividend(symbol: symbol, amount: amount, currency: ccy, date: _date(cell('date')));

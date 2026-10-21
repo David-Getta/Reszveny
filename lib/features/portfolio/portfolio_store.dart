@@ -109,13 +109,20 @@ class SplitRecord {
   final String symbol;
   final int from;
   final int to;
+
+  /// A felaprózás napja (éjfél): a létrehozáskor (`addSplit`, `fromJson`) kerekítve.
   final DateTime date;
 
-  /// Hányszorozódik a darabszám.
-  double get factor => to / from;
+  /// Érvényes arány: mindkét oldal legalább 1, és nem egyenlők. Minden belépési
+  /// pont (dialógus, CSV, tároló, szinkron) ezt használja.
+  static bool validRatio(int from, int to) => from >= 1 && to >= 1 && from != to;
 
   /// „10:1” alakban (új : régi).
   String get label => '$to:$from';
+
+  /// Ugyanaz a felaprózás (ticker, nap, arány) kétszer nem lehet – akkor sem,
+  /// ha két eszközön rögzítették, más azonosítóval.
+  String get key => '$symbol|${date.toIso8601String().substring(0, 10)}|$label';
 
   Map<String, dynamic> toJson() => {
     'id': id,
@@ -129,13 +136,13 @@ class SplitRecord {
     final symbol = (j['symbol'] as String? ?? '').trim().toUpperCase();
     final from = j['from'], to = j['to'];
     final date = DateTime.tryParse(j['date'] as String? ?? '');
-    if (symbol.isEmpty || from is! int || to is! int || from < 1 || to < 1 || from == to || date == null) return null;
+    if (symbol.isEmpty || from is! int || to is! int || !validRatio(from, to) || date == null) return null;
     return SplitRecord(
       id: j['id'] as String? ?? '${symbol}_s${DateTime.now().microsecondsSinceEpoch}',
       symbol: symbol,
       from: from,
       to: to,
-      date: date,
+      date: DateTime(date.year, date.month, date.day),
     );
   }
 
@@ -144,7 +151,7 @@ class SplitRecord {
   /// képernyőképéből importált, már felaprózott darabszám).
   PortfolioLot apply(PortfolioLot l) {
     final at = l.date;
-    if (l.symbol != symbol || at == null || !at.isBefore(DateTime(date.year, date.month, date.day))) return l;
+    if (l.symbol != symbol || at == null || !at.isBefore(date)) return l;
     return PortfolioLot(
       id: l.id,
       symbol: l.symbol,
@@ -276,8 +283,17 @@ class PortfolioStore extends ChangeNotifier {
     Map<String, DateTime> cashAt = const {},
   }) : _lots = List.of(lots),
        _dividends = List.of(dividends)..sort(_newestFirst),
-       _splits = List.of(splits)..sort(_oldestFirst),
+       _splits = _unique(splits)..sort(_oldestFirst),
        _cash = _entries(cash, cashAt);
+
+  /// A felaprózások ismétlés nélkül (azonos kulcsnál az első marad).
+  static List<SplitRecord> _unique(Iterable<SplitRecord> splits) {
+    final seen = <String>{};
+    return [
+      for (final s in splits)
+        if (seen.add(s.key)) s,
+    ];
+  }
 
   /// A felaprózások időrendben (az alkalmazásuk sorrendje).
   static int _oldestFirst(SplitRecord a, SplitRecord b) => a.date.compareTo(b.date);
@@ -330,9 +346,24 @@ class PortfolioStore extends ChangeNotifier {
   /// azonosító ugyanaz): ebből számol a pozíció, az értékalakulás és a lap.
   /// Gyorsítótárazva, mert a pozíciókat sok helyen kérik; minden módosítás
   /// [notifyListeners]-en át érvényteleníti.
-  List<PortfolioLot> get adjustedLots =>
-      _adjusted ??= List.unmodifiable([for (final l in _lots) _splits.fold(l, (lot, s) => s.apply(lot))]);
+  List<PortfolioLot> get adjustedLots => _adjusted ??= _adjust();
   List<PortfolioLot>? _adjusted;
+
+  List<PortfolioLot> _adjust() {
+    if (_splits.isEmpty) return List.unmodifiable(_lots);
+    // Részvényenként csak a saját felaprózásai, időrendben (a lista így van tartva).
+    final bySymbol = <String, List<SplitRecord>>{};
+    for (final s in _splits) {
+      bySymbol.putIfAbsent(s.symbol, () => []).add(s);
+    }
+    return List.unmodifiable([
+      for (final l in _lots) (bySymbol[l.symbol] ?? const <SplitRecord>[]).fold(l, (lot, s) => s.apply(lot)),
+    ]);
+  }
+
+  /// A tranzakciók és a felaprózások azonosítói: ha változik, a pozíciókból
+  /// számolt (hálózatról töltött) adatokat újra kell számolni.
+  String get holdingsKey => '${_lots.map((l) => l.id).join(',')}|${_splits.map((s) => s.id).join(',')}';
 
   @override
   void notifyListeners() {
@@ -548,12 +579,15 @@ class PortfolioStore extends ChangeNotifier {
     await _save();
   }
 
-  Future<SplitRecord> addSplit({
+  /// Új felaprózás; érvénytelen aránynál vagy ha ugyanez már rögzítve van, `null`
+  /// (nem kerül be kétszer – kétszer alkalmazva a darabszám hibás lenne).
+  Future<SplitRecord?> addSplit({
     required String symbol,
     required int from,
     required int to,
     required DateTime date,
   }) async {
+    if (!SplitRecord.validRatio(from, to)) return null;
     final s = symbol.trim().toUpperCase();
     final split = SplitRecord(
       id: '${s}_s${DateTime.now().microsecondsSinceEpoch}',
@@ -562,6 +596,7 @@ class PortfolioStore extends ChangeNotifier {
       to: to,
       date: DateTime(date.year, date.month, date.day),
     );
+    if (_splits.any((x) => x.key == split.key)) return null;
     _splits
       ..add(split)
       ..sort(_oldestFirst);
@@ -578,7 +613,7 @@ class PortfolioStore extends ChangeNotifier {
 
   /// Egy törölt felaprózás visszaállítása (visszavonás), változatlan azonosítóval.
   Future<void> restoreSplit(SplitRecord s) async {
-    if (_splits.any((x) => x.id == s.id)) return;
+    if (_splits.any((x) => x.id == s.id || x.key == s.key)) return;
     _splits
       ..add(s)
       ..sort(_oldestFirst);
@@ -590,7 +625,7 @@ class PortfolioStore extends ChangeNotifier {
   Future<void> replaceAllSplits(List<SplitRecord> splits) async {
     _splits
       ..clear()
-      ..addAll(splits)
+      ..addAll(_unique(splits))
       ..sort(_oldestFirst);
     notifyListeners();
     await _save();
@@ -635,10 +670,14 @@ class PortfolioStore extends ChangeNotifier {
     await _save();
   }
 
-  Future<void> remove(String id) async {
+  /// Egy tranzakció törlése; a tárolt (a felaprózásokkal nem igazított) tételt
+  /// adja vissza, hogy a visszavonás azt mentse vissza, ne a megjelenített másolatot.
+  Future<PortfolioLot?> remove(String id) async {
+    final stored = _lots.where((l) => l.id == id).firstOrNull;
     _lots.removeWhere((l) => l.id == id);
     notifyListeners();
     await _save();
+    return stored;
   }
 
   Future<void> _save() async {

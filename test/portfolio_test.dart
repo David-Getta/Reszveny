@@ -110,6 +110,15 @@ void main() {
       await again.clear();
       expect(again.splits, isEmpty);
       expect((await PortfolioStore.load()).splits, isEmpty);
+      // Ugyanaz a felaprózás kétszer (pl. két eszközről, más azonosítóval) csak egyszer számít.
+      expect(await store.addSplit(symbol: 'NVDA', from: 1, to: 10, date: DateTime(2024, 6, 10)), isNull);
+      expect(await store.addSplit(symbol: 'NVDA', from: 0, to: 10, date: DateTime(2024, 6, 10)), isNull);
+      await store.replaceAllSplits([
+        ...store.splits,
+        SplitRecord(id: 'other-device', symbol: 'NVDA', from: 1, to: 10, date: DateTime(2024, 6, 10)),
+      ]);
+      expect(store.splitsOf('NVDA'), hasLength(1));
+      expect(store.positionOf('NVDA')!.quantity, 65);
       // Hibás rekordok kimaradnak (nulla, egyenlő arány, dátum nélkül).
       expect(SplitRecord.fromJson({'symbol': 'A', 'from': 0, 'to': 2, 'date': '2024-01-01'}), isNull);
       expect(SplitRecord.fromJson({'symbol': 'A', 'from': 2, 'to': 2, 'date': '2024-01-01'}), isNull);
@@ -716,5 +725,15 @@ void main() {
     expect(s.portfolio.splits.single.id, split.id);
     expect(s.portfolio.positionOf('AAPL')!.quantity, 100);
     expect(find.byKey(const ValueKey('split-removed')), findsNothing);
+    // A vétel törlése és visszavonása a tárolt (nem igazított) tételt menti vissza:
+    // a felaprózás nem hat kétszer.
+    final lot = s.portfolio.lots.single;
+    await tester.tap(find.descendant(of: find.byKey(ValueKey('lot-${lot.id}')), matching: find.text('Remove')));
+    await tester.pumpAndSettle();
+    expect(s.portfolio.lots, isEmpty);
+    await tester.tap(find.byKey(const ValueKey('lot-undo')));
+    await tester.pumpAndSettle();
+    expect(s.portfolio.lots.single.quantity, 10);
+    expect(s.portfolio.positionOf('AAPL')!.quantity, 100);
   });
 }

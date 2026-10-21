@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.171)
+# Változásjegyzék (0.2.130 → 0.2.173)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -61,7 +61,7 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 
 ## Minőség
 
-- Nyolc kódátnézés és egy egyszerűsítési átnézés javításai, bővített tesztek; 120 nyelven minden új szöveg.
+- Kilenc kódátnézés és két egyszerűsítési átnézés javításai, bővített tesztek; 120 nyelven minden új szöveg.
 
 ## Bolti „Újdonságok” (rövid)
 

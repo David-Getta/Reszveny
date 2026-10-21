@@ -574,11 +574,11 @@ class AppServices {
   Future<void> prefetchDividendRates(String symbol) async {
     final held = portfolio.positionOf(symbol);
     if (held == null) return;
-    final foreign = dividendsInLast12Months(
-      portfolio.dividendsOf(symbol),
-      now: DateTime.now(),
-    ).map((d) => d.currency).where((c) => c != held.currency);
-    if (foreign.isNotEmpty) await fx.ratesFor(foreign, held.currency);
+    // Az azonos pénznem hálózat nélkül 1, üres listánál nincs kérés ([FxService.ratesFor]).
+    await fx.ratesFor(
+      dividendsInLast12Months(portfolio.dividendsOf(symbol), now: DateTime.now()).map((d) => d.currency),
+      held.currency,
+    );
   }
 
   /// A ténylegesen használt megjelenítési pénznem (beállítás vagy a rendszerből).

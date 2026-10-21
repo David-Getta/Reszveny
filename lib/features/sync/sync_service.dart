@@ -199,7 +199,7 @@ class SyncService extends ChangeNotifier {
       'targets': {...AppPreferences.parseTargets(remote['targets']), ...AppPreferences.parseTargets(local['targets'])},
       'lots': byId(local['lots'], remote['lots']),
       'dividends': byId(local['dividends'], remote['dividends']),
-      'splits': byId(local['splits'], remote['splits']),
+      'splits': _uniqueSplits(byId(local['splits'], remote['splits'])),
       'cash': cash.cash,
       'cash_at': cash.at,
       'alerts': alertsMerged,
@@ -230,6 +230,16 @@ class SyncService extends ChangeNotifier {
 
   /// Saját listák: név szerint (kis- és nagybetűtől függetlenül) összevonva, a
   /// helyiek elöl; azonos listánál a tickerek uniója.
+  /// Felaprózások: két eszközön rögzítve más az azonosító, de ugyanaz (ticker, nap,
+  /// arány) csak egyszer maradhat – kétszer alkalmazva a darabszám hibás lenne.
+  static List<Map<String, dynamic>> _uniqueSplits(List<Map<String, dynamic>> splits) {
+    final seen = <String>{};
+    return [
+      for (final s in splits)
+        if (SplitRecord.fromJson(s)?.key case final k? when seen.add(k)) s,
+    ];
+  }
+
   static List<Map<String, dynamic>> _mergeLists(Object? local, Object? remote) {
     final merged = <String, WatchList>{};
     for (final raw in [...?(local as List?), ...?(remote as List?)]) {

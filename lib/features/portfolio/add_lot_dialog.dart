@@ -4,6 +4,7 @@ import '../../app_services.dart';
 import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
+import '../../widgets/date_picker_row.dart';
 
 /// Szám beolvasása a felhasználó írásmódjában: „1 234,5”, „1,234.5”, „12,5”.
 /// Ha pont és vessző is van, az utolsó a tizedesjel. `null`, ha nem szám.
@@ -75,12 +76,6 @@ class _AddLotDialogState extends State<_AddLotDialog> {
     super.dispose();
   }
 
-  Future<void> _pickDate() async {
-    final now = DateTime.now();
-    final picked = await showDatePicker(context: context, initialDate: _date, firstDate: DateTime(1980), lastDate: now);
-    if (picked != null) setState(() => _date = picked);
-  }
-
   Future<void> _submit() async {
     final l10n = AppLocalizations.of(context);
     final q = parseDecimal(_quantity.text);
@@ -105,7 +100,6 @@ class _AddLotDialogState extends State<_AddLotDialog> {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     final p = AppPalette.of(context);
-    final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
     const numberKeyboard = TextInputType.numberWithOptions(decimal: true);
     return AlertDialog(
       title: Text(widget.sell ? l10n.portfolioSellTitle(widget.symbol) : l10n.portfolioAddTitle(widget.symbol)),
@@ -148,25 +142,10 @@ class _AddLotDialogState extends State<_AddLotDialog> {
               onSubmitted: (_) => _submit(),
             ),
             const SizedBox(height: 12),
-            InkWell(
-              borderRadius: BorderRadius.circular(8),
-              onTap: _pickDate,
-              child: Padding(
-                padding: const EdgeInsets.symmetric(vertical: 8),
-                child: Row(
-                  children: [
-                    Icon(Icons.event_outlined, size: 18, color: p.muted),
-                    const SizedBox(width: 8),
-                    Expanded(
-                      child: Text(
-                        widget.sell ? l10n.portfolioSellDate : l10n.portfolioBuyDate,
-                        style: TextStyle(color: p.muted),
-                      ),
-                    ),
-                    Text(fmt.date(_date), style: const TextStyle(fontWeight: FontWeight.w600)),
-                  ],
-                ),
-              ),
+            DatePickerRow(
+              label: widget.sell ? l10n.portfolioSellDate : l10n.portfolioBuyDate,
+              date: _date,
+              onChanged: (d) => setState(() => _date = d),
             ),
           ],
         ),

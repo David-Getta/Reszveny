@@ -103,7 +103,7 @@ class EventsService extends ChangeNotifier {
 
   /// Amire a lista épül a portfólióból: a tranzakciók és az osztalékok
   /// azonosítói. Más változás (készpénz, jegyzet) nem indít újraépítést.
-  String _fingerprint() => [...portfolio.lots.map((l) => l.id), '|', ...portfolio.dividends.map((d) => d.id)].join(',');
+  String _fingerprint() => '${portfolio.holdingsKey}|${portfolio.dividends.map((d) => d.id).join(',')}';
   String _seen = '';
 
   /// Új vétel, eladás vagy osztalék: a lista a gyorsítótárból újraépül; lekérés

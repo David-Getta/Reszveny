@@ -199,8 +199,7 @@ class _PortfolioHistoryCardState extends State<PortfolioHistoryCard> {
     final p = AppPalette.of(context);
     final theme = Theme.of(context);
     final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
-    final key =
-        '${widget.snapshot.currency}|${services.portfolio.lots.map((l) => l.id).join(',')}|${services.portfolio.splits.map((s) => s.id).join(',')}';
+    final key = '${widget.snapshot.currency}|${services.portfolio.holdingsKey}';
     if (key != _key) {
       _key = key;
       _future = _load(services);

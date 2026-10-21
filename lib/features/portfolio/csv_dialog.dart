@@ -134,15 +134,12 @@ Future<void> showPortfolioImport(BuildContext context) async {
     await services.portfolio.addDividend(symbol: d.symbol, amount: d.amount, currency: d.currency, date: d.date);
     addedDividends++;
   }
-  // Felaprózások (saját exportból): ugyanaz (ticker, nap, arány) nem kerül be kétszer.
-  String sKey(String symbol, DateTime d, int from, int to) =>
-      '$symbol|${d.toIso8601String().substring(0, 10)}|$to:$from';
-  final existingSplits = {for (final s in services.portfolio.splits) sKey(s.symbol, s.date, s.from, s.to)};
+  // Felaprózások (saját exportból): a tároló nem veszi fel kétszer ugyanazt (ticker, nap, arány).
   var addedSplits = 0;
   for (final s in result.splits) {
-    if (!existingSplits.add(sKey(s.symbol, s.date, s.from, s.to))) continue;
-    await services.portfolio.addSplit(symbol: s.symbol, from: s.from, to: s.to, date: s.date);
-    addedSplits++;
+    if (await services.portfolio.addSplit(symbol: s.symbol, from: s.from, to: s.to, date: s.date) != null) {
+      addedSplits++;
+    }
   }
   messenger.showSnackBar(
     SnackBar(

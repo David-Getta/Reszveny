@@ -60,6 +60,8 @@ class _AnalysisCardState extends State<AnalysisCard> {
     final services = AppServices.of(context);
     _services = services;
     services.reports.addViewer(widget.details.symbol, _visible);
+    // A saját pozíció más pénznemű osztalékainak árfolyama előre (az elemzés indításakor már gyorsítótárból).
+    unawaited(services.prefetchDividendRates(widget.details.symbol));
     final language = SupportedLocales.languageFor(Localizations.localeOf(context)).englishName;
     final restoring = services.reports.restore(widget.details.symbol, language: language);
     // Az előzményekből „új elemzés”-t kértek: a mentett betöltése után indul.

@@ -106,6 +106,22 @@ String _head({
     '<meta name="theme-color" content="#C96442"><style>$_style</style><body><main>'
     '<a class="brand" href="/"><i></i>WhatStock</a>';
 
+/// Egy forgatókönyv sávja: név (a legvalószínűbbnél jelöléssel), valószínűség,
+/// sáv és ártartomány – a megosztott elemzés és a minta-elemzés közös eleme.
+String _scenarioHtml({
+  required String kind,
+  required String label,
+  String likely = '',
+  required Object probability,
+  String range = '',
+}) =>
+    '<div class="sc ${_attr(kind)}"><div class="row"><span><b>${_esc(label)}</b>'
+    '${likely == '' ? '' : '<span class="likely">${_esc(likely)}</span>'}'
+    '</span><span>${_esc(probability)}%</span></div>'
+    '<div class="bar"><span style="width:${_attr(probability)}%"></span></div>'
+    '${range == '' ? '' : '<div class="small muted">${_esc(range)}</div>'}'
+    '</div>';
+
 /// A megosztott elemzés oldala.
 String sharePage(SharedReport s, {required String publicUrl}) {
   final d = s.data;
@@ -135,15 +151,15 @@ String sharePage(SharedReport s, {required String publicUrl}) {
     );
   }
   for (final sc in (d['scenarios'] as List).cast<Map<String, dynamic>>()) {
-    b
-      ..write('<div class="sc ${_attr(sc['kind'])}"><div class="row"><span><b>${_esc(sc['label'])}</b>')
-      ..write(
-        sc['likely'] == true && labels['likely'] != '' ? '<span class="likely">${_esc(labels['likely'])}</span>' : '',
-      )
-      ..write('</span><span>${sc['probability']}%</span></div>')
-      ..write('<div class="bar"><span style="width:${sc['probability']}%"></span></div>')
-      ..write(sc['range'] == '' ? '' : '<div class="small muted">${_esc(sc['range'])}</div>')
-      ..write('</div>');
+    b.write(
+      _scenarioHtml(
+        kind: '${sc['kind']}',
+        label: '${sc['label']}',
+        likely: sc['likely'] == true ? '${labels['likely'] ?? ''}' : '',
+        probability: sc['probability'],
+        range: '${sc['range'] ?? ''}',
+      ),
+    );
   }
   b
     ..write('<p class="small muted" style="margin-top:18px">${_esc(labels['generated'])}</p>')
@@ -719,12 +735,15 @@ String samplePage({required String lang, required String downloadBase, String? p
     )
     ..write('$h2${_esc(s('scenarios'))}</h2>');
   for (final k in const ['bull', 'base', 'bear']) {
-    b
-      ..write('<div class="sc $k"><div class="row"><span><b>${_esc(s(k))}</b>')
-      ..write(k == 'base' ? '<span class="likely">${_esc(s('likely'))}</span>' : '')
-      ..write('</span><span>${_esc(s('${k}P'))}%</span></div>')
-      ..write('<div class="bar"><span style="width:${_attr(s('${k}P'))}%"></span></div>')
-      ..write('<div class="small muted">${_esc(s('${k}Range'))}</div></div>');
+    b.write(
+      _scenarioHtml(
+        kind: k,
+        label: s(k),
+        likely: k == 'base' ? s('likely') : '',
+        probability: s('${k}P'),
+        range: s('${k}Range'),
+      ),
+    );
   }
   b
     ..write('$h2${_esc(s('levels'))}</h2>')

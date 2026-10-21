@@ -4,6 +4,7 @@ import '../../app_services.dart';
 import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
+import '../../widgets/date_picker_row.dart';
 import '../../widgets/metric_hint.dart';
 import 'add_lot_dialog.dart' show parseDecimal;
 import 'dividend_forecast.dart';
@@ -333,16 +334,6 @@ class _AddDividendDialogState extends State<_AddDividendDialog> {
     super.dispose();
   }
 
-  Future<void> _pickDate() async {
-    final picked = await showDatePicker(
-      context: context,
-      initialDate: _date,
-      firstDate: DateTime(1980),
-      lastDate: DateTime.now(),
-    );
-    if (picked != null) setState(() => _date = picked);
-  }
-
   Future<void> _submit() async {
     final l10n = AppLocalizations.of(context);
     final symbol = _symbol.text.trim().toUpperCase();
@@ -361,8 +352,6 @@ class _AddDividendDialogState extends State<_AddDividendDialog> {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
-    final p = AppPalette.of(context);
-    final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
     return AlertDialog(
       title: Text(l10n.portfolioAddDividend),
       content: SizedBox(
@@ -414,23 +403,7 @@ class _AddDividendDialogState extends State<_AddDividendDialog> {
               onSubmitted: (_) => _submit(),
             ),
             const SizedBox(height: 12),
-            InkWell(
-              borderRadius: BorderRadius.circular(8),
-              onTap: _pickDate,
-              child: Padding(
-                padding: const EdgeInsets.symmetric(vertical: 8),
-                child: Row(
-                  children: [
-                    Icon(Icons.event_outlined, size: 18, color: p.muted),
-                    const SizedBox(width: 8),
-                    Expanded(
-                      child: Text(l10n.portfolioDividendDate, style: TextStyle(color: p.muted)),
-                    ),
-                    Text(fmt.date(_date), style: const TextStyle(fontWeight: FontWeight.w600)),
-                  ],
-                ),
-              ),
-            ),
+            DatePickerRow(label: l10n.portfolioDividendDate, date: _date, onChanged: (d) => setState(() => _date = d)),
           ],
         ),
       ),

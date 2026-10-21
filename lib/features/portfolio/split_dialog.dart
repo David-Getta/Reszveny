@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
 import '../../app_services.dart';
-import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
+import '../../widgets/date_picker_row.dart';
+import 'portfolio_store.dart' show SplitRecord;
 
 /// Részvényfelaprózás rögzítése egy részvényhez: arány (új : régi, pl. 10:1,
 /// összevonásnál 1:10) és a nap. A nap előtti tranzakciók igazítódnak.
@@ -20,8 +21,7 @@ Future<bool> showSplitDialog(BuildContext context, {required String symbol}) asy
   final m = RegExp(r'^\s*(\d{1,4})\s*[:/]\s*(\d{1,4})\s*$').firstMatch(text);
   if (m == null) return null;
   final to = int.parse(m[1]!), from = int.parse(m[2]!);
-  if (to < 1 || from < 1 || to == from) return null;
-  return (to, from);
+  return SplitRecord.validRatio(from, to) ? (to, from) : null;
 }
 
 class _SplitDialog extends StatefulWidget {
@@ -44,16 +44,6 @@ class _SplitDialogState extends State<_SplitDialog> {
     super.dispose();
   }
 
-  Future<void> _pickDate() async {
-    final picked = await showDatePicker(
-      context: context,
-      initialDate: _date,
-      firstDate: DateTime(1980),
-      lastDate: DateTime.now(),
-    );
-    if (picked != null) setState(() => _date = picked);
-  }
-
   Future<void> _submit() async {
     final ratio = parseSplitRatio(_ratio.text);
     setState(() => _ratioError = ratio == null);
@@ -66,7 +56,6 @@ class _SplitDialogState extends State<_SplitDialog> {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     final p = AppPalette.of(context);
-    final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
     return AlertDialog(
       title: Text(l10n.portfolioSplitTitle(widget.symbol)),
       content: SizedBox(
@@ -90,23 +79,11 @@ class _SplitDialogState extends State<_SplitDialog> {
               onSubmitted: (_) => _submit(),
             ),
             const SizedBox(height: 12),
-            InkWell(
+            DatePickerRow(
               key: const ValueKey('split-date'),
-              borderRadius: BorderRadius.circular(8),
-              onTap: _pickDate,
-              child: Padding(
-                padding: const EdgeInsets.symmetric(vertical: 8),
-                child: Row(
-                  children: [
-                    Icon(Icons.event_outlined, size: 18, color: p.muted),
-                    const SizedBox(width: 8),
-                    Expanded(
-                      child: Text(l10n.portfolioSplitDate, style: TextStyle(color: p.muted)),
-                    ),
-                    Text(fmt.date(_date), style: const TextStyle(fontWeight: FontWeight.w600)),
-                  ],
-                ),
-              ),
+              label: l10n.portfolioSplitDate,
+              date: _date,
+              onChanged: (d) => setState(() => _date = d),
             ),
           ],
         ),

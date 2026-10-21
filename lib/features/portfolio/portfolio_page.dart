@@ -51,8 +51,7 @@ class _PortfolioSnapshotBuilderState extends State<PortfolioSnapshotBuilder> {
       builder: (context, _) {
         final positions = services.portfolio.positions;
         final currency = PortfolioSnapshot.totalCurrency(positions, services.displayCurrency(locale));
-        final key =
-            '$currency|${services.portfolio.lots.map((l) => l.id).join(',')}|${services.portfolio.splits.map((s) => s.id).join(',')}|${services.portfolio.cash}';
+        final key = '$currency|${services.portfolio.holdingsKey}|${services.portfolio.cash}';
         if (key != _key) {
           _key = key;
           _future = PortfolioSnapshot.load(
@@ -1020,6 +1019,19 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
           final lots = services.portfolio.adjustedLots.where((l) => l.symbol == position.symbol).toList()
             ..sort((a, b) => (b.date ?? DateTime(0)).compareTo(a.date ?? DateTime(0)));
           final now = Position(symbol: position.symbol, currency: position.currency, lots: lots);
+          // „Törölve · Visszavonás” sor a legutóbb törölt tételhez ([name]: a kulcsok előtagja).
+          Widget undoRow(String name, String text, VoidCallback onUndo) => Padding(
+            key: ValueKey('$name-removed'),
+            padding: const EdgeInsets.fromLTRB(20, 0, 12, 8),
+            child: Row(
+              children: [
+                Expanded(
+                  child: Text(text, style: TextStyle(color: p.muted)),
+                ),
+                TextButton(key: ValueKey('$name-undo'), onPressed: onUndo, child: Text(l10n.undo)),
+              ],
+            ),
+          );
           return SafeArea(
             child: ConstrainedBox(
               constraints: BoxConstraints(maxHeight: MediaQuery.sizeOf(context).height * 0.8),
@@ -1068,45 +1080,15 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
                     ),
                   ),
                   if (removed.value case final r?)
-                    Padding(
-                      key: const ValueKey('lot-removed'),
-                      padding: const EdgeInsets.fromLTRB(20, 0, 12, 8),
-                      child: Row(
-                        children: [
-                          Expanded(
-                            child: Text(l10n.lotRemoved, style: TextStyle(color: p.muted)),
-                          ),
-                          TextButton(
-                            key: const ValueKey('lot-undo'),
-                            onPressed: () {
-                              removed.value = null;
-                              services.portfolio.restore(r);
-                            },
-                            child: Text(l10n.undo),
-                          ),
-                        ],
-                      ),
-                    ),
+                    undoRow('lot', l10n.lotRemoved, () {
+                      removed.value = null;
+                      services.portfolio.restore(r);
+                    }),
                   if (removedSplit.value case final r?)
-                    Padding(
-                      key: const ValueKey('split-removed'),
-                      padding: const EdgeInsets.fromLTRB(20, 0, 12, 8),
-                      child: Row(
-                        children: [
-                          Expanded(
-                            child: Text(l10n.portfolioSplitRemoved, style: TextStyle(color: p.muted)),
-                          ),
-                          TextButton(
-                            key: const ValueKey('split-undo'),
-                            onPressed: () {
-                              removedSplit.value = null;
-                              services.portfolio.restoreSplit(r);
-                            },
-                            child: Text(l10n.undo),
-                          ),
-                        ],
-                      ),
-                    ),
+                    undoRow('split', l10n.portfolioSplitRemoved, () {
+                      removedSplit.value = null;
+                      services.portfolio.restoreSplit(r);
+                    }),
                   if (now.hasSales)
                     Padding(
                       padding: const EdgeInsets.fromLTRB(20, 0, 20, 8),
@@ -1196,10 +1178,8 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
                       ),
                       subtitle: lot.date == null ? null : Text(fmt.date(lot.date)),
                       trailing: TextButton.icon(
-                        onPressed: () {
-                          removed.value = lot;
-                          services.portfolio.remove(lot.id);
-                        },
+                        // A lapon az igazított másolat látszik; a visszavonáshoz a tárolt tétel kell.
+                        onPressed: () async => removed.value = await services.portfolio.remove(lot.id),
                         icon: const Icon(Icons.delete_outline_rounded, size: 18),
                         label: Text(l10n.portfolioRemove),
                         style: TextButton.styleFrom(foregroundColor: p.negative),

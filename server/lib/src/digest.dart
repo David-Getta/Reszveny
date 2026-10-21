@@ -86,16 +86,42 @@ class DigestSender {
   /// pénzneme a szinkronizált csomag tranzakcióiból.
   static ({Map<String, double> held, Map<String, String> currencies}) holdingsOf(Map<String, dynamic> data) {
     final held = <String, double>{}, currencies = <String, String>{};
+    final splits = _splitsOf(data);
     for (final l in (data['lots'] as List? ?? const [])) {
       if (l is! Map || l['symbol'] is! String || l['quantity'] is! num) continue;
       final s = (l['symbol'] as String).toUpperCase();
-      final q = (l['quantity'] as num).toDouble();
+      var q = (l['quantity'] as num).toDouble();
+      // A felaprózás napja előtti, dátumozott tétel darabszáma × új/régi; a dátum nélküli változatlan.
+      if (DateTime.tryParse('${l['date']}') case final date?) {
+        for (final sp in splits[s] ?? const <({DateTime date, int from, int to})>[]) {
+          if (date.isBefore(sp.date)) q = q * sp.to / sp.from;
+        }
+      }
       held[s] = (held[s] ?? 0) + (l['side'] == 'sell' ? -q : q);
       if (l['currency'] is String) currencies[s] ??= l['currency'] as String;
     }
     // A teljesen eladott részvény kimarad.
     held.removeWhere((_, q) => q <= 1e-9);
     return (held: held, currencies: currencies);
+  }
+
+  /// A szinkronizált felaprózások részvényenként (érvényes arány, napra kerekítve,
+  /// ismétlés nélkül). Az app `SplitRecord` szabályának másolata
+  /// (lib/features/portfolio/portfolio_store.dart) – a kettőt együtt kell változtatni.
+  static Map<String, List<({DateTime date, int from, int to})>> _splitsOf(Map<String, dynamic> data) {
+    final out = <String, List<({DateTime date, int from, int to})>>{};
+    final seen = <String>{};
+    for (final s in (data['splits'] as List? ?? const [])) {
+      if (s is! Map || s['symbol'] is! String || s['from'] is! int || s['to'] is! int) continue;
+      final from = s['from'] as int, to = s['to'] as int;
+      final d = DateTime.tryParse('${s['date']}');
+      if (from < 1 || to < 1 || from == to || d == null) continue;
+      final symbol = (s['symbol'] as String).toUpperCase();
+      final day = DateTime(d.year, d.month, d.day);
+      if (!seen.add('$symbol|$day|$to:$from')) continue;
+      out.putIfAbsent(symbol, () => []).add((date: day, from: from, to: to));
+    }
+    return out;
   }
 
   /// A fiók részvényei: előbb a portfólióé (a pénznemmel), aztán a többi kedvenc.
