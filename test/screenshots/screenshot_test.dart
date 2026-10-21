@@ -986,7 +986,17 @@ void main() {
   });
 
   testWidgets('detail with own position', (tester) async {
-    await pumpApp(tester, _services(portfolio: _samplePortfolio()), const Size(1200, 900));
+    // Két negyedéves AAPL-osztalék: a kártyán a kapott összeg és a várható következő.
+    final portfolio = _samplePortfolio();
+    final last = DateTime.now().subtract(const Duration(days: 80));
+    await portfolio.addDividend(
+      symbol: 'AAPL',
+      amount: 4.32,
+      currency: 'USD',
+      date: last.subtract(const Duration(days: 91)),
+    );
+    await portfolio.addDividend(symbol: 'AAPL', amount: 4.68, currency: 'USD', date: last);
+    await pumpApp(tester, _services(portfolio: portfolio), const Size(1200, 900));
     await tester.enterText(find.byType(TextField), 'AAPL');
     await tester.testTextInput.receiveAction(TextInputAction.search);
     await tester.pumpAndSettle();
