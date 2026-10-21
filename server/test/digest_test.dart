@@ -143,9 +143,14 @@ void main() {
       const [],
       hu: false,
       dividends: [(symbol: 'AAPL', amount: 2.5, currency: 'USD', date: DateTime.utc(2026, 10, 14))],
+      expected: [(symbol: 'KO', amount: 5.1, currency: 'USD', date: DateTime.utc(2026, 10, 28))],
     );
     expect(subject, 'WhatStock weekly summary: AAPL −2.5%');
     expect(text, contains('Dividends received this week:\n  AAPL – 2.50 USD (Oct 14)'));
+    expect(
+      text,
+      contains('Dividends expected in the next two weeks (from your recorded payments):\n  KO – ~5.10 USD (Oct 28)'),
+    );
     expect(text, contains('Technical signals:\n  AAPL – RSI 27 (oversold)'));
     expect(text, contains('Portfolio\n  AAPL   231.45 USD   −2.5%'));
     expect(text, contains('Results due in the next two weeks:\n  AAPL – Oct 30'));
@@ -168,6 +173,38 @@ void main() {
     }, now: now);
     expect(ds.map((d) => (d.symbol, d.amount, d.currency)), [('AAPL', 2.5, 'USD'), ('MSFT', 0.83, 'USD')]);
     expect(DigestSender.dividendsOf({}, now: now), isEmpty);
+  });
+
+  test('expected dividends in the next two weeks: held stocks with a rhythm in the recorded payments', () {
+    final now = DateTime.utc(2026, 10, 19, 7);
+    final data = {
+      'lots': [
+        {'symbol': 'KO', 'quantity': 10, 'price': 60, 'currency': 'USD'},
+        {'symbol': 'PEP', 'quantity': 5, 'price': 150, 'currency': 'USD'},
+        {'symbol': 'PEP', 'quantity': 5, 'price': 160, 'currency': 'USD', 'side': 'sell'},
+      ],
+      'dividends': [
+        // KO negyedéves: júl. 30. + 91 nap = okt. 29. → két héten belül.
+        {'symbol': 'KO', 'amount': 4.85, 'currency': 'USD', 'date': '2026-04-30'},
+        {'symbol': 'KO', 'amount': 5.0, 'currency': 'USD', 'date': '2026-07-30'},
+        {'symbol': 'KO', 'amount': 0.1, 'currency': 'USD', 'date': '2026-07-30'},
+        // PEP már eladva: kimarad.
+        {'symbol': 'PEP', 'amount': 1.4, 'currency': 'USD', 'date': '2026-04-29'},
+        {'symbol': 'PEP', 'amount': 1.4, 'currency': 'USD', 'date': '2026-07-29'},
+      ],
+    };
+    final ex = DigestSender.expectedDividendsOf(data, now: now);
+    expect(ex.map((d) => (d.symbol, d.currency, d.date)), [('KO', 'USD', DateTime.utc(2026, 10, 29))]);
+    expect(ex.single.amount, closeTo(5.1, 1e-9), reason: 'az egy napon rögzített két tétel együtt');
+    // Egy tételből nincs ritmus; a két héten túli nem látszik.
+    expect(
+      DigestSender.expectedDividendsOf({
+        'lots': data['lots'],
+        'dividends': [data['dividends']![0]],
+      }, now: now),
+      isEmpty,
+    );
+    expect(DigestSender.expectedDividendsOf(data, now: DateTime.utc(2026, 9, 1)), isEmpty);
   });
 
   test('symbols: portfolio first, favorites without duplicates, at most 15', () {

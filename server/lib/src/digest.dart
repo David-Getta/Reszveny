@@ -126,6 +126,54 @@ class DigestSender {
     return out;
   }
 
+  /// A következő [days] napban várható osztalékok a még birtokolt részvényekre,
+  /// a rögzített kifizetések ritmusából (legalább két dátumozott tétel; a köztük
+  /// lévő medián távolságból havi / negyedéves / féléves / éves ritmus; a
+  /// következő = az utolsó + ritmus, az utolsó összeggel) – ugyanaz a becslés,
+  /// mint az appban. Időrendben.
+  static List<DigestDividend> expectedDividendsOf(Map<String, dynamic> data, {required DateTime now, int days = 14}) {
+    final held = symbolsOf(data).portfolio.toSet();
+    final bySymbol = <String, Map<DateTime, (double amount, String currency)>>{};
+    for (final d in (data['dividends'] as List? ?? const [])) {
+      if (d is! Map || d['symbol'] is! String || d['amount'] is! num || (d['amount'] as num) <= 0) continue;
+      final s = (d['symbol'] as String).toUpperCase();
+      if (!held.contains(s)) continue;
+      final date = DateTime.tryParse('${d['date']}');
+      if (date == null) continue;
+      final day = DateTime.utc(date.year, date.month, date.day);
+      final prev = (bySymbol[s] ??= {})[day];
+      // Ugyanazon a napon több tétel: egy kifizetés, együtt.
+      bySymbol[s]![day] = (
+        (prev?.$1 ?? 0) + (d['amount'] as num).toDouble(),
+        d['currency'] is String ? d['currency'] as String : (prev?.$2 ?? 'USD'),
+      );
+    }
+    final until = now.add(Duration(days: days));
+    final out = <DigestDividend>[];
+    for (final e in bySymbol.entries) {
+      final days = e.value.keys.toList()..sort();
+      if (days.length < 2) continue;
+      final gaps = [for (var i = 1; i < days.length; i++) days[i].difference(days[i - 1]).inDays]..sort();
+      final period = _periodDays(gaps[gaps.length ~/ 2]);
+      if (period == null) continue;
+      final next = days.last.add(Duration(days: period));
+      if (next.isBefore(DateTime.utc(now.year, now.month, now.day)) || next.isAfter(until)) continue;
+      final last = e.value[days.last]!;
+      out.add((symbol: e.key, amount: last.$1, currency: last.$2, date: next));
+    }
+    return out..sort((a, b) => a.date.compareTo(b.date));
+  }
+
+  /// A kifizetések közti medián távolságból a ritmus napokban (30 / 91 / 182 / 365).
+  static int? _periodDays(int medianGap) {
+    if (medianGap < 20) return null;
+    if (medianGap <= 45) return 30;
+    if (medianGap <= 135) return 91;
+    if (medianGap <= 230) return 182;
+    if (medianGap <= 420) return 365;
+    return null;
+  }
+
   /// Egy kör: ha hétfő reggel van, a feliratkozott fiókoknak, akiknek az elmúlt
   /// hat és fél napban még nem ment, kiküldi az összefoglalót. Visszaadja, hány
   /// e-mail ment ki.
@@ -226,6 +274,7 @@ class DigestSender {
             favorites,
             hu: acc.data['lang'] == 'hu',
             dividends: dividendsOf(acc.data, now: now),
+            expected: expectedDividendsOf(acc.data, now: now),
           );
           await mailer.send(acc.email, subject: subject, text: text);
           store.markDigest(acc.userId);
@@ -273,6 +322,7 @@ class DigestSender {
     List<DigestLine> favorites, {
     required bool hu,
     List<DigestDividend> dividends = const [],
+    List<DigestDividend> expected = const [],
   }) {
     int byChange(DigestLine a, DigestLine b) => (b.weekChange ?? -1e9).compareTo(a.weekChange ?? -1e9);
     portfolio = [...portfolio]..sort(byChange);
@@ -342,6 +392,18 @@ class DigestSender {
       b.writeln(hu ? 'Kapott osztalékok a héten:' : 'Dividends received this week:');
       for (final d in dividends) {
         b.writeln('  ${d.symbol} – ${_n(d.amount)} ${d.currency} (${_date(d.date, hu: hu)})');
+      }
+      b.writeln();
+    }
+    // Várható osztalékok a következő két hétben (a rögzítettek ritmusából becsülve).
+    if (expected.isNotEmpty) {
+      b.writeln(
+        hu
+            ? 'Várható osztalék a következő két hétben (a rögzítettek ritmusából):'
+            : 'Dividends expected in the next two weeks (from your recorded payments):',
+      );
+      for (final d in expected) {
+        b.writeln('  ${d.symbol} – ~${_n(d.amount)} ${d.currency} (${_date(d.date, hu: hu)})');
       }
       b.writeln();
     }
