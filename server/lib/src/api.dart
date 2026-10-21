@@ -38,7 +38,7 @@ import 'testers.dart';
 /// - `GET  /v1/referral` → saját ajánlókód és statisztika; `POST /v1/referral/redeem` `{code}` → egy barát
 ///   kódjának beváltása (extra elemzések; az ajánló az első elemzésed után kapja meg a sajátját)
 /// - `DELETE /v1/account` → a fiók és a szerveren tárolt adatok törlése (a Stripe-előfizetést lemondja)
-/// - `GET  /pricing` → árak oldal (magyar / angol); `/robots.txt`, `/sitemap.xml` a keresőknek
+/// - `GET  /pricing` → árak oldal (magyar / angol); `GET /sample` → minta-elemzés; `/robots.txt`, `/sitemap.xml` a keresőknek
 /// - `GET  /stocks`, `/stocks/<ticker>` → népszerű részvények oldalai (árfolyam, alapadatok, letöltés)
 /// - `GET  /legal/terms`, `/legal/privacy` → ÁSZF és adatkezelési tájékoztató a `legal/` mappa markdownjából
 /// - `POST /v1/billing/checkout` `{product_id}` → Stripe Checkout URL (böngészős fizetés)
@@ -184,6 +184,7 @@ class Api {
       ..get('/s/<id>', _sharePage)
       ..get('/', _landing)
       ..get('/pricing', _pricingPage)
+      ..get('/sample', _samplePage)
       ..get('/stocks', _stocksIndex)
       ..get('/stocks/<symbol>', _stockPage)
       ..get('/robots.txt', (Request r) => Response.ok(robotsTxt(publicUrl), headers: {'content-type': 'text/plain'}))
@@ -509,6 +510,12 @@ class Api {
       (r.url.queryParameters['lang'] ?? r.headers['accept-language'] ?? '').toLowerCase().startsWith('hu')
       ? 'hu'
       : 'en';
+
+  /// A minta-elemzés oldala (kitalált cég, az elemzés szerkezete).
+  Response _samplePage(Request r) => Response.ok(
+    samplePage(lang: _pageLang(r), downloadBase: downloadBaseUrl, publicUrl: publicUrl),
+    headers: {'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=3600'},
+  );
 
   Response _stocksIndex(Request r) => Response.ok(
     stocksIndexPage(lang: _pageLang(r), downloadBase: downloadBaseUrl, publicUrl: publicUrl),

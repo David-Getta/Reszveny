@@ -47,6 +47,11 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Az Események lista követi a portfóliót (vétel, eladás, osztalék után azonnal, hálózat nélkül); a
   naptárexportban a várható osztalékok is.
 
+## Weboldal
+
+- **Minta-elemzés** oldal (`/sample`, magyar és angol): egy illusztratív elemzés kitalált cégen mutatja az
+  elemzés szerkezetét; a nyitóoldalról és a láblécből linkelve, a sitemapben.
+
 ## Bolti előkészítés
 
 - Apple adatvédelmi manifest (iOS, macOS), exportengedély-kulcs, macOS mentési jogosultság; Google Play

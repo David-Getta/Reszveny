@@ -99,4 +99,33 @@ void main() {
     expect(page, contains('The price is not available right now.'));
     expect(page, contains('<h1>NVDA</h1>'));
   });
+
+  test('the sample analysis page: a fictional company, scenarios, sections, Q&A; linked and in the sitemap', () async {
+    final hu = await (await get('/sample?lang=hu')).readAsString();
+    expect(hu, contains('<html lang="hu"'));
+    expect(hu, contains('<title>Minta AI-elemzés – így néz ki egy WhatStock-elemzés</title>'));
+    expect(hu, contains('Minta · kitalált cég, nem valós adat'));
+    expect(hu, contains('Northwind Robotics'));
+    expect(hu, contains('<div class="sc base">'));
+    expect(hu, contains('<span style="width:50%">'));
+    expect(hu, contains('legvalószínűbb'));
+    expect(hu, contains('<li>Verseny: két nagyobb szereplő is olcsóbb modellel jelent meg.</li>'));
+    expect(hu, contains('Miért nyomja a marzsot'));
+    expect(hu, contains('WhatStock-android-arm64.apk'));
+    expect(hu, isNot(contains('noindex')));
+    final res = await get('/sample');
+    expect(res.headers['cache-control'], 'public, max-age=3600');
+    final en = await res.readAsString();
+    expect(en, contains('<html lang="en"'));
+    expect(en, contains('Sample · fictional company, not real data'));
+    expect(en, contains('Cautiously optimistic'));
+    expect(calls, isEmpty, reason: 'a minta nem kér piaci adatot');
+    // A nyitóoldal és a lábléc linkeli; a sitemapben mindkét nyelven.
+    expect(await (await get('/?lang=hu')).readAsString(), contains('href="/sample?lang=hu">Milyen egy elemzés?</a>'));
+    expect(
+      await (await get('/pricing?lang=en')).readAsString(),
+      contains('href="/sample?lang=en">See a sample analysis</a>'),
+    );
+    expect(await (await get('/sitemap.xml')).readAsString(), contains('<loc>https://ws.example/sample?lang=hu</loc>'));
+  });
 }

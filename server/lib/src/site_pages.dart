@@ -183,6 +183,7 @@ const _site = {
     'terms': 'Felhasználási feltételek',
     'privacy': 'Adatkezelési tájékoztató',
     'pricing': 'Árak',
+    'sample': 'Milyen egy elemzés?',
   },
   'en': {
     'title': 'WhatStock – photograph a stock and understand it in minutes',
@@ -205,6 +206,7 @@ const _site = {
     'terms': 'Terms of use',
     'privacy': 'Privacy policy',
     'pricing': 'Pricing',
+    'sample': 'See a sample analysis',
   },
 };
 
@@ -243,7 +245,8 @@ String landingPage({
     b.write('<div class="card feature"><h2>${_esc(t['f${i}t'])}</h2><div class="muted">${_esc(t['f$i'])}</div></div>');
   }
   b
-    ..write('</div><div class="cta"><a class="btn alt" href="/pricing?lang=$lang">${_esc(t['pricing'])}</a></div>')
+    ..write('</div><div class="cta"><a class="btn alt" href="/sample?lang=$lang">${_esc(t['sample'])}</a>')
+    ..write('<a class="btn alt" href="/pricing?lang=$lang">${_esc(t['pricing'])}</a></div>')
     ..write(_footer(lang));
   return b.toString();
 }
@@ -252,6 +255,7 @@ String _footer(String lang) {
   final t = _site[lang] ?? _site['en']!;
   return '<footer><p>${_esc(t['disclaimer'])}</p>'
       '<a href="/pricing?lang=$lang">${_esc(t['pricing'])}</a> · '
+      '<a href="/sample?lang=$lang">${_esc(t['sample'])}</a> · '
       '<a href="/stocks?lang=$lang">${_esc(_stocks[lang]?['indexH1'] ?? 'Popular stocks')}</a> · '
       '<a href="/legal/terms?lang=$lang">${_esc(t['terms'])}</a> · '
       '<a href="/legal/privacy?lang=$lang">${_esc(t['privacy'])}</a></footer></main></body></html>';
@@ -370,6 +374,8 @@ String sitemapXml(String publicUrl) {
     '/?lang=hu',
     '/pricing?lang=en',
     '/pricing?lang=hu',
+    '/sample?lang=en',
+    '/sample?lang=hu',
     '/stocks?lang=en',
     '/stocks?lang=hu',
     for (final s in popularStocks) ...['/stocks/$s?lang=en', '/stocks/$s?lang=hu'],
@@ -560,4 +566,179 @@ String stocksIndexPage({required String lang, required String downloadBase, Stri
         ..write('<div class="cta">${_downloadButtons(lang, downloadBase)}</div>')
         ..write(_footer(lang)))
       .toString();
+}
+
+// ---- Minta-elemzés (az érdeklődőknek és a keresőknek) ----
+
+/// A minta-elemzés szövegei: kitalált cég, illusztráció – az app elemzésének
+/// szerkezetét mutatja (lényeg, hangulat, három forgatókönyv, kulcsszintek,
+/// szekciók, kérdés-válasz). Nem valós cég és nem valós adat, az oldal ezt
+/// többször is kimondja.
+const _sample = <String, Map<String, Object>>{
+  'hu': {
+    'title': 'Minta AI-elemzés – így néz ki egy WhatStock-elemzés',
+    'desc': 'Egy illusztratív WhatStock AI-részvényelemzés: lényeg, hangulat, három forgatókönyv, kulcsszintek, kockázatok és egy kérdés-válasz – kitalált cégen bemutatva.',
+    'h1': 'Így néz ki egy WhatStock AI-elemzés',
+    'intro': 'Az alábbi elemzés illusztráció egy kitalált cégről: a szerkezetet mutatja. Az appban az elemzés a kiválasztott részvény valós árfolyamából, mutatóiból, híreiből és gyorsjelentéseiből készül, forrásokkal, a te nyelveden.',
+    'fictional': 'Minta · kitalált cég, nem valós adat',
+    'company': 'Northwind Robotics',
+    'symbol': 'NWRB',
+    'price': '48,20 USD',
+    'headline': 'Erős a kereslet a raktári robotokra, de a marzsokat nyomja az új gyár felfutása – a következő két negyedév a kivitelezésről szól.',
+    'mood': 'Hangulat',
+    'moodLabel': 'Óvatosan derűlátó',
+    'scenarios': 'Forgatókönyvek 6–12 hónapra',
+    'likely': 'legvalószínűbb',
+    'bull': 'Kedvező',
+    'bullP': '30',
+    'bullRange': '58–64 USD · az új gyár a tervnél gyorsabban ér nyereséges kihasználtságot, új nagy ügyfél jön',
+    'base': 'Alap',
+    'baseP': '50',
+    'baseRange': '46–54 USD · a megrendelések a várt ütemben jönnek, a marzs év végére javul',
+    'bear': 'Kedvezőtlen',
+    'bearP': '20',
+    'bearRange': '34–40 USD · csúszik a felfutás, a legnagyobb ügyfél visszafogja a beruházást',
+    'levels': 'Kulcsszintek',
+    'support': 'Támasz',
+    'supportV': '42,50 USD · a tavaszi mélypont és a 200 napos átlag környéke',
+    'resist': 'Ellenállás',
+    'resistV': '52,80 USD · a gyorsjelentés utáni csúcs',
+    's1t': 'Mi mozgatja az árat',
+    's1': [
+      'A raktár-automatizálási piac évi 15–20%-kal nő; a cég rendelésállománya egy év alatt megduplázódott.',
+      'A két legnagyobb ügyfél adja a bevétel 45%-át – ez erő és kockázat egyszerre.',
+      'Az új gyár 2027 elejéig fut fel; addig a bruttó marzs 3–4 százalékponttal a korábbi szint alatt marad.',
+    ],
+    's2t': 'Kockázatok',
+    's2': [
+      'Ügyfélkoncentráció: egy elhalasztott beruházás egy negyedév bevételének 10%-át viheti.',
+      'Verseny: két nagyobb szereplő is olcsóbb modellel jelent meg.',
+      'Ha a felfutás csúszik, a készpénz 2027 közepére szűkülhet – tőkeemelés jöhet.',
+    ],
+    's3t': 'Értékeltség',
+    's3': [
+      'Előretekintő P/E 28 – a szektor 24-es átlaga fölött; a növekedés indokolhatja, a marzs-visszaesés nem.',
+      'A szabad pénzáramlás a felfutás miatt idén negatív, a vezetőség 2027-re pozitívat vár.',
+    ],
+    's4t': 'Mire figyelj',
+    's4': [
+      'A következő gyorsjelentésben a bruttó marzs iránya (a vezetőség 31% körülit jelzett).',
+      'Az új gyár kihasználtsága és a nagy ügyfelek beruházási tervei.',
+      'Új megrendelések a két legnagyobb ügyfélen kívülről.',
+    ],
+    'askT': 'Kérdés az elemzésről',
+    'q': 'Miért nyomja a marzsot az új gyár, ha több robotot adnak el?',
+    'a': 'A felfutás alatt a gyár fix költségei (bér, amortizáció, energia) már futnak, de a kibocsátás még alacsony: egy robotra több fix költség jut, így a bruttó marzs átmenetileg csökken. Ahogy a kihasználtság nő, ez megfordul – ezért a kulcskérdés a felfutás üteme.',
+    'generated': 'Minta – nem valós cég és nem aktuális elemzés. Az appban minden elemzés dátumozott, forrásokkal.',
+    'cta': 'Készítsd el a sajátodat: töltsd le a WhatStockot – a próbaidőben 3 elemzés ingyen, bankkártya nélkül.',
+  },
+  'en': {
+    'title': 'Sample AI analysis – what a WhatStock analysis looks like',
+    'desc': 'An illustrative WhatStock AI stock analysis: the gist, mood, three scenarios, key levels, risks and a follow-up question – shown on a fictional company.',
+    'h1': 'What a WhatStock AI analysis looks like',
+    'intro': 'The analysis below is an illustration about a fictional company: it shows the structure. In the app, the analysis is built from the chosen stock’s real price, metrics, news and earnings, with sources, in your language.',
+    'fictional': 'Sample · fictional company, not real data',
+    'company': 'Northwind Robotics',
+    'symbol': 'NWRB',
+    'price': '48.20 USD',
+    'headline': 'Strong demand for warehouse robots, but the ramp-up of the new plant weighs on margins – the next two quarters are about execution.',
+    'mood': 'Mood',
+    'moodLabel': 'Cautiously optimistic',
+    'scenarios': 'Scenarios for 6–12 months',
+    'likely': 'most likely',
+    'bull': 'Bull',
+    'bullP': '30',
+    'bullRange': '58–64 USD · the new plant reaches profitable utilisation ahead of plan, a new major customer signs',
+    'base': 'Base',
+    'baseP': '50',
+    'baseRange': '46–54 USD · orders arrive as expected, margins improve by year-end',
+    'bear': 'Bear',
+    'bearP': '20',
+    'bearRange': '34–40 USD · the ramp-up slips, the largest customer cuts investment',
+    'levels': 'Key levels',
+    'support': 'Support',
+    'supportV': '42.50 USD · the spring low and the 200-day average',
+    'resist': 'Resistance',
+    'resistV': '52.80 USD · the post-earnings high',
+    's1t': 'What moves the price',
+    's1': [
+      'The warehouse-automation market grows 15–20% a year; the order book doubled in twelve months.',
+      'The two largest customers bring 45% of revenue – a strength and a risk at once.',
+      'The new plant ramps up until early 2027; until then gross margin stays 3–4 points below its earlier level.',
+    ],
+    's2t': 'Risks',
+    's2': [
+      'Customer concentration: one postponed investment can take 10% of a quarter’s revenue.',
+      'Competition: two larger players have launched cheaper models.',
+      'If the ramp-up slips, cash could get tight by mid-2027 – a capital raise is possible.',
+    ],
+    's3t': 'Valuation',
+    's3': [
+      'Forward P/E of 28 – above the sector average of 24; growth can justify it, a margin setback cannot.',
+      'Free cash flow is negative this year because of the ramp-up; management expects positive in 2027.',
+    ],
+    's4t': 'What to watch',
+    's4': [
+      'The direction of gross margin in the next earnings report (management guided around 31%).',
+      'Utilisation of the new plant and the investment plans of the big customers.',
+      'New orders beyond the two largest customers.',
+    ],
+    'askT': 'A question about the analysis',
+    'q': 'Why does the new plant hurt margins if more robots are being sold?',
+    'a': 'During the ramp-up the plant’s fixed costs (wages, depreciation, energy) are already running while output is still low: each robot carries more fixed cost, so gross margin dips for a while. As utilisation rises this reverses – which is why the pace of the ramp-up is the key question.',
+    'generated': 'Sample – not a real company and not a current analysis. In the app every analysis is dated and comes with sources.',
+    'cta': 'Make your own: download WhatStock – 3 analyses free in the trial, no card needed.',
+  },
+};
+
+/// A minta-elemzés oldala: a share-oldal elemeivel (lényeg, hangulat,
+/// forgatókönyvek sávokkal), kulcsszintekkel, szekciókkal és egy kérdés-válasszal.
+String samplePage({required String lang, required String downloadBase, String? publicUrl}) {
+  final t = _sample[lang] ?? _sample['en']!;
+  String s(String k) => '${t[k]}';
+  List<String> list(String k) => (t[k] as List).cast<String>();
+  const h2 = '<h2 style="font-size:18px;margin:22px 0 6px">';
+  final b = StringBuffer(
+    _head(
+      lang: lang,
+      title: s('title'),
+      description: s('desc'),
+      url: publicUrl == null ? null : '$publicUrl/sample?lang=$lang',
+    ),
+  );
+  b
+    ..write('<div class="hero"><h1>${_esc(s('h1'))}</h1><p>${_esc(s('intro'))}</p></div>')
+    ..write('<div class="card"><span class="chip">${_esc(s('fictional'))}</span>')
+    ..write('<h1 style="margin-top:12px">${_esc(s('company'))}</h1>')
+    ..write(
+      '<div class="row"><span class="sym">${_esc(s('symbol'))}</span><span class="sym">${_esc(s('price'))}</span></div>',
+    )
+    ..write('<div class="headline">${_esc(s('headline'))}</div>')
+    ..write(
+      '<div class="row"><span class="muted">${_esc(s('mood'))}</span><span class="chip">${_esc(s('moodLabel'))}</span></div>',
+    )
+    ..write('$h2${_esc(s('scenarios'))}</h2>');
+  for (final k in const ['bull', 'base', 'bear']) {
+    b
+      ..write('<div class="sc $k"><div class="row"><span><b>${_esc(s(k))}</b>')
+      ..write(k == 'base' ? '<span class="likely">${_esc(s('likely'))}</span>' : '')
+      ..write('</span><span>${_esc(s('${k}P'))}%</span></div>')
+      ..write('<div class="bar"><span style="width:${_attr(s('${k}P'))}%"></span></div>')
+      ..write('<div class="small muted">${_esc(s('${k}Range'))}</div></div>');
+  }
+  b
+    ..write('$h2${_esc(s('levels'))}</h2>')
+    ..write(
+      '<div class="row"><span class="muted">${_esc(s('support'))}</span><span>${_esc(s('supportV'))}</span></div>',
+    )
+    ..write('<div class="row"><span class="muted">${_esc(s('resist'))}</span><span>${_esc(s('resistV'))}</span></div>');
+  for (final i in const [1, 2, 3, 4]) {
+    b.write('$h2${_esc(s('s${i}t'))}</h2><ul>${[for (final x in list('s$i')) '<li>${_esc(x)}</li>'].join()}</ul>');
+  }
+  b
+    ..write('$h2${_esc(s('askT'))}</h2><p><b>${_esc(s('q'))}</b></p><p class="muted">${_esc(s('a'))}</p>')
+    ..write('<p class="small muted" style="margin-top:18px">${_esc(s('generated'))}</p></div>')
+    ..write('<div class="cta"><p>${_esc(s('cta'))}</p>${_downloadButtons(lang, downloadBase)}</div>')
+    ..write(_footer(lang));
+  return b.toString();
 }

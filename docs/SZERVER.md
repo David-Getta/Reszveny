@@ -113,6 +113,9 @@ is bele kell írni (lásd a jogi dokumentumot).
   a keretek és az extra elemzések. Az árak a szerver `PlanSpec.usd`-jéből jönnek; egy teszt ellenőrzi,
   hogy egyeznek az app áraival (`lib/features/billing/pricing.dart`). A keresőknek `/robots.txt` és
   `/sitemap.xml` is van.
+- Minta-elemzés: `https://<cím>/sample` (`?lang=hu` vagy `en`) – egy illusztratív elemzés kitalált cégen
+  (lényeg, hangulat, forgatókönyvek, kulcsszintek, szekciók, kérdés-válasz), a nyitóoldalról és a láblécből
+  linkelve, a sitemapben; piaci adatot nem kér.
 - Népszerű részvények: `https://<cím>/stocks` és `/stocks/<ticker>` (pl. `/stocks/AAPL?lang=hu`) – 40
   ismert részvény árfolyama, piaci értéke és alapadatai a Finnhubból (a szerver kulcsával, részvényenként
   óránként legfeljebb egy lekérés), letöltés-gombokkal. Más tickerre 404, így nem nyílt Finnhub-proxy.
