@@ -135,7 +135,13 @@ class CsvImport {
 
 /// Saját export `split` sora: az új darab a darabszám, a régi az ár oszlopában, dátummal.
 ImportedSplit? _split(String symbol, String to, String from, String date) {
-  final t = int.tryParse(to.trim()), f = int.tryParse(from.trim());
+  // Táblázatkezelőből „10.00” is lehet: szám, ha egész értékű.
+  int? whole(String s) {
+    final v = parseDecimal(s.replaceAll(RegExp(r'[^0-9,.\-]'), ''));
+    return v != null && v == v.roundToDouble() ? v.round() : null;
+  }
+
+  final t = whole(to), f = whole(from);
   final d = _date(date);
   if (!_symbol.hasMatch(symbol) || t == null || f == null || t < 1 || f < 1 || t == f || d == null) return null;
   return ImportedSplit(symbol: symbol, from: f, to: t, date: d);

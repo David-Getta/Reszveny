@@ -139,16 +139,18 @@ class SplitRecord {
     );
   }
 
-  /// A felaprózás előtti (a napján már nem) tranzakció igazítása; a dátum
-  /// nélküli vétel a legelejéről való, az ilyen eladás a legvégéről.
+  /// A felaprózás előtti (a napján már nem) tranzakció igazítása. A dátum
+  /// nélküli tétel változatlan: az a mai állapotot írja le (pl. a bróker
+  /// képernyőképéből importált, már felaprózott darabszám).
   PortfolioLot apply(PortfolioLot l) {
-    final at = l.date ?? (l.sell ? DateTime(9999) : DateTime(0));
-    if (l.symbol != symbol || !at.isBefore(DateTime(date.year, date.month, date.day))) return l;
+    final at = l.date;
+    if (l.symbol != symbol || at == null || !at.isBefore(DateTime(date.year, date.month, date.day))) return l;
     return PortfolioLot(
       id: l.id,
       symbol: l.symbol,
-      quantity: l.quantity * factor,
-      price: l.price / factor,
+      // Egész számokkal, hogy az összevonás (1:10) se hagyjon lebegőpontos maradékot.
+      quantity: l.quantity * to / from,
+      price: l.price * from / to,
       currency: l.currency,
       date: l.date,
       sell: l.sell,
@@ -326,7 +328,17 @@ class PortfolioStore extends ChangeNotifier {
 
   /// A tranzakciók a felaprózásokkal igazítva (a tárolt tétel változatlan, az
   /// azonosító ugyanaz): ebből számol a pozíció, az értékalakulás és a lap.
-  List<PortfolioLot> get adjustedLots => [for (final l in _lots) _splits.fold(l, (lot, s) => s.apply(lot))];
+  /// Gyorsítótárazva, mert a pozíciókat sok helyen kérik; minden módosítás
+  /// [notifyListeners]-en át érvényteleníti.
+  List<PortfolioLot> get adjustedLots =>
+      _adjusted ??= List.unmodifiable([for (final l in _lots) _splits.fold(l, (lot, s) => s.apply(lot))]);
+  List<PortfolioLot>? _adjusted;
+
+  @override
+  void notifyListeners() {
+    _adjusted = null;
+    super.notifyListeners();
+  }
 
   /// A még birtokolt részvények tickerei.
   Set<String> get heldSymbols => {for (final p in positions) p.symbol};
@@ -492,6 +504,7 @@ class PortfolioStore extends ChangeNotifier {
   Future<void> clear() async {
     _lots.clear();
     _dividends.clear();
+    _splits.clear();
     _cash.clear();
     notifyListeners();
     await _save();

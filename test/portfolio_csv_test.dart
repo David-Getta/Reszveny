@@ -150,9 +150,12 @@ void main() {
     expect(backSplit.splits.single.symbol, 'NVDA');
     expect((backSplit.splits.single.to, backSplit.splits.single.from), (10, 1));
     expect(backSplit.splits.single.date, DateTime(2024, 6, 10));
-    final plainSplit = parsePortfolioCsv('NVDA;10;1;;2024-06-10;split\nNVDA;0;1;;2024-06-10;split');
+    // Táblázatkezelőből visszamentve („10.00”) is megy; a nulla és a tört arány kimarad.
+    final plainSplit = parsePortfolioCsv(
+      'NVDA;10.00;1,00;;2024-06-10;split\nNVDA;0;1;;2024-06-10;split\nNVDA;2.5;1;;2024-06-10;split',
+    );
     expect(plainSplit.splits, hasLength(1));
-    expect(plainSplit.skipped, 1, reason: 'a nulla arány kimarad');
+    expect(plainSplit.skipped, 2, reason: 'a nulla és a tört arány kimarad');
     // Fejléc nélkül is: a hatodik oszlop „dividend”, az összeg az ár helyén.
     final plain = parsePortfolioCsv('AAPL;;0,75;USD;2026-02-13;dividend\nMSFT;2;400;USD;2026-01-05');
     expect(plain.dividends.single.amount, 0.75);

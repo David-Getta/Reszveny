@@ -794,9 +794,10 @@ class _FavoriteButton extends StatelessWidget {
 
 /// A grafikon kiemelt szintjei: a saját átlagár (ha van pozíció ugyanebben a
 /// devizában) és az aktív „fölé megy” / „alá esik” / követő stop riasztások szintje.
-/// A saját (dátummal rögzített) vételek és eladások a grafikonon.
+/// A saját (dátummal rögzített) vételek és eladások a grafikonon – a
+/// felaprózásokkal igazítva, mint az árfolyam-idősor.
 List<ChartMarker> chartMarkers(BuildContext context, String symbol) => [
-  for (final l in AppServices.of(context).portfolio.lots)
+  for (final l in AppServices.of(context).portfolio.adjustedLots)
     if (l.symbol.toUpperCase() == symbol.toUpperCase() && l.date != null)
       ChartMarker(date: l.date!, sell: l.sell, quantity: l.quantity),
 ];

@@ -81,12 +81,21 @@ void main() {
       expect(store.positionOf('XYZ')!.quantity, 30);
       expect(store.positionOf('XYZ')!.averageCost, closeTo(200 / 30, 1e-9));
       expect(store.positionOf('NVDA')!.quantity, 65);
-      // Dátum nélküli vétel a legelejéről való (igazítódik), dátum nélküli eladás a végéről (nem).
-      await store.add(symbol: 'ABC', quantity: 1, price: 100, currency: 'USD');
+      // Dátum nélküli tétel (pl. képernyőképből importált mai darabszám) nem igazítódik.
+      await store.add(symbol: 'ABC', quantity: 3, price: 100, currency: 'USD');
       await store.add(symbol: 'ABC', quantity: 1, price: 30, currency: 'USD', sell: true);
       await store.addSplit(symbol: 'ABC', from: 1, to: 2, date: DateTime(2023, 1, 1));
-      expect(store.positionOf('ABC')!.quantity, 1);
-      expect(store.positionOf('ABC')!.realizedGain, closeTo(1 * (30 - 50), 1e-9));
+      expect(store.positionOf('ABC')!.quantity, 2);
+      expect(store.positionOf('ABC')!.realizedGain, closeTo(30 - 100, 1e-9));
+      // Összevonásnál sincs lebegőpontos maradék (30 × 1/10 pontosan 3).
+      await store.add(symbol: 'DEF', quantity: 30, price: 3, currency: 'USD', date: DateTime(2020, 1, 1));
+      await store.addSplit(symbol: 'DEF', from: 10, to: 1, date: DateTime(2021, 1, 1));
+      expect(store.positionOf('DEF')!.quantity, 3);
+      expect(store.positionOf('DEF')!.averageCost, 30);
+      // A gyorsítótár minden módosításnál frissül.
+      final before = store.adjustedLots;
+      await store.add(symbol: 'DEF', quantity: 1, price: 1, currency: 'USD');
+      expect(store.adjustedLots.length, before.length + 1);
 
       // Törlés és visszaállítás; a tároló újratöltve ugyanazt adja.
       final s = store.splitsOf('NVDA').single;
@@ -95,8 +104,12 @@ void main() {
       await store.restoreSplit(s);
       expect(store.positionOf('NVDA')!.quantity, 65);
       final again = await PortfolioStore.load();
-      expect(again.splits.map((x) => x.label), ['1:10', '3:1', '2:1', '10:1']);
+      expect(again.splits.map((x) => x.label), ['1:10', '1:10', '3:1', '2:1', '10:1']);
       expect(again.positionOf('NVDA')!.quantity, 65);
+      // A teljes törlés a felaprózásokat is viszi (a tárolóból is).
+      await again.clear();
+      expect(again.splits, isEmpty);
+      expect((await PortfolioStore.load()).splits, isEmpty);
       // Hibás rekordok kimaradnak (nulla, egyenlő arány, dátum nélkül).
       expect(SplitRecord.fromJson({'symbol': 'A', 'from': 0, 'to': 2, 'date': '2024-01-01'}), isNull);
       expect(SplitRecord.fromJson({'symbol': 'A', 'from': 2, 'to': 2, 'date': '2024-01-01'}), isNull);

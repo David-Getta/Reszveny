@@ -51,7 +51,8 @@ class _PortfolioSnapshotBuilderState extends State<PortfolioSnapshotBuilder> {
       builder: (context, _) {
         final positions = services.portfolio.positions;
         final currency = PortfolioSnapshot.totalCurrency(positions, services.displayCurrency(locale));
-        final key = '$currency|${services.portfolio.lots.map((l) => l.id).join(',')}|${services.portfolio.cash}';
+        final key =
+            '$currency|${services.portfolio.lots.map((l) => l.id).join(',')}|${services.portfolio.splits.map((s) => s.id).join(',')}|${services.portfolio.cash}';
         if (key != _key) {
           _key = key;
           _future = PortfolioSnapshot.load(
