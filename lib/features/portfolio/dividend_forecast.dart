@@ -107,13 +107,19 @@ String approxMoney(Fmt fmt, double amount, String currency) => '~ ${fmt.money(am
 
 /// A legutóbbi kifizetések közti távolságok mediánja napokban (legfeljebb a
 /// [recentGaps] utolsó távolság): egy régi, ritkás előzmény ne torzítsa a mai
-/// ritmust. Legalább két nap kell.
+/// ritmust; döntetlennél a legutóbbi távolsághoz közelebbi. Legalább két nap kell.
 int medianRecentGap(List<DateTime> paidOn, {int recentGaps = 4}) {
   final gaps = [for (var i = 1; i < paidOn.length; i++) paidOn[i].difference(paidOn[i - 1]).inDays];
   final recent = gaps.length > recentGaps ? gaps.sublist(gaps.length - recentGaps) : gaps;
-  // Alsó medián: páros számú távolságnál a kisebb (az újabb, sűrűbb ritmus) nyer.
+  // Páros számú távolságnál a két középső közül a legutóbbi távolsághoz közelebbi
+  // nyer: ritmusváltásnál (bármelyik irányban) az újabb ritmus.
   final sorted = [...recent]..sort();
-  return sorted[(sorted.length - 1) ~/ 2];
+  if (sorted.length.isEven) {
+    final lower = sorted[sorted.length ~/ 2 - 1], upper = sorted[sorted.length ~/ 2];
+    final last = recent.last;
+    return (last - lower).abs() <= (last - upper).abs() ? lower : upper;
+  }
+  return sorted[sorted.length ~/ 2];
 }
 
 /// A kifizetések közti medián távolságból a ritmus napokban (30 / 91 / 182 / 365);

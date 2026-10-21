@@ -1,7 +1,7 @@
 name: reszveny
 description: "WhatStock – photograph a stock and learn everything about it. iOS, iPadOS, macOS, Android, Windows."
 publish_to: 'none'
-version: 0.2.166+169
+version: 0.2.167+170
 
 environment:
   sdk: ^3.13.5
@@ -66,13 +66,13 @@ flutter_launcher_icons:
 # Microsoft Store csomag (MSIX): `dart run msix:create --store` a Windows build után.
 # Az identity_name és a publisher a Partner Centerből jön (tulajdonosi adat); addig a
 # helyi próbacsomaghoz a `dart run msix:create` saját tesztaláírást készít. A csomag
-# verziója a `version:` mezőből jön; a nyelvek az app 120 nyelve.
+# verziója a `version:` mezőből jön; a nyelvek az app nyelvei közül a Microsoft Store által támogatottak.
 msix_config:
   display_name: WhatStock
   publisher_display_name: WhatStock
   identity_name: WhatStock.WhatStock
   logo_path: assets/branding/app_icon.png
   capabilities: internetClient
-  languages: af, ak, am, ar, as, az, be, bg, bho, bm, bn, bo, bs, ca, ceb, ckb, cs, da, de, ee, el, en, es, fa, ff, fi, fil, fr, gl, gn, gu, ha, he, hi, hil, hr, ht, hu, hy, id, ig, ilo, it, ja, jv, ka, kab, kg, ki, kk, km, kn, ko, ku, ky, lg, ln, lo, lt, lua, lv, mai, mg, mk, ml, mn, mos, mr, ms, my, nb, ne, nl, nso, ny, om, or, pa, pcm, pl, ps, pt, qu, rn, ro, ru, rw, sd, si, sk, sl, sn, so, sq, sr, st, su, sv, sw, ta, te, tg, th, ti, tk, tn, tr, ts, tt, ug, uk, ur, uz, vi, wo, xh, yo, zh, zh-Hant-HK, zu
+  languages: af, am, ar, as, az, be, bg, bn, bs, ca, ckb, cs, da, de, el, en, fa, fi, fil, fr, gl, gu, ha, he, hi, hr, hu, hy, id, ig, it, ja, ka, kk, km, kn, ko, ky, lo, lt, lv, mk, ml, mn, mr, ms, nb, ne, nl, nso, or, pa, pl, pt, qu, ro, ru, rw, sd, si, sk, sl, sq, sr, sv, sw, ta, te, tg, th, ti, tk, tn, tr, tt, ug, uk, ur, uz, vi, wo, xh, yo, zh, zh-Hant, zu
   store: true
 

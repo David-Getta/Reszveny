@@ -267,6 +267,18 @@ void main() {
       ],
     }, now: now);
     expect(switched.map((d) => d.date), [DateTime.utc(2026, 10, 29)]);
+    // Negyedéves → féléves váltás: a legutóbbi (182 napos) ritmus nyer, a következő fél év múlva.
+    final slowed = DigestSender.expectedDividendsOf({
+      'lots': data['lots'],
+      'dividends': [
+        {'symbol': 'KO', 'amount': 1, 'currency': 'USD', 'date': '2025-01-30'},
+        {'symbol': 'KO', 'amount': 1, 'currency': 'USD', 'date': '2025-04-30'},
+        {'symbol': 'KO', 'amount': 1, 'currency': 'USD', 'date': '2025-07-30'},
+        {'symbol': 'KO', 'amount': 2, 'currency': 'USD', 'date': '2026-01-28'},
+        {'symbol': 'KO', 'amount': 2, 'currency': 'USD', 'date': '2026-07-29'},
+      ],
+    }, now: DateTime.utc(2027, 1, 20));
+    expect(slowed.map((d) => d.date), [DateTime.utc(2027, 1, 27)]);
     // Egy tételből nincs ritmus; a két héten túli nem látszik.
     expect(
       DigestSender.expectedDividendsOf({

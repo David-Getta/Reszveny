@@ -174,9 +174,7 @@ class DigestSender {
       if (paidOn.length < 2) continue;
       // A legutóbbi legfeljebb négy távolság mediánja: a régi, ritkás előzmény ne torzítson.
       final gaps = [for (var i = 1; i < paidOn.length; i++) paidOn[i].difference(paidOn[i - 1]).inDays];
-      // Alsó medián: páros számú távolságnál a kisebb (az újabb, sűrűbb ritmus) nyer.
-      final recent = (gaps.length > 4 ? gaps.sublist(gaps.length - 4) : gaps)..sort();
-      final period = _periodDays(recent[(recent.length - 1) ~/ 2]);
+      final period = _periodDays(_medianRecentGap(gaps.length > 4 ? gaps.sublist(gaps.length - 4) : gaps));
       if (period == null) continue;
       final next = paidOn.last.add(Duration(days: period));
       if (next.isBefore(today) || next.isAfter(until)) continue;
@@ -188,6 +186,18 @@ class DigestSender {
       final bySymbol = a.symbol.compareTo(b.symbol);
       return bySymbol != 0 ? bySymbol : a.currency.compareTo(b.currency);
     });
+  }
+
+  /// A távolságok mediánja; páros számnál a két középső közül a legutóbbihoz
+  /// közelebbi (ritmusváltásnál az újabb ritmus nyer) – mint az appban.
+  static int _medianRecentGap(List<int> recent) {
+    final sorted = [...recent]..sort();
+    if (sorted.length.isEven) {
+      final lower = sorted[sorted.length ~/ 2 - 1], upper = sorted[sorted.length ~/ 2];
+      final last = recent.last;
+      return (last - lower).abs() <= (last - upper).abs() ? lower : upper;
+    }
+    return sorted[sorted.length ~/ 2];
   }
 
   /// A kifizetések közti medián távolságból a ritmus napokban (30 / 91 / 182 / 365).

@@ -3,6 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:reszveny/app.dart';
 import 'package:reszveny/core/share/share_text.dart';
+import 'package:reszveny/core/util/formatters.dart';
 import 'package:reszveny/features/portfolio/dividend_forecast.dart';
 import 'package:reszveny/features/portfolio/portfolio_store.dart';
 
@@ -232,7 +233,18 @@ void main() {
       expect(
         medianRecentGap([DateTime(2026, 1, 1), DateTime(2026, 2, 1), DateTime(2026, 3, 1)]),
         28,
-        reason: 'alsó medián',
+        reason: 'az utolsó (28 napos) távolsághoz közelebbi',
+      );
+      // Negyedéves → féléves váltás: a két középső közül a legutóbbi (182) nyer.
+      expect(
+        medianRecentGap([
+          DateTime(2025, 1, 30),
+          DateTime(2025, 4, 30),
+          DateTime(2025, 7, 30),
+          DateTime(2026, 1, 28),
+          DateTime(2026, 7, 29),
+        ]),
+        182,
       );
       // Féléves → negyedéves váltás: két-két távolságnál az újabb (kisebb) nyer.
       expect(
@@ -341,6 +353,11 @@ void main() {
     expect(find.text('Add dividend'), findsOneWidget);
     expect(tester.widget<TextField>(find.byKey(const ValueKey('dividend-amount'))).controller!.text, '2.60');
     expect(tester.widget<TextField>(find.byKey(const ValueKey('dividend-symbol'))).controller!.text, 'AAPL');
+    // A várható nap a jövőben van: a párbeszéd a mai napot kínálja (kapott osztalékot rögzítünk).
+    expect(
+      find.descendant(of: find.byType(AlertDialog), matching: find.text(Fmt('en').date(DateTime.now()))),
+      findsOneWidget,
+    );
     await tester.tap(find.text('Cancel'));
     await tester.pumpAndSettle();
     await s.portfolio.removeDividend(s.portfolio.dividends.firstWhere((d) => d.amount == 2.6).id);

@@ -276,10 +276,10 @@ class DividendsCard extends StatelessWidget {
   }
 }
 
-/// Kapott osztalék kézi felvétele: ticker, összeg, pénznem és a kifizetés napja.
-/// `true`-val tér vissza, ha bekerült.
-/// Osztalék felvétele; [amount] és [date] a várható kifizetésből előre kitöltve
-/// (akkor a megadott pénznem az irányadó, nem a pozícióé).
+/// Kapott osztalék kézi felvétele: ticker, összeg, pénznem és a kifizetés napja;
+/// `true`-val tér vissza, ha bekerült. [amount] és [date] a várható kifizetésből
+/// előre kitölthető (akkor a megadott pénznem az irányadó, nem a pozícióé; a
+/// jövőbeli várható nap helyett a mai kerül be – kapott osztalékot rögzítünk).
 Future<bool> showAddDividendDialog(
   BuildContext context, {
   String? symbol,
@@ -315,7 +315,10 @@ class _AddDividendDialogState extends State<_AddDividendDialog> {
   late final _symbol = TextEditingController(text: widget.symbol ?? '');
   late final _amount = TextEditingController(text: widget.amount == null ? '' : widget.amount!.toStringAsFixed(2));
   late final _currency = TextEditingController(text: widget.currency);
-  late DateTime _date = widget.date ?? DateTime.now();
+  late DateTime _date = switch (widget.date) {
+    final d? when !d.isAfter(DateTime.now()) => d,
+    _ => DateTime.now(),
+  };
   bool _symbolError = false;
   String? _amountError;
   bool _currencyError = false;

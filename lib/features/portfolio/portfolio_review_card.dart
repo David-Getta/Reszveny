@@ -52,10 +52,12 @@ class _PortfolioReviewCardState extends State<PortfolioReviewCard> {
         widget.snapshot,
         language: language,
         dividendsReceived: await _dividendsReceived(services),
+        // Csak a még nem esedékes kifizetések (a türelmi időben lévő, lejárt nem „várható”).
         expectedDividends: expectedDividends(
           services.portfolio.dividends,
           services.portfolio.heldSymbols,
           now: DateTime.now(),
+          grace: Duration.zero,
         ),
       );
       if (mounted) setState(() => _report = r);

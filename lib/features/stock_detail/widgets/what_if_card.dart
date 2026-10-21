@@ -9,7 +9,8 @@ import '../../portfolio/add_lot_dialog.dart';
 import 'section_card.dart';
 
 /// „Mi lett volna, ha…”: mennyit érne ma egy 1, 3 vagy 5 éve befektetett összeg
-/// (csak az árfolyam alapján, osztalék és költségek nélkül). Csak a meglévő
+/// (csak az árfolyam alapján, osztalék és költségek nélkül); alatta külön a mai
+/// osztalékhozammal számolt évi osztalék a mai értékre. Csak a meglévő
 /// árfolyam-történet időtávjai választhatók.
 class WhatIfCard extends StatefulWidget {
   const WhatIfCard({super.key, required this.history, required this.currency, required this.fmt, this.dividendYield});
@@ -107,16 +108,18 @@ class _WhatIfCardState extends State<WhatIfCard> {
               '${fmt.percent(gain! / amount! * 100, withSign: true)}',
               style: theme.textTheme.bodyMedium?.copyWith(color: gainColor(p, gain)),
             ),
-            // A mai osztalékhozammal ennyi évi osztalékot fizetne a mai érték.
-            if (widget.dividendYield case final y? when y > 0)
-              Text(
-                l10n.positionDividend(fmt.money(value * y / 100, widget.currency)),
-                key: const ValueKey('what-if-dividend'),
-                style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
-              ),
             const SizedBox(height: 8),
           ],
           Text(l10n.whatIfNote, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+          // Külön, a megjegyzés után: a mai osztalékhozammal ennyi évi osztalékot fizetne a mai érték
+          // (becslés, nem része a fenti értéknek).
+          if (value case final v?)
+            if (widget.dividendYield case final y? when y > 0)
+              Text(
+                l10n.positionDividend(fmt.money(v * y / 100, widget.currency)),
+                key: const ValueKey('what-if-dividend'),
+                style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+              ),
         ],
       ),
     );

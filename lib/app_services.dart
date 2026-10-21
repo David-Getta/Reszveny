@@ -558,15 +558,18 @@ class AppServices {
     );
   }
 
-  /// Az elmúlt 12 hónapban a részvényből kapott osztalék a megadott pénznemben; `null`, ha nincs.
+  /// Az elmúlt 12 hónapban a részvényből kapott osztalék a megadott pénznemben;
+  /// a más pénznemű tételek a már ismert (gyorsítótárazott) árfolyammal; `null`, ha nincs.
   double? _dividendsReceived12m(String symbol, String currency) {
     final now = DateTime.now();
     final from = DateTime(now.year - 1, now.month, now.day);
     var sum = 0.0;
     for (final d in portfolio.dividendsOf(symbol)) {
       final date = d.date;
-      if (d.currency != currency || date == null || date.isBefore(from) || date.isAfter(now)) continue;
-      sum += d.amount;
+      if (date == null || date.isBefore(from) || date.isAfter(now)) continue;
+      final rate = d.currency == currency ? 1.0 : fx.cachedRate(d.currency, currency)?.rate;
+      if (rate == null) continue;
+      sum += d.amount * rate;
     }
     return sum > 0 ? sum : null;
   }
