@@ -11,6 +11,12 @@ import 'package:reszveny/features/home/markets_strip.dart';
 import 'app_widget_test.dart' show services;
 
 void main() {
+  test('a market-wide "why is it moving" is offered from 1.5% either way', () {
+    expect(MarketsStrip.showsWhy(1.5), isTrue);
+    expect(MarketsStrip.showsWhy(-2.1), isTrue);
+    expect(MarketsStrip.showsWhy(0.77), isFalse);
+  });
+
   setUp(() => SharedPreferences.setMockInitialValues({}));
 
   test('the pair shown: the dollar in the display currency, or EUR/USD', () {

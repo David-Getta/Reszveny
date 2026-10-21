@@ -9,11 +9,17 @@ import '../../core/util/formatters.dart';
 import '../../core/util/us_market_hours.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../fx/fx_service.dart';
+import '../stock_detail/widgets/move_why_button.dart';
 import '../../theme/app_theme.dart';
 
 /// „Piacok ma”: a nagy amerikai indexek napi változása az őket követő ETF-ek
 /// árfolyamából, hogy egy részvény mozgása összevethető legyen a piacéval.
 class MarketsStrip extends StatefulWidget {
+  /// Ekkora napi indexmozgástól kínáljuk fel a „Miért mozog ma?” magyarázatot
+  /// (az index egy nap alatt ritkán mozog annyit, mint egy részvény).
+  static const minMarketMovePercent = 1.5;
+  static bool showsWhy(double pct) => pct.abs() >= minMarketMovePercent;
+
   const MarketsStrip({super.key, required this.onOpenSymbol});
 
   final ValueChanged<StockCandidate> onOpenSymbol;
@@ -129,12 +135,41 @@ class _MarketsStripState extends State<MarketsStrip> {
                                     style: const TextStyle(fontWeight: FontWeight.w700, fontSize: 13),
                                   ),
                                   const SizedBox(height: 2),
-                                  Text(
-                                    fmt.percent(q.changePercent, withSign: true),
-                                    style: theme.textTheme.bodySmall?.copyWith(
-                                      color: (q.changePercent ?? 0) >= 0 ? p.positive : p.negative,
-                                      fontWeight: FontWeight.w600,
-                                    ),
+                                  Row(
+                                    children: [
+                                      // Keskeny telefonon, nagy betűvel kicsinyítve fér el.
+                                      Flexible(
+                                        child: FittedBox(
+                                          fit: BoxFit.scaleDown,
+                                          alignment: AlignmentDirectional.centerStart,
+                                          child: Text(
+                                            fmt.percent(q.changePercent, withSign: true),
+                                            style: theme.textTheme.bodySmall?.copyWith(
+                                              color: (q.changePercent ?? 0) >= 0 ? p.positive : p.negative,
+                                              fontWeight: FontWeight.w600,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                      // Nagy piaci mozgásnál: „Miért mozog ma?” az indexre.
+                                      if (q.changePercent case final pct? when MarketsStrip.showsWhy(pct)) ...[
+                                        const SizedBox(width: 4),
+                                        InkWell(
+                                          key: ValueKey('market-why-$symbol'),
+                                          borderRadius: BorderRadius.circular(8),
+                                          onTap: () => showMoveExplanation(
+                                            context,
+                                            symbol: symbol,
+                                            name: name,
+                                            changePercent: pct,
+                                          ),
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(2),
+                                            child: Icon(Icons.auto_awesome_outlined, size: 13, color: p.accent),
+                                          ),
+                                        ),
+                                      ],
+                                    ],
                                   ),
                                 ],
                               ),
