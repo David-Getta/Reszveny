@@ -125,13 +125,31 @@ void main() {
       ],
       const [],
       hu: false,
+      dividends: [(symbol: 'AAPL', amount: 2.5, currency: 'USD', date: DateTime.utc(2026, 10, 14))],
     );
     expect(subject, 'WhatStock weekly summary: AAPL −2.5%');
+    expect(text, contains('Dividends received this week:\n  AAPL – 2.50 USD (Oct 14)'));
     expect(text, contains('Portfolio\n  AAPL   231.45 USD   −2.5%'));
     expect(text, contains('Results due in the next two weeks:\n  AAPL – Oct 30'));
     expect(text, contains('Fresh quarterly results:\n  AAPL – EPS 1.15 (expected 1.12, +2.7%) – above expectations'));
     expect(text, isNot(contains('Favorites')));
     expect(text, contains('turn off the weekly summary in the app, in Settings'));
+  });
+
+  test('dividends of the past week from the synced package, in date order; older and broken rows skipped', () {
+    final now = DateTime.utc(2026, 10, 19, 7);
+    final ds = DigestSender.dividendsOf({
+      'dividends': [
+        {'symbol': 'msft', 'amount': 0.83, 'currency': 'USD', 'date': '2026-10-16'},
+        {'symbol': 'AAPL', 'amount': 2.5, 'currency': 'USD', 'date': '2026-10-14'},
+        {'symbol': 'OTP', 'amount': 24000, 'currency': 'HUF', 'date': '2026-10-01'},
+        {'symbol': 'NVDA', 'amount': 0, 'date': '2026-10-15'},
+        {'symbol': 'X', 'amount': 1},
+        'junk',
+      ],
+    }, now: now);
+    expect(ds.map((d) => (d.symbol, d.amount, d.currency)), [('AAPL', 2.5, 'USD'), ('MSFT', 0.83, 'USD')]);
+    expect(DigestSender.dividendsOf({}, now: now), isEmpty);
   });
 
   test('symbols: portfolio first, favorites without duplicates, at most 15', () {

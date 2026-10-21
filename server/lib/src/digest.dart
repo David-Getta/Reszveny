@@ -108,6 +108,24 @@ class DigestSender {
     return (portfolio: p, favorites: favorites.toSet().take(maxSymbols - p.length).toList(), currencies: currencies);
   }
 
+  /// A héten (az elmúlt [days] napban) kapott osztalékok a szinkronizált
+  /// csomagból, időrendben; a hibás vagy régebbi tételek kimaradnak.
+  static List<DigestDividend> dividendsOf(Map<String, dynamic> data, {required DateTime now, int days = 7}) {
+    final from = now.subtract(Duration(days: days));
+    final out = <DigestDividend>[
+      for (final d in (data['dividends'] as List? ?? const []))
+        if (d is Map && d['symbol'] is String && d['amount'] is num && (d['amount'] as num) > 0)
+          if (DateTime.tryParse('${d['date']}') case final date? when !date.isBefore(from) && !date.isAfter(now))
+            (
+              symbol: (d['symbol'] as String).toUpperCase(),
+              amount: (d['amount'] as num).toDouble(),
+              currency: d['currency'] is String ? d['currency'] as String : 'USD',
+              date: date,
+            ),
+    ]..sort((a, b) => a.date.compareTo(b.date));
+    return out;
+  }
+
   /// Egy kör: ha hétfő reggel van, a feliratkozott fiókoknak, akiknek az elmúlt
   /// hat és fél napban még nem ment, kiküldi az összefoglalót. Visszaadja, hány
   /// e-mail ment ki.
@@ -202,7 +220,12 @@ class DigestSender {
         final portfolio = lines(s.portfolio), favorites = lines(s.favorites);
         if (portfolio.isEmpty && favorites.isEmpty) continue;
         try {
-          final (subject, text) = digestEmail(portfolio, favorites, hu: acc.data['lang'] == 'hu');
+          final (subject, text) = digestEmail(
+            portfolio,
+            favorites,
+            hu: acc.data['lang'] == 'hu',
+            dividends: dividendsOf(acc.data, now: now),
+          );
           await mailer.send(acc.email, subject: subject, text: text);
           store.markDigest(acc.userId);
           sent++;
@@ -244,7 +267,12 @@ class DigestSender {
 
   /// Az e-mail tárgya és szövege (magyarul vagy angolul): a sorok a heti
   /// változás szerint csökkenőben, a tárgyban a hét legnagyobb mozgása.
-  static (String, String) digestEmail(List<DigestLine> portfolio, List<DigestLine> favorites, {required bool hu}) {
+  static (String, String) digestEmail(
+    List<DigestLine> portfolio,
+    List<DigestLine> favorites, {
+    required bool hu,
+    List<DigestDividend> dividends = const [],
+  }) {
     int byChange(DigestLine a, DigestLine b) => (b.weekChange ?? -1e9).compareTo(a.weekChange ?? -1e9);
     portfolio = [...portfolio]..sort(byChange);
     favorites = [...favorites]..sort(byChange);
@@ -287,6 +315,14 @@ class DigestSender {
       b.writeln(hu ? 'Gyorsjelentés a következő két hétben:' : 'Results due in the next two weeks:');
       for (final l in soon) {
         b.writeln('  ${l.symbol} – ${_date(l.earnings!, hu: hu)}');
+      }
+      b.writeln();
+    }
+    // A héten kapott osztalékok (az appban rögzített vagy importált tételek).
+    if (dividends.isNotEmpty) {
+      b.writeln(hu ? 'Kapott osztalékok a héten:' : 'Dividends received this week:');
+      for (final d in dividends) {
+        b.writeln('  ${d.symbol} – ${_n(d.amount)} ${d.currency} (${_date(d.date, hu: hu)})');
       }
       b.writeln();
     }
@@ -342,6 +378,9 @@ class DigestSender {
 }
 
 /// Egy részvény sora az összefoglalóban.
+/// Egy kapott osztalék a heti levélhez.
+typedef DigestDividend = ({String symbol, double amount, String currency, DateTime date});
+
 class DigestLine {
   const DigestLine(
     this.symbol,
