@@ -2749,4 +2749,22 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Ɲini daɲɛgafe kɔnɔ';
+
+  @override
+  String get portfolioCash => 'Wari gansan';
+
+  @override
+  String get portfolioCashTitle => 'Wari gansan hakɛ';
+
+  @override
+  String get portfolioCashHint =>
+      'Wari min ma don baara la i ka broker fɛ, wari suguya kelen-kelen na. A bɛ jate sɔngɔ bɛɛ lajɛlen ni tilacogo la; a tɛ jate tɔnɔ la.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Hakɛ ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Wari gansan hakɛ sigi';
 }

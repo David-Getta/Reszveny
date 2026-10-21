@@ -137,6 +137,7 @@ class SyncService extends ChangeNotifier {
     if (preferences.targets.isNotEmpty) 'targets': preferences.targets,
     'lots': [for (final l in portfolio.lots) l.toJson()],
     'dividends': [for (final d in portfolio.dividends) d.toJson()],
+    if (portfolio.cash.isNotEmpty) 'cash': portfolio.cash,
     'alerts': [for (final a in alerts.alerts) a.toJson()],
     'notes': {for (final e in notes.all.entries) e.key: e.value.toJson()},
   };
@@ -195,6 +196,8 @@ class SyncService extends ChangeNotifier {
       'targets': {...AppPreferences.parseTargets(remote['targets']), ...AppPreferences.parseTargets(local['targets'])},
       'lots': byId(local['lots'], remote['lots']),
       'dividends': byId(local['dividends'], remote['dividends']),
+      // Készpénz: pénznemenként a helyi nyer.
+      'cash': {...PortfolioStore.parseCashMap(remote['cash']), ...PortfolioStore.parseCashMap(local['cash'])},
       'alerts': alertsMerged,
       'notes': mergedNotes,
     };
@@ -244,6 +247,7 @@ class SyncService extends ChangeNotifier {
       await preferences.setWatchLists([for (final l in data['watch_lists'] as List) ?WatchList.fromJson(l)]);
     }
     if (data['targets'] is Map) await preferences.setTargets(AppPreferences.parseTargets(data['targets']));
+    if (data['cash'] is Map) await portfolio.replaceAllCash(PortfolioStore.parseCashMap(data['cash']));
     await preferences.setEmailAlerts(data['email_alerts'] != false);
     await preferences.setWeeklyDigest(data['weekly_digest'] == true);
     await portfolio.replaceAll([for (final j in maps(data['lots'])) ?PortfolioLot.fromJson(j)]);

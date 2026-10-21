@@ -730,5 +730,10 @@
   "signalAlertsNotification": "سیگناڵە تەکنیکییەکان",
   "glossaryPageTitle": "فەرهەنگۆک",
   "glossaryPageSubtitle": "ڕوونکردنەوەی سادەی هەر ژمارەیەک کە ئەپەکە پیشانی دەدات، لە P/E تا RSI",
-  "glossarySearchHint": "گەڕان لە فەرهەنگۆک"
+  "glossarySearchHint": "گەڕان لە فەرهەنگۆک",
+  "portfolioCash": "پارەی کاش",
+  "portfolioCashTitle": "باڵانسی کاش",
+  "portfolioCashHint": "پارەی وەبەرنەهێنراو لای بڕۆکەرەکەت، بەپێی دراو. لە کۆی بەها و دابەشبوون دەژمێردرێت؛ لە قازانج نا.",
+  "portfolioCashAmount": "بڕ ({currency})",
+  "portfolioCashEdit": "دانانی باڵانسی کاش"
 }

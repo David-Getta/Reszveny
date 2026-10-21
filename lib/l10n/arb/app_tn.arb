@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Matshwao a thekeniki",
   "glossaryPageTitle": "Lenaane la mafoko",
   "glossaryPageSubtitle": "Ditlhaloso tse di motlhofo tsa palo nngwe le nngwe e app e e bontshang, go tswa go P/E go ya go RSI",
-  "glossarySearchHint": "Batla mo lenaaneng la mafoko"
+  "glossarySearchHint": "Batla mo lenaaneng la mafoko",
+  "portfolioCash": "Madi",
+  "portfolioCashTitle": "Madi a a setseng",
+  "portfolioCashHint": "Madi a a sa beeletswang kwa go broker wa gago, ka mofuta wa madi. A balelwa mo bolengng jotlhe le mo kabong; e seng mo poelong.",
+  "portfolioCashAmount": "Palo ({currency})",
+  "portfolioCashEdit": "Baya madi a a setseng"
 }

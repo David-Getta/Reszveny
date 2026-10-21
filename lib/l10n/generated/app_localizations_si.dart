@@ -2749,4 +2749,22 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'පද මාලාවේ සොයන්න';
+
+  @override
+  String get portfolioCash => 'මුදල්';
+
+  @override
+  String get portfolioCashTitle => 'මුදල් ශේෂය';
+
+  @override
+  String get portfolioCashHint =>
+      'ඔබේ බ්‍රෝකර් ළඟ ඇති ආයෝජනය නොකළ මුදල්, මුදල් වර්ගය අනුව. මුළු වටිනාකමට හා බෙදීමට ගණන් ගනී; ප්‍රතිලාභයට නොගනී.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'මුදල ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'මුදල් ශේෂය සකසන්න';
 }

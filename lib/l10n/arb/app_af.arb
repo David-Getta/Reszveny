@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Tegniese seine",
   "glossaryPageTitle": "Woordelys",
   "glossaryPageSubtitle": "Eenvoudige verduidelikings van elke syfer wat die app toon, van P/E tot RSI",
-  "glossarySearchHint": "Deursoek die woordelys"
+  "glossarySearchHint": "Deursoek die woordelys",
+  "portfolioCash": "Kontant",
+  "portfolioCashTitle": "Kontantsaldo",
+  "portfolioCashHint": "Onbelegde geld by jou makelaar, per geldeenheid. Dit tel in die totale waarde en die toewysing; nie in die opbrengs nie.",
+  "portfolioCashAmount": "Bedrag ({currency})",
+  "portfolioCashEdit": "Stel kontantsaldo in"
 }

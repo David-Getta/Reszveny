@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Siyal teknik",
   "glossaryPageTitle": "Glosè",
   "glossaryPageSubtitle": "Eksplikasyon senp pou chak chif aplikasyon an montre, soti nan P/E rive nan RSI",
-  "glossarySearchHint": "Chèche nan glosè a"
+  "glossarySearchHint": "Chèche nan glosè a",
+  "portfolioCash": "Lajan kach",
+  "portfolioCashTitle": "Balans lajan kach",
+  "portfolioCashHint": "Lajan ki pa envesti kay koutye ou, pa deviz. Li konte nan valè total ak repatisyon an; pa nan rannman an.",
+  "portfolioCashAmount": "Montan ({currency})",
+  "portfolioCashEdit": "Fikse balans lajan kach"
 }

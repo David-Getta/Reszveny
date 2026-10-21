@@ -2770,4 +2770,22 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Pangitaa sa glosaryo';
+
+  @override
+  String get portfolioCash => 'Cash';
+
+  @override
+  String get portfolioCashTitle => 'Balanse sang cash';
+
+  @override
+  String get portfolioCashHint =>
+      'Kuwarta nga wala pa ma-invest sa imo broker, kada currency. Ginaisip ini sa kabilogan nga bili kag pagbahin; indi sa kita.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Kantidad ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'I-set ang balanse sang cash';
 }

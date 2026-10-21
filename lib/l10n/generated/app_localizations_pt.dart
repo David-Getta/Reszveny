@@ -2757,4 +2757,22 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Buscar no glossário';
+
+  @override
+  String get portfolioCash => 'Caixa';
+
+  @override
+  String get portfolioCashTitle => 'Saldo em caixa';
+
+  @override
+  String get portfolioCashHint =>
+      'Dinheiro não investido na sua corretora, por moeda. Conta no valor total e na distribuição; não na rentabilidade.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Valor ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Definir saldo em caixa';
 }

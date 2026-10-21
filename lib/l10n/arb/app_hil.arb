@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Mga teknikal nga signal",
   "glossaryPageTitle": "Glosaryo",
   "glossaryPageSubtitle": "Simple nga mga paathag sa kada numero nga ginapakita sang app, halin sa P/E tubtob RSI",
-  "glossarySearchHint": "Pangitaa sa glosaryo"
+  "glossarySearchHint": "Pangitaa sa glosaryo",
+  "portfolioCash": "Cash",
+  "portfolioCashTitle": "Balanse sang cash",
+  "portfolioCashHint": "Kuwarta nga wala pa ma-invest sa imo broker, kada currency. Ginaisip ini sa kabilogan nga bili kag pagbahin; indi sa kita.",
+  "portfolioCashAmount": "Kantidad ({currency})",
+  "portfolioCashEdit": "I-set ang balanse sang cash"
 }

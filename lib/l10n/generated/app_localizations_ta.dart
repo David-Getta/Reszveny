@@ -2762,4 +2762,22 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'சொற்களஞ்சியத்தில் தேடுங்கள்';
+
+  @override
+  String get portfolioCash => 'ரொக்கம்';
+
+  @override
+  String get portfolioCashTitle => 'ரொக்க இருப்பு';
+
+  @override
+  String get portfolioCashHint =>
+      'உங்கள் புரோக்கரிடம் முதலீடு செய்யப்படாத பணம், நாணயம் வாரியாக. இது மொத்த மதிப்பு மற்றும் பங்கீட்டில் கணக்கிடப்படும்; வருவாயில் இல்லை.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'தொகை ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'ரொக்க இருப்பை அமைக்கவும்';
 }

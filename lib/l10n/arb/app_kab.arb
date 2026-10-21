@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Izmulen itiknikanen",
   "glossaryPageTitle": "Amawal",
   "glossaryPageSubtitle": "Isegziyen ifessasen n yal uṭṭun i d-yeskanay usnas, seg P/E ɣer RSI",
-  "glossarySearchHint": "Nadi deg umawal"
+  "glossarySearchHint": "Nadi deg umawal",
+  "portfolioCash": "Idrimen n ufus",
+  "portfolioCashTitle": "Idrimen n ufus yellan",
+  "portfolioCashHint": "Idrimen ur yettwasersen ara ɣer broker-ik, s yal tadrimt. Ttwaḥesben deg wazal amatu d beṭṭu; mačči deg ufaris.",
+  "portfolioCashAmount": "Azal ({currency})",
+  "portfolioCashEdit": "Sbadu idrimen n ufus"
 }

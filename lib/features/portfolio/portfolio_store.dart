@@ -209,9 +209,13 @@ class Position {
 /// A portfólió: a tranzakciók és a kapott osztalékok listája, a készüléken
 /// tárolva (SharedPreferences); fiókkal szinkronizálva.
 class PortfolioStore extends ChangeNotifier {
-  PortfolioStore({List<PortfolioLot> lots = const [], List<DividendRecord> dividends = const []})
-    : _lots = List.of(lots),
-      _dividends = List.of(dividends)..sort(_newestFirst);
+  PortfolioStore({
+    List<PortfolioLot> lots = const [],
+    List<DividendRecord> dividends = const [],
+    Map<String, double> cash = const {},
+  }) : _lots = List.of(lots),
+       _dividends = List.of(dividends)..sort(_newestFirst),
+       _cash = Map.of(cash);
 
   /// Az újabb elöl (dátum nélküli a végén) – a lista mindig így van tartva.
   static int _newestFirst(DividendRecord a, DividendRecord b) =>
@@ -219,9 +223,14 @@ class PortfolioStore extends ChangeNotifier {
 
   static const _key = 'portfolio_lots';
   static const _dividendsKey = 'portfolio_dividends';
+  static const _cashKey = 'portfolio_cash';
 
   final List<PortfolioLot> _lots;
   final List<DividendRecord> _dividends;
+
+  /// Készpénz a brókernél, pénznemenként (a felhasználó adja meg).
+  final Map<String, double> _cash;
+  Map<String, double> get cash => Map.unmodifiable(_cash);
   List<PortfolioLot> get lots => List.unmodifiable(_lots);
   bool get isEmpty => _lots.isEmpty;
 
@@ -250,7 +259,14 @@ class PortfolioStore extends ChangeNotifier {
         }
       }
 
-      return PortfolioStore(lots: read(_key, parse), dividends: read(_dividendsKey, parseDividends));
+      Map<String, double> cash = const {};
+      try {
+        final raw = prefs.getString(_cashKey);
+        if (raw != null) cash = parseCashMap(jsonDecode(raw));
+      } catch (_) {
+        // Sérült készpénz-egyenleg: üres.
+      }
+      return PortfolioStore(lots: read(_key, parse), dividends: read(_dividendsKey, parseDividends), cash: cash);
     } catch (_) {
       return PortfolioStore();
     }
@@ -264,6 +280,14 @@ class PortfolioStore extends ChangeNotifier {
         if (e is Map) ?PortfolioLot.fromJson(e.cast<String, dynamic>()),
     ];
   }
+
+  /// Pénznem → összeg térkép beolvasása; a hibás vagy nem pozitív tételek kimaradnak.
+  static Map<String, double> parseCashMap(Object? v) => {
+    if (v is Map)
+      for (final e in v.entries)
+        if (e.value is num && (e.value as num) > 0 && RegExp(r'^[A-Za-z]{3}$').hasMatch('${e.key}'))
+          '${e.key}'.toUpperCase(): (e.value as num).toDouble(),
+  };
 
   static List<DividendRecord> parseDividends(String raw) {
     final v = jsonDecode(raw);
@@ -338,6 +362,7 @@ class PortfolioStore extends ChangeNotifier {
   Future<void> clear() async {
     _lots.clear();
     _dividends.clear();
+    _cash.clear();
     notifyListeners();
     await _save();
   }
@@ -380,6 +405,27 @@ class PortfolioStore extends ChangeNotifier {
     await _save();
   }
 
+  /// Készpénz egy pénznemben; nullával (vagy negatívval) törlődik.
+  Future<void> setCash(String currency, double amount) async {
+    final c = currency.trim().toUpperCase();
+    if (amount > 0) {
+      _cash[c] = amount;
+    } else {
+      _cash.remove(c);
+    }
+    notifyListeners();
+    await _save();
+  }
+
+  /// Az összes készpénz-egyenleg cseréje (szinkronkor a fiók adataira).
+  Future<void> replaceAllCash(Map<String, double> cash) async {
+    _cash
+      ..clear()
+      ..addAll(cash);
+    notifyListeners();
+    await _save();
+  }
+
   /// Az összes osztalék cseréje (szinkronkor a fiók adataira).
   Future<void> replaceAllDividends(List<DividendRecord> dividends) async {
     _dividends
@@ -409,6 +455,7 @@ class PortfolioStore extends ChangeNotifier {
       final prefs = await SharedPreferences.getInstance();
       await prefs.setString(_key, jsonEncode(_lots.map((l) => l.toJson()).toList()));
       await prefs.setString(_dividendsKey, jsonEncode(_dividends.map((d) => d.toJson()).toList()));
+      await prefs.setString(_cashKey, jsonEncode(_cash));
     } catch (_) {
       // A tárolás hibája nem akadályozza a működést.
     }

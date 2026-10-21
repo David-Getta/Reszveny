@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Matshwao a botekgeniki",
   "glossaryPageTitle": "Lenane la mantsoe",
   "glossaryPageSubtitle": "Ditlhaloso tse bonolo tsa palo e nngwe le e nngwe eo app e e bontshang, ho tloha ho P/E ho isa ho RSI",
-  "glossarySearchHint": "Batla lenaneng la mantsoe"
+  "glossarySearchHint": "Batla lenaneng la mantsoe",
+  "portfolioCash": "Chelete",
+  "portfolioCashTitle": "Chelete e setseng",
+  "portfolioCashHint": "Chelete e sa tseteloang ho broker wa hao, ka mofuta wa chelete. E balellwa bolengng ka kakaretso le kabong; eseng phaellong.",
+  "portfolioCashAmount": "Palo ({currency})",
+  "portfolioCashEdit": "Beha chelete e setseng"
 }

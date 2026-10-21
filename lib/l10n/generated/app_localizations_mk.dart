@@ -2771,4 +2771,22 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Пребарај во поимникот';
+
+  @override
+  String get portfolioCash => 'Готовина';
+
+  @override
+  String get portfolioCashTitle => 'Салдо во готовина';
+
+  @override
+  String get portfolioCashHint =>
+      'Неинвестирани пари кај вашиот брокер, по валута. Се сметаат во вкупната вредност и распределбата; не во приносот.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Износ ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Постави салдо во готовина';
 }

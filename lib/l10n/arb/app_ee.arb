@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Tɛknikal dzesiwo",
   "glossaryPageTitle": "Nyagɔmeɖeɖe",
   "glossaryPageSubtitle": "Xexlẽdzesi ɖe sia ɖe si app la ɖena fia la ƒe gɔmeɖeɖe bɔbɔe, tso P/E dzi va ɖo RSI",
-  "glossarySearchHint": "Di le nyagɔmeɖeɖea me"
+  "glossarySearchHint": "Di le nyagɔmeɖeɖea me",
+  "portfolioCash": "Ga le asi",
+  "portfolioCashTitle": "Ga si le asi ƒe home",
+  "portfolioCashHint": "Ga si mède eme o, si le wò broker gbɔ, le ga ƒomevi ɖe sia ɖe nu. Wobua eŋu le asi blibo kple mama me; menye le viɖe me o.",
+  "portfolioCashAmount": "Home xexlẽ ({currency})",
+  "portfolioCashEdit": "Ɖo ga si le asi ƒe home"
 }

@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Sinyal teknikal",
   "glossaryPageTitle": "Glosarium",
   "glossaryPageSubtitle": "Katrangan prasaja saben angka sing ditampilake aplikasi, saka P/E nganti RSI",
-  "glossarySearchHint": "Golèk ing glosarium"
+  "glossarySearchHint": "Golèk ing glosarium",
+  "portfolioCash": "Kas",
+  "portfolioCashTitle": "Saldo kas",
+  "portfolioCashHint": "Dhuwit sing durung diinvestasekake ing broker sampeyan, saben mata uang. Dietung ing nilai total lan alokasi; ora ing imbal hasil.",
+  "portfolioCashAmount": "Jumlah ({currency})",
+  "portfolioCashEdit": "Setel saldo kas"
 }

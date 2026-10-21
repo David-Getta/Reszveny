@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Техник дохио",
   "glossaryPageTitle": "Нэр томьёоны тайлбар",
   "glossaryPageSubtitle": "Аппын харуулдаг бүх үзүүлэлтийн энгийн тайлбар, P/E-ээс RSI хүртэл",
-  "glossarySearchHint": "Тайлбар толиос хайх"
+  "glossarySearchHint": "Тайлбар толиос хайх",
+  "portfolioCash": "Бэлэн мөнгө",
+  "portfolioCashTitle": "Бэлэн мөнгөний үлдэгдэл",
+  "portfolioCashHint": "Брокер дээрх хөрөнгө оруулаагүй мөнгө, валют тус бүрээр. Нийт үнэ цэнэ болон хуваарилалтад тооцогдоно; өгөөжид тооцогдохгүй.",
+  "portfolioCashAmount": "Дүн ({currency})",
+  "portfolioCashEdit": "Бэлэн мөнгөний үлдэгдэл тохируулах"
 }

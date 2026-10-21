@@ -2768,4 +2768,22 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Batla lenaneng la mantsoe';
+
+  @override
+  String get portfolioCash => 'Chelete';
+
+  @override
+  String get portfolioCashTitle => 'Chelete e setseng';
+
+  @override
+  String get portfolioCashHint =>
+      'Chelete e sa tseteloang ho broker wa hao, ka mofuta wa chelete. E balellwa bolengng ka kakaretso le kabong; eseng phaellong.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Palo ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Beha chelete e setseng';
 }

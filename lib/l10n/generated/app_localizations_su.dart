@@ -2755,4 +2755,22 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Paluruh dina daptar istilah';
+
+  @override
+  String get portfolioCash => 'Tunai';
+
+  @override
+  String get portfolioCashTitle => 'Saldo tunai';
+
+  @override
+  String get portfolioCashHint =>
+      'Artos anu teu acan diinvestasikeun di broker anjeun, dumasar mata uang. Diitung dina total nilai sareng alokasi; henteu dina hasil.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Jumlah ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Setel saldo tunai';
 }

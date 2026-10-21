@@ -730,5 +730,10 @@
   "signalAlertsNotification": "ສັນຍານເຕັກນິກ",
   "glossaryPageTitle": "ອະທິບາຍຄຳສັບ",
   "glossaryPageSubtitle": "ຄຳອະທິບາຍແບບງ່າຍຂອງທຸກຕົວເລກທີ່ແອັບສະແດງ ຕັ້ງແຕ່ P/E ຈົນຮອດ RSI",
-  "glossarySearchHint": "ຊອກຫາໃນຄຳສັບ"
+  "glossarySearchHint": "ຊອກຫາໃນຄຳສັບ",
+  "portfolioCash": "ເງິນສົດ",
+  "portfolioCashTitle": "ຍອດເງິນສົດ",
+  "portfolioCashHint": "ເງິນທີ່ຍັງບໍ່ໄດ້ລົງທຶນຢູ່ນາຍໜ້າຂອງທ່ານ ແຍກຕາມສະກຸນເງິນ. ນັບລວມໃນມູນຄ່າລວມ ແລະ ສັດສ່ວນການລົງທຶນ; ບໍ່ນັບໃນຜົນຕອບແທນ.",
+  "portfolioCashAmount": "ຈຳນວນເງິນ ({currency})",
+  "portfolioCashEdit": "ຕັ້ງຍອດເງິນສົດ"
 }

@@ -2825,4 +2825,22 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Išči po slovarju';
+
+  @override
+  String get portfolioCash => 'Gotovina';
+
+  @override
+  String get portfolioCashTitle => 'Stanje gotovine';
+
+  @override
+  String get portfolioCashHint =>
+      'Nenaloženi denar pri vašem borznem posredniku, po valutah. Šteje v skupno vrednost in razporeditev, ne pa v donos.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Znesek ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Nastavi stanje gotovine';
 }

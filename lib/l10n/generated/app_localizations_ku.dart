@@ -2754,4 +2754,22 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Di ferhengokê de bigere';
+
+  @override
+  String get portfolioCash => 'Pereyê nexd';
+
+  @override
+  String get portfolioCashTitle => 'Bakiyeya nexd';
+
+  @override
+  String get portfolioCashHint =>
+      'Pereyê ku hîn nehatiye veberhênandin li cem brokerê te, li gorî dirav. Di nirxa giştî û dabeşkirinê de tê hesibandin; di qezencê de na.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Mîqdar ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Bakiyeya nexd diyar bike';
 }

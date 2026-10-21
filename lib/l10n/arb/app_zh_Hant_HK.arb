@@ -730,5 +730,10 @@
   "signalAlertsNotification": "技術訊號",
   "glossaryPageTitle": "詞彙表",
   "glossaryPageSubtitle": "以淺白文字解釋應用程式顯示的每個指標，從 P/E 到 RSI",
-  "glossarySearchHint": "搜尋詞彙表"
+  "glossarySearchHint": "搜尋詞彙表",
+  "portfolioCash": "現金",
+  "portfolioCashTitle": "現金結餘",
+  "portfolioCashHint": "證券戶口中未投資的資金，按貨幣分列。計入總市值及配置，不計入回報。",
+  "portfolioCashAmount": "金額 ({currency})",
+  "portfolioCashEdit": "設定現金結餘"
 }

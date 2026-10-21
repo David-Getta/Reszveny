@@ -2770,4 +2770,22 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Nyaka ka lenaneong la mareo';
+
+  @override
+  String get portfolioCash => 'Tšhelete';
+
+  @override
+  String get portfolioCashTitle => 'Tekanyo ya tšhelete';
+
+  @override
+  String get portfolioCashHint =>
+      'Tšhelete yeo e sego ya beeletšwa go broker wa gago, go ya ka mohuta wa tšhelete. E balelwa ka bolengng ka moka le kabong; e sego ka poelong.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Palo ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Beakanya tekanyo ya tšhelete';
 }

@@ -4722,6 +4722,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Search the glossary'**
   String get glossarySearchHint;
+
+  /// Label of the cash held at the broker: a row in the portfolio allocation chart and a figure on the portfolio summary.
+  ///
+  /// In en, this message translates to:
+  /// **'Cash'**
+  String get portfolioCash;
+
+  /// Title of the dialog where the user enters the cash held at their broker, per currency.
+  ///
+  /// In en, this message translates to:
+  /// **'Cash balance'**
+  String get portfolioCashTitle;
+
+  /// Explanation in the cash-balance dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'Uninvested money at your broker, by currency. It counts in the total value and the allocation; not in returns.'**
+  String get portfolioCashHint;
+
+  /// Field label in the cash-balance dialog; {currency} is a 3-letter code such as USD.
+  ///
+  /// In en, this message translates to:
+  /// **'Amount ({currency})'**
+  String portfolioCashAmount(String currency);
+
+  /// Button that opens the cash-balance dialog (portfolio page menu).
+  ///
+  /// In en, this message translates to:
+  /// **'Set cash balance'**
+  String get portfolioCashEdit;
 }
 
 class _AppLocalizationsDelegate

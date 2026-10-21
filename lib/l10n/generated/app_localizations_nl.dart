@@ -2756,4 +2756,22 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Zoeken in de begrippenlijst';
+
+  @override
+  String get portfolioCash => 'Cash';
+
+  @override
+  String get portfolioCashTitle => 'Cashsaldo';
+
+  @override
+  String get portfolioCashHint =>
+      'Niet-belegd geld bij je broker, per valuta. Telt mee in de totale waarde en de verdeling, niet in het rendement.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Bedrag ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Cashsaldo instellen';
 }

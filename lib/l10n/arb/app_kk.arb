@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Техникалық сигналдар",
   "glossaryPageTitle": "Глоссарий",
   "glossaryPageSubtitle": "Қолданба көрсететін әр көрсеткіштің қарапайым түсіндірмесі, P/E-ден RSI-ге дейін",
-  "glossarySearchHint": "Глоссарийден іздеу"
+  "glossarySearchHint": "Глоссарийден іздеу",
+  "portfolioCash": "Қолма-қол қаражат",
+  "portfolioCashTitle": "Қолма-қол қаражат қалдығы",
+  "portfolioCashHint": "Брокеріңіздегі салынбаған қаражат, валюта бойынша. Жалпы құн мен құрылымда есептеледі; кірістілікте есептелмейді.",
+  "portfolioCashAmount": "Сома ({currency})",
+  "portfolioCashEdit": "Қолма-қол қалдықты орнату"
 }

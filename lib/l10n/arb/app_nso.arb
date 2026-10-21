@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Matšhupetšo a setegeniki",
   "glossaryPageTitle": "Lenaneo la mareo",
   "glossaryPageSubtitle": "Ditlhaloso tše bonolo tša palo ye nngwe le ye nngwe yeo app e e bontšhago, go tloga go P/E go fihla go RSI",
-  "glossarySearchHint": "Nyaka ka lenaneong la mareo"
+  "glossarySearchHint": "Nyaka ka lenaneong la mareo",
+  "portfolioCash": "Tšhelete",
+  "portfolioCashTitle": "Tekanyo ya tšhelete",
+  "portfolioCashHint": "Tšhelete yeo e sego ya beeletšwa go broker wa gago, go ya ka mohuta wa tšhelete. E balelwa ka bolengng ka moka le kabong; e sego ka poelong.",
+  "portfolioCashAmount": "Palo ({currency})",
+  "portfolioCashEdit": "Beakanya tekanyo ya tšhelete"
 }

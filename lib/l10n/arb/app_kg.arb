@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Bidimbu ya teknike",
   "glossaryPageTitle": "Dikisionere ya bangogo",
   "glossaryPageSubtitle": "Bansangu ya pete sambu na konso ntalu yina app ke songa, banda na P/E tii na RSI",
-  "glossarySearchHint": "Sosa na dikisionere"
+  "glossarySearchHint": "Sosa na dikisionere",
+  "portfolioCash": "Mbongo ya maboko",
+  "portfolioCashTitle": "Mbongo ya maboko yina kele",
+  "portfolioCashHint": "Mbongo yina nge me tula ve na mumbongo na broker na nge, na konso mbongo ya nsi. Yo ke tangwa na ntalu yawonso ti na nkabulu; yo ke tangwa ve na mbakulu.",
+  "portfolioCashAmount": "Ntalu ({currency})",
+  "portfolioCashEdit": "Tula mbongo ya maboko"
 }

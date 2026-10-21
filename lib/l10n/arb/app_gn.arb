@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Señal técnica",
   "glossaryPageTitle": "Ñeʼẽryru",
   "glossaryPageSubtitle": "Ñemyesakã ndahasýiva opaite papapy app ohechaukáva rehe, P/E guive RSI peve",
-  "glossarySearchHint": "Eheka ñeʼẽryrúpe"
+  "glossarySearchHint": "Eheka ñeʼẽryrúpe",
+  "portfolioCash": "Pirapire",
+  "portfolioCashTitle": "Pirapire oĩva",
+  "portfolioCashHint": "Pirapire noñemoĩva gueteri nde bróker-pe, moneda rupive. Ojepapa opaite hepykue ha ñembojaʼópe; rendimiento-pe nahániri.",
+  "portfolioCashAmount": "Mboýpa ({currency})",
+  "portfolioCashEdit": "Emoĩ pirapire oĩva"
 }

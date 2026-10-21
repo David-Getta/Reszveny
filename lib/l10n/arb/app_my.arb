@@ -730,5 +730,10 @@
   "signalAlertsNotification": "နည်းပညာဆိုင်ရာ အချက်ပြများ",
   "glossaryPageTitle": "ဝေါဟာရ အဘိဓာန်",
   "glossaryPageSubtitle": "P/E မှ RSI အထိ အက်ပ်ပြသသော ကိန်းဂဏန်းတိုင်းအတွက် ရိုးရှင်းသော ရှင်းလင်းချက်များ",
-  "glossarySearchHint": "ဝေါဟာရ အဘိဓာန်တွင် ရှာရန်"
+  "glossarySearchHint": "ဝေါဟာရ အဘိဓာန်တွင် ရှာရန်",
+  "portfolioCash": "ငွေသား",
+  "portfolioCashTitle": "ငွေသား လက်ကျန်",
+  "portfolioCashHint": "သင့်ဘရိုကာတွင် ရင်းနှီးမြှုပ်နှံမထားသော ငွေ၊ ငွေကြေးအလိုက်။ စုစုပေါင်း တန်ဖိုးနှင့် ခွဲဝေမှုတွင် ထည့်တွက်သည်၊ အမြတ်အစွန်းတွင် မပါဝင်ပါ။",
+  "portfolioCashAmount": "ပမာဏ ({currency})",
+  "portfolioCashEdit": "ငွေသား လက်ကျန် သတ်မှတ်ရန်"
 }

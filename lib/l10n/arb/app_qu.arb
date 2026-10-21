@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Tecnico señalkuna",
   "glossaryPageTitle": "Rimaykunapa sutichaynin",
   "glossaryPageSubtitle": "Appa rikuchisqan sapa yupaypa sasa mana kaq sutichaynin, P/E-manta RSI-kama",
-  "glossarySearchHint": "Rimaykunapa sutichayninpi maskay"
+  "glossarySearchHint": "Rimaykunapa sutichayninpi maskay",
+  "portfolioCash": "Qullqi",
+  "portfolioCashTitle": "Qullqi saldo",
+  "portfolioCashHint": "Broker-niykipi mana churasqa qullqi, sapa qullqi laya. Llapan chaninpi hinaspa rakiypi yupasqa; mana rendimientopichu.",
+  "portfolioCashAmount": "Hayka ({currency})",
+  "portfolioCashEdit": "Qullqi saldota churay"
 }

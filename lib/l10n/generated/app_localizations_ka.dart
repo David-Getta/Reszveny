@@ -2753,4 +2753,22 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'ძიება ლექსიკონში';
+
+  @override
+  String get portfolioCash => 'ნაღდი ფული';
+
+  @override
+  String get portfolioCashTitle => 'ნაღდი ფულის ნაშთი';
+
+  @override
+  String get portfolioCashHint =>
+      'არაინვესტირებული ფული თქვენს ბროკერთან, ვალუტების მიხედვით. ითვლება ჯამურ ღირებულებასა და განაწილებაში; შემოსავლიანობაში — არა.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'თანხა ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'ნაღდი ფულის ნაშთის მითითება';
 }

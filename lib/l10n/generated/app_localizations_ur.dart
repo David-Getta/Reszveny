@@ -2752,4 +2752,22 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'لغت میں تلاش کریں';
+
+  @override
+  String get portfolioCash => 'نقد';
+
+  @override
+  String get portfolioCashTitle => 'نقد بیلنس';
+
+  @override
+  String get portfolioCashHint =>
+      'آپ کے بروکر کے پاس موجود غیر سرمایہ کاری شدہ رقم، کرنسی کے لحاظ سے۔ یہ کل مالیت اور تقسیم میں شمار ہوتی ہے؛ منافع میں نہیں۔';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'رقم ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'نقد بیلنس سیٹ کریں';
 }

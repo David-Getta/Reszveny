@@ -730,5 +730,10 @@
   "signalAlertsNotification": "प्राविधिक संकेतहरू",
   "glossaryPageTitle": "शब्दावली",
   "glossaryPageSubtitle": "P/E देखि RSI सम्म, एपले देखाउने हरेक अङ्कको सरल व्याख्या",
-  "glossarySearchHint": "शब्दावलीमा खोज्नुहोस्"
+  "glossarySearchHint": "शब्दावलीमा खोज्नुहोस्",
+  "portfolioCash": "नगद",
+  "portfolioCashTitle": "नगद मौज्दात",
+  "portfolioCashHint": "तपाईंको ब्रोकरमा रहेको लगानी नगरिएको रकम, मुद्राअनुसार। यो कुल मूल्य र बाँडफाँटमा गनिन्छ; प्रतिफलमा होइन।",
+  "portfolioCashAmount": "रकम ({currency})",
+  "portfolioCashEdit": "नगद मौज्दात सेट गर्नुहोस्"
 }

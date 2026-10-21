@@ -2818,4 +2818,22 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Hledat ve slovníčku';
+
+  @override
+  String get portfolioCash => 'Hotovost';
+
+  @override
+  String get portfolioCashTitle => 'Hotovostní zůstatek';
+
+  @override
+  String get portfolioCashHint =>
+      'Neinvestované peníze u vašeho brokera, podle měn. Počítají se do celkové hodnoty a rozložení; ne do výnosu.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Částka ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Nastavit hotovostní zůstatek';
 }

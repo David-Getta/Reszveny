@@ -2741,4 +2741,22 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'ཐ་སྙད་རེའུ་མིག་ནང་འཚོལ།';
+
+  @override
+  String get portfolioCash => 'དངུལ་རྐྱང';
+
+  @override
+  String get portfolioCashTitle => 'དངུལ་རྐྱང་ལྷག་མ';
+
+  @override
+  String get portfolioCashHint =>
+      'ཁྱེད་ཀྱི་བར་མིའི་སར་མ་འཇོག་མ་བྱས་པའི་དངུལ། དངུལ་རིགས་སོ་སོར། རིན་ཐང་བསྡོམས་དང་བགོ་འགྲེམས་ནང་རྩིས་རྒྱག་གི་ཡོད། ཁེ་འབབ་ནང་མི་རྩིས།';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'གྲངས་འབོར ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'དངུལ་རྐྱང་ལྷག་མ་སྒྲིག་པ';
 }

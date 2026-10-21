@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Obubonero obwa tekinika",
   "glossaryPageTitle": "Ennyinyonnyola y'ebigambo",
   "glossaryPageSubtitle": "Ennyinyonnyola ennyangu eya buli muwendo app gw'eraga, okuva ku P/E okutuuka ku RSI",
-  "glossarySearchHint": "Noonya mu nnyinyonnyola y'ebigambo"
+  "glossarySearchHint": "Noonya mu nnyinyonnyola y'ebigambo",
+  "portfolioCash": "Ensimbi enkalu",
+  "portfolioCashTitle": "Ensimbi enkalu eziriwo",
+  "portfolioCashHint": "Ensimbi ezitasiigiddwa eziri ewa broker wo, buli kika kya ssente. Zibalirwa mu muwendo gwonna ne mu ngabanya; so si mu magoba.",
+  "portfolioCashAmount": "Omuwendo ({currency})",
+  "portfolioCashEdit": "Teeka ensimbi enkalu eziriwo"
 }

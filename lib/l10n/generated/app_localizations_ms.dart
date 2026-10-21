@@ -2757,4 +2757,22 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Cari dalam glosari';
+
+  @override
+  String get portfolioCash => 'Tunai';
+
+  @override
+  String get portfolioCashTitle => 'Baki tunai';
+
+  @override
+  String get portfolioCashHint =>
+      'Wang yang belum dilaburkan di broker anda, mengikut mata wang. Dikira dalam jumlah nilai dan peruntukan; tidak dalam pulangan.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Jumlah ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Tetapkan baki tunai';
 }

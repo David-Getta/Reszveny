@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Ishara za kiufundi",
   "glossaryPageTitle": "Kamusi ya istilahi",
   "glossaryPageSubtitle": "Maelezo rahisi ya kila namba inayoonyeshwa na programu, kutoka P/E hadi RSI",
-  "glossarySearchHint": "Tafuta katika kamusi"
+  "glossarySearchHint": "Tafuta katika kamusi",
+  "portfolioCash": "Taslimu",
+  "portfolioCashTitle": "Salio la pesa taslimu",
+  "portfolioCashHint": "Pesa ambazo hazijawekezwa kwa broker wako, kwa kila sarafu. Zinahesabiwa katika thamani ya jumla na mgawanyo; si katika faida.",
+  "portfolioCashAmount": "Kiasi ({currency})",
+  "portfolioCashEdit": "Weka salio la pesa taslimu"
 }

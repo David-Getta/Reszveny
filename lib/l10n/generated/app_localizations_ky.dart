@@ -2756,4 +2756,22 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Глоссарийден издөө';
+
+  @override
+  String get portfolioCash => 'Нак акча';
+
+  @override
+  String get portfolioCashTitle => 'Нак акча калдыгы';
+
+  @override
+  String get portfolioCashHint =>
+      'Брокериңиздеги салынбаган акча, валюта боюнча. Жалпы наркта жана бөлүштүрүүдө эсепке алынат; кирешелүүлүктө эсепке алынбайт.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Сумма ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Нак акча калдыгын коюу';
 }

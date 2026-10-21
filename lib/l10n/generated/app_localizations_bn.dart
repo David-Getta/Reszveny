@@ -2751,4 +2751,22 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'শব্দকোষে খুঁজুন';
+
+  @override
+  String get portfolioCash => 'নগদ';
+
+  @override
+  String get portfolioCashTitle => 'নগদ ব্যালেন্স';
+
+  @override
+  String get portfolioCashHint =>
+      'আপনার ব্রোকারের কাছে থাকা বিনিয়োগ না করা টাকা, মুদ্রা অনুসারে। এটি মোট মূল্য ও বণ্টনে গণ্য হয়; রিটার্নে নয়।';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'পরিমাণ ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'নগদ ব্যালেন্স সেট করুন';
 }

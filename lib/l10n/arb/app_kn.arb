@@ -730,5 +730,10 @@
   "signalAlertsNotification": "ತಾಂತ್ರಿಕ ಸಿಗ್ನಲ್‌ಗಳು",
   "glossaryPageTitle": "ಪದಕೋಶ",
   "glossaryPageSubtitle": "ಆ್ಯಪ್ ತೋರಿಸುವ ಪ್ರತಿ ಅಂಕಿಯ ಸರಳ ವಿವರಣೆ, P/E ಯಿಂದ RSI ವರೆಗೆ",
-  "glossarySearchHint": "ಪದಕೋಶದಲ್ಲಿ ಹುಡುಕಿ"
+  "glossarySearchHint": "ಪದಕೋಶದಲ್ಲಿ ಹುಡುಕಿ",
+  "portfolioCash": "ನಗದು",
+  "portfolioCashTitle": "ನಗದು ಬಾಕಿ",
+  "portfolioCashHint": "ನಿಮ್ಮ ಬ್ರೋಕರ್ ಬಳಿ ಹೂಡಿಕೆ ಮಾಡದ ಹಣ, ಕರೆನ್ಸಿ ಪ್ರಕಾರ. ಇದು ಒಟ್ಟು ಮೌಲ್ಯ ಮತ್ತು ಹಂಚಿಕೆಯಲ್ಲಿ ಎಣಿಕೆಯಾಗುತ್ತದೆ; ರಿಟರ್ನ್‌ನಲ್ಲಿ ಅಲ್ಲ.",
+  "portfolioCashAmount": "ಮೊತ್ತ ({currency})",
+  "portfolioCashEdit": "ನಗದು ಬಾಕಿ ಹೊಂದಿಸಿ"
 }

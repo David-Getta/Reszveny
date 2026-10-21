@@ -730,5 +730,10 @@
   "signalAlertsNotification": "තාක්ෂණික සංඥා",
   "glossaryPageTitle": "පද මාලාව",
   "glossaryPageSubtitle": "P/E සිට RSI දක්වා, යෙදුම පෙන්වන සෑම අගයක් ගැනම සරල පැහැදිලි කිරීම්",
-  "glossarySearchHint": "පද මාලාවේ සොයන්න"
+  "glossarySearchHint": "පද මාලාවේ සොයන්න",
+  "portfolioCash": "මුදල්",
+  "portfolioCashTitle": "මුදල් ශේෂය",
+  "portfolioCashHint": "ඔබේ බ්‍රෝකර් ළඟ ඇති ආයෝජනය නොකළ මුදල්, මුදල් වර්ගය අනුව. මුළු වටිනාකමට හා බෙදීමට ගණන් ගනී; ප්‍රතිලාභයට නොගනී.",
+  "portfolioCashAmount": "මුදල ({currency})",
+  "portfolioCashEdit": "මුදල් ශේෂය සකසන්න"
 }

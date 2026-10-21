@@ -730,5 +730,10 @@
   "signalAlertsNotification": "तकनीकी संकेत",
   "glossaryPageTitle": "शब्दावली",
   "glossaryPageSubtitle": "ऐप में देखावल हर आंकड़ा के सरल बयान, P/E से RSI तक",
-  "glossarySearchHint": "शब्दावली में खोजीं"
+  "glossarySearchHint": "शब्दावली में खोजीं",
+  "portfolioCash": "नकद",
+  "portfolioCashTitle": "नकद बैलेंस",
+  "portfolioCashHint": "रउआ ब्रोकर के लगे बिना निवेश वाला पइसा, मुद्रा के हिसाब से। ई कुल मूल्य आ बँटवारा में गिनल जाला; रिटर्न में ना।",
+  "portfolioCashAmount": "रकम ({currency})",
+  "portfolioCashEdit": "नकद बैलेंस सेट करीं"
 }

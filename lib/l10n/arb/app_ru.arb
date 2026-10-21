@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Технические сигналы",
   "glossaryPageTitle": "Глоссарий",
   "glossaryPageSubtitle": "Простые объяснения каждого показателя в приложении, от P/E до RSI",
-  "glossarySearchHint": "Поиск по глоссарию"
+  "glossarySearchHint": "Поиск по глоссарию",
+  "portfolioCash": "Денежные средства",
+  "portfolioCashTitle": "Остаток денежных средств",
+  "portfolioCashHint": "Неинвестированные деньги на брокерском счёте, по валютам. Учитываются в общей стоимости и структуре, но не в доходности.",
+  "portfolioCashAmount": "Сумма ({currency})",
+  "portfolioCashEdit": "Указать остаток средств"
 }

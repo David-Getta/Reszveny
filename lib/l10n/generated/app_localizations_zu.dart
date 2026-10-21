@@ -2763,4 +2763,22 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Sesha ohlwini lwamagama';
+
+  @override
+  String get portfolioCash => 'Imali';
+
+  @override
+  String get portfolioCashTitle => 'Ibhalansi yemali';
+
+  @override
+  String get portfolioCashHint =>
+      'Imali engatshaliwe kubroker wakho, ngohlobo lwemali. Ibalwa kunani eliphelele nasekwabiweni; hhayi kunzuzo.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Inani ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Setha ibhalansi yemali';
 }

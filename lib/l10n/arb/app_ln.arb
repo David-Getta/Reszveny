@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Bilembo ya tekinike",
   "glossaryPageTitle": "Ndimbola ya maloba",
   "glossaryPageSubtitle": "Ndimbola ya pete ya motángo nyonso oyo app ezali kolakisa, banda na P/E tii na RSI",
-  "glossarySearchHint": "Luka na ndimbola ya maloba"
+  "glossarySearchHint": "Luka na ndimbola ya maloba",
+  "portfolioCash": "Mbɔngɔ ya mabɔkɔ",
+  "portfolioCashTitle": "Mbɔngɔ ya mabɔkɔ etikali",
+  "portfolioCashHint": "Mbɔngɔ oyo otiaki naino te na mombongo epai ya broker na yo, na mbɔngɔ mokomoko. Etangami na motuya mobimba mpe na bokaboli; etangami te na litomba.",
+  "portfolioCashAmount": "Motuya ({currency})",
+  "portfolioCashEdit": "Tiá mbɔngɔ ya mabɔkɔ"
 }

@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Tekniik bãnd rãmba",
   "glossaryPageTitle": "Gom-biis võor",
   "glossaryPageSubtitle": "Wilgr sẽn yaa nana ne nimbr fãa ãpl wã sẽn wilgd, sẽn sɩng ne P/E n tãag RSI",
-  "glossarySearchHint": "Bao gom-biis võor pʋgẽ"
+  "glossarySearchHint": "Bao gom-biis võor pʋgẽ",
+  "portfolioCash": "Ligdi",
+  "portfolioCashTitle": "Ligd sẽn ket",
+  "portfolioCashHint": "Ligd sẽn ka kẽes f broker nengẽ, ligd buud fãa. B geelg-a-la yõod fãa la pʋɩɩbo pʋgẽ; la ka nafa pʋgẽ ye.",
+  "portfolioCashAmount": "Ligd sõor ({currency})",
+  "portfolioCashEdit": "Ning ligd sẽn ket"
 }

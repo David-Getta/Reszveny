@@ -730,5 +730,10 @@
   "signalAlertsNotification": "技术信号",
   "glossaryPageTitle": "术语表",
   "glossaryPageSubtitle": "用通俗语言解释应用中显示的每个指标，从 P/E 到 RSI",
-  "glossarySearchHint": "搜索术语表"
+  "glossarySearchHint": "搜索术语表",
+  "portfolioCash": "现金",
+  "portfolioCashTitle": "现金余额",
+  "portfolioCashHint": "券商账户中未投资的资金，按货币分列。计入总市值和配置，不计入收益。",
+  "portfolioCashAmount": "金额 ({currency})",
+  "portfolioCashEdit": "设置现金余额"
 }

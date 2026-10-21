@@ -2753,4 +2753,22 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Търсене в речника';
+
+  @override
+  String get portfolioCash => 'Кеш';
+
+  @override
+  String get portfolioCashTitle => 'Паричен баланс';
+
+  @override
+  String get portfolioCashHint =>
+      'Неинвестирани пари при брокера ви, по валути. Включват се в общата стойност и разпределението; не и в доходността.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Сума ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Задаване на паричен баланс';
 }

@@ -730,5 +730,10 @@
   "signalAlertsNotification": "ལག་རྩལ་བརྡ་རྟགས།",
   "glossaryPageTitle": "ཐ་སྙད་རེའུ་མིག",
   "glossaryPageSubtitle": "མཉེན་ཆས་ནང་སྟོན་པའི་གྲངས་ཀ་རེ་རེའི་འགྲེལ་བཤད་ལྷུག་པོ། P/E ནས་ RSI བར།",
-  "glossarySearchHint": "ཐ་སྙད་རེའུ་མིག་ནང་འཚོལ།"
+  "glossarySearchHint": "ཐ་སྙད་རེའུ་མིག་ནང་འཚོལ།",
+  "portfolioCash": "དངུལ་རྐྱང",
+  "portfolioCashTitle": "དངུལ་རྐྱང་ལྷག་མ",
+  "portfolioCashHint": "ཁྱེད་ཀྱི་བར་མིའི་སར་མ་འཇོག་མ་བྱས་པའི་དངུལ། དངུལ་རིགས་སོ་སོར། རིན་ཐང་བསྡོམས་དང་བགོ་འགྲེམས་ནང་རྩིས་རྒྱག་གི་ཡོད། ཁེ་འབབ་ནང་མི་རྩིས།",
+  "portfolioCashAmount": "གྲངས་འབོར ({currency})",
+  "portfolioCashEdit": "དངུལ་རྐྱང་ལྷག་མ་སྒྲིག་པ"
 }

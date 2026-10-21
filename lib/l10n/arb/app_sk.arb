@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Technické signály",
   "glossaryPageTitle": "Slovník pojmov",
   "glossaryPageSubtitle": "Jednoduché vysvetlenia každého čísla v aplikácii, od P/E po RSI",
-  "glossarySearchHint": "Hľadať v slovníku"
+  "glossarySearchHint": "Hľadať v slovníku",
+  "portfolioCash": "Hotovosť",
+  "portfolioCashTitle": "Hotovostný zostatok",
+  "portfolioCashHint": "Neinvestované peniaze u vášho brokera, podľa meny. Počítajú sa do celkovej hodnoty a rozloženia; nie do výnosu.",
+  "portfolioCashAmount": "Suma ({currency})",
+  "portfolioCashEdit": "Nastaviť hotovostný zostatok"
 }

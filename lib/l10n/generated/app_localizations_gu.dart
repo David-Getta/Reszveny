@@ -2747,4 +2747,22 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'શબ્દાવલિમાં શોધો';
+
+  @override
+  String get portfolioCash => 'રોકડ';
+
+  @override
+  String get portfolioCashTitle => 'રોકડ બેલેન્સ';
+
+  @override
+  String get portfolioCashHint =>
+      'તમારા બ્રોકર પાસે રોકાણ ન કરેલા પૈસા, ચલણ પ્રમાણે. તે કુલ મૂલ્ય અને ફાળવણીમાં ગણાય છે; રિટર્નમાં નહીં.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'રકમ ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'રોકડ બેલેન્સ સેટ કરો';
 }

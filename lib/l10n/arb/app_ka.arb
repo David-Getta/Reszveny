@@ -730,5 +730,10 @@
   "signalAlertsNotification": "ტექნიკური სიგნალები",
   "glossaryPageTitle": "ტერმინების ლექსიკონი",
   "glossaryPageSubtitle": "აპში ნაჩვენები ყველა მაჩვენებლის მარტივი განმარტება, P/E-დან RSI-მდე",
-  "glossarySearchHint": "ძიება ლექსიკონში"
+  "glossarySearchHint": "ძიება ლექსიკონში",
+  "portfolioCash": "ნაღდი ფული",
+  "portfolioCashTitle": "ნაღდი ფულის ნაშთი",
+  "portfolioCashHint": "არაინვესტირებული ფული თქვენს ბროკერთან, ვალუტების მიხედვით. ითვლება ჯამურ ღირებულებასა და განაწილებაში; შემოსავლიანობაში — არა.",
+  "portfolioCashAmount": "თანხა ({currency})",
+  "portfolioCashEdit": "ნაღდი ფულის ნაშთის მითითება"
 }

@@ -2761,4 +2761,22 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Cerca al glossari';
+
+  @override
+  String get portfolioCash => 'Efectiu';
+
+  @override
+  String get portfolioCashTitle => 'Saldo en efectiu';
+
+  @override
+  String get portfolioCashHint =>
+      'Diners no invertits al teu bròquer, per moneda. Compta en el valor total i la distribució; no en la rendibilitat.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Import ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Definir el saldo en efectiu';
 }

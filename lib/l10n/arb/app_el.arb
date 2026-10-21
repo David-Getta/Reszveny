@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Τεχνικά σήματα",
   "glossaryPageTitle": "Γλωσσάρι",
   "glossaryPageSubtitle": "Απλές επεξηγήσεις για κάθε μέγεθος της εφαρμογής, από το P/E έως τον RSI",
-  "glossarySearchHint": "Αναζήτηση στο γλωσσάρι"
+  "glossarySearchHint": "Αναζήτηση στο γλωσσάρι",
+  "portfolioCash": "Μετρητά",
+  "portfolioCashTitle": "Υπόλοιπο μετρητών",
+  "portfolioCashHint": "Μη επενδυμένα χρήματα στον χρηματιστή σας, ανά νόμισμα. Μετρούν στη συνολική αξία και στην κατανομή· όχι στην απόδοση.",
+  "portfolioCashAmount": "Ποσό ({currency})",
+  "portfolioCashEdit": "Ορισμός υπολοίπου μετρητών"
 }

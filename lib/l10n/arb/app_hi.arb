@@ -730,5 +730,10 @@
   "signalAlertsNotification": "तकनीकी संकेत",
   "glossaryPageTitle": "शब्दावली",
   "glossaryPageSubtitle": "ऐप में दिखने वाले हर आँकड़े की सरल व्याख्या, P/E से RSI तक",
-  "glossarySearchHint": "शब्दावली में खोजें"
+  "glossarySearchHint": "शब्दावली में खोजें",
+  "portfolioCash": "नकद",
+  "portfolioCashTitle": "नकद बैलेंस",
+  "portfolioCashHint": "आपके ब्रोकर के पास बिना निवेश किया पैसा, मुद्रा के अनुसार। यह कुल मूल्य और आवंटन में गिना जाता है; रिटर्न में नहीं।",
+  "portfolioCashAmount": "राशि ({currency})",
+  "portfolioCashEdit": "नकद बैलेंस सेट करें"
 }

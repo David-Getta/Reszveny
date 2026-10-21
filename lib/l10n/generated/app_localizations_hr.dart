@@ -2798,4 +2798,22 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Pretraži pojmovnik';
+
+  @override
+  String get portfolioCash => 'Gotovina';
+
+  @override
+  String get portfolioCashTitle => 'Stanje gotovine';
+
+  @override
+  String get portfolioCashHint =>
+      'Neuloženi novac kod vašeg brokera, po valutama. Računa se u ukupnu vrijednost i raspodjelu; ne u prinos.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Iznos ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Postavi stanje gotovine';
 }

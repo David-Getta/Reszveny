@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Tekiniki taamasiyɛnw",
   "glossaryPageTitle": "Daɲɛgafe",
   "glossaryPageSubtitle": "Jatew bɛɛ ɲɛfɔli nɔgɔman minnu bɛ jira app kɔnɔ, k'a ta P/E la ka se RSI ma",
-  "glossarySearchHint": "Ɲini daɲɛgafe kɔnɔ"
+  "glossarySearchHint": "Ɲini daɲɛgafe kɔnɔ",
+  "portfolioCash": "Wari gansan",
+  "portfolioCashTitle": "Wari gansan hakɛ",
+  "portfolioCashHint": "Wari min ma don baara la i ka broker fɛ, wari suguya kelen-kelen na. A bɛ jate sɔngɔ bɛɛ lajɛlen ni tilacogo la; a tɛ jate tɔnɔ la.",
+  "portfolioCashAmount": "Hakɛ ({currency})",
+  "portfolioCashEdit": "Wari gansan hakɛ sigi"
 }

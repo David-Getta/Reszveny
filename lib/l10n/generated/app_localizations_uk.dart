@@ -2826,4 +2826,22 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Пошук у глосарії';
+
+  @override
+  String get portfolioCash => 'Кошти';
+
+  @override
+  String get portfolioCashTitle => 'Залишок коштів';
+
+  @override
+  String get portfolioCashHint =>
+      'Неінвестовані гроші на брокерському рахунку, за валютами. Враховуються в загальній вартості та структурі, але не в дохідності.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Сума ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Вказати залишок коштів';
 }

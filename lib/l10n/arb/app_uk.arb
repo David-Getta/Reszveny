@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Технічні сигнали",
   "glossaryPageTitle": "Глосарій",
   "glossaryPageSubtitle": "Прості пояснення кожного показника в застосунку, від P/E до RSI",
-  "glossarySearchHint": "Пошук у глосарії"
+  "glossarySearchHint": "Пошук у глосарії",
+  "portfolioCash": "Кошти",
+  "portfolioCashTitle": "Залишок коштів",
+  "portfolioCashHint": "Неінвестовані гроші на брокерському рахунку, за валютами. Враховуються в загальній вартості та структурі, але не в дохідності.",
+  "portfolioCashAmount": "Сума ({currency})",
+  "portfolioCashEdit": "Вказати залишок коштів"
 }

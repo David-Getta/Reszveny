@@ -2757,4 +2757,22 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Buscar en el glosario';
+
+  @override
+  String get portfolioCash => 'Efectivo';
+
+  @override
+  String get portfolioCashTitle => 'Saldo en efectivo';
+
+  @override
+  String get portfolioCashHint =>
+      'Dinero no invertido en tu bróker, por moneda. Cuenta en el valor total y la distribución; no en la rentabilidad.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Importe ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Definir saldo en efectivo';
 }

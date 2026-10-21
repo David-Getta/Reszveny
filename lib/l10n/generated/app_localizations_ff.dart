@@ -2746,4 +2746,22 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Yiylo e ɓaŋngirde kelme';
+
+  @override
+  String get portfolioCash => 'Kaalis';
+
+  @override
+  String get portfolioCashTitle => 'Keddiiɗum kaalis';
+
+  @override
+  String get portfolioCashHint =>
+      'Kaalis mo waɗaaka e njulaagu to broker maa, e kala ceede. Ina limee e kuuɓal njaru e peccugol; wonaa e nafoore.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Limoore ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Teelto keddiiɗum kaalis';
 }

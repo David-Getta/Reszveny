@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Tehniki signallar",
   "glossaryPageTitle": "Sözlük",
   "glossaryPageSubtitle": "Programmanyň görkezýän her sanynyň ýönekeý düşündirişi, P/E-den RSI-e çenli",
-  "glossarySearchHint": "Sözlükde gözle"
+  "glossarySearchHint": "Sözlükde gözle",
+  "portfolioCash": "Nagt pul",
+  "portfolioCashTitle": "Nagt pul galyndysy",
+  "portfolioCashHint": "Brokeriňizdäki goýulmadyk pul, walýuta boýunça. Umumy gymmata we paýlanyşa goşulýar; girdejililige goşulmaýar.",
+  "portfolioCashAmount": "Möçber ({currency})",
+  "portfolioCashEdit": "Nagt pul galyndysyny belle"
 }

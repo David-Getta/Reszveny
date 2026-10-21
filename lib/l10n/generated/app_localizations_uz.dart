@@ -2758,4 +2758,22 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Lug‘atdan qidirish';
+
+  @override
+  String get portfolioCash => 'Naqd pul';
+
+  @override
+  String get portfolioCashTitle => 'Naqd pul qoldigʻi';
+
+  @override
+  String get portfolioCashHint =>
+      'Brokeringizdagi investitsiya qilinmagan pul, valyuta boʻyicha. Umumiy qiymat va taqsimotga kiradi; daromadlilikka kirmaydi.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Summa ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Naqd pul qoldigʻini belgilash';
 }

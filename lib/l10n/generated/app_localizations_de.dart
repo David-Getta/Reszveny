@@ -2765,4 +2765,22 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Glossar durchsuchen';
+
+  @override
+  String get portfolioCash => 'Cash';
+
+  @override
+  String get portfolioCashTitle => 'Cash-Bestand';
+
+  @override
+  String get portfolioCashHint =>
+      'Nicht investiertes Geld beim Broker, je Währung. Zählt zum Gesamtwert und zur Aufteilung; nicht zur Rendite.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Betrag ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Cash-Bestand festlegen';
 }

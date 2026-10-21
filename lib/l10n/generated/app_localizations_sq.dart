@@ -2759,4 +2759,22 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Kërko në fjalorth';
+
+  @override
+  String get portfolioCash => 'Para të gatshme';
+
+  @override
+  String get portfolioCashTitle => 'Gjendja e parave të gatshme';
+
+  @override
+  String get portfolioCashHint =>
+      'Para të painvestuara te brokeri juaj, sipas monedhës. Përfshihen në vlerën totale dhe shpërndarjen; jo në kthimin.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Shuma ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Cakto gjendjen e parave të gatshme';
 }

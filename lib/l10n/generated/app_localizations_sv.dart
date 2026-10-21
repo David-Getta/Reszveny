@@ -2753,4 +2753,22 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Sök i ordlistan';
+
+  @override
+  String get portfolioCash => 'Kontanter';
+
+  @override
+  String get portfolioCashTitle => 'Kontantsaldo';
+
+  @override
+  String get portfolioCashHint =>
+      'Oinvesterade pengar hos din mäklare, per valuta. Räknas med i totalt värde och fördelning, men inte i avkastningen.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Belopp ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Ange kontantsaldo';
 }

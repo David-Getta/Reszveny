@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Famantarana teknika",
   "glossaryPageTitle": "Rakibolana",
   "glossaryPageSubtitle": "Fanazavana tsotra momba ny isa rehetra asehon'ny rindranasa, manomboka amin'ny P/E ka hatramin'ny RSI",
-  "glossarySearchHint": "Hikaroka ao amin'ny rakibolana"
+  "glossarySearchHint": "Hikaroka ao amin'ny rakibolana",
+  "portfolioCash": "Vola",
+  "portfolioCashTitle": "Vola eo an-tanana",
+  "portfolioCashHint": "Vola tsy mbola napetraka any amin'ny brokera-nao, isaky ny karazam-bola. Isaina ao amin'ny fitambaran'ny sanda sy ny fizarana; tsy isaina ao amin'ny tombony.",
+  "portfolioCashAmount": "Habetsahana ({currency})",
+  "portfolioCashEdit": "Hametraka ny vola eo an-tanana"
 }

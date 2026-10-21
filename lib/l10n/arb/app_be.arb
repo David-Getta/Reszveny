@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Тэхнічныя сігналы",
   "glossaryPageTitle": "Гласарый",
   "glossaryPageSubtitle": "Простыя тлумачэнні кожнага паказчыка ў праграме, ад P/E да RSI",
-  "glossarySearchHint": "Пошук у гласарыі"
+  "glossarySearchHint": "Пошук у гласарыі",
+  "portfolioCash": "Грошы",
+  "portfolioCashTitle": "Грашовы рэшт",
+  "portfolioCashHint": "Неўкладзеныя грошы ў брокера, па валютах. Улічваюцца ў агульнай вартасці і размеркаванні; не ўлічваюцца ў даходнасці.",
+  "portfolioCashAmount": "Сума ({currency})",
+  "portfolioCashEdit": "Задаць грашовы рэшт"
 }

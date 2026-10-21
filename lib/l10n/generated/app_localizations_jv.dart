@@ -2754,4 +2754,22 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Golèk ing glosarium';
+
+  @override
+  String get portfolioCash => 'Kas';
+
+  @override
+  String get portfolioCashTitle => 'Saldo kas';
+
+  @override
+  String get portfolioCashHint =>
+      'Dhuwit sing durung diinvestasekake ing broker sampeyan, saben mata uang. Dietung ing nilai total lan alokasi; ora ing imbal hasil.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Jumlah ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Setel saldo kas';
 }

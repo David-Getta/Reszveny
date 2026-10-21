@@ -2757,4 +2757,22 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Bincika a cikin ƙamus';
+
+  @override
+  String get portfolioCash => 'Tsabar kuɗi';
+
+  @override
+  String get portfolioCashTitle => 'Ma\'aunin tsabar kuɗi';
+
+  @override
+  String get portfolioCashHint =>
+      'Kuɗin da ba a zuba ba a wurin dillalinku, bisa nau\'in kuɗi. Ana ƙidaya shi a jimillar ƙima da rabon kaso; ba a riba ba.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Adadi ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Saita ma\'aunin tsabar kuɗi';
 }

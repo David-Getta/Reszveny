@@ -2757,4 +2757,22 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Eheka ñeʼẽryrúpe';
+
+  @override
+  String get portfolioCash => 'Pirapire';
+
+  @override
+  String get portfolioCashTitle => 'Pirapire oĩva';
+
+  @override
+  String get portfolioCashHint =>
+      'Pirapire noñemoĩva gueteri nde bróker-pe, moneda rupive. Ojepapa opaite hepykue ha ñembojaʼópe; rendimiento-pe nahániri.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Mboýpa ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Emoĩ pirapire oĩva';
 }

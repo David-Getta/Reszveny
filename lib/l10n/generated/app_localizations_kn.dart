@@ -2760,4 +2760,22 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'ಪದಕೋಶದಲ್ಲಿ ಹುಡುಕಿ';
+
+  @override
+  String get portfolioCash => 'ನಗದು';
+
+  @override
+  String get portfolioCashTitle => 'ನಗದು ಬಾಕಿ';
+
+  @override
+  String get portfolioCashHint =>
+      'ನಿಮ್ಮ ಬ್ರೋಕರ್ ಬಳಿ ಹೂಡಿಕೆ ಮಾಡದ ಹಣ, ಕರೆನ್ಸಿ ಪ್ರಕಾರ. ಇದು ಒಟ್ಟು ಮೌಲ್ಯ ಮತ್ತು ಹಂಚಿಕೆಯಲ್ಲಿ ಎಣಿಕೆಯಾಗುತ್ತದೆ; ರಿಟರ್ನ್‌ನಲ್ಲಿ ಅಲ್ಲ.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'ಮೊತ್ತ ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'ನಗದು ಬಾಕಿ ಹೊಂದಿಸಿ';
 }

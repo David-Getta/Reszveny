@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Signaux techniques",
   "glossaryPageTitle": "Glossaire",
   "glossaryPageSubtitle": "Des explications simples de chaque chiffre affiché par l’app, du P/E au RSI",
-  "glossarySearchHint": "Rechercher dans le glossaire"
+  "glossarySearchHint": "Rechercher dans le glossaire",
+  "portfolioCash": "Liquidités",
+  "portfolioCashTitle": "Solde de liquidités",
+  "portfolioCashHint": "Argent non investi chez votre courtier, par devise. Compte dans la valeur totale et la répartition ; pas dans le rendement.",
+  "portfolioCashAmount": "Montant ({currency})",
+  "portfolioCashEdit": "Définir le solde de liquidités"
 }

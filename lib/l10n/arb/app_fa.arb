@@ -730,5 +730,10 @@
   "signalAlertsNotification": "سیگنال‌های تکنیکال",
   "glossaryPageTitle": "واژه‌نامه",
   "glossaryPageSubtitle": "توضیح ساده هر عددی که برنامه نشان می‌دهد، از P/E تا RSI",
-  "glossarySearchHint": "جستجو در واژه‌نامه"
+  "glossarySearchHint": "جستجو در واژه‌نامه",
+  "portfolioCash": "نقد",
+  "portfolioCashTitle": "موجودی نقد",
+  "portfolioCashHint": "پول سرمایه‌گذاری‌نشده نزد کارگزار شما، به تفکیک ارز. در ارزش کل و ترکیب حساب می‌شود؛ در بازده نه.",
+  "portfolioCashAmount": "مبلغ ({currency})",
+  "portfolioCashEdit": "تعیین موجودی نقد"
 }

@@ -48,7 +48,7 @@ class _PortfolioSnapshotBuilderState extends State<PortfolioSnapshotBuilder> {
       builder: (context, _) {
         final positions = services.portfolio.positions;
         final currency = PortfolioSnapshot.totalCurrency(positions, services.displayCurrency(locale));
-        final key = '$currency|${services.portfolio.lots.map((l) => l.id).join(',')}';
+        final key = '$currency|${services.portfolio.lots.map((l) => l.id).join(',')}|${services.portfolio.cash}';
         if (key != _key) {
           _key = key;
           _future = PortfolioSnapshot.load(
@@ -57,6 +57,7 @@ class _PortfolioSnapshotBuilderState extends State<PortfolioSnapshotBuilder> {
             fx: services.fx,
             currency: currency,
             closed: services.portfolio.closedPositions,
+            cash: services.portfolio.cash,
           ).then((s) => _last = s);
         }
         return FutureBuilder<PortfolioSnapshot>(
@@ -193,7 +194,7 @@ class _PortfolioBody extends StatelessWidget {
                         Text(l10n.portfolioTotalValue, style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),
                         const SizedBox(height: 4),
                         Text(
-                          s.unknown ? l10n.notAvailable : fmt.money(s.value, ccy),
+                          s.unknown ? l10n.notAvailable : fmt.money(s.totalValue, ccy),
                           style: theme.textTheme.headlineMedium,
                         ),
                         const SizedBox(height: 14),
@@ -214,6 +215,12 @@ class _PortfolioBody extends StatelessWidget {
                               color: gainColor(p, s.gain),
                             ),
                             _Stat(label: l10n.portfolioInvested, value: fmt.money(s.cost, ccy)),
+                            if (s.cash > 0)
+                              _Stat(
+                                key: const ValueKey('portfolio-cash'),
+                                label: l10n.portfolioCash,
+                                value: fmt.money(s.cash, ccy),
+                              ),
                             if (s.annualReturn case final r?)
                               Tooltip(
                                 message: l10n.portfolioAnnualReturnHint,
@@ -431,6 +438,15 @@ class AllocationCard extends StatefulWidget {
 }
 
 class _AllocationCardState extends State<AllocationCard> {
+  /// A készpénz is egy sor a megoszlásban (ha van).
+  List<({String label, double weight})> _withCash(List<({String label, double weight})> entries) {
+    final s = widget.snapshot;
+    if (s.cash <= 0 || s.totalValue <= 0) return entries;
+    final l10n = AppLocalizations.of(context);
+    return [...entries, (label: l10n.portfolioCash, weight: s.cash / s.totalValue)]
+      ..sort((a, b) => b.weight.compareTo(a.weight));
+  }
+
   AllocationBy _by = AllocationBy.positions;
   Future<Map<String, ({String? sector, String? country})>>? _profiles;
 
@@ -489,12 +505,15 @@ class _AllocationCardState extends State<AllocationCard> {
               AllocationBy.positions => Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  AllocationBar(entries: groupWeights(widget.rows, (r) => r.position.symbol), fmt: widget.fmt),
+                  AllocationBar(
+                    entries: _withCash(groupWeights(widget.rows, (r) => r.position.symbol)),
+                    fmt: widget.fmt,
+                  ),
                   _Targets(snapshot: widget.snapshot, fmt: widget.fmt),
                 ],
               ),
               AllocationBy.currencies => AllocationBar(
-                entries: groupWeights(widget.rows, (r) => r.position.currency),
+                entries: _withCash(groupWeights(widget.rows, (r) => r.position.currency)),
                 fmt: widget.fmt,
               ),
               AllocationBy.sectors || AllocationBy.countries => FutureBuilder(
@@ -504,13 +523,15 @@ class _AllocationCardState extends State<AllocationCard> {
                   if (profiles == null) return const LinearProgressIndicator();
                   return AllocationBar(
                     key: ValueKey('allocation-${_by.name}'),
-                    entries: groupWeights(widget.rows, (r) {
-                      final p = profiles[r.position.symbol];
-                      final name = _by == AllocationBy.sectors
-                          ? Terms.industry(p?.sector, locale)
-                          : Terms.country(p?.country, locale);
-                      return name ?? l10n.notAvailable;
-                    }),
+                    entries: _withCash(
+                      groupWeights(widget.rows, (r) {
+                        final p = profiles[r.position.symbol];
+                        final name = _by == AllocationBy.sectors
+                            ? Terms.industry(p?.sector, locale)
+                            : Terms.country(p?.country, locale);
+                        return name ?? l10n.notAvailable;
+                      }),
+                    ),
                     fmt: widget.fmt,
                   );
                 },

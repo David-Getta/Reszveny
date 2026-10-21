@@ -730,5 +730,10 @@
   "signalAlertsNotification": "ଟେକ୍ନିକାଲ ସିଗନାଲ",
   "glossaryPageTitle": "ଶବ୍ଦକୋଷ",
   "glossaryPageSubtitle": "P/E ରୁ RSI ପର୍ୟ୍ୟନ୍ତ, ଆପ୍ ଦେଖାଉଥିବା ପ୍ରତ୍ୟେକ ସଂଖ୍ୟାର ସରଳ ବ୍ୟାଖ୍ୟା",
-  "glossarySearchHint": "ଶବ୍ଦକୋଷରେ ଖୋଜନ୍ତୁ"
+  "glossarySearchHint": "ଶବ୍ଦକୋଷରେ ଖୋଜନ୍ତୁ",
+  "portfolioCash": "ନଗଦ",
+  "portfolioCashTitle": "ନଗଦ ବାଲାନ୍ସ",
+  "portfolioCashHint": "ଆପଣଙ୍କ ବ୍ରୋକର ନିକଟରେ ଥିବା ନିବେଶ ହୋଇନଥିବା ଅର୍ଥ, ମୁଦ୍ରା ଅନୁସାରେ। ଏହା ମୋଟ ମୂଲ୍ୟ ଏବଂ ବଣ୍ଟନରେ ଗଣନା ହୁଏ; ରିଟର୍ନରେ ନୁହେଁ।",
+  "portfolioCashAmount": "ରାଶି ({currency})",
+  "portfolioCashEdit": "ନଗଦ ବାଲାନ୍ସ ସେଟ କରନ୍ତୁ"
 }

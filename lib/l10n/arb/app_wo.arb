@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Màndargay teknik",
   "glossaryPageTitle": "Limu baat yi",
   "glossaryPageSubtitle": "Leeral yu yomb ci lim bu nekk bi app bi di wone, dale ko ci P/E ba ci RSI",
-  "glossarySearchHint": "Seet ci limu baat yi"
+  "glossarySearchHint": "Seet ci limu baat yi",
+  "portfolioCash": "Xaalis",
+  "portfolioCashTitle": "Xaalis bi des",
+  "portfolioCashHint": "Xaalis bi nga dugalul ci sa broker, ci wàllu xaalis bu nekk. Dañu koy waññi ci mboolem njëg ak séddale; waaye du ci benefis.",
+  "portfolioCashAmount": "Lim ({currency})",
+  "portfolioCashEdit": "Tëral xaalis bi des"
 }

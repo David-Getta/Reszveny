@@ -2759,4 +2759,22 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Cerca nel glossario';
+
+  @override
+  String get portfolioCash => 'Liquidità';
+
+  @override
+  String get portfolioCashTitle => 'Saldo liquidità';
+
+  @override
+  String get portfolioCashHint =>
+      'Denaro non investito presso il tuo broker, per valuta. Conta nel valore totale e nella ripartizione; non nel rendimento.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Importo ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Imposta saldo liquidità';
 }

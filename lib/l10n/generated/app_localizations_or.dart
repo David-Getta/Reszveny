@@ -2750,4 +2750,22 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'ଶବ୍ଦକୋଷରେ ଖୋଜନ୍ତୁ';
+
+  @override
+  String get portfolioCash => 'ନଗଦ';
+
+  @override
+  String get portfolioCashTitle => 'ନଗଦ ବାଲାନ୍ସ';
+
+  @override
+  String get portfolioCashHint =>
+      'ଆପଣଙ୍କ ବ୍ରୋକର ନିକଟରେ ଥିବା ନିବେଶ ହୋଇନଥିବା ଅର୍ଥ, ମୁଦ୍ରା ଅନୁସାରେ। ଏହା ମୋଟ ମୂଲ୍ୟ ଏବଂ ବଣ୍ଟନରେ ଗଣନା ହୁଏ; ରିଟର୍ନରେ ନୁହେଁ।';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'ରାଶି ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'ନଗଦ ବାଲାନ୍ସ ସେଟ କରନ୍ତୁ';
 }

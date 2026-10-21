@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Технички сигнали",
   "glossaryPageTitle": "Поимник",
   "glossaryPageSubtitle": "Едноставни објаснувања за секоја бројка што ја прикажува апликацијата, од P/E до RSI",
-  "glossarySearchHint": "Пребарај во поимникот"
+  "glossarySearchHint": "Пребарај во поимникот",
+  "portfolioCash": "Готовина",
+  "portfolioCashTitle": "Салдо во готовина",
+  "portfolioCashHint": "Неинвестирани пари кај вашиот брокер, по валута. Се сметаат во вкупната вредност и распределбата; не во приносот.",
+  "portfolioCashAmount": "Износ ({currency})",
+  "portfolioCashEdit": "Постави салдо во готовина"
 }

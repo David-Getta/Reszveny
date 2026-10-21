@@ -2747,4 +2747,22 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Seet ci limu baat yi';
+
+  @override
+  String get portfolioCash => 'Xaalis';
+
+  @override
+  String get portfolioCashTitle => 'Xaalis bi des';
+
+  @override
+  String get portfolioCashHint =>
+      'Xaalis bi nga dugalul ci sa broker, ci wàllu xaalis bu nekk. Dañu koy waññi ci mboolem njëg ak séddale; waaye du ci benefis.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Lim ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Tëral xaalis bi des';
 }

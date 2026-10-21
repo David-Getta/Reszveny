@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Siginonin fasaha",
   "glossaryPageTitle": "Ƙamus na kalmomi",
   "glossaryPageSubtitle": "Bayani mai sauƙi kan kowace alkaluma da manhajar ke nunawa, daga P/E har RSI",
-  "glossarySearchHint": "Bincika a cikin ƙamus"
+  "glossarySearchHint": "Bincika a cikin ƙamus",
+  "portfolioCash": "Tsabar kuɗi",
+  "portfolioCashTitle": "Ma'aunin tsabar kuɗi",
+  "portfolioCashHint": "Kuɗin da ba a zuba ba a wurin dillalinku, bisa nau'in kuɗi. Ana ƙidaya shi a jimillar ƙima da rabon kaso; ba a riba ba.",
+  "portfolioCashAmount": "Adadi ({currency})",
+  "portfolioCashEdit": "Saita ma'aunin tsabar kuɗi"
 }

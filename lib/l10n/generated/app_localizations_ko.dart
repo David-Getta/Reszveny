@@ -2680,4 +2680,22 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get glossarySearchHint => '용어집 검색';
+
+  @override
+  String get portfolioCash => '현금';
+
+  @override
+  String get portfolioCashTitle => '현금 잔고';
+
+  @override
+  String get portfolioCashHint =>
+      '증권사 계좌에 있는 미투자 자금(통화별). 총평가액과 비중에는 포함되지만 수익률에는 포함되지 않습니다.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return '금액($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => '현금 잔고 설정';
 }

@@ -2760,4 +2760,22 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Keba mu diumvuija dia miaku';
+
+  @override
+  String get portfolioCash => 'Mfranga ya mu bianza';
+
+  @override
+  String get portfolioCashTitle => 'Mfranga ya mu bianza idiku';
+
+  @override
+  String get portfolioCashHint =>
+      'Mfranga iudi kuyi muteke mu mushinga kudi broker webe, ku mfranga yonso. Idi ibadibua mu mushinga wonso ne mu diabanya; kayi mu dipeta.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Bungi ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Teka mfranga ya mu bianza';
 }

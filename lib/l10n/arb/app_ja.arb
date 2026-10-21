@@ -730,5 +730,10 @@
   "signalAlertsNotification": "テクニカルシグナル",
   "glossaryPageTitle": "用語集",
   "glossaryPageSubtitle": "アプリに表示される数値をやさしく解説、P/EからRSIまで",
-  "glossarySearchHint": "用語集を検索"
+  "glossarySearchHint": "用語集を検索",
+  "portfolioCash": "現金",
+  "portfolioCashTitle": "現金残高",
+  "portfolioCashHint": "証券口座にある未投資の資金（通貨別）。評価額合計と構成には含まれますが、リターンには含まれません。",
+  "portfolioCashAmount": "金額（{currency}）",
+  "portfolioCashEdit": "現金残高を設定"
 }

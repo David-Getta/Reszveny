@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Sinyal teknikal",
   "glossaryPageTitle": "Glosarium",
   "glossaryPageSubtitle": "Penjelasan sederhana setiap angka yang ditampilkan aplikasi, dari P/E hingga RSI",
-  "glossarySearchHint": "Cari di glosarium"
+  "glossarySearchHint": "Cari di glosarium",
+  "portfolioCash": "Kas",
+  "portfolioCashTitle": "Saldo kas",
+  "portfolioCashHint": "Uang yang belum diinvestasikan di broker Anda, per mata uang. Dihitung dalam nilai total dan alokasi; tidak dalam imbal hasil.",
+  "portfolioCashAmount": "Jumlah ({currency})",
+  "portfolioCashEdit": "Atur saldo kas"
 }

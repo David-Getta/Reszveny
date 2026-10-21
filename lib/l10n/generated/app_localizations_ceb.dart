@@ -2763,4 +2763,22 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Pangitaa sa glosaryo';
+
+  @override
+  String get portfolioCash => 'Cash';
+
+  @override
+  String get portfolioCashTitle => 'Balanse sa cash';
+
+  @override
+  String get portfolioCashHint =>
+      'Wala pa mapuhunan nga kuwarta sa imong broker, matag currency. Maapil kini sa kinatibuk-ang bili ug alokasyon; dili sa kita.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Kantidad ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'I-set ang balanse sa cash';
 }

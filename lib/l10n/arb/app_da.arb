@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Tekniske signaler",
   "glossaryPageTitle": "Ordliste",
   "glossaryPageSubtitle": "Enkle forklaringer på hvert tal, appen viser, fra P/E til RSI",
-  "glossarySearchHint": "Søg i ordlisten"
+  "glossarySearchHint": "Søg i ordlisten",
+  "portfolioCash": "Kontanter",
+  "portfolioCashTitle": "Kontantsaldo",
+  "portfolioCashHint": "Ikke-investerede penge hos din mægler, pr. valuta. Tæller med i den samlede værdi og fordelingen; ikke i afkastet.",
+  "portfolioCashAmount": "Beløb ({currency})",
+  "portfolioCashEdit": "Angiv kontantsaldo"
 }

@@ -730,5 +730,10 @@
   "signalAlertsNotification": "기술적 신호",
   "glossaryPageTitle": "용어집",
   "glossaryPageSubtitle": "앱에 표시되는 모든 수치를 쉽게 설명, P/E부터 RSI까지",
-  "glossarySearchHint": "용어집 검색"
+  "glossarySearchHint": "용어집 검색",
+  "portfolioCash": "현금",
+  "portfolioCashTitle": "현금 잔고",
+  "portfolioCashHint": "증권사 계좌에 있는 미투자 자금(통화별). 총평가액과 비중에는 포함되지만 수익률에는 포함되지 않습니다.",
+  "portfolioCashAmount": "금액({currency})",
+  "portfolioCashEdit": "현금 잔고 설정"
 }

@@ -730,5 +730,10 @@
   "signalAlertsNotification": "तकनीकी संकेत",
   "glossaryPageTitle": "शब्दावली",
   "glossaryPageSubtitle": "ऐपमे देखाओल हरेक आँकड़ाक सरल व्याख्या, P/E सँ RSI धरि",
-  "glossarySearchHint": "शब्दावलीमे खोजू"
+  "glossarySearchHint": "शब्दावलीमे खोजू",
+  "portfolioCash": "नकद",
+  "portfolioCashTitle": "नकद बैलेंस",
+  "portfolioCashHint": "अहाँक ब्रोकरक लग बिना निवेश केल पाइ, मुद्राक अनुसार। ई कुल मूल्य आ आवंटनमे गानल जाइत अछि; रिटर्नमे नहि।",
+  "portfolioCashAmount": "राशि ({currency})",
+  "portfolioCashEdit": "नकद बैलेंस सेट करू"
 }

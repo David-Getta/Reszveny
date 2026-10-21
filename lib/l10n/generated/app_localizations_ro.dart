@@ -2794,4 +2794,22 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Caută în glosar';
+
+  @override
+  String get portfolioCash => 'Numerar';
+
+  @override
+  String get portfolioCashTitle => 'Sold de numerar';
+
+  @override
+  String get portfolioCashHint =>
+      'Bani neinvestiți la brokerul tău, pe valute. Se includ în valoarea totală și în distribuție; nu în randament.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Sumă ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Setează soldul de numerar';
 }

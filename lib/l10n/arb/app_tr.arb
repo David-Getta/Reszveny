@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Teknik sinyaller",
   "glossaryPageTitle": "Sözlük",
   "glossaryPageSubtitle": "Uygulamadaki her rakamın sade açıklaması, P/E'den RSI'ya",
-  "glossarySearchHint": "Sözlükte ara"
+  "glossarySearchHint": "Sözlükte ara",
+  "portfolioCash": "Nakit",
+  "portfolioCashTitle": "Nakit bakiyesi",
+  "portfolioCashHint": "Aracı kurumunuzdaki yatırılmamış para, para birimine göre. Toplam değere ve dağılıma dahildir; getiriye dahil değildir.",
+  "portfolioCashAmount": "Tutar ({currency})",
+  "portfolioCashEdit": "Nakit bakiyesini ayarla"
 }

@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Texnik signallar",
   "glossaryPageTitle": "Atamalar lug‘ati",
   "glossaryPageSubtitle": "Ilova ko‘rsatadigan har bir ko‘rsatkichning sodda izohi, P/E dan RSI gacha",
-  "glossarySearchHint": "Lug‘atdan qidirish"
+  "glossarySearchHint": "Lug‘atdan qidirish",
+  "portfolioCash": "Naqd pul",
+  "portfolioCashTitle": "Naqd pul qoldigʻi",
+  "portfolioCashHint": "Brokeringizdagi investitsiya qilinmagan pul, valyuta boʻyicha. Umumiy qiymat va taqsimotga kiradi; daromadlilikka kirmaydi.",
+  "portfolioCashAmount": "Summa ({currency})",
+  "portfolioCashEdit": "Naqd pul qoldigʻini belgilash"
 }

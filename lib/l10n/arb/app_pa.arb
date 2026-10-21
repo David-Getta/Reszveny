@@ -730,5 +730,10 @@
   "signalAlertsNotification": "ਤਕਨੀਕੀ ਸਿਗਨਲ",
   "glossaryPageTitle": "ਸ਼ਬਦਾਵਲੀ",
   "glossaryPageSubtitle": "P/E ਤੋਂ RSI ਤੱਕ, ਐਪ ਵਿੱਚ ਦਿਖਾਏ ਹਰ ਅੰਕੜੇ ਦੀ ਸਰਲ ਵਿਆਖਿਆ",
-  "glossarySearchHint": "ਸ਼ਬਦਾਵਲੀ ਵਿੱਚ ਖੋਜੋ"
+  "glossarySearchHint": "ਸ਼ਬਦਾਵਲੀ ਵਿੱਚ ਖੋਜੋ",
+  "portfolioCash": "ਨਕਦ",
+  "portfolioCashTitle": "ਨਕਦ ਬਕਾਇਆ",
+  "portfolioCashHint": "ਤੁਹਾਡੇ ਬ੍ਰੋਕਰ ਕੋਲ ਪਿਆ ਨਿਵੇਸ਼ ਨਾ ਕੀਤਾ ਪੈਸਾ, ਮੁਦਰਾ ਅਨੁਸਾਰ। ਇਹ ਕੁੱਲ ਮੁੱਲ ਅਤੇ ਵੰਡ ਵਿੱਚ ਗਿਣਿਆ ਜਾਂਦਾ ਹੈ; ਰਿਟਰਨ ਵਿੱਚ ਨਹੀਂ।",
+  "portfolioCashAmount": "ਰਕਮ ({currency})",
+  "portfolioCashEdit": "ਨਕਦ ਬਕਾਇਆ ਸੈੱਟ ਕਰੋ"
 }

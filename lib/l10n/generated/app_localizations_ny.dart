@@ -2759,4 +2759,22 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Sakani mu mndandanda wa mawu';
+
+  @override
+  String get portfolioCash => 'Ndalama';
+
+  @override
+  String get portfolioCashTitle => 'Ndalama zotsala';
+
+  @override
+  String get portfolioCashHint =>
+      'Ndalama zosayikidwa kwa broker wanu, malinga ndi mtundu wa ndalama. Zimawerengedwa mu mtengo wonse ndi kagawidwe; osati mu phindu.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Kuchuluka ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Ikani ndalama zotsala';
 }

@@ -2739,4 +2739,22 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Bao gom-biis võor pʋgẽ';
+
+  @override
+  String get portfolioCash => 'Ligdi';
+
+  @override
+  String get portfolioCashTitle => 'Ligd sẽn ket';
+
+  @override
+  String get portfolioCashHint =>
+      'Ligd sẽn ka kẽes f broker nengẽ, ligd buud fãa. B geelg-a-la yõod fãa la pʋɩɩbo pʋgẽ; la ka nafa pʋgẽ ye.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Ligd sõor ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Ning ligd sẽn ket';
 }

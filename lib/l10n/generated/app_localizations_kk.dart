@@ -2753,4 +2753,22 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Глоссарийден іздеу';
+
+  @override
+  String get portfolioCash => 'Қолма-қол қаражат';
+
+  @override
+  String get portfolioCashTitle => 'Қолма-қол қаражат қалдығы';
+
+  @override
+  String get portfolioCashHint =>
+      'Брокеріңіздегі салынбаған қаражат, валюта бойынша. Жалпы құн мен құрылымда есептеледі; кірістілікте есептелмейді.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Сома ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Қолма-қол қалдықты орнату';
 }

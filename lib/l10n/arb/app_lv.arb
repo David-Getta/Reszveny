@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Tehniskie signāli",
   "glossaryPageTitle": "Terminu vārdnīca",
   "glossaryPageSubtitle": "Vienkārši skaidrojumi katram lietotnes rādītājam, no P/E līdz RSI",
-  "glossarySearchHint": "Meklēt vārdnīcā"
+  "glossarySearchHint": "Meklēt vārdnīcā",
+  "portfolioCash": "Nauda",
+  "portfolioCashTitle": "Naudas atlikums",
+  "portfolioCashHint": "Neieguldīta nauda pie jūsu brokera, pa valūtām. Ieskaitīta kopējā vērtībā un sadalījumā; ne ienesīgumā.",
+  "portfolioCashAmount": "Summa ({currency})",
+  "portfolioCashEdit": "Iestatīt naudas atlikumu"
 }

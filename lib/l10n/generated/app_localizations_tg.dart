@@ -2754,4 +2754,22 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Ҷустуҷӯ дар луғат';
+
+  @override
+  String get portfolioCash => 'Пули нақд';
+
+  @override
+  String get portfolioCashTitle => 'Бақияи пули нақд';
+
+  @override
+  String get portfolioCashHint =>
+      'Пули сармоягузорӣ нашуда дар брокери шумо, аз рӯи асъор. Ба арзиши умумӣ ва тақсимот ҳисоб мешавад; ба даромаднокӣ не.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Маблағ ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Бақияи пули нақдро муқаррар кунед';
 }

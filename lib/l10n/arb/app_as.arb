@@ -730,5 +730,10 @@
   "signalAlertsNotification": "কাৰিকৰী সংকেত",
   "glossaryPageTitle": "শব্দকোষ",
   "glossaryPageSubtitle": "এপটোৱে দেখুওৱা প্ৰতিটো সংখ্যাৰ সৰল ব্যাখ্যা, P/E ৰ পৰা RSI লৈকে",
-  "glossarySearchHint": "শব্দকোষত সন্ধান কৰক"
+  "glossarySearchHint": "শব্দকোষত সন্ধান কৰক",
+  "portfolioCash": "নগদ",
+  "portfolioCashTitle": "নগদ বেলেঞ্চ",
+  "portfolioCashHint": "আপোনাৰ ব্ৰ'কাৰৰ ওচৰত থকা বিনিয়োগ নকৰা টকা, মুদ্ৰা অনুসৰি। ই মুঠ মূল্য আৰু বিতৰণত গণ্য হয়; ৰিটাৰ্ণত নহয়।",
+  "portfolioCashAmount": "পৰিমাণ ({currency})",
+  "portfolioCashEdit": "নগদ বেলেঞ্চ ছেট কৰক"
 }

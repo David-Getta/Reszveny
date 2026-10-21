@@ -2746,4 +2746,22 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'חיפוש במילון המונחים';
+
+  @override
+  String get portfolioCash => 'מזומן';
+
+  @override
+  String get portfolioCashTitle => 'יתרת מזומן';
+
+  @override
+  String get portfolioCashHint =>
+      'כסף שלא הושקע אצל הברוקר, לפי מטבע. נכלל בשווי הכולל ובפיזור; לא בתשואה.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'סכום ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'הגדרת יתרת מזומן';
 }

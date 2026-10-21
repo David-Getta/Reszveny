@@ -2752,4 +2752,22 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Sözlükte ara';
+
+  @override
+  String get portfolioCash => 'Nakit';
+
+  @override
+  String get portfolioCashTitle => 'Nakit bakiyesi';
+
+  @override
+  String get portfolioCashHint =>
+      'Aracı kurumunuzdaki yatırılmamış para, para birimine göre. Toplam değere ve dağılıma dahildir; getiriye dahil değildir.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Tutar ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Nakit bakiyesini ayarla';
 }

@@ -2754,4 +2754,22 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Caria thĩinĩ wa mataaro';
+
+  @override
+  String get portfolioCash => 'Mbeca cia moko';
+
+  @override
+  String get portfolioCashTitle => 'Mbeca cia moko iria irĩ ho';
+
+  @override
+  String get portfolioCashHint =>
+      'Mbeca itaigĩtwo irĩ kwa broker waku, kũringana na mũthemba wa mbeca. Itaragwo thogora-inĩ wothe na ũgayanio-inĩ; ti uumithio-inĩ.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Mũigana ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Iga mbeca cia moko';
 }

@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Mallattoolee teeknikaa",
   "glossaryPageTitle": "Hiika jechootaa",
   "glossaryPageSubtitle": "Ibsa salphaa lakkoofsa hunda appiin agarsiisu, P/E irraa hanga RSI",
-  "glossarySearchHint": "Hiika jechootaa keessa barbaadi"
+  "glossarySearchHint": "Hiika jechootaa keessa barbaadi",
+  "portfolioCash": "Maallaqa callaa",
+  "portfolioCashTitle": "Hafaa maallaqaa",
+  "portfolioCashHint": "Maallaqa brokera kee bira jiru kan invastii hin godhamne, akka gosa maallaqaatiin. Gatii waliigalaa fi qoqqoodinsa keessatti lakkaa'ama; bu'aa keessatti hin lakkaa'amu.",
+  "portfolioCashAmount": "Hamma ({currency})",
+  "portfolioCashEdit": "Hafaa maallaqaa qindeessi"
 }

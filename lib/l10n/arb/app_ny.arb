@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Zizindikiro zaukadaulo",
   "glossaryPageTitle": "Mndandanda wa mawu",
   "glossaryPageSubtitle": "Mafotokozedwe osavuta a nambala iliyonse yomwe pulogalamuyi imasonyeza, kuyambira P/E mpaka RSI",
-  "glossarySearchHint": "Sakani mu mndandanda wa mawu"
+  "glossarySearchHint": "Sakani mu mndandanda wa mawu",
+  "portfolioCash": "Ndalama",
+  "portfolioCashTitle": "Ndalama zotsala",
+  "portfolioCashHint": "Ndalama zosayikidwa kwa broker wanu, malinga ndi mtundu wa ndalama. Zimawerengedwa mu mtengo wonse ndi kagawidwe; osati mu phindu.",
+  "portfolioCashAmount": "Kuchuluka ({currency})",
+  "portfolioCashEdit": "Ikani ndalama zotsala"
 }

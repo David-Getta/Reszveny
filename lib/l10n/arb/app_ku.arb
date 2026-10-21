@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Sînyalên teknîkî",
   "glossaryPageTitle": "Ferhengok",
   "glossaryPageSubtitle": "Ravekirinên hêsan ên her hejmara ku sepan nîşan dide, ji P/E heta RSI",
-  "glossarySearchHint": "Di ferhengokê de bigere"
+  "glossarySearchHint": "Di ferhengokê de bigere",
+  "portfolioCash": "Pereyê nexd",
+  "portfolioCashTitle": "Bakiyeya nexd",
+  "portfolioCashHint": "Pereyê ku hîn nehatiye veberhênandin li cem brokerê te, li gorî dirav. Di nirxa giştî û dabeşkirinê de tê hesibandin; di qezencê de na.",
+  "portfolioCashAmount": "Mîqdar ({currency})",
+  "portfolioCashEdit": "Bakiyeya nexd diyar bike"
 }

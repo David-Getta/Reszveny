@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Isyarat teknikal",
   "glossaryPageTitle": "Glosari",
   "glossaryPageSubtitle": "Penjelasan mudah bagi setiap angka yang dipaparkan apl, daripada P/E hingga RSI",
-  "glossarySearchHint": "Cari dalam glosari"
+  "glossarySearchHint": "Cari dalam glosari",
+  "portfolioCash": "Tunai",
+  "portfolioCashTitle": "Baki tunai",
+  "portfolioCashHint": "Wang yang belum dilaburkan di broker anda, mengikut mata wang. Dikira dalam jumlah nilai dan peruntukan; tidak dalam pulangan.",
+  "portfolioCashAmount": "Jumlah ({currency})",
+  "portfolioCashEdit": "Tetapkan baki tunai"
 }

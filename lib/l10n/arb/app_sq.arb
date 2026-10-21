@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Sinjale teknike",
   "glossaryPageTitle": "Fjalorth",
   "glossaryPageSubtitle": "Shpjegime të thjeshta për çdo shifër që tregon aplikacioni, nga P/E deri te RSI",
-  "glossarySearchHint": "Kërko në fjalorth"
+  "glossarySearchHint": "Kërko në fjalorth",
+  "portfolioCash": "Para të gatshme",
+  "portfolioCashTitle": "Gjendja e parave të gatshme",
+  "portfolioCashHint": "Para të painvestuara te brokeri juaj, sipas monedhës. Përfshihen në vlerën totale dhe shpërndarjen; jo në kthimin.",
+  "portfolioCashAmount": "Shuma ({currency})",
+  "portfolioCashEdit": "Cakto gjendjen e parave të gatshme"
 }

@@ -730,5 +730,10 @@
   "signalAlertsNotification": "ٽيڪنيڪل سگنل",
   "glossaryPageTitle": "لغت",
   "glossaryPageSubtitle": "P/E کان RSI تائين، ايپ ۾ ڏيکاريل هر انگ جي سادي وضاحت",
-  "glossarySearchHint": "لغت ۾ ڳوليو"
+  "glossarySearchHint": "لغت ۾ ڳوليو",
+  "portfolioCash": "نقد",
+  "portfolioCashTitle": "نقد بيلنس",
+  "portfolioCashHint": "توهان جي بروڪر وٽ سيڙپ نه ڪيل رقم، ڪرنسي مطابق. اها ڪل قدر ۽ ورهاست ۾ ڳڻي وڃي ٿي؛ رٽرن ۾ نه.",
+  "portfolioCashAmount": "رقم ({currency})",
+  "portfolioCashEdit": "نقد بيلنس سيٽ ڪريو"
 }

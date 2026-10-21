@@ -2731,4 +2731,22 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'ស្វែងរកក្នុងសទ្ទានុក្រម';
+
+  @override
+  String get portfolioCash => 'សាច់ប្រាក់';
+
+  @override
+  String get portfolioCashTitle => 'សមតុល្យសាច់ប្រាក់';
+
+  @override
+  String get portfolioCashHint =>
+      'ប្រាក់ដែលមិនទាន់វិនិយោគនៅឈ្មួញកណ្តាលរបស់អ្នក តាមរូបិយប័ណ្ណ។ រាប់បញ្ចូលក្នុងតម្លៃសរុប និងការបែងចែក ប៉ុន្តែមិនរាប់ក្នុងទិន្នផលទេ។';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'ចំនួនទឹកប្រាក់ ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'កំណត់សមតុល្យសាច់ប្រាក់';
 }

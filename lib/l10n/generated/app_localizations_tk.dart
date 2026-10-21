@@ -2753,4 +2753,22 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Sözlükde gözle';
+
+  @override
+  String get portfolioCash => 'Nagt pul';
+
+  @override
+  String get portfolioCashTitle => 'Nagt pul galyndysy';
+
+  @override
+  String get portfolioCashHint =>
+      'Brokeriňizdäki goýulmadyk pul, walýuta boýunça. Umumy gymmata we paýlanyşa goşulýar; girdejililige goşulmaýar.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Möçber ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Nagt pul galyndysyny belle';
 }

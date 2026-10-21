@@ -730,5 +730,10 @@
   "signalAlertsNotification": "تخنیکي سیګنالونه",
   "glossaryPageTitle": "د اصطلاحاتو لړلیک",
   "glossaryPageSubtitle": "د اپ د هر شمېر ساده تشریح، له P/E څخه تر RSI پورې",
-  "glossarySearchHint": "په اصطلاحاتو کې لټون"
+  "glossarySearchHint": "په اصطلاحاتو کې لټون",
+  "portfolioCash": "نغدې",
+  "portfolioCashTitle": "نغدي بیلانس",
+  "portfolioCashHint": "ستاسو د بروکر سره پانګونه نه شوې پیسې، د اسعارو له مخې. دا په ټول ارزښت او وېش کې حسابېږي؛ په ګټه کې نه.",
+  "portfolioCashAmount": "مقدار ({currency})",
+  "portfolioCashEdit": "نغدي بیلانس ټاکل"
 }

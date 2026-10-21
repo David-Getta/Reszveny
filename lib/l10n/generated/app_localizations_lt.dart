@@ -2823,4 +2823,22 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Ieškoti žodynėlyje';
+
+  @override
+  String get portfolioCash => 'Grynieji';
+
+  @override
+  String get portfolioCashTitle => 'Grynųjų likutis';
+
+  @override
+  String get portfolioCashHint =>
+      'Neinvestuoti pinigai pas jūsų brokerį, pagal valiutas. Įskaitomi į bendrą vertę ir paskirstymą; ne į grąžą.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Suma ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Nustatyti grynųjų likutį';
 }

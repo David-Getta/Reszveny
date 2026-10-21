@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Tekniset signaalit",
   "glossaryPageTitle": "Sanasto",
   "glossaryPageSubtitle": "Selkeät selitykset jokaiselle sovelluksen luvulle, P/E:stä RSI:hin",
-  "glossarySearchHint": "Hae sanastosta"
+  "glossarySearchHint": "Hae sanastosta",
+  "portfolioCash": "Käteinen",
+  "portfolioCashTitle": "Käteissaldo",
+  "portfolioCashHint": "Sijoittamaton raha välittäjälläsi, valuutoittain. Lasketaan kokonaisarvoon ja jakaumaan; ei tuottoon.",
+  "portfolioCashAmount": "Summa ({currency})",
+  "portfolioCashEdit": "Aseta käteissaldo"
 }

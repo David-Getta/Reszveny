@@ -2800,4 +2800,22 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Претражи појмовник';
+
+  @override
+  String get portfolioCash => 'Готовина';
+
+  @override
+  String get portfolioCashTitle => 'Стање готовине';
+
+  @override
+  String get portfolioCashHint =>
+      'Неуложен новац код вашег брокера, по валутама. Рачуна се у укупну вредност и расподелу; не у принос.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Износ ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Подеси стање готовине';
 }

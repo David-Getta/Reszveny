@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Texniki siqnallar",
   "glossaryPageTitle": "Lüğət",
   "glossaryPageSubtitle": "Tətbiqin göstərdiyi hər rəqəmin sadə izahı, P/E-dən RSI-yə qədər",
-  "glossarySearchHint": "Lüğətdə axtar"
+  "glossarySearchHint": "Lüğətdə axtar",
+  "portfolioCash": "Nağd",
+  "portfolioCashTitle": "Nağd qalıq",
+  "portfolioCashHint": "Brokerinizdəki yatırılmamış pul, valyuta üzrə. Ümumi dəyərə və bölgüyə daxil edilir; gəlirliliyə daxil edilmir.",
+  "portfolioCashAmount": "Məbləğ ({currency})",
+  "portfolioCashEdit": "Nağd qalığı təyin et"
 }

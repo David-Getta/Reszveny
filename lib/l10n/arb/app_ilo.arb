@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Dagiti teknikal a senial",
   "glossaryPageTitle": "Glosario",
   "glossaryPageSubtitle": "Simple a panangilawlawag iti tunggal numero nga ipakita ti app, manipud P/E agingga RSI",
-  "glossarySearchHint": "Agbirok iti glosario"
+  "glossarySearchHint": "Agbirok iti glosario",
+  "portfolioCash": "Cash",
+  "portfolioCashTitle": "Balanse ti cash",
+  "portfolioCashHint": "Kuarta a saan pay a naipuonan iti brokermo, iti tunggal currency. Maibilang daytoy iti dagup a pateg ken panangbingay; saan nga iti ganansia.",
+  "portfolioCashAmount": "Gatad ({currency})",
+  "portfolioCashEdit": "I-set ti balanse ti cash"
 }

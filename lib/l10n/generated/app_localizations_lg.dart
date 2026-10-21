@@ -2762,4 +2762,22 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Noonya mu nnyinyonnyola y\'ebigambo';
+
+  @override
+  String get portfolioCash => 'Ensimbi enkalu';
+
+  @override
+  String get portfolioCashTitle => 'Ensimbi enkalu eziriwo';
+
+  @override
+  String get portfolioCashHint =>
+      'Ensimbi ezitasiigiddwa eziri ewa broker wo, buli kika kya ssente. Zibalirwa mu muwendo gwonna ne mu ngabanya; so si mu magoba.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Omuwendo ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Teeka ensimbi enkalu eziriwo';
 }

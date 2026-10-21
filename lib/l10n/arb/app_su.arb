@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Sinyal téknis",
   "glossaryPageTitle": "Daptar istilah",
   "glossaryPageSubtitle": "Katerangan basajan unggal angka anu dipidangkeun aplikasi, ti P/E dugi ka RSI",
-  "glossarySearchHint": "Paluruh dina daptar istilah"
+  "glossarySearchHint": "Paluruh dina daptar istilah",
+  "portfolioCash": "Tunai",
+  "portfolioCashTitle": "Saldo tunai",
+  "portfolioCashHint": "Artos anu teu acan diinvestasikeun di broker anjeun, dumasar mata uang. Diitung dina total nilai sareng alokasi; henteu dina hasil.",
+  "portfolioCashAmount": "Jumlah ({currency})",
+  "portfolioCashEdit": "Setel saldo tunai"
 }

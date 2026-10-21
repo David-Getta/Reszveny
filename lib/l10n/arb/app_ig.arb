@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Akara teknikal",
   "glossaryPageTitle": "Nkọwa okwu",
   "glossaryPageSubtitle": "Nkọwa dị mfe maka ọnụọgụ ọ bụla ngwa a na-egosi, site na P/E ruo RSI",
-  "glossarySearchHint": "Chọọ na nkọwa okwu"
+  "glossarySearchHint": "Chọọ na nkọwa okwu",
+  "portfolioCash": "Ego ka ego",
+  "portfolioCashTitle": "Ego ka ego fọdụrụ",
+  "portfolioCashHint": "Ego a na-etinyebeghị n'ahịa dị n'aka onye ọrụ ahịa gị (broker), dịka ụdị ego. A na-agụnye ya na ngụkọta uru na nkesa; ọ bụghị n'uru.",
+  "portfolioCashAmount": "Ego ole ({currency})",
+  "portfolioCashEdit": "Tọọ ego ka ego fọdụrụ"
 }

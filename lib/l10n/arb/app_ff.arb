@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Maandeeji teknik",
   "glossaryPageTitle": "Ɓaŋngirde kelme",
   "glossaryPageSubtitle": "Pirtoore newiinde kala limoore nde app ndee hollata, gila P/E haa RSI",
-  "glossarySearchHint": "Yiylo e ɓaŋngirde kelme"
+  "glossarySearchHint": "Yiylo e ɓaŋngirde kelme",
+  "portfolioCash": "Kaalis",
+  "portfolioCashTitle": "Keddiiɗum kaalis",
+  "portfolioCashHint": "Kaalis mo waɗaaka e njulaagu to broker maa, e kala ceede. Ina limee e kuuɓal njaru e peccugol; wonaa e nafoore.",
+  "portfolioCashAmount": "Limoore ({currency})",
+  "portfolioCashEdit": "Teelto keddiiɗum kaalis"
 }

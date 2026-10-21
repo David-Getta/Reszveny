@@ -730,5 +730,10 @@
   "signalAlertsNotification": "तांत्रिक संकेत",
   "glossaryPageTitle": "शब्दकोश",
   "glossaryPageSubtitle": "P/E पासून RSI पर्यंत, अ‍ॅप दाखवणाऱ्या प्रत्येक आकड्याचे सोपे स्पष्टीकरण",
-  "glossarySearchHint": "शब्दकोशात शोधा"
+  "glossarySearchHint": "शब्दकोशात शोधा",
+  "portfolioCash": "रोख",
+  "portfolioCashTitle": "रोख शिल्लक",
+  "portfolioCashHint": "तुमच्या ब्रोकरकडे असलेली गुंतवणूक न केलेली रक्कम, चलनानुसार. ती एकूण मूल्य आणि वाटणीत मोजली जाते; परताव्यात नाही.",
+  "portfolioCashAmount": "रक्कम ({currency})",
+  "portfolioCashEdit": "रोख शिल्लक सेट करा"
 }

@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Zviratidzo zvetekiniki",
   "glossaryPageTitle": "Tsanangudzo yemazwi",
   "glossaryPageSubtitle": "Tsanangudzo dziri nyore dzenhamba dzose dzinoratidzwa neapp, kubva pa P/E kusvika pa RSI",
-  "glossarySearchHint": "Tsvaga mutsanangudzo yemazwi"
+  "glossarySearchHint": "Tsvaga mutsanangudzo yemazwi",
+  "portfolioCash": "Mari",
+  "portfolioCashTitle": "Mari yasara",
+  "portfolioCashHint": "Mari isina kuiswa kuna broker wako, nerudzi rwemari. Inoverengwa mukukosha kwese nemukugoverwa; kwete mupundutso.",
+  "portfolioCashAmount": "Huwandu ({currency})",
+  "portfolioCashEdit": "Isa mari yasara"
 }

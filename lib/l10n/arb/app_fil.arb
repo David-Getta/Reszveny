@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Mga technical signal",
   "glossaryPageTitle": "Glosaryo",
   "glossaryPageSubtitle": "Simpleng paliwanag sa bawat numerong ipinapakita ng app, mula P/E hanggang RSI",
-  "glossarySearchHint": "Maghanap sa glosaryo"
+  "glossarySearchHint": "Maghanap sa glosaryo",
+  "portfolioCash": "Cash",
+  "portfolioCashTitle": "Cash balance",
+  "portfolioCashHint": "Hindi pa naipuhunang pera sa iyong broker, bawat currency. Kasama ito sa kabuuang halaga at hatian; hindi sa kita.",
+  "portfolioCashAmount": "Halaga ({currency})",
+  "portfolioCashEdit": "Itakda ang cash balance"
 }

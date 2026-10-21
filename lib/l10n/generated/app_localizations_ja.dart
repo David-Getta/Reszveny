@@ -2668,4 +2668,22 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get glossarySearchHint => '用語集を検索';
+
+  @override
+  String get portfolioCash => '現金';
+
+  @override
+  String get portfolioCashTitle => '現金残高';
+
+  @override
+  String get portfolioCashHint =>
+      '証券口座にある未投資の資金（通貨別）。評価額合計と構成には含まれますが、リターンには含まれません。';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return '金額（$currency）';
+  }
+
+  @override
+  String get portfolioCashEdit => '現金残高を設定';
 }

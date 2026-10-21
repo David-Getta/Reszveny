@@ -2763,4 +2763,22 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Rechercher dans le glossaire';
+
+  @override
+  String get portfolioCash => 'Liquidités';
+
+  @override
+  String get portfolioCashTitle => 'Solde de liquidités';
+
+  @override
+  String get portfolioCashHint =>
+      'Argent non investi chez votre courtier, par devise. Compte dans la valeur totale et la répartition ; pas dans le rendement.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Montant ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Définir le solde de liquidités';
 }

@@ -2750,4 +2750,22 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Chèche nan glosè a';
+
+  @override
+  String get portfolioCash => 'Lajan kach';
+
+  @override
+  String get portfolioCashTitle => 'Balans lajan kach';
+
+  @override
+  String get portfolioCashHint =>
+      'Lajan ki pa envesti kay koutye ou, pa deviz. Li konte nan valè total ak repatisyon an; pa nan rannman an.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Montan ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Fikse balans lajan kach';
 }

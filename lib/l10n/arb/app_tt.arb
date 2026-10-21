@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Техник сигналлар",
   "glossaryPageTitle": "Терминнар сүзлеге",
   "glossaryPageSubtitle": "Кушымта күрсәткән һәр күрсәткечнең гади аңлатмасы, P/E-дан RSI-га кадәр",
-  "glossarySearchHint": "Сүзлектә эзләү"
+  "glossarySearchHint": "Сүзлектә эзләү",
+  "portfolioCash": "Акча",
+  "portfolioCashTitle": "Акча калдыгы",
+  "portfolioCashHint": "Брокерыгыздагы салынмаган акча, валюта буенча. Гомуми кыйммәткә һәм бүленешкә исәпләнә; керемлелеккә исәпләнми.",
+  "portfolioCashAmount": "Сумма ({currency})",
+  "portfolioCashEdit": "Акча калдыгын куегыз"
 }

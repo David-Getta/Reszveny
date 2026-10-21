@@ -2744,4 +2744,22 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'لغت ۾ ڳوليو';
+
+  @override
+  String get portfolioCash => 'نقد';
+
+  @override
+  String get portfolioCashTitle => 'نقد بيلنس';
+
+  @override
+  String get portfolioCashHint =>
+      'توهان جي بروڪر وٽ سيڙپ نه ڪيل رقم، ڪرنسي مطابق. اها ڪل قدر ۽ ورهاست ۾ ڳڻي وڃي ٿي؛ رٽرن ۾ نه.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'رقم ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'نقد بيلنس سيٽ ڪريو';
 }

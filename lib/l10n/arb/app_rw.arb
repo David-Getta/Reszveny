@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Ibimenyetso bya tekiniki",
   "glossaryPageTitle": "Ibisobanuro by'amagambo",
   "glossaryPageSubtitle": "Ibisobanuro byoroshye by'imibare yose porogaramu yerekana, kuva ku P/E kugeza ku RSI",
-  "glossarySearchHint": "Shakisha mu bisobanuro by'amagambo"
+  "glossarySearchHint": "Shakisha mu bisobanuro by'amagambo",
+  "portfolioCash": "Amafaranga",
+  "portfolioCashTitle": "Amafaranga asigaye",
+  "portfolioCashHint": "Amafaranga ataratangwa mu gushora kuri broker wawe, ku bwoko bw'ifaranga. Abarwa mu gaciro kose no mu ikwirakwizwa; ntabarwa mu nyungu.",
+  "portfolioCashAmount": "Umubare ({currency})",
+  "portfolioCashEdit": "Shyiraho amafaranga asigaye"
 }

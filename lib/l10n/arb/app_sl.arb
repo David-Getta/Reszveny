@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Tehnični signali",
   "glossaryPageTitle": "Slovar pojmov",
   "glossaryPageSubtitle": "Preproste razlage vsake številke v aplikaciji, od P/E do RSI",
-  "glossarySearchHint": "Išči po slovarju"
+  "glossarySearchHint": "Išči po slovarju",
+  "portfolioCash": "Gotovina",
+  "portfolioCashTitle": "Stanje gotovine",
+  "portfolioCashHint": "Nenaloženi denar pri vašem borznem posredniku, po valutah. Šteje v skupno vrednost in razporeditev, ne pa v donos.",
+  "portfolioCashAmount": "Znesek ({currency})",
+  "portfolioCashEdit": "Nastavi stanje gotovine"
 }

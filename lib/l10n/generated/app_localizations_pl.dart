@@ -2825,4 +2825,22 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Szukaj w słowniczku';
+
+  @override
+  String get portfolioCash => 'Gotówka';
+
+  @override
+  String get portfolioCashTitle => 'Saldo gotówkowe';
+
+  @override
+  String get portfolioCashHint =>
+      'Niezainwestowane środki u brokera, według waluty. Wliczane do wartości łącznej i struktury, ale nie do stopy zwrotu.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Kwota ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Ustaw saldo gotówkowe';
 }

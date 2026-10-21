@@ -2826,4 +2826,22 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Поиск по глоссарию';
+
+  @override
+  String get portfolioCash => 'Денежные средства';
+
+  @override
+  String get portfolioCashTitle => 'Остаток денежных средств';
+
+  @override
+  String get portfolioCashHint =>
+      'Неинвестированные деньги на брокерском счёте, по валютам. Учитываются в общей стоимости и структуре, но не в доходности.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Сумма ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Указать остаток средств';
 }

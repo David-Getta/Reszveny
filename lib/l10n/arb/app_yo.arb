@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Àwọn àmì ìmọ̀-ẹ̀rọ",
   "glossaryPageTitle": "Àtòjọ àwọn ọ̀rọ̀",
   "glossaryPageSubtitle": "Àlàyé rírọrùn fún gbogbo nọ́mbà tí ìṣàfilọ́lẹ̀ náà ń fi hàn, láti P/E dé RSI",
-  "glossarySearchHint": "Wá nínú àtòjọ àwọn ọ̀rọ̀"
+  "glossarySearchHint": "Wá nínú àtòjọ àwọn ọ̀rọ̀",
+  "portfolioCash": "Owó",
+  "portfolioCashTitle": "Owó tó kù",
+  "portfolioCashHint": "Owó tí o kò tíì dókòwò lọ́dọ̀ bíróòkà rẹ, gẹ́gẹ́ bí irú owó. Ó wà nínú àpapọ̀ iye àti ìpínkiri; kò sí nínú èrè.",
+  "portfolioCashAmount": "Iye ({currency})",
+  "portfolioCashEdit": "Ṣètò owó tó kù"
 }

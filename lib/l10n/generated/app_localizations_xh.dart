@@ -2765,4 +2765,22 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Khangela kuluhlu lwamagama';
+
+  @override
+  String get portfolioCash => 'Imali';
+
+  @override
+  String get portfolioCashTitle => 'Ibhalansi yemali';
+
+  @override
+  String get portfolioCashHint =>
+      'Imali engatyalwanga kubroker wakho, ngohlobo lwemali. Ibalwa kwixabiso elipheleleyo nakulwabiwo; hayi kwinzuzo.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Isixa ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Misela ibhalansi yemali';
 }

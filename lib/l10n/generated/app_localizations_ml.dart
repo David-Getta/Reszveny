@@ -2764,4 +2764,22 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'പദാവലിയിൽ തിരയുക';
+
+  @override
+  String get portfolioCash => 'പണം';
+
+  @override
+  String get portfolioCashTitle => 'പണ ബാലൻസ്';
+
+  @override
+  String get portfolioCashHint =>
+      'നിങ്ങളുടെ ബ്രോക്കറുടെ അടുത്തുള്ള നിക്ഷേപിക്കാത്ത പണം, കറൻസി തിരിച്ച്. ഇത് ആകെ മൂല്യത്തിലും വിന്യാസത്തിലും കണക്കാക്കും; വരുമാനത്തിൽ ഉൾപ്പെടില്ല.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'തുക ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'പണ ബാലൻസ് സജ്ജമാക്കുക';
 }

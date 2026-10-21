@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Señales técnicas",
   "glossaryPageTitle": "Glosario",
   "glossaryPageSubtitle": "Explicaciones sencillas de cada cifra que muestra la app, del P/E al RSI",
-  "glossarySearchHint": "Buscar en el glosario"
+  "glossarySearchHint": "Buscar en el glosario",
+  "portfolioCash": "Efectivo",
+  "portfolioCashTitle": "Saldo en efectivo",
+  "portfolioCashHint": "Dinero no invertido en tu bróker, por moneda. Cuenta en el valor total y la distribución; no en la rentabilidad.",
+  "portfolioCashAmount": "Importe ({currency})",
+  "portfolioCashEdit": "Definir saldo en efectivo"
 }

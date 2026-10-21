@@ -730,5 +730,10 @@
   "signalAlertsNotification": "สัญญาณทางเทคนิค",
   "glossaryPageTitle": "อภิธานศัพท์",
   "glossaryPageSubtitle": "คำอธิบายง่าย ๆ ของทุกตัวเลขที่แอปแสดง ตั้งแต่ P/E ถึง RSI",
-  "glossarySearchHint": "ค้นหาในอภิธานศัพท์"
+  "glossarySearchHint": "ค้นหาในอภิธานศัพท์",
+  "portfolioCash": "เงินสด",
+  "portfolioCashTitle": "ยอดเงินสด",
+  "portfolioCashHint": "เงินที่ยังไม่ได้ลงทุนในบัญชีโบรกเกอร์ของคุณ แยกตามสกุลเงิน นับรวมในมูลค่ารวมและสัดส่วนการลงทุน แต่ไม่นับในผลตอบแทน",
+  "portfolioCashAmount": "จำนวนเงิน ({currency})",
+  "portfolioCashEdit": "ตั้งค่ายอดเงินสด"
 }

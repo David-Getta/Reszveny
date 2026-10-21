@@ -2755,4 +2755,22 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Di le nyagɔmeɖeɖea me';
+
+  @override
+  String get portfolioCash => 'Ga le asi';
+
+  @override
+  String get portfolioCashTitle => 'Ga si le asi ƒe home';
+
+  @override
+  String get portfolioCashHint =>
+      'Ga si mède eme o, si le wò broker gbɔ, le ga ƒomevi ɖe sia ɖe nu. Wobua eŋu le asi blibo kple mama me; menye le viɖe me o.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Home xexlẽ ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Ɖo ga si le asi ƒe home';
 }

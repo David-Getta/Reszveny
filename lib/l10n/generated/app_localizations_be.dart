@@ -2823,4 +2823,22 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Пошук у гласарыі';
+
+  @override
+  String get portfolioCash => 'Грошы';
+
+  @override
+  String get portfolioCashTitle => 'Грашовы рэшт';
+
+  @override
+  String get portfolioCashHint =>
+      'Неўкладзеныя грошы ў брокера, па валютах. Улічваюцца ў агульнай вартасці і размеркаванні; не ўлічваюцца ў даходнасці.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Сума ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Задаць грашовы рэшт';
 }

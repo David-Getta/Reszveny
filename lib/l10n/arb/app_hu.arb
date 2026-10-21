@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Technikai jelzések",
   "glossaryPageTitle": "Fogalomtár",
   "glossaryPageSubtitle": "Közérthető magyarázat az app minden mutatójához, a P/E-től az RSI-ig",
-  "glossarySearchHint": "Keresés a fogalomtárban"
+  "glossarySearchHint": "Keresés a fogalomtárban",
+  "portfolioCash": "Készpénz",
+  "portfolioCashTitle": "Készpénz-egyenleg",
+  "portfolioCashHint": "A brókernél tartott, be nem fektetett pénz pénznemenként. Az összértékbe és a megoszlásba számít, a hozamba nem.",
+  "portfolioCashAmount": "Összeg ({currency})",
+  "portfolioCashEdit": "Készpénz-egyenleg megadása"
 }

@@ -2771,4 +2771,22 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Hikaroka ao amin\'ny rakibolana';
+
+  @override
+  String get portfolioCash => 'Vola';
+
+  @override
+  String get portfolioCashTitle => 'Vola eo an-tanana';
+
+  @override
+  String get portfolioCashHint =>
+      'Vola tsy mbola napetraka any amin\'ny brokera-nao, isaky ny karazam-bola. Isaina ao amin\'ny fitambaran\'ny sanda sy ny fizarana; tsy isaina ao amin\'ny tombony.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Habetsahana ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Hametraka ny vola eo an-tanana';
 }

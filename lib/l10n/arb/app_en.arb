@@ -2342,5 +2342,31 @@
   "glossarySearchHint": "Search the glossary",
   "@glossarySearchHint": {
     "description": "Hint text of the search field at the top of the glossary page."
+  },
+  "portfolioCash": "Cash",
+  "@portfolioCash": {
+    "description": "Label of the cash held at the broker: a row in the portfolio allocation chart and a figure on the portfolio summary."
+  },
+  "portfolioCashTitle": "Cash balance",
+  "@portfolioCashTitle": {
+    "description": "Title of the dialog where the user enters the cash held at their broker, per currency."
+  },
+  "portfolioCashHint": "Uninvested money at your broker, by currency. It counts in the total value and the allocation; not in returns.",
+  "@portfolioCashHint": {
+    "description": "Explanation in the cash-balance dialog."
+  },
+  "portfolioCashAmount": "Amount ({currency})",
+  "@portfolioCashAmount": {
+    "description": "Field label in the cash-balance dialog; {currency} is a 3-letter code such as USD.",
+    "placeholders": {
+      "currency": {
+        "type": "String",
+        "example": "USD"
+      }
+    }
+  },
+  "portfolioCashEdit": "Set cash balance",
+  "@portfolioCashEdit": {
+    "description": "Button that opens the cash-balance dialog (portfolio page menu)."
   }
 }

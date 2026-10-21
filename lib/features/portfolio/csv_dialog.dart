@@ -8,7 +8,9 @@ import '../../core/share/share_text.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 import 'holdings_import.dart';
+import 'cash_dialog.dart';
 import 'portfolio_csv.dart';
+import 'portfolio_valuation.dart';
 
 /// A portfólió menüje: exportálás CSV-be (megosztással), importálás beillesztett sorokból.
 class PortfolioCsvMenu extends StatelessWidget {
@@ -29,6 +31,17 @@ class PortfolioCsvMenu extends StatelessWidget {
           );
         } else if (v == 'dividends') {
           await shareText(dividendsCsv(services.portfolio.dividends), subject: 'WhatStock dividends.csv');
+        } else if (v == 'cash') {
+          if (context.mounted) {
+            final positions = services.portfolio.positions;
+            await showCashDialog(
+              context,
+              currency: PortfolioSnapshot.totalCurrency(
+                positions,
+                services.displayCurrency(Localizations.localeOf(context)),
+              ),
+            );
+          }
         } else if (v == 'realized') {
           await shareText(realizedCsv(services.portfolio.allPositions), subject: 'WhatStock realized-gains.csv');
         } else if (v == 'photo') {
@@ -59,6 +72,11 @@ class PortfolioCsvMenu extends StatelessWidget {
             value: 'dividends',
             child: ListTile(leading: const Icon(Icons.payments_outlined), title: Text(l10n.portfolioExportDividends)),
           ),
+        PopupMenuItem(
+          key: const ValueKey('portfolio-cash-edit'),
+          value: 'cash',
+          child: ListTile(leading: const Icon(Icons.savings_outlined), title: Text(l10n.portfolioCashEdit)),
+        ),
         PopupMenuItem(
           key: const ValueKey('portfolio-import-photo'),
           value: 'photo',

@@ -2752,4 +2752,22 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Search di glossary';
+
+  @override
+  String get portfolioCash => 'Cash';
+
+  @override
+  String get portfolioCashTitle => 'Cash balance';
+
+  @override
+  String get portfolioCashHint =>
+      'Moni wey you no still invest for your broker, by currency. E dey count for total value and how e share; e no dey count for return.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Amount ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Set cash balance';
 }

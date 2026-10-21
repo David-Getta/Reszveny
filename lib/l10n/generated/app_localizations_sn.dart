@@ -2757,4 +2757,22 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Tsvaga mutsanangudzo yemazwi';
+
+  @override
+  String get portfolioCash => 'Mari';
+
+  @override
+  String get portfolioCashTitle => 'Mari yasara';
+
+  @override
+  String get portfolioCashHint =>
+      'Mari isina kuiswa kuna broker wako, nerudzi rwemari. Inoverengwa mukukosha kwese nemukugoverwa; kwete mupundutso.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Huwandu ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Isa mari yasara';
 }

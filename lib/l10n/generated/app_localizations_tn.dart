@@ -2772,4 +2772,22 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Batla mo lenaaneng la mafoko';
+
+  @override
+  String get portfolioCash => 'Madi';
+
+  @override
+  String get portfolioCashTitle => 'Madi a a setseng';
+
+  @override
+  String get portfolioCashHint =>
+      'Madi a a sa beeletswang kwa go broker wa gago, ka mofuta wa madi. A balelwa mo bolengng jotlhe le mo kabong; e seng mo poelong.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Palo ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Baya madi a a setseng';
 }

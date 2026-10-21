@@ -2750,4 +2750,22 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Wá nínú àtòjọ àwọn ọ̀rọ̀';
+
+  @override
+  String get portfolioCash => 'Owó';
+
+  @override
+  String get portfolioCashTitle => 'Owó tó kù';
+
+  @override
+  String get portfolioCashHint =>
+      'Owó tí o kò tíì dókòwò lọ́dọ̀ bíróòkà rẹ, gẹ́gẹ́ bí irú owó. Ó wà nínú àpapọ̀ iye àti ìpínkiri; kò sí nínú èrè.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Iye ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Ṣètò owó tó kù';
 }

@@ -2750,4 +2750,22 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Nadi deg umawal';
+
+  @override
+  String get portfolioCash => 'Idrimen n ufus';
+
+  @override
+  String get portfolioCashTitle => 'Idrimen n ufus yellan';
+
+  @override
+  String get portfolioCashHint =>
+      'Idrimen ur yettwasersen ara ɣer broker-ik, s yal tadrimt. Ttwaḥesben deg wazal amatu d beṭṭu; mačči deg ufaris.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Azal ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Sbadu idrimen n ufus';
 }

@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Техникалык сигналдар",
   "glossaryPageTitle": "Глоссарий",
   "glossaryPageSubtitle": "Колдонмо көрсөткөн ар бир көрсөткүчтүн жөнөкөй түшүндүрмөсү, P/E-ден RSI-ге чейин",
-  "glossarySearchHint": "Глоссарийден издөө"
+  "glossarySearchHint": "Глоссарийден издөө",
+  "portfolioCash": "Нак акча",
+  "portfolioCashTitle": "Нак акча калдыгы",
+  "portfolioCashHint": "Брокериңиздеги салынбаган акча, валюта боюнча. Жалпы наркта жана бөлүштүрүүдө эсепке алынат; кирешелүүлүктө эсепке алынбайт.",
+  "portfolioCashAmount": "Сумма ({currency})",
+  "portfolioCashEdit": "Нак акча калдыгын коюу"
 }

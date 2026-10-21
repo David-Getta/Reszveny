@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Sinais técnicos",
   "glossaryPageTitle": "Glossário",
   "glossaryPageSubtitle": "Explicações simples de cada número que o app mostra, de P/E a RSI",
-  "glossarySearchHint": "Buscar no glossário"
+  "glossarySearchHint": "Buscar no glossário",
+  "portfolioCash": "Caixa",
+  "portfolioCashTitle": "Saldo em caixa",
+  "portfolioCashHint": "Dinheiro não investido na sua corretora, por moeda. Conta no valor total e na distribuição; não na rentabilidade.",
+  "portfolioCashAmount": "Valor ({currency})",
+  "portfolioCashEdit": "Definir saldo em caixa"
 }

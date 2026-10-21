@@ -120,7 +120,7 @@ Work only from the provided data and your general knowledge (no web access); giv
 
 Write in the requested language the way a native financial journalist would, plainly and without jargon (explain a term the first time you use it). Sections, in this order (kind: content):
 - summary: 2-3 sentences on the overall picture and the single most important point.
-- diversification: concentration (largest positions, top-3 weight), sector and country spread, and what is missing. A holding marked with a "note" has no company profile: it is probably an ETF or a fund – treat it as a basket (the index or theme it tracks, from its ticker and your knowledge), count its exposure in the sector and country spread accordingly, and say what you assumed.
+- diversification: concentration (largest positions, top-3 weight), sector and country spread, and what is missing; if "cash" is given (uninvested money in the portfolio currency), say what share of the whole it is and what it means. A holding marked with a "note" has no company profile: it is probably an ETF or a fund – treat it as a basket (the index or theme it tracks, from its ticker and your knowledge), count its exposure in the sector and country spread accordingly, and say what you assumed.
 - currency: the currency split and what a move in the main currencies would do to the reader's home-currency value.
 - risks: risks shared by several positions (same theme, supplier, rate sensitivity, valuation level, beta), and the biggest single point of failure.
 - income: dividend yield of the portfolio and of the main payers; if "dividends_received_12m" is given (cash actually received in the last 12 months, in the portfolio currency), compare it with what the yield implies; skip the section only if no position pays and nothing was received.
@@ -135,6 +135,7 @@ Return one JSON object: {"headline": string (one sentence: the most decision-rel
     required double invested,
     double? dividendYield,
     double? dividendsReceived,
+    double cash = 0,
     required String language,
     required DateTime today,
     String model = '',
@@ -160,6 +161,8 @@ Return one JSON object: {"headline": string (one sentence: the most decision-rel
               'dividend_yield_pct': ?dividendYield == null ? null : double.parse(dividendYield.toStringAsFixed(2)),
               // Az elmúlt 12 hónapban ténylegesen kapott osztalék (ha rögzítette a felhasználó).
               'dividends_received_12m': ?dividendsReceived == null || dividendsReceived <= 0 ? null : dividendsReceived.round(),
+              // Be nem fektetett készpénz a brókernél (ha megadta).
+              if (cash > 0) 'cash': cash.round(),
               'positions': [for (final h in holdings) h.toJson()],
             })}',
       },
@@ -210,6 +213,7 @@ Return one JSON object: {"headline": string (one sentence: the most decision-rel
       invested: snapshot.cost,
       dividendYield: snapshot.dividendYield,
       dividendsReceived: dividendsReceived,
+      cash: snapshot.cash,
       language: language,
       today: _clock(),
       model: config.anthropicModel,

@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Tehnički signali",
   "glossaryPageTitle": "Pojmovnik",
   "glossaryPageSubtitle": "Jednostavna objašnjenja svake brojke u aplikaciji, od P/E do RSI",
-  "glossarySearchHint": "Pretraži pojmovnik"
+  "glossarySearchHint": "Pretraži pojmovnik",
+  "portfolioCash": "Gotovina",
+  "portfolioCashTitle": "Stanje gotovine",
+  "portfolioCashHint": "Neuloženi novac kod vašeg brokera, po valutama. Računa se u ukupnu vrijednost i raspodjelu; ne u prinos.",
+  "portfolioCashAmount": "Iznos ({currency})",
+  "portfolioCashEdit": "Postavi stanje gotovine"
 }

@@ -2746,4 +2746,22 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'शब्दावलीमे खोजू';
+
+  @override
+  String get portfolioCash => 'नकद';
+
+  @override
+  String get portfolioCashTitle => 'नकद बैलेंस';
+
+  @override
+  String get portfolioCashHint =>
+      'अहाँक ब्रोकरक लग बिना निवेश केल पाइ, मुद्राक अनुसार। ई कुल मूल्य आ आवंटनमे गानल जाइत अछि; रिटर्नमे नहि।';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'राशि ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'नकद बैलेंस सेट करू';
 }

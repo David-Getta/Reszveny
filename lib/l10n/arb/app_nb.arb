@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Tekniske signaler",
   "glossaryPageTitle": "Ordliste",
   "glossaryPageSubtitle": "Enkle forklaringer på alle tall appen viser, fra P/E til RSI",
-  "glossarySearchHint": "Søk i ordlisten"
+  "glossarySearchHint": "Søk i ordlisten",
+  "portfolioCash": "Kontanter",
+  "portfolioCashTitle": "Kontantbeholdning",
+  "portfolioCashHint": "Uinvesterte penger hos megleren din, per valuta. Teller med i samlet verdi og fordeling, men ikke i avkastningen.",
+  "portfolioCashAmount": "Beløp ({currency})",
+  "portfolioCashEdit": "Angi kontantbeholdning"
 }

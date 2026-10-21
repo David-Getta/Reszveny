@@ -2761,4 +2761,22 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Ka raadi qaamuuska';
+
+  @override
+  String get portfolioCash => 'Lacag caddaan';
+
+  @override
+  String get portfolioCashTitle => 'Haraaga lacagta';
+
+  @override
+  String get portfolioCashHint =>
+      'Lacag aan la maalgelin oo ku jirta dilaalkaaga, lacag kasta gaar. Waxaa lagu xisaabiyaa wadarta qiimaha iyo qaybinta; laguma xisaabiyo faa\'iidada.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Qaddarka ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Deji haraaga lacagta';
 }

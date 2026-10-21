@@ -2763,4 +2763,22 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Luka na ndimbola ya maloba';
+
+  @override
+  String get portfolioCash => 'Mbɔngɔ ya mabɔkɔ';
+
+  @override
+  String get portfolioCashTitle => 'Mbɔngɔ ya mabɔkɔ etikali';
+
+  @override
+  String get portfolioCashHint =>
+      'Mbɔngɔ oyo otiaki naino te na mombongo epai ya broker na yo, na mbɔngɔ mokomoko. Etangami na motuya mobimba mpe na bokaboli; etangami te na litomba.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Motuya ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Tiá mbɔngɔ ya mabɔkɔ';
 }

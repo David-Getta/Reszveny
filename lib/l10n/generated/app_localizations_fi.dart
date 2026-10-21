@@ -2753,4 +2753,22 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Hae sanastosta';
+
+  @override
+  String get portfolioCash => 'Käteinen';
+
+  @override
+  String get portfolioCashTitle => 'Käteissaldo';
+
+  @override
+  String get portfolioCashHint =>
+      'Sijoittamaton raha välittäjälläsi, valuutoittain. Lasketaan kokonaisarvoon ja jakaumaan; ei tuottoon.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Summa ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Aseta käteissaldo';
 }

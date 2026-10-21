@@ -2752,4 +2752,22 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Søk i ordlisten';
+
+  @override
+  String get portfolioCash => 'Kontanter';
+
+  @override
+  String get portfolioCashTitle => 'Kontantbeholdning';
+
+  @override
+  String get portfolioCashHint =>
+      'Uinvesterte penger hos megleren din, per valuta. Teller med i samlet verdi og fordeling, men ikke i avkastningen.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Beløp ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Angi kontantbeholdning';
 }

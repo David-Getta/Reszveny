@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Calaamadaha farsamo",
   "glossaryPageTitle": "Qaamuuska ereyada",
   "glossaryPageSubtitle": "Sharaxaad fudud oo tiro kasta oo appku muujiyo, laga bilaabo P/E ilaa RSI",
-  "glossarySearchHint": "Ka raadi qaamuuska"
+  "glossarySearchHint": "Ka raadi qaamuuska",
+  "portfolioCash": "Lacag caddaan",
+  "portfolioCashTitle": "Haraaga lacagta",
+  "portfolioCashHint": "Lacag aan la maalgelin oo ku jirta dilaalkaaga, lacag kasta gaar. Waxaa lagu xisaabiyaa wadarta qiimaha iyo qaybinta; laguma xisaabiyo faa'iidada.",
+  "portfolioCashAmount": "Qaddarka ({currency})",
+  "portfolioCashEdit": "Deji haraaga lacagta"
 }

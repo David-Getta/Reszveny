@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Технически сигнали",
   "glossaryPageTitle": "Речник",
   "glossaryPageSubtitle": "Прости обяснения на всеки показател в приложението, от P/E до RSI",
-  "glossarySearchHint": "Търсене в речника"
+  "glossarySearchHint": "Търсене в речника",
+  "portfolioCash": "Кеш",
+  "portfolioCashTitle": "Паричен баланс",
+  "portfolioCashHint": "Неинвестирани пари при брокера ви, по валути. Включват се в общата стойност и разпределението; не и в доходността.",
+  "portfolioCashAmount": "Сума ({currency})",
+  "portfolioCashEdit": "Задаване на паричен баланс"
 }

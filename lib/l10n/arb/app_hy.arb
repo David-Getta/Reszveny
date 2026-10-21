@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Տեխնիկական ազդանշաններ",
   "glossaryPageTitle": "Բառարան",
   "glossaryPageSubtitle": "Հավելվածի ցույց տված յուրաքանչյուր ցուցանիշի պարզ բացատրություն՝ P/E-ից մինչև RSI",
-  "glossarySearchHint": "Փնտրել բառարանում"
+  "glossarySearchHint": "Փնտրել բառարանում",
+  "portfolioCash": "Կանխիկ",
+  "portfolioCashTitle": "Կանխիկի մնացորդ",
+  "portfolioCashHint": "Չներդրված գումար ձեր բրոքերի մոտ, ըստ արժույթի։ Հաշվվում է ընդհանուր արժեքում և բաշխման մեջ, ոչ եկամտաբերության մեջ։",
+  "portfolioCashAmount": "Գումար ({currency})",
+  "portfolioCashEdit": "Սահմանել կանխիկի մնացորդը"
 }

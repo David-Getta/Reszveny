@@ -2719,4 +2719,22 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'በመዝገበ ቃላቱ ውስጥ ይፈልጉ';
+
+  @override
+  String get portfolioCash => 'ጥሬ ገንዘብ';
+
+  @override
+  String get portfolioCashTitle => 'የጥሬ ገንዘብ ሚዛን';
+
+  @override
+  String get portfolioCashHint =>
+      'በደላላዎ ዘንድ ያለ ኢንቨስት ያልተደረገ ገንዘብ፣ በምንዛሪ። በጠቅላላ ዋጋ እና በድልድል ውስጥ ይቆጠራል፤ በተመላሽ ውስጥ አይቆጠርም።';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'መጠን ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'የጥሬ ገንዘብ ሚዛን አስቀምጥ';
 }

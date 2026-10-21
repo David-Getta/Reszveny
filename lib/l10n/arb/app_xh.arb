@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Imiqondiso yobuchwepheshe",
   "glossaryPageTitle": "Uluhlu lwamagama",
   "glossaryPageSubtitle": "Iingcaciso ezilula zalo lonke inani eliboniswa yi-app, ukusuka ku-P/E ukuya ku-RSI",
-  "glossarySearchHint": "Khangela kuluhlu lwamagama"
+  "glossarySearchHint": "Khangela kuluhlu lwamagama",
+  "portfolioCash": "Imali",
+  "portfolioCashTitle": "Ibhalansi yemali",
+  "portfolioCashHint": "Imali engatyalwanga kubroker wakho, ngohlobo lwemali. Ibalwa kwixabiso elipheleleyo nakulwabiwo; hayi kwinzuzo.",
+  "portfolioCashAmount": "Isixa ({currency})",
+  "portfolioCashEdit": "Misela ibhalansi yemali"
 }

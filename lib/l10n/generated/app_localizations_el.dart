@@ -2761,4 +2761,22 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Αναζήτηση στο γλωσσάρι';
+
+  @override
+  String get portfolioCash => 'Μετρητά';
+
+  @override
+  String get portfolioCashTitle => 'Υπόλοιπο μετρητών';
+
+  @override
+  String get portfolioCashHint =>
+      'Μη επενδυμένα χρήματα στον χρηματιστή σας, ανά νόμισμα. Μετρούν στη συνολική αξία και στην κατανομή· όχι στην απόδοση.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Ποσό ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Ορισμός υπολοίπου μετρητών';
 }

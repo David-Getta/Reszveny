@@ -2748,4 +2748,22 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'ਸ਼ਬਦਾਵਲੀ ਵਿੱਚ ਖੋਜੋ';
+
+  @override
+  String get portfolioCash => 'ਨਕਦ';
+
+  @override
+  String get portfolioCashTitle => 'ਨਕਦ ਬਕਾਇਆ';
+
+  @override
+  String get portfolioCashHint =>
+      'ਤੁਹਾਡੇ ਬ੍ਰੋਕਰ ਕੋਲ ਪਿਆ ਨਿਵੇਸ਼ ਨਾ ਕੀਤਾ ਪੈਸਾ, ਮੁਦਰਾ ਅਨੁਸਾਰ। ਇਹ ਕੁੱਲ ਮੁੱਲ ਅਤੇ ਵੰਡ ਵਿੱਚ ਗਿਣਿਆ ਜਾਂਦਾ ਹੈ; ਰਿਟਰਨ ਵਿੱਚ ਨਹੀਂ।';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'ਰਕਮ ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'ਨਕਦ ਬਕਾਇਆ ਸੈੱਟ ਕਰੋ';
 }

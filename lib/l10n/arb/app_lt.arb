@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Techniniai signalai",
   "glossaryPageTitle": "Žodynėlis",
   "glossaryPageSubtitle": "Paprasti kiekvieno programėlės rodiklio paaiškinimai, nuo P/E iki RSI",
-  "glossarySearchHint": "Ieškoti žodynėlyje"
+  "glossarySearchHint": "Ieškoti žodynėlyje",
+  "portfolioCash": "Grynieji",
+  "portfolioCashTitle": "Grynųjų likutis",
+  "portfolioCashHint": "Neinvestuoti pinigai pas jūsų brokerį, pagal valiutas. Įskaitomi į bendrą vertę ir paskirstymą; ne į grąžą.",
+  "portfolioCashAmount": "Suma ({currency})",
+  "portfolioCashEdit": "Nustatyti grynųjų likutį"
 }

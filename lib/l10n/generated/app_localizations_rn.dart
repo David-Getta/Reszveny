@@ -2762,4 +2762,22 @@ class AppLocalizationsRn extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Rondera mu nsiguro y\'amajambo';
+
+  @override
+  String get portfolioCash => 'Amafaranga';
+
+  @override
+  String get portfolioCashTitle => 'Amafaranga asigaye';
+
+  @override
+  String get portfolioCashHint =>
+      'Amafaranga ataratangwa mu gushora kwa broker wawe, ku bwoko bw\'ifaranga. Aharurwa mu gaciro kose no mu gusaranganya; ntaharurwa mu nyungu.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Igitigiri ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Shiraho amafaranga asigaye';
 }

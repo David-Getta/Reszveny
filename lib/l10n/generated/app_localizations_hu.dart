@@ -2757,4 +2757,22 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Keresés a fogalomtárban';
+
+  @override
+  String get portfolioCash => 'Készpénz';
+
+  @override
+  String get portfolioCashTitle => 'Készpénz-egyenleg';
+
+  @override
+  String get portfolioCashHint =>
+      'A brókernél tartott, be nem fektetett pénz pénznemenként. Az összértékbe és a megoszlásba számít, a hozamba nem.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Összeg ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Készpénz-egyenleg megadása';
 }

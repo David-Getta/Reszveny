@@ -2771,4 +2771,22 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Lava eka nxaxamelo wa marito';
+
+  @override
+  String get portfolioCash => 'Mali';
+
+  @override
+  String get portfolioCashTitle => 'Mali leyi saleke';
+
+  @override
+  String get portfolioCashHint =>
+      'Mali leyi nga vekisiwangiki eka broker wa wena, hi muxaka wa mali. Yi hlayiwa eka nkoka hinkwawo na ku avanyisa; ku nga ri eka mbuyelo.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Nhlayo ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Veka mali leyi saleke';
 }

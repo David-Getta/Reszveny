@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Ibimenyetso vya tekinike",
   "glossaryPageTitle": "Insiguro y'amajambo",
   "glossaryPageSubtitle": "Insiguro zoroshe z'igitigiri cose porogarama yerekana, kuva ku P/E gushika ku RSI",
-  "glossarySearchHint": "Rondera mu nsiguro y'amajambo"
+  "glossarySearchHint": "Rondera mu nsiguro y'amajambo",
+  "portfolioCash": "Amafaranga",
+  "portfolioCashTitle": "Amafaranga asigaye",
+  "portfolioCashHint": "Amafaranga ataratangwa mu gushora kwa broker wawe, ku bwoko bw'ifaranga. Aharurwa mu gaciro kose no mu gusaranganya; ntaharurwa mu nyungu.",
+  "portfolioCashAmount": "Igitigiri ({currency})",
+  "portfolioCashEdit": "Shiraho amafaranga asigaye"
 }

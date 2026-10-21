@@ -2762,4 +2762,22 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Sosa na dikisionere';
+
+  @override
+  String get portfolioCash => 'Mbongo ya maboko';
+
+  @override
+  String get portfolioCashTitle => 'Mbongo ya maboko yina kele';
+
+  @override
+  String get portfolioCashHint =>
+      'Mbongo yina nge me tula ve na mumbongo na broker na nge, na konso mbongo ya nsi. Yo ke tangwa na ntalu yawonso ti na nkabulu; yo ke tangwa ve na mbakulu.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Ntalu ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Tula mbongo ya maboko';
 }

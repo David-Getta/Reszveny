@@ -730,5 +730,10 @@
   "signalAlertsNotification": "የቴክኒካል ምልክቶች",
   "glossaryPageTitle": "መዝገበ ቃላት",
   "glossaryPageSubtitle": "መተግበሪያው ከሚያሳየው ከP/E እስከ RSI ያለ እያንዳንዱ አኃዝ ቀላል ማብራሪያ",
-  "glossarySearchHint": "በመዝገበ ቃላቱ ውስጥ ይፈልጉ"
+  "glossarySearchHint": "በመዝገበ ቃላቱ ውስጥ ይፈልጉ",
+  "portfolioCash": "ጥሬ ገንዘብ",
+  "portfolioCashTitle": "የጥሬ ገንዘብ ሚዛን",
+  "portfolioCashHint": "በደላላዎ ዘንድ ያለ ኢንቨስት ያልተደረገ ገንዘብ፣ በምንዛሪ። በጠቅላላ ዋጋ እና በድልድል ውስጥ ይቆጠራል፤ በተመላሽ ውስጥ አይቆጠርም።",
+  "portfolioCashAmount": "መጠን ({currency})",
+  "portfolioCashEdit": "የጥሬ ገንዘብ ሚዛን አስቀምጥ"
 }

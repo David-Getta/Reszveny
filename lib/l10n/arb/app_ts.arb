@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Mikombiso ya thekiniki",
   "glossaryPageTitle": "Nxaxamelo wa marito",
   "glossaryPageSubtitle": "Tinhlamuselo to olova ta nomboro yin'wana ni yin'wana leyi app yi yi kombisaka, ku suka eka P/E ku ya eka RSI",
-  "glossarySearchHint": "Lava eka nxaxamelo wa marito"
+  "glossarySearchHint": "Lava eka nxaxamelo wa marito",
+  "portfolioCash": "Mali",
+  "portfolioCashTitle": "Mali leyi saleke",
+  "portfolioCashHint": "Mali leyi nga vekisiwangiki eka broker wa wena, hi muxaka wa mali. Yi hlayiwa eka nkoka hinkwawo na ku avanyisa; ku nga ri eka mbuyelo.",
+  "portfolioCashAmount": "Nhlayo ({currency})",
+  "portfolioCashEdit": "Veka mali leyi saleke"
 }

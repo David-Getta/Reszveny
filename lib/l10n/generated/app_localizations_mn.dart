@@ -2753,4 +2753,22 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Тайлбар толиос хайх';
+
+  @override
+  String get portfolioCash => 'Бэлэн мөнгө';
+
+  @override
+  String get portfolioCashTitle => 'Бэлэн мөнгөний үлдэгдэл';
+
+  @override
+  String get portfolioCashHint =>
+      'Брокер дээрх хөрөнгө оруулаагүй мөнгө, валют тус бүрээр. Нийт үнэ цэнэ болон хуваарилалтад тооцогдоно; өгөөжид тооцогдохгүй.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Дүн ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Бэлэн мөнгөний үлдэгдэл тохируулах';
 }

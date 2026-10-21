@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Технички сигнали",
   "glossaryPageTitle": "Појмовник",
   "glossaryPageSubtitle": "Једноставна објашњења свих бројки које апликација приказује, од P/E до RSI",
-  "glossarySearchHint": "Претражи појмовник"
+  "glossarySearchHint": "Претражи појмовник",
+  "portfolioCash": "Готовина",
+  "portfolioCashTitle": "Стање готовине",
+  "portfolioCashHint": "Неуложен новац код вашег брокера, по валутама. Рачуна се у укупну вредност и расподелу; не у принос.",
+  "portfolioCashAmount": "Износ ({currency})",
+  "portfolioCashEdit": "Подеси стање готовине"
 }

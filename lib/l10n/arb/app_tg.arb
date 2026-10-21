@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Сигналҳои техникӣ",
   "glossaryPageTitle": "Луғати истилоҳот",
   "glossaryPageSubtitle": "Шарҳи оддии ҳар як нишондиҳандаи барнома, аз P/E то RSI",
-  "glossarySearchHint": "Ҷустуҷӯ дар луғат"
+  "glossarySearchHint": "Ҷустуҷӯ дар луғат",
+  "portfolioCash": "Пули нақд",
+  "portfolioCashTitle": "Бақияи пули нақд",
+  "portfolioCashHint": "Пули сармоягузорӣ нашуда дар брокери шумо, аз рӯи асъор. Ба арзиши умумӣ ва тақсимот ҳисоб мешавад; ба даромаднокӣ не.",
+  "portfolioCashAmount": "Маблағ ({currency})",
+  "portfolioCashEdit": "Бақияи пули нақдро муқаррар кунед"
 }

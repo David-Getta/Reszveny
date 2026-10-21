@@ -2773,4 +2773,22 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Agbirok iti glosario';
+
+  @override
+  String get portfolioCash => 'Cash';
+
+  @override
+  String get portfolioCashTitle => 'Balanse ti cash';
+
+  @override
+  String get portfolioCashHint =>
+      'Kuarta a saan pay a naipuonan iti brokermo, iti tunggal currency. Maibilang daytoy iti dagup a pateg ken panangbingay; saan nga iti ganansia.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Gatad ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'I-set ti balanse ti cash';
 }

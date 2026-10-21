@@ -2752,4 +2752,22 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'शब्दकोशात शोधा';
+
+  @override
+  String get portfolioCash => 'रोख';
+
+  @override
+  String get portfolioCashTitle => 'रोख शिल्लक';
+
+  @override
+  String get portfolioCashHint =>
+      'तुमच्या ब्रोकरकडे असलेली गुंतवणूक न केलेली रक्कम, चलनानुसार. ती एकूण मूल्य आणि वाटणीत मोजली जाते; परताव्यात नाही.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'रक्कम ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'रोख शिल्लक सेट करा';
 }

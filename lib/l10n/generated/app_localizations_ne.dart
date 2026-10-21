@@ -2751,4 +2751,22 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'शब्दावलीमा खोज्नुहोस्';
+
+  @override
+  String get portfolioCash => 'नगद';
+
+  @override
+  String get portfolioCashTitle => 'नगद मौज्दात';
+
+  @override
+  String get portfolioCashHint =>
+      'तपाईंको ब्रोकरमा रहेको लगानी नगरिएको रकम, मुद्राअनुसार। यो कुल मूल्य र बाँडफाँटमा गनिन्छ; प्रतिफलमा होइन।';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'रकम ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'नगद मौज्दात सेट गर्नुहोस्';
 }

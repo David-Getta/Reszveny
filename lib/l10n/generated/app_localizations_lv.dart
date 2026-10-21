@@ -2795,4 +2795,22 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Meklēt vārdnīcā';
+
+  @override
+  String get portfolioCash => 'Nauda';
+
+  @override
+  String get portfolioCashTitle => 'Naudas atlikums';
+
+  @override
+  String get portfolioCashHint =>
+      'Neieguldīta nauda pie jūsu brokera, pa valūtām. Ieskaitīta kopējā vērtībā un sadalījumā; ne ienesīgumā.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Summa ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Iestatīt naudas atlikumu';
 }

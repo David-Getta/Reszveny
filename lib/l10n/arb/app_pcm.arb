@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Technical signals",
   "glossaryPageTitle": "Glossary",
   "glossaryPageSubtitle": "Simple explanation of every number wey di app dey show, from P/E to RSI",
-  "glossarySearchHint": "Search di glossary"
+  "glossarySearchHint": "Search di glossary",
+  "portfolioCash": "Cash",
+  "portfolioCashTitle": "Cash balance",
+  "portfolioCashHint": "Moni wey you no still invest for your broker, by currency. E dey count for total value and how e share; e no dey count for return.",
+  "portfolioCashAmount": "Amount ({currency})",
+  "portfolioCashEdit": "Set cash balance"
 }

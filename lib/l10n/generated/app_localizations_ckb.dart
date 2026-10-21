@@ -2753,4 +2753,22 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'گەڕان لە فەرهەنگۆک';
+
+  @override
+  String get portfolioCash => 'پارەی کاش';
+
+  @override
+  String get portfolioCashTitle => 'باڵانسی کاش';
+
+  @override
+  String get portfolioCashHint =>
+      'پارەی وەبەرنەهێنراو لای بڕۆکەرەکەت، بەپێی دراو. لە کۆی بەها و دابەشبوون دەژمێردرێت؛ لە قازانج نا.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'بڕ ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'دانانی باڵانسی کاش';
 }

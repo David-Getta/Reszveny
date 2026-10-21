@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Tekniska signaler",
   "glossaryPageTitle": "Ordlista",
   "glossaryPageSubtitle": "Enkla förklaringar av alla tal appen visar, från P/E till RSI",
-  "glossarySearchHint": "Sök i ordlistan"
+  "glossarySearchHint": "Sök i ordlistan",
+  "portfolioCash": "Kontanter",
+  "portfolioCashTitle": "Kontantsaldo",
+  "portfolioCashHint": "Oinvesterade pengar hos din mäklare, per valuta. Räknas med i totalt värde och fördelning, men inte i avkastningen.",
+  "portfolioCashAmount": "Belopp ({currency})",
+  "portfolioCashEdit": "Ange kontantsaldo"
 }

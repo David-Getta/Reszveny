@@ -2747,4 +2747,22 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Chọọ na nkọwa okwu';
+
+  @override
+  String get portfolioCash => 'Ego ka ego';
+
+  @override
+  String get portfolioCashTitle => 'Ego ka ego fọdụrụ';
+
+  @override
+  String get portfolioCashHint =>
+      'Ego a na-etinyebeghị n\'ahịa dị n\'aka onye ọrụ ahịa gị (broker), dịka ụdị ego. A na-agụnye ya na ngụkọta uru na nkesa; ọ bụghị n\'uru.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Ego ole ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Tọọ ego ka ego fọdụrụ';
 }

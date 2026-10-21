@@ -2751,4 +2751,22 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'শব্দকোষত সন্ধান কৰক';
+
+  @override
+  String get portfolioCash => 'নগদ';
+
+  @override
+  String get portfolioCashTitle => 'নগদ বেলেঞ্চ';
+
+  @override
+  String get portfolioCashHint =>
+      'আপোনাৰ ব্ৰ\'কাৰৰ ওচৰত থকা বিনিয়োগ নকৰা টকা, মুদ্ৰা অনুসৰি। ই মুঠ মূল্য আৰু বিতৰণত গণ্য হয়; ৰিটাৰ্ণত নহয়।';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'পৰিমাণ ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'নগদ বেলেঞ্চ ছেট কৰক';
 }

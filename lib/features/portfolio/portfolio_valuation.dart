@@ -58,7 +58,14 @@ class PortfolioSnapshot {
     this.closed = const [],
     this.realizedByYear = const {},
     this.annualReturn,
+    this.cash = 0,
   });
+
+  /// Készpénz a brókernél az összesítés pénznemében (a felhasználó adja meg).
+  final double cash;
+
+  /// Az összérték: a pozíciók értéke és a készpénz.
+  double get totalValue => value + cash;
 
   /// Pénzsúlyozott éves hozam (XIRR, tört: 0,12 = 12%) a vételek és eladások
   /// dátumával, a mai értékkel. Csak ha minden tranzakciónak van dátuma, minden
@@ -112,6 +119,7 @@ class PortfolioSnapshot {
     Map<String, double> dividends = const {},
     List<Position> closed = const [],
     DateTime? now,
+    Map<String, double> cash = const {},
   }) {
     final rows = <PositionValue>[];
     var value = 0.0, cost = 0.0, day = 0.0, dividend = 0.0, realized = 0.0;
@@ -149,6 +157,13 @@ class PortfolioSnapshot {
       day += (row.dayGain ?? 0) * r;
       dividend += (row.annualDividend ?? 0) * r;
     }
+    // Készpénz az összesítés pénznemére váltva; amelyikhez nincs árfolyam, kimarad.
+    var cashValue = 0.0;
+    for (final e in cash.entries) {
+      final r = rateOf(e.key.toUpperCase());
+      if (r != null) cashValue += e.value * r;
+    }
+    final total = value + cashValue;
     final weighted = [
       for (final r in rows)
         PositionValue(
@@ -156,7 +171,7 @@ class PortfolioSnapshot {
           price: r.price,
           dayChange: r.dayChange,
           rate: r.rate,
-          weight: r.inTotal && value > 0 ? r.value! * r.rate! / value : 0,
+          weight: r.inTotal && total > 0 ? r.value! * r.rate! / total : 0,
           dividendPerShare: r.dividendPerShare,
         ),
     ]..sort((a, b) => b.weight.compareTo(a.weight));
@@ -173,6 +188,7 @@ class PortfolioSnapshot {
       realized: realized,
       closed: closedRows,
       realizedByYear: byYear,
+      cash: cashValue,
     );
   }
 
@@ -184,6 +200,7 @@ class PortfolioSnapshot {
     required FxService fx,
     required String currency,
     List<Position> closed = const [],
+    Map<String, double> cash = const {},
   }) async {
     final quotes = <String, StockQuote>{};
     final rates = <String, double>{};
@@ -214,6 +231,7 @@ class PortfolioSnapshot {
       for (final s in {for (final p in positions) p.symbol}) dividend(s),
       for (final c in {
         for (final p in [...positions, ...closed]) p.currency,
+        ...cash.keys,
       }.where((c) => c != currency))
         fxRate(c),
     ]);
@@ -224,6 +242,7 @@ class PortfolioSnapshot {
       currency: currency,
       dividends: dividends,
       closed: closed,
+      cash: cash,
     );
   }
 

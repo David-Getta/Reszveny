@@ -2817,4 +2817,22 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'البحث في المسرد';
+
+  @override
+  String get portfolioCash => 'النقد';
+
+  @override
+  String get portfolioCashTitle => 'الرصيد النقدي';
+
+  @override
+  String get portfolioCashHint =>
+      'أموال غير مستثمرة لدى الوسيط، حسب العملة. تُحسب في القيمة الإجمالية والتوزيع، لا في العائد.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'المبلغ ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'تعيين الرصيد النقدي';
 }

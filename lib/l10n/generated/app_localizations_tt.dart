@@ -2751,4 +2751,22 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Сүзлектә эзләү';
+
+  @override
+  String get portfolioCash => 'Акча';
+
+  @override
+  String get portfolioCashTitle => 'Акча калдыгы';
+
+  @override
+  String get portfolioCashHint =>
+      'Брокерыгыздагы салынмаган акча, валюта буенча. Гомуми кыйммәткә һәм бүленешкә исәпләнә; керемлелеккә исәпләнми.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Сумма ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Акча калдыгын куегыз';
 }

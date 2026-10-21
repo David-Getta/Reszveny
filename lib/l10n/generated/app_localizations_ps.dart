@@ -2743,4 +2743,22 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'په اصطلاحاتو کې لټون';
+
+  @override
+  String get portfolioCash => 'نغدې';
+
+  @override
+  String get portfolioCashTitle => 'نغدي بیلانس';
+
+  @override
+  String get portfolioCashHint =>
+      'ستاسو د بروکر سره پانګونه نه شوې پیسې، د اسعارو له مخې. دا په ټول ارزښت او وېش کې حسابېږي؛ په ګټه کې نه.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'مقدار ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'نغدي بیلانس ټاکل';
 }

@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Segnali tecnici",
   "glossaryPageTitle": "Glossario",
   "glossaryPageSubtitle": "Spiegazioni semplici di ogni dato mostrato dall’app, dal P/E all’RSI",
-  "glossarySearchHint": "Cerca nel glossario"
+  "glossarySearchHint": "Cerca nel glossario",
+  "portfolioCash": "Liquidità",
+  "portfolioCashTitle": "Saldo liquidità",
+  "portfolioCashHint": "Denaro non investito presso il tuo broker, per valuta. Conta nel valore totale e nella ripartizione; non nel rendimento.",
+  "portfolioCashAmount": "Importo ({currency})",
+  "portfolioCashEdit": "Imposta saldo liquidità"
 }

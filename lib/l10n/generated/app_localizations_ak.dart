@@ -2751,4 +2751,22 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Hwehwɛ wɔ nsɛmfua nkyerɛase no mu';
+
+  @override
+  String get portfolioCash => 'Sika a ɛda hɔ';
+
+  @override
+  String get portfolioCashTitle => 'Sika a ɛda hɔ dodow';
+
+  @override
+  String get portfolioCashHint =>
+      'Sika a wonnya mfa nhyɛɛ mu a ɛwɔ wo broker hɔ, sɛnea sika biara te. Wɔkan no wɔ ne bo nyinaa ne nkyekyɛmu mu; wɔnkan no wɔ mfaso mu.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Sika dodow ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Hyehyɛ sika a ɛda hɔ';
 }

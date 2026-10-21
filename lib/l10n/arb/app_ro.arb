@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Semnale tehnice",
   "glossaryPageTitle": "Glosar",
   "glossaryPageSubtitle": "Explicații simple pentru fiecare cifră afișată de aplicație, de la P/E la RSI",
-  "glossarySearchHint": "Caută în glosar"
+  "glossarySearchHint": "Caută în glosar",
+  "portfolioCash": "Numerar",
+  "portfolioCashTitle": "Sold de numerar",
+  "portfolioCashHint": "Bani neinvestiți la brokerul tău, pe valute. Se includ în valoarea totală și în distribuție; nu în randament.",
+  "portfolioCashAmount": "Sumă ({currency})",
+  "portfolioCashEdit": "Setează soldul de numerar"
 }

@@ -2725,4 +2725,22 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'ຊອກຫາໃນຄຳສັບ';
+
+  @override
+  String get portfolioCash => 'ເງິນສົດ';
+
+  @override
+  String get portfolioCashTitle => 'ຍອດເງິນສົດ';
+
+  @override
+  String get portfolioCashHint =>
+      'ເງິນທີ່ຍັງບໍ່ໄດ້ລົງທຶນຢູ່ນາຍໜ້າຂອງທ່ານ ແຍກຕາມສະກຸນເງິນ. ນັບລວມໃນມູນຄ່າລວມ ແລະ ສັດສ່ວນການລົງທຶນ; ບໍ່ນັບໃນຜົນຕອບແທນ.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'ຈຳນວນເງິນ ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'ຕັ້ງຍອດເງິນສົດ';
 }

@@ -730,5 +730,10 @@
   "signalAlertsNotification": "សញ្ញាបច្ចេកទេស",
   "glossaryPageTitle": "សទ្ទានុក្រម",
   "glossaryPageSubtitle": "ការពន្យល់សាមញ្ញអំពីតួលេខនីមួយៗដែលកម្មវិធីបង្ហាញ ពី P/E ដល់ RSI",
-  "glossarySearchHint": "ស្វែងរកក្នុងសទ្ទានុក្រម"
+  "glossarySearchHint": "ស្វែងរកក្នុងសទ្ទានុក្រម",
+  "portfolioCash": "សាច់ប្រាក់",
+  "portfolioCashTitle": "សមតុល្យសាច់ប្រាក់",
+  "portfolioCashHint": "ប្រាក់ដែលមិនទាន់វិនិយោគនៅឈ្មួញកណ្តាលរបស់អ្នក តាមរូបិយប័ណ្ណ។ រាប់បញ្ចូលក្នុងតម្លៃសរុប និងការបែងចែក ប៉ុន្តែមិនរាប់ក្នុងទិន្នផលទេ។",
+  "portfolioCashAmount": "ចំនួនទឹកប្រាក់ ({currency})",
+  "portfolioCashEdit": "កំណត់សមតុល្យសាច់ប្រាក់"
 }

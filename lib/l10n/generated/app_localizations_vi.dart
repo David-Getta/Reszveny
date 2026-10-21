@@ -2745,4 +2745,22 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Tìm trong bảng thuật ngữ';
+
+  @override
+  String get portfolioCash => 'Tiền mặt';
+
+  @override
+  String get portfolioCashTitle => 'Số dư tiền mặt';
+
+  @override
+  String get portfolioCashHint =>
+      'Tiền chưa đầu tư tại công ty chứng khoán của bạn, theo từng loại tiền. Được tính vào tổng giá trị và phân bổ; không tính vào lợi nhuận.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Số tiền ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Đặt số dư tiền mặt';
 }

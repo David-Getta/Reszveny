@@ -2759,4 +2759,22 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'పదకోశంలో వెతకండి';
+
+  @override
+  String get portfolioCash => 'నగదు';
+
+  @override
+  String get portfolioCashTitle => 'నగదు బ్యాలెన్స్';
+
+  @override
+  String get portfolioCashHint =>
+      'మీ బ్రోకర్ వద్ద పెట్టుబడి పెట్టని డబ్బు, కరెన్సీ వారీగా. ఇది మొత్తం విలువ మరియు కేటాయింపులో లెక్కించబడుతుంది; రాబడిలో కాదు.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'మొత్తం ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'నగదు బ్యాలెన్స్ సెట్ చేయండి';
 }

@@ -2743,4 +2743,22 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'ဝေါဟာရ အဘိဓာန်တွင် ရှာရန်';
+
+  @override
+  String get portfolioCash => 'ငွေသား';
+
+  @override
+  String get portfolioCashTitle => 'ငွေသား လက်ကျန်';
+
+  @override
+  String get portfolioCashHint =>
+      'သင့်ဘရိုကာတွင် ရင်းနှီးမြှုပ်နှံမထားသော ငွေ၊ ငွေကြေးအလိုက်။ စုစုပေါင်း တန်ဖိုးနှင့် ခွဲဝေမှုတွင် ထည့်တွက်သည်၊ အမြတ်အစွန်းတွင် မပါဝင်ပါ။';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'ပမာဏ ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'ငွေသား လက်ကျန် သတ်မှတ်ရန်';
 }

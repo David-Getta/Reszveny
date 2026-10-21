@@ -2750,4 +2750,22 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Search the glossary';
+
+  @override
+  String get portfolioCash => 'Cash';
+
+  @override
+  String get portfolioCashTitle => 'Cash balance';
+
+  @override
+  String get portfolioCashHint =>
+      'Uninvested money at your broker, by currency. It counts in the total value and the allocation; not in returns.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Amount ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Set cash balance';
 }

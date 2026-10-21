@@ -730,5 +730,10 @@
   "signalAlertsNotification": "টেকনিক্যাল সিগন্যাল",
   "glossaryPageTitle": "শব্দকোষ",
   "glossaryPageSubtitle": "অ্যাপে দেখানো প্রতিটি সংখ্যার সহজ ব্যাখ্যা, P/E থেকে RSI পর্যন্ত",
-  "glossarySearchHint": "শব্দকোষে খুঁজুন"
+  "glossarySearchHint": "শব্দকোষে খুঁজুন",
+  "portfolioCash": "নগদ",
+  "portfolioCashTitle": "নগদ ব্যালেন্স",
+  "portfolioCashHint": "আপনার ব্রোকারের কাছে থাকা বিনিয়োগ না করা টাকা, মুদ্রা অনুসারে। এটি মোট মূল্য ও বণ্টনে গণ্য হয়; রিটার্নে নয়।",
+  "portfolioCashAmount": "পরিমাণ ({currency})",
+  "portfolioCashEdit": "নগদ ব্যালেন্স সেট করুন"
 }

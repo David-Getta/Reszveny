@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Technische signalen",
   "glossaryPageTitle": "Begrippenlijst",
   "glossaryPageSubtitle": "Eenvoudige uitleg van elk cijfer dat de app toont, van P/E tot RSI",
-  "glossarySearchHint": "Zoeken in de begrippenlijst"
+  "glossarySearchHint": "Zoeken in de begrippenlijst",
+  "portfolioCash": "Cash",
+  "portfolioCashTitle": "Cashsaldo",
+  "portfolioCashHint": "Niet-belegd geld bij je broker, per valuta. Telt mee in de totale waarde en de verdeling, niet in het rendement.",
+  "portfolioCashAmount": "Bedrag ({currency})",
+  "portfolioCashEdit": "Cashsaldo instellen"
 }

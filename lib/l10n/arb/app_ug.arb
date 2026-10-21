@@ -730,5 +730,10 @@
   "signalAlertsNotification": "تېخنىكىلىق سىگناللار",
   "glossaryPageTitle": "ئاتالغۇلار لۇغىتى",
   "glossaryPageSubtitle": "ئەپ كۆرسەتكەن ھەربىر سانغا ئاددىي چۈشەندۈرۈش، P/E دىن RSI غىچە",
-  "glossarySearchHint": "لۇغەتتىن ئىزدەش"
+  "glossarySearchHint": "لۇغەتتىن ئىزدەش",
+  "portfolioCash": "نەق پۇل",
+  "portfolioCashTitle": "نەق پۇل قالدۇقى",
+  "portfolioCashHint": "بروكېرىڭىزدىكى سېلىنمىغان پۇل، پۇل تۈرى بويىچە. ئومۇمىي قىممەت ۋە تەقسىماتقا كىرىدۇ؛ پايداغا كىرمەيدۇ.",
+  "portfolioCashAmount": "سومما ({currency})",
+  "portfolioCashEdit": "نەق پۇل قالدۇقىنى تەڭشەش"
 }

@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Tín hiệu kỹ thuật",
   "glossaryPageTitle": "Bảng thuật ngữ",
   "glossaryPageSubtitle": "Giải thích đơn giản mọi chỉ số ứng dụng hiển thị, từ P/E đến RSI",
-  "glossarySearchHint": "Tìm trong bảng thuật ngữ"
+  "glossarySearchHint": "Tìm trong bảng thuật ngữ",
+  "portfolioCash": "Tiền mặt",
+  "portfolioCashTitle": "Số dư tiền mặt",
+  "portfolioCashHint": "Tiền chưa đầu tư tại công ty chứng khoán của bạn, theo từng loại tiền. Được tính vào tổng giá trị và phân bổ; không tính vào lợi nhuận.",
+  "portfolioCashAmount": "Số tiền ({currency})",
+  "portfolioCashEdit": "Đặt số dư tiền mặt"
 }

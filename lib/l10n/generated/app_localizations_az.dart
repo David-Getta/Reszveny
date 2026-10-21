@@ -2755,4 +2755,22 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Lüğətdə axtar';
+
+  @override
+  String get portfolioCash => 'Nağd';
+
+  @override
+  String get portfolioCashTitle => 'Nağd qalıq';
+
+  @override
+  String get portfolioCashHint =>
+      'Brokerinizdəki yatırılmamış pul, valyuta üzrə. Ümumi dəyərə və bölgüyə daxil edilir; gəlirliliyə daxil edilmir.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Məbləğ ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Nağd qalığı təyin et';
 }

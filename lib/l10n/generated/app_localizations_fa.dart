@@ -2748,4 +2748,22 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'جستجو در واژه‌نامه';
+
+  @override
+  String get portfolioCash => 'نقد';
+
+  @override
+  String get portfolioCashTitle => 'موجودی نقد';
+
+  @override
+  String get portfolioCashHint =>
+      'پول سرمایه‌گذاری‌نشده نزد کارگزار شما، به تفکیک ارز. در ارزش کل و ترکیب حساب می‌شود؛ در بازده نه.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'مبلغ ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'تعیین موجودی نقد';
 }

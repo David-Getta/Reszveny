@@ -2632,6 +2632,23 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get glossarySearchHint => '搜索术语表';
+
+  @override
+  String get portfolioCash => '现金';
+
+  @override
+  String get portfolioCashTitle => '现金余额';
+
+  @override
+  String get portfolioCashHint => '券商账户中未投资的资金，按货币分列。计入总市值和配置，不计入收益。';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return '金额 ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => '设置现金余额';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -5260,4 +5277,21 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get glossarySearchHint => '搜尋詞彙表';
+
+  @override
+  String get portfolioCash => '現金';
+
+  @override
+  String get portfolioCashTitle => '現金結餘';
+
+  @override
+  String get portfolioCashHint => '證券戶口中未投資的資金，按貨幣分列。計入總市值及配置，不計入回報。';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return '金額 ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => '設定現金結餘';
 }

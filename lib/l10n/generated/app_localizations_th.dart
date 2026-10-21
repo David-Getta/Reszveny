@@ -2722,4 +2722,22 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'ค้นหาในอภิธานศัพท์';
+
+  @override
+  String get portfolioCash => 'เงินสด';
+
+  @override
+  String get portfolioCashTitle => 'ยอดเงินสด';
+
+  @override
+  String get portfolioCashHint =>
+      'เงินที่ยังไม่ได้ลงทุนในบัญชีโบรกเกอร์ของคุณ แยกตามสกุลเงิน นับรวมในมูลค่ารวมและสัดส่วนการลงทุน แต่ไม่นับในผลตอบแทน';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'จำนวนเงิน ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'ตั้งค่ายอดเงินสด';
 }

@@ -2761,4 +2761,22 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Փնտրել բառարանում';
+
+  @override
+  String get portfolioCash => 'Կանխիկ';
+
+  @override
+  String get portfolioCashTitle => 'Կանխիկի մնացորդ';
+
+  @override
+  String get portfolioCashHint =>
+      'Չներդրված գումար ձեր բրոքերի մոտ, ըստ արժույթի։ Հաշվվում է ընդհանուր արժեքում և բաշխման մեջ, ոչ եկամտաբերության մեջ։';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Գումար ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Սահմանել կանխիկի մնացորդը';
 }

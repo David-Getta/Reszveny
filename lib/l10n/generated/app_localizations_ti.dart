@@ -2714,4 +2714,22 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'ኣብ መዝገበ ቃላት ድለ';
+
+  @override
+  String get portfolioCash => 'ጥረ ገንዘብ';
+
+  @override
+  String get portfolioCashTitle => 'ተረፍ ጥረ ገንዘብ';
+
+  @override
+  String get portfolioCashHint =>
+      'ኣብ ብሮከርካ ዘሎ ዘይተወፈረ ገንዘብ፣ ብባጤራ። ኣብ ጠቕላላ ዋጋን ምምቕራሕን ይቑጸር፤ ኣብ ትርፊ ኣይቑጸርን።';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'መጠን ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'ተረፍ ጥረ ገንዘብ ኣቐምጥ';
 }

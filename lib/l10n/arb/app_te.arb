@@ -730,5 +730,10 @@
   "signalAlertsNotification": "సాంకేతిక సిగ్నల్‌లు",
   "glossaryPageTitle": "పదకోశం",
   "glossaryPageSubtitle": "P/E నుండి RSI వరకు, యాప్ చూపే ప్రతి సంఖ్యకు సరళమైన వివరణలు",
-  "glossarySearchHint": "పదకోశంలో వెతకండి"
+  "glossarySearchHint": "పదకోశంలో వెతకండి",
+  "portfolioCash": "నగదు",
+  "portfolioCashTitle": "నగదు బ్యాలెన్స్",
+  "portfolioCashHint": "మీ బ్రోకర్ వద్ద పెట్టుబడి పెట్టని డబ్బు, కరెన్సీ వారీగా. ఇది మొత్తం విలువ మరియు కేటాయింపులో లెక్కించబడుతుంది; రాబడిలో కాదు.",
+  "portfolioCashAmount": "మొత్తం ({currency})",
+  "portfolioCashEdit": "నగదు బ్యాలెన్స్ సెట్ చేయండి"
 }

@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Sygnały techniczne",
   "glossaryPageTitle": "Słowniczek",
   "glossaryPageSubtitle": "Proste wyjaśnienia każdej liczby w aplikacji, od P/E po RSI",
-  "glossarySearchHint": "Szukaj w słowniczku"
+  "glossarySearchHint": "Szukaj w słowniczku",
+  "portfolioCash": "Gotówka",
+  "portfolioCashTitle": "Saldo gotówkowe",
+  "portfolioCashHint": "Niezainwestowane środki u brokera, według waluty. Wliczane do wartości łącznej i struktury, ale nie do stopy zwrotu.",
+  "portfolioCashAmount": "Kwota ({currency})",
+  "portfolioCashEdit": "Ustaw saldo gotówkowe"
 }

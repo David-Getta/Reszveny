@@ -2761,4 +2761,22 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Hiika jechootaa keessa barbaadi';
+
+  @override
+  String get portfolioCash => 'Maallaqa callaa';
+
+  @override
+  String get portfolioCashTitle => 'Hafaa maallaqaa';
+
+  @override
+  String get portfolioCashHint =>
+      'Maallaqa brokera kee bira jiru kan invastii hin godhamne, akka gosa maallaqaatiin. Gatii waliigalaa fi qoqqoodinsa keessatti lakkaa\'ama; bu\'aa keessatti hin lakkaa\'amu.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Hamma ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Hafaa maallaqaa qindeessi';
 }

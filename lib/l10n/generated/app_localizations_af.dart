@@ -2755,4 +2755,22 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Deursoek die woordelys';
+
+  @override
+  String get portfolioCash => 'Kontant';
+
+  @override
+  String get portfolioCashTitle => 'Kontantsaldo';
+
+  @override
+  String get portfolioCashHint =>
+      'Onbelegde geld by jou makelaar, per geldeenheid. Dit tel in die totale waarde en die toewysing; nie in die opbrengs nie.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Bedrag ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Stel kontantsaldo in';
 }

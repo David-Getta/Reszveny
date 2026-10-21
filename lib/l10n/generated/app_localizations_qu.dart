@@ -2767,4 +2767,22 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Rimaykunapa sutichayninpi maskay';
+
+  @override
+  String get portfolioCash => 'Qullqi';
+
+  @override
+  String get portfolioCashTitle => 'Qullqi saldo';
+
+  @override
+  String get portfolioCashHint =>
+      'Broker-niykipi mana churasqa qullqi, sapa qullqi laya. Llapan chaninpi hinaspa rakiypi yupasqa; mana rendimientopichu.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Hayka ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Qullqi saldota churay';
 }

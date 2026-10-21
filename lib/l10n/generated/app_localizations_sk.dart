@@ -2821,4 +2821,22 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Hľadať v slovníku';
+
+  @override
+  String get portfolioCash => 'Hotovosť';
+
+  @override
+  String get portfolioCashTitle => 'Hotovostný zostatok';
+
+  @override
+  String get portfolioCashHint =>
+      'Neinvestované peniaze u vášho brokera, podľa meny. Počítajú sa do celkovej hodnoty a rozloženia; nie do výnosu.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Suma ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Nastaviť hotovostný zostatok';
 }

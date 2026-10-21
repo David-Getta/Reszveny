@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Imenyithia cia tekiniki",
   "glossaryPageTitle": "Mataaro ma ciugo",
   "glossaryPageSubtitle": "Ũtaarĩria mũhũthũ wa namba ciothe iria app ĩyo yonanagia, kuuma P/E nginya RSI",
-  "glossarySearchHint": "Caria thĩinĩ wa mataaro"
+  "glossarySearchHint": "Caria thĩinĩ wa mataaro",
+  "portfolioCash": "Mbeca cia moko",
+  "portfolioCashTitle": "Mbeca cia moko iria irĩ ho",
+  "portfolioCashHint": "Mbeca itaigĩtwo irĩ kwa broker waku, kũringana na mũthemba wa mbeca. Itaragwo thogora-inĩ wothe na ũgayanio-inĩ; ti uumithio-inĩ.",
+  "portfolioCashAmount": "Mũigana ({currency})",
+  "portfolioCashEdit": "Iga mbeca cia moko"
 }

@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Izimpawu zobuchwepheshe",
   "glossaryPageTitle": "Uhlu lwamagama",
   "glossaryPageSubtitle": "Izincazelo ezilula zazo zonke izinombolo i-app ezibonisayo, kusukela ku-P/E kuya ku-RSI",
-  "glossarySearchHint": "Sesha ohlwini lwamagama"
+  "glossarySearchHint": "Sesha ohlwini lwamagama",
+  "portfolioCash": "Imali",
+  "portfolioCashTitle": "Ibhalansi yemali",
+  "portfolioCashHint": "Imali engatshaliwe kubroker wakho, ngohlobo lwemali. Ibalwa kunani eliphelele nasekwabiweni; hhayi kunzuzo.",
+  "portfolioCashAmount": "Inani ({currency})",
+  "portfolioCashEdit": "Setha ibhalansi yemali"
 }

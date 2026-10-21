@@ -2755,4 +2755,22 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'لۇغەتتىن ئىزدەش';
+
+  @override
+  String get portfolioCash => 'نەق پۇل';
+
+  @override
+  String get portfolioCashTitle => 'نەق پۇل قالدۇقى';
+
+  @override
+  String get portfolioCashHint =>
+      'بروكېرىڭىزدىكى سېلىنمىغان پۇل، پۇل تۈرى بويىچە. ئومۇمىي قىممەت ۋە تەقسىماتقا كىرىدۇ؛ پايداغا كىرمەيدۇ.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'سومما ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'نەق پۇل قالدۇقىنى تەڭشەش';
 }

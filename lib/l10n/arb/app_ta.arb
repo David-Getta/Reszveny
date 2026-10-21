@@ -730,5 +730,10 @@
   "signalAlertsNotification": "தொழில்நுட்பச் சமிக்ஞைகள்",
   "glossaryPageTitle": "சொற்களஞ்சியம்",
   "glossaryPageSubtitle": "P/E முதல் RSI வரை, செயலி காட்டும் ஒவ்வொரு எண்ணுக்கும் எளிய விளக்கங்கள்",
-  "glossarySearchHint": "சொற்களஞ்சியத்தில் தேடுங்கள்"
+  "glossarySearchHint": "சொற்களஞ்சியத்தில் தேடுங்கள்",
+  "portfolioCash": "ரொக்கம்",
+  "portfolioCashTitle": "ரொக்க இருப்பு",
+  "portfolioCashHint": "உங்கள் புரோக்கரிடம் முதலீடு செய்யப்படாத பணம், நாணயம் வாரியாக. இது மொத்த மதிப்பு மற்றும் பங்கீட்டில் கணக்கிடப்படும்; வருவாயில் இல்லை.",
+  "portfolioCashAmount": "தொகை ({currency})",
+  "portfolioCashEdit": "ரொக்க இருப்பை அமைக்கவும்"
 }

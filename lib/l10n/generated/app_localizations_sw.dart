@@ -2753,4 +2753,22 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get glossarySearchHint => 'Tafuta katika kamusi';
+
+  @override
+  String get portfolioCash => 'Taslimu';
+
+  @override
+  String get portfolioCashTitle => 'Salio la pesa taslimu';
+
+  @override
+  String get portfolioCashHint =>
+      'Pesa ambazo hazijawekezwa kwa broker wako, kwa kila sarafu. Zinahesabiwa katika thamani ya jumla na mgawanyo; si katika faida.';
+
+  @override
+  String portfolioCashAmount(String currency) {
+    return 'Kiasi ($currency)';
+  }
+
+  @override
+  String get portfolioCashEdit => 'Weka salio la pesa taslimu';
 }

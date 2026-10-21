@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Senyals tècnics",
   "glossaryPageTitle": "Glossari",
   "glossaryPageSubtitle": "Explicacions senzilles de cada xifra que mostra l’app, del P/E al RSI",
-  "glossarySearchHint": "Cerca al glossari"
+  "glossarySearchHint": "Cerca al glossari",
+  "portfolioCash": "Efectiu",
+  "portfolioCashTitle": "Saldo en efectiu",
+  "portfolioCashHint": "Diners no invertits al teu bròquer, per moneda. Compta en el valor total i la distribució; no en la rendibilitat.",
+  "portfolioCashAmount": "Import ({currency})",
+  "portfolioCashEdit": "Definir el saldo en efectiu"
 }

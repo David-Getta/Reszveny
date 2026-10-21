@@ -730,5 +730,10 @@
   "signalAlertsNotification": "Bimanyinu bia tekinike",
   "glossaryPageTitle": "Diumvuija dia miaku",
   "glossaryPageSubtitle": "Diumvuija dipepele dia nomba yonso idi app uleja, kutuadija ku P/E too ne ku RSI",
-  "glossarySearchHint": "Keba mu diumvuija dia miaku"
+  "glossarySearchHint": "Keba mu diumvuija dia miaku",
+  "portfolioCash": "Mfranga ya mu bianza",
+  "portfolioCashTitle": "Mfranga ya mu bianza idiku",
+  "portfolioCashHint": "Mfranga iudi kuyi muteke mu mushinga kudi broker webe, ku mfranga yonso. Idi ibadibua mu mushinga wonso ne mu diabanya; kayi mu dipeta.",
+  "portfolioCashAmount": "Bungi ({currency})",
+  "portfolioCashEdit": "Teka mfranga ya mu bianza"
 }
