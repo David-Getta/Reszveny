@@ -821,6 +821,9 @@ void main() {
     await portfolio.addDividend(symbol: 'OTP', amount: 58800, currency: 'HUF', date: DateTime(2026, 6, 2));
     await portfolio.addDividend(symbol: 'AAPL', amount: 4.32, currency: 'USD', date: DateTime(2026, 5, 15));
     await portfolio.addDividend(symbol: 'NVDA', amount: 0.2, currency: 'USD', date: DateTime(2026, 6, 26));
+    // Két korábbi év is: az évenkénti listában az előző évhez képesti változás.
+    await portfolio.addDividend(symbol: 'MSFT', amount: 14.2, currency: 'USD', date: DateTime(2025, 9, 11));
+    await portfolio.addDividend(symbol: 'MSFT', amount: 13.1, currency: 'USD', date: DateTime(2024, 9, 12));
     final s = _services(locale: const Locale('hu'), portfolio: portfolio, currency: 'HUF');
     await pumpApp(tester, s, const Size(430, 1000));
     await tester.tap(find.text('Portfólió').last);
