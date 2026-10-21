@@ -32,3 +32,19 @@ méreteiben: `iphone69` (1320×2868, App Store 6,9"), `android` (1080×2160, Goo
 lefordított bevezető szövege. A teszt-harness betűkészlete latin, cirill és görög írást rajzol
 jól; a többi írás (kínai, japán, arab, indiai írások stb.) képeihez a natív buildből érdemes
 képernyőképet készíteni.
+
+## Adatvédelmi manifest (Apple)
+
+Az App Store és a Mac App Store beküldéshez kell egy `PrivacyInfo.xcprivacy` a Runner célban:
+`ios/Runner/PrivacyInfo.xcprivacy` és `macos/Runner/PrivacyInfo.xcprivacy`. Tartalma: nincs
+követés; gyűjtött adatok – e-mail cím és vásárlási előzmény (a fiókhoz kötve, az app működéséhez),
+használati események és hibajelentések (hozzájárulással, személyhez nem köthetően); használt
+„indokolt” API-k – UserDefaults (CA92.1, beállítások és portfólió helyi tárolása) és
+fájl-időbélyegek (C617.1, gyorsítótár és mentett fájlok). A beépülők (shared_preferences,
+path_provider stb.) a saját manifestjüket hozzák.
+
+**Tulajdonosi lépés (natív build itt nem készíthető):** Xcode-ban a Runner célhoz hozzá kell adni a
+fájlt (File → Add Files to "Runner"…, Target Membership: Runner), külön az iOS és a macOS
+projektben; utána az archívum „Privacy Report”-jában ellenőrizhető. Az App Store Connect
+„App Privacy” kérdőívét ugyanezekkel a válaszokkal kell kitölteni.
+
