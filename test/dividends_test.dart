@@ -184,6 +184,9 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text('Dividends received'), findsOneWidget);
     expect(find.text('2.50 USD'), findsNWidgets(2), reason: 'a tétel és az összes');
+    // Bekerülési osztalékhozam a kártyán: 2,50 USD az elmúlt 12 hónapból a 2 000 USD vételi értékhez.
+    final cardYoc = find.byKey(const ValueKey('dividends-yield-on-cost'));
+    expect(find.descendant(of: cardYoc, matching: find.text('0.13%')), findsOneWidget);
     // Egy tételből nincs várható következő; két negyedéves tételből van.
     expect(find.byKey(const ValueKey('dividend-expected-AAPL')), findsNothing);
     final q = DateTime.now().subtract(const Duration(days: 40));

@@ -12,10 +12,14 @@ import 'portfolio_store.dart';
 /// osztalék a portfólió pénznemében (a mai árfolyamon átváltva), az utolsó
 /// tételek listája törléssel (visszavonható), és kézi felvétel.
 class DividendsCard extends StatelessWidget {
-  const DividendsCard({super.key, required this.currency});
+  const DividendsCard({super.key, required this.currency, this.cost = 0});
 
   /// A portfólió összesítésének pénzneme.
   final String currency;
+
+  /// A még birtokolt pozíciók vételi értéke a [currency] pénznemben (a
+  /// bekerülési osztalékhozamhoz); 0, ha nem ismert.
+  final double cost;
 
   static const maxListed = 8;
 
@@ -77,7 +81,9 @@ class DividendsCard extends StatelessWidget {
                         final r = d.currency == currency ? 1.0 : rates?[d.currency];
                         return r == null ? s : s + d.amount * r;
                       });
-                      final year = DateTime.now().year;
+                      final now = DateTime.now();
+                      final year = now.year;
+                      final yearAgo = DateTime(now.year - 1, now.month, now.day);
                       // Évenként is, ha több évből van tétel (az adóbevalláshoz).
                       final years = {for (final d in all) ?d.date?.year}.toList()..sort((a, b) => b.compareTo(a));
                       return Column(
@@ -97,6 +103,16 @@ class DividendsCard extends StatelessWidget {
                                 label: l10n.portfolioDividendsAllTime,
                                 value: fmt.money(sum(all), currency),
                               ),
+                              // Bekerülési osztalékhozam: az utolsó 12 hónap (átváltott) osztaléka a
+                              // nyitott pozíciók vételi értékéhez mérve.
+                              if (cost > 0)
+                                if (all.where((d) => d.date != null && !d.date!.isBefore(yearAgo)).toList()
+                                    case final recent when recent.isNotEmpty)
+                                  _Figure(
+                                    key: const ValueKey('dividends-yield-on-cost'),
+                                    label: l10n.labelYieldOnCost,
+                                    value: fmt.percent(sum(recent) / cost * 100),
+                                  ),
                             ],
                           ),
                           if (years.length > 1) ...[
