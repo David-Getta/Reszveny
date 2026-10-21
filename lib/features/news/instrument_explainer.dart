@@ -2,7 +2,8 @@ import 'package:http/http.dart' as http;
 
 import '../../core/config/app_config.dart';
 import '../../core/errors.dart';
-import 'daily_brief.dart' show askWithSources, sharedCacheField;
+import 'cached_research.dart';
+import 'daily_brief.dart' show sharedCacheField;
 import 'research_store.dart';
 
 /// „Mi ez a papír?”: ha egy tickerhez nincs cégprofil (ETF, alap, ADR, index-
@@ -78,9 +79,13 @@ Rules:
   }) {
     if (!config.hasAnthropicKey) return Future.error(const AnalysisException(AppErrorCode.aiNotConfigured));
     final key = '$language|${symbol.toUpperCase()}';
-    final f = _cache[key] ??= _store.get(
-      key,
-      () => _ask(
+    return cachedResearch(
+      cache: _cache,
+      store: _store,
+      key: key,
+      ask: () => askWithFetchFallback(
+        config,
+        _client,
         requestBody(
           symbol: symbol,
           name: name,
@@ -91,24 +96,5 @@ Rules:
         ),
       ),
     );
-    f.catchError((Object _) {
-      _cache.remove(key);
-      return (text: '', sources: const []) as ResearchResult;
-    });
-    return f;
-  }
-
-  /// Ha a fiókban nincs engedélyezve az oldalmegnyitás (400), nélküle kérjük újra.
-  Future<ResearchResult> _ask(Map<String, dynamic> body) async {
-    try {
-      return await askWithSources(config, _client, body);
-    } on AnalysisException catch (e) {
-      if (e.code != AppErrorCode.aiHttp || !'${e.cause}'.contains('web_fetch')) rethrow;
-      final tools = [
-        for (final t in body['tools'] as List)
-          if (!'${(t as Map)['type']}'.startsWith('web_fetch')) t,
-      ];
-      return askWithSources(config, _client, {...body, 'tools': tools});
-    }
   }
 }

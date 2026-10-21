@@ -15,6 +15,8 @@ void main() {
     expect(PriceStats.rsi(up.take(14).toList(), 14), isNull);
     final down = [for (var i = 0; i < 30; i++) pt(i, 200.0 - i)];
     expect(PriceStats.rsi(down, 14), 0);
+    // Mozdulatlan sor (felfüggesztett papír): nincs RSI, nem „túlvett”.
+    expect(PriceStats.rsi([for (var i = 0; i < 30; i++) pt(i, 100)], 14), isNull);
   });
 
   List<PricePoint> series(List<double> closes) => [

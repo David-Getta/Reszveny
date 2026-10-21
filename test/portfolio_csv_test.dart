@@ -91,17 +91,21 @@ void main() {
       'Dividends,Header,Currency,Date,Description,Amount\n'
       'Dividends,Data,USD,2025-06-27,NVDA(US67066G1040) Cash Dividend USD 0.01 per Share (Ordinary Dividend),0.1\n'
       'Dividends,Data,EUR,2025-05-07,"ASML(NL0010273215) Cash Dividend EUR 1.84 per Share (Ordinary Dividend)",3.68\n'
-      'Dividends,Data,Total,,,3.78\n',
+      'Dividends,Data,Total,,,3.78\n'
+      'Withholding Tax,Header,Currency,Date,Description,Amount,Code\n'
+      'Withholding Tax,Data,USD,2025-06-27,NVDA(US67066G1040) Cash Dividend USD 0.01 per Share - US Tax,-0.015,\n'
+      'Withholding Tax,Data,Total,,,-0.015,\n',
     );
     expect(ibkr.lots.map((l) => (l.symbol, l.quantity, l.price, l.currency, l.date, l.sell)), [
       ('NVDA', 10.0, 120.5, 'USD', DateTime(2025, 3, 14), false),
       ('ASML', 2.0, 640.25, 'EUR', DateTime(2025, 4, 2), true),
     ]);
     expect(ibkr.skipped, 0);
-    // A „Dividends” szakasz sorai: ticker a leírás elejéről; az összesítő sor kimarad.
-    expect(ibkr.dividends.map((d) => (d.symbol, d.amount, d.currency, d.date)), [
-      ('NVDA', 0.1, 'USD', DateTime(2025, 6, 27)),
-      ('ASML', 3.68, 'EUR', DateTime(2025, 5, 7)),
+    // A „Dividends” szakasz sorai: ticker a leírás elejéről; az összesítő sor kimarad;
+    // a forrásadó (ugyanaz a részvény és nap) levonva: 0,10 − 0,015.
+    expect(ibkr.dividends.map((d) => (d.symbol, (d.amount * 1000).round(), d.currency, d.date)), [
+      ('NVDA', 85, 'USD', DateTime(2025, 6, 27)),
+      ('ASML', 3680, 'EUR', DateTime(2025, 5, 7)),
     ]);
   });
 

@@ -143,8 +143,6 @@ BenchmarkComparison? benchmarkComparison(
 /// Az összevetés indexe: S&P 500 indexkövető ETF.
 const benchmarkSymbol = 'SPY';
 
-/// „Értékalakulás” kártya a portfólió oldalán: a teljes érték grafikonja
-/// időtáv-választóval, a befektetett összeg szaggatott vonalával.
 /// Hány nyitott pozíció ára jár a saját 200 napos mozgóátlaga felett (egyszerű
 /// trendkép); `null`, ha egyikhez sincs elég adat.
 ({int above, int count})? portfolioTrend(Iterable<String> symbols, Map<String, PriceHistory> histories) {
@@ -159,6 +157,8 @@ const benchmarkSymbol = 'SPY';
   return count == 0 ? null : (above: above, count: count);
 }
 
+/// „Értékalakulás” kártya a portfólió oldalán: a teljes érték grafikonja
+/// időtáv-választóval, a befektetett összeg szaggatott vonalával.
 class PortfolioHistoryCard extends StatefulWidget {
   const PortfolioHistoryCard({super.key, required this.snapshot});
 

@@ -75,6 +75,7 @@ class PriceStats {
       gain = (gain * (n - 1) + (d > 0 ? d : 0)) / n;
       loss = (loss * (n - 1) + (d < 0 ? -d : 0)) / n;
     }
+    if (gain == 0 && loss == 0) return null;
     if (loss == 0) return 100;
     return _round(100 - 100 / (1 + gain / loss), 1);
   }

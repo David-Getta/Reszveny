@@ -211,7 +211,11 @@ class Position {
 class PortfolioStore extends ChangeNotifier {
   PortfolioStore({List<PortfolioLot> lots = const [], List<DividendRecord> dividends = const []})
     : _lots = List.of(lots),
-      _dividends = List.of(dividends);
+      _dividends = List.of(dividends)..sort(_newestFirst);
+
+  /// Az újabb elöl (dátum nélküli a végén) – a lista mindig így van tartva.
+  static int _newestFirst(DividendRecord a, DividendRecord b) =>
+      (b.date ?? DateTime(0)).compareTo(a.date ?? DateTime(0));
 
   static const _key = 'portfolio_lots';
   static const _dividendsKey = 'portfolio_dividends';
@@ -222,14 +226,13 @@ class PortfolioStore extends ChangeNotifier {
   bool get isEmpty => _lots.isEmpty;
 
   /// A kapott osztalékok, az újabb elöl (dátum nélküli a végén).
-  List<DividendRecord> get dividends =>
-      List.unmodifiable([..._dividends]..sort((a, b) => (b.date ?? DateTime(0)).compareTo(a.date ?? DateTime(0))));
+  List<DividendRecord> get dividends => List.unmodifiable(_dividends);
 
   /// Egy részvény kapott osztalékai (az újabb elöl).
   List<DividendRecord> dividendsOf(String symbol) {
     final s = symbol.toUpperCase();
     return [
-      for (final d in dividends)
+      for (final d in _dividends)
         if (d.symbol == s) d,
     ];
   }
@@ -237,12 +240,17 @@ class PortfolioStore extends ChangeNotifier {
   static Future<PortfolioStore> load() async {
     try {
       final prefs = await SharedPreferences.getInstance();
-      final raw = prefs.getString(_key);
-      final rawDividends = prefs.getString(_dividendsKey);
-      return PortfolioStore(
-        lots: raw == null ? const [] : parse(raw),
-        dividends: rawDividends == null ? const [] : parseDividends(rawDividends),
-      );
+      // A két lista külön-külön: az egyik sérülése nem viszi el a másikat.
+      List<T> read<T>(String key, List<T> Function(String) parse) {
+        try {
+          final raw = prefs.getString(key);
+          return raw == null ? const [] : parse(raw);
+        } catch (_) {
+          return const [];
+        }
+      }
+
+      return PortfolioStore(lots: read(_key, parse), dividends: read(_dividendsKey, parseDividends));
     } catch (_) {
       return PortfolioStore();
     }
@@ -348,7 +356,9 @@ class PortfolioStore extends ChangeNotifier {
       currency: currency.toUpperCase(),
       date: date,
     );
-    _dividends.add(d);
+    _dividends
+      ..add(d)
+      ..sort(_newestFirst);
     notifyListeners();
     await _save();
     return d;
@@ -363,7 +373,9 @@ class PortfolioStore extends ChangeNotifier {
   /// Egy törölt osztalék visszaállítása (visszavonás), változatlan azonosítóval.
   Future<void> restoreDividend(DividendRecord d) async {
     if (_dividends.any((x) => x.id == d.id)) return;
-    _dividends.add(d);
+    _dividends
+      ..add(d)
+      ..sort(_newestFirst);
     notifyListeners();
     await _save();
   }
@@ -372,7 +384,8 @@ class PortfolioStore extends ChangeNotifier {
   Future<void> replaceAllDividends(List<DividendRecord> dividends) async {
     _dividends
       ..clear()
-      ..addAll(dividends);
+      ..addAll(dividends)
+      ..sort(_newestFirst);
     notifyListeners();
     await _save();
   }

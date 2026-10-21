@@ -67,6 +67,22 @@ class FxService extends ChangeNotifier {
 
   /// Árfolyam [from] → [to]; `null`, ha azonos pénznem, nem támogatott, vagy
   /// nem érhető el (ilyenkor a felület egyszerűen nem mutat átváltást).
+  /// Árfolyamok a [to] pénznemre, pénznemenként egyszer lekérve (az azonos
+  /// pénznem 1); amelyikhez nincs árfolyam, az kimarad a térképből.
+  Future<Map<String, double>> ratesFor(Iterable<String> currencies, String to) async {
+    final out = <String, double>{};
+    await Future.wait([
+      for (final c in {for (final c in currencies) c.toUpperCase()})
+        if (c == to.toUpperCase())
+          Future.value(out[c] = 1)
+        else
+          rate(c, to).then((r) {
+            if (r != null) out[c] = r.rate;
+          }, onError: (_) {}),
+    ]);
+    return out;
+  }
+
   Future<FxRate?> rate(String from, String to) {
     final f = from.toUpperCase(), t = to.toUpperCase();
     if (f == t || !isSupported(f) || !isSupported(t)) return Future.value(null);

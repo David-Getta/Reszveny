@@ -377,10 +377,10 @@ class DigestSender {
   }
 }
 
-/// Egy részvény sora az összefoglalóban.
 /// Egy kapott osztalék a heti levélhez.
 typedef DigestDividend = ({String symbol, double amount, String currency, DateTime date});
 
+/// Egy részvény sora az összefoglalóban.
 class DigestLine {
   const DigestLine(
     this.symbol,

@@ -163,16 +163,8 @@ class DividendsCard extends StatelessWidget {
   }
 
   /// Árfolyamok a más pénznemű tételekhez; ha valamelyik nincs, az kimarad.
-  Future<Map<String, double>> _rates(AppServices services, Set<String> currencies) async {
-    final out = <String, double>{};
-    await Future.wait([
-      for (final c in currencies)
-        services.fx.rate(c, currency).then((r) {
-          if (r != null) out[c] = r.rate;
-        }, onError: (_) {}),
-    ]);
-    return out;
-  }
+  Future<Map<String, double>> _rates(AppServices services, Set<String> currencies) =>
+      services.fx.ratesFor(currencies, currency);
 
   Future<void> _delete(BuildContext context, DividendRecord d) async {
     final l10n = AppLocalizations.of(context);

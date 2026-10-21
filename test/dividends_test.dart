@@ -40,6 +40,23 @@ void main() {
       expect((await PortfolioStore.load()).dividends, isEmpty);
     });
 
+    test('a corrupt dividends store does not lose the lots (and vice versa)', () async {
+      SharedPreferences.setMockInitialValues({
+        'portfolio_lots': '[{"id":"a","symbol":"AAPL","quantity":2,"price":100,"currency":"USD"}]',
+        'portfolio_dividends': '{not json',
+      });
+      final store = await PortfolioStore.load();
+      expect(store.lots.single.symbol, 'AAPL');
+      expect(store.dividends, isEmpty);
+      SharedPreferences.setMockInitialValues({
+        'portfolio_lots': 'garbage',
+        'portfolio_dividends': '[{"id":"d","symbol":"AAPL","amount":1,"currency":"USD"}]',
+      });
+      final again = await PortfolioStore.load();
+      expect(again.lots, isEmpty);
+      expect(again.dividends.single.amount, 1);
+    });
+
     test('a broken or zero record is skipped when parsing', () {
       final parsed = PortfolioStore.parseDividends(
         '[{"id":"x","symbol":"AAPL","amount":1.5,"currency":"USD","date":"2026-01-02"},'

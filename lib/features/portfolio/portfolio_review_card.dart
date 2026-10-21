@@ -76,18 +76,13 @@ class _PortfolioReviewCardState extends State<PortfolioReviewCard> {
   Future<double?> _dividendsReceived(AppServices services) async {
     final from = DateTime.now().subtract(const Duration(days: 365));
     final currency = widget.snapshot.currency;
+    final recent = services.portfolio.dividends.where((d) => d.date != null && !d.date!.isBefore(from)).toList();
+    if (recent.isEmpty) return null;
+    final rates = await services.fx.ratesFor(recent.map((d) => d.currency), currency);
     var sum = 0.0;
     var any = false;
-    for (final d in services.portfolio.dividends) {
-      if (d.date == null || d.date!.isBefore(from)) continue;
-      double? rate = 1;
-      if (d.currency != currency) {
-        try {
-          rate = (await services.fx.rate(d.currency, currency))?.rate;
-        } catch (_) {
-          rate = null;
-        }
-      }
+    for (final d in recent) {
+      final rate = rates[d.currency];
       if (rate == null) continue;
       sum += d.amount * rate;
       any = true;

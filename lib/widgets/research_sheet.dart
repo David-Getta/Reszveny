@@ -195,7 +195,8 @@ class _ResearchFollowUpPanelState extends State<ResearchFollowUpPanel> {
       subject: widget.subject,
     )..ignore();
     // A kész válasz a készülékre is kerül; a hibát a lap mutatja, nem tároljuk.
-    answer.then((r) => store.append(_key, q, r), onError: (_) {});
+    final order = _turns.length;
+    answer.then((r) => store.append(_key, q, r, order: order), onError: (_) {});
     services.telemetry.track('research_followup');
     setState(() {
       _turns.add((question: q, answer: answer));

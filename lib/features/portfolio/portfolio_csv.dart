@@ -231,15 +231,28 @@ CsvImport _withHeader(
   // Interactive Brokers kimutatás: „Trades,Header,…” után csak a „Trades,Data,…”
   // sorok számítanak; a „Dividends” szakasz sorai kapott osztalékok.
   final sections = header.length > 1 && header[1].toLowerCase() == 'header';
-  Map<String, int>? dividendCols;
+  Map<String, int>? dividendCols, taxCols;
+  // Forrásadó (IBKR „Withholding Tax” szakasz): részvény és nap szerint, negatív összeg.
+  final withholding = <String, double>{};
   for (final line in lines) {
     final f = splitCsvLine(line, sections ? sep : _separator(line));
-    if (sections && f.length > 1 && f[0].toLowerCase() == 'dividends') {
+    if (sections && f.length > 1 && (f[0].toLowerCase() == 'dividends' || f[0].toLowerCase() == 'withholding tax')) {
+      final isTax = f[0].toLowerCase() == 'withholding tax';
       if (f[1].toLowerCase() == 'header') {
-        dividendCols = {for (final (i, c) in f.indexed) c.toLowerCase().replaceAll(RegExp(r'[^a-z]'), ''): i};
-      } else if (f[1].toLowerCase() == 'data' && dividendCols != null) {
-        final d = _ibkrDividend(f, dividendCols);
-        if (d != null) dividends.add(d);
+        final cols = {for (final (i, c) in f.indexed) c.toLowerCase().replaceAll(RegExp(r'[^a-z]'), ''): i};
+        if (isTax) {
+          taxCols = cols;
+        } else {
+          dividendCols = cols;
+        }
+      } else if (f[1].toLowerCase() == 'data') {
+        if (isTax && taxCols != null) {
+          final t = _ibkrDividend(f, taxCols, allowNegative: true);
+          if (t != null) withholding[_dayKey(t)] = (withholding[_dayKey(t)] ?? 0) + t.amount;
+        } else if (!isTax && dividendCols != null) {
+          final d = _ibkrDividend(f, dividendCols);
+          if (d != null) dividends.add(d);
+        }
       }
       continue;
     }
@@ -293,12 +306,21 @@ CsvImport _withHeader(
       ),
     );
   }
-  return CsvImport(lots, skipped, dividends: dividends);
+  // A bruttó osztalékból a forrásadó levonva: ami a számlára érkezett.
+  final net = [
+    for (final d in dividends)
+      if (d.amount + (withholding[_dayKey(d)] ?? 0) case final a when a > 0)
+        ImportedDividend(symbol: d.symbol, amount: a, currency: d.currency, date: d.date),
+  ];
+  return CsvImport(lots, skipped, dividends: net);
 }
 
-/// Az IBKR „Dividends,Data,…” sora: a ticker a leírás elején
-/// („AAPL(US0378331005) Cash Dividend USD 0.25 per Share”), az összeg a sor végén.
-ImportedDividend? _ibkrDividend(List<String> f, Map<String, int> col) {
+String _dayKey(ImportedDividend d) => '${d.symbol}|${d.currency}|${d.date?.toIso8601String().substring(0, 10)}';
+
+/// Az IBKR „Dividends,Data,…” (vagy „Withholding Tax,Data,…”) sora: a ticker a
+/// leírás elején („AAPL(US0378331005) Cash Dividend USD 0.25 per Share”), az
+/// összeg a sor végén (az adónál negatív).
+ImportedDividend? _ibkrDividend(List<String> f, Map<String, int> col, {bool allowNegative = false}) {
   String cell(String name) {
     final i = col[name];
     return i == null || i >= f.length ? '' : f[i];
@@ -307,7 +329,7 @@ ImportedDividend? _ibkrDividend(List<String> f, Map<String, int> col) {
   final symbol = RegExp(r'^([A-Z0-9.\-]{1,15})\s*\(').firstMatch(cell('description'))?.group(1);
   final amount = parseDecimal(cell('amount').replaceAll(RegExp(r'[^0-9,.\-]'), ''));
   final ccy = cell('currency').toUpperCase();
-  if (symbol == null || amount == null || amount <= 0 || !_currency.hasMatch(ccy)) return null;
+  if (symbol == null || amount == null || (!allowNegative && amount <= 0) || !_currency.hasMatch(ccy)) return null;
   return ImportedDividend(symbol: symbol, amount: amount, currency: ccy, date: _date(cell('date')));
 }
 

@@ -140,8 +140,13 @@ void main() {
       final key = FollowUpStore.keyFor('AAPL · Apple Inc.', 'Apple beat expectations.');
       expect(key, FollowUpStore.keyFor('AAPL · Apple Inc.', 'Apple beat expectations.'));
       expect(await store.load(key), isEmpty);
-      await store.append(key, 'Why?', (text: 'Guidance.', sources: const [(title: 'Reuters', url: 'https://r.ex/a')]));
-      await store.append(key, 'And then?', (text: 'Buybacks.', sources: const []));
+      // A második kérdés válasza ér be előbb: a sorrend mégis a kérdéseké.
+      final second = store.append(key, 'And then?', (text: 'Buybacks.', sources: const []), order: 1);
+      final first = store.append(key, 'Why?', (
+        text: 'Guidance.',
+        sources: const [(title: 'Reuters', url: 'https://r.ex/a')],
+      ), order: 0);
+      await Future.wait([second, first]);
       final turns = await FollowUpStore(storeKey: 'fu_test').load(key);
       expect(turns.map((t) => t.question), ['Why?', 'And then?']);
       expect(turns.first.answer.sources.single.url, 'https://r.ex/a');

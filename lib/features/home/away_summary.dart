@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
@@ -83,9 +84,8 @@ class AwaySummary extends ChangeNotifier {
   AwayReport? get report => _report;
   DateTime? _lastCheck;
 
-  /// A portfólió részvényei elöl, utána a kedvencek.
-  List<String> get watched =>
-      {for (final p in portfolio.positions) p.symbol.toUpperCase(), ...preferences.favorites}.take(maxSymbols).toList();
+  /// A portfólió részvényei elöl, utána a kedvencek (ugyanaz, mint az eseményeknél).
+  List<String> get watched => events.watched.take(maxSymbols).toList();
 
   /// Indításkor (és előtérbe kerüléskor, ha azóta legalább [minAway] telt el –
   /// telefonon az app ritkán indul újra): az előző pillanatkép alapján a
@@ -117,9 +117,11 @@ class AwaySummary extends ChangeNotifier {
                 if (prev.prices[e.key] case final from? when from > 0) (symbol: e.key, from: from, to: e.value),
             ].where((m) => AwayReport.percent(m).abs() >= minMovePercent).toList()
             ..sort((a, b) => AwayReport.percent(b).abs().compareTo(AwayReport.percent(a).abs()));
+      // Csak a már elmúlt napok (a mai, zárás utáni jelentés még nem).
+      final today = DateTime(now.year, now.month, now.day);
       final reported = [
         for (final e in prev.earnings.entries)
-          if (!e.value.isAfter(now) && symbols.contains(e.key)) e.key,
+          if (e.value.isBefore(today) && symbols.contains(e.key)) e.key,
       ];
       _report = AwayReport(
         since: prev.at,
@@ -133,7 +135,7 @@ class AwaySummary extends ChangeNotifier {
     if (prices.isEmpty) return;
     // A következő gyorsjelentések napja: amelyik a következő látogatásig elmúlik, az „jelentett”.
     try {
-      await events.refresh().timeout(const Duration(seconds: 25));
+      await _eventsReady().timeout(const Duration(seconds: 25));
     } catch (_) {
       // Események nélkül is jó a pillanatkép.
     }
@@ -155,24 +157,37 @@ class AwaySummary extends ChangeNotifier {
     }
   }
 
+  /// Megvárja az események friss listáját: ha épp másik frissítés fut (a
+  /// kezdőképernyő is indít egyet), annak a végét, különben saját frissítést.
+  Future<void> _eventsReady() async {
+    if (!events.loading) {
+      await events.refresh();
+      if (!events.loading) return;
+    }
+    final done = Completer<void>();
+    void listener() {
+      if (!events.loading && !done.isCompleted) done.complete();
+    }
+
+    events.addListener(listener);
+    try {
+      await done.future;
+    } finally {
+      events.removeListener(listener);
+    }
+  }
+
   /// A portfólió értékváltozása: pozíciónként darab × árkülönbség, az
   /// összesítés pénznemére váltva; amelyikhez nincs ár vagy árfolyam, kimarad.
   Future<double?> _portfolioPercent(Map<String, double> from, Map<String, double> to) async {
     final positions = portfolio.positions;
     final currency = PortfolioSnapshot.totalCurrency(positions, displayCurrency?.call());
+    final rates = await fx.ratesFor(positions.map((p) => p.currency), currency);
     var before = 0.0, after = 0.0;
     for (final p in positions) {
       final a = from[p.symbol], b = to[p.symbol];
-      if (a == null || b == null) continue;
-      double? rate = 1;
-      if (p.currency != currency) {
-        try {
-          rate = (await fx.rate(p.currency, currency))?.rate;
-        } catch (_) {
-          rate = null;
-        }
-      }
-      if (rate == null) continue;
+      final rate = rates[p.currency];
+      if (a == null || b == null || rate == null) continue;
       before += p.quantity * a * rate;
       after += p.quantity * b * rate;
     }

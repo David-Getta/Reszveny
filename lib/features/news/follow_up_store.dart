@@ -6,7 +6,7 @@ import 'daily_brief.dart' show stableDigest;
 import 'research_store.dart' show ResearchResult;
 
 /// Egy kész kérdés–válasz pár a kérdezz-vissza beszélgetésből.
-typedef FollowUpTurn = ({String question, ResearchResult answer});
+typedef FollowUpTurn = ({String question, ResearchResult answer, int? order});
 
 /// A kérdezz-vissza beszélgetések a készüléken: jegyzetenként (a tárgy és a
 /// szöveg lenyomata) a kész kérdés–válasz párok, [keepFor] ideig, legfeljebb
@@ -31,11 +31,18 @@ class FollowUpStore {
   /// A jegyzethez mentett párok (időrendben), vagy üres lista.
   Future<List<FollowUpTurn>> load(String key) async => (await _load())[key]?.turns ?? const [];
 
-  /// Egy új pár a jegyzet végére; a jegyzet frissességi ideje újraindul.
-  Future<void> append(String key, String question, ResearchResult answer) async {
-    final all = await _load();
-    final turns = [...?all[key]?.turns, (question: question, answer: answer)];
-    await _save({...all, key: (at: _clock(), turns: turns)});
+  /// Az írások egymás után (két egyszerre érkező válasz nem veszhet el).
+  Future<void> _queue = Future.value();
+
+  /// Egy új pár a jegyzethez a kérdés [order] sorszámával (így a lap sorrendje
+  /// marad, nem a válaszok érkezéséé); a jegyzet frissességi ideje újraindul.
+  Future<void> append(String key, String question, ResearchResult answer, {int? order}) {
+    return _queue = _queue.then((_) async {
+      final all = await _load();
+      final turns = [...?all[key]?.turns, (question: question, answer: answer, order: order)]
+        ..sort((a, b) => (a.order ?? 1 << 30).compareTo(b.order ?? 1 << 30));
+      await _save({...all, key: (at: _clock(), turns: turns)});
+    });
   }
 
   Future<Map<String, ({DateTime at, List<FollowUpTurn> turns})>> _load() async {
@@ -57,6 +64,7 @@ class FollowUpStore {
               if (t is Map && t['q'] is String && t['text'] is String)
                 (
                   question: t['q'] as String,
+                  order: t['i'] is int ? t['i'] as int : null,
                   answer: (
                     text: t['text'] as String,
                     sources: [
@@ -87,6 +95,7 @@ class FollowUpStore {
                 for (final t in e.value.turns)
                   {
                     'q': t.question,
+                    if (t.order != null) 'i': t.order,
                     'text': t.answer.text,
                     'sources': [
                       for (final s in t.answer.sources) {'title': s.title, 'url': s.url},
