@@ -137,7 +137,21 @@ class ResearchFollowUpPanel extends StatefulWidget {
 
 class _ResearchFollowUpPanelState extends State<ResearchFollowUpPanel> {
   final _controller = TextEditingController();
-  final _turns = <({String question, Future<ResearchResult> answer})>[];
+
+  /// A kérdések és válaszok a futás alatt megmaradnak (jegyzetenként), így a
+  /// lap újranyitásakor is látszanak; legfeljebb ennyi jegyzethez.
+  static final _memory = <String, List<({String question, Future<ResearchResult> answer})>>{};
+  static const maxRemembered = 30;
+
+  late final List<({String question, Future<ResearchResult> answer})> _turns = _memory.putIfAbsent(
+    '${widget.subject}|${widget.note.hashCode}',
+    () {
+      while (_memory.length >= maxRemembered) {
+        _memory.remove(_memory.keys.first);
+      }
+      return [];
+    },
+  );
 
   @override
   void dispose() {

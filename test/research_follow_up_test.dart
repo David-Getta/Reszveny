@@ -111,5 +111,14 @@ void main() {
     expect(asked.last, contains('Subject: AAPL · Apple Inc.'));
     expect(tester.widget<TextField>(find.byKey(const ValueKey('followup-field'))).controller!.text, isEmpty);
     expect(asked, hasLength(2));
+
+    // A lapot bezárva és újranyitva a kérdés és a válasz megmarad (nem kérdez újra).
+    Navigator.of(tester.element(find.byKey(const ValueKey('earnings-summary-sheet')))).pop();
+    await tester.pumpAndSettle();
+    await tester.tap(button);
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('followup-q-0')), findsOneWidget);
+    expect(find.text('Because guidance for the holiday quarter was cautious.'), findsOneWidget);
+    expect(asked, hasLength(2));
   });
 }

@@ -291,6 +291,7 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 5dg | Kutatási lapok: „Mentés a jegyzeteimbe” – a hírmagyarázat, gyorsjelentés-összefoglaló vagy ETF-magyarázat dátummal, címmel és forrásokkal a részvény saját jegyzetének végére kerül | ✅ kész |
 | 5dh | A jegyzetkártya követi a máshonnan érkező változást (mentett AI-jegyzet, szinkron), ha épp nem gépelsz benne | ✅ kész |
 | 5di | „Friss gyorsjelentések” a kezdőképernyőn (legfeljebb három, „Mind” gombbal az események oldalára); a beállításokban kikapcsolható | ✅ kész |
+| 5dj | A „kérdezz vissza” kérdések és válaszok a futás alatt megmaradnak: a kutatási lapot vagy összehasonlítást újranyitva is látszanak, nem kérdez újra | ✅ kész |
 | 5j | Telefonos háttér-értesítés (riasztás) szerverről, APNs / FCM | 🟡 első lépés kész: a szerver 10 percenként nézi a belépett fiókok szinkronizált riasztásait, és e-mailben szól (csukott appnál is, kikapcsolható); a telefonos push (APNs / FCM) a Firebase-projekt és az Apple-kulcs után |
 | 5k | Bolti adatlapok 120 nyelven, képernyőképek, ikon, előnézeti videó | 🟡 adatlap-szövegek 70 bolti nyelven (fastlane-mappa, `docs/BOLTI_ADATLAP.md`), feliratos bolti képek a teszt-harnessből a boltok méreteiben (4 kép: felismerés, elemzés, portfólió, gyorsjelentés-összefoglaló kérdéssel); előnézeti videó és a nem latin írású képek a natív buildből később |
 
