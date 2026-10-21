@@ -1131,6 +1131,11 @@ class AppLocalizationsTh extends AppLocalizations {
   String get portfolioGainLoss => 'กำไร/ขาดทุน';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'เงินปันผลปีนี้: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'เงินลงทุน';
 
   @override

@@ -1140,6 +1140,11 @@ class AppLocalizationsBho extends AppLocalizations {
   String get portfolioGainLoss => 'फायदा/नुकसान';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'ए साल के डिविडेंड: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'निवेश';
 
   @override

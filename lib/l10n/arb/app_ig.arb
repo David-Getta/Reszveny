@@ -742,5 +742,6 @@
   "eventDividend": "A na-atụ anya nkesa uru",
   "eventDividendEstimate": "E mere atụmatụ site na ụgwọ ị dekọrọ",
   "labelYieldOnCost": "Mkpụrụ dividend n'ọnụahịa ịzụ",
-  "glossYieldOnCost": "Dividend enwetara n'ọnwa 12 gara aga kewara ihe ị kwụrụ maka share ndị ị ka nwere. N'adịghị ka mkpụrụ dividend, a na-atụ ya n'ọnụahịa ịzụ nke gị, ọ bụghị ọnụahịa taa."
+  "glossYieldOnCost": "Dividend enwetara n'ọnwa 12 gara aga kewara ihe ị kwụrụ maka share ndị ị ka nwere. N'adịghị ka mkpụrụ dividend, a na-atụ ya n'ọnụahịa ịzụ nke gị, ọ bụghị ọnụahịa taa.",
+  "homeDividendsThisYear": "Nkesa uru afọ a: {amount}"
 }

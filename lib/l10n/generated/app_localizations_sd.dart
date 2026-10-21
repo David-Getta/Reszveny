@@ -1139,6 +1139,11 @@ class AppLocalizationsSd extends AppLocalizations {
   String get portfolioGainLoss => 'نفعو/نقصان';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'هن سال ڊيويڊنڊ: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'سيڙپ ڪيل';
 
   @override

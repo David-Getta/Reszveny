@@ -1109,6 +1109,11 @@ class AppLocalizationsKo extends AppLocalizations {
   String get portfolioGainLoss => '손익';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return '올해 배당금: $amount';
+  }
+
+  @override
   String get portfolioInvested => '투자 금액';
 
   @override

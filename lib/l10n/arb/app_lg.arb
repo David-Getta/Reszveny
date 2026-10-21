@@ -742,5 +742,6 @@
   "eventDividend": "Dividendi esuubirwa",
   "eventDividendEstimate": "Ebalirirwa okuva mu nsasula z'owandiise",
   "labelYieldOnCost": "Amagoba ku bbeeyi ey'okugula (%)",
-  "glossYieldOnCost": "Dividendi ezafunibwa mu myezi 12 egiyise nga zigabanyizibwamu ssente ze wasasula ku migabo gy'okyalina. Okwawukana ku magoba ku migabo, kino kipimibwa ku bbeeyi gye wagulako ggwe, so si ku bbeeyi ya leero."
+  "glossYieldOnCost": "Dividendi ezafunibwa mu myezi 12 egiyise nga zigabanyizibwamu ssente ze wasasula ku migabo gy'okyalina. Okwawukana ku magoba ku migabo, kino kipimibwa ku bbeeyi gye wagulako ggwe, so si ku bbeeyi ya leero.",
+  "homeDividendsThisYear": "Dividendi omwaka guno: {amount}"
 }

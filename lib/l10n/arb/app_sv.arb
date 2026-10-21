@@ -742,5 +742,6 @@
   "eventDividend": "Väntad utdelning",
   "eventDividendEstimate": "Uppskattat utifrån de utdelningar du registrerat",
   "labelYieldOnCost": "Direktavkastning på inköpspris",
-  "glossYieldOnCost": "Utdelningar mottagna de senaste 12 månaderna delat med vad du betalade för de aktier du fortfarande äger. Till skillnad från direktavkastningen mäts den mot ditt eget inköpspris, inte dagens kurs."
+  "glossYieldOnCost": "Utdelningar mottagna de senaste 12 månaderna delat med vad du betalade för de aktier du fortfarande äger. Till skillnad från direktavkastningen mäts den mot ditt eget inköpspris, inte dagens kurs.",
+  "homeDividendsThisYear": "Utdelningar i år: {amount}"
 }

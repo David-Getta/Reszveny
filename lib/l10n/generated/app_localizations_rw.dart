@@ -1150,6 +1150,11 @@ class AppLocalizationsRw extends AppLocalizations {
   String get portfolioGainLoss => 'Inyungu/igihombo';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Amadividende y\'uyu mwaka: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Ayashowe';
 
   @override

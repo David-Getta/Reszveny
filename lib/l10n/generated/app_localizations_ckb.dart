@@ -1144,6 +1144,11 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get portfolioGainLoss => 'قازانج/زەرەر';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'پشکی قازانجی ئەم ساڵ: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'وەبەرهێنراو';
 
   @override

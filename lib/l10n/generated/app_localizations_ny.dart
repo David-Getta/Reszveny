@@ -1149,6 +1149,11 @@ class AppLocalizationsNy extends AppLocalizations {
   String get portfolioGainLoss => 'Phindu/kutayika';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Madividendi chaka chino: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Zoyikidwa';
 
   @override

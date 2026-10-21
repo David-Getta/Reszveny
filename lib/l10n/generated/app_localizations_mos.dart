@@ -1133,6 +1133,11 @@ class AppLocalizationsMos extends AppLocalizations {
   String get portfolioGainLoss => 'Nafa/bõnem';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Dividand yʋʋm-kãngã: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Ligd f sẽn kẽesã';
 
   @override

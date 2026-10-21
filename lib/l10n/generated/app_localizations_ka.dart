@@ -1146,6 +1146,11 @@ class AppLocalizationsKa extends AppLocalizations {
   String get portfolioGainLoss => 'მოგება/ზარალი';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'დივიდენდები წელს: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'ინვესტირებული';
 
   @override

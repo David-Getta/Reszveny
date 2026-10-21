@@ -742,5 +742,6 @@
   "eventDividend": "Dividende ezelami",
   "eventDividendEstimate": "Etangami na ba futa oyo okomaki",
   "labelYieldOnCost": "Rendement na ntalo ya kosomba",
-  "glossYieldOnCost": "Ba dividende oyo ozwaki na basanza 12 ya suka, ekabwani na mbɔngɔ oyo ofutaki mpo na ba action oyo ozali naino na yango. Ekeseni na rendement ya dividende: etalelamaka na ntalo oyo yo osombaki, kasi na ntalo ya lelo te."
+  "glossYieldOnCost": "Ba dividende oyo ozwaki na basanza 12 ya suka, ekabwani na mbɔngɔ oyo ofutaki mpo na ba action oyo ozali naino na yango. Ekeseni na rendement ya dividende: etalelamaka na ntalo oyo yo osombaki, kasi na ntalo ya lelo te.",
+  "homeDividendsThisYear": "Ba dividende ya mbula oyo: {amount}"
 }

@@ -1121,6 +1121,11 @@ class AppLocalizationsTi extends AppLocalizations {
   String get portfolioGainLoss => 'ትርፊ/ክሳራ';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'ድቪደንድ ሎሚ ዓመት: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'ዝተወፈረ';
 
   @override

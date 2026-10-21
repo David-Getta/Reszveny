@@ -742,5 +742,6 @@
   "eventDividend": "Dividendo suyasqa",
   "eventDividendEstimate": "Qillqasqayki pagokunamanta yupasqa",
   "labelYieldOnCost": "Rantisqa chaninpi rendimiento",
-  "glossYieldOnCost": "Qhipa 12 killakunapi chaskisqa dividendokuna, kunankama hap'isqayki accionkunapaq pagasqaykiwan rakisqa. Dividendopa rendimientonmanta hukniraq, kayqa kikiykipa rantisqa chaninwan tupachisqa, manam kunan chaninwanchu."
+  "glossYieldOnCost": "Qhipa 12 killakunapi chaskisqa dividendokuna, kunankama hap'isqayki accionkunapaq pagasqaykiwan rakisqa. Dividendopa rendimientonmanta hukniraq, kayqa kikiykipa rantisqa chaninwan tupachisqa, manam kunan chaninwanchu.",
+  "homeDividendsThisYear": "Kay wata dividendokuna: {amount}"
 }

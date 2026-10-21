@@ -1144,6 +1144,11 @@ class AppLocalizationsMn extends AppLocalizations {
   String get portfolioGainLoss => 'Ашиг/алдагдал';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Энэ жилийн ногдол ашиг: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Оруулсан хөрөнгө';
 
   @override

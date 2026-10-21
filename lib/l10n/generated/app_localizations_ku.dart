@@ -1147,6 +1147,11 @@ class AppLocalizationsKu extends AppLocalizations {
   String get portfolioGainLoss => 'Qezenc/zirar';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Dividendên îsal: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Veberhênan';
 
   @override

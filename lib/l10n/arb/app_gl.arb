@@ -742,5 +742,6 @@
   "eventDividend": "Dividendo previsto",
   "eventDividendEstimate": "Estimado a partir dos teus pagamentos rexistrados",
   "labelYieldOnCost": "Rendibilidade sobre o custo",
-  "glossYieldOnCost": "Os dividendos recibidos nos últimos 12 meses divididos polo que pagaches polas accións que aínda tes. A diferenza da rendibilidade por dividendo, mídese sobre o teu propio prezo de compra, non sobre o prezo de hoxe."
+  "glossYieldOnCost": "Os dividendos recibidos nos últimos 12 meses divididos polo que pagaches polas accións que aínda tes. A diferenza da rendibilidade por dividendo, mídese sobre o teu propio prezo de compra, non sobre o prezo de hoxe.",
+  "homeDividendsThisYear": "Dividendos este ano: {amount}"
 }

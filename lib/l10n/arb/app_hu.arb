@@ -320,6 +320,7 @@
   "portfolioTotalValue": "Összérték",
   "portfolioToday": "Ma",
   "portfolioGainLoss": "Nyereség/veszteség",
+  "homeDividendsThisYear": "Idei osztalék: {amount}",
   "portfolioInvested": "Befektetve",
   "portfolioAllocation": "Megoszlás",
   "portfolioPositions": "Pozíciók",

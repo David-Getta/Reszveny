@@ -1146,6 +1146,11 @@ class AppLocalizationsSu extends AppLocalizations {
   String get portfolioGainLoss => 'Untung/rugi';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Dividen taun ieu: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Diinvestasikeun';
 
   @override

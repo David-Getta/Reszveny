@@ -1146,6 +1146,11 @@ class AppLocalizationsFi extends AppLocalizations {
   String get portfolioGainLoss => 'Voitto/tappio';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Osingot tänä vuonna: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Sijoitettu';
 
   @override

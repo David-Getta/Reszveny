@@ -742,5 +742,6 @@
   "eventDividend": "Dividende habbaaɗo",
   "eventDividendEstimate": "Hiisaama iwde e yoɓdiiji ɗe mbinnduɗaa",
   "labelYieldOnCost": "Nafoore e coggu soodgol (%)",
-  "glossYieldOnCost": "Dividendeeji ɗi a heɓi e lebbi 12 sakkitiiɗi, feccaaɗi e ko a yoɓi e aksiyoŋuuji ɗi a jogii tawo. So wonaa geɗal nafoore e coggu, ɗum ina ɓetee e coggu soodgol maa, wonaa coggu hannde."
+  "glossYieldOnCost": "Dividendeeji ɗi a heɓi e lebbi 12 sakkitiiɗi, feccaaɗi e ko a yoɓi e aksiyoŋuuji ɗi a jogii tawo. So wonaa geɗal nafoore e coggu, ɗum ina ɓetee e coggu soodgol maa, wonaa coggu hannde.",
+  "homeDividendsThisYear": "Dividendeeji hitaande ndee: {amount}"
 }

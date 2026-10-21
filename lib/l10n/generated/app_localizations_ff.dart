@@ -1141,6 +1141,11 @@ class AppLocalizationsFf extends AppLocalizations {
   String get portfolioGainLoss => 'Nafoore/bonannde';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Dividendeeji hitaande ndee: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Ceede ɗe a waɗi';
 
   @override

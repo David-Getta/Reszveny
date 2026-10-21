@@ -1140,6 +1140,11 @@ class AppLocalizationsPs extends AppLocalizations {
   String get portfolioGainLoss => 'ګټه/زیان';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'د سږکال ډیویډنډونه: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'پانګونه شوې';
 
   @override

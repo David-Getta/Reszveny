@@ -742,5 +742,6 @@
   "eventDividend": "Dividend verwacht",
   "eventDividendEstimate": "Geschat op basis van de uitkeringen die je hebt vastgelegd",
   "labelYieldOnCost": "Rendement op aankoopprijs",
-  "glossYieldOnCost": "Het dividend dat je de laatste 12 maanden hebt ontvangen, gedeeld door wat je hebt betaald voor de aandelen die je nog bezit. Anders dan het dividendrendement wordt het afgezet tegen je eigen aankoopprijs, niet tegen de koers van vandaag."
+  "glossYieldOnCost": "Het dividend dat je de laatste 12 maanden hebt ontvangen, gedeeld door wat je hebt betaald voor de aandelen die je nog bezit. Anders dan het dividendrendement wordt het afgezet tegen je eigen aankoopprijs, niet tegen de koers van vandaag.",
+  "homeDividendsThisYear": "Dividend dit jaar: {amount}"
 }

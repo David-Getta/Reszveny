@@ -1144,6 +1144,11 @@ class AppLocalizationsTr extends AppLocalizations {
   String get portfolioGainLoss => 'Kâr/zarar';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Bu yılki temettüler: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Yatırılan';
 
   @override

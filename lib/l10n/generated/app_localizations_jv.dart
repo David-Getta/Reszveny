@@ -1145,6 +1145,11 @@ class AppLocalizationsJv extends AppLocalizations {
   String get portfolioGainLoss => 'Bathi/rugi';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Dividen taun iki: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Diinvestasekake';
 
   @override

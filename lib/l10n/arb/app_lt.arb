@@ -742,5 +742,6 @@
   "eventDividend": "Numatomas dividendas",
   "eventDividendEstimate": "Įvertinta pagal jūsų įrašytas išmokas",
   "labelYieldOnCost": "Pajamingumas nuo pirkimo kainos",
-  "glossYieldOnCost": "Per paskutinius 12 mėnesių gauti dividendai, padalyti iš sumos, kurią sumokėjote už vis dar turimas akcijas. Skirtingai nei dividendų pajamingumas, jis skaičiuojamas nuo jūsų pirkimo kainos, o ne nuo šiandienos kainos."
+  "glossYieldOnCost": "Per paskutinius 12 mėnesių gauti dividendai, padalyti iš sumos, kurią sumokėjote už vis dar turimas akcijas. Skirtingai nei dividendų pajamingumas, jis skaičiuojamas nuo jūsų pirkimo kainos, o ne nuo šiandienos kainos.",
+  "homeDividendsThisYear": "Dividendai šiemet: {amount}"
 }

@@ -742,5 +742,6 @@
   "eventDividend": "Dividend așteptat",
   "eventDividendEstimate": "Estimat pe baza plăților înregistrate de tine",
   "labelYieldOnCost": "Randament la prețul de achiziție",
-  "glossYieldOnCost": "Dividendele încasate în ultimele 12 luni împărțite la cât ai plătit pentru acțiunile pe care le mai deții. Spre deosebire de randamentul dividendului, se raportează la prețul tău de cumpărare, nu la prețul de azi."
+  "glossYieldOnCost": "Dividendele încasate în ultimele 12 luni împărțite la cât ai plătit pentru acțiunile pe care le mai deții. Spre deosebire de randamentul dividendului, se raportează la prețul tău de cumpărare, nu la prețul de azi.",
+  "homeDividendsThisYear": "Dividende anul acesta: {amount}"
 }

@@ -742,5 +742,6 @@
   "eventDividend": "Diviidendii eegamu",
   "eventDividendEstimate": "Kaffaltiiwwan ati galmeessiterraa tilmaamame",
   "labelYieldOnCost": "Bu'aa gatii bittaa irratti",
-  "glossYieldOnCost": "Diviidendii ji'oota 12 darban keessa argame, maallaqa aksiyoonota ammas qabdu irratti kaffalteen hiramee. Dhibbeentaa qooda bu'aa irraa adda ta'ee, gatii har'aatiin osoo hin taane gatii ati ittiin bitteen safarama."
+  "glossYieldOnCost": "Diviidendii ji'oota 12 darban keessa argame, maallaqa aksiyoonota ammas qabdu irratti kaffalteen hiramee. Dhibbeentaa qooda bu'aa irraa adda ta'ee, gatii har'aatiin osoo hin taane gatii ati ittiin bitteen safarama.",
+  "homeDividendsThisYear": "Diviidendii bara kanaa: {amount}"
 }

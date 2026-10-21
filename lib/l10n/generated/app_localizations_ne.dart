@@ -1145,6 +1145,11 @@ class AppLocalizationsNe extends AppLocalizations {
   String get portfolioGainLoss => 'नाफा/नोक्सान';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'यस वर्षको लाभांश: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'लगानी गरिएको';
 
   @override

@@ -1163,6 +1163,11 @@ class AppLocalizationsMk extends AppLocalizations {
   String get portfolioGainLoss => 'Добивка/загуба';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Дивиденди оваа година: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Вложено';
 
   @override

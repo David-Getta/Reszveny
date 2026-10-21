@@ -742,5 +742,6 @@
   "eventDividend": "Idividende yitezwe",
   "eventDividendEstimate": "Biharuwe hisunzwe ivyishurwa wanditse",
   "labelYieldOnCost": "Inyungu ku giciro waguze",
-  "glossYieldOnCost": "Amadividende yakiriwe mu mezi 12 aheze agabanijwe n'ivyo wariha ku migabane ugifise. Bitandukanye n'igipimo c'inyungu ku migabane, bipimwa ku giciro wewe nyene waguze, atari ic'uno musi."
+  "glossYieldOnCost": "Amadividende yakiriwe mu mezi 12 aheze agabanijwe n'ivyo wariha ku migabane ugifise. Bitandukanye n'igipimo c'inyungu ku migabane, bipimwa ku giciro wewe nyene waguze, atari ic'uno musi.",
+  "homeDividendsThisYear": "Amadividende y'uyu mwaka: {amount}"
 }

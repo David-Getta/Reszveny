@@ -742,5 +742,6 @@
   "eventDividend": "Očekávaná dividenda",
   "eventDividendEstimate": "Odhad z vašich zaznamenaných výplat",
   "labelYieldOnCost": "Výnos k nákupní ceně",
-  "glossYieldOnCost": "Dividendy přijaté za posledních 12 měsíců dělené tím, co jste zaplatili za akcie, které stále držíte. Na rozdíl od dividendového výnosu se měří vůči vaší vlastní nákupní ceně, ne vůči dnešní ceně."
+  "glossYieldOnCost": "Dividendy přijaté za posledních 12 měsíců dělené tím, co jste zaplatili za akcie, které stále držíte. Na rozdíl od dividendového výnosu se měří vůči vaší vlastní nákupní ceně, ne vůči dnešní ceně.",
+  "homeDividendsThisYear": "Dividendy letos: {amount}"
 }

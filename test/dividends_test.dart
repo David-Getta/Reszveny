@@ -211,6 +211,13 @@ void main() {
     await s.portfolio.addDividend(symbol: 'AAPL', amount: 2.5, currency: 'USD', date: DateTime(2025, 11, 13));
     await tester.pumpWidget(WhatStockApp(services: s));
     await tester.pumpAndSettle();
+    // A főoldali portfólió-kártyán az idei osztalék (a 2025-ös tétel nem idei).
+    expect(find.byKey(const ValueKey('home-dividends')), findsNothing);
+    await s.portfolio.addDividend(symbol: 'AAPL', amount: 1.5, currency: 'USD', date: DateTime.now());
+    await tester.pumpAndSettle();
+    expect(find.text('Dividends this year: 1.50 USD'), findsOneWidget);
+    await s.portfolio.removeDividend(s.portfolio.dividends.firstWhere((d) => d.amount == 1.5).id);
+    await tester.pumpAndSettle();
     await tester.tap(find.text('Portfolio').first);
     await tester.pumpAndSettle();
 

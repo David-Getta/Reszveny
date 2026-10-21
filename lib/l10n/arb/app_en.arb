@@ -663,6 +663,15 @@
     "description": "Today's change in value of the portfolio or position."
   },
   "portfolioGainLoss": "Gain/loss",
+  "homeDividendsThisYear": "Dividends this year: {amount}",
+  "@homeDividendsThisYear": {
+    "description": "Line on the home portfolio card: dividends received in the current year; {amount} is a formatted money amount.",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
   "portfolioInvested": "Invested",
   "portfolioAllocation": "Allocation",
   "portfolioPositions": "Positions",

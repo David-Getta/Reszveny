@@ -742,5 +742,6 @@
   "eventDividend": "Dividend previst",
   "eventDividendEstimate": "Estimat a partir dels pagaments registrats",
   "labelYieldOnCost": "Rendibilitat sobre el cost",
-  "glossYieldOnCost": "Els dividends rebuts els últims 12 mesos dividits pel que vas pagar per les accions que encara tens. A diferència de la rendibilitat per dividend, es mesura sobre el teu propi preu de compra, no sobre el preu d'avui."
+  "glossYieldOnCost": "Els dividends rebuts els últims 12 mesos dividits pel que vas pagar per les accions que encara tens. A diferència de la rendibilitat per dividend, es mesura sobre el teu propi preu de compra, no sobre el preu d'avui.",
+  "homeDividendsThisYear": "Dividends aquest any: {amount}"
 }

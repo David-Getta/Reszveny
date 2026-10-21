@@ -1142,6 +1142,11 @@ class AppLocalizationsKab extends AppLocalizations {
   String get portfolioGainLoss => 'Rrbeḥ/lexsara';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Dividendes aseggas-a: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Idrimen yettwasersen';
 
   @override

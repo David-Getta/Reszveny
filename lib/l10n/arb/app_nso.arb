@@ -742,5 +742,6 @@
   "eventDividend": "Dividende e letetšwego",
   "eventDividendEstimate": "E akanyeditšwe go tšwa go ditefelo tše o di rekotilego",
   "labelYieldOnCost": "Poelo go theko ya go reka",
-  "glossYieldOnCost": "Dividende tše di amogetšwego dikgweding tše 12 tša go feta, tše di aroganywago ka seo o se lefetšego dišere tšeo o sa nago le tšona. Go fapana le poelo ya dividende, e lekanywa go ya ka theko yeo o rekilego ka yona, e sego theko ya lehono."
+  "glossYieldOnCost": "Dividende tše di amogetšwego dikgweding tše 12 tša go feta, tše di aroganywago ka seo o se lefetšego dišere tšeo o sa nago le tšona. Go fapana le poelo ya dividende, e lekanywa go ya ka theko yeo o rekilego ka yona, e sego theko ya lehono.",
+  "homeDividendsThisYear": "Dividende tša ngwaga wo: {amount}"
 }

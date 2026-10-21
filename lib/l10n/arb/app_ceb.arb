@@ -742,5 +742,6 @@
   "eventDividend": "Gipaabot nga dibidendo",
   "eventDividendEstimate": "Gibanabana gikan sa imong narekord nga mga bayad",
   "labelYieldOnCost": "Yield sa gasto",
-  "glossYieldOnCost": "Ang dibidendo nga nadawat sa miaging 12 ka bulan nga gibahin sa imong gibayad para sa mga share nga gihuptan pa nimo. Dili sama sa dividend yield, gisukod kini sa imong kaugalingong presyo sa pagpalit, dili sa presyo karon."
+  "glossYieldOnCost": "Ang dibidendo nga nadawat sa miaging 12 ka bulan nga gibahin sa imong gibayad para sa mga share nga gihuptan pa nimo. Dili sama sa dividend yield, gisukod kini sa imong kaugalingong presyo sa pagpalit, dili sa presyo karon.",
+  "homeDividendsThisYear": "Dibidendo karong tuiga: {amount}"
 }

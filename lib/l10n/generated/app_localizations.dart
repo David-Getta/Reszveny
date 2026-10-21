@@ -2257,6 +2257,12 @@ abstract class AppLocalizations {
   /// **'Gain/loss'**
   String get portfolioGainLoss;
 
+  /// Line on the home portfolio card: dividends received in the current year; {amount} is a formatted money amount.
+  ///
+  /// In en, this message translates to:
+  /// **'Dividends this year: {amount}'**
+  String homeDividendsThisYear(String amount);
+
   /// No description provided for @portfolioInvested.
   ///
   /// In en, this message translates to:

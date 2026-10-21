@@ -1145,6 +1145,11 @@ class AppLocalizationsKk extends AppLocalizations {
   String get portfolioGainLoss => 'Пайда/шығын';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Биылғы дивидендтер: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Салынған қаражат';
 
   @override

@@ -742,5 +742,6 @@
   "eventDividend": "Dividen diperkirakeun",
   "eventDividendEstimate": "Diperkirakeun tina pamayaran anu anjeun catet",
   "labelYieldOnCost": "Imbal hasil tina harga meuli",
-  "glossYieldOnCost": "Dividén anu katampi dina 12 bulan panungtungan dibagi ku jumlah anu anjeun bayar pikeun saham anu masih dipiboga. Béda jeung imbal hasil dividén, ieu diukur dumasar harga meuli anjeun sorangan, lain harga ayeuna."
+  "glossYieldOnCost": "Dividén anu katampi dina 12 bulan panungtungan dibagi ku jumlah anu anjeun bayar pikeun saham anu masih dipiboga. Béda jeung imbal hasil dividén, ieu diukur dumasar harga meuli anjeun sorangan, lain harga ayeuna.",
+  "homeDividendsThisYear": "Dividen taun ieu: {amount}"
 }

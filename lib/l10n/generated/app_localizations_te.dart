@@ -1149,6 +1149,11 @@ class AppLocalizationsTe extends AppLocalizations {
   String get portfolioGainLoss => 'లాభం/నష్టం';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'ఈ సంవత్సరం డివిడెండ్లు: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'పెట్టుబడి';
 
   @override

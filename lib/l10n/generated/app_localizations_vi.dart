@@ -1139,6 +1139,11 @@ class AppLocalizationsVi extends AppLocalizations {
   String get portfolioGainLoss => 'Lãi/lỗ';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Cổ tức năm nay: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Đã đầu tư';
 
   @override

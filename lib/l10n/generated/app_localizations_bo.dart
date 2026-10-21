@@ -1141,6 +1141,11 @@ class AppLocalizationsBo extends AppLocalizations {
   String get portfolioGainLoss => 'ཁེ་གྱོང';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'ད་ལོའི་ཁེ་བགོས། $amount';
+  }
+
+  @override
   String get portfolioInvested => 'མ་འཇོག་བྱས་པ';
 
   @override

@@ -1152,6 +1152,11 @@ class AppLocalizationsTn extends AppLocalizations {
   String get portfolioGainLoss => 'Poelo/tatlhegelo';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Dividente tsa ngwaga ono: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Se se beeleditsweng';
 
   @override

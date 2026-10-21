@@ -1149,6 +1149,11 @@ class AppLocalizationsSn extends AppLocalizations {
   String get portfolioGainLoss => 'Pundutso/kurasikirwa';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Madividendi gore rino: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Zvakaiswa';
 
   @override

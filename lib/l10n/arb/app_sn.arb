@@ -742,5 +742,6 @@
   "eventDividend": "Dividendi inotarisirwa",
   "eventDividendEstimate": "Zvakafungidzirwa kubva pamibhadharo yawakanyora",
   "labelYieldOnCost": "Pundutso pamutengo wawakatenga",
-  "glossYieldOnCost": "Madividendi akagamuchirwa mumwedzi 12 yapfuura akakamurwa nezvawakabhadhara masheya auchiri nawo. Kusiyana nepundutso yedhividhendi, inoyerwa nemutengo wawakatenga nawo iwe, kwete mutengo wanhasi."
+  "glossYieldOnCost": "Madividendi akagamuchirwa mumwedzi 12 yapfuura akakamurwa nezvawakabhadhara masheya auchiri nawo. Kusiyana nepundutso yedhividhendi, inoyerwa nemutengo wawakatenga nawo iwe, kwete mutengo wanhasi.",
+  "homeDividendsThisYear": "Madividendi gore rino: {amount}"
 }

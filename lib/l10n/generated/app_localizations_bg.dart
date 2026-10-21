@@ -1145,6 +1145,11 @@ class AppLocalizationsBg extends AppLocalizations {
   String get portfolioGainLoss => 'Печалба/загуба';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Дивиденти тази година: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Инвестирано';
 
   @override

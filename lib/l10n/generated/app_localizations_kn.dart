@@ -1149,6 +1149,11 @@ class AppLocalizationsKn extends AppLocalizations {
   String get portfolioGainLoss => 'ಲಾಭ/ನಷ್ಟ';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'ಈ ವರ್ಷದ ಡಿವಿಡೆಂಡ್: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'ಹೂಡಿಕೆ';
 
   @override

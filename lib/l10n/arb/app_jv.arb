@@ -742,5 +742,6 @@
   "eventDividend": "Dividen dikarepake",
   "eventDividendEstimate": "Diperkirakan saka pembayaran sing kokcathet",
   "labelYieldOnCost": "Imbal hasil saka rega tuku",
-  "glossYieldOnCost": "Dividen sing ditampa sajrone 12 sasi pungkasan dibagi karo sing wis sampeyan bayar kanggo saham sing isih sampeyan duweni. Beda karo imbal hasil dividen, iki diukur saka rega tuku sampeyan dhewe, dudu rega saiki."
+  "glossYieldOnCost": "Dividen sing ditampa sajrone 12 sasi pungkasan dibagi karo sing wis sampeyan bayar kanggo saham sing isih sampeyan duweni. Beda karo imbal hasil dividen, iki diukur saka rega tuku sampeyan dhewe, dudu rega saiki.",
+  "homeDividendsThisYear": "Dividen taun iki: {amount}"
 }

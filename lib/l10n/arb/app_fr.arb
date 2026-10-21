@@ -742,5 +742,6 @@
   "eventDividend": "Dividende attendu",
   "eventDividendEstimate": "Estimation d’après vos versements enregistrés",
   "labelYieldOnCost": "Rendement sur PRU",
-  "glossYieldOnCost": "Les dividendes reçus au cours des 12 derniers mois divisés par ce que vous avez payé pour les actions que vous détenez encore. Contrairement au rendement du dividende, il se mesure par rapport à votre propre prix d’achat, pas au cours actuel."
+  "glossYieldOnCost": "Les dividendes reçus au cours des 12 derniers mois divisés par ce que vous avez payé pour les actions que vous détenez encore. Contrairement au rendement du dividende, il se mesure par rapport à votre propre prix d’achat, pas au cours actuel.",
+  "homeDividendsThisYear": "Dividendes cette année : {amount}"
 }

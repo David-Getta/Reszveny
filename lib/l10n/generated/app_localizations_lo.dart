@@ -1132,6 +1132,11 @@ class AppLocalizationsLo extends AppLocalizations {
   String get portfolioGainLoss => 'ກຳໄລ/ຂາດທຶນ';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'ເງິນປັນຜົນປີນີ້: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'ເງິນລົງທຶນ';
 
   @override

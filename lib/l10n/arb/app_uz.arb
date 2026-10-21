@@ -742,5 +742,6 @@
   "eventDividend": "Kutilayotgan dividend",
   "eventDividendEstimate": "Siz yozgan toʻlovlar asosida hisoblangan",
   "labelYieldOnCost": "Xarid narxiga daromadlilik",
-  "glossYieldOnCost": "So'nggi 12 oyda olingan dividendlar hali ham saqlab turgan aksiyalaringiz uchun to'lagan summangizga bo'lingan. Dividend daromadliligidan farqli o'laroq, u bugungi narxga emas, o'zingizning xarid narxingizga nisbatan o'lchanadi."
+  "glossYieldOnCost": "So'nggi 12 oyda olingan dividendlar hali ham saqlab turgan aksiyalaringiz uchun to'lagan summangizga bo'lingan. Dividend daromadliligidan farqli o'laroq, u bugungi narxga emas, o'zingizning xarid narxingizga nisbatan o'lchanadi.",
+  "homeDividendsThisYear": "Shu yilgi dividendlar: {amount}"
 }

@@ -1145,6 +1145,11 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get portfolioGainLoss => 'Profit/loss';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Dividend dis year: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Moni wey you put';
 
   @override

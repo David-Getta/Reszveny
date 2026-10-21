@@ -742,5 +742,6 @@
   "eventDividend": "Dividand sẽn gũud",
   "eventDividendEstimate": "B geelg-a ne f sẽn gʋls yaoodã",
   "labelYieldOnCost": "Dividãnd nafa ligd f sẽn yao zugu",
-  "glossYieldOnCost": "Dividãnd nins f sẽn paam kiuug 12 sẽn loogã, pʋɩ ne ligd ning f sẽn yao aksiõ nins f sẽn ket n tarã. A pa wa dividãnd nafa ye: b makd-a-la ne ligd ning f sẽn yao n da wã, la pa ne rũndã ligdã ye."
+  "glossYieldOnCost": "Dividãnd nins f sẽn paam kiuug 12 sẽn loogã, pʋɩ ne ligd ning f sẽn yao aksiõ nins f sẽn ket n tarã. A pa wa dividãnd nafa ye: b makd-a-la ne ligd ning f sẽn yao n da wã, la pa ne rũndã ligdã ye.",
+  "homeDividendsThisYear": "Dividand yʋʋm-kãngã: {amount}"
 }

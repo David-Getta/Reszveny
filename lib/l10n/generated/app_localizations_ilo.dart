@@ -1154,6 +1154,11 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get portfolioGainLoss => 'Ganansia/pukaw';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Dibidendo daytoy a tawen: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Naipuonan';
 
   @override

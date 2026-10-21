@@ -1141,6 +1141,11 @@ class AppLocalizationsTt extends AppLocalizations {
   String get portfolioGainLoss => 'Табыш/зыян';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Бу елгы дивидендлар: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Салынган';
 
   @override

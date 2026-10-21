@@ -1148,6 +1148,11 @@ class AppLocalizationsUg extends AppLocalizations {
   String get portfolioGainLoss => 'پايدا/زىيان';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'بۇ يىلقى دىۋىدېندلار: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'سېلىنغان مەبلەغ';
 
   @override

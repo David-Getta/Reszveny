@@ -1150,6 +1150,11 @@ class AppLocalizationsTa extends AppLocalizations {
   String get portfolioGainLoss => 'லாபம்/நஷ்டம்';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'இந்த ஆண்டு ஈவுத்தொகை: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'முதலீடு';
 
   @override

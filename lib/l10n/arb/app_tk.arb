@@ -742,5 +742,6 @@
   "eventDividend": "Garaşylýan diwidend",
   "eventDividendEstimate": "Siziň ýazan tölegleriňiz esasynda çaklanyldy",
   "labelYieldOnCost": "Satyn alyş bahasyna girdejililik",
-  "glossYieldOnCost": "Soňky 12 aýda alnan diwidendler, häzirem saklaýan paýnamalaryňyz üçin tölän puluňyza bölünýär. Diwidend girdejililiginden tapawutlylykda, ol şu günki baha bilen däl-de, siziň öz satyn alyş bahaňyz bilen ölçelýär."
+  "glossYieldOnCost": "Soňky 12 aýda alnan diwidendler, häzirem saklaýan paýnamalaryňyz üçin tölän puluňyza bölünýär. Diwidend girdejililiginden tapawutlylykda, ol şu günki baha bilen däl-de, siziň öz satyn alyş bahaňyz bilen ölçelýär.",
+  "homeDividendsThisYear": "Şu ýylky diwidendler: {amount}"
 }

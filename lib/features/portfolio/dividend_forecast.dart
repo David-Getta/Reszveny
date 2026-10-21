@@ -1,4 +1,5 @@
 import '../../core/util/formatters.dart';
+import '../fx/fx_service.dart';
 import 'portfolio_store.dart';
 
 /// Egy részvény várható következő osztaléka, a rögzített kifizetésekből becsülve.
@@ -79,7 +80,24 @@ double? yieldOnCost(
   return any ? sum / cost * 100 : null;
 }
 
-/// Becsült összeg: „~ 2,60 USD” – az Események, a kártyák és a naptár egyformán.
+/// A tételek összege a [to] pénznemben a mai árfolyamon (a [fx] adja); az
+/// átválthatatlan pénznemű tétel kimarad. `null`, ha egy sem számolható.
+Future<double?> convertedDividends(FxService fx, Iterable<DividendRecord> dividends, String to) async {
+  final ds = dividends.toList();
+  if (ds.isEmpty) return null;
+  final rates = await fx.ratesFor(ds.map((d) => d.currency), to);
+  var sum = 0.0;
+  var any = false;
+  for (final d in ds) {
+    final rate = rates[d.currency];
+    if (rate == null) continue;
+    sum += d.amount * rate;
+    any = true;
+  }
+  return any ? sum : null;
+}
+
+/// Becsült összeg: „~ 2,60 USD" – az Események, a kártyák és a naptár egyformán.
 String approxMoney(Fmt fmt, double amount, String currency) => '~ ${fmt.money(amount, currency)}';
 
 /// A kifizetések közti medián távolságból a ritmus napokban (30 / 91 / 182 / 365);

@@ -1146,6 +1146,11 @@ class AppLocalizationsTg extends AppLocalizations {
   String get portfolioGainLoss => 'Фоида/зарар';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Дивидендҳои соли ҷорӣ: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Сармоягузорӣ';
 
   @override

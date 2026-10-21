@@ -1152,6 +1152,11 @@ class AppLocalizationsHil extends AppLocalizations {
   String get portfolioGainLoss => 'Ganansya/pierde';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Dibidendo sini nga tuig: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Gin-invest';
 
   @override

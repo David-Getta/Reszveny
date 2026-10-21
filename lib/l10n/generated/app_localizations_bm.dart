@@ -1144,6 +1144,11 @@ class AppLocalizationsBm extends AppLocalizations {
   String get portfolioGainLoss => 'Tɔnɔ/bɔnɛ';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Dividandi ɲinan san: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Wari donnen';
 
   @override

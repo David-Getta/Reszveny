@@ -1149,6 +1149,11 @@ class AppLocalizationsHa extends AppLocalizations {
   String get portfolioGainLoss => 'Riba/asara';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Rabon riba bana: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Abin da aka zuba';
 
   @override

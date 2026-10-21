@@ -1142,6 +1142,11 @@ class AppLocalizationsIg extends AppLocalizations {
   String get portfolioGainLoss => 'Uru/mfu';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Nkesa uru afọ a: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Ego etinyere';
 
   @override

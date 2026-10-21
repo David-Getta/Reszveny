@@ -1150,6 +1150,11 @@ class AppLocalizationsHy extends AppLocalizations {
   String get portfolioGainLoss => 'Շահույթ/վնաս';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Շահաբաժիններ այս տարի՝ $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Ներդրված';
 
   @override

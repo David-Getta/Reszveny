@@ -1151,6 +1151,11 @@ class AppLocalizationsZu extends AppLocalizations {
   String get portfolioGainLoss => 'Inzuzo/ukulahlekelwa';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Izabelo zenzuzo zalo nyaka: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Okutshaliwe';
 
   @override

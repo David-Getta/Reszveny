@@ -742,5 +742,6 @@
   "eventDividend": "Dividente e e lebeletsweng",
   "eventDividendEstimate": "E fopholeditswe go tswa mo dituelong tse o di kwadileng",
   "labelYieldOnCost": "Poelo mo tlhwatlhweng ya go reka",
-  "glossYieldOnCost": "Dividente tse di amogetsweng mo dikgweding tse 12 tse di fetileng, di kgaogantswe ka se o se duetseng dishere tse o sa ntseng o na le tsone. Go farologana le poelo ya dividende, e lekanngwa ka tlhwatlhwa e o rekileng ka yone, e seng ya gompieno."
+  "glossYieldOnCost": "Dividente tse di amogetsweng mo dikgweding tse 12 tse di fetileng, di kgaogantswe ka se o se duetseng dishere tse o sa ntseng o na le tsone. Go farologana le poelo ya dividende, e lekanngwa ka tlhwatlhwa e o rekileng ka yone, e seng ya gompieno.",
+  "homeDividendsThisYear": "Dividente tsa ngwaga ono: {amount}"
 }

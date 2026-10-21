@@ -1146,6 +1146,11 @@ class AppLocalizationsBn extends AppLocalizations {
   String get portfolioGainLoss => 'লাভ/ক্ষতি';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'এ বছরের ডিভিডেন্ড: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'বিনিয়োগ';
 
   @override

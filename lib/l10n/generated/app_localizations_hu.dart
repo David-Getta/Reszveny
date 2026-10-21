@@ -1150,6 +1150,11 @@ class AppLocalizationsHu extends AppLocalizations {
   String get portfolioGainLoss => 'Nyereség/veszteség';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Idei osztalék: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Befektetve';
 
   @override

@@ -1098,6 +1098,11 @@ class AppLocalizationsZh extends AppLocalizations {
   String get portfolioGainLoss => '盈亏';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return '今年股息：$amount';
+  }
+
+  @override
   String get portfolioInvested => '投入成本';
 
   @override
@@ -3767,6 +3772,11 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get portfolioGainLoss => '盈虧';
+
+  @override
+  String homeDividendsThisYear(String amount) {
+    return '今年股息：$amount';
+  }
 
   @override
   String get portfolioInvested => '投入成本';

@@ -1136,6 +1136,11 @@ class AppLocalizationsKm extends AppLocalizations {
   String get portfolioGainLoss => 'ចំណេញ/ខាត';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'ភាគលាភឆ្នាំនេះ៖ $amount';
+  }
+
+  @override
   String get portfolioInvested => 'បានវិនិយោគ';
 
   @override

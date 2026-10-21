@@ -742,5 +742,6 @@
   "eventDividend": "Dividend gözlənilir",
   "eventDividendEstimate": "Qeyd etdiyiniz ödənişlərə əsasən təxmin edilib",
   "labelYieldOnCost": "Alış qiymətinə görə gəlirlilik",
-  "glossYieldOnCost": "Son 12 ayda alınan dividendlərin hələ saxladığınız səhmlər üçün ödədiyiniz məbləğə bölünməsi. Dividend gəlirliliyindən fərqli olaraq, bugünkü qiymətə yox, öz alış qiymətinizə görə ölçülür."
+  "glossYieldOnCost": "Son 12 ayda alınan dividendlərin hələ saxladığınız səhmlər üçün ödədiyiniz məbləğə bölünməsi. Dividend gəlirliliyindən fərqli olaraq, bugünkü qiymətə yox, öz alış qiymətinizə görə ölçülür.",
+  "homeDividendsThisYear": "Bu il dividendlər: {amount}"
 }

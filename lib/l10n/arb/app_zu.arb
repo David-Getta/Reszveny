@@ -742,5 +742,6 @@
   "eventDividend": "Isabelo senzuzo esilindelekile",
   "eventDividendEstimate": "Kulinganiselwe ezinkokhelweni ozirekhodile",
   "labelYieldOnCost": "Isivuno ngentengo yokuthenga",
-  "glossYieldOnCost": "Ama-dividend atholwe ezinyangeni ezingu-12 ezedlule ahlukaniswe ngalokho okukhokhele amasheya osawaphethe. Ngokungafani nesivuno se-dividend, silinganiswa ngentengo owathenga ngayo wena, hhayi intengo yanamuhla."
+  "glossYieldOnCost": "Ama-dividend atholwe ezinyangeni ezingu-12 ezedlule ahlukaniswe ngalokho okukhokhele amasheya osawaphethe. Ngokungafani nesivuno se-dividend, silinganiswa ngentengo owathenga ngayo wena, hhayi intengo yanamuhla.",
+  "homeDividendsThisYear": "Izabelo zenzuzo zalo nyaka: {amount}"
 }

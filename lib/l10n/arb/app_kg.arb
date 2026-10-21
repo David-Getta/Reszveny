@@ -742,5 +742,6 @@
   "eventDividend": "Dividende bo ke vingila",
   "eventDividendEstimate": "Bo tangaka yo na ba futa yina nge sonikaka",
   "labelYieldOnCost": "Rendement na ntalu ya kusumba",
-  "glossYieldOnCost": "Ba dividende ya nge bakaka na bangonda 12 ya nsuka, ya bo kabulaka na mbongo ya nge futaka sambu na ba action ya nge kele na yo tii bubu. Yo kele ve bonso rendement ya dividende: bo ke tesaka yo na ntalu ya nge sumbaka, kansi ve na ntalu ya bubu."
+  "glossYieldOnCost": "Ba dividende ya nge bakaka na bangonda 12 ya nsuka, ya bo kabulaka na mbongo ya nge futaka sambu na ba action ya nge kele na yo tii bubu. Yo kele ve bonso rendement ya dividende: bo ke tesaka yo na ntalu ya nge sumbaka, kansi ve na ntalu ya bubu.",
+  "homeDividendsThisYear": "Ba dividende ya mvula yai: {amount}"
 }

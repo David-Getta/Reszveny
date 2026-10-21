@@ -1142,6 +1142,11 @@ class AppLocalizationsFa extends AppLocalizations {
   String get portfolioGainLoss => 'سود/زیان';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'سود سهام امسال: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'سرمایه‌گذاری‌شده';
 
   @override

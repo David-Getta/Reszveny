@@ -742,5 +742,6 @@
   "eventDividend": "配当予定",
   "eventDividendEstimate": "記録済みの受取額から推定",
   "labelYieldOnCost": "取得利回り",
-  "glossYieldOnCost": "直近12か月に受け取った配当金を、今も保有している株式の購入金額で割ったものです。配当利回りと異なり、今日の株価ではなくあなた自身の購入価格を基準にします。"
+  "glossYieldOnCost": "直近12か月に受け取った配当金を、今も保有している株式の購入金額で割ったものです。配当利回りと異なり、今日の株価ではなくあなた自身の購入価格を基準にします。",
+  "homeDividendsThisYear": "今年の配当金：{amount}"
 }

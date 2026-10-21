@@ -742,5 +742,6 @@
   "eventDividend": "Isahlulo esilindelekileyo",
   "eventDividendEstimate": "Siqikelelwe kwiintlawulo ozirekhodileyo",
   "labelYieldOnCost": "Isivuno kwixabiso lokuthenga",
-  "glossYieldOnCost": "Ii-dividend ezifunyenwe kwiinyanga ezili-12 ezidlulileyo zahlulwe ngoko ukuhlawuleleyo izabelo osenazo. Ngokwahlukileyo kwisivuno se-dividend, silinganiswa ngexabiso owathenga ngalo wena, hayi ixabiso lanamhlanje."
+  "glossYieldOnCost": "Ii-dividend ezifunyenwe kwiinyanga ezili-12 ezidlulileyo zahlulwe ngoko ukuhlawuleleyo izabelo osenazo. Ngokwahlukileyo kwisivuno se-dividend, silinganiswa ngexabiso owathenga ngalo wena, hayi ixabiso lanamhlanje.",
+  "homeDividendsThisYear": "Izahlulo zalo nyaka: {amount}"
 }

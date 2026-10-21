@@ -1150,6 +1150,11 @@ class AppLocalizationsSq extends AppLocalizations {
   String get portfolioGainLoss => 'Fitim/humbje';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Dividendë këtë vit: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Investuar';
 
   @override

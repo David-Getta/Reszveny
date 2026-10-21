@@ -742,5 +742,6 @@
   "eventDividend": "Wole mɔ kpɔm na dividend",
   "eventDividendEstimate": "Wobu akɔnta tso wò fexexe siwo nèŋlɔ ɖi me",
   "labelYieldOnCost": "Viɖemama ƒe agbɔsɔsɔ le ƒlexɔ ŋu",
-  "glossYieldOnCost": "Viɖemama siwo nèxɔ le ɣleti 12 siwo va yi me, womã wo ɖe ga si nèxe ɖe akpa siwo gale asiwò ta dzi. Eto vovo na viɖemama ƒe agbɔsɔsɔ: wodzidzenɛ le wò ŋutɔ wò ƒlexɔ ŋu, ke menye egbe ƒe asixɔxɔ ŋu o."
+  "glossYieldOnCost": "Viɖemama siwo nèxɔ le ɣleti 12 siwo va yi me, womã wo ɖe ga si nèxe ɖe akpa siwo gale asiwò ta dzi. Eto vovo na viɖemama ƒe agbɔsɔsɔ: wodzidzenɛ le wò ŋutɔ wò ƒlexɔ ŋu, ke menye egbe ƒe asixɔxɔ ŋu o.",
+  "homeDividendsThisYear": "Dividend ƒe sia: {amount}"
 }

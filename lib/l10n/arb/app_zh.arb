@@ -742,5 +742,6 @@
   "eventDividend": "预计派息",
   "eventDividendEstimate": "根据您记录的派息估算",
   "labelYieldOnCost": "成本股息率",
-  "glossYieldOnCost": "最近12个月收到的股息，除以您为仍持有的股份所支付的金额。与股息率不同，它以您自己的买入价而非当前价格为基准。"
+  "glossYieldOnCost": "最近12个月收到的股息，除以您为仍持有的股份所支付的金额。与股息率不同，它以您自己的买入价而非当前价格为基准。",
+  "homeDividendsThisYear": "今年股息：{amount}"
 }

@@ -742,5 +742,6 @@
   "eventDividend": "Temettü bekleniyor",
   "eventDividendEstimate": "Kaydettiğiniz ödemelerden tahmin edilmiştir",
   "labelYieldOnCost": "Maliyete göre temettü verimi",
-  "glossYieldOnCost": "Son 12 ayda alınan temettülerin, hâlâ elinizde tuttuğunuz hisseler için ödediğiniz tutara bölümü. Temettü veriminden farklı olarak bugünkü fiyata değil, kendi alış fiyatınıza göre ölçülür."
+  "glossYieldOnCost": "Son 12 ayda alınan temettülerin, hâlâ elinizde tuttuğunuz hisseler için ödediğiniz tutara bölümü. Temettü veriminden farklı olarak bugünkü fiyata değil, kendi alış fiyatınıza göre ölçülür.",
+  "homeDividendsThisYear": "Bu yılki temettüler: {amount}"
 }

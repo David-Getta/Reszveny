@@ -742,5 +742,6 @@
   "eventDividend": "Osinko odotettavissa",
   "eventDividendEstimate": "Arvio kirjaamiesi maksujen perusteella",
   "labelYieldOnCost": "Tuotto hankintahinnalle",
-  "glossYieldOnCost": "Viimeisten 12 kuukauden aikana saadut osingot jaettuna sillä, mitä maksoit yhä omistamistasi osakkeista. Toisin kuin osinkotuotto, se lasketaan omaan ostohintaasi nähden, ei tämän päivän kurssiin."
+  "glossYieldOnCost": "Viimeisten 12 kuukauden aikana saadut osingot jaettuna sillä, mitä maksoit yhä omistamistasi osakkeista. Toisin kuin osinkotuotto, se lasketaan omaan ostohintaasi nähden, ei tämän päivän kurssiin.",
+  "homeDividendsThisYear": "Osingot tänä vuonna: {amount}"
 }

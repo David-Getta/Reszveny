@@ -1149,6 +1149,11 @@ class AppLocalizationsLn extends AppLocalizations {
   String get portfolioGainLoss => 'Litomba/Bobungisi';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Ba dividende ya mbula oyo: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Mbɔngɔ otiaki';
 
   @override

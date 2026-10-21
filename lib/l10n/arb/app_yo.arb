@@ -742,5 +742,6 @@
   "eventDividend": "Ìpín èrè tí a ń retí",
   "eventDividendEstimate": "A fojú díwọ̀n rẹ̀ láti ara ìsanwó tí o kọ sílẹ̀",
   "labelYieldOnCost": "Ìwọ̀n èrè lórí owó tí o san",
-  "glossYieldOnCost": "Èrè ìpín tí o gbà ní oṣù 12 tó kọjá pín pẹ̀lú owó tí o san fún àwọn ìpín tí o ṣì ní. Ó yàtọ̀ sí ìwọ̀n èrè ìpín, nítorí a ń wọ̀n ún lórí owó tí ìwọ fúnra rẹ fi rà á, kì í ṣe owó òní."
+  "glossYieldOnCost": "Èrè ìpín tí o gbà ní oṣù 12 tó kọjá pín pẹ̀lú owó tí o san fún àwọn ìpín tí o ṣì ní. Ó yàtọ̀ sí ìwọ̀n èrè ìpín, nítorí a ń wọ̀n ún lórí owó tí ìwọ fúnra rẹ fi rà á, kì í ṣe owó òní.",
+  "homeDividendsThisYear": "Ìpín èrè ọdún yìí: {amount}"
 }

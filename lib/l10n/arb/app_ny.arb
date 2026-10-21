@@ -742,5 +742,6 @@
   "eventDividend": "Dividendi yoyembekezeka",
   "eventDividendEstimate": "Zoyerekezedwa kuchokera ku malipiro omwe mudalemba",
   "labelYieldOnCost": "Phindu pa mtengo wogula",
-  "glossYieldOnCost": "Madividendi olandiridwa m'miyezi 12 yapitayi ogawidwa ndi zomwe munalipira pa masheya omwe mukadali nawo. Mosiyana ndi chiwerengero cha gawo la phindu, ichi chimayesedwa pa mtengo womwe inu munagula, osati mtengo wa lero."
+  "glossYieldOnCost": "Madividendi olandiridwa m'miyezi 12 yapitayi ogawidwa ndi zomwe munalipira pa masheya omwe mukadali nawo. Mosiyana ndi chiwerengero cha gawo la phindu, ichi chimayesedwa pa mtengo womwe inu munagula, osati mtengo wa lero.",
+  "homeDividendsThisYear": "Madividendi chaka chino: {amount}"
 }

@@ -1143,6 +1143,11 @@ class AppLocalizationsHi extends AppLocalizations {
   String get portfolioGainLoss => 'लाभ/हानि';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'इस साल डिविडेंड: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'निवेश';
 
   @override

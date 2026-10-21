@@ -1144,6 +1144,11 @@ class AppLocalizationsYo extends AppLocalizations {
   String get portfolioGainLoss => 'Èrè/àdánù';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Ìpín èrè ọdún yìí: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Owó tí o dókòwò';
 
   @override

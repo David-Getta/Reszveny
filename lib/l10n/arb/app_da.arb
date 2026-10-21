@@ -742,5 +742,6 @@
   "eventDividend": "Udbytte forventes",
   "eventDividendEstimate": "Anslået ud fra dine registrerede udbetalinger",
   "labelYieldOnCost": "Afkast på købskurs",
-  "glossYieldOnCost": "Udbytte modtaget de seneste 12 måneder divideret med det, du betalte for de aktier, du stadig ejer. I modsætning til udbytteafkastet måles det mod din egen købskurs, ikke dagens kurs."
+  "glossYieldOnCost": "Udbytte modtaget de seneste 12 måneder divideret med det, du betalte for de aktier, du stadig ejer. I modsætning til udbytteafkastet måles det mod din egen købskurs, ikke dagens kurs.",
+  "homeDividendsThisYear": "Udbytte i år: {amount}"
 }

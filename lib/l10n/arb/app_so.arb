@@ -742,5 +742,6 @@
   "eventDividend": "Faa'iido-saami la filayo",
   "eventDividendEstimate": "Lagu qiyaasay bixinnada aad diiwaangelisay",
   "labelYieldOnCost": "Faa'iidada qiimaha iibsiga",
-  "glossYieldOnCost": "Faa'iido-saamiyada la helay 12-kii bilood ee la soo dhaafay oo loo qaybiyay waxa aad bixisay saamiyada aad weli haysato. Si ka duwan heerka qaybta faa'iidada, waxaa lagu qiyaasaa qiimaha aad adigu ku iibsatay, ee ma aha qiimaha maanta."
+  "glossYieldOnCost": "Faa'iido-saamiyada la helay 12-kii bilood ee la soo dhaafay oo loo qaybiyay waxa aad bixisay saamiyada aad weli haysato. Si ka duwan heerka qaybta faa'iidada, waxaa lagu qiyaasaa qiimaha aad adigu ku iibsatay, ee ma aha qiimaha maanta.",
+  "homeDividendsThisYear": "Faa'iido-saamiyada sannadkan: {amount}"
 }

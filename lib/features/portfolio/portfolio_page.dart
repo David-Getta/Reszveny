@@ -9,6 +9,7 @@ import '../../theme/app_theme.dart';
 import '../../widgets/desktop_chrome.dart';
 import 'add_lot_dialog.dart';
 import 'csv_dialog.dart';
+import 'dividend_forecast.dart' show convertedDividends;
 import 'dividends_card.dart';
 import 'holdings_import.dart';
 import 'portfolio_history.dart';
@@ -1234,6 +1235,22 @@ class PortfolioSummaryCard extends StatelessWidget {
                                     '${l10n.portfolioGainLoss} ${fmt.percent(s.gainPercent, withSign: true)}',
                                     style: theme.textTheme.bodySmall?.copyWith(color: gainColor(p, s.gain)),
                                   ),
+                                  // Az idén kapott osztalék a portfólió pénznemében (ha van).
+                                  if (services.portfolio.dividends
+                                          .where((d) => d.date?.year == DateTime.now().year)
+                                          .toList()
+                                      case final ds when ds.isNotEmpty)
+                                    FutureBuilder<double?>(
+                                      key: ValueKey('home-dividends-${s.currency}-${ds.length}'),
+                                      future: convertedDividends(services.fx, ds, s.currency),
+                                      builder: (context, snap) => snap.data == null
+                                          ? const SizedBox.shrink()
+                                          : Text(
+                                              l10n.homeDividendsThisYear(fmt.money(snap.data!, s.currency)),
+                                              key: const ValueKey('home-dividends'),
+                                              style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                                            ),
+                                    ),
                                 ],
                               ),
                           ],

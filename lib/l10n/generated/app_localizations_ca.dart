@@ -1150,6 +1150,11 @@ class AppLocalizationsCa extends AppLocalizations {
   String get portfolioGainLoss => 'Guany/pèrdua';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Dividends aquest any: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Invertit';
 
   @override

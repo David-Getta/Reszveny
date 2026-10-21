@@ -1150,6 +1150,11 @@ class AppLocalizationsEl extends AppLocalizations {
   String get portfolioGainLoss => 'Κέρδος/ζημία';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Μερίσματα φέτος: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Επενδυμένα';
 
   @override

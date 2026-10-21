@@ -1150,6 +1150,11 @@ class AppLocalizationsXh extends AppLocalizations {
   String get portfolioGainLoss => 'Inzuzo/ilahleko';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Izahlulo zalo nyaka: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Okutyaliweyo';
 
   @override

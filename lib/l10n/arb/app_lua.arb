@@ -742,5 +742,6 @@
   "eventDividend": "Dividende idi mitekemene",
   "eventDividendEstimate": "Mbadilu kumbukila mfutu iwakafunda",
   "labelYieldOnCost": "Rendement pa mushinga wa kusumba",
-  "glossYieldOnCost": "Dividende idi bapete mu ngondo 12 ya ndekelu, miabanyibue ku mfranga iwakafuta bua ba action idi nayi too ne lelu. Kadi ki mmuomumue ne rendement wa dividende to: badi bayipima ku mushinga uwakasumba wewe, kadi ki nku mushinga wa lelu to."
+  "glossYieldOnCost": "Dividende idi bapete mu ngondo 12 ya ndekelu, miabanyibue ku mfranga iwakafuta bua ba action idi nayi too ne lelu. Kadi ki mmuomumue ne rendement wa dividende to: badi bayipima ku mushinga uwakasumba wewe, kadi ki nku mushinga wa lelu to.",
+  "homeDividendsThisYear": "Dividende tshidimu etshi: {amount}"
 }

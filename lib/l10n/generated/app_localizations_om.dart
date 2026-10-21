@@ -1148,6 +1148,11 @@ class AppLocalizationsOm extends AppLocalizations {
   String get portfolioGainLoss => 'Bu\'aa/kasaaraa';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Diviidendii bara kanaa: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Kan invastii godhame';
 
   @override

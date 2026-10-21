@@ -1146,6 +1146,11 @@ class AppLocalizationsKy extends AppLocalizations {
   String get portfolioGainLoss => 'Пайда/зыян';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Бул жылкы дивиденддер: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Салынган';
 
   @override

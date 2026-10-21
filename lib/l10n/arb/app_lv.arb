@@ -742,5 +742,6 @@
   "eventDividend": "Gaidāma dividende",
   "eventDividendEstimate": "Aplēsts no jūsu reģistrētajiem maksājumiem",
   "labelYieldOnCost": "Ienesīgums pret pirkuma cenu",
-  "glossYieldOnCost": "Pēdējo 12 mēnešu laikā saņemtās dividendes, dalītas ar summu, ko samaksājāt par akcijām, kuras joprojām turat. Atšķirībā no dividenžu ienesīguma to mēra pret jūsu pirkuma cenu, ne šodienas cenu."
+  "glossYieldOnCost": "Pēdējo 12 mēnešu laikā saņemtās dividendes, dalītas ar summu, ko samaksājāt par akcijām, kuras joprojām turat. Atšķirībā no dividenžu ienesīguma to mēra pret jūsu pirkuma cenu, ne šodienas cenu.",
+  "homeDividendsThisYear": "Dividendes šogad: {amount}"
 }

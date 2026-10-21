@@ -1152,6 +1152,11 @@ class AppLocalizationsNso extends AppLocalizations {
   String get portfolioGainLoss => 'Poelo/tahlegelo';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Dividende tša ngwaga wo: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Tše di beeleditšwego';
 
   @override

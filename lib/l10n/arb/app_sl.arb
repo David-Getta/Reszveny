@@ -742,5 +742,6 @@
   "eventDividend": "Pričakovana dividenda",
   "eventDividendEstimate": "Ocenjeno iz izplačil, ki ste jih zabeležili",
   "labelYieldOnCost": "Donosnost na nakupno ceno",
-  "glossYieldOnCost": "Dividende, prejete v zadnjih 12 mesecih, deljene s tem, kar ste plačali za delnice, ki jih še imate. Drugače kot dividendna donosnost se meri glede na vašo nakupno ceno, ne na današnjo."
+  "glossYieldOnCost": "Dividende, prejete v zadnjih 12 mesecih, deljene s tem, kar ste plačali za delnice, ki jih še imate. Drugače kot dividendna donosnost se meri glede na vašo nakupno ceno, ne na današnjo.",
+  "homeDividendsThisYear": "Dividende letos: {amount}"
 }

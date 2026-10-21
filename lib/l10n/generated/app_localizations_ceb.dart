@@ -1149,6 +1149,11 @@ class AppLocalizationsCeb extends AppLocalizations {
   String get portfolioGainLoss => 'Ganansya/kapildihan';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Dibidendo karong tuiga: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Napuhunan';
 
   @override

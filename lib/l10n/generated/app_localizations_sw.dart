@@ -1145,6 +1145,11 @@ class AppLocalizationsSw extends AppLocalizations {
   String get portfolioGainLoss => 'Faida/hasara';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Gawio mwaka huu: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Kilichowekezwa';
 
   @override

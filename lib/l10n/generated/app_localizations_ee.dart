@@ -1147,6 +1147,11 @@ class AppLocalizationsEe extends AppLocalizations {
   String get portfolioGainLoss => 'Viɖe/nubu';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Dividend ƒe sia: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Ga si nède eme';
 
   @override

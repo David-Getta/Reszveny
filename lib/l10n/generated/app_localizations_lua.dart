@@ -1148,6 +1148,11 @@ class AppLocalizationsLua extends AppLocalizations {
   String get portfolioGainLoss => 'Dipeta/Dijimija';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Dividende tshidimu etshi: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Mfranga uvua muteke';
 
   @override

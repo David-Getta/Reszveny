@@ -1144,6 +1144,11 @@ class AppLocalizationsAk extends AppLocalizations {
   String get portfolioGainLoss => 'Mfaso/ahweredeɛ';
 
   @override
+  String homeDividendsThisYear(String amount) {
+    return 'Dividend afe yi: $amount';
+  }
+
+  @override
   String get portfolioInvested => 'Sika a wode ahyɛ mu';
 
   @override
