@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.163)
+# Változásjegyzék (0.2.130 → 0.2.168)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -16,6 +16,9 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
   portfólió-kártyán az idei osztalék; a tranzakciós lapon a részvény osztalékai tételenként.
 - Az **AI-portfólióelemzés** megkapja a 12 havi tényleges osztalékot és a várható kifizetéseket; a heti
   e-mail az idei összesítést pénznemenként.
+- A **megérkezett osztalék egy koppintással** rögzíthető a várható tételből (a kártyán és az Események
+  sorában, előre kitöltve); a részvény AI-elemzése a saját pozíció 12 havi osztalékát és bekerülési hozamát
+  is megkapja; a „Mi lett volna, ha…” kártya a mai hozammal számolt évi osztalékot is mutatja.
 
 ## Készpénz
 
