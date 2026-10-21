@@ -200,9 +200,6 @@ class _EmptyPortfolio extends StatelessWidget {
   }
 }
 
-/// Pozitív/negatív értékek színe.
-Color gainColor(AppPalette p, double? v) => v == null || v == 0 ? p.muted : (v > 0 ? p.positive : p.negative);
-
 class _PortfolioBody extends StatelessWidget {
   const _PortfolioBody({required this.snapshot, required this.onOpenSymbol});
 
@@ -244,27 +241,27 @@ class _PortfolioBody extends StatelessWidget {
                           spacing: 28,
                           runSpacing: 10,
                           children: [
-                            _Stat(
+                            MetricFigure(
                               label: l10n.portfolioToday,
                               value: fmt.money(s.dayGain, ccy, withSign: true),
                               sub: fmt.percent(s.dayGainPercent, withSign: true),
                               color: gainColor(p, s.dayGain),
                             ),
-                            _Stat(
+                            MetricFigure(
                               label: l10n.portfolioGainLoss,
                               value: fmt.money(s.gain, ccy, withSign: true),
                               sub: fmt.percent(s.gainPercent, withSign: true),
                               color: gainColor(p, s.gain),
                             ),
-                            _Stat(label: l10n.portfolioInvested, value: fmt.money(s.cost, ccy)),
+                            MetricFigure(label: l10n.portfolioInvested, value: fmt.money(s.cost, ccy)),
                             if (s.cash > 0)
-                              _Stat(
+                              MetricFigure(
                                 key: const ValueKey('portfolio-cash'),
                                 label: l10n.portfolioCash,
                                 value: fmt.money(s.cash, ccy),
                               ),
                             if (s.annualReturn case final r?)
-                              _Stat(
+                              MetricFigure(
                                 key: const ValueKey('portfolio-annual-return'),
                                 label: l10n.portfolioAnnualReturn,
                                 value: l10n.portfolioPerYear(fmt.percent(r * 100, withSign: true)),
@@ -272,14 +269,14 @@ class _PortfolioBody extends StatelessWidget {
                                 hint: l10n.portfolioAnnualReturnHint,
                               ),
                             if (s.realized != 0 || s.closed.isNotEmpty)
-                              _Stat(
+                              MetricFigure(
                                 key: const ValueKey('portfolio-realized'),
                                 label: l10n.portfolioRealized,
                                 value: fmt.money(s.realized, ccy, withSign: true),
                                 color: gainColor(p, s.realized),
                               ),
                             if (s.annualDividend > 0)
-                              _Stat(
+                              MetricFigure(
                                 key: const ValueKey('portfolio-dividends'),
                                 label: l10n.portfolioDividends,
                                 value: fmt.money(s.annualDividend, ccy),
@@ -394,43 +391,6 @@ class _PortfolioBody extends StatelessWidget {
             ),
           ),
         ),
-      ],
-    );
-  }
-}
-
-class _Stat extends StatelessWidget {
-  const _Stat({super.key, required this.label, required this.value, this.sub, this.color, this.hint});
-
-  final String label;
-  final String value;
-  final String? sub;
-  final Color? color;
-
-  /// Kis „i” ikon a címke mellett: koppintásra magyarázat jelenik meg.
-
-  /// A mutató magyarázata (ⓘ ikon, koppintásra párbeszéd).
-  final String? hint;
-
-  @override
-  Widget build(BuildContext context) {
-    final p = AppPalette.of(context);
-    final theme = Theme.of(context);
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        HintedLabel(
-          label: label,
-          hint: hint,
-          style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
-        ),
-        const SizedBox(height: 2),
-        Text(
-          value,
-          style: theme.textTheme.titleSmall?.copyWith(color: color, fontWeight: FontWeight.w700),
-        ),
-        if (sub != null) Text(sub!, style: theme.textTheme.bodySmall?.copyWith(color: color)),
       ],
     );
   }

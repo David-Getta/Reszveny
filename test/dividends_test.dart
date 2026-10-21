@@ -229,7 +229,23 @@ void main() {
         now: now,
       );
       expect(out.single.periodDays, 91);
-      expect(medianRecentGap([DateTime(2026, 1, 1), DateTime(2026, 2, 1), DateTime(2026, 3, 1)]), 31);
+      expect(
+        medianRecentGap([DateTime(2026, 1, 1), DateTime(2026, 2, 1), DateTime(2026, 3, 1)]),
+        28,
+        reason: 'alsó medián',
+      );
+      // Féléves → negyedéves váltás: két-két távolságnál az újabb (kisebb) nyer.
+      expect(
+        medianRecentGap([
+          DateTime(2025, 1, 30),
+          DateTime(2025, 7, 31),
+          DateTime(2026, 1, 29),
+          DateTime(2026, 4, 30),
+          DateTime(2026, 7, 30),
+        ]),
+        91,
+      );
+      expect(yearChange(0, 100), isNull, reason: 'átváltás nélküli év: nincs −100 %');
     });
 
     test('year-over-year change of the dividend income', () {

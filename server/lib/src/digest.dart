@@ -174,8 +174,9 @@ class DigestSender {
       if (paidOn.length < 2) continue;
       // A legutóbbi legfeljebb négy távolság mediánja: a régi, ritkás előzmény ne torzítson.
       final gaps = [for (var i = 1; i < paidOn.length; i++) paidOn[i].difference(paidOn[i - 1]).inDays];
+      // Alsó medián: páros számú távolságnál a kisebb (az újabb, sűrűbb ritmus) nyer.
       final recent = (gaps.length > 4 ? gaps.sublist(gaps.length - 4) : gaps)..sort();
-      final period = _periodDays(recent[recent.length ~/ 2]);
+      final period = _periodDays(recent[(recent.length - 1) ~/ 2]);
       if (period == null) continue;
       final next = paidOn.last.add(Duration(days: period));
       if (next.isBefore(today) || next.isAfter(until)) continue;
@@ -420,11 +421,13 @@ class DigestSender {
       for (final d in dividends) {
         b.writeln('  ${d.symbol} – ${_n(d.amount)} ${d.currency} (${_date(d.date, hu: hu)})');
       }
-      // Az idei összesítés pénznemenként (átváltás nélkül – a szerver nem ismer árfolyamot).
-      if (yearToDate.isNotEmpty) {
-        final parts = [for (final e in yearToDate.entries) '${_n(e.value)} ${e.key}'];
-        b.writeln('  ${hu ? 'Idén eddig' : 'This year so far'}: ${parts.join(', ')}');
-      }
+      b.writeln();
+    }
+    // Az idei összesítés pénznemenként (átváltás nélkül – a szerver nem ismer árfolyamot),
+    // akkor is, ha ezen a héten nem jött osztalék.
+    if (yearToDate.isNotEmpty) {
+      final parts = [for (final e in yearToDate.entries) '${_n(e.value)} ${e.key}'];
+      b.writeln('${hu ? 'Kapott osztalékok idén eddig' : 'Dividends received this year so far'}: ${parts.join(', ')}');
       b.writeln();
     }
     // Várható osztalékok a következő két hétben (a rögzítettek ritmusából becsülve).

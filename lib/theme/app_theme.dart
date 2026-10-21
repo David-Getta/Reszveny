@@ -220,3 +220,6 @@ class AppTheme {
     );
   }
 }
+
+/// Pozitív/negatív értékek színe (nyereség, változás): a semleges a halvány szín.
+Color gainColor(AppPalette p, double? v) => v == null || v == 0 ? p.muted : (v > 0 ? p.positive : p.negative);

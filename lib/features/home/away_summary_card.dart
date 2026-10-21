@@ -7,7 +7,6 @@ import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 import '../alerts/alerts_view.dart' show AlertsPage;
 import '../events/events_view.dart' show EventsPage;
-import '../portfolio/portfolio_page.dart' show gainColor;
 import 'away_summary.dart';
 
 /// „Amíg távol voltál” kártya a kezdőképernyőn: a legutóbbi látogatás óta a

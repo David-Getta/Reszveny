@@ -97,9 +97,10 @@ Future<double?> convertedDividends(FxService fx, Iterable<DividendRecord> divide
   return any ? sum : null;
 }
 
-/// Egy év osztaléka az előző évhez képest, százalékban; `null`, ha az előző év
-/// összege nem pozitív (nincs mihez mérni).
-double? yearChange(double current, double previous) => previous > 0 ? (current / previous - 1) * 100 : null;
+/// Egy év osztaléka az előző évhez képest, százalékban; `null`, ha bármelyik
+/// összeg nem pozitív (nincs mihez mérni, vagy az átváltás hiányzik).
+double? yearChange(double current, double previous) =>
+    previous > 0 && current > 0 ? (current / previous - 1) * 100 : null;
 
 /// Becsült összeg: „~ 2,60 USD” – az Események, a kártyák és a naptár egyformán.
 String approxMoney(Fmt fmt, double amount, String currency) => '~ ${fmt.money(amount, currency)}';
@@ -110,8 +111,9 @@ String approxMoney(Fmt fmt, double amount, String currency) => '~ ${fmt.money(am
 int medianRecentGap(List<DateTime> paidOn, {int recentGaps = 4}) {
   final gaps = [for (var i = 1; i < paidOn.length; i++) paidOn[i].difference(paidOn[i - 1]).inDays];
   final recent = gaps.length > recentGaps ? gaps.sublist(gaps.length - recentGaps) : gaps;
+  // Alsó medián: páros számú távolságnál a kisebb (az újabb, sűrűbb ritmus) nyer.
   final sorted = [...recent]..sort();
-  return sorted[sorted.length ~/ 2];
+  return sorted[(sorted.length - 1) ~/ 2];
 }
 
 /// A kifizetések közti medián távolságból a ritmus napokban (30 / 91 / 182 / 365);

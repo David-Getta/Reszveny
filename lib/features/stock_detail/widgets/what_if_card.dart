@@ -6,7 +6,6 @@ import '../../../l10n/generated/app_localizations.dart';
 import '../../../theme/app_theme.dart';
 import '../../analysis/price_stats.dart';
 import '../../portfolio/add_lot_dialog.dart';
-import '../../portfolio/portfolio_page.dart';
 import 'section_card.dart';
 
 /// „Mi lett volna, ha…”: mennyit érne ma egy 1, 3 vagy 5 éve befektetett összeg

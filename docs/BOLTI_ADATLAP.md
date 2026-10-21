@@ -74,7 +74,7 @@ az app működéséhez, kérésre törölhető).
 ## Microsoft Store csomag (MSIX)
 
 A Windows build után `dart run msix:create --store` készíti a Store-ba feltölthető MSIX-et a
-`pubspec.yaml` `msix_config` szakasza alapján (név, ikon, képességek: csak internet). A Partner
+`pubspec.yaml` `msix_config` szakasza alapján (név, ikon, képességek: csak internet, az app 120 nyelve; a csomag verziója a `version:` mezőből). A Partner
 Centerben kapott *Package/Identity/Name* és *Publisher* értéket kell beírni (`identity_name`,
 `publisher`) – tulajdonosi adat; helyi kipróbáláshoz a `dart run msix:create` saját tesztaláírást
 készít. A kiadási munkafolyamat egyelőre a sima zip-et adja; az MSIX-lépés a Partner Center-fiók után

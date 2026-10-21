@@ -147,12 +147,8 @@ void main() {
       yearToDate: {'HUF': 58800, 'USD': 12.3},
     );
     expect(subject, 'WhatStock weekly summary: AAPL −2.5%');
-    expect(
-      text,
-      contains(
-        'Dividends received this week:\n  AAPL – 2.50 USD (Oct 14)\n  This year so far: 58800.00 HUF, 12.30 USD',
-      ),
-    );
+    expect(text, contains('Dividends received this week:\n  AAPL – 2.50 USD (Oct 14)\n'));
+    expect(text, contains('Dividends received this year so far: 58800.00 HUF, 12.30 USD'));
     expect(
       text,
       contains('Dividends expected in the next two weeks (from your recorded payments):\n  KO – ~5.10 USD (Oct 28)'),
@@ -190,6 +186,15 @@ void main() {
       ],
     }, now: now);
     expect(ytd.keys, ['HUF', 'USD']);
+    // Heti tétel nélkül is kiírjuk az idei összesítést.
+    final (_, quiet) = DigestSender.digestEmail(
+      [DigestLine('AAPL', 231.45, 1.0, 'USD', null)],
+      const [],
+      hu: true,
+      yearToDate: {'USD': 3.33},
+    );
+    expect(quiet, contains('Kapott osztalékok idén eddig: 3.33 USD'));
+    expect(quiet, isNot(contains('Kapott osztalékok a héten')));
     expect(ytd['USD'], closeTo(3.33, 1e-9));
     expect(ytd['HUF'], 24000);
   });
@@ -250,6 +255,18 @@ void main() {
       ],
     }, now: now);
     expect(recent.map((d) => (d.symbol, d.date)), [('KO', DateTime.utc(2026, 10, 29))]);
+    // Féléves → negyedéves váltás: két-két távolságnál az újabb (kisebb) nyer.
+    final switched = DigestSender.expectedDividendsOf({
+      'lots': data['lots'],
+      'dividends': [
+        {'symbol': 'KO', 'amount': 2, 'currency': 'USD', 'date': '2025-01-30'},
+        {'symbol': 'KO', 'amount': 2, 'currency': 'USD', 'date': '2025-07-31'},
+        {'symbol': 'KO', 'amount': 2, 'currency': 'USD', 'date': '2026-01-29'},
+        {'symbol': 'KO', 'amount': 1, 'currency': 'USD', 'date': '2026-04-30'},
+        {'symbol': 'KO', 'amount': 1, 'currency': 'USD', 'date': '2026-07-30'},
+      ],
+    }, now: now);
+    expect(switched.map((d) => d.date), [DateTime.utc(2026, 10, 29)]);
     // Egy tételből nincs ritmus; a két héten túli nem látszik.
     expect(
       DigestSender.expectedDividendsOf({
