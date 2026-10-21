@@ -738,7 +738,7 @@ void main() {
       symbol: 'AAPL',
       amount: 4.68,
       currency: 'USD',
-      date: DateTime.now().subtract(const Duration(days: 80)),
+      date: DateTime(DateTime.now().year, 1, 15),
     );
     final s = _services(locale: const Locale('hu'), portfolio: portfolio, currency: 'HUF');
     await pumpApp(tester, s, const Size(430, 1000));

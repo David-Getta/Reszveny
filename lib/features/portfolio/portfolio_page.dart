@@ -111,6 +111,46 @@ class PortfolioPage extends StatelessWidget {
   }
 }
 
+/// „Idei osztalék: …” a főoldali kártyán – az átváltás csak akkor fut újra, ha
+/// a tételek vagy a pénznem változnak, nem minden újrarajzoláskor.
+class _YearDividends extends StatefulWidget {
+  const _YearDividends({required this.dividends, required this.currency, required this.fmt});
+
+  final List<DividendRecord> dividends;
+  final String currency;
+  final Fmt fmt;
+
+  @override
+  State<_YearDividends> createState() => _YearDividendsState();
+}
+
+class _YearDividendsState extends State<_YearDividends> {
+  Future<double?>? _sum;
+  String _key = '';
+
+  String get _wantedKey => [widget.currency, ...widget.dividends.map((d) => d.id)].join(',');
+
+  @override
+  Widget build(BuildContext context) {
+    if (_key != _wantedKey) {
+      _key = _wantedKey;
+      _sum = convertedDividends(AppServices.of(context).fx, widget.dividends, widget.currency);
+    }
+    final l10n = AppLocalizations.of(context);
+    final p = AppPalette.of(context);
+    return FutureBuilder<double?>(
+      future: _sum,
+      builder: (context, snap) => snap.data == null
+          ? const SizedBox.shrink()
+          : Text(
+              l10n.homeDividendsThisYear(widget.fmt.money(snap.data!, widget.currency)),
+              key: const ValueKey('home-dividends'),
+              style: Theme.of(context).textTheme.bodySmall?.copyWith(color: p.muted),
+            ),
+    );
+  }
+}
+
 class _EmptyPortfolio extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -1240,17 +1280,7 @@ class PortfolioSummaryCard extends StatelessWidget {
                                           .where((d) => d.date?.year == DateTime.now().year)
                                           .toList()
                                       case final ds when ds.isNotEmpty)
-                                    FutureBuilder<double?>(
-                                      key: ValueKey('home-dividends-${s.currency}-${ds.length}'),
-                                      future: convertedDividends(services.fx, ds, s.currency),
-                                      builder: (context, snap) => snap.data == null
-                                          ? const SizedBox.shrink()
-                                          : Text(
-                                              l10n.homeDividendsThisYear(fmt.money(snap.data!, s.currency)),
-                                              key: const ValueKey('home-dividends'),
-                                              style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
-                                            ),
-                                    ),
+                                    _YearDividends(dividends: ds, currency: s.currency, fmt: fmt),
                                 ],
                               ),
                           ],

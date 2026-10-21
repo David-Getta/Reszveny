@@ -79,6 +79,11 @@ class EventsService extends ChangeNotifier {
   static const cacheFor = Duration(hours: 12);
 
   final Map<String, (DateTime at, EarningsOverview overview)> _earnings = {};
+
+  /// Sikertelen lekérések ideje tickerenként: ennyi ideig nem kérdezzük újra
+  /// (és a portfólió változása sem indít miattuk hálózati kört).
+  final Map<String, DateTime> _failed = {};
+  static const retryFailedAfter = Duration(hours: 1);
   List<UpcomingEvent> _events = const [];
   List<RecentResult> _recent = const [];
 
@@ -102,12 +107,13 @@ class EventsService extends ChangeNotifier {
   String _seen = '';
 
   /// Új vétel, eladás vagy osztalék: a lista a gyorsítótárból újraépül; lekérés
-  /// csak akkor kell, ha olyan részvény jött, amelynek még nincs dátuma. Töltés
-  /// közben nem indít semmit – a [refresh] végén az eltérő ujjlenyomat úgyis
-  /// még egy kört indít.
+  /// csak akkor kell, ha olyan részvény jött, amelyet még nem kérdeztünk le
+  /// (a nemrég sikertelen sem számít annak). Töltés közben nem indít semmit –
+  /// a [refresh] a végén összeveti az indulásakor látott ujjlenyomatot a
+  /// mostanival, és eltérésnél még egy kört fut.
   void _onPortfolioChanged() {
     if (!_loaded || _loading || _fingerprint() == _seen) return;
-    if (watched.any((s) => !_earnings.containsKey(s))) {
+    if (watched.any((s) => !_earnings.containsKey(s) && !_failed.containsKey(s))) {
       refresh();
     } else {
       _rebuild().catchError((Object e) => debugPrint('Események nem építhetők újra: $e'));
@@ -139,7 +145,8 @@ class EventsService extends ChangeNotifier {
   Future<void> refresh({bool force = false}) async {
     if (_loading) return;
     _loading = true;
-    _seen = _fingerprint();
+    final started = _fingerprint();
+    _seen = started;
     notifyListeners();
     try {
       final symbols = watched;
@@ -150,13 +157,17 @@ class EventsService extends ChangeNotifier {
           final s = queue.removeLast();
           final cached = _earnings[s];
           if (!force && cached != null && _clock().difference(cached.$1) < cacheFor) continue;
+          final failedAt = _failed[s];
+          if (!force && failedAt != null && _clock().difference(failedAt) < retryFailedAfter) continue;
           try {
             final overview = withHistory.contains(s)
                 ? await marketData.earnings(s).timeout(const Duration(seconds: 20))
                 : EarningsOverview(next: await marketData.nextEarnings(s).timeout(const Duration(seconds: 20)));
             _earnings[s] = (_clock(), overview);
+            _failed.remove(s);
           } catch (e) {
-            // Egy részvény hibája nem akadályozza a többit.
+            // Egy részvény hibája nem akadályozza a többit; egy órán át nem kérdezzük újra.
+            _failed[s] = _clock();
             debugPrint('Gyorsjelentés-dátum nem tölthető ($s): $e');
           }
         }
@@ -171,14 +182,15 @@ class EventsService extends ChangeNotifier {
       _loading = false;
       notifyListeners();
     }
-    // Közben változott a portfólió: még egy kör (a már ismert dátumokkal).
-    if (_fingerprint() != _seen) await refresh();
+    // Közben változott a portfólió: még egy kör (az új részvény dátumával).
+    if (_fingerprint() != started) await refresh();
   }
 
   /// A lista és a friss eredmények összeállítása a már lekért dátumokból, az
   /// elmentett elemzésekből és a portfólióból – hálózat nélkül.
   Future<void> _rebuild({List<String>? symbols, bool notify = true}) async {
-    _seen = _fingerprint();
+    // A listener hívásakor az akkori állapotot jegyezzük meg; a [refresh] a sajátját kezeli.
+    if (symbols == null) _seen = _fingerprint();
     final today = _today;
     final until = today.add(const Duration(days: horizonDays));
     bool inRange(DateTime d) => !d.isBefore(today) && !d.isAfter(until);

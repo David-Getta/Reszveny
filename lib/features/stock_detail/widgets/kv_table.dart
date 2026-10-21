@@ -29,13 +29,11 @@ class KvTable extends StatelessWidget {
             ),
             children: [
               if (hints[label] case final hint?)
-                Padding(
+                HintedLabel(
+                  label: label,
+                  hint: hint,
                   padding: const EdgeInsets.symmetric(vertical: 8),
-                  child: HintedLabel(
-                    label: label,
-                    hint: hint,
-                    style: theme.textTheme.bodyMedium?.copyWith(color: theme.colorScheme.onSurfaceVariant),
-                  ),
+                  style: theme.textTheme.bodyMedium?.copyWith(color: theme.colorScheme.onSurfaceVariant),
                 )
               else
                 Padding(

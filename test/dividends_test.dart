@@ -186,6 +186,34 @@ void main() {
       expect(find.textContaining('Dividends received in the last 12 months divided by'), findsOneWidget);
     });
 
+    testWidgets('a position whose dividends are recorded in another currency still shows the expected next one', (
+      tester,
+    ) async {
+      tester.view.physicalSize = const Size(1200, 2600);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.reset);
+      final s = services();
+      await s.portfolio.add(symbol: 'AAPL', quantity: 10, price: 200, currency: 'USD', date: DateTime(2025, 5, 2));
+      final q = DateTime.now().subtract(const Duration(days: 40));
+      await s.portfolio.addDividend(symbol: 'AAPL', amount: 900, currency: 'HUF', date: q);
+      await s.portfolio.addDividend(
+        symbol: 'AAPL',
+        amount: 880,
+        currency: 'HUF',
+        date: q.subtract(const Duration(days: 91)),
+      );
+      await tester.pumpWidget(WhatStockApp(services: s));
+      await tester.pumpAndSettle();
+      await tester.enterText(find.byType(TextField).first, 'AAPL');
+      await tester.testTextInput.receiveAction(TextInputAction.search);
+      await tester.pumpAndSettle();
+      // USD-ben nincs kapott osztalék (nincs összeg és hozam), de a HUF-sorozat várható következője látszik.
+      expect(find.byKey(const ValueKey('position-dividends')), findsNothing);
+      final next = find.byKey(const ValueKey('position-dividend-next'));
+      expect(next, findsOneWidget);
+      expect(find.descendant(of: next, matching: find.textContaining('HUF')), findsOneWidget);
+    });
+
     test('two currencies for one stock (two brokers) are separate series, never summed together', () {
       final out = expectedDividends(
         [

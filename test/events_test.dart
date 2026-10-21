@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
@@ -41,9 +42,13 @@ class _Market extends DemoMarketDataProvider {
   final Map<String, DateTime> dates;
   final calls = <String>[];
 
+  /// Ha be van állítva, a lekérés megvárja (töltés közbeni változás teszteléséhez).
+  Completer<void>? gate;
+
   @override
   Future<UpcomingEarnings?> nextEarnings(String symbol) async {
     calls.add(symbol);
+    if (gate case final g?) await g.future;
     final d = dates[symbol];
     return d == null ? null : UpcomingEarnings(date: d, hour: 'amc', epsEstimate: 1.62);
   }
@@ -190,6 +195,30 @@ void main() {
     await portfolio.add(symbol: 'KO', quantity: 10, price: 70, currency: 'USD', sell: true);
     await Future<void>.delayed(Duration.zero);
     expect(dividends(), isEmpty);
+    s.dispose();
+  });
+
+  test('a stock bought while a refresh is in flight gets its results date fetched right after', () async {
+    final market = _Market({'MSFT': today.add(const Duration(days: 5))});
+    final portfolio = PortfolioStore();
+    await portfolio.add(symbol: 'AAPL', quantity: 1, price: 100, currency: 'USD');
+    final s = EventsService(
+      marketData: market,
+      preferences: AppPreferences(),
+      portfolio: portfolio,
+      reports: ReportStore(analyst: ClaudeStockAnalyst(config: const AppConfig())),
+    );
+    await s.refresh();
+    market.gate = Completer<void>();
+    final running = s.refresh(force: true);
+    await Future<void>.delayed(Duration.zero);
+    expect(s.loading, isTrue);
+    await portfolio.add(symbol: 'MSFT', quantity: 1, price: 300, currency: 'USD');
+    market.gate!.complete();
+    market.gate = null;
+    await running;
+    expect(s.events.where((e) => e.symbol == 'MSFT' && e.kind == UpcomingEventKind.earnings), hasLength(1));
+    expect(market.calls, contains('MSFT'));
     s.dispose();
   });
 

@@ -87,29 +87,32 @@ class PositionCard extends StatelessWidget {
                   value: fmt.money(pos.realizedGain, ccy, withSign: true),
                   color: gainColor(p, pos.realizedGain),
                 ),
-              // A kapott osztalékok a pozíció pénznemében (a más pénznemű tételek nélkül), a
-              // bekerülési osztalékhozam és a rögzítettek ritmusából várható következő.
-              if (services.portfolio.dividendsOf(pos.symbol).where((d) => d.currency == ccy).toList() case final ds
-                  when ds.isNotEmpty) ...[
-                MetricFigure(
-                  key: const ValueKey('position-dividends'),
-                  label: l10n.portfolioDividendsReceived,
-                  value: fmt.money(ds.fold<double>(0, (sum, d) => sum + d.amount), ccy),
-                ),
-                if (yieldOnCost(ds, pos.cost, now: now) case final y?)
+              // A kapott osztalékok a pozíció pénznemében (a más pénznemű tételek nélkül) és
+              // a bekerülési osztalékhozam; a várható következő a részvény minden osztalékából,
+              // a pozíció pénznemét előnyben.
+              if (services.portfolio.dividendsOf(pos.symbol) case final all when all.isNotEmpty) ...[
+                if (all.where((d) => d.currency == ccy).toList() case final ds when ds.isNotEmpty) ...[
                   MetricFigure(
-                    key: const ValueKey('position-yield-on-cost'),
-                    label: l10n.labelYieldOnCost,
-                    value: fmt.percent(y),
-                    hint: l10n.glossYieldOnCost,
+                    key: const ValueKey('position-dividends'),
+                    label: l10n.portfolioDividendsReceived,
+                    value: fmt.money(ds.fold<double>(0, (sum, d) => sum + d.amount), ccy),
                   ),
-                if (expectedDividends(ds, [pos.symbol], now: now).firstOrNull case final x?)
-                  MetricFigure(
-                    key: const ValueKey('position-dividend-next'),
-                    label: l10n.portfolioDividendsExpected,
-                    value:
-                        '${l10n.portfolioDividendAround(fmt.date(x.date))} · ${approxMoney(fmt, x.amount, x.currency)}',
-                  ),
+                  if (yieldOnCost(ds, pos.cost, now: now) case final y?)
+                    MetricFigure(
+                      key: const ValueKey('position-yield-on-cost'),
+                      label: l10n.labelYieldOnCost,
+                      value: fmt.percent(y),
+                      hint: l10n.glossYieldOnCost,
+                    ),
+                ],
+                if (expectedDividends(all, [pos.symbol], now: now) case final next when next.isNotEmpty)
+                  if (next.firstWhere((x) => x.currency == ccy, orElse: () => next.first) case final x)
+                    MetricFigure(
+                      key: const ValueKey('position-dividend-next'),
+                      label: l10n.portfolioDividendsExpected,
+                      value:
+                          '${l10n.portfolioDividendAround(fmt.date(x.date))} · ${approxMoney(fmt, x.amount, x.currency)}',
+                    ),
               ],
             ],
           ),

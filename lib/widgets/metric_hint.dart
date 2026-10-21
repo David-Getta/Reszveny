@@ -22,39 +22,50 @@ Future<void> explainMetric(BuildContext context, String label, String text) => s
 /// a „Mit jelent?”. Ugyanaz a részvény oldal táblázataiban és a kártyák számain;
 /// magyarázat nélkül sima szöveg.
 class HintedLabel extends StatelessWidget {
-  const HintedLabel({super.key, required this.label, this.hint, this.style});
+  const HintedLabel({super.key, required this.label, this.hint, this.style, this.padding = EdgeInsets.zero});
 
   final String label;
   final String? hint;
   final TextStyle? style;
 
+  /// A tapintható terület (az ikonos címke körül), pl. a táblázat soraiban.
+  final EdgeInsetsGeometry padding;
+
   @override
   Widget build(BuildContext context) {
     final hint = this.hint;
-    if (hint == null) return Text(label, style: style);
+    if (hint == null) {
+      return Padding(
+        padding: padding,
+        child: Text(label, style: style),
+      );
+    }
     final theme = Theme.of(context);
     return InkWell(
       key: ValueKey('hint-$label'),
       borderRadius: BorderRadius.circular(6),
       onTap: () => explainMetric(context, label, hint),
-      child: Text.rich(
-        TextSpan(
-          text: '$label ',
-          children: [
-            WidgetSpan(
-              alignment: PlaceholderAlignment.middle,
-              child: Tooltip(
-                message: AppLocalizations.of(context).glossTitle,
-                child: Icon(
-                  Icons.info_outline_rounded,
-                  size: 14,
-                  color: theme.colorScheme.onSurfaceVariant.withValues(alpha: 0.7),
+      child: Padding(
+        padding: padding,
+        child: Text.rich(
+          TextSpan(
+            text: '$label ',
+            children: [
+              WidgetSpan(
+                alignment: PlaceholderAlignment.middle,
+                child: Tooltip(
+                  message: AppLocalizations.of(context).glossTitle,
+                  child: Icon(
+                    Icons.info_outline_rounded,
+                    size: 14,
+                    color: theme.colorScheme.onSurfaceVariant.withValues(alpha: 0.7),
+                  ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
+          style: style,
         ),
-        style: style,
       ),
     );
   }
