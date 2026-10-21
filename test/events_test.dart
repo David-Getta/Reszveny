@@ -11,6 +11,7 @@ import 'package:reszveny/core/desktop/desktop_integration.dart';
 import 'package:reszveny/core/locale_controller.dart';
 import 'package:reszveny/core/models/analysis_extras.dart';
 import 'package:reszveny/core/models/stock_report.dart';
+import 'package:reszveny/core/util/formatters.dart';
 import 'package:reszveny/features/analysis/claude_stock_analyst.dart';
 import 'package:reszveny/features/analysis/report_store.dart';
 import 'package:reszveny/features/billing/entitlement_service.dart';
@@ -20,6 +21,7 @@ import 'package:reszveny/features/events/events_view.dart';
 import 'package:reszveny/features/market_data/demo_market_data_provider.dart';
 import 'package:reszveny/features/portfolio/portfolio_store.dart';
 import 'package:reszveny/features/recognition/stock_recognizer.dart';
+import 'package:reszveny/l10n/generated/app_localizations.dart';
 
 import 'app_widget_test.dart' show FakeNotifier;
 
@@ -148,6 +150,26 @@ void main() {
     expect(div.single.date, DateTime(last.year, last.month, last.day + 91));
     expect(div.single.amount, 5.1);
     expect(div.single.currency, 'USD');
+  });
+
+  test('a dividend event in the calendar export: title, estimated amount and a stable uid', () {
+    final l10n = lookupAppLocalizations(const Locale('en'));
+    final fmt = Fmt('en', na: 'n/a');
+    final entries = calendarEntries(l10n, fmt, [
+      UpcomingEvent(
+        symbol: 'KO',
+        date: DateTime(2026, 10, 29),
+        kind: UpcomingEventKind.dividend,
+        amount: 5.1,
+        currency: 'USD',
+      ),
+      UpcomingEvent(symbol: 'KO', date: DateTime(2026, 10, 29), kind: UpcomingEventKind.dividend),
+    ]);
+    expect(entries.first.uid, 'dividend-KO-2026-10-29');
+    expect(entries.first.summary, 'KO · Dividend expected');
+    expect(entries.first.description, '~ 5.10 USD · Estimated from your recorded payments');
+    // Összeg nélkül csak a megjegyzés.
+    expect(entries.last.description, 'Estimated from your recorded payments');
   });
 
   test('one failing stock does not hide the others', () async {
