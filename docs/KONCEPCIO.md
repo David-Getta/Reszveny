@@ -308,11 +308,11 @@ Google Play Console (25 USD), Stripe, Anthropic Console (költéskorláttal), Re
 kereskedelmi licence; jogász az ÁSZF-hez és a tájékoztatóhoz; EU-s tárhely a szervernek; macOS-aláírás
 (Developer ID, notarizáció) és Windows kódaláírás, különben a letöltéskor biztonsági figyelmeztetés jelenik meg.
 
-## 8. Nyitott kérdések (a részletes leírásból várjuk a választ)
+## 8. Nyitott kérdések – és ami közben eldőlt
 
-- Elsősorban melyik piac a fókusz? (BÉT, amerikai tőzsdék, európai – ez meghatározza az adatforrást.)
-- Kell-e portfólió-kezelés (saját részvények, vételi ár, hozam), vagy csak információ?
-- A cégleírások és hírek az adatforrásból angolul jönnek – kell-e ezeket is gépi fordítással a felhasználó nyelvére fordítani?
-- Legyen-e árfolyam-riasztás, értesítés?
-- Kell-e offline működés (OCR eszközön), vagy elég az online felismerés?
-- Szükséges-e felhasználói fiók, szinkron az eszközök között?
+- **Melyik piac a fókusz?** Az amerikai tőzsdék (Finnhub ingyenes csomag: ár, profil, mutatók, hírek, gyorsjelentések). A BÉT-es és hongkongi papírokhoz az árfolyam a Twelve Data fizetős csomagjával jönne (tulajdonosi döntés); addig ezek „ár nélküli” pozíciók.
+- **Portfólió-kezelés?** Igen, elkészült: vételek, eladások (FIFO, realizált nyereség), kapott osztalékok, készpénz, célarányok, értékalakulás, S&P 500-összevetés, bróker-importok, CSV, fiókos szinkron.
+- **A cégleírások és hírek fordítása?** Az AI-elemzés, a hírmagyarázat és a napi összefoglaló a felhasználó nyelvén készül; a nyers hírcímek és a cégleírás angolul maradnak (gépi fordítás nélkül – a forrás hűsége fontosabb).
+- **Árfolyam-riasztás, értesítés?** Igen: ár fölé/alá, napi mozgás, követő stop, portfólió-mozgás, gyorsjelentés-emlékeztető és -eredmény, technikai jelzések; asztali gépen rendszerértesítés, bejelentkezve e-mail; a telefonos push a Firebase/APNs után (5j).
+- **Offline működés (OCR eszközön)?** Még nyitott (4b3): a felismerés online AI; hálózat nélkül az utolsó ismert adatok látszanak (5ae). Az eszközön futó OCR döntés és natív tesztelés után.
+- **Felhasználói fiók, szinkron?** Igen: e-mail kódos belépés, fiókhoz kötött előfizetés, a portfólió, kedvencek, riasztások, jegyzetek, készpénz szinkronja (5w); Apple/Google belépés később.
