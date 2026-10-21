@@ -312,7 +312,7 @@ class ClaudeStockAnalyst implements StockAnalyst {
             'stock is also listed or tradable locally.',
       if (o.position case final p?)
         '- Reader\'s position: holds ${_num(p.quantity)} shares at an average cost of ${_num(p.averageCost)} ${p.currency}'
-            '${_period(p.firstDate, p.lastDate)}. Where it adds insight, relate the scenarios and the long-term ranges to '
+            '${_period(p.firstDate, p.lastDate)}${_dividends(p)}. Where it adds insight, relate the scenarios and the long-term ranges to '
             'this cost basis (where each one would leave the position in gain or loss, in % and per share). This is '
             'context, not a request for advice: do not tell the reader whether to buy more, hold or sell.',
       if (o.readerNote case final note? when note.trim().isNotEmpty)
@@ -332,6 +332,15 @@ class ClaudeStockAnalyst implements StockAnalyst {
 
   static String _num(double v) =>
       v == v.roundToDouble() ? v.toStringAsFixed(0) : v.toStringAsFixed(v.abs() < 1 ? 4 : 2);
+
+  /// Az elmúlt 12 hónapban kapott osztalék és a bekerülési hozam, ha a felhasználó rögzítette.
+  static String _dividends(PositionContext p) {
+    final r = p.dividendsReceived12m;
+    if (r == null || r <= 0) return '';
+    final yoc = p.yieldOnCost;
+    return ', and received ${_num(r)} ${p.currency} in dividends from it in the last 12 months'
+        '${yoc == null ? '' : ' (about ${yoc.toStringAsFixed(2)}% on cost)'}';
+  }
 
   static String _period(DateTime? first, DateTime? last) {
     String d(DateTime t) => t.toIso8601String().substring(0, 10);

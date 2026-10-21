@@ -226,11 +226,14 @@ void main() {
           currency: 'USD',
           firstDate: DateTime(2025, 3, 14),
           lastDate: DateTime(2026, 1, 10),
+          dividendsReceived12m: 30,
         ),
       ),
     );
     expect(settings, contains('holds 15 shares at an average cost of 160 USD'));
     expect(settings, contains('bought between 2025-03-14 and 2026-01-10'));
+    // 30 / (15 × 160) = 1,25 % bekerülési hozam.
+    expect(settings, contains('received 30 USD in dividends from it in the last 12 months (about 1.25% on cost)'));
     expect(settings, contains('do not tell the reader whether to buy more, hold or sell'));
     expect(ClaudeStockAnalyst.buildSettings(const AnalysisOptions()), isNot(contains("Reader's position")));
   });

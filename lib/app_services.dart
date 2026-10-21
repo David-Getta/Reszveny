@@ -553,8 +553,22 @@ class AppServices {
               currency: held.currency,
               firstDate: held.firstDate,
               lastDate: held.lastDate,
+              dividendsReceived12m: _dividendsReceived12m(held.symbol, held.currency),
             ),
     );
+  }
+
+  /// Az elmúlt 12 hónapban a részvényből kapott osztalék a megadott pénznemben; `null`, ha nincs.
+  double? _dividendsReceived12m(String symbol, String currency) {
+    final now = DateTime.now();
+    final from = DateTime(now.year - 1, now.month, now.day);
+    var sum = 0.0;
+    for (final d in portfolio.dividendsOf(symbol)) {
+      final date = d.date;
+      if (d.currency != currency || date == null || date.isBefore(from) || date.isAfter(now)) continue;
+      sum += d.amount;
+    }
+    return sum > 0 ? sum : null;
   }
 
   /// A ténylegesen használt megjelenítési pénznem (beállítás vagy a rendszerből).

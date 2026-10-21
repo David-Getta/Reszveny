@@ -14,6 +14,7 @@ class PositionContext {
     required this.currency,
     this.firstDate,
     this.lastDate,
+    this.dividendsReceived12m,
   });
 
   final double quantity;
@@ -21,6 +22,16 @@ class PositionContext {
   final String currency;
   final DateTime? firstDate;
   final DateTime? lastDate;
+
+  /// Az elmúlt 12 hónapban ebből a részvényből kapott osztalék (a pozíció pénznemében), ha rögzítette.
+  final double? dividendsReceived12m;
+
+  /// Bekerülési osztalékhozam százalékban (a 12 havi osztalék a vételi értékhez), ha számolható.
+  double? get yieldOnCost {
+    final r = dividendsReceived12m;
+    final cost = quantity * averageCost;
+    return r == null || r <= 0 || cost <= 0 ? null : r / cost * 100;
+  }
 }
 
 /// Az AI-elemzés beállításai (a felhasználó választja a beállításokban,
