@@ -29,7 +29,7 @@ SENTIASA PANTAU
 • Taip penerangan seperti “tech 100 ETF” dan AI mengenal pasti saham atau dana yang anda maksudkan; ETF dan dana mendapat penjelasan mudah “Apakah ini?”
 • “Apa yang ada dalam laporan terkini?” – ringkasan AI tentang keputusan suku tahunan dengan sumber, dan keputusan terbaharu saham anda sepintas lalu
 • Tanya soalan susulan tentang mana-mana nota AI, dan tentang perbandingan
-• Dividen diterima: jumlah tahun ini dan sepanjang masa, dimasukkan sendiri atau daripada eksport broker anda, dengan CSV untuk penyata cukai
+• Dividen diterima: jumlah tahun ini dan sepanjang masa, dimasukkan sendiri atau daripada eksport broker anda, bayaran seterusnya yang dijangka daripada ritmanya, dengan CSV untuk penyata cukai
 • Semasa anda tiada: selepas sehari atau lebih, pergerakan terbesar, amaran yang tercetus dan keputusan yang diumumkan sejak lawatan terakhir anda
 
 DI KOMPUTER ANDA

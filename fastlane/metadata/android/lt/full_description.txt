@@ -29,7 +29,7 @@ VISKAS PO RANKA
 • Įveskite aprašymą, pavyzdžiui „tech 100 ETF“, ir DI nustato, kurią akciją ar fondą turite omenyje; ETF ir fondai gauna paprastą paaiškinimą „Kas tai?“
 • „Kas buvo naujausioje ataskaitoje?“ – DI suvestinė apie ketvirčio rezultatus su šaltiniais, ir naujausi jūsų akcijų rezultatai vienu žvilgsniu
 • Užduokite papildomų klausimų apie bet kurią DI pastabą ir apie palyginimą
-• Gauti dividendai: šių metų ir visų laikų sumos, įvestos ranka arba iš jūsų brokerio eksporto, su CSV mokesčių deklaracijai
+• Gauti dividendai: šių metų ir visų laikų sumos, įvestos ranka arba iš jūsų brokerio eksporto, kiti mokėjimai, numatomi pagal jų ritmą, su CSV mokesčių deklaracijai
 • Kol jūsų nebuvo: po dienos ar ilgiau – didžiausi pokyčiai, suveikę įspėjimai ir paskelbti rezultatai nuo paskutinio jūsų apsilankymo
 
 JŪSŲ KOMPIUTERYJE

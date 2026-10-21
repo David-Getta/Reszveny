@@ -29,7 +29,7 @@ BLY OP HOOGTE
 • Tik ’n beskrywing soos “tech 100 ETF” in, en die AI werk uit watter aandeel of fonds jy bedoel; ETF’s en fondse kry ’n “Wat is dit?”-verduideliking in gewone taal
 • “Wat was in die jongste verslag?” – ’n AI-opsomming van die kwartaalresultate met bronne, en jou aandele se vars resultate met een oogopslag
 • Vra opvolgvrae oor enige AI-nota, en oor ’n vergelyking
-• Ontvangde dividende: vanjaar se en algehele totale, met die hand of uit jou makelaar se uitvoer, met ’n CSV vir jou belastingopgawe
+• Ontvangde dividende: vanjaar se en algehele totale, met die hand of uit jou makelaar se uitvoer, die volgende betalings wat uit hul ritme verwag word, met ’n CSV vir jou belastingopgawe
 • Terwyl jy weg was: ná ’n dag of langer, die grootste bewegings, geaktiveerde waarskuwings en bekendgemaakte resultate sedert jou laaste besoek
 
 OP JOU REKENAAR

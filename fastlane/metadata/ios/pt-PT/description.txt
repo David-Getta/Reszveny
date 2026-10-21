@@ -29,7 +29,7 @@ ACOMPANHE TUDO
 • Escreva uma descrição como “tech 100 ETF” e a IA descobre a que ação ou fundo se refere; os ETF e os fundos têm uma explicação em linguagem simples: “O que é isto?”
 • “O que dizia o último relatório?” – um resumo com IA dos resultados trimestrais com fontes, e os resultados recentes das suas ações num só olhar
 • Faça perguntas adicionais sobre qualquer nota da IA, e também sobre uma comparação
-• Dividendos recebidos: totais deste ano e desde sempre, inseridos à mão ou a partir da exportação da sua corretora, com um CSV para a declaração de impostos
+• Dividendos recebidos: totais deste ano e desde sempre, inseridos à mão ou a partir da exportação da sua corretora, os próximos pagamentos previstos pelo seu ritmo, com um CSV para a declaração de impostos
 • Enquanto esteve ausente: após um dia ou mais, as maiores variações, os alertas disparados e os resultados divulgados desde a sua última visita
 
 NO SEU COMPUTADOR

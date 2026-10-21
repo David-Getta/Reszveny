@@ -29,7 +29,7 @@ Tu alegi profunzimea (scurtă, standard sau detaliată) și nivelul (începător
 • Scrie o descriere precum „tech 100 ETF” și AI-ul își dă seama la ce acțiune sau fond te referi; ETF-urile și fondurile au o explicație pe înțelesul tuturor: „Ce este acesta?”
 • „Ce a fost în ultimul raport?” – un rezumat AI al rezultatelor trimestriale cu surse, și rezultatele proaspete ale acțiunilor tale dintr-o privire
 • Pune întrebări suplimentare despre orice notă AI, și despre o comparație
-• Dividende încasate: totaluri pe acest an și pe toată perioada, introduse manual sau din exportul brokerului tău, cu un CSV pentru declarația fiscală
+• Dividende încasate: totaluri pe acest an și pe toată perioada, introduse manual sau din exportul brokerului tău, următoarele plăți estimate după ritmul lor, cu un CSV pentru declarația fiscală
 • Cât ai lipsit: după o zi sau mai mult, cele mai mari mișcări, alertele declanșate și rezultatele publicate de la ultima ta vizită
 
 PE CALCULATORUL TĂU

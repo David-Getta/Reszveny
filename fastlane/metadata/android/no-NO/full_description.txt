@@ -29,7 +29,7 @@ HOLD OVERSIKTEN
 • Skriv en beskrivelse som «tech 100 ETF», og AI-en finner ut hvilken aksje eller hvilket fond du mener; ETF-er og fond får en «Hva er dette?»-forklaring i klart språk
 • «Hva sto i den siste rapporten?» – en AI-oppsummering av kvartalsresultatet med kilder, og de ferske resultatene for aksjene dine med ett blikk
 • Still oppfølgingsspørsmål om ethvert AI-notat, og om en sammenligning
-• Mottatt utbytte: årets og samlede totaler, lagt inn manuelt eller fra meglerens eksport, med CSV til skattemeldingen
+• Mottatt utbytte: årets og samlede totaler, lagt inn manuelt eller fra meglerens eksport, neste forventede utbetalinger ut fra rytmen, med CSV til skattemeldingen
 • Mens du var borte: etter en dag eller mer – de største bevegelsene, utløste varsler og fremlagte resultater siden sist du var innom
 
 PÅ DATAMASKINEN

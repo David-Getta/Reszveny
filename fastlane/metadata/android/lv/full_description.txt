@@ -29,7 +29,7 @@ SEKOJIET LĪDZI
 • Ierakstiet aprakstu, piemēram, “tech 100 ETF”, un AI noskaidro, kuru akciju vai fondu domājat; ETF un fondiem ir vienkāršs skaidrojums “Kas tas ir?”
 • “Kas bija jaunākajā pārskatā?” – AI kopsavilkums par ceturkšņa rezultātiem ar avotiem, un jūsu akciju jaunākie rezultāti vienā skatienā
 • Uzdodiet papildu jautājumus par jebkuru AI piezīmi un arī par salīdzinājumu
-• Saņemtās dividendes: šī gada un visu laiku kopsummas, ievadītas manuāli vai no jūsu brokera eksporta, ar CSV nodokļu deklarācijai
+• Saņemtās dividendes: šī gada un visu laiku kopsummas, ievadītas manuāli vai no jūsu brokera eksporta, pēc to ritma gaidāmie nākamie maksājumi, ar CSV nodokļu deklarācijai
 • Kamēr jūs nebijāt: pēc dienas vai ilgāka pārtraukuma – lielākās izmaiņas, nostrādājušie brīdinājumi un publicētie rezultāti kopš jūsu pēdējā apmeklējuma
 
 JŪSU DATORĀ

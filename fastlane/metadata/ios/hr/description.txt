@@ -29,7 +29,7 @@ PRATITE SVE
 • Upišite opis poput „tech 100 ETF” i AI shvaća koju dionicu ili fond mislite; ETF-ovi i fondovi dobivaju razumljivo objašnjenje „Što je ovo?”
 • „Što je bilo u zadnjem izvještaju?” – AI sažetak kvartalnih rezultata s izvorima, i svježi rezultati vaših dionica na prvi pogled
 • Postavljajte dodatna pitanja o bilo kojoj AI bilješci, kao i o usporedbi
-• Primljene dividende: zbrojevi za ovu godinu i ukupno, ručno ili iz izvoza vašeg brokera, s CSV-om za poreznu prijavu
+• Primljene dividende: zbrojevi za ovu godinu i ukupno, ručno ili iz izvoza vašeg brokera, sljedeće isplate očekivane prema njihovu ritmu, s CSV-om za poreznu prijavu
 • Dok vas nije bilo: nakon dana ili više, najveći pomaci, aktivirana upozorenja i objavljeni rezultati od vašeg zadnjeg posjeta
 
 NA VAŠEM RAČUNALU

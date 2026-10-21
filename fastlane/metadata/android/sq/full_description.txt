@@ -29,7 +29,7 @@ NDIQNI GJITHÇKA
 • Shkruani një përshkrim si “tech 100 ETF” dhe AI kupton cilin aksion ose fond keni parasysh; ETF-të dhe fondet kanë një shpjegim në gjuhë të thjeshtë: “Çfarë është kjo?”
 • “Çfarë kishte në raportin e fundit?” – një përmbledhje me AI e rezultateve tremujore me burime, dhe rezultatet e freskëta të aksioneve tuaja me një shikim
 • Bëni pyetje shtesë për çdo shënim të AI-së, si dhe për një krahasim
-• Dividendët e marrë: totalet e këtij viti dhe të gjitha kohërave, me dorë ose nga eksporti i brokerit tuaj, me një CSV për deklaratën tatimore
+• Dividendët e marrë: totalet e këtij viti dhe të gjitha kohërave, me dorë ose nga eksporti i brokerit tuaj, pagesat e ardhshme të pritshme nga ritmi i tyre, me një CSV për deklaratën tatimore
 • Sa kohë nuk ishit: pas një dite ose më shumë, lëvizjet më të mëdha, sinjalizimet e aktivizuara dhe rezultatet e publikuara që nga vizita juaj e fundit
 
 NË KOMPJUTER

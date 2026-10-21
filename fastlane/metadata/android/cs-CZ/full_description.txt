@@ -29,7 +29,7 @@ MĚJTE PŘEHLED
 • Napište popis jako „tech 100 ETF“ a AI pozná, kterou akcii nebo fond máte na mysli; ETF a fondy dostanou srozumitelné vysvětlení „Co to je?“
 • „Co bylo v poslední zprávě?“ – AI souhrn čtvrtletních výsledků se zdroji a čerstvé výsledky vašich akcií na jeden pohled
 • Doptávejte se na jakoukoli AI poznámku i na srovnání
-• Přijaté dividendy: součty za letošní rok i za celou dobu, ručně nebo z exportu vašeho brokera, s CSV pro daňové přiznání
+• Přijaté dividendy: součty za letošní rok i za celou dobu, ručně nebo z exportu vašeho brokera, další platby očekávané podle jejich rytmu, s CSV pro daňové přiznání
 • Zatímco jste byli pryč: po dni či déle největší pohyby, spuštěná upozornění a zveřejněné výsledky od vaší poslední návštěvy
 
 NA VAŠEM POČÍTAČI

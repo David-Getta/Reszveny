@@ -29,7 +29,7 @@ KEEP TRACK
 • Type a description like “tech 100 ETF” and the AI works out which stock or fund you mean; ETFs and funds get a plain-language “What is this?” explanation
 • “What was in the latest report?” – an AI summary of the quarterly results with sources, and your stocks’ fresh results at a glance
 • Ask follow-up questions about any AI note, and about a comparison
-• Dividends received: this year's and all-time totals, by hand or from your broker's export, with a CSV for your tax return
+• Dividends received: this year's and all-time totals, by hand or from your broker's export, the next payments expected from their rhythm, with a CSV for your tax return
 • While you were away: after a day or more, the biggest moves, triggered alerts and reported results since your last visit
 
 ON YOUR COMPUTER

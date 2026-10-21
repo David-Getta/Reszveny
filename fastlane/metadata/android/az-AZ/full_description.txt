@@ -29,7 +29,7 @@ Dərinliyi (qısa, standart və ya ətraflı) və səviyyəni (başlanğıc və 
 • “tech 100 ETF” kimi bir təsvir yazın, AI hansı səhmi və ya fondu nəzərdə tutduğunuzu müəyyən edir; ETF-lər və fondlar üçün sadə dildə “Bu nədir?” izahı var
 • “Son hesabatda nə var idi?” – rüblük nəticələrin mənbələrlə AI xülasəsi və səhmlərinizin təzə nəticələri bir baxışda
 • İstənilən AI qeydi və müqayisə barədə əlavə suallar verin
-• Alınan dividendlər: bu il və bütün dövr üzrə cəmlər, əl ilə və ya brokerinizin ixracından, vergi bəyannaməniz üçün CSV ilə
+• Alınan dividendlər: bu il və bütün dövr üzrə cəmlər, əl ilə və ya brokerinizin ixracından, ritmlərindən gözlənilən növbəti ödənişlər, vergi bəyannaməniz üçün CSV ilə
 • Siz yox olarkən: bir gün və ya daha uzun müddətdən sonra, son ziyarətinizdən bəri ən böyük hərəkətlər, işə düşmüş xəbərdarlıqlar və açıqlanmış nəticələr
 
 KOMPÜTERİNİZDƏ

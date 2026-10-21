@@ -29,7 +29,7 @@ SUBAYBAYAN
 • Mag-type ng paglalarawan gaya ng “tech 100 ETF” at aalamin ng AI kung aling stock o fund ang ibig mong sabihin; may simpleng paliwanag na “Ano ito?” ang mga ETF at fund
 • “Ano ang nasa pinakabagong report?” – buod ng AI ng quarterly results na may mga sanggunian, at ang mga bagong resulta ng iyong mga stock sa isang tingin
 • Magtanong pa tungkol sa anumang AI note, at tungkol sa isang paghahambing
-• Mga natanggap na dividend: kabuuan ngayong taon at sa kabuuan, manu-mano o mula sa export ng iyong broker, may CSV para sa iyong tax return
+• Mga natanggap na dividend: kabuuan ngayong taon at sa kabuuan, manu-mano o mula sa export ng iyong broker, ang mga susunod na bayad na inaasahan mula sa ritmo nito, may CSV para sa iyong tax return
 • Habang wala ka: pagkatapos ng isang araw o higit pa, ang pinakamalalaking galaw, mga na-trigger na alert at mga inilabas na resulta mula sa huling pagbisita mo
 
 SA IYONG COMPUTER

@@ -29,7 +29,7 @@ KÖVESD NYOMON
 • Írj be egy leírást („tech 100 ETF”), és az AI kitalálja, melyik részvényre vagy alapra gondolsz; az ETF-ekhez és alapokhoz közérthető „Mi ez a papír?” magyarázat jár
 • „Mi volt a legutóbbi gyorsjelentésben?” – AI-összefoglaló a negyedéves eredményről forrásokkal, és a részvényeid friss eredményei egy pillantásra
 • Kérdezz vissza bármelyik AI-jegyzetről és az összehasonlításról is
-• Kapott osztalékok: idei és eddigi összesítés, kézzel vagy a brókered exportjából, CSV-vel az adóbevalláshoz
+• Kapott osztalékok: idei és eddigi összesítés, kézzel vagy a brókered exportjából, a ritmusukból várható következő kifizetések, CSV-vel az adóbevalláshoz
 • Amíg távol voltál: egy nap vagy több után a legnagyobb mozgások, a teljesült riasztások és a közzétett gyorsjelentések a legutóbbi látogatásod óta
 
 A SZÁMÍTÓGÉPEDEN

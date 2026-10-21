@@ -29,7 +29,7 @@ SPREMLJAJTE
 • Vpišite opis, na primer „tech 100 ETF“, in AI ugotovi, katero delnico ali sklad imate v mislih; ETF-i in skladi dobijo razumljivo razlago „Kaj je to?“
 • „Kaj je bilo v zadnjem poročilu?“ – povzetek AI četrtletnih rezultatov z viri, in sveži rezultati vaših delnic na en pogled
 • Postavite dodatna vprašanja o kateri koli opombi AI in o primerjavi
-• Prejete dividende: seštevki za letos in za ves čas, ročno ali iz izvoza vašega borznega posrednika, s CSV za davčno napoved
+• Prejete dividende: seštevki za letos in za ves čas, ročno ali iz izvoza vašega borznega posrednika, naslednja pričakovana izplačila glede na njihov ritem, s CSV za davčno napoved
 • Medtem ko vas ni bilo: po enem dnevu ali več – največji premiki, sprožena opozorila in objavljeni rezultati od vašega zadnjega obiska
 
 NA RAČUNALNIKU

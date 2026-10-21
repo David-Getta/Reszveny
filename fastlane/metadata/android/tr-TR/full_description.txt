@@ -29,7 +29,7 @@ TAKİPTE KALIN
 • “tech 100 ETF” gibi bir açıklama yazın, yapay zekâ hangi hisseyi veya fonu kastettiğinizi bulur; ETF'ler ve fonlar için sade dilde bir “Bu nedir?” açıklaması var
 • “Son bilançoda ne vardı?” – çeyrek sonuçlarının kaynaklı yapay zekâ özeti ve hisselerinizin yeni sonuçları tek bakışta
 • Herhangi bir yapay zekâ notu ve bir karşılaştırma hakkında ek sorular sorun
-• Alınan temettüler: bu yılın ve tüm zamanların toplamları, elle veya aracı kurumunuzun dışa aktarımından, vergi beyannameniz için CSV ile
+• Alınan temettüler: bu yılın ve tüm zamanların toplamları, elle veya aracı kurumunuzun dışa aktarımından, ritimlerinden beklenen sonraki ödemeler, vergi beyannameniz için CSV ile
 • Siz yokken: bir gün veya daha uzun süre sonra, son ziyaretinizden bu yana en büyük hareketler, tetiklenen uyarılar ve açıklanan bilançolar
 
 BİLGİSAYARINIZDA
