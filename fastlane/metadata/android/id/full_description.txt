@@ -29,6 +29,8 @@ PANTAU SEMUANYA
 • Ketik deskripsi seperti “tech 100 ETF” dan AI mencari tahu saham atau reksa dana mana yang Anda maksud; ETF dan reksa dana mendapat penjelasan sederhana “Apa ini?”
 • “Apa isi laporan terbaru?” – ringkasan AI atas laporan keuangan kuartalan beserta sumbernya, dan hasil terbaru saham Anda dalam sekali lihat
 • Ajukan pertanyaan lanjutan tentang catatan AI mana pun, dan tentang perbandingan
+• Dividen yang diterima: total tahun ini dan sepanjang waktu, diisi manual atau dari ekspor broker Anda, dengan CSV untuk laporan pajak
+• Selagi Anda pergi: setelah sehari atau lebih, pergerakan terbesar, notifikasi yang terpicu dan laporan keuangan yang dirilis sejak kunjungan terakhir Anda
 
 DI KOMPUTER ANDA
 Di Mac dan Windows, WhatStock ada di bilah menu atau baki sistem: tekan pintasan dari mana saja, ketik kode saham atau tempel tangkapan layar, dan analisis pun terbuka.

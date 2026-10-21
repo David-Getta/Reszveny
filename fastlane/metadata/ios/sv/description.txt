@@ -29,6 +29,8 @@ HÅLL KOLL
 • Skriv en beskrivning som ”tech 100 ETF” så räknar AI:n ut vilken aktie eller fond du menar; ETF:er och fonder får en ”Vad är det här?”-förklaring i klarspråk
 • ”Vad stod det i den senaste rapporten?” – en AI-sammanfattning av kvartalsrapporten med källor, och dina aktiers färska siffror med en blick
 • Ställ följdfrågor om vilken AI-anteckning som helst, och om en jämförelse
+• Mottagna utdelningar: årets och totala summor, inlagda för hand eller från din mäklares export, med en CSV till deklarationen
+• Medan du var borta: efter en dag eller mer – de största rörelserna, utlösta larm och rapporterade resultat sedan ditt senaste besök
 
 PÅ DATORN
 På Mac och Windows finns WhatStock i menyraden eller systemfältet: tryck på kortkommandot var du än är, skriv en ticker eller klistra in en skärmbild, så öppnas analysen.

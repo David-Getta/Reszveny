@@ -29,6 +29,8 @@ PYSY AJAN TASALLA
 • Kirjoita kuvaus kuten ”tech 100 ETF”, ja tekoäly päättelee, mitä osaketta tai rahastoa tarkoitat; ETF:t ja rahastot saavat selkokielisen ”Mikä tämä on?” -selityksen
 • ”Mitä viimeisimmässä raportissa oli?” – tekoälykooste osavuosituloksesta lähteineen, ja osakkeidesi tuoreet tulokset yhdellä silmäyksellä
 • Esitä jatkokysymyksiä mistä tahansa tekoälymerkinnästä ja myös vertailusta
+• Saadut osingot: tämän vuoden ja kaikkien aikojen summat, käsin tai välittäjäsi viennistä, CSV-tiedostona veroilmoitusta varten
+• Kun olit poissa: päivän tai pidemmän tauon jälkeen suurimmat liikkeet, lauenneet hälytykset ja julkaistut tulokset edellisen käyntisi jälkeen
 
 TIETOKONEELLASI
 Macissa ja Windowsissa WhatStock asuu valikkorivillä tai ilmaisinalueella: paina pikanäppäintä mistä tahansa, kirjoita osaketunnus tai liitä kuvakaappaus, niin analyysi aukeaa.

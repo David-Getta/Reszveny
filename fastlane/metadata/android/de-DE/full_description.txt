@@ -29,6 +29,8 @@ IM BLICK BEHALTEN
 • Tipp eine Beschreibung wie „tech 100 ETF“ ein, und die KI findet heraus, welche Aktie oder welchen Fonds du meinst; ETFs und Fonds bekommen eine verständliche „Was ist das?“-Erklärung
 • „Was stand im letzten Bericht?“ – eine KI-Zusammenfassung der Quartalszahlen mit Quellen, und die frischen Zahlen deiner Aktien auf einen Blick
 • Stell Rückfragen zu jeder KI-Notiz, und auch zu einem Vergleich
+• Erhaltene Dividenden: Summen für dieses Jahr und insgesamt, von Hand oder aus dem Export deines Brokers, mit CSV für die Steuererklärung
+• Während du weg warst: nach einem Tag oder länger die größten Bewegungen, ausgelösten Alarme und veröffentlichten Zahlen seit deinem letzten Besuch
 
 AUF DEINEM COMPUTER
 Auf Mac und Windows sitzt WhatStock in der Menüleiste bzw. im Infobereich: Drück das Tastenkürzel von überall, gib einen Ticker ein oder füge einen Screenshot ein – und die Analyse öffnet sich.

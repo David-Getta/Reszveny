@@ -29,6 +29,8 @@ THEO DÕI DỄ DÀNG
 • Gõ một mô tả như “tech 100 ETF” và AI sẽ tìm ra cổ phiếu hoặc quỹ bạn muốn nói đến; ETF và quỹ có phần giải thích dễ hiểu “Đây là gì?”
 • “Báo cáo mới nhất có gì?” – bản tóm tắt AI về kết quả kinh doanh quý kèm nguồn, và kết quả mới của các cổ phiếu bạn theo dõi trong nháy mắt
 • Đặt thêm câu hỏi về bất kỳ ghi chú AI nào, và về một bản so sánh
+• Cổ tức đã nhận: tổng năm nay và tổng từ đầu, nhập tay hoặc từ file xuất của công ty chứng khoán, kèm CSV để khai thuế
+• Trong lúc bạn vắng mặt: sau một ngày trở lên, những biến động lớn nhất, cảnh báo đã kích hoạt và kết quả kinh doanh đã công bố kể từ lần truy cập trước
 
 TRÊN MÁY TÍNH
 Trên Mac và Windows, WhatStock nằm trên thanh menu hoặc khay hệ thống: nhấn phím tắt từ bất kỳ đâu, nhập mã cổ phiếu hoặc dán ảnh chụp màn hình, và bản phân tích sẽ mở ra.

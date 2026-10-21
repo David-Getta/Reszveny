@@ -29,6 +29,8 @@ HOUD HET BIJ
 • Typ een omschrijving zoals “tech 100 ETF” en de AI zoekt uit welk aandeel of fonds je bedoelt; ETF's en fondsen krijgen een begrijpelijke uitleg: “Wat is dit?”
 • “Wat stond er in het laatste rapport?” – een AI-samenvatting van de kwartaalcijfers met bronnen, en de verse cijfers van je aandelen in één oogopslag
 • Stel vervolgvragen over elke AI-notitie, en over een vergelijking
+• Ontvangen dividend: totalen van dit jaar en van alle tijden, handmatig of uit de export van je broker, met een CSV voor je belastingaangifte
+• Terwijl je weg was: na een dag of langer de grootste koersbewegingen, afgegane alerts en gepubliceerde cijfers sinds je laatste bezoek
 
 OP JE COMPUTER
 Op Mac en Windows zit WhatStock in de menubalk of het systeemvak: druk waar je ook bent op de sneltoets, typ een ticker of plak een screenshot, en de analyse opent.

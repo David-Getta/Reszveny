@@ -29,6 +29,8 @@ SUIVEZ VOS ACTIONS
 • Tapez une description comme « tech 100 ETF » et l'IA trouve l'action ou le fonds que vous voulez dire ; les ETF et les fonds ont une explication en langage clair : « Qu'est-ce que c'est ? »
 • « Qu'y avait-il dans le dernier rapport ? » – un résumé par IA des résultats trimestriels avec les sources, et les derniers résultats de vos actions en un coup d'œil
 • Posez des questions de suivi sur n'importe quelle note de l'IA, et sur une comparaison
+• Dividendes perçus : totaux de l'année et depuis le début, saisis à la main ou importés de l'export de votre courtier, avec un CSV pour votre déclaration de revenus
+• Pendant votre absence : après un jour ou plus, les plus grandes variations, les alertes déclenchées et les résultats publiés depuis votre dernière visite
 
 SUR VOTRE ORDINATEUR
 Sur Mac et Windows, WhatStock se loge dans la barre des menus ou la zone de notification : appuyez sur le raccourci où que vous soyez, saisissez un ticker ou collez une capture d'écran, et l'analyse s'ouvre.

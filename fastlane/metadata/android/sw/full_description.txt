@@ -29,6 +29,8 @@ FUATILIA KILA KITU
 • Andika maelezo kama “tech 100 ETF” na AI itabaini hisa au mfuko unaoumaanisha; ETF na mifuko hupata ufafanuzi kwa lugha rahisi “Hiki ni kitu gani?”
 • “Ripoti ya hivi karibuni ilisema nini?” – muhtasari wa AI wa matokeo ya robo mwaka ukiwa na vyanzo, na matokeo mapya ya hisa zako kwa mtazamo mmoja
 • Uliza maswali zaidi kuhusu maelezo yoyote ya AI, na kuhusu ulinganisho
+• Gawio lililopokelewa: jumla ya mwaka huu na ya muda wote, kwa mkono au kutoka kwa faili la broker wako, pamoja na CSV kwa marejesho yako ya kodi
+• Ulipokuwa mbali: baada ya siku moja au zaidi, mabadiliko makubwa zaidi, arifa zilizochochewa na matokeo yaliyotangazwa tangu ulipotembelea mara ya mwisho
 
 KWENYE KOMPYUTA
 Kwenye Mac na Windows, WhatStock hukaa kwenye upau wa menyu au trei ya mfumo: bonyeza njia ya mkato ukiwa popote, andika alama ya hisa au bandika picha ya skrini, na uchambuzi unafunguka.

@@ -29,6 +29,8 @@ BĄDŹ NA BIEŻĄCO
 • Wpisz opis, np. „tech 100 ETF”, a AI ustali, o którą akcję lub fundusz Ci chodzi; ETF-y i fundusze mają zrozumiałe wyjaśnienie „Co to jest?”
 • „Co było w ostatnim raporcie?” – podsumowanie AI wyników kwartalnych ze źródłami, a także świeże wyniki Twoich akcji w jednym spojrzeniu
 • Zadawaj dodatkowe pytania o każdą notatkę AI, a także o porównanie
+• Otrzymane dywidendy: sumy za ten rok i za cały okres, wpisane ręcznie lub z eksportu Twojego brokera, z plikiem CSV do rozliczenia podatkowego
+• Gdy Cię nie było: po dniu lub dłużej – największe ruchy, uruchomione alerty i opublikowane wyniki od Twojej ostatniej wizyty
 
 NA KOMPUTERZE
 Na Macu i Windowsie WhatStock znajduje się na pasku menu lub w zasobniku systemowym: naciśnij skrót z dowolnego miejsca, wpisz ticker albo wklej zrzut ekranu – i analiza się otwiera.

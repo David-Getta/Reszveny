@@ -29,6 +29,8 @@ NAZORATDA TUTING
 • “tech 100 ETF” kabi tavsif yozing, AI qaysi aksiya yoki fondni nazarda tutganingizni aniqlaydi; ETF va fondlar uchun sodda tilda “Bu nima?” izohi bor
 • “Soʻnggi hisobotda nima bor edi?” – manbalar bilan chorak natijalarining AI xulosasi va aksiyalaringizning yangi natijalari bir qarashda
 • Istalgan AI qaydi va solishtirish haqida qoʻshimcha savollar bering
+• Olingan dividendlar: shu yil va umumiy davr boʻyicha jami, qoʻlda yoki brokeringiz eksportidan, soliq deklaratsiyasi uchun CSV bilan
+• Siz yoʻq boʻlgan vaqtda: bir kun yoki undan koʻproq vaqtdan soʻng – oxirgi tashrifingizdan buyon eng katta oʻzgarishlar, ishga tushgan ogohlantirishlar va eʼlon qilingan natijalar
 
 KOMPYUTERINGIZDA
 Mac va Windowsda WhatStock menyu satrida yoki tizim panelida turadi: istalgan joydan tezkor tugmalarni bosing, tiker kiriting yoki skrinshotni joylang – tahlil ochiladi.

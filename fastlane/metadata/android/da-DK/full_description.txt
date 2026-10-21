@@ -29,6 +29,8 @@ HOLD ØJE
 • Skriv en beskrivelse som ”tech 100 ETF”, og AI’en finder ud af, hvilken aktie eller fond du mener; ETF’er og fonde får en ”Hvad er det?”-forklaring i almindeligt sprog
 • ”Hvad stod der i det seneste regnskab?” – et AI-resumé af kvartalsregnskabet med kilder, og dine aktiers friske tal med ét blik
 • Stil opfølgende spørgsmål til enhver AI-note, og til en sammenligning
+• Modtagne udbytter: totaler for i år og for altid, indtastet manuelt eller fra din brokers eksport, med en CSV til din selvangivelse
+• Mens du var væk: efter en dag eller mere, de største bevægelser, udløste alarmer og offentliggjorte regnskaber siden dit sidste besøg
 
 PÅ DIN COMPUTER
 På Mac og Windows bor WhatStock i menulinjen eller i systembakken: tryk på genvejen hvor som helst fra, skriv en ticker eller indsæt et skærmbillede, og analysen åbner.

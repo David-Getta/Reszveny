@@ -29,6 +29,8 @@ SEGUEIX-HO TOT
 • Escriu una descripció com “tech 100 ETF” i la IA esbrina quina acció o quin fons vols dir; els ETF i els fons tenen una explicació en llenguatge planer: “Què és això?”
 • “Què hi havia a l'últim informe?” – un resum amb IA dels resultats trimestrals amb fonts, i els resultats recents de les teves accions d'un cop d'ull
 • Fes preguntes de seguiment sobre qualsevol nota de la IA, i també sobre una comparació
+• Dividends rebuts: totals d'aquest any i de sempre, a mà o des de l'exportació del teu bròquer, amb un CSV per a la declaració de la renda
+• Mentre eres fora: després d'un dia o més, els moviments més grans, les alertes activades i els resultats publicats des de la teva darrera visita
 
 A L'ORDINADOR
 Al Mac i al Windows, WhatStock viu a la barra de menús o a la safata del sistema: prem la drecera des d'on sigui, escriu un ticker o enganxa una captura i s'obre l'anàlisi.
