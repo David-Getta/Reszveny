@@ -5,7 +5,9 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:reszveny/app.dart';
 import 'package:reszveny/core/app_preferences.dart';
+import 'package:reszveny/features/alerts/alerts_view.dart';
 import 'package:reszveny/features/alerts/price_alert.dart';
+import 'package:reszveny/features/events/events_view.dart';
 import 'package:reszveny/features/home/away_summary.dart';
 
 import 'app_widget_test.dart' show services;
@@ -55,6 +57,18 @@ void main() {
     expect(DateTime.parse(saved['at'] as String).isAfter(DateTime.now().subtract(const Duration(minutes: 1))), isTrue);
     expect((saved['prices'] as Map)['AAPL'], 231.45);
     expect((saved['prices'] as Map)['MSFT'], 512.30);
+
+    // A riasztás-sor a riasztások oldalát nyitja, az eredmény-sor az eseményekét.
+    await tester.tap(find.byKey(const ValueKey('away-alerts')));
+    await tester.pumpAndSettle();
+    expect(find.byType(AlertsPage), findsOneWidget);
+    await tester.pageBack();
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('away-reported')));
+    await tester.pumpAndSettle();
+    expect(find.byType(EventsPage), findsOneWidget);
+    await tester.pageBack();
+    await tester.pumpAndSettle();
 
     // Elvetés.
     await tester.ensureVisible(find.byKey(const ValueKey('away-dismiss')));

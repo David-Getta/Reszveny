@@ -5,6 +5,8 @@ import '../../core/models/stock_candidate.dart';
 import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
+import '../alerts/alerts_view.dart' show AlertsPage;
+import '../events/events_view.dart' show EventsPage;
 import '../portfolio/portfolio_page.dart' show gainColor;
 import 'away_summary.dart';
 
@@ -104,28 +106,49 @@ class AwaySummaryCard extends StatelessWidget {
                     ],
                   ),
                 ],
+                // Koppintásra a riasztások, illetve az események oldala nyílik.
                 if (r.alertsTriggered > 0) ...[
-                  const SizedBox(height: 8),
-                  Row(
+                  const SizedBox(height: 6),
+                  InkWell(
                     key: const ValueKey('away-alerts'),
-                    children: [
-                      Icon(Icons.notifications_active_outlined, size: 16, color: p.accent),
-                      const SizedBox(width: 6),
-                      Text(l10n.awayAlerts(r.alertsTriggered), style: theme.textTheme.bodyMedium),
-                    ],
+                    borderRadius: BorderRadius.circular(8),
+                    onTap: () =>
+                        Navigator.of(context)
+                            .push(MaterialPageRoute<void>(builder: (_) => AlertsPage(onOpenSymbol: onOpenSymbol))),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 2),
+                      child: Row(
+                        children: [
+                          Icon(Icons.notifications_active_outlined, size: 16, color: p.accent),
+                          const SizedBox(width: 6),
+                          Text(l10n.awayAlerts(r.alertsTriggered), style: theme.textTheme.bodyMedium),
+                          Icon(Icons.chevron_right_rounded, size: 16, color: p.muted),
+                        ],
+                      ),
+                    ),
                   ),
                 ],
                 if (r.reported.isNotEmpty) ...[
-                  const SizedBox(height: 6),
-                  Row(
+                  const SizedBox(height: 4),
+                  InkWell(
                     key: const ValueKey('away-reported'),
-                    children: [
-                      Icon(Icons.assessment_outlined, size: 16, color: p.accent),
-                      const SizedBox(width: 6),
-                      Expanded(
-                        child: Text(l10n.awayReported(r.reported.join(', ')), style: theme.textTheme.bodyMedium),
+                    borderRadius: BorderRadius.circular(8),
+                    onTap: () =>
+                        Navigator.of(context)
+                            .push(MaterialPageRoute<void>(builder: (_) => EventsPage(onOpenSymbol: onOpenSymbol))),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 2),
+                      child: Row(
+                        children: [
+                          Icon(Icons.assessment_outlined, size: 16, color: p.accent),
+                          const SizedBox(width: 6),
+                          Expanded(
+                            child: Text(l10n.awayReported(r.reported.join(', ')), style: theme.textTheme.bodyMedium),
+                          ),
+                          Icon(Icons.chevron_right_rounded, size: 16, color: p.muted),
+                        ],
                       ),
-                    ],
+                    ),
                   ),
                 ],
                 if (r.isQuiet) ...[
