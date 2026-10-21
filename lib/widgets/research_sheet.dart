@@ -4,6 +4,7 @@ import '../app_services.dart';
 import '../core/share/share_text.dart';
 import '../core/util/formatters.dart';
 import '../features/news/daily_brief.dart' show AskSource;
+import '../features/news/follow_up_store.dart';
 import '../features/notes/notes_store.dart' show NotesStore;
 import '../features/news/research_store.dart' show ResearchResult;
 import '../l10n/error_messages.dart';
@@ -131,6 +132,13 @@ class ResearchFollowUpPanel extends StatefulWidget {
   final String subject;
   final String sourceKeyPrefix;
 
+  /// A kész kérdés–válasz párok tárolója a készüléken.
+  static FollowUpStore store = FollowUpStore();
+
+  /// Teszthez: mintha újraindult volna az app (a futás alatti memória ürül).
+  @visibleForTesting
+  static void debugForgetSession() => _ResearchFollowUpPanelState._memory.clear();
+
   @override
   State<ResearchFollowUpPanel> createState() => _ResearchFollowUpPanelState();
 }
@@ -139,19 +147,35 @@ class _ResearchFollowUpPanelState extends State<ResearchFollowUpPanel> {
   final _controller = TextEditingController();
 
   /// A kérdések és válaszok a futás alatt megmaradnak (jegyzetenként), így a
-  /// lap újranyitásakor is látszanak; legfeljebb ennyi jegyzethez.
+  /// lap újranyitásakor is látszanak; legfeljebb ennyi jegyzethez. A kész
+  /// párokat a [store] a készüléken is megőrzi, újraindítás után is látszanak.
   static final _memory = <String, List<({String question, Future<ResearchResult> answer})>>{};
   static const maxRemembered = 30;
+  static FollowUpStore get store => ResearchFollowUpPanel.store;
 
-  late final List<({String question, Future<ResearchResult> answer})> _turns = _memory.putIfAbsent(
-    '${widget.subject}|${widget.note.hashCode}',
-    () {
-      while (_memory.length >= maxRemembered) {
-        _memory.remove(_memory.keys.first);
-      }
-      return [];
-    },
-  );
+  late final String _key = FollowUpStore.keyFor(widget.subject, widget.note);
+  late final List<({String question, Future<ResearchResult> answer})> _turns;
+
+  @override
+  void initState() {
+    super.initState();
+    final remembered = _memory[_key];
+    if (remembered != null) {
+      _turns = remembered;
+      return;
+    }
+    while (_memory.length >= maxRemembered) {
+      _memory.remove(_memory.keys.first);
+    }
+    _turns = _memory[_key] = [];
+    // Korábbi futásból mentett párok: betöltve kész válaszként.
+    store.load(_key).then((saved) {
+      if (!mounted || saved.isEmpty || _turns.isNotEmpty) return;
+      setState(() {
+        _turns.addAll([for (final t in saved) (question: t.question, answer: Future.value(t.answer))]);
+      });
+    });
+  }
 
   @override
   void dispose() {
@@ -170,6 +194,8 @@ class _ResearchFollowUpPanelState extends State<ResearchFollowUpPanel> {
       language: language,
       subject: widget.subject,
     )..ignore();
+    // A kész válasz a készülékre is kerül; a hibát a lap mutatja, nem tároljuk.
+    answer.then((r) => store.append(_key, q, r), onError: (_) {});
     services.telemetry.track('research_followup');
     setState(() {
       _turns.add((question: q, answer: answer));

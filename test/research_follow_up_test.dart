@@ -17,8 +17,10 @@ import 'package:reszveny/features/billing/entitlement_service.dart';
 import 'package:reszveny/features/capture/capture_service.dart';
 import 'package:reszveny/features/market_data/demo_market_data_provider.dart';
 import 'package:reszveny/features/news/earnings_summarizer.dart';
+import 'package:reszveny/features/news/follow_up_store.dart';
 import 'package:reszveny/features/news/research_follow_up.dart';
 import 'package:reszveny/features/recognition/stock_recognizer.dart';
+import 'package:reszveny/widgets/research_sheet.dart';
 
 import 'app_widget_test.dart' show FakeNotifier;
 
@@ -120,5 +122,45 @@ void main() {
     expect(find.byKey(const ValueKey('followup-q-0')), findsOneWidget);
     expect(find.text('Because guidance for the holiday quarter was cautious.'), findsOneWidget);
     expect(asked, hasLength(2));
+
+    // „Újraindítás” után (a futás alatti memória ürül) a készülékről jön vissza.
+    Navigator.of(tester.element(find.byKey(const ValueKey('earnings-summary-sheet')))).pop();
+    await tester.pumpAndSettle();
+    ResearchFollowUpPanel.debugForgetSession();
+    await tester.tap(button);
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('followup-q-0')), findsOneWidget);
+    expect(find.text('Because guidance for the holiday quarter was cautious.'), findsOneWidget);
+    expect(asked, hasLength(2));
+  });
+
+  group('FollowUpStore', () {
+    test('append and load; the key is stable across runs', () async {
+      final store = FollowUpStore(storeKey: 'fu_test');
+      final key = FollowUpStore.keyFor('AAPL · Apple Inc.', 'Apple beat expectations.');
+      expect(key, FollowUpStore.keyFor('AAPL · Apple Inc.', 'Apple beat expectations.'));
+      expect(await store.load(key), isEmpty);
+      await store.append(key, 'Why?', (text: 'Guidance.', sources: const [(title: 'Reuters', url: 'https://r.ex/a')]));
+      await store.append(key, 'And then?', (text: 'Buybacks.', sources: const []));
+      final turns = await FollowUpStore(storeKey: 'fu_test').load(key);
+      expect(turns.map((t) => t.question), ['Why?', 'And then?']);
+      expect(turns.first.answer.sources.single.url, 'https://r.ex/a');
+      expect(await store.load('other'), isEmpty);
+    });
+
+    test('old notes expire, and only the newest notes are kept', () async {
+      var now = DateTime(2026, 10, 1);
+      final store = FollowUpStore(storeKey: 'fu_test2', maxNotes: 2, clock: () => now);
+      await store.append('a', 'q', (text: 'a', sources: const []));
+      now = DateTime(2026, 10, 2);
+      await store.append('b', 'q', (text: 'b', sources: const []));
+      now = DateTime(2026, 10, 3);
+      await store.append('c', 'q', (text: 'c', sources: const []));
+      expect(await store.load('a'), isEmpty, reason: 'a harmadik jegyzet kiszorította');
+      expect(await store.load('b'), hasLength(1));
+      now = DateTime(2026, 10, 9, 1);
+      expect(await store.load('b'), isEmpty, reason: '7 napnál régebbi');
+      expect(await store.load('c'), hasLength(1));
+    });
   });
 }
