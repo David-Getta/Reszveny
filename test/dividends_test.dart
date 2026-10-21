@@ -214,6 +214,24 @@ void main() {
       expect(find.descendant(of: next, matching: find.textContaining('HUF')), findsOneWidget);
     });
 
+    test('the rhythm follows the most recent payments: an old, sparse history does not skew it', () {
+      // Két régi éves tétel, majd négy negyedéves: negyedéves ritmus, nem éves.
+      final out = expectedDividends(
+        [
+          rec('KO', DateTime(2023, 9, 1), 4),
+          rec('KO', DateTime(2024, 9, 1), 4),
+          rec('KO', DateTime(2025, 12, 1), 1),
+          rec('KO', DateTime(2026, 3, 1), 1),
+          rec('KO', DateTime(2026, 6, 1), 1),
+          rec('KO', DateTime(2026, 9, 1), 1),
+        ],
+        ['KO'],
+        now: now,
+      );
+      expect(out.single.periodDays, 91);
+      expect(medianRecentGap([DateTime(2026, 1, 1), DateTime(2026, 2, 1), DateTime(2026, 3, 1)]), 31);
+    });
+
     test('year-over-year change of the dividend income', () {
       expect(yearChange(112, 100), closeTo(12, 1e-9));
       expect(yearChange(80, 100), closeTo(-20, 1e-9));

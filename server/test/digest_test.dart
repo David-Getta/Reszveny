@@ -237,6 +237,19 @@ void main() {
       ],
     }, now: now);
     expect(many.map((d) => d.symbol), ['S16']);
+    // Régi éves tételek után negyedéves ritmus: a legutóbbi távolságok számítanak.
+    final recent = DigestSender.expectedDividendsOf({
+      'lots': data['lots'],
+      'dividends': [
+        {'symbol': 'KO', 'amount': 4, 'currency': 'USD', 'date': '2023-09-01'},
+        {'symbol': 'KO', 'amount': 4, 'currency': 'USD', 'date': '2024-09-01'},
+        {'symbol': 'KO', 'amount': 1, 'currency': 'USD', 'date': '2025-10-30'},
+        {'symbol': 'KO', 'amount': 1, 'currency': 'USD', 'date': '2026-01-29'},
+        {'symbol': 'KO', 'amount': 1, 'currency': 'USD', 'date': '2026-04-30'},
+        {'symbol': 'KO', 'amount': 1.2, 'currency': 'USD', 'date': '2026-07-30'},
+      ],
+    }, now: now);
+    expect(recent.map((d) => (d.symbol, d.date)), [('KO', DateTime.utc(2026, 10, 29))]);
     // Egy tételből nincs ritmus; a két héten túli nem látszik.
     expect(
       DigestSender.expectedDividendsOf({

@@ -9,7 +9,8 @@ typedef ExpectedDividend = ({String symbol, DateTime date, double amount, String
 /// osztalékok dátumaiból és összegeiből. Részvényenként és pénznemenként egy
 /// sorozat (két bróker, két pénznem: két sorozat); legalább két dátumozott
 /// kifizetés kell; a köztük lévő jellemző (medián) távolságból havi /
-/// negyedéves / féléves / éves ritmus adódik, a következő = az utolsó + ritmus
+/// negyedéves / féléves / éves ritmus adódik (a legutóbbi legfeljebb négy
+/// távolságból), a következő = az utolsó + ritmus
 /// (naptári napokban, nyári időszámítástól függetlenül), az összeg az utolsó
 /// kifizetés. Ami már [grace]-nél régebben lett volna esedékes, kimarad
 /// (valószínűleg nem lett rögzítve, vagy elmaradt), ahogy a [horizon]-nál
@@ -40,8 +41,7 @@ List<ExpectedDividend> expectedDividends(
   for (final e in series.entries) {
     final paidOn = e.value.keys.toList()..sort();
     if (paidOn.length < 2) continue;
-    final gaps = [for (var i = 1; i < paidOn.length; i++) paidOn[i].difference(paidOn[i - 1]).inDays]..sort();
-    final period = periodDaysFor(gaps[gaps.length ~/ 2]);
+    final period = periodDaysFor(medianRecentGap(paidOn));
     if (period == null) continue;
     final last = paidOn.last;
     final next = DateTime(last.year, last.month, last.day + period);
@@ -103,6 +103,16 @@ double? yearChange(double current, double previous) => previous > 0 ? (current /
 
 /// Becsült összeg: „~ 2,60 USD” – az Események, a kártyák és a naptár egyformán.
 String approxMoney(Fmt fmt, double amount, String currency) => '~ ${fmt.money(amount, currency)}';
+
+/// A legutóbbi kifizetések közti távolságok mediánja napokban (legfeljebb a
+/// [recentGaps] utolsó távolság): egy régi, ritkás előzmény ne torzítsa a mai
+/// ritmust. Legalább két nap kell.
+int medianRecentGap(List<DateTime> paidOn, {int recentGaps = 4}) {
+  final gaps = [for (var i = 1; i < paidOn.length; i++) paidOn[i].difference(paidOn[i - 1]).inDays];
+  final recent = gaps.length > recentGaps ? gaps.sublist(gaps.length - recentGaps) : gaps;
+  final sorted = [...recent]..sort();
+  return sorted[sorted.length ~/ 2];
+}
 
 /// A kifizetések közti medián távolságból a ritmus napokban (30 / 91 / 182 / 365);
 /// `null`, ha túl sűrű (nem rendszeres osztalék) vagy túl ritka.

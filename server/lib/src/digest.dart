@@ -172,8 +172,10 @@ class DigestSender {
     for (final e in series.entries) {
       final paidOn = e.value.keys.toList()..sort();
       if (paidOn.length < 2) continue;
-      final gaps = [for (var i = 1; i < paidOn.length; i++) paidOn[i].difference(paidOn[i - 1]).inDays]..sort();
-      final period = _periodDays(gaps[gaps.length ~/ 2]);
+      // A legutóbbi legfeljebb négy távolság mediánja: a régi, ritkás előzmény ne torzítson.
+      final gaps = [for (var i = 1; i < paidOn.length; i++) paidOn[i].difference(paidOn[i - 1]).inDays];
+      final recent = (gaps.length > 4 ? gaps.sublist(gaps.length - 4) : gaps)..sort();
+      final period = _periodDays(recent[recent.length ~/ 2]);
       if (period == null) continue;
       final next = paidOn.last.add(Duration(days: period));
       if (next.isBefore(today) || next.isAfter(until)) continue;
