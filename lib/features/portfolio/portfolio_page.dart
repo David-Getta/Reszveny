@@ -1004,6 +1004,14 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
                             style: Theme.of(context).textTheme.titleMedium,
                           ),
                         ),
+                        // Kapott osztalék felvétele ehhez a részvényhez (ticker és pénznem kitöltve).
+                        IconButton(
+                          key: const ValueKey('position-dividend'),
+                          tooltip: l10n.portfolioAddDividend,
+                          icon: const Icon(Icons.payments_outlined),
+                          onPressed: () =>
+                              showAddDividendDialog(context, symbol: position.symbol, currency: position.currency),
+                        ),
                         if (!now.isClosed)
                           FilledButton.tonalIcon(
                             key: const ValueKey('position-sell'),
@@ -1046,6 +1054,17 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
                       child: Text(
                         '${l10n.portfolioRealized}: ${fmt.money(now.realizedGain, now.currency, withSign: true)}',
                         style: TextStyle(color: gainColor(p, now.realizedGain), fontWeight: FontWeight.w600),
+                      ),
+                    ),
+                  if (services.portfolio.dividendsOf(position.symbol).where((d) => d.currency == position.currency)
+                      case final ds when ds.isNotEmpty)
+                    Padding(
+                      key: const ValueKey('position-dividends-sum'),
+                      padding: const EdgeInsets.fromLTRB(20, 0, 20, 8),
+                      child: Text(
+                        '${l10n.portfolioDividendsReceived}: '
+                        '${fmt.money(ds.fold<double>(0, (sum, d) => sum + d.amount), position.currency)}',
+                        style: TextStyle(color: p.muted, fontWeight: FontWeight.w600),
                       ),
                     ),
                   // A még birtokolt tételek egyenként (ha több vétel volt vagy eladás is):

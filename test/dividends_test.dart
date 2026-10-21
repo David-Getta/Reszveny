@@ -122,6 +122,21 @@ void main() {
     expect(shared.single, startsWith('date,symbol,amount,currency\n'));
     expect(shared.single, contains('AAPL,3.1,USD'));
 
+    // A pozíció tranzakciós lapján: osztalék felvétele kitöltött tickerrel, és az összeg.
+    await tester.tap(find.byKey(const ValueKey('position-menu-AAPL')));
+    await tester.pumpAndSettle();
+    expect(find.textContaining('Dividends received: 5.60 USD'), findsOneWidget);
+    await tester.tap(find.byKey(const ValueKey('position-dividend')));
+    await tester.pumpAndSettle();
+    expect(tester.widget<TextField>(find.byKey(const ValueKey('dividend-symbol'))).controller!.text, 'AAPL');
+    await tester.enterText(find.byKey(const ValueKey('dividend-amount')), '1');
+    await tester.tap(find.byKey(const ValueKey('dividend-submit')));
+    await tester.pumpAndSettle();
+    expect(s.portfolio.dividendsOf('AAPL'), hasLength(3));
+    expect(find.textContaining('Dividends received: 6.60 USD'), findsOneWidget);
+    await tester.tapAt(const Offset(600, 40));
+    await tester.pumpAndSettle();
+
     // A részvény oldalán „A pozícióm” kártyán a kapott osztalék.
     final tile = find.ancestor(of: find.byKey(const ValueKey('position-menu-AAPL')), matching: find.byType(InkWell));
     await tester.ensureVisible(tile.first);
@@ -129,6 +144,6 @@ void main() {
     await tester.pumpAndSettle();
     final figure = find.byKey(const ValueKey('position-dividends'));
     await tester.ensureVisible(figure);
-    expect(find.descendant(of: figure, matching: find.text('5.60 USD')), findsOneWidget);
+    expect(find.descendant(of: figure, matching: find.text('6.60 USD')), findsOneWidget);
   });
 }
