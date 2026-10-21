@@ -154,6 +154,9 @@ void main() {
     await s.alerts.add(symbol: 'AAPL', kind: AlertKind.above, value: 300, currency: 'USD');
     await tester.pumpWidget(WhatStockApp(services: s));
     await tester.pumpAndSettle();
+    // A kezdőképernyő kedvenc-csempéin a nagy napi mozgás (NVDA +2,98%) ✨ jellel.
+    expect(find.byKey(const ValueKey('fav-move-NVDA')), findsOneWidget);
+    expect(find.byKey(const ValueKey('fav-move-AAPL')), findsNothing);
     await tester.tap(find.byKey(const ValueKey('favorites-see-all')));
     await tester.pumpAndSettle();
 

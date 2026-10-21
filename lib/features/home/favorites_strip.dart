@@ -6,6 +6,8 @@ import '../../core/models/stock_quote.dart';
 import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
+import '../news/move_explainer.dart';
+import '../stock_detail/widgets/move_why_button.dart';
 import 'watchlist_page.dart';
 
 /// Kedvencek a kezdőképernyőn: ticker + aktuális ár + napi változás, kártyákon.
@@ -97,9 +99,30 @@ class _FavoritesStripState extends State<FavoritesStrip> {
                                 ),
                                 const SizedBox(height: 2),
                                 if (q != null)
-                                  Text(
-                                    '${fmt.number(q.price)}  ${fmt.percent(q.changePercent, withSign: true)}',
-                                    style: theme.textTheme.bodySmall?.copyWith(color: up ? p.positive : p.negative),
+                                  Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      Text(
+                                        '${fmt.number(q.price)}  ${fmt.percent(q.changePercent, withSign: true)}',
+                                        style: theme.textTheme.bodySmall?.copyWith(color: up ? p.positive : p.negative),
+                                      ),
+                                      // Nagy napi mozgásnál: „Miért mozog ma?”
+                                      if (q.changePercent case final pct?
+                                          when pct.abs() >= MoveExplainer.minMovePercent)
+                                        InkWell(
+                                          key: ValueKey('fav-move-$s'),
+                                          borderRadius: BorderRadius.circular(8),
+                                          onTap: () =>
+                                              showMoveExplanation(context, symbol: s, name: s, changePercent: pct),
+                                          child: Tooltip(
+                                            message: l10n.moveWhyButton,
+                                            child: Padding(
+                                              padding: const EdgeInsetsDirectional.only(start: 6),
+                                              child: Icon(Icons.auto_awesome_outlined, size: 13, color: p.accent),
+                                            ),
+                                          ),
+                                        ),
+                                    ],
                                   )
                                 else
                                   Text(
