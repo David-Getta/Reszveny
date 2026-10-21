@@ -1135,6 +1135,15 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
                         style: TextStyle(color: p.muted, fontWeight: FontWeight.w600),
                       ),
                     ),
+                  // A részvény kapott osztalékai tételenként (az újabb elöl, legfeljebb hat), minden pénznemben.
+                  for (final d in services.portfolio.dividendsOf(position.symbol).take(6))
+                    ListTile(
+                      key: ValueKey('sheet-dividend-${d.id}'),
+                      dense: true,
+                      leading: Icon(Icons.payments_outlined, color: p.muted, size: 20),
+                      title: Text(fmt.money(d.amount, d.currency)),
+                      subtitle: d.date == null ? null : Text(fmt.date(d.date)),
+                    ),
                   // A még birtokolt tételek egyenként (ha több vétel volt vagy eladás is):
                   // darab × vételi ár, dátum, és a mai árral számolt nyereség.
                   if (!now.isClosed && (now.hasSales || now.openLots.length > 1)) ...[

@@ -382,6 +382,10 @@ void main() {
     await tester.tap(find.byKey(const ValueKey('position-menu-AAPL')));
     await tester.pumpAndSettle();
     expect(find.textContaining('Dividends received: 5.60 USD'), findsOneWidget);
+    // A tételek egyenként is a lapon (az újabb elöl).
+    for (final d in s.portfolio.dividendsOf('AAPL')) {
+      expect(find.byKey(ValueKey('sheet-dividend-${d.id}')), findsOneWidget);
+    }
     await tester.tap(find.byKey(const ValueKey('position-dividend')));
     await tester.pumpAndSettle();
     expect(tester.widget<TextField>(find.byKey(const ValueKey('dividend-symbol'))).controller!.text, 'AAPL');

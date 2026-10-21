@@ -1,7 +1,7 @@
 name: reszveny
 description: "WhatStock – photograph a stock and learn everything about it. iOS, iPadOS, macOS, Android, Windows."
 publish_to: 'none'
-version: 0.2.160+163
+version: 0.2.161+164
 
 environment:
   sdk: ^3.13.5
@@ -70,7 +70,7 @@ msix_config:
   display_name: WhatStock
   publisher_display_name: WhatStock
   identity_name: WhatStock.WhatStock
-  msix_version: 0.2.160.0
+  msix_version: 0.2.161.0
   logo_path: assets/branding/app_icon.png
   capabilities: internetClient
   languages: en, hu
