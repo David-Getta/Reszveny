@@ -12,7 +12,7 @@ import '../billing/paywall_page.dart';
 import '../stock_detail/widgets/ask_sheet.dart';
 import '../stock_detail/widgets/section_card.dart';
 import 'portfolio_review.dart';
-import 'dividend_forecast.dart' show convertedDividends;
+import 'dividend_forecast.dart' show convertedDividends, expectedDividends;
 import 'portfolio_valuation.dart';
 
 /// „AI-portfólióelemzés” kártya: indítás, folyamatjelző, az eredmény szekciói
@@ -52,6 +52,11 @@ class _PortfolioReviewCardState extends State<PortfolioReviewCard> {
         widget.snapshot,
         language: language,
         dividendsReceived: await _dividendsReceived(services),
+        expectedDividends: expectedDividends(
+          services.portfolio.dividends,
+          services.portfolio.heldSymbols,
+          now: DateTime.now(),
+        ),
       );
       if (mounted) setState(() => _report = r);
       // A keret a szerveren fogyott: a kliens átveszi.

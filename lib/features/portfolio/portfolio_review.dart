@@ -11,6 +11,7 @@ import '../../core/models/stock_report.dart';
 import '../analysis/analysis_chat.dart';
 import '../analysis/claude_stock_analyst.dart';
 import '../market_data/market_data_provider.dart';
+import 'dividend_forecast.dart' show ExpectedDividend;
 import 'portfolio_valuation.dart';
 
 /// Egy pozíció adatai a portfólióelemzéshez.
@@ -123,7 +124,7 @@ Write in the requested language the way a native financial journalist would, pla
 - diversification: concentration (largest positions, top-3 weight), sector and country spread, and what is missing; if "cash" is given (uninvested money in the portfolio currency), say what share of the whole it is and what it means. A holding marked with a "note" has no company profile: it is probably an ETF or a fund – treat it as a basket (the index or theme it tracks, from its ticker and your knowledge), count its exposure in the sector and country spread accordingly, and say what you assumed.
 - currency: the currency split and what a move in the main currencies would do to the reader's home-currency value.
 - risks: risks shared by several positions (same theme, supplier, rate sensitivity, valuation level, beta), and the biggest single point of failure.
-- income: dividend yield of the portfolio and of the main payers; if "dividends_received_12m" is given (cash actually received in the last 12 months, in the portfolio currency), compare it with what the yield implies; skip the section only if no position pays and nothing was received.
+- income: dividend yield of the portfolio and of the main payers; if "dividends_received_12m" is given (cash actually received in the last 12 months, in the portfolio currency), compare it with what the yield implies and with "invested" (yield on cost); if "expected_dividends" is given (the next payments the app expects from the rhythm of the recorded ones, with amount and currency), mention the nearest ones briefly and treat them as estimates; skip the section only if no position pays and nothing was received.
 - consider: 3-5 bullets of things worth considering, each with the reason and what it depends on (not instructions).
 
 Return one JSON object: {"headline": string (one sentence: the most decision-relevant point), "sections": [{"kind": string, "title": string (in the requested language), "paragraphs": [string], "bullets": [string]}]}. Keep it to about 450-700 words in total.''';
@@ -136,6 +137,7 @@ Return one JSON object: {"headline": string (one sentence: the most decision-rel
     double? dividendYield,
     double? dividendsReceived,
     double cash = 0,
+    List<Map<String, dynamic>> expectedDividends = const [],
     required String language,
     required DateTime today,
     String model = '',
@@ -163,6 +165,8 @@ Return one JSON object: {"headline": string (one sentence: the most decision-rel
               'dividends_received_12m': ?dividendsReceived == null || dividendsReceived <= 0 ? null : dividendsReceived.round(),
               // Be nem fektetett készpénz a brókernél (ha megadta).
               if (cash > 0) 'cash': cash.round(),
+              // A rögzített kifizetések ritmusából várható következő osztalékok (legfeljebb hat).
+              if (expectedDividends.isNotEmpty) 'expected_dividends': expectedDividends.take(6).toList(),
               'positions': [for (final h in holdings) h.toJson()],
             })}',
       },
@@ -204,7 +208,12 @@ Return one JSON object: {"headline": string (one sentence: the most decision-rel
   };
 
   /// Az elemzés elkészítése és elmentése.
-  Future<StockReport> review(PortfolioSnapshot snapshot, {required String language, double? dividendsReceived}) async {
+  Future<StockReport> review(
+    PortfolioSnapshot snapshot, {
+    required String language,
+    double? dividendsReceived,
+    List<ExpectedDividend> expectedDividends = const [],
+  }) async {
     if (!config.hasAnthropicKey) throw const AnalysisException(AppErrorCode.aiNotConfigured);
     final body = requestBody(
       holdings: await holdings(snapshot),
@@ -214,6 +223,15 @@ Return one JSON object: {"headline": string (one sentence: the most decision-rel
       dividendYield: snapshot.dividendYield,
       dividendsReceived: dividendsReceived,
       cash: snapshot.cash,
+      expectedDividends: [
+        for (final x in expectedDividends)
+          {
+            'symbol': x.symbol,
+            'date': x.date.toIso8601String().substring(0, 10),
+            'amount': double.parse(x.amount.toStringAsFixed(2)),
+            'currency': x.currency,
+          },
+      ],
       language: language,
       today: _clock(),
       model: config.anthropicModel,
