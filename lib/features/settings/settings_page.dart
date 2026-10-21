@@ -321,6 +321,7 @@ class SettingsPage extends StatelessWidget {
                           ('portfolio', l10n.portfolio),
                           ('favorites', l10n.favorites),
                           ('events', l10n.upcomingEvents),
+                          ('results', l10n.eventsRecentResults),
                           ('news', l10n.watchNewsTitle),
                           ('analyses', l10n.myAnalyses),
                         ].indexed) ...[

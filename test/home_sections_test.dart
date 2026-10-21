@@ -19,6 +19,9 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.byKey(const ValueKey('home-markets')), findsOneWidget);
     expect(find.text('Favorites'), findsWidgets);
+    // Friss gyorsjelentések a kezdőképernyőn (a demóban az AAPL jelentett).
+    expect(find.byKey(const ValueKey('home-results')), findsOneWidget);
+    expect(find.text('AAPL beat the expected EPS'), findsOneWidget);
 
     await tester.tap(find.text('Settings').first);
     await tester.pumpAndSettle();

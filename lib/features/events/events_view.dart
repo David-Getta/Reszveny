@@ -331,6 +331,73 @@ class EventsPage extends StatelessWidget {
   }
 }
 
+/// „Friss gyorsjelentések” a kezdőképernyőn: a figyelt cégek legutóbbi,
+/// nemrég zárult negyedévének eredménye (legfeljebb három), a többi az
+/// események oldalán. Kikapcsolható a beállításokban.
+class RecentResultsSection extends StatelessWidget {
+  const RecentResultsSection({super.key, required this.onOpenSymbol});
+
+  final ValueChanged<StockCandidate> onOpenSymbol;
+
+  static const shownCount = 3;
+
+  @override
+  Widget build(BuildContext context) {
+    final services = AppServices.of(context);
+    final l10n = AppLocalizations.of(context);
+    final p = AppPalette.of(context);
+    final theme = Theme.of(context);
+    return ListenableBuilder(
+      listenable: services.events,
+      builder: (context, _) {
+        final recent = services.events.recent;
+        if (recent.isEmpty) return const SizedBox.shrink();
+        return Column(
+          key: const ValueKey('home-results'),
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            const SizedBox(height: 24),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsetsDirectional.only(start: 4),
+                    child: Text(l10n.eventsRecentResults, style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),
+                  ),
+                ),
+                if (recent.length > shownCount)
+                  Flexible(
+                    child: TextButton(
+                      key: const ValueKey('results-see-all'),
+                      onPressed: () =>
+                          Navigator.of(context)
+                              .push(MaterialPageRoute<void>(builder: (_) => EventsPage(onOpenSymbol: onOpenSymbol))),
+                      style: TextButton.styleFrom(visualDensity: VisualDensity.compact),
+                      child: Text(maxLines: 1, overflow: TextOverflow.ellipsis, l10n.seeAll(recent.length)),
+                    ),
+                  ),
+              ],
+            ),
+            const SizedBox(height: 4),
+            Card(
+              margin: EdgeInsets.zero,
+              child: Column(
+                children: [
+                  for (final (i, r) in recent.take(shownCount).indexed) ...[
+                    if (i > 0) const Divider(height: 1),
+                    RecentResultTile(item: r, onOpenSymbol: onOpenSymbol),
+                  ],
+                ],
+              ),
+            ),
+          ],
+        );
+      },
+    );
+  }
+}
+
 /// Egy friss negyedéves eredmény: várt felett vagy alatt, a számokkal; a ✨
 /// gombbal az AI-összefoglaló, a sorra koppintva a részvény nyílik.
 class RecentResultTile extends StatelessWidget {

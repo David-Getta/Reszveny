@@ -463,6 +463,7 @@ class _HomePageState extends State<HomePage> {
                           // Telefonon nincs oldalsáv: a legutóbbiak itt látszanak.
                           if (widget.showAppBarActions) RecentChips(onOpenSymbol: widget.onOpenSymbol),
                           if (show('events')) UpcomingEventsSection(onOpenSymbol: widget.onOpenSymbol),
+                          if (show('results')) RecentResultsSection(onOpenSymbol: widget.onOpenSymbol),
                           if (show('news')) WatchNewsSection(onOpenSymbol: widget.onOpenSymbol),
                           if (show('analyses')) MyAnalysesList(onOpenSymbol: widget.onOpenSymbol),
                         ],

@@ -70,7 +70,7 @@ class AppPreferences extends ChangeNotifier {
   static const _resolvedKey = 'resolved_descriptions';
 
   /// A kezdőképernyő elrejthető részei (azonosítók a beállításokhoz).
-  static const homeSections = ['markets', 'brief', 'portfolio', 'favorites', 'events', 'news', 'analyses'];
+  static const homeSections = ['markets', 'brief', 'portfolio', 'favorites', 'events', 'results', 'news', 'analyses'];
   static const _listsKey = 'watch_lists';
 
   /// Legfeljebb ennyi saját lista, és egy név legfeljebb ennyi karakter.
