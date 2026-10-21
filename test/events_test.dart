@@ -152,6 +152,38 @@ void main() {
     expect(div.single.currency, 'USD');
   });
 
+  test('a dividend recorded later shows up without a new network round: the service follows the portfolio', () async {
+    final market = _Market({});
+    final portfolio = PortfolioStore();
+    await portfolio.add(symbol: 'KO', quantity: 10, price: 60, currency: 'USD');
+    final s = EventsService(
+      marketData: market,
+      preferences: AppPreferences(),
+      portfolio: portfolio,
+      reports: ReportStore(analyst: ClaudeStockAnalyst(config: const AppConfig())),
+    );
+    await s.refresh();
+    Iterable<UpcomingEvent> dividends() => s.events.where((e) => e.kind == UpcomingEventKind.dividend);
+    expect(dividends(), isEmpty);
+    final calls = market.calls.length;
+    final last = today.subtract(const Duration(days: 50));
+    await portfolio.addDividend(
+      symbol: 'KO',
+      amount: 4.85,
+      currency: 'USD',
+      date: last.subtract(const Duration(days: 91)),
+    );
+    await portfolio.addDividend(symbol: 'KO', amount: 5.1, currency: 'USD', date: last);
+    await Future<void>.delayed(Duration.zero);
+    expect(dividends().map((e) => e.symbol), ['KO']);
+    expect(market.calls.length, calls, reason: 'a gyorsjelentés-dátumok a gyorsítótárból');
+    // Eladás után már nem várható.
+    await portfolio.add(symbol: 'KO', quantity: 10, price: 70, currency: 'USD', sell: true);
+    await Future<void>.delayed(Duration.zero);
+    expect(dividends(), isEmpty);
+    s.dispose();
+  });
+
   test('a dividend event in the calendar export: title, estimated amount and a stable uid', () {
     final l10n = lookupAppLocalizations(const Locale('en'));
     final fmt = Fmt('en', na: 'n/a');

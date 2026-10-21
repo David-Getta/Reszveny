@@ -58,7 +58,11 @@ class EventsService extends ChangeNotifier {
     required this.portfolio,
     required this.reports,
     DateTime Function()? clock,
-  }) : _clock = clock ?? DateTime.now;
+  }) : _clock = clock ?? DateTime.now {
+    // Új vétel, eladás vagy osztalék: a lista a gyorsítótárból azonnal frissül
+    // (a már ismert gyorsjelentés-dátumokhoz nem kell új lekérés).
+    portfolio.addListener(_onPortfolioChanged);
+  }
 
   final MarketDataProvider marketData;
   final AppPreferences preferences;
@@ -91,6 +95,24 @@ class EventsService extends ChangeNotifier {
   List<RecentResult> get recent => _recent;
   bool _loading = false;
   bool _loaded = false;
+
+  /// Változott a portfólió, miközben épp töltöttünk: a végén még egy kör.
+  bool _dirty = false;
+
+  void _onPortfolioChanged() {
+    if (!_loaded && !_loading) return;
+    if (_loading) {
+      _dirty = true;
+      return;
+    }
+    refresh();
+  }
+
+  @override
+  void dispose() {
+    portfolio.removeListener(_onPortfolioChanged);
+    super.dispose();
+  }
 
   List<UpcomingEvent> get events => _events;
   bool get loading => _loading;
@@ -205,6 +227,10 @@ class EventsService extends ChangeNotifier {
     } finally {
       _loading = false;
       notifyListeners();
+    }
+    if (_dirty) {
+      _dirty = false;
+      await refresh();
     }
   }
 
