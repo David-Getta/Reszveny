@@ -3565,7 +3565,7 @@ abstract class AppLocalizations {
   /// **'The share of profit paid out as dividends. Above 100% the company pays more than it earns, which rarely lasts.'**
   String get glossPayoutRatio;
 
-  /// No description provided for @glossYieldOnCost.
+  /// Plain-language explanation of the figure shown as labelYieldOnCost on the position card and in the glossary.
   ///
   /// In en, this message translates to:
   /// **'Dividends received in the last 12 months divided by what you paid for the shares you still hold. Unlike the dividend yield, it is measured against your own purchase price, not today\'s price.'**

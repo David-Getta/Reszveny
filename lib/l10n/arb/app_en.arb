@@ -1482,9 +1482,12 @@
     "description": "Plain-language explanation of the metric shown as labelDividendPerShare, opened from the info icon on the stock page."
   },
   "glossPayoutRatio": "The share of profit paid out as dividends. Above 100% the company pays more than it earns, which rarely lasts.",
-  "glossYieldOnCost": "Dividends received in the last 12 months divided by what you paid for the shares you still hold. Unlike the dividend yield, it is measured against your own purchase price, not today's price.",
   "@glossPayoutRatio": {
     "description": "Plain-language explanation of the metric shown as labelPayoutRatio, opened from the info icon on the stock page."
+  },
+  "glossYieldOnCost": "Dividends received in the last 12 months divided by what you paid for the shares you still hold. Unlike the dividend yield, it is measured against your own purchase price, not today's price.",
+  "@glossYieldOnCost": {
+    "description": "Plain-language explanation of the figure shown as labelYieldOnCost on the position card and in the glossary."
   },
   "glossTitle": "What does it mean?",
   "@glossTitle": {

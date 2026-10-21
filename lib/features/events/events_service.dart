@@ -99,8 +99,15 @@ class EventsService extends ChangeNotifier {
   /// Változott a portfólió, miközben épp töltöttünk: a végén még egy kör.
   bool _dirty = false;
 
+  /// Amire a lista épül a portfólióból: a birtokolt részvények és az osztalékok.
+  /// Más változás (készpénz, jegyzet) nem indít újraépítést.
+  String _fingerprint() =>
+      [...portfolio.positions.map((p) => p.symbol), '|', ...portfolio.dividends.map((d) => d.id)].join(',');
+  String _seen = '';
+
   void _onPortfolioChanged() {
     if (!_loaded && !_loading) return;
+    if (_fingerprint() == _seen) return;
     if (_loading) {
       _dirty = true;
       return;
@@ -131,6 +138,7 @@ class EventsService extends ChangeNotifier {
   Future<void> refresh({bool force = false}) async {
     if (_loading) return;
     _loading = true;
+    _seen = _fingerprint();
     notifyListeners();
     try {
       final today = _today;
@@ -224,6 +232,9 @@ class EventsService extends ChangeNotifier {
           });
       _recent = recent;
       _loaded = true;
+    } catch (e) {
+      // Egy hibás mentett elemzés vagy adat nem viszi el a listát: a meglévő marad.
+      debugPrint('Események nem frissíthetők: $e');
     } finally {
       _loading = false;
       notifyListeners();

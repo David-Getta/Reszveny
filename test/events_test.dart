@@ -177,6 +177,15 @@ void main() {
     await Future<void>.delayed(Duration.zero);
     expect(dividends().map((e) => e.symbol), ['KO']);
     expect(market.calls.length, calls, reason: 'a gyorsjelentés-dátumok a gyorsítótárból');
+    // Készpénz-változás nem építi újra a listát (nincs értesítés) – a függő kör lefutása után.
+    for (var i = 0; i < 50 && s.loading; i++) {
+      await Future<void>.delayed(Duration.zero);
+    }
+    var notified = 0;
+    s.addListener(() => notified++);
+    await portfolio.setCash('EUR', 100);
+    await Future<void>.delayed(Duration.zero);
+    expect(notified, 0);
     // Eladás után már nem várható.
     await portfolio.add(symbol: 'KO', quantity: 10, price: 70, currency: 'USD', sell: true);
     await Future<void>.delayed(Duration.zero);

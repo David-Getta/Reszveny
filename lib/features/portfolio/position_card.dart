@@ -94,26 +94,24 @@ class PositionCard extends StatelessWidget {
                   value: fmt.money(ds.fold<double>(0, (sum, d) => sum + d.amount), ccy),
                 ),
                 // Bekerülési osztalékhozam: az utolsó 12 hónap osztaléka a még birtokolt
-                // részvények vételi értékéhez mérve (csak nyitott pozíciónál).
-                if (!pos.isClosed && pos.cost > 0)
-                  if (yieldOnCost(ds, pos.cost, now: DateTime.now()) case final y?)
-                    _Figure(
-                      key: const ValueKey('position-yield-on-cost'),
-                      label: l10n.labelYieldOnCost,
-                      value: fmt.percent(y),
-                    ),
-              ],
-              // A várható következő osztalék a rögzítettek ritmusából (csak még birtokolt pozíciónál).
-              if (!pos.isClosed)
-                if (expectedDividends(services.portfolio.dividendsOf(pos.symbol), [
-                      pos.symbol,
-                    ], now: DateTime.now()).firstOrNull
-                    case final x?)
+                // részvények vételi értékéhez mérve.
+                if (yieldOnCost(ds, pos.cost, now: DateTime.now()) case final y?)
                   _Figure(
-                    key: const ValueKey('position-dividend-next'),
-                    label: l10n.portfolioDividendsExpected,
-                    value: '${l10n.portfolioDividendAround(fmt.date(x.date))} · ~${fmt.money(x.amount, x.currency)}',
+                    key: const ValueKey('position-yield-on-cost'),
+                    label: l10n.labelYieldOnCost,
+                    value: fmt.percent(y),
                   ),
+              ],
+              // A várható következő osztalék a rögzítettek ritmusából, a pozíció pénznemében.
+              if (expectedDividends(services.portfolio.dividendsOf(pos.symbol), [
+                    pos.symbol,
+                  ], now: DateTime.now()).where((x) => x.currency == ccy).firstOrNull
+                  case final x?)
+                _Figure(
+                  key: const ValueKey('position-dividend-next'),
+                  label: l10n.portfolioDividendsExpected,
+                  value: '${l10n.portfolioDividendAround(fmt.date(x.date))} · ~${fmt.money(x.amount, x.currency)}',
+                ),
             ],
           ),
         );

@@ -300,7 +300,7 @@ class _PortfolioBody extends StatelessWidget {
                     ),
                   ),
                 ],
-                DividendsCard(currency: ccy, cost: s.cost),
+                DividendsCard(currency: ccy),
                 if (s.closed.isNotEmpty) ...[
                   Padding(
                     padding: const EdgeInsets.fromLTRB(4, 16, 4, 8),

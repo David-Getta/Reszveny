@@ -12,14 +12,10 @@ import 'portfolio_store.dart';
 /// osztalék a portfólió pénznemében (a mai árfolyamon átváltva), az utolsó
 /// tételek listája törléssel (visszavonható), és kézi felvétel.
 class DividendsCard extends StatelessWidget {
-  const DividendsCard({super.key, required this.currency, this.cost = 0});
+  const DividendsCard({super.key, required this.currency});
 
   /// A portfólió összesítésének pénzneme.
   final String currency;
-
-  /// A még birtokolt pozíciók vételi értéke a [currency] pénznemben (a
-  /// bekerülési osztalékhozamhoz); 0, ha nem ismert.
-  final double cost;
 
   static const maxListed = 8;
 
@@ -37,7 +33,9 @@ class DividendsCard extends StatelessWidget {
       listenable: services.portfolio,
       builder: (context, _) {
         final all = services.portfolio.dividends;
-        final currencies = {for (final d in all) d.currency}..remove(currency);
+        final positions = services.portfolio.positions;
+        // Az osztalékok és a nyitott pozíciók pénznemei (a bekerülési osztalékhozamhoz is).
+        final currencies = {for (final d in all) d.currency, for (final x in positions) x.currency}..remove(currency);
         return Card(
           key: const ValueKey('portfolio-dividends-received'),
           child: Padding(
@@ -83,7 +81,33 @@ class DividendsCard extends StatelessWidget {
                       });
                       final now = DateTime.now();
                       final year = now.year;
-                      final yearAgo = DateTime(now.year - 1, now.month, now.day);
+                      double? rate(String c) => c == currency ? 1.0 : rates?[c];
+                      // Bekerülési osztalékhozam: csak a még birtokolt (és átváltható) részvények
+                      // osztaléka az ő vételi értékükhöz mérve – ugyanaz a számítás, mint a pozíció kártyáján.
+                      var cost = 0.0;
+                      final held = <String>{};
+                      for (final x in positions) {
+                        final r = rate(x.currency);
+                        if (r == null) continue;
+                        cost += x.cost * r;
+                        held.add(x.symbol);
+                      }
+                      final yoc = yieldOnCost(
+                        [
+                          for (final d in all)
+                            if (held.contains(d.symbol))
+                              if (rate(d.currency) case final r?)
+                                DividendRecord(
+                                  id: d.id,
+                                  symbol: d.symbol,
+                                  amount: d.amount * r,
+                                  currency: currency,
+                                  date: d.date,
+                                ),
+                        ],
+                        cost,
+                        now: now,
+                      );
                       // Évenként is, ha több évből van tétel (az adóbevalláshoz).
                       final years = {for (final d in all) ?d.date?.year}.toList()..sort((a, b) => b.compareTo(a));
                       return Column(
@@ -103,16 +127,12 @@ class DividendsCard extends StatelessWidget {
                                 label: l10n.portfolioDividendsAllTime,
                                 value: fmt.money(sum(all), currency),
                               ),
-                              // Bekerülési osztalékhozam: az utolsó 12 hónap (átváltott) osztaléka a
-                              // nyitott pozíciók vételi értékéhez mérve.
-                              if (cost > 0)
-                                if (all.where((d) => d.date != null && !d.date!.isBefore(yearAgo)).toList()
-                                    case final recent when recent.isNotEmpty)
-                                  _Figure(
-                                    key: const ValueKey('dividends-yield-on-cost'),
-                                    label: l10n.labelYieldOnCost,
-                                    value: fmt.percent(sum(recent) / cost * 100),
-                                  ),
+                              if (yoc != null)
+                                _Figure(
+                                  key: const ValueKey('dividends-yield-on-cost'),
+                                  label: l10n.labelYieldOnCost,
+                                  value: fmt.percent(yoc),
+                                ),
                             ],
                           ),
                           if (years.length > 1) ...[

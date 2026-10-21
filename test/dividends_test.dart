@@ -151,6 +151,37 @@ void main() {
       expect(yieldOnCost(const [], 1000, now: DateTime(2026, 10, 21)), isNull);
     });
 
+    testWidgets('portfolio-level yield on cost: only the stocks still held, against their converted cost', (
+      tester,
+    ) async {
+      tester.view.physicalSize = const Size(1200, 2600);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.reset);
+      final s = services();
+      await s.portfolio.add(symbol: 'AAPL', quantity: 10, price: 200, currency: 'USD', date: DateTime(2025, 5, 2));
+      // KO: vétel és teljes eladás – az osztaléka nem számít a hozamba.
+      await s.portfolio.add(symbol: 'KO', quantity: 10, price: 60, currency: 'USD', date: DateTime(2025, 5, 2));
+      await s.portfolio.add(
+        symbol: 'KO',
+        quantity: 10,
+        price: 65,
+        currency: 'USD',
+        date: DateTime(2026, 9, 1),
+        sell: true,
+      );
+      final recent = DateTime.now().subtract(const Duration(days: 30));
+      await s.portfolio.addDividend(symbol: 'AAPL', amount: 20, currency: 'USD', date: recent);
+      await s.portfolio.addDividend(symbol: 'KO', amount: 400, currency: 'USD', date: recent);
+      await tester.pumpWidget(WhatStockApp(services: s));
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('Portfolio').first);
+      await tester.pumpAndSettle();
+      final yoc = find.byKey(const ValueKey('dividends-yield-on-cost'));
+      await tester.ensureVisible(yoc);
+      // 20 / 2 000 = 1,00 % (nem 420 / 2 000).
+      expect(find.descendant(of: yoc, matching: find.text('1.00%')), findsOneWidget);
+    });
+
     test('two currencies for one stock (two brokers) are separate series, never summed together', () {
       final out = expectedDividends(
         [
