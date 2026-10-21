@@ -4,10 +4,12 @@ import 'package:flutter/material.dart';
 
 import '../../app_services.dart';
 import '../../core/models/stock_candidate.dart';
+import '../../core/models/price_history.dart';
 import '../../core/models/stock_quote.dart';
 import '../../core/util/formatters.dart';
 import '../../core/util/us_market_hours.dart';
 import '../../l10n/generated/app_localizations.dart';
+import '../analysis/price_stats.dart';
 import '../fx/fx_service.dart';
 import '../stock_detail/widgets/move_why_button.dart';
 import '../../theme/app_theme.dart';
@@ -46,6 +48,9 @@ String shortDuration(AppLocalizations l10n, Duration d) {
 class _MarketsStripState extends State<MarketsStrip> {
   Future<List<StockQuote?>>? _quotes;
   Future<List<FxRate>>? _fx;
+
+  /// Az S&P 500 egyéves története a technikai egysoroshoz (RSI, 200 napos átlag).
+  Future<PriceHistory>? _tech;
   (String, String)? _pair;
 
   /// Percenként frissül a nyitvatartás visszaszámlálása.
@@ -78,6 +83,9 @@ class _MarketsStripState extends State<MarketsStrip> {
     if (pair != _pair) {
       _pair = pair;
       _fx = services.fx.recent(pair.$1, pair.$2);
+      // Future.sync: a hálózat nélküli (azonnali) hiba is a FutureBuilderhez kerül, nem a kirajzolásba.
+      _tech ??= Future.sync(() => services.marketData.history(MarketsStrip.markets.first.$1, years: 1))
+          .catchError((Object _) => PriceHistory(symbol: MarketsStrip.markets.first.$1, points: const []));
     }
   }
 
@@ -210,6 +218,35 @@ class _MarketsStripState extends State<MarketsStrip> {
                       ],
                     ),
                     key: const ValueKey('market-fx'),
+                    style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                  ),
+                );
+              },
+            ),
+            // Az S&P 500 technikai képe egy sorban: RSI és hol tart a 200 napos átlaghoz.
+            FutureBuilder<PriceHistory>(
+              future: _tech,
+              builder: (context, snap) {
+                final pts = snap.data?.points;
+                if (pts == null || pts.isEmpty) return const SizedBox.shrink();
+                final rsi = PriceStats.rsi(pts, 14);
+                final sma = PriceStats.sma(pts, 200);
+                final last = quotes.firstOrNull?.price ?? pts.last.close;
+                if (rsi == null && sma == null) return const SizedBox.shrink();
+                final parts = <String>[
+                  MarketsStrip.markets.first.$2,
+                  if (rsi != null)
+                    'RSI ${fmt.number(rsi, decimals: 0)} · ${rsi > 70 ? l10n.techOverbought : (rsi < 30 ? l10n.techOversold : l10n.techNeutral)}',
+                  if (sma != null && sma > 0)
+                    last >= sma
+                        ? l10n.techAbove(fmt.percent((last / sma - 1) * 100, decimals: 1))
+                        : l10n.techBelow(fmt.percent((1 - last / sma) * 100, decimals: 1)),
+                ];
+                return Padding(
+                  padding: const EdgeInsets.only(top: 4),
+                  child: Text(
+                    '${parts.join(' · ')} (${l10n.labelSma200})',
+                    key: const ValueKey('market-tech'),
                     style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
                   ),
                 );

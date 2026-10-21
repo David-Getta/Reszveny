@@ -72,6 +72,11 @@ void main() {
     );
     await tester.pumpWidget(WhatStockApp(services: s));
     await tester.pumpAndSettle();
+    // Az S&P 500 technikai egysorosa (RSI, 200 napos átlag) a devizasor alatt.
+    final tech = find.byKey(const ValueKey('market-tech'));
+    expect(tech, findsOneWidget);
+    expect(tester.widget<Text>(tech).data, contains('RSI'));
+    expect(tester.widget<Text>(tech).data, contains('200'));
     final line = find.byKey(const ValueKey('market-fx'));
     expect(line, findsOneWidget);
     final text = (tester.widget<Text>(line).textSpan as TextSpan).toPlainText();
