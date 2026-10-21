@@ -48,6 +48,15 @@ void main() {
     store.dispose();
   });
 
+  test('the shared snapshot (home card, tray) counts the cash too', () async {
+    final s = services();
+    await s.portfolio.add(symbol: 'AAPL', quantity: 10, price: 200, currency: 'USD');
+    await s.portfolio.setCash('USD', 1000);
+    final snap = await s.portfolioSnapshot();
+    expect(snap.value, closeTo(2314.5, 0.01));
+    expect(snap.totalValue, closeTo(3314.5, 0.01));
+  });
+
   testWidgets('set the cash balance from the portfolio menu: total and the cash figure follow', (tester) async {
     tester.view.physicalSize = const Size(1200, 2600);
     tester.view.devicePixelRatio = 1;

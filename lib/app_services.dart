@@ -453,6 +453,7 @@ class AppServices {
       marketData: marketData,
       fx: fx,
       currency: PortfolioSnapshot.totalCurrency(positions, displayCurrency(locale.effective(device))),
+      cash: portfolio.cash,
     );
   }
 

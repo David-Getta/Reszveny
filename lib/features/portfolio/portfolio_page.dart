@@ -1197,7 +1197,7 @@ class PortfolioSummaryCard extends StatelessWidget {
                           children: [
                             Text(l10n.portfolio, style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),
                             Text(
-                              s == null ? '…' : (s.unknown ? l10n.notAvailable : fmt.money(s.value, s.currency)),
+                              s == null ? '…' : (s.unknown ? l10n.notAvailable : fmt.money(s.totalValue, s.currency)),
                               style: theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w700),
                             ),
                             // Ár nélküli papírok (pl. nem USA-részvény): nevesítve, nem csak „n/a”.
