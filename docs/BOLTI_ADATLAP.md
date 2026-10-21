@@ -71,3 +71,12 @@ A portfólió, a kedvencek, a riasztások és a jegyzetek a készüléken vannak
 saját szerverünkre szinkronizálja őket (ez is „gyűjtött” adat: *egyéb felhasználói tartalom*,
 az app működéséhez, kérésre törölhető).
 
+## Microsoft Store csomag (MSIX)
+
+A Windows build után `dart run msix:create --store` készíti a Store-ba feltölthető MSIX-et a
+`pubspec.yaml` `msix_config` szakasza alapján (név, ikon, képességek: csak internet). A Partner
+Centerben kapott *Package/Identity/Name* és *Publisher* értéket kell beírni (`identity_name`,
+`publisher`) – tulajdonosi adat; helyi kipróbáláshoz a `dart run msix:create` saját tesztaláírást
+készít. A kiadási munkafolyamat egyelőre a sima zip-et adja; az MSIX-lépés a Partner Center-fiók után
+kerülhet be.
+
