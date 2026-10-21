@@ -88,9 +88,11 @@ class _AnalysisCardState extends State<AnalysisCard> {
     return '$depth · ${l10n.aiDepthCost(o.cost)} · ${l10n.aiWebSearchesShort(o.webSearches)}';
   }
 
-  Future<void> _generate({bool force = false}) {
+  Future<void> _generate({bool force = false}) async {
     final services = AppServices.of(context);
     final language = SupportedLocales.languageFor(Localizations.localeOf(context)).englishName;
+    // A saját pozíció más pénznemű osztalékaihoz friss árfolyam, mielőtt az adatok összeállnak.
+    await services.prefetchDividendRates(widget.details.symbol);
     return services.reports.generate(
       widget.details,
       outputLanguage: language,

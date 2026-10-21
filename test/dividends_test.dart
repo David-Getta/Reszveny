@@ -271,6 +271,9 @@ void main() {
       expect(dividendsLast12Months(ds, now: now, rate: (d) => d.currency == 'USD' ? 1.0 : 0.0027), closeTo(7.43, 1e-9));
       expect(dividendsLast12Months(ds, now: now, rate: (d) => d.currency == 'USD' ? 1.0 : null), 5);
       expect(dividendsLast12Months(ds, now: now, rate: (_) => null), isNull);
+      // Az ablak tételei (a dátum nélküli, a jövőbeli és az egy évnél régebbi kimarad).
+      expect(dividendsInLast12Months(ds, now: now).map((d) => d.amount), [5, 900]);
+      expect(dividendsInLast12Months([rec('KO', DateTime(2025, 10, 20), 1)], now: now), isEmpty);
     });
 
     test('year-over-year change of the dividend income', () {

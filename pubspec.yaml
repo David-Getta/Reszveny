@@ -1,7 +1,7 @@
 name: reszveny
 description: "WhatStock – photograph a stock and learn everything about it. iOS, iPadOS, macOS, Android, Windows."
 publish_to: 'none'
-version: 0.2.169+172
+version: 0.2.170+173
 
 environment:
   sdk: ^3.13.5
@@ -73,6 +73,6 @@ msix_config:
   identity_name: WhatStock.WhatStock
   logo_path: assets/branding/app_icon.png
   capabilities: internetClient
-  languages: af, am, ar, as, az, be, bg, bn, bs, ca, ckb, cs, da, de, el, en, fa, fi, fil, fr, gl, gu, ha, he, hi, hr, hu, hy, id, ig, it, ja, ka, kk, km, kn, ko, ky, lo, lt, lv, mk, ml, mn, mr, ms, nb, ne, nl, nso, or, pa, pl, pt, qu, ro, ru, rw, sd, si, sk, sl, sq, sr, sv, sw, ta, te, tg, th, ti, tk, tn, tr, tt, ug, uk, ur, uz, vi, wo, xh, yo, zh, zh-Hant, zu
+  languages: af, am, ar, as, az, be, bg, bn, bs, ca, ckb, cs, da, de, el, en, es, fa, fi, fil, fr, gl, gu, ha, he, hi, hr, hu, hy, id, ig, it, ja, ka, kk, km, kn, ko, ky, lo, lt, lv, mk, ml, mn, mr, ms, nb, ne, nl, nso, or, pa, pl, pt, qu, ro, ru, rw, sd, si, sk, sl, sq, sr, sv, sw, ta, te, tg, th, ti, tk, tn, tr, tt, ug, uk, ur, uz, vi, wo, xh, yo, zh, zh-Hant, zu
   store: true
 

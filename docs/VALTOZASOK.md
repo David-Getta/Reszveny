@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.168)
+# Változásjegyzék (0.2.130 → 0.2.169)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -37,7 +37,7 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 ## Technikai kép és jelzések
 
 - **„Technikai kép”** kártya a részvény oldalán (50/200 napos átlag, RSI, 30 napos volatilitás), új sorok az
-  összehasonlításban, trendkép a portfólió-grafikonon.
+  összehasonlításban (köztük a kifizetési arány), trendkép a portfólió-grafikonon.
 - **„Jelzések”** sáv a Kedvencek oldalon (RSI szélsőség, a 200 napos átlag átlépése), napi
   rendszerértesítés asztali gépen (kikapcsolható), a heti e-mailben is.
 - **Fogalomtár** a Beállításokban: 29 mutató közérthető magyarázata, kereshetően; ⓘ a kártyák számainál.
@@ -54,7 +54,7 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 
 ## Minőség
 
-- Hét kódátnézés és egy egyszerűsítési átnézés javításai, bővített tesztek; 120 nyelven minden új szöveg.
+- Nyolc kódátnézés és egy egyszerűsítési átnézés javításai, bővített tesztek; 120 nyelven minden új szöveg.
 
 ## Bolti „Újdonságok” (rövid)
 

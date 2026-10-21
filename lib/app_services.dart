@@ -52,7 +52,7 @@ import 'features/notes/notes_store.dart';
 import 'features/portfolio/portfolio_review.dart';
 import 'features/portfolio/holdings_reader.dart';
 import 'features/portfolio/portfolio_move_watcher.dart';
-import 'features/portfolio/dividend_forecast.dart' show dividendsLast12Months;
+import 'features/portfolio/dividend_forecast.dart' show dividendsInLast12Months, dividendsLast12Months;
 import 'features/portfolio/portfolio_store.dart';
 import 'features/portfolio/portfolio_valuation.dart';
 import 'features/sync/sync_service.dart';
@@ -560,12 +560,26 @@ class AppServices {
   }
 
   /// Az elmúlt 12 hónapban a részvényből kapott osztalék a megadott pénznemben;
-  /// a más pénznemű tételek a már ismert (gyorsítótárazott) árfolyammal; `null`, ha nincs.
+  /// a más pénznemű tételek a már ismert (gyorsítótárazott) árfolyammal – az
+  /// elemzés indítása előtt [prefetchDividendRates] frissíti; `null`, ha nincs.
   double? _dividendsReceived12m(String symbol, String currency) => dividendsLast12Months(
     portfolio.dividendsOf(symbol),
     now: DateTime.now(),
     rate: (d) => d.currency == currency ? 1.0 : fx.cachedRate(d.currency, currency)?.rate,
   );
+
+  /// A részvény 12 havi, a pozíció pénznemétől eltérő osztalékainak árfolyamát
+  /// lekéri (a gyorsítótárba), hogy az elemzés osztalékadata ne a korábbi
+  /// képernyőktől függjön; azonos pénznemnél nincs hálózat.
+  Future<void> prefetchDividendRates(String symbol) async {
+    final held = portfolio.positionOf(symbol);
+    if (held == null) return;
+    final foreign = dividendsInLast12Months(
+      portfolio.dividendsOf(symbol),
+      now: DateTime.now(),
+    ).map((d) => d.currency).where((c) => c != held.currency);
+    if (foreign.isNotEmpty) await fx.ratesFor(foreign, held.currency);
+  }
 
   /// A ténylegesen használt megjelenítési pénznem (beállítás vagy a rendszerből).
   String? displayCurrency(Locale locale) {

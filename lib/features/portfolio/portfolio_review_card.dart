@@ -12,7 +12,7 @@ import '../billing/paywall_page.dart';
 import '../stock_detail/widgets/ask_sheet.dart';
 import '../stock_detail/widgets/section_card.dart';
 import 'portfolio_review.dart';
-import 'dividend_forecast.dart' show dividendsLast12Months, expectedDividends;
+import 'dividend_forecast.dart' show dividendsInLast12Months, dividendsLast12Months, expectedDividends;
 import 'portfolio_valuation.dart';
 
 /// „AI-portfólióelemzés” kártya: indítás, folyamatjelző, az eredmény szekciói
@@ -81,10 +81,14 @@ class _PortfolioReviewCardState extends State<PortfolioReviewCard> {
 
   /// Az elmúlt 12 hónapban kapott osztalék a portfólió pénznemében (a mai
   /// árfolyamon); amelyikhez nincs árfolyam, kimarad. `null`, ha nincs tétel.
+  /// Árfolyamot csak az ablakba eső tételek pénznemeihez kér.
   Future<double?> _dividendsReceived(AppServices services) async {
     final currency = widget.snapshot.currency;
-    final rates = await services.fx.ratesFor(services.portfolio.dividends.map((d) => d.currency), currency);
-    return dividendsLast12Months(services.portfolio.dividends, now: DateTime.now(), rate: (d) => rates[d.currency]);
+    final now = DateTime.now();
+    final recent = dividendsInLast12Months(services.portfolio.dividends, now: now).toList();
+    if (recent.isEmpty) return null;
+    final rates = await services.fx.ratesFor(recent.map((d) => d.currency), currency);
+    return dividendsLast12Months(recent, now: now, rate: (d) => rates[d.currency]);
   }
 
   @override

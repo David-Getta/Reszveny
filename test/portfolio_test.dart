@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:http/http.dart' as http;
+import 'package:http/testing.dart';
+import 'package:reszveny/features/fx/fx_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:reszveny/app.dart';
 import 'package:reszveny/core/models/price_history.dart';
@@ -573,5 +576,27 @@ void main() {
     }
     expect(row, findsOneWidget);
     expect(tester.takeException(), isNull);
+  });
+
+  test('prefetchDividendRates: fetches only the foreign dividend currencies of the last 12 months', () async {
+    SharedPreferences.setMockInitialValues({});
+    final asked = <String>[];
+    final client = MockClient((req) async {
+      asked.add('${req.url.queryParameters['from']}>${req.url.queryParameters['to']}');
+      return http.Response('{"amount":1,"base":"HUF","date":"2026-10-09","rates":{"USD":0.0028}}', 200);
+    });
+    final s = services(fx: FxService(client: client));
+    await s.portfolio.add(symbol: 'AAPL', quantity: 10, price: 200, currency: 'USD');
+    final now = DateTime.now();
+    await s.portfolio.addDividend(symbol: 'AAPL', amount: 5, currency: 'USD', date: now);
+    await s.portfolio.addDividend(symbol: 'AAPL', amount: 1000, currency: 'HUF', date: now);
+    await s.portfolio.addDividend(symbol: 'AAPL', amount: 900, currency: 'EUR', date: DateTime(now.year - 2, 1, 1));
+    // Üres gyorsítótárral a forintos tétel kimarad az elemzés adatából.
+    expect(s.analysisOptions(symbol: 'AAPL').position!.dividendsReceived12m, 5);
+    await s.prefetchDividendRates('AAPL');
+    expect(asked, ['HUF>USD'], reason: 'csak az ablakba eső, más pénznemű tétel; a régi eurós nem');
+    expect(s.analysisOptions(symbol: 'AAPL').position!.dividendsReceived12m, closeTo(7.8, 1e-9));
+    await s.prefetchDividendRates('MSFT');
+    expect(asked, hasLength(1), reason: 'nem birtokolt részvénynél nincs hálózat');
   });
 }
