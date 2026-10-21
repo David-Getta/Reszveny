@@ -361,7 +361,7 @@ class _DetailsBody extends StatelessWidget {
       ),
       // „Mi lett volna, ha…” 1, 3 vagy 5 éve befektetem?
       if (d.history != null && err(DetailSection.chart) == null)
-        WhatIfCard(history: d.history!, currency: cur, fmt: fmt),
+        WhatIfCard(history: d.history!, currency: cur, fmt: fmt, dividendYield: m?.dividendYield),
 
       // Árfolyam
       SectionCard(

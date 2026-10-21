@@ -31,6 +31,7 @@ void main() {
             history: PriceHistory(symbol: 'X', points: pts),
             currency: 'USD',
             fmt: Fmt('en'),
+            dividendYield: 2,
           ),
         ),
       ),
@@ -50,6 +51,8 @@ void main() {
     expect(find.text('1,000.00 USD invested 3 years ago would be worth today'), findsOneWidget);
     expect(find.text('1,875.00 USD'), findsOneWidget);
     expect(find.text('+875.00 USD · +87.50%'), findsOneWidget);
+    // 2 % hozam a mai 1 875 USD értékre: évi 37,50 USD.
+    expect(find.text('Dividend: 37.50 USD a year'), findsOneWidget);
 
     await tester.tap(find.byKey(const ValueKey('what-if-1')));
     await tester.pump();

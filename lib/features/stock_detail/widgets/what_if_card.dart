@@ -12,11 +12,14 @@ import 'section_card.dart';
 /// (csak az árfolyam alapján, osztalék és költségek nélkül). Csak a meglévő
 /// árfolyam-történet időtávjai választhatók.
 class WhatIfCard extends StatefulWidget {
-  const WhatIfCard({super.key, required this.history, required this.currency, required this.fmt});
+  const WhatIfCard({super.key, required this.history, required this.currency, required this.fmt, this.dividendYield});
 
   final PriceHistory history;
   final String? currency;
   final Fmt fmt;
+
+  /// A mai osztalékhozam százalékban (ha van): a mai értékre vetítve mutatjuk az évi osztalékot.
+  final double? dividendYield;
 
   static const years = [1, 3, 5];
 
@@ -104,6 +107,13 @@ class _WhatIfCardState extends State<WhatIfCard> {
               '${fmt.percent(gain! / amount! * 100, withSign: true)}',
               style: theme.textTheme.bodyMedium?.copyWith(color: gainColor(p, gain)),
             ),
+            // A mai osztalékhozammal ennyi évi osztalékot fizetne a mai érték.
+            if (widget.dividendYield case final y? when y > 0)
+              Text(
+                l10n.positionDividend(fmt.money(value * y / 100, widget.currency)),
+                key: const ValueKey('what-if-dividend'),
+                style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+              ),
             const SizedBox(height: 8),
           ],
           Text(l10n.whatIfNote, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),

@@ -241,7 +241,7 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 5bi | Éves hozam a portfólió összesítőjén: pénzsúlyozott (XIRR) a vételek és eladások dátumával, ha az első vétel legalább egyéves; magyarázat koppintásra | ✅ kész |
 | 5bj | Közelgő események a naptárba: az események oldaláról egy .ics fájl (Google, Apple, Outlook), egész napos bejegyzésekkel; állandó azonosítóval, így újraimportáláskor frissül, nem duplázódik | ✅ kész |
 | 5bk | Portfólió-riasztás (asztali értesítés): ha a teljes portfólió egy nap alatt legalább ±2 / 3 / 5%-ot mozdul, naponta egyszer szól, a legnagyobb mozgóval; hétvégén és ugyanarra a mozgásra nem ismétel | ✅ kész |
-| 5bl | „Mi lett volna, ha befektetsz?” a részvény oldalán: egy választható összeg mai értéke 1, 3 vagy 5 év után (csak árfolyam, osztalék és költség nélkül) | ✅ kész |
+| 5bl | „Mi lett volna, ha befektetsz?” a részvény oldalán: egy választható összeg mai értéke 1, 3 vagy 5 év után (csak árfolyam, osztalék és költség nélkül); a mai osztalékhozammal az évi osztalék a mai értékre | ✅ kész |
 | 5bm | Kedvencek megosztása és beillesztése: a lista tickerei szövegként megoszthatók, és beillesztett tickerek (vessző, szóköz, új sor, $AAPL) egyszerre felvehetők a kedvencekhez és a kiválasztott listára | ✅ kész |
 | 5bn | Portfólió-pozíciók rendezése: legnagyobb elöl, legjobb összhozam, legjobb mai mozgás vagy ticker szerint (az ár nélküliek a végén) | ✅ kész |
 | 5bo | Saját vételek (▲) és eladások (▼) a részvény árfolyamgrafikonján, jelmagyarázattal, ha a látható időtávba esnek | ✅ kész |
