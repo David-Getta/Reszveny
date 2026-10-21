@@ -57,12 +57,31 @@ class AwaySummaryCard extends StatelessWidget {
                     ),
                   ],
                 ),
-                if (r.moves.isNotEmpty) ...[
+                if (r.moves.isNotEmpty || r.portfolioPercent != null) ...[
                   const SizedBox(height: 6),
                   Wrap(
                     spacing: 8,
                     runSpacing: 6,
                     children: [
+                      // Az egész portfólió változása elöl.
+                      if (r.portfolioPercent case final pp?)
+                        Chip(
+                          key: const ValueKey('away-portfolio'),
+                          visualDensity: VisualDensity.compact,
+                          avatar: Icon(Icons.pie_chart_outline_rounded, size: 16, color: p.muted),
+                          label: Text.rich(
+                            TextSpan(
+                              text: '${l10n.portfolio} ',
+                              style: const TextStyle(fontWeight: FontWeight.w600),
+                              children: [
+                                TextSpan(
+                                  text: fmt.percent(pp, withSign: true, decimals: 1),
+                                  style: TextStyle(color: gainColor(p, pp)),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
                       for (final m in r.moves)
                         ActionChip(
                           key: ValueKey('away-move-${m.symbol}'),

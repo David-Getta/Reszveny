@@ -122,7 +122,9 @@ class AppServices {
       portfolio: this.portfolio,
       alerts: this.alerts,
       events: events,
+      fx: this.fx,
     );
+    away.displayCurrency = () => displayCurrency(locale.effective(WidgetsBinding.instance.platformDispatcher.locale));
     brief =
         dailyBrief?.call(news) ??
         DailyBrief(config: config, marketData: marketData, news: news, client: backend?.authenticated);

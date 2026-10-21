@@ -26,6 +26,9 @@ void main() {
       AwaySummary.storeKey: _snapshot(since, {'AAPL': 220, 'MSFT': 512.30}, earnings: {'AAPL': yesterday}),
     });
     final s = services(preferences: AppPreferences(favorites: ['AAPL', 'MSFT']));
+    // 10 AAPL és 10 MSFT: 2200 + 5123 → 2314,5 + 5123: +1,56%.
+    await s.portfolio.add(symbol: 'AAPL', quantity: 10, price: 200, currency: 'USD');
+    await s.portfolio.add(symbol: 'MSFT', quantity: 10, price: 500, currency: 'USD');
     final alert = await s.alerts.add(symbol: 'AAPL', kind: AlertKind.above, value: 225, currency: 'USD');
     await s.alerts.markTriggered(alert.id, DateTime.now().subtract(const Duration(hours: 5)), 231.45);
     await tester.pumpWidget(WhatStockApp(services: s));
@@ -42,6 +45,9 @@ void main() {
     expect(find.byKey(const ValueKey('away-quiet')), findsNothing);
     final r = s.away.report!;
     expect(r.since, since);
+    expect(r.portfolioPercent, closeTo(1.56, 0.01));
+    expect(find.byKey(const ValueKey('away-portfolio')), findsOneWidget);
+    expect(find.textContaining('+1.6%'), findsOneWidget);
     expect(AwayReport.percent(r.moves.single), closeTo(5.2, 0.01));
 
     // Új pillanatkép a mai árakkal, mostani időponttal.
@@ -107,6 +113,7 @@ void main() {
       portfolio: s.portfolio,
       alerts: s.alerts,
       events: s.events,
+      fx: s.fx,
       clock: () => now,
     );
     await away.check();

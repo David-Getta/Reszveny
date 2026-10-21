@@ -7,7 +7,9 @@ import '../../core/app_preferences.dart';
 import '../alerts/price_alert.dart';
 import '../events/events_service.dart';
 import '../market_data/market_data_provider.dart';
+import '../fx/fx_service.dart';
 import '../portfolio/portfolio_store.dart';
+import '../portfolio/portfolio_valuation.dart' show PortfolioSnapshot;
 
 /// Egy figyelt részvény mozgása a legutóbbi látogatás óta.
 typedef AwayMove = ({String symbol, double from, double to});
@@ -15,9 +17,19 @@ typedef AwayMove = ({String symbol, double from, double to});
 /// „Amíg távol voltál”: mi történt a figyelt részvényekkel a legutóbbi
 /// látogatás óta (legalább [AwaySummary.minAway] szünet után).
 class AwayReport {
-  const AwayReport({required this.since, required this.moves, required this.alertsTriggered, required this.reported});
+  const AwayReport({
+    required this.since,
+    required this.moves,
+    required this.alertsTriggered,
+    required this.reported,
+    this.portfolioPercent,
+  });
 
   final DateTime since;
+
+  /// A portfólió értékének változása százalékban azóta (az ár nélküli vagy
+  /// árfolyam nélküli pozíciók nélkül); `null`, ha nincs mihez mérni.
+  final double? portfolioPercent;
 
   /// A legnagyobb mozgások (legalább [AwaySummary.minMovePercent]), a legnagyobb elöl.
   final List<AwayMove> moves;
@@ -28,7 +40,7 @@ class AwayReport {
   /// Mely cégek adtak gyorsjelentést azóta (a látogatáskor még előre jelzett napok alapján).
   final List<String> reported;
 
-  bool get isQuiet => moves.isEmpty && alertsTriggered == 0 && reported.isEmpty;
+  bool get isQuiet => moves.isEmpty && alertsTriggered == 0 && reported.isEmpty && (portfolioPercent?.abs() ?? 0) < 0.5;
 
   static double percent(AwayMove m) => (m.to - m.from) / m.from * 100;
 }
@@ -45,6 +57,7 @@ class AwaySummary extends ChangeNotifier {
     required this.portfolio,
     required this.alerts,
     required this.events,
+    required this.fx,
     DateTime Function()? clock,
   }) : _clock = clock ?? DateTime.now;
 
@@ -53,7 +66,12 @@ class AwaySummary extends ChangeNotifier {
   final PortfolioStore portfolio;
   final AlertStore alerts;
   final EventsService events;
+  final FxService fx;
   final DateTime Function() _clock;
+
+  /// A megjelenítési pénznem (az AppServices állítja be, a nyelv ismeretében);
+  /// nélküle a pozíciók közös pénzneme.
+  String? Function()? displayCurrency;
 
   static const minAway = Duration(hours: 20);
   static const maxSymbols = 20;
@@ -108,6 +126,7 @@ class AwaySummary extends ChangeNotifier {
         moves: moves.take(maxMoves).toList(),
         alertsTriggered: alerts.alerts.where((a) => a.triggeredAt?.isAfter(prev.at) ?? false).length,
         reported: reported,
+        portfolioPercent: await _portfolioPercent(prev.prices, prices),
       );
       notifyListeners();
     }
@@ -134,6 +153,30 @@ class AwaySummary extends ChangeNotifier {
     } catch (_) {
       // A tárolás hibája nem akadályozza a működést.
     }
+  }
+
+  /// A portfólió értékváltozása: pozíciónként darab × árkülönbség, az
+  /// összesítés pénznemére váltva; amelyikhez nincs ár vagy árfolyam, kimarad.
+  Future<double?> _portfolioPercent(Map<String, double> from, Map<String, double> to) async {
+    final positions = portfolio.positions;
+    final currency = PortfolioSnapshot.totalCurrency(positions, displayCurrency?.call());
+    var before = 0.0, after = 0.0;
+    for (final p in positions) {
+      final a = from[p.symbol], b = to[p.symbol];
+      if (a == null || b == null) continue;
+      double? rate = 1;
+      if (p.currency != currency) {
+        try {
+          rate = (await fx.rate(p.currency, currency))?.rate;
+        } catch (_) {
+          rate = null;
+        }
+      }
+      if (rate == null) continue;
+      before += p.quantity * a * rate;
+      after += p.quantity * b * rate;
+    }
+    return before > 0 ? (after - before) / before * 100 : null;
   }
 
   void dismiss() {
