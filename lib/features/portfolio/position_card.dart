@@ -5,6 +5,7 @@ import '../../core/models/stock_details.dart';
 import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
+import '../../widgets/metric_hint.dart';
 import '../stock_detail/widgets/section_card.dart';
 import 'annual_return.dart';
 import 'dividend_forecast.dart';
@@ -100,6 +101,8 @@ class PositionCard extends StatelessWidget {
                     key: const ValueKey('position-yield-on-cost'),
                     label: l10n.labelYieldOnCost,
                     value: fmt.percent(y),
+                    hint: l10n.glossYieldOnCost,
+                    hintTitle: l10n.glossTitle,
                   ),
               ],
               // A várható következő osztalék a rögzítettek ritmusából, a pozíció pénznemében.
@@ -121,12 +124,16 @@ class PositionCard extends StatelessWidget {
 }
 
 class _Figure extends StatelessWidget {
-  const _Figure({super.key, required this.label, required this.value, this.sub, this.color});
+  const _Figure({super.key, required this.label, required this.value, this.sub, this.color, this.hint, this.hintTitle});
 
   final String label;
   final String value;
   final String? sub;
   final Color? color;
+
+  /// A mutató magyarázata (ⓘ ikon, koppintásra párbeszéd) és a tooltip címe.
+  final String? hint;
+  final String? hintTitle;
 
   @override
   Widget build(BuildContext context) {
@@ -136,7 +143,15 @@ class _Figure extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,
       children: [
-        Text(label, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+        if (hint case final h?)
+          HintedLabel(
+            label: label,
+            hint: h,
+            hintTitle: hintTitle ?? '',
+            style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+          )
+        else
+          Text(label, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
         const SizedBox(height: 2),
         Text(
           value,

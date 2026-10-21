@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../widgets/metric_hint.dart';
+
 /// Címke–érték párok táblázata. A `null` értékű sorok kimaradnak, ha
 /// [hideMissing] igaz, különben a [missing] szöveg jelenik meg.
 class KvTable extends StatelessWidget {
@@ -20,20 +22,6 @@ class KvTable extends StatelessWidget {
   final Map<String, String> hints;
   final String hintTitle;
 
-  void _explain(BuildContext context, String label, String text) => showDialog<void>(
-    context: context,
-    builder: (context) => AlertDialog(
-      title: Text(label),
-      content: Text(text),
-      actions: [
-        TextButton(
-          onPressed: () => Navigator.of(context).pop(),
-          child: Text(MaterialLocalizations.of(context).okButtonLabel),
-        ),
-      ],
-    ),
-  );
-
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
@@ -49,31 +37,13 @@ class KvTable extends StatelessWidget {
             ),
             children: [
               if (hints[label] case final hint?)
-                InkWell(
-                  key: ValueKey('hint-$label'),
-                  borderRadius: BorderRadius.circular(6),
-                  onTap: () => _explain(context, label, hint),
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 8),
-                    child: Text.rich(
-                      TextSpan(
-                        text: '$label ',
-                        children: [
-                          WidgetSpan(
-                            alignment: PlaceholderAlignment.middle,
-                            child: Tooltip(
-                              message: hintTitle,
-                              child: Icon(
-                                Icons.info_outline_rounded,
-                                size: 14,
-                                color: theme.colorScheme.onSurfaceVariant.withValues(alpha: 0.7),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                      style: theme.textTheme.bodyMedium?.copyWith(color: theme.colorScheme.onSurfaceVariant),
-                    ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 8),
+                  child: HintedLabel(
+                    label: label,
+                    hint: hint,
+                    hintTitle: hintTitle,
+                    style: theme.textTheme.bodyMedium?.copyWith(color: theme.colorScheme.onSurfaceVariant),
                   ),
                 )
               else

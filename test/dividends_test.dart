@@ -180,6 +180,10 @@ void main() {
       await tester.ensureVisible(yoc);
       // 20 / 2 000 = 1,00 % (nem 420 / 2 000).
       expect(find.descendant(of: yoc, matching: find.text('1.00%')), findsOneWidget);
+      // ⓘ: a fogalomtár magyarázata párbeszédben.
+      await tester.tap(find.byKey(const ValueKey('hint-Yield on cost')));
+      await tester.pumpAndSettle();
+      expect(find.textContaining('Dividends received in the last 12 months divided by'), findsOneWidget);
     });
 
     test('two currencies for one stock (two brokers) are separate series, never summed together', () {
@@ -330,6 +334,7 @@ void main() {
     // Bekerülési osztalékhozam: az utolsó 12 hónap osztaléka a 2 000 USD vételi értékhez mérve.
     final yoc = find.byKey(const ValueKey('position-yield-on-cost'));
     expect(find.descendant(of: yoc, matching: find.textContaining(RegExp(r'^\d+\.\d+%$'))), findsOneWidget);
+    expect(find.descendant(of: yoc, matching: find.byKey(const ValueKey('hint-Yield on cost'))), findsOneWidget);
     // „around <dátum> · ~<összeg> USD”
     expect(
       find.descendant(of: next, matching: find.textContaining(RegExp(r'^around .* · ~[\d.,]+ USD$'))),

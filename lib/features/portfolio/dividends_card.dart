@@ -4,6 +4,7 @@ import '../../app_services.dart';
 import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
+import '../../widgets/metric_hint.dart';
 import 'add_lot_dialog.dart' show parseDecimal;
 import 'dividend_forecast.dart';
 import 'portfolio_store.dart';
@@ -132,6 +133,8 @@ class DividendsCard extends StatelessWidget {
                                   key: const ValueKey('dividends-yield-on-cost'),
                                   label: l10n.labelYieldOnCost,
                                   value: fmt.percent(yoc),
+                                  hint: l10n.glossYieldOnCost,
+                                  hintTitle: l10n.glossTitle,
                                 ),
                             ],
                           ),
@@ -258,10 +261,14 @@ class DividendsCard extends StatelessWidget {
 }
 
 class _Figure extends StatelessWidget {
-  const _Figure({super.key, required this.label, required this.value});
+  const _Figure({super.key, required this.label, required this.value, this.hint, this.hintTitle});
 
   final String label;
   final String value;
+
+  /// A mutató magyarázata (ⓘ ikon, koppintásra párbeszéd) és a tooltip címe.
+  final String? hint;
+  final String? hintTitle;
 
   @override
   Widget build(BuildContext context) {
@@ -271,7 +278,15 @@ class _Figure extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,
       children: [
-        Text(label, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+        if (hint case final h?)
+          HintedLabel(
+            label: label,
+            hint: h,
+            hintTitle: hintTitle ?? '',
+            style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+          )
+        else
+          Text(label, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
         const SizedBox(height: 2),
         Text(value, style: theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w700)),
       ],
