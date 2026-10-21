@@ -2729,4 +2729,25 @@ class AppLocalizationsHil extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above sa $count ka posisyon labaw sa ila 200 ka adlaw nga average';
   }
+
+  @override
+  String get watchSignalsTitle => 'Mga signal';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · oversold';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · overbought';
+  }
+
+  @override
+  String get signalCrossedAbove =>
+      'nagsaka sa ibabaw sang 200 ka adlaw nga average';
+
+  @override
+  String get signalCrossedBelow =>
+      'nagpanaog sa idalom sang 200 ka adlaw nga average';
 }

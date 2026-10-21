@@ -2704,4 +2704,23 @@ class AppLocalizationsPs extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return 'له $count پوزیشنونو څخه $above د خپل 200-ورځني اوسط له پاسه';
   }
+
+  @override
+  String get watchSignalsTitle => 'اشارې';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · ډېر پلورل شوی';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · ډېر پېرودل شوی';
+  }
+
+  @override
+  String get signalCrossedAbove => 'له ۲۰۰ ورځني اوسط پورته تېر شو';
+
+  @override
+  String get signalCrossedBelow => 'له ۲۰۰ ورځني اوسط ښکته تېر شو';
 }

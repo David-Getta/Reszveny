@@ -2708,4 +2708,23 @@ class AppLocalizationsIg extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above n\'ime $count òkè dị elu karịa nkezi ụbọchị 200 ha';
   }
+
+  @override
+  String get watchSignalsTitle => 'Ihe ngosi';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · erela ya karịa';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · azụrụ ya karịa';
+  }
+
+  @override
+  String get signalCrossedAbove => 'gafere n\'elu nkezi ụbọchị 200 ya';
+
+  @override
+  String get signalCrossedBelow => 'gafere n\'okpuru nkezi ụbọchị 200 ya';
 }

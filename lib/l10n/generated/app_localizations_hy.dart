@@ -2722,4 +2722,23 @@ class AppLocalizationsHy extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$count դիրքից $above դիրք՝ իրենց 200-օրյա միջինից բարձր';
   }
+
+  @override
+  String get watchSignalsTitle => 'Ազդանշաններ';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · գերվաճառված';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · գերգնված';
+  }
+
+  @override
+  String get signalCrossedAbove => 'հատել է 200-օրյա միջինը վերև';
+
+  @override
+  String get signalCrossedBelow => 'հատել է 200-օրյա միջինը ներքև';
 }

@@ -2711,4 +2711,23 @@ class AppLocalizationsOr extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$count ପୋଜିସନ୍ ମଧ୍ୟରୁ $aboveଟି ନିଜ 200-ଦିନର ହାରାହାରିରୁ ଉପରେ';
   }
+
+  @override
+  String get watchSignalsTitle => 'ସଙ୍କେତ';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · ଓଭରସୋଲ୍ଡ';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · ଓଭରବଟ୍';
+  }
+
+  @override
+  String get signalCrossedAbove => '୨୦୦ ଦିନର ହାରାହାରି ଉପରକୁ ଗଲା';
+
+  @override
+  String get signalCrossedBelow => '୨୦୦ ଦିନର ହାରାହାରି ତଳକୁ ଗଲା';
 }

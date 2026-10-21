@@ -719,5 +719,10 @@
   "glossRsi": "Indeksu doole bu méngale (RSI): dafay méngale ndam yu mujj ak pert yu mujj ci natt 0–100. Lu ëpp 70, dañuy faral di wax ne jënd nañu ko lu ëpp (yéeg na gaaw), lu néew 30 ne jaay nañu ko lu ëpp – waaye yoon bu am doole mën na fa yàgg.",
   "glossVolatility": "Ni njëg di soppeeku bés bu nekk, natt ci at: 20% mooy at bu baax dafay dox ci lu tollu ci ±20%. Soppeeku bu gën a réy mooy dox yu gën a réy ci ñaari wet yi.",
   "techNote": "Waññ nañu ko ci njëgu tëj yu bés bu nekk. Màndargay teknik dañuy wax li weesu, waaye du li ñëw.",
-  "portfolioAbove200": "{above} ci {count} li nga am nekk na ci kaw seen moyenne bu 200 fan"
+  "portfolioAbove200": "{above} ci {count} li nga am nekk na ci kaw seen moyenne bu 200 fan",
+  "watchSignalsTitle": "Màndarga",
+  "signalRsiOversold": "RSI {value} · jaay nañu ko lu ëpp",
+  "signalRsiOverbought": "RSI {value} · jënd nañu ko lu ëpp",
+  "signalCrossedAbove": "jàll na ci kaw digg-diggu 200 fan",
+  "signalCrossedBelow": "jàll na ci suuf digg-diggu 200 fan"
 }

@@ -2717,4 +2717,23 @@ class AppLocalizationsNl extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above van $count posities boven hun 200-daags gemiddelde';
   }
+
+  @override
+  String get watchSignalsTitle => 'Signalen';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · oversold';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · overbought';
+  }
+
+  @override
+  String get signalCrossedAbove => 'boven het 200-daags gemiddelde gekruist';
+
+  @override
+  String get signalCrossedBelow => 'onder het 200-daags gemiddelde gekruist';
 }

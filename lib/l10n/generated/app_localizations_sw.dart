@@ -2714,4 +2714,23 @@ class AppLocalizationsSw extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return 'Nafasi $above kati ya $count ziko juu ya wastani wao wa siku 200';
   }
+
+  @override
+  String get watchSignalsTitle => 'Ishara';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · imeuzwa kupita kiasi';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · imenunuliwa kupita kiasi';
+  }
+
+  @override
+  String get signalCrossedAbove => 'imevuka juu ya wastani wa siku 200';
+
+  @override
+  String get signalCrossedBelow => 'imeshuka chini ya wastani wa siku 200';
 }

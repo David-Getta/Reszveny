@@ -2630,4 +2630,23 @@ class AppLocalizationsJa extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$count銘柄中$above銘柄が200日移動平均を上回っています';
   }
+
+  @override
+  String get watchSignalsTitle => 'シグナル';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · 売られ過ぎ';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · 買われ過ぎ';
+  }
+
+  @override
+  String get signalCrossedAbove => '200日移動平均を上抜け';
+
+  @override
+  String get signalCrossedBelow => '200日移動平均を下抜け';
 }

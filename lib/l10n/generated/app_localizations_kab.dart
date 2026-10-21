@@ -2711,4 +2711,23 @@ class AppLocalizationsKab extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above seg $count yiksyunen nnig talemmast-nsen n 200 wussan';
   }
+
+  @override
+  String get watchSignalsTitle => 'Iznan';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · yettwazenz aṭas';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · yettwaɣ aṭas';
+  }
+
+  @override
+  String get signalCrossedAbove => 'yezger nnig talemmast n 200 wussan';
+
+  @override
+  String get signalCrossedBelow => 'yezger ddaw talemmast n 200 wussan';
 }

@@ -2719,4 +2719,23 @@ class AppLocalizationsUz extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$count pozitsiyadan $above tasi o‘z 200 kunlik o‘rtachasidan yuqori';
   }
+
+  @override
+  String get watchSignalsTitle => 'Signallar';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · haddan ortiq sotilgan';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · haddan ortiq sotib olingan';
+  }
+
+  @override
+  String get signalCrossedAbove => '200 kunlik o\'rtachadan yuqoriga chiqdi';
+
+  @override
+  String get signalCrossedBelow => '200 kunlik o\'rtachadan pastga tushdi';
 }

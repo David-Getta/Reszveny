@@ -2718,4 +2718,23 @@ class AppLocalizationsHa extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above daga cikin $count hannayen jari sun wuce matsakaicin kwana 200 nasu';
   }
+
+  @override
+  String get watchSignalsTitle => 'Alamomi';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · an sayar fiye da kima';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · an saya fiye da kima';
+  }
+
+  @override
+  String get signalCrossedAbove => 'ya haura sama da matsakaicin kwana 200';
+
+  @override
+  String get signalCrossedBelow => 'ya sauka ƙasa da matsakaicin kwana 200';
 }

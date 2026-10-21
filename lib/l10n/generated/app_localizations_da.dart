@@ -2711,4 +2711,23 @@ class AppLocalizationsDa extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above af $count beholdninger over deres 200-dages gennemsnit';
   }
+
+  @override
+  String get watchSignalsTitle => 'Signaler';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · oversolgt';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · overkøbt';
+  }
+
+  @override
+  String get signalCrossedAbove => 'krydsede over sit 200-dages gennemsnit';
+
+  @override
+  String get signalCrossedBelow => 'krydsede under sit 200-dages gennemsnit';
 }

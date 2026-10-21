@@ -719,5 +719,10 @@
   "glossRsi": "Ŋusẽ sɔsɔ ƒe dzesi (RSI): etsɔa nyitsɔ viɖewo sɔ kple nyitsɔ nuxɔxɔwo le 0–100 dzidzenu dzi. Ne ewu 70 la, zi geɖe wogblɔna be woƒle akpaa la wu (edzi kabakaba), ne ele 30 te la, wodzrae wu – gake mɔ sesẽ ate ŋu anɔ afi ma ɣeyiɣi didi.",
   "glossVolatility": "Ale si asixɔxɔ trɔna gbe sia gbe, wobui le ƒe ɖeka me: 20% fia be le ƒe ɖeka me la, asixɔxɔ trɔna le ±20% ƒe nu me. Tɔtrɔ gã fia be tɔtrɔ gãwo dzɔna le akpa eveawo.",
   "techNote": "Wobui tso gbe sia gbe nutuasixɔxɔwo me. Aɖaŋudɔ dzesiwo ƒoa nu tso nu si va yi ŋu, menye etsɔme ŋu o.",
-  "portfolioAbove200": "Akpa {above} le {count} dome le woƒe ŋkeke 200 ƒe titina dzi"
+  "portfolioAbove200": "Akpa {above} le {count} dome le woƒe ŋkeke 200 ƒe titina dzi",
+  "watchSignalsTitle": "Dzesiwo",
+  "signalRsiOversold": "RSI {value} · wodzrae wu",
+  "signalRsiOverbought": "RSI {value} · woƒlee wu",
+  "signalCrossedAbove": "eyi ŋkeke 200 ƒe titina la tame",
+  "signalCrossedBelow": "eɖiɖi ŋkeke 200 ƒe titina la te"
 }

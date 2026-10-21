@@ -719,5 +719,10 @@
   "glossRsi": "Àtọ́ka agbára ìfiwéra (RSI): ó fi èrè àìpẹ́ wé àdánù àìpẹ́ lórí ìwọ̀n 0–100. Lókè 70 a sábà máa ń pe ṣẹ́ẽ̀ náà ní èyí tí a ti rà jù (ó gòkè kíákíá), nísàlẹ̀ 30 èyí tí a ti tà jù – ṣùgbọ́n ìtẹ̀sí tó lágbára lè dúró níbẹ̀ fún ìgbà pípẹ́.",
   "glossVolatility": "Bí owó ṣe ń yí padà láti ọjọ́ dé ọjọ́, tí a wọ̀n fún ọdún kan: 20% túmọ̀ sí pé ọdún déédéé ń lọ láàrín ±20% ní ìfojúdiwọ̀n. Ìyípadà tó ga jù túmọ̀ sí ìlọ tó tóbi jù ní ìhà méjèèjì.",
   "techNote": "A ṣírò rẹ̀ láti owó ìparí ojoojúmọ́. Àwọn àmì ìmọ̀-ẹ̀rọ ń ṣàpèjúwe ohun tó ti kọjá, kì í ṣe ọjọ́ iwájú.",
-  "portfolioAbove200": "{above} nínú {count} ipò wà lókè ìpíndọ́gba ọjọ́ 200 wọn"
+  "portfolioAbove200": "{above} nínú {count} ipò wà lókè ìpíndọ́gba ọjọ́ 200 wọn",
+  "watchSignalsTitle": "Àwọn àmì",
+  "signalRsiOversold": "RSI {value} · ti tà jù",
+  "signalRsiOverbought": "RSI {value} · ti rà jù",
+  "signalCrossedAbove": "kọjá sí òkè ìpíndọ́gba ọjọ́ 200",
+  "signalCrossedBelow": "kọjá sí ìsàlẹ̀ ìpíndọ́gba ọjọ́ 200"
 }

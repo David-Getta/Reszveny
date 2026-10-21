@@ -719,5 +719,10 @@
   "glossRsi": "Kallpa tupachiy índice (RSI): qayna ganakuykunata qayna chinkachiykunawan 0–100 tupuypi tupachin. 70 hawanpi kaptin acción nishu rantisqa ninku (utqaylla wicharirqan), 30 uranpi kaptin nishu vendesqa – ichaqa kallpasapa puriy chaypi unay pacha qipakuyta atin.",
   "glossVolatility": "Chanin sapa p'unchaw mayk'ata tikrakun, huk watapi tupusqa: 20% ninmi huk watapi yaqa ±20% ukhupi puriyta. Aswan tikrakuy ninmi iskaynin ñanpi aswan hatun puriykunata.",
   "techNote": "Sapa p'unchaw wichq'ay chaninkunamanta yupasqa. Tecnico unanchakuna ñawpaqta willanku, manam hamuq pachata.",
-  "portfolioAbove200": "{count} posicionmanta {above} paykunapa 200 punchaw chawpinmanta hawanpi"
+  "portfolioAbove200": "{count} posicionmanta {above} paykunapa 200 punchaw chawpinmanta hawanpi",
+  "watchSignalsTitle": "Willakuykuna",
+  "signalRsiOversold": "RSI {value} · nishu vendesqa",
+  "signalRsiOverbought": "RSI {value} · nishu rantisqa",
+  "signalCrossedAbove": "200 p'unchaw chawpi hawanman wicharirqan",
+  "signalCrossedBelow": "200 p'unchaw chawpi uranman urayrirqan"
 }

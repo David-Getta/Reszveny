@@ -2730,4 +2730,25 @@ class AppLocalizationsTs extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return 'Swiyimo swa $above eka $count swi le henhla ka avhareji ya swona ya masiku ya 200';
   }
+
+  @override
+  String get watchSignalsTitle => 'Swikombiso';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · yi xavisiwe ngopfu';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · yi xaviwe ngopfu';
+  }
+
+  @override
+  String get signalCrossedAbove =>
+      'yi tsemakanyile ehenhla ka avhareji ya masiku ya 200';
+
+  @override
+  String get signalCrossedBelow =>
+      'yi tsemakanyile ehansi ka avhareji ya masiku ya 200';
 }

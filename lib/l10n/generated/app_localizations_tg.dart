@@ -2715,4 +2715,23 @@ class AppLocalizationsTg extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above аз $count мавқеъ болотар аз миёнаи 200-рӯзаи худ';
   }
+
+  @override
+  String get watchSignalsTitle => 'Сигналҳо';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · аз ҳад зиёд фурӯхта шуда';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · аз ҳад зиёд харида шуда';
+  }
+
+  @override
+  String get signalCrossedAbove => 'аз миёнаи 200-рӯза боло гузашт';
+
+  @override
+  String get signalCrossedBelow => 'аз миёнаи 200-рӯза поён гузашт';
 }

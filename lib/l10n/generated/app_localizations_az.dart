@@ -2716,4 +2716,23 @@ class AppLocalizationsAz extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$count mövqedən $above mövqe 200 günlük ortasının üzərindədir';
   }
+
+  @override
+  String get watchSignalsTitle => 'Siqnallar';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · həddindən artıq satılmış';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · həddindən artıq alınmış';
+  }
+
+  @override
+  String get signalCrossedAbove => '200 günlük ortanı yuxarı kəsdi';
+
+  @override
+  String get signalCrossedBelow => '200 günlük ortanı aşağı kəsdi';
 }

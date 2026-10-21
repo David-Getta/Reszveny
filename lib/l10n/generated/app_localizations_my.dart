@@ -2704,4 +2704,23 @@ class AppLocalizationsMy extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return 'ပိုင်ဆိုင်မှု $count ခုအနက် $above ခု ၎င်းတို့၏ ရက် 200 ပျမ်းမျှအထက်';
   }
+
+  @override
+  String get watchSignalsTitle => 'အချက်ပြများ';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · အရောင်းလွန်';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · အဝယ်လွန်';
+  }
+
+  @override
+  String get signalCrossedAbove => '၂၀၀ ရက် ပျမ်းမျှအထက်သို့ ကျော်တက်';
+
+  @override
+  String get signalCrossedBelow => '၂၀၀ ရက် ပျမ်းမျှအောက်သို့ ကျော်ဆင်း';
 }

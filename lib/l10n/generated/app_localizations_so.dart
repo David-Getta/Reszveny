@@ -2722,4 +2722,23 @@ class AppLocalizationsSo extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$count saami $above ka mid ah ayaa ka sarreeya celceliskooda 200 maalmood';
   }
+
+  @override
+  String get watchSignalsTitle => 'Calaamado';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · si xad-dhaaf loo iibiyay';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · si xad-dhaaf loo iibsaday';
+  }
+
+  @override
+  String get signalCrossedAbove => 'ka sare martay celceliska 200 maalmood';
+
+  @override
+  String get signalCrossedBelow => 'ka hoos martay celceliska 200 maalmood';
 }

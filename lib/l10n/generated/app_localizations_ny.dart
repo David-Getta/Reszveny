@@ -2720,4 +2720,23 @@ class AppLocalizationsNy extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return 'Malo $above pa $count ali pamwamba pa avareji yawo ya masiku 200';
   }
+
+  @override
+  String get watchSignalsTitle => 'Zizindikiro';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · yagulitsidwa kwambiri';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · yagulidwa kwambiri';
+  }
+
+  @override
+  String get signalCrossedAbove => 'yadutsa pamwamba pa avareji ya masiku 200';
+
+  @override
+  String get signalCrossedBelow => 'yadutsa pansi pa avareji ya masiku 200';
 }

@@ -719,5 +719,10 @@
   "glossRsi": "Ekipimo ky'amaanyi agageraageranyizibwa (RSI): kigeraageranya amagoba ag'ennaku zino n'okufiirwa okw'ennaku zino ku kipimo kya 0–100. Waggulu wa 70 sitoka etera okuyitibwa egulidwa ennyo (yalinnya mangu), wansi wa 30 etundiddwa ennyo – naye omutendera ogw'amaanyi gusobola okusigala awo ekiseera kiwanvu.",
   "glossVolatility": "Omuwendo bwe gukyukakyuka buli lunaku, nga gubaliddwa mu mwaka gumu: 20% kitegeeza nti mu mwaka ogwa bulijjo omuwendo gutambulira mu ±20%. Enkyukakyuka ennyingi kitegeeza entambula ennene ku njuyi zombi.",
   "techNote": "Kibaliddwa okuva mu miwendo egy'okuggalawo egya buli lunaku. Obubonero obw'obukugu bunnyonnyola ebyayita, so si eby'omu maaso.",
-  "portfolioAbove200": "Emigabo {above} ku {count} giri waggulu wa wakati gwayo ogw'ennaku 200"
+  "portfolioAbove200": "Emigabo {above} ku {count} giri waggulu wa wakati gwayo ogw'ennaku 200",
+  "watchSignalsTitle": "Obubonero",
+  "signalRsiOversold": "RSI {value} · gutundiddwa ennyo",
+  "signalRsiOverbought": "RSI {value} · gugulidwa ennyo",
+  "signalCrossedAbove": "gulinnye waggulu wa wakati w'ennaku 200",
+  "signalCrossedBelow": "gukkide wansi wa wakati w'ennaku 200"
 }

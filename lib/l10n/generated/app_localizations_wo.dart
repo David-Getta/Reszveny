@@ -2708,4 +2708,23 @@ class AppLocalizationsWo extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above ci $count li nga am nekk na ci kaw seen moyenne bu 200 fan';
   }
+
+  @override
+  String get watchSignalsTitle => 'Màndarga';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · jaay nañu ko lu ëpp';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · jënd nañu ko lu ëpp';
+  }
+
+  @override
+  String get signalCrossedAbove => 'jàll na ci kaw digg-diggu 200 fan';
+
+  @override
+  String get signalCrossedBelow => 'jàll na ci suuf digg-diggu 200 fan';
 }

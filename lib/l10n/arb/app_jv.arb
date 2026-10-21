@@ -719,5 +719,10 @@
   "glossRsi": "Relative strength index: mbandhingake bathi anyar karo rugi anyar ing skala 0–100. Ing ndhuwur 70 saham asring diarani jenuh tuku (munggah cepet), ing ngisor 30 jenuh adol – nanging tren sing kuwat bisa tetep ana ing kono suwe.",
   "glossVolatility": "Sepira regane obah saben dina, diitung setaun: 20% tegese ing taun biasa rega obah ing kisaran kira-kira ±20%. Volatilitas luwih dhuwur tegese obahe luwih gedhe menyang loro arah.",
   "techNote": "Diitung saka rega panutupan saben dina. Sinyal teknikal nggambarake masa lalu, dudu masa depan.",
-  "portfolioAbove200": "{above} saka {count} posisi ing ndhuwur rata-rata 200 dinane"
+  "portfolioAbove200": "{above} saka {count} posisi ing ndhuwur rata-rata 200 dinane",
+  "watchSignalsTitle": "Sinyal",
+  "signalRsiOversold": "RSI {value} · jenuh adol",
+  "signalRsiOverbought": "RSI {value} · jenuh tuku",
+  "signalCrossedAbove": "munggah ngliwati rata-rata 200 dina",
+  "signalCrossedBelow": "mudhun ngliwati rata-rata 200 dina"
 }

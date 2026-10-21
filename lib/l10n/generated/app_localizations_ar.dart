@@ -2778,4 +2778,23 @@ class AppLocalizationsAr extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above من أصل $count مراكز فوق متوسط 200 يوم الخاص بها';
   }
+
+  @override
+  String get watchSignalsTitle => 'إشارات';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · تشبّع بيعي';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · تشبّع شرائي';
+  }
+
+  @override
+  String get signalCrossedAbove => 'اخترق متوسط 200 يوم صعودًا';
+
+  @override
+  String get signalCrossedBelow => 'اخترق متوسط 200 يوم هبوطًا';
 }

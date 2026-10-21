@@ -2724,4 +2724,25 @@ class AppLocalizationsXh extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return 'Izabelo ezi-$above kwezi-$count zingaphezulu komndilili wazo weentsuku ezingama-200';
   }
+
+  @override
+  String get watchSignalsTitle => 'Imiqondiso';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · ithengisiwe ngokugqithisileyo';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · ithengwe ngokugqithisileyo';
+  }
+
+  @override
+  String get signalCrossedAbove =>
+      'inqumle ngaphezulu komndilili weentsuku ezingama-200';
+
+  @override
+  String get signalCrossedBelow =>
+      'inqumle ngaphantsi komndilili weentsuku ezingama-200';
 }

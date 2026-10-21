@@ -2683,4 +2683,23 @@ class AppLocalizationsTh extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above จาก $count สถานะอยู่เหนือเส้นค่าเฉลี่ย 200 วันของตัวเอง';
   }
+
+  @override
+  String get watchSignalsTitle => 'สัญญาณ';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · ขายมากเกินไป';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · ซื้อมากเกินไป';
+  }
+
+  @override
+  String get signalCrossedAbove => 'ทะลุขึ้นเหนือค่าเฉลี่ย 200 วัน';
+
+  @override
+  String get signalCrossedBelow => 'หลุดลงใต้ค่าเฉลี่ย 200 วัน';
 }

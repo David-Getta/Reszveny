@@ -2779,4 +2779,23 @@ class AppLocalizationsCs extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above z $count pozic nad svým 200denním průměrem';
   }
+
+  @override
+  String get watchSignalsTitle => 'Signály';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · přeprodáno';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · překoupeno';
+  }
+
+  @override
+  String get signalCrossedAbove => 'prorazila nad 200denní průměr';
+
+  @override
+  String get signalCrossedBelow => 'prorazila pod 200denní průměr';
 }

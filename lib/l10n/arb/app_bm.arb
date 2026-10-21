@@ -719,5 +719,10 @@
   "glossRsi": "Barika sumanikɛlan (RSI): a bɛ kɔsa tɔnɔw ni kɔsa bɔnɛw suma 0–100 jate la. Ni a tɛmɛna 70 kan, a bɛ fɔ tuma caman ko a sanna ka tɛmɛ (a yɛlɛnna joona); ni a bɛ 30 duguma, a feerela ka tɛmɛ – nka sira barikama bɛ se ka to yen waati jan.",
   "glossVolatility": "Sɔngɔ bɛ yɛlɛma cogo min na don o don, jatelen san kelen kɔnɔ: 20% kɔrɔ ye ko san kelen kɔnɔ sɔngɔ bɛ yaala ±20% ɲɔgɔn kɔnɔ. Yɛlɛmali caman kɔrɔ ye yaala belebelew fan fila bɛɛ fɛ.",
   "techNote": "A jatelen don o don datugu sɔngɔw la. Fɛɛrɛko taamasiyɛnw bɛ tɛmɛnen kofɔ, sini tɛ.",
-  "portfolioAbove200": "Aksiyɔn {above} ka bɔ {count} la bɛ u tile 200 cɛmancɛ sanfɛ"
+  "portfolioAbove200": "Aksiyɔn {above} ka bɔ {count} la bɛ u tile 200 cɛmancɛ sanfɛ",
+  "watchSignalsTitle": "Taamasiyɛnw",
+  "signalRsiOversold": "RSI {value} · a feerela ka tɛmɛ",
+  "signalRsiOverbought": "RSI {value} · a sanna ka tɛmɛ",
+  "signalCrossedAbove": "a tɛmɛna tile 200 cɛmancɛ sanfɛ",
+  "signalCrossedBelow": "a jiginna tile 200 cɛmancɛ jukɔrɔ"
 }

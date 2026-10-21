@@ -719,5 +719,10 @@
   "glossRsi": "Nisbi güc indeksi: son qazancları son itkilərlə 0–100 şkalasında müqayisə edir. 70-dən yuxarı səhm çox vaxt həddindən artıq alınmış (sürətlə yüksəlib), 30-dan aşağı həddindən artıq satılmış adlanır – amma güclü trend orada uzun müddət qala bilər.",
   "glossVolatility": "Qiymətin gündən-günə nə qədər dəyişdiyi, illik hesablanmış: 20% o deməkdir ki, adi bir il təxminən ±20% daxilində hərəkət edir. Yüksək volatillik hər iki istiqamətdə daha böyük hərəkətlər deməkdir.",
   "techNote": "Gündəlik bağlanış qiymətlərindən hesablanıb. Texniki siqnallar keçmişi təsvir edir, gələcəyi yox.",
-  "portfolioAbove200": "{count} mövqedən {above} mövqe 200 günlük ortasının üzərindədir"
+  "portfolioAbove200": "{count} mövqedən {above} mövqe 200 günlük ortasının üzərindədir",
+  "watchSignalsTitle": "Siqnallar",
+  "signalRsiOversold": "RSI {value} · həddindən artıq satılmış",
+  "signalRsiOverbought": "RSI {value} · həddindən artıq alınmış",
+  "signalCrossedAbove": "200 günlük ortanı yuxarı kəsdi",
+  "signalCrossedBelow": "200 günlük ortanı aşağı kəsdi"
 }

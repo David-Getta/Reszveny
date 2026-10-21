@@ -719,5 +719,10 @@
   "glossRsi": "Endis fòs relatif: li konpare dènye pwofi yo ak dènye pèt yo sou yon echèl 0–100. Pi wo pase 70, yo souvan di aksyon an twò achte (li monte vit), pi ba pase 30 twò vann – men yon tandans fò ka rete la pou lontan.",
   "glossVolatility": "Konbyen pri a varye de yon jou a yon lòt, kalkile sou yon ane: 20% vle di nan yon ane nòmal pri a deplase anviwon ±20%. Plis volatilite vle di pi gwo mouvman nan toude direksyon.",
   "techNote": "Kalkile apati pri fèmti chak jou. Siyal teknik yo dekri sa ki pase, pa sa ki pral vini.",
-  "portfolioAbove200": "{above} sou {count} pozisyon pi wo pase mwayèn 200 jou yo"
+  "portfolioAbove200": "{above} sou {count} pozisyon pi wo pase mwayèn 200 jou yo",
+  "watchSignalsTitle": "Siyal",
+  "signalRsiOversold": "RSI {value} · twò vann",
+  "signalRsiOverbought": "RSI {value} · twò achte",
+  "signalCrossedAbove": "monte pi wo pase mwayèn 200 jou li",
+  "signalCrossedBelow": "desann pi ba pase mwayèn 200 jou li"
 }

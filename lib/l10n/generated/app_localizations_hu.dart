@@ -2718,4 +2718,23 @@ class AppLocalizationsHu extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$count pozícióból $above a saját 200 napos átlaga felett';
   }
+
+  @override
+  String get watchSignalsTitle => 'Jelzések';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · túladott';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · túlvett';
+  }
+
+  @override
+  String get signalCrossedAbove => 'a 200 napos átlaga fölé került';
+
+  @override
+  String get signalCrossedBelow => 'a 200 napos átlaga alá került';
 }

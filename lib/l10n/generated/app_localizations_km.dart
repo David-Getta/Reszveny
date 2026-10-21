@@ -2692,4 +2692,23 @@ class AppLocalizationsKm extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above ក្នុងចំណោម $count ការកាន់កាប់ ខ្ពស់ជាងមធ្យម ២០០ ថ្ងៃរបស់វា';
   }
+
+  @override
+  String get watchSignalsTitle => 'សញ្ញា';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · លក់លើសកម្រិត';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · ទិញលើសកម្រិត';
+  }
+
+  @override
+  String get signalCrossedAbove => 'បានឡើងផុតមធ្យម ២០០ ថ្ងៃ';
+
+  @override
+  String get signalCrossedBelow => 'បានធ្លាក់ក្រោមមធ្យម ២០០ ថ្ងៃ';
 }

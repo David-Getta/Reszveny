@@ -719,5 +719,10 @@
   "glossRsi": "Chiyero chesimba rinoenzaniswa (RSI): chinoenzanisa mibairo yenguva pfupi yapfuura nekurasikirwa kwenguva pfupi yapfuura pachiyero che0–100. Pamusoro pe70 sheya kazhinji inonzi yatengwa zvakanyanya (yakwira nekukurumidza), pasi pe30 yatengeswa zvakanyanya – asi nzira yakasimba inogona kugara ipapo kwenguva refu.",
   "glossVolatility": "Kuti mutengo unochinja zvakadini zuva nezuva, zvichiyerwa pagore: 20% zvinoreva kuti gore rakajairika rinofamba mukati meanenge ±20%. Kuchinja-chinja kwakakwirira kunoreva kufamba kukuru kumativi ose ari maviri.",
   "techNote": "Zvakaverengwa kubva pamitengo yekuvhara yezuva nezuva. Zviratidzo zvetekiniki zvinotsanangura zvakapfuura, kwete zvinouya.",
-  "portfolioAbove200": "Zvawakabata {above} pa {count} zviri pamusoro peavhareji yazvo yemazuva 200"
+  "portfolioAbove200": "Zvawakabata {above} pa {count} zviri pamusoro peavhareji yazvo yemazuva 200",
+  "watchSignalsTitle": "Zviratidzo",
+  "signalRsiOversold": "RSI {value} · yatengeswa zvakanyanya",
+  "signalRsiOverbought": "RSI {value} · yatengwa zvakanyanya",
+  "signalCrossedAbove": "yakwira pamusoro peavhareji yemazuva 200",
+  "signalCrossedBelow": "yadzika pasi peavhareji yemazuva 200"
 }

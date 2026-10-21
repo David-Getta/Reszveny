@@ -719,5 +719,10 @@
   "glossRsi": "Suhteellinen voimaindeksi: vertaa viimeaikaisia nousuja viimeaikaisiin laskuihin asteikolla 0–100. Yli 70:n osaketta kutsutaan usein yliostetuksi (se on noussut nopeasti), alle 30:n ylimyydyksi – mutta vahva trendi voi pysyä siellä pitkään.",
   "glossVolatility": "Kuinka paljon kurssi heilahtelee päivästä toiseen, vuositasolle muutettuna: 20 % tarkoittaa, että tyypillisenä vuonna kurssi liikkuu noin ±20 %:n sisällä. Korkeampi volatiliteetti tarkoittaa suurempia liikkeitä molempiin suuntiin.",
   "techNote": "Laskettu päivittäisistä päätöskursseista. Tekniset signaalit kuvaavat menneisyyttä, eivät tulevaisuutta.",
-  "portfolioAbove200": "{above} omistusta {count}:sta yli 200 päivän keskiarvonsa"
+  "portfolioAbove200": "{above} omistusta {count}:sta yli 200 päivän keskiarvonsa",
+  "watchSignalsTitle": "Signaalit",
+  "signalRsiOversold": "RSI {value} · ylimyyty",
+  "signalRsiOverbought": "RSI {value} · yliostettu",
+  "signalCrossedAbove": "nousi 200 päivän keskiarvon yläpuolelle",
+  "signalCrossedBelow": "laski 200 päivän keskiarvon alapuolelle"
 }

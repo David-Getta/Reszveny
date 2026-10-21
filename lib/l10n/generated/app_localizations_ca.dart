@@ -2722,4 +2722,23 @@ class AppLocalizationsCa extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above de $count posicions per sobre de la seva mitjana de 200 dies';
   }
+
+  @override
+  String get watchSignalsTitle => 'Senyals';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · sobrevenut';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · sobrecomprat';
+  }
+
+  @override
+  String get signalCrossedAbove => 'ha creuat per sobre la mitjana de 200 dies';
+
+  @override
+  String get signalCrossedBelow => 'ha creuat per sota la mitjana de 200 dies';
 }

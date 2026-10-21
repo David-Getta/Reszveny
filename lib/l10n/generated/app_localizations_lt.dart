@@ -2784,4 +2784,23 @@ class AppLocalizationsLt extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above iš $count pozicijų virš savo 200 dienų vidurkio';
   }
+
+  @override
+  String get watchSignalsTitle => 'Signalai';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · perparduota';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · perpirkta';
+  }
+
+  @override
+  String get signalCrossedAbove => 'kirto 200 dienų vidurkį aukštyn';
+
+  @override
+  String get signalCrossedBelow => 'kirto 200 dienų vidurkį žemyn';
 }

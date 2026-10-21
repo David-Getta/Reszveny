@@ -2716,4 +2716,23 @@ class AppLocalizationsSu extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above tina $count posisi di luhureun rata-rata 200 poéna';
   }
+
+  @override
+  String get watchSignalsTitle => 'Sinyal';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · kaleuwihan dijual';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · kaleuwihan dibeuli';
+  }
+
+  @override
+  String get signalCrossedAbove => 'nembus ka luhureun rata-rata 200 poé';
+
+  @override
+  String get signalCrossedBelow => 'nembus ka handapeun rata-rata 200 poé';
 }

@@ -2722,4 +2722,23 @@ class AppLocalizationsEl extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above από $count θέσεις πάνω από τον μέσο όρο 200 ημερών τους';
   }
+
+  @override
+  String get watchSignalsTitle => 'Σήματα';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · υπερπουλημένη';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · υπεραγορασμένη';
+  }
+
+  @override
+  String get signalCrossedAbove => 'διέσπασε ανοδικά τον μέσο όρο 200 ημερών';
+
+  @override
+  String get signalCrossedBelow => 'διέσπασε καθοδικά τον μέσο όρο 200 ημερών';
 }

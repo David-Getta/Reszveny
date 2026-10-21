@@ -2718,4 +2718,23 @@ class AppLocalizationsMs extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above daripada $count posisi melebihi purata 200 hari masing-masing';
   }
+
+  @override
+  String get watchSignalsTitle => 'Isyarat';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · terlebih jual';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · terlebih beli';
+  }
+
+  @override
+  String get signalCrossedAbove => 'menembusi ke atas purata 200 hari';
+
+  @override
+  String get signalCrossedBelow => 'menembusi ke bawah purata 200 hari';
 }

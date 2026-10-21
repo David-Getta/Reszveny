@@ -2714,4 +2714,23 @@ class AppLocalizationsTk extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$count pozisiýadan $above öz 200 günlük ortalamasyndan ýokarda';
   }
+
+  @override
+  String get watchSignalsTitle => 'Signallar';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · aşa satylan';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · aşa satyn alnan';
+  }
+
+  @override
+  String get signalCrossedAbove => '200 günlük ortalamadan ýokary geçdi';
+
+  @override
+  String get signalCrossedBelow => '200 günlük ortalamadan aşak geçdi';
 }

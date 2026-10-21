@@ -2702,4 +2702,23 @@ class AppLocalizationsBo extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return 'ཉར་ཡོད་ཧུར་ཁག $count ལས $above རང་གི་ཉིན་༢༠༠ ཆ་སྙོམས་ལས་མཐོ།';
   }
+
+  @override
+  String get watchSignalsTitle => 'བརྡ་རྟགས།';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · འཚོང་ཚད་བརྒལ་བ།';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · ཉོ་ཚད་བརྒལ་བ།';
+  }
+
+  @override
+  String get signalCrossedAbove => 'ཉིན་༢༠༠ ཆ་སྙོམས་ལས་ཡར་བརྒལ།';
+
+  @override
+  String get signalCrossedBelow => 'ཉིན་༢༠༠ ཆ་སྙོམས་ལས་མར་བརྒལ།';
 }

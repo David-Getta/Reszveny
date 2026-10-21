@@ -2720,4 +2720,23 @@ class AppLocalizationsSq extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above nga $count pozicione mbi mesataren e tyre 200-ditore';
   }
+
+  @override
+  String get watchSignalsTitle => 'Sinjale';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · e mbishitur';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · e mbiblerë';
+  }
+
+  @override
+  String get signalCrossedAbove => 'kaloi mbi mesataren 200-ditore';
+
+  @override
+  String get signalCrossedBelow => 'kaloi nën mesataren 200-ditore';
 }

@@ -2725,4 +2725,23 @@ class AppLocalizationsMl extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$count പൊസിഷനുകളിൽ $above എണ്ണം അവയുടെ 200-ദിവസ ശരാശരിക്ക് മുകളിൽ';
   }
+
+  @override
+  String get watchSignalsTitle => 'സിഗ്നലുകൾ';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · ഓവർസോൾഡ്';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · ഓവർബോട്ട്';
+  }
+
+  @override
+  String get signalCrossedAbove => '200 ദിവസ ശരാശരിക്ക് മുകളിൽ കടന്നു';
+
+  @override
+  String get signalCrossedBelow => '200 ദിവസ ശരാശരിക്ക് താഴെ കടന്നു';
 }

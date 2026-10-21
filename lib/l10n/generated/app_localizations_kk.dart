@@ -2714,4 +2714,23 @@ class AppLocalizationsKk extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$count позицияның ішінен $above позиция 200 күндік орташасынан жоғары';
   }
+
+  @override
+  String get watchSignalsTitle => 'Сигналдар';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · шамадан тыс сатылған';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · шамадан тыс сатып алынған';
+  }
+
+  @override
+  String get signalCrossedAbove => '200 күндік орташадан жоғары өтті';
+
+  @override
+  String get signalCrossedBelow => '200 күндік орташадан төмен түсті';
 }

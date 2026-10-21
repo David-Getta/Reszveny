@@ -719,5 +719,10 @@
   "glossRsi": "Igipimo c'inguvu zigereranijwe (RSI): kigereranya inyungu za vuba n'igihombo ca vuba ku rugero rwa 0–100. Hejuru ya 70 ishari akenshi ivugwa ko yaguzwe cane (yadugiye ningoga), munsi ya 30 ko yagurishijwe cane – ariko inzira ikomeye irashobora kuhaguma igihe kirekire.",
   "glossVolatility": "Ukuntu igiciro gihindagurika umusi ku musi, gipimwe ku mwaka: 20% bisigura ko umwaka usanzwe ugenda hafi ya ±20%. Ihindagurika ryinshi risigura ingendo nini mu mpande zose uko ari zibiri.",
   "techNote": "Vyaharuwe hakoreshejwe ibiciro vyo gusozera vya buri musi. Ibimenyetso vya tekinike bidondora ivyahise, atari ivyo mu kazoza.",
-  "portfolioAbove200": "Ibintu {above} muri {count} ufise biri hejuru y'impuzandengo yavyo y'imisi 200"
+  "portfolioAbove200": "Ibintu {above} muri {count} ufise biri hejuru y'impuzandengo yavyo y'imisi 200",
+  "watchSignalsTitle": "Ibimenyetso",
+  "signalRsiOversold": "RSI {value} · yagurishijwe cane",
+  "signalRsiOverbought": "RSI {value} · yaguzwe cane",
+  "signalCrossedAbove": "yarenze hejuru y'impuzandengo y'imisi 200",
+  "signalCrossedBelow": "yamanutse munsi y'impuzandengo y'imisi 200"
 }

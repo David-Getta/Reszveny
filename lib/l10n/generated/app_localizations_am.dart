@@ -2680,4 +2680,23 @@ class AppLocalizationsAm extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return 'ከ$count ይዞታዎች $above ከ200 ቀን አማካያቸው በላይ';
   }
+
+  @override
+  String get watchSignalsTitle => 'ምልክቶች';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · ከመጠን በላይ የተሸጠ';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · ከመጠን በላይ የተገዛ';
+  }
+
+  @override
+  String get signalCrossedAbove => 'ከ200 ቀን አማካዩ በላይ አቋርጧል';
+
+  @override
+  String get signalCrossedBelow => 'ከ200 ቀን አማካዩ በታች አቋርጧል';
 }

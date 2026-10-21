@@ -719,5 +719,10 @@
   "glossRsi": "Indeeksii jabina walfakkaataa: bu'aa dhiheenyaa fi kasaaraa dhiheenyaa safartuu 0–100 irratti wal bira qaba. 70 ol aksiyoonni yeroo baay'ee baay'ee bitame (saffisaan ol ka'e) jedhama, 30 gad ammoo baay'ee gurgurame – garuu kallattiin cimaan yeroo dheeraa achi turuu danda'a.",
   "glossVolatility": "Gatiin guyyaa guyyaatti hammam akka jijjiiramu, gara waggaatti safarame: 20% jechuun waggaa idilee keessa naannoo ±20% keessa socho'a jechuu dha. Jijjiirama ol'aanaa jechuun socho'a guddaa kallattii lamaaniin jechuu dha.",
   "techNote": "Gatii cufiinsaa guyyaa irraa shallagame. Mallattooleen teeknikaa kan darbe ibsu, kan dhufu hin ibsan.",
-  "portfolioAbove200": "Qabiyyeewwan {count} keessaa {above} giddugaleessa guyyaa 200 isaanii ol jiru"
+  "portfolioAbove200": "Qabiyyeewwan {count} keessaa {above} giddugaleessa guyyaa 200 isaanii ol jiru",
+  "watchSignalsTitle": "Mallattoolee",
+  "signalRsiOversold": "RSI {value} · baay'ee gurgurame",
+  "signalRsiOverbought": "RSI {value} · baay'ee bitame",
+  "signalCrossedAbove": "giddugaleessa guyyaa 200 gararraa ce'e",
+  "signalCrossedBelow": "giddugaleessa guyyaa 200 gadi ce'e"
 }

@@ -719,5 +719,10 @@
   "glossRsi": "Relatív erő index: a közelmúlt emelkedéseit veti össze az eséseivel egy 0–100-as skálán. 70 felett gyakran túlvettnek mondják (gyorsan emelkedett), 30 alatt túladottnak – de egy erős trendben sokáig ott maradhat.",
   "glossVolatility": "Mennyit ingadozik az ár napról napra, egy évre vetítve: 20% azt jelenti, hogy egy tipikus év nagyjából ±20%-on belül mozog. A nagyobb volatilitás nagyobb kilengéseket jelent mindkét irányba.",
   "techNote": "A napi záróárakból számolva. A technikai jelzések a múltat írják le, nem a jövőt.",
-  "portfolioAbove200": "{count} pozícióból {above} a saját 200 napos átlaga felett"
+  "portfolioAbove200": "{count} pozícióból {above} a saját 200 napos átlaga felett",
+  "watchSignalsTitle": "Jelzések",
+  "signalRsiOversold": "RSI {value} · túladott",
+  "signalRsiOverbought": "RSI {value} · túlvett",
+  "signalCrossedAbove": "a 200 napos átlaga fölé került",
+  "signalCrossedBelow": "a 200 napos átlaga alá került"
 }

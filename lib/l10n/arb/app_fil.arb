@@ -719,5 +719,10 @@
   "glossRsi": "Relative strength index: ikinukumpara ang mga kamakailang ganansya sa mga kamakailang pagkalugi sa iskala na 0–100. Sa itaas ng 70, madalas tinatawag na overbought ang stock (mabilis itong tumaas), sa ibaba ng 30 oversold – ngunit maaaring manatili doon nang matagal ang isang malakas na trend.",
   "glossVolatility": "Gaano kalaki ang pagbabago ng presyo araw-araw, isinukat sa isang taon: ang 20% ay nangangahulugang sa karaniwang taon ay gumagalaw ito sa loob ng humigit-kumulang ±20%. Mas mataas na volatility ay nangangahulugang mas malalaking galaw sa magkabilang direksyon.",
   "techNote": "Kinalkula mula sa pang-araw-araw na closing price. Inilalarawan ng mga teknikal na signal ang nakaraan, hindi ang hinaharap.",
-  "portfolioAbove200": "{above} sa {count} posisyon ang nasa itaas ng kanilang 200-araw na average"
+  "portfolioAbove200": "{above} sa {count} posisyon ang nasa itaas ng kanilang 200-araw na average",
+  "watchSignalsTitle": "Mga signal",
+  "signalRsiOversold": "RSI {value} · oversold",
+  "signalRsiOverbought": "RSI {value} · overbought",
+  "signalCrossedAbove": "tumaas sa itaas ng 200-araw na average",
+  "signalCrossedBelow": "bumaba sa ilalim ng 200-araw na average"
 }

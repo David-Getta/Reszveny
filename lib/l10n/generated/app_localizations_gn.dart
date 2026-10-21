@@ -2718,4 +2718,23 @@ class AppLocalizationsGn extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above $count ereguerekóva apytégui oĩ 200 ára mbytepegua ári';
   }
+
+  @override
+  String get watchSignalsTitle => 'Techaukaha';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · oñemuitereíva';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · ojejoguaitereíva';
+  }
+
+  @override
+  String get signalCrossedAbove => 'ohasa 200 ára mbytepegua ári';
+
+  @override
+  String get signalCrossedBelow => 'ohasa 200 ára mbytepegua guýpe';
 }

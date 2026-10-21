@@ -719,5 +719,10 @@
   "glossRsi": "Otnositel güýç indeksi: soňky girdejileri soňky ýitgiler bilen 0–100 şkalasynda deňeşdirýär. 70-den ýokarda paýnama köplenç aşa satyn alnan (çalt ýokarlandy), 30-dan aşakda aşa satylan diýilýär – ýöne güýçli ugur ol ýerde uzak wagtlap galyp biler.",
   "glossVolatility": "Nyrhyň günden-güne näçe üýtgeýändigi, bir ýyla hasaplanan: 20% adaty ýylda takmynan ±20% çäginde hereket edýändigini aňladýar. Has ýokary üýtgäpdurma iki tarapa-da has uly hereketleri aňladýar.",
   "techNote": "Gündelik ýapylyş nyrhlaryndan hasaplandy. Tehniki signallar geçmişi beýan edýär, geljegi däl.",
-  "portfolioAbove200": "{count} pozisiýadan {above} öz 200 günlük ortalamasyndan ýokarda"
+  "portfolioAbove200": "{count} pozisiýadan {above} öz 200 günlük ortalamasyndan ýokarda",
+  "watchSignalsTitle": "Signallar",
+  "signalRsiOversold": "RSI {value} · aşa satylan",
+  "signalRsiOverbought": "RSI {value} · aşa satyn alnan",
+  "signalCrossedAbove": "200 günlük ortalamadan ýokary geçdi",
+  "signalCrossedBelow": "200 günlük ortalamadan aşak geçdi"
 }

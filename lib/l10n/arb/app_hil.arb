@@ -719,5 +719,10 @@
   "glossRsi": "Relative strength index: ginakumparar ang bag-o nga mga ganansya sa bag-o nga mga kapierde sa sukatan nga 0–100. Sa ibabaw sang 70 ang stock masami ginatawag nga overbought (madasig nga nagsaka), sa idalom sang 30 oversold – pero ang mabaskog nga uso mahimo magpabilin didto sing malawig.",
   "glossVolatility": "Daw ano ang pagbag-o sang presyo adlaw-adlaw, ginsukat sa isa ka tuig: ang 20% nagakahulugan nga sa ordinaryo nga tuig ang presyo nagahulag sa sulod sang mga ±20%. Mas mataas nga volatility nagakahulugan sang mas dalagko nga hulag sa duha ka direksyon.",
   "techNote": "Ginkwenta halin sa adlaw-adlaw nga closing price. Ang teknikal nga mga signal nagalaragway sang nagligad, indi sang palaabuton.",
-  "portfolioAbove200": "{above} sa {count} ka posisyon labaw sa ila 200 ka adlaw nga average"
+  "portfolioAbove200": "{above} sa {count} ka posisyon labaw sa ila 200 ka adlaw nga average",
+  "watchSignalsTitle": "Mga signal",
+  "signalRsiOversold": "RSI {value} · oversold",
+  "signalRsiOverbought": "RSI {value} · overbought",
+  "signalCrossedAbove": "nagsaka sa ibabaw sang 200 ka adlaw nga average",
+  "signalCrossedBelow": "nagpanaog sa idalom sang 200 ka adlaw nga average"
 }

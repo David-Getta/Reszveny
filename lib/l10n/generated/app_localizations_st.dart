@@ -2727,4 +2727,25 @@ class AppLocalizationsSt extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return 'Maemo a $above ho a $count a ka hodima karolelano ya ona ya matsatsi a 200';
   }
+
+  @override
+  String get watchSignalsTitle => 'Matshwao';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · e rekisitswe haholo';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · e rekilwe haholo';
+  }
+
+  @override
+  String get signalCrossedAbove =>
+      'e tshetse ka hodimo ho karolelano ya matsatsi a 200';
+
+  @override
+  String get signalCrossedBelow =>
+      'e tshetse ka tlase ho karolelano ya matsatsi a 200';
 }

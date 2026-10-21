@@ -2708,4 +2708,23 @@ class AppLocalizationsGu extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$countમાંથી $above પોઝિશન તેમની 200 દિવસની સરેરાશથી ઉપર';
   }
+
+  @override
+  String get watchSignalsTitle => 'સંકેતો';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · ઓવરસોલ્ડ';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · ઓવરબૉટ';
+  }
+
+  @override
+  String get signalCrossedAbove => '200 દિવસની સરેરાશથી ઉપર ગયો';
+
+  @override
+  String get signalCrossedBelow => '200 દિવસની સરેરાશથી નીચે ગયો';
 }

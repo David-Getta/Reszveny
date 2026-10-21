@@ -2712,4 +2712,23 @@ class AppLocalizationsBn extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$countটি অবস্থানের মধ্যে $aboveটি নিজেদের ২০০ দিনের গড়ের উপরে';
   }
+
+  @override
+  String get watchSignalsTitle => 'সংকেত';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · ওভারসোল্ড';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · ওভারবট';
+  }
+
+  @override
+  String get signalCrossedAbove => '২০০ দিনের গড়ের উপরে উঠেছে';
+
+  @override
+  String get signalCrossedBelow => '২০০ দিনের গড়ের নিচে নেমেছে';
 }

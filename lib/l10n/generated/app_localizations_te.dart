@@ -2720,4 +2720,23 @@ class AppLocalizationsTe extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$count పొజిషన్లలో $above వాటి 200-రోజుల సగటు పైన';
   }
+
+  @override
+  String get watchSignalsTitle => 'సంకేతాలు';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · ఓవర్‌సోల్డ్';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · ఓవర్‌బాట్';
+  }
+
+  @override
+  String get signalCrossedAbove => '200 రోజుల సగటు పైకి దాటింది';
+
+  @override
+  String get signalCrossedBelow => '200 రోజుల సగటు కిందకి దాటింది';
 }

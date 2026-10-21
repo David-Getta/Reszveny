@@ -2732,4 +2732,25 @@ class AppLocalizationsIlo extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above iti $count a posision ti nangatngato iti average ti 200 nga aldaw da';
   }
+
+  @override
+  String get watchSignalsTitle => 'Dagiti signal';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · oversold';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · overbought';
+  }
+
+  @override
+  String get signalCrossedAbove =>
+      'immuli iti ngato ti average ti 200 nga aldaw';
+
+  @override
+  String get signalCrossedBelow =>
+      'bimmaba iti baba ti average ti 200 nga aldaw';
 }

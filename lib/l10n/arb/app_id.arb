@@ -719,5 +719,10 @@
   "glossRsi": "Relative strength index: membandingkan kenaikan terkini dengan penurunan terkini pada skala 0–100. Di atas 70 saham sering disebut jenuh beli (naik terlalu cepat), di bawah 30 jenuh jual – tetapi tren yang kuat bisa bertahan di sana cukup lama.",
   "glossVolatility": "Seberapa besar harga berayun dari hari ke hari, disetahunkan: 20% berarti dalam setahun yang normal harga bergerak dalam kisaran sekitar ±20%. Volatilitas lebih tinggi berarti pergerakan lebih besar ke dua arah.",
   "techNote": "Dihitung dari harga penutupan harian. Sinyal teknikal menggambarkan masa lalu, bukan masa depan.",
-  "portfolioAbove200": "{above} dari {count} posisi di atas rata-rata 200 harinya"
+  "portfolioAbove200": "{above} dari {count} posisi di atas rata-rata 200 harinya",
+  "watchSignalsTitle": "Sinyal",
+  "signalRsiOversold": "RSI {value} · jenuh jual",
+  "signalRsiOverbought": "RSI {value} · jenuh beli",
+  "signalCrossedAbove": "menembus ke atas rata-rata 200 hari",
+  "signalCrossedBelow": "menembus ke bawah rata-rata 200 hari"
 }

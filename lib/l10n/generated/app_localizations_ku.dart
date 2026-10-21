@@ -2715,4 +2715,23 @@ class AppLocalizationsKu extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return 'Ji $count pozîsyonan $above li ser navîniya xwe ya 200 rojan in';
   }
+
+  @override
+  String get watchSignalsTitle => 'Sînyal';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · zêde firotî';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · zêde kirî';
+  }
+
+  @override
+  String get signalCrossedAbove => 'ji navîniya 200 rojan ber bi jor derbas bû';
+
+  @override
+  String get signalCrossedBelow => 'ji navîniya 200 rojan ber bi jêr derbas bû';
 }

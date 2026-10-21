@@ -2714,4 +2714,23 @@ class AppLocalizationsCkb extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above لە $count پۆزیشن لەسەرووی تێکڕای ٢٠٠ ڕۆژی خۆیانن';
   }
+
+  @override
+  String get watchSignalsTitle => 'ئاماژەکان';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · زۆر فرۆشراو';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · زۆر کڕدراو';
+  }
+
+  @override
+  String get signalCrossedAbove => 'تێکڕای ٢٠٠ ڕۆژ بەرەو سەرەوە بڕی';
+
+  @override
+  String get signalCrossedBelow => 'تێکڕای ٢٠٠ ڕۆژ بەرەو خوارەوە بڕی';
 }

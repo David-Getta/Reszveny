@@ -2712,4 +2712,23 @@ class AppLocalizationsTt extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$count позициядән $above үзенең 200 көнлек уртачасыннан югарырак';
   }
+
+  @override
+  String get watchSignalsTitle => 'Сигналлар';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · артык сатылган';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · артык сатып алынган';
+  }
+
+  @override
+  String get signalCrossedAbove => '200 көнлек уртачадан өскә чыкты';
+
+  @override
+  String get signalCrossedBelow => '200 көнлек уртачадан аска төште';
 }

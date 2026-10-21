@@ -2716,4 +2716,23 @@ class AppLocalizationsEe extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return 'Akpa $above le $count dome le woƒe ŋkeke 200 ƒe titina dzi';
   }
+
+  @override
+  String get watchSignalsTitle => 'Dzesiwo';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · wodzrae wu';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · woƒlee wu';
+  }
+
+  @override
+  String get signalCrossedAbove => 'eyi ŋkeke 200 ƒe titina la tame';
+
+  @override
+  String get signalCrossedBelow => 'eɖiɖi ŋkeke 200 ƒe titina la te';
 }

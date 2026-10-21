@@ -719,5 +719,10 @@
   "glossRsi": "Kiteso ya ngolo ya kufwanisa (RSI): yo ke fwanisaka mbongo ya me baka ntama fioti ti mbongo ya me vila ntama fioti na kiteso ya 0–100. Na zulu ya 70 bo ke tubaka mbala mingi nde bo sumbaka aksio mingi (yo tombukaka nswalu), na nsi ya 30 bo tekaka yo mingi – kansi nzila ya ngolo lenda bikala pana ntangu ya nda.",
   "glossVolatility": "Mutindu ntalu ke sobaka kilumbu na kilumbu, ya bo me tanga na mvula mosi: 20% ke tendula nde na mvula ya mbote ntalu ke tambulaka na kati ya kiteso ya ±20%. Nsobolo ya nene ke tendula nde ntalu ke tambulaka mingi na ndambu zole.",
   "techNote": "Bo tangaka yo na ntalu ya nsuka ya konso kilumbu. Bidimbu ya tekinike ke tubaka mambu ya me luta, kansi ve ya ke kwisa.",
-  "portfolioAbove200": "{above} na {count} ya ba position kele na zulu ya kati-kati ya bilumbu 200 ya bawu"
+  "portfolioAbove200": "{above} na {count} ya ba position kele na zulu ya kati-kati ya bilumbu 200 ya bawu",
+  "watchSignalsTitle": "Bidimbu",
+  "signalRsiOversold": "RSI {value} · bo tekaka yo mingi",
+  "signalRsiOverbought": "RSI {value} · bo sumbaka yo mingi",
+  "signalCrossedAbove": "yo me tombuka na zulu ya kati-kati ya bilumbu 200",
+  "signalCrossedBelow": "yo me kulumuka na nsi ya kati-kati ya bilumbu 200"
 }

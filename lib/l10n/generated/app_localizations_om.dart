@@ -2722,4 +2722,23 @@ class AppLocalizationsOm extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return 'Qabiyyeewwan $count keessaa $above giddugaleessa guyyaa 200 isaanii ol jiru';
   }
+
+  @override
+  String get watchSignalsTitle => 'Mallattoolee';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · baay\'ee gurgurame';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · baay\'ee bitame';
+  }
+
+  @override
+  String get signalCrossedAbove => 'giddugaleessa guyyaa 200 gararraa ce\'e';
+
+  @override
+  String get signalCrossedBelow => 'giddugaleessa guyyaa 200 gadi ce\'e';
 }

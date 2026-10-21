@@ -2642,4 +2642,23 @@ class AppLocalizationsKo extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '보유 종목 $count개 중 $above개가 200일 이동평균 위';
   }
+
+  @override
+  String get watchSignalsTitle => '시그널';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · 과매도';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · 과매수';
+  }
+
+  @override
+  String get signalCrossedAbove => '200일 이동평균 상향 돌파';
+
+  @override
+  String get signalCrossedBelow => '200일 이동평균 하향 이탈';
 }

@@ -719,5 +719,10 @@
   "glossRsi": "Göreceli güç endeksi: yakın dönemdeki kazançları yakın dönemdeki kayıplarla 0–100 ölçeğinde karşılaştırır. 70'in üzerinde hisse genellikle aşırı alım bölgesinde (hızlı yükseldi), 30'un altında aşırı satım bölgesinde sayılır – ancak güçlü bir trend orada uzun süre kalabilir.",
   "glossVolatility": "Fiyatın günden güne ne kadar dalgalandığı, yıllık bazda: %20, tipik bir yılda yaklaşık ±%20 aralığında hareket ettiği anlamına gelir. Daha yüksek volatilite, her iki yönde daha büyük hareketler demektir.",
   "techNote": "Günlük kapanış fiyatlarından hesaplanmıştır. Teknik sinyaller geçmişi anlatır, geleceği değil.",
-  "portfolioAbove200": "{count} pozisyonun {above} tanesi 200 günlük ortalamasının üzerinde"
+  "portfolioAbove200": "{count} pozisyonun {above} tanesi 200 günlük ortalamasının üzerinde",
+  "watchSignalsTitle": "Sinyaller",
+  "signalRsiOversold": "RSI {value} · aşırı satım",
+  "signalRsiOverbought": "RSI {value} · aşırı alım",
+  "signalCrossedAbove": "200 günlük ortalamanın üzerine çıktı",
+  "signalCrossedBelow": "200 günlük ortalamanın altına indi"
 }

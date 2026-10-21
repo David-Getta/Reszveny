@@ -719,5 +719,10 @@
   "glossRsi": "Relative strength index: vergelijkt recente winsten met recente verliezen op een schaal van 0 tot 100. Boven 70 heet het aandeel vaak overbought (het is snel gestegen), onder 30 oversold – maar een sterke trend kan daar lang blijven.",
   "glossVolatility": "Hoeveel de koers van dag tot dag schommelt, omgerekend naar een jaar: 20% betekent dat een gewoon jaar binnen ongeveer ±20% beweegt. Hogere volatiliteit betekent grotere bewegingen in beide richtingen.",
   "techNote": "Berekend op basis van dagelijkse slotkoersen. Technische signalen beschrijven het verleden, niet de toekomst.",
-  "portfolioAbove200": "{above} van {count} posities boven hun 200-daags gemiddelde"
+  "portfolioAbove200": "{above} van {count} posities boven hun 200-daags gemiddelde",
+  "watchSignalsTitle": "Signalen",
+  "signalRsiOversold": "RSI {value} · oversold",
+  "signalRsiOverbought": "RSI {value} · overbought",
+  "signalCrossedAbove": "boven het 200-daags gemiddelde gekruist",
+  "signalCrossedBelow": "onder het 200-daags gemiddelde gekruist"
 }

@@ -2711,4 +2711,23 @@ class AppLocalizationsHt extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above sou $count pozisyon pi wo pase mwayèn 200 jou yo';
   }
+
+  @override
+  String get watchSignalsTitle => 'Siyal';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · twò vann';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · twò achte';
+  }
+
+  @override
+  String get signalCrossedAbove => 'monte pi wo pase mwayèn 200 jou li';
+
+  @override
+  String get signalCrossedBelow => 'desann pi ba pase mwayèn 200 jou li';
 }

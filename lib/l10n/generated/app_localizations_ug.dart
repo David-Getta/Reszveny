@@ -2716,4 +2716,23 @@ class AppLocalizationsUg extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$count ئورۇندىن $above ئى ئۆزىنىڭ 200 كۈنلۈك ئوتتۇرىچە قىممىتىدىن يۇقىرى';
   }
+
+  @override
+  String get watchSignalsTitle => 'سىگناللار';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · ھەددىدىن زىيادە سېتىلغان';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · ھەددىدىن زىيادە سېتىۋېلىنغان';
+  }
+
+  @override
+  String get signalCrossedAbove => '200 كۈنلۈك ئوتتۇرىچىدىن يۇقىرىغا ئۆتتى';
+
+  @override
+  String get signalCrossedBelow => '200 كۈنلۈك ئوتتۇرىچىدىن تۆۋەنگە ئۆتتى';
 }

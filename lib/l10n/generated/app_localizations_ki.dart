@@ -2713,4 +2713,25 @@ class AppLocalizationsKi extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above harĩ $count cia hisa irĩ igũrũ rĩa gatagatĩ ka mĩthenya 200 kao';
   }
+
+  @override
+  String get watchSignalsTitle => 'Imenyithia';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · ũendetio mũno';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · ũgũrĩtwo mũno';
+  }
+
+  @override
+  String get signalCrossedAbove =>
+      'nĩ yambatĩte igũrũ rĩa gatagatĩ ka mĩthenya 200';
+
+  @override
+  String get signalCrossedBelow =>
+      'nĩ ĩikũrũkĩte thĩ ya gatagatĩ ka mĩthenya 200';
 }

@@ -2706,4 +2706,23 @@ class AppLocalizationsVi extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above trong $count vị thế đang trên đường trung bình 200 ngày';
   }
+
+  @override
+  String get watchSignalsTitle => 'Tín hiệu';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · quá bán';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · quá mua';
+  }
+
+  @override
+  String get signalCrossedAbove => 'cắt lên trên trung bình 200 ngày';
+
+  @override
+  String get signalCrossedBelow => 'cắt xuống dưới trung bình 200 ngày';
 }

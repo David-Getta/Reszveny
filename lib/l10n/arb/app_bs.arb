@@ -719,5 +719,10 @@
   "glossRsi": "Indeks relativne snage: upoređuje nedavne dobitke s nedavnim gubicima na skali od 0 do 100. Iznad 70 dionica se često naziva prekupljenom (brzo je rasla), ispod 30 preprodanom – ali jak trend može dugo ostati tamo.",
   "glossVolatility": "Koliko cijena oscilira iz dana u dan, preračunato na godinu: 20% znači da se u tipičnoj godini cijena kreće unutar otprilike ±20%. Veća volatilnost znači veće pomake u oba smjera.",
   "techNote": "Izračunato iz dnevnih cijena zatvaranja. Tehnički signali opisuju prošlost, ne budućnost.",
-  "portfolioAbove200": "{above} od {count} pozicija iznad svog 200-dnevnog prosjeka"
+  "portfolioAbove200": "{above} od {count} pozicija iznad svog 200-dnevnog prosjeka",
+  "watchSignalsTitle": "Signali",
+  "signalRsiOversold": "RSI {value} · preprodano",
+  "signalRsiOverbought": "RSI {value} · prekupljeno",
+  "signalCrossedAbove": "probio iznad 200-dnevnog prosjeka",
+  "signalCrossedBelow": "probio ispod 200-dnevnog prosjeka"
 }

@@ -2713,4 +2713,23 @@ class AppLocalizationsPcm extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above out of $count positions dey above dia 200-day average';
   }
+
+  @override
+  String get watchSignalsTitle => 'Signals';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · oversold';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · overbought';
+  }
+
+  @override
+  String get signalCrossedAbove => 'cross go up pass im 200-day average';
+
+  @override
+  String get signalCrossedBelow => 'cross go down pass im 200-day average';
 }

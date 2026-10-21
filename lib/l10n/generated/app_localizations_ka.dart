@@ -2674,10 +2674,10 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
-  String get techOverbought => 'გადაყიდული';
+  String get techOverbought => 'ზედმეტად ნაყიდი';
 
   @override
-  String get techOversold => 'გადაგაყიდული';
+  String get techOversold => 'ზედმეტად გაყიდული';
 
   @override
   String get techNeutral => 'ნეიტრალური';
@@ -2714,4 +2714,23 @@ class AppLocalizationsKa extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$count პოზიციიდან $above თავის 200-დღიან საშუალოზე მაღლაა';
   }
+
+  @override
+  String get watchSignalsTitle => 'სიგნალები';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · ზედმეტად გაყიდული';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · ზედმეტად ნაყიდი';
+  }
+
+  @override
+  String get signalCrossedAbove => '200-დღიან საშუალოს ზემოთ გადაკვეთა';
+
+  @override
+  String get signalCrossedBelow => '200-დღიან საშუალოს ქვემოთ გადაკვეთა';
 }

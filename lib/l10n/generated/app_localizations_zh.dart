@@ -2594,6 +2594,25 @@ class AppLocalizationsZh extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$count 个持仓中有 $above 个高于其 200 日均线';
   }
+
+  @override
+  String get watchSignalsTitle => '信号';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · 超卖';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · 超买';
+  }
+
+  @override
+  String get signalCrossedAbove => '上穿200日均线';
+
+  @override
+  String get signalCrossedBelow => '下穿200日均线';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -5184,4 +5203,23 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String portfolioAbove200(int above, int count) {
     return '$count 個持倉中有 $above 個高於其 200 日均線';
   }
+
+  @override
+  String get watchSignalsTitle => '訊號';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · 超賣';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · 超買';
+  }
+
+  @override
+  String get signalCrossedAbove => '升穿200日平均線';
+
+  @override
+  String get signalCrossedBelow => '跌穿200日平均線';
 }

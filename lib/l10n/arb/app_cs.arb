@@ -719,5 +719,10 @@
   "glossRsi": "Index relativní síly: porovnává nedávné zisky s nedávnými ztrátami na škále 0–100. Nad 70 se akcie často označuje za překoupenou (rychle rostla), pod 30 za přeprodanou – silný trend tam ale může zůstat dlouho.",
   "glossVolatility": "Jak moc cena kolísá ze dne na den, přepočteno na rok: 20 % znamená, že se v typickém roce pohybuje zhruba v rozmezí ±20 %. Vyšší volatilita znamená větší pohyby oběma směry.",
   "techNote": "Vypočteno z denních zavíracích cen. Technické signály popisují minulost, ne budoucnost.",
-  "portfolioAbove200": "{above} z {count} pozic nad svým 200denním průměrem"
+  "portfolioAbove200": "{above} z {count} pozic nad svým 200denním průměrem",
+  "watchSignalsTitle": "Signály",
+  "signalRsiOversold": "RSI {value} · přeprodáno",
+  "signalRsiOverbought": "RSI {value} · překoupeno",
+  "signalCrossedAbove": "prorazila nad 200denní průměr",
+  "signalCrossedBelow": "prorazila pod 200denní průměr"
 }

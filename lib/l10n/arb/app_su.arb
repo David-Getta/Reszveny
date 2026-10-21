@@ -719,5 +719,10 @@
   "glossRsi": "Indéks kakuatan rélatif: ngabandingkeun kauntungan anyar jeung karugian anyar dina skala 0–100. Di luhur 70 saham sering disebut kaleuwihan dibeuli (naék gancang), di handap 30 kaleuwihan dijual – tapi tren anu kuat bisa cicing di dinya lila.",
   "glossVolatility": "Sakumaha gedé harga ngayun unggal poé, diskalakeun ka sataun: 20% hartina taun biasa gerak dina kurang leuwih ±20%. Volatilitas anu leuwih luhur hartina gerakan anu leuwih gedé ka dua arah.",
   "techNote": "Diitung tina harga panutup poéan. Sinyal téknis ngagambarkeun jaman baheula, lain pikahareupeun.",
-  "portfolioAbove200": "{above} tina {count} posisi di luhureun rata-rata 200 poéna"
+  "portfolioAbove200": "{above} tina {count} posisi di luhureun rata-rata 200 poéna",
+  "watchSignalsTitle": "Sinyal",
+  "signalRsiOversold": "RSI {value} · kaleuwihan dijual",
+  "signalRsiOverbought": "RSI {value} · kaleuwihan dibeuli",
+  "signalCrossedAbove": "nembus ka luhureun rata-rata 200 poé",
+  "signalCrossedBelow": "nembus ka handapeun rata-rata 200 poé"
 }

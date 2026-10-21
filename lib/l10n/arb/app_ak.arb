@@ -719,5 +719,10 @@
   "glossRsi": "Ahoɔden a wɔde toto ho (RSI): ɛde nnansa yi mfaso toto nnansa yi adehwere ho wɔ 0–100 nsusuwii so. Sɛ ɛboro 70 a, wɔtaa ka sɛ wɔatɔ kyɛmfa no dodo (ɛforo ntɛm), sɛ ɛwɔ 30 ase a wɔatɔn no dodo – nanso kwan a emu yɛ den betumi atena hɔ bere tenten.",
   "glossVolatility": "Sɛnea bo no sesa da biara, a wɔabu no afe biako so: 20% kyerɛ sɛ afe biara bo no sesa bɛyɛ ±20% mu. Nsakrae kɛse kyerɛ sɛ nsesae akɛse ba akwan abien no nyinaa so.",
   "techNote": "Wɔde da biara bo a gua no de ewiee na ebuu. Mfiridwuma nsɛnkyerɛnne ka nea atwam ho asɛm, ɛnyɛ daakye.",
-  "portfolioAbove200": "Nkyɛfa {above} a ɛfiri {count} mu wɔ wɔn nna 200 nkyemu no so"
+  "portfolioAbove200": "Nkyɛfa {above} a ɛfiri {count} mu wɔ wɔn nna 200 nkyemu no so",
+  "watchSignalsTitle": "Nsɛnkyerɛnne",
+  "signalRsiOversold": "RSI {value} · wɔatɔn no dodo",
+  "signalRsiOverbought": "RSI {value} · wɔatɔ no dodo",
+  "signalCrossedAbove": "akɔ ne nna 200 nkyemu no so",
+  "signalCrossedBelow": "akɔ ne nna 200 nkyemu no ase"
 }

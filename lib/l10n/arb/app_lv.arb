@@ -719,5 +719,10 @@
   "glossRsi": "Relatīvā spēka indekss: salīdzina nesenos pieaugumus ar nesenajiem kritumiem skalā no 0 līdz 100. Virs 70 akciju bieži sauc par pārpirktu (tā strauji kāpa), zem 30 – par pārpārdotu, bet stipra tendence tur var saglabāties ilgi.",
   "glossVolatility": "Cik daudz cena svārstās no dienas dienā, pārrēķinot uz gadu: 20 % nozīmē, ka tipiskā gadā cena mainās aptuveni ±20 % robežās. Lielāks svārstīgums nozīmē lielākas kustības abos virzienos.",
   "techNote": "Aprēķināts pēc dienas slēgšanas cenām. Tehniskie signāli apraksta pagātni, ne nākotni.",
-  "portfolioAbove200": "{above} no {count} pozīcijām virs sava 200 dienu vidējā"
+  "portfolioAbove200": "{above} no {count} pozīcijām virs sava 200 dienu vidējā",
+  "watchSignalsTitle": "Signāli",
+  "signalRsiOversold": "RSI {value} · pārpārdota",
+  "signalRsiOverbought": "RSI {value} · pārpirkta",
+  "signalCrossedAbove": "pārkāpa virs 200 dienu vidējā",
+  "signalCrossedBelow": "nokrita zem 200 dienu vidējā"
 }

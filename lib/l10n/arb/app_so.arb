@@ -719,5 +719,10 @@
   "glossRsi": "Tusmada xoogga isbarbardhigga: waxay isbarbar dhigtaa faa'iidooyinka dhowaan iyo khasaaraha dhowaan miisaan 0–100. Ka sarreeya 70 saamiga badanaa waxaa la yiraahdaa si xad-dhaaf loo iibsaday (si degdeg ah kor u kacay), ka hooseeya 30 si xad-dhaaf loo iibiyay – laakiin isbeddel xoog leh wuu ku sii jiri karaa halkaas muddo dheer.",
   "glossVolatility": "Inta qiimuhu maalin ka maalin u kala baxo, loo qiyaasay sannad: 20% waxay ka dhigan tahay in sannad caadi ah uu ku dhex dhaqaaqo qiyaastii ±20%. Isbeddel sare wuxuu ka dhigan yahay dhaqdhaqaaq weyn labada dhinac.",
   "techNote": "Laga xisaabiyay qiimayaasha xidhitaanka maalinlaha ah. Calaamadaha farsamo waxay sharxaan wixii tegay, ee ma aha mustaqbalka.",
-  "portfolioAbove200": "{count} saami {above} ka mid ah ayaa ka sarreeya celceliskooda 200 maalmood"
+  "portfolioAbove200": "{count} saami {above} ka mid ah ayaa ka sarreeya celceliskooda 200 maalmood",
+  "watchSignalsTitle": "Calaamado",
+  "signalRsiOversold": "RSI {value} · si xad-dhaaf loo iibiyay",
+  "signalRsiOverbought": "RSI {value} · si xad-dhaaf loo iibsaday",
+  "signalCrossedAbove": "ka sare martay celceliska 200 maalmood",
+  "signalCrossedBelow": "ka hoos martay celceliska 200 maalmood"
 }

@@ -2714,4 +2714,23 @@ class AppLocalizationsMn extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$count позициос $above нь 200 хоногийн дунджаасаа дээгүүр';
   }
+
+  @override
+  String get watchSignalsTitle => 'Дохио';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · хэт их зарагдсан';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · хэт их худалдан авагдсан';
+  }
+
+  @override
+  String get signalCrossedAbove => '200 хоногийн дунджаас дээш гарсан';
+
+  @override
+  String get signalCrossedBelow => '200 хоногийн дунджаас доош орсон';
 }

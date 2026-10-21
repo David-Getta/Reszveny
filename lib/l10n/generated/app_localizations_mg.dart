@@ -2731,4 +2731,23 @@ class AppLocalizationsMg extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above amin\'ny $count petra-bola no ambonin\'ny salan\'isan\'ny 200 andro';
   }
+
+  @override
+  String get watchSignalsTitle => 'Famantarana';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · voavarotra be loatra';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · voavidy be loatra';
+  }
+
+  @override
+  String get signalCrossedAbove => 'niakatra ambonin\'ny salan\'isa 200 andro';
+
+  @override
+  String get signalCrossedBelow => 'nidina ambanin\'ny salan\'isa 200 andro';
 }

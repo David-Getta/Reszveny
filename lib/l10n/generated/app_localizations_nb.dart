@@ -2713,4 +2713,23 @@ class AppLocalizationsNb extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above av $count posisjoner over sitt 200-dagers snitt';
   }
+
+  @override
+  String get watchSignalsTitle => 'Signaler';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · oversolgt';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · overkjøpt';
+  }
+
+  @override
+  String get signalCrossedAbove => 'krysset over 200-dagers snitt';
+
+  @override
+  String get signalCrossedBelow => 'krysset under 200-dagers snitt';
 }

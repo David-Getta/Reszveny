@@ -719,5 +719,10 @@
   "glossRsi": "Indekisi ya matimba yo ringanisa: yi ringanisa mbuyelo wa sweswinyana ni ku lahlekeriwa ka sweswinyana eka xikalo xa 0–100. Ehenhla ka 70 xitoko hakanyingi xi vuriwa xi xaviwe ngopfu (xi tlakukile hi ku hatlisa), ehansi ka 30 xi xavisiwe ngopfu – kambe ndlela ya matimba yi nga tshama kona nkarhi wo leha.",
   "glossVolatility": "Ndlela leyi nxavo wu cincaka ha yona siku na siku, yi pimiwe hi lembe: 20% swi vula leswaku lembe ro tolovela ri famba endzeni ka kwalomu ka ±20%. Ku cinca lokukulu swi vula ku famba lokukulu eka matlhelo hamambirhi.",
   "techNote": "Swi hlayiwile ku suka eka minxavo yo pfala ya siku na siku. Swikombiso swa thekiniki swi hlamusela leswi hundzeke, ku nga ri vumundzuku.",
-  "portfolioAbove200": "Swiyimo swa {above} eka {count} swi le henhla ka avhareji ya swona ya masiku ya 200"
+  "portfolioAbove200": "Swiyimo swa {above} eka {count} swi le henhla ka avhareji ya swona ya masiku ya 200",
+  "watchSignalsTitle": "Swikombiso",
+  "signalRsiOversold": "RSI {value} · yi xavisiwe ngopfu",
+  "signalRsiOverbought": "RSI {value} · yi xaviwe ngopfu",
+  "signalCrossedAbove": "yi tsemakanyile ehenhla ka avhareji ya masiku ya 200",
+  "signalCrossedBelow": "yi tsemakanyile ehansi ka avhareji ya masiku ya 200"
 }

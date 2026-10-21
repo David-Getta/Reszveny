@@ -719,5 +719,10 @@
   "glossRsi": "Indice di forza relativa: confronta i guadagni recenti con le perdite recenti su una scala da 0 a 100. Sopra 70 il titolo è spesso detto ipercomprato (è salito in fretta), sotto 30 ipervenduto – ma un trend forte può restarci a lungo.",
   "glossVolatility": "Quanto oscilla il prezzo da un giorno all’altro, su base annua: 20% significa che in un anno tipico si muove entro circa ±20%. Una volatilità più alta significa movimenti più ampi in entrambe le direzioni.",
   "techNote": "Calcolato dai prezzi di chiusura giornalieri. I segnali tecnici descrivono il passato, non il futuro.",
-  "portfolioAbove200": "{above} posizioni su {count} sopra la loro media a 200 giorni"
+  "portfolioAbove200": "{above} posizioni su {count} sopra la loro media a 200 giorni",
+  "watchSignalsTitle": "Segnali",
+  "signalRsiOversold": "RSI {value} · ipervenduto",
+  "signalRsiOverbought": "RSI {value} · ipercomprato",
+  "signalCrossedAbove": "ha superato al rialzo la media a 200 giorni",
+  "signalCrossedBelow": "ha rotto al ribasso la media a 200 giorni"
 }

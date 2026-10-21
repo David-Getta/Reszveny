@@ -2721,4 +2721,25 @@ class AppLocalizationsKg extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above na $count ya ba position kele na zulu ya kati-kati ya bilumbu 200 ya bawu';
   }
+
+  @override
+  String get watchSignalsTitle => 'Bidimbu';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · bo tekaka yo mingi';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · bo sumbaka yo mingi';
+  }
+
+  @override
+  String get signalCrossedAbove =>
+      'yo me tombuka na zulu ya kati-kati ya bilumbu 200';
+
+  @override
+  String get signalCrossedBelow =>
+      'yo me kulumuka na nsi ya kati-kati ya bilumbu 200';
 }

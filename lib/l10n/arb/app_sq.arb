@@ -719,5 +719,10 @@
   "glossRsi": "Indeksi i forcës relative: krahason fitimet e fundit me humbjet e fundit në një shkallë 0–100. Mbi 70 aksioni shpesh quhet i mbiblerë (u rrit shpejt), nën 30 i mbishitur – por një trend i fortë mund të qëndrojë aty për një kohë të gjatë.",
   "glossVolatility": "Sa shumë lëkundet çmimi nga dita në ditë, shkallëzuar për një vit: 20% do të thotë që një vit tipik lëviz brenda afërsisht ±20%. Volatilitet më i lartë do të thotë lëvizje më të mëdha në të dyja drejtimet.",
   "techNote": "Llogaritur nga çmimet ditore të mbylljes. Sinjalet teknike përshkruajnë të kaluarën, jo të ardhmen.",
-  "portfolioAbove200": "{above} nga {count} pozicione mbi mesataren e tyre 200-ditore"
+  "portfolioAbove200": "{above} nga {count} pozicione mbi mesataren e tyre 200-ditore",
+  "watchSignalsTitle": "Sinjale",
+  "signalRsiOversold": "RSI {value} · e mbishitur",
+  "signalRsiOverbought": "RSI {value} · e mbiblerë",
+  "signalCrossedAbove": "kaloi mbi mesataren 200-ditore",
+  "signalCrossedBelow": "kaloi nën mesataren 200-ditore"
 }

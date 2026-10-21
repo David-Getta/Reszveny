@@ -2728,4 +2728,23 @@ class AppLocalizationsQu extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$count posicionmanta $above paykunapa 200 punchaw chawpinmanta hawanpi';
   }
+
+  @override
+  String get watchSignalsTitle => 'Willakuykuna';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · nishu vendesqa';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · nishu rantisqa';
+  }
+
+  @override
+  String get signalCrossedAbove => '200 p\'unchaw chawpi hawanman wicharirqan';
+
+  @override
+  String get signalCrossedBelow => '200 p\'unchaw chawpi uranman urayrirqan';
 }

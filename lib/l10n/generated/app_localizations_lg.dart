@@ -2723,4 +2723,23 @@ class AppLocalizationsLg extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return 'Emigabo $above ku $count giri waggulu wa wakati gwayo ogw\'ennaku 200';
   }
+
+  @override
+  String get watchSignalsTitle => 'Obubonero';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · gutundiddwa ennyo';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · gugulidwa ennyo';
+  }
+
+  @override
+  String get signalCrossedAbove => 'gulinnye waggulu wa wakati w\'ennaku 200';
+
+  @override
+  String get signalCrossedBelow => 'gukkide wansi wa wakati w\'ennaku 200';
 }

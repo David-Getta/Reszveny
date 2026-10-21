@@ -170,6 +170,8 @@ void main() {
     expect(find.text('EPS +2.7%'), findsWidgets);
     // Nagy napi mozgás (NVDA +2,98%): koppintható jel; a többinél nincs.
     expect(find.byKey(const ValueKey('watch-move-NVDA')), findsOneWidget);
+    // A demó árak nem adnak technikai jelzést: a sáv nem látszik.
+    expect(find.byKey(const ValueKey('watch-signals')), findsNothing);
     expect(find.byKey(const ValueKey('watch-move-AAPL')), findsNothing);
 
     // A részvény melletti gombbal: új lista, benne a részvénnyel.

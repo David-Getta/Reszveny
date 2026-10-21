@@ -2720,4 +2720,23 @@ class AppLocalizationsFil extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above sa $count posisyon ang nasa itaas ng kanilang 200-araw na average';
   }
+
+  @override
+  String get watchSignalsTitle => 'Mga signal';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · oversold';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · overbought';
+  }
+
+  @override
+  String get signalCrossedAbove => 'tumaas sa itaas ng 200-araw na average';
+
+  @override
+  String get signalCrossedBelow => 'bumaba sa ilalim ng 200-araw na average';
 }

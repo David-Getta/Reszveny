@@ -2720,4 +2720,24 @@ class AppLocalizationsLua extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above pa $count ya ba position idi pa mutu pa pankatshi pa matuku 200 pabu';
   }
+
+  @override
+  String get watchSignalsTitle => 'Bimanyinu';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · bapana bikole';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · basumba bikole';
+  }
+
+  @override
+  String get signalCrossedAbove => 'mbanda kulu kua pankatshi pa matuku 200';
+
+  @override
+  String get signalCrossedBelow =>
+      'mbuluka muinshi mua pankatshi pa matuku 200';
 }

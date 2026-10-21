@@ -719,5 +719,10 @@
   "glossRsi": "Mlozera wa mphamvu yofananiza: umayerekezera phindu laposachedwa ndi kutayika kwaposachedwa pa sikelo ya 0–100. Pamwamba pa 70 sitoko nthawi zambiri imati yagulidwa kwambiri (yakwera mofulumira), pansi pa 30 yagulitsidwa kwambiri – koma njira yamphamvu ingakhale pamenepo nthawi yayitali.",
   "glossVolatility": "Momwe mtengo umasinthira tsiku ndi tsiku, poyerekeza ndi chaka: 20% zikutanthauza kuti chaka chachizolowezi chimayenda pafupifupi ±20%. Kusinthasintha kwakukulu kumatanthauza kuyenda kwakukulu mbali zonse ziwiri.",
   "techNote": "Zawerengedwa kuchokera ku mitengo yotseka ya tsiku ndi tsiku. Zizindikiro zaukadaulo zimafotokoza zakale, osati zamtsogolo.",
-  "portfolioAbove200": "Malo {above} pa {count} ali pamwamba pa avareji yawo ya masiku 200"
+  "portfolioAbove200": "Malo {above} pa {count} ali pamwamba pa avareji yawo ya masiku 200",
+  "watchSignalsTitle": "Zizindikiro",
+  "signalRsiOversold": "RSI {value} · yagulitsidwa kwambiri",
+  "signalRsiOverbought": "RSI {value} · yagulidwa kwambiri",
+  "signalCrossedAbove": "yadutsa pamwamba pa avareji ya masiku 200",
+  "signalCrossedBelow": "yadutsa pansi pa avareji ya masiku 200"
 }

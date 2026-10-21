@@ -2718,4 +2718,23 @@ class AppLocalizationsSn extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return 'Zvawakabata $above pa $count zviri pamusoro peavhareji yazvo yemazuva 200';
   }
+
+  @override
+  String get watchSignalsTitle => 'Zviratidzo';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · yatengeswa zvakanyanya';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · yatengwa zvakanyanya';
+  }
+
+  @override
+  String get signalCrossedAbove => 'yakwira pamusoro peavhareji yemazuva 200';
+
+  @override
+  String get signalCrossedBelow => 'yadzika pasi peavhareji yemazuva 200';
 }

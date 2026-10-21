@@ -17,6 +17,7 @@ import '../news/move_explainer.dart';
 import '../stock_detail/widgets/move_why_button.dart';
 import '../events/events_view.dart' show eventWhen;
 import '../portfolio/add_lot_dialog.dart' show parseDecimal;
+import 'watch_signals.dart';
 
 /// A figyelőlista rendezése.
 enum WatchSort { own, gainers, losers, name }
@@ -378,6 +379,8 @@ class _WatchlistPageState extends State<WatchlistPage> {
           final hint = Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
+              // Technikai jelzések a lista részvényein (ha van ilyen).
+              _SignalsStrip(symbols: list, history: _history, onOpenSymbol: widget.onOpenSymbol),
               // Saját listák: „Mind”, a listák, és új lista.
               SingleChildScrollView(
                 key: const ValueKey('watch-lists'),
@@ -814,6 +817,91 @@ class _WatchRow extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+}
+
+/// „Jelzések”: RSI túladott/túlvett, a 200 napos átlag átlépése ma – chipek,
+/// koppintásra a részvény nyílik. Ha nincs jelzés, nem látszik.
+class _SignalsStrip extends StatelessWidget {
+  const _SignalsStrip({required this.symbols, required this.history, required this.onOpenSymbol});
+
+  final List<String> symbols;
+  final Future<PriceHistory> Function(String) history;
+  final ValueChanged<StockCandidate> onOpenSymbol;
+
+  Future<Map<String, PriceHistory>> _histories() async {
+    final out = <String, PriceHistory>{};
+    await Future.wait([
+      for (final s in symbols) history(s).then((h) => out[s] = h).then((_) {}, onError: (Object _) {}),
+    ]);
+    return out;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final p = AppPalette.of(context);
+    final theme = Theme.of(context);
+    final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
+    return FutureBuilder<Map<String, PriceHistory>>(
+      key: ValueKey(symbols.join(',')),
+      future: _histories(),
+      builder: (context, snap) {
+        final signals = snap.data == null ? const <WatchSignal>[] : watchSignals(symbols, snap.data!);
+        if (signals.isEmpty) return const SizedBox.shrink();
+        String text(WatchSignal x) => switch (x.kind) {
+          WatchSignalKind.rsiOversold => l10n.signalRsiOversold(fmt.number(x.value, decimals: 0)),
+          WatchSignalKind.rsiOverbought => l10n.signalRsiOverbought(fmt.number(x.value, decimals: 0)),
+          WatchSignalKind.crossedAbove200 => l10n.signalCrossedAbove,
+          WatchSignalKind.crossedBelow200 => l10n.signalCrossedBelow,
+        };
+        Color tone(WatchSignalKind k) =>
+            k == WatchSignalKind.rsiOversold || k == WatchSignalKind.crossedBelow200 ? p.negative : p.positive;
+        return Padding(
+          key: const ValueKey('watch-signals'),
+          padding: const EdgeInsets.fromLTRB(16, 12, 16, 0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(l10n.watchSignalsTitle, style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),
+              const SizedBox(height: 6),
+              Wrap(
+                spacing: 8,
+                runSpacing: 6,
+                children: [
+                  for (final x in signals)
+                    ActionChip(
+                      key: ValueKey('watch-signal-${x.symbol}-${x.kind.name}'),
+                      visualDensity: VisualDensity.compact,
+                      avatar: Icon(
+                        x.kind == WatchSignalKind.rsiOversold || x.kind == WatchSignalKind.crossedBelow200
+                            ? Icons.trending_down_rounded
+                            : Icons.trending_up_rounded,
+                        size: 16,
+                        color: tone(x.kind),
+                      ),
+                      label: Text.rich(
+                        TextSpan(
+                          text: '${x.symbol} ',
+                          style: const TextStyle(fontWeight: FontWeight.w600),
+                          children: [
+                            TextSpan(
+                              text: text(x),
+                              style: const TextStyle(fontWeight: FontWeight.normal),
+                            ),
+                          ],
+                        ),
+                      ),
+                      onPressed: () =>
+                          onOpenSymbol(StockCandidate(symbol: x.symbol, companyName: x.symbol, confidence: 1)),
+                    ),
+                ],
+              ),
+            ],
+          ),
+        );
+      },
     );
   }
 }

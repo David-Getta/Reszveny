@@ -719,5 +719,10 @@
   "glossRsi": "Índice de fuerza relativa: compara las ganancias recientes con las pérdidas recientes en una escala de 0 a 100. Por encima de 70 suele decirse que la acción está sobrecomprada (subió rápido); por debajo de 30, sobrevendida – pero una tendencia fuerte puede mantenerse ahí mucho tiempo.",
   "glossVolatility": "Cuánto oscila el precio de un día a otro, anualizado: un 20% significa que en un año típico se mueve dentro de aproximadamente ±20%. Mayor volatilidad significa movimientos más grandes en ambas direcciones.",
   "techNote": "Calculado a partir de los precios de cierre diarios. Las señales técnicas describen el pasado, no el futuro.",
-  "portfolioAbove200": "{above} de {count} posiciones por encima de su media de 200 días"
+  "portfolioAbove200": "{above} de {count} posiciones por encima de su media de 200 días",
+  "watchSignalsTitle": "Señales",
+  "signalRsiOversold": "RSI {value} · sobrevendida",
+  "signalRsiOverbought": "RSI {value} · sobrecomprada",
+  "signalCrossedAbove": "cruzó por encima de su media de 200 días",
+  "signalCrossedBelow": "cruzó por debajo de su media de 200 días"
 }

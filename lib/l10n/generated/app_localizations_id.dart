@@ -2709,4 +2709,23 @@ class AppLocalizationsId extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above dari $count posisi di atas rata-rata 200 harinya';
   }
+
+  @override
+  String get watchSignalsTitle => 'Sinyal';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · jenuh jual';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · jenuh beli';
+  }
+
+  @override
+  String get signalCrossedAbove => 'menembus ke atas rata-rata 200 hari';
+
+  @override
+  String get signalCrossedBelow => 'menembus ke bawah rata-rata 200 hari';
 }

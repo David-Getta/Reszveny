@@ -719,5 +719,10 @@
   "glossRsi": "Mbarete ñembojoja rechaukaha (RSI): ombojoja umi jehupyty ramoguare umi jehasa asy ramoguare ndive 0–100 jehaʼãmbýpe. 70 ári jepi heʼi ojejoguaitereí hague pe asión (ojupi pyaʼe), 30 guýpe oñemuitereí – ha katu peteĩ tape imbaretéva ikatu opyta upépe are.",
   "glossVolatility": "Mbaʼeichaitépa pe repy oñembojaʼaʼa ára ha ára, oñembojoja peteĩ arýpe: 20% heʼise peteĩ ary jepigua oku'e ±20% rupi. Jeʼaʼaty tuichavéva heʼise ku'e tuichavéva mokõive hendápe.",
   "techNote": "Ojepapa ára ha ára mboty repýgui. Umi techaukaha tékniko omombeʼu yma guare, ndahaʼéi tenonderã.",
-  "portfolioAbove200": "{above} {count} ereguerekóva apytégui oĩ 200 ára mbytepegua ári"
+  "portfolioAbove200": "{above} {count} ereguerekóva apytégui oĩ 200 ára mbytepegua ári",
+  "watchSignalsTitle": "Techaukaha",
+  "signalRsiOversold": "RSI {value} · oñemuitereíva",
+  "signalRsiOverbought": "RSI {value} · ojejoguaitereíva",
+  "signalCrossedAbove": "ohasa 200 ára mbytepegua ári",
+  "signalCrossedBelow": "ohasa 200 ára mbytepegua guýpe"
 }

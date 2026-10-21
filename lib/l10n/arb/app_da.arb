@@ -719,5 +719,10 @@
   "glossRsi": "Relativ styrkeindeks: sammenligner nylige stigninger med nylige fald på en skala fra 0 til 100. Over 70 kaldes aktien ofte overkøbt (den er steget hurtigt), under 30 oversolgt – men en stærk trend kan blive der længe.",
   "glossVolatility": "Hvor meget kursen svinger fra dag til dag, omregnet til et år: 20 % betyder, at et typisk år bevæger sig inden for cirka ±20 %. Højere volatilitet betyder større udsving i begge retninger.",
   "techNote": "Beregnet ud fra daglige lukkekurser. Tekniske signaler beskriver fortiden, ikke fremtiden.",
-  "portfolioAbove200": "{above} af {count} beholdninger over deres 200-dages gennemsnit"
+  "portfolioAbove200": "{above} af {count} beholdninger over deres 200-dages gennemsnit",
+  "watchSignalsTitle": "Signaler",
+  "signalRsiOversold": "RSI {value} · oversolgt",
+  "signalRsiOverbought": "RSI {value} · overkøbt",
+  "signalCrossedAbove": "krydsede over sit 200-dages gennemsnit",
+  "signalCrossedBelow": "krydsede under sit 200-dages gennemsnit"
 }

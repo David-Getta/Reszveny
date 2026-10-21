@@ -719,5 +719,10 @@
   "glossRsi": "Emekeli ya makasi ya kokokanisa (RSI): ekokanisaka matomba ya mikolo oyo na bobungisi ya mikolo oyo na emekeli ya 0–100. Likoló ya 70 balobaka mbala mingi ete action esombami mingi (emataki noki), na nse ya 30 etekami mingi – kasi nzela ya makasi ekoki kotikala wana ntango molai.",
   "glossVolatility": "Ndenge ntalo ebongwanaka mokolo na mokolo, etángami na mbula moko: 20% elingi koloba ete na mbula ya momeseno ntalo etambolaka na kati ya ±20%. Bobongwani monene elingi koloba botamboli monene na ngámbo nyonso mibale.",
   "techNote": "Etángami uta na ntalo ya nsuka ya mokolo na mokolo. Bilembo ya tekiniki elobelaka makambo oyo eleki, kasi te oyo ekoya.",
-  "portfolioAbove200": "{above} kati na ba-position {count} ezali likoló ya katikati ya mikolo 200 na yango"
+  "portfolioAbove200": "{above} kati na ba-position {count} ezali likoló ya katikati ya mikolo 200 na yango",
+  "watchSignalsTitle": "Bilembo",
+  "signalRsiOversold": "RSI {value} · etekami mingi",
+  "signalRsiOverbought": "RSI {value} · esombami mingi",
+  "signalCrossedAbove": "emati likoló ya katikati ya mikolo 200",
+  "signalCrossedBelow": "ekiti na nse ya katikati ya mikolo 200"
 }

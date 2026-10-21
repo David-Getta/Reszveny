@@ -2712,4 +2712,23 @@ class AppLocalizationsAk extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return 'Nkyɛfa $above a ɛfiri $count mu wɔ wɔn nna 200 nkyemu no so';
   }
+
+  @override
+  String get watchSignalsTitle => 'Nsɛnkyerɛnne';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · wɔatɔn no dodo';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · wɔatɔ no dodo';
+  }
+
+  @override
+  String get signalCrossedAbove => 'akɔ ne nna 200 nkyemu no so';
+
+  @override
+  String get signalCrossedBelow => 'akɔ ne nna 200 nkyemu no ase';
 }

@@ -2723,4 +2723,23 @@ class AppLocalizationsTa extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$count பொசிஷன்களில் $above அவற்றின் 200-நாள் சராசரிக்கு மேல்';
   }
+
+  @override
+  String get watchSignalsTitle => 'சமிக்ஞைகள்';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · அதிக விற்பனை';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · அதிக வாங்கல்';
+  }
+
+  @override
+  String get signalCrossedAbove => '200 நாள் சராசரிக்கு மேலே கடந்தது';
+
+  @override
+  String get signalCrossedBelow => '200 நாள் சராசரிக்குக் கீழே கடந்தது';
 }

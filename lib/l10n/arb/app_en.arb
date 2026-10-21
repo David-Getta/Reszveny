@@ -2286,5 +2286,37 @@
         "type": "int"
       }
     }
+  },
+  "watchSignalsTitle": "Signals",
+  "@watchSignalsTitle": {
+    "description": "Small heading above a row of chips on the favorites (watchlist) page: technical signals computed from daily closes."
+  },
+  "signalRsiOversold": "RSI {value} · oversold",
+  "@signalRsiOversold": {
+    "description": "Chip text after the ticker: the 14-day RSI is below 30. {value} is a whole number, e.g. 27.",
+    "placeholders": {
+      "value": {
+        "type": "String",
+        "example": "27"
+      }
+    }
+  },
+  "signalRsiOverbought": "RSI {value} · overbought",
+  "@signalRsiOverbought": {
+    "description": "Chip text after the ticker: the 14-day RSI is above 70. {value} is a whole number, e.g. 74.",
+    "placeholders": {
+      "value": {
+        "type": "String",
+        "example": "27"
+      }
+    }
+  },
+  "signalCrossedAbove": "crossed above its 200-day average",
+  "@signalCrossedAbove": {
+    "description": "Chip text after the ticker: today's close moved above the 200-day moving average (it was below yesterday)."
+  },
+  "signalCrossedBelow": "crossed below its 200-day average",
+  "@signalCrossedBelow": {
+    "description": "Chip text after the ticker: today's close moved below the 200-day moving average (it was above yesterday)."
   }
 }

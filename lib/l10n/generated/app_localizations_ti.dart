@@ -2675,4 +2675,23 @@ class AppLocalizationsTi extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return 'ካብ $count ቦታታት $above ልዕሊ ናይ 200 መዓልቲ ገምጋሞም';
   }
+
+  @override
+  String get watchSignalsTitle => 'ምልክታት';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · ብዙሕ ተሸይጡ';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · ብዙሕ ተዓዲጉ';
+  }
+
+  @override
+  String get signalCrossedAbove => 'ልዕሊ ማእከላይ ናይ 200 መዓልቲ ሰጊሩ';
+
+  @override
+  String get signalCrossedBelow => 'ትሕቲ ማእከላይ ናይ 200 መዓልቲ ወሪዱ';
 }

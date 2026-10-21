@@ -2724,4 +2724,23 @@ class AppLocalizationsCeb extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above sa $count ka posisyon labaw sa ilang 200 ka adlaw nga average';
   }
+
+  @override
+  String get watchSignalsTitle => 'Mga signal';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · oversold';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · overbought';
+  }
+
+  @override
+  String get signalCrossedAbove => 'misaka ibabaw sa 200 ka adlaw nga average';
+
+  @override
+  String get signalCrossedBelow => 'mikanaog ubos sa 200 ka adlaw nga average';
 }

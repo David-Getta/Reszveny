@@ -2686,4 +2686,23 @@ class AppLocalizationsLo extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above ໃນ $count ຮຸ້ນທີ່ຖື ສູງກວ່າສະເລ່ຍ 200 ວັນຂອງຕົນ';
   }
+
+  @override
+  String get watchSignalsTitle => 'ສັນຍານ';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · ຂາຍເກີນ';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · ຊື້ເກີນ';
+  }
+
+  @override
+  String get signalCrossedAbove => 'ຂຶ້ນເໜືອສະເລ່ຍ 200 ວັນ';
+
+  @override
+  String get signalCrossedBelow => 'ລົງຕ່ຳກວ່າສະເລ່ຍ 200 ວັນ';
 }

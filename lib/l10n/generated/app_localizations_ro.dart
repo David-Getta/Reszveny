@@ -2755,4 +2755,23 @@ class AppLocalizationsRo extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above din $count poziții peste media lor pe 200 de zile';
   }
+
+  @override
+  String get watchSignalsTitle => 'Semnale';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · supravândută';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · supracumpărată';
+  }
+
+  @override
+  String get signalCrossedAbove => 'a trecut peste media pe 200 de zile';
+
+  @override
+  String get signalCrossedBelow => 'a coborât sub media pe 200 de zile';
 }

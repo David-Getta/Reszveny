@@ -719,5 +719,10 @@
   "glossRsi": "相對強弱指數：以0至100的刻度比較近期升幅與近期跌幅。高於70通常稱為超買（升得太急），低於30稱為超賣——但強勁趨勢可能長時間停留在這些區域。",
   "glossVolatility": "價格每日上落的幅度，按年折算：20%代表一般年份價格大約在±20%範圍內波動。波幅愈高，升跌幅度都愈大。",
   "techNote": "按每日收市價計算。技術訊號描述過去，而非未來。",
-  "portfolioAbove200": "{count} 個持倉中有 {above} 個高於其 200 日均線"
+  "portfolioAbove200": "{count} 個持倉中有 {above} 個高於其 200 日均線",
+  "watchSignalsTitle": "訊號",
+  "signalRsiOversold": "RSI {value} · 超賣",
+  "signalRsiOverbought": "RSI {value} · 超買",
+  "signalCrossedAbove": "升穿200日平均線",
+  "signalCrossedBelow": "跌穿200日平均線"
 }

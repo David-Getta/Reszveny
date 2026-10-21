@@ -719,5 +719,10 @@
   "glossRsi": "Indekse ya maatla a tshwantšhanyo: e bapetša dipoelo tša morago bjale le ditahlegelo tša morago bjale sekaleng sa 0–100. Ka godimo ga 70 setoko gantši se bitšwa se rekilwe kudu (se nametše ka lebelo), ka tlase ga 30 se rekišitšwe kudu – fela tshekamelo ye maatla e ka dula moo nako ye telele.",
   "glossVolatility": "Gore theko e fetoga bjang letšatši le letšatši, e lekantšwe go ngwaga: 20% e ra gore ngwaga wa tlwaelo o sepela ka gare ga ±20% ka tekanyo. Phetogo ya godimo e ra gore mesepelo ye megolo ka mahlakoreng ka bobedi.",
   "techNote": "E balwa go tšwa ditheko tša go tswalela tša letšatši le letšatši. Maswao a setegeniki a hlalosa tše di fetilego, e sego tša bokamoso.",
-  "portfolioAbove200": "Maemo a {above} go a {count} a ka godimo ga palogare ya ona ya matšatši a 200"
+  "portfolioAbove200": "Maemo a {above} go a {count} a ka godimo ga palogare ya ona ya matšatši a 200",
+  "watchSignalsTitle": "Dika",
+  "signalRsiOversold": "RSI {value} · e rekišitšwe kudu",
+  "signalRsiOverbought": "RSI {value} · e rekilwe kudu",
+  "signalCrossedAbove": "e tshetše ka godimo ga palogare ya matšatši a 200",
+  "signalCrossedBelow": "e tshetše ka tlase ga palogare ya matšatši a 200"
 }

@@ -719,5 +719,10 @@
   "glossRsi": "Nisbiy kuch indeksi: so'nggi o'sishlarni so'nggi pasayishlar bilan 0–100 shkalasida solishtiradi. 70 dan yuqorida aksiya ko'pincha haddan ortiq sotib olingan (tez o'sdi), 30 dan pastda haddan ortiq sotilgan deyiladi – lekin kuchli trend u yerda uzoq qolishi mumkin.",
   "glossVolatility": "Narx kundan kunga qanchalik o'zgarishi, bir yilga hisoblangan: 20% odatiy yilda taxminan ±20% oralig'ida harakat qilishini bildiradi. Yuqori o'zgaruvchanlik ikki tomonga ham kattaroq harakatlarni bildiradi.",
   "techNote": "Kunlik yopilish narxlaridan hisoblangan. Texnik signallar o'tmishni tasvirlaydi, kelajakni emas.",
-  "portfolioAbove200": "{count} pozitsiyadan {above} tasi o‘z 200 kunlik o‘rtachasidan yuqori"
+  "portfolioAbove200": "{count} pozitsiyadan {above} tasi o‘z 200 kunlik o‘rtachasidan yuqori",
+  "watchSignalsTitle": "Signallar",
+  "signalRsiOversold": "RSI {value} · haddan ortiq sotilgan",
+  "signalRsiOverbought": "RSI {value} · haddan ortiq sotib olingan",
+  "signalCrossedAbove": "200 kunlik o'rtachadan yuqoriga chiqdi",
+  "signalCrossedBelow": "200 kunlik o'rtachadan pastga tushdi"
 }

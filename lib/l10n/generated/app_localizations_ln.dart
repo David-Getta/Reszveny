@@ -2724,4 +2724,23 @@ class AppLocalizationsLn extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above kati na ba-position $count ezali likoló ya katikati ya mikolo 200 na yango';
   }
+
+  @override
+  String get watchSignalsTitle => 'Bilembo';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · etekami mingi';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · esombami mingi';
+  }
+
+  @override
+  String get signalCrossedAbove => 'emati likoló ya katikati ya mikolo 200';
+
+  @override
+  String get signalCrossedBelow => 'ekiti na nse ya katikati ya mikolo 200';
 }

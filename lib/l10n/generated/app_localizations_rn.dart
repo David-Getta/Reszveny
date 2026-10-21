@@ -2721,4 +2721,25 @@ class AppLocalizationsRn extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return 'Ibintu $above muri $count ufise biri hejuru y\'impuzandengo yavyo y\'imisi 200';
   }
+
+  @override
+  String get watchSignalsTitle => 'Ibimenyetso';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · yagurishijwe cane';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · yaguzwe cane';
+  }
+
+  @override
+  String get signalCrossedAbove =>
+      'yarenze hejuru y\'impuzandengo y\'imisi 200';
+
+  @override
+  String get signalCrossedBelow =>
+      'yamanutse munsi y\'impuzandengo y\'imisi 200';
 }

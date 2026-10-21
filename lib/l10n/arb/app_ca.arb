@@ -719,5 +719,10 @@
   "glossRsi": "Índex de força relativa: compara els guanys recents amb les pèrdues recents en una escala de 0 a 100. Per sobre de 70 sovint es diu que l’acció està sobrecomprada (ha pujat ràpid); per sota de 30, sobrevenuda – però una tendència forta pot quedar-s’hi molt de temps.",
   "glossVolatility": "Quant oscil·la el preu d’un dia a l’altre, en termes anuals: un 20% vol dir que en un any típic es mou dins d’aproximadament ±20%. Més volatilitat vol dir moviments més grans en les dues direccions.",
   "techNote": "Calculat a partir dels preus de tancament diaris. Els senyals tècnics descriuen el passat, no el futur.",
-  "portfolioAbove200": "{above} de {count} posicions per sobre de la seva mitjana de 200 dies"
+  "portfolioAbove200": "{above} de {count} posicions per sobre de la seva mitjana de 200 dies",
+  "watchSignalsTitle": "Senyals",
+  "signalRsiOversold": "RSI {value} · sobrevenut",
+  "signalRsiOverbought": "RSI {value} · sobrecomprat",
+  "signalCrossedAbove": "ha creuat per sobre la mitjana de 200 dies",
+  "signalCrossedBelow": "ha creuat per sota la mitjana de 200 dies"
 }

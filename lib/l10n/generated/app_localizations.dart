@@ -4656,6 +4656,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{above} of {count} positions above their 200-day average'**
   String portfolioAbove200(int above, int count);
+
+  /// Small heading above a row of chips on the favorites (watchlist) page: technical signals computed from daily closes.
+  ///
+  /// In en, this message translates to:
+  /// **'Signals'**
+  String get watchSignalsTitle;
+
+  /// Chip text after the ticker: the 14-day RSI is below 30. {value} is a whole number, e.g. 27.
+  ///
+  /// In en, this message translates to:
+  /// **'RSI {value} · oversold'**
+  String signalRsiOversold(String value);
+
+  /// Chip text after the ticker: the 14-day RSI is above 70. {value} is a whole number, e.g. 74.
+  ///
+  /// In en, this message translates to:
+  /// **'RSI {value} · overbought'**
+  String signalRsiOverbought(String value);
+
+  /// Chip text after the ticker: today's close moved above the 200-day moving average (it was below yesterday).
+  ///
+  /// In en, this message translates to:
+  /// **'crossed above its 200-day average'**
+  String get signalCrossedAbove;
+
+  /// Chip text after the ticker: today's close moved below the 200-day moving average (it was above yesterday).
+  ///
+  /// In en, this message translates to:
+  /// **'crossed below its 200-day average'**
+  String get signalCrossedBelow;
 }
 
 class _AppLocalizationsDelegate

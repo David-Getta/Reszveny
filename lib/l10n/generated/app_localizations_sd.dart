@@ -2705,4 +2705,23 @@ class AppLocalizationsSd extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$count پوزيشنن مان $above پنهنجي 200-ڏينهن جي اوسط کان مٿي';
   }
+
+  @override
+  String get watchSignalsTitle => 'سگنل';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · اوور سولڊ';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · اوور بوٽ';
+  }
+
+  @override
+  String get signalCrossedAbove => '200 ڏينهن جي سراسري مٿان ويو';
+
+  @override
+  String get signalCrossedBelow => '200 ڏينهن جي سراسري هيٺ ويو';
 }

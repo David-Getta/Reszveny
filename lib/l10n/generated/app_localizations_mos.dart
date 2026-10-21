@@ -2700,4 +2700,23 @@ class AppLocalizationsMos extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return 'Zĩis $above sẽn be $count pʋgẽ yɩɩda b raar 200 pʋ-sʋkã';
   }
+
+  @override
+  String get watchSignalsTitle => 'Bãnda';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · b koos-a wʋsg tɩ looge';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · b da-a wʋsg tɩ looge';
+  }
+
+  @override
+  String get signalCrossedAbove => 'yik n yɩɩg rasem 200 pʋgẽ sũur-sũurã';
+
+  @override
+  String get signalCrossedBelow => 'sig n lʋɩ rasem 200 pʋgẽ sũur-sũurã tẽngr';
 }

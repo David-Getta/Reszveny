@@ -2722,4 +2722,25 @@ class AppLocalizationsZu extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return 'Amasheya angu-$above kwangu-$count angaphezu kwesilinganiso sawo sezinsuku ezingu-200';
   }
+
+  @override
+  String get watchSignalsTitle => 'Izimpawu';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · lithengisiwe ngokweqile';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · lithengwe ngokweqile';
+  }
+
+  @override
+  String get signalCrossedAbove =>
+      'liweqile ngaphezulu kwesilinganiso sezinsuku ezingu-200';
+
+  @override
+  String get signalCrossedBelow =>
+      'liweqile ngaphansi kwesilinganiso sezinsuku ezingu-200';
 }

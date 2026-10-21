@@ -719,5 +719,10 @@
   "glossRsi": "相对强弱指数：在0–100的区间内比较近期涨幅与近期跌幅。高于70通常称为超买（涨得太快），低于30称为超卖——但强势趋势可能长时间停留在这些区域。",
   "glossVolatility": "价格每日波动的幅度，按年折算：20%表示在典型的一年内价格大致在±20%范围内波动。波动率越高，涨跌幅度都越大。",
   "techNote": "根据每日收盘价计算。技术信号描述的是过去，而非未来。",
-  "portfolioAbove200": "{count} 个持仓中有 {above} 个高于其 200 日均线"
+  "portfolioAbove200": "{count} 个持仓中有 {above} 个高于其 200 日均线",
+  "watchSignalsTitle": "信号",
+  "signalRsiOversold": "RSI {value} · 超卖",
+  "signalRsiOverbought": "RSI {value} · 超买",
+  "signalCrossedAbove": "上穿200日均线",
+  "signalCrossedBelow": "下穿200日均线"
 }

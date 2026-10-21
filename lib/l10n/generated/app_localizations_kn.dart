@@ -2721,4 +2721,23 @@ class AppLocalizationsKn extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$count ಪೊಸಿಷನ್‌ಗಳಲ್ಲಿ $above ತಮ್ಮ 200 ದಿನಗಳ ಸರಾಸರಿಗಿಂತ ಮೇಲಿವೆ';
   }
+
+  @override
+  String get watchSignalsTitle => 'ಸಂಕೇತಗಳು';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · ಓವರ್‌ಸೋಲ್ಡ್';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · ಓವರ್‌ಬಾಟ್';
+  }
+
+  @override
+  String get signalCrossedAbove => '200 ದಿನಗಳ ಸರಾಸರಿಯ ಮೇಲೆ ದಾಟಿದೆ';
+
+  @override
+  String get signalCrossedBelow => '200 ದಿನಗಳ ಸರಾಸರಿಯ ಕೆಳಗೆ ಇಳಿದಿದೆ';
 }

@@ -2714,4 +2714,23 @@ class AppLocalizationsBg extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above от $count позиции над 200-дневната си средна';
   }
+
+  @override
+  String get watchSignalsTitle => 'Сигнали';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · свръхпродаден';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · свръхкупен';
+  }
+
+  @override
+  String get signalCrossedAbove => 'пресече 200-дневната средна нагоре';
+
+  @override
+  String get signalCrossedBelow => 'пресече 200-дневната средна надолу';
 }

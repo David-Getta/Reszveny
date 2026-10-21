@@ -2707,4 +2707,23 @@ class AppLocalizationsFf extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above e nder $count aksiyoŋ ina dow hakkundeyel balɗe 200 mum';
   }
+
+  @override
+  String get watchSignalsTitle => 'Maandeeji';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · yeeyaama burtii';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · soodaama burtii';
+  }
+
+  @override
+  String get signalCrossedAbove => 'ƴawii dow hakkundeyel balɗe 200';
+
+  @override
+  String get signalCrossedBelow => 'jippii les hakkundeyel balɗe 200';
 }

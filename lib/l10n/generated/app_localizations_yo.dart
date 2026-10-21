@@ -2711,4 +2711,23 @@ class AppLocalizationsYo extends AppLocalizations {
   String portfolioAbove200(int above, int count) {
     return '$above nínú $count ipò wà lókè ìpíndọ́gba ọjọ́ 200 wọn';
   }
+
+  @override
+  String get watchSignalsTitle => 'Àwọn àmì';
+
+  @override
+  String signalRsiOversold(String value) {
+    return 'RSI $value · ti tà jù';
+  }
+
+  @override
+  String signalRsiOverbought(String value) {
+    return 'RSI $value · ti rà jù';
+  }
+
+  @override
+  String get signalCrossedAbove => 'kọjá sí òkè ìpíndọ́gba ọjọ́ 200';
+
+  @override
+  String get signalCrossedBelow => 'kọjá sí ìsàlẹ̀ ìpíndọ́gba ọjọ́ 200';
 }
