@@ -87,9 +87,10 @@ class EventsService extends ChangeNotifier {
   bool get loading => _loading;
   bool get loaded => _loaded;
 
-  /// A figyelt részvények: kedvencek és a portfólió tételei.
+  /// A figyelt részvények: előbb a portfólió tételei (a saját pénz), aztán a
+  /// kedvencek – az eredmény-előzményt is ebben a sorrendben kérjük le.
   List<String> get watched =>
-      {...preferences.favorites, for (final p in portfolio.positions) p.symbol.toUpperCase()}.take(maxSymbols).toList();
+      {for (final p in portfolio.positions) p.symbol.toUpperCase(), ...preferences.favorites}.take(maxSymbols).toList();
 
   DateTime get _today {
     final n = _clock();
