@@ -216,8 +216,7 @@ class PortfolioStore extends ChangeNotifier {
     Map<String, DateTime> cashAt = const {},
   }) : _lots = List.of(lots),
        _dividends = List.of(dividends)..sort(_newestFirst),
-       _cash = Map.of(cash),
-       _cashAt = Map.of(cashAt);
+       _cash = _entries(cash, cashAt);
 
   /// Az újabb elöl (dátum nélküli a végén) – a lista mindig így van tartva.
   static int _newestFirst(DividendRecord a, DividendRecord b) =>
@@ -231,21 +230,29 @@ class PortfolioStore extends ChangeNotifier {
   final List<PortfolioLot> _lots;
   final List<DividendRecord> _dividends;
 
-  /// Készpénz a brókernél, pénznemenként (a felhasználó adja meg).
-  final Map<String, double> _cash;
-  Map<String, double> get cash => Map.unmodifiable(_cash);
+  /// Készpénz a brókernél, pénznemenként (a felhasználó adja meg): az összeg
+  /// (0 = törölve, csak az időbélyeg miatt marad) és az utolsó módosítás ideje
+  /// (UTC), hogy a szinkron ne élessze újra egy másik készülék régebbi egyenlegével.
+  final Map<String, ({double amount, DateTime? at})> _cash;
 
-  /// Pénznemenként az utolsó módosítás ideje (UTC) – a törölté is marad, hogy a
-  /// szinkron ne élessze újra egy másik készülék régebbi egyenlegével.
-  final Map<String, DateTime> _cashAt;
-  Map<String, DateTime> get cashAt => Map.unmodifiable(_cashAt);
+  static Map<String, ({double amount, DateTime? at})> _entries(Map<String, double> cash, Map<String, DateTime> at) => {
+    for (final c in {...cash.keys, ...at.keys}) c: (amount: cash[c] ?? 0, at: at[c]),
+  };
+
+  Map<String, double> get cash => {
+    for (final e in _cash.entries)
+      if (e.value.amount > 0) e.key: e.value.amount,
+  };
+
+  /// Pénznemenként az utolsó módosítás ideje (a törölté is).
+  Map<String, DateTime> get cashAt => {for (final e in _cash.entries) e.key: ?e.value.at};
   List<PortfolioLot> get lots => List.unmodifiable(_lots);
 
   /// A még birtokolt részvények tickerei.
   Set<String> get heldSymbols => {for (final p in positions) p.symbol};
 
   /// Nincs se tranzakció, se készpénz: a portfólió oldal az üres állapotot mutatja.
-  bool get isEmpty => _lots.isEmpty && _cash.isEmpty;
+  bool get isEmpty => _lots.isEmpty && cash.isEmpty;
 
   /// A kapott osztalékok, az újabb elöl (dátum nélküli a végén).
   List<DividendRecord> get dividends => List.unmodifiable(_dividends);
@@ -321,7 +328,7 @@ class PortfolioStore extends ChangeNotifier {
   };
 
   /// A módosítási idők JSON-ba (a szinkroncsomagba és a tárolóba).
-  Map<String, String> get cashAtJson => {for (final e in _cashAt.entries) e.key: e.value.toIso8601String()};
+  Map<String, String> get cashAtJson => {for (final e in cashAt.entries) e.key: e.value.toIso8601String()};
 
   static List<DividendRecord> parseDividends(String raw) {
     final v = jsonDecode(raw);
@@ -397,7 +404,6 @@ class PortfolioStore extends ChangeNotifier {
     _lots.clear();
     _dividends.clear();
     _cash.clear();
-    _cashAt.clear();
     notifyListeners();
     await _save();
   }
@@ -445,26 +451,18 @@ class PortfolioStore extends ChangeNotifier {
   Future<void> setCash(String currency, double amount) async {
     if (!amount.isFinite) return;
     final c = currency.trim().toUpperCase();
-    if (amount > 0) {
-      _cash[c] = amount;
-    } else {
-      _cash.remove(c);
-    }
-    _cashAt[c] = DateTime.now().toUtc();
+    _cash[c] = (amount: amount > 0 ? amount : 0, at: DateTime.now().toUtc());
     notifyListeners();
     await _save();
   }
 
-  /// Az összes készpénz-egyenleg cseréje (szinkronkor a fiók adataira), a módosítási időkkel.
+  /// Az összes készpénz-egyenleg cseréje (szinkronkor a fiók adataira) a
+  /// módosítási időkkel; [at] nélkül (régi csomag) a meglévő idők maradnak.
   Future<void> replaceAllCash(Map<String, double> cash, {Map<String, DateTime>? at}) async {
+    final entries = _entries(cash, at ?? cashAt);
     _cash
       ..clear()
-      ..addAll(cash);
-    if (at != null) {
-      _cashAt
-        ..clear()
-        ..addAll(at);
-    }
+      ..addAll(entries);
     notifyListeners();
     await _save();
   }
@@ -499,7 +497,7 @@ class PortfolioStore extends ChangeNotifier {
       await Future.wait([
         prefs.setString(_key, jsonEncode(_lots.map((l) => l.toJson()).toList())),
         prefs.setString(_dividendsKey, jsonEncode(_dividends.map((d) => d.toJson()).toList())),
-        prefs.setString(_cashKey, jsonEncode(_cash)),
+        prefs.setString(_cashKey, jsonEncode(cash)),
         prefs.setString(_cashAtKey, jsonEncode(cashAtJson)),
       ]);
     } catch (_) {
