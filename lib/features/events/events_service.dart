@@ -96,23 +96,22 @@ class EventsService extends ChangeNotifier {
   bool _loading = false;
   bool _loaded = false;
 
-  /// Változott a portfólió, miközben épp töltöttünk: a végén még egy kör.
-  bool _dirty = false;
-
-  /// Amire a lista épül a portfólióból: a birtokolt részvények és az osztalékok.
-  /// Más változás (készpénz, jegyzet) nem indít újraépítést.
-  String _fingerprint() =>
-      [...portfolio.positions.map((p) => p.symbol), '|', ...portfolio.dividends.map((d) => d.id)].join(',');
+  /// Amire a lista épül a portfólióból: a tranzakciók és az osztalékok
+  /// azonosítói. Más változás (készpénz, jegyzet) nem indít újraépítést.
+  String _fingerprint() => [...portfolio.lots.map((l) => l.id), '|', ...portfolio.dividends.map((d) => d.id)].join(',');
   String _seen = '';
 
+  /// Új vétel, eladás vagy osztalék: a lista a gyorsítótárból újraépül; lekérés
+  /// csak akkor kell, ha olyan részvény jött, amelynek még nincs dátuma. Töltés
+  /// közben nem indít semmit – a [refresh] végén az eltérő ujjlenyomat úgyis
+  /// még egy kört indít.
   void _onPortfolioChanged() {
-    if (!_loaded && !_loading) return;
-    if (_fingerprint() == _seen) return;
-    if (_loading) {
-      _dirty = true;
-      return;
+    if (!_loaded || _loading || _fingerprint() == _seen) return;
+    if (watched.any((s) => !_earnings.containsKey(s))) {
+      refresh();
+    } else {
+      _rebuild().catchError((Object e) => debugPrint('Események nem építhetők újra: $e'));
     }
-    refresh();
   }
 
   @override
@@ -135,16 +134,14 @@ class EventsService extends ChangeNotifier {
     return DateTime(n.year, n.month, n.day);
   }
 
+  /// A figyelt részvények gyorsjelentés-dátumainak (és előzményének) lekérése a
+  /// gyorsítótár mellé, aztán a lista összeállítása.
   Future<void> refresh({bool force = false}) async {
     if (_loading) return;
     _loading = true;
     _seen = _fingerprint();
     notifyListeners();
     try {
-      final today = _today;
-      final until = today.add(const Duration(days: horizonDays));
-      bool inRange(DateTime d) => !d.isBefore(today) && !d.isAfter(until);
-
       final symbols = watched;
       final withHistory = symbols.take(recentMaxSymbols).toSet();
       final queue = [...symbols];
@@ -166,72 +163,7 @@ class EventsService extends ChangeNotifier {
       }
 
       await Future.wait([for (var i = 0; i < parallel; i++) worker()]);
-
-      final list = <UpcomingEvent>[
-        for (final s in symbols)
-          if (_earnings[s]?.$2.next case final e? when inRange(_day(e.date)))
-            UpcomingEvent(
-              symbol: s,
-              date: _day(e.date),
-              kind: UpcomingEventKind.earnings,
-              hour: e.hour,
-              epsEstimate: e.epsEstimate,
-            ),
-      ];
-      // Az elemzések eseményei (a gyorsjelentéssel egy hetet nem ismételjük meg).
-      for (final r in await reports.savedReports(limit: ReportStore.maxSaved)) {
-        for (final c in r.outlook?.catalysts ?? const []) {
-          final d = c.parsedDate;
-          if (d == null || !inRange(_day(d))) continue;
-          final day = _day(d);
-          final dup = list.any(
-            (e) =>
-                e.symbol == r.symbol &&
-                e.kind == UpcomingEventKind.earnings &&
-                e.date.difference(day).inDays.abs() <= 3 &&
-                _looksLikeEarnings(c.event),
-          );
-          if (!dup) {
-            list.add(UpcomingEvent(symbol: r.symbol, date: day, kind: UpcomingEventKind.catalyst, text: c.event));
-          }
-        }
-      }
-      // Várható osztalékok a még birtokolt részvényekre, a rögzített kifizetések ritmusából.
-      for (final x in expectedDividends(
-        portfolio.dividends,
-        portfolio.positions.map((p) => p.symbol),
-        now: _clock(),
-        horizon: const Duration(days: horizonDays),
-      )) {
-        if (!inRange(_day(x.date))) continue;
-        list.add(
-          UpcomingEvent(
-            symbol: x.symbol,
-            date: _day(x.date),
-            kind: UpcomingEventKind.dividend,
-            amount: x.amount,
-            currency: x.currency,
-          ),
-        );
-      }
-      list.sort((a, b) {
-        final byDate = a.date.compareTo(b.date);
-        return byDate != 0 ? byDate : a.symbol.compareTo(b.symbol);
-      });
-      _events = list;
-      // Friss eredmények: a legutóbbi negyedév, ha [recentDays] napon belül zárult.
-      final recent =
-          <RecentResult>[
-            for (final s in symbols)
-              if (_earnings[s]?.$2.history.where((h) => h.actual != null && h.estimate != null).firstOrNull
-                  case final r? when !r.period.isAfter(today) && today.difference(_day(r.period)).inDays <= recentDays)
-                (symbol: s, result: r),
-          ]..sort((a, b) {
-            final byPeriod = b.result.period.compareTo(a.result.period);
-            return byPeriod != 0 ? byPeriod : a.symbol.compareTo(b.symbol);
-          });
-      _recent = recent;
-      _loaded = true;
+      await _rebuild(symbols: symbols, notify: false);
     } catch (e) {
       // Egy hibás mentett elemzés vagy adat nem viszi el a listát: a meglévő marad.
       debugPrint('Események nem frissíthetők: $e');
@@ -239,10 +171,84 @@ class EventsService extends ChangeNotifier {
       _loading = false;
       notifyListeners();
     }
-    if (_dirty) {
-      _dirty = false;
-      await refresh();
+    // Közben változott a portfólió: még egy kör (a már ismert dátumokkal).
+    if (_fingerprint() != _seen) await refresh();
+  }
+
+  /// A lista és a friss eredmények összeállítása a már lekért dátumokból, az
+  /// elmentett elemzésekből és a portfólióból – hálózat nélkül.
+  Future<void> _rebuild({List<String>? symbols, bool notify = true}) async {
+    _seen = _fingerprint();
+    final today = _today;
+    final until = today.add(const Duration(days: horizonDays));
+    bool inRange(DateTime d) => !d.isBefore(today) && !d.isAfter(until);
+    symbols ??= watched;
+    final list = <UpcomingEvent>[
+      for (final s in symbols)
+        if (_earnings[s]?.$2.next case final e? when inRange(_day(e.date)))
+          UpcomingEvent(
+            symbol: s,
+            date: _day(e.date),
+            kind: UpcomingEventKind.earnings,
+            hour: e.hour,
+            epsEstimate: e.epsEstimate,
+          ),
+    ];
+    // Az elemzések eseményei (a gyorsjelentéssel egy hetet nem ismételjük meg).
+    for (final r in await reports.savedReports(limit: ReportStore.maxSaved)) {
+      for (final c in r.outlook?.catalysts ?? const []) {
+        final d = c.parsedDate;
+        if (d == null || !inRange(_day(d))) continue;
+        final day = _day(d);
+        final dup = list.any(
+          (e) =>
+              e.symbol == r.symbol &&
+              e.kind == UpcomingEventKind.earnings &&
+              e.date.difference(day).inDays.abs() <= 3 &&
+              _looksLikeEarnings(c.event),
+        );
+        if (!dup) {
+          list.add(UpcomingEvent(symbol: r.symbol, date: day, kind: UpcomingEventKind.catalyst, text: c.event));
+        }
+      }
     }
+    // Várható osztalékok a még birtokolt részvényekre, a rögzített kifizetések ritmusából
+    // (a napok már dátumok; a horizont ugyanaz, mint a többi eseményé).
+    for (final x in expectedDividends(
+      portfolio.dividends,
+      portfolio.heldSymbols,
+      now: today,
+      grace: Duration.zero,
+      horizon: const Duration(days: horizonDays),
+    )) {
+      list.add(
+        UpcomingEvent(
+          symbol: x.symbol,
+          date: x.date,
+          kind: UpcomingEventKind.dividend,
+          amount: x.amount,
+          currency: x.currency,
+        ),
+      );
+    }
+    list.sort((a, b) {
+      final byDate = a.date.compareTo(b.date);
+      return byDate != 0 ? byDate : a.symbol.compareTo(b.symbol);
+    });
+    _events = list;
+    // Friss eredmények: a legutóbbi negyedév, ha [recentDays] napon belül zárult.
+    _recent =
+        <RecentResult>[
+          for (final s in symbols)
+            if (_earnings[s]?.$2.history.where((h) => h.actual != null && h.estimate != null).firstOrNull case final r?
+                when !r.period.isAfter(today) && today.difference(_day(r.period)).inDays <= recentDays)
+              (symbol: s, result: r),
+        ]..sort((a, b) {
+          final byPeriod = b.result.period.compareTo(a.result.period);
+          return byPeriod != 0 ? byPeriod : a.symbol.compareTo(b.symbol);
+        });
+    _loaded = true;
+    if (notify) notifyListeners();
   }
 
   static DateTime _day(DateTime d) => DateTime(d.year, d.month, d.day);

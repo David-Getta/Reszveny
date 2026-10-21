@@ -5,14 +5,7 @@ import '../../../widgets/metric_hint.dart';
 /// Címke–érték párok táblázata. A `null` értékű sorok kimaradnak, ha
 /// [hideMissing] igaz, különben a [missing] szöveg jelenik meg.
 class KvTable extends StatelessWidget {
-  const KvTable({
-    super.key,
-    required this.rows,
-    this.hideMissing = false,
-    this.missing = 'n/a',
-    this.hints = const {},
-    this.hintTitle = '',
-  });
+  const KvTable({super.key, required this.rows, this.hideMissing = false, this.missing = 'n/a', this.hints = const {}});
 
   final List<(String, String?)> rows;
   final bool hideMissing;
@@ -20,7 +13,6 @@ class KvTable extends StatelessWidget {
 
   /// Címke → közérthető magyarázat: ezeknél a címke mellett ⓘ, koppintásra párbeszéd.
   final Map<String, String> hints;
-  final String hintTitle;
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +34,6 @@ class KvTable extends StatelessWidget {
                   child: HintedLabel(
                     label: label,
                     hint: hint,
-                    hintTitle: hintTitle,
                     style: theme.textTheme.bodyMedium?.copyWith(color: theme.colorScheme.onSurfaceVariant),
                   ),
                 )

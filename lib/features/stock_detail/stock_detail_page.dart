@@ -381,7 +381,6 @@ class _DetailsBody extends StatelessWidget {
                   KvTable(
                     missing: l10n.notAvailable,
                     hints: glossary,
-                    hintTitle: l10n.glossTitle,
                     rows: [
                       (l10n.labelLastPrice, fmt.price(q?.price, cur)),
                       (
@@ -455,7 +454,6 @@ class _DetailsBody extends StatelessWidget {
               : KvTable(
                   missing: l10n.notAvailable,
                   hints: glossary,
-                  hintTitle: l10n.glossTitle,
                   rows: [
                     (l10n.labelMarketCap, p?.marketCap == null ? null : fmt.compact(p!.marketCap, currency: cur)),
                     (
@@ -483,7 +481,6 @@ class _DetailsBody extends StatelessWidget {
               : KvTable(
                   missing: l10n.notAvailable,
                   hints: glossary,
-                  hintTitle: l10n.glossTitle,
                   rows: [
                     (l10n.labelRevenueTtm, m?.revenueTtm == null ? null : fmt.compact(m!.revenueTtm, currency: cur)),
                     (
@@ -531,7 +528,6 @@ class _DetailsBody extends StatelessWidget {
             : KvTable(
                 missing: l10n.notAvailable,
                 hints: glossary,
-                hintTitle: l10n.glossTitle,
                 rows: [
                   (l10n.labelDividendYield, m?.dividendYield == null ? null : fmt.percent(m!.dividendYield)),
                   (

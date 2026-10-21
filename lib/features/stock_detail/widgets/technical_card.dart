@@ -62,7 +62,7 @@ class TechnicalCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          KvTable(rows: rows, hideMissing: true, hints: glossary, hintTitle: l10n.glossTitle),
+          KvTable(rows: rows, hideMissing: true, hints: glossary),
           if (sma50 != null && sma200 != null) ...[
             const SizedBox(height: 8),
             Text(

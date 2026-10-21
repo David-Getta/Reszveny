@@ -1,3 +1,4 @@
+import '../../core/util/formatters.dart';
 import 'portfolio_store.dart';
 
 /// Egy részvény várható következő osztaléka, a rögzített kifizetésekből becsülve.
@@ -54,8 +55,15 @@ List<ExpectedDividend> expectedDividends(
 }
 
 /// Bekerülési osztalékhozam százalékban: az utolsó 12 hónap (dátumozott) kapott
-/// osztaléka a [cost] vételi értékhez mérve; `null`, ha nincs ilyen tétel.
-double? yieldOnCost(Iterable<DividendRecord> dividends, double cost, {required DateTime now}) {
+/// osztaléka a [cost] vételi értékhez mérve; `null`, ha nincs ilyen tétel. A
+/// [rate] a tétel pénznemének átváltása a [cost] pénznemére (`null`: a tétel
+/// kimarad); nélküle az összegek változatlanul adódnak össze.
+double? yieldOnCost(
+  Iterable<DividendRecord> dividends,
+  double cost, {
+  required DateTime now,
+  double? Function(DividendRecord d)? rate,
+}) {
   if (cost <= 0) return null;
   final from = DateTime(now.year - 1, now.month, now.day);
   var sum = 0.0;
@@ -63,11 +71,16 @@ double? yieldOnCost(Iterable<DividendRecord> dividends, double cost, {required D
   for (final d in dividends) {
     final date = d.date;
     if (date == null || date.isBefore(from) || date.isAfter(now)) continue;
-    sum += d.amount;
+    final r = rate == null ? 1.0 : rate(d);
+    if (r == null) continue;
+    sum += d.amount * r;
     any = true;
   }
   return any ? sum / cost * 100 : null;
 }
+
+/// Becsült összeg: „~ 2,60 USD” – az Események, a kártyák és a naptár egyformán.
+String approxMoney(Fmt fmt, double amount, String currency) => '~ ${fmt.money(amount, currency)}';
 
 /// A kifizetések közti medián távolságból a ritmus napokban (30 / 91 / 182 / 365);
 /// `null`, ha túl sűrű (nem rendszeres osztalék) vagy túl ritka.

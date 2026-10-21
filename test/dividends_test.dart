@@ -337,7 +337,7 @@ void main() {
     expect(find.descendant(of: yoc, matching: find.byKey(const ValueKey('hint-Yield on cost'))), findsOneWidget);
     // „around <dátum> · ~<összeg> USD”
     expect(
-      find.descendant(of: next, matching: find.textContaining(RegExp(r'^around .* · ~[\d.,]+ USD$'))),
+      find.descendant(of: next, matching: find.textContaining(RegExp(r'^around .* · ~ [\d.,]+ USD$'))),
       findsOneWidget,
     );
   });

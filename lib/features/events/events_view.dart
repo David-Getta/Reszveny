@@ -12,6 +12,7 @@ import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/centered_scroll.dart';
 import '../stock_detail/widgets/earnings_card.dart' show showEarningsSummary;
+import '../portfolio/dividend_forecast.dart' show approxMoney;
 import 'calendar_export.dart';
 import 'events_service.dart';
 
@@ -42,7 +43,7 @@ String eventWhen(AppLocalizations l10n, DateTime day, DateTime today) {
     UpcomingEventKind.dividend => (
       title: l10n.eventDividend,
       detail: [
-        if (e.amount != null && e.currency != null) '~ ${fmt.money(e.amount!, e.currency!)}',
+        if (e.amount != null && e.currency != null) approxMoney(fmt, e.amount!, e.currency!),
         l10n.eventDividendEstimate,
       ].join(' · '),
     ),

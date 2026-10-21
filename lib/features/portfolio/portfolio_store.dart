@@ -241,6 +241,9 @@ class PortfolioStore extends ChangeNotifier {
   Map<String, DateTime> get cashAt => Map.unmodifiable(_cashAt);
   List<PortfolioLot> get lots => List.unmodifiable(_lots);
 
+  /// A még birtokolt részvények tickerei.
+  Set<String> get heldSymbols => {for (final p in positions) p.symbol};
+
   /// Nincs se tranzakció, se készpénz: a portfólió oldal az üres állapotot mutatja.
   bool get isEmpty => _lots.isEmpty && _cash.isEmpty;
 
@@ -493,10 +496,12 @@ class PortfolioStore extends ChangeNotifier {
   Future<void> _save() async {
     try {
       final prefs = await SharedPreferences.getInstance();
-      await prefs.setString(_key, jsonEncode(_lots.map((l) => l.toJson()).toList()));
-      await prefs.setString(_dividendsKey, jsonEncode(_dividends.map((d) => d.toJson()).toList()));
-      await prefs.setString(_cashKey, jsonEncode(_cash));
-      await prefs.setString(_cashAtKey, jsonEncode(cashAtJson));
+      await Future.wait([
+        prefs.setString(_key, jsonEncode(_lots.map((l) => l.toJson()).toList())),
+        prefs.setString(_dividendsKey, jsonEncode(_dividends.map((d) => d.toJson()).toList())),
+        prefs.setString(_cashKey, jsonEncode(_cash)),
+        prefs.setString(_cashAtKey, jsonEncode(cashAtJson)),
+      ]);
     } catch (_) {
       // A tárolás hibája nem akadályozza a működést.
     }

@@ -35,6 +35,10 @@ class DividendsCard extends StatelessWidget {
       builder: (context, _) {
         final all = services.portfolio.dividends;
         final positions = services.portfolio.positions;
+        final now = DateTime.now();
+        final year = now.year;
+        // Várható következő kifizetések a még birtokolt részvényekre, a rögzítettek ritmusából.
+        final expected = expectedDividends(all, positions.map((x) => x.symbol), now: now);
         // Az osztalékok és a nyitott pozíciók pénznemei (a bekerülési osztalékhozamhoz is).
         final currencies = {for (final d in all) d.currency, for (final x in positions) x.currency}..remove(currency);
         return Card(
@@ -76,13 +80,11 @@ class DividendsCard extends StatelessWidget {
                     builder: (context, snap) {
                       final rates = snap.data;
                       if (rates == null && currencies.isNotEmpty) return const SizedBox(height: 40);
+                      double? rate(String c) => c == currency ? 1.0 : rates?[c];
                       double sum(Iterable<DividendRecord> ds) => ds.fold(0.0, (s, d) {
-                        final r = d.currency == currency ? 1.0 : rates?[d.currency];
+                        final r = rate(d.currency);
                         return r == null ? s : s + d.amount * r;
                       });
-                      final now = DateTime.now();
-                      final year = now.year;
-                      double? rate(String c) => c == currency ? 1.0 : rates?[c];
                       // Bekerülési osztalékhozam: csak a még birtokolt (és átváltható) részvények
                       // osztaléka az ő vételi értékükhöz mérve – ugyanaz a számítás, mint a pozíció kártyáján.
                       var cost = 0.0;
@@ -94,20 +96,10 @@ class DividendsCard extends StatelessWidget {
                         held.add(x.symbol);
                       }
                       final yoc = yieldOnCost(
-                        [
-                          for (final d in all)
-                            if (held.contains(d.symbol))
-                              if (rate(d.currency) case final r?)
-                                DividendRecord(
-                                  id: d.id,
-                                  symbol: d.symbol,
-                                  amount: d.amount * r,
-                                  currency: currency,
-                                  date: d.date,
-                                ),
-                        ],
+                        all.where((d) => held.contains(d.symbol)),
                         cost,
                         now: now,
+                        rate: (d) => rate(d.currency),
                       );
                       // Évenként is, ha több évből van tétel (az adóbevalláshoz).
                       final years = {for (final d in all) ?d.date?.year}.toList()..sort((a, b) => b.compareTo(a));
@@ -118,23 +110,22 @@ class DividendsCard extends StatelessWidget {
                             spacing: 28,
                             runSpacing: 10,
                             children: [
-                              _Figure(
+                              MetricFigure(
                                 key: const ValueKey('dividends-this-year'),
                                 label: l10n.portfolioDividendsThisYear,
                                 value: fmt.money(sum(all.where((d) => d.date?.year == year)), currency),
                               ),
-                              _Figure(
+                              MetricFigure(
                                 key: const ValueKey('dividends-all-time'),
                                 label: l10n.portfolioDividendsAllTime,
                                 value: fmt.money(sum(all), currency),
                               ),
                               if (yoc != null)
-                                _Figure(
+                                MetricFigure(
                                   key: const ValueKey('dividends-yield-on-cost'),
                                   label: l10n.labelYieldOnCost,
                                   value: fmt.percent(yoc),
                                   hint: l10n.glossYieldOnCost,
-                                  hintTitle: l10n.glossTitle,
                                 ),
                             ],
                           ),
@@ -158,9 +149,7 @@ class DividendsCard extends StatelessWidget {
                       );
                     },
                   ),
-                  // Várható következő kifizetések a még birtokolt részvényekre, a rögzítettek ritmusából.
-                  if (expectedDividends(all, services.portfolio.positions.map((x) => x.symbol), now: DateTime.now())
-                      case final expected when expected.isNotEmpty) ...[
+                  if (expected.isNotEmpty) ...[
                     const SizedBox(height: 10),
                     Text(l10n.portfolioDividendsExpected, style: theme.textTheme.labelMedium?.copyWith(color: p.muted)),
                     for (final x in expected.take(maxExpected))
@@ -183,7 +172,7 @@ class DividendsCard extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            Text('~ ${fmt.money(x.amount, x.currency)}', style: TextStyle(color: p.muted)),
+                            Text(approxMoney(fmt, x.amount, x.currency), style: TextStyle(color: p.muted)),
                           ],
                         ),
                       ),
@@ -256,40 +245,6 @@ class DividendsCard extends StatelessWidget {
         content: Text(l10n.portfolioDividendDeleted),
         action: SnackBarAction(label: l10n.undo, onPressed: () => services.portfolio.restoreDividend(d)),
       ),
-    );
-  }
-}
-
-class _Figure extends StatelessWidget {
-  const _Figure({super.key, required this.label, required this.value, this.hint, this.hintTitle});
-
-  final String label;
-  final String value;
-
-  /// A mutató magyarázata (ⓘ ikon, koppintásra párbeszéd) és a tooltip címe.
-  final String? hint;
-  final String? hintTitle;
-
-  @override
-  Widget build(BuildContext context) {
-    final p = AppPalette.of(context);
-    final theme = Theme.of(context);
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        if (hint case final h?)
-          HintedLabel(
-            label: label,
-            hint: h,
-            hintTitle: hintTitle ?? '',
-            style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
-          )
-        else
-          Text(label, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
-        const SizedBox(height: 2),
-        Text(value, style: theme.textTheme.titleMedium?.copyWith(fontWeight: FontWeight.w700)),
-      ],
     );
   }
 }

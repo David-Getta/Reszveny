@@ -93,6 +93,8 @@ class DigestSender {
       held[s] = (held[s] ?? 0) + (l['side'] == 'sell' ? -q : q);
       if (l['currency'] is String) currencies[s] ??= l['currency'] as String;
     }
+    // A teljesen eladott részvény kimarad.
+    held.removeWhere((_, q) => q <= 1e-9);
     return (held: held, currencies: currencies);
   }
 
@@ -100,12 +102,8 @@ class DigestSender {
   static ({List<String> portfolio, List<String> favorites, Map<String, String> currencies}) symbolsOf(
     Map<String, dynamic> data,
   ) {
-    // A teljesen eladott részvény kimarad.
     final (:held, :currencies) = holdingsOf(data);
-    final portfolio = [
-      for (final e in held.entries)
-        if (e.value > 1e-9) e.key,
-    ];
+    final portfolio = held.keys.toList();
     final favorites = <String>[
       for (final f in (data['favorites'] as List? ?? const []))
         if (f is String && !portfolio.contains(f.toUpperCase())) f.toUpperCase(),
@@ -114,22 +112,30 @@ class DigestSender {
     return (portfolio: p, favorites: favorites.toSet().take(maxSymbols - p.length).toList(), currencies: currencies);
   }
 
+  /// A szinkronizált csomag érvényes osztaléktételei: ticker nagybetűvel,
+  /// pozitív összeg, pénznem (alapból USD), értelmezhető dátum.
+  static Iterable<DigestDividend> _dividendRecords(Map<String, dynamic> data) sync* {
+    for (final d in (data['dividends'] as List? ?? const [])) {
+      if (d is! Map || d['symbol'] is! String || d['amount'] is! num || (d['amount'] as num) <= 0) continue;
+      final date = DateTime.tryParse('${d['date']}');
+      if (date == null) continue;
+      yield (
+        symbol: (d['symbol'] as String).toUpperCase(),
+        amount: (d['amount'] as num).toDouble(),
+        currency: d['currency'] is String ? d['currency'] as String : 'USD',
+        date: date,
+      );
+    }
+  }
+
   /// A héten (az elmúlt [days] napban) kapott osztalékok a szinkronizált
   /// csomagból, időrendben; a hibás vagy régebbi tételek kimaradnak.
   static List<DigestDividend> dividendsOf(Map<String, dynamic> data, {required DateTime now, int days = 7}) {
     final from = now.subtract(Duration(days: days));
-    final out = <DigestDividend>[
-      for (final d in (data['dividends'] as List? ?? const []))
-        if (d is Map && d['symbol'] is String && d['amount'] is num && (d['amount'] as num) > 0)
-          if (DateTime.tryParse('${d['date']}') case final date? when !date.isBefore(from) && !date.isAfter(now))
-            (
-              symbol: (d['symbol'] as String).toUpperCase(),
-              amount: (d['amount'] as num).toDouble(),
-              currency: d['currency'] is String ? d['currency'] as String : 'USD',
-              date: date,
-            ),
+    return [
+      for (final d in _dividendRecords(data))
+        if (!d.date.isBefore(from) && !d.date.isAfter(now)) d,
     ]..sort((a, b) => a.date.compareTo(b.date));
-    return out;
   }
 
   /// A következő [days] napban várható osztalékok a még birtokolt részvényekre,
@@ -140,21 +146,14 @@ class DigestSender {
   /// negyedéves / féléves / éves ritmus; a következő = az utolsó + ritmus, az
   /// utolsó összeggel. Időrendben.
   static List<DigestDividend> expectedDividendsOf(Map<String, dynamic> data, {required DateTime now, int days = 14}) {
-    final held = {
-      for (final e in holdingsOf(data).held.entries)
-        if (e.value > 1e-9) e.key,
-    };
+    final held = holdingsOf(data).held.keys.toSet();
     // (ticker, pénznem) → nap → összeg; az egy napon rögzített tételek együtt.
     final series = <(String, String), Map<DateTime, double>>{};
-    for (final d in (data['dividends'] as List? ?? const [])) {
-      if (d is! Map || d['symbol'] is! String || d['amount'] is! num || (d['amount'] as num) <= 0) continue;
-      final s = (d['symbol'] as String).toUpperCase();
-      if (!held.contains(s)) continue;
-      final date = DateTime.tryParse('${d['date']}');
-      if (date == null) continue;
-      final day = DateTime.utc(date.year, date.month, date.day);
-      final byDay = series[(s, d['currency'] is String ? d['currency'] as String : 'USD')] ??= {};
-      byDay[day] = (byDay[day] ?? 0) + (d['amount'] as num).toDouble();
+    for (final d in _dividendRecords(data)) {
+      if (!held.contains(d.symbol)) continue;
+      final day = DateTime.utc(d.date.year, d.date.month, d.date.day);
+      final byDay = series[(d.symbol, d.currency)] ??= {};
+      byDay[day] = (byDay[day] ?? 0) + d.amount;
     }
     final today = DateTime.utc(now.year, now.month, now.day);
     final until = today.add(Duration(days: days));

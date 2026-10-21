@@ -33,6 +33,7 @@ class PositionCard extends StatelessWidget {
         final q = details.quote;
         final row = PositionValue(position: pos, price: q?.price, dayChange: q?.change, rate: 1);
         final ccy = pos.currency;
+        final now = DateTime.now();
         String qty(double v) => fmt.number(v, decimals: v == v.roundToDouble() ? 0 : 4);
         return SectionCard(
           title: l10n.portfolioYourPosition,
@@ -45,35 +46,35 @@ class PositionCard extends StatelessWidget {
             spacing: 28,
             runSpacing: 12,
             children: [
-              _Figure(
+              MetricFigure(
                 label: l10n.portfolioTotalValue,
                 value: fmt.money(row.value, ccy),
                 sub: '${qty(pos.quantity)} × ${fmt.money(row.price, ccy, showCurrency: false)}',
               ),
-              _Figure(
+              MetricFigure(
                 label: l10n.portfolioGainLoss,
                 value: fmt.money(row.gain, ccy, withSign: true),
                 sub: fmt.percent(row.gainPercent, withSign: true),
                 color: gainColor(p, row.gain),
               ),
-              _Figure(
+              MetricFigure(
                 label: l10n.portfolioToday,
                 value: fmt.money(row.dayGain, ccy, withSign: true),
                 sub: fmt.percent(q?.changePercent, withSign: true),
                 color: gainColor(p, row.dayGain),
               ),
-              _Figure(
+              MetricFigure(
                 label: l10n.portfolioInvested,
                 value: fmt.money(pos.cost, ccy),
                 sub: l10n.portfolioAvgCost(fmt.money(pos.averageCost, ccy, showCurrency: false)),
               ),
               if (row.value case final v?)
-                if (positionsAnnualReturn([pos], (_) => 1, v, DateTime.now()) case final r?)
+                if (positionsAnnualReturn([pos], (_) => 1, v, now) case final r?)
                   Tooltip(
                     message: l10n.portfolioAnnualReturnHint,
                     triggerMode: TooltipTriggerMode.tap,
                     showDuration: const Duration(seconds: 6),
-                    child: _Figure(
+                    child: MetricFigure(
                       key: const ValueKey('position-annual-return'),
                       label: l10n.portfolioAnnualReturn,
                       value: l10n.portfolioPerYear(fmt.percent(r * 100, withSign: true)),
@@ -81,84 +82,39 @@ class PositionCard extends StatelessWidget {
                     ),
                   ),
               if (pos.hasSales)
-                _Figure(
+                MetricFigure(
                   label: l10n.portfolioRealized,
                   value: fmt.money(pos.realizedGain, ccy, withSign: true),
                   color: gainColor(p, pos.realizedGain),
                 ),
-              // A kapott osztalékok a pozíció pénznemében (a más pénznemű tételek nélkül).
+              // A kapott osztalékok a pozíció pénznemében (a más pénznemű tételek nélkül), a
+              // bekerülési osztalékhozam és a rögzítettek ritmusából várható következő.
               if (services.portfolio.dividendsOf(pos.symbol).where((d) => d.currency == ccy).toList() case final ds
                   when ds.isNotEmpty) ...[
-                _Figure(
+                MetricFigure(
                   key: const ValueKey('position-dividends'),
                   label: l10n.portfolioDividendsReceived,
                   value: fmt.money(ds.fold<double>(0, (sum, d) => sum + d.amount), ccy),
                 ),
-                // Bekerülési osztalékhozam: az utolsó 12 hónap osztaléka a még birtokolt
-                // részvények vételi értékéhez mérve.
-                if (yieldOnCost(ds, pos.cost, now: DateTime.now()) case final y?)
-                  _Figure(
+                if (yieldOnCost(ds, pos.cost, now: now) case final y?)
+                  MetricFigure(
                     key: const ValueKey('position-yield-on-cost'),
                     label: l10n.labelYieldOnCost,
                     value: fmt.percent(y),
                     hint: l10n.glossYieldOnCost,
-                    hintTitle: l10n.glossTitle,
+                  ),
+                if (expectedDividends(ds, [pos.symbol], now: now).firstOrNull case final x?)
+                  MetricFigure(
+                    key: const ValueKey('position-dividend-next'),
+                    label: l10n.portfolioDividendsExpected,
+                    value:
+                        '${l10n.portfolioDividendAround(fmt.date(x.date))} · ${approxMoney(fmt, x.amount, x.currency)}',
                   ),
               ],
-              // A várható következő osztalék a rögzítettek ritmusából, a pozíció pénznemében.
-              if (expectedDividends(services.portfolio.dividendsOf(pos.symbol), [
-                    pos.symbol,
-                  ], now: DateTime.now()).where((x) => x.currency == ccy).firstOrNull
-                  case final x?)
-                _Figure(
-                  key: const ValueKey('position-dividend-next'),
-                  label: l10n.portfolioDividendsExpected,
-                  value: '${l10n.portfolioDividendAround(fmt.date(x.date))} · ~${fmt.money(x.amount, x.currency)}',
-                ),
             ],
           ),
         );
       },
-    );
-  }
-}
-
-class _Figure extends StatelessWidget {
-  const _Figure({super.key, required this.label, required this.value, this.sub, this.color, this.hint, this.hintTitle});
-
-  final String label;
-  final String value;
-  final String? sub;
-  final Color? color;
-
-  /// A mutató magyarázata (ⓘ ikon, koppintásra párbeszéd) és a tooltip címe.
-  final String? hint;
-  final String? hintTitle;
-
-  @override
-  Widget build(BuildContext context) {
-    final p = AppPalette.of(context);
-    final theme = Theme.of(context);
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        if (hint case final h?)
-          HintedLabel(
-            label: label,
-            hint: h,
-            hintTitle: hintTitle ?? '',
-            style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
-          )
-        else
-          Text(label, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
-        const SizedBox(height: 2),
-        Text(
-          value,
-          style: theme.textTheme.titleSmall?.copyWith(color: color, fontWeight: FontWeight.w700),
-        ),
-        if (sub != null) Text(sub!, style: theme.textTheme.bodySmall?.copyWith(color: color ?? p.muted)),
-      ],
     );
   }
 }
