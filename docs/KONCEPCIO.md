@@ -310,6 +310,8 @@ Google Play Console (25 USD), Stripe, Anthropic Console (költéskorláttal), Re
 kereskedelmi licence; jogász az ÁSZF-hez és a tájékoztatóhoz; EU-s tárhely a szervernek; macOS-aláírás
 (Developer ID, notarizáció) és Windows kódaláírás, különben a letöltéskor biztonsági figyelmeztetés jelenik meg.
 
+A kiadások összefoglalója (0.2.130-tól) és a bolti „Újdonságok” szövegek: `docs/VALTOZASOK.md`.
+
 ## 8. Nyitott kérdések – és ami közben eldőlt
 
 - **Melyik piac a fókusz?** Az amerikai tőzsdék (Finnhub ingyenes csomag: ár, profil, mutatók, hírek, gyorsjelentések). A BÉT-es és hongkongi papírokhoz az árfolyam a Twelve Data fizetős csomagjával jönne (tulajdonosi döntés); addig ezek „ár nélküli” pozíciók.

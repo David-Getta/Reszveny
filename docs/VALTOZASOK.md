@@ -1,0 +1,63 @@
+# Változásjegyzék (0.2.130 → 0.2.163)
+
+A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
+Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
+
+## Osztalékok
+
+- **Kapott osztalékok** kártya a portfólióban: idei és összes összeg (átváltva), kézi felvétel, törlés
+  visszavonással, évenkénti összegek a lezárt évek változásával („2025 · +8%”), CSV-export az
+  adóbevalláshoz; a bróker-exportok (Revolut, Trading 212, IBKR – forrásadóval nettósítva) osztaléksorai
+  importáláskor bekerülnek; fiókkal szinkronizálva, a biztonsági mentésben.
+- **Várható következő osztalékok** a rögzített kifizetések ritmusából (havi / negyedéves / féléves /
+  éves, a legutóbbi távolságokból): a kártyán, „A pozícióm” kártyán, az Események naptárban (naptárexportba
+  is), a heti e-mailben („a következő két hétben”).
+- **Bekerülési osztalékhozam** a pozíció kártyáján és az egész portfólióra, ⓘ magyarázattal; a főoldali
+  portfólió-kártyán az idei osztalék; a tranzakciós lapon a részvény osztalékai tételenként.
+- Az **AI-portfólióelemzés** megkapja a 12 havi tényleges osztalékot és a várható kifizetéseket; a heti
+  e-mail az idei összesítést pénznemenként.
+
+## Készpénz
+
+- **Készpénz a brókernél** pénznemenként: az összértékbe és a megoszlásba számít, a hozamba nem; a cél-sávban,
+  az újrasúlyozásban és az AI-elemzésben; csak készpénzzel is „él” a portfólió; fiókkal szinkronizálva,
+  időbélyeggel (a törlés kétoldali összefésülésnél sem éled újra).
+
+## Kezdőképernyő és piacok
+
+- **„Amíg távol voltál”** kártya: a nagy mozgások, a megszólalt riasztások, a közben megjelent eredmények és
+  a portfólió változása a legutóbbi látogatás óta (előtérbe kerüléskor is).
+- **„Miért mozog ma?”** – AI-magyarázat a nagy napi mozgásra forrásokkal: a részvény fejlécében, a
+  Kedvencek listán, a kezdőképernyő csempéin és az indexekre a „Piacok ma” sávban.
+- **„Piacok ma”**: az S&P 500 technikai egysorosa (RSI, 200 napos átlag).
+
+## Technikai kép és jelzések
+
+- **„Technikai kép”** kártya a részvény oldalán (50/200 napos átlag, RSI, 30 napos volatilitás), új sorok az
+  összehasonlításban, trendkép a portfólió-grafikonon.
+- **„Jelzések”** sáv a Kedvencek oldalon (RSI szélsőség, a 200 napos átlag átlépése), napi
+  rendszerértesítés asztali gépen (kikapcsolható), a heti e-mailben is.
+- **Fogalomtár** a Beállításokban: 29 mutató közérthető magyarázata, kereshetően; ⓘ a kártyák számainál.
+
+## Események
+
+- Az Események lista követi a portfóliót (vétel, eladás, osztalék után azonnal, hálózat nélkül); a
+  naptárexportban a várható osztalékok is.
+
+## Bolti előkészítés
+
+- Apple adatvédelmi manifest (iOS, macOS), exportengedély-kulcs, macOS mentési jogosultság; Google Play
+  „Adatbiztonság” válaszok; Microsoft Store MSIX-konfiguráció; a bolti adatlapok 70 nyelven frissítve.
+
+## Minőség
+
+- Hét kódátnézés és egy egyszerűsítési átnézés javításai, bővített tesztek; 120 nyelven minden új szöveg.
+
+## Bolti „Újdonságok” (rövid)
+
+**Magyar:** Kapott és várható osztalékok, bekerülési osztalékhozam, készpénz a brókernél, „Amíg távol
+voltál” kártya, „Miért mozog ma?” AI-magyarázat, technikai kép és jelzések, fogalomtár – mind 120 nyelven.
+
+**English:** Dividends received and expected, yield on cost, cash at your broker, a “While you were away”
+card, “Why is it moving today?” AI explanations, a technical picture with signals, and a glossary – all in
+120 languages.
