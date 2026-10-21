@@ -44,10 +44,13 @@ void main() {
       totalValue: 5319150.4,
       invested: 4278402,
       dividendYield: 1.31,
+      dividendsReceived: 41250.4,
       language: 'Hungarian',
       today: DateTime(2026, 10, 15),
     );
     final user = ((body['messages'] as List).single as Map)['content'] as String;
+    expect(user, contains('"dividends_received_12m":41250'));
+    expect(PortfolioReviewer.systemPrompt, contains('dividends_received_12m'));
     expect(user, contains('Language: Hungarian'));
     expect(user, contains('Today: 2026-10-15'));
     expect(user, contains('"total_value":5319150'));

@@ -123,7 +123,7 @@ Write in the requested language the way a native financial journalist would, pla
 - diversification: concentration (largest positions, top-3 weight), sector and country spread, and what is missing. A holding marked with a "note" has no company profile: it is probably an ETF or a fund – treat it as a basket (the index or theme it tracks, from its ticker and your knowledge), count its exposure in the sector and country spread accordingly, and say what you assumed.
 - currency: the currency split and what a move in the main currencies would do to the reader's home-currency value.
 - risks: risks shared by several positions (same theme, supplier, rate sensitivity, valuation level, beta), and the biggest single point of failure.
-- income: dividend yield of the portfolio and of the main payers; skip the section only if no position pays.
+- income: dividend yield of the portfolio and of the main payers; if "dividends_received_12m" is given (cash actually received in the last 12 months, in the portfolio currency), compare it with what the yield implies; skip the section only if no position pays and nothing was received.
 - consider: 3-5 bullets of things worth considering, each with the reason and what it depends on (not instructions).
 
 Return one JSON object: {"headline": string (one sentence: the most decision-relevant point), "sections": [{"kind": string, "title": string (in the requested language), "paragraphs": [string], "bullets": [string]}]}. Keep it to about 450-700 words in total.''';
@@ -134,6 +134,7 @@ Return one JSON object: {"headline": string (one sentence: the most decision-rel
     required double totalValue,
     required double invested,
     double? dividendYield,
+    double? dividendsReceived,
     required String language,
     required DateTime today,
     String model = '',
@@ -157,6 +158,8 @@ Return one JSON object: {"headline": string (one sentence: the most decision-rel
               'total_value': totalValue.round(),
               'invested': invested.round(),
               'dividend_yield_pct': ?dividendYield == null ? null : double.parse(dividendYield.toStringAsFixed(2)),
+              // Az elmúlt 12 hónapban ténylegesen kapott osztalék (ha rögzítette a felhasználó).
+              'dividends_received_12m': ?dividendsReceived == null || dividendsReceived <= 0 ? null : dividendsReceived.round(),
               'positions': [for (final h in holdings) h.toJson()],
             })}',
       },
@@ -198,7 +201,7 @@ Return one JSON object: {"headline": string (one sentence: the most decision-rel
   };
 
   /// Az elemzés elkészítése és elmentése.
-  Future<StockReport> review(PortfolioSnapshot snapshot, {required String language}) async {
+  Future<StockReport> review(PortfolioSnapshot snapshot, {required String language, double? dividendsReceived}) async {
     if (!config.hasAnthropicKey) throw const AnalysisException(AppErrorCode.aiNotConfigured);
     final body = requestBody(
       holdings: await holdings(snapshot),
@@ -206,6 +209,7 @@ Return one JSON object: {"headline": string (one sentence: the most decision-rel
       totalValue: snapshot.value,
       invested: snapshot.cost,
       dividendYield: snapshot.dividendYield,
+      dividendsReceived: dividendsReceived,
       language: language,
       today: _clock(),
       model: config.anthropicModel,

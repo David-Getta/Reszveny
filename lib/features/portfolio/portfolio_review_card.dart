@@ -47,7 +47,11 @@ class _PortfolioReviewCardState extends State<PortfolioReviewCard> {
     });
     services.telemetry.track('portfolio_review');
     try {
-      final r = await services.portfolioReviewer.review(widget.snapshot, language: language);
+      final r = await services.portfolioReviewer.review(
+        widget.snapshot,
+        language: language,
+        dividendsReceived: await _dividendsReceived(services),
+      );
       if (mounted) setState(() => _report = r);
       // A keret a szerveren fogyott: a kliens átveszi.
       await services.syncEntitlements();
@@ -66,6 +70,30 @@ class _PortfolioReviewCardState extends State<PortfolioReviewCard> {
         AppErrorCode.noPlan,
         AppErrorCode.notEnoughCredits,
       }.contains(e.code);
+
+  /// Az elmúlt 12 hónapban kapott osztalék a portfólió pénznemében (a mai
+  /// árfolyamon); amelyikhez nincs árfolyam, kimarad. `null`, ha nincs tétel.
+  Future<double?> _dividendsReceived(AppServices services) async {
+    final from = DateTime.now().subtract(const Duration(days: 365));
+    final currency = widget.snapshot.currency;
+    var sum = 0.0;
+    var any = false;
+    for (final d in services.portfolio.dividends) {
+      if (d.date == null || d.date!.isBefore(from)) continue;
+      double? rate = 1;
+      if (d.currency != currency) {
+        try {
+          rate = (await services.fx.rate(d.currency, currency))?.rate;
+        } catch (_) {
+          rate = null;
+        }
+      }
+      if (rate == null) continue;
+      sum += d.amount * rate;
+      any = true;
+    }
+    return any ? sum : null;
+  }
 
   @override
   Widget build(BuildContext context) {
