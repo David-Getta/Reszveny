@@ -104,9 +104,10 @@ class AwaySummary extends ChangeNotifier {
     }
     final prev = _parse(prefs.getString(storeKey));
     final prices = <String, double>{};
+    // Egy-egy hiányzó ár (vagy azonnal dobó, hálózat nélküli lekérés) nem állítja meg.
     await Future.wait([
       for (final s in symbols)
-        marketData.quote(s).then((q) {
+        Future.sync(() => marketData.quote(s)).then((q) {
           if (q.price > 0) prices[s] = q.price;
         }, onError: (_) {}),
     ]);
