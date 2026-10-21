@@ -107,8 +107,8 @@ class PortfolioSnapshot {
   /// Napi változás százalékban a tegnapi záró értékhez képest.
   double? get dayGainPercent => value - dayGain == 0 ? null : dayGain / (value - dayGain) * 100;
 
-  /// Egyetlen pozíciónak sincs ára vagy árfolyama: az összeg nem ismert (nem 0).
-  bool get unknown => rows.isNotEmpty && rows.every((r) => !r.inTotal);
+  /// Egyetlen pozíciónak sincs ára vagy árfolyama, és készpénz sincs: az összeg nem ismert (nem 0).
+  bool get unknown => rows.isNotEmpty && rows.every((r) => !r.inTotal) && cash <= 0;
 
   /// Vannak-e pozíciók, amelyek ár vagy árfolyam híján kimaradtak az összesítésből.
   bool get hasExcluded => rows.any((r) => !r.inTotal);

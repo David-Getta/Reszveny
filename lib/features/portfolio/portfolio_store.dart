@@ -213,9 +213,11 @@ class PortfolioStore extends ChangeNotifier {
     List<PortfolioLot> lots = const [],
     List<DividendRecord> dividends = const [],
     Map<String, double> cash = const {},
+    Map<String, DateTime> cashAt = const {},
   }) : _lots = List.of(lots),
        _dividends = List.of(dividends)..sort(_newestFirst),
-       _cash = Map.of(cash);
+       _cash = Map.of(cash),
+       _cashAt = Map.of(cashAt);
 
   /// Az újabb elöl (dátum nélküli a végén) – a lista mindig így van tartva.
   static int _newestFirst(DividendRecord a, DividendRecord b) =>
@@ -224,6 +226,7 @@ class PortfolioStore extends ChangeNotifier {
   static const _key = 'portfolio_lots';
   static const _dividendsKey = 'portfolio_dividends';
   static const _cashKey = 'portfolio_cash';
+  static const _cashAtKey = 'portfolio_cash_at';
 
   final List<PortfolioLot> _lots;
   final List<DividendRecord> _dividends;
@@ -231,8 +234,15 @@ class PortfolioStore extends ChangeNotifier {
   /// Készpénz a brókernél, pénznemenként (a felhasználó adja meg).
   final Map<String, double> _cash;
   Map<String, double> get cash => Map.unmodifiable(_cash);
+
+  /// Pénznemenként az utolsó módosítás ideje (UTC) – a törölté is marad, hogy a
+  /// szinkron ne élessze újra egy másik készülék régebbi egyenlegével.
+  final Map<String, DateTime> _cashAt;
+  Map<String, DateTime> get cashAt => Map.unmodifiable(_cashAt);
   List<PortfolioLot> get lots => List.unmodifiable(_lots);
-  bool get isEmpty => _lots.isEmpty;
+
+  /// Nincs se tranzakció, se készpénz: a portfólió oldal az üres állapotot mutatja.
+  bool get isEmpty => _lots.isEmpty && _cash.isEmpty;
 
   /// A kapott osztalékok, az újabb elöl (dátum nélküli a végén).
   List<DividendRecord> get dividends => List.unmodifiable(_dividends);
@@ -260,13 +270,21 @@ class PortfolioStore extends ChangeNotifier {
       }
 
       Map<String, double> cash = const {};
+      Map<String, DateTime> cashAt = const {};
       try {
         final raw = prefs.getString(_cashKey);
         if (raw != null) cash = parseCashMap(jsonDecode(raw));
+        final rawAt = prefs.getString(_cashAtKey);
+        if (rawAt != null) cashAt = parseCashAt(jsonDecode(rawAt));
       } catch (_) {
         // Sérült készpénz-egyenleg: üres.
       }
-      return PortfolioStore(lots: read(_key, parse), dividends: read(_dividendsKey, parseDividends), cash: cash);
+      return PortfolioStore(
+        lots: read(_key, parse),
+        dividends: read(_dividendsKey, parseDividends),
+        cash: cash,
+        cashAt: cashAt,
+      );
     } catch (_) {
       return PortfolioStore();
     }
@@ -281,13 +299,26 @@ class PortfolioStore extends ChangeNotifier {
     ];
   }
 
-  /// Pénznem → összeg térkép beolvasása; a hibás vagy nem pozitív tételek kimaradnak.
+  static final _currencyCode = RegExp(r'^[A-Za-z]{3}$');
+
+  /// Pénznem → összeg térkép beolvasása; a hibás, nem véges vagy nem pozitív tételek kimaradnak.
   static Map<String, double> parseCashMap(Object? v) => {
     if (v is Map)
       for (final e in v.entries)
-        if (e.value is num && (e.value as num) > 0 && RegExp(r'^[A-Za-z]{3}$').hasMatch('${e.key}'))
-          '${e.key}'.toUpperCase(): (e.value as num).toDouble(),
+        if (e.value case final num a when a.isFinite && a > 0 && _currencyCode.hasMatch('${e.key}'))
+          '${e.key}'.toUpperCase(): a.toDouble(),
   };
+
+  /// Pénznem → utolsó módosítás ideje térkép beolvasása (ISO-8601); a hibás tételek kimaradnak.
+  static Map<String, DateTime> parseCashAt(Object? v) => {
+    if (v is Map)
+      for (final e in v.entries)
+        if (_currencyCode.hasMatch('${e.key}'))
+          if (DateTime.tryParse('${e.value}') case final t?) '${e.key}'.toUpperCase(): t.toUtc(),
+  };
+
+  /// A módosítási idők JSON-ba (a szinkroncsomagba és a tárolóba).
+  Map<String, String> get cashAtJson => {for (final e in _cashAt.entries) e.key: e.value.toIso8601String()};
 
   static List<DividendRecord> parseDividends(String raw) {
     final v = jsonDecode(raw);
@@ -363,6 +394,7 @@ class PortfolioStore extends ChangeNotifier {
     _lots.clear();
     _dividends.clear();
     _cash.clear();
+    _cashAt.clear();
     notifyListeners();
     await _save();
   }
@@ -405,23 +437,31 @@ class PortfolioStore extends ChangeNotifier {
     await _save();
   }
 
-  /// Készpénz egy pénznemben; nullával (vagy negatívval) törlődik.
+  /// Készpénz egy pénznemben; nullával (vagy negatívval) törlődik. A nem véges
+  /// összeg figyelmen kívül marad (JSON-ba sem menne).
   Future<void> setCash(String currency, double amount) async {
+    if (!amount.isFinite) return;
     final c = currency.trim().toUpperCase();
     if (amount > 0) {
       _cash[c] = amount;
     } else {
       _cash.remove(c);
     }
+    _cashAt[c] = DateTime.now().toUtc();
     notifyListeners();
     await _save();
   }
 
-  /// Az összes készpénz-egyenleg cseréje (szinkronkor a fiók adataira).
-  Future<void> replaceAllCash(Map<String, double> cash) async {
+  /// Az összes készpénz-egyenleg cseréje (szinkronkor a fiók adataira), a módosítási időkkel.
+  Future<void> replaceAllCash(Map<String, double> cash, {Map<String, DateTime>? at}) async {
     _cash
       ..clear()
       ..addAll(cash);
+    if (at != null) {
+      _cashAt
+        ..clear()
+        ..addAll(at);
+    }
     notifyListeners();
     await _save();
   }
@@ -456,6 +496,7 @@ class PortfolioStore extends ChangeNotifier {
       await prefs.setString(_key, jsonEncode(_lots.map((l) => l.toJson()).toList()));
       await prefs.setString(_dividendsKey, jsonEncode(_dividends.map((d) => d.toJson()).toList()));
       await prefs.setString(_cashKey, jsonEncode(_cash));
+      await prefs.setString(_cashAtKey, jsonEncode(cashAtJson));
     } catch (_) {
       // A tárolás hibája nem akadályozza a működést.
     }

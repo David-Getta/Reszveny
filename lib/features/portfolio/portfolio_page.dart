@@ -1181,8 +1181,8 @@ class PortfolioSummaryCard extends StatelessWidget {
     return ListenableBuilder(
       listenable: services.portfolio,
       builder: (context, _) {
-        // Csak ha van még birtokolt részvény (a lezártak a portfólió oldalon látszanak).
-        if (services.portfolio.positions.isEmpty) return const SizedBox.shrink();
+        // Csak ha van még birtokolt részvény vagy készpénz (a lezártak a portfólió oldalon látszanak).
+        if (services.portfolio.positions.isEmpty && services.portfolio.cash.isEmpty) return const SizedBox.shrink();
         return Padding(
           padding: const EdgeInsets.only(top: 24),
           child: PortfolioSnapshotBuilder(

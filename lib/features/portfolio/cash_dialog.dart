@@ -42,7 +42,7 @@ class _CashDialogState extends State<_CashDialog> {
     final amount = parseDecimal(_amount.text);
     setState(() {
       _currencyError = !RegExp(r'^[A-Z]{3}$').hasMatch(ccy);
-      _amountError = amount == null || amount < 0 ? l10n.portfolioInvalidNumber : null;
+      _amountError = amount == null || amount < 0 || !amount.isFinite ? l10n.portfolioInvalidNumber : null;
     });
     if (_currencyError || _amountError != null) return;
     await AppServices.of(context).portfolio.setCash(ccy, amount!);
@@ -126,7 +126,11 @@ class _CashDialogState extends State<_CashDialog> {
       ),
       actions: [
         TextButton(onPressed: () => Navigator.of(context).pop(), child: Text(l10n.cancel)),
-        FilledButton(key: const ValueKey('cash-submit'), onPressed: _submit, child: Text(l10n.portfolioAdd)),
+        FilledButton(
+          key: const ValueKey('cash-submit'),
+          onPressed: _submit,
+          child: Text(MaterialLocalizations.of(context).saveButtonLabel),
+        ),
       ],
     );
   }

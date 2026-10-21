@@ -3,6 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:reszveny/app.dart';
 import 'package:reszveny/core/models/stock_quote.dart';
+import 'package:reszveny/features/portfolio/portfolio_page.dart';
 import 'package:reszveny/features/portfolio/portfolio_store.dart';
 import 'package:reszveny/features/portfolio/portfolio_valuation.dart';
 
@@ -21,9 +22,34 @@ void main() {
     expect(again.cash, {'USD': 1200.0, 'HUF': 250000.0});
     await again.setCash('HUF', 0);
     expect(again.cash, {'USD': 1200.0});
+    // A módosítás ideje pénznemenként megmarad (a törölté is) és túléli az újratöltést.
+    expect(again.cashAt.keys, containsAll(['USD', 'HUF']));
+    expect((await PortfolioStore.load()).cashAt['HUF'], again.cashAt['HUF']);
     await again.clear();
     expect(again.cash, isEmpty);
     expect(PortfolioStore.parseCashMap({'USD': 5, 'x': 'bad', 'EUR': -1, 'HUF': 10.5}), {'USD': 5.0, 'HUF': 10.5});
+    // Nem véges összeg: nem kerül be (JSON-ba sem menne), a beállítás figyelmen kívül marad.
+    expect(PortfolioStore.parseCashMap({'USD': double.infinity, 'EUR': double.nan, 'HUF': 1}), {'HUF': 1.0});
+    await again.setCash('USD', double.infinity);
+    await again.setCash('USD', double.nan);
+    expect(again.cash, isEmpty);
+  });
+
+  test('a cash-only portfolio is not empty, and its total is known', () async {
+    final store = PortfolioStore();
+    expect(store.isEmpty, isTrue);
+    await store.setCash('USD', 1000);
+    expect(store.isEmpty, isFalse);
+    final s = PortfolioSnapshot.compute(
+      const [],
+      quotes: const {},
+      rate: (from, to) => from == to ? 1 : null,
+      currency: 'USD',
+      cash: {'USD': 1000},
+    );
+    expect(s.unknown, isFalse);
+    expect(s.totalValue, 1000);
+    store.dispose();
   });
 
   test('the snapshot: cash converted into the total value and the allocation, not into the gain', () {
@@ -86,5 +112,22 @@ void main() {
     expect(find.byKey(const ValueKey('portfolio-cash')), findsOneWidget);
     expect(find.text('3,314.50 USD'), findsOneWidget);
     expect(find.text('1,000.00 USD'), findsWidgets);
+  });
+
+  testWidgets('cash without any stock: the portfolio page shows the total instead of the empty state', (tester) async {
+    tester.view.physicalSize = const Size(1200, 2600);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final s = services();
+    await s.portfolio.setCash('USD', 2500);
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    // A főoldali összesítő kártya is látszik.
+    expect(find.byType(PortfolioSummaryCard), findsOneWidget);
+    await tester.tap(find.text('Portfolio').first);
+    await tester.pumpAndSettle();
+    expect(find.textContaining('Nothing here yet'), findsNothing);
+    expect(find.byKey(const ValueKey('portfolio-cash')), findsOneWidget);
+    expect(find.text('2,500.00 USD'), findsWidgets);
   });
 }

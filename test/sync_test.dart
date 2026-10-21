@@ -103,6 +103,19 @@ void main() {
     await a.sync.syncNow();
     await b.sync.syncNow();
     expect(b.portfolio.cash, isEmpty);
+    // Kétoldali változás: A törli az USD-t, B közben EUR-t ad hozzá → mindkettő érvényesül,
+    // az USD nem éled újra a B régebbi egyenlegéből.
+    await a.portfolio.setCash('USD', 500);
+    await a.sync.syncNow();
+    await b.sync.syncNow();
+    expect(b.portfolio.cash, {'USD': 500.0});
+    await a.portfolio.setCash('USD', 0);
+    await b.portfolio.setCash('EUR', 300);
+    await b.sync.syncNow();
+    await a.sync.syncNow();
+    expect(a.portfolio.cash, {'EUR': 300.0});
+    await b.sync.syncNow();
+    expect(b.portfolio.cash, {'EUR': 300.0});
     expect((server.data!['dividends'] as List).single['symbol'], 'AAPL');
     await b.sync.syncNow();
     expect(b.preferences.favorites, containsAll(['NVDA', 'MSFT', 'AAPL']));

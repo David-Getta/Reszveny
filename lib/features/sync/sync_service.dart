@@ -138,6 +138,7 @@ class SyncService extends ChangeNotifier {
     'lots': [for (final l in portfolio.lots) l.toJson()],
     'dividends': [for (final d in portfolio.dividends) d.toJson()],
     'cash': portfolio.cash,
+    'cash_at': portfolio.cashAtJson,
     'alerts': [for (final a in alerts.alerts) a.toJson()],
     'notes': {for (final e in notes.all.entries) e.key: e.value.toJson()},
   };
@@ -183,6 +184,7 @@ class SyncService extends ChangeNotifier {
         if (mine is! num || (a['peak'] as num) > mine) alertsMerged[i] = {...alertsMerged[i], 'peak': a['peak']};
       }
     }
+    final cash = mergeCash(local, remote);
     return {
       'v': 1,
       'lang': ?(local['lang'] ?? remote['lang']),
@@ -196,11 +198,32 @@ class SyncService extends ChangeNotifier {
       'targets': {...AppPreferences.parseTargets(remote['targets']), ...AppPreferences.parseTargets(local['targets'])},
       'lots': byId(local['lots'], remote['lots']),
       'dividends': byId(local['dividends'], remote['dividends']),
-      // Készpénz: pénznemenként a helyi nyer.
-      'cash': {...PortfolioStore.parseCashMap(remote['cash']), ...PortfolioStore.parseCashMap(local['cash'])},
+      'cash': cash.cash,
+      'cash_at': cash.at,
       'alerts': alertsMerged,
       'notes': mergedNotes,
     };
+  }
+
+  /// Készpénz: pénznemenként az újabb módosítás nyer – a törlés is, így egy másik
+  /// készülék régebbi egyenlege nem éleszti újra. Időbélyeg nélkül (régi csomag)
+  /// a helyi nyer, és ami csak a távoliban van, megmarad.
+  static ({Map<String, double> cash, Map<String, String> at}) mergeCash(
+    Map<String, dynamic> local,
+    Map<String, dynamic> remote,
+  ) {
+    final lc = PortfolioStore.parseCashMap(local['cash']), rc = PortfolioStore.parseCashMap(remote['cash']);
+    final la = PortfolioStore.parseCashAt(local['cash_at']), ra = PortfolioStore.parseCashAt(remote['cash_at']);
+    final cash = <String, double>{}, at = <String, String>{};
+    for (final c in {...lc.keys, ...rc.keys, ...la.keys, ...ra.keys}) {
+      final lt = la[c], rt = ra[c];
+      final remoteWins = rt != null && (lt == null || rt.isAfter(lt));
+      final v = lt == null && rt == null ? (lc[c] ?? rc[c]) : (remoteWins ? rc[c] : lc[c]);
+      if (v != null) cash[c] = v;
+      final newest = remoteWins ? rt : (lt ?? rt);
+      if (newest != null) at[c] = newest.toIso8601String();
+    }
+    return (cash: cash, at: at);
   }
 
   /// Saját listák: név szerint (kis- és nagybetűtől függetlenül) összevonva, a
@@ -247,7 +270,13 @@ class SyncService extends ChangeNotifier {
       await preferences.setWatchLists([for (final l in data['watch_lists'] as List) ?WatchList.fromJson(l)]);
     }
     if (data['targets'] is Map) await preferences.setTargets(AppPreferences.parseTargets(data['targets']));
-    if (data['cash'] is Map) await portfolio.replaceAllCash(PortfolioStore.parseCashMap(data['cash']));
+    if (data['cash'] is Map) {
+      await portfolio.replaceAllCash(
+        PortfolioStore.parseCashMap(data['cash']),
+        // Régi csomagban nincs időbélyeg: akkor a helyiek maradnak.
+        at: data['cash_at'] is Map ? PortfolioStore.parseCashAt(data['cash_at']) : null,
+      );
+    }
     await preferences.setEmailAlerts(data['email_alerts'] != false);
     await preferences.setWeeklyDigest(data['weekly_digest'] == true);
     await portfolio.replaceAll([for (final j in maps(data['lots'])) ?PortfolioLot.fromJson(j)]);

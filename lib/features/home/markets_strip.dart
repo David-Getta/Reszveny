@@ -10,6 +10,7 @@ import '../../core/util/formatters.dart';
 import '../../core/util/us_market_hours.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../analysis/price_stats.dart';
+import '../analysis/technical_text.dart';
 import '../fx/fx_service.dart';
 import '../stock_detail/widgets/move_why_button.dart';
 import '../../theme/app_theme.dart';
@@ -79,13 +80,13 @@ class _MarketsStripState extends State<MarketsStrip> {
       for (final (s, _) in MarketsStrip.markets)
         market.quote(s).then<StockQuote?>((q) => q, onError: (Object _) => null),
     ]);
+    // Future.sync: a hálózat nélküli (azonnali) hiba is a FutureBuilderhez kerül, nem a kirajzolásba.
+    _tech ??= Future.sync(() => market.history(MarketsStrip.markets.first.$1, years: 1))
+        .catchError((Object _) => PriceHistory(symbol: MarketsStrip.markets.first.$1, points: const []));
     final pair = MarketsStrip.fxPair(services.displayCurrency(Localizations.localeOf(context)));
     if (pair != _pair) {
       _pair = pair;
       _fx = services.fx.recent(pair.$1, pair.$2);
-      // Future.sync: a hálózat nélküli (azonnali) hiba is a FutureBuilderhez kerül, nem a kirajzolásba.
-      _tech ??= Future.sync(() => services.marketData.history(MarketsStrip.markets.first.$1, years: 1))
-          .catchError((Object _) => PriceHistory(symbol: MarketsStrip.markets.first.$1, points: const []));
     }
   }
 
@@ -230,22 +231,18 @@ class _MarketsStripState extends State<MarketsStrip> {
                 final pts = snap.data?.points;
                 if (pts == null || pts.isEmpty) return const SizedBox.shrink();
                 final rsi = PriceStats.rsi(pts, 14);
-                final sma = PriceStats.sma(pts, 200);
                 final last = quotes.firstOrNull?.price ?? pts.last.close;
-                if (rsi == null && sma == null) return const SizedBox.shrink();
+                final average = describeVsAverage(l10n, fmt, last, PriceStats.sma(pts, 200), decimals: 1);
+                if (rsi == null && average == null) return const SizedBox.shrink();
                 final parts = <String>[
                   MarketsStrip.markets.first.$2,
-                  if (rsi != null)
-                    'RSI ${fmt.number(rsi, decimals: 0)} · ${rsi > 70 ? l10n.techOverbought : (rsi < 30 ? l10n.techOversold : l10n.techNeutral)}',
-                  if (sma != null && sma > 0)
-                    last >= sma
-                        ? l10n.techAbove(fmt.percent((last / sma - 1) * 100, decimals: 1))
-                        : l10n.techBelow(fmt.percent((1 - last / sma) * 100, decimals: 1)),
+                  if (rsi != null) 'RSI ${describeRsi(l10n, fmt, rsi)}',
+                  if (average != null) '$average (${l10n.labelSma200})',
                 ];
                 return Padding(
                   padding: const EdgeInsets.only(top: 4),
                   child: Text(
-                    '${parts.join(' · ')} (${l10n.labelSma200})',
+                    parts.join(' · '),
                     key: const ValueKey('market-tech'),
                     style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
                   ),

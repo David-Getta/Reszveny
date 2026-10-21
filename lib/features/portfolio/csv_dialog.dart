@@ -51,7 +51,7 @@ class PortfolioCsvMenu extends StatelessWidget {
         }
       },
       itemBuilder: (_) => [
-        if (!services.portfolio.isEmpty)
+        if (services.portfolio.lots.isNotEmpty)
           PopupMenuItem(
             key: const ValueKey('portfolio-export'),
             value: 'export',

@@ -5,6 +5,7 @@ import '../../../core/util/formatters.dart';
 import '../../../l10n/generated/app_localizations.dart';
 import '../../../theme/app_theme.dart';
 import '../../analysis/price_stats.dart';
+import '../../analysis/technical_text.dart';
 import 'kv_table.dart';
 import 'section_card.dart';
 
@@ -44,21 +45,14 @@ class TechnicalCard extends StatelessWidget {
     final rsi = PriceStats.rsi(pts, 14);
     final vol = PriceStats.volatility(pts, 21);
     String? average(double? sma) {
-      if (sma == null || sma <= 0) return null;
-      final diff = (last / sma - 1) * 100;
-      final rel = diff >= 0 ? l10n.techAbove(fmt.percent(diff.abs())) : l10n.techBelow(fmt.percent(diff.abs()));
-      return '${fmt.price(sma, currency)} · $rel';
+      final rel = describeVsAverage(l10n, fmt, last, sma);
+      return rel == null ? null : '${fmt.price(sma!, currency)} · $rel';
     }
 
     final rows = <(String, String?)>[
       (l10n.labelSma50, average(sma50)),
       (l10n.labelSma200, average(sma200)),
-      (
-        l10n.labelRsi,
-        rsi == null
-            ? null
-            : '${fmt.number(rsi, decimals: 0)} · ${rsi > 70 ? l10n.techOverbought : (rsi < 30 ? l10n.techOversold : l10n.techNeutral)}',
-      ),
+      (l10n.labelRsi, rsi == null ? null : describeRsi(l10n, fmt, rsi)),
       (l10n.labelVolatility30, vol == null ? null : fmt.percent(vol, decimals: 1)),
     ];
     if (rows.every((r) => r.$2 == null)) return const SizedBox.shrink();
