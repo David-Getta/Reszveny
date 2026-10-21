@@ -732,7 +732,15 @@ void main() {
   });
 
   testWidgets('portfolio on a phone (hungarian, HUF totals)', (tester) async {
-    final s = _services(locale: const Locale('hu'), portfolio: _samplePortfolio(), currency: 'HUF');
+    // Egy idei osztalék: a főoldali kártyán az „Idei osztalék” sor is látszik.
+    final portfolio = _samplePortfolio();
+    await portfolio.addDividend(
+      symbol: 'AAPL',
+      amount: 4.68,
+      currency: 'USD',
+      date: DateTime.now().subtract(const Duration(days: 80)),
+    );
+    final s = _services(locale: const Locale('hu'), portfolio: portfolio, currency: 'HUF');
     await pumpApp(tester, s, const Size(430, 1000));
     await _shot(tester, 'home_portfolio_phone_hu');
     // Kisebb képernyőn (vagy más betűkészlettel) a kártya az alsó menüsor alá csúszhat.
