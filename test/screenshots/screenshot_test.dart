@@ -1365,6 +1365,18 @@ void main() {
     Scrollable.ensureVisible(tester.element(section), alignment: 0.3);
     await tester.pumpAndSettle();
     await _shot(tester, 'events_home_phone_hu');
+    // Friss gyorsjelentések a kezdőképernyőn, az események alatt.
+    final results = find.byKey(const ValueKey('home-results'));
+    await tester.scrollUntilVisible(results, 200, scrollable: find.byType(Scrollable).first);
+    Scrollable.ensureVisible(tester.element(results), alignment: 0.2);
+    await tester.pumpAndSettle();
+    await _shot(tester, 'results_home_phone_hu');
+    await tester.scrollUntilVisible(
+      find.byKey(const ValueKey('events-see-all')),
+      -200,
+      scrollable: find.byType(Scrollable).first,
+    );
+    await tester.pumpAndSettle();
     await tester.tap(find.byKey(const ValueKey('events-see-all')));
     await tester.pumpAndSettle();
     await _shot(tester, 'events_page_phone_hu');
