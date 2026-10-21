@@ -267,5 +267,23 @@ void main() {
     final figure = find.byKey(const ValueKey('position-dividends'));
     await tester.ensureVisible(figure);
     expect(find.descendant(of: figure, matching: find.text('6.60 USD')), findsOneWidget);
+    // Két tételből (tavaly november, ma) éves ritmus, a következő fél éven túl: nincs várható sor.
+    expect(find.byKey(const ValueKey('position-dividend-next')), findsNothing);
+    // Negyedéves ritmusú tételek után a várható következő is látszik.
+    await s.portfolio.addDividend(symbol: 'AAPL', amount: 2.6, currency: 'USD', date: q);
+    await s.portfolio.addDividend(
+      symbol: 'AAPL',
+      amount: 2.5,
+      currency: 'USD',
+      date: q.subtract(const Duration(days: 91)),
+    );
+    await tester.pumpAndSettle();
+    final next = find.byKey(const ValueKey('position-dividend-next'));
+    await tester.ensureVisible(next);
+    // „around <dátum> · ~<összeg> USD”
+    expect(
+      find.descendant(of: next, matching: find.textContaining(RegExp(r'^around .* · ~[\d.,]+ USD$'))),
+      findsOneWidget,
+    );
   });
 }

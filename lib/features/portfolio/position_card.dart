@@ -7,6 +7,7 @@ import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 import '../stock_detail/widgets/section_card.dart';
 import 'annual_return.dart';
+import 'dividend_forecast.dart';
 import 'portfolio_page.dart';
 import 'portfolio_valuation.dart';
 
@@ -92,6 +93,17 @@ class PositionCard extends StatelessWidget {
                   label: l10n.portfolioDividendsReceived,
                   value: fmt.money(ds.fold<double>(0, (sum, d) => sum + d.amount), ccy),
                 ),
+              // A várható következő osztalék a rögzítettek ritmusából (csak még birtokolt pozíciónál).
+              if (!pos.isClosed)
+                if (expectedDividends(services.portfolio.dividendsOf(pos.symbol), [
+                      pos.symbol,
+                    ], now: DateTime.now()).firstOrNull
+                    case final x?)
+                  _Figure(
+                    key: const ValueKey('position-dividend-next'),
+                    label: l10n.portfolioDividendsExpected,
+                    value: '${l10n.portfolioDividendAround(fmt.date(x.date))} · ~${fmt.money(x.amount, x.currency)}',
+                  ),
             ],
           ),
         );
