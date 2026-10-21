@@ -701,5 +701,22 @@
   "awayReported": "Ba rezulta me basika: {symbols}",
   "moveWhyButton": "Sambu na nki yo ke soba bubu yai?",
   "moveWhyTitle": "{percent} bubu yai",
-  "moveWhyNote": "Ntendula ya AI yina me katuka na bansangu ya bubu yai ya bo me mona na internet; kikuma ya kieleka lenda vanda ya kuzaba ve to ya kuswaswana. Yo kele ve ndongisila ya kutula mbongo. Yo ke sadila ndilu na nge ya bangiufula ya konso kilumbu, kansi ve kutala ya mbote."
+  "moveWhyNote": "Ntendula ya AI yina me katuka na bansangu ya bubu yai ya bo me mona na internet; kikuma ya kieleka lenda vanda ya kuzaba ve to ya kuswaswana. Yo kele ve ndongisila ya kutula mbongo. Yo ke sadila ndilu na nge ya bangiufula ya konso kilumbu, kansi ve kutala ya mbote.",
+  "sectionTechnical": "Kifwanisu ya tekinike",
+  "labelSma50": "Kati-kati ya bilumbu 50",
+  "labelSma200": "Kati-kati ya bilumbu 200",
+  "labelRsi": "RSI (bilumbu 14)",
+  "labelVolatility30": "Nsobolo ya ntalu (bilumbu 30)",
+  "techAbove": "{percent} na zulu",
+  "techBelow": "{percent} na nsi",
+  "techOverbought": "bo sumbaka yo mingi",
+  "techOversold": "bo tekaka yo mingi",
+  "techNeutral": "na kati",
+  "techGoldenCross": "Kati-kati ya bilumbu 50 kele na zulu ya kati-kati ya bilumbu 200 – na mutindu ya kutanga ya ntama, yo kele nzila ya kutombuka.",
+  "techDeathCross": "Kati-kati ya bilumbu 50 kele na nsi ya kati-kati ya bilumbu 200 – na mutindu ya kutanga ya ntama, yo kele nzila ya kukulumuka.",
+  "glossSma50": "Kati-kati ya ntalu ya nsuka ya bilumbu 50 ya zandu ya nsuka. Ntalu yina kele na zulu na yo bo ke monaka yo mbala mingi bonso ngolo ya ntangu ya nkufi, yina kele na nsi bonso kulemba.",
+  "glossSma200": "Kati-kati ya ntalu ya nsuka ya bilumbu 200 ya zandu ya nsuka – nzila ya ntama ya ntangu ya nda. Bantu mingi ya ke tulaka mbongo ke monaka ntalu yina kele na zulu na yo bonso nzila ya kutombuka ya ntangu ya nda.",
+  "glossRsi": "Kiteso ya ngolo ya kufwanisa (RSI): yo ke fwanisaka mbongo ya me baka ntama fioti ti mbongo ya me vila ntama fioti na kiteso ya 0–100. Na zulu ya 70 bo ke tubaka mbala mingi nde bo sumbaka aksio mingi (yo tombukaka nswalu), na nsi ya 30 bo tekaka yo mingi – kansi nzila ya ngolo lenda bikala pana ntangu ya nda.",
+  "glossVolatility": "Mutindu ntalu ke sobaka kilumbu na kilumbu, ya bo me tanga na mvula mosi: 20% ke tendula nde na mvula ya mbote ntalu ke tambulaka na kati ya kiteso ya ±20%. Nsobolo ya nene ke tendula nde ntalu ke tambulaka mingi na ndambu zole.",
+  "techNote": "Bo tangaka yo na ntalu ya nsuka ya konso kilumbu. Bidimbu ya tekinike ke tubaka mambu ya me luta, kansi ve ya ke kwisa."
 }

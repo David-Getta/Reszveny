@@ -2646,4 +2646,66 @@ class AppLocalizationsMr extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'वेबवर सापडलेल्या आजच्या बातम्यांवर आधारित AI स्पष्टीकरण; खरे कारण अज्ञात किंवा वेगळे असू शकते. गुंतवणुकीचा सल्ला नाही. हे तुमचा दैनंदिन प्रश्न कोटा वापरते, विश्लेषण नव्हे.';
+
+  @override
+  String get sectionTechnical => 'तांत्रिक चित्र';
+
+  @override
+  String get labelSma50 => '५० दिवसांची सरासरी';
+
+  @override
+  String get labelSma200 => '२०० दिवसांची सरासरी';
+
+  @override
+  String get labelRsi => 'RSI (१४ दिवस)';
+
+  @override
+  String get labelVolatility30 => 'अस्थिरता (३० दिवस)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent वर';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent खाली';
+  }
+
+  @override
+  String get techOverbought => 'ओव्हरबॉट';
+
+  @override
+  String get techOversold => 'ओव्हरसोल्ड';
+
+  @override
+  String get techNeutral => 'तटस्थ';
+
+  @override
+  String get techGoldenCross =>
+      '५० दिवसांची सरासरी २०० दिवसांच्या सरासरीच्या वर आहे – पारंपरिक वाचनानुसार तेजीचा कल.';
+
+  @override
+  String get techDeathCross =>
+      '५० दिवसांची सरासरी २०० दिवसांच्या सरासरीच्या खाली आहे – पारंपरिक वाचनानुसार मंदीचा कल.';
+
+  @override
+  String get glossSma50 =>
+      'गेल्या ५० व्यवहार दिवसांच्या बंद भावाची सरासरी. त्याच्या वरचा भाव अनेकदा अल्पकालीन ताकद, तर खालचा भाव कमकुवतपणा म्हणून वाचला जातो.';
+
+  @override
+  String get glossSma200 =>
+      'गेल्या २०० व्यवहार दिवसांच्या बंद भावाची सरासरी – दीर्घकालीन कलाची पारंपरिक रेषा. अनेक गुंतवणूकदार त्याच्या वरच्या भावाला दीर्घकालीन तेजी मानतात.';
+
+  @override
+  String get glossRsi =>
+      'रिलेटिव्ह स्ट्रेंथ इंडेक्स: अलीकडील वाढ आणि अलीकडील घसरण ०–१०० च्या मोजपट्टीवर तुलना करतो. ७० च्या वर शेअर अनेकदा ओव्हरबॉट (वेगाने वाढला) आणि ३० च्या खाली ओव्हरसोल्ड म्हटला जातो – पण मजबूत कल तिथे दीर्घकाळ टिकू शकतो.';
+
+  @override
+  String get glossVolatility =>
+      'भाव दिवसागणिक किती हेलकावतो, हे वर्षाच्या प्रमाणात: २०% म्हणजे सामान्य वर्षात भाव अंदाजे ±२०% च्या मर्यादेत फिरतो. जास्त अस्थिरता म्हणजे दोन्ही दिशांना मोठ्या हालचाली.';
+
+  @override
+  String get techNote =>
+      'दैनंदिन बंद भावांवरून गणना केलेले. तांत्रिक संकेत भूतकाळ सांगतात, भविष्य नाही.';
 }

@@ -2647,4 +2647,66 @@ class AppLocalizationsTk extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Internetde tapylan şu günki habarlara esaslanýan AI düşündirişi; hakyky sebäp näbelli ýa-da başga bolup biler. Maýa goýum maslahaty däl. Analiz däl-de, gündelik sorag çägiňizi ulanýar.';
+
+  @override
+  String get sectionTechnical => 'Tehniki surat';
+
+  @override
+  String get labelSma50 => '50 günlük ortalama';
+
+  @override
+  String get labelSma200 => '200 günlük ortalama';
+
+  @override
+  String get labelRsi => 'RSI (14 gün)';
+
+  @override
+  String get labelVolatility30 => 'Üýtgäpdurma (30 gün)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent ýokarda';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent aşakda';
+  }
+
+  @override
+  String get techOverbought => 'aşa satyn alnan';
+
+  @override
+  String get techOversold => 'aşa satylan';
+
+  @override
+  String get techNeutral => 'bitarap';
+
+  @override
+  String get techGoldenCross =>
+      '50 günlük ortalama 200 günlük ortalamadan ýokarda – adaty düşündiriş boýunça ýokarlanýan ugur.';
+
+  @override
+  String get techDeathCross =>
+      '50 günlük ortalama 200 günlük ortalamadan aşakda – adaty düşündiriş boýunça aşaklaýan ugur.';
+
+  @override
+  String get glossSma50 =>
+      'Soňky 50 söwda gününiň ýapylyş nyrhynyň ortalamasy. Ondan ýokardaky nyrh köplenç gysga möhletli güýç, aşakdaky bolsa gowşaklyk hasaplanýar.';
+
+  @override
+  String get glossSma200 =>
+      'Soňky 200 söwda gününiň ýapylyş nyrhynyň ortalamasy – uzak möhletli ugruň adaty çyzygy. Köp maýadar ondan ýokardaky nyrhy uzak möhletli ýokarlanýan ugur hasaplaýar.';
+
+  @override
+  String get glossRsi =>
+      'Otnositel güýç indeksi: soňky girdejileri soňky ýitgiler bilen 0–100 şkalasynda deňeşdirýär. 70-den ýokarda paýnama köplenç aşa satyn alnan (çalt ýokarlandy), 30-dan aşakda aşa satylan diýilýär – ýöne güýçli ugur ol ýerde uzak wagtlap galyp biler.';
+
+  @override
+  String get glossVolatility =>
+      'Nyrhyň günden-güne näçe üýtgeýändigi, bir ýyla hasaplanan: 20% adaty ýylda takmynan ±20% çäginde hereket edýändigini aňladýar. Has ýokary üýtgäpdurma iki tarapa-da has uly hereketleri aňladýar.';
+
+  @override
+  String get techNote =>
+      'Gündelik ýapylyş nyrhlaryndan hasaplandy. Tehniki signallar geçmişi beýan edýär, geljegi däl.';
 }

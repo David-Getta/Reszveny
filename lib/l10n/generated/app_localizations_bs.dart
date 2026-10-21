@@ -2691,4 +2691,66 @@ class AppLocalizationsBs extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'AI objašnjenje iz današnjih vijesti pronađenih na webu; pravi razlog može biti nepoznat ili drugačiji. Nije investicijski savjet. Troši vašu dnevnu kvotu pitanja, ne analizu.';
+
+  @override
+  String get sectionTechnical => 'Tehnička slika';
+
+  @override
+  String get labelSma50 => '50-dnevni prosjek';
+
+  @override
+  String get labelSma200 => '200-dnevni prosjek';
+
+  @override
+  String get labelRsi => 'RSI (14 dana)';
+
+  @override
+  String get labelVolatility30 => 'Volatilnost (30 dana)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent iznad';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent ispod';
+  }
+
+  @override
+  String get techOverbought => 'prekupljeno';
+
+  @override
+  String get techOversold => 'preprodano';
+
+  @override
+  String get techNeutral => 'neutralno';
+
+  @override
+  String get techGoldenCross =>
+      '50-dnevni prosjek je iznad 200-dnevnog – po klasičnom tumačenju, uzlazni trend.';
+
+  @override
+  String get techDeathCross =>
+      '50-dnevni prosjek je ispod 200-dnevnog – po klasičnom tumačenju, silazni trend.';
+
+  @override
+  String get glossSma50 =>
+      'Prosječna cijena zatvaranja u posljednjih 50 trgovačkih dana. Cijena iznad nje često se tumači kao kratkoročna snaga, ispod nje kao slabost.';
+
+  @override
+  String get glossSma200 =>
+      'Prosječna cijena zatvaranja u posljednjih 200 trgovačkih dana – klasična dugoročna linija trenda. Mnogi investitori cijenu iznad nje smatraju dugoročnim uzlaznim trendom.';
+
+  @override
+  String get glossRsi =>
+      'Indeks relativne snage: upoređuje nedavne dobitke s nedavnim gubicima na skali od 0 do 100. Iznad 70 dionica se često naziva prekupljenom (brzo je rasla), ispod 30 preprodanom – ali jak trend može dugo ostati tamo.';
+
+  @override
+  String get glossVolatility =>
+      'Koliko cijena oscilira iz dana u dan, preračunato na godinu: 20% znači da se u tipičnoj godini cijena kreće unutar otprilike ±20%. Veća volatilnost znači veće pomake u oba smjera.';
+
+  @override
+  String get techNote =>
+      'Izračunato iz dnevnih cijena zatvaranja. Tehnički signali opisuju prošlost, ne budućnost.';
 }

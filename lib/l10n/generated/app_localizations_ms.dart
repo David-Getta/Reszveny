@@ -2651,4 +2651,66 @@ class AppLocalizationsMs extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Penjelasan AI berdasarkan berita hari ini yang ditemui di web; sebab sebenar mungkin tidak diketahui atau berbeza. Bukan nasihat pelaburan. Menggunakan kuota soalan harian anda, bukan analisis.';
+
+  @override
+  String get sectionTechnical => 'Gambaran teknikal';
+
+  @override
+  String get labelSma50 => 'Purata 50 hari';
+
+  @override
+  String get labelSma200 => 'Purata 200 hari';
+
+  @override
+  String get labelRsi => 'RSI (14 hari)';
+
+  @override
+  String get labelVolatility30 => 'Volatiliti (30 hari)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent di atas';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent di bawah';
+  }
+
+  @override
+  String get techOverbought => 'terlebih beli';
+
+  @override
+  String get techOversold => 'terlebih jual';
+
+  @override
+  String get techNeutral => 'neutral';
+
+  @override
+  String get techGoldenCross =>
+      'Purata 50 hari berada di atas purata 200 hari – aliran menaik mengikut bacaan klasik.';
+
+  @override
+  String get techDeathCross =>
+      'Purata 50 hari berada di bawah purata 200 hari – aliran menurun mengikut bacaan klasik.';
+
+  @override
+  String get glossSma50 =>
+      'Purata harga penutup 50 hari dagangan terakhir. Harga di atasnya sering dibaca sebagai kekuatan jangka pendek, di bawahnya sebagai kelemahan.';
+
+  @override
+  String get glossSma200 =>
+      'Purata harga penutup 200 hari dagangan terakhir – garis aliran jangka panjang yang klasik. Ramai pelabur menganggap harga di atasnya sebagai aliran menaik jangka panjang.';
+
+  @override
+  String get glossRsi =>
+      'Indeks kekuatan relatif: membandingkan keuntungan terkini dengan kerugian terkini pada skala 0–100. Melebihi 70 saham sering disebut terlebih beli (naik terlalu cepat), di bawah 30 terlebih jual – tetapi aliran yang kuat boleh kekal di sana untuk jangka masa yang lama.';
+
+  @override
+  String get glossVolatility =>
+      'Sejauh mana harga berayun dari hari ke hari, diskalakan kepada setahun: 20% bermaksud tahun biasa bergerak dalam lingkungan kira-kira ±20%. Volatiliti lebih tinggi bermaksud pergerakan lebih besar ke kedua-dua arah.';
+
+  @override
+  String get techNote =>
+      'Dikira daripada harga penutup harian. Isyarat teknikal menggambarkan masa lalu, bukan masa depan.';
 }

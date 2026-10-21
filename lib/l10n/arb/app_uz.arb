@@ -701,5 +701,22 @@
   "awayReported": "Natijalar eʼlon qilindi: {symbols}",
   "moveWhyButton": "Bugun nega harakatlanmoqda?",
   "moveWhyTitle": "Bugun {percent}",
-  "moveWhyNote": "Internetdan topilgan bugungi yangiliklarga asoslangan AI izohi; haqiqiy sabab noma'lum yoki boshqacha bo'lishi mumkin. Investitsiya maslahati emas. Tahlil emas, kunlik savol limitingizni ishlatadi."
+  "moveWhyNote": "Internetdan topilgan bugungi yangiliklarga asoslangan AI izohi; haqiqiy sabab noma'lum yoki boshqacha bo'lishi mumkin. Investitsiya maslahati emas. Tahlil emas, kunlik savol limitingizni ishlatadi.",
+  "sectionTechnical": "Texnik manzara",
+  "labelSma50": "50 kunlik o'rtacha",
+  "labelSma200": "200 kunlik o'rtacha",
+  "labelRsi": "RSI (14 kun)",
+  "labelVolatility30": "O'zgaruvchanlik (30 kun)",
+  "techAbove": "{percent} yuqorida",
+  "techBelow": "{percent} pastda",
+  "techOverbought": "haddan ortiq sotib olingan",
+  "techOversold": "haddan ortiq sotilgan",
+  "techNeutral": "neytral",
+  "techGoldenCross": "50 kunlik o'rtacha 200 kunlik o'rtachadan yuqorida – klassik talqinga ko'ra o'sish trendi.",
+  "techDeathCross": "50 kunlik o'rtacha 200 kunlik o'rtachadan pastda – klassik talqinga ko'ra pasayish trendi.",
+  "glossSma50": "So'nggi 50 savdo kunining yopilish narxi o'rtachasi. Undan yuqoridagi narx ko'pincha qisqa muddatli kuch, pastdagisi zaiflik deb o'qiladi.",
+  "glossSma200": "So'nggi 200 savdo kunining yopilish narxi o'rtachasi – uzoq muddatli trendning klassik chizig'i. Ko'p investorlar undan yuqoridagi narxni uzoq muddatli o'sish trendi deb hisoblaydi.",
+  "glossRsi": "Nisbiy kuch indeksi: so'nggi o'sishlarni so'nggi pasayishlar bilan 0–100 shkalasida solishtiradi. 70 dan yuqorida aksiya ko'pincha haddan ortiq sotib olingan (tez o'sdi), 30 dan pastda haddan ortiq sotilgan deyiladi – lekin kuchli trend u yerda uzoq qolishi mumkin.",
+  "glossVolatility": "Narx kundan kunga qanchalik o'zgarishi, bir yilga hisoblangan: 20% odatiy yilda taxminan ±20% oralig'ida harakat qilishini bildiradi. Yuqori o'zgaruvchanlik ikki tomonga ham kattaroq harakatlarni bildiradi.",
+  "techNote": "Kunlik yopilish narxlaridan hisoblangan. Texnik signallar o'tmishni tasvirlaydi, kelajakni emas."
 }

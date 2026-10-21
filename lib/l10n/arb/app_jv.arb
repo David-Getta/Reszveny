@@ -701,5 +701,22 @@
   "awayReported": "Ngumumake asil: {symbols}",
   "moveWhyButton": "Kenapa obah dina iki?",
   "moveWhyTitle": "{percent} dina iki",
-  "moveWhyNote": "Panjelasan AI saka warta dina iki sing ditemokake ing web; alesan sing sabenere bisa uga ora dingerteni utawa beda. Dudu saran investasi. Nganggo kuota pitakon saben dina sampeyan, dudu analisis."
+  "moveWhyNote": "Panjelasan AI saka warta dina iki sing ditemokake ing web; alesan sing sabenere bisa uga ora dingerteni utawa beda. Dudu saran investasi. Nganggo kuota pitakon saben dina sampeyan, dudu analisis.",
+  "sectionTechnical": "Gambaran teknikal",
+  "labelSma50": "Rata-rata 50 dina",
+  "labelSma200": "Rata-rata 200 dina",
+  "labelRsi": "RSI (14 dina)",
+  "labelVolatility30": "Volatilitas (30 dina)",
+  "techAbove": "{percent} ing ndhuwur",
+  "techBelow": "{percent} ing ngisor",
+  "techOverbought": "jenuh tuku",
+  "techOversold": "jenuh adol",
+  "techNeutral": "netral",
+  "techGoldenCross": "Rata-rata 50 dina ana ing ndhuwur rata-rata 200 dina – tren munggah miturut wacan klasik.",
+  "techDeathCross": "Rata-rata 50 dina ana ing ngisor rata-rata 200 dina – tren mudhun miturut wacan klasik.",
+  "glossSma50": "Rata-rata rega panutupan 50 dina dagang pungkasan. Rega ing ndhuwure asring diwaca minangka kakuwatan jangka cendhak, ing ngisore minangka kelemahan.",
+  "glossSma200": "Rata-rata rega panutupan 200 dina dagang pungkasan – garis tren jangka dawa sing klasik. Akeh investor nganggep rega ing ndhuwure minangka tren munggah jangka dawa.",
+  "glossRsi": "Relative strength index: mbandhingake bathi anyar karo rugi anyar ing skala 0–100. Ing ndhuwur 70 saham asring diarani jenuh tuku (munggah cepet), ing ngisor 30 jenuh adol – nanging tren sing kuwat bisa tetep ana ing kono suwe.",
+  "glossVolatility": "Sepira regane obah saben dina, diitung setaun: 20% tegese ing taun biasa rega obah ing kisaran kira-kira ±20%. Volatilitas luwih dhuwur tegese obahe luwih gedhe menyang loro arah.",
+  "techNote": "Diitung saka rega panutupan saben dina. Sinyal teknikal nggambarake masa lalu, dudu masa depan."
 }

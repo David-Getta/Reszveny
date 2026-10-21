@@ -2532,6 +2532,63 @@ class AppLocalizationsZh extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'AI 根据网上找到的今日新闻给出的解释；真实原因可能未知或有所不同。不构成投资建议。消耗您的每日提问额度，而非分析额度。';
+
+  @override
+  String get sectionTechnical => '技术面';
+
+  @override
+  String get labelSma50 => '50日均线';
+
+  @override
+  String get labelSma200 => '200日均线';
+
+  @override
+  String get labelRsi => 'RSI（14日）';
+
+  @override
+  String get labelVolatility30 => '波动率（30日）';
+
+  @override
+  String techAbove(String percent) {
+    return '高于均线 $percent';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '低于均线 $percent';
+  }
+
+  @override
+  String get techOverbought => '超买';
+
+  @override
+  String get techOversold => '超卖';
+
+  @override
+  String get techNeutral => '中性';
+
+  @override
+  String get techGoldenCross => '50日均线位于200日均线之上——按传统解读为上升趋势。';
+
+  @override
+  String get techDeathCross => '50日均线位于200日均线之下——按传统解读为下降趋势。';
+
+  @override
+  String get glossSma50 => '最近50个交易日收盘价的平均值。价格在其上方通常被视为短期强势，在其下方则被视为弱势。';
+
+  @override
+  String get glossSma200 => '最近200个交易日收盘价的平均值——经典的长期趋势线。许多投资者把价格位于其上方视为长期上升趋势。';
+
+  @override
+  String get glossRsi =>
+      '相对强弱指数：在0–100的区间内比较近期涨幅与近期跌幅。高于70通常称为超买（涨得太快），低于30称为超卖——但强势趋势可能长时间停留在这些区域。';
+
+  @override
+  String get glossVolatility =>
+      '价格每日波动的幅度，按年折算：20%表示在典型的一年内价格大致在±20%范围内波动。波动率越高，涨跌幅度都越大。';
+
+  @override
+  String get techNote => '根据每日收盘价计算。技术信号描述的是过去，而非未来。';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -5060,4 +5117,61 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   @override
   String get moveWhyNote =>
       'AI 根據網上搵到的今日新聞作出的解釋；真正原因可能未知或有所不同。不構成投資建議。會使用你的每日提問額度，而非分析。';
+
+  @override
+  String get sectionTechnical => '技術面';
+
+  @override
+  String get labelSma50 => '50日平均線';
+
+  @override
+  String get labelSma200 => '200日平均線';
+
+  @override
+  String get labelRsi => 'RSI（14日）';
+
+  @override
+  String get labelVolatility30 => '波幅（30日）';
+
+  @override
+  String techAbove(String percent) {
+    return '高於平均線 $percent';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '低於平均線 $percent';
+  }
+
+  @override
+  String get techOverbought => '超買';
+
+  @override
+  String get techOversold => '超賣';
+
+  @override
+  String get techNeutral => '中性';
+
+  @override
+  String get techGoldenCross => '50日平均線位於200日平均線之上——按傳統解讀屬上升趨勢。';
+
+  @override
+  String get techDeathCross => '50日平均線位於200日平均線之下——按傳統解讀屬下跌趨勢。';
+
+  @override
+  String get glossSma50 => '最近50個交易日收市價的平均值。價格高於此線通常被視為短線強勢，低於此線則被視為弱勢。';
+
+  @override
+  String get glossSma200 => '最近200個交易日收市價的平均值——經典的長線趨勢線。不少投資者把價格高於此線視為長線上升趨勢。';
+
+  @override
+  String get glossRsi =>
+      '相對強弱指數：以0至100的刻度比較近期升幅與近期跌幅。高於70通常稱為超買（升得太急），低於30稱為超賣——但強勁趨勢可能長時間停留在這些區域。';
+
+  @override
+  String get glossVolatility =>
+      '價格每日上落的幅度，按年折算：20%代表一般年份價格大約在±20%範圍內波動。波幅愈高，升跌幅度都愈大。';
+
+  @override
+  String get techNote => '按每日收市價計算。技術訊號描述過去，而非未來。';
 }

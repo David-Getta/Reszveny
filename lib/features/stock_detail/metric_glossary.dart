@@ -4,6 +4,10 @@ import '../../l10n/generated/app_localizations.dart';
 /// címke melletti ⓘ-re koppintva).
 Map<String, String> metricGlossary(AppLocalizations l10n) => {
   l10n.labelMarketCap: l10n.glossMarketCap,
+  l10n.labelSma50: l10n.glossSma50,
+  l10n.labelSma200: l10n.glossSma200,
+  l10n.labelRsi: l10n.glossRsi,
+  l10n.labelVolatility30: l10n.glossVolatility,
   l10n.labelSharesOutstanding: l10n.glossSharesOutstanding,
   l10n.labelPeTrailing: l10n.glossPeTrailing,
   l10n.labelPeForward: l10n.glossPeForward,

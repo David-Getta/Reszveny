@@ -2653,4 +2653,66 @@ class AppLocalizationsFil extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Paliwanag ng AI mula sa mga balita ngayong araw na natagpuan sa web; maaaring hindi alam o iba ang tunay na dahilan. Hindi payo sa pamumuhunan. Gumagamit ng iyong pang-araw-araw na kuota ng tanong, hindi ng pagsusuri.';
+
+  @override
+  String get sectionTechnical => 'Teknikal na larawan';
+
+  @override
+  String get labelSma50 => '50-araw na average';
+
+  @override
+  String get labelSma200 => '200-araw na average';
+
+  @override
+  String get labelRsi => 'RSI (14 araw)';
+
+  @override
+  String get labelVolatility30 => 'Volatility (30 araw)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent sa itaas';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent sa ibaba';
+  }
+
+  @override
+  String get techOverbought => 'overbought';
+
+  @override
+  String get techOversold => 'oversold';
+
+  @override
+  String get techNeutral => 'neutral';
+
+  @override
+  String get techGoldenCross =>
+      'Ang 50-araw na average ay nasa itaas ng 200-araw na average – isang uptrend ayon sa klasikong pagbasa.';
+
+  @override
+  String get techDeathCross =>
+      'Ang 50-araw na average ay nasa ibaba ng 200-araw na average – isang downtrend ayon sa klasikong pagbasa.';
+
+  @override
+  String get glossSma50 =>
+      'Ang average na closing price ng huling 50 araw ng trading. Ang presyong nasa itaas nito ay madalas binabasa bilang panandaliang lakas, at ang nasa ibaba bilang kahinaan.';
+
+  @override
+  String get glossSma200 =>
+      'Ang average na closing price ng huling 200 araw ng trading – ang klasikong pangmatagalang trend line. Maraming investor ang tumitingin sa presyong nasa itaas nito bilang pangmatagalang uptrend.';
+
+  @override
+  String get glossRsi =>
+      'Relative strength index: ikinukumpara ang mga kamakailang ganansya sa mga kamakailang pagkalugi sa iskala na 0–100. Sa itaas ng 70, madalas tinatawag na overbought ang stock (mabilis itong tumaas), sa ibaba ng 30 oversold – ngunit maaaring manatili doon nang matagal ang isang malakas na trend.';
+
+  @override
+  String get glossVolatility =>
+      'Gaano kalaki ang pagbabago ng presyo araw-araw, isinukat sa isang taon: ang 20% ay nangangahulugang sa karaniwang taon ay gumagalaw ito sa loob ng humigit-kumulang ±20%. Mas mataas na volatility ay nangangahulugang mas malalaking galaw sa magkabilang direksyon.';
+
+  @override
+  String get techNote =>
+      'Kinalkula mula sa pang-araw-araw na closing price. Inilalarawan ng mga teknikal na signal ang nakaraan, hindi ang hinaharap.';
 }

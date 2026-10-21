@@ -2660,4 +2660,66 @@ class AppLocalizationsSt extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Tlhaloso ya AI e tswang litabeng tsa kajeno tse fumanweng inthaneteng; lebaka la nnete le ka ba le sa tsejwe kapa le fapane. Ha se keletso ya matsete. E sebelisa palo ya hao ya lipotso ya letsatsi, eseng tlhahlobo.';
+
+  @override
+  String get sectionTechnical => 'Setshwantsho sa botekgeniki';
+
+  @override
+  String get labelSma50 => 'Karolelano ya matsatsi a 50';
+
+  @override
+  String get labelSma200 => 'Karolelano ya matsatsi a 200';
+
+  @override
+  String get labelRsi => 'RSI (matsatsi a 14)';
+
+  @override
+  String get labelVolatility30 => 'Phetoho ya theko (matsatsi a 30)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent ka hodimo';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent ka tlase';
+  }
+
+  @override
+  String get techOverbought => 'e rekilwe haholo';
+
+  @override
+  String get techOversold => 'e rekisitswe haholo';
+
+  @override
+  String get techNeutral => 'mahareng';
+
+  @override
+  String get techGoldenCross =>
+      'Karolelano ya matsatsi a 50 e ka hodimo ho ya matsatsi a 200 – ho ya ka tlhaloso ya setso ke tshekamelo ya ho nyoloha.';
+
+  @override
+  String get techDeathCross =>
+      'Karolelano ya matsatsi a 50 e ka tlase ho ya matsatsi a 200 – ho ya ka tlhaloso ya setso ke tshekamelo ya ho theoha.';
+
+  @override
+  String get glossSma50 =>
+      'Karolelano ya theko ya ho kwala ya matsatsi a 50 a ho qetela a khwebo. Theko e ka hodimo ho yona hangata e nkwa e le matla a nako e khutshwane, e ka tlase e le bofokodi.';
+
+  @override
+  String get glossSma200 =>
+      'Karolelano ya theko ya ho kwala ya matsatsi a 200 a ho qetela a khwebo – mola wa setso wa tshekamelo ya nako e telele. Batsetedi ba bangata ba nka theko e ka hodimo ho yona e le tshekamelo ya ho nyoloha ya nako e telele.';
+
+  @override
+  String get glossRsi =>
+      'Indekse ya matla a bapiswang: e bapisa diphaello tsa morao tjena le ditahlehelo tsa morao tjena sekaleng sa 0–100. Ka hodimo ho 70 setoko hangata se bitswa se rekilwe haholo (se nyolohile kapele), ka tlase ho 30 se rekisitswe haholo – empa tshekamelo e matla e ka dula moo nako e telele.';
+
+  @override
+  String get glossVolatility =>
+      'Kamoo theko e fetohang letsatsi le letsatsi, e lekantswe ho selemo: 20% e bolela hore selemo se tlwaelehileng se tsamaya ka hare ho hoo e ka bang ±20%. Phetoho e phahameng e bolela metsamao e meholo ka mahlakoreng ka bobedi.';
+
+  @override
+  String get techNote =>
+      'E baletswe ho tswa dithekong tsa ho kwala tsa letsatsi le letsatsi. Matshwao a botekgeniki a hlalosa tse fetileng, eseng bokamoso.';
 }

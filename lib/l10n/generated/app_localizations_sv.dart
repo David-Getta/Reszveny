@@ -2647,4 +2647,66 @@ class AppLocalizationsSv extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'AI-förklaring utifrån dagens nyheter på webben; den verkliga orsaken kan vara okänd eller en annan. Inte investeringsrådgivning. Använder din dagliga frågekvot, inte en analys.';
+
+  @override
+  String get sectionTechnical => 'Teknisk bild';
+
+  @override
+  String get labelSma50 => '50-dagars medel';
+
+  @override
+  String get labelSma200 => '200-dagars medel';
+
+  @override
+  String get labelRsi => 'RSI (14 dagar)';
+
+  @override
+  String get labelVolatility30 => 'Volatilitet (30 dagar)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent över';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent under';
+  }
+
+  @override
+  String get techOverbought => 'överköpt';
+
+  @override
+  String get techOversold => 'översåld';
+
+  @override
+  String get techNeutral => 'neutral';
+
+  @override
+  String get techGoldenCross =>
+      '50-dagars medel ligger över 200-dagars medel – en uppåttrend enligt den klassiska tolkningen.';
+
+  @override
+  String get techDeathCross =>
+      '50-dagars medel ligger under 200-dagars medel – en nedåttrend enligt den klassiska tolkningen.';
+
+  @override
+  String get glossSma50 =>
+      'Genomsnittlig stängningskurs de senaste 50 handelsdagarna. Kurs över det tolkas ofta som kortsiktig styrka, under som svaghet.';
+
+  @override
+  String get glossSma200 =>
+      'Genomsnittlig stängningskurs de senaste 200 handelsdagarna – den klassiska långsiktiga trendlinjen. Många investerare ser en kurs över den som en långsiktig uppåttrend.';
+
+  @override
+  String get glossRsi =>
+      'Relativt styrkeindex: jämför senaste tidens uppgångar med nedgångar på en skala 0–100. Över 70 kallas aktien ofta överköpt (den har stigit snabbt), under 30 översåld – men en stark trend kan ligga kvar där länge.';
+
+  @override
+  String get glossVolatility =>
+      'Hur mycket kursen svänger från dag till dag, omräknat till ett år: 20 % betyder att ett typiskt år rör sig inom ungefär ±20 %. Högre volatilitet betyder större rörelser i båda riktningarna.';
+
+  @override
+  String get techNote =>
+      'Beräknat utifrån dagliga stängningskurser. Tekniska signaler beskriver det förflutna, inte framtiden.';
 }

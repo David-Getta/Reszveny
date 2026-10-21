@@ -701,5 +701,22 @@
   "awayReported": "Offentliggjorde resultater: {symbols}",
   "moveWhyButton": "Hvorfor bevæger den sig i dag?",
   "moveWhyTitle": "{percent} i dag",
-  "moveWhyNote": "AI-forklaring ud fra dagens nyheder fundet på nettet; den egentlige årsag kan være ukendt eller en anden. Ikke investeringsrådgivning. Bruger din daglige spørgsmålskvote, ikke en analyse."
+  "moveWhyNote": "AI-forklaring ud fra dagens nyheder fundet på nettet; den egentlige årsag kan være ukendt eller en anden. Ikke investeringsrådgivning. Bruger din daglige spørgsmålskvote, ikke en analyse.",
+  "sectionTechnical": "Teknisk billede",
+  "labelSma50": "50-dages gennemsnit",
+  "labelSma200": "200-dages gennemsnit",
+  "labelRsi": "RSI (14 dage)",
+  "labelVolatility30": "Volatilitet (30 dage)",
+  "techAbove": "{percent} over",
+  "techBelow": "{percent} under",
+  "techOverbought": "overkøbt",
+  "techOversold": "oversolgt",
+  "techNeutral": "neutral",
+  "techGoldenCross": "50-dages gennemsnittet ligger over 200-dages gennemsnittet – en optrend ifølge den klassiske læsning.",
+  "techDeathCross": "50-dages gennemsnittet ligger under 200-dages gennemsnittet – en nedtrend ifølge den klassiske læsning.",
+  "glossSma50": "Den gennemsnitlige lukkekurs for de seneste 50 handelsdage. En kurs over det læses ofte som kortsigtet styrke, under det som svaghed.",
+  "glossSma200": "Den gennemsnitlige lukkekurs for de seneste 200 handelsdage – den klassiske langsigtede trendlinje. Mange investorer ser en kurs over det som en langsigtet optrend.",
+  "glossRsi": "Relativ styrkeindeks: sammenligner nylige stigninger med nylige fald på en skala fra 0 til 100. Over 70 kaldes aktien ofte overkøbt (den er steget hurtigt), under 30 oversolgt – men en stærk trend kan blive der længe.",
+  "glossVolatility": "Hvor meget kursen svinger fra dag til dag, omregnet til et år: 20 % betyder, at et typisk år bevæger sig inden for cirka ±20 %. Højere volatilitet betyder større udsving i begge retninger.",
+  "techNote": "Beregnet ud fra daglige lukkekurser. Tekniske signaler beskriver fortiden, ikke fremtiden."
 }

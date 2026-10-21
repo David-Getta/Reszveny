@@ -701,5 +701,22 @@
   "awayReported": "Imiphumela ememezelwe: {symbols}",
   "moveWhyButton": "Kungani linyakaza namuhla?",
   "moveWhyTitle": "{percent} namuhla",
-  "moveWhyNote": "Incazelo ye-AI evela ezindabeni zanamuhla ezitholakala ku-inthanethi; isizathu sangempela singase singaziwa noma sihluke. Akuyona iseluleko sokutshala imali. Isebenzisa isabelo sakho semibuzo sosuku, hhayi ukuhlaziya."
+  "moveWhyNote": "Incazelo ye-AI evela ezindabeni zanamuhla ezitholakala ku-inthanethi; isizathu sangempela singase singaziwa noma sihluke. Akuyona iseluleko sokutshala imali. Isebenzisa isabelo sakho semibuzo sosuku, hhayi ukuhlaziya.",
+  "sectionTechnical": "Isithombe sobuchwepheshe",
+  "labelSma50": "Isilinganiso sezinsuku ezingu-50",
+  "labelSma200": "Isilinganiso sezinsuku ezingu-200",
+  "labelRsi": "RSI (izinsuku ezingu-14)",
+  "labelVolatility30": "Ukuguquguquka (izinsuku ezingu-30)",
+  "techAbove": "{percent} ngaphezulu",
+  "techBelow": "{percent} ngaphansi",
+  "techOverbought": "lithengwe ngokweqile",
+  "techOversold": "lithengisiwe ngokweqile",
+  "techNeutral": "phakathi",
+  "techGoldenCross": "Isilinganiso sezinsuku ezingu-50 singaphezulu kwesezinsuku ezingu-200 – ngokufunda kwendabuko kuwukwenyuka.",
+  "techDeathCross": "Isilinganiso sezinsuku ezingu-50 singaphansi kwesezinsuku ezingu-200 – ngokufunda kwendabuko kuwukwehla.",
+  "glossSma50": "Isilinganiso senani lokuvala lezinsuku ezingu-50 zokugcina zokuhweba. Inani elingaphezulu kwaso livame ukubonwa njengamandla esikhathi esifushane, elingaphansi njengobuthakathaka.",
+  "glossSma200": "Isilinganiso senani lokuvala lezinsuku ezingu-200 zokugcina zokuhweba – umugqa wendabuko wesimo sesikhathi eside. Abatshalizimali abaningi bathatha inani elingaphezulu kwaso njengokwenyuka kwesikhathi eside.",
+  "glossRsi": "Inkomba yamandla aqhathaniswayo: iqhathanisa inzuzo yakamuva nokulahlekelwa kwakamuva esikalini esingu-0–100. Ngaphezulu kuka-70 isitoko sivame ukuthiwa sithengwe ngokweqile (senyuke ngokushesha), ngaphansi kuka-30 sithengisiwe ngokweqile – kodwa isimo esiqinile singahlala lapho isikhathi eside.",
+  "glossVolatility": "Ukuthi inani liguquka kangakanani usuku nosuku, kulinganiswe ngonyaka: u-20% usho ukuthi unyaka ojwayelekile uhamba phakathi kuka-±20% cishe. Ukuguquguquka okuphezulu kusho ukuhamba okukhulu nhlangothi zombili.",
+  "techNote": "Kubalwe emananini okuvala ansuku zonke. Izimpawu zobuchwepheshe zichaza okudlule, hhayi ikusasa."
 }

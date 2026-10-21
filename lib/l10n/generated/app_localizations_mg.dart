@@ -2664,4 +2664,66 @@ class AppLocalizationsMg extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Fanazavana avy amin\'ny AI miorina amin\'ny vaovaon\'ny androany hita tao amin\'ny tranonkala; mety tsy fantatra na hafa ny tena antony. Tsy torohevitra momba ny fampiasam-bola. Mampiasa ny fanontaniana isan\'andro anananao, fa tsy famakafakana.';
+
+  @override
+  String get sectionTechnical => 'Sary teknika';
+
+  @override
+  String get labelSma50 => 'Salan\'isa 50 andro';
+
+  @override
+  String get labelSma200 => 'Salan\'isa 200 andro';
+
+  @override
+  String get labelRsi => 'RSI (14 andro)';
+
+  @override
+  String get labelVolatility30 => 'Fiovaovana (30 andro)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent ambony';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent ambany';
+  }
+
+  @override
+  String get techOverbought => 'voavidy be loatra';
+
+  @override
+  String get techOversold => 'voavarotra be loatra';
+
+  @override
+  String get techNeutral => 'tsy miandany';
+
+  @override
+  String get techGoldenCross =>
+      'Ny salan\'isa 50 andro dia ambonin\'ny salan\'isa 200 andro – fiakarana araka ny famakiana mahazatra.';
+
+  @override
+  String get techDeathCross =>
+      'Ny salan\'isa 50 andro dia ambanin\'ny salan\'isa 200 andro – fidinana araka ny famakiana mahazatra.';
+
+  @override
+  String get glossSma50 =>
+      'Ny salan\'isan\'ny vidin\'ny fanakatonana nandritra ny 50 andro varotra farany. Vidiny ambonin\'io dia matetika heverina ho hery fohy ezaka, ambaniny kosa ho fahalemena.';
+
+  @override
+  String get glossSma200 =>
+      'Ny salan\'isan\'ny vidin\'ny fanakatonana nandritra ny 200 andro varotra farany – ny tsipika mahazatra maneho ny fironana maharitra. Mpampiasa vola maro no mihevitra ny vidiny ambonin\'io ho fiakarana maharitra.';
+
+  @override
+  String get glossRsi =>
+      'Indeksy ny hery relatifa: mampitaha ny tombony vao haingana amin\'ny fatiantoka vao haingana amin\'ny ambaratonga 0–100. Ambonin\'ny 70 dia matetika lazaina fa voavidy be loatra ny anjara (niakatra haingana), ambanin\'ny 30 dia voavarotra be loatra – saingy ny fironana matanjaka dia mety hijanona ao ela.';
+
+  @override
+  String get glossVolatility =>
+      'Ny haben\'ny fiovan\'ny vidiny isan\'andro, atao amin\'ny taona iray: 20% dia midika fa ny taona mahazatra dia mihetsika eo amin\'ny ±20% eo ho eo. Fiovaovana ambony kokoa dia midika fihetsika lehibe kokoa amin\'ny lafiny roa.';
+
+  @override
+  String get techNote =>
+      'Kajiana avy amin\'ny vidin\'ny fanakatonana isan\'andro. Ny famantarana teknika dia mamaritra ny lasa, fa tsy ny ho avy.';
 }

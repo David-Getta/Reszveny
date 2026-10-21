@@ -2649,4 +2649,66 @@ class AppLocalizationsAz extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Vebdə tapılan bugünkü xəbərlərə əsaslanan AI izahı; əsl səbəb naməlum və ya fərqli ola bilər. İnvestisiya məsləhəti deyil. Gündəlik sual limitinizdən istifadə edir, analiz deyil.';
+
+  @override
+  String get sectionTechnical => 'Texniki mənzərə';
+
+  @override
+  String get labelSma50 => '50 günlük orta';
+
+  @override
+  String get labelSma200 => '200 günlük orta';
+
+  @override
+  String get labelRsi => 'RSI (14 gün)';
+
+  @override
+  String get labelVolatility30 => 'Volatillik (30 gün)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent yuxarıda';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent aşağıda';
+  }
+
+  @override
+  String get techOverbought => 'həddindən artıq alınmış';
+
+  @override
+  String get techOversold => 'həddindən artıq satılmış';
+
+  @override
+  String get techNeutral => 'neytral';
+
+  @override
+  String get techGoldenCross =>
+      '50 günlük orta 200 günlük ortadan yuxarıdır – klassik oxunuşa görə yüksələn trend.';
+
+  @override
+  String get techDeathCross =>
+      '50 günlük orta 200 günlük ortadan aşağıdır – klassik oxunuşa görə enən trend.';
+
+  @override
+  String get glossSma50 =>
+      'Son 50 ticarət gününün orta bağlanış qiyməti. Ondan yuxarı qiymət çox vaxt qısamüddətli güc, aşağı qiymət isə zəiflik kimi oxunur.';
+
+  @override
+  String get glossSma200 =>
+      'Son 200 ticarət gününün orta bağlanış qiyməti – klassik uzunmüddətli trend xətti. Bir çox investor ondan yuxarı qiyməti uzunmüddətli yüksələn trend sayır.';
+
+  @override
+  String get glossRsi =>
+      'Nisbi güc indeksi: son qazancları son itkilərlə 0–100 şkalasında müqayisə edir. 70-dən yuxarı səhm çox vaxt həddindən artıq alınmış (sürətlə yüksəlib), 30-dan aşağı həddindən artıq satılmış adlanır – amma güclü trend orada uzun müddət qala bilər.';
+
+  @override
+  String get glossVolatility =>
+      'Qiymətin gündən-günə nə qədər dəyişdiyi, illik hesablanmış: 20% o deməkdir ki, adi bir il təxminən ±20% daxilində hərəkət edir. Yüksək volatillik hər iki istiqamətdə daha böyük hərəkətlər deməkdir.';
+
+  @override
+  String get techNote =>
+      'Gündəlik bağlanış qiymətlərindən hesablanıb. Texniki siqnallar keçmişi təsvir edir, gələcəyi yox.';
 }

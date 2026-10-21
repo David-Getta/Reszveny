@@ -2657,4 +2657,66 @@ class AppLocalizationsCeb extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Pagpatin-aw sa AI gikan sa mga balita karong adlawa nga nakit-an sa web; ang tinuod nga hinungdan mahimong wala mahibaloi o lahi. Dili tambag sa pagpamuhunan. Mogamit sa imong adlaw-adlaw nga kuota sa pangutana, dili analisis.';
+
+  @override
+  String get sectionTechnical => 'Teknikal nga hulagway';
+
+  @override
+  String get labelSma50 => '50 ka adlaw nga average';
+
+  @override
+  String get labelSma200 => '200 ka adlaw nga average';
+
+  @override
+  String get labelRsi => 'RSI (14 ka adlaw)';
+
+  @override
+  String get labelVolatility30 => 'Volatility (30 ka adlaw)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent ibabaw';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent ubos';
+  }
+
+  @override
+  String get techOverbought => 'overbought';
+
+  @override
+  String get techOversold => 'oversold';
+
+  @override
+  String get techNeutral => 'neutral';
+
+  @override
+  String get techGoldenCross =>
+      'Ang 50 ka adlaw nga average anaa sa ibabaw sa 200 ka adlaw nga average – usa ka pasaka nga uso sumala sa klasikong pagbasa.';
+
+  @override
+  String get techDeathCross =>
+      'Ang 50 ka adlaw nga average anaa sa ubos sa 200 ka adlaw nga average – usa ka paubos nga uso sumala sa klasikong pagbasa.';
+
+  @override
+  String get glossSma50 =>
+      'Ang average nga closing price sa miaging 50 ka adlaw sa pamatigayon. Ang presyo nga labaw niini sagad gibasa isip kalig-on sa mubo nga panahon, ang ubos niini isip kahuyang.';
+
+  @override
+  String get glossSma200 =>
+      'Ang average nga closing price sa miaging 200 ka adlaw sa pamatigayon – ang klasikong linya sa uso sa taas nga panahon. Daghang mamumuhunan nag-isip sa presyo nga labaw niini isip pasaka nga uso sa taas nga panahon.';
+
+  @override
+  String get glossRsi =>
+      'Relative strength index: gitandi ang bag-ong mga ganansya sa bag-ong mga kapildihan sa sukdanan nga 0–100. Labaw sa 70 ang stock sagad gitawag nga overbought (paspas misaka), ubos sa 30 oversold – apan ang kusog nga uso mahimong magpabilin didto og dugay.';
+
+  @override
+  String get glossVolatility =>
+      'Unsa ka dako ang pag-usab-usab sa presyo matag adlaw, gisukod sa usa ka tuig: ang 20% nagpasabot nga sa kasagarang tuig ang presyo molihok sulod sa mga ±20%. Mas taas nga volatility nagpasabot og mas dagkong lihok sa duha ka direksyon.';
+
+  @override
+  String get techNote =>
+      'Gikuwenta gikan sa adlaw-adlaw nga closing price. Ang teknikal nga mga signal naghulagway sa nangagi, dili sa umaabot.';
 }

@@ -2655,4 +2655,66 @@ class AppLocalizationsHy extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'ԱԲ բացատրություն համացանցում գտնված այսօրվա նորություններից․ իրական պատճառը կարող է անհայտ կամ այլ լինել։ Ներդրումային խորհուրդ չէ։ Օգտագործում է ձեր օրական հարցերի սահմանաչափը, ոչ թե վերլուծություն։';
+
+  @override
+  String get sectionTechnical => 'Տեխնիկական պատկեր';
+
+  @override
+  String get labelSma50 => '50-օրյա միջին';
+
+  @override
+  String get labelSma200 => '200-օրյա միջին';
+
+  @override
+  String get labelRsi => 'RSI (14 օր)';
+
+  @override
+  String get labelVolatility30 => 'Տատանողականություն (30 օր)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent բարձր';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent ցածր';
+  }
+
+  @override
+  String get techOverbought => 'գերգնված';
+
+  @override
+  String get techOversold => 'գերվաճառված';
+
+  @override
+  String get techNeutral => 'չեզոք';
+
+  @override
+  String get techGoldenCross =>
+      '50-օրյա միջինը 200-օրյա միջինից բարձր է՝ դասական ընթերցմամբ վերընթաց միտում։';
+
+  @override
+  String get techDeathCross =>
+      '50-օրյա միջինը 200-օրյա միջինից ցածր է՝ դասական ընթերցմամբ վայրընթաց միտում։';
+
+  @override
+  String get glossSma50 =>
+      'Վերջին 50 առևտրային օրերի միջին փակման գինը։ Դրանից բարձր գինը հաճախ ընկալվում է որպես կարճաժամկետ ուժ, ցածրը՝ որպես թուլություն։';
+
+  @override
+  String get glossSma200 =>
+      'Վերջին 200 առևտրային օրերի միջին փակման գինը՝ դասական երկարաժամկետ միտման գիծը։ Շատ ներդրողներ դրանից բարձր գինը համարում են երկարաժամկետ վերընթաց միտում։';
+
+  @override
+  String get glossRsi =>
+      'Հարաբերական ուժի ինդեքս՝ համեմատում է վերջին աճերը վերջին անկումների հետ 0–100 սանդղակով։ 70-ից բարձր բաժնետոմսը հաճախ անվանում են գերգնված (արագ է աճել), 30-ից ցածր՝ գերվաճառված, բայց ուժեղ միտումը կարող է այնտեղ երկար մնալ։';
+
+  @override
+  String get glossVolatility =>
+      'Որքան է գինը տատանվում օրից օր, հաշվարկված տարվա կտրվածքով․ 20% նշանակում է, որ սովորական տարում գինը շարժվում է մոտավորապես ±20%-ի սահմաններում։ Ավելի բարձր տատանողականությունը նշանակում է ավելի մեծ շարժումներ երկու ուղղությամբ։';
+
+  @override
+  String get techNote =>
+      'Հաշվարկված է օրական փակման գներից։ Տեխնիկական ազդանշանները նկարագրում են անցյալը, ոչ թե ապագան։';
 }

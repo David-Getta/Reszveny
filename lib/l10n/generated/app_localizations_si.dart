@@ -2643,4 +2643,66 @@ class AppLocalizationsSi extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'වෙබයෙන් සොයාගත් අද පුවත් මත පදනම් වූ AI පැහැදිලි කිරීමකි; සැබෑ හේතුව නොදන්නා හෝ වෙනස් විය හැක. ආයෝජන උපදෙසක් නොවේ. විශ්ලේෂණයක් නොව, ඔබේ දිනපතා ප්‍රශ්න සීමාව භාවිත කරයි.';
+
+  @override
+  String get sectionTechnical => 'තාක්ෂණික චිත්‍රය';
+
+  @override
+  String get labelSma50 => 'දින 50 සාමාන්‍යය';
+
+  @override
+  String get labelSma200 => 'දින 200 සාමාන්‍යය';
+
+  @override
+  String get labelRsi => 'RSI (දින 14)';
+
+  @override
+  String get labelVolatility30 => 'විචල්‍යතාව (දින 30)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent ඉහළින්';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent පහළින්';
+  }
+
+  @override
+  String get techOverbought => 'අධික මිලදී ගැනීම';
+
+  @override
+  String get techOversold => 'අධික විකිණීම';
+
+  @override
+  String get techNeutral => 'මධ්‍යස්ථ';
+
+  @override
+  String get techGoldenCross =>
+      'දින 50 සාමාන්‍යය දින 200 සාමාන්‍යයට ඉහළින් ඇත – සම්භාව්‍ය කියවීම අනුව ඉහළ යන ප්‍රවණතාවකි.';
+
+  @override
+  String get techDeathCross =>
+      'දින 50 සාමාන්‍යය දින 200 සාමාන්‍යයට පහළින් ඇත – සම්භාව්‍ය කියවීම අනුව පහළ යන ප්‍රවණතාවකි.';
+
+  @override
+  String get glossSma50 =>
+      'අවසන් වෙළඳ දින 50 හි අවසාන මිලෙහි සාමාන්‍යය. ඊට ඉහළ මිල බොහෝ විට කෙටිකාලීන ශක්තියක් ලෙසත්, පහළ මිල දුර්වලතාවක් ලෙසත් කියවනු ලැබේ.';
+
+  @override
+  String get glossSma200 =>
+      'අවසන් වෙළඳ දින 200 හි අවසාන මිලෙහි සාමාන්‍යය – දිගුකාලීන ප්‍රවණතාවේ සම්භාව්‍ය රේඛාව. බොහෝ ආයෝජකයින් ඊට ඉහළ මිල දිගුකාලීන ඉහළ යන ප්‍රවණතාවක් ලෙස සලකති.';
+
+  @override
+  String get glossRsi =>
+      'සාපේක්ෂ ශක්ති දර්ශකය: මෑත ලාභ මෑත අලාභ සමඟ 0–100 පරිමාණයක සංසන්දනය කරයි. 70ට ඉහළින් කොටස බොහෝ විට අධික මිලදී ගැනීමක් (වේගයෙන් ඉහළ ගියේය) ලෙසත්, 30ට පහළින් අධික විකිණීමක් ලෙසත් හැඳින්වේ – නමුත් ප්‍රබල ප්‍රවණතාවක් දිගු කලක් එහි රැඳී සිටිය හැකිය.';
+
+  @override
+  String get glossVolatility =>
+      'මිල දිනෙන් දින කොතරම් දෝලනය වේද යන්න, වසරකට පරිමාණ කර: 20% යනු සාමාන්‍ය වසරක දළ වශයෙන් ±20% තුළ චලනය වීමයි. වැඩි විචල්‍යතාවක් යනු දෙපැත්තටම විශාල චලනයන්ය.';
+
+  @override
+  String get techNote =>
+      'දෛනික අවසාන මිල අනුව ගණනය කර ඇත. තාක්ෂණික සංඥා විස්තර කරන්නේ අතීතයයි, අනාගතය නොවේ.';
 }

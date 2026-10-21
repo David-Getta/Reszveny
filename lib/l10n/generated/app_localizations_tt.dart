@@ -2645,4 +2645,66 @@ class AppLocalizationsTt extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Интернетта табылган бүгенге яңалыкларга нигезләнгән ЯИ аңлатмасы; чын сәбәп билгесез яки башка булырга мөмкин. Инвестиция киңәше түгел. Анализ түгел, ә көнлек сорау лимитыгызны куллана.';
+
+  @override
+  String get sectionTechnical => 'Техник күренеш';
+
+  @override
+  String get labelSma50 => '50 көнлек уртача';
+
+  @override
+  String get labelSma200 => '200 көнлек уртача';
+
+  @override
+  String get labelRsi => 'RSI (14 көн)';
+
+  @override
+  String get labelVolatility30 => 'Үзгәрүчәнлек (30 көн)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent өстә';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent аста';
+  }
+
+  @override
+  String get techOverbought => 'артык сатып алынган';
+
+  @override
+  String get techOversold => 'артык сатылган';
+
+  @override
+  String get techNeutral => 'нейтраль';
+
+  @override
+  String get techGoldenCross =>
+      '50 көнлек уртача 200 көнлектән өстә – классик аңлатма буенча үсү тенденциясе.';
+
+  @override
+  String get techDeathCross =>
+      '50 көнлек уртача 200 көнлектән аста – классик аңлатма буенча төшү тенденциясе.';
+
+  @override
+  String get glossSma50 =>
+      'Соңгы 50 сәүдә көненең ябылу бәясенең уртачасы. Аннан өстәге бәя еш кына кыска вакытлы көч, астагысы зәгыйфьлек дип аңлатыла.';
+
+  @override
+  String get glossSma200 =>
+      'Соңгы 200 сәүдә көненең ябылу бәясенең уртачасы – озак вакытлы тенденциянең классик сызыгы. Күп инвесторлар аннан өстәге бәяне озак вакытлы үсү тенденциясе дип саный.';
+
+  @override
+  String get glossRsi =>
+      'Чагыштырма көч индексы: соңгы үсешне соңгы төшүләр белән 0–100 шкаласында чагыштыра. 70-тән өстә акция еш кына артык сатып алынган (тиз үскән), 30-дан аста артык сатылган дип атала – ләкин көчле тенденция анда озак калырга мөмкин.';
+
+  @override
+  String get glossVolatility =>
+      'Бәянең көннән-көнгә күпме үзгәрүе, елга исәпләнгән: 20% гадәти елда якынча ±20% чикләрендә хәрәкәт итүне аңлата. Югарырак үзгәрүчәнлек ике якка да зуррак хәрәкәтләрне аңлата.';
+
+  @override
+  String get techNote =>
+      'Көндәлек ябылу бәяләреннән исәпләнгән. Техник сигналлар үткәнне тасвирлый, киләчәкне түгел.';
 }

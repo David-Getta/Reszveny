@@ -2650,4 +2650,66 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'AI-uitleg op basis van het nieuws van vandaag op het web; de echte reden kan onbekend of anders zijn. Geen beleggingsadvies. Gebruikt je dagelijkse vragentegoed, geen analyse.';
+
+  @override
+  String get sectionTechnical => 'Technisch beeld';
+
+  @override
+  String get labelSma50 => '50-daags gemiddelde';
+
+  @override
+  String get labelSma200 => '200-daags gemiddelde';
+
+  @override
+  String get labelRsi => 'RSI (14 dagen)';
+
+  @override
+  String get labelVolatility30 => 'Volatiliteit (30 dagen)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent erboven';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent eronder';
+  }
+
+  @override
+  String get techOverbought => 'overbought';
+
+  @override
+  String get techOversold => 'oversold';
+
+  @override
+  String get techNeutral => 'neutraal';
+
+  @override
+  String get techGoldenCross =>
+      'Het 50-daags gemiddelde ligt boven het 200-daags gemiddelde – volgens de klassieke lezing een opwaartse trend.';
+
+  @override
+  String get techDeathCross =>
+      'Het 50-daags gemiddelde ligt onder het 200-daags gemiddelde – volgens de klassieke lezing een neerwaartse trend.';
+
+  @override
+  String get glossSma50 =>
+      'De gemiddelde slotkoers van de laatste 50 handelsdagen. Een koers erboven wordt vaak gelezen als kortetermijnkracht, eronder als zwakte.';
+
+  @override
+  String get glossSma200 =>
+      'De gemiddelde slotkoers van de laatste 200 handelsdagen – de klassieke langetermijntrendlijn. Veel beleggers zien een koers erboven als een opwaartse trend op lange termijn.';
+
+  @override
+  String get glossRsi =>
+      'Relative strength index: vergelijkt recente winsten met recente verliezen op een schaal van 0 tot 100. Boven 70 heet het aandeel vaak overbought (het is snel gestegen), onder 30 oversold – maar een sterke trend kan daar lang blijven.';
+
+  @override
+  String get glossVolatility =>
+      'Hoeveel de koers van dag tot dag schommelt, omgerekend naar een jaar: 20% betekent dat een gewoon jaar binnen ongeveer ±20% beweegt. Hogere volatiliteit betekent grotere bewegingen in beide richtingen.';
+
+  @override
+  String get techNote =>
+      'Berekend op basis van dagelijkse slotkoersen. Technische signalen beschrijven het verleden, niet de toekomst.';
 }

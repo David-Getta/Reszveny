@@ -2657,4 +2657,66 @@ class AppLocalizationsLn extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Ndimbola ya AI euti na basango ya lelo oyo ezwamaki na internet; ntina ya solo ekoki koyebana te to kozala mosusu. Ezali toli ya kotia mbongo te. Esalelaka motango na yo ya mituna ya mokolo na mokolo, kasi analyse te.';
+
+  @override
+  String get sectionTechnical => 'Elilingi ya tekiniki';
+
+  @override
+  String get labelSma50 => 'Katikati ya mikolo 50';
+
+  @override
+  String get labelSma200 => 'Katikati ya mikolo 200';
+
+  @override
+  String get labelRsi => 'RSI (mikolo 14)';
+
+  @override
+  String get labelVolatility30 => 'Bobongwani ya ntalo (mikolo 30)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent likoló';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent na nse';
+  }
+
+  @override
+  String get techOverbought => 'esombami mingi';
+
+  @override
+  String get techOversold => 'etekami mingi';
+
+  @override
+  String get techNeutral => 'na katikati';
+
+  @override
+  String get techGoldenCross =>
+      'Katikati ya mikolo 50 ezali likoló ya katikati ya mikolo 200 – na ndenge ya kotánga ya kala, ezali nzela ya komata.';
+
+  @override
+  String get techDeathCross =>
+      'Katikati ya mikolo 50 ezali na nse ya katikati ya mikolo 200 – na ndenge ya kotánga ya kala, ezali nzela ya kokita.';
+
+  @override
+  String get glossSma50 =>
+      'Katikati ya ntalo ya nsuka ya mikolo 50 ya zando ya suka. Ntalo oyo ezali likoló na yango etalelamaka mbala mingi lokola makasi ya ntango mokuse, oyo ezali na nse lokola bolembu.';
+
+  @override
+  String get glossSma200 =>
+      'Katikati ya ntalo ya nsuka ya mikolo 200 ya zando ya suka – molongo ya nzela ya ntango molai ya kala. Bato mingi oyo batyaka mbongo batalelaka ntalo oyo ezali likoló na yango lokola nzela ya komata ya ntango molai.';
+
+  @override
+  String get glossRsi =>
+      'Emekeli ya makasi ya kokokanisa (RSI): ekokanisaka matomba ya mikolo oyo na bobungisi ya mikolo oyo na emekeli ya 0–100. Likoló ya 70 balobaka mbala mingi ete action esombami mingi (emataki noki), na nse ya 30 etekami mingi – kasi nzela ya makasi ekoki kotikala wana ntango molai.';
+
+  @override
+  String get glossVolatility =>
+      'Ndenge ntalo ebongwanaka mokolo na mokolo, etángami na mbula moko: 20% elingi koloba ete na mbula ya momeseno ntalo etambolaka na kati ya ±20%. Bobongwani monene elingi koloba botamboli monene na ngámbo nyonso mibale.';
+
+  @override
+  String get techNote =>
+      'Etángami uta na ntalo ya nsuka ya mokolo na mokolo. Bilembo ya tekiniki elobelaka makambo oyo eleki, kasi te oyo ekoya.';
 }

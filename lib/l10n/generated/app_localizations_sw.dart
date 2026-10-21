@@ -2647,4 +2647,66 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Ufafanuzi wa AI kutoka habari za leo zilizopatikana mtandaoni; sababu halisi inaweza kuwa haijulikani au tofauti. Si ushauri wa uwekezaji. Hutumia kiwango chako cha maswali cha siku, si uchambuzi.';
+
+  @override
+  String get sectionTechnical => 'Picha ya kiufundi';
+
+  @override
+  String get labelSma50 => 'Wastani wa siku 50';
+
+  @override
+  String get labelSma200 => 'Wastani wa siku 200';
+
+  @override
+  String get labelRsi => 'RSI (siku 14)';
+
+  @override
+  String get labelVolatility30 => 'Mabadiliko ya bei (siku 30)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent juu';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent chini';
+  }
+
+  @override
+  String get techOverbought => 'imenunuliwa kupita kiasi';
+
+  @override
+  String get techOversold => 'imeuzwa kupita kiasi';
+
+  @override
+  String get techNeutral => 'wastani';
+
+  @override
+  String get techGoldenCross =>
+      'Wastani wa siku 50 uko juu ya wastani wa siku 200 – mwelekeo wa kupanda kwa usomaji wa kawaida.';
+
+  @override
+  String get techDeathCross =>
+      'Wastani wa siku 50 uko chini ya wastani wa siku 200 – mwelekeo wa kushuka kwa usomaji wa kawaida.';
+
+  @override
+  String get glossSma50 =>
+      'Wastani wa bei ya kufunga ya siku 50 za biashara zilizopita. Bei iliyo juu yake mara nyingi huonekana kama nguvu ya muda mfupi, iliyo chini kama udhaifu.';
+
+  @override
+  String get glossSma200 =>
+      'Wastani wa bei ya kufunga ya siku 200 za biashara zilizopita – mstari wa kawaida wa mwelekeo wa muda mrefu. Wawekezaji wengi huchukulia bei iliyo juu yake kama mwelekeo wa kupanda wa muda mrefu.';
+
+  @override
+  String get glossRsi =>
+      'Kielezo cha nguvu linganishi (RSI): hulinganisha faida za hivi karibuni na hasara za hivi karibuni kwa kipimo cha 0–100. Juu ya 70 hisa mara nyingi husemwa imenunuliwa kupita kiasi (ilipanda haraka), chini ya 30 imeuzwa kupita kiasi – lakini mwelekeo imara unaweza kubaki hapo kwa muda mrefu.';
+
+  @override
+  String get glossVolatility =>
+      'Kiasi bei inavyobadilika siku hadi siku, kikipimwa kwa mwaka: 20% ina maana mwaka wa kawaida husogea ndani ya takriban ±20%. Mabadiliko makubwa zaidi yana maana misogeo mikubwa pande zote mbili.';
+
+  @override
+  String get techNote =>
+      'Imekokotolewa kutoka bei za kufunga za kila siku. Ishara za kiufundi zinaeleza yaliyopita, si yajayo.';
 }

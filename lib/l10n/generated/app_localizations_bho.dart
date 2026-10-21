@@ -2642,4 +2642,66 @@ class AppLocalizationsBho extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'वेब पर मिलल आज के खबर से AI के बतावल कारन; असली कारन अनजान भा अलग हो सकेला। निवेश के सलाह नइखे। एह में रउआ के रोज के सवाल कोटा लागेला, विश्लेषण ना।';
+
+  @override
+  String get sectionTechnical => 'तकनीकी तस्वीर';
+
+  @override
+  String get labelSma50 => '50 दिन के औसत';
+
+  @override
+  String get labelSma200 => '200 दिन के औसत';
+
+  @override
+  String get labelRsi => 'RSI (14 दिन)';
+
+  @override
+  String get labelVolatility30 => 'उतार-चढ़ाव (30 दिन)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent ऊपर';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent नीचे';
+  }
+
+  @override
+  String get techOverbought => 'ओवरबॉट';
+
+  @override
+  String get techOversold => 'ओवरसोल्ड';
+
+  @override
+  String get techNeutral => 'तटस्थ';
+
+  @override
+  String get techGoldenCross =>
+      '50 दिन के औसत 200 दिन के औसत से ऊपर बा – पुरान पढ़ाई के हिसाब से ऊपर जाए वाला रुझान।';
+
+  @override
+  String get techDeathCross =>
+      '50 दिन के औसत 200 दिन के औसत से नीचे बा – पुरान पढ़ाई के हिसाब से नीचे जाए वाला रुझान।';
+
+  @override
+  String get glossSma50 =>
+      'पिछला 50 कारोबारी दिन के औसत बंद भाव। एकरा से ऊपर के भाव के अक्सर कम समय के मजबूती, नीचे के कमजोरी मानल जाला।';
+
+  @override
+  String get glossSma200 =>
+      'पिछला 200 कारोबारी दिन के औसत बंद भाव – लमहर समय के पुरान रुझान रेखा। बहुत निवेशक एकरा से ऊपर के भाव के लमहर समय के ऊपर जाए वाला रुझान मानेलन।';
+
+  @override
+  String get glossRsi =>
+      'रिलेटिव स्ट्रेंथ इंडेक्स: हाल के फायदा के हाल के नुकसान से 0–100 के पैमाना पर तुलना करेला। 70 से ऊपर शेयर के अक्सर ओवरबॉट (तेजी से बढ़ल) आ 30 से नीचे ओवरसोल्ड कहल जाला – बाकिर मजबूत रुझान बहुत दिन ले ओहिजा रह सकेला।';
+
+  @override
+  String get glossVolatility =>
+      'भाव रोज केतना ऊपर-नीचे होला, साल के हिसाब से: 20% के मतलब आम साल में भाव लगभग ±20% के भीतर चलेला। जादे उतार-चढ़ाव के मतलब दुनो ओर बड़ चाल।';
+
+  @override
+  String get techNote =>
+      'रोज के बंद भाव से गिनल गइल। तकनीकी संकेत बीतल समय बतावेला, आगे के ना।';
 }

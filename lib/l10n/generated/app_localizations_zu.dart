@@ -2655,4 +2655,66 @@ class AppLocalizationsZu extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Incazelo ye-AI evela ezindabeni zanamuhla ezitholakala ku-inthanethi; isizathu sangempela singase singaziwa noma sihluke. Akuyona iseluleko sokutshala imali. Isebenzisa isabelo sakho semibuzo sosuku, hhayi ukuhlaziya.';
+
+  @override
+  String get sectionTechnical => 'Isithombe sobuchwepheshe';
+
+  @override
+  String get labelSma50 => 'Isilinganiso sezinsuku ezingu-50';
+
+  @override
+  String get labelSma200 => 'Isilinganiso sezinsuku ezingu-200';
+
+  @override
+  String get labelRsi => 'RSI (izinsuku ezingu-14)';
+
+  @override
+  String get labelVolatility30 => 'Ukuguquguquka (izinsuku ezingu-30)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent ngaphezulu';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent ngaphansi';
+  }
+
+  @override
+  String get techOverbought => 'lithengwe ngokweqile';
+
+  @override
+  String get techOversold => 'lithengisiwe ngokweqile';
+
+  @override
+  String get techNeutral => 'phakathi';
+
+  @override
+  String get techGoldenCross =>
+      'Isilinganiso sezinsuku ezingu-50 singaphezulu kwesezinsuku ezingu-200 – ngokufunda kwendabuko kuwukwenyuka.';
+
+  @override
+  String get techDeathCross =>
+      'Isilinganiso sezinsuku ezingu-50 singaphansi kwesezinsuku ezingu-200 – ngokufunda kwendabuko kuwukwehla.';
+
+  @override
+  String get glossSma50 =>
+      'Isilinganiso senani lokuvala lezinsuku ezingu-50 zokugcina zokuhweba. Inani elingaphezulu kwaso livame ukubonwa njengamandla esikhathi esifushane, elingaphansi njengobuthakathaka.';
+
+  @override
+  String get glossSma200 =>
+      'Isilinganiso senani lokuvala lezinsuku ezingu-200 zokugcina zokuhweba – umugqa wendabuko wesimo sesikhathi eside. Abatshalizimali abaningi bathatha inani elingaphezulu kwaso njengokwenyuka kwesikhathi eside.';
+
+  @override
+  String get glossRsi =>
+      'Inkomba yamandla aqhathaniswayo: iqhathanisa inzuzo yakamuva nokulahlekelwa kwakamuva esikalini esingu-0–100. Ngaphezulu kuka-70 isitoko sivame ukuthiwa sithengwe ngokweqile (senyuke ngokushesha), ngaphansi kuka-30 sithengisiwe ngokweqile – kodwa isimo esiqinile singahlala lapho isikhathi eside.';
+
+  @override
+  String get glossVolatility =>
+      'Ukuthi inani liguquka kangakanani usuku nosuku, kulinganiswe ngonyaka: u-20% usho ukuthi unyaka ojwayelekile uhamba phakathi kuka-±20% cishe. Ukuguquguquka okuphezulu kusho ukuhamba okukhulu nhlangothi zombili.';
+
+  @override
+  String get techNote =>
+      'Kubalwe emananini okuvala ansuku zonke. Izimpawu zobuchwepheshe zichaza okudlule, hhayi ikusasa.';
 }

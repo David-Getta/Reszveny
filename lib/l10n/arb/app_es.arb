@@ -701,5 +701,22 @@
   "awayReported": "Resultados publicados: {symbols}",
   "moveWhyButton": "¿Por qué se mueve hoy?",
   "moveWhyTitle": "{percent} hoy",
-  "moveWhyNote": "Explicación de la IA a partir de las noticias de hoy encontradas en la web; el motivo real puede ser desconocido o distinto. No es asesoramiento de inversión. Consume tu cuota diaria de preguntas, no un análisis."
+  "moveWhyNote": "Explicación de la IA a partir de las noticias de hoy encontradas en la web; el motivo real puede ser desconocido o distinto. No es asesoramiento de inversión. Consume tu cuota diaria de preguntas, no un análisis.",
+  "sectionTechnical": "Panorama técnico",
+  "labelSma50": "Media de 50 días",
+  "labelSma200": "Media de 200 días",
+  "labelRsi": "RSI (14 días)",
+  "labelVolatility30": "Volatilidad (30 días)",
+  "techAbove": "{percent} por encima",
+  "techBelow": "{percent} por debajo",
+  "techOverbought": "sobrecomprada",
+  "techOversold": "sobrevendida",
+  "techNeutral": "neutral",
+  "techGoldenCross": "La media de 50 días está por encima de la de 200 días – tendencia alcista según la lectura clásica.",
+  "techDeathCross": "La media de 50 días está por debajo de la de 200 días – tendencia bajista según la lectura clásica.",
+  "glossSma50": "El precio medio de cierre de los últimos 50 días de negociación. Un precio por encima suele leerse como fortaleza a corto plazo; por debajo, como debilidad.",
+  "glossSma200": "El precio medio de cierre de los últimos 200 días de negociación – la línea de tendencia clásica a largo plazo. Muchos inversores consideran que un precio por encima indica una tendencia alcista a largo plazo.",
+  "glossRsi": "Índice de fuerza relativa: compara las ganancias recientes con las pérdidas recientes en una escala de 0 a 100. Por encima de 70 suele decirse que la acción está sobrecomprada (subió rápido); por debajo de 30, sobrevendida – pero una tendencia fuerte puede mantenerse ahí mucho tiempo.",
+  "glossVolatility": "Cuánto oscila el precio de un día a otro, anualizado: un 20% significa que en un año típico se mueve dentro de aproximadamente ±20%. Mayor volatilidad significa movimientos más grandes en ambas direcciones.",
+  "techNote": "Calculado a partir de los precios de cierre diarios. Las señales técnicas describen el pasado, no el futuro."
 }

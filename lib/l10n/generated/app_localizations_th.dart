@@ -2616,4 +2616,66 @@ class AppLocalizationsTh extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'คำอธิบายจาก AI โดยอิงข่าววันนี้ที่พบบนเว็บ สาเหตุจริงอาจไม่ทราบหรือแตกต่างออกไป ไม่ใช่คำแนะนำการลงทุน ใช้โควตาคำถามรายวันของคุณ ไม่ใช่การวิเคราะห์';
+
+  @override
+  String get sectionTechnical => 'ภาพทางเทคนิค';
+
+  @override
+  String get labelSma50 => 'ค่าเฉลี่ย 50 วัน';
+
+  @override
+  String get labelSma200 => 'ค่าเฉลี่ย 200 วัน';
+
+  @override
+  String get labelRsi => 'RSI (14 วัน)';
+
+  @override
+  String get labelVolatility30 => 'ความผันผวน (30 วัน)';
+
+  @override
+  String techAbove(String percent) {
+    return 'สูงกว่า $percent';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return 'ต่ำกว่า $percent';
+  }
+
+  @override
+  String get techOverbought => 'ซื้อมากเกินไป';
+
+  @override
+  String get techOversold => 'ขายมากเกินไป';
+
+  @override
+  String get techNeutral => 'เป็นกลาง';
+
+  @override
+  String get techGoldenCross =>
+      'ค่าเฉลี่ย 50 วันอยู่เหนือค่าเฉลี่ย 200 วัน – แนวโน้มขาขึ้นตามการตีความแบบดั้งเดิม';
+
+  @override
+  String get techDeathCross =>
+      'ค่าเฉลี่ย 50 วันอยู่ใต้ค่าเฉลี่ย 200 วัน – แนวโน้มขาลงตามการตีความแบบดั้งเดิม';
+
+  @override
+  String get glossSma50 =>
+      'ราคาปิดเฉลี่ยของ 50 วันทำการล่าสุด ราคาที่อยู่เหนือเส้นนี้มักถูกมองว่าเป็นความแข็งแรงระยะสั้น ส่วนราคาที่อยู่ใต้เส้นถือเป็นความอ่อนแอ';
+
+  @override
+  String get glossSma200 =>
+      'ราคาปิดเฉลี่ยของ 200 วันทำการล่าสุด – เส้นแนวโน้มระยะยาวแบบดั้งเดิม นักลงทุนจำนวนมากมองว่าราคาที่อยู่เหนือเส้นนี้คือแนวโน้มขาขึ้นระยะยาว';
+
+  @override
+  String get glossRsi =>
+      'ดัชนีความแข็งแรงสัมพัทธ์: เปรียบเทียบกำไรล่าสุดกับขาดทุนล่าสุดบนสเกล 0–100 เหนือ 70 มักเรียกว่าหุ้นถูกซื้อมากเกินไป (ขึ้นเร็ว) ต่ำกว่า 30 เรียกว่าถูกขายมากเกินไป – แต่แนวโน้มที่แข็งแรงอาจอยู่ตรงนั้นได้นาน';
+
+  @override
+  String get glossVolatility =>
+      'ราคาแกว่งตัววันต่อวันมากแค่ไหน คิดเป็นรายปี: 20% หมายความว่าในปีปกติราคาจะเคลื่อนไหวอยู่ในช่วงประมาณ ±20% ความผันผวนที่สูงขึ้นหมายถึงการเคลื่อนไหวที่ใหญ่ขึ้นทั้งสองทาง';
+
+  @override
+  String get techNote =>
+      'คำนวณจากราคาปิดรายวัน สัญญาณทางเทคนิคบอกเล่าอดีต ไม่ใช่อนาคต';
 }

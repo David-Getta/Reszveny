@@ -701,5 +701,22 @@
   "awayReported": "Nəticələrini açıqladı: {symbols}",
   "moveWhyButton": "Bu gün niyə dəyişir?",
   "moveWhyTitle": "Bu gün {percent}",
-  "moveWhyNote": "Vebdə tapılan bugünkü xəbərlərə əsaslanan AI izahı; əsl səbəb naməlum və ya fərqli ola bilər. İnvestisiya məsləhəti deyil. Gündəlik sual limitinizdən istifadə edir, analiz deyil."
+  "moveWhyNote": "Vebdə tapılan bugünkü xəbərlərə əsaslanan AI izahı; əsl səbəb naməlum və ya fərqli ola bilər. İnvestisiya məsləhəti deyil. Gündəlik sual limitinizdən istifadə edir, analiz deyil.",
+  "sectionTechnical": "Texniki mənzərə",
+  "labelSma50": "50 günlük orta",
+  "labelSma200": "200 günlük orta",
+  "labelRsi": "RSI (14 gün)",
+  "labelVolatility30": "Volatillik (30 gün)",
+  "techAbove": "{percent} yuxarıda",
+  "techBelow": "{percent} aşağıda",
+  "techOverbought": "həddindən artıq alınmış",
+  "techOversold": "həddindən artıq satılmış",
+  "techNeutral": "neytral",
+  "techGoldenCross": "50 günlük orta 200 günlük ortadan yuxarıdır – klassik oxunuşa görə yüksələn trend.",
+  "techDeathCross": "50 günlük orta 200 günlük ortadan aşağıdır – klassik oxunuşa görə enən trend.",
+  "glossSma50": "Son 50 ticarət gününün orta bağlanış qiyməti. Ondan yuxarı qiymət çox vaxt qısamüddətli güc, aşağı qiymət isə zəiflik kimi oxunur.",
+  "glossSma200": "Son 200 ticarət gününün orta bağlanış qiyməti – klassik uzunmüddətli trend xətti. Bir çox investor ondan yuxarı qiyməti uzunmüddətli yüksələn trend sayır.",
+  "glossRsi": "Nisbi güc indeksi: son qazancları son itkilərlə 0–100 şkalasında müqayisə edir. 70-dən yuxarı səhm çox vaxt həddindən artıq alınmış (sürətlə yüksəlib), 30-dan aşağı həddindən artıq satılmış adlanır – amma güclü trend orada uzun müddət qala bilər.",
+  "glossVolatility": "Qiymətin gündən-günə nə qədər dəyişdiyi, illik hesablanmış: 20% o deməkdir ki, adi bir il təxminən ±20% daxilində hərəkət edir. Yüksək volatillik hər iki istiqamətdə daha böyük hərəkətlər deməkdir.",
+  "techNote": "Gündəlik bağlanış qiymətlərindən hesablanıb. Texniki siqnallar keçmişi təsvir edir, gələcəyi yox."
 }

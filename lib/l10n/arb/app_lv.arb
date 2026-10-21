@@ -701,5 +701,22 @@
   "awayReported": "Publicēja rezultātus: {symbols}",
   "moveWhyButton": "Kāpēc tā šodien kustas?",
   "moveWhyTitle": "{percent} šodien",
-  "moveWhyNote": "MI skaidrojums no šodienas ziņām tīmeklī; patiesais iemesls var būt nezināms vai cits. Tas nav ieguldījumu padoms. Izmanto jūsu dienas jautājumu limitu, ne analīzi."
+  "moveWhyNote": "MI skaidrojums no šodienas ziņām tīmeklī; patiesais iemesls var būt nezināms vai cits. Tas nav ieguldījumu padoms. Izmanto jūsu dienas jautājumu limitu, ne analīzi.",
+  "sectionTechnical": "Tehniskā aina",
+  "labelSma50": "50 dienu vidējais",
+  "labelSma200": "200 dienu vidējais",
+  "labelRsi": "RSI (14 dienas)",
+  "labelVolatility30": "Svārstīgums (30 dienas)",
+  "techAbove": "{percent} virs",
+  "techBelow": "{percent} zem",
+  "techOverbought": "pārpirkta",
+  "techOversold": "pārpārdota",
+  "techNeutral": "neitrāls",
+  "techGoldenCross": "50 dienu vidējais ir virs 200 dienu vidējā – pēc klasiskās interpretācijas augšupejoša tendence.",
+  "techDeathCross": "50 dienu vidējais ir zem 200 dienu vidējā – pēc klasiskās interpretācijas lejupejoša tendence.",
+  "glossSma50": "Pēdējo 50 tirdzniecības dienu vidējā slēgšanas cena. Cenu virs tā bieži uzskata par īstermiņa spēku, zem tā – par vājumu.",
+  "glossSma200": "Pēdējo 200 tirdzniecības dienu vidējā slēgšanas cena – klasiskā ilgtermiņa tendences līnija. Daudzi investori cenu virs tā uzskata par ilgtermiņa augšupejošu tendenci.",
+  "glossRsi": "Relatīvā spēka indekss: salīdzina nesenos pieaugumus ar nesenajiem kritumiem skalā no 0 līdz 100. Virs 70 akciju bieži sauc par pārpirktu (tā strauji kāpa), zem 30 – par pārpārdotu, bet stipra tendence tur var saglabāties ilgi.",
+  "glossVolatility": "Cik daudz cena svārstās no dienas dienā, pārrēķinot uz gadu: 20 % nozīmē, ka tipiskā gadā cena mainās aptuveni ±20 % robežās. Lielāks svārstīgums nozīmē lielākas kustības abos virzienos.",
+  "techNote": "Aprēķināts pēc dienas slēgšanas cenām. Tehniskie signāli apraksta pagātni, ne nākotni."
 }

@@ -2642,4 +2642,66 @@ class AppLocalizationsFa extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'توضیح هوش مصنوعی بر اساس اخبار امروز در وب؛ دلیل واقعی ممکن است نامعلوم یا متفاوت باشد. توصیه سرمایه‌گذاری نیست. از سهمیه روزانه پرسش‌های شما استفاده می‌کند، نه تحلیل.';
+
+  @override
+  String get sectionTechnical => 'تصویر تکنیکال';
+
+  @override
+  String get labelSma50 => 'میانگین ۵۰ روزه';
+
+  @override
+  String get labelSma200 => 'میانگین ۲۰۰ روزه';
+
+  @override
+  String get labelRsi => 'RSI (۱۴ روزه)';
+
+  @override
+  String get labelVolatility30 => 'نوسان (۳۰ روزه)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent بالاتر';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent پایین‌تر';
+  }
+
+  @override
+  String get techOverbought => 'اشباع خرید';
+
+  @override
+  String get techOversold => 'اشباع فروش';
+
+  @override
+  String get techNeutral => 'خنثی';
+
+  @override
+  String get techGoldenCross =>
+      'میانگین ۵۰ روزه بالای میانگین ۲۰۰ روزه است – بر اساس خوانش کلاسیک، روند صعودی.';
+
+  @override
+  String get techDeathCross =>
+      'میانگین ۵۰ روزه زیر میانگین ۲۰۰ روزه است – بر اساس خوانش کلاسیک، روند نزولی.';
+
+  @override
+  String get glossSma50 =>
+      'میانگین قیمت پایانی ۵۰ روز معاملاتی اخیر. قیمت بالاتر از آن اغلب نشانه قدرت کوتاه‌مدت و قیمت پایین‌تر نشانه ضعف تلقی می‌شود.';
+
+  @override
+  String get glossSma200 =>
+      'میانگین قیمت پایانی ۲۰۰ روز معاملاتی اخیر – خط روند کلاسیک بلندمدت. بسیاری از سرمایه‌گذاران قیمت بالاتر از آن را روند صعودی بلندمدت می‌دانند.';
+
+  @override
+  String get glossRsi =>
+      'شاخص قدرت نسبی: سودهای اخیر را با زیان‌های اخیر در مقیاس ۰ تا ۱۰۰ مقایسه می‌کند. بالای ۷۰ اغلب گفته می‌شود سهم در اشباع خرید است (سریع رشد کرده) و زیر ۳۰ در اشباع فروش – اما یک روند قوی می‌تواند مدت زیادی همان‌جا بماند.';
+
+  @override
+  String get glossVolatility =>
+      'میزان نوسان روزانه قیمت، به‌صورت سالانه: ۲۰٪ یعنی در یک سال معمولی قیمت تقریباً در بازه ±۲۰٪ حرکت می‌کند. نوسان بیشتر یعنی حرکت‌های بزرگ‌تر در هر دو جهت.';
+
+  @override
+  String get techNote =>
+      'بر اساس قیمت‌های پایانی روزانه محاسبه شده است. سیگنال‌های تکنیکال گذشته را توصیف می‌کنند، نه آینده را.';
 }

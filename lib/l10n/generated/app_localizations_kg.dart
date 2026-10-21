@@ -2654,4 +2654,66 @@ class AppLocalizationsKg extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Ntendula ya AI yina me katuka na bansangu ya bubu yai ya bo me mona na internet; kikuma ya kieleka lenda vanda ya kuzaba ve to ya kuswaswana. Yo kele ve ndongisila ya kutula mbongo. Yo ke sadila ndilu na nge ya bangiufula ya konso kilumbu, kansi ve kutala ya mbote.';
+
+  @override
+  String get sectionTechnical => 'Kifwanisu ya tekinike';
+
+  @override
+  String get labelSma50 => 'Kati-kati ya bilumbu 50';
+
+  @override
+  String get labelSma200 => 'Kati-kati ya bilumbu 200';
+
+  @override
+  String get labelRsi => 'RSI (bilumbu 14)';
+
+  @override
+  String get labelVolatility30 => 'Nsobolo ya ntalu (bilumbu 30)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent na zulu';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent na nsi';
+  }
+
+  @override
+  String get techOverbought => 'bo sumbaka yo mingi';
+
+  @override
+  String get techOversold => 'bo tekaka yo mingi';
+
+  @override
+  String get techNeutral => 'na kati';
+
+  @override
+  String get techGoldenCross =>
+      'Kati-kati ya bilumbu 50 kele na zulu ya kati-kati ya bilumbu 200 – na mutindu ya kutanga ya ntama, yo kele nzila ya kutombuka.';
+
+  @override
+  String get techDeathCross =>
+      'Kati-kati ya bilumbu 50 kele na nsi ya kati-kati ya bilumbu 200 – na mutindu ya kutanga ya ntama, yo kele nzila ya kukulumuka.';
+
+  @override
+  String get glossSma50 =>
+      'Kati-kati ya ntalu ya nsuka ya bilumbu 50 ya zandu ya nsuka. Ntalu yina kele na zulu na yo bo ke monaka yo mbala mingi bonso ngolo ya ntangu ya nkufi, yina kele na nsi bonso kulemba.';
+
+  @override
+  String get glossSma200 =>
+      'Kati-kati ya ntalu ya nsuka ya bilumbu 200 ya zandu ya nsuka – nzila ya ntama ya ntangu ya nda. Bantu mingi ya ke tulaka mbongo ke monaka ntalu yina kele na zulu na yo bonso nzila ya kutombuka ya ntangu ya nda.';
+
+  @override
+  String get glossRsi =>
+      'Kiteso ya ngolo ya kufwanisa (RSI): yo ke fwanisaka mbongo ya me baka ntama fioti ti mbongo ya me vila ntama fioti na kiteso ya 0–100. Na zulu ya 70 bo ke tubaka mbala mingi nde bo sumbaka aksio mingi (yo tombukaka nswalu), na nsi ya 30 bo tekaka yo mingi – kansi nzila ya ngolo lenda bikala pana ntangu ya nda.';
+
+  @override
+  String get glossVolatility =>
+      'Mutindu ntalu ke sobaka kilumbu na kilumbu, ya bo me tanga na mvula mosi: 20% ke tendula nde na mvula ya mbote ntalu ke tambulaka na kati ya kiteso ya ±20%. Nsobolo ya nene ke tendula nde ntalu ke tambulaka mingi na ndambu zole.';
+
+  @override
+  String get techNote =>
+      'Bo tangaka yo na ntalu ya nsuka ya konso kilumbu. Bidimbu ya tekinike ke tubaka mambu ya me luta, kansi ve ya ke kwisa.';
 }

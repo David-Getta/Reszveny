@@ -701,5 +701,22 @@
   "awayReported": "Resultats publicats: {symbols}",
   "moveWhyButton": "Per què es mou avui?",
   "moveWhyTitle": "{percent} avui",
-  "moveWhyNote": "Explicació de la IA a partir de les notícies d’avui trobades al web; el motiu real pot ser desconegut o diferent. No és assessorament d’inversió. Consumeix la teva quota diària de preguntes, no una anàlisi."
+  "moveWhyNote": "Explicació de la IA a partir de les notícies d’avui trobades al web; el motiu real pot ser desconegut o diferent. No és assessorament d’inversió. Consumeix la teva quota diària de preguntes, no una anàlisi.",
+  "sectionTechnical": "Imatge tècnica",
+  "labelSma50": "Mitjana de 50 dies",
+  "labelSma200": "Mitjana de 200 dies",
+  "labelRsi": "RSI (14 dies)",
+  "labelVolatility30": "Volatilitat (30 dies)",
+  "techAbove": "{percent} per sobre",
+  "techBelow": "{percent} per sota",
+  "techOverbought": "sobrecomprat",
+  "techOversold": "sobrevenut",
+  "techNeutral": "neutral",
+  "techGoldenCross": "La mitjana de 50 dies és per sobre de la de 200 dies – una tendència alcista segons la lectura clàssica.",
+  "techDeathCross": "La mitjana de 50 dies és per sota de la de 200 dies – una tendència baixista segons la lectura clàssica.",
+  "glossSma50": "El preu mitjà de tancament dels últims 50 dies de negociació. Un preu per sobre sovint es llegeix com a fortalesa a curt termini; per sota, com a debilitat.",
+  "glossSma200": "El preu mitjà de tancament dels últims 200 dies de negociació – la línia de tendència clàssica a llarg termini. Molts inversors consideren que un preu per sobre indica una tendència alcista a llarg termini.",
+  "glossRsi": "Índex de força relativa: compara els guanys recents amb les pèrdues recents en una escala de 0 a 100. Per sobre de 70 sovint es diu que l’acció està sobrecomprada (ha pujat ràpid); per sota de 30, sobrevenuda – però una tendència forta pot quedar-s’hi molt de temps.",
+  "glossVolatility": "Quant oscil·la el preu d’un dia a l’altre, en termes anuals: un 20% vol dir que en un any típic es mou dins d’aproximadament ±20%. Més volatilitat vol dir moviments més grans en les dues direccions.",
+  "techNote": "Calculat a partir dels preus de tancament diaris. Els senyals tècnics descriuen el passat, no el futur."
 }

@@ -168,6 +168,9 @@ void main() {
     // Friss negyedéves eredmény a ticker alatt (a demó: 1,15 a várt 1,12 helyett).
     expect(find.byKey(const ValueKey('watch-result-MSFT')), findsOneWidget);
     expect(find.text('EPS +2.7%'), findsWidgets);
+    // Nagy napi mozgás (NVDA +2,98%): koppintható jel; a többinél nincs.
+    expect(find.byKey(const ValueKey('watch-move-NVDA')), findsOneWidget);
+    expect(find.byKey(const ValueKey('watch-move-AAPL')), findsNothing);
 
     // A részvény melletti gombbal: új lista, benne a részvénnyel.
     await tester.tap(find.byKey(const ValueKey('watch-addto-NVDA')));

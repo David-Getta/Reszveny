@@ -2641,4 +2641,66 @@ class AppLocalizationsWo extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Leeral bu AI ci xibaari tey yi ñu gis ci internet; lu tax ko dëgg mën na ñu xamul walla mu wuute. Du ndigal ci investissement. Dafay jëfandikoo say laaj yu bés bu nekk, du analiis.';
+
+  @override
+  String get sectionTechnical => 'Nataalu teknik';
+
+  @override
+  String get labelSma50 => 'Digg-diggu 50 fan';
+
+  @override
+  String get labelSma200 => 'Digg-diggu 200 fan';
+
+  @override
+  String get labelRsi => 'RSI (14 fan)';
+
+  @override
+  String get labelVolatility30 => 'Soppeeku njëg (30 fan)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent ci kaw';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent ci suuf';
+  }
+
+  @override
+  String get techOverbought => 'jënd nañu ko lu ëpp';
+
+  @override
+  String get techOversold => 'jaay nañu ko lu ëpp';
+
+  @override
+  String get techNeutral => 'ci diggante';
+
+  @override
+  String get techGoldenCross =>
+      'Digg-diggu 50 fan bi mu ngi ci kaw digg-diggu 200 fan bi – ci xalaat bu njëkk, yoon bu yéeg.';
+
+  @override
+  String get techDeathCross =>
+      'Digg-diggu 50 fan bi mu ngi ci suuf digg-diggu 200 fan bi – ci xalaat bu njëkk, yoon bu wàcc.';
+
+  @override
+  String get glossSma50 =>
+      'Digg-diggu njëgu tëj yu 50 fan yu mujj ci njaay. Njëg bu ci kaw, dañu koy faral di jàpp ni doole ci diir bu gàtt, bu ci suuf ni ñàkk doole.';
+
+  @override
+  String get glossSma200 =>
+      'Digg-diggu njëgu tëj yu 200 fan yu mujj ci njaay – rëdd bu njëkk bu yoonu diir bu gudd. Ñu bare ñuy def xaalis dañuy jàpp njëg bu ci kaw ni yoon bu yéeg ci diir bu gudd.';
+
+  @override
+  String get glossRsi =>
+      'Indeksu doole bu méngale (RSI): dafay méngale ndam yu mujj ak pert yu mujj ci natt 0–100. Lu ëpp 70, dañuy faral di wax ne jënd nañu ko lu ëpp (yéeg na gaaw), lu néew 30 ne jaay nañu ko lu ëpp – waaye yoon bu am doole mën na fa yàgg.';
+
+  @override
+  String get glossVolatility =>
+      'Ni njëg di soppeeku bés bu nekk, natt ci at: 20% mooy at bu baax dafay dox ci lu tollu ci ±20%. Soppeeku bu gën a réy mooy dox yu gën a réy ci ñaari wet yi.';
+
+  @override
+  String get techNote =>
+      'Waññ nañu ko ci njëgu tëj yu bés bu nekk. Màndargay teknik dañuy wax li weesu, waaye du li ñëw.';
 }

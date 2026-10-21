@@ -2653,4 +2653,66 @@ class AppLocalizationsLua extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Diumvuija dia AI difumina ku malu a lelu adi mamoneka pa internet; bualu bulelela budi mua kuikala kabuyi bumanyike anyi bushilangane. Ki mbuludiki bua kuteka makuta to. Didi disadila bungi bua nkonko yebe ya ku dituku, kadi ki ndikonkonona to.';
+
+  @override
+  String get sectionTechnical => 'Tshimfuanyi tsha tekinike';
+
+  @override
+  String get labelSma50 => 'Pankatshi pa matuku 50';
+
+  @override
+  String get labelSma200 => 'Pankatshi pa matuku 200';
+
+  @override
+  String get labelRsi => 'RSI (matuku 14)';
+
+  @override
+  String get labelVolatility30 => 'Dishintuluka dia mushinga (matuku 30)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent kulu';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent muinshi';
+  }
+
+  @override
+  String get techOverbought => 'basumba bikole';
+
+  @override
+  String get techOversold => 'bapana bikole';
+
+  @override
+  String get techNeutral => 'pankatshi';
+
+  @override
+  String get techGoldenCross =>
+      'Pankatshi pa matuku 50 pidi kulu kua pankatshi pa matuku 200 – bilondeshile dibala dia kale, ndi njila wa kubanda.';
+
+  @override
+  String get techDeathCross =>
+      'Pankatshi pa matuku 50 pidi muinshi mua pankatshi pa matuku 200 – bilondeshile dibala dia kale, ndi njila wa kupueka.';
+
+  @override
+  String get glossSma50 =>
+      'Pankatshi pa mishinga ya ndekelu ya matuku 50 a tshisalu a ndekelu. Mushinga udi kulu kuapu utu umonyibua misangu ya bungi bu bukole bua tshikondo tshîpi, udi muinshi bu butekete.';
+
+  @override
+  String get glossSma200 =>
+      'Pankatshi pa mishinga ya ndekelu ya matuku 200 a tshisalu a ndekelu – mulongo wa njila wa tshikondo tshile wa kale. Bantu ba bungi badi bateka makuta badi bamona mushinga udi kulu kuapu bu njila wa kubanda wa tshikondo tshile.';
+
+  @override
+  String get glossRsi =>
+      'Tshipiminu tshia bukole bua difuanyikija (RSI): tshidi tshifuanyikija mabuenzelu a matuku aa ne mapangila a matuku aa pa tshipiminu tshia 0–100. Kulu kua 70 batu bamba misangu ya bungi ne: aksio idi misumba bikole (yakabanda lukasa), muinshi mua 30 idi mipana bikole – kadi njila wa bukole udi mua kushala apu tshikondo tshile.';
+
+  @override
+  String get glossVolatility =>
+      'Mushinga udi ushintuluka mushindu kayi dituku dionso, mubadika mu tshidimu tshimue: 20% udi umvuija ne: mu tshidimu tshia tshianana mushinga udi wenda munkatshi mua ±20%. Dishintuluka dinene didi diumvuija bienzelu binene ku mitshi ibidi yonso.';
+
+  @override
+  String get techNote =>
+      'Mubadika kumbukila ku mishinga ya ndekelu ya dituku dionso. Bimanyinu bia tekinike bidi biumvuija bia kale, kabiyi bia kumpala.';
 }

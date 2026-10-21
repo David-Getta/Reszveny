@@ -2637,4 +2637,66 @@ class AppLocalizationsPs extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'د نن ورځې د خبرونو پر بنسټ چې په ویب کې موندل شوي، د AI تشریح؛ اصلي دلیل کېدای شي نامعلوم یا توپیر ولري. د پانګونې مشوره نه ده. ستاسو د ورځنیو پوښتنو حد کاروي، نه تحلیل.';
+
+  @override
+  String get sectionTechnical => 'تخنیکي انځور';
+
+  @override
+  String get labelSma50 => '۵۰ ورځنی اوسط';
+
+  @override
+  String get labelSma200 => '۲۰۰ ورځنی اوسط';
+
+  @override
+  String get labelRsi => 'RSI (۱۴ ورځې)';
+
+  @override
+  String get labelVolatility30 => 'بې‌ثباتي (۳۰ ورځې)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent پورته';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent ښکته';
+  }
+
+  @override
+  String get techOverbought => 'ډېر پېرودل شوی';
+
+  @override
+  String get techOversold => 'ډېر پلورل شوی';
+
+  @override
+  String get techNeutral => 'بې‌طرفه';
+
+  @override
+  String get techGoldenCross =>
+      '۵۰ ورځنی اوسط د ۲۰۰ ورځني اوسط له پورته دی – د کلاسیک تعبیر له مخې د پورته کېدو رنډ.';
+
+  @override
+  String get techDeathCross =>
+      '۵۰ ورځنی اوسط د ۲۰۰ ورځني اوسط له ښکته دی – د کلاسیک تعبیر له مخې د ښکته کېدو رنډ.';
+
+  @override
+  String get glossSma50 =>
+      'د تېرو ۵۰ تجارتي ورځو د تړلو بیې اوسط. له دې پورته بیه ډېری وخت د لنډمهاله ځواک، او ښکته بیه د کمزورتیا نښه ګڼل کېږي.';
+
+  @override
+  String get glossSma200 =>
+      'د تېرو ۲۰۰ تجارتي ورځو د تړلو بیې اوسط – د اوږدمهاله رنډ کلاسیکه کرښه. ډېری پانګوال له دې پورته بیه د اوږدمهاله پورته کېدو رنډ ګڼي.';
+
+  @override
+  String get glossRsi =>
+      'د نسبي ځواک شاخص: وروستۍ ګټې له وروستیو زیانونو سره د ۰–۱۰۰ په کچه پرتله کوي. له ۷۰ پورته سټاک ډېری وخت ډېر پېرودل شوی (ګړندی پورته شوی) او له ۳۰ ښکته ډېر پلورل شوی بلل کېږي – خو یو پیاوړی رنډ کولای شي اوږده موده هلته پاتې شي.';
+
+  @override
+  String get glossVolatility =>
+      'بیه له یوې ورځې تر بلې څومره بدلېږي، د کال په کچه حساب شوې: ۲۰٪ یعنې یو عادي کال نږدې ±۲۰٪ په حدودو کې حرکت کوي. لوړه بې‌ثباتي یعنې دواړو خواوو ته لوی حرکتونه.';
+
+  @override
+  String get techNote =>
+      'له ورځنیو تړلو بیو څخه حساب شوی. تخنیکي نښې تېر وخت بیانوي، نه راتلونکی.';
 }

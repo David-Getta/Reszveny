@@ -3,6 +3,20 @@ import 'package:reszveny/core/models/price_history.dart';
 import 'package:reszveny/features/analysis/price_stats.dart';
 
 void main() {
+  test('RSI: all gains is 100, steady alternation is around 50, needs n+1 closes', () {
+    PricePoint pt(int i, double c) => PricePoint(
+      time: DateTime(2026, 1, 1).add(Duration(days: i)),
+      close: c,
+    );
+    final up = [for (var i = 0; i < 20; i++) pt(i, 100.0 + i)];
+    expect(PriceStats.rsi(up, 14), 100);
+    final flat = [for (var i = 0; i < 40; i++) pt(i, i.isEven ? 100 : 101)];
+    expect(PriceStats.rsi(flat, 14), closeTo(50, 5));
+    expect(PriceStats.rsi(up.take(14).toList(), 14), isNull);
+    final down = [for (var i = 0; i < 30; i++) pt(i, 200.0 - i)];
+    expect(PriceStats.rsi(down, 14), 0);
+  });
+
   List<PricePoint> series(List<double> closes) => [
     for (var i = 0; i < closes.length; i++)
       PricePoint(

@@ -2712,4 +2712,66 @@ class AppLocalizationsCs extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Vysvětlení AI z dnešních zpráv nalezených na webu; skutečný důvod může být neznámý nebo jiný. Nejde o investiční doporučení. Čerpá váš denní limit otázek, ne analýzu.';
+
+  @override
+  String get sectionTechnical => 'Technický obraz';
+
+  @override
+  String get labelSma50 => '50denní průměr';
+
+  @override
+  String get labelSma200 => '200denní průměr';
+
+  @override
+  String get labelRsi => 'RSI (14 dní)';
+
+  @override
+  String get labelVolatility30 => 'Volatilita (30 dní)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent nad';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent pod';
+  }
+
+  @override
+  String get techOverbought => 'překoupeno';
+
+  @override
+  String get techOversold => 'přeprodáno';
+
+  @override
+  String get techNeutral => 'neutrální';
+
+  @override
+  String get techGoldenCross =>
+      '50denní průměr je nad 200denním – podle klasického výkladu rostoucí trend.';
+
+  @override
+  String get techDeathCross =>
+      '50denní průměr je pod 200denním – podle klasického výkladu klesající trend.';
+
+  @override
+  String get glossSma50 =>
+      'Průměrná zavírací cena za posledních 50 obchodních dní. Cena nad ním se často čte jako krátkodobá síla, pod ním jako slabost.';
+
+  @override
+  String get glossSma200 =>
+      'Průměrná zavírací cena za posledních 200 obchodních dní – klasická dlouhodobá trendová linie. Mnoho investorů považuje cenu nad ním za dlouhodobý rostoucí trend.';
+
+  @override
+  String get glossRsi =>
+      'Index relativní síly: porovnává nedávné zisky s nedávnými ztrátami na škále 0–100. Nad 70 se akcie často označuje za překoupenou (rychle rostla), pod 30 za přeprodanou – silný trend tam ale může zůstat dlouho.';
+
+  @override
+  String get glossVolatility =>
+      'Jak moc cena kolísá ze dne na den, přepočteno na rok: 20 % znamená, že se v typickém roce pohybuje zhruba v rozmezí ±20 %. Vyšší volatilita znamená větší pohyby oběma směry.';
+
+  @override
+  String get techNote =>
+      'Vypočteno z denních zavíracích cen. Technické signály popisují minulost, ne budoucnost.';
 }

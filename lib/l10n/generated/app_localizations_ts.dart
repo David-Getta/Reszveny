@@ -2663,4 +2663,66 @@ class AppLocalizationsTs extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Nhlamuselo ya AI leyi humaka eka mahungu ya namuntlha lama kumiweke eka inthanete; xivangelo xa ntiyiso xi nga ha va xi nga tiviwi kumbe xi hambana. A hi ndzayo ya vuvekisi. Yi tirhisa nhlayo ya wena ya swivutiso ya siku, ku nga ri nxopaxopo.';
+
+  @override
+  String get sectionTechnical => 'Xifaniso xa thekiniki';
+
+  @override
+  String get labelSma50 => 'Avhareji ya masiku ya 50';
+
+  @override
+  String get labelSma200 => 'Avhareji ya masiku ya 200';
+
+  @override
+  String get labelRsi => 'RSI (masiku ya 14)';
+
+  @override
+  String get labelVolatility30 => 'Ku cinca ka nxavo (masiku ya 30)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent ehenhla';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent ehansi';
+  }
+
+  @override
+  String get techOverbought => 'yi xaviwe ngopfu';
+
+  @override
+  String get techOversold => 'yi xavisiwe ngopfu';
+
+  @override
+  String get techNeutral => 'exikarhi';
+
+  @override
+  String get techGoldenCross =>
+      'Avhareji ya masiku ya 50 yi le henhla ka avhareji ya masiku ya 200 – hi ku hlaya ka ntolovelo i ku tlakuka.';
+
+  @override
+  String get techDeathCross =>
+      'Avhareji ya masiku ya 50 yi le hansi ka avhareji ya masiku ya 200 – hi ku hlaya ka ntolovelo i ku rhelela.';
+
+  @override
+  String get glossSma50 =>
+      'Avhareji ya nxavo wo pfala wa masiku ya 50 yo hetelela ya bindzu. Nxavo lowu nga ehenhla ka yona hakanyingi wu voniwa tanihi matimba ya nkarhi wo koma, lowu nga ehansi tanihi ku tsana.';
+
+  @override
+  String get glossSma200 =>
+      'Avhareji ya nxavo wo pfala wa masiku ya 200 yo hetelela ya bindzu – layini wa ntolovelo wa ndlela ya nkarhi wo leha. Vavekisi vo tala va teka nxavo lowu nga ehenhla ka yona tanihi ku tlakuka ka nkarhi wo leha.';
+
+  @override
+  String get glossRsi =>
+      'Indekisi ya matimba yo ringanisa: yi ringanisa mbuyelo wa sweswinyana ni ku lahlekeriwa ka sweswinyana eka xikalo xa 0–100. Ehenhla ka 70 xitoko hakanyingi xi vuriwa xi xaviwe ngopfu (xi tlakukile hi ku hatlisa), ehansi ka 30 xi xavisiwe ngopfu – kambe ndlela ya matimba yi nga tshama kona nkarhi wo leha.';
+
+  @override
+  String get glossVolatility =>
+      'Ndlela leyi nxavo wu cincaka ha yona siku na siku, yi pimiwe hi lembe: 20% swi vula leswaku lembe ro tolovela ri famba endzeni ka kwalomu ka ±20%. Ku cinca lokukulu swi vula ku famba lokukulu eka matlhelo hamambirhi.';
+
+  @override
+  String get techNote =>
+      'Swi hlayiwile ku suka eka minxavo yo pfala ya siku na siku. Swikombiso swa thekiniki swi hlamusela leswi hundzeke, ku nga ri vumundzuku.';
 }

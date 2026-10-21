@@ -701,5 +701,22 @@
   "awayReported": "Risultati pubblicati: {symbols}",
   "moveWhyButton": "Perché si muove oggi?",
   "moveWhyTitle": "{percent} oggi",
-  "moveWhyNote": "Spiegazione dell’IA dalle notizie di oggi trovate sul web; il motivo reale potrebbe essere sconosciuto o diverso. Non è una consulenza d’investimento. Consuma la tua quota giornaliera di domande, non un’analisi."
+  "moveWhyNote": "Spiegazione dell’IA dalle notizie di oggi trovate sul web; il motivo reale potrebbe essere sconosciuto o diverso. Non è una consulenza d’investimento. Consuma la tua quota giornaliera di domande, non un’analisi.",
+  "sectionTechnical": "Quadro tecnico",
+  "labelSma50": "Media a 50 giorni",
+  "labelSma200": "Media a 200 giorni",
+  "labelRsi": "RSI (14 giorni)",
+  "labelVolatility30": "Volatilità (30 giorni)",
+  "techAbove": "{percent} sopra",
+  "techBelow": "{percent} sotto",
+  "techOverbought": "ipercomprato",
+  "techOversold": "ipervenduto",
+  "techNeutral": "neutrale",
+  "techGoldenCross": "La media a 50 giorni è sopra quella a 200 giorni – un trend rialzista secondo la lettura classica.",
+  "techDeathCross": "La media a 50 giorni è sotto quella a 200 giorni – un trend ribassista secondo la lettura classica.",
+  "glossSma50": "Il prezzo medio di chiusura degli ultimi 50 giorni di borsa. Un prezzo sopra viene spesso letto come forza nel breve periodo, sotto come debolezza.",
+  "glossSma200": "Il prezzo medio di chiusura degli ultimi 200 giorni di borsa – la classica linea di tendenza di lungo periodo. Molti investitori considerano un prezzo sopra come un trend rialzista di lungo periodo.",
+  "glossRsi": "Indice di forza relativa: confronta i guadagni recenti con le perdite recenti su una scala da 0 a 100. Sopra 70 il titolo è spesso detto ipercomprato (è salito in fretta), sotto 30 ipervenduto – ma un trend forte può restarci a lungo.",
+  "glossVolatility": "Quanto oscilla il prezzo da un giorno all’altro, su base annua: 20% significa che in un anno tipico si muove entro circa ±20%. Una volatilità più alta significa movimenti più ampi in entrambe le direzioni.",
+  "techNote": "Calcolato dai prezzi di chiusura giornalieri. I segnali tecnici descrivono il passato, non il futuro."
 }

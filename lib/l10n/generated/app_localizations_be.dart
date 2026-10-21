@@ -2717,4 +2717,66 @@ class AppLocalizationsBe extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Тлумачэнне ШІ на аснове сённяшніх навін з інтэрнэту; сапраўдная прычына можа быць невядомай або іншай. Не з’яўляецца інвестыцыйнай парадай. Выкарыстоўвае ваш дзённы ліміт пытанняў, а не аналіз.';
+
+  @override
+  String get sectionTechnical => 'Тэхнічная карціна';
+
+  @override
+  String get labelSma50 => '50-дзённая сярэдняя';
+
+  @override
+  String get labelSma200 => '200-дзённая сярэдняя';
+
+  @override
+  String get labelRsi => 'RSI (14 дзён)';
+
+  @override
+  String get labelVolatility30 => 'Валацільнасць (30 дзён)';
+
+  @override
+  String techAbove(String percent) {
+    return 'на $percent вышэй';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return 'на $percent ніжэй';
+  }
+
+  @override
+  String get techOverbought => 'перакупленасць';
+
+  @override
+  String get techOversold => 'перапраданасць';
+
+  @override
+  String get techNeutral => 'нейтральна';
+
+  @override
+  String get techGoldenCross =>
+      '50-дзённая сярэдняя вышэй за 200-дзённую – паводле класічнага прачытання гэта ўзыходны трэнд.';
+
+  @override
+  String get techDeathCross =>
+      '50-дзённая сярэдняя ніжэй за 200-дзённую – паводле класічнага прачытання гэта сыходны трэнд.';
+
+  @override
+  String get glossSma50 =>
+      'Сярэдняя цана закрыцця за апошнія 50 гандлёвых дзён. Цану вышэй за яе часта чытаюць як кароткатэрміновую сілу, ніжэй – як слабасць.';
+
+  @override
+  String get glossSma200 =>
+      'Сярэдняя цана закрыцця за апошнія 200 гандлёвых дзён – класічная лінія доўгатэрміновага трэнду. Многія інвестары лічаць цану вышэй за яе доўгатэрміновым узыходным трэндам.';
+
+  @override
+  String get glossRsi =>
+      'Індэкс адноснай сілы: параўноўвае нядаўнія прыросты з нядаўнімі падзеннямі па шкале 0–100. Вышэй за 70 акцыю часта называюць перакупленай (яна хутка вырасла), ніжэй за 30 – перапраданай, але моцны трэнд можа застацца там надоўга.';
+
+  @override
+  String get glossVolatility =>
+      'Наколькі цана вагаецца з дня ў дзень, у пераліку на год: 20% азначае, што за звычайны год цана рухаецца прыкладна ў межах ±20%. Вышэйшая валацільнасць – большыя рухі ў абодва бакі.';
+
+  @override
+  String get techNote =>
+      'Разлічана па дзённых цэнах закрыцця. Тэхнічныя сігналы апісваюць мінулае, а не будучыню.';
 }

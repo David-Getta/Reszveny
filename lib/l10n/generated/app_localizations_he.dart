@@ -2640,4 +2640,66 @@ class AppLocalizationsHe extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'הסבר של AI מתוך חדשות היום שנמצאו ברשת; הסיבה האמיתית עשויה להיות לא ידועה או שונה. אינו ייעוץ השקעות. מנצל את מכסת השאלות היומית שלך, לא ניתוח.';
+
+  @override
+  String get sectionTechnical => 'תמונה טכנית';
+
+  @override
+  String get labelSma50 => 'ממוצע 50 יום';
+
+  @override
+  String get labelSma200 => 'ממוצע 200 יום';
+
+  @override
+  String get labelRsi => 'RSI (14 יום)';
+
+  @override
+  String get labelVolatility30 => 'תנודתיות (30 יום)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent מעל';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent מתחת';
+  }
+
+  @override
+  String get techOverbought => 'קניית יתר';
+
+  @override
+  String get techOversold => 'מכירת יתר';
+
+  @override
+  String get techNeutral => 'ניטרלי';
+
+  @override
+  String get techGoldenCross =>
+      'ממוצע 50 הימים נמצא מעל ממוצע 200 הימים – מגמת עלייה לפי הקריאה הקלאסית.';
+
+  @override
+  String get techDeathCross =>
+      'ממוצע 50 הימים נמצא מתחת לממוצע 200 הימים – מגמת ירידה לפי הקריאה הקלאסית.';
+
+  @override
+  String get glossSma50 =>
+      'שער הסגירה הממוצע של 50 ימי המסחר האחרונים. מחיר מעליו נקרא לרוב כחוזק לטווח קצר, ומתחתיו כחולשה.';
+
+  @override
+  String get glossSma200 =>
+      'שער הסגירה הממוצע של 200 ימי המסחר האחרונים – קו המגמה הקלאסי לטווח ארוך. משקיעים רבים רואים במחיר מעליו מגמת עלייה לטווח ארוך.';
+
+  @override
+  String get glossRsi =>
+      'מדד החוזק היחסי: משווה עליות אחרונות לירידות אחרונות בסקאלה של 0–100. מעל 70 נהוג לומר שהמניה בקניית יתר (עלתה מהר), מתחת ל-30 במכירת יתר – אבל מגמה חזקה יכולה להישאר שם זמן רב.';
+
+  @override
+  String get glossVolatility =>
+      'כמה המחיר מתנדנד מיום ליום, במונחים שנתיים: 20% פירושו שבשנה טיפוסית המחיר נע בטווח של כ-±20%. תנודתיות גבוהה יותר פירושה תנועות גדולות יותר לשני הכיוונים.';
+
+  @override
+  String get techNote =>
+      'מחושב משערי הסגירה היומיים. איתותים טכניים מתארים את העבר, לא את העתיד.';
 }

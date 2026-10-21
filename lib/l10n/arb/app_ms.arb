@@ -701,5 +701,22 @@
   "awayReported": "Keputusan dilaporkan: {symbols}",
   "moveWhyButton": "Mengapa ia bergerak hari ini?",
   "moveWhyTitle": "{percent} hari ini",
-  "moveWhyNote": "Penjelasan AI berdasarkan berita hari ini yang ditemui di web; sebab sebenar mungkin tidak diketahui atau berbeza. Bukan nasihat pelaburan. Menggunakan kuota soalan harian anda, bukan analisis."
+  "moveWhyNote": "Penjelasan AI berdasarkan berita hari ini yang ditemui di web; sebab sebenar mungkin tidak diketahui atau berbeza. Bukan nasihat pelaburan. Menggunakan kuota soalan harian anda, bukan analisis.",
+  "sectionTechnical": "Gambaran teknikal",
+  "labelSma50": "Purata 50 hari",
+  "labelSma200": "Purata 200 hari",
+  "labelRsi": "RSI (14 hari)",
+  "labelVolatility30": "Volatiliti (30 hari)",
+  "techAbove": "{percent} di atas",
+  "techBelow": "{percent} di bawah",
+  "techOverbought": "terlebih beli",
+  "techOversold": "terlebih jual",
+  "techNeutral": "neutral",
+  "techGoldenCross": "Purata 50 hari berada di atas purata 200 hari – aliran menaik mengikut bacaan klasik.",
+  "techDeathCross": "Purata 50 hari berada di bawah purata 200 hari – aliran menurun mengikut bacaan klasik.",
+  "glossSma50": "Purata harga penutup 50 hari dagangan terakhir. Harga di atasnya sering dibaca sebagai kekuatan jangka pendek, di bawahnya sebagai kelemahan.",
+  "glossSma200": "Purata harga penutup 200 hari dagangan terakhir – garis aliran jangka panjang yang klasik. Ramai pelabur menganggap harga di atasnya sebagai aliran menaik jangka panjang.",
+  "glossRsi": "Indeks kekuatan relatif: membandingkan keuntungan terkini dengan kerugian terkini pada skala 0–100. Melebihi 70 saham sering disebut terlebih beli (naik terlalu cepat), di bawah 30 terlebih jual – tetapi aliran yang kuat boleh kekal di sana untuk jangka masa yang lama.",
+  "glossVolatility": "Sejauh mana harga berayun dari hari ke hari, diskalakan kepada setahun: 20% bermaksud tahun biasa bergerak dalam lingkungan kira-kira ±20%. Volatiliti lebih tinggi bermaksud pergerakan lebih besar ke kedua-dua arah.",
+  "techNote": "Dikira daripada harga penutup harian. Isyarat teknikal menggambarkan masa lalu, bukan masa depan."
 }

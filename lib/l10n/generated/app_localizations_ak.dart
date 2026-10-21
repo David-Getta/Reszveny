@@ -2645,4 +2645,66 @@ class AppLocalizationsAk extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'AI nkyerɛkyerɛmu a efi nnɛ nsɛm a wohuu wɔ intanɛt so; nokware nti no betumi ayɛ nea wonnim anaa nea ɛsono. Ɛnyɛ sika a wode betɔ ade ho afotu. Ɛde wo da biara nsɛmmisa a wɔde ama wo no di dwuma, ɛnyɛ nhwehwɛmu.';
+
+  @override
+  String get sectionTechnical => 'Mfiridwuma mfonini';
+
+  @override
+  String get labelSma50 => 'Nna 50 nkyemu';
+
+  @override
+  String get labelSma200 => 'Nna 200 nkyemu';
+
+  @override
+  String get labelRsi => 'RSI (nna 14)';
+
+  @override
+  String get labelVolatility30 => 'Nsakrae (nna 30)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent wɔ soro';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent wɔ ase';
+  }
+
+  @override
+  String get techOverbought => 'wɔatɔ no dodo';
+
+  @override
+  String get techOversold => 'wɔatɔn no dodo';
+
+  @override
+  String get techNeutral => 'ɛnni fa biara';
+
+  @override
+  String get techGoldenCross =>
+      'Nna 50 nkyemu no wɔ nna 200 nkyemu no so – sɛnea tete nhwehwɛmu kyerɛ no, ɛyɛ foro kwan.';
+
+  @override
+  String get techDeathCross =>
+      'Nna 50 nkyemu no wɔ nna 200 nkyemu no ase – sɛnea tete nhwehwɛmu kyerɛ no, ɛyɛ sian kwan.';
+
+  @override
+  String get glossSma50 =>
+      'Nna 50 a etwa to a wodii gua no bo a wɔde too nkyemu. Sɛ bo no wɔ so a, wɔtaa fa no sɛ ahoɔden bere tiaa mu; sɛ ɛwɔ ase a, ɛyɛ mmerɛwyɛ.';
+
+  @override
+  String get glossSma200 =>
+      'Nna 200 a etwa to a wodii gua no bo a wɔde too nkyemu – tete bere tenten kwan no. Sikasɛmfo pii fa bo a ɛwɔ so sɛ bere tenten foro kwan.';
+
+  @override
+  String get glossRsi =>
+      'Ahoɔden a wɔde toto ho (RSI): ɛde nnansa yi mfaso toto nnansa yi adehwere ho wɔ 0–100 nsusuwii so. Sɛ ɛboro 70 a, wɔtaa ka sɛ wɔatɔ kyɛmfa no dodo (ɛforo ntɛm), sɛ ɛwɔ 30 ase a wɔatɔn no dodo – nanso kwan a emu yɛ den betumi atena hɔ bere tenten.';
+
+  @override
+  String get glossVolatility =>
+      'Sɛnea bo no sesa da biara, a wɔabu no afe biako so: 20% kyerɛ sɛ afe biara bo no sesa bɛyɛ ±20% mu. Nsakrae kɛse kyerɛ sɛ nsesae akɛse ba akwan abien no nyinaa so.';
+
+  @override
+  String get techNote =>
+      'Wɔde da biara bo a gua no de ewiee na ebuu. Mfiridwuma nsɛnkyerɛnne ka nea atwam ho asɛm, ɛnyɛ daakye.';
 }

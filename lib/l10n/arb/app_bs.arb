@@ -701,5 +701,22 @@
   "awayReported": "Objavili rezultate: {symbols}",
   "moveWhyButton": "Zašto se danas kreće?",
   "moveWhyTitle": "{percent} danas",
-  "moveWhyNote": "AI objašnjenje iz današnjih vijesti pronađenih na webu; pravi razlog može biti nepoznat ili drugačiji. Nije investicijski savjet. Troši vašu dnevnu kvotu pitanja, ne analizu."
+  "moveWhyNote": "AI objašnjenje iz današnjih vijesti pronađenih na webu; pravi razlog može biti nepoznat ili drugačiji. Nije investicijski savjet. Troši vašu dnevnu kvotu pitanja, ne analizu.",
+  "sectionTechnical": "Tehnička slika",
+  "labelSma50": "50-dnevni prosjek",
+  "labelSma200": "200-dnevni prosjek",
+  "labelRsi": "RSI (14 dana)",
+  "labelVolatility30": "Volatilnost (30 dana)",
+  "techAbove": "{percent} iznad",
+  "techBelow": "{percent} ispod",
+  "techOverbought": "prekupljeno",
+  "techOversold": "preprodano",
+  "techNeutral": "neutralno",
+  "techGoldenCross": "50-dnevni prosjek je iznad 200-dnevnog – po klasičnom tumačenju, uzlazni trend.",
+  "techDeathCross": "50-dnevni prosjek je ispod 200-dnevnog – po klasičnom tumačenju, silazni trend.",
+  "glossSma50": "Prosječna cijena zatvaranja u posljednjih 50 trgovačkih dana. Cijena iznad nje često se tumači kao kratkoročna snaga, ispod nje kao slabost.",
+  "glossSma200": "Prosječna cijena zatvaranja u posljednjih 200 trgovačkih dana – klasična dugoročna linija trenda. Mnogi investitori cijenu iznad nje smatraju dugoročnim uzlaznim trendom.",
+  "glossRsi": "Indeks relativne snage: upoređuje nedavne dobitke s nedavnim gubicima na skali od 0 do 100. Iznad 70 dionica se često naziva prekupljenom (brzo je rasla), ispod 30 preprodanom – ali jak trend može dugo ostati tamo.",
+  "glossVolatility": "Koliko cijena oscilira iz dana u dan, preračunato na godinu: 20% znači da se u tipičnoj godini cijena kreće unutar otprilike ±20%. Veća volatilnost znači veće pomake u oba smjera.",
+  "techNote": "Izračunato iz dnevnih cijena zatvaranja. Tehnički signali opisuju prošlost, ne budućnost."
 }

@@ -2645,4 +2645,66 @@ class AppLocalizationsAs extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'ৱেবত পোৱা আজিৰ বাতৰিৰ ভিত্তিত AI ব্যাখ্যা; প্ৰকৃত কাৰণ অজ্ঞাত বা বেলেগ হ\'ব পাৰে। বিনিয়োগৰ পৰামৰ্শ নহয়। আপোনাৰ দৈনিক প্ৰশ্নৰ কোটা ব্যৱহাৰ কৰে, বিশ্লেষণ নহয়।';
+
+  @override
+  String get sectionTechnical => 'কাৰিকৰী চিত্ৰ';
+
+  @override
+  String get labelSma50 => '৫০ দিনৰ গড়';
+
+  @override
+  String get labelSma200 => '২০০ দিনৰ গড়';
+
+  @override
+  String get labelRsi => 'RSI (১৪ দিন)';
+
+  @override
+  String get labelVolatility30 => 'অস্থিৰতা (৩০ দিন)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent ওপৰত';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent তলত';
+  }
+
+  @override
+  String get techOverbought => 'অতি ক্ৰয়';
+
+  @override
+  String get techOversold => 'অতি বিক্ৰয়';
+
+  @override
+  String get techNeutral => 'নিৰপেক্ষ';
+
+  @override
+  String get techGoldenCross =>
+      '৫০ দিনৰ গড় ২০০ দিনৰ গড়ৰ ওপৰত আছে – পৰম্পৰাগত ব্যাখ্যা অনুসৰি ঊৰ্ধ্বমুখী প্ৰবণতা।';
+
+  @override
+  String get techDeathCross =>
+      '৫০ দিনৰ গড় ২০০ দিনৰ গড়ৰ তলত আছে – পৰম্পৰাগত ব্যাখ্যা অনুসৰি নিম্নমুখী প্ৰবণতা।';
+
+  @override
+  String get glossSma50 =>
+      'শেষৰ ৫০টা ব্যৱসায়িক দিনৰ গড় সমাপ্তি মূল্য। ইয়াৰ ওপৰৰ মূল্যক প্ৰায়ে স্বল্পকালীন শক্তি, তলৰ মূল্যক দুৰ্বলতা বুলি ধৰা হয়।';
+
+  @override
+  String get glossSma200 =>
+      'শেষৰ ২০০টা ব্যৱসায়িক দিনৰ গড় সমাপ্তি মূল্য – পৰম্পৰাগত দীৰ্ঘকালীন প্ৰবণতা ৰেখা। বহু বিনিয়োগকাৰী ইয়াৰ ওপৰৰ মূল্যক দীৰ্ঘকালীন ঊৰ্ধ্বমুখী প্ৰবণতা বুলি গণ্য কৰে।';
+
+  @override
+  String get glossRsi =>
+      'আপেক্ষিক শক্তি সূচক: সাম্প্ৰতিক লাভক সাম্প্ৰতিক লোকচানৰ সৈতে ০–১০০ মাপনীত তুলনা কৰে। ৭০ৰ ওপৰত ষ্টকটোক প্ৰায়ে অতি ক্ৰয় (দ্ৰুত বাঢ়িছে), ৩০ৰ তলত অতি বিক্ৰয় বোলা হয় – কিন্তু শক্তিশালী প্ৰবণতা তাত বহু দিন থাকিব পাৰে।';
+
+  @override
+  String get glossVolatility =>
+      'মূল্য দিনে দিনে কিমান ওঠা-নমা কৰে, বছৰৰ হিচাপত: ২০% মানে সাধাৰণ বছৰত প্ৰায় ±২০%ৰ ভিতৰত ওঠা-নমা হয়। উচ্চ অস্থিৰতা মানে দুয়োদিশে ডাঙৰ পৰিবৰ্তন।';
+
+  @override
+  String get techNote =>
+      'দৈনিক সমাপ্তি মূল্যৰ পৰা গণনা কৰা। কাৰিকৰী সংকেত অতীতৰ বৰ্ণনা কৰে, ভবিষ্যতৰ নহয়।';
 }

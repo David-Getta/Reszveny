@@ -2655,4 +2655,66 @@ class AppLocalizationsCa extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Explicació de la IA a partir de les notícies d’avui trobades al web; el motiu real pot ser desconegut o diferent. No és assessorament d’inversió. Consumeix la teva quota diària de preguntes, no una anàlisi.';
+
+  @override
+  String get sectionTechnical => 'Imatge tècnica';
+
+  @override
+  String get labelSma50 => 'Mitjana de 50 dies';
+
+  @override
+  String get labelSma200 => 'Mitjana de 200 dies';
+
+  @override
+  String get labelRsi => 'RSI (14 dies)';
+
+  @override
+  String get labelVolatility30 => 'Volatilitat (30 dies)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent per sobre';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent per sota';
+  }
+
+  @override
+  String get techOverbought => 'sobrecomprat';
+
+  @override
+  String get techOversold => 'sobrevenut';
+
+  @override
+  String get techNeutral => 'neutral';
+
+  @override
+  String get techGoldenCross =>
+      'La mitjana de 50 dies és per sobre de la de 200 dies – una tendència alcista segons la lectura clàssica.';
+
+  @override
+  String get techDeathCross =>
+      'La mitjana de 50 dies és per sota de la de 200 dies – una tendència baixista segons la lectura clàssica.';
+
+  @override
+  String get glossSma50 =>
+      'El preu mitjà de tancament dels últims 50 dies de negociació. Un preu per sobre sovint es llegeix com a fortalesa a curt termini; per sota, com a debilitat.';
+
+  @override
+  String get glossSma200 =>
+      'El preu mitjà de tancament dels últims 200 dies de negociació – la línia de tendència clàssica a llarg termini. Molts inversors consideren que un preu per sobre indica una tendència alcista a llarg termini.';
+
+  @override
+  String get glossRsi =>
+      'Índex de força relativa: compara els guanys recents amb les pèrdues recents en una escala de 0 a 100. Per sobre de 70 sovint es diu que l’acció està sobrecomprada (ha pujat ràpid); per sota de 30, sobrevenuda – però una tendència forta pot quedar-s’hi molt de temps.';
+
+  @override
+  String get glossVolatility =>
+      'Quant oscil·la el preu d’un dia a l’altre, en termes anuals: un 20% vol dir que en un any típic es mou dins d’aproximadament ±20%. Més volatilitat vol dir moviments més grans en les dues direccions.';
+
+  @override
+  String get techNote =>
+      'Calculat a partir dels preus de tancament diaris. Els senyals tècnics descriuen el passat, no el futur.';
 }

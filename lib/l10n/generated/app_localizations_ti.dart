@@ -2608,4 +2608,66 @@ class AppLocalizationsTi extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'ኣብ ኢንተርነት ካብ ዝተረኽበ ናይ ሎሚ ዜና ዝተመርኰሰ መግለጺ AI፣ ናይ ብሓቂ ምኽንያት ዘይፍለጥ ወይ ዝተፈልየ ክኸውን ይኽእል። ናይ ወፍሪ ምኽሪ ኣይኮነን። ናይ መዓልቲ ሕቶ ዓቐንካ ይጥቀም፣ ትንተና ኣይኮነን።';
+
+  @override
+  String get sectionTechnical => 'ቴክኒካዊ ስእሊ';
+
+  @override
+  String get labelSma50 => 'ማእከላይ ናይ 50 መዓልቲ';
+
+  @override
+  String get labelSma200 => 'ማእከላይ ናይ 200 መዓልቲ';
+
+  @override
+  String get labelRsi => 'RSI (14 መዓልቲ)';
+
+  @override
+  String get labelVolatility30 => 'ተለዋዋጥነት (30 መዓልቲ)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent ልዕሊ';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent ትሕቲ';
+  }
+
+  @override
+  String get techOverbought => 'ብዙሕ ተዓዲጉ';
+
+  @override
+  String get techOversold => 'ብዙሕ ተሸይጡ';
+
+  @override
+  String get techNeutral => 'ማእከላይ';
+
+  @override
+  String get techGoldenCross =>
+      'ማእከላይ ናይ 50 መዓልቲ ልዕሊ ማእከላይ ናይ 200 መዓልቲ ኣሎ – ብልሙድ ንባብ ናብ ላዕሊ ዝኸይድ ኣንፈት።';
+
+  @override
+  String get techDeathCross =>
+      'ማእከላይ ናይ 50 መዓልቲ ትሕቲ ማእከላይ ናይ 200 መዓልቲ ኣሎ – ብልሙድ ንባብ ናብ ታሕቲ ዝኸይድ ኣንፈት።';
+
+  @override
+  String get glossSma50 =>
+      'ማእከላይ ናይ መዕጸዊ ዋጋ ናይ ዝሓለፉ 50 መዓልታት ንግዲ። ልዕሊኡ ዘሎ ዋጋ መብዛሕትኡ ግዜ ከም ናይ ሓጺር ግዜ ሓይሊ፣ ትሕቲኡ ዘሎ ከም ድኻም ይርአ።';
+
+  @override
+  String get glossSma200 =>
+      'ማእከላይ ናይ መዕጸዊ ዋጋ ናይ ዝሓለፉ 200 መዓልታት ንግዲ – ልሙድ መስመር ናይ ነዊሕ ግዜ ኣንፈት። ብዙሓት ኣውፈርቲ ልዕሊኡ ዘሎ ዋጋ ከም ናይ ነዊሕ ግዜ ናብ ላዕሊ ዝኸይድ ኣንፈት ይርእይዎ።';
+
+  @override
+  String get glossRsi =>
+      'ኣመልካቲ ተዛማዲ ሓይሊ (RSI)፦ ናይ ቀረባ እዋን መኽሰብ ምስ ናይ ቀረባ እዋን ክሳራ ብ0–100 መለክዒ ይነጻጸር። ልዕሊ 70 እቲ ኣክስዮን መብዛሕትኡ ግዜ ብዙሕ ተዓዲጉ (ብቕልጡፍ ደይቡ)፣ ትሕቲ 30 ብዙሕ ተሸይጡ ይበሃል – ግን ሓያል ኣንፈት ነዊሕ ግዜ ኣብኡ ክጸንሕ ይኽእል።';
+
+  @override
+  String get glossVolatility =>
+      'ዋጋ ካብ መዓልቲ ናብ መዓልቲ ክሳብ ክንደይ ይለዋወጥ፣ ናብ ዓመት ተቐይሩ፦ 20% ማለት ልሙድ ዓመት ኣብ ዳርጋ ±20% ውሽጢ ይንቀሳቐስ ማለት እዩ። ዝለዓለ ተለዋዋጥነት ማለት ኣብ ክልቲኡ ኣንፈት ዝዓበየ ምንቅስቓስ ማለት እዩ።';
+
+  @override
+  String get techNote =>
+      'ካብ መዓልታዊ መዕጸዊ ዋጋታት ተሓሲቡ። ቴክኒካዊ ምልክታት ዝሓለፈ ይገልጹ፣ መጻኢ ኣይኮነን።';
 }

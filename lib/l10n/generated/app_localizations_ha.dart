@@ -2651,4 +2651,66 @@ class AppLocalizationsHa extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Bayanin AI daga labaran yau da aka samu a yanar gizo; ainihin dalilin ba a sani ba ko kuma ya bambanta. Ba shawarar zuba jari ba ne. Yana amfani da adadin tambayoyinka na yau da kullum, ba bincike ba.';
+
+  @override
+  String get sectionTechnical => 'Hoton fasaha';
+
+  @override
+  String get labelSma50 => 'Matsakaicin kwana 50';
+
+  @override
+  String get labelSma200 => 'Matsakaicin kwana 200';
+
+  @override
+  String get labelRsi => 'RSI (kwana 14)';
+
+  @override
+  String get labelVolatility30 => 'Sauyin farashi (kwana 30)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent sama';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent ƙasa';
+  }
+
+  @override
+  String get techOverbought => 'an saya fiye da kima';
+
+  @override
+  String get techOversold => 'an sayar fiye da kima';
+
+  @override
+  String get techNeutral => 'tsaka-tsaki';
+
+  @override
+  String get techGoldenCross =>
+      'Matsakaicin kwana 50 yana sama da matsakaicin kwana 200 – bisa fassarar gargajiya, hawan farashi ne.';
+
+  @override
+  String get techDeathCross =>
+      'Matsakaicin kwana 50 yana ƙasa da matsakaicin kwana 200 – bisa fassarar gargajiya, faɗuwar farashi ne.';
+
+  @override
+  String get glossSma50 =>
+      'Matsakaicin farashin rufewa na kwanakin kasuwanci 50 na baya-bayan nan. Farashi da ke sama da shi akan ɗauka a matsayin ƙarfi na ɗan lokaci, na ƙasa kuma a matsayin rauni.';
+
+  @override
+  String get glossSma200 =>
+      'Matsakaicin farashin rufewa na kwanakin kasuwanci 200 na baya-bayan nan – layin yanayi na dogon lokaci na gargajiya. Masu zuba jari da yawa suna ɗaukar farashi da ke sama da shi a matsayin hawan dogon lokaci.';
+
+  @override
+  String get glossRsi =>
+      'Ma\'aunin ƙarfi na kwatance (RSI): yana kwatanta ribar kwanan nan da asarar kwanan nan a kan ma\'auni na 0–100. Sama da 70 akan ce an saya hannun jarin fiye da kima (ya hau da sauri), ƙasa da 30 an sayar fiye da kima – amma yanayi mai ƙarfi na iya tsayawa a nan na dogon lokaci.';
+
+  @override
+  String get glossVolatility =>
+      'Yadda farashi yake sauyawa kowace rana, an lissafa a shekara: 20% na nufin a shekara ta yau da kullum farashi yana motsi cikin kusan ±20%. Sauyi mafi girma na nufin manyan motsi ta kowane bangare.';
+
+  @override
+  String get techNote =>
+      'An lissafa daga farashin rufewa na kullum. Alamomin fasaha suna bayyana abin da ya wuce, ba nan gaba ba.';
 }

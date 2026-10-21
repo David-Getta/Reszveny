@@ -4548,6 +4548,108 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'AI explanation from today\'s news found on the web; the real reason may be unknown or different. Not investment advice. Uses your daily question allowance, not an analysis.'**
   String get moveWhyNote;
+
+  /// Card title on the stock page: moving averages, RSI and volatility computed from daily closing prices.
+  ///
+  /// In en, this message translates to:
+  /// **'Technical picture'**
+  String get sectionTechnical;
+
+  /// Row label: the simple moving average of the last 50 daily closes.
+  ///
+  /// In en, this message translates to:
+  /// **'50-day average'**
+  String get labelSma50;
+
+  /// Row label: the simple moving average of the last 200 daily closes.
+  ///
+  /// In en, this message translates to:
+  /// **'200-day average'**
+  String get labelSma200;
+
+  /// Row label: the 14-day relative strength index (0–100).
+  ///
+  /// In en, this message translates to:
+  /// **'RSI (14 days)'**
+  String get labelRsi;
+
+  /// Row label: annualised volatility of the last 30 trading days' returns.
+  ///
+  /// In en, this message translates to:
+  /// **'Volatility (30 days)'**
+  String get labelVolatility30;
+
+  /// Sub-text next to a moving average: the current price is this much above it, e.g. '4.2% above'.
+  ///
+  /// In en, this message translates to:
+  /// **'{percent} above'**
+  String techAbove(String percent);
+
+  /// Sub-text next to a moving average: the current price is this much below it, e.g. '4.2% below'.
+  ///
+  /// In en, this message translates to:
+  /// **'{percent} below'**
+  String techBelow(String percent);
+
+  /// RSI state when above 70.
+  ///
+  /// In en, this message translates to:
+  /// **'overbought'**
+  String get techOverbought;
+
+  /// RSI state when below 30.
+  ///
+  /// In en, this message translates to:
+  /// **'oversold'**
+  String get techOversold;
+
+  /// RSI state between 30 and 70.
+  ///
+  /// In en, this message translates to:
+  /// **'neutral'**
+  String get techNeutral;
+
+  /// One-line note under the rows.
+  ///
+  /// In en, this message translates to:
+  /// **'The 50-day average is above the 200-day average – an uptrend by the classic reading.'**
+  String get techGoldenCross;
+
+  /// One-line note under the rows.
+  ///
+  /// In en, this message translates to:
+  /// **'The 50-day average is below the 200-day average – a downtrend by the classic reading.'**
+  String get techDeathCross;
+
+  /// Glossary explanation shown when tapping ⓘ next to the label; plain language for beginners.
+  ///
+  /// In en, this message translates to:
+  /// **'The average closing price of the last 50 trading days. Price above it is often read as short-term strength, below it as weakness.'**
+  String get glossSma50;
+
+  /// Glossary explanation for beginners.
+  ///
+  /// In en, this message translates to:
+  /// **'The average closing price of the last 200 trading days – the classic long-term trend line. Many investors treat a price above it as a long-term uptrend.'**
+  String get glossSma200;
+
+  /// Glossary explanation for beginners.
+  ///
+  /// In en, this message translates to:
+  /// **'Relative strength index: compares recent gains with recent losses on a 0–100 scale. Above 70 the stock is often called overbought (it rose fast), below 30 oversold – but a strong trend can stay there for a long time.'**
+  String get glossRsi;
+
+  /// Glossary explanation for beginners.
+  ///
+  /// In en, this message translates to:
+  /// **'How much the price swings day to day, scaled to a year: 20% means a typical year moves within roughly ±20%. Higher volatility means bigger moves both ways.'**
+  String get glossVolatility;
+
+  /// Small print under the technical card.
+  ///
+  /// In en, this message translates to:
+  /// **'Computed from daily closing prices. Technical signals describe the past, not the future.'**
+  String get techNote;
 }
 
 class _AppLocalizationsDelegate

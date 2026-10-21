@@ -2664,4 +2664,66 @@ class AppLocalizationsTn extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Tlhaloso ya AI go tswa mo dikgannyeng tsa gompieno tse di bonweng mo inthaneteng; lebaka la nnete le ka nna le sa itsiwe kgotsa le farologane. Ga se kgakololo ya peeletso. E dirisa palo ya gago ya dipotso ya letsatsi, e seng tshekatsheko.';
+
+  @override
+  String get sectionTechnical => 'Setshwantsho sa thekeniki';
+
+  @override
+  String get labelSma50 => 'Palogare ya malatsi a 50';
+
+  @override
+  String get labelSma200 => 'Palogare ya malatsi a 200';
+
+  @override
+  String get labelRsi => 'RSI (malatsi a 14)';
+
+  @override
+  String get labelVolatility30 => 'Phetogo ya tlhwatlhwa (malatsi a 30)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent kwa godimo';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent kwa tlase';
+  }
+
+  @override
+  String get techOverbought => 'e rekilwe thata';
+
+  @override
+  String get techOversold => 'e rekisitswe thata';
+
+  @override
+  String get techNeutral => 'fa gare';
+
+  @override
+  String get techGoldenCross =>
+      'Palogare ya malatsi a 50 e kwa godimo ga ya malatsi a 200 – go ya ka tlhaloso ya setso ke tsela ya go tlhatloga.';
+
+  @override
+  String get techDeathCross =>
+      'Palogare ya malatsi a 50 e kwa tlase ga ya malatsi a 200 – go ya ka tlhaloso ya setso ke tsela ya go fologa.';
+
+  @override
+  String get glossSma50 =>
+      'Palogare ya tlhwatlhwa ya go tswala ya malatsi a 50 a bofelo a kgwebo. Tlhwatlhwa e e kwa godimo ga yone gantsi e tsewa jaaka nonofo ya nako e khutshwane, e e kwa tlase jaaka bokoa.';
+
+  @override
+  String get glossSma200 =>
+      'Palogare ya tlhwatlhwa ya go tswala ya malatsi a 200 a bofelo a kgwebo – mola wa setso wa tsela ya nako e telele. Babeeletsi ba le bantsi ba tsaya tlhwatlhwa e e kwa godimo ga yone jaaka tsela ya go tlhatloga ya nako e telele.';
+
+  @override
+  String get glossRsi =>
+      'Indekse ya nonofo e e bapisiwang: e bapisa dipoelo tsa bosheng le ditatlhegelo tsa bosheng mo sekaleng sa 0–100. Kwa godimo ga 70 setoko gantsi se bidiwa se rekilwe thata (se tlhatlogile ka bonako), kwa tlase ga 30 se rekisitswe thata – mme tsela e e nonofileng e ka nna teng lobaka lo loleele.';
+
+  @override
+  String get glossVolatility =>
+      'Gore tlhwatlhwa e fetoga go le kae letsatsi le letsatsi, e lekantswe go ngwaga: 20% e raya gore ngwaga o o tlwaelegileng o tsamaya mo teng ga e ka nna ±20%. Phetogo e e kwa godimo e raya metsamao e megolo ka ntlha tsoopedi.';
+
+  @override
+  String get techNote =>
+      'E badilwe go tswa mo ditlhwatlhweng tsa go tswala tsa letsatsi le letsatsi. Matshwao a thekeniki a tlhalosa tse di fetileng, e seng isagwe.';
 }

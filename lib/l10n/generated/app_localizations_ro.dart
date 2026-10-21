@@ -2688,4 +2688,66 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Explicație AI pe baza știrilor de azi găsite pe web; motivul real poate fi necunoscut sau diferit. Nu este un sfat de investiții. Consumă din limita zilnică de întrebări, nu o analiză.';
+
+  @override
+  String get sectionTechnical => 'Tablou tehnic';
+
+  @override
+  String get labelSma50 => 'Media pe 50 de zile';
+
+  @override
+  String get labelSma200 => 'Media pe 200 de zile';
+
+  @override
+  String get labelRsi => 'RSI (14 zile)';
+
+  @override
+  String get labelVolatility30 => 'Volatilitate (30 de zile)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent peste';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent sub';
+  }
+
+  @override
+  String get techOverbought => 'supracumpărată';
+
+  @override
+  String get techOversold => 'supravândută';
+
+  @override
+  String get techNeutral => 'neutru';
+
+  @override
+  String get techGoldenCross =>
+      'Media pe 50 de zile este peste media pe 200 de zile – trend ascendent, după interpretarea clasică.';
+
+  @override
+  String get techDeathCross =>
+      'Media pe 50 de zile este sub media pe 200 de zile – trend descendent, după interpretarea clasică.';
+
+  @override
+  String get glossSma50 =>
+      'Prețul mediu de închidere din ultimele 50 de zile de tranzacționare. Un preț peste ea este adesea citit ca forță pe termen scurt, iar sub ea ca slăbiciune.';
+
+  @override
+  String get glossSma200 =>
+      'Prețul mediu de închidere din ultimele 200 de zile de tranzacționare – linia clasică a trendului pe termen lung. Mulți investitori consideră un preț peste ea un trend ascendent pe termen lung.';
+
+  @override
+  String get glossRsi =>
+      'Indicele puterii relative: compară câștigurile recente cu pierderile recente pe o scară de la 0 la 100. Peste 70, acțiunea este adesea numită supracumpărată (a crescut rapid), sub 30 supravândută – dar un trend puternic poate rămâne acolo mult timp.';
+
+  @override
+  String get glossVolatility =>
+      'Cât de mult oscilează prețul de la o zi la alta, raportat la un an: 20% înseamnă că un an obișnuit se mișcă în limita a aproximativ ±20%. O volatilitate mai mare înseamnă mișcări mai ample în ambele sensuri.';
+
+  @override
+  String get techNote =>
+      'Calculat din prețurile zilnice de închidere. Semnalele tehnice descriu trecutul, nu viitorul.';
 }

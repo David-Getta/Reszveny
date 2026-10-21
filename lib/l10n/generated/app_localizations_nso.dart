@@ -2662,4 +2662,66 @@ class AppLocalizationsNso extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Tlhaloso ya AI go tšwa ditabeng tša lehono tše di hweditšwego inthaneteng; lebaka la nnete le ka ba le sa tsebje goba le fapana. Ga se keletšo ya peeletšo. E šomiša tekanyo ya gago ya dipotšišo ya letšatši, e sego tshekatsheko.';
+
+  @override
+  String get sectionTechnical => 'Seswantšho sa setegeniki';
+
+  @override
+  String get labelSma50 => 'Palogare ya matšatši a 50';
+
+  @override
+  String get labelSma200 => 'Palogare ya matšatši a 200';
+
+  @override
+  String get labelRsi => 'RSI (matšatši a 14)';
+
+  @override
+  String get labelVolatility30 => 'Phetogo ya theko (matšatši a 30)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent ka godimo';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent ka tlase';
+  }
+
+  @override
+  String get techOverbought => 'e rekilwe kudu';
+
+  @override
+  String get techOversold => 'e rekišitšwe kudu';
+
+  @override
+  String get techNeutral => 'magareng';
+
+  @override
+  String get techGoldenCross =>
+      'Palogare ya matšatši a 50 e ka godimo ga palogare ya matšatši a 200 – go ya ka tlhaloso ya setlwaedi ke tshekamelo ya go namela.';
+
+  @override
+  String get techDeathCross =>
+      'Palogare ya matšatši a 50 e ka tlase ga palogare ya matšatši a 200 – go ya ka tlhaloso ya setlwaedi ke tshekamelo ya go theoga.';
+
+  @override
+  String get glossSma50 =>
+      'Palogare ya theko ya go tswalela ya matšatši a 50 a mafelelo a kgwebo. Theko ya ka godimo ga yona gantši e bonwa bjalo ka maatla a nako ye kopana, ya ka tlase bjalo ka bofokodi.';
+
+  @override
+  String get glossSma200 =>
+      'Palogare ya theko ya go tswalela ya matšatši a 200 a mafelelo a kgwebo – mothaladi wa setlwaedi wa tshekamelo ya nako ye telele. Babeeletši ba bantši ba tšea theko ya ka godimo ga yona bjalo ka tshekamelo ya go namela ya nako ye telele.';
+
+  @override
+  String get glossRsi =>
+      'Indekse ya maatla a tshwantšhanyo: e bapetša dipoelo tša morago bjale le ditahlegelo tša morago bjale sekaleng sa 0–100. Ka godimo ga 70 setoko gantši se bitšwa se rekilwe kudu (se nametše ka lebelo), ka tlase ga 30 se rekišitšwe kudu – fela tshekamelo ye maatla e ka dula moo nako ye telele.';
+
+  @override
+  String get glossVolatility =>
+      'Gore theko e fetoga bjang letšatši le letšatši, e lekantšwe go ngwaga: 20% e ra gore ngwaga wa tlwaelo o sepela ka gare ga ±20% ka tekanyo. Phetogo ya godimo e ra gore mesepelo ye megolo ka mahlakoreng ka bobedi.';
+
+  @override
+  String get techNote =>
+      'E balwa go tšwa ditheko tša go tswalela tša letšatši le letšatši. Maswao a setegeniki a hlalosa tše di fetilego, e sego tša bokamoso.';
 }

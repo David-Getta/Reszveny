@@ -2651,4 +2651,66 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Explicação por IA com base nas notícias de hoje encontradas na web; o motivo real pode ser desconhecido ou diferente. Não é recomendação de investimento. Usa sua cota diária de perguntas, não uma análise.';
+
+  @override
+  String get sectionTechnical => 'Quadro técnico';
+
+  @override
+  String get labelSma50 => 'Média de 50 dias';
+
+  @override
+  String get labelSma200 => 'Média de 200 dias';
+
+  @override
+  String get labelRsi => 'RSI (14 dias)';
+
+  @override
+  String get labelVolatility30 => 'Volatilidade (30 dias)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent acima';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent abaixo';
+  }
+
+  @override
+  String get techOverbought => 'sobrecomprada';
+
+  @override
+  String get techOversold => 'sobrevendida';
+
+  @override
+  String get techNeutral => 'neutro';
+
+  @override
+  String get techGoldenCross =>
+      'A média de 50 dias está acima da média de 200 dias – tendência de alta pela leitura clássica.';
+
+  @override
+  String get techDeathCross =>
+      'A média de 50 dias está abaixo da média de 200 dias – tendência de baixa pela leitura clássica.';
+
+  @override
+  String get glossSma50 =>
+      'O preço médio de fechamento dos últimos 50 pregões. Preço acima dela costuma ser lido como força no curto prazo; abaixo, como fraqueza.';
+
+  @override
+  String get glossSma200 =>
+      'O preço médio de fechamento dos últimos 200 pregões – a linha clássica de tendência de longo prazo. Muitos investidores tratam um preço acima dela como tendência de alta no longo prazo.';
+
+  @override
+  String get glossRsi =>
+      'Índice de força relativa: compara os ganhos recentes com as perdas recentes numa escala de 0 a 100. Acima de 70, a ação costuma ser chamada de sobrecomprada (subiu rápido); abaixo de 30, de sobrevendida – mas uma tendência forte pode ficar ali por muito tempo.';
+
+  @override
+  String get glossVolatility =>
+      'Quanto o preço oscila de um dia para o outro, anualizado: 20% significa que um ano típico se move dentro de aproximadamente ±20%. Volatilidade maior significa movimentos maiores nos dois sentidos.';
+
+  @override
+  String get techNote =>
+      'Calculado a partir dos preços de fechamento diários. Sinais técnicos descrevem o passado, não o futuro.';
 }

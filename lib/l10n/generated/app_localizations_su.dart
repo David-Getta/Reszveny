@@ -2649,4 +2649,66 @@ class AppLocalizationsSu extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Katerangan AI dumasar warta dinten ieu anu kapendak di wéb; alesan saleresna tiasa teu dipikanyaho atanapi béda. Sanés naséhat investasi. Ngagunakeun kuota patarosan harian anjeun, sanés analisis.';
+
+  @override
+  String get sectionTechnical => 'Gambaran téknis';
+
+  @override
+  String get labelSma50 => 'Rata-rata 50 poé';
+
+  @override
+  String get labelSma200 => 'Rata-rata 200 poé';
+
+  @override
+  String get labelRsi => 'RSI (14 poé)';
+
+  @override
+  String get labelVolatility30 => 'Volatilitas (30 poé)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent di luhur';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent di handap';
+  }
+
+  @override
+  String get techOverbought => 'kaleuwihan dibeuli';
+
+  @override
+  String get techOversold => 'kaleuwihan dijual';
+
+  @override
+  String get techNeutral => 'nétral';
+
+  @override
+  String get techGoldenCross =>
+      'Rata-rata 50 poé aya di luhureun rata-rata 200 poé – tren naék numutkeun bacaan klasik.';
+
+  @override
+  String get techDeathCross =>
+      'Rata-rata 50 poé aya di handapeun rata-rata 200 poé – tren turun numutkeun bacaan klasik.';
+
+  @override
+  String get glossSma50 =>
+      'Rata-rata harga panutup 50 poé dagang panungtungan. Harga di luhureunana sering dibaca salaku kakuatan jangka pondok, di handapeunana salaku kalemahan.';
+
+  @override
+  String get glossSma200 =>
+      'Rata-rata harga panutup 200 poé dagang panungtungan – garis tren jangka panjang anu klasik. Loba investor nganggap harga di luhureunana salaku tren naék jangka panjang.';
+
+  @override
+  String get glossRsi =>
+      'Indéks kakuatan rélatif: ngabandingkeun kauntungan anyar jeung karugian anyar dina skala 0–100. Di luhur 70 saham sering disebut kaleuwihan dibeuli (naék gancang), di handap 30 kaleuwihan dijual – tapi tren anu kuat bisa cicing di dinya lila.';
+
+  @override
+  String get glossVolatility =>
+      'Sakumaha gedé harga ngayun unggal poé, diskalakeun ka sataun: 20% hartina taun biasa gerak dina kurang leuwih ±20%. Volatilitas anu leuwih luhur hartina gerakan anu leuwih gedé ka dua arah.';
+
+  @override
+  String get techNote =>
+      'Diitung tina harga panutup poéan. Sinyal téknis ngagambarkeun jaman baheula, lain pikahareupeun.';
 }

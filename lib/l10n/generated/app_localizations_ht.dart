@@ -2644,4 +2644,66 @@ class AppLocalizationsHt extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Eksplikasyon AI ki soti nan nouvèl jodi a yo jwenn sou entènèt; vrè rezon an ka pa konnen oswa diferan. Se pa konsèy envestisman. Li sèvi ak kota kesyon chak jou ou, se pa yon analiz.';
+
+  @override
+  String get sectionTechnical => 'Imaj teknik';
+
+  @override
+  String get labelSma50 => 'Mwayèn 50 jou';
+
+  @override
+  String get labelSma200 => 'Mwayèn 200 jou';
+
+  @override
+  String get labelRsi => 'RSI (14 jou)';
+
+  @override
+  String get labelVolatility30 => 'Volatilite (30 jou)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent anwo';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent anba';
+  }
+
+  @override
+  String get techOverbought => 'twò achte';
+
+  @override
+  String get techOversold => 'twò vann';
+
+  @override
+  String get techNeutral => 'net';
+
+  @override
+  String get techGoldenCross =>
+      'Mwayèn 50 jou a pi wo pase mwayèn 200 jou a – yon tandans monte dapre lekti klasik la.';
+
+  @override
+  String get techDeathCross =>
+      'Mwayèn 50 jou a pi ba pase mwayèn 200 jou a – yon tandans desann dapre lekti klasik la.';
+
+  @override
+  String get glossSma50 =>
+      'Mwayèn pri fèmti 50 dènye jou komès yo. Yon pri ki pi wo pase li souvan konsidere kòm fòs sou kout tèm, pi ba kòm feblès.';
+
+  @override
+  String get glossSma200 =>
+      'Mwayèn pri fèmti 200 dènye jou komès yo – liy tandans klasik la pou lontan. Anpil envestisè konsidere yon pri ki pi wo pase li kòm yon tandans monte sou lontan.';
+
+  @override
+  String get glossRsi =>
+      'Endis fòs relatif: li konpare dènye pwofi yo ak dènye pèt yo sou yon echèl 0–100. Pi wo pase 70, yo souvan di aksyon an twò achte (li monte vit), pi ba pase 30 twò vann – men yon tandans fò ka rete la pou lontan.';
+
+  @override
+  String get glossVolatility =>
+      'Konbyen pri a varye de yon jou a yon lòt, kalkile sou yon ane: 20% vle di nan yon ane nòmal pri a deplase anviwon ±20%. Plis volatilite vle di pi gwo mouvman nan toude direksyon.';
+
+  @override
+  String get techNote =>
+      'Kalkile apati pri fèmti chak jou. Siyal teknik yo dekri sa ki pase, pa sa ki pral vini.';
 }

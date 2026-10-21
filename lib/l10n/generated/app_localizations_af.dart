@@ -2649,4 +2649,66 @@ class AppLocalizationsAf extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'KI-verduideliking uit vandag se nuus op die web; die werklike rede kan onbekend of anders wees. Nie beleggingsadvies nie. Gebruik jou daaglikse vraagkwota, nie ’n ontleding nie.';
+
+  @override
+  String get sectionTechnical => 'Tegniese beeld';
+
+  @override
+  String get labelSma50 => '50-dae-gemiddelde';
+
+  @override
+  String get labelSma200 => '200-dae-gemiddelde';
+
+  @override
+  String get labelRsi => 'RSI (14 dae)';
+
+  @override
+  String get labelVolatility30 => 'Volatiliteit (30 dae)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent bo';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent onder';
+  }
+
+  @override
+  String get techOverbought => 'oorgekoop';
+
+  @override
+  String get techOversold => 'oorverkoop';
+
+  @override
+  String get techNeutral => 'neutraal';
+
+  @override
+  String get techGoldenCross =>
+      'Die 50-dae-gemiddelde is bo die 200-dae-gemiddelde – volgens die klassieke lesing ’n stygende trend.';
+
+  @override
+  String get techDeathCross =>
+      'Die 50-dae-gemiddelde is onder die 200-dae-gemiddelde – volgens die klassieke lesing ’n dalende trend.';
+
+  @override
+  String get glossSma50 =>
+      'Die gemiddelde sluitingsprys van die laaste 50 handelsdae. ’n Prys daarbo word dikwels as korttermynsterkte gelees, daaronder as swakheid.';
+
+  @override
+  String get glossSma200 =>
+      'Die gemiddelde sluitingsprys van die laaste 200 handelsdae – die klassieke langtermyn-trendlyn. Baie beleggers beskou ’n prys daarbo as ’n langtermyn-stygende trend.';
+
+  @override
+  String get glossRsi =>
+      'Relatiewe sterkte-indeks: vergelyk onlangse winste met onlangse verliese op ’n skaal van 0–100. Bo 70 word die aandeel dikwels oorgekoop genoem (dit het vinnig gestyg), onder 30 oorverkoop – maar ’n sterk trend kan lank daar bly.';
+
+  @override
+  String get glossVolatility =>
+      'Hoeveel die prys van dag tot dag skommel, omgereken na ’n jaar: 20% beteken ’n tipiese jaar beweeg binne ongeveer ±20%. Hoër volatiliteit beteken groter bewegings in albei rigtings.';
+
+  @override
+  String get techNote =>
+      'Bereken uit daaglikse sluitingspryse. Tegniese seine beskryf die verlede, nie die toekoms nie.';
 }

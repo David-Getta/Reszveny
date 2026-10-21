@@ -701,5 +701,22 @@
   "awayReported": "Biisã sẽn togs: {symbols}",
   "moveWhyButton": "Bõe yĩng t'a vẽnegd rũndã?",
   "moveWhyTitle": "{percent} rũndã",
-  "moveWhyNote": "AI wilgri sẽn yit rũndã kibay sẽn yã ẽntɛrnɛt zugu; võor hakɩkã tõe n pa mi bɩ a yaa toor. Pa ligd rɩk saglg ye. A rɩkda f daar fãa sokr sõor la pa vaeesg ye."
+  "moveWhyNote": "AI wilgri sẽn yit rũndã kibay sẽn yã ẽntɛrnɛt zugu; võor hakɩkã tõe n pa mi bɩ a yaa toor. Pa ligd rɩk saglg ye. A rɩkda f daar fãa sokr sõor la pa vaeesg ye.",
+  "sectionTechnical": "Tekniik yel-gesgã",
+  "labelSma50": "Rasem 50 pʋgẽ sũur-sũur",
+  "labelSma200": "Rasem 200 pʋgẽ sũur-sũur",
+  "labelRsi": "RSI (rasem 14)",
+  "labelVolatility30": "Toeengã (rasem 30)",
+  "techAbove": "{percent} yĩngri",
+  "techBelow": "{percent} tẽngri",
+  "techOverbought": "b da-a wʋsg tɩ looge",
+  "techOversold": "b koos-a wʋsg tɩ looge",
+  "techNeutral": "sʋka",
+  "techGoldenCross": "Rasem 50 sũur-sũurã bee rasem 200 sũur-sũurã yĩngri – a kẽnda yĩngri wa b sẽn mi n gese.",
+  "techDeathCross": "Rasem 50 sũur-sũurã bee rasem 200 sũur-sũurã tẽngri – a kẽnda tẽngri wa b sẽn mi n gese.",
+  "glossSma50": "Koosem rasem 50 sẽn loog wã pagb ligdã sũur-sũur. Ligd sẽn be a yĩngri, b mi n gesame tɩ yaa pãng wakat bilfu, sẽn be tẽngri yaa pãn-komslem.",
+  "glossSma200": "Koosem rasem 200 sẽn loog wã pagb ligdã sũur-sũur – wakat wok sor-wɛɛng sẽn mi n gese. Ligd-ningdb wʋsg gesda ligd sẽn be a yĩngri wa wakat wok kẽnd yĩngri.",
+  "glossRsi": "Pãng makr index (RSI): a makda yõod sẽn paam nindaare ne bõn sẽn paam nindaare, 0 n tãag 100. Sẽn yɩɩd 70, b mi n yetame tɩ b da-a wʋsg tɩ looge (a kẽnga yĩngri tao-tao), sẽn pa ta 30, b koos-a wʋsg tɩ looge – la kẽnd sẽn tar pãng tõe n pa be wakat wok.",
+  "glossVolatility": "Ligdã sẽn toeemd daar fãa to-to, b maka yʋʋmd a ye: 20% rat n yeelame tɩ yʋʋmd fãa a kẽnda ±20% sʋka. Toeeng sẽn yɩɩd rat n yeelame tɩ kẽnd bɛd sor a yiibã fãa.",
+  "techNote": "B geelg-a lame ne daar fãa pagb ligdã. Tekniik bãnd wilgda sẽn loogã, la pa sẽn wat ye."
 }

@@ -2646,4 +2646,66 @@ class AppLocalizationsTr extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'İnternette bulunan bugünkü haberlere dayalı yapay zekâ açıklaması; gerçek neden bilinmiyor veya farklı olabilir. Yatırım tavsiyesi değildir. Analiz değil, günlük soru hakkınızı kullanır.';
+
+  @override
+  String get sectionTechnical => 'Teknik görünüm';
+
+  @override
+  String get labelSma50 => '50 günlük ortalama';
+
+  @override
+  String get labelSma200 => '200 günlük ortalama';
+
+  @override
+  String get labelRsi => 'RSI (14 gün)';
+
+  @override
+  String get labelVolatility30 => 'Volatilite (30 gün)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent üzerinde';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent altında';
+  }
+
+  @override
+  String get techOverbought => 'aşırı alım';
+
+  @override
+  String get techOversold => 'aşırı satım';
+
+  @override
+  String get techNeutral => 'nötr';
+
+  @override
+  String get techGoldenCross =>
+      '50 günlük ortalama 200 günlük ortalamanın üzerinde – klasik okumaya göre yükseliş trendi.';
+
+  @override
+  String get techDeathCross =>
+      '50 günlük ortalama 200 günlük ortalamanın altında – klasik okumaya göre düşüş trendi.';
+
+  @override
+  String get glossSma50 =>
+      'Son 50 işlem gününün ortalama kapanış fiyatı. Fiyatın bunun üzerinde olması genellikle kısa vadeli güç, altında olması zayıflık olarak okunur.';
+
+  @override
+  String get glossSma200 =>
+      'Son 200 işlem gününün ortalama kapanış fiyatı – klasik uzun vadeli trend çizgisi. Birçok yatırımcı bunun üzerindeki fiyatı uzun vadeli yükseliş trendi sayar.';
+
+  @override
+  String get glossRsi =>
+      'Göreceli güç endeksi: yakın dönemdeki kazançları yakın dönemdeki kayıplarla 0–100 ölçeğinde karşılaştırır. 70\'in üzerinde hisse genellikle aşırı alım bölgesinde (hızlı yükseldi), 30\'un altında aşırı satım bölgesinde sayılır – ancak güçlü bir trend orada uzun süre kalabilir.';
+
+  @override
+  String get glossVolatility =>
+      'Fiyatın günden güne ne kadar dalgalandığı, yıllık bazda: %20, tipik bir yılda yaklaşık ±%20 aralığında hareket ettiği anlamına gelir. Daha yüksek volatilite, her iki yönde daha büyük hareketler demektir.';
+
+  @override
+  String get techNote =>
+      'Günlük kapanış fiyatlarından hesaplanmıştır. Teknik sinyaller geçmişi anlatır, geleceği değil.';
 }

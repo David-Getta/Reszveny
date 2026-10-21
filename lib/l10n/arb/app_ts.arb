@@ -701,5 +701,22 @@
   "awayReported": "Mbuyelo lowu vikiweke: {symbols}",
   "moveWhyButton": "Hikwalaho ka yini yi famba namuntlha?",
   "moveWhyTitle": "{percent} namuntlha",
-  "moveWhyNote": "Nhlamuselo ya AI leyi humaka eka mahungu ya namuntlha lama kumiweke eka inthanete; xivangelo xa ntiyiso xi nga ha va xi nga tiviwi kumbe xi hambana. A hi ndzayo ya vuvekisi. Yi tirhisa nhlayo ya wena ya swivutiso ya siku, ku nga ri nxopaxopo."
+  "moveWhyNote": "Nhlamuselo ya AI leyi humaka eka mahungu ya namuntlha lama kumiweke eka inthanete; xivangelo xa ntiyiso xi nga ha va xi nga tiviwi kumbe xi hambana. A hi ndzayo ya vuvekisi. Yi tirhisa nhlayo ya wena ya swivutiso ya siku, ku nga ri nxopaxopo.",
+  "sectionTechnical": "Xifaniso xa thekiniki",
+  "labelSma50": "Avhareji ya masiku ya 50",
+  "labelSma200": "Avhareji ya masiku ya 200",
+  "labelRsi": "RSI (masiku ya 14)",
+  "labelVolatility30": "Ku cinca ka nxavo (masiku ya 30)",
+  "techAbove": "{percent} ehenhla",
+  "techBelow": "{percent} ehansi",
+  "techOverbought": "yi xaviwe ngopfu",
+  "techOversold": "yi xavisiwe ngopfu",
+  "techNeutral": "exikarhi",
+  "techGoldenCross": "Avhareji ya masiku ya 50 yi le henhla ka avhareji ya masiku ya 200 – hi ku hlaya ka ntolovelo i ku tlakuka.",
+  "techDeathCross": "Avhareji ya masiku ya 50 yi le hansi ka avhareji ya masiku ya 200 – hi ku hlaya ka ntolovelo i ku rhelela.",
+  "glossSma50": "Avhareji ya nxavo wo pfala wa masiku ya 50 yo hetelela ya bindzu. Nxavo lowu nga ehenhla ka yona hakanyingi wu voniwa tanihi matimba ya nkarhi wo koma, lowu nga ehansi tanihi ku tsana.",
+  "glossSma200": "Avhareji ya nxavo wo pfala wa masiku ya 200 yo hetelela ya bindzu – layini wa ntolovelo wa ndlela ya nkarhi wo leha. Vavekisi vo tala va teka nxavo lowu nga ehenhla ka yona tanihi ku tlakuka ka nkarhi wo leha.",
+  "glossRsi": "Indekisi ya matimba yo ringanisa: yi ringanisa mbuyelo wa sweswinyana ni ku lahlekeriwa ka sweswinyana eka xikalo xa 0–100. Ehenhla ka 70 xitoko hakanyingi xi vuriwa xi xaviwe ngopfu (xi tlakukile hi ku hatlisa), ehansi ka 30 xi xavisiwe ngopfu – kambe ndlela ya matimba yi nga tshama kona nkarhi wo leha.",
+  "glossVolatility": "Ndlela leyi nxavo wu cincaka ha yona siku na siku, yi pimiwe hi lembe: 20% swi vula leswaku lembe ro tolovela ri famba endzeni ka kwalomu ka ±20%. Ku cinca lokukulu swi vula ku famba lokukulu eka matlhelo hamambirhi.",
+  "techNote": "Swi hlayiwile ku suka eka minxavo yo pfala ya siku na siku. Swikombiso swa thekiniki swi hlamusela leswi hundzeke, ku nga ri vumundzuku."
 }

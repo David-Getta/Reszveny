@@ -2619,4 +2619,66 @@ class AppLocalizationsLo extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'ຄຳອະທິບາຍຈາກ AI ອີງຕາມຂ່າວມື້ນີ້ທີ່ພົບໃນເວັບ; ສາເຫດແທ້ຈິງອາດບໍ່ຮູ້ ຫຼື ແຕກຕ່າງກັນ. ບໍ່ແມ່ນຄຳແນະນຳດ້ານການລົງທຶນ. ໃຊ້ໂຄຕາຄຳຖາມປະຈຳວັນຂອງທ່ານ, ບໍ່ແມ່ນການວິເຄາະ.';
+
+  @override
+  String get sectionTechnical => 'ພາບລວມທາງເຕັກນິກ';
+
+  @override
+  String get labelSma50 => 'ສະເລ່ຍ 50 ວັນ';
+
+  @override
+  String get labelSma200 => 'ສະເລ່ຍ 200 ວັນ';
+
+  @override
+  String get labelRsi => 'RSI (14 ວັນ)';
+
+  @override
+  String get labelVolatility30 => 'ຄວາມຜັນຜວນ (30 ວັນ)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent ເໜືອ';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent ຕ່ຳກວ່າ';
+  }
+
+  @override
+  String get techOverbought => 'ຊື້ເກີນ';
+
+  @override
+  String get techOversold => 'ຂາຍເກີນ';
+
+  @override
+  String get techNeutral => 'ເປັນກາງ';
+
+  @override
+  String get techGoldenCross =>
+      'ສະເລ່ຍ 50 ວັນ ຢູ່ເໜືອສະເລ່ຍ 200 ວັນ – ແນວໂນ້ມຂາຂຶ້ນຕາມການອ່ານແບບດັ້ງເດີມ.';
+
+  @override
+  String get techDeathCross =>
+      'ສະເລ່ຍ 50 ວັນ ຢູ່ຕ່ຳກວ່າສະເລ່ຍ 200 ວັນ – ແນວໂນ້ມຂາລົງຕາມການອ່ານແບບດັ້ງເດີມ.';
+
+  @override
+  String get glossSma50 =>
+      'ລາຄາປິດສະເລ່ຍຂອງ 50 ວັນຊື້ຂາຍຫຼ້າສຸດ. ລາຄາທີ່ຢູ່ເໜືອມັນມັກຖືກອ່ານວ່າເປັນຄວາມແຂງແຮງໄລຍະສັ້ນ, ຕ່ຳກວ່າມັນຖືວ່າເປັນຄວາມອ່ອນແອ.';
+
+  @override
+  String get glossSma200 =>
+      'ລາຄາປິດສະເລ່ຍຂອງ 200 ວັນຊື້ຂາຍຫຼ້າສຸດ – ເສັ້ນແນວໂນ້ມໄລຍະຍາວແບບດັ້ງເດີມ. ນັກລົງທຶນຫຼາຍຄົນຖືວ່າລາຄາທີ່ຢູ່ເໜືອມັນເປັນແນວໂນ້ມຂາຂຶ້ນໄລຍະຍາວ.';
+
+  @override
+  String get glossRsi =>
+      'ດັດຊະນີຄວາມແຂງແຮງສຳພັນ: ປຽບທຽບກຳໄລຫຼ້າສຸດກັບການຂາດທຶນຫຼ້າສຸດໃນຂະໜາດ 0–100. ເໜືອ 70 ຮຸ້ນມັກຖືກເອີ້ນວ່າຊື້ເກີນ (ຂຶ້ນໄວ), ຕ່ຳກວ່າ 30 ຂາຍເກີນ – ແຕ່ແນວໂນ້ມທີ່ແຂງແຮງສາມາດຢູ່ບ່ອນນັ້ນໄດ້ດົນ.';
+
+  @override
+  String get glossVolatility =>
+      'ລາຄາແກວ່ງຕັວຫຼາຍເທົ່າໃດໃນແຕ່ລະວັນ, ຄິດເປັນລາຍປີ: 20% ໝາຍຄວາມວ່າໃນປີປົກກະຕິລາຄາເຄື່ອນໄຫວປະມານ ±20%. ຄວາມຜັນຜວນສູງກວ່າ ໝາຍເຖິງການເຄື່ອນໄຫວທີ່ໃຫຍ່ກວ່າທັງສອງທິດທາງ.';
+
+  @override
+  String get techNote =>
+      'ຄິດໄລ່ຈາກລາຄາປິດປະຈຳວັນ. ສັນຍານທາງເຕັກນິກອະທິບາຍອະດີດ, ບໍ່ແມ່ນອະນາຄົດ.';
 }

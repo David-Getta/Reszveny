@@ -28,6 +28,7 @@ import '../news/watch_news_view.dart' show showNewsExplanation;
 import 'widgets/converted_price.dart';
 import 'widgets/earnings_card.dart';
 import 'widgets/instrument_card.dart';
+import 'widgets/technical_card.dart';
 import 'widgets/move_why_button.dart';
 import 'widgets/insiders_card.dart';
 import 'widgets/kv_table.dart';
@@ -421,6 +422,9 @@ class _DetailsBody extends StatelessWidget {
           exchange: p?.exchange ?? candidate.exchange,
         ),
 
+      // Technikai kép a záróárakból.
+      if (d.history case final h? when h.points.length >= TechnicalCard.minPoints)
+        TechnicalCard(history: h, price: q?.price, currency: cur, fmt: fmt, glossary: glossary),
       // Azonosítás
       SectionCard(
         title: l10n.sectionIdentity,

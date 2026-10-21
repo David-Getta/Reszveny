@@ -2649,4 +2649,66 @@ class AppLocalizationsEe extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'AI ƒe numeɖeɖe tso egbe nyadzɔdzɔ siwo wokpɔ le intanɛt dzi me; susu ŋutɔŋutɔ ate ŋu anye esi womenya o alo esi to vovo. Menye gadodo ŋuti aɖaŋuɖoɖo o. Ezãa wò gbe sia gbe biabia xexlẽme, menye numekuku o.';
+
+  @override
+  String get sectionTechnical => 'Aɖaŋudɔ ƒe nɔnɔme';
+
+  @override
+  String get labelSma50 => 'Ŋkeke 50 ƒe titina';
+
+  @override
+  String get labelSma200 => 'Ŋkeke 200 ƒe titina';
+
+  @override
+  String get labelRsi => 'RSI (ŋkeke 14)';
+
+  @override
+  String get labelVolatility30 => 'Tɔtrɔ (ŋkeke 30)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent le etame';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent le ete';
+  }
+
+  @override
+  String get techOverbought => 'woƒlee wu';
+
+  @override
+  String get techOversold => 'wodzrae wu';
+
+  @override
+  String get techNeutral => 'titina';
+
+  @override
+  String get techGoldenCross =>
+      'Ŋkeke 50 ƒe titina le ŋkeke 200 ƒe titina tame – le blema nukpɔkpɔ nu la, enye yiyi dzi mɔ.';
+
+  @override
+  String get techDeathCross =>
+      'Ŋkeke 50 ƒe titina le ŋkeke 200 ƒe titina te – le blema nukpɔkpɔ nu la, enye ɖiɖi anyi mɔ.';
+
+  @override
+  String get glossSma50 =>
+      'Asitsaŋkeke 50 mamlɛawo ƒe nutuasixɔxɔ ƒe titina. Zi geɖe la, wobua asixɔxɔ si le etame be enye ŋusẽ ɣeyiɣi kpui me, eye esi le ete be enye gbɔdzɔgbɔdzɔ.';
+
+  @override
+  String get glossSma200 =>
+      'Asitsaŋkeke 200 mamlɛawo ƒe nutuasixɔxɔ ƒe titina – blema ɣeyiɣi didi mɔ ƒe fli. Gadzikpɔla geɖe bua asixɔxɔ si le etame be enye ɣeyiɣi didi yiyi dzi mɔ.';
+
+  @override
+  String get glossRsi =>
+      'Ŋusẽ sɔsɔ ƒe dzesi (RSI): etsɔa nyitsɔ viɖewo sɔ kple nyitsɔ nuxɔxɔwo le 0–100 dzidzenu dzi. Ne ewu 70 la, zi geɖe wogblɔna be woƒle akpaa la wu (edzi kabakaba), ne ele 30 te la, wodzrae wu – gake mɔ sesẽ ate ŋu anɔ afi ma ɣeyiɣi didi.';
+
+  @override
+  String get glossVolatility =>
+      'Ale si asixɔxɔ trɔna gbe sia gbe, wobui le ƒe ɖeka me: 20% fia be le ƒe ɖeka me la, asixɔxɔ trɔna le ±20% ƒe nu me. Tɔtrɔ gã fia be tɔtrɔ gãwo dzɔna le akpa eveawo.';
+
+  @override
+  String get techNote =>
+      'Wobui tso gbe sia gbe nutuasixɔxɔwo me. Aɖaŋudɔ dzesiwo ƒoa nu tso nu si va yi ŋu, menye etsɔme ŋu o.';
 }

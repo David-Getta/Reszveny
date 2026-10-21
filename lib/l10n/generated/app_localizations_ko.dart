@@ -2576,4 +2576,65 @@ class AppLocalizationsKo extends AppLocalizations {
   @override
   String get moveWhyNote =>
       '웹에서 찾은 오늘 뉴스를 바탕으로 한 AI 설명입니다. 실제 이유는 알 수 없거나 다를 수 있습니다. 투자 조언이 아닙니다. 분석이 아닌 일일 질문 한도를 사용합니다.';
+
+  @override
+  String get sectionTechnical => '기술적 분석';
+
+  @override
+  String get labelSma50 => '50일 이동평균';
+
+  @override
+  String get labelSma200 => '200일 이동평균';
+
+  @override
+  String get labelRsi => 'RSI (14일)';
+
+  @override
+  String get labelVolatility30 => '변동성 (30일)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent 위';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent 아래';
+  }
+
+  @override
+  String get techOverbought => '과매수';
+
+  @override
+  String get techOversold => '과매도';
+
+  @override
+  String get techNeutral => '중립';
+
+  @override
+  String get techGoldenCross =>
+      '50일 이동평균이 200일 이동평균 위에 있습니다 – 고전적인 해석으로는 상승 추세입니다.';
+
+  @override
+  String get techDeathCross =>
+      '50일 이동평균이 200일 이동평균 아래에 있습니다 – 고전적인 해석으로는 하락 추세입니다.';
+
+  @override
+  String get glossSma50 =>
+      '최근 50거래일 종가의 평균입니다. 주가가 그 위에 있으면 단기 강세, 아래에 있으면 약세로 읽는 경우가 많습니다.';
+
+  @override
+  String get glossSma200 =>
+      '최근 200거래일 종가의 평균 – 고전적인 장기 추세선입니다. 많은 투자자가 주가가 그 위에 있으면 장기 상승 추세로 봅니다.';
+
+  @override
+  String get glossRsi =>
+      '상대강도지수: 최근 상승폭과 최근 하락폭을 0~100 척도로 비교합니다. 70을 넘으면 과매수(빠르게 올랐음), 30 아래면 과매도라고 부르는 경우가 많지만, 강한 추세에서는 그 상태가 오래 이어질 수 있습니다.';
+
+  @override
+  String get glossVolatility =>
+      '주가가 하루하루 얼마나 움직이는지를 연율로 환산한 값입니다. 20%라면 보통 한 해에 약 ±20% 범위에서 움직인다는 뜻입니다. 변동성이 높을수록 위아래로 더 크게 움직입니다.';
+
+  @override
+  String get techNote => '일별 종가로 계산했습니다. 기술적 신호는 과거를 설명할 뿐 미래를 말해주지 않습니다.';
 }

@@ -2647,4 +2647,66 @@ class AppLocalizationsFi extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Tekoälyn selitys verkosta löytyneistä tämän päivän uutisista; todellinen syy voi olla tuntematon tai eri. Ei sijoitusneuvontaa. Kuluttaa päivittäistä kysymyskiintiötäsi, ei analyysia.';
+
+  @override
+  String get sectionTechnical => 'Tekninen kuva';
+
+  @override
+  String get labelSma50 => '50 päivän keskiarvo';
+
+  @override
+  String get labelSma200 => '200 päivän keskiarvo';
+
+  @override
+  String get labelRsi => 'RSI (14 päivää)';
+
+  @override
+  String get labelVolatility30 => 'Volatiliteetti (30 päivää)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent yläpuolella';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent alapuolella';
+  }
+
+  @override
+  String get techOverbought => 'yliostettu';
+
+  @override
+  String get techOversold => 'ylimyyty';
+
+  @override
+  String get techNeutral => 'neutraali';
+
+  @override
+  String get techGoldenCross =>
+      '50 päivän keskiarvo on 200 päivän keskiarvon yläpuolella – klassisen tulkinnan mukaan nousutrendi.';
+
+  @override
+  String get techDeathCross =>
+      '50 päivän keskiarvo on 200 päivän keskiarvon alapuolella – klassisen tulkinnan mukaan laskutrendi.';
+
+  @override
+  String get glossSma50 =>
+      'Viimeisten 50 kaupankäyntipäivän keskimääräinen päätöskurssi. Sen yläpuolella oleva kurssi tulkitaan usein lyhyen aikavälin vahvuudeksi, alapuolella heikkoudeksi.';
+
+  @override
+  String get glossSma200 =>
+      'Viimeisten 200 kaupankäyntipäivän keskimääräinen päätöskurssi – klassinen pitkän aikavälin trendiviiva. Monet sijoittajat pitävät sen yläpuolella olevaa kurssia pitkän aikavälin nousutrendinä.';
+
+  @override
+  String get glossRsi =>
+      'Suhteellinen voimaindeksi: vertaa viimeaikaisia nousuja viimeaikaisiin laskuihin asteikolla 0–100. Yli 70:n osaketta kutsutaan usein yliostetuksi (se on noussut nopeasti), alle 30:n ylimyydyksi – mutta vahva trendi voi pysyä siellä pitkään.';
+
+  @override
+  String get glossVolatility =>
+      'Kuinka paljon kurssi heilahtelee päivästä toiseen, vuositasolle muutettuna: 20 % tarkoittaa, että tyypillisenä vuonna kurssi liikkuu noin ±20 %:n sisällä. Korkeampi volatiliteetti tarkoittaa suurempia liikkeitä molempiin suuntiin.';
+
+  @override
+  String get techNote =>
+      'Laskettu päivittäisistä päätöskursseista. Tekniset signaalit kuvaavat menneisyyttä, eivät tulevaisuutta.';
 }

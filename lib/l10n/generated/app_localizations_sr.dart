@@ -2694,4 +2694,66 @@ class AppLocalizationsSr extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Објашњење ВИ на основу данашњих вести пронађених на интернету; прави разлог може бити непознат или другачији. Није инвестициони савет. Троши вашу дневну квоту питања, а не анализу.';
+
+  @override
+  String get sectionTechnical => 'Техничка слика';
+
+  @override
+  String get labelSma50 => '50-дневни просек';
+
+  @override
+  String get labelSma200 => '200-дневни просек';
+
+  @override
+  String get labelRsi => 'RSI (14 дана)';
+
+  @override
+  String get labelVolatility30 => 'Волатилност (30 дана)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent изнад';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent испод';
+  }
+
+  @override
+  String get techOverbought => 'прекупљено';
+
+  @override
+  String get techOversold => 'препродато';
+
+  @override
+  String get techNeutral => 'неутрално';
+
+  @override
+  String get techGoldenCross =>
+      '50-дневни просек је изнад 200-дневног – по класичном тумачењу узлазни тренд.';
+
+  @override
+  String get techDeathCross =>
+      '50-дневни просек је испод 200-дневног – по класичном тумачењу силазни тренд.';
+
+  @override
+  String get glossSma50 =>
+      'Просечна цена затварања у последњих 50 дана трговања. Цена изнад њега често се тумачи као краткорочна снага, испод њега као слабост.';
+
+  @override
+  String get glossSma200 =>
+      'Просечна цена затварања у последњих 200 дана трговања – класична линија дугорочног тренда. Многи инвеститори цену изнад ње сматрају дугорочним узлазним трендом.';
+
+  @override
+  String get glossRsi =>
+      'Индекс релативне снаге: упоређује недавне добитке са недавним губицима на скали од 0 до 100. Изнад 70 акција се често назива прекупљеном (брзо је порасла), испод 30 препродатом – али снажан тренд може дуго остати тамо.';
+
+  @override
+  String get glossVolatility =>
+      'Колико цена осцилира из дана у дан, прерачунато на годину: 20% значи да се у типичној години креће у распону од око ±20%. Већа волатилност значи већа кретања у оба смера.';
+
+  @override
+  String get techNote =>
+      'Израчунато из дневних цена затварања. Технички сигнали описују прошлост, не будућност.';
 }

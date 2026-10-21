@@ -2654,4 +2654,66 @@ class AppLocalizationsRw extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Ibisobanuro bya AI bishingiye ku makuru y\'uyu munsi yabonetse kuri interineti; impamvu nyayo ishobora kuba itazwi cyangwa itandukanye. Si inama yo gushora imari. Bikoresha umubare w\'ibibazo byawe bya buri munsi, ntabwo ari isesengura.';
+
+  @override
+  String get sectionTechnical => 'Ishusho ya tekiniki';
+
+  @override
+  String get labelSma50 => 'Impuzandengo y\'iminsi 50';
+
+  @override
+  String get labelSma200 => 'Impuzandengo y\'iminsi 200';
+
+  @override
+  String get labelRsi => 'RSI (iminsi 14)';
+
+  @override
+  String get labelVolatility30 => 'Ihindagurika (iminsi 30)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent hejuru';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent munsi';
+  }
+
+  @override
+  String get techOverbought => 'yaguzwe cyane';
+
+  @override
+  String get techOversold => 'yagurishijwe cyane';
+
+  @override
+  String get techNeutral => 'hagati';
+
+  @override
+  String get techGoldenCross =>
+      'Impuzandengo y\'iminsi 50 iri hejuru y\'iy\'iminsi 200 – mu gusoma gisanzwe ni ukuzamuka.';
+
+  @override
+  String get techDeathCross =>
+      'Impuzandengo y\'iminsi 50 iri munsi y\'iy\'iminsi 200 – mu gusoma gisanzwe ni ukumanuka.';
+
+  @override
+  String get glossSma50 =>
+      'Impuzandengo y\'igiciro cyo gusoza cy\'iminsi 50 ishize y\'ubucuruzi. Igiciro kiri hejuru yayo akenshi gifatwa nk\'imbaraga z\'igihe gito, kiri munsi nk\'intege nke.';
+
+  @override
+  String get glossSma200 =>
+      'Impuzandengo y\'igiciro cyo gusoza cy\'iminsi 200 ishize y\'ubucuruzi – umurongo usanzwe w\'icyerekezo cy\'igihe kirekire. Abashoramari benshi bafata igiciro kiri hejuru yayo nk\'ukuzamuka kw\'igihe kirekire.';
+
+  @override
+  String get glossRsi =>
+      'Igipimo cy\'imbaraga zigereranyijwe (RSI): kigereranya inyungu za vuba n\'igihombo cya vuba ku rugero rwa 0–100. Hejuru ya 70 imigabane akenshi ivugwa ko yaguzwe cyane (yazamutse vuba), munsi ya 30 ko yagurishijwe cyane – ariko icyerekezo gikomeye gishobora kuhaguma igihe kirekire.';
+
+  @override
+  String get glossVolatility =>
+      'Uko igiciro gihindagurika umunsi ku wundi, gipimwe ku mwaka: 20% bivuze ko umwaka usanzwe ugenda hafi ya ±20%. Ihindagurika ryinshi bivuze ingendo nini mu mpande zombi.';
+
+  @override
+  String get techNote =>
+      'Byabazwe hakoreshejwe ibiciro byo gusoza bya buri munsi. Ibimenyetso bya tekiniki bisobanura ibyahise, ntabwo ari ibizaza.';
 }

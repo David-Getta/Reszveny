@@ -2715,4 +2715,66 @@ class AppLocalizationsSk extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Vysvetlenie AI na základe dnešných správ nájdených na webe; skutočný dôvod môže byť neznámy alebo iný. Nie je to investičné odporúčanie. Spotrebúva denný limit otázok, nie analýzu.';
+
+  @override
+  String get sectionTechnical => 'Technický obraz';
+
+  @override
+  String get labelSma50 => '50-dňový priemer';
+
+  @override
+  String get labelSma200 => '200-dňový priemer';
+
+  @override
+  String get labelRsi => 'RSI (14 dní)';
+
+  @override
+  String get labelVolatility30 => 'Volatilita (30 dní)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent nad';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent pod';
+  }
+
+  @override
+  String get techOverbought => 'prekúpené';
+
+  @override
+  String get techOversold => 'prepredané';
+
+  @override
+  String get techNeutral => 'neutrálne';
+
+  @override
+  String get techGoldenCross =>
+      '50-dňový priemer je nad 200-dňovým – podľa klasického výkladu rastúci trend.';
+
+  @override
+  String get techDeathCross =>
+      '50-dňový priemer je pod 200-dňovým – podľa klasického výkladu klesajúci trend.';
+
+  @override
+  String get glossSma50 =>
+      'Priemerná záverečná cena za posledných 50 obchodných dní. Cena nad ním sa často vykladá ako krátkodobá sila, pod ním ako slabosť.';
+
+  @override
+  String get glossSma200 =>
+      'Priemerná záverečná cena za posledných 200 obchodných dní – klasická línia dlhodobého trendu. Mnohí investori považujú cenu nad ňou za dlhodobý rastúci trend.';
+
+  @override
+  String get glossRsi =>
+      'Index relatívnej sily: porovnáva nedávne zisky s nedávnymi stratami na škále 0–100. Nad 70 sa akcia často označuje za prekúpenú (rýchlo rástla), pod 30 za prepredanú – silný trend tam však môže zostať dlho.';
+
+  @override
+  String get glossVolatility =>
+      'Ako veľmi cena kolíše zo dňa na deň, prepočítané na rok: 20 % znamená, že v bežnom roku sa pohybuje približne v rozpätí ±20 %. Vyššia volatilita znamená väčšie pohyby oboma smermi.';
+
+  @override
+  String get techNote =>
+      'Vypočítané z denných záverečných cien. Technické signály opisujú minulosť, nie budúcnosť.';
 }

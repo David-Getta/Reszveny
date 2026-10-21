@@ -2689,4 +2689,66 @@ class AppLocalizationsLv extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'MI skaidrojums no šodienas ziņām tīmeklī; patiesais iemesls var būt nezināms vai cits. Tas nav ieguldījumu padoms. Izmanto jūsu dienas jautājumu limitu, ne analīzi.';
+
+  @override
+  String get sectionTechnical => 'Tehniskā aina';
+
+  @override
+  String get labelSma50 => '50 dienu vidējais';
+
+  @override
+  String get labelSma200 => '200 dienu vidējais';
+
+  @override
+  String get labelRsi => 'RSI (14 dienas)';
+
+  @override
+  String get labelVolatility30 => 'Svārstīgums (30 dienas)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent virs';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent zem';
+  }
+
+  @override
+  String get techOverbought => 'pārpirkta';
+
+  @override
+  String get techOversold => 'pārpārdota';
+
+  @override
+  String get techNeutral => 'neitrāls';
+
+  @override
+  String get techGoldenCross =>
+      '50 dienu vidējais ir virs 200 dienu vidējā – pēc klasiskās interpretācijas augšupejoša tendence.';
+
+  @override
+  String get techDeathCross =>
+      '50 dienu vidējais ir zem 200 dienu vidējā – pēc klasiskās interpretācijas lejupejoša tendence.';
+
+  @override
+  String get glossSma50 =>
+      'Pēdējo 50 tirdzniecības dienu vidējā slēgšanas cena. Cenu virs tā bieži uzskata par īstermiņa spēku, zem tā – par vājumu.';
+
+  @override
+  String get glossSma200 =>
+      'Pēdējo 200 tirdzniecības dienu vidējā slēgšanas cena – klasiskā ilgtermiņa tendences līnija. Daudzi investori cenu virs tā uzskata par ilgtermiņa augšupejošu tendenci.';
+
+  @override
+  String get glossRsi =>
+      'Relatīvā spēka indekss: salīdzina nesenos pieaugumus ar nesenajiem kritumiem skalā no 0 līdz 100. Virs 70 akciju bieži sauc par pārpirktu (tā strauji kāpa), zem 30 – par pārpārdotu, bet stipra tendence tur var saglabāties ilgi.';
+
+  @override
+  String get glossVolatility =>
+      'Cik daudz cena svārstās no dienas dienā, pārrēķinot uz gadu: 20 % nozīmē, ka tipiskā gadā cena mainās aptuveni ±20 % robežās. Lielāks svārstīgums nozīmē lielākas kustības abos virzienos.';
+
+  @override
+  String get techNote =>
+      'Aprēķināts pēc dienas slēgšanas cenām. Tehniskie signāli apraksta pagātni, ne nākotni.';
 }

@@ -701,5 +701,22 @@
   "awayReported": "Açıklanan sonuçlar: {symbols}",
   "moveWhyButton": "Bugün neden hareket ediyor?",
   "moveWhyTitle": "Bugün {percent}",
-  "moveWhyNote": "İnternette bulunan bugünkü haberlere dayalı yapay zekâ açıklaması; gerçek neden bilinmiyor veya farklı olabilir. Yatırım tavsiyesi değildir. Analiz değil, günlük soru hakkınızı kullanır."
+  "moveWhyNote": "İnternette bulunan bugünkü haberlere dayalı yapay zekâ açıklaması; gerçek neden bilinmiyor veya farklı olabilir. Yatırım tavsiyesi değildir. Analiz değil, günlük soru hakkınızı kullanır.",
+  "sectionTechnical": "Teknik görünüm",
+  "labelSma50": "50 günlük ortalama",
+  "labelSma200": "200 günlük ortalama",
+  "labelRsi": "RSI (14 gün)",
+  "labelVolatility30": "Volatilite (30 gün)",
+  "techAbove": "{percent} üzerinde",
+  "techBelow": "{percent} altında",
+  "techOverbought": "aşırı alım",
+  "techOversold": "aşırı satım",
+  "techNeutral": "nötr",
+  "techGoldenCross": "50 günlük ortalama 200 günlük ortalamanın üzerinde – klasik okumaya göre yükseliş trendi.",
+  "techDeathCross": "50 günlük ortalama 200 günlük ortalamanın altında – klasik okumaya göre düşüş trendi.",
+  "glossSma50": "Son 50 işlem gününün ortalama kapanış fiyatı. Fiyatın bunun üzerinde olması genellikle kısa vadeli güç, altında olması zayıflık olarak okunur.",
+  "glossSma200": "Son 200 işlem gününün ortalama kapanış fiyatı – klasik uzun vadeli trend çizgisi. Birçok yatırımcı bunun üzerindeki fiyatı uzun vadeli yükseliş trendi sayar.",
+  "glossRsi": "Göreceli güç endeksi: yakın dönemdeki kazançları yakın dönemdeki kayıplarla 0–100 ölçeğinde karşılaştırır. 70'in üzerinde hisse genellikle aşırı alım bölgesinde (hızlı yükseldi), 30'un altında aşırı satım bölgesinde sayılır – ancak güçlü bir trend orada uzun süre kalabilir.",
+  "glossVolatility": "Fiyatın günden güne ne kadar dalgalandığı, yıllık bazda: %20, tipik bir yılda yaklaşık ±%20 aralığında hareket ettiği anlamına gelir. Daha yüksek volatilite, her iki yönde daha büyük hareketler demektir.",
+  "techNote": "Günlük kapanış fiyatlarından hesaplanmıştır. Teknik sinyaller geçmişi anlatır, geleceği değil."
 }

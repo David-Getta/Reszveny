@@ -2644,4 +2644,66 @@ class AppLocalizationsDa extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'AI-forklaring ud fra dagens nyheder fundet på nettet; den egentlige årsag kan være ukendt eller en anden. Ikke investeringsrådgivning. Bruger din daglige spørgsmålskvote, ikke en analyse.';
+
+  @override
+  String get sectionTechnical => 'Teknisk billede';
+
+  @override
+  String get labelSma50 => '50-dages gennemsnit';
+
+  @override
+  String get labelSma200 => '200-dages gennemsnit';
+
+  @override
+  String get labelRsi => 'RSI (14 dage)';
+
+  @override
+  String get labelVolatility30 => 'Volatilitet (30 dage)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent over';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent under';
+  }
+
+  @override
+  String get techOverbought => 'overkøbt';
+
+  @override
+  String get techOversold => 'oversolgt';
+
+  @override
+  String get techNeutral => 'neutral';
+
+  @override
+  String get techGoldenCross =>
+      '50-dages gennemsnittet ligger over 200-dages gennemsnittet – en optrend ifølge den klassiske læsning.';
+
+  @override
+  String get techDeathCross =>
+      '50-dages gennemsnittet ligger under 200-dages gennemsnittet – en nedtrend ifølge den klassiske læsning.';
+
+  @override
+  String get glossSma50 =>
+      'Den gennemsnitlige lukkekurs for de seneste 50 handelsdage. En kurs over det læses ofte som kortsigtet styrke, under det som svaghed.';
+
+  @override
+  String get glossSma200 =>
+      'Den gennemsnitlige lukkekurs for de seneste 200 handelsdage – den klassiske langsigtede trendlinje. Mange investorer ser en kurs over det som en langsigtet optrend.';
+
+  @override
+  String get glossRsi =>
+      'Relativ styrkeindeks: sammenligner nylige stigninger med nylige fald på en skala fra 0 til 100. Over 70 kaldes aktien ofte overkøbt (den er steget hurtigt), under 30 oversolgt – men en stærk trend kan blive der længe.';
+
+  @override
+  String get glossVolatility =>
+      'Hvor meget kursen svinger fra dag til dag, omregnet til et år: 20 % betyder, at et typisk år bevæger sig inden for cirka ±20 %. Højere volatilitet betyder større udsving i begge retninger.';
+
+  @override
+  String get techNote =>
+      'Beregnet ud fra daglige lukkekurser. Tekniske signaler beskriver fortiden, ikke fremtiden.';
 }

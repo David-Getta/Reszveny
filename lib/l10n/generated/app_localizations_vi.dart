@@ -2639,4 +2639,66 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Giải thích của AI dựa trên tin tức hôm nay tìm thấy trên web; lý do thực sự có thể chưa rõ hoặc khác. Không phải lời khuyên đầu tư. Dùng hạn mức câu hỏi hằng ngày của bạn, không phải phân tích.';
+
+  @override
+  String get sectionTechnical => 'Bức tranh kỹ thuật';
+
+  @override
+  String get labelSma50 => 'Trung bình 50 ngày';
+
+  @override
+  String get labelSma200 => 'Trung bình 200 ngày';
+
+  @override
+  String get labelRsi => 'RSI (14 ngày)';
+
+  @override
+  String get labelVolatility30 => 'Biến động (30 ngày)';
+
+  @override
+  String techAbove(String percent) {
+    return 'cao hơn $percent';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return 'thấp hơn $percent';
+  }
+
+  @override
+  String get techOverbought => 'quá mua';
+
+  @override
+  String get techOversold => 'quá bán';
+
+  @override
+  String get techNeutral => 'trung lập';
+
+  @override
+  String get techGoldenCross =>
+      'Trung bình 50 ngày nằm trên trung bình 200 ngày – xu hướng tăng theo cách đọc cổ điển.';
+
+  @override
+  String get techDeathCross =>
+      'Trung bình 50 ngày nằm dưới trung bình 200 ngày – xu hướng giảm theo cách đọc cổ điển.';
+
+  @override
+  String get glossSma50 =>
+      'Giá đóng cửa trung bình của 50 phiên giao dịch gần nhất. Giá nằm trên đường này thường được xem là sức mạnh ngắn hạn, nằm dưới là sự suy yếu.';
+
+  @override
+  String get glossSma200 =>
+      'Giá đóng cửa trung bình của 200 phiên giao dịch gần nhất – đường xu hướng dài hạn cổ điển. Nhiều nhà đầu tư coi giá nằm trên đường này là xu hướng tăng dài hạn.';
+
+  @override
+  String get glossRsi =>
+      'Chỉ số sức mạnh tương đối: so sánh mức tăng gần đây với mức giảm gần đây trên thang 0–100. Trên 70 cổ phiếu thường được gọi là quá mua (tăng nhanh), dưới 30 là quá bán – nhưng một xu hướng mạnh có thể duy trì ở đó rất lâu.';
+
+  @override
+  String get glossVolatility =>
+      'Mức độ giá dao động từ ngày này sang ngày khác, quy ra một năm: 20% nghĩa là trong một năm thông thường giá dao động trong khoảng ±20%. Biến động càng cao thì biên độ dao động hai chiều càng lớn.';
+
+  @override
+  String get techNote =>
+      'Tính từ giá đóng cửa hàng ngày. Tín hiệu kỹ thuật mô tả quá khứ, không phải tương lai.';
 }

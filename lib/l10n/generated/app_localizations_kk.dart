@@ -2647,4 +2647,66 @@ class AppLocalizationsKk extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Интернеттен табылған бүгінгі жаңалықтар негізіндегі ЖИ түсіндірмесі; шынайы себеп белгісіз немесе басқа болуы мүмкін. Инвестициялық кеңес емес. Күнделікті сұрақ лимитіңізді пайдаланады, талдауды емес.';
+
+  @override
+  String get sectionTechnical => 'Техникалық көрініс';
+
+  @override
+  String get labelSma50 => '50 күндік орташа';
+
+  @override
+  String get labelSma200 => '200 күндік орташа';
+
+  @override
+  String get labelRsi => 'RSI (14 күн)';
+
+  @override
+  String get labelVolatility30 => 'Құбылмалылық (30 күн)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent жоғары';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent төмен';
+  }
+
+  @override
+  String get techOverbought => 'шамадан тыс сатып алынған';
+
+  @override
+  String get techOversold => 'шамадан тыс сатылған';
+
+  @override
+  String get techNeutral => 'бейтарап';
+
+  @override
+  String get techGoldenCross =>
+      '50 күндік орташа 200 күндік орташадан жоғары – классикалық түсіндірме бойынша өсу тренді.';
+
+  @override
+  String get techDeathCross =>
+      '50 күндік орташа 200 күндік орташадан төмен – классикалық түсіндірме бойынша төмендеу тренді.';
+
+  @override
+  String get glossSma50 =>
+      'Соңғы 50 сауда күнінің орташа жабылу бағасы. Одан жоғары баға көбінесе қысқа мерзімді күш, төмен баға әлсіздік деп оқылады.';
+
+  @override
+  String get glossSma200 =>
+      'Соңғы 200 сауда күнінің орташа жабылу бағасы – классикалық ұзақ мерзімді тренд сызығы. Көп инвестор одан жоғары бағаны ұзақ мерзімді өсу тренді деп санайды.';
+
+  @override
+  String get glossRsi =>
+      'Салыстырмалы күш индексі: соңғы өсімдерді соңғы шығындармен 0–100 шкаласында салыстырады. 70-тен жоғары болса, акцияны көбінесе шамадан тыс сатып алынған (тез өсті), 30-дан төмен болса шамадан тыс сатылған дейді – бірақ күшті тренд сол жерде ұзақ қала алады.';
+
+  @override
+  String get glossVolatility =>
+      'Бағаның күннен күнге қалай ауытқуы, жылдық есепте: 20% дегеніміз қалыпты жылда баға шамамен ±20% аралығында қозғалады. Жоғары құбылмалылық – екі бағытта да үлкен қозғалыс.';
+
+  @override
+  String get techNote =>
+      'Күнделікті жабылу бағаларынан есептелген. Техникалық сигналдар өткенді сипаттайды, болашақты емес.';
 }

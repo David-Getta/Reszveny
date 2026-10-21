@@ -795,6 +795,17 @@ void main() {
     await _shot(tester, 'move_why_phone_hu');
   });
 
+  testWidgets('technical picture on a phone (hungarian)', (tester) async {
+    await pumpApp(tester, _services(locale: const Locale('hu')), const Size(430, 1000));
+    await tester.enterText(find.byType(TextField).first, 'AAPL');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    final card = find.byKey(const ValueKey('technical-card'));
+    await tester.scrollUntilVisible(card, 300, scrollable: find.byType(Scrollable).first);
+    await tester.pumpAndSettle();
+    await _shot(tester, 'technical_phone_hu');
+  });
+
   testWidgets('dividends received on a phone (hungarian)', (tester) async {
     final portfolio = _samplePortfolio();
     await portfolio.addDividend(symbol: 'AAPL', amount: 4.68, currency: 'USD', date: DateTime(2026, 8, 14));

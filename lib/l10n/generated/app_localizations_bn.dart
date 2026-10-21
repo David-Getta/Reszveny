@@ -2645,4 +2645,66 @@ class AppLocalizationsBn extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'ওয়েবে পাওয়া আজকের খবরের ভিত্তিতে AI ব্যাখ্যা; আসল কারণ অজানা বা ভিন্ন হতে পারে। বিনিয়োগ পরামর্শ নয়। আপনার দৈনিক প্রশ্নের কোটা ব্যবহার করে, বিশ্লেষণ নয়।';
+
+  @override
+  String get sectionTechnical => 'টেকনিক্যাল চিত্র';
+
+  @override
+  String get labelSma50 => '৫০ দিনের গড়';
+
+  @override
+  String get labelSma200 => '২০০ দিনের গড়';
+
+  @override
+  String get labelRsi => 'RSI (১৪ দিন)';
+
+  @override
+  String get labelVolatility30 => 'অস্থিরতা (৩০ দিন)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent উপরে';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent নিচে';
+  }
+
+  @override
+  String get techOverbought => 'ওভারবট';
+
+  @override
+  String get techOversold => 'ওভারসোল্ড';
+
+  @override
+  String get techNeutral => 'নিরপেক্ষ';
+
+  @override
+  String get techGoldenCross =>
+      '৫০ দিনের গড় ২০০ দিনের গড়ের উপরে – প্রচলিত ব্যাখ্যায় ঊর্ধ্বমুখী প্রবণতা।';
+
+  @override
+  String get techDeathCross =>
+      '৫০ দিনের গড় ২০০ দিনের গড়ের নিচে – প্রচলিত ব্যাখ্যায় নিম্নমুখী প্রবণতা।';
+
+  @override
+  String get glossSma50 =>
+      'শেষ ৫০ ট্রেডিং দিনের গড় ক্লোজিং দাম। এর উপরের দামকে প্রায়ই স্বল্পমেয়াদি শক্তি, নিচের দামকে দুর্বলতা হিসেবে ধরা হয়।';
+
+  @override
+  String get glossSma200 =>
+      'শেষ ২০০ ট্রেডিং দিনের গড় ক্লোজিং দাম – প্রচলিত দীর্ঘমেয়াদি ট্রেন্ড লাইন। অনেক বিনিয়োগকারী এর উপরের দামকে দীর্ঘমেয়াদি ঊর্ধ্বমুখী প্রবণতা মনে করেন।';
+
+  @override
+  String get glossRsi =>
+      'রিলেটিভ স্ট্রেংথ ইনডেক্স: সাম্প্রতিক লাভকে সাম্প্রতিক ক্ষতির সঙ্গে ০–১০০ স্কেলে তুলনা করে। ৭০-এর উপরে শেয়ারটিকে প্রায়ই ওভারবট (দ্রুত বেড়েছে), ৩০-এর নিচে ওভারসোল্ড বলা হয় – তবে শক্তিশালী ট্রেন্ড সেখানে দীর্ঘ সময় থাকতে পারে।';
+
+  @override
+  String get glossVolatility =>
+      'দাম দিনে দিনে কতটা ওঠানামা করে, বছরের হিসাবে: ২০% মানে সাধারণ বছরে দাম প্রায় ±২০%-এর মধ্যে চলে। বেশি অস্থিরতা মানে দুই দিকেই বড় ওঠানামা।';
+
+  @override
+  String get techNote =>
+      'দৈনিক ক্লোজিং দাম থেকে হিসাব করা। টেকনিক্যাল সংকেত অতীতের বর্ণনা দেয়, ভবিষ্যতের নয়।';
 }

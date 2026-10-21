@@ -2651,4 +2651,66 @@ class AppLocalizationsSn extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Tsananguro ye-AI kubva munhau dzanhasi dzakawanikwa pawebhu; chikonzero chaicho chinogona kusazivikanwa kana kusiyana. Hazvisi zano rekudyara mari. Zvinoshandisa mibvunzo yako yezuva, kwete ongororo.';
+
+  @override
+  String get sectionTechnical => 'Mufananidzo wetekiniki';
+
+  @override
+  String get labelSma50 => 'Avhareji yemazuva 50';
+
+  @override
+  String get labelSma200 => 'Avhareji yemazuva 200';
+
+  @override
+  String get labelRsi => 'RSI (mazuva 14)';
+
+  @override
+  String get labelVolatility30 => 'Kuchinja-chinja (mazuva 30)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent pamusoro';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent pasi';
+  }
+
+  @override
+  String get techOverbought => 'yatengwa zvakanyanya';
+
+  @override
+  String get techOversold => 'yatengeswa zvakanyanya';
+
+  @override
+  String get techNeutral => 'pakati';
+
+  @override
+  String get techGoldenCross =>
+      'Avhareji yemazuva 50 iri pamusoro peavhareji yemazuva 200 – kukwira maererano nekuverenga kwechinyakare.';
+
+  @override
+  String get techDeathCross =>
+      'Avhareji yemazuva 50 iri pasi peavhareji yemazuva 200 – kudzika maererano nekuverenga kwechinyakare.';
+
+  @override
+  String get glossSma50 =>
+      'Avhareji yemutengo wekuvhara wemazuva 50 ekupedzisira ekutengeserana. Mutengo uri pamusoro payo kazhinji unoonekwa sesimba renguva pfupi, uri pasi sekushaya simba.';
+
+  @override
+  String get glossSma200 =>
+      'Avhareji yemutengo wekuvhara wemazuva 200 ekupedzisira ekutengeserana – mutsetse wechinyakare wenzira yenguva refu. Vazhinji vanoisa mari vanoona mutengo uri pamusoro payo sekukwira kwenguva refu.';
+
+  @override
+  String get glossRsi =>
+      'Chiyero chesimba rinoenzaniswa (RSI): chinoenzanisa mibairo yenguva pfupi yapfuura nekurasikirwa kwenguva pfupi yapfuura pachiyero che0–100. Pamusoro pe70 sheya kazhinji inonzi yatengwa zvakanyanya (yakwira nekukurumidza), pasi pe30 yatengeswa zvakanyanya – asi nzira yakasimba inogona kugara ipapo kwenguva refu.';
+
+  @override
+  String get glossVolatility =>
+      'Kuti mutengo unochinja zvakadini zuva nezuva, zvichiyerwa pagore: 20% zvinoreva kuti gore rakajairika rinofamba mukati meanenge ±20%. Kuchinja-chinja kwakakwirira kunoreva kufamba kukuru kumativi ose ari maviri.';
+
+  @override
+  String get techNote =>
+      'Zvakaverengwa kubva pamitengo yekuvhara yezuva nezuva. Zviratidzo zvetekiniki zvinotsanangura zvakapfuura, kwete zvinouya.';
 }

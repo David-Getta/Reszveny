@@ -2653,4 +2653,66 @@ class AppLocalizationsSq extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Shpjegim nga IA bazuar në lajmet e sotme të gjetura në internet; arsyeja e vërtetë mund të jetë e panjohur ose e ndryshme. Nuk është këshillë investimi. Përdor kuotën tuaj ditore të pyetjeve, jo një analizë.';
+
+  @override
+  String get sectionTechnical => 'Pamja teknike';
+
+  @override
+  String get labelSma50 => 'Mesatarja 50-ditore';
+
+  @override
+  String get labelSma200 => 'Mesatarja 200-ditore';
+
+  @override
+  String get labelRsi => 'RSI (14 ditë)';
+
+  @override
+  String get labelVolatility30 => 'Volatiliteti (30 ditë)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent mbi';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent nën';
+  }
+
+  @override
+  String get techOverbought => 'e mbiblerë';
+
+  @override
+  String get techOversold => 'e mbishitur';
+
+  @override
+  String get techNeutral => 'neutrale';
+
+  @override
+  String get techGoldenCross =>
+      'Mesatarja 50-ditore është mbi mesataren 200-ditore – trend rritës sipas leximit klasik.';
+
+  @override
+  String get techDeathCross =>
+      'Mesatarja 50-ditore është nën mesataren 200-ditore – trend zbritës sipas leximit klasik.';
+
+  @override
+  String get glossSma50 =>
+      'Çmimi mesatar i mbylljes i 50 ditëve të fundit të tregtimit. Çmimi mbi të shpesh lexohet si forcë afatshkurtër, nën të si dobësi.';
+
+  @override
+  String get glossSma200 =>
+      'Çmimi mesatar i mbylljes i 200 ditëve të fundit të tregtimit – linja klasike e trendit afatgjatë. Shumë investitorë e trajtojnë çmimin mbi të si trend rritës afatgjatë.';
+
+  @override
+  String get glossRsi =>
+      'Indeksi i forcës relative: krahason fitimet e fundit me humbjet e fundit në një shkallë 0–100. Mbi 70 aksioni shpesh quhet i mbiblerë (u rrit shpejt), nën 30 i mbishitur – por një trend i fortë mund të qëndrojë aty për një kohë të gjatë.';
+
+  @override
+  String get glossVolatility =>
+      'Sa shumë lëkundet çmimi nga dita në ditë, shkallëzuar për një vit: 20% do të thotë që një vit tipik lëviz brenda afërsisht ±20%. Volatilitet më i lartë do të thotë lëvizje më të mëdha në të dyja drejtimet.';
+
+  @override
+  String get techNote =>
+      'Llogaritur nga çmimet ditore të mbylljes. Sinjalet teknike përshkruajnë të kaluarën, jo të ardhmen.';
 }

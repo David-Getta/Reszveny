@@ -2567,4 +2567,62 @@ class AppLocalizationsJa extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'ウェブ上の本日のニュースに基づくAIの説明です。実際の理由は不明または異なる場合があります。投資助言ではありません。分析ではなく、1日の質問回数を消費します。';
+
+  @override
+  String get sectionTechnical => 'テクニカル分析';
+
+  @override
+  String get labelSma50 => '50日移動平均';
+
+  @override
+  String get labelSma200 => '200日移動平均';
+
+  @override
+  String get labelRsi => 'RSI（14日）';
+
+  @override
+  String get labelVolatility30 => 'ボラティリティ（30日）';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent 上';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent 下';
+  }
+
+  @override
+  String get techOverbought => '買われ過ぎ';
+
+  @override
+  String get techOversold => '売られ過ぎ';
+
+  @override
+  String get techNeutral => '中立';
+
+  @override
+  String get techGoldenCross => '50日移動平均が200日移動平均を上回っています – 古典的な読み方では上昇トレンドです。';
+
+  @override
+  String get techDeathCross => '50日移動平均が200日移動平均を下回っています – 古典的な読み方では下降トレンドです。';
+
+  @override
+  String get glossSma50 => '直近50営業日の終値の平均。株価がこれより上なら短期的な強さ、下なら弱さと読まれることが多いです。';
+
+  @override
+  String get glossSma200 =>
+      '直近200営業日の終値の平均 – 古典的な長期トレンドライン。多くの投資家は、株価がこれより上なら長期の上昇トレンドと見ます。';
+
+  @override
+  String get glossRsi =>
+      '相対力指数：最近の上昇幅と下落幅を0～100の尺度で比べます。70を超えると買われ過ぎ（急騰した）、30を下回ると売られ過ぎと呼ばれることが多いですが、強いトレンドでは長くその状態が続くこともあります。';
+
+  @override
+  String get glossVolatility =>
+      '株価が日々どれだけ振れるかを年率換算したもの：20%なら、通常の1年でおよそ±20%の範囲で動くことを意味します。ボラティリティが高いほど、上下どちらにも大きく動きます。';
+
+  @override
+  String get techNote => '日々の終値から算出。テクニカル指標は過去を表すもので、将来を示すものではありません。';
 }

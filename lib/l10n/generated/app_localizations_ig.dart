@@ -2641,4 +2641,66 @@ class AppLocalizationsIg extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Nkọwa AI sitere n\'akụkọ taa a chọtara na weebụ; ezigbo ihe kpatara ya nwere ike bụrụ ihe a na-amaghị ma ọ bụ dị iche. Ọ bụghị ndụmọdụ itinye ego. Ọ na-eji oke ajụjụ gị kwa ụbọchị, ọ bụghị nyocha.';
+
+  @override
+  String get sectionTechnical => 'Ihe onyonyo teknikal';
+
+  @override
+  String get labelSma50 => 'Nkezi ụbọchị 50';
+
+  @override
+  String get labelSma200 => 'Nkezi ụbọchị 200';
+
+  @override
+  String get labelRsi => 'RSI (ụbọchị 14)';
+
+  @override
+  String get labelVolatility30 => 'Mgbanwe ọnụahịa (ụbọchị 30)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent n\'elu';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent n\'okpuru';
+  }
+
+  @override
+  String get techOverbought => 'azụrụ ya karịa';
+
+  @override
+  String get techOversold => 'erela ya karịa';
+
+  @override
+  String get techNeutral => 'n\'etiti';
+
+  @override
+  String get techGoldenCross =>
+      'Nkezi ụbọchị 50 dị n\'elu nkezi ụbọchị 200 – dị ka nkọwa ochie si dị, ọ bụ ụzọ ịrị elu.';
+
+  @override
+  String get techDeathCross =>
+      'Nkezi ụbọchị 50 dị n\'okpuru nkezi ụbọchị 200 – dị ka nkọwa ochie si dị, ọ bụ ụzọ ịda ala.';
+
+  @override
+  String get glossSma50 =>
+      'Nkezi ọnụahịa mmechi nke ụbọchị ahịa 50 gara aga. A na-ahụkarị ọnụahịa dị n\'elu ya dị ka ike nwa oge, nke dị n\'okpuru ya dị ka adịghị ike.';
+
+  @override
+  String get glossSma200 =>
+      'Nkezi ọnụahịa mmechi nke ụbọchị ahịa 200 gara aga – ahịrị ụzọ ogologo oge nke ochie. Ọtụtụ ndị na-etinye ego na-ewere ọnụahịa dị n\'elu ya dị ka ụzọ ịrị elu ogologo oge.';
+
+  @override
+  String get glossRsi =>
+      'Ngosi ike mmekọrịta (RSI): ọ na-atụnyere uru nso nso a na mfu nso nso a n\'ihe ọtụtụ 0–100. N\'elu 70 a na-akpọkarị stock ahụ azụrụ ya karịa (o riri elu ngwa ngwa), n\'okpuru 30 erela ya karịa – mana ụzọ siri ike nwere ike ịnọ ebe ahụ ogologo oge.';
+
+  @override
+  String get glossVolatility =>
+      'Otú ọnụahịa si agbanwe kwa ụbọchị, gbakọọ n\'otu afọ: 20% pụtara na n\'afọ nkịtị ọnụahịa na-agagharị n\'ime ihe dị ka ±20%. Mgbanwe dị elu pụtara mmegharị ka ukwuu n\'akụkụ abụọ.';
+
+  @override
+  String get techNote =>
+      'Agbakọrọ ya site na ọnụahịa mmechi kwa ụbọchị. Akara teknikal na-akọwa ihe gara aga, ọ bụghị ọdịnihu.';
 }

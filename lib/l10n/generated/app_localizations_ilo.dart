@@ -2665,4 +2665,66 @@ class AppLocalizationsIlo extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Panangilawlawag ti AI manipud kadagiti damag ita nga nasarakan iti web; mabalin a saan a maammuan wenno sabali ti pudno a rason. Saan a balakad iti panagpuonan. Us-usarenna ti inaldaw a kuota ti saludsodmo, saan nga analisis.';
+
+  @override
+  String get sectionTechnical => 'Teknikal a ladawan';
+
+  @override
+  String get labelSma50 => 'Average ti 50 nga aldaw';
+
+  @override
+  String get labelSma200 => 'Average ti 200 nga aldaw';
+
+  @override
+  String get labelRsi => 'RSI (14 nga aldaw)';
+
+  @override
+  String get labelVolatility30 => 'Volatility (30 nga aldaw)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent iti ngato';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent iti baba';
+  }
+
+  @override
+  String get techOverbought => 'overbought';
+
+  @override
+  String get techOversold => 'oversold';
+
+  @override
+  String get techNeutral => 'neutral';
+
+  @override
+  String get techGoldenCross =>
+      'Ti average ti 50 nga aldaw ket adda iti ngato ti average ti 200 nga aldaw – pangato a tendensia sigun iti klasiko a panagbasa.';
+
+  @override
+  String get techDeathCross =>
+      'Ti average ti 50 nga aldaw ket adda iti baba ti average ti 200 nga aldaw – pababa a tendensia sigun iti klasiko a panagbasa.';
+
+  @override
+  String get glossSma50 =>
+      'Ti average a closing price iti napalabas a 50 nga aldaw ti panagtagilako. Ti presio a nangatngato ngem daytoy ket masansan a mabasa kas kinapigsa iti ababa a panawen, ti nababbaba kas kinakapuy.';
+
+  @override
+  String get glossSma200 =>
+      'Ti average a closing price iti napalabas a 200 nga aldaw ti panagtagilako – ti klasiko a linia ti tendensia iti atiddog a panawen. Adu nga investor ti mangibilang iti presio a nangatngato ngem daytoy kas pangato a tendensia iti atiddog a panawen.';
+
+  @override
+  String get glossRsi =>
+      'Relative strength index: idiligna dagiti kabbaro a ganansia kadagiti kabbaro a pukaw iti rukod a 0–100. Iti ngato ti 70 masansan a maawagan ti stock nga overbought (napartak a nangato), iti baba ti 30 oversold – ngem ti napigsa a tendensia mabalin nga agtalinaed sadiay iti nabayag.';
+
+  @override
+  String get glossVolatility =>
+      'Kasano ti kadakkel ti panagbaliw ti presio iti inaldaw, narukod iti maysa a tawen: ti 20% kayatna a sawen nga iti gagangay a tawen aggaraw ti presio iti uneg ti agarup ±20%. Nangatngato a volatility kayatna a sawen dakdakkel a garaw iti dua a direksion.';
+
+  @override
+  String get techNote =>
+      'Nakwenta manipud kadagiti inaldaw a closing price. Dagiti teknikal a senial deskribirenda ti napalabas, saan a ti masakbayan.';
 }

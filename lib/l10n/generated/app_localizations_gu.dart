@@ -2641,4 +2641,66 @@ class AppLocalizationsGu extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'વેબ પર મળેલા આજના સમાચારના આધારે AI સમજૂતી; ખરું કારણ અજાણ્યું કે અલગ હોઈ શકે છે. રોકાણની સલાહ નથી. તમારો દૈનિક પ્રશ્ન કોટા વાપરે છે, વિશ્લેષણ નહીં.';
+
+  @override
+  String get sectionTechnical => 'ટેકનિકલ ચિત્ર';
+
+  @override
+  String get labelSma50 => '50 દિવસની સરેરાશ';
+
+  @override
+  String get labelSma200 => '200 દિવસની સરેરાશ';
+
+  @override
+  String get labelRsi => 'RSI (14 દિવસ)';
+
+  @override
+  String get labelVolatility30 => 'વોલેટિલિટી (30 દિવસ)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent ઉપર';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent નીચે';
+  }
+
+  @override
+  String get techOverbought => 'ઓવરબૉટ';
+
+  @override
+  String get techOversold => 'ઓવરસોલ્ડ';
+
+  @override
+  String get techNeutral => 'તટસ્થ';
+
+  @override
+  String get techGoldenCross =>
+      '50 દિવસની સરેરાશ 200 દિવસની સરેરાશથી ઉપર છે – પરંપરાગત વાંચન મુજબ અપટ્રેન્ડ.';
+
+  @override
+  String get techDeathCross =>
+      '50 દિવસની સરેરાશ 200 દિવસની સરેરાશથી નીચે છે – પરંપરાગત વાંચન મુજબ ડાઉનટ્રેન્ડ.';
+
+  @override
+  String get glossSma50 =>
+      'છેલ્લા 50 ટ્રેડિંગ દિવસોનો સરેરાશ બંધ ભાવ. તેનાથી ઉપરનો ભાવ ઘણીવાર ટૂંકા ગાળાની મજબૂતી, નીચેનો ભાવ નબળાઈ તરીકે વાંચવામાં આવે છે.';
+
+  @override
+  String get glossSma200 =>
+      'છેલ્લા 200 ટ્રેડિંગ દિવસોનો સરેરાશ બંધ ભાવ – પરંપરાગત લાંબા ગાળાની ટ્રેન્ડ લાઇન. ઘણા રોકાણકારો તેનાથી ઉપરના ભાવને લાંબા ગાળાનો અપટ્રેન્ડ માને છે.';
+
+  @override
+  String get glossRsi =>
+      'રિલેટિવ સ્ટ્રેન્થ ઇન્ડેક્સ: હાલના નફાને હાલના નુકસાન સાથે 0–100ના સ્કેલ પર સરખાવે છે. 70થી ઉપર શેરને ઘણીવાર ઓવરબૉટ (ઝડપથી વધ્યો) અને 30થી નીચે ઓવરસોલ્ડ કહેવાય છે – પણ મજબૂત ટ્રેન્ડ ત્યાં લાંબો સમય રહી શકે છે.';
+
+  @override
+  String get glossVolatility =>
+      'ભાવ દિવસે-દિવસે કેટલો ઉપર-નીચે થાય છે, વાર્ષિક ધોરણે: 20% એટલે સામાન્ય વર્ષમાં ભાવ લગભગ ±20%ની અંદર ફરે છે. વધુ વોલેટિલિટી એટલે બંને દિશામાં મોટી ચાલ.';
+
+  @override
+  String get techNote =>
+      'દૈનિક બંધ ભાવ પરથી ગણેલું. ટેકનિકલ સંકેતો ભૂતકાળ વર્ણવે છે, ભવિષ્ય નહીં.';
 }

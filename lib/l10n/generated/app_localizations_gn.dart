@@ -2651,4 +2651,66 @@ class AppLocalizationsGn extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'AI ñemyesakã ko árape marandu ojejuhúva ñandutípe; pe mbaʼére añetegua ikatu ndojekuaái térã iñambue. Ndahaʼéi ñemoñeʼẽ viru ñemoĩ rehegua. Oipuru nde porandu ára pukukue, ndahaʼéi jesareko.';
+
+  @override
+  String get sectionTechnical => 'Taʼanga tékniko';
+
+  @override
+  String get labelSma50 => '50 ára mbytepegua';
+
+  @override
+  String get labelSma200 => '200 ára mbytepegua';
+
+  @override
+  String get labelRsi => 'RSI (14 ára)';
+
+  @override
+  String get labelVolatility30 => 'Jeʼaʼaty (30 ára)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent hiʼári';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent iguýpe';
+  }
+
+  @override
+  String get techOverbought => 'ojejoguaitereíva';
+
+  @override
+  String get techOversold => 'oñemuitereíva';
+
+  @override
+  String get techNeutral => 'mbytépe';
+
+  @override
+  String get techGoldenCross =>
+      '50 ára mbytepegua oĩ 200 ára mbytepegua ári – ymaguare ñemoñeʼẽ rupi, ojupíva tape.';
+
+  @override
+  String get techDeathCross =>
+      '50 ára mbytepegua oĩ 200 ára mbytepegua guýpe – ymaguare ñemoñeʼẽ rupi, oguejýva tape.';
+
+  @override
+  String get glossSma50 =>
+      'Umi 50 ára ñemuha paha mboty repy mbytepegua. Repy oĩva hiʼári jepi oñemoñeʼẽ mbarete sapyʼaguáramo, iguýpe katu kangýramo.';
+
+  @override
+  String get glossSma200 =>
+      'Umi 200 ára ñemuha paha mboty repy mbytepegua – ymaguare tape puku raʼanga. Heta viru moĩhára ohecha repy oĩva hiʼári ojupíva tape pukúramo.';
+
+  @override
+  String get glossRsi =>
+      'Mbarete ñembojoja rechaukaha (RSI): ombojoja umi jehupyty ramoguare umi jehasa asy ramoguare ndive 0–100 jehaʼãmbýpe. 70 ári jepi heʼi ojejoguaitereí hague pe asión (ojupi pyaʼe), 30 guýpe oñemuitereí – ha katu peteĩ tape imbaretéva ikatu opyta upépe are.';
+
+  @override
+  String get glossVolatility =>
+      'Mbaʼeichaitépa pe repy oñembojaʼaʼa ára ha ára, oñembojoja peteĩ arýpe: 20% heʼise peteĩ ary jepigua oku\'e ±20% rupi. Jeʼaʼaty tuichavéva heʼise ku\'e tuichavéva mokõive hendápe.';
+
+  @override
+  String get techNote =>
+      'Ojepapa ára ha ára mboty repýgui. Umi techaukaha tékniko omombeʼu yma guare, ndahaʼéi tenonderã.';
 }

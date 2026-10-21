@@ -2646,4 +2646,66 @@ class AppLocalizationsPcm extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'AI explanation from today news wey we find online; the real reason fit no dey known or fit different. E no be investment advice. E dey use your daily question allowance, no be analysis.';
+
+  @override
+  String get sectionTechnical => 'Technical picture';
+
+  @override
+  String get labelSma50 => '50-day average';
+
+  @override
+  String get labelSma200 => '200-day average';
+
+  @override
+  String get labelRsi => 'RSI (14 days)';
+
+  @override
+  String get labelVolatility30 => 'Volatility (30 days)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent above';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent below';
+  }
+
+  @override
+  String get techOverbought => 'overbought';
+
+  @override
+  String get techOversold => 'oversold';
+
+  @override
+  String get techNeutral => 'neutral';
+
+  @override
+  String get techGoldenCross =>
+      'Di 50-day average dey above di 200-day average – na uptrend, as di old-school reading go talk.';
+
+  @override
+  String get techDeathCross =>
+      'Di 50-day average dey below di 200-day average – na downtrend, as di old-school reading go talk.';
+
+  @override
+  String get glossSma50 =>
+      'Di average closing price for di last 50 trading days. If price dey above am, people dey take am as short-term strength; if e dey below, as weakness.';
+
+  @override
+  String get glossSma200 =>
+      'Di average closing price for di last 200 trading days – di classic long-term trend line. Plenty investors dey take price wey dey above am as long-term uptrend.';
+
+  @override
+  String get glossRsi =>
+      'Relative strength index: e compare recent gains with recent losses on 0–100 scale. Above 70 dem dey call di stock overbought (e rise too fast), below 30 oversold – but strong trend fit stay there for long time.';
+
+  @override
+  String get glossVolatility =>
+      'How much di price dey swing from day to day, measured for one year: 20% mean say normal year dey move inside about ±20%. Higher volatility mean bigger moves for both sides.';
+
+  @override
+  String get techNote =>
+      'We calculate am from daily closing prices. Technical signals dey talk about wetin don happen, no be wetin go happen.';
 }

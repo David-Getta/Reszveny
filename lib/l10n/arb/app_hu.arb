@@ -701,5 +701,22 @@
   "awayReported": "Gyorsjelentést adott: {symbols}",
   "moveWhyButton": "Miért mozog ma?",
   "moveWhyTitle": "{percent} ma",
-  "moveWhyNote": "AI-magyarázat a weben talált mai hírekből; a valódi ok ismeretlen vagy más is lehet. Nem befektetési tanács. A napi kérdéskeretből fogyaszt, nem elemzést."
+  "moveWhyNote": "AI-magyarázat a weben talált mai hírekből; a valódi ok ismeretlen vagy más is lehet. Nem befektetési tanács. A napi kérdéskeretből fogyaszt, nem elemzést.",
+  "sectionTechnical": "Technikai kép",
+  "labelSma50": "50 napos átlag",
+  "labelSma200": "200 napos átlag",
+  "labelRsi": "RSI (14 nap)",
+  "labelVolatility30": "Volatilitás (30 nap)",
+  "techAbove": "{percent} felette",
+  "techBelow": "{percent} alatta",
+  "techOverbought": "túlvett",
+  "techOversold": "túladott",
+  "techNeutral": "semleges",
+  "techGoldenCross": "Az 50 napos átlag a 200 napos felett jár – a klasszikus olvasat szerint emelkedő trend.",
+  "techDeathCross": "Az 50 napos átlag a 200 napos alatt jár – a klasszikus olvasat szerint csökkenő trend.",
+  "glossSma50": "Az utolsó 50 kereskedési nap záróárainak átlaga. Ha az ár felette van, azt gyakran rövid távú erőként olvassák, ha alatta, gyengeségként.",
+  "glossSma200": "Az utolsó 200 kereskedési nap záróárainak átlaga – a klasszikus hosszú távú trendvonal. Sok befektető a felette járó árat hosszú távú emelkedő trendnek tekinti.",
+  "glossRsi": "Relatív erő index: a közelmúlt emelkedéseit veti össze az eséseivel egy 0–100-as skálán. 70 felett gyakran túlvettnek mondják (gyorsan emelkedett), 30 alatt túladottnak – de egy erős trendben sokáig ott maradhat.",
+  "glossVolatility": "Mennyit ingadozik az ár napról napra, egy évre vetítve: 20% azt jelenti, hogy egy tipikus év nagyjából ±20%-on belül mozog. A nagyobb volatilitás nagyobb kilengéseket jelent mindkét irányba.",
+  "techNote": "A napi záróárakból számolva. A technikai jelzések a múltat írják le, nem a jövőt."
 }

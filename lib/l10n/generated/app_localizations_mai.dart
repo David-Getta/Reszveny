@@ -2640,4 +2640,66 @@ class AppLocalizationsMai extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'वेब पर भेटल आइक खबरसँ AI द्वारा देल व्याख्या; असली कारण अज्ञात वा भिन्न भऽ सकैत अछि। निवेश सलाह नहि। अहाँक दैनिक प्रश्न कोटा उपयोग करैत अछि, विश्लेषण नहि।';
+
+  @override
+  String get sectionTechnical => 'तकनीकी चित्र';
+
+  @override
+  String get labelSma50 => '50 दिनक औसत';
+
+  @override
+  String get labelSma200 => '200 दिनक औसत';
+
+  @override
+  String get labelRsi => 'RSI (14 दिन)';
+
+  @override
+  String get labelVolatility30 => 'उतार-चढ़ाव (30 दिन)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent ऊपर';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent नीचाँ';
+  }
+
+  @override
+  String get techOverbought => 'ओवरबॉट';
+
+  @override
+  String get techOversold => 'ओवरसोल्ड';
+
+  @override
+  String get techNeutral => 'तटस्थ';
+
+  @override
+  String get techGoldenCross =>
+      '50 दिनक औसत 200 दिनक औसतसँ ऊपर अछि – पारंपरिक व्याख्याक अनुसार ऊपर जाइत प्रवृत्ति।';
+
+  @override
+  String get techDeathCross =>
+      '50 दिनक औसत 200 दिनक औसतसँ नीचाँ अछि – पारंपरिक व्याख्याक अनुसार नीचाँ जाइत प्रवृत्ति।';
+
+  @override
+  String get glossSma50 =>
+      'पछिला 50 कारोबारी दिनक औसत बंद भाव। एहिसँ ऊपरक भावकेँ प्रायः अल्पकालिक मजगूती, नीचाँक भावकेँ कमजोरी मानल जाइत अछि।';
+
+  @override
+  String get glossSma200 =>
+      'पछिला 200 कारोबारी दिनक औसत बंद भाव – पारंपरिक दीर्घकालिक प्रवृत्ति रेखा। बहुत निवेशक एहिसँ ऊपरक भावकेँ दीर्घकालिक ऊपर जाइत प्रवृत्ति मानैत छथि।';
+
+  @override
+  String get glossRsi =>
+      'रिलेटिव स्ट्रेंथ इंडेक्स: हालक लाभकेँ हालक घाटासँ 0–100 क पैमाना पर तुलना करैत अछि। 70 सँ ऊपर शेयरकेँ प्रायः ओवरबॉट (तेजीसँ बढ़ल) आ 30 सँ नीचाँ ओवरसोल्ड कहल जाइत अछि – मुदा मजगूत प्रवृत्ति ओतए बहुत दिन धरि रहि सकैत अछि।';
+
+  @override
+  String get glossVolatility =>
+      'भाव रोज कतेक ऊपर-नीचाँ होइत अछि, सालक हिसाबसँ: 20% क अर्थ जे सामान्य सालमे भाव लगभग ±20% क भीतर चलैत अछि। बेसी उतार-चढ़ावक अर्थ दुनू दिस पैघ चाल।';
+
+  @override
+  String get techNote =>
+      'दैनिक बंद भावसँ गणना कएल गेल। तकनीकी संकेत बीतल समय बतबैत अछि, भविष्य नहि।';
 }

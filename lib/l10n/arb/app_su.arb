@@ -701,5 +701,22 @@
   "awayReported": "Hasil anu dilaporkeun: {symbols}",
   "moveWhyButton": "Naha dinten ieu obah?",
   "moveWhyTitle": "{percent} dinten ieu",
-  "moveWhyNote": "Katerangan AI dumasar warta dinten ieu anu kapendak di wéb; alesan saleresna tiasa teu dipikanyaho atanapi béda. Sanés naséhat investasi. Ngagunakeun kuota patarosan harian anjeun, sanés analisis."
+  "moveWhyNote": "Katerangan AI dumasar warta dinten ieu anu kapendak di wéb; alesan saleresna tiasa teu dipikanyaho atanapi béda. Sanés naséhat investasi. Ngagunakeun kuota patarosan harian anjeun, sanés analisis.",
+  "sectionTechnical": "Gambaran téknis",
+  "labelSma50": "Rata-rata 50 poé",
+  "labelSma200": "Rata-rata 200 poé",
+  "labelRsi": "RSI (14 poé)",
+  "labelVolatility30": "Volatilitas (30 poé)",
+  "techAbove": "{percent} di luhur",
+  "techBelow": "{percent} di handap",
+  "techOverbought": "kaleuwihan dibeuli",
+  "techOversold": "kaleuwihan dijual",
+  "techNeutral": "nétral",
+  "techGoldenCross": "Rata-rata 50 poé aya di luhureun rata-rata 200 poé – tren naék numutkeun bacaan klasik.",
+  "techDeathCross": "Rata-rata 50 poé aya di handapeun rata-rata 200 poé – tren turun numutkeun bacaan klasik.",
+  "glossSma50": "Rata-rata harga panutup 50 poé dagang panungtungan. Harga di luhureunana sering dibaca salaku kakuatan jangka pondok, di handapeunana salaku kalemahan.",
+  "glossSma200": "Rata-rata harga panutup 200 poé dagang panungtungan – garis tren jangka panjang anu klasik. Loba investor nganggap harga di luhureunana salaku tren naék jangka panjang.",
+  "glossRsi": "Indéks kakuatan rélatif: ngabandingkeun kauntungan anyar jeung karugian anyar dina skala 0–100. Di luhur 70 saham sering disebut kaleuwihan dibeuli (naék gancang), di handap 30 kaleuwihan dijual – tapi tren anu kuat bisa cicing di dinya lila.",
+  "glossVolatility": "Sakumaha gedé harga ngayun unggal poé, diskalakeun ka sataun: 20% hartina taun biasa gerak dina kurang leuwih ±20%. Volatilitas anu leuwih luhur hartina gerakan anu leuwih gedé ka dua arah.",
+  "techNote": "Diitung tina harga panutup poéan. Sinyal téknis ngagambarkeun jaman baheula, lain pikahareupeun."
 }

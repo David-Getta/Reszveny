@@ -701,5 +701,22 @@
   "awayReported": "Ibiharuro vyatangajwe: {symbols}",
   "moveWhyButton": "Ni kubera iki ihindagurika uyu musi?",
   "moveWhyTitle": "{percent} uyu musi",
-  "moveWhyNote": "Insiguro ya AI ishingiye ku makuru y'uyu musi yabonetse kuri internet; impamvu nyayo ishobora kuba itamenyekana canke itandukanye. Si impanuro yo gushora amafaranga. Ikoresha igitigiri c'ibibazo vyawe vya buri musi, atari isesengura."
+  "moveWhyNote": "Insiguro ya AI ishingiye ku makuru y'uyu musi yabonetse kuri internet; impamvu nyayo ishobora kuba itamenyekana canke itandukanye. Si impanuro yo gushora amafaranga. Ikoresha igitigiri c'ibibazo vyawe vya buri musi, atari isesengura.",
+  "sectionTechnical": "Ishusho ya tekinike",
+  "labelSma50": "Impuzandengo y'imisi 50",
+  "labelSma200": "Impuzandengo y'imisi 200",
+  "labelRsi": "RSI (imisi 14)",
+  "labelVolatility30": "Ihindagurika (imisi 30)",
+  "techAbove": "{percent} hejuru",
+  "techBelow": "{percent} munsi",
+  "techOverbought": "yaguzwe cane",
+  "techOversold": "yagurishijwe cane",
+  "techNeutral": "hagati",
+  "techGoldenCross": "Impuzandengo y'imisi 50 iri hejuru y'iy'imisi 200 – mu gusoma gusanzwe ni ukuduga.",
+  "techDeathCross": "Impuzandengo y'imisi 50 iri munsi y'iy'imisi 200 – mu gusoma gusanzwe ni ukumanuka.",
+  "glossSma50": "Impuzandengo y'igiciro co gusozera c'imisi 50 ya nyuma y'urudandaza. Igiciro kiri hejuru yayo akenshi gifatwa nk'inguvu z'igihe gito, kiri munsi nk'intege nke.",
+  "glossSma200": "Impuzandengo y'igiciro co gusozera c'imisi 200 ya nyuma y'urudandaza – umurongo usanzwe w'inzira y'igihe kirekire. Abashoramari benshi bafata igiciro kiri hejuru yayo nk'ukuduga kw'igihe kirekire.",
+  "glossRsi": "Igipimo c'inguvu zigereranijwe (RSI): kigereranya inyungu za vuba n'igihombo ca vuba ku rugero rwa 0–100. Hejuru ya 70 ishari akenshi ivugwa ko yaguzwe cane (yadugiye ningoga), munsi ya 30 ko yagurishijwe cane – ariko inzira ikomeye irashobora kuhaguma igihe kirekire.",
+  "glossVolatility": "Ukuntu igiciro gihindagurika umusi ku musi, gipimwe ku mwaka: 20% bisigura ko umwaka usanzwe ugenda hafi ya ±20%. Ihindagurika ryinshi risigura ingendo nini mu mpande zose uko ari zibiri.",
+  "techNote": "Vyaharuwe hakoreshejwe ibiciro vyo gusozera vya buri musi. Ibimenyetso vya tekinike bidondora ivyahise, atari ivyo mu kazoza."
 }

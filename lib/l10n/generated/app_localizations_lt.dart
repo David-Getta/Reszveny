@@ -2717,4 +2717,66 @@ class AppLocalizationsLt extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'DI paaiškinimas pagal šiandienos naujienas internete; tikroji priežastis gali būti nežinoma arba kitokia. Tai ne investavimo rekomendacija. Naudoja jūsų dienos klausimų limitą, ne analizę.';
+
+  @override
+  String get sectionTechnical => 'Techninis vaizdas';
+
+  @override
+  String get labelSma50 => '50 dienų vidurkis';
+
+  @override
+  String get labelSma200 => '200 dienų vidurkis';
+
+  @override
+  String get labelRsi => 'RSI (14 dienų)';
+
+  @override
+  String get labelVolatility30 => 'Kintamumas (30 dienų)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent aukščiau';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent žemiau';
+  }
+
+  @override
+  String get techOverbought => 'perpirkta';
+
+  @override
+  String get techOversold => 'perparduota';
+
+  @override
+  String get techNeutral => 'neutralu';
+
+  @override
+  String get techGoldenCross =>
+      '50 dienų vidurkis yra aukščiau 200 dienų vidurkio – pagal klasikinį aiškinimą, kylanti tendencija.';
+
+  @override
+  String get techDeathCross =>
+      '50 dienų vidurkis yra žemiau 200 dienų vidurkio – pagal klasikinį aiškinimą, krintanti tendencija.';
+
+  @override
+  String get glossSma50 =>
+      'Paskutinių 50 prekybos dienų vidutinė uždarymo kaina. Kaina virš jo dažnai laikoma trumpalaikio stiprumo, žemiau – silpnumo ženklu.';
+
+  @override
+  String get glossSma200 =>
+      'Paskutinių 200 prekybos dienų vidutinė uždarymo kaina – klasikinė ilgalaikės tendencijos linija. Daug investuotojų kainą virš jo laiko ilgalaike kylančia tendencija.';
+
+  @override
+  String get glossRsi =>
+      'Santykinio stiprumo indeksas: lygina pastarojo meto kilimus su pastarojo meto kritimais skalėje 0–100. Virš 70 akcija dažnai vadinama perpirkta (greitai pakilo), žemiau 30 – perparduota, tačiau stipri tendencija ten gali išlikti ilgai.';
+
+  @override
+  String get glossVolatility =>
+      'Kiek kaina svyruoja diena iš dienos, perskaičiuota metams: 20 % reiškia, kad įprastais metais kaina juda maždaug ±20 % ribose. Didesnis kintamumas reiškia didesnius judesius abiem kryptimis.';
+
+  @override
+  String get techNote =>
+      'Apskaičiuota pagal dienos uždarymo kainas. Techniniai signalai aprašo praeitį, ne ateitį.';
 }

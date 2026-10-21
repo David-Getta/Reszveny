@@ -2642,4 +2642,66 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Penjelasan AI dari berita hari ini yang ditemukan di web; alasan sebenarnya mungkin tidak diketahui atau berbeda. Bukan saran investasi. Memakai kuota pertanyaan harian Anda, bukan analisis.';
+
+  @override
+  String get sectionTechnical => 'Gambaran teknikal';
+
+  @override
+  String get labelSma50 => 'Rata-rata 50 hari';
+
+  @override
+  String get labelSma200 => 'Rata-rata 200 hari';
+
+  @override
+  String get labelRsi => 'RSI (14 hari)';
+
+  @override
+  String get labelVolatility30 => 'Volatilitas (30 hari)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent di atas';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent di bawah';
+  }
+
+  @override
+  String get techOverbought => 'jenuh beli';
+
+  @override
+  String get techOversold => 'jenuh jual';
+
+  @override
+  String get techNeutral => 'netral';
+
+  @override
+  String get techGoldenCross =>
+      'Rata-rata 50 hari berada di atas rata-rata 200 hari – tren naik menurut pembacaan klasik.';
+
+  @override
+  String get techDeathCross =>
+      'Rata-rata 50 hari berada di bawah rata-rata 200 hari – tren turun menurut pembacaan klasik.';
+
+  @override
+  String get glossSma50 =>
+      'Rata-rata harga penutupan 50 hari perdagangan terakhir. Harga di atasnya sering dibaca sebagai kekuatan jangka pendek, di bawahnya sebagai kelemahan.';
+
+  @override
+  String get glossSma200 =>
+      'Rata-rata harga penutupan 200 hari perdagangan terakhir – garis tren jangka panjang yang klasik. Banyak investor menganggap harga di atasnya sebagai tren naik jangka panjang.';
+
+  @override
+  String get glossRsi =>
+      'Relative strength index: membandingkan kenaikan terkini dengan penurunan terkini pada skala 0–100. Di atas 70 saham sering disebut jenuh beli (naik terlalu cepat), di bawah 30 jenuh jual – tetapi tren yang kuat bisa bertahan di sana cukup lama.';
+
+  @override
+  String get glossVolatility =>
+      'Seberapa besar harga berayun dari hari ke hari, disetahunkan: 20% berarti dalam setahun yang normal harga bergerak dalam kisaran sekitar ±20%. Volatilitas lebih tinggi berarti pergerakan lebih besar ke dua arah.';
+
+  @override
+  String get techNote =>
+      'Dihitung dari harga penutupan harian. Sinyal teknikal menggambarkan masa lalu, bukan masa depan.';
 }

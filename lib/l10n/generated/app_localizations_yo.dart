@@ -2644,4 +2644,66 @@ class AppLocalizationsYo extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Àlàyé AI láti inú ìròyìn òní tí a rí lórí ayélujára; ìdí gidi lè jẹ́ àìmọ̀ tàbí yàtọ̀. Kì í ṣe ìmọ̀ràn ìdókòwò. Ó ń lo ààyè ìbéèrè ojoojúmọ́ rẹ, kì í ṣe ìtúpalẹ̀.';
+
+  @override
+  String get sectionTechnical => 'Àwòrán ìmọ̀-ẹ̀rọ';
+
+  @override
+  String get labelSma50 => 'Ìpíndọ́gba ọjọ́ 50';
+
+  @override
+  String get labelSma200 => 'Ìpíndọ́gba ọjọ́ 200';
+
+  @override
+  String get labelRsi => 'RSI (ọjọ́ 14)';
+
+  @override
+  String get labelVolatility30 => 'Ìyípadà owó (ọjọ́ 30)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent lókè';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent nísàlẹ̀';
+  }
+
+  @override
+  String get techOverbought => 'ti rà jù';
+
+  @override
+  String get techOversold => 'ti tà jù';
+
+  @override
+  String get techNeutral => 'àárín';
+
+  @override
+  String get techGoldenCross =>
+      'Ìpíndọ́gba ọjọ́ 50 wà lókè ìpíndọ́gba ọjọ́ 200 – ìlọsíwájú ní ìtumọ̀ àtijọ́.';
+
+  @override
+  String get techDeathCross =>
+      'Ìpíndọ́gba ọjọ́ 50 wà nísàlẹ̀ ìpíndọ́gba ọjọ́ 200 – ìlọsẹ̀yìn ní ìtumọ̀ àtijọ́.';
+
+  @override
+  String get glossSma50 =>
+      'Ìpíndọ́gba owó ìparí ọjọ́ 50 ìṣòwò tó kọjá. Owó tó wà lókè rẹ̀ ni a sábà máa ń kà sí agbára fún ìgbà díẹ̀, tó wà nísàlẹ̀ sí àìlera.';
+
+  @override
+  String get glossSma200 =>
+      'Ìpíndọ́gba owó ìparí ọjọ́ 200 ìṣòwò tó kọjá – ìlà àtijọ́ fún ìtẹ̀sí ìgbà pípẹ́. Ọ̀pọ̀ olùdókòwò ka owó tó wà lókè rẹ̀ sí ìlọsíwájú ìgbà pípẹ́.';
+
+  @override
+  String get glossRsi =>
+      'Àtọ́ka agbára ìfiwéra (RSI): ó fi èrè àìpẹ́ wé àdánù àìpẹ́ lórí ìwọ̀n 0–100. Lókè 70 a sábà máa ń pe ṣẹ́ẽ̀ náà ní èyí tí a ti rà jù (ó gòkè kíákíá), nísàlẹ̀ 30 èyí tí a ti tà jù – ṣùgbọ́n ìtẹ̀sí tó lágbára lè dúró níbẹ̀ fún ìgbà pípẹ́.';
+
+  @override
+  String get glossVolatility =>
+      'Bí owó ṣe ń yí padà láti ọjọ́ dé ọjọ́, tí a wọ̀n fún ọdún kan: 20% túmọ̀ sí pé ọdún déédéé ń lọ láàrín ±20% ní ìfojúdiwọ̀n. Ìyípadà tó ga jù túmọ̀ sí ìlọ tó tóbi jù ní ìhà méjèèjì.';
+
+  @override
+  String get techNote =>
+      'A ṣírò rẹ̀ láti owó ìparí ojoojúmọ́. Àwọn àmì ìmọ̀-ẹ̀rọ ń ṣàpèjúwe ohun tó ti kọjá, kì í ṣe ọjọ́ iwájú.';
 }

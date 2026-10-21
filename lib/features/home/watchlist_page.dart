@@ -13,6 +13,8 @@ import '../../widgets/centered_scroll.dart';
 import '../../widgets/desktop_chrome.dart';
 import '../alerts/price_alert.dart';
 import '../events/events_service.dart';
+import '../news/move_explainer.dart';
+import '../stock_detail/widgets/move_why_button.dart';
 import '../events/events_view.dart' show eventWhen;
 import '../portfolio/add_lot_dialog.dart' show parseDecimal;
 
@@ -767,10 +769,37 @@ class _WatchRow extends StatelessWidget {
                           style: const TextStyle(fontWeight: FontWeight.w600),
                         ),
                         if (q != null)
-                          Text(
-                            fmt.percent(q.changePercent, withSign: true),
-                            style: theme.textTheme.bodySmall?.copyWith(color: q.isUp ? p.positive : p.negative),
-                          ),
+                          // Nagy napi mozgásnál koppintásra „Miért mozog ma?”.
+                          if (q.changePercent case final pct? when pct.abs() >= MoveExplainer.minMovePercent)
+                            InkWell(
+                              key: ValueKey('watch-move-$symbol'),
+                              borderRadius: BorderRadius.circular(6),
+                              onTap: () =>
+                                  showMoveExplanation(context, symbol: symbol, name: symbol, changePercent: pct),
+                              // Keskeny telefonon, nagy betűvel kicsinyítve fér el.
+                              child: FittedBox(
+                                fit: BoxFit.scaleDown,
+                                alignment: Alignment.centerRight,
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Icon(Icons.auto_awesome_outlined, size: 12, color: p.accent),
+                                    const SizedBox(width: 3),
+                                    Text(
+                                      fmt.percent(pct, withSign: true),
+                                      style: theme.textTheme.bodySmall?.copyWith(
+                                        color: q.isUp ? p.positive : p.negative,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            )
+                          else
+                            Text(
+                              fmt.percent(q.changePercent, withSign: true),
+                              style: theme.textTheme.bodySmall?.copyWith(color: q.isUp ? p.positive : p.negative),
+                            ),
                       ],
                     ),
                   );

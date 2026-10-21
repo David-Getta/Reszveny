@@ -701,5 +701,22 @@
   "awayReported": "Woɖe gbeƒã woƒe metsonuwo: {symbols}",
   "moveWhyButton": "Nukatae wòle tɔtrɔm egbe?",
   "moveWhyTitle": "{percent} egbe",
-  "moveWhyNote": "AI ƒe numeɖeɖe tso egbe nyadzɔdzɔ siwo wokpɔ le intanɛt dzi me; susu ŋutɔŋutɔ ate ŋu anye esi womenya o alo esi to vovo. Menye gadodo ŋuti aɖaŋuɖoɖo o. Ezãa wò gbe sia gbe biabia xexlẽme, menye numekuku o."
+  "moveWhyNote": "AI ƒe numeɖeɖe tso egbe nyadzɔdzɔ siwo wokpɔ le intanɛt dzi me; susu ŋutɔŋutɔ ate ŋu anye esi womenya o alo esi to vovo. Menye gadodo ŋuti aɖaŋuɖoɖo o. Ezãa wò gbe sia gbe biabia xexlẽme, menye numekuku o.",
+  "sectionTechnical": "Aɖaŋudɔ ƒe nɔnɔme",
+  "labelSma50": "Ŋkeke 50 ƒe titina",
+  "labelSma200": "Ŋkeke 200 ƒe titina",
+  "labelRsi": "RSI (ŋkeke 14)",
+  "labelVolatility30": "Tɔtrɔ (ŋkeke 30)",
+  "techAbove": "{percent} le etame",
+  "techBelow": "{percent} le ete",
+  "techOverbought": "woƒlee wu",
+  "techOversold": "wodzrae wu",
+  "techNeutral": "titina",
+  "techGoldenCross": "Ŋkeke 50 ƒe titina le ŋkeke 200 ƒe titina tame – le blema nukpɔkpɔ nu la, enye yiyi dzi mɔ.",
+  "techDeathCross": "Ŋkeke 50 ƒe titina le ŋkeke 200 ƒe titina te – le blema nukpɔkpɔ nu la, enye ɖiɖi anyi mɔ.",
+  "glossSma50": "Asitsaŋkeke 50 mamlɛawo ƒe nutuasixɔxɔ ƒe titina. Zi geɖe la, wobua asixɔxɔ si le etame be enye ŋusẽ ɣeyiɣi kpui me, eye esi le ete be enye gbɔdzɔgbɔdzɔ.",
+  "glossSma200": "Asitsaŋkeke 200 mamlɛawo ƒe nutuasixɔxɔ ƒe titina – blema ɣeyiɣi didi mɔ ƒe fli. Gadzikpɔla geɖe bua asixɔxɔ si le etame be enye ɣeyiɣi didi yiyi dzi mɔ.",
+  "glossRsi": "Ŋusẽ sɔsɔ ƒe dzesi (RSI): etsɔa nyitsɔ viɖewo sɔ kple nyitsɔ nuxɔxɔwo le 0–100 dzidzenu dzi. Ne ewu 70 la, zi geɖe wogblɔna be woƒle akpaa la wu (edzi kabakaba), ne ele 30 te la, wodzrae wu – gake mɔ sesẽ ate ŋu anɔ afi ma ɣeyiɣi didi.",
+  "glossVolatility": "Ale si asixɔxɔ trɔna gbe sia gbe, wobui le ƒe ɖeka me: 20% fia be le ƒe ɖeka me la, asixɔxɔ trɔna le ±20% ƒe nu me. Tɔtrɔ gã fia be tɔtrɔ gãwo dzɔna le akpa eveawo.",
+  "techNote": "Wobui tso gbe sia gbe nutuasixɔxɔwo me. Aɖaŋudɔ dzesiwo ƒoa nu tso nu si va yi ŋu, menye etsɔme ŋu o."
 }

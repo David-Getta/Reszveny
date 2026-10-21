@@ -2648,4 +2648,66 @@ class AppLocalizationsJv extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Panjelasan AI saka warta dina iki sing ditemokake ing web; alesan sing sabenere bisa uga ora dingerteni utawa beda. Dudu saran investasi. Nganggo kuota pitakon saben dina sampeyan, dudu analisis.';
+
+  @override
+  String get sectionTechnical => 'Gambaran teknikal';
+
+  @override
+  String get labelSma50 => 'Rata-rata 50 dina';
+
+  @override
+  String get labelSma200 => 'Rata-rata 200 dina';
+
+  @override
+  String get labelRsi => 'RSI (14 dina)';
+
+  @override
+  String get labelVolatility30 => 'Volatilitas (30 dina)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent ing ndhuwur';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent ing ngisor';
+  }
+
+  @override
+  String get techOverbought => 'jenuh tuku';
+
+  @override
+  String get techOversold => 'jenuh adol';
+
+  @override
+  String get techNeutral => 'netral';
+
+  @override
+  String get techGoldenCross =>
+      'Rata-rata 50 dina ana ing ndhuwur rata-rata 200 dina – tren munggah miturut wacan klasik.';
+
+  @override
+  String get techDeathCross =>
+      'Rata-rata 50 dina ana ing ngisor rata-rata 200 dina – tren mudhun miturut wacan klasik.';
+
+  @override
+  String get glossSma50 =>
+      'Rata-rata rega panutupan 50 dina dagang pungkasan. Rega ing ndhuwure asring diwaca minangka kakuwatan jangka cendhak, ing ngisore minangka kelemahan.';
+
+  @override
+  String get glossSma200 =>
+      'Rata-rata rega panutupan 200 dina dagang pungkasan – garis tren jangka dawa sing klasik. Akeh investor nganggep rega ing ndhuwure minangka tren munggah jangka dawa.';
+
+  @override
+  String get glossRsi =>
+      'Relative strength index: mbandhingake bathi anyar karo rugi anyar ing skala 0–100. Ing ndhuwur 70 saham asring diarani jenuh tuku (munggah cepet), ing ngisor 30 jenuh adol – nanging tren sing kuwat bisa tetep ana ing kono suwe.';
+
+  @override
+  String get glossVolatility =>
+      'Sepira regane obah saben dina, diitung setaun: 20% tegese ing taun biasa rega obah ing kisaran kira-kira ±20%. Volatilitas luwih dhuwur tegese obahe luwih gedhe menyang loro arah.';
+
+  @override
+  String get techNote =>
+      'Diitung saka rega panutupan saben dina. Sinyal teknikal nggambarake masa lalu, dudu masa depan.';
 }

@@ -55,6 +55,30 @@ class PriceStats {
     return _round(math.sqrt(variance) * math.sqrt(252) * 100, 1);
   }
 
+  /// 14 napos (vagy [n] napos) relatív erő index (Wilder-féle simítással),
+  /// 0–100; `null`, ha nincs elég adat.
+  static double? rsi(List<PricePoint> pts, int n) {
+    if (pts.length < n + 1) return null;
+    var gain = 0.0, loss = 0.0;
+    for (var i = 1; i <= n; i++) {
+      final d = pts[i].close - pts[i - 1].close;
+      if (d >= 0) {
+        gain += d;
+      } else {
+        loss -= d;
+      }
+    }
+    gain /= n;
+    loss /= n;
+    for (var i = n + 1; i < pts.length; i++) {
+      final d = pts[i].close - pts[i - 1].close;
+      gain = (gain * (n - 1) + (d > 0 ? d : 0)) / n;
+      loss = (loss * (n - 1) + (d < 0 ? -d : 0)) / n;
+    }
+    if (loss == 0) return 100;
+    return _round(100 - 100 / (1 + gain / loss), 1);
+  }
+
   /// Legnagyobb visszaesés csúcstól %-ban (negatív szám).
   static double? maxDrawdown(List<PricePoint> pts) {
     if (pts.length < 2) return null;
@@ -108,6 +132,7 @@ class PriceStats {
       'vs_sma_50_percent': sma50 == null || sma50 == 0 ? null : _round((last.close / sma50 - 1) * 100),
       'vs_sma_200_percent': sma200 == null || sma200 == 0 ? null : _round((last.close / sma200 - 1) * 100),
       'volatility_30d_annualised_percent': volatility(pts, 21),
+      'rsi_14': rsi(pts, 14),
       'max_drawdown_1y_percent': maxDrawdown(year),
       if (vols.isNotEmpty) 'avg_volume_30d': (vols.reduce((a, b) => a + b) / vols.length).round(),
       'largest_daily_moves_30d': [

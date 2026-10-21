@@ -2652,4 +2652,66 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Internetdan topilgan bugungi yangiliklarga asoslangan AI izohi; haqiqiy sabab noma\'lum yoki boshqacha bo\'lishi mumkin. Investitsiya maslahati emas. Tahlil emas, kunlik savol limitingizni ishlatadi.';
+
+  @override
+  String get sectionTechnical => 'Texnik manzara';
+
+  @override
+  String get labelSma50 => '50 kunlik o\'rtacha';
+
+  @override
+  String get labelSma200 => '200 kunlik o\'rtacha';
+
+  @override
+  String get labelRsi => 'RSI (14 kun)';
+
+  @override
+  String get labelVolatility30 => 'O\'zgaruvchanlik (30 kun)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent yuqorida';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent pastda';
+  }
+
+  @override
+  String get techOverbought => 'haddan ortiq sotib olingan';
+
+  @override
+  String get techOversold => 'haddan ortiq sotilgan';
+
+  @override
+  String get techNeutral => 'neytral';
+
+  @override
+  String get techGoldenCross =>
+      '50 kunlik o\'rtacha 200 kunlik o\'rtachadan yuqorida – klassik talqinga ko\'ra o\'sish trendi.';
+
+  @override
+  String get techDeathCross =>
+      '50 kunlik o\'rtacha 200 kunlik o\'rtachadan pastda – klassik talqinga ko\'ra pasayish trendi.';
+
+  @override
+  String get glossSma50 =>
+      'So\'nggi 50 savdo kunining yopilish narxi o\'rtachasi. Undan yuqoridagi narx ko\'pincha qisqa muddatli kuch, pastdagisi zaiflik deb o\'qiladi.';
+
+  @override
+  String get glossSma200 =>
+      'So\'nggi 200 savdo kunining yopilish narxi o\'rtachasi – uzoq muddatli trendning klassik chizig\'i. Ko\'p investorlar undan yuqoridagi narxni uzoq muddatli o\'sish trendi deb hisoblaydi.';
+
+  @override
+  String get glossRsi =>
+      'Nisbiy kuch indeksi: so\'nggi o\'sishlarni so\'nggi pasayishlar bilan 0–100 shkalasida solishtiradi. 70 dan yuqorida aksiya ko\'pincha haddan ortiq sotib olingan (tez o\'sdi), 30 dan pastda haddan ortiq sotilgan deyiladi – lekin kuchli trend u yerda uzoq qolishi mumkin.';
+
+  @override
+  String get glossVolatility =>
+      'Narx kundan kunga qanchalik o\'zgarishi, bir yilga hisoblangan: 20% odatiy yilda taxminan ±20% oralig\'ida harakat qilishini bildiradi. Yuqori o\'zgaruvchanlik ikki tomonga ham kattaroq harakatlarni bildiradi.';
+
+  @override
+  String get techNote =>
+      'Kunlik yopilish narxlaridan hisoblangan. Texnik signallar o\'tmishni tasvirlaydi, kelajakni emas.';
 }

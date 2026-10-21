@@ -2633,4 +2633,66 @@ class AppLocalizationsMos extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'AI wilgri sẽn yit rũndã kibay sẽn yã ẽntɛrnɛt zugu; võor hakɩkã tõe n pa mi bɩ a yaa toor. Pa ligd rɩk saglg ye. A rɩkda f daar fãa sokr sõor la pa vaeesg ye.';
+
+  @override
+  String get sectionTechnical => 'Tekniik yel-gesgã';
+
+  @override
+  String get labelSma50 => 'Rasem 50 pʋgẽ sũur-sũur';
+
+  @override
+  String get labelSma200 => 'Rasem 200 pʋgẽ sũur-sũur';
+
+  @override
+  String get labelRsi => 'RSI (rasem 14)';
+
+  @override
+  String get labelVolatility30 => 'Toeengã (rasem 30)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent yĩngri';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent tẽngri';
+  }
+
+  @override
+  String get techOverbought => 'b da-a wʋsg tɩ looge';
+
+  @override
+  String get techOversold => 'b koos-a wʋsg tɩ looge';
+
+  @override
+  String get techNeutral => 'sʋka';
+
+  @override
+  String get techGoldenCross =>
+      'Rasem 50 sũur-sũurã bee rasem 200 sũur-sũurã yĩngri – a kẽnda yĩngri wa b sẽn mi n gese.';
+
+  @override
+  String get techDeathCross =>
+      'Rasem 50 sũur-sũurã bee rasem 200 sũur-sũurã tẽngri – a kẽnda tẽngri wa b sẽn mi n gese.';
+
+  @override
+  String get glossSma50 =>
+      'Koosem rasem 50 sẽn loog wã pagb ligdã sũur-sũur. Ligd sẽn be a yĩngri, b mi n gesame tɩ yaa pãng wakat bilfu, sẽn be tẽngri yaa pãn-komslem.';
+
+  @override
+  String get glossSma200 =>
+      'Koosem rasem 200 sẽn loog wã pagb ligdã sũur-sũur – wakat wok sor-wɛɛng sẽn mi n gese. Ligd-ningdb wʋsg gesda ligd sẽn be a yĩngri wa wakat wok kẽnd yĩngri.';
+
+  @override
+  String get glossRsi =>
+      'Pãng makr index (RSI): a makda yõod sẽn paam nindaare ne bõn sẽn paam nindaare, 0 n tãag 100. Sẽn yɩɩd 70, b mi n yetame tɩ b da-a wʋsg tɩ looge (a kẽnga yĩngri tao-tao), sẽn pa ta 30, b koos-a wʋsg tɩ looge – la kẽnd sẽn tar pãng tõe n pa be wakat wok.';
+
+  @override
+  String get glossVolatility =>
+      'Ligdã sẽn toeemd daar fãa to-to, b maka yʋʋmd a ye: 20% rat n yeelame tɩ yʋʋmd fãa a kẽnda ±20% sʋka. Toeeng sẽn yɩɩd rat n yeelame tɩ kẽnd bɛd sor a yiibã fãa.';
+
+  @override
+  String get techNote =>
+      'B geelg-a lame ne daar fãa pagb ligdã. Tekniik bãnd wilgda sẽn loogã, la pa sẽn wat ye.';
 }

@@ -701,5 +701,22 @@
   "awayReported": "Zverejnené výsledky: {symbols}",
   "moveWhyButton": "Prečo sa dnes hýbe?",
   "moveWhyTitle": "{percent} dnes",
-  "moveWhyNote": "Vysvetlenie AI na základe dnešných správ nájdených na webe; skutočný dôvod môže byť neznámy alebo iný. Nie je to investičné odporúčanie. Spotrebúva denný limit otázok, nie analýzu."
+  "moveWhyNote": "Vysvetlenie AI na základe dnešných správ nájdených na webe; skutočný dôvod môže byť neznámy alebo iný. Nie je to investičné odporúčanie. Spotrebúva denný limit otázok, nie analýzu.",
+  "sectionTechnical": "Technický obraz",
+  "labelSma50": "50-dňový priemer",
+  "labelSma200": "200-dňový priemer",
+  "labelRsi": "RSI (14 dní)",
+  "labelVolatility30": "Volatilita (30 dní)",
+  "techAbove": "{percent} nad",
+  "techBelow": "{percent} pod",
+  "techOverbought": "prekúpené",
+  "techOversold": "prepredané",
+  "techNeutral": "neutrálne",
+  "techGoldenCross": "50-dňový priemer je nad 200-dňovým – podľa klasického výkladu rastúci trend.",
+  "techDeathCross": "50-dňový priemer je pod 200-dňovým – podľa klasického výkladu klesajúci trend.",
+  "glossSma50": "Priemerná záverečná cena za posledných 50 obchodných dní. Cena nad ním sa často vykladá ako krátkodobá sila, pod ním ako slabosť.",
+  "glossSma200": "Priemerná záverečná cena za posledných 200 obchodných dní – klasická línia dlhodobého trendu. Mnohí investori považujú cenu nad ňou za dlhodobý rastúci trend.",
+  "glossRsi": "Index relatívnej sily: porovnáva nedávne zisky s nedávnymi stratami na škále 0–100. Nad 70 sa akcia často označuje za prekúpenú (rýchlo rástla), pod 30 za prepredanú – silný trend tam však môže zostať dlho.",
+  "glossVolatility": "Ako veľmi cena kolíše zo dňa na deň, prepočítané na rok: 20 % znamená, že v bežnom roku sa pohybuje približne v rozpätí ±20 %. Vyššia volatilita znamená väčšie pohyby oboma smermi.",
+  "techNote": "Vypočítané z denných záverečných cien. Technické signály opisujú minulosť, nie budúcnosť."
 }

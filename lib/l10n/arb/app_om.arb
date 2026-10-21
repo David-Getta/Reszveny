@@ -701,5 +701,22 @@
   "awayReported": "Bu'aa gabaafame: {symbols}",
   "moveWhyButton": "Har'a maaliif socho'aa jira?",
   "moveWhyTitle": "{percent} har'a",
-  "moveWhyNote": "Ibsa AI oduu har'aa weebii irraa argame irratti hundaa'e; sababni dhugaa hin beekamu ykn garaagara ta'uu danda'a. Gorsa invastimantii miti. Hiree gaaffii guyyaa keessan fayyadama, xiinxala miti."
+  "moveWhyNote": "Ibsa AI oduu har'aa weebii irraa argame irratti hundaa'e; sababni dhugaa hin beekamu ykn garaagara ta'uu danda'a. Gorsa invastimantii miti. Hiree gaaffii guyyaa keessan fayyadama, xiinxala miti.",
+  "sectionTechnical": "Fakkii teeknikaa",
+  "labelSma50": "Giddugaleessa guyyaa 50",
+  "labelSma200": "Giddugaleessa guyyaa 200",
+  "labelRsi": "RSI (guyyaa 14)",
+  "labelVolatility30": "Jijjiirama gatii (guyyaa 30)",
+  "techAbove": "{percent} ol",
+  "techBelow": "{percent} gad",
+  "techOverbought": "baay'ee bitame",
+  "techOversold": "baay'ee gurgurame",
+  "techNeutral": "giddugaleessa",
+  "techGoldenCross": "Giddugaleessi guyyaa 50 giddugaleessa guyyaa 200 ol jira – akka dubbisa beekamaatti kallattii olka'u.",
+  "techDeathCross": "Giddugaleessi guyyaa 50 giddugaleessa guyyaa 200 gad jira – akka dubbisa beekamaatti kallattii gadbu'u.",
+  "glossSma50": "Giddugaleessa gatii cufiinsaa guyyoota daldalaa 50 dhumaa. Gatiin isaa ol jiru yeroo baay'ee akka jabina yeroo gabaabaa, gad jiru ammoo akka dadhabbiitti ilaalama.",
+  "glossSma200": "Giddugaleessa gatii cufiinsaa guyyoota daldalaa 200 dhumaa – sarara kallattii yeroo dheeraa beekamaa. Invastaroonni baay'een gatii isaa ol jiru akka kallattii olka'u yeroo dheeraatti fudhatu.",
+  "glossRsi": "Indeeksii jabina walfakkaataa: bu'aa dhiheenyaa fi kasaaraa dhiheenyaa safartuu 0–100 irratti wal bira qaba. 70 ol aksiyoonni yeroo baay'ee baay'ee bitame (saffisaan ol ka'e) jedhama, 30 gad ammoo baay'ee gurgurame – garuu kallattiin cimaan yeroo dheeraa achi turuu danda'a.",
+  "glossVolatility": "Gatiin guyyaa guyyaatti hammam akka jijjiiramu, gara waggaatti safarame: 20% jechuun waggaa idilee keessa naannoo ±20% keessa socho'a jechuu dha. Jijjiirama ol'aanaa jechuun socho'a guddaa kallattii lamaaniin jechuu dha.",
+  "techNote": "Gatii cufiinsaa guyyaa irraa shallagame. Mallattooleen teeknikaa kan darbe ibsu, kan dhufu hin ibsan."
 }

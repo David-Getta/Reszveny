@@ -2613,4 +2613,66 @@ class AppLocalizationsAm extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'በድር ላይ ከተገኙ የዛሬ ዜናዎች የተዘጋጀ የAI ማብራሪያ; ትክክለኛው ምክንያት ያልታወቀ ወይም የተለየ ሊሆን ይችላል። የኢንቨስትመንት ምክር አይደለም። ዕለታዊ የጥያቄ ኮታዎን ይጠቀማል፣ ትንተና አይደለም።';
+
+  @override
+  String get sectionTechnical => 'ቴክኒካል ምስል';
+
+  @override
+  String get labelSma50 => 'የ50 ቀን አማካይ';
+
+  @override
+  String get labelSma200 => 'የ200 ቀን አማካይ';
+
+  @override
+  String get labelRsi => 'RSI (14 ቀን)';
+
+  @override
+  String get labelVolatility30 => 'ተለዋዋጭነት (30 ቀን)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent በላይ';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent በታች';
+  }
+
+  @override
+  String get techOverbought => 'ከመጠን በላይ የተገዛ';
+
+  @override
+  String get techOversold => 'ከመጠን በላይ የተሸጠ';
+
+  @override
+  String get techNeutral => 'ገለልተኛ';
+
+  @override
+  String get techGoldenCross =>
+      'የ50 ቀን አማካይ ከ200 ቀን አማካይ በላይ ነው – በጥንታዊው አነባበብ የመውጣት አዝማሚያ።';
+
+  @override
+  String get techDeathCross =>
+      'የ50 ቀን አማካይ ከ200 ቀን አማካይ በታች ነው – በጥንታዊው አነባበብ የመውረድ አዝማሚያ።';
+
+  @override
+  String get glossSma50 =>
+      'የመጨረሻዎቹ 50 የንግድ ቀናት አማካይ የመዝጊያ ዋጋ። ከእሱ በላይ ያለ ዋጋ ብዙ ጊዜ እንደ የአጭር ጊዜ ጥንካሬ፣ በታች ያለው ደግሞ እንደ ድክመት ይነበባል።';
+
+  @override
+  String get glossSma200 =>
+      'የመጨረሻዎቹ 200 የንግድ ቀናት አማካይ የመዝጊያ ዋጋ – ጥንታዊው የረጅም ጊዜ አዝማሚያ መስመር። ብዙ ባለሀብቶች ከእሱ በላይ ያለ ዋጋን እንደ የረጅም ጊዜ የመውጣት አዝማሚያ ይቆጥሩታል።';
+
+  @override
+  String get glossRsi =>
+      'አንጻራዊ ጥንካሬ መረጃ ጠቋሚ፦ የቅርብ ጊዜ ትርፎችን ከቅርብ ጊዜ ኪሳራዎች ጋር በ0–100 መለኪያ ያነጻጽራል። ከ70 በላይ አክሲዮኑ ብዙ ጊዜ ከመጠን በላይ የተገዛ (በፍጥነት ወጥቷል)፣ ከ30 በታች ከመጠን በላይ የተሸጠ ይባላል – ነገር ግን ጠንካራ አዝማሚያ እዚያ ለረጅም ጊዜ መቆየት ይችላል።';
+
+  @override
+  String get glossVolatility =>
+      'ዋጋው ከቀን ወደ ቀን ምን ያህል እንደሚወዛወዝ፣ በዓመት የተሰላ፦ 20% ማለት የተለመደ ዓመት በግምት ±20% ውስጥ ይንቀሳቀሳል። ከፍ ያለ ተለዋዋጭነት በሁለቱም አቅጣጫ ትልቅ እንቅስቃሴ ማለት ነው።';
+
+  @override
+  String get techNote =>
+      'ከዕለታዊ የመዝጊያ ዋጋዎች የተሰላ። ቴክኒካል ምልክቶች ያለፈውን ይገልጻሉ፣ የወደፊቱን አይደለም።';
 }

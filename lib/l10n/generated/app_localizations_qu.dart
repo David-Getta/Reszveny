@@ -2661,4 +2661,66 @@ class AppLocalizationsQu extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Kunan p\'unchaw willakuykunamanta, webpi tarisqa, AI sut\'inchay; chiqap rayku mana riqsisqa utaq hukniraq kanman. Manam qullqi churanapaq yuyaychaychu. Sapa p\'unchaw tapukuyniykita tukun, manam t\'aqwiychu.';
+
+  @override
+  String get sectionTechnical => 'Tecnico rikuy';
+
+  @override
+  String get labelSma50 => '50 p\'unchaw chawpi';
+
+  @override
+  String get labelSma200 => '200 p\'unchaw chawpi';
+
+  @override
+  String get labelRsi => 'RSI (14 p\'unchaw)';
+
+  @override
+  String get labelVolatility30 => 'Tikrakuy (30 p\'unchaw)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent hawanpi';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent uranpi';
+  }
+
+  @override
+  String get techOverbought => 'nishu rantisqa';
+
+  @override
+  String get techOversold => 'nishu vendesqa';
+
+  @override
+  String get techNeutral => 'chawpi';
+
+  @override
+  String get techGoldenCross =>
+      '50 p\'unchaw chawpi 200 p\'unchaw chawpimanta hawanpi kachkan – ñawpa qhawariy hina wicharisqa puriy.';
+
+  @override
+  String get techDeathCross =>
+      '50 p\'unchaw chawpi 200 p\'unchaw chawpimanta uranpi kachkan – ñawpa qhawariy hina uraykusqa puriy.';
+
+  @override
+  String get glossSma50 =>
+      'Qhipa 50 qhatu p\'unchawkunapi wichq\'ay chaninkunapa chawpin. Chanin chaymanta hawanpi kaptin pisi pachapi kallpa hina qhawakun, uranpi kaptin pisi kallpa hina.';
+
+  @override
+  String get glossSma200 =>
+      'Qhipa 200 qhatu p\'unchawkunapi wichq\'ay chaninkunapa chawpin – unay pacha puriypa ñawpa siq\'in. Achka qullqi churaqkuna chaymanta hawanpi chaninta unay pacha wicharisqa puriy hina qhawanku.';
+
+  @override
+  String get glossRsi =>
+      'Kallpa tupachiy índice (RSI): qayna ganakuykunata qayna chinkachiykunawan 0–100 tupuypi tupachin. 70 hawanpi kaptin acción nishu rantisqa ninku (utqaylla wicharirqan), 30 uranpi kaptin nishu vendesqa – ichaqa kallpasapa puriy chaypi unay pacha qipakuyta atin.';
+
+  @override
+  String get glossVolatility =>
+      'Chanin sapa p\'unchaw mayk\'ata tikrakun, huk watapi tupusqa: 20% ninmi huk watapi yaqa ±20% ukhupi puriyta. Aswan tikrakuy ninmi iskaynin ñanpi aswan hatun puriykunata.';
+
+  @override
+  String get techNote =>
+      'Sapa p\'unchaw wichq\'ay chaninkunamanta yupasqa. Tecnico unanchakuna ñawpaqta willanku, manam hamuq pachata.';
 }

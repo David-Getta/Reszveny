@@ -2648,4 +2648,66 @@ class AppLocalizationsKu extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Ravekirina AI ji nûçeyên îro yên li ser webê hatine dîtin; sedema rastîn dibe ku nenas an cuda be. Ne şîreta veberhênanê ye. Kotaya pirsên te ya rojane bi kar tîne, ne analîzekê.';
+
+  @override
+  String get sectionTechnical => 'Wêneya teknîkî';
+
+  @override
+  String get labelSma50 => 'Navîniya 50 rojan';
+
+  @override
+  String get labelSma200 => 'Navîniya 200 rojan';
+
+  @override
+  String get labelRsi => 'RSI (14 roj)';
+
+  @override
+  String get labelVolatility30 => 'Guherbarî (30 roj)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent jor';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent jêr';
+  }
+
+  @override
+  String get techOverbought => 'zêde kirî';
+
+  @override
+  String get techOversold => 'zêde firotî';
+
+  @override
+  String get techNeutral => 'bêalî';
+
+  @override
+  String get techGoldenCross =>
+      'Navîniya 50 rojan li jor navîniya 200 rojan e – li gorî xwendina klasîk meyla bilindbûnê ye.';
+
+  @override
+  String get techDeathCross =>
+      'Navîniya 50 rojan li jêr navîniya 200 rojan e – li gorî xwendina klasîk meyla daketinê ye.';
+
+  @override
+  String get glossSma50 =>
+      'Navîniya bihayê girtinê ya 50 rojên bazirganiyê yên dawî. Bihayê li jor wê bi gelemperî wek hêza demkurt, li jêr wê wek lawazî tê xwendin.';
+
+  @override
+  String get glossSma200 =>
+      'Navîniya bihayê girtinê ya 200 rojên bazirganiyê yên dawî – xeta meylê ya klasîk a demdirêj. Gelek veberhêner bihayê li jor wê wek meyla bilindbûnê ya demdirêj dibînin.';
+
+  @override
+  String get glossRsi =>
+      'Nîşaneya hêza têkildar: qezencên dawî bi windahiyên dawî re li ser pîvanekê 0–100 dide ber hev. Li jor 70 pişk bi gelemperî zêde kirî tê gotin (zû bilind bûye), li jêr 30 zêde firotî – lê meyleke bihêz dikare demeke dirêj li wir bimîne.';
+
+  @override
+  String get glossVolatility =>
+      'Biha roj bi roj çiqas diguhere, li gorî salekê hesibandî: 20% tê wateya ku di saleke asayî de biha di nav bi qasî ±20% de dilive. Guherbariya bilindtir tê wateya livên mezintir ber bi her du aliyan ve.';
+
+  @override
+  String get techNote =>
+      'Ji bihayên girtinê yên rojane hatiye hesibandin. Nîşanên teknîkî rabirdûyê vedibêjin, ne paşerojê.';
 }

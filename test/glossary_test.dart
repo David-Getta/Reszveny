@@ -15,13 +15,13 @@ void main() {
     for (final lang in SupportedLocales.all) {
       final l10n = lookupAppLocalizations(lang.locale);
       final g = metricGlossary(l10n);
-      expect(g.length, 24, reason: '${lang.locale}: labels must be distinct');
+      expect(g.length, 28, reason: '${lang.locale}: labels must be distinct');
       expect(g.values.every((v) => v.trim().isNotEmpty), isTrue, reason: '${lang.locale}');
     }
   });
 
   testWidgets('tapping the info icon next to P/E explains it', (tester) async {
-    tester.view.physicalSize = const Size(1200, 3000);
+    tester.view.physicalSize = const Size(1200, 4200);
     tester.view.devicePixelRatio = 1;
     addTearDown(tester.view.reset);
     await tester.pumpWidget(WhatStockApp(services: services()));

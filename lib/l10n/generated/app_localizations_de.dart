@@ -2659,4 +2659,66 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'KI-Erklärung aus heutigen Nachrichten im Web; der wahre Grund kann unbekannt oder ein anderer sein. Keine Anlageberatung. Verbraucht dein tägliches Fragenkontingent, keine Analyse.';
+
+  @override
+  String get sectionTechnical => 'Technisches Bild';
+
+  @override
+  String get labelSma50 => '50-Tage-Durchschnitt';
+
+  @override
+  String get labelSma200 => '200-Tage-Durchschnitt';
+
+  @override
+  String get labelRsi => 'RSI (14 Tage)';
+
+  @override
+  String get labelVolatility30 => 'Volatilität (30 Tage)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent darüber';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent darunter';
+  }
+
+  @override
+  String get techOverbought => 'überkauft';
+
+  @override
+  String get techOversold => 'überverkauft';
+
+  @override
+  String get techNeutral => 'neutral';
+
+  @override
+  String get techGoldenCross =>
+      'Der 50-Tage-Durchschnitt liegt über dem 200-Tage-Durchschnitt – nach klassischer Lesart ein Aufwärtstrend.';
+
+  @override
+  String get techDeathCross =>
+      'Der 50-Tage-Durchschnitt liegt unter dem 200-Tage-Durchschnitt – nach klassischer Lesart ein Abwärtstrend.';
+
+  @override
+  String get glossSma50 =>
+      'Der durchschnittliche Schlusskurs der letzten 50 Handelstage. Ein Kurs darüber gilt oft als kurzfristige Stärke, darunter als Schwäche.';
+
+  @override
+  String get glossSma200 =>
+      'Der durchschnittliche Schlusskurs der letzten 200 Handelstage – die klassische langfristige Trendlinie. Viele Anleger werten einen Kurs darüber als langfristigen Aufwärtstrend.';
+
+  @override
+  String get glossRsi =>
+      'Relative-Stärke-Index: vergleicht jüngste Gewinne mit jüngsten Verlusten auf einer Skala von 0 bis 100. Über 70 gilt die Aktie oft als überkauft (sie ist schnell gestiegen), unter 30 als überverkauft – ein starker Trend kann aber lange dort bleiben.';
+
+  @override
+  String get glossVolatility =>
+      'Wie stark der Kurs von Tag zu Tag schwankt, auf ein Jahr hochgerechnet: 20 % bedeutet, dass sich ein typisches Jahr innerhalb von etwa ±20 % bewegt. Höhere Volatilität heißt größere Bewegungen in beide Richtungen.';
+
+  @override
+  String get techNote =>
+      'Berechnet aus täglichen Schlusskursen. Technische Signale beschreiben die Vergangenheit, nicht die Zukunft.';
 }

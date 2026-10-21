@@ -2650,4 +2650,66 @@ class AppLocalizationsKy extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Интернеттен табылган бүгүнкү жаңылыктарга негизделген ЖИ түшүндүрмөсү; чыныгы себеп белгисиз же башка болушу мүмкүн. Инвестициялык кеңеш эмес. Күнүмдүк суроо лимитиңизди колдонот, анализди эмес.';
+
+  @override
+  String get sectionTechnical => 'Техникалык көрүнүш';
+
+  @override
+  String get labelSma50 => '50 күндүк орточо';
+
+  @override
+  String get labelSma200 => '200 күндүк орточо';
+
+  @override
+  String get labelRsi => 'RSI (14 күн)';
+
+  @override
+  String get labelVolatility30 => 'Өзгөрүлмөлүүлүк (30 күн)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent жогору';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent төмөн';
+  }
+
+  @override
+  String get techOverbought => 'ашыкча сатылып алынган';
+
+  @override
+  String get techOversold => 'ашыкча сатылган';
+
+  @override
+  String get techNeutral => 'нейтралдуу';
+
+  @override
+  String get techGoldenCross =>
+      '50 күндүк орточо 200 күндүк орточодон жогору – классикалык окуу боюнча өсүү тренди.';
+
+  @override
+  String get techDeathCross =>
+      '50 күндүк орточо 200 күндүк орточодон төмөн – классикалык окуу боюнча төмөндөө тренди.';
+
+  @override
+  String get glossSma50 =>
+      'Акыркы 50 соода күнүнүн орточо жабылуу баасы. Андан жогорку баа көбүнчө кыска мөөнөттүү күч, төмөнкү баа алсыздык деп окулат.';
+
+  @override
+  String get glossSma200 =>
+      'Акыркы 200 соода күнүнүн орточо жабылуу баасы – классикалык узак мөөнөттүү тренд сызыгы. Көп инвесторлор андан жогорку бааны узак мөөнөттүү өсүү тренди деп эсептейт.';
+
+  @override
+  String get glossRsi =>
+      'Салыштырмалуу күч индекси: акыркы өсүүлөрдү акыркы жоготуулар менен 0–100 шкаласында салыштырат. 70дөн жогору болсо акция көбүнчө ашыкча сатылып алынган (тез өстү), 30дан төмөн болсо ашыкча сатылган деп аталат – бирок күчтүү тренд ал жерде узак кала алат.';
+
+  @override
+  String get glossVolatility =>
+      'Баа күндөн күнгө канчалык өзгөрөт, жылдык эсепте: 20% дегени кадимки жылда баа болжол менен ±20% чегинде кыймылдайт. Жогорку өзгөрүлмөлүүлүк – эки тарапка да чоң кыймылдар.';
+
+  @override
+  String get techNote =>
+      'Күнүмдүк жабылуу бааларынан эсептелген. Техникалык сигналдар өткөндү сүрөттөйт, келечекти эмес.';
 }

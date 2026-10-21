@@ -2651,4 +2651,66 @@ class AppLocalizationsHu extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'AI-magyarázat a weben talált mai hírekből; a valódi ok ismeretlen vagy más is lehet. Nem befektetési tanács. A napi kérdéskeretből fogyaszt, nem elemzést.';
+
+  @override
+  String get sectionTechnical => 'Technikai kép';
+
+  @override
+  String get labelSma50 => '50 napos átlag';
+
+  @override
+  String get labelSma200 => '200 napos átlag';
+
+  @override
+  String get labelRsi => 'RSI (14 nap)';
+
+  @override
+  String get labelVolatility30 => 'Volatilitás (30 nap)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent felette';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent alatta';
+  }
+
+  @override
+  String get techOverbought => 'túlvett';
+
+  @override
+  String get techOversold => 'túladott';
+
+  @override
+  String get techNeutral => 'semleges';
+
+  @override
+  String get techGoldenCross =>
+      'Az 50 napos átlag a 200 napos felett jár – a klasszikus olvasat szerint emelkedő trend.';
+
+  @override
+  String get techDeathCross =>
+      'Az 50 napos átlag a 200 napos alatt jár – a klasszikus olvasat szerint csökkenő trend.';
+
+  @override
+  String get glossSma50 =>
+      'Az utolsó 50 kereskedési nap záróárainak átlaga. Ha az ár felette van, azt gyakran rövid távú erőként olvassák, ha alatta, gyengeségként.';
+
+  @override
+  String get glossSma200 =>
+      'Az utolsó 200 kereskedési nap záróárainak átlaga – a klasszikus hosszú távú trendvonal. Sok befektető a felette járó árat hosszú távú emelkedő trendnek tekinti.';
+
+  @override
+  String get glossRsi =>
+      'Relatív erő index: a közelmúlt emelkedéseit veti össze az eséseivel egy 0–100-as skálán. 70 felett gyakran túlvettnek mondják (gyorsan emelkedett), 30 alatt túladottnak – de egy erős trendben sokáig ott maradhat.';
+
+  @override
+  String get glossVolatility =>
+      'Mennyit ingadozik az ár napról napra, egy évre vetítve: 20% azt jelenti, hogy egy tipikus év nagyjából ±20%-on belül mozog. A nagyobb volatilitás nagyobb kilengéseket jelent mindkét irányba.';
+
+  @override
+  String get techNote =>
+      'A napi záróárakból számolva. A technikai jelzések a múltat írják le, nem a jövőt.';
 }

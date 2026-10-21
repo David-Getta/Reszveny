@@ -701,5 +701,22 @@
   "awayReported": "Mhedzisiro dzakaburitswa: {symbols}",
   "moveWhyButton": "Sei iri kufamba nhasi?",
   "moveWhyTitle": "{percent} nhasi",
-  "moveWhyNote": "Tsananguro ye-AI kubva munhau dzanhasi dzakawanikwa pawebhu; chikonzero chaicho chinogona kusazivikanwa kana kusiyana. Hazvisi zano rekudyara mari. Zvinoshandisa mibvunzo yako yezuva, kwete ongororo."
+  "moveWhyNote": "Tsananguro ye-AI kubva munhau dzanhasi dzakawanikwa pawebhu; chikonzero chaicho chinogona kusazivikanwa kana kusiyana. Hazvisi zano rekudyara mari. Zvinoshandisa mibvunzo yako yezuva, kwete ongororo.",
+  "sectionTechnical": "Mufananidzo wetekiniki",
+  "labelSma50": "Avhareji yemazuva 50",
+  "labelSma200": "Avhareji yemazuva 200",
+  "labelRsi": "RSI (mazuva 14)",
+  "labelVolatility30": "Kuchinja-chinja (mazuva 30)",
+  "techAbove": "{percent} pamusoro",
+  "techBelow": "{percent} pasi",
+  "techOverbought": "yatengwa zvakanyanya",
+  "techOversold": "yatengeswa zvakanyanya",
+  "techNeutral": "pakati",
+  "techGoldenCross": "Avhareji yemazuva 50 iri pamusoro peavhareji yemazuva 200 – kukwira maererano nekuverenga kwechinyakare.",
+  "techDeathCross": "Avhareji yemazuva 50 iri pasi peavhareji yemazuva 200 – kudzika maererano nekuverenga kwechinyakare.",
+  "glossSma50": "Avhareji yemutengo wekuvhara wemazuva 50 ekupedzisira ekutengeserana. Mutengo uri pamusoro payo kazhinji unoonekwa sesimba renguva pfupi, uri pasi sekushaya simba.",
+  "glossSma200": "Avhareji yemutengo wekuvhara wemazuva 200 ekupedzisira ekutengeserana – mutsetse wechinyakare wenzira yenguva refu. Vazhinji vanoisa mari vanoona mutengo uri pamusoro payo sekukwira kwenguva refu.",
+  "glossRsi": "Chiyero chesimba rinoenzaniswa (RSI): chinoenzanisa mibairo yenguva pfupi yapfuura nekurasikirwa kwenguva pfupi yapfuura pachiyero che0–100. Pamusoro pe70 sheya kazhinji inonzi yatengwa zvakanyanya (yakwira nekukurumidza), pasi pe30 yatengeswa zvakanyanya – asi nzira yakasimba inogona kugara ipapo kwenguva refu.",
+  "glossVolatility": "Kuti mutengo unochinja zvakadini zuva nezuva, zvichiyerwa pagore: 20% zvinoreva kuti gore rakajairika rinofamba mukati meanenge ±20%. Kuchinja-chinja kwakakwirira kunoreva kufamba kukuru kumativi ose ari maviri.",
+  "techNote": "Zvakaverengwa kubva pamitengo yekuvhara yezuva nezuva. Zviratidzo zvetekiniki zvinotsanangura zvakapfuura, kwete zvinouya."
 }

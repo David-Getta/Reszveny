@@ -701,5 +701,22 @@
   "awayReported": "Babimisi ba résultats na bango: {symbols}",
   "moveWhyButton": "Mpo na nini ezali kobongwana lelo?",
   "moveWhyTitle": "{percent} lelo",
-  "moveWhyNote": "Ndimbola ya AI euti na basango ya lelo oyo ezwamaki na internet; ntina ya solo ekoki koyebana te to kozala mosusu. Ezali toli ya kotia mbongo te. Esalelaka motango na yo ya mituna ya mokolo na mokolo, kasi analyse te."
+  "moveWhyNote": "Ndimbola ya AI euti na basango ya lelo oyo ezwamaki na internet; ntina ya solo ekoki koyebana te to kozala mosusu. Ezali toli ya kotia mbongo te. Esalelaka motango na yo ya mituna ya mokolo na mokolo, kasi analyse te.",
+  "sectionTechnical": "Elilingi ya tekiniki",
+  "labelSma50": "Katikati ya mikolo 50",
+  "labelSma200": "Katikati ya mikolo 200",
+  "labelRsi": "RSI (mikolo 14)",
+  "labelVolatility30": "Bobongwani ya ntalo (mikolo 30)",
+  "techAbove": "{percent} likoló",
+  "techBelow": "{percent} na nse",
+  "techOverbought": "esombami mingi",
+  "techOversold": "etekami mingi",
+  "techNeutral": "na katikati",
+  "techGoldenCross": "Katikati ya mikolo 50 ezali likoló ya katikati ya mikolo 200 – na ndenge ya kotánga ya kala, ezali nzela ya komata.",
+  "techDeathCross": "Katikati ya mikolo 50 ezali na nse ya katikati ya mikolo 200 – na ndenge ya kotánga ya kala, ezali nzela ya kokita.",
+  "glossSma50": "Katikati ya ntalo ya nsuka ya mikolo 50 ya zando ya suka. Ntalo oyo ezali likoló na yango etalelamaka mbala mingi lokola makasi ya ntango mokuse, oyo ezali na nse lokola bolembu.",
+  "glossSma200": "Katikati ya ntalo ya nsuka ya mikolo 200 ya zando ya suka – molongo ya nzela ya ntango molai ya kala. Bato mingi oyo batyaka mbongo batalelaka ntalo oyo ezali likoló na yango lokola nzela ya komata ya ntango molai.",
+  "glossRsi": "Emekeli ya makasi ya kokokanisa (RSI): ekokanisaka matomba ya mikolo oyo na bobungisi ya mikolo oyo na emekeli ya 0–100. Likoló ya 70 balobaka mbala mingi ete action esombami mingi (emataki noki), na nse ya 30 etekami mingi – kasi nzela ya makasi ekoki kotikala wana ntango molai.",
+  "glossVolatility": "Ndenge ntalo ebongwanaka mokolo na mokolo, etángami na mbula moko: 20% elingi koloba ete na mbula ya momeseno ntalo etambolaka na kati ya ±20%. Bobongwani monene elingi koloba botamboli monene na ngámbo nyonso mibale.",
+  "techNote": "Etángami uta na ntalo ya nsuka ya mokolo na mokolo. Bilembo ya tekiniki elobelaka makambo oyo eleki, kasi te oyo ekoya."
 }

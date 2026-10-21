@@ -701,5 +701,22 @@
   "awayReported": "Nĩmaarutire moimĩrĩro: {symbols}",
   "moveWhyButton": "Nĩ kĩ gĩratũma ĩgarũrũke ũmũthĩ?",
   "moveWhyTitle": "{percent} ũmũthĩ",
-  "moveWhyNote": "Ũtaarĩria wa AI kuuma mohoro ma ũmũthĩ marĩa monekete intaneti-inĩ; gĩtũmi kĩa ma no gĩkorwo gĩtoĩkaine kana gĩkĩrĩ ngũrani. Ti ũtaaro wa kũiga mbeca. Ĩhũthagĩra mũigana waku wa ciũria cia o mũthenya, ti ũthuthuria."
+  "moveWhyNote": "Ũtaarĩria wa AI kuuma mohoro ma ũmũthĩ marĩa monekete intaneti-inĩ; gĩtũmi kĩa ma no gĩkorwo gĩtoĩkaine kana gĩkĩrĩ ngũrani. Ti ũtaaro wa kũiga mbeca. Ĩhũthagĩra mũigana waku wa ciũria cia o mũthenya, ti ũthuthuria.",
+  "sectionTechnical": "Mũhaano wa ũmenyi",
+  "labelSma50": "Gatagatĩ ka mĩthenya 50",
+  "labelSma200": "Gatagatĩ ka mĩthenya 200",
+  "labelRsi": "RSI (mĩthenya 14)",
+  "labelVolatility30": "Ũgarũrũku wa thogora (mĩthenya 30)",
+  "techAbove": "{percent} igũrũ",
+  "techBelow": "{percent} thĩ",
+  "techOverbought": "ũgũrĩtwo mũno",
+  "techOversold": "ũendetio mũno",
+  "techNeutral": "gatagatĩ",
+  "techGoldenCross": "Gatagatĩ ka mĩthenya 50 nĩ igũrũ rĩa gatagatĩ ka mĩthenya 200 – kũringana na ũthomi wa tene, nĩ njĩra ya kwambata.",
+  "techDeathCross": "Gatagatĩ ka mĩthenya 50 nĩ thĩ ya gatagatĩ ka mĩthenya 200 – kũringana na ũthomi wa tene, nĩ njĩra ya gũikũrũka.",
+  "glossSma50": "Gatagatĩ ka thogora wa kũhinga wa mĩthenya 50 ya thoko ya mũthia. Thogora ũrĩ igũrũ rĩayo kaingĩ wonagwo ta hinya wa ihinda inini, ũrĩ thĩ ta kwaga hinya.",
+  "glossSma200": "Gatagatĩ ka thogora wa kũhinga wa mĩthenya 200 ya thoko ya mũthia – mũhari wa njĩra wa ihinda iraaya wa tene. Aikia mbeca aingĩ monaga thogora ũrĩ igũrũ rĩayo ta njĩra ya kwambata ya ihinda iraaya.",
+  "glossRsi": "Kĩgerio kĩa hinya wa kũgereranio (RSI): kĩgereranagia faida cia ica ikuhĩ na hathara cia ica ikuhĩ na kĩgerio kĩa 0–100. Igũrũ rĩa 70 kaingĩ kuugagwo atĩ ngwatanĩro nĩ ĩgũrĩtwo mũno (yambatire na ihenya), thĩ ya 30 nĩ ĩendetio mũno – no njĩra ĩrĩ hinya no ĩikare ho ihinda iraaya.",
+  "glossVolatility": "Ũrĩa thogora ũgarũrũkaga o mũthenya, ũtarĩtwo kũringana na mwaka ũmwe: 20% nĩ kuuga atĩ mwaka wa ndũire thogora ũthiiaga thĩinĩ wa ta ±20%. Ũgarũrũku mũnene nĩ kuuga mĩthiĩre mĩnene mĩena yothe ĩĩrĩ.",
+  "techNote": "Ũtarĩtwo kuuma thogora wa kũhinga wa o mũthenya. Imenyithia cia ũmenyi itaarĩria maũndũ marĩa mahĩtũku, ti ma rũciũ."
 }

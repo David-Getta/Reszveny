@@ -701,5 +701,22 @@
   "awayReported": "Results wey dem report: {symbols}",
   "moveWhyButton": "Why e dey move today?",
   "moveWhyTitle": "{percent} today",
-  "moveWhyNote": "AI explanation from today news wey we find online; the real reason fit no dey known or fit different. E no be investment advice. E dey use your daily question allowance, no be analysis."
+  "moveWhyNote": "AI explanation from today news wey we find online; the real reason fit no dey known or fit different. E no be investment advice. E dey use your daily question allowance, no be analysis.",
+  "sectionTechnical": "Technical picture",
+  "labelSma50": "50-day average",
+  "labelSma200": "200-day average",
+  "labelRsi": "RSI (14 days)",
+  "labelVolatility30": "Volatility (30 days)",
+  "techAbove": "{percent} above",
+  "techBelow": "{percent} below",
+  "techOverbought": "overbought",
+  "techOversold": "oversold",
+  "techNeutral": "neutral",
+  "techGoldenCross": "Di 50-day average dey above di 200-day average – na uptrend, as di old-school reading go talk.",
+  "techDeathCross": "Di 50-day average dey below di 200-day average – na downtrend, as di old-school reading go talk.",
+  "glossSma50": "Di average closing price for di last 50 trading days. If price dey above am, people dey take am as short-term strength; if e dey below, as weakness.",
+  "glossSma200": "Di average closing price for di last 200 trading days – di classic long-term trend line. Plenty investors dey take price wey dey above am as long-term uptrend.",
+  "glossRsi": "Relative strength index: e compare recent gains with recent losses on 0–100 scale. Above 70 dem dey call di stock overbought (e rise too fast), below 30 oversold – but strong trend fit stay there for long time.",
+  "glossVolatility": "How much di price dey swing from day to day, measured for one year: 20% mean say normal year dey move inside about ±20%. Higher volatility mean bigger moves for both sides.",
+  "techNote": "We calculate am from daily closing prices. Technical signals dey talk about wetin don happen, no be wetin go happen."
 }

@@ -2665,4 +2665,66 @@ class AppLocalizationsMk extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Објаснување од ВИ врз основа на денешните вести најдени на интернет; вистинската причина може да е непозната или различна. Не е инвестициски совет. Ја користи вашата дневна квота за прашања, а не анализа.';
+
+  @override
+  String get sectionTechnical => 'Техничка слика';
+
+  @override
+  String get labelSma50 => '50-дневен просек';
+
+  @override
+  String get labelSma200 => '200-дневен просек';
+
+  @override
+  String get labelRsi => 'RSI (14 дена)';
+
+  @override
+  String get labelVolatility30 => 'Волатилност (30 дена)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent над';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent под';
+  }
+
+  @override
+  String get techOverbought => 'прекупено';
+
+  @override
+  String get techOversold => 'препродадено';
+
+  @override
+  String get techNeutral => 'неутрално';
+
+  @override
+  String get techGoldenCross =>
+      '50-дневниот просек е над 200-дневниот – нагорен тренд според класичното читање.';
+
+  @override
+  String get techDeathCross =>
+      '50-дневниот просек е под 200-дневниот – надолен тренд според класичното читање.';
+
+  @override
+  String get glossSma50 =>
+      'Просечната цена на затворање во последните 50 дена на тргување. Цена над неа често се чита како краткорочна сила, а под неа како слабост.';
+
+  @override
+  String get glossSma200 =>
+      'Просечната цена на затворање во последните 200 дена на тргување – класичната линија на долгорочниот тренд. Многу инвеститори сметаат дека цена над неа значи долгорочен нагорен тренд.';
+
+  @override
+  String get glossRsi =>
+      'Индекс на релативна сила: ги споредува неодамнешните добивки со неодамнешните загуби на скала од 0 до 100. Над 70 акцијата често се нарекува прекупена (пораснала брзо), под 30 препродадена – но силен тренд може долго да остане таму.';
+
+  @override
+  String get glossVolatility =>
+      'Колку цената се движи од ден на ден, пресметано на годишно ниво: 20% значи дека во типична година се движи во рамки од околу ±20%. Повисока волатилност значи поголеми движења во двете насоки.';
+
+  @override
+  String get techNote =>
+      'Пресметано од дневните цени на затворање. Техничките сигнали го опишуваат минатото, не иднината.';
 }

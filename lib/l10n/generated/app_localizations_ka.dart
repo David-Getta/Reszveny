@@ -2647,4 +2647,66 @@ class AppLocalizationsKa extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'AI განმარტება ინტერნეტში ნაპოვნი დღევანდელი სიახლეებიდან; ნამდვილი მიზეზი შეიძლება უცნობი ან სხვა იყოს. არ არის საინვესტიციო რჩევა. ხარჯავს თქვენი შეკითხვების დღიურ ლიმიტს, არა ანალიზს.';
+
+  @override
+  String get sectionTechnical => 'ტექნიკური სურათი';
+
+  @override
+  String get labelSma50 => '50-დღიანი საშუალო';
+
+  @override
+  String get labelSma200 => '200-დღიანი საშუალო';
+
+  @override
+  String get labelRsi => 'RSI (14 დღე)';
+
+  @override
+  String get labelVolatility30 => 'ვოლატილობა (30 დღე)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent ზემოთ';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent ქვემოთ';
+  }
+
+  @override
+  String get techOverbought => 'გადაყიდული';
+
+  @override
+  String get techOversold => 'გადაგაყიდული';
+
+  @override
+  String get techNeutral => 'ნეიტრალური';
+
+  @override
+  String get techGoldenCross =>
+      '50-დღიანი საშუალო 200-დღიანზე მაღლაა – კლასიკური წაკითხვით აღმავალი ტრენდი.';
+
+  @override
+  String get techDeathCross =>
+      '50-დღიანი საშუალო 200-დღიანზე დაბლაა – კლასიკური წაკითხვით დაღმავალი ტრენდი.';
+
+  @override
+  String get glossSma50 =>
+      'ბოლო 50 სავაჭრო დღის დახურვის საშუალო ფასი. მასზე მაღალი ფასი ხშირად მოკლევადიან სიძლიერედ იკითხება, დაბალი – სისუსტედ.';
+
+  @override
+  String get glossSma200 =>
+      'ბოლო 200 სავაჭრო დღის დახურვის საშუალო ფასი – კლასიკური გრძელვადიანი ტრენდის ხაზი. ბევრი ინვესტორი მასზე მაღალ ფასს გრძელვადიან აღმავალ ტრენდად მიიჩნევს.';
+
+  @override
+  String get glossRsi =>
+      'შედარებითი სიძლიერის ინდექსი: ადარებს ბოლო პერიოდის მოგებებს ბოლო პერიოდის ზარალს 0–100 შკალაზე. 70-ზე ზემოთ აქციას ხშირად გადაყიდულს უწოდებენ (სწრაფად გაიზარდა), 30-ზე ქვემოთ – გადაგაყიდულს, მაგრამ ძლიერი ტრენდი იქ დიდხანს შეიძლება დარჩეს.';
+
+  @override
+  String get glossVolatility =>
+      'რამდენად მერყეობს ფასი დღიდან დღემდე, წლიურ გამოსახულებაში: 20% ნიშნავს, რომ ტიპურ წელს ფასი დაახლოებით ±20%-ის ფარგლებში მოძრაობს. მაღალი ვოლატილობა ნიშნავს უფრო დიდ მოძრაობებს ორივე მიმართულებით.';
+
+  @override
+  String get techNote =>
+      'გამოთვლილია დღიური დახურვის ფასებიდან. ტექნიკური სიგნალები აღწერს წარსულს და არა მომავალს.';
 }

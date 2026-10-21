@@ -701,5 +701,22 @@
   "awayReported": "Tulokset julkaistu: {symbols}",
   "moveWhyButton": "Miksi se liikkuu tänään?",
   "moveWhyTitle": "{percent} tänään",
-  "moveWhyNote": "Tekoälyn selitys verkosta löytyneistä tämän päivän uutisista; todellinen syy voi olla tuntematon tai eri. Ei sijoitusneuvontaa. Kuluttaa päivittäistä kysymyskiintiötäsi, ei analyysia."
+  "moveWhyNote": "Tekoälyn selitys verkosta löytyneistä tämän päivän uutisista; todellinen syy voi olla tuntematon tai eri. Ei sijoitusneuvontaa. Kuluttaa päivittäistä kysymyskiintiötäsi, ei analyysia.",
+  "sectionTechnical": "Tekninen kuva",
+  "labelSma50": "50 päivän keskiarvo",
+  "labelSma200": "200 päivän keskiarvo",
+  "labelRsi": "RSI (14 päivää)",
+  "labelVolatility30": "Volatiliteetti (30 päivää)",
+  "techAbove": "{percent} yläpuolella",
+  "techBelow": "{percent} alapuolella",
+  "techOverbought": "yliostettu",
+  "techOversold": "ylimyyty",
+  "techNeutral": "neutraali",
+  "techGoldenCross": "50 päivän keskiarvo on 200 päivän keskiarvon yläpuolella – klassisen tulkinnan mukaan nousutrendi.",
+  "techDeathCross": "50 päivän keskiarvo on 200 päivän keskiarvon alapuolella – klassisen tulkinnan mukaan laskutrendi.",
+  "glossSma50": "Viimeisten 50 kaupankäyntipäivän keskimääräinen päätöskurssi. Sen yläpuolella oleva kurssi tulkitaan usein lyhyen aikavälin vahvuudeksi, alapuolella heikkoudeksi.",
+  "glossSma200": "Viimeisten 200 kaupankäyntipäivän keskimääräinen päätöskurssi – klassinen pitkän aikavälin trendiviiva. Monet sijoittajat pitävät sen yläpuolella olevaa kurssia pitkän aikavälin nousutrendinä.",
+  "glossRsi": "Suhteellinen voimaindeksi: vertaa viimeaikaisia nousuja viimeaikaisiin laskuihin asteikolla 0–100. Yli 70:n osaketta kutsutaan usein yliostetuksi (se on noussut nopeasti), alle 30:n ylimyydyksi – mutta vahva trendi voi pysyä siellä pitkään.",
+  "glossVolatility": "Kuinka paljon kurssi heilahtelee päivästä toiseen, vuositasolle muutettuna: 20 % tarkoittaa, että tyypillisenä vuonna kurssi liikkuu noin ±20 %:n sisällä. Korkeampi volatiliteetti tarkoittaa suurempia liikkeitä molempiin suuntiin.",
+  "techNote": "Laskettu päivittäisistä päätöskursseista. Tekniset signaalit kuvaavat menneisyyttä, eivät tulevaisuutta."
 }

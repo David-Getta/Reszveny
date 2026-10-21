@@ -2653,4 +2653,66 @@ class AppLocalizationsTe extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'వెబ్‌లో దొరికిన ఈరోజు వార్తల ఆధారంగా AI వివరణ; అసలు కారణం తెలియకపోవచ్చు లేదా వేరుగా ఉండవచ్చు. పెట్టుబడి సలహా కాదు. ఇది మీ రోజువారీ ప్రశ్నల కోటాను ఉపయోగిస్తుంది, విశ్లేషణను కాదు.';
+
+  @override
+  String get sectionTechnical => 'సాంకేతిక చిత్రం';
+
+  @override
+  String get labelSma50 => '50 రోజుల సగటు';
+
+  @override
+  String get labelSma200 => '200 రోజుల సగటు';
+
+  @override
+  String get labelRsi => 'RSI (14 రోజులు)';
+
+  @override
+  String get labelVolatility30 => 'అస్థిరత (30 రోజులు)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent పైన';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent కింద';
+  }
+
+  @override
+  String get techOverbought => 'ఓవర్‌బాట్';
+
+  @override
+  String get techOversold => 'ఓవర్‌సోల్డ్';
+
+  @override
+  String get techNeutral => 'తటస్థం';
+
+  @override
+  String get techGoldenCross =>
+      '50 రోజుల సగటు 200 రోజుల సగటు పైన ఉంది – సంప్రదాయ పఠనం ప్రకారం అప్‌ట్రెండ్.';
+
+  @override
+  String get techDeathCross =>
+      '50 రోజుల సగటు 200 రోజుల సగటు కింద ఉంది – సంప్రదాయ పఠనం ప్రకారం డౌన్‌ట్రెండ్.';
+
+  @override
+  String get glossSma50 =>
+      'గత 50 ట్రేడింగ్ రోజుల ముగింపు ధరల సగటు. దాని పైన ఉన్న ధరను తరచుగా స్వల్పకాలిక బలంగా, కింద ఉన్న ధరను బలహీనతగా చూస్తారు.';
+
+  @override
+  String get glossSma200 =>
+      'గత 200 ట్రేడింగ్ రోజుల ముగింపు ధరల సగటు – దీర్ఘకాలిక ట్రెండ్‌కు సంప్రదాయ రేఖ. చాలా పెట్టుబడిదారులు దాని పైన ఉన్న ధరను దీర్ఘకాలిక అప్‌ట్రెండ్‌గా పరిగణిస్తారు.';
+
+  @override
+  String get glossRsi =>
+      'రిలేటివ్ స్ట్రెంత్ ఇండెక్స్: ఇటీవలి లాభాలను ఇటీవలి నష్టాలతో 0–100 స్కేల్‌పై పోల్చుతుంది. 70 పైన స్టాక్‌ను తరచుగా ఓవర్‌బాట్ (వేగంగా పెరిగింది) అని, 30 కింద ఓవర్‌సోల్డ్ అని అంటారు – కానీ బలమైన ట్రెండ్ అక్కడ ఎక్కువ కాలం ఉండవచ్చు.';
+
+  @override
+  String get glossVolatility =>
+      'ధర రోజురోజుకూ ఎంత ఊగిసలాడుతుందో, ఏడాదికి లెక్కించినది: 20% అంటే సాధారణ ఏడాదిలో సుమారు ±20% లోపు కదులుతుంది. ఎక్కువ అస్థిరత అంటే రెండు దిశల్లో పెద్ద కదలికలు.';
+
+  @override
+  String get techNote =>
+      'రోజువారీ ముగింపు ధరల నుంచి లెక్కించినది. సాంకేతిక సంకేతాలు గతాన్ని వివరిస్తాయి, భవిష్యత్తును కాదు.';
 }

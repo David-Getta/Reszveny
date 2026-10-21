@@ -2720,4 +2720,66 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Объяснение ИИ на основе сегодняшних новостей из интернета; настоящая причина может быть неизвестна или иной. Не является инвестиционной рекомендацией. Расходует дневной лимит вопросов, а не анализ.';
+
+  @override
+  String get sectionTechnical => 'Техническая картина';
+
+  @override
+  String get labelSma50 => 'Средняя за 50 дней';
+
+  @override
+  String get labelSma200 => 'Средняя за 200 дней';
+
+  @override
+  String get labelRsi => 'RSI (14 дней)';
+
+  @override
+  String get labelVolatility30 => 'Волатильность (30 дней)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent выше';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent ниже';
+  }
+
+  @override
+  String get techOverbought => 'перекупленность';
+
+  @override
+  String get techOversold => 'перепроданность';
+
+  @override
+  String get techNeutral => 'нейтрально';
+
+  @override
+  String get techGoldenCross =>
+      'Средняя за 50 дней выше средней за 200 дней – по классической трактовке восходящий тренд.';
+
+  @override
+  String get techDeathCross =>
+      'Средняя за 50 дней ниже средней за 200 дней – по классической трактовке нисходящий тренд.';
+
+  @override
+  String get glossSma50 =>
+      'Средняя цена закрытия за последние 50 торговых дней. Цену выше неё часто считают признаком краткосрочной силы, ниже – слабости.';
+
+  @override
+  String get glossSma200 =>
+      'Средняя цена закрытия за последние 200 торговых дней – классическая линия долгосрочного тренда. Многие инвесторы считают цену выше неё долгосрочным восходящим трендом.';
+
+  @override
+  String get glossRsi =>
+      'Индекс относительной силы: сравнивает недавний рост с недавними падениями по шкале от 0 до 100. Выше 70 акцию часто называют перекупленной (она быстро выросла), ниже 30 – перепроданной, но сильный тренд может долго оставаться там.';
+
+  @override
+  String get glossVolatility =>
+      'Насколько сильно цена колеблется день ко дню, в годовом выражении: 20% означает, что в обычный год она движется примерно в пределах ±20%. Чем выше волатильность, тем крупнее движения в обе стороны.';
+
+  @override
+  String get techNote =>
+      'Рассчитано по дневным ценам закрытия. Технические сигналы описывают прошлое, а не будущее.';
 }

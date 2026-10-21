@@ -2640,4 +2640,66 @@ class AppLocalizationsFf extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Faccirde AI iwde e kabaruuji hannde ɗi tawaa e enternet; sabaabu goonga ina waawi wonde ko anndaaka walla ko seerti. Wonaa waajuuji jawdi. Ina huutoroo keerol maa naamnde ñalawma, wonaa ƴeewndo.';
+
+  @override
+  String get sectionTechnical => 'Natal karallagal';
+
+  @override
+  String get labelSma50 => 'Hakkundeyel balɗe 50';
+
+  @override
+  String get labelSma200 => 'Hakkundeyel balɗe 200';
+
+  @override
+  String get labelRsi => 'RSI (balɗe 14)';
+
+  @override
+  String get labelVolatility30 => 'Waylitaare (balɗe 30)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent dow';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent les';
+  }
+
+  @override
+  String get techOverbought => 'soodaama burtii';
+
+  @override
+  String get techOversold => 'yeeyaama burtii';
+
+  @override
+  String get techNeutral => 'hakkunde';
+
+  @override
+  String get techGoldenCross =>
+      'Hakkundeyel balɗe 50 ina dow hakkundeyel balɗe 200 – e janngol kiiɗɗol, ɗum ko laawol ƴellitaare.';
+
+  @override
+  String get techDeathCross =>
+      'Hakkundeyel balɗe 50 ina les hakkundeyel balɗe 200 – e janngol kiiɗɗol, ɗum ko laawol jippagol.';
+
+  @override
+  String get glossSma50 =>
+      'Hakkundeyel coggu uddugol balɗe njulaagu 50 sakkitiiɗe. Coggu dow mum ina jaŋnge heewi ko semmbe daɓɓo, les mum ko lo\'ere.';
+
+  @override
+  String get glossSma200 =>
+      'Hakkundeyel coggu uddugol balɗe njulaagu 200 sakkitiiɗe – ɗiggol laawol juutngol kiiɗɗol. Jom-jawdi heewɓe ina jaaltoo coggu dow mum ko laawol ƴellitaare juutngol.';
+
+  @override
+  String get glossRsi =>
+      'Tiimtol semmbe jiidugol (RSI): ina ƴeewindira ɓamtaare keewɗe e pertugol keewɗe e ɓetol 0–100. So ɓuri 70, heewi wiyeede ko ngeɗu ngun soodaama burtii (ƴellitii law), so les 30 ko yeeyaama burtii – kono laawol tiiɗngol ina waawi heddaade ɗoon ko juuti.';
+
+  @override
+  String get glossVolatility =>
+      'No coggu waylitortoo ñalnde kala, limaama e hitaande wootere: 20% firti ko e hitaande hesere coggu ina dillira hakkunde ±20%. Waylitaare ɓurnde toowde firti ko dillannde mawnde e banngeeji ɗiɗi fof.';
+
+  @override
+  String get techNote =>
+      'Limaama e coggu uddugol ñalawma kala. Maandeeji karallagal ina sifoo ko ɓenni, wonaa ko aroyta.';
 }

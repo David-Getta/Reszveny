@@ -2653,4 +2653,66 @@ class AppLocalizationsNy extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Kufotokoza kwa AI kochokera ku nkhani za lero zopezeka pa intaneti; chifukwa chenicheni chikhoza kukhala chosadziwika kapena chosiyana. Si uphungu wa zachuma. Kumagwiritsa ntchito mafunso anu a tsiku ndi tsiku, osati kusanthula.';
+
+  @override
+  String get sectionTechnical => 'Chithunzi chaukadaulo';
+
+  @override
+  String get labelSma50 => 'Avareji ya masiku 50';
+
+  @override
+  String get labelSma200 => 'Avareji ya masiku 200';
+
+  @override
+  String get labelRsi => 'RSI (masiku 14)';
+
+  @override
+  String get labelVolatility30 => 'Kusinthasintha (masiku 30)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent pamwamba';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent pansi';
+  }
+
+  @override
+  String get techOverbought => 'yagulidwa kwambiri';
+
+  @override
+  String get techOversold => 'yagulitsidwa kwambiri';
+
+  @override
+  String get techNeutral => 'pakati';
+
+  @override
+  String get techGoldenCross =>
+      'Avareji ya masiku 50 ili pamwamba pa avareji ya masiku 200 – kukwera malinga ndi kuwerenga kwachikhalidwe.';
+
+  @override
+  String get techDeathCross =>
+      'Avareji ya masiku 50 ili pansi pa avareji ya masiku 200 – kutsika malinga ndi kuwerenga kwachikhalidwe.';
+
+  @override
+  String get glossSma50 =>
+      'Avareji ya mtengo wotseka wa masiku 50 omaliza a malonda. Mtengo wopitirira umenewu nthawi zambiri umaonedwa ngati mphamvu yakanthawi kochepa, wotsika ngati kufooka.';
+
+  @override
+  String get glossSma200 =>
+      'Avareji ya mtengo wotseka wa masiku 200 omaliza a malonda – mzere wachikhalidwe wa njira yanthawi yayitali. Osunga ndalama ambiri amaona mtengo wopitirira umenewu ngati kukwera kwanthawi yayitali.';
+
+  @override
+  String get glossRsi =>
+      'Mlozera wa mphamvu yofananiza: umayerekezera phindu laposachedwa ndi kutayika kwaposachedwa pa sikelo ya 0–100. Pamwamba pa 70 sitoko nthawi zambiri imati yagulidwa kwambiri (yakwera mofulumira), pansi pa 30 yagulitsidwa kwambiri – koma njira yamphamvu ingakhale pamenepo nthawi yayitali.';
+
+  @override
+  String get glossVolatility =>
+      'Momwe mtengo umasinthira tsiku ndi tsiku, poyerekeza ndi chaka: 20% zikutanthauza kuti chaka chachizolowezi chimayenda pafupifupi ±20%. Kusinthasintha kwakukulu kumatanthauza kuyenda kwakukulu mbali zonse ziwiri.';
+
+  @override
+  String get techNote =>
+      'Zawerengedwa kuchokera ku mitengo yotseka ya tsiku ndi tsiku. Zizindikiro zaukadaulo zimafotokoza zakale, osati zamtsogolo.';
 }

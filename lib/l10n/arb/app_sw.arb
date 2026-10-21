@@ -701,5 +701,22 @@
   "awayReported": "Matokeo yaliyotangazwa: {symbols}",
   "moveWhyButton": "Kwa nini inasogea leo?",
   "moveWhyTitle": "{percent} leo",
-  "moveWhyNote": "Ufafanuzi wa AI kutoka habari za leo zilizopatikana mtandaoni; sababu halisi inaweza kuwa haijulikani au tofauti. Si ushauri wa uwekezaji. Hutumia kiwango chako cha maswali cha siku, si uchambuzi."
+  "moveWhyNote": "Ufafanuzi wa AI kutoka habari za leo zilizopatikana mtandaoni; sababu halisi inaweza kuwa haijulikani au tofauti. Si ushauri wa uwekezaji. Hutumia kiwango chako cha maswali cha siku, si uchambuzi.",
+  "sectionTechnical": "Picha ya kiufundi",
+  "labelSma50": "Wastani wa siku 50",
+  "labelSma200": "Wastani wa siku 200",
+  "labelRsi": "RSI (siku 14)",
+  "labelVolatility30": "Mabadiliko ya bei (siku 30)",
+  "techAbove": "{percent} juu",
+  "techBelow": "{percent} chini",
+  "techOverbought": "imenunuliwa kupita kiasi",
+  "techOversold": "imeuzwa kupita kiasi",
+  "techNeutral": "wastani",
+  "techGoldenCross": "Wastani wa siku 50 uko juu ya wastani wa siku 200 – mwelekeo wa kupanda kwa usomaji wa kawaida.",
+  "techDeathCross": "Wastani wa siku 50 uko chini ya wastani wa siku 200 – mwelekeo wa kushuka kwa usomaji wa kawaida.",
+  "glossSma50": "Wastani wa bei ya kufunga ya siku 50 za biashara zilizopita. Bei iliyo juu yake mara nyingi huonekana kama nguvu ya muda mfupi, iliyo chini kama udhaifu.",
+  "glossSma200": "Wastani wa bei ya kufunga ya siku 200 za biashara zilizopita – mstari wa kawaida wa mwelekeo wa muda mrefu. Wawekezaji wengi huchukulia bei iliyo juu yake kama mwelekeo wa kupanda wa muda mrefu.",
+  "glossRsi": "Kielezo cha nguvu linganishi (RSI): hulinganisha faida za hivi karibuni na hasara za hivi karibuni kwa kipimo cha 0–100. Juu ya 70 hisa mara nyingi husemwa imenunuliwa kupita kiasi (ilipanda haraka), chini ya 30 imeuzwa kupita kiasi – lakini mwelekeo imara unaweza kubaki hapo kwa muda mrefu.",
+  "glossVolatility": "Kiasi bei inavyobadilika siku hadi siku, kikipimwa kwa mwaka: 20% ina maana mwaka wa kawaida husogea ndani ya takriban ±20%. Mabadiliko makubwa zaidi yana maana misogeo mikubwa pande zote mbili.",
+  "techNote": "Imekokotolewa kutoka bei za kufunga za kila siku. Ishara za kiufundi zinaeleza yaliyopita, si yajayo."
 }

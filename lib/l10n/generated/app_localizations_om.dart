@@ -2655,4 +2655,66 @@ class AppLocalizationsOm extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Ibsa AI oduu har\'aa weebii irraa argame irratti hundaa\'e; sababni dhugaa hin beekamu ykn garaagara ta\'uu danda\'a. Gorsa invastimantii miti. Hiree gaaffii guyyaa keessan fayyadama, xiinxala miti.';
+
+  @override
+  String get sectionTechnical => 'Fakkii teeknikaa';
+
+  @override
+  String get labelSma50 => 'Giddugaleessa guyyaa 50';
+
+  @override
+  String get labelSma200 => 'Giddugaleessa guyyaa 200';
+
+  @override
+  String get labelRsi => 'RSI (guyyaa 14)';
+
+  @override
+  String get labelVolatility30 => 'Jijjiirama gatii (guyyaa 30)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent ol';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent gad';
+  }
+
+  @override
+  String get techOverbought => 'baay\'ee bitame';
+
+  @override
+  String get techOversold => 'baay\'ee gurgurame';
+
+  @override
+  String get techNeutral => 'giddugaleessa';
+
+  @override
+  String get techGoldenCross =>
+      'Giddugaleessi guyyaa 50 giddugaleessa guyyaa 200 ol jira – akka dubbisa beekamaatti kallattii olka\'u.';
+
+  @override
+  String get techDeathCross =>
+      'Giddugaleessi guyyaa 50 giddugaleessa guyyaa 200 gad jira – akka dubbisa beekamaatti kallattii gadbu\'u.';
+
+  @override
+  String get glossSma50 =>
+      'Giddugaleessa gatii cufiinsaa guyyoota daldalaa 50 dhumaa. Gatiin isaa ol jiru yeroo baay\'ee akka jabina yeroo gabaabaa, gad jiru ammoo akka dadhabbiitti ilaalama.';
+
+  @override
+  String get glossSma200 =>
+      'Giddugaleessa gatii cufiinsaa guyyoota daldalaa 200 dhumaa – sarara kallattii yeroo dheeraa beekamaa. Invastaroonni baay\'een gatii isaa ol jiru akka kallattii olka\'u yeroo dheeraatti fudhatu.';
+
+  @override
+  String get glossRsi =>
+      'Indeeksii jabina walfakkaataa: bu\'aa dhiheenyaa fi kasaaraa dhiheenyaa safartuu 0–100 irratti wal bira qaba. 70 ol aksiyoonni yeroo baay\'ee baay\'ee bitame (saffisaan ol ka\'e) jedhama, 30 gad ammoo baay\'ee gurgurame – garuu kallattiin cimaan yeroo dheeraa achi turuu danda\'a.';
+
+  @override
+  String get glossVolatility =>
+      'Gatiin guyyaa guyyaatti hammam akka jijjiiramu, gara waggaatti safarame: 20% jechuun waggaa idilee keessa naannoo ±20% keessa socho\'a jechuu dha. Jijjiirama ol\'aanaa jechuun socho\'a guddaa kallattii lamaaniin jechuu dha.';
+
+  @override
+  String get techNote =>
+      'Gatii cufiinsaa guyyaa irraa shallagame. Mallattooleen teeknikaa kan darbe ibsu, kan dhufu hin ibsan.';
 }

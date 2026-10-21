@@ -701,5 +701,22 @@
   "awayReported": "Resultadokuna willasqa: {symbols}",
   "moveWhyButton": "¿Imaraykutaq kunan kuyuchkan?",
   "moveWhyTitle": "{percent} kunan p'unchaw",
-  "moveWhyNote": "Kunan p'unchaw willakuykunamanta, webpi tarisqa, AI sut'inchay; chiqap rayku mana riqsisqa utaq hukniraq kanman. Manam qullqi churanapaq yuyaychaychu. Sapa p'unchaw tapukuyniykita tukun, manam t'aqwiychu."
+  "moveWhyNote": "Kunan p'unchaw willakuykunamanta, webpi tarisqa, AI sut'inchay; chiqap rayku mana riqsisqa utaq hukniraq kanman. Manam qullqi churanapaq yuyaychaychu. Sapa p'unchaw tapukuyniykita tukun, manam t'aqwiychu.",
+  "sectionTechnical": "Tecnico rikuy",
+  "labelSma50": "50 p'unchaw chawpi",
+  "labelSma200": "200 p'unchaw chawpi",
+  "labelRsi": "RSI (14 p'unchaw)",
+  "labelVolatility30": "Tikrakuy (30 p'unchaw)",
+  "techAbove": "{percent} hawanpi",
+  "techBelow": "{percent} uranpi",
+  "techOverbought": "nishu rantisqa",
+  "techOversold": "nishu vendesqa",
+  "techNeutral": "chawpi",
+  "techGoldenCross": "50 p'unchaw chawpi 200 p'unchaw chawpimanta hawanpi kachkan – ñawpa qhawariy hina wicharisqa puriy.",
+  "techDeathCross": "50 p'unchaw chawpi 200 p'unchaw chawpimanta uranpi kachkan – ñawpa qhawariy hina uraykusqa puriy.",
+  "glossSma50": "Qhipa 50 qhatu p'unchawkunapi wichq'ay chaninkunapa chawpin. Chanin chaymanta hawanpi kaptin pisi pachapi kallpa hina qhawakun, uranpi kaptin pisi kallpa hina.",
+  "glossSma200": "Qhipa 200 qhatu p'unchawkunapi wichq'ay chaninkunapa chawpin – unay pacha puriypa ñawpa siq'in. Achka qullqi churaqkuna chaymanta hawanpi chaninta unay pacha wicharisqa puriy hina qhawanku.",
+  "glossRsi": "Kallpa tupachiy índice (RSI): qayna ganakuykunata qayna chinkachiykunawan 0–100 tupuypi tupachin. 70 hawanpi kaptin acción nishu rantisqa ninku (utqaylla wicharirqan), 30 uranpi kaptin nishu vendesqa – ichaqa kallpasapa puriy chaypi unay pacha qipakuyta atin.",
+  "glossVolatility": "Chanin sapa p'unchaw mayk'ata tikrakun, huk watapi tupusqa: 20% ninmi huk watapi yaqa ±20% ukhupi puriyta. Aswan tikrakuy ninmi iskaynin ñanpi aswan hatun puriykunata.",
+  "techNote": "Sapa p'unchaw wichq'ay chaninkunamanta yupasqa. Tecnico unanchakuna ñawpaqta willanku, manam hamuq pachata."
 }

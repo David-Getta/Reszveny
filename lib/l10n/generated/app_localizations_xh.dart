@@ -2657,4 +2657,66 @@ class AppLocalizationsXh extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Ingcaciso ye-AI esuka kwiindaba zanamhlanje ezifumaneka kwi-intanethi; isizathu sokwenyani sisenokungaziwa okanye sahluke. Ayisicebiso sotyalo-mali. Isebenzisa umlinganiselo wakho wemibuzo wosuku, hayi uhlalutyo.';
+
+  @override
+  String get sectionTechnical => 'Umfanekiso wobuchwepheshe';
+
+  @override
+  String get labelSma50 => 'Umndilili weentsuku ezingama-50';
+
+  @override
+  String get labelSma200 => 'Umndilili weentsuku ezingama-200';
+
+  @override
+  String get labelRsi => 'RSI (iintsuku ezili-14)';
+
+  @override
+  String get labelVolatility30 => 'Ukuguquguquka (iintsuku ezingama-30)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent ngaphezulu';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent ngaphantsi';
+  }
+
+  @override
+  String get techOverbought => 'ithengwe ngokugqithisileyo';
+
+  @override
+  String get techOversold => 'ithengisiwe ngokugqithisileyo';
+
+  @override
+  String get techNeutral => 'phakathi';
+
+  @override
+  String get techGoldenCross =>
+      'Umndilili weentsuku ezingama-50 ungaphezulu kowe-200 – ngokufunda kwesiqhelo ngumkhwa onyukayo.';
+
+  @override
+  String get techDeathCross =>
+      'Umndilili weentsuku ezingama-50 ungaphantsi kowe-200 – ngokufunda kwesiqhelo ngumkhwa ohlayo.';
+
+  @override
+  String get glossSma50 =>
+      'Umndilili wexabiso lokuvala leentsuku ezingama-50 zokugqibela zorhwebo. Ixabiso elingaphezulu kwawo lidla ngokubonwa njengamandla exesha elifutshane, elingaphantsi njengobuthathaka.';
+
+  @override
+  String get glossSma200 =>
+      'Umndilili wexabiso lokuvala leentsuku ezingama-200 zokugqibela zorhwebo – umgca wesiqhelo womkhwa wexesha elide. Abatyali-mali abaninzi bathatha ixabiso elingaphezulu kwawo njengomkhwa onyukayo wexesha elide.';
+
+  @override
+  String get glossRsi =>
+      'Isalathisi samandla athelekiswayo: sithelekisa inzuzo yakutshanje nelahleko yakutshanje kwisikali se-0–100. Ngaphezulu kwe-70 isitokhwe sidla ngokuthiwa sithengwe ngokugqithisileyo (sinyuke ngokukhawuleza), ngaphantsi kwe-30 sithengisiwe ngokugqithisileyo – kodwa umkhwa owomeleleyo unokuhlala apho ixesha elide.';
+
+  @override
+  String get glossVolatility =>
+      'Indlela ixabiso elijikajika ngayo imihla ngemihla, lilinganiselwe kunyaka: i-20% ithetha ukuba unyaka oqhelekileyo uhamba phakathi kwe-±20% malunga. Ukuguquguquka okuphezulu kuthetha ukuhamba okukhulu kumacala omabini.';
+
+  @override
+  String get techNote =>
+      'Kubalwe kumaxabiso okuvala emihla ngemihla. Iimpawu zobuchwepheshe zichaza okudlulileyo, hayi ikamva.';
 }

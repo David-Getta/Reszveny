@@ -35,6 +35,15 @@ int? bestIndex(List<double?> values, Better better) {
   return count >= 2 ? best : null;
 }
 
+/// Hány százalékkal van az ár a 200 napos mozgóátlag felett (+) vagy alatt (-).
+double? _vsSma200(StockDetails? d) {
+  final pts = d?.history?.points;
+  if (pts == null || pts.isEmpty) return null;
+  final sma = PriceStats.sma(pts, 200);
+  if (sma == null || sma <= 0) return null;
+  return ((d!.quote?.price ?? pts.last.close) / sma - 1) * 100;
+}
+
 /// Az összehasonlítás sorai: árfolyam, értékeltség, növekedés, jövedelmezőség,
 /// eladósodottság, osztalék, kockázat. A pénzösszegek oszloponként a saját
 /// devizájukban.
@@ -70,6 +79,14 @@ List<CompareRow> buildCompareRows(
       [for (final d in stocks) d?.history == null ? null : PriceStats.returnOver(d!.history!.points, 365)],
       signed,
       Better.higher,
+    ),
+    // Technikai kép: hol tart az ár a 200 napos átlaghoz képest, és az RSI.
+    row(l10n.labelSma200, [for (final d in stocks) _vsSma200(d)], signed, Better.none),
+    row(
+      l10n.labelRsi,
+      [for (final d in stocks) d?.history == null ? null : PriceStats.rsi(d!.history!.points, 14)],
+      (v, _) => fmt.number(v, decimals: 0),
+      Better.none,
     ),
     row(
       l10n.compareFromHigh,

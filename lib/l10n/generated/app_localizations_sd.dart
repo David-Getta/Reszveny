@@ -2638,4 +2638,66 @@ class AppLocalizationsSd extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'ويب تي مليل اڄ جي خبرن تي ٻڌل AI وضاحت؛ اصل سبب اڻڄاتل يا مختلف ٿي سگهي ٿو. سيڙپڪاري جي صلاح ناهي. توهان جو روزاني سوالن جو ڪوٽا استعمال ڪري ٿو، تجزيو نه.';
+
+  @override
+  String get sectionTechnical => 'ٽيڪنيڪل تصوير';
+
+  @override
+  String get labelSma50 => '50 ڏينهن جي سراسري';
+
+  @override
+  String get labelSma200 => '200 ڏينهن جي سراسري';
+
+  @override
+  String get labelRsi => 'RSI (14 ڏينهن)';
+
+  @override
+  String get labelVolatility30 => 'اتار چڙهاءُ (30 ڏينهن)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent مٿي';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent هيٺ';
+  }
+
+  @override
+  String get techOverbought => 'اوور بوٽ';
+
+  @override
+  String get techOversold => 'اوور سولڊ';
+
+  @override
+  String get techNeutral => 'غيرجانبدار';
+
+  @override
+  String get techGoldenCross =>
+      '50 ڏينهن جي سراسري 200 ڏينهن جي سراسري کان مٿي آهي – روايتي پڙهڻي موجب چڙهندڙ رخ.';
+
+  @override
+  String get techDeathCross =>
+      '50 ڏينهن جي سراسري 200 ڏينهن جي سراسري کان هيٺ آهي – روايتي پڙهڻي موجب گهٽجندڙ رخ.';
+
+  @override
+  String get glossSma50 =>
+      'گذريل 50 ڪاروباري ڏينهن جي بند قيمت جي سراسري. ان کان مٿي قيمت کي اڪثر مختصر مدي جي مضبوطي، ۽ هيٺ کي ڪمزوري سمجهيو ويندو آهي.';
+
+  @override
+  String get glossSma200 =>
+      'گذريل 200 ڪاروباري ڏينهن جي بند قيمت جي سراسري – ڊگهي مدي جي رخ جي روايتي لڪير. ڪيترائي سيڙپڪار ان کان مٿي قيمت کي ڊگهي مدي جو چڙهندڙ رخ سمجهن ٿا.';
+
+  @override
+  String get glossRsi =>
+      'ريليٽو اسٽرينٿ انڊيڪس: تازن فائدن کي تازن نقصانن سان 0–100 جي ماپ تي ڀيٽي ٿو. 70 کان مٿي اسٽاڪ کي اڪثر اوور بوٽ (تيزيءَ سان چڙهيو) ۽ 30 کان هيٺ اوور سولڊ چيو ويندو آهي – پر مضبوط رخ اتي ڊگهي وقت تائين رهي سگهي ٿو.';
+
+  @override
+  String get glossVolatility =>
+      'قيمت ڏينهن به ڏينهن ڪيتري هلي ٿي، سال جي حساب سان: 20% معنيٰ هڪ عام سال لڳ ڀڳ ±20% اندر هلي ٿو. وڌيڪ اتار چڙهاءُ معنيٰ ٻنهي پاسن وڏيون حرڪتون.';
+
+  @override
+  String get techNote =>
+      'روزاني بند قيمتن مان حساب ڪيل. ٽيڪنيڪل اشارا ماضي بيان ڪن ٿا، مستقبل نه.';
 }

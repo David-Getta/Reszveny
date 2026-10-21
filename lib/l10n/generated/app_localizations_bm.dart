@@ -2643,4 +2643,66 @@ class AppLocalizationsBm extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'AI ɲɛfɔli min bɔra bi kibaruyaw la ɛntɛrinɛti kan; kun sɛbɛ bɛ se ka kɛ min ma dɔn walima min tɛ kelen ye. A tɛ wariko ladilikan ye. A bɛ i ka tile ɲininkali hakɛ ta, a tɛ sɛgɛsɛgɛli ye.';
+
+  @override
+  String get sectionTechnical => 'Fɛɛrɛko ja';
+
+  @override
+  String get labelSma50 => 'Tile 50 cɛmancɛ';
+
+  @override
+  String get labelSma200 => 'Tile 200 cɛmancɛ';
+
+  @override
+  String get labelRsi => 'RSI (tile 14)';
+
+  @override
+  String get labelVolatility30 => 'Yɛlɛmali (tile 30)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent sanfɛ';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent duguma';
+  }
+
+  @override
+  String get techOverbought => 'a sanna ka tɛmɛ';
+
+  @override
+  String get techOversold => 'a feerela ka tɛmɛ';
+
+  @override
+  String get techNeutral => 'a bɛ cɛmancɛ la';
+
+  @override
+  String get techGoldenCross =>
+      'Tile 50 cɛmancɛ bɛ tile 200 cɛmancɛ sanfɛ – ka kɛɲɛ ni kɔrɔlen jateminɛ ye, o ye yɛlɛnni sira ye.';
+
+  @override
+  String get techDeathCross =>
+      'Tile 50 cɛmancɛ bɛ tile 200 cɛmancɛ duguma – ka kɛɲɛ ni kɔrɔlen jateminɛ ye, o ye jiginni sira ye.';
+
+  @override
+  String get glossSma50 =>
+      'Jago tile 50 labanw datugu sɔngɔ cɛmancɛ. Sɔngɔ min bɛ a sanfɛ, o bɛ jate tuma caman na barika ye waati surun kɔnɔ; min bɛ a duguma, o ye barikantanya ye.';
+
+  @override
+  String get glossSma200 =>
+      'Jago tile 200 labanw datugu sɔngɔ cɛmancɛ – waati jan sira kɔrɔlen. Wariko mɔgɔ caman bɛ sɔngɔ min bɛ a sanfɛ jate waati jan yɛlɛnni sira ye.';
+
+  @override
+  String get glossRsi =>
+      'Barika sumanikɛlan (RSI): a bɛ kɔsa tɔnɔw ni kɔsa bɔnɛw suma 0–100 jate la. Ni a tɛmɛna 70 kan, a bɛ fɔ tuma caman ko a sanna ka tɛmɛ (a yɛlɛnna joona); ni a bɛ 30 duguma, a feerela ka tɛmɛ – nka sira barikama bɛ se ka to yen waati jan.';
+
+  @override
+  String get glossVolatility =>
+      'Sɔngɔ bɛ yɛlɛma cogo min na don o don, jatelen san kelen kɔnɔ: 20% kɔrɔ ye ko san kelen kɔnɔ sɔngɔ bɛ yaala ±20% ɲɔgɔn kɔnɔ. Yɛlɛmali caman kɔrɔ ye yaala belebelew fan fila bɛɛ fɛ.';
+
+  @override
+  String get techNote =>
+      'A jatelen don o don datugu sɔngɔw la. Fɛɛrɛko taamasiyɛnw bɛ tɛmɛnen kofɔ, sini tɛ.';
 }

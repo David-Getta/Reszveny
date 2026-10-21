@@ -2669,4 +2669,66 @@ class AppLocalizationsGl extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Explicación da IA a partir das noticias de hoxe atopadas na web; o motivo real pode ser descoñecido ou distinto. Non é asesoramento de investimento. Consome a túa cota diaria de preguntas, non unha análise.';
+
+  @override
+  String get sectionTechnical => 'Panorama técnico';
+
+  @override
+  String get labelSma50 => 'Media de 50 días';
+
+  @override
+  String get labelSma200 => 'Media de 200 días';
+
+  @override
+  String get labelRsi => 'RSI (14 días)';
+
+  @override
+  String get labelVolatility30 => 'Volatilidade (30 días)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent por riba';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent por baixo';
+  }
+
+  @override
+  String get techOverbought => 'sobrecomprada';
+
+  @override
+  String get techOversold => 'sobrevendida';
+
+  @override
+  String get techNeutral => 'neutral';
+
+  @override
+  String get techGoldenCross =>
+      'A media de 50 días está por riba da de 200 días – tendencia alcista segundo a lectura clásica.';
+
+  @override
+  String get techDeathCross =>
+      'A media de 50 días está por baixo da de 200 días – tendencia baixista segundo a lectura clásica.';
+
+  @override
+  String get glossSma50 =>
+      'O prezo medio de peche dos últimos 50 días de negociación. Un prezo por riba adoita lerse como fortaleza a curto prazo; por baixo, como debilidade.';
+
+  @override
+  String get glossSma200 =>
+      'O prezo medio de peche dos últimos 200 días de negociación – a liña de tendencia clásica a longo prazo. Moitos investidores consideran que un prezo por riba indica unha tendencia alcista a longo prazo.';
+
+  @override
+  String get glossRsi =>
+      'Índice de forza relativa: compara as ganancias recentes coas perdas recentes nunha escala de 0 a 100. Por riba de 70 adoita dicirse que a acción está sobrecomprada (subiu rápido); por baixo de 30, sobrevendida – pero unha tendencia forte pode manterse aí moito tempo.';
+
+  @override
+  String get glossVolatility =>
+      'Canto oscila o prezo dun día a outro, anualizado: un 20% significa que nun ano típico se move dentro de aproximadamente ±20%. Maior volatilidade significa movementos máis grandes en ambas as direccións.';
+
+  @override
+  String get techNote =>
+      'Calculado a partir dos prezos de peche diarios. Os sinais técnicos describen o pasado, non o futuro.';
 }

@@ -2720,4 +2720,66 @@ class AppLocalizationsUk extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Пояснення ШІ на основі сьогоднішніх новин з інтернету; справжня причина може бути невідомою або іншою. Не є інвестиційною порадою. Витрачає денний ліміт запитань, а не аналіз.';
+
+  @override
+  String get sectionTechnical => 'Технічна картина';
+
+  @override
+  String get labelSma50 => 'Середня за 50 днів';
+
+  @override
+  String get labelSma200 => 'Середня за 200 днів';
+
+  @override
+  String get labelRsi => 'RSI (14 днів)';
+
+  @override
+  String get labelVolatility30 => 'Волатильність (30 днів)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent вище';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent нижче';
+  }
+
+  @override
+  String get techOverbought => 'перекупленість';
+
+  @override
+  String get techOversold => 'перепроданість';
+
+  @override
+  String get techNeutral => 'нейтрально';
+
+  @override
+  String get techGoldenCross =>
+      'Середня за 50 днів вища за середню за 200 днів – за класичним тлумаченням висхідний тренд.';
+
+  @override
+  String get techDeathCross =>
+      'Середня за 50 днів нижча за середню за 200 днів – за класичним тлумаченням низхідний тренд.';
+
+  @override
+  String get glossSma50 =>
+      'Середня ціна закриття за останні 50 торгових днів. Ціну вище неї часто вважають ознакою короткострокової сили, нижче – слабкості.';
+
+  @override
+  String get glossSma200 =>
+      'Середня ціна закриття за останні 200 торгових днів – класична лінія довгострокового тренду. Багато інвесторів вважають ціну вище неї довгостроковим висхідним трендом.';
+
+  @override
+  String get glossRsi =>
+      'Індекс відносної сили: порівнює недавні зростання з недавніми падіннями за шкалою від 0 до 100. Вище 70 акцію часто називають перекупленою (вона швидко зросла), нижче 30 – перепроданою, але сильний тренд може довго залишатися там.';
+
+  @override
+  String get glossVolatility =>
+      'Наскільки сильно ціна коливається з дня на день, у річному вимірі: 20% означає, що у звичайний рік вона рухається приблизно в межах ±20%. Вища волатильність означає більші рухи в обидва боки.';
+
+  @override
+  String get techNote =>
+      'Розраховано за денними цінами закриття. Технічні сигнали описують минуле, а не майбутнє.';
 }

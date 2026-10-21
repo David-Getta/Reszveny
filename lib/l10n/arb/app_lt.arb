@@ -701,5 +701,22 @@
   "awayReported": "Paskelbė rezultatus: {symbols}",
   "moveWhyButton": "Kodėl ji šiandien juda?",
   "moveWhyTitle": "{percent} šiandien",
-  "moveWhyNote": "DI paaiškinimas pagal šiandienos naujienas internete; tikroji priežastis gali būti nežinoma arba kitokia. Tai ne investavimo rekomendacija. Naudoja jūsų dienos klausimų limitą, ne analizę."
+  "moveWhyNote": "DI paaiškinimas pagal šiandienos naujienas internete; tikroji priežastis gali būti nežinoma arba kitokia. Tai ne investavimo rekomendacija. Naudoja jūsų dienos klausimų limitą, ne analizę.",
+  "sectionTechnical": "Techninis vaizdas",
+  "labelSma50": "50 dienų vidurkis",
+  "labelSma200": "200 dienų vidurkis",
+  "labelRsi": "RSI (14 dienų)",
+  "labelVolatility30": "Kintamumas (30 dienų)",
+  "techAbove": "{percent} aukščiau",
+  "techBelow": "{percent} žemiau",
+  "techOverbought": "perpirkta",
+  "techOversold": "perparduota",
+  "techNeutral": "neutralu",
+  "techGoldenCross": "50 dienų vidurkis yra aukščiau 200 dienų vidurkio – pagal klasikinį aiškinimą, kylanti tendencija.",
+  "techDeathCross": "50 dienų vidurkis yra žemiau 200 dienų vidurkio – pagal klasikinį aiškinimą, krintanti tendencija.",
+  "glossSma50": "Paskutinių 50 prekybos dienų vidutinė uždarymo kaina. Kaina virš jo dažnai laikoma trumpalaikio stiprumo, žemiau – silpnumo ženklu.",
+  "glossSma200": "Paskutinių 200 prekybos dienų vidutinė uždarymo kaina – klasikinė ilgalaikės tendencijos linija. Daug investuotojų kainą virš jo laiko ilgalaike kylančia tendencija.",
+  "glossRsi": "Santykinio stiprumo indeksas: lygina pastarojo meto kilimus su pastarojo meto kritimais skalėje 0–100. Virš 70 akcija dažnai vadinama perpirkta (greitai pakilo), žemiau 30 – perparduota, tačiau stipri tendencija ten gali išlikti ilgai.",
+  "glossVolatility": "Kiek kaina svyruoja diena iš dienos, perskaičiuota metams: 20 % reiškia, kad įprastais metais kaina juda maždaug ±20 % ribose. Didesnis kintamumas reiškia didesnius judesius abiem kryptimis.",
+  "techNote": "Apskaičiuota pagal dienos uždarymo kainas. Techniniai signalai aprašo praeitį, ne ateitį."
 }

@@ -2652,4 +2652,66 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Spiegazione dell’IA dalle notizie di oggi trovate sul web; il motivo reale potrebbe essere sconosciuto o diverso. Non è una consulenza d’investimento. Consuma la tua quota giornaliera di domande, non un’analisi.';
+
+  @override
+  String get sectionTechnical => 'Quadro tecnico';
+
+  @override
+  String get labelSma50 => 'Media a 50 giorni';
+
+  @override
+  String get labelSma200 => 'Media a 200 giorni';
+
+  @override
+  String get labelRsi => 'RSI (14 giorni)';
+
+  @override
+  String get labelVolatility30 => 'Volatilità (30 giorni)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent sopra';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent sotto';
+  }
+
+  @override
+  String get techOverbought => 'ipercomprato';
+
+  @override
+  String get techOversold => 'ipervenduto';
+
+  @override
+  String get techNeutral => 'neutrale';
+
+  @override
+  String get techGoldenCross =>
+      'La media a 50 giorni è sopra quella a 200 giorni – un trend rialzista secondo la lettura classica.';
+
+  @override
+  String get techDeathCross =>
+      'La media a 50 giorni è sotto quella a 200 giorni – un trend ribassista secondo la lettura classica.';
+
+  @override
+  String get glossSma50 =>
+      'Il prezzo medio di chiusura degli ultimi 50 giorni di borsa. Un prezzo sopra viene spesso letto come forza nel breve periodo, sotto come debolezza.';
+
+  @override
+  String get glossSma200 =>
+      'Il prezzo medio di chiusura degli ultimi 200 giorni di borsa – la classica linea di tendenza di lungo periodo. Molti investitori considerano un prezzo sopra come un trend rialzista di lungo periodo.';
+
+  @override
+  String get glossRsi =>
+      'Indice di forza relativa: confronta i guadagni recenti con le perdite recenti su una scala da 0 a 100. Sopra 70 il titolo è spesso detto ipercomprato (è salito in fretta), sotto 30 ipervenduto – ma un trend forte può restarci a lungo.';
+
+  @override
+  String get glossVolatility =>
+      'Quanto oscilla il prezzo da un giorno all’altro, su base annua: 20% significa che in un anno tipico si muove entro circa ±20%. Una volatilità più alta significa movimenti più ampi in entrambe le direzioni.';
+
+  @override
+  String get techNote =>
+      'Calcolato dai prezzi di chiusura giornalieri. I segnali tecnici descrivono il passato, non il futuro.';
 }

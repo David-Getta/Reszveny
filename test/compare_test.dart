@@ -116,6 +116,8 @@ void main() {
     expect(find.text('No analysis yet'), findsNWidgets(2));
     // Gyorsjelentések: az utolsó negyedév meglepetése és a következő jelentés napja.
     expect(find.text('Last quarter EPS vs. expected'), findsOneWidget);
+    expect(find.text('RSI (14 days)'), findsOneWidget);
+    expect(find.text('200-day average'), findsOneWidget);
     expect(find.text('Next report'), findsOneWidget);
     expect(find.text('+2.7%'), findsWidgets); // a demó: 1,15 a várt 1,12 helyett
 

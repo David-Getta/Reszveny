@@ -2646,4 +2646,66 @@ class AppLocalizationsUr extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'ویب پر ملنے والی آج کی خبروں پر مبنی AI وضاحت؛ اصل وجہ نامعلوم یا مختلف ہو سکتی ہے۔ سرمایہ کاری کا مشورہ نہیں۔ یہ آپ کا روزانہ سوالات کا کوٹا استعمال کرتی ہے، تجزیہ نہیں۔';
+
+  @override
+  String get sectionTechnical => 'تکنیکی تصویر';
+
+  @override
+  String get labelSma50 => '50 دن کی اوسط';
+
+  @override
+  String get labelSma200 => '200 دن کی اوسط';
+
+  @override
+  String get labelRsi => 'RSI (14 دن)';
+
+  @override
+  String get labelVolatility30 => 'اتار چڑھاؤ (30 دن)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent اوپر';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent نیچے';
+  }
+
+  @override
+  String get techOverbought => 'اوور بوٹ';
+
+  @override
+  String get techOversold => 'اوور سولڈ';
+
+  @override
+  String get techNeutral => 'غیر جانبدار';
+
+  @override
+  String get techGoldenCross =>
+      '50 دن کی اوسط 200 دن کی اوسط سے اوپر ہے – روایتی تعبیر کے مطابق تیزی کا رجحان۔';
+
+  @override
+  String get techDeathCross =>
+      '50 دن کی اوسط 200 دن کی اوسط سے نیچے ہے – روایتی تعبیر کے مطابق مندی کا رجحان۔';
+
+  @override
+  String get glossSma50 =>
+      'گزشتہ 50 کاروباری دنوں کی بند قیمت کی اوسط۔ اس سے اوپر قیمت کو اکثر قلیل مدتی مضبوطی اور نیچے کو کمزوری سمجھا جاتا ہے۔';
+
+  @override
+  String get glossSma200 =>
+      'گزشتہ 200 کاروباری دنوں کی بند قیمت کی اوسط – طویل مدتی رجحان کی روایتی لکیر۔ بہت سے سرمایہ کار اس سے اوپر قیمت کو طویل مدتی تیزی کا رجحان مانتے ہیں۔';
+
+  @override
+  String get glossRsi =>
+      'ریلیٹو اسٹرینتھ انڈیکس: حالیہ منافع کا حالیہ نقصانات سے 0–100 کے پیمانے پر موازنہ کرتا ہے۔ 70 سے اوپر اسٹاک کو اکثر اوور بوٹ (تیزی سے چڑھا) اور 30 سے نیچے اوور سولڈ کہا جاتا ہے – لیکن مضبوط رجحان وہاں لمبے عرصے تک رہ سکتا ہے۔';
+
+  @override
+  String get glossVolatility =>
+      'قیمت روزانہ کتنی ہلتی ہے، سال کے حساب سے: 20% کا مطلب ہے کہ ایک عام سال میں تقریباً ±20% کے اندر چلتی ہے۔ زیادہ اتار چڑھاؤ کا مطلب دونوں طرف بڑی حرکتیں۔';
+
+  @override
+  String get techNote =>
+      'روزانہ بند قیمتوں سے شمار کیا گیا۔ تکنیکی اشارے ماضی بیان کرتے ہیں، مستقبل نہیں۔';
 }

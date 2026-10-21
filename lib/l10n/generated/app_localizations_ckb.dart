@@ -2647,4 +2647,66 @@ class AppLocalizationsCkb extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'ڕوونکردنەوەی AI لە هەواڵەکانی ئەمڕۆ کە لە وێب دۆزراونەتەوە؛ هۆکاری ڕاستەقینە لەوانەیە نەزانراو یان جیاواز بێت. ئامۆژگاری وەبەرهێنان نییە. بەشی ڕۆژانەی پرسیارەکانت بەکاردەهێنێت، نەک شیکاری.';
+
+  @override
+  String get sectionTechnical => 'وێنەی تەکنیکی';
+
+  @override
+  String get labelSma50 => 'تێکڕای ٥٠ ڕۆژ';
+
+  @override
+  String get labelSma200 => 'تێکڕای ٢٠٠ ڕۆژ';
+
+  @override
+  String get labelRsi => 'RSI (١٤ ڕۆژ)';
+
+  @override
+  String get labelVolatility30 => 'جووڵەی نرخ (٣٠ ڕۆژ)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent سەرووتر';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent خوارتر';
+  }
+
+  @override
+  String get techOverbought => 'زۆر کڕدراو';
+
+  @override
+  String get techOversold => 'زۆر فرۆشراو';
+
+  @override
+  String get techNeutral => 'بێلایەن';
+
+  @override
+  String get techGoldenCross =>
+      'تێکڕای ٥٠ ڕۆژ لە سەرووی تێکڕای ٢٠٠ ڕۆژە – بەپێی خوێندنەوەی کلاسیک ئاراستەی سەرکەوتنە.';
+
+  @override
+  String get techDeathCross =>
+      'تێکڕای ٥٠ ڕۆژ لە خوارووی تێکڕای ٢٠٠ ڕۆژە – بەپێی خوێندنەوەی کلاسیک ئاراستەی دابەزینە.';
+
+  @override
+  String get glossSma50 =>
+      'تێکڕای نرخی داخستنی ٥٠ ڕۆژی بازرگانی کۆتایی. نرخی سەرووی ئەو زۆرجار وەک بەهێزی کورتخایەن دەخوێنرێتەوە، خوارووی وەک لاوازی.';
+
+  @override
+  String get glossSma200 =>
+      'تێکڕای نرخی داخستنی ٢٠٠ ڕۆژی بازرگانی کۆتایی – هێڵی ئاراستەی کلاسیکی درێژخایەن. زۆرێک لە وەبەرهێنەران نرخی سەرووی ئەو بە ئاراستەی سەرکەوتنی درێژخایەن دادەنێن.';
+
+  @override
+  String get glossRsi =>
+      'پێوەری هێزی ڕێژەیی: قازانجەکانی ئەم دواییە لەگەڵ زیانەکانی ئەم دواییە لەسەر پێوانەی ٠–١٠٠ بەراورد دەکات. لە سەرووی ٧٠ زۆرجار دەوترێت پشکەکە زۆر کڕدراوە (بە خێرایی بەرزبووەتەوە)، لە خوارووی ٣٠ زۆر فرۆشراوە – بەڵام ئاراستەی بەهێز دەکرێت ماوەیەکی درێژ لەوێ بمێنێتەوە.';
+
+  @override
+  String get glossVolatility =>
+      'نرخ ڕۆژ بە ڕۆژ چەند دەجووڵێت، بە پێوانەی ساڵێک: ٢٠% واتە لە ساڵێکی ئاسایی نرخ لە نێوان نزیکەی ±٢٠% دەجووڵێت. جووڵەی بەرزتر واتە جووڵەی گەورەتر بە هەردوو لا.';
+
+  @override
+  String get techNote =>
+      'لە نرخەکانی داخستنی ڕۆژانە هەژمار کراوە. ئاماژەکانی تەکنیکی ڕابردوو باس دەکەن، نەک داهاتوو.';
 }

@@ -2644,4 +2644,66 @@ class AppLocalizationsKab extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Asegzi n AI seg yisallen n ass-a i yettwafen deg web; ssebba n tidet tezmer ad tili ur tettwassen ara neɣ temgarad. Mačči d aweṣṣi ɣef usenfaṛ n yidrimen. Yesseqdac amur-ik n yisteqsiyen n yal ass, mačči d tasleḍt.';
+
+  @override
+  String get sectionTechnical => 'Tugna tatiknikant';
+
+  @override
+  String get labelSma50 => 'Talemmast n 50 wussan';
+
+  @override
+  String get labelSma200 => 'Talemmast n 200 wussan';
+
+  @override
+  String get labelRsi => 'RSI (14 wussan)';
+
+  @override
+  String get labelVolatility30 => 'Abeddel n ssuma (30 wussan)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent nnig';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent ddaw';
+  }
+
+  @override
+  String get techOverbought => 'yettwaɣ aṭas';
+
+  @override
+  String get techOversold => 'yettwazenz aṭas';
+
+  @override
+  String get techNeutral => 'alemmas';
+
+  @override
+  String get techGoldenCross =>
+      'Talemmast n 50 wussan tella nnig talemmast n 200 wussan – s tɣuri taqburt, d abrid n ulay.';
+
+  @override
+  String get techDeathCross =>
+      'Talemmast n 50 wussan tella ddaw talemmast n 200 wussan – s tɣuri taqburt, d abrid n tuksa.';
+
+  @override
+  String get glossSma50 =>
+      'Talemmast n ssuma n umdal n 50 wussan ineggura n tnezzut. Ssuma yellan nnig-is tettwaɣra aṭas d tazmert n wakud awezlan, ddaw-as d tifeẓẓa.';
+
+  @override
+  String get glossSma200 =>
+      'Talemmast n ssuma n umdal n 200 wussan ineggura n tnezzut – izirig aqbur n ubrid n wakud aɣezfan. Aṭas n imsedrimen ḥesben ssuma yellan nnig-is d abrid n ulay n wakud aɣezfan.';
+
+  @override
+  String get glossRsi =>
+      'Amatar n tezmert tamsasant (RSI): yesmenyaf irbaḥen ineggura d ixesṣaren ineggura ɣef tsekkilt 0–100. Nnig 70, qqaren-as aṭas i teḥtitt yettwaɣ aṭas (tuli s tɣawla), ddaw 30 yettwazenz aṭas – maca abrid iǧehden yezmer ad yeqqim dinna aṭas n wakud.';
+
+  @override
+  String get glossVolatility =>
+      'Acḥal i tbeddil ssuma seg wass ɣer wass, yettwaḥseb i useggas: 20% yebɣa ad yini deg useggas amagnu ssuma tettembiwil deg wazal n ±20%. Abeddel meqqren yebɣa ad yini imbiwlen meqqren ɣer snat n tamiwin.';
+
+  @override
+  String get techNote =>
+      'Yettwaḥseb seg ssumat n umdal n yal ass. Imataren itiknikanen glemmen ayen iɛeddan, mačči ayen i d-iteddun.';
 }

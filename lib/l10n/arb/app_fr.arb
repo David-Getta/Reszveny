@@ -701,5 +701,22 @@
   "awayReported": "Résultats publiés : {symbols}",
   "moveWhyButton": "Pourquoi bouge-t-elle aujourd’hui ?",
   "moveWhyTitle": "{percent} aujourd’hui",
-  "moveWhyNote": "Explication de l’IA d’après les actualités du jour trouvées sur le web ; la vraie raison peut être inconnue ou différente. Pas un conseil en investissement. Consomme votre quota quotidien de questions, pas une analyse."
+  "moveWhyNote": "Explication de l’IA d’après les actualités du jour trouvées sur le web ; la vraie raison peut être inconnue ou différente. Pas un conseil en investissement. Consomme votre quota quotidien de questions, pas une analyse.",
+  "sectionTechnical": "Tableau technique",
+  "labelSma50": "Moyenne 50 jours",
+  "labelSma200": "Moyenne 200 jours",
+  "labelRsi": "RSI (14 jours)",
+  "labelVolatility30": "Volatilité (30 jours)",
+  "techAbove": "{percent} au-dessus",
+  "techBelow": "{percent} en dessous",
+  "techOverbought": "surachat",
+  "techOversold": "survente",
+  "techNeutral": "neutre",
+  "techGoldenCross": "La moyenne 50 jours est au-dessus de la moyenne 200 jours – une tendance haussière selon la lecture classique.",
+  "techDeathCross": "La moyenne 50 jours est en dessous de la moyenne 200 jours – une tendance baissière selon la lecture classique.",
+  "glossSma50": "Le cours de clôture moyen des 50 derniers jours de bourse. Un cours au-dessus est souvent lu comme un signe de force à court terme, en dessous comme un signe de faiblesse.",
+  "glossSma200": "Le cours de clôture moyen des 200 derniers jours de bourse – la ligne de tendance classique à long terme. Beaucoup d’investisseurs considèrent un cours au-dessus comme une tendance haussière de long terme.",
+  "glossRsi": "Indice de force relative : compare les gains récents aux pertes récentes sur une échelle de 0 à 100. Au-dessus de 70, on dit souvent que l’action est en surachat (elle a monté vite), en dessous de 30 en survente – mais une tendance forte peut y rester longtemps.",
+  "glossVolatility": "L’ampleur des variations du cours d’un jour à l’autre, ramenée à une année : 20 % signifie qu’une année typique évolue dans une fourchette d’environ ±20 %. Une volatilité plus élevée signifie des mouvements plus amples dans les deux sens.",
+  "techNote": "Calculé à partir des cours de clôture quotidiens. Les signaux techniques décrivent le passé, pas l’avenir."
 }

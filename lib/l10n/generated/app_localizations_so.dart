@@ -2655,4 +2655,66 @@ class AppLocalizationsSo extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Sharraxaad AI oo ku salaysan wararka maanta laga helay internetka; sababta dhabta ah waxay noqon kartaa mid aan la garanayn ama ka duwan. Talo maalgashi maaha. Waxay isticmaashaa tirada su\'aalahaaga maalinlaha ah, ma aha falanqayn.';
+
+  @override
+  String get sectionTechnical => 'Sawirka farsamo';
+
+  @override
+  String get labelSma50 => 'Celceliska 50 maalmood';
+
+  @override
+  String get labelSma200 => 'Celceliska 200 maalmood';
+
+  @override
+  String get labelRsi => 'RSI (14 maalmood)';
+
+  @override
+  String get labelVolatility30 => 'Isbeddel qiime (30 maalmood)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent ka sarreeya';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent ka hooseeya';
+  }
+
+  @override
+  String get techOverbought => 'si xad-dhaaf loo iibsaday';
+
+  @override
+  String get techOversold => 'si xad-dhaaf loo iibiyay';
+
+  @override
+  String get techNeutral => 'dhexdhexaad';
+
+  @override
+  String get techGoldenCross =>
+      'Celceliska 50 maalmood wuxuu ka sarreeyaa celceliska 200 maalmood – akhriska caadiga ah waa kor u kac.';
+
+  @override
+  String get techDeathCross =>
+      'Celceliska 50 maalmood wuxuu ka hooseeyaa celceliska 200 maalmood – akhriska caadiga ah waa hoos u dhac.';
+
+  @override
+  String get glossSma50 =>
+      'Celceliska qiimaha xidhitaanka ee 50 maalmood ee ganacsi ee ugu dambeeyay. Qiime ka sarreeya badanaa loo arkaa xoog muddo gaaban, kan ka hooseeya daciifnimo.';
+
+  @override
+  String get glossSma200 =>
+      'Celceliska qiimaha xidhitaanka ee 200 maalmood ee ganacsi ee ugu dambeeyay – xariiqda caadiga ah ee isbeddelka muddada dheer. Maalgashadayaal badan qiime ka sarreeya waxay u arkaan kor u kac muddo dheer.';
+
+  @override
+  String get glossRsi =>
+      'Tusmada xoogga isbarbardhigga: waxay isbarbar dhigtaa faa\'iidooyinka dhowaan iyo khasaaraha dhowaan miisaan 0–100. Ka sarreeya 70 saamiga badanaa waxaa la yiraahdaa si xad-dhaaf loo iibsaday (si degdeg ah kor u kacay), ka hooseeya 30 si xad-dhaaf loo iibiyay – laakiin isbeddel xoog leh wuu ku sii jiri karaa halkaas muddo dheer.';
+
+  @override
+  String get glossVolatility =>
+      'Inta qiimuhu maalin ka maalin u kala baxo, loo qiyaasay sannad: 20% waxay ka dhigan tahay in sannad caadi ah uu ku dhex dhaqaaqo qiyaastii ±20%. Isbeddel sare wuxuu ka dhigan yahay dhaqdhaqaaq weyn labada dhinac.';
+
+  @override
+  String get techNote =>
+      'Laga xisaabiyay qiimayaasha xidhitaanka maalinlaha ah. Calaamadaha farsamo waxay sharxaan wixii tegay, ee ma aha mustaqbalka.';
 }

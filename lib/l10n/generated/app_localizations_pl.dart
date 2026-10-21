@@ -2719,4 +2719,66 @@ class AppLocalizationsPl extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Wyjaśnienie AI na podstawie dzisiejszych wiadomości znalezionych w sieci; prawdziwy powód może być nieznany lub inny. To nie jest porada inwestycyjna. Zużywa dzienny limit pytań, nie analizę.';
+
+  @override
+  String get sectionTechnical => 'Obraz techniczny';
+
+  @override
+  String get labelSma50 => 'Średnia 50-dniowa';
+
+  @override
+  String get labelSma200 => 'Średnia 200-dniowa';
+
+  @override
+  String get labelRsi => 'RSI (14 dni)';
+
+  @override
+  String get labelVolatility30 => 'Zmienność (30 dni)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent powyżej';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent poniżej';
+  }
+
+  @override
+  String get techOverbought => 'wykupienie';
+
+  @override
+  String get techOversold => 'wyprzedanie';
+
+  @override
+  String get techNeutral => 'neutralnie';
+
+  @override
+  String get techGoldenCross =>
+      'Średnia 50-dniowa jest powyżej 200-dniowej – według klasycznej interpretacji trend wzrostowy.';
+
+  @override
+  String get techDeathCross =>
+      'Średnia 50-dniowa jest poniżej 200-dniowej – według klasycznej interpretacji trend spadkowy.';
+
+  @override
+  String get glossSma50 =>
+      'Średnia cena zamknięcia z ostatnich 50 sesji. Kurs powyżej niej często odczytuje się jako krótkoterminową siłę, poniżej – jako słabość.';
+
+  @override
+  String get glossSma200 =>
+      'Średnia cena zamknięcia z ostatnich 200 sesji – klasyczna linia trendu długoterminowego. Wielu inwestorów uznaje kurs powyżej niej za długoterminowy trend wzrostowy.';
+
+  @override
+  String get glossRsi =>
+      'Wskaźnik siły względnej: porównuje ostatnie wzrosty z ostatnimi spadkami w skali 0–100. Powyżej 70 akcję często nazywa się wykupioną (szybko rosła), poniżej 30 wyprzedaną – ale silny trend może utrzymać się tam długo.';
+
+  @override
+  String get glossVolatility =>
+      'Jak mocno kurs waha się z dnia na dzień, w przeliczeniu na rok: 20% oznacza, że w typowym roku porusza się w przedziale około ±20%. Wyższa zmienność to większe ruchy w obie strony.';
+
+  @override
+  String get techNote =>
+      'Obliczono na podstawie dziennych cen zamknięcia. Sygnały techniczne opisują przeszłość, nie przyszłość.';
 }

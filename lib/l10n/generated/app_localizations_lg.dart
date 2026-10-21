@@ -2656,4 +2656,66 @@ class AppLocalizationsLg extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Ennyinnyonnyola ya AI okuva mu mawulire ga leero agasangiddwa ku mukutu; ensonga entuufu eyinza obutamanyibwa oba okuba ey\'enjawulo. Si kubuulirira ku kusiga ensimbi. Ekozesa omuwendo gwo gw\'ebibuuzo ebya buli lunaku, si kwekenneenya.';
+
+  @override
+  String get sectionTechnical => 'Ekifaananyi eky\'obukugu';
+
+  @override
+  String get labelSma50 => 'Wakati w\'ennaku 50';
+
+  @override
+  String get labelSma200 => 'Wakati w\'ennaku 200';
+
+  @override
+  String get labelRsi => 'RSI (ennaku 14)';
+
+  @override
+  String get labelVolatility30 => 'Enkyukakyuka y\'omuwendo (ennaku 30)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent waggulu';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent wansi';
+  }
+
+  @override
+  String get techOverbought => 'gugulidwa ennyo';
+
+  @override
+  String get techOversold => 'gutundiddwa ennyo';
+
+  @override
+  String get techNeutral => 'wakati';
+
+  @override
+  String get techGoldenCross =>
+      'Wakati w\'ennaku 50 ali waggulu wa wakati w\'ennaku 200 – okusinziira ku nsoma ey\'edda, kiraga okulinnya.';
+
+  @override
+  String get techDeathCross =>
+      'Wakati w\'ennaku 50 ali wansi wa wakati w\'ennaku 200 – okusinziira ku nsoma ey\'edda, kiraga okukka.';
+
+  @override
+  String get glossSma50 =>
+      'Wakati w\'emiwendo egy\'okuggalawo egy\'ennaku 50 ez\'obusuubuzi ezaakayita. Omuwendo oguli waggulu waayo gutera okutwalibwa ng\'amaanyi ag\'ekiseera ekitono, oguli wansi ng\'obunafu.';
+
+  @override
+  String get glossSma200 =>
+      'Wakati w\'emiwendo egy\'okuggalawo egy\'ennaku 200 ez\'obusuubuzi ezaakayita – olunyiriri olw\'edda olw\'ekiseera ekiwanvu. Abasigansimbi bangi batwala omuwendo oguli waggulu waayo ng\'okulinnya okw\'ekiseera ekiwanvu.';
+
+  @override
+  String get glossRsi =>
+      'Ekipimo ky\'amaanyi agageraageranyizibwa (RSI): kigeraageranya amagoba ag\'ennaku zino n\'okufiirwa okw\'ennaku zino ku kipimo kya 0–100. Waggulu wa 70 sitoka etera okuyitibwa egulidwa ennyo (yalinnya mangu), wansi wa 30 etundiddwa ennyo – naye omutendera ogw\'amaanyi gusobola okusigala awo ekiseera kiwanvu.';
+
+  @override
+  String get glossVolatility =>
+      'Omuwendo bwe gukyukakyuka buli lunaku, nga gubaliddwa mu mwaka gumu: 20% kitegeeza nti mu mwaka ogwa bulijjo omuwendo gutambulira mu ±20%. Enkyukakyuka ennyingi kitegeeza entambula ennene ku njuyi zombi.';
+
+  @override
+  String get techNote =>
+      'Kibaliddwa okuva mu miwendo egy\'okuggalawo egya buli lunaku. Obubonero obw\'obukugu bunnyonnyola ebyayita, so si eby\'omu maaso.';
 }

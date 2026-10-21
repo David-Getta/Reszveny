@@ -2625,4 +2625,66 @@ class AppLocalizationsKm extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'ការពន្យល់ដោយ AI ពីព័ត៌មានថ្ងៃនេះដែលរកឃើញនៅលើវេប។ មូលហេតុពិតអាចមិនស្គាល់ ឬខុសគ្នា។ មិនមែនជាដំបូន្មានវិនិយោគទេ។ ប្រើកូតាសំណួរប្រចាំថ្ងៃរបស់អ្នក មិនមែនការវិភាគទេ។';
+
+  @override
+  String get sectionTechnical => 'រូបភាពបច្ចេកទេស';
+
+  @override
+  String get labelSma50 => 'មធ្យម ៥០ ថ្ងៃ';
+
+  @override
+  String get labelSma200 => 'មធ្យម ២០០ ថ្ងៃ';
+
+  @override
+  String get labelRsi => 'RSI (១៤ ថ្ងៃ)';
+
+  @override
+  String get labelVolatility30 => 'ភាពប្រែប្រួល (៣០ ថ្ងៃ)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent ខាងលើ';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent ខាងក្រោម';
+  }
+
+  @override
+  String get techOverbought => 'ទិញលើសកម្រិត';
+
+  @override
+  String get techOversold => 'លក់លើសកម្រិត';
+
+  @override
+  String get techNeutral => 'អព្យាក្រឹត';
+
+  @override
+  String get techGoldenCross =>
+      'មធ្យម ៥០ ថ្ងៃ ស្ថិតនៅខាងលើមធ្យម ២០០ ថ្ងៃ – និន្នាការឡើង តាមការអានបែបបុរាណ។';
+
+  @override
+  String get techDeathCross =>
+      'មធ្យម ៥០ ថ្ងៃ ស្ថិតនៅខាងក្រោមមធ្យម ២០០ ថ្ងៃ – និន្នាការចុះ តាមការអានបែបបុរាណ។';
+
+  @override
+  String get glossSma50 =>
+      'តម្លៃបិទជាមធ្យមក្នុងរយៈពេល ៥០ ថ្ងៃជួញដូរចុងក្រោយ។ តម្លៃខាងលើវាជារឿយៗត្រូវបានចាត់ទុកជាកម្លាំងរយៈពេលខ្លី ខាងក្រោមវាជាភាពទន់ខ្សោយ។';
+
+  @override
+  String get glossSma200 =>
+      'តម្លៃបិទជាមធ្យមក្នុងរយៈពេល ២០០ ថ្ងៃជួញដូរចុងក្រោយ – ខ្សែនិន្នាការរយៈពេលវែងបែបបុរាណ។ វិនិយោគិនច្រើនចាត់ទុកតម្លៃខាងលើវាជានិន្នាការឡើងរយៈពេលវែង។';
+
+  @override
+  String get glossRsi =>
+      'សន្ទស្សន៍កម្លាំងទាក់ទង៖ ប្រៀបធៀបការកើនឡើងថ្មីៗជាមួយការធ្លាក់ចុះថ្មីៗ លើមាត្រដ្ឋាន ០–១០០។ លើស ៧០ ភាគហ៊ុនជារឿយៗត្រូវបានហៅថាទិញលើសកម្រិត (ឡើងលឿន) ក្រោម ៣០ លក់លើសកម្រិត – ប៉ុន្តែនិន្នាការខ្លាំងអាចនៅទីនោះបានយូរ។';
+
+  @override
+  String get glossVolatility =>
+      'តម្លៃប្រែប្រួលប៉ុន្មានពីមួយថ្ងៃទៅមួយថ្ងៃ គិតជាប្រចាំឆ្នាំ៖ ២០% មានន័យថាក្នុងឆ្នាំធម្មតា តម្លៃផ្លាស់ប្តូរក្នុងរង្វង់ប្រហែល ±២០%។ ភាពប្រែប្រួលខ្ពស់ជាង មានន័យថាចលនាធំជាងទាំងពីរទិស។';
+
+  @override
+  String get techNote =>
+      'គណនាពីតម្លៃបិទប្រចាំថ្ងៃ។ សញ្ញាបច្ចេកទេសពណ៌នាអតីតកាល មិនមែនអនាគតទេ។';
 }

@@ -701,5 +701,22 @@
   "awayReported": "Resultate bekendgemaak: {symbols}",
   "moveWhyButton": "Hoekom beweeg dit vandag?",
   "moveWhyTitle": "{percent} vandag",
-  "moveWhyNote": "KI-verduideliking uit vandag se nuus op die web; die werklike rede kan onbekend of anders wees. Nie beleggingsadvies nie. Gebruik jou daaglikse vraagkwota, nie ’n ontleding nie."
+  "moveWhyNote": "KI-verduideliking uit vandag se nuus op die web; die werklike rede kan onbekend of anders wees. Nie beleggingsadvies nie. Gebruik jou daaglikse vraagkwota, nie ’n ontleding nie.",
+  "sectionTechnical": "Tegniese beeld",
+  "labelSma50": "50-dae-gemiddelde",
+  "labelSma200": "200-dae-gemiddelde",
+  "labelRsi": "RSI (14 dae)",
+  "labelVolatility30": "Volatiliteit (30 dae)",
+  "techAbove": "{percent} bo",
+  "techBelow": "{percent} onder",
+  "techOverbought": "oorgekoop",
+  "techOversold": "oorverkoop",
+  "techNeutral": "neutraal",
+  "techGoldenCross": "Die 50-dae-gemiddelde is bo die 200-dae-gemiddelde – volgens die klassieke lesing ’n stygende trend.",
+  "techDeathCross": "Die 50-dae-gemiddelde is onder die 200-dae-gemiddelde – volgens die klassieke lesing ’n dalende trend.",
+  "glossSma50": "Die gemiddelde sluitingsprys van die laaste 50 handelsdae. ’n Prys daarbo word dikwels as korttermynsterkte gelees, daaronder as swakheid.",
+  "glossSma200": "Die gemiddelde sluitingsprys van die laaste 200 handelsdae – die klassieke langtermyn-trendlyn. Baie beleggers beskou ’n prys daarbo as ’n langtermyn-stygende trend.",
+  "glossRsi": "Relatiewe sterkte-indeks: vergelyk onlangse winste met onlangse verliese op ’n skaal van 0–100. Bo 70 word die aandeel dikwels oorgekoop genoem (dit het vinnig gestyg), onder 30 oorverkoop – maar ’n sterk trend kan lank daar bly.",
+  "glossVolatility": "Hoeveel die prys van dag tot dag skommel, omgereken na ’n jaar: 20% beteken ’n tipiese jaar beweeg binne ongeveer ±20%. Hoër volatiliteit beteken groter bewegings in albei rigtings.",
+  "techNote": "Bereken uit daaglikse sluitingspryse. Tegniese seine beskryf die verlede, nie die toekoms nie."
 }

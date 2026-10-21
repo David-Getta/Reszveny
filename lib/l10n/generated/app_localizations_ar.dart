@@ -2711,4 +2711,66 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'تفسير بالذكاء الاصطناعي من أخبار اليوم على الويب؛ قد يكون السبب الحقيقي مجهولاً أو مختلفاً. ليست نصيحة استثمارية. يستهلك حصتك اليومية من الأسئلة، وليس تحليلاً.';
+
+  @override
+  String get sectionTechnical => 'الصورة الفنية';
+
+  @override
+  String get labelSma50 => 'متوسط 50 يومًا';
+
+  @override
+  String get labelSma200 => 'متوسط 200 يوم';
+
+  @override
+  String get labelRsi => 'RSI (14 يومًا)';
+
+  @override
+  String get labelVolatility30 => 'التقلب (30 يومًا)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent أعلى';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent أدنى';
+  }
+
+  @override
+  String get techOverbought => 'تشبّع شرائي';
+
+  @override
+  String get techOversold => 'تشبّع بيعي';
+
+  @override
+  String get techNeutral => 'متعادل';
+
+  @override
+  String get techGoldenCross =>
+      'متوسط 50 يومًا أعلى من متوسط 200 يوم – اتجاه صاعد وفق القراءة التقليدية.';
+
+  @override
+  String get techDeathCross =>
+      'متوسط 50 يومًا أدنى من متوسط 200 يوم – اتجاه هابط وفق القراءة التقليدية.';
+
+  @override
+  String get glossSma50 =>
+      'متوسط سعر الإغلاق لآخر 50 يوم تداول. غالبًا يُقرأ السعر فوقه كقوة قصيرة الأجل، وتحته كضعف.';
+
+  @override
+  String get glossSma200 =>
+      'متوسط سعر الإغلاق لآخر 200 يوم تداول – خط الاتجاه التقليدي طويل الأجل. يعتبر كثير من المستثمرين السعر فوقه اتجاهًا صاعدًا طويل الأجل.';
+
+  @override
+  String get glossRsi =>
+      'مؤشر القوة النسبية: يقارن المكاسب الأخيرة بالخسائر الأخيرة على مقياس من 0 إلى 100. فوق 70 يوصف السهم غالبًا بأنه في تشبّع شرائي (ارتفع بسرعة)، وتحت 30 في تشبّع بيعي – لكن الاتجاه القوي قد يبقى هناك طويلًا.';
+
+  @override
+  String get glossVolatility =>
+      'مقدار تذبذب السعر من يوم لآخر، محسوبًا على أساس سنوي: 20% تعني أن سنة عادية تتحرك ضمن ±20% تقريبًا. التقلب الأعلى يعني تحركات أكبر في الاتجاهين.';
+
+  @override
+  String get techNote =>
+      'محسوب من أسعار الإغلاق اليومية. الإشارات الفنية تصف الماضي، لا المستقبل.';
 }

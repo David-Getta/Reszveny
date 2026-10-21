@@ -2642,4 +2642,66 @@ class AppLocalizationsPa extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'ਵੈੱਬ ’ਤੇ ਮਿਲੀਆਂ ਅੱਜ ਦੀਆਂ ਖ਼ਬਰਾਂ ’ਤੇ ਆਧਾਰਿਤ AI ਵਿਆਖਿਆ; ਅਸਲ ਕਾਰਨ ਅਣਜਾਣ ਜਾਂ ਵੱਖਰਾ ਹੋ ਸਕਦਾ ਹੈ। ਨਿਵੇਸ਼ ਸਲਾਹ ਨਹੀਂ। ਇਹ ਤੁਹਾਡਾ ਰੋਜ਼ਾਨਾ ਸਵਾਲ ਕੋਟਾ ਵਰਤਦਾ ਹੈ, ਵਿਸ਼ਲੇਸ਼ਣ ਨਹੀਂ।';
+
+  @override
+  String get sectionTechnical => 'ਤਕਨੀਕੀ ਤਸਵੀਰ';
+
+  @override
+  String get labelSma50 => '50 ਦਿਨਾਂ ਦੀ ਔਸਤ';
+
+  @override
+  String get labelSma200 => '200 ਦਿਨਾਂ ਦੀ ਔਸਤ';
+
+  @override
+  String get labelRsi => 'RSI (14 ਦਿਨ)';
+
+  @override
+  String get labelVolatility30 => 'ਉਤਰਾਅ-ਚੜ੍ਹਾਅ (30 ਦਿਨ)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent ਉੱਪਰ';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent ਹੇਠਾਂ';
+  }
+
+  @override
+  String get techOverbought => 'ਓਵਰਬੌਟ';
+
+  @override
+  String get techOversold => 'ਓਵਰਸੋਲਡ';
+
+  @override
+  String get techNeutral => 'ਨਿਰਪੱਖ';
+
+  @override
+  String get techGoldenCross =>
+      '50 ਦਿਨਾਂ ਦੀ ਔਸਤ 200 ਦਿਨਾਂ ਦੀ ਔਸਤ ਤੋਂ ਉੱਪਰ ਹੈ – ਪਰੰਪਰਾਗਤ ਪੜ੍ਹਤ ਅਨੁਸਾਰ ਚੜ੍ਹਦਾ ਰੁਝਾਨ।';
+
+  @override
+  String get techDeathCross =>
+      '50 ਦਿਨਾਂ ਦੀ ਔਸਤ 200 ਦਿਨਾਂ ਦੀ ਔਸਤ ਤੋਂ ਹੇਠਾਂ ਹੈ – ਪਰੰਪਰਾਗਤ ਪੜ੍ਹਤ ਅਨੁਸਾਰ ਡਿੱਗਦਾ ਰੁਝਾਨ।';
+
+  @override
+  String get glossSma50 =>
+      'ਪਿਛਲੇ 50 ਕਾਰੋਬਾਰੀ ਦਿਨਾਂ ਦੀ ਬੰਦ ਕੀਮਤ ਦੀ ਔਸਤ। ਇਸ ਤੋਂ ਉੱਪਰ ਕੀਮਤ ਨੂੰ ਅਕਸਰ ਛੋਟੀ ਮਿਆਦ ਦੀ ਮਜ਼ਬੂਤੀ ਅਤੇ ਹੇਠਾਂ ਨੂੰ ਕਮਜ਼ੋਰੀ ਸਮਝਿਆ ਜਾਂਦਾ ਹੈ।';
+
+  @override
+  String get glossSma200 =>
+      'ਪਿਛਲੇ 200 ਕਾਰੋਬਾਰੀ ਦਿਨਾਂ ਦੀ ਬੰਦ ਕੀਮਤ ਦੀ ਔਸਤ – ਲੰਬੀ ਮਿਆਦ ਦੇ ਰੁਝਾਨ ਦੀ ਪਰੰਪਰਾਗਤ ਲਕੀਰ। ਬਹੁਤ ਸਾਰੇ ਨਿਵੇਸ਼ਕ ਇਸ ਤੋਂ ਉੱਪਰ ਕੀਮਤ ਨੂੰ ਲੰਬੀ ਮਿਆਦ ਦਾ ਚੜ੍ਹਦਾ ਰੁਝਾਨ ਮੰਨਦੇ ਹਨ।';
+
+  @override
+  String get glossRsi =>
+      'ਰਿਲੇਟਿਵ ਸਟ੍ਰੈਂਥ ਇੰਡੈਕਸ: ਹਾਲੀਆ ਲਾਭਾਂ ਦੀ ਹਾਲੀਆ ਨੁਕਸਾਨਾਂ ਨਾਲ 0–100 ਦੇ ਪੈਮਾਨੇ ’ਤੇ ਤੁਲਨਾ ਕਰਦਾ ਹੈ। 70 ਤੋਂ ਉੱਪਰ ਸਟਾਕ ਨੂੰ ਅਕਸਰ ਓਵਰਬੌਟ (ਤੇਜ਼ੀ ਨਾਲ ਚੜ੍ਹਿਆ) ਅਤੇ 30 ਤੋਂ ਹੇਠਾਂ ਓਵਰਸੋਲਡ ਕਿਹਾ ਜਾਂਦਾ ਹੈ – ਪਰ ਮਜ਼ਬੂਤ ਰੁਝਾਨ ਉੱਥੇ ਲੰਬੇ ਸਮੇਂ ਤੱਕ ਰਹਿ ਸਕਦਾ ਹੈ।';
+
+  @override
+  String get glossVolatility =>
+      'ਕੀਮਤ ਦਿਨ-ਪ੍ਰਤੀ-ਦਿਨ ਕਿੰਨੀ ਹਿੱਲਦੀ ਹੈ, ਸਾਲ ਦੇ ਹਿਸਾਬ ਨਾਲ: 20% ਦਾ ਮਤਲਬ ਹੈ ਕਿ ਇੱਕ ਆਮ ਸਾਲ ਵਿੱਚ ਲਗਭਗ ±20% ਦੇ ਅੰਦਰ ਚੱਲਦੀ ਹੈ। ਵੱਧ ਉਤਰਾਅ-ਚੜ੍ਹਾਅ ਦਾ ਮਤਲਬ ਦੋਵਾਂ ਪਾਸੇ ਵੱਡੀਆਂ ਹਰਕਤਾਂ।';
+
+  @override
+  String get techNote =>
+      'ਰੋਜ਼ਾਨਾ ਬੰਦ ਕੀਮਤਾਂ ਤੋਂ ਗਿਣਿਆ ਗਿਆ। ਤਕਨੀਕੀ ਸੰਕੇਤ ਅਤੀਤ ਦਾ ਵਰਣਨ ਕਰਦੇ ਹਨ, ਭਵਿੱਖ ਦਾ ਨਹੀਂ।';
 }

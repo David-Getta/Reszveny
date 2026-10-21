@@ -2194,5 +2194,85 @@
   "moveWhyNote": "AI explanation from today's news found on the web; the real reason may be unknown or different. Not investment advice. Uses your daily question allowance, not an analysis.",
   "@moveWhyNote": {
     "description": "Small print under the explanation."
+  },
+  "sectionTechnical": "Technical picture",
+  "@sectionTechnical": {
+    "description": "Card title on the stock page: moving averages, RSI and volatility computed from daily closing prices."
+  },
+  "labelSma50": "50-day average",
+  "@labelSma50": {
+    "description": "Row label: the simple moving average of the last 50 daily closes."
+  },
+  "labelSma200": "200-day average",
+  "@labelSma200": {
+    "description": "Row label: the simple moving average of the last 200 daily closes."
+  },
+  "labelRsi": "RSI (14 days)",
+  "@labelRsi": {
+    "description": "Row label: the 14-day relative strength index (0–100)."
+  },
+  "labelVolatility30": "Volatility (30 days)",
+  "@labelVolatility30": {
+    "description": "Row label: annualised volatility of the last 30 trading days' returns."
+  },
+  "techAbove": "{percent} above",
+  "@techAbove": {
+    "description": "Sub-text next to a moving average: the current price is this much above it, e.g. '4.2% above'.",
+    "placeholders": {
+      "percent": {
+        "type": "String",
+        "example": "4.2%"
+      }
+    }
+  },
+  "techBelow": "{percent} below",
+  "@techBelow": {
+    "description": "Sub-text next to a moving average: the current price is this much below it, e.g. '4.2% below'.",
+    "placeholders": {
+      "percent": {
+        "type": "String",
+        "example": "4.2%"
+      }
+    }
+  },
+  "techOverbought": "overbought",
+  "@techOverbought": {
+    "description": "RSI state when above 70."
+  },
+  "techOversold": "oversold",
+  "@techOversold": {
+    "description": "RSI state when below 30."
+  },
+  "techNeutral": "neutral",
+  "@techNeutral": {
+    "description": "RSI state between 30 and 70."
+  },
+  "techGoldenCross": "The 50-day average is above the 200-day average – an uptrend by the classic reading.",
+  "@techGoldenCross": {
+    "description": "One-line note under the rows."
+  },
+  "techDeathCross": "The 50-day average is below the 200-day average – a downtrend by the classic reading.",
+  "@techDeathCross": {
+    "description": "One-line note under the rows."
+  },
+  "glossSma50": "The average closing price of the last 50 trading days. Price above it is often read as short-term strength, below it as weakness.",
+  "@glossSma50": {
+    "description": "Glossary explanation shown when tapping ⓘ next to the label; plain language for beginners."
+  },
+  "glossSma200": "The average closing price of the last 200 trading days – the classic long-term trend line. Many investors treat a price above it as a long-term uptrend.",
+  "@glossSma200": {
+    "description": "Glossary explanation for beginners."
+  },
+  "glossRsi": "Relative strength index: compares recent gains with recent losses on a 0–100 scale. Above 70 the stock is often called overbought (it rose fast), below 30 oversold – but a strong trend can stay there for a long time.",
+  "@glossRsi": {
+    "description": "Glossary explanation for beginners."
+  },
+  "glossVolatility": "How much the price swings day to day, scaled to a year: 20% means a typical year moves within roughly ±20%. Higher volatility means bigger moves both ways.",
+  "@glossVolatility": {
+    "description": "Glossary explanation for beginners."
+  },
+  "techNote": "Computed from daily closing prices. Technical signals describe the past, not the future.",
+  "@techNote": {
+    "description": "Small print under the technical card."
   }
 }

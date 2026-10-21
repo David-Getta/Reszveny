@@ -2662,4 +2662,66 @@ class AppLocalizationsHil extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Paathag sang AI halin sa mga balita subong nga adlaw nga nakita sa web; ang matuod nga rason mahimo nga indi mahibaluan ukon lain. Indi laygay sa pagpamuhunan. Nagagamit sang imo adlaw-adlaw nga kuota sang pamangkot, indi analisis.';
+
+  @override
+  String get sectionTechnical => 'Teknikal nga laragway';
+
+  @override
+  String get labelSma50 => '50 ka adlaw nga average';
+
+  @override
+  String get labelSma200 => '200 ka adlaw nga average';
+
+  @override
+  String get labelRsi => 'RSI (14 ka adlaw)';
+
+  @override
+  String get labelVolatility30 => 'Volatility (30 ka adlaw)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent sa ibabaw';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent sa idalom';
+  }
+
+  @override
+  String get techOverbought => 'overbought';
+
+  @override
+  String get techOversold => 'oversold';
+
+  @override
+  String get techNeutral => 'neutral';
+
+  @override
+  String get techGoldenCross =>
+      'Ang 50 ka adlaw nga average yara sa ibabaw sang 200 ka adlaw nga average – pasaka nga uso suno sa klasiko nga pagbasa.';
+
+  @override
+  String get techDeathCross =>
+      'Ang 50 ka adlaw nga average yara sa idalom sang 200 ka adlaw nga average – paubos nga uso suno sa klasiko nga pagbasa.';
+
+  @override
+  String get glossSma50 =>
+      'Ang average nga closing price sang nagligad nga 50 ka adlaw sang pamatigayon. Ang presyo nga mas mataas sini masami ginabasa bilang kusog sa malip-ot nga tion, ang mas manubo bilang kaluya.';
+
+  @override
+  String get glossSma200 =>
+      'Ang average nga closing price sang nagligad nga 200 ka adlaw sang pamatigayon – ang klasiko nga linya sang uso sa malawig nga tion. Madamo nga mamumuhunan nagakabig sang presyo nga mas mataas sini bilang pasaka nga uso sa malawig nga tion.';
+
+  @override
+  String get glossRsi =>
+      'Relative strength index: ginakumparar ang bag-o nga mga ganansya sa bag-o nga mga kapierde sa sukatan nga 0–100. Sa ibabaw sang 70 ang stock masami ginatawag nga overbought (madasig nga nagsaka), sa idalom sang 30 oversold – pero ang mabaskog nga uso mahimo magpabilin didto sing malawig.';
+
+  @override
+  String get glossVolatility =>
+      'Daw ano ang pagbag-o sang presyo adlaw-adlaw, ginsukat sa isa ka tuig: ang 20% nagakahulugan nga sa ordinaryo nga tuig ang presyo nagahulag sa sulod sang mga ±20%. Mas mataas nga volatility nagakahulugan sang mas dalagko nga hulag sa duha ka direksyon.';
+
+  @override
+  String get techNote =>
+      'Ginkwenta halin sa adlaw-adlaw nga closing price. Ang teknikal nga mga signal nagalaragway sang nagligad, indi sang palaabuton.';
 }

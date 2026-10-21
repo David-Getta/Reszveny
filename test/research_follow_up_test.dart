@@ -68,7 +68,7 @@ void main() {
   testWidgets('a follow-up question under the earnings summary: asked through the ask endpoint, answered', (
     tester,
   ) async {
-    tester.view.physicalSize = const Size(1200, 4000);
+    tester.view.physicalSize = const Size(1200, 5000);
     tester.view.devicePixelRatio = 1;
     addTearDown(tester.view.reset);
     final asked = <String>[];

@@ -2646,4 +2646,66 @@ class AppLocalizationsKi extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Ũtaarĩria wa AI kuuma mohoro ma ũmũthĩ marĩa monekete intaneti-inĩ; gĩtũmi kĩa ma no gĩkorwo gĩtoĩkaine kana gĩkĩrĩ ngũrani. Ti ũtaaro wa kũiga mbeca. Ĩhũthagĩra mũigana waku wa ciũria cia o mũthenya, ti ũthuthuria.';
+
+  @override
+  String get sectionTechnical => 'Mũhaano wa ũmenyi';
+
+  @override
+  String get labelSma50 => 'Gatagatĩ ka mĩthenya 50';
+
+  @override
+  String get labelSma200 => 'Gatagatĩ ka mĩthenya 200';
+
+  @override
+  String get labelRsi => 'RSI (mĩthenya 14)';
+
+  @override
+  String get labelVolatility30 => 'Ũgarũrũku wa thogora (mĩthenya 30)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent igũrũ';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent thĩ';
+  }
+
+  @override
+  String get techOverbought => 'ũgũrĩtwo mũno';
+
+  @override
+  String get techOversold => 'ũendetio mũno';
+
+  @override
+  String get techNeutral => 'gatagatĩ';
+
+  @override
+  String get techGoldenCross =>
+      'Gatagatĩ ka mĩthenya 50 nĩ igũrũ rĩa gatagatĩ ka mĩthenya 200 – kũringana na ũthomi wa tene, nĩ njĩra ya kwambata.';
+
+  @override
+  String get techDeathCross =>
+      'Gatagatĩ ka mĩthenya 50 nĩ thĩ ya gatagatĩ ka mĩthenya 200 – kũringana na ũthomi wa tene, nĩ njĩra ya gũikũrũka.';
+
+  @override
+  String get glossSma50 =>
+      'Gatagatĩ ka thogora wa kũhinga wa mĩthenya 50 ya thoko ya mũthia. Thogora ũrĩ igũrũ rĩayo kaingĩ wonagwo ta hinya wa ihinda inini, ũrĩ thĩ ta kwaga hinya.';
+
+  @override
+  String get glossSma200 =>
+      'Gatagatĩ ka thogora wa kũhinga wa mĩthenya 200 ya thoko ya mũthia – mũhari wa njĩra wa ihinda iraaya wa tene. Aikia mbeca aingĩ monaga thogora ũrĩ igũrũ rĩayo ta njĩra ya kwambata ya ihinda iraaya.';
+
+  @override
+  String get glossRsi =>
+      'Kĩgerio kĩa hinya wa kũgereranio (RSI): kĩgereranagia faida cia ica ikuhĩ na hathara cia ica ikuhĩ na kĩgerio kĩa 0–100. Igũrũ rĩa 70 kaingĩ kuugagwo atĩ ngwatanĩro nĩ ĩgũrĩtwo mũno (yambatire na ihenya), thĩ ya 30 nĩ ĩendetio mũno – no njĩra ĩrĩ hinya no ĩikare ho ihinda iraaya.';
+
+  @override
+  String get glossVolatility =>
+      'Ũrĩa thogora ũgarũrũkaga o mũthenya, ũtarĩtwo kũringana na mwaka ũmwe: 20% nĩ kuuga atĩ mwaka wa ndũire thogora ũthiiaga thĩinĩ wa ta ±20%. Ũgarũrũku mũnene nĩ kuuga mĩthiĩre mĩnene mĩena yothe ĩĩrĩ.';
+
+  @override
+  String get techNote =>
+      'Ũtarĩtwo kuuma thogora wa kũhinga wa o mũthenya. Imenyithia cia ũmenyi itaarĩria maũndũ marĩa mahĩtũku, ti ma rũciũ.';
 }

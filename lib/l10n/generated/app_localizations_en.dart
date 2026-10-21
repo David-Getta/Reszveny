@@ -2644,4 +2644,66 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'AI explanation from today\'s news found on the web; the real reason may be unknown or different. Not investment advice. Uses your daily question allowance, not an analysis.';
+
+  @override
+  String get sectionTechnical => 'Technical picture';
+
+  @override
+  String get labelSma50 => '50-day average';
+
+  @override
+  String get labelSma200 => '200-day average';
+
+  @override
+  String get labelRsi => 'RSI (14 days)';
+
+  @override
+  String get labelVolatility30 => 'Volatility (30 days)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent above';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent below';
+  }
+
+  @override
+  String get techOverbought => 'overbought';
+
+  @override
+  String get techOversold => 'oversold';
+
+  @override
+  String get techNeutral => 'neutral';
+
+  @override
+  String get techGoldenCross =>
+      'The 50-day average is above the 200-day average – an uptrend by the classic reading.';
+
+  @override
+  String get techDeathCross =>
+      'The 50-day average is below the 200-day average – a downtrend by the classic reading.';
+
+  @override
+  String get glossSma50 =>
+      'The average closing price of the last 50 trading days. Price above it is often read as short-term strength, below it as weakness.';
+
+  @override
+  String get glossSma200 =>
+      'The average closing price of the last 200 trading days – the classic long-term trend line. Many investors treat a price above it as a long-term uptrend.';
+
+  @override
+  String get glossRsi =>
+      'Relative strength index: compares recent gains with recent losses on a 0–100 scale. Above 70 the stock is often called overbought (it rose fast), below 30 oversold – but a strong trend can stay there for a long time.';
+
+  @override
+  String get glossVolatility =>
+      'How much the price swings day to day, scaled to a year: 20% means a typical year moves within roughly ±20%. Higher volatility means bigger moves both ways.';
+
+  @override
+  String get techNote =>
+      'Computed from daily closing prices. Technical signals describe the past, not the future.';
 }

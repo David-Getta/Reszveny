@@ -2654,4 +2654,66 @@ class AppLocalizationsRn extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Insiguro ya AI ishingiye ku makuru y\'uyu musi yabonetse kuri internet; impamvu nyayo ishobora kuba itamenyekana canke itandukanye. Si impanuro yo gushora amafaranga. Ikoresha igitigiri c\'ibibazo vyawe vya buri musi, atari isesengura.';
+
+  @override
+  String get sectionTechnical => 'Ishusho ya tekinike';
+
+  @override
+  String get labelSma50 => 'Impuzandengo y\'imisi 50';
+
+  @override
+  String get labelSma200 => 'Impuzandengo y\'imisi 200';
+
+  @override
+  String get labelRsi => 'RSI (imisi 14)';
+
+  @override
+  String get labelVolatility30 => 'Ihindagurika (imisi 30)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent hejuru';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent munsi';
+  }
+
+  @override
+  String get techOverbought => 'yaguzwe cane';
+
+  @override
+  String get techOversold => 'yagurishijwe cane';
+
+  @override
+  String get techNeutral => 'hagati';
+
+  @override
+  String get techGoldenCross =>
+      'Impuzandengo y\'imisi 50 iri hejuru y\'iy\'imisi 200 – mu gusoma gusanzwe ni ukuduga.';
+
+  @override
+  String get techDeathCross =>
+      'Impuzandengo y\'imisi 50 iri munsi y\'iy\'imisi 200 – mu gusoma gusanzwe ni ukumanuka.';
+
+  @override
+  String get glossSma50 =>
+      'Impuzandengo y\'igiciro co gusozera c\'imisi 50 ya nyuma y\'urudandaza. Igiciro kiri hejuru yayo akenshi gifatwa nk\'inguvu z\'igihe gito, kiri munsi nk\'intege nke.';
+
+  @override
+  String get glossSma200 =>
+      'Impuzandengo y\'igiciro co gusozera c\'imisi 200 ya nyuma y\'urudandaza – umurongo usanzwe w\'inzira y\'igihe kirekire. Abashoramari benshi bafata igiciro kiri hejuru yayo nk\'ukuduga kw\'igihe kirekire.';
+
+  @override
+  String get glossRsi =>
+      'Igipimo c\'inguvu zigereranijwe (RSI): kigereranya inyungu za vuba n\'igihombo ca vuba ku rugero rwa 0–100. Hejuru ya 70 ishari akenshi ivugwa ko yaguzwe cane (yadugiye ningoga), munsi ya 30 ko yagurishijwe cane – ariko inzira ikomeye irashobora kuhaguma igihe kirekire.';
+
+  @override
+  String get glossVolatility =>
+      'Ukuntu igiciro gihindagurika umusi ku musi, gipimwe ku mwaka: 20% bisigura ko umwaka usanzwe ugenda hafi ya ±20%. Ihindagurika ryinshi risigura ingendo nini mu mpande zose uko ari zibiri.';
+
+  @override
+  String get techNote =>
+      'Vyaharuwe hakoreshejwe ibiciro vyo gusozera vya buri musi. Ibimenyetso vya tekinike bidondora ivyahise, atari ivyo mu kazoza.';
 }

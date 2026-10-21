@@ -2719,4 +2719,66 @@ class AppLocalizationsSl extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Razlaga UI na podlagi današnjih novic s spleta; pravi razlog je lahko neznan ali drugačen. Ni naložbeni nasvet. Porabi vašo dnevno kvoto vprašanj, ne analize.';
+
+  @override
+  String get sectionTechnical => 'Tehnična slika';
+
+  @override
+  String get labelSma50 => '50-dnevno povprečje';
+
+  @override
+  String get labelSma200 => '200-dnevno povprečje';
+
+  @override
+  String get labelRsi => 'RSI (14 dni)';
+
+  @override
+  String get labelVolatility30 => 'Volatilnost (30 dni)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent nad';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent pod';
+  }
+
+  @override
+  String get techOverbought => 'prekupljeno';
+
+  @override
+  String get techOversold => 'preprodano';
+
+  @override
+  String get techNeutral => 'nevtralno';
+
+  @override
+  String get techGoldenCross =>
+      '50-dnevno povprečje je nad 200-dnevnim – po klasični razlagi trend rasti.';
+
+  @override
+  String get techDeathCross =>
+      '50-dnevno povprečje je pod 200-dnevnim – po klasični razlagi trend padanja.';
+
+  @override
+  String get glossSma50 =>
+      'Povprečna zaključna cena zadnjih 50 trgovalnih dni. Cena nad njim se pogosto razume kot kratkoročna moč, pod njim kot šibkost.';
+
+  @override
+  String get glossSma200 =>
+      'Povprečna zaključna cena zadnjih 200 trgovalnih dni – klasična črta dolgoročnega trenda. Mnogi vlagatelji ceno nad njo štejejo za dolgoročni trend rasti.';
+
+  @override
+  String get glossRsi =>
+      'Indeks relativne moči: primerja nedavne dobičke z nedavnimi izgubami na lestvici od 0 do 100. Nad 70 delnico pogosto imenujemo prekupljeno (hitro je zrasla), pod 30 preprodano – a močan trend lahko tam ostane dolgo.';
+
+  @override
+  String get glossVolatility =>
+      'Kako močno cena niha iz dneva v dan, preračunano na leto: 20 % pomeni, da se v običajnem letu giblje v razponu približno ±20 %. Višja volatilnost pomeni večje premike v obe smeri.';
+
+  @override
+  String get techNote =>
+      'Izračunano iz dnevnih zaključnih cen. Tehnični signali opisujejo preteklost, ne prihodnosti.';
 }

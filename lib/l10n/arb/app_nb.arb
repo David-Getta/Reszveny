@@ -701,5 +701,22 @@
   "awayReported": "Rapporterte resultater: {symbols}",
   "moveWhyButton": "Hvorfor beveger den seg i dag?",
   "moveWhyTitle": "{percent} i dag",
-  "moveWhyNote": "KI-forklaring basert på dagens nyheter funnet på nettet; den egentlige årsaken kan være ukjent eller en annen. Ikke investeringsråd. Bruker din daglige spørsmålskvote, ikke en analyse."
+  "moveWhyNote": "KI-forklaring basert på dagens nyheter funnet på nettet; den egentlige årsaken kan være ukjent eller en annen. Ikke investeringsråd. Bruker din daglige spørsmålskvote, ikke en analyse.",
+  "sectionTechnical": "Teknisk bilde",
+  "labelSma50": "50-dagers snitt",
+  "labelSma200": "200-dagers snitt",
+  "labelRsi": "RSI (14 dager)",
+  "labelVolatility30": "Volatilitet (30 dager)",
+  "techAbove": "{percent} over",
+  "techBelow": "{percent} under",
+  "techOverbought": "overkjøpt",
+  "techOversold": "oversolgt",
+  "techNeutral": "nøytral",
+  "techGoldenCross": "50-dagers snittet ligger over 200-dagers snittet – en opptrend etter den klassiske tolkningen.",
+  "techDeathCross": "50-dagers snittet ligger under 200-dagers snittet – en nedtrend etter den klassiske tolkningen.",
+  "glossSma50": "Gjennomsnittlig sluttkurs de siste 50 handelsdagene. Kurs over snittet tolkes ofte som kortsiktig styrke, under som svakhet.",
+  "glossSma200": "Gjennomsnittlig sluttkurs de siste 200 handelsdagene – den klassiske langsiktige trendlinjen. Mange investorer ser en kurs over snittet som en langsiktig opptrend.",
+  "glossRsi": "Relativ styrkeindeks: sammenligner nylige gevinster med nylige tap på en skala fra 0 til 100. Over 70 kalles aksjen ofte overkjøpt (den har steget raskt), under 30 oversolgt – men en sterk trend kan holde seg der lenge.",
+  "glossVolatility": "Hvor mye kursen svinger fra dag til dag, omregnet til et år: 20 % betyr at et typisk år beveger seg innenfor omtrent ±20 %. Høyere volatilitet betyr større bevegelser begge veier.",
+  "techNote": "Beregnet ut fra daglige sluttkurser. Tekniske signaler beskriver fortiden, ikke fremtiden."
 }

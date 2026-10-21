@@ -701,5 +701,22 @@
   "awayReported": "Kwupụtara nsonaazụ: {symbols}",
   "moveWhyButton": "Gịnị mere ọ na-agbanwe taa?",
   "moveWhyTitle": "{percent} taa",
-  "moveWhyNote": "Nkọwa AI sitere n'akụkọ taa a chọtara na weebụ; ezigbo ihe kpatara ya nwere ike bụrụ ihe a na-amaghị ma ọ bụ dị iche. Ọ bụghị ndụmọdụ itinye ego. Ọ na-eji oke ajụjụ gị kwa ụbọchị, ọ bụghị nyocha."
+  "moveWhyNote": "Nkọwa AI sitere n'akụkọ taa a chọtara na weebụ; ezigbo ihe kpatara ya nwere ike bụrụ ihe a na-amaghị ma ọ bụ dị iche. Ọ bụghị ndụmọdụ itinye ego. Ọ na-eji oke ajụjụ gị kwa ụbọchị, ọ bụghị nyocha.",
+  "sectionTechnical": "Ihe onyonyo teknikal",
+  "labelSma50": "Nkezi ụbọchị 50",
+  "labelSma200": "Nkezi ụbọchị 200",
+  "labelRsi": "RSI (ụbọchị 14)",
+  "labelVolatility30": "Mgbanwe ọnụahịa (ụbọchị 30)",
+  "techAbove": "{percent} n'elu",
+  "techBelow": "{percent} n'okpuru",
+  "techOverbought": "azụrụ ya karịa",
+  "techOversold": "erela ya karịa",
+  "techNeutral": "n'etiti",
+  "techGoldenCross": "Nkezi ụbọchị 50 dị n'elu nkezi ụbọchị 200 – dị ka nkọwa ochie si dị, ọ bụ ụzọ ịrị elu.",
+  "techDeathCross": "Nkezi ụbọchị 50 dị n'okpuru nkezi ụbọchị 200 – dị ka nkọwa ochie si dị, ọ bụ ụzọ ịda ala.",
+  "glossSma50": "Nkezi ọnụahịa mmechi nke ụbọchị ahịa 50 gara aga. A na-ahụkarị ọnụahịa dị n'elu ya dị ka ike nwa oge, nke dị n'okpuru ya dị ka adịghị ike.",
+  "glossSma200": "Nkezi ọnụahịa mmechi nke ụbọchị ahịa 200 gara aga – ahịrị ụzọ ogologo oge nke ochie. Ọtụtụ ndị na-etinye ego na-ewere ọnụahịa dị n'elu ya dị ka ụzọ ịrị elu ogologo oge.",
+  "glossRsi": "Ngosi ike mmekọrịta (RSI): ọ na-atụnyere uru nso nso a na mfu nso nso a n'ihe ọtụtụ 0–100. N'elu 70 a na-akpọkarị stock ahụ azụrụ ya karịa (o riri elu ngwa ngwa), n'okpuru 30 erela ya karịa – mana ụzọ siri ike nwere ike ịnọ ebe ahụ ogologo oge.",
+  "glossVolatility": "Otú ọnụahịa si agbanwe kwa ụbọchị, gbakọọ n'otu afọ: 20% pụtara na n'afọ nkịtị ọnụahịa na-agagharị n'ime ihe dị ka ±20%. Mgbanwe dị elu pụtara mmegharị ka ukwuu n'akụkụ abụọ.",
+  "techNote": "Agbakọrọ ya site na ọnụahịa mmechi kwa ụbọchị. Akara teknikal na-akọwa ihe gara aga, ọ bụghị ọdịnihu."
 }

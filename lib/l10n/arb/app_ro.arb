@@ -701,5 +701,22 @@
   "awayReported": "Rezultate raportate: {symbols}",
   "moveWhyButton": "De ce se mișcă azi?",
   "moveWhyTitle": "{percent} azi",
-  "moveWhyNote": "Explicație AI pe baza știrilor de azi găsite pe web; motivul real poate fi necunoscut sau diferit. Nu este un sfat de investiții. Consumă din limita zilnică de întrebări, nu o analiză."
+  "moveWhyNote": "Explicație AI pe baza știrilor de azi găsite pe web; motivul real poate fi necunoscut sau diferit. Nu este un sfat de investiții. Consumă din limita zilnică de întrebări, nu o analiză.",
+  "sectionTechnical": "Tablou tehnic",
+  "labelSma50": "Media pe 50 de zile",
+  "labelSma200": "Media pe 200 de zile",
+  "labelRsi": "RSI (14 zile)",
+  "labelVolatility30": "Volatilitate (30 de zile)",
+  "techAbove": "{percent} peste",
+  "techBelow": "{percent} sub",
+  "techOverbought": "supracumpărată",
+  "techOversold": "supravândută",
+  "techNeutral": "neutru",
+  "techGoldenCross": "Media pe 50 de zile este peste media pe 200 de zile – trend ascendent, după interpretarea clasică.",
+  "techDeathCross": "Media pe 50 de zile este sub media pe 200 de zile – trend descendent, după interpretarea clasică.",
+  "glossSma50": "Prețul mediu de închidere din ultimele 50 de zile de tranzacționare. Un preț peste ea este adesea citit ca forță pe termen scurt, iar sub ea ca slăbiciune.",
+  "glossSma200": "Prețul mediu de închidere din ultimele 200 de zile de tranzacționare – linia clasică a trendului pe termen lung. Mulți investitori consideră un preț peste ea un trend ascendent pe termen lung.",
+  "glossRsi": "Indicele puterii relative: compară câștigurile recente cu pierderile recente pe o scară de la 0 la 100. Peste 70, acțiunea este adesea numită supracumpărată (a crescut rapid), sub 30 supravândută – dar un trend puternic poate rămâne acolo mult timp.",
+  "glossVolatility": "Cât de mult oscilează prețul de la o zi la alta, raportat la un an: 20% înseamnă că un an obișnuit se mișcă în limita a aproximativ ±20%. O volatilitate mai mare înseamnă mișcări mai ample în ambele sensuri.",
+  "techNote": "Calculat din prețurile zilnice de închidere. Semnalele tehnice descriu trecutul, nu viitorul."
 }

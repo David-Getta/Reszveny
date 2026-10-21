@@ -701,5 +701,22 @@
   "awayReported": "Naglabas ng resulta: {symbols}",
   "moveWhyButton": "Bakit ito gumagalaw ngayon?",
   "moveWhyTitle": "{percent} ngayon",
-  "moveWhyNote": "Paliwanag ng AI mula sa mga balita ngayong araw na natagpuan sa web; maaaring hindi alam o iba ang tunay na dahilan. Hindi payo sa pamumuhunan. Gumagamit ng iyong pang-araw-araw na kuota ng tanong, hindi ng pagsusuri."
+  "moveWhyNote": "Paliwanag ng AI mula sa mga balita ngayong araw na natagpuan sa web; maaaring hindi alam o iba ang tunay na dahilan. Hindi payo sa pamumuhunan. Gumagamit ng iyong pang-araw-araw na kuota ng tanong, hindi ng pagsusuri.",
+  "sectionTechnical": "Teknikal na larawan",
+  "labelSma50": "50-araw na average",
+  "labelSma200": "200-araw na average",
+  "labelRsi": "RSI (14 araw)",
+  "labelVolatility30": "Volatility (30 araw)",
+  "techAbove": "{percent} sa itaas",
+  "techBelow": "{percent} sa ibaba",
+  "techOverbought": "overbought",
+  "techOversold": "oversold",
+  "techNeutral": "neutral",
+  "techGoldenCross": "Ang 50-araw na average ay nasa itaas ng 200-araw na average – isang uptrend ayon sa klasikong pagbasa.",
+  "techDeathCross": "Ang 50-araw na average ay nasa ibaba ng 200-araw na average – isang downtrend ayon sa klasikong pagbasa.",
+  "glossSma50": "Ang average na closing price ng huling 50 araw ng trading. Ang presyong nasa itaas nito ay madalas binabasa bilang panandaliang lakas, at ang nasa ibaba bilang kahinaan.",
+  "glossSma200": "Ang average na closing price ng huling 200 araw ng trading – ang klasikong pangmatagalang trend line. Maraming investor ang tumitingin sa presyong nasa itaas nito bilang pangmatagalang uptrend.",
+  "glossRsi": "Relative strength index: ikinukumpara ang mga kamakailang ganansya sa mga kamakailang pagkalugi sa iskala na 0–100. Sa itaas ng 70, madalas tinatawag na overbought ang stock (mabilis itong tumaas), sa ibaba ng 30 oversold – ngunit maaaring manatili doon nang matagal ang isang malakas na trend.",
+  "glossVolatility": "Gaano kalaki ang pagbabago ng presyo araw-araw, isinukat sa isang taon: ang 20% ay nangangahulugang sa karaniwang taon ay gumagalaw ito sa loob ng humigit-kumulang ±20%. Mas mataas na volatility ay nangangahulugang mas malalaking galaw sa magkabilang direksyon.",
+  "techNote": "Kinalkula mula sa pang-araw-araw na closing price. Inilalarawan ng mga teknikal na signal ang nakaraan, hindi ang hinaharap."
 }

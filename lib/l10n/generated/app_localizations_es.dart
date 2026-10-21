@@ -2651,4 +2651,66 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get moveWhyNote =>
       'Explicación de la IA a partir de las noticias de hoy encontradas en la web; el motivo real puede ser desconocido o distinto. No es asesoramiento de inversión. Consume tu cuota diaria de preguntas, no un análisis.';
+
+  @override
+  String get sectionTechnical => 'Panorama técnico';
+
+  @override
+  String get labelSma50 => 'Media de 50 días';
+
+  @override
+  String get labelSma200 => 'Media de 200 días';
+
+  @override
+  String get labelRsi => 'RSI (14 días)';
+
+  @override
+  String get labelVolatility30 => 'Volatilidad (30 días)';
+
+  @override
+  String techAbove(String percent) {
+    return '$percent por encima';
+  }
+
+  @override
+  String techBelow(String percent) {
+    return '$percent por debajo';
+  }
+
+  @override
+  String get techOverbought => 'sobrecomprada';
+
+  @override
+  String get techOversold => 'sobrevendida';
+
+  @override
+  String get techNeutral => 'neutral';
+
+  @override
+  String get techGoldenCross =>
+      'La media de 50 días está por encima de la de 200 días – tendencia alcista según la lectura clásica.';
+
+  @override
+  String get techDeathCross =>
+      'La media de 50 días está por debajo de la de 200 días – tendencia bajista según la lectura clásica.';
+
+  @override
+  String get glossSma50 =>
+      'El precio medio de cierre de los últimos 50 días de negociación. Un precio por encima suele leerse como fortaleza a corto plazo; por debajo, como debilidad.';
+
+  @override
+  String get glossSma200 =>
+      'El precio medio de cierre de los últimos 200 días de negociación – la línea de tendencia clásica a largo plazo. Muchos inversores consideran que un precio por encima indica una tendencia alcista a largo plazo.';
+
+  @override
+  String get glossRsi =>
+      'Índice de fuerza relativa: compara las ganancias recientes con las pérdidas recientes en una escala de 0 a 100. Por encima de 70 suele decirse que la acción está sobrecomprada (subió rápido); por debajo de 30, sobrevendida – pero una tendencia fuerte puede mantenerse ahí mucho tiempo.';
+
+  @override
+  String get glossVolatility =>
+      'Cuánto oscila el precio de un día a otro, anualizado: un 20% significa que en un año típico se mueve dentro de aproximadamente ±20%. Mayor volatilidad significa movimientos más grandes en ambas direcciones.';
+
+  @override
+  String get techNote =>
+      'Calculado a partir de los precios de cierre diarios. Las señales técnicas describen el pasado, no el futuro.';
 }

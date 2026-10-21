@@ -701,5 +701,22 @@
   "awayReported": "Rapporterade resultat: {symbols}",
   "moveWhyButton": "Varför rör den sig i dag?",
   "moveWhyTitle": "{percent} i dag",
-  "moveWhyNote": "AI-förklaring utifrån dagens nyheter på webben; den verkliga orsaken kan vara okänd eller en annan. Inte investeringsrådgivning. Använder din dagliga frågekvot, inte en analys."
+  "moveWhyNote": "AI-förklaring utifrån dagens nyheter på webben; den verkliga orsaken kan vara okänd eller en annan. Inte investeringsrådgivning. Använder din dagliga frågekvot, inte en analys.",
+  "sectionTechnical": "Teknisk bild",
+  "labelSma50": "50-dagars medel",
+  "labelSma200": "200-dagars medel",
+  "labelRsi": "RSI (14 dagar)",
+  "labelVolatility30": "Volatilitet (30 dagar)",
+  "techAbove": "{percent} över",
+  "techBelow": "{percent} under",
+  "techOverbought": "överköpt",
+  "techOversold": "översåld",
+  "techNeutral": "neutral",
+  "techGoldenCross": "50-dagars medel ligger över 200-dagars medel – en uppåttrend enligt den klassiska tolkningen.",
+  "techDeathCross": "50-dagars medel ligger under 200-dagars medel – en nedåttrend enligt den klassiska tolkningen.",
+  "glossSma50": "Genomsnittlig stängningskurs de senaste 50 handelsdagarna. Kurs över det tolkas ofta som kortsiktig styrka, under som svaghet.",
+  "glossSma200": "Genomsnittlig stängningskurs de senaste 200 handelsdagarna – den klassiska långsiktiga trendlinjen. Många investerare ser en kurs över den som en långsiktig uppåttrend.",
+  "glossRsi": "Relativt styrkeindex: jämför senaste tidens uppgångar med nedgångar på en skala 0–100. Över 70 kallas aktien ofta överköpt (den har stigit snabbt), under 30 översåld – men en stark trend kan ligga kvar där länge.",
+  "glossVolatility": "Hur mycket kursen svänger från dag till dag, omräknat till ett år: 20 % betyder att ett typiskt år rör sig inom ungefär ±20 %. Högre volatilitet betyder större rörelser i båda riktningarna.",
+  "techNote": "Beräknat utifrån dagliga stängningskurser. Tekniska signaler beskriver det förflutna, inte framtiden."
 }
