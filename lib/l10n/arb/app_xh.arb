@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · ithengisiwe ngokugqithisileyo",
   "signalRsiOverbought": "RSI {value} · ithengwe ngokugqithisileyo",
   "signalCrossedAbove": "inqumle ngaphezulu komndilili weentsuku ezingama-200",
-  "signalCrossedBelow": "inqumle ngaphantsi komndilili weentsuku ezingama-200"
+  "signalCrossedBelow": "inqumle ngaphantsi komndilili weentsuku ezingama-200",
+  "signalAlertsTitle": "Izaziso zemiqondiso yobuchwepheshe",
+  "signalAlertsSubtitle": "Kanye ngosuku, xa isabelo osilandelayo sithengisiwe ngokugqithisileyo okanye sithengwe ngokugqithisileyo (RSI), okanye ixabiso laso linqumla umndilili weentsuku ezingama-200.",
+  "signalAlertsNotification": "Imiqondiso yobuchwepheshe"
 }

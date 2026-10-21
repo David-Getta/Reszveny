@@ -2705,4 +2705,14 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'ລົງຕ່ຳກວ່າສະເລ່ຍ 200 ວັນ';
+
+  @override
+  String get signalAlertsTitle => 'ແຈ້ງເຕືອນສັນຍານເຕັກນິກ';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'ມື້ລະຄັ້ງ ເມື່ອຫຸ້ນທີ່ທ່ານຕິດຕາມກາຍເປັນຂາຍເກີນ ຫຼື ຊື້ເກີນ (RSI) ຫຼືລາຄາຂອງມັນຕັດຜ່ານສະເລ່ຍ 200 ວັນ.';
+
+  @override
+  String get signalAlertsNotification => 'ສັນຍານເຕັກນິກ';
 }

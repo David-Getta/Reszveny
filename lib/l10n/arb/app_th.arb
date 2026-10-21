@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · ขายมากเกินไป",
   "signalRsiOverbought": "RSI {value} · ซื้อมากเกินไป",
   "signalCrossedAbove": "ทะลุขึ้นเหนือค่าเฉลี่ย 200 วัน",
-  "signalCrossedBelow": "หลุดลงใต้ค่าเฉลี่ย 200 วัน"
+  "signalCrossedBelow": "หลุดลงใต้ค่าเฉลี่ย 200 วัน",
+  "signalAlertsTitle": "การแจ้งเตือนสัญญาณทางเทคนิค",
+  "signalAlertsSubtitle": "วันละครั้ง เมื่อหุ้นที่คุณติดตามเข้าสู่ภาวะขายมากเกินไปหรือซื้อมากเกินไป (RSI) หรือราคาตัดผ่านค่าเฉลี่ย 200 วัน",
+  "signalAlertsNotification": "สัญญาณทางเทคนิค"
 }

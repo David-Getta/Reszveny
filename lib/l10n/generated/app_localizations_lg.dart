@@ -2742,4 +2742,14 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'gukkide wansi wa wakati w\'ennaku 200';
+
+  @override
+  String get signalAlertsTitle => 'Obubaka ku bubonero obwa tekinika';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Omulundi gumu buli lunaku, nga omugabo gw\'ogoberera gutundiddwa ennyo oba gugulidwa ennyo (RSI), oba omuwendo gwagwo gusomose wakati w\'ennaku 200.';
+
+  @override
+  String get signalAlertsNotification => 'Obubonero obwa tekinika';
 }

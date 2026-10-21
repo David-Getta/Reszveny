@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · ຂາຍເກີນ",
   "signalRsiOverbought": "RSI {value} · ຊື້ເກີນ",
   "signalCrossedAbove": "ຂຶ້ນເໜືອສະເລ່ຍ 200 ວັນ",
-  "signalCrossedBelow": "ລົງຕ່ຳກວ່າສະເລ່ຍ 200 ວັນ"
+  "signalCrossedBelow": "ລົງຕ່ຳກວ່າສະເລ່ຍ 200 ວັນ",
+  "signalAlertsTitle": "ແຈ້ງເຕືອນສັນຍານເຕັກນິກ",
+  "signalAlertsSubtitle": "ມື້ລະຄັ້ງ ເມື່ອຫຸ້ນທີ່ທ່ານຕິດຕາມກາຍເປັນຂາຍເກີນ ຫຼື ຊື້ເກີນ (RSI) ຫຼືລາຄາຂອງມັນຕັດຜ່ານສະເລ່ຍ 200 ວັນ.",
+  "signalAlertsNotification": "ສັນຍານເຕັກນິກ"
 }

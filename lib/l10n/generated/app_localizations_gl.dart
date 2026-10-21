@@ -2755,4 +2755,14 @@ class AppLocalizationsGl extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'cruzou por baixo da súa media de 200 días';
+
+  @override
+  String get signalAlertsTitle => 'Notificacións de sinais técnicos';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Unha vez ao día, cando unha acción que segues pasa a estar sobrevendida ou sobrecomprada (RSI), ou o seu prezo cruza a media de 200 días.';
+
+  @override
+  String get signalAlertsNotification => 'Sinais técnicos';
 }

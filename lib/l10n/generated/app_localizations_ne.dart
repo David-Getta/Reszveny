@@ -2731,4 +2731,14 @@ class AppLocalizationsNe extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => '२०० दिने औसतभन्दा तल गयो';
+
+  @override
+  String get signalAlertsTitle => 'प्राविधिक संकेत सूचनाहरू';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'दिनमा एक पटक, तपाईंले फलो गर्नुभएको स्टक ओभरसोल्ड वा ओभरबट (RSI) हुँदा, वा त्यसको मूल्यले २०० दिने औसत पार गर्दा।';
+
+  @override
+  String get signalAlertsNotification => 'प्राविधिक संकेतहरू';
 }

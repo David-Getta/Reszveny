@@ -2745,4 +2745,14 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'unter den 200-Tage-Durchschnitt gefallen';
+
+  @override
+  String get signalAlertsTitle => 'Benachrichtigungen zu technischen Signalen';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Einmal täglich, wenn eine Aktie, der du folgst, überverkauft oder überkauft wird (RSI) oder ihr Kurs den 200-Tage-Durchschnitt kreuzt.';
+
+  @override
+  String get signalAlertsNotification => 'Technische Signale';
 }

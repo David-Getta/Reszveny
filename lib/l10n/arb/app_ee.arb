@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · wodzrae wu",
   "signalRsiOverbought": "RSI {value} · woƒlee wu",
   "signalCrossedAbove": "eyi ŋkeke 200 ƒe titina la tame",
-  "signalCrossedBelow": "eɖiɖi ŋkeke 200 ƒe titina la te"
+  "signalCrossedBelow": "eɖiɖi ŋkeke 200 ƒe titina la te",
+  "signalAlertsTitle": "Tɛknikal dzesiwo ŋuti gbeƒãɖeɖewo",
+  "signalAlertsSubtitle": "Zi ɖeka gbe sia gbe, ne akpa aɖe si yome nèdzena wodzrae wu alo woƒlee wu (RSI), alo eƒe asi tso ŋkeke 200 ƒe titina la.",
+  "signalAlertsNotification": "Tɛknikal dzesiwo"
 }

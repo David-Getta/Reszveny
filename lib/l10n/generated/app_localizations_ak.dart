@@ -2731,4 +2731,14 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'akɔ ne nna 200 nkyemu no ase';
+
+  @override
+  String get signalAlertsTitle => 'Tɛknikal nsɛnkyerɛnne ho amanneɛbɔ';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Da koro pɛn, sɛ kyɛfa bi a wodi akyi no wɔatɔn no dodo anaa wɔatɔ no dodo (RSI), anaa ne bo twam ne nna 200 nkyemu no a.';
+
+  @override
+  String get signalAlertsNotification => 'Tɛknikal nsɛnkyerɛnne';
 }

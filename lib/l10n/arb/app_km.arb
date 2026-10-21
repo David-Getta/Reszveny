@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · លក់លើសកម្រិត",
   "signalRsiOverbought": "RSI {value} · ទិញលើសកម្រិត",
   "signalCrossedAbove": "បានឡើងផុតមធ្យម ២០០ ថ្ងៃ",
-  "signalCrossedBelow": "បានធ្លាក់ក្រោមមធ្យម ២០០ ថ្ងៃ"
+  "signalCrossedBelow": "បានធ្លាក់ក្រោមមធ្យម ២០០ ថ្ងៃ",
+  "signalAlertsTitle": "ការជូនដំណឹងសញ្ញាបច្ចេកទេស",
+  "signalAlertsSubtitle": "ម្តងក្នុងមួយថ្ងៃ នៅពេលភាគហ៊ុនដែលអ្នកតាមដានក្លាយជាលក់លើសកម្រិត ឬទិញលើសកម្រិត (RSI) ឬតម្លៃរបស់វាឆ្លងកាត់មធ្យម ២០០ ថ្ងៃ។",
+  "signalAlertsNotification": "សញ្ញាបច្ចេកទេស"
 }

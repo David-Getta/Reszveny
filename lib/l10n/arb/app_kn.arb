@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · ಓವರ್‌ಸೋಲ್ಡ್",
   "signalRsiOverbought": "RSI {value} · ಓವರ್‌ಬಾಟ್",
   "signalCrossedAbove": "200 ದಿನಗಳ ಸರಾಸರಿಯ ಮೇಲೆ ದಾಟಿದೆ",
-  "signalCrossedBelow": "200 ದಿನಗಳ ಸರಾಸರಿಯ ಕೆಳಗೆ ಇಳಿದಿದೆ"
+  "signalCrossedBelow": "200 ದಿನಗಳ ಸರಾಸರಿಯ ಕೆಳಗೆ ಇಳಿದಿದೆ",
+  "signalAlertsTitle": "ತಾಂತ್ರಿಕ ಸಿಗ್ನಲ್ ಅಧಿಸೂಚನೆಗಳು",
+  "signalAlertsSubtitle": "ದಿನಕ್ಕೆ ಒಮ್ಮೆ, ನೀವು ಅನುಸರಿಸುವ ಸ್ಟಾಕ್ ಓವರ್‌ಸೋಲ್ಡ್ ಅಥವಾ ಓವರ್‌ಬಾಟ್ (RSI) ಆದಾಗ, ಅಥವಾ ಅದರ ಬೆಲೆ 200 ದಿನಗಳ ಸರಾಸರಿಯನ್ನು ದಾಟಿದಾಗ.",
+  "signalAlertsNotification": "ತಾಂತ್ರಿಕ ಸಿಗ್ನಲ್‌ಗಳು"
 }

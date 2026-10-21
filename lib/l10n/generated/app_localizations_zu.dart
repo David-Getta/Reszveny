@@ -2743,4 +2743,14 @@ class AppLocalizationsZu extends AppLocalizations {
   @override
   String get signalCrossedBelow =>
       'liweqile ngaphansi kwesilinganiso sezinsuku ezingu-200';
+
+  @override
+  String get signalAlertsTitle => 'Izaziso zezimpawu zobuchwepheshe';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Kanye ngosuku, uma isitoko osilandelayo sithengisiwe ngokweqile noma sithengwe ngokweqile (RSI), noma intengo yaso inqamula isilinganiso sezinsuku ezingu-200.';
+
+  @override
+  String get signalAlertsNotification => 'Izimpawu zobuchwepheshe';
 }

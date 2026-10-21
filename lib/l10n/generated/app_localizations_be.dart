@@ -2803,4 +2803,14 @@ class AppLocalizationsBe extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'перасекла 200-дзённую сярэднюю ўніз';
+
+  @override
+  String get signalAlertsTitle => 'Апавяшчэнні пра тэхнічныя сігналы';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Раз на дзень, калі акцыя, за якой вы сочыце, пераходзіць у перапраданасць або перакупленасць (RSI), або яе цана перасякае 200-дзённую сярэднюю.';
+
+  @override
+  String get signalAlertsNotification => 'Тэхнічныя сігналы';
 }

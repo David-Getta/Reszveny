@@ -2613,6 +2613,16 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => '下穿200日均线';
+
+  @override
+  String get signalAlertsTitle => '技术信号通知';
+
+  @override
+  String get signalAlertsSubtitle =>
+      '每天一次，当您关注的股票进入超卖或超买（RSI）状态，或其价格穿越200日均线时。';
+
+  @override
+  String get signalAlertsNotification => '技术信号';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -5222,4 +5232,14 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get signalCrossedBelow => '跌穿200日平均線';
+
+  @override
+  String get signalAlertsTitle => '技術訊號通知';
+
+  @override
+  String get signalAlertsSubtitle =>
+      '每日一次，當你關注的股票進入超賣或超買（RSI）狀態，或其價格穿越200日平均線時。';
+
+  @override
+  String get signalAlertsNotification => '技術訊號';
 }

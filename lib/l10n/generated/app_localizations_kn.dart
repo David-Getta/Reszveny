@@ -2740,4 +2740,14 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => '200 ದಿನಗಳ ಸರಾಸರಿಯ ಕೆಳಗೆ ಇಳಿದಿದೆ';
+
+  @override
+  String get signalAlertsTitle => 'ತಾಂತ್ರಿಕ ಸಿಗ್ನಲ್ ಅಧಿಸೂಚನೆಗಳು';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'ದಿನಕ್ಕೆ ಒಮ್ಮೆ, ನೀವು ಅನುಸರಿಸುವ ಸ್ಟಾಕ್ ಓವರ್‌ಸೋಲ್ಡ್ ಅಥವಾ ಓವರ್‌ಬಾಟ್ (RSI) ಆದಾಗ, ಅಥವಾ ಅದರ ಬೆಲೆ 200 ದಿನಗಳ ಸರಾಸರಿಯನ್ನು ದಾಟಿದಾಗ.';
+
+  @override
+  String get signalAlertsNotification => 'ತಾಂತ್ರಿಕ ಸಿಗ್ನಲ್‌ಗಳು';
 }

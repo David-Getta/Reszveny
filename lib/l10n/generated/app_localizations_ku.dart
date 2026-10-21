@@ -2734,4 +2734,14 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'ji navîniya 200 rojan ber bi jêr derbas bû';
+
+  @override
+  String get signalAlertsTitle => 'Agahdariyên sînyalên teknîkî';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Rojê carekê, dema ku pişkeke ku tu dişopînî zêde firotî an zêde kirî (RSI) dibe, an jî bihayê wê navîniya 200 rojan derbas dike.';
+
+  @override
+  String get signalAlertsNotification => 'Sînyalên teknîkî';
 }

@@ -2726,4 +2726,14 @@ class AppLocalizationsMai extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => '200 दिनक औसतसँ नीचाँ गेल';
+
+  @override
+  String get signalAlertsTitle => 'तकनीकी संकेत सूचना';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'दिनमे एक बेर, जखन अहाँ जे स्टॉक फॉलो करैत छी से ओवरसोल्ड वा ओवरबॉट (RSI) भऽ जाए, वा ओकर दाम 200 दिनक औसत पार करए।';
+
+  @override
+  String get signalAlertsNotification => 'तकनीकी संकेत';
 }

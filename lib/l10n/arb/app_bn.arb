@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · ওভারসোল্ড",
   "signalRsiOverbought": "RSI {value} · ওভারবট",
   "signalCrossedAbove": "২০০ দিনের গড়ের উপরে উঠেছে",
-  "signalCrossedBelow": "২০০ দিনের গড়ের নিচে নেমেছে"
+  "signalCrossedBelow": "২০০ দিনের গড়ের নিচে নেমেছে",
+  "signalAlertsTitle": "টেকনিক্যাল সিগন্যালের বিজ্ঞপ্তি",
+  "signalAlertsSubtitle": "দিনে একবার, যখন আপনার অনুসরণ করা কোনো স্টক ওভারসোল্ড বা ওভারবট (RSI) হয়, অথবা এর দাম ২০০ দিনের গড় অতিক্রম করে।",
+  "signalAlertsNotification": "টেকনিক্যাল সিগন্যাল"
 }

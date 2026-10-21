@@ -2747,4 +2747,14 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => '200 p\'unchaw chawpi uranman urayrirqan';
+
+  @override
+  String get signalAlertsTitle => 'Tecnico señalkunamanta willaykuna';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Sapa p\'unchaw huk kuti, qhawasqayki acción nishu vendesqa utaq nishu rantisqa (RSI) kaptin, utaq chaninnin 200 p\'unchaw chawpita chimpaptin.';
+
+  @override
+  String get signalAlertsNotification => 'Tecnico señalkuna';
 }

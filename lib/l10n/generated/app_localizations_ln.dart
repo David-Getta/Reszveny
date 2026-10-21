@@ -2743,4 +2743,14 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'ekiti na nse ya katikati ya mikolo 200';
+
+  @override
+  String get signalAlertsTitle => 'Liyebisi ya bilembo ya tekinike';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Mbala moko na mokolo, ntango action oyo ozali kolanda etekami mingi to esombami mingi (RSI), to ntalo na yango eleki katikati ya mikolo 200.';
+
+  @override
+  String get signalAlertsNotification => 'Bilembo ya tekinike';
 }

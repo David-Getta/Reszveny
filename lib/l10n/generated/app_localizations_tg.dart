@@ -2734,4 +2734,14 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'аз миёнаи 200-рӯза поён гузашт';
+
+  @override
+  String get signalAlertsTitle => 'Огоҳиномаҳо дар бораи сигналҳои техникӣ';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Як бор дар рӯз, вақте ки саҳмияи пайгиришудаи шумо аз ҳад зиёд фурӯхта шуда ё аз ҳад зиёд харида шуда (RSI) мегардад, ё нархи он миёнаи 200-рӯзаро мебурад.';
+
+  @override
+  String get signalAlertsNotification => 'Сигналҳои техникӣ';
 }

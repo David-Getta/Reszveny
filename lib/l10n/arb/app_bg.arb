@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · свръхпродаден",
   "signalRsiOverbought": "RSI {value} · свръхкупен",
   "signalCrossedAbove": "пресече 200-дневната средна нагоре",
-  "signalCrossedBelow": "пресече 200-дневната средна надолу"
+  "signalCrossedBelow": "пресече 200-дневната средна надолу",
+  "signalAlertsTitle": "Известия за технически сигнали",
+  "signalAlertsSubtitle": "Веднъж дневно, когато акция, която следите, стане свръхпродадена или свръхкупена (RSI), или цената ѝ пресече 200-дневната средна.",
+  "signalAlertsNotification": "Технически сигнали"
 }

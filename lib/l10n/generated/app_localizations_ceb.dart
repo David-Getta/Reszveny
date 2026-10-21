@@ -2743,4 +2743,14 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'mikanaog ubos sa 200 ka adlaw nga average';
+
+  @override
+  String get signalAlertsTitle => 'Mga pahibalo sa teknikal nga signal';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Kausa sa usa ka adlaw, kon ang usa ka stock nga imong gisubay mahimong oversold o overbought (RSI), o ang presyo niini molabang sa iyang 200 ka adlaw nga average.';
+
+  @override
+  String get signalAlertsNotification => 'Mga teknikal nga signal';
 }

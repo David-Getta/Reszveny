@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · oorverkoop",
   "signalRsiOverbought": "RSI {value} · oorgekoop",
   "signalCrossedAbove": "het bo sy 200-dae-gemiddelde gekruis",
-  "signalCrossedBelow": "het onder sy 200-dae-gemiddelde gekruis"
+  "signalCrossedBelow": "het onder sy 200-dae-gemiddelde gekruis",
+  "signalAlertsTitle": "Kennisgewings oor tegniese seine",
+  "signalAlertsSubtitle": "Een keer per dag, wanneer ’n aandeel wat jy volg oorverkoop of oorgekoop raak (RSI), of sy prys sy 200-dae-gemiddelde kruis.",
+  "signalAlertsNotification": "Tegniese seine"
 }

@@ -4686,6 +4686,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'crossed below its 200-day average'**
   String get signalCrossedBelow;
+
+  /// Settings switch title: a desktop notification about technical signals on the user's favorites and portfolio stocks.
+  ///
+  /// In en, this message translates to:
+  /// **'Technical signal notifications'**
+  String get signalAlertsTitle;
+
+  /// Settings switch subtitle explaining when the notification is sent.
+  ///
+  /// In en, this message translates to:
+  /// **'Once a day, when a stock you follow turns oversold or overbought (RSI), or its price crosses its 200-day average.'**
+  String get signalAlertsSubtitle;
+
+  /// Title of that system notification; the body lists the stocks with their signals.
+  ///
+  /// In en, this message translates to:
+  /// **'Technical signals'**
+  String get signalAlertsNotification;
 }
 
 class _AppLocalizationsDelegate

@@ -2733,4 +2733,14 @@ class AppLocalizationsCkb extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'تێکڕای ٢٠٠ ڕۆژ بەرەو خوارەوە بڕی';
+
+  @override
+  String get signalAlertsTitle => 'ئاگادارکردنەوەی سیگناڵی تەکنیکی';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'ڕۆژانە جارێک، کاتێک پشکێک کە شوێنی دەکەویت زۆر فرۆشراو یان زۆر کڕدراو دەبێت (RSI)، یان نرخەکەی تێکڕای ٢٠٠ ڕۆژ دەبڕێت.';
+
+  @override
+  String get signalAlertsNotification => 'سیگناڵە تەکنیکییەکان';
 }

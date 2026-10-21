@@ -2745,4 +2745,14 @@ class AppLocalizationsXh extends AppLocalizations {
   @override
   String get signalCrossedBelow =>
       'inqumle ngaphantsi komndilili weentsuku ezingama-200';
+
+  @override
+  String get signalAlertsTitle => 'Izaziso zemiqondiso yobuchwepheshe';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Kanye ngosuku, xa isabelo osilandelayo sithengisiwe ngokugqithisileyo okanye sithengwe ngokugqithisileyo (RSI), okanye ixabiso laso linqumla umndilili weentsuku ezingama-200.';
+
+  @override
+  String get signalAlertsNotification => 'Imiqondiso yobuchwepheshe';
 }

@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · terlebih jual",
   "signalRsiOverbought": "RSI {value} · terlebih beli",
   "signalCrossedAbove": "menembusi ke atas purata 200 hari",
-  "signalCrossedBelow": "menembusi ke bawah purata 200 hari"
+  "signalCrossedBelow": "menembusi ke bawah purata 200 hari",
+  "signalAlertsTitle": "Pemberitahuan isyarat teknikal",
+  "signalAlertsSubtitle": "Sekali sehari, apabila saham yang anda ikuti menjadi terlebih jual atau terlebih beli (RSI), atau harganya melintasi purata 200 hari.",
+  "signalAlertsNotification": "Isyarat teknikal"
 }

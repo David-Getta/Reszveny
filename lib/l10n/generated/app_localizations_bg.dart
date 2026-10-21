@@ -2733,4 +2733,14 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'пресече 200-дневната средна надолу';
+
+  @override
+  String get signalAlertsTitle => 'Известия за технически сигнали';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Веднъж дневно, когато акция, която следите, стане свръхпродадена или свръхкупена (RSI), или цената ѝ пресече 200-дневната средна.';
+
+  @override
+  String get signalAlertsNotification => 'Технически сигнали';
 }

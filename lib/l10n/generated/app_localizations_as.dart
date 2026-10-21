@@ -2731,4 +2731,14 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => '২০০ দিনৰ গড়ৰ তলত নামিল';
+
+  @override
+  String get signalAlertsTitle => 'কাৰিকৰী সংকেতৰ জাননী';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'দিনে এবাৰ, যেতিয়া আপুনি অনুসৰণ কৰা কোনো ষ্টক অতি বিক্ৰয় বা অতি ক্ৰয় (RSI) হয়, বা ইয়াৰ দাম ২০০ দিনৰ গড় অতিক্ৰম কৰে।';
+
+  @override
+  String get signalAlertsNotification => 'কাৰিকৰী সংকেত';
 }

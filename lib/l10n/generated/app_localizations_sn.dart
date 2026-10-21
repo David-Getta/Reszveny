@@ -2737,4 +2737,14 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'yadzika pasi peavhareji yemazuva 200';
+
+  @override
+  String get signalAlertsTitle => 'Zviziviso zvezviratidzo zvetekiniki';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Kamwe pazuva, kana sheya yauri kutevera yatengeswa zvakanyanya kana yatengwa zvakanyanya (RSI), kana mutengo wayo wayambuka avhareji yemazuva 200.';
+
+  @override
+  String get signalAlertsNotification => 'Zviratidzo zvetekiniki';
 }

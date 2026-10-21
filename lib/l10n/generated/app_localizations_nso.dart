@@ -2750,4 +2750,14 @@ class AppLocalizationsNso extends AppLocalizations {
   @override
   String get signalCrossedBelow =>
       'e tshetše ka tlase ga palogare ya matšatši a 200';
+
+  @override
+  String get signalAlertsTitle => 'Ditsebišo tša matšhupetšo a setegeniki';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Gatee ka letšatši, ge šere yeo o e latelago e rekišitšwe kudu goba e rekilwe kudu (RSI), goba theko ya yona e tshela palogare ya matšatši a 200.';
+
+  @override
+  String get signalAlertsNotification => 'Matšhupetšo a setegeniki';
 }

@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · kaleuwihan dijual",
   "signalRsiOverbought": "RSI {value} · kaleuwihan dibeuli",
   "signalCrossedAbove": "nembus ka luhureun rata-rata 200 poé",
-  "signalCrossedBelow": "nembus ka handapeun rata-rata 200 poé"
+  "signalCrossedBelow": "nembus ka handapeun rata-rata 200 poé",
+  "signalAlertsTitle": "Béwara sinyal téknis",
+  "signalAlertsSubtitle": "Sakali sapoé, nalika saham anu anjeun tuturkeun jadi kaleuwihan dijual atanapi kaleuwihan dibeuli (RSI), atanapi hargana meuntas rata-rata 200 poé.",
+  "signalAlertsNotification": "Sinyal téknis"
 }

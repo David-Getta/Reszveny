@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · survente",
   "signalRsiOverbought": "RSI {value} · surachat",
   "signalCrossedAbove": "a franchi sa moyenne 200 jours à la hausse",
-  "signalCrossedBelow": "a franchi sa moyenne 200 jours à la baisse"
+  "signalCrossedBelow": "a franchi sa moyenne 200 jours à la baisse",
+  "signalAlertsTitle": "Notifications de signaux techniques",
+  "signalAlertsSubtitle": "Une fois par jour, lorsqu’une action que vous suivez passe en survente ou en surachat (RSI), ou que son cours croise sa moyenne 200 jours.",
+  "signalAlertsNotification": "Signaux techniques"
 }

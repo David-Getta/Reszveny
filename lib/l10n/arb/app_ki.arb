@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · ũendetio mũno",
   "signalRsiOverbought": "RSI {value} · ũgũrĩtwo mũno",
   "signalCrossedAbove": "nĩ yambatĩte igũrũ rĩa gatagatĩ ka mĩthenya 200",
-  "signalCrossedBelow": "nĩ ĩikũrũkĩte thĩ ya gatagatĩ ka mĩthenya 200"
+  "signalCrossedBelow": "nĩ ĩikũrũkĩte thĩ ya gatagatĩ ka mĩthenya 200",
+  "signalAlertsTitle": "Kũmenyithia kwa imenyithia cia tekiniki",
+  "signalAlertsSubtitle": "Rĩmwe o mũthenya, rĩrĩa hisa ĩrĩa ũrarũmĩrĩra ũendetio mũno kana ũgũrĩtwo mũno (RSI), kana thogora wayo wakĩra gatagatĩ ka mĩthenya 200.",
+  "signalAlertsNotification": "Imenyithia cia tekiniki"
 }

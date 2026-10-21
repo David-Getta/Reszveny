@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · wyprzedanie",
   "signalRsiOverbought": "RSI {value} · wykupienie",
   "signalCrossedAbove": "przebicie w górę średniej 200-dniowej",
-  "signalCrossedBelow": "przebicie w dół średniej 200-dniowej"
+  "signalCrossedBelow": "przebicie w dół średniej 200-dniowej",
+  "signalAlertsTitle": "Powiadomienia o sygnałach technicznych",
+  "signalAlertsSubtitle": "Raz dziennie, gdy obserwowana przez ciebie akcja wejdzie w wyprzedanie lub wykupienie (RSI) albo jej kurs przecina średnią 200-dniową.",
+  "signalAlertsNotification": "Sygnały techniczne"
 }

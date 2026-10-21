@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · ఓవర్‌సోల్డ్",
   "signalRsiOverbought": "RSI {value} · ఓవర్‌బాట్",
   "signalCrossedAbove": "200 రోజుల సగటు పైకి దాటింది",
-  "signalCrossedBelow": "200 రోజుల సగటు కిందకి దాటింది"
+  "signalCrossedBelow": "200 రోజుల సగటు కిందకి దాటింది",
+  "signalAlertsTitle": "సాంకేతిక సిగ్నల్ నోటిఫికేషన్‌లు",
+  "signalAlertsSubtitle": "రోజుకు ఒకసారి, మీరు ఫాలో అవుతున్న స్టాక్ ఓవర్‌సోల్డ్ లేదా ఓవర్‌బాట్ (RSI) అయినప్పుడు, లేదా దాని ధర 200 రోజుల సగటును దాటినప్పుడు.",
+  "signalAlertsNotification": "సాంకేతిక సిగ్నల్‌లు"
 }

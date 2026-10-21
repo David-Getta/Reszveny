@@ -2730,4 +2730,14 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'yezger ddaw talemmast n 200 wussan';
+
+  @override
+  String get signalAlertsTitle => 'Ilɣa n yizmulen itiknikanen';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Yiwet n tikkelt deg wass, mi ara yuɣal uksyun i tḍefṛeḍ yettwazenz aṭas neɣ yettwaɣ aṭas (RSI), neɣ mi ara tezger ssuma-ines talemmast n 200 wussan.';
+
+  @override
+  String get signalAlertsNotification => 'Izmulen itiknikanen';
 }

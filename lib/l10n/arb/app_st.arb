@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · e rekisitswe haholo",
   "signalRsiOverbought": "RSI {value} · e rekilwe haholo",
   "signalCrossedAbove": "e tshetse ka hodimo ho karolelano ya matsatsi a 200",
-  "signalCrossedBelow": "e tshetse ka tlase ho karolelano ya matsatsi a 200"
+  "signalCrossedBelow": "e tshetse ka tlase ho karolelano ya matsatsi a 200",
+  "signalAlertsTitle": "Ditsebiso tsa matshwao a botekgeniki",
+  "signalAlertsSubtitle": "Hang ka letsatsi, ha sheya eo o e latelang e rekisitswe haholo kapa e rekilwe haholo (RSI), kapa theko ya yona e tshela karolelano ya matsatsi a 200.",
+  "signalAlertsNotification": "Matshwao a botekgeniki"
 }

@@ -2733,4 +2733,14 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => '200 хоногийн дунджаас доош орсон';
+
+  @override
+  String get signalAlertsTitle => 'Техник дохионы мэдэгдэл';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Өдөрт нэг удаа, таны дагаж буй хувьцаа хэт их зарагдсан эсвэл хэт их худалдан авагдсан (RSI) болох, эсвэл үнэ нь 200 хоногийн дундажийг давах үед.';
+
+  @override
+  String get signalAlertsNotification => 'Техник дохио';
 }

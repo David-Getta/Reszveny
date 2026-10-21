@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · ଓଭରସୋଲ୍ଡ",
   "signalRsiOverbought": "RSI {value} · ଓଭରବଟ୍",
   "signalCrossedAbove": "୨୦୦ ଦିନର ହାରାହାରି ଉପରକୁ ଗଲା",
-  "signalCrossedBelow": "୨୦୦ ଦିନର ହାରାହାରି ତଳକୁ ଗଲା"
+  "signalCrossedBelow": "୨୦୦ ଦିନର ହାରାହାରି ତଳକୁ ଗଲା",
+  "signalAlertsTitle": "ଟେକ୍ନିକାଲ ସିଗନାଲ ବିଜ୍ଞପ୍ତି",
+  "signalAlertsSubtitle": "ଦିନକୁ ଥରେ, ଯେତେବେଳେ ଆପଣ ଅନୁସରଣ କରୁଥିବା ଷ୍ଟକ ଓଭରସୋଲ୍ଡ କିମ୍ବା ଓଭରବଟ୍ (RSI) ହୁଏ, କିମ୍ବା ତାହାର ମୂଲ୍ୟ ୨୦୦ ଦିନର ହାରାହାରିକୁ ଅତିକ୍ରମ କରେ।",
+  "signalAlertsNotification": "ଟେକ୍ନିକାଲ ସିଗନାଲ"
 }

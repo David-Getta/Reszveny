@@ -2734,4 +2734,14 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'mudhun ngliwati rata-rata 200 dina';
+
+  @override
+  String get signalAlertsTitle => 'Notifikasi sinyal teknikal';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Sedina sepisan, nalika saham sing kok tutaké dadi jenuh adol utawa jenuh tuku (RSI), utawa regané ngliwati rata-rata 200 dina.';
+
+  @override
+  String get signalAlertsNotification => 'Sinyal teknikal';
 }

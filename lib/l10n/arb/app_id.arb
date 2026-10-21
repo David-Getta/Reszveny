@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · jenuh jual",
   "signalRsiOverbought": "RSI {value} · jenuh beli",
   "signalCrossedAbove": "menembus ke atas rata-rata 200 hari",
-  "signalCrossedBelow": "menembus ke bawah rata-rata 200 hari"
+  "signalCrossedBelow": "menembus ke bawah rata-rata 200 hari",
+  "signalAlertsTitle": "Notifikasi sinyal teknikal",
+  "signalAlertsSubtitle": "Sekali sehari, saat saham yang kamu ikuti menjadi jenuh jual atau jenuh beli (RSI), atau harganya melintasi rata-rata 200 hari.",
+  "signalAlertsNotification": "Sinyal teknikal"
 }

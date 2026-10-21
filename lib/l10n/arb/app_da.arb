@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · oversolgt",
   "signalRsiOverbought": "RSI {value} · overkøbt",
   "signalCrossedAbove": "krydsede over sit 200-dages gennemsnit",
-  "signalCrossedBelow": "krydsede under sit 200-dages gennemsnit"
+  "signalCrossedBelow": "krydsede under sit 200-dages gennemsnit",
+  "signalAlertsTitle": "Notifikationer om tekniske signaler",
+  "signalAlertsSubtitle": "Én gang om dagen, når en aktie, du følger, bliver oversolgt eller overkøbt (RSI), eller dens kurs krydser 200-dages gennemsnittet.",
+  "signalAlertsNotification": "Tekniske signaler"
 }

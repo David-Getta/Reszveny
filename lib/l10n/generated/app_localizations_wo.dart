@@ -2727,4 +2727,14 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'jàll na ci suuf digg-diggu 200 fan';
+
+  @override
+  String get signalAlertsTitle => 'Yégle yu teknik yu màndargay';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Benn yoon bés bu nekk, bu aksiyoŋ bi ngay topp jaay nañu ko lu ëpp walla jënd nañu ko lu ëpp (RSI), walla njëg la jàll digg-diggu 200 fan.';
+
+  @override
+  String get signalAlertsNotification => 'Màndargay teknik';
 }

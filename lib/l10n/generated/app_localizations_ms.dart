@@ -2737,4 +2737,14 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'menembusi ke bawah purata 200 hari';
+
+  @override
+  String get signalAlertsTitle => 'Pemberitahuan isyarat teknikal';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Sekali sehari, apabila saham yang anda ikuti menjadi terlebih jual atau terlebih beli (RSI), atau harganya melintasi purata 200 hari.';
+
+  @override
+  String get signalAlertsNotification => 'Isyarat teknikal';
 }

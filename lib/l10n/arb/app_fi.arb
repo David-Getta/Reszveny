@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · ylimyyty",
   "signalRsiOverbought": "RSI {value} · yliostettu",
   "signalCrossedAbove": "nousi 200 päivän keskiarvon yläpuolelle",
-  "signalCrossedBelow": "laski 200 päivän keskiarvon alapuolelle"
+  "signalCrossedBelow": "laski 200 päivän keskiarvon alapuolelle",
+  "signalAlertsTitle": "Ilmoitukset teknisistä signaaleista",
+  "signalAlertsSubtitle": "Kerran päivässä, kun seuraamasi osake muuttuu ylimyydyksi tai yliostetuksi (RSI) tai sen kurssi leikkaa 200 päivän keskiarvon.",
+  "signalAlertsNotification": "Tekniset signaalit"
 }

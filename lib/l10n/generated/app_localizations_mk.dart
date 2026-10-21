@@ -2751,4 +2751,14 @@ class AppLocalizationsMk extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'премина под 200-дневниот просек';
+
+  @override
+  String get signalAlertsTitle => 'Известувања за технички сигнали';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Еднаш дневно, кога акција што ја следите ќе стане препродадена или прекупена (RSI), или нејзината цена ќе го пресече 200-дневниот просек.';
+
+  @override
+  String get signalAlertsNotification => 'Технички сигнали';
 }

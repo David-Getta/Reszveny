@@ -2730,4 +2730,14 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'kọjá sí ìsàlẹ̀ ìpíndọ́gba ọjọ́ 200';
+
+  @override
+  String get signalAlertsTitle => 'Ìfitónilétí àmì ìmọ̀-ẹ̀rọ';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Lẹ́ẽ̀kan lóòjọ́, nígbà tí ọjà tí o ń tẹ̀lé bá ti tà jù tàbí ti rà jù (RSI), tàbí tí iye rẹ̀ bá kọjá ìpíndọ́gba ọjọ́ 200.';
+
+  @override
+  String get signalAlertsNotification => 'Àwọn àmì ìmọ̀-ẹ̀rọ';
 }

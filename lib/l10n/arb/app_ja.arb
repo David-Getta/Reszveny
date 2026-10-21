@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · 売られ過ぎ",
   "signalRsiOverbought": "RSI {value} · 買われ過ぎ",
   "signalCrossedAbove": "200日移動平均を上抜け",
-  "signalCrossedBelow": "200日移動平均を下抜け"
+  "signalCrossedBelow": "200日移動平均を下抜け",
+  "signalAlertsTitle": "テクニカルシグナル通知",
+  "signalAlertsSubtitle": "1日1回、フォロー中の銘柄が売られ過ぎまたは買われ過ぎ（RSI）になったとき、または株価が200日移動平均をクロスしたときに通知します。",
+  "signalAlertsNotification": "テクニカルシグナル"
 }

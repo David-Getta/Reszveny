@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · اشباع فروش",
   "signalRsiOverbought": "RSI {value} · اشباع خرید",
   "signalCrossedAbove": "میانگین ۲۰۰ روزه را رو به بالا شکست",
-  "signalCrossedBelow": "میانگین ۲۰۰ روزه را رو به پایین شکست"
+  "signalCrossedBelow": "میانگین ۲۰۰ روزه را رو به پایین شکست",
+  "signalAlertsTitle": "اعلان‌های سیگنال تکنیکال",
+  "signalAlertsSubtitle": "یک بار در روز، وقتی سهامی که دنبال می‌کنید به اشباع فروش یا اشباع خرید (RSI) برسد، یا قیمت آن از میانگین ۲۰۰ روزه عبور کند.",
+  "signalAlertsNotification": "سیگنال‌های تکنیکال"
 }

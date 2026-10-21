@@ -2726,4 +2726,14 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'jippii les hakkundeyel balɗe 200';
+
+  @override
+  String get signalAlertsTitle => 'Tintinooli maandeeji teknik';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Laawol gootol e ñalawma, so aksiyoŋ ngo rewataa yeeyaama burtii walla soodaama burtii (RSI), walla coggu mum ɓennii hakkundeyel balɗe 200.';
+
+  @override
+  String get signalAlertsNotification => 'Maandeeji teknik';
 }

@@ -2737,4 +2737,14 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'a 200 napos átlaga alá került';
+
+  @override
+  String get signalAlertsTitle => 'Technikai jelzés-értesítés';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Naponta egyszer, ha egy figyelt részvény RSI-je túladott vagy túlvett lesz, vagy az ára átlépi a 200 napos átlagát.';
+
+  @override
+  String get signalAlertsNotification => 'Technikai jelzések';
 }

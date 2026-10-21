@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · ашыкча сатылган",
   "signalRsiOverbought": "RSI {value} · ашыкча сатылып алынган",
   "signalCrossedAbove": "200 күндүк орточодон жогору өттү",
-  "signalCrossedBelow": "200 күндүк орточодон ылдый түштү"
+  "signalCrossedBelow": "200 күндүк орточодон ылдый түштү",
+  "signalAlertsTitle": "Техникалык сигнал билдирмелери",
+  "signalAlertsSubtitle": "Күнүнө бир жолу, сиз көзөмөлдөгөн акция ашыкча сатылган же ашыкча сатылып алынган (RSI) болгондо, же анын баасы 200 күндүк орточону кесип өткөндө.",
+  "signalAlertsNotification": "Техникалык сигналдар"
 }

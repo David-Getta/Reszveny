@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · etekami mingi",
   "signalRsiOverbought": "RSI {value} · esombami mingi",
   "signalCrossedAbove": "emati likoló ya katikati ya mikolo 200",
-  "signalCrossedBelow": "ekiti na nse ya katikati ya mikolo 200"
+  "signalCrossedBelow": "ekiti na nse ya katikati ya mikolo 200",
+  "signalAlertsTitle": "Liyebisi ya bilembo ya tekinike",
+  "signalAlertsSubtitle": "Mbala moko na mokolo, ntango action oyo ozali kolanda etekami mingi to esombami mingi (RSI), to ntalo na yango eleki katikati ya mikolo 200.",
+  "signalAlertsNotification": "Bilembo ya tekinike"
 }

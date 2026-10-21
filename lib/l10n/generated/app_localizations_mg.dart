@@ -2750,4 +2750,15 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'nidina ambanin\'ny salan\'isa 200 andro';
+
+  @override
+  String get signalAlertsTitle =>
+      'Fampandrenesana momba ny famantarana teknika';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Indray mandeha isan\'andro, rehefa lasa voavarotra be loatra na voavidy be loatra (RSI) ny orinasa arahinao, na miampita ny salan\'isa 200 andro ny vidiny.';
+
+  @override
+  String get signalAlertsNotification => 'Famantarana teknika';
 }

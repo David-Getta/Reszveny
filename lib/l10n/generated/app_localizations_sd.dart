@@ -2724,4 +2724,14 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => '200 ڏينهن جي سراسري هيٺ ويو';
+
+  @override
+  String get signalAlertsTitle => 'ٽيڪنيڪل سگنل نوٽيفڪيشن';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'ڏينهن ۾ هڪ دفعو، جڏهن توهان جو فالو ڪيل اسٽاڪ اوور سولڊ يا اوور بوٽ (RSI) ٿئي، يا ان جي قيمت 200 ڏينهن جي سراسري کي پار ڪري.';
+
+  @override
+  String get signalAlertsNotification => 'ٽيڪنيڪل سگنل';
 }

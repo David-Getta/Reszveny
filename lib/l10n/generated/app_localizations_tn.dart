@@ -2752,4 +2752,14 @@ class AppLocalizationsTn extends AppLocalizations {
   @override
   String get signalCrossedBelow =>
       'e kgabagantse ka tlase ga palogare ya malatsi a 200';
+
+  @override
+  String get signalAlertsTitle => 'Dikitsiso tsa matshwao a thekeniki';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Gangwe ka letsatsi, fa sheya e o e latelang e rekisitswe thata kgotsa e rekilwe thata (RSI), kgotsa tlhwatlhwa ya yone e kgabaganya palogare ya malatsi a 200.';
+
+  @override
+  String get signalAlertsNotification => 'Matshwao a thekeniki';
 }

@@ -2721,4 +2721,14 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'ཉིན་༢༠༠ ཆ་སྙོམས་ལས་མར་བརྒལ།';
+
+  @override
+  String get signalAlertsTitle => 'ལག་རྩལ་བརྡ་རྟགས་ཀྱི་བརྡ་ཐོ།';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'ཉིན་རེར་ཐེངས་གཅིག ཁྱེད་ཀྱིས་རྗེས་འདེད་བྱེད་པའི་ཧུར་ཁག་འཚོང་ཚད་བརྒལ་བ་ཡང་ན་ཉོ་ཚད་བརྒལ་བ་ (RSI) ཆགས་སྐབས། ཡང་ན་དེའི་རིན་གོང་ཉིན་༢༠༠ ཆ་སྙོམས་ལས་བརྒལ་སྐབས།';
+
+  @override
+  String get signalAlertsNotification => 'ལག་རྩལ་བརྡ་རྟགས།';
 }

@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · überverkauft",
   "signalRsiOverbought": "RSI {value} · überkauft",
   "signalCrossedAbove": "über den 200-Tage-Durchschnitt gestiegen",
-  "signalCrossedBelow": "unter den 200-Tage-Durchschnitt gefallen"
+  "signalCrossedBelow": "unter den 200-Tage-Durchschnitt gefallen",
+  "signalAlertsTitle": "Benachrichtigungen zu technischen Signalen",
+  "signalAlertsSubtitle": "Einmal täglich, wenn eine Aktie, der du folgst, überverkauft oder überkauft wird (RSI) oder ihr Kurs den 200-Tage-Durchschnitt kreuzt.",
+  "signalAlertsNotification": "Technische Signale"
 }

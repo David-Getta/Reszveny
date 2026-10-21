@@ -2739,4 +2739,14 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => '200 రోజుల సగటు కిందకి దాటింది';
+
+  @override
+  String get signalAlertsTitle => 'సాంకేతిక సిగ్నల్ నోటిఫికేషన్‌లు';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'రోజుకు ఒకసారి, మీరు ఫాలో అవుతున్న స్టాక్ ఓవర్‌సోల్డ్ లేదా ఓవర్‌బాట్ (RSI) అయినప్పుడు, లేదా దాని ధర 200 రోజుల సగటును దాటినప్పుడు.';
+
+  @override
+  String get signalAlertsNotification => 'సాంకేతిక సిగ్నల్‌లు';
 }

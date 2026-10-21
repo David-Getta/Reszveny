@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · həddindən artıq satılmış",
   "signalRsiOverbought": "RSI {value} · həddindən artıq alınmış",
   "signalCrossedAbove": "200 günlük ortanı yuxarı kəsdi",
-  "signalCrossedBelow": "200 günlük ortanı aşağı kəsdi"
+  "signalCrossedBelow": "200 günlük ortanı aşağı kəsdi",
+  "signalAlertsTitle": "Texniki siqnal bildirişləri",
+  "signalAlertsSubtitle": "Gündə bir dəfə, izlədiyiniz səhm həddindən artıq satılmış və ya həddindən artıq alınmış olduqda (RSI), yaxud qiyməti 200 günlük ortanı keçdikdə.",
+  "signalAlertsNotification": "Texniki siqnallar"
 }

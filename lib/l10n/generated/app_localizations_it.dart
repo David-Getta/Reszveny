@@ -2739,4 +2739,14 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'ha rotto al ribasso la media a 200 giorni';
+
+  @override
+  String get signalAlertsTitle => 'Notifiche sui segnali tecnici';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Una volta al giorno, quando un titolo che segui diventa ipervenduto o ipercomprato (RSI), o il suo prezzo attraversa la media a 200 giorni.';
+
+  @override
+  String get signalAlertsNotification => 'Segnali tecnici';
 }

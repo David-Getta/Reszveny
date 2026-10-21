@@ -2728,4 +2728,14 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => '200 ਦਿਨਾਂ ਦੀ ਔਸਤ ਤੋਂ ਹੇਠਾਂ ਗਿਆ';
+
+  @override
+  String get signalAlertsTitle => 'ਤਕਨੀਕੀ ਸਿਗਨਲ ਸੂਚਨਾਵਾਂ';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'ਦਿਨ ਵਿੱਚ ਇੱਕ ਵਾਰ, ਜਦੋਂ ਤੁਹਾਡੇ ਵੱਲੋਂ ਫਾਲੋ ਕੀਤਾ ਸਟਾਕ ਓਵਰਸੋਲਡ ਜਾਂ ਓਵਰਬੌਟ (RSI) ਹੋ ਜਾਂਦਾ ਹੈ, ਜਾਂ ਉਸਦੀ ਕੀਮਤ 200 ਦਿਨਾਂ ਦੀ ਔਸਤ ਨੂੰ ਪਾਰ ਕਰਦੀ ਹੈ।';
+
+  @override
+  String get signalAlertsNotification => 'ਤਕਨੀਕੀ ਸਿਗਨਲ';
 }

@@ -27,6 +27,7 @@ class AppPreferences extends ChangeNotifier {
     this.emailAlerts = true,
     this.weeklyDigest = false,
     this.earningsReminders = true,
+    this.signalAlerts = true,
     this.morningBrief = false,
     this.portfolioMoveAlert = 0,
     this.portfolioGoal,
@@ -61,6 +62,7 @@ class AppPreferences extends ChangeNotifier {
   static const _emailAlertsKey = 'email_alerts';
   static const _weeklyDigestKey = 'weekly_digest';
   static const _earningsRemindersKey = 'earnings_reminders';
+  static const _signalAlertsKey = 'signal_alerts';
   static const _morningBriefKey = 'morning_brief';
   static const _portfolioMoveKey = 'portfolio_move_alert';
   static const _portfolioMoveNotifiedKey = 'portfolio_move_notified';
@@ -141,6 +143,9 @@ class AppPreferences extends ChangeNotifier {
 
   /// Asztali értesítés a figyelt részvények gyorsjelentése előtti napon.
   bool earningsReminders;
+
+  /// Napi technikai jelzés-értesítés (asztali gépen).
+  bool signalAlerts;
 
   /// Reggelente magától elkészül a napi összefoglaló (amíg az app fut).
   bool morningBrief;
@@ -299,6 +304,7 @@ class AppPreferences extends ChangeNotifier {
         emailAlerts: prefs.getBool(_emailAlertsKey) ?? true,
         weeklyDigest: prefs.getBool(_weeklyDigestKey) ?? false,
         earningsReminders: prefs.getBool(_earningsRemindersKey) ?? true,
+        signalAlerts: prefs.getBool(_signalAlertsKey) ?? true,
         morningBrief: prefs.getBool(_morningBriefKey) ?? false,
         portfolioMoveAlert: prefs.getDouble(_portfolioMoveKey) ?? 0,
         portfolioGoal: parseGoal(prefs.getString(_goalKey)),
@@ -461,6 +467,13 @@ class AppPreferences extends ChangeNotifier {
     earningsReminders = enabled;
     notifyListeners();
     await _save((p) => p.setBool(_earningsRemindersKey, enabled));
+  }
+
+  Future<void> setSignalAlerts(bool enabled) async {
+    if (signalAlerts == enabled) return;
+    signalAlerts = enabled;
+    notifyListeners();
+    await _save((p) => p.setBool(_signalAlertsKey, enabled));
   }
 
   Future<void> setThemeMode(ThemeMode mode) async {

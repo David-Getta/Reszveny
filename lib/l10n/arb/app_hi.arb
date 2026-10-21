@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · ओवरसोल्ड",
   "signalRsiOverbought": "RSI {value} · ओवरबॉट",
   "signalCrossedAbove": "200 दिन के औसत से ऊपर गया",
-  "signalCrossedBelow": "200 दिन के औसत से नीचे गया"
+  "signalCrossedBelow": "200 दिन के औसत से नीचे गया",
+  "signalAlertsTitle": "तकनीकी संकेत सूचनाएँ",
+  "signalAlertsSubtitle": "दिन में एक बार, जब आपके द्वारा फ़ॉलो किया गया कोई स्टॉक ओवरसोल्ड या ओवरबॉट (RSI) हो जाए, या उसकी कीमत 200 दिन के औसत को पार करे।",
+  "signalAlertsNotification": "तकनीकी संकेत"
 }

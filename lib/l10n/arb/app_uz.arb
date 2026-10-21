@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · haddan ortiq sotilgan",
   "signalRsiOverbought": "RSI {value} · haddan ortiq sotib olingan",
   "signalCrossedAbove": "200 kunlik o'rtachadan yuqoriga chiqdi",
-  "signalCrossedBelow": "200 kunlik o'rtachadan pastga tushdi"
+  "signalCrossedBelow": "200 kunlik o'rtachadan pastga tushdi",
+  "signalAlertsTitle": "Texnik signal bildirishnomalari",
+  "signalAlertsSubtitle": "Kuniga bir marta, siz kuzatayotgan aksiya haddan ortiq sotilgan yoki haddan ortiq sotib olingan (RSI) holatga kirganda, yoki uning narxi 200 kunlik o'rtachani kesib o'tganda.",
+  "signalAlertsNotification": "Texnik signallar"
 }

@@ -2699,4 +2699,14 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'ከ200 ቀን አማካዩ በታች አቋርጧል';
+
+  @override
+  String get signalAlertsTitle => 'የቴክኒካል ምልክት ማሳወቂያዎች';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'በቀን አንድ ጊዜ፣ የሚከታተሉት አክሲዮን ከመጠን በላይ የተሸጠ ወይም ከመጠን በላይ የተገዛ ሲሆን (RSI)፣ ወይም ዋጋው የ200 ቀን አማካዩን ሲያቋርጥ።';
+
+  @override
+  String get signalAlertsNotification => 'የቴክኒካል ምልክቶች';
 }

@@ -2734,4 +2734,14 @@ class AppLocalizationsKi extends AppLocalizations {
   @override
   String get signalCrossedBelow =>
       'nĩ ĩikũrũkĩte thĩ ya gatagatĩ ka mĩthenya 200';
+
+  @override
+  String get signalAlertsTitle => 'Kũmenyithia kwa imenyithia cia tekiniki';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Rĩmwe o mũthenya, rĩrĩa hisa ĩrĩa ũrarũmĩrĩra ũendetio mũno kana ũgũrĩtwo mũno (RSI), kana thogora wayo wakĩra gatagatĩ ka mĩthenya 200.';
+
+  @override
+  String get signalAlertsNotification => 'Imenyithia cia tekiniki';
 }

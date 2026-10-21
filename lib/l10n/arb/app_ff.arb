@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · yeeyaama burtii",
   "signalRsiOverbought": "RSI {value} · soodaama burtii",
   "signalCrossedAbove": "ƴawii dow hakkundeyel balɗe 200",
-  "signalCrossedBelow": "jippii les hakkundeyel balɗe 200"
+  "signalCrossedBelow": "jippii les hakkundeyel balɗe 200",
+  "signalAlertsTitle": "Tintinooli maandeeji teknik",
+  "signalAlertsSubtitle": "Laawol gootol e ñalawma, so aksiyoŋ ngo rewataa yeeyaama burtii walla soodaama burtii (RSI), walla coggu mum ɓennii hakkundeyel balɗe 200.",
+  "signalAlertsNotification": "Maandeeji teknik"
 }

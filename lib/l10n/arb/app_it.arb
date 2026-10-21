@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · ipervenduto",
   "signalRsiOverbought": "RSI {value} · ipercomprato",
   "signalCrossedAbove": "ha superato al rialzo la media a 200 giorni",
-  "signalCrossedBelow": "ha rotto al ribasso la media a 200 giorni"
+  "signalCrossedBelow": "ha rotto al ribasso la media a 200 giorni",
+  "signalAlertsTitle": "Notifiche sui segnali tecnici",
+  "signalAlertsSubtitle": "Una volta al giorno, quando un titolo che segui diventa ipervenduto o ipercomprato (RSI), o il suo prezzo attraversa la media a 200 giorni.",
+  "signalAlertsNotification": "Segnali tecnici"
 }

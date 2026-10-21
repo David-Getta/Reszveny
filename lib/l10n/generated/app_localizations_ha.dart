@@ -2737,4 +2737,14 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'ya sauka ƙasa da matsakaicin kwana 200';
+
+  @override
+  String get signalAlertsTitle => 'Sanarwar siginar fasaha';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Sau ɗaya a rana, idan wani hannun jari da kake bibiya an sayar fiye da kima ko an saya fiye da kima (RSI), ko farashinsa ya ketare matsakaicin kwana 200.';
+
+  @override
+  String get signalAlertsNotification => 'Siginonin fasaha';
 }

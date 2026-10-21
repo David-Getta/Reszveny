@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · gutundiddwa ennyo",
   "signalRsiOverbought": "RSI {value} · gugulidwa ennyo",
   "signalCrossedAbove": "gulinnye waggulu wa wakati w'ennaku 200",
-  "signalCrossedBelow": "gukkide wansi wa wakati w'ennaku 200"
+  "signalCrossedBelow": "gukkide wansi wa wakati w'ennaku 200",
+  "signalAlertsTitle": "Obubaka ku bubonero obwa tekinika",
+  "signalAlertsSubtitle": "Omulundi gumu buli lunaku, nga omugabo gw'ogoberera gutundiddwa ennyo oba gugulidwa ennyo (RSI), oba omuwendo gwagwo gusomose wakati w'ennaku 200.",
+  "signalAlertsNotification": "Obubonero obwa tekinika"
 }

@@ -2723,4 +2723,14 @@ class AppLocalizationsPs extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'له ۲۰۰ ورځني اوسط ښکته تېر شو';
+
+  @override
+  String get signalAlertsTitle => 'د تخنیکي سیګنالونو خبرتیاوې';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'په ورځ یو ځل، کله چې ستاسو تعقیب شوی سټاک ډېر پلورل شوی یا ډېر پېرودل شوی (RSI) شي، یا بیه یې له ۲۰۰ ورځني اوسط تېره شي.';
+
+  @override
+  String get signalAlertsNotification => 'تخنیکي سیګنالونه';
 }

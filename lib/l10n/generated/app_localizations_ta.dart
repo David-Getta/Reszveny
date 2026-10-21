@@ -2742,4 +2742,14 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => '200 நாள் சராசரிக்குக் கீழே கடந்தது';
+
+  @override
+  String get signalAlertsTitle => 'தொழில்நுட்பச் சமிக்ஞை அறிவிப்புகள்';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'நாளுக்கு ஒரு முறை, நீங்கள் பின்தொடரும் பங்கு அதிக விற்பனை அல்லது அதிக வாங்கல் (RSI) நிலைக்கு வரும்போது, அல்லது அதன் விலை 200 நாள் சராசரியைக் கடக்கும்போது.';
+
+  @override
+  String get signalAlertsNotification => 'தொழில்நுட்பச் சமிக்ஞைகள்';
 }

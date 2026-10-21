@@ -2732,4 +2732,14 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => '200 günlük ortalamanın altına indi';
+
+  @override
+  String get signalAlertsTitle => 'Teknik sinyal bildirimleri';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Günde bir kez, takip ettiğiniz bir hisse aşırı satım veya aşırı alım (RSI) bölgesine girdiğinde ya da fiyatı 200 günlük ortalamayı kestiğinde.';
+
+  @override
+  String get signalAlertsNotification => 'Teknik sinyaller';
 }

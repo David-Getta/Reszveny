@@ -2649,4 +2649,14 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => '200日移動平均を下抜け';
+
+  @override
+  String get signalAlertsTitle => 'テクニカルシグナル通知';
+
+  @override
+  String get signalAlertsSubtitle =>
+      '1日1回、フォロー中の銘柄が売られ過ぎまたは買われ過ぎ（RSI）になったとき、または株価が200日移動平均をクロスしたときに通知します。';
+
+  @override
+  String get signalAlertsNotification => 'テクニカルシグナル';
 }

@@ -2748,4 +2748,14 @@ class AppLocalizationsSt extends AppLocalizations {
   @override
   String get signalCrossedBelow =>
       'e tshetse ka tlase ho karolelano ya matsatsi a 200';
+
+  @override
+  String get signalAlertsTitle => 'Ditsebiso tsa matshwao a botekgeniki';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Hang ka letsatsi, ha sheya eo o e latelang e rekisitswe haholo kapa e rekilwe haholo (RSI), kapa theko ya yona e tshela karolelano ya matsatsi a 200.';
+
+  @override
+  String get signalAlertsNotification => 'Matshwao a botekgeniki';
 }

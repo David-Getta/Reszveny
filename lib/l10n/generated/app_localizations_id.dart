@@ -2728,4 +2728,14 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'menembus ke bawah rata-rata 200 hari';
+
+  @override
+  String get signalAlertsTitle => 'Notifikasi sinyal teknikal';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Sekali sehari, saat saham yang kamu ikuti menjadi jenuh jual atau jenuh beli (RSI), atau harganya melintasi rata-rata 200 hari.';
+
+  @override
+  String get signalAlertsNotification => 'Sinyal teknikal';
 }

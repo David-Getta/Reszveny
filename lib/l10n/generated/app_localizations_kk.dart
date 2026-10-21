@@ -2733,4 +2733,14 @@ class AppLocalizationsKk extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => '200 күндік орташадан төмен түсті';
+
+  @override
+  String get signalAlertsTitle => 'Техникалық сигнал хабарландырулары';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Күніне бір рет, сіз бақылап отырған акция шамадан тыс сатылған немесе шамадан тыс сатып алынған (RSI) болғанда, не оның бағасы 200 күндік орташаны кесіп өткенде.';
+
+  @override
+  String get signalAlertsNotification => 'Техникалық сигналдар';
 }

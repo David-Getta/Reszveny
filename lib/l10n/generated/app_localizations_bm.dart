@@ -2729,4 +2729,14 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'a jiginna tile 200 cɛmancɛ jukɔrɔ';
+
+  @override
+  String get signalAlertsTitle => 'Tekiniki taamasiyɛnw kunnafoniw';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Siɲɛ kelen tile kɔnɔ, ni i bɛ aksiyɔn min kɔlɔsi, a feerela ka tɛmɛ walima a sanna ka tɛmɛ (RSI), walima n’a sɔngɔ tɛmɛna tile 200 cɛmancɛ kan.';
+
+  @override
+  String get signalAlertsNotification => 'Tekiniki taamasiyɛnw';
 }

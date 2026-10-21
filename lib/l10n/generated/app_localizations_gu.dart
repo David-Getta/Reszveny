@@ -2727,4 +2727,14 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => '200 દિવસની સરેરાશથી નીચે ગયો';
+
+  @override
+  String get signalAlertsTitle => 'ટેક્નિકલ સિગ્નલની સૂચનાઓ';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'દિવસમાં એક વાર, જ્યારે તમે ફોલો કરતા કોઈ સ્ટોક ઓવરસોલ્ડ અથવા ઓવરબૉટ (RSI) થાય, અથવા તેની કિંમત 200 દિવસની સરેરાશને ઓળંગે.';
+
+  @override
+  String get signalAlertsNotification => 'ટેક્નિકલ સિગ્નલ';
 }

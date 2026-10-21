@@ -2741,4 +2741,14 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'διέσπασε καθοδικά τον μέσο όρο 200 ημερών';
+
+  @override
+  String get signalAlertsTitle => 'Ειδοποιήσεις τεχνικών σημάτων';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Μία φορά την ημέρα, όταν μια μετοχή που ακολουθείτε γίνεται υπερπουλημένη ή υπεραγορασμένη (RSI), ή η τιμή της διασχίζει τον μέσο όρο 200 ημερών.';
+
+  @override
+  String get signalAlertsNotification => 'Τεχνικά σήματα';
 }

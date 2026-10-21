@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · baay'ee gurgurame",
   "signalRsiOverbought": "RSI {value} · baay'ee bitame",
   "signalCrossedAbove": "giddugaleessa guyyaa 200 gararraa ce'e",
-  "signalCrossedBelow": "giddugaleessa guyyaa 200 gadi ce'e"
+  "signalCrossedBelow": "giddugaleessa guyyaa 200 gadi ce'e",
+  "signalAlertsTitle": "Beeksisa mallattoo teeknikaa",
+  "signalAlertsSubtitle": "Guyyaatti al tokko, yeroo aksiyoonni ati hordoftu baay'ee gurgurame yookiin baay'ee bitame (RSI) ta'u, yookiin gatiin isaa giddugaleessa guyyaa 200 qaxxaamuru.",
+  "signalAlertsNotification": "Mallattoolee teeknikaa"
 }

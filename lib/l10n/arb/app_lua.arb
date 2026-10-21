@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · bapana bikole",
   "signalRsiOverbought": "RSI {value} · basumba bikole",
   "signalCrossedAbove": "mbanda kulu kua pankatshi pa matuku 200",
-  "signalCrossedBelow": "mbuluka muinshi mua pankatshi pa matuku 200"
+  "signalCrossedBelow": "mbuluka muinshi mua pankatshi pa matuku 200",
+  "signalAlertsTitle": "Dimanyisha dia bimanyinu bia tekinike",
+  "signalAlertsSubtitle": "Musangu umue ku dituku, padi action iudi ulonda bapana bikole anyi basumba bikole (RSI), anyi mushinga wayi usabuka pankatshi pa matuku 200.",
+  "signalAlertsNotification": "Bimanyinu bia tekinike"
 }

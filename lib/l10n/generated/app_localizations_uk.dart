@@ -2806,4 +2806,14 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'пробила вниз середню за 200 днів';
+
+  @override
+  String get signalAlertsTitle => 'Сповіщення про технічні сигнали';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Раз на день, коли акція, за якою ви стежите, входить у зону перепроданості чи перекупленості (RSI) або її ціна перетинає середню за 200 днів.';
+
+  @override
+  String get signalAlertsNotification => 'Технічні сигнали';
 }

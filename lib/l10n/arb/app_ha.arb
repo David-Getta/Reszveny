@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · an sayar fiye da kima",
   "signalRsiOverbought": "RSI {value} · an saya fiye da kima",
   "signalCrossedAbove": "ya haura sama da matsakaicin kwana 200",
-  "signalCrossedBelow": "ya sauka ƙasa da matsakaicin kwana 200"
+  "signalCrossedBelow": "ya sauka ƙasa da matsakaicin kwana 200",
+  "signalAlertsTitle": "Sanarwar siginar fasaha",
+  "signalAlertsSubtitle": "Sau ɗaya a rana, idan wani hannun jari da kake bibiya an sayar fiye da kima ko an saya fiye da kima (RSI), ko farashinsa ya ketare matsakaicin kwana 200.",
+  "signalAlertsNotification": "Siginonin fasaha"
 }

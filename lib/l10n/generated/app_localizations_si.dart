@@ -2729,4 +2729,14 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'දින 200 සාමාන්‍යයට පහළින් ගියේය';
+
+  @override
+  String get signalAlertsTitle => 'තාක්ෂණික සංඥා දැනුම්දීම්';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'දිනකට වරක්, ඔබ අනුගමනය කරන කොටසක් අධික විකිණීම හෝ අධික මිලදී ගැනීම (RSI) තත්ත්වයට පත් වූ විට, හෝ එහි මිල දින 200 සාමාන්‍යය තරණය කළ විට.';
+
+  @override
+  String get signalAlertsNotification => 'තාක්ෂණික සංඥා';
 }

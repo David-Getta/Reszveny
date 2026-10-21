@@ -2318,5 +2318,17 @@
   "signalCrossedBelow": "crossed below its 200-day average",
   "@signalCrossedBelow": {
     "description": "Chip text after the ticker: today's close moved below the 200-day moving average (it was above yesterday)."
+  },
+  "signalAlertsTitle": "Technical signal notifications",
+  "@signalAlertsTitle": {
+    "description": "Settings switch title: a desktop notification about technical signals on the user's favorites and portfolio stocks."
+  },
+  "signalAlertsSubtitle": "Once a day, when a stock you follow turns oversold or overbought (RSI), or its price crosses its 200-day average.",
+  "@signalAlertsSubtitle": {
+    "description": "Settings switch subtitle explaining when the notification is sent."
+  },
+  "signalAlertsNotification": "Technical signals",
+  "@signalAlertsNotification": {
+    "description": "Title of that system notification; the body lists the stocks with their signals."
   }
 }

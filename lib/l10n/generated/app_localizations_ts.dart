@@ -2751,4 +2751,14 @@ class AppLocalizationsTs extends AppLocalizations {
   @override
   String get signalCrossedBelow =>
       'yi tsemakanyile ehansi ka avhareji ya masiku ya 200';
+
+  @override
+  String get signalAlertsTitle => 'Switiviso swa mikombiso ya thekiniki';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Kan\'we hi siku, loko xiyere lexi u xi landzelelaka xi xavisiwe ngopfu kumbe xi xaviwe ngopfu (RSI), kumbe ntsengo wa xona wu tsemakanya avhareji ya masiku ya 200.';
+
+  @override
+  String get signalAlertsNotification => 'Mikombiso ya thekiniki';
 }

@@ -1,4 +1,6 @@
 import '../../core/models/price_history.dart';
+import '../../core/util/formatters.dart';
+import '../../l10n/generated/app_localizations.dart';
 import '../analysis/price_stats.dart';
 
 /// Technikai jelzés egy figyelt részvényen a napi záróárakból.
@@ -32,3 +34,11 @@ List<WatchSignal> watchSignals(Iterable<String> symbols, Map<String, PriceHistor
   }
   return out;
 }
+
+/// Egy jelzés szövege a felhasználó nyelvén (a chipeken és az értesítésben).
+String describeSignal(AppLocalizations l10n, Fmt fmt, WatchSignal x) => switch (x.kind) {
+  WatchSignalKind.rsiOversold => l10n.signalRsiOversold(fmt.number(x.value, decimals: 0)),
+  WatchSignalKind.rsiOverbought => l10n.signalRsiOverbought(fmt.number(x.value, decimals: 0)),
+  WatchSignalKind.crossedAbove200 => l10n.signalCrossedAbove,
+  WatchSignalKind.crossedBelow200 => l10n.signalCrossedBelow,
+};

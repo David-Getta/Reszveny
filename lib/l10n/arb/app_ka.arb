@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · ზედმეტად გაყიდული",
   "signalRsiOverbought": "RSI {value} · ზედმეტად ნაყიდი",
   "signalCrossedAbove": "200-დღიან საშუალოს ზემოთ გადაკვეთა",
-  "signalCrossedBelow": "200-დღიან საშუალოს ქვემოთ გადაკვეთა"
+  "signalCrossedBelow": "200-დღიან საშუალოს ქვემოთ გადაკვეთა",
+  "signalAlertsTitle": "ტექნიკური სიგნალების შეტყობინებები",
+  "signalAlertsSubtitle": "დღეში ერთხელ, როცა შენ მიერ თვალყურის დევნებული აქცია ზედმეტად გაყიდული ან ზედმეტად ნაყიდი ხდება (RSI), ან მისი ფასი 200-დღიან საშუალოს კვეთს.",
+  "signalAlertsNotification": "ტექნიკური სიგნალები"
 }

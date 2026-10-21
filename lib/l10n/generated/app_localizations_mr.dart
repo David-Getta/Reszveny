@@ -2732,4 +2732,14 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => '२०० दिवसांच्या सरासरीच्या खाली गेला';
+
+  @override
+  String get signalAlertsTitle => 'तांत्रिक संकेत सूचना';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'दिवसातून एकदा, जेव्हा तुम्ही फॉलो करत असलेला स्टॉक ओव्हरसोल्ड किंवा ओव्हरबॉट (RSI) होतो, किंवा त्याची किंमत २०० दिवसांची सरासरी ओलांडते.';
+
+  @override
+  String get signalAlertsNotification => 'तांत्रिक संकेत';
 }

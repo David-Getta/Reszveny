@@ -2803,4 +2803,14 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'kirto 200 dienų vidurkį žemyn';
+
+  @override
+  String get signalAlertsTitle => 'Pranešimai apie techninius signalus';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Kartą per dieną, kai tavo sekama akcija tampa perparduota ar perpirkta (RSI) arba jos kaina kerta 200 dienų vidurkį.';
+
+  @override
+  String get signalAlertsNotification => 'Techniniai signalai';
 }

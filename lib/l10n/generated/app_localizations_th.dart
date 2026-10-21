@@ -2702,4 +2702,14 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'หลุดลงใต้ค่าเฉลี่ย 200 วัน';
+
+  @override
+  String get signalAlertsTitle => 'การแจ้งเตือนสัญญาณทางเทคนิค';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'วันละครั้ง เมื่อหุ้นที่คุณติดตามเข้าสู่ภาวะขายมากเกินไปหรือซื้อมากเกินไป (RSI) หรือราคาตัดผ่านค่าเฉลี่ย 200 วัน';
+
+  @override
+  String get signalAlertsNotification => 'สัญญาณทางเทคนิค';
 }

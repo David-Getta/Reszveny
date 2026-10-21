@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · yagurishijwe cane",
   "signalRsiOverbought": "RSI {value} · yaguzwe cane",
   "signalCrossedAbove": "yarenze hejuru y'impuzandengo y'imisi 200",
-  "signalCrossedBelow": "yamanutse munsi y'impuzandengo y'imisi 200"
+  "signalCrossedBelow": "yamanutse munsi y'impuzandengo y'imisi 200",
+  "signalAlertsTitle": "Imenyesha y'ibimenyetso vya tekinike",
+  "signalAlertsSubtitle": "Rimwe ku musi, igihe umugabane ukurikirana wagurishijwe cane canke waguzwe cane (RSI), canke igiciro cawo kirenze impuzandengo y'imisi 200.",
+  "signalAlertsNotification": "Ibimenyetso vya tekinike"
 }

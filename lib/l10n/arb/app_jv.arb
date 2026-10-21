@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · jenuh adol",
   "signalRsiOverbought": "RSI {value} · jenuh tuku",
   "signalCrossedAbove": "munggah ngliwati rata-rata 200 dina",
-  "signalCrossedBelow": "mudhun ngliwati rata-rata 200 dina"
+  "signalCrossedBelow": "mudhun ngliwati rata-rata 200 dina",
+  "signalAlertsTitle": "Notifikasi sinyal teknikal",
+  "signalAlertsSubtitle": "Sedina sepisan, nalika saham sing kok tutaké dadi jenuh adol utawa jenuh tuku (RSI), utawa regané ngliwati rata-rata 200 dina.",
+  "signalAlertsNotification": "Sinyal teknikal"
 }

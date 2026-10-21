@@ -2805,4 +2805,14 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'przebicie w dół średniej 200-dniowej';
+
+  @override
+  String get signalAlertsTitle => 'Powiadomienia o sygnałach technicznych';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Raz dziennie, gdy obserwowana przez ciebie akcja wejdzie w wyprzedanie lub wykupienie (RSI) albo jej kurs przecina średnią 200-dniową.';
+
+  @override
+  String get signalAlertsNotification => 'Sygnały techniczne';
 }

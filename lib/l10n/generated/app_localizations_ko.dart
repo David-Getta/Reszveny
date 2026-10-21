@@ -2661,4 +2661,14 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => '200일 이동평균 하향 이탈';
+
+  @override
+  String get signalAlertsTitle => '기술적 신호 알림';
+
+  @override
+  String get signalAlertsSubtitle =>
+      '하루 한 번, 관심 종목이 과매도 또는 과매수(RSI) 상태가 되거나 주가가 200일 이동평균을 교차할 때 알려 드립니다.';
+
+  @override
+  String get signalAlertsNotification => '기술적 신호';
 }

@@ -2742,4 +2742,14 @@ class AppLocalizationsRw extends AppLocalizations {
   @override
   String get signalCrossedBelow =>
       'yamanutse munsi y\'impuzandengo y\'iminsi 200';
+
+  @override
+  String get signalAlertsTitle => 'Imenyesha ry\'ibimenyetso bya tekiniki';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Rimwe ku munsi, iyo umugabane ukurikirana wagurishijwe cyane cyangwa waguzwe cyane (RSI), cyangwa igiciro cyawo kirenze impuzandengo y\'iminsi 200.';
+
+  @override
+  String get signalAlertsNotification => 'Ibimenyetso bya tekiniki';
 }

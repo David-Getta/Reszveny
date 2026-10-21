@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · sobrevenut",
   "signalRsiOverbought": "RSI {value} · sobrecomprat",
   "signalCrossedAbove": "ha creuat per sobre la mitjana de 200 dies",
-  "signalCrossedBelow": "ha creuat per sota la mitjana de 200 dies"
+  "signalCrossedBelow": "ha creuat per sota la mitjana de 200 dies",
+  "signalAlertsTitle": "Notificacions de senyals tècnics",
+  "signalAlertsSubtitle": "Un cop al dia, quan una acció que segueixes passa a sobrevenuda o sobrecomprada (RSI), o el seu preu creua la mitjana de 200 dies.",
+  "signalAlertsNotification": "Senyals tècnics"
 }

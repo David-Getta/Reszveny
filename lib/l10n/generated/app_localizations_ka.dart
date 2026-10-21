@@ -2733,4 +2733,14 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => '200-დღიან საშუალოს ქვემოთ გადაკვეთა';
+
+  @override
+  String get signalAlertsTitle => 'ტექნიკური სიგნალების შეტყობინებები';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'დღეში ერთხელ, როცა შენ მიერ თვალყურის დევნებული აქცია ზედმეტად გაყიდული ან ზედმეტად ნაყიდი ხდება (RSI), ან მისი ფასი 200-დღიან საშუალოს კვეთს.';
+
+  @override
+  String get signalAlertsNotification => 'ტექნიკური სიგნალები';
 }

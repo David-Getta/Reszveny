@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · yi xavisiwe ngopfu",
   "signalRsiOverbought": "RSI {value} · yi xaviwe ngopfu",
   "signalCrossedAbove": "yi tsemakanyile ehenhla ka avhareji ya masiku ya 200",
-  "signalCrossedBelow": "yi tsemakanyile ehansi ka avhareji ya masiku ya 200"
+  "signalCrossedBelow": "yi tsemakanyile ehansi ka avhareji ya masiku ya 200",
+  "signalAlertsTitle": "Switiviso swa mikombiso ya thekiniki",
+  "signalAlertsSubtitle": "Kan'we hi siku, loko xiyere lexi u xi landzelelaka xi xavisiwe ngopfu kumbe xi xaviwe ngopfu (RSI), kumbe ntsengo wa xona wu tsemakanya avhareji ya masiku ya 200.",
+  "signalAlertsNotification": "Mikombiso ya thekiniki"
 }

@@ -2731,4 +2731,14 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => '200 көнлек уртачадан аска төште';
+
+  @override
+  String get signalAlertsTitle => 'Техник сигналлар турында белдерүләр';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Көнгә бер тапкыр, сез күзәткән акция артык сатылган яки артык сатып алынган (RSI) булганда, яки аның бәясе 200 көнлек уртачаны кисеп үткәндә.';
+
+  @override
+  String get signalAlertsNotification => 'Техник сигналлар';
 }

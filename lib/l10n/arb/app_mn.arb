@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · хэт их зарагдсан",
   "signalRsiOverbought": "RSI {value} · хэт их худалдан авагдсан",
   "signalCrossedAbove": "200 хоногийн дунджаас дээш гарсан",
-  "signalCrossedBelow": "200 хоногийн дунджаас доош орсон"
+  "signalCrossedBelow": "200 хоногийн дунджаас доош орсон",
+  "signalAlertsTitle": "Техник дохионы мэдэгдэл",
+  "signalAlertsSubtitle": "Өдөрт нэг удаа, таны дагаж буй хувьцаа хэт их зарагдсан эсвэл хэт их худалдан авагдсан (RSI) болох, эсвэл үнэ нь 200 хоногийн дундажийг давах үед.",
+  "signalAlertsNotification": "Техник дохио"
 }

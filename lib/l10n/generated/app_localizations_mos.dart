@@ -2719,4 +2719,14 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'sig n lʋɩ rasem 200 pʋgẽ sũur-sũurã tẽngr';
+
+  @override
+  String get signalAlertsTitle => 'Tekniik bãnd rãmb kibay';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Daar fãa vugr bala, f sẽn gũusd tʋʋm-pʋg ning b koos-a wʋsg tɩ looge bɩ b da-a wʋsg tɩ looge (RSI), bɩ a ligdã sẽn pɩʋʋg rasem 200 pʋgẽ sũur-sũurã.';
+
+  @override
+  String get signalAlertsNotification => 'Tekniik bãnd rãmba';
 }

@@ -2731,4 +2731,14 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => '200 दिन के औसत से नीचे गया';
+
+  @override
+  String get signalAlertsTitle => 'तकनीकी संकेत सूचनाएँ';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'दिन में एक बार, जब आपके द्वारा फ़ॉलो किया गया कोई स्टॉक ओवरसोल्ड या ओवरबॉट (RSI) हो जाए, या उसकी कीमत 200 दिन के औसत को पार करे।';
+
+  @override
+  String get signalAlertsNotification => 'तकनीकी संकेत';
 }

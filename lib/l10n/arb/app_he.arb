@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · מכירת יתר",
   "signalRsiOverbought": "RSI {value} · קניית יתר",
   "signalCrossedAbove": "חצה מעלה את ממוצע 200 הימים",
-  "signalCrossedBelow": "חצה מטה את ממוצע 200 הימים"
+  "signalCrossedBelow": "חצה מטה את ממוצע 200 הימים",
+  "signalAlertsTitle": "התראות על אותות טכניים",
+  "signalAlertsSubtitle": "פעם ביום, כשמניה במעקב שלך נכנסת למכירת יתר או לקניית יתר (RSI), או כשהמחיר שלה חוצה את ממוצע 200 היום.",
+  "signalAlertsNotification": "אותות טכניים"
 }

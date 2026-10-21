@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · oñemuitereíva",
   "signalRsiOverbought": "RSI {value} · ojejoguaitereíva",
   "signalCrossedAbove": "ohasa 200 ára mbytepegua ári",
-  "signalCrossedBelow": "ohasa 200 ára mbytepegua guýpe"
+  "signalCrossedBelow": "ohasa 200 ára mbytepegua guýpe",
+  "signalAlertsTitle": "Marandu señal técnica rehegua",
+  "signalAlertsSubtitle": "Peteĩ jey peteĩ árape, peteĩ acción reseguíva oñemuitereíva térã ojejoguaitereíva (RSI) jave, térã hepykue ohasa jave 200 ára mbytepegua.",
+  "signalAlertsNotification": "Señal técnica"
 }

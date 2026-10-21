@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · nishu vendesqa",
   "signalRsiOverbought": "RSI {value} · nishu rantisqa",
   "signalCrossedAbove": "200 p'unchaw chawpi hawanman wicharirqan",
-  "signalCrossedBelow": "200 p'unchaw chawpi uranman urayrirqan"
+  "signalCrossedBelow": "200 p'unchaw chawpi uranman urayrirqan",
+  "signalAlertsTitle": "Tecnico señalkunamanta willaykuna",
+  "signalAlertsSubtitle": "Sapa p'unchaw huk kuti, qhawasqayki acción nishu vendesqa utaq nishu rantisqa (RSI) kaptin, utaq chaninnin 200 p'unchaw chawpita chimpaptin.",
+  "signalAlertsNotification": "Tecnico señalkuna"
 }

@@ -2730,4 +2730,14 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'crossed below its 200-day average';
+
+  @override
+  String get signalAlertsTitle => 'Technical signal notifications';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Once a day, when a stock you follow turns oversold or overbought (RSI), or its price crosses its 200-day average.';
+
+  @override
+  String get signalAlertsNotification => 'Technical signals';
 }

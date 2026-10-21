@@ -2798,4 +2798,14 @@ class AppLocalizationsCs extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'prorazila pod 200denní průměr';
+
+  @override
+  String get signalAlertsTitle => 'Oznámení o technických signálech';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Jednou denně, když se akcie, kterou sledujete, stane přeprodanou nebo překoupenou (RSI), nebo její cena překročí 200denní průměr.';
+
+  @override
+  String get signalAlertsNotification => 'Technické signály';
 }

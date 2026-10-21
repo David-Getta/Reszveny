@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · oversold",
   "signalRsiOverbought": "RSI {value} · overbought",
   "signalCrossedAbove": "cross go up pass im 200-day average",
-  "signalCrossedBelow": "cross go down pass im 200-day average"
+  "signalCrossedBelow": "cross go down pass im 200-day average",
+  "signalAlertsTitle": "Technical signal notifications",
+  "signalAlertsSubtitle": "Once a day, when stock wey you dey follow turn oversold or overbought (RSI), or im price cross im 200-day average.",
+  "signalAlertsNotification": "Technical signals"
 }

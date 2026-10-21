@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · اوور سولڊ",
   "signalRsiOverbought": "RSI {value} · اوور بوٽ",
   "signalCrossedAbove": "200 ڏينهن جي سراسري مٿان ويو",
-  "signalCrossedBelow": "200 ڏينهن جي سراسري هيٺ ويو"
+  "signalCrossedBelow": "200 ڏينهن جي سراسري هيٺ ويو",
+  "signalAlertsTitle": "ٽيڪنيڪل سگنل نوٽيفڪيشن",
+  "signalAlertsSubtitle": "ڏينهن ۾ هڪ دفعو، جڏهن توهان جو فالو ڪيل اسٽاڪ اوور سولڊ يا اوور بوٽ (RSI) ٿئي، يا ان جي قيمت 200 ڏينهن جي سراسري کي پار ڪري.",
+  "signalAlertsNotification": "ٽيڪنيڪل سگنل"
 }

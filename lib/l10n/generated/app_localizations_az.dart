@@ -2735,4 +2735,14 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => '200 günlük ortanı aşağı kəsdi';
+
+  @override
+  String get signalAlertsTitle => 'Texniki siqnal bildirişləri';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Gündə bir dəfə, izlədiyiniz səhm həddindən artıq satılmış və ya həddindən artıq alınmış olduqda (RSI), yaxud qiyməti 200 günlük ortanı keçdikdə.';
+
+  @override
+  String get signalAlertsNotification => 'Texniki siqnallar';
 }

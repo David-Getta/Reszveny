@@ -2741,4 +2741,14 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'հատել է 200-օրյա միջինը ներքև';
+
+  @override
+  String get signalAlertsTitle => 'Տեխնիկական ազդանշանների ծանուցումներ';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Օրը մեկ անգամ, երբ ձեր հետևած բաժնետոմսը դառնում է գերվաճառված կամ գերգնված (RSI), կամ դրա գինը հատում է 200-օրյա միջինը։';
+
+  @override
+  String get signalAlertsNotification => 'Տեխնիկական ազդանշաններ';
 }

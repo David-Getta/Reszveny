@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · yatengeswa zvakanyanya",
   "signalRsiOverbought": "RSI {value} · yatengwa zvakanyanya",
   "signalCrossedAbove": "yakwira pamusoro peavhareji yemazuva 200",
-  "signalCrossedBelow": "yadzika pasi peavhareji yemazuva 200"
+  "signalCrossedBelow": "yadzika pasi peavhareji yemazuva 200",
+  "signalAlertsTitle": "Zviziviso zvezviratidzo zvetekiniki",
+  "signalAlertsSubtitle": "Kamwe pazuva, kana sheya yauri kutevera yatengeswa zvakanyanya kana yatengwa zvakanyanya (RSI), kana mutengo wayo wayambuka avhareji yemazuva 200.",
+  "signalAlertsNotification": "Zviratidzo zvetekiniki"
 }

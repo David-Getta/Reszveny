@@ -2739,4 +2739,14 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'kaloi nën mesataren 200-ditore';
+
+  @override
+  String get signalAlertsTitle => 'Njoftime për sinjale teknike';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Një herë në ditë, kur një aksion që ndiqni bëhet e mbishitur ose e mbiblerë (RSI), ose çmimi i tij kalon mesataren 200-ditore.';
+
+  @override
+  String get signalAlertsNotification => 'Sinjale teknike';
 }

@@ -2740,4 +2740,14 @@ class AppLocalizationsLua extends AppLocalizations {
   @override
   String get signalCrossedBelow =>
       'mbuluka muinshi mua pankatshi pa matuku 200';
+
+  @override
+  String get signalAlertsTitle => 'Dimanyisha dia bimanyinu bia tekinike';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Musangu umue ku dituku, padi action iudi ulonda bapana bikole anyi basumba bikole (RSI), anyi mushinga wayi usabuka pankatshi pa matuku 200.';
+
+  @override
+  String get signalAlertsNotification => 'Bimanyinu bia tekinike';
 }

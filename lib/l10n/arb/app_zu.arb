@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · lithengisiwe ngokweqile",
   "signalRsiOverbought": "RSI {value} · lithengwe ngokweqile",
   "signalCrossedAbove": "liweqile ngaphezulu kwesilinganiso sezinsuku ezingu-200",
-  "signalCrossedBelow": "liweqile ngaphansi kwesilinganiso sezinsuku ezingu-200"
+  "signalCrossedBelow": "liweqile ngaphansi kwesilinganiso sezinsuku ezingu-200",
+  "signalAlertsTitle": "Izaziso zezimpawu zobuchwepheshe",
+  "signalAlertsSubtitle": "Kanye ngosuku, uma isitoko osilandelayo sithengisiwe ngokweqile noma sithengwe ngokweqile (RSI), noma intengo yaso inqamula isilinganiso sezinsuku ezingu-200.",
+  "signalAlertsNotification": "Izimpawu zobuchwepheshe"
 }

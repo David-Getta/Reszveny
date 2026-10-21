@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · шамадан тыс сатылған",
   "signalRsiOverbought": "RSI {value} · шамадан тыс сатып алынған",
   "signalCrossedAbove": "200 күндік орташадан жоғары өтті",
-  "signalCrossedBelow": "200 күндік орташадан төмен түсті"
+  "signalCrossedBelow": "200 күндік орташадан төмен түсті",
+  "signalAlertsTitle": "Техникалық сигнал хабарландырулары",
+  "signalAlertsSubtitle": "Күніне бір рет, сіз бақылап отырған акция шамадан тыс сатылған немесе шамадан тыс сатып алынған (RSI) болғанда, не оның бағасы 200 күндік орташаны кесіп өткенде.",
+  "signalAlertsNotification": "Техникалық сигналдар"
 }

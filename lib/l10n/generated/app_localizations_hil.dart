@@ -2750,4 +2750,14 @@ class AppLocalizationsHil extends AppLocalizations {
   @override
   String get signalCrossedBelow =>
       'nagpanaog sa idalom sang 200 ka adlaw nga average';
+
+  @override
+  String get signalAlertsTitle => 'Mga pahibalo sa teknikal nga signal';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Makaisa sa isa ka adlaw, kon ang isa ka stock nga ginasunod mo mangin oversold ukon overbought (RSI), ukon ang presyo sini maglabang sa iya 200 ka adlaw nga average.';
+
+  @override
+  String get signalAlertsNotification => 'Mga teknikal nga signal';
 }

@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · yagulitsidwa kwambiri",
   "signalRsiOverbought": "RSI {value} · yagulidwa kwambiri",
   "signalCrossedAbove": "yadutsa pamwamba pa avareji ya masiku 200",
-  "signalCrossedBelow": "yadutsa pansi pa avareji ya masiku 200"
+  "signalCrossedBelow": "yadutsa pansi pa avareji ya masiku 200",
+  "signalAlertsTitle": "Zidziwitso za zizindikiro zaukadaulo",
+  "signalAlertsSubtitle": "Kamodzi patsiku, pamene sitoko yomwe mukutsatira yagulitsidwa kwambiri kapena yagulidwa kwambiri (RSI), kapena mtengo wake wadutsa avareji ya masiku 200.",
+  "signalAlertsNotification": "Zizindikiro zaukadaulo"
 }

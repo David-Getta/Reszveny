@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · ti tà jù",
   "signalRsiOverbought": "RSI {value} · ti rà jù",
   "signalCrossedAbove": "kọjá sí òkè ìpíndọ́gba ọjọ́ 200",
-  "signalCrossedBelow": "kọjá sí ìsàlẹ̀ ìpíndọ́gba ọjọ́ 200"
+  "signalCrossedBelow": "kọjá sí ìsàlẹ̀ ìpíndọ́gba ọjọ́ 200",
+  "signalAlertsTitle": "Ìfitónilétí àmì ìmọ̀-ẹ̀rọ",
+  "signalAlertsSubtitle": "Lẹ́ẽ̀kan lóòjọ́, nígbà tí ọjà tí o ń tẹ̀lé bá ti tà jù tàbí ti rà jù (RSI), tàbí tí iye rẹ̀ bá kọjá ìpíndọ́gba ọjọ́ 200.",
+  "signalAlertsNotification": "Àwọn àmì ìmọ̀-ẹ̀rọ"
 }

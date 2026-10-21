@@ -2733,4 +2733,14 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => '200 günlük ortalamadan aşak geçdi';
+
+  @override
+  String get signalAlertsTitle => 'Tehniki signal habarnamalary';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Günde bir gezek, yzarlaýan paýnamaňyz aşa satylan ýa-da aşa satyn alnan (RSI) bolanda, ýa-da onuň bahasy 200 günlük ortalamany kesip geçende.';
+
+  @override
+  String get signalAlertsNotification => 'Tehniki signallar';
 }

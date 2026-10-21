@@ -2732,4 +2732,14 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => '200 دن کی اوسط سے نیچے گیا';
+
+  @override
+  String get signalAlertsTitle => 'تکنیکی سگنل کی اطلاعات';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'دن میں ایک بار، جب آپ کا فالو کیا ہوا اسٹاک اوور سولڈ یا اوور بوٹ (RSI) ہو جائے، یا اس کی قیمت 200 دن کی اوسط کو عبور کرے۔';
+
+  @override
+  String get signalAlertsNotification => 'تکنیکی سگنل';
 }

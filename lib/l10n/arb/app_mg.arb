@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · voavarotra be loatra",
   "signalRsiOverbought": "RSI {value} · voavidy be loatra",
   "signalCrossedAbove": "niakatra ambonin'ny salan'isa 200 andro",
-  "signalCrossedBelow": "nidina ambanin'ny salan'isa 200 andro"
+  "signalCrossedBelow": "nidina ambanin'ny salan'isa 200 andro",
+  "signalAlertsTitle": "Fampandrenesana momba ny famantarana teknika",
+  "signalAlertsSubtitle": "Indray mandeha isan'andro, rehefa lasa voavarotra be loatra na voavidy be loatra (RSI) ny orinasa arahinao, na miampita ny salan'isa 200 andro ny vidiny.",
+  "signalAlertsNotification": "Famantarana teknika"
 }

@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · sobrevendida",
   "signalRsiOverbought": "RSI {value} · sobrecomprada",
   "signalCrossedAbove": "cruzó por encima de su media de 200 días",
-  "signalCrossedBelow": "cruzó por debajo de su media de 200 días"
+  "signalCrossedBelow": "cruzó por debajo de su media de 200 días",
+  "signalAlertsTitle": "Notificaciones de señales técnicas",
+  "signalAlertsSubtitle": "Una vez al día, cuando una acción que sigues pasa a estar sobrevendida o sobrecomprada (RSI), o su precio cruza la media de 200 días.",
+  "signalAlertsNotification": "Señales técnicas"
 }

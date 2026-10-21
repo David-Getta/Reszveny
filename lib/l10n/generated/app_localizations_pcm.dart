@@ -2732,4 +2732,14 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'cross go down pass im 200-day average';
+
+  @override
+  String get signalAlertsTitle => 'Technical signal notifications';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Once a day, when stock wey you dey follow turn oversold or overbought (RSI), or im price cross im 200-day average.';
+
+  @override
+  String get signalAlertsNotification => 'Technical signals';
 }

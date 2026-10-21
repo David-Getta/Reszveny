@@ -2727,4 +2727,14 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'gafere n\'okpuru nkezi ụbọchị 200 ya';
+
+  @override
+  String get signalAlertsTitle => 'Ọkwa akara teknikal';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Otu ugboro n\'ụbọchị, mgbe stock ị na-eso erela ya karịa ma ọ bụ azụrụ ya karịa (RSI), ma ọ bụ mgbe ọnụahịa ya gafere nkezi ụbọchị 200 ya.';
+
+  @override
+  String get signalAlertsNotification => 'Akara teknikal';
 }

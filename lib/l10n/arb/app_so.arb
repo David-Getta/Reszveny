@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · si xad-dhaaf loo iibiyay",
   "signalRsiOverbought": "RSI {value} · si xad-dhaaf loo iibsaday",
   "signalCrossedAbove": "ka sare martay celceliska 200 maalmood",
-  "signalCrossedBelow": "ka hoos martay celceliska 200 maalmood"
+  "signalCrossedBelow": "ka hoos martay celceliska 200 maalmood",
+  "signalAlertsTitle": "Ogeysiisyada calaamadaha farsamo",
+  "signalAlertsSubtitle": "Hal mar maalintii, marka saami aad la socoto si xad-dhaaf loo iibiyay ama si xad-dhaaf loo iibsaday (RSI), ama qiimihiisu ka gudbo celceliska 200 maalmood.",
+  "signalAlertsNotification": "Calaamadaha farsamo"
 }

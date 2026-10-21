@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · ډېر پلورل شوی",
   "signalRsiOverbought": "RSI {value} · ډېر پېرودل شوی",
   "signalCrossedAbove": "له ۲۰۰ ورځني اوسط پورته تېر شو",
-  "signalCrossedBelow": "له ۲۰۰ ورځني اوسط ښکته تېر شو"
+  "signalCrossedBelow": "له ۲۰۰ ورځني اوسط ښکته تېر شو",
+  "signalAlertsTitle": "د تخنیکي سیګنالونو خبرتیاوې",
+  "signalAlertsSubtitle": "په ورځ یو ځل، کله چې ستاسو تعقیب شوی سټاک ډېر پلورل شوی یا ډېر پېرودل شوی (RSI) شي، یا بیه یې له ۲۰۰ ورځني اوسط تېره شي.",
+  "signalAlertsNotification": "تخنیکي سیګنالونه"
 }

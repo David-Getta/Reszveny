@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · υπερπουλημένη",
   "signalRsiOverbought": "RSI {value} · υπεραγορασμένη",
   "signalCrossedAbove": "διέσπασε ανοδικά τον μέσο όρο 200 ημερών",
-  "signalCrossedBelow": "διέσπασε καθοδικά τον μέσο όρο 200 ημερών"
+  "signalCrossedBelow": "διέσπασε καθοδικά τον μέσο όρο 200 ημερών",
+  "signalAlertsTitle": "Ειδοποιήσεις τεχνικών σημάτων",
+  "signalAlertsSubtitle": "Μία φορά την ημέρα, όταν μια μετοχή που ακολουθείτε γίνεται υπερπουλημένη ή υπεραγορασμένη (RSI), ή η τιμή της διασχίζει τον μέσο όρο 200 ημερών.",
+  "signalAlertsNotification": "Τεχνικά σήματα"
 }

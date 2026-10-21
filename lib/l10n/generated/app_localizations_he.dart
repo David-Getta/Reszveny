@@ -2726,4 +2726,14 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'חצה מטה את ממוצע 200 הימים';
+
+  @override
+  String get signalAlertsTitle => 'התראות על אותות טכניים';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'פעם ביום, כשמניה במעקב שלך נכנסת למכירת יתר או לקניית יתר (RSI), או כשהמחיר שלה חוצה את ממוצע 200 היום.';
+
+  @override
+  String get signalAlertsNotification => 'אותות טכניים';
 }

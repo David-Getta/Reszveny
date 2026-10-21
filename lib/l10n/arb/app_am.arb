@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · ከመጠን በላይ የተሸጠ",
   "signalRsiOverbought": "RSI {value} · ከመጠን በላይ የተገዛ",
   "signalCrossedAbove": "ከ200 ቀን አማካዩ በላይ አቋርጧል",
-  "signalCrossedBelow": "ከ200 ቀን አማካዩ በታች አቋርጧል"
+  "signalCrossedBelow": "ከ200 ቀን አማካዩ በታች አቋርጧል",
+  "signalAlertsTitle": "የቴክኒካል ምልክት ማሳወቂያዎች",
+  "signalAlertsSubtitle": "በቀን አንድ ጊዜ፣ የሚከታተሉት አክሲዮን ከመጠን በላይ የተሸጠ ወይም ከመጠን በላይ የተገዛ ሲሆን (RSI)፣ ወይም ዋጋው የ200 ቀን አማካዩን ሲያቋርጥ።",
+  "signalAlertsNotification": "የቴክኒካል ምልክቶች"
 }

@@ -2741,4 +2741,14 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'ka hoos martay celceliska 200 maalmood';
+
+  @override
+  String get signalAlertsTitle => 'Ogeysiisyada calaamadaha farsamo';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Hal mar maalintii, marka saami aad la socoto si xad-dhaaf loo iibiyay ama si xad-dhaaf loo iibsaday (RSI), ama qiimihiisu ka gudbo celceliska 200 maalmood.';
+
+  @override
+  String get signalAlertsNotification => 'Calaamadaha farsamo';
 }

@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · přeprodáno",
   "signalRsiOverbought": "RSI {value} · překoupeno",
   "signalCrossedAbove": "prorazila nad 200denní průměr",
-  "signalCrossedBelow": "prorazila pod 200denní průměr"
+  "signalCrossedBelow": "prorazila pod 200denní průměr",
+  "signalAlertsTitle": "Oznámení o technických signálech",
+  "signalAlertsSubtitle": "Jednou denně, když se akcie, kterou sledujete, stane přeprodanou nebo překoupenou (RSI), nebo její cena překročí 200denní průměr.",
+  "signalAlertsNotification": "Technické signály"
 }

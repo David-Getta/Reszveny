@@ -2775,4 +2775,14 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'nokrita zem 200 dienu vidējā';
+
+  @override
+  String get signalAlertsTitle => 'Paziņojumi par tehniskajiem signāliem';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Reizi dienā, kad akcija, kurai tu seko, kļūst pārpārdota vai pārpirkta (RSI), vai tās cena šķērso 200 dienu vidējo.';
+
+  @override
+  String get signalAlertsNotification => 'Tehniskie signāli';
 }

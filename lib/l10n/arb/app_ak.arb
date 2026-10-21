@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · wɔatɔn no dodo",
   "signalRsiOverbought": "RSI {value} · wɔatɔ no dodo",
   "signalCrossedAbove": "akɔ ne nna 200 nkyemu no so",
-  "signalCrossedBelow": "akɔ ne nna 200 nkyemu no ase"
+  "signalCrossedBelow": "akɔ ne nna 200 nkyemu no ase",
+  "signalAlertsTitle": "Tɛknikal nsɛnkyerɛnne ho amanneɛbɔ",
+  "signalAlertsSubtitle": "Da koro pɛn, sɛ kyɛfa bi a wodi akyi no wɔatɔn no dodo anaa wɔatɔ no dodo (RSI), anaa ne bo twam ne nna 200 nkyemu no a.",
+  "signalAlertsNotification": "Tɛknikal nsɛnkyerɛnne"
 }

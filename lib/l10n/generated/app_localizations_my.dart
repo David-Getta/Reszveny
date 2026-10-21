@@ -2723,4 +2723,14 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => '၂၀၀ ရက် ပျမ်းမျှအောက်သို့ ကျော်ဆင်း';
+
+  @override
+  String get signalAlertsTitle => 'နည်းပညာဆိုင်ရာ အချက်ပြ အသိပေးချက်များ';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'တစ်ရက်တစ်ကြိမ်၊ သင်စောင့်ကြည့်နေသော ရှယ်ယာတစ်ခု အရောင်းလွန် သို့မဟုတ် အဝယ်လွန် (RSI) ဖြစ်သွားသောအခါ၊ သို့မဟုတ် ၎င်း၏ဈေးနှုန်းသည် ၂၀၀ ရက် ပျမ်းမျှကို ဖြတ်ကျော်သောအခါ။';
+
+  @override
+  String get signalAlertsNotification => 'နည်းပညာဆိုင်ရာ အချက်ပြများ';
 }

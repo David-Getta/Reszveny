@@ -2725,4 +2725,14 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'cắt xuống dưới trung bình 200 ngày';
+
+  @override
+  String get signalAlertsTitle => 'Thông báo tín hiệu kỹ thuật';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Mỗi ngày một lần, khi cổ phiếu bạn theo dõi rơi vào vùng quá bán hoặc quá mua (RSI), hoặc giá cắt qua trung bình 200 ngày.';
+
+  @override
+  String get signalAlertsNotification => 'Tín hiệu kỹ thuật';
 }

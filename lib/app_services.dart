@@ -33,6 +33,8 @@ import 'features/capture/capture_service.dart';
 import 'features/events/earnings_reminder.dart';
 import 'features/events/events_service.dart';
 import 'features/home/away_summary.dart';
+import 'features/home/signal_notifier.dart';
+import 'features/home/watch_signals.dart';
 import 'features/fx/fx_service.dart';
 import 'features/market_data/caching_market_data_provider.dart';
 import 'features/market_data/demo_market_data_provider.dart';
@@ -168,6 +170,13 @@ class AppServices {
       notifier: alertMonitor.notifier,
       describe: describeEarnings,
       describeResult: describeEarningsResult,
+    );
+    signalNotifier = SignalNotifier(
+      marketData: marketData,
+      preferences: preferences,
+      portfolio: this.portfolio,
+      notifier: alertMonitor.notifier,
+      describe: describeSignals,
     );
     // Jó élmény után (a 3. elemzésnél) egyszer értékelést kérünk a boltban.
     reports.onGenerated = (_) {
@@ -362,6 +371,9 @@ class AppServices {
   /// Asztali értesítés a figyelt részvények gyorsjelentése előtt.
   late final EarningsReminder earningsReminder;
 
+  /// Napi technikai jelzés-értesítés (RSI, 200 napos átlag) a figyelt részvényekről.
+  late final SignalNotifier signalNotifier;
+
   /// Értesítés a teljes portfólió nagy napi mozgásáról (ha be van kapcsolva).
   late final PortfolioMoveWatcher portfolioMoveWatcher;
 
@@ -402,8 +414,20 @@ class AppServices {
     // Gyorsjelentés-emlékeztető: `earnings-<ticker>-<nap>`.
     final earnings = RegExp(r'^earnings-(.+)-\d{4}-\d{2}-\d{2}$').firstMatch(id);
     if (earnings != null) return alertMonitor.requestOpen(earnings[1]!);
+    // Technikai jelzés: `signals-<nap>-<ticker>` – az első jelzett részvény.
+    final signal = RegExp(r'^signals-\d{4}-\d{2}-\d{2}-(.+)$').firstMatch(id);
+    if (signal != null) return alertMonitor.requestOpen(signal[1]!);
     final alert = alerts.alerts.where((a) => a.id == id).firstOrNull;
     if (alert != null) alertMonitor.requestOpen(alert.symbol);
+  }
+
+  /// A jelzés-értesítés címe és szövege (részvényenként egy sor).
+  ({String title, String body}) describeSignals(List<WatchSignal> signals) {
+    final (l10n, fmt) = _l10n();
+    return (
+      title: l10n.signalAlertsNotification,
+      body: [for (final x in signals) '${x.symbol}: ${describeSignal(l10n, fmt, x)}'].join('\n'),
+    );
   }
 
   /// Az app nyelve és szövegei (értesítésekhez, a felületen kívül).

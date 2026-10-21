@@ -2736,4 +2736,14 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => '200 күндүк орточодон ылдый түштү';
+
+  @override
+  String get signalAlertsTitle => 'Техникалык сигнал билдирмелери';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Күнүнө бир жолу, сиз көзөмөлдөгөн акция ашыкча сатылган же ашыкча сатылып алынган (RSI) болгондо, же анын баасы 200 күндүк орточону кесип өткөндө.';
+
+  @override
+  String get signalAlertsNotification => 'Техникалык сигналдар';
 }

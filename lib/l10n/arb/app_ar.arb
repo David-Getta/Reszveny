@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · تشبّع بيعي",
   "signalRsiOverbought": "RSI {value} · تشبّع شرائي",
   "signalCrossedAbove": "اخترق متوسط 200 يوم صعودًا",
-  "signalCrossedBelow": "اخترق متوسط 200 يوم هبوطًا"
+  "signalCrossedBelow": "اخترق متوسط 200 يوم هبوطًا",
+  "signalAlertsTitle": "إشعارات الإشارات الفنية",
+  "signalAlertsSubtitle": "مرة واحدة يوميًا، عندما يصل سهم تتابعه إلى تشبّع بيعي أو تشبّع شرائي (RSI)، أو يتجاوز سعره متوسط 200 يوم.",
+  "signalAlertsNotification": "إشارات فنية"
 }

@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · oversold",
   "signalRsiOverbought": "RSI {value} · overbought",
   "signalCrossedAbove": "nagsaka sa ibabaw sang 200 ka adlaw nga average",
-  "signalCrossedBelow": "nagpanaog sa idalom sang 200 ka adlaw nga average"
+  "signalCrossedBelow": "nagpanaog sa idalom sang 200 ka adlaw nga average",
+  "signalAlertsTitle": "Mga pahibalo sa teknikal nga signal",
+  "signalAlertsSubtitle": "Makaisa sa isa ka adlaw, kon ang isa ka stock nga ginasunod mo mangin oversold ukon overbought (RSI), ukon ang presyo sini maglabang sa iya 200 ka adlaw nga average.",
+  "signalAlertsNotification": "Mga teknikal nga signal"
 }

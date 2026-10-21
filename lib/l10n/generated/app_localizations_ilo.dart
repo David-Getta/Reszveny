@@ -2753,4 +2753,14 @@ class AppLocalizationsIlo extends AppLocalizations {
   @override
   String get signalCrossedBelow =>
       'bimmaba iti baba ti average ti 200 nga aldaw';
+
+  @override
+  String get signalAlertsTitle => 'Dagiti pakaammo ti teknikal a senial';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Maminsan iti maysa nga aldaw, no ti maysa a stock a sursurotem ket agbalin nga oversold wenno overbought (RSI), wenno ti presiona ket lumasat iti average ti 200 nga aldaw.';
+
+  @override
+  String get signalAlertsNotification => 'Dagiti teknikal a senial';
 }

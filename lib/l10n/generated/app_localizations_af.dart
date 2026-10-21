@@ -2735,4 +2735,14 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'het onder sy 200-dae-gemiddelde gekruis';
+
+  @override
+  String get signalAlertsTitle => 'Kennisgewings oor tegniese seine';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Een keer per dag, wanneer ’n aandeel wat jy volg oorverkoop of oorgekoop raak (RSI), of sy prys sy 200-dae-gemiddelde kruis.';
+
+  @override
+  String get signalAlertsNotification => 'Tegniese seine';
 }

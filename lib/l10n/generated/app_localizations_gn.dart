@@ -2737,4 +2737,14 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'ohasa 200 ára mbytepegua guýpe';
+
+  @override
+  String get signalAlertsTitle => 'Marandu señal técnica rehegua';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Peteĩ jey peteĩ árape, peteĩ acción reseguíva oñemuitereíva térã ojejoguaitereíva (RSI) jave, térã hepykue ohasa jave 200 ára mbytepegua.';
+
+  @override
+  String get signalAlertsNotification => 'Señal técnica';
 }

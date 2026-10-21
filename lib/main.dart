@@ -70,6 +70,8 @@ Future<void> main() async {
   // Gyorsjelentés előtti napon értesítés (asztali gépen).
   if (SystemNotifier.isSupported) {
     services.earningsReminder.start();
+    // Napi technikai jelzés-értesítés (ha bekapcsolva).
+    services.signalNotifier.start();
     // Értesítés, ha a teljes portfólió nagyot mozdul (ha bekapcsolta).
     services.portfolioMoveWatcher.start();
   }

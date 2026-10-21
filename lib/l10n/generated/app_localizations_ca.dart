@@ -2741,4 +2741,14 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'ha creuat per sota la mitjana de 200 dies';
+
+  @override
+  String get signalAlertsTitle => 'Notificacions de senyals tècnics';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Un cop al dia, quan una acció que segueixes passa a sobrevenuda o sobrecomprada (RSI), o el seu preu creua la mitjana de 200 dies.';
+
+  @override
+  String get signalAlertsNotification => 'Senyals tècnics';
 }

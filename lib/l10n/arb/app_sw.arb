@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · imeuzwa kupita kiasi",
   "signalRsiOverbought": "RSI {value} · imenunuliwa kupita kiasi",
   "signalCrossedAbove": "imevuka juu ya wastani wa siku 200",
-  "signalCrossedBelow": "imeshuka chini ya wastani wa siku 200"
+  "signalCrossedBelow": "imeshuka chini ya wastani wa siku 200",
+  "signalAlertsTitle": "Arifa za ishara za kiufundi",
+  "signalAlertsSubtitle": "Mara moja kwa siku, hisa unayofuatilia inapokuwa imeuzwa kupita kiasi au imenunuliwa kupita kiasi (RSI), au bei yake inapovuka wastani wa siku 200.",
+  "signalAlertsNotification": "Ishara za kiufundi"
 }

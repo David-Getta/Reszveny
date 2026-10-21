@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · 超賣",
   "signalRsiOverbought": "RSI {value} · 超買",
   "signalCrossedAbove": "升穿200日平均線",
-  "signalCrossedBelow": "跌穿200日平均線"
+  "signalCrossedBelow": "跌穿200日平均線",
+  "signalAlertsTitle": "技術訊號通知",
+  "signalAlertsSubtitle": "每日一次，當你關注的股票進入超賣或超買（RSI）狀態，或其價格穿越200日平均線時。",
+  "signalAlertsNotification": "技術訊號"
 }

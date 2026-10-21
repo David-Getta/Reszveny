@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · அதிக விற்பனை",
   "signalRsiOverbought": "RSI {value} · அதிக வாங்கல்",
   "signalCrossedAbove": "200 நாள் சராசரிக்கு மேலே கடந்தது",
-  "signalCrossedBelow": "200 நாள் சராசரிக்குக் கீழே கடந்தது"
+  "signalCrossedBelow": "200 நாள் சராசரிக்குக் கீழே கடந்தது",
+  "signalAlertsTitle": "தொழில்நுட்பச் சமிக்ஞை அறிவிப்புகள்",
+  "signalAlertsSubtitle": "நாளுக்கு ஒரு முறை, நீங்கள் பின்தொடரும் பங்கு அதிக விற்பனை அல்லது அதிக வாங்கல் (RSI) நிலைக்கு வரும்போது, அல்லது அதன் விலை 200 நாள் சராசரியைக் கடக்கும்போது.",
+  "signalAlertsNotification": "தொழில்நுட்பச் சமிக்ஞைகள்"
 }

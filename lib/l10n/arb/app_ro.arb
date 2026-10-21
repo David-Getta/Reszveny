@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · supravândută",
   "signalRsiOverbought": "RSI {value} · supracumpărată",
   "signalCrossedAbove": "a trecut peste media pe 200 de zile",
-  "signalCrossedBelow": "a coborât sub media pe 200 de zile"
+  "signalCrossedBelow": "a coborât sub media pe 200 de zile",
+  "signalAlertsTitle": "Notificări despre semnale tehnice",
+  "signalAlertsSubtitle": "O dată pe zi, când o acțiune pe care o urmărești devine supravândută sau supracumpărată (RSI) ori prețul ei traversează media pe 200 de zile.",
+  "signalAlertsNotification": "Semnale tehnice"
 }

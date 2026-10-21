@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · аз ҳад зиёд фурӯхта шуда",
   "signalRsiOverbought": "RSI {value} · аз ҳад зиёд харида шуда",
   "signalCrossedAbove": "аз миёнаи 200-рӯза боло гузашт",
-  "signalCrossedBelow": "аз миёнаи 200-рӯза поён гузашт"
+  "signalCrossedBelow": "аз миёнаи 200-рӯза поён гузашт",
+  "signalAlertsTitle": "Огоҳиномаҳо дар бораи сигналҳои техникӣ",
+  "signalAlertsSubtitle": "Як бор дар рӯз, вақте ки саҳмияи пайгиришудаи шумо аз ҳад зиёд фурӯхта шуда ё аз ҳад зиёд харида шуда (RSI) мегардад, ё нархи он миёнаи 200-рӯзаро мебурад.",
+  "signalAlertsNotification": "Сигналҳои техникӣ"
 }

@@ -2774,4 +2774,14 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'a coborât sub media pe 200 de zile';
+
+  @override
+  String get signalAlertsTitle => 'Notificări despre semnale tehnice';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'O dată pe zi, când o acțiune pe care o urmărești devine supravândută sau supracumpărată (RSI) ori prețul ei traversează media pe 200 de zile.';
+
+  @override
+  String get signalAlertsNotification => 'Semnale tehnice';
 }

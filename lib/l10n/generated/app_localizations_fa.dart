@@ -2728,4 +2728,14 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'میانگین ۲۰۰ روزه را رو به پایین شکست';
+
+  @override
+  String get signalAlertsTitle => 'اعلان‌های سیگنال تکنیکال';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'یک بار در روز، وقتی سهامی که دنبال می‌کنید به اشباع فروش یا اشباع خرید (RSI) برسد، یا قیمت آن از میانگین ۲۰۰ روزه عبور کند.';
+
+  @override
+  String get signalAlertsNotification => 'سیگنال‌های تکنیکال';
 }

@@ -2735,4 +2735,14 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'nembus ka handapeun rata-rata 200 poé';
+
+  @override
+  String get signalAlertsTitle => 'Béwara sinyal téknis';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Sakali sapoé, nalika saham anu anjeun tuturkeun jadi kaleuwihan dijual atanapi kaleuwihan dibeuli (RSI), atanapi hargana meuntas rata-rata 200 poé.';
+
+  @override
+  String get signalAlertsNotification => 'Sinyal téknis';
 }

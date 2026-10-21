@@ -2742,4 +2742,14 @@ class AppLocalizationsKg extends AppLocalizations {
   @override
   String get signalCrossedBelow =>
       'yo me kulumuka na nsi ya kati-kati ya bilumbu 200';
+
+  @override
+  String get signalAlertsTitle => 'Nkebisu ya bidimbu ya teknike';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Mbala mosi na kilumbu, ntangu action yina nge ke landaka bo tekaka yo mingi to bo sumbaka yo mingi (RSI), to ntalu na yo me sabuka kati-kati ya bilumbu 200.';
+
+  @override
+  String get signalAlertsNotification => 'Bidimbu ya teknike';
 }

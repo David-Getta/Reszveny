@@ -2730,4 +2730,14 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'desann pi ba pase mwayèn 200 jou li';
+
+  @override
+  String get signalAlertsTitle => 'Notifikasyon siyal teknik';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Yon fwa pa jou, lè yon aksyon w ap swiv vin twò vann oswa twò achte (RSI), oswa lè pri li travèse mwayèn 200 jou li.';
+
+  @override
+  String get signalAlertsNotification => 'Siyal teknik';
 }

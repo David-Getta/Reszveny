@@ -2778,4 +2778,14 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'probila ispod 200-dnevnog prosjeka';
+
+  @override
+  String get signalAlertsTitle => 'Obavijesti o tehničkim signalima';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Jednom dnevno, kada dionica koju pratiš postane preprodana ili prekupljena (RSI), ili kada njezina cijena prijeđe 200-dnevni prosjek.';
+
+  @override
+  String get signalAlertsNotification => 'Tehnički signali';
 }

@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · preprodano",
   "signalRsiOverbought": "RSI {value} · prekupljeno",
   "signalCrossedAbove": "probila iznad 200-dnevnog prosjeka",
-  "signalCrossedBelow": "probila ispod 200-dnevnog prosjeka"
+  "signalCrossedBelow": "probila ispod 200-dnevnog prosjeka",
+  "signalAlertsTitle": "Obavijesti o tehničkim signalima",
+  "signalAlertsSubtitle": "Jednom dnevno, kada dionica koju pratiš postane preprodana ili prekupljena (RSI), ili kada njezina cijena prijeđe 200-dnevni prosjek.",
+  "signalAlertsNotification": "Tehnički signali"
 }

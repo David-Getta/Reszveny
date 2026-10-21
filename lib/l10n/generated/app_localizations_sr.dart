@@ -2780,4 +2780,14 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'пробила испод 200-дневног просека';
+
+  @override
+  String get signalAlertsTitle => 'Обавештења о техничким сигналима';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Једном дневно, када акција коју пратите постане препродата или прекупљена (RSI), или њена цена пресече 200-дневни просек.';
+
+  @override
+  String get signalAlertsNotification => 'Технички сигнали';
 }

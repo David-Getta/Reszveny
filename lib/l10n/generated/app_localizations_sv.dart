@@ -2733,4 +2733,14 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'bröt ned genom 200-dagars medel';
+
+  @override
+  String get signalAlertsTitle => 'Aviseringar om tekniska signaler';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'En gång om dagen, när en aktie du följer blir översåld eller överköpt (RSI), eller kursen korsar 200-dagars medel.';
+
+  @override
+  String get signalAlertsNotification => 'Tekniska signaler';
 }

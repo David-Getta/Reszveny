@@ -2730,4 +2730,14 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'krydsede under sit 200-dages gennemsnit';
+
+  @override
+  String get signalAlertsTitle => 'Notifikationer om tekniske signaler';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Én gang om dagen, når en aktie, du følger, bliver oversolgt eller overkøbt (RSI), eller dens kurs krydser 200-dages gennemsnittet.';
+
+  @override
+  String get signalAlertsNotification => 'Tekniske signaler';
 }

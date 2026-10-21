@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · aşırı satım",
   "signalRsiOverbought": "RSI {value} · aşırı alım",
   "signalCrossedAbove": "200 günlük ortalamanın üzerine çıktı",
-  "signalCrossedBelow": "200 günlük ortalamanın altına indi"
+  "signalCrossedBelow": "200 günlük ortalamanın altına indi",
+  "signalAlertsTitle": "Teknik sinyal bildirimleri",
+  "signalAlertsSubtitle": "Günde bir kez, takip ettiğiniz bir hisse aşırı satım veya aşırı alım (RSI) bölgesine girdiğinde ya da fiyatı 200 günlük ortalamayı kestiğinde.",
+  "signalAlertsNotification": "Teknik sinyaller"
 }

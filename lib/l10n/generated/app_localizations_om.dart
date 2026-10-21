@@ -2741,4 +2741,14 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'giddugaleessa guyyaa 200 gadi ce\'e';
+
+  @override
+  String get signalAlertsTitle => 'Beeksisa mallattoo teeknikaa';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Guyyaatti al tokko, yeroo aksiyoonni ati hordoftu baay\'ee gurgurame yookiin baay\'ee bitame (RSI) ta\'u, yookiin gatiin isaa giddugaleessa guyyaa 200 qaxxaamuru.';
+
+  @override
+  String get signalAlertsNotification => 'Mallattoolee teeknikaa';
 }

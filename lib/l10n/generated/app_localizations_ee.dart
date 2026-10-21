@@ -2735,4 +2735,14 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'eɖiɖi ŋkeke 200 ƒe titina la te';
+
+  @override
+  String get signalAlertsTitle => 'Tɛknikal dzesiwo ŋuti gbeƒãɖeɖewo';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Zi ɖeka gbe sia gbe, ne akpa aɖe si yome nèdzena wodzrae wu alo woƒlee wu (RSI), alo eƒe asi tso ŋkeke 200 ƒe titina la.';
+
+  @override
+  String get signalAlertsNotification => 'Tɛknikal dzesiwo';
 }

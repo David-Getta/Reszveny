@@ -303,6 +303,18 @@ class SettingsPage extends StatelessWidget {
                           ),
                         ),
                         const Divider(height: 1),
+                        ListenableBuilder(
+                          listenable: services.preferences,
+                          builder: (context, _) => SwitchListTile(
+                            key: const ValueKey('signal-alerts'),
+                            secondary: const Icon(Icons.show_chart_rounded),
+                            title: Text(l10n.signalAlertsTitle),
+                            subtitle: Text(l10n.signalAlertsSubtitle),
+                            value: services.preferences.signalAlerts,
+                            onChanged: services.preferences.setSignalAlerts,
+                          ),
+                        ),
+                        const Divider(height: 1),
                         const _PortfolioMoveTile(),
                       ],
                     ),

@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · erela ya karịa",
   "signalRsiOverbought": "RSI {value} · azụrụ ya karịa",
   "signalCrossedAbove": "gafere n'elu nkezi ụbọchị 200 ya",
-  "signalCrossedBelow": "gafere n'okpuru nkezi ụbọchị 200 ya"
+  "signalCrossedBelow": "gafere n'okpuru nkezi ụbọchị 200 ya",
+  "signalAlertsTitle": "Ọkwa akara teknikal",
+  "signalAlertsSubtitle": "Otu ugboro n'ụbọchị, mgbe stock ị na-eso erela ya karịa ma ọ bụ azụrụ ya karịa (RSI), ma ọ bụ mgbe ọnụahịa ya gafere nkezi ụbọchị 200 ya.",
+  "signalAlertsNotification": "Akara teknikal"
 }

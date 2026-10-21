@@ -2733,4 +2733,14 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'laski 200 päivän keskiarvon alapuolelle';
+
+  @override
+  String get signalAlertsTitle => 'Ilmoitukset teknisistä signaaleista';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Kerran päivässä, kun seuraamasi osake muuttuu ylimyydyksi tai yliostetuksi (RSI) tai sen kurssi leikkaa 200 päivän keskiarvon.';
+
+  @override
+  String get signalAlertsNotification => 'Tekniset signaalit';
 }

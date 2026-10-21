@@ -2735,4 +2735,14 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => '200 كۈنلۈك ئوتتۇرىچىدىن تۆۋەنگە ئۆتتى';
+
+  @override
+  String get signalAlertsTitle => 'تېخنىكىلىق سىگنال ئۇقتۇرۇشلىرى';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'كۈندە بىر قېتىم، سىز ئەگەشكەن پاي چېكى ھەددىدىن زىيادە سېتىلغان ياكى ھەددىدىن زىيادە سېتىۋېلىنغان (RSI) ھالەتكە كىرگەندە، ياكى باھاسى 200 كۈنلۈك ئوتتۇرىچىدىن ئۆتكەندە.';
+
+  @override
+  String get signalAlertsNotification => 'تېخنىكىلىق سىگناللار';
 }

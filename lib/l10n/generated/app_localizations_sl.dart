@@ -2805,4 +2805,14 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'prebila pod 200-dnevno povprečje';
+
+  @override
+  String get signalAlertsTitle => 'Obvestila o tehničnih signalih';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Enkrat na dan, ko delnica, ki ji sledite, postane preprodana ali prekupljena (RSI) ali njena cena prečka 200-dnevno povprečje.';
+
+  @override
+  String get signalAlertsNotification => 'Tehnični signali';
 }

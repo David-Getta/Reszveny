@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · a feerela ka tɛmɛ",
   "signalRsiOverbought": "RSI {value} · a sanna ka tɛmɛ",
   "signalCrossedAbove": "a tɛmɛna tile 200 cɛmancɛ sanfɛ",
-  "signalCrossedBelow": "a jiginna tile 200 cɛmancɛ jukɔrɔ"
+  "signalCrossedBelow": "a jiginna tile 200 cɛmancɛ jukɔrɔ",
+  "signalAlertsTitle": "Tekiniki taamasiyɛnw kunnafoniw",
+  "signalAlertsSubtitle": "Siɲɛ kelen tile kɔnɔ, ni i bɛ aksiyɔn min kɔlɔsi, a feerela ka tɛmɛ walima a sanna ka tɛmɛ (RSI), walima n’a sɔngɔ tɛmɛna tile 200 cɛmancɛ kan.",
+  "signalAlertsNotification": "Tekiniki taamasiyɛnw"
 }

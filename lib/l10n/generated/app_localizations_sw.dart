@@ -2733,4 +2733,14 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'imeshuka chini ya wastani wa siku 200';
+
+  @override
+  String get signalAlertsTitle => 'Arifa za ishara za kiufundi';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Mara moja kwa siku, hisa unayofuatilia inapokuwa imeuzwa kupita kiasi au imenunuliwa kupita kiasi (RSI), au bei yake inapovuka wastani wa siku 200.';
+
+  @override
+  String get signalAlertsNotification => 'Ishara za kiufundi';
 }

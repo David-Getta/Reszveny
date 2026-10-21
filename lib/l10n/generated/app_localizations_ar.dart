@@ -2797,4 +2797,14 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'اخترق متوسط 200 يوم هبوطًا';
+
+  @override
+  String get signalAlertsTitle => 'إشعارات الإشارات الفنية';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'مرة واحدة يوميًا، عندما يصل سهم تتابعه إلى تشبّع بيعي أو تشبّع شرائي (RSI)، أو يتجاوز سعره متوسط 200 يوم.';
+
+  @override
+  String get signalAlertsNotification => 'إشارات فنية';
 }

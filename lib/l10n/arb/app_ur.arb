@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · اوور سولڈ",
   "signalRsiOverbought": "RSI {value} · اوور بوٹ",
   "signalCrossedAbove": "200 دن کی اوسط سے اوپر گیا",
-  "signalCrossedBelow": "200 دن کی اوسط سے نیچے گیا"
+  "signalCrossedBelow": "200 دن کی اوسط سے نیچے گیا",
+  "signalAlertsTitle": "تکنیکی سگنل کی اطلاعات",
+  "signalAlertsSubtitle": "دن میں ایک بار، جب آپ کا فالو کیا ہوا اسٹاک اوور سولڈ یا اوور بوٹ (RSI) ہو جائے، یا اس کی قیمت 200 دن کی اوسط کو عبور کرے۔",
+  "signalAlertsNotification": "تکنیکی سگنل"
 }

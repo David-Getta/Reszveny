@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · quá bán",
   "signalRsiOverbought": "RSI {value} · quá mua",
   "signalCrossedAbove": "cắt lên trên trung bình 200 ngày",
-  "signalCrossedBelow": "cắt xuống dưới trung bình 200 ngày"
+  "signalCrossedBelow": "cắt xuống dưới trung bình 200 ngày",
+  "signalAlertsTitle": "Thông báo tín hiệu kỹ thuật",
+  "signalAlertsSubtitle": "Mỗi ngày một lần, khi cổ phiếu bạn theo dõi rơi vào vùng quá bán hoặc quá mua (RSI), hoặc giá cắt qua trung bình 200 ngày.",
+  "signalAlertsNotification": "Tín hiệu kỹ thuật"
 }

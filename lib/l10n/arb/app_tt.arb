@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · артык сатылган",
   "signalRsiOverbought": "RSI {value} · артык сатып алынган",
   "signalCrossedAbove": "200 көнлек уртачадан өскә чыкты",
-  "signalCrossedBelow": "200 көнлек уртачадан аска төште"
+  "signalCrossedBelow": "200 көнлек уртачадан аска төште",
+  "signalAlertsTitle": "Техник сигналлар турында белдерүләр",
+  "signalAlertsSubtitle": "Көнгә бер тапкыр, сез күзәткән акция артык сатылган яки артык сатып алынган (RSI) булганда, яки аның бәясе 200 көнлек уртачаны кисеп үткәндә.",
+  "signalAlertsNotification": "Техник сигналлар"
 }

@@ -2738,4 +2738,14 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => '200 kunlik o\'rtachadan pastga tushdi';
+
+  @override
+  String get signalAlertsTitle => 'Texnik signal bildirishnomalari';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Kuniga bir marta, siz kuzatayotgan aksiya haddan ortiq sotilgan yoki haddan ortiq sotib olingan (RSI) holatga kirganda, yoki uning narxi 200 kunlik o\'rtachani kesib o\'tganda.';
+
+  @override
+  String get signalAlertsNotification => 'Texnik signallar';
 }

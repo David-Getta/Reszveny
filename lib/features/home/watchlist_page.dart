@@ -850,12 +850,7 @@ class _SignalsStrip extends StatelessWidget {
       builder: (context, snap) {
         final signals = snap.data == null ? const <WatchSignal>[] : watchSignals(symbols, snap.data!);
         if (signals.isEmpty) return const SizedBox.shrink();
-        String text(WatchSignal x) => switch (x.kind) {
-          WatchSignalKind.rsiOversold => l10n.signalRsiOversold(fmt.number(x.value, decimals: 0)),
-          WatchSignalKind.rsiOverbought => l10n.signalRsiOverbought(fmt.number(x.value, decimals: 0)),
-          WatchSignalKind.crossedAbove200 => l10n.signalCrossedAbove,
-          WatchSignalKind.crossedBelow200 => l10n.signalCrossedBelow,
-        };
+        String text(WatchSignal x) => describeSignal(l10n, fmt, x);
         Color tone(WatchSignalKind k) =>
             k == WatchSignalKind.rsiOversold || k == WatchSignalKind.crossedBelow200 ? p.negative : p.positive;
         return Padding(

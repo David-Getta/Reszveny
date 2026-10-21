@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · e rekišitšwe kudu",
   "signalRsiOverbought": "RSI {value} · e rekilwe kudu",
   "signalCrossedAbove": "e tshetše ka godimo ga palogare ya matšatši a 200",
-  "signalCrossedBelow": "e tshetše ka tlase ga palogare ya matšatši a 200"
+  "signalCrossedBelow": "e tshetše ka tlase ga palogare ya matšatši a 200",
+  "signalAlertsTitle": "Ditsebišo tša matšhupetšo a setegeniki",
+  "signalAlertsSubtitle": "Gatee ka letšatši, ge šere yeo o e latelago e rekišitšwe kudu goba e rekilwe kudu (RSI), goba theko ya yona e tshela palogare ya matšatši a 200.",
+  "signalAlertsNotification": "Matšhupetšo a setegeniki"
 }

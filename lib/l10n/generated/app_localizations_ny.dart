@@ -2739,4 +2739,14 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'yadutsa pansi pa avareji ya masiku 200';
+
+  @override
+  String get signalAlertsTitle => 'Zidziwitso za zizindikiro zaukadaulo';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Kamodzi patsiku, pamene sitoko yomwe mukutsatira yagulitsidwa kwambiri kapena yagulidwa kwambiri (RSI), kapena mtengo wake wadutsa avareji ya masiku 200.';
+
+  @override
+  String get signalAlertsNotification => 'Zizindikiro zaukadaulo';
 }

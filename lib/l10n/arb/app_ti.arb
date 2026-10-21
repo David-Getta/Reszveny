@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · ብዙሕ ተሸይጡ",
   "signalRsiOverbought": "RSI {value} · ብዙሕ ተዓዲጉ",
   "signalCrossedAbove": "ልዕሊ ማእከላይ ናይ 200 መዓልቲ ሰጊሩ",
-  "signalCrossedBelow": "ትሕቲ ማእከላይ ናይ 200 መዓልቲ ወሪዱ"
+  "signalCrossedBelow": "ትሕቲ ማእከላይ ናይ 200 መዓልቲ ወሪዱ",
+  "signalAlertsTitle": "መፍለጥታት ቴክኒካዊ ምልክታት",
+  "signalAlertsSubtitle": "ኣብ መዓልቲ ሓደ ግዜ፣ ትከታተሎ ኣክስዮን ብዙሕ ተሸይጡ ወይ ብዙሕ ተዓዲጉ (RSI) ምስ ዝኸውን፣ ወይ ዋጋኡ ማእከላይ ናይ 200 መዓልቲ ምስ ዝሰግር።",
+  "signalAlertsNotification": "ቴክኒካዊ ምልክታት"
 }

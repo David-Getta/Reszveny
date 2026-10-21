@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · препродато",
   "signalRsiOverbought": "RSI {value} · прекупљено",
   "signalCrossedAbove": "пробила изнад 200-дневног просека",
-  "signalCrossedBelow": "пробила испод 200-дневног просека"
+  "signalCrossedBelow": "пробила испод 200-дневног просека",
+  "signalAlertsTitle": "Обавештења о техничким сигналима",
+  "signalAlertsSubtitle": "Једном дневно, када акција коју пратите постане препродата или прекупљена (RSI), или њена цена пресече 200-дневни просек.",
+  "signalAlertsNotification": "Технички сигнали"
 }

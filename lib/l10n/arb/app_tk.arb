@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · aşa satylan",
   "signalRsiOverbought": "RSI {value} · aşa satyn alnan",
   "signalCrossedAbove": "200 günlük ortalamadan ýokary geçdi",
-  "signalCrossedBelow": "200 günlük ortalamadan aşak geçdi"
+  "signalCrossedBelow": "200 günlük ortalamadan aşak geçdi",
+  "signalAlertsTitle": "Tehniki signal habarnamalary",
+  "signalAlertsSubtitle": "Günde bir gezek, yzarlaýan paýnamaňyz aşa satylan ýa-da aşa satyn alnan (RSI) bolanda, ýa-da onuň bahasy 200 günlük ortalamany kesip geçende.",
+  "signalAlertsNotification": "Tehniki signallar"
 }

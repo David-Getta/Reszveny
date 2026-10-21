@@ -2730,4 +2730,14 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => '୨୦୦ ଦିନର ହାରାହାରି ତଳକୁ ଗଲା';
+
+  @override
+  String get signalAlertsTitle => 'ଟେକ୍ନିକାଲ ସିଗନାଲ ବିଜ୍ଞପ୍ତି';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'ଦିନକୁ ଥରେ, ଯେତେବେଳେ ଆପଣ ଅନୁସରଣ କରୁଥିବା ଷ୍ଟକ ଓଭରସୋଲ୍ଡ କିମ୍ବା ଓଭରବଟ୍ (RSI) ହୁଏ, କିମ୍ବା ତାହାର ମୂଲ୍ୟ ୨୦୦ ଦିନର ହାରାହାରିକୁ ଅତିକ୍ରମ କରେ।';
+
+  @override
+  String get signalAlertsNotification => 'ଟେକ୍ନିକାଲ ସିଗନାଲ';
 }

@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · অতি বিক্ৰয়",
   "signalRsiOverbought": "RSI {value} · অতি ক্ৰয়",
   "signalCrossedAbove": "২০০ দিনৰ গড়ৰ ওপৰত উঠিল",
-  "signalCrossedBelow": "২০০ দিনৰ গড়ৰ তলত নামিল"
+  "signalCrossedBelow": "২০০ দিনৰ গড়ৰ তলত নামিল",
+  "signalAlertsTitle": "কাৰিকৰী সংকেতৰ জাননী",
+  "signalAlertsSubtitle": "দিনে এবাৰ, যেতিয়া আপুনি অনুসৰণ কৰা কোনো ষ্টক অতি বিক্ৰয় বা অতি ক্ৰয় (RSI) হয়, বা ইয়াৰ দাম ২০০ দিনৰ গড় অতিক্ৰম কৰে।",
+  "signalAlertsNotification": "কাৰিকৰী সংকেত"
 }

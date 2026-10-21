@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · перепроданность",
   "signalRsiOverbought": "RSI {value} · перекупленность",
   "signalCrossedAbove": "пробила вверх среднюю за 200 дней",
-  "signalCrossedBelow": "пробила вниз среднюю за 200 дней"
+  "signalCrossedBelow": "пробила вниз среднюю за 200 дней",
+  "signalAlertsTitle": "Уведомления о технических сигналах",
+  "signalAlertsSubtitle": "Раз в день, когда отслеживаемая вами акция входит в зону перепроданности или перекупленности (RSI) либо её цена пересекает среднюю за 200 дней.",
+  "signalAlertsNotification": "Технические сигналы"
 }

@@ -2694,4 +2694,14 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'ትሕቲ ማእከላይ ናይ 200 መዓልቲ ወሪዱ';
+
+  @override
+  String get signalAlertsTitle => 'መፍለጥታት ቴክኒካዊ ምልክታት';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'ኣብ መዓልቲ ሓደ ግዜ፣ ትከታተሎ ኣክስዮን ብዙሕ ተሸይጡ ወይ ብዙሕ ተዓዲጉ (RSI) ምስ ዝኸውን፣ ወይ ዋጋኡ ማእከላይ ናይ 200 መዓልቲ ምስ ዝሰግር።';
+
+  @override
+  String get signalAlertsNotification => 'ቴክኒካዊ ምልክታት';
 }

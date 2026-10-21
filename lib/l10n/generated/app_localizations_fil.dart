@@ -2739,4 +2739,14 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'bumaba sa ilalim ng 200-araw na average';
+
+  @override
+  String get signalAlertsTitle => 'Mga notification sa technical signal';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Isang beses sa isang araw, kapag ang isang stock na sinusundan mo ay naging oversold o overbought (RSI), o tumawid ang presyo nito sa 200-araw na average nito.';
+
+  @override
+  String get signalAlertsNotification => 'Mga technical signal';
 }

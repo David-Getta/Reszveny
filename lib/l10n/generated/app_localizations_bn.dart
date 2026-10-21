@@ -2731,4 +2731,14 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => '২০০ দিনের গড়ের নিচে নেমেছে';
+
+  @override
+  String get signalAlertsTitle => 'টেকনিক্যাল সিগন্যালের বিজ্ঞপ্তি';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'দিনে একবার, যখন আপনার অনুসরণ করা কোনো স্টক ওভারসোল্ড বা ওভারবট (RSI) হয়, অথবা এর দাম ২০০ দিনের গড় অতিক্রম করে।';
+
+  @override
+  String get signalAlertsNotification => 'টেকনিক্যাল সিগন্যাল';
 }

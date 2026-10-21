@@ -2736,4 +2736,14 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'onder het 200-daags gemiddelde gekruist';
+
+  @override
+  String get signalAlertsTitle => 'Meldingen over technische signalen';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'Eén keer per dag, wanneer een aandeel dat je volgt oversold of overbought wordt (RSI), of de koers het 200-daags gemiddelde kruist.';
+
+  @override
+  String get signalAlertsNotification => 'Technische signalen';
 }

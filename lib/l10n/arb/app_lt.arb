@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · perparduota",
   "signalRsiOverbought": "RSI {value} · perpirkta",
   "signalCrossedAbove": "kirto 200 dienų vidurkį aukštyn",
-  "signalCrossedBelow": "kirto 200 dienų vidurkį žemyn"
+  "signalCrossedBelow": "kirto 200 dienų vidurkį žemyn",
+  "signalAlertsTitle": "Pranešimai apie techninius signalus",
+  "signalAlertsSubtitle": "Kartą per dieną, kai tavo sekama akcija tampa perparduota ar perpirkta (RSI) arba jos kaina kerta 200 dienų vidurkį.",
+  "signalAlertsNotification": "Techniniai signalai"
 }

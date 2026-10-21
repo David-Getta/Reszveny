@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · འཚོང་ཚད་བརྒལ་བ།",
   "signalRsiOverbought": "RSI {value} · ཉོ་ཚད་བརྒལ་བ།",
   "signalCrossedAbove": "ཉིན་༢༠༠ ཆ་སྙོམས་ལས་ཡར་བརྒལ།",
-  "signalCrossedBelow": "ཉིན་༢༠༠ ཆ་སྙོམས་ལས་མར་བརྒལ།"
+  "signalCrossedBelow": "ཉིན་༢༠༠ ཆ་སྙོམས་ལས་མར་བརྒལ།",
+  "signalAlertsTitle": "ལག་རྩལ་བརྡ་རྟགས་ཀྱི་བརྡ་ཐོ།",
+  "signalAlertsSubtitle": "ཉིན་རེར་ཐེངས་གཅིག ཁྱེད་ཀྱིས་རྗེས་འདེད་བྱེད་པའི་ཧུར་ཁག་འཚོང་ཚད་བརྒལ་བ་ཡང་ན་ཉོ་ཚད་བརྒལ་བ་ (RSI) ཆགས་སྐབས། ཡང་ན་དེའི་རིན་གོང་ཉིན་༢༠༠ ཆ་སྙོམས་ལས་བརྒལ་སྐབས།",
+  "signalAlertsNotification": "ལག་རྩལ་བརྡ་རྟགས།"
 }

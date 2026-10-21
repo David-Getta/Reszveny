@@ -724,5 +724,8 @@
   "signalRsiOversold": "RSI {value} · زۆر فرۆشراو",
   "signalRsiOverbought": "RSI {value} · زۆر کڕدراو",
   "signalCrossedAbove": "تێکڕای ٢٠٠ ڕۆژ بەرەو سەرەوە بڕی",
-  "signalCrossedBelow": "تێکڕای ٢٠٠ ڕۆژ بەرەو خوارەوە بڕی"
+  "signalCrossedBelow": "تێکڕای ٢٠٠ ڕۆژ بەرەو خوارەوە بڕی",
+  "signalAlertsTitle": "ئاگادارکردنەوەی سیگناڵی تەکنیکی",
+  "signalAlertsSubtitle": "ڕۆژانە جارێک، کاتێک پشکێک کە شوێنی دەکەویت زۆر فرۆشراو یان زۆر کڕدراو دەبێت (RSI)، یان نرخەکەی تێکڕای ٢٠٠ ڕۆژ دەبڕێت.",
+  "signalAlertsNotification": "سیگناڵە تەکنیکییەکان"
 }

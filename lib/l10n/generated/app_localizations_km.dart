@@ -2711,4 +2711,14 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get signalCrossedBelow => 'បានធ្លាក់ក្រោមមធ្យម ២០០ ថ្ងៃ';
+
+  @override
+  String get signalAlertsTitle => 'ការជូនដំណឹងសញ្ញាបច្ចេកទេស';
+
+  @override
+  String get signalAlertsSubtitle =>
+      'ម្តងក្នុងមួយថ្ងៃ នៅពេលភាគហ៊ុនដែលអ្នកតាមដានក្លាយជាលក់លើសកម្រិត ឬទិញលើសកម្រិត (RSI) ឬតម្លៃរបស់វាឆ្លងកាត់មធ្យម ២០០ ថ្ងៃ។';
+
+  @override
+  String get signalAlertsNotification => 'សញ្ញាបច្ចេកទេស';
 }
