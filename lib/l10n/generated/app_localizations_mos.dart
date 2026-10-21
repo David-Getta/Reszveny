@@ -2593,6 +2593,47 @@ class AppLocalizationsMos extends AppLocalizations {
       'Dividand ka gʋls ye. Paas-b ne f nug, bɩ f kẽes f broker-ã export – a dividand gʋlsgã me n dɩkd.';
 
   @override
+  String get portfolioSplit => 'Paart-rãmbã pʋɩɩbo';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Paart-rãmbã pʋɩɩbo: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Raabã la koosgã sẽn maan pʋɩɩbã taoor toeemame: paart-rãmbã sõor paasdame la paart a ye ligdã boogdame, tɩ ligdã fãa pa toeem ye.';
+
+  @override
+  String get portfolioSplitRatio => 'Pʋɩɩb sõor (paalg : kʋdg)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Gʋls pʋɩɩb sõor wa 10:1, bɩ 1:10 pʋɩɩb lebgr yĩnga.';
+
+  @override
+  String get portfolioSplitDate => 'Pʋɩɩbã daar';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Paart-rãmbã pʋɩɩbo $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Paart-rãmbã pʋɩɩbo yiisame';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Paart pʋɩɩb $count paasame',
+      one: 'Paart pʋɩɩb a 1 paasame',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

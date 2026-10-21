@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Bigereranyijwe hashingiwe ku bwishyu wanditse",
   "labelYieldOnCost": "Inyungu ku giciro waguze",
   "glossYieldOnCost": "Amadividende yakiriwe mu mezi 12 ashize agabanyijwe n'ibyo wishyuye ku migabane ukigira. Bitandukanye n'igipimo cy'inyungu ku migabane, bipimwa ku giciro wowe ubwawe waguzeho, atari icy'uyu munsi.",
-  "homeDividendsThisYear": "Amadividende y'uyu mwaka: {amount}"
+  "homeDividendsThisYear": "Amadividende y'uyu mwaka: {amount}",
+  "portfolioSplit": "Igabanywa ry'imigabane",
+  "portfolioSplitTitle": "Igabanywa ry'imigabane: {symbol}",
+  "portfolioSplitHint": "Ibyaguzwe n'ibyagurishijwe mbere y'igabanywa birahindurwa: umubare w'imigabane ugwizwa, igiciro cya buri mugabane kigabanywa, bityo igiciro cyose kiguma kimwe.",
+  "portfolioSplitRatio": "Igipimo (mishya : ya kera)",
+  "portfolioSplitRatioError": "Andika igipimo nka 10:1, cyangwa 1:10 ku igabanywa risubira inyuma.",
+  "portfolioSplitDate": "Itariki y'igabanywa",
+  "portfolioSplitRow": "Igabanywa ry'imigabane {ratio}",
+  "portfolioSplitRemoved": "Igabanywa ry'imigabane ryasibwe",
+  "portfolioSplitsImported": "{count, plural, =1{Igabanywa ry'imigabane 1 ryongewemo} other{Amagabanywa y'imigabane {count} yongewemo}}"
 }

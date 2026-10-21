@@ -2606,6 +2606,47 @@ class AppLocalizationsUr extends AppLocalizations {
       'ابھی تک کوئی ڈیویڈنڈ ریکارڈ نہیں ہوا۔ ہاتھ سے شامل کریں، یا اپنے بروکر کی ایکسپورٹ فائل امپورٹ کریں – اس کی ڈیویڈنڈ قطاریں بھی لے لی جاتی ہیں۔';
 
   @override
+  String get portfolioSplit => 'حصص کی تقسیم';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'حصص کی تقسیم: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'تقسیم سے پہلے کی تاریخ والی خریداریاں اور فروخت ایڈجسٹ کی جاتی ہیں: حصص کی تعداد ضرب اور فی حصہ قیمت تقسیم کی جاتی ہے، تاکہ لاگت وہی رہے۔';
+
+  @override
+  String get portfolioSplitRatio => 'تناسب (نئے : پرانے)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      '10:1 جیسا تناسب درج کریں، یا ریورس اسپلٹ کے لیے 1:10۔';
+
+  @override
+  String get portfolioSplitDate => 'تقسیم کی تاریخ';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'حصص کی تقسیم $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'حصص کی تقسیم حذف کر دی گئی';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count حصص کی تقسیمیں شامل کی گئیں',
+      one: '1 حصص کی تقسیم شامل کی گئی',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

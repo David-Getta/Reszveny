@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Сіз жазған төлемдер бойынша бағаланды",
   "labelYieldOnCost": "Сатып алу бағасына кірістілік",
   "glossYieldOnCost": "Соңғы 12 айда алынған дивидендтер әлі ұстап отырған акцияларға төлеген сомаңызға бөлінеді. Дивидендтік кірістіліктен айырмашылығы, ол бүгінгі бағаға емес, өзіңіздің сатып алу бағаңызға қатысты өлшенеді.",
-  "homeDividendsThisYear": "Биылғы дивидендтер: {amount}"
+  "homeDividendsThisYear": "Биылғы дивидендтер: {amount}",
+  "portfolioSplit": "Акцияларды бөлу",
+  "portfolioSplitTitle": "Акцияларды бөлу: {symbol}",
+  "portfolioSplitHint": "Бөлуге дейінгі күнмен белгіленген сатып алулар мен сатулар түзетіледі: акция саны көбейтіліп, бір акцияның бағасы бөлінеді, сондықтан шығын өзгермейді.",
+  "portfolioSplitRatio": "Қатынас (жаңа : ескі)",
+  "portfolioSplitRatioError": "10:1 сияқты қатынасты енгізіңіз, кері бөлу үшін 1:10.",
+  "portfolioSplitDate": "Бөлу күні",
+  "portfolioSplitRow": "Акцияларды бөлу {ratio}",
+  "portfolioSplitRemoved": "Акцияларды бөлу жойылды",
+  "portfolioSplitsImported": "{count, plural, =1{1 акция бөлуі қосылды} other{{count} акция бөлуі қосылды}}"
 }

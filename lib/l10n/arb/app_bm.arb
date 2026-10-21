@@ -743,5 +743,14 @@
   "eventDividendEstimate": "A jatelen ka bɔ i ka sarali sɛbɛnnenw na",
   "labelYieldOnCost": "Tɔnɔ tilali sɔrɔ hakɛ san sɔngɔ kan",
   "glossYieldOnCost": "Tɔnɔ tilali minnu sɔrɔla kalo 12 tɛmɛnenw kɔnɔ, u tilalen wari min i y'a sara aksiyɔn minnu bɛ i bolo halisa la. A ni tɔnɔ tilali sɔrɔ hakɛ tɛ kelen ye: a bɛ jate i yɛrɛ ka san sɔngɔ kan, bi sɔngɔ kan tɛ.",
-  "homeDividendsThisYear": "Dividandi ɲinan san: {amount}"
+  "homeDividendsThisYear": "Dividandi ɲinan san: {amount}",
+  "portfolioSplit": "Share tilali",
+  "portfolioSplitTitle": "Share tilali: {symbol}",
+  "portfolioSplitHint": "Sanni ni feereli minnu kɛra ka kɔn tilali ɲɛ, olu bɛ ladilan: share hakɛ bɛ caya ani share kelen sɔngɔ bɛ tila, o la musaka tɛ yɛlɛma.",
+  "portfolioSplitRatio": "Tilali hakɛ (kura : kɔrɔ)",
+  "portfolioSplitRatioError": "Hakɛ dɔ sɛbɛn i n'a fɔ 10:1, walima 1:10 share ɲɔgɔn fara kama.",
+  "portfolioSplitDate": "Tilali don",
+  "portfolioSplitRow": "Share tilali {ratio}",
+  "portfolioSplitRemoved": "Share tilali bɔra",
+  "portfolioSplitsImported": "{count, plural, =1{Share tilali 1 farala a kan} other{Share tilali {count} farala a kan}}"
 }

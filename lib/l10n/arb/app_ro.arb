@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Estimat pe baza plăților înregistrate de tine",
   "labelYieldOnCost": "Randament la prețul de achiziție",
   "glossYieldOnCost": "Dividendele încasate în ultimele 12 luni împărțite la cât ai plătit pentru acțiunile pe care le mai deții. Spre deosebire de randamentul dividendului, se raportează la prețul tău de cumpărare, nu la prețul de azi.",
-  "homeDividendsThisYear": "Dividende anul acesta: {amount}"
+  "homeDividendsThisYear": "Dividende anul acesta: {amount}",
+  "portfolioSplit": "Divizare de acțiuni",
+  "portfolioSplitTitle": "Divizare de acțiuni: {symbol}",
+  "portfolioSplitHint": "Cumpărările și vânzările datate înainte de divizare sunt ajustate: numărul de acțiuni se înmulțește, iar prețul pe acțiune se împarte, astfel încât costul rămâne același.",
+  "portfolioSplitRatio": "Raport (noi : vechi)",
+  "portfolioSplitRatioError": "Introdu un raport precum 10:1 sau 1:10 pentru o divizare inversă (consolidare).",
+  "portfolioSplitDate": "Data divizării",
+  "portfolioSplitRow": "Divizare de acțiuni {ratio}",
+  "portfolioSplitRemoved": "Divizare de acțiuni ștearsă",
+  "portfolioSplitsImported": "{count, plural, =1{1 divizare de acțiuni adăugată} other{{count} divizări de acțiuni adăugate}}"
 }

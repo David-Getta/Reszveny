@@ -2613,6 +2613,47 @@ class AppLocalizationsIt extends AppLocalizations {
       'Nessun dividendo registrato finora. Aggiungili a mano o importa l’esportazione del tuo broker: vengono rilevate anche le sue righe dei dividendi.';
 
   @override
+  String get portfolioSplit => 'Frazionamento azionario';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Frazionamento azionario: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Gli acquisti e le vendite con data precedente al frazionamento vengono rettificati: il numero di azioni viene moltiplicato e il prezzo per azione diviso, così il costo resta lo stesso.';
+
+  @override
+  String get portfolioSplitRatio => 'Rapporto (nuove : vecchie)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Inserisci un rapporto come 10:1, oppure 1:10 per un raggruppamento azionario.';
+
+  @override
+  String get portfolioSplitDate => 'Data del frazionamento';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Frazionamento azionario $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Frazionamento azionario eliminato';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count frazionamenti azionari aggiunti',
+      one: '1 frazionamento azionario aggiunto',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

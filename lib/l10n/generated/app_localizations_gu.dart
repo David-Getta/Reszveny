@@ -2601,6 +2601,47 @@ class AppLocalizationsGu extends AppLocalizations {
       'હજી સુધી કોઈ ડિવિડન્ડ નોંધાયું નથી. હાથે ઉમેરો, અથવા તમારા બ્રોકરનું એક્સપોર્ટ ઇમ્પોર્ટ કરો – તેની ડિવિડન્ડ હરોળો પણ લેવાય છે.';
 
   @override
+  String get portfolioSplit => 'સ્ટૉક સ્પ્લિટ';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'સ્ટૉક સ્પ્લિટ: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'સ્પ્લિટ પહેલાંની તારીખની ખરીદી અને વેચાણ સમાયોજિત થાય છે: શેરની સંખ્યા ગુણાય છે અને શેર દીઠ ભાવ ભાગાય છે, જેથી ખર્ચ એ જ રહે.';
+
+  @override
+  String get portfolioSplitRatio => 'ગુણોત્તર (નવા : જૂના)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      '10:1 જેવો ગુણોત્તર દાખલ કરો, અથવા રિવર્સ સ્પ્લિટ માટે 1:10.';
+
+  @override
+  String get portfolioSplitDate => 'સ્પ્લિટની તારીખ';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'સ્ટૉક સ્પ્લિટ $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'સ્ટૉક સ્પ્લિટ કાઢી નાખ્યો';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count સ્ટૉક સ્પ્લિટ ઉમેરાયા',
+      one: '1 સ્ટૉક સ્પ્લિટ ઉમેરાયો',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

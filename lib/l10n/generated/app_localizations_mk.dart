@@ -2626,6 +2626,47 @@ class AppLocalizationsMk extends AppLocalizations {
       'Сè уште нема евидентирани дивиденди. Додајте ги рачно или увезете го извозот од вашиот брокер – се преземаат и редовите со дивиденди.';
 
   @override
+  String get portfolioSplit => 'Поделба на акции';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Поделба на акции: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Купувањата и продажбите датирани пред поделбата се прилагодуваат: бројот на акции се множи, а цената по акција се дели, така што трошокот останува ист.';
+
+  @override
+  String get portfolioSplitRatio => 'Сооднос (нови : стари)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Внесете сооднос како 10:1, или 1:10 за обратна поделба.';
+
+  @override
+  String get portfolioSplitDate => 'Датум на поделбата';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Поделба на акции $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Поделбата на акции е избришана';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Додадени се $count поделби на акции',
+      one: 'Додадена е 1 поделба на акции',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

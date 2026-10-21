@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Estimation d’après vos versements enregistrés",
   "labelYieldOnCost": "Rendement sur PRU",
   "glossYieldOnCost": "Les dividendes reçus au cours des 12 derniers mois divisés par ce que vous avez payé pour les actions que vous détenez encore. Contrairement au rendement du dividende, il se mesure par rapport à votre propre prix d’achat, pas au cours actuel.",
-  "homeDividendsThisYear": "Dividendes cette année : {amount}"
+  "homeDividendsThisYear": "Dividendes cette année : {amount}",
+  "portfolioSplit": "Division d’actions",
+  "portfolioSplitTitle": "Division d’actions : {symbol}",
+  "portfolioSplitHint": "Les achats et ventes datés d’avant la division sont ajustés : le nombre d’actions est multiplié et le prix par action divisé, de sorte que le coût reste identique.",
+  "portfolioSplitRatio": "Ratio (nouvelles : anciennes)",
+  "portfolioSplitRatioError": "Saisissez un ratio comme 10:1, ou 1:10 pour un regroupement d’actions.",
+  "portfolioSplitDate": "Date de la division",
+  "portfolioSplitRow": "Division d’actions {ratio}",
+  "portfolioSplitRemoved": "Division d’actions supprimée",
+  "portfolioSplitsImported": "{count, plural, =1{1 division d’actions ajoutée} other{{count} divisions d’actions ajoutées}}"
 }

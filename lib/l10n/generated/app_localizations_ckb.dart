@@ -2607,6 +2607,47 @@ class AppLocalizationsCkb extends AppLocalizations {
       'هێشتا هیچ پشکی قازانج تۆمار نەکراوە. بە دەست زیادیان بکە، یان هەناردەی بڕۆکەرەکەت هاوردە بکە – ڕیزەکانی پشکی قازانجیش وەردەگیرێن.';
 
   @override
+  String get portfolioSplit => 'دابەشکردنی پشک';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'دابەشکردنی پشک: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'کڕین و فرۆشتنەکانی پێش بەرواری دابەشکردن ڕێک دەخرێن: ژمارەی پشکەکان لێک دەدرێت و نرخی هەر پشکێک دابەش دەکرێت، بۆیە تێچوون وەک خۆی دەمێنێتەوە.';
+
+  @override
+  String get portfolioSplitRatio => 'ڕێژە (نوێ : کۆن)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'ڕێژەیەک بنووسە وەک 10:1، یان 1:10 بۆ دابەشکردنی پێچەوانە.';
+
+  @override
+  String get portfolioSplitDate => 'بەرواری دابەشکردن';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'دابەشکردنی پشک $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'دابەشکردنی پشک سڕایەوە';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count دابەشکردنی پشک زیادکرا',
+      one: '1 دابەشکردنی پشک زیادکرا',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

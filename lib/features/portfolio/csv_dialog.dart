@@ -26,7 +26,11 @@ class PortfolioCsvMenu extends StatelessWidget {
       onSelected: (v) async {
         if (v == 'export') {
           await shareText(
-            portfolioCsv(services.portfolio.lots, dividends: services.portfolio.dividends),
+            portfolioCsv(
+              services.portfolio.lots,
+              dividends: services.portfolio.dividends,
+              splits: services.portfolio.splits,
+            ),
             subject: 'WhatStock portfolio.csv',
           );
         } else if (v == 'dividends') {
@@ -130,12 +134,23 @@ Future<void> showPortfolioImport(BuildContext context) async {
     await services.portfolio.addDividend(symbol: d.symbol, amount: d.amount, currency: d.currency, date: d.date);
     addedDividends++;
   }
+  // Felaprózások (saját exportból): ugyanaz (ticker, nap, arány) nem kerül be kétszer.
+  String sKey(String symbol, DateTime d, int from, int to) =>
+      '$symbol|${d.toIso8601String().substring(0, 10)}|$to:$from';
+  final existingSplits = {for (final s in services.portfolio.splits) sKey(s.symbol, s.date, s.from, s.to)};
+  var addedSplits = 0;
+  for (final s in result.splits) {
+    if (!existingSplits.add(sKey(s.symbol, s.date, s.from, s.to))) continue;
+    await services.portfolio.addSplit(symbol: s.symbol, from: s.from, to: s.to, date: s.date);
+    addedSplits++;
+  }
   messenger.showSnackBar(
     SnackBar(
       content: Text(
         [
           l10n.portfolioImported(added),
           if (addedDividends > 0) l10n.portfolioDividendsImported(addedDividends),
+          if (addedSplits > 0) l10n.portfolioSplitsImported(addedSplits),
           if (result.skipped > 0) l10n.portfolioImportSkipped(result.skipped),
         ].join(' · '),
       ),

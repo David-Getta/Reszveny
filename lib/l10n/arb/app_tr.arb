@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Kaydettiğiniz ödemelerden tahmin edilmiştir",
   "labelYieldOnCost": "Maliyete göre temettü verimi",
   "glossYieldOnCost": "Son 12 ayda alınan temettülerin, hâlâ elinizde tuttuğunuz hisseler için ödediğiniz tutara bölümü. Temettü veriminden farklı olarak bugünkü fiyata değil, kendi alış fiyatınıza göre ölçülür.",
-  "homeDividendsThisYear": "Bu yılki temettüler: {amount}"
+  "homeDividendsThisYear": "Bu yılki temettüler: {amount}",
+  "portfolioSplit": "Hisse bölünmesi",
+  "portfolioSplitTitle": "Hisse bölünmesi: {symbol}",
+  "portfolioSplitHint": "Bölünme tarihinden önceki alım ve satımlar düzeltilir: hisse sayısı çarpılır, hisse başına fiyat bölünür; böylece maliyet aynı kalır.",
+  "portfolioSplitRatio": "Oran (yeni : eski)",
+  "portfolioSplitRatioError": "10:1 gibi bir oran girin, ters bölünme için 1:10.",
+  "portfolioSplitDate": "Bölünme tarihi",
+  "portfolioSplitRow": "Hisse bölünmesi {ratio}",
+  "portfolioSplitRemoved": "Hisse bölünmesi silindi",
+  "portfolioSplitsImported": "{count, plural, =1{1 hisse bölünmesi eklendi} other{{count} hisse bölünmesi eklendi}}"
 }

@@ -12,6 +12,7 @@ import 'add_lot_dialog.dart';
 import 'csv_dialog.dart';
 import 'dividend_forecast.dart' show convertedDividends;
 import 'dividends_card.dart';
+import 'split_dialog.dart';
 import 'holdings_import.dart';
 import 'portfolio_history.dart';
 import 'portfolio_review_card.dart';
@@ -998,8 +999,9 @@ class _PositionTile extends StatelessWidget {
 /// Egy pozíció tranzakciói (vételek és eladások) törlés-gombbal, fölöttük az
 /// eladás gombja (ha még van birtokolt darab) és a realizált nyereség.
 Future<void> showPurchasesSheet(BuildContext context, Position position, {double? currentPrice}) {
-  // A legutóbb törölt tranzakció (visszavonható, amíg a lap nyitva van).
+  // A legutóbb törölt tranzakció, illetve felaprózás (visszavonható, amíg a lap nyitva van).
   final removed = ValueNotifier<PortfolioLot?>(null);
+  final removedSplit = ValueNotifier<SplitRecord?>(null);
   return showModalBottomSheet<void>(
     context: context,
     showDragHandle: true,
@@ -1011,9 +1013,10 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
       final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
       String qty(double q) => fmt.number(q, decimals: q == q.roundToDouble() ? 0 : 4);
       return ListenableBuilder(
-        listenable: Listenable.merge([services.portfolio, removed]),
+        listenable: Listenable.merge([services.portfolio, removed, removedSplit]),
         builder: (context, _) {
-          final lots = services.portfolio.lots.where((l) => l.symbol == position.symbol).toList()
+          // A felaprózásokkal igazított tételek (a törlés az eredeti azonosítóval megy).
+          final lots = services.portfolio.adjustedLots.where((l) => l.symbol == position.symbol).toList()
             ..sort((a, b) => (b.date ?? DateTime(0)).compareTo(a.date ?? DateTime(0)));
           final now = Position(symbol: position.symbol, currency: position.currency, lots: lots);
           return SafeArea(
@@ -1039,6 +1042,13 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
                           icon: const Icon(Icons.payments_outlined),
                           onPressed: () =>
                               showAddDividendDialog(context, symbol: position.symbol, currency: position.currency),
+                        ),
+                        // Részvényfelaprózás rögzítése ehhez a részvényhez.
+                        IconButton(
+                          key: const ValueKey('position-split'),
+                          tooltip: l10n.portfolioSplit,
+                          icon: const Icon(Icons.call_split_rounded),
+                          onPressed: () => showSplitDialog(context, symbol: position.symbol),
                         ),
                         if (!now.isClosed)
                           FilledButton.tonalIcon(
@@ -1076,6 +1086,26 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
                         ],
                       ),
                     ),
+                  if (removedSplit.value case final r?)
+                    Padding(
+                      key: const ValueKey('split-removed'),
+                      padding: const EdgeInsets.fromLTRB(20, 0, 12, 8),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Text(l10n.portfolioSplitRemoved, style: TextStyle(color: p.muted)),
+                          ),
+                          TextButton(
+                            key: const ValueKey('split-undo'),
+                            onPressed: () {
+                              removedSplit.value = null;
+                              services.portfolio.restoreSplit(r);
+                            },
+                            child: Text(l10n.undo),
+                          ),
+                        ],
+                      ),
+                    ),
                   if (now.hasSales)
                     Padding(
                       padding: const EdgeInsets.fromLTRB(20, 0, 20, 8),
@@ -1103,6 +1133,24 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
                       leading: Icon(Icons.payments_outlined, color: p.muted, size: 20),
                       title: Text(fmt.money(d.amount, d.currency)),
                       subtitle: d.date == null ? null : Text(fmt.date(d.date)),
+                    ),
+                  // A részvény felaprózásai (az újabb elöl), törölhetők.
+                  for (final s in services.portfolio.splitsOf(position.symbol).reversed)
+                    ListTile(
+                      key: ValueKey('sheet-split-${s.id}'),
+                      dense: true,
+                      leading: Icon(Icons.call_split_rounded, color: p.muted, size: 20),
+                      title: Text(l10n.portfolioSplitRow(s.label)),
+                      subtitle: Text(fmt.date(s.date)),
+                      trailing: IconButton(
+                        key: ValueKey('sheet-split-delete-${s.id}'),
+                        tooltip: l10n.portfolioRemove,
+                        icon: Icon(Icons.delete_outline_rounded, size: 18, color: p.negative),
+                        onPressed: () {
+                          removedSplit.value = s;
+                          services.portfolio.removeSplit(s.id);
+                        },
+                      ),
                     ),
                   // A még birtokolt tételek egyenként (ha több vétel volt vagy eladás is):
                   // darab × vételi ár, dátum, és a mai árral számolt nyereség.

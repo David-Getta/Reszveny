@@ -2598,6 +2598,47 @@ class AppLocalizationsSd extends AppLocalizations {
       'اڃا ڪو ڊيويڊنڊ رڪارڊ نه ٿيو آهي. هٿ سان شامل ڪريو، يا پنهنجي بروڪر جي ايڪسپورٽ فائل امپورٽ ڪريو – ان جون ڊيويڊنڊ قطارون به ورتيون وينديون.';
 
   @override
+  String get portfolioSplit => 'حصن جي ورهاست';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'حصن جي ورهاست: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'ورهاست کان اڳ جي تاريخ وارين خريدارين ۽ وڪرن کي درست ڪيو ويندو آهي: حصن جو تعداد ضرب ۽ في حصو قيمت ورهائي ويندي آهي، تنهنڪري لاگت ساڳي رهي ٿي.';
+
+  @override
+  String get portfolioSplitRatio => 'تناسب (نوان : پراڻا)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      '10:1 جهڙو تناسب داخل ڪريو، يا ريورس اسپلٽ لاءِ 1:10.';
+
+  @override
+  String get portfolioSplitDate => 'ورهاست جي تاريخ';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'حصن جي ورهاست $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'حصن جي ورهاست ڊاهي وئي';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count حصن جون ورهاستون شامل ڪيون ويون',
+      one: '1 حصن جي ورهاست شامل ڪئي وئي',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

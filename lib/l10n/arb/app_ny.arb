@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Zoyerekezedwa kuchokera ku malipiro omwe mudalemba",
   "labelYieldOnCost": "Phindu pa mtengo wogula",
   "glossYieldOnCost": "Madividendi olandiridwa m'miyezi 12 yapitayi ogawidwa ndi zomwe munalipira pa masheya omwe mukadali nawo. Mosiyana ndi chiwerengero cha gawo la phindu, ichi chimayesedwa pa mtengo womwe inu munagula, osati mtengo wa lero.",
-  "homeDividendsThisYear": "Madividendi chaka chino: {amount}"
+  "homeDividendsThisYear": "Madividendi chaka chino: {amount}",
+  "portfolioSplit": "Kugawa masheya",
+  "portfolioSplitTitle": "Kugawa masheya: {symbol}",
+  "portfolioSplitHint": "Zogula ndi zogulitsa za masiku akale kuposa kugawako zimasinthidwa: chiwerengero cha masheya chimachulukitsidwa ndipo mtengo wa sheya imodzi umagawidwa, kotero mtengo wonse umakhalabe womwewo.",
+  "portfolioSplitRatio": "Chiŵerengero (zatsopano : zakale)",
+  "portfolioSplitRatioError": "Lembani chiŵerengero monga 10:1, kapena 1:10 pa kugawa kobwerera m'mbuyo.",
+  "portfolioSplitDate": "Tsiku logawa",
+  "portfolioSplitRow": "Kugawa masheya {ratio}",
+  "portfolioSplitRemoved": "Kugawa masheya kwachotsedwa",
+  "portfolioSplitsImported": "{count, plural, =1{Kugawa masheya 1 kwawonjezedwa} other{Kugawa masheya {count} kwawonjezedwa}}"
 }

@@ -2664,6 +2664,47 @@ class AppLocalizationsAr extends AppLocalizations {
       'لم تُسجَّل أي توزيعات أرباح بعد. أضفها يدويًا، أو استورد ملف التصدير من وسيطك – تُلتقط صفوف التوزيعات فيه أيضًا.';
 
   @override
+  String get portfolioSplit => 'تجزئة الأسهم';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'تجزئة الأسهم: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'تُعدَّل عمليات الشراء والبيع المؤرخة قبل التجزئة: يُضرب عدد الأسهم ويُقسم سعر السهم، فتبقى التكلفة كما هي.';
+
+  @override
+  String get portfolioSplitRatio => 'النسبة (جديد : قديم)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'أدخل نسبة مثل 10:1، أو 1:10 للتجزئة العكسية.';
+
+  @override
+  String get portfolioSplitDate => 'تاريخ التجزئة';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'تجزئة الأسهم $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'تم حذف تجزئة الأسهم';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'تمت إضافة $count من تجزئات الأسهم',
+      one: 'تمت إضافة تجزئة أسهم واحدة',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

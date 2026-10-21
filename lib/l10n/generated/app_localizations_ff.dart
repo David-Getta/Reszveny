@@ -2600,6 +2600,47 @@ class AppLocalizationsFf extends AppLocalizations {
       'Dividende winndaaka tawo. Ɓeydu ɗum e junngo, walla naatnu export broker maa – gorol dividende makko kadi ƴettete.';
 
   @override
+  String get portfolioSplit => 'Feccugol share';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Feccugol share: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Soodgol e yeeygol ɗi ñalngu mum adii feccugol ngol ina mbaylee: limoore share en ina ɓeydee, coggu share gooto ina feccee, ndeke coggu fof heddoto no wonnoo.';
+
+  @override
+  String get portfolioSplitRatio => 'Hakkunde (keso : kiiɗɗo)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Winndu hakkunde hono 10:1, walla 1:10 ngam feccugol ruttiingol.';
+
+  @override
+  String get portfolioSplitDate => 'Ñalngu feccugol';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Feccugol share $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Feccugol share momtaama';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Feccugol share $count ɓeydaama',
+      one: 'Feccugol share 1 ɓeydaama',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

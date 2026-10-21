@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Stima basata sui pagamenti che hai registrato",
   "labelYieldOnCost": "Rendimento sul prezzo di carico",
   "glossYieldOnCost": "I dividendi ricevuti negli ultimi 12 mesi divisi per quanto hai pagato le azioni che possiedi ancora. A differenza del rendimento del dividendo, si misura sul tuo prezzo di acquisto, non sul prezzo di oggi.",
-  "homeDividendsThisYear": "Dividendi quest’anno: {amount}"
+  "homeDividendsThisYear": "Dividendi quest’anno: {amount}",
+  "portfolioSplit": "Frazionamento azionario",
+  "portfolioSplitTitle": "Frazionamento azionario: {symbol}",
+  "portfolioSplitHint": "Gli acquisti e le vendite con data precedente al frazionamento vengono rettificati: il numero di azioni viene moltiplicato e il prezzo per azione diviso, così il costo resta lo stesso.",
+  "portfolioSplitRatio": "Rapporto (nuove : vecchie)",
+  "portfolioSplitRatioError": "Inserisci un rapporto come 10:1, oppure 1:10 per un raggruppamento azionario.",
+  "portfolioSplitDate": "Data del frazionamento",
+  "portfolioSplitRow": "Frazionamento azionario {ratio}",
+  "portfolioSplitRemoved": "Frazionamento azionario eliminato",
+  "portfolioSplitsImported": "{count, plural, =1{1 frazionamento azionario aggiunto} other{{count} frazionamenti azionari aggiunti}}"
 }

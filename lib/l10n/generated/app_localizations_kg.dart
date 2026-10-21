@@ -2615,6 +2615,47 @@ class AppLocalizationsKg extends AppLocalizations {
       'Ata dividende mosi ve me sonikwa ntete. Yika yo na maboko, to kotisa export ya broker na nge – ba ligne ya dividende na yo mpi ke bakama.';
 
   @override
+  String get portfolioSplit => 'Kukabula ba share';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Kukabula ba share: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Kusumba ti kuteka yina salamaka na ntwala ya kukabula ke bongisama: ntalu ya ba share ke kuma mingi mpi ntalu ya share mosi ke kabulama, yo yina mbongo ya nge futaka ke soba ve.';
+
+  @override
+  String get portfolioSplitRatio => 'Kiteso (ya mpa : ya ntama)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Sonika kiteso bonso 10:1, to 1:10 sambu na kukabula ya kuvutula.';
+
+  @override
+  String get portfolioSplitDate => 'Kilumbu ya kukabula';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Kukabula ba share $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Kukabula ba share me katulama';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kukabula ba share $count me yikama',
+      one: 'Kukabula ba share 1 me yikama',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

@@ -743,5 +743,14 @@
   "eventDividendEstimate": "We guess am from di payments you record",
   "labelYieldOnCost": "Yield on cost",
   "glossYieldOnCost": "Di dividend wey you collect for di last 12 months divided by wetin you pay for di shares wey you still hold. E no be like dividend yield: dem measure am against di price wey you buy am, no be today price.",
-  "homeDividendsThisYear": "Dividend dis year: {amount}"
+  "homeDividendsThisYear": "Dividend dis year: {amount}",
+  "portfolioSplit": "Stock split",
+  "portfolioSplitTitle": "Stock split: {symbol}",
+  "portfolioSplitHint": "We go adjust di buy and sell wey happen before di split: we go multiply di number of shares and divide di price per share, so di cost still remain di same.",
+  "portfolioSplitRatio": "Ratio (new : old)",
+  "portfolioSplitRatioError": "Put ratio like 10:1, or 1:10 for reverse split.",
+  "portfolioSplitDate": "Date of di split",
+  "portfolioSplitRow": "Stock split {ratio}",
+  "portfolioSplitRemoved": "Stock split don delete",
+  "portfolioSplitsImported": "{count, plural, =1{1 stock split don add} other{{count} stock splits don add}}"
 }

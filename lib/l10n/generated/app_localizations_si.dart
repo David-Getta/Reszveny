@@ -2603,6 +2603,47 @@ class AppLocalizationsSi extends AppLocalizations {
       'තවම ලාභාංශ කිසිවක් සටහන් කර නැත. අතින් එක් කරන්න, නැතහොත් ඔබේ බ්‍රෝකර්ගේ export ගොනුව import කරන්න – එහි ලාභාංශ පේළි ද ගනු ලැබේ.';
 
   @override
+  String get portfolioSplit => 'කොටස් බෙදීම';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'කොටස් බෙදීම: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'බෙදීමට පෙර දිනැති මිලදී ගැනීම් සහ විකුණුම් සකස් කෙරේ: කොටස් ගණන ගුණ කර කොටසක මිල බෙදන බැවින් පිරිවැය එලෙසම පවතී.';
+
+  @override
+  String get portfolioSplitRatio => 'අනුපාතය (අලුත් : පරණ)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      '10:1 වැනි අනුපාතයක් ඇතුළත් කරන්න, නැතහොත් ප්‍රතිලෝම බෙදීමක් සඳහා 1:10.';
+
+  @override
+  String get portfolioSplitDate => 'බෙදීමේ දිනය';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'කොටස් බෙදීම $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'කොටස් බෙදීම මකා දමන ලදී';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'කොටස් බෙදීම් $countක් එක් කළා',
+      one: 'කොටස් බෙදීම් 1ක් එක් කළා',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

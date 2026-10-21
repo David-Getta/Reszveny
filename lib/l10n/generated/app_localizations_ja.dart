@@ -2527,6 +2527,47 @@ class AppLocalizationsJa extends AppLocalizations {
       '配当はまだ記録されていません。手動で追加するか、証券会社のエクスポートをインポートしてください。配当の行も取り込まれます。';
 
   @override
+  String get portfolioSplit => '株式分割';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return '株式分割：$symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      '分割前の日付の購入・売却は調整されます。株数が掛け算され、1株あたりの価格が割り算されるため、取得コストは変わりません。';
+
+  @override
+  String get portfolioSplitRatio => '比率（新 : 旧）';
+
+  @override
+  String get portfolioSplitRatioError =>
+      '10:1 のような比率を入力してください。株式併合の場合は 1:10 です。';
+
+  @override
+  String get portfolioSplitDate => '分割日';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return '株式分割 $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => '株式分割を削除しました';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '株式分割を$count件追加しました',
+      one: '株式分割を1件追加しました',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

@@ -2607,6 +2607,47 @@ class AppLocalizationsMn extends AppLocalizations {
       'Ногдол ашиг бүртгэгдээгүй байна. Гараар нэмэх, эсвэл брокерийнхоо экспортыг импортлоорой – түүний ногдол ашгийн мөрүүд ч мөн уншигдана.';
 
   @override
+  String get portfolioSplit => 'Хувьцааны хуваалт';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Хувьцааны хуваалт: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Хуваалтаас өмнөх огноотой худалдан авалт, борлуулалтыг тохируулна: хувьцааны тоог үржүүлж, нэгж хувьцааны үнийг хуваах тул өртөг хэвээр үлдэнэ.';
+
+  @override
+  String get portfolioSplitRatio => 'Харьцаа (шинэ : хуучин)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      '10:1 гэх мэт харьцаа оруулна уу, эсвэл урвуу хуваалтад 1:10.';
+
+  @override
+  String get portfolioSplitDate => 'Хуваалтын огноо';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Хувьцааны хуваалт $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Хувьцааны хуваалтыг устгасан';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count хувьцааны хуваалт нэмэгдсэн',
+      one: '1 хувьцааны хуваалт нэмэгдсэн',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

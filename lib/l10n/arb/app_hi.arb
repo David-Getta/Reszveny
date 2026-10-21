@@ -743,5 +743,14 @@
   "eventDividendEstimate": "आपके दर्ज किए गए भुगतानों से अनुमानित",
   "labelYieldOnCost": "लागत पर यील्ड",
   "glossYieldOnCost": "पिछले 12 महीनों में प्राप्त डिविडेंड को उस रकम से भाग दिया जाता है जो आपने अभी भी रखे हुए शेयरों के लिए चुकाई थी। लाभांश यील्ड से अलग, इसे आज के भाव पर नहीं, बल्कि आपके अपने खरीद भाव पर मापा जाता है।",
-  "homeDividendsThisYear": "इस साल डिविडेंड: {amount}"
+  "homeDividendsThisYear": "इस साल डिविडेंड: {amount}",
+  "portfolioSplit": "स्टॉक स्प्लिट",
+  "portfolioSplitTitle": "स्टॉक स्प्लिट: {symbol}",
+  "portfolioSplitHint": "स्प्लिट से पहले की तारीख की खरीद और बिक्री समायोजित की जाती हैं: शेयरों की संख्या गुणा और प्रति शेयर कीमत भाग की जाती है, ताकि लागत वही रहे।",
+  "portfolioSplitRatio": "अनुपात (नए : पुराने)",
+  "portfolioSplitRatioError": "10:1 जैसा अनुपात दर्ज करें, या रिवर्स स्प्लिट के लिए 1:10।",
+  "portfolioSplitDate": "स्प्लिट की तारीख",
+  "portfolioSplitRow": "स्टॉक स्प्लिट {ratio}",
+  "portfolioSplitRemoved": "स्टॉक स्प्लिट हटाया गया",
+  "portfolioSplitsImported": "{count, plural, =1{1 स्टॉक स्प्लिट जोड़ा गया} other{{count} स्टॉक स्प्लिट जोड़े गए}}"
 }

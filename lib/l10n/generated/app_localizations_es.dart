@@ -2612,6 +2612,47 @@ class AppLocalizationsEs extends AppLocalizations {
       'Aún no hay dividendos registrados. Añádelos a mano o importa la exportación de tu bróker: sus filas de dividendos también se detectan.';
 
   @override
+  String get portfolioSplit => 'Split de acciones';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Split de acciones: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Las compras y ventas con fecha anterior al split se ajustan: el número de acciones se multiplica y el precio por acción se divide, de modo que el costo no cambia.';
+
+  @override
+  String get portfolioSplitRatio => 'Proporción (nuevas : antiguas)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Introduce una proporción como 10:1, o 1:10 para un split inverso.';
+
+  @override
+  String get portfolioSplitDate => 'Fecha del split';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Split de acciones $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Split de acciones eliminado';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count splits de acciones añadidos',
+      one: '1 split de acciones añadido',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

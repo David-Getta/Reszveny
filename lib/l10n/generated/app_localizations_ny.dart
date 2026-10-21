@@ -2614,6 +2614,47 @@ class AppLocalizationsNy extends AppLocalizations {
       'Palibe madividendi olembedwa pakali pano. Awonjezereni pamanja, kapena tengani fayilo ya export ya broker wanu – mizere yake ya madividendi imatengedwanso.';
 
   @override
+  String get portfolioSplit => 'Kugawa masheya';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Kugawa masheya: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Zogula ndi zogulitsa za masiku akale kuposa kugawako zimasinthidwa: chiwerengero cha masheya chimachulukitsidwa ndipo mtengo wa sheya imodzi umagawidwa, kotero mtengo wonse umakhalabe womwewo.';
+
+  @override
+  String get portfolioSplitRatio => 'Chiŵerengero (zatsopano : zakale)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Lembani chiŵerengero monga 10:1, kapena 1:10 pa kugawa kobwerera m\'mbuyo.';
+
+  @override
+  String get portfolioSplitDate => 'Tsiku logawa';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Kugawa masheya $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Kugawa masheya kwachotsedwa';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kugawa masheya $count kwawonjezedwa',
+      one: 'Kugawa masheya 1 kwawonjezedwa',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

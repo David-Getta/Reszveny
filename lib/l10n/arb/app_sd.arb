@@ -743,5 +743,14 @@
   "eventDividendEstimate": "توهان جي رڪارڊ ڪيل ادائگين مان اندازو",
   "labelYieldOnCost": "خريد قيمت تي ييلڊ",
   "glossYieldOnCost": "گذريل 12 مهينن ۾ وصول ٿيل ڊيويڊنڊ، ورهايل ان رقم سان جيڪا توهان انهن شيئرن لاءِ ادا ڪئي جيڪي اڃا توهان وٽ آهن. ڊيويڊنڊ ييلڊ جي ابتڙ، اهو اڄ جي قيمت تي نه، پر توهان جي پنهنجي خريد قيمت تي ماپيو ويندو آهي.",
-  "homeDividendsThisYear": "هن سال ڊيويڊنڊ: {amount}"
+  "homeDividendsThisYear": "هن سال ڊيويڊنڊ: {amount}",
+  "portfolioSplit": "حصن جي ورهاست",
+  "portfolioSplitTitle": "حصن جي ورهاست: {symbol}",
+  "portfolioSplitHint": "ورهاست کان اڳ جي تاريخ وارين خريدارين ۽ وڪرن کي درست ڪيو ويندو آهي: حصن جو تعداد ضرب ۽ في حصو قيمت ورهائي ويندي آهي، تنهنڪري لاگت ساڳي رهي ٿي.",
+  "portfolioSplitRatio": "تناسب (نوان : پراڻا)",
+  "portfolioSplitRatioError": "10:1 جهڙو تناسب داخل ڪريو، يا ريورس اسپلٽ لاءِ 1:10.",
+  "portfolioSplitDate": "ورهاست جي تاريخ",
+  "portfolioSplitRow": "حصن جي ورهاست {ratio}",
+  "portfolioSplitRemoved": "حصن جي ورهاست ڊاهي وئي",
+  "portfolioSplitsImported": "{count, plural, =1{1 حصن جي ورهاست شامل ڪئي وئي} other{{count} حصن جون ورهاستون شامل ڪيون ويون}}"
 }

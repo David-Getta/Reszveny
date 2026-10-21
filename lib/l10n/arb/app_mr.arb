@@ -743,5 +743,14 @@
   "eventDividendEstimate": "तुम्ही नोंदवलेल्या पेमेंटवरून अंदाजित",
   "labelYieldOnCost": "खरेदी किंमतीवरील उत्पन्न",
   "glossYieldOnCost": "गेल्या १२ महिन्यांत मिळालेला लाभांश भागिले तुमच्याकडे अजून असलेल्या शेअर्ससाठी तुम्ही भरलेली रक्कम. लाभांश उत्पन्नाच्या उलट, हे आजच्या भावावर नव्हे, तर तुमच्या स्वतःच्या खरेदी किंमतीवर मोजले जाते.",
-  "homeDividendsThisYear": "या वर्षीचा लाभांश: {amount}"
+  "homeDividendsThisYear": "या वर्षीचा लाभांश: {amount}",
+  "portfolioSplit": "स्टॉक स्प्लिट",
+  "portfolioSplitTitle": "स्टॉक स्प्लिट: {symbol}",
+  "portfolioSplitHint": "स्प्लिटपूर्वीच्या तारखेच्या खरेदी व विक्री समायोजित केल्या जातात: शेअर्सची संख्या गुणली जाते आणि प्रति शेअर किंमत भागली जाते, त्यामुळे खर्च तोच राहतो.",
+  "portfolioSplitRatio": "प्रमाण (नवीन : जुने)",
+  "portfolioSplitRatioError": "10:1 सारखे प्रमाण टाका, किंवा रिव्हर्स स्प्लिटसाठी 1:10.",
+  "portfolioSplitDate": "स्प्लिटची तारीख",
+  "portfolioSplitRow": "स्टॉक स्प्लिट {ratio}",
+  "portfolioSplitRemoved": "स्टॉक स्प्लिट हटवला",
+  "portfolioSplitsImported": "{count, plural, =1{1 स्टॉक स्प्लिट जोडला} other{{count} स्टॉक स्प्लिट जोडले}}"
 }

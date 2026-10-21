@@ -848,6 +848,8 @@ void main() {
       date: DateTime(2026, 9, 2),
       sell: true,
     );
+    // Egy régebbi felaprózás sora is látszik a lapon (a tételek előtti: a számok nem változnak).
+    await portfolio.addSplit(symbol: 'AAPL', from: 1, to: 4, date: DateTime(2020, 8, 31));
     final s = _services(locale: const Locale('hu'), portfolio: portfolio, currency: 'HUF');
     await pumpApp(tester, s, const Size(430, 1000));
     await tester.tap(find.text('Portfólió').last);

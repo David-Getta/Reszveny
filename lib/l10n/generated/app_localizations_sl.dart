@@ -2676,6 +2676,47 @@ class AppLocalizationsSl extends AppLocalizations {
       'Ni še zabeleženih dividend. Dodajte jih ročno ali uvozite izvoz svojega borznega posrednika – prevzete bodo tudi vrstice z dividendami.';
 
   @override
+  String get portfolioSplit => 'Delitev delnic';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Delitev delnic: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Nakupi in prodaje z datumom pred delitvijo se prilagodijo: število delnic se pomnoži, cena na delnico pa deli, tako da strošek ostane enak.';
+
+  @override
+  String get portfolioSplitRatio => 'Razmerje (nove : stare)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Vnesite razmerje, kot je 10:1, ali 1:10 za obratno delitev (združitev).';
+
+  @override
+  String get portfolioSplitDate => 'Datum delitve';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Delitev delnic $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Delitev delnic je izbrisana';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Dodane delitve delnic: $count',
+      one: 'Dodana 1 delitev delnic',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

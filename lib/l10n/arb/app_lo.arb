@@ -743,5 +743,14 @@
   "eventDividendEstimate": "ຄາດຄະເນຈາກການຈ່າຍທີ່ທ່ານບັນທຶກໄວ້",
   "labelYieldOnCost": "ຜົນຕອບແທນຕໍ່ຕົ້ນທຶນ",
   "glossYieldOnCost": "ເງິນປັນຜົນທີ່ໄດ້ຮັບໃນ 12 ເດືອນຫຼ້າສຸດ ຫານດ້ວຍເງິນທີ່ທ່ານຈ່າຍໄປສຳລັບຮຸ້ນທີ່ທ່ານຍັງຖືຢູ່. ຕ່າງຈາກອັດຕາຜົນຕອບແທນເງິນປັນຜົນ, ມັນຖືກວັດແທກຕາມລາຄາຊື້ຂອງທ່ານເອງ, ບໍ່ແມ່ນລາຄາມື້ນີ້.",
-  "homeDividendsThisYear": "ເງິນປັນຜົນປີນີ້: {amount}"
+  "homeDividendsThisYear": "ເງິນປັນຜົນປີນີ້: {amount}",
+  "portfolioSplit": "ການແບ່ງຫຸ້ນ",
+  "portfolioSplitTitle": "ການແບ່ງຫຸ້ນ: {symbol}",
+  "portfolioSplitHint": "ການຊື້ ແລະ ການຂາຍທີ່ມີວັນທີກ່ອນການແບ່ງຈະຖືກປັບ: ຈຳນວນຫຸ້ນຈະຖືກຄູນ ແລະ ລາຄາຕໍ່ຫຸ້ນຈະຖືກຫານ ດັ່ງນັ້ນຕົ້ນທຶນຈຶ່ງຄົງເດິມ.",
+  "portfolioSplitRatio": "ອັດຕາສ່ວນ (ໃໝ່ : ເກົ່າ)",
+  "portfolioSplitRatioError": "ປ້ອນອັດຕາສ່ວນເຊັ່ນ 10:1 ຫຼື 1:10 ສຳລັບການລວມຫຸ້ນ.",
+  "portfolioSplitDate": "ວັນທີແບ່ງຫຸ້ນ",
+  "portfolioSplitRow": "ການແບ່ງຫຸ້ນ {ratio}",
+  "portfolioSplitRemoved": "ລຶບການແບ່ງຫຸ້ນແລ້ວ",
+  "portfolioSplitsImported": "{count, plural, =1{ເພີ່ມການແບ່ງຫຸ້ນ 1 ຄັ້ງແລ້ວ} other{ເພີ່ມການແບ່ງຫຸ້ນ {count} ຄັ້ງແລ້ວ}}"
 }

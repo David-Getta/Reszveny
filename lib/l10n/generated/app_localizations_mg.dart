@@ -2625,6 +2625,47 @@ class AppLocalizationsMg extends AppLocalizations {
       'Mbola tsy misy dividandy voarakitra. Ampio tanana izy ireo, na ampidiro ny fanondranana avy amin\'ny broker-nao – raisina koa ny andalana dividandy ao anatiny.';
 
   @override
+  String get portfolioSplit => 'Fizarana anjara';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Fizarana anjara: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Ahitsy ny fividianana sy ny fivarotana natao talohan\'ny fizarana: ampitomboina ny isan\'ny anjara ary zaraina ny vidin\'ny anjara tsirairay, ka tsy miova ny vidiny.';
+
+  @override
+  String get portfolioSplitRatio => 'Tahan\'ny fizarana (vaovao : taloha)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Ampidiro tahan\'ny fizarana toy ny 10:1, na 1:10 ho an\'ny fizarana mivadika.';
+
+  @override
+  String get portfolioSplitDate => 'Datin\'ny fizarana';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Fizarana anjara $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Voafafa ny fizarana anjara';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Fizarana anjara $count nampiana',
+      one: 'Fizarana anjara 1 nampiana',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

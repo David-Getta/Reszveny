@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Qillqasqayki pagokunamanta yupasqa",
   "labelYieldOnCost": "Rantisqa chaninpi rendimiento",
   "glossYieldOnCost": "Qhipa 12 killakunapi chaskisqa dividendokuna, kunankama hap'isqayki accionkunapaq pagasqaykiwan rakisqa. Dividendopa rendimientonmanta hukniraq, kayqa kikiykipa rantisqa chaninwan tupachisqa, manam kunan chaninwanchu.",
-  "homeDividendsThisYear": "Kay wata dividendokuna: {amount}"
+  "homeDividendsThisYear": "Kay wata dividendokuna: {amount}",
+  "portfolioSplit": "Akcionkuna rakiy",
+  "portfolioSplitTitle": "Akcionkuna rakiy: {symbol}",
+  "portfolioSplitHint": "Rakiy ñawpaq p'unchawniyuq rantiykuna vendeykunapas allichakun: akcionkunapa yupaynin miraykachisqa, sapa akcionpa chaninnin rakisqa, chaymi qullqi gastu kikillan kakun.",
+  "portfolioSplitRatio": "Tupanachiy (musuq : ñawpa)",
+  "portfolioSplitRatioError": "10:1 hina tupanachiyta qillqay, utaq 1:10 kutichiq rakiypaq.",
+  "portfolioSplitDate": "Rakiypa p'unchawnin",
+  "portfolioSplitRow": "Akcionkuna rakiy {ratio}",
+  "portfolioSplitRemoved": "Akcionkuna rakiy qullusqa",
+  "portfolioSplitsImported": "{count, plural, =1{1 akcionkuna rakiy yapasqa} other{{count} akcionkuna rakiykuna yapasqa}}"
 }

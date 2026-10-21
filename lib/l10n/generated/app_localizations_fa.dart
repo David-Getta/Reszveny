@@ -2602,6 +2602,47 @@ class AppLocalizationsFa extends AppLocalizations {
       'هنوز سود سهامی ثبت نشده است. آن را دستی اضافه کنید یا فایل خروجی کارگزارتان را وارد کنید – ردیف‌های سود سهام آن هم برداشته می‌شوند.';
 
   @override
+  String get portfolioSplit => 'تجزیه سهام';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'تجزیه سهام: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'خریدها و فروش‌های با تاریخ پیش از تجزیه تعدیل می‌شوند: تعداد سهام ضرب و قیمت هر سهم تقسیم می‌شود، بنابراین هزینه تغییر نمی‌کند.';
+
+  @override
+  String get portfolioSplitRatio => 'نسبت (جدید : قدیم)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'نسبتی مانند 10:1 وارد کنید، یا 1:10 برای تجزیه معکوس.';
+
+  @override
+  String get portfolioSplitDate => 'تاریخ تجزیه';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'تجزیه سهام $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'تجزیه سهام حذف شد';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count تجزیه سهام اضافه شد',
+      one: '1 تجزیه سهام اضافه شد',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

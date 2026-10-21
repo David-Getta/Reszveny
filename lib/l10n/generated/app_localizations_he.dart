@@ -2598,6 +2598,47 @@ class AppLocalizationsHe extends AppLocalizations {
       'עדיין לא נרשמו דיבידנדים. אפשר להוסיף אותם ידנית או לייבא את קובץ הייצוא של הברוקר – גם שורות הדיבידנד שבו נקלטות.';
 
   @override
+  String get portfolioSplit => 'פיצול מניות';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'פיצול מניות: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'קניות ומכירות שתאריכן לפני הפיצול מותאמות: מספר המניות מוכפל והמחיר למניה מחולק, כך שהעלות נשארת זהה.';
+
+  @override
+  String get portfolioSplitRatio => 'יחס (חדש : ישן)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'יש להזין יחס כמו 10:1, או 1:10 לפיצול הפוך (איחוד מניות).';
+
+  @override
+  String get portfolioSplitDate => 'תאריך הפיצול';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'פיצול מניות $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'פיצול המניות נמחק';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'נוספו $count פיצולי מניות',
+      one: 'נוסף פיצול מניות אחד',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

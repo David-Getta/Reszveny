@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Geskat uit jou aangetekende betalings",
   "labelYieldOnCost": "Opbrengs op koste",
   "glossYieldOnCost": "Dividende ontvang in die laaste 12 maande, gedeel deur wat jy betaal het vir die aandele wat jy nog hou. Anders as die dividendopbrengs word dit teen jou eie aankoopprys gemeet, nie vandag se prys nie.",
-  "homeDividendsThisYear": "Dividende vanjaar: {amount}"
+  "homeDividendsThisYear": "Dividende vanjaar: {amount}",
+  "portfolioSplit": "Aandelesplitsing",
+  "portfolioSplitTitle": "Aandelesplitsing: {symbol}",
+  "portfolioSplitHint": "Aankope en verkope wat voor die splitsing gedateer is, word aangepas: die aantal aandele word vermenigvuldig en die prys per aandeel gedeel, sodat die koste dieselfde bly.",
+  "portfolioSplitRatio": "Verhouding (nuut : oud)",
+  "portfolioSplitRatioError": "Voer 'n verhouding soos 10:1 in, of 1:10 vir 'n omgekeerde splitsing.",
+  "portfolioSplitDate": "Datum van die splitsing",
+  "portfolioSplitRow": "Aandelesplitsing {ratio}",
+  "portfolioSplitRemoved": "Aandelesplitsing uitgevee",
+  "portfolioSplitsImported": "{count, plural, =1{1 aandelesplitsing bygevoeg} other{{count} aandelesplitsings bygevoeg}}"
 }

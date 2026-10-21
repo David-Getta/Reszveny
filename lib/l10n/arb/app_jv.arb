@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Diperkirakan saka pembayaran sing kokcathet",
   "labelYieldOnCost": "Imbal hasil saka rega tuku",
   "glossYieldOnCost": "Dividen sing ditampa sajrone 12 sasi pungkasan dibagi karo sing wis sampeyan bayar kanggo saham sing isih sampeyan duweni. Beda karo imbal hasil dividen, iki diukur saka rega tuku sampeyan dhewe, dudu rega saiki.",
-  "homeDividendsThisYear": "Dividen taun iki: {amount}"
+  "homeDividendsThisYear": "Dividen taun iki: {amount}",
+  "portfolioSplit": "Pamecahan saham",
+  "portfolioSplitTitle": "Pamecahan saham: {symbol}",
+  "portfolioSplitHint": "Tuku lan adol sing tanggale sadurunge pamecahan diatur maneh: cacahe saham dipingake lan rega saben saham dibagi, dadi ragade tetep padha.",
+  "portfolioSplitRatio": "Rasio (anyar : lawas)",
+  "portfolioSplitRatioError": "Lebokna rasio kaya 10:1, utawa 1:10 kanggo reverse split.",
+  "portfolioSplitDate": "Tanggal pamecahan",
+  "portfolioSplitRow": "Pamecahan saham {ratio}",
+  "portfolioSplitRemoved": "Pamecahan saham wis dibusak",
+  "portfolioSplitsImported": "{count, plural, =1{1 pamecahan saham ditambahake} other{{count} pamecahan saham ditambahake}}"
 }

@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Etangami na ba futa oyo okomaki",
   "labelYieldOnCost": "Rendement na ntalo ya kosomba",
   "glossYieldOnCost": "Ba dividende oyo ozwaki na basanza 12 ya suka, ekabwani na mbɔngɔ oyo ofutaki mpo na ba action oyo ozali naino na yango. Ekeseni na rendement ya dividende: etalelamaka na ntalo oyo yo osombaki, kasi na ntalo ya lelo te.",
-  "homeDividendsThisYear": "Ba dividende ya mbula oyo: {amount}"
+  "homeDividendsThisYear": "Ba dividende ya mbula oyo: {amount}",
+  "portfolioSplit": "Bokabolami ya ba share",
+  "portfolioSplitTitle": "Bokabolami ya ba share: {symbol}",
+  "portfolioSplitHint": "Kosomba mpe koteka oyo esalemaki liboso ya bokabolami ebongisami: motango ya ba share ebakisami mpe ntalo ya share moko ekabolami, yango wana mbongo oyo ofutaki ebongwani te.",
+  "portfolioSplitRatio": "Emekeli (ya sika : ya kala)",
+  "portfolioSplitRatioError": "Koma emekeli lokola 10:1, to 1:10 mpo na bokabolami ya kozongisa.",
+  "portfolioSplitDate": "Mokolo ya bokabolami",
+  "portfolioSplitRow": "Bokabolami ya ba share {ratio}",
+  "portfolioSplitRemoved": "Bokabolami ya ba share elongolami",
+  "portfolioSplitsImported": "{count, plural, =1{Bokabolami ya ba share 1 ebakisami} other{Bokabolami ya ba share {count} ebakisami}}"
 }

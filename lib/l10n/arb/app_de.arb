@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Geschätzt aus deinen erfassten Zahlungen",
   "labelYieldOnCost": "Rendite auf Kaufpreis",
   "glossYieldOnCost": "Die in den letzten 12 Monaten erhaltenen Dividenden geteilt durch das, was du für die noch gehaltenen Aktien bezahlt hast. Anders als die Dividendenrendite wird sie an deinem eigenen Kaufpreis gemessen, nicht am heutigen Kurs.",
-  "homeDividendsThisYear": "Dividenden dieses Jahr: {amount}"
+  "homeDividendsThisYear": "Dividenden dieses Jahr: {amount}",
+  "portfolioSplit": "Aktiensplit",
+  "portfolioSplitTitle": "Aktiensplit: {symbol}",
+  "portfolioSplitHint": "Käufe und Verkäufe mit Datum vor dem Split werden angepasst: Die Stückzahl wird multipliziert und der Preis je Aktie dividiert, sodass die Kosten gleich bleiben.",
+  "portfolioSplitRatio": "Verhältnis (neu : alt)",
+  "portfolioSplitRatioError": "Gib ein Verhältnis wie 10:1 ein, oder 1:10 für einen Reverse Split.",
+  "portfolioSplitDate": "Datum des Splits",
+  "portfolioSplitRow": "Aktiensplit {ratio}",
+  "portfolioSplitRemoved": "Aktiensplit gelöscht",
+  "portfolioSplitsImported": "{count, plural, =1{1 Aktiensplit hinzugefügt} other{{count} Aktiensplits hinzugefügt}}"
 }

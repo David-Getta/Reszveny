@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Ñu xayma ko ci fey yi nga bind",
   "labelYieldOnCost": "Njureef ci njëgu jënd",
   "glossYieldOnCost": "Dividande yi nga jot ci 12 weer yi mujj, xaaj ko ci li nga fey ci aksiyoŋ yi nga am ba tey. Wuute ak njureefu dividand, dañu koy natt ci njëg bi nga jënde boppu, du njëgu tey.",
-  "homeDividendsThisYear": "Dividande at mii: {amount}"
+  "homeDividendsThisYear": "Dividande at mii: {amount}",
+  "portfolioSplit": "Xaaj aksiyoŋ yi",
+  "portfolioSplitTitle": "Xaaj aksiyoŋ yi: {symbol}",
+  "portfolioSplitHint": "Jënd ak jaay yi am bés bu jiitu xaaj bi dañu leen di jubbanti: limu aksiyoŋ yi dañu koy yokk, njëgu benn aksiyoŋ dañu koy xaaj, kon njëg bi du soppiku.",
+  "portfolioSplitRatio": "Natt (bu bees : bu màggat)",
+  "portfolioSplitRatioError": "Bindal natt bu mel ni 10:1, walla 1:10 ngir xaaj bu dellu ginnaaw.",
+  "portfolioSplitDate": "Bésu xaaj bi",
+  "portfolioSplitRow": "Xaaj aksiyoŋ yi {ratio}",
+  "portfolioSplitRemoved": "Xaaj aksiyoŋ yi dañu ko far",
+  "portfolioSplitsImported": "{count, plural, =1{Yokk nañu 1 xaaj aksiyoŋ} other{Yokk nañu {count} xaaj aksiyoŋ}}"
 }

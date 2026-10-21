@@ -743,5 +743,14 @@
   "eventDividendEstimate": "הערכה לפי התשלומים שרשמתם",
   "labelYieldOnCost": "תשואה על העלות",
   "glossYieldOnCost": "דיבידנדים שהתקבלו ב-12 החודשים האחרונים חלקי מה ששילמת על המניות שעדיין ברשותך. בניגוד לתשואת הדיבידנד, היא נמדדת ביחס למחיר הקנייה שלך ולא למחיר של היום.",
-  "homeDividendsThisYear": "דיבידנדים השנה: {amount}"
+  "homeDividendsThisYear": "דיבידנדים השנה: {amount}",
+  "portfolioSplit": "פיצול מניות",
+  "portfolioSplitTitle": "פיצול מניות: {symbol}",
+  "portfolioSplitHint": "קניות ומכירות שתאריכן לפני הפיצול מותאמות: מספר המניות מוכפל והמחיר למניה מחולק, כך שהעלות נשארת זהה.",
+  "portfolioSplitRatio": "יחס (חדש : ישן)",
+  "portfolioSplitRatioError": "יש להזין יחס כמו 10:1, או 1:10 לפיצול הפוך (איחוד מניות).",
+  "portfolioSplitDate": "תאריך הפיצול",
+  "portfolioSplitRow": "פיצול מניות {ratio}",
+  "portfolioSplitRemoved": "פיצול המניות נמחק",
+  "portfolioSplitsImported": "{count, plural, =1{נוסף פיצול מניות אחד} other{נוספו {count} פיצולי מניות}}"
 }

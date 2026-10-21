@@ -743,5 +743,14 @@
   "eventDividendEstimate": "根据您记录的派息估算",
   "labelYieldOnCost": "成本股息率",
   "glossYieldOnCost": "最近12个月收到的股息，除以您为仍持有的股份所支付的金额。与股息率不同，它以您自己的买入价而非当前价格为基准。",
-  "homeDividendsThisYear": "今年股息：{amount}"
+  "homeDividendsThisYear": "今年股息：{amount}",
+  "portfolioSplit": "股票拆分",
+  "portfolioSplitTitle": "股票拆分：{symbol}",
+  "portfolioSplitHint": "拆分日期之前的买入和卖出将被调整：股数相乘、每股价格相除，因此成本保持不变。",
+  "portfolioSplitRatio": "比例（新 : 旧）",
+  "portfolioSplitRatioError": "请输入比例，例如 10:1；反向拆分（合股）则输入 1:10。",
+  "portfolioSplitDate": "拆分日期",
+  "portfolioSplitRow": "股票拆分 {ratio}",
+  "portfolioSplitRemoved": "已删除股票拆分",
+  "portfolioSplitsImported": "{count, plural, =1{已添加 1 项股票拆分} other{已添加 {count} 项股票拆分}}"
 }

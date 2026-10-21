@@ -2610,6 +2610,47 @@ class AppLocalizationsUg extends AppLocalizations {
       'تېخى دىۋىدېند خاتىرىلەنمىدى. قولدا قوشۇڭ ياكى دەللالىڭىزنىڭ ئېكسپورت ھۆججىتىنى ئىمپورت قىلىڭ – ئۇنىڭدىكى دىۋىدېند قۇرلىرىمۇ ئېلىنىدۇ.';
 
   @override
+  String get portfolioSplit => 'پاي بۆلۈش';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'پاي بۆلۈش: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'بۆلۈشتىن بۇرۇنقى چېسلادىكى سېتىۋېلىش ۋە سېتىشلار تەڭشىلىدۇ: پاي سانى كۆپەيتىلىدۇ، ھەر پاينىڭ باھاسى بۆلۈنىدۇ، شۇڭا تەننەرخ ئۆزگەرمەيدۇ.';
+
+  @override
+  String get portfolioSplitRatio => 'نىسبەت (يېڭى : كونا)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      '10:1 دەك نىسبەت كىرگۈزۈڭ، ياكى تەتۈر بۆلۈش ئۈچۈن 1:10.';
+
+  @override
+  String get portfolioSplitDate => 'بۆلۈش چېسلاسى';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'پاي بۆلۈش $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'پاي بۆلۈش ئۆچۈرۈلدى';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count پاي بۆلۈش قوشۇلدى',
+      one: '1 پاي بۆلۈش قوشۇلدى',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

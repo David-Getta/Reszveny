@@ -2624,6 +2624,47 @@ class AppLocalizationsTs extends AppLocalizations {
       'A ku na tidividende leti tsariweke ku fikela sweswi. Ti engetele hi voko, kumbe u nghenisa fayili ya export ya broker wa wena – mitila ya yona ya tidividende na yona ya tekiwa.';
 
   @override
+  String get portfolioSplit => 'Ku avanyisiwa ka tishere';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Ku avanyisiwa ka tishere: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Ku xava ni ku xavisa loku nga ni siku ra le mahlweni ka ku avanyisiwa ku lulamisiwa: nhlayo ya tishere yi andzisiwa naswona nxavo wa shere yin\'we wu avanyisiwa, leswaku ntsengo wu tshama wu fana.';
+
+  @override
+  String get portfolioSplitRatio => 'Mpimo (leswintshwa : leswa khale)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Nghenisa mpimo wo fana na 10:1, kumbe 1:10 eka ku avanyisiwa ko tlhelela endzhaku.';
+
+  @override
+  String get portfolioSplitDate => 'Siku ra ku avanyisiwa';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Ku avanyisiwa ka tishere $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Ku avanyisiwa ka tishere ku susiwile';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ku avanyisiwa ka tishere $count ku engeteriwile',
+      one: 'Ku avanyisiwa ka tishere 1 ku engeteriwile',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

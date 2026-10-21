@@ -2605,6 +2605,47 @@ class AppLocalizationsBn extends AppLocalizations {
       'এখনও কোনো ডিভিডেন্ড নথিভুক্ত হয়নি। হাতে যোগ করুন, বা আপনার ব্রোকারের এক্সপোর্ট ইম্পোর্ট করুন – এর ডিভিডেন্ডের সারিগুলোও নেওয়া হয়।';
 
   @override
+  String get portfolioSplit => 'স্টক স্প্লিট';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'স্টক স্প্লিট: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'স্প্লিটের আগের তারিখের কেনা-বেচা সমন্বয় করা হয়: শেয়ারের সংখ্যা গুণ করা হয় এবং প্রতি শেয়ারের দাম ভাগ করা হয়, তাই মোট খরচ একই থাকে।';
+
+  @override
+  String get portfolioSplitRatio => 'অনুপাত (নতুন : পুরনো)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      '10:1 এর মতো একটি অনুপাত লিখুন, বা রিভার্স স্প্লিটের জন্য 1:10।';
+
+  @override
+  String get portfolioSplitDate => 'স্প্লিটের তারিখ';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'স্টক স্প্লিট $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'স্টক স্প্লিট মুছে ফেলা হয়েছে';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countটি স্টক স্প্লিট যোগ করা হয়েছে',
+      one: '1টি স্টক স্প্লিট যোগ করা হয়েছে',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

@@ -2611,6 +2611,47 @@ class AppLocalizationsHa extends AppLocalizations {
       'Ba a rubuta wani rabon riba ba tukuna. Ƙara da hannu, ko shigo da fitarwar dillalinka – layukan rabon riba na ciki ma ana ɗaukarsu.';
 
   @override
+  String get portfolioSplit => 'Rabon hannun jari';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Rabon hannun jari: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Ana gyara sayayya da sayarwa da aka yi kafin ranar rabon: ana ninka adadin hannun jari kuma ana raba farashin kowane hannun jari, don haka kuɗin da aka kashe ba ya canzawa.';
+
+  @override
+  String get portfolioSplitRatio => 'Rabo (sabo : tsoho)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Shigar da rabo kamar 10:1, ko 1:10 don rabon akasi.';
+
+  @override
+  String get portfolioSplitDate => 'Ranar rabon';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Rabon hannun jari $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'An goge rabon hannun jari';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'An ƙara rabon hannun jari $count',
+      one: 'An ƙara rabon hannun jari 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

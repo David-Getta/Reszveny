@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Siz yozgan toʻlovlar asosida hisoblangan",
   "labelYieldOnCost": "Xarid narxiga daromadlilik",
   "glossYieldOnCost": "So'nggi 12 oyda olingan dividendlar hali ham saqlab turgan aksiyalaringiz uchun to'lagan summangizga bo'lingan. Dividend daromadliligidan farqli o'laroq, u bugungi narxga emas, o'zingizning xarid narxingizga nisbatan o'lchanadi.",
-  "homeDividendsThisYear": "Shu yilgi dividendlar: {amount}"
+  "homeDividendsThisYear": "Shu yilgi dividendlar: {amount}",
+  "portfolioSplit": "Aksiyalarni boʻlish",
+  "portfolioSplitTitle": "Aksiyalarni boʻlish: {symbol}",
+  "portfolioSplitHint": "Boʻlishdan oldingi sanadagi xaridlar va sotuvlar toʻgʻrilanadi: aksiyalar soni koʻpaytiriladi, bir aksiya narxi esa boʻlinadi, shuning uchun xarajat oʻzgarmaydi.",
+  "portfolioSplitRatio": "Nisbat (yangi : eski)",
+  "portfolioSplitRatioError": "10:1 kabi nisbat kiriting, yoki teskari boʻlish uchun 1:10.",
+  "portfolioSplitDate": "Boʻlish sanasi",
+  "portfolioSplitRow": "Aksiyalarni boʻlish {ratio}",
+  "portfolioSplitRemoved": "Aksiyalarni boʻlish oʻchirildi",
+  "portfolioSplitsImported": "{count, plural, =1{1 ta aksiya boʻlinishi qoʻshildi} other{{count} ta aksiya boʻlinishi qoʻshildi}}"
 }

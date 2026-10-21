@@ -2600,6 +2600,47 @@ class AppLocalizationsVi extends AppLocalizations {
       'Chưa có cổ tức nào được ghi lại. Thêm thủ công hoặc nhập file xuất từ công ty chứng khoán của bạn – các dòng cổ tức trong đó cũng được nhận diện.';
 
   @override
+  String get portfolioSplit => 'Chia tách cổ phiếu';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Chia tách cổ phiếu: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Các giao dịch mua và bán có ngày trước đợt chia tách sẽ được điều chỉnh: số cổ phiếu được nhân lên và giá mỗi cổ phiếu được chia xuống, nên giá vốn không thay đổi.';
+
+  @override
+  String get portfolioSplitRatio => 'Tỷ lệ (mới : cũ)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Nhập tỷ lệ như 10:1, hoặc 1:10 cho chia tách ngược (gộp cổ phiếu).';
+
+  @override
+  String get portfolioSplitDate => 'Ngày chia tách';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Chia tách cổ phiếu $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Đã xóa chia tách cổ phiếu';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Đã thêm $count đợt chia tách cổ phiếu',
+      one: 'Đã thêm 1 đợt chia tách cổ phiếu',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

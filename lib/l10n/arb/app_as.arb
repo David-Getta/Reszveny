@@ -743,5 +743,14 @@
   "eventDividendEstimate": "আপোনাৰ লিপিবদ্ধ পৰিশোধৰ পৰা অনুমানিত",
   "labelYieldOnCost": "খৰচৰ ওপৰত ইল্ড",
   "glossYieldOnCost": "যোৱা ১২ মাহত পোৱা লভ্যাংশক আপুনি এতিয়াও ৰখা শ্বেয়াৰৰ বাবে দিয়া মূল্যৰে হৰণ কৰা। লভ্যাংশ ইল্ডৰ দৰে নহয়, ইয়াক আজিৰ মূল্যৰ পৰিবৰ্তে আপোনাৰ নিজৰ ক্ৰয় মূল্যৰ ওপৰত জোখা হয়।",
-  "homeDividendsThisYear": "এই বছৰৰ লাভাংশ: {amount}"
+  "homeDividendsThisYear": "এই বছৰৰ লাভাংশ: {amount}",
+  "portfolioSplit": "ষ্টক বিভাজন",
+  "portfolioSplitTitle": "ষ্টক বিভাজন: {symbol}",
+  "portfolioSplitHint": "বিভাজনৰ আগৰ তাৰিখৰ ক্ৰয় আৰু বিক্ৰয়সমূহ সামঞ্জস্য কৰা হয়: শ্বেয়াৰৰ সংখ্যা পূৰণ কৰা হয় আৰু প্ৰতিটো শ্বেয়াৰৰ মূল্য হৰণ কৰা হয়, যাতে মুঠ ব্যয় একে থাকে।",
+  "portfolioSplitRatio": "অনুপাত (নতুন : পুৰণি)",
+  "portfolioSplitRatioError": "10:1 ৰ দৰে অনুপাত দিয়ক, বা বিপৰীত বিভাজনৰ বাবে 1:10।",
+  "portfolioSplitDate": "বিভাজনৰ তাৰিখ",
+  "portfolioSplitRow": "ষ্টক বিভাজন {ratio}",
+  "portfolioSplitRemoved": "ষ্টক বিভাজন মচি পেলোৱা হ'ল",
+  "portfolioSplitsImported": "{count, plural, =1{1 টা ষ্টক বিভাজন যোগ কৰা হ'ল} other{{count} টা ষ্টক বিভাজন যোগ কৰা হ'ল}}"
 }

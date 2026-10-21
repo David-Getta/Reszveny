@@ -743,5 +743,14 @@
   "eventDividendEstimate": "আপনার নথিভুক্ত পেমেন্ট থেকে আনুমানিক",
   "labelYieldOnCost": "খরচের ওপর ইল্ড",
   "glossYieldOnCost": "গত ১২ মাসে পাওয়া ডিভিডেন্ডকে আপনার এখনও ধরে রাখা শেয়ারের জন্য দেওয়া দামে ভাগ করা। ডিভিডেন্ড ইল্ডের মতো নয়, এটি আজকের দামের বদলে আপনার নিজের কেনার দামের ভিত্তিতে মাপা হয়।",
-  "homeDividendsThisYear": "এ বছরের ডিভিডেন্ড: {amount}"
+  "homeDividendsThisYear": "এ বছরের ডিভিডেন্ড: {amount}",
+  "portfolioSplit": "স্টক স্প্লিট",
+  "portfolioSplitTitle": "স্টক স্প্লিট: {symbol}",
+  "portfolioSplitHint": "স্প্লিটের আগের তারিখের কেনা-বেচা সমন্বয় করা হয়: শেয়ারের সংখ্যা গুণ করা হয় এবং প্রতি শেয়ারের দাম ভাগ করা হয়, তাই মোট খরচ একই থাকে।",
+  "portfolioSplitRatio": "অনুপাত (নতুন : পুরনো)",
+  "portfolioSplitRatioError": "10:1 এর মতো একটি অনুপাত লিখুন, বা রিভার্স স্প্লিটের জন্য 1:10।",
+  "portfolioSplitDate": "স্প্লিটের তারিখ",
+  "portfolioSplitRow": "স্টক স্প্লিট {ratio}",
+  "portfolioSplitRemoved": "স্টক স্প্লিট মুছে ফেলা হয়েছে",
+  "portfolioSplitsImported": "{count, plural, =1{1টি স্টক স্প্লিট যোগ করা হয়েছে} other{{count}টি স্টক স্প্লিট যোগ করা হয়েছে}}"
 }

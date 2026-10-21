@@ -2601,6 +2601,47 @@ class AppLocalizationsWo extends AppLocalizations {
       'Amul dividande bu ñu bind ba tey. Yokk leen ak sa loxo, walla nga indi export bu sa broker – ay rëdd dividande yu ci nekk itam dañu leen di jël.';
 
   @override
+  String get portfolioSplit => 'Xaaj aksiyoŋ yi';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Xaaj aksiyoŋ yi: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Jënd ak jaay yi am bés bu jiitu xaaj bi dañu leen di jubbanti: limu aksiyoŋ yi dañu koy yokk, njëgu benn aksiyoŋ dañu koy xaaj, kon njëg bi du soppiku.';
+
+  @override
+  String get portfolioSplitRatio => 'Natt (bu bees : bu màggat)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Bindal natt bu mel ni 10:1, walla 1:10 ngir xaaj bu dellu ginnaaw.';
+
+  @override
+  String get portfolioSplitDate => 'Bésu xaaj bi';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Xaaj aksiyoŋ yi $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Xaaj aksiyoŋ yi dañu ko far';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Yokk nañu $count xaaj aksiyoŋ',
+      one: 'Yokk nañu 1 xaaj aksiyoŋ',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

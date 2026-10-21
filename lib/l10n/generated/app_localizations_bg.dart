@@ -2607,6 +2607,47 @@ class AppLocalizationsBg extends AppLocalizations {
       'Още няма записани дивиденти. Добавете ги ръчно или импортирайте експорта от вашия брокер – редовете с дивиденти също се разпознават.';
 
   @override
+  String get portfolioSplit => 'Сплит на акции';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Сплит на акции: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Покупките и продажбите с дата преди сплита се коригират: броят на акциите се умножава, а цената за акция се дели, така че разходът остава същият.';
+
+  @override
+  String get portfolioSplitRatio => 'Съотношение (нови : стари)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Въведете съотношение като 10:1 или 1:10 за обратен сплит.';
+
+  @override
+  String get portfolioSplitDate => 'Дата на сплита';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Сплит на акции $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Сплитът на акции е изтрит';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Добавени са $count сплита на акции',
+      one: 'Добавен е 1 сплит на акции',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

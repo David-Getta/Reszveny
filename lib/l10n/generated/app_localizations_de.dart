@@ -2620,6 +2620,47 @@ class AppLocalizationsDe extends AppLocalizations {
       'Noch keine Dividenden erfasst. Trage sie von Hand ein oder importiere den Export deines Brokers – dessen Dividendenzeilen werden ebenfalls übernommen.';
 
   @override
+  String get portfolioSplit => 'Aktiensplit';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Aktiensplit: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Käufe und Verkäufe mit Datum vor dem Split werden angepasst: Die Stückzahl wird multipliziert und der Preis je Aktie dividiert, sodass die Kosten gleich bleiben.';
+
+  @override
+  String get portfolioSplitRatio => 'Verhältnis (neu : alt)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Gib ein Verhältnis wie 10:1 ein, oder 1:10 für einen Reverse Split.';
+
+  @override
+  String get portfolioSplitDate => 'Datum des Splits';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Aktiensplit $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Aktiensplit gelöscht';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Aktiensplits hinzugefügt',
+      one: '1 Aktiensplit hinzugefügt',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

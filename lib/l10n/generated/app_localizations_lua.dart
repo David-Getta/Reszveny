@@ -2613,6 +2613,48 @@ class AppLocalizationsLua extends AppLocalizations {
       'Kakuena dividende nansha umue mufunda too ne mpindieu. Sakidila yiyi ne bianza, anyi tuala export wa broker webe – milongo yende ya dividende idi yangata kabidi.';
 
   @override
+  String get portfolioSplit => 'Diabanya dia share';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Diabanya dia share: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Masumba ne mapana adi ne matuku kumpala kua diabanya adi alongolola: bungi bua share budi buvudija ne mushinga wa share umue udi wabanya, nunku mushinga wonso kawena ushintuluka.';
+
+  @override
+  String get portfolioSplitRatio =>
+      'Tshipiminu (tshipiatshipia : tshikulukulu)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Funda tshipiminu bu 10:1, anyi 1:10 bua diabanya dia kupingaja.';
+
+  @override
+  String get portfolioSplitDate => 'Dituku dia diabanya';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Diabanya dia share $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Diabanya dia share ndijimija';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Diabanya dia share $count ndisakidila',
+      one: 'Diabanya dia share 1 ndisakidila',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

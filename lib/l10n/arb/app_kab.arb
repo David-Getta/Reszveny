@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Yettwaḥseb seg lexlaṣat i tesekleseḍ",
   "labelYieldOnCost": "Afaris ɣef ssuma n tiɣin",
   "glossYieldOnCost": "Dividand i tṭṭfeḍ deg 12 n wayyuren ineggura, yebḍa ɣef wayen i txellṣeḍ ɣef yiksyunen i mazal ɣur-k. Mačči am ufaris n dividand: yettwaktal ɣef ssuma n tiɣin-ik, mačči ɣef ssuma n wass-a.",
-  "homeDividendsThisYear": "Dividendes aseggas-a: {amount}"
+  "homeDividendsThisYear": "Dividendes aseggas-a: {amount}",
+  "portfolioSplit": "Beṭṭu n yimuren",
+  "portfolioSplitTitle": "Beṭṭu n yimuren: {symbol}",
+  "portfolioSplitHint": "Tiɣin d tuzzniwin yesɛan azemz uqbel beṭṭu ttwaseggmen: amḍan n yimuren yettwakfel, ssuma n yal amur tettwabḍu, ihi ssuma tamatut teqqim akken tella.",
+  "portfolioSplitRatio": "Assaɣ (amaynut : aqbur)",
+  "portfolioSplitRatioError": "Sekcem assaɣ am 10:1, neɣ 1:10 i beṭṭu anmegli.",
+  "portfolioSplitDate": "Azemz n beṭṭu",
+  "portfolioSplitRow": "Beṭṭu n yimuren {ratio}",
+  "portfolioSplitRemoved": "Beṭṭu n yimuren yettwakkes",
+  "portfolioSplitsImported": "{count, plural, =1{Yettwarna 1 n beṭṭu n yimuren} other{Ttwarnan {count} n beṭṭu n yimuren}}"
 }

@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Nakarkulo manipud kadagiti nairekord a bayadmo",
   "labelYieldOnCost": "Yield iti gastos",
   "glossYieldOnCost": "Ti dibidendo a naawat iti napalabas a 12 a bulan a nabingay iti binayadam para kadagiti share a salsalimetmetam pay. Saan a kas iti dividend yield, marukod daytoy iti bukodmo a presio ti panaggatang, saan nga iti presio ita.",
-  "homeDividendsThisYear": "Dibidendo daytoy a tawen: {amount}"
+  "homeDividendsThisYear": "Dibidendo daytoy a tawen: {amount}",
+  "portfolioSplit": "Stock split",
+  "portfolioSplitTitle": "Stock split: {symbol}",
+  "portfolioSplitHint": "Mabalbaliwan dagiti panaggatang ken panaglako nga addaan petsa sakbay ti split: mapaadu ti bilang dagiti share ket mabingay ti presio ti tunggal share, isu nga agtalinaed ti gastos.",
+  "portfolioSplitRatio": "Ratio (baro : daan)",
+  "portfolioSplitRatioError": "Ikabil ti ratio a kas 10:1, wenno 1:10 para iti reverse split.",
+  "portfolioSplitDate": "Petsa ti split",
+  "portfolioSplitRow": "Stock split {ratio}",
+  "portfolioSplitRemoved": "Naikkat ti stock split",
+  "portfolioSplitsImported": "{count, plural, =1{1 stock split ti nainayon} other{{count} stock split ti nainayon}}"
 }

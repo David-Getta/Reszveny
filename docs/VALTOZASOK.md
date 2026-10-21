@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.169)
+# Változásjegyzék (0.2.130 → 0.2.171)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -25,6 +25,8 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - **Készpénz a brókernél** pénznemenként: az összértékbe és a megoszlásba számít, a hozamba nem; a cél-sávban,
   az újrasúlyozásban és az AI-elemzésben; csak készpénzzel is „él” a portfólió; fiókkal szinkronizálva,
   időbélyeggel (a törlés kétoldali összefésülésnél sem éled újra).
+- **Részvényfelaprózás** rögzítése a tranzakciós lapon (10:1 vagy 1:10 és a nap): a korábbi vételek és
+  eladások darabszáma és ára igazodik, a bekerülési érték marad; szinkronban, mentésben és a CSV-ben is.
 
 ## Kezdőképernyő és piacok
 

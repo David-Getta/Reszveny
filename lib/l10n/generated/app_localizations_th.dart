@@ -2576,6 +2576,47 @@ class AppLocalizationsTh extends AppLocalizations {
       'ยังไม่มีการบันทึกเงินปันผล เพิ่มด้วยตนเอง หรือนำเข้าไฟล์ส่งออกจากโบรกเกอร์ของคุณ ระบบจะดึงแถวเงินปันผลมาด้วย';
 
   @override
+  String get portfolioSplit => 'การแตกหุ้น';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'การแตกหุ้น: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'รายการซื้อและขายที่ลงวันที่ก่อนการแตกหุ้นจะถูกปรับ: จำนวนหุ้นจะถูกคูณและราคาต่อหุ้นจะถูกหาร ดังนั้นต้นทุนจะยังคงเท่าเดิม';
+
+  @override
+  String get portfolioSplitRatio => 'อัตราส่วน (ใหม่ : เดิม)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'กรอกอัตราส่วน เช่น 10:1 หรือ 1:10 สำหรับการรวมหุ้น (reverse split)';
+
+  @override
+  String get portfolioSplitDate => 'วันที่แตกหุ้น';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'การแตกหุ้น $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'ลบการแตกหุ้นแล้ว';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'เพิ่มการแตกหุ้น $count รายการแล้ว',
+      one: 'เพิ่มการแตกหุ้น 1 รายการแล้ว',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

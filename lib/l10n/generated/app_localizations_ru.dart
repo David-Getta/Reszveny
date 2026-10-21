@@ -2676,6 +2676,47 @@ class AppLocalizationsRu extends AppLocalizations {
       'Дивиденды пока не записаны. Добавьте их вручную или импортируйте выгрузку от брокера – строки с дивидендами тоже будут учтены.';
 
   @override
+  String get portfolioSplit => 'Сплит акций';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Сплит акций: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Покупки и продажи с датой до сплита корректируются: количество акций умножается, а цена за акцию делится, поэтому стоимость не меняется.';
+
+  @override
+  String get portfolioSplitRatio => 'Коэффициент (новые : старые)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Введите коэффициент, например 10:1, или 1:10 для обратного сплита (консолидации).';
+
+  @override
+  String get portfolioSplitDate => 'Дата сплита';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Сплит акций $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Сплит акций удалён';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Добавлено сплитов акций: $count',
+      one: 'Добавлен 1 сплит акций',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

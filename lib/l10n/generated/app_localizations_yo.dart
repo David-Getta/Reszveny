@@ -2605,6 +2605,47 @@ class AppLocalizationsYo extends AppLocalizations {
       'Kò sí ìpín èrè tí a kọ sílẹ̀ síbẹ̀. Fi wọ́n kún pẹ̀lú ọwọ́, tàbí kí o gbé fáìlì export broker rẹ wọlé – a ó mú àwọn ìlà ìpín èrè inú rẹ̀ pẹ̀lú.';
 
   @override
+  String get portfolioSplit => 'Pípín ìpín';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Pípín ìpín: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'A ó ṣàtúnṣe àwọn rírà àti títà tí ọjọ́ wọn ṣáájú pípín náà: a ó sọ iye ìpín di púpọ̀, a ó sì pín iye owó ìpín kọ̀ọ̀kan, nítorí náà iye owó tí a ná kò ní yí padà.';
+
+  @override
+  String get portfolioSplitRatio => 'Ìwọ̀n (tuntun : àtijọ́)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Tẹ ìwọ̀n bíi 10:1, tàbí 1:10 fún pípín yípadà.';
+
+  @override
+  String get portfolioSplitDate => 'Ọjọ́ pípín náà';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Pípín ìpín $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'A ti pa pípín ìpín rẹ́';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'A ti fi pípín ìpín $count kún un',
+      one: 'A ti fi pípín ìpín 1 kún un',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

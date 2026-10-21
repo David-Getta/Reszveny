@@ -2618,6 +2618,47 @@ class AppLocalizationsCeb extends AppLocalizations {
       'Wala pay narekord nga dibidendo. Idugang kini nga manwal, o i-import ang export sa imong broker – makuha usab ang mga linya sa dibidendo niini.';
 
   @override
+  String get portfolioSplit => 'Stock split';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Stock split: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Ang mga pagpalit ug pagbaligya nga may petsa sa wala pa ang split gi-adjust: ang gidaghanon sa mga share gipadaghan ug ang presyo matag share gibahin, aron magpabilin ang gasto.';
+
+  @override
+  String get portfolioSplitRatio => 'Ratio (bag-o : daan)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Isulod ang ratio sama sa 10:1, o 1:10 alang sa reverse split.';
+
+  @override
+  String get portfolioSplitDate => 'Petsa sa split';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Stock split $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Gipapas ang stock split';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count stock split ang gidugang',
+      one: '1 stock split ang gidugang',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

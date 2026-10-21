@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Dianggarkan daripada pembayaran yang anda rekodkan",
   "labelYieldOnCost": "Hasil atas kos",
   "glossYieldOnCost": "Dividen yang diterima dalam 12 bulan terakhir dibahagikan dengan jumlah yang anda bayar untuk saham yang masih anda pegang. Berbeza dengan hasil dividen, ia diukur berdasarkan harga belian anda sendiri, bukan harga hari ini.",
-  "homeDividendsThisYear": "Dividen tahun ini: {amount}"
+  "homeDividendsThisYear": "Dividen tahun ini: {amount}",
+  "portfolioSplit": "Pecahan saham",
+  "portfolioSplitTitle": "Pecahan saham: {symbol}",
+  "portfolioSplitHint": "Belian dan jualan yang bertarikh sebelum pecahan akan dilaraskan: bilangan saham didarab dan harga sesaham dibahagi, jadi kosnya kekal sama.",
+  "portfolioSplitRatio": "Nisbah (baharu : lama)",
+  "portfolioSplitRatioError": "Masukkan nisbah seperti 10:1, atau 1:10 untuk pecahan songsang.",
+  "portfolioSplitDate": "Tarikh pecahan",
+  "portfolioSplitRow": "Pecahan saham {ratio}",
+  "portfolioSplitRemoved": "Pecahan saham dipadamkan",
+  "portfolioSplitsImported": "{count, plural, =1{1 pecahan saham ditambah} other{{count} pecahan saham ditambah}}"
 }

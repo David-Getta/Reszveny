@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Odhad z vašich zaznamenaných výplat",
   "labelYieldOnCost": "Výnos k nákupní ceně",
   "glossYieldOnCost": "Dividendy přijaté za posledních 12 měsíců dělené tím, co jste zaplatili za akcie, které stále držíte. Na rozdíl od dividendového výnosu se měří vůči vaší vlastní nákupní ceně, ne vůči dnešní ceně.",
-  "homeDividendsThisYear": "Dividendy letos: {amount}"
+  "homeDividendsThisYear": "Dividendy letos: {amount}",
+  "portfolioSplit": "Štěpení akcií",
+  "portfolioSplitTitle": "Štěpení akcií: {symbol}",
+  "portfolioSplitHint": "Nákupy a prodeje s datem před štěpením se upraví: počet akcií se vynásobí a cena za akcii vydělí, takže náklady zůstanou stejné.",
+  "portfolioSplitRatio": "Poměr (nové : staré)",
+  "portfolioSplitRatioError": "Zadejte poměr jako 10:1, nebo 1:10 pro reverzní štěpení.",
+  "portfolioSplitDate": "Datum štěpení",
+  "portfolioSplitRow": "Štěpení akcií {ratio}",
+  "portfolioSplitRemoved": "Štěpení akcií smazáno",
+  "portfolioSplitsImported": "{count, plural, =1{Přidáno 1 štěpení akcií} other{Přidáno {count} štěpení akcií}}"
 }

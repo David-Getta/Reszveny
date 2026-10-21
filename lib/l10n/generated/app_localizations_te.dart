@@ -2613,6 +2613,47 @@ class AppLocalizationsTe extends AppLocalizations {
       'ఇంకా డివిడెండ్లు నమోదు కాలేదు. వాటిని మాన్యువల్‌గా జోడించండి, లేదా మీ బ్రోకర్ ఎక్స్‌పోర్ట్‌ను ఇంపోర్ట్ చేయండి – అందులోని డివిడెండ్ వరుసలు కూడా తీసుకోబడతాయి.';
 
   @override
+  String get portfolioSplit => 'స్టాక్ స్ప్లిట్';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'స్టాక్ స్ప్లిట్: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'స్ప్లిట్‌కు ముందు తేదీ ఉన్న కొనుగోళ్లు, అమ్మకాలు సర్దుబాటు చేయబడతాయి: షేర్ల సంఖ్యను గుణించి, ఒక్కో షేరు ధరను భాగిస్తారు, కాబట్టి వ్యయం అలాగే ఉంటుంది.';
+
+  @override
+  String get portfolioSplitRatio => 'నిష్పత్తి (కొత్త : పాత)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      '10:1 వంటి నిష్పత్తిని నమోదు చేయండి, లేదా రివర్స్ స్ప్లిట్ కోసం 1:10.';
+
+  @override
+  String get portfolioSplitDate => 'స్ప్లిట్ తేదీ';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'స్టాక్ స్ప్లిట్ $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'స్టాక్ స్ప్లిట్ తొలగించబడింది';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count స్టాక్ స్ప్లిట్‌లు జోడించబడ్డాయి',
+      one: '1 స్టాక్ స్ప్లిట్ జోడించబడింది',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

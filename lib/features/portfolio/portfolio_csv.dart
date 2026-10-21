@@ -4,8 +4,14 @@ import 'portfolio_store.dart';
 /// A portfólió tranzakciói CSV-ben (táblázatkezelőbe, másik appba):
 /// `symbol,quantity,price,currency,date,side`, ponttal mint tizedesjel; a `side`
 /// `buy` vagy `sell`. A kapott osztalékok `dividend` sorként, a teljes összeg a
-/// `price` oszlopban, darabszám nélkül – így a saját export vissza is olvasható.
-String portfolioCsv(List<PortfolioLot> lots, {List<DividendRecord> dividends = const []}) {
+/// `price` oszlopban, darabszám nélkül; a felaprózások `split` sorként, az új
+/// darab a `quantity`, a régi a `price` oszlopban – így a saját export vissza is
+/// olvasható.
+String portfolioCsv(
+  List<PortfolioLot> lots, {
+  List<DividendRecord> dividends = const [],
+  List<SplitRecord> splits = const [],
+}) {
   String n(double v) => v == v.roundToDouble() ? v.toStringAsFixed(0) : v.toString();
   final b = StringBuffer('symbol,quantity,price,currency,date,side\n');
   for (final l in lots) {
@@ -24,6 +30,9 @@ String portfolioCsv(List<PortfolioLot> lots, {List<DividendRecord> dividends = c
     b.writeln(
       [d.symbol, '', n(d.amount), d.currency, d.date?.toIso8601String().substring(0, 10) ?? '', 'dividend'].join(','),
     );
+  }
+  for (final s in splits) {
+    b.writeln([s.symbol, s.to, s.from, '', s.date.toIso8601String().substring(0, 10), 'split'].join(','));
   }
   return b.toString();
 }
@@ -104,13 +113,32 @@ class ImportedDividend {
   final DateTime? date;
 }
 
-/// A beolvasás eredménye: a jó sorok, a kapott osztalékok és a kihagyottak száma.
+/// Egy beolvasott felaprózás-sor (saját exportból).
+class ImportedSplit {
+  const ImportedSplit({required this.symbol, required this.from, required this.to, required this.date});
+
+  final String symbol;
+  final int from;
+  final int to;
+  final DateTime date;
+}
+
+/// A beolvasás eredménye: a jó sorok, a kapott osztalékok, a felaprózások és a kihagyottak száma.
 class CsvImport {
-  const CsvImport(this.lots, this.skipped, {this.dividends = const []});
+  const CsvImport(this.lots, this.skipped, {this.dividends = const [], this.splits = const []});
 
   final List<ImportedLot> lots;
   final List<ImportedDividend> dividends;
+  final List<ImportedSplit> splits;
   final int skipped;
+}
+
+/// Saját export `split` sora: az új darab a darabszám, a régi az ár oszlopában, dátummal.
+ImportedSplit? _split(String symbol, String to, String from, String date) {
+  final t = int.tryParse(to.trim()), f = int.tryParse(from.trim());
+  final d = _date(date);
+  if (!_symbol.hasMatch(symbol) || t == null || f == null || t < 1 || f < 1 || t == f || d == null) return null;
+  return ImportedSplit(symbol: symbol, from: f, to: t, date: d);
 }
 
 final _symbol = RegExp(r'^[A-Z0-9][A-Z0-9.\-:^]{0,14}$');
@@ -222,6 +250,7 @@ CsvImport _withHeader(
 ) {
   final lots = <ImportedLot>[];
   final dividends = <ImportedDividend>[];
+  final splits = <ImportedSplit>[];
   var skipped = 0;
   String cell(List<String> f, String role) {
     final i = col[role];
@@ -285,6 +314,15 @@ CsvImport _withHeader(
       }
       continue;
     }
+    if (side == 'split') {
+      final s = _split(symbol, cell(f, 'quantity'), cell(f, 'price'), cell(f, 'date'));
+      if (s == null) {
+        skipped++;
+      } else {
+        splits.add(s);
+      }
+      continue;
+    }
     // Befizetés, díj stb.: nem vétel és nem eladás.
     if (sell == null) continue;
     final quantity = signed?.abs();
@@ -312,7 +350,7 @@ CsvImport _withHeader(
       if (d.amount + (withholding[_dayKey(d)] ?? 0) case final a when a > 0)
         ImportedDividend(symbol: d.symbol, amount: a, currency: d.currency, date: d.date),
   ];
-  return CsvImport(lots, skipped, dividends: net);
+  return CsvImport(lots, skipped, dividends: net, splits: splits);
 }
 
 String _dayKey(ImportedDividend d) => '${d.symbol}|${d.currency}|${d.date?.toIso8601String().substring(0, 10)}';
@@ -336,6 +374,7 @@ ImportedDividend? _ibkrDividend(List<String> f, Map<String, int> col, {bool allo
 CsvImport _positional(List<String> lines, String defaultCurrency) {
   final lots = <ImportedLot>[];
   final dividends = <ImportedDividend>[];
+  final splits = <ImportedSplit>[];
   var skipped = 0;
   var first = true;
   for (final line in lines) {
@@ -356,6 +395,16 @@ CsvImport _positional(List<String> lines, String defaultCurrency) {
       first = false;
       continue;
     }
+    if (side == 'split') {
+      final s = f.length > 4 ? _split(symbol, f[1], f[2], f[4]) : null;
+      if (s == null) {
+        skipped++;
+      } else {
+        splits.add(s);
+      }
+      first = false;
+      continue;
+    }
     final sell = (signed != null && signed < 0) || side == 'sell' || side == 's';
     final quantity = signed?.abs();
     final price = f.length > 2 ? parseDecimal(f[2]) : null;
@@ -371,5 +420,5 @@ CsvImport _positional(List<String> lines, String defaultCurrency) {
     final date = f.length > 4 ? _date(f[4]) : null;
     lots.add(ImportedLot(symbol: symbol, quantity: quantity, price: price, currency: ccy, date: date, sell: sell));
   }
-  return CsvImport(lots, skipped, dividends: dividends);
+  return CsvImport(lots, skipped, dividends: dividends, splits: splits);
 }

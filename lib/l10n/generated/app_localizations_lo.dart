@@ -2579,6 +2579,47 @@ class AppLocalizationsLo extends AppLocalizations {
       'ຍັງບໍ່ມີເງິນປັນຜົນທີ່ບັນທຶກໄວ້. ເພີ່ມດ້ວຍຕົນເອງ ຫຼື ນຳເຂົ້າໄຟລ໌ສົ່ງອອກຈາກໂບຣກເກີຂອງທ່ານ – ແຖວເງິນປັນຜົນຂອງມັນກໍຈະຖືກເກັບເຊັ່ນກັນ.';
 
   @override
+  String get portfolioSplit => 'ການແບ່ງຫຸ້ນ';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'ການແບ່ງຫຸ້ນ: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'ການຊື້ ແລະ ການຂາຍທີ່ມີວັນທີກ່ອນການແບ່ງຈະຖືກປັບ: ຈຳນວນຫຸ້ນຈະຖືກຄູນ ແລະ ລາຄາຕໍ່ຫຸ້ນຈະຖືກຫານ ດັ່ງນັ້ນຕົ້ນທຶນຈຶ່ງຄົງເດິມ.';
+
+  @override
+  String get portfolioSplitRatio => 'ອັດຕາສ່ວນ (ໃໝ່ : ເກົ່າ)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'ປ້ອນອັດຕາສ່ວນເຊັ່ນ 10:1 ຫຼື 1:10 ສຳລັບການລວມຫຸ້ນ.';
+
+  @override
+  String get portfolioSplitDate => 'ວັນທີແບ່ງຫຸ້ນ';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'ການແບ່ງຫຸ້ນ $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'ລຶບການແບ່ງຫຸ້ນແລ້ວ';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ເພີ່ມການແບ່ງຫຸ້ນ $count ຄັ້ງແລ້ວ',
+      one: 'ເພີ່ມການແບ່ງຫຸ້ນ 1 ຄັ້ງແລ້ວ',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

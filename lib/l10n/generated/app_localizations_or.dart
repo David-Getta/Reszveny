@@ -2604,6 +2604,47 @@ class AppLocalizationsOr extends AppLocalizations {
       'ଏପର୍ୟ୍ୟନ୍ତ କୌଣସି ଡିଭିଡେଣ୍ଡ ରେକର୍ଡ ହୋଇନାହିଁ। ହାତରେ ଯୋଡ଼ନ୍ତୁ, କିମ୍ବା ଆପଣଙ୍କ ବ୍ରୋକରର ଏକ୍ସପୋର୍ଟ ଇମ୍ପୋର୍ଟ କରନ୍ତୁ – ତାହାର ଡିଭିଡେଣ୍ଡ ଧାଡ଼ିଗୁଡ଼ିକ ମଧ୍ୟ ନିଆଯାଏ।';
 
   @override
+  String get portfolioSplit => 'ଷ୍ଟକ୍ ସ୍ପ୍ଲିଟ୍';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'ଷ୍ଟକ୍ ସ୍ପ୍ଲିଟ୍: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'ସ୍ପ୍ଲିଟ୍ ପୂର୍ବ ତାରିଖର କ୍ରୟ ଓ ବିକ୍ରୟ ସଜାଡ଼ି ଦିଆଯାଏ: ସେୟାର ସଂଖ୍ୟା ଗୁଣିତ ହୁଏ ଏବଂ ପ୍ରତି ସେୟାର ମୂଲ୍ୟ ଭାଗ ହୁଏ, ତେଣୁ ଖର୍ଚ୍ଚ ସମାନ ରହେ।';
+
+  @override
+  String get portfolioSplitRatio => 'ଅନୁପାତ (ନୂଆ : ପୁରୁଣା)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      '10:1 ଭଳି ଅନୁପାତ ଲେଖନ୍ତୁ, କିମ୍ବା ରିଭର୍ସ ସ୍ପ୍ଲିଟ୍ ପାଇଁ 1:10।';
+
+  @override
+  String get portfolioSplitDate => 'ସ୍ପ୍ଲିଟ୍ ତାରିଖ';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'ଷ୍ଟକ୍ ସ୍ପ୍ଲିଟ୍ $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'ଷ୍ଟକ୍ ସ୍ପ୍ଲିଟ୍ ବିଲୋପ ହେଲା';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ଷ୍ଟକ୍ ସ୍ପ୍ଲିଟ୍ ଯୋଡ଼ା ହେଲା',
+      one: '1 ଷ୍ଟକ୍ ସ୍ପ୍ଲିଟ୍ ଯୋଡ଼ା ହେଲା',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

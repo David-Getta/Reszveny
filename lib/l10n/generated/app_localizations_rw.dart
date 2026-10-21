@@ -2615,6 +2615,47 @@ class AppLocalizationsRw extends AppLocalizations {
       'Nta dividende irandikwa. Zongereho n\'intoki, cyangwa winjize export ya broker wawe – imirongo yayo y\'amadividende na yo irafatwa.';
 
   @override
+  String get portfolioSplit => 'Igabanywa ry\'imigabane';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Igabanywa ry\'imigabane: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Ibyaguzwe n\'ibyagurishijwe mbere y\'igabanywa birahindurwa: umubare w\'imigabane ugwizwa, igiciro cya buri mugabane kigabanywa, bityo igiciro cyose kiguma kimwe.';
+
+  @override
+  String get portfolioSplitRatio => 'Igipimo (mishya : ya kera)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Andika igipimo nka 10:1, cyangwa 1:10 ku igabanywa risubira inyuma.';
+
+  @override
+  String get portfolioSplitDate => 'Itariki y\'igabanywa';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Igabanywa ry\'imigabane $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Igabanywa ry\'imigabane ryasibwe';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Amagabanywa y\'imigabane $count yongewemo',
+      one: 'Igabanywa ry\'imigabane 1 ryongewemo',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

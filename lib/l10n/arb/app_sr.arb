@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Процењено на основу исплата које сте евидентирали",
   "labelYieldOnCost": "Принос на набавну цену",
   "glossYieldOnCost": "Дивиденде примљене у последњих 12 месеци подељене са оним што сте платили за акције које још држите. За разлику од дивидендног приноса, мери се према вашој куповној цени, а не према данашњој.",
-  "homeDividendsThisYear": "Дивиденде ове године: {amount}"
+  "homeDividendsThisYear": "Дивиденде ове године: {amount}",
+  "portfolioSplit": "Подела акција",
+  "portfolioSplitTitle": "Подела акција: {symbol}",
+  "portfolioSplitHint": "Куповине и продаје са датумом пре поделе се прилагођавају: број акција се множи, а цена по акцији дели, тако да трошак остаје исти.",
+  "portfolioSplitRatio": "Однос (нове : старе)",
+  "portfolioSplitRatioError": "Унесите однос као 10:1, или 1:10 за обрнуту поделу.",
+  "portfolioSplitDate": "Датум поделе",
+  "portfolioSplitRow": "Подела акција {ratio}",
+  "portfolioSplitRemoved": "Подела акција је избрисана",
+  "portfolioSplitsImported": "{count, plural, =1{Додата је 1 подела акција} other{Додато подела акција: {count}}}"
 }

@@ -2616,6 +2616,47 @@ class AppLocalizationsEl extends AppLocalizations {
       'Δεν έχουν καταγραφεί μερίσματα ακόμη. Προσθέστε τα χειροκίνητα ή εισαγάγετε την εξαγωγή του χρηματιστή σας – οι γραμμές μερισμάτων της συλλέγονται επίσης.';
 
   @override
+  String get portfolioSplit => 'Διάσπαση μετοχών';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Διάσπαση μετοχών: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Οι αγορές και οι πωλήσεις με ημερομηνία πριν από τη διάσπαση προσαρμόζονται: ο αριθμός των μετοχών πολλαπλασιάζεται και η τιμή ανά μετοχή διαιρείται, ώστε το κόστος να παραμένει ίδιο.';
+
+  @override
+  String get portfolioSplitRatio => 'Αναλογία (νέες : παλιές)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Εισαγάγετε μια αναλογία όπως 10:1, ή 1:10 για αντίστροφη διάσπαση.';
+
+  @override
+  String get portfolioSplitDate => 'Ημερομηνία διάσπασης';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Διάσπαση μετοχών $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Η διάσπαση μετοχών διαγράφηκε';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Προστέθηκαν $count διασπάσεις μετοχών',
+      one: 'Προστέθηκε 1 διάσπαση μετοχών',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

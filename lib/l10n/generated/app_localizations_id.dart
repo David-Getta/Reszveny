@@ -2603,6 +2603,47 @@ class AppLocalizationsId extends AppLocalizations {
       'Belum ada dividen yang dicatat. Tambahkan secara manual, atau impor ekspor dari broker Anda – baris dividennya juga akan diambil.';
 
   @override
+  String get portfolioSplit => 'Pemecahan saham';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Pemecahan saham: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Pembelian dan penjualan yang bertanggal sebelum pemecahan disesuaikan: jumlah saham dikalikan dan harga per saham dibagi, sehingga biayanya tetap sama.';
+
+  @override
+  String get portfolioSplitRatio => 'Rasio (baru : lama)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Masukkan rasio seperti 10:1, atau 1:10 untuk reverse split.';
+
+  @override
+  String get portfolioSplitDate => 'Tanggal pemecahan';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Pemecahan saham $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Pemecahan saham dihapus';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pemecahan saham ditambahkan',
+      one: '1 pemecahan saham ditambahkan',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

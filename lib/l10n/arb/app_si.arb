@@ -743,5 +743,14 @@
   "eventDividendEstimate": "ඔබ සටහන් කළ ගෙවීම් මත ඇස්තමේන්තු කර ඇත",
   "labelYieldOnCost": "මිලදී ගත් මිල මත ඵලදාව",
   "glossYieldOnCost": "පසුගිය මාස 12 තුළ ලැබුණු ලාභාංශ, ඔබ තවමත් තබාගෙන ඇති කොටස් සඳහා ගෙවූ මුදලින් බෙදූ විට ලැබෙන අගය. ලාභාංශ ඵලදාව මෙන් නොව, එය අද මිලට නොව ඔබේම මිලදී ගැනීමේ මිලට සාපේක්ෂව මනිනු ලැබේ.",
-  "homeDividendsThisYear": "මේ වසරේ ලාභාංශ: {amount}"
+  "homeDividendsThisYear": "මේ වසරේ ලාභාංශ: {amount}",
+  "portfolioSplit": "කොටස් බෙදීම",
+  "portfolioSplitTitle": "කොටස් බෙදීම: {symbol}",
+  "portfolioSplitHint": "බෙදීමට පෙර දිනැති මිලදී ගැනීම් සහ විකුණුම් සකස් කෙරේ: කොටස් ගණන ගුණ කර කොටසක මිල බෙදන බැවින් පිරිවැය එලෙසම පවතී.",
+  "portfolioSplitRatio": "අනුපාතය (අලුත් : පරණ)",
+  "portfolioSplitRatioError": "10:1 වැනි අනුපාතයක් ඇතුළත් කරන්න, නැතහොත් ප්‍රතිලෝම බෙදීමක් සඳහා 1:10.",
+  "portfolioSplitDate": "බෙදීමේ දිනය",
+  "portfolioSplitRow": "කොටස් බෙදීම {ratio}",
+  "portfolioSplitRemoved": "කොටස් බෙදීම මකා දමන ලදී",
+  "portfolioSplitsImported": "{count, plural, =1{කොටස් බෙදීම් 1ක් එක් කළා} other{කොටස් බෙදීම් {count}ක් එක් කළා}}"
 }

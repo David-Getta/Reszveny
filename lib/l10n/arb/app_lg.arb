@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Ebalirirwa okuva mu nsasula z'owandiise",
   "labelYieldOnCost": "Amagoba ku bbeeyi ey'okugula (%)",
   "glossYieldOnCost": "Dividendi ezafunibwa mu myezi 12 egiyise nga zigabanyizibwamu ssente ze wasasula ku migabo gy'okyalina. Okwawukana ku magoba ku migabo, kino kipimibwa ku bbeeyi gye wagulako ggwe, so si ku bbeeyi ya leero.",
-  "homeDividendsThisYear": "Dividendi omwaka guno: {amount}"
+  "homeDividendsThisYear": "Dividendi omwaka guno: {amount}",
+  "portfolioSplit": "Okugabanya emigabo",
+  "portfolioSplitTitle": "Okugabanya emigabo: {symbol}",
+  "portfolioSplitHint": "Ebyaguzibwa n'ebyatundibwa nga tebinnagabanyizibwa bikyusibwa: omuwendo gw'emigabo gukubisibwamu ate ebbeeyi ya buli mugabo n'egabanyizibwamu, kale ssente ezaasasulwa zisigala nga bwe ziri.",
+  "portfolioSplitRatio": "Ekigero (emipya : emikadde)",
+  "portfolioSplitRatioError": "Wandiika ekigero nga 10:1, oba 1:10 okugatta emigabo.",
+  "portfolioSplitDate": "Ennaku z'okugabanya",
+  "portfolioSplitRow": "Okugabanya emigabo {ratio}",
+  "portfolioSplitRemoved": "Okugabanya emigabo kusanguddwa",
+  "portfolioSplitsImported": "{count, plural, =1{Okugabanya emigabo 1 kwongeddwako} other{Okugabanya emigabo {count} kwongeddwako}}"
 }

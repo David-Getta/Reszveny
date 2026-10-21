@@ -2613,6 +2613,47 @@ class AppLocalizationsSq extends AppLocalizations {
       'Ende nuk ka dividendë të regjistruar. Shtojini me dorë ose importoni eksportin e brokerit tuaj – rreshtat e dividendëve merren gjithashtu.';
 
   @override
+  String get portfolioSplit => 'Ndarje e aksioneve';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Ndarje e aksioneve: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Blerjet dhe shitjet me datë para ndarjes rregullohen: numri i aksioneve shumëzohet dhe çmimi për aksion pjesëtohet, kështu që kostoja mbetet e njëjtë.';
+
+  @override
+  String get portfolioSplitRatio => 'Raporti (të reja : të vjetra)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Vendosni një raport si 10:1, ose 1:10 për një ndarje të kundërt.';
+
+  @override
+  String get portfolioSplitDate => 'Data e ndarjes';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Ndarje e aksioneve $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Ndarja e aksioneve u fshi';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'U shtuan $count ndarje të aksioneve',
+      one: 'U shtua 1 ndarje e aksioneve',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

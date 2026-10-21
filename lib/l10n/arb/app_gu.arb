@@ -743,5 +743,14 @@
   "eventDividendEstimate": "તમારી નોંધેલી ચુકવણીઓ પરથી અંદાજિત",
   "labelYieldOnCost": "ખર્ચ પર યીલ્ડ",
   "glossYieldOnCost": "છેલ્લા 12 મહિનામાં મળેલ ડિવિડન્ડને તમે હજુ રાખેલા શેર માટે ચૂકવેલી રકમથી ભાગતાં મળે છે. ડિવિડન્ડ યીલ્ડથી અલગ, આ આજના ભાવ પર નહીં પણ તમારા પોતાના ખરીદ ભાવ પર મપાય છે.",
-  "homeDividendsThisYear": "આ વર્ષે ડિવિડન્ડ: {amount}"
+  "homeDividendsThisYear": "આ વર્ષે ડિવિડન્ડ: {amount}",
+  "portfolioSplit": "સ્ટૉક સ્પ્લિટ",
+  "portfolioSplitTitle": "સ્ટૉક સ્પ્લિટ: {symbol}",
+  "portfolioSplitHint": "સ્પ્લિટ પહેલાંની તારીખની ખરીદી અને વેચાણ સમાયોજિત થાય છે: શેરની સંખ્યા ગુણાય છે અને શેર દીઠ ભાવ ભાગાય છે, જેથી ખર્ચ એ જ રહે.",
+  "portfolioSplitRatio": "ગુણોત્તર (નવા : જૂના)",
+  "portfolioSplitRatioError": "10:1 જેવો ગુણોત્તર દાખલ કરો, અથવા રિવર્સ સ્પ્લિટ માટે 1:10.",
+  "portfolioSplitDate": "સ્પ્લિટની તારીખ",
+  "portfolioSplitRow": "સ્ટૉક સ્પ્લિટ {ratio}",
+  "portfolioSplitRemoved": "સ્ટૉક સ્પ્લિટ કાઢી નાખ્યો",
+  "portfolioSplitsImported": "{count, plural, =1{1 સ્ટૉક સ્પ્લિટ ઉમેરાયો} other{{count} સ્ટૉક સ્પ્લિટ ઉમેરાયા}}"
 }

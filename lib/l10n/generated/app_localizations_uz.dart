@@ -2613,6 +2613,47 @@ class AppLocalizationsUz extends AppLocalizations {
       'Hali dividendlar yozilmagan. Ularni qoʻlda qoʻshing yoki brokeringiz eksportini import qiling – undagi dividend qatorlari ham olinadi.';
 
   @override
+  String get portfolioSplit => 'Aksiyalarni boʻlish';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Aksiyalarni boʻlish: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Boʻlishdan oldingi sanadagi xaridlar va sotuvlar toʻgʻrilanadi: aksiyalar soni koʻpaytiriladi, bir aksiya narxi esa boʻlinadi, shuning uchun xarajat oʻzgarmaydi.';
+
+  @override
+  String get portfolioSplitRatio => 'Nisbat (yangi : eski)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      '10:1 kabi nisbat kiriting, yoki teskari boʻlish uchun 1:10.';
+
+  @override
+  String get portfolioSplitDate => 'Boʻlish sanasi';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Aksiyalarni boʻlish $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Aksiyalarni boʻlish oʻchirildi';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ta aksiya boʻlinishi qoʻshildi',
+      one: '1 ta aksiya boʻlinishi qoʻshildi',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

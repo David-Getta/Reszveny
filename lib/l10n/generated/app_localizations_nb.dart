@@ -2607,6 +2607,47 @@ class AppLocalizationsNb extends AppLocalizations {
       'Ingen utbytter registrert enda. Legg dem til manuelt, eller importer eksporten fra megleren din – utbytteradene hentes også inn.';
 
   @override
+  String get portfolioSplit => 'Aksjesplitt';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Aksjesplitt: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Kjøp og salg datert før splitten justeres: antall aksjer multipliseres og prisen per aksje deles, slik at kostnaden forblir den samme.';
+
+  @override
+  String get portfolioSplitRatio => 'Forhold (nye : gamle)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Skriv inn et forhold som 10:1, eller 1:10 for en spleis (omvendt splitt).';
+
+  @override
+  String get portfolioSplitDate => 'Dato for splitten';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Aksjesplitt $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Aksjesplitt slettet';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count aksjesplitter lagt til',
+      one: '1 aksjesplitt lagt til',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

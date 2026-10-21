@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Diperkirakeun tina pamayaran anu anjeun catet",
   "labelYieldOnCost": "Imbal hasil tina harga meuli",
   "glossYieldOnCost": "Dividén anu katampi dina 12 bulan panungtungan dibagi ku jumlah anu anjeun bayar pikeun saham anu masih dipiboga. Béda jeung imbal hasil dividén, ieu diukur dumasar harga meuli anjeun sorangan, lain harga ayeuna.",
-  "homeDividendsThisYear": "Dividen taun ieu: {amount}"
+  "homeDividendsThisYear": "Dividen taun ieu: {amount}",
+  "portfolioSplit": "Pamecahan saham",
+  "portfolioSplitTitle": "Pamecahan saham: {symbol}",
+  "portfolioSplitHint": "Pameseran sareng penjualan anu tanggalna sateuacan pamecahan bakal disaluyukeun: jumlah saham dikalikeun sareng harga per saham dibagi, janten biayana tetep sami.",
+  "portfolioSplitRatio": "Rasio (anyar : heubeul)",
+  "portfolioSplitRatioError": "Lebetkeun rasio sapertos 10:1, atanapi 1:10 kanggo pamecahan tibalik.",
+  "portfolioSplitDate": "Tanggal pamecahan",
+  "portfolioSplitRow": "Pamecahan saham {ratio}",
+  "portfolioSplitRemoved": "Pamecahan saham parantos dihapus",
+  "portfolioSplitsImported": "{count, plural, =1{1 pamecahan saham ditambihkeun} other{{count} pamecahan saham ditambihkeun}}"
 }

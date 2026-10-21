@@ -2616,6 +2616,47 @@ class AppLocalizationsSo extends AppLocalizations {
       'Weli faa\'iido-saami lama diiwaangelin. Gacanta ku dar, ama soo dejiso faylka dhoofinta ee broker-kaaga – safafka faa\'iido-saamiyadiisa sidoo kale waa la qaadaa.';
 
   @override
+  String get portfolioSplit => 'Kala qaybinta saamiyada';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Kala qaybinta saamiyada: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Iibsiyada iyo iibinta taariikhdoodu ka horreyso kala qaybinta waa la hagaajiyaa: tirada saamiyada waa la isku dhuftaa, qiimaha saamigana waa la qaybiyaa, sidaa darteed kharashku isku mid ayuu ahaanayaa.';
+
+  @override
+  String get portfolioSplitRatio => 'Qiyaasta (cusub : hore)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Geli qiyaas sida 10:1, ama 1:10 kala qaybin rogaal ah.';
+
+  @override
+  String get portfolioSplitDate => 'Taariikhda kala qaybinta';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Kala qaybinta saamiyada $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Kala qaybinta saamiyada waa la tirtiray';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count kala qaybin saamiyo ayaa lagu daray',
+      one: '1 kala qaybin saamiyo ayaa lagu daray',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

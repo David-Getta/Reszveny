@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Ojeha'ã umi pago rehaiva'ekue rehe",
   "labelYieldOnCost": "Rendimiento jogua repy rehe",
   "glossYieldOnCost": "Dividendo og̃uahẽva 12 jasy ohasa vaʼekuépe, oñemboja'o viru rehepyme'ẽ vaʼekue umi acción reguerekóva gueteri rehe. Ndahaʼéi dividendo rendimientoicha: kóva oñemoha'ãnga nde jogua repy rehe, ndahaʼéi ko árape repy rehe.",
-  "homeDividendsThisYear": "Dividendo ko ary: {amount}"
+  "homeDividendsThisYear": "Dividendo ko ary: {amount}",
+  "portfolioSplit": "Acción ñembojaʼo",
+  "portfolioSplitTitle": "Acción ñembojaʼo: {symbol}",
+  "portfolioSplitHint": "Umi jogua ha ñemu ojejapo vaʼekue ñembojaʼo mboyve oñemyatyrõ: acción papapy oñembohetave ha peteĩ acción repy oñembojaʼo, upéicha pe hepy ndoikói ambue.",
+  "portfolioSplitRatio": "Proporción (pyahu : tuja)",
+  "portfolioSplitRatioError": "Ehai peteĩ proporción 10:1 ramoguáicha, térã 1:10 ñembojaʼo rapykuegua peg̃uarã.",
+  "portfolioSplitDate": "Ñembojaʼo ára",
+  "portfolioSplitRow": "Acción ñembojaʼo {ratio}",
+  "portfolioSplitRemoved": "Acción ñembojaʼo oñembogue",
+  "portfolioSplitsImported": "{count, plural, =1{1 acción ñembojaʼo oñembojoapy} other{{count} acción ñembojaʼo oñembojoapy}}"
 }

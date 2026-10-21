@@ -743,5 +743,14 @@
   "eventDividendEstimate": "ከመዘገቡት ክፍያዎች የተገመተ",
   "labelYieldOnCost": "የትርፍ ድርሻ ተመን በወጪ",
   "glossYieldOnCost": "ባለፉት 12 ወራት የተቀበሉት የትርፍ ድርሻዎች፣ አሁንም ለያዟቸው አክሲዮኖች በከፈሉት ገንዘብ ተካፍሎ። ከትርፍ ድርሻ ተመን በተለየ፣ ይህ በዛሬው ዋጋ ሳይሆን በእርስዎ የግዢ ዋጋ ይለካል።",
-  "homeDividendsThisYear": "በዚህ ዓመት የትርፍ ድርሻ፦ {amount}"
+  "homeDividendsThisYear": "በዚህ ዓመት የትርፍ ድርሻ፦ {amount}",
+  "portfolioSplit": "የአክሲዮን ክፍፍል",
+  "portfolioSplitTitle": "የአክሲዮን ክፍፍል: {symbol}",
+  "portfolioSplitHint": "ከክፍፍሉ በፊት የተደረጉ ግዢዎችና ሽያጮች ይስተካከላሉ፦ የአክሲዮኖች ቁጥር ይባዛል እና የአንድ አክሲዮን ዋጋ ይካፈላል፤ ስለዚህ ወጪው እንደነበረ ይቀራል።",
+  "portfolioSplitRatio": "ጥምርታ (አዲስ : አሮጌ)",
+  "portfolioSplitRatioError": "እንደ 10:1 ያለ ጥምርታ ያስገቡ፤ ለተገላቢጦሽ ክፍፍል ደግሞ 1:10።",
+  "portfolioSplitDate": "የክፍፍሉ ቀን",
+  "portfolioSplitRow": "የአክሲዮን ክፍፍል {ratio}",
+  "portfolioSplitRemoved": "የአክሲዮን ክፍፍሉ ተሰርዟል",
+  "portfolioSplitsImported": "{count, plural, =1{1 የአክሲዮን ክፍፍል ታክሏል} other{{count} የአክሲዮን ክፍፍሎች ታክለዋል}}"
 }

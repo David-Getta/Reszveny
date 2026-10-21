@@ -2536,6 +2536,47 @@ class AppLocalizationsKo extends AppLocalizations {
       '아직 기록된 배당금이 없습니다. 직접 추가하거나 증권사 내보내기 파일을 가져오세요. 배당금 행도 함께 인식됩니다.';
 
   @override
+  String get portfolioSplit => '주식 분할';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return '주식 분할: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      '분할 전 날짜의 매수·매도가 조정됩니다. 주식 수는 곱하고 주당 가격은 나누므로 매입 비용은 그대로 유지됩니다.';
+
+  @override
+  String get portfolioSplitRatio => '비율 (신 : 구)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      '10:1처럼 비율을 입력하세요. 주식 병합(역분할)은 1:10입니다.';
+
+  @override
+  String get portfolioSplitDate => '분할 날짜';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return '주식 분할 $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => '주식 분할이 삭제되었습니다';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '주식 분할 $count건이 추가되었습니다',
+      one: '주식 분할 1건이 추가되었습니다',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

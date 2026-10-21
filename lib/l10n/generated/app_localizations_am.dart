@@ -2573,6 +2573,47 @@ class AppLocalizationsAm extends AppLocalizations {
       'እስካሁን የተመዘገበ የትርፍ ድርሻ የለም። በእጅ ያክሉ፣ ወይም የደላላዎን ወጪ ፋይል ያስመጡ – የትርፍ ድርሻ ረድፎቹም ይወሰዳሉ።';
 
   @override
+  String get portfolioSplit => 'የአክሲዮን ክፍፍል';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'የአክሲዮን ክፍፍል: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'ከክፍፍሉ በፊት የተደረጉ ግዢዎችና ሽያጮች ይስተካከላሉ፦ የአክሲዮኖች ቁጥር ይባዛል እና የአንድ አክሲዮን ዋጋ ይካፈላል፤ ስለዚህ ወጪው እንደነበረ ይቀራል።';
+
+  @override
+  String get portfolioSplitRatio => 'ጥምርታ (አዲስ : አሮጌ)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'እንደ 10:1 ያለ ጥምርታ ያስገቡ፤ ለተገላቢጦሽ ክፍፍል ደግሞ 1:10።';
+
+  @override
+  String get portfolioSplitDate => 'የክፍፍሉ ቀን';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'የአክሲዮን ክፍፍል $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'የአክሲዮን ክፍፍሉ ተሰርዟል';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count የአክሲዮን ክፍፍሎች ታክለዋል',
+      one: '1 የአክሲዮን ክፍፍል ታክሏል',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

@@ -2609,6 +2609,47 @@ class AppLocalizationsKu extends AppLocalizations {
       'Hîn tu dividend nehatiye tomarkirin. Bi destan lê zêde bike, an eksporta brokerê xwe import bike – rêzên dividendê wê jî tên girtin.';
 
   @override
+  String get portfolioSplit => 'Dabeşkirina paran';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Dabeşkirina paran: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Kirîn û firotinên ku dîroka wan berî dabeşkirinê ye tên sererastkirin: hejmara paran tê carandin û bihayê her parê tê dabeşkirin, loma lêçûn wekî xwe dimîne.';
+
+  @override
+  String get portfolioSplitRatio => 'Rêje (nû : kevn)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Rêjeyekê wekî 10:1 binivîse, an jî 1:10 ji bo dabeşkirina berevajî.';
+
+  @override
+  String get portfolioSplitDate => 'Dîroka dabeşkirinê';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Dabeşkirina paran $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Dabeşkirina paran hat jêbirin';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dabeşkirinên paran hatin zêdekirin',
+      one: '1 dabeşkirina paran hat zêdekirin',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

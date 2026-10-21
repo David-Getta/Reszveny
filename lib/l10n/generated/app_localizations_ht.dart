@@ -2604,6 +2604,47 @@ class AppLocalizationsHt extends AppLocalizations {
       'Poko gen okenn dividann ki anrejistre. Ajoute yo alamen, oswa enpòte ekspò koutye w la – liy dividann li yo ap pran tou.';
 
   @override
+  String get portfolioSplit => 'Divizyon aksyon';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Divizyon aksyon: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Acha ak vant ki gen dat anvan divizyon an ajiste: kantite aksyon yo miltipliye epi pri chak aksyon divize, kidonk kou a rete menm jan.';
+
+  @override
+  String get portfolioSplitRatio => 'Rapò (nouvo : ansyen)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Antre yon rapò tankou 10:1, oswa 1:10 pou yon divizyon envès.';
+
+  @override
+  String get portfolioSplitDate => 'Dat divizyon an';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Divizyon aksyon $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Divizyon aksyon an efase';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count divizyon aksyon ajoute',
+      one: '1 divizyon aksyon ajoute',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

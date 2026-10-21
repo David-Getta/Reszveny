@@ -2598,6 +2598,47 @@ class AppLocalizationsMy extends AppLocalizations {
       'အမြတ်ဝေစု မှတ်တမ်းမရှိသေးပါ။ ကိုယ်တိုင်ထည့်ပါ၊ သို့မဟုတ် သင့်ဘရိုကာ၏ export ဖိုင်ကို တင်သွင်းပါ – ထိုဖိုင်ထဲမှ အမြတ်ဝေစုအတန်းများကိုလည်း ဖမ်းယူပါသည်။';
 
   @override
+  String get portfolioSplit => 'ရှယ်ယာခွဲခြင်း';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'ရှယ်ယာခွဲခြင်း: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'ခွဲခြင်းမတိုင်မီ ရက်စွဲပါ အဝယ်နှင့် အရောင်းများကို ချိန်ညှိပါမည်။ ရှယ်ယာအရေအတွက်ကို မြှောက်ပြီး တစ်စုချင်းဈေးကို စားသောကြောင့် ကုန်ကျစရိတ် မပြောင်းလဲပါ။';
+
+  @override
+  String get portfolioSplitRatio => 'အချိုး (အသစ် : အဟောင်း)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      '10:1 ကဲ့သို့ အချိုးထည့်ပါ၊ သို့မဟုတ် ပြောင်းပြန်ခွဲခြင်းအတွက် 1:10 ထည့်ပါ။';
+
+  @override
+  String get portfolioSplitDate => 'ခွဲသည့်ရက်စွဲ';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'ရှယ်ယာခွဲခြင်း $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'ရှယ်ယာခွဲခြင်းကို ဖျက်လိုက်ပါပြီ';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ရှယ်ယာခွဲခြင်း $count ခု ထည့်ပြီး',
+      one: 'ရှယ်ယာခွဲခြင်း 1 ခု ထည့်ပြီး',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

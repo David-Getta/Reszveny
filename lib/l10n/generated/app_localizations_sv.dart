@@ -2608,6 +2608,47 @@ class AppLocalizationsSv extends AppLocalizations {
       'Inga utdelningar registrerade ännu. Lägg till dem manuellt eller importera exporten från din mäklare – utdelningsraderna läses också in.';
 
   @override
+  String get portfolioSplit => 'Aktiesplit';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Aktiesplit: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Köp och sälj daterade före spliten justeras: antalet aktier multipliceras och priset per aktie divideras, så att kostnaden förblir densamma.';
+
+  @override
+  String get portfolioSplitRatio => 'Förhållande (nya : gamla)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Ange ett förhållande som 10:1, eller 1:10 för en omvänd split.';
+
+  @override
+  String get portfolioSplitDate => 'Datum för spliten';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Aktiesplit $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Aktiesplit borttagen';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count aktiesplittar tillagda',
+      one: '1 aktiesplit tillagd',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

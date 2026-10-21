@@ -743,5 +743,14 @@
   "eventDividendEstimate": "E mere atụmatụ site na ụgwọ ị dekọrọ",
   "labelYieldOnCost": "Mkpụrụ dividend n'ọnụahịa ịzụ",
   "glossYieldOnCost": "Dividend enwetara n'ọnwa 12 gara aga kewara ihe ị kwụrụ maka share ndị ị ka nwere. N'adịghị ka mkpụrụ dividend, a na-atụ ya n'ọnụahịa ịzụ nke gị, ọ bụghị ọnụahịa taa.",
-  "homeDividendsThisYear": "Nkesa uru afọ a: {amount}"
+  "homeDividendsThisYear": "Nkesa uru afọ a: {amount}",
+  "portfolioSplit": "Nkewa shea",
+  "portfolioSplitTitle": "Nkewa shea: {symbol}",
+  "portfolioSplitHint": "A na-emezigharị ịzụ na ire ndị ụbọchị ha bu nkewa ahụ ụzọ: a na-amụba ọnụọgụ shea ma kewaa ọnụahịa shea ọ bụla, ka ego e tinyere ghara ịgbanwe.",
+  "portfolioSplitRatio": "Oke (ọhụrụ : ochie)",
+  "portfolioSplitRatioError": "Tinye oke dị ka 10:1, ma ọ bụ 1:10 maka nkewa ntụgharị.",
+  "portfolioSplitDate": "Ụbọchị nkewa ahụ",
+  "portfolioSplitRow": "Nkewa shea {ratio}",
+  "portfolioSplitRemoved": "Ehichapụla nkewa shea",
+  "portfolioSplitsImported": "{count, plural, =1{Agbakwunyere nkewa shea 1} other{Agbakwunyere nkewa shea {count}}}"
 }

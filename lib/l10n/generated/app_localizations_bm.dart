@@ -2604,6 +2604,47 @@ class AppLocalizationsBm extends AppLocalizations {
       'Dividandi si ma sɛbɛn fɔlɔ. Aw k\'a sɛbɛn ni bolo ye, walima ka aw ka broker ka export fayili lase – a dividandi sɛbɛnsiraw fana bɛ ta.';
 
   @override
+  String get portfolioSplit => 'Share tilali';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Share tilali: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Sanni ni feereli minnu kɛra ka kɔn tilali ɲɛ, olu bɛ ladilan: share hakɛ bɛ caya ani share kelen sɔngɔ bɛ tila, o la musaka tɛ yɛlɛma.';
+
+  @override
+  String get portfolioSplitRatio => 'Tilali hakɛ (kura : kɔrɔ)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Hakɛ dɔ sɛbɛn i n\'a fɔ 10:1, walima 1:10 share ɲɔgɔn fara kama.';
+
+  @override
+  String get portfolioSplitDate => 'Tilali don';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Share tilali $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Share tilali bɔra';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Share tilali $count farala a kan',
+      one: 'Share tilali 1 farala a kan',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

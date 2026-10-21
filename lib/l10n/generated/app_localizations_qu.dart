@@ -2621,6 +2621,47 @@ class AppLocalizationsQu extends AppLocalizations {
       'Manaraq ima dividendopas qillqasqachu. Makiwan yapay, utaq brokerniykipa exportninta apamuy – chaypi dividendo siq\'ikunapas hap\'isqa kanku.';
 
   @override
+  String get portfolioSplit => 'Akcionkuna rakiy';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Akcionkuna rakiy: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Rakiy ñawpaq p\'unchawniyuq rantiykuna vendeykunapas allichakun: akcionkunapa yupaynin miraykachisqa, sapa akcionpa chaninnin rakisqa, chaymi qullqi gastu kikillan kakun.';
+
+  @override
+  String get portfolioSplitRatio => 'Tupanachiy (musuq : ñawpa)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      '10:1 hina tupanachiyta qillqay, utaq 1:10 kutichiq rakiypaq.';
+
+  @override
+  String get portfolioSplitDate => 'Rakiypa p\'unchawnin';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Akcionkuna rakiy $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Akcionkuna rakiy qullusqa';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count akcionkuna rakiykuna yapasqa',
+      one: '1 akcionkuna rakiy yapasqa',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

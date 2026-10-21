@@ -137,6 +137,7 @@ class SyncService extends ChangeNotifier {
     if (preferences.targets.isNotEmpty) 'targets': preferences.targets,
     'lots': [for (final l in portfolio.lots) l.toJson()],
     'dividends': [for (final d in portfolio.dividends) d.toJson()],
+    'splits': [for (final s in portfolio.splits) s.toJson()],
     'cash': portfolio.cash,
     'cash_at': portfolio.cashAtJson,
     'alerts': [for (final a in alerts.alerts) a.toJson()],
@@ -198,6 +199,7 @@ class SyncService extends ChangeNotifier {
       'targets': {...AppPreferences.parseTargets(remote['targets']), ...AppPreferences.parseTargets(local['targets'])},
       'lots': byId(local['lots'], remote['lots']),
       'dividends': byId(local['dividends'], remote['dividends']),
+      'splits': byId(local['splits'], remote['splits']),
       'cash': cash.cash,
       'cash_at': cash.at,
       'alerts': alertsMerged,
@@ -283,6 +285,9 @@ class SyncService extends ChangeNotifier {
     // Régi csomagban (korábbi app) nincs osztaléklista: akkor a helyi marad.
     if (data['dividends'] is List) {
       await portfolio.replaceAllDividends([for (final j in maps(data['dividends'])) ?DividendRecord.fromJson(j)]);
+    }
+    if (data['splits'] is List) {
+      await portfolio.replaceAllSplits([for (final j in maps(data['splits'])) ?SplitRecord.fromJson(j)]);
     }
     await alerts.replaceAll([for (final j in maps(data['alerts'])) ?PriceAlert.fromJson(j)]);
     await notes.replaceAll({

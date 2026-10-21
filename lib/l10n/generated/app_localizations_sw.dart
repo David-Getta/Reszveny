@@ -2607,6 +2607,47 @@ class AppLocalizationsSw extends AppLocalizations {
       'Hakuna gawio lililorekodiwa bado. Liongeze kwa mkono, au leta faili la broker wako – safu zake za gawio pia zitachukuliwa.';
 
   @override
+  String get portfolioSplit => 'Mgawanyo wa hisa';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Mgawanyo wa hisa: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Manunuzi na mauzo yenye tarehe ya kabla ya mgawanyo hurekebishwa: idadi ya hisa huzidishwa na bei kwa hisa hugawanywa, hivyo gharama hubaki ile ile.';
+
+  @override
+  String get portfolioSplitRatio => 'Uwiano (mpya : za zamani)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Weka uwiano kama 10:1, au 1:10 kwa mgawanyo wa kinyume.';
+
+  @override
+  String get portfolioSplitDate => 'Tarehe ya mgawanyo';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Mgawanyo wa hisa $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Mgawanyo wa hisa umefutwa';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Migawanyo $count ya hisa imeongezwa',
+      one: 'Mgawanyo 1 wa hisa umeongezwa',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

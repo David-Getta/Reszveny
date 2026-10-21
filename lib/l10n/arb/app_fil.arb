@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Tinantya mula sa iyong mga naitalang bayad",
   "labelYieldOnCost": "Yield on cost",
   "glossYieldOnCost": "Ang dibidendong natanggap sa huling 12 buwan na hinati sa ibinayad mo para sa mga share na hawak mo pa. Hindi tulad ng dividend yield, sinusukat ito batay sa sarili mong presyo ng pagbili, hindi sa presyo ngayon.",
-  "homeDividendsThisYear": "Dibidendo ngayong taon: {amount}"
+  "homeDividendsThisYear": "Dibidendo ngayong taon: {amount}",
+  "portfolioSplit": "Stock split",
+  "portfolioSplitTitle": "Stock split: {symbol}",
+  "portfolioSplitHint": "Ina-adjust ang mga pagbili at pagbenta na may petsang bago ang split: pinaparami ang bilang ng mga share at hinahati ang presyo kada share, kaya hindi nagbabago ang gastos.",
+  "portfolioSplitRatio": "Ratio (bago : luma)",
+  "portfolioSplitRatioError": "Maglagay ng ratio tulad ng 10:1, o 1:10 para sa reverse split.",
+  "portfolioSplitDate": "Petsa ng split",
+  "portfolioSplitRow": "Stock split {ratio}",
+  "portfolioSplitRemoved": "Na-delete ang stock split",
+  "portfolioSplitsImported": "{count, plural, =1{1 stock split ang naidagdag} other{{count} stock split ang naidagdag}}"
 }

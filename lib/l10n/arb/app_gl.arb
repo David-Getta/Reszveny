@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Estimado a partir dos teus pagamentos rexistrados",
   "labelYieldOnCost": "Rendibilidade sobre o custo",
   "glossYieldOnCost": "Os dividendos recibidos nos últimos 12 meses divididos polo que pagaches polas accións que aínda tes. A diferenza da rendibilidade por dividendo, mídese sobre o teu propio prezo de compra, non sobre o prezo de hoxe.",
-  "homeDividendsThisYear": "Dividendos este ano: {amount}"
+  "homeDividendsThisYear": "Dividendos este ano: {amount}",
+  "portfolioSplit": "Desdobramento de accións",
+  "portfolioSplitTitle": "Desdobramento de accións: {symbol}",
+  "portfolioSplitHint": "As compras e vendas con data anterior ao desdobramento axústanse: o número de accións multiplícase e o prezo por acción divídese, de modo que o custo non cambia.",
+  "portfolioSplitRatio": "Proporción (novas : antigas)",
+  "portfolioSplitRatioError": "Introduce unha proporción como 10:1, ou 1:10 para un desdobramento inverso.",
+  "portfolioSplitDate": "Data do desdobramento",
+  "portfolioSplitRow": "Desdobramento de accións {ratio}",
+  "portfolioSplitRemoved": "Desdobramento de accións eliminado",
+  "portfolioSplitsImported": "{count, plural, =1{Engadiuse 1 desdobramento de accións} other{Engadíronse {count} desdobramentos de accións}}"
 }

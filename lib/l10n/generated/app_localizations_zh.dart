@@ -2495,6 +2495,45 @@ class AppLocalizationsZh extends AppLocalizations {
       '尚未记录任何股息。可手动添加，或导入券商的导出文件，其中的股息记录也会被识别。';
 
   @override
+  String get portfolioSplit => '股票拆分';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return '股票拆分：$symbol';
+  }
+
+  @override
+  String get portfolioSplitHint => '拆分日期之前的买入和卖出将被调整：股数相乘、每股价格相除，因此成本保持不变。';
+
+  @override
+  String get portfolioSplitRatio => '比例（新 : 旧）';
+
+  @override
+  String get portfolioSplitRatioError => '请输入比例，例如 10:1；反向拆分（合股）则输入 1:10。';
+
+  @override
+  String get portfolioSplitDate => '拆分日期';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return '股票拆分 $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => '已删除股票拆分';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '已添加 $count 项股票拆分',
+      one: '已添加 1 项股票拆分',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -5169,6 +5208,45 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   @override
   String get portfolioDividendsEmpty =>
       '尚未記錄任何股息。可手動新增，或匯入經紀商的匯出檔案，其中的股息記錄亦會被識別。';
+
+  @override
+  String get portfolioSplit => '股票分拆';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return '股票分拆：$symbol';
+  }
+
+  @override
+  String get portfolioSplitHint => '分拆日期之前的買入及賣出會被調整：股數相乘、每股價格相除，因此成本維持不變。';
+
+  @override
+  String get portfolioSplitRatio => '比例（新 : 舊）';
+
+  @override
+  String get portfolioSplitRatioError => '請輸入比例，例如 10:1；合股（反向分拆）則輸入 1:10。';
+
+  @override
+  String get portfolioSplitDate => '分拆日期';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return '股票分拆 $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => '已刪除股票分拆';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '已新增 $count 項股票分拆',
+      one: '已新增 1 項股票分拆',
+    );
+    return '$_temp0';
+  }
 
   @override
   String portfolioDividendsImported(int count) {

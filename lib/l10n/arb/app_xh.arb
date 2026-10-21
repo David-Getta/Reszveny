@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Siqikelelwe kwiintlawulo ozirekhodileyo",
   "labelYieldOnCost": "Isivuno kwixabiso lokuthenga",
   "glossYieldOnCost": "Ii-dividend ezifunyenwe kwiinyanga ezili-12 ezidlulileyo zahlulwe ngoko ukuhlawuleleyo izabelo osenazo. Ngokwahlukileyo kwisivuno se-dividend, silinganiswa ngexabiso owathenga ngalo wena, hayi ixabiso lanamhlanje.",
-  "homeDividendsThisYear": "Izahlulo zalo nyaka: {amount}"
+  "homeDividendsThisYear": "Izahlulo zalo nyaka: {amount}",
+  "portfolioSplit": "Ukwahlulwa kwezabelo",
+  "portfolioSplitTitle": "Ukwahlulwa kwezabelo: {symbol}",
+  "portfolioSplitHint": "Ukuthenga nokuthengisa okunomhla ongaphambi kokwahlulwa kuyalungiswa: inani lezabelo liyaphindaphindwa kwaye ixabiso lesabelo ngasinye liyahlulwa, ngoko iindleko zihlala zifana.",
+  "portfolioSplitRatio": "Umlinganiselo (ezintsha : ezindala)",
+  "portfolioSplitRatioError": "Faka umlinganiselo ofana no-10:1, okanye 1:10 wokwahlulwa okubuyela umva.",
+  "portfolioSplitDate": "Umhla wokwahlulwa",
+  "portfolioSplitRow": "Ukwahlulwa kwezabelo {ratio}",
+  "portfolioSplitRemoved": "Ukwahlulwa kwezabelo kucinyiwe",
+  "portfolioSplitsImported": "{count, plural, =1{Ukwahlulwa kwezabelo oku-1 kongeziwe} other{Ukwahlulwa kwezabelo oku-{count} kongeziwe}}"
 }

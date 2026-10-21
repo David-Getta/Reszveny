@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Wɔabu akontaa afi ntua a wokyerɛw too hɔ mu",
   "labelYieldOnCost": "Mfaso kyɛ wɔ tɔ bo so",
   "glossYieldOnCost": "Dividend a woanya wɔ abosome 12 a atwam no mu, a wɔde akyekyɛ sika a wotuaa maa kyɛfa a wowɔ no da so. Ɛnte sɛ mfaso kyɛ wɔ bo so: wɔde wo ankasa tɔ bo na ɛsusuw, ɛnyɛ nnɛ bo.",
-  "homeDividendsThisYear": "Dividend afe yi: {amount}"
+  "homeDividendsThisYear": "Dividend afe yi: {amount}",
+  "portfolioSplit": "Share nkyekyɛmu",
+  "portfolioSplitTitle": "Share nkyekyɛmu: {symbol}",
+  "portfolioSplitHint": "Wɔsesa atɔdeɛ ne atɔn a wɔyɛɛ ansa na nkyekyɛmu no reba: wɔde dodoɔ bɔ share dodoɔ no ho na wɔkyekyɛ share biara boɔ mu, enti ɛboɔ a wɔtuaa no nsesa.",
+  "portfolioSplitRatio": "Nsusuiɛ (foforɔ : dada)",
+  "portfolioSplitRatioError": "Kyerɛw nsusuiɛ te sɛ 10:1, anaa 1:10 ma nkyekyɛmu a wɔboaboa ano.",
+  "portfolioSplitDate": "Nkyekyɛmu no da",
+  "portfolioSplitRow": "Share nkyekyɛmu {ratio}",
+  "portfolioSplitRemoved": "Wɔayi share nkyekyɛmu no afiri hɔ",
+  "portfolioSplitsImported": "{count, plural, =1{Wɔde share nkyekyɛmu 1 akã ho} other{Wɔde share nkyekyɛmu {count} akã ho}}"
 }

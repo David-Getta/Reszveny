@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Odhad podľa výplat, ktoré ste zaznamenali",
   "labelYieldOnCost": "Výnos z nákupnej ceny",
   "glossYieldOnCost": "Dividendy prijaté za posledných 12 mesiacov vydelené tým, čo ste zaplatili za akcie, ktoré stále držíte. Na rozdiel od dividendového výnosu sa meria voči vašej vlastnej nákupnej cene, nie voči dnešnej cene.",
-  "homeDividendsThisYear": "Dividendy tento rok: {amount}"
+  "homeDividendsThisYear": "Dividendy tento rok: {amount}",
+  "portfolioSplit": "Štiepenie akcií",
+  "portfolioSplitTitle": "Štiepenie akcií: {symbol}",
+  "portfolioSplitHint": "Nákupy a predaje s dátumom pred štiepením sa upravia: počet akcií sa vynásobí a cena za akciu vydelí, takže náklady zostanú rovnaké.",
+  "portfolioSplitRatio": "Pomer (nové : staré)",
+  "portfolioSplitRatioError": "Zadajte pomer ako 10:1, alebo 1:10 pre reverzné štiepenie.",
+  "portfolioSplitDate": "Dátum štiepenia",
+  "portfolioSplitRow": "Štiepenie akcií {ratio}",
+  "portfolioSplitRemoved": "Štiepenie akcií bolo odstránené",
+  "portfolioSplitsImported": "{count, plural, =1{Pridané 1 štiepenie akcií} other{Pridané štiepenia akcií: {count}}}"
 }

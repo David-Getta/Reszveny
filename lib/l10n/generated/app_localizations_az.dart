@@ -2610,6 +2610,47 @@ class AppLocalizationsAz extends AppLocalizations {
       'Hələ heç bir dividend qeyd edilməyib. Əl ilə əlavə edin və ya brokerinizin ixrac faylını idxal edin – oradakı dividend sətirləri də götürülür.';
 
   @override
+  String get portfolioSplit => 'Səhm bölünməsi';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Səhm bölünməsi: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Bölünmədən əvvəlki tarixli alış və satışlar düzəldilir: səhmlərin sayı vurulur, bir səhmin qiyməti isə bölünür, beləliklə məsrəf dəyişməz qalır.';
+
+  @override
+  String get portfolioSplitRatio => 'Nisbət (yeni : köhnə)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      '10:1 kimi nisbət daxil edin, əks bölünmə üçün isə 1:10.';
+
+  @override
+  String get portfolioSplitDate => 'Bölünmə tarixi';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Səhm bölünməsi $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Səhm bölünməsi silindi';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count səhm bölünməsi əlavə edildi',
+      one: '1 səhm bölünməsi əlavə edildi',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

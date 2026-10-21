@@ -2617,6 +2617,47 @@ class AppLocalizationsLn extends AppLocalizations {
       'Dividende moko te ekomami naino. Bakisa yango na maboko, to kotisa export ya broker na yo – ba ligne na yango ya dividende ekozwama mpe.';
 
   @override
+  String get portfolioSplit => 'Bokabolami ya ba share';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Bokabolami ya ba share: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Kosomba mpe koteka oyo esalemaki liboso ya bokabolami ebongisami: motango ya ba share ebakisami mpe ntalo ya share moko ekabolami, yango wana mbongo oyo ofutaki ebongwani te.';
+
+  @override
+  String get portfolioSplitRatio => 'Emekeli (ya sika : ya kala)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Koma emekeli lokola 10:1, to 1:10 mpo na bokabolami ya kozongisa.';
+
+  @override
+  String get portfolioSplitDate => 'Mokolo ya bokabolami';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Bokabolami ya ba share $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Bokabolami ya ba share elongolami';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Bokabolami ya ba share $count ebakisami',
+      one: 'Bokabolami ya ba share 1 ebakisami',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

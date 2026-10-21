@@ -2616,6 +2616,47 @@ class AppLocalizationsZu extends AppLocalizations {
       'Azikho izabelo zenzuzo ezirekhodiwe okwamanje. Zengeze ngesandla, noma ungenise ifayela le-export le-broker yakho – imigqa yalo yezabelo zenzuzo nayo iyathathwa.';
 
   @override
+  String get portfolioSplit => 'Ukuhlukaniswa kwamasheya';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Ukuhlukaniswa kwamasheya: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Okuthengiwe nokuthengisiwe ngosuku olungaphambi kokuhlukaniswa kuyalungiswa: inani lamasheya liyaphindaphindwa futhi intengo yesheya ngalinye iyahlukaniswa, ngakho izindleko zihlala zifana.';
+
+  @override
+  String get portfolioSplitRatio => 'Isilinganiso (amasha : amadala)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Faka isilinganiso esifana no-10:1, noma 1:10 sokuhlukaniswa okubuyela emuva.';
+
+  @override
+  String get portfolioSplitDate => 'Usuku lokuhlukaniswa';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Ukuhlukaniswa kwamasheya $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Ukuhlukaniswa kwamasheya kususiwe';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ukuhlukaniswa kwamasheya oku-$count kwengeziwe',
+      one: 'Ukuhlukaniswa kwamasheya oku-1 kwengeziwe',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

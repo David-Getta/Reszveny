@@ -140,6 +140,19 @@ void main() {
       ('AAPL', 0.75, 'USD', DateTime(2026, 2, 13)),
       ('OTP', 24000.0, 'HUF', DateTime(2025, 6, 2)),
     ]);
+    // Felaprózás: „split” sor, az új darab a darabszám, a régi az ár oszlopában; fejléccel és anélkül.
+    final splits = [SplitRecord(id: 's1', symbol: 'NVDA', from: 1, to: 10, date: DateTime(2024, 6, 10))];
+    final withSplit = portfolioCsv(lots, splits: splits);
+    expect(withSplit, contains('NVDA,10,1,,2024-06-10,split'));
+    final backSplit = parsePortfolioCsv(withSplit);
+    expect(backSplit.skipped, 0);
+    expect(backSplit.lots, hasLength(1));
+    expect(backSplit.splits.single.symbol, 'NVDA');
+    expect((backSplit.splits.single.to, backSplit.splits.single.from), (10, 1));
+    expect(backSplit.splits.single.date, DateTime(2024, 6, 10));
+    final plainSplit = parsePortfolioCsv('NVDA;10;1;;2024-06-10;split\nNVDA;0;1;;2024-06-10;split');
+    expect(plainSplit.splits, hasLength(1));
+    expect(plainSplit.skipped, 1, reason: 'a nulla arány kimarad');
     // Fejléc nélkül is: a hatodik oszlop „dividend”, az összeg az ár helyén.
     final plain = parsePortfolioCsv('AAPL;;0,75;USD;2026-02-13;dividend\nMSFT;2;400;USD;2026-01-05');
     expect(plain.dividends.single.amount, 0.75);

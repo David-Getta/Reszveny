@@ -2676,6 +2676,47 @@ class AppLocalizationsPl extends AppLocalizations {
       'Brak zapisanych dywidend. Dodaj je ręcznie lub zaimportuj eksport od swojego brokera – wiersze z dywidendami też zostaną wczytane.';
 
   @override
+  String get portfolioSplit => 'Split akcji';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Split akcji: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Zakupy i sprzedaże z datą sprzed splitu zostaną skorygowane: liczba akcji zostanie pomnożona, a cena za akcję podzielona, więc koszt pozostanie bez zmian.';
+
+  @override
+  String get portfolioSplitRatio => 'Stosunek (nowe : stare)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Wpisz stosunek taki jak 10:1 lub 1:10 dla splitu odwrotnego (scalenia).';
+
+  @override
+  String get portfolioSplitDate => 'Data splitu';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Split akcji $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Split akcji usunięty';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Dodano splity akcji: $count',
+      one: 'Dodano 1 split akcji',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

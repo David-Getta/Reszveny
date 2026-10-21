@@ -173,7 +173,8 @@ class _PortfolioHistoryCardState extends State<PortfolioHistoryCard> {
   Future<(PriceHistory?, BenchmarkComparison?, ({int above, int count})?)>? _future;
 
   Future<(PriceHistory?, BenchmarkComparison?, ({int above, int count})?)> _load(AppServices services) async {
-    final lots = services.portfolio.lots;
+    // A felaprózásokkal igazított tételek (az árfolyam-idősor is igazított).
+    final lots = services.portfolio.adjustedLots;
     final histories = <String, PriceHistory>{};
     PriceHistory? index;
     await Future.wait([
@@ -198,7 +199,8 @@ class _PortfolioHistoryCardState extends State<PortfolioHistoryCard> {
     final p = AppPalette.of(context);
     final theme = Theme.of(context);
     final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
-    final key = '${widget.snapshot.currency}|${services.portfolio.lots.map((l) => l.id).join(',')}';
+    final key =
+        '${widget.snapshot.currency}|${services.portfolio.lots.map((l) => l.id).join(',')}|${services.portfolio.splits.map((s) => s.id).join(',')}';
     if (key != _key) {
       _key = key;
       _future = _load(services);

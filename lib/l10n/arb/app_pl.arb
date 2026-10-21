@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Oszacowano na podstawie zapisanych wypłat",
   "labelYieldOnCost": "Stopa dywidendy od ceny zakupu",
   "glossYieldOnCost": "Dywidendy otrzymane w ostatnich 12 miesiącach podzielone przez to, co zapłaciłeś za akcje, które nadal posiadasz. W odróżnieniu od stopy dywidendy odnosi się do twojej własnej ceny zakupu, a nie do dzisiejszego kursu.",
-  "homeDividendsThisYear": "Dywidendy w tym roku: {amount}"
+  "homeDividendsThisYear": "Dywidendy w tym roku: {amount}",
+  "portfolioSplit": "Split akcji",
+  "portfolioSplitTitle": "Split akcji: {symbol}",
+  "portfolioSplitHint": "Zakupy i sprzedaże z datą sprzed splitu zostaną skorygowane: liczba akcji zostanie pomnożona, a cena za akcję podzielona, więc koszt pozostanie bez zmian.",
+  "portfolioSplitRatio": "Stosunek (nowe : stare)",
+  "portfolioSplitRatioError": "Wpisz stosunek taki jak 10:1 lub 1:10 dla splitu odwrotnego (scalenia).",
+  "portfolioSplitDate": "Data splitu",
+  "portfolioSplitRow": "Split akcji {ratio}",
+  "portfolioSplitRemoved": "Split akcji usunięty",
+  "portfolioSplitsImported": "{count, plural, =1{Dodano 1 split akcji} other{Dodano splity akcji: {count}}}"
 }

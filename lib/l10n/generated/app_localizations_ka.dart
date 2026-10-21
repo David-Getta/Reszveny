@@ -2608,6 +2608,47 @@ class AppLocalizationsKa extends AppLocalizations {
       'დივიდენდები ჯერ არ არის ჩაწერილი. დაამატეთ ხელით ან შემოიტანეთ თქვენი ბროკერის ექსპორტი – მისი დივიდენდების სტრიქონებიც აღიქმება.';
 
   @override
+  String get portfolioSplit => 'აქციების დაყოფა';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'აქციების დაყოფა: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'დაყოფამდე დათარიღებული შესყიდვები და გაყიდვები კორექტირდება: აქციების რაოდენობა მრავლდება, ხოლო ერთი აქციის ფასი იყოფა, ასე რომ ღირებულება უცვლელი რჩება.';
+
+  @override
+  String get portfolioSplitRatio => 'თანაფარდობა (ახალი : ძველი)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'შეიყვანეთ თანაფარდობა, მაგალითად 10:1, ან 1:10 უკუდაყოფისთვის.';
+
+  @override
+  String get portfolioSplitDate => 'დაყოფის თარიღი';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'აქციების დაყოფა $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'აქციების დაყოფა წაიშალა';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'დაემატა $count აქციების დაყოფა',
+      one: 'დაემატა 1 აქციების დაყოფა',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

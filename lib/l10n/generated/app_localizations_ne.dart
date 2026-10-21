@@ -2606,6 +2606,47 @@ class AppLocalizationsNe extends AppLocalizations {
       'अहिलेसम्म कुनै लाभांश रेकर्ड गरिएको छैन। हातैले थप्नुहोस्, वा आफ्नो ब्रोकरको एक्सपोर्ट इम्पोर्ट गर्नुहोस् – त्यसका लाभांश पङ्क्तिहरू पनि लिइन्छन्।';
 
   @override
+  String get portfolioSplit => 'स्टक स्प्लिट';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'स्टक स्प्लिट: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'स्प्लिटअघिको मितिका खरिद र बिक्री समायोजन गरिन्छ: सेयर संख्या गुणन गरिन्छ र प्रति सेयर मूल्य भाग गरिन्छ, त्यसैले लागत उस्तै रहन्छ।';
+
+  @override
+  String get portfolioSplitRatio => 'अनुपात (नयाँ : पुरानो)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      '10:1 जस्तो अनुपात लेख्नुहोस्, वा रिभर्स स्प्लिटका लागि 1:10।';
+
+  @override
+  String get portfolioSplitDate => 'स्प्लिटको मिति';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'स्टक स्प्लिट $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'स्टक स्प्लिट मेटाइयो';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count स्टक स्प्लिट थपिए',
+      one: '1 स्टक स्प्लिट थपियो',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

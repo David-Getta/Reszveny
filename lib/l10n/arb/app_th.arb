@@ -743,5 +743,14 @@
   "eventDividendEstimate": "ประมาณจากการจ่ายที่คุณบันทึกไว้",
   "labelYieldOnCost": "ผลตอบแทนต่อต้นทุน",
   "glossYieldOnCost": "เงินปันผลที่ได้รับใน 12 เดือนล่าสุด หารด้วยเงินที่คุณจ่ายซื้อหุ้นที่ยังถืออยู่ ต่างจากอัตราผลตอบแทนเงินปันผล ค่านี้วัดจากราคาที่คุณซื้อเอง ไม่ใช่ราคาวันนี้",
-  "homeDividendsThisYear": "เงินปันผลปีนี้: {amount}"
+  "homeDividendsThisYear": "เงินปันผลปีนี้: {amount}",
+  "portfolioSplit": "การแตกหุ้น",
+  "portfolioSplitTitle": "การแตกหุ้น: {symbol}",
+  "portfolioSplitHint": "รายการซื้อและขายที่ลงวันที่ก่อนการแตกหุ้นจะถูกปรับ: จำนวนหุ้นจะถูกคูณและราคาต่อหุ้นจะถูกหาร ดังนั้นต้นทุนจะยังคงเท่าเดิม",
+  "portfolioSplitRatio": "อัตราส่วน (ใหม่ : เดิม)",
+  "portfolioSplitRatioError": "กรอกอัตราส่วน เช่น 10:1 หรือ 1:10 สำหรับการรวมหุ้น (reverse split)",
+  "portfolioSplitDate": "วันที่แตกหุ้น",
+  "portfolioSplitRow": "การแตกหุ้น {ratio}",
+  "portfolioSplitRemoved": "ลบการแตกหุ้นแล้ว",
+  "portfolioSplitsImported": "{count, plural, =1{เพิ่มการแตกหุ้น 1 รายการแล้ว} other{เพิ่มการแตกหุ้น {count} รายการแล้ว}}"
 }

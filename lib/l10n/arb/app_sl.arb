@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Ocenjeno iz izplačil, ki ste jih zabeležili",
   "labelYieldOnCost": "Donosnost na nakupno ceno",
   "glossYieldOnCost": "Dividende, prejete v zadnjih 12 mesecih, deljene s tem, kar ste plačali za delnice, ki jih še imate. Drugače kot dividendna donosnost se meri glede na vašo nakupno ceno, ne na današnjo.",
-  "homeDividendsThisYear": "Dividende letos: {amount}"
+  "homeDividendsThisYear": "Dividende letos: {amount}",
+  "portfolioSplit": "Delitev delnic",
+  "portfolioSplitTitle": "Delitev delnic: {symbol}",
+  "portfolioSplitHint": "Nakupi in prodaje z datumom pred delitvijo se prilagodijo: število delnic se pomnoži, cena na delnico pa deli, tako da strošek ostane enak.",
+  "portfolioSplitRatio": "Razmerje (nove : stare)",
+  "portfolioSplitRatioError": "Vnesite razmerje, kot je 10:1, ali 1:10 za obratno delitev (združitev).",
+  "portfolioSplitDate": "Datum delitve",
+  "portfolioSplitRow": "Delitev delnic {ratio}",
+  "portfolioSplitRemoved": "Delitev delnic je izbrisana",
+  "portfolioSplitsImported": "{count, plural, =1{Dodana 1 delitev delnic} other{Dodane delitve delnic: {count}}}"
 }

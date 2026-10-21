@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Yi ringanyetiwile ku suka eka tihakelo leti u ti tsaleke",
   "labelYieldOnCost": "Mbuyelo eka nxavo wo xava",
   "glossYieldOnCost": "Tidividende leti amukeriweke eka tin'hweti ta 12 leti hundzeke, leti avanyisiweke hi leswi u swi hakeleke eka tixere leti wa ha tikhomeke. Ku hambana na mbuyelo wa dividende, wu pimiwa hi nxavo lowu u xaveke ha wona, ku nga ri nxavo wa namuntlha.",
-  "homeDividendsThisYear": "Tidividende ta lembe leri: {amount}"
+  "homeDividendsThisYear": "Tidividende ta lembe leri: {amount}",
+  "portfolioSplit": "Ku avanyisiwa ka tishere",
+  "portfolioSplitTitle": "Ku avanyisiwa ka tishere: {symbol}",
+  "portfolioSplitHint": "Ku xava ni ku xavisa loku nga ni siku ra le mahlweni ka ku avanyisiwa ku lulamisiwa: nhlayo ya tishere yi andzisiwa naswona nxavo wa shere yin'we wu avanyisiwa, leswaku ntsengo wu tshama wu fana.",
+  "portfolioSplitRatio": "Mpimo (leswintshwa : leswa khale)",
+  "portfolioSplitRatioError": "Nghenisa mpimo wo fana na 10:1, kumbe 1:10 eka ku avanyisiwa ko tlhelela endzhaku.",
+  "portfolioSplitDate": "Siku ra ku avanyisiwa",
+  "portfolioSplitRow": "Ku avanyisiwa ka tishere {ratio}",
+  "portfolioSplitRemoved": "Ku avanyisiwa ka tishere ku susiwile",
+  "portfolioSplitsImported": "{count, plural, =1{Ku avanyisiwa ka tishere 1 ku engeteriwile} other{Ku avanyisiwa ka tishere {count} ku engeteriwile}}"
 }

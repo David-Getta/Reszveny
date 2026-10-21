@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Kulinganiselwe ezinkokhelweni ozirekhodile",
   "labelYieldOnCost": "Isivuno ngentengo yokuthenga",
   "glossYieldOnCost": "Ama-dividend atholwe ezinyangeni ezingu-12 ezedlule ahlukaniswe ngalokho okukhokhele amasheya osawaphethe. Ngokungafani nesivuno se-dividend, silinganiswa ngentengo owathenga ngayo wena, hhayi intengo yanamuhla.",
-  "homeDividendsThisYear": "Izabelo zenzuzo zalo nyaka: {amount}"
+  "homeDividendsThisYear": "Izabelo zenzuzo zalo nyaka: {amount}",
+  "portfolioSplit": "Ukuhlukaniswa kwamasheya",
+  "portfolioSplitTitle": "Ukuhlukaniswa kwamasheya: {symbol}",
+  "portfolioSplitHint": "Okuthengiwe nokuthengisiwe ngosuku olungaphambi kokuhlukaniswa kuyalungiswa: inani lamasheya liyaphindaphindwa futhi intengo yesheya ngalinye iyahlukaniswa, ngakho izindleko zihlala zifana.",
+  "portfolioSplitRatio": "Isilinganiso (amasha : amadala)",
+  "portfolioSplitRatioError": "Faka isilinganiso esifana no-10:1, noma 1:10 sokuhlukaniswa okubuyela emuva.",
+  "portfolioSplitDate": "Usuku lokuhlukaniswa",
+  "portfolioSplitRow": "Ukuhlukaniswa kwamasheya {ratio}",
+  "portfolioSplitRemoved": "Ukuhlukaniswa kwamasheya kususiwe",
+  "portfolioSplitsImported": "{count, plural, =1{Ukuhlukaniswa kwamasheya oku-1 kwengeziwe} other{Ukuhlukaniswa kwamasheya oku-{count} kwengeziwe}}"
 }

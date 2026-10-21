@@ -2623,6 +2623,47 @@ class AppLocalizationsNso extends AppLocalizations {
       'Ga go na dividende tše di rekotilwego go fihla ga bjale. Di oketše ka seatla, goba o tsenye faele ya export ya broker ya gago – mela ya yona ya dividende le yona e a tšewa.';
 
   @override
+  String get portfolioSplit => 'Karoganyo ya dišere';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Karoganyo ya dišere: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Direko le dithekišo tša pele ga karoganyo di a lokišwa: palo ya dišere e a atišwa gomme theko ya šere e tee e a arolwa, gore tshenyegelo e dule e swana.';
+
+  @override
+  String get portfolioSplitRatio => 'Tekanyo (tše mpsha : tša kgale)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Tsenya tekanyo bjalo ka 10:1, goba 1:10 ya karoganyo ya go boela morago.';
+
+  @override
+  String get portfolioSplitDate => 'Letšatšikgwedi la karoganyo';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Karoganyo ya dišere $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Karoganyo ya dišere e phumotšwe';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Dikaroganyo tša dišere tše $count di okeditšwe',
+      one: 'Karoganyo ya dišere e 1 e okeditšwe',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

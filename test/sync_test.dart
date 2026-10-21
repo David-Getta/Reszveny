@@ -91,12 +91,14 @@ void main() {
     await a.preferences.toggleFavorite('NVDA');
     await b.alerts.add(symbol: 'AAPL', kind: AlertKind.above, value: 250, currency: 'USD');
     await b.portfolio.addDividend(symbol: 'AAPL', amount: 2.5, currency: 'USD', date: DateTime(2026, 2, 13));
+    await b.portfolio.addSplit(symbol: 'NVDA', from: 1, to: 10, date: DateTime(2024, 6, 10));
     await b.portfolio.setCash('USD', 1500);
     await b.sync.syncNow();
     await a.sync.syncNow();
     expect(a.preferences.favorites, containsAll(['NVDA', 'MSFT', 'AAPL']));
     expect(a.alerts.alerts.single.value, 250);
     expect(a.portfolio.dividends.single.amount, 2.5);
+    expect(a.portfolio.splits.single.label, '10:1', reason: 'a felaprózás is átmegy');
     expect(a.portfolio.cash, {'USD': 1500.0});
     // A törölt készpénz-egyenleg is átmegy (nem éled újra).
     await a.portfolio.setCash('USD', 0);
@@ -117,6 +119,13 @@ void main() {
     await b.sync.syncNow();
     expect(b.portfolio.cash, {'EUR': 300.0});
     expect((server.data!['dividends'] as List).single['symbol'], 'AAPL');
+    expect((server.data!['splits'] as List).single, {
+      'id': a.portfolio.splits.single.id,
+      'symbol': 'NVDA',
+      'from': 1,
+      'to': 10,
+      'date': '2024-06-10',
+    });
     await b.sync.syncNow();
     expect(b.preferences.favorites, containsAll(['NVDA', 'MSFT', 'AAPL']));
 
@@ -151,6 +160,7 @@ void main() {
     );
     expect(m['favorites'], ['A', 'B']);
     expect((m['lots'] as List).map((l) => (l['id'], l['quantity'])), [('1', 1), ('2', 2)]);
+    expect(m['splits'], isEmpty, reason: 'régi csomagokban nincs felaprózás');
     expect((m['notes'] as Map)['A'], newer);
     expect((m['notes'] as Map)['B'], newer);
   });

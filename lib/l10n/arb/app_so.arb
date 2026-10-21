@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Lagu qiyaasay bixinnada aad diiwaangelisay",
   "labelYieldOnCost": "Faa'iidada qiimaha iibsiga",
   "glossYieldOnCost": "Faa'iido-saamiyada la helay 12-kii bilood ee la soo dhaafay oo loo qaybiyay waxa aad bixisay saamiyada aad weli haysato. Si ka duwan heerka qaybta faa'iidada, waxaa lagu qiyaasaa qiimaha aad adigu ku iibsatay, ee ma aha qiimaha maanta.",
-  "homeDividendsThisYear": "Faa'iido-saamiyada sannadkan: {amount}"
+  "homeDividendsThisYear": "Faa'iido-saamiyada sannadkan: {amount}",
+  "portfolioSplit": "Kala qaybinta saamiyada",
+  "portfolioSplitTitle": "Kala qaybinta saamiyada: {symbol}",
+  "portfolioSplitHint": "Iibsiyada iyo iibinta taariikhdoodu ka horreyso kala qaybinta waa la hagaajiyaa: tirada saamiyada waa la isku dhuftaa, qiimaha saamigana waa la qaybiyaa, sidaa darteed kharashku isku mid ayuu ahaanayaa.",
+  "portfolioSplitRatio": "Qiyaasta (cusub : hore)",
+  "portfolioSplitRatioError": "Geli qiyaas sida 10:1, ama 1:10 kala qaybin rogaal ah.",
+  "portfolioSplitDate": "Taariikhda kala qaybinta",
+  "portfolioSplitRow": "Kala qaybinta saamiyada {ratio}",
+  "portfolioSplitRemoved": "Kala qaybinta saamiyada waa la tirtiray",
+  "portfolioSplitsImported": "{count, plural, =1{1 kala qaybin saamiyo ayaa lagu daray} other{{count} kala qaybin saamiyo ayaa lagu daray}}"
 }

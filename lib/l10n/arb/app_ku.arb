@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Ji dayînên te tomarkirî hatiye texmînkirin",
   "labelYieldOnCost": "Rêje li gorî bihayê kirînê",
   "glossYieldOnCost": "Dividendên ku di 12 mehên dawî de hatine wergirtin, dabeşî ya ku te ji bo pişkên hîn li destê te ne daye. Ne wek rêjeya dîvîdendê, ew li gorî bihayê kirîna te tê pîvandin, ne li gorî bihayê îro.",
-  "homeDividendsThisYear": "Dividendên îsal: {amount}"
+  "homeDividendsThisYear": "Dividendên îsal: {amount}",
+  "portfolioSplit": "Dabeşkirina paran",
+  "portfolioSplitTitle": "Dabeşkirina paran: {symbol}",
+  "portfolioSplitHint": "Kirîn û firotinên ku dîroka wan berî dabeşkirinê ye tên sererastkirin: hejmara paran tê carandin û bihayê her parê tê dabeşkirin, loma lêçûn wekî xwe dimîne.",
+  "portfolioSplitRatio": "Rêje (nû : kevn)",
+  "portfolioSplitRatioError": "Rêjeyekê wekî 10:1 binivîse, an jî 1:10 ji bo dabeşkirina berevajî.",
+  "portfolioSplitDate": "Dîroka dabeşkirinê",
+  "portfolioSplitRow": "Dabeşkirina paran {ratio}",
+  "portfolioSplitRemoved": "Dabeşkirina paran hat jêbirin",
+  "portfolioSplitsImported": "{count, plural, =1{1 dabeşkirina paran hat zêdekirin} other{{count} dabeşkirinên paran hatin zêdekirin}}"
 }

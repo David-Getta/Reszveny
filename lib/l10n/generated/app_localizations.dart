@@ -4507,6 +4507,60 @@ abstract class AppLocalizations {
   /// **'No dividends recorded yet. Add them by hand, or import your broker\'s export – its dividend rows are picked up too.'**
   String get portfolioDividendsEmpty;
 
+  /// Button in a position's transactions sheet: record a stock split (e.g. 10-for-1).
+  ///
+  /// In en, this message translates to:
+  /// **'Stock split'**
+  String get portfolioSplit;
+
+  /// Title of the dialog that records a stock split for one stock.
+  ///
+  /// In en, this message translates to:
+  /// **'Stock split: {symbol}'**
+  String portfolioSplitTitle(String symbol);
+
+  /// Explanation in the stock-split dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'Purchases and sales dated before the split are adjusted: the number of shares is multiplied and the price per share divided, so the cost stays the same.'**
+  String get portfolioSplitHint;
+
+  /// Field label in the stock-split dialog; the user types e.g. 10:1 (ten new shares for one old) or 1:10 for a reverse split.
+  ///
+  /// In en, this message translates to:
+  /// **'Ratio (new : old)'**
+  String get portfolioSplitRatio;
+
+  /// Validation error under the ratio field in the stock-split dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a ratio like 10:1, or 1:10 for a reverse split.'**
+  String get portfolioSplitRatioError;
+
+  /// Date row in the stock-split dialog.
+  ///
+  /// In en, this message translates to:
+  /// **'Date of the split'**
+  String get portfolioSplitDate;
+
+  /// A recorded stock split in the transactions sheet; {ratio} is like 10:1.
+  ///
+  /// In en, this message translates to:
+  /// **'Stock split {ratio}'**
+  String portfolioSplitRow(String ratio);
+
+  /// Shown in the transactions sheet after deleting a recorded stock split, next to an Undo button.
+  ///
+  /// In en, this message translates to:
+  /// **'Stock split deleted'**
+  String get portfolioSplitRemoved;
+
+  /// After importing the app's own CSV export: how many stock splits were added.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =1{1 stock split added} other{{count} stock splits added}}'**
+  String portfolioSplitsImported(int count);
+
   /// After importing a broker export: how many dividend payments were added.
   ///
   /// In en, this message translates to:

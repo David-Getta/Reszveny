@@ -743,5 +743,14 @@
   "eventDividendEstimate": "記録済みの受取額から推定",
   "labelYieldOnCost": "取得利回り",
   "glossYieldOnCost": "直近12か月に受け取った配当金を、今も保有している株式の購入金額で割ったものです。配当利回りと異なり、今日の株価ではなくあなた自身の購入価格を基準にします。",
-  "homeDividendsThisYear": "今年の配当金：{amount}"
+  "homeDividendsThisYear": "今年の配当金：{amount}",
+  "portfolioSplit": "株式分割",
+  "portfolioSplitTitle": "株式分割：{symbol}",
+  "portfolioSplitHint": "分割前の日付の購入・売却は調整されます。株数が掛け算され、1株あたりの価格が割り算されるため、取得コストは変わりません。",
+  "portfolioSplitRatio": "比率（新 : 旧）",
+  "portfolioSplitRatioError": "10:1 のような比率を入力してください。株式併合の場合は 1:10 です。",
+  "portfolioSplitDate": "分割日",
+  "portfolioSplitRow": "株式分割 {ratio}",
+  "portfolioSplitRemoved": "株式分割を削除しました",
+  "portfolioSplitsImported": "{count, plural, =1{株式分割を1件追加しました} other{株式分割を{count}件追加しました}}"
 }

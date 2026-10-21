@@ -2615,6 +2615,47 @@ class AppLocalizationsHy extends AppLocalizations {
       'Շահաբաժիններ դեռ գրանցված չեն։ Ավելացրեք ձեռքով կամ ներմուծեք ձեր բրոքերի արտահանումը՝ դրա շահաբաժինների տողերը նույնպես վերցվում են։';
 
   @override
+  String get portfolioSplit => 'Բաժնետոմսերի բաժանում';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Բաժնետոմսերի բաժանում: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Բաժանումից առաջ թվագրված գնումներն ու վաճառքները ճշգրտվում են՝ բաժնետոմսերի քանակը բազմապատկվում է, իսկ մեկ բաժնետոմսի գինը բաժանվում է, այնպես որ արժեքը մնում է նույնը։';
+
+  @override
+  String get portfolioSplitRatio => 'Հարաբերակցություն (նոր : հին)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Մուտքագրեք հարաբերակցություն, օրինակ՝ 10:1, կամ 1:10 հակադարձ բաժանման համար։';
+
+  @override
+  String get portfolioSplitDate => 'Բաժանման ամսաթիվ';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Բաժնետոմսերի բաժանում $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Բաժնետոմսերի բաժանումը ջնջվել է';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ավելացվել է $count բաժնետոմսերի բաժանում',
+      one: 'Ավելացվել է 1 բաժնետոմսերի բաժանում',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

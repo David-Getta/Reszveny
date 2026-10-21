@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Kiyasi daga biyan da ka rubuta",
   "labelYieldOnCost": "Yawan rabon riba kan farashin saye",
   "glossYieldOnCost": "Rabon riba da aka karɓa a cikin watanni 12 na baya, an raba shi da abin da ka biya kan hannayen jari da kake riƙe har yanzu. Ba kamar yawan rabon riba ba, ana auna shi da farashin sayenka, ba farashin yau ba.",
-  "homeDividendsThisYear": "Rabon riba bana: {amount}"
+  "homeDividendsThisYear": "Rabon riba bana: {amount}",
+  "portfolioSplit": "Rabon hannun jari",
+  "portfolioSplitTitle": "Rabon hannun jari: {symbol}",
+  "portfolioSplitHint": "Ana gyara sayayya da sayarwa da aka yi kafin ranar rabon: ana ninka adadin hannun jari kuma ana raba farashin kowane hannun jari, don haka kuɗin da aka kashe ba ya canzawa.",
+  "portfolioSplitRatio": "Rabo (sabo : tsoho)",
+  "portfolioSplitRatioError": "Shigar da rabo kamar 10:1, ko 1:10 don rabon akasi.",
+  "portfolioSplitDate": "Ranar rabon",
+  "portfolioSplitRow": "Rabon hannun jari {ratio}",
+  "portfolioSplitRemoved": "An goge rabon hannun jari",
+  "portfolioSplitsImported": "{count, plural, =1{An ƙara rabon hannun jari 1} other{An ƙara rabon hannun jari {count}}}"
 }

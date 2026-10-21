@@ -2607,6 +2607,47 @@ class AppLocalizationsTr extends AppLocalizations {
       'Henüz kayıtlı temettü yok. Elle ekleyin veya aracı kurumunuzun dışa aktarım dosyasını içe aktarın – temettü satırları da alınır.';
 
   @override
+  String get portfolioSplit => 'Hisse bölünmesi';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Hisse bölünmesi: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Bölünme tarihinden önceki alım ve satımlar düzeltilir: hisse sayısı çarpılır, hisse başına fiyat bölünür; böylece maliyet aynı kalır.';
+
+  @override
+  String get portfolioSplitRatio => 'Oran (yeni : eski)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      '10:1 gibi bir oran girin, ters bölünme için 1:10.';
+
+  @override
+  String get portfolioSplitDate => 'Bölünme tarihi';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Hisse bölünmesi $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Hisse bölünmesi silindi';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hisse bölünmesi eklendi',
+      one: '1 hisse bölünmesi eklendi',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

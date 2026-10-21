@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Vlerësuar nga pagesat që regjistruat",
   "labelYieldOnCost": "Rendimenti mbi çmimin e blerjes",
   "glossYieldOnCost": "Dividendët e marrë në 12 muajt e fundit pjesëtuar me atë që pagove për aksionet që ende mban. Ndryshe nga rendimenti i dividendit, matet ndaj çmimit tënd të blerjes, jo ndaj çmimit të sotëm.",
-  "homeDividendsThisYear": "Dividendë këtë vit: {amount}"
+  "homeDividendsThisYear": "Dividendë këtë vit: {amount}",
+  "portfolioSplit": "Ndarje e aksioneve",
+  "portfolioSplitTitle": "Ndarje e aksioneve: {symbol}",
+  "portfolioSplitHint": "Blerjet dhe shitjet me datë para ndarjes rregullohen: numri i aksioneve shumëzohet dhe çmimi për aksion pjesëtohet, kështu që kostoja mbetet e njëjtë.",
+  "portfolioSplitRatio": "Raporti (të reja : të vjetra)",
+  "portfolioSplitRatioError": "Vendosni një raport si 10:1, ose 1:10 për një ndarje të kundërt.",
+  "portfolioSplitDate": "Data e ndarjes",
+  "portfolioSplitRow": "Ndarje e aksioneve {ratio}",
+  "portfolioSplitRemoved": "Ndarja e aksioneve u fshi",
+  "portfolioSplitsImported": "{count, plural, =1{U shtua 1 ndarje e aksioneve} other{U shtuan {count} ndarje të aksioneve}}"
 }

@@ -2611,6 +2611,47 @@ class AppLocalizationsHu extends AppLocalizations {
       'Még nincs rögzített osztalék. Vedd fel kézzel, vagy importáld a brókered exportját – annak osztaléksorai is bekerülnek.';
 
   @override
+  String get portfolioSplit => 'Részvényfelaprózás';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Részvényfelaprózás: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'A felaprózás napja előtti vételek és eladások igazítódnak: a darabszám szorzódik, a darabonkénti ár osztódik, így a bekerülési érték nem változik.';
+
+  @override
+  String get portfolioSplitRatio => 'Arány (új : régi)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Adj meg egy arányt, pl. 10:1 – összevonásnál 1:10.';
+
+  @override
+  String get portfolioSplitDate => 'A felaprózás napja';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Felaprózás $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Felaprózás törölve';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count felaprózás felvéve',
+      one: '1 felaprózás felvéve',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

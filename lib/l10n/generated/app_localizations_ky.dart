@@ -2610,6 +2610,47 @@ class AppLocalizationsKy extends AppLocalizations {
       'Дивиденддер азырынча жазыла элек. Кол менен кошуңуз же брокериңиздин экспортун импорттоңуз – андагы дивиденд саптары да алынат.';
 
   @override
+  String get portfolioSplit => 'Акцияларды бөлүү';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Акцияларды бөлүү: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Бөлүүгө чейинки датадагы сатып алуулар жана сатуулар оңдолот: акциялардын саны көбөйтүлүп, бир акциянын баасы бөлүнөт, ошондуктан чыгым өзгөрбөйт.';
+
+  @override
+  String get portfolioSplitRatio => 'Катыш (жаңы : эски)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      '10:1 сыяктуу катышты киргизиңиз, же тескери бөлүү үчүн 1:10.';
+
+  @override
+  String get portfolioSplitDate => 'Бөлүү датасы';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Акцияларды бөлүү $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Акцияларды бөлүү өчүрүлдү';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count акция бөлүүсү кошулду',
+      one: '1 акция бөлүүсү кошулду',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

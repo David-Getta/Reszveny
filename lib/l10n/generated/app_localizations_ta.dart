@@ -2617,6 +2617,47 @@ class AppLocalizationsTa extends AppLocalizations {
       'இதுவரை ஈவுத்தொகை எதுவும் பதிவு செய்யப்படவில்லை. கைமுறையாகச் சேர்க்கவும், அல்லது உங்கள் புரோக்கரின் ஏற்றுமதி கோப்பை இறக்குமதி செய்யவும் – அதில் உள்ள ஈவுத்தொகை வரிசைகளும் எடுக்கப்படும்.';
 
   @override
+  String get portfolioSplit => 'பங்குப் பிரிப்பு';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'பங்குப் பிரிப்பு: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'பிரிப்புக்கு முந்தைய தேதியிலான வாங்கல்கள் மற்றும் விற்பனைகள் சரிசெய்யப்படும்: பங்குகளின் எண்ணிக்கை பெருக்கப்பட்டு, ஒரு பங்கின் விலை வகுக்கப்படும், எனவே செலவு மாறாது.';
+
+  @override
+  String get portfolioSplitRatio => 'விகிதம் (புதியது : பழையது)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      '10:1 போன்ற விகிதத்தை உள்ளிடுங்கள், அல்லது தலைகீழ் பிரிப்புக்கு 1:10.';
+
+  @override
+  String get portfolioSplitDate => 'பிரிப்பின் தேதி';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'பங்குப் பிரிப்பு $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'பங்குப் பிரிப்பு நீக்கப்பட்டது';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count பங்குப் பிரிப்புகள் சேர்க்கப்பட்டன',
+      one: '1 பங்குப் பிரிப்பு சேர்க்கப்பட்டது',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

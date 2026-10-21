@@ -2606,6 +2606,47 @@ class AppLocalizationsPcm extends AppLocalizations {
       'No dividend dey record yet. Add dem by hand, or import your broker export – e go pick di dividend rows too.';
 
   @override
+  String get portfolioSplit => 'Stock split';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Stock split: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'We go adjust di buy and sell wey happen before di split: we go multiply di number of shares and divide di price per share, so di cost still remain di same.';
+
+  @override
+  String get portfolioSplitRatio => 'Ratio (new : old)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Put ratio like 10:1, or 1:10 for reverse split.';
+
+  @override
+  String get portfolioSplitDate => 'Date of di split';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Stock split $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Stock split don delete';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count stock splits don add',
+      one: '1 stock split don add',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

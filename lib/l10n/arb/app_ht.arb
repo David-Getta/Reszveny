@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Estime dapre peman ou te anrejistre yo",
   "labelYieldOnCost": "Rannman sou pri acha",
   "glossYieldOnCost": "Dividann ou resevwa nan 12 dènye mwa yo divize pa sa ou te peye pou aksyon ou toujou genyen yo. Kontrèman ak rannman dividann, yo mezire l sou pwòp pri acha ou, pa sou pri jodi a.",
-  "homeDividendsThisYear": "Dividann ane sa a: {amount}"
+  "homeDividendsThisYear": "Dividann ane sa a: {amount}",
+  "portfolioSplit": "Divizyon aksyon",
+  "portfolioSplitTitle": "Divizyon aksyon: {symbol}",
+  "portfolioSplitHint": "Acha ak vant ki gen dat anvan divizyon an ajiste: kantite aksyon yo miltipliye epi pri chak aksyon divize, kidonk kou a rete menm jan.",
+  "portfolioSplitRatio": "Rapò (nouvo : ansyen)",
+  "portfolioSplitRatioError": "Antre yon rapò tankou 10:1, oswa 1:10 pou yon divizyon envès.",
+  "portfolioSplitDate": "Dat divizyon an",
+  "portfolioSplitRow": "Divizyon aksyon {ratio}",
+  "portfolioSplitRemoved": "Divizyon aksyon an efase",
+  "portfolioSplitsImported": "{count, plural, =1{1 divizyon aksyon ajoute} other{{count} divizyon aksyon ajoute}}"
 }

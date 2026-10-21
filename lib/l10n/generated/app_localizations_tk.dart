@@ -2608,6 +2608,47 @@ class AppLocalizationsTk extends AppLocalizations {
       'Häzirlikçe diwidend ýazylmady. Olary el bilen goşuň ýa-da brokeriňiziň eksportyny import ediň – onuň diwidend setirleri hem alynýar.';
 
   @override
+  String get portfolioSplit => 'Paýnamalaryň bölünişi';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Paýnamalaryň bölünişi: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Bölünişden öňki senelik satyn almalar we satuwlar düzedilýär: paýnamalaryň sany köpeldilýär, bir paýnamanyň bahasy bolsa bölünýär, şonuň üçin çykdajy üýtgemeýär.';
+
+  @override
+  String get portfolioSplitRatio => 'Gatnaşyk (täze : köne)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      '10:1 ýaly gatnaşyk giriziň, ýa-da ters bölüniş üçin 1:10.';
+
+  @override
+  String get portfolioSplitDate => 'Bölünişiň senesi';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Paýnamalaryň bölünişi $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Paýnamalaryň bölünişi pozuldy';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count paýnama bölünişi goşuldy',
+      one: '1 paýnama bölünişi goşuldy',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

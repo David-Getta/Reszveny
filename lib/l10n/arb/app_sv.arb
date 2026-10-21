@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Uppskattat utifrån de utdelningar du registrerat",
   "labelYieldOnCost": "Direktavkastning på inköpspris",
   "glossYieldOnCost": "Utdelningar mottagna de senaste 12 månaderna delat med vad du betalade för de aktier du fortfarande äger. Till skillnad från direktavkastningen mäts den mot ditt eget inköpspris, inte dagens kurs.",
-  "homeDividendsThisYear": "Utdelningar i år: {amount}"
+  "homeDividendsThisYear": "Utdelningar i år: {amount}",
+  "portfolioSplit": "Aktiesplit",
+  "portfolioSplitTitle": "Aktiesplit: {symbol}",
+  "portfolioSplitHint": "Köp och sälj daterade före spliten justeras: antalet aktier multipliceras och priset per aktie divideras, så att kostnaden förblir densamma.",
+  "portfolioSplitRatio": "Förhållande (nya : gamla)",
+  "portfolioSplitRatioError": "Ange ett förhållande som 10:1, eller 1:10 för en omvänd split.",
+  "portfolioSplitDate": "Datum för spliten",
+  "portfolioSplitRow": "Aktiesplit {ratio}",
+  "portfolioSplitRemoved": "Aktiesplit borttagen",
+  "portfolioSplitsImported": "{count, plural, =1{1 aktiesplit tillagd} other{{count} aktiesplittar tillagda}}"
 }

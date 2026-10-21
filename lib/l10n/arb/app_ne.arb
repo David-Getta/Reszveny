@@ -743,5 +743,14 @@
   "eventDividendEstimate": "तपाईंले रेकर्ड गरेका भुक्तानीका आधारमा अनुमानित",
   "labelYieldOnCost": "किन्ने मूल्यमा यिल्ड",
   "glossYieldOnCost": "पछिल्ला १२ महिनामा प्राप्त लाभांशलाई तपाईंसँग अझै रहेका शेयरका लागि तिरेको रकमले भाग गरेको। लाभांश यिल्डभन्दा फरक, यो आजको मूल्यमा होइन, तपाईंको आफ्नै किन्ने मूल्यमा मापन गरिन्छ।",
-  "homeDividendsThisYear": "यस वर्षको लाभांश: {amount}"
+  "homeDividendsThisYear": "यस वर्षको लाभांश: {amount}",
+  "portfolioSplit": "स्टक स्प्लिट",
+  "portfolioSplitTitle": "स्टक स्प्लिट: {symbol}",
+  "portfolioSplitHint": "स्प्लिटअघिको मितिका खरिद र बिक्री समायोजन गरिन्छ: सेयर संख्या गुणन गरिन्छ र प्रति सेयर मूल्य भाग गरिन्छ, त्यसैले लागत उस्तै रहन्छ।",
+  "portfolioSplitRatio": "अनुपात (नयाँ : पुरानो)",
+  "portfolioSplitRatioError": "10:1 जस्तो अनुपात लेख्नुहोस्, वा रिभर्स स्प्लिटका लागि 1:10।",
+  "portfolioSplitDate": "स्प्लिटको मिति",
+  "portfolioSplitRow": "स्टक स्प्लिट {ratio}",
+  "portfolioSplitRemoved": "स्टक स्प्लिट मेटाइयो",
+  "portfolioSplitsImported": "{count, plural, =1{1 स्टक स्प्लिट थपियो} other{{count} स्टक स्प्लिट थपिए}}"
 }

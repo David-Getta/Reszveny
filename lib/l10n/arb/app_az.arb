@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Qeyd etdiyiniz ödənişlərə əsasən təxmin edilib",
   "labelYieldOnCost": "Alış qiymətinə görə gəlirlilik",
   "glossYieldOnCost": "Son 12 ayda alınan dividendlərin hələ saxladığınız səhmlər üçün ödədiyiniz məbləğə bölünməsi. Dividend gəlirliliyindən fərqli olaraq, bugünkü qiymətə yox, öz alış qiymətinizə görə ölçülür.",
-  "homeDividendsThisYear": "Bu il dividendlər: {amount}"
+  "homeDividendsThisYear": "Bu il dividendlər: {amount}",
+  "portfolioSplit": "Səhm bölünməsi",
+  "portfolioSplitTitle": "Səhm bölünməsi: {symbol}",
+  "portfolioSplitHint": "Bölünmədən əvvəlki tarixli alış və satışlar düzəldilir: səhmlərin sayı vurulur, bir səhmin qiyməti isə bölünür, beləliklə məsrəf dəyişməz qalır.",
+  "portfolioSplitRatio": "Nisbət (yeni : köhnə)",
+  "portfolioSplitRatioError": "10:1 kimi nisbət daxil edin, əks bölünmə üçün isə 1:10.",
+  "portfolioSplitDate": "Bölünmə tarixi",
+  "portfolioSplitRow": "Səhm bölünməsi {ratio}",
+  "portfolioSplitRemoved": "Səhm bölünməsi silindi",
+  "portfolioSplitsImported": "{count, plural, =1{1 səhm bölünməsi əlavə edildi} other{{count} səhm bölünməsi əlavə edildi}}"
 }

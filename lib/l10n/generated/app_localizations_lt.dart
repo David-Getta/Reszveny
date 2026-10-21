@@ -2673,6 +2673,47 @@ class AppLocalizationsLt extends AppLocalizations {
       'Dividendų dar neįrašyta. Pridėkite juos ranka arba importuokite savo brokerio eksportą – jo dividendų eilutės taip pat nuskaitomos.';
 
   @override
+  String get portfolioSplit => 'Akcijų skaidymas';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Akcijų skaidymas: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Pirkimai ir pardavimai, datuoti iki skaidymo, pakoreguojami: akcijų skaičius padauginamas, o vienos akcijos kaina padalijama, todėl savikaina nesikeičia.';
+
+  @override
+  String get portfolioSplitRatio => 'Santykis (naujos : senos)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Įveskite santykį, pvz., 10:1, arba 1:10 atvirkštiniam skaidymui.';
+
+  @override
+  String get portfolioSplitDate => 'Skaidymo data';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Akcijų skaidymas $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Akcijų skaidymas ištrintas';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Pridėta akcijų skaidymų: $count',
+      one: 'Pridėtas 1 akcijų skaidymas',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Anslået ud fra dine registrerede udbetalinger",
   "labelYieldOnCost": "Afkast på købskurs",
   "glossYieldOnCost": "Udbytte modtaget de seneste 12 måneder divideret med det, du betalte for de aktier, du stadig ejer. I modsætning til udbytteafkastet måles det mod din egen købskurs, ikke dagens kurs.",
-  "homeDividendsThisYear": "Udbytte i år: {amount}"
+  "homeDividendsThisYear": "Udbytte i år: {amount}",
+  "portfolioSplit": "Aktiesplit",
+  "portfolioSplitTitle": "Aktiesplit: {symbol}",
+  "portfolioSplitHint": "Køb og salg dateret før splittet justeres: antallet af aktier ganges, og prisen pr. aktie divideres, så omkostningen forbliver den samme.",
+  "portfolioSplitRatio": "Forhold (nye : gamle)",
+  "portfolioSplitRatioError": "Indtast et forhold som 10:1, eller 1:10 for et omvendt split.",
+  "portfolioSplitDate": "Dato for splittet",
+  "portfolioSplitRow": "Aktiesplit {ratio}",
+  "portfolioSplitRemoved": "Aktiesplit slettet",
+  "portfolioSplitsImported": "{count, plural, =1{1 aktiesplit tilføjet} other{{count} aktiesplits tilføjet}}"
 }

@@ -2618,6 +2618,47 @@ class AppLocalizationsMl extends AppLocalizations {
       'ഇതുവരെ ഡിവിഡന്റുകളൊന്നും രേഖപ്പെടുത്തിയിട്ടില്ല. അവ നേരിട്ട് ചേർക്കുക, അല്ലെങ്കിൽ നിങ്ങളുടെ ബ്രോക്കറുടെ എക്സ്പോർട്ട് ഇംപോർട്ട് ചെയ്യുക – അതിലെ ഡിവിഡന്റ് വരികളും എടുക്കും.';
 
   @override
+  String get portfolioSplit => 'സ്റ്റോക്ക് സ്പ്ലിറ്റ്';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'സ്റ്റോക്ക് സ്പ്ലിറ്റ്: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'സ്പ്ലിറ്റിന് മുമ്പുള്ള തീയതിയിലെ വാങ്ങലുകളും വിൽപ്പനകളും ക്രമീകരിക്കും: ഓഹരികളുടെ എണ്ണം ഗുണിക്കുകയും ഒരു ഓഹരിയുടെ വില ഹരിക്കുകയും ചെയ്യുന്നതിനാൽ ചെലവ് മാറില്ല.';
+
+  @override
+  String get portfolioSplitRatio => 'അനുപാതം (പുതിയത് : പഴയത്)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      '10:1 പോലെ ഒരു അനുപാതം നൽകുക, അല്ലെങ്കിൽ റിവേഴ്സ് സ്പ്ലിറ്റിന് 1:10.';
+
+  @override
+  String get portfolioSplitDate => 'സ്പ്ലിറ്റിന്റെ തീയതി';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'സ്റ്റോക്ക് സ്പ്ലിറ്റ് $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'സ്റ്റോക്ക് സ്പ്ലിറ്റ് ഇല്ലാതാക്കി';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count സ്റ്റോക്ക് സ്പ്ലിറ്റുകൾ ചേർത്തു',
+      one: '1 സ്റ്റോക്ക് സ്പ്ലിറ്റ് ചേർത്തു',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

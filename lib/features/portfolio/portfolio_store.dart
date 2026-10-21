@@ -99,6 +99,63 @@ class DividendRecord {
   }
 }
 
+/// Részvényfelaprózás (split): [to] új részvény minden [from] régi helyett
+/// (10:1 = tízszerezés, 1:10 = összevonás). A [date] előtti tranzakciók
+/// darabszáma szorzódik, darabonkénti ára osztódik – a bekerülési érték marad.
+class SplitRecord {
+  const SplitRecord({required this.id, required this.symbol, required this.from, required this.to, required this.date});
+
+  final String id;
+  final String symbol;
+  final int from;
+  final int to;
+  final DateTime date;
+
+  /// Hányszorozódik a darabszám.
+  double get factor => to / from;
+
+  /// „10:1” alakban (új : régi).
+  String get label => '$to:$from';
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'symbol': symbol,
+    'from': from,
+    'to': to,
+    'date': date.toIso8601String().substring(0, 10),
+  };
+
+  static SplitRecord? fromJson(Map<String, dynamic> j) {
+    final symbol = (j['symbol'] as String? ?? '').trim().toUpperCase();
+    final from = j['from'], to = j['to'];
+    final date = DateTime.tryParse(j['date'] as String? ?? '');
+    if (symbol.isEmpty || from is! int || to is! int || from < 1 || to < 1 || from == to || date == null) return null;
+    return SplitRecord(
+      id: j['id'] as String? ?? '${symbol}_s${DateTime.now().microsecondsSinceEpoch}',
+      symbol: symbol,
+      from: from,
+      to: to,
+      date: date,
+    );
+  }
+
+  /// A felaprózás előtti (a napján már nem) tranzakció igazítása; a dátum
+  /// nélküli vétel a legelejéről való, az ilyen eladás a legvégéről.
+  PortfolioLot apply(PortfolioLot l) {
+    final at = l.date ?? (l.sell ? DateTime(9999) : DateTime(0));
+    if (l.symbol != symbol || !at.isBefore(DateTime(date.year, date.month, date.day))) return l;
+    return PortfolioLot(
+      id: l.id,
+      symbol: l.symbol,
+      quantity: l.quantity * factor,
+      price: l.price / factor,
+      currency: l.currency,
+      date: l.date,
+      sell: l.sell,
+    );
+  }
+}
+
 typedef _Fifo = ({
   List<({double quantity, double price, DateTime? date})> open,
   double realized,
@@ -212,11 +269,16 @@ class PortfolioStore extends ChangeNotifier {
   PortfolioStore({
     List<PortfolioLot> lots = const [],
     List<DividendRecord> dividends = const [],
+    List<SplitRecord> splits = const [],
     Map<String, double> cash = const {},
     Map<String, DateTime> cashAt = const {},
   }) : _lots = List.of(lots),
        _dividends = List.of(dividends)..sort(_newestFirst),
+       _splits = List.of(splits)..sort(_oldestFirst),
        _cash = _entries(cash, cashAt);
+
+  /// A felaprózások időrendben (az alkalmazásuk sorrendje).
+  static int _oldestFirst(SplitRecord a, SplitRecord b) => a.date.compareTo(b.date);
 
   /// Az újabb elöl (dátum nélküli a végén) – a lista mindig így van tartva.
   static int _newestFirst(DividendRecord a, DividendRecord b) =>
@@ -226,9 +288,11 @@ class PortfolioStore extends ChangeNotifier {
   static const _dividendsKey = 'portfolio_dividends';
   static const _cashKey = 'portfolio_cash';
   static const _cashAtKey = 'portfolio_cash_at';
+  static const _splitsKey = 'portfolio_splits';
 
   final List<PortfolioLot> _lots;
   final List<DividendRecord> _dividends;
+  final List<SplitRecord> _splits;
 
   /// Készpénz a brókernél, pénznemenként (a felhasználó adja meg): az összeg
   /// (0 = törölve, csak az időbélyeg miatt marad) és az utolsó módosítás ideje
@@ -247,6 +311,22 @@ class PortfolioStore extends ChangeNotifier {
   /// Pénznemenként az utolsó módosítás ideje (a törölté is).
   Map<String, DateTime> get cashAt => {for (final e in _cash.entries) e.key: ?e.value.at};
   List<PortfolioLot> get lots => List.unmodifiable(_lots);
+
+  /// A rögzített felaprózások időrendben.
+  List<SplitRecord> get splits => List.unmodifiable(_splits);
+
+  /// Egy részvény felaprózásai időrendben.
+  List<SplitRecord> splitsOf(String symbol) {
+    final s = symbol.toUpperCase();
+    return [
+      for (final x in _splits)
+        if (x.symbol == s) x,
+    ];
+  }
+
+  /// A tranzakciók a felaprózásokkal igazítva (a tárolt tétel változatlan, az
+  /// azonosító ugyanaz): ebből számol a pozíció, az értékalakulás és a lap.
+  List<PortfolioLot> get adjustedLots => [for (final l in _lots) _splits.fold(l, (lot, s) => s.apply(lot))];
 
   /// A még birtokolt részvények tickerei.
   Set<String> get heldSymbols => {for (final p in positions) p.symbol};
@@ -292,6 +372,7 @@ class PortfolioStore extends ChangeNotifier {
       return PortfolioStore(
         lots: read(_key, parse),
         dividends: read(_dividendsKey, parseDividends),
+        splits: read(_splitsKey, parseSplits),
         cash: cash,
         cashAt: cashAt,
       );
@@ -338,6 +419,14 @@ class PortfolioStore extends ChangeNotifier {
     ];
   }
 
+  static List<SplitRecord> parseSplits(String raw) {
+    final v = jsonDecode(raw);
+    return [
+      for (final e in (v is List ? v : const []))
+        if (e is Map) ?SplitRecord.fromJson(e.cast<String, dynamic>()),
+    ];
+  }
+
   /// Részvényenként összevont, még birtokolt pozíciók, a legnagyobb bekerülési értékkel elöl.
   List<Position> get positions => [
     for (final p in _all)
@@ -355,7 +444,7 @@ class PortfolioStore extends ChangeNotifier {
 
   List<Position> get _all {
     final bySymbol = <String, List<PortfolioLot>>{};
-    for (final l in _lots) {
+    for (final l in adjustedLots) {
       bySymbol.putIfAbsent(l.symbol, () => []).add(l);
     }
     return [for (final e in bySymbol.entries) Position(symbol: e.key, currency: e.value.first.currency, lots: e.value)];
@@ -446,6 +535,54 @@ class PortfolioStore extends ChangeNotifier {
     await _save();
   }
 
+  Future<SplitRecord> addSplit({
+    required String symbol,
+    required int from,
+    required int to,
+    required DateTime date,
+  }) async {
+    final s = symbol.trim().toUpperCase();
+    final split = SplitRecord(
+      id: '${s}_s${DateTime.now().microsecondsSinceEpoch}',
+      symbol: s,
+      from: from,
+      to: to,
+      date: DateTime(date.year, date.month, date.day),
+    );
+    _splits
+      ..add(split)
+      ..sort(_oldestFirst);
+    notifyListeners();
+    await _save();
+    return split;
+  }
+
+  Future<void> removeSplit(String id) async {
+    _splits.removeWhere((s) => s.id == id);
+    notifyListeners();
+    await _save();
+  }
+
+  /// Egy törölt felaprózás visszaállítása (visszavonás), változatlan azonosítóval.
+  Future<void> restoreSplit(SplitRecord s) async {
+    if (_splits.any((x) => x.id == s.id)) return;
+    _splits
+      ..add(s)
+      ..sort(_oldestFirst);
+    notifyListeners();
+    await _save();
+  }
+
+  /// Az összes felaprózás cseréje (szinkronkor a fiók adataira).
+  Future<void> replaceAllSplits(List<SplitRecord> splits) async {
+    _splits
+      ..clear()
+      ..addAll(splits)
+      ..sort(_oldestFirst);
+    notifyListeners();
+    await _save();
+  }
+
   /// Készpénz egy pénznemben; nullával (vagy negatívval) törlődik. A nem véges
   /// összeg figyelmen kívül marad (JSON-ba sem menne).
   Future<void> setCash(String currency, double amount) async {
@@ -497,6 +634,7 @@ class PortfolioStore extends ChangeNotifier {
       await Future.wait([
         prefs.setString(_key, jsonEncode(_lots.map((l) => l.toJson()).toList())),
         prefs.setString(_dividendsKey, jsonEncode(_dividends.map((d) => d.toJson()).toList())),
+        prefs.setString(_splitsKey, jsonEncode(_splits.map((s) => s.toJson()).toList())),
         prefs.setString(_cashKey, jsonEncode(cash)),
         prefs.setString(_cashAtKey, jsonEncode(cashAtJson)),
       ]);

@@ -2626,6 +2626,47 @@ class AppLocalizationsIlo extends AppLocalizations {
       'Awan pay ti nairekord a dibidendo. Inayon dagitoy babaen ti ima, wenno i-import ti export ti broker-mo – maala met dagiti linia ti dibidendo daytoy.';
 
   @override
+  String get portfolioSplit => 'Stock split';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Stock split: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Mabalbaliwan dagiti panaggatang ken panaglako nga addaan petsa sakbay ti split: mapaadu ti bilang dagiti share ket mabingay ti presio ti tunggal share, isu nga agtalinaed ti gastos.';
+
+  @override
+  String get portfolioSplitRatio => 'Ratio (baro : daan)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Ikabil ti ratio a kas 10:1, wenno 1:10 para iti reverse split.';
+
+  @override
+  String get portfolioSplitDate => 'Petsa ti split';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Stock split $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Naikkat ti stock split';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count stock split ti nainayon',
+      one: '1 stock split ti nainayon',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

@@ -2630,6 +2630,47 @@ class AppLocalizationsGl extends AppLocalizations {
       'Aínda non hai dividendos rexistrados. Engádeos a man ou importa a exportación do teu corredor: as súas filas de dividendos tamén se recollen.';
 
   @override
+  String get portfolioSplit => 'Desdobramento de accións';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Desdobramento de accións: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'As compras e vendas con data anterior ao desdobramento axústanse: o número de accións multiplícase e o prezo por acción divídese, de modo que o custo non cambia.';
+
+  @override
+  String get portfolioSplitRatio => 'Proporción (novas : antigas)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Introduce unha proporción como 10:1, ou 1:10 para un desdobramento inverso.';
+
+  @override
+  String get portfolioSplitDate => 'Data do desdobramento';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Desdobramento de accións $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Desdobramento de accións eliminado';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Engadíronse $count desdobramentos de accións',
+      one: 'Engadiuse 1 desdobramento de accións',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

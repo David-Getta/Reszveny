@@ -743,5 +743,14 @@
   "eventDividendEstimate": "برآورد از پرداخت‌های ثبت‌شدهٔ شما",
   "labelYieldOnCost": "بازده بر بهای خرید",
   "glossYieldOnCost": "سود سهام دریافت‌شده در ۱۲ ماه گذشته تقسیم بر مبلغی که برای سهامی که هنوز دارید پرداخته‌اید. برخلاف بازده سود نقدی، این مقدار بر پایه قیمت خرید خودتان سنجیده می‌شود، نه قیمت امروز.",
-  "homeDividendsThisYear": "سود سهام امسال: {amount}"
+  "homeDividendsThisYear": "سود سهام امسال: {amount}",
+  "portfolioSplit": "تجزیه سهام",
+  "portfolioSplitTitle": "تجزیه سهام: {symbol}",
+  "portfolioSplitHint": "خریدها و فروش‌های با تاریخ پیش از تجزیه تعدیل می‌شوند: تعداد سهام ضرب و قیمت هر سهم تقسیم می‌شود، بنابراین هزینه تغییر نمی‌کند.",
+  "portfolioSplitRatio": "نسبت (جدید : قدیم)",
+  "portfolioSplitRatioError": "نسبتی مانند 10:1 وارد کنید، یا 1:10 برای تجزیه معکوس.",
+  "portfolioSplitDate": "تاریخ تجزیه",
+  "portfolioSplitRow": "تجزیه سهام {ratio}",
+  "portfolioSplitRemoved": "تجزیه سهام حذف شد",
+  "portfolioSplitsImported": "{count, plural, =1{1 تجزیه سهام اضافه شد} other{{count} تجزیه سهام اضافه شد}}"
 }

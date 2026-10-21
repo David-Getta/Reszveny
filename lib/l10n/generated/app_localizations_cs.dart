@@ -2668,6 +2668,47 @@ class AppLocalizationsCs extends AppLocalizations {
       'Zatím nejsou zaznamenány žádné dividendy. Přidejte je ručně nebo importujte export od svého brokera – řádky s dividendami se načtou také.';
 
   @override
+  String get portfolioSplit => 'Štěpení akcií';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Štěpení akcií: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Nákupy a prodeje s datem před štěpením se upraví: počet akcií se vynásobí a cena za akcii vydělí, takže náklady zůstanou stejné.';
+
+  @override
+  String get portfolioSplitRatio => 'Poměr (nové : staré)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Zadejte poměr jako 10:1, nebo 1:10 pro reverzní štěpení.';
+
+  @override
+  String get portfolioSplitDate => 'Datum štěpení';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Štěpení akcií $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Štěpení akcií smazáno';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Přidáno $count štěpení akcií',
+      one: 'Přidáno 1 štěpení akcií',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Siziň ýazan tölegleriňiz esasynda çaklanyldy",
   "labelYieldOnCost": "Satyn alyş bahasyna girdejililik",
   "glossYieldOnCost": "Soňky 12 aýda alnan diwidendler, häzirem saklaýan paýnamalaryňyz üçin tölän puluňyza bölünýär. Diwidend girdejililiginden tapawutlylykda, ol şu günki baha bilen däl-de, siziň öz satyn alyş bahaňyz bilen ölçelýär.",
-  "homeDividendsThisYear": "Şu ýylky diwidendler: {amount}"
+  "homeDividendsThisYear": "Şu ýylky diwidendler: {amount}",
+  "portfolioSplit": "Paýnamalaryň bölünişi",
+  "portfolioSplitTitle": "Paýnamalaryň bölünişi: {symbol}",
+  "portfolioSplitHint": "Bölünişden öňki senelik satyn almalar we satuwlar düzedilýär: paýnamalaryň sany köpeldilýär, bir paýnamanyň bahasy bolsa bölünýär, şonuň üçin çykdajy üýtgemeýär.",
+  "portfolioSplitRatio": "Gatnaşyk (täze : köne)",
+  "portfolioSplitRatioError": "10:1 ýaly gatnaşyk giriziň, ýa-da ters bölüniş üçin 1:10.",
+  "portfolioSplitDate": "Bölünişiň senesi",
+  "portfolioSplitRow": "Paýnamalaryň bölünişi {ratio}",
+  "portfolioSplitRemoved": "Paýnamalaryň bölünişi pozuldy",
+  "portfolioSplitsImported": "{count, plural, =1{1 paýnama bölünişi goşuldy} other{{count} paýnama bölünişi goşuldy}}"
 }

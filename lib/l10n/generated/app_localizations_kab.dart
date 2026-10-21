@@ -2604,6 +2604,47 @@ class AppLocalizationsKab extends AppLocalizations {
       'Ulac dividende yettwakelsen ar tura. Rnu-ten s ufus, neɣ kter asifeḍ n broker-ik – izirigen-is n dividendes ad ttwaṭṭfen daɣen.';
 
   @override
+  String get portfolioSplit => 'Beṭṭu n yimuren';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Beṭṭu n yimuren: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Tiɣin d tuzzniwin yesɛan azemz uqbel beṭṭu ttwaseggmen: amḍan n yimuren yettwakfel, ssuma n yal amur tettwabḍu, ihi ssuma tamatut teqqim akken tella.';
+
+  @override
+  String get portfolioSplitRatio => 'Assaɣ (amaynut : aqbur)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Sekcem assaɣ am 10:1, neɣ 1:10 i beṭṭu anmegli.';
+
+  @override
+  String get portfolioSplitDate => 'Azemz n beṭṭu';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Beṭṭu n yimuren $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Beṭṭu n yimuren yettwakkes';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ttwarnan $count n beṭṭu n yimuren',
+      one: 'Yettwarna 1 n beṭṭu n yimuren',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

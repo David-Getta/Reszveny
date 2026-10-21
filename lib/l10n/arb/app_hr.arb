@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Procijenjeno iz vaših evidentiranih isplata",
   "labelYieldOnCost": "Prinos na nabavnu cijenu",
   "glossYieldOnCost": "Dividende primljene u posljednjih 12 mjeseci podijeljene s onim što ste platili za dionice koje još držite. Za razliku od dividendnog prinosa, mjeri se prema vašoj kupovnoj cijeni, a ne prema današnjoj.",
-  "homeDividendsThisYear": "Dividende ove godine: {amount}"
+  "homeDividendsThisYear": "Dividende ove godine: {amount}",
+  "portfolioSplit": "Podjela dionica",
+  "portfolioSplitTitle": "Podjela dionica: {symbol}",
+  "portfolioSplitHint": "Kupnje i prodaje s datumom prije podjele usklađuju se: broj dionica se množi, a cijena po dionici dijeli, tako da trošak ostaje isti.",
+  "portfolioSplitRatio": "Omjer (nove : stare)",
+  "portfolioSplitRatioError": "Unesite omjer poput 10:1 ili 1:10 za obrnutu podjelu.",
+  "portfolioSplitDate": "Datum podjele",
+  "portfolioSplitRow": "Podjela dionica {ratio}",
+  "portfolioSplitRemoved": "Podjela dionica izbrisana",
+  "portfolioSplitsImported": "{count, plural, =1{Dodana je 1 podjela dionica} other{Dodano je {count} podjela dionica}}"
 }

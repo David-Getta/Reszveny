@@ -2598,6 +2598,47 @@ class AppLocalizationsPs extends AppLocalizations {
       'تر اوسه هیڅ ډیویډنډ ثبت نه دی. په لاس يې اضافه کړئ، یا د خپل بروکر اکسپورټ وارد کړئ – د هغه د ډیویډنډ کرښې هم اخیستل کېږي.';
 
   @override
+  String get portfolioSplit => 'د ونډو ویش';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'د ونډو ویش: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'له ویش مخکې نېټې لرونکي پېرودنې او پلورنې سمون مومي: د ونډو شمېر ضرب کېږي او د هرې ونډې بیه وېشل کېږي، نو لګښت همداسې پاتې کېږي.';
+
+  @override
+  String get portfolioSplitRatio => 'تناسب (نوې : زړې)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'لکه 10:1 تناسب ولیکئ، یا د معکوس ویش لپاره 1:10.';
+
+  @override
+  String get portfolioSplitDate => 'د ویش نېټه';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'د ونډو ویش $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'د ونډو ویش ړنګ شو';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count د ونډو ویشونه زیات شول',
+      one: '1 د ونډو ویش زیات شو',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

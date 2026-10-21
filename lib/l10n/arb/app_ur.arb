@@ -743,5 +743,14 @@
   "eventDividendEstimate": "آپ کی ریکارڈ کی گئی ادائیگیوں سے اندازہ",
   "labelYieldOnCost": "خرید قیمت پر ییلڈ",
   "glossYieldOnCost": "گزشتہ 12 مہینوں میں موصول شدہ ڈیویڈنڈ کو اس رقم سے تقسیم کیا جاتا ہے جو آپ نے ابھی تک رکھے ہوئے شیئرز کے لیے ادا کی تھی۔ ڈیویڈنڈ ییلڈ کے برعکس، اسے آج کی قیمت پر نہیں بلکہ آپ کی اپنی خرید قیمت پر ناپا جاتا ہے۔",
-  "homeDividendsThisYear": "اس سال کے ڈیویڈنڈ: {amount}"
+  "homeDividendsThisYear": "اس سال کے ڈیویڈنڈ: {amount}",
+  "portfolioSplit": "حصص کی تقسیم",
+  "portfolioSplitTitle": "حصص کی تقسیم: {symbol}",
+  "portfolioSplitHint": "تقسیم سے پہلے کی تاریخ والی خریداریاں اور فروخت ایڈجسٹ کی جاتی ہیں: حصص کی تعداد ضرب اور فی حصہ قیمت تقسیم کی جاتی ہے، تاکہ لاگت وہی رہے۔",
+  "portfolioSplitRatio": "تناسب (نئے : پرانے)",
+  "portfolioSplitRatioError": "10:1 جیسا تناسب درج کریں، یا ریورس اسپلٹ کے لیے 1:10۔",
+  "portfolioSplitDate": "تقسیم کی تاریخ",
+  "portfolioSplitRow": "حصص کی تقسیم {ratio}",
+  "portfolioSplitRemoved": "حصص کی تقسیم حذف کر دی گئی",
+  "portfolioSplitsImported": "{count, plural, =1{1 حصص کی تقسیم شامل کی گئی} other{{count} حصص کی تقسیمیں شامل کی گئیں}}"
 }

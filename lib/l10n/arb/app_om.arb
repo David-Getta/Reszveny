@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Kaffaltiiwwan ati galmeessiterraa tilmaamame",
   "labelYieldOnCost": "Bu'aa gatii bittaa irratti",
   "glossYieldOnCost": "Diviidendii ji'oota 12 darban keessa argame, maallaqa aksiyoonota ammas qabdu irratti kaffalteen hiramee. Dhibbeentaa qooda bu'aa irraa adda ta'ee, gatii har'aatiin osoo hin taane gatii ati ittiin bitteen safarama.",
-  "homeDividendsThisYear": "Diviidendii bara kanaa: {amount}"
+  "homeDividendsThisYear": "Diviidendii bara kanaa: {amount}",
+  "portfolioSplit": "Qoqqoodinsa aksiyoonaa",
+  "portfolioSplitTitle": "Qoqqoodinsa aksiyoonaa: {symbol}",
+  "portfolioSplitHint": "Bittaa fi gurgurtaan guyyaa qoqqoodinsaa dura jiran ni sirreeffamu: baay'inni aksiyoonaa ni baay'ifama, gatiin aksiyoona tokkoo ni hiramaa, kanaafuu baasiin akkuma duraatti tura.",
+  "portfolioSplitRatio": "Reeshoo (haaraa : moofaa)",
+  "portfolioSplitRatioError": "Reeshoo akka 10:1 galchi, yookiin qoqqoodinsa duubatti deebi'uuf 1:10.",
+  "portfolioSplitDate": "Guyyaa qoqqoodinsaa",
+  "portfolioSplitRow": "Qoqqoodinsa aksiyoonaa {ratio}",
+  "portfolioSplitRemoved": "Qoqqoodinsi aksiyoonaa haqameera",
+  "portfolioSplitsImported": "{count, plural, =1{Qoqqoodinsa aksiyoonaa 1 dabalame} other{Qoqqoodinsa aksiyoonaa {count} dabalaman}}"
 }

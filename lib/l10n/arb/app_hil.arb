@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Ginbanta-banta halin sa imo narekord nga mga bayad",
   "labelYieldOnCost": "Yield sa gasto",
   "glossYieldOnCost": "Ang dibidendo nga nabaton sa nagligad nga 12 ka bulan nga ginbahin sa imo ginbayad para sa mga share nga ginauyatan mo pa. Indi pareho sa dividend yield, ginasukol ini sa imo kaugalingon nga presyo sang pagbakal, indi sa presyo subong.",
-  "homeDividendsThisYear": "Dibidendo sini nga tuig: {amount}"
+  "homeDividendsThisYear": "Dibidendo sini nga tuig: {amount}",
+  "portfolioSplit": "Stock split",
+  "portfolioSplitTitle": "Stock split: {symbol}",
+  "portfolioSplitHint": "Ginabag-o ang mga pagbakal kag pagbaligya nga may petsa antes sang split: ginapadamo ang kadamuon sang mga share kag ginabahin ang presyo kada share, agod magpabilin ang gasto.",
+  "portfolioSplitRatio": "Ratio (bag-o : daan)",
+  "portfolioSplitRatioError": "Isulod ang ratio pareho sang 10:1, ukon 1:10 para sa reverse split.",
+  "portfolioSplitDate": "Petsa sang split",
+  "portfolioSplitRow": "Stock split {ratio}",
+  "portfolioSplitRemoved": "Ginpanas ang stock split",
+  "portfolioSplitsImported": "{count, plural, =1{1 stock split ang gindugang} other{{count} stock split ang gindugang}}"
 }

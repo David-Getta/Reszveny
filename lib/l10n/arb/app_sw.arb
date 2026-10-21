@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Imekadiriwa kutoka malipo uliyorekodi",
   "labelYieldOnCost": "Mavuno kwa bei ya kununua",
   "glossYieldOnCost": "Gawio lililopokelewa katika miezi 12 iliyopita likigawanywa kwa kiasi ulicholipa kwa hisa ambazo bado unazishikilia. Tofauti na mavuno ya gawio, hupimwa kwa bei yako mwenyewe ya kununua, si bei ya leo.",
-  "homeDividendsThisYear": "Gawio mwaka huu: {amount}"
+  "homeDividendsThisYear": "Gawio mwaka huu: {amount}",
+  "portfolioSplit": "Mgawanyo wa hisa",
+  "portfolioSplitTitle": "Mgawanyo wa hisa: {symbol}",
+  "portfolioSplitHint": "Manunuzi na mauzo yenye tarehe ya kabla ya mgawanyo hurekebishwa: idadi ya hisa huzidishwa na bei kwa hisa hugawanywa, hivyo gharama hubaki ile ile.",
+  "portfolioSplitRatio": "Uwiano (mpya : za zamani)",
+  "portfolioSplitRatioError": "Weka uwiano kama 10:1, au 1:10 kwa mgawanyo wa kinyume.",
+  "portfolioSplitDate": "Tarehe ya mgawanyo",
+  "portfolioSplitRow": "Mgawanyo wa hisa {ratio}",
+  "portfolioSplitRemoved": "Mgawanyo wa hisa umefutwa",
+  "portfolioSplitsImported": "{count, plural, =1{Mgawanyo 1 wa hisa umeongezwa} other{Migawanyo {count} ya hisa imeongezwa}}"
 }

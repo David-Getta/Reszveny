@@ -2138,6 +2138,57 @@
   "@portfolioDividendsEmpty": {
     "description": "Empty state of the dividends card."
   },
+  "portfolioSplit": "Stock split",
+  "@portfolioSplit": {
+    "description": "Button in a position's transactions sheet: record a stock split (e.g. 10-for-1)."
+  },
+  "portfolioSplitTitle": "Stock split: {symbol}",
+  "@portfolioSplitTitle": {
+    "description": "Title of the dialog that records a stock split for one stock.",
+    "placeholders": {
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "portfolioSplitHint": "Purchases and sales dated before the split are adjusted: the number of shares is multiplied and the price per share divided, so the cost stays the same.",
+  "@portfolioSplitHint": {
+    "description": "Explanation in the stock-split dialog."
+  },
+  "portfolioSplitRatio": "Ratio (new : old)",
+  "@portfolioSplitRatio": {
+    "description": "Field label in the stock-split dialog; the user types e.g. 10:1 (ten new shares for one old) or 1:10 for a reverse split."
+  },
+  "portfolioSplitRatioError": "Enter a ratio like 10:1, or 1:10 for a reverse split.",
+  "@portfolioSplitRatioError": {
+    "description": "Validation error under the ratio field in the stock-split dialog."
+  },
+  "portfolioSplitDate": "Date of the split",
+  "@portfolioSplitDate": {
+    "description": "Date row in the stock-split dialog."
+  },
+  "portfolioSplitRow": "Stock split {ratio}",
+  "@portfolioSplitRow": {
+    "description": "A recorded stock split in the transactions sheet; {ratio} is like 10:1.",
+    "placeholders": {
+      "ratio": {
+        "type": "String"
+      }
+    }
+  },
+  "portfolioSplitRemoved": "Stock split deleted",
+  "@portfolioSplitRemoved": {
+    "description": "Shown in the transactions sheet after deleting a recorded stock split, next to an Undo button."
+  },
+  "portfolioSplitsImported": "{count, plural, =1{1 stock split added} other{{count} stock splits added}}",
+  "@portfolioSplitsImported": {
+    "description": "After importing the app's own CSV export: how many stock splits were added.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "portfolioDividendsImported": "{count, plural, =1{1 dividend added} other{{count} dividends added}}",
   "@portfolioDividendsImported": {
     "description": "After importing a broker export: how many dividend payments were added.",

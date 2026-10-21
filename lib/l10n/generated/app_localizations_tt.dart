@@ -2605,6 +2605,47 @@ class AppLocalizationsTt extends AppLocalizations {
       'Дивидендлар әлегә язылмаган. Аларны кул белән өстәгез яки брокерыгызның экспортын импортлагыз – аның дивиденд юллары да алына.';
 
   @override
+  String get portfolioSplit => 'Акцияләрне бүлү';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Акцияләрне бүлү: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Бүлүгә кадәрге датадагы алу-сату операцияләре төзәтелә: акцияләр саны тапкырлана, ә бер акция бәясе бүленә, шуңа күрә чыгым үзгәрешсез кала.';
+
+  @override
+  String get portfolioSplitRatio => 'Нисбәт (яңа : иске)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      '10:1 кебек нисбәт кертегез, яки кире бүлү өчен 1:10.';
+
+  @override
+  String get portfolioSplitDate => 'Бүлү датасы';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Акцияләрне бүлү $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Акцияләрне бүлү бетерелде';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count акцияләрне бүлү өстәлде',
+      one: '1 акцияләрне бүлү өстәлде',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

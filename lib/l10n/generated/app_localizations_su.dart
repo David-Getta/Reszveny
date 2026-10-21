@@ -2610,6 +2610,47 @@ class AppLocalizationsSu extends AppLocalizations {
       'Can aya dividen anu kacatet. Tambihkeun sacara manual, atanapi impor ékspor ti broker anjeun – baris dividenna ogé bakal kacandak.';
 
   @override
+  String get portfolioSplit => 'Pamecahan saham';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Pamecahan saham: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Pameseran sareng penjualan anu tanggalna sateuacan pamecahan bakal disaluyukeun: jumlah saham dikalikeun sareng harga per saham dibagi, janten biayana tetep sami.';
+
+  @override
+  String get portfolioSplitRatio => 'Rasio (anyar : heubeul)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Lebetkeun rasio sapertos 10:1, atanapi 1:10 kanggo pamecahan tibalik.';
+
+  @override
+  String get portfolioSplitDate => 'Tanggal pamecahan';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Pamecahan saham $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Pamecahan saham parantos dihapus';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count pamecahan saham ditambihkeun',
+      one: '1 pamecahan saham ditambihkeun',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

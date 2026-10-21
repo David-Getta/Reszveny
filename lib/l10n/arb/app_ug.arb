@@ -743,5 +743,14 @@
   "eventDividendEstimate": "سىز خاتىرىلىگەن تۆلەملەردىن مۆلچەرلەنگەن",
   "labelYieldOnCost": "سېتىۋالغان باھادىكى نىسبەت",
   "glossYieldOnCost": "ئاخىرقى 12 ئايدا تاپشۇرۇۋالغان دىۋىدېندلار، سىز تېخى تۇتۇپ تۇرغان پايلار ئۈچۈن تۆلىگەن پۇلغا بۆلۈنگەن. پايدا ئۈلۈشى نىسبىتىدىن پەرقلىق ھالدا، ئۇ بۈگۈنكى باھا بىلەن ئەمەس، بەلكى سىزنىڭ ئۆز سېتىۋالغان باھىڭىز بىلەن ئۆلچىنىدۇ.",
-  "homeDividendsThisYear": "بۇ يىلقى دىۋىدېندلار: {amount}"
+  "homeDividendsThisYear": "بۇ يىلقى دىۋىدېندلار: {amount}",
+  "portfolioSplit": "پاي بۆلۈش",
+  "portfolioSplitTitle": "پاي بۆلۈش: {symbol}",
+  "portfolioSplitHint": "بۆلۈشتىن بۇرۇنقى چېسلادىكى سېتىۋېلىش ۋە سېتىشلار تەڭشىلىدۇ: پاي سانى كۆپەيتىلىدۇ، ھەر پاينىڭ باھاسى بۆلۈنىدۇ، شۇڭا تەننەرخ ئۆزگەرمەيدۇ.",
+  "portfolioSplitRatio": "نىسبەت (يېڭى : كونا)",
+  "portfolioSplitRatioError": "10:1 دەك نىسبەت كىرگۈزۈڭ، ياكى تەتۈر بۆلۈش ئۈچۈن 1:10.",
+  "portfolioSplitDate": "بۆلۈش چېسلاسى",
+  "portfolioSplitRow": "پاي بۆلۈش {ratio}",
+  "portfolioSplitRemoved": "پاي بۆلۈش ئۆچۈرۈلدى",
+  "portfolioSplitsImported": "{count, plural, =1{1 پاي بۆلۈش قوشۇلدى} other{{count} پاي بۆلۈش قوشۇلدى}}"
 }

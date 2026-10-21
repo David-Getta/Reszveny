@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Hiisaama iwde e yoɓdiiji ɗe mbinnduɗaa",
   "labelYieldOnCost": "Nafoore e coggu soodgol (%)",
   "glossYieldOnCost": "Dividendeeji ɗi a heɓi e lebbi 12 sakkitiiɗi, feccaaɗi e ko a yoɓi e aksiyoŋuuji ɗi a jogii tawo. So wonaa geɗal nafoore e coggu, ɗum ina ɓetee e coggu soodgol maa, wonaa coggu hannde.",
-  "homeDividendsThisYear": "Dividendeeji hitaande ndee: {amount}"
+  "homeDividendsThisYear": "Dividendeeji hitaande ndee: {amount}",
+  "portfolioSplit": "Feccugol share",
+  "portfolioSplitTitle": "Feccugol share: {symbol}",
+  "portfolioSplitHint": "Soodgol e yeeygol ɗi ñalngu mum adii feccugol ngol ina mbaylee: limoore share en ina ɓeydee, coggu share gooto ina feccee, ndeke coggu fof heddoto no wonnoo.",
+  "portfolioSplitRatio": "Hakkunde (keso : kiiɗɗo)",
+  "portfolioSplitRatioError": "Winndu hakkunde hono 10:1, walla 1:10 ngam feccugol ruttiingol.",
+  "portfolioSplitDate": "Ñalngu feccugol",
+  "portfolioSplitRow": "Feccugol share {ratio}",
+  "portfolioSplitRemoved": "Feccugol share momtaama",
+  "portfolioSplitsImported": "{count, plural, =1{Feccugol share 1 ɓeydaama} other{Feccugol share {count} ɓeydaama}}"
 }

@@ -743,5 +743,14 @@
   "eventDividendEstimate": "خەمڵێنراو لە پارەدانە تۆمارکراوەکانت",
   "labelYieldOnCost": "ڕێژەی قازانج بەپێی تێچوو",
   "glossYieldOnCost": "قازانجی پشکی وەرگیراو لە ١٢ مانگی ڕابردوو دابەش بەسەر ئەوەی داوتە بۆ ئەو پشکانەی هێشتا هەتن. جیاواز لە ڕێژەی قازانجی پشک، ئەمە بە نرخی کڕینی خۆت دەپێورێت، نەک بە نرخی ئەمڕۆ.",
-  "homeDividendsThisYear": "پشکی قازانجی ئەم ساڵ: {amount}"
+  "homeDividendsThisYear": "پشکی قازانجی ئەم ساڵ: {amount}",
+  "portfolioSplit": "دابەشکردنی پشک",
+  "portfolioSplitTitle": "دابەشکردنی پشک: {symbol}",
+  "portfolioSplitHint": "کڕین و فرۆشتنەکانی پێش بەرواری دابەشکردن ڕێک دەخرێن: ژمارەی پشکەکان لێک دەدرێت و نرخی هەر پشکێک دابەش دەکرێت، بۆیە تێچوون وەک خۆی دەمێنێتەوە.",
+  "portfolioSplitRatio": "ڕێژە (نوێ : کۆن)",
+  "portfolioSplitRatioError": "ڕێژەیەک بنووسە وەک 10:1، یان 1:10 بۆ دابەشکردنی پێچەوانە.",
+  "portfolioSplitDate": "بەرواری دابەشکردن",
+  "portfolioSplitRow": "دابەشکردنی پشک {ratio}",
+  "portfolioSplitRemoved": "دابەشکردنی پشک سڕایەوە",
+  "portfolioSplitsImported": "{count, plural, =1{1 دابەشکردنی پشک زیادکرا} other{{count} دابەشکردنی پشک زیادکرا}}"
 }

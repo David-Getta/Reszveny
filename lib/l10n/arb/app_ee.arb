@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Wobu akɔnta tso wò fexexe siwo nèŋlɔ ɖi me",
   "labelYieldOnCost": "Viɖemama ƒe agbɔsɔsɔ le ƒlexɔ ŋu",
   "glossYieldOnCost": "Viɖemama siwo nèxɔ le ɣleti 12 siwo va yi me, womã wo ɖe ga si nèxe ɖe akpa siwo gale asiwò ta dzi. Eto vovo na viɖemama ƒe agbɔsɔsɔ: wodzidzenɛ le wò ŋutɔ wò ƒlexɔ ŋu, ke menye egbe ƒe asixɔxɔ ŋu o.",
-  "homeDividendsThisYear": "Dividend ƒe sia: {amount}"
+  "homeDividendsThisYear": "Dividend ƒe sia: {amount}",
+  "portfolioSplit": "Share mamã",
+  "portfolioSplitTitle": "Share mamã: {symbol}",
+  "portfolioSplitHint": "Woɖɔa nuƒlele kple nudzadzra siwo ƒe ŋkeke do ŋgɔ na mamã la ɖo: wodzia share-awo ƒe xexlẽme ɖe edzi eye womãa share ɖeka ƒe asi, ale be ga si wozã la metrɔna o.",
+  "portfolioSplitRatio": "Dzidzenu (yeye : xoxo)",
+  "portfolioSplitRatioError": "Ŋlɔ dzidzenu abe 10:1 ene, alo 1:10 na mamã trɔtrɔ.",
+  "portfolioSplitDate": "Mamã ƒe ŋkeke",
+  "portfolioSplitRow": "Share mamã {ratio}",
+  "portfolioSplitRemoved": "Wotutu share mamã la",
+  "portfolioSplitsImported": "{count, plural, =1{Wotsɔ share mamã 1 kpe ɖe eŋu} other{Wotsɔ share mamã {count} kpe ɖe eŋu}}"
 }

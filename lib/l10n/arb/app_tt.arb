@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Сез язган түләүләр буенча исәпләнгән",
   "labelYieldOnCost": "Сатып алу бәясенә керемлелек",
   "glossYieldOnCost": "Соңгы 12 айда алынган дивидендлар, сездә әле дә булган акцияләр өчен түләгән суммага бүленгән. Дивиденд керемлелегеннән аермалы буларак, ул бүгенге бәягә түгел, ә сезнең үз сатып алу бәягезгә карата үлчәнә.",
-  "homeDividendsThisYear": "Бу елгы дивидендлар: {amount}"
+  "homeDividendsThisYear": "Бу елгы дивидендлар: {amount}",
+  "portfolioSplit": "Акцияләрне бүлү",
+  "portfolioSplitTitle": "Акцияләрне бүлү: {symbol}",
+  "portfolioSplitHint": "Бүлүгә кадәрге датадагы алу-сату операцияләре төзәтелә: акцияләр саны тапкырлана, ә бер акция бәясе бүленә, шуңа күрә чыгым үзгәрешсез кала.",
+  "portfolioSplitRatio": "Нисбәт (яңа : иске)",
+  "portfolioSplitRatioError": "10:1 кебек нисбәт кертегез, яки кире бүлү өчен 1:10.",
+  "portfolioSplitDate": "Бүлү датасы",
+  "portfolioSplitRow": "Акцияләрне бүлү {ratio}",
+  "portfolioSplitRemoved": "Акцияләрне бүлү бетерелде",
+  "portfolioSplitsImported": "{count, plural, =1{1 акцияләрне бүлү өстәлде} other{{count} акцияләрне бүлү өстәлде}}"
 }

@@ -2609,6 +2609,47 @@ class AppLocalizationsTg extends AppLocalizations {
       'Ҳоло ягон дивиденд сабт нашудааст. Онҳоро дастӣ илова кунед ё содироти брокери худро ворид кунед – сатрҳои дивиденди он ҳам гирифта мешаванд.';
 
   @override
+  String get portfolioSplit => 'Тақсими саҳмияҳо';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Тақсими саҳмияҳо: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Хариду фурӯшҳои то санаи тақсим ислоҳ карда мешаванд: шумораи саҳмияҳо зарб ва нархи ҳар саҳмия тақсим карда мешавад, бинобар ин арзиш бетағйир мемонад.';
+
+  @override
+  String get portfolioSplitRatio => 'Таносуб (нав : кӯҳна)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Таносубро ба мисли 10:1 ворид кунед, ё 1:10 барои тақсими баръакс.';
+
+  @override
+  String get portfolioSplitDate => 'Санаи тақсим';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Тақсими саҳмияҳо $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Тақсими саҳмияҳо нест карда шуд';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count тақсими саҳмияҳо илова шуд',
+      one: '1 тақсими саҳмияҳо илова шуд',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

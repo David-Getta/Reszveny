@@ -2647,6 +2647,47 @@ class AppLocalizationsRo extends AppLocalizations {
       'Niciun dividend înregistrat încă. Adaugă-le manual sau importă exportul de la broker – rândurile cu dividende sunt preluate și ele.';
 
   @override
+  String get portfolioSplit => 'Divizare de acțiuni';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Divizare de acțiuni: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Cumpărările și vânzările datate înainte de divizare sunt ajustate: numărul de acțiuni se înmulțește, iar prețul pe acțiune se împarte, astfel încât costul rămâne același.';
+
+  @override
+  String get portfolioSplitRatio => 'Raport (noi : vechi)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Introdu un raport precum 10:1 sau 1:10 pentru o divizare inversă (consolidare).';
+
+  @override
+  String get portfolioSplitDate => 'Data divizării';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Divizare de acțiuni $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Divizare de acțiuni ștearsă';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count divizări de acțiuni adăugate',
+      one: '1 divizare de acțiuni adăugată',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

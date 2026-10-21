@@ -743,5 +743,14 @@
   "eventDividendEstimate": "A fojú díwọ̀n rẹ̀ láti ara ìsanwó tí o kọ sílẹ̀",
   "labelYieldOnCost": "Ìwọ̀n èrè lórí owó tí o san",
   "glossYieldOnCost": "Èrè ìpín tí o gbà ní oṣù 12 tó kọjá pín pẹ̀lú owó tí o san fún àwọn ìpín tí o ṣì ní. Ó yàtọ̀ sí ìwọ̀n èrè ìpín, nítorí a ń wọ̀n ún lórí owó tí ìwọ fúnra rẹ fi rà á, kì í ṣe owó òní.",
-  "homeDividendsThisYear": "Ìpín èrè ọdún yìí: {amount}"
+  "homeDividendsThisYear": "Ìpín èrè ọdún yìí: {amount}",
+  "portfolioSplit": "Pípín ìpín",
+  "portfolioSplitTitle": "Pípín ìpín: {symbol}",
+  "portfolioSplitHint": "A ó ṣàtúnṣe àwọn rírà àti títà tí ọjọ́ wọn ṣáájú pípín náà: a ó sọ iye ìpín di púpọ̀, a ó sì pín iye owó ìpín kọ̀ọ̀kan, nítorí náà iye owó tí a ná kò ní yí padà.",
+  "portfolioSplitRatio": "Ìwọ̀n (tuntun : àtijọ́)",
+  "portfolioSplitRatioError": "Tẹ ìwọ̀n bíi 10:1, tàbí 1:10 fún pípín yípadà.",
+  "portfolioSplitDate": "Ọjọ́ pípín náà",
+  "portfolioSplitRow": "Pípín ìpín {ratio}",
+  "portfolioSplitRemoved": "A ti pa pípín ìpín rẹ́",
+  "portfolioSplitsImported": "{count, plural, =1{A ti fi pípín ìpín 1 kún un} other{A ti fi pípín ìpín {count} kún un}}"
 }

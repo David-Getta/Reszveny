@@ -2568,6 +2568,47 @@ class AppLocalizationsTi extends AppLocalizations {
       'ክሳብ ሕጂ ዝተመዝገበ ድቪደንድ የለን። ብኢድካ ወስኾም፣ ወይ ናይ ብሮከርካ ኤክስፖርት ኣእቱ – ናይ ድቪደንድ መስመራቱ እውን ይውሰዱ።';
 
   @override
+  String get portfolioSplit => 'ምክፍፋል ኣክስዮን';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'ምክፍፋል ኣክስዮን: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'ቅድሚ እቲ ምክፍፋል ዝተገብሩ ምዕዳግን ምሻጥን ይተዓራረዩ፦ ቁጽሪ ኣክስዮን ይባዛሕ፣ ዋጋ ነፍሲ ወከፍ ኣክስዮን ከኣ ይምቀል፣ ስለዚ እቲ ወጻኢ ከምዘለዎ ይጸንሕ።';
+
+  @override
+  String get portfolioSplitRatio => 'መጠን (ሓድሽ : ኣረጊት)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'ከም 10:1 ዝኣመሰለ መጠን ኣእትዉ፣ ወይ ንተገላቢጦሽ ምክፍፋል 1:10።';
+
+  @override
+  String get portfolioSplitDate => 'ዕለት ምክፍፋል';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'ምክፍፋል ኣክስዮን $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'ምክፍፋል ኣክስዮን ተደምሲሱ';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ምክፍፋላት ኣክስዮን ተወሲኾም',
+      one: '1 ምክፍፋል ኣክስዮን ተወሲኹ',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

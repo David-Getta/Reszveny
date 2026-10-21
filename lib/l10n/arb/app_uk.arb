@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Оцінка за записаними вами виплатами",
   "labelYieldOnCost": "Дохідність до ціни купівлі",
   "glossYieldOnCost": "Дивіденди, отримані за останні 12 місяців, поділені на те, що ви заплатили за акції, які ще тримаєте. На відміну від дивідендної дохідності, вона вимірюється відносно вашої ціни купівлі, а не сьогоднішньої.",
-  "homeDividendsThisYear": "Дивіденди цього року: {amount}"
+  "homeDividendsThisYear": "Дивіденди цього року: {amount}",
+  "portfolioSplit": "Спліт акцій",
+  "portfolioSplitTitle": "Спліт акцій: {symbol}",
+  "portfolioSplitHint": "Купівлі та продажі з датою до спліту коригуються: кількість акцій множиться, а ціна за акцію ділиться, тому вартість не змінюється.",
+  "portfolioSplitRatio": "Коефіцієнт (нові : старі)",
+  "portfolioSplitRatioError": "Введіть коефіцієнт, наприклад 10:1, або 1:10 для зворотного спліту (консолідації).",
+  "portfolioSplitDate": "Дата спліту",
+  "portfolioSplitRow": "Спліт акцій {ratio}",
+  "portfolioSplitRemoved": "Спліт акцій видалено",
+  "portfolioSplitsImported": "{count, plural, =1{Додано 1 спліт акцій} other{Додано сплітів акцій: {count}}}"
 }

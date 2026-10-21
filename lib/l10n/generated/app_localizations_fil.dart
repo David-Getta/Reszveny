@@ -2614,6 +2614,47 @@ class AppLocalizationsFil extends AppLocalizations {
       'Wala pang naitalang dibidendo. Idagdag ang mga ito nang manu-mano, o i-import ang export ng iyong broker – kukunin din ang mga row ng dibidendo nito.';
 
   @override
+  String get portfolioSplit => 'Stock split';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Stock split: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Ina-adjust ang mga pagbili at pagbenta na may petsang bago ang split: pinaparami ang bilang ng mga share at hinahati ang presyo kada share, kaya hindi nagbabago ang gastos.';
+
+  @override
+  String get portfolioSplitRatio => 'Ratio (bago : luma)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Maglagay ng ratio tulad ng 10:1, o 1:10 para sa reverse split.';
+
+  @override
+  String get portfolioSplitDate => 'Petsa ng split';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Stock split $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Na-delete ang stock split';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count stock split ang naidagdag',
+      one: '1 stock split ang naidagdag',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

@@ -743,5 +743,14 @@
   "eventDividendEstimate": "अहाँक दर्ज कएल भुगतानसँ अनुमानित",
   "labelYieldOnCost": "लागत पर यील्ड",
   "glossYieldOnCost": "पछिला 12 महीनामे प्राप्त लाभांशकेँ ओहि राशिसँ भाग देल जाइत अछि जे अहाँ एखनो राखल शेयरक लेल देने छलहुँ। लाभांश यील्डसँ भिन्न, ई आइक भाव पर नहि, अहाँक अपन खरीद भाव पर मापल जाइत अछि।",
-  "homeDividendsThisYear": "एहि साल डिविडेंड: {amount}"
+  "homeDividendsThisYear": "एहि साल डिविडेंड: {amount}",
+  "portfolioSplit": "स्टॉक स्प्लिट",
+  "portfolioSplitTitle": "स्टॉक स्प्लिट: {symbol}",
+  "portfolioSplitHint": "स्प्लिटसँ पहिनेक तारीखक खरीद आ बिक्री समायोजित कएल जाइत अछि: शेयरक संख्या गुणा आ प्रति शेयर दाम भाग कएल जाइत अछि, जाहिसँ लागत ओहिना रहैत अछि।",
+  "portfolioSplitRatio": "अनुपात (नव : पुरान)",
+  "portfolioSplitRatioError": "10:1 जकाँ अनुपात दिअ, वा रिवर्स स्प्लिट लेल 1:10।",
+  "portfolioSplitDate": "स्प्लिटक तारीख",
+  "portfolioSplitRow": "स्टॉक स्प्लिट {ratio}",
+  "portfolioSplitRemoved": "स्टॉक स्प्लिट हटाओल गेल",
+  "portfolioSplitsImported": "{count, plural, =1{1 स्टॉक स्प्लिट जोड़ल गेल} other{{count} स्टॉक स्प्लिट जोड़ल गेल}}"
 }

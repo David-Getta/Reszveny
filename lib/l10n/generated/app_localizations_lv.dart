@@ -2648,6 +2648,47 @@ class AppLocalizationsLv extends AppLocalizations {
       'Dividendes vēl nav reģistrētas. Pievienojiet tās manuāli vai importējiet sava brokera eksportu – tiks nolasītas arī tā dividenžu rindas.';
 
   @override
+  String get portfolioSplit => 'Akciju sadalīšana';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Akciju sadalīšana: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Pirkumi un pārdošanas darījumi ar datumu pirms sadalīšanas tiek koriģēti: akciju skaits tiek reizināts, bet cena par akciju dalīta, tāpēc izmaksas nemainās.';
+
+  @override
+  String get portfolioSplitRatio => 'Attiecība (jaunās : vecās)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Ievadiet attiecību, piemēram, 10:1, vai 1:10 akciju apvienošanai.';
+
+  @override
+  String get portfolioSplitDate => 'Sadalīšanas datums';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Akciju sadalīšana $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Akciju sadalīšana izdzēsta';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Pievienotas $count akciju sadalīšanas',
+      one: 'Pievienota 1 akciju sadalīšana',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

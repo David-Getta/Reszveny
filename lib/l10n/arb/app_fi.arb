@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Arvio kirjaamiesi maksujen perusteella",
   "labelYieldOnCost": "Tuotto hankintahinnalle",
   "glossYieldOnCost": "Viimeisten 12 kuukauden aikana saadut osingot jaettuna sillä, mitä maksoit yhä omistamistasi osakkeista. Toisin kuin osinkotuotto, se lasketaan omaan ostohintaasi nähden, ei tämän päivän kurssiin.",
-  "homeDividendsThisYear": "Osingot tänä vuonna: {amount}"
+  "homeDividendsThisYear": "Osingot tänä vuonna: {amount}",
+  "portfolioSplit": "Osakesplitti",
+  "portfolioSplitTitle": "Osakesplitti: {symbol}",
+  "portfolioSplitHint": "Ennen splittiä päivätyt ostot ja myynnit oikaistaan: osakkeiden lukumäärä kerrotaan ja osakekohtainen hinta jaetaan, joten hankintameno pysyy samana.",
+  "portfolioSplitRatio": "Suhde (uudet : vanhat)",
+  "portfolioSplitRatioError": "Anna suhde, esimerkiksi 10:1, tai 1:10 käänteiselle splitille.",
+  "portfolioSplitDate": "Splitin päivämäärä",
+  "portfolioSplitRow": "Osakesplitti {ratio}",
+  "portfolioSplitRemoved": "Osakesplitti poistettu",
+  "portfolioSplitsImported": "{count, plural, =1{1 osakesplitti lisätty} other{{count} osakesplittiä lisätty}}"
 }

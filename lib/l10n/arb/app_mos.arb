@@ -743,5 +743,14 @@
   "eventDividendEstimate": "B geelg-a ne f sẽn gʋls yaoodã",
   "labelYieldOnCost": "Dividãnd nafa ligd f sẽn yao zugu",
   "glossYieldOnCost": "Dividãnd nins f sẽn paam kiuug 12 sẽn loogã, pʋɩ ne ligd ning f sẽn yao aksiõ nins f sẽn ket n tarã. A pa wa dividãnd nafa ye: b makd-a-la ne ligd ning f sẽn yao n da wã, la pa ne rũndã ligdã ye.",
-  "homeDividendsThisYear": "Dividand yʋʋm-kãngã: {amount}"
+  "homeDividendsThisYear": "Dividand yʋʋm-kãngã: {amount}",
+  "portfolioSplit": "Paart-rãmbã pʋɩɩbo",
+  "portfolioSplitTitle": "Paart-rãmbã pʋɩɩbo: {symbol}",
+  "portfolioSplitHint": "Raabã la koosgã sẽn maan pʋɩɩbã taoor toeemame: paart-rãmbã sõor paasdame la paart a ye ligdã boogdame, tɩ ligdã fãa pa toeem ye.",
+  "portfolioSplitRatio": "Pʋɩɩb sõor (paalg : kʋdg)",
+  "portfolioSplitRatioError": "Gʋls pʋɩɩb sõor wa 10:1, bɩ 1:10 pʋɩɩb lebgr yĩnga.",
+  "portfolioSplitDate": "Pʋɩɩbã daar",
+  "portfolioSplitRow": "Paart-rãmbã pʋɩɩbo {ratio}",
+  "portfolioSplitRemoved": "Paart-rãmbã pʋɩɩbo yiisame",
+  "portfolioSplitsImported": "{count, plural, =1{Paart pʋɩɩb a 1 paasame} other{Paart pʋɩɩb {count} paasame}}"
 }

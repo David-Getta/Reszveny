@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Mbadilu kumbukila mfutu iwakafunda",
   "labelYieldOnCost": "Rendement pa mushinga wa kusumba",
   "glossYieldOnCost": "Dividende idi bapete mu ngondo 12 ya ndekelu, miabanyibue ku mfranga iwakafuta bua ba action idi nayi too ne lelu. Kadi ki mmuomumue ne rendement wa dividende to: badi bayipima ku mushinga uwakasumba wewe, kadi ki nku mushinga wa lelu to.",
-  "homeDividendsThisYear": "Dividende tshidimu etshi: {amount}"
+  "homeDividendsThisYear": "Dividende tshidimu etshi: {amount}",
+  "portfolioSplit": "Diabanya dia share",
+  "portfolioSplitTitle": "Diabanya dia share: {symbol}",
+  "portfolioSplitHint": "Masumba ne mapana adi ne matuku kumpala kua diabanya adi alongolola: bungi bua share budi buvudija ne mushinga wa share umue udi wabanya, nunku mushinga wonso kawena ushintuluka.",
+  "portfolioSplitRatio": "Tshipiminu (tshipiatshipia : tshikulukulu)",
+  "portfolioSplitRatioError": "Funda tshipiminu bu 10:1, anyi 1:10 bua diabanya dia kupingaja.",
+  "portfolioSplitDate": "Dituku dia diabanya",
+  "portfolioSplitRow": "Diabanya dia share {ratio}",
+  "portfolioSplitRemoved": "Diabanya dia share ndijimija",
+  "portfolioSplitsImported": "{count, plural, =1{Diabanya dia share 1 ndisakidila} other{Diabanya dia share {count} ndisakidila}}"
 }

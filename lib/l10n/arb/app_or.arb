@@ -743,5 +743,14 @@
   "eventDividendEstimate": "ଆପଣ ରେକର୍ଡ କରିଥିବା ପେମେଣ୍ଟରୁ ଆକଳନ",
   "labelYieldOnCost": "କ୍ରୟ ମୂଲ୍ୟ ଉପରେ ୟିଲ୍ଡ",
   "glossYieldOnCost": "ଗତ ୧୨ ମାସରେ ପ୍ରାପ୍ତ ଡିଭିଡେଣ୍ଡକୁ ଆପଣ ଏବେ ବି ଧରି ରଖିଥିବା ସେୟାର ପାଇଁ ଦେଇଥିବା ରାଶି ଦ୍ୱାରା ଭାଗ କରାଯାଏ। ଲାଭାଂଶ ୟିଲ୍ଡ ଭଳି ନୁହେଁ, ଏହା ଆଜିର ଦର ଉପରେ ନୁହେଁ, ଆପଣ ନିଜେ କିଣିଥିବା ଦର ଉପରେ ମାପ କରାଯାଏ।",
-  "homeDividendsThisYear": "ଏହି ବର୍ଷର ଡିଭିଡେଣ୍ଡ: {amount}"
+  "homeDividendsThisYear": "ଏହି ବର୍ଷର ଡିଭିଡେଣ୍ଡ: {amount}",
+  "portfolioSplit": "ଷ୍ଟକ୍ ସ୍ପ୍ଲିଟ୍",
+  "portfolioSplitTitle": "ଷ୍ଟକ୍ ସ୍ପ୍ଲିଟ୍: {symbol}",
+  "portfolioSplitHint": "ସ୍ପ୍ଲିଟ୍ ପୂର୍ବ ତାରିଖର କ୍ରୟ ଓ ବିକ୍ରୟ ସଜାଡ଼ି ଦିଆଯାଏ: ସେୟାର ସଂଖ୍ୟା ଗୁଣିତ ହୁଏ ଏବଂ ପ୍ରତି ସେୟାର ମୂଲ୍ୟ ଭାଗ ହୁଏ, ତେଣୁ ଖର୍ଚ୍ଚ ସମାନ ରହେ।",
+  "portfolioSplitRatio": "ଅନୁପାତ (ନୂଆ : ପୁରୁଣା)",
+  "portfolioSplitRatioError": "10:1 ଭଳି ଅନୁପାତ ଲେଖନ୍ତୁ, କିମ୍ବା ରିଭର୍ସ ସ୍ପ୍ଲିଟ୍ ପାଇଁ 1:10।",
+  "portfolioSplitDate": "ସ୍ପ୍ଲିଟ୍ ତାରିଖ",
+  "portfolioSplitRow": "ଷ୍ଟକ୍ ସ୍ପ୍ଲିଟ୍ {ratio}",
+  "portfolioSplitRemoved": "ଷ୍ଟକ୍ ସ୍ପ୍ଲିଟ୍ ବିଲୋପ ହେଲା",
+  "portfolioSplitsImported": "{count, plural, =1{1 ଷ୍ଟକ୍ ସ୍ପ୍ଲିଟ୍ ଯୋଡ଼ା ହେଲା} other{{count} ଷ୍ଟକ୍ ସ୍ପ୍ଲିଟ୍ ଯୋଡ଼ା ହେଲା}}"
 }

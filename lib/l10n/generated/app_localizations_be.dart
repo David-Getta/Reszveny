@@ -2674,6 +2674,47 @@ class AppLocalizationsBe extends AppLocalizations {
       'Дывідэнды пакуль не запісаныя. Дадайце іх уручную або імпартуйце экспарт вашага брокера – радкі з дывідэндамі таксама падхопяцца.';
 
   @override
+  String get portfolioSplit => 'Дробленне акцый';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Дробленне акцый: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Пакупкі і продажы, датаваныя да драблення, карэктуюцца: колькасць акцый памнажаецца, а цана за акцыю дзеліцца, таму кошт застаецца тым жа.';
+
+  @override
+  String get portfolioSplitRatio => 'Каэфіцыент (новыя : старыя)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Увядзіце каэфіцыент, напрыклад 10:1, або 1:10 для зваротнага драблення.';
+
+  @override
+  String get portfolioSplitDate => 'Дата драблення';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Дробленне акцый $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Дробленне акцый выдалена';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Дададзена драбленняў акцый: $count',
+      one: 'Дададзена 1 дробленне акцый',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

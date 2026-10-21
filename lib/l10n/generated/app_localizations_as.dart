@@ -2605,6 +2605,47 @@ class AppLocalizationsAs extends AppLocalizations {
       'এতিয়ালৈকে কোনো লাভাংশ লিপিবদ্ধ কৰা হোৱা নাই। হাতে যোগ কৰক, বা আপোনাৰ ব্ৰোকাৰৰ এক্সপোৰ্ট আমদানি কৰক – তাৰ লাভাংশৰ শাৰীসমূহো লোৱা হয়।';
 
   @override
+  String get portfolioSplit => 'ষ্টক বিভাজন';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'ষ্টক বিভাজন: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'বিভাজনৰ আগৰ তাৰিখৰ ক্ৰয় আৰু বিক্ৰয়সমূহ সামঞ্জস্য কৰা হয়: শ্বেয়াৰৰ সংখ্যা পূৰণ কৰা হয় আৰু প্ৰতিটো শ্বেয়াৰৰ মূল্য হৰণ কৰা হয়, যাতে মুঠ ব্যয় একে থাকে।';
+
+  @override
+  String get portfolioSplitRatio => 'অনুপাত (নতুন : পুৰণি)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      '10:1 ৰ দৰে অনুপাত দিয়ক, বা বিপৰীত বিভাজনৰ বাবে 1:10।';
+
+  @override
+  String get portfolioSplitDate => 'বিভাজনৰ তাৰিখ';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'ষ্টক বিভাজন $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'ষ্টক বিভাজন মচি পেলোৱা হ\'ল';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count টা ষ্টক বিভাজন যোগ কৰা হ\'ল',
+      one: '1 টা ষ্টক বিভাজন যোগ কৰা হ\'ল',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

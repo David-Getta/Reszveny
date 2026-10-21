@@ -2602,6 +2602,47 @@ class AppLocalizationsBho extends AppLocalizations {
       'अबहीं ले कवनो डिविडेंड दर्ज नइखे। हाथ से जोड़ीं, भा आपन ब्रोकर के एक्सपोर्ट इम्पोर्ट करीं – ओकर डिविडेंड वाला पंक्ति भी ले लिहल जाला।';
 
   @override
+  String get portfolioSplit => 'स्टॉक स्प्लिट';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'स्टॉक स्प्लिट: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'स्प्लिट से पहिले के तारीख वाला खरीद आ बिक्री समायोजित हो जाला: शेयर के संख्या गुना हो जाला आ हर शेयर के दाम भाग हो जाला, जेसे लागत ओतने रहेला।';
+
+  @override
+  String get portfolioSplitRatio => 'अनुपात (नया : पुराना)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      '10:1 जइसन अनुपात डालीं, भा रिवर्स स्प्लिट खातिर 1:10।';
+
+  @override
+  String get portfolioSplitDate => 'स्प्लिट के तारीख';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'स्टॉक स्प्लिट $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'स्टॉक स्प्लिट हटा दिहल गइल';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count स्टॉक स्प्लिट जोड़ल गइल',
+      one: '1 स्टॉक स्प्लिट जोड़ल गइल',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

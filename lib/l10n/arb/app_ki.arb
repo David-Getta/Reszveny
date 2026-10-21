@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Ũthimĩtwo kuuma marĩhi marĩa wandĩkĩte",
   "labelYieldOnCost": "Uumithio wa dividend harĩ thogora wa kũgũra",
   "glossYieldOnCost": "Dividend ĩrĩa wamũkĩrire mĩeri 12 mĩthiru ĩgayanĩtio na mbeca iria warĩhire hisa iria ũrĩ nacio nginya rĩu. Ĩtiganĩte na uumithio wa dividend: ĩthimagwo na thogora waku wa kũgũra, no ti thogora wa ũmũthĩ.",
-  "homeDividendsThisYear": "Mĩgai ya faida mwaka ũyũ: {amount}"
+  "homeDividendsThisYear": "Mĩgai ya faida mwaka ũyũ: {amount}",
+  "portfolioSplit": "Ũgayanio wa share",
+  "portfolioSplitTitle": "Ũgayanio wa share: {symbol}",
+  "portfolioSplitHint": "Magũri na mendia marĩa marĩ na matukũ mbere ya ũgayanio nĩmaraarũo: mũigana wa share ũkongererwo na thogora wa share ĩmwe ũkagayanio, nĩguo mbeca iria ciahũthĩrirwo ikorwo o ũrĩa ciarĩ.",
+  "portfolioSplitRatio": "Mũigana (njerũ : nguũ)",
+  "portfolioSplitRatioError": "Andĩka mũigana ta 10:1, kana 1:10 harĩ ũgayanio wa gũcokia.",
+  "portfolioSplitDate": "Mũthenya wa ũgayanio",
+  "portfolioSplitRow": "Ũgayanio wa share {ratio}",
+  "portfolioSplitRemoved": "Ũgayanio wa share nĩweheretio",
+  "portfolioSplitsImported": "{count, plural, =1{Ũgayanio wa share 1 nĩwongereirwo} other{Ũgayanio wa share {count} nĩwongereirwo}}"
 }

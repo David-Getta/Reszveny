@@ -43,6 +43,66 @@ void main() {
   });
 
   group('PortfolioStore', () {
+    test('a stock split adjusts the transactions before its day; the cost stays, ids stay', () async {
+      SharedPreferences.setMockInitialValues({});
+      final store = PortfolioStore();
+      final buy = await store.add(
+        symbol: 'NVDA',
+        quantity: 10,
+        price: 900,
+        currency: 'USD',
+        date: DateTime(2024, 3, 1),
+      );
+      await store.add(
+        symbol: 'NVDA',
+        quantity: 4,
+        price: 1000,
+        currency: 'USD',
+        sell: true,
+        date: DateTime(2024, 5, 1),
+      );
+      // A felaprózás napján már az új darabszám: ez a vétel nem igazítódik.
+      await store.add(symbol: 'NVDA', quantity: 5, price: 120, currency: 'USD', date: DateTime(2024, 6, 10));
+      await store.addSplit(symbol: 'nvda', from: 1, to: 10, date: DateTime(2024, 6, 10, 15));
+      final pos = store.positionOf('NVDA')!;
+      expect(pos.quantity, 65, reason: '(10 − 4) × 10 + 5');
+      expect(pos.cost, closeTo(60 * 90 + 5 * 120, 1e-9), reason: "a megmaradt 6 régi = 60 új × 90");
+      expect(pos.realizedGain, closeTo(4 * (1000 - 900), 1e-9), reason: 'a felaprózás előtti eladás nyeresége ugyanaz');
+      expect(store.adjustedLots.firstWhere((l) => l.id == buy.id).quantity, 100);
+      expect(store.adjustedLots.firstWhere((l) => l.id == buy.id).price, 90);
+      expect(store.lots.firstWhere((l) => l.id == buy.id).quantity, 10, reason: 'a tárolt tétel változatlan');
+      expect(store.splitsOf('NVDA').single.label, '10:1');
+      expect(store.splits.single.date, DateTime(2024, 6, 10), reason: 'napra kerekítve');
+
+      // Több felaprózás időrendben, összevonás (1:10) is; egy másik részvényt nem érint.
+      await store.add(symbol: 'XYZ', quantity: 100, price: 2, currency: 'USD', date: DateTime(2020, 1, 1));
+      await store.addSplit(symbol: 'XYZ', from: 10, to: 1, date: DateTime(2021, 1, 1));
+      await store.addSplit(symbol: 'XYZ', from: 1, to: 3, date: DateTime(2022, 1, 1));
+      expect(store.positionOf('XYZ')!.quantity, 30);
+      expect(store.positionOf('XYZ')!.averageCost, closeTo(200 / 30, 1e-9));
+      expect(store.positionOf('NVDA')!.quantity, 65);
+      // Dátum nélküli vétel a legelejéről való (igazítódik), dátum nélküli eladás a végéről (nem).
+      await store.add(symbol: 'ABC', quantity: 1, price: 100, currency: 'USD');
+      await store.add(symbol: 'ABC', quantity: 1, price: 30, currency: 'USD', sell: true);
+      await store.addSplit(symbol: 'ABC', from: 1, to: 2, date: DateTime(2023, 1, 1));
+      expect(store.positionOf('ABC')!.quantity, 1);
+      expect(store.positionOf('ABC')!.realizedGain, closeTo(1 * (30 - 50), 1e-9));
+
+      // Törlés és visszaállítás; a tároló újratöltve ugyanazt adja.
+      final s = store.splitsOf('NVDA').single;
+      await store.removeSplit(s.id);
+      expect(store.positionOf('NVDA')!.quantity, 11);
+      await store.restoreSplit(s);
+      expect(store.positionOf('NVDA')!.quantity, 65);
+      final again = await PortfolioStore.load();
+      expect(again.splits.map((x) => x.label), ['1:10', '3:1', '2:1', '10:1']);
+      expect(again.positionOf('NVDA')!.quantity, 65);
+      // Hibás rekordok kimaradnak (nulla, egyenlő arány, dátum nélkül).
+      expect(SplitRecord.fromJson({'symbol': 'A', 'from': 0, 'to': 2, 'date': '2024-01-01'}), isNull);
+      expect(SplitRecord.fromJson({'symbol': 'A', 'from': 2, 'to': 2, 'date': '2024-01-01'}), isNull);
+      expect(SplitRecord.fromJson({'symbol': 'A', 'from': 1, 'to': 2}), isNull);
+    });
+
     test('merges purchases of the same stock into one position with a weighted average cost', () async {
       final store = PortfolioStore();
       await store.add(symbol: 'aapl', quantity: 10, price: 150, currency: 'USD', date: DateTime(2025, 3, 14));
@@ -598,5 +658,50 @@ void main() {
     expect(s.analysisOptions(symbol: 'AAPL').position!.dividendsReceived12m, closeTo(7.8, 1e-9));
     await s.prefetchDividendRates('MSFT');
     expect(asked, hasLength(1), reason: 'nem birtokolt részvénynél nincs hálózat');
+  });
+
+  testWidgets('a stock split is recorded from the transactions sheet, shown, deleted and restored', (tester) async {
+    tester.view.physicalSize = const Size(1200, 2400);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    SharedPreferences.setMockInitialValues({});
+    final s = services();
+    await s.portfolio.add(symbol: 'AAPL', quantity: 10, price: 200, currency: 'USD', date: DateTime(2025, 5, 2));
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Portfolio').first);
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('position-menu-AAPL')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('position-split')));
+    await tester.pumpAndSettle();
+    expect(find.text('Stock split: AAPL'), findsOneWidget);
+    // Hibás arány: hibaüzenet, nem rögzít.
+    await tester.enterText(find.byKey(const ValueKey('split-ratio')), '10');
+    await tester.tap(find.byKey(const ValueKey('split-submit')));
+    await tester.pumpAndSettle();
+    expect(find.text('Enter a ratio like 10:1, or 1:10 for a reverse split.'), findsOneWidget);
+    expect(s.portfolio.splits, isEmpty);
+    await tester.enterText(find.byKey(const ValueKey('split-ratio')), '10 : 1');
+    await tester.tap(find.byKey(const ValueKey('split-submit')));
+    await tester.pumpAndSettle();
+    final split = s.portfolio.splits.single;
+    expect((split.symbol, split.to, split.from), ('AAPL', 10, 1));
+    expect(s.portfolio.positionOf('AAPL')!.quantity, 100);
+    expect(s.portfolio.positionOf('AAPL')!.averageCost, 20);
+    // A lapon a felaprózás sora és az igazított tétel (100 × 20).
+    expect(find.text('Stock split 10:1'), findsOneWidget);
+    expect(find.textContaining('100 × 20.00 USD'), findsOneWidget);
+    // Törlés visszavonással.
+    await tester.tap(find.byKey(ValueKey('sheet-split-delete-${split.id}')));
+    await tester.pumpAndSettle();
+    expect(s.portfolio.splits, isEmpty);
+    expect(s.portfolio.positionOf('AAPL')!.quantity, 10);
+    expect(find.text('Stock split deleted'), findsOneWidget);
+    await tester.tap(find.byKey(const ValueKey('split-undo')));
+    await tester.pumpAndSettle();
+    expect(s.portfolio.splits.single.id, split.id);
+    expect(s.portfolio.positionOf('AAPL')!.quantity, 100);
+    expect(find.byKey(const ValueKey('split-removed')), findsNothing);
   });
 }

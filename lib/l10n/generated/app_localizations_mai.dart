@@ -2600,6 +2600,47 @@ class AppLocalizationsMai extends AppLocalizations {
       'एखन धरि कोनो डिविडेंड दर्ज नहि अछि। हाथसँ जोड़ू, वा अपन ब्रोकरक एक्सपोर्ट इम्पोर्ट करू – ओकर डिविडेंड पंक्ति सेहो लेल जाइत अछि।';
 
   @override
+  String get portfolioSplit => 'स्टॉक स्प्लिट';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'स्टॉक स्प्लिट: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'स्प्लिटसँ पहिनेक तारीखक खरीद आ बिक्री समायोजित कएल जाइत अछि: शेयरक संख्या गुणा आ प्रति शेयर दाम भाग कएल जाइत अछि, जाहिसँ लागत ओहिना रहैत अछि।';
+
+  @override
+  String get portfolioSplitRatio => 'अनुपात (नव : पुरान)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      '10:1 जकाँ अनुपात दिअ, वा रिवर्स स्प्लिट लेल 1:10।';
+
+  @override
+  String get portfolioSplitDate => 'स्प्लिटक तारीख';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'स्टॉक स्प्लिट $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'स्टॉक स्प्लिट हटाओल गेल';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count स्टॉक स्प्लिट जोड़ल गेल',
+      one: '1 स्टॉक स्प्लिट जोड़ल गेल',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

@@ -743,5 +743,14 @@
   "eventDividendEstimate": "Aplēsts no jūsu reģistrētajiem maksājumiem",
   "labelYieldOnCost": "Ienesīgums pret pirkuma cenu",
   "glossYieldOnCost": "Pēdējo 12 mēnešu laikā saņemtās dividendes, dalītas ar summu, ko samaksājāt par akcijām, kuras joprojām turat. Atšķirībā no dividenžu ienesīguma to mēra pret jūsu pirkuma cenu, ne šodienas cenu.",
-  "homeDividendsThisYear": "Dividendes šogad: {amount}"
+  "homeDividendsThisYear": "Dividendes šogad: {amount}",
+  "portfolioSplit": "Akciju sadalīšana",
+  "portfolioSplitTitle": "Akciju sadalīšana: {symbol}",
+  "portfolioSplitHint": "Pirkumi un pārdošanas darījumi ar datumu pirms sadalīšanas tiek koriģēti: akciju skaits tiek reizināts, bet cena par akciju dalīta, tāpēc izmaksas nemainās.",
+  "portfolioSplitRatio": "Attiecība (jaunās : vecās)",
+  "portfolioSplitRatioError": "Ievadiet attiecību, piemēram, 10:1, vai 1:10 akciju apvienošanai.",
+  "portfolioSplitDate": "Sadalīšanas datums",
+  "portfolioSplitRow": "Akciju sadalīšana {ratio}",
+  "portfolioSplitRemoved": "Akciju sadalīšana izdzēsta",
+  "portfolioSplitsImported": "{count, plural, =1{Pievienota 1 akciju sadalīšana} other{Pievienotas {count} akciju sadalīšanas}}"
 }

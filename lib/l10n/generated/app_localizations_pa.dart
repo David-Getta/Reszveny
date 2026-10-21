@@ -2603,6 +2603,47 @@ class AppLocalizationsPa extends AppLocalizations {
       'ਹਾਲੇ ਕੋਈ ਡਿਵੀਡੈਂਡ ਦਰਜ ਨਹੀਂ ਹੈ। ਹੱਥੀਂ ਸ਼ਾਮਲ ਕਰੋ, ਜਾਂ ਆਪਣੇ ਬ੍ਰੋਕਰ ਦੀ ਐਕਸਪੋਰਟ ਫਾਈਲ ਇੰਪੋਰਟ ਕਰੋ – ਉਸ ਦੀਆਂ ਡਿਵੀਡੈਂਡ ਕਤਾਰਾਂ ਵੀ ਲੈ ਲਈਆਂ ਜਾਂਦੀਆਂ ਹਨ।';
 
   @override
+  String get portfolioSplit => 'ਸਟਾਕ ਸਪਲਿਟ';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'ਸਟਾਕ ਸਪਲਿਟ: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'ਸਪਲਿਟ ਤੋਂ ਪਹਿਲਾਂ ਦੀ ਤਾਰੀਖ਼ ਵਾਲੀਆਂ ਖ਼ਰੀਦਾਂ ਅਤੇ ਵਿਕਰੀਆਂ ਨੂੰ ਠੀਕ ਕੀਤਾ ਜਾਂਦਾ ਹੈ: ਸ਼ੇਅਰਾਂ ਦੀ ਗਿਣਤੀ ਗੁਣਾ ਅਤੇ ਪ੍ਰਤੀ ਸ਼ੇਅਰ ਕੀਮਤ ਭਾਗ ਕੀਤੀ ਜਾਂਦੀ ਹੈ, ਇਸ ਲਈ ਲਾਗਤ ਉਹੀ ਰਹਿੰਦੀ ਹੈ।';
+
+  @override
+  String get portfolioSplitRatio => 'ਅਨੁਪਾਤ (ਨਵੇਂ : ਪੁਰਾਣੇ)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      '10:1 ਵਰਗਾ ਅਨੁਪਾਤ ਦਾਖਲ ਕਰੋ, ਜਾਂ ਰਿਵਰਸ ਸਪਲਿਟ ਲਈ 1:10।';
+
+  @override
+  String get portfolioSplitDate => 'ਸਪਲਿਟ ਦੀ ਤਾਰੀਖ਼';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'ਸਟਾਕ ਸਪਲਿਟ $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'ਸਟਾਕ ਸਪਲਿਟ ਮਿਟਾਇਆ ਗਿਆ';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ਸਟਾਕ ਸਪਲਿਟ ਜੋੜੇ ਗਏ',
+      one: '1 ਸਟਾਕ ਸਪਲਿਟ ਜੋੜਿਆ ਗਿਆ',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

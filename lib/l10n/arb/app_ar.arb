@@ -743,5 +743,14 @@
   "eventDividendEstimate": "تقدير من الدفعات التي سجّلتها",
   "labelYieldOnCost": "العائد على التكلفة",
   "glossYieldOnCost": "توزيعات الأرباح المستلمة خلال آخر 12 شهرًا مقسومة على ما دفعته مقابل الأسهم التي ما زلت تحتفظ بها. على خلاف عائد التوزيعات، يُقاس هذا بسعر شرائك أنت، لا بسعر اليوم.",
-  "homeDividendsThisYear": "توزيعات الأرباح هذا العام: {amount}"
+  "homeDividendsThisYear": "توزيعات الأرباح هذا العام: {amount}",
+  "portfolioSplit": "تجزئة الأسهم",
+  "portfolioSplitTitle": "تجزئة الأسهم: {symbol}",
+  "portfolioSplitHint": "تُعدَّل عمليات الشراء والبيع المؤرخة قبل التجزئة: يُضرب عدد الأسهم ويُقسم سعر السهم، فتبقى التكلفة كما هي.",
+  "portfolioSplitRatio": "النسبة (جديد : قديم)",
+  "portfolioSplitRatioError": "أدخل نسبة مثل 10:1، أو 1:10 للتجزئة العكسية.",
+  "portfolioSplitDate": "تاريخ التجزئة",
+  "portfolioSplitRow": "تجزئة الأسهم {ratio}",
+  "portfolioSplitRemoved": "تم حذف تجزئة الأسهم",
+  "portfolioSplitsImported": "{count, plural, =1{تمت إضافة تجزئة أسهم واحدة} other{تمت إضافة {count} من تجزئات الأسهم}}"
 }

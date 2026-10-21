@@ -2596,6 +2596,47 @@ class AppLocalizationsBo extends AppLocalizations {
       'ད་དུང་ཁེ་བགོས་གང་ཡང་ཐོ་འགོད་བྱས་མེད། ལག་ཐོག་ནས་ཁ་སྣོན་བྱོས། ཡང་ན་ཁྱེད་ཀྱི་ཚོང་བར་གྱི་ཕྱིར་གཏོང་ཡིག་ཆ་ནང་འདྲེན་བྱོས། དེའི་ཁེ་བགོས་ཐིག་ཕྲེང་ཡང་ལེན་གི་ཡོད།';
 
   @override
+  String get portfolioSplit => 'མ་ཤེར་ཁ་བགོ';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'མ་ཤེར་ཁ་བགོ: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'ཁ་བགོ་མ་བྱས་སྔོན་གྱི་ཚེས་གྲངས་ཅན་གྱི་ཉོ་ཚོང་ཁག་ལ་སྒྲིག་བཅོས་བྱེད་ཀྱི་ཡོད། མ་ཤེར་གྲངས་ཀ་སྒྱུར་ནས་མང་དུ་གཏོང་བ་དང་མ་ཤེར་རེའི་གོང་ཚད་བགོས་པས་སྤྱིའི་འགྲོ་གྲོན་འགྱུར་བ་མེད།';
+
+  @override
+  String get portfolioSplitRatio => 'བསྡུར་ཚད (གསར་པ : རྙིང་པ)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      '10:1 ལྟ་བུའི་བསྡུར་ཚད་འཇུག་རོགས། ལྡོག་ཕྱོགས་ཁ་བགོ་ཡིན་ན་ 1:10 འཇུག་རོགས།';
+
+  @override
+  String get portfolioSplitDate => 'ཁ་བགོའི་ཚེས་གྲངས།';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'མ་ཤེར་ཁ་བགོ $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'མ་ཤེར་ཁ་བགོ་བསུབས་ཟིན།';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'མ་ཤེར་ཁ་བགོ་ $count ཁ་སྣོན་བྱས་ཟིན།',
+      one: 'མ་ཤེར་ཁ་བགོ་ 1 ཁ་སྣོན་བྱས་ཟིན།',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

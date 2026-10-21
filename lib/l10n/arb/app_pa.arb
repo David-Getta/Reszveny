@@ -743,5 +743,14 @@
   "eventDividendEstimate": "ਤੁਹਾਡੀਆਂ ਦਰਜ ਕੀਤੀਆਂ ਅਦਾਇਗੀਆਂ ਤੋਂ ਅੰਦਾਜ਼ਾ",
   "labelYieldOnCost": "ਖਰੀਦ ਕੀਮਤ ’ਤੇ ਯੀਲਡ",
   "glossYieldOnCost": "ਪਿਛਲੇ 12 ਮਹੀਨਿਆਂ ਵਿੱਚ ਪ੍ਰਾਪਤ ਡਿਵੀਡੈਂਡ ਨੂੰ ਉਸ ਰਕਮ ਨਾਲ ਵੰਡਿਆ ਜੋ ਤੁਸੀਂ ਅਜੇ ਵੀ ਰੱਖੇ ਸ਼ੇਅਰਾਂ ਲਈ ਦਿੱਤੀ ਸੀ। ਲਾਭਅੰਸ਼ ਯੀਲਡ ਤੋਂ ਵੱਖ, ਇਹ ਅੱਜ ਦੇ ਭਾਅ ’ਤੇ ਨਹੀਂ, ਤੁਹਾਡੀ ਆਪਣੀ ਖਰੀਦ ਕੀਮਤ ’ਤੇ ਮਾਪੀ ਜਾਂਦੀ ਹੈ।",
-  "homeDividendsThisYear": "ਇਸ ਸਾਲ ਦੇ ਡਿਵੀਡੈਂਡ: {amount}"
+  "homeDividendsThisYear": "ਇਸ ਸਾਲ ਦੇ ਡਿਵੀਡੈਂਡ: {amount}",
+  "portfolioSplit": "ਸਟਾਕ ਸਪਲਿਟ",
+  "portfolioSplitTitle": "ਸਟਾਕ ਸਪਲਿਟ: {symbol}",
+  "portfolioSplitHint": "ਸਪਲਿਟ ਤੋਂ ਪਹਿਲਾਂ ਦੀ ਤਾਰੀਖ਼ ਵਾਲੀਆਂ ਖ਼ਰੀਦਾਂ ਅਤੇ ਵਿਕਰੀਆਂ ਨੂੰ ਠੀਕ ਕੀਤਾ ਜਾਂਦਾ ਹੈ: ਸ਼ੇਅਰਾਂ ਦੀ ਗਿਣਤੀ ਗੁਣਾ ਅਤੇ ਪ੍ਰਤੀ ਸ਼ੇਅਰ ਕੀਮਤ ਭਾਗ ਕੀਤੀ ਜਾਂਦੀ ਹੈ, ਇਸ ਲਈ ਲਾਗਤ ਉਹੀ ਰਹਿੰਦੀ ਹੈ।",
+  "portfolioSplitRatio": "ਅਨੁਪਾਤ (ਨਵੇਂ : ਪੁਰਾਣੇ)",
+  "portfolioSplitRatioError": "10:1 ਵਰਗਾ ਅਨੁਪਾਤ ਦਾਖਲ ਕਰੋ, ਜਾਂ ਰਿਵਰਸ ਸਪਲਿਟ ਲਈ 1:10।",
+  "portfolioSplitDate": "ਸਪਲਿਟ ਦੀ ਤਾਰੀਖ਼",
+  "portfolioSplitRow": "ਸਟਾਕ ਸਪਲਿਟ {ratio}",
+  "portfolioSplitRemoved": "ਸਟਾਕ ਸਪਲਿਟ ਮਿਟਾਇਆ ਗਿਆ",
+  "portfolioSplitsImported": "{count, plural, =1{1 ਸਟਾਕ ਸਪਲਿਟ ਜੋੜਿਆ ਗਿਆ} other{{count} ਸਟਾਕ ਸਪਲਿਟ ਜੋੜੇ ਗਏ}}"
 }

@@ -2616,6 +2616,47 @@ class AppLocalizationsCa extends AppLocalizations {
       'Encara no hi ha dividends registrats. Afegeix-los a mà o importa l\'exportació del teu bròquer: les seves files de dividends també es recullen.';
 
   @override
+  String get portfolioSplit => 'Desdoblament d\'accions';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Desdoblament d\'accions: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Les compres i vendes amb data anterior al desdoblament s\'ajusten: el nombre d\'accions es multiplica i el preu per acció es divideix, de manera que el cost no canvia.';
+
+  @override
+  String get portfolioSplitRatio => 'Proporció (noves : antigues)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Introdueix una proporció com 10:1, o 1:10 per a un desdoblament invers.';
+
+  @override
+  String get portfolioSplitDate => 'Data del desdoblament';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Desdoblament d\'accions $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Desdoblament d\'accions eliminat';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'S\'han afegit $count desdoblaments d\'accions',
+      one: 'S\'ha afegit 1 desdoblament d\'accions',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

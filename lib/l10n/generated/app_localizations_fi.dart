@@ -2607,6 +2607,47 @@ class AppLocalizationsFi extends AppLocalizations {
       'Osinkoja ei ole vielä kirjattu. Lisää ne käsin tai tuo välittäjäsi vientitiedosto – myös sen osinkorivit poimitaan.';
 
   @override
+  String get portfolioSplit => 'Osakesplitti';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Osakesplitti: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Ennen splittiä päivätyt ostot ja myynnit oikaistaan: osakkeiden lukumäärä kerrotaan ja osakekohtainen hinta jaetaan, joten hankintameno pysyy samana.';
+
+  @override
+  String get portfolioSplitRatio => 'Suhde (uudet : vanhat)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Anna suhde, esimerkiksi 10:1, tai 1:10 käänteiselle splitille.';
+
+  @override
+  String get portfolioSplitDate => 'Splitin päivämäärä';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Osakesplitti $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Osakesplitti poistettu';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count osakesplittiä lisätty',
+      one: '1 osakesplitti lisätty',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

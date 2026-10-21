@@ -2650,6 +2650,47 @@ class AppLocalizationsBs extends AppLocalizations {
       'Još nema zabilježenih dividendi. Dodajte ih ručno ili uvezite izvoz svog brokera – njegovi redovi s dividendama se također preuzimaju.';
 
   @override
+  String get portfolioSplit => 'Podjela dionica';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Podjela dionica: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Kupovine i prodaje s datumom prije podjele se prilagođavaju: broj dionica se množi, a cijena po dionici dijeli, tako da trošak ostaje isti.';
+
+  @override
+  String get portfolioSplitRatio => 'Omjer (nove : stare)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Unesite omjer poput 10:1 ili 1:10 za obrnutu podjelu.';
+
+  @override
+  String get portfolioSplitDate => 'Datum podjele';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Podjela dionica $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Podjela dionica izbrisana';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Dodano je $count podjela dionica',
+      one: 'Dodana je 1 podjela dionica',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

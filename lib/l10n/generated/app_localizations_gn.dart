@@ -2611,6 +2611,47 @@ class AppLocalizationsGn extends AppLocalizations {
       'Ndaipóri gueteri dividendo oñemboguapýva. Embojoapy nde pópe, térã egueru nde broker export – umi dividendo tysýi avei ojegueraha.';
 
   @override
+  String get portfolioSplit => 'Acción ñembojaʼo';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Acción ñembojaʼo: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Umi jogua ha ñemu ojejapo vaʼekue ñembojaʼo mboyve oñemyatyrõ: acción papapy oñembohetave ha peteĩ acción repy oñembojaʼo, upéicha pe hepy ndoikói ambue.';
+
+  @override
+  String get portfolioSplitRatio => 'Proporción (pyahu : tuja)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Ehai peteĩ proporción 10:1 ramoguáicha, térã 1:10 ñembojaʼo rapykuegua peg̃uarã.';
+
+  @override
+  String get portfolioSplitDate => 'Ñembojaʼo ára';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Acción ñembojaʼo $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Acción ñembojaʼo oñembogue';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count acción ñembojaʼo oñembojoapy',
+      one: '1 acción ñembojaʼo oñembojoapy',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

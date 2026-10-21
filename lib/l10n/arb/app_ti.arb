@@ -743,5 +743,14 @@
   "eventDividendEstimate": "ካብቶም ዝመዝገብካዮም ክፍሊታት ዝተገመተ",
   "labelYieldOnCost": "ትርፊ ኣብ ዋጋ ዕድጊ",
   "glossYieldOnCost": "ኣብ ዝሓለፉ 12 ኣዋርሕ ዝተቐበልካዮም ድቪደንድታት፣ ነቶም ገና ዘለዉኻ ኣክሲዮናት ዝኸፈልካዮ ተመቒሉ። ካብ መጠን ብጽሒት ትርፊ ብዝተፈልየ፣ እዚ ብናይ ሎሚ ዋጋ ዘይኮነስ ብናትካ ዋጋ ዕድጊ ይለካ።",
-  "homeDividendsThisYear": "ድቪደንድ ሎሚ ዓመት: {amount}"
+  "homeDividendsThisYear": "ድቪደንድ ሎሚ ዓመት: {amount}",
+  "portfolioSplit": "ምክፍፋል ኣክስዮን",
+  "portfolioSplitTitle": "ምክፍፋል ኣክስዮን: {symbol}",
+  "portfolioSplitHint": "ቅድሚ እቲ ምክፍፋል ዝተገብሩ ምዕዳግን ምሻጥን ይተዓራረዩ፦ ቁጽሪ ኣክስዮን ይባዛሕ፣ ዋጋ ነፍሲ ወከፍ ኣክስዮን ከኣ ይምቀል፣ ስለዚ እቲ ወጻኢ ከምዘለዎ ይጸንሕ።",
+  "portfolioSplitRatio": "መጠን (ሓድሽ : ኣረጊት)",
+  "portfolioSplitRatioError": "ከም 10:1 ዝኣመሰለ መጠን ኣእትዉ፣ ወይ ንተገላቢጦሽ ምክፍፋል 1:10።",
+  "portfolioSplitDate": "ዕለት ምክፍፋል",
+  "portfolioSplitRow": "ምክፍፋል ኣክስዮን {ratio}",
+  "portfolioSplitRemoved": "ምክፍፋል ኣክስዮን ተደምሲሱ",
+  "portfolioSplitsImported": "{count, plural, =1{1 ምክፍፋል ኣክስዮን ተወሲኹ} other{{count} ምክፍፋላት ኣክስዮን ተወሲኾም}}"
 }

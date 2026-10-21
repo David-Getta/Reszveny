@@ -2609,6 +2609,47 @@ class AppLocalizationsAf extends AppLocalizations {
       'Nog geen dividende aangeteken nie. Voeg dit met die hand by, of voer jou makelaar se uitvoer in – die dividendrye word ook opgetel.';
 
   @override
+  String get portfolioSplit => 'Aandelesplitsing';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'Aandelesplitsing: $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'Aankope en verkope wat voor die splitsing gedateer is, word aangepas: die aantal aandele word vermenigvuldig en die prys per aandeel gedeel, sodat die koste dieselfde bly.';
+
+  @override
+  String get portfolioSplitRatio => 'Verhouding (nuut : oud)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'Voer \'n verhouding soos 10:1 in, of 1:10 vir \'n omgekeerde splitsing.';
+
+  @override
+  String get portfolioSplitDate => 'Datum van die splitsing';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'Aandelesplitsing $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'Aandelesplitsing uitgevee';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count aandelesplitsings bygevoeg',
+      one: '1 aandelesplitsing bygevoeg',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

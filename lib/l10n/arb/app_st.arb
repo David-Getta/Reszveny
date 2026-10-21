@@ -743,5 +743,14 @@
   "eventDividendEstimate": "E hakanyeditswe ho tswa ditefong tseo o di tlalehileng",
   "labelYieldOnCost": "Poelo thekong ya ho reka",
   "glossYieldOnCost": "Dividende tse amohetsweng dikgweding tse 12 tse fetileng, tse arotsweng ka seo o se lefileng bakeng sa dishere tseo o ntseng o na le tsona. Ho fapana le poelo ya dividende, e lekanngwa ka theko eo o rekileng ka yona, eseng theko ya kajeno.",
-  "homeDividendsThisYear": "Dividende selemong sena: {amount}"
+  "homeDividendsThisYear": "Dividende selemong sena: {amount}",
+  "portfolioSplit": "Karohano ya dishere",
+  "portfolioSplitTitle": "Karohano ya dishere: {symbol}",
+  "portfolioSplitHint": "Direko le dithekiso tsa pele ho karohano di a lokiswa: palo ya dishere e a atiswa mme theko ya shere e le nngwe e a arolwa, e le hore tshenyehelo e dule e tshwana.",
+  "portfolioSplitRatio": "Tekanyo (tse ntjha : tsa kgale)",
+  "portfolioSplitRatioError": "Kenya tekanyo jwalo ka 10:1, kapa 1:10 bakeng sa karohano e kgutlelang morao.",
+  "portfolioSplitDate": "Letsatsi la karohano",
+  "portfolioSplitRow": "Karohano ya dishere {ratio}",
+  "portfolioSplitRemoved": "Karohano ya dishere e hlakotswe",
+  "portfolioSplitsImported": "{count, plural, =1{Karohano ya dishere e 1 e ekeditswe} other{Dikarohano tsa dishere tse {count} di ekeditswe}}"
 }

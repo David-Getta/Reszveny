@@ -2585,6 +2585,47 @@ class AppLocalizationsKm extends AppLocalizations {
       'មិនទាន់មានភាគលាភបានកត់ត្រានៅឡើយទេ។ បន្ថែមដោយដៃ ឬនាំចូលឯកសារនាំចេញពីឈ្មួញកណ្តាលរបស់អ្នក – ជួរភាគលាភរបស់វាក៏ត្រូវបានយកផងដែរ។';
 
   @override
+  String get portfolioSplit => 'ការបំបែកភាគហ៊ុន';
+
+  @override
+  String portfolioSplitTitle(String symbol) {
+    return 'ការបំបែកភាគហ៊ុន៖ $symbol';
+  }
+
+  @override
+  String get portfolioSplitHint =>
+      'ការទិញ និងការលក់ដែលមានកាលបរិច្ឆេទមុនការបំបែកត្រូវបានកែតម្រូវ៖ ចំនួនភាគហ៊ុនត្រូវបានគុណ និងតម្លៃក្នុងមួយភាគហ៊ុនត្រូវបានចែក ដូច្នេះថ្លៃដើមនៅដដែល។';
+
+  @override
+  String get portfolioSplitRatio => 'សមាមាត្រ (ថ្មី : ចាស់)';
+
+  @override
+  String get portfolioSplitRatioError =>
+      'បញ្ចូលសមាមាត្រដូចជា 10:1 ឬ 1:10 សម្រាប់ការបំបែកបញ្ច្រាស។';
+
+  @override
+  String get portfolioSplitDate => 'កាលបរិច្ឆេទបំបែក';
+
+  @override
+  String portfolioSplitRow(String ratio) {
+    return 'ការបំបែកភាគហ៊ុន $ratio';
+  }
+
+  @override
+  String get portfolioSplitRemoved => 'បានលុបការបំបែកភាគហ៊ុន';
+
+  @override
+  String portfolioSplitsImported(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'បានបន្ថែមការបំបែកភាគហ៊ុន $count',
+      one: 'បានបន្ថែមការបំបែកភាគហ៊ុន 1',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String portfolioDividendsImported(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

@@ -743,5 +743,14 @@
   "eventDividendEstimate": "ستاسو د ثبت شویو تادیاتو له مخې اټکل شوی",
   "labelYieldOnCost": "د پېرودلو بیې پر بنسټ ګټه",
   "glossYieldOnCost": "په تېرو ۱۲ میاشتو کې ترلاسه شوي ډیویډنډونه، وېشل شوي پر هغه څه چې تاسو د هغو ونډو لپاره ورکړي چې لا هم یې لرئ. د ونډې ګټې کچې په خلاف، دا د نننۍ بیې پر ځای د خپلې پېرودلو بیې پر بنسټ اندازه کېږي.",
-  "homeDividendsThisYear": "د سږکال ډیویډنډونه: {amount}"
+  "homeDividendsThisYear": "د سږکال ډیویډنډونه: {amount}",
+  "portfolioSplit": "د ونډو ویش",
+  "portfolioSplitTitle": "د ونډو ویش: {symbol}",
+  "portfolioSplitHint": "له ویش مخکې نېټې لرونکي پېرودنې او پلورنې سمون مومي: د ونډو شمېر ضرب کېږي او د هرې ونډې بیه وېشل کېږي، نو لګښت همداسې پاتې کېږي.",
+  "portfolioSplitRatio": "تناسب (نوې : زړې)",
+  "portfolioSplitRatioError": "لکه 10:1 تناسب ولیکئ، یا د معکوس ویش لپاره 1:10.",
+  "portfolioSplitDate": "د ویش نېټه",
+  "portfolioSplitRow": "د ونډو ویش {ratio}",
+  "portfolioSplitRemoved": "د ونډو ویش ړنګ شو",
+  "portfolioSplitsImported": "{count, plural, =1{1 د ونډو ویش زیات شو} other{{count} د ونډو ویشونه زیات شول}}"
 }
