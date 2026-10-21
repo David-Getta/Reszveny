@@ -1638,11 +1638,11 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Tanggal laporan saham favorit dan portofolio Anda untuk 90 hari ke depan, serta agenda bertanggal yang ditandai analisis Anda.';
+      'Tanggal laporan saham favorit dan portofolio Anda untuk 90 hari ke depan, agenda bertanggal yang ditandai analisis Anda, serta dividen yang diperkirakan dari pembayaran yang Anda catat.';
 
   @override
   String get eventsEmpty =>
-      'Tidak ada agenda bertanggal dalam 90 hari ke depan. Tambahkan favorit atau saham portofolio untuk melihat tanggal laporannya di sini.';
+      'Tidak ada agenda bertanggal dalam 90 hari ke depan. Tambahkan favorit atau saham portofolio untuk melihat tanggal laporannya di sini; dividen yang Anda catat menampilkan perkiraan pembayaran berikutnya.';
 
   @override
   String get compareTitle => 'Bandingkan';

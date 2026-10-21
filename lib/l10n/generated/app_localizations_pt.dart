@@ -1648,11 +1648,11 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Datas de resultados dos seus favoritos e das ações da carteira nos próximos 90 dias, além dos eventos com data apontados pelas suas análises.';
+      'Datas de resultados dos seus favoritos e das ações da carteira nos próximos 90 dias, os eventos com data apontados pelas suas análises e os dividendos esperados a partir dos pagamentos que você registrou.';
 
   @override
   String get eventsEmpty =>
-      'Nenhum evento com data nos próximos 90 dias. Adicione favoritos ou ações à carteira para ver aqui as datas dos resultados.';
+      'Nenhum evento com data nos próximos 90 dias. Adicione favoritos ou ações à carteira para ver aqui as datas dos resultados; dividendos registrados mostram o próximo pagamento esperado.';
 
   @override
   String get compareTitle => 'Comparar';

@@ -1637,11 +1637,11 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Ngày công bố kết quả kinh doanh của các cổ phiếu yêu thích và trong danh mục của bạn trong 90 ngày tới, cùng các sự kiện có ngày cụ thể mà phân tích của bạn đã đánh dấu.';
+      'Ngày công bố kết quả kinh doanh của các cổ phiếu yêu thích và trong danh mục của bạn trong 90 ngày tới, các sự kiện có ngày cụ thể mà phân tích của bạn đã đánh dấu, cùng các khoản cổ tức dự kiến ước tính từ các khoản chi trả bạn đã ghi lại.';
 
   @override
   String get eventsEmpty =>
-      'Không có sự kiện nào có ngày cụ thể trong 90 ngày tới. Hãy thêm cổ phiếu yêu thích hoặc vào danh mục để xem ngày công bố kết quả tại đây.';
+      'Không có sự kiện nào có ngày cụ thể trong 90 ngày tới. Hãy thêm cổ phiếu yêu thích hoặc vào danh mục để xem ngày công bố kết quả tại đây; cổ tức đã ghi lại sẽ hiển thị lần chi trả dự kiến tiếp theo.';
 
   @override
   String get compareTitle => 'So sánh';

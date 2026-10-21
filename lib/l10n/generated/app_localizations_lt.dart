@@ -1693,11 +1693,11 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Jūsų mėgstamiausių ir portfelio akcijų rezultatų skelbimo datos artimiausioms 90 dienų ir jūsų analizėse pažymėti įvykiai su datomis.';
+      'Jūsų mėgstamiausių ir portfelio akcijų rezultatų skelbimo datos artimiausioms 90 dienų, jūsų analizėse pažymėti įvykiai su datomis ir pagal jūsų įrašytas išmokas numatomi dividendai.';
 
   @override
   String get eventsEmpty =>
-      'Per artimiausias 90 dienų įvykių su datomis nėra. Pridėkite mėgstamiausių ar portfelio akcijų, kad čia matytumėte jų rezultatų datas.';
+      'Per artimiausias 90 dienų įvykių su datomis nėra. Pridėkite mėgstamiausių ar portfelio akcijų, kad čia matytumėte jų rezultatų datas; įrašytų dividendų numatoma kita išmoka rodoma čia.';
 
   @override
   String get compareTitle => 'Palyginti';

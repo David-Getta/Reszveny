@@ -1649,11 +1649,11 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Taariikhaha natiijooyinka saamiyada aad jeceshahay iyo kuwa portfoliyadaada 90-ka maalmood ee soo socda, iyo dhacdooyinka taariikhda leh ee falanqaynahaagu calaamadeeyeen.';
+      'Taariikhaha natiijooyinka saamiyada aad jeceshahay iyo kuwa portfoliyadaada 90-ka maalmood ee soo socda, dhacdooyinka taariikhda leh ee falanqaynahaagu calaamadeeyeen, iyo faa\'iido-saamiyada la filayo ee ku salaysan bixinnada aad diiwaangelisay.';
 
   @override
   String get eventsEmpty =>
-      'Ma jiraan dhacdooyin taariikh leh 90-ka maalmood ee soo socda. Ku dar kuwa aad jeceshahay ama saamiyo portfoliyo si aad halkan ugu aragto taariikhaha natiijooyinkooda.';
+      'Ma jiraan dhacdooyin taariikh leh 90-ka maalmood ee soo socda. Ku dar kuwa aad jeceshahay ama saamiyo portfoliyo si aad halkan ugu aragto taariikhaha natiijooyinkooda; faa\'iido-saamiyada aad diiwaangelisay waxay muujinayaan bixinta xigta ee la filayo.';
 
   @override
   String get compareTitle => 'Isbarbardhig';

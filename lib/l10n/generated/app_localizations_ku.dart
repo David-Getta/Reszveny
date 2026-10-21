@@ -1645,11 +1645,11 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Dîrokên encamên bijare û pişkên portfolyoya te ji bo 90 rojên bê, û bûyerên bi dîrok ên ku analîzên te nîşan dane.';
+      'Dîrokên encamên bijare û pişkên portfolyoya te ji bo 90 rojên bê, bûyerên bi dîrok ên ku analîzên te nîşan dane, û dividendên ku ji dayînên te tomarkirî tên hêvîkirin.';
 
   @override
   String get eventsEmpty =>
-      'Di 90 rojên bê de bûyerên bi dîrok tune ne. Bijare an pişkên portfolyoyê lê zêde bike da ku dîrokên encamên wan li vir bibînî.';
+      'Di 90 rojên bê de bûyerên bi dîrok tune ne. Bijare an pişkên portfolyoyê lê zêde bike da ku dîrokên encamên wan li vir bibînî; dividendên tomarkirî dayîna xwe ya pêşî ya hêvîkirî nîşan didin.';
 
   @override
   String get compareTitle => 'Berhevdan';

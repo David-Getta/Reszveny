@@ -1649,11 +1649,11 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Guyyoota bu\'aa aksiyoonota filatamoo fi poortfooliyoo keetii guyyoota 90 itti aananitti, akkasumas taateewwan guyyaa qaban kan xiinxalli kee agarsiise.';
+      'Guyyoota bu\'aa aksiyoonota filatamoo fi poortfooliyoo keetii guyyoota 90 itti aananitti, taateewwan guyyaa qaban kan xiinxalli kee agarsiise, akkasumas diviidendii kaffaltiiwwan ati galmeessiterraa eegamu.';
 
   @override
   String get eventsEmpty =>
-      'Guyyoota 90 itti aananitti taateen guyyaa qabu hin jiru. Guyyoota bu\'aa isaanii asitti arguuf filatamoo ykn aksiyoonota poortfooliyoo dabali.';
+      'Guyyoota 90 itti aananitti taateen guyyaa qabu hin jiru. Guyyoota bu\'aa isaanii asitti arguuf filatamoo ykn aksiyoonota poortfooliyoo dabali; diviidendiin galmeessite kaffaltii itti aanu eegamu ni agarsiisa.';
 
   @override
   String get compareTitle => 'Wal madaali';

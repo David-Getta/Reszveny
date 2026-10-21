@@ -1696,11 +1696,11 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Daty wyników Twoich ulubionych spółek i spółek z portfela na najbliższe 90 dni oraz wydarzenia z datą wskazane przez Twoje analizy.';
+      'Daty wyników Twoich ulubionych spółek i spółek z portfela na najbliższe 90 dni, wydarzenia z datą wskazane przez Twoje analizy oraz dywidendy spodziewane na podstawie zapisanych wypłat.';
 
   @override
   String get eventsEmpty =>
-      'Brak wydarzeń z datą w ciągu najbliższych 90 dni. Dodaj ulubione lub spółki do portfela, aby zobaczyć tutaj daty ich wyników.';
+      'Brak wydarzeń z datą w ciągu najbliższych 90 dni. Dodaj ulubione lub spółki do portfela, aby zobaczyć tutaj daty ich wyników; zapisane dywidendy pokazują następną spodziewaną wypłatę.';
 
   @override
   String get compareTitle => 'Porównaj';

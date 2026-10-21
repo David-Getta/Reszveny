@@ -4,12 +4,18 @@ import 'portfolio_store.dart';
 typedef ExpectedDividend = ({String symbol, DateTime date, double amount, String currency, int periodDays});
 
 /// A várható következő kifizetések a még birtokolt részvényekre, a rögzített
-/// osztalékok dátumaiból és összegeiből. Legalább két dátumozott kifizetés kell;
-/// a köztük lévő jellemző (medián) távolságból havi / negyedéves / féléves / éves
-/// ritmus adódik, a következő = az utolsó + ritmus, az összeg az utolsó kifizetés.
-/// Ami már [grace]-nél régebben lett volna esedékes, kimarad (valószínűleg nem
-/// lett rögzítve, vagy elmaradt), ahogy a [horizon]-nál távolabbi is. Dátum
-/// szerint rendezve.
+/// osztalékok dátumaiból és összegeiből. Részvényenként és pénznemenként egy
+/// sorozat (két bróker, két pénznem: két sorozat); legalább két dátumozott
+/// kifizetés kell; a köztük lévő jellemző (medián) távolságból havi /
+/// negyedéves / féléves / éves ritmus adódik, a következő = az utolsó + ritmus
+/// (naptári napokban, nyári időszámítástól függetlenül), az összeg az utolsó
+/// kifizetés. Ami már [grace]-nél régebben lett volna esedékes, kimarad
+/// (valószínűleg nem lett rögzítve, vagy elmaradt), ahogy a [horizon]-nál
+/// távolabbi is. Dátum, azon belül ticker szerint rendezve.
+///
+/// Ugyanez a becslés fut a szerveren a heti e-mailhez
+/// (`server/lib/src/digest.dart`, `expectedDividendsOf`): a küszöböket ott is
+/// át kell írni, ha itt változnak.
 List<ExpectedDividend> expectedDividends(
   Iterable<DividendRecord> dividends,
   Iterable<String> heldSymbols, {
@@ -18,29 +24,32 @@ List<ExpectedDividend> expectedDividends(
   Duration grace = const Duration(days: 21),
 }) {
   final held = {for (final s in heldSymbols) s.toUpperCase()};
-  final bySymbol = <String, List<DividendRecord>>{};
+  // (ticker, pénznem) → nap → összeg; az egy napon rögzített tételek (pl. két
+  // brókernél) egy kifizetésnek számítanak.
+  final series = <(String, String), Map<DateTime, double>>{};
   for (final d in dividends) {
-    if (d.date != null && held.contains(d.symbol)) (bySymbol[d.symbol] ??= []).add(d);
+    final date = d.date;
+    if (date == null || !held.contains(d.symbol)) continue;
+    final day = DateTime(date.year, date.month, date.day);
+    final byDay = series[(d.symbol, d.currency)] ??= {};
+    byDay[day] = (byDay[day] ?? 0) + d.amount;
   }
   final out = <ExpectedDividend>[];
-  for (final e in bySymbol.entries) {
-    final ds = e.value..sort((a, b) => a.date!.compareTo(b.date!));
-    // Ugyanazon a napon több tétel (pl. két brókernél): egy kifizetés, az összegük együtt.
-    final byDay = <DateTime, double>{};
-    for (final d in ds) {
-      final day = DateTime(d.date!.year, d.date!.month, d.date!.day);
-      byDay[day] = (byDay[day] ?? 0) + d.amount;
-    }
-    final days = byDay.keys.toList();
-    if (days.length < 2) continue;
-    final gaps = [for (var i = 1; i < days.length; i++) days[i].difference(days[i - 1]).inDays]..sort();
+  for (final e in series.entries) {
+    final paidOn = e.value.keys.toList()..sort();
+    if (paidOn.length < 2) continue;
+    final gaps = [for (var i = 1; i < paidOn.length; i++) paidOn[i].difference(paidOn[i - 1]).inDays]..sort();
     final period = periodDaysFor(gaps[gaps.length ~/ 2]);
     if (period == null) continue;
-    final next = days.last.add(Duration(days: period));
+    final last = paidOn.last;
+    final next = DateTime(last.year, last.month, last.day + period);
     if (next.isBefore(now.subtract(grace)) || next.isAfter(now.add(horizon))) continue;
-    out.add((symbol: e.key, date: next, amount: byDay[days.last]!, currency: ds.last.currency, periodDays: period));
+    out.add((symbol: e.key.$1, date: next, amount: e.value[last]!, currency: e.key.$2, periodDays: period));
   }
-  out.sort((a, b) => a.date.compareTo(b.date));
+  out.sort((a, b) {
+    final byDate = a.date.compareTo(b.date);
+    return byDate != 0 ? byDate : a.symbol.compareTo(b.symbol);
+  });
   return out;
 }
 

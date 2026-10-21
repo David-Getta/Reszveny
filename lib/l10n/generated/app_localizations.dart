@@ -3028,13 +3028,13 @@ abstract class AppLocalizations {
   /// No description provided for @eventsHint.
   ///
   /// In en, this message translates to:
-  /// **'Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.'**
+  /// **'Results dates of your favorites and portfolio stocks for the next 90 days, the dated events your analyses flagged, and the dividends expected from the payments you recorded.'**
   String get eventsHint;
 
   /// No description provided for @eventsEmpty.
   ///
   /// In en, this message translates to:
-  /// **'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.'**
+  /// **'No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here; recorded dividends show their expected next payment.'**
   String get eventsEmpty;
 
   /// No description provided for @compareTitle.

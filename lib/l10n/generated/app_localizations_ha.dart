@@ -1647,11 +1647,11 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Kwanakin sakamakon kuɗi na abubuwan da ka fi so da hannayen jarin jakarka na kwanaki 90 masu zuwa, da abubuwan da ke da kwanan wata da nazarinka suka nuna.';
+      'Kwanakin sakamakon kuɗi na abubuwan da ka fi so da hannayen jarin jakarka na kwanaki 90 masu zuwa, abubuwan da ke da kwanan wata da nazarinka suka nuna, da rabon riba da ake sa ran daga biyan da ka rubuta.';
 
   @override
   String get eventsEmpty =>
-      'Babu abubuwa masu kwanan wata a kwanaki 90 masu zuwa. Ƙara abubuwan da ka fi so ko hannayen jari a jakarka don ganin kwanakin sakamakonsu a nan.';
+      'Babu abubuwa masu kwanan wata a kwanaki 90 masu zuwa. Ƙara abubuwan da ka fi so ko hannayen jari a jakarka don ganin kwanakin sakamakonsu a nan; rabon riba da ka rubuta na nuna biyan da ake sa ran na gaba.';
 
   @override
   String get compareTitle => 'Kwatanta';

@@ -82,12 +82,9 @@ class DigestSender {
 
   void stop() => _timer?.cancel();
 
-  /// A fiók részvényei: előbb a portfólióé (a pénznemmel), aztán a többi kedvenc.
-  static ({List<String> portfolio, List<String> favorites, Map<String, String> currencies}) symbolsOf(
-    Map<String, dynamic> data,
-  ) {
-    // A még birtokolt darabszám tickerenként (vétel +, eladás −); a teljesen
-    // eladott részvény kimarad.
+  /// A még birtokolt darabszám tickerenként (vétel +, eladás −) és a tételek
+  /// pénzneme a szinkronizált csomag tranzakcióiból.
+  static ({Map<String, double> held, Map<String, String> currencies}) holdingsOf(Map<String, dynamic> data) {
     final held = <String, double>{}, currencies = <String, String>{};
     for (final l in (data['lots'] as List? ?? const [])) {
       if (l is! Map || l['symbol'] is! String || l['quantity'] is! num) continue;
@@ -96,6 +93,15 @@ class DigestSender {
       held[s] = (held[s] ?? 0) + (l['side'] == 'sell' ? -q : q);
       if (l['currency'] is String) currencies[s] ??= l['currency'] as String;
     }
+    return (held: held, currencies: currencies);
+  }
+
+  /// A fiók részvényei: előbb a portfólióé (a pénznemmel), aztán a többi kedvenc.
+  static ({List<String> portfolio, List<String> favorites, Map<String, String> currencies}) symbolsOf(
+    Map<String, dynamic> data,
+  ) {
+    // A teljesen eladott részvény kimarad.
+    final (:held, :currencies) = holdingsOf(data);
     final portfolio = [
       for (final e in held.entries)
         if (e.value > 1e-9) e.key,
@@ -127,13 +133,19 @@ class DigestSender {
   }
 
   /// A következő [days] napban várható osztalékok a még birtokolt részvényekre,
-  /// a rögzített kifizetések ritmusából (legalább két dátumozott tétel; a köztük
-  /// lévő medián távolságból havi / negyedéves / féléves / éves ritmus; a
-  /// következő = az utolsó + ritmus, az utolsó összeggel) – ugyanaz a becslés,
-  /// mint az appban. Időrendben.
+  /// a rögzített kifizetések ritmusából – ugyanaz a becslés, mint az appban
+  /// (`lib/features/portfolio/dividend_forecast.dart`; a küszöböket a kettőben
+  /// együtt kell változtatni): tickerenként és pénznemenként egy sorozat,
+  /// legalább két dátumozott tétel; a köztük lévő medián távolságból havi /
+  /// negyedéves / féléves / éves ritmus; a következő = az utolsó + ritmus, az
+  /// utolsó összeggel. Időrendben.
   static List<DigestDividend> expectedDividendsOf(Map<String, dynamic> data, {required DateTime now, int days = 14}) {
-    final held = symbolsOf(data).portfolio.toSet();
-    final bySymbol = <String, Map<DateTime, (double amount, String currency)>>{};
+    final held = {
+      for (final e in holdingsOf(data).held.entries)
+        if (e.value > 1e-9) e.key,
+    };
+    // (ticker, pénznem) → nap → összeg; az egy napon rögzített tételek együtt.
+    final series = <(String, String), Map<DateTime, double>>{};
     for (final d in (data['dividends'] as List? ?? const [])) {
       if (d is! Map || d['symbol'] is! String || d['amount'] is! num || (d['amount'] as num) <= 0) continue;
       final s = (d['symbol'] as String).toUpperCase();
@@ -141,27 +153,28 @@ class DigestSender {
       final date = DateTime.tryParse('${d['date']}');
       if (date == null) continue;
       final day = DateTime.utc(date.year, date.month, date.day);
-      final prev = (bySymbol[s] ??= {})[day];
-      // Ugyanazon a napon több tétel: egy kifizetés, együtt.
-      bySymbol[s]![day] = (
-        (prev?.$1 ?? 0) + (d['amount'] as num).toDouble(),
-        d['currency'] is String ? d['currency'] as String : (prev?.$2 ?? 'USD'),
-      );
+      final byDay = series[(s, d['currency'] is String ? d['currency'] as String : 'USD')] ??= {};
+      byDay[day] = (byDay[day] ?? 0) + (d['amount'] as num).toDouble();
     }
-    final until = now.add(Duration(days: days));
+    final today = DateTime.utc(now.year, now.month, now.day);
+    final until = today.add(Duration(days: days));
     final out = <DigestDividend>[];
-    for (final e in bySymbol.entries) {
-      final days = e.value.keys.toList()..sort();
-      if (days.length < 2) continue;
-      final gaps = [for (var i = 1; i < days.length; i++) days[i].difference(days[i - 1]).inDays]..sort();
+    for (final e in series.entries) {
+      final paidOn = e.value.keys.toList()..sort();
+      if (paidOn.length < 2) continue;
+      final gaps = [for (var i = 1; i < paidOn.length; i++) paidOn[i].difference(paidOn[i - 1]).inDays]..sort();
       final period = _periodDays(gaps[gaps.length ~/ 2]);
       if (period == null) continue;
-      final next = days.last.add(Duration(days: period));
-      if (next.isBefore(DateTime.utc(now.year, now.month, now.day)) || next.isAfter(until)) continue;
-      final last = e.value[days.last]!;
-      out.add((symbol: e.key, amount: last.$1, currency: last.$2, date: next));
+      final next = paidOn.last.add(Duration(days: period));
+      if (next.isBefore(today) || next.isAfter(until)) continue;
+      out.add((symbol: e.key.$1, amount: e.value[paidOn.last]!, currency: e.key.$2, date: next));
     }
-    return out..sort((a, b) => a.date.compareTo(b.date));
+    return out..sort((a, b) {
+      final byDate = a.date.compareTo(b.date);
+      if (byDate != 0) return byDate;
+      final bySymbol = a.symbol.compareTo(b.symbol);
+      return bySymbol != 0 ? bySymbol : a.currency.compareTo(b.currency);
+    });
   }
 
   /// A kifizetések közti medián távolságból a ritmus napokban (30 / 91 / 182 / 365).

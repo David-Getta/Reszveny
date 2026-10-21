@@ -1652,11 +1652,11 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Dates de résultats de vos favoris et des actions de votre portefeuille pour les 90 prochains jours, ainsi que les événements datés repérés par vos analyses.';
+      'Dates de résultats de vos favoris et des actions de votre portefeuille pour les 90 prochains jours, les événements datés repérés par vos analyses, ainsi que les dividendes attendus d’après vos versements enregistrés.';
 
   @override
   String get eventsEmpty =>
-      'Aucun événement daté dans les 90 prochains jours. Ajoutez des favoris ou des actions à votre portefeuille pour voir ici leurs dates de résultats.';
+      'Aucun événement daté dans les 90 prochains jours. Ajoutez des favoris ou des actions à votre portefeuille pour voir ici leurs dates de résultats ; les dividendes enregistrés affichent leur prochain versement attendu.';
 
   @override
   String get compareTitle => 'Comparer';

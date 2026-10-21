@@ -1695,11 +1695,11 @@ class AppLocalizationsSl extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Datumi objave rezultatov za vaše priljubljene delnice in delnice v portfelju v naslednjih 90 dneh ter datirani dogodki, ki so jih označile vaše analize.';
+      'Datumi objave rezultatov za vaše priljubljene delnice in delnice v portfelju v naslednjih 90 dneh, datirani dogodki, ki so jih označile vaše analize, ter dividende, pričakovane na podlagi izplačil, ki ste jih zabeležili.';
 
   @override
   String get eventsEmpty =>
-      'V naslednjih 90 dneh ni datiranih dogodkov. Dodajte priljubljene ali delnice v portfelj, da tukaj vidite datume objave njihovih rezultatov.';
+      'V naslednjih 90 dneh ni datiranih dogodkov. Dodajte priljubljene ali delnice v portfelj, da tukaj vidite datume objave njihovih rezultatov; zabeležene dividende prikazujejo naslednje pričakovano izplačilo.';
 
   @override
   String get compareTitle => 'Primerjava';

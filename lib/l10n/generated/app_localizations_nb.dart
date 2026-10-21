@@ -1642,11 +1642,11 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Resultatdatoer for favorittene og porteføljeaksjene dine de neste 90 dagene, og datofestede hendelser som analysene dine har pekt ut.';
+      'Resultatdatoer for favorittene og porteføljeaksjene dine de neste 90 dagene, datofestede hendelser som analysene dine har pekt ut, og utbytte som forventes ut fra utbetalingene du har registrert.';
 
   @override
   String get eventsEmpty =>
-      'Ingen datofestede hendelser de neste 90 dagene. Legg til favoritter eller porteføljeaksjer for å se resultatdatoene deres her.';
+      'Ingen datofestede hendelser de neste 90 dagene. Legg til favoritter eller porteføljeaksjer for å se resultatdatoene deres her; registrerte utbytter viser neste forventede utbetaling.';
 
   @override
   String get compareTitle => 'Sammenlign';

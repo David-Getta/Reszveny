@@ -1673,11 +1673,11 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Datele raportărilor pentru favoritele tale și acțiunile din portofoliu în următoarele 90 de zile, plus evenimentele cu dată semnalate de analizele tale.';
+      'Datele raportărilor pentru favoritele tale și acțiunile din portofoliu în următoarele 90 de zile, evenimentele cu dată semnalate de analizele tale și dividendele așteptate pe baza plăților înregistrate de tine.';
 
   @override
   String get eventsEmpty =>
-      'Niciun eveniment cu dată în următoarele 90 de zile. Adaugă favorite sau acțiuni în portofoliu ca să vezi aici datele raportărilor lor.';
+      'Niciun eveniment cu dată în următoarele 90 de zile. Adaugă favorite sau acțiuni în portofoliu ca să vezi aici datele raportărilor lor; dividendele înregistrate arată următoarea plată așteptată.';
 
   @override
   String get compareTitle => 'Comparare';

@@ -1651,11 +1651,11 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Mga petsa sa resulta sa imong mga paborito ug mga stock sa portfolio sulod sa sunod 90 ka adlaw, ug ang mga panghitabo nga may petsa nga gimarkahan sa imong mga pagtuki.';
+      'Mga petsa sa resulta sa imong mga paborito ug mga stock sa portfolio sulod sa sunod 90 ka adlaw, ang mga panghitabo nga may petsa nga gimarkahan sa imong mga pagtuki, ug ang mga dibidendo nga gipaabot gikan sa imong narekord nga mga bayad.';
 
   @override
   String get eventsEmpty =>
-      'Walay panghitabo nga may petsa sa sunod 90 ka adlaw. Pagdugang og mga paborito o stock sa portfolio aron makita dinhi ang ilang mga petsa sa resulta.';
+      'Walay panghitabo nga may petsa sa sunod 90 ka adlaw. Pagdugang og mga paborito o stock sa portfolio aron makita dinhi ang ilang mga petsa sa resulta; ang narekord nga mga dibidendo nagpakita sa ilang gipaabot nga sunod bayad.';
 
   @override
   String get compareTitle => 'Itandi';

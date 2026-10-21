@@ -1644,11 +1644,11 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Tanggal laporan saham paporit sareng portofolio anjeun pikeun 90 poé ka hareup, sareng acara anu aya tanggalna anu ditandaan ku analisis anjeun.';
+      'Tanggal laporan saham paporit sareng portofolio anjeun pikeun 90 poé ka hareup, acara anu aya tanggalna anu ditandaan ku analisis anjeun, sareng dividen anu diperkirakeun tina pamayaran anu anjeun catet.';
 
   @override
   String get eventsEmpty =>
-      'Teu aya acara anu aya tanggalna dina 90 poé ka hareup. Tambahkeun paporit atanapi saham portofolio pikeun ningali tanggal laporanana di dieu.';
+      'Teu aya acara anu aya tanggalna dina 90 poé ka hareup. Tambahkeun paporit atanapi saham portofolio pikeun ningali tanggal laporanana di dieu; dividen anu dicatet nembongkeun pamayaran salajengna anu diperkirakeun.';
 
   @override
   String get compareTitle => 'Bandingkeun';

@@ -1652,11 +1652,11 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Ennaku z\'ebivudde mu by\'oyagala n\'emigabo gyo mu nnaku 90 eziddako, n\'ebigenda okubaawo eby\'ennaku entongole okwekenneenya kwo bye kulaze.';
+      'Ennaku z\'ebivudde mu by\'oyagala n\'emigabo gyo mu nnaku 90 eziddako, ebigenda okubaawo eby\'ennaku entongole okwekenneenya kwo bye kulaze, ne dividendi ezisuubirwa okuva mu nsasula z\'owandiise.';
 
   @override
   String get eventsEmpty =>
-      'Tewali bigenda kubaawo bya nnaku ntongole mu nnaku 90 eziddako. Yongerako by\'oyagala oba emigabo okulaba wano ennaku z\'ebivudde byabyo.';
+      'Tewali bigenda kubaawo bya nnaku ntongole mu nnaku 90 eziddako. Yongerako by\'oyagala oba emigabo okulaba wano ennaku z\'ebivudde byabyo; dividendi z\'owandiise ziraga ensasula yazo eddako esuubirwa.';
 
   @override
   String get compareTitle => 'Geraageranya';

@@ -1642,11 +1642,11 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Tarehe za matokeo ya hisa unazopenda na za jalada lako la hisa kwa siku 90 zijazo, pamoja na matukio yenye tarehe yaliyobainishwa na uchambuzi wako.';
+      'Tarehe za matokeo ya hisa unazopenda na za jalada lako la hisa kwa siku 90 zijazo, matukio yenye tarehe yaliyobainishwa na uchambuzi wako, pamoja na magawio yanayotarajiwa kutoka malipo uliyorekodi.';
 
   @override
   String get eventsEmpty =>
-      'Hakuna matukio yenye tarehe katika siku 90 zijazo. Ongeza vipendwa au hisa kwenye jalada ili kuona tarehe zao za matokeo hapa.';
+      'Hakuna matukio yenye tarehe katika siku 90 zijazo. Ongeza vipendwa au hisa kwenye jalada ili kuona tarehe zao za matokeo hapa; magawio uliyorekodi yanaonyesha malipo yanayofuata yanayotarajiwa.';
 
   @override
   String get compareTitle => 'Linganisha';

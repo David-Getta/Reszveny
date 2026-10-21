@@ -1677,11 +1677,11 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Datumi rezultata vaših favorita i dionica iz portfolija za narednih 90 dana te datirani događaji koje su označile vaše analize.';
+      'Datumi rezultata vaših favorita i dionica iz portfolija za narednih 90 dana, datirani događaji koje su označile vaše analize te dividende očekivane na osnovu vaših evidentiranih isplata.';
 
   @override
   String get eventsEmpty =>
-      'Nema datiranih događaja u narednih 90 dana. Dodajte favorite ili dionice u portfolio da ovdje vidite datume njihovih rezultata.';
+      'Nema datiranih događaja u narednih 90 dana. Dodajte favorite ili dionice u portfolio da ovdje vidite datume njihovih rezultata; evidentirane dividende prikazuju svoju očekivanu sljedeću isplatu.';
 
   @override
   String get compareTitle => 'Poređenje';

@@ -196,6 +196,28 @@ void main() {
     final ex = DigestSender.expectedDividendsOf(data, now: now);
     expect(ex.map((d) => (d.symbol, d.currency, d.date)), [('KO', 'USD', DateTime.utc(2026, 10, 29))]);
     expect(ex.single.amount, closeTo(5.1, 1e-9), reason: 'az egy napon rögzített két tétel együtt');
+    // Két pénznemben (két brókernél) rögzítve: külön sorozatok, nem keverednek.
+    final mixed = DigestSender.expectedDividendsOf({
+      'lots': data['lots'],
+      'dividends': [
+        ...data['dividends'] as List,
+        {'symbol': 'KO', 'amount': 1500, 'currency': 'HUF', 'date': '2026-04-30'},
+        {'symbol': 'KO', 'amount': 1600, 'currency': 'HUF', 'date': '2026-07-30'},
+      ],
+    }, now: now);
+    expect(mixed.map((d) => (d.symbol, d.currency)), [('KO', 'HUF'), ('KO', 'USD')]);
+    expect(mixed.map((d) => d.amount), [1600.0, closeTo(5.1, 1e-9)]);
+    // A 15 részvényes levélkorlát itt nem számít: a 16. birtokolt részvény osztaléka is várható.
+    final many = DigestSender.expectedDividendsOf({
+      'lots': [
+        for (var i = 1; i <= 16; i++) {'symbol': 'S$i', 'quantity': 1, 'price': 10, 'currency': 'USD'},
+      ],
+      'dividends': [
+        {'symbol': 'S16', 'amount': 1, 'currency': 'USD', 'date': '2026-04-30'},
+        {'symbol': 'S16', 'amount': 1, 'currency': 'USD', 'date': '2026-07-30'},
+      ],
+    }, now: now);
+    expect(many.map((d) => d.symbol), ['S16']);
     // Egy tételből nincs ritmus; a két héten túli nem látszik.
     expect(
       DigestSender.expectedDividendsOf({

@@ -1642,11 +1642,11 @@ class AppLocalizationsYo extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Ọjọ́ àbájáde àwọn ìpín ààyò yín àti ti àpò ìdókòwò yín fún ọjọ́ 90 tó ń bọ̀, àti àwọn ìṣẹ̀lẹ̀ tó ní ọjọ́ tí àwọn ìtúpalẹ̀ yín tọ́ka sí.';
+      'Ọjọ́ àbájáde àwọn ìpín ààyò yín àti ti àpò ìdókòwò yín fún ọjọ́ 90 tó ń bọ̀, àwọn ìṣẹ̀lẹ̀ tó ní ọjọ́ tí àwọn ìtúpalẹ̀ yín tọ́ka sí, àti ìpín èrè tí a ń retí láti ara ìsanwó tí o kọ sílẹ̀.';
 
   @override
   String get eventsEmpty =>
-      'Kò sí ìṣẹ̀lẹ̀ tó ní ọjọ́ ní ọjọ́ 90 tó ń bọ̀. Ẹ fi àwọn ààyò tàbí ìpín àpò ìdókòwò kún un láti rí ọjọ́ àbájáde wọn níbí.';
+      'Kò sí ìṣẹ̀lẹ̀ tó ní ọjọ́ ní ọjọ́ 90 tó ń bọ̀. Ẹ fi àwọn ààyò tàbí ìpín àpò ìdókòwò kún un láti rí ọjọ́ àbájáde wọn níbí; ìpín èrè tí o kọ sílẹ̀ máa fi ìsanwó tó kàn tí a ń retí hàn.';
 
   @override
   String get compareTitle => 'Ìfiwéra';

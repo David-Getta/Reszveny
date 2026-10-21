@@ -1641,11 +1641,11 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Saýlanan we portfeldäki paýnamalaryňyň indiki 90 gündäki netije seneleri hem-de seljermeleriňiň belläp geçen seneli wakalary.';
+      'Saýlanan we portfeldäki paýnamalaryňyň indiki 90 gündäki netije seneleri, seljermeleriňiň belläp geçen seneli wakalary hem-de ýazan tölegleriň esasynda garaşylýan diwidendler.';
 
   @override
   String get eventsEmpty =>
-      'Indiki 90 günde seneli waka ýok. Netije senelerini şu ýerde görmek üçin saýlananlary ýa-da portfel paýnamalaryny goş.';
+      'Indiki 90 günde seneli waka ýok. Netije senelerini şu ýerde görmek üçin saýlananlary ýa-da portfel paýnamalaryny goş; ýazylan diwidendler indiki garaşylýan tölegi görkezýär.';
 
   @override
   String get compareTitle => 'Deňeşdirme';

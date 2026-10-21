@@ -1648,11 +1648,11 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Ba dati ya ba résultats ya bizolwa na nge mpi ya ba action ya portefeuille na nge sambu na bilumbu 90 ke kwiza, mpi mambu ya kele ti dati yina ba analyse na nge me monisa.';
+      'Ba dati ya ba résultats ya bizolwa na nge mpi ya ba action ya portefeuille na nge sambu na bilumbu 90 ke kwiza, mambu ya kele ti dati yina ba analyse na nge me monisa, mpi ba dividende yina bo ke vingila na ba futa yina nge sonikaka.';
 
   @override
   String get eventsEmpty =>
-      'Mambu ya kele ti dati kele ve na bilumbu 90 ke kwiza. Yika bizolwa to ba action na portefeuille sambu na kumona ba dati ya ba résultats na yo awa.';
+      'Mambu ya kele ti dati kele ve na bilumbu 90 ke kwiza. Yika bizolwa to ba action na portefeuille sambu na kumona ba dati ya ba résultats na yo awa; ba dividende yina nge sonikaka ke monisa futa na yo ya ke landa yina bo ke vingila.';
 
   @override
   String get compareTitle => 'Kufwanisa';

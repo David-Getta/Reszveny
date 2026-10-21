@@ -1648,11 +1648,11 @@ class AppLocalizationsGn extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Umi ojeguerohoryvéva ha nde cartera acción resultado ára 90 ára oúvape, ha umi mbaʼe ára reheguáva nde jehesaʼỹijokuéra ohechaukáva.';
+      'Umi ojeguerohoryvéva ha nde cartera acción resultado ára 90 ára oúvape, umi mbaʼe ára reheguáva nde jehesaʼỹijokuéra ohechaukáva, ha umi dividendo oñeha\'arõva umi pago rehaiva\'ekue rehe.';
 
   @override
   String get eventsEmpty =>
-      'Ndaipóri mbaʼe ára reheguáva 90 ára oúvape. Embojuaju ojeguerohoryvéva térã cartera acción ehecha hag̃ua koʼápe iresultado ára.';
+      'Ndaipóri mbaʼe ára reheguáva 90 ára oúvape. Embojuaju ojeguerohoryvéva térã cartera acción ehecha hag̃ua koʼápe iresultado ára; umi dividendo rehaiva\'ekue ohechauka ipago oútava oñeha\'arõva.';
 
   @override
   String get compareTitle => 'Ñembojoja';

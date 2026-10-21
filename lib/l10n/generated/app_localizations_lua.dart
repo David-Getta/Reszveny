@@ -1646,11 +1646,11 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Matuku a mapeta a biudi musue ne a ba action ba mu portefeuille webe bua matuku 90 alua, ne malu adi ne matuku makonkonona ebe mamanyishe.';
+      'Matuku a mapeta a biudi musue ne a ba action ba mu portefeuille webe bua matuku 90 alua, malu adi ne matuku makonkonona ebe mamanyishe, ne dividende idi mitekemene kumbukila mfutu iwakafunda.';
 
   @override
   String get eventsEmpty =>
-      'Kakuena malu adi ne matuku mu matuku 90 alua to. Bueja biudi musue anyi ba action mu portefeuille bua kumona apa matuku a mapeta abi.';
+      'Kakuena malu adi ne matuku mu matuku 90 alua to. Bueja biudi musue anyi ba action mu portefeuille bua kumona apa matuku a mapeta abi; dividende iwakafunda idi ileja mfutu wayi ulonda udi mutekemene.';
 
   @override
   String get compareTitle => 'Kufuanyikija';

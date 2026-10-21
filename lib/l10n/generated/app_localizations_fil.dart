@@ -1649,11 +1649,11 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Mga petsa ng resulta ng iyong mga paborito at stock sa portfolio sa susunod na 90 araw, at ang mga kaganapang may petsa na na-flag ng iyong mga pagsusuri.';
+      'Mga petsa ng resulta ng iyong mga paborito at stock sa portfolio sa susunod na 90 araw, ang mga kaganapang may petsa na na-flag ng iyong mga pagsusuri, at ang mga dibidendong inaasahan mula sa iyong mga naitalang bayad.';
 
   @override
   String get eventsEmpty =>
-      'Walang kaganapang may petsa sa susunod na 90 araw. Magdagdag ng mga paborito o stock sa portfolio para makita rito ang mga petsa ng kanilang resulta.';
+      'Walang kaganapang may petsa sa susunod na 90 araw. Magdagdag ng mga paborito o stock sa portfolio para makita rito ang mga petsa ng kanilang resulta; ipinapakita ng mga naitalang dibidendo ang inaasahang susunod nilang bayad.';
 
   @override
   String get compareTitle => 'Paghahambing';

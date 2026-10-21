@@ -1637,11 +1637,11 @@ class AppLocalizationsIg extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Ụbọchị nsonaazụ nke ọkacha mmasị gị na stock dị na portfolio gị maka ụbọchị 90 na-abịa, na ihe omume nwere ụbọchị nyocha gị gosiri.';
+      'Ụbọchị nsonaazụ nke ọkacha mmasị gị na stock dị na portfolio gị maka ụbọchị 90 na-abịa, ihe omume nwere ụbọchị nyocha gị gosiri, na nkesa uru a na-atụ anya ya site na ụgwọ ị dekọrọ.';
 
   @override
   String get eventsEmpty =>
-      'Enweghị ihe omume nwere ụbọchị n\'ime ụbọchị 90 na-abịa. Tinye ọkacha mmasị ma ọ bụ stock na portfolio ka ị hụ ụbọchị nsonaazụ ha ebe a.';
+      'Enweghị ihe omume nwere ụbọchị n\'ime ụbọchị 90 na-abịa. Tinye ọkacha mmasị ma ọ bụ stock na portfolio ka ị hụ ụbọchị nsonaazụ ha ebe a; nkesa uru ị dekọrọ na-egosi ụgwọ ha na-esote a na-atụ anya ya.';
 
   @override
   String get compareTitle => 'Tụnyere';

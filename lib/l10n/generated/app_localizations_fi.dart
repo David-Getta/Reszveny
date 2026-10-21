@@ -1643,11 +1643,11 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Suosikkiesi ja salkkusi osakkeiden tulosjulkistukset seuraavien 90 päivän ajalta sekä analyysiesi nostamat päivätyt tapahtumat.';
+      'Suosikkiesi ja salkkusi osakkeiden tulosjulkistukset seuraavien 90 päivän ajalta, analyysiesi nostamat päivätyt tapahtumat sekä kirjaamiesi maksujen perusteella odotettavissa olevat osingot.';
 
   @override
   String get eventsEmpty =>
-      'Ei päivättyjä tapahtumia seuraavan 90 päivän aikana. Lisää suosikkeja tai salkkuosakkeita nähdäksesi niiden tulosjulkistukset täällä.';
+      'Ei päivättyjä tapahtumia seuraavan 90 päivän aikana. Lisää suosikkeja tai salkkuosakkeita nähdäksesi niiden tulosjulkistukset täällä; kirjatuista osingoista näytetään seuraava odotettavissa oleva maksu.';
 
   @override
   String get compareTitle => 'Vertailu';

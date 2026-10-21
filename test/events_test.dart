@@ -145,7 +145,7 @@ void main() {
     await s.refresh();
     final div = s.events.where((e) => e.kind == UpcomingEventKind.dividend).toList();
     expect(div.map((e) => e.symbol), ['KO']);
-    expect(div.single.date, last.add(const Duration(days: 91)));
+    expect(div.single.date, DateTime(last.year, last.month, last.day + 91));
     expect(div.single.amount, 5.1);
     expect(div.single.currency, 'USD');
   });

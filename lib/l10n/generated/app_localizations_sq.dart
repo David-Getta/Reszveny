@@ -1648,11 +1648,11 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Datat e rezultateve të aksioneve të preferuara dhe të portofolit tënd për 90 ditët e ardhshme, si dhe ngjarjet me datë të shënuara nga analizat e tua.';
+      'Datat e rezultateve të aksioneve të preferuara dhe të portofolit tënd për 90 ditët e ardhshme, ngjarjet me datë të shënuara nga analizat e tua, si dhe dividendët e pritur nga pagesat që regjistrove.';
 
   @override
   String get eventsEmpty =>
-      'Nuk ka ngjarje me datë në 90 ditët e ardhshme. Shto të preferuara ose aksione në portofol për të parë këtu datat e rezultateve të tyre.';
+      'Nuk ka ngjarje me datë në 90 ditët e ardhshme. Shto të preferuara ose aksione në portofol për të parë këtu datat e rezultateve të tyre; dividendët e regjistruar tregojnë pagesën e radhës të pritur.';
 
   @override
   String get compareTitle => 'Krahaso';

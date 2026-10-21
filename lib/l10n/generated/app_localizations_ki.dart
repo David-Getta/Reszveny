@@ -1642,11 +1642,11 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Matukũ ma maumĩrĩra ma iria wendete na hisa ciaku harĩa mĩthenya 90 ĩrĩa ĩroka, na maũndũ marĩ na matukũ marĩa ũthuthuria waku wonanirie.';
+      'Matukũ ma maumĩrĩra ma iria wendete na hisa ciaku harĩa mĩthenya 90 ĩrĩa ĩroka, maũndũ marĩ na matukũ marĩa ũthuthuria waku wonanirie, na mĩgai ya faida ĩrĩa ĩrerĩgĩrĩirwo kuuma marĩhi marĩa wandĩkĩte.';
 
   @override
   String get eventsEmpty =>
-      'Gũtirĩ maũndũ marĩ na matukũ mĩthenya-inĩ 90 ĩrĩa ĩroka. Ongerera iria wendete kana hisa nĩguo wone matukũ ma maumĩrĩra mazo haha.';
+      'Gũtirĩ maũndũ marĩ na matukũ mĩthenya-inĩ 90 ĩrĩa ĩroka. Ongerera iria wendete kana hisa nĩguo wone matukũ ma maumĩrĩra mazo haha; mĩgai ya faida ĩrĩa wandĩkĩte yonanagia marĩhi mayo marĩa makĩrerĩgĩrĩirwo.';
 
   @override
   String get compareTitle => 'Gereranĩria';

@@ -1640,11 +1640,11 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Regnskabsdatoer for dine favoritter og aktier i porteføljen de næste 90 dage samt de daterede begivenheder, dine analyser har fremhævet.';
+      'Regnskabsdatoer for dine favoritter og aktier i porteføljen de næste 90 dage, de daterede begivenheder, dine analyser har fremhævet, samt det udbytte, der forventes ud fra dine registrerede udbetalinger.';
 
   @override
   String get eventsEmpty =>
-      'Ingen daterede begivenheder de næste 90 dage. Tilføj favoritter eller aktier til porteføljen for at se deres regnskabsdatoer her.';
+      'Ingen daterede begivenheder de næste 90 dage. Tilføj favoritter eller aktier til porteføljen for at se deres regnskabsdatoer her; registreret udbytte viser den forventede næste udbetaling.';
 
   @override
   String get compareTitle => 'Sammenlign';

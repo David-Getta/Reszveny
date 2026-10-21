@@ -1647,11 +1647,11 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Cijferdata van je favorieten en portefeuille-aandelen voor de komende 90 dagen, en de gedateerde gebeurtenissen die je analyses hebben gemarkeerd.';
+      'Cijferdata van je favorieten en portefeuille-aandelen voor de komende 90 dagen, de gedateerde gebeurtenissen die je analyses hebben gemarkeerd, en het dividend dat wordt verwacht op basis van de uitkeringen die je hebt vastgelegd.';
 
   @override
   String get eventsEmpty =>
-      'Geen gedateerde gebeurtenissen in de komende 90 dagen. Voeg favorieten of portefeuille-aandelen toe om hier hun cijferdata te zien.';
+      'Geen gedateerde gebeurtenissen in de komende 90 dagen. Voeg favorieten of portefeuille-aandelen toe om hier hun cijferdata te zien; vastgelegd dividend toont de volgende verwachte uitkering.';
 
   @override
   String get compareTitle => 'Vergelijken';

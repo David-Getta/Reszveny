@@ -1648,11 +1648,11 @@ class AppLocalizationsRn extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Amatariki y\'ivyavuye mu gihembwe vy\'imigabane ukunda n\'iyo mw\'ishoramari ryawe mu misi 90 iri imbere, n\'ibintu bifise itariki amasesangura yawe yerekanye.';
+      'Amatariki y\'ivyavuye mu gihembwe vy\'imigabane ukunda n\'iyo mw\'ishoramari ryawe mu misi 90 iri imbere, ibintu bifise itariki amasesangura yawe yerekanye, n\'amadividende yitezwe hisunzwe ivyishurwa wanditse.';
 
   @override
   String get eventsEmpty =>
-      'Nta kintu gifise itariki mu misi 90 iri imbere. Ongeramwo ivyo ukunda canke imigabane yo mw\'ishoramari kugira ubone hano amatariki y\'ivyavuyemwo.';
+      'Nta kintu gifise itariki mu misi 90 iri imbere. Ongeramwo ivyo ukunda canke imigabane yo mw\'ishoramari kugira ubone hano amatariki y\'ivyavuyemwo; amadividende wanditse yerekana ivyishurwa bikurikira vyitezwe.';
 
   @override
   String get compareTitle => 'Gereranya';

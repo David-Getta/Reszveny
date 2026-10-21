@@ -1647,11 +1647,11 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Le date dei risultati dei tuoi preferiti e dei titoli in portafoglio per i prossimi 90 giorni, e gli eventi con data segnalati dalle tue analisi.';
+      'Le date dei risultati dei tuoi preferiti e dei titoli in portafoglio per i prossimi 90 giorni, gli eventi con data segnalati dalle tue analisi e i dividendi attesi in base ai pagamenti che hai registrato.';
 
   @override
   String get eventsEmpty =>
-      'Nessun evento con data nei prossimi 90 giorni. Aggiungi preferiti o titoli al portafoglio per vedere qui le date dei loro risultati.';
+      'Nessun evento con data nei prossimi 90 giorni. Aggiungi preferiti o titoli al portafoglio per vedere qui le date dei loro risultati; i dividendi registrati mostrano il prossimo pagamento atteso.';
 
   @override
   String get compareTitle => 'Confronta';

@@ -1642,11 +1642,11 @@ class AppLocalizationsAk extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Nea mepɛ ne wo nkyɛfa mu kyɛfa akontaabu da wɔ nnafua 90 a ɛreba no mu, ne nsɛm a ɛwɔ da a wo nhwehwɛmu ahu.';
+      'Nea mepɛ ne wo nkyɛfa mu kyɛfa akontaabu da wɔ nnafua 90 a ɛreba no mu, nsɛm a ɛwɔ da a wo nhwehwɛmu ahu, ne dividend a wɔhwɛ kwan afi ntua a wokyerɛw too hɔ mu.';
 
   @override
   String get eventsEmpty =>
-      'Nsɛm biara a ɛwɔ da nni nnafua 90 a ɛreba no mu. Fa nea mepɛ anaa wo nkyɛfa mu kyɛfa ka ho na hwɛ wɔn akontaabu da wɔ ha.';
+      'Nsɛm biara a ɛwɔ da nni nnafua 90 a ɛreba no mu. Fa nea mepɛ anaa wo nkyɛfa mu kyɛfa ka ho na hwɛ wɔn akontaabu da wɔ ha; dividend a wokyerɛw too hɔ kyerɛ ntua a edi hɔ a wɔhwɛ kwan.';
 
   @override
   String get compareTitle => 'Ntotoho';

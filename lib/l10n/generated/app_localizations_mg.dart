@@ -1655,11 +1655,11 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Ny daty famoahana vokatra ho an\'ny ankafizinao sy ny anjara ao amin\'ny kitapom-bolanao ao anatin\'ny 90 andro ho avy, ary ireo hetsika misy daty nomarihan\'ny fandalinanao.';
+      'Ny daty famoahana vokatra ho an\'ny ankafizinao sy ny anjara ao amin\'ny kitapom-bolanao ao anatin\'ny 90 andro ho avy, ireo hetsika misy daty nomarihan\'ny fandalinanao, ary ny dividandy andrasana avy amin\'ny fandoavana noraketinao.';
 
   @override
   String get eventsEmpty =>
-      'Tsy misy hetsika misy daty ao anatin\'ny 90 andro ho avy. Ampio ankafizina na anjara ao amin\'ny kitapom-bolanao mba hahitanao eto ny daty famoahana ny vokatr\'izy ireo.';
+      'Tsy misy hetsika misy daty ao anatin\'ny 90 andro ho avy. Ampio ankafizina na anjara ao amin\'ny kitapom-bolanao mba hahitanao eto ny daty famoahana ny vokatr\'izy ireo; ny dividandy noraketinao dia mampiseho ny fandoavana manaraka andrasana.';
 
   @override
   String get compareTitle => 'Fampitahana';

@@ -1643,11 +1643,11 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Rapportdatum för dina favoriter och portföljaktier de kommande 90 dagarna, samt daterade händelser som dina analyser har flaggat.';
+      'Rapportdatum för dina favoriter och portföljaktier de kommande 90 dagarna, daterade händelser som dina analyser har flaggat, samt utdelningar som väntas utifrån de utbetalningar du registrerat.';
 
   @override
   String get eventsEmpty =>
-      'Inga daterade händelser de kommande 90 dagarna. Lägg till favoriter eller portföljaktier för att se deras rapportdatum här.';
+      'Inga daterade händelser de kommande 90 dagarna. Lägg till favoriter eller portföljaktier för att se deras rapportdatum här; registrerade utdelningar visar nästa väntade utbetalning.';
 
   @override
   String get compareTitle => 'Jämför';

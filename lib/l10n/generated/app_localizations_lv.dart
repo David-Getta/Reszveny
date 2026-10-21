@@ -1679,11 +1679,11 @@ class AppLocalizationsLv extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Jūsu izlases un portfeļa akciju rezultātu datumi nākamajām 90 dienām un datēti notikumi, ko atzīmējušas jūsu analīzes.';
+      'Jūsu izlases un portfeļa akciju rezultātu datumi nākamajām 90 dienām, datēti notikumi, ko atzīmējušas jūsu analīzes, un dividendes, kas gaidāmas pēc jūsu reģistrētajiem maksājumiem.';
 
   @override
   String get eventsEmpty =>
-      'Nākamajās 90 dienās nav datētu notikumu. Pievienojiet akcijas izlasei vai portfelim, lai šeit redzētu to rezultātu datumus.';
+      'Nākamajās 90 dienās nav datētu notikumu. Pievienojiet akcijas izlasei vai portfelim, lai šeit redzētu to rezultātu datumus; reģistrētajām dividendēm šeit redzams gaidāmais nākamais maksājums.';
 
   @override
   String get compareTitle => 'Salīdzināt';

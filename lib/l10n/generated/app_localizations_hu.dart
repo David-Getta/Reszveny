@@ -1647,11 +1647,11 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'A kedvenceid és a portfóliód részvényeinek gyorsjelentései a következő 90 napban, és az elemzéseidben megjelölt dátumos események.';
+      'A kedvenceid és a portfóliód részvényeinek gyorsjelentései a következő 90 napban, az elemzéseidben megjelölt dátumos események, és a rögzített kifizetéseid alapján várható osztalékok.';
 
   @override
   String get eventsEmpty =>
-      'A következő 90 napban nincs dátumos esemény. Adj hozzá kedvenceket vagy portfólió-tételeket, és itt látod a gyorsjelentéseik dátumát.';
+      'A következő 90 napban nincs dátumos esemény. Adj hozzá kedvenceket vagy portfólió-tételeket, és itt látod a gyorsjelentéseik dátumát; a rögzített osztalékokból a várható következő kifizetés is ide kerül.';
 
   @override
   String get compareTitle => 'Összehasonlítás';

@@ -1650,11 +1650,11 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Ba dati ya ba résultats ya oyo olingaka mpe ya ba action ya portefeuille na yo mpo na mikolo 90 oyo ekoya, mpe makambo oyo ezali na dati oyo ba analyse na yo emonisi.';
+      'Ba dati ya ba résultats ya oyo olingaka mpe ya ba action ya portefeuille na yo mpo na mikolo 90 oyo ekoya, makambo oyo ezali na dati oyo ba analyse na yo emonisi, mpe ba dividende oyo ezelami na ba futa oyo okomaki.';
 
   @override
   String get eventsEmpty =>
-      'Makambo oyo ezali na dati ezali te na mikolo 90 oyo ekoya. Bakisá oyo olingaka to ba action na portefeuille mpo na komona awa ba dati ya ba résultats na yango.';
+      'Makambo oyo ezali na dati ezali te na mikolo 90 oyo ekoya. Bakisá oyo olingaka to ba action na portefeuille mpo na komona awa ba dati ya ba résultats na yango; ba dividende oyo okomaki emonisaka futa na yango oyo ekolanda oyo ezelami.';
 
   @override
   String get compareTitle => 'Kokokanisa';

@@ -1637,11 +1637,11 @@ class AppLocalizationsFf extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Ñalɗi ngalluuji cuɓaaɗe maa e aksiyoŋ am e nder balɗe 90 garooɗe, e kewuuji jogiiɗi ñalɗi ɗi ƴeewndooji maa kollitii.';
+      'Ñalɗi ngalluuji cuɓaaɗe maa e aksiyoŋ am e nder balɗe 90 garooɗe, kewuuji jogiiɗi ñalɗi ɗi ƴeewndooji maa kollitii, e dividendeeji habbaaɗi iwde e yoɓdiiji ɗe mbinnduɗaa.';
 
   @override
   String get eventsEmpty =>
-      'Alaa kewu jogiiɗo ñalnde e nder balɗe 90 garooɗe. Ɓeydu cuɓaaɗe walla aksiyoŋ e aksiyoŋ am ngam yiyde ñalɗi ngalluuji maɓɓe ɗoo.';
+      'Alaa kewu jogiiɗo ñalnde e nder balɗe 90 garooɗe. Ɓeydu cuɓaaɗe walla aksiyoŋ e aksiyoŋ am ngam yiyde ñalɗi ngalluuji maɓɓe ɗoo; dividendeeji ɗi mbinnduɗaa hollat yoɓdi maɓɓe garoowo habbaaɗo.';
 
   @override
   String get compareTitle => 'Fondondir';

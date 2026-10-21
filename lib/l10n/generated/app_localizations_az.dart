@@ -1643,11 +1643,11 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Seçilmişlərinizin və portfelinizdəki səhmlərin növbəti 90 gün üçün hesabat tarixləri və təhlillərinizin qeyd etdiyi tarixli hadisələr.';
+      'Seçilmişlərinizin və portfelinizdəki səhmlərin növbəti 90 gün üçün hesabat tarixləri, təhlillərinizin qeyd etdiyi tarixli hadisələr və qeyd etdiyiniz ödənişlərə əsasən gözlənilən dividendlər.';
 
   @override
   String get eventsEmpty =>
-      'Növbəti 90 gündə tarixli hadisə yoxdur. Hesabat tarixlərini burada görmək üçün seçilmişlərə və ya portfelə səhm əlavə edin.';
+      'Növbəti 90 gündə tarixli hadisə yoxdur. Hesabat tarixlərini burada görmək üçün seçilmişlərə və ya portfelə səhm əlavə edin; qeyd etdiyiniz dividendlərin gözlənilən növbəti ödənişi burada göstərilir.';
 
   @override
   String get compareTitle => 'Müqayisə';

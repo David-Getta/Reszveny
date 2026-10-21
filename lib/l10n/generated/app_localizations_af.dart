@@ -1645,11 +1645,11 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Resultaatdatums van jou gunstelinge en portefeulje-aandele vir die volgende 90 dae, en die gedateerde gebeure wat jou ontledings uitgelig het.';
+      'Resultaatdatums van jou gunstelinge en portefeulje-aandele vir die volgende 90 dae, die gedateerde gebeure wat jou ontledings uitgelig het, en die dividende wat uit jou aangetekende betalings verwag word.';
 
   @override
   String get eventsEmpty =>
-      'Geen gedateerde gebeure in die volgende 90 dae nie. Voeg gunstelinge of portefeulje-aandele by om hul resultaatdatums hier te sien.';
+      'Geen gedateerde gebeure in die volgende 90 dae nie. Voeg gunstelinge of portefeulje-aandele by om hul resultaatdatums hier te sien; aangetekende dividende toon hul verwagte volgende betaling.';
 
   @override
   String get compareTitle => 'Vergelyk';

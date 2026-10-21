@@ -1576,10 +1576,12 @@ class AppLocalizationsZh extends AppLocalizations {
   String get eventDividendEstimate => '根据您记录的派息估算';
 
   @override
-  String get eventsHint => '收藏和投资组合中股票未来 90 天的财报日期，以及你的分析中标记的有日期的事件。';
+  String get eventsHint =>
+      '收藏和投资组合中股票未来 90 天的财报日期、你的分析中标记的有日期的事件，以及根据你记录的派息估算的预计派息。';
 
   @override
-  String get eventsEmpty => '未来 90 天内没有有日期的事件。添加收藏或投资组合股票，即可在此查看其财报日期。';
+  String get eventsEmpty =>
+      '未来 90 天内没有有日期的事件。添加收藏或投资组合股票，即可在此查看其财报日期；已记录的股息会在此显示下一次预计派息。';
 
   @override
   String get compareTitle => '对比';
@@ -4238,10 +4240,12 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get eventDividendEstimate => '根據你記錄的派息估算';
 
   @override
-  String get eventsHint => '收藏及投資組合股票未來 90 日的業績公佈日期，以及你的分析所標示的有日期事件。';
+  String get eventsHint =>
+      '收藏及投資組合股票未來 90 日的業績公佈日期、你的分析所標示的有日期事件，以及根據你記錄的派息估算的預計派息。';
 
   @override
-  String get eventsEmpty => '未來 90 日沒有有日期的事件。加入收藏或投資組合股票，即可在此查看其業績公佈日期。';
+  String get eventsEmpty =>
+      '未來 90 日沒有有日期的事件。加入收藏或投資組合股票，即可在此查看其業績公佈日期；已記錄的股息會在此顯示下一次預計派息。';
 
   @override
   String get compareTitle => '比較';

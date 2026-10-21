@@ -1643,11 +1643,11 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Tanggal laporan saham favorit lan portofoliomu kanggo 90 dina sabanjure, uga acara sing ana tanggale sing ditandhani analisismu.';
+      'Tanggal laporan saham favorit lan portofoliomu kanggo 90 dina sabanjure, acara sing ana tanggale sing ditandhani analisismu, uga dividen sing dikarepake saka pembayaran sing kokcathet.';
 
   @override
   String get eventsEmpty =>
-      'Ora ana acara sing ana tanggale ing 90 dina sabanjure. Tambahna favorit utawa saham portofolio supaya tanggal laporane katon ing kene.';
+      'Ora ana acara sing ana tanggale ing 90 dina sabanjure. Tambahna favorit utawa saham portofolio supaya tanggal laporane katon ing kene; dividen sing kokcathet nuduhake pembayaran sabanjure sing dikarepake.';
 
   @override
   String get compareTitle => 'Bandhingake';

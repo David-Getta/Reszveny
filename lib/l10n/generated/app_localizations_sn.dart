@@ -1648,11 +1648,11 @@ class AppLocalizationsSn extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Mazuva emhedzisiro yemasheya aunofarira neepotiforiyo yako mumazuva 90 anotevera, uye zviitiko zvine mazuva zvakaratidzwa neongororo dzako.';
+      'Mazuva emhedzisiro yemasheya aunofarira neepotiforiyo yako mumazuva 90 anotevera, zviitiko zvine mazuva zvakaratidzwa neongororo dzako, uye madividendi anotarisirwa kubva pamibhadharo yawakanyora.';
 
   @override
   String get eventsEmpty =>
-      'Hapana zviitiko zvine mazuva mumazuva 90 anotevera. Wedzera zvaunofarira kana masheya epotiforiyo kuti uone mazuva emhedzisiro yawo pano.';
+      'Hapana zviitiko zvine mazuva mumazuva 90 anotevera. Wedzera zvaunofarira kana masheya epotiforiyo kuti uone mazuva emhedzisiro yawo pano; madividendi awakanyora anoratidza mubhadharo unotevera unotarisirwa.';
 
   @override
   String get compareTitle => 'Enzanisa';

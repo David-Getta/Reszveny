@@ -1693,11 +1693,11 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Dátumy výsledkov tvojich obľúbených akcií a akcií v portfóliu na najbližších 90 dní a udalosti s dátumom, ktoré označili tvoje analýzy.';
+      'Dátumy výsledkov tvojich obľúbených akcií a akcií v portfóliu na najbližších 90 dní, udalosti s dátumom, ktoré označili tvoje analýzy, a dividendy očakávané podľa zaznamenaných výplat.';
 
   @override
   String get eventsEmpty =>
-      'V najbližších 90 dňoch nie sú žiadne udalosti s dátumom. Pridaj obľúbené alebo akcie do portfólia a uvidíš tu dátumy ich výsledkov.';
+      'V najbližších 90 dňoch nie sú žiadne udalosti s dátumom. Pridaj obľúbené alebo akcie do portfólia a uvidíš tu dátumy ich výsledkov; zaznamenané dividendy ukazujú ďalšiu očakávanú výplatu.';
 
   @override
   String get compareTitle => 'Porovnanie';

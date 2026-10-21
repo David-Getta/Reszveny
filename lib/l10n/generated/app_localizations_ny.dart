@@ -1649,11 +1649,11 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Masiku a zotsatira za masheya omwe mumawakonda ndi a m\'masheya anu m\'masiku 90 akubwerawa, komanso zochitika za tsiku lodziwika zomwe kusanthula kwanu kwazindikira.';
+      'Masiku a zotsatira za masheya omwe mumawakonda ndi a m\'masheya anu m\'masiku 90 akubwerawa, zochitika za tsiku lodziwika zomwe kusanthula kwanu kwazindikira, komanso madividendi oyembekezeka kuchokera ku malipiro omwe mudalemba.';
 
   @override
   String get eventsEmpty =>
-      'Palibe zochitika za tsiku lodziwika m\'masiku 90 akubwerawa. Onjezani zokondedwa kapena masheya kuti muone masiku a zotsatira zawo pano.';
+      'Palibe zochitika za tsiku lodziwika m\'masiku 90 akubwerawa. Onjezani zokondedwa kapena masheya kuti muone masiku a zotsatira zawo pano; madividendi omwe mudalemba amasonyeza malipiro otsatira oyembekezeka.';
 
   @override
   String get compareTitle => 'Yerekezani';

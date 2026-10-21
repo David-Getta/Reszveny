@@ -1646,11 +1646,11 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Tarikh keputusan saham kegemaran dan portfolio anda untuk 90 hari akan datang, serta acara bertarikh yang ditandakan oleh analisis anda.';
+      'Tarikh keputusan saham kegemaran dan portfolio anda untuk 90 hari akan datang, acara bertarikh yang ditandakan oleh analisis anda, serta dividen yang dijangka daripada pembayaran yang anda rekodkan.';
 
   @override
   String get eventsEmpty =>
-      'Tiada acara bertarikh dalam 90 hari akan datang. Tambah saham kegemaran atau portfolio untuk melihat tarikh keputusannya di sini.';
+      'Tiada acara bertarikh dalam 90 hari akan datang. Tambah saham kegemaran atau portfolio untuk melihat tarikh keputusannya di sini; dividen yang direkodkan menunjukkan pembayaran seterusnya yang dijangka.';
 
   @override
   String get compareTitle => 'Bandingkan';

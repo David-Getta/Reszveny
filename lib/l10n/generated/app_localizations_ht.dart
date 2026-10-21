@@ -1640,11 +1640,11 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Dat rezilta favori ou yo ak aksyon ki nan pòtfèy ou pou 90 jou k ap vini yo, ak evènman ki gen dat analiz ou yo make.';
+      'Dat rezilta favori ou yo ak aksyon ki nan pòtfèy ou pou 90 jou k ap vini yo, evènman ki gen dat analiz ou yo make, ak dividann yo atann dapre peman ou te anrejistre yo.';
 
   @override
   String get eventsEmpty =>
-      'Pa gen evènman ki gen dat nan 90 jou k ap vini yo. Ajoute favori oswa aksyon nan pòtfèy ou pou w wè dat rezilta yo isit la.';
+      'Pa gen evènman ki gen dat nan 90 jou k ap vini yo. Ajoute favori oswa aksyon nan pòtfèy ou pou w wè dat rezilta yo isit la; dividann ou te anrejistre yo montre pwochen peman yo atann.';
 
   @override
   String get compareTitle => 'Konpare';

@@ -1594,11 +1594,11 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      '향후 90일간 즐겨찾기 및 포트폴리오 종목의 실적 발표일과 내 분석에서 찾은 날짜가 정해진 이벤트입니다.';
+      '향후 90일간 즐겨찾기 및 포트폴리오 종목의 실적 발표일, 내 분석에서 찾은 날짜가 정해진 이벤트, 그리고 기록한 배당 내역으로 추정한 예상 배당금입니다.';
 
   @override
   String get eventsEmpty =>
-      '향후 90일간 날짜가 정해진 이벤트가 없습니다. 즐겨찾기나 포트폴리오에 종목을 추가하면 여기에서 실적 발표일을 확인할 수 있습니다.';
+      '향후 90일간 날짜가 정해진 이벤트가 없습니다. 즐겨찾기나 포트폴리오에 종목을 추가하면 여기에서 실적 발표일을 확인할 수 있습니다. 배당금을 기록하면 다음 예상 배당이 여기에 표시됩니다.';
 
   @override
   String get compareTitle => '비교';

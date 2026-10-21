@@ -1646,11 +1646,11 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Nye lɔlɔ̃tɔwo kple nye akpawo ƒe akɔntabubu ŋkekewo le ŋkeke 90 siwo gbɔna me, kple nudzɔdzɔ siwo ŋu ŋkeke le si wò numekukuwo ɖe fia.';
+      'Nye lɔlɔ̃tɔwo kple nye akpawo ƒe akɔntabubu ŋkekewo le ŋkeke 90 siwo gbɔna me, nudzɔdzɔ siwo ŋu ŋkeke le si wò numekukuwo ɖe fia, kpakple dividend siwo wole mɔ kpɔm na tso wò fexexe siwo nèŋlɔ ɖi me.';
 
   @override
   String get eventsEmpty =>
-      'Nudzɔdzɔ aɖeke si ŋu ŋkeke le meli le ŋkeke 90 siwo gbɔna me o. Tsɔ lɔlɔ̃tɔwo alo akpawo kpe ɖe eŋu be nàkpɔ woƒe akɔntabubu ŋkekewo le afii.';
+      'Nudzɔdzɔ aɖeke si ŋu ŋkeke le meli le ŋkeke 90 siwo gbɔna me o. Tsɔ lɔlɔ̃tɔwo alo akpawo kpe ɖe eŋu be nàkpɔ woƒe akɔntabubu ŋkekewo le afii; dividend siwo nèŋlɔ ɖi ɖea woƒe fexexe si gbɔna si wole mɔ kpɔm na fia.';
 
   @override
   String get compareTitle => 'Tsɔtsɔsɔ';

@@ -1649,11 +1649,11 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Imihla yeziphumo zezabelo ozithandayo nezepotifoliyo yakho kwiintsuku ezingama-90 ezizayo, kunye neziganeko ezinemihla eziphawulwe luhlalutyo lwakho.';
+      'Imihla yeziphumo zezabelo ozithandayo nezepotifoliyo yakho kwiintsuku ezingama-90 ezizayo, iziganeko ezinemihla eziphawulwe luhlalutyo lwakho, kunye nezahlulo ezilindelekileyo eziqikelelwe kwiintlawulo ozirekhodileyo.';
 
   @override
   String get eventsEmpty =>
-      'Akukho ziganeko zinemihla kwiintsuku ezingama-90 ezizayo. Yongeza ezithandayo okanye izabelo zepotifoliyo ukuze ubone imihla yeziphumo zazo apha.';
+      'Akukho ziganeko zinemihla kwiintsuku ezingama-90 ezizayo. Yongeza ezithandayo okanye izabelo zepotifoliyo ukuze ubone imihla yeziphumo zazo apha; izahlulo ozirekhodileyo zibonisa intlawulo elandelayo elindelekileyo.';
 
   @override
   String get compareTitle => 'Thelekisa';

@@ -1657,11 +1657,11 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Dagiti petsa ti resulta dagiti paboritom ken dagiti stock iti portfoliom para iti sumaruno a 90 nga aldaw, ken dagiti pasamak nga addaan petsa a minarkaan dagiti panangsukimatmo.';
+      'Dagiti petsa ti resulta dagiti paboritom ken dagiti stock iti portfoliom para iti sumaruno a 90 nga aldaw, dagiti pasamak nga addaan petsa a minarkaan dagiti panangsukimatmo, ken dagiti dibidendo a manamnama manipud kadagiti nairekord a bayadmo.';
 
   @override
   String get eventsEmpty =>
-      'Awan ti pasamak nga addaan petsa iti sumaruno a 90 nga aldaw. Agnayon kadagiti paborito wenno stock iti portfolio tapno makitam ditoy dagiti petsa ti resultada.';
+      'Awan ti pasamak nga addaan petsa iti sumaruno a 90 nga aldaw. Agnayon kadagiti paborito wenno stock iti portfolio tapno makitam ditoy dagiti petsa ti resultada; dagiti nairekord a dibidendo ipakitada ti manamnama a sumaruno a bayadda.';
 
   @override
   String get compareTitle => 'Ikompara';

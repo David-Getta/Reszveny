@@ -1653,11 +1653,11 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Berichtstermine deiner Favoriten und Portfolio-Aktien für die nächsten 90 Tage sowie datierte Ereignisse, die deine Analysen erkannt haben.';
+      'Berichtstermine deiner Favoriten und Portfolio-Aktien für die nächsten 90 Tage, datierte Ereignisse, die deine Analysen erkannt haben, sowie die aus deinen erfassten Zahlungen erwarteten Dividenden.';
 
   @override
   String get eventsEmpty =>
-      'Keine datierten Termine in den nächsten 90 Tagen. Füge Favoriten oder Portfolio-Aktien hinzu, um hier ihre Berichtstermine zu sehen.';
+      'Keine datierten Termine in den nächsten 90 Tagen. Füge Favoriten oder Portfolio-Aktien hinzu, um hier ihre Berichtstermine zu sehen; erfasste Dividenden zeigen ihre voraussichtliche nächste Zahlung.';
 
   @override
   String get compareTitle => 'Vergleich';

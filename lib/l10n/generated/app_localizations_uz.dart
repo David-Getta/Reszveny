@@ -1645,11 +1645,11 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Sevimli va portfelingizdagi aksiyalarning keyingi 90 kundagi hisobot sanalari hamda tahlillaringiz belgilagan sanali voqealar.';
+      'Sevimli va portfelingizdagi aksiyalarning keyingi 90 kundagi hisobot sanalari, tahlillaringiz belgilagan sanali voqealar hamda siz yozgan toʻlovlar asosida kutilayotgan dividendlar.';
 
   @override
   String get eventsEmpty =>
-      'Keyingi 90 kunda sanali voqealar yoʻq. Hisobot sanalarini shu yerda koʻrish uchun sevimlilar yoki portfel aksiyalarini qoʻshing.';
+      'Keyingi 90 kunda sanali voqealar yoʻq. Hisobot sanalarini shu yerda koʻrish uchun sevimlilar yoki portfel aksiyalarini qoʻshing; yozilgan dividendlar keyingi kutilayotgan toʻlovni koʻrsatadi.';
 
   @override
   String get compareTitle => 'Taqqoslash';

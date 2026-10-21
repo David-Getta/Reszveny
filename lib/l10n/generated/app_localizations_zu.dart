@@ -1649,11 +1649,11 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Izinsuku zemiphumela yamasheya akho ayizintandokazi nawephothifoliyo ezinsukwini ezingu-90 ezizayo, kanye nemicimbi enezinsuku ephawulwe uhlaziyo lwakho.';
+      'Izinsuku zemiphumela yamasheya akho ayizintandokazi nawephothifoliyo ezinsukwini ezingu-90 ezizayo, imicimbi enezinsuku ephawulwe uhlaziyo lwakho, kanye nezabelo zenzuzo ezilindelekile ezilinganiselwe ezinkokhelweni ozirekhodile.';
 
   @override
   String get eventsEmpty =>
-      'Ayikho imicimbi enezinsuku ezinsukwini ezingu-90 ezizayo. Engeza izintandokazi noma amasheya ephothifoliyo ukuze ubone izinsuku zemiphumela yawo lapha.';
+      'Ayikho imicimbi enezinsuku ezinsukwini ezingu-90 ezizayo. Engeza izintandokazi noma amasheya ephothifoliyo ukuze ubone izinsuku zemiphumela yawo lapha; izabelo zenzuzo ozirekhodile zibonisa inkokhelo elandelayo elindelekile.';
 
   @override
   String get compareTitle => 'Qhathanisa';

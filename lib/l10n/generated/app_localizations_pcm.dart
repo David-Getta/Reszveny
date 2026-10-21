@@ -1642,11 +1642,11 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Result dates for your favourites and portfolio stocks for the next 90 days, plus the events wey get date wey your analysis dem flag.';
+      'Result dates for your favourites and portfolio stocks for the next 90 days, plus the events wey get date wey your analysis dem flag, and the dividend wey we expect from di payments you record.';
 
   @override
   String get eventsEmpty =>
-      'No event wey get date for the next 90 days. Add favourites or portfolio stocks make you see their result dates here.';
+      'No event wey get date for the next 90 days. Add favourites or portfolio stocks make you see their result dates here; dividend wey you record go show di next payment wey we expect.';
 
   @override
   String get compareTitle => 'Compare';

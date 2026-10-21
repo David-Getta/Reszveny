@@ -1652,11 +1652,11 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Malatsi a dipoelo a dishere tse o di ratang le tsa potefolio ya gago mo malatsing a le 90 a a tlang, le ditiragalo tse di nang le malatsi tse ditshekatsheko tsa gago di di supileng.';
+      'Malatsi a dipoelo a dishere tse o di ratang le tsa potefolio ya gago mo malatsing a le 90 a a tlang, ditiragalo tse di nang le malatsi tse ditshekatsheko tsa gago di di supileng, le didividente tse di lebeletsweng go tswa mo dituelong tse o di kwadileng.';
 
   @override
   String get eventsEmpty =>
-      'Ga go na ditiragalo tse di nang le malatsi mo malatsing a le 90 a a tlang. Oketsa tse o di ratang kgotsa dishere tsa potefolio go bona malatsi a dipoelo tsa tsone fano.';
+      'Ga go na ditiragalo tse di nang le malatsi mo malatsing a le 90 a a tlang. Oketsa tse o di ratang kgotsa dishere tsa potefolio go bona malatsi a dipoelo tsa tsone fano; didividente tse o di kwadileng di bontsha tuelo e e latelang e e lebeletsweng.';
 
   @override
   String get compareTitle => 'Bapisa';

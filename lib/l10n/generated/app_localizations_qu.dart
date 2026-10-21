@@ -1652,11 +1652,11 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Munasqaykikunap, portafolioykip acciónninkunap willakuy p\'unchayninkuna hamuq 90 p\'unchaykunapi, t\'aqwiyniykikuna qhawachisqan p\'unchayniyuq ruwaykunapas.';
+      'Munasqaykikunap, portafolioykip acciónninkunap willakuy p\'unchayninkuna hamuq 90 p\'unchaykunapi, t\'aqwiyniykikuna qhawachisqan p\'unchayniyuq ruwaykuna, qillqasqayki pagokunamanta suyasqa dividendokunapas.';
 
   @override
   String get eventsEmpty =>
-      'Hamuq 90 p\'unchaykunapi mana p\'unchayniyuq ruwaykuna kanchu. Munasqakunata utaq portafolio acciónkunata yapay, kaypi willakuy p\'unchayninkuta qhawanaykipaq.';
+      'Hamuq 90 p\'unchaykunapi mana p\'unchayniyuq ruwaykuna kanchu. Munasqakunata utaq portafolio acciónkunata yapay, kaypi willakuy p\'unchayninkuta qhawanaykipaq; qillqasqa dividendokunaqa qatiq suyasqa pagonkuta rikuchin.';
 
   @override
   String get compareTitle => 'Tupachiy';

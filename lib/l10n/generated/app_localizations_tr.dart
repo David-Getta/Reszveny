@@ -1642,11 +1642,11 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Favorilerinin ve portföyündeki hisselerin önümüzdeki 90 gündeki bilanço tarihleri ile analizlerinin işaret ettiği tarihli olaylar.';
+      'Favorilerinin ve portföyündeki hisselerin önümüzdeki 90 gündeki bilanço tarihleri, analizlerinin işaret ettiği tarihli olaylar ve kaydettiğin ödemelere göre beklenen temettüler.';
 
   @override
   String get eventsEmpty =>
-      'Önümüzdeki 90 günde tarihli bir olay yok. Bilanço tarihlerini burada görmek için favori ya da portföy hissesi ekle.';
+      'Önümüzdeki 90 günde tarihli bir olay yok. Bilanço tarihlerini burada görmek için favori ya da portföy hissesi ekle; kaydedilen temettüler bir sonraki beklenen ödemeyi gösterir.';
 
   @override
   String get compareTitle => 'Karşılaştır';

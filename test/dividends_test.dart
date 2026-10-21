@@ -93,7 +93,7 @@ void main() {
         );
         expect(out, hasLength(1));
         expect(out.single.symbol, 'AAPL');
-        expect(out.single.date, DateTime(2026, 8, 13).add(const Duration(days: 91)));
+        expect(out.single.date, DateTime(2026, 8, 13 + 91), reason: 'naptári nap, nem 91 × 24 óra');
         expect(out.single.amount, closeTo(3.0, 1e-9));
         expect(out.single.periodDays, 91);
       },
@@ -110,7 +110,7 @@ void main() {
         ['O'],
         now: now,
       );
-      expect(monthly.single.date, DateTime(2026, 9, 15).add(const Duration(days: 30)));
+      expect(monthly.single.date, DateTime(2026, 9, 15 + 30));
     });
 
     test('only held stocks, at least two dated payments, nothing long overdue or too far away; sorted by date', () {
@@ -136,6 +136,19 @@ void main() {
         now: now,
       );
       expect(out.map((x) => x.symbol), ['JNJ', 'PEP']);
+    });
+
+    test('two currencies for one stock (two brokers) are separate series, never summed together', () {
+      final out = expectedDividends(
+        [
+          rec('AAPL', DateTime(2026, 5, 14), 2.5),
+          rec('AAPL', DateTime(2026, 8, 13), 2.6),
+          rec('AAPL', DateTime(2026, 8, 13), 900, currency: 'HUF'),
+        ],
+        ['AAPL'],
+        now: now,
+      );
+      expect(out.map((x) => (x.currency, x.amount)), [('USD', 2.6)], reason: 'a HUF-sorozatnak csak egy tétele van');
     });
   });
 

@@ -1654,11 +1654,11 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Matšatši a dipoelo tša tše o di ratago le dišere tša photefolio ya gago mo matšatšing a 90 a a tlago, le ditiragalo tše di nago le matšatši tšeo ditshekatsheko tša gago di di supilego.';
+      'Matšatši a dipoelo tša tše o di ratago le dišere tša photefolio ya gago mo matšatšing a 90 a a tlago, ditiragalo tše di nago le matšatši tšeo ditshekatsheko tša gago di di supilego, le didividende tše di letetšwego go tšwa go ditefelo tše o di rekotilego.';
 
   @override
   String get eventsEmpty =>
-      'Ga go na ditiragalo tše di nago le matšatši mo matšatšing a 90 a a tlago. Oketša tše di ratwago goba dišere tša photefolio go bona matšatši a dipoelo tša tšona mo.';
+      'Ga go na ditiragalo tše di nago le matšatši mo matšatšing a 90 a a tlago. Oketša tše di ratwago goba dišere tša photefolio go bona matšatši a dipoelo tša tšona mo; didividende tše di rekotilwego di bontšha tefelo e latelago yeo e letetšwego.';
 
   @override
   String get compareTitle => 'Bapetša';

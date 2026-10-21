@@ -1629,11 +1629,11 @@ class AppLocalizationsMos extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Fo nong-n-yɩɩda la fo portfey sɛɛr-rãmbã ligd-yɛl rasem, rasem 90 sẽn watẽ wã pʊgẽ, la yɛl sẽn tar rasem fo vɛɛsgã sẽn wilgã.';
+      'Fo nong-n-yɩɩda la fo portfey sɛɛr-rãmbã ligd-yɛl rasem, rasem 90 sẽn watẽ wã pʊgẽ, yɛl sẽn tar rasem fo vɛɛsgã sẽn wilgã, la dividand nins b sẽn gũud ne yaood nins f sẽn gʋlsã.';
 
   @override
   String get eventsEmpty =>
-      'Yɛl sẽn tar rasem ka be rasem 90 sẽn watẽ wã pʊgẽ ye. Paas nong-n-yɩɩda bɩ portfey sɛɛr n ges b ligd-yɛl rasem ka.';
+      'Yɛl sẽn tar rasem ka be rasem 90 sẽn watẽ wã pʊgẽ ye. Paas nong-n-yɩɩda bɩ portfey sɛɛr n ges b ligd-yɛl rasem ka; dividand nins f sẽn gʋlsã wilgda yaood sẽn pʋgd b sẽn gũud.';
 
   @override
   String get compareTitle => 'Makre';

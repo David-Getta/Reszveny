@@ -1653,11 +1653,11 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get eventsHint =>
-      'Masiku ya mbuyelo ya swiavelo leswi u swi rhandzaka ni swa phothifoliyo ya wena eka masiku ya 90 lama taka, ni swiendlakalo leswi nga ni masiku leswi minxopaxopo ya wena yi swi kombiseke.';
+      'Masiku ya mbuyelo ya swiavelo leswi u swi rhandzaka ni swa phothifoliyo ya wena eka masiku ya 90 lama taka, swiendlakalo leswi nga ni masiku leswi minxopaxopo ya wena yi swi kombiseke, ni tidividende leti languteriweke ku suka eka tihakelo leti u ti tsaleke.';
 
   @override
   String get eventsEmpty =>
-      'A ku na swiendlakalo leswi nga ni masiku eka masiku ya 90 lama taka. Engetela leswi u swi rhandzaka kumbe swiavelo swa phothifoliyo leswaku u vona masiku ya mbuyelo wa swona laha.';
+      'A ku na swiendlakalo leswi nga ni masiku eka masiku ya 90 lama taka. Engetela leswi u swi rhandzaka kumbe swiavelo swa phothifoliyo leswaku u vona masiku ya mbuyelo wa swona laha; tidividende leti u ti tsaleke ti kombisa hakelo leyi landzelaka leyi languteriweke.';
 
   @override
   String get compareTitle => 'Ringanisa';
