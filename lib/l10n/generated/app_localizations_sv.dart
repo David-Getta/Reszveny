@@ -2709,4 +2709,9 @@ class AppLocalizationsSv extends AppLocalizations {
   @override
   String get techNote =>
       'Beräknat utifrån dagliga stängningskurser. Tekniska signaler beskriver det förflutna, inte framtiden.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above av $count positioner över sitt 200-dagarssnitt';
+  }
 }

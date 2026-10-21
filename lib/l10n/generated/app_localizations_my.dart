@@ -2699,4 +2699,9 @@ class AppLocalizationsMy extends AppLocalizations {
   @override
   String get techNote =>
       'နေ့စဉ် ပိတ်ဈေးများမှ တွက်ချက်ထားသည်။ နည်းပညာအချက်ပြများသည် အတိတ်ကို ဖော်ပြသည်၊ အနာဂတ်ကို မဟုတ်ပါ။';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return 'ပိုင်ဆိုင်မှု $count ခုအနက် $above ခု ၎င်းတို့၏ ရက် 200 ပျမ်းမျှအထက်';
+  }
 }

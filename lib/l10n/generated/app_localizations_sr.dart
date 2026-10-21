@@ -2756,4 +2756,9 @@ class AppLocalizationsSr extends AppLocalizations {
   @override
   String get techNote =>
       'Израчунато из дневних цена затварања. Технички сигнали описују прошлост, не будућност.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above од $count позиција изнад свог 200-дневног просека';
+  }
 }

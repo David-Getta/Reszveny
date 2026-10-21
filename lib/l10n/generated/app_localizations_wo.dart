@@ -2703,4 +2703,9 @@ class AppLocalizationsWo extends AppLocalizations {
   @override
   String get techNote =>
       'Waññ nañu ko ci njëgu tëj yu bés bu nekk. Màndargay teknik dañuy wax li weesu, waaye du li ñëw.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above ci $count li nga am nekk na ci kaw seen moyenne bu 200 fan';
+  }
 }

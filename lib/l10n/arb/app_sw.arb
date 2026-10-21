@@ -718,5 +718,6 @@
   "glossSma200": "Wastani wa bei ya kufunga ya siku 200 za biashara zilizopita – mstari wa kawaida wa mwelekeo wa muda mrefu. Wawekezaji wengi huchukulia bei iliyo juu yake kama mwelekeo wa kupanda wa muda mrefu.",
   "glossRsi": "Kielezo cha nguvu linganishi (RSI): hulinganisha faida za hivi karibuni na hasara za hivi karibuni kwa kipimo cha 0–100. Juu ya 70 hisa mara nyingi husemwa imenunuliwa kupita kiasi (ilipanda haraka), chini ya 30 imeuzwa kupita kiasi – lakini mwelekeo imara unaweza kubaki hapo kwa muda mrefu.",
   "glossVolatility": "Kiasi bei inavyobadilika siku hadi siku, kikipimwa kwa mwaka: 20% ina maana mwaka wa kawaida husogea ndani ya takriban ±20%. Mabadiliko makubwa zaidi yana maana misogeo mikubwa pande zote mbili.",
-  "techNote": "Imekokotolewa kutoka bei za kufunga za kila siku. Ishara za kiufundi zinaeleza yaliyopita, si yajayo."
+  "techNote": "Imekokotolewa kutoka bei za kufunga za kila siku. Ishara za kiufundi zinaeleza yaliyopita, si yajayo.",
+  "portfolioAbove200": "Nafasi {above} kati ya {count} ziko juu ya wastani wao wa siku 200"
 }

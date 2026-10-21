@@ -2725,4 +2725,9 @@ class AppLocalizationsTs extends AppLocalizations {
   @override
   String get techNote =>
       'Swi hlayiwile ku suka eka minxavo yo pfala ya siku na siku. Swikombiso swa thekiniki swi hlamusela leswi hundzeke, ku nga ri vumundzuku.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return 'Swiyimo swa $above eka $count swi le henhla ka avhareji ya swona ya masiku ya 200';
+  }
 }

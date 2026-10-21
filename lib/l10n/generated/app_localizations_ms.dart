@@ -2713,4 +2713,9 @@ class AppLocalizationsMs extends AppLocalizations {
   @override
   String get techNote =>
       'Dikira daripada harga penutup harian. Isyarat teknikal menggambarkan masa lalu, bukan masa depan.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above daripada $count posisi melebihi purata 200 hari masing-masing';
+  }
 }

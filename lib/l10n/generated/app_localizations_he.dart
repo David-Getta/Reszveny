@@ -2702,4 +2702,9 @@ class AppLocalizationsHe extends AppLocalizations {
   @override
   String get techNote =>
       'מחושב משערי הסגירה היומיים. איתותים טכניים מתארים את העבר, לא את העתיד.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above מתוך $count פוזיציות מעל ממוצע 200 היום שלהן';
+  }
 }

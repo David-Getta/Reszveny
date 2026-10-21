@@ -2719,4 +2719,9 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get techNote =>
       'Calculé à partir des cours de clôture quotidiens. Les signaux techniques décrivent le passé, pas l’avenir.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above positions sur $count au-dessus de leur moyenne 200 jours';
+  }
 }

@@ -718,5 +718,6 @@
   "glossSma200": "Rata-rata harga panutup 200 poé dagang panungtungan – garis tren jangka panjang anu klasik. Loba investor nganggap harga di luhureunana salaku tren naék jangka panjang.",
   "glossRsi": "Indéks kakuatan rélatif: ngabandingkeun kauntungan anyar jeung karugian anyar dina skala 0–100. Di luhur 70 saham sering disebut kaleuwihan dibeuli (naék gancang), di handap 30 kaleuwihan dijual – tapi tren anu kuat bisa cicing di dinya lila.",
   "glossVolatility": "Sakumaha gedé harga ngayun unggal poé, diskalakeun ka sataun: 20% hartina taun biasa gerak dina kurang leuwih ±20%. Volatilitas anu leuwih luhur hartina gerakan anu leuwih gedé ka dua arah.",
-  "techNote": "Diitung tina harga panutup poéan. Sinyal téknis ngagambarkeun jaman baheula, lain pikahareupeun."
+  "techNote": "Diitung tina harga panutup poéan. Sinyal téknis ngagambarkeun jaman baheula, lain pikahareupeun.",
+  "portfolioAbove200": "{above} tina {count} posisi di luhureun rata-rata 200 poéna"
 }

@@ -2724,4 +2724,9 @@ class AppLocalizationsHil extends AppLocalizations {
   @override
   String get techNote =>
       'Ginkwenta halin sa adlaw-adlaw nga closing price. Ang teknikal nga mga signal nagalaragway sang nagligad, indi sang palaabuton.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above sa $count ka posisyon labaw sa ila 200 ka adlaw nga average';
+  }
 }

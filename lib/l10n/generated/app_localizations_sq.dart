@@ -2715,4 +2715,9 @@ class AppLocalizationsSq extends AppLocalizations {
   @override
   String get techNote =>
       'Llogaritur nga çmimet ditore të mbylljes. Sinjalet teknike përshkruajnë të kaluarën, jo të ardhmen.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above nga $count pozicione mbi mesataren e tyre 200-ditore';
+  }
 }

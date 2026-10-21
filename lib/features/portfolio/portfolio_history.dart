@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../app_services.dart';
+import '../analysis/price_stats.dart';
 import '../../core/models/price_history.dart';
 import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
@@ -144,6 +145,20 @@ const benchmarkSymbol = 'SPY';
 
 /// „Értékalakulás” kártya a portfólió oldalán: a teljes érték grafikonja
 /// időtáv-választóval, a befektetett összeg szaggatott vonalával.
+/// Hány nyitott pozíció ára jár a saját 200 napos mozgóátlaga felett (egyszerű
+/// trendkép); `null`, ha egyikhez sincs elég adat.
+({int above, int count})? portfolioTrend(Iterable<String> symbols, Map<String, PriceHistory> histories) {
+  var above = 0, count = 0;
+  for (final s in symbols) {
+    final pts = histories[s]?.points;
+    final sma = pts == null ? null : PriceStats.sma(pts, 200);
+    if (pts == null || sma == null || sma <= 0) continue;
+    count++;
+    if (pts.last.close > sma) above++;
+  }
+  return count == 0 ? null : (above: above, count: count);
+}
+
 class PortfolioHistoryCard extends StatefulWidget {
   const PortfolioHistoryCard({super.key, required this.snapshot});
 
@@ -155,9 +170,9 @@ class PortfolioHistoryCard extends StatefulWidget {
 
 class _PortfolioHistoryCardState extends State<PortfolioHistoryCard> {
   String? _key;
-  Future<(PriceHistory?, BenchmarkComparison?)>? _future;
+  Future<(PriceHistory?, BenchmarkComparison?, ({int above, int count})?)>? _future;
 
-  Future<(PriceHistory?, BenchmarkComparison?)> _load(AppServices services) async {
+  Future<(PriceHistory?, BenchmarkComparison?, ({int above, int count})?)> _load(AppServices services) async {
     final lots = services.portfolio.lots;
     final histories = <String, PriceHistory>{};
     PriceHistory? index;
@@ -172,6 +187,7 @@ class _PortfolioHistoryCardState extends State<PortfolioHistoryCard> {
     return (
       portfolioValueHistory(lots, histories, rate),
       i == null ? null : benchmarkComparison(lots, histories, i, rate),
+      portfolioTrend([for (final p in services.portfolio.positions) p.symbol], histories),
     );
   }
 
@@ -187,10 +203,10 @@ class _PortfolioHistoryCardState extends State<PortfolioHistoryCard> {
       _key = key;
       _future = _load(services);
     }
-    return FutureBuilder<(PriceHistory?, BenchmarkComparison?)>(
+    return FutureBuilder<(PriceHistory?, BenchmarkComparison?, ({int above, int count})?)>(
       future: _future,
       builder: (context, snap) {
-        final (h, bench) = snap.data ?? (null, null);
+        final (h, bench, trend) = snap.data ?? (null, null, null);
         if (h == null) return const SizedBox.shrink();
         Color tone(double v) => v >= 0 ? p.positive : p.negative;
         return Card(
@@ -209,6 +225,27 @@ class _PortfolioHistoryCardState extends State<PortfolioHistoryCard> {
                   showChange: false,
                   levels: [ChartLevel(price: widget.snapshot.cost, label: l10n.portfolioInvested, color: p.muted)],
                 ),
+                // Egyszerű trendkép: hány pozíció jár a saját 200 napos átlaga felett.
+                if (trend case final t?) ...[
+                  const SizedBox(height: 10),
+                  Row(
+                    key: const ValueKey('portfolio-trend'),
+                    children: [
+                      Icon(
+                        t.above * 2 >= t.count ? Icons.trending_up_rounded : Icons.trending_down_rounded,
+                        size: 16,
+                        color: t.above * 2 >= t.count ? p.positive : p.negative,
+                      ),
+                      const SizedBox(width: 6),
+                      Expanded(
+                        child: Text(
+                          l10n.portfolioAbove200(t.above, t.count),
+                          style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
                 if (bench != null) ...[
                   const SizedBox(height: 14),
                   Text(l10n.benchmarkTitle, style: theme.textTheme.titleSmall),

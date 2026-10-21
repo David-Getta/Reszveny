@@ -718,5 +718,6 @@
   "glossSma200": "Die gemiddelde sluitingsprys van die laaste 200 handelsdae – die klassieke langtermyn-trendlyn. Baie beleggers beskou ’n prys daarbo as ’n langtermyn-stygende trend.",
   "glossRsi": "Relatiewe sterkte-indeks: vergelyk onlangse winste met onlangse verliese op ’n skaal van 0–100. Bo 70 word die aandeel dikwels oorgekoop genoem (dit het vinnig gestyg), onder 30 oorverkoop – maar ’n sterk trend kan lank daar bly.",
   "glossVolatility": "Hoeveel die prys van dag tot dag skommel, omgereken na ’n jaar: 20% beteken ’n tipiese jaar beweeg binne ongeveer ±20%. Hoër volatiliteit beteken groter bewegings in albei rigtings.",
-  "techNote": "Bereken uit daaglikse sluitingspryse. Tegniese seine beskryf die verlede, nie die toekoms nie."
+  "techNote": "Bereken uit daaglikse sluitingspryse. Tegniese seine beskryf die verlede, nie die toekoms nie.",
+  "portfolioAbove200": "{above} van {count} posisies bo hul 200-dae-gemiddelde"
 }

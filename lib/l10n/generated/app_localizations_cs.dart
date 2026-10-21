@@ -2774,4 +2774,9 @@ class AppLocalizationsCs extends AppLocalizations {
   @override
   String get techNote =>
       'Vypočteno z denních zavíracích cen. Technické signály popisují minulost, ne budoucnost.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above z $count pozic nad svým 200denním průměrem';
+  }
 }

@@ -2704,4 +2704,9 @@ class AppLocalizationsPa extends AppLocalizations {
   @override
   String get techNote =>
       'ਰੋਜ਼ਾਨਾ ਬੰਦ ਕੀਮਤਾਂ ਤੋਂ ਗਿਣਿਆ ਗਿਆ। ਤਕਨੀਕੀ ਸੰਕੇਤ ਅਤੀਤ ਦਾ ਵਰਣਨ ਕਰਦੇ ਹਨ, ਭਵਿੱਖ ਦਾ ਨਹੀਂ।';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$count ਵਿੱਚੋਂ $above ਪੁਜ਼ੀਸ਼ਨਾਂ ਆਪਣੀ 200-ਦਿਨਾ ਔਸਤ ਤੋਂ ਉੱਪਰ';
+  }
 }

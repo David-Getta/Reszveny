@@ -718,5 +718,6 @@
   "glossSma200": "Koosem rasem 200 sẽn loog wã pagb ligdã sũur-sũur – wakat wok sor-wɛɛng sẽn mi n gese. Ligd-ningdb wʋsg gesda ligd sẽn be a yĩngri wa wakat wok kẽnd yĩngri.",
   "glossRsi": "Pãng makr index (RSI): a makda yõod sẽn paam nindaare ne bõn sẽn paam nindaare, 0 n tãag 100. Sẽn yɩɩd 70, b mi n yetame tɩ b da-a wʋsg tɩ looge (a kẽnga yĩngri tao-tao), sẽn pa ta 30, b koos-a wʋsg tɩ looge – la kẽnd sẽn tar pãng tõe n pa be wakat wok.",
   "glossVolatility": "Ligdã sẽn toeemd daar fãa to-to, b maka yʋʋmd a ye: 20% rat n yeelame tɩ yʋʋmd fãa a kẽnda ±20% sʋka. Toeeng sẽn yɩɩd rat n yeelame tɩ kẽnd bɛd sor a yiibã fãa.",
-  "techNote": "B geelg-a lame ne daar fãa pagb ligdã. Tekniik bãnd wilgda sẽn loogã, la pa sẽn wat ye."
+  "techNote": "B geelg-a lame ne daar fãa pagb ligdã. Tekniik bãnd wilgda sẽn loogã, la pa sẽn wat ye.",
+  "portfolioAbove200": "Zĩis {above} sẽn be {count} pʋgẽ yɩɩda b raar 200 pʋ-sʋkã"
 }

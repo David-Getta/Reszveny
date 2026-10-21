@@ -2714,4 +2714,9 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get techNote =>
       'Calcolato dai prezzi di chiusura giornalieri. I segnali tecnici descrivono il passato, non il futuro.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above posizioni su $count sopra la loro media a 200 giorni';
+  }
 }

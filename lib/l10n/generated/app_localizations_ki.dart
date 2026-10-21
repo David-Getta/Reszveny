@@ -2708,4 +2708,9 @@ class AppLocalizationsKi extends AppLocalizations {
   @override
   String get techNote =>
       'Ũtarĩtwo kuuma thogora wa kũhinga wa o mũthenya. Imenyithia cia ũmenyi itaarĩria maũndũ marĩa mahĩtũku, ti ma rũciũ.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above harĩ $count cia hisa irĩ igũrũ rĩa gatagatĩ ka mĩthenya 200 kao';
+  }
 }

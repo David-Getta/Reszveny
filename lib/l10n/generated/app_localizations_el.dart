@@ -2717,4 +2717,9 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String get techNote =>
       'Υπολογίζεται από τις ημερήσιες τιμές κλεισίματος. Τα τεχνικά σήματα περιγράφουν το παρελθόν, όχι το μέλλον.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above από $count θέσεις πάνω από τον μέσο όρο 200 ημερών τους';
+  }
 }

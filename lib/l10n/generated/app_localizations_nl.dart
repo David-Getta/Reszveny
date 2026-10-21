@@ -2712,4 +2712,9 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get techNote =>
       'Berekend op basis van dagelijkse slotkoersen. Technische signalen beschrijven het verleden, niet de toekomst.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above van $count posities boven hun 200-daags gemiddelde';
+  }
 }

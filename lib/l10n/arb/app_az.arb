@@ -718,5 +718,6 @@
   "glossSma200": "Son 200 ticarət gününün orta bağlanış qiyməti – klassik uzunmüddətli trend xətti. Bir çox investor ondan yuxarı qiyməti uzunmüddətli yüksələn trend sayır.",
   "glossRsi": "Nisbi güc indeksi: son qazancları son itkilərlə 0–100 şkalasında müqayisə edir. 70-dən yuxarı səhm çox vaxt həddindən artıq alınmış (sürətlə yüksəlib), 30-dan aşağı həddindən artıq satılmış adlanır – amma güclü trend orada uzun müddət qala bilər.",
   "glossVolatility": "Qiymətin gündən-günə nə qədər dəyişdiyi, illik hesablanmış: 20% o deməkdir ki, adi bir il təxminən ±20% daxilində hərəkət edir. Yüksək volatillik hər iki istiqamətdə daha böyük hərəkətlər deməkdir.",
-  "techNote": "Gündəlik bağlanış qiymətlərindən hesablanıb. Texniki siqnallar keçmişi təsvir edir, gələcəyi yox."
+  "techNote": "Gündəlik bağlanış qiymətlərindən hesablanıb. Texniki siqnallar keçmişi təsvir edir, gələcəyi yox.",
+  "portfolioAbove200": "{count} mövqedən {above} mövqe 200 günlük ortasının üzərindədir"
 }

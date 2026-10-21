@@ -2713,4 +2713,9 @@ class AppLocalizationsGn extends AppLocalizations {
   @override
   String get techNote =>
       'Ojepapa ára ha ára mboty repýgui. Umi techaukaha tékniko omombeʼu yma guare, ndahaʼéi tenonderã.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above $count ereguerekóva apytégui oĩ 200 ára mbytepegua ári';
+  }
 }

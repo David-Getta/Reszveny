@@ -2697,4 +2697,9 @@ class AppLocalizationsBo extends AppLocalizations {
   @override
   String get techNote =>
       'ཉིན་རེའི་སྒོ་རྒྱག་རིན་གོང་ནས་བརྩིས་པ། ལག་རྩལ་བརྡ་རྟགས་ཀྱིས་འདས་པ་སྟོན་གྱི་ཡོད་པ་ལས་མ་འོངས་པ་མིན།';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return 'ཉར་ཡོད་ཧུར་ཁག $count ལས $above རང་གི་ཉིན་༢༠༠ ཆ་སྙོམས་ལས་མཐོ།';
+  }
 }

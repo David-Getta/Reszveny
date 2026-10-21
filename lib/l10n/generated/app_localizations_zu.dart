@@ -2717,4 +2717,9 @@ class AppLocalizationsZu extends AppLocalizations {
   @override
   String get techNote =>
       'Kubalwe emananini okuvala ansuku zonke. Izimpawu zobuchwepheshe zichaza okudlule, hhayi ikusasa.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return 'Amasheya angu-$above kwangu-$count angaphezu kwesilinganiso sawo sezinsuku ezingu-200';
+  }
 }

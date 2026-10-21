@@ -2713,4 +2713,9 @@ class AppLocalizationsSn extends AppLocalizations {
   @override
   String get techNote =>
       'Zvakaverengwa kubva pamitengo yekuvhara yezuva nezuva. Zviratidzo zvetekiniki zvinotsanangura zvakapfuura, kwete zvinouya.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return 'Zvawakabata $above pa $count zviri pamusoro peavhareji yazvo yemazuva 200';
+  }
 }

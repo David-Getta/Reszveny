@@ -2703,4 +2703,9 @@ class AppLocalizationsIg extends AppLocalizations {
   @override
   String get techNote =>
       'Agbakọrọ ya site na ọnụahịa mmechi kwa ụbọchị. Akara teknikal na-akọwa ihe gara aga, ọ bụghị ọdịnihu.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above n\'ime $count òkè dị elu karịa nkezi ụbọchị 200 ha';
+  }
 }

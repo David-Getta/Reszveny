@@ -718,5 +718,6 @@
   "glossSma200": "Prosječna cijena zatvaranja u posljednjih 200 dana trgovanja – klasična dugoročna linija trenda. Mnogi ulagači cijenu iznad njega smatraju dugoročnim uzlaznim trendom.",
   "glossRsi": "Indeks relativne snage: uspoređuje nedavne dobitke s nedavnim gubicima na ljestvici od 0 do 100. Iznad 70 dionica se često naziva prekupljenom (brzo je rasla), ispod 30 preprodanom – ali snažan trend može ondje ostati dugo.",
   "glossVolatility": "Koliko cijena oscilira iz dana u dan, preračunato na godinu: 20 % znači da se u tipičnoj godini kreće unutar otprilike ±20 %. Veća volatilnost znači veće pomake u oba smjera.",
-  "techNote": "Izračunato iz dnevnih cijena zatvaranja. Tehnički signali opisuju prošlost, ne budućnost."
+  "techNote": "Izračunato iz dnevnih cijena zatvaranja. Tehnički signali opisuju prošlost, ne budućnost.",
+  "portfolioAbove200": "{above} od {count} pozicija iznad svog 200-dnevnog prosjeka"
 }

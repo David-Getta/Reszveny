@@ -718,5 +718,6 @@
   "glossSma200": "Nkezi ọnụahịa mmechi nke ụbọchị ahịa 200 gara aga – ahịrị ụzọ ogologo oge nke ochie. Ọtụtụ ndị na-etinye ego na-ewere ọnụahịa dị n'elu ya dị ka ụzọ ịrị elu ogologo oge.",
   "glossRsi": "Ngosi ike mmekọrịta (RSI): ọ na-atụnyere uru nso nso a na mfu nso nso a n'ihe ọtụtụ 0–100. N'elu 70 a na-akpọkarị stock ahụ azụrụ ya karịa (o riri elu ngwa ngwa), n'okpuru 30 erela ya karịa – mana ụzọ siri ike nwere ike ịnọ ebe ahụ ogologo oge.",
   "glossVolatility": "Otú ọnụahịa si agbanwe kwa ụbọchị, gbakọọ n'otu afọ: 20% pụtara na n'afọ nkịtị ọnụahịa na-agagharị n'ime ihe dị ka ±20%. Mgbanwe dị elu pụtara mmegharị ka ukwuu n'akụkụ abụọ.",
-  "techNote": "Agbakọrọ ya site na ọnụahịa mmechi kwa ụbọchị. Akara teknikal na-akọwa ihe gara aga, ọ bụghị ọdịnihu."
+  "techNote": "Agbakọrọ ya site na ọnụahịa mmechi kwa ụbọchị. Akara teknikal na-akọwa ihe gara aga, ọ bụghị ọdịnihu.",
+  "portfolioAbove200": "{above} n'ime {count} òkè dị elu karịa nkezi ụbọchị 200 ha"
 }

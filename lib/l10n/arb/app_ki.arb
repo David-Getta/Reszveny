@@ -718,5 +718,6 @@
   "glossSma200": "Gatagatĩ ka thogora wa kũhinga wa mĩthenya 200 ya thoko ya mũthia – mũhari wa njĩra wa ihinda iraaya wa tene. Aikia mbeca aingĩ monaga thogora ũrĩ igũrũ rĩayo ta njĩra ya kwambata ya ihinda iraaya.",
   "glossRsi": "Kĩgerio kĩa hinya wa kũgereranio (RSI): kĩgereranagia faida cia ica ikuhĩ na hathara cia ica ikuhĩ na kĩgerio kĩa 0–100. Igũrũ rĩa 70 kaingĩ kuugagwo atĩ ngwatanĩro nĩ ĩgũrĩtwo mũno (yambatire na ihenya), thĩ ya 30 nĩ ĩendetio mũno – no njĩra ĩrĩ hinya no ĩikare ho ihinda iraaya.",
   "glossVolatility": "Ũrĩa thogora ũgarũrũkaga o mũthenya, ũtarĩtwo kũringana na mwaka ũmwe: 20% nĩ kuuga atĩ mwaka wa ndũire thogora ũthiiaga thĩinĩ wa ta ±20%. Ũgarũrũku mũnene nĩ kuuga mĩthiĩre mĩnene mĩena yothe ĩĩrĩ.",
-  "techNote": "Ũtarĩtwo kuuma thogora wa kũhinga wa o mũthenya. Imenyithia cia ũmenyi itaarĩria maũndũ marĩa mahĩtũku, ti ma rũciũ."
+  "techNote": "Ũtarĩtwo kuuma thogora wa kũhinga wa o mũthenya. Imenyithia cia ũmenyi itaarĩria maũndũ marĩa mahĩtũku, ti ma rũciũ.",
+  "portfolioAbove200": "{above} harĩ {count} cia hisa irĩ igũrũ rĩa gatagatĩ ka mĩthenya 200 kao"
 }

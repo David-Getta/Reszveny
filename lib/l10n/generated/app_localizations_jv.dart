@@ -2710,4 +2710,9 @@ class AppLocalizationsJv extends AppLocalizations {
   @override
   String get techNote =>
       'Diitung saka rega panutupan saben dina. Sinyal teknikal nggambarake masa lalu, dudu masa depan.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above saka $count posisi ing ndhuwur rata-rata 200 dinane';
+  }
 }

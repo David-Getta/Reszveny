@@ -2777,4 +2777,9 @@ class AppLocalizationsSk extends AppLocalizations {
   @override
   String get techNote =>
       'Vypočítané z denných záverečných cien. Technické signály opisujú minulosť, nie budúcnosť.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above z $count pozícií nad svojím 200-dňovým priemerom';
+  }
 }

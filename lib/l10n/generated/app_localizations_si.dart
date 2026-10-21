@@ -2705,4 +2705,9 @@ class AppLocalizationsSi extends AppLocalizations {
   @override
   String get techNote =>
       'දෛනික අවසාන මිල අනුව ගණනය කර ඇත. තාක්ෂණික සංඥා විස්තර කරන්නේ අතීතයයි, අනාගතය නොවේ.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$count හිමිකම් අතුරින් $aboveක් ඒවායේ දින 200 සාමාන්‍යයට ඉහළින්';
+  }
 }

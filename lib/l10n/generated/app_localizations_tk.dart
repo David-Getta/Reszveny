@@ -2709,4 +2709,9 @@ class AppLocalizationsTk extends AppLocalizations {
   @override
   String get techNote =>
       'Gündelik ýapylyş nyrhlaryndan hasaplandy. Tehniki signallar geçmişi beýan edýär, geljegi däl.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$count pozisiýadan $above öz 200 günlük ortalamasyndan ýokarda';
+  }
 }

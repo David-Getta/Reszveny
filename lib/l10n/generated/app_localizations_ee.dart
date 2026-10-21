@@ -2711,4 +2711,9 @@ class AppLocalizationsEe extends AppLocalizations {
   @override
   String get techNote =>
       'Wobui tso gbe sia gbe nutuasixɔxɔwo me. Aɖaŋudɔ dzesiwo ƒoa nu tso nu si va yi ŋu, menye etsɔme ŋu o.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return 'Akpa $above le $count dome le woƒe ŋkeke 200 ƒe titina dzi';
+  }
 }

@@ -2681,4 +2681,9 @@ class AppLocalizationsLo extends AppLocalizations {
   @override
   String get techNote =>
       'ຄິດໄລ່ຈາກລາຄາປິດປະຈຳວັນ. ສັນຍານທາງເຕັກນິກອະທິບາຍອະດີດ, ບໍ່ແມ່ນອະນາຄົດ.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above ໃນ $count ຮຸ້ນທີ່ຖື ສູງກວ່າສະເລ່ຍ 200 ວັນຂອງຕົນ';
+  }
 }

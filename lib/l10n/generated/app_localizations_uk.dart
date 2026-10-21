@@ -2782,4 +2782,9 @@ class AppLocalizationsUk extends AppLocalizations {
   @override
   String get techNote =>
       'Розраховано за денними цінами закриття. Технічні сигнали описують минуле, а не майбутнє.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above з $count позицій вище своєї 200-денної середньої';
+  }
 }

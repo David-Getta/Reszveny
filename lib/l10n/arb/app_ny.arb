@@ -718,5 +718,6 @@
   "glossSma200": "Avareji ya mtengo wotseka wa masiku 200 omaliza a malonda – mzere wachikhalidwe wa njira yanthawi yayitali. Osunga ndalama ambiri amaona mtengo wopitirira umenewu ngati kukwera kwanthawi yayitali.",
   "glossRsi": "Mlozera wa mphamvu yofananiza: umayerekezera phindu laposachedwa ndi kutayika kwaposachedwa pa sikelo ya 0–100. Pamwamba pa 70 sitoko nthawi zambiri imati yagulidwa kwambiri (yakwera mofulumira), pansi pa 30 yagulitsidwa kwambiri – koma njira yamphamvu ingakhale pamenepo nthawi yayitali.",
   "glossVolatility": "Momwe mtengo umasinthira tsiku ndi tsiku, poyerekeza ndi chaka: 20% zikutanthauza kuti chaka chachizolowezi chimayenda pafupifupi ±20%. Kusinthasintha kwakukulu kumatanthauza kuyenda kwakukulu mbali zonse ziwiri.",
-  "techNote": "Zawerengedwa kuchokera ku mitengo yotseka ya tsiku ndi tsiku. Zizindikiro zaukadaulo zimafotokoza zakale, osati zamtsogolo."
+  "techNote": "Zawerengedwa kuchokera ku mitengo yotseka ya tsiku ndi tsiku. Zizindikiro zaukadaulo zimafotokoza zakale, osati zamtsogolo.",
+  "portfolioAbove200": "Malo {above} pa {count} ali pamwamba pa avareji yawo ya masiku 200"
 }

@@ -2675,4 +2675,9 @@ class AppLocalizationsAm extends AppLocalizations {
   @override
   String get techNote =>
       'ከዕለታዊ የመዝጊያ ዋጋዎች የተሰላ። ቴክኒካል ምልክቶች ያለፈውን ይገልጻሉ፣ የወደፊቱን አይደለም።';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return 'ከ$count ይዞታዎች $above ከ200 ቀን አማካያቸው በላይ';
+  }
 }

@@ -2721,4 +2721,9 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get techNote =>
       'Berechnet aus täglichen Schlusskursen. Technische Signale beschreiben die Vergangenheit, nicht die Zukunft.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above von $count Positionen über ihrem 200-Tage-Durchschnitt';
+  }
 }

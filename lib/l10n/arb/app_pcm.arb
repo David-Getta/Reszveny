@@ -718,5 +718,6 @@
   "glossSma200": "Di average closing price for di last 200 trading days – di classic long-term trend line. Plenty investors dey take price wey dey above am as long-term uptrend.",
   "glossRsi": "Relative strength index: e compare recent gains with recent losses on 0–100 scale. Above 70 dem dey call di stock overbought (e rise too fast), below 30 oversold – but strong trend fit stay there for long time.",
   "glossVolatility": "How much di price dey swing from day to day, measured for one year: 20% mean say normal year dey move inside about ±20%. Higher volatility mean bigger moves for both sides.",
-  "techNote": "We calculate am from daily closing prices. Technical signals dey talk about wetin don happen, no be wetin go happen."
+  "techNote": "We calculate am from daily closing prices. Technical signals dey talk about wetin don happen, no be wetin go happen.",
+  "portfolioAbove200": "{above} out of {count} positions dey above dia 200-day average"
 }

@@ -2708,4 +2708,9 @@ class AppLocalizationsTr extends AppLocalizations {
   @override
   String get techNote =>
       'Günlük kapanış fiyatlarından hesaplanmıştır. Teknik sinyaller geçmişi anlatır, geleceği değil.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$count pozisyonun $above tanesi 200 günlük ortalamasının üzerinde';
+  }
 }

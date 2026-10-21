@@ -2704,4 +2704,9 @@ class AppLocalizationsFa extends AppLocalizations {
   @override
   String get techNote =>
       'بر اساس قیمت‌های پایانی روزانه محاسبه شده است. سیگنال‌های تکنیکال گذشته را توصیف می‌کنند، نه آینده را.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above از $count موقعیت بالاتر از میانگین ۲۰۰ روزه خود';
+  }
 }

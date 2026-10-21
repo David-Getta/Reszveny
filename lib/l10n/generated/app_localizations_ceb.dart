@@ -2719,4 +2719,9 @@ class AppLocalizationsCeb extends AppLocalizations {
   @override
   String get techNote =>
       'Gikuwenta gikan sa adlaw-adlaw nga closing price. Ang teknikal nga mga signal naghulagway sa nangagi, dili sa umaabot.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above sa $count ka posisyon labaw sa ilang 200 ka adlaw nga average';
+  }
 }

@@ -2715,4 +2715,9 @@ class AppLocalizationsFil extends AppLocalizations {
   @override
   String get techNote =>
       'Kinalkula mula sa pang-araw-araw na closing price. Inilalarawan ng mga teknikal na signal ang nakaraan, hindi ang hinaharap.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above sa $count posisyon ang nasa itaas ng kanilang 200-araw na average';
+  }
 }

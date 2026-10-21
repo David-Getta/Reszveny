@@ -2702,4 +2702,9 @@ class AppLocalizationsMai extends AppLocalizations {
   @override
   String get techNote =>
       'दैनिक बंद भावसँ गणना कएल गेल। तकनीकी संकेत बीतल समय बतबैत अछि, भविष्य नहि।';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$count मे सँ $above पोजीशन अपन 200 दिनक औसत सँ ऊपर';
+  }
 }

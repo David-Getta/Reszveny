@@ -2707,4 +2707,9 @@ class AppLocalizationsTt extends AppLocalizations {
   @override
   String get techNote =>
       'Көндәлек ябылу бәяләреннән исәпләнгән. Техник сигналлар үткәнне тасвирлый, киләчәкне түгел.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$count позициядән $above үзенең 200 көнлек уртачасыннан югарырак';
+  }
 }

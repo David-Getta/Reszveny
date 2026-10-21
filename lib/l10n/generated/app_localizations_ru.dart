@@ -2782,4 +2782,9 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get techNote =>
       'Рассчитано по дневным ценам закрытия. Технические сигналы описывают прошлое, а не будущее.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above из $count позиций выше своей 200-дневной средней';
+  }
 }

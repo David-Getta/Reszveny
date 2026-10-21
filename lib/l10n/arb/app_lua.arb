@@ -718,5 +718,6 @@
   "glossSma200": "Pankatshi pa mishinga ya ndekelu ya matuku 200 a tshisalu a ndekelu – mulongo wa njila wa tshikondo tshile wa kale. Bantu ba bungi badi bateka makuta badi bamona mushinga udi kulu kuapu bu njila wa kubanda wa tshikondo tshile.",
   "glossRsi": "Tshipiminu tshia bukole bua difuanyikija (RSI): tshidi tshifuanyikija mabuenzelu a matuku aa ne mapangila a matuku aa pa tshipiminu tshia 0–100. Kulu kua 70 batu bamba misangu ya bungi ne: aksio idi misumba bikole (yakabanda lukasa), muinshi mua 30 idi mipana bikole – kadi njila wa bukole udi mua kushala apu tshikondo tshile.",
   "glossVolatility": "Mushinga udi ushintuluka mushindu kayi dituku dionso, mubadika mu tshidimu tshimue: 20% udi umvuija ne: mu tshidimu tshia tshianana mushinga udi wenda munkatshi mua ±20%. Dishintuluka dinene didi diumvuija bienzelu binene ku mitshi ibidi yonso.",
-  "techNote": "Mubadika kumbukila ku mishinga ya ndekelu ya dituku dionso. Bimanyinu bia tekinike bidi biumvuija bia kale, kabiyi bia kumpala."
+  "techNote": "Mubadika kumbukila ku mishinga ya ndekelu ya dituku dionso. Bimanyinu bia tekinike bidi biumvuija bia kale, kabiyi bia kumpala.",
+  "portfolioAbove200": "{above} pa {count} ya ba position idi pa mutu pa pankatshi pa matuku 200 pabu"
 }

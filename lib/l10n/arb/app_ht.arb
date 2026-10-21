@@ -718,5 +718,6 @@
   "glossSma200": "Mwayèn pri fèmti 200 dènye jou komès yo – liy tandans klasik la pou lontan. Anpil envestisè konsidere yon pri ki pi wo pase li kòm yon tandans monte sou lontan.",
   "glossRsi": "Endis fòs relatif: li konpare dènye pwofi yo ak dènye pèt yo sou yon echèl 0–100. Pi wo pase 70, yo souvan di aksyon an twò achte (li monte vit), pi ba pase 30 twò vann – men yon tandans fò ka rete la pou lontan.",
   "glossVolatility": "Konbyen pri a varye de yon jou a yon lòt, kalkile sou yon ane: 20% vle di nan yon ane nòmal pri a deplase anviwon ±20%. Plis volatilite vle di pi gwo mouvman nan toude direksyon.",
-  "techNote": "Kalkile apati pri fèmti chak jou. Siyal teknik yo dekri sa ki pase, pa sa ki pral vini."
+  "techNote": "Kalkile apati pri fèmti chak jou. Siyal teknik yo dekri sa ki pase, pa sa ki pral vini.",
+  "portfolioAbove200": "{above} sou {count} pozisyon pi wo pase mwayèn 200 jou yo"
 }

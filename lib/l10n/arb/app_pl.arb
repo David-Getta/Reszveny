@@ -718,5 +718,6 @@
   "glossSma200": "Średnia cena zamknięcia z ostatnich 200 sesji – klasyczna linia trendu długoterminowego. Wielu inwestorów uznaje kurs powyżej niej za długoterminowy trend wzrostowy.",
   "glossRsi": "Wskaźnik siły względnej: porównuje ostatnie wzrosty z ostatnimi spadkami w skali 0–100. Powyżej 70 akcję często nazywa się wykupioną (szybko rosła), poniżej 30 wyprzedaną – ale silny trend może utrzymać się tam długo.",
   "glossVolatility": "Jak mocno kurs waha się z dnia na dzień, w przeliczeniu na rok: 20% oznacza, że w typowym roku porusza się w przedziale około ±20%. Wyższa zmienność to większe ruchy w obie strony.",
-  "techNote": "Obliczono na podstawie dziennych cen zamknięcia. Sygnały techniczne opisują przeszłość, nie przyszłość."
+  "techNote": "Obliczono na podstawie dziennych cen zamknięcia. Sygnały techniczne opisują przeszłość, nie przyszłość.",
+  "portfolioAbove200": "{above} z {count} pozycji powyżej swojej średniej 200-dniowej"
 }

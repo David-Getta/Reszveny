@@ -718,5 +718,6 @@
   "glossSma200": "Jago tile 200 labanw datugu sɔngɔ cɛmancɛ – waati jan sira kɔrɔlen. Wariko mɔgɔ caman bɛ sɔngɔ min bɛ a sanfɛ jate waati jan yɛlɛnni sira ye.",
   "glossRsi": "Barika sumanikɛlan (RSI): a bɛ kɔsa tɔnɔw ni kɔsa bɔnɛw suma 0–100 jate la. Ni a tɛmɛna 70 kan, a bɛ fɔ tuma caman ko a sanna ka tɛmɛ (a yɛlɛnna joona); ni a bɛ 30 duguma, a feerela ka tɛmɛ – nka sira barikama bɛ se ka to yen waati jan.",
   "glossVolatility": "Sɔngɔ bɛ yɛlɛma cogo min na don o don, jatelen san kelen kɔnɔ: 20% kɔrɔ ye ko san kelen kɔnɔ sɔngɔ bɛ yaala ±20% ɲɔgɔn kɔnɔ. Yɛlɛmali caman kɔrɔ ye yaala belebelew fan fila bɛɛ fɛ.",
-  "techNote": "A jatelen don o don datugu sɔngɔw la. Fɛɛrɛko taamasiyɛnw bɛ tɛmɛnen kofɔ, sini tɛ."
+  "techNote": "A jatelen don o don datugu sɔngɔw la. Fɛɛrɛko taamasiyɛnw bɛ tɛmɛnen kofɔ, sini tɛ.",
+  "portfolioAbove200": "Aksiyɔn {above} ka bɔ {count} la bɛ u tile 200 cɛmancɛ sanfɛ"
 }

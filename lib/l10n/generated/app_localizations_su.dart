@@ -2711,4 +2711,9 @@ class AppLocalizationsSu extends AppLocalizations {
   @override
   String get techNote =>
       'Diitung tina harga panutup poéan. Sinyal téknis ngagambarkeun jaman baheula, lain pikahareupeun.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above tina $count posisi di luhureun rata-rata 200 poéna';
+  }
 }

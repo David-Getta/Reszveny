@@ -2706,4 +2706,9 @@ class AppLocalizationsHt extends AppLocalizations {
   @override
   String get techNote =>
       'Kalkile apati pri fèmti chak jou. Siyal teknik yo dekri sa ki pase, pa sa ki pral vini.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above sou $count pozisyon pi wo pase mwayèn 200 jou yo';
+  }
 }

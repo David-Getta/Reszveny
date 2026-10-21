@@ -2718,4 +2718,9 @@ class AppLocalizationsLg extends AppLocalizations {
   @override
   String get techNote =>
       'Kibaliddwa okuva mu miwendo egy\'okuggalawo egya buli lunaku. Obubonero obw\'obukugu bunnyonnyola ebyayita, so si eby\'omu maaso.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return 'Emigabo $above ku $count giri waggulu wa wakati gwayo ogw\'ennaku 200';
+  }
 }

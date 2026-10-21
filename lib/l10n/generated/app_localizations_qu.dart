@@ -2723,4 +2723,9 @@ class AppLocalizationsQu extends AppLocalizations {
   @override
   String get techNote =>
       'Sapa p\'unchaw wichq\'ay chaninkunamanta yupasqa. Tecnico unanchakuna ñawpaqta willanku, manam hamuq pachata.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$count posicionmanta $above paykunapa 200 punchaw chawpinmanta hawanpi';
+  }
 }

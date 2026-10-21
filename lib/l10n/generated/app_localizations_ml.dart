@@ -2720,4 +2720,9 @@ class AppLocalizationsMl extends AppLocalizations {
   @override
   String get techNote =>
       'ദിവസേനയുള്ള ക്ലോസിംഗ് വിലകളിൽ നിന്ന് കണക്കാക്കിയത്. ടെക്നിക്കൽ സിഗ്നലുകൾ ഭൂതകാലത്തെ വിവരിക്കുന്നു, ഭാവിയെ അല്ല.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$count പൊസിഷനുകളിൽ $above എണ്ണം അവയുടെ 200-ദിവസ ശരാശരിക്ക് മുകളിൽ';
+  }
 }

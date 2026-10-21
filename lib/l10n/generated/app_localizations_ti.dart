@@ -2670,4 +2670,9 @@ class AppLocalizationsTi extends AppLocalizations {
   @override
   String get techNote =>
       'ካብ መዓልታዊ መዕጸዊ ዋጋታት ተሓሲቡ። ቴክኒካዊ ምልክታት ዝሓለፈ ይገልጹ፣ መጻኢ ኣይኮነን።';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return 'ካብ $count ቦታታት $above ልዕሊ ናይ 200 መዓልቲ ገምጋሞም';
+  }
 }

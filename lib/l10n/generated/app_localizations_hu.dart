@@ -2713,4 +2713,9 @@ class AppLocalizationsHu extends AppLocalizations {
   @override
   String get techNote =>
       'A napi záróárakból számolva. A technikai jelzések a múltat írják le, nem a jövőt.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$count pozícióból $above a saját 200 napos átlaga felett';
+  }
 }

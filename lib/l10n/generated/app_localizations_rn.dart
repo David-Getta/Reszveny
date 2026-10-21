@@ -2716,4 +2716,9 @@ class AppLocalizationsRn extends AppLocalizations {
   @override
   String get techNote =>
       'Vyaharuwe hakoreshejwe ibiciro vyo gusozera vya buri musi. Ibimenyetso vya tekinike bidondora ivyahise, atari ivyo mu kazoza.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return 'Ibintu $above muri $count ufise biri hejuru y\'impuzandengo yavyo y\'imisi 200';
+  }
 }

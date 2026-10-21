@@ -2727,4 +2727,9 @@ class AppLocalizationsIlo extends AppLocalizations {
   @override
   String get techNote =>
       'Nakwenta manipud kadagiti inaldaw a closing price. Dagiti teknikal a senial deskribirenda ti napalabas, saan a ti masakbayan.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above iti $count a posision ti nangatngato iti average ti 200 nga aldaw da';
+  }
 }

@@ -2707,4 +2707,9 @@ class AppLocalizationsBn extends AppLocalizations {
   @override
   String get techNote =>
       'দৈনিক ক্লোজিং দাম থেকে হিসাব করা। টেকনিক্যাল সংকেত অতীতের বর্ণনা দেয়, ভবিষ্যতের নয়।';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$countটি অবস্থানের মধ্যে $aboveটি নিজেদের ২০০ দিনের গড়ের উপরে';
+  }
 }

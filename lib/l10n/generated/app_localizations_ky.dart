@@ -2712,4 +2712,9 @@ class AppLocalizationsKy extends AppLocalizations {
   @override
   String get techNote =>
       'Күнүмдүк жабылуу бааларынан эсептелген. Техникалык сигналдар өткөндү сүрөттөйт, келечекти эмес.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$count позициянын ичинен $above позиция 200 күндүк орточосунан жогору';
+  }
 }

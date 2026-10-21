@@ -718,5 +718,6 @@
   "glossSma200": "Purata harga penutup 200 hari dagangan terakhir – garis aliran jangka panjang yang klasik. Ramai pelabur menganggap harga di atasnya sebagai aliran menaik jangka panjang.",
   "glossRsi": "Indeks kekuatan relatif: membandingkan keuntungan terkini dengan kerugian terkini pada skala 0–100. Melebihi 70 saham sering disebut terlebih beli (naik terlalu cepat), di bawah 30 terlebih jual – tetapi aliran yang kuat boleh kekal di sana untuk jangka masa yang lama.",
   "glossVolatility": "Sejauh mana harga berayun dari hari ke hari, diskalakan kepada setahun: 20% bermaksud tahun biasa bergerak dalam lingkungan kira-kira ±20%. Volatiliti lebih tinggi bermaksud pergerakan lebih besar ke kedua-dua arah.",
-  "techNote": "Dikira daripada harga penutup harian. Isyarat teknikal menggambarkan masa lalu, bukan masa depan."
+  "techNote": "Dikira daripada harga penutup harian. Isyarat teknikal menggambarkan masa lalu, bukan masa depan.",
+  "portfolioAbove200": "{above} daripada {count} posisi melebihi purata 200 hari masing-masing"
 }

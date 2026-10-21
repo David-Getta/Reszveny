@@ -718,5 +718,6 @@
   "glossSma200": "Palogare ya tlhwatlhwa ya go tswala ya malatsi a 200 a bofelo a kgwebo – mola wa setso wa tsela ya nako e telele. Babeeletsi ba le bantsi ba tsaya tlhwatlhwa e e kwa godimo ga yone jaaka tsela ya go tlhatloga ya nako e telele.",
   "glossRsi": "Indekse ya nonofo e e bapisiwang: e bapisa dipoelo tsa bosheng le ditatlhegelo tsa bosheng mo sekaleng sa 0–100. Kwa godimo ga 70 setoko gantsi se bidiwa se rekilwe thata (se tlhatlogile ka bonako), kwa tlase ga 30 se rekisitswe thata – mme tsela e e nonofileng e ka nna teng lobaka lo loleele.",
   "glossVolatility": "Gore tlhwatlhwa e fetoga go le kae letsatsi le letsatsi, e lekantswe go ngwaga: 20% e raya gore ngwaga o o tlwaelegileng o tsamaya mo teng ga e ka nna ±20%. Phetogo e e kwa godimo e raya metsamao e megolo ka ntlha tsoopedi.",
-  "techNote": "E badilwe go tswa mo ditlhwatlhweng tsa go tswala tsa letsatsi le letsatsi. Matshwao a thekeniki a tlhalosa tse di fetileng, e seng isagwe."
+  "techNote": "E badilwe go tswa mo ditlhwatlhweng tsa go tswala tsa letsatsi le letsatsi. Matshwao a thekeniki a tlhalosa tse di fetileng, e seng isagwe.",
+  "portfolioAbove200": "Maemo a {above} mo go a {count} a kwa godimo ga palogare ya one ya malatsi a 200"
 }

@@ -2709,4 +2709,9 @@ class AppLocalizationsMn extends AppLocalizations {
   @override
   String get techNote =>
       'Өдрийн хаалтын үнээр тооцсон. Техник дохио нь өнгөрснийг дүрсэлдэг, ирээдүйг биш.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$count позициос $above нь 200 хоногийн дунджаасаа дээгүүр';
+  }
 }

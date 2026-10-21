@@ -2708,4 +2708,9 @@ class AppLocalizationsUr extends AppLocalizations {
   @override
   String get techNote =>
       'روزانہ بند قیمتوں سے شمار کیا گیا۔ تکنیکی اشارے ماضی بیان کرتے ہیں، مستقبل نہیں۔';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$count میں سے $above پوزیشنیں اپنی 200 دن کی اوسط سے اوپر';
+  }
 }

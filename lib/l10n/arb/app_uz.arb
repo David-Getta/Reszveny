@@ -718,5 +718,6 @@
   "glossSma200": "So'nggi 200 savdo kunining yopilish narxi o'rtachasi – uzoq muddatli trendning klassik chizig'i. Ko'p investorlar undan yuqoridagi narxni uzoq muddatli o'sish trendi deb hisoblaydi.",
   "glossRsi": "Nisbiy kuch indeksi: so'nggi o'sishlarni so'nggi pasayishlar bilan 0–100 shkalasida solishtiradi. 70 dan yuqorida aksiya ko'pincha haddan ortiq sotib olingan (tez o'sdi), 30 dan pastda haddan ortiq sotilgan deyiladi – lekin kuchli trend u yerda uzoq qolishi mumkin.",
   "glossVolatility": "Narx kundan kunga qanchalik o'zgarishi, bir yilga hisoblangan: 20% odatiy yilda taxminan ±20% oralig'ida harakat qilishini bildiradi. Yuqori o'zgaruvchanlik ikki tomonga ham kattaroq harakatlarni bildiradi.",
-  "techNote": "Kunlik yopilish narxlaridan hisoblangan. Texnik signallar o'tmishni tasvirlaydi, kelajakni emas."
+  "techNote": "Kunlik yopilish narxlaridan hisoblangan. Texnik signallar o'tmishni tasvirlaydi, kelajakni emas.",
+  "portfolioAbove200": "{count} pozitsiyadan {above} tasi o‘z 200 kunlik o‘rtachasidan yuqori"
 }

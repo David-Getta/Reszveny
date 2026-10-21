@@ -718,5 +718,6 @@
   "glossSma200": "Giá đóng cửa trung bình của 200 phiên giao dịch gần nhất – đường xu hướng dài hạn cổ điển. Nhiều nhà đầu tư coi giá nằm trên đường này là xu hướng tăng dài hạn.",
   "glossRsi": "Chỉ số sức mạnh tương đối: so sánh mức tăng gần đây với mức giảm gần đây trên thang 0–100. Trên 70 cổ phiếu thường được gọi là quá mua (tăng nhanh), dưới 30 là quá bán – nhưng một xu hướng mạnh có thể duy trì ở đó rất lâu.",
   "glossVolatility": "Mức độ giá dao động từ ngày này sang ngày khác, quy ra một năm: 20% nghĩa là trong một năm thông thường giá dao động trong khoảng ±20%. Biến động càng cao thì biên độ dao động hai chiều càng lớn.",
-  "techNote": "Tính từ giá đóng cửa hàng ngày. Tín hiệu kỹ thuật mô tả quá khứ, không phải tương lai."
+  "techNote": "Tính từ giá đóng cửa hàng ngày. Tín hiệu kỹ thuật mô tả quá khứ, không phải tương lai.",
+  "portfolioAbove200": "{above} trong {count} vị thế đang trên đường trung bình 200 ngày"
 }

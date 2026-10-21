@@ -718,5 +718,6 @@
   "glossSma200": "Paskutinių 200 prekybos dienų vidutinė uždarymo kaina – klasikinė ilgalaikės tendencijos linija. Daug investuotojų kainą virš jo laiko ilgalaike kylančia tendencija.",
   "glossRsi": "Santykinio stiprumo indeksas: lygina pastarojo meto kilimus su pastarojo meto kritimais skalėje 0–100. Virš 70 akcija dažnai vadinama perpirkta (greitai pakilo), žemiau 30 – perparduota, tačiau stipri tendencija ten gali išlikti ilgai.",
   "glossVolatility": "Kiek kaina svyruoja diena iš dienos, perskaičiuota metams: 20 % reiškia, kad įprastais metais kaina juda maždaug ±20 % ribose. Didesnis kintamumas reiškia didesnius judesius abiem kryptimis.",
-  "techNote": "Apskaičiuota pagal dienos uždarymo kainas. Techniniai signalai aprašo praeitį, ne ateitį."
+  "techNote": "Apskaičiuota pagal dienos uždarymo kainas. Techniniai signalai aprašo praeitį, ne ateitį.",
+  "portfolioAbove200": "{above} iš {count} pozicijų virš savo 200 dienų vidurkio"
 }

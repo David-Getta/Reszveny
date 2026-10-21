@@ -2717,4 +2717,9 @@ class AppLocalizationsCa extends AppLocalizations {
   @override
   String get techNote =>
       'Calculat a partir dels preus de tancament diaris. Els senyals tècnics descriuen el passat, no el futur.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above de $count posicions per sobre de la seva mitjana de 200 dies';
+  }
 }

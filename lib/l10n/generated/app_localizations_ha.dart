@@ -2713,4 +2713,9 @@ class AppLocalizationsHa extends AppLocalizations {
   @override
   String get techNote =>
       'An lissafa daga farashin rufewa na kullum. Alamomin fasaha suna bayyana abin da ya wuce, ba nan gaba ba.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above daga cikin $count hannayen jari sun wuce matsakaicin kwana 200 nasu';
+  }
 }

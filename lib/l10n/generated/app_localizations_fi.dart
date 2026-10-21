@@ -2709,4 +2709,9 @@ class AppLocalizationsFi extends AppLocalizations {
   @override
   String get techNote =>
       'Laskettu päivittäisistä päätöskursseista. Tekniset signaalit kuvaavat menneisyyttä, eivät tulevaisuutta.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above omistusta $count:sta yli 200 päivän keskiarvonsa';
+  }
 }

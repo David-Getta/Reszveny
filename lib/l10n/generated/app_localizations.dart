@@ -4650,6 +4650,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Computed from daily closing prices. Technical signals describe the past, not the future.'**
   String get techNote;
+
+  /// Line under the portfolio value chart: how many open positions trade above their own 200-day moving average.
+  ///
+  /// In en, this message translates to:
+  /// **'{above} of {count} positions above their 200-day average'**
+  String portfolioAbove200(int above, int count);
 }
 
 class _AppLocalizationsDelegate

@@ -2718,4 +2718,9 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String get techNote =>
       'தினசரி முடிவு விலைகளிலிருந்து கணக்கிடப்பட்டது. தொழில்நுட்ப சமிக்ஞைகள் கடந்த காலத்தை விவரிக்கின்றன, எதிர்காலத்தை அல்ல.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$count பொசிஷன்களில் $above அவற்றின் 200-நாள் சராசரிக்கு மேல்';
+  }
 }

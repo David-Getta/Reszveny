@@ -2709,4 +2709,9 @@ class AppLocalizationsCkb extends AppLocalizations {
   @override
   String get techNote =>
       'لە نرخەکانی داخستنی ڕۆژانە هەژمار کراوە. ئاماژەکانی تەکنیکی ڕابردوو باس دەکەن، نەک داهاتوو.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above لە $count پۆزیشن لەسەرووی تێکڕای ٢٠٠ ڕۆژی خۆیانن';
+  }
 }

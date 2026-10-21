@@ -2705,4 +2705,9 @@ class AppLocalizationsBm extends AppLocalizations {
   @override
   String get techNote =>
       'A jatelen don o don datugu sɔngɔw la. Fɛɛrɛko taamasiyɛnw bɛ tɛmɛnen kofɔ, sini tɛ.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return 'Aksiyɔn $above ka bɔ $count la bɛ u tile 200 cɛmancɛ sanfɛ';
+  }
 }

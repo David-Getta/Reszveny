@@ -2715,4 +2715,9 @@ class AppLocalizationsLua extends AppLocalizations {
   @override
   String get techNote =>
       'Mubadika kumbukila ku mishinga ya ndekelu ya dituku dionso. Bimanyinu bia tekinike bidi biumvuija bia kale, kabiyi bia kumpala.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above pa $count ya ba position idi pa mutu pa pankatshi pa matuku 200 pabu';
+  }
 }

@@ -2779,4 +2779,9 @@ class AppLocalizationsBe extends AppLocalizations {
   @override
   String get techNote =>
       'Разлічана па дзённых цэнах закрыцця. Тэхнічныя сігналы апісваюць мінулае, а не будучыню.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above з $count пазіцый вышэй за сваю 200-дзённую сярэднюю';
+  }
 }

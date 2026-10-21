@@ -2708,4 +2708,9 @@ class AppLocalizationsPcm extends AppLocalizations {
   @override
   String get techNote =>
       'We calculate am from daily closing prices. Technical signals dey talk about wetin don happen, no be wetin go happen.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above out of $count positions dey above dia 200-day average';
+  }
 }

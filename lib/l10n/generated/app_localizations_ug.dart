@@ -2711,4 +2711,9 @@ class AppLocalizationsUg extends AppLocalizations {
   @override
   String get techNote =>
       'كۈندىلىك تاقاش باھاسىدىن ھېسابلانغان. تېخنىكىلىق سىگناللار ئۆتمۈشنى تەسۋىرلەيدۇ، كەلگۈسىنى ئەمەس.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$count ئورۇندىن $above ئى ئۆزىنىڭ 200 كۈنلۈك ئوتتۇرىچە قىممىتىدىن يۇقىرى';
+  }
 }

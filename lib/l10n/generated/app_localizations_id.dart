@@ -2704,4 +2704,9 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get techNote =>
       'Dihitung dari harga penutupan harian. Sinyal teknikal menggambarkan masa lalu, bukan masa depan.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above dari $count posisi di atas rata-rata 200 harinya';
+  }
 }

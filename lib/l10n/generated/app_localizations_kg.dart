@@ -2716,4 +2716,9 @@ class AppLocalizationsKg extends AppLocalizations {
   @override
   String get techNote =>
       'Bo tangaka yo na ntalu ya nsuka ya konso kilumbu. Bidimbu ya tekinike ke tubaka mambu ya me luta, kansi ve ya ke kwisa.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above na $count ya ba position kele na zulu ya kati-kati ya bilumbu 200 ya bawu';
+  }
 }

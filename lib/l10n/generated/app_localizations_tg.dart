@@ -2710,4 +2710,9 @@ class AppLocalizationsTg extends AppLocalizations {
   @override
   String get techNote =>
       'Аз нархҳои рӯзонаи бастан ҳисоб шудааст. Сигналҳои техникӣ гузаштаро тасвир мекунанд, на ояндаро.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above аз $count мавқеъ болотар аз миёнаи 200-рӯзаи худ';
+  }
 }

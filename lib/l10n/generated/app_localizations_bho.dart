@@ -2704,4 +2704,9 @@ class AppLocalizationsBho extends AppLocalizations {
   @override
   String get techNote =>
       'रोज के बंद भाव से गिनल गइल। तकनीकी संकेत बीतल समय बतावेला, आगे के ना।';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$count में से $above पोजीशन अपना 200 दिन के औसत से ऊपर';
+  }
 }

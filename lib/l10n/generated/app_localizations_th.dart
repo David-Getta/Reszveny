@@ -2678,4 +2678,9 @@ class AppLocalizationsTh extends AppLocalizations {
   @override
   String get techNote =>
       'คำนวณจากราคาปิดรายวัน สัญญาณทางเทคนิคบอกเล่าอดีต ไม่ใช่อนาคต';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above จาก $count สถานะอยู่เหนือเส้นค่าเฉลี่ย 200 วันของตัวเอง';
+  }
 }

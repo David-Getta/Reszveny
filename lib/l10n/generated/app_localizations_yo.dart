@@ -2706,4 +2706,9 @@ class AppLocalizationsYo extends AppLocalizations {
   @override
   String get techNote =>
       'A ṣírò rẹ̀ láti owó ìparí ojoojúmọ́. Àwọn àmì ìmọ̀-ẹ̀rọ ń ṣàpèjúwe ohun tó ti kọjá, kì í ṣe ọjọ́ iwájú.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above nínú $count ipò wà lókè ìpíndọ́gba ọjọ́ 200 wọn';
+  }
 }

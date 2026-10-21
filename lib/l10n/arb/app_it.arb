@@ -718,5 +718,6 @@
   "glossSma200": "Il prezzo medio di chiusura degli ultimi 200 giorni di borsa – la classica linea di tendenza di lungo periodo. Molti investitori considerano un prezzo sopra come un trend rialzista di lungo periodo.",
   "glossRsi": "Indice di forza relativa: confronta i guadagni recenti con le perdite recenti su una scala da 0 a 100. Sopra 70 il titolo è spesso detto ipercomprato (è salito in fretta), sotto 30 ipervenduto – ma un trend forte può restarci a lungo.",
   "glossVolatility": "Quanto oscilla il prezzo da un giorno all’altro, su base annua: 20% significa che in un anno tipico si muove entro circa ±20%. Una volatilità più alta significa movimenti più ampi in entrambe le direzioni.",
-  "techNote": "Calcolato dai prezzi di chiusura giornalieri. I segnali tecnici descrivono il passato, non il futuro."
+  "techNote": "Calcolato dai prezzi di chiusura giornalieri. I segnali tecnici descrivono il passato, non il futuro.",
+  "portfolioAbove200": "{above} posizioni su {count} sopra la loro media a 200 giorni"
 }

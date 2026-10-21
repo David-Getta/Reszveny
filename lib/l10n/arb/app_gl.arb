@@ -718,5 +718,6 @@
   "glossSma200": "O prezo medio de peche dos últimos 200 días de negociación – a liña de tendencia clásica a longo prazo. Moitos investidores consideran que un prezo por riba indica unha tendencia alcista a longo prazo.",
   "glossRsi": "Índice de forza relativa: compara as ganancias recentes coas perdas recentes nunha escala de 0 a 100. Por riba de 70 adoita dicirse que a acción está sobrecomprada (subiu rápido); por baixo de 30, sobrevendida – pero unha tendencia forte pode manterse aí moito tempo.",
   "glossVolatility": "Canto oscila o prezo dun día a outro, anualizado: un 20% significa que nun ano típico se move dentro de aproximadamente ±20%. Maior volatilidade significa movementos máis grandes en ambas as direccións.",
-  "techNote": "Calculado a partir dos prezos de peche diarios. Os sinais técnicos describen o pasado, non o futuro."
+  "techNote": "Calculado a partir dos prezos de peche diarios. Os sinais técnicos describen o pasado, non o futuro.",
+  "portfolioAbove200": "{above} de {count} posicións por riba da súa media de 200 días"
 }

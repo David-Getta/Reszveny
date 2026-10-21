@@ -2751,4 +2751,9 @@ class AppLocalizationsLv extends AppLocalizations {
   @override
   String get techNote =>
       'Aprēķināts pēc dienas slēgšanas cenām. Tehniskie signāli apraksta pagātni, ne nākotni.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above no $count pozīcijām virs sava 200 dienu vidējā';
+  }
 }

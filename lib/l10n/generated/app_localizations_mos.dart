@@ -2695,4 +2695,9 @@ class AppLocalizationsMos extends AppLocalizations {
   @override
   String get techNote =>
       'B geelg-a lame ne daar fãa pagb ligdã. Tekniik bãnd wilgda sẽn loogã, la pa sẽn wat ye.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return 'Zĩis $above sẽn be $count pʋgẽ yɩɩda b raar 200 pʋ-sʋkã';
+  }
 }

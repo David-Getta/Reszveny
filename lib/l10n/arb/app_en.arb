@@ -2274,5 +2274,17 @@
   "techNote": "Computed from daily closing prices. Technical signals describe the past, not the future.",
   "@techNote": {
     "description": "Small print under the technical card."
+  },
+  "portfolioAbove200": "{above} of {count} positions above their 200-day average",
+  "@portfolioAbove200": {
+    "description": "Line under the portfolio value chart: how many open positions trade above their own 200-day moving average.",
+    "placeholders": {
+      "above": {
+        "type": "int"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
   }
 }

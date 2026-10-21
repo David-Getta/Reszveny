@@ -2703,4 +2703,9 @@ class AppLocalizationsGu extends AppLocalizations {
   @override
   String get techNote =>
       'દૈનિક બંધ ભાવ પરથી ગણેલું. ટેકનિકલ સંકેતો ભૂતકાળ વર્ણવે છે, ભવિષ્ય નહીં.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$countમાંથી $above પોઝિશન તેમની 200 દિવસની સરેરાશથી ઉપર';
+  }
 }

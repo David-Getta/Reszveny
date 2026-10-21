@@ -2715,4 +2715,9 @@ class AppLocalizationsTe extends AppLocalizations {
   @override
   String get techNote =>
       'రోజువారీ ముగింపు ధరల నుంచి లెక్కించినది. సాంకేతిక సంకేతాలు గతాన్ని వివరిస్తాయి, భవిష్యత్తును కాదు.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$count పొజిషన్లలో $above వాటి 200-రోజుల సగటు పైన';
+  }
 }

@@ -2700,4 +2700,9 @@ class AppLocalizationsSd extends AppLocalizations {
   @override
   String get techNote =>
       'روزاني بند قيمتن مان حساب ڪيل. ٽيڪنيڪل اشارا ماضي بيان ڪن ٿا، مستقبل نه.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$count پوزيشنن مان $above پنهنجي 200-ڏينهن جي اوسط کان مٿي';
+  }
 }

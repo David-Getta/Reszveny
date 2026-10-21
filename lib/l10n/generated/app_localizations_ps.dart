@@ -2699,4 +2699,9 @@ class AppLocalizationsPs extends AppLocalizations {
   @override
   String get techNote =>
       'له ورځنیو تړلو بیو څخه حساب شوی. تخنیکي نښې تېر وخت بیانوي، نه راتلونکی.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return 'له $count پوزیشنونو څخه $above د خپل 200-ورځني اوسط له پاسه';
+  }
 }

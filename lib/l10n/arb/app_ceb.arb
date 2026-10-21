@@ -718,5 +718,6 @@
   "glossSma200": "Ang average nga closing price sa miaging 200 ka adlaw sa pamatigayon – ang klasikong linya sa uso sa taas nga panahon. Daghang mamumuhunan nag-isip sa presyo nga labaw niini isip pasaka nga uso sa taas nga panahon.",
   "glossRsi": "Relative strength index: gitandi ang bag-ong mga ganansya sa bag-ong mga kapildihan sa sukdanan nga 0–100. Labaw sa 70 ang stock sagad gitawag nga overbought (paspas misaka), ubos sa 30 oversold – apan ang kusog nga uso mahimong magpabilin didto og dugay.",
   "glossVolatility": "Unsa ka dako ang pag-usab-usab sa presyo matag adlaw, gisukod sa usa ka tuig: ang 20% nagpasabot nga sa kasagarang tuig ang presyo molihok sulod sa mga ±20%. Mas taas nga volatility nagpasabot og mas dagkong lihok sa duha ka direksyon.",
-  "techNote": "Gikuwenta gikan sa adlaw-adlaw nga closing price. Ang teknikal nga mga signal naghulagway sa nangagi, dili sa umaabot."
+  "techNote": "Gikuwenta gikan sa adlaw-adlaw nga closing price. Ang teknikal nga mga signal naghulagway sa nangagi, dili sa umaabot.",
+  "portfolioAbove200": "{above} sa {count} ka posisyon labaw sa ilang 200 ka adlaw nga average"
 }

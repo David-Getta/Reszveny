@@ -718,5 +718,6 @@
   "glossSma200": "Impuzandengo y'igiciro cyo gusoza cy'iminsi 200 ishize y'ubucuruzi – umurongo usanzwe w'icyerekezo cy'igihe kirekire. Abashoramari benshi bafata igiciro kiri hejuru yayo nk'ukuzamuka kw'igihe kirekire.",
   "glossRsi": "Igipimo cy'imbaraga zigereranyijwe (RSI): kigereranya inyungu za vuba n'igihombo cya vuba ku rugero rwa 0–100. Hejuru ya 70 imigabane akenshi ivugwa ko yaguzwe cyane (yazamutse vuba), munsi ya 30 ko yagurishijwe cyane – ariko icyerekezo gikomeye gishobora kuhaguma igihe kirekire.",
   "glossVolatility": "Uko igiciro gihindagurika umunsi ku wundi, gipimwe ku mwaka: 20% bivuze ko umwaka usanzwe ugenda hafi ya ±20%. Ihindagurika ryinshi bivuze ingendo nini mu mpande zombi.",
-  "techNote": "Byabazwe hakoreshejwe ibiciro byo gusoza bya buri munsi. Ibimenyetso bya tekiniki bisobanura ibyahise, ntabwo ari ibizaza."
+  "techNote": "Byabazwe hakoreshejwe ibiciro byo gusoza bya buri munsi. Ibimenyetso bya tekiniki bisobanura ibyahise, ntabwo ari ibizaza.",
+  "portfolioAbove200": "Ibyo ufite {above} muri {count} biri hejuru y'impuzandengo yabyo y'iminsi 200"
 }

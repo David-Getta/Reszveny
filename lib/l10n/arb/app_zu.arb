@@ -718,5 +718,6 @@
   "glossSma200": "Isilinganiso senani lokuvala lezinsuku ezingu-200 zokugcina zokuhweba – umugqa wendabuko wesimo sesikhathi eside. Abatshalizimali abaningi bathatha inani elingaphezulu kwaso njengokwenyuka kwesikhathi eside.",
   "glossRsi": "Inkomba yamandla aqhathaniswayo: iqhathanisa inzuzo yakamuva nokulahlekelwa kwakamuva esikalini esingu-0–100. Ngaphezulu kuka-70 isitoko sivame ukuthiwa sithengwe ngokweqile (senyuke ngokushesha), ngaphansi kuka-30 sithengisiwe ngokweqile – kodwa isimo esiqinile singahlala lapho isikhathi eside.",
   "glossVolatility": "Ukuthi inani liguquka kangakanani usuku nosuku, kulinganiswe ngonyaka: u-20% usho ukuthi unyaka ojwayelekile uhamba phakathi kuka-±20% cishe. Ukuguquguquka okuphezulu kusho ukuhamba okukhulu nhlangothi zombili.",
-  "techNote": "Kubalwe emananini okuvala ansuku zonke. Izimpawu zobuchwepheshe zichaza okudlule, hhayi ikusasa."
+  "techNote": "Kubalwe emananini okuvala ansuku zonke. Izimpawu zobuchwepheshe zichaza okudlule, hhayi ikusasa.",
+  "portfolioAbove200": "Amasheya angu-{above} kwangu-{count} angaphezu kwesilinganiso sawo sezinsuku ezingu-200"
 }

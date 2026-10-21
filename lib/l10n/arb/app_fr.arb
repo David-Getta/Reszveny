@@ -718,5 +718,6 @@
   "glossSma200": "Le cours de clôture moyen des 200 derniers jours de bourse – la ligne de tendance classique à long terme. Beaucoup d’investisseurs considèrent un cours au-dessus comme une tendance haussière de long terme.",
   "glossRsi": "Indice de force relative : compare les gains récents aux pertes récentes sur une échelle de 0 à 100. Au-dessus de 70, on dit souvent que l’action est en surachat (elle a monté vite), en dessous de 30 en survente – mais une tendance forte peut y rester longtemps.",
   "glossVolatility": "L’ampleur des variations du cours d’un jour à l’autre, ramenée à une année : 20 % signifie qu’une année typique évolue dans une fourchette d’environ ±20 %. Une volatilité plus élevée signifie des mouvements plus amples dans les deux sens.",
-  "techNote": "Calculé à partir des cours de clôture quotidiens. Les signaux techniques décrivent le passé, pas l’avenir."
+  "techNote": "Calculé à partir des cours de clôture quotidiens. Les signaux techniques décrivent le passé, pas l’avenir.",
+  "portfolioAbove200": "{above} positions sur {count} au-dessus de leur moyenne 200 jours"
 }

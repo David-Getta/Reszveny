@@ -2709,4 +2709,9 @@ class AppLocalizationsKa extends AppLocalizations {
   @override
   String get techNote =>
       'გამოთვლილია დღიური დახურვის ფასებიდან. ტექნიკური სიგნალები აღწერს წარსულს და არა მომავალს.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$count პოზიციიდან $above თავის 200-დღიან საშუალოზე მაღლაა';
+  }
 }

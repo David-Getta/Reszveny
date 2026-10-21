@@ -718,5 +718,6 @@
   "glossSma200": "Genomsnittlig stängningskurs de senaste 200 handelsdagarna – den klassiska långsiktiga trendlinjen. Många investerare ser en kurs över den som en långsiktig uppåttrend.",
   "glossRsi": "Relativt styrkeindex: jämför senaste tidens uppgångar med nedgångar på en skala 0–100. Över 70 kallas aktien ofta överköpt (den har stigit snabbt), under 30 översåld – men en stark trend kan ligga kvar där länge.",
   "glossVolatility": "Hur mycket kursen svänger från dag till dag, omräknat till ett år: 20 % betyder att ett typiskt år rör sig inom ungefär ±20 %. Högre volatilitet betyder större rörelser i båda riktningarna.",
-  "techNote": "Beräknat utifrån dagliga stängningskurser. Tekniska signaler beskriver det förflutna, inte framtiden."
+  "techNote": "Beräknat utifrån dagliga stängningskurser. Tekniska signaler beskriver det förflutna, inte framtiden.",
+  "portfolioAbove200": "{above} av {count} positioner över sitt 200-dagarssnitt"
 }

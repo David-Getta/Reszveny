@@ -2625,4 +2625,9 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get techNote => '日々の終値から算出。テクニカル指標は過去を表すもので、将来を示すものではありません。';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$count銘柄中$above銘柄が200日移動平均を上回っています';
+  }
 }

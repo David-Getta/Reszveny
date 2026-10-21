@@ -2722,4 +2722,9 @@ class AppLocalizationsSt extends AppLocalizations {
   @override
   String get techNote =>
       'E baletswe ho tswa dithekong tsa ho kwala tsa letsatsi le letsatsi. Matshwao a botekgeniki a hlalosa tse fetileng, eseng bokamoso.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return 'Maemo a $above ho a $count a ka hodima karolelano ya ona ya matsatsi a 200';
+  }
 }

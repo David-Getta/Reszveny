@@ -2701,4 +2701,9 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get techNote =>
       'Tính từ giá đóng cửa hàng ngày. Tín hiệu kỹ thuật mô tả quá khứ, không phải tương lai.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above trong $count vị thế đang trên đường trung bình 200 ngày';
+  }
 }

@@ -2719,4 +2719,9 @@ class AppLocalizationsLn extends AppLocalizations {
   @override
   String get techNote =>
       'Etángami uta na ntalo ya nsuka ya mokolo na mokolo. Bilembo ya tekiniki elobelaka makambo oyo eleki, kasi te oyo ekoya.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above kati na ba-position $count ezali likoló ya katikati ya mikolo 200 na yango';
+  }
 }

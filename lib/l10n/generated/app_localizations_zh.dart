@@ -2589,6 +2589,11 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get techNote => '根据每日收盘价计算。技术信号描述的是过去，而非未来。';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$count 个持仓中有 $above 个高于其 200 日均线';
+  }
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -5174,4 +5179,9 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get techNote => '按每日收市價計算。技術訊號描述過去，而非未來。';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$count 個持倉中有 $above 個高於其 200 日均線';
+  }
 }

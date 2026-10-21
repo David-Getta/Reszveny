@@ -718,5 +718,6 @@
   "glossSma200": "Karolelano ya theko ya ho kwala ya matsatsi a 200 a ho qetela a khwebo – mola wa setso wa tshekamelo ya nako e telele. Batsetedi ba bangata ba nka theko e ka hodimo ho yona e le tshekamelo ya ho nyoloha ya nako e telele.",
   "glossRsi": "Indekse ya matla a bapiswang: e bapisa diphaello tsa morao tjena le ditahlehelo tsa morao tjena sekaleng sa 0–100. Ka hodimo ho 70 setoko hangata se bitswa se rekilwe haholo (se nyolohile kapele), ka tlase ho 30 se rekisitswe haholo – empa tshekamelo e matla e ka dula moo nako e telele.",
   "glossVolatility": "Kamoo theko e fetohang letsatsi le letsatsi, e lekantswe ho selemo: 20% e bolela hore selemo se tlwaelehileng se tsamaya ka hare ho hoo e ka bang ±20%. Phetoho e phahameng e bolela metsamao e meholo ka mahlakoreng ka bobedi.",
-  "techNote": "E baletswe ho tswa dithekong tsa ho kwala tsa letsatsi le letsatsi. Matshwao a botekgeniki a hlalosa tse fetileng, eseng bokamoso."
+  "techNote": "E baletswe ho tswa dithekong tsa ho kwala tsa letsatsi le letsatsi. Matshwao a botekgeniki a hlalosa tse fetileng, eseng bokamoso.",
+  "portfolioAbove200": "Maemo a {above} ho a {count} a ka hodima karolelano ya ona ya matsatsi a 200"
 }

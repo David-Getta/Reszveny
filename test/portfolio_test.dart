@@ -20,6 +20,25 @@ import 'app_widget_test.dart' show services;
 void main() {
   setUp(() => SharedPreferences.setMockInitialValues({}));
 
+  test('trend: how many positions trade above their own 200-day average', () {
+    PriceHistory hist(String s, List<double> closes) => PriceHistory(
+      symbol: s,
+      points: [
+        for (final (i, c) in closes.indexed)
+          PricePoint(
+            time: DateTime(2025, 1, 1).add(Duration(days: i)),
+            close: c,
+          ),
+      ],
+    );
+    final up = [for (var i = 0; i < 210; i++) 100.0 + i];
+    final down = [for (var i = 0; i < 210; i++) 400.0 - i];
+    final short = [for (var i = 0; i < 50; i++) 100.0];
+    final t = portfolioTrend(['A', 'B', 'C', 'D'], {'A': hist('A', up), 'B': hist('B', down), 'C': hist('C', short)});
+    expect(t, (above: 1, count: 2));
+    expect(portfolioTrend(['C'], {'C': hist('C', short)}), isNull);
+  });
+
   group('PortfolioStore', () {
     test('merges purchases of the same stock into one position with a weighted average cost', () async {
       final store = PortfolioStore();

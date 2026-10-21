@@ -2726,4 +2726,9 @@ class AppLocalizationsMg extends AppLocalizations {
   @override
   String get techNote =>
       'Kajiana avy amin\'ny vidin\'ny fanakatonana isan\'andro. Ny famantarana teknika dia mamaritra ny lasa, fa tsy ny ho avy.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above amin\'ny $count petra-bola no ambonin\'ny salan\'isan\'ny 200 andro';
+  }
 }

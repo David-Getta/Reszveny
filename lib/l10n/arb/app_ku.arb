@@ -718,5 +718,6 @@
   "glossSma200": "Navîniya bihayê girtinê ya 200 rojên bazirganiyê yên dawî – xeta meylê ya klasîk a demdirêj. Gelek veberhêner bihayê li jor wê wek meyla bilindbûnê ya demdirêj dibînin.",
   "glossRsi": "Nîşaneya hêza têkildar: qezencên dawî bi windahiyên dawî re li ser pîvanekê 0–100 dide ber hev. Li jor 70 pişk bi gelemperî zêde kirî tê gotin (zû bilind bûye), li jêr 30 zêde firotî – lê meyleke bihêz dikare demeke dirêj li wir bimîne.",
   "glossVolatility": "Biha roj bi roj çiqas diguhere, li gorî salekê hesibandî: 20% tê wateya ku di saleke asayî de biha di nav bi qasî ±20% de dilive. Guherbariya bilindtir tê wateya livên mezintir ber bi her du aliyan ve.",
-  "techNote": "Ji bihayên girtinê yên rojane hatiye hesibandin. Nîşanên teknîkî rabirdûyê vedibêjin, ne paşerojê."
+  "techNote": "Ji bihayên girtinê yên rojane hatiye hesibandin. Nîşanên teknîkî rabirdûyê vedibêjin, ne paşerojê.",
+  "portfolioAbove200": "Ji {count} pozîsyonan {above} li ser navîniya xwe ya 200 rojan in"
 }

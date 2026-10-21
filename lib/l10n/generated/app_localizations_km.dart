@@ -2687,4 +2687,9 @@ class AppLocalizationsKm extends AppLocalizations {
   @override
   String get techNote =>
       'គណនាពីតម្លៃបិទប្រចាំថ្ងៃ។ សញ្ញាបច្ចេកទេសពណ៌នាអតីតកាល មិនមែនអនាគតទេ។';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above ក្នុងចំណោម $count ការកាន់កាប់ ខ្ពស់ជាងមធ្យម ២០០ ថ្ងៃរបស់វា';
+  }
 }

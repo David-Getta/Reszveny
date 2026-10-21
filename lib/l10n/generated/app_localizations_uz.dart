@@ -2714,4 +2714,9 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get techNote =>
       'Kunlik yopilish narxlaridan hisoblangan. Texnik signallar o\'tmishni tasvirlaydi, kelajakni emas.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$count pozitsiyadan $above tasi o‘z 200 kunlik o‘rtachasidan yuqori';
+  }
 }

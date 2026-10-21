@@ -2781,4 +2781,9 @@ class AppLocalizationsPl extends AppLocalizations {
   @override
   String get techNote =>
       'Obliczono na podstawie dziennych cen zamknięcia. Sygnały techniczne opisują przeszłość, nie przyszłość.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above z $count pozycji powyżej swojej średniej 200-dniowej';
+  }
 }

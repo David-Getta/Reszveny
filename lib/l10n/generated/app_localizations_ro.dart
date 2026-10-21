@@ -2750,4 +2750,9 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get techNote =>
       'Calculat din prețurile zilnice de închidere. Semnalele tehnice descriu trecutul, nu viitorul.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above din $count poziții peste media lor pe 200 de zile';
+  }
 }

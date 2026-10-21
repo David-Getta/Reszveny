@@ -2724,4 +2724,9 @@ class AppLocalizationsNso extends AppLocalizations {
   @override
   String get techNote =>
       'E balwa go tšwa ditheko tša go tswalela tša letšatši le letšatši. Maswao a setegeniki a hlalosa tše di fetilego, e sego tša bokamoso.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return 'Maemo a $above go a $count a ka godimo ga palogare ya ona ya matšatši a 200';
+  }
 }

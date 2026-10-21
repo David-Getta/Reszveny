@@ -2711,4 +2711,9 @@ class AppLocalizationsAz extends AppLocalizations {
   @override
   String get techNote =>
       'Gündəlik bağlanış qiymətlərindən hesablanıb. Texniki siqnallar keçmişi təsvir edir, gələcəyi yox.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$count mövqedən $above mövqe 200 günlük ortasının üzərindədir';
+  }
 }

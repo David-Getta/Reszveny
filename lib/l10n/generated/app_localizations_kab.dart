@@ -2706,4 +2706,9 @@ class AppLocalizationsKab extends AppLocalizations {
   @override
   String get techNote =>
       'Yettwaḥseb seg ssumat n umdal n yal ass. Imataren itiknikanen glemmen ayen iɛeddan, mačči ayen i d-iteddun.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above seg $count yiksyunen nnig talemmast-nsen n 200 wussan';
+  }
 }

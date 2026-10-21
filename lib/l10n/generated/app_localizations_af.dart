@@ -2711,4 +2711,9 @@ class AppLocalizationsAf extends AppLocalizations {
   @override
   String get techNote =>
       'Bereken uit daaglikse sluitingspryse. Tegniese seine beskryf die verlede, nie die toekoms nie.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above van $count posisies bo hul 200-dae-gemiddelde';
+  }
 }

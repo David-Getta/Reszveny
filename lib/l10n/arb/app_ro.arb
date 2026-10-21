@@ -718,5 +718,6 @@
   "glossSma200": "Prețul mediu de închidere din ultimele 200 de zile de tranzacționare – linia clasică a trendului pe termen lung. Mulți investitori consideră un preț peste ea un trend ascendent pe termen lung.",
   "glossRsi": "Indicele puterii relative: compară câștigurile recente cu pierderile recente pe o scară de la 0 la 100. Peste 70, acțiunea este adesea numită supracumpărată (a crescut rapid), sub 30 supravândută – dar un trend puternic poate rămâne acolo mult timp.",
   "glossVolatility": "Cât de mult oscilează prețul de la o zi la alta, raportat la un an: 20% înseamnă că un an obișnuit se mișcă în limita a aproximativ ±20%. O volatilitate mai mare înseamnă mișcări mai ample în ambele sensuri.",
-  "techNote": "Calculat din prețurile zilnice de închidere. Semnalele tehnice descriu trecutul, nu viitorul."
+  "techNote": "Calculat din prețurile zilnice de închidere. Semnalele tehnice descriu trecutul, nu viitorul.",
+  "portfolioAbove200": "{above} din {count} poziții peste media lor pe 200 de zile"
 }

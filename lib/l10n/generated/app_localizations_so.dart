@@ -2717,4 +2717,9 @@ class AppLocalizationsSo extends AppLocalizations {
   @override
   String get techNote =>
       'Laga xisaabiyay qiimayaasha xidhitaanka maalinlaha ah. Calaamadaha farsamo waxay sharxaan wixii tegay, ee ma aha mustaqbalka.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$count saami $above ka mid ah ayaa ka sarreeya celceliskooda 200 maalmood';
+  }
 }

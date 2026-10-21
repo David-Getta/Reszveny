@@ -718,5 +718,6 @@
   "glossSma200": "Der durchschnittliche Schlusskurs der letzten 200 Handelstage – die klassische langfristige Trendlinie. Viele Anleger werten einen Kurs darüber als langfristigen Aufwärtstrend.",
   "glossRsi": "Relative-Stärke-Index: vergleicht jüngste Gewinne mit jüngsten Verlusten auf einer Skala von 0 bis 100. Über 70 gilt die Aktie oft als überkauft (sie ist schnell gestiegen), unter 30 als überverkauft – ein starker Trend kann aber lange dort bleiben.",
   "glossVolatility": "Wie stark der Kurs von Tag zu Tag schwankt, auf ein Jahr hochgerechnet: 20 % bedeutet, dass sich ein typisches Jahr innerhalb von etwa ±20 % bewegt. Höhere Volatilität heißt größere Bewegungen in beide Richtungen.",
-  "techNote": "Berechnet aus täglichen Schlusskursen. Technische Signale beschreiben die Vergangenheit, nicht die Zukunft."
+  "techNote": "Berechnet aus täglichen Schlusskursen. Technische Signale beschreiben die Vergangenheit, nicht die Zukunft.",
+  "portfolioAbove200": "{above} von {count} Positionen über ihrem 200-Tage-Durchschnitt"
 }

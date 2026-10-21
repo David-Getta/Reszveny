@@ -2707,4 +2707,9 @@ class AppLocalizationsAs extends AppLocalizations {
   @override
   String get techNote =>
       'দৈনিক সমাপ্তি মূল্যৰ পৰা গণনা কৰা। কাৰিকৰী সংকেত অতীতৰ বৰ্ণনা কৰে, ভবিষ্যতৰ নহয়।';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$countটা পজিচনৰ ভিতৰত $aboveটা নিজৰ ২০০ দিনৰ গড়তকৈ ওপৰত';
+  }
 }

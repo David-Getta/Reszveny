@@ -2710,4 +2710,9 @@ class AppLocalizationsKu extends AppLocalizations {
   @override
   String get techNote =>
       'Ji bihayên girtinê yên rojane hatiye hesibandin. Nîşanên teknîkî rabirdûyê vedibêjin, ne paşerojê.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return 'Ji $count pozîsyonan $above li ser navîniya xwe ya 200 rojan in';
+  }
 }

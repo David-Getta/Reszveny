@@ -2717,4 +2717,9 @@ class AppLocalizationsOm extends AppLocalizations {
   @override
   String get techNote =>
       'Gatii cufiinsaa guyyaa irraa shallagame. Mallattooleen teeknikaa kan darbe ibsu, kan dhufu hin ibsan.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return 'Qabiyyeewwan $count keessaa $above giddugaleessa guyyaa 200 isaanii ol jiru';
+  }
 }

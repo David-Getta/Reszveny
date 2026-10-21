@@ -2637,4 +2637,9 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get techNote => '일별 종가로 계산했습니다. 기술적 신호는 과거를 설명할 뿐 미래를 말해주지 않습니다.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '보유 종목 $count개 중 $above개가 200일 이동평균 위';
+  }
 }

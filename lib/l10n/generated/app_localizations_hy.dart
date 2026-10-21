@@ -2717,4 +2717,9 @@ class AppLocalizationsHy extends AppLocalizations {
   @override
   String get techNote =>
       'Հաշվարկված է օրական փակման գներից։ Տեխնիկական ազդանշանները նկարագրում են անցյալը, ոչ թե ապագան։';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$count դիրքից $above դիրք՝ իրենց 200-օրյա միջինից բարձր';
+  }
 }

@@ -718,5 +718,6 @@
   "glossSma200": "Ti average a closing price iti napalabas a 200 nga aldaw ti panagtagilako – ti klasiko a linia ti tendensia iti atiddog a panawen. Adu nga investor ti mangibilang iti presio a nangatngato ngem daytoy kas pangato a tendensia iti atiddog a panawen.",
   "glossRsi": "Relative strength index: idiligna dagiti kabbaro a ganansia kadagiti kabbaro a pukaw iti rukod a 0–100. Iti ngato ti 70 masansan a maawagan ti stock nga overbought (napartak a nangato), iti baba ti 30 oversold – ngem ti napigsa a tendensia mabalin nga agtalinaed sadiay iti nabayag.",
   "glossVolatility": "Kasano ti kadakkel ti panagbaliw ti presio iti inaldaw, narukod iti maysa a tawen: ti 20% kayatna a sawen nga iti gagangay a tawen aggaraw ti presio iti uneg ti agarup ±20%. Nangatngato a volatility kayatna a sawen dakdakkel a garaw iti dua a direksion.",
-  "techNote": "Nakwenta manipud kadagiti inaldaw a closing price. Dagiti teknikal a senial deskribirenda ti napalabas, saan a ti masakbayan."
+  "techNote": "Nakwenta manipud kadagiti inaldaw a closing price. Dagiti teknikal a senial deskribirenda ti napalabas, saan a ti masakbayan.",
+  "portfolioAbove200": "{above} iti {count} a posision ti nangatngato iti average ti 200 nga aldaw da"
 }

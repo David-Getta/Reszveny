@@ -718,5 +718,6 @@
   "glossSma200": "Matsakaicin farashin rufewa na kwanakin kasuwanci 200 na baya-bayan nan – layin yanayi na dogon lokaci na gargajiya. Masu zuba jari da yawa suna ɗaukar farashi da ke sama da shi a matsayin hawan dogon lokaci.",
   "glossRsi": "Ma'aunin ƙarfi na kwatance (RSI): yana kwatanta ribar kwanan nan da asarar kwanan nan a kan ma'auni na 0–100. Sama da 70 akan ce an saya hannun jarin fiye da kima (ya hau da sauri), ƙasa da 30 an sayar fiye da kima – amma yanayi mai ƙarfi na iya tsayawa a nan na dogon lokaci.",
   "glossVolatility": "Yadda farashi yake sauyawa kowace rana, an lissafa a shekara: 20% na nufin a shekara ta yau da kullum farashi yana motsi cikin kusan ±20%. Sauyi mafi girma na nufin manyan motsi ta kowane bangare.",
-  "techNote": "An lissafa daga farashin rufewa na kullum. Alamomin fasaha suna bayyana abin da ya wuce, ba nan gaba ba."
+  "techNote": "An lissafa daga farashin rufewa na kullum. Alamomin fasaha suna bayyana abin da ya wuce, ba nan gaba ba.",
+  "portfolioAbove200": "{above} daga cikin {count} hannayen jari sun wuce matsakaicin kwana 200 nasu"
 }

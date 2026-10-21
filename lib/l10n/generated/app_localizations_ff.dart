@@ -2702,4 +2702,9 @@ class AppLocalizationsFf extends AppLocalizations {
   @override
   String get techNote =>
       'Limaama e coggu uddugol ñalawma kala. Maandeeji karallagal ina sifoo ko ɓenni, wonaa ko aroyta.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above e nder $count aksiyoŋ ina dow hakkundeyel balɗe 200 mum';
+  }
 }

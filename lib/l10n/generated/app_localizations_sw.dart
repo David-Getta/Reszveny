@@ -2709,4 +2709,9 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String get techNote =>
       'Imekokotolewa kutoka bei za kufunga za kila siku. Ishara za kiufundi zinaeleza yaliyopita, si yajayo.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return 'Nafasi $above kati ya $count ziko juu ya wastani wao wa siku 200';
+  }
 }

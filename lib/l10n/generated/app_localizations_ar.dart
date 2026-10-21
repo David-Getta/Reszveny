@@ -2773,4 +2773,9 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get techNote =>
       'محسوب من أسعار الإغلاق اليومية. الإشارات الفنية تصف الماضي، لا المستقبل.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$above من أصل $count مراكز فوق متوسط 200 يوم الخاص بها';
+  }
 }

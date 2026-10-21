@@ -2716,4 +2716,9 @@ class AppLocalizationsKn extends AppLocalizations {
   @override
   String get techNote =>
       'ದೈನಂದಿನ ಮುಕ್ತಾಯ ಬೆಲೆಗಳಿಂದ ಲೆಕ್ಕ ಹಾಕಲಾಗಿದೆ. ತಾಂತ್ರಿಕ ಸಂಕೇತಗಳು ಹಿಂದಿನದನ್ನು ವಿವರಿಸುತ್ತವೆ, ಭವಿಷ್ಯವನ್ನಲ್ಲ.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$count ಪೊಸಿಷನ್‌ಗಳಲ್ಲಿ $above ತಮ್ಮ 200 ದಿನಗಳ ಸರಾಸರಿಗಿಂತ ಮೇಲಿವೆ';
+  }
 }

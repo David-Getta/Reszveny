@@ -2715,4 +2715,9 @@ class AppLocalizationsNy extends AppLocalizations {
   @override
   String get techNote =>
       'Zawerengedwa kuchokera ku mitengo yotseka ya tsiku ndi tsiku. Zizindikiro zaukadaulo zimafotokoza zakale, osati zamtsogolo.';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return 'Malo $above pa $count ali pamwamba pa avareji yawo ya masiku 200';
+  }
 }

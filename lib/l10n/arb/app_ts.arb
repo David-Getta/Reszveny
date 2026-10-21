@@ -718,5 +718,6 @@
   "glossSma200": "Avhareji ya nxavo wo pfala wa masiku ya 200 yo hetelela ya bindzu – layini wa ntolovelo wa ndlela ya nkarhi wo leha. Vavekisi vo tala va teka nxavo lowu nga ehenhla ka yona tanihi ku tlakuka ka nkarhi wo leha.",
   "glossRsi": "Indekisi ya matimba yo ringanisa: yi ringanisa mbuyelo wa sweswinyana ni ku lahlekeriwa ka sweswinyana eka xikalo xa 0–100. Ehenhla ka 70 xitoko hakanyingi xi vuriwa xi xaviwe ngopfu (xi tlakukile hi ku hatlisa), ehansi ka 30 xi xavisiwe ngopfu – kambe ndlela ya matimba yi nga tshama kona nkarhi wo leha.",
   "glossVolatility": "Ndlela leyi nxavo wu cincaka ha yona siku na siku, yi pimiwe hi lembe: 20% swi vula leswaku lembe ro tolovela ri famba endzeni ka kwalomu ka ±20%. Ku cinca lokukulu swi vula ku famba lokukulu eka matlhelo hamambirhi.",
-  "techNote": "Swi hlayiwile ku suka eka minxavo yo pfala ya siku na siku. Swikombiso swa thekiniki swi hlamusela leswi hundzeke, ku nga ri vumundzuku."
+  "techNote": "Swi hlayiwile ku suka eka minxavo yo pfala ya siku na siku. Swikombiso swa thekiniki swi hlamusela leswi hundzeke, ku nga ri vumundzuku.",
+  "portfolioAbove200": "Swiyimo swa {above} eka {count} swi le henhla ka avhareji ya swona ya masiku ya 200"
 }

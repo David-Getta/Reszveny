@@ -2707,4 +2707,9 @@ class AppLocalizationsNe extends AppLocalizations {
   @override
   String get techNote =>
       'दैनिक बन्द मूल्यबाट गणना गरिएको। प्राविधिक संकेतले विगतको वर्णन गर्छ, भविष्यको होइन।';
+
+  @override
+  String portfolioAbove200(int above, int count) {
+    return '$count मध्ये $above पोजिसन आफ्नो 200-दिने औसतभन्दा माथि';
+  }
 }
