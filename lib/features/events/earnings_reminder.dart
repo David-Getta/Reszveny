@@ -37,13 +37,13 @@ class EarningsReminder {
 
   static const _key = 'earnings_reminded';
 
-  Timer? _timer;
+  Timer? _timer, _first;
   bool _checking = false;
 
   /// Rendszeres ellenőrzés; az első egy perc múlva, hogy az indulást ne lassítsa.
   void start() {
     _timer ??= Timer.periodic(interval, (_) => check());
-    Timer(const Duration(minutes: 1), check);
+    _first ??= Timer(const Duration(minutes: 1), check);
   }
 
   /// Az értesítés azonosítója (egyszer szól egy jelentésről).
@@ -123,5 +123,8 @@ class EarningsReminder {
     return sent;
   }
 
-  void dispose() => _timer?.cancel();
+  void dispose() {
+    _timer?.cancel();
+    _first?.cancel();
+  }
 }

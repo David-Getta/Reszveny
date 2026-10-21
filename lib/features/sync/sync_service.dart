@@ -137,7 +137,7 @@ class SyncService extends ChangeNotifier {
     if (preferences.targets.isNotEmpty) 'targets': preferences.targets,
     'lots': [for (final l in portfolio.lots) l.toJson()],
     'dividends': [for (final d in portfolio.dividends) d.toJson()],
-    if (portfolio.cash.isNotEmpty) 'cash': portfolio.cash,
+    'cash': portfolio.cash,
     'alerts': [for (final a in alerts.alerts) a.toJson()],
     'notes': {for (final e in notes.all.entries) e.key: e.value.toJson()},
   };

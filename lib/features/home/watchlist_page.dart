@@ -822,20 +822,29 @@ class _WatchRow extends StatelessWidget {
 }
 
 /// „Jelzések”: RSI túladott/túlvett, a 200 napos átlag átlépése ma – chipek,
-/// koppintásra a részvény nyílik. Ha nincs jelzés, nem látszik.
-class _SignalsStrip extends StatelessWidget {
+/// koppintásra a részvény nyílik. Ha nincs jelzés, nem látszik. A jelzéseket a
+/// részvénylista változásáig egyszer számolja (nem minden kirajzolásnál).
+class _SignalsStrip extends StatefulWidget {
   const _SignalsStrip({required this.symbols, required this.history, required this.onOpenSymbol});
 
   final List<String> symbols;
   final Future<PriceHistory> Function(String) history;
   final ValueChanged<StockCandidate> onOpenSymbol;
 
-  Future<Map<String, PriceHistory>> _histories() async {
+  @override
+  State<_SignalsStrip> createState() => _SignalsStripState();
+}
+
+class _SignalsStripState extends State<_SignalsStrip> {
+  String? _key;
+  Future<List<WatchSignal>>? _signals;
+
+  Future<List<WatchSignal>> _compute(List<String> symbols) async {
     final out = <String, PriceHistory>{};
     await Future.wait([
-      for (final s in symbols) history(s).then((h) => out[s] = h).then((_) {}, onError: (Object _) {}),
+      for (final s in symbols) widget.history(s).then((h) => out[s] = h).then((_) {}, onError: (Object _) {}),
     ]);
-    return out;
+    return watchSignals(symbols, out);
   }
 
   @override
@@ -844,11 +853,16 @@ class _SignalsStrip extends StatelessWidget {
     final p = AppPalette.of(context);
     final theme = Theme.of(context);
     final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
-    return FutureBuilder<Map<String, PriceHistory>>(
-      key: ValueKey(symbols.join(',')),
-      future: _histories(),
+    // Ugyanaz a részvénykészlet (bármilyen sorrendben): nem számol újra.
+    final key = ([...widget.symbols]..sort()).join(',');
+    if (key != _key) {
+      _key = key;
+      _signals = _compute(List.of(widget.symbols));
+    }
+    return FutureBuilder<List<WatchSignal>>(
+      future: _signals,
       builder: (context, snap) {
-        final signals = snap.data == null ? const <WatchSignal>[] : watchSignals(symbols, snap.data!);
+        final signals = snap.data ?? const <WatchSignal>[];
         if (signals.isEmpty) return const SizedBox.shrink();
         String text(WatchSignal x) => describeSignal(l10n, fmt, x);
         Color tone(WatchSignalKind k) =>
@@ -889,7 +903,7 @@ class _SignalsStrip extends StatelessWidget {
                         ),
                       ),
                       onPressed: () =>
-                          onOpenSymbol(StockCandidate(symbol: x.symbol, companyName: x.symbol, confidence: 1)),
+                          widget.onOpenSymbol(StockCandidate(symbol: x.symbol, companyName: x.symbol, confidence: 1)),
                     ),
                 ],
               ),

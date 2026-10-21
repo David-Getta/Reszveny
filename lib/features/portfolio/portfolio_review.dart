@@ -209,7 +209,7 @@ Return one JSON object: {"headline": string (one sentence: the most decision-rel
     final body = requestBody(
       holdings: await holdings(snapshot),
       currency: snapshot.currency,
-      totalValue: snapshot.value,
+      totalValue: snapshot.totalValue,
       invested: snapshot.cost,
       dividendYield: snapshot.dividendYield,
       dividendsReceived: dividendsReceived,

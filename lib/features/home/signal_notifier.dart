@@ -39,13 +39,13 @@ class SignalNotifier {
   static const maxSymbols = 20;
   static const maxListed = 4;
 
-  Timer? _timer;
+  Timer? _timer, _first;
   bool _checking = false;
 
   /// Rendszeres ellenőrzés; az első két perc múlva, hogy az indulást ne lassítsa.
   void start() {
     _timer ??= Timer.periodic(interval, (_) => check());
-    Timer(const Duration(minutes: 2), check);
+    _first ??= Timer(const Duration(minutes: 2), check);
   }
 
   /// A portfólió részvényei elöl, utána a kedvencek.
@@ -86,5 +86,8 @@ class SignalNotifier {
     }
   }
 
-  void dispose() => _timer?.cancel();
+  void dispose() {
+    _timer?.cancel();
+    _first?.cancel();
+  }
 }

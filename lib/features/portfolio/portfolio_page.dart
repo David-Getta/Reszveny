@@ -438,6 +438,18 @@ class AllocationCard extends StatefulWidget {
 }
 
 class _AllocationCardState extends State<AllocationCard> {
+  /// Pénznem szerint a készpénz a saját pénzneméhez adódik (nem külön sor).
+  List<({String label, double weight})> _withCashByCurrency(List<({String label, double weight})> entries) {
+    final s = widget.snapshot;
+    if (s.cash <= 0 || s.totalValue <= 0) return entries;
+    final sums = {for (final e in entries) e.label: e.weight};
+    for (final e in s.cashByCurrency.entries) {
+      sums.update(e.key, (v) => v + e.value / s.totalValue, ifAbsent: () => e.value / s.totalValue);
+    }
+    return [for (final e in sums.entries) (label: e.key, weight: e.value)]
+      ..sort((a, b) => b.weight.compareTo(a.weight));
+  }
+
   /// A készpénz is egy sor a megoszlásban (ha van).
   List<({String label, double weight})> _withCash(List<({String label, double weight})> entries) {
     final s = widget.snapshot;
@@ -513,7 +525,7 @@ class _AllocationCardState extends State<AllocationCard> {
                 ],
               ),
               AllocationBy.currencies => AllocationBar(
-                entries: _withCash(groupWeights(widget.rows, (r) => r.position.currency)),
+                entries: _withCashByCurrency(groupWeights(widget.rows, (r) => r.position.currency)),
                 fmt: widget.fmt,
               ),
               AllocationBy.sectors || AllocationBy.countries => FutureBuilder(
@@ -1287,7 +1299,7 @@ class _GoalBar extends StatelessWidget {
             ),
           );
         }
-        final ratio = snapshot.value / goal.amount;
+        final ratio = snapshot.totalValue / goal.amount;
         return InkWell(
           key: const ValueKey('goal-bar'),
           onTap: () => _edit(context),

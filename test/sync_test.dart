@@ -98,6 +98,11 @@ void main() {
     expect(a.alerts.alerts.single.value, 250);
     expect(a.portfolio.dividends.single.amount, 2.5);
     expect(a.portfolio.cash, {'USD': 1500.0});
+    // A törölt készpénz-egyenleg is átmegy (nem éled újra).
+    await a.portfolio.setCash('USD', 0);
+    await a.sync.syncNow();
+    await b.sync.syncNow();
+    expect(b.portfolio.cash, isEmpty);
     expect((server.data!['dividends'] as List).single['symbol'], 'AAPL');
     await b.sync.syncNow();
     expect(b.preferences.favorites, containsAll(['NVDA', 'MSFT', 'AAPL']));

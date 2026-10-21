@@ -45,6 +45,11 @@ void main() {
     expect(s.totalValue, closeTo(2110, 1e-9));
     expect(s.gain, 500, reason: 'a készpénz nem nyereség');
     expect(s.rows.single.weight, closeTo(1500 / 2110, 1e-9));
+    expect(s.cashByCurrency, {'USD': 500.0, 'EUR': closeTo(110, 1e-9)});
+    // Újrasúlyozás az összértékhez: a 100%-os cél a készpénzből is vehető.
+    final plan = rebalancePlan(s, {'AAPL': 100});
+    expect(plan.single.current, closeTo(1500 / 2110 * 100, 1e-6));
+    expect(plan.single.amount, closeTo(610, 1e-6));
     store.dispose();
   });
 

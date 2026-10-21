@@ -59,10 +59,14 @@ class PortfolioSnapshot {
     this.realizedByYear = const {},
     this.annualReturn,
     this.cash = 0,
+    this.cashByCurrency = const {},
   });
 
   /// Készpénz a brókernél az összesítés pénznemében (a felhasználó adja meg).
   final double cash;
+
+  /// Ugyanez pénznemenként (a pénznem → az összesítés pénznemére váltott összeg).
+  final Map<String, double> cashByCurrency;
 
   /// Az összérték: a pozíciók értéke és a készpénz.
   double get totalValue => value + cash;
@@ -159,9 +163,13 @@ class PortfolioSnapshot {
     }
     // Készpénz az összesítés pénznemére váltva; amelyikhez nincs árfolyam, kimarad.
     var cashValue = 0.0;
+    final cashByCurrency = <String, double>{};
     for (final e in cash.entries) {
-      final r = rateOf(e.key.toUpperCase());
-      if (r != null) cashValue += e.value * r;
+      final c = e.key.toUpperCase();
+      final r = rateOf(c);
+      if (r == null) continue;
+      cashValue += e.value * r;
+      cashByCurrency[c] = (cashByCurrency[c] ?? 0) + e.value * r;
     }
     final total = value + cashValue;
     final weighted = [
@@ -189,6 +197,7 @@ class PortfolioSnapshot {
       closed: closedRows,
       realizedByYear: byYear,
       cash: cashValue,
+      cashByCurrency: cashByCurrency,
     );
   }
 
@@ -260,12 +269,14 @@ class PortfolioSnapshot {
 typedef RebalanceStep = ({String symbol, double current, double target, double amount});
 
 /// Újrasúlyozási terv a célarányokhoz (csak a céllal rendelkező pozíciók).
-/// A célt a teljes portfólió értékéhez mérjük.
+/// A célt a teljes portfólió értékéhez mérjük – a készpénzzel együtt, így a
+/// vételekre a készpénz is „fedezet”.
 List<RebalanceStep> rebalancePlan(PortfolioSnapshot s, Map<String, double> targets) {
-  if (s.value <= 0) return const [];
+  final total = s.totalValue;
+  if (total <= 0) return const [];
   return [
     for (final r in s.rows)
       if (targets[r.position.symbol.toUpperCase()] case final t?)
-        (symbol: r.position.symbol, current: r.weight * 100, target: t, amount: t / 100 * s.value - r.weight * s.value),
+        (symbol: r.position.symbol, current: r.weight * 100, target: t, amount: t / 100 * total - r.weight * total),
   ]..sort((a, b) => b.amount.abs().compareTo(a.amount.abs()));
 }
