@@ -6,7 +6,8 @@
 	<true/>
 	<key>com.apple.security.network.client</key>
 	<true/>
-	<key>com.apple.security.files.user-selected.read-only</key>
+	<!-- A felhasználó által választott helyre mentés is (CSV-export, naptárfájl, biztonsági mentés). -->
+	<key>com.apple.security.files.user-selected.read-write</key>
 	<true/>
 </dict>
 </plist>

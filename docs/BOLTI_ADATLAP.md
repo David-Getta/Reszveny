@@ -48,3 +48,7 @@ fájlt (File → Add Files to "Runner"…, Target Membership: Runner), külön a
 projektben; utána az archívum „Privacy Report”-jában ellenőrizhető. Az App Store Connect
 „App Privacy” kérdőívét ugyanezekkel a válaszokkal kell kitölteni.
 
+Az `Info.plist`-ekben `ITSAppUsesNonExemptEncryption = false` (csak szabványos HTTPS), így feltöltéskor
+nincs exportengedély-kérdés; a macOS sandbox jogosultságai közt a felhasználó által választott helyre
+írás is engedélyezett (CSV-export, naptárfájl, biztonsági mentés).
+
