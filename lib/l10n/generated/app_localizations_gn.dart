@@ -288,6 +288,9 @@ class AppLocalizationsGn extends AppLocalizations {
   String get labelPayoutRatio => 'Ganancia oñembojaʼóva (%)';
 
   @override
+  String get labelYieldOnCost => 'Rendimiento jogua repy rehe';
+
+  @override
   String get labelConsensus => 'Ñoñeʼẽmeʼẽ';
 
   @override
@@ -1989,6 +1992,10 @@ class AppLocalizationsGn extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Ganancia pehẽ oñepagáva dividendo ramo. 100% ári, empresa opaga hetave ohupytývagui, ha upéva ndaipukúi jepi.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Dividendo og̃uahẽva 12 jasy ohasa vaʼekuépe, oñemboja\'o viru rehepyme\'ẽ vaʼekue umi acción reguerekóva gueteri rehe. Ndahaʼéi dividendo rendimientoicha: kóva oñemoha\'ãnga nde jogua repy rehe, ndahaʼéi ko árape repy rehe.';
 
   @override
   String get glossTitle => '¿Mbaʼe heʼise?';

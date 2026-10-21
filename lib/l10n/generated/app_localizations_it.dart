@@ -287,6 +287,9 @@ class AppLocalizationsIt extends AppLocalizations {
   String get labelPayoutRatio => 'Tasso di distribuzione (payout)';
 
   @override
+  String get labelYieldOnCost => 'Rendimento sul prezzo di carico';
+
+  @override
   String get labelConsensus => 'Consenso';
 
   @override
@@ -1989,6 +1992,10 @@ class AppLocalizationsIt extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'La quota dell\'utile distribuita come dividendi. Sopra il 100% l\'azienda paga più di quanto guadagna, cosa che raramente dura.';
+
+  @override
+  String get glossYieldOnCost =>
+      'I dividendi ricevuti negli ultimi 12 mesi divisi per quanto hai pagato le azioni che possiedi ancora. A differenza del rendimento del dividendo, si misura sul tuo prezzo di acquisto, non sul prezzo di oggi.';
 
   @override
   String get glossTitle => 'Che cosa significa?';

@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Ĩtarĩtwo kuuma mĩthenya na mbeca cia marĩhi marĩa wandĩkire; kambuni no igarũre kana itige kũrĩha.",
   "portfolioDividendAround": "hakuhĩ na {date}",
   "eventDividend": "Mũgai wa faida ũrerĩgĩrĩirwo",
-  "eventDividendEstimate": "Ũthimĩtwo kuuma marĩhi marĩa wandĩkĩte"
+  "eventDividendEstimate": "Ũthimĩtwo kuuma marĩhi marĩa wandĩkĩte",
+  "labelYieldOnCost": "Uumithio wa dividend harĩ thogora wa kũgũra",
+  "glossYieldOnCost": "Dividend ĩrĩa wamũkĩrire mĩeri 12 mĩthiru ĩgayanĩtio na mbeca iria warĩhire hisa iria ũrĩ nacio nginya rĩu. Ĩtiganĩte na uumithio wa dividend: ĩthimagwo na thogora waku wa kũgũra, no ti thogora wa ũmũthĩ."
 }

@@ -288,6 +288,9 @@ class AppLocalizationsFf extends AppLocalizations {
   String get labelPayoutRatio => 'Taux de distribution';
 
   @override
+  String get labelYieldOnCost => 'Nafoore e coggu soodgol (%)';
+
+  @override
   String get labelConsensus => 'Ko ɓe kawri';
 
   @override
@@ -1978,6 +1981,10 @@ class AppLocalizationsFf extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Geɗal nafoore yoɓetee jom aksiyoŋ\'en. Ɓuri 100% kompaañi ndii ina yoɓa ko ɓuri ko heɓata, ɗum ɓooyataa.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Dividendeeji ɗi a heɓi e lebbi 12 sakkitiiɗi, feccaaɗi e ko a yoɓi e aksiyoŋuuji ɗi a jogii tawo. So wonaa geɗal nafoore e coggu, ɗum ina ɓetee e coggu soodgol maa, wonaa coggu hannde.';
 
   @override
   String get glossTitle => 'Ko ɗum firi?';

@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Biharuwe hisunzwe amatariki n'amafaranga y'ivyishurwa wanditse; amashirahamwe arashobora kubihindura canke kubireka.",
   "portfolioDividendAround": "nko {date}",
   "eventDividend": "Idividende yitezwe",
-  "eventDividendEstimate": "Biharuwe hisunzwe ivyishurwa wanditse"
+  "eventDividendEstimate": "Biharuwe hisunzwe ivyishurwa wanditse",
+  "labelYieldOnCost": "Inyungu ku giciro waguze",
+  "glossYieldOnCost": "Amadividende yakiriwe mu mezi 12 aheze agabanijwe n'ivyo wariha ku migabane ugifise. Bitandukanye n'igipimo c'inyungu ku migabane, bipimwa ku giciro wewe nyene waguze, atari ic'uno musi."
 }

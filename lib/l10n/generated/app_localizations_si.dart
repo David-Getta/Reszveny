@@ -287,6 +287,9 @@ class AppLocalizationsSi extends AppLocalizations {
   String get labelPayoutRatio => 'ලාභාංශ ගෙවීම් අනුපාතය';
 
   @override
+  String get labelYieldOnCost => 'මිලදී ගත් මිල මත ඵලදාව';
+
+  @override
   String get labelConsensus => 'එකඟතාව';
 
   @override
@@ -1982,6 +1985,10 @@ class AppLocalizationsSi extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'ලාභයෙන් කොපමණ කොටසක් ලාභාංශ ලෙස ගෙවනවාද. 100% ට වැඩි නම් සමාගම උපයන ප්‍රමාණයට වඩා ගෙවයි, එය කලාතුරකින් පවතී.';
+
+  @override
+  String get glossYieldOnCost =>
+      'පසුගිය මාස 12 තුළ ලැබුණු ලාභාංශ, ඔබ තවමත් තබාගෙන ඇති කොටස් සඳහා ගෙවූ මුදලින් බෙදූ විට ලැබෙන අගය. ලාභාංශ ඵලදාව මෙන් නොව, එය අද මිලට නොව ඔබේම මිලදී ගැනීමේ මිලට සාපේක්ෂව මනිනු ලැබේ.';
 
   @override
   String get glossTitle => 'එහි තේරුම කුමක්ද?';

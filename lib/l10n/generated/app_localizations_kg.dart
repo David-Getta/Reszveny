@@ -287,6 +287,9 @@ class AppLocalizationsKg extends AppLocalizations {
   String get labelPayoutRatio => 'Kitini kia mbakulu kikabulwa';
 
   @override
+  String get labelYieldOnCost => 'Rendement na ntalu ya kusumba';
+
+  @override
   String get labelConsensus => 'Mabanza ma bawonso';
 
   @override
@@ -1991,6 +1994,10 @@ class AppLocalizationsKg extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Kitini ya mbakulu yina bo ke kabula bonso dividende. Kuluta 100%, kompani ke futa mingi kuluta yina yo ke zwa, mpi yo ke zingaka ve.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Ba dividende ya nge bakaka na bangonda 12 ya nsuka, ya bo kabulaka na mbongo ya nge futaka sambu na ba action ya nge kele na yo tii bubu. Yo kele ve bonso rendement ya dividende: bo ke tesaka yo na ntalu ya nge sumbaka, kansi ve na ntalu ya bubu.';
 
   @override
   String get glossTitle => 'Yo ke tendula nki?';

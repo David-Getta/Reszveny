@@ -288,6 +288,9 @@ class AppLocalizationsLt extends AppLocalizations {
   String get labelPayoutRatio => 'Išmokėjimo koeficientas';
 
   @override
+  String get labelYieldOnCost => 'Pajamingumas nuo pirkimo kainos';
+
+  @override
   String get labelConsensus => 'Konsensusas';
 
   @override
@@ -2039,6 +2042,10 @@ class AppLocalizationsLt extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Pelno dalis, išmokama kaip dividendai. Viršijus 100% bendrovė išmoka daugiau, nei uždirba, ir tai retai trunka ilgai.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Per paskutinius 12 mėnesių gauti dividendai, padalyti iš sumos, kurią sumokėjote už vis dar turimas akcijas. Skirtingai nei dividendų pajamingumas, jis skaičiuojamas nuo jūsų pirkimo kainos, o ne nuo šiandienos kainos.';
 
   @override
   String get glossTitle => 'Ką tai reiškia?';

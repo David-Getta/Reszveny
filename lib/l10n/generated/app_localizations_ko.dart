@@ -287,6 +287,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get labelPayoutRatio => '배당성향';
 
   @override
+  String get labelYieldOnCost => '매입가 대비 배당수익률';
+
+  @override
   String get labelConsensus => '컨센서스';
 
   @override
@@ -1921,6 +1924,10 @@ class AppLocalizationsKo extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       '이익 중 배당금으로 지급되는 비율. 100%를 넘으면 버는 것보다 많이 지급하는 것으로, 오래 지속되기 어렵습니다.';
+
+  @override
+  String get glossYieldOnCost =>
+      '최근 12개월 동안 수령한 배당금을 지금도 보유 중인 주식의 매입 금액으로 나눈 값입니다. 배당수익률과 달리 오늘의 주가가 아닌 본인의 매입가를 기준으로 계산합니다.';
 
   @override
   String get glossTitle => '무슨 뜻인가요?';

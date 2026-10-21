@@ -288,6 +288,9 @@ class AppLocalizationsBn extends AppLocalizations {
   String get labelPayoutRatio => 'পেআউট অনুপাত';
 
   @override
+  String get labelYieldOnCost => 'খরচের ওপর ইল্ড';
+
+  @override
   String get labelConsensus => 'ঐকমত্য';
 
   @override
@@ -1982,6 +1985,10 @@ class AppLocalizationsBn extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'মুনাফার যে অংশ ডিভিডেন্ড হিসেবে দেওয়া হয়। 100%-এর বেশি হলে কোম্পানি আয়ের চেয়ে বেশি দেয়, যা কদাচিৎ টেকে।';
+
+  @override
+  String get glossYieldOnCost =>
+      'গত ১২ মাসে পাওয়া ডিভিডেন্ডকে আপনার এখনও ধরে রাখা শেয়ারের জন্য দেওয়া দামে ভাগ করা। ডিভিডেন্ড ইল্ডের মতো নয়, এটি আজকের দামের বদলে আপনার নিজের কেনার দামের ভিত্তিতে মাপা হয়।';
 
   @override
   String get glossTitle => 'এর মানে কী?';

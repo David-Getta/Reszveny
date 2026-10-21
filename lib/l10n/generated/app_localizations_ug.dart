@@ -288,6 +288,9 @@ class AppLocalizationsUg extends AppLocalizations {
   String get labelPayoutRatio => 'پايدا تەقسىملەش نىسبىتى';
 
   @override
+  String get labelYieldOnCost => 'سېتىۋالغان باھادىكى نىسبەت';
+
+  @override
   String get labelConsensus => 'ئورتاق پىكىر';
 
   @override
@@ -1987,6 +1990,10 @@ class AppLocalizationsUg extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'پايدىنىڭ پايدا ئۈلۈشى سۈپىتىدە تارقىتىلغان قىسمى. 100% دىن يۇقىرى بولسا، شىركەت تاپقىنىدىن كۆپ تارقىتىدۇ، بۇ ناھايىتى ئاز ئۇزاققا سوزۇلىدۇ.';
+
+  @override
+  String get glossYieldOnCost =>
+      'ئاخىرقى 12 ئايدا تاپشۇرۇۋالغان دىۋىدېندلار، سىز تېخى تۇتۇپ تۇرغان پايلار ئۈچۈن تۆلىگەن پۇلغا بۆلۈنگەن. پايدا ئۈلۈشى نىسبىتىدىن پەرقلىق ھالدا، ئۇ بۈگۈنكى باھا بىلەن ئەمەس، بەلكى سىزنىڭ ئۆز سېتىۋالغان باھىڭىز بىلەن ئۆلچىنىدۇ.';
 
   @override
   String get glossTitle => 'بۇ نېمە دېگەنلىك؟';

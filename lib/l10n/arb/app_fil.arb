@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Tinantiya mula sa mga petsa at halaga ng mga bayad na itinala mo; maaaring baguhin o laktawan ito ng mga kumpanya.",
   "portfolioDividendAround": "bandang {date}",
   "eventDividend": "Inaasahang dibidendo",
-  "eventDividendEstimate": "Tinantya mula sa iyong mga naitalang bayad"
+  "eventDividendEstimate": "Tinantya mula sa iyong mga naitalang bayad",
+  "labelYieldOnCost": "Yield on cost",
+  "glossYieldOnCost": "Ang dibidendong natanggap sa huling 12 buwan na hinati sa ibinayad mo para sa mga share na hawak mo pa. Hindi tulad ng dividend yield, sinusukat ito batay sa sarili mong presyo ng pagbili, hindi sa presyo ngayon."
 }

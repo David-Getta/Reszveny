@@ -138,6 +138,19 @@ void main() {
       expect(out.map((x) => x.symbol), ['JNJ', 'PEP']);
     });
 
+    test('yield on cost: the last 12 months of dividends against the open cost; nothing without dated items', () {
+      final ds = [
+        rec('KO', DateTime(2026, 9, 1), 5),
+        rec('KO', DateTime(2026, 3, 1), 5),
+        rec('KO', DateTime(2025, 9, 1), 5, currency: 'USD'),
+        // Egy évnél régebbi: kimarad.
+        rec('KO', DateTime(2025, 10, 1), 100),
+      ];
+      expect(yieldOnCost(ds, 1000, now: DateTime(2026, 10, 21)), closeTo(1.0, 1e-9));
+      expect(yieldOnCost(ds, 0, now: DateTime(2026, 10, 21)), isNull);
+      expect(yieldOnCost(const [], 1000, now: DateTime(2026, 10, 21)), isNull);
+    });
+
     test('two currencies for one stock (two brokers) are separate series, never summed together', () {
       final out = expectedDividends(
         [
@@ -280,6 +293,9 @@ void main() {
     await tester.pumpAndSettle();
     final next = find.byKey(const ValueKey('position-dividend-next'));
     await tester.ensureVisible(next);
+    // Bekerülési osztalékhozam: az utolsó 12 hónap osztaléka a 2 000 USD vételi értékhez mérve.
+    final yoc = find.byKey(const ValueKey('position-yield-on-cost'));
+    expect(find.descendant(of: yoc, matching: find.textContaining(RegExp(r'^\d+\.\d+%$'))), findsOneWidget);
     // „around <dátum> · ~<összeg> USD”
     expect(
       find.descendant(of: next, matching: find.textContaining(RegExp(r'^around .* · ~[\d.,]+ USD$'))),

@@ -287,6 +287,9 @@ class AppLocalizationsKi extends AppLocalizations {
   String get labelPayoutRatio => 'Gĩcunjĩ kĩa uumithio kĩrĩa kĩgayagwo';
 
   @override
+  String get labelYieldOnCost => 'Uumithio wa dividend harĩ thogora wa kũgũra';
+
+  @override
   String get labelConsensus => 'Mwĩtĩkanĩro';
 
   @override
@@ -1983,6 +1986,10 @@ class AppLocalizationsKi extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Gĩcunjĩ kĩa uumithio kĩrĩa kĩrĩhagwo ta dividend. Igũrũ wa 100% kambuni nĩ ĩrarĩha gũkĩra ũrĩa ĩrona, na ũndũ ũcio ndũikaraga ihinda iraaya.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Dividend ĩrĩa wamũkĩrire mĩeri 12 mĩthiru ĩgayanĩtio na mbeca iria warĩhire hisa iria ũrĩ nacio nginya rĩu. Ĩtiganĩte na uumithio wa dividend: ĩthimagwo na thogora waku wa kũgũra, no ti thogora wa ũmũthĩ.';
 
   @override
   String get glossTitle => 'Nĩ kuuga atĩa?';

@@ -86,13 +86,23 @@ class PositionCard extends StatelessWidget {
                   color: gainColor(p, pos.realizedGain),
                 ),
               // A kapott osztalékok a pozíció pénznemében (a más pénznemű tételek nélkül).
-              if (services.portfolio.dividendsOf(pos.symbol).where((d) => d.currency == ccy) case final ds
-                  when ds.isNotEmpty)
+              if (services.portfolio.dividendsOf(pos.symbol).where((d) => d.currency == ccy).toList() case final ds
+                  when ds.isNotEmpty) ...[
                 _Figure(
                   key: const ValueKey('position-dividends'),
                   label: l10n.portfolioDividendsReceived,
                   value: fmt.money(ds.fold<double>(0, (sum, d) => sum + d.amount), ccy),
                 ),
+                // Bekerülési osztalékhozam: az utolsó 12 hónap osztaléka a még birtokolt
+                // részvények vételi értékéhez mérve (csak nyitott pozíciónál).
+                if (!pos.isClosed && pos.cost > 0)
+                  if (yieldOnCost(ds, pos.cost, now: DateTime.now()) case final y?)
+                    _Figure(
+                      key: const ValueKey('position-yield-on-cost'),
+                      label: l10n.labelYieldOnCost,
+                      value: fmt.percent(y),
+                    ),
+              ],
               // A várható következő osztalék a rögzítettek ritmusából (csak még birtokolt pozíciónál).
               if (!pos.isClosed)
                 if (expectedDividends(services.portfolio.dividendsOf(pos.symbol), [

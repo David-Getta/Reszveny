@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Imekadiriwa kutoka tarehe na kiasi cha malipo uliyorekodi; kampuni zinaweza kuyabadilisha au kuyaruka.",
   "portfolioDividendAround": "karibu {date}",
   "eventDividend": "Gawio linalotarajiwa",
-  "eventDividendEstimate": "Imekadiriwa kutoka malipo uliyorekodi"
+  "eventDividendEstimate": "Imekadiriwa kutoka malipo uliyorekodi",
+  "labelYieldOnCost": "Mavuno kwa bei ya kununua",
+  "glossYieldOnCost": "Gawio lililopokelewa katika miezi 12 iliyopita likigawanywa kwa kiasi ulicholipa kwa hisa ambazo bado unazishikilia. Tofauti na mavuno ya gawio, hupimwa kwa bei yako mwenyewe ya kununua, si bei ya leo."
 }

@@ -288,6 +288,9 @@ class AppLocalizationsMl extends AppLocalizations {
   String get labelPayoutRatio => 'പേഔട്ട് അനുപാതം';
 
   @override
+  String get labelYieldOnCost => 'വാങ്ങിയ വിലയിലെ യീൽഡ്';
+
+  @override
   String get labelConsensus => 'സമവായം';
 
   @override
@@ -1992,6 +1995,10 @@ class AppLocalizationsMl extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'ലാഭത്തിന്റെ എത്ര ഭാഗം ലാഭവിഹിതമായി നൽകുന്നു. 100%-ന് മുകളിൽ കമ്പനി സമ്പാദിക്കുന്നതിലും കൂടുതൽ നൽകുന്നു, ഇത് അപൂർവമായേ നീണ്ടുനിൽക്കൂ.';
+
+  @override
+  String get glossYieldOnCost =>
+      'കഴിഞ്ഞ 12 മാസത്തിൽ ലഭിച്ച ലാഭവിഹിതം, നിങ്ങൾ ഇപ്പോഴും കൈവശം വെച്ചിരിക്കുന്ന ഓഹരികൾക്ക് നൽകിയ തുക കൊണ്ട് ഹരിച്ചത്. ലാഭവിഹിത യീൽഡിൽനിന്ന് വ്യത്യസ്തമായി, ഇത് ഇന്നത്തെ വിലയല്ല, നിങ്ങളുടെ സ്വന്തം വാങ്ങൽ വിലയാണ് അടിസ്ഥാനമാക്കുന്നത്.';
 
   @override
   String get glossTitle => 'ഇതിന്റെ അർത്ഥം എന്താണ്?';

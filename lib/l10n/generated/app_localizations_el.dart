@@ -289,6 +289,9 @@ class AppLocalizationsEl extends AppLocalizations {
   String get labelPayoutRatio => 'Ποσοστό διανομής';
 
   @override
+  String get labelYieldOnCost => 'Απόδοση επί του κόστους';
+
+  @override
   String get labelConsensus => 'Συναίνεση';
 
   @override
@@ -1992,6 +1995,10 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Το μέρος των κερδών που διανέμεται ως μέρισμα. Πάνω από 100% η εταιρεία πληρώνει περισσότερα από όσα κερδίζει, κάτι που σπάνια διαρκεί.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Τα μερίσματα που εισπράξατε τους τελευταίους 12 μήνες διά του ποσού που πληρώσατε για τις μετοχές που ακόμη κρατάτε. Σε αντίθεση με τη μερισματική απόδοση, μετριέται ως προς τη δική σας τιμή αγοράς, όχι τη σημερινή τιμή.';
 
   @override
   String get glossTitle => 'Τι σημαίνει;';

@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Įvertinta pagal jūsų įrašytų išmokų datas ir sumas; bendrovės gali jas pakeisti arba praleisti.",
   "portfolioDividendAround": "apie {date}",
   "eventDividend": "Numatomas dividendas",
-  "eventDividendEstimate": "Įvertinta pagal jūsų įrašytas išmokas"
+  "eventDividendEstimate": "Įvertinta pagal jūsų įrašytas išmokas",
+  "labelYieldOnCost": "Pajamingumas nuo pirkimo kainos",
+  "glossYieldOnCost": "Per paskutinius 12 mėnesių gauti dividendai, padalyti iš sumos, kurią sumokėjote už vis dar turimas akcijas. Skirtingai nei dividendų pajamingumas, jis skaičiuojamas nuo jūsų pirkimo kainos, o ne nuo šiandienos kainos."
 }

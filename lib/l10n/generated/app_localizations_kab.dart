@@ -287,6 +287,9 @@ class AppLocalizationsKab extends AppLocalizations {
   String get labelPayoutRatio => 'Afmiḍi n beṭṭu';
 
   @override
+  String get labelYieldOnCost => 'Afaris ɣef ssuma n tiɣin';
+
+  @override
   String get labelConsensus => 'Amtawa';
 
   @override
@@ -1982,6 +1985,10 @@ class AppLocalizationsKab extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Aḥric n rrbeḥ yettwabḍan d dividand. Ugar n 100%, akampani yettxelliṣ ugar n wayen yerbeḥ, ayen ur nettdum ara.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Dividand i tṭṭfeḍ deg 12 n wayyuren ineggura, yebḍa ɣef wayen i txellṣeḍ ɣef yiksyunen i mazal ɣur-k. Mačči am ufaris n dividand: yettwaktal ɣef ssuma n tiɣin-ik, mačči ɣef ssuma n wass-a.';
 
   @override
   String get glossTitle => 'D acu i d-yebɣa ad yini?';

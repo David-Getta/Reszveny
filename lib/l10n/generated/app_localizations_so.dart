@@ -287,6 +287,9 @@ class AppLocalizationsSo extends AppLocalizations {
   String get labelPayoutRatio => 'Heerka bixinta faa\'iidada';
 
   @override
+  String get labelYieldOnCost => 'Faa\'iidada qiimaha iibsiga';
+
+  @override
   String get labelConsensus => 'Is-afgarad';
 
   @override
@@ -1991,6 +1994,10 @@ class AppLocalizationsSo extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Qaybta faa\'iidada ee loo qaybiyo saamilayda. Ka sarreysa 100% shirkaddu waxay bixinaysaa wax ka badan inta ay kasbato, taas oo dhif ah inay sii socoto.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Faa\'iido-saamiyada la helay 12-kii bilood ee la soo dhaafay oo loo qaybiyay waxa aad bixisay saamiyada aad weli haysato. Si ka duwan heerka qaybta faa\'iidada, waxaa lagu qiyaasaa qiimaha aad adigu ku iibsatay, ee ma aha qiimaha maanta.';
 
   @override
   String get glossTitle => 'Maxay ka dhigan tahay?';

@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "ካብ ዕለታትን መጠንን ናይቶም ዝመዝገብካዮም ክፍሊታት ዝተገመተ፤ ኩባንያታት ክቕይርወን ወይ ክሓልፍወን ይኽእሉ።",
   "portfolioDividendAround": "ኣብ ከባቢ {date}",
   "eventDividend": "ድቪደንድ ዝተጸበ",
-  "eventDividendEstimate": "ካብቶም ዝመዝገብካዮም ክፍሊታት ዝተገመተ"
+  "eventDividendEstimate": "ካብቶም ዝመዝገብካዮም ክፍሊታት ዝተገመተ",
+  "labelYieldOnCost": "ትርፊ ኣብ ዋጋ ዕድጊ",
+  "glossYieldOnCost": "ኣብ ዝሓለፉ 12 ኣዋርሕ ዝተቐበልካዮም ድቪደንድታት፣ ነቶም ገና ዘለዉኻ ኣክሲዮናት ዝኸፈልካዮ ተመቒሉ። ካብ መጠን ብጽሒት ትርፊ ብዝተፈልየ፣ እዚ ብናይ ሎሚ ዋጋ ዘይኮነስ ብናትካ ዋጋ ዕድጊ ይለካ።"
 }

@@ -5,6 +5,7 @@ import '../../l10n/generated/app_localizations.dart';
 Map<String, String> metricGlossary(AppLocalizations l10n) => {
   l10n.labelMarketCap: l10n.glossMarketCap,
   l10n.labelSma50: l10n.glossSma50,
+  l10n.labelYieldOnCost: l10n.glossYieldOnCost,
   l10n.labelSma200: l10n.glossSma200,
   l10n.labelRsi: l10n.glossRsi,
   l10n.labelVolatility30: l10n.glossVolatility,

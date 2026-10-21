@@ -288,6 +288,9 @@ class AppLocalizationsAs extends AppLocalizations {
   String get labelPayoutRatio => 'পেআউট অনুপাত';
 
   @override
+  String get labelYieldOnCost => 'খৰচৰ ওপৰত ইল্ড';
+
+  @override
   String get labelConsensus => 'সৰ্বসন্মতি';
 
   @override
@@ -1982,6 +1985,10 @@ class AppLocalizationsAs extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'লাভৰ যি অংশ লভ্যাংশ হিচাপে দিয়া হয়। 100%-ৰ ওপৰত কোম্পানীয়ে উপাৰ্জনতকৈ বেছি দিয়ে, যি কমেইহে টিকি থাকে।';
+
+  @override
+  String get glossYieldOnCost =>
+      'যোৱা ১২ মাহত পোৱা লভ্যাংশক আপুনি এতিয়াও ৰখা শ্বেয়াৰৰ বাবে দিয়া মূল্যৰে হৰণ কৰা। লভ্যাংশ ইল্ডৰ দৰে নহয়, ইয়াক আজিৰ মূল্যৰ পৰিবৰ্তে আপোনাৰ নিজৰ ক্ৰয় মূল্যৰ ওপৰত জোখা হয়।';
 
   @override
   String get glossTitle => 'ইয়াৰ অৰ্থ কি?';

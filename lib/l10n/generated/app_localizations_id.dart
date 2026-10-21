@@ -287,6 +287,9 @@ class AppLocalizationsId extends AppLocalizations {
   String get labelPayoutRatio => 'Rasio pembayaran dividen';
 
   @override
+  String get labelYieldOnCost => 'Imbal hasil atas harga beli';
+
+  @override
   String get labelConsensus => 'Konsensus';
 
   @override
@@ -1980,6 +1983,10 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Bagian laba yang dibagikan sebagai dividen. Di atas 100% perusahaan membayar lebih dari yang dihasilkannya, dan itu jarang bertahan lama.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Dividen yang diterima dalam 12 bulan terakhir dibagi dengan yang Anda bayar untuk saham yang masih Anda pegang. Berbeda dengan imbal hasil dividen, ini diukur terhadap harga beli Anda sendiri, bukan harga hari ini.';
 
   @override
   String get glossTitle => 'Apa artinya?';

@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Geschätzt aus Daten und Beträgen der von dir erfassten Zahlungen; Unternehmen können sie ändern oder ausfallen lassen.",
   "portfolioDividendAround": "um den {date}",
   "eventDividend": "Dividende erwartet",
-  "eventDividendEstimate": "Geschätzt aus deinen erfassten Zahlungen"
+  "eventDividendEstimate": "Geschätzt aus deinen erfassten Zahlungen",
+  "labelYieldOnCost": "Rendite auf Kaufpreis",
+  "glossYieldOnCost": "Die in den letzten 12 Monaten erhaltenen Dividenden geteilt durch das, was du für die noch gehaltenen Aktien bezahlt hast. Anders als die Dividendenrendite wird sie an deinem eigenen Kaufpreis gemessen, nicht am heutigen Kurs."
 }

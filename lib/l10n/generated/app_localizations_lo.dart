@@ -287,6 +287,9 @@ class AppLocalizationsLo extends AppLocalizations {
   String get labelPayoutRatio => 'ອັດຕາການຈ່າຍເງິນປັນຜົນ';
 
   @override
+  String get labelYieldOnCost => 'ຜົນຕອບແທນຕໍ່ຕົ້ນທຶນ';
+
+  @override
   String get labelConsensus => 'ມຸມມອງລວມ';
 
   @override
@@ -1960,6 +1963,10 @@ class AppLocalizationsLo extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'ສ່ວນຂອງກຳໄລທີ່ຈ່າຍເປັນເງິນປັນຜົນ. ສູງກວ່າ 100% ບໍລິສັດຈ່າຍຫຼາຍກວ່າທີ່ຫາໄດ້ ເຊິ່ງບໍ່ຄ່ອຍຍືນຍົງ.';
+
+  @override
+  String get glossYieldOnCost =>
+      'ເງິນປັນຜົນທີ່ໄດ້ຮັບໃນ 12 ເດືອນຫຼ້າສຸດ ຫານດ້ວຍເງິນທີ່ທ່ານຈ່າຍໄປສຳລັບຮຸ້ນທີ່ທ່ານຍັງຖືຢູ່. ຕ່າງຈາກອັດຕາຜົນຕອບແທນເງິນປັນຜົນ, ມັນຖືກວັດແທກຕາມລາຄາຊື້ຂອງທ່ານເອງ, ບໍ່ແມ່ນລາຄາມື້ນີ້.';
 
   @override
   String get glossTitle => 'ໝາຍຄວາມວ່າແນວໃດ?';

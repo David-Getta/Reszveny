@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Yettwaḥseb seg wazemzen d lemqadir n lexlaṣat i tjemɛeḍ; tkebbaniyin zemrent a ten-beddlent neɣ a ten-zeglent.",
   "portfolioDividendAround": "azal n {date}",
   "eventDividend": "Dividende yettwaṛǧun",
-  "eventDividendEstimate": "Yettwaḥseb seg lexlaṣat i tesekleseḍ"
+  "eventDividendEstimate": "Yettwaḥseb seg lexlaṣat i tesekleseḍ",
+  "labelYieldOnCost": "Afaris ɣef ssuma n tiɣin",
+  "glossYieldOnCost": "Dividand i tṭṭfeḍ deg 12 n wayyuren ineggura, yebḍa ɣef wayen i txellṣeḍ ɣef yiksyunen i mazal ɣur-k. Mačči am ufaris n dividand: yettwaktal ɣef ssuma n tiɣin-ik, mačči ɣef ssuma n wass-a."
 }

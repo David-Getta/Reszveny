@@ -287,6 +287,9 @@ class AppLocalizationsSw extends AppLocalizations {
   String get labelPayoutRatio => 'Uwiano wa malipo';
 
   @override
+  String get labelYieldOnCost => 'Mavuno kwa bei ya kununua';
+
+  @override
   String get labelConsensus => 'Makubaliano';
 
   @override
@@ -1984,6 +1987,10 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Sehemu ya faida inayolipwa kama gawio. Zaidi ya 100% kampuni inalipa zaidi ya inavyopata, jambo ambalo mara chache hudumu.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Gawio lililopokelewa katika miezi 12 iliyopita likigawanywa kwa kiasi ulicholipa kwa hisa ambazo bado unazishikilia. Tofauti na mavuno ya gawio, hupimwa kwa bei yako mwenyewe ya kununua, si bei ya leo.';
 
   @override
   String get glossTitle => 'Inamaanisha nini?';

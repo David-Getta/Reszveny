@@ -288,6 +288,9 @@ class AppLocalizationsTn extends AppLocalizations {
   String get labelPayoutRatio => 'Seelo sa tuelo';
 
   @override
+  String get labelYieldOnCost => 'Poelo mo tlhwatlhweng ya go reka';
+
+  @override
   String get labelConsensus => 'Tumalano';
 
   @override
@@ -1994,6 +1997,10 @@ class AppLocalizationsTn extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Seabe sa poelo se se duelwang e le dividende. Fa godimo ga 100% khampani e duela go feta se e se dirang, mme seo ga se tswelele gantsi.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Dividente tse di amogetsweng mo dikgweding tse 12 tse di fetileng, di kgaogantswe ka se o se duetseng dishere tse o sa ntseng o na le tsone. Go farologana le poelo ya dividende, e lekanngwa ka tlhwatlhwa e o rekileng ka yone, e seng ya gompieno.';
 
   @override
   String get glossTitle => 'Go raya eng?';

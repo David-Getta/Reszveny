@@ -287,6 +287,9 @@ class AppLocalizationsTi extends AppLocalizations {
   String get labelPayoutRatio => 'መጠን ምክፋል ትርፊ';
 
   @override
+  String get labelYieldOnCost => 'ትርፊ ኣብ ዋጋ ዕድጊ';
+
+  @override
   String get labelConsensus => 'ሓባራዊ ስምምዕ';
 
   @override
@@ -1948,6 +1951,10 @@ class AppLocalizationsTi extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'ከም ብጽሒት ትርፊ ዝኽፈል ክፋል ትርፊ። ልዕሊ 100% እቲ ኩባንያ ካብ ዘእትዎ ንላዕሊ ይኸፍል ኣሎ፣ እዚ ድማ ሳሕቲ እዩ ዝቕጽል።';
+
+  @override
+  String get glossYieldOnCost =>
+      'ኣብ ዝሓለፉ 12 ኣዋርሕ ዝተቐበልካዮም ድቪደንድታት፣ ነቶም ገና ዘለዉኻ ኣክሲዮናት ዝኸፈልካዮ ተመቒሉ። ካብ መጠን ብጽሒት ትርፊ ብዝተፈልየ፣ እዚ ብናይ ሎሚ ዋጋ ዘይኮነስ ብናትካ ዋጋ ዕድጊ ይለካ።';
 
   @override
   String get glossTitle => 'እንታይ ማለት እዩ?';

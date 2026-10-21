@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Odhad z dat a částek výplat, které jste zaznamenali; společnosti je mohou změnit nebo vynechat.",
   "portfolioDividendAround": "kolem {date}",
   "eventDividend": "Očekávaná dividenda",
-  "eventDividendEstimate": "Odhad z vašich zaznamenaných výplat"
+  "eventDividendEstimate": "Odhad z vašich zaznamenaných výplat",
+  "labelYieldOnCost": "Výnos k nákupní ceně",
+  "glossYieldOnCost": "Dividendy přijaté za posledních 12 měsíců dělené tím, co jste zaplatili za akcie, které stále držíte. Na rozdíl od dividendového výnosu se měří vůči vaší vlastní nákupní ceně, ne vůči dnešní ceně."
 }

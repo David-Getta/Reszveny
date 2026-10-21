@@ -288,6 +288,9 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get labelPayoutRatio => 'Payout ratio';
 
   @override
+  String get labelYieldOnCost => 'Yield iti gastos';
+
+  @override
   String get labelConsensus => 'Konsensus';
 
   @override
@@ -1999,6 +2002,10 @@ class AppLocalizationsIlo extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Ti paset ti ganansia a maibayad kas dibidendo. Ngato ti 100% ket ad-adu ti ibaybayad ti kompania ngem ti magunggonana, a manmano nga agpaut.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Ti dibidendo a naawat iti napalabas a 12 a bulan a nabingay iti binayadam para kadagiti share a salsalimetmetam pay. Saan a kas iti dividend yield, marukod daytoy iti bukodmo a presio ti panaggatang, saan nga iti presio ita.';
 
   @override
   String get glossTitle => 'Ania ti kayatna a sawen?';

@@ -289,6 +289,9 @@ class AppLocalizationsOm extends AppLocalizations {
   String get labelPayoutRatio => 'Reeshoo raabsa bu\'aa';
 
   @override
+  String get labelYieldOnCost => 'Bu\'aa gatii bittaa irratti';
+
+  @override
   String get labelConsensus => 'Waliigaltee';
 
   @override
@@ -1991,6 +1994,10 @@ class AppLocalizationsOm extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Bu\'aa keessaa hammi isaa akka qooda bu\'aatti raabsamu. 100% ol yoo ta\'e dhaabbatichi waan argatu caalaa kaffala, kun immoo yeroo dheeraa hin turu.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Diviidendii ji\'oota 12 darban keessa argame, maallaqa aksiyoonota ammas qabdu irratti kaffalteen hiramee. Dhibbeentaa qooda bu\'aa irraa adda ta\'ee, gatii har\'aatiin osoo hin taane gatii ati ittiin bitteen safarama.';
 
   @override
   String get glossTitle => 'Maal jechuudha?';

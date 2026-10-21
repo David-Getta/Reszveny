@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Di akanyeditšwe go tšwa go matšatšikgwedi le ditšhelete tša ditefelo tše o di rekotilego; dikhamphani di ka di fetola goba tša di tlola.",
   "portfolioDividendAround": "mo e ka bago {date}",
   "eventDividend": "Dividende e letetšwego",
-  "eventDividendEstimate": "E akanyeditšwe go tšwa go ditefelo tše o di rekotilego"
+  "eventDividendEstimate": "E akanyeditšwe go tšwa go ditefelo tše o di rekotilego",
+  "labelYieldOnCost": "Poelo go theko ya go reka",
+  "glossYieldOnCost": "Dividende tše di amogetšwego dikgweding tše 12 tša go feta, tše di aroganywago ka seo o se lefetšego dišere tšeo o sa nago le tšona. Go fapana le poelo ya dividende, e lekanywa go ya ka theko yeo o rekilego ka yona, e sego theko ya lehono."
 }

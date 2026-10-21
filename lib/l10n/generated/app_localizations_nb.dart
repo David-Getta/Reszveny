@@ -287,6 +287,9 @@ class AppLocalizationsNb extends AppLocalizations {
   String get labelPayoutRatio => 'Utbytteandel';
 
   @override
+  String get labelYieldOnCost => 'Direkteavkastning på kostpris';
+
+  @override
   String get labelConsensus => 'Konsensus';
 
   @override
@@ -1984,6 +1987,10 @@ class AppLocalizationsNb extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Andelen av overskuddet som deles ut som utbytte. Over 100 % betaler selskapet ut mer enn det tjener, og det varer sjelden.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Utbytte mottatt de siste 12 månedene delt på det du betalte for aksjene du fortsatt eier. I motsetning til direkteavkastningen måles den mot din egen kjøpskurs, ikke dagens kurs.';
 
   @override
   String get glossTitle => 'Hva betyr det?';

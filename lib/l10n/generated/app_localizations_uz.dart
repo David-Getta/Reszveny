@@ -288,6 +288,9 @@ class AppLocalizationsUz extends AppLocalizations {
   String get labelPayoutRatio => 'Dividend toʻlov ulushi';
 
   @override
+  String get labelYieldOnCost => 'Xarid narxiga daromadlilik';
+
+  @override
   String get labelConsensus => 'Konsensus';
 
   @override
@@ -1987,6 +1990,10 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Foydaning dividend sifatida toʻlanadigan ulushi. 100% dan yuqori boʻlsa, kompaniya topganidan koʻproq toʻlaydi, bu kamdan-kam uzoq davom etadi.';
+
+  @override
+  String get glossYieldOnCost =>
+      'So\'nggi 12 oyda olingan dividendlar hali ham saqlab turgan aksiyalaringiz uchun to\'lagan summangizga bo\'lingan. Dividend daromadliligidan farqli o\'laroq, u bugungi narxga emas, o\'zingizning xarid narxingizga nisbatan o\'lchanadi.';
 
   @override
   String get glossTitle => 'Bu nimani anglatadi?';

@@ -288,6 +288,9 @@ class AppLocalizationsTe extends AppLocalizations {
   String get labelPayoutRatio => 'పేఅవుట్ నిష్పత్తి';
 
   @override
+  String get labelYieldOnCost => 'కొన్న ధరపై ఈల్డ్';
+
+  @override
   String get labelConsensus => 'ఏకాభిప్రాయం';
 
   @override
@@ -1990,6 +1993,10 @@ class AppLocalizationsTe extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'లాభంలో డివిడెండ్‌లుగా చెల్లించే వాటా. 100% పైన ఉంటే కంపెనీ సంపాదించే దానికంటే ఎక్కువ చెల్లిస్తోంది, ఇది అరుదుగా కొనసాగుతుంది.';
+
+  @override
+  String get glossYieldOnCost =>
+      'గత 12 నెలల్లో అందుకున్న డివిడెండ్లను, మీరు ఇంకా కలిగి ఉన్న షేర్లకు చెల్లించిన మొత్తంతో భాగించిన విలువ. డివిడెండ్ ఈల్డ్‌కు భిన్నంగా, ఇది నేటి ధరతో కాక, మీరు స్వయంగా కొన్న ధరతో కొలుస్తారు.';
 
   @override
   String get glossTitle => 'దీని అర్థం ఏమిటి?';

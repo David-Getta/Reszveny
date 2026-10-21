@@ -288,6 +288,9 @@ class AppLocalizationsNe extends AppLocalizations {
   String get labelPayoutRatio => 'लाभांश वितरण अनुपात';
 
   @override
+  String get labelYieldOnCost => 'किन्ने मूल्यमा यिल्ड';
+
+  @override
   String get labelConsensus => 'सहमति';
 
   @override
@@ -1983,6 +1986,10 @@ class AppLocalizationsNe extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'नाफाको कति भाग लाभांशका रूपमा बाँडिन्छ। 100% भन्दा माथि भए कम्पनीले कमाएभन्दा बढी दिन्छ, जुन विरलै टिक्छ।';
+
+  @override
+  String get glossYieldOnCost =>
+      'पछिल्ला १२ महिनामा प्राप्त लाभांशलाई तपाईंसँग अझै रहेका शेयरका लागि तिरेको रकमले भाग गरेको। लाभांश यिल्डभन्दा फरक, यो आजको मूल्यमा होइन, तपाईंको आफ्नै किन्ने मूल्यमा मापन गरिन्छ।';
 
   @override
   String get glossTitle => 'यसको अर्थ के हो?';

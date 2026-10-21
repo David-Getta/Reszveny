@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Diperkirakan dari tanggal dan jumlah pembayaran yang Anda catat; perusahaan dapat mengubah atau melewatkannya.",
   "portfolioDividendAround": "sekitar {date}",
   "eventDividend": "Dividen diperkirakan",
-  "eventDividendEstimate": "Diperkirakan dari pembayaran yang Anda catat"
+  "eventDividendEstimate": "Diperkirakan dari pembayaran yang Anda catat",
+  "labelYieldOnCost": "Imbal hasil atas harga beli",
+  "glossYieldOnCost": "Dividen yang diterima dalam 12 bulan terakhir dibagi dengan yang Anda bayar untuk saham yang masih Anda pegang. Berbeda dengan imbal hasil dividen, ini diukur terhadap harga beli Anda sendiri, bukan harga hari ini."
 }

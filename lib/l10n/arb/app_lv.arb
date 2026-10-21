@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Aplēsts no jūsu reģistrēto izmaksu datumiem un summām; uzņēmumi tās var mainīt vai izlaist.",
   "portfolioDividendAround": "apmēram {date}",
   "eventDividend": "Gaidāma dividende",
-  "eventDividendEstimate": "Aplēsts no jūsu reģistrētajiem maksājumiem"
+  "eventDividendEstimate": "Aplēsts no jūsu reģistrētajiem maksājumiem",
+  "labelYieldOnCost": "Ienesīgums pret pirkuma cenu",
+  "glossYieldOnCost": "Pēdējo 12 mēnešu laikā saņemtās dividendes, dalītas ar summu, ko samaksājāt par akcijām, kuras joprojām turat. Atšķirībā no dividenžu ienesīguma to mēra pret jūsu pirkuma cenu, ne šodienas cenu."
 }

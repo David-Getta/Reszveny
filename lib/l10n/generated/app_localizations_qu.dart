@@ -289,6 +289,9 @@ class AppLocalizationsQu extends AppLocalizations {
   String get labelPayoutRatio => 'Ratio de reparto';
 
   @override
+  String get labelYieldOnCost => 'Rantisqa chaninpi rendimiento';
+
+  @override
   String get labelConsensus => 'Consenso';
 
   @override
@@ -1994,6 +1997,10 @@ class AppLocalizationsQu extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Gananciamanta hayk\'a t\'aqa dividendo hina rakisqa. 100% hanaqpi, empresa ganasqanmanta aswanta pagan, chayqa pisillata unan.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Qhipa 12 killakunapi chaskisqa dividendokuna, kunankama hap\'isqayki accionkunapaq pagasqaykiwan rakisqa. Dividendopa rendimientonmanta hukniraq, kayqa kikiykipa rantisqa chaninwan tupachisqa, manam kunan chaninwanchu.';
 
   @override
   String get glossTitle => 'Ima ninan?';

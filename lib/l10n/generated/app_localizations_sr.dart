@@ -287,6 +287,9 @@ class AppLocalizationsSr extends AppLocalizations {
   String get labelPayoutRatio => 'Стопа исплате';
 
   @override
+  String get labelYieldOnCost => 'Принос на набавну цену';
+
+  @override
   String get labelConsensus => 'Консензус';
 
   @override
@@ -2022,6 +2025,10 @@ class AppLocalizationsSr extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Удео добити који се исплаћује као дивиденде. Изнад 100% компанија исплаћује више него што зарађује, што ретко дуго траје.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Дивиденде примљене у последњих 12 месеци подељене са оним што сте платили за акције које још држите. За разлику од дивидендног приноса, мери се према вашој куповној цени, а не према данашњој.';
 
   @override
   String get glossTitle => 'Шта то значи?';

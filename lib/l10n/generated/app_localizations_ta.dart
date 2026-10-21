@@ -288,6 +288,9 @@ class AppLocalizationsTa extends AppLocalizations {
   String get labelPayoutRatio => 'பகிர்வு விகிதம்';
 
   @override
+  String get labelYieldOnCost => 'வாங்கிய விலையில் ஈவுத்தொகை விகிதம்';
+
+  @override
   String get labelConsensus => 'ஒருமித்த கருத்து';
 
   @override
@@ -1993,6 +1996,10 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'ஈவுத்தொகையாகச் செலுத்தப்படும் லாபத்தின் பங்கு. 100%-க்கு மேல் என்றால் நிறுவனம் சம்பாதிப்பதை விட அதிகமாகச் செலுத்துகிறது, இது அரிதாகவே நீடிக்கும்.';
+
+  @override
+  String get glossYieldOnCost =>
+      'கடந்த 12 மாதங்களில் பெறப்பட்ட ஈவுத்தொகையை, நீங்கள் இன்னும் வைத்திருக்கும் பங்குகளுக்காகச் செலுத்திய தொகையால் வகுத்தது. ஈவுத்தொகை விகிதத்தைப் போலன்றி, இது இன்றைய விலையை அல்ல, நீங்கள் வாங்கிய விலையை அடிப்படையாகக் கொண்டு அளவிடப்படுகிறது.';
 
   @override
   String get glossTitle => 'இதன் பொருள் என்ன?';

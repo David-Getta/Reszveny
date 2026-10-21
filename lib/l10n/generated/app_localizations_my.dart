@@ -288,6 +288,9 @@ class AppLocalizationsMy extends AppLocalizations {
   String get labelPayoutRatio => 'အမြတ်ခွဲဝေမှု အချိုး';
 
   @override
+  String get labelYieldOnCost => 'ဝယ်ဈေးအပေါ် အထွက်နှုန်း';
+
+  @override
   String get labelConsensus => 'ဘုံသဘောထား';
 
   @override
@@ -1977,6 +1980,10 @@ class AppLocalizationsMy extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'အမြတ်၏ မည်မျှကို အမြတ်ဝေစုအဖြစ် ပေးသနည်း။ 100% အထက်ဆိုလျှင် ကုမ္ပဏီက ရသည်ထက် ပိုပေးနေပြီး ယင်းသည် ကြာရှည် မခံတတ်ပါ။';
+
+  @override
+  String get glossYieldOnCost =>
+      'နောက်ဆုံး ၁၂ လအတွင်း ရရှိသော အမြတ်ဝေစုကို သင်ယခုထိ ပိုင်ဆိုင်နေသော ရှယ်ယာများအတွက် ပေးခဲ့သောငွေနှင့် စားထားသည်။ အမြတ်ဝေစု အထွက်နှုန်းနှင့် မတူဘဲ ယနေ့ဈေးနှုန်းမဟုတ်၊ သင်ကိုယ်တိုင် ဝယ်ယူခဲ့သောဈေးနှုန်းအပေါ် အခြေခံ တိုင်းတာသည်။';
 
   @override
   String get glossTitle => 'ဘာကို ဆိုလိုသလဲ?';

@@ -287,6 +287,9 @@ class AppLocalizationsBm extends AppLocalizations {
   String get labelPayoutRatio => 'Tɔnɔ tilalen hakɛ';
 
   @override
+  String get labelYieldOnCost => 'Tɔnɔ tilali sɔrɔ hakɛ san sɔngɔ kan';
+
+  @override
   String get labelConsensus => 'Bɛnkan';
 
   @override
@@ -1981,6 +1984,10 @@ class AppLocalizationsBm extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Tɔnɔ niyɔrɔ min bɛ tila ka di aksiyɔntigiw ma. 100% sanfɛ, sosiyete bɛ wari di ka tɛmɛ a ka sɔrɔ kan, o tɛ mɛn tuma caman.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Tɔnɔ tilali minnu sɔrɔla kalo 12 tɛmɛnenw kɔnɔ, u tilalen wari min i y\'a sara aksiyɔn minnu bɛ i bolo halisa la. A ni tɔnɔ tilali sɔrɔ hakɛ tɛ kelen ye: a bɛ jate i yɛrɛ ka san sɔngɔ kan, bi sɔngɔ kan tɛ.';
 
   @override
   String get glossTitle => 'O kɔrɔ ye mun ye?';

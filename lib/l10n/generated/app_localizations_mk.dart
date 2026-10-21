@@ -287,6 +287,9 @@ class AppLocalizationsMk extends AppLocalizations {
   String get labelPayoutRatio => 'Стапка на исплата';
 
   @override
+  String get labelYieldOnCost => 'Принос на набавна цена';
+
+  @override
   String get labelConsensus => 'Консензус';
 
   @override
@@ -2003,6 +2006,10 @@ class AppLocalizationsMk extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Делот од добивката исплатен како дивиденди. Над 100% компанијата исплаќа повеќе отколку што заработува, што ретко трае.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Примените дивиденди во последните 12 месеци поделени со она што го платиле за акциите што уште ги држите. За разлика од дивидендниот принос, се мери според вашата набавна цена, а не според денешната.';
 
   @override
   String get glossTitle => 'Што значи ова?';

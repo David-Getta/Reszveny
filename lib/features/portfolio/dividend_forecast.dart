@@ -53,6 +53,22 @@ List<ExpectedDividend> expectedDividends(
   return out;
 }
 
+/// Bekerülési osztalékhozam százalékban: az utolsó 12 hónap (dátumozott) kapott
+/// osztaléka a [cost] vételi értékhez mérve; `null`, ha nincs ilyen tétel.
+double? yieldOnCost(Iterable<DividendRecord> dividends, double cost, {required DateTime now}) {
+  if (cost <= 0) return null;
+  final from = DateTime(now.year - 1, now.month, now.day);
+  var sum = 0.0;
+  var any = false;
+  for (final d in dividends) {
+    final date = d.date;
+    if (date == null || date.isBefore(from) || date.isAfter(now)) continue;
+    sum += d.amount;
+    any = true;
+  }
+  return any ? sum / cost * 100 : null;
+}
+
 /// A kifizetések közti medián távolságból a ritmus napokban (30 / 91 / 182 / 365);
 /// `null`, ha túl sűrű (nem rendszeres osztalék) vagy túl ritka.
 int? periodDaysFor(int medianGapDays) {

@@ -288,6 +288,9 @@ class AppLocalizationsZu extends AppLocalizations {
   String get labelPayoutRatio => 'Isilinganiso sokukhokha';
 
   @override
+  String get labelYieldOnCost => 'Isivuno ngentengo yokuthenga';
+
+  @override
   String get labelConsensus => 'Ukuvumelana';
 
   @override
@@ -1991,6 +1994,10 @@ class AppLocalizationsZu extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Ingxenye yenzuzo ekhokhwa njenge-dividend. Ngaphezu kuka-100% inkampani ikhokha okungaphezu kwalokho ekutholayo, okungavamile ukuhlala isikhathi eside.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Ama-dividend atholwe ezinyangeni ezingu-12 ezedlule ahlukaniswe ngalokho okukhokhele amasheya osawaphethe. Ngokungafani nesivuno se-dividend, silinganiswa ngentengo owathenga ngayo wena, hhayi intengo yanamuhla.';
 
   @override
   String get glossTitle => 'Kusho ukuthini?';

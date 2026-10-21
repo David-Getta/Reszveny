@@ -287,6 +287,9 @@ class AppLocalizationsBs extends AppLocalizations {
   String get labelPayoutRatio => 'Omjer isplate';
 
   @override
+  String get labelYieldOnCost => 'Prinos na nabavnu cijenu';
+
+  @override
   String get labelConsensus => 'Konsenzus';
 
   @override
@@ -2021,6 +2024,10 @@ class AppLocalizationsBs extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Dio dobiti isplaćen kao dividende. Iznad 100% kompanija isplaćuje više nego što zarađuje, što rijetko traje.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Dividende primljene u posljednjih 12 mjeseci podijeljene s onim što ste platili za dionice koje još držite. Za razliku od dividendnog prinosa, mjeri se prema vašoj kupovnoj cijeni, a ne prema današnjoj.';
 
   @override
   String get glossTitle => 'Šta to znači?';

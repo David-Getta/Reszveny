@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Estimado a partir das datas e valores dos pagamentos que você registrou; as empresas podem alterá-los ou suspendê-los.",
   "portfolioDividendAround": "por volta de {date}",
   "eventDividend": "Dividendo esperado",
-  "eventDividendEstimate": "Estimado a partir dos pagamentos que você registrou"
+  "eventDividendEstimate": "Estimado a partir dos pagamentos que você registrou",
+  "labelYieldOnCost": "Rendimento sobre o custo",
+  "glossYieldOnCost": "Dividendos recebidos nos últimos 12 meses divididos pelo que você pagou pelas ações que ainda possui. Diferente do rendimento do dividendo, é medido em relação ao seu próprio preço de compra, não ao preço de hoje."
 }

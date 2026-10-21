@@ -289,6 +289,9 @@ class AppLocalizationsKn extends AppLocalizations {
   String get labelPayoutRatio => 'ಪೇಔಟ್ ಅನುಪಾತ';
 
   @override
+  String get labelYieldOnCost => 'ವೆಚ್ಚದ ಮೇಲೆ ಯೀಲ್ಡ್';
+
+  @override
   String get labelConsensus => 'ಒಮ್ಮತ';
 
   @override
@@ -1990,6 +1993,10 @@ class AppLocalizationsKn extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'ಲಾಭದಲ್ಲಿ ಡಿವಿಡೆಂಡ್ ಆಗಿ ಪಾವತಿಸುವ ಪಾಲು. 100% ಕ್ಕಿಂತ ಹೆಚ್ಚಾದರೆ ಕಂಪನಿ ಗಳಿಸುವುದಕ್ಕಿಂತ ಹೆಚ್ಚು ಪಾವತಿಸುತ್ತದೆ, ಇದು ಅಪರೂಪವಾಗಿ ಮುಂದುವರಿಯುತ್ತದೆ.';
+
+  @override
+  String get glossYieldOnCost =>
+      'ಕಳೆದ 12 ತಿಂಗಳಲ್ಲಿ ಪಡೆದ ಡಿವಿಡೆಂಡ್‌ಗಳನ್ನು ನೀವು ಇನ್ನೂ ಹೊಂದಿರುವ ಷೇರುಗಳಿಗೆ ಪಾವತಿಸಿದ ಮೊತ್ತದಿಂದ ಭಾಗಿಸಿದ್ದು. ಡಿವಿಡೆಂಡ್ ಯೀಲ್ಡ್‌ಗಿಂತ ಭಿನ್ನವಾಗಿ, ಇದನ್ನು ಇಂದಿನ ಬೆಲೆಗೆ ಬದಲು ನಿಮ್ಮ ಸ್ವಂತ ಖರೀದಿ ಬೆಲೆಯ ಮೇಲೆ ಅಳೆಯಲಾಗುತ್ತದೆ.';
 
   @override
   String get glossTitle => 'ಇದರ ಅರ್ಥವೇನು?';

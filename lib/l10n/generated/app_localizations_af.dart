@@ -289,6 +289,9 @@ class AppLocalizationsAf extends AppLocalizations {
   String get labelPayoutRatio => 'Uitbetalingsverhouding';
 
   @override
+  String get labelYieldOnCost => 'Opbrengs op koste';
+
+  @override
   String get labelConsensus => 'Konsensus';
 
   @override
@@ -1987,6 +1990,10 @@ class AppLocalizationsAf extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Die deel van die wins wat as dividende uitbetaal word. Bo 100% betaal die maatskappy meer as wat dit verdien, wat selde hou.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Dividende ontvang in die laaste 12 maande, gedeel deur wat jy betaal het vir die aandele wat jy nog hou. Anders as die dividendopbrengs word dit teen jou eie aankoopprys gemeet, nie vandag se prys nie.';
 
   @override
   String get glossTitle => 'Wat beteken dit?';

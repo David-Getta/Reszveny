@@ -287,6 +287,9 @@ class AppLocalizationsUk extends AppLocalizations {
   String get labelPayoutRatio => 'Коефіцієнт виплат';
 
   @override
+  String get labelYieldOnCost => 'Дохідність до ціни купівлі';
+
+  @override
   String get labelConsensus => 'Консенсус';
 
   @override
@@ -2037,6 +2040,10 @@ class AppLocalizationsUk extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Частка прибутку, виплачена як дивіденди. Понад 100% компанія виплачує більше, ніж заробляє, і це рідко триває довго.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Дивіденди, отримані за останні 12 місяців, поділені на те, що ви заплатили за акції, які ще тримаєте. На відміну від дивідендної дохідності, вона вимірюється відносно вашої ціни купівлі, а не сьогоднішньої.';
 
   @override
   String get glossTitle => 'Що це означає?';

@@ -287,6 +287,9 @@ class AppLocalizationsRu extends AppLocalizations {
   String get labelPayoutRatio => 'Коэффициент выплат';
 
   @override
+  String get labelYieldOnCost => 'Доходность к цене покупки';
+
+  @override
   String get labelConsensus => 'Консенсус';
 
   @override
@@ -2039,6 +2042,10 @@ class AppLocalizationsRu extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Доля прибыли, которая выплачивается в виде дивидендов. Выше 100 % компания платит больше, чем зарабатывает, и это редко длится долго.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Дивиденды, полученные за последние 12 месяцев, делённые на то, что вы заплатили за акции, которые всё ещё держите. В отличие от дивидендной доходности, она измеряется относительно вашей цены покупки, а не сегодняшней цены.';
 
   @override
   String get glossTitle => 'Что это значит?';

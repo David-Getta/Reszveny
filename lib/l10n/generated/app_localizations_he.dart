@@ -287,6 +287,9 @@ class AppLocalizationsHe extends AppLocalizations {
   String get labelPayoutRatio => 'שיעור חלוקה';
 
   @override
+  String get labelYieldOnCost => 'תשואה על העלות';
+
+  @override
   String get labelConsensus => 'קונצנזוס';
 
   @override
@@ -1977,6 +1980,10 @@ class AppLocalizationsHe extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'החלק מהרווח שמחולק כדיבידנד. מעל 100% החברה משלמת יותר ממה שהיא מרוויחה, ומצב כזה לרוב לא מחזיק מעמד.';
+
+  @override
+  String get glossYieldOnCost =>
+      'דיבידנדים שהתקבלו ב-12 החודשים האחרונים חלקי מה ששילמת על המניות שעדיין ברשותך. בניגוד לתשואת הדיבידנד, היא נמדדת ביחס למחיר הקנייה שלך ולא למחיר של היום.';
 
   @override
   String get glossTitle => 'מה זה אומר?';

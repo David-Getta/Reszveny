@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Ñu xayma ko ci bés yi ak xaalis yi ci fey yi nga bind; ay kompañi mën nañu koy soppi walla ñu bàyyi ko.",
   "portfolioDividendAround": "lu tollu ci {date}",
   "eventDividend": "Dividande bu ñuy xaar",
-  "eventDividendEstimate": "Ñu xayma ko ci fey yi nga bind"
+  "eventDividendEstimate": "Ñu xayma ko ci fey yi nga bind",
+  "labelYieldOnCost": "Njureef ci njëgu jënd",
+  "glossYieldOnCost": "Dividande yi nga jot ci 12 weer yi mujj, xaaj ko ci li nga fey ci aksiyoŋ yi nga am ba tey. Wuute ak njureefu dividand, dañu koy natt ci njëg bi nga jënde boppu, du njëgu tey."
 }

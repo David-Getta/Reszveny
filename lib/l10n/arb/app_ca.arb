@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Estimat a partir de les dates i els imports dels pagaments que has registrat; les empreses els poden canviar o ometre.",
   "portfolioDividendAround": "cap al {date}",
   "eventDividend": "Dividend previst",
-  "eventDividendEstimate": "Estimat a partir dels pagaments registrats"
+  "eventDividendEstimate": "Estimat a partir dels pagaments registrats",
+  "labelYieldOnCost": "Rendibilitat sobre el cost",
+  "glossYieldOnCost": "Els dividends rebuts els últims 12 mesos dividits pel que vas pagar per les accions que encara tens. A diferència de la rendibilitat per dividend, es mesura sobre el teu propi preu de compra, no sobre el preu d'avui."
 }

@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "根據你記錄的派息日期和金額估算；公司可能更改或取消派息。",
   "portfolioDividendAround": "約 {date}",
   "eventDividend": "預計派息",
-  "eventDividendEstimate": "根據你記錄的派息估算"
+  "eventDividendEstimate": "根據你記錄的派息估算",
+  "labelYieldOnCost": "成本股息率",
+  "glossYieldOnCost": "最近12個月收到的股息，除以你為仍然持有的股份所付出的金額。與股息率不同，它以你自己的買入價而非今日價格計算。"
 }

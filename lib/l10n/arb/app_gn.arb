@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Oñemoha'ã umi jehepyme'ẽ remboguapýva ára ha hepykuégui; umi empresa ikatu omoambue térã ohejarei.",
   "portfolioDividendAround": "{date} rupi",
   "eventDividend": "Dividendo oñeha'arõva",
-  "eventDividendEstimate": "Ojeha'ã umi pago rehaiva'ekue rehe"
+  "eventDividendEstimate": "Ojeha'ã umi pago rehaiva'ekue rehe",
+  "labelYieldOnCost": "Rendimiento jogua repy rehe",
+  "glossYieldOnCost": "Dividendo og̃uahẽva 12 jasy ohasa vaʼekuépe, oñemboja'o viru rehepyme'ẽ vaʼekue umi acción reguerekóva gueteri rehe. Ndahaʼéi dividendo rendimientoicha: kóva oñemoha'ãnga nde jogua repy rehe, ndahaʼéi ko árape repy rehe."
 }

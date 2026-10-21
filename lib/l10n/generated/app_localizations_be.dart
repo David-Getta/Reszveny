@@ -287,6 +287,9 @@ class AppLocalizationsBe extends AppLocalizations {
   String get labelPayoutRatio => 'Каэфіцыент выплат';
 
   @override
+  String get labelYieldOnCost => 'Даходнасць да цаны пакупкі';
+
+  @override
   String get labelConsensus => 'Кансэнсус';
 
   @override
@@ -2038,6 +2041,10 @@ class AppLocalizationsBe extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Доля прыбытку, якая выплачваецца як дывідэнды. Вышэй за 100% кампанія плаціць больш, чым зарабляе, і гэта рэдка доўжыцца доўга.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Дывідэнды, атрыманыя за апошнія 12 месяцаў, падзеленыя на тое, што вы заплацілі за акцыі, якімі ўсё яшчэ валодаеце. У адрозненне ад дывідэнднай даходнасці, яна вымяраецца адносна вашай цаны пакупкі, а не сённяшняй цаны.';
 
   @override
   String get glossTitle => 'Што гэта значыць?';

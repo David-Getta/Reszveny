@@ -287,6 +287,9 @@ class AppLocalizationsEs extends AppLocalizations {
   String get labelPayoutRatio => 'Ratio de reparto (payout)';
 
   @override
+  String get labelYieldOnCost => 'Rentabilidad sobre coste';
+
+  @override
   String get labelConsensus => 'Consenso';
 
   @override
@@ -1989,6 +1992,10 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'La parte del beneficio que se reparte como dividendos. Por encima del 100% la empresa paga más de lo que gana, algo que rara vez dura.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Los dividendos recibidos en los últimos 12 meses divididos por lo que pagaste por las acciones que aún conservas. A diferencia de la rentabilidad por dividendo, se mide sobre tu propio precio de compra, no sobre el precio de hoy.';
 
   @override
   String get glossTitle => '¿Qué significa?';

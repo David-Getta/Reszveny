@@ -288,6 +288,9 @@ class AppLocalizationsNso extends AppLocalizations {
   String get labelPayoutRatio => 'Tekanyo ya tefo';
 
   @override
+  String get labelYieldOnCost => 'Poelo go theko ya go reka';
+
+  @override
   String get labelConsensus => 'Kwano';
 
   @override
@@ -1996,6 +1999,10 @@ class AppLocalizationsNso extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Karolo ya poelo ye e lefšwago bjalo ka dividende. Godimo ga 100% khamphani e lefa go feta seo e se hwetšago, e lego seo se sa tšwelego pele gantši.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Dividende tše di amogetšwego dikgweding tše 12 tša go feta, tše di aroganywago ka seo o se lefetšego dišere tšeo o sa nago le tšona. Go fapana le poelo ya dividende, e lekanywa go ya ka theko yeo o rekilego ka yona, e sego theko ya lehono.';
 
   @override
   String get glossTitle => 'Se bolela eng?';

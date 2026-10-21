@@ -288,6 +288,9 @@ class AppLocalizationsPs extends AppLocalizations {
   String get labelPayoutRatio => 'د ګټې وېش نسبت';
 
   @override
+  String get labelYieldOnCost => 'د پېرودلو بیې پر بنسټ ګټه';
+
+  @override
   String get labelConsensus => 'ګډ نظر';
 
   @override
@@ -1976,6 +1979,10 @@ class AppLocalizationsPs extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'د ګټې هغه برخه چې د وېشل شوې ګټې په توګه ورکول کېږي. له 100% پورته شرکت له خپل عاید ډېر ورکوي، چې ډېر کم دوام کوي.';
+
+  @override
+  String get glossYieldOnCost =>
+      'په تېرو ۱۲ میاشتو کې ترلاسه شوي ډیویډنډونه، وېشل شوي پر هغه څه چې تاسو د هغو ونډو لپاره ورکړي چې لا هم یې لرئ. د ونډې ګټې کچې په خلاف، دا د نننۍ بیې پر ځای د خپلې پېرودلو بیې پر بنسټ اندازه کېږي.';
 
   @override
   String get glossTitle => 'دا څه مانا لري؟';

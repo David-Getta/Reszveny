@@ -287,6 +287,9 @@ class AppLocalizationsAk extends AppLocalizations {
   String get labelPayoutRatio => 'Mfaso a wɔkyɛ no dodow';
 
   @override
+  String get labelYieldOnCost => 'Mfaso kyɛ wɔ tɔ bo so';
+
+  @override
   String get labelConsensus => 'Adwene a wɔapene so';
 
   @override
@@ -1983,6 +1986,10 @@ class AppLocalizationsAk extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Mfaso no ɔfa a wɔde kyɛ sɛ mfaso kyɛ. Sɛ ɛboro 100% a, adwumakuw no tua bɛboro nea ɛnya, na ɛntaa nkyɛ.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Dividend a woanya wɔ abosome 12 a atwam no mu, a wɔde akyekyɛ sika a wotuaa maa kyɛfa a wowɔ no da so. Ɛnte sɛ mfaso kyɛ wɔ bo so: wɔde wo ankasa tɔ bo na ɛsusuw, ɛnyɛ nnɛ bo.';
 
   @override
   String get glossTitle => 'Ɛkyerɛ dɛn?';

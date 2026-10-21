@@ -288,6 +288,9 @@ class AppLocalizationsOr extends AppLocalizations {
   String get labelPayoutRatio => 'ପେଆଉଟ ଅନୁପାତ';
 
   @override
+  String get labelYieldOnCost => 'କ୍ରୟ ମୂଲ୍ୟ ଉପରେ ୟିଲ୍ଡ';
+
+  @override
   String get labelConsensus => 'ସର୍ବସମ୍ମତି';
 
   @override
@@ -1981,6 +1984,10 @@ class AppLocalizationsOr extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'ଲାଭର କେତେ ଅଂଶ ଲାଭାଂଶ ଭାବେ ଦିଆଯାଏ। 100% ରୁ ଅଧିକ ହେଲେ କମ୍ପାନୀ ଯେତେ ରୋଜଗାର କରେ ତାଠାରୁ ଅଧିକ ଦିଏ, ଯାହା କ୍ୱଚିତ୍ ସ୍ଥାୟୀ ହୁଏ।';
+
+  @override
+  String get glossYieldOnCost =>
+      'ଗତ ୧୨ ମାସରେ ପ୍ରାପ୍ତ ଡିଭିଡେଣ୍ଡକୁ ଆପଣ ଏବେ ବି ଧରି ରଖିଥିବା ସେୟାର ପାଇଁ ଦେଇଥିବା ରାଶି ଦ୍ୱାରା ଭାଗ କରାଯାଏ। ଲାଭାଂଶ ୟିଲ୍ଡ ଭଳି ନୁହେଁ, ଏହା ଆଜିର ଦର ଉପରେ ନୁହେଁ, ଆପଣ ନିଜେ କିଣିଥିବା ଦର ଉପରେ ମାପ କରାଯାଏ।';
 
   @override
   String get glossTitle => 'ଏହାର ଅର୍ଥ କ\'ଣ?';

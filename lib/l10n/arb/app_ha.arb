@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "An kiyasta daga ranaku da adadin biyan da ka rubuta; kamfanoni na iya canza su ko tsallake su.",
   "portfolioDividendAround": "wajen {date}",
   "eventDividend": "Ana sa ran rabon riba",
-  "eventDividendEstimate": "Kiyasi daga biyan da ka rubuta"
+  "eventDividendEstimate": "Kiyasi daga biyan da ka rubuta",
+  "labelYieldOnCost": "Yawan rabon riba kan farashin saye",
+  "glossYieldOnCost": "Rabon riba da aka karɓa a cikin watanni 12 na baya, an raba shi da abin da ka biya kan hannayen jari da kake riƙe har yanzu. Ba kamar yawan rabon riba ba, ana auna shi da farashin sayenka, ba farashin yau ba."
 }

@@ -288,6 +288,9 @@ class AppLocalizationsFa extends AppLocalizations {
   String get labelPayoutRatio => 'نسبت پرداخت سود';
 
   @override
+  String get labelYieldOnCost => 'بازده بر بهای خرید';
+
+  @override
   String get labelConsensus => 'اجماع';
 
   @override
@@ -1981,6 +1984,10 @@ class AppLocalizationsFa extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'بخشی از سود که به‌صورت سود نقدی پرداخت می‌شود. بالای 100% یعنی شرکت بیش از درآمدش پرداخت می‌کند، که به‌ندرت دوام می‌آورد.';
+
+  @override
+  String get glossYieldOnCost =>
+      'سود سهام دریافت‌شده در ۱۲ ماه گذشته تقسیم بر مبلغی که برای سهامی که هنوز دارید پرداخته‌اید. برخلاف بازده سود نقدی، این مقدار بر پایه قیمت خرید خودتان سنجیده می‌شود، نه قیمت امروز.';
 
   @override
   String get glossTitle => 'این یعنی چه؟';

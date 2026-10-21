@@ -288,6 +288,9 @@ class AppLocalizationsTk extends AppLocalizations {
   String get labelPayoutRatio => 'Diwidend töleg paýy';
 
   @override
+  String get labelYieldOnCost => 'Satyn alyş bahasyna girdejililik';
+
+  @override
   String get labelConsensus => 'Konsensus';
 
   @override
@@ -1983,6 +1986,10 @@ class AppLocalizationsTk extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Peýdanyň diwidend hökmünde tölenýän paýy. 100%-den ýokary bolsa, kompaniýa gazanýanyndan köp töleýär, bu seýrek dowam edýär.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Soňky 12 aýda alnan diwidendler, häzirem saklaýan paýnamalaryňyz üçin tölän puluňyza bölünýär. Diwidend girdejililiginden tapawutlylykda, ol şu günki baha bilen däl-de, siziň öz satyn alyş bahaňyz bilen ölçelýär.';
 
   @override
   String get glossTitle => 'Bu näme aňladýar?';

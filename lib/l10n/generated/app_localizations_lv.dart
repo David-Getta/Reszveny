@@ -287,6 +287,9 @@ class AppLocalizationsLv extends AppLocalizations {
   String get labelPayoutRatio => 'Dividenžu izmaksas koeficients';
 
   @override
+  String get labelYieldOnCost => 'Ienesīgums pret pirkuma cenu';
+
+  @override
   String get labelConsensus => 'Konsenss';
 
   @override
@@ -2023,6 +2026,10 @@ class AppLocalizationsLv extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Peļņas daļa, ko izmaksā dividendēs. Virs 100% uzņēmums izmaksā vairāk, nekā nopelna, un tas reti ilgst.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Pēdējo 12 mēnešu laikā saņemtās dividendes, dalītas ar summu, ko samaksājāt par akcijām, kuras joprojām turat. Atšķirībā no dividenžu ienesīguma to mēra pret jūsu pirkuma cenu, ne šodienas cenu.';
 
   @override
   String get glossTitle => 'Ko tas nozīmē?';

@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Kulinganiselwe ezinsukwini nasemalini yezinkokhelo ozirekhodile; izinkampani zingazishintsha noma zizeqe.",
   "portfolioDividendAround": "cishe ngo-{date}",
   "eventDividend": "Isabelo senzuzo esilindelekile",
-  "eventDividendEstimate": "Kulinganiselwe ezinkokhelweni ozirekhodile"
+  "eventDividendEstimate": "Kulinganiselwe ezinkokhelweni ozirekhodile",
+  "labelYieldOnCost": "Isivuno ngentengo yokuthenga",
+  "glossYieldOnCost": "Ama-dividend atholwe ezinyangeni ezingu-12 ezedlule ahlukaniswe ngalokho okukhokhele amasheya osawaphethe. Ngokungafani nesivuno se-dividend, silinganiswa ngentengo owathenga ngayo wena, hhayi intengo yanamuhla."
 }

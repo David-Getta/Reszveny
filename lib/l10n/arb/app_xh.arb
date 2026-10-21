@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Ziqikelelwe kwimihla nakwizixa zeentlawulo ozirekhodileyo; iinkampani zinokuzitshintsha okanye zizitsibe.",
   "portfolioDividendAround": "malunga ne-{date}",
   "eventDividend": "Isahlulo esilindelekileyo",
-  "eventDividendEstimate": "Siqikelelwe kwiintlawulo ozirekhodileyo"
+  "eventDividendEstimate": "Siqikelelwe kwiintlawulo ozirekhodileyo",
+  "labelYieldOnCost": "Isivuno kwixabiso lokuthenga",
+  "glossYieldOnCost": "Ii-dividend ezifunyenwe kwiinyanga ezili-12 ezidlulileyo zahlulwe ngoko ukuhlawuleleyo izabelo osenazo. Ngokwahlukileyo kwisivuno se-dividend, silinganiswa ngexabiso owathenga ngalo wena, hayi ixabiso lanamhlanje."
 }

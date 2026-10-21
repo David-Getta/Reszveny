@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Oszacowano na podstawie dat i kwot zapisanych wypłat; spółki mogą je zmienić lub pominąć.",
   "portfolioDividendAround": "około {date}",
   "eventDividend": "Spodziewana dywidenda",
-  "eventDividendEstimate": "Oszacowano na podstawie zapisanych wypłat"
+  "eventDividendEstimate": "Oszacowano na podstawie zapisanych wypłat",
+  "labelYieldOnCost": "Stopa dywidendy od ceny zakupu",
+  "glossYieldOnCost": "Dywidendy otrzymane w ostatnich 12 miesiącach podzielone przez to, co zapłaciłeś za akcje, które nadal posiadasz. W odróżnieniu od stopy dywidendy odnosi się do twojej własnej ceny zakupu, a nie do dzisiejszego kursu."
 }

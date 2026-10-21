@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Zoyerekezedwa kuchokera ku masiku ndi ndalama za malipiro omwe mudalemba; makampani akhoza kuwasintha kapena kuwadumpha.",
   "portfolioDividendAround": "pafupifupi {date}",
   "eventDividend": "Dividendi yoyembekezeka",
-  "eventDividendEstimate": "Zoyerekezedwa kuchokera ku malipiro omwe mudalemba"
+  "eventDividendEstimate": "Zoyerekezedwa kuchokera ku malipiro omwe mudalemba",
+  "labelYieldOnCost": "Phindu pa mtengo wogula",
+  "glossYieldOnCost": "Madividendi olandiridwa m'miyezi 12 yapitayi ogawidwa ndi zomwe munalipira pa masheya omwe mukadali nawo. Mosiyana ndi chiwerengero cha gawo la phindu, ichi chimayesedwa pa mtengo womwe inu munagula, osati mtengo wa lero."
 }

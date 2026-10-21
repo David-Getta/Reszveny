@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Qillqasqayki pagokunapa p'unchawninkunamanta chaninkunamantawan yupasqa; empresakuna chaykunata tikrayta utaq saqiyta atinku.",
   "portfolioDividendAround": "yaqa {date}",
   "eventDividend": "Dividendo suyasqa",
-  "eventDividendEstimate": "Qillqasqayki pagokunamanta yupasqa"
+  "eventDividendEstimate": "Qillqasqayki pagokunamanta yupasqa",
+  "labelYieldOnCost": "Rantisqa chaninpi rendimiento",
+  "glossYieldOnCost": "Qhipa 12 killakunapi chaskisqa dividendokuna, kunankama hap'isqayki accionkunapaq pagasqaykiwan rakisqa. Dividendopa rendimientonmanta hukniraq, kayqa kikiykipa rantisqa chaninwan tupachisqa, manam kunan chaninwanchu."
 }

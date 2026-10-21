@@ -287,6 +287,9 @@ class AppLocalizationsSk extends AppLocalizations {
   String get labelPayoutRatio => 'Výplatný pomer';
 
   @override
+  String get labelYieldOnCost => 'Výnos z nákupnej ceny';
+
+  @override
   String get labelConsensus => 'Konsenzus';
 
   @override
@@ -2039,6 +2042,10 @@ class AppLocalizationsSk extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Podiel zisku vyplatený ako dividendy. Nad 100 % firma vypláca viac, než zarába, a to málokedy vydrží.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Dividendy prijaté za posledných 12 mesiacov vydelené tým, čo ste zaplatili za akcie, ktoré stále držíte. Na rozdiel od dividendového výnosu sa meria voči vašej vlastnej nákupnej cene, nie voči dnešnej cene.';
 
   @override
   String get glossTitle => 'Čo to znamená?';

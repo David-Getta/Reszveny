@@ -284,6 +284,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get labelPayoutRatio => '派息率';
 
   @override
+  String get labelYieldOnCost => '成本股息率';
+
+  @override
   String get labelConsensus => '一致预期';
 
   @override
@@ -1889,6 +1892,10 @@ class AppLocalizationsZh extends AppLocalizations {
   String get glossPayoutRatio => '利润中以股息形式派发的比例。超过 100% 表示公司派发的比赚的还多，这很少能持久。';
 
   @override
+  String get glossYieldOnCost =>
+      '最近12个月收到的股息，除以您为仍持有的股份所支付的金额。与股息率不同，它以您自己的买入价而非当前价格为基准。';
+
+  @override
   String get glossTitle => '这是什么意思？';
 
   @override
@@ -2947,6 +2954,9 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get labelPayoutRatio => '派息比率';
+
+  @override
+  String get labelYieldOnCost => '成本股息率';
 
   @override
   String get labelConsensus => '綜合評級';
@@ -4552,6 +4562,10 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get glossPayoutRatio => '盈利中以股息派發的比例。超過 100% 即公司派發多於所賺，這情況很少能持續。';
+
+  @override
+  String get glossYieldOnCost =>
+      '最近12個月收到的股息，除以你為仍然持有的股份所付出的金額。與股息率不同，它以你自己的買入價而非今日價格計算。';
 
   @override
   String get glossTitle => '這是甚麼意思？';

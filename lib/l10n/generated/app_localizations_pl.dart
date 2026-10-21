@@ -288,6 +288,9 @@ class AppLocalizationsPl extends AppLocalizations {
   String get labelPayoutRatio => 'Wskaźnik wypłaty';
 
   @override
+  String get labelYieldOnCost => 'Stopa dywidendy od ceny zakupu';
+
+  @override
   String get labelConsensus => 'Konsensus';
 
   @override
@@ -2042,6 +2045,10 @@ class AppLocalizationsPl extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Część zysku wypłacana jako dywidenda. Powyżej 100% spółka wypłaca więcej, niż zarabia, co rzadko trwa długo.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Dywidendy otrzymane w ostatnich 12 miesiącach podzielone przez to, co zapłaciłeś za akcje, które nadal posiadasz. W odróżnieniu od stopy dywidendy odnosi się do twojej własnej ceny zakupu, a nie do dzisiejszego kursu.';
 
   @override
   String get glossTitle => 'Co to znaczy?';

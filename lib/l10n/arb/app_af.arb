@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Geskat uit die datums en bedrae van die betalings wat jy aangeteken het; maatskappye kan dit verander of oorslaan.",
   "portfolioDividendAround": "ongeveer {date}",
   "eventDividend": "Dividend verwag",
-  "eventDividendEstimate": "Geskat uit jou aangetekende betalings"
+  "eventDividendEstimate": "Geskat uit jou aangetekende betalings",
+  "labelYieldOnCost": "Opbrengs op koste",
+  "glossYieldOnCost": "Dividende ontvang in die laaste 12 maande, gedeel deur wat jy betaal het vir die aandele wat jy nog hou. Anders as die dividendopbrengs word dit teen jou eie aankoopprys gemeet, nie vandag se prys nie."
 }

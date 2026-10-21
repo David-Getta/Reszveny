@@ -287,6 +287,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get labelPayoutRatio => 'Payout ratio';
 
   @override
+  String get labelYieldOnCost => 'Yield on cost';
+
+  @override
   String get labelConsensus => 'Consensus';
 
   @override
@@ -1982,6 +1985,10 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'The share of profit paid out as dividends. Above 100% the company pays more than it earns, which rarely lasts.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Dividends received in the last 12 months divided by what you paid for the shares you still hold. Unlike the dividend yield, it is measured against your own purchase price, not today\'s price.';
 
   @override
   String get glossTitle => 'What does it mean?';

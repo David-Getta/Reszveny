@@ -288,6 +288,9 @@ class AppLocalizationsYo extends AppLocalizations {
   String get labelPayoutRatio => 'Ìpín èrè tí a pín';
 
   @override
+  String get labelYieldOnCost => 'Ìwọ̀n èrè lórí owó tí o san';
+
+  @override
   String get labelConsensus => 'Èrò gbogbogbò';
 
   @override
@@ -1983,6 +1986,10 @@ class AppLocalizationsYo extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Ìpín èrè tí wọ́n san jáde gẹ́gẹ́ bí èrè ìpín. Lókè 100% ilé-iṣẹ́ náà ń san ju ohun tó ń pa lọ, èyí tí kì í sábà pẹ́.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Èrè ìpín tí o gbà ní oṣù 12 tó kọjá pín pẹ̀lú owó tí o san fún àwọn ìpín tí o ṣì ní. Ó yàtọ̀ sí ìwọ̀n èrè ìpín, nítorí a ń wọ̀n ún lórí owó tí ìwọ fúnra rẹ fi rà á, kì í ṣe owó òní.';
 
   @override
   String get glossTitle => 'Kí ló túmọ̀ sí?';

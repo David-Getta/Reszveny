@@ -288,6 +288,9 @@ class AppLocalizationsKu extends AppLocalizations {
   String get labelPayoutRatio => 'Rêjeya belavkirinê';
 
   @override
+  String get labelYieldOnCost => 'Rêje li gorî bihayê kirînê';
+
+  @override
   String get labelConsensus => 'Lihevkirin';
 
   @override
@@ -1986,6 +1989,10 @@ class AppLocalizationsKu extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Para qezencê ya ku wekî dîvîdend tê dayîn. Ji 100% zêdetir şirket ji qezenca xwe zêdetir dide, ku kêm caran dom dike.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Dividendên ku di 12 mehên dawî de hatine wergirtin, dabeşî ya ku te ji bo pişkên hîn li destê te ne daye. Ne wek rêjeya dîvîdendê, ew li gorî bihayê kirîna te tê pîvandin, ne li gorî bihayê îro.';
 
   @override
   String get glossTitle => 'Ev tê çi wateyê?';

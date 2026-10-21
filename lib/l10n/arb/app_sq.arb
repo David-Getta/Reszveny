@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Vlerësuar nga datat dhe shumat e pagesave që regjistruat; kompanitë mund t'i ndryshojnë ose t'i anashkalojnë.",
   "portfolioDividendAround": "rreth {date}",
   "eventDividend": "Dividendë i pritur",
-  "eventDividendEstimate": "Vlerësuar nga pagesat që regjistruat"
+  "eventDividendEstimate": "Vlerësuar nga pagesat që regjistruat",
+  "labelYieldOnCost": "Rendimenti mbi çmimin e blerjes",
+  "glossYieldOnCost": "Dividendët e marrë në 12 muajt e fundit pjesëtuar me atë që pagove për aksionet që ende mban. Ndryshe nga rendimenti i dividendit, matet ndaj çmimit tënd të blerjes, jo ndaj çmimit të sotëm."
 }

@@ -288,6 +288,9 @@ class AppLocalizationsRo extends AppLocalizations {
   String get labelPayoutRatio => 'Rata de distribuire (payout)';
 
   @override
+  String get labelYieldOnCost => 'Randament la prețul de achiziție';
+
+  @override
   String get labelConsensus => 'Consens';
 
   @override
@@ -2016,6 +2019,10 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Partea din profit plătită ca dividende. Peste 100%, compania plătește mai mult decât câștigă, ceea ce rareori durează.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Dividendele încasate în ultimele 12 luni împărțite la cât ai plătit pentru acțiunile pe care le mai deții. Spre deosebire de randamentul dividendului, se raportează la prețul tău de cumpărare, nu la prețul de azi.';
 
   @override
   String get glossTitle => 'Ce înseamnă?';

@@ -287,6 +287,9 @@ class AppLocalizationsMai extends AppLocalizations {
   String get labelPayoutRatio => 'पेआउट अनुपात';
 
   @override
+  String get labelYieldOnCost => 'लागत पर यील्ड';
+
+  @override
   String get labelConsensus => 'सर्वसम्मति';
 
   @override
@@ -1977,6 +1980,10 @@ class AppLocalizationsMai extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'मुनाफाक कतेक हिस्सा लाभांशक रूप मे बाँटल जाइत अछि। 100% सँ ऊपर कंपनी जतबा कमाइत अछि ओहि सँ बेसी दैत अछि, जे बिरले टिकैत अछि।';
+
+  @override
+  String get glossYieldOnCost =>
+      'पछिला 12 महीनामे प्राप्त लाभांशकेँ ओहि राशिसँ भाग देल जाइत अछि जे अहाँ एखनो राखल शेयरक लेल देने छलहुँ। लाभांश यील्डसँ भिन्न, ई आइक भाव पर नहि, अहाँक अपन खरीद भाव पर मापल जाइत अछि।';
 
   @override
   String get glossTitle => 'एकर की अर्थ अछि?';

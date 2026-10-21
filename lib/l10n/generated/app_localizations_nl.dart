@@ -287,6 +287,9 @@ class AppLocalizationsNl extends AppLocalizations {
   String get labelPayoutRatio => 'Uitkeringsratio';
 
   @override
+  String get labelYieldOnCost => 'Rendement op aankoopprijs';
+
+  @override
   String get labelConsensus => 'Consensus';
 
   @override
@@ -1989,6 +1992,10 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Het deel van de winst dat als dividend wordt uitgekeerd. Boven 100% keert het bedrijf meer uit dan het verdient, wat zelden lang houdbaar is.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Het dividend dat je de laatste 12 maanden hebt ontvangen, gedeeld door wat je hebt betaald voor de aandelen die je nog bezit. Anders dan het dividendrendement wordt het afgezet tegen je eigen aankoopprijs, niet tegen de koers van vandaag.';
 
   @override
   String get glossTitle => 'Wat betekent dit?';

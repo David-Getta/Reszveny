@@ -288,6 +288,9 @@ class AppLocalizationsJv extends AppLocalizations {
   String get labelPayoutRatio => 'Rasio pembayaran dividen';
 
   @override
+  String get labelYieldOnCost => 'Imbal hasil saka rega tuku';
+
+  @override
   String get labelConsensus => 'Konsensus';
 
   @override
@@ -1985,6 +1988,10 @@ class AppLocalizationsJv extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Bagean bathi sing dibayarake minangka dividen. Ing ndhuwur 100% perusahaan mbayar luwih akeh tinimbang sing diasilake, lan iki arang suwe.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Dividen sing ditampa sajrone 12 sasi pungkasan dibagi karo sing wis sampeyan bayar kanggo saham sing isih sampeyan duweni. Beda karo imbal hasil dividen, iki diukur saka rega tuku sampeyan dhewe, dudu rega saiki.';
 
   @override
   String get glossTitle => 'Apa tegese?';

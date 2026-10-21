@@ -288,6 +288,9 @@ class AppLocalizationsSn extends AppLocalizations {
   String get labelPayoutRatio => 'Chiyero chekubhadhara';
 
   @override
+  String get labelYieldOnCost => 'Pundutso pamutengo wawakatenga';
+
+  @override
   String get labelConsensus => 'Kubvumirana';
 
   @override
@@ -1989,6 +1992,10 @@ class AppLocalizationsSn extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Chikamu chepundutso chinobhadharwa sedhividhendi. Pamusoro pe100% kambani inobhadhara kupfuura zvainowana, izvo zvisingawanzogari.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Madividendi akagamuchirwa mumwedzi 12 yapfuura akakamurwa nezvawakabhadhara masheya auchiri nawo. Kusiyana nepundutso yedhividhendi, inoyerwa nemutengo wawakatenga nawo iwe, kwete mutengo wanhasi.';
 
   @override
   String get glossTitle => 'Zvinorevei?';

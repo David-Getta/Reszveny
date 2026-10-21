@@ -287,6 +287,9 @@ class AppLocalizationsAr extends AppLocalizations {
   String get labelPayoutRatio => 'نسبة التوزيع';
 
   @override
+  String get labelYieldOnCost => 'العائد على التكلفة';
+
+  @override
   String get labelConsensus => 'الإجماع';
 
   @override
@@ -2024,6 +2027,10 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'حصة الأرباح المدفوعة كتوزيعات. فوق 100% تدفع الشركة أكثر مما تكسب، ونادرًا ما يدوم ذلك.';
+
+  @override
+  String get glossYieldOnCost =>
+      'توزيعات الأرباح المستلمة خلال آخر 12 شهرًا مقسومة على ما دفعته مقابل الأسهم التي ما زلت تحتفظ بها. على خلاف عائد التوزيعات، يُقاس هذا بسعر شرائك أنت، لا بسعر اليوم.';
 
   @override
   String get glossTitle => 'ماذا يعني ذلك؟';

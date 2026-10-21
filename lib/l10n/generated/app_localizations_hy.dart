@@ -288,6 +288,9 @@ class AppLocalizationsHy extends AppLocalizations {
   String get labelPayoutRatio => 'Շահաբաժինների վճարման գործակից';
 
   @override
+  String get labelYieldOnCost => 'Եկամտաբերություն գնման գնից';
+
+  @override
   String get labelConsensus => 'Կոնսենսուս';
 
   @override
@@ -1991,6 +1994,10 @@ class AppLocalizationsHy extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Շահույթի այն մասը, որը վճարվում է որպես շահաբաժին։ 100%-ից բարձրի դեպքում ընկերությունը վճարում է ավելին, քան վաստակում է, ինչը հազվադեպ է երկար տևում։';
+
+  @override
+  String get glossYieldOnCost =>
+      'Վերջին 12 ամիսներին ստացված շահաբաժինները՝ բաժանած այն գումարի վրա, որ վճարել եք դեռ պահած բաժնետոմսերի համար։ Ի տարբերություն շահաբաժնային եկամտաբերության, այն չափվում է ձեր սեփական գնման գնի, այլ ոչ այսօրվա գնի նկատմամբ։';
 
   @override
   String get glossTitle => 'Ի՞նչ է սա նշանակում';

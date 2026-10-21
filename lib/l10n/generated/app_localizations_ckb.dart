@@ -287,6 +287,9 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get labelPayoutRatio => 'ڕێژەی دابەشکردن';
 
   @override
+  String get labelYieldOnCost => 'ڕێژەی قازانج بەپێی تێچوو';
+
+  @override
   String get labelConsensus => 'کۆدەنگی';
 
   @override
@@ -1984,6 +1987,10 @@ class AppLocalizationsCkb extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'ئەو بەشەی قازانج کە وەک قازانجی پشک دابەش دەکرێت. سەروو 100% کۆمپانیاکە زیاتر لە داهاتی خۆی دەدات، کە بە دەگمەن بەردەوام دەبێت.';
+
+  @override
+  String get glossYieldOnCost =>
+      'قازانجی پشکی وەرگیراو لە ١٢ مانگی ڕابردوو دابەش بەسەر ئەوەی داوتە بۆ ئەو پشکانەی هێشتا هەتن. جیاواز لە ڕێژەی قازانجی پشک، ئەمە بە نرخی کڕینی خۆت دەپێورێت، نەک بە نرخی ئەمڕۆ.';
 
   @override
   String get glossTitle => 'مانای چییە؟';

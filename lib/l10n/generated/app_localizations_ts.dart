@@ -289,6 +289,9 @@ class AppLocalizationsTs extends AppLocalizations {
   String get labelPayoutRatio => 'Mpimo wa ku hakela';
 
   @override
+  String get labelYieldOnCost => 'Mbuyelo eka nxavo wo xava';
+
+  @override
   String get labelConsensus => 'Ntwanano';
 
   @override
@@ -1995,6 +1998,10 @@ class AppLocalizationsTs extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Xiphemu xa mbuyelo lexi hakeriwaka tanihi dividende. Ehenhla ka 100% khampani yi hakela ku tlula leswi yi swi kumaka, naswona leswi a swi tshami nkarhi wo leha.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Tidividende leti amukeriweke eka tin\'hweti ta 12 leti hundzeke, leti avanyisiweke hi leswi u swi hakeleke eka tixere leti wa ha tikhomeke. Ku hambana na mbuyelo wa dividende, wu pimiwa hi nxavo lowu u xaveke ha wona, ku nga ri nxavo wa namuntlha.';
 
   @override
   String get glossTitle => 'Swi vula yini?';

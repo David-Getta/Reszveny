@@ -288,6 +288,9 @@ class AppLocalizationsRn extends AppLocalizations {
   String get labelPayoutRatio => 'Igipimo c\'inyungu igaburwa';
 
   @override
+  String get labelYieldOnCost => 'Inyungu ku giciro waguze';
+
+  @override
   String get labelConsensus => 'Iciyumviro rusangi';
 
   @override
@@ -1989,6 +1992,10 @@ class AppLocalizationsRn extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Igice c\'inyungu kigaburwa ku banyamigabane. Hejuru ya 100% isosiyete iriha ibirenze ivyo yinjiza, kandi ivyo ntibimara igihe kirekire.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Amadividende yakiriwe mu mezi 12 aheze agabanijwe n\'ivyo wariha ku migabane ugifise. Bitandukanye n\'igipimo c\'inyungu ku migabane, bipimwa ku giciro wewe nyene waguze, atari ic\'uno musi.';
 
   @override
   String get glossTitle => 'Bisigura iki?';

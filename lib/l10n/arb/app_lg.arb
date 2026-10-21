@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Zibalirirwa okuva ku nnaku n'emiwendo gy'ensasula ze wawandiika; kkampuni zisobola okuzikyusa oba okuzibuuka.",
   "portfolioDividendAround": "awo nga {date}",
   "eventDividend": "Dividendi esuubirwa",
-  "eventDividendEstimate": "Ebalirirwa okuva mu nsasula z'owandiise"
+  "eventDividendEstimate": "Ebalirirwa okuva mu nsasula z'owandiise",
+  "labelYieldOnCost": "Amagoba ku bbeeyi ey'okugula (%)",
+  "glossYieldOnCost": "Dividendi ezafunibwa mu myezi 12 egiyise nga zigabanyizibwamu ssente ze wasasula ku migabo gy'okyalina. Okwawukana ku magoba ku migabo, kino kipimibwa ku bbeeyi gye wagulako ggwe, so si ku bbeeyi ya leero."
 }

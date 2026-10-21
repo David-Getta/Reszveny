@@ -288,6 +288,9 @@ class AppLocalizationsLg extends AppLocalizations {
   String get labelPayoutRatio => 'Ekitundu ky\'amagoba ekigabibwa';
 
   @override
+  String get labelYieldOnCost => 'Amagoba ku bbeeyi ey\'okugula (%)';
+
+  @override
   String get labelConsensus => 'Endowooza ya bonna';
 
   @override
@@ -1994,6 +1997,10 @@ class AppLocalizationsLg extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Ekitundu ky\'amagoba ekigabibwa eri abalina emigabo. Okusukka 100% kkampuni egaba okusinga by\'efuna, ekitera obutawangaala.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Dividendi ezafunibwa mu myezi 12 egiyise nga zigabanyizibwamu ssente ze wasasula ku migabo gy\'okyalina. Okwawukana ku magoba ku migabo, kino kipimibwa ku bbeeyi gye wagulako ggwe, so si ku bbeeyi ya leero.';
 
   @override
   String get glossTitle => 'Kitegeeza ki?';

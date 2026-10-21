@@ -288,6 +288,9 @@ class AppLocalizationsHt extends AppLocalizations {
   String get labelPayoutRatio => 'To distribisyon';
 
   @override
+  String get labelYieldOnCost => 'Rannman sou pri acha';
+
+  @override
   String get labelConsensus => 'Konsansis';
 
   @override
@@ -1982,6 +1985,10 @@ class AppLocalizationsHt extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Pati nan benefis la yo peye kòm dividann. Plis pase 100% konpayi a peye plis pase sa li fè, e sa raman dire.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Dividann ou resevwa nan 12 dènye mwa yo divize pa sa ou te peye pou aksyon ou toujou genyen yo. Kontrèman ak rannman dividann, yo mezire l sou pwòp pri acha ou, pa sou pri jodi a.';
 
   @override
   String get glossTitle => 'Kisa sa vle di?';

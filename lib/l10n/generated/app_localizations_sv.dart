@@ -288,6 +288,9 @@ class AppLocalizationsSv extends AppLocalizations {
   String get labelPayoutRatio => 'Utdelningsandel';
 
   @override
+  String get labelYieldOnCost => 'Direktavkastning på inköpspris';
+
+  @override
   String get labelConsensus => 'Konsensus';
 
   @override
@@ -1985,6 +1988,10 @@ class AppLocalizationsSv extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Andelen av vinsten som delas ut. Över 100 % delar bolaget ut mer än det tjänar, vilket sällan håller i längden.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Utdelningar mottagna de senaste 12 månaderna delat med vad du betalade för de aktier du fortfarande äger. Till skillnad från direktavkastningen mäts den mot ditt eget inköpspris, inte dagens kurs.';
 
   @override
   String get glossTitle => 'Vad betyder det?';

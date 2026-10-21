@@ -288,6 +288,9 @@ class AppLocalizationsUr extends AppLocalizations {
   String get labelPayoutRatio => 'پے آؤٹ ریشو';
 
   @override
+  String get labelYieldOnCost => 'خرید قیمت پر ییلڈ';
+
+  @override
   String get labelConsensus => 'اتفاقِ رائے';
 
   @override
@@ -1983,6 +1986,10 @@ class AppLocalizationsUr extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'منافع کا وہ حصہ جو ڈیویڈنڈ کے طور پر ادا ہوتا ہے۔ 100% سے اوپر کمپنی اپنی کمائی سے زیادہ ادا کرتی ہے، جو شاذ و نادر ہی دیر تک چلتا ہے۔';
+
+  @override
+  String get glossYieldOnCost =>
+      'گزشتہ 12 مہینوں میں موصول شدہ ڈیویڈنڈ کو اس رقم سے تقسیم کیا جاتا ہے جو آپ نے ابھی تک رکھے ہوئے شیئرز کے لیے ادا کی تھی۔ ڈیویڈنڈ ییلڈ کے برعکس، اسے آج کی قیمت پر نہیں بلکہ آپ کی اپنی خرید قیمت پر ناپا جاتا ہے۔';
 
   @override
   String get glossTitle => 'اس کا کیا مطلب ہے؟';

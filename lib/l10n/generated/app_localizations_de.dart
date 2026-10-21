@@ -289,6 +289,9 @@ class AppLocalizationsDe extends AppLocalizations {
   String get labelPayoutRatio => 'Ausschüttungsquote';
 
   @override
+  String get labelYieldOnCost => 'Rendite auf Kaufpreis';
+
+  @override
   String get labelConsensus => 'Konsens';
 
   @override
@@ -1995,6 +1998,10 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Der Anteil des Gewinns, der als Dividende ausgeschüttet wird. Über 100% zahlt das Unternehmen mehr aus, als es verdient – das hält selten lange.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Die in den letzten 12 Monaten erhaltenen Dividenden geteilt durch das, was du für die noch gehaltenen Aktien bezahlt hast. Anders als die Dividendenrendite wird sie an deinem eigenen Kaufpreis gemessen, nicht am heutigen Kurs.';
 
   @override
   String get glossTitle => 'Was bedeutet das?';

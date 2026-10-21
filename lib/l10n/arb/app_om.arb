@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Guyyoota fi hamma kaffaltiiwwan ati galmeessiterraa tilmaamame; dhaabbileen jijjiiruu ykn dhiisuu ni danda'u.",
   "portfolioDividendAround": "naannoo {date}",
   "eventDividend": "Diviidendii eegamu",
-  "eventDividendEstimate": "Kaffaltiiwwan ati galmeessiterraa tilmaamame"
+  "eventDividendEstimate": "Kaffaltiiwwan ati galmeessiterraa tilmaamame",
+  "labelYieldOnCost": "Bu'aa gatii bittaa irratti",
+  "glossYieldOnCost": "Diviidendii ji'oota 12 darban keessa argame, maallaqa aksiyoonota ammas qabdu irratti kaffalteen hiramee. Dhibbeentaa qooda bu'aa irraa adda ta'ee, gatii har'aatiin osoo hin taane gatii ati ittiin bitteen safarama."
 }

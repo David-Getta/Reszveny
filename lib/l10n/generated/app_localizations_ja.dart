@@ -286,6 +286,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get labelPayoutRatio => '配当性向';
 
   @override
+  String get labelYieldOnCost => '取得利回り';
+
+  @override
   String get labelConsensus => 'コンセンサス';
 
   @override
@@ -1914,6 +1917,10 @@ class AppLocalizationsJa extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       '利益のうち配当として支払われる割合。100%を超えると稼いだ以上を払っていることになり、長続きはまれです。';
+
+  @override
+  String get glossYieldOnCost =>
+      '直近12か月に受け取った配当金を、今も保有している株式の購入金額で割ったものです。配当利回りと異なり、今日の株価ではなくあなた自身の購入価格を基準にします。';
 
   @override
   String get glossTitle => 'どういう意味？';

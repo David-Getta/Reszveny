@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "E mere atụmatụ site n'ụbọchị na ego nke ịkwụ ụgwọ ndị i dekọrọ; ụlọ ọrụ nwere ike gbanwee ma ọ bụ wụfee ha.",
   "portfolioDividendAround": "ihe dị ka {date}",
   "eventDividend": "A na-atụ anya nkesa uru",
-  "eventDividendEstimate": "E mere atụmatụ site na ụgwọ ị dekọrọ"
+  "eventDividendEstimate": "E mere atụmatụ site na ụgwọ ị dekọrọ",
+  "labelYieldOnCost": "Mkpụrụ dividend n'ọnụahịa ịzụ",
+  "glossYieldOnCost": "Dividend enwetara n'ọnwa 12 gara aga kewara ihe ị kwụrụ maka share ndị ị ka nwere. N'adịghị ka mkpụrụ dividend, a na-atụ ya n'ọnụahịa ịzụ nke gị, ọ bụghị ọnụahịa taa."
 }

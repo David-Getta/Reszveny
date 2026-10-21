@@ -288,6 +288,9 @@ class AppLocalizationsMs extends AppLocalizations {
   String get labelPayoutRatio => 'Nisbah pembayaran';
 
   @override
+  String get labelYieldOnCost => 'Hasil atas kos';
+
+  @override
   String get labelConsensus => 'Konsensus';
 
   @override
@@ -1988,6 +1991,10 @@ class AppLocalizationsMs extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Bahagian keuntungan yang dibayar sebagai dividen. Melebihi 100%, syarikat membayar lebih daripada yang diperolehnya, dan ini jarang bertahan.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Dividen yang diterima dalam 12 bulan terakhir dibahagikan dengan jumlah yang anda bayar untuk saham yang masih anda pegang. Berbeza dengan hasil dividen, ia diukur berdasarkan harga belian anda sendiri, bukan harga hari ini.';
 
   @override
   String get glossTitle => 'Apakah maksudnya?';

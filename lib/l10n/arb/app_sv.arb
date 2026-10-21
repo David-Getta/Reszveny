@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Uppskattat utifrån datum och belopp för de utdelningar du registrerat; bolagen kan ändra eller slopa dem.",
   "portfolioDividendAround": "omkring {date}",
   "eventDividend": "Väntad utdelning",
-  "eventDividendEstimate": "Uppskattat utifrån de utdelningar du registrerat"
+  "eventDividendEstimate": "Uppskattat utifrån de utdelningar du registrerat",
+  "labelYieldOnCost": "Direktavkastning på inköpspris",
+  "glossYieldOnCost": "Utdelningar mottagna de senaste 12 månaderna delat med vad du betalade för de aktier du fortfarande äger. Till skillnad från direktavkastningen mäts den mot ditt eget inköpspris, inte dagens kurs."
 }

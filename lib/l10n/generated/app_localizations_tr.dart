@@ -288,6 +288,9 @@ class AppLocalizationsTr extends AppLocalizations {
   String get labelPayoutRatio => 'Temettü dağıtım oranı';
 
   @override
+  String get labelYieldOnCost => 'Maliyete göre temettü verimi';
+
+  @override
   String get labelConsensus => 'Konsensüs';
 
   @override
@@ -1984,6 +1987,10 @@ class AppLocalizationsTr extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Kârın temettü olarak dağıtılan payı. %100\'ün üzerinde şirket kazandığından fazlasını öder; bu nadiren uzun sürer.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Son 12 ayda alınan temettülerin, hâlâ elinizde tuttuğunuz hisseler için ödediğiniz tutara bölümü. Temettü veriminden farklı olarak bugünkü fiyata değil, kendi alış fiyatınıza göre ölçülür.';
 
   @override
   String get glossTitle => 'Ne anlama geliyor?';

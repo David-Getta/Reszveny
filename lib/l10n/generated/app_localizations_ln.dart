@@ -288,6 +288,9 @@ class AppLocalizationsLn extends AppLocalizations {
   String get labelPayoutRatio => 'Eteni ya litomba ekabolami';
 
   @override
+  String get labelYieldOnCost => 'Rendement na ntalo ya kosomba';
+
+  @override
   String get labelConsensus => 'Boyokani';
 
   @override
@@ -1993,6 +1996,10 @@ class AppLocalizationsLn extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Eteni ya litomba oyo bakabolaka lokola dividende. Koleka 100%, kompanyi efutaka koleka oyo ezwaka, mpe yango eumelaka mingi te.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Ba dividende oyo ozwaki na basanza 12 ya suka, ekabwani na mbɔngɔ oyo ofutaki mpo na ba action oyo ozali naino na yango. Ekeseni na rendement ya dividende: etalelamaka na ntalo oyo yo osombaki, kasi na ntalo ya lelo te.';
 
   @override
   String get glossTitle => 'Elakisi nini?';

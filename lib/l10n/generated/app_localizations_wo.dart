@@ -287,6 +287,9 @@ class AppLocalizationsWo extends AppLocalizations {
   String get labelPayoutRatio => 'Dayob benefis bu ñu séddale';
 
   @override
+  String get labelYieldOnCost => 'Njureef ci njëgu jënd';
+
+  @override
   String get labelConsensus => 'Déggoo';
 
   @override
@@ -1978,6 +1981,10 @@ class AppLocalizationsWo extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Wàllu benefis bi ñu séddale ni dividand. Lu ëpp 100%, sosiete bi dafay fey lu ëpp li mu gañe, te loolu yàggul.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Dividande yi nga jot ci 12 weer yi mujj, xaaj ko ci li nga fey ci aksiyoŋ yi nga am ba tey. Wuute ak njureefu dividand, dañu koy natt ci njëg bi nga jënde boppu, du njëgu tey.';
 
   @override
   String get glossTitle => 'Lan la tekki?';

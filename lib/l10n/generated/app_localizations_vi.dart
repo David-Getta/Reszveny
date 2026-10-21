@@ -287,6 +287,9 @@ class AppLocalizationsVi extends AppLocalizations {
   String get labelPayoutRatio => 'Tỷ lệ chi trả cổ tức';
 
   @override
+  String get labelYieldOnCost => 'Tỷ suất cổ tức trên giá vốn';
+
+  @override
   String get labelConsensus => 'Đồng thuận';
 
   @override
@@ -1979,6 +1982,10 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Phần lợi nhuận được chi trả dưới dạng cổ tức. Trên 100% thì công ty chi nhiều hơn số tiền kiếm được, điều hiếm khi kéo dài.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Cổ tức đã nhận trong 12 tháng gần nhất chia cho số tiền bạn đã bỏ ra để mua những cổ phiếu còn đang nắm giữ. Khác với tỷ suất cổ tức, chỉ số này được tính trên giá mua của chính bạn, không phải giá hôm nay.';
 
   @override
   String get glossTitle => 'Nghĩa là gì?';

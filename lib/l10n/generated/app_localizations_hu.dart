@@ -289,6 +289,9 @@ class AppLocalizationsHu extends AppLocalizations {
   String get labelPayoutRatio => 'Kifizetési arány';
 
   @override
+  String get labelYieldOnCost => 'Bekerülési osztalékhozam';
+
+  @override
   String get labelConsensus => 'Konszenzus';
 
   @override
@@ -1988,6 +1991,10 @@ class AppLocalizationsHu extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'A nyereség mekkora részét fizeti ki osztalékként. 100% fölött többet fizet, mint amennyit keres, ami ritkán tartható.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Az elmúlt 12 hónapban kapott osztalék osztva azzal, amennyit a még birtokolt részvényekért fizettél. Az osztalékhozammal ellentétben a saját vételi áradhoz méri, nem a mai árhoz.';
 
   @override
   String get glossTitle => 'Mit jelent?';

@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Estimation d’après les dates et montants des versements que vous avez enregistrés ; les sociétés peuvent les modifier ou les supprimer.",
   "portfolioDividendAround": "vers le {date}",
   "eventDividend": "Dividende attendu",
-  "eventDividendEstimate": "Estimation d’après vos versements enregistrés"
+  "eventDividendEstimate": "Estimation d’après vos versements enregistrés",
+  "labelYieldOnCost": "Rendement sur PRU",
+  "glossYieldOnCost": "Les dividendes reçus au cours des 12 derniers mois divisés par ce que vous avez payé pour les actions que vous détenez encore. Contrairement au rendement du dividende, il se mesure par rapport à votre propre prix d’achat, pas au cours actuel."
 }

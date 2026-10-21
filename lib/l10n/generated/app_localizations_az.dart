@@ -288,6 +288,9 @@ class AppLocalizationsAz extends AppLocalizations {
   String get labelPayoutRatio => 'Dividend ödəmə əmsalı';
 
   @override
+  String get labelYieldOnCost => 'Alış qiymətinə görə gəlirlilik';
+
+  @override
   String get labelConsensus => 'Konsensus';
 
   @override
@@ -1985,6 +1988,10 @@ class AppLocalizationsAz extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Mənfəətin dividend kimi ödənilən payı. 100%-dən yuxarı şirkət qazandığından çox ödəyir və bu nadir hallarda davam edir.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Son 12 ayda alınan dividendlərin hələ saxladığınız səhmlər üçün ödədiyiniz məbləğə bölünməsi. Dividend gəlirliliyindən fərqli olaraq, bugünkü qiymətə yox, öz alış qiymətinizə görə ölçülür.';
 
   @override
   String get glossTitle => 'Bu nə deməkdir?';

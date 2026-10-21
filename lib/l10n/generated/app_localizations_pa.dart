@@ -288,6 +288,9 @@ class AppLocalizationsPa extends AppLocalizations {
   String get labelPayoutRatio => 'ਪੇਆਊਟ ਅਨੁਪਾਤ';
 
   @override
+  String get labelYieldOnCost => 'ਖਰੀਦ ਕੀਮਤ ’ਤੇ ਯੀਲਡ';
+
+  @override
   String get labelConsensus => 'ਸਹਿਮਤੀ';
 
   @override
@@ -1980,6 +1983,10 @@ class AppLocalizationsPa extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'ਮੁਨਾਫ਼ੇ ਦਾ ਕਿੰਨਾ ਹਿੱਸਾ ਲਾਭਅੰਸ਼ ਵਜੋਂ ਵੰਡਿਆ ਜਾਂਦਾ ਹੈ। 100% ਤੋਂ ਉੱਪਰ ਕੰਪਨੀ ਜਿੰਨਾ ਕਮਾਉਂਦੀ ਹੈ ਉਸ ਤੋਂ ਵੱਧ ਦਿੰਦੀ ਹੈ, ਜੋ ਘੱਟ ਹੀ ਟਿਕਦਾ ਹੈ।';
+
+  @override
+  String get glossYieldOnCost =>
+      'ਪਿਛਲੇ 12 ਮਹੀਨਿਆਂ ਵਿੱਚ ਪ੍ਰਾਪਤ ਡਿਵੀਡੈਂਡ ਨੂੰ ਉਸ ਰਕਮ ਨਾਲ ਵੰਡਿਆ ਜੋ ਤੁਸੀਂ ਅਜੇ ਵੀ ਰੱਖੇ ਸ਼ੇਅਰਾਂ ਲਈ ਦਿੱਤੀ ਸੀ। ਲਾਭਅੰਸ਼ ਯੀਲਡ ਤੋਂ ਵੱਖ, ਇਹ ਅੱਜ ਦੇ ਭਾਅ ’ਤੇ ਨਹੀਂ, ਤੁਹਾਡੀ ਆਪਣੀ ਖਰੀਦ ਕੀਮਤ ’ਤੇ ਮਾਪੀ ਜਾਂਦੀ ਹੈ।';
 
   @override
   String get glossTitle => 'ਇਸਦਾ ਕੀ ਮਤਲਬ ਹੈ?';

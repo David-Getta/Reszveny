@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Estime dapre dat ak montan peman ou te anrejistre yo; konpayi yo ka chanje yo oswa sote yo.",
   "portfolioDividendAround": "anviwon {date}",
   "eventDividend": "Dividann yo atann",
-  "eventDividendEstimate": "Estime dapre peman ou te anrejistre yo"
+  "eventDividendEstimate": "Estime dapre peman ou te anrejistre yo",
+  "labelYieldOnCost": "Rannman sou pri acha",
+  "glossYieldOnCost": "Dividann ou resevwa nan 12 dènye mwa yo divize pa sa ou te peye pou aksyon ou toujou genyen yo. Kontrèman ak rannman dividann, yo mezire l sou pwòp pri acha ou, pa sou pri jodi a."
 }

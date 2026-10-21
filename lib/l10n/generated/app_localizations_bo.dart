@@ -288,6 +288,9 @@ class AppLocalizationsBo extends AppLocalizations {
   String get labelPayoutRatio => 'ཁེ་བགོའི་བསྡུར་ཚད';
 
   @override
+  String get labelYieldOnCost => 'མ་གནས་ཐོག་ཁེ་འབབ་ཚད';
+
+  @override
   String get labelConsensus => 'མཐུན་མོང་བསམ་འཆར';
 
   @override
@@ -1975,6 +1978,10 @@ class AppLocalizationsBo extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'ཁེ་སྤོགས་ལས་ཁེ་བགོར་སྤྲད་པའི་ཆ་ཚད། 100% ལས་བརྒལ་ན་ཚོང་ཁང་གིས་ཐོབ་པ་ལས་མང་བ་སྤྲོད་ཀྱི་ཡོད་པས་ཡུན་རིང་མི་ཐུབ།';
+
+  @override
+  String get glossYieldOnCost =>
+      'ཟླ་བ་༡༢ འདས་མའི་ནང་ཐོབ་པའི་ཁེ་བགོ་དེ་ཁྱེད་ཀྱིས་ད་དུང་འཆང་བཞིན་པའི་ཧུར་ཁག་ལ་སྤྲད་པའི་རིན་གོང་གིས་བགོས་པ། ཁེ་བགོའི་ཁེ་འབབ་ཚད་དང་མི་འདྲ་བར་འདི་དེ་རིང་གི་རིན་གོང་མིན་པར་ཁྱེད་རང་གི་ཉོ་རིན་ལ་གཞིགས་ནས་ཚད་ལེན་གྱི་ཡོད།';
 
   @override
   String get glossTitle => 'འདིའི་དོན་ག་རེ་རེད།';

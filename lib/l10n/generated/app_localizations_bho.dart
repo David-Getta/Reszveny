@@ -288,6 +288,9 @@ class AppLocalizationsBho extends AppLocalizations {
   String get labelPayoutRatio => 'पेआउट अनुपात';
 
   @override
+  String get labelYieldOnCost => 'लागत पर यील्ड';
+
+  @override
   String get labelConsensus => 'आम राय';
 
   @override
@@ -1979,6 +1982,10 @@ class AppLocalizationsBho extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'मुनाफा के ऊ हिस्सा जवन लाभांश के रूप में बाँटल जाला। 100% से ऊपर कंपनी कमाई से ज्यादा बाँटत बिया, जवन कमे टिकेला।';
+
+  @override
+  String get glossYieldOnCost =>
+      'पिछला 12 महीना में मिलल लाभांश के ओह रकम से बाँटल जाला जवन रउआ अबहियों रखले शेयर खातिर दिहले रहीं। लाभांश यील्ड से अलग, ई आज के भाव पर ना, रउआ अपना खरीद भाव पर नापल जाला।';
 
   @override
   String get glossTitle => 'एकर मतलब का बा?';

@@ -287,6 +287,9 @@ class AppLocalizationsTh extends AppLocalizations {
   String get labelPayoutRatio => 'อัตราการจ่ายเงินปันผล';
 
   @override
+  String get labelYieldOnCost => 'ผลตอบแทนต่อต้นทุน';
+
+  @override
   String get labelConsensus => 'มุมมองโดยรวม';
 
   @override
@@ -1957,6 +1960,10 @@ class AppLocalizationsTh extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'สัดส่วนของกำไรที่จ่ายเป็นเงินปันผล ถ้าเกิน 100% บริษัทจ่ายมากกว่าที่หาได้ ซึ่งมักอยู่ได้ไม่นาน';
+
+  @override
+  String get glossYieldOnCost =>
+      'เงินปันผลที่ได้รับใน 12 เดือนล่าสุด หารด้วยเงินที่คุณจ่ายซื้อหุ้นที่ยังถืออยู่ ต่างจากอัตราผลตอบแทนเงินปันผล ค่านี้วัดจากราคาที่คุณซื้อเอง ไม่ใช่ราคาวันนี้';
 
   @override
   String get glossTitle => 'หมายความว่าอะไร';

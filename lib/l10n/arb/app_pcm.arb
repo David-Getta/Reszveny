@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "We guess am from di dates and amounts of di payments you record; companies fit change am or skip am.",
   "portfolioDividendAround": "around {date}",
   "eventDividend": "Dividend wey we expect",
-  "eventDividendEstimate": "We guess am from di payments you record"
+  "eventDividendEstimate": "We guess am from di payments you record",
+  "labelYieldOnCost": "Yield on cost",
+  "glossYieldOnCost": "Di dividend wey you collect for di last 12 months divided by wetin you pay for di shares wey you still hold. E no be like dividend yield: dem measure am against di price wey you buy am, no be today price."
 }

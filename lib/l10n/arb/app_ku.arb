@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Li gorî dîrok û mîqdarên dayînên ku te tomar kirine hatiye texmînkirin; şirket dikarin wan biguherînin an jî nedin.",
   "portfolioDividendAround": "li dora {date}",
   "eventDividend": "Dividend tê hêvîkirin",
-  "eventDividendEstimate": "Ji dayînên te tomarkirî hatiye texmînkirin"
+  "eventDividendEstimate": "Ji dayînên te tomarkirî hatiye texmînkirin",
+  "labelYieldOnCost": "Rêje li gorî bihayê kirînê",
+  "glossYieldOnCost": "Dividendên ku di 12 mehên dawî de hatine wergirtin, dabeşî ya ku te ji bo pişkên hîn li destê te ne daye. Ne wek rêjeya dîvîdendê, ew li gorî bihayê kirîna te tê pîvandin, ne li gorî bihayê îro."
 }

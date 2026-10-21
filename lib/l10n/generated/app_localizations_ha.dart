@@ -288,6 +288,9 @@ class AppLocalizationsHa extends AppLocalizations {
   String get labelPayoutRatio => 'Rabon biyan riba';
 
   @override
+  String get labelYieldOnCost => 'Yawan rabon riba kan farashin saye';
+
+  @override
   String get labelConsensus => 'Matsayar manazarta';
 
   @override
@@ -1988,6 +1991,10 @@ class AppLocalizationsHa extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Kason ribar da ake biya a matsayin rabon riba. Sama da 100% kamfanin yana biyan fiye da abin da yake samu, wanda ba kasafai yake ɗorewa ba.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Rabon riba da aka karɓa a cikin watanni 12 na baya, an raba shi da abin da ka biya kan hannayen jari da kake riƙe har yanzu. Ba kamar yawan rabon riba ba, ana auna shi da farashin sayenka, ba farashin yau ba.';
 
   @override
   String get glossTitle => 'Me yake nufi?';

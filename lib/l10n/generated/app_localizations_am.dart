@@ -287,6 +287,9 @@ class AppLocalizationsAm extends AppLocalizations {
   String get labelPayoutRatio => 'የትርፍ ክፍፍል ጥምርታ';
 
   @override
+  String get labelYieldOnCost => 'የትርፍ ድርሻ ተመን በወጪ';
+
+  @override
   String get labelConsensus => 'አጠቃላይ ስምምነት';
 
   @override
@@ -1954,6 +1957,10 @@ class AppLocalizationsAm extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'እንደ የትርፍ ድርሻ የሚከፈለው የትርፍ ክፍል። ከ100% በላይ ከሆነ ኩባንያው ከሚያገኘው በላይ ይከፍላል፤ ይህ እምብዛም አይዘልቅም።';
+
+  @override
+  String get glossYieldOnCost =>
+      'ባለፉት 12 ወራት የተቀበሉት የትርፍ ድርሻዎች፣ አሁንም ለያዟቸው አክሲዮኖች በከፈሉት ገንዘብ ተካፍሎ። ከትርፍ ድርሻ ተመን በተለየ፣ ይህ በዛሬው ዋጋ ሳይሆን በእርስዎ የግዢ ዋጋ ይለካል።';
 
   @override
   String get glossTitle => 'ምን ማለት ነው?';

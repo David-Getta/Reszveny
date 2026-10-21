@@ -287,6 +287,9 @@ class AppLocalizationsDa extends AppLocalizations {
   String get labelPayoutRatio => 'Udbytteandel';
 
   @override
+  String get labelYieldOnCost => 'Afkast på købskurs';
+
+  @override
   String get labelConsensus => 'Konsensus';
 
   @override
@@ -1982,6 +1985,10 @@ class AppLocalizationsDa extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Den del af overskuddet, der udbetales som udbytte. Over 100% udbetaler selskabet mere, end det tjener, hvilket sjældent holder.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Udbytte modtaget de seneste 12 måneder divideret med det, du betalte for de aktier, du stadig ejer. I modsætning til udbytteafkastet måles det mod din egen købskurs, ikke dagens kurs.';
 
   @override
   String get glossTitle => 'Hvad betyder det?';

@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Anslått ut fra datoene og beløpene på utbyttene du har registrert; selskapene kan endre eller droppe dem.",
   "portfolioDividendAround": "rundt {date}",
   "eventDividend": "Forventet utbytte",
-  "eventDividendEstimate": "Anslått ut fra utbyttene du har registrert"
+  "eventDividendEstimate": "Anslått ut fra utbyttene du har registrert",
+  "labelYieldOnCost": "Direkteavkastning på kostpris",
+  "glossYieldOnCost": "Utbytte mottatt de siste 12 månedene delt på det du betalte for aksjene du fortsatt eier. I motsetning til direkteavkastningen måles den mot din egen kjøpskurs, ikke dagens kurs."
 }

@@ -15,7 +15,7 @@ void main() {
     for (final lang in SupportedLocales.all) {
       final l10n = lookupAppLocalizations(lang.locale);
       final g = metricGlossary(l10n);
-      expect(g.length, 28, reason: '${lang.locale}: labels must be distinct');
+      expect(g.length, 29, reason: '${lang.locale}: labels must be distinct');
       expect(g.values.every((v) => v.trim().isNotEmpty), isTrue, reason: '${lang.locale}');
     }
   });

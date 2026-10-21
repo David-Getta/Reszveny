@@ -287,6 +287,9 @@ class AppLocalizationsKm extends AppLocalizations {
   String get labelPayoutRatio => 'អនុបាតបែងចែកភាគលាភ';
 
   @override
+  String get labelYieldOnCost => 'ទិន្នផលលើថ្លៃដើម';
+
+  @override
   String get labelConsensus => 'មតិរួម';
 
   @override
@@ -1966,6 +1969,10 @@ class AppLocalizationsKm extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'ចំណែកនៃប្រាក់ចំណេញដែលបានបង់ជាភាគលាភ។ លើសពី 100% ក្រុមហ៊ុនបង់ច្រើនជាងអ្វីដែលវារកបាន ដែលកម្រនឹងស្ថិតស្ថេរយូរ។';
+
+  @override
+  String get glossYieldOnCost =>
+      'ភាគលាភដែលបានទទួលក្នុងរយៈពេល ១២ ខែចុងក្រោយ ចែកនឹងទឹកប្រាក់ដែលអ្នកបានចំណាយសម្រាប់ភាគហ៊ុនដែលអ្នកនៅកាន់កាប់។ ខុសពីទិន្នផលភាគលាភ វាត្រូវបានវាស់ធៀបនឹងថ្លៃទិញរបស់អ្នកផ្ទាល់ មិនមែនថ្លៃថ្ងៃនេះទេ។';
 
   @override
   String get glossTitle => 'តើវាមានន័យដូចម្តេច?';

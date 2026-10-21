@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Kaydettiğiniz ödemelerin tarih ve tutarlarından tahmin edilmiştir; şirketler bunları değiştirebilir veya ödemeyebilir.",
   "portfolioDividendAround": "{date} civarı",
   "eventDividend": "Temettü bekleniyor",
-  "eventDividendEstimate": "Kaydettiğiniz ödemelerden tahmin edilmiştir"
+  "eventDividendEstimate": "Kaydettiğiniz ödemelerden tahmin edilmiştir",
+  "labelYieldOnCost": "Maliyete göre temettü verimi",
+  "glossYieldOnCost": "Son 12 ayda alınan temettülerin, hâlâ elinizde tuttuğunuz hisseler için ödediğiniz tutara bölümü. Temettü veriminden farklı olarak bugünkü fiyata değil, kendi alış fiyatınıza göre ölçülür."
 }

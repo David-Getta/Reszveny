@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Nakarkulado manipud kadagiti petsa ken gatad dagiti bayad nga inrekordmo; mabalin a baliwan wenno laktawan dagitoy dagiti kompania.",
   "portfolioDividendAround": "agarup {date}",
   "eventDividend": "Manamnama a dibidendo",
-  "eventDividendEstimate": "Nakarkulo manipud kadagiti nairekord a bayadmo"
+  "eventDividendEstimate": "Nakarkulo manipud kadagiti nairekord a bayadmo",
+  "labelYieldOnCost": "Yield iti gastos",
+  "glossYieldOnCost": "Ti dibidendo a naawat iti napalabas a 12 a bulan a nabingay iti binayadam para kadagiti share a salsalimetmetam pay. Saan a kas iti dividend yield, marukod daytoy iti bukodmo a presio ti panaggatang, saan nga iti presio ita."
 }

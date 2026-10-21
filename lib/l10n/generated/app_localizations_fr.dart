@@ -289,6 +289,9 @@ class AppLocalizationsFr extends AppLocalizations {
   String get labelPayoutRatio => 'Taux de distribution';
 
   @override
+  String get labelYieldOnCost => 'Rendement sur PRU';
+
+  @override
   String get labelConsensus => 'Consensus';
 
   @override
@@ -1994,6 +1997,10 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'La part du bénéfice versée en dividendes. Au-delà de 100 %, l\'entreprise verse plus qu\'elle ne gagne, ce qui dure rarement.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Les dividendes reçus au cours des 12 derniers mois divisés par ce que vous avez payé pour les actions que vous détenez encore. Contrairement au rendement du dividende, il se mesure par rapport à votre propre prix d’achat, pas au cours actuel.';
 
   @override
   String get glossTitle => 'Qu\'est-ce que cela signifie ?';

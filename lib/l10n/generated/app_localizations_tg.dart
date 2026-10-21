@@ -288,6 +288,9 @@ class AppLocalizationsTg extends AppLocalizations {
   String get labelPayoutRatio => 'Коэффитсиенти пардохт';
 
   @override
+  String get labelYieldOnCost => 'Даромаднокӣ аз нархи харид';
+
+  @override
   String get labelConsensus => 'Консенсус';
 
   @override
@@ -1986,6 +1989,10 @@ class AppLocalizationsTg extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Ҳиссаи фоида, ки ҳамчун дивиденд пардохт мешавад. Болотар аз 100% ширкат аз он чи ба даст меорад, бештар пардохт мекунад, ки ин кам давом мекунад.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Дивидендҳои дар 12 моҳи охир гирифташуда, тақсим бар он чи шумо барои саҳмияҳои то ҳол доштаатон пардохт кардаед. Ба фарқ аз даромаднокии дивидендӣ, он нисбат ба нархи хариди худи шумо, на нархи имрӯза, чен карда мешавад.';
 
   @override
   String get glossTitle => 'Ин чӣ маъно дорад?';

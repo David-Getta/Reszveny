@@ -287,6 +287,9 @@ class AppLocalizationsSd extends AppLocalizations {
   String get labelPayoutRatio => 'پي آئوٽ ريشو';
 
   @override
+  String get labelYieldOnCost => 'خريد قيمت تي ييلڊ';
+
+  @override
   String get labelConsensus => 'گڏيل راءِ';
 
   @override
@@ -1975,6 +1978,10 @@ class AppLocalizationsSd extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'منافعي جو ڪيترو حصو ڊيويڊنڊ طور ورهايو وڃي ٿو. 100% کان مٿي ڪمپني ڪمائي کان وڌيڪ ڏئي ٿي، جيڪو گهٽ ئي هلي ٿو.';
+
+  @override
+  String get glossYieldOnCost =>
+      'گذريل 12 مهينن ۾ وصول ٿيل ڊيويڊنڊ، ورهايل ان رقم سان جيڪا توهان انهن شيئرن لاءِ ادا ڪئي جيڪي اڃا توهان وٽ آهن. ڊيويڊنڊ ييلڊ جي ابتڙ، اهو اڄ جي قيمت تي نه، پر توهان جي پنهنجي خريد قيمت تي ماپيو ويندو آهي.';
 
   @override
   String get glossTitle => 'ان جو مطلب ڇا آهي؟';

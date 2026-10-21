@@ -865,6 +865,12 @@ abstract class AppLocalizations {
   /// **'Payout ratio'**
   String get labelPayoutRatio;
 
+  /// No description provided for @labelYieldOnCost.
+  ///
+  /// In en, this message translates to:
+  /// **'Yield on cost'**
+  String get labelYieldOnCost;
+
   /// No description provided for @labelConsensus.
   ///
   /// In en, this message translates to:
@@ -3558,6 +3564,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'The share of profit paid out as dividends. Above 100% the company pays more than it earns, which rarely lasts.'**
   String get glossPayoutRatio;
+
+  /// No description provided for @glossYieldOnCost.
+  ///
+  /// In en, this message translates to:
+  /// **'Dividends received in the last 12 months divided by what you paid for the shares you still hold. Unlike the dividend yield, it is measured against your own purchase price, not today\'s price.'**
+  String get glossYieldOnCost;
 
   /// Dialog title of a metric explanation.
   ///

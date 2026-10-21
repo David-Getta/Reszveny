@@ -289,6 +289,9 @@ class AppLocalizationsMg extends AppLocalizations {
   String get labelPayoutRatio => 'Tahan\'ny fizarana tombony';
 
   @override
+  String get labelYieldOnCost => 'Tahan\'ny dividenda amin\'ny vidiny naloa';
+
+  @override
   String get labelConsensus => 'Hevitra iraisana';
 
   @override
@@ -1997,6 +2000,10 @@ class AppLocalizationsMg extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Ny ampahany amin\'ny tombony zaraina ho dividenda. Mihoatra ny 100% dia mandoa mihoatra noho izay azony ny orinasa, ary tsy maharitra matetika izany.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Ny dividenda voaray tao anatin\'ny 12 volana farany zaraina amin\'izay naloanao tamin\'ny aksiona mbola tananao. Tsy toy ny tahan\'ny dividenda, izy io dia refesina amin\'ny vidiny nividiananao, fa tsy amin\'ny vidiny ankehitriny.';
 
   @override
   String get glossTitle => 'Inona no dikany?';

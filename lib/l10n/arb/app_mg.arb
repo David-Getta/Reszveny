@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Tombanana avy amin'ny daty sy ny vola tamin'ny fandoavana noraketinao; mety hanova na handingana azy ireo ny orinasa.",
   "portfolioDividendAround": "manodidina ny {date}",
   "eventDividend": "Dividandy andrasana",
-  "eventDividendEstimate": "Tombanana avy amin'ny fandoavana noraketinao"
+  "eventDividendEstimate": "Tombanana avy amin'ny fandoavana noraketinao",
+  "labelYieldOnCost": "Tahan'ny dividenda amin'ny vidiny naloa",
+  "glossYieldOnCost": "Ny dividenda voaray tao anatin'ny 12 volana farany zaraina amin'izay naloanao tamin'ny aksiona mbola tananao. Tsy toy ny tahan'ny dividenda, izy io dia refesina amin'ny vidiny nividiananao, fa tsy amin'ny vidiny ankehitriny."
 }

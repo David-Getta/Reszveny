@@ -287,6 +287,9 @@ class AppLocalizationsGu extends AppLocalizations {
   String get labelPayoutRatio => 'પેઆઉટ રેશિયો';
 
   @override
+  String get labelYieldOnCost => 'ખર્ચ પર યીલ્ડ';
+
+  @override
   String get labelConsensus => 'સર્વસંમતિ';
 
   @override
@@ -1979,6 +1982,10 @@ class AppLocalizationsGu extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'નફાનો કેટલો હિસ્સો ડિવિડન્ડ તરીકે ચૂકવાય છે. 100% થી વધુ હોય તો કંપની કમાણી કરતાં વધુ ચૂકવે છે, જે ભાગ્યે જ ટકે છે.';
+
+  @override
+  String get glossYieldOnCost =>
+      'છેલ્લા 12 મહિનામાં મળેલ ડિવિડન્ડને તમે હજુ રાખેલા શેર માટે ચૂકવેલી રકમથી ભાગતાં મળે છે. ડિવિડન્ડ યીલ્ડથી અલગ, આ આજના ભાવ પર નહીં પણ તમારા પોતાના ખરીદ ભાવ પર મપાય છે.';
 
   @override
   String get glossTitle => 'આનો અર્થ શું છે?';

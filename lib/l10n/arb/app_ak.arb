@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Wobu ho akontaa fi nna ne sika dodow a wokyerɛw faa ntuaa no ho mu; nnwumakuw betumi asesa anaa wɔagyae.",
   "portfolioDividendAround": "bɛyɛ {date}",
   "eventDividend": "Dividend a wɔhwɛ kwan",
-  "eventDividendEstimate": "Wɔabu akontaa afi ntua a wokyerɛw too hɔ mu"
+  "eventDividendEstimate": "Wɔabu akontaa afi ntua a wokyerɛw too hɔ mu",
+  "labelYieldOnCost": "Mfaso kyɛ wɔ tɔ bo so",
+  "glossYieldOnCost": "Dividend a woanya wɔ abosome 12 a atwam no mu, a wɔde akyekyɛ sika a wotuaa maa kyɛfa a wowɔ no da so. Ɛnte sɛ mfaso kyɛ wɔ bo so: wɔde wo ankasa tɔ bo na ɛsusuw, ɛnyɛ nnɛ bo."
 }

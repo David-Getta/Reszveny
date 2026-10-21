@@ -288,6 +288,9 @@ class AppLocalizationsXh extends AppLocalizations {
   String get labelPayoutRatio => 'Umlinganiselo wentlawulo';
 
   @override
+  String get labelYieldOnCost => 'Isivuno kwixabiso lokuthenga';
+
+  @override
   String get labelConsensus => 'Imvumelwano';
 
   @override
@@ -1991,6 +1994,10 @@ class AppLocalizationsXh extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Inxalenye yenzuzo ehlawulwa njenge-dividend. Ngaphezu kwe-100% inkampani ihlawula ngaphezu koko ikufumanayo, nto leyo engafane ihlale ixesha elide.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Ii-dividend ezifunyenwe kwiinyanga ezili-12 ezidlulileyo zahlulwe ngoko ukuhlawuleleyo izabelo osenazo. Ngokwahlukileyo kwisivuno se-dividend, silinganiswa ngexabiso owathenga ngalo wena, hayi ixabiso lanamhlanje.';
 
   @override
   String get glossTitle => 'Kuthetha ntoni?';

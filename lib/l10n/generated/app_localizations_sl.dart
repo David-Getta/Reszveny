@@ -288,6 +288,9 @@ class AppLocalizationsSl extends AppLocalizations {
   String get labelPayoutRatio => 'Izplačilno razmerje';
 
   @override
+  String get labelYieldOnCost => 'Donosnost na nakupno ceno';
+
+  @override
   String get labelConsensus => 'Konsenz';
 
   @override
@@ -2041,6 +2044,10 @@ class AppLocalizationsSl extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Delež dobička, izplačan kot dividende. Nad 100 % podjetje izplača več, kot zasluži, kar redko traja dolgo.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Dividende, prejete v zadnjih 12 mesecih, deljene s tem, kar ste plačali za delnice, ki jih še imate. Drugače kot dividendna donosnost se meri glede na vašo nakupno ceno, ne na današnjo.';
 
   @override
   String get glossTitle => 'Kaj to pomeni?';

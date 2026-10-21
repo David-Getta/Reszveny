@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Ocenjeno iz datumov in zneskov izplačil, ki ste jih zabeležili; podjetja jih lahko spremenijo ali izpustijo.",
   "portfolioDividendAround": "okoli {date}",
   "eventDividend": "Pričakovana dividenda",
-  "eventDividendEstimate": "Ocenjeno iz izplačil, ki ste jih zabeležili"
+  "eventDividendEstimate": "Ocenjeno iz izplačil, ki ste jih zabeležili",
+  "labelYieldOnCost": "Donosnost na nakupno ceno",
+  "glossYieldOnCost": "Dividende, prejete v zadnjih 12 mesecih, deljene s tem, kar ste plačali za delnice, ki jih še imate. Drugače kot dividendna donosnost se meri glede na vašo nakupno ceno, ne na današnjo."
 }

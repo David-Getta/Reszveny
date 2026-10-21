@@ -288,6 +288,9 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get labelPayoutRatio => 'Payout ratio';
 
   @override
+  String get labelYieldOnCost => 'Yield on cost';
+
+  @override
   String get labelConsensus => 'Wetin most of dem tok';
 
   @override
@@ -1983,6 +1986,10 @@ class AppLocalizationsPcm extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Di part of profit wey dem share as dividend. Above 100%, di company dey pay pass wetin e dey make, and dat one no dey last.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Di dividend wey you collect for di last 12 months divided by wetin you pay for di shares wey you still hold. E no be like dividend yield: dem measure am against di price wey you buy am, no be today price.';
 
   @override
   String get glossTitle => 'Wetin e mean?';

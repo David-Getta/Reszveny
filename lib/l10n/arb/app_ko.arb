@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "기록한 배당금의 지급일과 금액으로 추정한 값입니다. 기업이 변경하거나 지급하지 않을 수 있습니다.",
   "portfolioDividendAround": "{date} 무렵",
   "eventDividend": "배당금 예상",
-  "eventDividendEstimate": "기록한 배당 내역으로 추정"
+  "eventDividendEstimate": "기록한 배당 내역으로 추정",
+  "labelYieldOnCost": "매입가 대비 배당수익률",
+  "glossYieldOnCost": "최근 12개월 동안 수령한 배당금을 지금도 보유 중인 주식의 매입 금액으로 나눈 값입니다. 배당수익률과 달리 오늘의 주가가 아닌 본인의 매입가를 기준으로 계산합니다."
 }

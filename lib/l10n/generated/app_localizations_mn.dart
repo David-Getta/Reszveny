@@ -288,6 +288,9 @@ class AppLocalizationsMn extends AppLocalizations {
   String get labelPayoutRatio => 'Ногдол ашиг хуваарилалтын харьцаа';
 
   @override
+  String get labelYieldOnCost => 'Өртөг дээрх өгөөж';
+
+  @override
   String get labelConsensus => 'Консенсус';
 
   @override
@@ -1984,6 +1987,10 @@ class AppLocalizationsMn extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Ашгийн хэдэн хувийг ногдол ашиг болгон хуваарилдаг вэ. 100%-иас дээш бол компани олсноосоо их төлж байгаа бөгөөд энэ нь ховорхон удаан үргэлжилдэг.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Сүүлийн 12 сард хүлээн авсан ногдол ашгийг та одоо эзэмшиж байгаа хувьцаанд төлсөн мөнгөнд хуваасан дүн. Ногдол ашгийн өгөөжөөс ялгаатай нь өнөөдрийн үнээр бус, таны өөрийн худалдан авсан үнээр хэмжигддэг.';
 
   @override
   String get glossTitle => 'Энэ юу гэсэн үг вэ?';

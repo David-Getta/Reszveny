@@ -288,6 +288,9 @@ class AppLocalizationsMr extends AppLocalizations {
   String get labelPayoutRatio => 'पेआउट प्रमाण';
 
   @override
+  String get labelYieldOnCost => 'खरेदी किंमतीवरील उत्पन्न';
+
+  @override
   String get labelConsensus => 'एकमत';
 
   @override
@@ -1983,6 +1986,10 @@ class AppLocalizationsMr extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'नफ्याचा किती भाग लाभांश म्हणून दिला जातो. 100% पेक्षा जास्त असल्यास कंपनी कमावते त्यापेक्षा जास्त देते, जे क्वचितच टिकते.';
+
+  @override
+  String get glossYieldOnCost =>
+      'गेल्या १२ महिन्यांत मिळालेला लाभांश भागिले तुमच्याकडे अजून असलेल्या शेअर्ससाठी तुम्ही भरलेली रक्कम. लाभांश उत्पन्नाच्या उलट, हे आजच्या भावावर नव्हे, तर तुमच्या स्वतःच्या खरेदी किंमतीवर मोजले जाते.';
 
   @override
   String get glossTitle => 'याचा अर्थ काय?';

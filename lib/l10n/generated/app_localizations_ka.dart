@@ -288,6 +288,9 @@ class AppLocalizationsKa extends AppLocalizations {
   String get labelPayoutRatio => 'დივიდენდის გაცემის კოეფიციენტი';
 
   @override
+  String get labelYieldOnCost => 'შემოსავლიანობა შესყიდვის ფასზე';
+
+  @override
   String get labelConsensus => 'კონსენსუსი';
 
   @override
@@ -1986,6 +1989,10 @@ class AppLocalizationsKa extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'მოგების წილი, რომელიც დივიდენდად გაიცემა. 100%-ზე მეტისას კომპანია იმაზე მეტს იხდის, ვიდრე გამოიმუშავებს, რაც იშვიათად გრძელდება.';
+
+  @override
+  String get glossYieldOnCost =>
+      'ბოლო 12 თვეში მიღებული დივიდენდები გაყოფილი იმაზე, რაც გადაიხადეთ ჯერ კიდევ თქვენს ხელთ არსებულ აქციებში. დივიდენდური შემოსავლიანობისგან განსხვავებით, ის თქვენი შესყიდვის ფასით იზომება და არა დღევანდელი ფასით.';
 
   @override
   String get glossTitle => 'რას ნიშნავს?';

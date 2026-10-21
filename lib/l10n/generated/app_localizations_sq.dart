@@ -288,6 +288,9 @@ class AppLocalizationsSq extends AppLocalizations {
   String get labelPayoutRatio => 'Raporti i shpërndarjes';
 
   @override
+  String get labelYieldOnCost => 'Rendimenti mbi çmimin e blerjes';
+
+  @override
   String get labelConsensus => 'Konsensusi';
 
   @override
@@ -1990,6 +1993,10 @@ class AppLocalizationsSq extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Pjesa e fitimit që paguhet si dividend. Mbi 100% kompania paguan më shumë se sa fiton, gjë që rrallë zgjat.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Dividendët e marrë në 12 muajt e fundit pjesëtuar me atë që pagove për aksionet që ende mban. Ndryshe nga rendimenti i dividendit, matet ndaj çmimit tënd të blerjes, jo ndaj çmimit të sotëm.';
 
   @override
   String get glossTitle => 'Çfarë do të thotë?';

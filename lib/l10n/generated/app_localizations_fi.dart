@@ -287,6 +287,9 @@ class AppLocalizationsFi extends AppLocalizations {
   String get labelPayoutRatio => 'Osingonjakosuhde';
 
   @override
+  String get labelYieldOnCost => 'Tuotto hankintahinnalle';
+
+  @override
   String get labelConsensus => 'Konsensus';
 
   @override
@@ -1985,6 +1988,10 @@ class AppLocalizationsFi extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Osuus voitosta, joka maksetaan osinkoina. Jos se on yli 100 %, yhtiö maksaa enemmän kuin ansaitsee, mikä harvoin kestää pitkään.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Viimeisten 12 kuukauden aikana saadut osingot jaettuna sillä, mitä maksoit yhä omistamistasi osakkeista. Toisin kuin osinkotuotto, se lasketaan omaan ostohintaasi nähden, ei tämän päivän kurssiin.';
 
   @override
   String get glossTitle => 'Mitä se tarkoittaa?';

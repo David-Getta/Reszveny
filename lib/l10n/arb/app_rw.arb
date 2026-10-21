@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Bigereranyijwe hashingiwe ku matariki n'amafaranga y'ubwishyu wanditse; ibigo bishobora kubihindura cyangwa kubireka.",
   "portfolioDividendAround": "ahagana {date}",
   "eventDividend": "Idividende yitezwe",
-  "eventDividendEstimate": "Bigereranyijwe hashingiwe ku bwishyu wanditse"
+  "eventDividendEstimate": "Bigereranyijwe hashingiwe ku bwishyu wanditse",
+  "labelYieldOnCost": "Inyungu ku giciro waguze",
+  "glossYieldOnCost": "Amadividende yakiriwe mu mezi 12 ashize agabanyijwe n'ibyo wishyuye ku migabane ukigira. Bitandukanye n'igipimo cy'inyungu ku migabane, bipimwa ku giciro wowe ubwawe waguzeho, atari icy'uyu munsi."
 }

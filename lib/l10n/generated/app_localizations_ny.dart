@@ -287,6 +287,9 @@ class AppLocalizationsNy extends AppLocalizations {
   String get labelPayoutRatio => 'Chiyerekezo cha phindu logawidwa';
 
   @override
+  String get labelYieldOnCost => 'Phindu pa mtengo wogula';
+
+  @override
   String get labelConsensus => 'Maganizo a ambiri';
 
   @override
@@ -1990,6 +1993,10 @@ class AppLocalizationsNy extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Gawo la phindu lomwe limagawidwa kwa eni masheya. Kupitirira 100% kampani imapereka zambiri kuposa zomwe imapeza, zomwe sizikhalitsa kawirikawiri.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Madividendi olandiridwa m\'miyezi 12 yapitayi ogawidwa ndi zomwe munalipira pa masheya omwe mukadali nawo. Mosiyana ndi chiwerengero cha gawo la phindu, ichi chimayesedwa pa mtengo womwe inu munagula, osati mtengo wa lero.';
 
   @override
   String get glossTitle => 'Zikutanthauza chiyani?';

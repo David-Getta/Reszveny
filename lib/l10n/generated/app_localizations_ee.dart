@@ -287,6 +287,9 @@ class AppLocalizationsEe extends AppLocalizations {
   String get labelPayoutRatio => 'Viɖe si wona ƒe agbɔsɔsɔ';
 
   @override
+  String get labelYieldOnCost => 'Viɖemama ƒe agbɔsɔsɔ le ƒlexɔ ŋu';
+
+  @override
   String get labelConsensus => 'Susu si wolɔ̃ ɖe edzi';
 
   @override
@@ -1988,6 +1991,10 @@ class AppLocalizationsEe extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Viɖe ƒe akpa si wotsɔna maa abe viɖemama ene. Ne ede 100% dzi la, dɔwɔƒea xea fe wu nusi wòkpɔna, si meyia edzi didi o.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Viɖemama siwo nèxɔ le ɣleti 12 siwo va yi me, womã wo ɖe ga si nèxe ɖe akpa siwo gale asiwò ta dzi. Eto vovo na viɖemama ƒe agbɔsɔsɔ: wodzidzenɛ le wò ŋutɔ wò ƒlexɔ ŋu, ke menye egbe ƒe asixɔxɔ ŋu o.';
 
   @override
   String get glossTitle => 'Nukae wòfia?';

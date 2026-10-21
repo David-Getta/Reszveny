@@ -288,6 +288,9 @@ class AppLocalizationsTt extends AppLocalizations {
   String get labelPayoutRatio => 'Түләү коэффициенты';
 
   @override
+  String get labelYieldOnCost => 'Сатып алу бәясенә керемлелек';
+
+  @override
   String get labelConsensus => 'Консенсус';
 
   @override
@@ -1980,6 +1983,10 @@ class AppLocalizationsTt extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Табышның дивиденд итеп түләнгән өлеше. 100%-тан югары булса, компания эшләгәненнән күбрәк түли, һәм бу сирәк озакка бара.';
+
+  @override
+  String get glossYieldOnCost =>
+      'Соңгы 12 айда алынган дивидендлар, сездә әле дә булган акцияләр өчен түләгән суммага бүленгән. Дивиденд керемлелегеннән аермалы буларак, ул бүгенге бәягә түгел, ә сезнең үз сатып алу бәягезгә карата үлчәнә.';
 
   @override
   String get glossTitle => 'Бу нәрсә аңлата?';

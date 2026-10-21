@@ -740,5 +740,7 @@
   "portfolioDividendsExpectedNote": "Ước tính từ ngày và số tiền của các khoản chi trả bạn đã ghi lại; công ty có thể thay đổi hoặc bỏ qua.",
   "portfolioDividendAround": "khoảng {date}",
   "eventDividend": "Dự kiến có cổ tức",
-  "eventDividendEstimate": "Ước tính từ các khoản chi trả bạn đã ghi lại"
+  "eventDividendEstimate": "Ước tính từ các khoản chi trả bạn đã ghi lại",
+  "labelYieldOnCost": "Tỷ suất cổ tức trên giá vốn",
+  "glossYieldOnCost": "Cổ tức đã nhận trong 12 tháng gần nhất chia cho số tiền bạn đã bỏ ra để mua những cổ phiếu còn đang nắm giữ. Khác với tỷ suất cổ tức, chỉ số này được tính trên giá mua của chính bạn, không phải giá hôm nay."
 }
