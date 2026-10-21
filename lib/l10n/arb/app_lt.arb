@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Nustatyti grynųjų likutį",
   "portfolioDividendsExpected": "Kiti numatomi",
   "portfolioDividendsExpectedNote": "Įvertinta pagal jūsų įrašytų išmokų datas ir sumas; bendrovės gali jas pakeisti arba praleisti.",
-  "portfolioDividendAround": "apie {date}"
+  "portfolioDividendAround": "apie {date}",
+  "eventDividend": "Numatomas dividendas",
+  "eventDividendEstimate": "Įvertinta pagal jūsų įrašytas išmokas"
 }

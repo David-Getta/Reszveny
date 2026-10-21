@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Beakanya tekanyo ya tšhelete",
   "portfolioDividendsExpected": "Tše di latelago tše di letetšwego",
   "portfolioDividendsExpectedNote": "Di akanyeditšwe go tšwa go matšatšikgwedi le ditšhelete tša ditefelo tše o di rekotilego; dikhamphani di ka di fetola goba tša di tlola.",
-  "portfolioDividendAround": "mo e ka bago {date}"
+  "portfolioDividendAround": "mo e ka bago {date}",
+  "eventDividend": "Dividende e letetšwego",
+  "eventDividendEstimate": "E akanyeditšwe go tšwa go ditefelo tše o di rekotilego"
 }

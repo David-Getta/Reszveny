@@ -1631,6 +1631,12 @@ class AppLocalizationsTt extends AppLocalizations {
   String get eventFromAnalysis => 'Сезнең анализдан';
 
   @override
+  String get eventDividend => 'Көтелгән дивиденд';
+
+  @override
+  String get eventDividendEstimate => 'Сез язган түләүләр буенча исәпләнгән';
+
+  @override
   String get eventsHint =>
       'Сайланмалардагы һәм портфельдәге акцияләрнең киләсе 90 көндәге нәтиҗә көннәре, шулай ук анализларыгыз билгеләгән даталы вакыйгалар.';
 

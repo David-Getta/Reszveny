@@ -1635,6 +1635,13 @@ class AppLocalizationsAz extends AppLocalizations {
   String get eventFromAnalysis => 'Təhlilinizdən';
 
   @override
+  String get eventDividend => 'Dividend gözlənilir';
+
+  @override
+  String get eventDividendEstimate =>
+      'Qeyd etdiyiniz ödənişlərə əsasən təxmin edilib';
+
+  @override
   String get eventsHint =>
       'Seçilmişlərinizin və portfelinizdəki səhmlərin növbəti 90 gün üçün hesabat tarixləri və təhlillərinizin qeyd etdiyi tarixli hadisələr.';
 

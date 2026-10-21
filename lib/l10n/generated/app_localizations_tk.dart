@@ -1633,6 +1633,13 @@ class AppLocalizationsTk extends AppLocalizations {
   String get eventFromAnalysis => 'Seljermäňden';
 
   @override
+  String get eventDividend => 'Garaşylýan diwidend';
+
+  @override
+  String get eventDividendEstimate =>
+      'Siziň ýazan tölegleriňiz esasynda çaklanyldy';
+
+  @override
   String get eventsHint =>
       'Saýlanan we portfeldäki paýnamalaryňyň indiki 90 gündäki netije seneleri hem-de seljermeleriňiň belläp geçen seneli wakalary.';
 

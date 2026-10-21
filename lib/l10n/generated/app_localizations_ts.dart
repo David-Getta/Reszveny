@@ -1645,6 +1645,13 @@ class AppLocalizationsTs extends AppLocalizations {
   String get eventFromAnalysis => 'Ku suka eka nxopaxopo wa wena';
 
   @override
+  String get eventDividend => 'Dividende leyi languteriweke';
+
+  @override
+  String get eventDividendEstimate =>
+      'Yi ringanyetiwile ku suka eka tihakelo leti u ti tsaleke';
+
+  @override
   String get eventsHint =>
       'Masiku ya mbuyelo ya swiavelo leswi u swi rhandzaka ni swa phothifoliyo ya wena eka masiku ya 90 lama taka, ni swiendlakalo leswi nga ni masiku leswi minxopaxopo ya wena yi swi kombiseke.';
 

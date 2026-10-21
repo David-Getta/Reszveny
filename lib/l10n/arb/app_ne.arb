@@ -738,5 +738,7 @@
   "portfolioCashEdit": "नगद मौज्दात सेट गर्नुहोस्",
   "portfolioDividendsExpected": "अर्को अपेक्षित",
   "portfolioDividendsExpectedNote": "तपाईंले रेकर्ड गरेका भुक्तानीका मिति र रकमका आधारमा अनुमानित; कम्पनीहरूले तिनलाई परिवर्तन गर्न वा छोड्न सक्छन्।",
-  "portfolioDividendAround": "{date} तिर"
+  "portfolioDividendAround": "{date} तिर",
+  "eventDividend": "लाभांश अपेक्षित",
+  "eventDividendEstimate": "तपाईंले रेकर्ड गरेका भुक्तानीका आधारमा अनुमानित"
 }

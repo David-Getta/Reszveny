@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Weka salio la pesa taslimu",
   "portfolioDividendsExpected": "Yanayotarajiwa yajayo",
   "portfolioDividendsExpectedNote": "Imekadiriwa kutoka tarehe na kiasi cha malipo uliyorekodi; kampuni zinaweza kuyabadilisha au kuyaruka.",
-  "portfolioDividendAround": "karibu {date}"
+  "portfolioDividendAround": "karibu {date}",
+  "eventDividend": "Gawio linalotarajiwa",
+  "eventDividendEstimate": "Imekadiriwa kutoka malipo uliyorekodi"
 }

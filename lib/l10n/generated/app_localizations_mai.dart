@@ -1630,6 +1630,12 @@ class AppLocalizationsMai extends AppLocalizations {
   String get eventFromAnalysis => 'अहाँक विश्लेषणसँ';
 
   @override
+  String get eventDividend => 'डिविडेंड अपेक्षित';
+
+  @override
+  String get eventDividendEstimate => 'अहाँक दर्ज कएल भुगतानसँ अनुमानित';
+
+  @override
   String get eventsHint =>
       'अगिला 90 दिनमे अहाँक पसंदीदा आ पोर्टफ़ोलियो शेयरक परिणामक तिथि, आ अहाँक विश्लेषणमे चिन्हित तिथियुक्त घटना।';
 

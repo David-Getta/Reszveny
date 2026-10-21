@@ -6,9 +6,12 @@ import '../../core/app_preferences.dart';
 import '../../core/models/analysis_extras.dart';
 import '../analysis/report_store.dart';
 import '../market_data/market_data_provider.dart';
+import '../portfolio/dividend_forecast.dart';
 import '../portfolio/portfolio_store.dart';
 
-enum UpcomingEventKind { earnings, catalyst }
+/// Gyorsjelentés (piaci adatból), elemzésben megjelölt esemény, vagy a rögzített
+/// kifizetések ritmusából várható osztalék.
+enum UpcomingEventKind { earnings, catalyst, dividend }
 
 /// Egy figyelt részvény friss negyedéves eredménye.
 typedef RecentResult = ({String symbol, EarningsSurprise result});
@@ -23,6 +26,8 @@ class UpcomingEvent {
     this.text = '',
     this.hour,
     this.epsEstimate,
+    this.amount,
+    this.currency,
   });
 
   final String symbol;
@@ -37,6 +42,10 @@ class UpcomingEvent {
   /// Gyorsjelentésnél: `bmo` (nyitás előtt), `amc` (zárás után) vagy `null`.
   final String? hour;
   final double? epsEstimate;
+
+  /// Várható osztaléknál: az utolsó rögzített kifizetés összege és pénzneme.
+  final double? amount;
+  final String? currency;
 }
 
 /// A kedvencek és a portfólió közelgő gyorsjelentései, valamint az elmentett
@@ -156,6 +165,24 @@ class EventsService extends ChangeNotifier {
             list.add(UpcomingEvent(symbol: r.symbol, date: day, kind: UpcomingEventKind.catalyst, text: c.event));
           }
         }
+      }
+      // Várható osztalékok a még birtokolt részvényekre, a rögzített kifizetések ritmusából.
+      for (final x in expectedDividends(
+        portfolio.dividends,
+        portfolio.positions.map((p) => p.symbol),
+        now: _clock(),
+        horizon: const Duration(days: horizonDays),
+      )) {
+        if (!inRange(_day(x.date))) continue;
+        list.add(
+          UpcomingEvent(
+            symbol: x.symbol,
+            date: _day(x.date),
+            kind: UpcomingEventKind.dividend,
+            amount: x.amount,
+            currency: x.currency,
+          ),
+        );
       }
       list.sort((a, b) {
         final byDate = a.date.compareTo(b.date);

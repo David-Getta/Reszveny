@@ -1636,6 +1636,13 @@ class AppLocalizationsKa extends AppLocalizations {
   String get eventFromAnalysis => 'თქვენი ანალიზიდან';
 
   @override
+  String get eventDividend => 'მოსალოდნელი დივიდენდი';
+
+  @override
+  String get eventDividendEstimate =>
+      'შეფასებულია თქვენი ჩაწერილი გადახდებიდან';
+
+  @override
   String get eventsHint =>
       'თქვენი რჩეულებისა და პორტფელის აქციების შედეგების თარიღები მომდევნო 90 დღისთვის და თქვენი ანალიზების მიერ მონიშნული თარიღიანი მოვლენები.';
 

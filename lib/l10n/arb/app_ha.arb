@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Saita ma'aunin tsabar kuɗi",
   "portfolioDividendsExpected": "Ana sa ran na gaba",
   "portfolioDividendsExpectedNote": "An kiyasta daga ranaku da adadin biyan da ka rubuta; kamfanoni na iya canza su ko tsallake su.",
-  "portfolioDividendAround": "wajen {date}"
+  "portfolioDividendAround": "wajen {date}",
+  "eventDividend": "Ana sa ran rabon riba",
+  "eventDividendEstimate": "Kiyasi daga biyan da ka rubuta"
 }

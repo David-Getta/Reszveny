@@ -738,5 +738,7 @@
   "portfolioCashEdit": "ნაღდი ფულის ნაშთის მითითება",
   "portfolioDividendsExpected": "მოსალოდნელი შემდეგი",
   "portfolioDividendsExpectedNote": "შეფასებულია თქვენ მიერ ჩაწერილი გადახდების თარიღებისა და თანხების მიხედვით; კომპანიებმა შეიძლება შეცვალონ ან გამოტოვონ ისინი.",
-  "portfolioDividendAround": "დაახლოებით {date}"
+  "portfolioDividendAround": "დაახლოებით {date}",
+  "eventDividend": "მოსალოდნელი დივიდენდი",
+  "eventDividendEstimate": "შეფასებულია თქვენი ჩაწერილი გადახდებიდან"
 }

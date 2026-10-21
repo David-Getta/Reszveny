@@ -738,5 +738,7 @@
   "portfolioCashEdit": "دانانی باڵانسی کاش",
   "portfolioDividendsExpected": "چاوەڕوانکراوی داهاتوو",
   "portfolioDividendsExpectedNote": "خەمڵێنراوە لە ڕێکەوت و بڕی ئەو پارەدانانەی تۆمارت کردوون؛ کۆمپانیاکان دەتوانن بیانگۆڕن یان بیانپەڕێنن.",
-  "portfolioDividendAround": "نزیکەی {date}"
+  "portfolioDividendAround": "نزیکەی {date}",
+  "eventDividend": "پشکی قازانجی چاوەڕوانکراو",
+  "eventDividendEstimate": "خەمڵێنراو لە پارەدانە تۆمارکراوەکانت"
 }

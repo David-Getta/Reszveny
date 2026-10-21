@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Setel saldo tunai",
   "portfolioDividendsExpected": "Diperkirakeun salajengna",
   "portfolioDividendsExpectedNote": "Diperkirakeun tina tanggal sareng jumlah pamayaran anu anjeun catet; pausahaan tiasa ngarobih atanapi ngaliwatanana.",
-  "portfolioDividendAround": "kira-kira {date}"
+  "portfolioDividendAround": "kira-kira {date}",
+  "eventDividend": "Dividen diperkirakeun",
+  "eventDividendEstimate": "Diperkirakeun tina pamayaran anu anjeun catet"
 }

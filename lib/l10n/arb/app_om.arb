@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Hafaa maallaqaa qindeessi",
   "portfolioDividendsExpected": "Itti aanee eegamu",
   "portfolioDividendsExpectedNote": "Guyyoota fi hamma kaffaltiiwwan ati galmeessiterraa tilmaamame; dhaabbileen jijjiiruu ykn dhiisuu ni danda'u.",
-  "portfolioDividendAround": "naannoo {date}"
+  "portfolioDividendAround": "naannoo {date}",
+  "eventDividend": "Diviidendii eegamu",
+  "eventDividendEstimate": "Kaffaltiiwwan ati galmeessiterraa tilmaamame"
 }

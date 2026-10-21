@@ -738,5 +738,7 @@
   "portfolioCashEdit": "नकद बैलेंस सेट करें",
   "portfolioDividendsExpected": "अगला अपेक्षित",
   "portfolioDividendsExpectedNote": "आपके दर्ज किए गए भुगतानों की तारीखों और राशियों से अनुमानित; कंपनियाँ इन्हें बदल या छोड़ सकती हैं।",
-  "portfolioDividendAround": "लगभग {date}"
+  "portfolioDividendAround": "लगभग {date}",
+  "eventDividend": "डिविडेंड अपेक्षित",
+  "eventDividendEstimate": "आपके दर्ज किए गए भुगतानों से अनुमानित"
 }

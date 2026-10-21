@@ -1639,6 +1639,12 @@ class AppLocalizationsLua extends AppLocalizations {
   String get eventFromAnalysis => 'Mu dikonkonona diebe';
 
   @override
+  String get eventDividend => 'Dividende idi mitekemene';
+
+  @override
+  String get eventDividendEstimate => 'Mbadilu kumbukila mfutu iwakafunda';
+
+  @override
   String get eventsHint =>
       'Matuku a mapeta a biudi musue ne a ba action ba mu portefeuille webe bua matuku 90 alua, ne malu adi ne matuku makonkonona ebe mamanyishe.';
 

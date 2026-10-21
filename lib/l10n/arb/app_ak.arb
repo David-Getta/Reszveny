@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Hyehyɛ sika a ɛda hɔ",
   "portfolioDividendsExpected": "Nea ɛdi hɔ a wɔhwɛ kwan",
   "portfolioDividendsExpectedNote": "Wobu ho akontaa fi nna ne sika dodow a wokyerɛw faa ntuaa no ho mu; nnwumakuw betumi asesa anaa wɔagyae.",
-  "portfolioDividendAround": "bɛyɛ {date}"
+  "portfolioDividendAround": "bɛyɛ {date}",
+  "eventDividend": "Dividend a wɔhwɛ kwan",
+  "eventDividendEstimate": "Wɔabu akontaa afi ntua a wokyerɛw too hɔ mu"
 }

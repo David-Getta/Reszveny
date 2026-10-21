@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Подеси стање готовине",
   "portfolioDividendsExpected": "Следеће очекиване",
   "portfolioDividendsExpectedNote": "Процењено на основу датума и износа исплата које сте евидентирали; компаније могу да их промене или изоставе.",
-  "portfolioDividendAround": "око {date}"
+  "portfolioDividendAround": "око {date}",
+  "eventDividend": "Очекивана дивиденда",
+  "eventDividendEstimate": "Процењено на основу исплата које сте евидентирали"
 }

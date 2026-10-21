@@ -1640,6 +1640,13 @@ class AppLocalizationsKg extends AppLocalizations {
   String get eventFromAnalysis => 'Na analyse na nge';
 
   @override
+  String get eventDividend => 'Dividende bo ke vingila';
+
+  @override
+  String get eventDividendEstimate =>
+      'Bo tangaka yo na ba futa yina nge sonikaka';
+
+  @override
   String get eventsHint =>
       'Ba dati ya ba résultats ya bizolwa na nge mpi ya ba action ya portefeuille na nge sambu na bilumbu 90 ke kwiza, mpi mambu ya kele ti dati yina ba analyse na nge me monisa.';
 

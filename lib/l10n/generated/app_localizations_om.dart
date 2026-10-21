@@ -1641,6 +1641,13 @@ class AppLocalizationsOm extends AppLocalizations {
   String get eventFromAnalysis => 'Xiinxala kee irraa';
 
   @override
+  String get eventDividend => 'Diviidendii eegamu';
+
+  @override
+  String get eventDividendEstimate =>
+      'Kaffaltiiwwan ati galmeessiterraa tilmaamame';
+
+  @override
   String get eventsHint =>
       'Guyyoota bu\'aa aksiyoonota filatamoo fi poortfooliyoo keetii guyyoota 90 itti aananitti, akkasumas taateewwan guyyaa qaban kan xiinxalli kee agarsiise.';
 

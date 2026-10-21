@@ -1640,6 +1640,12 @@ class AppLocalizationsHa extends AppLocalizations {
   String get eventFromAnalysis => 'Daga nazarinka';
 
   @override
+  String get eventDividend => 'Ana sa ran rabon riba';
+
+  @override
+  String get eventDividendEstimate => 'Kiyasi daga biyan da ka rubuta';
+
+  @override
   String get eventsHint =>
       'Kwanakin sakamakon kuɗi na abubuwan da ka fi so da hannayen jarin jakarka na kwanaki 90 masu zuwa, da abubuwan da ke da kwanan wata da nazarinka suka nuna.';
 

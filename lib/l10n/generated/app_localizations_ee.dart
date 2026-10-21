@@ -1638,6 +1638,13 @@ class AppLocalizationsEe extends AppLocalizations {
   String get eventFromAnalysis => 'Tso wò numekuku me';
 
   @override
+  String get eventDividend => 'Wole mɔ kpɔm na dividend';
+
+  @override
+  String get eventDividendEstimate =>
+      'Wobu akɔnta tso wò fexexe siwo nèŋlɔ ɖi me';
+
+  @override
   String get eventsHint =>
       'Nye lɔlɔ̃tɔwo kple nye akpawo ƒe akɔntabubu ŋkekewo le ŋkeke 90 siwo gbɔna me, kple nudzɔdzɔ siwo ŋu ŋkeke le si wò numekukuwo ɖe fia.';
 

@@ -1634,6 +1634,13 @@ class AppLocalizationsTr extends AppLocalizations {
   String get eventFromAnalysis => 'Analizinden';
 
   @override
+  String get eventDividend => 'Temettü bekleniyor';
+
+  @override
+  String get eventDividendEstimate =>
+      'Kaydettiğiniz ödemelerden tahmin edilmiştir';
+
+  @override
   String get eventsHint =>
       'Favorilerinin ve portföyündeki hisselerin önümüzdeki 90 gündeki bilanço tarihleri ile analizlerinin işaret ettiği tarihli olaylar.';
 

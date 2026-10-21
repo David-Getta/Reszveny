@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Sbadu idrimen n ufus",
   "portfolioDividendsExpected": "Yettwaṛǧa ɣer zdat",
   "portfolioDividendsExpectedNote": "Yettwaḥseb seg wazemzen d lemqadir n lexlaṣat i tjemɛeḍ; tkebbaniyin zemrent a ten-beddlent neɣ a ten-zeglent.",
-  "portfolioDividendAround": "azal n {date}"
+  "portfolioDividendAround": "azal n {date}",
+  "eventDividend": "Dividende yettwaṛǧun",
+  "eventDividendEstimate": "Yettwaḥseb seg lexlaṣat i tesekleseḍ"
 }

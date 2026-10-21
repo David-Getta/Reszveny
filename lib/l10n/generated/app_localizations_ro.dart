@@ -1665,6 +1665,13 @@ class AppLocalizationsRo extends AppLocalizations {
   String get eventFromAnalysis => 'Din analiza ta';
 
   @override
+  String get eventDividend => 'Dividend așteptat';
+
+  @override
+  String get eventDividendEstimate =>
+      'Estimat pe baza plăților înregistrate de tine';
+
+  @override
   String get eventsHint =>
       'Datele raportărilor pentru favoritele tale și acțiunile din portofoliu în următoarele 90 de zile, plus evenimentele cu dată semnalate de analizele tale.';
 

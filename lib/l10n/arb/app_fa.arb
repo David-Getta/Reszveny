@@ -738,5 +738,7 @@
   "portfolioCashEdit": "تعیین موجودی نقد",
   "portfolioDividendsExpected": "مورد انتظار بعدی",
   "portfolioDividendsExpectedNote": "برآوردشده از تاریخ‌ها و مبالغ پرداخت‌هایی که ثبت کرده‌اید؛ شرکت‌ها می‌توانند آن‌ها را تغییر دهند یا حذف کنند.",
-  "portfolioDividendAround": "حدود {date}"
+  "portfolioDividendAround": "حدود {date}",
+  "eventDividend": "سود سهام مورد انتظار",
+  "eventDividendEstimate": "برآورد از پرداخت‌های ثبت‌شدهٔ شما"
 }

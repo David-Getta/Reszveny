@@ -738,5 +738,7 @@
   "portfolioCashEdit": "نقد بيلنس سيٽ ڪريو",
   "portfolioDividendsExpected": "اڳيون متوقع",
   "portfolioDividendsExpectedNote": "توهان جي رڪارڊ ڪيل ادائگين جي تاريخن ۽ رقمن مان اندازو لڳايل؛ ڪمپنيون انهن کي بدلائي يا ڇڏي سگهن ٿيون.",
-  "portfolioDividendAround": "{date} جي لڳ ڀڳ"
+  "portfolioDividendAround": "{date} جي لڳ ڀڳ",
+  "eventDividend": "ڊيويڊنڊ متوقع",
+  "eventDividendEstimate": "توهان جي رڪارڊ ڪيل ادائگين مان اندازو"
 }

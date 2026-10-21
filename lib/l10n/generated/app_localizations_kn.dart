@@ -1640,6 +1640,12 @@ class AppLocalizationsKn extends AppLocalizations {
   String get eventFromAnalysis => 'ನಿಮ್ಮ ವಿಶ್ಲೇಷಣೆಯಿಂದ';
 
   @override
+  String get eventDividend => 'ಡಿವಿಡೆಂಡ್ ನಿರೀಕ್ಷಿತ';
+
+  @override
+  String get eventDividendEstimate => 'ನೀವು ದಾಖಲಿಸಿದ ಪಾವತಿಗಳಿಂದ ಅಂದಾಜಿಸಲಾಗಿದೆ';
+
+  @override
   String get eventsHint =>
       'ಮುಂದಿನ 90 ದಿನಗಳಲ್ಲಿ ನಿಮ್ಮ ಮೆಚ್ಚಿನ ಮತ್ತು ಪೋರ್ಟ್‌ಫೋಲಿಯೊ ಷೇರುಗಳ ಫಲಿತಾಂಶ ದಿನಾಂಕಗಳು ಹಾಗೂ ನಿಮ್ಮ ವಿಶ್ಲೇಷಣೆಗಳು ಗುರುತಿಸಿದ ದಿನಾಂಕವಿರುವ ಘಟನೆಗಳು.';
 

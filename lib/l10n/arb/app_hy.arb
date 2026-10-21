@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Սահմանել կանխիկի մնացորդը",
   "portfolioDividendsExpected": "Սպասվում է հաջորդը",
   "portfolioDividendsExpectedNote": "Գնահատված է ձեր գրանցած վճարումների ամսաթվերից և գումարներից. ընկերությունները կարող են փոխել կամ բաց թողնել դրանք։",
-  "portfolioDividendAround": "մոտ {date}"
+  "portfolioDividendAround": "մոտ {date}",
+  "eventDividend": "Սպասվող շահաբաժին",
+  "eventDividendEstimate": "Գնահատված ձեր գրանցած վճարումներից"
 }

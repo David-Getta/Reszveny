@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Tëral xaalis bi des",
   "portfolioDividendsExpected": "Li ñuy xaar ci kanam",
   "portfolioDividendsExpectedNote": "Ñu xayma ko ci bés yi ak xaalis yi ci fey yi nga bind; ay kompañi mën nañu koy soppi walla ñu bàyyi ko.",
-  "portfolioDividendAround": "lu tollu ci {date}"
+  "portfolioDividendAround": "lu tollu ci {date}",
+  "eventDividend": "Dividande bu ñuy xaar",
+  "eventDividendEstimate": "Ñu xayma ko ci fey yi nga bind"
 }

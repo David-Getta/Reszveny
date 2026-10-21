@@ -3013,6 +3013,18 @@ abstract class AppLocalizations {
   /// **'From your analysis'**
   String get eventFromAnalysis;
 
+  /// Title of an upcoming-events entry: a dividend payment expected from this stock, estimated from the recorded payments.
+  ///
+  /// In en, this message translates to:
+  /// **'Dividend expected'**
+  String get eventDividend;
+
+  /// No description provided for @eventDividendEstimate.
+  ///
+  /// In en, this message translates to:
+  /// **'Estimated from your recorded payments'**
+  String get eventDividendEstimate;
+
   /// No description provided for @eventsHint.
   ///
   /// In en, this message translates to:

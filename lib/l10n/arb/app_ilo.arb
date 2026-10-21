@@ -738,5 +738,7 @@
   "portfolioCashEdit": "I-set ti balanse ti cash",
   "portfolioDividendsExpected": "Manamnama a sumaruno",
   "portfolioDividendsExpectedNote": "Nakarkulado manipud kadagiti petsa ken gatad dagiti bayad nga inrekordmo; mabalin a baliwan wenno laktawan dagitoy dagiti kompania.",
-  "portfolioDividendAround": "agarup {date}"
+  "portfolioDividendAround": "agarup {date}",
+  "eventDividend": "Manamnama a dibidendo",
+  "eventDividendEstimate": "Nakarkulo manipud kadagiti nairekord a bayadmo"
 }

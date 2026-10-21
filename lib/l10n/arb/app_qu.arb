@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Qullqi saldota churay",
   "portfolioDividendsExpected": "Qatiqnin suyasqa",
   "portfolioDividendsExpectedNote": "Qillqasqayki pagokunapa p'unchawninkunamanta chaninkunamantawan yupasqa; empresakuna chaykunata tikrayta utaq saqiyta atinku.",
-  "portfolioDividendAround": "yaqa {date}"
+  "portfolioDividendAround": "yaqa {date}",
+  "eventDividend": "Dividendo suyasqa",
+  "eventDividendEstimate": "Qillqasqayki pagokunamanta yupasqa"
 }

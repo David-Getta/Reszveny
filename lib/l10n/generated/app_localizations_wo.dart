@@ -1630,6 +1630,12 @@ class AppLocalizationsWo extends AppLocalizations {
   String get eventFromAnalysis => 'Ci sa saytu';
 
   @override
+  String get eventDividend => 'Dividande bu ñuy xaar';
+
+  @override
+  String get eventDividendEstimate => 'Ñu xayma ko ci fey yi nga bind';
+
+  @override
   String get eventsHint =>
       'Bisi njureef yu aksiyoŋ yi nga gënal ak yu sa portfolio ci 90 fan yii di ñëw, ak mbir yu am bis yi sa saytu yi tànn.';
 

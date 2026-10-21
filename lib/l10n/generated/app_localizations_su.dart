@@ -1636,6 +1636,13 @@ class AppLocalizationsSu extends AppLocalizations {
   String get eventFromAnalysis => 'Tina analisis anjeun';
 
   @override
+  String get eventDividend => 'Dividen diperkirakeun';
+
+  @override
+  String get eventDividendEstimate =>
+      'Diperkirakeun tina pamayaran anu anjeun catet';
+
+  @override
   String get eventsHint =>
       'Tanggal laporan saham paporit sareng portofolio anjeun pikeun 90 poé ka hareup, sareng acara anu aya tanggalna anu ditandaan ku analisis anjeun.';
 

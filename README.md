@@ -71,7 +71,7 @@ Vezérlés `--dart-define`-nal: `ANTHROPIC_REPORT_EFFORT` (`low`…`max`, alap `
 - **Technikai kép**: 50 és 200 napos mozgóátlag (és hol tart hozzájuk az ár), 14 napos RSI az állapotával, 30 napos volatilitás a napi záróárakból, ⓘ magyarázatokkal kezdőknek.
 - **„Miért mozog ma?”**: ha a részvény napi mozgása legalább 2,5%, egy gombbal AI-magyarázat a mai hírekből (forrásokkal, kérdezz-vissza mezővel); részvényenként és naponként egyszer, a szerver a többi felhasználóval megosztja.
 - **„Amíg távol voltál”**: ha legalább egy nap telt el az előző indítás óta, a kezdőképernyőn a figyelt részvények legnagyobb mozgásai azóta, a közben teljesült riasztások és a gyorsjelentést adott cégek – AI és többlet-lekérés nélkül.
-- **Kapott osztalékok**: a portfólió oldalon kártya az idei és az összes kapott osztalékkal (a megjelenítési pénznemre átváltva), kézi felvétel, törlés visszavonással, a várható következő kifizetések a rögzítettek ritmusából, CSV-export az adóbevalláshoz; a Revolut, a Trading 212 és az Interactive Brokers exportjának osztaléksorai importáláskor bekerülnek, a fiókkal szinkronizálva.
+- **Kapott osztalékok**: a portfólió oldalon kártya az idei és az összes kapott osztalékkal (a megjelenítési pénznemre átváltva), kézi felvétel, törlés visszavonással, a várható következő kifizetések a rögzítettek ritmusából (az Események naptárban is), CSV-export az adóbevalláshoz; a Revolut, a Trading 212 és az Interactive Brokers exportjának osztaléksorai importáláskor bekerülnek, a fiókkal szinkronizálva.
 - **Megosztott AI-válaszok**: a gyorsjelentés-összefoglalót és a hírmagyarázatot a szerver 30 napig őrzi, így a következő felhasználó Anthropic-hívás és kérdéskeret nélkül kapja.
 
 ## Hogyan működik

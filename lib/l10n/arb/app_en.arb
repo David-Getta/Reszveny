@@ -1134,6 +1134,11 @@
     }
   },
   "eventFromAnalysis": "From your analysis",
+  "eventDividend": "Dividend expected",
+  "@eventDividend": {
+    "description": "Title of an upcoming-events entry: a dividend payment expected from this stock, estimated from the recorded payments."
+  },
+  "eventDividendEstimate": "Estimated from your recorded payments",
   "eventsHint": "Results dates of your favorites and portfolio stocks for the next 90 days, and the dated events your analyses flagged.",
   "eventsEmpty": "No dated events in the next 90 days. Add favorites or portfolio stocks to see their results dates here.",
   "compareTitle": "Compare",

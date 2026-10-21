@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Definir el saldo en efectiu",
   "portfolioDividendsExpected": "Properes previstes",
   "portfolioDividendsExpectedNote": "Estimat a partir de les dates i els imports dels pagaments que has registrat; les empreses els poden canviar o ometre.",
-  "portfolioDividendAround": "cap al {date}"
+  "portfolioDividendAround": "cap al {date}",
+  "eventDividend": "Dividend previst",
+  "eventDividendEstimate": "Estimat a partir dels pagaments registrats"
 }

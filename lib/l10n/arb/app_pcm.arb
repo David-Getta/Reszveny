@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Set cash balance",
   "portfolioDividendsExpected": "Wetin we expect next",
   "portfolioDividendsExpectedNote": "We guess am from di dates and amounts of di payments you record; companies fit change am or skip am.",
-  "portfolioDividendAround": "around {date}"
+  "portfolioDividendAround": "around {date}",
+  "eventDividend": "Dividend wey we expect",
+  "eventDividendEstimate": "We guess am from di payments you record"
 }

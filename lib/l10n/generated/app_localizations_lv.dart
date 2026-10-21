@@ -1671,6 +1671,13 @@ class AppLocalizationsLv extends AppLocalizations {
   String get eventFromAnalysis => 'No jūsu analīzes';
 
   @override
+  String get eventDividend => 'Gaidāma dividende';
+
+  @override
+  String get eventDividendEstimate =>
+      'Aplēsts no jūsu reģistrētajiem maksājumiem';
+
+  @override
   String get eventsHint =>
       'Jūsu izlases un portfeļa akciju rezultātu datumi nākamajām 90 dienām un datēti notikumi, ko atzīmējušas jūsu analīzes.';
 

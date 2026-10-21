@@ -738,5 +738,7 @@
   "portfolioCashEdit": "ငွေသား လက်ကျန် သတ်မှတ်ရန်",
   "portfolioDividendsExpected": "နောက်ထပ် မျှော်မှန်း",
   "portfolioDividendsExpectedNote": "သင်မှတ်တမ်းတင်ထားသော ပေးချေမှုများ၏ ရက်စွဲနှင့် ပမာဏမှ ခန့်မှန်းထားသည်။ ကုမ္ပဏီများက ပြောင်းလဲနိုင် သို့မဟုတ် ချန်လှပ်နိုင်သည်။",
-  "portfolioDividendAround": "{date} ခန့်"
+  "portfolioDividendAround": "{date} ခန့်",
+  "eventDividend": "အမြတ်ဝေစု မျှော်မှန်း",
+  "eventDividendEstimate": "သင်မှတ်တမ်းတင်ထားသော ပေးချေမှုများမှ ခန့်မှန်းထားသည်"
 }

@@ -1604,6 +1604,12 @@ class AppLocalizationsTi extends AppLocalizations {
   String get eventFromAnalysis => 'ካብ ትንተናኻ';
 
   @override
+  String get eventDividend => 'ድቪደንድ ዝተጸበ';
+
+  @override
+  String get eventDividendEstimate => 'ካብቶም ዝመዝገብካዮም ክፍሊታት ዝተገመተ';
+
+  @override
   String get eventsHint =>
       'ናይ ዝተፈተዉን ናይ ፖርትፎሊዮኻን ኣክስዮናት ዕለታት ውጽኢት ኣብ ዝመጽእ 90 መዓልታት፣ ከምኡውን ትንተናታትካ ዘመልከትዎም ዕለት ዘለዎም ፍጻመታት።';
 

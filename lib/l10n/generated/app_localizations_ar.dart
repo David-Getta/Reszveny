@@ -1672,6 +1672,12 @@ class AppLocalizationsAr extends AppLocalizations {
   String get eventFromAnalysis => 'من تحليلك';
 
   @override
+  String get eventDividend => 'توزيعات أرباح متوقعة';
+
+  @override
+  String get eventDividendEstimate => 'تقدير من الدفعات التي سجّلتها';
+
+  @override
   String get eventsHint =>
       'مواعيد نتائج أسهمك المفضلة وأسهم محفظتك خلال الـ 90 يومًا القادمة، والأحداث المؤرخة التي رصدتها تحليلاتك.';
 

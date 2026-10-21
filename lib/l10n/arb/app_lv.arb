@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Iestatīt naudas atlikumu",
   "portfolioDividendsExpected": "Nākamās gaidāmās",
   "portfolioDividendsExpectedNote": "Aplēsts no jūsu reģistrēto izmaksu datumiem un summām; uzņēmumi tās var mainīt vai izlaist.",
-  "portfolioDividendAround": "apmēram {date}"
+  "portfolioDividendAround": "apmēram {date}",
+  "eventDividend": "Gaidāma dividende",
+  "eventDividendEstimate": "Aplēsts no jūsu reģistrētajiem maksājumiem"
 }

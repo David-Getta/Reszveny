@@ -1630,6 +1630,12 @@ class AppLocalizationsIg extends AppLocalizations {
   String get eventFromAnalysis => 'Site na nyocha gị';
 
   @override
+  String get eventDividend => 'A na-atụ anya nkesa uru';
+
+  @override
+  String get eventDividendEstimate => 'E mere atụmatụ site na ụgwọ ị dekọrọ';
+
+  @override
   String get eventsHint =>
       'Ụbọchị nsonaazụ nke ọkacha mmasị gị na stock dị na portfolio gị maka ụbọchị 90 na-abịa, na ihe omume nwere ụbọchị nyocha gị gosiri.';
 

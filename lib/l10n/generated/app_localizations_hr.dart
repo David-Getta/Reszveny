@@ -1670,6 +1670,13 @@ class AppLocalizationsHr extends AppLocalizations {
   String get eventFromAnalysis => 'Iz vaše analize';
 
   @override
+  String get eventDividend => 'Očekivana dividenda';
+
+  @override
+  String get eventDividendEstimate =>
+      'Procijenjeno iz vaših evidentiranih isplata';
+
+  @override
   String get eventsHint =>
       'Datumi objave rezultata vaših favorita i dionica iz portfelja za sljedećih 90 dana te datirani događaji koje su istaknule vaše analize.';
 

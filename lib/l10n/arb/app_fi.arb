@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Aseta käteissaldo",
   "portfolioDividendsExpected": "Odotettavissa seuraavaksi",
   "portfolioDividendsExpectedNote": "Arvio kirjaamiesi maksujen päivistä ja summista; yhtiöt voivat muuttaa niitä tai jättää ne maksamatta.",
-  "portfolioDividendAround": "noin {date}"
+  "portfolioDividendAround": "noin {date}",
+  "eventDividend": "Osinko odotettavissa",
+  "eventDividendEstimate": "Arvio kirjaamiesi maksujen perusteella"
 }

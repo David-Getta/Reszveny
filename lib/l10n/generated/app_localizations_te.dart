@@ -1640,6 +1640,13 @@ class AppLocalizationsTe extends AppLocalizations {
   String get eventFromAnalysis => 'మీ విశ్లేషణ నుండి';
 
   @override
+  String get eventDividend => 'డివిడెండ్ అంచనా';
+
+  @override
+  String get eventDividendEstimate =>
+      'మీరు నమోదు చేసిన చెల్లింపుల ఆధారంగా అంచనా';
+
+  @override
   String get eventsHint =>
       'రాబోయే 90 రోజుల్లో మీ ఇష్టమైన మరియు పోర్ట్‌ఫోలియో స్టాక్‌ల ఫలితాల తేదీలు, అలాగే మీ విశ్లేషణలు గుర్తించిన తేదీ గల ఈవెంట్‌లు.';
 

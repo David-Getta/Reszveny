@@ -738,5 +738,7 @@
   "portfolioCashEdit": "កំណត់សមតុល្យសាច់ប្រាក់",
   "portfolioDividendsExpected": "រំពឹងទុកបន្ទាប់",
   "portfolioDividendsExpectedNote": "ប៉ាន់ស្មានពីកាលបរិច្ឆេទ និងចំនួនទឹកប្រាក់នៃការទូទាត់ដែលអ្នកបានកត់ត្រា; ក្រុមហ៊ុនអាចផ្លាស់ប្តូរ ឬរំលងវាបាន។",
-  "portfolioDividendAround": "ប្រហែល {date}"
+  "portfolioDividendAround": "ប្រហែល {date}",
+  "eventDividend": "ភាគលាភរំពឹងទុក",
+  "eventDividendEstimate": "ប៉ាន់ស្មានពីការទូទាត់ដែលអ្នកបានកត់ត្រា"
 }

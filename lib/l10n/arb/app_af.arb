@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Stel kontantsaldo in",
   "portfolioDividendsExpected": "Volgende verwag",
   "portfolioDividendsExpectedNote": "Geskat uit die datums en bedrae van die betalings wat jy aangeteken het; maatskappye kan dit verander of oorslaan.",
-  "portfolioDividendAround": "ongeveer {date}"
+  "portfolioDividendAround": "ongeveer {date}",
+  "eventDividend": "Dividend verwag",
+  "eventDividendEstimate": "Geskat uit jou aangetekende betalings"
 }

@@ -1635,6 +1635,12 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get eventFromAnalysis => 'لە شیکارییەکەتەوە';
 
   @override
+  String get eventDividend => 'پشکی قازانجی چاوەڕوانکراو';
+
+  @override
+  String get eventDividendEstimate => 'خەمڵێنراو لە پارەدانە تۆمارکراوەکانت';
+
+  @override
   String get eventsHint =>
       'بەرواری ئەنجامەکانی دڵخوازەکانت و پشکەکانی پۆرتفۆلیۆکەت بۆ 90 ڕۆژی داهاتوو، و ئەو ڕووداوە بەرواردارانەی شیکارییەکانت دیاریان کردوون.';
 

@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Задаць грашовы рэшт",
   "portfolioDividendsExpected": "Чакаецца далей",
   "portfolioDividendsExpectedNote": "Разлічана па датах і сумах запісаных вамі выплат; кампаніі могуць іх змяніць або прапусціць.",
-  "portfolioDividendAround": "прыкладна {date}"
+  "portfolioDividendAround": "прыкладна {date}",
+  "eventDividend": "Чакаецца дывідэнд",
+  "eventDividendEstimate": "Ацэнка на падставе вашых запісаных выплат"
 }

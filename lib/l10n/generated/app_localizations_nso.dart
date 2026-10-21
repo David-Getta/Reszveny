@@ -1646,6 +1646,13 @@ class AppLocalizationsNso extends AppLocalizations {
   String get eventFromAnalysis => 'Go tšwa tshekatshekong ya gago';
 
   @override
+  String get eventDividend => 'Dividende e letetšwego';
+
+  @override
+  String get eventDividendEstimate =>
+      'E akanyeditšwe go tšwa go ditefelo tše o di rekotilego';
+
+  @override
   String get eventsHint =>
       'Matšatši a dipoelo tša tše o di ratago le dišere tša photefolio ya gago mo matšatšing a 90 a a tlago, le ditiragalo tše di nago le matšatši tšeo ditshekatsheko tša gago di di supilego.';
 

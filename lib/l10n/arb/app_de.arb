@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Cash-Bestand festlegen",
   "portfolioDividendsExpected": "Als Nächstes erwartet",
   "portfolioDividendsExpectedNote": "Geschätzt aus Daten und Beträgen der von dir erfassten Zahlungen; Unternehmen können sie ändern oder ausfallen lassen.",
-  "portfolioDividendAround": "um den {date}"
+  "portfolioDividendAround": "um den {date}",
+  "eventDividend": "Dividende erwartet",
+  "eventDividendEstimate": "Geschätzt aus deinen erfassten Zahlungen"
 }

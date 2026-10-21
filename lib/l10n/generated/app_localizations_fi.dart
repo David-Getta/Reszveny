@@ -1636,6 +1636,12 @@ class AppLocalizationsFi extends AppLocalizations {
   String get eventFromAnalysis => 'Omasta analyysistasi';
 
   @override
+  String get eventDividend => 'Osinko odotettavissa';
+
+  @override
+  String get eventDividendEstimate => 'Arvio kirjaamiesi maksujen perusteella';
+
+  @override
   String get eventsHint =>
       'Suosikkiesi ja salkkusi osakkeiden tulosjulkistukset seuraavien 90 päivän ajalta sekä analyysiesi nostamat päivätyt tapahtumat.';
 

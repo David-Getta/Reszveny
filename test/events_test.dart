@@ -116,6 +116,40 @@ void main() {
     expect(market.calls, hasLength(4));
   });
 
+  test('an expected dividend (from the recorded payments of a held stock) is an event too, with its amount', () async {
+    final market = _Market({});
+    final portfolio = PortfolioStore();
+    await portfolio.add(symbol: 'KO', quantity: 10, price: 60, currency: 'USD');
+    final last = today.subtract(const Duration(days: 50));
+    await portfolio.addDividend(
+      symbol: 'KO',
+      amount: 4.85,
+      currency: 'USD',
+      date: last.subtract(const Duration(days: 91)),
+    );
+    await portfolio.addDividend(symbol: 'KO', amount: 5.1, currency: 'USD', date: last);
+    // Nem birtokolt részvény osztaléka nem esemény.
+    await portfolio.addDividend(
+      symbol: 'PEP',
+      amount: 1,
+      currency: 'USD',
+      date: last.subtract(const Duration(days: 91)),
+    );
+    await portfolio.addDividend(symbol: 'PEP', amount: 1, currency: 'USD', date: last);
+    final s = EventsService(
+      marketData: market,
+      preferences: AppPreferences(),
+      portfolio: portfolio,
+      reports: ReportStore(analyst: ClaudeStockAnalyst(config: const AppConfig())),
+    );
+    await s.refresh();
+    final div = s.events.where((e) => e.kind == UpcomingEventKind.dividend).toList();
+    expect(div.map((e) => e.symbol), ['KO']);
+    expect(div.single.date, last.add(const Duration(days: 91)));
+    expect(div.single.amount, 5.1);
+    expect(div.single.currency, 'USD');
+  });
+
   test('one failing stock does not hide the others', () async {
     final market = _Market({'MSFT': today.add(const Duration(days: 2))});
     final s = service(market, favorites: ['AAPL', 'MSFT', 'ZZZZ']);

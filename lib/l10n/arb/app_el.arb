@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Ορισμός υπολοίπου μετρητών",
   "portfolioDividendsExpected": "Επόμενα αναμενόμενα",
   "portfolioDividendsExpectedNote": "Εκτίμηση από τις ημερομηνίες και τα ποσά των πληρωμών που καταγράψατε· οι εταιρείες μπορεί να τα αλλάξουν ή να τα παραλείψουν.",
-  "portfolioDividendAround": "γύρω στις {date}"
+  "portfolioDividendAround": "γύρω στις {date}",
+  "eventDividend": "Αναμενόμενο μέρισμα",
+  "eventDividendEstimate": "Εκτίμηση από τις καταγεγραμμένες πληρωμές σας"
 }

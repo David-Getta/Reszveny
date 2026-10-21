@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Definir saldo en efectivo",
   "portfolioDividendsExpected": "Próximos previstos",
   "portfolioDividendsExpectedNote": "Estimado a partir de las fechas e importes de los pagos que registraste; las empresas pueden cambiarlos u omitirlos.",
-  "portfolioDividendAround": "hacia el {date}"
+  "portfolioDividendAround": "hacia el {date}",
+  "eventDividend": "Dividendo previsto",
+  "eventDividendEstimate": "Estimado a partir de tus pagos registrados"
 }

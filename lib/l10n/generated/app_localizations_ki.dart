@@ -1635,6 +1635,12 @@ class AppLocalizationsKi extends AppLocalizations {
   String get eventFromAnalysis => 'Kuuma ũthuthuria waku';
 
   @override
+  String get eventDividend => 'Mũgai wa faida ũrerĩgĩrĩirwo';
+
+  @override
+  String get eventDividendEstimate => 'Ũthimĩtwo kuuma marĩhi marĩa wandĩkĩte';
+
+  @override
   String get eventsHint =>
       'Matukũ ma maumĩrĩra ma iria wendete na hisa ciaku harĩa mĩthenya 90 ĩrĩa ĩroka, na maũndũ marĩ na matukũ marĩa ũthuthuria waku wonanirie.';
 

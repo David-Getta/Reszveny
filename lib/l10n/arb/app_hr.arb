@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Postavi stanje gotovine",
   "portfolioDividendsExpected": "Očekivano sljedeće",
   "portfolioDividendsExpectedNote": "Procijenjeno iz datuma i iznosa isplata koje ste zabilježili; društva ih mogu promijeniti ili izostaviti.",
-  "portfolioDividendAround": "oko {date}"
+  "portfolioDividendAround": "oko {date}",
+  "eventDividend": "Očekivana dividenda",
+  "eventDividendEstimate": "Procijenjeno iz vaših evidentiranih isplata"
 }

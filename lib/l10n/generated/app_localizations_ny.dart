@@ -1641,6 +1641,13 @@ class AppLocalizationsNy extends AppLocalizations {
   String get eventFromAnalysis => 'Kuchokera ku kusanthula kwanu';
 
   @override
+  String get eventDividend => 'Dividendi yoyembekezeka';
+
+  @override
+  String get eventDividendEstimate =>
+      'Zoyerekezedwa kuchokera ku malipiro omwe mudalemba';
+
+  @override
   String get eventsHint =>
       'Masiku a zotsatira za masheya omwe mumawakonda ndi a m\'masheya anu m\'masiku 90 akubwerawa, komanso zochitika za tsiku lodziwika zomwe kusanthula kwanu kwazindikira.';
 

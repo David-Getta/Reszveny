@@ -738,5 +738,7 @@
   "portfolioCashEdit": "नकद बैलेंस सेट करू",
   "portfolioDividendsExpected": "अगिला अपेक्षित",
   "portfolioDividendsExpectedNote": "अहाँ द्वारा दर्ज भुगतानक तारीख आ राशिसँ अनुमानित; कंपनी एकरा बदलि सकैत अछि वा छोड़ि सकैत अछि।",
-  "portfolioDividendAround": "लगभग {date}"
+  "portfolioDividendAround": "लगभग {date}",
+  "eventDividend": "डिविडेंड अपेक्षित",
+  "eventDividendEstimate": "अहाँक दर्ज कएल भुगतानसँ अनुमानित"
 }

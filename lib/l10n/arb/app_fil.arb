@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Itakda ang cash balance",
   "portfolioDividendsExpected": "Inaasahang susunod",
   "portfolioDividendsExpectedNote": "Tinantiya mula sa mga petsa at halaga ng mga bayad na itinala mo; maaaring baguhin o laktawan ito ng mga kumpanya.",
-  "portfolioDividendAround": "bandang {date}"
+  "portfolioDividendAround": "bandang {date}",
+  "eventDividend": "Inaasahang dibidendo",
+  "eventDividendEstimate": "Tinantya mula sa iyong mga naitalang bayad"
 }

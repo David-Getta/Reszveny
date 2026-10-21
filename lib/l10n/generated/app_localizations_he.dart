@@ -1633,6 +1633,12 @@ class AppLocalizationsHe extends AppLocalizations {
   String get eventFromAnalysis => 'מהניתוח שלכם';
 
   @override
+  String get eventDividend => 'דיבידנד צפוי';
+
+  @override
+  String get eventDividendEstimate => 'הערכה לפי התשלומים שרשמתם';
+
+  @override
   String get eventsHint =>
       'מועדי הדוחות של המועדפים ושל המניות בתיק ההשקעות שלכם ב-90 הימים הקרובים, וגם אירועים עם תאריך שהניתוחים שלכם סימנו.';
 

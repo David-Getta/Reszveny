@@ -1643,6 +1643,12 @@ class AppLocalizationsLn extends AppLocalizations {
   String get eventFromAnalysis => 'Na analyse na yo';
 
   @override
+  String get eventDividend => 'Dividende ezelami';
+
+  @override
+  String get eventDividendEstimate => 'Etangami na ba futa oyo okomaki';
+
+  @override
   String get eventsHint =>
       'Ba dati ya ba résultats ya oyo olingaka mpe ya ba action ya portefeuille na yo mpo na mikolo 90 oyo ekoya, mpe makambo oyo ezali na dati oyo ba analyse na yo emonisi.';
 

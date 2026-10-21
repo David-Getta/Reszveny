@@ -1641,6 +1641,13 @@ class AppLocalizationsSo extends AppLocalizations {
   String get eventFromAnalysis => 'Ka yimid falanqayntaada';
 
   @override
+  String get eventDividend => 'Faa\'iido-saami la filayo';
+
+  @override
+  String get eventDividendEstimate =>
+      'Lagu qiyaasay bixinnada aad diiwaangelisay';
+
+  @override
   String get eventsHint =>
       'Taariikhaha natiijooyinka saamiyada aad jeceshahay iyo kuwa portfoliyadaada 90-ka maalmood ee soo socda, iyo dhacdooyinka taariikhda leh ee falanqaynahaagu calaamadeeyeen.';
 

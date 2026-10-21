@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Tula mbongo ya maboko",
   "portfolioDividendsExpected": "Yina bo ke vingila na nima",
   "portfolioDividendsExpectedNote": "Yo me tangwa na bilumbu ti mbongo ya bafutu ya nge me sonika; ba kompani lenda soba yo to kubika yo.",
-  "portfolioDividendAround": "penepene na {date}"
+  "portfolioDividendAround": "penepene na {date}",
+  "eventDividend": "Dividende bo ke vingila",
+  "eventDividendEstimate": "Bo tangaka yo na ba futa yina nge sonikaka"
 }

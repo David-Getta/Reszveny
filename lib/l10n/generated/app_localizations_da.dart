@@ -1632,6 +1632,13 @@ class AppLocalizationsDa extends AppLocalizations {
   String get eventFromAnalysis => 'Fra din analyse';
 
   @override
+  String get eventDividend => 'Udbytte forventes';
+
+  @override
+  String get eventDividendEstimate =>
+      'Anslået ud fra dine registrerede udbetalinger';
+
+  @override
   String get eventsHint =>
       'Regnskabsdatoer for dine favoritter og aktier i porteføljen de næste 90 dage samt de daterede begivenheder, dine analyser har fremhævet.';
 

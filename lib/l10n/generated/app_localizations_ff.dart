@@ -1630,6 +1630,12 @@ class AppLocalizationsFf extends AppLocalizations {
   String get eventFromAnalysis => 'Iwde e ƴeewndo maa';
 
   @override
+  String get eventDividend => 'Dividende habbaaɗo';
+
+  @override
+  String get eventDividendEstimate => 'Hiisaama iwde e yoɓdiiji ɗe mbinnduɗaa';
+
+  @override
   String get eventsHint =>
       'Ñalɗi ngalluuji cuɓaaɗe maa e aksiyoŋ am e nder balɗe 90 garooɗe, e kewuuji jogiiɗi ñalɗi ɗi ƴeewndooji maa kollitii.';
 

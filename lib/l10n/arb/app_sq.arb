@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Cakto gjendjen e parave të gatshme",
   "portfolioDividendsExpected": "Pritet më pas",
   "portfolioDividendsExpectedNote": "Vlerësuar nga datat dhe shumat e pagesave që regjistruat; kompanitë mund t'i ndryshojnë ose t'i anashkalojnë.",
-  "portfolioDividendAround": "rreth {date}"
+  "portfolioDividendAround": "rreth {date}",
+  "eventDividend": "Dividendë i pritur",
+  "eventDividendEstimate": "Vlerësuar nga pagesat që regjistruat"
 }

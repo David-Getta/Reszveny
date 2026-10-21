@@ -1640,6 +1640,13 @@ class AppLocalizationsSn extends AppLocalizations {
   String get eventFromAnalysis => 'Kubva muongororo yako';
 
   @override
+  String get eventDividend => 'Dividendi inotarisirwa';
+
+  @override
+  String get eventDividendEstimate =>
+      'Zvakafungidzirwa kubva pamibhadharo yawakanyora';
+
+  @override
   String get eventsHint =>
       'Mazuva emhedzisiro yemasheya aunofarira neepotiforiyo yako mumazuva 90 anotevera, uye zviitiko zvine mazuva zvakaratidzwa neongororo dzako.';
 

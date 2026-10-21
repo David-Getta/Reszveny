@@ -1629,6 +1629,12 @@ class AppLocalizationsSd extends AppLocalizations {
   String get eventFromAnalysis => 'توهان جي تجزيي مان';
 
   @override
+  String get eventDividend => 'ڊيويڊنڊ متوقع';
+
+  @override
+  String get eventDividendEstimate => 'توهان جي رڪارڊ ڪيل ادائگين مان اندازو';
+
+  @override
   String get eventsHint =>
       'ايندڙ 90 ڏينهن ۾ توهان جي پسنديده ۽ پورٽ فوليو شيئرن جي نتيجن جون تاريخون، ۽ توهان جي تجزين ۾ نشان لڳل تاريخ وارا واقعا.';
 

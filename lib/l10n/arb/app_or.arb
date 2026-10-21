@@ -738,5 +738,7 @@
   "portfolioCashEdit": "ନଗଦ ବାଲାନ୍ସ ସେଟ କରନ୍ତୁ",
   "portfolioDividendsExpected": "ପରବର୍ତ୍ତୀ ଆଶା କରାଯାଉଛି",
   "portfolioDividendsExpectedNote": "ଆପଣ ରେକର୍ଡ କରିଥିବା ପେମେଣ୍ଟର ତାରିଖ ଓ ରାଶିରୁ ଆକଳନ କରାଯାଇଛି; କମ୍ପାନୀମାନେ ଏହାକୁ ବଦଳାଇ ପାରନ୍ତି କିମ୍ବା ଛାଡ଼ି ଦେଇ ପାରନ୍ତି।",
-  "portfolioDividendAround": "{date} ପାଖାପାଖି"
+  "portfolioDividendAround": "{date} ପାଖାପାଖି",
+  "eventDividend": "ଡିଭିଡେଣ୍ଡ ଆଶା କରାଯାଉଛି",
+  "eventDividendEstimate": "ଆପଣ ରେକର୍ଡ କରିଥିବା ପେମେଣ୍ଟରୁ ଆକଳନ"
 }

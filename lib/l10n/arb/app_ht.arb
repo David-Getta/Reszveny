@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Fikse balans lajan kach",
   "portfolioDividendsExpected": "Pwochen yo atann",
   "portfolioDividendsExpectedNote": "Estime dapre dat ak montan peman ou te anrejistre yo; konpayi yo ka chanje yo oswa sote yo.",
-  "portfolioDividendAround": "anviwon {date}"
+  "portfolioDividendAround": "anviwon {date}",
+  "eventDividend": "Dividann yo atann",
+  "eventDividendEstimate": "Estime dapre peman ou te anrejistre yo"
 }

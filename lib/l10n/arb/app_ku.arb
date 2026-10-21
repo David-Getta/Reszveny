@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Bakiyeya nexd diyar bike",
   "portfolioDividendsExpected": "Ya din a tê hêvîkirin",
   "portfolioDividendsExpectedNote": "Li gorî dîrok û mîqdarên dayînên ku te tomar kirine hatiye texmînkirin; şirket dikarin wan biguherînin an jî nedin.",
-  "portfolioDividendAround": "li dora {date}"
+  "portfolioDividendAround": "li dora {date}",
+  "eventDividend": "Dividend tê hêvîkirin",
+  "eventDividendEstimate": "Ji dayînên te tomarkirî hatiye texmînkirin"
 }

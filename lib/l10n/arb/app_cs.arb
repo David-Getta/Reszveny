@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Nastavit hotovostní zůstatek",
   "portfolioDividendsExpected": "Další očekávané",
   "portfolioDividendsExpectedNote": "Odhad z dat a částek výplat, které jste zaznamenali; společnosti je mohou změnit nebo vynechat.",
-  "portfolioDividendAround": "kolem {date}"
+  "portfolioDividendAround": "kolem {date}",
+  "eventDividend": "Očekávaná dividenda",
+  "eventDividendEstimate": "Odhad z vašich zaznamenaných výplat"
 }

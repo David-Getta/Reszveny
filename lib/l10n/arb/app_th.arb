@@ -738,5 +738,7 @@
   "portfolioCashEdit": "ตั้งค่ายอดเงินสด",
   "portfolioDividendsExpected": "คาดว่าจะได้รับถัดไป",
   "portfolioDividendsExpectedNote": "ประมาณจากวันที่และจำนวนเงินของการจ่ายที่คุณบันทึกไว้ บริษัทอาจเปลี่ยนแปลงหรืองดจ่ายได้",
-  "portfolioDividendAround": "ประมาณ {date}"
+  "portfolioDividendAround": "ประมาณ {date}",
+  "eventDividend": "คาดว่าจะได้รับเงินปันผล",
+  "eventDividendEstimate": "ประมาณจากการจ่ายที่คุณบันทึกไว้"
 }

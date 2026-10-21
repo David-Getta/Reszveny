@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Imposta saldo liquidità",
   "portfolioDividendsExpected": "Prossimi attesi",
   "portfolioDividendsExpectedNote": "Stima basata su date e importi dei pagamenti che hai registrato; le società possono modificarli o saltarli.",
-  "portfolioDividendAround": "intorno al {date}"
+  "portfolioDividendAround": "intorno al {date}",
+  "eventDividend": "Dividendo atteso",
+  "eventDividendEstimate": "Stima basata sui pagamenti che hai registrato"
 }

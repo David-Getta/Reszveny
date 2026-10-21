@@ -1570,6 +1570,12 @@ class AppLocalizationsZh extends AppLocalizations {
   String get eventFromAnalysis => '来自你的分析';
 
   @override
+  String get eventDividend => '预计派息';
+
+  @override
+  String get eventDividendEstimate => '根据您记录的派息估算';
+
+  @override
   String get eventsHint => '收藏和投资组合中股票未来 90 天的财报日期，以及你的分析中标记的有日期的事件。';
 
   @override
@@ -4224,6 +4230,12 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get eventFromAnalysis => '來自你的分析';
+
+  @override
+  String get eventDividend => '預計派息';
+
+  @override
+  String get eventDividendEstimate => '根據你記錄的派息估算';
 
   @override
   String get eventsHint => '收藏及投資組合股票未來 90 日的業績公佈日期，以及你的分析所標示的有日期事件。';

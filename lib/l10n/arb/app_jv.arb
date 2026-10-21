@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Setel saldo kas",
   "portfolioDividendsExpected": "Sing dikarepake sabanjuré",
   "portfolioDividendsExpectedNote": "Dikira-kira saka tanggal lan jumlah pembayaran sing sampeyan cathet; perusahaan bisa ngowahi utawa ora mbayar.",
-  "portfolioDividendAround": "kira-kira {date}"
+  "portfolioDividendAround": "kira-kira {date}",
+  "eventDividend": "Dividen dikarepake",
+  "eventDividendEstimate": "Diperkirakan saka pembayaran sing kokcathet"
 }

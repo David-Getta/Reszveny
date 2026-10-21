@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Teeka ensimbi enkalu eziriwo",
   "portfolioDividendsExpected": "Ezisuubirwa okuddako",
   "portfolioDividendsExpectedNote": "Zibalirirwa okuva ku nnaku n'emiwendo gy'ensasula ze wawandiika; kkampuni zisobola okuzikyusa oba okuzibuuka.",
-  "portfolioDividendAround": "awo nga {date}"
+  "portfolioDividendAround": "awo nga {date}",
+  "eventDividend": "Dividendi esuubirwa",
+  "eventDividendEstimate": "Ebalirirwa okuva mu nsasula z'owandiise"
 }

@@ -1642,6 +1642,13 @@ class AppLocalizationsEl extends AppLocalizations {
   String get eventFromAnalysis => 'Από την ανάλυσή σας';
 
   @override
+  String get eventDividend => 'Αναμενόμενο μέρισμα';
+
+  @override
+  String get eventDividendEstimate =>
+      'Εκτίμηση από τις καταγεγραμμένες πληρωμές σας';
+
+  @override
   String get eventsHint =>
       'Ημερομηνίες αποτελεσμάτων των αγαπημένων σας και των μετοχών του χαρτοφυλακίου σας για τις επόμενες 90 ημέρες, καθώς και τα χρονολογημένα γεγονότα που επισήμαναν οι αναλύσεις σας.';
 

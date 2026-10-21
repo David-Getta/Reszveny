@@ -1631,6 +1631,12 @@ class AppLocalizationsBho extends AppLocalizations {
   String get eventFromAnalysis => 'रउरा विश्लेषण से';
 
   @override
+  String get eventDividend => 'डिविडेंड अपेक्षित';
+
+  @override
+  String get eventDividendEstimate => 'रउरा दर्ज कइल भुगतान से अनुमानित';
+
+  @override
   String get eventsHint =>
       'अगिला 90 दिन में रउरा पसंदीदा आ पोर्टफ़ोलियो शेयरन के नतीजा के तारीख, आ रउरा विश्लेषण में चिन्हित तारीख वाला घटना।';
 

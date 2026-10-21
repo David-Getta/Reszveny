@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Setează soldul de numerar",
   "portfolioDividendsExpected": "Următoarea estimată",
   "portfolioDividendsExpectedNote": "Estimat pe baza datelor și sumelor plăților înregistrate de tine; companiile le pot modifica sau omite.",
-  "portfolioDividendAround": "în jur de {date}"
+  "portfolioDividendAround": "în jur de {date}",
+  "eventDividend": "Dividend așteptat",
+  "eventDividendEstimate": "Estimat pe baza plăților înregistrate de tine"
 }

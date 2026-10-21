@@ -738,5 +738,7 @@
   "portfolioCashEdit": "रोख शिल्लक सेट करा",
   "portfolioDividendsExpected": "पुढील अपेक्षित",
   "portfolioDividendsExpectedNote": "तुम्ही नोंदवलेल्या पेमेंटच्या तारखा आणि रकमांवरून अंदाजित; कंपन्या ते बदलू किंवा वगळू शकतात.",
-  "portfolioDividendAround": "{date} च्या सुमारास"
+  "portfolioDividendAround": "{date} च्या सुमारास",
+  "eventDividend": "लाभांश अपेक्षित",
+  "eventDividendEstimate": "तुम्ही नोंदवलेल्या पेमेंटवरून अंदाजित"
 }

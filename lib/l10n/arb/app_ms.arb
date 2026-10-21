@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Tetapkan baki tunai",
   "portfolioDividendsExpected": "Dijangka seterusnya",
   "portfolioDividendsExpectedNote": "Dianggarkan daripada tarikh dan jumlah pembayaran yang anda rekodkan; syarikat boleh mengubah atau melangkaunya.",
-  "portfolioDividendAround": "sekitar {date}"
+  "portfolioDividendAround": "sekitar {date}",
+  "eventDividend": "Dividen dijangka",
+  "eventDividendEstimate": "Dianggarkan daripada pembayaran yang anda rekodkan"
 }

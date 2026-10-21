@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Naqd pul qoldigʻini belgilash",
   "portfolioDividendsExpected": "Keyingi kutilayotgan",
   "portfolioDividendsExpectedNote": "Siz yozgan toʻlovlarning sana va summalari asosida hisoblangan; kompaniyalar ularni oʻzgartirishi yoki toʻlamasligi mumkin.",
-  "portfolioDividendAround": "taxminan {date}"
+  "portfolioDividendAround": "taxminan {date}",
+  "eventDividend": "Kutilayotgan dividend",
+  "eventDividendEstimate": "Siz yozgan toʻlovlar asosida hisoblangan"
 }

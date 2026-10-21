@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Angiv kontantsaldo",
   "portfolioDividendsExpected": "Forventet næste",
   "portfolioDividendsExpectedNote": "Skønnet ud fra datoer og beløb på de udbetalinger, du har registreret; selskaber kan ændre eller springe dem over.",
-  "portfolioDividendAround": "omkring {date}"
+  "portfolioDividendAround": "omkring {date}",
+  "eventDividend": "Udbytte forventes",
+  "eventDividendEstimate": "Anslået ud fra dine registrerede udbetalinger"
 }

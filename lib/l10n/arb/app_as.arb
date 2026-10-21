@@ -738,5 +738,7 @@
   "portfolioCashEdit": "নগদ বেলেঞ্চ ছেট কৰক",
   "portfolioDividendsExpected": "পৰবৰ্তী প্ৰত্যাশিত",
   "portfolioDividendsExpectedNote": "আপুনি লিপিবদ্ধ কৰা পৰিশোধৰ তাৰিখ আৰু পৰিমাণৰ পৰা অনুমান কৰা; কোম্পানীসমূহে ইয়াক সলনি কৰিব বা বাদ দিব পাৰে।",
-  "portfolioDividendAround": "প্ৰায় {date}"
+  "portfolioDividendAround": "প্ৰায় {date}",
+  "eventDividend": "লাভাংশ প্ৰত্যাশিত",
+  "eventDividendEstimate": "আপোনাৰ লিপিবদ্ধ পৰিশোধৰ পৰা অনুমানিত"
 }

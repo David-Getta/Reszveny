@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Beha chelete e setseng",
   "portfolioDividendsExpected": "Tse latelang tse lebelletsweng",
   "portfolioDividendsExpectedNote": "Di hakanyeditswe ho tswa ho matsatsi le ditjhelete tsa ditefo tseo o di tlalehileng; dik'hamphani di ka di fetola kapa tsa di tlola.",
-  "portfolioDividendAround": "hoo e ka bang {date}"
+  "portfolioDividendAround": "hoo e ka bang {date}",
+  "eventDividend": "Dividende e lebelletsweng",
+  "eventDividendEstimate": "E hakanyeditswe ho tswa ditefong tseo o di tlalehileng"
 }

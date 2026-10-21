@@ -1641,6 +1641,12 @@ class AppLocalizationsSq extends AppLocalizations {
   String get eventFromAnalysis => 'Nga analiza jote';
 
   @override
+  String get eventDividend => 'Dividendë i pritur';
+
+  @override
+  String get eventDividendEstimate => 'Vlerësuar nga pagesat që regjistruat';
+
+  @override
   String get eventsHint =>
       'Datat e rezultateve të aksioneve të preferuara dhe të portofolit tënd për 90 ditët e ardhshme, si dhe ngjarjet me datë të shënuara nga analizat e tua.';
 

@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Nakit bakiyesini ayarla",
   "portfolioDividendsExpected": "Sıradaki beklenen",
   "portfolioDividendsExpectedNote": "Kaydettiğiniz ödemelerin tarih ve tutarlarından tahmin edilmiştir; şirketler bunları değiştirebilir veya ödemeyebilir.",
-  "portfolioDividendAround": "{date} civarı"
+  "portfolioDividendAround": "{date} civarı",
+  "eventDividend": "Temettü bekleniyor",
+  "eventDividendEstimate": "Kaydettiğiniz ödemelerden tahmin edilmiştir"
 }

@@ -1642,6 +1642,12 @@ class AppLocalizationsHy extends AppLocalizations {
   String get eventFromAnalysis => 'Ձեր վերլուծությունից';
 
   @override
+  String get eventDividend => 'Սպասվող շահաբաժին';
+
+  @override
+  String get eventDividendEstimate => 'Գնահատված ձեր գրանցած վճարումներից';
+
+  @override
   String get eventsHint =>
       'Ձեր ընտրյալների և պորտֆելի բաժնետոմսերի արդյունքների ամսաթվերը առաջիկա 90 օրվա համար, ինչպես նաև ձեր վերլուծությունների նշած ամսաթվով իրադարձությունները։';
 

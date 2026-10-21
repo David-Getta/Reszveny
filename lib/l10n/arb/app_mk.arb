@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Постави салдо во готовина",
   "portfolioDividendsExpected": "Следна очекувана",
   "portfolioDividendsExpectedNote": "Проценето од датумите и износите на исплатите што ги евидентиравте; компаниите можат да ги променат или прескокнат.",
-  "portfolioDividendAround": "околу {date}"
+  "portfolioDividendAround": "околу {date}",
+  "eventDividend": "Очекувана дивиденда",
+  "eventDividendEstimate": "Проценето од исплатите што ги евидентиравте"
 }

@@ -1638,6 +1638,13 @@ class AppLocalizationsMs extends AppLocalizations {
   String get eventFromAnalysis => 'Daripada analisis anda';
 
   @override
+  String get eventDividend => 'Dividen dijangka';
+
+  @override
+  String get eventDividendEstimate =>
+      'Dianggarkan daripada pembayaran yang anda rekodkan';
+
+  @override
   String get eventsHint =>
       'Tarikh keputusan saham kegemaran dan portfolio anda untuk 90 hari akan datang, serta acara bertarikh yang ditandakan oleh analisis anda.';
 

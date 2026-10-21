@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Nagt pul galyndysyny belle",
   "portfolioDividendsExpected": "Indiki garaşylýan",
   "portfolioDividendsExpectedNote": "Siziň ýazan tölegleriňiziň seneleri we möçberleri esasynda çaklanyldy; kompaniýalar olary üýtgedip ýa-da geçirmän bilerler.",
-  "portfolioDividendAround": "takmynan {date}"
+  "portfolioDividendAround": "takmynan {date}",
+  "eventDividend": "Garaşylýan diwidend",
+  "eventDividendEstimate": "Siziň ýazan tölegleriňiz esasynda çaklanyldy"
 }

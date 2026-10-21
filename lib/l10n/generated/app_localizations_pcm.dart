@@ -1635,6 +1635,12 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get eventFromAnalysis => 'From your analysis';
 
   @override
+  String get eventDividend => 'Dividend wey we expect';
+
+  @override
+  String get eventDividendEstimate => 'We guess am from di payments you record';
+
+  @override
   String get eventsHint =>
       'Result dates for your favourites and portfolio stocks for the next 90 days, plus the events wey get date wey your analysis dem flag.';
 

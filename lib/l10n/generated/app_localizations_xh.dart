@@ -1642,6 +1642,12 @@ class AppLocalizationsXh extends AppLocalizations {
   String get eventFromAnalysis => 'Kuhlalutyo lwakho';
 
   @override
+  String get eventDividend => 'Isahlulo esilindelekileyo';
+
+  @override
+  String get eventDividendEstimate => 'Siqikelelwe kwiintlawulo ozirekhodileyo';
+
+  @override
   String get eventsHint =>
       'Imihla yeziphumo zezabelo ozithandayo nezepotifoliyo yakho kwiintsuku ezingama-90 ezizayo, kunye neziganeko ezinemihla eziphawulwe luhlalutyo lwakho.';
 

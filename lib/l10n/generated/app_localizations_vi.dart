@@ -1629,6 +1629,13 @@ class AppLocalizationsVi extends AppLocalizations {
   String get eventFromAnalysis => 'Từ phân tích của bạn';
 
   @override
+  String get eventDividend => 'Dự kiến có cổ tức';
+
+  @override
+  String get eventDividendEstimate =>
+      'Ước tính từ các khoản chi trả bạn đã ghi lại';
+
+  @override
   String get eventsHint =>
       'Ngày công bố kết quả kinh doanh của các cổ phiếu yêu thích và trong danh mục của bạn trong 90 ngày tới, cùng các sự kiện có ngày cụ thể mà phân tích của bạn đã đánh dấu.';
 

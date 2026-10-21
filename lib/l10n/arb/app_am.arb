@@ -738,5 +738,7 @@
   "portfolioCashEdit": "የጥሬ ገንዘብ ሚዛን አስቀምጥ",
   "portfolioDividendsExpected": "ቀጥሎ የሚጠበቅ",
   "portfolioDividendsExpectedNote": "ከመዘገቡት ክፍያዎች ቀናትና መጠኖች የተገመተ ነው፤ ኩባንያዎች ሊለውጡት ወይም ሊያቋርጡት ይችላሉ።",
-  "portfolioDividendAround": "{date} አካባቢ"
+  "portfolioDividendAround": "{date} አካባቢ",
+  "eventDividend": "የትርፍ ድርሻ ይጠበቃል",
+  "eventDividendEstimate": "ከመዘገቡት ክፍያዎች የተገመተ"
 }

@@ -1632,6 +1632,12 @@ class AppLocalizationsOr extends AppLocalizations {
   String get eventFromAnalysis => 'ଆପଣଙ୍କ ବିଶ୍ଳେଷଣରୁ';
 
   @override
+  String get eventDividend => 'ଡିଭିଡେଣ୍ଡ ଆଶା କରାଯାଉଛି';
+
+  @override
+  String get eventDividendEstimate => 'ଆପଣ ରେକର୍ଡ କରିଥିବା ପେମେଣ୍ଟରୁ ଆକଳନ';
+
+  @override
   String get eventsHint =>
       'ଆଗାମୀ 90 ଦିନରେ ଆପଣଙ୍କ ପସନ୍ଦ ଓ ପୋର୍ଟଫୋଲିଓ ଶେୟାରଗୁଡ଼ିକର ଫଳାଫଳ ତାରିଖ, ଏବଂ ଆପଣଙ୍କ ବିଶ୍ଳେଷଣ ଚିହ୍ନିତ କରିଥିବା ତାରିଖଯୁକ୍ତ ଘଟଣା।';
 

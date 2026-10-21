@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Setha ibhalansi yemali",
   "portfolioDividendsExpected": "Okulindelekile okulandelayo",
   "portfolioDividendsExpectedNote": "Kulinganiselwe ezinsukwini nasemalini yezinkokhelo ozirekhodile; izinkampani zingazishintsha noma zizeqe.",
-  "portfolioDividendAround": "cishe ngo-{date}"
+  "portfolioDividendAround": "cishe ngo-{date}",
+  "eventDividend": "Isabelo senzuzo esilindelekile",
+  "eventDividendEstimate": "Kulinganiselwe ezinkokhelweni ozirekhodile"
 }

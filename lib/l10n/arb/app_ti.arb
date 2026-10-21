@@ -738,5 +738,7 @@
   "portfolioCashEdit": "ተረፍ ጥረ ገንዘብ ኣቐምጥ",
   "portfolioDividendsExpected": "ቀጺሉ ዝተጸበ",
   "portfolioDividendsExpectedNote": "ካብ ዕለታትን መጠንን ናይቶም ዝመዝገብካዮም ክፍሊታት ዝተገመተ፤ ኩባንያታት ክቕይርወን ወይ ክሓልፍወን ይኽእሉ።",
-  "portfolioDividendAround": "ኣብ ከባቢ {date}"
+  "portfolioDividendAround": "ኣብ ከባቢ {date}",
+  "eventDividend": "ድቪደንድ ዝተጸበ",
+  "eventDividendEstimate": "ካብቶም ዝመዝገብካዮም ክፍሊታት ዝተገመተ"
 }

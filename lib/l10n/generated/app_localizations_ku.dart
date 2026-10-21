@@ -1637,6 +1637,13 @@ class AppLocalizationsKu extends AppLocalizations {
   String get eventFromAnalysis => 'Ji analîza te';
 
   @override
+  String get eventDividend => 'Dividend tê hêvîkirin';
+
+  @override
+  String get eventDividendEstimate =>
+      'Ji dayînên te tomarkirî hatiye texmînkirin';
+
+  @override
   String get eventsHint =>
       'Dîrokên encamên bijare û pişkên portfolyoya te ji bo 90 rojên bê, û bûyerên bi dîrok ên ku analîzên te nîşan dane.';
 

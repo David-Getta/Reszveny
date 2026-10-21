@@ -1641,6 +1641,12 @@ class AppLocalizationsGn extends AppLocalizations {
   String get eventFromAnalysis => 'Nde jehesaʼỹijogui';
 
   @override
+  String get eventDividend => 'Dividendo oñeha\'arõva';
+
+  @override
+  String get eventDividendEstimate => 'Ojeha\'ã umi pago rehaiva\'ekue rehe';
+
+  @override
   String get eventsHint =>
       'Umi ojeguerohoryvéva ha nde cartera acción resultado ára 90 ára oúvape, ha umi mbaʼe ára reheguáva nde jehesaʼỹijokuéra ohechaukáva.';
 

@@ -1587,6 +1587,12 @@ class AppLocalizationsKo extends AppLocalizations {
   String get eventFromAnalysis => '내 분석에서';
 
   @override
+  String get eventDividend => '배당금 예상';
+
+  @override
+  String get eventDividendEstimate => '기록한 배당 내역으로 추정';
+
+  @override
   String get eventsHint =>
       '향후 90일간 즐겨찾기 및 포트폴리오 종목의 실적 발표일과 내 분석에서 찾은 날짜가 정해진 이벤트입니다.';
 

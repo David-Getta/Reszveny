@@ -1646,6 +1646,13 @@ class AppLocalizationsHil extends AppLocalizations {
   String get eventFromAnalysis => 'Halin sa imo analisis';
 
   @override
+  String get eventDividend => 'Ginapaabot nga dibidendo';
+
+  @override
+  String get eventDividendEstimate =>
+      'Ginbanta-banta halin sa imo narekord nga mga bayad';
+
+  @override
   String get eventsHint =>
       'Mga petsa sang resulta sang imo mga paborito kag mga stock sa portfolio para sa masunod nga 90 ka adlaw, kag ang mga hitabo nga may petsa nga gin-markahan sang imo mga analisis.';
 

@@ -1620,6 +1620,12 @@ class AppLocalizationsKm extends AppLocalizations {
   String get eventFromAnalysis => 'ពីការវិភាគរបស់អ្នក';
 
   @override
+  String get eventDividend => 'ភាគលាភរំពឹងទុក';
+
+  @override
+  String get eventDividendEstimate => 'ប៉ាន់ស្មានពីការទូទាត់ដែលអ្នកបានកត់ត្រា';
+
+  @override
   String get eventsHint =>
       'កាលបរិច្ឆេទលទ្ធផលនៃភាគហ៊ុនចំណូលចិត្ត និងភាគហ៊ុនក្នុងផលប័ត្ររបស់អ្នក សម្រាប់ 90 ថ្ងៃខាងមុខ និងព្រឹត្តិការណ៍មានកាលបរិច្ឆេទដែលការវិភាគរបស់អ្នកបានចង្អុលបង្ហាញ។';
 

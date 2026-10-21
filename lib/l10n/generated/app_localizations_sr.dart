@@ -1670,6 +1670,13 @@ class AppLocalizationsSr extends AppLocalizations {
   String get eventFromAnalysis => 'Из ваше анализе';
 
   @override
+  String get eventDividend => 'Очекивана дивиденда';
+
+  @override
+  String get eventDividendEstimate =>
+      'Процењено на основу исплата које сте евидентирали';
+
+  @override
   String get eventsHint =>
       'Датуми објаве резултата ваших омиљених акција и акција из портфолија за наредних 90 дана, као и датирани догађаји које су ваше анализе издвојиле.';
 

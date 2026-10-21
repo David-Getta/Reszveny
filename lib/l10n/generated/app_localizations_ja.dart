@@ -1584,6 +1584,12 @@ class AppLocalizationsJa extends AppLocalizations {
   String get eventFromAnalysis => '自分の分析から';
 
   @override
+  String get eventDividend => '配当予定';
+
+  @override
+  String get eventDividendEstimate => '記録済みの受取額から推定';
+
+  @override
   String get eventsHint =>
       'お気に入りとポートフォリオの銘柄の今後 90 日間の決算発表日と、分析で示された日付付きのイベントです。';
 

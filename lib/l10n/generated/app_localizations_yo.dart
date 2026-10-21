@@ -1634,6 +1634,13 @@ class AppLocalizationsYo extends AppLocalizations {
   String get eventFromAnalysis => 'Láti inú ìtúpalẹ̀ yín';
 
   @override
+  String get eventDividend => 'Ìpín èrè tí a ń retí';
+
+  @override
+  String get eventDividendEstimate =>
+      'A fojú díwọ̀n rẹ̀ láti ara ìsanwó tí o kọ sílẹ̀';
+
+  @override
   String get eventsHint =>
       'Ọjọ́ àbájáde àwọn ìpín ààyò yín àti ti àpò ìdókòwò yín fún ọjọ́ 90 tó ń bọ̀, àti àwọn ìṣẹ̀lẹ̀ tó ní ọjọ́ tí àwọn ìtúpalẹ̀ yín tọ́ka sí.';
 

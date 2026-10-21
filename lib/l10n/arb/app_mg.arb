@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Hametraka ny vola eo an-tanana",
   "portfolioDividendsExpected": "Andrasana manaraka",
   "portfolioDividendsExpectedNote": "Tombanana avy amin'ny daty sy ny vola tamin'ny fandoavana noraketinao; mety hanova na handingana azy ireo ny orinasa.",
-  "portfolioDividendAround": "manodidina ny {date}"
+  "portfolioDividendAround": "manodidina ny {date}",
+  "eventDividend": "Dividandy andrasana",
+  "eventDividendEstimate": "Tombanana avy amin'ny fandoavana noraketinao"
 }

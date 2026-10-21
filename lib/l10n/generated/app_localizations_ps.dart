@@ -1629,6 +1629,13 @@ class AppLocalizationsPs extends AppLocalizations {
   String get eventFromAnalysis => 'ستاسو له تحلیل څخه';
 
   @override
+  String get eventDividend => 'ډیویډنډ تمه کېږي';
+
+  @override
+  String get eventDividendEstimate =>
+      'ستاسو د ثبت شویو تادیاتو له مخې اټکل شوی';
+
+  @override
   String get eventsHint =>
       'ستاسو د خوښې او پورټفولیو ونډو د پایلو نېټې په راتلونکو 90 ورځو کې، او هغه نېټه لرونکې پېښې چې ستاسو تحلیلونو په ګوته کړې دي.';
 

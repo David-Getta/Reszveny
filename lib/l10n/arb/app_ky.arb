@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Нак акча калдыгын коюу",
   "portfolioDividendsExpected": "Кийинки күтүлгөн",
   "portfolioDividendsExpectedNote": "Сиз жазган төлөмдөрдүн күндөрү менен суммалары боюнча болжолдонгон; компаниялар аларды өзгөртө же өткөрүп жибере алат.",
-  "portfolioDividendAround": "болжол менен {date}"
+  "portfolioDividendAround": "болжол менен {date}",
+  "eventDividend": "Дивиденд күтүлөт",
+  "eventDividendEstimate": "Сиз жазган төлөмдөр боюнча болжолдонду"
 }

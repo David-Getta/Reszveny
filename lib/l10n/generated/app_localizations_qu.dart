@@ -1645,6 +1645,12 @@ class AppLocalizationsQu extends AppLocalizations {
   String get eventFromAnalysis => 'T\'aqwiyniykimanta';
 
   @override
+  String get eventDividend => 'Dividendo suyasqa';
+
+  @override
+  String get eventDividendEstimate => 'Qillqasqayki pagokunamanta yupasqa';
+
+  @override
   String get eventsHint =>
       'Munasqaykikunap, portafolioykip acciónninkunap willakuy p\'unchayninkuna hamuq 90 p\'unchaykunapi, t\'aqwiyniykikuna qhawachisqan p\'unchayniyuq ruwaykunapas.';
 

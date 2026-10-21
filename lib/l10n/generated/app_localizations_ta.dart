@@ -1643,6 +1643,13 @@ class AppLocalizationsTa extends AppLocalizations {
   String get eventFromAnalysis => 'உங்கள் பகுப்பாய்விலிருந்து';
 
   @override
+  String get eventDividend => 'ஈவுத்தொகை எதிர்பார்ப்பு';
+
+  @override
+  String get eventDividendEstimate =>
+      'நீங்கள் பதிவு செய்த செலுத்தல்களிலிருந்து மதிப்பிடப்பட்டது';
+
+  @override
   String get eventsHint =>
       'அடுத்த 90 நாட்களில் உங்கள் பிடித்தவை மற்றும் போர்ட்ஃபோலியோ பங்குகளின் முடிவு தேதிகள், மற்றும் உங்கள் பகுப்பாய்வுகள் குறிப்பிட்ட தேதியிட்ட நிகழ்வுகள்.';
 

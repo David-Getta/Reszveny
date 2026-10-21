@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Définir le solde de liquidités",
   "portfolioDividendsExpected": "Prochains attendus",
   "portfolioDividendsExpectedNote": "Estimation d’après les dates et montants des versements que vous avez enregistrés ; les sociétés peuvent les modifier ou les supprimer.",
-  "portfolioDividendAround": "vers le {date}"
+  "portfolioDividendAround": "vers le {date}",
+  "eventDividend": "Dividende attendu",
+  "eventDividendEstimate": "Estimation d’après vos versements enregistrés"
 }

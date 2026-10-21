@@ -1634,6 +1634,12 @@ class AppLocalizationsSi extends AppLocalizations {
   String get eventFromAnalysis => 'ඔබේ විශ්ලේෂණයෙන්';
 
   @override
+  String get eventDividend => 'ලාභාංශ අපේක්ෂිතයි';
+
+  @override
+  String get eventDividendEstimate => 'ඔබ සටහන් කළ ගෙවීම් මත ඇස්තමේන්තු කර ඇත';
+
+  @override
   String get eventsHint =>
       'ඉදිරි දින 90 තුළ ඔබේ ප්‍රියතම සහ කළඹේ කොටස්වල ප්‍රතිඵල දින, සහ ඔබේ විශ්ලේෂණ මගින් සලකුණු කළ දින සහිත සිදුවීම්.';
 

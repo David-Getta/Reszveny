@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Wari gansan hakɛ sigi",
   "portfolioDividendsExpected": "Nata minnu bɛ makɔnɔ",
   "portfolioDividendsExpectedNote": "A jatebɔra sarali donw ni hakɛw kan, i ye minnu sɛbɛn; sosiyetew bɛ se k'u yɛlɛma walima k'u to yen.",
-  "portfolioDividendAround": "{date} ɲɔgɔn"
+  "portfolioDividendAround": "{date} ɲɔgɔn",
+  "eventDividend": "Dividandi bɛ makɔnɔ",
+  "eventDividendEstimate": "A jatelen ka bɔ i ka sarali sɛbɛnnenw na"
 }

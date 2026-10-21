@@ -1632,6 +1632,13 @@ class AppLocalizationsBm extends AppLocalizations {
   String get eventFromAnalysis => 'Ka bɔ i ka sɛgɛsɛgɛli la';
 
   @override
+  String get eventDividend => 'Dividandi bɛ makɔnɔ';
+
+  @override
+  String get eventDividendEstimate =>
+      'A jatelen ka bɔ i ka sarali sɛbɛnnenw na';
+
+  @override
   String get eventsHint =>
       'I ka diyanyelenw ni i ka aksiyɔn kɛsu aksiyɔnw jatebɔ donw tile 90 nataw kɔnɔ, ani ko nataw minnu don sɛbɛnna i ka sɛgɛsɛgɛliw fɛ.';
 

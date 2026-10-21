@@ -1635,6 +1635,13 @@ class AppLocalizationsSv extends AppLocalizations {
   String get eventFromAnalysis => 'Från din analys';
 
   @override
+  String get eventDividend => 'Väntad utdelning';
+
+  @override
+  String get eventDividendEstimate =>
+      'Uppskattat utifrån de utdelningar du registrerat';
+
+  @override
   String get eventsHint =>
       'Rapportdatum för dina favoriter och portföljaktier de kommande 90 dagarna, samt daterade händelser som dina analyser har flaggat.';
 

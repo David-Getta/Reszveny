@@ -738,5 +738,7 @@
   "portfolioCashEdit": "نغدي بیلانس ټاکل",
   "portfolioDividendsExpected": "راتلونکی تمه کېدونکی",
   "portfolioDividendsExpectedNote": "ستاسو د ثبت شویو تادیاتو له نېټو او اندازو اټکل شوی؛ شرکتونه کولای شي دا بدل کړي یا پرېږدي.",
-  "portfolioDividendAround": "نږدې {date}"
+  "portfolioDividendAround": "نږدې {date}",
+  "eventDividend": "ډیویډنډ تمه کېږي",
+  "eventDividendEstimate": "ستاسو د ثبت شویو تادیاتو له مخې اټکل شوی"
 }

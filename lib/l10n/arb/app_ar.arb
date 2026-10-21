@@ -738,5 +738,7 @@
   "portfolioCashEdit": "تعيين الرصيد النقدي",
   "portfolioDividendsExpected": "المتوقع تاليًا",
   "portfolioDividendsExpectedNote": "تقدير مبني على تواريخ ومبالغ الدفعات التي سجّلتها؛ قد تغيّرها الشركات أو تتخلّف عنها.",
-  "portfolioDividendAround": "حوالي {date}"
+  "portfolioDividendAround": "حوالي {date}",
+  "eventDividend": "توزيعات أرباح متوقعة",
+  "eventDividendEstimate": "تقدير من الدفعات التي سجّلتها"
 }

@@ -1643,6 +1643,13 @@ class AppLocalizationsCeb extends AppLocalizations {
   String get eventFromAnalysis => 'Gikan sa imong pagtuki';
 
   @override
+  String get eventDividend => 'Gipaabot nga dibidendo';
+
+  @override
+  String get eventDividendEstimate =>
+      'Gibanabana gikan sa imong narekord nga mga bayad';
+
+  @override
   String get eventsHint =>
       'Mga petsa sa resulta sa imong mga paborito ug mga stock sa portfolio sulod sa sunod 90 ka adlaw, ug ang mga panghitabo nga may petsa nga gimarkahan sa imong mga pagtuki.';
 

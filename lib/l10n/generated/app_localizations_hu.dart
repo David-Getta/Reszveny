@@ -1640,6 +1640,12 @@ class AppLocalizationsHu extends AppLocalizations {
   String get eventFromAnalysis => 'Az elemzésedből';
 
   @override
+  String get eventDividend => 'Várható osztalék';
+
+  @override
+  String get eventDividendEstimate => 'A rögzített kifizetéseidből becsülve';
+
+  @override
   String get eventsHint =>
       'A kedvenceid és a portfóliód részvényeinek gyorsjelentései a következő 90 napban, és az elemzéseidben megjelölt dátumos események.';
 

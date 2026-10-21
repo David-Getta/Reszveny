@@ -738,5 +738,7 @@
   "portfolioCashEdit": "રોકડ બેલેન્સ સેટ કરો",
   "portfolioDividendsExpected": "આગામી અપેક્ષિત",
   "portfolioDividendsExpectedNote": "તમે નોંધેલી ચુકવણીઓની તારીખો અને રકમો પરથી અંદાજિત; કંપનીઓ તેમાં ફેરફાર કરી શકે અથવા છોડી શકે છે.",
-  "portfolioDividendAround": "અંદાજે {date}"
+  "portfolioDividendAround": "અંદાજે {date}",
+  "eventDividend": "ડિવિડન્ડ અપેક્ષિત",
+  "eventDividendEstimate": "તમારી નોંધેલી ચુકવણીઓ પરથી અંદાજિત"
 }

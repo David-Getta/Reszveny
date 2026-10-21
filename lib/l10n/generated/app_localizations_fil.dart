@@ -1641,6 +1641,13 @@ class AppLocalizationsFil extends AppLocalizations {
   String get eventFromAnalysis => 'Mula sa iyong pagsusuri';
 
   @override
+  String get eventDividend => 'Inaasahang dibidendo';
+
+  @override
+  String get eventDividendEstimate =>
+      'Tinantya mula sa iyong mga naitalang bayad';
+
+  @override
   String get eventsHint =>
       'Mga petsa ng resulta ng iyong mga paborito at stock sa portfolio sa susunod na 90 araw, at ang mga kaganapang may petsa na na-flag ng iyong mga pagsusuri.';
 

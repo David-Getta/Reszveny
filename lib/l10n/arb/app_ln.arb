@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Tiá mbɔngɔ ya mabɔkɔ",
   "portfolioDividendsExpected": "Ezelami na nsima",
   "portfolioDividendsExpectedNote": "Etangami na mikolo mpe na motango ya mbongo ya bafuti oyo okomaki; ba kompanyi ekoki kobongola yango to kotika yango.",
-  "portfolioDividendAround": "pene na {date}"
+  "portfolioDividendAround": "pene na {date}",
+  "eventDividend": "Dividende ezelami",
+  "eventDividendEstimate": "Etangami na ba futa oyo okomaki"
 }

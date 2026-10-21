@@ -738,5 +738,7 @@
   "portfolioCashEdit": "I-set ang balanse sang cash",
   "portfolioDividendsExpected": "Ginapaabot nga masunod",
   "portfolioDividendsExpectedNote": "Ginbanta-banta halin sa mga petsa kag kantidad sang mga bayad nga narekord mo; mahimo ini bag-uhon ukon laktawan sang mga kompanya.",
-  "portfolioDividendAround": "mga {date}"
+  "portfolioDividendAround": "mga {date}",
+  "eventDividend": "Ginapaabot nga dibidendo",
+  "eventDividendEstimate": "Ginbanta-banta halin sa imo narekord nga mga bayad"
 }

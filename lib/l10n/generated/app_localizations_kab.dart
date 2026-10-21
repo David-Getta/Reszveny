@@ -1633,6 +1633,12 @@ class AppLocalizationsKab extends AppLocalizations {
   String get eventFromAnalysis => 'Seg tesleḍt-ik';
 
   @override
+  String get eventDividend => 'Dividende yettwaṛǧun';
+
+  @override
+  String get eventDividendEstimate => 'Yettwaḥseb seg lexlaṣat i tesekleseḍ';
+
+  @override
   String get eventsHint =>
       'Izemziyen n yigmaḍ n yismenyifen-ik d wayen yellan deg uqrab-ik i 90 n wussan i d-iteddun, akked tidyanin s uzemz i d-mmlent tselḍin-ik.';
 

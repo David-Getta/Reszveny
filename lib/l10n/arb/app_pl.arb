@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Ustaw saldo gotówkowe",
   "portfolioDividendsExpected": "Następna spodziewana",
   "portfolioDividendsExpectedNote": "Oszacowano na podstawie dat i kwot zapisanych wypłat; spółki mogą je zmienić lub pominąć.",
-  "portfolioDividendAround": "około {date}"
+  "portfolioDividendAround": "około {date}",
+  "eventDividend": "Spodziewana dywidenda",
+  "eventDividendEstimate": "Oszacowano na podstawie zapisanych wypłat"
 }

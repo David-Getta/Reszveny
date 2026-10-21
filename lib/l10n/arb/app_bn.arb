@@ -738,5 +738,7 @@
   "portfolioCashEdit": "নগদ ব্যালেন্স সেট করুন",
   "portfolioDividendsExpected": "পরবর্তী প্রত্যাশিত",
   "portfolioDividendsExpectedNote": "আপনার নথিভুক্ত পেমেন্টের তারিখ ও পরিমাণ থেকে অনুমান করা; কোম্পানি এগুলো বদলাতে বা বাদ দিতে পারে।",
-  "portfolioDividendAround": "আনুমানিক {date}"
+  "portfolioDividendAround": "আনুমানিক {date}",
+  "eventDividend": "ডিভিডেন্ড প্রত্যাশিত",
+  "eventDividendEstimate": "আপনার নথিভুক্ত পেমেন্ট থেকে আনুমানিক"
 }

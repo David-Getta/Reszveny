@@ -1630,6 +1630,13 @@ class AppLocalizationsId extends AppLocalizations {
   String get eventFromAnalysis => 'Dari analisis Anda';
 
   @override
+  String get eventDividend => 'Dividen diperkirakan';
+
+  @override
+  String get eventDividendEstimate =>
+      'Diperkirakan dari pembayaran yang Anda catat';
+
+  @override
   String get eventsHint =>
       'Tanggal laporan saham favorit dan portofolio Anda untuk 90 hari ke depan, serta agenda bertanggal yang ditandai analisis Anda.';
 

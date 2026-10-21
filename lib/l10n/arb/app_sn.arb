@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Isa mari yasara",
   "portfolioDividendsExpected": "Zvinotarisirwa zvinotevera",
   "portfolioDividendsExpectedNote": "Zvakafungidzirwa kubva pamazuva nemari yemibhadharo yawakanyora; makambani anogona kuzvichinja kana kuzvisiya.",
-  "portfolioDividendAround": "panenge {date}"
+  "portfolioDividendAround": "panenge {date}",
+  "eventDividend": "Dividendi inotarisirwa",
+  "eventDividendEstimate": "Zvakafungidzirwa kubva pamibhadharo yawakanyora"
 }

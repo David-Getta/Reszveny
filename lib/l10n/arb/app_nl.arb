@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Cashsaldo instellen",
   "portfolioDividendsExpected": "Volgende verwacht",
   "portfolioDividendsExpectedNote": "Geschat op basis van de datums en bedragen van de uitkeringen die je hebt vastgelegd; bedrijven kunnen ze wijzigen of overslaan.",
-  "portfolioDividendAround": "rond {date}"
+  "portfolioDividendAround": "rond {date}",
+  "eventDividend": "Dividend verwacht",
+  "eventDividendEstimate": "Geschat op basis van de uitkeringen die je hebt vastgelegd"
 }

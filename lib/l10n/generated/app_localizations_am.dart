@@ -1609,6 +1609,12 @@ class AppLocalizationsAm extends AppLocalizations {
   String get eventFromAnalysis => 'ከትንተናዎ';
 
   @override
+  String get eventDividend => 'የትርፍ ድርሻ ይጠበቃል';
+
+  @override
+  String get eventDividendEstimate => 'ከመዘገቡት ክፍያዎች የተገመተ';
+
+  @override
   String get eventsHint =>
       'ለሚቀጥሉት 90 ቀናት የተወዳጆችዎ እና የፖርትፎሊዮ አክሲዮኖችዎ የውጤት ቀናት፣ እንዲሁም ትንተናዎችዎ የጠቆሟቸው ቀን ያላቸው ክስተቶች።';
 

@@ -738,5 +738,7 @@
   "portfolioCashEdit": "དངུལ་རྐྱང་ལྷག་མ་སྒྲིག་པ",
   "portfolioDividendsExpected": "རྗེས་མར་རེ་བ་ཡོད་པ།",
   "portfolioDividendsExpectedNote": "ཁྱེད་ཀྱིས་ཐོ་འགོད་བྱས་པའི་སྤྲོད་ཆའི་ཚེས་གྲངས་དང་གྲངས་ཚད་ལ་གཞིགས་པའི་ཚོད་དཔག་ཡིན། ཚོང་ལས་ཁང་གིས་བསྒྱུར་བཅོས་བྱེད་པའམ་མཆོངས་སྲིད།",
-  "portfolioDividendAround": "{date} ཙམ་ལ།"
+  "portfolioDividendAround": "{date} ཙམ་ལ།",
+  "eventDividend": "ཁེ་བགོས་རེ་བ་ཡོད།",
+  "eventDividendEstimate": "ཁྱེད་ཀྱིས་ཐོ་བཀོད་པའི་སྤྲོད་ཆ་ནས་ཚོད་དཔག་བྱས་པ།"
 }

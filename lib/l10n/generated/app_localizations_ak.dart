@@ -1634,6 +1634,13 @@ class AppLocalizationsAk extends AppLocalizations {
   String get eventFromAnalysis => 'Efi wo nhwehwɛmu mu';
 
   @override
+  String get eventDividend => 'Dividend a wɔhwɛ kwan';
+
+  @override
+  String get eventDividendEstimate =>
+      'Wɔabu akontaa afi ntua a wokyerɛw too hɔ mu';
+
+  @override
   String get eventsHint =>
       'Nea mepɛ ne wo nkyɛfa mu kyɛfa akontaabu da wɔ nnafua 90 a ɛreba no mu, ne nsɛm a ɛwɔ da a wo nhwehwɛmu ahu.';
 

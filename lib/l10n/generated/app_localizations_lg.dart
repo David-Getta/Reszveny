@@ -1644,6 +1644,13 @@ class AppLocalizationsLg extends AppLocalizations {
   String get eventFromAnalysis => 'Okuva mu kwekenneenya kwo';
 
   @override
+  String get eventDividend => 'Dividendi esuubirwa';
+
+  @override
+  String get eventDividendEstimate =>
+      'Ebalirirwa okuva mu nsasula z\'owandiise';
+
+  @override
   String get eventsHint =>
       'Ennaku z\'ebivudde mu by\'oyagala n\'emigabo gyo mu nnaku 90 eziddako, n\'ebigenda okubaawo eby\'ennaku entongole okwekenneenya kwo bye kulaze.';
 

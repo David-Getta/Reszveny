@@ -1688,6 +1688,13 @@ class AppLocalizationsPl extends AppLocalizations {
   String get eventFromAnalysis => 'Z Twojej analizy';
 
   @override
+  String get eventDividend => 'Spodziewana dywidenda';
+
+  @override
+  String get eventDividendEstimate =>
+      'Oszacowano na podstawie zapisanych wypłat';
+
+  @override
   String get eventsHint =>
       'Daty wyników Twoich ulubionych spółek i spółek z portfela na najbliższe 90 dni oraz wydarzenia z datą wskazane przez Twoje analizy.';
 

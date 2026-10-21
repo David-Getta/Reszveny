@@ -1653,6 +1653,13 @@ class AppLocalizationsMk extends AppLocalizations {
   String get eventFromAnalysis => 'Од твојата анализа';
 
   @override
+  String get eventDividend => 'Очекувана дивиденда';
+
+  @override
+  String get eventDividendEstimate =>
+      'Проценето од исплатите што ги евидентиравте';
+
+  @override
   String get eventsHint =>
       'Датуми на резултатите на твоите омилени акции и акциите од портфолиото за следните 90 дена, како и настаните со датум што ги означија твоите анализи.';
 

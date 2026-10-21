@@ -1616,6 +1616,12 @@ class AppLocalizationsLo extends AppLocalizations {
   String get eventFromAnalysis => 'ຈາກການວິເຄາະຂອງທ່ານ';
 
   @override
+  String get eventDividend => 'ຄາດວ່າຈະໄດ້ເງິນປັນຜົນ';
+
+  @override
+  String get eventDividendEstimate => 'ຄາດຄະເນຈາກການຈ່າຍທີ່ທ່ານບັນທຶກໄວ້';
+
+  @override
   String get eventsHint =>
       'ວັນທີປະກາດຜົນປະກອບການຂອງຫຸ້ນທີ່ມັກ ແລະ ຫຸ້ນໃນພອດໂຟລິໂອຂອງທ່ານໃນ 90 ມື້ຂ້າງໜ້າ ແລະ ເຫດການທີ່ມີວັນທີທີ່ການວິເຄາະຂອງທ່ານໝາຍໄວ້.';
 

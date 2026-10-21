@@ -1636,6 +1636,12 @@ class AppLocalizationsMn extends AppLocalizations {
   String get eventFromAnalysis => 'Таны шинжилгээнээс';
 
   @override
+  String get eventDividend => 'Ногдол ашиг хүлээгдэж байна';
+
+  @override
+  String get eventDividendEstimate => 'Таны бүртгэсэн төлбөрүүдээс тооцоолсон';
+
+  @override
   String get eventsHint =>
       'Дуртай болон портфолио дахь хувьцаануудын ойрын 90 хоногийн тайлангийн огноо, мөн таны шинжилгээнд тэмдэглэгдсэн огноотой үйл явдлууд.';
 

@@ -1644,6 +1644,13 @@ class AppLocalizationsTn extends AppLocalizations {
   String get eventFromAnalysis => 'Go tswa mo tshekatshekong ya gago';
 
   @override
+  String get eventDividend => 'Dividente e e lebeletsweng';
+
+  @override
+  String get eventDividendEstimate =>
+      'E fopholeditswe go tswa mo dituelong tse o di kwadileng';
+
+  @override
   String get eventsHint =>
       'Malatsi a dipoelo a dishere tse o di ratang le tsa potefolio ya gago mo malatsing a le 90 a a tlang, le ditiragalo tse di nang le malatsi tse ditshekatsheko tsa gago di di supileng.';
 

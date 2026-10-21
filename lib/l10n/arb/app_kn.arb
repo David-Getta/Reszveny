@@ -738,5 +738,7 @@
   "portfolioCashEdit": "ನಗದು ಬಾಕಿ ಹೊಂದಿಸಿ",
   "portfolioDividendsExpected": "ಮುಂದೆ ನಿರೀಕ್ಷಿತ",
   "portfolioDividendsExpectedNote": "ನೀವು ದಾಖಲಿಸಿದ ಪಾವತಿಗಳ ದಿನಾಂಕ ಮತ್ತು ಮೊತ್ತಗಳಿಂದ ಅಂದಾಜಿಸಲಾಗಿದೆ; ಕಂಪನಿಗಳು ಇವನ್ನು ಬದಲಿಸಬಹುದು ಅಥವಾ ಬಿಟ್ಟುಬಿಡಬಹುದು.",
-  "portfolioDividendAround": "ಸುಮಾರು {date}"
+  "portfolioDividendAround": "ಸುಮಾರು {date}",
+  "eventDividend": "ಡಿವಿಡೆಂಡ್ ನಿರೀಕ್ಷಿತ",
+  "eventDividendEstimate": "ನೀವು ದಾಖಲಿಸಿದ ಪಾವತಿಗಳಿಂದ ಅಂದಾಜಿಸಲಾಗಿದೆ"
 }

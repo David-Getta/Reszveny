@@ -1657,6 +1657,13 @@ class AppLocalizationsGl extends AppLocalizations {
   String get eventFromAnalysis => 'Da túa análise';
 
   @override
+  String get eventDividend => 'Dividendo previsto';
+
+  @override
+  String get eventDividendEstimate =>
+      'Estimado a partir dos teus pagamentos rexistrados';
+
+  @override
   String get eventsHint =>
       'Datas de resultados dos teus favoritos e das accións da túa carteira para os próximos 90 días, e os eventos con data que detectaron as túas análises.';
 

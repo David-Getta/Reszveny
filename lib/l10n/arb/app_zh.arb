@@ -738,5 +738,7 @@
   "portfolioCashEdit": "设置现金余额",
   "portfolioDividendsExpected": "预计下次",
   "portfolioDividendsExpectedNote": "根据您记录的派息日期和金额估算；公司可能更改或取消派息。",
-  "portfolioDividendAround": "约 {date}"
+  "portfolioDividendAround": "约 {date}",
+  "eventDividend": "预计派息",
+  "eventDividendEstimate": "根据您记录的派息估算"
 }

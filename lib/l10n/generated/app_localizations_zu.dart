@@ -1641,6 +1641,13 @@ class AppLocalizationsZu extends AppLocalizations {
   String get eventFromAnalysis => 'Kusuka ekuhlaziyweni kwakho';
 
   @override
+  String get eventDividend => 'Isabelo senzuzo esilindelekile';
+
+  @override
+  String get eventDividendEstimate =>
+      'Kulinganiselwe ezinkokhelweni ozirekhodile';
+
+  @override
   String get eventsHint =>
       'Izinsuku zemiphumela yamasheya akho ayizintandokazi nawephothifoliyo ezinsukwini ezingu-90 ezizayo, kanye nemicimbi enezinsuku ephawulwe uhlaziyo lwakho.';
 

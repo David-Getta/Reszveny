@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Deji haraaga lacagta",
   "portfolioDividendsExpected": "Kuwa xiga ee la filayo",
   "portfolioDividendsExpectedNote": "Waxaa lagu qiyaasay taariikhaha iyo lacagaha bixinnada aad diiwaangelisay; shirkaduhu way beddeli karaan ama ka boodi karaan.",
-  "portfolioDividendAround": "qiyaastii {date}"
+  "portfolioDividendAround": "qiyaastii {date}",
+  "eventDividend": "Faa'iido-saami la filayo",
+  "eventDividendEstimate": "Lagu qiyaasay bixinnada aad diiwaangelisay"
 }

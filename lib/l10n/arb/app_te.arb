@@ -738,5 +738,7 @@
   "portfolioCashEdit": "నగదు బ్యాలెన్స్ సెట్ చేయండి",
   "portfolioDividendsExpected": "తదుపరి అంచనా",
   "portfolioDividendsExpectedNote": "మీరు నమోదు చేసిన చెల్లింపుల తేదీలు, మొత్తాల ఆధారంగా అంచనా; కంపెనీలు వాటిని మార్చవచ్చు లేదా ఇవ్వకపోవచ్చు.",
-  "portfolioDividendAround": "{date} ప్రాంతంలో"
+  "portfolioDividendAround": "{date} ప్రాంతంలో",
+  "eventDividend": "డివిడెండ్ అంచనా",
+  "eventDividendEstimate": "మీరు నమోదు చేసిన చెల్లింపుల ఆధారంగా అంచనా"
 }

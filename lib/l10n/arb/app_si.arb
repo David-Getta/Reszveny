@@ -738,5 +738,7 @@
   "portfolioCashEdit": "මුදල් ශේෂය සකසන්න",
   "portfolioDividendsExpected": "ඊළඟට අපේක්ෂිත",
   "portfolioDividendsExpectedNote": "ඔබ සටහන් කළ ගෙවීම්වල දින සහ මුදල් මත ඇස්තමේන්තු කර ඇත; සමාගම් ඒවා වෙනස් කිරීමට හෝ මඟ හැරීමට හැකිය.",
-  "portfolioDividendAround": "{date} පමණ"
+  "portfolioDividendAround": "{date} පමණ",
+  "eventDividend": "ලාභාංශ අපේක්ෂිතයි",
+  "eventDividendEstimate": "ඔබ සටහන් කළ ගෙවීම් මත ඇස්තමේන්තු කර ඇත"
 }

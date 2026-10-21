@@ -1647,6 +1647,13 @@ class AppLocalizationsMg extends AppLocalizations {
   String get eventFromAnalysis => 'Avy amin\'ny fandalinanao';
 
   @override
+  String get eventDividend => 'Dividandy andrasana';
+
+  @override
+  String get eventDividendEstimate =>
+      'Tombanana avy amin\'ny fandoavana noraketinao';
+
+  @override
   String get eventsHint =>
       'Ny daty famoahana vokatra ho an\'ny ankafizinao sy ny anjara ao amin\'ny kitapom-bolanao ao anatin\'ny 90 andro ho avy, ary ireo hetsika misy daty nomarihan\'ny fandalinanao.';
 

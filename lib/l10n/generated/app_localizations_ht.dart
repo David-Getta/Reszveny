@@ -1633,6 +1633,12 @@ class AppLocalizationsHt extends AppLocalizations {
   String get eventFromAnalysis => 'Soti nan analiz ou';
 
   @override
+  String get eventDividend => 'Dividann yo atann';
+
+  @override
+  String get eventDividendEstimate => 'Estime dapre peman ou te anrejistre yo';
+
+  @override
   String get eventsHint =>
       'Dat rezilta favori ou yo ak aksyon ki nan pòtfèy ou pou 90 jou k ap vini yo, ak evènman ki gen dat analiz ou yo make.';
 

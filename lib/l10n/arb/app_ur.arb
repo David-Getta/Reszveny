@@ -738,5 +738,7 @@
   "portfolioCashEdit": "نقد بیلنس سیٹ کریں",
   "portfolioDividendsExpected": "اگلا متوقع",
   "portfolioDividendsExpectedNote": "آپ کی ریکارڈ کی گئی ادائیگیوں کی تاریخوں اور رقوم سے اندازہ لگایا گیا؛ کمپنیاں انہیں بدل یا چھوڑ سکتی ہیں۔",
-  "portfolioDividendAround": "{date} کے قریب"
+  "portfolioDividendAround": "{date} کے قریب",
+  "eventDividend": "ڈیویڈنڈ متوقع",
+  "eventDividendEstimate": "آپ کی ریکارڈ کی گئی ادائیگیوں سے اندازہ"
 }

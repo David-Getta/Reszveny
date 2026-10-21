@@ -1622,6 +1622,12 @@ class AppLocalizationsMos extends AppLocalizations {
   String get eventFromAnalysis => 'Yii fo vɛɛsgã pʊgẽ';
 
   @override
+  String get eventDividend => 'Dividand sẽn gũud';
+
+  @override
+  String get eventDividendEstimate => 'B geelg-a ne f sẽn gʋls yaoodã';
+
+  @override
   String get eventsHint =>
       'Fo nong-n-yɩɩda la fo portfey sɛɛr-rãmbã ligd-yɛl rasem, rasem 90 sẽn watẽ wã pʊgẽ, la yɛl sẽn tar rasem fo vɛɛsgã sẽn wilgã.';
 

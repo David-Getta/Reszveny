@@ -1635,6 +1635,12 @@ class AppLocalizationsSw extends AppLocalizations {
   String get eventFromAnalysis => 'Kutoka kwa uchambuzi wako';
 
   @override
+  String get eventDividend => 'Gawio linalotarajiwa';
+
+  @override
+  String get eventDividendEstimate => 'Imekadiriwa kutoka malipo uliyorekodi';
+
+  @override
   String get eventsHint =>
       'Tarehe za matokeo ya hisa unazopenda na za jalada lako la hisa kwa siku 90 zijazo, pamoja na matukio yenye tarehe yaliyobainishwa na uchambuzi wako.';
 

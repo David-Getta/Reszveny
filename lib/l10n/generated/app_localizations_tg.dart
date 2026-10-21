@@ -1636,6 +1636,13 @@ class AppLocalizationsTg extends AppLocalizations {
   String get eventFromAnalysis => 'Аз таҳлили шумо';
 
   @override
+  String get eventDividend => 'Дивиденди интизоршаванда';
+
+  @override
+  String get eventDividendEstimate =>
+      'Аз рӯи пардохтҳои сабткардаи шумо ҳисоб шудааст';
+
+  @override
   String get eventsHint =>
       'Санаҳои натиҷаҳои саҳмияҳои интихобшуда ва портфели шумо дар 90 рӯзи оянда ва рӯйдодҳои санадоре, ки таҳлилҳои шумо қайд кардаанд.';
 

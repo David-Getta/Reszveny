@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Teelto keddiiɗum kaalis",
   "portfolioDividendsExpected": "Ko habbaa rewde",
   "portfolioDividendsExpectedNote": "Hiisaama e ñalɗi e keeweendi yoɓdiiji ɗi winnduɗaa; sosiyeteeji ina mbaawi waylude ɗum walla ɗalde ɗum.",
-  "portfolioDividendAround": "hedde {date}"
+  "portfolioDividendAround": "hedde {date}",
+  "eventDividend": "Dividende habbaaɗo",
+  "eventDividendEstimate": "Hiisaama iwde e yoɓdiiji ɗe mbinnduɗaa"
 }

@@ -1633,6 +1633,12 @@ class AppLocalizationsFa extends AppLocalizations {
   String get eventFromAnalysis => 'از تحلیل شما';
 
   @override
+  String get eventDividend => 'سود سهام مورد انتظار';
+
+  @override
+  String get eventDividendEstimate => 'برآورد از پرداخت‌های ثبت‌شدهٔ شما';
+
+  @override
   String get eventsHint =>
       'تاریخ نتایج سهم‌های علاقه‌مندی‌ها و سبد سهام شما برای 90 روز آینده، و رویدادهای تاریخ‌داری که تحلیل‌هایتان مشخص کرده‌اند.';
 

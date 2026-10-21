@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Veka mali leyi saleke",
   "portfolioDividendsExpected": "Leti landzelaka leti languteriweke",
   "portfolioDividendsExpectedNote": "Ti ringanyetiwile ku suka eka masiku ni mali ya tihakelo leti u ti tsaleke; tikhampani ti nga ti cinca kumbe ti ti tlula.",
-  "portfolioDividendAround": "kwalomu ka {date}"
+  "portfolioDividendAround": "kwalomu ka {date}",
+  "eventDividend": "Dividende leyi languteriweke",
+  "eventDividendEstimate": "Yi ringanyetiwile ku suka eka tihakelo leti u ti tsaleke"
 }

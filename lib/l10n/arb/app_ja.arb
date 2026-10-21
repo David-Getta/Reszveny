@@ -738,5 +738,7 @@
   "portfolioCashEdit": "現金残高を設定",
   "portfolioDividendsExpected": "次回の予想",
   "portfolioDividendsExpectedNote": "記録済みの配当の支払日と金額から推定しています。企業が変更または無配にする場合があります。",
-  "portfolioDividendAround": "{date}頃"
+  "portfolioDividendAround": "{date}頃",
+  "eventDividend": "配当予定",
+  "eventDividendEstimate": "記録済みの受取額から推定"
 }

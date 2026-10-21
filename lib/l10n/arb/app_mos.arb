@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Ning ligd sẽn ket",
   "portfolioDividendsExpected": "Sẽn gũud tɩ wa",
   "portfolioDividendsExpectedNote": "B geelg-a-la ne f sẽn gʋls yaoodã raya la a ligdã; kompaniirã tõe n toeem-a bɩ b ka yao ye.",
-  "portfolioDividendAround": "sẽn kolg {date}"
+  "portfolioDividendAround": "sẽn kolg {date}",
+  "eventDividend": "Dividand sẽn gũud",
+  "eventDividendEstimate": "B geelg-a ne f sẽn gʋls yaoodã"
 }

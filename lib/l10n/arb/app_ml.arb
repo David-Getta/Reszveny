@@ -738,5 +738,7 @@
   "portfolioCashEdit": "പണ ബാലൻസ് സജ്ജമാക്കുക",
   "portfolioDividendsExpected": "അടുത്തത് പ്രതീക്ഷിക്കുന്നത്",
   "portfolioDividendsExpectedNote": "നിങ്ങൾ രേഖപ്പെടുത്തിയ പേയ്‌മെന്റുകളുടെ തീയതികളും തുകകളും അടിസ്ഥാനമാക്കിയ കണക്കുകൂട്ടൽ; കമ്പനികൾ അവ മാറ്റുകയോ ഒഴിവാക്കുകയോ ചെയ്യാം.",
-  "portfolioDividendAround": "ഏകദേശം {date}"
+  "portfolioDividendAround": "ഏകദേശം {date}",
+  "eventDividend": "ഡിവിഡന്റ് പ്രതീക്ഷിക്കുന്നു",
+  "eventDividendEstimate": "നിങ്ങൾ രേഖപ്പെടുത്തിയ പേയ്‌മെന്റുകളിൽ നിന്നുള്ള കണക്കുകൂട്ടൽ"
 }

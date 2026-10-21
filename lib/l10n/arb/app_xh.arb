@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Misela ibhalansi yemali",
   "portfolioDividendsExpected": "Ezilindelekileyo ngokulandelayo",
   "portfolioDividendsExpectedNote": "Ziqikelelwe kwimihla nakwizixa zeentlawulo ozirekhodileyo; iinkampani zinokuzitshintsha okanye zizitsibe.",
-  "portfolioDividendAround": "malunga ne-{date}"
+  "portfolioDividendAround": "malunga ne-{date}",
+  "eventDividend": "Isahlulo esilindelekileyo",
+  "eventDividendEstimate": "Siqikelelwe kwiintlawulo ozirekhodileyo"
 }

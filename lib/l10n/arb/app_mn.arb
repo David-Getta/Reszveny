@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Бэлэн мөнгөний үлдэгдэл тохируулах",
   "portfolioDividendsExpected": "Дараагийн хүлээгдэж буй",
   "portfolioDividendsExpectedNote": "Таны бүртгэсэн төлбөрүүдийн огноо, дүнгээс тооцоолсон; компаниуд өөрчлөх эсвэл алгасах боломжтой.",
-  "portfolioDividendAround": "{date} орчим"
+  "portfolioDividendAround": "{date} орчим",
+  "eventDividend": "Ногдол ашиг хүлээгдэж байна",
+  "eventDividendEstimate": "Таны бүртгэсэн төлбөрүүдээс тооцоолсон"
 }

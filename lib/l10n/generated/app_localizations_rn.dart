@@ -1641,6 +1641,12 @@ class AppLocalizationsRn extends AppLocalizations {
   String get eventFromAnalysis => 'Biva mw\'isesangura ryawe';
 
   @override
+  String get eventDividend => 'Idividende yitezwe';
+
+  @override
+  String get eventDividendEstimate => 'Biharuwe hisunzwe ivyishurwa wanditse';
+
+  @override
   String get eventsHint =>
       'Amatariki y\'ivyavuye mu gihembwe vy\'imigabane ukunda n\'iyo mw\'ishoramari ryawe mu misi 90 iri imbere, n\'ibintu bifise itariki amasesangura yawe yerekanye.';
 

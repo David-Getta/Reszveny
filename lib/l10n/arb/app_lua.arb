@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Teka mfranga ya mu bianza",
   "portfolioDividendsExpected": "Idi mitekemene kulonda",
   "portfolioDividendsExpectedNote": "Mbabala bilondeshile matuku ne bungi bua difuta diwakafunda; ba kompanyi badi mua kushintulula anyi kubenga.",
-  "portfolioDividendAround": "pabuipi ne {date}"
+  "portfolioDividendAround": "pabuipi ne {date}",
+  "eventDividend": "Dividende idi mitekemene",
+  "eventDividendEstimate": "Mbadilu kumbukila mfutu iwakafunda"
 }

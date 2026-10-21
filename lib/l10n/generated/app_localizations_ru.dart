@@ -1686,6 +1686,12 @@ class AppLocalizationsRu extends AppLocalizations {
   String get eventFromAnalysis => 'Из вашего анализа';
 
   @override
+  String get eventDividend => 'Ожидается дивиденд';
+
+  @override
+  String get eventDividendEstimate => 'Оценка по записанным вами выплатам';
+
+  @override
   String get eventsHint =>
       'Даты отчётности по избранным акциям и акциям из портфеля на ближайшие 90 дней, а также события с датами, отмеченные в ваших анализах.';
 

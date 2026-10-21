@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Қолма-қол қалдықты орнату",
   "portfolioDividendsExpected": "Келесі күтілетін",
   "portfolioDividendsExpectedNote": "Сіз жазған төлемдердің күндері мен сомалары бойынша бағаланған; компаниялар оларды өзгерте немесе өткізіп жібере алады.",
-  "portfolioDividendAround": "шамамен {date}"
+  "portfolioDividendAround": "шамамен {date}",
+  "eventDividend": "Дивиденд күтілуде",
+  "eventDividendEstimate": "Сіз жазған төлемдер бойынша бағаланды"
 }

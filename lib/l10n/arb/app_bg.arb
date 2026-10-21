@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Задаване на паричен баланс",
   "portfolioDividendsExpected": "Очаквани следващи",
   "portfolioDividendsExpectedNote": "Приблизителна оценка по датите и сумите на записаните от вас плащания; компаниите могат да ги променят или пропуснат.",
-  "portfolioDividendAround": "около {date}"
+  "portfolioDividendAround": "около {date}",
+  "eventDividend": "Очакван дивидент",
+  "eventDividendEstimate": "Прогноза по записаните от вас плащания"
 }

@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Emoĩ pirapire oĩva",
   "portfolioDividendsExpected": "Oñeha'arõva upéi",
   "portfolioDividendsExpectedNote": "Oñemoha'ã umi jehepyme'ẽ remboguapýva ára ha hepykuégui; umi empresa ikatu omoambue térã ohejarei.",
-  "portfolioDividendAround": "{date} rupi"
+  "portfolioDividendAround": "{date} rupi",
+  "eventDividend": "Dividendo oñeha'arõva",
+  "eventDividendEstimate": "Ojeha'ã umi pago rehaiva'ekue rehe"
 }

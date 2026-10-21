@@ -738,5 +738,7 @@
   "portfolioCashEdit": "設定現金結餘",
   "portfolioDividendsExpected": "預計下次",
   "portfolioDividendsExpectedNote": "根據你記錄的派息日期和金額估算；公司可能更改或取消派息。",
-  "portfolioDividendAround": "約 {date}"
+  "portfolioDividendAround": "約 {date}",
+  "eventDividend": "預計派息",
+  "eventDividendEstimate": "根據你記錄的派息估算"
 }

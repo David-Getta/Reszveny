@@ -1630,6 +1630,13 @@ class AppLocalizationsMy extends AppLocalizations {
   String get eventFromAnalysis => 'သင့်သုံးသပ်ချက်မှ';
 
   @override
+  String get eventDividend => 'အမြတ်ဝေစု မျှော်မှန်း';
+
+  @override
+  String get eventDividendEstimate =>
+      'သင်မှတ်တမ်းတင်ထားသော ပေးချေမှုများမှ ခန့်မှန်းထားသည်';
+
+  @override
   String get eventsHint =>
       'နောက် ရက် 90 အတွင်း သင့်အကြိုက်ဆုံးနှင့် ပေါ့ဖိုလီယို ရှယ်ယာများ၏ ရလဒ်ထုတ်ပြန်မည့်ရက်များနှင့် သင့်သုံးသပ်ချက်များက မှတ်သားထားသော ရက်စွဲပါ ဖြစ်ရပ်များ။';
 

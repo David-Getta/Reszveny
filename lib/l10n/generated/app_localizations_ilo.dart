@@ -1649,6 +1649,13 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get eventFromAnalysis => 'Manipud iti panangsukimatmo';
 
   @override
+  String get eventDividend => 'Manamnama a dibidendo';
+
+  @override
+  String get eventDividendEstimate =>
+      'Nakarkulo manipud kadagiti nairekord a bayadmo';
+
+  @override
   String get eventsHint =>
       'Dagiti petsa ti resulta dagiti paboritom ken dagiti stock iti portfoliom para iti sumaruno a 90 nga aldaw, ken dagiti pasamak nga addaan petsa a minarkaan dagiti panangsukimatmo.';
 

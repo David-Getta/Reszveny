@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Ɖo ga si le asi ƒe home",
   "portfolioDividendsExpected": "Esi wokpɔ mɔ na kplɔe ɖo",
   "portfolioDividendsExpectedNote": "Wobu akɔnta tso ŋkeke kple ga home siwo nèŋlɔ ɖi le fexexeawo ŋu me; dɔwɔƒewo ate ŋu atrɔ wo alo agbe wo xexe.",
-  "portfolioDividendAround": "{date} lɔƒo"
+  "portfolioDividendAround": "{date} lɔƒo",
+  "eventDividend": "Wole mɔ kpɔm na dividend",
+  "eventDividendEstimate": "Wobu akɔnta tso wò fexexe siwo nèŋlɔ ɖi me"
 }

@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Đặt số dư tiền mặt",
   "portfolioDividendsExpected": "Dự kiến sắp tới",
   "portfolioDividendsExpectedNote": "Ước tính từ ngày và số tiền của các khoản chi trả bạn đã ghi lại; công ty có thể thay đổi hoặc bỏ qua.",
-  "portfolioDividendAround": "khoảng {date}"
+  "portfolioDividendAround": "khoảng {date}",
+  "eventDividend": "Dự kiến có cổ tức",
+  "eventDividendEstimate": "Ước tính từ các khoản chi trả bạn đã ghi lại"
 }

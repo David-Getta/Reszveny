@@ -26,20 +26,28 @@ String eventWhen(AppLocalizations l10n, DateTime day, DateTime today) {
 }
 
 /// Az esemény címe (gyorsjelentésnél a napszakkal) és a részlete (EPS-várakozás,
-/// illetve hogy elemzésből származik) – a listában és a naptárban is ez látszik.
+/// várható osztaléknál a becsült összeg, illetve hogy elemzésből származik) –
+/// a listában és a naptárban is ez látszik.
 ({String title, String? detail}) eventText(AppLocalizations l10n, Fmt fmt, UpcomingEvent e) {
-  final earnings = e.kind == UpcomingEventKind.earnings;
   final when = switch (e.hour) {
     'bmo' => l10n.eventBeforeOpen,
     'amc' => l10n.eventAfterClose,
     _ => null,
   };
-  return (
-    title: earnings ? [l10n.eventEarnings, ?when].join(' · ') : e.text,
-    detail: earnings
-        ? (e.epsEstimate == null ? null : l10n.eventEpsEstimate(fmt.number(e.epsEstimate!)))
-        : l10n.eventFromAnalysis,
-  );
+  return switch (e.kind) {
+    UpcomingEventKind.earnings => (
+      title: [l10n.eventEarnings, ?when].join(' · '),
+      detail: e.epsEstimate == null ? null : l10n.eventEpsEstimate(fmt.number(e.epsEstimate!)),
+    ),
+    UpcomingEventKind.dividend => (
+      title: l10n.eventDividend,
+      detail: [
+        if (e.amount != null && e.currency != null) '~ ${fmt.money(e.amount!, e.currency!)}',
+        l10n.eventDividendEstimate,
+      ].join(' · '),
+    ),
+    UpcomingEventKind.catalyst => (title: e.text, detail: l10n.eventFromAnalysis),
+  };
 }
 
 /// Az események naptárbejegyzésként; az azonosító a ticker, a fajta, a nap
@@ -183,13 +191,17 @@ class EventTile extends StatelessWidget {
     final theme = Theme.of(context);
     final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
     final e = event;
-    final earnings = e.kind == UpcomingEventKind.earnings;
+    final icon = switch (e.kind) {
+      UpcomingEventKind.earnings => Icons.event_note_rounded,
+      UpcomingEventKind.dividend => Icons.payments_outlined,
+      UpcomingEventKind.catalyst => Icons.flag_outlined,
+    };
     final (:title, :detail) = eventText(l10n, fmt, e);
     return ListTile(
       key: ValueKey('event-${e.symbol}-${e.kind.name}-${e.date.toIso8601String().substring(0, 10)}'),
       leading: CircleAvatar(
         backgroundColor: p.accent.withValues(alpha: 0.15),
-        child: Icon(earnings ? Icons.event_note_rounded : Icons.flag_outlined, size: 18, color: p.accent),
+        child: Icon(icon, size: 18, color: p.accent),
       ),
       title: Row(
         children: [

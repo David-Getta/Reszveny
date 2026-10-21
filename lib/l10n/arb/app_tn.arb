@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Baya madi a a setseng",
   "portfolioDividendsExpected": "Tse di latelang tse di lebeletsweng",
   "portfolioDividendsExpectedNote": "Di fopholeditswe go tswa mo matlheng le madi a dituelo tse o di kwadileng; dikhampani di ka di fetola kgotsa tsa di tlola.",
-  "portfolioDividendAround": "mo e ka nnang {date}"
+  "portfolioDividendAround": "mo e ka nnang {date}",
+  "eventDividend": "Dividente e e lebeletsweng",
+  "eventDividendEstimate": "E fopholeditswe go tswa mo dituelong tse o di kwadileng"
 }

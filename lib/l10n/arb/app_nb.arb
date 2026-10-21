@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Angi kontantbeholdning",
   "portfolioDividendsExpected": "Forventet neste",
   "portfolioDividendsExpectedNote": "Anslått ut fra datoene og beløpene på utbyttene du har registrert; selskapene kan endre eller droppe dem.",
-  "portfolioDividendAround": "rundt {date}"
+  "portfolioDividendAround": "rundt {date}",
+  "eventDividend": "Forventet utbytte",
+  "eventDividendEstimate": "Anslått ut fra utbyttene du har registrert"
 }

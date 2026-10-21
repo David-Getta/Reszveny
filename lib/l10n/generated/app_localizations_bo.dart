@@ -1626,6 +1626,13 @@ class AppLocalizationsBo extends AppLocalizations {
   String get eventFromAnalysis => 'ཁྱེད་ཀྱི་དབྱེ་ཞིབ་ནས';
 
   @override
+  String get eventDividend => 'ཁེ་བགོས་རེ་བ་ཡོད།';
+
+  @override
+  String get eventDividendEstimate =>
+      'ཁྱེད་ཀྱིས་ཐོ་བཀོད་པའི་སྤྲོད་ཆ་ནས་ཚོད་དཔག་བྱས་པ།';
+
+  @override
   String get eventsHint =>
       'ཉིན་ 90 ནང་ཁྱེད་ཀྱི་དགའ་མོས་དང་མ་འཇོག་ཚོགས་སྡེབ་ཀྱི་ཧུར་ཁག་གི་གྲུབ་འབྲས་ཚེས་གྲངས་དང་། ཁྱེད་ཀྱི་དབྱེ་ཞིབ་ཀྱིས་མཚོན་པའི་ཚེས་གྲངས་ཅན་གྱི་བྱ་བ།';
 

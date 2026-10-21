@@ -1686,6 +1686,12 @@ class AppLocalizationsLt extends AppLocalizations {
   String get eventFromAnalysis => 'Iš jūsų analizės';
 
   @override
+  String get eventDividend => 'Numatomas dividendas';
+
+  @override
+  String get eventDividendEstimate => 'Įvertinta pagal jūsų įrašytas išmokas';
+
+  @override
   String get eventsHint =>
       'Jūsų mėgstamiausių ir portfelio akcijų rezultatų skelbimo datos artimiausioms 90 dienų ir jūsų analizėse pažymėti įvykiai su datomis.';
 

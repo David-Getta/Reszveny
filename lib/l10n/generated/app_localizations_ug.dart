@@ -1637,6 +1637,13 @@ class AppLocalizationsUg extends AppLocalizations {
   String get eventFromAnalysis => 'تەھلىلىڭىزدىن';
 
   @override
+  String get eventDividend => 'كۈتۈلگەن دىۋىدېند';
+
+  @override
+  String get eventDividendEstimate =>
+      'سىز خاتىرىلىگەن تۆلەملەردىن مۆلچەرلەنگەن';
+
+  @override
   String get eventsHint =>
       'يىغقۇچ ۋە مەبلەغ بىرىكمىسىدىكى پاينامىلەرنىڭ كېيىنكى 90 كۈندىكى نەتىجە ئېلان قىلىش ۋاقىتلىرى، شۇنداقلا تەھلىللىرىڭىز بەلگىلىگەن ۋاقتى بار ئىشلار.';
 

@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Nağd qalığı təyin et",
   "portfolioDividendsExpected": "Növbəti gözlənilən",
   "portfolioDividendsExpectedNote": "Qeyd etdiyiniz ödənişlərin tarix və məbləğlərinə əsasən təxmin edilib; şirkətlər onları dəyişdirə və ya ödəməyə bilər.",
-  "portfolioDividendAround": "təxminən {date}"
+  "portfolioDividendAround": "təxminən {date}",
+  "eventDividend": "Dividend gözlənilir",
+  "eventDividendEstimate": "Qeyd etdiyiniz ödənişlərə əsasən təxmin edilib"
 }

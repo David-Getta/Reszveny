@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Shyiraho amafaranga asigaye",
   "portfolioDividendsExpected": "Ikurikira yitezwe",
   "portfolioDividendsExpectedNote": "Bigereranyijwe hashingiwe ku matariki n'amafaranga y'ubwishyu wanditse; ibigo bishobora kubihindura cyangwa kubireka.",
-  "portfolioDividendAround": "ahagana {date}"
+  "portfolioDividendAround": "ahagana {date}",
+  "eventDividend": "Idividende yitezwe",
+  "eventDividendEstimate": "Bigereranyijwe hashingiwe ku bwishyu wanditse"
 }

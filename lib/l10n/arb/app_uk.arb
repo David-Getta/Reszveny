@@ -738,5 +738,7 @@
   "portfolioCashEdit": "Вказати залишок коштів",
   "portfolioDividendsExpected": "Очікуються далі",
   "portfolioDividendsExpectedNote": "Оцінка за датами та сумами записаних вами виплат; компанії можуть змінити або скасувати їх.",
-  "portfolioDividendAround": "близько {date}"
+  "portfolioDividendAround": "близько {date}",
+  "eventDividend": "Очікується дивіденд",
+  "eventDividendEstimate": "Оцінка за записаними вами виплатами"
 }

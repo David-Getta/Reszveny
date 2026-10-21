@@ -1635,6 +1635,12 @@ class AppLocalizationsKk extends AppLocalizations {
   String get eventFromAnalysis => 'Сіздің талдауыңыздан';
 
   @override
+  String get eventDividend => 'Дивиденд күтілуде';
+
+  @override
+  String get eventDividendEstimate => 'Сіз жазған төлемдер бойынша бағаланды';
+
+  @override
   String get eventsHint =>
       'Таңдаулылар мен портфельдегі акциялардың алдағы 90 күндегі есеп күндері және талдауларыңыз белгілеген күні бар оқиғалар.';
 

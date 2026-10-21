@@ -1681,6 +1681,12 @@ class AppLocalizationsCs extends AppLocalizations {
   String get eventFromAnalysis => 'Z vaší analýzy';
 
   @override
+  String get eventDividend => 'Očekávaná dividenda';
+
+  @override
+  String get eventDividendEstimate => 'Odhad z vašich zaznamenaných výplat';
+
+  @override
   String get eventsHint =>
       'Termíny výsledků vašich oblíbených akcií a akcií v portfoliu na příštích 90 dní a události s datem, které označily vaše analýzy.';
 
