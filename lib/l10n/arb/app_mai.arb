@@ -698,5 +698,8 @@
   "awaySince": "{when} सँ",
   "awayQuiet": "किछु खास नहि बदलल।",
   "awayAlerts": "{count, plural, =1{1 अलर्ट ट्रिगर भेल} other{{count} अलर्ट ट्रिगर भेल}}",
-  "awayReported": "परिणाम जारी केलक: {symbols}"
+  "awayReported": "परिणाम जारी केलक: {symbols}",
+  "moveWhyButton": "आइ किएक घटि-बढ़ि रहल अछि?",
+  "moveWhyTitle": "आइ {percent}",
+  "moveWhyNote": "वेब पर भेटल आइक खबरसँ AI द्वारा देल व्याख्या; असली कारण अज्ञात वा भिन्न भऽ सकैत अछि। निवेश सलाह नहि। अहाँक दैनिक प्रश्न कोटा उपयोग करैत अछि, विश्लेषण नहि।"
 }

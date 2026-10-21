@@ -698,5 +698,8 @@
   "awaySince": "Kusukela {when}",
   "awayQuiet": "Akukho okushintshile kakhulu.",
   "awayAlerts": "{count, plural, =1{Isexwayiso 1 siqalisiwe} other{Izexwayiso {count} ziqalisiwe}}",
-  "awayReported": "Imiphumela ememezelwe: {symbols}"
+  "awayReported": "Imiphumela ememezelwe: {symbols}",
+  "moveWhyButton": "Kungani linyakaza namuhla?",
+  "moveWhyTitle": "{percent} namuhla",
+  "moveWhyNote": "Incazelo ye-AI evela ezindabeni zanamuhla ezitholakala ku-inthanethi; isizathu sangempela singase singaziwa noma sihluke. Akuyona iseluleko sokutshala imali. Isebenzisa isabelo sakho semibuzo sosuku, hhayi ukuhlaziya."
 }

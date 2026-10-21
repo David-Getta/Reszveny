@@ -2596,4 +2596,16 @@ class AppLocalizationsTi extends AppLocalizations {
   String awayReported(String symbols) {
     return 'ዝተገልጸ ውጽኢት: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'ሎሚ ስለምንታይ ይንቀሳቐስ ኣሎ?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent ሎሚ';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'ኣብ ኢንተርነት ካብ ዝተረኽበ ናይ ሎሚ ዜና ዝተመርኰሰ መግለጺ AI፣ ናይ ብሓቂ ምኽንያት ዘይፍለጥ ወይ ዝተፈልየ ክኸውን ይኽእል። ናይ ወፍሪ ምኽሪ ኣይኮነን። ናይ መዓልቲ ሕቶ ዓቐንካ ይጥቀም፣ ትንተና ኣይኮነን።';
 }

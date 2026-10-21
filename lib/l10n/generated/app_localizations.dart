@@ -4530,6 +4530,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Reported results: {symbols}'**
   String awayReported(String symbols);
+
+  /// Small button under the day's change on a stock page, shown when the stock moved at least 2.5% today: asks the AI to explain the move from today's news.
+  ///
+  /// In en, this message translates to:
+  /// **'Why is it moving today?'**
+  String get moveWhyButton;
+
+  /// Title of the explanation sheet; the placeholder is the day's change, e.g. +4.2%.
+  ///
+  /// In en, this message translates to:
+  /// **'{percent} today'**
+  String moveWhyTitle(String percent);
+
+  /// Small print under the explanation.
+  ///
+  /// In en, this message translates to:
+  /// **'AI explanation from today\'s news found on the web; the real reason may be unknown or different. Not investment advice. Uses your daily question allowance, not an analysis.'**
+  String get moveWhyNote;
 }
 
 class _AppLocalizationsDelegate

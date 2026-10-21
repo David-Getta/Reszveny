@@ -698,5 +698,8 @@
   "awaySince": "Láti {when}",
   "awayQuiet": "Kò sí ohun tó yí padà púpọ̀.",
   "awayAlerts": "{count, plural, =1{Ìkìlọ̀ 1 ti dún} other{Ìkìlọ̀ {count} ti dún}}",
-  "awayReported": "Àbájáde tí a tẹ̀jáde: {symbols}"
+  "awayReported": "Àbájáde tí a tẹ̀jáde: {symbols}",
+  "moveWhyButton": "Kí ló dé tó ń yípadà lónìí?",
+  "moveWhyTitle": "{percent} lónìí",
+  "moveWhyNote": "Àlàyé AI láti inú ìròyìn òní tí a rí lórí ayélujára; ìdí gidi lè jẹ́ àìmọ̀ tàbí yàtọ̀. Kì í ṣe ìmọ̀ràn ìdókòwò. Ó ń lo ààyè ìbéèrè ojoojúmọ́ rẹ, kì í ṣe ìtúpalẹ̀."
 }

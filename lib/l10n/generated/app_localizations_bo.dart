@@ -2623,4 +2623,16 @@ class AppLocalizationsBo extends AppLocalizations {
   String awayReported(String symbols) {
     return 'གྲུབ་འབྲས་བསྒྲགས་པ། $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'དེ་རིང་ཅིའི་ཕྱིར་འགྱུར་བ་འགྲོ་གི་ཡོད་དམ།';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return 'དེ་རིང་ $percent';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'དྲ་ཐོག་ནས་རྙེད་པའི་དེ་རིང་གི་གསར་འགྱུར་ལ་གཞིགས་པའི་AI་འགྲེལ་བཤད། རྒྱུ་མཚན་ངོ་མ་མི་ཤེས་པའམ་མི་འདྲ་བ་ཡོང་སྲིད། མ་འཛུགས་ཀྱི་བསླབ་བྱ་མིན། ཁྱེད་ཀྱི་ཉིན་རེའི་དྲི་བའི་ཚད་བཀག་བེད་སྤྱོད་བྱེད་ཀྱི་ཡོད། དབྱེ་ཞིབ་མིན།';
 }

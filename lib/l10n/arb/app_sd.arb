@@ -698,5 +698,8 @@
   "awaySince": "{when} کان",
   "awayQuiet": "ڪا خاص تبديلي نه آئي.",
   "awayAlerts": "{count, plural, =1{1 الرٽ فعال ٿيو} other{{count} الرٽ فعال ٿيا}}",
-  "awayReported": "نتيجا جاري ٿيا: {symbols}"
+  "awayReported": "نتيجا جاري ٿيا: {symbols}",
+  "moveWhyButton": "اڄ ڇو هلي رهيو آهي؟",
+  "moveWhyTitle": "اڄ {percent}",
+  "moveWhyNote": "ويب تي مليل اڄ جي خبرن تي ٻڌل AI وضاحت؛ اصل سبب اڻڄاتل يا مختلف ٿي سگهي ٿو. سيڙپڪاري جي صلاح ناهي. توهان جو روزاني سوالن جو ڪوٽا استعمال ڪري ٿو، تجزيو نه."
 }

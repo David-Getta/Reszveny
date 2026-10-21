@@ -2630,4 +2630,16 @@ class AppLocalizationsBho extends AppLocalizations {
   String awayReported(String symbols) {
     return 'रिजल्ट जारी कइल: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'आज काहे बदल रहल बा?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return 'आज $percent';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'वेब पर मिलल आज के खबर से AI के बतावल कारन; असली कारन अनजान भा अलग हो सकेला। निवेश के सलाह नइखे। एह में रउआ के रोज के सवाल कोटा लागेला, विश्लेषण ना।';
 }

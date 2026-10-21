@@ -2635,4 +2635,16 @@ class AppLocalizationsSw extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Matokeo yaliyotangazwa: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Kwa nini inasogea leo?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent leo';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Ufafanuzi wa AI kutoka habari za leo zilizopatikana mtandaoni; sababu halisi inaweza kuwa haijulikani au tofauti. Si ushauri wa uwekezaji. Hutumia kiwango chako cha maswali cha siku, si uchambuzi.';
 }

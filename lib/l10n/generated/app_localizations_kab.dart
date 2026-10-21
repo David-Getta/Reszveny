@@ -2632,4 +2632,16 @@ class AppLocalizationsKab extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Ssufɣen-d igmaḍ: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Acimi i yettembiwil ass-a?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent ass-a';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Asegzi n AI seg yisallen n ass-a i yettwafen deg web; ssebba n tidet tezmer ad tili ur tettwassen ara neɣ temgarad. Mačči d aweṣṣi ɣef usenfaṛ n yidrimen. Yesseqdac amur-ik n yisteqsiyen n yal ass, mačči d tasleḍt.';
 }

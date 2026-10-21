@@ -2700,4 +2700,16 @@ class AppLocalizationsCs extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Zveřejněné výsledky: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Proč se dnes hýbe?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent dnes';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Vysvětlení AI z dnešních zpráv nalezených na webu; skutečný důvod může být neznámý nebo jiný. Nejde o investiční doporučení. Čerpá váš denní limit otázek, ne analýzu.';
 }

@@ -2633,4 +2633,16 @@ class AppLocalizationsAk extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Adwuma mu nsunsuanso a wɔdaa no adi: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Adɛn nti na ɛresesa nnɛ?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent nnɛ';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'AI nkyerɛkyerɛmu a efi nnɛ nsɛm a wohuu wɔ intanɛt so; nokware nti no betumi ayɛ nea wonnim anaa nea ɛsono. Ɛnyɛ sika a wode betɔ ade ho afotu. Ɛde wo da biara nsɛmmisa a wɔde ama wo no di dwuma, ɛnyɛ nhwehwɛmu.';
 }

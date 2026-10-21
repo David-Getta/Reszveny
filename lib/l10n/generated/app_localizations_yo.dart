@@ -2632,4 +2632,16 @@ class AppLocalizationsYo extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Àbájáde tí a tẹ̀jáde: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Kí ló dé tó ń yípadà lónìí?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent lónìí';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Àlàyé AI láti inú ìròyìn òní tí a rí lórí ayélujára; ìdí gidi lè jẹ́ àìmọ̀ tàbí yàtọ̀. Kì í ṣe ìmọ̀ràn ìdókòwò. Ó ń lo ààyè ìbéèrè ojoojúmọ́ rẹ, kì í ṣe ìtúpalẹ̀.';
 }

@@ -2642,4 +2642,16 @@ class AppLocalizationsRw extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Ibisubizo byatangajwe: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Kuki ihindagurika uyu munsi?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent uyu munsi';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Ibisobanuro bya AI bishingiye ku makuru y\'uyu munsi yabonetse kuri interineti; impamvu nyayo ishobora kuba itazwi cyangwa itandukanye. Si inama yo gushora imari. Bikoresha umubare w\'ibibazo byawe bya buri munsi, ntabwo ari isesengura.';
 }

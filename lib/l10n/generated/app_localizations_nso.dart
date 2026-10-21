@@ -2650,4 +2650,16 @@ class AppLocalizationsNso extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Dipoelo tše begilwego: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Ke ka baka la eng e šuthago lehono?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent lehono';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Tlhaloso ya AI go tšwa ditabeng tša lehono tše di hweditšwego inthaneteng; lebaka la nnete le ka ba le sa tsebje goba le fapana. Ga se keletšo ya peeletšo. E šomiša tekanyo ya gago ya dipotšišo ya letšatši, e sego tshekatsheko.';
 }

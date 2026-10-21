@@ -2642,4 +2642,16 @@ class AppLocalizationsRn extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Ibiharuro vyatangajwe: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Ni kubera iki ihindagurika uyu musi?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent uyu musi';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Insiguro ya AI ishingiye ku makuru y\'uyu musi yabonetse kuri internet; impamvu nyayo ishobora kuba itamenyekana canke itandukanye. Si impanuro yo gushora amafaranga. Ikoresha igitigiri c\'ibibazo vyawe vya buri musi, atari isesengura.';
 }

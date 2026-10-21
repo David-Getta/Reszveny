@@ -698,5 +698,8 @@
   "awaySince": "{when} bäri",
   "awayQuiet": "Köp zat üýtgemedi.",
   "awayAlerts": "{count, plural, =1{1 duýduryş işe girdi} other{{count} duýduryş işe girdi}}",
-  "awayReported": "Netijeler yglan edildi: {symbols}"
+  "awayReported": "Netijeler yglan edildi: {symbols}",
+  "moveWhyButton": "Şu gün näme üçin hereket edýär?",
+  "moveWhyTitle": "Şu gün {percent}",
+  "moveWhyNote": "Internetde tapylan şu günki habarlara esaslanýan AI düşündirişi; hakyky sebäp näbelli ýa-da başga bolup biler. Maýa goýum maslahaty däl. Analiz däl-de, gündelik sorag çägiňizi ulanýar."
 }

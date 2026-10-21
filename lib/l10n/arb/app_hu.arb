@@ -698,5 +698,8 @@
   "awaySince": "{when} óta",
   "awayQuiet": "Nem történt nagy mozgás.",
   "awayAlerts": "{count, plural, =1{1 riasztás teljesült} other{{count} riasztás teljesült}}",
-  "awayReported": "Gyorsjelentést adott: {symbols}"
+  "awayReported": "Gyorsjelentést adott: {symbols}",
+  "moveWhyButton": "Miért mozog ma?",
+  "moveWhyTitle": "{percent} ma",
+  "moveWhyNote": "AI-magyarázat a weben talált mai hírekből; a valódi ok ismeretlen vagy más is lehet. Nem befektetési tanács. A napi kérdéskeretből fogyaszt, nem elemzést."
 }

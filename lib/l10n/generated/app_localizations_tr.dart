@@ -2634,4 +2634,16 @@ class AppLocalizationsTr extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Açıklanan sonuçlar: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Bugün neden hareket ediyor?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return 'Bugün $percent';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'İnternette bulunan bugünkü haberlere dayalı yapay zekâ açıklaması; gerçek neden bilinmiyor veya farklı olabilir. Yatırım tavsiyesi değildir. Analiz değil, günlük soru hakkınızı kullanır.';
 }

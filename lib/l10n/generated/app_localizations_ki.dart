@@ -2634,4 +2634,16 @@ class AppLocalizationsKi extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Nĩmaarutire moimĩrĩro: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Nĩ kĩ gĩratũma ĩgarũrũke ũmũthĩ?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent ũmũthĩ';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Ũtaarĩria wa AI kuuma mohoro ma ũmũthĩ marĩa monekete intaneti-inĩ; gĩtũmi kĩa ma no gĩkorwo gĩtoĩkaine kana gĩkĩrĩ ngũrani. Ti ũtaaro wa kũiga mbeca. Ĩhũthagĩra mũigana waku wa ciũria cia o mũthenya, ti ũthuthuria.';
 }

@@ -2634,4 +2634,16 @@ class AppLocalizationsNb extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Rapporterte resultater: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Hvorfor beveger den seg i dag?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent i dag';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'KI-forklaring basert på dagens nyheter funnet på nettet; den egentlige årsaken kan være ukjent eller en annen. Ikke investeringsråd. Bruker din daglige spørsmålskvote, ikke en analyse.';
 }

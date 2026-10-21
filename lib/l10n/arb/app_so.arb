@@ -698,5 +698,8 @@
   "awaySince": "Laga soo bilaabo {when}",
   "awayQuiet": "Wax badan isma beddelin.",
   "awayAlerts": "{count, plural, =1{1 digniin ayaa shaqeysay} other{{count} digniin ayaa shaqeeyay}}",
-  "awayReported": "Natiijooyin la shaaciyay: {symbols}"
+  "awayReported": "Natiijooyin la shaaciyay: {symbols}",
+  "moveWhyButton": "Maxay u dhaqaaqaysaa maanta?",
+  "moveWhyTitle": "{percent} maanta",
+  "moveWhyNote": "Sharraxaad AI oo ku salaysan wararka maanta laga helay internetka; sababta dhabta ah waxay noqon kartaa mid aan la garanayn ama ka duwan. Talo maalgashi maaha. Waxay isticmaashaa tirada su'aalahaaga maalinlaha ah, ma aha falanqayn."
 }

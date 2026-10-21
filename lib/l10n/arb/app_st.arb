@@ -698,5 +698,8 @@
   "awaySince": "Ho tloha ka {when}",
   "awayQuiet": "Ha ho letho le fetohileng haholo.",
   "awayAlerts": "{count, plural, =1{Temoso e 1 e tsositswe} other{Ditemoso tse {count} di tsositswe}}",
-  "awayReported": "Diphetho tse tlalehilweng: {symbols}"
+  "awayReported": "Diphetho tse tlalehilweng: {symbols}",
+  "moveWhyButton": "Hobaneng e tsamaya kajeno?",
+  "moveWhyTitle": "{percent} kajeno",
+  "moveWhyNote": "Tlhaloso ya AI e tswang litabeng tsa kajeno tse fumanweng inthaneteng; lebaka la nnete le ka ba le sa tsejwe kapa le fapane. Ha se keletso ya matsete. E sebelisa palo ya hao ya lipotso ya letsatsi, eseng tlhahlobo."
 }

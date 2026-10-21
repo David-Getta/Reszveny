@@ -698,5 +698,8 @@
   "awaySince": "Li dale {when}",
   "awayQuiet": "Dara soppikuwul lu bari.",
   "awayAlerts": "{count, plural, =1{1 artu moo tàkk} other{{count} artu ñoo tàkk}}",
-  "awayReported": "Njureef yi ñu yëgle: {symbols}"
+  "awayReported": "Njureef yi ñu yëgle: {symbols}",
+  "moveWhyButton": "Lu tax muy yëngu tey?",
+  "moveWhyTitle": "{percent} tey",
+  "moveWhyNote": "Leeral bu AI ci xibaari tey yi ñu gis ci internet; lu tax ko dëgg mën na ñu xamul walla mu wuute. Du ndigal ci investissement. Dafay jëfandikoo say laaj yu bés bu nekk, du analiis."
 }

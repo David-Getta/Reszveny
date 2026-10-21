@@ -2676,4 +2676,16 @@ class AppLocalizationsRo extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Rezultate raportate: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'De ce se mișcă azi?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent azi';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Explicație AI pe baza știrilor de azi găsite pe web; motivul real poate fi necunoscut sau diferit. Nu este un sfat de investiții. Consumă din limita zilnică de întrebări, nu o analiză.';
 }

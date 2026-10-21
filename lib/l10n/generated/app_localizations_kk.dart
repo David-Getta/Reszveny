@@ -2635,4 +2635,16 @@ class AppLocalizationsKk extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Нәтижелерін жариялады: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Бүгін неге өзгеріп жатыр?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return 'Бүгін $percent';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Интернеттен табылған бүгінгі жаңалықтар негізіндегі ЖИ түсіндірмесі; шынайы себеп белгісіз немесе басқа болуы мүмкін. Инвестициялық кеңес емес. Күнделікті сұрақ лимитіңізді пайдаланады, талдауды емес.';
 }

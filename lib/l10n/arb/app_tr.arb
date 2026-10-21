@@ -698,5 +698,8 @@
   "awaySince": "{when} tarihinden beri",
   "awayQuiet": "Pek bir hareket olmadı.",
   "awayAlerts": "{count, plural, =1{1 alarm tetiklendi} other{{count} alarm tetiklendi}}",
-  "awayReported": "Açıklanan sonuçlar: {symbols}"
+  "awayReported": "Açıklanan sonuçlar: {symbols}",
+  "moveWhyButton": "Bugün neden hareket ediyor?",
+  "moveWhyTitle": "Bugün {percent}",
+  "moveWhyNote": "İnternette bulunan bugünkü haberlere dayalı yapay zekâ açıklaması; gerçek neden bilinmiyor veya farklı olabilir. Yatırım tavsiyesi değildir. Analiz değil, günlük soru hakkınızı kullanır."
 }

@@ -698,5 +698,8 @@
   "awaySince": "Sedert {when}",
   "awayQuiet": "Niks het veel beweeg nie.",
   "awayAlerts": "{count, plural, =1{1 waarskuwing geaktiveer} other{{count} waarskuwings geaktiveer}}",
-  "awayReported": "Resultate bekendgemaak: {symbols}"
+  "awayReported": "Resultate bekendgemaak: {symbols}",
+  "moveWhyButton": "Hoekom beweeg dit vandag?",
+  "moveWhyTitle": "{percent} vandag",
+  "moveWhyNote": "KI-verduideliking uit vandag se nuus op die web; die werklike rede kan onbekend of anders wees. Nie beleggingsadvies nie. Gebruik jou daaglikse vraagkwota, nie ’n ontleding nie."
 }

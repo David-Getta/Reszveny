@@ -2636,4 +2636,16 @@ class AppLocalizationsTg extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Натиҷаҳои нашршуда: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Чаро имрӯз ҳаракат мекунад?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent имрӯз';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Шарҳи ЗИ дар асоси хабарҳои имрӯзӣ, ки дар интернет ёфт шудаанд; сабаби аслӣ метавонад номаълум ё дигар бошад. Маслиҳати сармоягузорӣ нест. Лимити рӯзонаи саволҳои шуморо истифода мебарад, на таҳлилро.';
 }

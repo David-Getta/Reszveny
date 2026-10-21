@@ -698,5 +698,8 @@
   "awaySince": "Kemgbe {when}",
   "awayQuiet": "Ọ dịghị ihe gbanwere nke ukwuu.",
   "awayAlerts": "{count, plural, =1{Ọkwa 1 dara} other{Ọkwa {count} dara}}",
-  "awayReported": "Kwupụtara nsonaazụ: {symbols}"
+  "awayReported": "Kwupụtara nsonaazụ: {symbols}",
+  "moveWhyButton": "Gịnị mere ọ na-agbanwe taa?",
+  "moveWhyTitle": "{percent} taa",
+  "moveWhyNote": "Nkọwa AI sitere n'akụkọ taa a chọtara na weebụ; ezigbo ihe kpatara ya nwere ike bụrụ ihe a na-amaghị ma ọ bụ dị iche. Ọ bụghị ndụmọdụ itinye ego. Ọ na-eji oke ajụjụ gị kwa ụbọchị, ọ bụghị nyocha."
 }

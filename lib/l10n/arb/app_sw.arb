@@ -698,5 +698,8 @@
   "awaySince": "Tangu {when}",
   "awayQuiet": "Hakuna kilichobadilika sana.",
   "awayAlerts": "{count, plural, =1{Arifa 1 imeanzishwa} other{Arifa {count} zimeanzishwa}}",
-  "awayReported": "Matokeo yaliyotangazwa: {symbols}"
+  "awayReported": "Matokeo yaliyotangazwa: {symbols}",
+  "moveWhyButton": "Kwa nini inasogea leo?",
+  "moveWhyTitle": "{percent} leo",
+  "moveWhyNote": "Ufafanuzi wa AI kutoka habari za leo zilizopatikana mtandaoni; sababu halisi inaweza kuwa haijulikani au tofauti. Si ushauri wa uwekezaji. Hutumia kiwango chako cha maswali cha siku, si uchambuzi."
 }

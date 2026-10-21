@@ -2633,4 +2633,16 @@ class AppLocalizationsTt extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Нәтиҗәләр игълан ителде: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Бүген ни өчен хәрәкәт итә?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return 'Бүген $percent';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Интернетта табылган бүгенге яңалыкларга нигезләнгән ЯИ аңлатмасы; чын сәбәп билгесез яки башка булырга мөмкин. Инвестиция киңәше түгел. Анализ түгел, ә көнлек сорау лимитыгызны куллана.';
 }

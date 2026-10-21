@@ -2652,4 +2652,16 @@ class AppLocalizationsTn extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Dipholo tse di begilweng: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Goreng e tsamaya gompieno?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent gompieno';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Tlhaloso ya AI go tswa mo dikgannyeng tsa gompieno tse di bonweng mo inthaneteng; lebaka la nnete le ka nna le sa itsiwe kgotsa le farologane. Ga se kgakololo ya peeletso. E dirisa palo ya gago ya dipotso ya letsatsi, e seng tshekatsheko.';
 }

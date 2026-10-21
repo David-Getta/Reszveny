@@ -2707,4 +2707,16 @@ class AppLocalizationsSl extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Objavljeni rezultati: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Zakaj se danes premika?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent danes';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Razlaga UI na podlagi današnjih novic s spleta; pravi razlog je lahko neznan ali drugačen. Ni naložbeni nasvet. Porabi vašo dnevno kvoto vprašanj, ne analize.';
 }

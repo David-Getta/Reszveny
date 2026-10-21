@@ -2641,4 +2641,16 @@ class AppLocalizationsLua extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Bakapatula bipeta biabu: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Bua tshinyi tshidi tshishintuluka lelu?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent lelu';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Diumvuija dia AI difumina ku malu a lelu adi mamoneka pa internet; bualu bulelela budi mua kuikala kabuyi bumanyike anyi bushilangane. Ki mbuludiki bua kuteka makuta to. Didi disadila bungi bua nkonko yebe ya ku dituku, kadi ki ndikonkonona to.';
 }

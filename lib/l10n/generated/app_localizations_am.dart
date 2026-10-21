@@ -2601,4 +2601,16 @@ class AppLocalizationsAm extends AppLocalizations {
   String awayReported(String symbols) {
     return 'ውጤቶቻቸውን ያሳወቁ፦ $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'ዛሬ ለምን እየተለዋወጠ ነው?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return 'ዛሬ $percent';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'በድር ላይ ከተገኙ የዛሬ ዜናዎች የተዘጋጀ የAI ማብራሪያ; ትክክለኛው ምክንያት ያልታወቀ ወይም የተለየ ሊሆን ይችላል። የኢንቨስትመንት ምክር አይደለም። ዕለታዊ የጥያቄ ኮታዎን ይጠቀማል፣ ትንተና አይደለም።';
 }

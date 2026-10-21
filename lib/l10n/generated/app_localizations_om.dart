@@ -2643,4 +2643,16 @@ class AppLocalizationsOm extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Bu\'aa gabaafame: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Har\'a maaliif socho\'aa jira?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent har\'a';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Ibsa AI oduu har\'aa weebii irraa argame irratti hundaa\'e; sababni dhugaa hin beekamu ykn garaagara ta\'uu danda\'a. Gorsa invastimantii miti. Hiree gaaffii guyyaa keessan fayyadama, xiinxala miti.';
 }

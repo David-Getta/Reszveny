@@ -42,6 +42,7 @@ import 'features/news/daily_brief.dart';
 import 'features/news/morning_brief.dart';
 import 'features/news/earnings_summarizer.dart';
 import 'features/news/instrument_explainer.dart';
+import 'features/news/move_explainer.dart';
 import 'features/news/research_follow_up.dart';
 import 'features/news/news_explainer.dart';
 import 'features/news/watch_news.dart';
@@ -91,6 +92,7 @@ class AppServices {
     EarningsSummarizer? earningsSummarizer,
     DescriptionResolver? descriptionResolver,
     InstrumentExplainer? instrumentExplainer,
+    MoveExplainer? moveExplainer,
     ResearchFollowUp? researchFollowUp,
   }) : fx = fx ?? FxService(),
        updates = updates ?? UpdateService(config: config),
@@ -106,6 +108,7 @@ class AppServices {
        earningsSummarizer = earningsSummarizer ?? EarningsSummarizer(config: config, client: backend?.authenticated),
        descriptionResolver = descriptionResolver ?? DescriptionResolver(config: config, client: backend?.authenticated),
        instrumentExplainer = instrumentExplainer ?? InstrumentExplainer(config: config, client: backend?.authenticated),
+       moveExplainer = moveExplainer ?? MoveExplainer(config: config, client: backend?.authenticated),
        researchFollowUp = researchFollowUp ?? ResearchFollowUp(config: config, client: backend?.authenticated),
        telemetry = telemetry ?? Telemetry(preferences: preferences, sink: backend?.sendTelemetry) {
     this.telemetry.versionOf ??= () => this.updates.currentVersion;
@@ -324,6 +327,9 @@ class AppServices {
 
   /// „Mi ez a papír?” – AI-magyarázat ETF-hez, alaphoz (cégprofil nélküli tickerhez).
   final InstrumentExplainer instrumentExplainer;
+
+  /// „Miért mozog ma?” – AI-magyarázat a nagy napi mozgásra.
+  final MoveExplainer moveExplainer;
 
   /// Kérdés egy AI-kutatás szövegéről (a kutatási lapok alján).
   final ResearchFollowUp researchFollowUp;

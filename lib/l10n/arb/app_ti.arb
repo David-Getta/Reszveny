@@ -698,5 +698,8 @@
   "awaySince": "ካብ {when}",
   "awayQuiet": "ብዙሕ ዝተለወጠ ነገር የለን።",
   "awayAlerts": "{count, plural, =1{1 መጠንቀቕታ ተበጊሱ} other{{count} መጠንቀቕታታት ተበጊሶም}}",
-  "awayReported": "ዝተገልጸ ውጽኢት: {symbols}"
+  "awayReported": "ዝተገልጸ ውጽኢት: {symbols}",
+  "moveWhyButton": "ሎሚ ስለምንታይ ይንቀሳቐስ ኣሎ?",
+  "moveWhyTitle": "{percent} ሎሚ",
+  "moveWhyNote": "ኣብ ኢንተርነት ካብ ዝተረኽበ ናይ ሎሚ ዜና ዝተመርኰሰ መግለጺ AI፣ ናይ ብሓቂ ምኽንያት ዘይፍለጥ ወይ ዝተፈልየ ክኸውን ይኽእል። ናይ ወፍሪ ምኽሪ ኣይኮነን። ናይ መዓልቲ ሕቶ ዓቐንካ ይጥቀም፣ ትንተና ኣይኮነን።"
 }

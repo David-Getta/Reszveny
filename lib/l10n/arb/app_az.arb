@@ -698,5 +698,8 @@
   "awaySince": "{when} tarixindən",
   "awayQuiet": "Çox bir şey dəyişmədi.",
   "awayAlerts": "{count, plural, =1{1 xəbərdarlıq işə düşdü} other{{count} xəbərdarlıq işə düşdü}}",
-  "awayReported": "Nəticələrini açıqladı: {symbols}"
+  "awayReported": "Nəticələrini açıqladı: {symbols}",
+  "moveWhyButton": "Bu gün niyə dəyişir?",
+  "moveWhyTitle": "Bu gün {percent}",
+  "moveWhyNote": "Vebdə tapılan bugünkü xəbərlərə əsaslanan AI izahı; əsl səbəb naməlum və ya fərqli ola bilər. İnvestisiya məsləhəti deyil. Gündəlik sual limitinizdən istifadə edir, analiz deyil."
 }

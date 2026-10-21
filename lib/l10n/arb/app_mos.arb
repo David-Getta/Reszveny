@@ -698,5 +698,8 @@
   "awaySince": "Sẽn sɩng {when}",
   "awayQuiet": "Bũmb ka toeem wʋsg ye.",
   "awayAlerts": "{count, plural, =1{Keoog a 1 n yik} other{Keoogo {count} n yik}}",
-  "awayReported": "Biisã sẽn togs: {symbols}"
+  "awayReported": "Biisã sẽn togs: {symbols}",
+  "moveWhyButton": "Bõe yĩng t'a vẽnegd rũndã?",
+  "moveWhyTitle": "{percent} rũndã",
+  "moveWhyNote": "AI wilgri sẽn yit rũndã kibay sẽn yã ẽntɛrnɛt zugu; võor hakɩkã tõe n pa mi bɩ a yaa toor. Pa ligd rɩk saglg ye. A rɩkda f daar fãa sokr sõor la pa vaeesg ye."
 }

@@ -2631,4 +2631,16 @@ class AppLocalizationsSi extends AppLocalizations {
   String awayReported(String symbols) {
     return 'ප්‍රතිඵල නිකුත් කළා: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'අද ඇයි චලනය වෙන්නේ?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return 'අද $percent';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'වෙබයෙන් සොයාගත් අද පුවත් මත පදනම් වූ AI පැහැදිලි කිරීමකි; සැබෑ හේතුව නොදන්නා හෝ වෙනස් විය හැක. ආයෝජන උපදෙසක් නොවේ. විශ්ලේෂණයක් නොව, ඔබේ දිනපතා ප්‍රශ්න සීමාව භාවිත කරයි.';
 }

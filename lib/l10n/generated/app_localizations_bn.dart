@@ -2633,4 +2633,16 @@ class AppLocalizationsBn extends AppLocalizations {
   String awayReported(String symbols) {
     return 'ফলাফল প্রকাশ করেছে: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'আজ কেন ওঠানামা করছে?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return 'আজ $percent';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'ওয়েবে পাওয়া আজকের খবরের ভিত্তিতে AI ব্যাখ্যা; আসল কারণ অজানা বা ভিন্ন হতে পারে। বিনিয়োগ পরামর্শ নয়। আপনার দৈনিক প্রশ্নের কোটা ব্যবহার করে, বিশ্লেষণ নয়।';
 }

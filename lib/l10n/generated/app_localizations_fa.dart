@@ -2630,4 +2630,16 @@ class AppLocalizationsFa extends AppLocalizations {
   String awayReported(String symbols) {
     return 'نتایج خود را اعلام کردند: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'چرا امروز تغییر می‌کند؟';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent امروز';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'توضیح هوش مصنوعی بر اساس اخبار امروز در وب؛ دلیل واقعی ممکن است نامعلوم یا متفاوت باشد. توصیه سرمایه‌گذاری نیست. از سهمیه روزانه پرسش‌های شما استفاده می‌کند، نه تحلیل.';
 }

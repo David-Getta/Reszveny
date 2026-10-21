@@ -2604,4 +2604,16 @@ class AppLocalizationsTh extends AppLocalizations {
   String awayReported(String symbols) {
     return 'ประกาศผลประกอบการ: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'ทำไมวันนี้ราคาขยับ?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent วันนี้';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'คำอธิบายจาก AI โดยอิงข่าววันนี้ที่พบบนเว็บ สาเหตุจริงอาจไม่ทราบหรือแตกต่างออกไป ไม่ใช่คำแนะนำการลงทุน ใช้โควตาคำถามรายวันของคุณ ไม่ใช่การวิเคราะห์';
 }

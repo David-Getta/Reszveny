@@ -698,5 +698,8 @@
   "awaySince": "Seit {when}",
   "awayQuiet": "Es hat sich kaum etwas bewegt.",
   "awayAlerts": "{count, plural, =1{1 Alarm ausgelöst} other{{count} Alarme ausgelöst}}",
-  "awayReported": "Ergebnisse veröffentlicht: {symbols}"
+  "awayReported": "Ergebnisse veröffentlicht: {symbols}",
+  "moveWhyButton": "Warum bewegt sie sich heute?",
+  "moveWhyTitle": "{percent} heute",
+  "moveWhyNote": "KI-Erklärung aus heutigen Nachrichten im Web; der wahre Grund kann unbekannt oder ein anderer sein. Keine Anlageberatung. Verbraucht dein tägliches Fragenkontingent, keine Analyse."
 }

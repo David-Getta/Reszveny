@@ -698,5 +698,8 @@
   "awaySince": "Nuo {when}",
   "awayQuiet": "Niekas labai nepasikeitė.",
   "awayAlerts": "{count, plural, =1{Suveikė 1 įspėjimas} one{Suveikė {count} įspėjimas} few{Suveikė {count} įspėjimai} many{Suveikė {count} įspėjimo} other{Suveikė {count} įspėjimų}}",
-  "awayReported": "Paskelbė rezultatus: {symbols}"
+  "awayReported": "Paskelbė rezultatus: {symbols}",
+  "moveWhyButton": "Kodėl ji šiandien juda?",
+  "moveWhyTitle": "{percent} šiandien",
+  "moveWhyNote": "DI paaiškinimas pagal šiandienos naujienas internete; tikroji priežastis gali būti nežinoma arba kitokia. Tai ne investavimo rekomendacija. Naudoja jūsų dienos klausimų limitą, ne analizę."
 }

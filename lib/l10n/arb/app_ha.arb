@@ -698,5 +698,8 @@
   "awaySince": "Tun {when}",
   "awayQuiet": "Babu abin da ya canja sosai.",
   "awayAlerts": "{count, plural, =1{Faɗakarwa 1 ta kunna} other{Faɗakarwa {count} sun kunna}}",
-  "awayReported": "Sun fitar da sakamako: {symbols}"
+  "awayReported": "Sun fitar da sakamako: {symbols}",
+  "moveWhyButton": "Me ya sa yake motsi yau?",
+  "moveWhyTitle": "{percent} yau",
+  "moveWhyNote": "Bayanin AI daga labaran yau da aka samu a yanar gizo; ainihin dalilin ba a sani ba ko kuma ya bambanta. Ba shawarar zuba jari ba ne. Yana amfani da adadin tambayoyinka na yau da kullum, ba bincike ba."
 }

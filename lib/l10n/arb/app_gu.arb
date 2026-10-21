@@ -698,5 +698,8 @@
   "awaySince": "{when}થી",
   "awayQuiet": "ખાસ કંઈ બદલાયું નથી.",
   "awayAlerts": "{count, plural, =1{1 અલર્ટ ટ્રિગર થયો} other{{count} અલર્ટ ટ્રિગર થયા}}",
-  "awayReported": "પરિણામો જાહેર કર્યા: {symbols}"
+  "awayReported": "પરિણામો જાહેર કર્યા: {symbols}",
+  "moveWhyButton": "આજે કેમ ફરી રહ્યો છે?",
+  "moveWhyTitle": "આજે {percent}",
+  "moveWhyNote": "વેબ પર મળેલા આજના સમાચારના આધારે AI સમજૂતી; ખરું કારણ અજાણ્યું કે અલગ હોઈ શકે છે. રોકાણની સલાહ નથી. તમારો દૈનિક પ્રશ્ન કોટા વાપરે છે, વિશ્લેષણ નહીં."
 }

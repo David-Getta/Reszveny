@@ -698,5 +698,8 @@
   "awaySince": "Din {when}",
   "awayQuiet": "Nimic nu s-a mișcat prea mult.",
   "awayAlerts": "{count, plural, =1{1 alertă declanșată} few{{count} alerte declanșate} other{{count} de alerte declanșate}}",
-  "awayReported": "Rezultate raportate: {symbols}"
+  "awayReported": "Rezultate raportate: {symbols}",
+  "moveWhyButton": "De ce se mișcă azi?",
+  "moveWhyTitle": "{percent} azi",
+  "moveWhyNote": "Explicație AI pe baza știrilor de azi găsite pe web; motivul real poate fi necunoscut sau diferit. Nu este un sfat de investiții. Consumă din limita zilnică de întrebări, nu o analiză."
 }

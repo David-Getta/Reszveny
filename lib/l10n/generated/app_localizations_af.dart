@@ -2637,4 +2637,16 @@ class AppLocalizationsAf extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Resultate bekendgemaak: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Hoekom beweeg dit vandag?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent vandag';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'KI-verduideliking uit vandag se nuus op die web; die werklike rede kan onbekend of anders wees. Nie beleggingsadvies nie. Gebruik jou daaglikse vraagkwota, nie ’n ontleding nie.';
 }

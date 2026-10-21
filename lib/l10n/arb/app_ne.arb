@@ -698,5 +698,8 @@
   "awaySince": "{when} देखि",
   "awayQuiet": "खासै केही चलेन।",
   "awayAlerts": "{count, plural, =1{1 अलर्ट ट्रिगर भयो} other{{count} अलर्ट ट्रिगर भए}}",
-  "awayReported": "नतिजा प्रकाशित: {symbols}"
+  "awayReported": "नतिजा प्रकाशित: {symbols}",
+  "moveWhyButton": "आज किन चलिरहेको छ?",
+  "moveWhyTitle": "आज {percent}",
+  "moveWhyNote": "वेबमा फेला परेका आजका समाचारमा आधारित AI व्याख्या; वास्तविक कारण अज्ञात वा फरक हुन सक्छ। लगानी सल्लाह होइन। यसले तपाईंको दैनिक प्रश्न कोटा प्रयोग गर्छ, विश्लेषण होइन।"
 }

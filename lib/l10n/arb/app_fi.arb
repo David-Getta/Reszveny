@@ -698,5 +698,8 @@
   "awaySince": "Alkaen {when}",
   "awayQuiet": "Mikään ei liikkunut paljoa.",
   "awayAlerts": "{count, plural, =1{1 hälytys lauennut} other{{count} hälytystä lauennut}}",
-  "awayReported": "Tulokset julkaistu: {symbols}"
+  "awayReported": "Tulokset julkaistu: {symbols}",
+  "moveWhyButton": "Miksi se liikkuu tänään?",
+  "moveWhyTitle": "{percent} tänään",
+  "moveWhyNote": "Tekoälyn selitys verkosta löytyneistä tämän päivän uutisista; todellinen syy voi olla tuntematon tai eri. Ei sijoitusneuvontaa. Kuluttaa päivittäistä kysymyskiintiötäsi, ei analyysia."
 }

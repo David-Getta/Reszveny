@@ -2642,4 +2642,16 @@ class AppLocalizationsKg extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Ba rezulta me basika: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Sambu na nki yo ke soba bubu yai?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent bubu yai';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Ntendula ya AI yina me katuka na bansangu ya bubu yai ya bo me mona na internet; kikuma ya kieleka lenda vanda ya kuzaba ve to ya kuswaswana. Yo kele ve ndongisila ya kutula mbongo. Yo ke sadila ndilu na nge ya bangiufula ya konso kilumbu, kansi ve kutala ya mbote.';
 }

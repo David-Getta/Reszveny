@@ -2520,6 +2520,18 @@ class AppLocalizationsZh extends AppLocalizations {
   String awayReported(String symbols) {
     return '已公布财报：$symbols';
   }
+
+  @override
+  String get moveWhyButton => '今天为何波动？';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '今日 $percent';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'AI 根据网上找到的今日新闻给出的解释；真实原因可能未知或有所不同。不构成投资建议。消耗您的每日提问额度，而非分析额度。';
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -5036,4 +5048,16 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String awayReported(String symbols) {
     return '已公布業績：$symbols';
   }
+
+  @override
+  String get moveWhyButton => '今日為何波動？';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '今日 $percent';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'AI 根據網上搵到的今日新聞作出的解釋；真正原因可能未知或有所不同。不構成投資建議。會使用你的每日提問額度，而非分析。';
 }

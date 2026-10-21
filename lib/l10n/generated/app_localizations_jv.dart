@@ -2636,4 +2636,16 @@ class AppLocalizationsJv extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Ngumumake asil: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Kenapa obah dina iki?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent dina iki';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Panjelasan AI saka warta dina iki sing ditemokake ing web; alesan sing sabenere bisa uga ora dingerteni utawa beda. Dudu saran investasi. Nganggo kuota pitakon saben dina sampeyan, dudu analisis.';
 }

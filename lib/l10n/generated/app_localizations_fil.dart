@@ -2641,4 +2641,16 @@ class AppLocalizationsFil extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Naglabas ng resulta: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Bakit ito gumagalaw ngayon?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent ngayon';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Paliwanag ng AI mula sa mga balita ngayong araw na natagpuan sa web; maaaring hindi alam o iba ang tunay na dahilan. Hindi payo sa pamumuhunan. Gumagamit ng iyong pang-araw-araw na kuota ng tanong, hindi ng pagsusuri.';
 }

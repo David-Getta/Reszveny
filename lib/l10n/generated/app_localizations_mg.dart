@@ -2652,4 +2652,16 @@ class AppLocalizationsMg extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Vokatra navoaka: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Nahoana no mihetsika androany?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent androany';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Fanazavana avy amin\'ny AI miorina amin\'ny vaovaon\'ny androany hita tao amin\'ny tranonkala; mety tsy fantatra na hafa ny tena antony. Tsy torohevitra momba ny fampiasam-bola. Mampiasa ny fanontaniana isan\'andro anananao, fa tsy famakafakana.';
 }

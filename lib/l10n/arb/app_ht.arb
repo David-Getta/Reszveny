@@ -698,5 +698,8 @@
   "awaySince": "Depi {when}",
   "awayQuiet": "Anyen pa t deplase anpil.",
   "awayAlerts": "{count, plural, =1{1 alèt deklanche} other{{count} alèt deklanche}}",
-  "awayReported": "Rezilta pibliye: {symbols}"
+  "awayReported": "Rezilta pibliye: {symbols}",
+  "moveWhyButton": "Poukisa l ap bouje jodi a?",
+  "moveWhyTitle": "{percent} jodi a",
+  "moveWhyNote": "Eksplikasyon AI ki soti nan nouvèl jodi a yo jwenn sou entènèt; vrè rezon an ka pa konnen oswa diferan. Se pa konsèy envestisman. Li sèvi ak kota kesyon chak jou ou, se pa yon analiz."
 }

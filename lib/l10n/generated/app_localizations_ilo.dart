@@ -2653,4 +2653,16 @@ class AppLocalizationsIlo extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Nangipablaak iti resulta: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Apay nga aggaraw ita?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent ita';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Panangilawlawag ti AI manipud kadagiti damag ita nga nasarakan iti web; mabalin a saan a maammuan wenno sabali ti pudno a rason. Saan a balakad iti panagpuonan. Us-usarenna ti inaldaw a kuota ti saludsodmo, saan nga analisis.';
 }

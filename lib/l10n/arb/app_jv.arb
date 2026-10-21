@@ -698,5 +698,8 @@
   "awaySince": "Wiwit {when}",
   "awayQuiet": "Ora akeh sing owah.",
   "awayAlerts": "{count, plural, =1{1 peringatan kepicu} other{{count} peringatan kepicu}}",
-  "awayReported": "Ngumumake asil: {symbols}"
+  "awayReported": "Ngumumake asil: {symbols}",
+  "moveWhyButton": "Kenapa obah dina iki?",
+  "moveWhyTitle": "{percent} dina iki",
+  "moveWhyNote": "Panjelasan AI saka warta dina iki sing ditemokake ing web; alesan sing sabenere bisa uga ora dingerteni utawa beda. Dudu saran investasi. Nganggo kuota pitakon saben dina sampeyan, dudu analisis."
 }

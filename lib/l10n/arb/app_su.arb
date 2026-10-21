@@ -698,5 +698,8 @@
   "awaySince": "Ti {when}",
   "awayQuiet": "Teu aya nu robih pisan.",
   "awayAlerts": "{count, plural, =1{1 peringatan dipicu} other{{count} peringatan dipicu}}",
-  "awayReported": "Hasil anu dilaporkeun: {symbols}"
+  "awayReported": "Hasil anu dilaporkeun: {symbols}",
+  "moveWhyButton": "Naha dinten ieu obah?",
+  "moveWhyTitle": "{percent} dinten ieu",
+  "moveWhyNote": "Katerangan AI dumasar warta dinten ieu anu kapendak di wéb; alesan saleresna tiasa teu dipikanyaho atanapi béda. Sanés naséhat investasi. Ngagunakeun kuota patarosan harian anjeun, sanés analisis."
 }

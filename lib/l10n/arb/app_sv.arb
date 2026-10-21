@@ -698,5 +698,8 @@
   "awaySince": "Sedan {when}",
   "awayQuiet": "Inte mycket har rört sig.",
   "awayAlerts": "{count, plural, =1{1 larm utlöst} other{{count} larm utlösta}}",
-  "awayReported": "Rapporterade resultat: {symbols}"
+  "awayReported": "Rapporterade resultat: {symbols}",
+  "moveWhyButton": "Varför rör den sig i dag?",
+  "moveWhyTitle": "{percent} i dag",
+  "moveWhyNote": "AI-förklaring utifrån dagens nyheter på webben; den verkliga orsaken kan vara okänd eller en annan. Inte investeringsrådgivning. Använder din dagliga frågekvot, inte en analys."
 }

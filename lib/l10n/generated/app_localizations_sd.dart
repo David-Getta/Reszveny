@@ -2626,4 +2626,16 @@ class AppLocalizationsSd extends AppLocalizations {
   String awayReported(String symbols) {
     return 'نتيجا جاري ٿيا: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'اڄ ڇو هلي رهيو آهي؟';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return 'اڄ $percent';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'ويب تي مليل اڄ جي خبرن تي ٻڌل AI وضاحت؛ اصل سبب اڻڄاتل يا مختلف ٿي سگهي ٿو. سيڙپڪاري جي صلاح ناهي. توهان جو روزاني سوالن جو ڪوٽا استعمال ڪري ٿو، تجزيو نه.';
 }

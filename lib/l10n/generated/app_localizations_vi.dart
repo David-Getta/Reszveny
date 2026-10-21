@@ -2627,4 +2627,16 @@ class AppLocalizationsVi extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Đã công bố kết quả: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Vì sao hôm nay biến động?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent hôm nay';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Giải thích của AI dựa trên tin tức hôm nay tìm thấy trên web; lý do thực sự có thể chưa rõ hoặc khác. Không phải lời khuyên đầu tư. Dùng hạn mức câu hỏi hằng ngày của bạn, không phải phân tích.';
 }

@@ -2639,4 +2639,16 @@ class AppLocalizationsGn extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Resultado oñemoherakuã: $symbols';
   }
+
+  @override
+  String get moveWhyButton => '¿Mbaʼére oñemongu\'e ko árape?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent ko árape';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'AI ñemyesakã ko árape marandu ojejuhúva ñandutípe; pe mbaʼére añetegua ikatu ndojekuaái térã iñambue. Ndahaʼéi ñemoñeʼẽ viru ñemoĩ rehegua. Oipuru nde porandu ára pukukue, ndahaʼéi jesareko.';
 }

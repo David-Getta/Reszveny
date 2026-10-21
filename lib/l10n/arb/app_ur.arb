@@ -698,5 +698,8 @@
   "awaySince": "{when} سے",
   "awayQuiet": "کوئی خاص تبدیلی نہیں ہوئی۔",
   "awayAlerts": "{count, plural, =1{1 الرٹ ٹرگر ہوا} other{{count} الرٹس ٹرگر ہوئے}}",
-  "awayReported": "نتائج جاری: {symbols}"
+  "awayReported": "نتائج جاری: {symbols}",
+  "moveWhyButton": "آج یہ کیوں حرکت کر رہا ہے؟",
+  "moveWhyTitle": "آج {percent}",
+  "moveWhyNote": "ویب پر ملنے والی آج کی خبروں پر مبنی AI وضاحت؛ اصل وجہ نامعلوم یا مختلف ہو سکتی ہے۔ سرمایہ کاری کا مشورہ نہیں۔ یہ آپ کا روزانہ سوالات کا کوٹا استعمال کرتی ہے، تجزیہ نہیں۔"
 }

@@ -698,5 +698,8 @@
   "awaySince": "Since {when}",
   "awayQuiet": "Nothing really move.",
   "awayAlerts": "{count, plural, =1{1 alert don trigger} other{{count} alerts don trigger}}",
-  "awayReported": "Results wey dem report: {symbols}"
+  "awayReported": "Results wey dem report: {symbols}",
+  "moveWhyButton": "Why e dey move today?",
+  "moveWhyTitle": "{percent} today",
+  "moveWhyNote": "AI explanation from today news wey we find online; the real reason fit no dey known or fit different. E no be investment advice. E dey use your daily question allowance, no be analysis."
 }

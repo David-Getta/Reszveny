@@ -2641,4 +2641,16 @@ class AppLocalizationsNy extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Zotsatira zalengezedwa: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Chifukwa chiyani ikusuntha lero?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent lero';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Kufotokoza kwa AI kochokera ku nkhani za lero zopezeka pa intaneti; chifukwa chenicheni chikhoza kukhala chosadziwika kapena chosiyana. Si uphungu wa zachuma. Kumagwiritsa ntchito mafunso anu a tsiku ndi tsiku, osati kusanthula.';
 }

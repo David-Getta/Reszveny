@@ -2643,4 +2643,16 @@ class AppLocalizationsHy extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Հրապարակել են արդյունքները՝ $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Ինչո՞ւ է այն շարժվում այսօր';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent այսօր';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'ԱԲ բացատրություն համացանցում գտնված այսօրվա նորություններից․ իրական պատճառը կարող է անհայտ կամ այլ լինել։ Ներդրումային խորհուրդ չէ։ Օգտագործում է ձեր օրական հարցերի սահմանաչափը, ոչ թե վերլուծություն։';
 }

@@ -2621,4 +2621,16 @@ class AppLocalizationsMos extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Biisã sẽn togs: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Bõe yĩng t\'a vẽnegd rũndã?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent rũndã';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'AI wilgri sẽn yit rũndã kibay sẽn yã ẽntɛrnɛt zugu; võor hakɩkã tõe n pa mi bɩ a yaa toor. Pa ligd rɩk saglg ye. A rɩkda f daar fãa sokr sõor la pa vaeesg ye.';
 }

@@ -698,5 +698,8 @@
   "awaySince": "Mula {when}",
   "awayQuiet": "Walang gaanong gumalaw.",
   "awayAlerts": "{count, plural, =1{1 alerto ang na-trigger} other{{count} alerto ang na-trigger}}",
-  "awayReported": "Naglabas ng resulta: {symbols}"
+  "awayReported": "Naglabas ng resulta: {symbols}",
+  "moveWhyButton": "Bakit ito gumagalaw ngayon?",
+  "moveWhyTitle": "{percent} ngayon",
+  "moveWhyNote": "Paliwanag ng AI mula sa mga balita ngayong araw na natagpuan sa web; maaaring hindi alam o iba ang tunay na dahilan. Hindi payo sa pamumuhunan. Gumagamit ng iyong pang-araw-araw na kuota ng tanong, hindi ng pagsusuri."
 }

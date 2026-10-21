@@ -2564,4 +2564,16 @@ class AppLocalizationsKo extends AppLocalizations {
   String awayReported(String symbols) {
     return '실적 발표: $symbols';
   }
+
+  @override
+  String get moveWhyButton => '오늘 왜 움직이나요?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '오늘 $percent';
+  }
+
+  @override
+  String get moveWhyNote =>
+      '웹에서 찾은 오늘 뉴스를 바탕으로 한 AI 설명입니다. 실제 이유는 알 수 없거나 다를 수 있습니다. 투자 조언이 아닙니다. 분석이 아닌 일일 질문 한도를 사용합니다.';
 }

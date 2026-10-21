@@ -2639,4 +2639,16 @@ class AppLocalizationsHa extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Sun fitar da sakamako: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Me ya sa yake motsi yau?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent yau';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Bayanin AI daga labaran yau da aka samu a yanar gizo; ainihin dalilin ba a sani ba ko kuma ya bambanta. Ba shawarar zuba jari ba ne. Yana amfani da adadin tambayoyinka na yau da kullum, ba bincike ba.';
 }

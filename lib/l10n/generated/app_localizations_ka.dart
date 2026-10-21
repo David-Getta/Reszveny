@@ -2635,4 +2635,16 @@ class AppLocalizationsKa extends AppLocalizations {
   String awayReported(String symbols) {
     return 'გამოაქვეყნეს შედეგები: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'რატომ მოძრაობს დღეს?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent დღეს';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'AI განმარტება ინტერნეტში ნაპოვნი დღევანდელი სიახლეებიდან; ნამდვილი მიზეზი შეიძლება უცნობი ან სხვა იყოს. არ არის საინვესტიციო რჩევა. ხარჯავს თქვენი შეკითხვების დღიურ ლიმიტს, არა ანალიზს.';
 }

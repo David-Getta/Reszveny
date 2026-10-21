@@ -2645,4 +2645,16 @@ class AppLocalizationsXh extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Iziphumo ezipapashiweyo: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Kutheni sishukuma namhlanje?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent namhlanje';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Ingcaciso ye-AI esuka kwiindaba zanamhlanje ezifumaneka kwi-intanethi; isizathu sokwenyani sisenokungaziwa okanye sahluke. Ayisicebiso sotyalo-mali. Isebenzisa umlinganiselo wakho wemibuzo wosuku, hayi uhlalutyo.';
 }

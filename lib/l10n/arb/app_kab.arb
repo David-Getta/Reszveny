@@ -698,5 +698,8 @@
   "awaySince": "Seg {when}",
   "awayQuiet": "Ulac ayen i ibeddlen aṭas.",
   "awayAlerts": "{count, plural, =1{1 n ulɣu i yekkren} other{{count} n yilɣa i yekkren}}",
-  "awayReported": "Ssufɣen-d igmaḍ: {symbols}"
+  "awayReported": "Ssufɣen-d igmaḍ: {symbols}",
+  "moveWhyButton": "Acimi i yettembiwil ass-a?",
+  "moveWhyTitle": "{percent} ass-a",
+  "moveWhyNote": "Asegzi n AI seg yisallen n ass-a i yettwafen deg web; ssebba n tidet tezmer ad tili ur tettwassen ara neɣ temgarad. Mačči d aweṣṣi ɣef usenfaṛ n yidrimen. Yesseqdac amur-ik n yisteqsiyen n yal ass, mačči d tasleḍt."
 }

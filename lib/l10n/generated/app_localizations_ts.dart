@@ -2651,4 +2651,16 @@ class AppLocalizationsTs extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Mbuyelo lowu vikiweke: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Hikwalaho ka yini yi famba namuntlha?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent namuntlha';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Nhlamuselo ya AI leyi humaka eka mahungu ya namuntlha lama kumiweke eka inthanete; xivangelo xa ntiyiso xi nga ha va xi nga tiviwi kumbe xi hambana. A hi ndzayo ya vuvekisi. Yi tirhisa nhlayo ya wena ya swivutiso ya siku, ku nga ri nxopaxopo.';
 }

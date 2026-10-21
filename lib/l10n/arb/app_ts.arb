@@ -698,5 +698,8 @@
   "awaySince": "Ku sukela {when}",
   "awayQuiet": "A ku na lexi cinceke ngopfu.",
   "awayAlerts": "{count, plural, =1{Xilemukiso 1 xi pfurile} other{Swilemukiso swa {count} swi pfurile}}",
-  "awayReported": "Mbuyelo lowu vikiweke: {symbols}"
+  "awayReported": "Mbuyelo lowu vikiweke: {symbols}",
+  "moveWhyButton": "Hikwalaho ka yini yi famba namuntlha?",
+  "moveWhyTitle": "{percent} namuntlha",
+  "moveWhyNote": "Nhlamuselo ya AI leyi humaka eka mahungu ya namuntlha lama kumiweke eka inthanete; xivangelo xa ntiyiso xi nga ha va xi nga tiviwi kumbe xi hambana. A hi ndzayo ya vuvekisi. Yi tirhisa nhlayo ya wena ya swivutiso ya siku, ku nga ri nxopaxopo."
 }

@@ -698,5 +698,8 @@
   "awaySince": "Kabini {when}",
   "awayQuiet": "Foyi ma yɛlɛma kosɛbɛ.",
   "awayAlerts": "{count, plural, =1{Lasɔmini 1 bɔra} other{Lasɔmini {count} bɔra}}",
-  "awayReported": "Jaabiw labɔlen: {symbols}"
+  "awayReported": "Jaabiw labɔlen: {symbols}",
+  "moveWhyButton": "Mun na a bɛ yɛlɛma bi?",
+  "moveWhyTitle": "{percent} bi",
+  "moveWhyNote": "AI ɲɛfɔli min bɔra bi kibaruyaw la ɛntɛrinɛti kan; kun sɛbɛ bɛ se ka kɛ min ma dɔn walima min tɛ kelen ye. A tɛ wariko ladilikan ye. A bɛ i ka tile ɲininkali hakɛ ta, a tɛ sɛgɛsɛgɛli ye."
 }

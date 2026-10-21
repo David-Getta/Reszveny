@@ -2631,4 +2631,16 @@ class AppLocalizationsBm extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Jaabiw labɔlen: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Mun na a bɛ yɛlɛma bi?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent bi';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'AI ɲɛfɔli min bɔra bi kibaruyaw la ɛntɛrinɛti kan; kun sɛbɛ bɛ se ka kɛ min ma dɔn walima min tɛ kelen ye. A tɛ wariko ladilikan ye. A bɛ i ka tile ɲininkali hakɛ ta, a tɛ sɛgɛsɛgɛli ye.';
 }

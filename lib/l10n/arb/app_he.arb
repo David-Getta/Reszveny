@@ -698,5 +698,8 @@
   "awaySince": "מאז {when}",
   "awayQuiet": "לא היו תנועות משמעותיות.",
   "awayAlerts": "{count, plural, =1{הופעלה התרעה אחת} two{הופעלו שתי התרעות} other{הופעלו {count} התרעות}}",
-  "awayReported": "פרסמו תוצאות: {symbols}"
+  "awayReported": "פרסמו תוצאות: {symbols}",
+  "moveWhyButton": "למה היא זזה היום?",
+  "moveWhyTitle": "{percent} היום",
+  "moveWhyNote": "הסבר של AI מתוך חדשות היום שנמצאו ברשת; הסיבה האמיתית עשויה להיות לא ידועה או שונה. אינו ייעוץ השקעות. מנצל את מכסת השאלות היומית שלך, לא ניתוח."
 }

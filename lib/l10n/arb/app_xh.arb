@@ -698,5 +698,8 @@
   "awaySince": "Ukususela {when}",
   "awayQuiet": "Akukho nto itshintshe kakhulu.",
   "awayAlerts": "{count, plural, =1{Isilumkiso 1 siqalisiwe} other{Izilumkiso {count} ziqalisiwe}}",
-  "awayReported": "Iziphumo ezipapashiweyo: {symbols}"
+  "awayReported": "Iziphumo ezipapashiweyo: {symbols}",
+  "moveWhyButton": "Kutheni sishukuma namhlanje?",
+  "moveWhyTitle": "{percent} namhlanje",
+  "moveWhyNote": "Ingcaciso ye-AI esuka kwiindaba zanamhlanje ezifumaneka kwi-intanethi; isizathu sokwenyani sisenokungaziwa okanye sahluke. Ayisicebiso sotyalo-mali. Isebenzisa umlinganiselo wakho wemibuzo wosuku, hayi uhlalutyo."
 }

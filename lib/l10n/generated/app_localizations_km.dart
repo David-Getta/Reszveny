@@ -2613,4 +2613,16 @@ class AppLocalizationsKm extends AppLocalizations {
   String awayReported(String symbols) {
     return 'បានប្រកាសលទ្ធផល៖ $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'ហេតុអ្វីវាប្រែប្រួលថ្ងៃនេះ?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent ថ្ងៃនេះ';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'ការពន្យល់ដោយ AI ពីព័ត៌មានថ្ងៃនេះដែលរកឃើញនៅលើវេប។ មូលហេតុពិតអាចមិនស្គាល់ ឬខុសគ្នា។ មិនមែនជាដំបូន្មានវិនិយោគទេ។ ប្រើកូតាសំណួរប្រចាំថ្ងៃរបស់អ្នក មិនមែនការវិភាគទេ។';
 }

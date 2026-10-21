@@ -2644,4 +2644,16 @@ class AppLocalizationsLg extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Baafulumizza ebivuddemu: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Lwaki ekyukakyuka leero?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent leero';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Ennyinnyonnyola ya AI okuva mu mawulire ga leero agasangiddwa ku mukutu; ensonga entuufu eyinza obutamanyibwa oba okuba ey\'enjawulo. Si kubuulirira ku kusiga ensimbi. Ekozesa omuwendo gwo gw\'ebibuuzo ebya buli lunaku, si kwekenneenya.';
 }

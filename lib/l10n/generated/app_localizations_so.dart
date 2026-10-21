@@ -2643,4 +2643,16 @@ class AppLocalizationsSo extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Natiijooyin la shaaciyay: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Maxay u dhaqaaqaysaa maanta?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent maanta';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Sharraxaad AI oo ku salaysan wararka maanta laga helay internetka; sababta dhabta ah waxay noqon kartaa mid aan la garanayn ama ka duwan. Talo maalgashi maaha. Waxay isticmaashaa tirada su\'aalahaaga maalinlaha ah, ma aha falanqayn.';
 }

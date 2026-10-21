@@ -698,5 +698,8 @@
   "awaySince": "Okuva {when}",
   "awayQuiet": "Tewali kyakyuse nnyo.",
   "awayAlerts": "{count, plural, =1{Okulabula 1 kuzze} other{Okulabula {count} kuzze}}",
-  "awayReported": "Baafulumizza ebivuddemu: {symbols}"
+  "awayReported": "Baafulumizza ebivuddemu: {symbols}",
+  "moveWhyButton": "Lwaki ekyukakyuka leero?",
+  "moveWhyTitle": "{percent} leero",
+  "moveWhyNote": "Ennyinnyonnyola ya AI okuva mu mawulire ga leero agasangiddwa ku mukutu; ensonga entuufu eyinza obutamanyibwa oba okuba ey'enjawulo. Si kubuulirira ku kusiga ensimbi. Ekozesa omuwendo gwo gw'ebibuuzo ebya buli lunaku, si kwekenneenya."
 }

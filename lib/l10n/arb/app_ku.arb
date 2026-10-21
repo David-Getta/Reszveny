@@ -698,5 +698,8 @@
   "awaySince": "Ji {when} ve",
   "awayQuiet": "Tiştek zêde neguherî.",
   "awayAlerts": "{count, plural, =1{1 hişyarî çalak bû} other{{count} hişyarî çalak bûn}}",
-  "awayReported": "Encam eşkere kirin: {symbols}"
+  "awayReported": "Encam eşkere kirin: {symbols}",
+  "moveWhyButton": "Çima îro diguhere?",
+  "moveWhyTitle": "{percent} îro",
+  "moveWhyNote": "Ravekirina AI ji nûçeyên îro yên li ser webê hatine dîtin; sedema rastîn dibe ku nenas an cuda be. Ne şîreta veberhênanê ye. Kotaya pirsên te ya rojane bi kar tîne, ne analîzekê."
 }

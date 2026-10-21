@@ -2634,4 +2634,16 @@ class AppLocalizationsPcm extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Results wey dem report: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Why e dey move today?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent today';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'AI explanation from today news wey we find online; the real reason fit no dey known or fit different. E no be investment advice. E dey use your daily question allowance, no be analysis.';
 }

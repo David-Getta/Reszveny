@@ -698,5 +698,8 @@
   "awaySince": "{when}以降",
   "awayQuiet": "大きな値動きはありませんでした。",
   "awayAlerts": "{count, plural, =1{アラート1件が発動} other{アラート{count}件が発動}}",
-  "awayReported": "決算発表: {symbols}"
+  "awayReported": "決算発表: {symbols}",
+  "moveWhyButton": "今日なぜ動いている？",
+  "moveWhyTitle": "本日 {percent}",
+  "moveWhyNote": "ウェブ上の本日のニュースに基づくAIの説明です。実際の理由は不明または異なる場合があります。投資助言ではありません。分析ではなく、1日の質問回数を消費します。"
 }

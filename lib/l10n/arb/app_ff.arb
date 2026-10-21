@@ -698,5 +698,8 @@
   "awaySince": "Gila {when}",
   "awayQuiet": "Hay huunde dillaani sanne.",
   "awayAlerts": "{count, plural, =1{Tintinol 1 yaltii} other{Tintinooli {count} yaltii}}",
-  "awayReported": "Ɓe yaltini keɓe maɓɓe: {symbols}"
+  "awayReported": "Ɓe yaltini keɓe maɓɓe: {symbols}",
+  "moveWhyButton": "Ko waɗi ɗum waylotoo hannde?",
+  "moveWhyTitle": "{percent} hannde",
+  "moveWhyNote": "Faccirde AI iwde e kabaruuji hannde ɗi tawaa e enternet; sabaabu goonga ina waawi wonde ko anndaaka walla ko seerti. Wonaa waajuuji jawdi. Ina huutoroo keerol maa naamnde ñalawma, wonaa ƴeewndo."
 }

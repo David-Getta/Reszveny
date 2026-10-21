@@ -698,5 +698,8 @@
   "awaySince": "Sinds {when}",
   "awayQuiet": "Er is weinig bewogen.",
   "awayAlerts": "{count, plural, =1{1 alert geactiveerd} other{{count} alerts geactiveerd}}",
-  "awayReported": "Resultaten gerapporteerd: {symbols}"
+  "awayReported": "Resultaten gerapporteerd: {symbols}",
+  "moveWhyButton": "Waarom beweegt het vandaag?",
+  "moveWhyTitle": "{percent} vandaag",
+  "moveWhyNote": "AI-uitleg op basis van het nieuws van vandaag op het web; de echte reden kan onbekend of anders zijn. Geen beleggingsadvies. Gebruikt je dagelijkse vragentegoed, geen analyse."
 }

@@ -2629,4 +2629,16 @@ class AppLocalizationsWo extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Njureef yi ñu yëgle: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Lu tax muy yëngu tey?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent tey';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Leeral bu AI ci xibaari tey yi ñu gis ci internet; lu tax ko dëgg mën na ñu xamul walla mu wuute. Du ndigal ci investissement. Dafay jëfandikoo say laaj yu bés bu nekk, du analiis.';
 }

@@ -2635,4 +2635,16 @@ class AppLocalizationsFi extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Tulokset julkaistu: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Miksi se liikkuu tänään?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent tänään';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Tekoälyn selitys verkosta löytyneistä tämän päivän uutisista; todellinen syy voi olla tuntematon tai eri. Ei sijoitusneuvontaa. Kuluttaa päivittäistä kysymyskiintiötäsi, ei analyysia.';
 }

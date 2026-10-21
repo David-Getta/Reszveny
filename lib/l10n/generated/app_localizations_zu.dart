@@ -2643,4 +2643,16 @@ class AppLocalizationsZu extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Imiphumela ememezelwe: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Kungani linyakaza namuhla?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent namuhla';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Incazelo ye-AI evela ezindabeni zanamuhla ezitholakala ku-inthanethi; isizathu sangempela singase singaziwa noma sihluke. Akuyona iseluleko sokutshala imali. Isebenzisa isabelo sakho semibuzo sosuku, hhayi ukuhlaziya.';
 }

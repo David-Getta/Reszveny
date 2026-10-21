@@ -2628,4 +2628,16 @@ class AppLocalizationsFf extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Ɓe yaltini keɓe maɓɓe: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Ko waɗi ɗum waylotoo hannde?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent hannde';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Faccirde AI iwde e kabaruuji hannde ɗi tawaa e enternet; sabaabu goonga ina waawi wonde ko anndaaka walla ko seerti. Wonaa waajuuji jawdi. Ina huutoroo keerol maa naamnde ñalawma, wonaa ƴeewndo.';
 }

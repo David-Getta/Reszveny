@@ -698,5 +698,8 @@
   "awaySince": "له {when} راهیسې",
   "awayQuiet": "څه ډېر بدلون نه و.",
   "awayAlerts": "{count, plural, =1{1 خبرتیا فعاله شوه} other{{count} خبرتیاوې فعالې شوې}}",
-  "awayReported": "خپرې شوې پایلې: {symbols}"
+  "awayReported": "خپرې شوې پایلې: {symbols}",
+  "moveWhyButton": "نن ولې خوځي؟",
+  "moveWhyTitle": "نن {percent}",
+  "moveWhyNote": "د نن ورځې د خبرونو پر بنسټ چې په ویب کې موندل شوي، د AI تشریح؛ اصلي دلیل کېدای شي نامعلوم یا توپیر ولري. د پانګونې مشوره نه ده. ستاسو د ورځنیو پوښتنو حد کاروي، نه تحلیل."
 }

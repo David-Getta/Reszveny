@@ -698,5 +698,8 @@
   "awaySince": "Go tloga ka {when}",
   "awayQuiet": "Ga go selo seo se fetogilego kudu.",
   "awayAlerts": "{count, plural, =1{Temošo e 1 e tsošitšwe} other{Ditemošo tše {count} di tsošitšwe}}",
-  "awayReported": "Dipoelo tše begilwego: {symbols}"
+  "awayReported": "Dipoelo tše begilwego: {symbols}",
+  "moveWhyButton": "Ke ka baka la eng e šuthago lehono?",
+  "moveWhyTitle": "{percent} lehono",
+  "moveWhyNote": "Tlhaloso ya AI go tšwa ditabeng tša lehono tše di hweditšwego inthaneteng; lebaka la nnete le ka ba le sa tsebje goba le fapana. Ga se keletšo ya peeletšo. E šomiša tekanyo ya gago ya dipotšišo ya letšatši, e sego tshekatsheko."
 }

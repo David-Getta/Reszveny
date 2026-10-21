@@ -698,5 +698,8 @@
   "awaySince": "Nanomboka ny {when}",
   "awayQuiet": "Tsy nisy niova firy.",
   "awayAlerts": "{count, plural, =1{Fampitandremana 1 nipoitra} other{Fampitandremana {count} nipoitra}}",
-  "awayReported": "Vokatra navoaka: {symbols}"
+  "awayReported": "Vokatra navoaka: {symbols}",
+  "moveWhyButton": "Nahoana no mihetsika androany?",
+  "moveWhyTitle": "{percent} androany",
+  "moveWhyNote": "Fanazavana avy amin'ny AI miorina amin'ny vaovaon'ny androany hita tao amin'ny tranonkala; mety tsy fantatra na hafa ny tena antony. Tsy torohevitra momba ny fampiasam-bola. Mampiasa ny fanontaniana isan'andro anananao, fa tsy famakafakana."
 }

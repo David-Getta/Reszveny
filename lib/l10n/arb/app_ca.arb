@@ -698,5 +698,8 @@
   "awaySince": "Des de {when}",
   "awayQuiet": "No s'ha mogut gaire res.",
   "awayAlerts": "{count, plural, =1{S'ha activat 1 alerta} other{S'han activat {count} alertes}}",
-  "awayReported": "Resultats publicats: {symbols}"
+  "awayReported": "Resultats publicats: {symbols}",
+  "moveWhyButton": "Per què es mou avui?",
+  "moveWhyTitle": "{percent} avui",
+  "moveWhyNote": "Explicació de la IA a partir de les notícies d’avui trobades al web; el motiu real pot ser desconegut o diferent. No és assessorament d’inversió. Consumeix la teva quota diària de preguntes, no una anàlisi."
 }

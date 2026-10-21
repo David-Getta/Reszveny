@@ -698,5 +698,8 @@
   "awaySince": "Sukad {when}",
   "awayQuiet": "Wala kaayoy nausab.",
   "awayAlerts": "{count, plural, =1{1 ka alerto ang na-trigger} other{{count} ka alerto ang na-trigger}}",
-  "awayReported": "Nagpagawas og resulta: {symbols}"
+  "awayReported": "Nagpagawas og resulta: {symbols}",
+  "moveWhyButton": "Nganong nagalihok kini karon?",
+  "moveWhyTitle": "{percent} karon",
+  "moveWhyNote": "Pagpatin-aw sa AI gikan sa mga balita karong adlawa nga nakit-an sa web; ang tinuod nga hinungdan mahimong wala mahibaloi o lahi. Dili tambag sa pagpamuhunan. Mogamit sa imong adlaw-adlaw nga kuota sa pangutana, dili analisis."
 }

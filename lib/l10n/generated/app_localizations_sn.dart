@@ -2639,4 +2639,16 @@ class AppLocalizationsSn extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Mhedzisiro dzakaburitswa: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Sei iri kufamba nhasi?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent nhasi';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Tsananguro ye-AI kubva munhau dzanhasi dzakawanikwa pawebhu; chikonzero chaicho chinogona kusazivikanwa kana kusiyana. Hazvisi zano rekudyara mari. Zvinoshandisa mibvunzo yako yezuva, kwete ongororo.';
 }

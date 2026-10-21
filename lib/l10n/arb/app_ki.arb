@@ -698,5 +698,8 @@
   "awaySince": "Kuuma {when}",
   "awayQuiet": "Gũtirĩ kĩndũ kĩacenjirie mũno.",
   "awayAlerts": "{count, plural, =1{Kĩmenyithia 1 nĩkĩaumire} other{Imenyithia {count} nĩciaumire}}",
-  "awayReported": "Nĩmaarutire moimĩrĩro: {symbols}"
+  "awayReported": "Nĩmaarutire moimĩrĩro: {symbols}",
+  "moveWhyButton": "Nĩ kĩ gĩratũma ĩgarũrũke ũmũthĩ?",
+  "moveWhyTitle": "{percent} ũmũthĩ",
+  "moveWhyNote": "Ũtaarĩria wa AI kuuma mohoro ma ũmũthĩ marĩa monekete intaneti-inĩ; gĩtũmi kĩa ma no gĩkorwo gĩtoĩkaine kana gĩkĩrĩ ngũrani. Ti ũtaaro wa kũiga mbeca. Ĩhũthagĩra mũigana waku wa ciũria cia o mũthenya, ti ũthuthuria."
 }

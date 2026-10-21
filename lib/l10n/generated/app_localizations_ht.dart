@@ -2632,4 +2632,16 @@ class AppLocalizationsHt extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Rezilta pibliye: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Poukisa l ap bouje jodi a?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent jodi a';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Eksplikasyon AI ki soti nan nouvèl jodi a yo jwenn sou entènèt; vrè rezon an ka pa konnen oswa diferan. Se pa konsèy envestisman. Li sèvi ak kota kesyon chak jou ou, se pa yon analiz.';
 }

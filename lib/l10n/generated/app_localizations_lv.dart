@@ -2677,4 +2677,16 @@ class AppLocalizationsLv extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Publicēja rezultātus: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Kāpēc tā šodien kustas?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent šodien';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'MI skaidrojums no šodienas ziņām tīmeklī; patiesais iemesls var būt nezināms vai cits. Tas nav ieguldījumu padoms. Izmanto jūsu dienas jautājumu limitu, ne analīzi.';
 }

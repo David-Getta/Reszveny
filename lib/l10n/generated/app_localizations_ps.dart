@@ -2625,4 +2625,16 @@ class AppLocalizationsPs extends AppLocalizations {
   String awayReported(String symbols) {
     return 'خپرې شوې پایلې: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'نن ولې خوځي؟';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return 'نن $percent';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'د نن ورځې د خبرونو پر بنسټ چې په ویب کې موندل شوي، د AI تشریح؛ اصلي دلیل کېدای شي نامعلوم یا توپیر ولري. د پانګونې مشوره نه ده. ستاسو د ورځنیو پوښتنو حد کاروي، نه تحلیل.';
 }

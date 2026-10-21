@@ -2555,4 +2555,16 @@ class AppLocalizationsJa extends AppLocalizations {
   String awayReported(String symbols) {
     return '決算発表: $symbols';
   }
+
+  @override
+  String get moveWhyButton => '今日なぜ動いている？';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '本日 $percent';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'ウェブ上の本日のニュースに基づくAIの説明です。実際の理由は不明または異なる場合があります。投資助言ではありません。分析ではなく、1日の質問回数を消費します。';
 }

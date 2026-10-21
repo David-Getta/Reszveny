@@ -2649,4 +2649,16 @@ class AppLocalizationsQu extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Resultadokuna willasqa: $symbols';
   }
+
+  @override
+  String get moveWhyButton => '¿Imaraykutaq kunan kuyuchkan?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent kunan p\'unchaw';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Kunan p\'unchaw willakuykunamanta, webpi tarisqa, AI sut\'inchay; chiqap rayku mana riqsisqa utaq hukniraq kanman. Manam qullqi churanapaq yuyaychaychu. Sapa p\'unchaw tapukuyniykita tukun, manam t\'aqwiychu.';
 }

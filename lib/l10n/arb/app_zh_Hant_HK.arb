@@ -698,5 +698,8 @@
   "awaySince": "自 {when} 起",
   "awayQuiet": "沒有明顯變動。",
   "awayAlerts": "{count, plural, =1{1 個提示已觸發} other{{count} 個提示已觸發}}",
-  "awayReported": "已公布業績：{symbols}"
+  "awayReported": "已公布業績：{symbols}",
+  "moveWhyButton": "今日為何波動？",
+  "moveWhyTitle": "今日 {percent}",
+  "moveWhyNote": "AI 根據網上搵到的今日新聞作出的解釋；真正原因可能未知或有所不同。不構成投資建議。會使用你的每日提問額度，而非分析。"
 }

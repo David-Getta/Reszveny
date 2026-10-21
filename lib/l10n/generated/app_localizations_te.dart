@@ -2641,4 +2641,16 @@ class AppLocalizationsTe extends AppLocalizations {
   String awayReported(String symbols) {
     return 'ఫలితాలు ప్రకటించాయి: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'ఈరోజు ఎందుకు కదులుతోంది?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return 'ఈరోజు $percent';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'వెబ్‌లో దొరికిన ఈరోజు వార్తల ఆధారంగా AI వివరణ; అసలు కారణం తెలియకపోవచ్చు లేదా వేరుగా ఉండవచ్చు. పెట్టుబడి సలహా కాదు. ఇది మీ రోజువారీ ప్రశ్నల కోటాను ఉపయోగిస్తుంది, విశ్లేషణను కాదు.';
 }

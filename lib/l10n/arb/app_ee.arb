@@ -698,5 +698,8 @@
   "awaySince": "Tso {when}",
   "awayQuiet": "Naneke metrɔ boo o.",
   "awayAlerts": "{count, plural, =1{Nuxlɔ̃ame 1 dzɔ} other{Nuxlɔ̃ame {count} dzɔ}}",
-  "awayReported": "Woɖe gbeƒã woƒe metsonuwo: {symbols}"
+  "awayReported": "Woɖe gbeƒã woƒe metsonuwo: {symbols}",
+  "moveWhyButton": "Nukatae wòle tɔtrɔm egbe?",
+  "moveWhyTitle": "{percent} egbe",
+  "moveWhyNote": "AI ƒe numeɖeɖe tso egbe nyadzɔdzɔ siwo wokpɔ le intanɛt dzi me; susu ŋutɔŋutɔ ate ŋu anye esi womenya o alo esi to vovo. Menye gadodo ŋuti aɖaŋuɖoɖo o. Ezãa wò gbe sia gbe biabia xexlẽme, menye numekuku o."
 }

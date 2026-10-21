@@ -2645,4 +2645,16 @@ class AppLocalizationsLn extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Babimisi ba résultats na bango: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Mpo na nini ezali kobongwana lelo?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent lelo';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Ndimbola ya AI euti na basango ya lelo oyo ezwamaki na internet; ntina ya solo ekoki koyebana te to kozala mosusu. Ezali toli ya kotia mbongo te. Esalelaka motango na yo ya mituna ya mokolo na mokolo, kasi analyse te.';
 }

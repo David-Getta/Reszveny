@@ -2705,4 +2705,16 @@ class AppLocalizationsBe extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Апублікавалі вынікі: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Чаму яна рухаецца сёння?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent сёння';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Тлумачэнне ШІ на аснове сённяшніх навін з інтэрнэту; сапраўдная прычына можа быць невядомай або іншай. Не з’яўляецца інвестыцыйнай парадай. Выкарыстоўвае ваш дзённы ліміт пытанняў, а не аналіз.';
 }

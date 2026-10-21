@@ -2607,4 +2607,16 @@ class AppLocalizationsLo extends AppLocalizations {
   String awayReported(String symbols) {
     return 'ປະກາດຜົນປະກອບການ: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'ເປັນຫຍັງຈຶ່ງເຄື່ອນໄຫວມື້ນີ້?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent ມື້ນີ້';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'ຄຳອະທິບາຍຈາກ AI ອີງຕາມຂ່າວມື້ນີ້ທີ່ພົບໃນເວັບ; ສາເຫດແທ້ຈິງອາດບໍ່ຮູ້ ຫຼື ແຕກຕ່າງກັນ. ບໍ່ແມ່ນຄຳແນະນຳດ້ານການລົງທຶນ. ໃຊ້ໂຄຕາຄຳຖາມປະຈຳວັນຂອງທ່ານ, ບໍ່ແມ່ນການວິເຄາະ.';
 }

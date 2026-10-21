@@ -2636,4 +2636,16 @@ class AppLocalizationsKu extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Encam eşkere kirin: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Çima îro diguhere?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent îro';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Ravekirina AI ji nûçeyên îro yên li ser webê hatine dîtin; sedema rastîn dibe ku nenas an cuda be. Ne şîreta veberhênanê ye. Kotaya pirsên te ya rojane bi kar tîne, ne analîzekê.';
 }

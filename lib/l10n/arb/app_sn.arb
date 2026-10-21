@@ -698,5 +698,8 @@
   "awaySince": "Kubva {when}",
   "awayQuiet": "Hapana chakanyanya kuchinja.",
   "awayAlerts": "{count, plural, =1{Yambiro 1 yarira} other{Yambiro {count} dzarira}}",
-  "awayReported": "Mhedzisiro dzakaburitswa: {symbols}"
+  "awayReported": "Mhedzisiro dzakaburitswa: {symbols}",
+  "moveWhyButton": "Sei iri kufamba nhasi?",
+  "moveWhyTitle": "{percent} nhasi",
+  "moveWhyNote": "Tsananguro ye-AI kubva munhau dzanhasi dzakawanikwa pawebhu; chikonzero chaicho chinogona kusazivikanwa kana kusiyana. Hazvisi zano rekudyara mari. Zvinoshandisa mibvunzo yako yezuva, kwete ongororo."
 }

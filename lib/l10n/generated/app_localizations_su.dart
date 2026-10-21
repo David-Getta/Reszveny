@@ -2637,4 +2637,16 @@ class AppLocalizationsSu extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Hasil anu dilaporkeun: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Naha dinten ieu obah?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent dinten ieu';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Katerangan AI dumasar warta dinten ieu anu kapendak di wéb; alesan saleresna tiasa teu dipikanyaho atanapi béda. Sanés naséhat investasi. Ngagunakeun kuota patarosan harian anjeun, sanés analisis.';
 }

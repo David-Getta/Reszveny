@@ -2633,4 +2633,16 @@ class AppLocalizationsAs extends AppLocalizations {
   String awayReported(String symbols) {
     return 'ফলাফল ঘোষণা কৰিলে: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'আজি কিয় সলনি হৈছে?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return 'আজি $percent';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'ৱেবত পোৱা আজিৰ বাতৰিৰ ভিত্তিত AI ব্যাখ্যা; প্ৰকৃত কাৰণ অজ্ঞাত বা বেলেগ হ\'ব পাৰে। বিনিয়োগৰ পৰামৰ্শ নহয়। আপোনাৰ দৈনিক প্ৰশ্নৰ কোটা ব্যৱহাৰ কৰে, বিশ্লেষণ নহয়।';
 }

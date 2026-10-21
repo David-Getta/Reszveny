@@ -2637,4 +2637,16 @@ class AppLocalizationsUg extends AppLocalizations {
   String awayReported(String symbols) {
     return 'ئېلان قىلىنغان نەتىجىلەر: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'بۈگۈن نېمىشقا ئۆزگىرىۋاتىدۇ؟';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return 'بۈگۈن $percent';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'توردىن تېپىلغان بۈگۈنكى خەۋەرلەرگە ئاساسلانغان AI چۈشەندۈرۈشى؛ ھەقىقىي سەۋەب نامەلۇم ياكى ئوخشىمىغان بولۇشى مۇمكىن. مەبلەغ سېلىش مەسلىھەتى ئەمەس. تەھلىل ئەمەس، كۈنلۈك سوئال چەكلىمىڭىزنى ئىشلىتىدۇ.';
 }

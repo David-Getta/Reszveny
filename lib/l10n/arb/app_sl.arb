@@ -698,5 +698,8 @@
   "awaySince": "Od {when}",
   "awayQuiet": "Ni se veliko premaknilo.",
   "awayAlerts": "{count, plural, =1{Sproženo 1 opozorilo} two{Sproženi {count} opozorili} few{Sprožena {count} opozorila} other{Sproženih {count} opozoril}}",
-  "awayReported": "Objavljeni rezultati: {symbols}"
+  "awayReported": "Objavljeni rezultati: {symbols}",
+  "moveWhyButton": "Zakaj se danes premika?",
+  "moveWhyTitle": "{percent} danes",
+  "moveWhyNote": "Razlaga UI na podlagi današnjih novic s spleta; pravi razlog je lahko neznan ali drugačen. Ni naložbeni nasvet. Porabi vašo dnevno kvoto vprašanj, ne analize."
 }

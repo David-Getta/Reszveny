@@ -2633,4 +2633,16 @@ class AppLocalizationsHi extends AppLocalizations {
   String awayReported(String symbols) {
     return 'नतीजे जारी किए: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'आज क्यों बढ़-घट रहा है?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return 'आज $percent';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'वेब पर मिली आज की खबरों से AI की व्याख्या; असली कारण अज्ञात या अलग हो सकता है। निवेश सलाह नहीं है। आपका दैनिक प्रश्न कोटा इस्तेमाल करता है, विश्लेषण नहीं।';
 }

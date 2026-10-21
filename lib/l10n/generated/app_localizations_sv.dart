@@ -2635,4 +2635,16 @@ class AppLocalizationsSv extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Rapporterade resultat: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Varför rör den sig i dag?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent i dag';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'AI-förklaring utifrån dagens nyheter på webben; den verkliga orsaken kan vara okänd eller en annan. Inte investeringsrådgivning. Använder din dagliga frågekvot, inte en analys.';
 }

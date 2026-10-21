@@ -698,5 +698,8 @@
   "awaySince": "Kuyambira {when}",
   "awayQuiet": "Palibe chomwe chasintha kwambiri.",
   "awayAlerts": "{count, plural, =1{Chenjezo 1 lalira} other{Machenjezo {count} alira}}",
-  "awayReported": "Zotsatira zalengezedwa: {symbols}"
+  "awayReported": "Zotsatira zalengezedwa: {symbols}",
+  "moveWhyButton": "Chifukwa chiyani ikusuntha lero?",
+  "moveWhyTitle": "{percent} lero",
+  "moveWhyNote": "Kufotokoza kwa AI kochokera ku nkhani za lero zopezeka pa intaneti; chifukwa chenicheni chikhoza kukhala chosadziwika kapena chosiyana. Si uphungu wa zachuma. Kumagwiritsa ntchito mafunso anu a tsiku ndi tsiku, osati kusanthula."
 }

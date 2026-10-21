@@ -2628,4 +2628,16 @@ class AppLocalizationsHe extends AppLocalizations {
   String awayReported(String symbols) {
     return 'פרסמו תוצאות: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'למה היא זזה היום?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent היום';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'הסבר של AI מתוך חדשות היום שנמצאו ברשת; הסיבה האמיתית עשויה להיות לא ידועה או שונה. אינו ייעוץ השקעות. מנצל את מכסת השאלות היומית שלך, לא ניתוח.';
 }

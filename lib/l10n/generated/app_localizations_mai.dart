@@ -2628,4 +2628,16 @@ class AppLocalizationsMai extends AppLocalizations {
   String awayReported(String symbols) {
     return 'परिणाम जारी केलक: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'आइ किएक घटि-बढ़ि रहल अछि?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return 'आइ $percent';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'वेब पर भेटल आइक खबरसँ AI द्वारा देल व्याख्या; असली कारण अज्ञात वा भिन्न भऽ सकैत अछि। निवेश सलाह नहि। अहाँक दैनिक प्रश्न कोटा उपयोग करैत अछि, विश्लेषण नहि।';
 }

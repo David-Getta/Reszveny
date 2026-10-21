@@ -2630,4 +2630,16 @@ class AppLocalizationsPa extends AppLocalizations {
   String awayReported(String symbols) {
     return 'ਨਤੀਜੇ ਜਾਰੀ: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'ਅੱਜ ਇਹ ਕਿਉਂ ਹਿੱਲ ਰਿਹਾ ਹੈ?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return 'ਅੱਜ $percent';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'ਵੈੱਬ ’ਤੇ ਮਿਲੀਆਂ ਅੱਜ ਦੀਆਂ ਖ਼ਬਰਾਂ ’ਤੇ ਆਧਾਰਿਤ AI ਵਿਆਖਿਆ; ਅਸਲ ਕਾਰਨ ਅਣਜਾਣ ਜਾਂ ਵੱਖਰਾ ਹੋ ਸਕਦਾ ਹੈ। ਨਿਵੇਸ਼ ਸਲਾਹ ਨਹੀਂ। ਇਹ ਤੁਹਾਡਾ ਰੋਜ਼ਾਨਾ ਸਵਾਲ ਕੋਟਾ ਵਰਤਦਾ ਹੈ, ਵਿਸ਼ਲੇਸ਼ਣ ਨਹੀਂ।';
 }

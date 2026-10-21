@@ -2637,4 +2637,16 @@ class AppLocalizationsAz extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Nəticələrini açıqladı: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Bu gün niyə dəyişir?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return 'Bu gün $percent';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Vebdə tapılan bugünkü xəbərlərə əsaslanan AI izahı; əsl səbəb naməlum və ya fərqli ola bilər. İnvestisiya məsləhəti deyil. Gündəlik sual limitinizdən istifadə edir, analiz deyil.';
 }

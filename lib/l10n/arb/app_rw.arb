@@ -698,5 +698,8 @@
   "awaySince": "Kuva {when}",
   "awayQuiet": "Nta kintu cyahindutse cyane.",
   "awayAlerts": "{count, plural, =1{Imenyesha 1 ryakoze} other{Amamenyesha {count} yakoze}}",
-  "awayReported": "Ibisubizo byatangajwe: {symbols}"
+  "awayReported": "Ibisubizo byatangajwe: {symbols}",
+  "moveWhyButton": "Kuki ihindagurika uyu munsi?",
+  "moveWhyTitle": "{percent} uyu munsi",
+  "moveWhyNote": "Ibisobanuro bya AI bishingiye ku makuru y'uyu munsi yabonetse kuri interineti; impamvu nyayo ishobora kuba itazwi cyangwa itandukanye. Si inama yo gushora imari. Bikoresha umubare w'ibibazo byawe bya buri munsi, ntabwo ari isesengura."
 }

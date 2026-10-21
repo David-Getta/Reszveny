@@ -698,5 +698,8 @@
   "awaySince": "{when} irraa eegalee",
   "awayQuiet": "Wanti baay'ee jijjiirame hin jiru.",
   "awayAlerts": "{count, plural, =1{Akeekkachiisa 1 ka'e} other{Akeekkachiisa {count} ka'an}}",
-  "awayReported": "Bu'aa gabaafame: {symbols}"
+  "awayReported": "Bu'aa gabaafame: {symbols}",
+  "moveWhyButton": "Har'a maaliif socho'aa jira?",
+  "moveWhyTitle": "{percent} har'a",
+  "moveWhyNote": "Ibsa AI oduu har'aa weebii irraa argame irratti hundaa'e; sababni dhugaa hin beekamu ykn garaagara ta'uu danda'a. Gorsa invastimantii miti. Hiree gaaffii guyyaa keessan fayyadama, xiinxala miti."
 }

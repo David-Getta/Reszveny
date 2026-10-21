@@ -698,5 +698,8 @@
   "awaySince": "{when} से",
   "awayQuiet": "कुछ खास नहीं बदला।",
   "awayAlerts": "{count, plural, =1{1 अलर्ट ट्रिगर हुआ} other{{count} अलर्ट ट्रिगर हुए}}",
-  "awayReported": "नतीजे जारी किए: {symbols}"
+  "awayReported": "नतीजे जारी किए: {symbols}",
+  "moveWhyButton": "आज क्यों बढ़-घट रहा है?",
+  "moveWhyTitle": "आज {percent}",
+  "moveWhyNote": "वेब पर मिली आज की खबरों से AI की व्याख्या; असली कारण अज्ञात या अलग हो सकता है। निवेश सलाह नहीं है। आपका दैनिक प्रश्न कोटा इस्तेमाल करता है, विश्लेषण नहीं।"
 }

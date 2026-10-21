@@ -698,5 +698,8 @@
   "awaySince": "Tuka {when}",
   "awayQuiet": "Kima ve me soba mingi.",
   "awayAlerts": "{count, plural, =1{Lukebisu 1 me basika} other{Balukebisu {count} me basika}}",
-  "awayReported": "Ba rezulta me basika: {symbols}"
+  "awayReported": "Ba rezulta me basika: {symbols}",
+  "moveWhyButton": "Sambu na nki yo ke soba bubu yai?",
+  "moveWhyTitle": "{percent} bubu yai",
+  "moveWhyNote": "Ntendula ya AI yina me katuka na bansangu ya bubu yai ya bo me mona na internet; kikuma ya kieleka lenda vanda ya kuzaba ve to ya kuswaswana. Yo kele ve ndongisila ya kutula mbongo. Yo ke sadila ndilu na nge ya bangiufula ya konso kilumbu, kansi ve kutala ya mbote."
 }

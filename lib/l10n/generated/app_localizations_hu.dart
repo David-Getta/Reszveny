@@ -2639,4 +2639,16 @@ class AppLocalizationsHu extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Gyorsjelentést adott: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Miért mozog ma?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent ma';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'AI-magyarázat a weben talált mai hírekből; a valódi ok ismeretlen vagy más is lehet. Nem befektetési tanács. A napi kérdéskeretből fogyaszt, nem elemzést.';
 }

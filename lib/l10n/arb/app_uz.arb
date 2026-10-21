@@ -698,5 +698,8 @@
   "awaySince": "{when}dan beri",
   "awayQuiet": "Katta oʻzgarish boʻlmadi.",
   "awayAlerts": "{count, plural, =1{1 ta ogohlantirish ishga tushdi} other{{count} ta ogohlantirish ishga tushdi}}",
-  "awayReported": "Natijalar eʼlon qilindi: {symbols}"
+  "awayReported": "Natijalar eʼlon qilindi: {symbols}",
+  "moveWhyButton": "Bugun nega harakatlanmoqda?",
+  "moveWhyTitle": "Bugun {percent}",
+  "moveWhyNote": "Internetdan topilgan bugungi yangiliklarga asoslangan AI izohi; haqiqiy sabab noma'lum yoki boshqacha bo'lishi mumkin. Investitsiya maslahati emas. Tahlil emas, kunlik savol limitingizni ishlatadi."
 }

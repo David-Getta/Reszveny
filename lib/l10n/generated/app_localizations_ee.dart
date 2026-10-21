@@ -2637,4 +2637,16 @@ class AppLocalizationsEe extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Woɖe gbeƒã woƒe metsonuwo: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Nukatae wòle tɔtrɔm egbe?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent egbe';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'AI ƒe numeɖeɖe tso egbe nyadzɔdzɔ siwo wokpɔ le intanɛt dzi me; susu ŋutɔŋutɔ ate ŋu anye esi womenya o alo esi to vovo. Menye gadodo ŋuti aɖaŋuɖoɖo o. Ezãa wò gbe sia gbe biabia xexlẽme, menye numekuku o.';
 }

@@ -2699,4 +2699,16 @@ class AppLocalizationsAr extends AppLocalizations {
   String awayReported(String symbols) {
     return 'أعلنت نتائجها: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'لماذا يتحرك اليوم؟';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent اليوم';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'تفسير بالذكاء الاصطناعي من أخبار اليوم على الويب؛ قد يكون السبب الحقيقي مجهولاً أو مختلفاً. ليست نصيحة استثمارية. يستهلك حصتك اليومية من الأسئلة، وليس تحليلاً.';
 }

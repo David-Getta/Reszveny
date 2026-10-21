@@ -698,5 +698,8 @@
   "awaySince": "{when} से",
   "awayQuiet": "कुछु खास ना बदलल।",
   "awayAlerts": "{count, plural, =1{1 अलर्ट चालू भइल} other{{count} अलर्ट चालू भइल}}",
-  "awayReported": "रिजल्ट जारी कइल: {symbols}"
+  "awayReported": "रिजल्ट जारी कइल: {symbols}",
+  "moveWhyButton": "आज काहे बदल रहल बा?",
+  "moveWhyTitle": "आज {percent}",
+  "moveWhyNote": "वेब पर मिलल आज के खबर से AI के बतावल कारन; असली कारन अनजान भा अलग हो सकेला। निवेश के सलाह नइखे। एह में रउआ के रोज के सवाल कोटा लागेला, विश्लेषण ना।"
 }

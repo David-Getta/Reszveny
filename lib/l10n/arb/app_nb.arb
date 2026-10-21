@@ -698,5 +698,8 @@
   "awaySince": "Siden {when}",
   "awayQuiet": "Lite har beveget seg.",
   "awayAlerts": "{count, plural, =1{1 varsel utløst} other{{count} varsler utløst}}",
-  "awayReported": "Rapporterte resultater: {symbols}"
+  "awayReported": "Rapporterte resultater: {symbols}",
+  "moveWhyButton": "Hvorfor beveger den seg i dag?",
+  "moveWhyTitle": "{percent} i dag",
+  "moveWhyNote": "KI-forklaring basert på dagens nyheter funnet på nettet; den egentlige årsaken kan være ukjent eller en annen. Ikke investeringsråd. Bruker din daglige spørsmålskvote, ikke en analyse."
 }

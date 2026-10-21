@@ -2629,4 +2629,16 @@ class AppLocalizationsIg extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Kwupụtara nsonaazụ: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Gịnị mere ọ na-agbanwe taa?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent taa';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Nkọwa AI sitere n\'akụkọ taa a chọtara na weebụ; ezigbo ihe kpatara ya nwere ike bụrụ ihe a na-amaghị ma ọ bụ dị iche. Ọ bụghị ndụmọdụ itinye ego. Ọ na-eji oke ajụjụ gị kwa ụbọchị, ọ bụghị nyocha.';
 }

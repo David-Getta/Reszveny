@@ -2650,4 +2650,16 @@ class AppLocalizationsHil extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Nagpagwa sang resulta: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Ngaa nagahulag ini subong?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent subong';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Paathag sang AI halin sa mga balita subong nga adlaw nga nakita sa web; ang matuod nga rason mahimo nga indi mahibaluan ukon lain. Indi laygay sa pagpamuhunan. Nagagamit sang imo adlaw-adlaw nga kuota sang pamangkot, indi analisis.';
 }

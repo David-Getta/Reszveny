@@ -698,5 +698,8 @@
   "awaySince": "Banda {when}",
   "awayQuiet": "Eloko moko te ebongwanaki mingi.",
   "awayAlerts": "{count, plural, =1{Likebisi 1 ebimaki} other{Makebisi {count} ebimaki}}",
-  "awayReported": "Babimisi ba résultats na bango: {symbols}"
+  "awayReported": "Babimisi ba résultats na bango: {symbols}",
+  "moveWhyButton": "Mpo na nini ezali kobongwana lelo?",
+  "moveWhyTitle": "{percent} lelo",
+  "moveWhyNote": "Ndimbola ya AI euti na basango ya lelo oyo ezwamaki na internet; ntina ya solo ekoki koyebana te to kozala mosusu. Ezali toli ya kotia mbongo te. Esalelaka motango na yo ya mituna ya mokolo na mokolo, kasi analyse te."
 }

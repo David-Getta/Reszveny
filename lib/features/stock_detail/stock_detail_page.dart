@@ -23,10 +23,12 @@ import '../portfolio/position_card.dart';
 import '../recognition/stock_recognizer.dart';
 import 'widgets/analysis_card.dart';
 import '../news/watch_news.dart';
+import '../news/move_explainer.dart';
 import '../news/watch_news_view.dart' show showNewsExplanation;
 import 'widgets/converted_price.dart';
 import 'widgets/earnings_card.dart';
 import 'widgets/instrument_card.dart';
+import 'widgets/move_why_button.dart';
 import 'widgets/insiders_card.dart';
 import 'widgets/kv_table.dart';
 import 'widgets/peers_strip.dart';
@@ -281,6 +283,9 @@ class _DetailsBody extends StatelessWidget {
                         ),
                       ),
                       ConvertedPrice(amount: q.price, fromCurrency: cur, withRate: true, alignEnd: !narrow),
+                      // Nagy napi mozgásnál: „Miért mozog ma?”
+                      if (q.changePercent case final pct? when pct.abs() >= MoveExplainer.minMovePercent)
+                        MoveWhyButton(symbol: d.symbol, name: d.displayName, changePercent: pct),
                     ],
                   );
             if (narrow) {

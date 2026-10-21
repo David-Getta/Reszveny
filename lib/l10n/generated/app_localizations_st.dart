@@ -2648,4 +2648,16 @@ class AppLocalizationsSt extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Diphetho tse tlalehilweng: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Hobaneng e tsamaya kajeno?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent kajeno';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Tlhaloso ya AI e tswang litabeng tsa kajeno tse fumanweng inthaneteng; lebaka la nnete le ka ba le sa tsejwe kapa le fapane. Ha se keletso ya matsete. E sebelisa palo ya hao ya lipotso ya letsatsi, eseng tlhahlobo.';
 }

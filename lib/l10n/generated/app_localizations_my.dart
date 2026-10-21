@@ -2625,4 +2625,16 @@ class AppLocalizationsMy extends AppLocalizations {
   String awayReported(String symbols) {
     return 'ရလဒ်ထုတ်ပြန်ပြီး: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'ယနေ့ ဘာကြောင့် လှုပ်ရှားနေသလဲ။';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return 'ယနေ့ $percent';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'ဝဘ်ပေါ်တွင် ရှာတွေ့သော ယနေ့သတင်းများအပေါ် အခြေခံသည့် AI ရှင်းလင်းချက်၊ အမှန်တကယ် အကြောင်းရင်းသည် မသိရှိနိုင်သလို ကွဲပြားနိုင်သည်။ ရင်းနှီးမြှုပ်နှံမှု အကြံဉာဏ် မဟုတ်ပါ။ ခွဲခြမ်းစိတ်ဖြာမှု မဟုတ်ဘဲ သင့်နေ့စဉ် မေးခွန်းခွင့်ပြုအရေအတွက်ကို အသုံးပြုသည်။';
 }

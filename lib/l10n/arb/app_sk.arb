@@ -698,5 +698,8 @@
   "awaySince": "Od {when}",
   "awayQuiet": "Veľa sa nepohlo.",
   "awayAlerts": "{count, plural, =1{Spustilo sa 1 upozornenie} few{Spustili sa {count} upozornenia} other{Spustilo sa {count} upozornení}}",
-  "awayReported": "Zverejnené výsledky: {symbols}"
+  "awayReported": "Zverejnené výsledky: {symbols}",
+  "moveWhyButton": "Prečo sa dnes hýbe?",
+  "moveWhyTitle": "{percent} dnes",
+  "moveWhyNote": "Vysvetlenie AI na základe dnešných správ nájdených na webe; skutočný dôvod môže byť neznámy alebo iný. Nie je to investičné odporúčanie. Spotrebúva denný limit otázok, nie analýzu."
 }

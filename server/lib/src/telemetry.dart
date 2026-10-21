@@ -62,6 +62,7 @@ class TelemetryStore {
     'earnings_summary',
     'description_resolved',
     'instrument_explained',
+    'move_explained',
     'research_followup',
     'research_saved_note',
     'shared_cache_hit',

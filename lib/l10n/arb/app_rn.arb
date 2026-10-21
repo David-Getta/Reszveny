@@ -698,5 +698,8 @@
   "awaySince": "Kuva {when}",
   "awayQuiet": "Nta kintu cahindutse cane.",
   "awayAlerts": "{count, plural, =1{Imenyesha 1 ryakoze} other{Amamenyesha {count} yakoze}}",
-  "awayReported": "Ibiharuro vyatangajwe: {symbols}"
+  "awayReported": "Ibiharuro vyatangajwe: {symbols}",
+  "moveWhyButton": "Ni kubera iki ihindagurika uyu musi?",
+  "moveWhyTitle": "{percent} uyu musi",
+  "moveWhyNote": "Insiguro ya AI ishingiye ku makuru y'uyu musi yabonetse kuri internet; impamvu nyayo ishobora kuba itamenyekana canke itandukanye. Si impanuro yo gushora amafaranga. Ikoresha igitigiri c'ibibazo vyawe vya buri musi, atari isesengura."
 }

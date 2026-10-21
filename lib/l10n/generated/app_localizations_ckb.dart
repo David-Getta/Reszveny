@@ -2635,4 +2635,16 @@ class AppLocalizationsCkb extends AppLocalizations {
   String awayReported(String symbols) {
     return 'ئەنجامەکانیان ڕاگەیاند: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'بۆچی ئەمڕۆ دەجوڵێت؟';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent ئەمڕۆ';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'ڕوونکردنەوەی AI لە هەواڵەکانی ئەمڕۆ کە لە وێب دۆزراونەتەوە؛ هۆکاری ڕاستەقینە لەوانەیە نەزانراو یان جیاواز بێت. ئامۆژگاری وەبەرهێنان نییە. بەشی ڕۆژانەی پرسیارەکانت بەکاردەهێنێت، نەک شیکاری.';
 }

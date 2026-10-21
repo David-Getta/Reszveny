@@ -2642,4 +2642,16 @@ class AppLocalizationsKn extends AppLocalizations {
   String awayReported(String symbols) {
     return 'ಫಲಿತಾಂಶ ಪ್ರಕಟಿಸಿದವು: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'ಇಂದು ಏಕೆ ಏರಿಳಿತವಾಗುತ್ತಿದೆ?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return 'ಇಂದು $percent';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'ವೆಬ್‌ನಲ್ಲಿ ಸಿಕ್ಕ ಇಂದಿನ ಸುದ್ದಿಗಳ ಆಧಾರದ AI ವಿವರಣೆ; ನಿಜವಾದ ಕಾರಣ ಅಜ್ಞಾತ ಅಥವಾ ಬೇರೆಯಾಗಿರಬಹುದು. ಹೂಡಿಕೆ ಸಲಹೆ ಅಲ್ಲ. ನಿಮ್ಮ ದೈನಂದಿನ ಪ್ರಶ್ನೆ ಕೋಟಾವನ್ನು ಬಳಸುತ್ತದೆ, ವಿಶ್ಲೇಷಣೆಯನ್ನಲ್ಲ.';
 }

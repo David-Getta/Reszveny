@@ -33,6 +33,7 @@ import 'package:reszveny/features/billing/entitlement_service.dart';
 import 'package:reszveny/features/billing/plan.dart';
 import 'package:reszveny/features/capture/capture_service.dart';
 import 'package:reszveny/features/home/away_summary.dart';
+import 'package:reszveny/features/news/move_explainer.dart';
 import 'package:reszveny/features/portfolio/holdings_reader.dart';
 import 'package:reszveny/features/home/quick_bar.dart';
 import 'package:reszveny/features/alerts/price_alert.dart';
@@ -143,6 +144,18 @@ class _ShotReader extends HoldingsReader {
   ];
 }
 
+/// Egy kész szöveges AI-válasz (a kutatási lapokhoz).
+http.Response _aiText(String text) => http.Response(
+  jsonEncode({
+    'stop_reason': 'end_turn',
+    'content': [
+      {'type': 'text', 'text': text},
+    ],
+  }),
+  200,
+  headers: {'content-type': 'application/json; charset=utf-8'},
+);
+
 AppServices _services({
   ThemeMode mode = ThemeMode.dark,
   Locale? locale,
@@ -157,6 +170,7 @@ AppServices _services({
   CaptureService? capture,
   HoldingsReader? holdingsReader,
   EarningsSummarizer? earningsSummarizer,
+  MoveExplainer? moveExplainer,
   ResearchFollowUp? researchFollowUp,
   DailyBrief Function(WatchNewsService news)? dailyBrief,
 }) {
@@ -196,6 +210,7 @@ AppServices _services({
     billing: DemoBillingService(latency: Duration.zero),
     chat: chat,
     earningsSummarizer: earningsSummarizer,
+    moveExplainer: moveExplainer,
     researchFollowUp: researchFollowUp,
     dailyBrief: dailyBrief,
   );
@@ -751,6 +766,33 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.byKey(const ValueKey('home-away')), findsOneWidget);
     await _shot(tester, 'home_away_phone_hu');
+  });
+
+  testWidgets('„why is it moving today?” on a phone (hungarian)', (tester) async {
+    final client = MockClient(
+      (req) async => _aiText(
+        'A részvény a nyitás óta emelkedik, miután a cég a vártnál erősebb negyedéves eredményt és magasabb éves '
+        'előrejelzést tett közzé: az adatközponti bevétel 60%-kal nőtt, és a menedzsment az új chipek iránti kereslet '
+        'kifutását 2027-ig látja. Több elemzőház emelte a célárat. Figyelni érdemes a következő hetek szállítási '
+        'adataira és az exportszabályok változására.',
+      ),
+    );
+    final s = _services(
+      locale: const Locale('hu'),
+      moveExplainer: MoveExplainer(
+        config: const AppConfig(backendUrl: 'https://api.test'),
+        client: client,
+      ),
+    );
+    await pumpApp(tester, s, const Size(430, 1000));
+    await tester.enterText(find.byType(TextField).first, 'NVDA');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    final button = find.byKey(const ValueKey('move-why'));
+    await tester.ensureVisible(button);
+    await tester.tap(button);
+    await tester.pumpAndSettle();
+    await _shot(tester, 'move_why_phone_hu');
   });
 
   testWidgets('dividends received on a phone (hungarian)', (tester) async {

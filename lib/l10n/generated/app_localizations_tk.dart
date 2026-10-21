@@ -2635,4 +2635,16 @@ class AppLocalizationsTk extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Netijeler yglan edildi: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Şu gün näme üçin hereket edýär?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return 'Şu gün $percent';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Internetde tapylan şu günki habarlara esaslanýan AI düşündirişi; hakyky sebäp näbelli ýa-da başga bolup biler. Maýa goýum maslahaty däl. Analiz däl-de, gündelik sorag çägiňizi ulanýar.';
 }

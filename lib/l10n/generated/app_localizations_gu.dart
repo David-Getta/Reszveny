@@ -2629,4 +2629,16 @@ class AppLocalizationsGu extends AppLocalizations {
   String awayReported(String symbols) {
     return 'પરિણામો જાહેર કર્યા: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'આજે કેમ ફરી રહ્યો છે?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return 'આજે $percent';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'વેબ પર મળેલા આજના સમાચારના આધારે AI સમજૂતી; ખરું કારણ અજાણ્યું કે અલગ હોઈ શકે છે. રોકાણની સલાહ નથી. તમારો દૈનિક પ્રશ્ન કોટા વાપરે છે, વિશ્લેષણ નહીં.';
 }

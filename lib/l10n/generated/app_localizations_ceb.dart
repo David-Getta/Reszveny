@@ -2645,4 +2645,16 @@ class AppLocalizationsCeb extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Nagpagawas og resulta: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Nganong nagalihok kini karon?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return '$percent karon';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Pagpatin-aw sa AI gikan sa mga balita karong adlawa nga nakit-an sa web; ang tinuod nga hinungdan mahimong wala mahibaloi o lahi. Dili tambag sa pagpamuhunan. Mogamit sa imong adlaw-adlaw nga kuota sa pangutana, dili analisis.';
 }

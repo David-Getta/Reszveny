@@ -698,5 +698,8 @@
   "awaySince": "Từ {when}",
   "awayQuiet": "Không có biến động đáng kể.",
   "awayAlerts": "{count, plural, =1{1 cảnh báo đã kích hoạt} other{{count} cảnh báo đã kích hoạt}}",
-  "awayReported": "Đã công bố kết quả: {symbols}"
+  "awayReported": "Đã công bố kết quả: {symbols}",
+  "moveWhyButton": "Vì sao hôm nay biến động?",
+  "moveWhyTitle": "{percent} hôm nay",
+  "moveWhyNote": "Giải thích của AI dựa trên tin tức hôm nay tìm thấy trên web; lý do thực sự có thể chưa rõ hoặc khác. Không phải lời khuyên đầu tư. Dùng hạn mức câu hỏi hằng ngày của bạn, không phải phân tích."
 }

@@ -698,5 +698,8 @@
   "awaySince": "Go tloga ka {when}",
   "awayQuiet": "Ga go sepe se se fetogileng thata.",
   "awayAlerts": "{count, plural, =1{Tlhagiso e 1 e tsositswe} other{Ditlhagiso tse {count} di tsositswe}}",
-  "awayReported": "Dipholo tse di begilweng: {symbols}"
+  "awayReported": "Dipholo tse di begilweng: {symbols}",
+  "moveWhyButton": "Goreng e tsamaya gompieno?",
+  "moveWhyTitle": "{percent} gompieno",
+  "moveWhyNote": "Tlhaloso ya AI go tswa mo dikgannyeng tsa gompieno tse di bonweng mo inthaneteng; lebaka la nnete le ka nna le sa itsiwe kgotsa le farologane. Ga se kgakololo ya peeletso. E dirisa palo ya gago ya dipotso ya letsatsi, e seng tshekatsheko."
 }

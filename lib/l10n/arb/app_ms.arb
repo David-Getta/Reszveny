@@ -698,5 +698,8 @@
   "awaySince": "Sejak {when}",
   "awayQuiet": "Tiada pergerakan ketara.",
   "awayAlerts": "{count, plural, =1{1 amaran dicetuskan} other{{count} amaran dicetuskan}}",
-  "awayReported": "Keputusan dilaporkan: {symbols}"
+  "awayReported": "Keputusan dilaporkan: {symbols}",
+  "moveWhyButton": "Mengapa ia bergerak hari ini?",
+  "moveWhyTitle": "{percent} hari ini",
+  "moveWhyNote": "Penjelasan AI berdasarkan berita hari ini yang ditemui di web; sebab sebenar mungkin tidak diketahui atau berbeza. Bukan nasihat pelaburan. Menggunakan kuota soalan harian anda, bukan analisis."
 }

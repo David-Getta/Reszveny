@@ -698,5 +698,8 @@
   "awaySince": "No {when}",
   "awayQuiet": "Nekas īpaši nemainījās.",
   "awayAlerts": "{count, plural, =1{Aktivizēts 1 brīdinājums} zero{Aktivizēti {count} brīdinājumi} one{Aktivizēts {count} brīdinājums} other{Aktivizēti {count} brīdinājumi}}",
-  "awayReported": "Publicēja rezultātus: {symbols}"
+  "awayReported": "Publicēja rezultātus: {symbols}",
+  "moveWhyButton": "Kāpēc tā šodien kustas?",
+  "moveWhyTitle": "{percent} šodien",
+  "moveWhyNote": "MI skaidrojums no šodienas ziņām tīmeklī; patiesais iemesls var būt nezināms vai cits. Tas nav ieguldījumu padoms. Izmanto jūsu dienas jautājumu limitu, ne analīzi."
 }

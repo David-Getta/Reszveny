@@ -698,5 +698,8 @@
   "awaySince": "ከ{when} ጀምሮ",
   "awayQuiet": "ብዙም የተለወጠ ነገር የለም።",
   "awayAlerts": "{count, plural, =1{1 ማስጠንቀቂያ ተነሳ} other{{count} ማስጠንቀቂያዎች ተነሱ}}",
-  "awayReported": "ውጤቶቻቸውን ያሳወቁ፦ {symbols}"
+  "awayReported": "ውጤቶቻቸውን ያሳወቁ፦ {symbols}",
+  "moveWhyButton": "ዛሬ ለምን እየተለዋወጠ ነው?",
+  "moveWhyTitle": "ዛሬ {percent}",
+  "moveWhyNote": "በድር ላይ ከተገኙ የዛሬ ዜናዎች የተዘጋጀ የAI ማብራሪያ; ትክክለኛው ምክንያት ያልታወቀ ወይም የተለየ ሊሆን ይችላል። የኢንቨስትመንት ምክር አይደለም። ዕለታዊ የጥያቄ ኮታዎን ይጠቀማል፣ ትንተና አይደለም።"
 }

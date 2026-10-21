@@ -2635,4 +2635,16 @@ class AppLocalizationsMn extends AppLocalizations {
   String awayReported(String symbols) {
     return 'Үр дүн зарласан: $symbols';
   }
+
+  @override
+  String get moveWhyButton => 'Өнөөдөр яагаад хөдөлж байна вэ?';
+
+  @override
+  String moveWhyTitle(String percent) {
+    return 'Өнөөдөр $percent';
+  }
+
+  @override
+  String get moveWhyNote =>
+      'Вэбээс олдсон өнөөдрийн мэдээнд үндэслэсэн хиймэл оюуны тайлбар; жинхэнэ шалтгаан тодорхойгүй эсвэл өөр байж болно. Хөрөнгө оруулалтын зөвлөгөө биш. Шинжилгээ бус, өдрийн асуултын эрхийг ашигладаг.';
 }

@@ -698,5 +698,8 @@
   "awaySince": "Efi {when}",
   "awayQuiet": "Biribiara anhinhim kɛse.",
   "awayAlerts": "{count, plural, =1{Kɔkɔbɔ 1 na ɛbaa} other{Kɔkɔbɔ {count} na ɛbaa}}",
-  "awayReported": "Adwuma mu nsunsuanso a wɔdaa no adi: {symbols}"
+  "awayReported": "Adwuma mu nsunsuanso a wɔdaa no adi: {symbols}",
+  "moveWhyButton": "Adɛn nti na ɛresesa nnɛ?",
+  "moveWhyTitle": "{percent} nnɛ",
+  "moveWhyNote": "AI nkyerɛkyerɛmu a efi nnɛ nsɛm a wohuu wɔ intanɛt so; nokware nti no betumi ayɛ nea wonnim anaa nea ɛsono. Ɛnyɛ sika a wode betɔ ade ho afotu. Ɛde wo da biara nsɛmmisa a wɔde ama wo no di dwuma, ɛnyɛ nhwehwɛmu."
 }
