@@ -160,7 +160,7 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 0 | Repó, Flutter váz, mind az 5 platform target, CI, 44 nyelv | ✅ kész |
 | 0b | Claude-stílusú felület, oldalsáv, előzmények, téma, cégnév-keresés, macOS/Windows gyorsbillentyű + tálcaikon, app-ikonok | ✅ kész |
 | 0c | 120 nyelv: a legtöbbet beszélt, saját írott változattal rendelkező nyelvek, kereshető nyelvválasztó, jobbról balra író nyelvek (ujgur, szindhi, szoráni kurd is), lefordított iparág- és országnevek | ✅ kész |
-| 1 | Kép → felismerés → árfolyam + profil + mutatók + hírek megjelenítése | 🟡 váz kész, finomítás jön |
+| 1 | Kép → felismerés → árfolyam + profil + mutatók + hírek megjelenítése | ✅ kész (leírás alapján keresés és ETF-ek: 5co–5cr, 5db–5dd; portfólió képből: 5am; az eszközön futó OCR: 4b3) |
 | 2 | AI-elemzés (hírösszefoglaló + átfogó kép, webkereséssel), árfolyamgrafikon, éves kimutatások, vágólap-beillesztés, átállítható gyorsbillentyű, bejelentkezéskori indítás | ✅ kész |
 | 3a | Kedvencek (csillag, oldalsáv, kezdőképernyő élő árral), böngészős előnézet (web-build Artifactként) | ✅ kész |
 | 3b | Deviza-átváltás (ECB-árfolyam, választható megjelenítési pénznem), név és logó | ✅ kész |
@@ -172,7 +172,7 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 3f | AI-elemzés v2.1: gyorsítótárazható prompt, többletadatok (versenytársak, bennfentes ügyletek, EPS-meglepetések, következő gyorsjelentés), számszerű kilátás (hangulat-sáv, forgatókönyv-diagram, kulcsszintek, eseménynaptár), minőség-ellenőrző és éles eval | ✅ kész |
 | 3g | AI-elemzés v2.2: Opus 5.5-höz igazított prompt, ágazati mutatók és értékpapír-típusok, volatilitáshoz méretezett ársávok, számolt értékelés, helyi webkeresés, injekció elleni védelem, JSON-javító lépés | ✅ kész |
 | 3h | AI-elemzés v2.3: a legvalószínűbb forgatókönyv kiemelve, indoklással; hosszú távú kilátás 3, 5 és 10 évre (ársáv, legvalószínűbb ár, számítás, bizonyosság, legyező-diagram) | ✅ kész |
-| 4b1 | Portfólió: vételek (darab, ár, dátum), összérték a megjelenítési pénznemben, napi változás, nyereség/veszteség, megoszlás, „A pozícióm” a részvény oldalán; az AI-elemzés a saját átlagárhoz is viszonyít (és a részvényből kapott 12 havi osztalékot, bekerülési hozammal is megkapja) | ✅ kész (csak a készüléken; fiókos szinkron később) |
+| 4b1 | Portfólió: vételek (darab, ár, dátum), összérték a megjelenítési pénznemben, napi változás, nyereség/veszteség, megoszlás, „A pozícióm” a részvény oldalán; az AI-elemzés a saját átlagárhoz is viszonyít (és a részvényből kapott 12 havi osztalékot, bekerülési hozammal is megkapja) | ✅ kész (fiókos szinkron: 5w) |
 | 4b2 | Árfolyam-riasztás: fölé / alá / napi mozgás, 5 percenkénti ellenőrzés, asztali rendszerértesítés (macOS: UNUserNotificationCenter, Windows/Linux: local_notifier), az appon belüli jelzés „Megnyitás” gombbal; asztali gépen az app bezárt ablaknál a menüsorban / tálcán fut tovább (kapcsolható) | ✅ kész (telefonos háttér-értesítés: 5j) |
 | 4b3 | OCR fallback offline (ML Kit, mobil) | ⬜ |
 | 4c | Fiók és fizetés, mint a Claude-nál: belépés e-mail kóddal, fiókhoz kötött előfizetés; asztali gépen és weben Stripe Checkout + ügyfélportál, telefonon App Store / Play; lefordított iparág- és országnevek | ✅ kész (Apple / Google belépés később) |
