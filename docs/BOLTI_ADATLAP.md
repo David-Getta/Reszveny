@@ -52,3 +52,22 @@ Az `Info.plist`-ekben `ITSAppUsesNonExemptEncryption = false` (csak szabványos 
 nincs exportengedély-kérdés; a macOS sandbox jogosultságai közt a felhasználó által választott helyre
 írás is engedélyezett (CSV-export, naptárfájl, biztonsági mentés).
 
+## Google Play „Adatbiztonság” kérdőív
+
+A Play Console-ban kitöltendő (nem kód); az Apple-manifesttel azonos válaszok:
+
+| Kérdés | Válasz |
+|---|---|
+| Gyűjt vagy megoszt adatot? | Gyűjt, nem oszt meg harmadik féllel |
+| Titkosítva továbbítja? | Igen (HTTPS) |
+| Kérhető a törlés? | Igen, az appból (Beállítások → Fiók törlése) és a szerveren |
+| Személyes adat | E-mail cím – fiókos belépés, kötelező a fiókhoz, az app működéséhez |
+| Pénzügyi adat | Vásárlási előzmény – az előfizetés ellenőrzéséhez, az app működéséhez |
+| Alkalmazás-tevékenység | Használati események – választható (hozzájárulás a kezdőképernyőn), elemzéshez, személyhez nem köthető |
+| Alkalmazás-információ | Hibajelentések – választható, kitakarva, személyhez nem köthető |
+| Nem gyűjt | hely, névjegyek, fotók (a kép csak a felismeréshez megy át, nem tárolódik), eszközazonosítók |
+
+A portfólió, a kedvencek, a riasztások és a jegyzetek a készüléken vannak; fiókkal a felhasználó
+saját szerverünkre szinkronizálja őket (ez is „gyűjtött” adat: *egyéb felhasználói tartalom*,
+az app működéséhez, kérésre törölhető).
+
