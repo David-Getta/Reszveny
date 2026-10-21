@@ -74,20 +74,43 @@ class DividendsCard extends StatelessWidget {
                         return r == null ? s : s + d.amount * r;
                       });
                       final year = DateTime.now().year;
-                      return Wrap(
-                        spacing: 28,
-                        runSpacing: 10,
+                      // Évenként is, ha több évből van tétel (az adóbevalláshoz).
+                      final years = {for (final d in all) ?d.date?.year}.toList()..sort((a, b) => b.compareTo(a));
+                      return Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          _Figure(
-                            key: const ValueKey('dividends-this-year'),
-                            label: l10n.portfolioDividendsThisYear,
-                            value: fmt.money(sum(all.where((d) => d.date?.year == year)), currency),
+                          Wrap(
+                            spacing: 28,
+                            runSpacing: 10,
+                            children: [
+                              _Figure(
+                                key: const ValueKey('dividends-this-year'),
+                                label: l10n.portfolioDividendsThisYear,
+                                value: fmt.money(sum(all.where((d) => d.date?.year == year)), currency),
+                              ),
+                              _Figure(
+                                key: const ValueKey('dividends-all-time'),
+                                label: l10n.portfolioDividendsAllTime,
+                                value: fmt.money(sum(all), currency),
+                              ),
+                            ],
                           ),
-                          _Figure(
-                            key: const ValueKey('dividends-all-time'),
-                            label: l10n.portfolioDividendsAllTime,
-                            value: fmt.money(sum(all), currency),
-                          ),
+                          if (years.length > 1) ...[
+                            const SizedBox(height: 10),
+                            for (final y in years)
+                              Padding(
+                                key: ValueKey('dividends-year-$y'),
+                                padding: const EdgeInsets.only(right: 8, bottom: 2),
+                                child: Row(
+                                  children: [
+                                    Expanded(
+                                      child: Text('$y', style: TextStyle(color: p.muted)),
+                                    ),
+                                    Text(fmt.money(sum(all.where((d) => d.date?.year == y)), currency)),
+                                  ],
+                                ),
+                              ),
+                          ],
                         ],
                       );
                     },

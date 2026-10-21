@@ -93,6 +93,12 @@ void main() {
       find.descendant(of: find.byKey(const ValueKey('dividends-all-time')), matching: find.text('5.60 USD')),
       findsOneWidget,
     );
+    // Két évből van tétel: évenkénti sorok is.
+    expect(
+      find.descendant(of: find.byKey(const ValueKey('dividends-year-2025')), matching: find.text('2.50 USD')),
+      findsOneWidget,
+    );
+    expect(find.byKey(ValueKey('dividends-year-${DateTime.now().year}')), findsOneWidget);
 
     // Törlés visszavonással.
     final old = s.portfolio.dividends.last;
