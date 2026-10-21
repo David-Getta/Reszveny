@@ -7,7 +7,7 @@ import 'mailer.dart';
 
 /// Egy részvény heti mozgása: a legutóbbi ár és a hét eleje óta mért változás
 /// (%); ha a heti adat nem érhető el, csak az ár.
-typedef WeekMove = ({double price, double? weekChange, String? currency});
+typedef WeekMove = ({double price, double? weekChange, String? currency, List<double> closes});
 
 typedef WeekLookup = Future<WeekMove?> Function(String symbol);
 
@@ -215,6 +215,7 @@ class DigestSender {
                 headline: heads[sym]?.title,
                 url: heads[sym]?.url,
                 result: fresh[sym],
+                signal: m.closes.isEmpty ? null : signalOf(m.closes),
               ),
         ];
         final portfolio = lines(s.portfolio), favorites = lines(s.favorites);
@@ -318,6 +319,24 @@ class DigestSender {
       }
       b.writeln();
     }
+    // Technikai jelzések a záróárakból (ha van elég adat).
+    final signalled = all.where((l) => l.signal != null).toList();
+    if (signalled.isNotEmpty) {
+      b.writeln(hu ? 'Technikai jelzések:' : 'Technical signals:');
+      for (final l in signalled) {
+        final s = l.signal!;
+        final text = switch (s.kind) {
+          DigestSignalKind.rsiOversold => 'RSI ${s.value.round()} (${hu ? 'túladott' : 'oversold'})',
+          DigestSignalKind.rsiOverbought => 'RSI ${s.value.round()} (${hu ? 'túlvett' : 'overbought'})',
+          DigestSignalKind.crossedAbove200 =>
+            hu ? 'a 200 napos átlag fölé került a héten' : 'crossed above its 200-day average this week',
+          DigestSignalKind.crossedBelow200 =>
+            hu ? 'a 200 napos átlag alá került a héten' : 'crossed below its 200-day average this week',
+        };
+        b.writeln('  ${l.symbol} – $text');
+      }
+      b.writeln();
+    }
     // A héten kapott osztalékok (az appban rögzített vagy importált tételek).
     if (dividends.isNotEmpty) {
       b.writeln(hu ? 'Kapott osztalékok a héten:' : 'Dividends received this week:');
@@ -380,6 +399,55 @@ class DigestSender {
 /// Egy kapott osztalék a heti levélhez.
 typedef DigestDividend = ({String symbol, double amount, String currency, DateTime date});
 
+/// Technikai jelzés a heti levélben: RSI szélsőség, vagy a 200 napos átlag
+/// átlépése a héten.
+enum DigestSignalKind { rsiOversold, rsiOverbought, crossedAbove200, crossedBelow200 }
+
+typedef DigestSignal = ({DigestSignalKind kind, double value});
+
+/// 14 napos RSI (Wilder-féle simítás) a záróárakból; `null`, ha nincs elég
+/// adat vagy az ár nem mozdult. (Ugyanaz, mint az appban.)
+double? rsi14(List<double> closes, [int n = 14]) {
+  if (closes.length < n + 1) return null;
+  var gain = 0.0, loss = 0.0;
+  for (var i = 1; i <= n; i++) {
+    final d = closes[i] - closes[i - 1];
+    if (d >= 0) {
+      gain += d;
+    } else {
+      loss -= d;
+    }
+  }
+  gain /= n;
+  loss /= n;
+  for (var i = n + 1; i < closes.length; i++) {
+    final d = closes[i] - closes[i - 1];
+    gain = (gain * (n - 1) + (d > 0 ? d : 0)) / n;
+    loss = (loss * (n - 1) + (d < 0 ? -d : 0)) / n;
+  }
+  if (gain == 0 && loss == 0) return null;
+  if (loss == 0) return 100;
+  return 100 - 100 / (1 + gain / loss);
+}
+
+double? _sma(List<double> closes, int n) =>
+    closes.length < n ? null : closes.sublist(closes.length - n).reduce((a, b) => a + b) / n;
+
+/// A sor jelzése a záróárakból (időrendben): előbb az RSI szélsőség, különben
+/// a 200 napos átlag átlépése az utolsó öt kereskedési napon.
+DigestSignal? signalOf(List<double> closes) {
+  final r = rsi14(closes);
+  if (r != null && r < 30) return (kind: DigestSignalKind.rsiOversold, value: r);
+  if (r != null && r > 70) return (kind: DigestSignalKind.rsiOverbought, value: r);
+  if (closes.length < 205) return null;
+  final now = _sma(closes, 200), ago = _sma(closes.sublist(0, closes.length - 5), 200);
+  if (now == null || ago == null || now <= 0 || ago <= 0) return null;
+  final last = closes.last, prev = closes[closes.length - 6];
+  if (last > now && prev <= ago) return (kind: DigestSignalKind.crossedAbove200, value: (last / now - 1) * 100);
+  if (last < now && prev >= ago) return (kind: DigestSignalKind.crossedBelow200, value: (last / now - 1) * 100);
+  return null;
+}
+
 /// Egy részvény sora az összefoglalóban.
 class DigestLine {
   const DigestLine(
@@ -391,6 +459,7 @@ class DigestLine {
     this.headline,
     this.url,
     this.result,
+    this.signal,
   });
 
   /// A hét legfrissebb híre a részvényről (csak a legnagyobb mozgásoknál).
@@ -399,6 +468,9 @@ class DigestLine {
 
   /// A nemrég zárult negyedév eredménye (jelentett és várt EPS), ha van.
   final LastResult? result;
+
+  /// Technikai jelzés (RSI szélsőség, a 200 napos átlag átlépése a héten).
+  final DigestSignal? signal;
 
   final String symbol;
   final double price;

@@ -668,7 +668,12 @@ class Api {
         final res = await _client
             .get(
               Uri.parse('$twelveDataBaseUrl/time_series').replace(
-                queryParameters: {'symbol': symbol, 'interval': '1day', 'outputsize': '12', 'apikey': twelveDataApiKey},
+                queryParameters: {
+                  'symbol': symbol,
+                  'interval': '1day',
+                  'outputsize': '230',
+                  'apikey': twelveDataApiKey,
+                },
               ),
             )
             .timeout(const Duration(seconds: 20));
@@ -677,11 +682,12 @@ class Api {
       } catch (_) {}
     }
     final q = await _finnhubQuote(symbol);
-    return q == null ? null : (price: q.price, weekChange: null, currency: null);
+    return q == null ? null : (price: q.price, weekChange: null, currency: null, closes: const <double>[]);
   }
 
-  /// Twelve Data `time_series` válaszból (újabb elöl) a legutóbbi záróár és a
-  /// legalább hét nappal korábbi utolsó záróárhoz mért változás.
+  /// Twelve Data `time_series` válaszból (újabb elöl) a legutóbbi záróár, a
+  /// legalább hét nappal korábbi utolsó záróárhoz mért változás, és a záróárak
+  /// időrendben.
   static WeekMove? weekMoveFromTimeSeries(Object? j) {
     if (j is! Map || j['status'] != 'ok' || j['values'] is! List) return null;
     final rows = <(DateTime, double)>[
@@ -697,6 +703,8 @@ class Api {
       price: last.$2,
       weekChange: base == null || base.$2 <= 0 ? null : (last.$2 / base.$2 - 1) * 100,
       currency: meta is Map && meta['currency'] is String ? meta['currency'] as String : null,
+      // A záróárak időrendben (a technikai jelzésekhez).
+      closes: [for (final r in rows.reversed) r.$2],
     );
   }
 

@@ -185,7 +185,9 @@ napon belül nem megy újra (`digest_log` tábla). Nyelve a felhasználóé (mag
 A levélben a 45 napon belül zárult negyedév eredménye is szerepel („Friss gyorsjelentések”: jelentett és várt
 EPS, meglepetés %), a Finnhub `/stock/earnings` végpontjáról, részvényenként egy hívással. A héten kapott
 osztalékok (az appban rögzített vagy bróker-exportból importált, a fiókkal szinkronizált tételek) külön
-szakaszban („Kapott osztalékok a héten”), API-hívás nélkül.
+szakaszban („Kapott osztalékok a héten”), API-hívás nélkül. A Twelve Data idősorból (230 nap) technikai
+jelzések is („Technikai jelzések”: RSI 30 alatt / 70 felett, a 200 napos átlag átlépése a héten) – ugyanazzal
+az egy hívással, Finnhub-tartaléknál nincs.
 
 ## Később (éles indulás előtt)
 

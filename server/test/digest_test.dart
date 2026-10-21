@@ -26,10 +26,10 @@ void main() {
   });
 
   final moves = <String, WeekMove>{
-    'AAPL': (price: 231.45, weekChange: -1.24, currency: 'USD'),
-    'NVDA': (price: 182.1, weekChange: 6.08, currency: 'USD'),
-    'MSFT': (price: 430.1, weekChange: 0.4, currency: 'USD'),
-    'OTP': (price: 31250, weekChange: null, currency: null),
+    'AAPL': (price: 231.45, weekChange: -1.24, currency: 'USD', closes: const []),
+    'NVDA': (price: 182.1, weekChange: 6.08, currency: 'USD', closes: const []),
+    'MSFT': (price: 430.1, weekChange: 0.4, currency: 'USD', closes: const []),
+    'OTP': (price: 31250, weekChange: null, currency: null, closes: const []),
   };
 
   DigestSender sender() => DigestSender(
@@ -111,6 +111,22 @@ void main() {
     expect(await sender().sendDue(), 1);
   });
 
+  test('technical signals from the closes: RSI extremes, a cross of the 200-day average this week', () {
+    final falling = [for (var i = 0; i < 220; i++) 100.0, for (var i = 1; i <= 10; i++) 100.0 - i * 0.3];
+    expect(signalOf(falling)?.kind, DigestSignalKind.rsiOversold);
+    final rising = [for (var i = 0; i < 220; i++) 100.0, for (var i = 1; i <= 10; i++) 100.0 + i * 0.3];
+    expect(signalOf(rising)?.kind, DigestSignalKind.rsiOverbought);
+    // Oldalazás az átlag felett, aztán négy napja alá esett: átlépés a héten.
+    final cross = [for (var i = 0; i < 200; i++) 100.0, 105.0, 105.0, 95.0, 95.0, 95.0, 95.0];
+    expect(signalOf(cross)?.kind, DigestSignalKind.crossedBelow200);
+    // Oldalazás jóval az átlag felett: nincs jelzés.
+    expect(
+      signalOf([for (var i = 0; i < 200; i++) 100.0, for (var i = 0; i < 30; i++) 110.0 + (i.isEven ? 0.5 : -0.5)]),
+      isNull,
+    );
+    expect(signalOf(const []), isNull);
+  });
+
   test('the English e-mail', () {
     final (subject, text) = DigestSender.digestEmail(
       [
@@ -121,6 +137,7 @@ void main() {
           'USD',
           DateTime.utc(2026, 10, 30),
           result: (actual: 1.15, estimate: 1.12, period: DateTime.utc(2026, 9, 30)),
+          signal: (kind: DigestSignalKind.rsiOversold, value: 27.4),
         ),
       ],
       const [],
@@ -129,6 +146,7 @@ void main() {
     );
     expect(subject, 'WhatStock weekly summary: AAPL −2.5%');
     expect(text, contains('Dividends received this week:\n  AAPL – 2.50 USD (Oct 14)'));
+    expect(text, contains('Technical signals:\n  AAPL – RSI 27 (oversold)'));
     expect(text, contains('Portfolio\n  AAPL   231.45 USD   −2.5%'));
     expect(text, contains('Results due in the next two weeks:\n  AAPL – Oct 30'));
     expect(text, contains('Fresh quarterly results:\n  AAPL – EPS 1.15 (expected 1.12, +2.7%) – above expectations'));
@@ -184,6 +202,7 @@ void main() {
     });
     expect(m!.price, 110);
     expect(m.weekChange, closeTo(10, 1e-9));
+    expect(m.closes, [90, 100, 104, 108, 110], reason: 'időrendben');
     expect(m.currency, 'USD');
     expect(Api.weekMoveFromTimeSeries({'status': 'error'}), isNull);
   });
