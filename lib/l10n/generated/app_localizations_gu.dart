@@ -2765,4 +2765,16 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'રોકડ બેલેન્સ સેટ કરો';
+
+  @override
+  String get portfolioDividendsExpected => 'આગામી અપેક્ષિત';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'તમે નોંધેલી ચુકવણીઓની તારીખો અને રકમો પરથી અંદાજિત; કંપનીઓ તેમાં ફેરફાર કરી શકે અથવા છોડી શકે છે.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'અંદાજે $date';
+  }
 }

@@ -2771,4 +2771,16 @@ class AppLocalizationsSw extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Weka salio la pesa taslimu';
+
+  @override
+  String get portfolioDividendsExpected => 'Yanayotarajiwa yajayo';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Imekadiriwa kutoka tarehe na kiasi cha malipo uliyorekodi; kampuni zinaweza kuyabadilisha au kuyaruka.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'karibu $date';
+  }
 }

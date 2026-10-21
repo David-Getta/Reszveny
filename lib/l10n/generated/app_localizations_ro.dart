@@ -2812,4 +2812,16 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Setează soldul de numerar';
+
+  @override
+  String get portfolioDividendsExpected => 'Următoarea estimată';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Estimat pe baza datelor și sumelor plăților înregistrate de tine; companiile le pot modifica sau omite.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'în jur de $date';
+  }
 }

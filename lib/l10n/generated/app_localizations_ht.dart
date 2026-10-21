@@ -2768,4 +2768,16 @@ class AppLocalizationsHt extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Fikse balans lajan kach';
+
+  @override
+  String get portfolioDividendsExpected => 'Pwochen yo atann';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Estime dapre dat ak montan peman ou te anrejistre yo; konpayi yo ka chanje yo oswa sote yo.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'anviwon $date';
+  }
 }

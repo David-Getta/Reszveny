@@ -2770,4 +2770,16 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'نقد بیلنس سیٹ کریں';
+
+  @override
+  String get portfolioDividendsExpected => 'اگلا متوقع';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'آپ کی ریکارڈ کی گئی ادائیگیوں کی تاریخوں اور رقوم سے اندازہ لگایا گیا؛ کمپنیاں انہیں بدل یا چھوڑ سکتی ہیں۔';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return '$date کے قریب';
+  }
 }

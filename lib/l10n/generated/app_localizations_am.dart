@@ -2737,4 +2737,16 @@ class AppLocalizationsAm extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'የጥሬ ገንዘብ ሚዛን አስቀምጥ';
+
+  @override
+  String get portfolioDividendsExpected => 'ቀጥሎ የሚጠበቅ';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'ከመዘገቡት ክፍያዎች ቀናትና መጠኖች የተገመተ ነው፤ ኩባንያዎች ሊለውጡት ወይም ሊያቋርጡት ይችላሉ።';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return '$date አካባቢ';
+  }
 }

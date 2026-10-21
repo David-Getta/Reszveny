@@ -735,5 +735,8 @@
   "portfolioCashTitle": "الرصيد النقدي",
   "portfolioCashHint": "أموال غير مستثمرة لدى الوسيط، حسب العملة. تُحسب في القيمة الإجمالية والتوزيع، لا في العائد.",
   "portfolioCashAmount": "المبلغ ({currency})",
-  "portfolioCashEdit": "تعيين الرصيد النقدي"
+  "portfolioCashEdit": "تعيين الرصيد النقدي",
+  "portfolioDividendsExpected": "المتوقع تاليًا",
+  "portfolioDividendsExpectedNote": "تقدير مبني على تواريخ ومبالغ الدفعات التي سجّلتها؛ قد تغيّرها الشركات أو تتخلّف عنها.",
+  "portfolioDividendAround": "حوالي {date}"
 }

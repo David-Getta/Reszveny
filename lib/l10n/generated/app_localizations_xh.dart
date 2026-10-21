@@ -2783,4 +2783,16 @@ class AppLocalizationsXh extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Misela ibhalansi yemali';
+
+  @override
+  String get portfolioDividendsExpected => 'Ezilindelekileyo ngokulandelayo';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Ziqikelelwe kwimihla nakwizixa zeentlawulo ozirekhodileyo; iinkampani zinokuzitshintsha okanye zizitsibe.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'malunga ne-$date';
+  }
 }

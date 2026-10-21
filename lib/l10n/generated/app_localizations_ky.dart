@@ -2774,4 +2774,16 @@ class AppLocalizationsKy extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Нак акча калдыгын коюу';
+
+  @override
+  String get portfolioDividendsExpected => 'Кийинки күтүлгөн';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Сиз жазган төлөмдөрдүн күндөрү менен суммалары боюнча болжолдонгон; компаниялар аларды өзгөртө же өткөрүп жибере алат.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'болжол менен $date';
+  }
 }

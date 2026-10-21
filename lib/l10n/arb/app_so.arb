@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Haraaga lacagta",
   "portfolioCashHint": "Lacag aan la maalgelin oo ku jirta dilaalkaaga, lacag kasta gaar. Waxaa lagu xisaabiyaa wadarta qiimaha iyo qaybinta; laguma xisaabiyo faa'iidada.",
   "portfolioCashAmount": "Qaddarka ({currency})",
-  "portfolioCashEdit": "Deji haraaga lacagta"
+  "portfolioCashEdit": "Deji haraaga lacagta",
+  "portfolioDividendsExpected": "Kuwa xiga ee la filayo",
+  "portfolioDividendsExpectedNote": "Waxaa lagu qiyaasay taariikhaha iyo lacagaha bixinnada aad diiwaangelisay; shirkaduhu way beddeli karaan ama ka boodi karaan.",
+  "portfolioDividendAround": "qiyaastii {date}"
 }

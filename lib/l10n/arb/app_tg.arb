@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Бақияи пули нақд",
   "portfolioCashHint": "Пули сармоягузорӣ нашуда дар брокери шумо, аз рӯи асъор. Ба арзиши умумӣ ва тақсимот ҳисоб мешавад; ба даромаднокӣ не.",
   "portfolioCashAmount": "Маблағ ({currency})",
-  "portfolioCashEdit": "Бақияи пули нақдро муқаррар кунед"
+  "portfolioCashEdit": "Бақияи пули нақдро муқаррар кунед",
+  "portfolioDividendsExpected": "Навбатии интизоршаванда",
+  "portfolioDividendsExpectedNote": "Аз рӯи таърихҳо ва маблағҳои пардохтҳои сабткардаи шумо ҳисоб шудааст; ширкатҳо онҳоро тағйир додан ё нагузаронидан метавонанд.",
+  "portfolioDividendAround": "тақрибан {date}"
 }

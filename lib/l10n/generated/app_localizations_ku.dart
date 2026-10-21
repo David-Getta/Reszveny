@@ -2772,4 +2772,16 @@ class AppLocalizationsKu extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Bakiyeya nexd diyar bike';
+
+  @override
+  String get portfolioDividendsExpected => 'Ya din a tê hêvîkirin';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Li gorî dîrok û mîqdarên dayînên ku te tomar kirine hatiye texmînkirin; şirket dikarin wan biguherînin an jî nedin.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'li dora $date';
+  }
 }

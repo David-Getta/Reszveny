@@ -2777,4 +2777,16 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'నగదు బ్యాలెన్స్ సెట్ చేయండి';
+
+  @override
+  String get portfolioDividendsExpected => 'తదుపరి అంచనా';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'మీరు నమోదు చేసిన చెల్లింపుల తేదీలు, మొత్తాల ఆధారంగా అంచనా; కంపెనీలు వాటిని మార్చవచ్చు లేదా ఇవ్వకపోవచ్చు.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return '$date ప్రాంతంలో';
+  }
 }

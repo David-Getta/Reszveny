@@ -2686,4 +2686,16 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => '現金残高を設定';
+
+  @override
+  String get portfolioDividendsExpected => '次回の予想';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      '記録済みの配当の支払日と金額から推定しています。企業が変更または無配にする場合があります。';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return '$date頃';
+  }
 }

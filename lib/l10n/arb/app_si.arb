@@ -735,5 +735,8 @@
   "portfolioCashTitle": "මුදල් ශේෂය",
   "portfolioCashHint": "ඔබේ බ්‍රෝකර් ළඟ ඇති ආයෝජනය නොකළ මුදල්, මුදල් වර්ගය අනුව. මුළු වටිනාකමට හා බෙදීමට ගණන් ගනී; ප්‍රතිලාභයට නොගනී.",
   "portfolioCashAmount": "මුදල ({currency})",
-  "portfolioCashEdit": "මුදල් ශේෂය සකසන්න"
+  "portfolioCashEdit": "මුදල් ශේෂය සකසන්න",
+  "portfolioDividendsExpected": "ඊළඟට අපේක්ෂිත",
+  "portfolioDividendsExpectedNote": "ඔබ සටහන් කළ ගෙවීම්වල දින සහ මුදල් මත ඇස්තමේන්තු කර ඇත; සමාගම් ඒවා වෙනස් කිරීමට හෝ මඟ හැරීමට හැකිය.",
+  "portfolioDividendAround": "{date} පමණ"
 }

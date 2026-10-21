@@ -2779,4 +2779,16 @@ class AppLocalizationsOm extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Hafaa maallaqaa qindeessi';
+
+  @override
+  String get portfolioDividendsExpected => 'Itti aanee eegamu';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Guyyoota fi hamma kaffaltiiwwan ati galmeessiterraa tilmaamame; dhaabbileen jijjiiruu ykn dhiisuu ni danda\'u.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'naannoo $date';
+  }
 }

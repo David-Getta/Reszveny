@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Qullqi saldo",
   "portfolioCashHint": "Broker-niykipi mana churasqa qullqi, sapa qullqi laya. Llapan chaninpi hinaspa rakiypi yupasqa; mana rendimientopichu.",
   "portfolioCashAmount": "Hayka ({currency})",
-  "portfolioCashEdit": "Qullqi saldota churay"
+  "portfolioCashEdit": "Qullqi saldota churay",
+  "portfolioDividendsExpected": "Qatiqnin suyasqa",
+  "portfolioDividendsExpectedNote": "Qillqasqayki pagokunapa p'unchawninkunamanta chaninkunamantawan yupasqa; empresakuna chaykunata tikrayta utaq saqiyta atinku.",
+  "portfolioDividendAround": "yaqa {date}"
 }

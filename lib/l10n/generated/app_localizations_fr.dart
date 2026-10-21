@@ -2781,4 +2781,16 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Définir le solde de liquidités';
+
+  @override
+  String get portfolioDividendsExpected => 'Prochains attendus';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Estimation d’après les dates et montants des versements que vous avez enregistrés ; les sociétés peuvent les modifier ou les supprimer.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'vers le $date';
+  }
 }

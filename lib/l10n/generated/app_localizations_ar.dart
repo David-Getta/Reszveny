@@ -2835,4 +2835,16 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'تعيين الرصيد النقدي';
+
+  @override
+  String get portfolioDividendsExpected => 'المتوقع تاليًا';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'تقدير مبني على تواريخ ومبالغ الدفعات التي سجّلتها؛ قد تغيّرها الشركات أو تتخلّف عنها.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'حوالي $date';
+  }
 }

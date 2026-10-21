@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Xaalis bi des",
   "portfolioCashHint": "Xaalis bi nga dugalul ci sa broker, ci wàllu xaalis bu nekk. Dañu koy waññi ci mboolem njëg ak séddale; waaye du ci benefis.",
   "portfolioCashAmount": "Lim ({currency})",
-  "portfolioCashEdit": "Tëral xaalis bi des"
+  "portfolioCashEdit": "Tëral xaalis bi des",
+  "portfolioDividendsExpected": "Li ñuy xaar ci kanam",
+  "portfolioDividendsExpectedNote": "Ñu xayma ko ci bés yi ak xaalis yi ci fey yi nga bind; ay kompañi mën nañu koy soppi walla ñu bàyyi ko.",
+  "portfolioDividendAround": "lu tollu ci {date}"
 }

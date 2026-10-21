@@ -2732,4 +2732,16 @@ class AppLocalizationsTi extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'ተረፍ ጥረ ገንዘብ ኣቐምጥ';
+
+  @override
+  String get portfolioDividendsExpected => 'ቀጺሉ ዝተጸበ';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'ካብ ዕለታትን መጠንን ናይቶም ዝመዝገብካዮም ክፍሊታት ዝተገመተ፤ ኩባንያታት ክቕይርወን ወይ ክሓልፍወን ይኽእሉ።';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'ኣብ ከባቢ $date';
+  }
 }

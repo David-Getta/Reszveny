@@ -735,5 +735,8 @@
   "portfolioCashTitle": "موجودی نقد",
   "portfolioCashHint": "پول سرمایه‌گذاری‌نشده نزد کارگزار شما، به تفکیک ارز. در ارزش کل و ترکیب حساب می‌شود؛ در بازده نه.",
   "portfolioCashAmount": "مبلغ ({currency})",
-  "portfolioCashEdit": "تعیین موجودی نقد"
+  "portfolioCashEdit": "تعیین موجودی نقد",
+  "portfolioDividendsExpected": "مورد انتظار بعدی",
+  "portfolioDividendsExpectedNote": "برآوردشده از تاریخ‌ها و مبالغ پرداخت‌هایی که ثبت کرده‌اید؛ شرکت‌ها می‌توانند آن‌ها را تغییر دهند یا حذف کنند.",
+  "portfolioDividendAround": "حدود {date}"
 }

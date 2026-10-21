@@ -735,5 +735,8 @@
   "portfolioCashTitle": "現金残高",
   "portfolioCashHint": "証券口座にある未投資の資金（通貨別）。評価額合計と構成には含まれますが、リターンには含まれません。",
   "portfolioCashAmount": "金額（{currency}）",
-  "portfolioCashEdit": "現金残高を設定"
+  "portfolioCashEdit": "現金残高を設定",
+  "portfolioDividendsExpected": "次回の予想",
+  "portfolioDividendsExpectedNote": "記録済みの配当の支払日と金額から推定しています。企業が変更または無配にする場合があります。",
+  "portfolioDividendAround": "{date}頃"
 }

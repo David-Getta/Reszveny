@@ -2773,4 +2773,16 @@ class AppLocalizationsAz extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Nağd qalığı təyin et';
+
+  @override
+  String get portfolioDividendsExpected => 'Növbəti gözlənilən';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Qeyd etdiyiniz ödənişlərin tarix və məbləğlərinə əsasən təxmin edilib; şirkətlər onları dəyişdirə və ya ödəməyə bilər.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'təxminən $date';
+  }
 }

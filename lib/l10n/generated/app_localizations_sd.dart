@@ -2762,4 +2762,16 @@ class AppLocalizationsSd extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'نقد بيلنس سيٽ ڪريو';
+
+  @override
+  String get portfolioDividendsExpected => 'اڳيون متوقع';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'توهان جي رڪارڊ ڪيل ادائگين جي تاريخن ۽ رقمن مان اندازو لڳايل؛ ڪمپنيون انهن کي بدلائي يا ڇڏي سگهن ٿيون.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return '$date جي لڳ ڀڳ';
+  }
 }

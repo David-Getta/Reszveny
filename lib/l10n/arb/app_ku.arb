@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Bakiyeya nexd",
   "portfolioCashHint": "Pereyê ku hîn nehatiye veberhênandin li cem brokerê te, li gorî dirav. Di nirxa giştî û dabeşkirinê de tê hesibandin; di qezencê de na.",
   "portfolioCashAmount": "Mîqdar ({currency})",
-  "portfolioCashEdit": "Bakiyeya nexd diyar bike"
+  "portfolioCashEdit": "Bakiyeya nexd diyar bike",
+  "portfolioDividendsExpected": "Ya din a tê hêvîkirin",
+  "portfolioDividendsExpectedNote": "Li gorî dîrok û mîqdarên dayînên ku te tomar kirine hatiye texmînkirin; şirket dikarin wan biguherînin an jî nedin.",
+  "portfolioDividendAround": "li dora {date}"
 }

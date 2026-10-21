@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Grynųjų likutis",
   "portfolioCashHint": "Neinvestuoti pinigai pas jūsų brokerį, pagal valiutas. Įskaitomi į bendrą vertę ir paskirstymą; ne į grąžą.",
   "portfolioCashAmount": "Suma ({currency})",
-  "portfolioCashEdit": "Nustatyti grynųjų likutį"
+  "portfolioCashEdit": "Nustatyti grynųjų likutį",
+  "portfolioDividendsExpected": "Kiti numatomi",
+  "portfolioDividendsExpectedNote": "Įvertinta pagal jūsų įrašytų išmokų datas ir sumas; bendrovės gali jas pakeisti arba praleisti.",
+  "portfolioDividendAround": "apie {date}"
 }

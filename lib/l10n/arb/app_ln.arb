@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Mbɔngɔ ya mabɔkɔ etikali",
   "portfolioCashHint": "Mbɔngɔ oyo otiaki naino te na mombongo epai ya broker na yo, na mbɔngɔ mokomoko. Etangami na motuya mobimba mpe na bokaboli; etangami te na litomba.",
   "portfolioCashAmount": "Motuya ({currency})",
-  "portfolioCashEdit": "Tiá mbɔngɔ ya mabɔkɔ"
+  "portfolioCashEdit": "Tiá mbɔngɔ ya mabɔkɔ",
+  "portfolioDividendsExpected": "Ezelami na nsima",
+  "portfolioDividendsExpectedNote": "Etangami na mikolo mpe na motango ya mbongo ya bafuti oyo okomaki; ba kompanyi ekoki kobongola yango to kotika yango.",
+  "portfolioDividendAround": "pene na {date}"
 }

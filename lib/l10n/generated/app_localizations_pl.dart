@@ -2843,4 +2843,16 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Ustaw saldo gotówkowe';
+
+  @override
+  String get portfolioDividendsExpected => 'Następna spodziewana';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Oszacowano na podstawie dat i kwot zapisanych wypłat; spółki mogą je zmienić lub pominąć.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'około $date';
+  }
 }

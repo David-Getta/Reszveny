@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Solde de liquidités",
   "portfolioCashHint": "Argent non investi chez votre courtier, par devise. Compte dans la valeur totale et la répartition ; pas dans le rendement.",
   "portfolioCashAmount": "Montant ({currency})",
-  "portfolioCashEdit": "Définir le solde de liquidités"
+  "portfolioCashEdit": "Définir le solde de liquidités",
+  "portfolioDividendsExpected": "Prochains attendus",
+  "portfolioDividendsExpectedNote": "Estimation d’après les dates et montants des versements que vous avez enregistrés ; les sociétés peuvent les modifier ou les supprimer.",
+  "portfolioDividendAround": "vers le {date}"
 }

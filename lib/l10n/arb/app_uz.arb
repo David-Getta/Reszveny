@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Naqd pul qoldigʻi",
   "portfolioCashHint": "Brokeringizdagi investitsiya qilinmagan pul, valyuta boʻyicha. Umumiy qiymat va taqsimotga kiradi; daromadlilikka kirmaydi.",
   "portfolioCashAmount": "Summa ({currency})",
-  "portfolioCashEdit": "Naqd pul qoldigʻini belgilash"
+  "portfolioCashEdit": "Naqd pul qoldigʻini belgilash",
+  "portfolioDividendsExpected": "Keyingi kutilayotgan",
+  "portfolioDividendsExpectedNote": "Siz yozgan toʻlovlarning sana va summalari asosida hisoblangan; kompaniyalar ularni oʻzgartirishi yoki toʻlamasligi mumkin.",
+  "portfolioDividendAround": "taxminan {date}"
 }

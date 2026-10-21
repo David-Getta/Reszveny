@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Saldo kas",
   "portfolioCashHint": "Dhuwit sing durung diinvestasekake ing broker sampeyan, saben mata uang. Dietung ing nilai total lan alokasi; ora ing imbal hasil.",
   "portfolioCashAmount": "Jumlah ({currency})",
-  "portfolioCashEdit": "Setel saldo kas"
+  "portfolioCashEdit": "Setel saldo kas",
+  "portfolioDividendsExpected": "Sing dikarepake sabanjuré",
+  "portfolioDividendsExpectedNote": "Dikira-kira saka tanggal lan jumlah pembayaran sing sampeyan cathet; perusahaan bisa ngowahi utawa ora mbayar.",
+  "portfolioDividendAround": "kira-kira {date}"
 }

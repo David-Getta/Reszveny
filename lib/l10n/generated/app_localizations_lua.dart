@@ -2778,4 +2778,16 @@ class AppLocalizationsLua extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Teka mfranga ya mu bianza';
+
+  @override
+  String get portfolioDividendsExpected => 'Idi mitekemene kulonda';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Mbabala bilondeshile matuku ne bungi bua difuta diwakafunda; ba kompanyi badi mua kushintulula anyi kubenga.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'pabuipi ne $date';
+  }
 }

@@ -2771,4 +2771,16 @@ class AppLocalizationsBg extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Задаване на паричен баланс';
+
+  @override
+  String get portfolioDividendsExpected => 'Очаквани следващи';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Приблизителна оценка по датите и сумите на записаните от вас плащания; компаниите могат да ги променят или пропуснат.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'около $date';
+  }
 }

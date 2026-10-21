@@ -735,5 +735,8 @@
   "portfolioCashTitle": "باڵانسی کاش",
   "portfolioCashHint": "پارەی وەبەرنەهێنراو لای بڕۆکەرەکەت، بەپێی دراو. لە کۆی بەها و دابەشبوون دەژمێردرێت؛ لە قازانج نا.",
   "portfolioCashAmount": "بڕ ({currency})",
-  "portfolioCashEdit": "دانانی باڵانسی کاش"
+  "portfolioCashEdit": "دانانی باڵانسی کاش",
+  "portfolioDividendsExpected": "چاوەڕوانکراوی داهاتوو",
+  "portfolioDividendsExpectedNote": "خەمڵێنراوە لە ڕێکەوت و بڕی ئەو پارەدانانەی تۆمارت کردوون؛ کۆمپانیاکان دەتوانن بیانگۆڕن یان بیانپەڕێنن.",
+  "portfolioDividendAround": "نزیکەی {date}"
 }

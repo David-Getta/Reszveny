@@ -2780,4 +2780,16 @@ class AppLocalizationsKg extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Tula mbongo ya maboko';
+
+  @override
+  String get portfolioDividendsExpected => 'Yina bo ke vingila na nima';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Yo me tangwa na bilumbu ti mbongo ya bafutu ya nge me sonika; ba kompani lenda soba yo to kubika yo.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'penepene na $date';
+  }
 }

@@ -735,5 +735,8 @@
   "portfolioCashTitle": "نقد بیلنس",
   "portfolioCashHint": "آپ کے بروکر کے پاس موجود غیر سرمایہ کاری شدہ رقم، کرنسی کے لحاظ سے۔ یہ کل مالیت اور تقسیم میں شمار ہوتی ہے؛ منافع میں نہیں۔",
   "portfolioCashAmount": "رقم ({currency})",
-  "portfolioCashEdit": "نقد بیلنس سیٹ کریں"
+  "portfolioCashEdit": "نقد بیلنس سیٹ کریں",
+  "portfolioDividendsExpected": "اگلا متوقع",
+  "portfolioDividendsExpectedNote": "آپ کی ریکارڈ کی گئی ادائیگیوں کی تاریخوں اور رقوم سے اندازہ لگایا گیا؛ کمپنیاں انہیں بدل یا چھوڑ سکتی ہیں۔",
+  "portfolioDividendAround": "{date} کے قریب"
 }

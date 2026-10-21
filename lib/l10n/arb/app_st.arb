@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Chelete e setseng",
   "portfolioCashHint": "Chelete e sa tseteloang ho broker wa hao, ka mofuta wa chelete. E balellwa bolengng ka kakaretso le kabong; eseng phaellong.",
   "portfolioCashAmount": "Palo ({currency})",
-  "portfolioCashEdit": "Beha chelete e setseng"
+  "portfolioCashEdit": "Beha chelete e setseng",
+  "portfolioDividendsExpected": "Tse latelang tse lebelletsweng",
+  "portfolioDividendsExpectedNote": "Di hakanyeditswe ho tswa ho matsatsi le ditjhelete tsa ditefo tseo o di tlalehileng; dik'hamphani di ka di fetola kapa tsa di tlola.",
+  "portfolioDividendAround": "hoo e ka bang {date}"
 }

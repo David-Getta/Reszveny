@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Hotovostní zůstatek",
   "portfolioCashHint": "Neinvestované peníze u vašeho brokera, podle měn. Počítají se do celkové hodnoty a rozložení; ne do výnosu.",
   "portfolioCashAmount": "Částka ({currency})",
-  "portfolioCashEdit": "Nastavit hotovostní zůstatek"
+  "portfolioCashEdit": "Nastavit hotovostní zůstatek",
+  "portfolioDividendsExpected": "Další očekávané",
+  "portfolioDividendsExpectedNote": "Odhad z dat a částek výplat, které jste zaznamenali; společnosti je mohou změnit nebo vynechat.",
+  "portfolioDividendAround": "kolem {date}"
 }

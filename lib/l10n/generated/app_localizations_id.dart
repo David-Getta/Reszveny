@@ -2766,4 +2766,16 @@ class AppLocalizationsId extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Atur saldo kas';
+
+  @override
+  String get portfolioDividendsExpected => 'Diperkirakan berikutnya';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Diperkirakan dari tanggal dan jumlah pembayaran yang Anda catat; perusahaan dapat mengubah atau melewatkannya.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'sekitar $date';
+  }
 }

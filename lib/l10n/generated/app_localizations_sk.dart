@@ -2839,4 +2839,16 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Nastaviť hotovostný zostatok';
+
+  @override
+  String get portfolioDividendsExpected => 'Ďalšie očakávané';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Odhad podľa dátumov a súm výplat, ktoré ste zaznamenali; spoločnosti ich môžu zmeniť alebo vynechať.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'okolo $date';
+  }
 }

@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Mbeca cia moko iria irĩ ho",
   "portfolioCashHint": "Mbeca itaigĩtwo irĩ kwa broker waku, kũringana na mũthemba wa mbeca. Itaragwo thogora-inĩ wothe na ũgayanio-inĩ; ti uumithio-inĩ.",
   "portfolioCashAmount": "Mũigana ({currency})",
-  "portfolioCashEdit": "Iga mbeca cia moko"
+  "portfolioCashEdit": "Iga mbeca cia moko",
+  "portfolioDividendsExpected": "Ĩrĩa ĩrerĩgĩrĩirwo thutha",
+  "portfolioDividendsExpectedNote": "Ĩtarĩtwo kuuma mĩthenya na mbeca cia marĩhi marĩa wandĩkire; kambuni no igarũre kana itige kũrĩha.",
+  "portfolioDividendAround": "hakuhĩ na {date}"
 }

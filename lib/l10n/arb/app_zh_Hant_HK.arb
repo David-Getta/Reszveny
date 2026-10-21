@@ -735,5 +735,8 @@
   "portfolioCashTitle": "現金結餘",
   "portfolioCashHint": "證券戶口中未投資的資金，按貨幣分列。計入總市值及配置，不計入回報。",
   "portfolioCashAmount": "金額 ({currency})",
-  "portfolioCashEdit": "設定現金結餘"
+  "portfolioCashEdit": "設定現金結餘",
+  "portfolioDividendsExpected": "預計下次",
+  "portfolioDividendsExpectedNote": "根據你記錄的派息日期和金額估算；公司可能更改或取消派息。",
+  "portfolioDividendAround": "約 {date}"
 }

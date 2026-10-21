@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Készpénz-egyenleg",
   "portfolioCashHint": "A brókernél tartott, be nem fektetett pénz pénznemenként. Az összértékbe és a megoszlásba számít, a hozamba nem.",
   "portfolioCashAmount": "Összeg ({currency})",
-  "portfolioCashEdit": "Készpénz-egyenleg megadása"
+  "portfolioCashEdit": "Készpénz-egyenleg megadása",
+  "portfolioDividendsExpected": "Várható következő",
+  "portfolioDividendsExpectedNote": "A rögzített kifizetések dátumaiból és összegeiből becsülve; a cégek változtathatnak rajta, vagy ki is hagyhatják.",
+  "portfolioDividendAround": "{date} körül"
 }

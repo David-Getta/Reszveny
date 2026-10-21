@@ -735,5 +735,8 @@
   "portfolioCashTitle": "ਨਕਦ ਬਕਾਇਆ",
   "portfolioCashHint": "ਤੁਹਾਡੇ ਬ੍ਰੋਕਰ ਕੋਲ ਪਿਆ ਨਿਵੇਸ਼ ਨਾ ਕੀਤਾ ਪੈਸਾ, ਮੁਦਰਾ ਅਨੁਸਾਰ। ਇਹ ਕੁੱਲ ਮੁੱਲ ਅਤੇ ਵੰਡ ਵਿੱਚ ਗਿਣਿਆ ਜਾਂਦਾ ਹੈ; ਰਿਟਰਨ ਵਿੱਚ ਨਹੀਂ।",
   "portfolioCashAmount": "ਰਕਮ ({currency})",
-  "portfolioCashEdit": "ਨਕਦ ਬਕਾਇਆ ਸੈੱਟ ਕਰੋ"
+  "portfolioCashEdit": "ਨਕਦ ਬਕਾਇਆ ਸੈੱਟ ਕਰੋ",
+  "portfolioDividendsExpected": "ਅਗਲਾ ਸੰਭਾਵਿਤ",
+  "portfolioDividendsExpectedNote": "ਤੁਹਾਡੀਆਂ ਦਰਜ ਕੀਤੀਆਂ ਅਦਾਇਗੀਆਂ ਦੀਆਂ ਤਾਰੀਖਾਂ ਅਤੇ ਰਕਮਾਂ ਤੋਂ ਅੰਦਾਜ਼ਾ; ਕੰਪਨੀਆਂ ਇਨ੍ਹਾਂ ਨੂੰ ਬਦਲ ਜਾਂ ਛੱਡ ਸਕਦੀਆਂ ਹਨ।",
+  "portfolioDividendAround": "{date} ਦੇ ਆਸ-ਪਾਸ"
 }

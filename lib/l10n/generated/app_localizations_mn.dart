@@ -2771,4 +2771,16 @@ class AppLocalizationsMn extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Бэлэн мөнгөний үлдэгдэл тохируулах';
+
+  @override
+  String get portfolioDividendsExpected => 'Дараагийн хүлээгдэж буй';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Таны бүртгэсэн төлбөрүүдийн огноо, дүнгээс тооцоолсон; компаниуд өөрчлөх эсвэл алгасах боломжтой.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return '$date орчим';
+  }
 }

@@ -2773,4 +2773,16 @@ class AppLocalizationsEe extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Ɖo ga si le asi ƒe home';
+
+  @override
+  String get portfolioDividendsExpected => 'Esi wokpɔ mɔ na kplɔe ɖo';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Wobu akɔnta tso ŋkeke kple ga home siwo nèŋlɔ ɖi le fexexeawo ŋu me; dɔwɔƒewo ate ŋu atrɔ wo alo agbe wo xexe.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return '$date lɔƒo';
+  }
 }

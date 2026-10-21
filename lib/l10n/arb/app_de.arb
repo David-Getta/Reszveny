@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Cash-Bestand",
   "portfolioCashHint": "Nicht investiertes Geld beim Broker, je Währung. Zählt zum Gesamtwert und zur Aufteilung; nicht zur Rendite.",
   "portfolioCashAmount": "Betrag ({currency})",
-  "portfolioCashEdit": "Cash-Bestand festlegen"
+  "portfolioCashEdit": "Cash-Bestand festlegen",
+  "portfolioDividendsExpected": "Als Nächstes erwartet",
+  "portfolioDividendsExpectedNote": "Geschätzt aus Daten und Beträgen der von dir erfassten Zahlungen; Unternehmen können sie ändern oder ausfallen lassen.",
+  "portfolioDividendAround": "um den {date}"
 }

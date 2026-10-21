@@ -2773,4 +2773,16 @@ class AppLocalizationsSu extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Setel saldo tunai';
+
+  @override
+  String get portfolioDividendsExpected => 'Diperkirakeun salajengna';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Diperkirakeun tina tanggal sareng jumlah pamayaran anu anjeun catet; pausahaan tiasa ngarobih atanapi ngaliwatanana.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'kira-kira $date';
+  }
 }

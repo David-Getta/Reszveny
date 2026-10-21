@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Balans lajan kach",
   "portfolioCashHint": "Lajan ki pa envesti kay koutye ou, pa deviz. Li konte nan valè total ak repatisyon an; pa nan rannman an.",
   "portfolioCashAmount": "Montan ({currency})",
-  "portfolioCashEdit": "Fikse balans lajan kach"
+  "portfolioCashEdit": "Fikse balans lajan kach",
+  "portfolioDividendsExpected": "Pwochen yo atann",
+  "portfolioDividendsExpectedNote": "Estime dapre dat ak montan peman ou te anrejistre yo; konpayi yo ka chanje yo oswa sote yo.",
+  "portfolioDividendAround": "anviwon {date}"
 }

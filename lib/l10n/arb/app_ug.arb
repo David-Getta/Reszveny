@@ -735,5 +735,8 @@
   "portfolioCashTitle": "نەق پۇل قالدۇقى",
   "portfolioCashHint": "بروكېرىڭىزدىكى سېلىنمىغان پۇل، پۇل تۈرى بويىچە. ئومۇمىي قىممەت ۋە تەقسىماتقا كىرىدۇ؛ پايداغا كىرمەيدۇ.",
   "portfolioCashAmount": "سومما ({currency})",
-  "portfolioCashEdit": "نەق پۇل قالدۇقىنى تەڭشەش"
+  "portfolioCashEdit": "نەق پۇل قالدۇقىنى تەڭشەش",
+  "portfolioDividendsExpected": "كېيىنكى كۈتۈلگەن",
+  "portfolioDividendsExpectedNote": "سىز خاتىرىلىگەن تۆلەملەرنىڭ چېسلا ۋە سوممىسىدىن مۆلچەرلەنگەن؛ شىركەتلەر ئۇلارنى ئۆزگەرتىشى ياكى ئۆتكۈزۈۋېتىشى مۇمكىن.",
+  "portfolioDividendAround": "تەخمىنەن {date}"
 }

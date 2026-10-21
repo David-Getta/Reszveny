@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Паричен баланс",
   "portfolioCashHint": "Неинвестирани пари при брокера ви, по валути. Включват се в общата стойност и разпределението; не и в доходността.",
   "portfolioCashAmount": "Сума ({currency})",
-  "portfolioCashEdit": "Задаване на паричен баланс"
+  "portfolioCashEdit": "Задаване на паричен баланс",
+  "portfolioDividendsExpected": "Очаквани следващи",
+  "portfolioDividendsExpectedNote": "Приблизителна оценка по датите и сумите на записаните от вас плащания; компаниите могат да ги променят или пропуснат.",
+  "portfolioDividendAround": "около {date}"
 }

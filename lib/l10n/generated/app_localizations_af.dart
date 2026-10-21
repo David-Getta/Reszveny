@@ -2773,4 +2773,16 @@ class AppLocalizationsAf extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Stel kontantsaldo in';
+
+  @override
+  String get portfolioDividendsExpected => 'Volgende verwag';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Geskat uit die datums en bedrae van die betalings wat jy aangeteken het; maatskappye kan dit verander of oorslaan.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'ongeveer $date';
+  }
 }

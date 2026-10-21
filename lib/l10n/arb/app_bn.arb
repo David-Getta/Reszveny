@@ -735,5 +735,8 @@
   "portfolioCashTitle": "নগদ ব্যালেন্স",
   "portfolioCashHint": "আপনার ব্রোকারের কাছে থাকা বিনিয়োগ না করা টাকা, মুদ্রা অনুসারে। এটি মোট মূল্য ও বণ্টনে গণ্য হয়; রিটার্নে নয়।",
   "portfolioCashAmount": "পরিমাণ ({currency})",
-  "portfolioCashEdit": "নগদ ব্যালেন্স সেট করুন"
+  "portfolioCashEdit": "নগদ ব্যালেন্স সেট করুন",
+  "portfolioDividendsExpected": "পরবর্তী প্রত্যাশিত",
+  "portfolioDividendsExpectedNote": "আপনার নথিভুক্ত পেমেন্টের তারিখ ও পরিমাণ থেকে অনুমান করা; কোম্পানি এগুলো বদলাতে বা বাদ দিতে পারে।",
+  "portfolioDividendAround": "আনুমানিক {date}"
 }

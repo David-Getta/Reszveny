@@ -735,5 +735,8 @@
   "portfolioCashTitle": "ნაღდი ფულის ნაშთი",
   "portfolioCashHint": "არაინვესტირებული ფული თქვენს ბროკერთან, ვალუტების მიხედვით. ითვლება ჯამურ ღირებულებასა და განაწილებაში; შემოსავლიანობაში — არა.",
   "portfolioCashAmount": "თანხა ({currency})",
-  "portfolioCashEdit": "ნაღდი ფულის ნაშთის მითითება"
+  "portfolioCashEdit": "ნაღდი ფულის ნაშთის მითითება",
+  "portfolioDividendsExpected": "მოსალოდნელი შემდეგი",
+  "portfolioDividendsExpectedNote": "შეფასებულია თქვენ მიერ ჩაწერილი გადახდების თარიღებისა და თანხების მიხედვით; კომპანიებმა შეიძლება შეცვალონ ან გამოტოვონ ისინი.",
+  "portfolioDividendAround": "დაახლოებით {date}"
 }

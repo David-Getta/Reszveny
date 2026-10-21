@@ -735,5 +735,8 @@
   "portfolioCashTitle": "నగదు బ్యాలెన్స్",
   "portfolioCashHint": "మీ బ్రోకర్ వద్ద పెట్టుబడి పెట్టని డబ్బు, కరెన్సీ వారీగా. ఇది మొత్తం విలువ మరియు కేటాయింపులో లెక్కించబడుతుంది; రాబడిలో కాదు.",
   "portfolioCashAmount": "మొత్తం ({currency})",
-  "portfolioCashEdit": "నగదు బ్యాలెన్స్ సెట్ చేయండి"
+  "portfolioCashEdit": "నగదు బ్యాలెన్స్ సెట్ చేయండి",
+  "portfolioDividendsExpected": "తదుపరి అంచనా",
+  "portfolioDividendsExpectedNote": "మీరు నమోదు చేసిన చెల్లింపుల తేదీలు, మొత్తాల ఆధారంగా అంచనా; కంపెనీలు వాటిని మార్చవచ్చు లేదా ఇవ్వకపోవచ్చు.",
+  "portfolioDividendAround": "{date} ప్రాంతంలో"
 }

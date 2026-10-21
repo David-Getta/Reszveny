@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Balanse sang cash",
   "portfolioCashHint": "Kuwarta nga wala pa ma-invest sa imo broker, kada currency. Ginaisip ini sa kabilogan nga bili kag pagbahin; indi sa kita.",
   "portfolioCashAmount": "Kantidad ({currency})",
-  "portfolioCashEdit": "I-set ang balanse sang cash"
+  "portfolioCashEdit": "I-set ang balanse sang cash",
+  "portfolioDividendsExpected": "Ginapaabot nga masunod",
+  "portfolioDividendsExpectedNote": "Ginbanta-banta halin sa mga petsa kag kantidad sang mga bayad nga narekord mo; mahimo ini bag-uhon ukon laktawan sang mga kompanya.",
+  "portfolioDividendAround": "mga {date}"
 }

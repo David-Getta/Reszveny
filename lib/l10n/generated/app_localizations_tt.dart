@@ -2769,4 +2769,16 @@ class AppLocalizationsTt extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Акча калдыгын куегыз';
+
+  @override
+  String get portfolioDividendsExpected => 'Киләсе көтелгән';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Сез язган түләүләрнең даталары һәм суммалары буенча исәпләнгән; компанияләр аларны үзгәртә яки кичектерә ала.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'якынча $date';
+  }
 }

@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Wari gansan hakɛ",
   "portfolioCashHint": "Wari min ma don baara la i ka broker fɛ, wari suguya kelen-kelen na. A bɛ jate sɔngɔ bɛɛ lajɛlen ni tilacogo la; a tɛ jate tɔnɔ la.",
   "portfolioCashAmount": "Hakɛ ({currency})",
-  "portfolioCashEdit": "Wari gansan hakɛ sigi"
+  "portfolioCashEdit": "Wari gansan hakɛ sigi",
+  "portfolioDividendsExpected": "Nata minnu bɛ makɔnɔ",
+  "portfolioDividendsExpectedNote": "A jatebɔra sarali donw ni hakɛw kan, i ye minnu sɛbɛn; sosiyetew bɛ se k'u yɛlɛma walima k'u to yen.",
+  "portfolioDividendAround": "{date} ɲɔgɔn"
 }

@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Idrimen n ufus yellan",
   "portfolioCashHint": "Idrimen ur yettwasersen ara ɣer broker-ik, s yal tadrimt. Ttwaḥesben deg wazal amatu d beṭṭu; mačči deg ufaris.",
   "portfolioCashAmount": "Azal ({currency})",
-  "portfolioCashEdit": "Sbadu idrimen n ufus"
+  "portfolioCashEdit": "Sbadu idrimen n ufus",
+  "portfolioDividendsExpected": "Yettwaṛǧa ɣer zdat",
+  "portfolioDividendsExpectedNote": "Yettwaḥseb seg wazemzen d lemqadir n lexlaṣat i tjemɛeḍ; tkebbaniyin zemrent a ten-beddlent neɣ a ten-zeglent.",
+  "portfolioDividendAround": "azal n {date}"
 }

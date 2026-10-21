@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Käteissaldo",
   "portfolioCashHint": "Sijoittamaton raha välittäjälläsi, valuutoittain. Lasketaan kokonaisarvoon ja jakaumaan; ei tuottoon.",
   "portfolioCashAmount": "Summa ({currency})",
-  "portfolioCashEdit": "Aseta käteissaldo"
+  "portfolioCashEdit": "Aseta käteissaldo",
+  "portfolioDividendsExpected": "Odotettavissa seuraavaksi",
+  "portfolioDividendsExpectedNote": "Arvio kirjaamiesi maksujen päivistä ja summista; yhtiöt voivat muuttaa niitä tai jättää ne maksamatta.",
+  "portfolioDividendAround": "noin {date}"
 }

@@ -735,5 +735,8 @@
   "portfolioCashTitle": "የጥሬ ገንዘብ ሚዛን",
   "portfolioCashHint": "በደላላዎ ዘንድ ያለ ኢንቨስት ያልተደረገ ገንዘብ፣ በምንዛሪ። በጠቅላላ ዋጋ እና በድልድል ውስጥ ይቆጠራል፤ በተመላሽ ውስጥ አይቆጠርም።",
   "portfolioCashAmount": "መጠን ({currency})",
-  "portfolioCashEdit": "የጥሬ ገንዘብ ሚዛን አስቀምጥ"
+  "portfolioCashEdit": "የጥሬ ገንዘብ ሚዛን አስቀምጥ",
+  "portfolioDividendsExpected": "ቀጥሎ የሚጠበቅ",
+  "portfolioDividendsExpectedNote": "ከመዘገቡት ክፍያዎች ቀናትና መጠኖች የተገመተ ነው፤ ኩባንያዎች ሊለውጡት ወይም ሊያቋርጡት ይችላሉ።",
+  "portfolioDividendAround": "{date} አካባቢ"
 }

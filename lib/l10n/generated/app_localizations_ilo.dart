@@ -2791,4 +2791,16 @@ class AppLocalizationsIlo extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'I-set ti balanse ti cash';
+
+  @override
+  String get portfolioDividendsExpected => 'Manamnama a sumaruno';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Nakarkulado manipud kadagiti petsa ken gatad dagiti bayad nga inrekordmo; mabalin a baliwan wenno laktawan dagitoy dagiti kompania.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'agarup $date';
+  }
 }

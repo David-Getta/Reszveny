@@ -2781,4 +2781,16 @@ class AppLocalizationsCeb extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'I-set ang balanse sa cash';
+
+  @override
+  String get portfolioDividendsExpected => 'Gipaabot sunod';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Gibanabana gikan sa mga petsa ug kantidad sa mga bayad nga imong narekord; mahimong usbon o laktawan kini sa mga kompanya.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'mga $date';
+  }
 }

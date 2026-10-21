@@ -2779,4 +2779,16 @@ class AppLocalizationsHy extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Սահմանել կանխիկի մնացորդը';
+
+  @override
+  String get portfolioDividendsExpected => 'Սպասվում է հաջորդը';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Գնահատված է ձեր գրանցած վճարումների ամսաթվերից և գումարներից. ընկերությունները կարող են փոխել կամ բաց թողնել դրանք։';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'մոտ $date';
+  }
 }

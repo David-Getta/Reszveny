@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Saldo kas",
   "portfolioCashHint": "Uang yang belum diinvestasikan di broker Anda, per mata uang. Dihitung dalam nilai total dan alokasi; tidak dalam imbal hasil.",
   "portfolioCashAmount": "Jumlah ({currency})",
-  "portfolioCashEdit": "Atur saldo kas"
+  "portfolioCashEdit": "Atur saldo kas",
+  "portfolioDividendsExpected": "Diperkirakan berikutnya",
+  "portfolioDividendsExpectedNote": "Diperkirakan dari tanggal dan jumlah pembayaran yang Anda catat; perusahaan dapat mengubah atau melewatkannya.",
+  "portfolioDividendAround": "sekitar {date}"
 }

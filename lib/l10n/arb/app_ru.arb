@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Остаток денежных средств",
   "portfolioCashHint": "Неинвестированные деньги на брокерском счёте, по валютам. Учитываются в общей стоимости и структуре, но не в доходности.",
   "portfolioCashAmount": "Сумма ({currency})",
-  "portfolioCashEdit": "Указать остаток средств"
+  "portfolioCashEdit": "Указать остаток средств",
+  "portfolioDividendsExpected": "Ожидаются далее",
+  "portfolioDividendsExpectedNote": "Оценка по датам и суммам записанных вами выплат; компании могут изменить или отменить их.",
+  "portfolioDividendAround": "около {date}"
 }

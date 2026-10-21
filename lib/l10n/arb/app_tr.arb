@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Nakit bakiyesi",
   "portfolioCashHint": "Aracı kurumunuzdaki yatırılmamış para, para birimine göre. Toplam değere ve dağılıma dahildir; getiriye dahil değildir.",
   "portfolioCashAmount": "Tutar ({currency})",
-  "portfolioCashEdit": "Nakit bakiyesini ayarla"
+  "portfolioCashEdit": "Nakit bakiyesini ayarla",
+  "portfolioDividendsExpected": "Sıradaki beklenen",
+  "portfolioDividendsExpectedNote": "Kaydettiğiniz ödemelerin tarih ve tutarlarından tahmin edilmiştir; şirketler bunları değiştirebilir veya ödemeyebilir.",
+  "portfolioDividendAround": "{date} civarı"
 }

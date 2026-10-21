@@ -2769,4 +2769,16 @@ class AppLocalizationsAs extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'নগদ বেলেঞ্চ ছেট কৰক';
+
+  @override
+  String get portfolioDividendsExpected => 'পৰবৰ্তী প্ৰত্যাশিত';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'আপুনি লিপিবদ্ধ কৰা পৰিশোধৰ তাৰিখ আৰু পৰিমাণৰ পৰা অনুমান কৰা; কোম্পানীসমূহে ইয়াক সলনি কৰিব বা বাদ দিব পাৰে।';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'প্ৰায় $date';
+  }
 }

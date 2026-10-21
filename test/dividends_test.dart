@@ -3,6 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:reszveny/app.dart';
 import 'package:reszveny/core/share/share_text.dart';
+import 'package:reszveny/features/portfolio/dividend_forecast.dart';
 import 'package:reszveny/features/portfolio/portfolio_store.dart';
 
 import 'app_widget_test.dart' show services;
@@ -66,6 +67,78 @@ void main() {
     });
   });
 
+  group('expectedDividends', () {
+    DividendRecord rec(String sym, DateTime date, double amount, {String currency = 'USD'}) => DividendRecord(
+      id: '$sym-${date.toIso8601String()}-$amount',
+      symbol: sym,
+      amount: amount,
+      currency: currency,
+      date: date,
+    );
+    final now = DateTime(2026, 10, 21);
+
+    test(
+      'quarterly rhythm from the recorded payments: the next one is the last plus a quarter, with the last amount',
+      () {
+        final out = expectedDividends(
+          [
+            rec('AAPL', DateTime(2026, 2, 12), 2.4),
+            rec('AAPL', DateTime(2026, 5, 14), 2.5),
+            rec('AAPL', DateTime(2026, 8, 13), 2.6),
+            // Ugyanazon a napon két tétel (két bróker): egy kifizetés, együtt.
+            rec('AAPL', DateTime(2026, 8, 13), 0.4),
+          ],
+          ['AAPL'],
+          now: now,
+        );
+        expect(out, hasLength(1));
+        expect(out.single.symbol, 'AAPL');
+        expect(out.single.date, DateTime(2026, 8, 13).add(const Duration(days: 91)));
+        expect(out.single.amount, closeTo(3.0, 1e-9));
+        expect(out.single.periodDays, 91);
+      },
+    );
+
+    test('monthly, half-yearly and yearly rhythms; irregular or too sparse series give nothing', () {
+      expect(periodDaysFor(31), 30);
+      expect(periodDaysFor(182), 182);
+      expect(periodDaysFor(365), 365);
+      expect(periodDaysFor(10), isNull, reason: 'túl sűrű: nem rendszeres osztalék');
+      expect(periodDaysFor(700), isNull);
+      final monthly = expectedDividends(
+        [for (var m = 6; m <= 9; m++) rec('O', DateTime(2026, m, 15), 0.26)],
+        ['O'],
+        now: now,
+      );
+      expect(monthly.single.date, DateTime(2026, 9, 15).add(const Duration(days: 30)));
+    });
+
+    test('only held stocks, at least two dated payments, nothing long overdue or too far away; sorted by date', () {
+      final out = expectedDividends(
+        [
+          // Már nem birtokolt: kimarad.
+          rec('MSFT', DateTime(2026, 6, 11), 0.83),
+          rec('MSFT', DateTime(2026, 9, 10), 0.83),
+          // Egyetlen tétel: nincs ritmus.
+          rec('KO', DateTime(2026, 10, 1), 0.5),
+          // Régen esedékes lett volna (2026. jan. + 91 nap): valószínűleg nem lett rögzítve.
+          rec('XOM', DateTime(2025, 10, 10), 0.99),
+          rec('XOM', DateTime(2026, 1, 9), 0.99),
+          // Éves, 180 napon túl: még nem látszik.
+          rec('SAP', DateTime(2025, 5, 20), 20),
+          rec('SAP', DateTime(2026, 5, 19), 22),
+          rec('JNJ', DateTime(2026, 6, 9), 1.24),
+          rec('JNJ', DateTime(2026, 9, 8), 1.24),
+          rec('PEP', DateTime(2026, 6, 30), 1.42),
+          rec('PEP', DateTime(2026, 9, 30), 1.42),
+        ],
+        ['KO', 'XOM', 'SAP', 'JNJ', 'PEP'],
+        now: now,
+      );
+      expect(out.map((x) => x.symbol), ['JNJ', 'PEP']);
+    });
+  });
+
   testWidgets('dividends on the portfolio page: add by hand, totals, delete with undo; the stock page shows them', (
     tester,
   ) async {
@@ -85,6 +158,25 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text('Dividends received'), findsOneWidget);
     expect(find.text('2.50 USD'), findsNWidgets(2), reason: 'a tétel és az összes');
+    // Egy tételből nincs várható következő; két negyedéves tételből van.
+    expect(find.byKey(const ValueKey('dividend-expected-AAPL')), findsNothing);
+    final q = DateTime.now().subtract(const Duration(days: 40));
+    await s.portfolio.addDividend(symbol: 'AAPL', amount: 2.6, currency: 'USD', date: q);
+    await s.portfolio.addDividend(
+      symbol: 'AAPL',
+      amount: 2.5,
+      currency: 'USD',
+      date: q.subtract(const Duration(days: 91)),
+    );
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('dividend-expected-AAPL')), findsOneWidget);
+    expect(find.text('Expected next'), findsOneWidget);
+    expect(find.textContaining('~ 2.60 USD'), findsOneWidget);
+    await s.portfolio.removeDividend(s.portfolio.dividends.firstWhere((d) => d.amount == 2.6).id);
+    await s.portfolio.removeDividend(
+      s.portfolio.dividends.firstWhere((d) => d.amount == 2.5 && d.date == q.subtract(const Duration(days: 91))).id,
+    );
+    await tester.pumpAndSettle();
 
     // Kézi felvétel: az idei összeg és az összes is nő.
     await tester.tap(find.byKey(const ValueKey('dividend-add')));

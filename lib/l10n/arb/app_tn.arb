@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Madi a a setseng",
   "portfolioCashHint": "Madi a a sa beeletswang kwa go broker wa gago, ka mofuta wa madi. A balelwa mo bolengng jotlhe le mo kabong; e seng mo poelong.",
   "portfolioCashAmount": "Palo ({currency})",
-  "portfolioCashEdit": "Baya madi a a setseng"
+  "portfolioCashEdit": "Baya madi a a setseng",
+  "portfolioDividendsExpected": "Tse di latelang tse di lebeletsweng",
+  "portfolioDividendsExpectedNote": "Di fopholeditswe go tswa mo matlheng le madi a dituelo tse o di kwadileng; dikhampani di ka di fetola kgotsa tsa di tlola.",
+  "portfolioDividendAround": "mo e ka nnang {date}"
 }

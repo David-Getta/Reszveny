@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Kontantsaldo",
   "portfolioCashHint": "Oinvesterade pengar hos din mäklare, per valuta. Räknas med i totalt värde och fördelning, men inte i avkastningen.",
   "portfolioCashAmount": "Belopp ({currency})",
-  "portfolioCashEdit": "Ange kontantsaldo"
+  "portfolioCashEdit": "Ange kontantsaldo",
+  "portfolioDividendsExpected": "Väntas härnäst",
+  "portfolioDividendsExpectedNote": "Uppskattat utifrån datum och belopp för de utdelningar du registrerat; bolagen kan ändra eller slopa dem.",
+  "portfolioDividendAround": "omkring {date}"
 }

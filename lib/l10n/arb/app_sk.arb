@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Hotovostný zostatok",
   "portfolioCashHint": "Neinvestované peniaze u vášho brokera, podľa meny. Počítajú sa do celkovej hodnoty a rozloženia; nie do výnosu.",
   "portfolioCashAmount": "Suma ({currency})",
-  "portfolioCashEdit": "Nastaviť hotovostný zostatok"
+  "portfolioCashEdit": "Nastaviť hotovostný zostatok",
+  "portfolioDividendsExpected": "Ďalšie očakávané",
+  "portfolioDividendsExpectedNote": "Odhad podľa dátumov a súm výplat, ktoré ste zaznamenali; spoločnosti ich môžu zmeniť alebo vynechať.",
+  "portfolioDividendAround": "okolo {date}"
 }

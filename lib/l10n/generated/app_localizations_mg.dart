@@ -2789,4 +2789,16 @@ class AppLocalizationsMg extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Hametraka ny vola eo an-tanana';
+
+  @override
+  String get portfolioDividendsExpected => 'Andrasana manaraka';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Tombanana avy amin\'ny daty sy ny vola tamin\'ny fandoavana noraketinao; mety hanova na handingana azy ireo ny orinasa.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'manodidina ny $date';
+  }
 }

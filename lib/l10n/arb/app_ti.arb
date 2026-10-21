@@ -735,5 +735,8 @@
   "portfolioCashTitle": "ተረፍ ጥረ ገንዘብ",
   "portfolioCashHint": "ኣብ ብሮከርካ ዘሎ ዘይተወፈረ ገንዘብ፣ ብባጤራ። ኣብ ጠቕላላ ዋጋን ምምቕራሕን ይቑጸር፤ ኣብ ትርፊ ኣይቑጸርን።",
   "portfolioCashAmount": "መጠን ({currency})",
-  "portfolioCashEdit": "ተረፍ ጥረ ገንዘብ ኣቐምጥ"
+  "portfolioCashEdit": "ተረፍ ጥረ ገንዘብ ኣቐምጥ",
+  "portfolioDividendsExpected": "ቀጺሉ ዝተጸበ",
+  "portfolioDividendsExpectedNote": "ካብ ዕለታትን መጠንን ናይቶም ዝመዝገብካዮም ክፍሊታት ዝተገመተ፤ ኩባንያታት ክቕይርወን ወይ ክሓልፍወን ይኽእሉ።",
+  "portfolioDividendAround": "ኣብ ከባቢ {date}"
 }

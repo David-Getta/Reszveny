@@ -2778,4 +2778,16 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'ನಗದು ಬಾಕಿ ಹೊಂದಿಸಿ';
+
+  @override
+  String get portfolioDividendsExpected => 'ಮುಂದೆ ನಿರೀಕ್ಷಿತ';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'ನೀವು ದಾಖಲಿಸಿದ ಪಾವತಿಗಳ ದಿನಾಂಕ ಮತ್ತು ಮೊತ್ತಗಳಿಂದ ಅಂದಾಜಿಸಲಾಗಿದೆ; ಕಂಪನಿಗಳು ಇವನ್ನು ಬದಲಿಸಬಹುದು ಅಥವಾ ಬಿಟ್ಟುಬಿಡಬಹುದು.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'ಸುಮಾರು $date';
+  }
 }

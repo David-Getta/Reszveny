@@ -2777,4 +2777,16 @@ class AppLocalizationsSq extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Cakto gjendjen e parave të gatshme';
+
+  @override
+  String get portfolioDividendsExpected => 'Pritet më pas';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Vlerësuar nga datat dhe shumat e pagesave që regjistruat; kompanitë mund t\'i ndryshojnë ose t\'i anashkalojnë.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'rreth $date';
+  }
 }

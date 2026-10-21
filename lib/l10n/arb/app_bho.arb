@@ -735,5 +735,8 @@
   "portfolioCashTitle": "नकद बैलेंस",
   "portfolioCashHint": "रउआ ब्रोकर के लगे बिना निवेश वाला पइसा, मुद्रा के हिसाब से। ई कुल मूल्य आ बँटवारा में गिनल जाला; रिटर्न में ना।",
   "portfolioCashAmount": "रकम ({currency})",
-  "portfolioCashEdit": "नकद बैलेंस सेट करीं"
+  "portfolioCashEdit": "नकद बैलेंस सेट करीं",
+  "portfolioDividendsExpected": "अगिला अपेक्षित",
+  "portfolioDividendsExpectedNote": "रउआ दर्ज कइल भुगतान के तारीख आ रकम से अनुमान लगावल गइल; कंपनी एकरा के बदल सकेली भा छोड़ सकेली।",
+  "portfolioDividendAround": "लगभग {date}"
 }

@@ -2788,4 +2788,16 @@ class AppLocalizationsNso extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Beakanya tekanyo ya tšhelete';
+
+  @override
+  String get portfolioDividendsExpected => 'Tše di latelago tše di letetšwego';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Di akanyeditšwe go tšwa go matšatšikgwedi le ditšhelete tša ditefelo tše o di rekotilego; dikhamphani di ka di fetola goba tša di tlola.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'mo e ka bago $date';
+  }
 }

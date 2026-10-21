@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Hafaa maallaqaa",
   "portfolioCashHint": "Maallaqa brokera kee bira jiru kan invastii hin godhamne, akka gosa maallaqaatiin. Gatii waliigalaa fi qoqqoodinsa keessatti lakkaa'ama; bu'aa keessatti hin lakkaa'amu.",
   "portfolioCashAmount": "Hamma ({currency})",
-  "portfolioCashEdit": "Hafaa maallaqaa qindeessi"
+  "portfolioCashEdit": "Hafaa maallaqaa qindeessi",
+  "portfolioDividendsExpected": "Itti aanee eegamu",
+  "portfolioDividendsExpectedNote": "Guyyoota fi hamma kaffaltiiwwan ati galmeessiterraa tilmaamame; dhaabbileen jijjiiruu ykn dhiisuu ni danda'u.",
+  "portfolioDividendAround": "naannoo {date}"
 }

@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Saldo gotówkowe",
   "portfolioCashHint": "Niezainwestowane środki u brokera, według waluty. Wliczane do wartości łącznej i struktury, ale nie do stopy zwrotu.",
   "portfolioCashAmount": "Kwota ({currency})",
-  "portfolioCashEdit": "Ustaw saldo gotówkowe"
+  "portfolioCashEdit": "Ustaw saldo gotówkowe",
+  "portfolioDividendsExpected": "Następna spodziewana",
+  "portfolioDividendsExpectedNote": "Oszacowano na podstawie dat i kwot zapisanych wypłat; spółki mogą je zmienić lub pominąć.",
+  "portfolioDividendAround": "około {date}"
 }

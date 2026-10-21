@@ -2780,4 +2780,16 @@ class AppLocalizationsLg extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Teeka ensimbi enkalu eziriwo';
+
+  @override
+  String get portfolioDividendsExpected => 'Ezisuubirwa okuddako';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Zibalirirwa okuva ku nnaku n\'emiwendo gy\'ensasula ze wawandiika; kkampuni zisobola okuzikyusa oba okuzibuuka.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'awo nga $date';
+  }
 }

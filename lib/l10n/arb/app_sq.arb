@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Gjendja e parave të gatshme",
   "portfolioCashHint": "Para të painvestuara te brokeri juaj, sipas monedhës. Përfshihen në vlerën totale dhe shpërndarjen; jo në kthimin.",
   "portfolioCashAmount": "Shuma ({currency})",
-  "portfolioCashEdit": "Cakto gjendjen e parave të gatshme"
+  "portfolioCashEdit": "Cakto gjendjen e parave të gatshme",
+  "portfolioDividendsExpected": "Pritet më pas",
+  "portfolioDividendsExpectedNote": "Vlerësuar nga datat dhe shumat e pagesave që regjistruat; kompanitë mund t'i ndryshojnë ose t'i anashkalojnë.",
+  "portfolioDividendAround": "rreth {date}"
 }

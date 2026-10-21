@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Ndalama zotsala",
   "portfolioCashHint": "Ndalama zosayikidwa kwa broker wanu, malinga ndi mtundu wa ndalama. Zimawerengedwa mu mtengo wonse ndi kagawidwe; osati mu phindu.",
   "portfolioCashAmount": "Kuchuluka ({currency})",
-  "portfolioCashEdit": "Ikani ndalama zotsala"
+  "portfolioCashEdit": "Ikani ndalama zotsala",
+  "portfolioDividendsExpected": "Zikuyembekezeka kutsatira",
+  "portfolioDividendsExpectedNote": "Zoyerekezedwa kuchokera ku masiku ndi ndalama za malipiro omwe mudalemba; makampani akhoza kuwasintha kapena kuwadumpha.",
+  "portfolioDividendAround": "pafupifupi {date}"
 }

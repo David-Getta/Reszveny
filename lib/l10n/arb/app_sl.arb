@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Stanje gotovine",
   "portfolioCashHint": "Nenaloženi denar pri vašem borznem posredniku, po valutah. Šteje v skupno vrednost in razporeditev, ne pa v donos.",
   "portfolioCashAmount": "Znesek ({currency})",
-  "portfolioCashEdit": "Nastavi stanje gotovine"
+  "portfolioCashEdit": "Nastavi stanje gotovine",
+  "portfolioDividendsExpected": "Naslednje pričakovane",
+  "portfolioDividendsExpectedNote": "Ocenjeno iz datumov in zneskov izplačil, ki ste jih zabeležili; podjetja jih lahko spremenijo ali izpustijo.",
+  "portfolioDividendAround": "okoli {date}"
 }

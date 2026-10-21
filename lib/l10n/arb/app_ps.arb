@@ -735,5 +735,8 @@
   "portfolioCashTitle": "نغدي بیلانس",
   "portfolioCashHint": "ستاسو د بروکر سره پانګونه نه شوې پیسې، د اسعارو له مخې. دا په ټول ارزښت او وېش کې حسابېږي؛ په ګټه کې نه.",
   "portfolioCashAmount": "مقدار ({currency})",
-  "portfolioCashEdit": "نغدي بیلانس ټاکل"
+  "portfolioCashEdit": "نغدي بیلانس ټاکل",
+  "portfolioDividendsExpected": "راتلونکی تمه کېدونکی",
+  "portfolioDividendsExpectedNote": "ستاسو د ثبت شویو تادیاتو له نېټو او اندازو اټکل شوی؛ شرکتونه کولای شي دا بدل کړي یا پرېږدي.",
+  "portfolioDividendAround": "نږدې {date}"
 }

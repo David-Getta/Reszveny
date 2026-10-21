@@ -2782,4 +2782,16 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'പണ ബാലൻസ് സജ്ജമാക്കുക';
+
+  @override
+  String get portfolioDividendsExpected => 'അടുത്തത് പ്രതീക്ഷിക്കുന്നത്';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'നിങ്ങൾ രേഖപ്പെടുത്തിയ പേയ്‌മെന്റുകളുടെ തീയതികളും തുകകളും അടിസ്ഥാനമാക്കിയ കണക്കുകൂട്ടൽ; കമ്പനികൾ അവ മാറ്റുകയോ ഒഴിവാക്കുകയോ ചെയ്യാം.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'ഏകദേശം $date';
+  }
 }

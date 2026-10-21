@@ -2770,4 +2770,16 @@ class AppLocalizationsPcm extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Set cash balance';
+
+  @override
+  String get portfolioDividendsExpected => 'Wetin we expect next';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'We guess am from di dates and amounts of di payments you record; companies fit change am or skip am.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'around $date';
+  }
 }

@@ -2649,6 +2649,17 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => '设置现金余额';
+
+  @override
+  String get portfolioDividendsExpected => '预计下次';
+
+  @override
+  String get portfolioDividendsExpectedNote => '根据您记录的派息日期和金额估算；公司可能更改或取消派息。';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return '约 $date';
+  }
 }
 
 /// The translations for Chinese, as used in Hong Kong, using the Han script (`zh_Hant_HK`).
@@ -5294,4 +5305,15 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get portfolioCashEdit => '設定現金結餘';
+
+  @override
+  String get portfolioDividendsExpected => '預計下次';
+
+  @override
+  String get portfolioDividendsExpectedNote => '根據你記錄的派息日期和金額估算；公司可能更改或取消派息。';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return '約 $date';
+  }
 }

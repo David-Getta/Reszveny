@@ -2769,4 +2769,16 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'নগদ ব্যালেন্স সেট করুন';
+
+  @override
+  String get portfolioDividendsExpected => 'পরবর্তী প্রত্যাশিত';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'আপনার নথিভুক্ত পেমেন্টের তারিখ ও পরিমাণ থেকে অনুমান করা; কোম্পানি এগুলো বদলাতে বা বাদ দিতে পারে।';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'আনুমানিক $date';
+  }
 }

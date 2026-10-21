@@ -2761,4 +2761,16 @@ class AppLocalizationsMy extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'ငွေသား လက်ကျန် သတ်မှတ်ရန်';
+
+  @override
+  String get portfolioDividendsExpected => 'နောက်ထပ် မျှော်မှန်း';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'သင်မှတ်တမ်းတင်ထားသော ပေးချေမှုများ၏ ရက်စွဲနှင့် ပမာဏမှ ခန့်မှန်းထားသည်။ ကုမ္ပဏီများက ပြောင်းလဲနိုင် သို့မဟုတ် ချန်လှပ်နိုင်သည်။';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return '$date ခန့်';
+  }
 }

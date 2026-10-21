@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Нак акча калдыгы",
   "portfolioCashHint": "Брокериңиздеги салынбаган акча, валюта боюнча. Жалпы наркта жана бөлүштүрүүдө эсепке алынат; кирешелүүлүктө эсепке алынбайт.",
   "portfolioCashAmount": "Сумма ({currency})",
-  "portfolioCashEdit": "Нак акча калдыгын коюу"
+  "portfolioCashEdit": "Нак акча калдыгын коюу",
+  "portfolioDividendsExpected": "Кийинки күтүлгөн",
+  "portfolioDividendsExpectedNote": "Сиз жазган төлөмдөрдүн күндөрү менен суммалары боюнча болжолдонгон; компаниялар аларды өзгөртө же өткөрүп жибере алат.",
+  "portfolioDividendAround": "болжол менен {date}"
 }

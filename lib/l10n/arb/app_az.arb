@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Nağd qalıq",
   "portfolioCashHint": "Brokerinizdəki yatırılmamış pul, valyuta üzrə. Ümumi dəyərə və bölgüyə daxil edilir; gəlirliliyə daxil edilmir.",
   "portfolioCashAmount": "Məbləğ ({currency})",
-  "portfolioCashEdit": "Nağd qalığı təyin et"
+  "portfolioCashEdit": "Nağd qalığı təyin et",
+  "portfolioDividendsExpected": "Növbəti gözlənilən",
+  "portfolioDividendsExpectedNote": "Qeyd etdiyiniz ödənişlərin tarix və məbləğlərinə əsasən təxmin edilib; şirkətlər onları dəyişdirə və ya ödəməyə bilər.",
+  "portfolioDividendAround": "təxminən {date}"
 }

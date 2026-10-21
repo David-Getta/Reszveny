@@ -2841,4 +2841,16 @@ class AppLocalizationsLt extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Nustatyti grynųjų likutį';
+
+  @override
+  String get portfolioDividendsExpected => 'Kiti numatomi';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Įvertinta pagal jūsų įrašytų išmokų datas ir sumas; bendrovės gali jas pakeisti arba praleisti.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'apie $date';
+  }
 }

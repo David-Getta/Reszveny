@@ -2771,4 +2771,16 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Aseta käteissaldo';
+
+  @override
+  String get portfolioDividendsExpected => 'Odotettavissa seuraavaksi';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Arvio kirjaamiesi maksujen päivistä ja summista; yhtiöt voivat muuttaa niitä tai jättää ne maksamatta.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'noin $date';
+  }
 }

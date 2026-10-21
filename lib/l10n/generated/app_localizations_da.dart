@@ -2768,4 +2768,16 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Angiv kontantsaldo';
+
+  @override
+  String get portfolioDividendsExpected => 'Forventet næste';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Skønnet ud fra datoer og beløb på de udbetalinger, du har registreret; selskaber kan ændre eller springe dem over.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'omkring $date';
+  }
 }

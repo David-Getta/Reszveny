@@ -2818,4 +2818,16 @@ class AppLocalizationsSr extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Подеси стање готовине';
+
+  @override
+  String get portfolioDividendsExpected => 'Следеће очекиване';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Процењено на основу датума и износа исплата које сте евидентирали; компаније могу да их промене или изоставе.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'око $date';
+  }
 }

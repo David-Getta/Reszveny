@@ -735,5 +735,8 @@
   "portfolioCashTitle": "יתרת מזומן",
   "portfolioCashHint": "כסף שלא הושקע אצל הברוקר, לפי מטבע. נכלל בשווי הכולל ובפיזור; לא בתשואה.",
   "portfolioCashAmount": "סכום ({currency})",
-  "portfolioCashEdit": "הגדרת יתרת מזומן"
+  "portfolioCashEdit": "הגדרת יתרת מזומן",
+  "portfolioDividendsExpected": "צפוי בהמשך",
+  "portfolioDividendsExpectedNote": "הערכה על בסיס התאריכים והסכומים של התשלומים שרשמת; חברות עשויות לשנות או לדלג עליהם.",
+  "portfolioDividendAround": "בסביבות {date}"
 }

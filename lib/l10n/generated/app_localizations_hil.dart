@@ -2788,4 +2788,16 @@ class AppLocalizationsHil extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'I-set ang balanse sang cash';
+
+  @override
+  String get portfolioDividendsExpected => 'Ginapaabot nga masunod';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Ginbanta-banta halin sa mga petsa kag kantidad sang mga bayad nga narekord mo; mahimo ini bag-uhon ukon laktawan sang mga kompanya.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'mga $date';
+  }
 }

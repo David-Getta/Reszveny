@@ -2766,4 +2766,16 @@ class AppLocalizationsBho extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'नकद बैलेंस सेट करीं';
+
+  @override
+  String get portfolioDividendsExpected => 'अगिला अपेक्षित';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'रउआ दर्ज कइल भुगतान के तारीख आ रकम से अनुमान लगावल गइल; कंपनी एकरा के बदल सकेली भा छोड़ सकेली।';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'लगभग $date';
+  }
 }

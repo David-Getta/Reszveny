@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Mbongo ya maboko yina kele",
   "portfolioCashHint": "Mbongo yina nge me tula ve na mumbongo na broker na nge, na konso mbongo ya nsi. Yo ke tangwa na ntalu yawonso ti na nkabulu; yo ke tangwa ve na mbakulu.",
   "portfolioCashAmount": "Ntalu ({currency})",
-  "portfolioCashEdit": "Tula mbongo ya maboko"
+  "portfolioCashEdit": "Tula mbongo ya maboko",
+  "portfolioDividendsExpected": "Yina bo ke vingila na nima",
+  "portfolioDividendsExpectedNote": "Yo me tangwa na bilumbu ti mbongo ya bafutu ya nge me sonika; ba kompani lenda soba yo to kubika yo.",
+  "portfolioDividendAround": "penepene na {date}"
 }

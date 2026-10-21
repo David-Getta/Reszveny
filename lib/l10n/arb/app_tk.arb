@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Nagt pul galyndysy",
   "portfolioCashHint": "Brokeriňizdäki goýulmadyk pul, walýuta boýunça. Umumy gymmata we paýlanyşa goşulýar; girdejililige goşulmaýar.",
   "portfolioCashAmount": "Möçber ({currency})",
-  "portfolioCashEdit": "Nagt pul galyndysyny belle"
+  "portfolioCashEdit": "Nagt pul galyndysyny belle",
+  "portfolioDividendsExpected": "Indiki garaşylýan",
+  "portfolioDividendsExpectedNote": "Siziň ýazan tölegleriňiziň seneleri we möçberleri esasynda çaklanyldy; kompaniýalar olary üýtgedip ýa-da geçirmän bilerler.",
+  "portfolioDividendAround": "takmynan {date}"
 }

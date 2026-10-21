@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Saldo em caixa",
   "portfolioCashHint": "Dinheiro não investido na sua corretora, por moeda. Conta no valor total e na distribuição; não na rentabilidade.",
   "portfolioCashAmount": "Valor ({currency})",
-  "portfolioCashEdit": "Definir saldo em caixa"
+  "portfolioCashEdit": "Definir saldo em caixa",
+  "portfolioDividendsExpected": "Próximo esperado",
+  "portfolioDividendsExpectedNote": "Estimado a partir das datas e valores dos pagamentos que você registrou; as empresas podem alterá-los ou suspendê-los.",
+  "portfolioDividendAround": "por volta de {date}"
 }

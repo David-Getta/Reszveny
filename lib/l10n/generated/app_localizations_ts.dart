@@ -2789,4 +2789,16 @@ class AppLocalizationsTs extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Veka mali leyi saleke';
+
+  @override
+  String get portfolioDividendsExpected => 'Leti landzelaka leti languteriweke';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Ti ringanyetiwile ku suka eka masiku ni mali ya tihakelo leti u ti tsaleke; tikhampani ti nga ti cinca kumbe ti ti tlula.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'kwalomu ka $date';
+  }
 }

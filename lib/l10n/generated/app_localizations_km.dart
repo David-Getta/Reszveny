@@ -2749,4 +2749,16 @@ class AppLocalizationsKm extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'កំណត់សមតុល្យសាច់ប្រាក់';
+
+  @override
+  String get portfolioDividendsExpected => 'រំពឹងទុកបន្ទាប់';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'ប៉ាន់ស្មានពីកាលបរិច្ឆេទ និងចំនួនទឹកប្រាក់នៃការទូទាត់ដែលអ្នកបានកត់ត្រា; ក្រុមហ៊ុនអាចផ្លាស់ប្តូរ ឬរំលងវាបាន។';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'ប្រហែល $date';
+  }
 }

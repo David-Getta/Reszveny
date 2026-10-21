@@ -2775,4 +2775,16 @@ class AppLocalizationsHa extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Saita ma\'aunin tsabar kuɗi';
+
+  @override
+  String get portfolioDividendsExpected => 'Ana sa ran na gaba';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'An kiyasta daga ranaku da adadin biyan da ka rubuta; kamfanoni na iya canza su ko tsallake su.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'wajen $date';
+  }
 }

@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Balanse ti cash",
   "portfolioCashHint": "Kuarta a saan pay a naipuonan iti brokermo, iti tunggal currency. Maibilang daytoy iti dagup a pateg ken panangbingay; saan nga iti ganansia.",
   "portfolioCashAmount": "Gatad ({currency})",
-  "portfolioCashEdit": "I-set ti balanse ti cash"
+  "portfolioCashEdit": "I-set ti balanse ti cash",
+  "portfolioDividendsExpected": "Manamnama a sumaruno",
+  "portfolioDividendsExpectedNote": "Nakarkulado manipud kadagiti petsa ken gatad dagiti bayad nga inrekordmo; mabalin a baliwan wenno laktawan dagitoy dagiti kompania.",
+  "portfolioDividendAround": "agarup {date}"
 }

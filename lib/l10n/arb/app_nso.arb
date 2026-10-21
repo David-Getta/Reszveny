@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Tekanyo ya tšhelete",
   "portfolioCashHint": "Tšhelete yeo e sego ya beeletšwa go broker wa gago, go ya ka mohuta wa tšhelete. E balelwa ka bolengng ka moka le kabong; e sego ka poelong.",
   "portfolioCashAmount": "Palo ({currency})",
-  "portfolioCashEdit": "Beakanya tekanyo ya tšhelete"
+  "portfolioCashEdit": "Beakanya tekanyo ya tšhelete",
+  "portfolioDividendsExpected": "Tše di latelago tše di letetšwego",
+  "portfolioDividendsExpectedNote": "Di akanyeditšwe go tšwa go matšatšikgwedi le ditšhelete tša ditefelo tše o di rekotilego; dikhamphani di ka di fetola goba tša di tlola.",
+  "portfolioDividendAround": "mo e ka bago {date}"
 }

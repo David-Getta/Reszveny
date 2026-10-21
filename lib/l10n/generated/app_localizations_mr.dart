@@ -2770,4 +2770,16 @@ class AppLocalizationsMr extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'रोख शिल्लक सेट करा';
+
+  @override
+  String get portfolioDividendsExpected => 'पुढील अपेक्षित';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'तुम्ही नोंदवलेल्या पेमेंटच्या तारखा आणि रकमांवरून अंदाजित; कंपन्या ते बदलू किंवा वगळू शकतात.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return '$date च्या सुमारास';
+  }
 }

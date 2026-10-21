@@ -2772,4 +2772,16 @@ class AppLocalizationsTg extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Бақияи пули нақдро муқаррар кунед';
+
+  @override
+  String get portfolioDividendsExpected => 'Навбатии интизоршаванда';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Аз рӯи таърихҳо ва маблағҳои пардохтҳои сабткардаи шумо ҳисоб шудааст; ширкатҳо онҳоро тағйир додан ё нагузаронидан метавонанд.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'тақрибан $date';
+  }
 }

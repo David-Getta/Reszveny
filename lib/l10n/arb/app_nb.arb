@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Kontantbeholdning",
   "portfolioCashHint": "Uinvesterte penger hos megleren din, per valuta. Teller med i samlet verdi og fordeling, men ikke i avkastningen.",
   "portfolioCashAmount": "Beløp ({currency})",
-  "portfolioCashEdit": "Angi kontantbeholdning"
+  "portfolioCashEdit": "Angi kontantbeholdning",
+  "portfolioDividendsExpected": "Forventet neste",
+  "portfolioDividendsExpectedNote": "Anslått ut fra datoene og beløpene på utbyttene du har registrert; selskapene kan endre eller droppe dem.",
+  "portfolioDividendAround": "rundt {date}"
 }

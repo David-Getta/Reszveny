@@ -2844,4 +2844,16 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Указать остаток средств';
+
+  @override
+  String get portfolioDividendsExpected => 'Ожидаются далее';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Оценка по датам и суммам записанных вами выплат; компании могут изменить или отменить их.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'около $date';
+  }
 }

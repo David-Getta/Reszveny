@@ -2773,4 +2773,16 @@ class AppLocalizationsUg extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'نەق پۇل قالدۇقىنى تەڭشەش';
+
+  @override
+  String get portfolioDividendsExpected => 'كېيىنكى كۈتۈلگەن';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'سىز خاتىرىلىگەن تۆلەملەرنىڭ چېسلا ۋە سوممىسىدىن مۆلچەرلەنگەن؛ شىركەتلەر ئۇلارنى ئۆزگەرتىشى ياكى ئۆتكۈزۈۋېتىشى مۇمكىن.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'تەخمىنەن $date';
+  }
 }

@@ -2777,4 +2777,16 @@ class AppLocalizationsNy extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Ikani ndalama zotsala';
+
+  @override
+  String get portfolioDividendsExpected => 'Zikuyembekezeka kutsatira';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Zoyerekezedwa kuchokera ku masiku ndi ndalama za malipiro omwe mudalemba; makampani akhoza kuwasintha kapena kuwadumpha.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'pafupifupi $date';
+  }
 }

@@ -735,5 +735,8 @@
   "portfolioCashTitle": "नगद मौज्दात",
   "portfolioCashHint": "तपाईंको ब्रोकरमा रहेको लगानी नगरिएको रकम, मुद्राअनुसार। यो कुल मूल्य र बाँडफाँटमा गनिन्छ; प्रतिफलमा होइन।",
   "portfolioCashAmount": "रकम ({currency})",
-  "portfolioCashEdit": "नगद मौज्दात सेट गर्नुहोस्"
+  "portfolioCashEdit": "नगद मौज्दात सेट गर्नुहोस्",
+  "portfolioDividendsExpected": "अर्को अपेक्षित",
+  "portfolioDividendsExpectedNote": "तपाईंले रेकर्ड गरेका भुक्तानीका मिति र रकमका आधारमा अनुमानित; कम्पनीहरूले तिनलाई परिवर्तन गर्न वा छोड्न सक्छन्।",
+  "portfolioDividendAround": "{date} तिर"
 }

@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Cash balance",
   "portfolioCashHint": "Moni wey you no still invest for your broker, by currency. E dey count for total value and how e share; e no dey count for return.",
   "portfolioCashAmount": "Amount ({currency})",
-  "portfolioCashEdit": "Set cash balance"
+  "portfolioCashEdit": "Set cash balance",
+  "portfolioDividendsExpected": "Wetin we expect next",
+  "portfolioDividendsExpectedNote": "We guess am from di dates and amounts of di payments you record; companies fit change am or skip am.",
+  "portfolioDividendAround": "around {date}"
 }

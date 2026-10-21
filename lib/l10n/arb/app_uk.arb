@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Залишок коштів",
   "portfolioCashHint": "Неінвестовані гроші на брокерському рахунку, за валютами. Враховуються в загальній вартості та структурі, але не в дохідності.",
   "portfolioCashAmount": "Сума ({currency})",
-  "portfolioCashEdit": "Вказати залишок коштів"
+  "portfolioCashEdit": "Вказати залишок коштів",
+  "portfolioDividendsExpected": "Очікуються далі",
+  "portfolioDividendsExpectedNote": "Оцінка за датами та сумами записаних вами виплат; компанії можуть змінити або скасувати їх.",
+  "portfolioDividendAround": "близько {date}"
 }

@@ -2815,4 +2815,16 @@ class AppLocalizationsBs extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Postavi stanje gotovine';
+
+  @override
+  String get portfolioDividendsExpected => 'Očekivano sljedeće';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Procijenjeno iz datuma i iznosa isplata koje ste zabilježili; kompanije ih mogu promijeniti ili izostaviti.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'oko $date';
+  }
 }

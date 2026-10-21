@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Бэлэн мөнгөний үлдэгдэл",
   "portfolioCashHint": "Брокер дээрх хөрөнгө оруулаагүй мөнгө, валют тус бүрээр. Нийт үнэ цэнэ болон хуваарилалтад тооцогдоно; өгөөжид тооцогдохгүй.",
   "portfolioCashAmount": "Дүн ({currency})",
-  "portfolioCashEdit": "Бэлэн мөнгөний үлдэгдэл тохируулах"
+  "portfolioCashEdit": "Бэлэн мөнгөний үлдэгдэл тохируулах",
+  "portfolioDividendsExpected": "Дараагийн хүлээгдэж буй",
+  "portfolioDividendsExpectedNote": "Таны бүртгэсэн төлбөрүүдийн огноо, дүнгээс тооцоолсон; компаниуд өөрчлөх эсвэл алгасах боломжтой.",
+  "portfolioDividendAround": "{date} орчим"
 }

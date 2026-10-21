@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Sold de numerar",
   "portfolioCashHint": "Bani neinvestiți la brokerul tău, pe valute. Se includ în valoarea totală și în distribuție; nu în randament.",
   "portfolioCashAmount": "Sumă ({currency})",
-  "portfolioCashEdit": "Setează soldul de numerar"
+  "portfolioCashEdit": "Setează soldul de numerar",
+  "portfolioDividendsExpected": "Următoarea estimată",
+  "portfolioDividendsExpectedNote": "Estimat pe baza datelor și sumelor plăților înregistrate de tine; companiile le pot modifica sau omite.",
+  "portfolioDividendAround": "în jur de {date}"
 }

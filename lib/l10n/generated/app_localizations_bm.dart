@@ -2767,4 +2767,16 @@ class AppLocalizationsBm extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Wari gansan hakɛ sigi';
+
+  @override
+  String get portfolioDividendsExpected => 'Nata minnu bɛ makɔnɔ';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'A jatebɔra sarali donw ni hakɛw kan, i ye minnu sɛbɛn; sosiyetew bɛ se k\'u yɛlɛma walima k\'u to yen.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return '$date ɲɔgɔn';
+  }
 }

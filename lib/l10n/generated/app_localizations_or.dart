@@ -2768,4 +2768,16 @@ class AppLocalizationsOr extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'ନଗଦ ବାଲାନ୍ସ ସେଟ କରନ୍ତୁ';
+
+  @override
+  String get portfolioDividendsExpected => 'ପରବର୍ତ୍ତୀ ଆଶା କରାଯାଉଛି';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'ଆପଣ ରେକର୍ଡ କରିଥିବା ପେମେଣ୍ଟର ତାରିଖ ଓ ରାଶିରୁ ଆକଳନ କରାଯାଇଛି; କମ୍ପାନୀମାନେ ଏହାକୁ ବଦଳାଇ ପାରନ୍ତି କିମ୍ବା ଛାଡ଼ି ଦେଇ ପାରନ୍ତି।';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return '$date ପାଖାପାଖି';
+  }
 }

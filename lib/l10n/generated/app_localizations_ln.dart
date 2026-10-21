@@ -2781,4 +2781,16 @@ class AppLocalizationsLn extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Tiá mbɔngɔ ya mabɔkɔ';
+
+  @override
+  String get portfolioDividendsExpected => 'Ezelami na nsima';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Etangami na mikolo mpe na motango ya mbongo ya bafuti oyo okomaki; ba kompanyi ekoki kobongola yango to kotika yango.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'pene na $date';
+  }
 }

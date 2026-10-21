@@ -2785,4 +2785,16 @@ class AppLocalizationsQu extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Qullqi saldota churay';
+
+  @override
+  String get portfolioDividendsExpected => 'Qatiqnin suyasqa';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Qillqasqayki pagokunapa p\'unchawninkunamanta chaninkunamantawan yupasqa; empresakuna chaykunata tikrayta utaq saqiyta atinku.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'yaqa $date';
+  }
 }

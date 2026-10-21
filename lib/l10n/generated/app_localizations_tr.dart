@@ -2770,4 +2770,16 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Nakit bakiyesini ayarla';
+
+  @override
+  String get portfolioDividendsExpected => 'Sıradaki beklenen';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Kaydettiğiniz ödemelerin tarih ve tutarlarından tahmin edilmiştir; şirketler bunları değiştirebilir veya ödemeyebilir.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return '$date civarı';
+  }
 }

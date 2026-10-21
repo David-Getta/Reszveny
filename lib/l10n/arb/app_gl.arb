@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Saldo en efectivo",
   "portfolioCashHint": "Diñeiro non investido no teu bróker, por moeda. Conta no valor total e na distribución; non na rendibilidade.",
   "portfolioCashAmount": "Importe ({currency})",
-  "portfolioCashEdit": "Definir o saldo en efectivo"
+  "portfolioCashEdit": "Definir o saldo en efectivo",
+  "portfolioDividendsExpected": "Próximos previstos",
+  "portfolioDividendsExpectedNote": "Estimado a partir das datas e importes dos pagamentos que rexistraches; as empresas poden cambialos ou omitilos.",
+  "portfolioDividendAround": "arredor do {date}"
 }

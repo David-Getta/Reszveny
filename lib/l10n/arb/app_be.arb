@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Грашовы рэшт",
   "portfolioCashHint": "Неўкладзеныя грошы ў брокера, па валютах. Улічваюцца ў агульнай вартасці і размеркаванні; не ўлічваюцца ў даходнасці.",
   "portfolioCashAmount": "Сума ({currency})",
-  "portfolioCashEdit": "Задаць грашовы рэшт"
+  "portfolioCashEdit": "Задаць грашовы рэшт",
+  "portfolioDividendsExpected": "Чакаецца далей",
+  "portfolioDividendsExpectedNote": "Разлічана па датах і сумах запісаных вамі выплат; кампаніі могуць іх змяніць або прапусціць.",
+  "portfolioDividendAround": "прыкладна {date}"
 }

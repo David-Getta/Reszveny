@@ -5,6 +5,7 @@ import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 import 'add_lot_dialog.dart' show parseDecimal;
+import 'dividend_forecast.dart';
 import 'portfolio_store.dart';
 
 /// „Kapott osztalékok” kártya a portfólió oldalon: az idei és az összes kapott
@@ -17,6 +18,9 @@ class DividendsCard extends StatelessWidget {
   final String currency;
 
   static const maxListed = 8;
+
+  /// Legfeljebb ennyi várható kifizetés a listában.
+  static const maxExpected = 5;
 
   @override
   Widget build(BuildContext context) {
@@ -115,6 +119,43 @@ class DividendsCard extends StatelessWidget {
                       );
                     },
                   ),
+                  // Várható következő kifizetések a még birtokolt részvényekre, a rögzítettek ritmusából.
+                  if (expectedDividends(all, services.portfolio.positions.map((x) => x.symbol), now: DateTime.now())
+                      case final expected when expected.isNotEmpty) ...[
+                    const SizedBox(height: 10),
+                    Text(l10n.portfolioDividendsExpected, style: theme.textTheme.labelMedium?.copyWith(color: p.muted)),
+                    for (final x in expected.take(maxExpected))
+                      Padding(
+                        key: ValueKey('dividend-expected-${x.symbol}'),
+                        padding: const EdgeInsets.only(right: 8, top: 4),
+                        child: Row(
+                          children: [
+                            Expanded(
+                              child: Text.rich(
+                                TextSpan(
+                                  text: x.symbol,
+                                  style: const TextStyle(fontWeight: FontWeight.w600),
+                                  children: [
+                                    TextSpan(
+                                      text: '  ${l10n.portfolioDividendAround(fmt.date(x.date))}',
+                                      style: TextStyle(color: p.muted, fontWeight: FontWeight.normal),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Text('~ ${fmt.money(x.amount, x.currency)}', style: TextStyle(color: p.muted)),
+                          ],
+                        ),
+                      ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 8, top: 4),
+                      child: Text(
+                        l10n.portfolioDividendsExpectedNote,
+                        style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                      ),
+                    ),
+                  ],
                   const SizedBox(height: 8),
                   for (final d in all.take(maxListed))
                     Row(

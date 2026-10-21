@@ -735,5 +735,8 @@
   "portfolioCashTitle": "रोख शिल्लक",
   "portfolioCashHint": "तुमच्या ब्रोकरकडे असलेली गुंतवणूक न केलेली रक्कम, चलनानुसार. ती एकूण मूल्य आणि वाटणीत मोजली जाते; परताव्यात नाही.",
   "portfolioCashAmount": "रक्कम ({currency})",
-  "portfolioCashEdit": "रोख शिल्लक सेट करा"
+  "portfolioCashEdit": "रोख शिल्लक सेट करा",
+  "portfolioDividendsExpected": "पुढील अपेक्षित",
+  "portfolioDividendsExpectedNote": "तुम्ही नोंदवलेल्या पेमेंटच्या तारखा आणि रकमांवरून अंदाजित; कंपन्या ते बदलू किंवा वगळू शकतात.",
+  "portfolioDividendAround": "{date} च्या सुमारास"
 }

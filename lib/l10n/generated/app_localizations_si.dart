@@ -2767,4 +2767,16 @@ class AppLocalizationsSi extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'මුදල් ශේෂය සකසන්න';
+
+  @override
+  String get portfolioDividendsExpected => 'ඊළඟට අපේක්ෂිත';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'ඔබ සටහන් කළ ගෙවීම්වල දින සහ මුදල් මත ඇස්තමේන්තු කර ඇත; සමාගම් ඒවා වෙනස් කිරීමට හෝ මඟ හැරීමට හැකිය.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return '$date පමණ';
+  }
 }

@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Amafaranga asigaye",
   "portfolioCashHint": "Amafaranga ataratangwa mu gushora kwa broker wawe, ku bwoko bw'ifaranga. Aharurwa mu gaciro kose no mu gusaranganya; ntaharurwa mu nyungu.",
   "portfolioCashAmount": "Igitigiri ({currency})",
-  "portfolioCashEdit": "Shiraho amafaranga asigaye"
+  "portfolioCashEdit": "Shiraho amafaranga asigaye",
+  "portfolioDividendsExpected": "Ikurikira yitezwe",
+  "portfolioDividendsExpectedNote": "Biharuwe hisunzwe amatariki n'amafaranga y'ivyishurwa wanditse; amashirahamwe arashobora kubihindura canke kubireka.",
+  "portfolioDividendAround": "nko {date}"
 }

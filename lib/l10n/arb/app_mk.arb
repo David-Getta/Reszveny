@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Салдо во готовина",
   "portfolioCashHint": "Неинвестирани пари кај вашиот брокер, по валута. Се сметаат во вкупната вредност и распределбата; не во приносот.",
   "portfolioCashAmount": "Износ ({currency})",
-  "portfolioCashEdit": "Постави салдо во готовина"
+  "portfolioCashEdit": "Постави салдо во готовина",
+  "portfolioDividendsExpected": "Следна очекувана",
+  "portfolioDividendsExpectedNote": "Проценето од датумите и износите на исплатите што ги евидентиравте; компаниите можат да ги променат или прескокнат.",
+  "portfolioDividendAround": "околу {date}"
 }

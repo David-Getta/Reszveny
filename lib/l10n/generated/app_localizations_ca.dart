@@ -2779,4 +2779,16 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Definir el saldo en efectiu';
+
+  @override
+  String get portfolioDividendsExpected => 'Properes previstes';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Estimat a partir de les dates i els imports dels pagaments que has registrat; les empreses els poden canviar o ometre.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'cap al $date';
+  }
 }

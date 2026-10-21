@@ -2777,4 +2777,16 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Imposta saldo liquidità';
+
+  @override
+  String get portfolioDividendsExpected => 'Prossimi attesi';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Stima basata su date e importi dei pagamenti che hai registrato; le società possono modificarli o saltarli.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'intorno al $date';
+  }
 }

@@ -2740,4 +2740,16 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'ตั้งค่ายอดเงินสด';
+
+  @override
+  String get portfolioDividendsExpected => 'คาดว่าจะได้รับถัดไป';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'ประมาณจากวันที่และจำนวนเงินของการจ่ายที่คุณบันทึกไว้ บริษัทอาจเปลี่ยนแปลงหรืองดจ่ายได้';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'ประมาณ $date';
+  }
 }

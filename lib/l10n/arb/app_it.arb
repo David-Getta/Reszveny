@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Saldo liquidità",
   "portfolioCashHint": "Denaro non investito presso il tuo broker, per valuta. Conta nel valore totale e nella ripartizione; non nel rendimento.",
   "portfolioCashAmount": "Importo ({currency})",
-  "portfolioCashEdit": "Imposta saldo liquidità"
+  "portfolioCashEdit": "Imposta saldo liquidità",
+  "portfolioDividendsExpected": "Prossimi attesi",
+  "portfolioDividendsExpectedNote": "Stima basata su date e importi dei pagamenti che hai registrato; le società possono modificarli o saltarli.",
+  "portfolioDividendAround": "intorno al {date}"
 }

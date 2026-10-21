@@ -2743,4 +2743,16 @@ class AppLocalizationsLo extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'ຕັ້ງຍອດເງິນສົດ';
+
+  @override
+  String get portfolioDividendsExpected => 'ຄາດວ່າຈະໄດ້ຮັບຕໍ່ໄປ';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'ປະເມີນຈາກວັນທີ ແລະ ຈຳນວນເງິນຂອງການຈ່າຍທີ່ທ່ານບັນທຶກໄວ້; ບໍລິສັດອາດປ່ຽນແປງ ຫຼື ບໍ່ຈ່າຍກໍໄດ້.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'ປະມານ $date';
+  }
 }

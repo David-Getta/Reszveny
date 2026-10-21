@@ -2772,4 +2772,16 @@ class AppLocalizationsKi extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Iga mbeca cia moko';
+
+  @override
+  String get portfolioDividendsExpected => 'Ĩrĩa ĩrerĩgĩrĩirwo thutha';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Ĩtarĩtwo kuuma mĩthenya na mbeca cia marĩhi marĩa wandĩkire; kambuni no igarũre kana itige kũrĩha.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'hakuhĩ na $date';
+  }
 }

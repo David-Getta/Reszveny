@@ -2759,4 +2759,16 @@ class AppLocalizationsBo extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'དངུལ་རྐྱང་ལྷག་མ་སྒྲིག་པ';
+
+  @override
+  String get portfolioDividendsExpected => 'རྗེས་མར་རེ་བ་ཡོད་པ།';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'ཁྱེད་ཀྱིས་ཐོ་འགོད་བྱས་པའི་སྤྲོད་ཆའི་ཚེས་གྲངས་དང་གྲངས་ཚད་ལ་གཞིགས་པའི་ཚོད་དཔག་ཡིན། ཚོང་ལས་ཁང་གིས་བསྒྱུར་བཅོས་བྱེད་པའམ་མཆོངས་སྲིད།';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return '$date ཙམ་ལ།';
+  }
 }

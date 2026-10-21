@@ -2790,4 +2790,17 @@ class AppLocalizationsTn extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Baya madi a a setseng';
+
+  @override
+  String get portfolioDividendsExpected =>
+      'Tse di latelang tse di lebeletsweng';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Di fopholeditswe go tswa mo matlheng le madi a dituelo tse o di kwadileng; dikhampani di ka di fetola kgotsa tsa di tlola.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'mo e ka nnang $date';
+  }
 }

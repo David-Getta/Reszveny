@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Pirapire oĩva",
   "portfolioCashHint": "Pirapire noñemoĩva gueteri nde bróker-pe, moneda rupive. Ojepapa opaite hepykue ha ñembojaʼópe; rendimiento-pe nahániri.",
   "portfolioCashAmount": "Mboýpa ({currency})",
-  "portfolioCashEdit": "Emoĩ pirapire oĩva"
+  "portfolioCashEdit": "Emoĩ pirapire oĩva",
+  "portfolioDividendsExpected": "Oñeha'arõva upéi",
+  "portfolioDividendsExpectedNote": "Oñemoha'ã umi jehepyme'ẽ remboguapýva ára ha hepykuégui; umi empresa ikatu omoambue térã ohejarei.",
+  "portfolioDividendAround": "{date} rupi"
 }

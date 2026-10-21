@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Stanje gotovine",
   "portfolioCashHint": "Neuloženi novac kod vašeg brokera, po valutama. Računa se u ukupnu vrijednost i raspodjelu; ne u prinos.",
   "portfolioCashAmount": "Iznos ({currency})",
-  "portfolioCashEdit": "Postavi stanje gotovine"
+  "portfolioCashEdit": "Postavi stanje gotovine",
+  "portfolioDividendsExpected": "Očekivano sljedeće",
+  "portfolioDividendsExpectedNote": "Procijenjeno iz datuma i iznosa isplata koje ste zabilježili; kompanije ih mogu promijeniti ili izostaviti.",
+  "portfolioDividendAround": "oko {date}"
 }

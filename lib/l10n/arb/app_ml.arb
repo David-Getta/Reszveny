@@ -735,5 +735,8 @@
   "portfolioCashTitle": "പണ ബാലൻസ്",
   "portfolioCashHint": "നിങ്ങളുടെ ബ്രോക്കറുടെ അടുത്തുള്ള നിക്ഷേപിക്കാത്ത പണം, കറൻസി തിരിച്ച്. ഇത് ആകെ മൂല്യത്തിലും വിന്യാസത്തിലും കണക്കാക്കും; വരുമാനത്തിൽ ഉൾപ്പെടില്ല.",
   "portfolioCashAmount": "തുക ({currency})",
-  "portfolioCashEdit": "പണ ബാലൻസ് സജ്ജമാക്കുക"
+  "portfolioCashEdit": "പണ ബാലൻസ് സജ്ജമാക്കുക",
+  "portfolioDividendsExpected": "അടുത്തത് പ്രതീക്ഷിക്കുന്നത്",
+  "portfolioDividendsExpectedNote": "നിങ്ങൾ രേഖപ്പെടുത്തിയ പേയ്‌മെന്റുകളുടെ തീയതികളും തുകകളും അടിസ്ഥാനമാക്കിയ കണക്കുകൂട്ടൽ; കമ്പനികൾ അവ മാറ്റുകയോ ഒഴിവാക്കുകയോ ചെയ്യാം.",
+  "portfolioDividendAround": "ഏകദേശം {date}"
 }

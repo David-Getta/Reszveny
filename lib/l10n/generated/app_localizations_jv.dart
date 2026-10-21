@@ -2772,4 +2772,16 @@ class AppLocalizationsJv extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Setel saldo kas';
+
+  @override
+  String get portfolioDividendsExpected => 'Sing dikarepake sabanjuré';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Dikira-kira saka tanggal lan jumlah pembayaran sing sampeyan cathet; perusahaan bisa ngowahi utawa ora mbayar.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'kira-kira $date';
+  }
 }

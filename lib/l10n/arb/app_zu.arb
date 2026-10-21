@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Ibhalansi yemali",
   "portfolioCashHint": "Imali engatshaliwe kubroker wakho, ngohlobo lwemali. Ibalwa kunani eliphelele nasekwabiweni; hhayi kunzuzo.",
   "portfolioCashAmount": "Inani ({currency})",
-  "portfolioCashEdit": "Setha ibhalansi yemali"
+  "portfolioCashEdit": "Setha ibhalansi yemali",
+  "portfolioDividendsExpected": "Okulindelekile okulandelayo",
+  "portfolioDividendsExpectedNote": "Kulinganiselwe ezinsukwini nasemalini yezinkokhelo ozirekhodile; izinkampani zingazishintsha noma zizeqe.",
+  "portfolioDividendAround": "cishe ngo-{date}"
 }

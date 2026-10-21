@@ -2766,4 +2766,16 @@ class AppLocalizationsFa extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'تعیین موجودی نقد';
+
+  @override
+  String get portfolioDividendsExpected => 'مورد انتظار بعدی';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'برآوردشده از تاریخ‌ها و مبالغ پرداخت‌هایی که ثبت کرده‌اید؛ شرکت‌ها می‌توانند آن‌ها را تغییر دهند یا حذف کنند.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'حدود $date';
+  }
 }

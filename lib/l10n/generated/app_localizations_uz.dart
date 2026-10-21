@@ -2776,4 +2776,16 @@ class AppLocalizationsUz extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Naqd pul qoldigʻini belgilash';
+
+  @override
+  String get portfolioDividendsExpected => 'Keyingi kutilayotgan';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Siz yozgan toʻlovlarning sana va summalari asosida hisoblangan; kompaniyalar ularni oʻzgartirishi yoki toʻlamasligi mumkin.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'taxminan $date';
+  }
 }

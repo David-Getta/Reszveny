@@ -735,5 +735,8 @@
   "portfolioCashTitle": "现金余额",
   "portfolioCashHint": "券商账户中未投资的资金，按货币分列。计入总市值和配置，不计入收益。",
   "portfolioCashAmount": "金额 ({currency})",
-  "portfolioCashEdit": "设置现金余额"
+  "portfolioCashEdit": "设置现金余额",
+  "portfolioDividendsExpected": "预计下次",
+  "portfolioDividendsExpectedNote": "根据您记录的派息日期和金额估算；公司可能更改或取消派息。",
+  "portfolioDividendAround": "约 {date}"
 }

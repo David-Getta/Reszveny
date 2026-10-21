@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Ga si le asi ƒe home",
   "portfolioCashHint": "Ga si mède eme o, si le wò broker gbɔ, le ga ƒomevi ɖe sia ɖe nu. Wobua eŋu le asi blibo kple mama me; menye le viɖe me o.",
   "portfolioCashAmount": "Home xexlẽ ({currency})",
-  "portfolioCashEdit": "Ɖo ga si le asi ƒe home"
+  "portfolioCashEdit": "Ɖo ga si le asi ƒe home",
+  "portfolioDividendsExpected": "Esi wokpɔ mɔ na kplɔe ɖo",
+  "portfolioDividendsExpectedNote": "Wobu akɔnta tso ŋkeke kple ga home siwo nèŋlɔ ɖi le fexexeawo ŋu me; dɔwɔƒewo ate ŋu atrɔ wo alo agbe wo xexe.",
+  "portfolioDividendAround": "{date} lɔƒo"
 }

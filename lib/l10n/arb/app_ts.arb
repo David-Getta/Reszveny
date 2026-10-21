@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Mali leyi saleke",
   "portfolioCashHint": "Mali leyi nga vekisiwangiki eka broker wa wena, hi muxaka wa mali. Yi hlayiwa eka nkoka hinkwawo na ku avanyisa; ku nga ri eka mbuyelo.",
   "portfolioCashAmount": "Nhlayo ({currency})",
-  "portfolioCashEdit": "Veka mali leyi saleke"
+  "portfolioCashEdit": "Veka mali leyi saleke",
+  "portfolioDividendsExpected": "Leti landzelaka leti languteriweke",
+  "portfolioDividendsExpectedNote": "Ti ringanyetiwile ku suka eka masiku ni mali ya tihakelo leti u ti tsaleke; tikhampani ti nga ti cinca kumbe ti ti tlula.",
+  "portfolioDividendAround": "kwalomu ka {date}"
 }

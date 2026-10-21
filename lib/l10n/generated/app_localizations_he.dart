@@ -2764,4 +2764,16 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'הגדרת יתרת מזומן';
+
+  @override
+  String get portfolioDividendsExpected => 'צפוי בהמשך';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'הערכה על בסיס התאריכים והסכומים של התשלומים שרשמת; חברות עשויות לשנות או לדלג עליהם.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'בסביבות $date';
+  }
 }

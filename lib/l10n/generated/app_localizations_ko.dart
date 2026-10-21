@@ -2698,4 +2698,16 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => '현금 잔고 설정';
+
+  @override
+  String get portfolioDividendsExpected => '다음 예상';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      '기록한 배당금의 지급일과 금액으로 추정한 값입니다. 기업이 변경하거나 지급하지 않을 수 있습니다.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return '$date 무렵';
+  }
 }

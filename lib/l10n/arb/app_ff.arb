@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Keddiiɗum kaalis",
   "portfolioCashHint": "Kaalis mo waɗaaka e njulaagu to broker maa, e kala ceede. Ina limee e kuuɓal njaru e peccugol; wonaa e nafoore.",
   "portfolioCashAmount": "Limoore ({currency})",
-  "portfolioCashEdit": "Teelto keddiiɗum kaalis"
+  "portfolioCashEdit": "Teelto keddiiɗum kaalis",
+  "portfolioDividendsExpected": "Ko habbaa rewde",
+  "portfolioDividendsExpectedNote": "Hiisaama e ñalɗi e keeweendi yoɓdiiji ɗi winnduɗaa; sosiyeteeji ina mbaawi waylude ɗum walla ɗalde ɗum.",
+  "portfolioDividendAround": "hedde {date}"
 }

@@ -2771,4 +2771,16 @@ class AppLocalizationsKa extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'ნაღდი ფულის ნაშთის მითითება';
+
+  @override
+  String get portfolioDividendsExpected => 'მოსალოდნელი შემდეგი';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'შეფასებულია თქვენ მიერ ჩაწერილი გადახდების თარიღებისა და თანხების მიხედვით; კომპანიებმა შეიძლება შეცვალონ ან გამოტოვონ ისინი.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'დაახლოებით $date';
+  }
 }

@@ -735,5 +735,8 @@
   "portfolioCashTitle": "नकद बैलेंस",
   "portfolioCashHint": "आपके ब्रोकर के पास बिना निवेश किया पैसा, मुद्रा के अनुसार। यह कुल मूल्य और आवंटन में गिना जाता है; रिटर्न में नहीं।",
   "portfolioCashAmount": "राशि ({currency})",
-  "portfolioCashEdit": "नकद बैलेंस सेट करें"
+  "portfolioCashEdit": "नकद बैलेंस सेट करें",
+  "portfolioDividendsExpected": "अगला अपेक्षित",
+  "portfolioDividendsExpectedNote": "आपके दर्ज किए गए भुगतानों की तारीखों और राशियों से अनुमानित; कंपनियाँ इन्हें बदल या छोड़ सकती हैं।",
+  "portfolioDividendAround": "लगभग {date}"
 }

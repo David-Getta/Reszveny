@@ -2768,4 +2768,16 @@ class AppLocalizationsKab extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Sbadu idrimen n ufus';
+
+  @override
+  String get portfolioDividendsExpected => 'Yettwaṛǧa ɣer zdat';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Yettwaḥseb seg wazemzen d lemqadir n lexlaṣat i tjemɛeḍ; tkebbaniyin zemrent a ten-beddlent neɣ a ten-zeglent.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'azal n $date';
+  }
 }

@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Mari yasara",
   "portfolioCashHint": "Mari isina kuiswa kuna broker wako, nerudzi rwemari. Inoverengwa mukukosha kwese nemukugoverwa; kwete mupundutso.",
   "portfolioCashAmount": "Huwandu ({currency})",
-  "portfolioCashEdit": "Isa mari yasara"
+  "portfolioCashEdit": "Isa mari yasara",
+  "portfolioDividendsExpected": "Zvinotarisirwa zvinotevera",
+  "portfolioDividendsExpectedNote": "Zvakafungidzirwa kubva pamazuva nemari yemibhadharo yawakanyora; makambani anogona kuzvichinja kana kuzvisiya.",
+  "portfolioDividendAround": "panenge {date}"
 }

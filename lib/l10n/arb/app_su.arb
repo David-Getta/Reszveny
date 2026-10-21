@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Saldo tunai",
   "portfolioCashHint": "Artos anu teu acan diinvestasikeun di broker anjeun, dumasar mata uang. Diitung dina total nilai sareng alokasi; henteu dina hasil.",
   "portfolioCashAmount": "Jumlah ({currency})",
-  "portfolioCashEdit": "Setel saldo tunai"
+  "portfolioCashEdit": "Setel saldo tunai",
+  "portfolioDividendsExpected": "Diperkirakeun salajengna",
+  "portfolioDividendsExpectedNote": "Diperkirakeun tina tanggal sareng jumlah pamayaran anu anjeun catet; pausahaan tiasa ngarobih atanapi ngaliwatanana.",
+  "portfolioDividendAround": "kira-kira {date}"
 }

@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Kontantsaldo",
   "portfolioCashHint": "Onbelegde geld by jou makelaar, per geldeenheid. Dit tel in die totale waarde en die toewysing; nie in die opbrengs nie.",
   "portfolioCashAmount": "Bedrag ({currency})",
-  "portfolioCashEdit": "Stel kontantsaldo in"
+  "portfolioCashEdit": "Stel kontantsaldo in",
+  "portfolioDividendsExpected": "Volgende verwag",
+  "portfolioDividendsExpectedNote": "Geskat uit die datums en bedrae van die betalings wat jy aangeteken het; maatskappye kan dit verander of oorslaan.",
+  "portfolioDividendAround": "ongeveer {date}"
 }

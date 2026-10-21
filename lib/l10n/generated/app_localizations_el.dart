@@ -2779,4 +2779,16 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Ορισμός υπολοίπου μετρητών';
+
+  @override
+  String get portfolioDividendsExpected => 'Επόμενα αναμενόμενα';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Εκτίμηση από τις ημερομηνίες και τα ποσά των πληρωμών που καταγράψατε· οι εταιρείες μπορεί να τα αλλάξουν ή να τα παραλείψουν.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'γύρω στις $date';
+  }
 }

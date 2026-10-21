@@ -2779,4 +2779,16 @@ class AppLocalizationsSo extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Deji haraaga lacagta';
+
+  @override
+  String get portfolioDividendsExpected => 'Kuwa xiga ee la filayo';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Waxaa lagu qiyaasay taariikhaha iyo lacagaha bixinnada aad diiwaangelisay; shirkaduhu way beddeli karaan ama ka boodi karaan.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'qiyaastii $date';
+  }
 }

@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Mfranga ya mu bianza idiku",
   "portfolioCashHint": "Mfranga iudi kuyi muteke mu mushinga kudi broker webe, ku mfranga yonso. Idi ibadibua mu mushinga wonso ne mu diabanya; kayi mu dipeta.",
   "portfolioCashAmount": "Bungi ({currency})",
-  "portfolioCashEdit": "Teka mfranga ya mu bianza"
+  "portfolioCashEdit": "Teka mfranga ya mu bianza",
+  "portfolioDividendsExpected": "Idi mitekemene kulonda",
+  "portfolioDividendsExpectedNote": "Mbabala bilondeshile matuku ne bungi bua difuta diwakafunda; ba kompanyi badi mua kushintulula anyi kubenga.",
+  "portfolioDividendAround": "pabuipi ne {date}"
 }

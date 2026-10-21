@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Қолма-қол қаражат қалдығы",
   "portfolioCashHint": "Брокеріңіздегі салынбаған қаражат, валюта бойынша. Жалпы құн мен құрылымда есептеледі; кірістілікте есептелмейді.",
   "portfolioCashAmount": "Сома ({currency})",
-  "portfolioCashEdit": "Қолма-қол қалдықты орнату"
+  "portfolioCashEdit": "Қолма-қол қалдықты орнату",
+  "portfolioDividendsExpected": "Келесі күтілетін",
+  "portfolioDividendsExpectedNote": "Сіз жазған төлемдердің күндері мен сомалары бойынша бағаланған; компаниялар оларды өзгерте немесе өткізіп жібере алады.",
+  "portfolioDividendAround": "шамамен {date}"
 }

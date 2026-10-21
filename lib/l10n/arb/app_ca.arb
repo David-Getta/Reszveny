@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Saldo en efectiu",
   "portfolioCashHint": "Diners no invertits al teu bròquer, per moneda. Compta en el valor total i la distribució; no en la rendibilitat.",
   "portfolioCashAmount": "Import ({currency})",
-  "portfolioCashEdit": "Definir el saldo en efectiu"
+  "portfolioCashEdit": "Definir el saldo en efectiu",
+  "portfolioDividendsExpected": "Properes previstes",
+  "portfolioDividendsExpectedNote": "Estimat a partir de les dates i els imports dels pagaments que has registrat; les empreses els poden canviar o ometre.",
+  "portfolioDividendAround": "cap al {date}"
 }

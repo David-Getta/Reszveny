@@ -2775,4 +2775,16 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Készpénz-egyenleg megadása';
+
+  @override
+  String get portfolioDividendsExpected => 'Várható következő';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'A rögzített kifizetések dátumaiból és összegeiből becsülve; a cégek változtathatnak rajta, vagy ki is hagyhatják.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return '$date körül';
+  }
 }

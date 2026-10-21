@@ -735,5 +735,8 @@
   "portfolioCashTitle": "ரொக்க இருப்பு",
   "portfolioCashHint": "உங்கள் புரோக்கரிடம் முதலீடு செய்யப்படாத பணம், நாணயம் வாரியாக. இது மொத்த மதிப்பு மற்றும் பங்கீட்டில் கணக்கிடப்படும்; வருவாயில் இல்லை.",
   "portfolioCashAmount": "தொகை ({currency})",
-  "portfolioCashEdit": "ரொக்க இருப்பை அமைக்கவும்"
+  "portfolioCashEdit": "ரொக்க இருப்பை அமைக்கவும்",
+  "portfolioDividendsExpected": "அடுத்து எதிர்பார்ப்பது",
+  "portfolioDividendsExpectedNote": "நீங்கள் பதிவு செய்த செலுத்தல்களின் தேதிகள் மற்றும் தொகைகளிலிருந்து மதிப்பிடப்பட்டது; நிறுவனங்கள் அவற்றை மாற்றலாம் அல்லது தவிர்க்கலாம்.",
+  "portfolioDividendAround": "{date} அளவில்"
 }

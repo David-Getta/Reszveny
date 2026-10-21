@@ -2786,4 +2786,16 @@ class AppLocalizationsSt extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Beha chelete e setseng';
+
+  @override
+  String get portfolioDividendsExpected => 'Tse latelang tse lebelletsweng';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Di hakanyeditswe ho tswa ho matsatsi le ditjhelete tsa ditefo tseo o di tlalehileng; dik\'hamphani di ka di fetola kapa tsa di tlola.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'hoo e ka bang $date';
+  }
 }

@@ -735,5 +735,8 @@
   "portfolioCashTitle": "રોકડ બેલેન્સ",
   "portfolioCashHint": "તમારા બ્રોકર પાસે રોકાણ ન કરેલા પૈસા, ચલણ પ્રમાણે. તે કુલ મૂલ્ય અને ફાળવણીમાં ગણાય છે; રિટર્નમાં નહીં.",
   "portfolioCashAmount": "રકમ ({currency})",
-  "portfolioCashEdit": "રોકડ બેલેન્સ સેટ કરો"
+  "portfolioCashEdit": "રોકડ બેલેન્સ સેટ કરો",
+  "portfolioDividendsExpected": "આગામી અપેક્ષિત",
+  "portfolioDividendsExpectedNote": "તમે નોંધેલી ચુકવણીઓની તારીખો અને રકમો પરથી અંદાજિત; કંપનીઓ તેમાં ફેરફાર કરી શકે અથવા છોડી શકે છે.",
+  "portfolioDividendAround": "અંદાજે {date}"
 }

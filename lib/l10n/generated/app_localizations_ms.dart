@@ -2775,4 +2775,16 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Tetapkan baki tunai';
+
+  @override
+  String get portfolioDividendsExpected => 'Dijangka seterusnya';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Dianggarkan daripada tarikh dan jumlah pembayaran yang anda rekodkan; syarikat boleh mengubah atau melangkaunya.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'sekitar $date';
+  }
 }

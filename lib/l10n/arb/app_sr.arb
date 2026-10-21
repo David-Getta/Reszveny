@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Стање готовине",
   "portfolioCashHint": "Неуложен новац код вашег брокера, по валутама. Рачуна се у укупну вредност и расподелу; не у принос.",
   "portfolioCashAmount": "Износ ({currency})",
-  "portfolioCashEdit": "Подеси стање готовине"
+  "portfolioCashEdit": "Подеси стање готовине",
+  "portfolioDividendsExpected": "Следеће очекиване",
+  "portfolioDividendsExpectedNote": "Процењено на основу датума и износа исплата које сте евидентирали; компаније могу да их промене или изоставе.",
+  "portfolioDividendAround": "око {date}"
 }

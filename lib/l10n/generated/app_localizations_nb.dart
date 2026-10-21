@@ -2770,4 +2770,16 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Angi kontantbeholdning';
+
+  @override
+  String get portfolioDividendsExpected => 'Forventet neste';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Anslått ut fra datoene og beløpene på utbyttene du har registrert; selskapene kan endre eller droppe dem.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'rundt $date';
+  }
 }

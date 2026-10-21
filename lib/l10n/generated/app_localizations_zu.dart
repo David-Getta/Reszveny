@@ -2781,4 +2781,16 @@ class AppLocalizationsZu extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Setha ibhalansi yemali';
+
+  @override
+  String get portfolioDividendsExpected => 'Okulindelekile okulandelayo';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Kulinganiselwe ezinsukwini nasemalini yezinkokhelo ozirekhodile; izinkampani zingazishintsha noma zizeqe.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'cishe ngo-$date';
+  }
 }

@@ -4752,6 +4752,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Set cash balance'**
   String get portfolioCashEdit;
+
+  /// Heading in the dividends card: the next dividend payment expected per stock, estimated from the recorded payments.
+  ///
+  /// In en, this message translates to:
+  /// **'Expected next'**
+  String get portfolioDividendsExpected;
+
+  /// No description provided for @portfolioDividendsExpectedNote.
+  ///
+  /// In en, this message translates to:
+  /// **'Estimated from the dates and amounts of the payments you recorded; companies can change or skip them.'**
+  String get portfolioDividendsExpectedNote;
+
+  /// When the next dividend is expected; {date} is a formatted date.
+  ///
+  /// In en, this message translates to:
+  /// **'around {date}'**
+  String portfolioDividendAround(String date);
 }
 
 class _AppLocalizationsDelegate

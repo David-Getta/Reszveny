@@ -2780,4 +2780,16 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'ரொக்க இருப்பை அமைக்கவும்';
+
+  @override
+  String get portfolioDividendsExpected => 'அடுத்து எதிர்பார்ப்பது';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'நீங்கள் பதிவு செய்த செலுத்தல்களின் தேதிகள் மற்றும் தொகைகளிலிருந்து மதிப்பிடப்பட்டது; நிறுவனங்கள் அவற்றை மாற்றலாம் அல்லது தவிர்க்கலாம்.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return '$date அளவில்';
+  }
 }

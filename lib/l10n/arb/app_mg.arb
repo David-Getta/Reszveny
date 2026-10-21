@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Vola eo an-tanana",
   "portfolioCashHint": "Vola tsy mbola napetraka any amin'ny brokera-nao, isaky ny karazam-bola. Isaina ao amin'ny fitambaran'ny sanda sy ny fizarana; tsy isaina ao amin'ny tombony.",
   "portfolioCashAmount": "Habetsahana ({currency})",
-  "portfolioCashEdit": "Hametraka ny vola eo an-tanana"
+  "portfolioCashEdit": "Hametraka ny vola eo an-tanana",
+  "portfolioDividendsExpected": "Andrasana manaraka",
+  "portfolioDividendsExpectedNote": "Tombanana avy amin'ny daty sy ny vola tamin'ny fandoavana noraketinao; mety hanova na handingana azy ireo ny orinasa.",
+  "portfolioDividendAround": "manodidina ny {date}"
 }

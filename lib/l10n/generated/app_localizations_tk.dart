@@ -2771,4 +2771,16 @@ class AppLocalizationsTk extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Nagt pul galyndysyny belle';
+
+  @override
+  String get portfolioDividendsExpected => 'Indiki garaşylýan';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Siziň ýazan tölegleriňiziň seneleri we möçberleri esasynda çaklanyldy; kompaniýalar olary üýtgedip ýa-da geçirmän bilerler.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'takmynan $date';
+  }
 }

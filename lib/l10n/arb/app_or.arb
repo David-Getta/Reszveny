@@ -735,5 +735,8 @@
   "portfolioCashTitle": "ନଗଦ ବାଲାନ୍ସ",
   "portfolioCashHint": "ଆପଣଙ୍କ ବ୍ରୋକର ନିକଟରେ ଥିବା ନିବେଶ ହୋଇନଥିବା ଅର୍ଥ, ମୁଦ୍ରା ଅନୁସାରେ। ଏହା ମୋଟ ମୂଲ୍ୟ ଏବଂ ବଣ୍ଟନରେ ଗଣନା ହୁଏ; ରିଟର୍ନରେ ନୁହେଁ।",
   "portfolioCashAmount": "ରାଶି ({currency})",
-  "portfolioCashEdit": "ନଗଦ ବାଲାନ୍ସ ସେଟ କରନ୍ତୁ"
+  "portfolioCashEdit": "ନଗଦ ବାଲାନ୍ସ ସେଟ କରନ୍ତୁ",
+  "portfolioDividendsExpected": "ପରବର୍ତ୍ତୀ ଆଶା କରାଯାଉଛି",
+  "portfolioDividendsExpectedNote": "ଆପଣ ରେକର୍ଡ କରିଥିବା ପେମେଣ୍ଟର ତାରିଖ ଓ ରାଶିରୁ ଆକଳନ କରାଯାଇଛି; କମ୍ପାନୀମାନେ ଏହାକୁ ବଦଳାଇ ପାରନ୍ତି କିମ୍ବା ଛାଡ଼ି ଦେଇ ପାରନ୍ତି।",
+  "portfolioDividendAround": "{date} ପାଖାପାଖି"
 }

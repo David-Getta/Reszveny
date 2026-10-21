@@ -2765,4 +2765,16 @@ class AppLocalizationsWo extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Tëral xaalis bi des';
+
+  @override
+  String get portfolioDividendsExpected => 'Li ñuy xaar ci kanam';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Ñu xayma ko ci bés yi ak xaalis yi ci fey yi nga bind; ay kompañi mën nañu koy soppi walla ñu bàyyi ko.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'lu tollu ci $date';
+  }
 }

@@ -735,5 +735,8 @@
   "portfolioCashTitle": "ನಗದು ಬಾಕಿ",
   "portfolioCashHint": "ನಿಮ್ಮ ಬ್ರೋಕರ್ ಬಳಿ ಹೂಡಿಕೆ ಮಾಡದ ಹಣ, ಕರೆನ್ಸಿ ಪ್ರಕಾರ. ಇದು ಒಟ್ಟು ಮೌಲ್ಯ ಮತ್ತು ಹಂಚಿಕೆಯಲ್ಲಿ ಎಣಿಕೆಯಾಗುತ್ತದೆ; ರಿಟರ್ನ್‌ನಲ್ಲಿ ಅಲ್ಲ.",
   "portfolioCashAmount": "ಮೊತ್ತ ({currency})",
-  "portfolioCashEdit": "ನಗದು ಬಾಕಿ ಹೊಂದಿಸಿ"
+  "portfolioCashEdit": "ನಗದು ಬಾಕಿ ಹೊಂದಿಸಿ",
+  "portfolioDividendsExpected": "ಮುಂದೆ ನಿರೀಕ್ಷಿತ",
+  "portfolioDividendsExpectedNote": "ನೀವು ದಾಖಲಿಸಿದ ಪಾವತಿಗಳ ದಿನಾಂಕ ಮತ್ತು ಮೊತ್ತಗಳಿಂದ ಅಂದಾಜಿಸಲಾಗಿದೆ; ಕಂಪನಿಗಳು ಇವನ್ನು ಬದಲಿಸಬಹುದು ಅಥವಾ ಬಿಟ್ಟುಬಿಡಬಹುದು.",
+  "portfolioDividendAround": "ಸುಮಾರು {date}"
 }

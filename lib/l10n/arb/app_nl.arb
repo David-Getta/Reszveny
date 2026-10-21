@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Cashsaldo",
   "portfolioCashHint": "Niet-belegd geld bij je broker, per valuta. Telt mee in de totale waarde en de verdeling, niet in het rendement.",
   "portfolioCashAmount": "Bedrag ({currency})",
-  "portfolioCashEdit": "Cashsaldo instellen"
+  "portfolioCashEdit": "Cashsaldo instellen",
+  "portfolioDividendsExpected": "Volgende verwacht",
+  "portfolioDividendsExpectedNote": "Geschat op basis van de datums en bedragen van de uitkeringen die je hebt vastgelegd; bedrijven kunnen ze wijzigen of overslaan.",
+  "portfolioDividendAround": "rond {date}"
 }

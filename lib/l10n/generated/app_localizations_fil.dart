@@ -2777,4 +2777,16 @@ class AppLocalizationsFil extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Itakda ang cash balance';
+
+  @override
+  String get portfolioDividendsExpected => 'Inaasahang susunod';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Tinantiya mula sa mga petsa at halaga ng mga bayad na itinala mo; maaaring baguhin o laktawan ito ng mga kumpanya.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'bandang $date';
+  }
 }

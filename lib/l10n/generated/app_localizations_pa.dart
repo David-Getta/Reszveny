@@ -2766,4 +2766,16 @@ class AppLocalizationsPa extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'ਨਕਦ ਬਕਾਇਆ ਸੈੱਟ ਕਰੋ';
+
+  @override
+  String get portfolioDividendsExpected => 'ਅਗਲਾ ਸੰਭਾਵਿਤ';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'ਤੁਹਾਡੀਆਂ ਦਰਜ ਕੀਤੀਆਂ ਅਦਾਇਗੀਆਂ ਦੀਆਂ ਤਾਰੀਖਾਂ ਅਤੇ ਰਕਮਾਂ ਤੋਂ ਅੰਦਾਜ਼ਾ; ਕੰਪਨੀਆਂ ਇਨ੍ਹਾਂ ਨੂੰ ਬਦਲ ਜਾਂ ਛੱਡ ਸਕਦੀਆਂ ਹਨ।';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return '$date ਦੇ ਆਸ-ਪਾਸ';
+  }
 }

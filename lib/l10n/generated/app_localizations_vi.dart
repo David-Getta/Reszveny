@@ -2763,4 +2763,16 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get portfolioCashEdit => 'Đặt số dư tiền mặt';
+
+  @override
+  String get portfolioDividendsExpected => 'Dự kiến sắp tới';
+
+  @override
+  String get portfolioDividendsExpectedNote =>
+      'Ước tính từ ngày và số tiền của các khoản chi trả bạn đã ghi lại; công ty có thể thay đổi hoặc bỏ qua.';
+
+  @override
+  String portfolioDividendAround(String date) {
+    return 'khoảng $date';
+  }
 }

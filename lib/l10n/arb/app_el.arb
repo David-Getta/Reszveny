@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Υπόλοιπο μετρητών",
   "portfolioCashHint": "Μη επενδυμένα χρήματα στον χρηματιστή σας, ανά νόμισμα. Μετρούν στη συνολική αξία και στην κατανομή· όχι στην απόδοση.",
   "portfolioCashAmount": "Ποσό ({currency})",
-  "portfolioCashEdit": "Ορισμός υπολοίπου μετρητών"
+  "portfolioCashEdit": "Ορισμός υπολοίπου μετρητών",
+  "portfolioDividendsExpected": "Επόμενα αναμενόμενα",
+  "portfolioDividendsExpectedNote": "Εκτίμηση από τις ημερομηνίες και τα ποσά των πληρωμών που καταγράψατε· οι εταιρείες μπορεί να τα αλλάξουν ή να τα παραλείψουν.",
+  "portfolioDividendAround": "γύρω στις {date}"
 }

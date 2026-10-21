@@ -2366,6 +2366,20 @@
     }
   },
   "portfolioCashEdit": "Set cash balance",
+  "portfolioDividendsExpected": "Expected next",
+  "@portfolioDividendsExpected": {
+    "description": "Heading in the dividends card: the next dividend payment expected per stock, estimated from the recorded payments."
+  },
+  "portfolioDividendsExpectedNote": "Estimated from the dates and amounts of the payments you recorded; companies can change or skip them.",
+  "portfolioDividendAround": "around {date}",
+  "@portfolioDividendAround": {
+    "description": "When the next dividend is expected; {date} is a formatted date.",
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
   "@portfolioCashEdit": {
     "description": "Button that opens the cash-balance dialog (portfolio page menu)."
   }

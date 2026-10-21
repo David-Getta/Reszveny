@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Акча калдыгы",
   "portfolioCashHint": "Брокерыгыздагы салынмаган акча, валюта буенча. Гомуми кыйммәткә һәм бүленешкә исәпләнә; керемлелеккә исәпләнми.",
   "portfolioCashAmount": "Сумма ({currency})",
-  "portfolioCashEdit": "Акча калдыгын куегыз"
+  "portfolioCashEdit": "Акча калдыгын куегыз",
+  "portfolioDividendsExpected": "Киләсе көтелгән",
+  "portfolioDividendsExpectedNote": "Сез язган түләүләрнең даталары һәм суммалары буенча исәпләнгән; компанияләр аларны үзгәртә яки кичектерә ала.",
+  "portfolioDividendAround": "якынча {date}"
 }

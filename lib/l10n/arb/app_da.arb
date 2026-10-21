@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Kontantsaldo",
   "portfolioCashHint": "Ikke-investerede penge hos din mægler, pr. valuta. Tæller med i den samlede værdi og fordelingen; ikke i afkastet.",
   "portfolioCashAmount": "Beløb ({currency})",
-  "portfolioCashEdit": "Angiv kontantsaldo"
+  "portfolioCashEdit": "Angiv kontantsaldo",
+  "portfolioDividendsExpected": "Forventet næste",
+  "portfolioDividendsExpectedNote": "Skønnet ud fra datoer og beløb på de udbetalinger, du har registreret; selskaber kan ændre eller springe dem over.",
+  "portfolioDividendAround": "omkring {date}"
 }

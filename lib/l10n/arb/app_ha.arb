@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Ma'aunin tsabar kuɗi",
   "portfolioCashHint": "Kuɗin da ba a zuba ba a wurin dillalinku, bisa nau'in kuɗi. Ana ƙidaya shi a jimillar ƙima da rabon kaso; ba a riba ba.",
   "portfolioCashAmount": "Adadi ({currency})",
-  "portfolioCashEdit": "Saita ma'aunin tsabar kuɗi"
+  "portfolioCashEdit": "Saita ma'aunin tsabar kuɗi",
+  "portfolioDividendsExpected": "Ana sa ran na gaba",
+  "portfolioDividendsExpectedNote": "An kiyasta daga ranaku da adadin biyan da ka rubuta; kamfanoni na iya canza su ko tsallake su.",
+  "portfolioDividendAround": "wajen {date}"
 }

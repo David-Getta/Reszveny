@@ -735,5 +735,8 @@
   "portfolioCashTitle": "ยอดเงินสด",
   "portfolioCashHint": "เงินที่ยังไม่ได้ลงทุนในบัญชีโบรกเกอร์ของคุณ แยกตามสกุลเงิน นับรวมในมูลค่ารวมและสัดส่วนการลงทุน แต่ไม่นับในผลตอบแทน",
   "portfolioCashAmount": "จำนวนเงิน ({currency})",
-  "portfolioCashEdit": "ตั้งค่ายอดเงินสด"
+  "portfolioCashEdit": "ตั้งค่ายอดเงินสด",
+  "portfolioDividendsExpected": "คาดว่าจะได้รับถัดไป",
+  "portfolioDividendsExpectedNote": "ประมาณจากวันที่และจำนวนเงินของการจ่ายที่คุณบันทึกไว้ บริษัทอาจเปลี่ยนแปลงหรืองดจ่ายได้",
+  "portfolioDividendAround": "ประมาณ {date}"
 }

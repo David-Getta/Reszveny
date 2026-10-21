@@ -735,5 +735,8 @@
   "portfolioCashTitle": "Ligd sẽn ket",
   "portfolioCashHint": "Ligd sẽn ka kẽes f broker nengẽ, ligd buud fãa. B geelg-a-la yõod fãa la pʋɩɩbo pʋgẽ; la ka nafa pʋgẽ ye.",
   "portfolioCashAmount": "Ligd sõor ({currency})",
-  "portfolioCashEdit": "Ning ligd sẽn ket"
+  "portfolioCashEdit": "Ning ligd sẽn ket",
+  "portfolioDividendsExpected": "Sẽn gũud tɩ wa",
+  "portfolioDividendsExpectedNote": "B geelg-a-la ne f sẽn gʋls yaoodã raya la a ligdã; kompaniirã tõe n toeem-a bɩ b ka yao ye.",
+  "portfolioDividendAround": "sẽn kolg {date}"
 }
