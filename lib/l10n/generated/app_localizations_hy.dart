@@ -2322,6 +2322,9 @@ class AppLocalizationsHy extends AppLocalizations {
   String get allocationCurrencies => 'Արժույթներ';
 
   @override
+  String get allocationAccounts => 'Հաշիվներ';
+
+  @override
   String get compareReturn1y => '1 տարվա եկամտաբերություն';
 
   @override

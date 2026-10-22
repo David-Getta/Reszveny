@@ -2320,6 +2320,9 @@ class AppLocalizationsHa extends AppLocalizations {
   String get allocationCurrencies => 'Kuɗaɗe';
 
   @override
+  String get allocationAccounts => 'Asusu';
+
+  @override
   String get compareReturn1y => 'Riba ta shekara 1';
 
   @override

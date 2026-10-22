@@ -2316,6 +2316,9 @@ class AppLocalizationsKi extends AppLocalizations {
   String get allocationCurrencies => 'Mbeca';
 
   @override
+  String get allocationAccounts => 'Akaũnti';
+
+  @override
   String get compareReturn1y => 'Uumithio wa mwaka 1';
 
   @override

@@ -2331,6 +2331,9 @@ class AppLocalizationsNso extends AppLocalizations {
   String get allocationCurrencies => 'Ditšhelete';
 
   @override
+  String get allocationAccounts => 'Diakhaonto';
+
+  @override
   String get compareReturn1y => 'Poelo ya ngwaga o 1';
 
   @override

@@ -2380,6 +2380,9 @@ class AppLocalizationsUk extends AppLocalizations {
   String get allocationCurrencies => 'Валюти';
 
   @override
+  String get allocationAccounts => 'Рахунки';
+
+  @override
   String get compareReturn1y => 'Дохідність за 1 рік';
 
   @override

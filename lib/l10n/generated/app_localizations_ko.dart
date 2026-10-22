@@ -2246,6 +2246,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get allocationCurrencies => '통화';
 
   @override
+  String get allocationAccounts => '계좌';
+
+  @override
   String get compareReturn1y => '1년 수익률';
 
   @override

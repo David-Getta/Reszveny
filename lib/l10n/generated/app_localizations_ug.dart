@@ -2318,6 +2318,9 @@ class AppLocalizationsUg extends AppLocalizations {
   String get allocationCurrencies => 'پۇللار';
 
   @override
+  String get allocationAccounts => 'ھېساباتلار';
+
+  @override
   String get compareReturn1y => '1 يىللىق پايدا';
 
   @override

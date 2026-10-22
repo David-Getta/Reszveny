@@ -2315,6 +2315,9 @@ class AppLocalizationsTr extends AppLocalizations {
   String get allocationCurrencies => 'Dövizler';
 
   @override
+  String get allocationAccounts => 'Hesaplar';
+
+  @override
   String get compareReturn1y => '1 yıllık getiri';
 
   @override

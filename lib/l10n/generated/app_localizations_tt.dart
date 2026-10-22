@@ -2312,6 +2312,9 @@ class AppLocalizationsTt extends AppLocalizations {
   String get allocationCurrencies => 'Валюталар';
 
   @override
+  String get allocationAccounts => 'Хисаплар';
+
+  @override
   String get compareReturn1y => '1 еллык табышлылык';
 
   @override

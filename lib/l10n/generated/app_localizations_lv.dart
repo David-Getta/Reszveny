@@ -2355,6 +2355,9 @@ class AppLocalizationsLv extends AppLocalizations {
   String get allocationCurrencies => 'Valūtas';
 
   @override
+  String get allocationAccounts => 'Konti';
+
+  @override
   String get compareReturn1y => '1 gada ienesīgums';
 
   @override

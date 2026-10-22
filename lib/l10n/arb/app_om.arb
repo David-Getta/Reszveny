@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Herrega ibsi",
   "portfolioAccountsAll": "Herregoota hunda",
   "portfolioAccountNote": "Bittaa fi gurgurtaa herrega kanaa qofa. Maallaqni callaa fi diviidendiin \"Herregoota hunda\" jalatti mul'atu.",
-  "portfolioNoAccount": "Herrega malee"
+  "portfolioNoAccount": "Herrega malee",
+  "allocationAccounts": "Herregoota"
 }

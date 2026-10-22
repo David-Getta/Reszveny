@@ -2316,6 +2316,9 @@ class AppLocalizationsKa extends AppLocalizations {
   String get allocationCurrencies => 'ვალუტები';
 
   @override
+  String get allocationAccounts => 'ანგარიშები';
+
+  @override
   String get compareReturn1y => '1-წლიანი შემოსავლიანობა';
 
   @override

@@ -2328,6 +2328,9 @@ class AppLocalizationsLg extends AppLocalizations {
   String get allocationCurrencies => 'Ensimbi';
 
   @override
+  String get allocationAccounts => 'Akawunti';
+
+  @override
   String get compareReturn1y => 'Amagoba g\'omwaka 1';
 
   @override

@@ -2364,6 +2364,9 @@ class AppLocalizationsAr extends AppLocalizations {
   String get allocationCurrencies => 'العملات';
 
   @override
+  String get allocationAccounts => 'الحسابات';
+
+  @override
   String get compareReturn1y => 'العائد خلال سنة';
 
   @override

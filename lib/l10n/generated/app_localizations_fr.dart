@@ -2326,6 +2326,9 @@ class AppLocalizationsFr extends AppLocalizations {
   String get allocationCurrencies => 'Devises';
 
   @override
+  String get allocationAccounts => 'Comptes';
+
+  @override
   String get compareReturn1y => 'Rendement sur 1 an';
 
   @override

@@ -2307,6 +2307,9 @@ class AppLocalizationsPs extends AppLocalizations {
   String get allocationCurrencies => 'اسعار';
 
   @override
+  String get allocationAccounts => 'حسابونه';
+
+  @override
   String get compareReturn1y => 'د 1 کال عاید';
 
   @override

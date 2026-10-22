@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Podaj rachunek",
   "portfolioAccountsAll": "Wszystkie rachunki",
   "portfolioAccountNote": "Tylko transakcje tego rachunku. Gotówkę i dywidendy zobaczysz po wybraniu „Wszystkie rachunki”.",
-  "portfolioNoAccount": "Bez rachunku"
+  "portfolioNoAccount": "Bez rachunku",
+  "allocationAccounts": "Rachunki"
 }

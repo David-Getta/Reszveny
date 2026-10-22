@@ -2325,6 +2325,9 @@ class AppLocalizationsOm extends AppLocalizations {
   String get allocationCurrencies => 'Maallaqa';
 
   @override
+  String get allocationAccounts => 'Herregoota';
+
+  @override
   String get compareReturn1y => 'Bu\'aa waggaa 1';
 
   @override

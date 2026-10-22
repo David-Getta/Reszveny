@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "اکاؤنٹ بتائیں",
   "portfolioAccountsAll": "تمام اکاؤنٹس",
   "portfolioAccountNote": "صرف اس اکاؤنٹ کے لین دین۔ نقد اور ڈیویڈنڈ ”تمام اکاؤنٹس“ کے تحت دکھائے جاتے ہیں۔",
-  "portfolioNoAccount": "بغیر اکاؤنٹ"
+  "portfolioNoAccount": "بغیر اکاؤنٹ",
+  "allocationAccounts": "اکاؤنٹس"
 }

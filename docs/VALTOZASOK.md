@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.185)
+# Változásjegyzék (0.2.130 → 0.2.186)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -46,6 +46,7 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - A FIFO a „Minden számla” nézetben is számlánként fut (egyik számla eladása nem fogyasztja a másik vételeit); eladáskor
   a birtokló számlák közül választható, honnan; a realizált nyereség CSV-je számla-oszlopot kap; a kis- és nagybetű
   eltérése nem nyit új számlát; a számlát nem ismerő régebbi app szinkronja nem törli a számlákat.
+- **Megoszlás számlák szerint**: a megoszlás-kártyán új „Számlák” nézet (pl. TBSZ 2026 32% · Normál 68%).
 
 ## Készpénz
 

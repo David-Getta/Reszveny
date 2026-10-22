@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Пазначыць рахунак",
   "portfolioAccountsAll": "Усе рахункі",
   "portfolioAccountNote": "Толькі аперацыі гэтага рахунку. Грошы і дывідэнды паказваюцца ў раздзеле «Усе рахункі».",
-  "portfolioNoAccount": "Без рахунку"
+  "portfolioNoAccount": "Без рахунку",
+  "allocationAccounts": "Рахункі"
 }

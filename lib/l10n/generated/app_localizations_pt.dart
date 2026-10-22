@@ -2321,6 +2321,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get allocationCurrencies => 'Moedas';
 
   @override
+  String get allocationAccounts => 'Contas';
+
+  @override
   String get compareReturn1y => 'Retorno em 1 ano';
 
   @override

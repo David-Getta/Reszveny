@@ -2323,6 +2323,9 @@ class AppLocalizationsLua extends AppLocalizations {
   String get allocationCurrencies => 'Mfranga';
 
   @override
+  String get allocationAccounts => 'Konte';
+
+  @override
   String get compareReturn1y => 'Diakalenga dia tshidimu 1';
 
   @override

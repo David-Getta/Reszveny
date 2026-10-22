@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Specifică un cont",
   "portfolioAccountsAll": "Toate conturile",
   "portfolioAccountNote": "Doar tranzacțiile acestui cont. Numerarul și dividendele apar la Toate conturile.",
-  "portfolioNoAccount": "Fără cont"
+  "portfolioNoAccount": "Fără cont",
+  "allocationAccounts": "Conturi"
 }

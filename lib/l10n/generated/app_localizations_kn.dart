@@ -2321,6 +2321,9 @@ class AppLocalizationsKn extends AppLocalizations {
   String get allocationCurrencies => 'ಕರೆನ್ಸಿಗಳು';
 
   @override
+  String get allocationAccounts => 'ಖಾತೆಗಳು';
+
+  @override
   String get compareReturn1y => '1 ವರ್ಷದ ಆದಾಯ';
 
   @override

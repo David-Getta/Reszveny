@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "ගිණුමක් සඳහන් කරන්න",
   "portfolioAccountsAll": "සියලු ගිණුම්",
   "portfolioAccountNote": "මෙම ගිණුමේ ගනුදෙනු පමණි. මුදල් සහ ලාභාංශ 'සියලු ගිණුම්' යටතේ පෙන්වයි.",
-  "portfolioNoAccount": "ගිණුමක් නැත"
+  "portfolioNoAccount": "ගිණුමක් නැත",
+  "allocationAccounts": "ගිණුම්"
 }

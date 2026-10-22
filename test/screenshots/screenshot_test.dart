@@ -794,6 +794,21 @@ void main() {
     await pumpApp(tester, s, const Size(430, 1000));
     await tester.tap(find.text('Portfólió').last);
     await tester.pumpAndSettle();
+    // Előbb a megoszlás számlák szerint (Minden számla nézetben)…
+    final segment = find.text('Számlák');
+    await tester.ensureVisible(find.byKey(const ValueKey('allocation-by')));
+    await tester.pumpAndSettle();
+    await tester.drag(find.byKey(const ValueKey('allocation-by')), const Offset(-300, 0));
+    await tester.pumpAndSettle();
+    await tester.tap(segment);
+    await tester.pumpAndSettle();
+    // A kártya címe is látsszon.
+    await tester.drag(find.byType(Scrollable).first, const Offset(0, 260));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'portfolio_allocation_accounts_phone_hu');
+    // …aztán a TBSZ-számla nézete.
+    await tester.drag(find.byType(Scrollable).first, const Offset(0, 3000));
+    await tester.pumpAndSettle();
     await tester.tap(find.byKey(const ValueKey('account-TBSZ 2026')));
     await tester.pumpAndSettle();
     await _shot(tester, 'portfolio_account_phone_hu');

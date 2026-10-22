@@ -2320,6 +2320,9 @@ class AppLocalizationsGn extends AppLocalizations {
   String get allocationCurrencies => 'Pirapire';
 
   @override
+  String get allocationAccounts => 'Cuentakuéra';
+
+  @override
   String get compareReturn1y => 'Ary 1 ganancia';
 
   @override

@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Londa akawunti",
   "portfolioAccountsAll": "Akawunti zonna",
   "portfolioAccountNote": "Bye wagula ne bye watunda ku akawunti eno byokka. Ensimbi enkalu ne dividendi biragibwa wansi wa Akawunti zonna.",
-  "portfolioNoAccount": "Tewali akawunti"
+  "portfolioNoAccount": "Tewali akawunti",
+  "allocationAccounts": "Akawunti"
 }

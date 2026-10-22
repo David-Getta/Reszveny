@@ -2323,6 +2323,9 @@ class AppLocalizationsSo extends AppLocalizations {
   String get allocationCurrencies => 'Lacagaha';
 
   @override
+  String get allocationAccounts => 'Akoonnada';
+
+  @override
   String get compareReturn1y => 'Faa\'iidada 1 sano';
 
   @override

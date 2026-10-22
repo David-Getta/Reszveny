@@ -2317,6 +2317,9 @@ class AppLocalizationsFi extends AppLocalizations {
   String get allocationCurrencies => 'Valuutat';
 
   @override
+  String get allocationAccounts => 'Tilit';
+
+  @override
   String get compareReturn1y => '1 vuoden tuotto';
 
   @override

@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Данс заах",
   "portfolioAccountsAll": "Бүх данс",
   "portfolioAccountNote": "Зөвхөн энэ дансны гүйлгээ. Бэлэн мөнгө болон ногдол ашгийг «Бүх данс» хэсэгт харуулна.",
-  "portfolioNoAccount": "Дансгүй"
+  "portfolioNoAccount": "Дансгүй",
+  "allocationAccounts": "Данс"
 }

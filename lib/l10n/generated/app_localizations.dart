@@ -4063,6 +4063,12 @@ abstract class AppLocalizations {
   /// **'Currencies'**
   String get allocationCurrencies;
 
+  /// Segment of the portfolio allocation card: split the portfolio by brokerage account (e.g. TBSZ, regular). Short, like the other segments (Positions, Sectors, Countries, Currencies).
+  ///
+  /// In en, this message translates to:
+  /// **'Accounts'**
+  String get allocationAccounts;
+
   /// Row label in the stock comparison table: price change over the last year.
   ///
   /// In en, this message translates to:

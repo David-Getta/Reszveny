@@ -2320,6 +2320,9 @@ class AppLocalizationsEe extends AppLocalizations {
   String get allocationCurrencies => 'Ga ƒomeviwo';
 
   @override
+  String get allocationAccounts => 'Akɔntawo';
+
+  @override
   String get compareReturn1y => 'Ƒe 1 ƒe viɖe';
 
   @override

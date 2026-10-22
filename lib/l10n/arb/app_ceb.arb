@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Ibutang ang account",
   "portfolioAccountsAll": "Tanang account",
   "portfolioAccountNote": "Mga transaksyon lang niini nga account. Ang cash ug dibidendo makita sa Tanang account.",
-  "portfolioNoAccount": "Walay account"
+  "portfolioNoAccount": "Walay account",
+  "allocationAccounts": "Mga account"
 }

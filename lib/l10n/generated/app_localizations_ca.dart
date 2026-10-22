@@ -2325,6 +2325,9 @@ class AppLocalizationsCa extends AppLocalizations {
   String get allocationCurrencies => 'Divises';
 
   @override
+  String get allocationAccounts => 'Comptes';
+
+  @override
   String get compareReturn1y => 'Rendiment a 1 any';
 
   @override

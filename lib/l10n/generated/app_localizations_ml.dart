@@ -2324,6 +2324,9 @@ class AppLocalizationsMl extends AppLocalizations {
   String get allocationCurrencies => 'കറൻസികൾ';
 
   @override
+  String get allocationAccounts => 'അക്കൗണ്ടുകൾ';
+
+  @override
   String get compareReturn1y => '1 വർഷത്തെ റിട്ടേൺ';
 
   @override

@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "ລະບຸບັນຊີ",
   "portfolioAccountsAll": "ທຸກບັນຊີ",
   "portfolioAccountNote": "ສະເພາະທຸລະກຳຂອງບັນຊີນີ້. ເງິນສົດ ແລະ ເງິນປັນຜົນສະແດງຢູ່ໃນ “ທຸກບັນຊີ”.",
-  "portfolioNoAccount": "ບໍ່ມີບັນຊີ"
+  "portfolioNoAccount": "ບໍ່ມີບັນຊີ",
+  "allocationAccounts": "ບັນຊີ"
 }

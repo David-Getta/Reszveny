@@ -358,7 +358,7 @@ class _PortfolioBody extends StatelessWidget {
                 ),
                 // A célarányok az egész portfólióra szólnak: számla-nézetben nincs újrasúlyozás.
                 if (s.rows.where((r) => r.weight > 0).length > 1)
-                  AllocationCard(snapshot: s, fmt: fmt, targets: account == null),
+                  AllocationCard(snapshot: s, fmt: fmt, targets: account == null, byAccount: account == null),
                 PortfolioHistoryCard(snapshot: s, account: account),
                 // Az AI-elemzés az egész portfólióról szól (készpénzzel, osztalékokkal), egy mentett példányban.
                 if (account == null) PortfolioReviewCard(snapshot: s),
@@ -476,7 +476,7 @@ List<Color> allocationColors(AppPalette p) => [
 ];
 
 /// Mi szerint mutassuk a megoszlást.
-enum AllocationBy { positions, sectors, countries, currencies }
+enum AllocationBy { positions, sectors, countries, currencies, accounts }
 
 /// Súlyok csoportosítva (legnagyobb elöl); a [label] adja a csoport nevét.
 List<({String label, double weight})> groupWeights(List<PositionValue> rows, String Function(PositionValue) label) {
@@ -489,13 +489,22 @@ List<({String label, double weight})> groupWeights(List<PositionValue> rows, Str
 
 /// A megoszlás kártyája: pozíciók, szektorok vagy devizák szerint.
 class AllocationCard extends StatefulWidget {
-  const AllocationCard({super.key, required this.snapshot, required this.fmt, this.targets = true});
+  const AllocationCard({
+    super.key,
+    required this.snapshot,
+    required this.fmt,
+    this.targets = true,
+    this.byAccount = false,
+  });
 
   final PortfolioSnapshot snapshot;
   final Fmt fmt;
 
   /// A célarányok és az újrasúlyozás (csak az egész portfólió nézetében).
   final bool targets;
+
+  /// Megoszlás számlák szerint is (az egész portfólió nézetében, ha van számla).
+  final bool byAccount;
 
   List<PositionValue> get rows => snapshot.rows;
 
@@ -525,6 +534,20 @@ class _AllocationCardState extends State<AllocationCard> {
       ..sort((a, b) => b.weight.compareTo(a.weight));
   }
 
+  /// Számlák szerint: a pozíciók értéke a számlákon birtokolt darabszám arányában
+  /// (a számla nélküli tételek egy sorban), a készpénz külön sor.
+  List<({String label, double weight})> _byAccount(PortfolioStore store, String noAccount) {
+    final s = widget.snapshot;
+    final sums = <String, double>{};
+    for (final r in widget.rows.where((r) => r.inTotal && s.totalValue > 0)) {
+      for (final e in store.heldByAccount(r.position.symbol).entries) {
+        final w = e.value * r.price! * r.rate! / s.totalValue;
+        sums.update(e.key ?? noAccount, (v) => v + w, ifAbsent: () => w);
+      }
+    }
+    return _withCash([for (final e in sums.entries) (label: e.key, weight: e.value)]);
+  }
+
   AllocationBy _by = AllocationBy.positions;
   Future<Map<String, ({String? sector, String? country})>>? _profiles;
 
@@ -550,6 +573,10 @@ class _AllocationCardState extends State<AllocationCard> {
     final l10n = AppLocalizations.of(context);
     final theme = Theme.of(context);
     final locale = Localizations.localeOf(context);
+    final store = AppServices.of(context).portfolio;
+    final accounts = widget.byAccount && store.accounts.isNotEmpty;
+    // Ha közben megszűnt az utolsó számla, a pozíciók szerinti nézet marad.
+    final by = _by == AllocationBy.accounts && !accounts ? AllocationBy.positions : _by;
     return Card(
       child: Padding(
         padding: const EdgeInsets.all(18),
@@ -570,8 +597,9 @@ class _AllocationCardState extends State<AllocationCard> {
                   ButtonSegment(value: AllocationBy.sectors, label: Text(l10n.allocationSectors)),
                   ButtonSegment(value: AllocationBy.countries, label: Text(l10n.allocationCountries)),
                   ButtonSegment(value: AllocationBy.currencies, label: Text(l10n.allocationCurrencies)),
+                  if (accounts) ButtonSegment(value: AllocationBy.accounts, label: Text(l10n.allocationAccounts)),
                 ],
-                selected: {_by},
+                selected: {by},
                 onSelectionChanged: (v) => setState(() {
                   _by = v.first;
                   if (_by == AllocationBy.sectors || _by == AllocationBy.countries) _profiles ??= _loadProfiles();
@@ -579,7 +607,12 @@ class _AllocationCardState extends State<AllocationCard> {
               ),
             ),
             const SizedBox(height: 12),
-            switch (_by) {
+            switch (by) {
+              AllocationBy.accounts => AllocationBar(
+                key: const ValueKey('allocation-accounts'),
+                entries: _byAccount(store, l10n.portfolioNoAccount),
+                fmt: widget.fmt,
+              ),
               AllocationBy.positions => Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [

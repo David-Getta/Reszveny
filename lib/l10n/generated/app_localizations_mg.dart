@@ -2332,6 +2332,9 @@ class AppLocalizationsMg extends AppLocalizations {
   String get allocationCurrencies => 'Vola';
 
   @override
+  String get allocationAccounts => 'Kaonty';
+
+  @override
   String get compareReturn1y => 'Tombony 1 taona';
 
   @override

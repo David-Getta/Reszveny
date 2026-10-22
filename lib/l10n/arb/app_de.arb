@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Konto angeben",
   "portfolioAccountsAll": "Alle Konten",
   "portfolioAccountNote": "Nur Transaktionen dieses Kontos. Cash und Dividenden werden unter „Alle Konten“ angezeigt.",
-  "portfolioNoAccount": "Ohne Konto"
+  "portfolioNoAccount": "Ohne Konto",
+  "allocationAccounts": "Konten"
 }

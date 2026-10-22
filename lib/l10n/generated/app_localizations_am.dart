@@ -2282,6 +2282,9 @@ class AppLocalizationsAm extends AppLocalizations {
   String get allocationCurrencies => 'ምንዛሬዎች';
 
   @override
+  String get allocationAccounts => 'መለያዎች';
+
+  @override
   String get compareReturn1y => 'የ1 ዓመት ተመላሽ';
 
   @override

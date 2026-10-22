@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "هەژمارێک دیاری بکە",
   "portfolioAccountsAll": "هەموو هەژمارەکان",
   "portfolioAccountNote": "تەنها مامەڵەکانی ئەم هەژمارە. پارەی کاش و پشکی قازانج لە «هەموو هەژمارەکان» پیشان دەدرێن.",
-  "portfolioNoAccount": "بێ هەژمار"
+  "portfolioNoAccount": "بێ هەژمار",
+  "allocationAccounts": "هەژمارەکان"
 }

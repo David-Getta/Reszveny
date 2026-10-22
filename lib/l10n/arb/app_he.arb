@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "ציון חשבון",
   "portfolioAccountsAll": "כל החשבונות",
   "portfolioAccountNote": "רק העסקאות של החשבון הזה. מזומן ודיבידנדים מוצגים תחת ״כל החשבונות״.",
-  "portfolioNoAccount": "ללא חשבון"
+  "portfolioNoAccount": "ללא חשבון",
+  "allocationAccounts": "חשבונות"
 }

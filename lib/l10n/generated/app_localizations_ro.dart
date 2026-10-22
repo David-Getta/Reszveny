@@ -2352,6 +2352,9 @@ class AppLocalizationsRo extends AppLocalizations {
   String get allocationCurrencies => 'Monede';
 
   @override
+  String get allocationAccounts => 'Conturi';
+
+  @override
   String get compareReturn1y => 'Randament pe 1 an';
 
   @override

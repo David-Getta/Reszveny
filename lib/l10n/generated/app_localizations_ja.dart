@@ -2237,6 +2237,9 @@ class AppLocalizationsJa extends AppLocalizations {
   String get allocationCurrencies => '通貨';
 
   @override
+  String get allocationAccounts => '口座';
+
+  @override
   String get compareReturn1y => '1年リターン';
 
   @override

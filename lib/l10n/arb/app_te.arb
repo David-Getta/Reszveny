@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "ఖాతాను పేర్కొనండి",
   "portfolioAccountsAll": "అన్ని ఖాతాలు",
   "portfolioAccountNote": "ఈ ఖాతా లావాదేవీలు మాత్రమే. నగదు, డివిడెండ్లు 'అన్ని ఖాతాలు'లో చూపబడతాయి.",
-  "portfolioNoAccount": "ఖాతా లేదు"
+  "portfolioNoAccount": "ఖాతా లేదు",
+  "allocationAccounts": "ఖాతాలు"
 }

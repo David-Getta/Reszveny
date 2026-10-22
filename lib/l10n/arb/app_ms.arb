@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Nyatakan akaun",
   "portfolioAccountsAll": "Semua akaun",
   "portfolioAccountNote": "Hanya transaksi akaun ini. Tunai dan dividen dipaparkan di bawah Semua akaun.",
-  "portfolioNoAccount": "Tiada akaun"
+  "portfolioNoAccount": "Tiada akaun",
+  "allocationAccounts": "Akaun"
 }

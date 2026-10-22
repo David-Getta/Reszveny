@@ -2318,6 +2318,9 @@ class AppLocalizationsJv extends AppLocalizations {
   String get allocationCurrencies => 'Mata uang';
 
   @override
+  String get allocationAccounts => 'Akun';
+
+  @override
   String get compareReturn1y => 'Asil 1 taun';
 
   @override

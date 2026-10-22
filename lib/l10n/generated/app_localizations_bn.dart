@@ -2313,6 +2313,9 @@ class AppLocalizationsBn extends AppLocalizations {
   String get allocationCurrencies => 'মুদ্রা';
 
   @override
+  String get allocationAccounts => 'অ্যাকাউন্ট';
+
+  @override
   String get compareReturn1y => '1 বছরের রিটার্ন';
 
   @override

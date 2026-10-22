@@ -2286,6 +2286,9 @@ class AppLocalizationsTh extends AppLocalizations {
   String get allocationCurrencies => 'สกุลเงิน';
 
   @override
+  String get allocationAccounts => 'บัญชี';
+
+  @override
   String get compareReturn1y => 'ผลตอบแทน 1 ปี';
 
   @override

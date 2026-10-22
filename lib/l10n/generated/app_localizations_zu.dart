@@ -2325,6 +2325,9 @@ class AppLocalizationsZu extends AppLocalizations {
   String get allocationCurrencies => 'Izimali';
 
   @override
+  String get allocationAccounts => 'Ama-akhawunti';
+
+  @override
   String get compareReturn1y => 'Inzuzo yonyaka o-1';
 
   @override

@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Bainisha akaunti",
   "portfolioAccountsAll": "Akaunti zote",
   "portfolioAccountNote": "Miamala ya akaunti hii pekee. Taslimu na gawio huonyeshwa chini ya Akaunti zote.",
-  "portfolioNoAccount": "Bila akaunti"
+  "portfolioNoAccount": "Bila akaunti",
+  "allocationAccounts": "Akaunti"
 }

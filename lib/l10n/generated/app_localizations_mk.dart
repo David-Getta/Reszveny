@@ -2336,6 +2336,9 @@ class AppLocalizationsMk extends AppLocalizations {
   String get allocationCurrencies => 'Валути';
 
   @override
+  String get allocationAccounts => 'Сметки';
+
+  @override
   String get compareReturn1y => 'Принос за 1 година';
 
   @override

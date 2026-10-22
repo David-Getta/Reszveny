@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Specifiko llogarinë",
   "portfolioAccountsAll": "Të gjitha llogaritë",
   "portfolioAccountNote": "Vetëm transaksionet e kësaj llogarie. Paratë e gatshme dhe dividendët shfaqen te „Të gjitha llogaritë“.",
-  "portfolioNoAccount": "Pa llogari"
+  "portfolioNoAccount": "Pa llogari",
+  "allocationAccounts": "Llogaritë"
 }

@@ -2206,6 +2206,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get allocationCurrencies => '货币';
 
   @override
+  String get allocationAccounts => '账户';
+
+  @override
   String get compareReturn1y => '1年回报';
 
   @override
@@ -5008,6 +5011,9 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get allocationCurrencies => '貨幣';
+
+  @override
+  String get allocationAccounts => '帳戶';
 
   @override
   String get compareReturn1y => '1年回報';

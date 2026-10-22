@@ -2314,6 +2314,9 @@ class AppLocalizationsKab extends AppLocalizations {
   String get allocationCurrencies => 'Tidrimin';
 
   @override
+  String get allocationAccounts => 'Imiḍanen';
+
+  @override
   String get compareReturn1y => 'Afaris n 1 n useggas';
 
   @override

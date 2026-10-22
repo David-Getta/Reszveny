@@ -2312,6 +2312,9 @@ class AppLocalizationsPa extends AppLocalizations {
   String get allocationCurrencies => 'ਮੁਦਰਾਵਾਂ';
 
   @override
+  String get allocationAccounts => 'ਖਾਤੇ';
+
+  @override
   String get compareReturn1y => '1 ਸਾਲ ਦਾ ਰਿਟਰਨ';
 
   @override

@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Angi konto",
   "portfolioAccountsAll": "Alle kontoer",
   "portfolioAccountNote": "Bare transaksjoner på denne kontoen. Kontanter og utbytte vises under Alle kontoer.",
-  "portfolioNoAccount": "Ingen konto"
+  "portfolioNoAccount": "Ingen konto",
+  "allocationAccounts": "Kontoer"
 }

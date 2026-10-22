@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Ituding ti account",
   "portfolioAccountsAll": "Amin nga account",
   "portfolioAccountNote": "Dagiti transaksion laeng daytoy nga account. Makita ti cash ken dibidendo iti Amin nga account.",
-  "portfolioNoAccount": "Awan ti account"
+  "portfolioNoAccount": "Awan ti account",
+  "allocationAccounts": "Account"
 }

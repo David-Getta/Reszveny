@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Nurodyti sąskaitą",
   "portfolioAccountsAll": "Visos sąskaitos",
   "portfolioAccountNote": "Tik šios sąskaitos operacijos. Grynieji pinigai ir dividendai rodomi skiltyje „Visos sąskaitos“.",
-  "portfolioNoAccount": "Be sąskaitos"
+  "portfolioNoAccount": "Be sąskaitos",
+  "allocationAccounts": "Sąskaitos"
 }

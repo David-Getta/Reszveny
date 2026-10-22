@@ -2320,6 +2320,9 @@ class AppLocalizationsHu extends AppLocalizations {
   String get allocationCurrencies => 'Devizák';
 
   @override
+  String get allocationAccounts => 'Számlák';
+
+  @override
   String get compareReturn1y => '1 éves hozam';
 
   @override

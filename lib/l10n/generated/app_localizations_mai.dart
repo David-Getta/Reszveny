@@ -2308,6 +2308,9 @@ class AppLocalizationsMai extends AppLocalizations {
   String get allocationCurrencies => 'मुद्रा';
 
   @override
+  String get allocationAccounts => 'खाता';
+
+  @override
   String get compareReturn1y => '1 सालक रिटर्न';
 
   @override

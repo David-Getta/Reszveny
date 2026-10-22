@@ -2317,6 +2317,9 @@ class AppLocalizationsKu extends AppLocalizations {
   String get allocationCurrencies => 'Dirav';
 
   @override
+  String get allocationAccounts => 'Hesab';
+
+  @override
   String get compareReturn1y => 'Vegera 1 salî';
 
   @override

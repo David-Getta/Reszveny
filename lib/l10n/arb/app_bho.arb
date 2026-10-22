@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "खाता बताईं",
   "portfolioAccountsAll": "सब खाता",
   "portfolioAccountNote": "खाली एह खाता के लेन-देन। नकद आ डिविडेंड ‘सब खाता’ में देखावल जाला।",
-  "portfolioNoAccount": "कवनो खाता ना"
+  "portfolioNoAccount": "कवनो खाता ना",
+  "allocationAccounts": "खाता"
 }

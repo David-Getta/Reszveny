@@ -2310,6 +2310,9 @@ class AppLocalizationsGu extends AppLocalizations {
   String get allocationCurrencies => 'ચલણ';
 
   @override
+  String get allocationAccounts => 'ખાતાં';
+
+  @override
   String get compareReturn1y => '1 વર્ષનું વળતર';
 
   @override

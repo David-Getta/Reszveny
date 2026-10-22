@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Zadat účet",
   "portfolioAccountsAll": "Všechny účty",
   "portfolioAccountNote": "Jen transakce tohoto účtu. Hotovost a dividendy se zobrazují v části Všechny účty.",
-  "portfolioNoAccount": "Bez účtu"
+  "portfolioNoAccount": "Bez účtu",
+  "allocationAccounts": "Účty"
 }

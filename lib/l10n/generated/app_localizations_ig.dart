@@ -2310,6 +2310,9 @@ class AppLocalizationsIg extends AppLocalizations {
   String get allocationCurrencies => 'Ego';
 
   @override
+  String get allocationAccounts => 'Akaụntụ';
+
+  @override
   String get compareReturn1y => 'Uru afọ 1';
 
   @override

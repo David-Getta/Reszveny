@@ -2317,6 +2317,9 @@ class AppLocalizationsSv extends AppLocalizations {
   String get allocationCurrencies => 'Valutor';
 
   @override
+  String get allocationAccounts => 'Konton';
+
+  @override
   String get compareReturn1y => 'Avkastning 1 år';
 
   @override

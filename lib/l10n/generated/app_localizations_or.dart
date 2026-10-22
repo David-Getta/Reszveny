@@ -2312,6 +2312,9 @@ class AppLocalizationsOr extends AppLocalizations {
   String get allocationCurrencies => 'ମୁଦ୍ରା';
 
   @override
+  String get allocationAccounts => 'ଆକାଉଣ୍ଟ';
+
+  @override
   String get compareReturn1y => '1 ବର୍ଷର ରିଟର୍ନ';
 
   @override

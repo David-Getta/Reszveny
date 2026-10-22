@@ -2372,6 +2372,9 @@ class AppLocalizationsCs extends AppLocalizations {
   String get allocationCurrencies => 'Měny';
 
   @override
+  String get allocationAccounts => 'Účty';
+
+  @override
   String get compareReturn1y => 'Výnos za 1 rok';
 
   @override

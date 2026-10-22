@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "تعیین حساب",
   "portfolioAccountsAll": "همه حساب‌ها",
   "portfolioAccountNote": "فقط تراکنش‌های این حساب. نقد و سود سهام در «همه حساب‌ها» نمایش داده می‌شوند.",
-  "portfolioNoAccount": "بدون حساب"
+  "portfolioNoAccount": "بدون حساب",
+  "allocationAccounts": "حساب‌ها"
 }

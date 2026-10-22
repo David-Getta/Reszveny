@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Indicar una cuenta",
   "portfolioAccountsAll": "Todas las cuentas",
   "portfolioAccountNote": "Solo las transacciones de esta cuenta. El efectivo y los dividendos se muestran en Todas las cuentas.",
-  "portfolioNoAccount": "Sin cuenta"
+  "portfolioNoAccount": "Sin cuenta",
+  "allocationAccounts": "Cuentas"
 }

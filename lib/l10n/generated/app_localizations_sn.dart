@@ -2322,6 +2322,9 @@ class AppLocalizationsSn extends AppLocalizations {
   String get allocationCurrencies => 'Mari';
 
   @override
+  String get allocationAccounts => 'Maakaundi';
+
+  @override
   String get compareReturn1y => 'Purofiti yegore 1';
 
   @override

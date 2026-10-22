@@ -2328,6 +2328,9 @@ class AppLocalizationsQu extends AppLocalizations {
   String get allocationCurrencies => 'Qullqikuna';
 
   @override
+  String get allocationAccounts => 'Cuentakuna';
+
+  @override
   String get compareReturn1y => '1 watapi gananciay';
 
   @override

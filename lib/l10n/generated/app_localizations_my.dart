@@ -2308,6 +2308,9 @@ class AppLocalizationsMy extends AppLocalizations {
   String get allocationCurrencies => 'ငွေကြေး';
 
   @override
+  String get allocationAccounts => 'အကောင့်';
+
+  @override
   String get compareReturn1y => '1 နှစ် အမြတ်';
 
   @override

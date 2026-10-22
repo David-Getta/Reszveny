@@ -2311,6 +2311,9 @@ class AppLocalizationsFa extends AppLocalizations {
   String get allocationCurrencies => 'ارزها';
 
   @override
+  String get allocationAccounts => 'حساب‌ها';
+
+  @override
   String get compareReturn1y => 'بازده 1 ساله';
 
   @override

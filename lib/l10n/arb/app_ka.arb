@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "ანგარიშის მითითება",
   "portfolioAccountsAll": "ყველა ანგარიში",
   "portfolioAccountNote": "მხოლოდ ამ ანგარიშის ტრანზაქციები. ნაღდი ფული და დივიდენდები ნაჩვენებია განყოფილებაში „ყველა ანგარიში“.",
-  "portfolioNoAccount": "ანგარიშის გარეშე"
+  "portfolioNoAccount": "ანგარიშის გარეშე",
+  "allocationAccounts": "ანგარიშები"
 }

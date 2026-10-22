@@ -2376,6 +2376,9 @@ class AppLocalizationsLt extends AppLocalizations {
   String get allocationCurrencies => 'Valiutos';
 
   @override
+  String get allocationAccounts => 'Sąskaitos';
+
+  @override
   String get compareReturn1y => '1 metų grąža';
 
   @override

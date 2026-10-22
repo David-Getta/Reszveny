@@ -2377,6 +2377,9 @@ class AppLocalizationsSk extends AppLocalizations {
   String get allocationCurrencies => 'Meny';
 
   @override
+  String get allocationAccounts => 'Účty';
+
+  @override
   String get compareReturn1y => 'Výnos za 1 rok';
 
   @override

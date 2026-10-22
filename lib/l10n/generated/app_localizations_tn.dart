@@ -2331,6 +2331,9 @@ class AppLocalizationsTn extends AppLocalizations {
   String get allocationCurrencies => 'Madi';
 
   @override
+  String get allocationAccounts => 'Diakhaonto';
+
+  @override
   String get compareReturn1y => 'Poelo ya ngwaga o 1';
 
   @override

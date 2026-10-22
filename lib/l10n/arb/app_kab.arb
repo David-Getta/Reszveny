@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Mudd amiḍan",
   "portfolioAccountsAll": "Akk imiḍanen",
   "portfolioAccountNote": "Ala tiɣin d uznuzu n umiḍan-a. Idrimen n ufus d dividendes ttbanen deg Akk imiḍanen.",
-  "portfolioNoAccount": "War amiḍan"
+  "portfolioNoAccount": "War amiḍan",
+  "allocationAccounts": "Imiḍanen"
 }

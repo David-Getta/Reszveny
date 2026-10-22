@@ -2314,6 +2314,9 @@ class AppLocalizationsYo extends AppLocalizations {
   String get allocationCurrencies => 'Owó';
 
   @override
+  String get allocationAccounts => 'Àkáǹtì';
+
+  @override
   String get compareReturn1y => 'Èrè ọdún 1';
 
   @override

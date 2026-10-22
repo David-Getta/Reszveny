@@ -2310,6 +2310,9 @@ class AppLocalizationsFf extends AppLocalizations {
   String get allocationCurrencies => 'Ceede';
 
   @override
+  String get allocationAccounts => 'Konteeji';
+
+  @override
   String get compareReturn1y => 'Ñeeñal hitaande 1';
 
   @override

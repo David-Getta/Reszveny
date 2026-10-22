@@ -2301,6 +2301,9 @@ class AppLocalizationsMos extends AppLocalizations {
   String get allocationCurrencies => 'Ligd buudu';
 
   @override
+  String get allocationAccounts => 'Kõnte';
+
+  @override
   String get compareReturn1y => 'Yʋʋm 1 yõodo';
 
   @override

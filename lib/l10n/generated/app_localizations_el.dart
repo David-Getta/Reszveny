@@ -2325,6 +2325,9 @@ class AppLocalizationsEl extends AppLocalizations {
   String get allocationCurrencies => 'Νομίσματα';
 
   @override
+  String get allocationAccounts => 'Λογαριασμοί';
+
+  @override
   String get compareReturn1y => 'Απόδοση 1 έτους';
 
   @override

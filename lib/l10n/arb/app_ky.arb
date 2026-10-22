@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Эсепти көрсөтүү",
   "portfolioAccountsAll": "Бардык эсептер",
   "portfolioAccountNote": "Ушул эсептин транзакциялары гана. Нак акча жана дивиденддер «Бардык эсептер» бөлүмүндө көрсөтүлөт.",
-  "portfolioNoAccount": "Эсепсиз"
+  "portfolioNoAccount": "Эсепсиз",
+  "allocationAccounts": "Эсептер"
 }

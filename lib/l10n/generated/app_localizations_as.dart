@@ -2313,6 +2313,9 @@ class AppLocalizationsAs extends AppLocalizations {
   String get allocationCurrencies => 'মুদ্ৰা';
 
   @override
+  String get allocationAccounts => 'একাউণ্ট';
+
+  @override
   String get compareReturn1y => '1 বছৰৰ উভতি';
 
   @override

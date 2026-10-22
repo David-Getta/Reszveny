@@ -2316,6 +2316,9 @@ class AppLocalizationsSw extends AppLocalizations {
   String get allocationCurrencies => 'Sarafu';
 
   @override
+  String get allocationAccounts => 'Akaunti';
+
+  @override
   String get compareReturn1y => 'Faida ya mwaka 1';
 
   @override

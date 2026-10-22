@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "ሕሳብ ግለጽ",
   "portfolioAccountsAll": "ኩሎም ሕሳባት",
   "portfolioAccountNote": "ልውውጣት ናይዚ ሕሳብ ጥራይ። ጥረ ገንዘብን ድቪደንድታትን ኣብ \"ኩሎም ሕሳባት\" ይርኣዩ።",
-  "portfolioNoAccount": "ብዘይ ሕሳብ"
+  "portfolioNoAccount": "ብዘይ ሕሳብ",
+  "allocationAccounts": "ሕሳባት"
 }

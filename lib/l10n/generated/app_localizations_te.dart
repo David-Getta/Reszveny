@@ -2321,6 +2321,9 @@ class AppLocalizationsTe extends AppLocalizations {
   String get allocationCurrencies => 'కరెన్సీలు';
 
   @override
+  String get allocationAccounts => 'ఖాతాలు';
+
+  @override
   String get compareReturn1y => '1 సంవత్సర రాబడి';
 
   @override

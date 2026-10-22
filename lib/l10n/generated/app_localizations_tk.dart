@@ -2315,6 +2315,9 @@ class AppLocalizationsTk extends AppLocalizations {
   String get allocationCurrencies => 'Walýutalar';
 
   @override
+  String get allocationAccounts => 'Hasaplar';
+
+  @override
   String get compareReturn1y => '1 ýyllyk girdejililik';
 
   @override

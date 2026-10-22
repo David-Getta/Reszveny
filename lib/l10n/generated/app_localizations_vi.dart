@@ -2309,6 +2309,9 @@ class AppLocalizationsVi extends AppLocalizations {
   String get allocationCurrencies => 'Tiền tệ';
 
   @override
+  String get allocationAccounts => 'Tài khoản';
+
+  @override
   String get compareReturn1y => 'Lợi suất 1 năm';
 
   @override

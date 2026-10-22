@@ -2321,6 +2321,9 @@ class AppLocalizationsSq extends AppLocalizations {
   String get allocationCurrencies => 'Monedhat';
 
   @override
+  String get allocationAccounts => 'Llogaritë';
+
+  @override
   String get compareReturn1y => 'Kthimi 1-vjeçar';
 
   @override

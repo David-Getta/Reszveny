@@ -2315,6 +2315,9 @@ class AppLocalizationsMn extends AppLocalizations {
   String get allocationCurrencies => 'Валют';
 
   @override
+  String get allocationAccounts => 'Данс';
+
+  @override
   String get compareReturn1y => '1 жилийн өгөөж';
 
   @override

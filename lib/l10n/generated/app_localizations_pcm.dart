@@ -2314,6 +2314,9 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get allocationCurrencies => 'Currencies';
 
   @override
+  String get allocationAccounts => 'Accounts';
+
+  @override
   String get compareReturn1y => '1-year return';
 
   @override

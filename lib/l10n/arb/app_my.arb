@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "အကောင့် သတ်မှတ်ရန်",
   "portfolioAccountsAll": "အကောင့်အားလုံး",
   "portfolioAccountNote": "ဤအကောင့်၏ အရောင်းအဝယ်များသာ။ ငွေသားနှင့် အမြတ်ဝေစုများကို \"အကောင့်အားလုံး\" တွင် ပြသသည်။",
-  "portfolioNoAccount": "အကောင့် မရှိ"
+  "portfolioNoAccount": "အကောင့် မရှိ",
+  "allocationAccounts": "အကောင့်"
 }

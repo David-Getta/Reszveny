@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Ορισμός λογαριασμού",
   "portfolioAccountsAll": "Όλοι οι λογαριασμοί",
   "portfolioAccountNote": "Μόνο οι συναλλαγές αυτού του λογαριασμού. Τα μετρητά και τα μερίσματα εμφανίζονται στο «Όλοι οι λογαριασμοί».",
-  "portfolioNoAccount": "Χωρίς λογαριασμό"
+  "portfolioNoAccount": "Χωρίς λογαριασμό",
+  "allocationAccounts": "Λογαριασμοί"
 }

@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Шотты көрсету",
   "portfolioAccountsAll": "Барлық шоттар",
   "portfolioAccountNote": "Тек осы шоттың операциялары. Қолма-қол қаражат пен дивидендтер «Барлық шоттар» бөлімінде көрсетіледі.",
-  "portfolioNoAccount": "Шотсыз"
+  "portfolioNoAccount": "Шотсыз",
+  "allocationAccounts": "Шоттар"
 }

@@ -2317,6 +2317,9 @@ class AppLocalizationsKy extends AppLocalizations {
   String get allocationCurrencies => 'Валюталар';
 
   @override
+  String get allocationAccounts => 'Эсептер';
+
+  @override
   String get compareReturn1y => '1 жылдык кирешелүүлүк';
 
   @override

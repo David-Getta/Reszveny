@@ -2317,6 +2317,9 @@ class AppLocalizationsTg extends AppLocalizations {
   String get allocationCurrencies => 'Асъорҳо';
 
   @override
+  String get allocationAccounts => 'Ҳисобҳо';
+
+  @override
   String get compareReturn1y => 'Даромаднокии 1 сола';
 
   @override

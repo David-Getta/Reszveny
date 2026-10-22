@@ -2315,6 +2315,9 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get allocationCurrencies => 'دراوەکان';
 
   @override
+  String get allocationAccounts => 'هەژمارەکان';
+
+  @override
   String get compareReturn1y => 'قازانجی 1 ساڵ';
 
   @override

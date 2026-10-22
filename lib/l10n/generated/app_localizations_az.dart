@@ -2317,6 +2317,9 @@ class AppLocalizationsAz extends AppLocalizations {
   String get allocationCurrencies => 'Valyutalar';
 
   @override
+  String get allocationAccounts => 'Hesablar';
+
+  @override
   String get compareReturn1y => '1 illik gəlirlilik';
 
   @override

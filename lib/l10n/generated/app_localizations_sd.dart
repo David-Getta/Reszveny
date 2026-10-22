@@ -2306,6 +2306,9 @@ class AppLocalizationsSd extends AppLocalizations {
   String get allocationCurrencies => 'ڪرنسيون';
 
   @override
+  String get allocationAccounts => 'اڪائونٽس';
+
+  @override
   String get compareReturn1y => '1 سال جو منافعو';
 
   @override

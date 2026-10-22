@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Указать счёт",
   "portfolioAccountsAll": "Все счета",
   "portfolioAccountNote": "Только сделки по этому счёту. Денежные средства и дивиденды — в разделе «Все счета».",
-  "portfolioNoAccount": "Без счёта"
+  "portfolioNoAccount": "Без счёта",
+  "allocationAccounts": "Счета"
 }

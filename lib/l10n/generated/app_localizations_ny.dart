@@ -2323,6 +2323,9 @@ class AppLocalizationsNy extends AppLocalizations {
   String get allocationCurrencies => 'Ndalama';
 
   @override
+  String get allocationAccounts => 'Maakaunti';
+
+  @override
   String get compareReturn1y => 'Phindu la chaka 1';
 
   @override

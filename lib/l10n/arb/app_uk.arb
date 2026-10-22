@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Указати рахунок",
   "portfolioAccountsAll": "Усі рахунки",
   "portfolioAccountNote": "Лише операції цього рахунку. Кошти й дивіденди — у розділі «Усі рахунки».",
-  "portfolioNoAccount": "Без рахунку"
+  "portfolioNoAccount": "Без рахунку",
+  "allocationAccounts": "Рахунки"
 }

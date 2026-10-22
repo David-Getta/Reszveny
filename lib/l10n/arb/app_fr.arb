@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Préciser un compte",
   "portfolioAccountsAll": "Tous les comptes",
   "portfolioAccountNote": "Uniquement les transactions de ce compte. Les liquidités et les dividendes figurent dans Tous les comptes.",
-  "portfolioNoAccount": "Sans compte"
+  "portfolioNoAccount": "Sans compte",
+  "allocationAccounts": "Comptes"
 }

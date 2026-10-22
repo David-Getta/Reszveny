@@ -2289,6 +2289,9 @@ class AppLocalizationsLo extends AppLocalizations {
   String get allocationCurrencies => 'ສະກຸນເງິນ';
 
   @override
+  String get allocationAccounts => 'ບັນຊີ';
+
+  @override
   String get compareReturn1y => 'ຜົນຕອບແທນ 1 ປີ';
 
   @override

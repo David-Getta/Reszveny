@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "རྩིས་ཁྲ་འདེམས།",
   "portfolioAccountsAll": "རྩིས་ཁྲ་ཡོངས།",
   "portfolioAccountNote": "རྩིས་ཁྲ་འདིའི་ཉོ་འཚོང་ཁོ་ན། དངུལ་རྐྱང་དང་ཁེ་བགོས་ནི་རྩིས་ཁྲ་ཡོངས་ཀྱི་འོག་ཏུ་སྟོན་གྱི་ཡོད།",
-  "portfolioNoAccount": "རྩིས་ཁྲ་མེད།"
+  "portfolioNoAccount": "རྩིས་ཁྲ་མེད།",
+  "allocationAccounts": "རྩིས་ཁྲ"
 }

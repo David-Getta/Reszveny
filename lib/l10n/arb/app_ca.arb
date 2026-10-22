@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Indica un compte",
   "portfolioAccountsAll": "Tots els comptes",
   "portfolioAccountNote": "Només les transaccions d’aquest compte. L’efectiu i els dividends es mostren a Tots els comptes.",
-  "portfolioNoAccount": "Sense compte"
+  "portfolioNoAccount": "Sense compte",
+  "allocationAccounts": "Comptes"
 }

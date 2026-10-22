@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Supa akhaonto",
   "portfolioAccountsAll": "Diakhaonto tsotlhe",
   "portfolioAccountNote": "Ditheko le dithekiso tsa akhaonto eno fela. Madi le dividente di bontshiwa ka fa tlase ga Diakhaonto tsotlhe.",
-  "portfolioNoAccount": "Ga go na akhaonto"
+  "portfolioNoAccount": "Ga go na akhaonto",
+  "allocationAccounts": "Diakhaonto"
 }

@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Bontsha akhaonto",
   "portfolioAccountsAll": "Diakhaonto tsohle",
   "portfolioAccountNote": "Ditheko le dithekiso tsa akhaonto ena feela. Chelete le dividende di bontshwa tlasa Diakhaonto tsohle.",
-  "portfolioNoAccount": "Ha ho akhaonto"
+  "portfolioNoAccount": "Ha ho akhaonto",
+  "allocationAccounts": "Diakhaonto"
 }

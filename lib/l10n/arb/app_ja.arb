@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "口座を指定",
   "portfolioAccountsAll": "すべての口座",
   "portfolioAccountNote": "この口座の取引のみを表示しています。現金と配当金は「すべての口座」に表示されます。",
-  "portfolioNoAccount": "口座なし"
+  "portfolioNoAccount": "口座なし",
+  "allocationAccounts": "口座"
 }

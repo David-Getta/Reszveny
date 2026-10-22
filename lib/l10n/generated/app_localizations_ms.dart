@@ -2320,6 +2320,9 @@ class AppLocalizationsMs extends AppLocalizations {
   String get allocationCurrencies => 'Mata wang';
 
   @override
+  String get allocationAccounts => 'Akaun';
+
+  @override
   String get compareReturn1y => 'Pulangan 1 tahun';
 
   @override

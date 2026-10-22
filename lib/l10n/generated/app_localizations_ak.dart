@@ -2316,6 +2316,9 @@ class AppLocalizationsAk extends AppLocalizations {
   String get allocationCurrencies => 'Sika ahodoɔ';
 
   @override
+  String get allocationAccounts => 'Akontaabu';
+
+  @override
   String get compareReturn1y => 'Mfe 1 mfaso';
 
   @override

@@ -2313,6 +2313,9 @@ class AppLocalizationsHi extends AppLocalizations {
   String get allocationCurrencies => 'मुद्राएँ';
 
   @override
+  String get allocationAccounts => 'खाते';
+
+  @override
   String get compareReturn1y => '1 साल का रिटर्न';
 
   @override

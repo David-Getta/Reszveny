@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Tànn kont",
   "portfolioAccountsAll": "Kont yépp",
   "portfolioAccountNote": "Jënd ak jaay yu kont bii rekk. Xaalis ak dividande yi ñu ngi feeñ ci \"Kont yépp\".",
-  "portfolioNoAccount": "Amul kont"
+  "portfolioNoAccount": "Amul kont",
+  "allocationAccounts": "Kont yi"
 }

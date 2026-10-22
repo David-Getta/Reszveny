@@ -2376,6 +2376,9 @@ class AppLocalizationsBe extends AppLocalizations {
   String get allocationCurrencies => 'Валюты';
 
   @override
+  String get allocationAccounts => 'Рахункі';
+
+  @override
   String get compareReturn1y => 'Даходнасць за 1 год';
 
   @override

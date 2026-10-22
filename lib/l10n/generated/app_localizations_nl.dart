@@ -2321,6 +2321,9 @@ class AppLocalizationsNl extends AppLocalizations {
   String get allocationCurrencies => 'Valuta\'s';
 
   @override
+  String get allocationAccounts => 'Rekeningen';
+
+  @override
   String get compareReturn1y => 'Rendement 1 jaar';
 
   @override

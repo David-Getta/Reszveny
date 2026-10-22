@@ -2326,6 +2326,9 @@ class AppLocalizationsTa extends AppLocalizations {
   String get allocationCurrencies => 'நாணயங்கள்';
 
   @override
+  String get allocationAccounts => 'கணக்குகள்';
+
+  @override
   String get compareReturn1y => '1 ஆண்டு வருமானம்';
 
   @override

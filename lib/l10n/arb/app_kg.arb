@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Songa konti",
   "portfolioAccountsAll": "Bakonti yonso",
   "portfolioAccountNote": "Kaka kusumba ti kuteka ya konti yai. Mbongo ya maboko ti ba dividende ke monika na Bakonti yonso.",
-  "portfolioNoAccount": "Konti ve"
+  "portfolioNoAccount": "Konti ve",
+  "allocationAccounts": "Bakonti"
 }

@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Хисапны күрсәтү",
   "portfolioAccountsAll": "Барлык хисаплар",
   "portfolioAccountNote": "Бу хисапның операцияләре генә. Акча һәм дивидендлар «Барлык хисаплар» бүлегендә күрсәтелә.",
-  "portfolioNoAccount": "Хисапсыз"
+  "portfolioNoAccount": "Хисапсыз",
+  "allocationAccounts": "Хисаплар"
 }

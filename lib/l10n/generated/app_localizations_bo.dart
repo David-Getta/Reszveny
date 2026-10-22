@@ -2305,6 +2305,9 @@ class AppLocalizationsBo extends AppLocalizations {
   String get allocationCurrencies => 'དངུལ་ལོར';
 
   @override
+  String get allocationAccounts => 'རྩིས་ཁྲ';
+
+  @override
   String get compareReturn1y => 'ལོ་ 1 ནང་གི་ཁེ་ཕན';
 
   @override

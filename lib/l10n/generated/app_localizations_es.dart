@@ -2321,6 +2321,9 @@ class AppLocalizationsEs extends AppLocalizations {
   String get allocationCurrencies => 'Divisas';
 
   @override
+  String get allocationAccounts => 'Cuentas';
+
+  @override
   String get compareReturn1y => 'Rentabilidad a 1 año';
 
   @override

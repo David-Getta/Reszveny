@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Chaza iakhawunti",
   "portfolioAccountsAll": "Zonke iiakhawunti",
   "portfolioAccountNote": "Iintengiselwano zale akhawunti kuphela. Imali nezahlulo ziboniswa phantsi kwe-\"Zonke iiakhawunti\".",
-  "portfolioNoAccount": "Akukho akhawunti"
+  "portfolioNoAccount": "Akukho akhawunti",
+  "allocationAccounts": "Iiakhawunti"
 }

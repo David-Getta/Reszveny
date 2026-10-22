@@ -2315,6 +2315,9 @@ class AppLocalizationsUr extends AppLocalizations {
   String get allocationCurrencies => 'کرنسیاں';
 
   @override
+  String get allocationAccounts => 'اکاؤنٹس';
+
+  @override
   String get compareReturn1y => '1 سالہ منافع';
 
   @override

@@ -2334,6 +2334,9 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get allocationCurrencies => 'Currency';
 
   @override
+  String get allocationAccounts => 'Account';
+
+  @override
   String get compareReturn1y => 'Ganansia iti 1 a tawen';
 
   @override

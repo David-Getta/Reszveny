@@ -862,9 +862,19 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.byKey(const ValueKey('portfolio-accounts')), findsOneWidget);
     expect(find.byKey(const ValueKey('position-menu-MSFT')), findsOneWidget);
+    // Megoszlás számlák szerint (a számla nélküli tételek egy sorban).
+    final segment = find.text('Accounts');
+    await tester.ensureVisible(segment);
+    await tester.pumpAndSettle();
+    await tester.tap(segment);
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('allocation-accounts')), findsOneWidget);
+    expect(find.textContaining(RegExp(r'^TBSZ \d')), findsOneWidget);
+    expect(find.textContaining(RegExp(r'^No account \d')), findsOneWidget);
 
     await tester.tap(find.byKey(const ValueKey('account-TBSZ')));
     await tester.pumpAndSettle();
+    expect(find.text('Accounts'), findsNothing, reason: 'számla-nézetben nincs számla-megoszlás');
     expect(find.byKey(const ValueKey('position-menu-AAPL')), findsOneWidget);
     expect(find.byKey(const ValueKey('position-menu-MSFT')), findsNothing);
     expect(

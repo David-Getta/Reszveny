@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Наведи сметка",
   "portfolioAccountsAll": "Сите сметки",
   "portfolioAccountNote": "Само трансакциите на оваа сметка. Готовината и дивидендите се прикажани под „Сите сметки“.",
-  "portfolioNoAccount": "Без сметка"
+  "portfolioNoAccount": "Без сметка",
+  "allocationAccounts": "Сметки"
 }

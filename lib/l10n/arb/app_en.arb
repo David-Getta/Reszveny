@@ -1812,6 +1812,10 @@
   },
   "allocationSectors": "Sectors",
   "allocationCurrencies": "Currencies",
+  "allocationAccounts": "Accounts",
+  "@allocationAccounts": {
+    "description": "Segment of the portfolio allocation card: split the portfolio by brokerage account (e.g. TBSZ, regular). Short, like the other segments (Positions, Sectors, Countries, Currencies)."
+  },
   "compareReturn1y": "1-year return",
   "@compareReturn1y": {
     "description": "Row label in the stock comparison table: price change over the last year."

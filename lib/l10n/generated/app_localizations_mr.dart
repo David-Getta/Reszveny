@@ -2314,6 +2314,9 @@ class AppLocalizationsMr extends AppLocalizations {
   String get allocationCurrencies => 'चलने';
 
   @override
+  String get allocationAccounts => 'खाती';
+
+  @override
   String get compareReturn1y => '1 वर्षाचा परतावा';
 
   @override

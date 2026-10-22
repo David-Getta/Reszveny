@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Tentukan akun",
   "portfolioAccountsAll": "Semua akun",
   "portfolioAccountNote": "Hanya transaksi akun ini. Kas dan dividen ditampilkan di Semua akun.",
-  "portfolioNoAccount": "Tanpa akun"
+  "portfolioNoAccount": "Tanpa akun",
+  "allocationAccounts": "Akun"
 }

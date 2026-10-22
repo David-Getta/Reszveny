@@ -2310,6 +2310,9 @@ class AppLocalizationsBho extends AppLocalizations {
   String get allocationCurrencies => 'मुद्रा';
 
   @override
+  String get allocationAccounts => 'खाता';
+
+  @override
   String get compareReturn1y => '1 साल के रिटर्न';
 
   @override

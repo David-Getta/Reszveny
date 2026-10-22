@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Erekana konti",
   "portfolioAccountsAll": "Konti zose",
   "portfolioAccountNote": "Ibyaguzwe n'ibyagurishijwe kuri iyi konti gusa. Amafaranga n'amadividende bigaragara muri \"Konti zose\".",
-  "portfolioNoAccount": "Nta konti"
+  "portfolioNoAccount": "Nta konti",
+  "allocationAccounts": "Konti"
 }

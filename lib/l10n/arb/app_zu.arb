@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Cacisa i-akhawunti",
   "portfolioAccountsAll": "Wonke ama-akhawunti",
   "portfolioAccountNote": "Ukuthenga nokuthengisa kwale akhawunti kuphela. Imali nezabelo zenzuzo kuboniswa ngaphansi kokuthi Wonke ama-akhawunti.",
-  "portfolioNoAccount": "Ayikho i-akhawunti"
+  "portfolioNoAccount": "Ayikho i-akhawunti",
+  "allocationAccounts": "Ama-akhawunti"
 }

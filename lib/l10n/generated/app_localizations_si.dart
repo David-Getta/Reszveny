@@ -2312,6 +2312,9 @@ class AppLocalizationsSi extends AppLocalizations {
   String get allocationCurrencies => 'මුදල් ඒකක';
 
   @override
+  String get allocationAccounts => 'ගිණුම්';
+
+  @override
   String get compareReturn1y => 'වසර 1 ප්‍රතිලාභය';
 
   @override

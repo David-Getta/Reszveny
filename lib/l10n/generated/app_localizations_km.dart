@@ -2295,6 +2295,9 @@ class AppLocalizationsKm extends AppLocalizations {
   String get allocationCurrencies => 'រូបិយប័ណ្ណ';
 
   @override
+  String get allocationAccounts => 'គណនី';
+
+  @override
   String get compareReturn1y => 'ផលចំណេញ 1 ឆ្នាំ';
 
   @override

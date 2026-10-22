@@ -2326,6 +2326,9 @@ class AppLocalizationsRw extends AppLocalizations {
   String get allocationCurrencies => 'Amafaranga';
 
   @override
+  String get allocationAccounts => 'Konti';
+
+  @override
   String get compareReturn1y => 'Inyungu y\'umwaka 1';
 
   @override

@@ -2330,6 +2330,9 @@ class AppLocalizationsHil extends AppLocalizations {
   String get allocationCurrencies => 'Currency';
 
   @override
+  String get allocationAccounts => 'Mga account';
+
+  @override
   String get compareReturn1y => '1 ka tuig nga ganansya';
 
   @override

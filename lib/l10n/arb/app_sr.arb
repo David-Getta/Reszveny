@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Наведи рачун",
   "portfolioAccountsAll": "Сви рачуни",
   "portfolioAccountNote": "Само трансакције овог рачуна. Готовина и дивиденде приказују се у делу „Сви рачуни“.",
-  "portfolioNoAccount": "Без рачуна"
+  "portfolioNoAccount": "Без рачуна",
+  "allocationAccounts": "Рачуни"
 }

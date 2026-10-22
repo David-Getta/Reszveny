@@ -2309,6 +2309,9 @@ class AppLocalizationsWo extends AppLocalizations {
   String get allocationCurrencies => 'Xaalis yi';
 
   @override
+  String get allocationAccounts => 'Kont yi';
+
+  @override
   String get compareReturn1y => 'Njariñ ci 1 at';
 
   @override

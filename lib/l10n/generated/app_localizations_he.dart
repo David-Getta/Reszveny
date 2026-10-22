@@ -2307,6 +2307,9 @@ class AppLocalizationsHe extends AppLocalizations {
   String get allocationCurrencies => 'מטבעות';
 
   @override
+  String get allocationAccounts => 'חשבונות';
+
+  @override
   String get compareReturn1y => 'תשואה לשנה';
 
   @override

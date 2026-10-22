@@ -2313,6 +2313,9 @@ class AppLocalizationsHt extends AppLocalizations {
   String get allocationCurrencies => 'Deviz';
 
   @override
+  String get allocationAccounts => 'Kont';
+
+  @override
   String get compareReturn1y => 'Rannman sou 1 an';
 
   @override

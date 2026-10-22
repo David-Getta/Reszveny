@@ -2357,6 +2357,9 @@ class AppLocalizationsBs extends AppLocalizations {
   String get allocationCurrencies => 'Valute';
 
   @override
+  String get allocationAccounts => 'Računi';
+
+  @override
   String get compareReturn1y => 'Prinos za 1 godinu';
 
   @override

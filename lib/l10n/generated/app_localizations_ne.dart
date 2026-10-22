@@ -2314,6 +2314,9 @@ class AppLocalizationsNe extends AppLocalizations {
   String get allocationCurrencies => 'मुद्रा';
 
   @override
+  String get allocationAccounts => 'खाता';
+
+  @override
   String get compareReturn1y => '1 वर्षको प्रतिफल';
 
   @override

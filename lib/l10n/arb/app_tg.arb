@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Ҳисобро муайян кардан",
   "portfolioAccountsAll": "Ҳамаи ҳисобҳо",
   "portfolioAccountNote": "Танҳо амалиётҳои ҳамин ҳисоб. Пули нақд ва дивидендҳо дар «Ҳамаи ҳисобҳо» нишон дода мешаванд.",
-  "portfolioNoAccount": "Бе ҳисоб"
+  "portfolioNoAccount": "Бе ҳисоб",
+  "allocationAccounts": "Ҳисобҳо"
 }

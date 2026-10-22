@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Cuentata akllay",
   "portfolioAccountsAll": "Llapan cuentakuna",
   "portfolioAccountNote": "Kay cuentapa rantiy rantikuyninkunalla. Qullqi, dividendokunapas «Llapan cuentakuna» nisqapim rikhurin.",
-  "portfolioNoAccount": "Mana cuentayuq"
+  "portfolioNoAccount": "Mana cuentayuq",
+  "allocationAccounts": "Cuentakuna"
 }

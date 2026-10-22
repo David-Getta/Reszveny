@@ -2359,6 +2359,9 @@ class AppLocalizationsSr extends AppLocalizations {
   String get allocationCurrencies => 'Валуте';
 
   @override
+  String get allocationAccounts => 'Рачуни';
+
+  @override
   String get compareReturn1y => 'Принос за 1 годину';
 
   @override

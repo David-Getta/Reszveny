@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Hesap belirt",
   "portfolioAccountsAll": "Tüm hesaplar",
   "portfolioAccountNote": "Yalnızca bu hesabın işlemleri. Nakit ve temettüler Tüm hesaplar altında gösterilir.",
-  "portfolioNoAccount": "Hesap yok"
+  "portfolioNoAccount": "Hesap yok",
+  "allocationAccounts": "Hesaplar"
 }

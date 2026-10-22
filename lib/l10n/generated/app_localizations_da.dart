@@ -2314,6 +2314,9 @@ class AppLocalizationsDa extends AppLocalizations {
   String get allocationCurrencies => 'Valutaer';
 
   @override
+  String get allocationAccounts => 'Konti';
+
+  @override
   String get compareReturn1y => '1-års afkast';
 
   @override

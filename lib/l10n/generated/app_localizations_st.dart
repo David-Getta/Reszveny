@@ -2329,6 +2329,9 @@ class AppLocalizationsSt extends AppLocalizations {
   String get allocationCurrencies => 'Ditjhelete';
 
   @override
+  String get allocationAccounts => 'Diakhaonto';
+
+  @override
   String get compareReturn1y => 'Poelo ya selemo se 1';
 
   @override

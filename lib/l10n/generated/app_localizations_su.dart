@@ -2319,6 +2319,9 @@ class AppLocalizationsSu extends AppLocalizations {
   String get allocationCurrencies => 'Mata uang';
 
   @override
+  String get allocationAccounts => 'Akun';
+
+  @override
   String get compareReturn1y => 'Hasil 1 taun';
 
   @override

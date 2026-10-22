@@ -2326,6 +2326,9 @@ class AppLocalizationsLn extends AppLocalizations {
   String get allocationCurrencies => 'Mbɔngɔ';
 
   @override
+  String get allocationAccounts => 'Ba-compte';
+
+  @override
   String get compareReturn1y => 'Litomba ya mbula 1';
 
   @override

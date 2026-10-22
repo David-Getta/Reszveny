@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Wilg kõnte",
   "portfolioAccountsAll": "Kõnte fãa",
   "portfolioAccountNote": "Kõntã-kãngã raaba la koosgo bal. Ligdi la dividand be \"Kõnte fãa\" pʋgẽ.",
-  "portfolioNoAccount": "Kõnte ka be ye"
+  "portfolioNoAccount": "Kõnte ka be ye",
+  "allocationAccounts": "Kõnte"
 }

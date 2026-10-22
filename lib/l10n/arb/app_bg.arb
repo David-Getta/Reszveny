@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Посочете сметка",
   "portfolioAccountsAll": "Всички сметки",
   "portfolioAccountNote": "Само транзакциите по тази сметка. Кешът и дивидентите се показват във „Всички сметки“.",
-  "portfolioNoAccount": "Без сметка"
+  "portfolioNoAccount": "Без сметка",
+  "allocationAccounts": "Сметки"
 }

@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Navedite račun",
   "portfolioAccountsAll": "Svi računi",
   "portfolioAccountNote": "Samo transakcije ovog računa. Gotovina i dividende prikazuju se pod „Svi računi”.",
-  "portfolioNoAccount": "Bez računa"
+  "portfolioNoAccount": "Bez računa",
+  "allocationAccounts": "Računi"
 }

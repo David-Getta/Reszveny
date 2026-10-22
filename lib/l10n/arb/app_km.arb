@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "បញ្ជាក់គណនី",
   "portfolioAccountsAll": "គណនីទាំងអស់",
   "portfolioAccountNote": "មានតែប្រតិបត្តិការរបស់គណនីនេះប៉ុណ្ណោះ។ សាច់ប្រាក់ និងភាគលាភត្រូវបានបង្ហាញនៅក្រោម «គណនីទាំងអស់»។",
-  "portfolioNoAccount": "គ្មានគណនី"
+  "portfolioNoAccount": "គ្មានគណនី",
+  "allocationAccounts": "គណនី"
 }

@@ -778,5 +778,6 @@
   "portfolioAccountAdd": "Նշել հաշիվը",
   "portfolioAccountsAll": "Բոլոր հաշիվները",
   "portfolioAccountNote": "Միայն այս հաշվի գործարքները։ Կանխիկը և շահաբաժինները ցուցադրվում են «Բոլոր հաշիվները» բաժնում։",
-  "portfolioNoAccount": "Առանց հաշվի"
+  "portfolioNoAccount": "Առանց հաշվի",
+  "allocationAccounts": "Հաշիվներ"
 }
