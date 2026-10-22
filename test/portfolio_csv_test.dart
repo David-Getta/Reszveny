@@ -125,6 +125,23 @@ void main() {
     expect(back.lots.map((l) => l.sell), [false, true]);
   });
 
+  test('accounts: an account column only when used, quoted when needed, read back with and without header', () {
+    const plain = [PortfolioLot(id: 'a', symbol: 'AAPL', quantity: 3, price: 199.99, currency: 'USD')];
+    expect(portfolioCsv(plain), startsWith('symbol,quantity,price,currency,date,side\n'));
+    const lots = [
+      PortfolioLot(id: 'a', symbol: 'AAPL', quantity: 3, price: 199.99, currency: 'USD', account: 'TBSZ, 2026'),
+      PortfolioLot(id: 'b', symbol: 'MSFT', quantity: 1, price: 400, currency: 'USD'),
+    ];
+    final csv = portfolioCsv(lots);
+    expect(csv, startsWith('symbol,quantity,price,currency,date,side,account\n'));
+    expect(csv, contains('AAPL,3,199.99,USD,,buy,"TBSZ, 2026"'));
+    final back = parsePortfolioCsv(csv);
+    expect(back.lots.map((l) => (l.symbol, l.account)), [('AAPL', 'TBSZ, 2026'), ('MSFT', null)]);
+    // Fejléc nélkül a hetedik oszlop; magyar fejléccel is („Számla”).
+    expect(parsePortfolioCsv('OTP;10;30000;HUF;2026-01-05;buy;TBSZ').lots.single.account, 'TBSZ');
+    expect(parsePortfolioCsv('Ticker;Quantity;Price;Számla\nOTP;10;30000;NYESZ').lots.single.account, 'NYESZ');
+  });
+
   test('dividends: exported as dividend rows and read back; a separate CSV for the tax return', () {
     const lots = [PortfolioLot(id: 'a', symbol: 'AAPL', quantity: 3, price: 199.99, currency: 'USD')];
     final dividends = [

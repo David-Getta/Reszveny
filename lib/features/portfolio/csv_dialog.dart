@@ -109,12 +109,15 @@ Future<void> showPortfolioImport(BuildContext context) async {
   final services = AppServices.of(context);
   final result = await showDialog<CsvImport>(context: context, builder: (_) => const _ImportDialog());
   if (result == null) return;
-  String key(String symbol, double q, double p, DateTime? d, bool sell) =>
-      '$symbol|$q|$p|${d?.toIso8601String().substring(0, 10)}|$sell';
-  final existing = {for (final l in services.portfolio.lots) key(l.symbol, l.quantity, l.price, l.date, l.sell)};
+  // A számla is része a kulcsnak: ugyanaz a vétel két számlán két tranzakció.
+  String key(String symbol, double q, double p, DateTime? d, bool sell, String? account) =>
+      '$symbol|$q|$p|${d?.toIso8601String().substring(0, 10)}|$sell|${account ?? ''}';
+  final existing = {
+    for (final l in services.portfolio.lots) key(l.symbol, l.quantity, l.price, l.date, l.sell, l.account),
+  };
   var added = 0;
   for (final l in result.lots) {
-    if (!existing.add(key(l.symbol, l.quantity, l.price, l.date, l.sell))) continue;
+    if (!existing.add(key(l.symbol, l.quantity, l.price, l.date, l.sell, l.account))) continue;
     await services.portfolio.add(
       symbol: l.symbol,
       quantity: l.quantity,
@@ -122,6 +125,7 @@ Future<void> showPortfolioImport(BuildContext context) async {
       currency: l.currency,
       date: l.date,
       sell: l.sell,
+      account: l.account,
     );
     added++;
   }

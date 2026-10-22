@@ -13,7 +13,9 @@ String portfolioCsv(
   List<SplitRecord> splits = const [],
 }) {
   String n(double v) => v == v.roundToDouble() ? v.toStringAsFixed(0) : v.toString();
-  final b = StringBuffer('symbol,quantity,price,currency,date,side\n');
+  // A számla oszlop csak akkor, ha van számlás tranzakció (a régi formátum marad).
+  final withAccount = lots.any((l) => l.account != null);
+  final b = StringBuffer('symbol,quantity,price,currency,date,side${withAccount ? ',account' : ''}\n');
   for (final l in lots) {
     b.writeln(
       [
@@ -23,6 +25,7 @@ String portfolioCsv(
         l.currency,
         l.date?.toIso8601String().substring(0, 10) ?? '',
         l.sell ? 'sell' : 'buy',
+        if (withAccount) _csvField(l.account ?? ''),
       ].join(','),
     );
   }
@@ -84,6 +87,9 @@ String realizedCsv(List<Position> positions) {
   return b.toString();
 }
 
+/// CSV-mező: vesszőt, idézőjelet vagy sortörést tartalmazó szöveg idézőjelek között.
+String _csvField(String s) => RegExp(r'[,"\n]').hasMatch(s) ? '"${s.replaceAll('"', '""')}"' : s;
+
 /// Egy beolvasott sor (még nem került a portfólióba).
 class ImportedLot {
   const ImportedLot({
@@ -93,7 +99,11 @@ class ImportedLot {
     required this.currency,
     this.date,
     this.sell = false,
+    this.account,
   });
+
+  /// A számla neve (saját exportból vagy „account” / „számla” oszlopból).
+  final String? account;
 
   final String symbol;
   final double quantity;
@@ -192,6 +202,8 @@ const _roles = <String, Set<String>>{
   // Az osztaléksor összege (Revolut „Total Amount”, Trading 212 „Total”).
   'total': {'total', 'totalamount', 'amount', 'netamount'},
   'totalcurrency': {'currencytotal'},
+  // A számla (saját export „account”, magyarul „számla”).
+  'account': {'account', 'accountname', 'szmla'},
 };
 
 /// Fejlécsor felismerése: oszlopszerep → index, ha van ticker, darabszám és ár.
@@ -351,6 +363,7 @@ CsvImport _withHeader(
         currency: ccy,
         date: _date(cell(f, 'date')),
         sell: sell,
+        account: PortfolioLot.cleanAccount(cell(f, 'account')),
       ),
     );
   }
@@ -428,7 +441,18 @@ CsvImport _positional(List<String> lines, String defaultCurrency) {
     first = false;
     final ccy = f.length > 3 && _currency.hasMatch(f[3].toUpperCase()) ? f[3].toUpperCase() : defaultCurrency;
     final date = f.length > 4 ? _date(f[4]) : null;
-    lots.add(ImportedLot(symbol: symbol, quantity: quantity, price: price, currency: ccy, date: date, sell: sell));
+    lots.add(
+      ImportedLot(
+        symbol: symbol,
+        quantity: quantity,
+        price: price,
+        currency: ccy,
+        date: date,
+        sell: sell,
+        // Fejléc nélkül a hetedik oszlop a számla (saját export).
+        account: PortfolioLot.cleanAccount(f.length > 6 ? f[6] : null),
+      ),
+    );
   }
   return CsvImport(lots, skipped, dividends: dividends, splits: splits);
 }

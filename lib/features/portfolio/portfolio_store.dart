@@ -14,6 +14,7 @@ class PortfolioLot {
     required this.currency,
     this.date,
     this.sell = false,
+    this.account,
   });
 
   final String id;
@@ -27,6 +28,20 @@ class PortfolioLot {
 
   /// Eladás (a darabszám ilyenkor is pozitív).
   final bool sell;
+
+  /// A számla neve (pl. „TBSZ 2026”), amelyen a tranzakció történt; `null`, ha
+  /// nincs megadva. A portfólió számlánként szűrhető.
+  final String? account;
+
+  /// Számlanév beolvasása: a szóközök levágva, legfeljebb [maxAccountName]
+  /// karakter; üresen `null`.
+  static String? cleanAccount(Object? v) {
+    final s = v is String ? v.trim() : '';
+    if (s.isEmpty) return null;
+    return s.length > maxAccountName ? s.substring(0, maxAccountName) : s;
+  }
+
+  static const maxAccountName = 30;
 
   /// Vételnél a bekerülési érték, eladásnál a bevétel.
   double get cost => quantity * price;
@@ -42,6 +57,7 @@ class PortfolioLot {
     'currency': currency,
     if (date != null) 'date': date!.toIso8601String().substring(0, 10),
     if (sell) 'side': 'sell',
+    'account': ?account,
   };
 
   static PortfolioLot? fromJson(Map<String, dynamic> j) {
@@ -56,6 +72,7 @@ class PortfolioLot {
       currency: (j['currency'] as String? ?? 'USD').toUpperCase(),
       date: DateTime.tryParse(j['date'] as String? ?? ''),
       sell: j['side'] == 'sell',
+      account: cleanAccount(j['account']),
     );
   }
 }
@@ -161,6 +178,7 @@ class SplitRecord {
       currency: l.currency,
       date: l.date,
       sell: l.sell,
+      account: l.account,
     );
   }
 }
@@ -471,23 +489,46 @@ class PortfolioStore extends ChangeNotifier {
   }
 
   /// Részvényenként összevont, még birtokolt pozíciók, a legnagyobb bekerülési értékkel elöl.
-  List<Position> get positions => [
-    for (final p in _all)
+  List<Position> get positions => positionsIn(null);
+
+  /// A használt számlák neve ábécérendben (a szűrőhöz); üres, ha egyik
+  /// tranzakciónak sincs számlája.
+  List<String> get accounts => ({for (final l in _lots) ?l.account}.toList()..sort());
+
+  /// Egy számla még birtokolt pozíciói ([account] `null`: mind); a FIFO a
+  /// számlán belül számol, ahogy a bróker is.
+  List<Position> positionsIn(String? account) => [
+    for (final p in _positionsOf(account))
       if (!p.isClosed) p,
   ]..sort((a, b) => b.cost.compareTo(a.cost));
+
+  /// Egy számla teljesen eladott pozíciói ([account] `null`: mind).
+  List<Position> closedIn(String? account) => [
+    for (final p in _positionsOf(account))
+      if (p.isClosed) p,
+  ];
+
+  /// Egy számla tranzakciói a felaprózásokkal igazítva ([account] `null`: mind).
+  List<PortfolioLot> adjustedLotsIn(String? account) => account == null
+      ? adjustedLots
+      : [
+          for (final l in adjustedLots)
+            if (l.account == account) l,
+        ];
+
+  List<Position> _positionsOf(String? account) => account == null ? _all : _group(adjustedLotsIn(account));
 
   /// Minden pozíció (a lezártak is) – a realizált nyereség exportjához.
   List<Position> get allPositions => _all;
 
   /// Teljesen eladott pozíciók (a realizált nyereségükkel).
-  List<Position> get closedPositions => [
-    for (final p in _all)
-      if (p.isClosed) p,
-  ];
+  List<Position> get closedPositions => closedIn(null);
 
-  List<Position> get _all {
+  List<Position> get _all => _group(adjustedLots);
+
+  static List<Position> _group(List<PortfolioLot> lots) {
     final bySymbol = <String, List<PortfolioLot>>{};
-    for (final l in adjustedLots) {
+    for (final l in lots) {
       bySymbol.putIfAbsent(l.symbol, () => []).add(l);
     }
     return [for (final e in bySymbol.entries) Position(symbol: e.key, currency: e.value.first.currency, lots: e.value)];
@@ -505,6 +546,7 @@ class PortfolioStore extends ChangeNotifier {
     required String currency,
     DateTime? date,
     bool sell = false,
+    String? account,
   }) async {
     final s = symbol.trim().toUpperCase();
     final lot = PortfolioLot(
@@ -515,6 +557,7 @@ class PortfolioStore extends ChangeNotifier {
       currency: currency.toUpperCase(),
       date: date,
       sell: sell,
+      account: PortfolioLot.cleanAccount(account),
     );
     _lots.add(lot);
     notifyListeners();

@@ -43,6 +43,54 @@ void main() {
   });
 
   group('PortfolioStore', () {
+    test('accounts: positions and FIFO per account, all of them together, kept through JSON', () async {
+      SharedPreferences.setMockInitialValues({});
+      final store = PortfolioStore();
+      await store.add(
+        symbol: 'AAPL',
+        quantity: 10,
+        price: 100,
+        currency: 'USD',
+        account: ' TBSZ 2026 ',
+        date: DateTime(2024, 1, 2),
+      );
+      await store.add(
+        symbol: 'AAPL',
+        quantity: 5,
+        price: 200,
+        currency: 'USD',
+        account: 'Normál',
+        date: DateTime(2025, 1, 2),
+      );
+      await store.add(symbol: 'MSFT', quantity: 2, price: 400, currency: 'USD', date: DateTime(2025, 2, 3));
+      // Eladás a normál számláról: ott a 200-as vétel fogy (FIFO a számlán belül).
+      await store.add(
+        symbol: 'AAPL',
+        quantity: 5,
+        price: 250,
+        currency: 'USD',
+        sell: true,
+        account: 'Normál',
+        date: DateTime(2026, 1, 2),
+      );
+      expect(store.accounts, ['Normál', 'TBSZ 2026']);
+      expect(store.positionsIn('TBSZ 2026').single.quantity, 10);
+      expect(store.positionsIn('Normál'), isEmpty);
+      expect(store.closedIn('Normál').single.realizedGain, closeTo(5 * 50, 1e-9));
+      expect(store.positions.map((p) => p.symbol), ['AAPL', 'MSFT'], reason: 'mind együtt');
+      expect(store.positionOf('AAPL')!.quantity, 10);
+      expect(store.adjustedLotsIn('TBSZ 2026'), hasLength(1));
+      // Tárolva és visszaolvasva megmarad; a túl hosszú név levágva, az üres nincs.
+      final again = await PortfolioStore.load();
+      expect(again.accounts, ['Normál', 'TBSZ 2026']);
+      expect(PortfolioLot.cleanAccount('   '), isNull);
+      expect(PortfolioLot.cleanAccount('x' * 40)!.length, PortfolioLot.maxAccountName);
+      expect(PortfolioLot.fromJson({'symbol': 'A', 'quantity': 1, 'price': 1, 'account': 3})!.account, isNull);
+      // A felaprózás igazítása megtartja a számlát.
+      await store.addSplit(symbol: 'AAPL', from: 1, to: 2, date: DateTime(2024, 6, 1));
+      expect(store.positionsIn('TBSZ 2026').single.quantity, 20);
+    });
+
     test('a stock split adjusts the transactions before its day; the cost stays, ids stay', () async {
       SharedPreferences.setMockInitialValues({});
       final store = PortfolioStore();
