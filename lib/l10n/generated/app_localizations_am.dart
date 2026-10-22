@@ -2496,6 +2496,22 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'መለያ';
+
+  @override
+  String get portfolioAccountHint => 'ለምሳሌ TBSZ 2026 (አማራጭ)';
+
+  @override
+  String get portfolioAccountAdd => 'መለያ ይግለጹ';
+
+  @override
+  String get portfolioAccountsAll => 'ሁሉም መለያዎች';
+
+  @override
+  String get portfolioAccountNote =>
+      'የዚህ መለያ ግብይቶች ብቻ። ጥሬ ገንዘብ እና የትርፍ ድርሻዎች በ«ሁሉም መለያዎች» ስር ይታያሉ።';
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

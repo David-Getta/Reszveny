@@ -2521,6 +2521,22 @@ class AppLocalizationsPs extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'حساب';
+
+  @override
+  String get portfolioAccountHint => 'لکه TBSZ 2026 (اختیاري)';
+
+  @override
+  String get portfolioAccountAdd => 'حساب وټاکئ';
+
+  @override
+  String get portfolioAccountsAll => 'ټول حسابونه';
+
+  @override
+  String get portfolioAccountNote =>
+      'یوازې د دې حساب راکړې ورکړې. نغدې او ډیویډنډونه د «ټول حسابونه» لاندې ښودل کېږي.';
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

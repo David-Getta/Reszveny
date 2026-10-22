@@ -2597,6 +2597,22 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Счёт';
+
+  @override
+  String get portfolioAccountHint => 'напр. ИИС (необязательно)';
+
+  @override
+  String get portfolioAccountAdd => 'Указать счёт';
+
+  @override
+  String get portfolioAccountsAll => 'Все счета';
+
+  @override
+  String get portfolioAccountNote =>
+      'Только сделки по этому счёту. Денежные средства и дивиденды — в разделе «Все счета».';
+
+  @override
   String get portfolioGoalSet => 'Задать цель';
 
   @override

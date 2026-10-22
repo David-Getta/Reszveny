@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Bivuluija bia dividende",
   "dividendRemindersSubtitle": "Dimanyisha dituku didi dividende mitekemene bilondeshile mushindu wa mfutu iwakafunda, bua wewe kuyifunda",
   "benchmarkTitleIndex": "Kufuanyikija ne indice",
-  "benchmarkHintIndex": "Bu muvua makuta a tshintu tshionso tshiuvua musumbe muteke mu fonds udi ulonda indice uvua musungule dituku dimue adi. Ma dividendes kaena mu bualu; bipeta bia kale kabiena bileja bia matuku atshilualua to."
+  "benchmarkHintIndex": "Bu muvua makuta a tshintu tshionso tshiuvua musumbe muteke mu fonds udi ulonda indice uvua musungule dituku dimue adi. Ma dividendes kaena mu bualu; bipeta bia kale kabiena bileja bia matuku atshilualua to.",
+  "portfolioAccount": "Konte",
+  "portfolioAccountHint": "tshilejilu: TBSZ 2026 (bikala musue)",
+  "portfolioAccountAdd": "Leja konte",
+  "portfolioAccountsAll": "Konte yonso",
+  "portfolioAccountNote": "Kusumba ne kusumbisha bia konte eyi nkayabi. Mfranga ya mu bianza ne dividende bidi bimueneka mu Konte yonso."
 }

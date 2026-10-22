@@ -2528,6 +2528,22 @@ class AppLocalizationsMr extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'खाते';
+
+  @override
+  String get portfolioAccountHint => 'उदा. NPS (ऐच्छिक)';
+
+  @override
+  String get portfolioAccountAdd => 'खाते नमूद करा';
+
+  @override
+  String get portfolioAccountsAll => 'सर्व खाती';
+
+  @override
+  String get portfolioAccountNote =>
+      'फक्त या खात्याचे व्यवहार. रोख आणि लाभांश \'सर्व खाती\' मध्ये दाखवले जातात.';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य ठरवा';
 
   @override

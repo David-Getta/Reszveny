@@ -2547,6 +2547,22 @@ class AppLocalizationsNso extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Akhaonto';
+
+  @override
+  String get portfolioAccountHint => 'mohl. TFSA (ga go gapeletšwe)';
+
+  @override
+  String get portfolioAccountAdd => 'Laetša akhaonto';
+
+  @override
+  String get portfolioAccountsAll => 'Diakhaonto ka moka';
+
+  @override
+  String get portfolioAccountNote =>
+      'Dithekišano tša akhaonto ye fela. Tšhelete le dividende di bontšhwa ka fase ga Diakhaonto ka moka.';
+
+  @override
   String get portfolioGoalSet => 'Bea maikemišetšo';
 
   @override

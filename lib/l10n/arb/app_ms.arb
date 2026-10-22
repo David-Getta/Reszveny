@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Peringatan dividen",
   "dividendRemindersSubtitle": "Pemberitahuan pada hari dividen dijangka berdasarkan rentak pembayaran yang anda rekodkan, supaya anda boleh merekodkannya",
   "benchmarkTitleIndex": "Berbanding indeks",
-  "benchmarkHintIndex": "Seolah-olah setiap belian anda dimasukkan ke dalam dana yang menjejaki indeks pilihan pada hari yang sama. Dividen tidak termasuk; pulangan lalu tidak meramalkan pulangan masa hadapan."
+  "benchmarkHintIndex": "Seolah-olah setiap belian anda dimasukkan ke dalam dana yang menjejaki indeks pilihan pada hari yang sama. Dividen tidak termasuk; pulangan lalu tidak meramalkan pulangan masa hadapan.",
+  "portfolioAccount": "Akaun",
+  "portfolioAccountHint": "cth. PRS (pilihan)",
+  "portfolioAccountAdd": "Nyatakan akaun",
+  "portfolioAccountsAll": "Semua akaun",
+  "portfolioAccountNote": "Hanya transaksi akaun ini. Tunai dan dividen dipaparkan di bawah Semua akaun."
 }

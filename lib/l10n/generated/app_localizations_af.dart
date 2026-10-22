@@ -2533,6 +2533,22 @@ class AppLocalizationsAf extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Rekening';
+
+  @override
+  String get portfolioAccountHint => 'bv. TFSA (opsioneel)';
+
+  @override
+  String get portfolioAccountAdd => 'Gee \'n rekening aan';
+
+  @override
+  String get portfolioAccountsAll => 'Alle rekeninge';
+
+  @override
+  String get portfolioAccountNote =>
+      'Slegs hierdie rekening se transaksies. Kontant en dividende word onder Alle rekeninge gewys.';
+
+  @override
   String get portfolioGoalSet => 'Stel \'n doelwit';
 
   @override

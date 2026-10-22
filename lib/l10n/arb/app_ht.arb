@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Rapèl dividann",
   "dividendRemindersSubtitle": "Yon notifikasyon jou yo atann yon dividann dapre ritm peman ou te anrejistre yo, pou w ka anrejistre l",
   "benchmarkTitleIndex": "Konpare ak yon endèks",
-  "benchmarkHintIndex": "Tankou si chak acha te envesti nan yon fon ki swiv endèks ou chwazi a menm jou a. San dividann; rannman pase pa predi rannman nan lavni."
+  "benchmarkHintIndex": "Tankou si chak acha te envesti nan yon fon ki swiv endèks ou chwazi a menm jou a. San dividann; rannman pase pa predi rannman nan lavni.",
+  "portfolioAccount": "Kont",
+  "portfolioAccountHint": "egz. TBSZ 2026 (opsyonèl)",
+  "portfolioAccountAdd": "Presize yon kont",
+  "portfolioAccountsAll": "Tout kont yo",
+  "portfolioAccountNote": "Se sèlman tranzaksyon kont sa a. Lajan kach ak dividann yo parèt nan Tout kont yo."
 }

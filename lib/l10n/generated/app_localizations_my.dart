@@ -2521,6 +2521,22 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'အကောင့်';
+
+  @override
+  String get portfolioAccountHint => 'ဥပမာ TBSZ 2026 (ရွေးချယ်နိုင်သည်)';
+
+  @override
+  String get portfolioAccountAdd => 'အကောင့် သတ်မှတ်ရန်';
+
+  @override
+  String get portfolioAccountsAll => 'အကောင့်အားလုံး';
+
+  @override
+  String get portfolioAccountNote =>
+      'ဤအကောင့်၏ အရောင်းအဝယ်များသာ။ ငွေသားနှင့် အမြတ်ဝေစုများကို \"အကောင့်အားလုံး\" တွင် ပြသသည်။';
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

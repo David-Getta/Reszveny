@@ -2508,6 +2508,22 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'គណនី';
+
+  @override
+  String get portfolioAccountHint => 'ឧ. TBSZ 2026 (ស្រេចចិត្ត)';
+
+  @override
+  String get portfolioAccountAdd => 'បញ្ជាក់គណនី';
+
+  @override
+  String get portfolioAccountsAll => 'គណនីទាំងអស់';
+
+  @override
+  String get portfolioAccountNote =>
+      'មានតែប្រតិបត្តិការរបស់គណនីនេះប៉ុណ្ណោះ។ សាច់ប្រាក់ និងភាគលាភត្រូវបានបង្ហាញនៅក្រោម «គណនីទាំងអស់»។';
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Priminimai apie dividendus",
   "dividendRemindersSubtitle": "Pranešimas tą dieną, kai pagal jūsų įrašytų išmokų ritmą laukiama dividendo, kad galėtumėte jį įrašyti",
   "benchmarkTitleIndex": "Palyginti su indeksu",
-  "benchmarkHintIndex": "Tarsi kiekvienas pirkimas tą pačią dieną būtų investuotas į fondą, sekantį pasirinktą indeksą. Be dividendų; ankstesnė grąža nenuspėja būsimos."
+  "benchmarkHintIndex": "Tarsi kiekvienas pirkimas tą pačią dieną būtų investuotas į fondą, sekantį pasirinktą indeksą. Be dividendų; ankstesnė grąža nenuspėja būsimos.",
+  "portfolioAccount": "Sąskaita",
+  "portfolioAccountHint": "pvz. investicinė sąskaita (neprivaloma)",
+  "portfolioAccountAdd": "Nurodyti sąskaitą",
+  "portfolioAccountsAll": "Visos sąskaitos",
+  "portfolioAccountNote": "Tik šios sąskaitos operacijos. Grynieji pinigai ir dividendai rodomi skiltyje „Visos sąskaitos“."
 }

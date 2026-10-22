@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Utbyttepåminnelser",
   "dividendRemindersSubtitle": "Et varsel den dagen et utbytte er ventet ut fra rytmen i utbyttene du har registrert, så du kan registrere det",
   "benchmarkTitleIndex": "Sammenlignet med en indeks",
-  "benchmarkHintIndex": "Som om hvert kjøp var plassert samme dag i et fond som følger den valgte indeksen. Utbytte er ikke tatt med; tidligere avkastning forutsier ikke fremtidig avkastning."
+  "benchmarkHintIndex": "Som om hvert kjøp var plassert samme dag i et fond som følger den valgte indeksen. Utbytte er ikke tatt med; tidligere avkastning forutsier ikke fremtidig avkastning.",
+  "portfolioAccount": "Konto",
+  "portfolioAccountHint": "f.eks. ASK (valgfritt)",
+  "portfolioAccountAdd": "Angi konto",
+  "portfolioAccountsAll": "Alle kontoer",
+  "portfolioAccountNote": "Bare transaksjoner på denne kontoen. Kontanter og utbytte vises under Alle kontoer."
 }

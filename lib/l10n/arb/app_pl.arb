@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Przypomnienia o dywidendach",
   "dividendRemindersSubtitle": "Powiadomienie w dniu spodziewanej dywidendy, wyznaczonym na podstawie rytmu zapisanych wypłat, by można ją było zapisać",
   "benchmarkTitleIndex": "W porównaniu z indeksem",
-  "benchmarkHintIndex": "Tak, jakby każdy zakup trafił tego samego dnia do funduszu odwzorowującego wybrany indeks. Bez dywidend; przeszłe stopy zwrotu nie przewidują przyszłych."
+  "benchmarkHintIndex": "Tak, jakby każdy zakup trafił tego samego dnia do funduszu odwzorowującego wybrany indeks. Bez dywidend; przeszłe stopy zwrotu nie przewidują przyszłych.",
+  "portfolioAccount": "Rachunek",
+  "portfolioAccountHint": "np. IKE (opcjonalnie)",
+  "portfolioAccountAdd": "Podaj rachunek",
+  "portfolioAccountsAll": "Wszystkie rachunki",
+  "portfolioAccountNote": "Tylko transakcje tego rachunku. Gotówkę i dywidendy zobaczysz po wybraniu „Wszystkie rachunki”."
 }

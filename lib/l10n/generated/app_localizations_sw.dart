@@ -2530,6 +2530,22 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Akaunti';
+
+  @override
+  String get portfolioAccountHint => 'k.m. TBSZ 2026 (si lazima)';
+
+  @override
+  String get portfolioAccountAdd => 'Bainisha akaunti';
+
+  @override
+  String get portfolioAccountsAll => 'Akaunti zote';
+
+  @override
+  String get portfolioAccountNote =>
+      'Miamala ya akaunti hii pekee. Taslimu na gawio huonyeshwa chini ya Akaunti zote.';
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

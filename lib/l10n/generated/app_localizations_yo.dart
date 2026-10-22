@@ -2528,6 +2528,22 @@ class AppLocalizationsYo extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Àkáǹtì';
+
+  @override
+  String get portfolioAccountHint => 'àpẹẹrẹ: TBSZ 2026 (kò pọn dandan)';
+
+  @override
+  String get portfolioAccountAdd => 'Yan àkáǹtì';
+
+  @override
+  String get portfolioAccountsAll => 'Gbogbo àkáǹtì';
+
+  @override
+  String get portfolioAccountNote =>
+      'Àwọn ìdúnàdúrà àkáǹtì yìí nìkan. Owó àti ìpín èrè wà lábẹ́ Gbogbo àkáǹtì.';
+
+  @override
   String get portfolioGoalSet => 'Ṣètò àfojúsùn';
 
   @override

@@ -2535,6 +2535,22 @@ class AppLocalizationsTe extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'ఖాతా';
+
+  @override
+  String get portfolioAccountHint => 'ఉదా. NPS (ఐచ్ఛికం)';
+
+  @override
+  String get portfolioAccountAdd => 'ఖాతాను పేర్కొనండి';
+
+  @override
+  String get portfolioAccountsAll => 'అన్ని ఖాతాలు';
+
+  @override
+  String get portfolioAccountNote =>
+      'ఈ ఖాతా లావాదేవీలు మాత్రమే. నగదు, డివిడెండ్లు \'అన్ని ఖాతాలు\'లో చూపబడతాయి.';
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

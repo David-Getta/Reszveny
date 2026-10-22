@@ -2526,6 +2526,22 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'ගිණුම';
+
+  @override
+  String get portfolioAccountHint => 'උදා. TBSZ 2026 (විකල්ප)';
+
+  @override
+  String get portfolioAccountAdd => 'ගිණුමක් සඳහන් කරන්න';
+
+  @override
+  String get portfolioAccountsAll => 'සියලු ගිණුම්';
+
+  @override
+  String get portfolioAccountNote =>
+      'මෙම ගිණුමේ ගනුදෙනු පමණි. මුදල් සහ ලාභාංශ \'සියලු ගිණුම්\' යටතේ පෙන්වයි.';
+
+  @override
   String get portfolioGoalSet => 'ඉලක්කයක් සකසන්න';
 
   @override

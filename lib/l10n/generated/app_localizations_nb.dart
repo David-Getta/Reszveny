@@ -2530,6 +2530,22 @@ class AppLocalizationsNb extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Konto';
+
+  @override
+  String get portfolioAccountHint => 'f.eks. ASK (valgfritt)';
+
+  @override
+  String get portfolioAccountAdd => 'Angi konto';
+
+  @override
+  String get portfolioAccountsAll => 'Alle kontoer';
+
+  @override
+  String get portfolioAccountNote =>
+      'Bare transaksjoner på denne kontoen. Kontanter og utbytte vises under Alle kontoer.';
+
+  @override
   String get portfolioGoalSet => 'Sett et mål';
 
   @override

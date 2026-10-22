@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Dividend eslatmalari",
   "dividendRemindersSubtitle": "Siz yozgan toʻlovlar maromiga koʻra dividend kutilayotgan kuni, uni yozib qoʻyishingiz uchun bildirishnoma",
   "benchmarkTitleIndex": "Indeks bilan taqqoslash",
-  "benchmarkHintIndex": "Goʻyo har bir xaridingiz oʻsha kuniyoq tanlangan indeksni kuzatuvchi fondga kiritilgandek. Dividendlar hisobga olinmagan; oʻtgan daromad kelajakdagisini bashorat qilmaydi."
+  "benchmarkHintIndex": "Goʻyo har bir xaridingiz oʻsha kuniyoq tanlangan indeksni kuzatuvchi fondga kiritilgandek. Dividendlar hisobga olinmagan; oʻtgan daromad kelajakdagisini bashorat qilmaydi.",
+  "portfolioAccount": "Hisob",
+  "portfolioAccountHint": "masalan, TBSZ 2026 (ixtiyoriy)",
+  "portfolioAccountAdd": "Hisobni koʻrsatish",
+  "portfolioAccountsAll": "Barcha hisoblar",
+  "portfolioAccountNote": "Faqat shu hisob operatsiyalari. Naqd pul va dividendlar «Barcha hisoblar» boʻlimida koʻrsatiladi."
 }

@@ -2520,6 +2520,22 @@ class AppLocalizationsSd extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'اڪائونٽ';
+
+  @override
+  String get portfolioAccountHint => 'مثال طور TBSZ 2026 (اختياري)';
+
+  @override
+  String get portfolioAccountAdd => 'اڪائونٽ ٻڌايو';
+
+  @override
+  String get portfolioAccountsAll => 'سڀ اڪائونٽ';
+
+  @override
+  String get portfolioAccountNote =>
+      'صرف هن اڪائونٽ جي ليڻ دين. نقد ۽ ڊيويڊنڊ ”سڀ اڪائونٽ“ هيٺ ڏيکاريا وڃن ٿا.';
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

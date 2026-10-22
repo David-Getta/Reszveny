@@ -2531,6 +2531,22 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Сметка';
+
+  @override
+  String get portfolioAccountHint => 'напр. TBSZ 2026 (по избор)';
+
+  @override
+  String get portfolioAccountAdd => 'Посочете сметка';
+
+  @override
+  String get portfolioAccountsAll => 'Всички сметки';
+
+  @override
+  String get portfolioAccountNote =>
+      'Само транзакциите по тази сметка. Кешът и дивидентите се показват във „Всички сметки“.';
+
+  @override
   String get portfolioGoalSet => 'Задай цел';
 
   @override

@@ -2531,6 +2531,22 @@ class AppLocalizationsTg extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Ҳисоб';
+
+  @override
+  String get portfolioAccountHint => 'мас., TBSZ 2026 (ихтиёрӣ)';
+
+  @override
+  String get portfolioAccountAdd => 'Ҳисобро муайян кардан';
+
+  @override
+  String get portfolioAccountsAll => 'Ҳамаи ҳисобҳо';
+
+  @override
+  String get portfolioAccountNote =>
+      'Танҳо амалиётҳои ҳамин ҳисоб. Пули нақд ва дивидендҳо дар «Ҳамаи ҳисобҳо» нишон дода мешаванд.';
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

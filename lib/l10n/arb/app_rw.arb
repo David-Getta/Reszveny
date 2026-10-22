@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Kwibutswa idividende",
   "dividendRemindersSubtitle": "Imenyesha ku munsi idividende yitezwe hashingiwe ku buryo ubwishyu wanditse busanzwe buza, kugira ngo uyandike",
   "benchmarkTitleIndex": "Ugereranyije na index",
-  "benchmarkHintIndex": "Nk'aho buri cyo waguze cyashyizwe uwo munsi nyine mu kigega gikurikira index wahisemo. Inyungu ku migabane ntizirimo; inyungu zabanje ntizigaragaza iz'ahazaza."
+  "benchmarkHintIndex": "Nk'aho buri cyo waguze cyashyizwe uwo munsi nyine mu kigega gikurikira index wahisemo. Inyungu ku migabane ntizirimo; inyungu zabanje ntizigaragaza iz'ahazaza.",
+  "portfolioAccount": "Konti",
+  "portfolioAccountHint": "urugero: TBSZ 2026 (si itegeko)",
+  "portfolioAccountAdd": "Erekana konti",
+  "portfolioAccountsAll": "Konti zose",
+  "portfolioAccountNote": "Ibyaguzwe n'ibyagurishijwe kuri iyi konti gusa. Amafaranga n'amadividende bigaragara muri \"Konti zose\"."
 }

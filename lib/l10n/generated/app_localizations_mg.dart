@@ -2548,6 +2548,22 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Kaonty';
+
+  @override
+  String get portfolioAccountHint => 'oh. TBSZ 2026 (tsy voatery)';
+
+  @override
+  String get portfolioAccountAdd => 'Hamaritra kaonty';
+
+  @override
+  String get portfolioAccountsAll => 'Kaonty rehetra';
+
+  @override
+  String get portfolioAccountNote =>
+      'Ny fividianana sy fivarotana amin\'ity kaonty ity ihany. Ny vola sy ny dividandy dia hita ao amin\'ny « Kaonty rehetra ».';
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

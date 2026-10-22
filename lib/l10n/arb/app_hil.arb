@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Mga pahanumdom sa dibidendo",
   "dividendRemindersSubtitle": "Pahibalo sa adlaw nga ginapaabot ang dibidendo suno sa ritmo sang imo narekord nga mga bayad, agod marekord mo ini",
   "benchmarkTitleIndex": "Kumparar sa isa ka index",
-  "benchmarkHintIndex": "Subong nga ang kada bakal gin-invest sa isa ka fund nga nagasunod sa ginpili nga index sa amo man nga adlaw. Wala labot ang dibidendo; ang nagligad nga ganansya indi nagatagna sang palaabuton."
+  "benchmarkHintIndex": "Subong nga ang kada bakal gin-invest sa isa ka fund nga nagasunod sa ginpili nga index sa amo man nga adlaw. Wala labot ang dibidendo; ang nagligad nga ganansya indi nagatagna sang palaabuton.",
+  "portfolioAccount": "Account",
+  "portfolioAccountHint": "pananglitan PERA (opsyonal)",
+  "portfolioAccountAdd": "Itakda ang account",
+  "portfolioAccountsAll": "Tanan nga account",
+  "portfolioAccountNote": "Mga transaksyon lang sini nga account. Ang cash kag dibidendo makita sa Tanan nga account."
 }

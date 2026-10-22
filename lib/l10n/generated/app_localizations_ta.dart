@@ -2540,6 +2540,22 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'கணக்கு';
+
+  @override
+  String get portfolioAccountHint => 'எ.கா. NPS (விருப்பத்தேர்வு)';
+
+  @override
+  String get portfolioAccountAdd => 'கணக்கைக் குறிப்பிடு';
+
+  @override
+  String get portfolioAccountsAll => 'அனைத்து கணக்குகள்';
+
+  @override
+  String get portfolioAccountNote =>
+      'இந்தக் கணக்கின் பரிவர்த்தனைகள் மட்டும். ரொக்கம் மற்றும் ஈவுத்தொகை \'அனைத்து கணக்குகள்\' பிரிவில் காட்டப்படும்.';
+
+  @override
   String get portfolioGoalSet => 'இலக்கை அமை';
 
   @override

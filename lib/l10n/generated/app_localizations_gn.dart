@@ -2534,6 +2534,22 @@ class AppLocalizationsGn extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Cuenta';
+
+  @override
+  String get portfolioAccountHint => 'techapyrã: TBSZ 2026 (reipotárõ)';
+
+  @override
+  String get portfolioAccountAdd => 'Ehai peteĩ cuenta';
+
+  @override
+  String get portfolioAccountsAll => 'Opaite cuenta';
+
+  @override
+  String get portfolioAccountNote =>
+      'Ko cuenta jejogua ha ñemu añoite. Pirapire ha dividendo ojehechauka Opaite cuenta-pe.';
+
+  @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';
 
   @override

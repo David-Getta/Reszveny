@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Promemoria dividendi",
   "dividendRemindersSubtitle": "Una notifica il giorno in cui è atteso un dividendo in base al ritmo dei pagamenti che hai registrato, così puoi registrarlo",
   "benchmarkTitleIndex": "Confronto con un indice",
-  "benchmarkHintIndex": "Come se ogni acquisto fosse stato investito lo stesso giorno in un fondo che replica l'indice scelto. Dividendi esclusi; i rendimenti passati non prevedono quelli futuri."
+  "benchmarkHintIndex": "Come se ogni acquisto fosse stato investito lo stesso giorno in un fondo che replica l'indice scelto. Dividendi esclusi; i rendimenti passati non prevedono quelli futuri.",
+  "portfolioAccount": "Conto",
+  "portfolioAccountHint": "es. PIR (facoltativo)",
+  "portfolioAccountAdd": "Indica un conto",
+  "portfolioAccountsAll": "Tutti i conti",
+  "portfolioAccountNote": "Solo le transazioni di questo conto. Liquidità e dividendi sono mostrati in Tutti i conti."
 }

@@ -2530,6 +2530,22 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'ანგარიში';
+
+  @override
+  String get portfolioAccountHint => 'მაგ. TBSZ 2026 (არასავალდებულო)';
+
+  @override
+  String get portfolioAccountAdd => 'ანგარიშის მითითება';
+
+  @override
+  String get portfolioAccountsAll => 'ყველა ანგარიში';
+
+  @override
+  String get portfolioAccountNote =>
+      'მხოლოდ ამ ანგარიშის ტრანზაქციები. ნაღდი ფული და დივიდენდები ნაჩვენებია განყოფილებაში „ყველა ანგარიში“.';
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

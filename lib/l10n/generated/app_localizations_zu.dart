@@ -2540,6 +2540,22 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'I-akhawunti';
+
+  @override
+  String get portfolioAccountHint => 'isb. TFSA (akuphoqelekile)';
+
+  @override
+  String get portfolioAccountAdd => 'Cacisa i-akhawunti';
+
+  @override
+  String get portfolioAccountsAll => 'Wonke ama-akhawunti';
+
+  @override
+  String get portfolioAccountNote =>
+      'Ukuthenga nokuthengisa kwale akhawunti kuphela. Imali nezabelo zenzuzo kuboniswa ngaphansi kokuthi Wonke ama-akhawunti.';
+
+  @override
   String get portfolioGoalSet => 'Setha umgomo';
 
   @override

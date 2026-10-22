@@ -2595,6 +2595,22 @@ class AppLocalizationsBe extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Рахунак';
+
+  @override
+  String get portfolioAccountHint => 'напр. TBSZ 2026 (неабавязкова)';
+
+  @override
+  String get portfolioAccountAdd => 'Пазначыць рахунак';
+
+  @override
+  String get portfolioAccountsAll => 'Усе рахункі';
+
+  @override
+  String get portfolioAccountNote =>
+      'Толькі аперацыі гэтага рахунку. Грошы і дывідэнды паказваюцца ў раздзеле «Усе рахункі».';
+
+  @override
   String get portfolioGoalSet => 'Задаць мэту';
 
   @override

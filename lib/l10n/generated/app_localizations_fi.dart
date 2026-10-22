@@ -2531,6 +2531,22 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Tili';
+
+  @override
+  String get portfolioAccountHint => 'esim. osakesäästötili (valinnainen)';
+
+  @override
+  String get portfolioAccountAdd => 'Määritä tili';
+
+  @override
+  String get portfolioAccountsAll => 'Kaikki tilit';
+
+  @override
+  String get portfolioAccountNote =>
+      'Vain tämän tilin tapahtumat. Käteinen ja osingot näkyvät kohdassa Kaikki tilit.';
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

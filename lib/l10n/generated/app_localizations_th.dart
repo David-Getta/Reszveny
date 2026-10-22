@@ -2499,6 +2499,22 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'บัญชี';
+
+  @override
+  String get portfolioAccountHint => 'เช่น RMF (ไม่บังคับ)';
+
+  @override
+  String get portfolioAccountAdd => 'ระบุบัญชี';
+
+  @override
+  String get portfolioAccountsAll => 'ทุกบัญชี';
+
+  @override
+  String get portfolioAccountNote =>
+      'เฉพาะรายการซื้อขายของบัญชีนี้ เงินสดและเงินปันผลแสดงอยู่ใน “ทุกบัญชี”';
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

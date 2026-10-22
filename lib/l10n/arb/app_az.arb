@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Dividend xatırlatmaları",
   "dividendRemindersSubtitle": "Qeyd etdiyiniz ödənişlərin ritminə əsasən dividend gözlənilən gün bildiriş ki, onu qeyd edə biləsiniz",
   "benchmarkTitleIndex": "İndekslə müqayisə",
-  "benchmarkHintIndex": "Sanki hər alışınız eyni gün seçilmiş indeksi izləyən fonda yatırılıb. Dividendlər daxil deyil; keçmiş gəlirlər gələcək gəlirləri proqnozlaşdırmır."
+  "benchmarkHintIndex": "Sanki hər alışınız eyni gün seçilmiş indeksi izləyən fonda yatırılıb. Dividendlər daxil deyil; keçmiş gəlirlər gələcək gəlirləri proqnozlaşdırmır.",
+  "portfolioAccount": "Hesab",
+  "portfolioAccountHint": "məs., TBSZ 2026 (istəyə bağlı)",
+  "portfolioAccountAdd": "Hesabı qeyd edin",
+  "portfolioAccountsAll": "Bütün hesablar",
+  "portfolioAccountNote": "Yalnız bu hesabın əməliyyatları. Nağd vəsait və dividendlər «Bütün hesablar» bölməsində göstərilir."
 }

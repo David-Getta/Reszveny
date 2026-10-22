@@ -2530,6 +2530,22 @@ class AppLocalizationsKi extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Akaũnti';
+
+  @override
+  String get portfolioAccountHint => 'mũhiano: TBSZ 2026 (ũngĩenda)';
+
+  @override
+  String get portfolioAccountAdd => 'Onania akaũnti';
+
+  @override
+  String get portfolioAccountsAll => 'Akaũnti ciothe';
+
+  @override
+  String get portfolioAccountNote =>
+      'Ũgũri na ũendia wa akaũnti ĩno tu. Mbeca cia moko na mĩgai ya faida ionekaga harĩ Akaũnti ciothe.';
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

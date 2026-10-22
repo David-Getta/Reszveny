@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Bîranînên dividendê",
   "dividendRemindersSubtitle": "Agahdariyek di roja ku li gorî rîtma dayînên te yên tomarkirî dividend tê hêvîkirin, da ku tu wê tomar bikî",
   "benchmarkTitleIndex": "Li gorî îndeksekê",
-  "benchmarkHintIndex": "Wekî ku her kirîn di heman rojê de li fonekê ku li pey îndeksa hilbijartî diçe hatibe veberhênan. Dabeşên qazancê ne tê de; vegerên berê pêşerojê pêşbînî nakin."
+  "benchmarkHintIndex": "Wekî ku her kirîn di heman rojê de li fonekê ku li pey îndeksa hilbijartî diçe hatibe veberhênan. Dabeşên qazancê ne tê de; vegerên berê pêşerojê pêşbînî nakin.",
+  "portfolioAccount": "Hesab",
+  "portfolioAccountHint": "mînak TBSZ 2026 (vebijarkî)",
+  "portfolioAccountAdd": "Hesabekî diyar bike",
+  "portfolioAccountsAll": "Hemû hesab",
+  "portfolioAccountNote": "Tenê danûstandinên vî hesabî. Pereyê nexd û dividend di bin Hemû hesab de têne nîşandan."
 }

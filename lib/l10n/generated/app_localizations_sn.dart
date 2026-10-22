@@ -2536,6 +2536,22 @@ class AppLocalizationsSn extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Akaundi';
+
+  @override
+  String get portfolioAccountHint => 'sem. TBSZ 2026 (kana uchida)';
+
+  @override
+  String get portfolioAccountAdd => 'Taura akaundi';
+
+  @override
+  String get portfolioAccountsAll => 'Maakaundi ese';
+
+  @override
+  String get portfolioAccountNote =>
+      'Zvakatengwa nezvakatengeswa muakaundi iyi chete. Mari nemadividendi zvinoratidzwa pasi pe\"Maakaundi ese\".';
+
+  @override
   String get portfolioGoalSet => 'Isa chinangwa';
 
   @override

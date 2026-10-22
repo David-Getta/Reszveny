@@ -2546,6 +2546,22 @@ class AppLocalizationsHil extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Account';
+
+  @override
+  String get portfolioAccountHint => 'pananglitan PERA (opsyonal)';
+
+  @override
+  String get portfolioAccountAdd => 'Itakda ang account';
+
+  @override
+  String get portfolioAccountsAll => 'Tanan nga account';
+
+  @override
+  String get portfolioAccountNote =>
+      'Mga transaksyon lang sini nga account. Ang cash kag dibidendo makita sa Tanan nga account.';
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

@@ -2459,6 +2459,22 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => '계좌';
+
+  @override
+  String get portfolioAccountHint => '예: ISA (선택)';
+
+  @override
+  String get portfolioAccountAdd => '계좌 지정';
+
+  @override
+  String get portfolioAccountsAll => '전체 계좌';
+
+  @override
+  String get portfolioAccountNote =>
+      '이 계좌의 거래만 표시됩니다. 현금과 배당금은 \'전체 계좌\'에 표시됩니다.';
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

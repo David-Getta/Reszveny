@@ -2534,6 +2534,22 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Hisob';
+
+  @override
+  String get portfolioAccountHint => 'masalan, TBSZ 2026 (ixtiyoriy)';
+
+  @override
+  String get portfolioAccountAdd => 'Hisobni koʻrsatish';
+
+  @override
+  String get portfolioAccountsAll => 'Barcha hisoblar';
+
+  @override
+  String get portfolioAccountNote =>
+      'Faqat shu hisob operatsiyalari. Naqd pul va dividendlar «Barcha hisoblar» boʻlimida koʻrsatiladi.';
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

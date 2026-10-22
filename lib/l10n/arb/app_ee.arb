@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Dividend ŋuti ŋkuɖodziwo",
   "dividendRemindersSubtitle": "Gbeƒãɖeɖe le ŋkeke si dzi wole mɔ kpɔm na dividend le fexexe siwo nèŋlɔ ɖi ƒe ɖoɖo nu, be nàte ŋu aŋlɔe ɖi",
   "benchmarkTitleIndex": "Wotsɔe sɔ kple index aɖe",
-  "benchmarkHintIndex": "Abe ɖe wotsɔ wò nuƒeƒle ɖesiaɖe ƒe ga de fund aɖe si dzea index si nètia la yome me le ŋkeke ma ke dzi ene. Dividend mele eme o; viɖe siwo va yi meɖea viɖe siwo gbɔna fiana o."
+  "benchmarkHintIndex": "Abe ɖe wotsɔ wò nuƒeƒle ɖesiaɖe ƒe ga de fund aɖe si dzea index si nètia la yome me le ŋkeke ma ke dzi ene. Dividend mele eme o; viɖe siwo va yi meɖea viɖe siwo gbɔna fiana o.",
+  "portfolioAccount": "Akɔnta",
+  "portfolioAccountHint": "kpɔɖeŋu, TBSZ 2026 (ne èdi)",
+  "portfolioAccountAdd": "Tia akɔnta aɖe",
+  "portfolioAccountsAll": "Akɔntawo katã",
+  "portfolioAccountNote": "Akɔnta sia ƒe nuƒeƒle kple nudzadzra ko. Ga le asi kple dividendwo dzena le Akɔntawo katã te."
 }

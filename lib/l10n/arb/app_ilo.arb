@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Pammalagip ti dibidendo",
   "dividendRemindersSubtitle": "Pakaammo iti aldaw a manamnama ti dibidendo segun iti ritmo dagiti nairekord a bayadmo, tapno mairekordmo daytoy",
   "benchmarkTitleIndex": "Naikompara iti maysa nga index",
-  "benchmarkHintIndex": "Kasla la naipuonan ti tunggal gatang iti fund a mangsurot iti napili nga index iti isu met laeng nga aldaw. Saan a nairaman ti dibidendo; saan a mangipakpakita ti napalabas a ganansia iti masakbayan."
+  "benchmarkHintIndex": "Kasla la naipuonan ti tunggal gatang iti fund a mangsurot iti napili nga index iti isu met laeng nga aldaw. Saan a nairaman ti dibidendo; saan a mangipakpakita ti napalabas a ganansia iti masakbayan.",
+  "portfolioAccount": "Account",
+  "portfolioAccountHint": "kas iti PERA (opsional)",
+  "portfolioAccountAdd": "Ituding ti account",
+  "portfolioAccountsAll": "Amin nga account",
+  "portfolioAccountNote": "Dagiti transaksion laeng daytoy nga account. Makita ti cash ken dibidendo iti Amin nga account."
 }

@@ -2529,6 +2529,22 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Данс';
+
+  @override
+  String get portfolioAccountHint => 'ж.нь TBSZ 2026 (заавал биш)';
+
+  @override
+  String get portfolioAccountAdd => 'Данс заах';
+
+  @override
+  String get portfolioAccountsAll => 'Бүх данс';
+
+  @override
+  String get portfolioAccountNote =>
+      'Зөвхөн энэ дансны гүйлгээ. Бэлэн мөнгө болон ногдол ашгийг «Бүх данс» хэсэгт харуулна.';
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

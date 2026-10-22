@@ -2521,6 +2521,22 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'חשבון';
+
+  @override
+  String get portfolioAccountHint => 'למשל קופת גמל להשקעה (לא חובה)';
+
+  @override
+  String get portfolioAccountAdd => 'ציון חשבון';
+
+  @override
+  String get portfolioAccountsAll => 'כל החשבונות';
+
+  @override
+  String get portfolioAccountNote =>
+      'רק העסקאות של החשבון הזה. מזומן ודיבידנדים מוצגים תחת ״כל החשבונות״.';
+
+  @override
   String get portfolioGoalSet => 'הגדרת יעד';
 
   @override

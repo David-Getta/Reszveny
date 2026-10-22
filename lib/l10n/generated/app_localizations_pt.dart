@@ -2535,6 +2535,22 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Conta';
+
+  @override
+  String get portfolioAccountHint => 'ex.: PGBL (opcional)';
+
+  @override
+  String get portfolioAccountAdd => 'Informar conta';
+
+  @override
+  String get portfolioAccountsAll => 'Todas as contas';
+
+  @override
+  String get portfolioAccountNote =>
+      'Apenas as transações desta conta. Caixa e dividendos aparecem em Todas as contas.';
+
+  @override
   String get portfolioGoalSet => 'Definir meta';
 
   @override

@@ -2539,6 +2539,22 @@ class AppLocalizationsOm extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Herrega';
+
+  @override
+  String get portfolioAccountHint => 'fkn. TBSZ 2026 (dirqama miti)';
+
+  @override
+  String get portfolioAccountAdd => 'Herrega ibsi';
+
+  @override
+  String get portfolioAccountsAll => 'Herregoota hunda';
+
+  @override
+  String get portfolioAccountNote =>
+      'Bittaa fi gurgurtaa herrega kanaa qofa. Maallaqni callaa fi diviidendiin \"Herregoota hunda\" jalatti mul\'atu.';
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

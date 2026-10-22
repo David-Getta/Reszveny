@@ -2527,6 +2527,22 @@ class AppLocalizationsAs extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'একাউণ্ট';
+
+  @override
+  String get portfolioAccountHint => 'যেনে TBSZ 2026 (ঐচ্ছিক)';
+
+  @override
+  String get portfolioAccountAdd => 'একাউণ্ট নিৰ্দিষ্ট কৰক';
+
+  @override
+  String get portfolioAccountsAll => 'সকলো একাউণ্ট';
+
+  @override
+  String get portfolioAccountNote =>
+      'কেৱল এই একাউণ্টৰ লেনদেন। নগদ আৰু লাভাংশ ‘সকলো একাউণ্ট’ত দেখুওৱা হয়।';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য নিৰ্ধাৰণ কৰক';
 
   @override

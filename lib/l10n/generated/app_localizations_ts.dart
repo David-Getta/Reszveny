@@ -2549,6 +2549,22 @@ class AppLocalizationsTs extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Akhawunti';
+
+  @override
+  String get portfolioAccountHint => 'xik. TFSA (a swi bohi)';
+
+  @override
+  String get portfolioAccountAdd => 'Kombisa akhawunti';
+
+  @override
+  String get portfolioAccountsAll => 'Tiakhawunti hinkwato';
+
+  @override
+  String get portfolioAccountNote =>
+      'Swixaviwa ni swixavisiwa swa akhawunti leyi ntsena. Mali na tidividende swi kombisiwa ehansi ka Tiakhawunti hinkwato.';
+
+  @override
   String get portfolioGoalSet => 'Veka xikongomelo';
 
   @override

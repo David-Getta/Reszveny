@@ -2584,6 +2584,22 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'الحساب';
+
+  @override
+  String get portfolioAccountHint => 'مثال: TBSZ 2026 (اختياري)';
+
+  @override
+  String get portfolioAccountAdd => 'تحديد حساب';
+
+  @override
+  String get portfolioAccountsAll => 'جميع الحسابات';
+
+  @override
+  String get portfolioAccountNote =>
+      'معاملات هذا الحساب فقط. يظهر النقد وتوزيعات الأرباح ضمن «جميع الحسابات».';
+
+  @override
   String get portfolioGoalSet => 'تحديد هدف';
 
   @override

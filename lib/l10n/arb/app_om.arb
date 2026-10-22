@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Yaadachiisa diviidendii",
   "dividendRemindersSubtitle": "Beeksisa guyyaa diviidendiin akkaataa kaffaltiiwwan ati galmeessiteetiin eegamu, akka galmeessuu dandeessuuf",
   "benchmarkTitleIndex": "Indeeksii tokko waliin wal bira qabame",
-  "benchmarkHintIndex": "Akka waan bittaan kee hundi guyyuma sana fandii indeeksii filatame hordofu keessa galeetti. Qoodni bu'aa hin hammatamne; bu'aan darbe kan gara fuulduraa hin raaguu."
+  "benchmarkHintIndex": "Akka waan bittaan kee hundi guyyuma sana fandii indeeksii filatame hordofu keessa galeetti. Qoodni bu'aa hin hammatamne; bu'aan darbe kan gara fuulduraa hin raaguu.",
+  "portfolioAccount": "Herrega",
+  "portfolioAccountHint": "fkn. TBSZ 2026 (dirqama miti)",
+  "portfolioAccountAdd": "Herrega ibsi",
+  "portfolioAccountsAll": "Herregoota hunda",
+  "portfolioAccountNote": "Bittaa fi gurgurtaa herrega kanaa qofa. Maallaqni callaa fi diviidendiin \"Herregoota hunda\" jalatti mul'atu."
 }

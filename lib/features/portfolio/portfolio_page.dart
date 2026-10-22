@@ -24,7 +24,10 @@ import 'portfolio_valuation.dart';
 /// Az összesítés újraszámolása, ha a vételek vagy a megjelenítési pénznem
 /// változik; a [builder] a legutóbbi pillanatképet kapja (töltés közben is).
 class PortfolioSnapshotBuilder extends StatefulWidget {
-  const PortfolioSnapshotBuilder({super.key, required this.builder});
+  const PortfolioSnapshotBuilder({super.key, required this.builder, this.account});
+
+  /// Csak ennek a számlának a pozíciói (`null`: mind, a készpénzzel együtt).
+  final String? account;
 
   final Widget Function(BuildContext context, PortfolioSnapshot? snapshot, Future<void> Function() refresh) builder;
 
@@ -51,9 +54,12 @@ class _PortfolioSnapshotBuilderState extends State<PortfolioSnapshotBuilder> {
     return ListenableBuilder(
       listenable: Listenable.merge([services.portfolio, services.preferences]),
       builder: (context, _) {
-        final positions = services.portfolio.positions;
+        final account = widget.account;
+        final positions = services.portfolio.positionsIn(account);
         final currency = PortfolioSnapshot.totalCurrency(positions, services.displayCurrency(locale));
-        final key = '$currency|${services.portfolio.holdingsKey}|${services.portfolio.cash}';
+        // A készpénz nem számlához kötött: számla-nézetben nincs benne.
+        final cash = account == null ? services.portfolio.cash : const <String, double>{};
+        final key = '$currency|${services.portfolio.holdingsKey}|$cash|${account ?? ''}';
         if (key != _key) {
           _key = key;
           _future = PortfolioSnapshot.load(
@@ -61,8 +67,8 @@ class _PortfolioSnapshotBuilderState extends State<PortfolioSnapshotBuilder> {
             marketData: services.marketData,
             fx: services.fx,
             currency: currency,
-            closed: services.portfolio.closedPositions,
-            cash: services.portfolio.cash,
+            closed: services.portfolio.closedIn(account),
+            cash: cash,
           ).then((s) => _last = s);
         }
         return FutureBuilder<PortfolioSnapshot>(
@@ -76,10 +82,20 @@ class _PortfolioSnapshotBuilderState extends State<PortfolioSnapshotBuilder> {
 
 /// A portfólió oldala: összérték, napi változás, nyereség/veszteség,
 /// megoszlás és a pozíciók. A sorra koppintva megnyílik a részvény.
-class PortfolioPage extends StatelessWidget {
+class PortfolioPage extends StatefulWidget {
   const PortfolioPage({super.key, required this.onOpenSymbol});
 
   final ValueChanged<StockCandidate> onOpenSymbol;
+
+  @override
+  State<PortfolioPage> createState() => _PortfolioPageState();
+}
+
+class _PortfolioPageState extends State<PortfolioPage> {
+  /// A választott számla (`null`: minden számla).
+  String? _account;
+
+  ValueChanged<StockCandidate> get onOpenSymbol => widget.onOpenSymbol;
 
   @override
   Widget build(BuildContext context) {
@@ -96,7 +112,10 @@ class PortfolioPage extends StatelessWidget {
         listenable: services.portfolio,
         builder: (context, _) {
           if (services.portfolio.isEmpty) return _EmptyPortfolio();
+          // A törölt (már nem használt) számla szűrője megszűnik.
+          if (_account != null && !services.portfolio.accounts.contains(_account)) _account = null;
           return PortfolioSnapshotBuilder(
+            account: _account,
             builder: (context, snapshot, refresh) => RefreshIndicator(
               onRefresh: refresh,
               child: snapshot == null
@@ -106,7 +125,12 @@ class PortfolioPage extends StatelessWidget {
                         Center(child: CircularProgressIndicator()),
                       ],
                     )
-                  : _PortfolioBody(snapshot: snapshot, onOpenSymbol: onOpenSymbol),
+                  : _PortfolioBody(
+                      snapshot: snapshot,
+                      onOpenSymbol: onOpenSymbol,
+                      account: _account,
+                      onAccount: (a) => setState(() => _account = a),
+                    ),
             ),
           );
         },
@@ -204,10 +228,14 @@ class _EmptyPortfolio extends StatelessWidget {
 }
 
 class _PortfolioBody extends StatelessWidget {
-  const _PortfolioBody({required this.snapshot, required this.onOpenSymbol});
+  const _PortfolioBody({required this.snapshot, required this.onOpenSymbol, this.account, this.onAccount});
 
   final PortfolioSnapshot snapshot;
   final ValueChanged<StockCandidate> onOpenSymbol;
+
+  /// A választott számla (`null`: mind) és a választás.
+  final String? account;
+  final ValueChanged<String?>? onAccount;
 
   @override
   Widget build(BuildContext context) {
@@ -227,6 +255,33 @@ class _PortfolioBody extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
+                // Számlák (ha legalább egy tranzakciónak van): szűrés egy számlára.
+                if (AppServices.of(context).portfolio.accounts case final accounts when accounts.isNotEmpty) ...[
+                  Wrap(
+                    key: const ValueKey('portfolio-accounts'),
+                    spacing: 6,
+                    runSpacing: 4,
+                    children: [
+                      for (final a in <String?>[null, ...accounts])
+                        ChoiceChip(
+                          key: ValueKey('account-${a ?? '*'}'),
+                          label: Text(a ?? l10n.portfolioAccountsAll),
+                          selected: a == account,
+                          visualDensity: VisualDensity.compact,
+                          onSelected: (_) => onAccount?.call(a),
+                        ),
+                    ],
+                  ),
+                  if (account != null)
+                    Padding(
+                      padding: const EdgeInsets.only(top: 4, left: 4),
+                      child: Text(
+                        l10n.portfolioAccountNote,
+                        style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                      ),
+                    ),
+                  const SizedBox(height: 8),
+                ],
                 Card(
                   child: Padding(
                     padding: const EdgeInsets.all(18),
@@ -291,15 +346,17 @@ class _PortfolioBody extends StatelessWidget {
                           const SizedBox(height: 10),
                           Text(l10n.portfolioDividendNote, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
                         ],
-                        if (!s.unknown) _GoalBar(snapshot: s, fmt: fmt),
+                        // A cél az egész portfólióra szól: számla-nézetben nem látszik.
+                        if (!s.unknown && account == null) _GoalBar(snapshot: s, fmt: fmt),
                       ],
                     ),
                   ),
                 ),
                 if (s.rows.where((r) => r.weight > 0).length > 1) AllocationCard(snapshot: s, fmt: fmt),
-                PortfolioHistoryCard(snapshot: s),
+                PortfolioHistoryCard(snapshot: s, account: account),
                 PortfolioReviewCard(snapshot: s),
-                if (s.rows.isNotEmpty) _PositionsSection(snapshot: s, fmt: fmt, onOpenSymbol: onOpenSymbol),
+                if (s.rows.isNotEmpty)
+                  _PositionsSection(snapshot: s, fmt: fmt, onOpenSymbol: onOpenSymbol, account: account),
                 if (s.realizedByYear.isNotEmpty) ...[
                   Padding(
                     padding: const EdgeInsets.fromLTRB(4, 16, 4, 8),
@@ -337,7 +394,8 @@ class _PortfolioBody extends StatelessWidget {
                     ),
                   ),
                 ],
-                DividendsCard(currency: ccy, annualDividend: s.annualDividend),
+                // Az osztalékok nem számlához kötöttek: számla-nézetben nem látszanak.
+                if (account == null) DividendsCard(currency: ccy, annualDividend: s.annualDividend),
                 if (s.closed.isNotEmpty) ...[
                   Padding(
                     padding: const EdgeInsets.fromLTRB(4, 16, 4, 8),
@@ -362,7 +420,7 @@ class _PortfolioBody extends StatelessWidget {
                                 IconButton(
                                   tooltip: l10n.portfolioTransactions,
                                   icon: Icon(Icons.more_vert_rounded, color: p.muted),
-                                  onPressed: () => showPurchasesSheet(context, c.position),
+                                  onPressed: () => showPurchasesSheet(context, c.position, account: account),
                                 ),
                               ],
                             ),
@@ -869,7 +927,9 @@ List<PositionValue> sortPositions(List<PositionValue> rows, PositionSort sort) {
 
 /// „Pozíciók” fejléc rendezés-menüvel és a pozíciók listája.
 class _PositionsSection extends StatefulWidget {
-  const _PositionsSection({required this.snapshot, required this.fmt, required this.onOpenSymbol});
+  const _PositionsSection({required this.snapshot, required this.fmt, required this.onOpenSymbol, this.account});
+
+  final String? account;
 
   final PortfolioSnapshot snapshot;
   final Fmt fmt;
@@ -942,7 +1002,7 @@ class _PositionsSectionState extends State<_PositionsSection> {
               children: [
                 for (final (i, r) in rows.indexed) ...[
                   if (i > 0) const Divider(height: 1),
-                  _PositionTile(row: r, fmt: widget.fmt, onOpenSymbol: widget.onOpenSymbol),
+                  _PositionTile(row: r, fmt: widget.fmt, onOpenSymbol: widget.onOpenSymbol, account: widget.account),
                 ],
               ],
             ),
@@ -954,8 +1014,9 @@ class _PositionsSectionState extends State<_PositionsSection> {
 }
 
 class _PositionTile extends StatelessWidget {
-  const _PositionTile({required this.row, required this.fmt, required this.onOpenSymbol});
+  const _PositionTile({required this.row, required this.fmt, required this.onOpenSymbol, this.account});
 
+  final String? account;
   final PositionValue row;
   final Fmt fmt;
   final ValueChanged<StockCandidate> onOpenSymbol;
@@ -1038,7 +1099,7 @@ class _PositionTile extends StatelessWidget {
               key: ValueKey('position-menu-${pos.symbol}'),
               tooltip: l10n.portfolioTransactions,
               icon: Icon(Icons.more_vert_rounded, color: p.muted),
-              onPressed: () => showPurchasesSheet(context, pos, currentPrice: row.price),
+              onPressed: () => showPurchasesSheet(context, pos, currentPrice: row.price, account: account),
             ),
           ],
         ),
@@ -1049,7 +1110,7 @@ class _PositionTile extends StatelessWidget {
 
 /// Egy pozíció tranzakciói (vételek és eladások) törlés-gombbal, fölöttük az
 /// eladás gombja (ha még van birtokolt darab) és a realizált nyereség.
-Future<void> showPurchasesSheet(BuildContext context, Position position, {double? currentPrice}) {
+Future<void> showPurchasesSheet(BuildContext context, Position position, {double? currentPrice, String? account}) {
   // A legutóbb törölt tranzakció, illetve felaprózás (visszavonható, amíg a lap nyitva van).
   final removed = ValueNotifier<PortfolioLot?>(null);
   final removedSplit = ValueNotifier<SplitRecord?>(null);
@@ -1067,7 +1128,8 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
         listenable: Listenable.merge([services.portfolio, removed, removedSplit]),
         builder: (context, _) {
           // A felaprózásokkal igazított tételek (a törlés az eredeti azonosítóval megy).
-          final lots = services.portfolio.adjustedLots.where((l) => l.symbol == position.symbol).toList()
+          // Számla-nézetben csak annak a számlának a tranzakciói (az eladás is oda kerül).
+          final lots = services.portfolio.adjustedLotsIn(account).where((l) => l.symbol == position.symbol).toList()
             ..sort((a, b) => (b.date ?? DateTime(0)).compareTo(a.date ?? DateTime(0)));
           final now = Position(symbol: position.symbol, currency: position.currency, lots: lots);
           // „Törölve · Visszavonás” sor a legutóbb törölt tételhez ([name]: a kulcsok előtagja).
@@ -1095,7 +1157,7 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
                       children: [
                         Expanded(
                           child: Text(
-                            '${position.symbol} · ${l10n.portfolioTransactions}',
+                            [position.symbol, l10n.portfolioTransactions, ?account].join(' · '),
                             style: Theme.of(context).textTheme.titleMedium,
                           ),
                         ),
@@ -1123,6 +1185,7 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
                               currency: position.currency,
                               currentPrice: currentPrice,
                               sellMax: now.quantity,
+                              account: account,
                             ),
                             icon: const Icon(Icons.sell_outlined, size: 18),
                             label: Text(l10n.portfolioSell),
@@ -1227,7 +1290,11 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
                       title: Text(
                         '${lot.sell ? '${l10n.portfolioSold} ' : ''}${qty(lot.quantity)} × ${fmt.money(lot.price, lot.currency)}',
                       ),
-                      subtitle: lot.date == null ? null : Text(fmt.date(lot.date)),
+                      // Minden számla nézetében a tétel számlája is (ha van).
+                      subtitle: switch ([if (lot.date != null) fmt.date(lot.date), if (account == null) ?lot.account]) {
+                        final parts when parts.isNotEmpty => Text(parts.join(' · ')),
+                        _ => null,
+                      },
                       trailing: TextButton.icon(
                         // A lapon az igazított másolat látszik; a visszavonáshoz a tárolt tétel kell.
                         onPressed: () async => removed.value = await services.portfolio.remove(lot.id),

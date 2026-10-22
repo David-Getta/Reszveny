@@ -2542,6 +2542,22 @@ class AppLocalizationsQu extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Cuenta';
+
+  @override
+  String get portfolioAccountHint => 'kayhina: TBSZ 2026 (munaspaykiqa)';
+
+  @override
+  String get portfolioAccountAdd => 'Cuentata akllay';
+
+  @override
+  String get portfolioAccountsAll => 'Llapan cuentakuna';
+
+  @override
+  String get portfolioAccountNote =>
+      'Kay cuentapa rantiy rantikuyninkunalla. Qullqi, dividendokunapas «Llapan cuentakuna» nisqapim rikhurin.';
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

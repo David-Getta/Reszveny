@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Dividandi hakilijiginw",
   "dividendRemindersSubtitle": "Kunnafoni dividandi makɔnɔnen don, ka da i ka sarali sɛbɛnnenw taamacogo kan, walasa i k'a sɛbɛn",
   "benchmarkTitleIndex": "Ni indɛkisi dɔ sanga",
-  "benchmarkHintIndex": "I n'a fɔ i ka sanni kelen kelen bɛɛ wari donna fɔn dɔ la min bɛ i ka indɛkisi sugandilen tugu o don kelen in. Tɔnɔ tilalenw ma jate; tɛmɛnen tɔnɔ tɛ nata tɔnɔ fɔ ka kɔn."
+  "benchmarkHintIndex": "I n'a fɔ i ka sanni kelen kelen bɛɛ wari donna fɔn dɔ la min bɛ i ka indɛkisi sugandilen tugu o don kelen in. Tɔnɔ tilalenw ma jate; tɛmɛnen tɔnɔ tɛ nata tɔnɔ fɔ ka kɔn.",
+  "portfolioAccount": "Jate",
+  "portfolioAccountHint": "misali: TBSZ 2026 (n'i b'a fɛ)",
+  "portfolioAccountAdd": "Jate dɔ sɛbɛn",
+  "portfolioAccountsAll": "Jate bɛɛ",
+  "portfolioAccountNote": "Nin jate in ka sanniw ni feereliw dɔrɔn. Wari gansan ni dividandiw bɛ jira Jate bɛɛ kɔnɔ."
 }

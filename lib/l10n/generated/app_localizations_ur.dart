@@ -2529,6 +2529,22 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'اکاؤنٹ';
+
+  @override
+  String get portfolioAccountHint => 'مثلاً TBSZ 2026 (اختیاری)';
+
+  @override
+  String get portfolioAccountAdd => 'اکاؤنٹ بتائیں';
+
+  @override
+  String get portfolioAccountsAll => 'تمام اکاؤنٹس';
+
+  @override
+  String get portfolioAccountNote =>
+      'صرف اس اکاؤنٹ کے لین دین۔ نقد اور ڈیویڈنڈ ”تمام اکاؤنٹس“ کے تحت دکھائے جاتے ہیں۔';
+
+  @override
   String get portfolioGoalSet => 'ہدف مقرر کریں';
 
   @override

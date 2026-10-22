@@ -2595,6 +2595,22 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Účet';
+
+  @override
+  String get portfolioAccountHint => 'napr. DIP (voliteľné)';
+
+  @override
+  String get portfolioAccountAdd => 'Zadať účet';
+
+  @override
+  String get portfolioAccountsAll => 'Všetky účty';
+
+  @override
+  String get portfolioAccountNote =>
+      'Len transakcie tohto účtu. Hotovosť a dividendy nájdete v časti Všetky účty.';
+
+  @override
   String get portfolioGoalSet => 'Nastaviť cieľ';
 
   @override

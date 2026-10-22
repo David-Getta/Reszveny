@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Kũririkania mũgai wa faida",
   "dividendRemindersSubtitle": "Imenyithia mũthenya ũrĩa mũgai wa faida ũrerĩgĩrĩirwo kũringana na mũtaratara wa marĩhi marĩa wandĩkĩte, nĩguo ũwandĩke",
   "benchmarkTitleIndex": "Kũgerekanio na index",
-  "benchmarkHintIndex": "Taarĩ ta mbeca cia o ũgũri ciaigirũo thĩinĩ wa fund ĩrũmagĩrĩra index ĩrĩa wathuurire mũthenya o ũcio. Dividend itiigĩtwo; uumithio wa tene ndũrathaga uumithio wa thutha."
+  "benchmarkHintIndex": "Taarĩ ta mbeca cia o ũgũri ciaigirũo thĩinĩ wa fund ĩrũmagĩrĩra index ĩrĩa wathuurire mũthenya o ũcio. Dividend itiigĩtwo; uumithio wa tene ndũrathaga uumithio wa thutha.",
+  "portfolioAccount": "Akaũnti",
+  "portfolioAccountHint": "mũhiano: TBSZ 2026 (ũngĩenda)",
+  "portfolioAccountAdd": "Onania akaũnti",
+  "portfolioAccountsAll": "Akaũnti ciothe",
+  "portfolioAccountNote": "Ũgũri na ũendia wa akaũnti ĩno tu. Mbeca cia moko na mĩgai ya faida ionekaga harĩ Akaũnti ciothe."
 }

@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Panginget dividen",
   "dividendRemindersSubtitle": "Béwara dina poé dividen diperkirakeun dumasar kana wirahma pamayaran anu anjeun catet, supados anjeun tiasa nyatetna",
   "benchmarkTitleIndex": "Dibandingkeun jeung indéks",
-  "benchmarkHintIndex": "Saolah-olah unggal pameser anjeun diasupkeun dina poé anu sarua ka dana anu nuturkeun indéks anu dipilih. Dividén teu kaasup; hasil ti tukang henteu ngaramal hasil ka hareup."
+  "benchmarkHintIndex": "Saolah-olah unggal pameser anjeun diasupkeun dina poé anu sarua ka dana anu nuturkeun indéks anu dipilih. Dividén teu kaasup; hasil ti tukang henteu ngaramal hasil ka hareup.",
+  "portfolioAccount": "Akun",
+  "portfolioAccountHint": "conto: TBSZ 2026 (opsional)",
+  "portfolioAccountAdd": "Tangtukeun akun",
+  "portfolioAccountsAll": "Sadaya akun",
+  "portfolioAccountNote": "Ngan transaksi akun ieu. Tunai jeung dividen ditémbongkeun dina Sadaya akun."
 }

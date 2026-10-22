@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Dividend reminder",
   "dividendRemindersSubtitle": "Notification for di day wey we expect dividend, based on how your recorded payments dey come, so you fit record am",
   "benchmarkTitleIndex": "Compare am with one index",
-  "benchmarkHintIndex": "Like say everytin wey you buy enter fund wey dey follow di index wey you choose, dat same day. Dividend no dey inside; wetin e gain before no mean say e go gain like dat for future."
+  "benchmarkHintIndex": "Like say everytin wey you buy enter fund wey dey follow di index wey you choose, dat same day. Dividend no dey inside; wetin e gain before no mean say e go gain like dat for future.",
+  "portfolioAccount": "Account",
+  "portfolioAccountHint": "like TBSZ 2026 (if you want)",
+  "portfolioAccountAdd": "Put account",
+  "portfolioAccountsAll": "All accounts",
+  "portfolioAccountNote": "Na only dis account buy and sell. Cash and dividend dey show for All accounts."
 }

@@ -2537,6 +2537,22 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Հաշիվ';
+
+  @override
+  String get portfolioAccountHint => 'օր.՝ TBSZ 2026 (ոչ պարտադիր)';
+
+  @override
+  String get portfolioAccountAdd => 'Նշել հաշիվը';
+
+  @override
+  String get portfolioAccountsAll => 'Բոլոր հաշիվները';
+
+  @override
+  String get portfolioAccountNote =>
+      'Միայն այս հաշվի գործարքները։ Կանխիկը և շահաբաժինները ցուցադրվում են «Բոլոր հաշիվները» բաժնում։';
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

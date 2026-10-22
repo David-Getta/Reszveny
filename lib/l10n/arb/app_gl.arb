@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Lembretes de dividendos",
   "dividendRemindersSubtitle": "Unha notificación o día en que se espera un dividendo segundo o ritmo dos teus pagamentos rexistrados, para que poidas rexistralo",
   "benchmarkTitleIndex": "Comparado cun índice",
-  "benchmarkHintIndex": "Como se cada compra se investise o mesmo día nun fondo que replica o índice escollido. Sen dividendos; as rendibilidades pasadas non predín as futuras."
+  "benchmarkHintIndex": "Como se cada compra se investise o mesmo día nun fondo que replica o índice escollido. Sen dividendos; as rendibilidades pasadas non predín as futuras.",
+  "portfolioAccount": "Conta",
+  "portfolioAccountHint": "p. ex. Conta de valores (opcional)",
+  "portfolioAccountAdd": "Indicar unha conta",
+  "portfolioAccountsAll": "Todas as contas",
+  "portfolioAccountNote": "Só as transaccións desta conta. O efectivo e os dividendos móstranse en Todas as contas."
 }

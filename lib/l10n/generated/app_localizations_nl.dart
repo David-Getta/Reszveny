@@ -2535,6 +2535,22 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Rekening';
+
+  @override
+  String get portfolioAccountHint => 'bijv. lijfrente (optioneel)';
+
+  @override
+  String get portfolioAccountAdd => 'Rekening opgeven';
+
+  @override
+  String get portfolioAccountsAll => 'Alle rekeningen';
+
+  @override
+  String get portfolioAccountNote =>
+      'Alleen transacties van deze rekening. Cash en dividend staan onder Alle rekeningen.';
+
+  @override
   String get portfolioGoalSet => 'Doel instellen';
 
   @override

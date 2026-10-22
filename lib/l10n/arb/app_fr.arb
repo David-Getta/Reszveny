@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Rappels de dividendes",
   "dividendRemindersSubtitle": "Une notification le jour où un dividende est attendu d’après le rythme de vos versements enregistrés, pour que vous puissiez l’enregistrer",
   "benchmarkTitleIndex": "Comparaison avec un indice",
-  "benchmarkHintIndex": "Comme si chaque achat avait été placé le même jour dans un fonds répliquant l'indice choisi. Hors dividendes ; les performances passées ne préjugent pas des performances futures."
+  "benchmarkHintIndex": "Comme si chaque achat avait été placé le même jour dans un fonds répliquant l'indice choisi. Hors dividendes ; les performances passées ne préjugent pas des performances futures.",
+  "portfolioAccount": "Compte",
+  "portfolioAccountHint": "p. ex. PEA (facultatif)",
+  "portfolioAccountAdd": "Préciser un compte",
+  "portfolioAccountsAll": "Tous les comptes",
+  "portfolioAccountNote": "Uniquement les transactions de ce compte. Les liquidités et les dividendes figurent dans Tous les comptes."
 }

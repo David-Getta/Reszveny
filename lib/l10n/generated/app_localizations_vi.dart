@@ -2523,6 +2523,22 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Tài khoản';
+
+  @override
+  String get portfolioAccountHint => 'ví dụ: TBSZ 2026 (không bắt buộc)';
+
+  @override
+  String get portfolioAccountAdd => 'Chỉ định tài khoản';
+
+  @override
+  String get portfolioAccountsAll => 'Tất cả tài khoản';
+
+  @override
+  String get portfolioAccountNote =>
+      'Chỉ giao dịch của tài khoản này. Tiền mặt và cổ tức hiển thị trong Tất cả tài khoản.';
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

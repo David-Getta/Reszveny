@@ -2526,6 +2526,22 @@ class AppLocalizationsOr extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'ଆକାଉଣ୍ଟ';
+
+  @override
+  String get portfolioAccountHint => 'ଯେପରି NPS (ବୈକଳ୍ପିକ)';
+
+  @override
+  String get portfolioAccountAdd => 'ଆକାଉଣ୍ଟ ଉଲ୍ଲେଖ କରନ୍ତୁ';
+
+  @override
+  String get portfolioAccountsAll => 'ସମସ୍ତ ଆକାଉଣ୍ଟ';
+
+  @override
+  String get portfolioAccountNote =>
+      'କେବଳ ଏହି ଆକାଉଣ୍ଟର କାରବାର। ନଗଦ ଓ ଡିଭିଡେଣ୍ଡ \'ସମସ୍ତ ଆକାଉଣ୍ଟ\'ରେ ଦେଖାଯାଏ।';
+
+  @override
   String get portfolioGoalSet => 'ଲକ୍ଷ୍ୟ ସ୍ଥିର କରନ୍ତୁ';
 
   @override

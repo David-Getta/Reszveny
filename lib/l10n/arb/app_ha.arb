@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Tunatarwar rabon riba",
   "dividendRemindersSubtitle": "Sanarwa a ranar da ake sa ran rabon riba bisa tsarin biyan da ka rubuta, don ka rubuta shi",
   "benchmarkTitleIndex": "Kwatanta da ma'auni",
-  "benchmarkHintIndex": "Kamar an saka kuɗin kowace siyayya a asusun da ke bin ma'aunin da aka zaɓa a rana ɗaya. Ba a haɗa rabon riba ba; ribar da ta gabata ba ta hasashen ta gaba."
+  "benchmarkHintIndex": "Kamar an saka kuɗin kowace siyayya a asusun da ke bin ma'aunin da aka zaɓa a rana ɗaya. Ba a haɗa rabon riba ba; ribar da ta gabata ba ta hasashen ta gaba.",
+  "portfolioAccount": "Asusu",
+  "portfolioAccountHint": "misali TBSZ 2026 (ba dole ba)",
+  "portfolioAccountAdd": "Bayyana asusu",
+  "portfolioAccountsAll": "Dukkan asusu",
+  "portfolioAccountNote": "Ma'amalolin wannan asusu kawai. Ana nuna tsabar kuɗi da rabon riba a ƙarƙashin Dukkan asusu."
 }

@@ -2534,6 +2534,22 @@ class AppLocalizationsEe extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Akɔnta';
+
+  @override
+  String get portfolioAccountHint => 'kpɔɖeŋu, TBSZ 2026 (ne èdi)';
+
+  @override
+  String get portfolioAccountAdd => 'Tia akɔnta aɖe';
+
+  @override
+  String get portfolioAccountsAll => 'Akɔntawo katã';
+
+  @override
+  String get portfolioAccountNote =>
+      'Akɔnta sia ƒe nuƒeƒle kple nudzadzra ko. Ga le asi kple dividendwo dzena le Akɔntawo katã te.';
+
+  @override
   String get portfolioGoalSet => 'Ɖo taɖodzinu';
 
   @override

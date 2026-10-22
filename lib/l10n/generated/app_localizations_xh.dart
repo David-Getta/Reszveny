@@ -2541,6 +2541,22 @@ class AppLocalizationsXh extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Iakhawunti';
+
+  @override
+  String get portfolioAccountHint => 'umz. TFSA (ayinyanzelekanga)';
+
+  @override
+  String get portfolioAccountAdd => 'Chaza iakhawunti';
+
+  @override
+  String get portfolioAccountsAll => 'Zonke iiakhawunti';
+
+  @override
+  String get portfolioAccountNote =>
+      'Iintengiselwano zale akhawunti kuphela. Imali nezahlulo ziboniswa phantsi kwe-\"Zonke iiakhawunti\".';
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

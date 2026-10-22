@@ -2530,6 +2530,22 @@ class AppLocalizationsTk extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Hasap';
+
+  @override
+  String get portfolioAccountHint => 'meselem, TBSZ 2026 (hökmany däl)';
+
+  @override
+  String get portfolioAccountAdd => 'Hasaby görkez';
+
+  @override
+  String get portfolioAccountsAll => 'Ähli hasaplar';
+
+  @override
+  String get portfolioAccountNote =>
+      'Diňe şu hasabyň amallary. Nagt pul we diwidendler «Ähli hasaplar» bölüminde görkezilýär.';
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

@@ -2523,6 +2523,22 @@ class AppLocalizationsWo extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Kont';
+
+  @override
+  String get portfolioAccountHint => 'misaal: TBSZ 2026 (bu la neexee)';
+
+  @override
+  String get portfolioAccountAdd => 'Tànn kont';
+
+  @override
+  String get portfolioAccountsAll => 'Kont yépp';
+
+  @override
+  String get portfolioAccountNote =>
+      'Jënd ak jaay yu kont bii rekk. Xaalis ak dividande yi ñu ngi feeñ ci \"Kont yépp\".';
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

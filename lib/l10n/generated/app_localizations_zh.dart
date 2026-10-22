@@ -2417,6 +2417,21 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => '账户';
+
+  @override
+  String get portfolioAccountHint => '例如 个人养老金（可选）';
+
+  @override
+  String get portfolioAccountAdd => '指定账户';
+
+  @override
+  String get portfolioAccountsAll => '全部账户';
+
+  @override
+  String get portfolioAccountNote => '仅显示此账户的交易。现金和股息显示在“全部账户”下。';
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5201,6 +5216,21 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String dividendGoalReached(String amount, String goal) {
     return '按現時股息率每月約 $amount：已達成 $goal 目標';
   }
+
+  @override
+  String get portfolioAccount => '帳戶';
+
+  @override
+  String get portfolioAccountHint => '例如 強積金（可選）';
+
+  @override
+  String get portfolioAccountAdd => '指定帳戶';
+
+  @override
+  String get portfolioAccountsAll => '全部帳戶';
+
+  @override
+  String get portfolioAccountNote => '只顯示此帳戶的交易。現金及股息會在「全部帳戶」下顯示。';
 
   @override
   String get portfolioGoalSet => '設定目標';

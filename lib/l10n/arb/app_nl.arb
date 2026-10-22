@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Herinnering dividend",
   "dividendRemindersSubtitle": "Een melding op de dag dat een dividend wordt verwacht op basis van het ritme van je vastgelegde uitkeringen, zodat je het kunt vastleggen",
   "benchmarkTitleIndex": "Vergeleken met een index",
-  "benchmarkHintIndex": "Alsof elke aankoop op dezelfde dag in een fonds was gestoken dat de gekozen index volgt. Dividenden niet meegerekend; rendementen uit het verleden voorspellen geen toekomstige."
+  "benchmarkHintIndex": "Alsof elke aankoop op dezelfde dag in een fonds was gestoken dat de gekozen index volgt. Dividenden niet meegerekend; rendementen uit het verleden voorspellen geen toekomstige.",
+  "portfolioAccount": "Rekening",
+  "portfolioAccountHint": "bijv. lijfrente (optioneel)",
+  "portfolioAccountAdd": "Rekening opgeven",
+  "portfolioAccountsAll": "Alle rekeningen",
+  "portfolioAccountNote": "Alleen transacties van deze rekening. Cash en dividend staan onder Alle rekeningen."
 }

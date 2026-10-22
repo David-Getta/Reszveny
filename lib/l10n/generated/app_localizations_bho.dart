@@ -2524,6 +2524,22 @@ class AppLocalizationsBho extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'खाता';
+
+  @override
+  String get portfolioAccountHint => 'जइसे TBSZ 2026 (वैकल्पिक)';
+
+  @override
+  String get portfolioAccountAdd => 'खाता बताईं';
+
+  @override
+  String get portfolioAccountsAll => 'सब खाता';
+
+  @override
+  String get portfolioAccountNote =>
+      'खाली एह खाता के लेन-देन। नकद आ डिविडेंड ‘सब खाता’ में देखावल जाला।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करीं';
 
   @override

@@ -2526,6 +2526,22 @@ class AppLocalizationsPa extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'ਖਾਤਾ';
+
+  @override
+  String get portfolioAccountHint => 'ਜਿਵੇਂ NPS (ਵਿਕਲਪਿਕ)';
+
+  @override
+  String get portfolioAccountAdd => 'ਖਾਤਾ ਦੱਸੋ';
+
+  @override
+  String get portfolioAccountsAll => 'ਸਾਰੇ ਖਾਤੇ';
+
+  @override
+  String get portfolioAccountNote =>
+      'ਸਿਰਫ਼ ਇਸ ਖਾਤੇ ਦੇ ਲੈਣ-ਦੇਣ। ਨਕਦ ਅਤੇ ਡਿਵੀਡੈਂਡ ‘ਸਾਰੇ ਖਾਤੇ’ ਹੇਠ ਦਿਖਾਏ ਜਾਂਦੇ ਹਨ।';
+
+  @override
   String get portfolioGoalSet => 'ਟੀਚਾ ਤੈਅ ਕਰੋ';
 
   @override

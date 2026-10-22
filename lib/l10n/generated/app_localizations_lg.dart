@@ -2543,6 +2543,22 @@ class AppLocalizationsLg extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Akawunti';
+
+  @override
+  String get portfolioAccountHint => 'okugeza: TBSZ 2026 (si kya tteeka)';
+
+  @override
+  String get portfolioAccountAdd => 'Londa akawunti';
+
+  @override
+  String get portfolioAccountsAll => 'Akawunti zonna';
+
+  @override
+  String get portfolioAccountNote =>
+      'Bye wagula ne bye watunda ku akawunti eno byokka. Ensimbi enkalu ne dividendi biragibwa wansi wa Akawunti zonna.';
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

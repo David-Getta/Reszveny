@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Temettü hatırlatıcıları",
   "dividendRemindersSubtitle": "Kaydettiğiniz ödemelerin düzenine göre temettü beklenen gün, kaydedebilmeniz için bildirim",
   "benchmarkTitleIndex": "Bir endeksle karşılaştırma",
-  "benchmarkHintIndex": "Her alımınız aynı gün seçilen endeksi izleyen bir fona yatırılmış gibi. Temettüler dahil değildir; geçmiş getiriler gelecekteki getirileri öngörmez."
+  "benchmarkHintIndex": "Her alımınız aynı gün seçilen endeksi izleyen bir fona yatırılmış gibi. Temettüler dahil değildir; geçmiş getiriler gelecekteki getirileri öngörmez.",
+  "portfolioAccount": "Hesap",
+  "portfolioAccountHint": "örn. BES (isteğe bağlı)",
+  "portfolioAccountAdd": "Hesap belirt",
+  "portfolioAccountsAll": "Tüm hesaplar",
+  "portfolioAccountNote": "Yalnızca bu hesabın işlemleri. Nakit ve temettüler Tüm hesaplar altında gösterilir."
 }

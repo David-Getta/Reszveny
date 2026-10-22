@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Opomniki za dividende",
   "dividendRemindersSubtitle": "Obvestilo na dan, ko je glede na ritem vaših zabeleženih izplačil pričakovana dividenda, da jo lahko zabeležite",
   "benchmarkTitleIndex": "Primerjava z indeksom",
-  "benchmarkHintIndex": "Kot da bi bil vsak nakup isti dan vložen v sklad, ki sledi izbranemu indeksu. Brez dividend; pretekli donosi ne napovedujejo prihodnjih."
+  "benchmarkHintIndex": "Kot da bi bil vsak nakup isti dan vložen v sklad, ki sledi izbranemu indeksu. Brez dividend; pretekli donosi ne napovedujejo prihodnjih.",
+  "portfolioAccount": "Račun",
+  "portfolioAccountHint": "npr. TBSZ 2026 (neobvezno)",
+  "portfolioAccountAdd": "Navedi račun",
+  "portfolioAccountsAll": "Vsi računi",
+  "portfolioAccountNote": "Samo transakcije tega računa. Gotovina in dividende so prikazane pod Vsi računi."
 }

@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Dikgopotšo tša dividende",
   "dividendRemindersSubtitle": "Tsebišo ka letšatši leo dividende e letetšwego ka lona go ya ka morethetho wa ditefelo tše o di rekotilego, gore o kgone go e rekota",
   "benchmarkTitleIndex": "Bapetšwa le index",
-  "benchmarkHintIndex": "Bjalo ka ge eka theko ye nngwe le ye nngwe ya gago e tsentšwe ka letšatši leo ka sekhwameng se se latelago index ye o e kgethilego. Dividende ga di akaretšwe; dipoelo tša nakong ye e fetilego ga di bontšhe tša ka moso."
+  "benchmarkHintIndex": "Bjalo ka ge eka theko ye nngwe le ye nngwe ya gago e tsentšwe ka letšatši leo ka sekhwameng se se latelago index ye o e kgethilego. Dividende ga di akaretšwe; dipoelo tša nakong ye e fetilego ga di bontšhe tša ka moso.",
+  "portfolioAccount": "Akhaonto",
+  "portfolioAccountHint": "mohl. TFSA (ga go gapeletšwe)",
+  "portfolioAccountAdd": "Laetša akhaonto",
+  "portfolioAccountsAll": "Diakhaonto ka moka",
+  "portfolioAccountNote": "Dithekišano tša akhaonto ye fela. Tšhelete le dividende di bontšhwa ka fase ga Diakhaonto ka moka."
 }

@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Mementouri pentru dividende",
   "dividendRemindersSubtitle": "O notificare în ziua în care e așteptat un dividend, după ritmul plăților înregistrate de tine, ca să-l poți înregistra",
   "benchmarkTitleIndex": "Comparație cu un indice",
-  "benchmarkHintIndex": "Ca și cum fiecare achiziție ar fi fost investită în aceeași zi într-un fond care urmărește indicele ales. Fără dividende; randamentele trecute nu prezic randamentele viitoare."
+  "benchmarkHintIndex": "Ca și cum fiecare achiziție ar fi fost investită în aceeași zi într-un fond care urmărește indicele ales. Fără dividende; randamentele trecute nu prezic randamentele viitoare.",
+  "portfolioAccount": "Cont",
+  "portfolioAccountHint": "ex. TBSZ 2026 (opțional)",
+  "portfolioAccountAdd": "Specifică un cont",
+  "portfolioAccountsAll": "Toate conturile",
+  "portfolioAccountNote": "Doar tranzacțiile acestui cont. Numerarul și dividendele apar la Toate conturile."
 }

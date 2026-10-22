@@ -2534,6 +2534,22 @@ class AppLocalizationsSu extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Akun';
+
+  @override
+  String get portfolioAccountHint => 'conto: TBSZ 2026 (opsional)';
+
+  @override
+  String get portfolioAccountAdd => 'Tangtukeun akun';
+
+  @override
+  String get portfolioAccountsAll => 'Sadaya akun';
+
+  @override
+  String get portfolioAccountNote =>
+      'Ngan transaksi akun ieu. Tunai jeung dividen ditémbongkeun dina Sadaya akun.';
+
+  @override
   String get portfolioGoalSet => 'Setél target';
 
   @override

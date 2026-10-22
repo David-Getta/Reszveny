@@ -772,6 +772,33 @@ void main() {
     await _shot(tester, 'portfolio_benchmark_phone_hu');
   });
 
+  testWidgets('portfolio accounts on a phone (hungarian)', (tester) async {
+    // A minta tételei két számlán: az OTP TBSZ-en, a többi a normál számlán.
+    final sample = _samplePortfolio();
+    final portfolio = PortfolioStore(
+      lots: [
+        for (final l in sample.lots)
+          PortfolioLot(
+            id: l.id,
+            symbol: l.symbol,
+            quantity: l.quantity,
+            price: l.price,
+            currency: l.currency,
+            date: l.date,
+            sell: l.sell,
+            account: l.symbol == 'OTP' ? 'TBSZ 2026' : 'Normál',
+          ),
+      ],
+    );
+    final s = _services(locale: const Locale('hu'), portfolio: portfolio, currency: 'HUF');
+    await pumpApp(tester, s, const Size(430, 1000));
+    await tester.tap(find.text('Portfólió').last);
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('account-TBSZ 2026')));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'portfolio_account_phone_hu');
+  });
+
   testWidgets('home with the „while you were away” card on a phone (hungarian)', (tester) async {
     final now = DateTime.now();
     final yesterday = now.subtract(const Duration(days: 1)).toIso8601String().substring(0, 10);

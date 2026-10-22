@@ -2535,6 +2535,22 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'ಖಾತೆ';
+
+  @override
+  String get portfolioAccountHint => 'ಉದಾ. TBSZ 2026 (ಐಚ್ಛಿಕ)';
+
+  @override
+  String get portfolioAccountAdd => 'ಖಾತೆಯನ್ನು ನಮೂದಿಸಿ';
+
+  @override
+  String get portfolioAccountsAll => 'ಎಲ್ಲಾ ಖಾತೆಗಳು';
+
+  @override
+  String get portfolioAccountNote =>
+      'ಈ ಖಾತೆಯ ವಹಿವಾಟುಗಳು ಮಾತ್ರ. ನಗದು ಮತ್ತು ಡಿವಿಡೆಂಡ್‌ಗಳನ್ನು ‘ಎಲ್ಲಾ ಖಾತೆಗಳು’ ಅಡಿಯಲ್ಲಿ ತೋರಿಸಲಾಗುತ್ತದೆ.';
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Bokundolisi ya dividende",
   "dividendRemindersSubtitle": "Liyebisi na mokolo oyo dividende ezelami engebene na ndenge ba futa oyo okomaki eyaka, mpo okoka kokoma yango",
   "benchmarkTitleIndex": "Kokokanisa na indice moko",
-  "benchmarkHintIndex": "Lokola mbɔngɔ ya esombeli moko na moko etiamaki na fonds oyo elandaka indice oyo oponi na mokolo yango moko. Ba dividendes ezali te; matomba ya kala elakisaka te oyo ya mikolo ezali koya."
+  "benchmarkHintIndex": "Lokola mbɔngɔ ya esombeli moko na moko etiamaki na fonds oyo elandaka indice oyo oponi na mokolo yango moko. Ba dividendes ezali te; matomba ya kala elakisaka te oyo ya mikolo ezali koya.",
+  "portfolioAccount": "Compte",
+  "portfolioAccountHint": "ndakisa: TBSZ 2026 (soki olingi)",
+  "portfolioAccountAdd": "Lakisa compte",
+  "portfolioAccountsAll": "Ba compte nyonso",
+  "portfolioAccountNote": "Kaka bosombi mpe boteki ya compte oyo. Mbɔngɔ ya mabɔkɔ mpe ba dividende ezali kolakisama na Ba compte nyonso."
 }

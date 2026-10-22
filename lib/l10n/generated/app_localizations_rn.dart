@@ -2538,6 +2538,22 @@ class AppLocalizationsRn extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Konti';
+
+  @override
+  String get portfolioAccountHint => 'akarorero: TBSZ 2026 (si itegeko)';
+
+  @override
+  String get portfolioAccountAdd => 'Erekana konti';
+
+  @override
+  String get portfolioAccountsAll => 'Konti zose';
+
+  @override
+  String get portfolioAccountNote =>
+      'Ivyaguzwe n\'ivyagurishijwe vy\'iyi konti gusa. Amafaranga n\'amadividende vyerekanwa muri \"Konti zose\".';
+
+  @override
   String get portfolioGoalSet => 'Shiraho intumbero';
 
   @override

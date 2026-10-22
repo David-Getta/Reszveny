@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Dividendo yuyarichiykuna",
   "dividendRemindersSubtitle": "Qillqasqayki pagokunap purisqanman hina dividendo suyasqa p'unchawpi willachiy, qillqanaykipaq",
   "benchmarkTitleIndex": "Huk índicewan tupachisqa",
-  "benchmarkHintIndex": "Sapa rantisqaykita chay punchawllataq akllasqa índiceta qatiq fondoman churasqa hina. Dividendokuna manam yapasqachu; ñawpa gananciakunaqa manam hamuqta willanchu."
+  "benchmarkHintIndex": "Sapa rantisqaykita chay punchawllataq akllasqa índiceta qatiq fondoman churasqa hina. Dividendokuna manam yapasqachu; ñawpa gananciakunaqa manam hamuqta willanchu.",
+  "portfolioAccount": "Cuenta",
+  "portfolioAccountHint": "kayhina: TBSZ 2026 (munaspaykiqa)",
+  "portfolioAccountAdd": "Cuentata akllay",
+  "portfolioAccountsAll": "Llapan cuentakuna",
+  "portfolioAccountNote": "Kay cuentapa rantiy rantikuyninkunalla. Qullqi, dividendokunapas «Llapan cuentakuna» nisqapim rikhurin."
 }

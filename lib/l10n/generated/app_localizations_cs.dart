@@ -2590,6 +2590,22 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Účet';
+
+  @override
+  String get portfolioAccountHint => 'např. DIP (nepovinné)';
+
+  @override
+  String get portfolioAccountAdd => 'Zadat účet';
+
+  @override
+  String get portfolioAccountsAll => 'Všechny účty';
+
+  @override
+  String get portfolioAccountNote =>
+      'Jen transakce tohoto účtu. Hotovost a dividendy se zobrazují v části Všechny účty.';
+
+  @override
   String get portfolioGoalSet => 'Nastavit cíl';
 
   @override

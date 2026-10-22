@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Pengingat dividen",
   "dividendRemindersSubtitle": "Notifikasi pada hari dividen diperkirakan tiba berdasarkan pola pembayaran yang Anda catat, agar Anda dapat mencatatnya",
   "benchmarkTitleIndex": "Dibandingkan dengan indeks",
-  "benchmarkHintIndex": "Seolah setiap pembelian diinvestasikan ke reksa dana yang mengikuti indeks pilihan pada hari yang sama. Tanpa dividen; imbal hasil masa lalu tidak memprediksi imbal hasil masa depan."
+  "benchmarkHintIndex": "Seolah setiap pembelian diinvestasikan ke reksa dana yang mengikuti indeks pilihan pada hari yang sama. Tanpa dividen; imbal hasil masa lalu tidak memprediksi imbal hasil masa depan.",
+  "portfolioAccount": "Akun",
+  "portfolioAccountHint": "mis. TBSZ 2026 (opsional)",
+  "portfolioAccountAdd": "Tentukan akun",
+  "portfolioAccountsAll": "Semua akun",
+  "portfolioAccountNote": "Hanya transaksi akun ini. Kas dan dividen ditampilkan di Semua akun."
 }

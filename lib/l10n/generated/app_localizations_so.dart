@@ -2537,6 +2537,22 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Akoon';
+
+  @override
+  String get portfolioAccountHint => 'tus. TBSZ 2026 (ikhtiyaari)';
+
+  @override
+  String get portfolioAccountAdd => 'Sheeg akoon';
+
+  @override
+  String get portfolioAccountsAll => 'Dhammaan akoonnada';
+
+  @override
+  String get portfolioAccountNote =>
+      'Kaliya macaamilada akoonkan. Lacagta caddaanka ah iyo faa\'iido-saamiyada waxaa lagu muujiyaa \"Dhammaan akoonnada\".';
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

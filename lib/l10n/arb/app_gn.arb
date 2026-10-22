@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Dividendo manduʼarã",
   "dividendRemindersSubtitle": "Marandu pe ára oñehaʼarõ jave dividendo, umi pago remboguapyvaʼekue ritmo rupi, ikatu hag̃ua remboguapy",
   "benchmarkTitleIndex": "Ojeporombojoja peteĩ índice ndive",
-  "benchmarkHintIndex": "Peteĩteĩ ne jogua viru ojemoĩramoguáicha peteĩ fondo omoirũva índice reiporavóva-pe upe ára berõ. Ndoikéi dividendo; ganancia ohasaramoguare ndohechaukái tenonderãgua."
+  "benchmarkHintIndex": "Peteĩteĩ ne jogua viru ojemoĩramoguáicha peteĩ fondo omoirũva índice reiporavóva-pe upe ára berõ. Ndoikéi dividendo; ganancia ohasaramoguare ndohechaukái tenonderãgua.",
+  "portfolioAccount": "Cuenta",
+  "portfolioAccountHint": "techapyrã: TBSZ 2026 (reipotárõ)",
+  "portfolioAccountAdd": "Ehai peteĩ cuenta",
+  "portfolioAccountsAll": "Opaite cuenta",
+  "portfolioAccountNote": "Ko cuenta jejogua ha ñemu añoite. Pirapire ha dividendo ojehechauka Opaite cuenta-pe."
 }

@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Pangéling dividen",
   "dividendRemindersSubtitle": "Notifikasi ing dina dividen dikarepake miturut pola pambayaran sing sampeyan cathet, supaya sampeyan bisa nyathet",
   "benchmarkTitleIndex": "Dibandhingake karo indeks",
-  "benchmarkHintIndex": "Kaya-kaya saben tumbasan diinvestasekake menyang reksa dana sing ngetutake indeks pilihan ing dina sing padha. Tanpa dividen; asil kepungkur ora bisa kanggo ngramal asil ing mbesuk."
+  "benchmarkHintIndex": "Kaya-kaya saben tumbasan diinvestasekake menyang reksa dana sing ngetutake indeks pilihan ing dina sing padha. Tanpa dividen; asil kepungkur ora bisa kanggo ngramal asil ing mbesuk.",
+  "portfolioAccount": "Akun",
+  "portfolioAccountHint": "conto: TBSZ 2026 (ora wajib)",
+  "portfolioAccountAdd": "Temtokake akun",
+  "portfolioAccountsAll": "Kabeh akun",
+  "portfolioAccountNote": "Mung transaksi akun iki. Kas lan dividen ditampilake ing Kabeh akun."
 }

@@ -2532,6 +2532,22 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Эсеп';
+
+  @override
+  String get portfolioAccountHint => 'мис., TBSZ 2026 (милдеттүү эмес)';
+
+  @override
+  String get portfolioAccountAdd => 'Эсепти көрсөтүү';
+
+  @override
+  String get portfolioAccountsAll => 'Бардык эсептер';
+
+  @override
+  String get portfolioAccountNote =>
+      'Ушул эсептин транзакциялары гана. Нак акча жана дивиденддер «Бардык эсептер» бөлүмүндө көрсөтүлөт.';
+
+  @override
   String get portfolioGoalSet => 'Максат коюу';
 
   @override

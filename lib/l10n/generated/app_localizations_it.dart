@@ -2535,6 +2535,22 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Conto';
+
+  @override
+  String get portfolioAccountHint => 'es. PIR (facoltativo)';
+
+  @override
+  String get portfolioAccountAdd => 'Indica un conto';
+
+  @override
+  String get portfolioAccountsAll => 'Tutti i conti';
+
+  @override
+  String get portfolioAccountNote =>
+      'Solo le transazioni di questo conto. Liquidità e dividendi sono mostrati in Tutti i conti.';
+
+  @override
   String get portfolioGoalSet => 'Imposta un obiettivo';
 
   @override

@@ -4375,6 +4375,36 @@ abstract class AppLocalizations {
   /// **'About {amount} a month at today\'s yields: your {goal} goal is reached'**
   String dividendGoalReached(String amount, String goal);
 
+  /// Field label in the buy/sell dialog: the brokerage account the transaction belongs to (e.g. a tax-advantaged account).
+  ///
+  /// In en, this message translates to:
+  /// **'Account'**
+  String get portfolioAccount;
+
+  /// Hint in the account field of the buy/sell dialog. TBSZ is a Hungarian tax-advantaged securities account; translators may use a local example of such an account.
+  ///
+  /// In en, this message translates to:
+  /// **'e.g. TBSZ 2026 (optional)'**
+  String get portfolioAccountHint;
+
+  /// Small button in the buy/sell dialog that reveals the optional account field.
+  ///
+  /// In en, this message translates to:
+  /// **'Specify an account'**
+  String get portfolioAccountAdd;
+
+  /// First chip of the account filter on the portfolio page: show every account together.
+  ///
+  /// In en, this message translates to:
+  /// **'All accounts'**
+  String get portfolioAccountsAll;
+
+  /// Note under the account filter when a single account is selected on the portfolio page.
+  ///
+  /// In en, this message translates to:
+  /// **'Only this account\'s transactions. Cash and dividends are shown under All accounts.'**
+  String get portfolioAccountNote;
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Mga paalala sa dibidendo",
   "dividendRemindersSubtitle": "Isang notification sa araw na inaasahan ang dibidendo batay sa ritmo ng iyong mga naitalang bayad, para maitala mo ito",
   "benchmarkTitleIndex": "Kumpara sa isang index",
-  "benchmarkHintIndex": "Na para bang inilagay ang bawat binili sa isang fund na sumusunod sa napiling index sa parehong araw. Hindi kasama ang dibidendo; hindi hinuhulaan ng nakaraang kita ang hinaharap."
+  "benchmarkHintIndex": "Na para bang inilagay ang bawat binili sa isang fund na sumusunod sa napiling index sa parehong araw. Hindi kasama ang dibidendo; hindi hinuhulaan ng nakaraang kita ang hinaharap.",
+  "portfolioAccount": "Account",
+  "portfolioAccountHint": "hal. PERA (opsyonal)",
+  "portfolioAccountAdd": "Tukuyin ang account",
+  "portfolioAccountsAll": "Lahat ng account",
+  "portfolioAccountNote": "Mga transaksyon lang ng account na ito. Makikita ang cash at dibidendo sa Lahat ng account."
 }

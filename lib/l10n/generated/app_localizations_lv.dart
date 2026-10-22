@@ -2570,6 +2570,22 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Konts';
+
+  @override
+  String get portfolioAccountHint => 'piem., ieguldījumu konts (nav obligāti)';
+
+  @override
+  String get portfolioAccountAdd => 'Norādīt kontu';
+
+  @override
+  String get portfolioAccountsAll => 'Visi konti';
+
+  @override
+  String get portfolioAccountNote =>
+      'Tikai šī konta darījumi. Nauda un dividendes tiek rādītas sadaļā “Visi konti”.';
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

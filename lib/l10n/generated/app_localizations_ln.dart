@@ -2540,6 +2540,22 @@ class AppLocalizationsLn extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Compte';
+
+  @override
+  String get portfolioAccountHint => 'ndakisa: TBSZ 2026 (soki olingi)';
+
+  @override
+  String get portfolioAccountAdd => 'Lakisa compte';
+
+  @override
+  String get portfolioAccountsAll => 'Ba compte nyonso';
+
+  @override
+  String get portfolioAccountNote =>
+      'Kaka bosombi mpe boteki ya compte oyo. Mbɔngɔ ya mabɔkɔ mpe ba dividende ezali kolakisama na Ba compte nyonso.';
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

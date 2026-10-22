@@ -2535,6 +2535,22 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Llogaria';
+
+  @override
+  String get portfolioAccountHint => 'p.sh. TBSZ 2026 (opsionale)';
+
+  @override
+  String get portfolioAccountAdd => 'Specifiko llogarinë';
+
+  @override
+  String get portfolioAccountsAll => 'Të gjitha llogaritë';
+
+  @override
+  String get portfolioAccountNote =>
+      'Vetëm transaksionet e kësaj llogarie. Paratë e gatshme dhe dividendët shfaqen te „Të gjitha llogaritë“.';
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

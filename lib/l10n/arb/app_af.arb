@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Dividendherinneringe",
   "dividendRemindersSubtitle": "’n Kennisgewing op die dag wanneer ’n dividend volgens die ritme van jou aangetekende betalings verwag word, sodat jy dit kan aanteken",
   "benchmarkTitleIndex": "Vergeleke met 'n indeks",
-  "benchmarkHintIndex": "Asof elke aankoop op dieselfde dag in 'n fonds belê is wat die gekose indeks volg. Dividende nie ingesluit nie; vorige opbrengste voorspel nie toekomstige opbrengste nie."
+  "benchmarkHintIndex": "Asof elke aankoop op dieselfde dag in 'n fonds belê is wat die gekose indeks volg. Dividende nie ingesluit nie; vorige opbrengste voorspel nie toekomstige opbrengste nie.",
+  "portfolioAccount": "Rekening",
+  "portfolioAccountHint": "bv. TFSA (opsioneel)",
+  "portfolioAccountAdd": "Gee 'n rekening aan",
+  "portfolioAccountsAll": "Alle rekeninge",
+  "portfolioAccountNote": "Slegs hierdie rekening se transaksies. Kontant en dividende word onder Alle rekeninge gewys."
 }

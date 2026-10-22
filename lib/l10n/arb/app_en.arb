@@ -2067,6 +2067,26 @@
       }
     }
   },
+  "portfolioAccount": "Account",
+  "@portfolioAccount": {
+    "description": "Field label in the buy/sell dialog: the brokerage account the transaction belongs to (e.g. a tax-advantaged account)."
+  },
+  "portfolioAccountHint": "e.g. TBSZ 2026 (optional)",
+  "@portfolioAccountHint": {
+    "description": "Hint in the account field of the buy/sell dialog. TBSZ is a Hungarian tax-advantaged securities account; translators may use a local example of such an account."
+  },
+  "portfolioAccountAdd": "Specify an account",
+  "@portfolioAccountAdd": {
+    "description": "Small button in the buy/sell dialog that reveals the optional account field."
+  },
+  "portfolioAccountsAll": "All accounts",
+  "@portfolioAccountsAll": {
+    "description": "First chip of the account filter on the portfolio page: show every account together."
+  },
+  "portfolioAccountNote": "Only this account's transactions. Cash and dividends are shown under All accounts.",
+  "@portfolioAccountNote": {
+    "description": "Note under the account filter when a single account is selected on the portfolio page."
+  },
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

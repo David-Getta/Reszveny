@@ -826,4 +826,87 @@ void main() {
     expect(s.portfolio.lots.single.quantity, 10);
     expect(s.portfolio.positionOf('AAPL')!.quantity, 100);
   });
+
+  testWidgets('accounts: filter the portfolio by account; selling there records the sale on that account', (
+    tester,
+  ) async {
+    tester.view.physicalSize = const Size(1200, 2600);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    SharedPreferences.setMockInitialValues({});
+    final s = services();
+    await s.portfolio.add(
+      symbol: 'AAPL',
+      quantity: 10,
+      price: 200,
+      currency: 'USD',
+      account: 'TBSZ',
+      date: DateTime(2025, 5, 2),
+    );
+    await s.portfolio.add(symbol: 'MSFT', quantity: 2, price: 400, currency: 'USD', date: DateTime(2025, 5, 2));
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Portfolio').first);
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('portfolio-accounts')), findsOneWidget);
+    expect(find.byKey(const ValueKey('position-menu-MSFT')), findsOneWidget);
+
+    await tester.tap(find.byKey(const ValueKey('account-TBSZ')));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('position-menu-AAPL')), findsOneWidget);
+    expect(find.byKey(const ValueKey('position-menu-MSFT')), findsNothing);
+    expect(
+      find.text("Only this account's transactions. Cash and dividends are shown under All accounts."),
+      findsOneWidget,
+    );
+    expect(find.byKey(const ValueKey('portfolio-dividends-received')), findsNothing);
+    expect(find.byKey(const ValueKey('goal-set')), findsNothing, reason: 'a cél az egész portfólióra szól');
+
+    // Eladás a TBSZ-nézetből: a dialógusban a számla kitöltve, az eladás oda kerül.
+    await tester.tap(find.byKey(const ValueKey('position-menu-AAPL')));
+    await tester.pumpAndSettle();
+    expect(find.text('AAPL · Transactions · TBSZ'), findsOneWidget);
+    await tester.tap(find.byKey(const ValueKey('position-sell')));
+    await tester.pumpAndSettle();
+    expect(find.widgetWithText(TextField, 'TBSZ'), findsOneWidget);
+    await tester.enterText(find.byKey(const ValueKey('lot-quantity')), '4');
+    await tester.tap(find.byKey(const ValueKey('lot-submit')));
+    await tester.pumpAndSettle();
+    final sale = s.portfolio.lots.firstWhere((l) => l.sell);
+    expect((sale.quantity, sale.account), (4.0, 'TBSZ'));
+    expect(s.portfolio.positionsIn('TBSZ').single.quantity, 6);
+    await tester.tapAt(const Offset(600, 40));
+    await tester.pumpAndSettle();
+
+    await tester.tap(find.byKey(const ValueKey('account-*')));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('position-menu-MSFT')), findsOneWidget);
+  });
+
+  testWidgets('the account field is optional: hidden behind a button until the first account exists', (tester) async {
+    tester.view.physicalSize = const Size(1200, 2400);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    SharedPreferences.setMockInitialValues({});
+    final s = services();
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byType(TextField), 'AAPL');
+    await tester.testTextInput.receiveAction(TextInputAction.search);
+    await tester.pumpAndSettle();
+    await tester.tap(find.byTooltip('Add to portfolio'));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('lot-account')), findsNothing);
+    await tester.tap(find.byKey(const ValueKey('lot-account-add')));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byKey(const ValueKey('lot-quantity')), '3');
+    await tester.enterText(find.byKey(const ValueKey('lot-account')), 'NYESZ');
+    await tester.tap(find.byKey(const ValueKey('lot-submit')));
+    await tester.pumpAndSettle();
+    expect(s.portfolio.lots.single.account, 'NYESZ');
+    // Ha már van számla, a mező rögtön látszik.
+    await tester.tap(find.byTooltip('Add to portfolio'));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('lot-account')), findsOneWidget);
+  });
 }

@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Utdelningspåminnelser",
   "dividendRemindersSubtitle": "En notis den dag en utdelning väntas utifrån rytmen i dina registrerade utdelningar, så att du kan registrera den",
   "benchmarkTitleIndex": "Jämfört med ett index",
-  "benchmarkHintIndex": "Som om varje köp hade placerats samma dag i en fond som följer det valda indexet. Utdelningar ingår inte; historisk avkastning förutsäger inte framtida."
+  "benchmarkHintIndex": "Som om varje köp hade placerats samma dag i en fond som följer det valda indexet. Utdelningar ingår inte; historisk avkastning förutsäger inte framtida.",
+  "portfolioAccount": "Konto",
+  "portfolioAccountHint": "t.ex. ISK (valfritt)",
+  "portfolioAccountAdd": "Ange konto",
+  "portfolioAccountsAll": "Alla konton",
+  "portfolioAccountNote": "Endast transaktioner på det här kontot. Kontanter och utdelningar visas under Alla konton."
 }

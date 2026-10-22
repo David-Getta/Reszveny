@@ -2539,6 +2539,22 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Compte';
+
+  @override
+  String get portfolioAccountHint => 'p. ex. Compte de valors (opcional)';
+
+  @override
+  String get portfolioAccountAdd => 'Indica un compte';
+
+  @override
+  String get portfolioAccountsAll => 'Tots els comptes';
+
+  @override
+  String get portfolioAccountNote =>
+      'Només les transaccions d’aquest compte. L’efectiu i els dividends es mostren a Tots els comptes.';
+
+  @override
   String get portfolioGoalSet => 'Defineix un objectiu';
 
   @override

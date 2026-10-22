@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Fàttali dividande",
   "dividendRemindersSubtitle": "Yégle ci bés bi ñuy xaar dividande, ci anam fey yi nga bind, ngir nga man koo bind",
   "benchmarkTitleIndex": "Méngale ak benn indeks",
-  "benchmarkHintIndex": "Mel ni lépp lu nga jënd dañu ko dugal ci bés boobu ci fon buy topp indeks bi nga tànn. Dividand bokku ci; ñeel gu weesu waxul lu ëllëg di indi."
+  "benchmarkHintIndex": "Mel ni lépp lu nga jënd dañu ko dugal ci bés boobu ci fon buy topp indeks bi nga tànn. Dividand bokku ci; ñeel gu weesu waxul lu ëllëg di indi.",
+  "portfolioAccount": "Kont",
+  "portfolioAccountHint": "misaal: TBSZ 2026 (bu la neexee)",
+  "portfolioAccountAdd": "Tànn kont",
+  "portfolioAccountsAll": "Kont yépp",
+  "portfolioAccountNote": "Jënd ak jaay yu kont bii rekk. Xaalis ak dividande yi ñu ngi feeñ ci \"Kont yépp\"."
 }

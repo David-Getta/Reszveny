@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Izikhumbuzi zesabelo senzuzo",
   "dividendRemindersSubtitle": "Isaziso ngosuku isabelo senzuzo esilindeleke ngalo ngokwesigqi sezinkokhelo ozirekhodile, ukuze usirekhode",
   "benchmarkTitleIndex": "Uma kuqhathaniswa ne-index",
-  "benchmarkHintIndex": "Kungathi konke okuthengile kufakwe ngalolo suku esikhwameni semali esilandela i-index oyikhethile. Ama-dividend awafakiwe; imbuyiselo yangaphambilini ayibikezeli ezizayo."
+  "benchmarkHintIndex": "Kungathi konke okuthengile kufakwe ngalolo suku esikhwameni semali esilandela i-index oyikhethile. Ama-dividend awafakiwe; imbuyiselo yangaphambilini ayibikezeli ezizayo.",
+  "portfolioAccount": "I-akhawunti",
+  "portfolioAccountHint": "isb. TFSA (akuphoqelekile)",
+  "portfolioAccountAdd": "Cacisa i-akhawunti",
+  "portfolioAccountsAll": "Wonke ama-akhawunti",
+  "portfolioAccountNote": "Ukuthenga nokuthengisa kwale akhawunti kuphela. Imali nezabelo zenzuzo kuboniswa ngaphansi kokuthi Wonke ama-akhawunti."
 }

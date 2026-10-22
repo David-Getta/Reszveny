@@ -2568,6 +2568,22 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Cont';
+
+  @override
+  String get portfolioAccountHint => 'ex. TBSZ 2026 (opțional)';
+
+  @override
+  String get portfolioAccountAdd => 'Specifică un cont';
+
+  @override
+  String get portfolioAccountsAll => 'Toate conturile';
+
+  @override
+  String get portfolioAccountNote =>
+      'Doar tranzacțiile acestui cont. Numerarul și dividendele apar la Toate conturile.';
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

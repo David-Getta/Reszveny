@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Osinkomuistutukset",
   "dividendRemindersSubtitle": "Ilmoitus päivänä, jolloin osinkoa odotetaan kirjaamiesi maksujen rytmin perusteella, jotta voit kirjata sen",
   "benchmarkTitleIndex": "Verrattuna indeksiin",
-  "benchmarkHintIndex": "Ikään kuin jokainen osto olisi sijoitettu samana päivänä valittua indeksiä seuraavaan rahastoon. Ilman osinkoja; aiempi tuotto ei ennusta tulevaa."
+  "benchmarkHintIndex": "Ikään kuin jokainen osto olisi sijoitettu samana päivänä valittua indeksiä seuraavaan rahastoon. Ilman osinkoja; aiempi tuotto ei ennusta tulevaa.",
+  "portfolioAccount": "Tili",
+  "portfolioAccountHint": "esim. osakesäästötili (valinnainen)",
+  "portfolioAccountAdd": "Määritä tili",
+  "portfolioAccountsAll": "Kaikki tilit",
+  "portfolioAccountNote": "Vain tämän tilin tapahtumat. Käteinen ja osingot näkyvät kohdassa Kaikki tilit."
 }

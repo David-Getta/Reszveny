@@ -2529,6 +2529,22 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Hesap';
+
+  @override
+  String get portfolioAccountHint => 'örn. BES (isteğe bağlı)';
+
+  @override
+  String get portfolioAccountAdd => 'Hesap belirt';
+
+  @override
+  String get portfolioAccountsAll => 'Tüm hesaplar';
+
+  @override
+  String get portfolioAccountNote =>
+      'Yalnızca bu hesabın işlemleri. Nakit ve temettüler Tüm hesaplar altında gösterilir.';
+
+  @override
   String get portfolioGoalSet => 'Hedef belirle';
 
   @override

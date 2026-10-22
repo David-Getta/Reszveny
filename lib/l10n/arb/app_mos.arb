@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Dividand tẽegre",
   "dividendRemindersSubtitle": "Gũusgu daar ning dividand sẽn gũud, b sẽn geelg ne f sẽn gʋls yaoodã, tɩ f tõe n gʋls-a",
   "benchmarkTitleIndex": "Makr ne indɛks a yembre",
-  "benchmarkHintIndex": "Wa f bũmb ning f sẽn da fãa ra kẽe ligd-koglg sẽn pʋgd indɛks ning f sẽn yãk wã, raar kãng menga. Dividãnd pa be ye; pĩnd yɩɩbã pa wilgd beoog yɩɩbã ye."
+  "benchmarkHintIndex": "Wa f bũmb ning f sẽn da fãa ra kẽe ligd-koglg sẽn pʋgd indɛks ning f sẽn yãk wã, raar kãng menga. Dividãnd pa be ye; pĩnd yɩɩbã pa wilgd beoog yɩɩbã ye.",
+  "portfolioAccount": "Kõnte",
+  "portfolioAccountHint": "wala TBSZ 2026 (f sã n data)",
+  "portfolioAccountAdd": "Wilg kõnte",
+  "portfolioAccountsAll": "Kõnte fãa",
+  "portfolioAccountNote": "Kõntã-kãngã raaba la koosgo bal. Ligdi la dividand be \"Kõnte fãa\" pʋgẽ."
 }

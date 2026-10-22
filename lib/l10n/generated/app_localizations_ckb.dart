@@ -2530,6 +2530,22 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'هەژمار';
+
+  @override
+  String get portfolioAccountHint => 'بۆ نموونە TBSZ 2026 (ئارەزوومەندانە)';
+
+  @override
+  String get portfolioAccountAdd => 'هەژمارێک دیاری بکە';
+
+  @override
+  String get portfolioAccountsAll => 'هەموو هەژمارەکان';
+
+  @override
+  String get portfolioAccountNote =>
+      'تەنها مامەڵەکانی ئەم هەژمارە. پارەی کاش و پشکی قازانج لە «هەموو هەژمارەکان» پیشان دەدرێن.';
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

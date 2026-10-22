@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Vikumbusho vya gawio",
   "dividendRemindersSubtitle": "Arifa siku ambayo gawio linatarajiwa kulingana na mwenendo wa malipo uliyorekodi, ili uweze kulirekodi",
   "benchmarkTitleIndex": "Ikilinganishwa na fahirisi",
-  "benchmarkHintIndex": "Kana kwamba kila ununuzi wako uliwekwa siku hiyo hiyo kwenye mfuko unaofuata fahirisi uliyochagua. Gawio halijajumuishwa; faida za zamani hazitabiri za baadaye."
+  "benchmarkHintIndex": "Kana kwamba kila ununuzi wako uliwekwa siku hiyo hiyo kwenye mfuko unaofuata fahirisi uliyochagua. Gawio halijajumuishwa; faida za zamani hazitabiri za baadaye.",
+  "portfolioAccount": "Akaunti",
+  "portfolioAccountHint": "k.m. TBSZ 2026 (si lazima)",
+  "portfolioAccountAdd": "Bainisha akaunti",
+  "portfolioAccountsAll": "Akaunti zote",
+  "portfolioAccountNote": "Miamala ya akaunti hii pekee. Taslimu na gawio huonyeshwa chini ya Akaunti zote."
 }

@@ -2529,6 +2529,22 @@ class AppLocalizationsKk extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Шот';
+
+  @override
+  String get portfolioAccountHint => 'мысалы, TBSZ 2026 (міндетті емес)';
+
+  @override
+  String get portfolioAccountAdd => 'Шотты көрсету';
+
+  @override
+  String get portfolioAccountsAll => 'Барлық шоттар';
+
+  @override
+  String get portfolioAccountNote =>
+      'Тек осы шоттың операциялары. Қолма-қол қаражат пен дивидендтер «Барлық шоттар» бөлімінде көрсетіледі.';
+
+  @override
   String get portfolioGoalSet => 'Мақсат қою';
 
   @override

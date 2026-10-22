@@ -2535,6 +2535,22 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Asusu';
+
+  @override
+  String get portfolioAccountHint => 'misali TBSZ 2026 (ba dole ba)';
+
+  @override
+  String get portfolioAccountAdd => 'Bayyana asusu';
+
+  @override
+  String get portfolioAccountsAll => 'Dukkan asusu';
+
+  @override
+  String get portfolioAccountNote =>
+      'Ma\'amalolin wannan asusu kawai. Ana nuna tsabar kuɗi da rabon riba a ƙarƙashin Dukkan asusu.';
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

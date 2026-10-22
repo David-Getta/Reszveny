@@ -2541,6 +2541,22 @@ class AppLocalizationsCeb extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Account';
+
+  @override
+  String get portfolioAccountHint => 'sama sa PERA (opsyonal)';
+
+  @override
+  String get portfolioAccountAdd => 'Ibutang ang account';
+
+  @override
+  String get portfolioAccountsAll => 'Tanang account';
+
+  @override
+  String get portfolioAccountNote =>
+      'Mga transaksyon lang niini nga account. Ang cash ug dibidendo makita sa Tanang account.';
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

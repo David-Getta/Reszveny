@@ -2553,6 +2553,22 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Conta';
+
+  @override
+  String get portfolioAccountHint => 'p. ex. Conta de valores (opcional)';
+
+  @override
+  String get portfolioAccountAdd => 'Indicar unha conta';
+
+  @override
+  String get portfolioAccountsAll => 'Todas as contas';
+
+  @override
+  String get portfolioAccountNote =>
+      'Só as transaccións desta conta. O efectivo e os dividendos móstranse en Todas as contas.';
+
+  @override
   String get portfolioGoalSet => 'Definir un obxectivo';
 
   @override

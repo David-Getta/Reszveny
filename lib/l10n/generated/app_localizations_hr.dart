@@ -2574,6 +2574,22 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Račun';
+
+  @override
+  String get portfolioAccountHint => 'npr. TBSZ 2026 (neobavezno)';
+
+  @override
+  String get portfolioAccountAdd => 'Navedite račun';
+
+  @override
+  String get portfolioAccountsAll => 'Svi računi';
+
+  @override
+  String get portfolioAccountNote =>
+      'Samo transakcije ovog računa. Gotovina i dividende prikazuju se pod „Svi računi”.';
+
+  @override
   String get portfolioGoalSet => 'Postavi cilj';
 
   @override

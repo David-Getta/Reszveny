@@ -2537,6 +2537,22 @@ class AppLocalizationsLua extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Konte';
+
+  @override
+  String get portfolioAccountHint => 'tshilejilu: TBSZ 2026 (bikala musue)';
+
+  @override
+  String get portfolioAccountAdd => 'Leja konte';
+
+  @override
+  String get portfolioAccountsAll => 'Konte yonso';
+
+  @override
+  String get portfolioAccountNote =>
+      'Kusumba ne kusumbisha bia konte eyi nkayabi. Mfranga ya mu bianza ne dividende bidi bimueneka mu Konte yonso.';
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

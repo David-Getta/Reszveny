@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Nhắc cổ tức",
   "dividendRemindersSubtitle": "Thông báo vào ngày dự kiến có cổ tức theo nhịp các khoản chi trả bạn đã ghi lại, để bạn ghi nhận",
   "benchmarkTitleIndex": "So với một chỉ số",
-  "benchmarkHintIndex": "Như thể mỗi khoản mua được đưa vào một quỹ theo dõi chỉ số đã chọn ngay trong ngày đó. Không bao gồm cổ tức; lợi nhuận trong quá khứ không dự báo lợi nhuận tương lai."
+  "benchmarkHintIndex": "Như thể mỗi khoản mua được đưa vào một quỹ theo dõi chỉ số đã chọn ngay trong ngày đó. Không bao gồm cổ tức; lợi nhuận trong quá khứ không dự báo lợi nhuận tương lai.",
+  "portfolioAccount": "Tài khoản",
+  "portfolioAccountHint": "ví dụ: TBSZ 2026 (không bắt buộc)",
+  "portfolioAccountAdd": "Chỉ định tài khoản",
+  "portfolioAccountsAll": "Tất cả tài khoản",
+  "portfolioAccountNote": "Chỉ giao dịch của tài khoản này. Tiền mặt và cổ tức hiển thị trong Tất cả tài khoản."
 }

@@ -2531,6 +2531,22 @@ class AppLocalizationsAz extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Hesab';
+
+  @override
+  String get portfolioAccountHint => 'məs., TBSZ 2026 (istəyə bağlı)';
+
+  @override
+  String get portfolioAccountAdd => 'Hesabı qeyd edin';
+
+  @override
+  String get portfolioAccountsAll => 'Bütün hesablar';
+
+  @override
+  String get portfolioAccountNote =>
+      'Yalnız bu hesabın əməliyyatları. Nağd vəsait və dividendlər «Bütün hesablar» bölməsində göstərilir.';
+
+  @override
   String get portfolioGoalSet => 'Hədəf təyin et';
 
   @override

@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Swotsundzuxo swa dividende",
   "dividendRemindersSubtitle": "Xitiviso hi siku leri dividende yi languteriweke ha rona hi ku ya hi ndlela ya tihakelo leti u ti tsaleke, leswaku u kota ku yi tsala",
   "benchmarkTitleIndex": "Loko ku pimanisiwa na index",
-  "benchmarkHintIndex": "Onge xin'wana ni xin'wana lexi u xi xaveke xi nghenisiwile siku rero eka nkwama lowu landzelaka index leyi u yi hlawuleke. Dividende a yi katsiwanga; mbuyelo wa khale a wu vuli wa vumundzuku."
+  "benchmarkHintIndex": "Onge xin'wana ni xin'wana lexi u xi xaveke xi nghenisiwile siku rero eka nkwama lowu landzelaka index leyi u yi hlawuleke. Dividende a yi katsiwanga; mbuyelo wa khale a wu vuli wa vumundzuku.",
+  "portfolioAccount": "Akhawunti",
+  "portfolioAccountHint": "xik. TFSA (a swi bohi)",
+  "portfolioAccountAdd": "Kombisa akhawunti",
+  "portfolioAccountsAll": "Tiakhawunti hinkwato",
+  "portfolioAccountNote": "Swixaviwa ni swixavisiwa swa akhawunti leyi ntsena. Mali na tidividende swi kombisiwa ehansi ka Tiakhawunti hinkwato."
 }

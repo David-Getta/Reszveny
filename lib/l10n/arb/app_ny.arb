@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Zikumbutso za dividendi",
   "dividendRemindersSubtitle": "Chidziwitso pa tsiku limene dividendi ikuyembekezeka potengera kayendedwe ka malipiro omwe mudalemba, kuti muthe kuilemba",
   "benchmarkTitleIndex": "Poyerekeza ndi index",
-  "benchmarkHintIndex": "Ngati kuti chilichonse chomwe munagula chinaikidwa tsiku lomwelo m'thumba la ndalama lotsatira index yomwe mwasankha. Magawo a phindu sawerengedwa; phindu lakale siliwonetsa la mtsogolo."
+  "benchmarkHintIndex": "Ngati kuti chilichonse chomwe munagula chinaikidwa tsiku lomwelo m'thumba la ndalama lotsatira index yomwe mwasankha. Magawo a phindu sawerengedwa; phindu lakale siliwonetsa la mtsogolo.",
+  "portfolioAccount": "Akaunti",
+  "portfolioAccountHint": "mwachitsanzo: TBSZ 2026 (ngati mukufuna)",
+  "portfolioAccountAdd": "Tchulani akaunti",
+  "portfolioAccountsAll": "Maakaunti onse",
+  "portfolioAccountNote": "Zogula ndi zogulitsa za akaunti iyi zokha. Ndalama ndi madividendi zikuwonetsedwa pansi pa Maakaunti onse."
 }

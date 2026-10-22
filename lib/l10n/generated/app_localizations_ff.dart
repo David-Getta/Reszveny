@@ -2524,6 +2524,22 @@ class AppLocalizationsFf extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Konte';
+
+  @override
+  String get portfolioAccountHint => 'yeru: TBSZ 2026 (suɓaade)';
+
+  @override
+  String get portfolioAccountAdd => 'Suɓo konte';
+
+  @override
+  String get portfolioAccountsAll => 'Konteeji fof';
+
+  @override
+  String get portfolioAccountNote =>
+      'Ko soodgol e yeeyugol konte ndee tan. Kaalis e dividendeeji ina njiytee ka Konteeji fof.';
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

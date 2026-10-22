@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Zviyeuchidzo zvedividendi",
   "dividendRemindersSubtitle": "Chiziviso pazuva rinotarisirwa dividendi zvichienderana nemaitiro emibhadharo yawakanyora, kuti uinyore",
   "benchmarkTitleIndex": "Kuenzaniswa neindex",
-  "benchmarkHintIndex": "Sekunge chese chawakatenga chakaiswa zuva iroro muhomwe yemari inotevera index yawasarudza. Dhividhendi hadzisanganisirwi; purofiti dzakapfuura hadzifanotaure dzeramangwana."
+  "benchmarkHintIndex": "Sekunge chese chawakatenga chakaiswa zuva iroro muhomwe yemari inotevera index yawasarudza. Dhividhendi hadzisanganisirwi; purofiti dzakapfuura hadzifanotaure dzeramangwana.",
+  "portfolioAccount": "Akaundi",
+  "portfolioAccountHint": "sem. TBSZ 2026 (kana uchida)",
+  "portfolioAccountAdd": "Taura akaundi",
+  "portfolioAccountsAll": "Maakaundi ese",
+  "portfolioAccountNote": "Zvakatengwa nezvakatengeswa muakaundi iyi chete. Mari nemadividendi zvinoratidzwa pasi pe\"Maakaundi ese\"."
 }

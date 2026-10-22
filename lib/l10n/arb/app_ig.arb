@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Ncheta nkesa uru",
   "dividendRemindersSubtitle": "Ọkwa n'ụbọchị a na-atụ anya nkesa uru dịka usoro ụgwọ ị dekọrọ si dị, ka i wee dekọọ ya",
   "benchmarkTitleIndex": "Atụnyere otu ndeksi",
-  "benchmarkHintIndex": "Dị ka a ga-asị na etinyere ego nke ọ bụla ịzụrụ n'ego na-eso ndeksi a họọrọ n'otu ụbọchị ahụ. Etinyeghị dividend; uru gara aga anaghị ebu amụma uru ga-abịa."
+  "benchmarkHintIndex": "Dị ka a ga-asị na etinyere ego nke ọ bụla ịzụrụ n'ego na-eso ndeksi a họọrọ n'otu ụbọchị ahụ. Etinyeghị dividend; uru gara aga anaghị ebu amụma uru ga-abịa.",
+  "portfolioAccount": "Akaụntụ",
+  "portfolioAccountHint": "ọmụmaatụ TBSZ 2026 (nhọrọ)",
+  "portfolioAccountAdd": "Kọwaa akaụntụ",
+  "portfolioAccountsAll": "Akaụntụ niile",
+  "portfolioAccountNote": "Naanị azụmahịa akaụntụ a. A na-egosi ego ka ego na nkesa uru n'okpuru Akaụntụ niile."
 }

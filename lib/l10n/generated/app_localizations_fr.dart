@@ -2541,6 +2541,22 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Compte';
+
+  @override
+  String get portfolioAccountHint => 'p. ex. PEA (facultatif)';
+
+  @override
+  String get portfolioAccountAdd => 'Préciser un compte';
+
+  @override
+  String get portfolioAccountsAll => 'Tous les comptes';
+
+  @override
+  String get portfolioAccountNote =>
+      'Uniquement les transactions de ce compte. Les liquidités et les dividendes figurent dans Tous les comptes.';
+
+  @override
   String get portfolioGoalSet => 'Définir un objectif';
 
   @override

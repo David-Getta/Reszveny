@@ -2529,6 +2529,22 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Account';
+
+  @override
+  String get portfolioAccountHint => 'like TBSZ 2026 (if you want)';
+
+  @override
+  String get portfolioAccountAdd => 'Put account';
+
+  @override
+  String get portfolioAccountsAll => 'All accounts';
+
+  @override
+  String get portfolioAccountNote =>
+      'Na only dis account buy and sell. Cash and dividend dey show for All accounts.';
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

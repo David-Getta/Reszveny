@@ -2522,6 +2522,22 @@ class AppLocalizationsMai extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'खाता';
+
+  @override
+  String get portfolioAccountHint => 'जेना TBSZ 2026 (वैकल्पिक)';
+
+  @override
+  String get portfolioAccountAdd => 'खाता बताउ';
+
+  @override
+  String get portfolioAccountsAll => 'सभ खाता';
+
+  @override
+  String get portfolioAccountNote =>
+      'मात्र एहि खाताक लेन-देन। नकद आ डिविडेंड ‘सभ खाता’मे देखाओल जाइत अछि।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य निर्धारित करू';
 
   @override

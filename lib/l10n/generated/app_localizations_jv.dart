@@ -2533,6 +2533,22 @@ class AppLocalizationsJv extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Akun';
+
+  @override
+  String get portfolioAccountHint => 'conto: TBSZ 2026 (ora wajib)';
+
+  @override
+  String get portfolioAccountAdd => 'Temtokake akun';
+
+  @override
+  String get portfolioAccountsAll => 'Kabeh akun';
+
+  @override
+  String get portfolioAccountNote =>
+      'Mung transaksi akun iki. Kas lan dividen ditampilake ing Kabeh akun.';
+
+  @override
   String get portfolioGoalSet => 'Setel target';
 
   @override

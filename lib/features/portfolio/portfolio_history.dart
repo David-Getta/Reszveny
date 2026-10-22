@@ -169,9 +169,12 @@ final benchmarkSymbol = benchmarks.first.symbol;
 /// „Értékalakulás” kártya a portfólió oldalán: a teljes érték grafikonja
 /// időtáv-választóval, a befektetett összeg szaggatott vonalával.
 class PortfolioHistoryCard extends StatefulWidget {
-  const PortfolioHistoryCard({super.key, required this.snapshot});
+  const PortfolioHistoryCard({super.key, required this.snapshot, this.account});
 
   final PortfolioSnapshot snapshot;
+
+  /// Csak ennek a számlának a tranzakcióiból (`null`: mind).
+  final String? account;
 
   @override
   State<PortfolioHistoryCard> createState() => _PortfolioHistoryCardState();
@@ -184,7 +187,7 @@ class _PortfolioHistoryCardState extends State<PortfolioHistoryCard> {
   Future<_History> _load(AppServices services) async {
     final symbol = benchmarkOf(services.preferences.benchmark).symbol;
     // A felaprózásokkal igazított tételek (az árfolyam-idősor is igazított).
-    final lots = services.portfolio.adjustedLots;
+    final lots = services.portfolio.adjustedLotsIn(widget.account);
     final histories = <String, PriceHistory>{};
     PriceHistory? index;
     await Future.wait([
@@ -198,7 +201,7 @@ class _PortfolioHistoryCardState extends State<PortfolioHistoryCard> {
     return (
       history: portfolioValueHistory(lots, histories, rate),
       bench: i == null ? null : benchmarkComparison(lots, histories, i, rate),
-      trend: portfolioTrend([for (final p in services.portfolio.positions) p.symbol], histories),
+      trend: portfolioTrend([for (final p in services.portfolio.positionsIn(widget.account)) p.symbol], histories),
       symbol: symbol,
       indexMissing: i == null || i.points.isEmpty,
     );
@@ -212,7 +215,8 @@ class _PortfolioHistoryCardState extends State<PortfolioHistoryCard> {
     final theme = Theme.of(context);
     final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
     final bench0 = benchmarkOf(services.preferences.benchmark);
-    final key = '${widget.snapshot.currency}|${services.portfolio.holdingsKey}|${bench0.symbol}';
+    final key =
+        '${widget.snapshot.currency}|${services.portfolio.holdingsKey}|${bench0.symbol}|${widget.account ?? ''}';
     if (key != _key) {
       _key = key;
       _future = _load(services);

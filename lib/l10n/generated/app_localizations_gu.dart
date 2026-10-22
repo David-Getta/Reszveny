@@ -2524,6 +2524,22 @@ class AppLocalizationsGu extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'ખાતું';
+
+  @override
+  String get portfolioAccountHint => 'દા.ત. TBSZ 2026 (વૈકલ્પિક)';
+
+  @override
+  String get portfolioAccountAdd => 'ખાતું જણાવો';
+
+  @override
+  String get portfolioAccountsAll => 'બધાં ખાતાં';
+
+  @override
+  String get portfolioAccountNote =>
+      'ફક્ત આ ખાતાના વ્યવહારો. રોકડ અને ડિવિડન્ડ ‘બધાં ખાતાં’માં દેખાય છે.';
+
+  @override
   String get portfolioGoalSet => 'લક્ષ્ય નક્કી કરો';
 
   @override

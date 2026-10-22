@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Ìránnilétí ìpín èrè",
   "dividendRemindersSubtitle": "Ìfitónilétí ní ọjọ́ tí a ń retí ìpín èrè gẹ́gẹ́ bí ìlànà ìsanwó tí o kọ sílẹ̀, kí o lè kọ ọ́ sílẹ̀",
   "benchmarkTitleIndex": "Ìfiwéra pẹ̀lú atọ́ka kan",
-  "benchmarkHintIndex": "Bí ẹni pé gbogbo ohun tí o rà ni a fi sínú owó-ìkójọpọ̀ tí ó ń tẹ̀lé atọ́ka tí o yàn ní ọjọ́ kan náà. Èrè ìpín kò sí nínú rẹ̀; èrè àtẹ̀yìnwá kò sọ tọjọ́ iwájú."
+  "benchmarkHintIndex": "Bí ẹni pé gbogbo ohun tí o rà ni a fi sínú owó-ìkójọpọ̀ tí ó ń tẹ̀lé atọ́ka tí o yàn ní ọjọ́ kan náà. Èrè ìpín kò sí nínú rẹ̀; èrè àtẹ̀yìnwá kò sọ tọjọ́ iwájú.",
+  "portfolioAccount": "Àkáǹtì",
+  "portfolioAccountHint": "àpẹẹrẹ: TBSZ 2026 (kò pọn dandan)",
+  "portfolioAccountAdd": "Yan àkáǹtì",
+  "portfolioAccountsAll": "Gbogbo àkáǹtì",
+  "portfolioAccountNote": "Àwọn ìdúnàdúrà àkáǹtì yìí nìkan. Owó àti ìpín èrè wà lábẹ́ Gbogbo àkáǹtì."
 }

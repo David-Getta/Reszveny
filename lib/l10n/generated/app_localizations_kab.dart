@@ -2528,6 +2528,22 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Amiḍan';
+
+  @override
+  String get portfolioAccountHint => 'amedya: TBSZ 2026 (afrayan)';
+
+  @override
+  String get portfolioAccountAdd => 'Mudd amiḍan';
+
+  @override
+  String get portfolioAccountsAll => 'Akk imiḍanen';
+
+  @override
+  String get portfolioAccountNote =>
+      'Ala tiɣin d uznuzu n umiḍan-a. Idrimen n ufus d dividendes ttbanen deg Akk imiḍanen.';
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

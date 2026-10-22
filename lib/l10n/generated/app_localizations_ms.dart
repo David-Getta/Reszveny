@@ -2534,6 +2534,22 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Akaun';
+
+  @override
+  String get portfolioAccountHint => 'cth. PRS (pilihan)';
+
+  @override
+  String get portfolioAccountAdd => 'Nyatakan akaun';
+
+  @override
+  String get portfolioAccountsAll => 'Semua akaun';
+
+  @override
+  String get portfolioAccountNote =>
+      'Hanya transaksi akaun ini. Tunai dan dividen dipaparkan di bawah Semua akaun.';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

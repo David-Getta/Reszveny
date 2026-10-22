@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.183)
+# Változásjegyzék (0.2.130 → 0.2.184)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -37,6 +37,12 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
   legnagyobb pozíció súlya**, ⓘ magyarázattal (a fogalomtár 32 mutatója); az AI-portfólióelemzés is megkapja.
 - **Összehasonlítás egy koppintással**: a pozíciók fejlécéből a 3 legnagyobb pozíció, a kedvencekből az első 3.
 - Az értékalakulás-kártyán az összevetés indexe választható: **S&P 500, Nasdaq 100 vagy Dow Jones** (megjegyezve).
+
+## Számlák
+
+- **Számlák** (pl. TBSZ, normál, NYESZ): a vételhez és az eladáshoz számla adható meg (a meglévők közül kiegészítve,
+  nem kötelező); a portfólió oldalon számlánként szűrhető – a FIFO, a realizált nyereség és az értékalakulás is a
+  számlán belül; szinkronban, mentésben és a CSV-ben is.
 
 ## Készpénz
 

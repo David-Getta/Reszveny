@@ -2543,6 +2543,22 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Konto';
+
+  @override
+  String get portfolioAccountHint => 'z. B. Depot (optional)';
+
+  @override
+  String get portfolioAccountAdd => 'Konto angeben';
+
+  @override
+  String get portfolioAccountsAll => 'Alle Konten';
+
+  @override
+  String get portfolioAccountNote =>
+      'Nur Transaktionen dieses Kontos. Cash und Dividenden werden unter „Alle Konten“ angezeigt.';
+
+  @override
   String get portfolioGoalSet => 'Ziel festlegen';
 
   @override

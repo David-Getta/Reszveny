@@ -2491,6 +2491,22 @@ class AppLocalizationsTi extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'ሕሳብ';
+
+  @override
+  String get portfolioAccountHint => 'ንኣብነት TBSZ 2026 (ግዴታ ኣይኮነን)';
+
+  @override
+  String get portfolioAccountAdd => 'ሕሳብ ግለጽ';
+
+  @override
+  String get portfolioAccountsAll => 'ኩሎም ሕሳባት';
+
+  @override
+  String get portfolioAccountNote =>
+      'ልውውጣት ናይዚ ሕሳብ ጥራይ። ጥረ ገንዘብን ድቪደንድታትን ኣብ \"ኩሎም ሕሳባት\" ይርኣዩ።';
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

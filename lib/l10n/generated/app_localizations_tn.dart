@@ -2548,6 +2548,22 @@ class AppLocalizationsTn extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Akhaonto';
+
+  @override
+  String get portfolioAccountHint => 'jaaka TFSA (ga go patelediwe)';
+
+  @override
+  String get portfolioAccountAdd => 'Supa akhaonto';
+
+  @override
+  String get portfolioAccountsAll => 'Diakhaonto tsotlhe';
+
+  @override
+  String get portfolioAccountNote =>
+      'Ditheko le dithekiso tsa akhaonto eno fela. Madi le dividente di bontshiwa ka fa tlase ga Diakhaonto tsotlhe.';
+
+  @override
   String get portfolioGoalSet => 'Baya maikaelelo';
 
   @override

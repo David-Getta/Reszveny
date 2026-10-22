@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Pripomienky dividend",
   "dividendRemindersSubtitle": "Upozornenie v deň, keď sa podľa rytmu vašich zaznamenaných výplat očakáva dividenda, aby ste ju mohli zaznamenať",
   "benchmarkTitleIndex": "Porovnanie s indexom",
-  "benchmarkHintIndex": "Akoby každý nákup v ten istý deň smeroval do fondu, ktorý sleduje zvolený index. Bez dividend; minulé výnosy nepredpovedajú budúce."
+  "benchmarkHintIndex": "Akoby každý nákup v ten istý deň smeroval do fondu, ktorý sleduje zvolený index. Bez dividend; minulé výnosy nepredpovedajú budúce.",
+  "portfolioAccount": "Účet",
+  "portfolioAccountHint": "napr. DIP (voliteľné)",
+  "portfolioAccountAdd": "Zadať účet",
+  "portfolioAccountsAll": "Všetky účty",
+  "portfolioAccountNote": "Len transakcie tohto účtu. Hotovosť a dividendy nájdete v časti Všetky účty."
 }

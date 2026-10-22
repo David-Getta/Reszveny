@@ -2597,6 +2597,22 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Rachunek';
+
+  @override
+  String get portfolioAccountHint => 'np. IKE (opcjonalnie)';
+
+  @override
+  String get portfolioAccountAdd => 'Podaj rachunek';
+
+  @override
+  String get portfolioAccountsAll => 'Wszystkie rachunki';
+
+  @override
+  String get portfolioAccountNote =>
+      'Tylko transakcje tego rachunku. Gotówkę i dywidendy zobaczysz po wybraniu „Wszystkie rachunki”.';
+
+  @override
   String get portfolioGoalSet => 'Ustaw cel';
 
   @override

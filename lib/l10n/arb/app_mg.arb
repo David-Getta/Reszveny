@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Fampahatsiahivana dividandy",
   "dividendRemindersSubtitle": "Fampandrenesana amin'ny andro andrasana dividandy araka ny fiverimberenan'ny fandoavana noraketinao, mba hahafahanao mirakitra azy",
   "benchmarkTitleIndex": "Ampitahaina amin'ny index iray",
-  "benchmarkHintIndex": "Toy ny hoe napetraka tamin'io andro io ihany tao amin'ny tahiry manaraka ny index voafidy ny novidinao tsirairay. Tsy tafiditra ny dividenda; ny tombony lasa dia tsy maminavina ny ho avy."
+  "benchmarkHintIndex": "Toy ny hoe napetraka tamin'io andro io ihany tao amin'ny tahiry manaraka ny index voafidy ny novidinao tsirairay. Tsy tafiditra ny dividenda; ny tombony lasa dia tsy maminavina ny ho avy.",
+  "portfolioAccount": "Kaonty",
+  "portfolioAccountHint": "oh. TBSZ 2026 (tsy voatery)",
+  "portfolioAccountAdd": "Hamaritra kaonty",
+  "portfolioAccountsAll": "Kaonty rehetra",
+  "portfolioAccountNote": "Ny fividianana sy fivarotana amin'ity kaonty ity ihany. Ny vola sy ny dividandy dia hita ao amin'ny « Kaonty rehetra »."
 }

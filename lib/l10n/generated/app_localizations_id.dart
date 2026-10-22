@@ -2526,6 +2526,22 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Akun';
+
+  @override
+  String get portfolioAccountHint => 'mis. TBSZ 2026 (opsional)';
+
+  @override
+  String get portfolioAccountAdd => 'Tentukan akun';
+
+  @override
+  String get portfolioAccountsAll => 'Semua akun';
+
+  @override
+  String get portfolioAccountNote =>
+      'Hanya transaksi akun ini. Kas dan dividen ditampilkan di Semua akun.';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan target';
 
   @override

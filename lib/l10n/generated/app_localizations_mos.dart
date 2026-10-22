@@ -2515,6 +2515,22 @@ class AppLocalizationsMos extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Kõnte';
+
+  @override
+  String get portfolioAccountHint => 'wala TBSZ 2026 (f sã n data)';
+
+  @override
+  String get portfolioAccountAdd => 'Wilg kõnte';
+
+  @override
+  String get portfolioAccountsAll => 'Kõnte fãa';
+
+  @override
+  String get portfolioAccountNote =>
+      'Kõntã-kãngã raaba la koosgo bal. Ligdi la dividand be \"Kõnte fãa\" pʋgẽ.';
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

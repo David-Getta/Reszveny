@@ -2531,6 +2531,22 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Hesab';
+
+  @override
+  String get portfolioAccountHint => 'mînak TBSZ 2026 (vebijarkî)';
+
+  @override
+  String get portfolioAccountAdd => 'Hesabekî diyar bike';
+
+  @override
+  String get portfolioAccountsAll => 'Hemû hesab';
+
+  @override
+  String get portfolioAccountNote =>
+      'Tenê danûstandinên vî hesabî. Pereyê nexd û dividend di bin Hemû hesab de têne nîşandan.';
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

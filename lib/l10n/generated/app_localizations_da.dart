@@ -2528,6 +2528,22 @@ class AppLocalizationsDa extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Konto';
+
+  @override
+  String get portfolioAccountHint => 'f.eks. Aktiesparekonto (valgfrit)';
+
+  @override
+  String get portfolioAccountAdd => 'Angiv en konto';
+
+  @override
+  String get portfolioAccountsAll => 'Alle konti';
+
+  @override
+  String get portfolioAccountNote =>
+      'Kun transaktioner på denne konto. Kontanter og udbytte vises under Alle konti.';
+
+  @override
   String get portfolioGoalSet => 'Sæt et mål';
 
   @override

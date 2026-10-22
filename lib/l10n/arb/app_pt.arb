@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Lembretes de dividendos",
   "dividendRemindersSubtitle": "Uma notificação no dia em que um dividendo é esperado, com base no ritmo dos pagamentos registrados, para você registrá-lo",
   "benchmarkTitleIndex": "Comparação com um índice",
-  "benchmarkHintIndex": "Como se cada compra tivesse sido investida, no mesmo dia, num fundo que replica o índice escolhido. Dividendos não incluídos; rendibilidades passadas não preveem as futuras."
+  "benchmarkHintIndex": "Como se cada compra tivesse sido investida, no mesmo dia, num fundo que replica o índice escolhido. Dividendos não incluídos; rendibilidades passadas não preveem as futuras.",
+  "portfolioAccount": "Conta",
+  "portfolioAccountHint": "ex.: PGBL (opcional)",
+  "portfolioAccountAdd": "Informar conta",
+  "portfolioAccountsAll": "Todas as contas",
+  "portfolioAccountNote": "Apenas as transações desta conta. Caixa e dividendos aparecem em Todas as contas."
 }

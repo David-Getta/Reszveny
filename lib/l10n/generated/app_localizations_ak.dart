@@ -2530,6 +2530,22 @@ class AppLocalizationsAk extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Akontaabu';
+
+  @override
+  String get portfolioAccountHint => 'sɛ nhwɛso, TBSZ 2026 (ɛnhia)';
+
+  @override
+  String get portfolioAccountAdd => 'Kyerɛ akontaabu bi';
+
+  @override
+  String get portfolioAccountsAll => 'Akontaabu nyinaa';
+
+  @override
+  String get portfolioAccountNote =>
+      'Saa akontaabu yi adetɔ ne adetɔn nko ara. Sika a ɛda hɔ ne dividend da adi wɔ Akontaabu nyinaa ase.';
+
+  @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';
 
   @override

@@ -2524,6 +2524,22 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Akaụntụ';
+
+  @override
+  String get portfolioAccountHint => 'ọmụmaatụ TBSZ 2026 (nhọrọ)';
+
+  @override
+  String get portfolioAccountAdd => 'Kọwaa akaụntụ';
+
+  @override
+  String get portfolioAccountsAll => 'Akaụntụ niile';
+
+  @override
+  String get portfolioAccountNote =>
+      'Naanị azụmahịa akaụntụ a. A na-egosi ego ka ego na nkesa uru n\'okpuru Akaụntụ niile.';
+
+  @override
   String get portfolioGoalSet => 'Tọọ ebumnuche';
 
   @override

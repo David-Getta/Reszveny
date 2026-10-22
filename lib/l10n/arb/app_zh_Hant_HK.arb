@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "派息提示",
   "dividendRemindersSubtitle": "根據你記錄的派息節奏，在預計派息當日發出通知，方便你記錄",
   "benchmarkTitleIndex": "與指數比較",
-  "benchmarkHintIndex": "假設每筆買入都在同日投入追蹤所選指數的基金。不包括股息；過往回報並不預示未來表現。"
+  "benchmarkHintIndex": "假設每筆買入都在同日投入追蹤所選指數的基金。不包括股息；過往回報並不預示未來表現。",
+  "portfolioAccount": "帳戶",
+  "portfolioAccountHint": "例如 強積金（可選）",
+  "portfolioAccountAdd": "指定帳戶",
+  "portfolioAccountsAll": "全部帳戶",
+  "portfolioAccountNote": "只顯示此帳戶的交易。現金及股息會在「全部帳戶」下顯示。"
 }

@@ -2527,6 +2527,22 @@ class AppLocalizationsBm extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Jate';
+
+  @override
+  String get portfolioAccountHint => 'misali: TBSZ 2026 (n\'i b\'a fɛ)';
+
+  @override
+  String get portfolioAccountAdd => 'Jate dɔ sɛbɛn';
+
+  @override
+  String get portfolioAccountsAll => 'Jate bɛɛ';
+
+  @override
+  String get portfolioAccountNote =>
+      'Nin jate in ka sanniw ni feereliw dɔrɔn. Wari gansan ni dividandiw bɛ jira Jate bɛɛ kɔnɔ.';
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

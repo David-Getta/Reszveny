@@ -2527,6 +2527,22 @@ class AppLocalizationsTt extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Хисап';
+
+  @override
+  String get portfolioAccountHint => 'мәс., ИИС (мәҗбүри түгел)';
+
+  @override
+  String get portfolioAccountAdd => 'Хисапны күрсәтү';
+
+  @override
+  String get portfolioAccountsAll => 'Барлык хисаплар';
+
+  @override
+  String get portfolioAccountNote =>
+      'Бу хисапның операцияләре генә. Акча һәм дивидендлар «Барлык хисаплар» бүлегендә күрсәтелә.';
+
+  @override
   String get portfolioGoalSet => 'Максат кую';
 
   @override

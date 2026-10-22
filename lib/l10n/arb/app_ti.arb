@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "መዘኻኸሪ ድቪደንድ",
   "dividendRemindersSubtitle": "ብመሰረት ድግግም እቶም ዝመዝገብኩምዎም ክፍሊታት ድቪደንድ ኣብ ዝግመተሉ መዓልቲ ዝመጽእ መፍለጢ፣ ክትምዝግብዎ ምእንቲ",
   "benchmarkTitleIndex": "ምስ ኢንዴክስ ክነጻጸር",
-  "benchmarkHintIndex": "ነፍሲ ወከፍ ዝዓደግኩምዎ ኣብታ ሓንቲ መዓልቲ ናብ ነቲ ዝመረጽኩምዎ ኢንዴክስ ዝስዕብ ፈንድ ከም ዝኣተወ ጌርካ። ብጽሒት ትርፊ ኣይተኣተወን፤ ዝሓለፈ ኣታዊ ንመጻኢ ኣይትንብዮን።"
+  "benchmarkHintIndex": "ነፍሲ ወከፍ ዝዓደግኩምዎ ኣብታ ሓንቲ መዓልቲ ናብ ነቲ ዝመረጽኩምዎ ኢንዴክስ ዝስዕብ ፈንድ ከም ዝኣተወ ጌርካ። ብጽሒት ትርፊ ኣይተኣተወን፤ ዝሓለፈ ኣታዊ ንመጻኢ ኣይትንብዮን።",
+  "portfolioAccount": "ሕሳብ",
+  "portfolioAccountHint": "ንኣብነት TBSZ 2026 (ግዴታ ኣይኮነን)",
+  "portfolioAccountAdd": "ሕሳብ ግለጽ",
+  "portfolioAccountsAll": "ኩሎም ሕሳባት",
+  "portfolioAccountNote": "ልውውጣት ናይዚ ሕሳብ ጥራይ። ጥረ ገንዘብን ድቪደንድታትን ኣብ \"ኩሎም ሕሳባት\" ይርኣዩ።"
 }

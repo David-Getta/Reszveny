@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Asmekti n dividende",
   "dividendRemindersSubtitle": "Alɣu ass ideg yettwaṛǧu dividende almend n urritm n lexlaṣat i tesekleseḍ, akken ad t-teskelseḍ",
   "benchmarkTitleIndex": "Asnemhel d umatar",
-  "benchmarkHintIndex": "Am akken yal taɣuct tettwasers ass-nni kan deg ufus i yeṭṭafaren amatar i tferneḍ. War tibḍit n tɣellit; tiɣellit yezrin ur d-tettbeggin ara tid ara d-yasen."
+  "benchmarkHintIndex": "Am akken yal taɣuct tettwasers ass-nni kan deg ufus i yeṭṭafaren amatar i tferneḍ. War tibḍit n tɣellit; tiɣellit yezrin ur d-tettbeggin ara tid ara d-yasen.",
+  "portfolioAccount": "Amiḍan",
+  "portfolioAccountHint": "amedya: TBSZ 2026 (afrayan)",
+  "portfolioAccountAdd": "Mudd amiḍan",
+  "portfolioAccountsAll": "Akk imiḍanen",
+  "portfolioAccountNote": "Ala tiɣin d uznuzu n umiḍan-a. Idrimen n ufus d dividendes ttbanen deg Akk imiḍanen."
 }

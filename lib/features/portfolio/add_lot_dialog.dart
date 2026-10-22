@@ -5,6 +5,7 @@ import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/date_picker_row.dart';
+import 'portfolio_store.dart' show PortfolioLot;
 
 /// Szám a beviteli mezőbe: pont tizedesjellel, ezres tagolás nélkül, amit a
 /// [parseDecimal] változatlanul visszaolvas.
@@ -32,20 +33,30 @@ Future<bool> showAddLotDialog(
   required String currency,
   double? currentPrice,
   double? sellMax,
+  String? account,
 }) async {
   final added = await showDialog<bool>(
     context: context,
-    builder: (_) => _AddLotDialog(symbol: symbol, currency: currency, currentPrice: currentPrice, sellMax: sellMax),
+    builder: (_) => _AddLotDialog(
+      symbol: symbol,
+      currency: currency,
+      currentPrice: currentPrice,
+      sellMax: sellMax,
+      account: account,
+    ),
   );
   return added ?? false;
 }
 
 class _AddLotDialog extends StatefulWidget {
-  const _AddLotDialog({required this.symbol, required this.currency, this.currentPrice, this.sellMax});
+  const _AddLotDialog({required this.symbol, required this.currency, this.currentPrice, this.sellMax, this.account});
 
   final String symbol;
   final String currency;
   final double? currentPrice;
+
+  /// Előre kitöltött számla (pl. a portfólió oldalon választott számla).
+  final String? account;
 
   /// Eladásnál a birtokolt darabszám (ennél többet nem lehet eladni).
   final double? sellMax;
@@ -62,6 +73,11 @@ class _AddLotDialogState extends State<_AddLotDialog> {
   DateTime _date = DateTime.now();
   String? _quantityError;
   String? _priceError;
+
+  /// A számla mezője (az automatikus kiegészítés saját vezérlője); amíg nincs
+  /// számla, egy „Számla megadása” gomb mutatja meg.
+  TextEditingController? _accountField;
+  late bool _showAccount = widget.account != null || AppServices.of(context).portfolio.accounts.isNotEmpty;
 
   @override
   void initState() {
@@ -92,8 +108,15 @@ class _AddLotDialogState extends State<_AddLotDialog> {
       _priceError = p == null || p <= 0 ? l10n.portfolioInvalidNumber : null;
     });
     if (_quantityError != null || _priceError != null) return;
-    await AppServices.of(context).portfolio
-        .add(symbol: widget.symbol, quantity: q!, price: p!, currency: widget.currency, date: _date, sell: widget.sell);
+    await AppServices.of(context).portfolio.add(
+      symbol: widget.symbol,
+      quantity: q!,
+      price: p!,
+      currency: widget.currency,
+      date: _date,
+      sell: widget.sell,
+      account: _showAccount ? (_accountField?.text ?? widget.account) : null,
+    );
     if (mounted) Navigator.of(context).pop(true);
   }
 
@@ -148,6 +171,41 @@ class _AddLotDialogState extends State<_AddLotDialog> {
               date: _date,
               onChanged: (d) => setState(() => _date = d),
             ),
+            // Számla (pl. TBSZ): a meglévők közül kiegészítve; nem kötelező.
+            if (_showAccount)
+              Autocomplete<String>(
+                initialValue: TextEditingValue(text: widget.account ?? ''),
+                optionsBuilder: (v) {
+                  final q = v.text.trim().toLowerCase();
+                  return AppServices.of(context).portfolio.accounts.where((a) => a.toLowerCase().contains(q));
+                },
+                fieldViewBuilder: (context, controller, focusNode, onSubmitted) {
+                  _accountField = controller;
+                  return TextField(
+                    key: const ValueKey('lot-account'),
+                    controller: controller,
+                    focusNode: focusNode,
+                    maxLength: PortfolioLot.maxAccountName,
+                    decoration: InputDecoration(
+                      labelText: l10n.portfolioAccount,
+                      hintText: l10n.portfolioAccountHint,
+                      counterText: '',
+                    ),
+                    onSubmitted: (_) => onSubmitted(),
+                  );
+                },
+              )
+            else
+              Align(
+                alignment: AlignmentDirectional.centerStart,
+                child: TextButton.icon(
+                  key: const ValueKey('lot-account-add'),
+                  onPressed: () => setState(() => _showAccount = true),
+                  style: TextButton.styleFrom(visualDensity: VisualDensity.compact, padding: EdgeInsets.zero),
+                  icon: const Icon(Icons.account_balance_outlined, size: 18),
+                  label: Text(l10n.portfolioAccountAdd),
+                ),
+              ),
           ],
         ),
       ),

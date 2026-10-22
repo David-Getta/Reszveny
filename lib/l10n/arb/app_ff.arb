@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Siftorɗe dividende",
   "dividendRemindersSubtitle": "Tintinol ñalawma nde dividende habbaa, rewrude e ɗoggol yoɓdiiji ɗe mbinnduɗaa, ngam a waawa winndude ɗum",
   "benchmarkTitleIndex": "Fondaade e indeks",
-  "benchmarkHintIndex": "Wano si ceede coodgu kala waɗaa e fonds jokkiiɗo indeks suɓaaɗo oo e ñalawma gooto oo. Dividende naatiraaka; ngañaari ɓennuɗi hollataa ngañaari garooji."
+  "benchmarkHintIndex": "Wano si ceede coodgu kala waɗaa e fonds jokkiiɗo indeks suɓaaɗo oo e ñalawma gooto oo. Dividende naatiraaka; ngañaari ɓennuɗi hollataa ngañaari garooji.",
+  "portfolioAccount": "Konte",
+  "portfolioAccountHint": "yeru: TBSZ 2026 (suɓaade)",
+  "portfolioAccountAdd": "Suɓo konte",
+  "portfolioAccountsAll": "Konteeji fof",
+  "portfolioAccountNote": "Ko soodgol e yeeyugol konte ndee tan. Kaalis e dividendeeji ina njiytee ka Konteeji fof."
 }

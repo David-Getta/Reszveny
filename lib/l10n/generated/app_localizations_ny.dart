@@ -2537,6 +2537,22 @@ class AppLocalizationsNy extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Akaunti';
+
+  @override
+  String get portfolioAccountHint => 'mwachitsanzo: TBSZ 2026 (ngati mukufuna)';
+
+  @override
+  String get portfolioAccountAdd => 'Tchulani akaunti';
+
+  @override
+  String get portfolioAccountsAll => 'Maakaunti onse';
+
+  @override
+  String get portfolioAccountNote =>
+      'Zogula ndi zogulitsa za akaunti iyi zokha. Ndalama ndi madividendi zikuwonetsedwa pansi pa Maakaunti onse.';
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

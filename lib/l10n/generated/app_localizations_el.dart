@@ -2540,6 +2540,22 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Λογαριασμός';
+
+  @override
+  String get portfolioAccountHint => 'π.χ. TBSZ 2026 (προαιρετικό)';
+
+  @override
+  String get portfolioAccountAdd => 'Ορισμός λογαριασμού';
+
+  @override
+  String get portfolioAccountsAll => 'Όλοι οι λογαριασμοί';
+
+  @override
+  String get portfolioAccountNote =>
+      'Μόνο οι συναλλαγές αυτού του λογαριασμού. Τα μετρητά και τα μερίσματα εμφανίζονται στο «Όλοι οι λογαριασμοί».';
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

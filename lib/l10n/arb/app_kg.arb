@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Kiyibusu ya dividende",
   "dividendRemindersSubtitle": "Nkebisu na kilumbu yina bo ke vingila dividende na kutadila mutindu ya ba futa yina nge sonikaka, sambu nge sonika yo",
   "benchmarkTitleIndex": "Kufwanikisa ti indice mosi",
-  "benchmarkHintIndex": "Bonso nde mbongo ya konso kisumbu tulamaka na fonds yina ke landa indice ya nge sola na kilumbu yina mosi. Ba dividende kele ve; mbote ya ntama ke songa ve ya ntangu ke kwisa."
+  "benchmarkHintIndex": "Bonso nde mbongo ya konso kisumbu tulamaka na fonds yina ke landa indice ya nge sola na kilumbu yina mosi. Ba dividende kele ve; mbote ya ntama ke songa ve ya ntangu ke kwisa.",
+  "portfolioAccount": "Konti",
+  "portfolioAccountHint": "mbandu: TBSZ 2026 (kana nge zola)",
+  "portfolioAccountAdd": "Songa konti",
+  "portfolioAccountsAll": "Bakonti yonso",
+  "portfolioAccountNote": "Kaka kusumba ti kuteka ya konti yai. Mbongo ya maboko ti ba dividende ke monika na Bakonti yonso."
 }

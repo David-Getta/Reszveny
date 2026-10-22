@@ -2525,6 +2525,22 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'حساب';
+
+  @override
+  String get portfolioAccountHint => 'مثلاً TBSZ 2026 (اختیاری)';
+
+  @override
+  String get portfolioAccountAdd => 'تعیین حساب';
+
+  @override
+  String get portfolioAccountsAll => 'همه حساب‌ها';
+
+  @override
+  String get portfolioAccountNote =>
+      'فقط تراکنش‌های این حساب. نقد و سود سهام در «همه حساب‌ها» نمایش داده می‌شوند.';
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

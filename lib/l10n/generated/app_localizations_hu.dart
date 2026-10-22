@@ -2534,6 +2534,22 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Számla';
+
+  @override
+  String get portfolioAccountHint => 'pl. TBSZ 2026 (nem kötelező)';
+
+  @override
+  String get portfolioAccountAdd => 'Számla megadása';
+
+  @override
+  String get portfolioAccountsAll => 'Minden számla';
+
+  @override
+  String get portfolioAccountNote =>
+      'Csak ennek a számlának a tranzakciói. A készpénz és az osztalékok a „Minden számla” nézetben látszanak.';
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

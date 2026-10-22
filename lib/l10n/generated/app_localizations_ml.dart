@@ -2539,6 +2539,22 @@ class AppLocalizationsMl extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'അക്കൗണ്ട്';
+
+  @override
+  String get portfolioAccountHint => 'ഉദാ. NPS (ഓപ്ഷണൽ)';
+
+  @override
+  String get portfolioAccountAdd => 'അക്കൗണ്ട് വ്യക്തമാക്കുക';
+
+  @override
+  String get portfolioAccountsAll => 'എല്ലാ അക്കൗണ്ടുകളും';
+
+  @override
+  String get portfolioAccountNote =>
+      'ഈ അക്കൗണ്ടിലെ ഇടപാടുകൾ മാത്രം. പണവും ഡിവിഡന്റുകളും \'എല്ലാ അക്കൗണ്ടുകളും\' എന്നതിൽ കാണിക്കുന്നു.';
+
+  @override
   String get portfolioGoalSet => 'ലക്ഷ്യം സജ്ജമാക്കുക';
 
   @override

@@ -2594,6 +2594,22 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Sąskaita';
+
+  @override
+  String get portfolioAccountHint => 'pvz. investicinė sąskaita (neprivaloma)';
+
+  @override
+  String get portfolioAccountAdd => 'Nurodyti sąskaitą';
+
+  @override
+  String get portfolioAccountsAll => 'Visos sąskaitos';
+
+  @override
+  String get portfolioAccountNote =>
+      'Tik šios sąskaitos operacijos. Grynieji pinigai ir dividendai rodomi skiltyje „Visos sąskaitos“.';
+
+  @override
   String get portfolioGoalSet => 'Nustatyti tikslą';
 
   @override

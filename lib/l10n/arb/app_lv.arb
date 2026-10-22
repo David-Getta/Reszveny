@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Atgādinājumi par dividendēm",
   "dividendRemindersSubtitle": "Paziņojums dienā, kad pēc jūsu reģistrēto maksājumu ritma gaidāma dividende, lai jūs to varētu reģistrēt",
   "benchmarkTitleIndex": "Salīdzinājumā ar indeksu",
-  "benchmarkHintIndex": "It kā katrs pirkums tajā pašā dienā būtu ieguldīts fondā, kas seko izvēlētajam indeksam. Bez dividendēm; pagātnes ienesīgums neparedz nākotnes ienesīgumu."
+  "benchmarkHintIndex": "It kā katrs pirkums tajā pašā dienā būtu ieguldīts fondā, kas seko izvēlētajam indeksam. Bez dividendēm; pagātnes ienesīgums neparedz nākotnes ienesīgumu.",
+  "portfolioAccount": "Konts",
+  "portfolioAccountHint": "piem., ieguldījumu konts (nav obligāti)",
+  "portfolioAccountAdd": "Norādīt kontu",
+  "portfolioAccountsAll": "Visi konti",
+  "portfolioAccountNote": "Tikai šī konta darījumi. Nauda un dividendes tiek rādītas sadaļā “Visi konti”."
 }

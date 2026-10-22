@@ -2532,6 +2532,22 @@ class AppLocalizationsUg extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'ھېسابات';
+
+  @override
+  String get portfolioAccountHint => 'مەسىلەن TBSZ 2026 (ئىختىيارىي)';
+
+  @override
+  String get portfolioAccountAdd => 'ھېسابات بەلگىلەش';
+
+  @override
+  String get portfolioAccountsAll => 'بارلىق ھېساباتلار';
+
+  @override
+  String get portfolioAccountNote =>
+      'پەقەت بۇ ھېساباتنىڭ سودىلىرى. نەق پۇل ۋە دىۋىدېندلار «بارلىق ھېساباتلار» دا كۆرسىتىلىدۇ.';
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

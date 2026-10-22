@@ -2527,6 +2527,22 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Account';
+
+  @override
+  String get portfolioAccountHint => 'e.g. TBSZ 2026 (optional)';
+
+  @override
+  String get portfolioAccountAdd => 'Specify an account';
+
+  @override
+  String get portfolioAccountsAll => 'All accounts';
+
+  @override
+  String get portfolioAccountNote =>
+      'Only this account\'s transactions. Cash and dividends are shown under All accounts.';
+
+  @override
   String get portfolioGoalSet => 'Set a goal';
 
   @override

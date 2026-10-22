@@ -2527,6 +2527,22 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Kont';
+
+  @override
+  String get portfolioAccountHint => 'egz. TBSZ 2026 (opsyonèl)';
+
+  @override
+  String get portfolioAccountAdd => 'Presize yon kont';
+
+  @override
+  String get portfolioAccountsAll => 'Tout kont yo';
+
+  @override
+  String get portfolioAccountNote =>
+      'Se sèlman tranzaksyon kont sa a. Lajan kach ak dividann yo parèt nan Tout kont yo.';
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

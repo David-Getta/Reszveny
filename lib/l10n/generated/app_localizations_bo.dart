@@ -2518,6 +2518,22 @@ class AppLocalizationsBo extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'རྩིས་ཁྲ།';
+
+  @override
+  String get portfolioAccountHint => 'དཔེར་ན། TBSZ 2026 (གདམ་ཀ)';
+
+  @override
+  String get portfolioAccountAdd => 'རྩིས་ཁྲ་འདེམས།';
+
+  @override
+  String get portfolioAccountsAll => 'རྩིས་ཁྲ་ཡོངས།';
+
+  @override
+  String get portfolioAccountNote =>
+      'རྩིས་ཁྲ་འདིའི་ཉོ་འཚོང་ཁོ་ན། དངུལ་རྐྱང་དང་ཁེ་བགོས་ནི་རྩིས་ཁྲ་ཡོངས་ཀྱི་འོག་ཏུ་སྟོན་གྱི་ཡོད།';
+
+  @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
 
   @override

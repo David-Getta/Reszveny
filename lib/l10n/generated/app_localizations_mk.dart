@@ -2550,6 +2550,22 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Сметка';
+
+  @override
+  String get portfolioAccountHint => 'на пр. TBSZ 2026 (опционално)';
+
+  @override
+  String get portfolioAccountAdd => 'Наведи сметка';
+
+  @override
+  String get portfolioAccountsAll => 'Сите сметки';
+
+  @override
+  String get portfolioAccountNote =>
+      'Само трансакциите на оваа сметка. Готовината и дивидендите се прикажани под „Сите сметки“.';
+
+  @override
   String get portfolioGoalSet => 'Постави цел';
 
   @override

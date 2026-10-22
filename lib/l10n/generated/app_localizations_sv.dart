@@ -2531,6 +2531,22 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Konto';
+
+  @override
+  String get portfolioAccountHint => 't.ex. ISK (valfritt)';
+
+  @override
+  String get portfolioAccountAdd => 'Ange konto';
+
+  @override
+  String get portfolioAccountsAll => 'Alla konton';
+
+  @override
+  String get portfolioAccountNote =>
+      'Endast transaktioner på det här kontot. Kontanter och utdelningar visas under Alla konton.';
+
+  @override
   String get portfolioGoalSet => 'Sätt ett mål';
 
   @override

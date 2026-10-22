@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Dikgakololo tsa dividente",
   "dividendRemindersSubtitle": "Kitsiso ka letsatsi le dividente e lebeletsweng ka lone go ya ka mokgwa wa dituelo tse o di kwadileng, gore o kgone go e kwala",
   "benchmarkTitleIndex": "Fa e bapisiwa le index",
-  "benchmarkHintIndex": "Jaaka e kete sengwe le sengwe se o se rekileng se ne sa tsenngwa ka letsatsi leo lone mo letloleng le le latelang index e o e tlhophileng. Dividende ga di a akarediwa; dipoelo tsa nako e e fetileng ga di bolelele pele tsa isago."
+  "benchmarkHintIndex": "Jaaka e kete sengwe le sengwe se o se rekileng se ne sa tsenngwa ka letsatsi leo lone mo letloleng le le latelang index e o e tlhophileng. Dividende ga di a akarediwa; dipoelo tsa nako e e fetileng ga di bolelele pele tsa isago.",
+  "portfolioAccount": "Akhaonto",
+  "portfolioAccountHint": "jaaka TFSA (ga go patelediwe)",
+  "portfolioAccountAdd": "Supa akhaonto",
+  "portfolioAccountsAll": "Diakhaonto tsotlhe",
+  "portfolioAccountNote": "Ditheko le dithekiso tsa akhaonto eno fela. Madi le dividente di bontshiwa ka fa tlase ga Diakhaonto tsotlhe."
 }

@@ -2450,6 +2450,22 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => '口座';
+
+  @override
+  String get portfolioAccountHint => '例：NISA（任意）';
+
+  @override
+  String get portfolioAccountAdd => '口座を指定';
+
+  @override
+  String get portfolioAccountsAll => 'すべての口座';
+
+  @override
+  String get portfolioAccountNote =>
+      'この口座の取引のみを表示しています。現金と配当金は「すべての口座」に表示されます。';
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override

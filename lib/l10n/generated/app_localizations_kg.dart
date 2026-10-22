@@ -2538,6 +2538,22 @@ class AppLocalizationsKg extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'Konti';
+
+  @override
+  String get portfolioAccountHint => 'mbandu: TBSZ 2026 (kana nge zola)';
+
+  @override
+  String get portfolioAccountAdd => 'Songa konti';
+
+  @override
+  String get portfolioAccountsAll => 'Bakonti yonso';
+
+  @override
+  String get portfolioAccountNote =>
+      'Kaka kusumba ti kuteka ya konti yai. Mbongo ya maboko ti ba dividende ke monika na Bakonti yonso.';
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

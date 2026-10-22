@@ -2502,6 +2502,22 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
+  String get portfolioAccount => 'ບັນຊີ';
+
+  @override
+  String get portfolioAccountHint => 'ເຊັ່ນ TBSZ 2026 (ບໍ່ບັງຄັບ)';
+
+  @override
+  String get portfolioAccountAdd => 'ລະບຸບັນຊີ';
+
+  @override
+  String get portfolioAccountsAll => 'ທຸກບັນຊີ';
+
+  @override
+  String get portfolioAccountNote =>
+      'ສະເພາະທຸລະກຳຂອງບັນຊີນີ້. ເງິນສົດ ແລະ ເງິນປັນຜົນສະແດງຢູ່ໃນ “ທຸກບັນຊີ”.';
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

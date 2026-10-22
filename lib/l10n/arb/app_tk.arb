@@ -772,5 +772,10 @@
   "dividendRemindersTitle": "Diwidend ýatlatmalary",
   "dividendRemindersSubtitle": "Siziň ýazan tölegleriňiziň yzygiderliligi esasynda diwidend garaşylýan gün, ony ýazmagyňyz üçin duýduryş",
   "benchmarkTitleIndex": "Indeks bilen deňeşdirme",
-  "benchmarkHintIndex": "Edil her satyn alşyňyz şol gün saýlanan indeksi yzarlaýan gazna goýlan ýaly. Diwidendler girizilmedi; geçmişdäki girdeji geljekdäkini çaklamaýar."
+  "benchmarkHintIndex": "Edil her satyn alşyňyz şol gün saýlanan indeksi yzarlaýan gazna goýlan ýaly. Diwidendler girizilmedi; geçmişdäki girdeji geljekdäkini çaklamaýar.",
+  "portfolioAccount": "Hasap",
+  "portfolioAccountHint": "meselem, TBSZ 2026 (hökmany däl)",
+  "portfolioAccountAdd": "Hasaby görkez",
+  "portfolioAccountsAll": "Ähli hasaplar",
+  "portfolioAccountNote": "Diňe şu hasabyň amallary. Nagt pul we diwidendler «Ähli hasaplar» bölüminde görkezilýär."
 }
