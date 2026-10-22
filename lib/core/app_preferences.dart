@@ -32,6 +32,7 @@ class AppPreferences extends ChangeNotifier {
     this.portfolioMoveAlert = 0,
     this.portfolioGoal,
     this.dividendGoal,
+    Map<String, DateTime> goalsAt = const {},
     Set<String> hiddenHome = const {},
     this.portfolioMoveNotified,
     List<WatchList> watchLists = const [],
@@ -39,6 +40,7 @@ class AppPreferences extends ChangeNotifier {
     Map<String, String> sorts = const {},
   }) : _hiddenHome = Set.of(hiddenHome),
        _sorts = Map.of(sorts),
+       _goalsAt = Map.of(goalsAt),
        _lists = List.of(watchLists),
        _targets = Map.of(targets),
        _recent = List.of(recent),
@@ -72,6 +74,7 @@ class AppPreferences extends ChangeNotifier {
   static const _targetsKey = 'portfolio_targets';
   static const _goalKey = 'portfolio_goal';
   static const _dividendGoalKey = 'dividend_goal';
+  static const _goalsAtKey = 'goals_at';
   static const _hiddenHomeKey = 'home_hidden';
   static const _resolvedKey = 'resolved_descriptions';
 
@@ -220,6 +223,20 @@ class AppPreferences extends ChangeNotifier {
     await _save((p) => p.setString(_sortsKey, jsonEncode(_sorts)));
   }
 
+  /// A célok tárolt módosítási idői (fajta → ISO-8601); a hibás tételek kimaradnak.
+  static Map<String, DateTime> parseGoalsAt(String? raw) {
+    try {
+      final v = raw == null ? null : jsonDecode(raw);
+      return {
+        if (v is Map)
+          for (final e in v.entries)
+            if (DateTime.tryParse('${e.value}') case final t?) '${e.key}': t.toUtc(),
+      };
+    } catch (_) {
+      return const {};
+    }
+  }
+
   /// A tárolt rendezések beolvasása; a hibás tételek kimaradnak.
   static Map<String, String> parseSorts(String? raw) {
     try {
@@ -244,22 +261,68 @@ class AppPreferences extends ChangeNotifier {
     return amount == null || amount <= 0 || parts[1].isEmpty ? null : (amount: amount, currency: parts[1]);
   }
 
-  Future<void> setPortfolioGoal(({double amount, String currency})? goal) async {
+  Future<void> setPortfolioGoal(({double amount, String currency})? goal, {DateTime? at}) async {
     portfolioGoal = goal;
-    notifyListeners();
-    await _save((p) => goal == null ? p.remove(_goalKey) : p.setString(_goalKey, '${goal.amount}|${goal.currency}'));
+    await _saveGoal(goalPortfolio, _goalKey, goal, at);
   }
 
   /// Havi osztalékcél és pénzneme (pl. 50 000 HUF havonta); `null`, ha nincs.
   ({double amount, String currency})? dividendGoal;
 
-  Future<void> setDividendGoal(({double amount, String currency})? goal) async {
+  Future<void> setDividendGoal(({double amount, String currency})? goal, {DateTime? at}) async {
     dividendGoal = goal;
+    await _saveGoal(goalDividend, _dividendGoalKey, goal, at);
+  }
+
+  /// A célok fajtái a szinkronban.
+  static const goalPortfolio = 'portfolio', goalDividend = 'dividend';
+
+  /// Célonként az utolsó módosítás ideje (UTC, a törlésé is), hogy a szinkronban
+  /// az újabb nyerjen, és a törölt cél ne éledjen újra egy másik készülékről.
+  final Map<String, DateTime> _goalsAt;
+
+  /// [at] nélkül (a felhasználó állította) most; a szinkron a csomag idejével hívja.
+  Future<void> _saveGoal(String kind, String key, ({double amount, String currency})? goal, DateTime? at) async {
+    _goalsAt[kind] = (at ?? DateTime.now()).toUtc();
     notifyListeners();
-    await _save(
-      (p) =>
-          goal == null ? p.remove(_dividendGoalKey) : p.setString(_dividendGoalKey, '${goal.amount}|${goal.currency}'),
-    );
+    await _save((p) async {
+      await (goal == null ? p.remove(key) : p.setString(key, '${goal.amount}|${goal.currency}'));
+      await p.setString(_goalsAtKey, jsonEncode({for (final e in _goalsAt.entries) e.key: e.value.toIso8601String()}));
+    });
+  }
+
+  /// A célok a szinkroncsomagba: `{portfolio: {amount, currency, at}, dividend: {at}}`
+  /// (összeg nélkül: törölve).
+  Map<String, Map<String, Object>> get goalsJson => {
+    for (final (kind, goal) in [(goalPortfolio, portfolioGoal), (goalDividend, dividendGoal)])
+      if (goal != null || _goalsAt[kind] != null)
+        kind: {
+          if (goal != null) ...{'amount': goal.amount, 'currency': goal.currency},
+          if (_goalsAt[kind] case final at?) 'at': at.toIso8601String(),
+        },
+  };
+
+  /// A szinkroncsomag céljai: fajtánként a cél (`null`: törölve) és az idő.
+  static Map<String, ({({double amount, String currency})? goal, DateTime? at})> parseGoals(Object? v) => {
+    if (v is Map)
+      for (final e in v.entries)
+        if (e.value is Map && (e.key == goalPortfolio || e.key == goalDividend))
+          '${e.key}': (
+            goal: switch (((e.value as Map)['amount'], (e.value as Map)['currency'])) {
+              (final num a, final String c) when a.isFinite && a > 0 && c.isNotEmpty => (
+                amount: a.toDouble(),
+                currency: c,
+              ),
+              _ => null,
+            },
+            at: DateTime.tryParse('${(e.value as Map)['at']}')?.toUtc(),
+          ),
+  };
+
+  /// A szinkronból kapott célok átvétele a csomag idejével (nem most bélyegezve).
+  Future<void> applyGoals(Map<String, ({({double amount, String currency})? goal, DateTime? at})> goals) async {
+    if (goals[goalPortfolio] case final g?) await setPortfolioGoal(g.goal, at: g.at);
+    if (goals[goalDividend] case final g?) await setDividendGoal(g.goal, at: g.at);
   }
 
   /// Értesítés, ha a teljes portfólió egy nap alatt legalább ennyi %-ot mozdul (0: ki).
@@ -352,6 +415,7 @@ class AppPreferences extends ChangeNotifier {
         portfolioMoveAlert: prefs.getDouble(_portfolioMoveKey) ?? 0,
         portfolioGoal: parseGoal(prefs.getString(_goalKey)),
         dividendGoal: parseGoal(prefs.getString(_dividendGoalKey)),
+        goalsAt: parseGoalsAt(prefs.getString(_goalsAtKey)),
         hiddenHome: {...?prefs.getStringList(_hiddenHomeKey)},
         portfolioMoveNotified: prefs.getString(_portfolioMoveNotifiedKey),
         watchLists: WatchList.parseAll(prefs.getString(_listsKey)),
@@ -621,9 +685,19 @@ class AppPreferences extends ChangeNotifier {
     _sorts.clear();
     portfolioGoal = null;
     dividendGoal = null;
+    _goalsAt.clear();
     notifyListeners();
     await _save((p) async {
-      for (final k in [_favoritesKey, _recentKey, _listsKey, _targetsKey, _sortsKey, _goalKey, _dividendGoalKey]) {
+      for (final k in [
+        _favoritesKey,
+        _recentKey,
+        _listsKey,
+        _targetsKey,
+        _sortsKey,
+        _goalKey,
+        _dividendGoalKey,
+        _goalsAtKey,
+      ]) {
         await p.remove(k);
       }
     });

@@ -135,6 +135,7 @@ class SyncService extends ChangeNotifier {
     'favorites': preferences.favorites,
     'watch_lists': [for (final l in preferences.watchLists) l.toJson()],
     if (preferences.targets.isNotEmpty) 'targets': preferences.targets,
+    'goals': preferences.goalsJson,
     'lots': [for (final l in portfolio.lots) l.toJson()],
     'dividends': [for (final d in portfolio.dividends) d.toJson()],
     'splits': [for (final s in portfolio.splits) s.toJson()],
@@ -197,6 +198,7 @@ class SyncService extends ChangeNotifier {
       'watch_lists': _mergeLists(local['watch_lists'], remote['watch_lists']),
       // Célarányok: tickerenként a helyi nyer.
       'targets': {...AppPreferences.parseTargets(remote['targets']), ...AppPreferences.parseTargets(local['targets'])},
+      'goals': mergeGoals(local['goals'], remote['goals']),
       'lots': byId(local['lots'], remote['lots']),
       'dividends': byId(local['dividends'], remote['dividends']),
       'splits': _uniqueSplits(byId(local['splits'], remote['splits'])),
@@ -228,8 +230,21 @@ class SyncService extends ChangeNotifier {
     return (cash: cash, at: at);
   }
 
-  /// Saját listák: név szerint (kis- és nagybetűtől függetlenül) összevonva, a
-  /// helyiek elöl; azonos listánál a tickerek uniója.
+  /// Célok (portfólió-célérték, havi osztalékcél): fajtánként az újabb módosítás
+  /// nyer – a törlés is, így egy másik készülék régebbi célja nem éled újra.
+  /// Időbélyeg nélkül (régi csomag) a helyi nyer, ha van.
+  static Map<String, dynamic> mergeGoals(Object? local, Object? remote) {
+    final l = local is Map ? local : const {}, r = remote is Map ? remote : const {};
+    final lp = AppPreferences.parseGoals(l), rp = AppPreferences.parseGoals(r);
+    return {
+      for (final kind in {...lp.keys, ...rp.keys})
+        kind: switch ((lp[kind]?.at, rp[kind]?.at)) {
+          (final lt, final rt?) when lt == null || rt.isAfter(lt) => r[kind],
+          _ => l[kind] ?? r[kind],
+        },
+    };
+  }
+
   /// Felaprózások: két eszközön rögzítve más az azonosító, de ugyanaz (ticker, nap,
   /// arány) csak egyszer maradhat – kétszer alkalmazva a darabszám hibás lenne.
   static List<Map<String, dynamic>> _uniqueSplits(List<Map<String, dynamic>> splits) {
@@ -240,6 +255,8 @@ class SyncService extends ChangeNotifier {
     ];
   }
 
+  /// Saját listák: név szerint (kis- és nagybetűtől függetlenül) összevonva, a
+  /// helyiek elöl; azonos listánál a tickerek uniója.
   static List<Map<String, dynamic>> _mergeLists(Object? local, Object? remote) {
     final merged = <String, WatchList>{};
     for (final raw in [...?(local as List?), ...?(remote as List?)]) {
@@ -282,6 +299,8 @@ class SyncService extends ChangeNotifier {
       await preferences.setWatchLists([for (final l in data['watch_lists'] as List) ?WatchList.fromJson(l)]);
     }
     if (data['targets'] is Map) await preferences.setTargets(AppPreferences.parseTargets(data['targets']));
+    // Régi csomagban nincs cél: akkor a helyiek maradnak.
+    if (data['goals'] is Map) await preferences.applyGoals(AppPreferences.parseGoals(data['goals']));
     if (data['cash'] is Map) {
       await portfolio.replaceAllCash(
         PortfolioStore.parseCashMap(data['cash']),

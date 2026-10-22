@@ -138,6 +138,61 @@ void main() {
     expect(a.sync.failed, isFalse);
   });
 
+  test('goals follow the account: the newer change wins, a removed goal does not come back', () async {
+    final server = _Server();
+    SharedPreferences.setMockInitialValues({});
+    final a = _Device(server);
+    await a.preferences.setDividendGoal((amount: 50000, currency: 'HUF'));
+    await a.preferences.setPortfolioGoal((amount: 10000000, currency: 'HUF'));
+    await a.sync.start();
+    SharedPreferences.setMockInitialValues({});
+    final b = _Device(server);
+    await b.sync.start();
+    expect(b.preferences.dividendGoal, (amount: 50000.0, currency: 'HUF'));
+    expect(b.preferences.portfolioGoal, (amount: 10000000.0, currency: 'HUF'));
+
+    // B törli a havi célt, A közben (régebben) semmit: a törlés átmegy, nem éled újra.
+    await Future<void>.delayed(const Duration(milliseconds: 5));
+    await b.preferences.setDividendGoal(null);
+    await b.sync.syncNow();
+    await a.sync.syncNow();
+    expect(a.preferences.dividendGoal, isNull);
+    expect(a.preferences.portfolioGoal, (amount: 10000000.0, currency: 'HUF'), reason: 'a másik cél marad');
+    await b.sync.syncNow();
+    expect(b.preferences.dividendGoal, isNull);
+
+    // Újabb módosítás A-n nyer B régebbi értéke felett.
+    await Future<void>.delayed(const Duration(milliseconds: 5));
+    await a.preferences.setPortfolioGoal((amount: 12000000, currency: 'HUF'));
+    await a.sync.syncNow();
+    await b.sync.syncNow();
+    expect(b.preferences.portfolioGoal, (amount: 12000000.0, currency: 'HUF'));
+  });
+
+  test('goal merge: by timestamp; an old package without times keeps the local goal', () {
+    final older = {'amount': 100, 'currency': 'USD', 'at': '2026-10-01T00:00:00Z'};
+    final newer = {'amount': 200, 'currency': 'USD', 'at': '2026-10-10T00:00:00Z'};
+    final removed = {'at': '2026-10-12T00:00:00Z'};
+    expect(SyncService.mergeGoals({'dividend': older}, {'dividend': newer}), {'dividend': newer});
+    expect(SyncService.mergeGoals({'dividend': newer}, {'dividend': older}), {'dividend': newer});
+    expect(SyncService.mergeGoals({'dividend': newer}, {'dividend': removed}), {'dividend': removed});
+    expect(SyncService.mergeGoals({'portfolio': newer}, null), {'portfolio': newer});
+    expect(
+      SyncService.mergeGoals(
+        {
+          'portfolio': {'amount': 5, 'currency': 'EUR'},
+        },
+        {'portfolio': older},
+      ),
+      {'portfolio': older},
+      reason: 'időbélyeg nélküli helyi cél régebbinek számít',
+    );
+    final parsed = AppPreferences.parseGoals({'dividend': removed, 'portfolio': newer, 'x': newer});
+    expect(parsed.keys, ['dividend', 'portfolio']);
+    expect(parsed['dividend']!.goal, isNull);
+    expect(parsed['portfolio']!.goal, (amount: 200.0, currency: 'USD'));
+  });
+
   test('merge keeps the newer note and the local copy of the same item', () {
     final older = {'text': 'old', 'updated_at': '2026-10-01T00:00:00Z'};
     final newer = {'text': 'new', 'updated_at': '2026-10-10T00:00:00Z'};
