@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "ပြီးခဲ့သော ငါးနှစ်အတွင်း တစ်ရှယ်ယာလျှင် အမြတ်ဝေစု တစ်နှစ်လျှင် ပျမ်းမျှ မည်မျှ တိုးလာသနည်း။ တည်ငြိမ်သော တိုးတက်မှုသည် များသောအားဖြင့် ကုမ္ပဏီက ၎င်း၏ ငွေသားစီးဆင်းမှုကို ယုံကြည်သည်ဟု ဆိုလိုသည်။ လျှော့ချခြင်းမှာမူ မကြာခဏ သတိပေးလက္ခဏာ ဖြစ်တတ်သည်။",
   "portfolioDividendsByMonth": "လအလိုက်",
   "dividendsLegendReceived": "ရရှိပြီး",
-  "dividendsLegendExpected": "မျှော်မှန်း"
+  "dividendsLegendExpected": "မျှော်မှန်း",
+  "dividendGoalSet": "လစဉ် အမြတ်ဝေစု ပန်းတိုင် သတ်မှတ်ရန်",
+  "dividendGoalTitle": "လစဉ် အမြတ်ဝေစု ပန်းတိုင်",
+  "dividendGoalAmount": "တစ်လလျှင် အမြတ်ဝေစု",
+  "dividendGoalProgress": "ယနေ့ အထွက်နှုန်းဖြင့် တစ်လလျှင် {amount} ခန့် · {percent} · ပန်းတိုင် {goal}",
+  "dividendGoalReached": "ယနေ့ အထွက်နှုန်းဖြင့် တစ်လလျှင် {amount} ခန့် · ပန်းတိုင် {goal} ပြည့်မီပြီ"
 }

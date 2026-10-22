@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Dîvîdenda her pişkê di pênc salên dawî de bi navînî salê çiqas mezin bûye. Mezinbûna domdar bi gelemperî nîşan dide ku pargîdanî bi herikîna xwe ya pereyan bawer e; kêmkirin pir caran nîşaneyek hişyariyê ye.",
   "portfolioDividendsByMonth": "Li gorî mehan",
   "dividendsLegendReceived": "Wergirtî",
-  "dividendsLegendExpected": "Tê payîn"
+  "dividendsLegendExpected": "Tê payîn",
+  "dividendGoalSet": "Armanca dîvîdendê ya mehane deyne",
+  "dividendGoalTitle": "Armanca dîvîdendê ya mehane",
+  "dividendGoalAmount": "Dîvîdend di mehê de",
+  "dividendGoalProgress": "Bi rêjeya îro nêzî {amount} di mehê de · {percent} · Armanc: {goal}",
+  "dividendGoalReached": "Bi rêjeya îro nêzî {amount} di mehê de · Gihîştî armancê: {goal}"
 }

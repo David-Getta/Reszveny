@@ -2481,6 +2481,25 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Aseta kuukausittainen osinkotavoite';
+
+  @override
+  String get dividendGoalTitle => 'Kuukausittainen osinkotavoite';
+
+  @override
+  String get dividendGoalAmount => 'Osingot kuukaudessa';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Noin $amount kuukaudessa nykyisillä tuotoilla: $percent tavoitteesta $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Noin $amount kuukaudessa nykyisillä tuotoilla: tavoite $goal saavutettu';
+  }
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

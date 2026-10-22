@@ -2476,6 +2476,25 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'මාසික ලාභාංශ ඉලක්කයක් සකසන්න';
+
+  @override
+  String get dividendGoalTitle => 'මාසික ලාභාංශ ඉලක්කය';
+
+  @override
+  String get dividendGoalAmount => 'මසකට ලාභාංශ';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'අද ඵලදාව අනුව මසකට ආසන්න වශයෙන් $amount · $percent · ඉලක්කය: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'අද ඵලදාව අනුව මසකට ආසන්න වශයෙන් $amount · ඉලක්කය සපුරා ඇත: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'ඉලක්කයක් සකසන්න';
 
   @override

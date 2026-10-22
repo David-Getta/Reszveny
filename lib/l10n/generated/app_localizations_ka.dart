@@ -2480,6 +2480,25 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'ყოველთვიური დივიდენდის მიზნის დაყენება';
+
+  @override
+  String get dividendGoalTitle => 'ყოველთვიური დივიდენდის მიზანი';
+
+  @override
+  String get dividendGoalAmount => 'დივიდენდები თვეში';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'ამჟამინდელი შემოსავლიანობით დაახლოებით $amount თვეში · $percent · მიზანი: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'ამჟამინდელი შემოსავლიანობით დაახლოებით $amount თვეში · მიზანი მიღწეულია: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

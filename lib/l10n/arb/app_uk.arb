@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Наскільки в середньому за рік зростав дивіденд на акцію за останні п’ять років. Стабільне зростання зазвичай означає, що компанія впевнена у своєму грошовому потоці; скорочення часто є тривожним сигналом.",
   "portfolioDividendsByMonth": "За місяцями",
   "dividendsLegendReceived": "Отримані",
-  "dividendsLegendExpected": "Очікувані"
+  "dividendsLegendExpected": "Очікувані",
+  "dividendGoalSet": "Задати місячну ціль із дивідендів",
+  "dividendGoalTitle": "Місячна ціль із дивідендів",
+  "dividendGoalAmount": "Дивіденди на місяць",
+  "dividendGoalProgress": "Близько {amount} на місяць за поточної дохідності: {percent} від цілі {goal}",
+  "dividendGoalReached": "Близько {amount} на місяць за поточної дохідності: ціль {goal} досягнуто"
 }

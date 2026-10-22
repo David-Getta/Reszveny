@@ -12,6 +12,7 @@ import 'add_lot_dialog.dart';
 import 'csv_dialog.dart';
 import 'dividend_forecast.dart' show convertedDividends;
 import 'dividends_card.dart';
+import 'goal_dialog.dart';
 import 'split_dialog.dart';
 import 'holdings_import.dart';
 import 'portfolio_history.dart';
@@ -335,7 +336,7 @@ class _PortfolioBody extends StatelessWidget {
                     ),
                   ),
                 ],
-                DividendsCard(currency: ccy),
+                DividendsCard(currency: ccy, annualDividend: s.annualDividend),
                 if (s.closed.isNotEmpty) ...[
                   Padding(
                     padding: const EdgeInsets.fromLTRB(4, 16, 4, 8),
@@ -1318,13 +1319,14 @@ class _GoalBar extends StatelessWidget {
   Future<void> _edit(BuildContext context) async {
     final prefs = AppServices.of(context).preferences;
     final goal = prefs.portfolioGoal;
-    final result = await showDialog<double>(
-      context: context,
-      builder: (_) => _GoalDialog(
-        currency: snapshot.currency,
-        initial: goal?.currency == snapshot.currency ? goal!.amount : null,
-        fmt: fmt,
-      ),
+    final l10n = AppLocalizations.of(context);
+    final result = await showGoalDialog(
+      context,
+      title: l10n.portfolioGoalTitle,
+      label: l10n.portfolioTotalValue,
+      currency: snapshot.currency,
+      initial: goal?.currency == snapshot.currency ? goal!.amount : null,
+      fmt: fmt,
     );
     if (result == null) return;
     await prefs.setPortfolioGoal(result <= 0 ? null : (amount: result, currency: snapshot.currency));
@@ -1377,7 +1379,7 @@ class _GoalBar extends StatelessWidget {
                   child: LinearProgressIndicator(
                     value: ratio.clamp(0.0, 1.0),
                     semanticsLabel: l10n.portfolioGoalTitle,
-                    semanticsValue: fmt.percent(ratio * 100, decimals: 0),
+                    semanticsValue: fmt.percent(ratio.clamp(0.0, 1.0) * 100, decimals: 0),
                     minHeight: 8,
                     color: ratio >= 1 ? p.positive : p.accent,
                     backgroundColor: p.border,
@@ -1388,60 +1390,6 @@ class _GoalBar extends StatelessWidget {
           ),
         );
       },
-    );
-  }
-}
-
-class _GoalDialog extends StatefulWidget {
-  const _GoalDialog({required this.currency, required this.initial, required this.fmt});
-
-  final String currency;
-  final double? initial;
-  final Fmt fmt;
-
-  @override
-  State<_GoalDialog> createState() => _GoalDialogState();
-}
-
-class _GoalDialogState extends State<_GoalDialog> {
-  late final _controller = TextEditingController(
-    text: widget.initial == null ? '' : widget.fmt.number(widget.initial!, decimals: 0).replaceAll(RegExp(r'\s'), ' '),
-  );
-
-  @override
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
-  }
-
-  void _save() {
-    final v = parseDecimal(_controller.text);
-    if (v != null && v > 0) Navigator.of(context).pop(v);
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final l10n = AppLocalizations.of(context);
-    return AlertDialog(
-      title: Text(l10n.portfolioGoalTitle),
-      content: TextField(
-        key: const ValueKey('goal-amount'),
-        controller: _controller,
-        autofocus: true,
-        keyboardType: const TextInputType.numberWithOptions(decimal: true),
-        decoration: InputDecoration(labelText: l10n.portfolioTotalValue, suffixText: widget.currency),
-        onSubmitted: (_) => _save(),
-      ),
-      actions: [
-        if (widget.initial != null)
-          TextButton(
-            key: const ValueKey('goal-remove'),
-            onPressed: () => Navigator.of(context).pop(0.0),
-            child: Text(l10n.portfolioGoalRemove),
-          ),
-        TextButton(onPressed: () => Navigator.of(context).pop(), child: Text(l10n.cancel)),
-        FilledButton(key: const ValueKey('goal-save'), onPressed: _save, child: Text(l10n.alertSave)),
-      ],
     );
   }
 }

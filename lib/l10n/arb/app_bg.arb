@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "С колко средно на година е нараствал дивидентът на акция през последните пет години. Стабилният ръст обикновено означава, че компанията има доверие в паричния си поток; намаляването често е предупредителен знак.",
   "portfolioDividendsByMonth": "По месеци",
   "dividendsLegendReceived": "Получени",
-  "dividendsLegendExpected": "Очаквани"
+  "dividendsLegendExpected": "Очаквани",
+  "dividendGoalSet": "Задай месечна цел за дивиденти",
+  "dividendGoalTitle": "Месечна цел за дивиденти",
+  "dividendGoalAmount": "Дивиденти на месец",
+  "dividendGoalProgress": "Около {amount} на месец при текущата доходност: {percent} от целта ти от {goal}",
+  "dividendGoalReached": "Около {amount} на месец при текущата доходност: целта ти от {goal} е постигната"
 }

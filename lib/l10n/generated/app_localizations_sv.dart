@@ -2481,6 +2481,25 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Sätt ett månatligt utdelningsmål';
+
+  @override
+  String get dividendGoalTitle => 'Månatligt utdelningsmål';
+
+  @override
+  String get dividendGoalAmount => 'Utdelning per månad';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Cirka $amount i månaden med dagens direktavkastning: $percent av ditt mål på $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Cirka $amount i månaden med dagens direktavkastning: ditt mål på $goal är nått';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sätt ett mål';
 
   @override

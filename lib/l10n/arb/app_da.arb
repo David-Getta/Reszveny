@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Hvor meget udbyttet pr. aktie i gennemsnit er vokset om året over de seneste fem år. Stabil vækst betyder som regel, at selskabet har tillid til sit cashflow; en nedsættelse er ofte et faresignal.",
   "portfolioDividendsByMonth": "Pr. måned",
   "dividendsLegendReceived": "Modtaget",
-  "dividendsLegendExpected": "Forventet"
+  "dividendsLegendExpected": "Forventet",
+  "dividendGoalSet": "Sæt et månedligt udbyttemål",
+  "dividendGoalTitle": "Månedligt udbyttemål",
+  "dividendGoalAmount": "Udbytte pr. måned",
+  "dividendGoalProgress": "Ca. {amount} pr. måned med dagens afkast: {percent} af dit mål på {goal}",
+  "dividendGoalReached": "Ca. {amount} pr. måned med dagens afkast: dit mål på {goal} er nået"
 }

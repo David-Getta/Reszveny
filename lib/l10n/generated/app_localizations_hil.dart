@@ -2495,6 +2495,26 @@ class AppLocalizationsHil extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet =>
+      'Magbutang sang binulan nga tulumuron sa dibidendo';
+
+  @override
+  String get dividendGoalTitle => 'Binulan nga tulumuron sa dibidendo';
+
+  @override
+  String get dividendGoalAmount => 'Dibidendo kada bulan';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Mga $amount kada bulan sa yield subong: $percent sang imo tulumuron nga $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Mga $amount kada bulan sa yield subong: naabot na ang imo tulumuron nga $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

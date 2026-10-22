@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "છેલ્લાં પાંચ વર્ષમાં શેર દીઠ ડિવિડન્ડ દર વર્ષે સરેરાશ કેટલું વધ્યું. સ્થિર વૃદ્ધિનો સામાન્ય રીતે અર્થ એ છે કે કંપનીને પોતાના રોકડ પ્રવાહ પર વિશ્વાસ છે; ઘટાડો ઘણીવાર ચેતવણીનો સંકેત હોય છે.",
   "portfolioDividendsByMonth": "મહિના મુજબ",
   "dividendsLegendReceived": "પ્રાપ્ત",
-  "dividendsLegendExpected": "અપેક્ષિત"
+  "dividendsLegendExpected": "અપેક્ષિત",
+  "dividendGoalSet": "માસિક ડિવિડન્ડ લક્ષ્ય નક્કી કરો",
+  "dividendGoalTitle": "માસિક ડિવિડન્ડ લક્ષ્ય",
+  "dividendGoalAmount": "દર મહિને ડિવિડન્ડ",
+  "dividendGoalProgress": "હાલની યીલ્ડ પર દર મહિને લગભગ {amount} · {percent} · લક્ષ્ય: {goal}",
+  "dividendGoalReached": "હાલની યીલ્ડ પર દર મહિને લગભગ {amount} · લક્ષ્ય પૂર્ણ થયું: {goal}"
 }

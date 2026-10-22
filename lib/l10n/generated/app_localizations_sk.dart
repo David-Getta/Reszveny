@@ -2545,6 +2545,25 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Nastaviť mesačný cieľ dividend';
+
+  @override
+  String get dividendGoalTitle => 'Mesačný cieľ dividend';
+
+  @override
+  String get dividendGoalAmount => 'Dividendy mesačne';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Približne $amount mesačne pri dnešných výnosoch: $percent z cieľa $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Približne $amount mesačne pri dnešných výnosoch: cieľ $goal splnený';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastaviť cieľ';
 
   @override

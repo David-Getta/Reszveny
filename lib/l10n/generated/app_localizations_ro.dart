@@ -2518,6 +2518,25 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Setează un obiectiv lunar de dividende';
+
+  @override
+  String get dividendGoalTitle => 'Obiectiv lunar de dividende';
+
+  @override
+  String get dividendGoalAmount => 'Dividende pe lună';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Circa $amount pe lună la randamentele actuale: $percent din obiectivul de $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Circa $amount pe lună la randamentele actuale: obiectivul de $goal a fost atins';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

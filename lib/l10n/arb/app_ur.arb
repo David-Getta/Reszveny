@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "پچھلے پانچ سالوں میں فی شیئر ڈیویڈنڈ ہر سال اوسطاً کتنا بڑھا۔ مستقل اضافے کا عموماً مطلب ہوتا ہے کہ کمپنی کو اپنے نقد بہاؤ پر بھروسہ ہے؛ کٹوتی اکثر ایک انتباہی علامت ہوتی ہے۔",
   "portfolioDividendsByMonth": "ماہ وار",
   "dividendsLegendReceived": "موصول شدہ",
-  "dividendsLegendExpected": "متوقع"
+  "dividendsLegendExpected": "متوقع",
+  "dividendGoalSet": "ماہانہ ڈیویڈنڈ کا ہدف مقرر کریں",
+  "dividendGoalTitle": "ماہانہ ڈیویڈنڈ کا ہدف",
+  "dividendGoalAmount": "ماہانہ ڈیویڈنڈ",
+  "dividendGoalProgress": "آج کی ییلڈ پر ماہانہ تقریباً {amount} · {percent} · ہدف: {goal}",
+  "dividendGoalReached": "آج کی ییلڈ پر ماہانہ تقریباً {amount} · ہدف حاصل ہو گیا: {goal}"
 }

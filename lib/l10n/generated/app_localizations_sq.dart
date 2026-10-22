@@ -2485,6 +2485,25 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Cakto një objektiv mujor dividendi';
+
+  @override
+  String get dividendGoalTitle => 'Objektivi mujor i dividendit';
+
+  @override
+  String get dividendGoalAmount => 'Dividendë në muaj';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Rreth $amount në muaj me rendimentet e sotme · $percent · objektivi: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Rreth $amount në muaj me rendimentet e sotme · Objektivi u arrit: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

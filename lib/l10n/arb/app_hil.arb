@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Pila ang gintubo sang dibidendo kada share kada tuig sa average sa nagligad nga lima ka tuig. Ang padayon nga pagtubo kasagaran nagakahulugan nga nagasalig ang kompanya sa iya cash flow; ang pagbuhin kasagaran isa ka tanda sang paandam.",
   "portfolioDividendsByMonth": "Kada bulan",
   "dividendsLegendReceived": "Nabaton",
-  "dividendsLegendExpected": "Ginalauman"
+  "dividendsLegendExpected": "Ginalauman",
+  "dividendGoalSet": "Magbutang sang binulan nga tulumuron sa dibidendo",
+  "dividendGoalTitle": "Binulan nga tulumuron sa dibidendo",
+  "dividendGoalAmount": "Dibidendo kada bulan",
+  "dividendGoalProgress": "Mga {amount} kada bulan sa yield subong: {percent} sang imo tulumuron nga {goal}",
+  "dividendGoalReached": "Mga {amount} kada bulan sa yield subong: naabot na ang imo tulumuron nga {goal}"
 }

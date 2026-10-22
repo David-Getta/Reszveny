@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Mbaʼeichaitépa okakuaa dividendo peteĩteĩ acción rehe ary ha ary, promedio-pe, ary po ohasavaʼekuépe. Jekakuaa hekopete ohechauka jepi pe empresa ojeroviaha iviru oikéva ha osẽvare; ojepoʼíramo, heta jey haʼe peteĩ señal de alerta.",
   "portfolioDividendsByMonth": "Jasy rupi",
   "dividendsLegendReceived": "Ojehupytýva",
-  "dividendsLegendExpected": "Oñehaʼarõva"
+  "dividendsLegendExpected": "Oñehaʼarõva",
+  "dividendGoalSet": "Emoĩ dividendo jehupytyrã jasy ñavõme",
+  "dividendGoalTitle": "Dividendo jehupytyrã jasy ñavõme",
+  "dividendGoalAmount": "Dividendo jasy ñavõme",
+  "dividendGoalProgress": "Koʼág̃agua rendimiento-pe, {amount} rupi jasy ñavõme · {percent} · Jehupytyrã: {goal}",
+  "dividendGoalReached": "Koʼág̃agua rendimiento-pe, {amount} rupi jasy ñavõme · Rehupytýma jehupytyrã: {goal}"
 }

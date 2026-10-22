@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Πόσο αυξήθηκε κατά μέσο όρο ετησίως το μέρισμα ανά μετοχή τα τελευταία πέντε χρόνια. Η σταθερή αύξηση συνήθως σημαίνει ότι η εταιρεία εμπιστεύεται τις ταμειακές ροές της· μια περικοπή είναι συχνά προειδοποιητικό σημάδι.",
   "portfolioDividendsByMonth": "Ανά μήνα",
   "dividendsLegendReceived": "Εισπραγμένα",
-  "dividendsLegendExpected": "Αναμενόμενα"
+  "dividendsLegendExpected": "Αναμενόμενα",
+  "dividendGoalSet": "Ορισμός μηνιαίου στόχου μερισμάτων",
+  "dividendGoalTitle": "Μηνιαίος στόχος μερισμάτων",
+  "dividendGoalAmount": "Μερίσματα ανά μήνα",
+  "dividendGoalProgress": "Περίπου {amount} τον μήνα με τις σημερινές αποδόσεις: {percent} του στόχου των {goal}",
+  "dividendGoalReached": "Περίπου {amount} τον μήνα με τις σημερινές αποδόσεις: ο στόχος των {goal} επιτεύχθηκε"
 }

@@ -2492,6 +2492,25 @@ class AppLocalizationsQu extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Sapa killa dividendopa hayparinanta churay';
+
+  @override
+  String get dividendGoalTitle => 'Sapa killa dividendopa hayparinan';
+
+  @override
+  String get dividendGoalAmount => 'Sapa killa dividendo';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Kunan rendimientowan sapa killa yaqa $amount · $percent · Hayparina: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Kunan rendimientowan sapa killa yaqa $amount · Hayparinaman chayarqanki: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

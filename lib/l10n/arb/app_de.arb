@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Wie stark die Dividende je Aktie in den letzten fünf Jahren im Schnitt pro Jahr gewachsen ist. Stetiges Wachstum heißt meist, dass das Unternehmen seinem Cashflow vertraut; eine Kürzung ist oft ein Warnsignal.",
   "portfolioDividendsByMonth": "Nach Monat",
   "dividendsLegendReceived": "Erhalten",
-  "dividendsLegendExpected": "Erwartet"
+  "dividendsLegendExpected": "Erwartet",
+  "dividendGoalSet": "Monatliches Dividendenziel festlegen",
+  "dividendGoalTitle": "Monatliches Dividendenziel",
+  "dividendGoalAmount": "Dividenden pro Monat",
+  "dividendGoalProgress": "Etwa {amount} pro Monat bei heutigen Renditen: {percent} deines Ziels von {goal}",
+  "dividendGoalReached": "Etwa {amount} pro Monat bei heutigen Renditen: dein Ziel von {goal} ist erreicht"
 }

@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Leswi dividende hi xere yi kuleke ha swona hi lembe hi xiringaniso eka malembe ya ntlhanu lama hundzeke. Ku kula loku tshamaka ku ri kona hakanyingi swi vula leswaku khampani yi tshemba ku khuluka ka mali ya yona; ku hunguta hakanyingi i mfungho wa xilemukiso.",
   "portfolioDividendsByMonth": "Hi n'hweti",
   "dividendsLegendReceived": "Leti amukeriweke",
-  "dividendsLegendExpected": "Leti languteriweke"
+  "dividendsLegendExpected": "Leti languteriweke",
+  "dividendGoalSet": "Veka xikongomelo xa dividende xa n'hweti na n'hweti",
+  "dividendGoalTitle": "Xikongomelo xa dividende xa n'hweti na n'hweti",
+  "dividendGoalAmount": "Dividende hi n'hweti",
+  "dividendGoalProgress": "Hi mbuyelo wa namuntlha, kwalomu ka {amount} hi n'hweti · {percent} · Xikongomelo: {goal}",
+  "dividendGoalReached": "Hi mbuyelo wa namuntlha, kwalomu ka {amount} hi n'hweti · Xikongomelo xi fikeleriwile: {goal}"
 }

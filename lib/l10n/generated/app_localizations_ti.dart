@@ -2441,6 +2441,25 @@ class AppLocalizationsTi extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'ወርሓዊ ዕላማ ብጽሒት ትርፊ ኣቐምጥ';
+
+  @override
+  String get dividendGoalTitle => 'ወርሓዊ ዕላማ ብጽሒት ትርፊ';
+
+  @override
+  String get dividendGoalAmount => 'ብጽሒት ትርፊ ኣብ ወርሒ';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'ብናይ ሎሚ መጠን ኣብ ወርሒ ኣስታት $amount · $percent · ዕላማ፦ $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'ብናይ ሎሚ መጠን ኣብ ወርሒ ኣስታት $amount · ዕላማ ተወቒዑ፦ $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

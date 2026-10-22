@@ -2481,6 +2481,25 @@ class AppLocalizationsAz extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Aylıq dividend hədəfi təyin et';
+
+  @override
+  String get dividendGoalTitle => 'Aylıq dividend hədəfi';
+
+  @override
+  String get dividendGoalAmount => 'Aylıq dividendlər';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Cari gəlirliliklə ayda təxminən $amount · $percent · hədəf: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Cari gəlirliliklə ayda təxminən $amount · Hədəfə çatdın: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hədəf təyin et';
 
   @override

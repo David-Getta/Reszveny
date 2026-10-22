@@ -836,6 +836,13 @@ void main() {
     await tester.ensureVisible(card);
     await tester.pumpAndSettle();
     await _shot(tester, 'portfolio_dividends_phone_hu');
+    // Havi osztalékcél a kártya alján (a mai hozamokból várható havi átlaghoz).
+    await s.preferences.setDividendGoal((amount: 50000, currency: 'HUF'));
+    await tester.pumpAndSettle();
+    final goal = find.byKey(const ValueKey('dividend-goal-bar'));
+    await Scrollable.ensureVisible(tester.element(goal), alignment: 0.7);
+    await tester.pumpAndSettle();
+    await _shot(tester, 'portfolio_dividend_goal_phone_hu');
   });
 
   testWidgets('selling shares on a phone (hungarian)', (tester) async {

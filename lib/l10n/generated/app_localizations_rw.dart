@@ -2490,6 +2490,26 @@ class AppLocalizationsRw extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet =>
+      'Shyiraho intego y\'inyungu ku migabane ku kwezi';
+
+  @override
+  String get dividendGoalTitle => 'Intego y\'inyungu ku migabane ku kwezi';
+
+  @override
+  String get dividendGoalAmount => 'Inyungu ku migabane ku kwezi';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Hafi $amount ku kwezi ku gipimo cy\'ubu · $percent · Intego: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Hafi $amount ku kwezi ku gipimo cy\'ubu · Wageze ku ntego: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Shyiraho intego';
 
   @override

@@ -2480,6 +2480,25 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'دانانی ئامانجی مانگانەی پشکی قازانج';
+
+  @override
+  String get dividendGoalTitle => 'ئامانجی مانگانەی پشکی قازانج';
+
+  @override
+  String get dividendGoalAmount => 'پشکی قازانج لە مانگێکدا';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'بە ڕێژەی ئێستا نزیکەی $amount لە مانگێکدا · $percent · ئامانج: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'بە ڕێژەی ئێستا نزیکەی $amount لە مانگێکدا · گەیشتیت بە ئامانج: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

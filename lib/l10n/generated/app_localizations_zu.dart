@@ -2490,6 +2490,25 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Setha umgomo we-dividend wanyanga zonke';
+
+  @override
+  String get dividendGoalTitle => 'Umgomo we-dividend wanyanga zonke';
+
+  @override
+  String get dividendGoalAmount => 'I-dividend ngenyanga';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Cishe $amount ngenyanga ngesivuno samanje · $percent · Umgomo: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Cishe $amount ngenyanga ngesivuno samanje · Umgomo ufinyelelwe: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setha umgomo';
 
   @override

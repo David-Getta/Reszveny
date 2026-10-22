@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Hvor mye utbyttet per aksje har økt i gjennomsnitt per år de siste fem årene. Jevn vekst betyr som regel at selskapet har tillit til kontantstrømmen sin; et kutt er ofte et faresignal.",
   "portfolioDividendsByMonth": "Per måned",
   "dividendsLegendReceived": "Mottatt",
-  "dividendsLegendExpected": "Forventet"
+  "dividendsLegendExpected": "Forventet",
+  "dividendGoalSet": "Sett et månedlig utbyttemål",
+  "dividendGoalTitle": "Månedlig utbyttemål",
+  "dividendGoalAmount": "Utbytte per måned",
+  "dividendGoalProgress": "Rundt {amount} i måneden med dagens direkteavkastning: {percent} av målet ditt på {goal}",
+  "dividendGoalReached": "Rundt {amount} i måneden med dagens direkteavkastning: målet ditt på {goal} er nådd"
 }

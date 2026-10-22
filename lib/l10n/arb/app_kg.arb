@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Nki mutindu dividende ya action mosi me kula konso mvula na kati-kati na mivu tanu yina me luta. Kukula ya ntangu yonso ke monisaka mingi nde kompani ke tula ntima na mbongo yina ke kota mpi ke basika; kukulumusa yo ke vandaka mingi kidimbu ya kukebisa.",
   "portfolioDividendsByMonth": "Konso ngonda",
   "dividendsLegendReceived": "Bo me baka",
-  "dividendsLegendExpected": "Bo ke vingila"
+  "dividendsLegendExpected": "Bo ke vingila",
+  "dividendGoalSet": "Tula lukanu ya dividende na ngonda",
+  "dividendGoalTitle": "Lukanu ya dividende na ngonda",
+  "dividendGoalAmount": "Dividende mu ngonda",
+  "dividendGoalProgress": "Pene-pene {amount} mu ngonda na rendement ya bubu · {percent} · Lukanu: {goal}",
+  "dividendGoalReached": "Pene-pene {amount} mu ngonda na rendement ya bubu · Lukanu me lunga: {goal}"
 }

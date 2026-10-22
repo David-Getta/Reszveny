@@ -2486,6 +2486,25 @@ class AppLocalizationsSn extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Isa chinangwa chedhividhendi pamwedzi';
+
+  @override
+  String get dividendGoalTitle => 'Chinangwa chedhividhendi pamwedzi';
+
+  @override
+  String get dividendGoalAmount => 'Dhividhendi pamwedzi';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Ingangoita $amount pamwedzi nepundutso yanhasi · $percent · Chinangwa: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Ingangoita $amount pamwedzi nepundutso yanhasi · Wasvika pachinangwa: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Isa chinangwa';
 
   @override

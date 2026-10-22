@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "過去五年每股股息平均每年增長多少。穩定增長通常代表公司對自身現金流有信心；削減股息往往是警號。",
   "portfolioDividendsByMonth": "按月",
   "dividendsLegendReceived": "已收",
-  "dividendsLegendExpected": "預計"
+  "dividendsLegendExpected": "預計",
+  "dividendGoalSet": "設定每月股息目標",
+  "dividendGoalTitle": "每月股息目標",
+  "dividendGoalAmount": "每月股息",
+  "dividendGoalProgress": "按現時股息率每月約 {amount}：已達成 {percent} · 目標 {goal}",
+  "dividendGoalReached": "按現時股息率每月約 {amount}：已達成 {goal} 目標"
 }

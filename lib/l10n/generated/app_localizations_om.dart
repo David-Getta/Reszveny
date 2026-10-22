@@ -2489,6 +2489,25 @@ class AppLocalizationsOm extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Kaayyoo qooda bu\'aa ji\'aa kaa\'i';
+
+  @override
+  String get dividendGoalTitle => 'Kaayyoo qooda bu\'aa ji\'aa';
+
+  @override
+  String get dividendGoalAmount => 'Qooda bu\'aa ji\'atti';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Dhibbeentaa har\'aatiin ji\'atti gara $amount · $percent · Kaayyoo: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Dhibbeentaa har\'aatiin ji\'atti gara $amount · Kaayyoon galma ga\'eera: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

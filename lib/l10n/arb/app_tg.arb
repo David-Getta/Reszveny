@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Дивиденд ба як саҳмия дар панҷ соли охир ба ҳисоби миёна ҳар сол чӣ қадар афзудааст. Афзоиши устувор одатан маънои онро дорад, ки ширкат ба ҷараёни пулии худ эътимод дорад; кам кардани он аксар вақт аломати ҳушдор аст.",
   "portfolioDividendsByMonth": "Аз рӯи моҳҳо",
   "dividendsLegendReceived": "Гирифташуда",
-  "dividendsLegendExpected": "Интизоршаванда"
+  "dividendsLegendExpected": "Интизоршаванда",
+  "dividendGoalSet": "Муқаррар кардани ҳадафи моҳонаи дивиденд",
+  "dividendGoalTitle": "Ҳадафи моҳонаи дивиденд",
+  "dividendGoalAmount": "Дивиденд дар як моҳ",
+  "dividendGoalProgress": "Бо даромаднокии имрӯза тақрибан {amount} дар як моҳ · {percent} · ҳадаф: {goal}",
+  "dividendGoalReached": "Бо даромаднокии имрӯза тақрибан {amount} дар як моҳ · Ҳадаф иҷро шуд: {goal}"
 }

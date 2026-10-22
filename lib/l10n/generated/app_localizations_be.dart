@@ -2545,6 +2545,25 @@ class AppLocalizationsBe extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Задаць штомесячную мэту па дывідэндах';
+
+  @override
+  String get dividendGoalTitle => 'Штомесячная мэта па дывідэндах';
+
+  @override
+  String get dividendGoalAmount => 'Дывідэнды ў месяц';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Каля $amount у месяц пры цяперашняй даходнасці: $percent ад мэты $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Каля $amount у месяц пры цяперашняй даходнасці: мэта $goal дасягнута';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задаць мэту';
 
   @override

@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Sa është rritur mesatarisht në vit dividendi për aksion gjatë pesë viteve të fundit. Një rritje e qëndrueshme zakonisht do të thotë se kompania i beson rrjedhës së saj të parasë; një ulje shpesh është shenjë paralajmëruese.",
   "portfolioDividendsByMonth": "Sipas muajve",
   "dividendsLegendReceived": "Të marrë",
-  "dividendsLegendExpected": "Të pritur"
+  "dividendsLegendExpected": "Të pritur",
+  "dividendGoalSet": "Cakto një objektiv mujor dividendi",
+  "dividendGoalTitle": "Objektivi mujor i dividendit",
+  "dividendGoalAmount": "Dividendë në muaj",
+  "dividendGoalProgress": "Rreth {amount} në muaj me rendimentet e sotme · {percent} · objektivi: {goal}",
+  "dividendGoalReached": "Rreth {amount} në muaj me rendimentet e sotme · Objektivi u arrit: {goal}"
 }

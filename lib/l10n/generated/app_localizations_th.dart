@@ -2449,6 +2449,25 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'ตั้งเป้าหมายเงินปันผลรายเดือน';
+
+  @override
+  String get dividendGoalTitle => 'เป้าหมายเงินปันผลรายเดือน';
+
+  @override
+  String get dividendGoalAmount => 'เงินปันผลต่อเดือน';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'ประมาณ $amount ต่อเดือนตามอัตราผลตอบแทนปัจจุบัน: $percent ของเป้าหมาย $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'ประมาณ $amount ต่อเดือนตามอัตราผลตอบแทนปัจจุบัน: ถึงเป้าหมาย $goal แล้ว';
+  }
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

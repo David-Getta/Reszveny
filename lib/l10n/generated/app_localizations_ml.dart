@@ -2489,6 +2489,25 @@ class AppLocalizationsMl extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'പ്രതിമാസ ലാഭവിഹിത ലക്ഷ്യം സജ്ജമാക്കുക';
+
+  @override
+  String get dividendGoalTitle => 'പ്രതിമാസ ലാഭവിഹിത ലക്ഷ്യം';
+
+  @override
+  String get dividendGoalAmount => 'പ്രതിമാസ ലാഭവിഹിതം';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'ഇന്നത്തെ യീൽഡിൽ പ്രതിമാസം ഏകദേശം $amount · $percent · ലക്ഷ്യം: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'ഇന്നത്തെ യീൽഡിൽ പ്രതിമാസം ഏകദേശം $amount · ലക്ഷ്യം കൈവരിച്ചു: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'ലക്ഷ്യം സജ്ജമാക്കുക';
 
   @override

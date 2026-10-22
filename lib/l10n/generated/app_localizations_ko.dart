@@ -2409,6 +2409,25 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => '월 배당 목표 설정';
+
+  @override
+  String get dividendGoalTitle => '월 배당 목표';
+
+  @override
+  String get dividendGoalAmount => '월 배당금';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return '현재 수익률 기준 월 약 $amount: $percent 달성 · 목표 $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return '현재 수익률 기준 월 약 $amount: 목표 $goal 달성';
+  }
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "בכמה צמח הדיבידנד למניה בממוצע בכל שנה בחמש השנים האחרונות. צמיחה יציבה מעידה בדרך כלל שהחברה בוטחת בתזרים המזומנים שלה; קיצוץ הוא לעיתים קרובות סימן אזהרה.",
   "portfolioDividendsByMonth": "לפי חודש",
   "dividendsLegendReceived": "התקבלו",
-  "dividendsLegendExpected": "צפויים"
+  "dividendsLegendExpected": "צפויים",
+  "dividendGoalSet": "הגדרת יעד דיבידנד חודשי",
+  "dividendGoalTitle": "יעד דיבידנד חודשי",
+  "dividendGoalAmount": "דיבידנדים בחודש",
+  "dividendGoalProgress": "כ-{amount} בחודש לפי התשואות הנוכחיות: {percent} מהיעד של {goal}",
+  "dividendGoalReached": "כ-{amount} בחודש לפי התשואות הנוכחיות: היעד של {goal} הושג"
 }

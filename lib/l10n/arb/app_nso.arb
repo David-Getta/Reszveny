@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Dividende ka šere e godile bjang ka ngwaga ka kakaretšo mengwageng ye mehlano ya go feta. Kgolo ye e tšwelago pele gantši e bontšha gore khamphani e tshepha phallo ya yona ya tšhelete; go fokotšwa gantši ke leswao la temošo.",
   "portfolioDividendsByMonth": "Ka kgwedi",
   "dividendsLegendReceived": "Tše di amogetšwego",
-  "dividendsLegendExpected": "Tše di letetšwego"
+  "dividendsLegendExpected": "Tše di letetšwego",
+  "dividendGoalSet": "Bea maikemišetšo a dividende a kgwedi le kgwedi",
+  "dividendGoalTitle": "Maikemišetšo a dividende a kgwedi le kgwedi",
+  "dividendGoalAmount": "Dividende ka kgwedi",
+  "dividendGoalProgress": "Ka poelo ya lehono, e ka ba {amount} ka kgwedi · {percent} · Maikemišetšo: {goal}",
+  "dividendGoalReached": "Ka poelo ya lehono, e ka ba {amount} ka kgwedi · Maikemišetšo a fihleletšwe: {goal}"
 }

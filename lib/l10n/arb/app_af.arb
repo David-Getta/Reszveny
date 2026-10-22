@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Hoeveel die dividend per aandeel oor die afgelope vyf jaar gemiddeld per jaar gegroei het. Bestendige groei beteken gewoonlik dat die maatskappy sy kontantvloei vertrou; 'n verlaging is dikwels 'n waarskuwingsteken.",
   "portfolioDividendsByMonth": "Per maand",
   "dividendsLegendReceived": "Ontvang",
-  "dividendsLegendExpected": "Verwag"
+  "dividendsLegendExpected": "Verwag",
+  "dividendGoalSet": "Stel 'n maandelikse dividenddoelwit",
+  "dividendGoalTitle": "Maandelikse dividenddoelwit",
+  "dividendGoalAmount": "Dividende per maand",
+  "dividendGoalProgress": "Sowat {amount} per maand teen huidige opbrengste: {percent} van jou doelwit van {goal}",
+  "dividendGoalReached": "Sowat {amount} per maand teen huidige opbrengste: jou doelwit van {goal} is bereik"
 }

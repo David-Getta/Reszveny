@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "मागील पाच वर्षांत प्रति शेअर लाभांश दरवर्षी सरासरी किती वाढला. स्थिर वाढ सहसा दर्शवते की कंपनीला तिच्या रोख प्रवाहावर विश्वास आहे; लाभांशात कपात हे अनेकदा धोक्याचे लक्षण असते.",
   "portfolioDividendsByMonth": "महिन्यानुसार",
   "dividendsLegendReceived": "मिळालेला",
-  "dividendsLegendExpected": "अपेक्षित"
+  "dividendsLegendExpected": "अपेक्षित",
+  "dividendGoalSet": "मासिक लाभांश लक्ष्य ठरवा",
+  "dividendGoalTitle": "मासिक लाभांश लक्ष्य",
+  "dividendGoalAmount": "दरमहा लाभांश",
+  "dividendGoalProgress": "आजच्या उत्पन्न दराने दरमहा सुमारे {amount} · {percent} · लक्ष्य: {goal}",
+  "dividendGoalReached": "आजच्या उत्पन्न दराने दरमहा सुमारे {amount} · लक्ष्य गाठले: {goal}"
 }

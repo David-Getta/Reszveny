@@ -2487,6 +2487,25 @@ class AppLocalizationsNy extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Ikani cholinga cha gawo la phindu pamwezi';
+
+  @override
+  String get dividendGoalTitle => 'Cholinga cha gawo la phindu pamwezi';
+
+  @override
+  String get dividendGoalAmount => 'Gawo la phindu pamwezi';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Pafupifupi $amount pamwezi ndi chiwerengero cha lero · $percent · Cholinga: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Pafupifupi $amount pamwezi ndi chiwerengero cha lero · Mwakwaniritsa cholinga: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

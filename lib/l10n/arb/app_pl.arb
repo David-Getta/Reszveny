@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "O ile średnio rocznie rosła dywidenda na akcję w ostatnich pięciu latach. Stały wzrost zwykle oznacza, że spółka ufa swoim przepływom pieniężnym; obniżka często jest sygnałem ostrzegawczym.",
   "portfolioDividendsByMonth": "Miesięcznie",
   "dividendsLegendReceived": "Otrzymane",
-  "dividendsLegendExpected": "Spodziewane"
+  "dividendsLegendExpected": "Spodziewane",
+  "dividendGoalSet": "Ustaw miesięczny cel dywidend",
+  "dividendGoalTitle": "Miesięczny cel dywidend",
+  "dividendGoalAmount": "Dywidendy miesięcznie",
+  "dividendGoalProgress": "Ok. {amount} miesięcznie przy obecnych stopach dywidendy · {percent} · cel: {goal}",
+  "dividendGoalReached": "Ok. {amount} miesięcznie przy obecnych stopach dywidendy · Cel osiągnięty: {goal}"
 }

@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "গত পাঁচ বছরে শেয়ার প্রতি ডিভিডেন্ড বছরে গড়ে কতটা বেড়েছে। স্থির বৃদ্ধি সাধারণত বোঝায় যে কোম্পানি তার নগদ প্রবাহের ওপর আস্থা রাখে; ডিভিডেন্ড কমানো প্রায়ই একটি সতর্ক সংকেত।",
   "portfolioDividendsByMonth": "মাস অনুযায়ী",
   "dividendsLegendReceived": "প্রাপ্ত",
-  "dividendsLegendExpected": "প্রত্যাশিত"
+  "dividendsLegendExpected": "প্রত্যাশিত",
+  "dividendGoalSet": "মাসিক ডিভিডেন্ডের লক্ষ্য ঠিক করুন",
+  "dividendGoalTitle": "মাসিক ডিভিডেন্ডের লক্ষ্য",
+  "dividendGoalAmount": "প্রতি মাসে ডিভিডেন্ড",
+  "dividendGoalProgress": "বর্তমান ইল্ডে প্রতি মাসে প্রায় {amount} · {percent} · লক্ষ্য: {goal}",
+  "dividendGoalReached": "বর্তমান ইল্ডে প্রতি মাসে প্রায় {amount} · লক্ষ্য পূরণ হয়েছে: {goal}"
 }

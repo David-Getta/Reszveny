@@ -2534,6 +2534,25 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'تحديد هدف شهري لتوزيعات الأرباح';
+
+  @override
+  String get dividendGoalTitle => 'هدف توزيعات الأرباح الشهري';
+
+  @override
+  String get dividendGoalAmount => 'توزيعات الأرباح شهريًا';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'نحو $amount شهريًا بالعوائد الحالية: $percent من هدفك البالغ $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'نحو $amount شهريًا بالعوائد الحالية: تم بلوغ هدفك البالغ $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'تحديد هدف';
 
   @override

@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Sabaraha dividén per saham tumuwuh unggal taun sacara rata-rata salila lima taun ka tukang. Tumuwuh anu ajeg biasana hartosna pausahaan yakin kana aliran kasna; pamotongan sering janten tanda bahaya.",
   "portfolioDividendsByMonth": "Per bulan",
   "dividendsLegendReceived": "Katampi",
-  "dividendsLegendExpected": "Diperkirakeun"
+  "dividendsLegendExpected": "Diperkirakeun",
+  "dividendGoalSet": "Setél target dividén bulanan",
+  "dividendGoalTitle": "Target dividén bulanan",
+  "dividendGoalAmount": "Dividén per bulan",
+  "dividendGoalProgress": "Kira-kira {amount} per bulan dumasar imbal hasil ayeuna: {percent} tina target {goal}",
+  "dividendGoalReached": "Kira-kira {amount} per bulan dumasar imbal hasil ayeuna: target {goal} kahontal"
 }

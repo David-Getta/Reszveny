@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "ብጽሒት ትርፊ ንሓደ ኣክሲዮን ኣብ ዝሓለፉ ሓሙሽተ ዓመታት ብማእከላይ ኣብ ዓመት ክንደይ ከም ዝዓበየ። ቀጻሊ ዕቤት መብዛሕትኡ ግዜ እቲ ኩባንያ ብገንዘባዊ ውሕዝኡ ከም ዝኣምን የርኢ፤ ምጉዳል ድማ መብዛሕትኡ ግዜ ምልክት ማስጠንቀቕታ እዩ።",
   "portfolioDividendsByMonth": "ብወርሒ",
   "dividendsLegendReceived": "ዝተረኽበ",
-  "dividendsLegendExpected": "ዝጽበ"
+  "dividendsLegendExpected": "ዝጽበ",
+  "dividendGoalSet": "ወርሓዊ ዕላማ ብጽሒት ትርፊ ኣቐምጥ",
+  "dividendGoalTitle": "ወርሓዊ ዕላማ ብጽሒት ትርፊ",
+  "dividendGoalAmount": "ብጽሒት ትርፊ ኣብ ወርሒ",
+  "dividendGoalProgress": "ብናይ ሎሚ መጠን ኣብ ወርሒ ኣስታት {amount} · {percent} · ዕላማ፦ {goal}",
+  "dividendGoalReached": "ብናይ ሎሚ መጠን ኣብ ወርሒ ኣስታት {amount} · ዕላማ ተወቒዑ፦ {goal}"
 }

@@ -2471,6 +2471,25 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'လစဉ် အမြတ်ဝေစု ပန်းတိုင် သတ်မှတ်ရန်';
+
+  @override
+  String get dividendGoalTitle => 'လစဉ် အမြတ်ဝေစု ပန်းတိုင်';
+
+  @override
+  String get dividendGoalAmount => 'တစ်လလျှင် အမြတ်ဝေစု';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'ယနေ့ အထွက်နှုန်းဖြင့် တစ်လလျှင် $amount ခန့် · $percent · ပန်းတိုင် $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'ယနေ့ အထွက်နှုန်းဖြင့် တစ်လလျှင် $amount ခန့် · ပန်းတိုင် $goal ပြည့်မီပြီ';
+  }
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

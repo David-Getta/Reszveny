@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "No kasano ti kadakkel ti inyadu ti dibidendo iti tunggal share iti tinawen, iti promedio, iti napalabas a lima a tawen. Ti agtultuloy a panagdakkel ket kaaduanna a kaipapananna nga agtalek ti kompania iti cash flow-na; ti panangkissay ket masansan a pagilasinan ti pakdaar.",
   "portfolioDividendsByMonth": "Kada bulan",
   "dividendsLegendReceived": "Naawat",
-  "dividendsLegendExpected": "Namnamaen"
+  "dividendsLegendExpected": "Namnamaen",
+  "dividendGoalSet": "Mangikeddeng iti binulan a panggep ti dibidendo",
+  "dividendGoalTitle": "Binulan a panggep ti dibidendo",
+  "dividendGoalAmount": "Dibidendo iti tunggal bulan",
+  "dividendGoalProgress": "Agarup {amount} iti tunggal bulan iti yield ita: {percent} ti panggepmo a {goal}",
+  "dividendGoalReached": "Agarup {amount} iti tunggal bulan iti yield ita: nagun-od ti panggepmo a {goal}"
 }

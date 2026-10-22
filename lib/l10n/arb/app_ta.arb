@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "கடந்த ஐந்து ஆண்டுகளில் ஒரு பங்கிற்கான ஈவுத்தொகை ஆண்டுக்குச் சராசரியாக எவ்வளவு வளர்ந்தது. சீரான வளர்ச்சி பொதுவாக நிறுவனம் தனது பணப்புழக்கத்தில் நம்பிக்கை வைத்திருப்பதைக் காட்டுகிறது; குறைப்பு பெரும்பாலும் ஓர் எச்சரிக்கை அறிகுறி.",
   "portfolioDividendsByMonth": "மாத வாரியாக",
   "dividendsLegendReceived": "பெறப்பட்டவை",
-  "dividendsLegendExpected": "எதிர்பார்ப்பு"
+  "dividendsLegendExpected": "எதிர்பார்ப்பு",
+  "dividendGoalSet": "மாதாந்திர ஈவுத்தொகை இலக்கை அமை",
+  "dividendGoalTitle": "மாதாந்திர ஈவுத்தொகை இலக்கு",
+  "dividendGoalAmount": "மாதத்திற்கு ஈவுத்தொகை",
+  "dividendGoalProgress": "இன்றைய விகிதத்தில் மாதத்திற்கு சுமார் {amount} · {percent} · இலக்கு: {goal}",
+  "dividendGoalReached": "இன்றைய விகிதத்தில் மாதத்திற்கு சுமார் {amount} · இலக்கு எட்டப்பட்டது: {goal}"
 }

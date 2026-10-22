@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Kuchuluka komwe gawo la phindu pa sheya iliyonse lakula pachaka pafupifupi m'zaka zisanu zapitazi. Kukula kosasunthika nthawi zambiri kumatanthauza kuti kampani ikukhulupirira ndalama zomwe imapeza; kuchepetsa nthawi zambiri ndi chizindikiro chochenjeza.",
   "portfolioDividendsByMonth": "Pa mwezi",
   "dividendsLegendReceived": "Zolandiridwa",
-  "dividendsLegendExpected": "Zoyembekezeka"
+  "dividendsLegendExpected": "Zoyembekezeka",
+  "dividendGoalSet": "Ikani cholinga cha gawo la phindu pamwezi",
+  "dividendGoalTitle": "Cholinga cha gawo la phindu pamwezi",
+  "dividendGoalAmount": "Gawo la phindu pamwezi",
+  "dividendGoalProgress": "Pafupifupi {amount} pamwezi ndi chiwerengero cha lero · {percent} · Cholinga: {goal}",
+  "dividendGoalReached": "Pafupifupi {amount} pamwezi ndi chiwerengero cha lero · Mwakwaniritsa cholinga: {goal}"
 }

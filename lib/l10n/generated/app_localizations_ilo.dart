@@ -2499,6 +2499,26 @@ class AppLocalizationsIlo extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet =>
+      'Mangikeddeng iti binulan a panggep ti dibidendo';
+
+  @override
+  String get dividendGoalTitle => 'Binulan a panggep ti dibidendo';
+
+  @override
+  String get dividendGoalAmount => 'Dibidendo iti tunggal bulan';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Agarup $amount iti tunggal bulan iti yield ita: $percent ti panggepmo a $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Agarup $amount iti tunggal bulan iti yield ita: nagun-od ti panggepmo a $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

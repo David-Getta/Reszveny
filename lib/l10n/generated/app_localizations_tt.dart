@@ -2477,6 +2477,25 @@ class AppLocalizationsTt extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Айлык дивиденд максатын кую';
+
+  @override
+  String get dividendGoalTitle => 'Айлык дивиденд максаты';
+
+  @override
+  String get dividendGoalAmount => 'Айга дивиденд';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Бүгенге керемлелек белән айга якынча $amount · $percent · максат: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Бүгенге керемлелек белән айга якынча $amount · Максатка ирешелде: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Максат кую';
 
   @override

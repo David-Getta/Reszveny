@@ -2482,6 +2482,25 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Айлык дивиденд максатын коюу';
+
+  @override
+  String get dividendGoalTitle => 'Айлык дивиденд максаты';
+
+  @override
+  String get dividendGoalAmount => 'Айына дивиденд';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Учурдагы кирешелүүлүк менен айына болжол менен $amount · $percent · максат: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Учурдагы кирешелүүлүк менен айына болжол менен $amount · максат аткарылды: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Максат коюу';
 
   @override

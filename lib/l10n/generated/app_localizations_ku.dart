@@ -2481,6 +2481,25 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Armanca dîvîdendê ya mehane deyne';
+
+  @override
+  String get dividendGoalTitle => 'Armanca dîvîdendê ya mehane';
+
+  @override
+  String get dividendGoalAmount => 'Dîvîdend di mehê de';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Bi rêjeya îro nêzî $amount di mehê de · $percent · Armanc: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Bi rêjeya îro nêzî $amount di mehê de · Gihîştî armancê: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

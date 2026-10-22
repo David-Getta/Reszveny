@@ -2487,6 +2487,25 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Սահմանել ամսական շահաբաժնի նպատակ';
+
+  @override
+  String get dividendGoalTitle => 'Ամսական շահաբաժնի նպատակ';
+
+  @override
+  String get dividendGoalAmount => 'Շահաբաժիններ ամսական';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Ներկայիս եկամտաբերությամբ մոտ $amount ամսական · $percent · նպատակ՝ $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Ներկայիս եկամտաբերությամբ մոտ $amount ամսական · նպատակը կատարված է՝ $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

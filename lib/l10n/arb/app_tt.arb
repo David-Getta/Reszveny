@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Соңгы биш елда бер акциягә дивиденд елына уртача күпме арткан. Тотрыклы үсеш гадәттә компаниянең акча агымына ышанганын аңлата; киметү еш кына кисәтү билгесе була.",
   "portfolioDividendsByMonth": "Айлар буенча",
   "dividendsLegendReceived": "Алынган",
-  "dividendsLegendExpected": "Көтелгән"
+  "dividendsLegendExpected": "Көтелгән",
+  "dividendGoalSet": "Айлык дивиденд максатын кую",
+  "dividendGoalTitle": "Айлык дивиденд максаты",
+  "dividendGoalAmount": "Айга дивиденд",
+  "dividendGoalProgress": "Бүгенге керемлелек белән айга якынча {amount} · {percent} · максат: {goal}",
+  "dividendGoalReached": "Бүгенге керемлелек белән айга якынча {amount} · Максатка ирешелде: {goal}"
 }

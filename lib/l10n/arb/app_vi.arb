@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Cổ tức trên mỗi cổ phiếu đã tăng trung bình bao nhiêu mỗi năm trong 5 năm qua. Tăng trưởng đều đặn thường cho thấy công ty tin tưởng vào dòng tiền của mình; việc cắt giảm thường là dấu hiệu cảnh báo.",
   "portfolioDividendsByMonth": "Theo tháng",
   "dividendsLegendReceived": "Đã nhận",
-  "dividendsLegendExpected": "Dự kiến"
+  "dividendsLegendExpected": "Dự kiến",
+  "dividendGoalSet": "Đặt mục tiêu cổ tức hằng tháng",
+  "dividendGoalTitle": "Mục tiêu cổ tức hằng tháng",
+  "dividendGoalAmount": "Cổ tức mỗi tháng",
+  "dividendGoalProgress": "Khoảng {amount} mỗi tháng theo tỷ suất hiện tại: {percent} mục tiêu {goal}",
+  "dividendGoalReached": "Khoảng {amount} mỗi tháng theo tỷ suất hiện tại: đã đạt mục tiêu {goal}"
 }

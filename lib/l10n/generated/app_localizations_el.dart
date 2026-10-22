@@ -2490,6 +2490,25 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Ορισμός μηνιαίου στόχου μερισμάτων';
+
+  @override
+  String get dividendGoalTitle => 'Μηνιαίος στόχος μερισμάτων';
+
+  @override
+  String get dividendGoalAmount => 'Μερίσματα ανά μήνα';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Περίπου $amount τον μήνα με τις σημερινές αποδόσεις: $percent του στόχου των $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Περίπου $amount τον μήνα με τις σημερινές αποδόσεις: ο στόχος των $goal επιτεύχθηκε';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

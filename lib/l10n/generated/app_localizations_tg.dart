@@ -2481,6 +2481,25 @@ class AppLocalizationsTg extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Муқаррар кардани ҳадафи моҳонаи дивиденд';
+
+  @override
+  String get dividendGoalTitle => 'Ҳадафи моҳонаи дивиденд';
+
+  @override
+  String get dividendGoalAmount => 'Дивиденд дар як моҳ';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Бо даромаднокии имрӯза тақрибан $amount дар як моҳ · $percent · ҳадаф: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Бо даромаднокии имрӯза тақрибан $amount дар як моҳ · Ҳадаф иҷро шуд: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

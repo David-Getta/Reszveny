@@ -2472,6 +2472,25 @@ class AppLocalizationsMai extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'मासिक डिविडेंड लक्ष्य निर्धारित करू';
+
+  @override
+  String get dividendGoalTitle => 'मासिक डिविडेंड लक्ष्य';
+
+  @override
+  String get dividendGoalAmount => 'प्रति मास डिविडेंड';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'आजुक यील्ड पर प्रति मास लगभग $amount · $percent · लक्ष्य: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'आजुक यील्ड पर प्रति मास लगभग $amount · लक्ष्य पूरा भेल: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य निर्धारित करू';
 
   @override

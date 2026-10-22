@@ -2465,6 +2465,25 @@ class AppLocalizationsMos extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Ning dividãnd raabo kiuug fãa';
+
+  @override
+  String get dividendGoalTitle => 'Dividãnd raabo kiuug fãa';
+
+  @override
+  String get dividendGoalAmount => 'Dividãnd kiuug fãa';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return '≈ $amount kiuug fãa ne rũndã nafa · $percent · Raabo: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return '≈ $amount kiuug fãa ne rũndã nafa · Raabã paame: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

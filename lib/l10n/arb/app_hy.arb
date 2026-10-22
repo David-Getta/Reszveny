@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Ցույց է տալիս, թե միջինում տարեկան որքան է աճել մեկ բաժնետոմսի դիմաց շահաբաժինը վերջին հինգ տարում։ Կայուն աճը սովորաբար նշանակում է, որ ընկերությունը վստահում է իր դրամական հոսքերին, իսկ կրճատումը հաճախ նախազգուշացնող նշան է։",
   "portfolioDividendsByMonth": "Ըստ ամիսների",
   "dividendsLegendReceived": "Ստացված",
-  "dividendsLegendExpected": "Սպասվող"
+  "dividendsLegendExpected": "Սպասվող",
+  "dividendGoalSet": "Սահմանել ամսական շահաբաժնի նպատակ",
+  "dividendGoalTitle": "Ամսական շահաբաժնի նպատակ",
+  "dividendGoalAmount": "Շահաբաժիններ ամսական",
+  "dividendGoalProgress": "Ներկայիս եկամտաբերությամբ մոտ {amount} ամսական · {percent} · նպատակ՝ {goal}",
+  "dividendGoalReached": "Ներկայիս եկամտաբերությամբ մոտ {amount} ամսական · նպատակը կատարված է՝ {goal}"
 }

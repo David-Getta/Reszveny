@@ -2490,6 +2490,25 @@ class AppLocalizationsLn extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Tyá mokano ya dividende na sanza';
+
+  @override
+  String get dividendGoalTitle => 'Mokano ya dividende na sanza';
+
+  @override
+  String get dividendGoalAmount => 'Dividende na sanza';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Pene na $amount na sanza na rendement ya lelo · $percent · Mokano: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Pene na $amount na sanza na rendement ya lelo · Okokisi mokano: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

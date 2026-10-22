@@ -2492,6 +2492,26 @@ class AppLocalizationsLg extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet =>
+      'Teekawo ekiruubirirwa kya dividendi buli mwezi';
+
+  @override
+  String get dividendGoalTitle => 'Ekiruubirirwa kya dividendi buli mwezi';
+
+  @override
+  String get dividendGoalAmount => 'Dividendi buli mwezi';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Nga $amount buli mwezi ku magoba ga leero · $percent · Ekiruubirirwa: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Nga $amount buli mwezi ku magoba ga leero · Otuuse ku kiruubirirwa: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

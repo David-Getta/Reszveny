@@ -2495,6 +2495,25 @@ class AppLocalizationsSt extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Beha sepheo sa dividende sa kgwedi le kgwedi';
+
+  @override
+  String get dividendGoalTitle => 'Sepheo sa dividende sa kgwedi le kgwedi';
+
+  @override
+  String get dividendGoalAmount => 'Dividende ka kgwedi';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Ka poelo ya kajeno, e ka ba $amount ka kgwedi · $percent · Sepheo: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Ka poelo ya kajeno, e ka ba $amount ka kgwedi · Sepheo se fihletswe: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Beha sepheo';
 
   @override

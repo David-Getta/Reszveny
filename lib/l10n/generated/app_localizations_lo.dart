@@ -2452,6 +2452,25 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'ຕັ້ງເປົ້າໝາຍເງິນປັນຜົນລາຍເດືອນ';
+
+  @override
+  String get dividendGoalTitle => 'ເປົ້າໝາຍເງິນປັນຜົນລາຍເດືອນ';
+
+  @override
+  String get dividendGoalAmount => 'ເງິນປັນຜົນຕໍ່ເດືອນ';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'ປະມານ $amount ຕໍ່ເດືອນ ຕາມຜົນຕອບແທນປັດຈຸບັນ: $percent ຂອງເປົ້າໝາຍ $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'ປະມານ $amount ຕໍ່ເດືອນ ຕາມຜົນຕອບແທນປັດຈຸບັນ: ບັນລຸເປົ້າໝາຍ $goal ແລ້ວ';
+  }
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

@@ -2474,6 +2474,25 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Tọọ ebumnuche nkesa uru kwa ọnwa';
+
+  @override
+  String get dividendGoalTitle => 'Ebumnuche nkesa uru kwa ọnwa';
+
+  @override
+  String get dividendGoalAmount => 'Nkesa uru kwa ọnwa';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Ihe dị ka $amount kwa ọnwa na mkpụrụ nke taa · $percent · Ebumnuche: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Ihe dị ka $amount kwa ọnwa na mkpụrụ nke taa · Emezuru ebumnuche: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tọọ ebumnuche';
 
   @override

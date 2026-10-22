@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "যোৱা পাঁচ বছৰত প্ৰতি শ্বেয়াৰত লভ্যাংশ বছৰি গড়ে কিমান বাঢ়িছে। স্থিৰ বৃদ্ধিয়ে সাধাৰণতে বুজায় যে কোম্পানীটোৱে নিজৰ নগদ ধনৰ প্ৰবাহৰ ওপৰত ভৰসা কৰে; লভ্যাংশ কমোৱাটো প্ৰায়ে এটা সতৰ্কবাণী।",
   "portfolioDividendsByMonth": "মাহ অনুসৰি",
   "dividendsLegendReceived": "প্ৰাপ্ত",
-  "dividendsLegendExpected": "প্ৰত্যাশিত"
+  "dividendsLegendExpected": "প্ৰত্যাশিত",
+  "dividendGoalSet": "মাহেকীয়া লাভাংশৰ লক্ষ্য নিৰ্ধাৰণ কৰক",
+  "dividendGoalTitle": "মাহেকীয়া লাভাংশৰ লক্ষ্য",
+  "dividendGoalAmount": "প্ৰতি মাহে লাভাংশ",
+  "dividendGoalProgress": "বৰ্তমানৰ ইল্ডত প্ৰতি মাহে প্ৰায় {amount} · {percent} · লক্ষ্য: {goal}",
+  "dividendGoalReached": "বৰ্তমানৰ ইল্ডত প্ৰতি মাহে প্ৰায় {amount} · লক্ষ্য পূৰণ হ'ল: {goal}"
 }

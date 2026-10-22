@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Obungi amagoba ku buli mugabo bwe gaayongerwako buli mwaka ku kigero mu myaka etaano egiyise. Okukula okutakyukakyuka kutera okulaga nti kkampuni yeesiga ensimbi zaayo eziyingira n'ezifuluma; okukendeeza amagoba kutera okuba akabonero ak'okulabula.",
   "portfolioDividendsByMonth": "Buli mwezi",
   "dividendsLegendReceived": "Ebyafunibwa",
-  "dividendsLegendExpected": "Ebisuubirwa"
+  "dividendsLegendExpected": "Ebisuubirwa",
+  "dividendGoalSet": "Teekawo ekiruubirirwa kya dividendi buli mwezi",
+  "dividendGoalTitle": "Ekiruubirirwa kya dividendi buli mwezi",
+  "dividendGoalAmount": "Dividendi buli mwezi",
+  "dividendGoalProgress": "Nga {amount} buli mwezi ku magoba ga leero · {percent} · Ekiruubirirwa: {goal}",
+  "dividendGoalReached": "Nga {amount} buli mwezi ku magoba ga leero · Otuuse ku kiruubirirwa: {goal}"
 }

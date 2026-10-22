@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "ಕಳೆದ ಐದು ವರ್ಷಗಳಲ್ಲಿ ಪ್ರತಿ ಷೇರಿಗೆ ಡಿವಿಡೆಂಡ್ ವರ್ಷಕ್ಕೆ ಸರಾಸರಿ ಎಷ್ಟು ಬೆಳೆದಿದೆ ಎಂಬುದು. ಸ್ಥಿರ ಬೆಳವಣಿಗೆ ಸಾಮಾನ್ಯವಾಗಿ ಕಂಪನಿಗೆ ತನ್ನ ನಗದು ಹರಿವಿನ ಮೇಲೆ ವಿಶ್ವಾಸವಿದೆ ಎಂದು ಸೂಚಿಸುತ್ತದೆ; ಕಡಿತವು ಹಲವು ಬಾರಿ ಎಚ್ಚರಿಕೆಯ ಸಂಕೇತ.",
   "portfolioDividendsByMonth": "ತಿಂಗಳ ಪ್ರಕಾರ",
   "dividendsLegendReceived": "ಸ್ವೀಕೃತ",
-  "dividendsLegendExpected": "ನಿರೀಕ್ಷಿತ"
+  "dividendsLegendExpected": "ನಿರೀಕ್ಷಿತ",
+  "dividendGoalSet": "ಮಾಸಿಕ ಡಿವಿಡೆಂಡ್ ಗುರಿ ಹೊಂದಿಸಿ",
+  "dividendGoalTitle": "ಮಾಸಿಕ ಡಿವಿಡೆಂಡ್ ಗುರಿ",
+  "dividendGoalAmount": "ತಿಂಗಳಿಗೆ ಡಿವಿಡೆಂಡ್",
+  "dividendGoalProgress": "ಈಗಿನ ಯೀಲ್ಡ್‌ನಲ್ಲಿ ತಿಂಗಳಿಗೆ ಸುಮಾರು {amount} · {percent} · ಗುರಿ: {goal}",
+  "dividendGoalReached": "ಈಗಿನ ಯೀಲ್ಡ್‌ನಲ್ಲಿ ತಿಂಗಳಿಗೆ ಸುಮಾರು {amount} · ಗುರಿ ತಲುಪಿದೆ: {goal}"
 }

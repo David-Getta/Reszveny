@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Seberapa besar dividen per saham tumbuh rata-rata per tahun selama lima tahun terakhir. Pertumbuhan yang stabil biasanya berarti perusahaan yakin dengan arus kasnya; pemangkasan sering kali merupakan tanda peringatan.",
   "portfolioDividendsByMonth": "Per bulan",
   "dividendsLegendReceived": "Diterima",
-  "dividendsLegendExpected": "Diperkirakan"
+  "dividendsLegendExpected": "Diperkirakan",
+  "dividendGoalSet": "Tetapkan target dividen bulanan",
+  "dividendGoalTitle": "Target dividen bulanan",
+  "dividendGoalAmount": "Dividen per bulan",
+  "dividendGoalProgress": "Sekitar {amount} per bulan dengan imbal hasil saat ini: {percent} dari target {goal}",
+  "dividendGoalReached": "Sekitar {amount} per bulan dengan imbal hasil saat ini: target {goal} tercapai"
 }

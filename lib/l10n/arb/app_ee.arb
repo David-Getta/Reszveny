@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Alesi viɖemama le akpa ɖesiaɖe ŋu dzi ɖe edzi ƒe sia ƒe le titina le ƒe atɔ̃ siwo va yi me. Dzidziɖedzi si li ke zi geɖe fiana be dɔwɔƒea ka ɖe ga si gena ɖe eme kple esi dona le eme dzi; viɖemama ƒe ɖiɖiɖe zi geɖe nye nuxlɔ̃ame ƒe dzesi.",
   "portfolioDividendsByMonth": "Ɣleti ɖesiaɖe",
   "dividendsLegendReceived": "Esiwo woxɔ",
-  "dividendsLegendExpected": "Esiwo wole mɔ kpɔm na"
+  "dividendsLegendExpected": "Esiwo wole mɔ kpɔm na",
+  "dividendGoalSet": "Ɖo dividend ƒe taɖodzinu ɣleti sia ɣleti",
+  "dividendGoalTitle": "Dividend ƒe taɖodzinu ɣleti sia ɣleti",
+  "dividendGoalAmount": "Dividend ɣleti sia ɣleti",
+  "dividendGoalProgress": "Ɖe egbe agbɔsɔsɔ nu, abe {amount} ene ɣleti sia ɣleti · {percent} · Taɖodzinu: {goal}",
+  "dividendGoalReached": "Ɖe egbe agbɔsɔsɔ nu, abe {amount} ene ɣleti sia ɣleti · Èɖo taɖodzinu: {goal}"
 }

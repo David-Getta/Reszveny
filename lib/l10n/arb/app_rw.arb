@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Uko inyungu kuri buri mugabane yazamutse ku mwaka, ku kigereranyo, mu myaka itanu ishize. Izamuka rihoraho akenshi risobanura ko ikigo cyizeye amafaranga cyinjiza; kuyigabanya akenshi ni ikimenyetso cyo kuburira.",
   "portfolioDividendsByMonth": "Ku kwezi",
   "dividendsLegendReceived": "Yakiriwe",
-  "dividendsLegendExpected": "Yitezwe"
+  "dividendsLegendExpected": "Yitezwe",
+  "dividendGoalSet": "Shyiraho intego y'inyungu ku migabane ku kwezi",
+  "dividendGoalTitle": "Intego y'inyungu ku migabane ku kwezi",
+  "dividendGoalAmount": "Inyungu ku migabane ku kwezi",
+  "dividendGoalProgress": "Hafi {amount} ku kwezi ku gipimo cy'ubu · {percent} · Intego: {goal}",
+  "dividendGoalReached": "Hafi {amount} ku kwezi ku gipimo cy'ubu · Wageze ku ntego: {goal}"
 }

@@ -2479,6 +2479,25 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Put monthly dividend target';
+
+  @override
+  String get dividendGoalTitle => 'Monthly dividend target';
+
+  @override
+  String get dividendGoalAmount => 'Dividend every month';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'About $amount every month for today yield: $percent of your $goal target';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'About $amount every month for today yield: you don hit your $goal target';
+  }
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

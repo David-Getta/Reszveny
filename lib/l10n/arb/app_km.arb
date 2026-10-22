@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "កម្រិតដែលភាគលាភក្នុងមួយភាគហ៊ុនបានកើនឡើងជាមធ្យមក្នុងមួយឆ្នាំ ក្នុងរយៈពេលប្រាំឆ្នាំចុងក្រោយ។ កំណើនថេរជាធម្មតាមានន័យថាក្រុមហ៊ុនទុកចិត្តលើលំហូរសាច់ប្រាក់របស់ខ្លួន ចំណែកការកាត់បន្ថយច្រើនតែជាសញ្ញាព្រមាន។",
   "portfolioDividendsByMonth": "តាមខែ",
   "dividendsLegendReceived": "បានទទួល",
-  "dividendsLegendExpected": "រំពឹងទុក"
+  "dividendsLegendExpected": "រំពឹងទុក",
+  "dividendGoalSet": "កំណត់គោលដៅភាគលាភប្រចាំខែ",
+  "dividendGoalTitle": "គោលដៅភាគលាភប្រចាំខែ",
+  "dividendGoalAmount": "ភាគលាភក្នុងមួយខែ",
+  "dividendGoalProgress": "ប្រហែល {amount} ក្នុងមួយខែ តាមទិន្នផលបច្ចុប្បន្ន៖ {percent} នៃគោលដៅ {goal}",
+  "dividendGoalReached": "ប្រហែល {amount} ក្នុងមួយខែ តាមទិន្នផលបច្ចុប្បន្ន៖ សម្រេចគោលដៅ {goal} ហើយ"
 }

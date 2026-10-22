@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "ལོ་ལྔ་སྔོན་ནས་ཧུར་ཁག་རེའི་ཁེ་བགོ་ལོ་རེར་ཆ་སྙོམས་གང་ཙམ་འཕེལ་ཡོད་པ། འཕེལ་ཚད་བརྟན་པོ་ཡིན་ན་སྤྱིར་བཏང་ཀུང་སིས་ཀྱིས་རང་གི་དངུལ་ལག་མའི་རྒྱུན་ལ་ཡིད་ཆེས་ཡོད་པ་མཚོན། ཁེ་བགོ་ཇེ་ཉུང་དུ་བཏང་ན་རྒྱུན་དུ་ཉེན་བརྡ་ཞིག་ཡིན།",
   "portfolioDividendsByMonth": "ཟླ་རེ་བཞིན",
   "dividendsLegendReceived": "ཐོབ་ཟིན་པ",
-  "dividendsLegendExpected": "རེ་སྒུག་བྱེད་པ"
+  "dividendsLegendExpected": "རེ་སྒུག་བྱེད་པ",
+  "dividendGoalSet": "ཟླ་རེའི་ཁེ་བགོས་ཀྱི་དམིགས་ཚད་འཇོག",
+  "dividendGoalTitle": "ཟླ་རེའི་ཁེ་བགོས་ཀྱི་དམིགས་ཚད",
+  "dividendGoalAmount": "ཟླ་རེའི་ཁེ་བགོས",
+  "dividendGoalProgress": "ད་ལྟའི་ཁེ་འབབ་ཚད་ལྟར་ཟླ་རེར་ {amount} ཙམ · {percent} · དམིགས་ཚད། {goal}",
+  "dividendGoalReached": "ད་ལྟའི་ཁེ་འབབ་ཚད་ལྟར་ཟླ་རེར་ {amount} ཙམ · དམིགས་ཚད་ལ་སླེབས་སོང་། {goal}"
 }

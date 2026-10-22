@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Kiasi ambacho gawio kwa hisa lilikua kila mwaka kwa wastani katika miaka mitano iliyopita. Ukuaji thabiti kwa kawaida humaanisha kampuni inaamini mtiririko wake wa fedha; kupunguzwa mara nyingi ni ishara ya tahadhari.",
   "portfolioDividendsByMonth": "Kwa mwezi",
   "dividendsLegendReceived": "Yaliyopokelewa",
-  "dividendsLegendExpected": "Yanayotarajiwa"
+  "dividendsLegendExpected": "Yanayotarajiwa",
+  "dividendGoalSet": "Weka lengo la gawio la kila mwezi",
+  "dividendGoalTitle": "Lengo la gawio la kila mwezi",
+  "dividendGoalAmount": "Gawio kwa mwezi",
+  "dividendGoalProgress": "Takriban {amount} kwa mwezi kwa mavuno ya sasa: {percent} ya lengo lako la {goal}",
+  "dividendGoalReached": "Takriban {amount} kwa mwezi kwa mavuno ya sasa: lengo lako la {goal} limefikiwa"
 }

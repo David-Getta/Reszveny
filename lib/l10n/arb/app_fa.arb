@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "سود نقدی هر سهم در پنج سال گذشته به‌طور میانگین سالانه چقدر رشد کرده است. رشد پایدار معمولاً نشان می‌دهد که شرکت به جریان نقدی خود اطمینان دارد؛ کاهش آن اغلب یک علامت هشدار است.",
   "portfolioDividendsByMonth": "به تفکیک ماه",
   "dividendsLegendReceived": "دریافت‌شده",
-  "dividendsLegendExpected": "مورد انتظار"
+  "dividendsLegendExpected": "مورد انتظار",
+  "dividendGoalSet": "تعیین هدف ماهانه سود سهام",
+  "dividendGoalTitle": "هدف ماهانه سود سهام",
+  "dividendGoalAmount": "سود سهام در ماه",
+  "dividendGoalProgress": "با بازده فعلی حدود {amount} در ماه: {percent} از هدف {goal}",
+  "dividendGoalReached": "با بازده فعلی حدود {amount} در ماه: هدف {goal} محقق شد"
 }

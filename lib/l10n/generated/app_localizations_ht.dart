@@ -2477,6 +2477,25 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Mete yon objektif dividann chak mwa';
+
+  @override
+  String get dividendGoalTitle => 'Objektif dividann chak mwa';
+
+  @override
+  String get dividendGoalAmount => 'Dividann pa mwa';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Anviwon $amount pa mwa ak rannman jodi a · $percent · Objektif: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Anviwon $amount pa mwa ak rannman jodi a · Objektif atenn: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

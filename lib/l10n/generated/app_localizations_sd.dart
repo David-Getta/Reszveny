@@ -2470,6 +2470,25 @@ class AppLocalizationsSd extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'ماهوار ڊيويڊنڊ جو مقصد مقرر ڪريو';
+
+  @override
+  String get dividendGoalTitle => 'ماهوار ڊيويڊنڊ جو مقصد';
+
+  @override
+  String get dividendGoalAmount => 'هر مهيني ڊيويڊنڊ';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'اڄ جي ييلڊ تي هر مهيني لڳ ڀڳ $amount · $percent · مقصد: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'اڄ جي ييلڊ تي هر مهيني لڳ ڀڳ $amount · مقصد حاصل ٿيو: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

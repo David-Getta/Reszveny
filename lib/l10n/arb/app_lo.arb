@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "ເງິນປັນຜົນຕໍ່ຮຸ້ນເຕີບໂຕສະເລ່ຍປີລະເທົ່າໃດໃນຫ້າປີຜ່ານມາ. ການເຕີບໂຕຢ່າງໝັ້ນຄົງໂດຍທົ່ວໄປໝາຍຄວາມວ່າບໍລິສັດໝັ້ນໃຈໃນກະແສເງິນສົດຂອງຕົນ; ການຫຼຸດລົງມັກເປັນສັນຍານເຕືອນ.",
   "portfolioDividendsByMonth": "ຕາມເດືອນ",
   "dividendsLegendReceived": "ໄດ້ຮັບແລ້ວ",
-  "dividendsLegendExpected": "ຄາດໝາຍ"
+  "dividendsLegendExpected": "ຄາດໝາຍ",
+  "dividendGoalSet": "ຕັ້ງເປົ້າໝາຍເງິນປັນຜົນລາຍເດືອນ",
+  "dividendGoalTitle": "ເປົ້າໝາຍເງິນປັນຜົນລາຍເດືອນ",
+  "dividendGoalAmount": "ເງິນປັນຜົນຕໍ່ເດືອນ",
+  "dividendGoalProgress": "ປະມານ {amount} ຕໍ່ເດືອນ ຕາມຜົນຕອບແທນປັດຈຸບັນ: {percent} ຂອງເປົ້າໝາຍ {goal}",
+  "dividendGoalReached": "ປະມານ {amount} ຕໍ່ເດືອນ ຕາມຜົນຕອບແທນປັດຈຸບັນ: ບັນລຸເປົ້າໝາຍ {goal} ແລ້ວ"
 }

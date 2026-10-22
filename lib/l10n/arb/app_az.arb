@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Səhm başına dividendin son beş ildə orta hesabla ildə nə qədər artdığı. Sabit artım adətən şirkətin pul axınına güvəndiyini göstərir; dividendin azaldılması isə çox vaxt xəbərdarlıq əlamətidir.",
   "portfolioDividendsByMonth": "Aylar üzrə",
   "dividendsLegendReceived": "Alınmış",
-  "dividendsLegendExpected": "Gözlənilən"
+  "dividendsLegendExpected": "Gözlənilən",
+  "dividendGoalSet": "Aylıq dividend hədəfi təyin et",
+  "dividendGoalTitle": "Aylıq dividend hədəfi",
+  "dividendGoalAmount": "Aylıq dividendlər",
+  "dividendGoalProgress": "Cari gəlirliliklə ayda təxminən {amount} · {percent} · hədəf: {goal}",
+  "dividendGoalReached": "Cari gəlirliliklə ayda təxminən {amount} · Hədəfə çatdın: {goal}"
 }

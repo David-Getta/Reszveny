@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Dividãnd aksiõ fãa sẽn paas to-to yʋʋmd fãa, b sã n mak a sʋka, yʋʋm a nu sẽn loogã pʋgẽ. Paasg sẽn pa sãamde wilgdame tɩ kʋmpaanã tẽeda a ligd sẽn kẽedã; a sã n booge, yaa makr sẽn wilgd tɩ f gũus f meng.",
   "portfolioDividendsByMonth": "Kiuug fãa",
   "dividendsLegendReceived": "Sẽn paam",
-  "dividendsLegendExpected": "Sẽn gũud"
+  "dividendsLegendExpected": "Sẽn gũud",
+  "dividendGoalSet": "Ning dividãnd raabo kiuug fãa",
+  "dividendGoalTitle": "Dividãnd raabo kiuug fãa",
+  "dividendGoalAmount": "Dividãnd kiuug fãa",
+  "dividendGoalProgress": "≈ {amount} kiuug fãa ne rũndã nafa · {percent} · Raabo: {goal}",
+  "dividendGoalReached": "≈ {amount} kiuug fãa ne rũndã nafa · Raabã paame: {goal}"
 }

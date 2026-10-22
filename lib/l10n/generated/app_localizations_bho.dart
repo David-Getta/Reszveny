@@ -2474,6 +2474,25 @@ class AppLocalizationsBho extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'महीनवार डिविडेंड लक्ष्य तय करीं';
+
+  @override
+  String get dividendGoalTitle => 'महीनवार डिविडेंड लक्ष्य';
+
+  @override
+  String get dividendGoalAmount => 'हर महीना डिविडेंड';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'आज के यील्ड पर हर महीना लगभग $amount · $percent · लक्ष्य: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'आज के यील्ड पर हर महीना लगभग $amount · लक्ष्य पूरा भइल: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करीं';
 
   @override

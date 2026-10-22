@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "เงินปันผลต่อหุ้นเติบโตขึ้นเฉลี่ยปีละเท่าไรในช่วงห้าปีที่ผ่านมา การเติบโตอย่างสม่ำเสมอมักหมายความว่าบริษัทมั่นใจในกระแสเงินสดของตน ส่วนการลดเงินปันผลมักเป็นสัญญาณเตือน",
   "portfolioDividendsByMonth": "รายเดือน",
   "dividendsLegendReceived": "ได้รับแล้ว",
-  "dividendsLegendExpected": "คาดการณ์"
+  "dividendsLegendExpected": "คาดการณ์",
+  "dividendGoalSet": "ตั้งเป้าหมายเงินปันผลรายเดือน",
+  "dividendGoalTitle": "เป้าหมายเงินปันผลรายเดือน",
+  "dividendGoalAmount": "เงินปันผลต่อเดือน",
+  "dividendGoalProgress": "ประมาณ {amount} ต่อเดือนตามอัตราผลตอบแทนปัจจุบัน: {percent} ของเป้าหมาย {goal}",
+  "dividendGoalReached": "ประมาณ {amount} ต่อเดือนตามอัตราผลตอบแทนปัจจุบัน: ถึงเป้าหมาย {goal} แล้ว"
 }

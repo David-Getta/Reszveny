@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Canto medrou de media cada ano o dividendo por acción nos últimos cinco anos. Un crecemento constante adoita indicar que a empresa confía no seu fluxo de caixa; un recorte a miúdo é un sinal de alerta.",
   "portfolioDividendsByMonth": "Por mes",
   "dividendsLegendReceived": "Recibidos",
-  "dividendsLegendExpected": "Previstos"
+  "dividendsLegendExpected": "Previstos",
+  "dividendGoalSet": "Definir un obxectivo mensual de dividendos",
+  "dividendGoalTitle": "Obxectivo mensual de dividendos",
+  "dividendGoalAmount": "Dividendos ao mes",
+  "dividendGoalProgress": "Uns {amount} ao mes coa rendibilidade actual: {percent} do teu obxectivo de {goal}",
+  "dividendGoalReached": "Uns {amount} ao mes coa rendibilidade actual: obxectivo de {goal} acadado"
 }

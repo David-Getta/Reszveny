@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Koliko je dividenda po dionici prosječno rasla godišnje u posljednjih pet godina. Stabilan rast obično znači da tvrtka ima povjerenja u svoj novčani tok; smanjenje je često znak upozorenja.",
   "portfolioDividendsByMonth": "Po mjesecima",
   "dividendsLegendReceived": "Primljene",
-  "dividendsLegendExpected": "Očekivane"
+  "dividendsLegendExpected": "Očekivane",
+  "dividendGoalSet": "Postavi mjesečni cilj dividendi",
+  "dividendGoalTitle": "Mjesečni cilj dividendi",
+  "dividendGoalAmount": "Dividende mjesečno",
+  "dividendGoalProgress": "Oko {amount} mjesečno uz današnje prinose: {percent} od tvog cilja od {goal}",
+  "dividendGoalReached": "Oko {amount} mjesečno uz današnje prinose: tvoj cilj od {goal} je ostvaren"
 }

@@ -2520,6 +2520,25 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Iestatīt mēneša dividenžu mērķi';
+
+  @override
+  String get dividendGoalTitle => 'Mēneša dividenžu mērķis';
+
+  @override
+  String get dividendGoalAmount => 'Dividendes mēnesī';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Apmēram $amount mēnesī ar pašreizējo ienesīgumu · $percent · mērķis: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Apmēram $amount mēnesī ar pašreizējo ienesīgumu · mērķis sasniegts: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

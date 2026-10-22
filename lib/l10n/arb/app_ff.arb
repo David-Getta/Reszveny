@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "No geɗal nafoore kala aksiyoŋ ɓeydiri kala hitaande e hakkundeeru, e nder duuɓi joy ɓennuɗi ɗii. Ɓeydagol tabitngol ina hollira ko ɓuri heewde wonde sosiyetee oo ina hoolii ceede mum naatooɗe e yaltooɗe; ustugol ngol ina heewi wonde maande reentaare.",
   "portfolioDividendsByMonth": "Lewru kala",
   "dividendsLegendReceived": "Keɓaaɗi",
-  "dividendsLegendExpected": "Fadaaɗi"
+  "dividendsLegendExpected": "Fadaaɗi",
+  "dividendGoalSet": "Taƴto faandaare dividendeeji kala lewru",
+  "dividendGoalTitle": "Faandaare dividendeeji kala lewru",
+  "dividendGoalAmount": "Dividendeeji e lewru",
+  "dividendGoalProgress": "Hono {amount} e lewru e nafoore hannde · {percent} · Faandaare: {goal}",
+  "dividendGoalReached": "Hono {amount} e lewru e nafoore hannde · A heɓii faandaare maa: {goal}"
 }

@@ -2484,6 +2484,25 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Oylik dividend maqsadini belgilash';
+
+  @override
+  String get dividendGoalTitle => 'Oylik dividend maqsadi';
+
+  @override
+  String get dividendGoalAmount => 'Oyiga dividend';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Bugungi daromadlilikda oyiga taxminan $amount · $percent · maqsad: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Bugungi daromadlilikda oyiga taxminan $amount · Maqsadga erishildi: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

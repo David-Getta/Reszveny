@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "How much di dividend for each share grow every year on average for di last five years. If e dey grow steady, e usually mean say di company trust di cash wey dey enter; if dem cut am, na warning sign most times.",
   "portfolioDividendsByMonth": "By month",
   "dividendsLegendReceived": "Wey you collect",
-  "dividendsLegendExpected": "Wey we expect"
+  "dividendsLegendExpected": "Wey we expect",
+  "dividendGoalSet": "Put monthly dividend target",
+  "dividendGoalTitle": "Monthly dividend target",
+  "dividendGoalAmount": "Dividend every month",
+  "dividendGoalProgress": "About {amount} every month for today yield: {percent} of your {goal} target",
+  "dividendGoalReached": "About {amount} every month for today yield: you don hit your {goal} target"
 }

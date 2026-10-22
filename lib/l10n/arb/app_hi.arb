@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "पिछले पाँच वर्षों में प्रति शेयर लाभांश हर साल औसतन कितना बढ़ा। लगातार वृद्धि का आमतौर पर मतलब है कि कंपनी को अपने नकदी प्रवाह पर भरोसा है; लाभांश में कटौती अक्सर चेतावनी का संकेत होती है।",
   "portfolioDividendsByMonth": "महीने के अनुसार",
   "dividendsLegendReceived": "प्राप्त",
-  "dividendsLegendExpected": "अपेक्षित"
+  "dividendsLegendExpected": "अपेक्षित",
+  "dividendGoalSet": "मासिक डिविडेंड लक्ष्य तय करें",
+  "dividendGoalTitle": "मासिक डिविडेंड लक्ष्य",
+  "dividendGoalAmount": "प्रति माह डिविडेंड",
+  "dividendGoalProgress": "मौजूदा यील्ड पर प्रति माह लगभग {amount} · {percent} · लक्ष्य: {goal}",
+  "dividendGoalReached": "मौजूदा यील्ड पर प्रति माह लगभग {amount} · लक्ष्य पूरा हुआ: {goal}"
 }

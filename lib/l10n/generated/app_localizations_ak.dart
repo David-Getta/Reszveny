@@ -2480,6 +2480,25 @@ class AppLocalizationsAk extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Hyɛ bosome biara dividend botaeɛ';
+
+  @override
+  String get dividendGoalTitle => 'Bosome biara dividend botaeɛ';
+
+  @override
+  String get dividendGoalAmount => 'Dividend bosome biara';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Bɛyɛ $amount bosome biara, sɛnea mfaso te nnɛ · $percent · Botaeɛ: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Bɛyɛ $amount bosome biara, sɛnea mfaso te nnɛ · Woadu wo botaeɛ: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';
 
   @override

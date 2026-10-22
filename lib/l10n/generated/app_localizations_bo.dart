@@ -2468,6 +2468,25 @@ class AppLocalizationsBo extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'ཟླ་རེའི་ཁེ་བགོས་ཀྱི་དམིགས་ཚད་འཇོག';
+
+  @override
+  String get dividendGoalTitle => 'ཟླ་རེའི་ཁེ་བགོས་ཀྱི་དམིགས་ཚད';
+
+  @override
+  String get dividendGoalAmount => 'ཟླ་རེའི་ཁེ་བགོས';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'ད་ལྟའི་ཁེ་འབབ་ཚད་ལྟར་ཟླ་རེར་ $amount ཙམ · $percent · དམིགས་ཚད། $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'ད་ལྟའི་ཁེ་འབབ་ཚད་ལྟར་ཟླ་རེར་ $amount ཙམ · དམིགས་ཚད་ལ་སླེབས་སོང་། $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
 
   @override

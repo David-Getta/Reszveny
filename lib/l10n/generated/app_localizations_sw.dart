@@ -2480,6 +2480,25 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Weka lengo la gawio la kila mwezi';
+
+  @override
+  String get dividendGoalTitle => 'Lengo la gawio la kila mwezi';
+
+  @override
+  String get dividendGoalAmount => 'Gawio kwa mwezi';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Takriban $amount kwa mwezi kwa mavuno ya sasa: $percent ya lengo lako la $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Takriban $amount kwa mwezi kwa mavuno ya sasa: lengo lako la $goal limefikiwa';
+  }
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

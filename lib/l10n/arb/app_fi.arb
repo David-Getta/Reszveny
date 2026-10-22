@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Kuinka paljon osakekohtainen osinko on kasvanut keskimäärin vuodessa viimeisten viiden vuoden aikana. Tasainen kasvu kertoo yleensä, että yhtiö luottaa kassavirtaansa; osingon leikkaus on usein varoitusmerkki.",
   "portfolioDividendsByMonth": "Kuukausittain",
   "dividendsLegendReceived": "Saadut",
-  "dividendsLegendExpected": "Odotetut"
+  "dividendsLegendExpected": "Odotetut",
+  "dividendGoalSet": "Aseta kuukausittainen osinkotavoite",
+  "dividendGoalTitle": "Kuukausittainen osinkotavoite",
+  "dividendGoalAmount": "Osingot kuukaudessa",
+  "dividendGoalProgress": "Noin {amount} kuukaudessa nykyisillä tuotoilla: {percent} tavoitteesta {goal}",
+  "dividendGoalReached": "Noin {amount} kuukaudessa nykyisillä tuotoilla: tavoite {goal} saavutettu"
 }

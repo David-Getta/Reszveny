@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Ole dividend kwa share tolitere kwa afọ n'nkezi n'ime afọ ise gara aga. Uto na-aga n'ihu nke ọma na-egosikarị na ụlọ ọrụ ahụ tụkwasịrị obi n'ego na-abata na nke na-apụ ya; mbelata na-abụkarị ihe ịdọ aka ná ntị.",
   "portfolioDividendsByMonth": "Kwa ọnwa",
   "dividendsLegendReceived": "Enwetara",
-  "dividendsLegendExpected": "A na-atụ anya"
+  "dividendsLegendExpected": "A na-atụ anya",
+  "dividendGoalSet": "Tọọ ebumnuche nkesa uru kwa ọnwa",
+  "dividendGoalTitle": "Ebumnuche nkesa uru kwa ọnwa",
+  "dividendGoalAmount": "Nkesa uru kwa ọnwa",
+  "dividendGoalProgress": "Ihe dị ka {amount} kwa ọnwa na mkpụrụ nke taa · {percent} · Ebumnuche: {goal}",
+  "dividendGoalReached": "Ihe dị ka {amount} kwa ọnwa na mkpụrụ nke taa · Emezuru ebumnuche: {goal}"
 }

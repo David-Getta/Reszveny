@@ -2480,6 +2480,25 @@ class AppLocalizationsTk extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Aýlyk diwidend maksadyny goý';
+
+  @override
+  String get dividendGoalTitle => 'Aýlyk diwidend maksady';
+
+  @override
+  String get dividendGoalAmount => 'Aýda diwidend';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Häzirki girdejililik bilen aýda takmynan $amount · $percent · maksat: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Häzirki girdejililik bilen aýda takmynan $amount · Maksada ýetildi: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

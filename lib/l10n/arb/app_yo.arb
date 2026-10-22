@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Bí èrè ìpín fún ìpín kọ̀ọ̀kan ṣe pọ̀ sí i tó lọ́dún ní ìpíndọ́gba láàrin ọdún márùn-ún sẹ́yìn. Ìdàgbàsókè tó dúró ṣinṣin sábà máa ń fi hàn pé ilé-iṣẹ́ náà gbẹ́kẹ̀lé ìṣàn owó rẹ̀; dídín in kù sábà máa ń jẹ́ àmì ìkìlọ̀.",
   "portfolioDividendsByMonth": "Lóṣooṣù",
   "dividendsLegendReceived": "Èyí tí o gbà",
-  "dividendsLegendExpected": "Èyí tí a ń retí"
+  "dividendsLegendExpected": "Èyí tí a ń retí",
+  "dividendGoalSet": "Ṣètò àfojúsùn èrè ìpín oṣooṣù",
+  "dividendGoalTitle": "Àfojúsùn èrè ìpín oṣooṣù",
+  "dividendGoalAmount": "Èrè ìpín lóṣù",
+  "dividendGoalProgress": "Ní ìwọ̀n òní, nǹkan bí {amount} lóṣù · {percent} · Àfojúsùn: {goal}",
+  "dividendGoalReached": "Ní ìwọ̀n òní, nǹkan bí {amount} lóṣù · O ti dé àfojúsùn: {goal}"
 }

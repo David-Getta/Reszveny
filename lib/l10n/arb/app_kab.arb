@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Acḥal i yernu s talemmast dividand n yal aksyun yal aseggas deg semmus n yiseggasen ineggura. Timerna yerkden s umata tesskan-d belli takebbanit tettkel ɣef tazzla-ines n yedrimen; asenqes yettili s waṭas d tamatart n uḥezzeb.",
   "portfolioDividendsByMonth": "Yal ayyur",
   "dividendsLegendReceived": "Yettwaremsen",
-  "dividendsLegendExpected": "Yettwarǧan"
+  "dividendsLegendExpected": "Yettwarǧan",
+  "dividendGoalSet": "Sbadu iswi n dividand i wayyur",
+  "dividendGoalTitle": "Iswi n dividand i wayyur",
+  "dividendGoalAmount": "Dividand deg wayyur",
+  "dividendGoalProgress": "Azal n {amount} deg wayyur s ufaris n tura · {percent} · Iswi: {goal}",
+  "dividendGoalReached": "Azal n {amount} deg wayyur s ufaris n tura · Tewwḍeḍ ɣer yiswi: {goal}"
 }

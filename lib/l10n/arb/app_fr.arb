@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "De combien le dividende par action a augmenté en moyenne chaque année au cours des cinq dernières années. Une croissance régulière signifie généralement que l’entreprise a confiance en ses flux de trésorerie ; une baisse est souvent un signal d’alerte.",
   "portfolioDividendsByMonth": "Par mois",
   "dividendsLegendReceived": "Reçus",
-  "dividendsLegendExpected": "Prévus"
+  "dividendsLegendExpected": "Prévus",
+  "dividendGoalSet": "Définir un objectif mensuel de dividendes",
+  "dividendGoalTitle": "Objectif mensuel de dividendes",
+  "dividendGoalAmount": "Dividendes par mois",
+  "dividendGoalProgress": "Environ {amount} par mois aux rendements actuels : {percent} de l’objectif de {goal}",
+  "dividendGoalReached": "Environ {amount} par mois aux rendements actuels : objectif de {goal} atteint"
 }

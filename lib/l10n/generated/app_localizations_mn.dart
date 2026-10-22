@@ -2479,6 +2479,25 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Сарын ногдол ашгийн зорилт тавих';
+
+  @override
+  String get dividendGoalTitle => 'Сарын ногдол ашгийн зорилт';
+
+  @override
+  String get dividendGoalAmount => 'Сарын ногдол ашиг';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Өнөөгийн өгөөжөөр сард ойролцоогоор $amount · $percent · зорилт: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Өнөөгийн өгөөжөөр сард ойролцоогоор $amount · Зорилт биелсэн: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

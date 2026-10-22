@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Ndenge dividende ya action moko ekolaki mobu na mobu na kati-kati na mibu mitano oyo eleki. Bokoli ya ntango nyonso elakisaka mingimingi ete kompani ezali na elikya na mbongo oyo ekoti mpe ebimi; kokitisa yango ezalaka mbala mingi elembo ya likebisi.",
   "portfolioDividendsByMonth": "Na sanza",
   "dividendsLegendReceived": "Oyo ezwami",
-  "dividendsLegendExpected": "Oyo ezelami"
+  "dividendsLegendExpected": "Oyo ezelami",
+  "dividendGoalSet": "Tyá mokano ya dividende na sanza",
+  "dividendGoalTitle": "Mokano ya dividende na sanza",
+  "dividendGoalAmount": "Dividende na sanza",
+  "dividendGoalProgress": "Pene na {amount} na sanza na rendement ya lelo · {percent} · Mokano: {goal}",
+  "dividendGoalReached": "Pene na {amount} na sanza na rendement ya lelo · Okokisi mokano: {goal}"
 }

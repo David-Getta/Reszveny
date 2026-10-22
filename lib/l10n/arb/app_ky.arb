@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Акыркы беш жылда бир акцияга дивиденд жылына орточо канчалык өскөнү. Туруктуу өсүш адатта компания өзүнүн акча агымына ишенерин билдирет; кыскартуу көбүнчө эскертүүчү белги болот.",
   "portfolioDividendsByMonth": "Ай боюнча",
   "dividendsLegendReceived": "Алынган",
-  "dividendsLegendExpected": "Күтүлүүчү"
+  "dividendsLegendExpected": "Күтүлүүчү",
+  "dividendGoalSet": "Айлык дивиденд максатын коюу",
+  "dividendGoalTitle": "Айлык дивиденд максаты",
+  "dividendGoalAmount": "Айына дивиденд",
+  "dividendGoalProgress": "Учурдагы кирешелүүлүк менен айына болжол менен {amount} · {percent} · максат: {goal}",
+  "dividendGoalReached": "Учурдагы кирешелүүлүк менен айына болжол менен {amount} · максат аткарылды: {goal}"
 }

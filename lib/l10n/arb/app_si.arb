@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "පසුගිය වසර පහ තුළ කොටසකට ලාභාංශය වසරකට සාමාන්‍යයෙන් කොපමණ වර්ධනය වූවාද. ස්ථාවර වර්ධනය බොහෝ විට පෙන්නුම් කරන්නේ සමාගම තම මුදල් ප්‍රවාහය ගැන විශ්වාසයෙන් සිටින බවයි; කප්පාදුවක් නිතර අනතුරු ඇඟවීමේ ලකුණකි.",
   "portfolioDividendsByMonth": "මාසය අනුව",
   "dividendsLegendReceived": "ලැබුණු",
-  "dividendsLegendExpected": "අපේක්ෂිත"
+  "dividendsLegendExpected": "අපේක්ෂිත",
+  "dividendGoalSet": "මාසික ලාභාංශ ඉලක්කයක් සකසන්න",
+  "dividendGoalTitle": "මාසික ලාභාංශ ඉලක්කය",
+  "dividendGoalAmount": "මසකට ලාභාංශ",
+  "dividendGoalProgress": "අද ඵලදාව අනුව මසකට ආසන්න වශයෙන් {amount} · {percent} · ඉලක්කය: {goal}",
+  "dividendGoalReached": "අද ඵලදාව අනුව මසකට ආසන්න වශයෙන් {amount} · ඉලක්කය සපුරා ඇත: {goal}"
 }

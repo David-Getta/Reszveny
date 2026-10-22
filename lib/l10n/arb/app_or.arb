@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "ଗତ ପାଞ୍ଚ ବର୍ଷରେ ପ୍ରତି ସେୟାର ଲାଭାଂଶ ବାର୍ଷିକ ହାରାହାରି କେତେ ବଢ଼ିଲା। ସ୍ଥିର ବୃଦ୍ଧି ସାଧାରଣତଃ ଦର୍ଶାଏ ଯେ କମ୍ପାନୀ ନିଜ ନଗଦ ପ୍ରବାହ ଉପରେ ଭରସା କରେ; ହ୍ରାସ ପ୍ରାୟତଃ ଏକ ଚେତାବନୀ ସଙ୍କେତ।",
   "portfolioDividendsByMonth": "ମାସ ଅନୁସାରେ",
   "dividendsLegendReceived": "ପ୍ରାପ୍ତ",
-  "dividendsLegendExpected": "ପ୍ରତ୍ୟାଶିତ"
+  "dividendsLegendExpected": "ପ୍ରତ୍ୟାଶିତ",
+  "dividendGoalSet": "ମାସିକ ଲାଭାଂଶ ଲକ୍ଷ୍ୟ ସ୍ଥିର କରନ୍ତୁ",
+  "dividendGoalTitle": "ମାସିକ ଲାଭାଂଶ ଲକ୍ଷ୍ୟ",
+  "dividendGoalAmount": "ମାସକୁ ଲାଭାଂଶ",
+  "dividendGoalProgress": "ଆଜିର ୟିଲ୍ଡରେ ମାସକୁ ପ୍ରାୟ {amount} · {percent} · ଲକ୍ଷ୍ୟ: {goal}",
+  "dividendGoalReached": "ଆଜିର ୟିଲ୍ଡରେ ମାସକୁ ପ୍ରାୟ {amount} · ଲକ୍ଷ୍ୟ ପୂରଣ ହେଲା: {goal}"
 }

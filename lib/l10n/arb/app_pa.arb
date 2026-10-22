@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "ਪਿਛਲੇ ਪੰਜ ਸਾਲਾਂ ਵਿੱਚ ਪ੍ਰਤੀ ਸ਼ੇਅਰ ਲਾਭਅੰਸ਼ ਹਰ ਸਾਲ ਔਸਤਨ ਕਿੰਨਾ ਵਧਿਆ। ਸਥਿਰ ਵਾਧੇ ਦਾ ਆਮ ਤੌਰ ’ਤੇ ਮਤਲਬ ਹੁੰਦਾ ਹੈ ਕਿ ਕੰਪਨੀ ਨੂੰ ਆਪਣੇ ਨਕਦ ਪ੍ਰਵਾਹ ’ਤੇ ਭਰੋਸਾ ਹੈ; ਕਟੌਤੀ ਅਕਸਰ ਚੇਤਾਵਨੀ ਦਾ ਸੰਕੇਤ ਹੁੰਦੀ ਹੈ।",
   "portfolioDividendsByMonth": "ਮਹੀਨੇ ਅਨੁਸਾਰ",
   "dividendsLegendReceived": "ਪ੍ਰਾਪਤ",
-  "dividendsLegendExpected": "ਸੰਭਾਵਿਤ"
+  "dividendsLegendExpected": "ਸੰਭਾਵਿਤ",
+  "dividendGoalSet": "ਮਹੀਨਾਵਾਰ ਲਾਭਅੰਸ਼ ਟੀਚਾ ਤੈਅ ਕਰੋ",
+  "dividendGoalTitle": "ਮਹੀਨਾਵਾਰ ਲਾਭਅੰਸ਼ ਟੀਚਾ",
+  "dividendGoalAmount": "ਪ੍ਰਤੀ ਮਹੀਨਾ ਲਾਭਅੰਸ਼",
+  "dividendGoalProgress": "ਅੱਜ ਦੀ ਯੀਲਡ ’ਤੇ ਪ੍ਰਤੀ ਮਹੀਨਾ ਲਗਭਗ {amount} · {percent} · ਟੀਚਾ: {goal}",
+  "dividendGoalReached": "ਅੱਜ ਦੀ ਯੀਲਡ ’ਤੇ ਪ੍ਰਤੀ ਮਹੀਨਾ ਲਗਭਗ {amount} · ਟੀਚਾ ਪੂਰਾ ਹੋਇਆ: {goal}"
 }

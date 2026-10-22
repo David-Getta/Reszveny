@@ -2473,6 +2473,25 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Đặt mục tiêu cổ tức hằng tháng';
+
+  @override
+  String get dividendGoalTitle => 'Mục tiêu cổ tức hằng tháng';
+
+  @override
+  String get dividendGoalAmount => 'Cổ tức mỗi tháng';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Khoảng $amount mỗi tháng theo tỷ suất hiện tại: $percent mục tiêu $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Khoảng $amount mỗi tháng theo tỷ suất hiện tại: đã đạt mục tiêu $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

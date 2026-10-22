@@ -2479,6 +2479,25 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'ماہانہ ڈیویڈنڈ کا ہدف مقرر کریں';
+
+  @override
+  String get dividendGoalTitle => 'ماہانہ ڈیویڈنڈ کا ہدف';
+
+  @override
+  String get dividendGoalAmount => 'ماہانہ ڈیویڈنڈ';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'آج کی ییلڈ پر ماہانہ تقریباً $amount · $percent · ہدف: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'آج کی ییلڈ پر ماہانہ تقریباً $amount · ہدف حاصل ہو گیا: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'ہدف مقرر کریں';
 
   @override

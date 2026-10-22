@@ -2400,6 +2400,25 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => '月間配当目標を設定';
+
+  @override
+  String get dividendGoalTitle => '月間配当目標';
+
+  @override
+  String get dividendGoalAmount => '月あたりの配当';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return '現在の利回りで月あたり約 $amount：$percent 達成 · 目標 $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return '現在の利回りで月あたり約 $amount：目標 $goal を達成';
+  }
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override

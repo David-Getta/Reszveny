@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Gaano kalaki ang average na taunang paglago ng dibidendo kada share sa nakalipas na limang taon. Kadalasang ibig sabihin ng tuloy-tuloy na paglago na may tiwala ang kompanya sa cash flow nito; ang pagbawas ay madalas na babala.",
   "portfolioDividendsByMonth": "Kada buwan",
   "dividendsLegendReceived": "Natanggap",
-  "dividendsLegendExpected": "Inaasahan"
+  "dividendsLegendExpected": "Inaasahan",
+  "dividendGoalSet": "Magtakda ng buwanang layunin sa dibidendo",
+  "dividendGoalTitle": "Buwanang layunin sa dibidendo",
+  "dividendGoalAmount": "Dibidendo bawat buwan",
+  "dividendGoalProgress": "Mga {amount} bawat buwan sa kasalukuyang yield · {percent} · Layunin: {goal}",
+  "dividendGoalReached": "Mga {amount} bawat buwan sa kasalukuyang yield · Naabot ang layunin: {goal}"
 }

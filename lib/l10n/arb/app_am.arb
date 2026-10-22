@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "ባለፉት አምስት ዓመታት የአንድ አክሲዮን የትርፍ ድርሻ በአማካይ በዓመት ምን ያህል እንዳደገ። የተረጋጋ ዕድገት ብዙውን ጊዜ ኩባንያው በጥሬ ገንዘብ ፍሰቱ እንደሚተማመን ያሳያል፤ ቅናሽ ደግሞ ብዙ ጊዜ የማስጠንቀቂያ ምልክት ነው።",
   "portfolioDividendsByMonth": "በወር",
   "dividendsLegendReceived": "የተቀበሉ",
-  "dividendsLegendExpected": "የሚጠበቁ"
+  "dividendsLegendExpected": "የሚጠበቁ",
+  "dividendGoalSet": "ወርሃዊ የትርፍ ድርሻ ግብ አስቀምጥ",
+  "dividendGoalTitle": "ወርሃዊ የትርፍ ድርሻ ግብ",
+  "dividendGoalAmount": "የትርፍ ድርሻ በወር",
+  "dividendGoalProgress": "በአሁኑ ተመን በወር {amount} ገደማ · {percent} · ግብ፦ {goal}",
+  "dividendGoalReached": "በአሁኑ ተመን በወር {amount} ገደማ · ግቡ ተሳክቷል፦ {goal}"
 }

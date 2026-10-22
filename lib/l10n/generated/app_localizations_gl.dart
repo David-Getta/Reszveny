@@ -2503,6 +2503,25 @@ class AppLocalizationsGl extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Definir un obxectivo mensual de dividendos';
+
+  @override
+  String get dividendGoalTitle => 'Obxectivo mensual de dividendos';
+
+  @override
+  String get dividendGoalAmount => 'Dividendos ao mes';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Uns $amount ao mes coa rendibilidade actual: $percent do teu obxectivo de $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Uns $amount ao mes coa rendibilidade actual: obxectivo de $goal acadado';
+  }
+
+  @override
   String get portfolioGoalSet => 'Definir un obxectivo';
 
   @override

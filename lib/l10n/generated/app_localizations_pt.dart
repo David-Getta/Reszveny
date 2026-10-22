@@ -2485,6 +2485,25 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Definir meta mensal de dividendos';
+
+  @override
+  String get dividendGoalTitle => 'Meta mensal de dividendos';
+
+  @override
+  String get dividendGoalAmount => 'Dividendos por mês';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Cerca de $amount por mês com os rendimentos atuais: $percent da sua meta de $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Cerca de $amount por mês com os rendimentos atuais: meta de $goal atingida';
+  }
+
+  @override
   String get portfolioGoalSet => 'Definir meta';
 
   @override

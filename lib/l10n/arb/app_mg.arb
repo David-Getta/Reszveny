@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Hatraiza no nitomboan'ny dividenda isaky ny aksiona isan-taona, raha atao salan'isa, tao anatin'ny dimy taona farany. Ny fitomboana tsy tapaka matetika dia midika fa matoky ny fikorianan'ny volany ny orinasa; ny fampihenana kosa matetika dia famantarana mampitandrina.",
   "portfolioDividendsByMonth": "Isam-bolana",
   "dividendsLegendReceived": "Voaray",
-  "dividendsLegendExpected": "Andrasana"
+  "dividendsLegendExpected": "Andrasana",
+  "dividendGoalSet": "Mametraha tanjona dividenda isam-bolana",
+  "dividendGoalTitle": "Tanjon'ny dividenda isam-bolana",
+  "dividendGoalAmount": "Dividenda isam-bolana",
+  "dividendGoalProgress": "Manodidina ny {amount} isam-bolana amin'ny tahan'ny dividenda ankehitriny · {percent} · Tanjona: {goal}",
+  "dividendGoalReached": "Manodidina ny {amount} isam-bolana amin'ny tahan'ny dividenda ankehitriny · Tratra ny tanjona: {goal}"
 }

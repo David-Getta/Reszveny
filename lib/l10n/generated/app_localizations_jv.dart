@@ -2483,6 +2483,25 @@ class AppLocalizationsJv extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Setel target dividen saben sasi';
+
+  @override
+  String get dividendGoalTitle => 'Target dividen saben sasi';
+
+  @override
+  String get dividendGoalAmount => 'Dividen saben sasi';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Kira-kira $amount saben sasi kanthi imbal hasil saiki: $percent saka target $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Kira-kira $amount saben sasi kanthi imbal hasil saiki: target $goal kagayuh';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setel target';
 
   @override

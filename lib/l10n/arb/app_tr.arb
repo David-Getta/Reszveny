@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Hisse başına temettünün son beş yılda yılda ortalama ne kadar arttığı. İstikrarlı büyüme genellikle şirketin nakit akışına güvendiği anlamına gelir; temettü kesintisi çoğu zaman bir uyarı işaretidir.",
   "portfolioDividendsByMonth": "Aylara göre",
   "dividendsLegendReceived": "Alınan",
-  "dividendsLegendExpected": "Beklenen"
+  "dividendsLegendExpected": "Beklenen",
+  "dividendGoalSet": "Aylık temettü hedefi belirle",
+  "dividendGoalTitle": "Aylık temettü hedefi",
+  "dividendGoalAmount": "Aylık temettü",
+  "dividendGoalProgress": "Bugünkü verimlerle ayda yaklaşık {amount} · {percent} · hedef: {goal}",
+  "dividendGoalReached": "Bugünkü verimlerle ayda yaklaşık {amount} · Hedefe ulaşıldı: {goal}"
 }

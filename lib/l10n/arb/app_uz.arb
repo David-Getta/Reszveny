@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Oxirgi besh yilda bir aksiyaga toʻgʻri keladigan dividend yiliga oʻrtacha qanchaga oshgani. Barqaror oʻsish odatda kompaniya oʻz pul oqimiga ishonishini bildiradi; qisqartirish koʻpincha ogohlantiruvchi belgi hisoblanadi.",
   "portfolioDividendsByMonth": "Oylar boʻyicha",
   "dividendsLegendReceived": "Olingan",
-  "dividendsLegendExpected": "Kutilayotgan"
+  "dividendsLegendExpected": "Kutilayotgan",
+  "dividendGoalSet": "Oylik dividend maqsadini belgilash",
+  "dividendGoalTitle": "Oylik dividend maqsadi",
+  "dividendGoalAmount": "Oyiga dividend",
+  "dividendGoalProgress": "Bugungi daromadlilikda oyiga taxminan {amount} · {percent} · maqsad: {goal}",
+  "dividendGoalReached": "Bugungi daromadlilikda oyiga taxminan {amount} · Maqsadga erishildi: {goal}"
 }

@@ -2484,6 +2484,25 @@ class AppLocalizationsGn extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Emoĩ dividendo jehupytyrã jasy ñavõme';
+
+  @override
+  String get dividendGoalTitle => 'Dividendo jehupytyrã jasy ñavõme';
+
+  @override
+  String get dividendGoalAmount => 'Dividendo jasy ñavõme';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Koʼág̃agua rendimiento-pe, $amount rupi jasy ñavõme · $percent · Jehupytyrã: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Koʼág̃agua rendimiento-pe, $amount rupi jasy ñavõme · Rehupytýma jehupytyrã: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';
 
   @override

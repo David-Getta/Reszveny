@@ -2487,6 +2487,25 @@ class AppLocalizationsLua extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Teka tshipatshila tsha dividende ku ngondo';
+
+  @override
+  String get dividendGoalTitle => 'Tshipatshila tsha dividende ku ngondo';
+
+  @override
+  String get dividendGoalAmount => 'Dividende ku ngondo';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Pabuipi ne $amount ku ngondo ne rendement wa lelu · $percent · Tshipatshila: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Pabuipi ne $amount ku ngondo ne rendement wa lelu · Tshipatshila tshikumbaja: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

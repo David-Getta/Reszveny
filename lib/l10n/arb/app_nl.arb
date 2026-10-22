@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Hoeveel het dividend per aandeel de afgelopen vijf jaar gemiddeld per jaar is gegroeid. Gestage groei betekent meestal dat het bedrijf vertrouwen heeft in zijn kasstroom; een verlaging is vaak een waarschuwingssignaal.",
   "portfolioDividendsByMonth": "Per maand",
   "dividendsLegendReceived": "Ontvangen",
-  "dividendsLegendExpected": "Verwacht"
+  "dividendsLegendExpected": "Verwacht",
+  "dividendGoalSet": "Maandelijks dividenddoel instellen",
+  "dividendGoalTitle": "Maandelijks dividenddoel",
+  "dividendGoalAmount": "Dividend per maand",
+  "dividendGoalProgress": "Ongeveer {amount} per maand bij het huidige rendement: {percent} van je doel van {goal}",
+  "dividendGoalReached": "Ongeveer {amount} per maand bij het huidige rendement: je doel van {goal} is bereikt"
 }

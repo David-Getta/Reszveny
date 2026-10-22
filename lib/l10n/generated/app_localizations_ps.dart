@@ -2471,6 +2471,25 @@ class AppLocalizationsPs extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'د میاشتنۍ ونډې ګټې موخه وټاکئ';
+
+  @override
+  String get dividendGoalTitle => 'د میاشتنۍ ونډې ګټې موخه';
+
+  @override
+  String get dividendGoalAmount => 'په میاشت کې د ونډې ګټه';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'د نن ورځې د ګټې په کچه په میاشت کې شاوخوا $amount · $percent · موخه: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'د نن ورځې د ګټې په کچه په میاشت کې شاوخوا $amount · موخې ته ورسېدئ: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

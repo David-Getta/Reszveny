@@ -2368,6 +2368,25 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => '设定每月股息目标';
+
+  @override
+  String get dividendGoalTitle => '每月股息目标';
+
+  @override
+  String get dividendGoalAmount => '每月股息';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return '按当前股息率每月约 $amount：已达成 $percent · 目标 $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return '按当前股息率每月约 $amount：已达成 $goal 目标';
+  }
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5102,6 +5121,25 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   @override
   String durationDaysHours(int days, int hours) {
     return '$days 日 $hours 小時';
+  }
+
+  @override
+  String get dividendGoalSet => '設定每月股息目標';
+
+  @override
+  String get dividendGoalTitle => '每月股息目標';
+
+  @override
+  String get dividendGoalAmount => '每月股息';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return '按現時股息率每月約 $amount：已達成 $percent · 目標 $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return '按現時股息率每月約 $amount：已達成 $goal 目標';
   }
 
   @override

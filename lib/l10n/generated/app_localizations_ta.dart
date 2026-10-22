@@ -2490,6 +2490,25 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'மாதாந்திர ஈவுத்தொகை இலக்கை அமை';
+
+  @override
+  String get dividendGoalTitle => 'மாதாந்திர ஈவுத்தொகை இலக்கு';
+
+  @override
+  String get dividendGoalAmount => 'மாதத்திற்கு ஈவுத்தொகை';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'இன்றைய விகிதத்தில் மாதத்திற்கு சுமார் $amount · $percent · இலக்கு: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'இன்றைய விகிதத்தில் மாதத்திற்கு சுமார் $amount · இலக்கு எட்டப்பட்டது: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'இலக்கை அமை';
 
   @override

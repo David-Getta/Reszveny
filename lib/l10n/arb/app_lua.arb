@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Mushindu udi dividende wa action umue mukole tshidimu tshionso, mu bungi bua pankatshi, mu bidimu bitanu bishale. Dikola dia pa tshibidilu didi dileja bikole ne: kompanyi udi weyemena mfranga yende idi ibuela ne ipatuka; dipuekesha didi misangu mivule tshimanyinu tshia kudimuija.",
   "portfolioDividendsByMonth": "Ku ngondo",
   "dividendsLegendReceived": "Bipeta",
-  "dividendsLegendExpected": "Bitekemena"
+  "dividendsLegendExpected": "Bitekemena",
+  "dividendGoalSet": "Teka tshipatshila tsha dividende ku ngondo",
+  "dividendGoalTitle": "Tshipatshila tsha dividende ku ngondo",
+  "dividendGoalAmount": "Dividende ku ngondo",
+  "dividendGoalProgress": "Pabuipi ne {amount} ku ngondo ne rendement wa lelu · {percent} · Tshipatshila: {goal}",
+  "dividendGoalReached": "Pabuipi ne {amount} ku ngondo ne rendement wa lelu · Tshipatshila tshikumbaja: {goal}"
 }

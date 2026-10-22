@@ -2478,6 +2478,25 @@ class AppLocalizationsMr extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'मासिक लाभांश लक्ष्य ठरवा';
+
+  @override
+  String get dividendGoalTitle => 'मासिक लाभांश लक्ष्य';
+
+  @override
+  String get dividendGoalAmount => 'दरमहा लाभांश';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'आजच्या उत्पन्न दराने दरमहा सुमारे $amount · $percent · लक्ष्य: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'आजच्या उत्पन्न दराने दरमहा सुमारे $amount · लक्ष्य गाठले: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य ठरवा';
 
   @override

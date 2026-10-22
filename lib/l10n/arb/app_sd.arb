@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "گذريل پنجن سالن ۾ في شيئر ڊيويڊنڊ هر سال سراسري طور ڪيترو وڌيو. مسلسل واڌ جو مطلب عام طور تي اهو آهي ته ڪمپني کي پنهنجي نقد وهڪري تي ڀروسو آهي؛ ڪٽوتي اڪثر خبرداري جي نشاني هوندي آهي.",
   "portfolioDividendsByMonth": "مهيني موجب",
   "dividendsLegendReceived": "وصول ٿيل",
-  "dividendsLegendExpected": "متوقع"
+  "dividendsLegendExpected": "متوقع",
+  "dividendGoalSet": "ماهوار ڊيويڊنڊ جو مقصد مقرر ڪريو",
+  "dividendGoalTitle": "ماهوار ڊيويڊنڊ جو مقصد",
+  "dividendGoalAmount": "هر مهيني ڊيويڊنڊ",
+  "dividendGoalProgress": "اڄ جي ييلڊ تي هر مهيني لڳ ڀڳ {amount} · {percent} · مقصد: {goal}",
+  "dividendGoalReached": "اڄ جي ييلڊ تي هر مهيني لڳ ڀڳ {amount} · مقصد حاصل ٿيو: {goal}"
 }

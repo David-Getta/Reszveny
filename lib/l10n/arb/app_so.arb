@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Inta qaybta faa'iidada saamigiiba ay celcelis ahaan sannadkii kordhay shantii sano ee la soo dhaafay. Koror joogto ah wuxuu badanaa muujiyaa in shirkaddu ku kalsoon tahay socodka lacageeda caddaanka ah; dhimistu badanaa waa calaamad digniin ah.",
   "portfolioDividendsByMonth": "Bil ahaan",
   "dividendsLegendReceived": "La helay",
-  "dividendsLegendExpected": "La filayo"
+  "dividendsLegendExpected": "La filayo",
+  "dividendGoalSet": "Deji yoolka qaybta faa'iidada bishii",
+  "dividendGoalTitle": "Yoolka qaybta faa'iidada bishii",
+  "dividendGoalAmount": "Qaybta faa'iidada bishii",
+  "dividendGoalProgress": "Qiyaastii {amount} bishii sida heerka maanta · {percent} · Yool: {goal}",
+  "dividendGoalReached": "Qiyaastii {amount} bishii sida heerka maanta · Yoolka waa la gaadhay: {goal}"
 }

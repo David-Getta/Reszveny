@@ -2458,6 +2458,25 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'កំណត់គោលដៅភាគលាភប្រចាំខែ';
+
+  @override
+  String get dividendGoalTitle => 'គោលដៅភាគលាភប្រចាំខែ';
+
+  @override
+  String get dividendGoalAmount => 'ភាគលាភក្នុងមួយខែ';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'ប្រហែល $amount ក្នុងមួយខែ តាមទិន្នផលបច្ចុប្បន្ន៖ $percent នៃគោលដៅ $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'ប្រហែល $amount ក្នុងមួយខែ តាមទិន្នផលបច្ចុប្បន្ន៖ សម្រេចគោលដៅ $goal ហើយ';
+  }
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

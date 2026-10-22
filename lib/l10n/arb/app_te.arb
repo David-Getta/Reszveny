@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "గత ఐదు సంవత్సరాల్లో షేరుకు డివిడెండ్ సంవత్సరానికి సగటున ఎంత పెరిగింది. స్థిరమైన వృద్ధి సాధారణంగా కంపెనీకి తన నగదు ప్రవాహంపై నమ్మకం ఉందని సూచిస్తుంది; కోత తరచుగా హెచ్చరిక సంకేతం.",
   "portfolioDividendsByMonth": "నెలవారీగా",
   "dividendsLegendReceived": "అందుకున్నవి",
-  "dividendsLegendExpected": "అంచనా"
+  "dividendsLegendExpected": "అంచనా",
+  "dividendGoalSet": "నెలవారీ డివిడెండ్ లక్ష్యం సెట్ చేయి",
+  "dividendGoalTitle": "నెలవారీ డివిడెండ్ లక్ష్యం",
+  "dividendGoalAmount": "నెలకు డివిడెండ్",
+  "dividendGoalProgress": "నేటి ఈల్డ్‌తో నెలకు సుమారు {amount} · {percent} · లక్ష్యం: {goal}",
+  "dividendGoalReached": "నేటి ఈల్డ్‌తో నెలకు సుమారు {amount} · లక్ష్యం చేరుకుంది: {goal}"
 }

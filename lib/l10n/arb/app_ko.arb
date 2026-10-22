@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "지난 5년간 주당 배당금이 연평균 얼마나 늘었는지를 나타냅니다. 꾸준한 증가는 보통 회사가 현금 흐름에 자신이 있다는 뜻이며, 배당 삭감은 흔히 경고 신호입니다.",
   "portfolioDividendsByMonth": "월별",
   "dividendsLegendReceived": "수령",
-  "dividendsLegendExpected": "예상"
+  "dividendsLegendExpected": "예상",
+  "dividendGoalSet": "월 배당 목표 설정",
+  "dividendGoalTitle": "월 배당 목표",
+  "dividendGoalAmount": "월 배당금",
+  "dividendGoalProgress": "현재 수익률 기준 월 약 {amount}: {percent} 달성 · 목표 {goal}",
+  "dividendGoalReached": "현재 수익률 기준 월 약 {amount}: 목표 {goal} 달성"
 }

@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "I-dividend ngesheya ngalinye ikhule kangakanani ngonyaka ngokwesilinganiso eminyakeni emihlanu edlule. Ukukhula okuqhubekayo ngokuvamile kusho ukuthi inkampani iyakwethemba ukugeleza kwemali yayo; ukuncishiswa kuvame ukuba uphawu lwesixwayiso.",
   "portfolioDividendsByMonth": "Ngenyanga",
   "dividendsLegendReceived": "Ezitholiwe",
-  "dividendsLegendExpected": "Ezilindelekile"
+  "dividendsLegendExpected": "Ezilindelekile",
+  "dividendGoalSet": "Setha umgomo we-dividend wanyanga zonke",
+  "dividendGoalTitle": "Umgomo we-dividend wanyanga zonke",
+  "dividendGoalAmount": "I-dividend ngenyanga",
+  "dividendGoalProgress": "Cishe {amount} ngenyanga ngesivuno samanje · {percent} · Umgomo: {goal}",
+  "dividendGoalReached": "Cishe {amount} ngenyanga ngesivuno samanje · Umgomo ufinyelelwe: {goal}"
 }

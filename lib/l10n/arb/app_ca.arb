@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Quant ha crescut de mitjana cada any el dividend per acció durant els últims cinc anys. Un creixement constant sol indicar que l’empresa confia en el seu flux de caixa; una retallada sovint és un senyal d’alerta.",
   "portfolioDividendsByMonth": "Per mes",
   "dividendsLegendReceived": "Rebuts",
-  "dividendsLegendExpected": "Previstos"
+  "dividendsLegendExpected": "Previstos",
+  "dividendGoalSet": "Defineix un objectiu mensual de dividends",
+  "dividendGoalTitle": "Objectiu mensual de dividends",
+  "dividendGoalAmount": "Dividends al mes",
+  "dividendGoalProgress": "Uns {amount} al mes amb la rendibilitat actual: {percent} del teu objectiu de {goal}",
+  "dividendGoalReached": "Uns {amount} al mes amb la rendibilitat actual: objectiu de {goal} assolit"
 }

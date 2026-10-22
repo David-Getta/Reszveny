@@ -2476,6 +2476,25 @@ class AppLocalizationsPa extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'ਮਹੀਨਾਵਾਰ ਲਾਭਅੰਸ਼ ਟੀਚਾ ਤੈਅ ਕਰੋ';
+
+  @override
+  String get dividendGoalTitle => 'ਮਹੀਨਾਵਾਰ ਲਾਭਅੰਸ਼ ਟੀਚਾ';
+
+  @override
+  String get dividendGoalAmount => 'ਪ੍ਰਤੀ ਮਹੀਨਾ ਲਾਭਅੰਸ਼';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'ਅੱਜ ਦੀ ਯੀਲਡ ’ਤੇ ਪ੍ਰਤੀ ਮਹੀਨਾ ਲਗਭਗ $amount · $percent · ਟੀਚਾ: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'ਅੱਜ ਦੀ ਯੀਲਡ ’ਤੇ ਪ੍ਰਤੀ ਮਹੀਨਾ ਲਗਭਗ $amount · ਟੀਚਾ ਪੂਰਾ ਹੋਇਆ: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'ਟੀਚਾ ਤੈਅ ਕਰੋ';
 
   @override

@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Kuti dhividhendi pasheya yakakura zvakadii pagore pavhareji mumakore mashanu apfuura. Kukura kwakatsiga kazhinji kunoreva kuti kambani inovimba nemari yayo inopinda; kuderedzwa kazhinji chiratidzo chenyevero.",
   "portfolioDividendsByMonth": "Pamwedzi",
   "dividendsLegendReceived": "Zvakagamuchirwa",
-  "dividendsLegendExpected": "Zvinotarisirwa"
+  "dividendsLegendExpected": "Zvinotarisirwa",
+  "dividendGoalSet": "Isa chinangwa chedhividhendi pamwedzi",
+  "dividendGoalTitle": "Chinangwa chedhividhendi pamwedzi",
+  "dividendGoalAmount": "Dhividhendi pamwedzi",
+  "dividendGoalProgress": "Ingangoita {amount} pamwedzi nepundutso yanhasi · {percent} · Chinangwa: {goal}",
+  "dividendGoalReached": "Ingangoita {amount} pamwedzi nepundutso yanhasi · Wasvika pachinangwa: {goal}"
 }

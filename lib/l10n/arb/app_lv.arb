@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Cik vidēji gadā pēdējo piecu gadu laikā pieaugusi dividende uz akciju. Stabils pieaugums parasti nozīmē, ka uzņēmums uzticas savai naudas plūsmai; samazinājums bieži ir brīdinājuma zīme.",
   "portfolioDividendsByMonth": "Pa mēnešiem",
   "dividendsLegendReceived": "Saņemtās",
-  "dividendsLegendExpected": "Gaidāmās"
+  "dividendsLegendExpected": "Gaidāmās",
+  "dividendGoalSet": "Iestatīt mēneša dividenžu mērķi",
+  "dividendGoalTitle": "Mēneša dividenžu mērķis",
+  "dividendGoalAmount": "Dividendes mēnesī",
+  "dividendGoalProgress": "Apmēram {amount} mēnesī ar pašreizējo ienesīgumu · {percent} · mērķis: {goal}",
+  "dividendGoalReached": "Apmēram {amount} mēnesī ar pašreizējo ienesīgumu · mērķis sasniegts: {goal}"
 }

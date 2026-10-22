@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Za koliko se je dividenda na delnico v zadnjih petih letih v povprečju povečevala na leto. Enakomerna rast običajno pomeni, da podjetje zaupa svojemu denarnemu toku; znižanje je pogosto opozorilni znak.",
   "portfolioDividendsByMonth": "Po mesecih",
   "dividendsLegendReceived": "Prejete",
-  "dividendsLegendExpected": "Pričakovane"
+  "dividendsLegendExpected": "Pričakovane",
+  "dividendGoalSet": "Nastavi mesečni cilj dividend",
+  "dividendGoalTitle": "Mesečni cilj dividend",
+  "dividendGoalAmount": "Dividende na mesec",
+  "dividendGoalProgress": "Približno {amount} na mesec pri današnji donosnosti: {percent} cilja {goal}",
+  "dividendGoalReached": "Približno {amount} na mesec pri današnji donosnosti: cilj {goal} dosežen"
 }

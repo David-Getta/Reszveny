@@ -1986,6 +1986,45 @@
       }
     }
   },
+  "dividendGoalSet": "Set a monthly dividend goal",
+  "@dividendGoalSet": {
+    "description": "Button in the Dividends received card: set a target for the monthly dividend income."
+  },
+  "dividendGoalTitle": "Monthly dividend goal",
+  "@dividendGoalTitle": {
+    "description": "Title of the dialog that sets the monthly dividend income target; also the accessibility label of its progress bar."
+  },
+  "dividendGoalAmount": "Dividends a month",
+  "@dividendGoalAmount": {
+    "description": "Field label in the monthly dividend goal dialog; the currency code is shown after the number."
+  },
+  "dividendGoalProgress": "About {amount} a month at today's yields: {percent} of your {goal} goal",
+  "@dividendGoalProgress": {
+    "description": "Under the dividends card: progress towards the monthly dividend goal. {amount} like '18,500 HUF' (expected yearly dividend of the held stocks divided by 12), {percent} like '37%', {goal} like '50,000 HUF'.",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "percent": {
+        "type": "String"
+      },
+      "goal": {
+        "type": "String"
+      }
+    }
+  },
+  "dividendGoalReached": "About {amount} a month at today's yields: your {goal} goal is reached",
+  "@dividendGoalReached": {
+    "description": "Under the dividends card when the expected monthly dividend reaches the goal. {amount} like '52,000 HUF', {goal} like '50,000 HUF'.",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      },
+      "goal": {
+        "type": "String"
+      }
+    }
+  },
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

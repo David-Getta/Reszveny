@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Sɛnea mfaso kyɛ wɔ kyɛfa biara so nyinii afe biara, sɛ yɛkyɛ mu pɛpɛɛpɛ a, wɔ mfe enum a atwam no mu. Nkɔso a ɛkɔ so daa taa kyerɛ sɛ adwumakuw no wɔ ahotoso wɔ ne sika a ɛba ne nea ɛkɔ mu; sɛ wɔtew so a, ɛtaa yɛ kɔkɔbɔ sɛnkyerɛnne.",
   "portfolioDividendsByMonth": "Ɔsram biara",
   "dividendsLegendReceived": "Nea wɔanya",
-  "dividendsLegendExpected": "Nea wɔhwɛ kwan"
+  "dividendsLegendExpected": "Nea wɔhwɛ kwan",
+  "dividendGoalSet": "Hyɛ bosome biara dividend botaeɛ",
+  "dividendGoalTitle": "Bosome biara dividend botaeɛ",
+  "dividendGoalAmount": "Dividend bosome biara",
+  "dividendGoalProgress": "Bɛyɛ {amount} bosome biara, sɛnea mfaso te nnɛ · {percent} · Botaeɛ: {goal}",
+  "dividendGoalReached": "Bɛyɛ {amount} bosome biara, sɛnea mfaso te nnɛ · Woadu wo botaeɛ: {goal}"
 }

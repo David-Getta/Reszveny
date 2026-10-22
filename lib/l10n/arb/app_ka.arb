@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "რამდენით იზრდებოდა ერთ აქციაზე დივიდენდი საშუალოდ წელიწადში ბოლო ხუთი წლის განმავლობაში. სტაბილური ზრდა, როგორც წესი, ნიშნავს, რომ კომპანია ენდობა თავის ფულად ნაკადებს; შემცირება ხშირად გამაფრთხილებელი ნიშანია.",
   "portfolioDividendsByMonth": "თვეების მიხედვით",
   "dividendsLegendReceived": "მიღებული",
-  "dividendsLegendExpected": "მოსალოდნელი"
+  "dividendsLegendExpected": "მოსალოდნელი",
+  "dividendGoalSet": "ყოველთვიური დივიდენდის მიზნის დაყენება",
+  "dividendGoalTitle": "ყოველთვიური დივიდენდის მიზანი",
+  "dividendGoalAmount": "დივიდენდები თვეში",
+  "dividendGoalProgress": "ამჟამინდელი შემოსავლიანობით დაახლოებით {amount} თვეში · {percent} · მიზანი: {goal}",
+  "dividendGoalReached": "ამჟამინდელი შემოსავლიანობით დაახლოებით {amount} თვეში · მიზანი მიღწეულია: {goal}"
 }

@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "ئاخىرقى بەش يىلدا ھەر پايغا پايدا ئۈلۈشىنىڭ يىلىغا ئوتتۇرىچە قانچىلىك ئاشقانلىقى. مۇقىم ئېشىش ئادەتتە شىركەتنىڭ ئۆز نەق پۇل ئېقىمىغا ئىشىنىدىغانلىقىنى بىلدۈرىدۇ؛ ئازايتىش كۆپىنچە ئاگاھلاندۇرۇش بەلگىسى.",
   "portfolioDividendsByMonth": "ئايلار بويىچە",
   "dividendsLegendReceived": "تاپشۇرۇۋالغان",
-  "dividendsLegendExpected": "كۈتۈلگەن"
+  "dividendsLegendExpected": "كۈتۈلگەن",
+  "dividendGoalSet": "ئايلىق پايدا ئۈلۈشى نىشانى بەلگىلەش",
+  "dividendGoalTitle": "ئايلىق پايدا ئۈلۈشى نىشانى",
+  "dividendGoalAmount": "ئايدا پايدا ئۈلۈشى",
+  "dividendGoalProgress": "بۈگۈنكى نىسبەت بويىچە ئايدا تەخمىنەن {amount} · {percent} · نىشان: {goal}",
+  "dividendGoalReached": "بۈگۈنكى نىسبەت بويىچە ئايدا تەخمىنەن {amount} · نىشانغا يېتىلدى: {goal}"
 }

@@ -2485,6 +2485,25 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'ಮಾಸಿಕ ಡಿವಿಡೆಂಡ್ ಗುರಿ ಹೊಂದಿಸಿ';
+
+  @override
+  String get dividendGoalTitle => 'ಮಾಸಿಕ ಡಿವಿಡೆಂಡ್ ಗುರಿ';
+
+  @override
+  String get dividendGoalAmount => 'ತಿಂಗಳಿಗೆ ಡಿವಿಡೆಂಡ್';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'ಈಗಿನ ಯೀಲ್ಡ್‌ನಲ್ಲಿ ತಿಂಗಳಿಗೆ ಸುಮಾರು $amount · $percent · ಗುರಿ: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'ಈಗಿನ ಯೀಲ್ಡ್‌ನಲ್ಲಿ ತಿಂಗಳಿಗೆ ಸುಮಾರು $amount · ಗುರಿ ತಲುಪಿದೆ: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

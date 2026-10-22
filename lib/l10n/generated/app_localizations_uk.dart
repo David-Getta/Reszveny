@@ -2548,6 +2548,25 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Задати місячну ціль із дивідендів';
+
+  @override
+  String get dividendGoalTitle => 'Місячна ціль із дивідендів';
+
+  @override
+  String get dividendGoalAmount => 'Дивіденди на місяць';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Близько $amount на місяць за поточної дохідності: $percent від цілі $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Близько $amount на місяць за поточної дохідності: ціль $goal досягнуто';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задати ціль';
 
   @override

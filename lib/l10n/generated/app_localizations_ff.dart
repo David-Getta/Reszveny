@@ -2474,6 +2474,25 @@ class AppLocalizationsFf extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Taƴto faandaare dividendeeji kala lewru';
+
+  @override
+  String get dividendGoalTitle => 'Faandaare dividendeeji kala lewru';
+
+  @override
+  String get dividendGoalAmount => 'Dividendeeji e lewru';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Hono $amount e lewru e nafoore hannde · $percent · Faandaare: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Hono $amount e lewru e nafoore hannde · A heɓii faandaare maa: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Nĩ ũigana dividend harĩ hisa ĩmwe yakũrire o mwaka gwa gatagatĩ mĩaka-inĩ ĩtano ĩrĩa ĩhĩtũku. Gũkũra kũrĩa kũrũmie kaingĩ kuonanagia atĩ kampuni nĩ ĩĩhokete mbeca iria itonyaga na iria ciumaga; kũnyihia dividend kaingĩ nĩ kĩmenyithia kĩa ũgwati.",
   "portfolioDividendsByMonth": "Mweri o mweri",
   "dividendsLegendReceived": "Yamũkĩrĩtwo",
-  "dividendsLegendExpected": "Yetereirwo"
+  "dividendsLegendExpected": "Yetereirwo",
+  "dividendGoalSet": "Ĩkĩra muoroto wa dividend wa o mweri",
+  "dividendGoalTitle": "Muoroto wa dividend wa o mweri",
+  "dividendGoalAmount": "Dividend o mweri",
+  "dividendGoalProgress": "Ta {amount} o mweri na uumithio wa ũmũthĩ · {percent} · Muoroto: {goal}",
+  "dividendGoalReached": "Ta {amount} o mweri na uumithio wa ũmũthĩ · Muoroto nĩ wakinyĩrwo: {goal}"
 }

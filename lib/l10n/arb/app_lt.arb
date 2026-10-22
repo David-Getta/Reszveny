@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Kiek vidutiniškai per metus augo dividendas vienai akcijai per pastaruosius penkerius metus. Stabilus augimas paprastai reiškia, kad įmonė pasitiki savo pinigų srautais; sumažinimas dažnai yra įspėjamasis ženklas.",
   "portfolioDividendsByMonth": "Pagal mėnesius",
   "dividendsLegendReceived": "Gauti",
-  "dividendsLegendExpected": "Numatomi"
+  "dividendsLegendExpected": "Numatomi",
+  "dividendGoalSet": "Nustatyti mėnesio dividendų tikslą",
+  "dividendGoalTitle": "Mėnesio dividendų tikslas",
+  "dividendGoalAmount": "Dividendai per mėnesį",
+  "dividendGoalProgress": "Apie {amount} per mėnesį esant dabartiniam pajamingumui · {percent} · tikslas: {goal}",
+  "dividendGoalReached": "Apie {amount} per mėnesį esant dabartiniam pajamingumui · tikslas pasiektas: {goal}"
 }

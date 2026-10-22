@@ -2484,6 +2484,25 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Tetapkan sasaran dividen bulanan';
+
+  @override
+  String get dividendGoalTitle => 'Sasaran dividen bulanan';
+
+  @override
+  String get dividendGoalAmount => 'Dividen sebulan';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Kira-kira $amount sebulan berdasarkan hasil semasa: $percent daripada sasaran $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Kira-kira $amount sebulan berdasarkan hasil semasa: sasaran $goal tercapai';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

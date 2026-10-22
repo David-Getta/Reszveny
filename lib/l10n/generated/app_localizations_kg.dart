@@ -2488,6 +2488,25 @@ class AppLocalizationsKg extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Tula lukanu ya dividende na ngonda';
+
+  @override
+  String get dividendGoalTitle => 'Lukanu ya dividende na ngonda';
+
+  @override
+  String get dividendGoalAmount => 'Dividende mu ngonda';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Pene-pene $amount mu ngonda na rendement ya bubu · $percent · Lukanu: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Pene-pene $amount mu ngonda na rendement ya bubu · Lukanu me lunga: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

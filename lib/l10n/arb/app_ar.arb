@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "متوسط النمو السنوي للتوزيعات لكل سهم خلال السنوات الخمس الماضية. يدل النمو المستقر عادةً على ثقة الشركة بتدفقها النقدي؛ أما خفض التوزيعات فغالبًا ما يكون علامة تحذير.",
   "portfolioDividendsByMonth": "حسب الشهر",
   "dividendsLegendReceived": "مستلمة",
-  "dividendsLegendExpected": "متوقعة"
+  "dividendsLegendExpected": "متوقعة",
+  "dividendGoalSet": "تحديد هدف شهري لتوزيعات الأرباح",
+  "dividendGoalTitle": "هدف توزيعات الأرباح الشهري",
+  "dividendGoalAmount": "توزيعات الأرباح شهريًا",
+  "dividendGoalProgress": "نحو {amount} شهريًا بالعوائد الحالية: {percent} من هدفك البالغ {goal}",
+  "dividendGoalReached": "نحو {amount} شهريًا بالعوائد الحالية: تم بلوغ هدفك البالغ {goal}"
 }

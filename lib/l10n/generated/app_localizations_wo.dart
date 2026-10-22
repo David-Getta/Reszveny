@@ -2473,6 +2473,25 @@ class AppLocalizationsWo extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Taxawal jublu dividand ci weer wi';
+
+  @override
+  String get dividendGoalTitle => 'Jublu dividand ci weer wi';
+
+  @override
+  String get dividendGoalAmount => 'Dividand ci weer wi';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Ci njureef bu tey, lu tollu ci $amount ci weer wi · $percent · Jublu: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Ci njureef bu tey, lu tollu ci $amount ci weer wi · Agsi nga ci sa jublu: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

@@ -2491,6 +2491,25 @@ class AppLocalizationsXh extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Misela usukelo lwe-dividend lwenyanga';
+
+  @override
+  String get dividendGoalTitle => 'Usukelo lwe-dividend lwenyanga';
+
+  @override
+  String get dividendGoalAmount => 'I-dividend ngenyanga';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Malunga ne-$amount ngenyanga ngesivuno sanamhlanje · $percent · Usukelo: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Malunga ne-$amount ngenyanga ngesivuno sanamhlanje · Usukelo lufikelelwe: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

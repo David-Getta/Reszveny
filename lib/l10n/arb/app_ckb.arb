@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "قازانجی هەر پشکێک لە پێنج ساڵی ڕابردوودا بە تێکڕا ساڵانە چەندە گەشەی کردووە. گەشەی جێگیر بە زۆری ئەوە دەگەیەنێت کە کۆمپانیاکە متمانەی بە ڕەوتی پارەی نەختی خۆی هەیە؛ کەمکردنەوەی بە زۆری نیشانەی ئاگادارکردنەوەیە.",
   "portfolioDividendsByMonth": "بەپێی مانگ",
   "dividendsLegendReceived": "وەرگیراو",
-  "dividendsLegendExpected": "چاوەڕوانکراو"
+  "dividendsLegendExpected": "چاوەڕوانکراو",
+  "dividendGoalSet": "دانانی ئامانجی مانگانەی پشکی قازانج",
+  "dividendGoalTitle": "ئامانجی مانگانەی پشکی قازانج",
+  "dividendGoalAmount": "پشکی قازانج لە مانگێکدا",
+  "dividendGoalProgress": "بە ڕێژەی ئێستا نزیکەی {amount} لە مانگێکدا · {percent} · ئامانج: {goal}",
+  "dividendGoalReached": "بە ڕێژەی ئێستا نزیکەی {amount} لە مانگێکدا · گەیشتیت بە ئامانج: {goal}"
 }

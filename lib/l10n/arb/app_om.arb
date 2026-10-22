@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Qoodni bu'aa aksiyoona tokkoo waggoota shanan darban keessatti giddugaleessaan waggaatti hammam akka guddate. Guddinni itti fufaan yeroo baay'ee dhaabbatichi yaa'insa maallaqa isaa akka amanu agarsiisa; hir'isuun immoo yeroo baay'ee mallattoo akeekkachiisaati.",
   "portfolioDividendsByMonth": "Ji'aan",
   "dividendsLegendReceived": "Kan argame",
-  "dividendsLegendExpected": "Kan eegamu"
+  "dividendsLegendExpected": "Kan eegamu",
+  "dividendGoalSet": "Kaayyoo qooda bu'aa ji'aa kaa'i",
+  "dividendGoalTitle": "Kaayyoo qooda bu'aa ji'aa",
+  "dividendGoalAmount": "Qooda bu'aa ji'atti",
+  "dividendGoalProgress": "Dhibbeentaa har'aatiin ji'atti gara {amount} · {percent} · Kaayyoo: {goal}",
+  "dividendGoalReached": "Dhibbeentaa har'aatiin ji'atti gara {amount} · Kaayyoon galma ga'eera: {goal}"
 }

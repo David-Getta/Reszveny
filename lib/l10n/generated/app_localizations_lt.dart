@@ -2544,6 +2544,25 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Nustatyti mėnesio dividendų tikslą';
+
+  @override
+  String get dividendGoalTitle => 'Mėnesio dividendų tikslas';
+
+  @override
+  String get dividendGoalAmount => 'Dividendai per mėnesį';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Apie $amount per mėnesį esant dabartiniam pajamingumui · $percent · tikslas: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Apie $amount per mėnesį esant dabartiniam pajamingumui · tikslas pasiektas: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nustatyti tikslą';
 
   @override

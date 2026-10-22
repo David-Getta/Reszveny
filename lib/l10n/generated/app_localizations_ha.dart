@@ -2485,6 +2485,25 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Saita burin rabon riba na wata-wata';
+
+  @override
+  String get dividendGoalTitle => 'Burin rabon riba na wata-wata';
+
+  @override
+  String get dividendGoalAmount => 'Rabon riba a wata';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Kusan $amount a wata bisa yawan riba na yanzu · $percent · Buri: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Kusan $amount a wata bisa yawan riba na yanzu · An cimma buri: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

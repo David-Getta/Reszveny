@@ -2475,6 +2475,25 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'تعیین هدف ماهانه سود سهام';
+
+  @override
+  String get dividendGoalTitle => 'هدف ماهانه سود سهام';
+
+  @override
+  String get dividendGoalAmount => 'سود سهام در ماه';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'با بازده فعلی حدود $amount در ماه: $percent از هدف $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'با بازده فعلی حدود $amount در ماه: هدف $goal محقق شد';
+  }
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

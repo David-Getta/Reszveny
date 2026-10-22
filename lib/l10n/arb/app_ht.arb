@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Konbyen dividann pa aksyon an te grandi chak ane an mwayèn pandan senk dènye ane yo. Yon kwasans regilye anjeneral vle di konpayi an gen konfyans nan lajan k ap antre ak soti li; yon diminisyon souvan se yon siy avètisman.",
   "portfolioDividendsByMonth": "Pa mwa",
   "dividendsLegendReceived": "Resevwa",
-  "dividendsLegendExpected": "Prevwa"
+  "dividendsLegendExpected": "Prevwa",
+  "dividendGoalSet": "Mete yon objektif dividann chak mwa",
+  "dividendGoalTitle": "Objektif dividann chak mwa",
+  "dividendGoalAmount": "Dividann pa mwa",
+  "dividendGoalProgress": "Anviwon {amount} pa mwa ak rannman jodi a · {percent} · Objektif: {goal}",
+  "dividendGoalReached": "Anviwon {amount} pa mwa ak rannman jodi a · Objektif atenn: {goal}"
 }

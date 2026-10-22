@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Сүүлийн таван жилд нэгж хувьцаанд ногдох ногдол ашиг жилд дунджаар хэр өссөн бэ. Тогтвортой өсөлт нь ихэвчлэн компани мөнгөн урсгалдаа итгэлтэй байгааг илтгэнэ; бууруулах нь ихэнхдээ анхааруулах дохио болдог.",
   "portfolioDividendsByMonth": "Сараар",
   "dividendsLegendReceived": "Хүлээн авсан",
-  "dividendsLegendExpected": "Хүлээгдэж буй"
+  "dividendsLegendExpected": "Хүлээгдэж буй",
+  "dividendGoalSet": "Сарын ногдол ашгийн зорилт тавих",
+  "dividendGoalTitle": "Сарын ногдол ашгийн зорилт",
+  "dividendGoalAmount": "Сарын ногдол ашиг",
+  "dividendGoalProgress": "Өнөөгийн өгөөжөөр сард ойролцоогоор {amount} · {percent} · зорилт: {goal}",
+  "dividendGoalReached": "Өнөөгийн өгөөжөөр сард ойролцоогоор {amount} · Зорилт биелсэн: {goal}"
 }

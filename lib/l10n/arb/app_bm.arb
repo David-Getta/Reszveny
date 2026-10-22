@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Aksiyɔn kelen tɔnɔ tilali yiriwala cogo min na san o san, ka a hakɛ cɛmancɛ ta, san duuru tɛmɛnenw kɔnɔ. Yiriwali min bɛ taa ɲɛ a cogo kelen na, o b'a jira tuma caman na ko sosiyete dalen bɛ a ka wari donta ni bɔta la; ni tɔnɔ tilali dɔgɔyara, o ye lasɔmini taamasiyɛn ye tuma caman na.",
   "portfolioDividendsByMonth": "Kalo o kalo",
   "dividendsLegendReceived": "Sɔrɔlenw",
-  "dividendsLegendExpected": "Makɔnɔlenw"
+  "dividendsLegendExpected": "Makɔnɔlenw",
+  "dividendGoalSet": "Kalo o kalo dividandi laɲini sigi",
+  "dividendGoalTitle": "Kalo o kalo dividandi laɲini",
+  "dividendGoalAmount": "Dividandi kalo o kalo",
+  "dividendGoalProgress": "Bi sɔrɔ hakɛ la, {amount} ɲɔgɔn kalo o kalo · {percent} · Laɲini: {goal}",
+  "dividendGoalReached": "Bi sɔrɔ hakɛ la, {amount} ɲɔgɔn kalo o kalo · I ye i ka laɲini sɔrɔ: {goal}"
 }

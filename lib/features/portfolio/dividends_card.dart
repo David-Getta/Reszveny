@@ -10,16 +10,21 @@ import '../../widgets/date_picker_row.dart';
 import '../../widgets/metric_hint.dart';
 import 'add_lot_dialog.dart' show parseDecimal;
 import 'dividend_forecast.dart';
+import 'goal_dialog.dart';
 import 'portfolio_store.dart';
 
 /// „Kapott osztalékok” kártya a portfólió oldalon: az idei és az összes kapott
 /// osztalék a portfólió pénznemében (a mai árfolyamon átváltva), az utolsó
 /// tételek listája törléssel (visszavonható), és kézi felvétel.
 class DividendsCard extends StatelessWidget {
-  const DividendsCard({super.key, required this.currency});
+  const DividendsCard({super.key, required this.currency, this.annualDividend = 0});
 
   /// A portfólió összesítésének pénzneme.
   final String currency;
+
+  /// A még birtokolt részvények várható évi osztaléka a mai hozamokból, a
+  /// [currency] pénznemben (a havi osztalékcél haladásához).
+  final double annualDividend;
 
   static const maxListed = 8;
 
@@ -259,6 +264,8 @@ class DividendsCard extends StatelessWidget {
                     ),
                   ),
                 ],
+                // Havi osztalékcél: a mai hozamokból várható évi osztalék havi átlaga a célhoz.
+                if (annualDividend > 0) _DividendGoal(currency: currency, monthly: annualDividend / 12, fmt: fmt),
               ],
             ),
           ),
@@ -540,6 +547,94 @@ class _MonthsChart extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+}
+
+/// Havi osztalékcél: beállító gomb, vagy haladásjelző a mai hozamokból várható
+/// havi átlaggal; koppintásra módosítható vagy törölhető. A más pénznemben
+/// megadott cél (a megjelenítési pénznem azóta változott) újra beállítható.
+class _DividendGoal extends StatelessWidget {
+  const _DividendGoal({required this.currency, required this.monthly, required this.fmt});
+
+  final String currency;
+  final double monthly;
+  final Fmt fmt;
+
+  Future<void> _edit(BuildContext context) async {
+    final l10n = AppLocalizations.of(context);
+    final prefs = AppServices.of(context).preferences;
+    final goal = prefs.dividendGoal;
+    final result = await showGoalDialog(
+      context,
+      title: l10n.dividendGoalTitle,
+      label: l10n.dividendGoalAmount,
+      currency: currency,
+      initial: goal?.currency == currency ? goal!.amount : null,
+      fmt: fmt,
+    );
+    if (result == null) return;
+    await prefs.setDividendGoal(result <= 0 ? null : (amount: result, currency: currency));
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final services = AppServices.of(context);
+    final l10n = AppLocalizations.of(context);
+    final p = AppPalette.of(context);
+    final theme = Theme.of(context);
+    return ListenableBuilder(
+      listenable: services.preferences,
+      builder: (context, _) {
+        final goal = services.preferences.dividendGoal;
+        if (goal == null || goal.currency != currency) {
+          return Align(
+            alignment: AlignmentDirectional.centerStart,
+            child: TextButton.icon(
+              key: const ValueKey('dividend-goal-set'),
+              onPressed: () => _edit(context),
+              style: TextButton.styleFrom(visualDensity: VisualDensity.compact, padding: EdgeInsets.zero),
+              icon: const Icon(Icons.flag_outlined, size: 18),
+              label: Text(l10n.dividendGoalSet),
+            ),
+          );
+        }
+        final ratio = monthly / goal.amount;
+        // A szöveg maga mondja, hogy közelítés („kb.”), ezért itt nincs „~”.
+        final amount = fmt.money(monthly, currency);
+        final target = fmt.money(goal.amount, goal.currency);
+        return InkWell(
+          key: const ValueKey('dividend-goal-bar'),
+          onTap: () => _edit(context),
+          borderRadius: BorderRadius.circular(8),
+          child: Padding(
+            padding: const EdgeInsets.only(top: 12, bottom: 2, right: 8),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  ratio >= 1
+                      ? l10n.dividendGoalReached(amount, target)
+                      : l10n.dividendGoalProgress(amount, fmt.percent(ratio * 100, decimals: 0), target),
+                  style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                ),
+                const SizedBox(height: 6),
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(99),
+                  child: LinearProgressIndicator(
+                    value: ratio.clamp(0.0, 1.0),
+                    semanticsLabel: l10n.dividendGoalTitle,
+                    semanticsValue: fmt.percent(ratio.clamp(0.0, 1.0) * 100, decimals: 0),
+                    minHeight: 8,
+                    color: ratio >= 1 ? p.positive : p.accent,
+                    backgroundColor: p.border,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        );
+      },
     );
   }
 }

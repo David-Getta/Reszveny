@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "കഴിഞ്ഞ അഞ്ച് വർഷത്തിൽ ഓഹരിയൊന്നിന് ലാഭവിഹിതം പ്രതിവർഷം ശരാശരി എത്ര വളർന്നു. സ്ഥിരമായ വളർച്ച സാധാരണയായി കമ്പനിക്ക് അതിന്റെ പണമൊഴുക്കിൽ വിശ്വാസമുണ്ടെന്ന് സൂചിപ്പിക്കുന്നു; വെട്ടിക്കുറയ്ക്കൽ പലപ്പോഴും ഒരു മുന്നറിയിപ്പ് സൂചനയാണ്.",
   "portfolioDividendsByMonth": "മാസം തിരിച്ച്",
   "dividendsLegendReceived": "ലഭിച്ചത്",
-  "dividendsLegendExpected": "പ്രതീക്ഷിക്കുന്നത്"
+  "dividendsLegendExpected": "പ്രതീക്ഷിക്കുന്നത്",
+  "dividendGoalSet": "പ്രതിമാസ ലാഭവിഹിത ലക്ഷ്യം സജ്ജമാക്കുക",
+  "dividendGoalTitle": "പ്രതിമാസ ലാഭവിഹിത ലക്ഷ്യം",
+  "dividendGoalAmount": "പ്രതിമാസ ലാഭവിഹിതം",
+  "dividendGoalProgress": "ഇന്നത്തെ യീൽഡിൽ പ്രതിമാസം ഏകദേശം {amount} · {percent} · ലക്ഷ്യം: {goal}",
+  "dividendGoalReached": "ഇന്നത്തെ യീൽഡിൽ പ്രതിമാസം ഏകദേശം {amount} · ലക്ഷ്യം കൈവരിച്ചു: {goal}"
 }

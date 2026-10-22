@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Ni dividand ci aksiyoŋ bu nekk yokkoo at mu nekk, ci diggante, ci juróom at yu mujj yi. Yokkute gu sax dafa faral di wone ne sosiete bi dafa wóolu xaalis bi koy dugg; wàññi ko dafa faral di doon màndarga moytu.",
   "portfolioDividendsByMonth": "Weer bu nekk",
   "dividendsLegendReceived": "Yi ñu jot",
-  "dividendsLegendExpected": "Yi ñuy xaar"
+  "dividendsLegendExpected": "Yi ñuy xaar",
+  "dividendGoalSet": "Taxawal jublu dividand ci weer wi",
+  "dividendGoalTitle": "Jublu dividand ci weer wi",
+  "dividendGoalAmount": "Dividand ci weer wi",
+  "dividendGoalProgress": "Ci njureef bu tey, lu tollu ci {amount} ci weer wi · {percent} · Jublu: {goal}",
+  "dividendGoalReached": "Ci njureef bu tey, lu tollu ci {amount} ci weer wi · Agsi nga ci sa jublu: {goal}"
 }

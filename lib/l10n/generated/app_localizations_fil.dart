@@ -2487,6 +2487,25 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Magtakda ng buwanang layunin sa dibidendo';
+
+  @override
+  String get dividendGoalTitle => 'Buwanang layunin sa dibidendo';
+
+  @override
+  String get dividendGoalAmount => 'Dibidendo bawat buwan';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Mga $amount bawat buwan sa kasalukuyang yield · $percent · Layunin: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Mga $amount bawat buwan sa kasalukuyang yield · Naabot ang layunin: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

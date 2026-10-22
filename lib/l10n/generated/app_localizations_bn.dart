@@ -2477,6 +2477,25 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'মাসিক ডিভিডেন্ডের লক্ষ্য ঠিক করুন';
+
+  @override
+  String get dividendGoalTitle => 'মাসিক ডিভিডেন্ডের লক্ষ্য';
+
+  @override
+  String get dividendGoalAmount => 'প্রতি মাসে ডিভিডেন্ড';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'বর্তমান ইল্ডে প্রতি মাসে প্রায় $amount · $percent · লক্ষ্য: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'বর্তমান ইল্ডে প্রতি মাসে প্রায় $amount · লক্ষ্য পূরণ হয়েছে: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য ঠিক করুন';
 
   @override

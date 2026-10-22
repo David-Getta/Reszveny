@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Gore dividende ka shere e golile bokae ka ngwaga ka palogare mo dingwageng di le tlhano tse di fetileng. Kgolo e e tsepameng gantsi e kaya gore khampani e ikanya kelelo ya yone ya madi; phokotso gantsi ke sesupo sa tlhagiso.",
   "portfolioDividendsByMonth": "Ka kgwedi",
   "dividendsLegendReceived": "Tse di amogetsweng",
-  "dividendsLegendExpected": "Tse di lebeletsweng"
+  "dividendsLegendExpected": "Tse di lebeletsweng",
+  "dividendGoalSet": "Baya maikaelelo a dividende a kgwedi le kgwedi",
+  "dividendGoalTitle": "Maikaelelo a dividende a kgwedi le kgwedi",
+  "dividendGoalAmount": "Dividende ka kgwedi",
+  "dividendGoalProgress": "Ka poelo ya gompieno, e ka nna {amount} ka kgwedi · {percent} · Maikaelelo: {goal}",
+  "dividendGoalReached": "Ka poelo ya gompieno, e ka nna {amount} ka kgwedi · Maikaelelo a fitlheletswe: {goal}"
 }

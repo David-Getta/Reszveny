@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Hur mycket utdelningen per aktie i genomsnitt har ökat per år de senaste fem åren. Jämn tillväxt betyder oftast att bolaget litar på sitt kassaflöde; en sänkning är ofta en varningssignal.",
   "portfolioDividendsByMonth": "Per månad",
   "dividendsLegendReceived": "Mottagna",
-  "dividendsLegendExpected": "Förväntade"
+  "dividendsLegendExpected": "Förväntade",
+  "dividendGoalSet": "Sätt ett månatligt utdelningsmål",
+  "dividendGoalTitle": "Månatligt utdelningsmål",
+  "dividendGoalAmount": "Utdelning per månad",
+  "dividendGoalProgress": "Cirka {amount} i månaden med dagens direktavkastning: {percent} av ditt mål på {goal}",
+  "dividendGoalReached": "Cirka {amount} i månaden med dagens direktavkastning: ditt mål på {goal} är nått"
 }

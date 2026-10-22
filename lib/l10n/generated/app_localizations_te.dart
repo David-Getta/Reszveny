@@ -2485,6 +2485,25 @@ class AppLocalizationsTe extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'నెలవారీ డివిడెండ్ లక్ష్యం సెట్ చేయి';
+
+  @override
+  String get dividendGoalTitle => 'నెలవారీ డివిడెండ్ లక్ష్యం';
+
+  @override
+  String get dividendGoalAmount => 'నెలకు డివిడెండ్';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'నేటి ఈల్డ్‌తో నెలకు సుమారు $amount · $percent · లక్ష్యం: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'నేటి ఈల్డ్‌తో నెలకు సుమారు $amount · లక్ష్యం చేరుకుంది: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

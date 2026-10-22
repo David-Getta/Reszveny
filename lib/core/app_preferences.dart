@@ -31,6 +31,7 @@ class AppPreferences extends ChangeNotifier {
     this.morningBrief = false,
     this.portfolioMoveAlert = 0,
     this.portfolioGoal,
+    this.dividendGoal,
     Set<String> hiddenHome = const {},
     this.portfolioMoveNotified,
     List<WatchList> watchLists = const [],
@@ -70,6 +71,7 @@ class AppPreferences extends ChangeNotifier {
   static const _portfolioMoveNotifiedKey = 'portfolio_move_notified';
   static const _targetsKey = 'portfolio_targets';
   static const _goalKey = 'portfolio_goal';
+  static const _dividendGoalKey = 'dividend_goal';
   static const _hiddenHomeKey = 'home_hidden';
   static const _resolvedKey = 'resolved_descriptions';
 
@@ -248,6 +250,18 @@ class AppPreferences extends ChangeNotifier {
     await _save((p) => goal == null ? p.remove(_goalKey) : p.setString(_goalKey, '${goal.amount}|${goal.currency}'));
   }
 
+  /// Havi osztalékcél és pénzneme (pl. 50 000 HUF havonta); `null`, ha nincs.
+  ({double amount, String currency})? dividendGoal;
+
+  Future<void> setDividendGoal(({double amount, String currency})? goal) async {
+    dividendGoal = goal;
+    notifyListeners();
+    await _save(
+      (p) =>
+          goal == null ? p.remove(_dividendGoalKey) : p.setString(_dividendGoalKey, '${goal.amount}|${goal.currency}'),
+    );
+  }
+
   /// Értesítés, ha a teljes portfólió egy nap alatt legalább ennyi %-ot mozdul (0: ki).
   double portfolioMoveAlert;
 
@@ -337,6 +351,7 @@ class AppPreferences extends ChangeNotifier {
         morningBrief: prefs.getBool(_morningBriefKey) ?? false,
         portfolioMoveAlert: prefs.getDouble(_portfolioMoveKey) ?? 0,
         portfolioGoal: parseGoal(prefs.getString(_goalKey)),
+        dividendGoal: parseGoal(prefs.getString(_dividendGoalKey)),
         hiddenHome: {...?prefs.getStringList(_hiddenHomeKey)},
         portfolioMoveNotified: prefs.getString(_portfolioMoveNotifiedKey),
         watchLists: WatchList.parseAll(prefs.getString(_listsKey)),

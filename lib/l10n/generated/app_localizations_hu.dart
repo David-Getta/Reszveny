@@ -2484,6 +2484,25 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Havi osztalékcél beállítása';
+
+  @override
+  String get dividendGoalTitle => 'Havi osztalékcél';
+
+  @override
+  String get dividendGoalAmount => 'Osztalék havonta';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'A mai hozamokkal havonta kb. $amount: a $goal cél $percent-a';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'A mai hozamokkal havonta kb. $amount: a $goal cél teljesült';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

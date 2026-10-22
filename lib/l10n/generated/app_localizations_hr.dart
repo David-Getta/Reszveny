@@ -2524,6 +2524,25 @@ class AppLocalizationsHr extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Postavi mjesečni cilj dividendi';
+
+  @override
+  String get dividendGoalTitle => 'Mjesečni cilj dividendi';
+
+  @override
+  String get dividendGoalAmount => 'Dividende mjesečno';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Oko $amount mjesečno uz današnje prinose: $percent od tvog cilja od $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Oko $amount mjesečno uz današnje prinose: tvoj cilj od $goal je ostvaren';
+  }
+
+  @override
   String get portfolioGoalSet => 'Postavi cilj';
 
   @override

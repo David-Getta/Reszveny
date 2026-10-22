@@ -2478,6 +2478,25 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Sbadu iswi n dividand i wayyur';
+
+  @override
+  String get dividendGoalTitle => 'Iswi n dividand i wayyur';
+
+  @override
+  String get dividendGoalAmount => 'Dividand deg wayyur';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Azal n $amount deg wayyur s ufaris n tura · $percent · Iswi: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Azal n $amount deg wayyur s ufaris n tura · Tewwḍeḍ ɣer yiswi: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

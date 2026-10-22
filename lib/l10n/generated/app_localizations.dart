@@ -4297,6 +4297,36 @@ abstract class AppLocalizations {
   /// **'{days} d {hours} h'**
   String durationDaysHours(int days, int hours);
 
+  /// Button in the Dividends received card: set a target for the monthly dividend income.
+  ///
+  /// In en, this message translates to:
+  /// **'Set a monthly dividend goal'**
+  String get dividendGoalSet;
+
+  /// Title of the dialog that sets the monthly dividend income target; also the accessibility label of its progress bar.
+  ///
+  /// In en, this message translates to:
+  /// **'Monthly dividend goal'**
+  String get dividendGoalTitle;
+
+  /// Field label in the monthly dividend goal dialog; the currency code is shown after the number.
+  ///
+  /// In en, this message translates to:
+  /// **'Dividends a month'**
+  String get dividendGoalAmount;
+
+  /// Under the dividends card: progress towards the monthly dividend goal. {amount} like '18,500 HUF' (expected yearly dividend of the held stocks divided by 12), {percent} like '37%', {goal} like '50,000 HUF'.
+  ///
+  /// In en, this message translates to:
+  /// **'About {amount} a month at today\'s yields: {percent} of your {goal} goal'**
+  String dividendGoalProgress(String amount, String percent, String goal);
+
+  /// Under the dividends card when the expected monthly dividend reaches the goal. {amount} like '52,000 HUF', {goal} like '50,000 HUF'.
+  ///
+  /// In en, this message translates to:
+  /// **'About {amount} a month at today\'s yields: your {goal} goal is reached'**
+  String dividendGoalReached(String amount, String goal);
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

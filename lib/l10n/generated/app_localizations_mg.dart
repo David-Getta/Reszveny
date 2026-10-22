@@ -2498,6 +2498,25 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Mametraha tanjona dividenda isam-bolana';
+
+  @override
+  String get dividendGoalTitle => 'Tanjon\'ny dividenda isam-bolana';
+
+  @override
+  String get dividendGoalAmount => 'Dividenda isam-bolana';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Manodidina ny $amount isam-bolana amin\'ny tahan\'ny dividenda ankehitriny · $percent · Tanjona: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Manodidina ny $amount isam-bolana amin\'ny tahan\'ny dividenda ankehitriny · Tratra ny tanjona: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

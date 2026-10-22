@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "O kolik v průměru ročně rostla dividenda na akcii za posledních pět let. Stabilní růst obvykle znamená, že firma věří svému peněžnímu toku; snížení bývá varovným signálem.",
   "portfolioDividendsByMonth": "Po měsících",
   "dividendsLegendReceived": "Přijaté",
-  "dividendsLegendExpected": "Očekávané"
+  "dividendsLegendExpected": "Očekávané",
+  "dividendGoalSet": "Nastavit měsíční cíl dividend",
+  "dividendGoalTitle": "Měsíční cíl dividend",
+  "dividendGoalAmount": "Dividendy za měsíc",
+  "dividendGoalProgress": "Asi {amount} měsíčně při dnešních výnosech: {percent} z cíle {goal}",
+  "dividendGoalReached": "Asi {amount} měsíčně při dnešních výnosech: cíl {goal} splněn"
 }

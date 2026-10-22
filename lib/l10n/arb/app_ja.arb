@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "過去5年間に1株配当が年平均でどれだけ伸びたか。安定した増配は通常、会社がキャッシュフローに自信を持っていることを示し、減配はしばしば警告のサインです。",
   "portfolioDividendsByMonth": "月別",
   "dividendsLegendReceived": "受取済み",
-  "dividendsLegendExpected": "予想"
+  "dividendsLegendExpected": "予想",
+  "dividendGoalSet": "月間配当目標を設定",
+  "dividendGoalTitle": "月間配当目標",
+  "dividendGoalAmount": "月あたりの配当",
+  "dividendGoalProgress": "現在の利回りで月あたり約 {amount}：{percent} 達成 · 目標 {goal}",
+  "dividendGoalReached": "現在の利回りで月あたり約 {amount}：目標 {goal} を達成"
 }

@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "په هره ونډه وېشل شوې ګټه په تېرو پنځو کلونو کې په منځني ډول هر کال څومره وده کړې. ثابته وده معمولاً دا معنا لري چې شرکت پر خپل نغدي جریان باور لري؛ کمول یې ډېری وخت د خبرتیا نښه وي.",
   "portfolioDividendsByMonth": "د میاشتو له مخې",
   "dividendsLegendReceived": "ترلاسه شوي",
-  "dividendsLegendExpected": "تمه کېدونکي"
+  "dividendsLegendExpected": "تمه کېدونکي",
+  "dividendGoalSet": "د میاشتنۍ ونډې ګټې موخه وټاکئ",
+  "dividendGoalTitle": "د میاشتنۍ ونډې ګټې موخه",
+  "dividendGoalAmount": "په میاشت کې د ونډې ګټه",
+  "dividendGoalProgress": "د نن ورځې د ګټې په کچه په میاشت کې شاوخوا {amount} · {percent} · موخه: {goal}",
+  "dividendGoalReached": "د نن ورځې د ګټې په کچه په میاشت کې شاوخوا {amount} · موخې ته ورسېدئ: {goal}"
 }

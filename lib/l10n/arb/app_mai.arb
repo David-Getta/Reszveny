@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "पछिला पाँच सालमे प्रति शेयर लाभांश औसतन सालाना कतेक बढ़ल। स्थिर वृद्धिक अर्थ सामान्यतः ई होइत अछि जे कंपनीकेँ अपन नकदी प्रवाह पर भरोसा छैक; कटौती प्रायः चेतावनीक संकेत होइत अछि।",
   "portfolioDividendsByMonth": "मासक अनुसार",
   "dividendsLegendReceived": "प्राप्त",
-  "dividendsLegendExpected": "अपेक्षित"
+  "dividendsLegendExpected": "अपेक्षित",
+  "dividendGoalSet": "मासिक डिविडेंड लक्ष्य निर्धारित करू",
+  "dividendGoalTitle": "मासिक डिविडेंड लक्ष्य",
+  "dividendGoalAmount": "प्रति मास डिविडेंड",
+  "dividendGoalProgress": "आजुक यील्ड पर प्रति मास लगभग {amount} · {percent} · लक्ष्य: {goal}",
+  "dividendGoalReached": "आजुक यील्ड पर प्रति मास लगभग {amount} · लक्ष्य पूरा भेल: {goal}"
 }

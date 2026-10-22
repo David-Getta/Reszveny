@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Насколько в среднем за год рос дивиденд на акцию за последние пять лет. Стабильный рост обычно означает, что компания уверена в своём денежном потоке; снижение часто служит тревожным сигналом.",
   "portfolioDividendsByMonth": "По месяцам",
   "dividendsLegendReceived": "Полученные",
-  "dividendsLegendExpected": "Ожидаемые"
+  "dividendsLegendExpected": "Ожидаемые",
+  "dividendGoalSet": "Задать месячную цель по дивидендам",
+  "dividendGoalTitle": "Месячная цель по дивидендам",
+  "dividendGoalAmount": "Дивиденды в месяц",
+  "dividendGoalProgress": "Около {amount} в месяц при текущей доходности: {percent} от цели {goal}",
+  "dividendGoalReached": "Около {amount} в месяц при текущей доходности: цель {goal} достигнута"
 }

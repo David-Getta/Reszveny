@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Berapa banyak dividen sesaham meningkat setiap tahun secara purata sepanjang lima tahun lepas. Pertumbuhan yang stabil biasanya bermakna syarikat yakin dengan aliran tunainya; pemotongan selalunya tanda amaran.",
   "portfolioDividendsByMonth": "Mengikut bulan",
   "dividendsLegendReceived": "Diterima",
-  "dividendsLegendExpected": "Dijangka"
+  "dividendsLegendExpected": "Dijangka",
+  "dividendGoalSet": "Tetapkan sasaran dividen bulanan",
+  "dividendGoalTitle": "Sasaran dividen bulanan",
+  "dividendGoalAmount": "Dividen sebulan",
+  "dividendGoalProgress": "Kira-kira {amount} sebulan berdasarkan hasil semasa: {percent} daripada sasaran {goal}",
+  "dividendGoalReached": "Kira-kira {amount} sebulan berdasarkan hasil semasa: sasaran {goal} tercapai"
 }

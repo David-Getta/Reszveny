@@ -2482,6 +2482,25 @@ class AppLocalizationsUg extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'ئايلىق پايدا ئۈلۈشى نىشانى بەلگىلەش';
+
+  @override
+  String get dividendGoalTitle => 'ئايلىق پايدا ئۈلۈشى نىشانى';
+
+  @override
+  String get dividendGoalAmount => 'ئايدا پايدا ئۈلۈشى';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'بۈگۈنكى نىسبەت بويىچە ئايدا تەخمىنەن $amount · $percent · نىشان: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'بۈگۈنكى نىسبەت بويىچە ئايدا تەخمىنەن $amount · نىشانغا يېتىلدى: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

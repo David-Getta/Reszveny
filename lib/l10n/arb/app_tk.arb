@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Soňky bäş ýylda bir paýnama düşýän diwidendiň ýylda ortaça näçe artandygy. Durnukly ösüş adatça kompaniýanyň öz pul akymyna ynanýandygyny aňladýar; azaldylmagy köplenç duýduryş alamatydyr.",
   "portfolioDividendsByMonth": "Aýlar boýunça",
   "dividendsLegendReceived": "Alnan",
-  "dividendsLegendExpected": "Garaşylýan"
+  "dividendsLegendExpected": "Garaşylýan",
+  "dividendGoalSet": "Aýlyk diwidend maksadyny goý",
+  "dividendGoalTitle": "Aýlyk diwidend maksady",
+  "dividendGoalAmount": "Aýda diwidend",
+  "dividendGoalProgress": "Häzirki girdejililik bilen aýda takmynan {amount} · {percent} · maksat: {goal}",
+  "dividendGoalReached": "Häzirki girdejililik bilen aýda takmynan {amount} · Maksada ýetildi: {goal}"
 }

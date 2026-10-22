@@ -2477,6 +2477,25 @@ class AppLocalizationsBm extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Kalo o kalo dividandi laɲini sigi';
+
+  @override
+  String get dividendGoalTitle => 'Kalo o kalo dividandi laɲini';
+
+  @override
+  String get dividendGoalAmount => 'Dividandi kalo o kalo';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Bi sɔrɔ hakɛ la, $amount ɲɔgɔn kalo o kalo · $percent · Laɲini: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Bi sɔrɔ hakɛ la, $amount ɲɔgɔn kalo o kalo · I ye i ka laɲini sɔrɔ: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

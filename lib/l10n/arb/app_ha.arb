@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Yawan da rabon riba kan kowane hannun jari ya ƙaru a kowace shekara a matsakaici cikin shekaru biyar da suka wuce. Ƙaruwa mai dorewa yawanci tana nufin kamfanin ya amince da kwararar kuɗinsa; ragewa sau da yawa alamar gargaɗi ce.",
   "portfolioDividendsByMonth": "Ta wata",
   "dividendsLegendReceived": "An karɓa",
-  "dividendsLegendExpected": "Ana sa ran"
+  "dividendsLegendExpected": "Ana sa ran",
+  "dividendGoalSet": "Saita burin rabon riba na wata-wata",
+  "dividendGoalTitle": "Burin rabon riba na wata-wata",
+  "dividendGoalAmount": "Rabon riba a wata",
+  "dividendGoalProgress": "Kusan {amount} a wata bisa yawan riba na yanzu · {percent} · Buri: {goal}",
+  "dividendGoalReached": "Kusan {amount} a wata bisa yawan riba na yanzu · An cimma buri: {goal}"
 }

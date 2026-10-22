@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Sepira dividen saben saham tuwuh rata-rata saben taun sajrone limang taun pungkasan. Tuwuh sing stabil biasane ateges perusahaan percaya marang arus kase; pemotongan asring dadi tandha bebaya.",
   "portfolioDividendsByMonth": "Saben sasi",
   "dividendsLegendReceived": "Ditampa",
-  "dividendsLegendExpected": "Dikira-kira"
+  "dividendsLegendExpected": "Dikira-kira",
+  "dividendGoalSet": "Setel target dividen saben sasi",
+  "dividendGoalTitle": "Target dividen saben sasi",
+  "dividendGoalAmount": "Dividen saben sasi",
+  "dividendGoalProgress": "Kira-kira {amount} saben sasi kanthi imbal hasil saiki: {percent} saka target {goal}",
+  "dividendGoalReached": "Kira-kira {amount} saben sasi kanthi imbal hasil saiki: target {goal} kagayuh"
 }

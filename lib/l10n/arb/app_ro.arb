@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Cât a crescut în medie pe an dividendul pe acțiune în ultimii cinci ani. O creștere constantă înseamnă de obicei că firma are încredere în fluxul său de numerar; o reducere este adesea un semnal de alarmă.",
   "portfolioDividendsByMonth": "Pe luni",
   "dividendsLegendReceived": "Încasate",
-  "dividendsLegendExpected": "Așteptate"
+  "dividendsLegendExpected": "Așteptate",
+  "dividendGoalSet": "Setează un obiectiv lunar de dividende",
+  "dividendGoalTitle": "Obiectiv lunar de dividende",
+  "dividendGoalAmount": "Dividende pe lună",
+  "dividendGoalProgress": "Circa {amount} pe lună la randamentele actuale: {percent} din obiectivul de {goal}",
+  "dividendGoalReached": "Circa {amount} pe lună la randamentele actuale: obiectivul de {goal} a fost atins"
 }

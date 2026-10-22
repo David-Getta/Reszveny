@@ -2497,6 +2497,26 @@ class AppLocalizationsTn extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet =>
+      'Baya maikaelelo a dividende a kgwedi le kgwedi';
+
+  @override
+  String get dividendGoalTitle => 'Maikaelelo a dividende a kgwedi le kgwedi';
+
+  @override
+  String get dividendGoalAmount => 'Dividende ka kgwedi';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Ka poelo ya gompieno, e ka nna $amount ka kgwedi · $percent · Maikaelelo: $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Ka poelo ya gompieno, e ka nna $amount ka kgwedi · Maikaelelo a fitlheletswe: $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Baya maikaelelo';
 
   @override

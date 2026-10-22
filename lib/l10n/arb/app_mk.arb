@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Колку просечно годишно растела дивидендата по акција во последните пет години. Стабилниот раст обично значи дека компанијата има доверба во својот паричен тек; намалувањето често е предупредувачки знак.",
   "portfolioDividendsByMonth": "По месеци",
   "dividendsLegendReceived": "Примени",
-  "dividendsLegendExpected": "Очекувани"
+  "dividendsLegendExpected": "Очекувани",
+  "dividendGoalSet": "Постави месечна цел за дивиденди",
+  "dividendGoalTitle": "Месечна цел за дивиденди",
+  "dividendGoalAmount": "Дивиденди месечно",
+  "dividendGoalProgress": "Околу {amount} месечно според денешните приноси: {percent} од целта од {goal}",
+  "dividendGoalReached": "Околу {amount} месечно според денешните приноси: целта од {goal} е постигната"
 }

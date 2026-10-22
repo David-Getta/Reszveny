@@ -759,5 +759,10 @@
   "glossDividendGrowth5y": "Ingene inyungu kuri buri mugabane yagiye yongerekana ku mwaka, ku kigereranyo, mu myaka itanu iheze. Iyongerekana ridahagarara kenshi risobanura ko isosiyete yizigiye amafaranga yinjiza; kuyigabanya kenshi ni ikimenyetso c'umuburo.",
   "portfolioDividendsByMonth": "Ku kwezi",
   "dividendsLegendReceived": "Yakiriwe",
-  "dividendsLegendExpected": "Yitezwe"
+  "dividendsLegendExpected": "Yitezwe",
+  "dividendGoalSet": "Shiraho intumbero y'inyungu ku migabane ku kwezi",
+  "dividendGoalTitle": "Intumbero y'inyungu ku migabane ku kwezi",
+  "dividendGoalAmount": "Inyungu ku migabane ku kwezi",
+  "dividendGoalProgress": "Hafi {amount} ku kwezi ku gipimo c'ubu · {percent} · Intumbero: {goal}",
+  "dividendGoalReached": "Hafi {amount} ku kwezi ku gipimo c'ubu · Washikiye ku ntumbero: {goal}"
 }

@@ -2491,6 +2491,25 @@ class AppLocalizationsCeb extends AppLocalizations {
   }
 
   @override
+  String get dividendGoalSet => 'Pagbutang og binulan nga tumong sa dibidendo';
+
+  @override
+  String get dividendGoalTitle => 'Binulan nga tumong sa dibidendo';
+
+  @override
+  String get dividendGoalAmount => 'Dibidendo kada bulan';
+
+  @override
+  String dividendGoalProgress(String amount, String percent, String goal) {
+    return 'Mga $amount kada bulan sa yield karon: $percent sa imong tumong nga $goal';
+  }
+
+  @override
+  String dividendGoalReached(String amount, String goal) {
+    return 'Mga $amount kada bulan sa yield karon: naabot na ang imong tumong nga $goal';
+  }
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override
