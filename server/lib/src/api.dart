@@ -541,11 +541,11 @@ class Api {
   Future<StockFacts> _stockFacts(String symbol) async {
     final cached = _factsCache[symbol];
     if (cached != null && DateTime.now().difference(cached.$1) < const Duration(hours: 1)) return cached.$2;
-    Future<Map<String, dynamic>> get(String path) async {
+    Future<Map<String, dynamic>> get(String path, [Map<String, String> extra = const {}]) async {
       try {
         final res = await _client
             .get(
-              Uri.parse('$finnhubBaseUrl$path').replace(queryParameters: {'symbol': symbol}),
+              Uri.parse('$finnhubBaseUrl$path').replace(queryParameters: {'symbol': symbol, ...extra}),
               headers: {'X-Finnhub-Token': finnhubApiKey},
             )
             .timeout(const Duration(seconds: 10));
@@ -556,7 +556,12 @@ class Api {
       }
     }
 
-    final [p, q] = await Future.wait([get('/stock/profile2'), get('/quote')]);
+    final [p, q, mj] = await Future.wait([
+      get('/stock/profile2'),
+      get('/quote'),
+      get('/stock/metric', {'metric': 'all'}),
+    ]);
+    final m = mj['metric'] is Map ? (mj['metric'] as Map).cast<String, dynamic>() : const <String, dynamic>{};
     String? str(Object? v) => v is String && v.trim().isNotEmpty ? v.trim() : null;
     double? num_(Object? v) => v is num ? v.toDouble() : null;
     final price = num_(q['c']);
@@ -573,6 +578,11 @@ class Api {
       price: price != null && price > 0 ? price : null,
       change: num_(q['d']),
       changePercent: num_(q['dp']),
+      pe: num_(m['peTTM']) ?? num_(m['peBasicExclExtraTTM']),
+      dividendYield: num_(m['dividendYieldIndicatedAnnual']) ?? num_(m['currentDividendYieldTTM']),
+      beta: num_(m['beta']),
+      week52Low: num_(m['52WeekLow']),
+      week52High: num_(m['52WeekHigh']),
     );
     // Hibás válasz (se név, se ár) nem kerül a gyorsítótárba.
     if (facts.name != null || facts.price != null) _factsCache[symbol] = (DateTime.now(), facts);

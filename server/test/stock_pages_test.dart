@@ -41,6 +41,21 @@ void main() {
         if (req.url.path.endsWith('/quote')) {
           return http.Response(jsonEncode({'c': 231.45, 'd': -2.15, 'dp': -0.92}), 200);
         }
+        if (req.url.path.endsWith('/stock/metric')) {
+          expect(req.url.queryParameters['metric'], 'all');
+          return http.Response(
+            jsonEncode({
+              'metric': {
+                'peTTM': 35.2,
+                'dividendYieldIndicatedAnnual': 0.45,
+                'beta': 1.21,
+                '52WeekLow': 164.08,
+                '52WeekHigh': 237.23,
+              },
+            }),
+            200,
+          );
+        }
         return http.Response('{}', 404);
       }),
     );
@@ -60,8 +75,14 @@ void main() {
     expect(hu, contains('WhatStock-android-arm64.apk'));
     expect(hu, contains('href="/stocks/MSFT?lang=hu"'));
     expect(hu, isNot(contains('href="/stocks/AAPL?lang=hu"')), reason: 'no link to itself');
+    // Fő mutatók a Finnhub-mutatókból.
+    expect(hu, contains('Fő mutatók'));
+    expect(hu, contains('<tr><td>P&#47;E (12 hónap)</td><td>35,2</td></tr>'));
+    expect(hu, contains('<tr><td>Osztalékhozam</td><td>0,45%</td></tr>'));
+    expect(hu, contains('<tr><td>52 hetes sáv</td><td>164,08 – 237,23 USD</td></tr>'));
     final en = await (await get('/stocks/AAPL?lang=en')).readAsString();
     expect(en, contains('3.45 T USD'));
+    expect(en, contains('<tr><td>Beta</td><td>1.21</td></tr>'));
     expect(en, contains('AI analysis of AAPL'));
     expect(calls.where((c) => c.contains('profile2')), hasLength(1), reason: 'second request from the cache');
   });

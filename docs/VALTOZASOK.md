@@ -67,6 +67,7 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 
 - **Minta-elemzés** oldal (`/sample`, magyar és angol): egy illusztratív elemzés kitalált cégen mutatja az
   elemzés szerkezetét; a nyitóoldalról és a láblécből linkelve, a sitemapben.
+- A népszerű részvények oldalain **fő mutatók** is: P/E, osztalékhozam, béta, 52 hetes sáv.
 
 ## Bolti előkészítés
 

@@ -427,6 +427,11 @@ typedef StockFacts = ({
   double? price,
   double? change,
   double? changePercent,
+  double? pe,
+  double? dividendYield,
+  double? beta,
+  double? week52Low,
+  double? week52High,
 });
 
 const _stocks = {
@@ -440,6 +445,12 @@ const _stocks = {
     'country': 'Ország',
     'ipo': 'Tőzsdére lépés',
     'website': 'Weboldal',
+    'metrics': 'Fő mutatók',
+    'pe': 'P/E (12 hónap)',
+    'dividendYield': 'Osztalékhozam',
+    'noDividend': 'nem fizet',
+    'beta': 'Béta',
+    'range52': '52 hetes sáv',
     'ctaTitle': 'AI-elemzés a(z) {symbol} részvényről',
     'cta': 'A WhatStock percek alatt elmagyarázza, mi mozgatja a részvényt, mik a kockázatok, mennyit ér, és három forgatókönyvet ad az árfolyamra – a te nyelveden. Kérdezhetsz is utána.',
     'unavailable': 'Az árfolyam most nem érhető el.',
@@ -459,6 +470,12 @@ const _stocks = {
     'country': 'Country',
     'ipo': 'IPO',
     'website': 'Website',
+    'metrics': 'Key figures',
+    'pe': 'P/E (TTM)',
+    'dividendYield': 'Dividend yield',
+    'noDividend': 'none',
+    'beta': 'Beta',
+    'range52': '52-week range',
     'ctaTitle': 'AI analysis of {symbol}',
     'cta': 'WhatStock explains in minutes what moves the stock, the risks, the valuation and three scenarios for the price, in your language. You can ask follow-up questions too.',
     'unavailable': 'The price is not available right now.',
@@ -547,12 +564,27 @@ String stockPage(StockFacts s, {required String lang, required String downloadBa
     if (s.weburl case final w? when w.startsWith('http'))
       (t['website']!, '<a href="${_attr(w)}" rel="nofollow noopener">${_esc(Uri.tryParse(w)?.host ?? w)}</a>'),
   ];
-  if (rows.isNotEmpty) {
+  void table(List<(String, String)> rows) {
+    if (rows.isEmpty) return;
     b.write('<table class="packs">');
     for (final (k, v) in rows) {
       b.write('<tr><td>${_esc(k)}</td><td>$v</td></tr>');
     }
     b.write('</table>');
+  }
+
+  table(rows);
+  // Fő mutatók (Finnhub-mutatók): ami nincs, kimarad; a negatív P/E (veszteség) sem látszik.
+  final metrics = [
+    if (s.pe case final pe? when pe > 0) (t['pe']!, _esc(_num(pe, lang, decimals: 1))),
+    if (s.dividendYield case final y?) (t['dividendYield']!, _esc(y > 0 ? '${_num(y, lang)}%' : t['noDividend']!)),
+    if (s.beta case final beta?) (t['beta']!, _esc(_num(beta, lang))),
+    if ((s.week52Low, s.week52High) case (final lo?, final hi?) when lo > 0 && hi >= lo)
+      (t['range52']!, _esc('${_num(lo, lang)} – ${_num(hi, lang)} $ccy')),
+  ];
+  if (metrics.isNotEmpty) {
+    b.write('<h2 style="font-size:17px;margin:18px 0 4px">${_esc(t['metrics'])}</h2>');
+    table(metrics);
   }
   b
     ..write('<p class="note">${_esc(t['delayed'])}</p></div>')
