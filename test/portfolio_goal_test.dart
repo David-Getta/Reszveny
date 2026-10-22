@@ -16,7 +16,13 @@ void main() {
     expect(AppPreferences.parseGoal(null), isNull);
     final prefs = await AppPreferences.load();
     await prefs.setPortfolioGoal((amount: 5000, currency: 'USD'));
+    await prefs.setDividendGoal((amount: 200, currency: 'USD'));
+    await prefs.setSort('positions', 'dividend');
     expect((await AppPreferences.load()).portfolioGoal, (amount: 5000.0, currency: 'USD'));
+    // A személyes adatok törlése a célokat és a rendezéseket is viszi.
+    await prefs.clearPersonalData();
+    final wiped = await AppPreferences.load();
+    expect((wiped.portfolioGoal, wiped.dividendGoal, wiped.sortOf('positions')), (null, null, null));
   });
 
   testWidgets('set a goal, see the progress, then remove it', (tester) async {
@@ -47,6 +53,18 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text('Goal of 100.00 USD reached'), findsOneWidget);
     expect(tester.takeException(), isNull);
+    // Ezres érték: az előtöltött „4000” mentve sem lesz 4 (a „4,000” korábban 4,0 lett).
+    await tester.tap(find.byKey(const ValueKey('goal-bar')));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byKey(const ValueKey('goal-amount')), '4000');
+    await tester.tap(find.byKey(const ValueKey('goal-save')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('goal-bar')));
+    await tester.pumpAndSettle();
+    expect(find.widgetWithText(TextField, '4000'), findsOneWidget);
+    await tester.tap(find.byKey(const ValueKey('goal-save')));
+    await tester.pumpAndSettle();
+    expect(s.preferences.portfolioGoal, (amount: 4000.0, currency: 'USD'));
 
     await tester.tap(find.byKey(const ValueKey('goal-bar')));
     await tester.pumpAndSettle();
@@ -90,6 +108,14 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text("About 0.87 USD a month at today's yields: your 0.50 USD goal is reached"), findsOneWidget);
     expect((await AppPreferences.load()).dividendGoal, (amount: 0.5, currency: 'USD'));
+
+    // Újranyitva a mező a pontos, visszaolvasható számot mutatja (nincs kerekítés és ezres tagolás).
+    await tester.tap(find.byKey(const ValueKey('dividend-goal-bar')));
+    await tester.pumpAndSettle();
+    expect(find.widgetWithText(TextField, '0.5'), findsOneWidget);
+    await tester.tap(find.byKey(const ValueKey('goal-save')));
+    await tester.pumpAndSettle();
+    expect(s.preferences.dividendGoal, (amount: 0.5, currency: 'USD'));
 
     await tester.tap(find.byKey(const ValueKey('dividend-goal-bar')));
     await tester.pumpAndSettle();

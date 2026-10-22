@@ -2494,12 +2494,12 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String dividendGoalProgress(String amount, String percent, String goal) {
-    return 'A mai hozamokkal havonta kb. $amount: a $goal cél $percent-a';
+    return 'A mai hozamokkal havonta kb. $amount · $percent kész · cél: $goal';
   }
 
   @override
   String dividendGoalReached(String amount, String goal) {
-    return 'A mai hozamokkal havonta kb. $amount: a $goal cél teljesült';
+    return 'A mai hozamokkal havonta kb. $amount · cél elérve: $goal';
   }
 
   @override

@@ -618,12 +618,14 @@ class AppPreferences extends ChangeNotifier {
     _recent = [];
     _lists.clear();
     _targets.clear();
+    _sorts.clear();
+    portfolioGoal = null;
+    dividendGoal = null;
     notifyListeners();
     await _save((p) async {
-      await p.remove(_favoritesKey);
-      await p.remove(_recentKey);
-      await p.remove(_listsKey);
-      await p.remove(_targetsKey);
+      for (final k in [_favoritesKey, _recentKey, _listsKey, _targetsKey, _sortsKey, _goalKey, _dividendGoalKey]) {
+        await p.remove(k);
+      }
     });
   }
 

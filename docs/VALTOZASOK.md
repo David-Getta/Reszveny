@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.176)
+# Változásjegyzék (0.2.130 → 0.2.177)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -22,7 +22,7 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - **Havi osztalék-diagram** a „Kapott osztalékok” kártyán: az elmúlt 12 hónap kapott és a következő 3 hónap
   várható osztaléka (a havonta fizető részvény minden hónapban), koppintásra a hónap összegeivel.
 - **Havi osztalékcél** a „Kapott osztalékok” kártyán: a mai hozamokból várható havi osztalék a célhoz mérve,
-  haladásjelzővel („A mai hozamokkal havonta kb. 18 500 Ft: az 50 000 Ft cél 37%-a”).
+  haladásjelzővel („A mai hozamokkal havonta kb. 18 500 Ft · 37% kész · cél: 50 000 Ft”).
 - A pozíciók **osztalékhozam szerint** is rendezhetők; a pozíciók és a kedvencek választott rendezése
   megmarad az app újraindítása után.
 - A részvény oldalán az **„Osztalék” kártya** az 5 éves osztaléknövekedéssel és a saját részvényekre jutó
@@ -69,7 +69,7 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 
 ## Minőség
 
-- Kilenc kódátnézés és két egyszerűsítési átnézés javításai, bővített tesztek; 120 nyelven minden új szöveg.
+- Tíz kódátnézés és két egyszerűsítési átnézés javításai, bővített tesztek; 120 nyelven minden új szöveg.
 
 ## Bolti „Újdonságok” (rövid)
 

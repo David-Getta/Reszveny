@@ -3,15 +3,15 @@ import '../fx/fx_service.dart';
 import 'portfolio_store.dart';
 
 /// Egy részvény várható következő osztaléka, a rögzített kifizetésekből becsülve.
-typedef ExpectedDividend = ({String symbol, DateTime date, double amount, String currency, int periodDays});
+typedef ExpectedDividend = ({String symbol, DateTime date, double amount, String currency, int periodMonths});
 
 /// A várható következő kifizetések a még birtokolt részvényekre, a rögzített
 /// osztalékok dátumaiból és összegeiből. Részvényenként és pénznemenként egy
 /// sorozat (két bróker, két pénznem: két sorozat); legalább két dátumozott
 /// kifizetés kell; a köztük lévő jellemző (medián) távolságból havi /
 /// negyedéves / féléves / éves ritmus adódik (a legutóbbi legfeljebb négy
-/// távolságból), a következő = az utolsó + ritmus
-/// (naptári napokban, nyári időszámítástól függetlenül), az összeg az utolsó
+/// távolságból), a következő = az utolsó + ritmus naptári hónapokban (a hónap
+/// napja marad; ha nincs ilyen nap, a hónap utolsó napja), az összeg az utolsó
 /// kifizetés. Ami már [grace]-nél régebben lett volna esedékes, kimarad
 /// (valószínűleg nem lett rögzítve, vagy elmaradt), ahogy a [horizon]-nál
 /// távolabbi is. Dátum, azon belül ticker szerint rendezve.
@@ -41,12 +41,12 @@ List<ExpectedDividend> expectedDividends(
   for (final e in series.entries) {
     final paidOn = e.value.keys.toList()..sort();
     if (paidOn.length < 2) continue;
-    final period = periodDaysFor(medianRecentGap(paidOn));
+    final period = periodMonthsFor(medianRecentGap(paidOn));
     if (period == null) continue;
     final last = paidOn.last;
-    final next = DateTime(last.year, last.month, last.day + period);
+    final next = addMonths(last, period);
     if (next.isBefore(now.subtract(grace)) || next.isAfter(now.add(horizon))) continue;
-    out.add((symbol: e.key.$1, date: next, amount: e.value[last]!, currency: e.key.$2, periodDays: period));
+    out.add((symbol: e.key.$1, date: next, amount: e.value[last]!, currency: e.key.$2, periodMonths: period));
   }
   out.sort((a, b) {
     final byDate = a.date.compareTo(b.date);
@@ -141,15 +141,24 @@ int medianRecentGap(List<DateTime> paidOn, {int recentGaps = 4}) {
   return sorted[sorted.length ~/ 2];
 }
 
-/// A kifizetések közti medián távolságból a ritmus napokban (30 / 91 / 182 / 365);
-/// `null`, ha túl sűrű (nem rendszeres osztalék) vagy túl ritka.
-int? periodDaysFor(int medianGapDays) {
+/// A kifizetések közti medián távolságból (napokban) a ritmus hónapokban
+/// (havi 1 / negyedéves 3 / féléves 6 / éves 12); `null`, ha túl sűrű (nem
+/// rendszeres osztalék) vagy túl ritka.
+int? periodMonthsFor(int medianGapDays) {
   if (medianGapDays < 20) return null;
-  if (medianGapDays <= 45) return 30;
-  if (medianGapDays <= 135) return 91;
-  if (medianGapDays <= 230) return 182;
-  if (medianGapDays <= 420) return 365;
+  if (medianGapDays <= 45) return 1;
+  if (medianGapDays <= 135) return 3;
+  if (medianGapDays <= 230) return 6;
+  if (medianGapDays <= 420) return 12;
   return null;
+}
+
+/// [d] + [months] naptári hónap, a hónap napjával; ha a célhónap rövidebb (jan.
+/// 31. + 1 hónap), annak utolsó napja – így a havi ritmus nem csúszik el.
+DateTime addMonths(DateTime d, int months) {
+  final first = DateTime(d.year, d.month + months);
+  final lastDay = DateTime(first.year, first.month + 1, 0).day;
+  return DateTime(first.year, first.month, d.day > lastDay ? lastDay : d.day);
 }
 
 /// Egy hónap osztaléka a havi diagramhoz: a kapott (a mai napig) és a várható
@@ -157,7 +166,8 @@ int? periodDaysFor(int medianGapDays) {
 typedef DividendMonth = ({DateTime month, double received, double expected});
 
 /// Havi bontás a [now] hónapja körül: az előző [past] − 1 hónap, a folyó és a
-/// következő [ahead] hónap. A kapott tételek közül a dátumozott, nem jövőbeli; a
+/// következő [ahead] hónap. A kapott tételek közül a dátumozott, nem jövőbeli (a
+/// jövőre rögzített, bejelentett tétel a saját hónapjában várható); a
 /// várhatók az [expected] listából, a ritmusukkal továbbvetítve (a havonta fizető
 /// részvény mindhárom következő hónapban), a már esedékes is a saját hónapjában.
 /// A [rate] a pénznem átváltása (`null`: a tétel kimarad).
@@ -179,15 +189,22 @@ List<DividendMonth> dividendMonths(
   final received = List.filled(count, 0.0), coming = List.filled(count, 0.0);
   for (final d in dividends) {
     final date = d.date;
-    if (date == null || date.isAfter(now)) continue;
+    if (date == null) continue;
     final (i, r) = (index(date), rate(d.currency));
-    if (i != null && r != null) received[i] += d.amount * r;
+    if (i == null || r == null) continue;
+    // A jövőre rögzített (bejelentett) kifizetés még várható.
+    if (date.isAfter(now)) {
+      coming[i] += d.amount * r;
+    } else {
+      received[i] += d.amount * r;
+    }
   }
   for (final x in expected) {
     final r = rate(x.currency);
     if (r == null) continue;
     // A következő kifizetés, majd a ritmus szerint a további, amíg az ablakban van.
-    for (var date = x.date; ; date = DateTime(date.year, date.month, date.day + x.periodDays)) {
+    for (var n = 0; ; n++) {
+      final date = addMonths(x.date, n * x.periodMonths);
       final i = index(date);
       if (i == null) break;
       coming[i] += x.amount * r;

@@ -6,6 +6,11 @@ import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/date_picker_row.dart';
 
+/// Szám a beviteli mezőbe: pont tizedesjellel, ezres tagolás nélkül, amit a
+/// [parseDecimal] változatlanul visszaolvas.
+String plainNumber(double v) =>
+    v == v.roundToDouble() ? v.toStringAsFixed(0) : v.toStringAsFixed(v < 1 ? 4 : 2).replaceAll(RegExp(r'0+$'), '');
+
 /// Szám beolvasása a felhasználó írásmódjában: „1 234,5”, „1,234.5”, „12,5”.
 /// Ha pont és vessző is van, az utolsó a tizedesjel. `null`, ha nem szám.
 double? parseDecimal(String input) {
@@ -62,12 +67,8 @@ class _AddLotDialogState extends State<_AddLotDialog> {
   void initState() {
     super.initState();
     final p = widget.currentPrice;
-    _price = TextEditingController(text: p == null ? '' : _plain(p));
+    _price = TextEditingController(text: p == null ? '' : plainNumber(p));
   }
-
-  /// Szám a beviteli mezőbe (pont tizedesjellel, amit a [parseDecimal] is elfogad).
-  static String _plain(double v) =>
-      v == v.roundToDouble() ? v.toStringAsFixed(0) : v.toStringAsFixed(v < 1 ? 4 : 2).replaceAll(RegExp(r'0+$'), '');
 
   @override
   void dispose() {
@@ -122,7 +123,7 @@ class _AddLotDialogState extends State<_AddLotDialog> {
                     ? null
                     : InkWell(
                         key: const ValueKey('lot-sell-all'),
-                        onTap: () => _quantity.text = _plain(widget.sellMax!),
+                        onTap: () => _quantity.text = plainNumber(widget.sellMax!),
                         child: Text(l10n.portfolioSellAll, style: TextStyle(color: p.accent)),
                       ),
               ),

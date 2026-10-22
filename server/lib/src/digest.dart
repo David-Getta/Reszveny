@@ -180,7 +180,7 @@ class DigestSender {
   /// (`lib/features/portfolio/dividend_forecast.dart`; a küszöböket a kettőben
   /// együtt kell változtatni): tickerenként és pénznemenként egy sorozat,
   /// legalább két dátumozott tétel; a köztük lévő medián távolságból havi /
-  /// negyedéves / féléves / éves ritmus; a következő = az utolsó + ritmus, az
+  /// negyedéves / féléves / éves ritmus; a következő = az utolsó + ritmus naptári hónapokban, az
   /// utolsó összeggel. Időrendben.
   static List<DigestDividend> expectedDividendsOf(Map<String, dynamic> data, {required DateTime now, int days = 14}) {
     final held = holdingsOf(data).held.keys.toSet();
@@ -200,9 +200,9 @@ class DigestSender {
       if (paidOn.length < 2) continue;
       // A legutóbbi legfeljebb négy távolság mediánja: a régi, ritkás előzmény ne torzítson.
       final gaps = [for (var i = 1; i < paidOn.length; i++) paidOn[i].difference(paidOn[i - 1]).inDays];
-      final period = _periodDays(_medianRecentGap(gaps.length > 4 ? gaps.sublist(gaps.length - 4) : gaps));
+      final period = _periodMonths(_medianRecentGap(gaps.length > 4 ? gaps.sublist(gaps.length - 4) : gaps));
       if (period == null) continue;
-      final next = paidOn.last.add(Duration(days: period));
+      final next = _addMonths(paidOn.last, period);
       if (next.isBefore(today) || next.isAfter(until)) continue;
       out.add((symbol: e.key.$1, amount: e.value[paidOn.last]!, currency: e.key.$2, date: next));
     }
@@ -226,14 +226,21 @@ class DigestSender {
     return sorted[sorted.length ~/ 2];
   }
 
-  /// A kifizetések közti medián távolságból a ritmus napokban (30 / 91 / 182 / 365).
-  static int? _periodDays(int medianGap) {
+  /// A kifizetések közti medián távolságból a ritmus hónapokban (1 / 3 / 6 / 12).
+  static int? _periodMonths(int medianGap) {
     if (medianGap < 20) return null;
-    if (medianGap <= 45) return 30;
-    if (medianGap <= 135) return 91;
-    if (medianGap <= 230) return 182;
-    if (medianGap <= 420) return 365;
+    if (medianGap <= 45) return 1;
+    if (medianGap <= 135) return 3;
+    if (medianGap <= 230) return 6;
+    if (medianGap <= 420) return 12;
     return null;
+  }
+
+  /// [d] + [months] naptári hónap (UTC), a hónap napjával; rövidebb hónapban annak utolsó napja.
+  static DateTime _addMonths(DateTime d, int months) {
+    final first = DateTime.utc(d.year, d.month + months);
+    final lastDay = DateTime.utc(first.year, first.month + 1, 0).day;
+    return DateTime.utc(first.year, first.month, d.day > lastDay ? lastDay : d.day);
   }
 
   /// Egy kör: ha hétfő reggel van, a feliratkozott fiókoknak, akiknek az elmúlt

@@ -1316,80 +1316,26 @@ class _GoalBar extends StatelessWidget {
   final PortfolioSnapshot snapshot;
   final Fmt fmt;
 
-  Future<void> _edit(BuildContext context) async {
-    final prefs = AppServices.of(context).preferences;
-    final goal = prefs.portfolioGoal;
-    final l10n = AppLocalizations.of(context);
-    final result = await showGoalDialog(
-      context,
-      title: l10n.portfolioGoalTitle,
-      label: l10n.portfolioTotalValue,
-      currency: snapshot.currency,
-      initial: goal?.currency == snapshot.currency ? goal!.amount : null,
-      fmt: fmt,
-    );
-    if (result == null) return;
-    await prefs.setPortfolioGoal(result <= 0 ? null : (amount: result, currency: snapshot.currency));
-  }
-
   @override
   Widget build(BuildContext context) {
-    final services = AppServices.of(context);
+    final prefs = AppServices.of(context).preferences;
     final l10n = AppLocalizations.of(context);
-    final p = AppPalette.of(context);
-    final theme = Theme.of(context);
     return ListenableBuilder(
-      listenable: services.preferences,
-      builder: (context, _) {
-        final goal = services.preferences.portfolioGoal;
-        if (goal == null || goal.currency != snapshot.currency) {
-          return Align(
-            alignment: AlignmentDirectional.centerStart,
-            child: TextButton.icon(
-              key: const ValueKey('goal-set'),
-              onPressed: () => _edit(context),
-              style: TextButton.styleFrom(visualDensity: VisualDensity.compact, padding: EdgeInsets.zero),
-              icon: const Icon(Icons.flag_outlined, size: 18),
-              label: Text(l10n.portfolioGoalSet),
-            ),
-          );
-        }
-        final ratio = snapshot.totalValue / goal.amount;
-        return InkWell(
-          key: const ValueKey('goal-bar'),
-          onTap: () => _edit(context),
-          borderRadius: BorderRadius.circular(8),
-          child: Padding(
-            padding: const EdgeInsets.only(top: 14, bottom: 2),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  ratio >= 1
-                      ? l10n.portfolioGoalReached(fmt.money(goal.amount, goal.currency))
-                      : l10n.portfolioGoalProgress(
-                          fmt.percent(ratio * 100, decimals: 0),
-                          fmt.money(goal.amount, goal.currency),
-                        ),
-                  style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
-                ),
-                const SizedBox(height: 6),
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(99),
-                  child: LinearProgressIndicator(
-                    value: ratio.clamp(0.0, 1.0),
-                    semanticsLabel: l10n.portfolioGoalTitle,
-                    semanticsValue: fmt.percent(ratio.clamp(0.0, 1.0) * 100, decimals: 0),
-                    minHeight: 8,
-                    color: ratio >= 1 ? p.positive : p.accent,
-                    backgroundColor: p.border,
-                  ),
-                ),
-              ],
-            ),
-          ),
-        );
-      },
+      listenable: prefs,
+      builder: (context, _) => GoalProgress(
+        keyPrefix: 'goal',
+        goal: prefs.portfolioGoal,
+        currency: snapshot.currency,
+        current: snapshot.totalValue,
+        setLabel: l10n.portfolioGoalSet,
+        dialogTitle: l10n.portfolioGoalTitle,
+        dialogLabel: l10n.portfolioTotalValue,
+        text: (ratio, goal) => ratio >= 1
+            ? l10n.portfolioGoalReached(fmt.money(goal.amount, goal.currency))
+            : l10n.portfolioGoalProgress(fmt.percent(ratio * 100, decimals: 0), fmt.money(goal.amount, goal.currency)),
+        onChanged: prefs.setPortfolioGoal,
+        fmt: fmt,
+      ),
     );
   }
 }

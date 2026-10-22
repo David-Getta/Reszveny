@@ -94,18 +94,23 @@ void main() {
         );
         expect(out, hasLength(1));
         expect(out.single.symbol, 'AAPL');
-        expect(out.single.date, DateTime(2026, 8, 13 + 91), reason: 'naptári nap, nem 91 × 24 óra');
+        expect(out.single.date, DateTime(2026, 11, 13), reason: 'naptári hónapokkal: aug. 13. + 3 hónap');
         expect(out.single.amount, closeTo(3.0, 1e-9));
-        expect(out.single.periodDays, 91);
+        expect(out.single.periodMonths, 3);
       },
     );
 
     test('monthly, half-yearly and yearly rhythms; irregular or too sparse series give nothing', () {
-      expect(periodDaysFor(31), 30);
-      expect(periodDaysFor(182), 182);
-      expect(periodDaysFor(365), 365);
-      expect(periodDaysFor(10), isNull, reason: 'túl sűrű: nem rendszeres osztalék');
-      expect(periodDaysFor(700), isNull);
+      expect(periodMonthsFor(31), 1);
+      expect(periodMonthsFor(91), 3);
+      expect(periodMonthsFor(182), 6);
+      expect(periodMonthsFor(365), 12);
+      expect(periodMonthsFor(10), isNull, reason: 'túl sűrű: nem rendszeres osztalék');
+      expect(periodMonthsFor(700), isNull);
+      // Naptári hónap: a hónap napja marad, rövidebb hónapban annak utolsó napja.
+      expect(addMonths(DateTime(2026, 1, 31), 1), DateTime(2026, 2, 28));
+      expect(addMonths(DateTime(2026, 11, 30), 3), DateTime(2027, 2, 28));
+      expect(addMonths(DateTime(2026, 10, 1), 1), DateTime(2026, 11, 1));
       final monthly = expectedDividends(
         [for (var m = 6; m <= 9; m++) rec('O', DateTime(2026, m, 15), 0.26)],
         ['O'],
@@ -229,7 +234,7 @@ void main() {
         ['KO'],
         now: now,
       );
-      expect(out.single.periodDays, 91);
+      expect(out.single.periodMonths, 3);
       expect(
         medianRecentGap([DateTime(2026, 1, 1), DateTime(2026, 2, 1), DateTime(2026, 3, 1)]),
         28,
@@ -318,15 +323,15 @@ void main() {
         rec('KO', DateTime(2026, 10, 15), 2),
         rec('OTP', DateTime(2026, 6, 2), 1000, currency: 'HUF'),
         rec('KO', DateTime(2025, 10, 31), 9), // az ablak előtt (2025. nov. az első hónap)
-        rec('KO', DateTime(2026, 11, 1), 50), // jövőbeli rögzítés: nem kapott
+        rec('KO', DateTime(2026, 11, 1), 50), // jövőre rögzített (bejelentett): várható a hónapjában
         DividendRecord(id: 'x', symbol: 'KO', amount: 7, currency: 'USD'),
       ];
       final expected = <ExpectedDividend>[
         // Havonta fizető: a következő három hónapban is.
-        (symbol: 'O', date: DateTime(2026, 11, 14), amount: 1, currency: 'USD', periodDays: 30),
+        (symbol: 'O', date: DateTime(2026, 11, 14), amount: 1, currency: 'USD', periodMonths: 1),
         // Negyedéves: csak egyszer fér az ablakba.
-        (symbol: 'AAPL', date: DateTime(2026, 11, 13), amount: 3, currency: 'USD', periodDays: 91),
-        (symbol: 'X', date: DateTime(2026, 12, 1), amount: 4, currency: 'CHF', periodDays: 91),
+        (symbol: 'AAPL', date: DateTime(2026, 11, 13), amount: 3, currency: 'USD', periodMonths: 3),
+        (symbol: 'X', date: DateTime(2026, 12, 1), amount: 4, currency: 'CHF', periodMonths: 3),
       ];
       final months = dividendMonths(
         ds,
@@ -345,10 +350,22 @@ void main() {
       expect(at(2026, 10).received, 7);
       expect(at(2026, 6).received, closeTo(3, 1e-9));
       expect(at(2026, 11).received, 0);
-      expect(at(2026, 11).expected, 4);
+      expect(at(2026, 11).expected, 54, reason: 'O 1 + AAPL 3 + a bejelentett KO 50');
       expect(at(2026, 12).expected, 1, reason: 'a CHF-tétel átváltás nélkül kimarad');
       expect(at(2027, 1).expected, 1);
       expect(months.fold(0.0, (s, m) => s + m.received), closeTo(10, 1e-9));
+      // Hónapfordulón fizető havi részvény: minden hónapban pontosan egyszer (nem 30 naponként csúszva).
+      final edge = dividendMonths(
+        const [],
+        [(symbol: 'M', date: DateTime(2026, 12, 1), amount: 1, currency: 'USD', periodMonths: 1)],
+        now: DateTime(2026, 11, 22),
+        rate: (_) => 1.0,
+      );
+      expect(edge.where((m) => m.expected > 0).map((m) => (m.month.month, m.expected)), [
+        (12, 1.0),
+        (1, 1.0),
+        (2, 1.0),
+      ]);
     });
 
     test('two currencies for one stock (two brokers) are separate series, never summed together', () {

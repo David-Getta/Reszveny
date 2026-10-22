@@ -208,7 +208,7 @@ void main() {
         {'symbol': 'PEP', 'quantity': 5, 'price': 160, 'currency': 'USD', 'side': 'sell'},
       ],
       'dividends': [
-        // KO negyedéves: júl. 30. + 91 nap = okt. 29. → két héten belül.
+        // KO negyedéves: júl. 30. + 3 hónap = okt. 30. → két héten belül.
         {'symbol': 'KO', 'amount': 4.85, 'currency': 'USD', 'date': '2026-04-30'},
         {'symbol': 'KO', 'amount': 5.0, 'currency': 'USD', 'date': '2026-07-30'},
         {'symbol': 'KO', 'amount': 0.1, 'currency': 'USD', 'date': '2026-07-30'},
@@ -218,7 +218,7 @@ void main() {
       ],
     };
     final ex = DigestSender.expectedDividendsOf(data, now: now);
-    expect(ex.map((d) => (d.symbol, d.currency, d.date)), [('KO', 'USD', DateTime.utc(2026, 10, 29))]);
+    expect(ex.map((d) => (d.symbol, d.currency, d.date)), [('KO', 'USD', DateTime.utc(2026, 10, 30))]);
     expect(ex.single.amount, closeTo(5.1, 1e-9), reason: 'az egy napon rögzített két tétel együtt');
     // Két pénznemben (két brókernél) rögzítve: külön sorozatok, nem keverednek.
     final mixed = DigestSender.expectedDividendsOf({
@@ -254,7 +254,7 @@ void main() {
         {'symbol': 'KO', 'amount': 1.2, 'currency': 'USD', 'date': '2026-07-30'},
       ],
     }, now: now);
-    expect(recent.map((d) => (d.symbol, d.date)), [('KO', DateTime.utc(2026, 10, 29))]);
+    expect(recent.map((d) => (d.symbol, d.date)), [('KO', DateTime.utc(2026, 10, 30))]);
     // Féléves → negyedéves váltás: két-két távolságnál az újabb (kisebb) nyer.
     final switched = DigestSender.expectedDividendsOf({
       'lots': data['lots'],
@@ -266,7 +266,7 @@ void main() {
         {'symbol': 'KO', 'amount': 1, 'currency': 'USD', 'date': '2026-07-30'},
       ],
     }, now: now);
-    expect(switched.map((d) => d.date), [DateTime.utc(2026, 10, 29)]);
+    expect(switched.map((d) => d.date), [DateTime.utc(2026, 10, 30)]);
     // Negyedéves → féléves váltás: a legutóbbi (182 napos) ritmus nyer, a következő fél év múlva.
     final slowed = DigestSender.expectedDividendsOf({
       'lots': data['lots'],
@@ -278,7 +278,7 @@ void main() {
         {'symbol': 'KO', 'amount': 2, 'currency': 'USD', 'date': '2026-07-29'},
       ],
     }, now: DateTime.utc(2027, 1, 20));
-    expect(slowed.map((d) => d.date), [DateTime.utc(2027, 1, 27)]);
+    expect(slowed.map((d) => d.date), [DateTime.utc(2027, 1, 29)], reason: 'júl. 29. + 6 naptári hónap');
     // Egy tételből nincs ritmus; a két héten túli nem látszik.
     expect(
       DigestSender.expectedDividendsOf({
