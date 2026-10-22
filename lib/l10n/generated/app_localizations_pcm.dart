@@ -2111,6 +2111,23 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return 'We dey expect $symbol dividend today';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'E go reach about $amount. Record am for your portfolio once e land.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Dividend reminder';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Notification for di day wey we expect dividend, based on how your recorded payments dey come, so you fit record am';
+
+  @override
   String get earningsRemindersTitle => 'Result reminder';
 
   @override

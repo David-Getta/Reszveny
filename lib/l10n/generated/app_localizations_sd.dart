@@ -2103,6 +2103,23 @@ class AppLocalizationsSd extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: اڄ ڊيويڊنڊ متوقع';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'لڳ ڀڳ $amount. اچڻ تي ان کي پنهنجي پورٽ فوليو ۾ رڪارڊ ڪريو.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'ڊيويڊنڊ جي ياد ڏياريندڙ';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'توهان جي رڪارڊ ڪيل ادائگين جي ترتيب مطابق ڊيويڊنڊ متوقع هجڻ واري ڏينهن اطلاع، ته جيئن توهان ان کي رڪارڊ ڪري سگهو';
+
+  @override
   String get earningsRemindersTitle => 'نتيجن جي ياد ڏياريندڙ';
 
   @override

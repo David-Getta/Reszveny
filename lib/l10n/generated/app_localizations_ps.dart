@@ -2104,6 +2104,23 @@ class AppLocalizationsPs extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return 'د $symbol ډیویډنډ نن تمه کېږي';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'شاوخوا $amount. کله چې ورسېږي، په خپل پورټفولیو کې یې ثبت کړئ.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'د ډیویډنډ یادونې';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'ستاسو د ثبت شویو تادیاتو د ریتم له مخې د ډیویډنډ د تمې په ورځ خبرتیا، څو یې ثبت کړای شئ';
+
+  @override
   String get earningsRemindersTitle => 'د پایلو یادونې';
 
   @override

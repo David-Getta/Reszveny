@@ -2112,6 +2112,23 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol өнөөдөр ногдол ашиг олгох төлөвтэй';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Ойролцоогоор $amount. Орж ирмэгц багцдаа бүртгээрэй.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Ногдол ашгийн сануулга';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Таны бүртгэсэн төлбөрүүдийн давтамжаар ногдол ашиг хүлээгдэж буй өдөр мэдэгдэл ирнэ, ингэснээр та үүнийг бүртгэж болно';
+
+  @override
   String get earningsRemindersTitle => 'Тайлангийн сануулга';
 
   @override

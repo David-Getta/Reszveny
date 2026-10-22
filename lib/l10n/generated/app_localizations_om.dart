@@ -2121,6 +2121,23 @@ class AppLocalizationsOm extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: har\'a diviidendii eegama';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Gara $amount. Yeroo ga\'u poortfooliyoo kee keessatti galmeessi.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Yaadachiisa diviidendii';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Beeksisa guyyaa diviidendiin akkaataa kaffaltiiwwan ati galmeessiteetiin eegamu, akka galmeessuu dandeessuuf';
+
+  @override
   String get earningsRemindersTitle => 'Yaadachiisa bu\'aa';
 
   @override

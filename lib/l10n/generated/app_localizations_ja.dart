@@ -2040,6 +2040,23 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbolの配当は本日入金予定です';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return '約 $amount。入金されたらポートフォリオに記録してください。';
+  }
+
+  @override
+  String get dividendRemindersTitle => '配当リマインダー';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      '記録した受取のペースから配当が見込まれる日に通知し、記録を忘れないようにします';
+
+  @override
   String get earningsRemindersTitle => '決算リマインダー';
 
   @override

@@ -2109,6 +2109,23 @@ class AppLocalizationsPa extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: ਅੱਜ ਡਿਵੀਡੈਂਡ ਸੰਭਾਵਿਤ';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'ਲਗਭਗ $amount। ਆਉਣ ’ਤੇ ਇਸਨੂੰ ਆਪਣੇ ਪੋਰਟਫੋਲੀਓ ਵਿੱਚ ਦਰਜ ਕਰੋ।';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'ਡਿਵੀਡੈਂਡ ਦੀ ਯਾਦ-ਦਹਾਨੀ';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'ਤੁਹਾਡੀਆਂ ਦਰਜ ਕੀਤੀਆਂ ਅਦਾਇਗੀਆਂ ਦੇ ਕ੍ਰਮ ਅਨੁਸਾਰ ਡਿਵੀਡੈਂਡ ਸੰਭਾਵਿਤ ਹੋਣ ਵਾਲੇ ਦਿਨ ਸੂਚਨਾ, ਤਾਂ ਜੋ ਤੁਸੀਂ ਇਸਨੂੰ ਦਰਜ ਕਰ ਸਕੋ';
+
+  @override
   String get earningsRemindersTitle => 'ਨਤੀਜਿਆਂ ਦੀ ਯਾਦ-ਦਹਾਨੀ';
 
   @override

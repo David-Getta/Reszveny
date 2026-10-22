@@ -2115,6 +2115,23 @@ class AppLocalizationsUg extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: بۈگۈن دىۋىدېند كۈتۈلىدۇ';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'تەخمىنەن $amount. كەلگەندىن كېيىن ئۇنى مەبلەغ بىرىكمىڭىزگە خاتىرىلەڭ.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'دىۋىدېند ئەسكەرتىشى';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'سىز خاتىرىلىگەن تۆلەملەرنىڭ رېتىمى بويىچە دىۋىدېند كۈتۈلگەن كۈنى، ئۇنى خاتىرىلىشىڭىز ئۈچۈن ئۇقتۇرۇش';
+
+  @override
   String get earningsRemindersTitle => 'نەتىجە ئەسكەرتىشى';
 
   @override

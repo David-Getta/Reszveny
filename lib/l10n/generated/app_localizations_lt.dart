@@ -2167,6 +2167,23 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: šiandien laukiama dividendo';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Apie $amount. Kai gausite, įrašykite jį į savo portfelį.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Priminimai apie dividendus';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Pranešimas tą dieną, kai pagal jūsų įrašytų išmokų ritmą laukiama dividendo, kad galėtumėte jį įrašyti';
+
+  @override
   String get earningsRemindersTitle => 'Priminimai apie rezultatus';
 
   @override

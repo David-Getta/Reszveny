@@ -2116,6 +2116,23 @@ class AppLocalizationsSu extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return 'Dividen $symbol diperkirakeun poé ieu';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Kira-kira $amount. Catet dina portofolio anjeun upami parantos lebet.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Panginget dividen';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Béwara dina poé dividen diperkirakeun dumasar kana wirahma pamayaran anu anjeun catet, supados anjeun tiasa nyatetna';
+
+  @override
   String get earningsRemindersTitle => 'Panginget laporan';
 
   @override

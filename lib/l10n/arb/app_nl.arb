@@ -768,5 +768,9 @@
   "portfolioBeta": "Portefeuillebèta",
   "glossPortfolioBeta": "De bèta van je aandelen, gewogen naar hun waarde: ongeveer hoeveel procent je aandelen bewegen als de markt 1% beweegt. Boven 1 schommelen ze meer dan de markt, onder 1 minder. Cash telt niet mee.",
   "portfolioTop3": "Top 3-posities",
-  "glossPortfolioTop3": "Hoeveel van de waarde van je aandelen in je drie grootste posities zit. Hoe hoger, hoe meer slecht nieuws bij één bedrijf de hele portefeuille kan raken."
+  "glossPortfolioTop3": "Hoeveel van de waarde van je aandelen in je drie grootste posities zit. Hoe hoger, hoe meer slecht nieuws bij één bedrijf de hele portefeuille kan raken.",
+  "dividendReminderTitle": "{symbol} keert vandaag naar verwachting dividend uit",
+  "dividendReminderBody": "Ongeveer {amount}. Leg het vast in je portefeuille zodra het binnen is.",
+  "dividendRemindersTitle": "Herinnering dividend",
+  "dividendRemindersSubtitle": "Een melding op de dag dat een dividend wordt verwacht op basis van het ritme van je vastgelegde uitkeringen, zodat je het kunt vastleggen"
 }

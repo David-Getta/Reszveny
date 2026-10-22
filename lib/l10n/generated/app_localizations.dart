@@ -3757,6 +3757,30 @@ abstract class AppLocalizations {
   /// **'{symbol} reports quarterly results today'**
   String earningsReminderToday(String symbol);
 
+  /// Desktop notification title on the day a dividend is expected from the rhythm of the user's recorded payments.
+  ///
+  /// In en, this message translates to:
+  /// **'{symbol} dividend expected today'**
+  String dividendReminderTitle(String symbol);
+
+  /// Desktop notification body for an expected dividend; {amount} is like '~ 4.68 USD' (an estimate from the last payment).
+  ///
+  /// In en, this message translates to:
+  /// **'About {amount}. Record it in your portfolio once it arrives.'**
+  String dividendReminderBody(String amount);
+
+  /// Settings switch title: notifications on the day an expected dividend should arrive.
+  ///
+  /// In en, this message translates to:
+  /// **'Dividend reminders'**
+  String get dividendRemindersTitle;
+
+  /// Settings switch subtitle for dividend reminders.
+  ///
+  /// In en, this message translates to:
+  /// **'A notification on the day a dividend is expected from the rhythm of your recorded payments, so you can record it'**
+  String get dividendRemindersSubtitle;
+
   /// No description provided for @earningsRemindersTitle.
   ///
   /// In en, this message translates to:

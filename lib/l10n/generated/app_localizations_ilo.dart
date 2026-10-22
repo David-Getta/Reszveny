@@ -2129,6 +2129,23 @@ class AppLocalizationsIlo extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return 'Manamnama ita nga aldaw ti dibidendo ti $symbol';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Agarup $amount. Irekord daytoy iti portfoliom inton dumteng.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Pammalagip ti dibidendo';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Pakaammo iti aldaw a manamnama ti dibidendo segun iti ritmo dagiti nairekord a bayadmo, tapno mairekordmo daytoy';
+
+  @override
   String get earningsRemindersTitle => 'Pammalagip ti resulta';
 
   @override

@@ -768,5 +768,9 @@
   "portfolioBeta": "Beta ya jalada la hisa",
   "glossPortfolioBeta": "Beta ya hisa zako, iliyopimwa kulingana na thamani yake: takriban hisa zako husonga kwa asilimia ngapi soko linaposonga kwa 1%. Juu ya 1 zinayumba zaidi ya soko, chini ya 1 kidogo. Taslimu haijajumuishwa.",
   "portfolioTop3": "Nafasi 3 kubwa zaidi",
-  "glossPortfolioTop3": "Sehemu ya thamani ya hisa zako iliyo katika nafasi zako tatu kubwa zaidi. Kadiri inavyokuwa juu, ndivyo habari mbaya kuhusu kampuni moja tu zinavyoweza kudhuru jalada lote la hisa."
+  "glossPortfolioTop3": "Sehemu ya thamani ya hisa zako iliyo katika nafasi zako tatu kubwa zaidi. Kadiri inavyokuwa juu, ndivyo habari mbaya kuhusu kampuni moja tu zinavyoweza kudhuru jalada lote la hisa.",
+  "dividendReminderTitle": "{symbol}: gawio linalotarajiwa leo",
+  "dividendReminderBody": "Takriban {amount}. Lirekodi kwenye jalada lako likishafika.",
+  "dividendRemindersTitle": "Vikumbusho vya gawio",
+  "dividendRemindersSubtitle": "Arifa siku ambayo gawio linatarajiwa kulingana na mwenendo wa malipo uliyorekodi, ili uweze kulirekodi"
 }

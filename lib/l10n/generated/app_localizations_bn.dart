@@ -2110,6 +2110,23 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol-এর ডিভিডেন্ড আজ প্রত্যাশিত';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'প্রায় $amount। এলে আপনার পোর্টফোলিওতে নথিভুক্ত করুন।';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'ডিভিডেন্ডের রিমাইন্ডার';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'আপনার নথিভুক্ত পেমেন্টের ছন্দ অনুযায়ী যেদিন ডিভিডেন্ড প্রত্যাশিত, সেদিন একটি বিজ্ঞপ্তি, যাতে আপনি তা নথিভুক্ত করতে পারেন';
+
+  @override
   String get earningsRemindersTitle => 'ফলাফলের রিমাইন্ডার';
 
   @override

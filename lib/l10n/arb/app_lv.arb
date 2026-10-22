@@ -768,5 +768,9 @@
   "portfolioBeta": "Portfeļa beta",
   "glossPortfolioBeta": "Jūsu akciju beta, svērta pēc to vērtības: aptuveni par cik procentiem kustas jūsu akcijas, kad tirgus pakustas par 1%. Virs 1 tās svārstās vairāk nekā tirgus, zem 1 – mazāk. Nauda netiek ieskaitīta.",
   "portfolioTop3": "3 lielākās pozīcijas",
-  "glossPortfolioTop3": "Cik liela daļa no jūsu akciju vērtības ir jūsu trīs lielākajās pozīcijās. Jo augstāka tā ir, jo vairāk sliktas ziņas par vienu uzņēmumu var kaitēt visam portfelim."
+  "glossPortfolioTop3": "Cik liela daļa no jūsu akciju vērtības ir jūsu trīs lielākajās pozīcijās. Jo augstāka tā ir, jo vairāk sliktas ziņas par vienu uzņēmumu var kaitēt visam portfelim.",
+  "dividendReminderTitle": "{symbol}: šodien gaidāma dividende",
+  "dividendReminderBody": "Apmēram {amount}. Kad tā pienāk, reģistrējiet to savā portfelī.",
+  "dividendRemindersTitle": "Atgādinājumi par dividendēm",
+  "dividendRemindersSubtitle": "Paziņojums dienā, kad pēc jūsu reģistrēto maksājumu ritma gaidāma dividende, lai jūs to varētu reģistrēt"
 }

@@ -2119,6 +2119,23 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return 'Inaasahan ngayon ang dibidendo ng $symbol';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Mga $amount. Itala ito sa iyong portfolio kapag dumating na.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Mga paalala sa dibidendo';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Isang notification sa araw na inaasahan ang dibidendo batay sa ritmo ng iyong mga naitalang bayad, para maitala mo ito';
+
+  @override
   String get earningsRemindersTitle => 'Mga paalala sa resulta';
 
   @override

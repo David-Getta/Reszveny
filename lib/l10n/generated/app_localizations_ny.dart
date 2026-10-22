@@ -2119,6 +2119,23 @@ class AppLocalizationsNy extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: dividendi yoyembekezeka lero';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Pafupifupi $amount. Ilembeni mu portfolio yanu ikafika.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Zikumbutso za dividendi';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Chidziwitso pa tsiku limene dividendi ikuyembekezeka potengera kayendedwe ka malipiro omwe mudalemba, kuti muthe kuilemba';
+
+  @override
   String get earningsRemindersTitle => 'Zikumbutso za zotsatira';
 
   @override

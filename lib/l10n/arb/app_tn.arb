@@ -768,5 +768,9 @@
   "portfolioBeta": "Beta ya potefolio",
   "glossPortfolioBeta": "Beta ya dishere tsa gago, e lekantsweng go ya ka boleng jwa tsone: e bontsha gore dishere tsa gago di tsamaya ka diperesente di le kae fa mmaraka o tsamaya ka 1%. Fa e feta 1 di fetoga go feta mmaraka, fa e le kwa tlase ga 1 di fetoga go le gonnye. Madi ga a akarediwe.",
   "portfolioTop3": "Dishere tse 3 tse dikgolo",
-  "glossPortfolioTop3": "Gore ke karolo e kae ya boleng jwa dishere tsa gago e e leng mo dishereng tsa gago tse tharo tse dikgolo thata. Fa e le kwa godimo, dikgang tse di sa siamang tsa khampani e le nngwe fela di ka utlwisa potefolio yotlhe botlhoko go feta."
+  "glossPortfolioTop3": "Gore ke karolo e kae ya boleng jwa dishere tsa gago e e leng mo dishereng tsa gago tse tharo tse dikgolo thata. Fa e le kwa godimo, dikgang tse di sa siamang tsa khampani e le nngwe fela di ka utlwisa potefolio yotlhe botlhoko go feta.",
+  "dividendReminderTitle": "{symbol}: dividente e e lebeletsweng gompieno",
+  "dividendReminderBody": "E ka nna {amount}. E kwale mo phothefoliong ya gago fa e goroga.",
+  "dividendRemindersTitle": "Dikgakololo tsa dividente",
+  "dividendRemindersSubtitle": "Kitsiso ka letsatsi le dividente e lebeletsweng ka lone go ya ka mokgwa wa dituelo tse o di kwadileng, gore o kgone go e kwala"
 }

@@ -768,5 +768,9 @@
   "portfolioBeta": "Beta del portafoglio",
   "glossPortfolioBeta": "Il beta delle tue azioni, ponderato in base al loro valore: all'incirca di quanto per cento si muovono le tue azioni quando il mercato si muove dell'1%. Sopra 1 oscillano più del mercato, sotto 1 meno. La liquidità non è inclusa.",
   "portfolioTop3": "Prime 3 posizioni",
-  "glossPortfolioTop3": "Quanta parte del valore delle tue azioni è concentrata nelle tue tre posizioni più grandi. Più è alta, più una cattiva notizia su una singola società può danneggiare l'intero portafoglio."
+  "glossPortfolioTop3": "Quanta parte del valore delle tue azioni è concentrata nelle tue tre posizioni più grandi. Più è alta, più una cattiva notizia su una singola società può danneggiare l'intero portafoglio.",
+  "dividendReminderTitle": "Dividendo di {symbol} atteso oggi",
+  "dividendReminderBody": "Circa {amount}. Registralo nel tuo portafoglio quando arriva.",
+  "dividendRemindersTitle": "Promemoria dividendi",
+  "dividendRemindersSubtitle": "Una notifica il giorno in cui è atteso un dividendo in base al ritmo dei pagamenti che hai registrato, così puoi registrarlo"
 }

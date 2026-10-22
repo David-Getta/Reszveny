@@ -2112,6 +2112,23 @@ class AppLocalizationsTk extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: şu gün diwidend garaşylýar';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Takmynan $amount. Gelenden soň ony portfeliňize ýazyň.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Diwidend ýatlatmalary';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Siziň ýazan tölegleriňiziň yzygiderliligi esasynda diwidend garaşylýan gün, ony ýazmagyňyz üçin duýduryş';
+
+  @override
   String get earningsRemindersTitle => 'Netije ýatlatmalary';
 
   @override

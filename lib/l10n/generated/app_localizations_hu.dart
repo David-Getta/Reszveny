@@ -2117,6 +2117,23 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return 'Ma várható a(z) $symbol osztaléka';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Kb. $amount. Ha megérkezett, rögzítsd a portfóliódban.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Osztalék-emlékeztető';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Értesítés a várható osztalék napján a rögzített kifizetéseid ritmusából, hogy rögzíthesd';
+
+  @override
   String get earningsRemindersTitle => 'Gyorsjelentés-emlékeztető';
 
   @override

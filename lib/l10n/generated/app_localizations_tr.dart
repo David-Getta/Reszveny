@@ -2112,6 +2112,23 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: bugün temettü bekleniyor';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Yaklaşık $amount. Geldiğinde portföyünüze kaydedin.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Temettü hatırlatıcıları';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Kaydettiğiniz ödemelerin düzenine göre temettü beklenen gün, kaydedebilmeniz için bildirim';
+
+  @override
   String get earningsRemindersTitle => 'Bilanço hatırlatıcıları';
 
   @override

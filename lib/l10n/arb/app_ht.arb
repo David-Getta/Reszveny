@@ -768,5 +768,9 @@
   "portfolioBeta": "Beta pòtfèy la",
   "glossPortfolioBeta": "Beta aksyon ou yo, an mwayèn selon valè chak: apeprè konbyen pousan aksyon ou yo bouje lè mache a bouje 1%. Pi wo pase 1, yo bouje plis pase mache a; anba 1, mwens. Lajan kach pa ladan l.",
   "portfolioTop3": "3 pi gwo pozisyon",
-  "glossPortfolioTop3": "Ki pati nan valè aksyon ou yo ki nan twa pi gwo pozisyon ou yo. Plis li wo, plis move nouvèl sou yon sèl konpayi ka fè tout pòtfèy la mal."
+  "glossPortfolioTop3": "Ki pati nan valè aksyon ou yo ki nan twa pi gwo pozisyon ou yo. Plis li wo, plis move nouvèl sou yon sèl konpayi ka fè tout pòtfèy la mal.",
+  "dividendReminderTitle": "Dividann {symbol} yo atann jodi a",
+  "dividendReminderBody": "Anviwon {amount}. Anrejistre l nan pòtfolyo w lè l rive.",
+  "dividendRemindersTitle": "Rapèl dividann",
+  "dividendRemindersSubtitle": "Yon notifikasyon jou yo atann yon dividann dapre ritm peman ou te anrejistre yo, pou w ka anrejistre l"
 }

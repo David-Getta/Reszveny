@@ -2111,6 +2111,23 @@ class AppLocalizationsMr extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: आज लाभांश अपेक्षित';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'सुमारे $amount. तो मिळाल्यावर तुमच्या पोर्टफोलिओमध्ये नोंदवा.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'लाभांश स्मरणपत्रे';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'तुम्ही नोंदवलेल्या पेमेंटच्या क्रमानुसार लाभांश अपेक्षित असलेल्या दिवशी सूचना, जेणेकरून तुम्ही तो नोंदवू शकाल';
+
+  @override
   String get earningsRemindersTitle => 'निकाल स्मरणपत्रे';
 
   @override

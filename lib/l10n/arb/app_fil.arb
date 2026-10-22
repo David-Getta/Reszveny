@@ -768,5 +768,9 @@
   "portfolioBeta": "Beta ng portfolio",
   "glossPortfolioBeta": "Ang beta ng iyong mga stock, tinimbang ayon sa halaga nila: humigit-kumulang ilang porsiyento gumagalaw ang mga stock mo kapag gumalaw nang 1% ang merkado. Kapag lampas sa 1, mas malaki ang galaw nila kaysa sa merkado; kapag mas mababa sa 1, mas maliit. Hindi kasama ang cash.",
   "portfolioTop3": "Top 3 na posisyon",
-  "glossPortfolioTop3": "Gaano kalaking bahagi ng halaga ng mga stock mo ang nasa tatlo mong pinakamalaking posisyon. Kapag mas mataas ito, mas makakasira sa buong portfolio ang masamang balita tungkol sa iisang kumpanya."
+  "glossPortfolioTop3": "Gaano kalaking bahagi ng halaga ng mga stock mo ang nasa tatlo mong pinakamalaking posisyon. Kapag mas mataas ito, mas makakasira sa buong portfolio ang masamang balita tungkol sa iisang kumpanya.",
+  "dividendReminderTitle": "Inaasahan ngayon ang dibidendo ng {symbol}",
+  "dividendReminderBody": "Mga {amount}. Itala ito sa iyong portfolio kapag dumating na.",
+  "dividendRemindersTitle": "Mga paalala sa dibidendo",
+  "dividendRemindersSubtitle": "Isang notification sa araw na inaasahan ang dibidendo batay sa ritmo ng iyong mga naitalang bayad, para maitala mo ito"
 }

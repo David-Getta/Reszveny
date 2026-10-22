@@ -2119,6 +2119,23 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol-ի շահաբաժինը սպասվում է այսօր';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Մոտ $amount։ Ստանալուց հետո գրանցեք այն ձեր պորտֆելում։';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Շահաբաժինների հիշեցումներ';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Ծանուցում այն օրը, երբ ձեր գրանցած վճարումների ռիթմով շահաբաժին է սպասվում, որպեսզի կարողանաք այն գրանցել';
+
+  @override
   String get earningsRemindersTitle => 'Արդյունքների հիշեցումներ';
 
   @override

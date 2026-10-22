@@ -768,5 +768,9 @@
   "portfolioBeta": "Beta danh mục",
   "glossPortfolioBeta": "Beta của các cổ phiếu bạn nắm giữ, có trọng số theo giá trị: cổ phiếu của bạn biến động khoảng bao nhiêu phần trăm khi thị trường biến động 1%. Trên 1 thì dao động mạnh hơn thị trường, dưới 1 thì ít hơn. Không tính tiền mặt.",
   "portfolioTop3": "3 vị thế lớn nhất",
-  "glossPortfolioTop3": "Tỷ trọng giá trị cổ phiếu của bạn nằm trong ba vị thế lớn nhất. Tỷ lệ này càng cao, tin xấu từ một công ty duy nhất càng có thể ảnh hưởng nhiều đến toàn bộ danh mục."
+  "glossPortfolioTop3": "Tỷ trọng giá trị cổ phiếu của bạn nằm trong ba vị thế lớn nhất. Tỷ lệ này càng cao, tin xấu từ một công ty duy nhất càng có thể ảnh hưởng nhiều đến toàn bộ danh mục.",
+  "dividendReminderTitle": "{symbol} dự kiến trả cổ tức hôm nay",
+  "dividendReminderBody": "Khoảng {amount}. Hãy ghi lại vào danh mục khi tiền về.",
+  "dividendRemindersTitle": "Nhắc cổ tức",
+  "dividendRemindersSubtitle": "Thông báo vào ngày dự kiến có cổ tức theo nhịp các khoản chi trả bạn đã ghi lại, để bạn ghi nhận"
 }

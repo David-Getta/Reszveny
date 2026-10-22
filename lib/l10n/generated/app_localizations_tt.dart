@@ -2109,6 +2109,23 @@ class AppLocalizationsTt extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: бүген дивиденд көтелә';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Якынча $amount. Килгәч, аны портфелегезгә языгыз.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Дивиденд искәртмәләре';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Сез язган түләүләрнең ритмы буенча дивиденд көтелгән көнне, аны язып куюыгыз өчен белдерү';
+
+  @override
   String get earningsRemindersTitle => 'Нәтиҗәләр искәртмәләре';
 
   @override

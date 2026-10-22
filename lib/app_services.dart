@@ -52,7 +52,7 @@ import 'features/notes/notes_store.dart';
 import 'features/portfolio/portfolio_review.dart';
 import 'features/portfolio/holdings_reader.dart';
 import 'features/portfolio/portfolio_move_watcher.dart';
-import 'features/portfolio/dividend_forecast.dart' show dividendsInLast12Months, dividendsLast12Months;
+import 'features/portfolio/dividend_forecast.dart' show approxMoney, dividendsInLast12Months, dividendsLast12Months;
 import 'features/portfolio/portfolio_store.dart';
 import 'features/portfolio/portfolio_valuation.dart';
 import 'features/sync/sync_service.dart';
@@ -171,6 +171,7 @@ class AppServices {
       notifier: alertMonitor.notifier,
       describe: describeEarnings,
       describeResult: describeEarningsResult,
+      describeDividend: describeDividend,
     );
     signalNotifier = SignalNotifier(
       marketData: marketData,
@@ -485,6 +486,18 @@ class AppServices {
         },
         if (e.epsEstimate != null) l10n.eventEpsEstimate(fmt.number(e.epsEstimate!)),
       ].join(' · '),
+    );
+  }
+
+  /// A várható osztalék értesítése a napján: a becsült összeg és a teendő.
+  ({String title, String body}) describeDividend(UpcomingEvent e) {
+    final (l10n, fmt) = _l10n();
+    final amount = e.amount, currency = e.currency;
+    return (
+      title: l10n.dividendReminderTitle(e.symbol),
+      body: l10n.dividendReminderBody(
+        amount == null || currency == null ? l10n.notAvailable : approxMoney(fmt, amount, currency),
+      ),
     );
   }
 

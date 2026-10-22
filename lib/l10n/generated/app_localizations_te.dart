@@ -2118,6 +2118,23 @@ class AppLocalizationsTe extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: ఈరోజు డివిడెండ్ అంచనా';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'సుమారు $amount. అది వచ్చిన తర్వాత మీ పోర్ట్‌ఫోలియోలో నమోదు చేయండి.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'డివిడెండ్ రిమైండర్‌లు';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'మీరు నమోదు చేసిన చెల్లింపుల క్రమం ఆధారంగా డివిడెండ్ ఆశించే రోజున, దాన్ని నమోదు చేయడానికి ఒక నోటిఫికేషన్';
+
+  @override
   String get earningsRemindersTitle => 'ఫలితాల రిమైండర్‌లు';
 
   @override

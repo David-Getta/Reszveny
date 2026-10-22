@@ -768,5 +768,9 @@
   "portfolioBeta": "Beta portfelja",
   "glossPortfolioBeta": "Beta vaših dionica, ponderirana njihovom vrijednošću: otprilike za koliko se posto vaše dionice pomaknu kad se tržište pomakne za 1%. Iznad 1 kolebaju više od tržišta, ispod 1 manje. Gotovina nije uključena.",
   "portfolioTop3": "Top 3 pozicije",
-  "glossPortfolioTop3": "Koliki je dio vrijednosti vaših dionica u vaše tri najveće pozicije. Što je veći, to loše vijesti o jednoj tvrtki mogu više naštetiti cijelom portfelju."
+  "glossPortfolioTop3": "Koliki je dio vrijednosti vaših dionica u vaše tri najveće pozicije. Što je veći, to loše vijesti o jednoj tvrtki mogu više naštetiti cijelom portfelju.",
+  "dividendReminderTitle": "{symbol}: dividenda se očekuje danas",
+  "dividendReminderBody": "Oko {amount}. Evidentirajte je u portfelju kada stigne.",
+  "dividendRemindersTitle": "Podsjetnici na dividende",
+  "dividendRemindersSubtitle": "Obavijest na dan kada se prema ritmu vaših evidentiranih isplata očekuje dividenda, kako biste je mogli evidentirati"
 }

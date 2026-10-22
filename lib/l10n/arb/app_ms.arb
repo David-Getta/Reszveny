@@ -768,5 +768,9 @@
   "portfolioBeta": "Beta portfolio",
   "glossPortfolioBeta": "Beta saham anda, ditimbang mengikut nilainya: kira-kira berapa peratus saham anda bergerak apabila pasaran bergerak 1%. Melebihi 1 bermakna turun naiknya lebih besar daripada pasaran, bawah 1 lebih kecil. Tunai tidak termasuk.",
   "portfolioTop3": "3 pegangan terbesar",
-  "glossPortfolioTop3": "Berapa banyak nilai saham anda terletak dalam tiga pegangan terbesar anda. Semakin tinggi, semakin besar kesan berita buruk tentang satu syarikat terhadap keseluruhan portfolio."
+  "glossPortfolioTop3": "Berapa banyak nilai saham anda terletak dalam tiga pegangan terbesar anda. Semakin tinggi, semakin besar kesan berita buruk tentang satu syarikat terhadap keseluruhan portfolio.",
+  "dividendReminderTitle": "Dividen {symbol} dijangka hari ini",
+  "dividendReminderBody": "Kira-kira {amount}. Rekodkannya dalam portfolio anda sebaik sahaja ia diterima.",
+  "dividendRemindersTitle": "Peringatan dividen",
+  "dividendRemindersSubtitle": "Pemberitahuan pada hari dividen dijangka berdasarkan rentak pembayaran yang anda rekodkan, supaya anda boleh merekodkannya"
 }

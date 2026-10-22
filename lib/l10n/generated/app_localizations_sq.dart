@@ -2118,6 +2118,23 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: dividend i pritur sot';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Rreth $amount. Kur të mbërrijë, regjistrojeni në portofol.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Kujtues për dividendët';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Një njoftim në ditën kur pritet një dividend sipas ritmit të pagesave që keni regjistruar, që ta regjistroni';
+
+  @override
   String get earningsRemindersTitle => 'Kujtues për rezultatet';
 
   @override

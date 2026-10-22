@@ -2122,6 +2122,23 @@ class AppLocalizationsRw extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: idividende yitezwe uyu munsi';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Hafi $amount. Nimara kugera, uyandike muri portfolio yawe.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Kwibutswa idividende';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Imenyesha ku munsi idividende yitezwe hashingiwe ku buryo ubwishyu wanditse busanzwe buza, kugira ngo uyandike';
+
+  @override
   String get earningsRemindersTitle => 'Kwibutswa ibyavuye mu gihembwe';
 
   @override

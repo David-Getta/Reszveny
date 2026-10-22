@@ -768,5 +768,9 @@
   "portfolioBeta": "Wo nkyɛfa beta",
   "glossPortfolioBeta": "Wo nkyɛfa no beta, a wɔakari no sɛnea wɔn bo te: ɛkyerɛ bɛyɛ ɔha mu nkyɛmu dodoɔ a wo nkyɛfa sesa bere a dwa no sesa 1%. Sɛ ɛboro 1 a, wɔsesa sene dwa no; sɛ ɛwɔ 1 ase a, wɔsesa kakra. Wɔmfa sika a ɛda hɔ nka ho.",
   "portfolioTop3": "Nkyɛfa 3 a ɛsõ koraa",
-  "glossPortfolioTop3": "Wo nkyɛfa no bo dodoɔ a ɛwɔ nkyɛfa mmiɛnsa a ɛsõ koraa a wowɔ no mu. Sɛ ɛkɔ soro a, adwumakuo baako ho asɛm bɔne betumi asɛe wo nkyɛfa nyinaa kɛse."
+  "glossPortfolioTop3": "Wo nkyɛfa no bo dodoɔ a ɛwɔ nkyɛfa mmiɛnsa a ɛsõ koraa a wowɔ no mu. Sɛ ɛkɔ soro a, adwumakuo baako ho asɛm bɔne betumi asɛe wo nkyɛfa nyinaa kɛse.",
+  "dividendReminderTitle": "{symbol} dividend a wɔhwɛ kwan ɛnnɛ",
+  "dividendReminderBody": "Bɛyɛ {amount}. Sɛ ɛba a, kyerɛw no wɔ wo portfolio mu.",
+  "dividendRemindersTitle": "Dividend ho nkaebɔ",
+  "dividendRemindersSubtitle": "Wɔbɛbɔ wo amanneɛ da a wɔhwɛ dividend kwan, gyina ntua a wokyerɛw too hɔ no nhyehyɛe so, sɛnea ɛbɛyɛ a wobɛtumi akyerɛw"
 }

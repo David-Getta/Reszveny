@@ -2117,6 +2117,23 @@ class AppLocalizationsGn extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return 'Oñehaʼarõ $symbol dividendo koʼága';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return '$amount rupi. Og̃uahẽvo, emboguapy nde portafóliope.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Dividendo manduʼarã';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Marandu pe ára oñehaʼarõ jave dividendo, umi pago remboguapyvaʼekue ritmo rupi, ikatu hag̃ua remboguapy';
+
+  @override
   String get earningsRemindersTitle => 'Resultado manduʼarã';
 
   @override

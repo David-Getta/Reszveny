@@ -2152,6 +2152,23 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return 'توزيعات أرباح $symbol متوقعة اليوم';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'نحو $amount. سجّلها في محفظتك عند وصولها.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'تذكيرات توزيعات الأرباح';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'إشعار في اليوم المتوقع لتوزيعات الأرباح بحسب وتيرة الدفعات التي سجّلتها، لتتمكن من تسجيلها';
+
+  @override
   String get earningsRemindersTitle => 'تذكيرات النتائج';
 
   @override

@@ -2108,6 +2108,23 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return 'سود سهام $symbol امروز مورد انتظار است';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'حدود $amount. پس از دریافت، آن را در سبد سهام خود ثبت کنید.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'یادآور سود سهام';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'اعلانی در روزی که بر اساس روال پرداخت‌های ثبت‌شدهٔ شما انتظار سود سهام می‌رود، تا بتوانید آن را ثبت کنید';
+
+  @override
   String get earningsRemindersTitle => 'یادآور نتایج';
 
   @override

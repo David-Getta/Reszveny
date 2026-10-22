@@ -2123,6 +2123,23 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: இன்று ஈவுத்தொகை எதிர்பார்ப்பு';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'சுமார் $amount. வந்தவுடன் உங்கள் போர்ட்ஃபோலியோவில் பதிவு செய்யவும்.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'ஈவுத்தொகை நினைவூட்டல்கள்';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'நீங்கள் பதிவு செய்த செலுத்தல்களின் ஒழுங்கின்படி ஈவுத்தொகை எதிர்பார்க்கப்படும் நாளில், அதைப் பதிவு செய்ய ஒரு அறிவிப்பு';
+
+  @override
   String get earningsRemindersTitle => 'முடிவுகள் நினைவூட்டல்கள்';
 
   @override

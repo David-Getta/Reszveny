@@ -2123,6 +2123,23 @@ class AppLocalizationsSt extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: dividende e lebelletsweng kajeno';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Hoo e ka bang $amount. E tlalehe phothefoliong ya hao ha e fihla.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Dikgopotso tsa dividende';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Tsebiso ka letsatsi leo dividende e lebelletsweng ka lona ho ya ka mokgwa wa ditefo tseo o di tlalehileng, e le hore o e tlalehe';
+
+  @override
   String get earningsRemindersTitle => 'Dikgopotso tsa diphetho';
 
   @override

@@ -768,5 +768,9 @@
   "portfolioBeta": "Beta nke portfolio",
   "glossPortfolioBeta": "Beta nke òkè gị, a tụrụ ya dịka uru ha si dị: ihe dị ka pasentị ole òkè gị na-agagharị mgbe ahịa na-agagharị 1%. Ọ bụrụ na ọ karịrị 1, ha na-agagharị karịa ahịa; ọ bụrụ n'okpuru 1, ha na-agagharị obere. Etinyeghị ego ka ego n'ime ya.",
   "portfolioTop3": "Ihe 3 kachasị ukwuu ị nwere",
-  "glossPortfolioTop3": "Ole n'ime uru òkè gị dị n'ihe atọ kachasị ukwuu ị nwere. Ka ọ na-adị elu, ka akụkọ ọjọọ banyere naanị otu ụlọ ọrụ nwere ike imebi portfolio gị niile karịa."
+  "glossPortfolioTop3": "Ole n'ime uru òkè gị dị n'ihe atọ kachasị ukwuu ị nwere. Ka ọ na-adị elu, ka akụkọ ọjọọ banyere naanị otu ụlọ ọrụ nwere ike imebi portfolio gị niile karịa.",
+  "dividendReminderTitle": "A na-atụ anya nkesa uru {symbol} taa",
+  "dividendReminderBody": "Ihe dị ka {amount}. Dekọọ ya na pọtfolio gị ozugbo ọ bịarutere.",
+  "dividendRemindersTitle": "Ncheta nkesa uru",
+  "dividendRemindersSubtitle": "Ọkwa n'ụbọchị a na-atụ anya nkesa uru dịka usoro ụgwọ ị dekọrọ si dị, ka i wee dekọọ ya"
 }

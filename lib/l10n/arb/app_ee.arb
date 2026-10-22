@@ -768,5 +768,9 @@
   "portfolioBeta": "Akpawo ƒe beta",
   "glossPortfolioBeta": "Wò akpawo ƒe beta, si wodzidze ɖe woƒe asixɔxɔ nu: ɖe le alafa me nenie wò akpawo ʋãna kloe ne asi la ʋã 1%. Ne ekɔ wu 1 la, woʋuʋuna wu asi la; ne ele 1 te la, woʋuʋuna sue wu. Womebu ga le asi ɖe eme o.",
   "portfolioTop3": "Akpa 3 gãtowo",
-  "glossPortfolioTop3": "Wò akpawo ƒe asixɔxɔ ƒe akpa ka le akpa etɔ̃ gãtɔ siwo le asiwò la me. Alesi wòkɔ wu la, nenema ke nya vɔ̃ tso dɔwɔƒe ɖeka ŋu ate ŋu agblẽ nu le wò akpawo katã ŋu wu."
+  "glossPortfolioTop3": "Wò akpawo ƒe asixɔxɔ ƒe akpa ka le akpa etɔ̃ gãtɔ siwo le asiwò la me. Alesi wòkɔ wu la, nenema ke nya vɔ̃ tso dɔwɔƒe ɖeka ŋu ate ŋu agblẽ nu le wò akpawo katã ŋu wu.",
+  "dividendReminderTitle": "Wole mɔ kpɔm na {symbol} ƒe dividend egbe",
+  "dividendReminderBody": "Abe {amount} ene. Ne eva ɖo la, ŋlɔe ɖi ɖe wò portfolio me.",
+  "dividendRemindersTitle": "Dividend ŋuti ŋkuɖodziwo",
+  "dividendRemindersSubtitle": "Gbeƒãɖeɖe le ŋkeke si dzi wole mɔ kpɔm na dividend le fexexe siwo nèŋlɔ ɖi ƒe ɖoɖo nu, be nàte ŋu aŋlɔe ɖi"
 }

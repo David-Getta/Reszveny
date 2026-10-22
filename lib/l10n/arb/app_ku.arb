@@ -768,5 +768,9 @@
   "portfolioBeta": "Betaya portfolyoyê",
   "glossPortfolioBeta": "Betaya pişkên te, li gorî nirxa wan hatiye pîvan: bi qasî çend ji sedî pişkên te dilivin dema ku bazar 1% dilive. Ji 1 bilindtir, ew ji bazarê zêdetir dihejin; ji 1 kêmtir, kêmtir. Pereyê nexd nayê hesibandin.",
   "portfolioTop3": "3 pozîsyonên herî mezin",
-  "glossPortfolioTop3": "Çiqas ji nirxa pişkên te di sê pozîsyonên te yên herî mezin de ye. Çiqas bilindtir be, nûçeyên xirab ên li ser tenê yek şîrketê ewqas zêdetir dikarin zirarê bidin tevahiya portfolyoyê."
+  "glossPortfolioTop3": "Çiqas ji nirxa pişkên te di sê pozîsyonên te yên herî mezin de ye. Çiqas bilindtir be, nûçeyên xirab ên li ser tenê yek şîrketê ewqas zêdetir dikarin zirarê bidin tevahiya portfolyoyê.",
+  "dividendReminderTitle": "Dividenda {symbol} îro tê hêvîkirin",
+  "dividendReminderBody": "Nêzî {amount}. Dema ku gihîşt, wê di portfolyoya xwe de tomar bike.",
+  "dividendRemindersTitle": "Bîranînên dividendê",
+  "dividendRemindersSubtitle": "Agahdariyek di roja ku li gorî rîtma dayînên te yên tomarkirî dividend tê hêvîkirin, da ku tu wê tomar bikî"
 }

@@ -2093,6 +2093,23 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return 'ភាគលាភ $symbol រំពឹងទុកនៅថ្ងៃនេះ';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'ប្រហែល $amount។ កត់ត្រាវាក្នុងផលប័ត្ររបស់អ្នក ពេលវាមកដល់។';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'ការរំលឹកភាគលាភ';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'ការជូនដំណឹងនៅថ្ងៃដែលរំពឹងថានឹងមានភាគលាភ តាមចង្វាក់នៃការទូទាត់ដែលអ្នកបានកត់ត្រា ដើម្បីឱ្យអ្នកអាចកត់ត្រាវាបាន';
+
+  @override
   String get earningsRemindersTitle => 'ការរំលឹកលទ្ធផល';
 
   @override

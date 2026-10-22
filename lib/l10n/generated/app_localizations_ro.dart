@@ -2146,6 +2146,23 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: dividend așteptat azi';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Aproximativ $amount. Înregistrează-l în portofoliu când ajunge.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Mementouri pentru dividende';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'O notificare în ziua în care e așteptat un dividend, după ritmul plăților înregistrate de tine, ca să-l poți înregistra';
+
+  @override
   String get earningsRemindersTitle => 'Mementouri pentru rezultate';
 
   @override

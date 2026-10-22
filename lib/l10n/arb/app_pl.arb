@@ -768,5 +768,9 @@
   "portfolioBeta": "Beta portfela",
   "glossPortfolioBeta": "Beta twoich akcji ważona ich wartością: mniej więcej o ile procent zmieniają się twoje akcje, gdy rynek zmienia się o 1%. Powyżej 1 wahają się mocniej niż rynek, poniżej 1 słabiej. Gotówka nie jest uwzględniana.",
   "portfolioTop3": "3 największe pozycje",
-  "glossPortfolioTop3": "Jaka część wartości twoich akcji przypada na trzy największe pozycje. Im jest wyższa, tym bardziej złe wieści z jednej spółki mogą zaszkodzić całemu portfelowi."
+  "glossPortfolioTop3": "Jaka część wartości twoich akcji przypada na trzy największe pozycje. Im jest wyższa, tym bardziej złe wieści z jednej spółki mogą zaszkodzić całemu portfelowi.",
+  "dividendReminderTitle": "{symbol}: dziś spodziewana dywidenda",
+  "dividendReminderBody": "Około {amount}. Gdy wpłynie, zapisz ją w portfelu.",
+  "dividendRemindersTitle": "Przypomnienia o dywidendach",
+  "dividendRemindersSubtitle": "Powiadomienie w dniu spodziewanej dywidendy, wyznaczonym na podstawie rytmu zapisanych wypłat, by można ją było zapisać"
 }

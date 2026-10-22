@@ -768,5 +768,9 @@
   "portfolioBeta": "Beta-da portfoliyada",
   "glossPortfolioBeta": "Beta-da saamiyadaada, oo lagu miisaamay qiimahooda: qiyaastii boqolkiiba intee ayay saamiyadaadu dhaqaaqaan marka suuqu dhaqaaqo 1%. Ka sarreeya 1 waxay isbeddelaan in ka badan suuqa, ka hooseeya 1 in ka yar. Lacagta caddaanka ah kuma jirto.",
   "portfolioTop3": "3-da haysasho ee ugu waaweyn",
-  "glossPortfolioTop3": "Inta qiimaha saamiyadaada ka mid ah ee ku jirta saddexda haysasho ee kuugu waaweyn. Inta uu sarreeyo, ayay war xun oo ku saabsan hal shirkad oo keliya si weyn u dhaawici kartaa portfoliyada oo dhan."
+  "glossPortfolioTop3": "Inta qiimaha saamiyadaada ka mid ah ee ku jirta saddexda haysasho ee kuugu waaweyn. Inta uu sarreeyo, ayay war xun oo ku saabsan hal shirkad oo keliya si weyn u dhaawici kartaa portfoliyada oo dhan.",
+  "dividendReminderTitle": "{symbol}: faa'iido-saami la filayo maanta",
+  "dividendReminderBody": "Qiyaastii {amount}. Marka ay timaado, ku diiwaangeli boortfoliyahaaga.",
+  "dividendRemindersTitle": "Xasuusinta faa'iido-saamiga",
+  "dividendRemindersSubtitle": "Ogeysiis maalinta faa'iido-saami la filayo, iyadoo lagu salaynayo habka bixinnada aad diiwaangelisay, si aad u diiwaangeliso"
 }

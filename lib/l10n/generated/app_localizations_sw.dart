@@ -2113,6 +2113,23 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: gawio linalotarajiwa leo';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Takriban $amount. Lirekodi kwenye jalada lako likishafika.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Vikumbusho vya gawio';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Arifa siku ambayo gawio linatarajiwa kulingana na mwenendo wa malipo uliyorekodi, ili uweze kulirekodi';
+
+  @override
   String get earningsRemindersTitle => 'Vikumbusho vya matokeo';
 
   @override

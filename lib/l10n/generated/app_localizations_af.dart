@@ -2116,6 +2116,23 @@ class AppLocalizationsAf extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol se dividend word vandag verwag';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Sowat $amount. Teken dit in jou portefeulje aan sodra dit inkom.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Dividendherinneringe';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      '’n Kennisgewing op die dag wanneer ’n dividend volgens die ritme van jou aangetekende betalings verwag word, sodat jy dit kan aanteken';
+
+  @override
   String get earningsRemindersTitle => 'Resultaatherinneringe';
 
   @override

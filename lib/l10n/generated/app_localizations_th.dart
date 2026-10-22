@@ -2084,6 +2084,23 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol คาดว่าจะจ่ายเงินปันผลวันนี้';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'ประมาณ $amount บันทึกลงในพอร์ตโฟลิโอของคุณเมื่อได้รับแล้ว';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'แจ้งเตือนเงินปันผล';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'แจ้งเตือนในวันที่คาดว่าจะได้รับเงินปันผลตามรอบการจ่ายที่คุณบันทึกไว้ เพื่อให้คุณบันทึกได้';
+
+  @override
   String get earningsRemindersTitle => 'แจ้งเตือนผลประกอบการ';
 
   @override

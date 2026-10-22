@@ -2124,6 +2124,23 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return 'Dividende von $symbol heute erwartet';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Etwa $amount. Erfasse sie in deinem Portfolio, sobald sie eingeht.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Erinnerung an Dividenden';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Eine Benachrichtigung am Tag, an dem nach dem Rhythmus deiner erfassten Zahlungen eine Dividende erwartet wird, damit du sie erfassen kannst';
+
+  @override
   String get earningsRemindersTitle => 'Erinnerung an Quartalszahlen';
 
   @override

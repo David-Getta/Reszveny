@@ -2103,6 +2103,23 @@ class AppLocalizationsBo extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: དེ་རིང་ཁེ་བགོས་རེ་བ་ཡོད།';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return '$amount ཙམ། འབྱོར་རྗེས་ཁྱེད་ཀྱི་མ་འཛུགས་ནང་ཐོ་འགོད་གནང་།';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'ཁེ་བགོས་དྲན་སྐུལ།';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'ཁྱེད་ཀྱིས་ཐོ་བཀོད་པའི་སྤྲོད་ཆའི་གོ་རིམ་ལྟར་ཁེ་བགོས་རེ་བ་ཡོད་པའི་ཉིན་དེར་ཐོ་འགོད་གནང་ཐུབ་ཆེད་བརྡ་ཐོ།';
+
+  @override
   String get earningsRemindersTitle => 'གྲུབ་འབྲས་དྲན་སྐུལ།';
 
   @override

@@ -2109,6 +2109,23 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return 'Dividen $symbol diperkirakan hari ini';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Sekitar $amount. Catat di portofolio Anda setelah diterima.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Pengingat dividen';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Notifikasi pada hari dividen diperkirakan tiba berdasarkan pola pembayaran yang Anda catat, agar Anda dapat mencatatnya';
+
+  @override
   String get earningsRemindersTitle => 'Pengingat laporan kuartalan';
 
   @override

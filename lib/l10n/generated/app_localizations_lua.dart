@@ -2118,6 +2118,23 @@ class AppLocalizationsLua extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return 'Dividende wa $symbol idi mitekemene lelu';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Pabuipi ne $amount. Yifunde mu portefeuille webe padiyi ifika.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Bivuluija bia dividende';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Dimanyisha dituku didi dividende mitekemene bilondeshile mushindu wa mfutu iwakafunda, bua wewe kuyifunda';
+
+  @override
   String get earningsRemindersTitle => 'Bivuluija bia mapeta';
 
   @override

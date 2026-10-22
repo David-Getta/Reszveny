@@ -2121,6 +2121,23 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: αναμένεται μέρισμα σήμερα';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Περίπου $amount. Καταγράψτε το στο χαρτοφυλάκιό σας μόλις φτάσει.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Υπενθυμίσεις μερισμάτων';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Ειδοποίηση την ημέρα που αναμένεται μέρισμα με βάση τον ρυθμό των καταγεγραμμένων πληρωμών σας, ώστε να το καταγράψετε';
+
+  @override
   String get earningsRemindersTitle => 'Υπενθυμίσεις αποτελεσμάτων';
 
   @override

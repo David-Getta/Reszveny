@@ -768,5 +768,9 @@
   "portfolioBeta": "Beta portofolio",
   "glossPortfolioBeta": "Beta saham Anda, dibobot menurut nilainya: kira-kira berapa persen saham Anda bergerak saat pasar bergerak 1%. Di atas 1 berarti saham Anda berayun lebih besar daripada pasar, di bawah 1 lebih kecil. Kas tidak termasuk.",
   "portfolioTop3": "3 posisi teratas",
-  "glossPortfolioTop3": "Seberapa besar nilai saham Anda yang berada di tiga posisi terbesar Anda. Makin tinggi angkanya, makin besar kerugian yang bisa ditimbulkan kabar buruk dari satu perusahaan saja terhadap seluruh portofolio."
+  "glossPortfolioTop3": "Seberapa besar nilai saham Anda yang berada di tiga posisi terbesar Anda. Makin tinggi angkanya, makin besar kerugian yang bisa ditimbulkan kabar buruk dari satu perusahaan saja terhadap seluruh portofolio.",
+  "dividendReminderTitle": "Dividen {symbol} diperkirakan hari ini",
+  "dividendReminderBody": "Sekitar {amount}. Catat di portofolio Anda setelah diterima.",
+  "dividendRemindersTitle": "Pengingat dividen",
+  "dividendRemindersSubtitle": "Notifikasi pada hari dividen diperkirakan tiba berdasarkan pola pembayaran yang Anda catat, agar Anda dapat mencatatnya"
 }

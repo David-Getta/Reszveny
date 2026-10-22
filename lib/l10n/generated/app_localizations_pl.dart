@@ -2170,6 +2170,23 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: dziś spodziewana dywidenda';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Około $amount. Gdy wpłynie, zapisz ją w portfelu.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Przypomnienia o dywidendach';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Powiadomienie w dniu spodziewanej dywidendy, wyznaczonym na podstawie rytmu zapisanych wypłat, by można ją było zapisać';
+
+  @override
   String get earningsRemindersTitle => 'Przypomnienia o wynikach';
 
   @override

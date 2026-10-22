@@ -768,5 +768,9 @@
   "portfolioBeta": "포트폴리오 베타",
   "glossPortfolioBeta": "보유 종목의 베타를 평가액 기준으로 가중 평균한 값이에요. 시장이 1% 움직일 때 보유 종목이 대략 몇 % 움직이는지 보여 줘요. 1보다 크면 시장보다 크게, 1보다 작으면 덜 움직여요. 현금은 포함되지 않아요.",
   "portfolioTop3": "상위 3개 종목",
-  "glossPortfolioTop3": "보유 종목 평가액 중 가장 큰 3개 종목이 차지하는 비중이에요. 높을수록 한 회사의 악재가 포트폴리오 전체에 더 큰 타격을 줄 수 있어요."
+  "glossPortfolioTop3": "보유 종목 평가액 중 가장 큰 3개 종목이 차지하는 비중이에요. 높을수록 한 회사의 악재가 포트폴리오 전체에 더 큰 타격을 줄 수 있어요.",
+  "dividendReminderTitle": "{symbol} 오늘 배당금 입금 예상",
+  "dividendReminderBody": "약 {amount}. 입금되면 포트폴리오에 기록하세요.",
+  "dividendRemindersTitle": "배당금 알림",
+  "dividendRemindersSubtitle": "기록한 배당 내역의 주기를 바탕으로 배당금이 예상되는 날 알려 드려 바로 기록할 수 있습니다"
 }

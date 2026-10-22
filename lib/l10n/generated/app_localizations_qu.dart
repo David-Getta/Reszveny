@@ -2123,6 +2123,23 @@ class AppLocalizationsQu extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: kunan p\'unchaw dividendo suyasqa';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Yaqa $amount. Chayamuptinqa portafolioykipi qillqay.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Dividendo yuyarichiykuna';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Qillqasqayki pagokunap purisqanman hina dividendo suyasqa p\'unchawpi willachiy, qillqanaykipaq';
+
+  @override
   String get earningsRemindersTitle => 'Willakuy yuyarichiykuna';
 
   @override

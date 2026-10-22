@@ -768,5 +768,9 @@
   "portfolioBeta": "Beta-n'ny kitapom-bola",
   "glossPortfolioBeta": "Ny beta-n'ny aksionao, voalanjalanja araka ny sandany: eo ho eo amin'ny firy isan-jato no mihetsika ny aksionao rehefa mihetsika 1% ny tsena. Ambonin'ny 1 dia mihetsika mihoatra ny tsena izy ireo, ambanin'ny 1 dia latsaka. Tsy tafiditra ny vola.",
   "portfolioTop3": "Fananana 3 lehibe indrindra",
-  "glossPortfolioTop3": "Ny ampahany amin'ny sandan'ny aksionao izay ao amin'ireo fananana telo lehibe indrindra anananao. Arakaraka ny hiakarany no vao mainka afaka manimba ny kitapom-bola manontolo ny vaovao ratsy momba ny orinasa iray monja."
+  "glossPortfolioTop3": "Ny ampahany amin'ny sandan'ny aksionao izay ao amin'ireo fananana telo lehibe indrindra anananao. Arakaraka ny hiakarany no vao mainka afaka manimba ny kitapom-bola manontolo ny vaovao ratsy momba ny orinasa iray monja.",
+  "dividendReminderTitle": "{symbol}: dividandy andrasana anio",
+  "dividendReminderBody": "Manodidina ny {amount}. Raketo ao amin'ny portfolio-nao izany rehefa tonga.",
+  "dividendRemindersTitle": "Fampahatsiahivana dividandy",
+  "dividendRemindersSubtitle": "Fampandrenesana amin'ny andro andrasana dividandy araka ny fiverimberenan'ny fandoavana noraketinao, mba hahafahanao mirakitra azy"
 }

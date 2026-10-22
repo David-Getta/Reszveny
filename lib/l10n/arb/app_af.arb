@@ -768,5 +768,9 @@
   "portfolioBeta": "Portefeuljebeta",
   "glossPortfolioBeta": "Die beta van jou aandele, geweeg volgens hul waarde: rofweg hoeveel persent jou aandele beweeg wanneer die mark 1% beweeg. Bo 1 swaai hulle meer as die mark, onder 1 minder. Kontant word nie ingesluit nie.",
   "portfolioTop3": "Top 3-posisies",
-  "glossPortfolioTop3": "Hoeveel van jou aandele se waarde in jou drie grootste posisies sit. Hoe hoër dit is, hoe meer kan slegte nuus by 'n enkele maatskappy die hele portefeulje skaad."
+  "glossPortfolioTop3": "Hoeveel van jou aandele se waarde in jou drie grootste posisies sit. Hoe hoër dit is, hoe meer kan slegte nuus by 'n enkele maatskappy die hele portefeulje skaad.",
+  "dividendReminderTitle": "{symbol} se dividend word vandag verwag",
+  "dividendReminderBody": "Sowat {amount}. Teken dit in jou portefeulje aan sodra dit inkom.",
+  "dividendRemindersTitle": "Dividendherinneringe",
+  "dividendRemindersSubtitle": "’n Kennisgewing op die dag wanneer ’n dividend volgens die ritme van jou aangetekende betalings verwag word, sodat jy dit kan aanteken"
 }

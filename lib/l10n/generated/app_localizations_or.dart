@@ -2109,6 +2109,23 @@ class AppLocalizationsOr extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: ଆଜି ଡିଭିଡେଣ୍ଡ ଆଶା କରାଯାଉଛି';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'ପ୍ରାୟ $amount। ଆସିବା ପରେ ଆପଣଙ୍କ ପୋର୍ଟଫୋଲିଓରେ ରେକର୍ଡ କରନ୍ତୁ।';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'ଡିଭିଡେଣ୍ଡ ସ୍ମାରକ';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'ଆପଣ ରେକର୍ଡ କରିଥିବା ପେମେଣ୍ଟର କ୍ରମ ଅନୁସାରେ ଡିଭିଡେଣ୍ଡ ଆଶା କରାଯାଉଥିବା ଦିନ ଏକ ବିଜ୍ଞପ୍ତି, ଯାହାଦ୍ୱାରା ଆପଣ ଏହାକୁ ରେକର୍ଡ କରିପାରିବେ';
+
+  @override
   String get earningsRemindersTitle => 'ଫଳାଫଳ ସ୍ମାରକ';
 
   @override

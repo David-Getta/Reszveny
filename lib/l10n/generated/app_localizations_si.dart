@@ -2109,6 +2109,23 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: අද ලාභාංශ අපේක්ෂිතයි';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'ආසන්න වශයෙන් $amount. ලැබුණු පසු එය ඔබේ කළඹේ සටහන් කරන්න.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'ලාභාංශ සිහිකැඳවීම්';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'ඔබ සටහන් කළ ගෙවීම්වල රටාව අනුව ලාභාංශයක් අපේක්ෂිත දිනයේ, එය සටහන් කිරීමට දැනුම්දීමක්';
+
+  @override
   String get earningsRemindersTitle => 'ප්‍රතිඵල සිහිකැඳවීම්';
 
   @override

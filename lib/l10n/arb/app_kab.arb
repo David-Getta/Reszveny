@@ -768,5 +768,9 @@
   "portfolioBeta": "Beta n uqrab",
   "glossPortfolioBeta": "Beta n yiksyunen-ik, yettwaḥesben s wazal-nsen: azal n acḥal deg tmiḍi i ttembiwilen yiksyunen-ik mi ara tembiwel lbursa s 1%. Sennig 1, ttembiwilen ugar n lbursa; ddaw 1, drus. Idrimen n ufus ur ddan ara.",
   "portfolioTop3": "3 iksyunen imeqqranen",
-  "glossPortfolioTop3": "Acḥal seg wazal n yiksyunen-ik i yellan deg kraḍ n yiksyunen-ik imeqqranen. Mi ara yali, ugar i zemrent tmesliwin n diri ɣef yiwet n tkebbanit ad ḍerrent aqrab akk."
+  "glossPortfolioTop3": "Acḥal seg wazal n yiksyunen-ik i yellan deg kraḍ n yiksyunen-ik imeqqranen. Mi ara yali, ugar i zemrent tmesliwin n diri ɣef yiwet n tkebbanit ad ḍerrent aqrab akk.",
+  "dividendReminderTitle": "Dividende n {symbol} yettwaṛǧu ass-a",
+  "dividendReminderBody": "Azal n {amount}. Sekles-it deg uportfolio-k mi ara d-yawed.",
+  "dividendRemindersTitle": "Asmekti n dividende",
+  "dividendRemindersSubtitle": "Alɣu ass ideg yettwaṛǧu dividende almend n urritm n lexlaṣat i tesekleseḍ, akken ad t-teskelseḍ"
 }

@@ -2012,6 +2012,22 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol 预计今天派息';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return '约 $amount。到账后请记入投资组合。';
+  }
+
+  @override
+  String get dividendRemindersTitle => '派息提醒';
+
+  @override
+  String get dividendRemindersSubtitle => '根据您记录的派息节奏，在预计派息当天发送通知，方便您及时记录';
+
+  @override
   String get earningsRemindersTitle => '财报提醒';
 
   @override
@@ -4781,6 +4797,22 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String earningsReminderToday(String symbol) {
     return '$symbol 今日公布季度業績';
   }
+
+  @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol 預計今日派息';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return '約 $amount。到賬後請記入投資組合。';
+  }
+
+  @override
+  String get dividendRemindersTitle => '派息提示';
+
+  @override
+  String get dividendRemindersSubtitle => '根據你記錄的派息節奏，在預計派息當日發出通知，方便你記錄';
 
   @override
   String get earningsRemindersTitle => '業績提示';

@@ -2106,6 +2106,23 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol dự kiến trả cổ tức hôm nay';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Khoảng $amount. Hãy ghi lại vào danh mục khi tiền về.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Nhắc cổ tức';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Thông báo vào ngày dự kiến có cổ tức theo nhịp các khoản chi trả bạn đã ghi lại, để bạn ghi nhận';
+
+  @override
   String get earningsRemindersTitle => 'Nhắc kết quả kinh doanh';
 
   @override

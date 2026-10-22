@@ -2124,6 +2124,23 @@ class AppLocalizationsLg extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return 'Dividendi ya $symbol esuubirwa leero';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Nga $amount. Giwandiike mu portfolio yo ng\'etuuse.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Okujjukiza ku dividendi';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Obubaka ku lunaku dividendi lw\'esuubirwa okusinziira ku nkola y\'ensasula z\'owandiise, osobole okugiwandiika';
+
+  @override
   String get earningsRemindersTitle => 'Okujjukiza ku bivudde';
 
   @override

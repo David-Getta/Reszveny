@@ -768,5 +768,9 @@
   "portfolioBeta": "Portfolio beta",
   "glossPortfolioBeta": "Di beta of your stocks, weighed by how much each one worth: about how many percent your stocks dey move when di market move 1%. If e pass 1, dem dey swing pass di market; if e dey under 1, dem no dey swing reach. Cash no dey inside.",
   "portfolioTop3": "Top 3 stocks",
-  "glossPortfolioTop3": "How much of your stocks' value dey inside your three biggest stocks. Di higher e be, di more bad news for one company fit damage your whole portfolio."
+  "glossPortfolioTop3": "How much of your stocks' value dey inside your three biggest stocks. Di higher e be, di more bad news for one company fit damage your whole portfolio.",
+  "dividendReminderTitle": "We dey expect {symbol} dividend today",
+  "dividendReminderBody": "E go reach about {amount}. Record am for your portfolio once e land.",
+  "dividendRemindersTitle": "Dividend reminder",
+  "dividendRemindersSubtitle": "Notification for di day wey we expect dividend, based on how your recorded payments dey come, so you fit record am"
 }

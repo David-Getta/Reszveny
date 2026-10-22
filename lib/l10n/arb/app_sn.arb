@@ -768,5 +768,9 @@
   "portfolioBeta": "Beta yepotiforiyo",
   "glossPortfolioBeta": "Beta yemasheya ako, yakayerwa maererano nekukosha kwawo: inenge masheya ako anofamba nezvikamu zvingani muzana kana musika ukafamba ne1%. Pamusoro pe1 anozununguka kupfuura musika, pasi pe1 zvishoma. Mari haina kuverengerwa.",
   "portfolioTop3": "Masheya makuru 3",
-  "glossPortfolioTop3": "Chikamu chekukosha kwemasheya ako chiri mumasheya ako matatu makuru. Pachinowedzera, ndipo nhau dzakaipa dzekambani imwe chete dzinogona kukuvadza potiforiyo yese."
+  "glossPortfolioTop3": "Chikamu chekukosha kwemasheya ako chiri mumasheya ako matatu makuru. Pachinowedzera, ndipo nhau dzakaipa dzekambani imwe chete dzinogona kukuvadza potiforiyo yese.",
+  "dividendReminderTitle": "{symbol}: dividendi inotarisirwa nhasi",
+  "dividendReminderBody": "Inenge {amount}. Inyore mupotiforiyo yako kana yasvika.",
+  "dividendRemindersTitle": "Zviyeuchidzo zvedividendi",
+  "dividendRemindersSubtitle": "Chiziviso pazuva rinotarisirwa dividendi zvichienderana nemaitiro emibhadharo yawakanyora, kuti uinyore"
 }

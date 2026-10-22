@@ -768,5 +768,9 @@
   "portfolioBeta": "Beta y'ishoramari",
   "glossPortfolioBeta": "Beta y'imigabane yawe, ipimwe hakurikijwe agaciro kayo: ni nk'ibice bingahe kw'ijana imigabane yawe ihindagurika iyo isoko rihindagutse 1%. Hejuru ya 1 ihindagurika kuruta isoko, munsi ya 1 ihindagurika gake. Amafaranga ntarimwo.",
   "portfolioTop3": "Imigabane 3 minini",
-  "glossPortfolioTop3": "Igice c'agaciro k'imigabane yawe kiri mu migabane yawe itatu minini kuruta iyindi. Uko kiri hejuru, ni ko inkuru mbi y'isosiyete imwe gusa ishobora kwonona ishoramari ryawe ryose."
+  "glossPortfolioTop3": "Igice c'agaciro k'imigabane yawe kiri mu migabane yawe itatu minini kuruta iyindi. Uko kiri hejuru, ni ko inkuru mbi y'isosiyete imwe gusa ishobora kwonona ishoramari ryawe ryose.",
+  "dividendReminderTitle": "{symbol}: idividende yitezwe uyu munsi",
+  "dividendReminderBody": "Hafi {amount}. Niyashika, uyandike muri portfolio yawe.",
+  "dividendRemindersTitle": "Kwibutswa idividende",
+  "dividendRemindersSubtitle": "Imenyesha ku munsi idividende yitezwe hisunzwe ingene ivyishurwa wanditse bigenda, kugira ngo uyandike"
 }

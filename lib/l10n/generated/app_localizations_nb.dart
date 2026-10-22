@@ -2112,6 +2112,23 @@ class AppLocalizationsNb extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: forventet utbytte i dag';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Omtrent $amount. Registrer det i porteføljen din når det kommer.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Utbyttepåminnelser';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Et varsel den dagen et utbytte er ventet ut fra rytmen i utbyttene du har registrert, så du kan registrere det';
+
+  @override
   String get earningsRemindersTitle => 'Resultatpåminnelser';
 
   @override

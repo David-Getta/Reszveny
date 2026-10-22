@@ -2048,6 +2048,23 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol 오늘 배당금 입금 예상';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return '약 $amount. 입금되면 포트폴리오에 기록하세요.';
+  }
+
+  @override
+  String get dividendRemindersTitle => '배당금 알림';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      '기록한 배당 내역의 주기를 바탕으로 배당금이 예상되는 날 알려 드려 바로 기록할 수 있습니다';
+
+  @override
   String get earningsRemindersTitle => '실적 발표 알림';
 
   @override

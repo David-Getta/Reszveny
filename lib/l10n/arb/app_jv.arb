@@ -768,5 +768,9 @@
   "portfolioBeta": "Beta portofolio",
   "glossPortfolioBeta": "Beta saham sampeyan, ditimbang miturut regane: kira-kira pirang persen saham sampeyan obah nalika pasar obah 1%. Ing ndhuwur 1 obahe luwih gedhe tinimbang pasar, ing ngisor 1 luwih cilik. Kas ora kalebu.",
   "portfolioTop3": "3 posisi paling gedhe",
-  "glossPortfolioTop3": "Pira bagean saka rega saham sampeyan sing ana ing telung posisi paling gedhe sampeyan. Saya dhuwur, saya gedhe kerugian sing bisa ditimbulake kabar ala saka siji perusahaan marang kabeh portofolio."
+  "glossPortfolioTop3": "Pira bagean saka rega saham sampeyan sing ana ing telung posisi paling gedhe sampeyan. Saya dhuwur, saya gedhe kerugian sing bisa ditimbulake kabar ala saka siji perusahaan marang kabeh portofolio.",
+  "dividendReminderTitle": "Dividen {symbol} dikarepake dina iki",
+  "dividendReminderBody": "Kira-kira {amount}. Cathet ing portofolio sampeyan yen wis teka.",
+  "dividendRemindersTitle": "Pangéling dividen",
+  "dividendRemindersSubtitle": "Notifikasi ing dina dividen dikarepake miturut pola pambayaran sing sampeyan cathet, supaya sampeyan bisa nyathet"
 }

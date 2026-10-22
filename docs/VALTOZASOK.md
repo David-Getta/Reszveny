@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.179)
+# Változásjegyzék (0.2.130 → 0.2.180)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -24,6 +24,8 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - **Havi osztalékcél** a „Kapott osztalékok” kártyán: a mai hozamokból várható havi osztalék a célhoz mérve,
   haladásjelzővel („A mai hozamokkal havonta kb. 18 500 Ft · 37% kész · cél: 50 000 Ft”); a portfólió-célérték
   és az osztalékcél fiókkal szinkronizálva (az újabb módosítás nyer, a törlés sem éled újra).
+- **Osztalék-emlékeztető** asztali gépen: a várható osztalék napján egy értesítés a becsült összeggel, hogy a
+  megérkezett osztalékot rögzíteni lehessen (a Beállításokban külön kikapcsolható).
 - A pozíciók **osztalékhozam szerint** is rendezhetők; a pozíciók és a kedvencek választott rendezése
   megmarad az app újraindítása után.
 - A részvény oldalán az **„Osztalék” kártya** az 5 éves osztaléknövekedéssel és a saját részvényekre jutó

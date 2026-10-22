@@ -2118,6 +2118,23 @@ class AppLocalizationsSn extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: dividendi inotarisirwa nhasi';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Inenge $amount. Inyore mupotiforiyo yako kana yasvika.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Zviyeuchidzo zvedividendi';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Chiziviso pazuva rinotarisirwa dividendi zvichienderana nemaitiro emibhadharo yawakanyora, kuti uinyore';
+
+  @override
   String get earningsRemindersTitle => 'Zviyeuchidzo zvemhedzisiro';
 
   @override

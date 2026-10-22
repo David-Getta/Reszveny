@@ -768,5 +768,9 @@
   "portfolioBeta": "Portfelio beta",
   "glossPortfolioBeta": "Jūsų akcijų beta, pasverta pagal jų vertę: maždaug keliais procentais pajuda jūsų akcijos, kai rinka pajuda 1%. Virš 1 jos svyruoja labiau nei rinka, žemiau 1 – mažiau. Grynieji neįskaičiuojami.",
   "portfolioTop3": "3 didžiausios pozicijos",
-  "glossPortfolioTop3": "Kokia jūsų akcijų vertės dalis tenka trims didžiausioms jūsų pozicijoms. Kuo ji didesnė, tuo labiau blogos naujienos apie vieną bendrovę gali pakenkti visam portfeliui."
+  "glossPortfolioTop3": "Kokia jūsų akcijų vertės dalis tenka trims didžiausioms jūsų pozicijoms. Kuo ji didesnė, tuo labiau blogos naujienos apie vieną bendrovę gali pakenkti visam portfeliui.",
+  "dividendReminderTitle": "{symbol}: šiandien laukiama dividendo",
+  "dividendReminderBody": "Apie {amount}. Kai gausite, įrašykite jį į savo portfelį.",
+  "dividendRemindersTitle": "Priminimai apie dividendus",
+  "dividendRemindersSubtitle": "Pranešimas tą dieną, kai pagal jūsų įrašytų išmokų ritmą laukiama dividendo, kad galėtumėte jį įrašyti"
 }

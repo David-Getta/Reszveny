@@ -768,5 +768,9 @@
   "portfolioBeta": "Beta y'emigabo gyo",
   "glossPortfolioBeta": "Beta y'emigabo gyo, epimiddwa okusinziira ku muwendo gwagyo: kumpi ebitundu ku kikumi bimeka emigabo gyo bye gitambula akatale bwe katambula 1%. Waggulu wa 1 gikyukakyuka okusinga akatale, wansi wa 1 kitono. Ensimbi enkalu tezibalibwa.",
   "portfolioTop3": "Emigabo 3 egisinga obunene",
-  "glossPortfolioTop3": "Omuwendo gw'emigabo gyo gwenkana wa oguli mu migabo gyo esatu egisinga obunene. Gye gukoma okuba waggulu, amawulire amabi ku kkampuni emu yokka gye gakoma okusobola okwonoona emigabo gyo gyonna."
+  "glossPortfolioTop3": "Omuwendo gw'emigabo gyo gwenkana wa oguli mu migabo gyo esatu egisinga obunene. Gye gukoma okuba waggulu, amawulire amabi ku kkampuni emu yokka gye gakoma okusobola okwonoona emigabo gyo gyonna.",
+  "dividendReminderTitle": "Dividendi ya {symbol} esuubirwa leero",
+  "dividendReminderBody": "Nga {amount}. Giwandiike mu portfolio yo ng'etuuse.",
+  "dividendRemindersTitle": "Okujjukiza ku dividendi",
+  "dividendRemindersSubtitle": "Obubaka ku lunaku dividendi lw'esuubirwa okusinziira ku nkola y'ensasula z'owandiise, osobole okugiwandiika"
 }

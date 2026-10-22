@@ -8,10 +8,12 @@ import '../../core/desktop/system_notifier.dart';
 import '../../core/models/analysis_extras.dart';
 import 'events_service.dart';
 
-/// Gyorsjelentés-emlékeztető: a kedvencek és a portfólió részvényeinek
-/// gyorsjelentése előtti napon (vagy ha azt elmulasztottuk, aznap) egyszer
-/// rendszerértesítést küld. Asztali gépen működik, amíg az app fut (a tálcán is);
-/// a Beállításokban kikapcsolható.
+/// Gyorsjelentés- és osztalék-emlékeztető: a kedvencek és a portfólió
+/// részvényeinek gyorsjelentése előtti napon (vagy ha azt elmulasztottuk, aznap)
+/// egyszer rendszerértesítést küld; a portfólió várható osztalékának napján
+/// (a rögzített kifizetések ritmusából) szintén egyszer, hogy a megérkezett
+/// összeget rögzíteni lehessen. Asztali gépen működik, amíg az app fut (a tálcán
+/// is); a kettő a Beállításokban külön kikapcsolható.
 class EarningsReminder {
   EarningsReminder({
     required this.events,
@@ -19,6 +21,7 @@ class EarningsReminder {
     required this.notifier,
     required this.describe,
     this.describeResult,
+    this.describeDividend,
     this.interval = const Duration(hours: 3),
     DateTime Function()? clock,
   }) : _clock = clock ?? DateTime.now;
@@ -35,6 +38,9 @@ class EarningsReminder {
   /// Az eredmény értesítése (a jelentés után, ha előtte szóltunk róla).
   final ({String title, String body}) Function(String symbol, EarningsSurprise result)? describeResult;
 
+  /// A várható osztalék értesítése (a napján); nélküle nincs osztalék-értesítés.
+  final ({String title, String body}) Function(UpcomingEvent event)? describeDividend;
+
   static const _key = 'earnings_reminded';
 
   Timer? _timer, _first;
@@ -46,12 +52,15 @@ class EarningsReminder {
     _first ??= Timer(const Duration(minutes: 1), check);
   }
 
-  /// Az értesítés azonosítója (egyszer szól egy jelentésről).
-  static String idOf(UpcomingEvent e) => 'earnings-${e.symbol}-${e.date.toIso8601String().substring(0, 10)}';
+  /// Az értesítés azonosítója (egyszer szól egy jelentésről, illetve egy várható osztalékról).
+  static String idOf(UpcomingEvent e) =>
+      '${e.kind == UpcomingEventKind.dividend ? 'dividend' : 'earnings'}-${e.symbol}-${e.date.toIso8601String().substring(0, 10)}';
 
   /// Ellenőrzés most; a kiküldött értesítések azonosítóival tér vissza.
   Future<List<String>> check() async {
-    if (_checking || !preferences.earningsReminders) return const [];
+    final earnings = preferences.earningsReminders;
+    final dividends = preferences.dividendReminders && describeDividend != null;
+    if (_checking || (!earnings && !dividends)) return const [];
     _checking = true;
     final sent = <String>[];
     try {
@@ -62,18 +71,22 @@ class EarningsReminder {
       final prefs = await SharedPreferences.getInstance();
       final done = (prefs.getStringList(_key) ?? const []).toSet();
       for (final e in events.events) {
-        if (e.kind != UpcomingEventKind.earnings) continue;
         final days = e.date.difference(today).inDays;
-        if (days < 0 || days > 1) continue;
+        // Gyorsjelentés: előtte való nap vagy aznap; várható osztalék: a napján.
+        final text = switch (e.kind) {
+          UpcomingEventKind.earnings when earnings && days >= 0 && days <= 1 => describe(e, tomorrow: days == 1),
+          UpcomingEventKind.dividend when dividends && days == 0 => describeDividend!(e),
+          _ => null,
+        };
+        if (text == null) continue;
         final id = idOf(e);
         if (done.contains(id)) continue;
-        final text = describe(e, tomorrow: days == 1);
         if (await notifier.show(id: id, title: text.title, body: text.body)) {
           done.add(id);
           sent.add(id);
         }
       }
-      sent.addAll(await _results(done, today));
+      if (earnings) sent.addAll(await _results(done, today));
       if (sent.isNotEmpty) {
         // A régi (egy hétnél korábbi) jelentések azonosítói kikerülnek.
         final cutoff = today.subtract(const Duration(days: 7)).toIso8601String().substring(0, 10);

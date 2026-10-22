@@ -2117,6 +2117,23 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return 'Ana sa ran rabon ribar $symbol yau';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Kusan $amount. Rubuta shi a fayil ɗinka da zarar ya iso.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Tunatarwar rabon riba';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Sanarwa a ranar da ake sa ran rabon riba bisa tsarin biyan da ka rubuta, don ka rubuta shi';
+
+  @override
   String get earningsRemindersTitle => 'Tunatarwar sakamakon kuɗi';
 
   @override

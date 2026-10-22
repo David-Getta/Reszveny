@@ -768,5 +768,9 @@
   "portfolioBeta": "Salkun beta",
   "glossPortfolioBeta": "Osakkeidesi beta painotettuna niiden arvolla: suunnilleen kuinka monta prosenttia osakkeesi liikkuvat, kun markkina liikkuu 1 %. Jos se on yli 1, ne heiluvat markkinaa enemmän, jos alle 1, vähemmän. Käteistä ei lasketa mukaan.",
   "portfolioTop3": "3 suurinta omistusta",
-  "glossPortfolioTop3": "Kuinka suuri osa osakkeidesi arvosta on kolmessa suurimmassa omistuksessasi. Mitä suurempi osuus on, sitä enemmän yhden yhtiön huonot uutiset voivat vahingoittaa koko salkkua."
+  "glossPortfolioTop3": "Kuinka suuri osa osakkeidesi arvosta on kolmessa suurimmassa omistuksessasi. Mitä suurempi osuus on, sitä enemmän yhden yhtiön huonot uutiset voivat vahingoittaa koko salkkua.",
+  "dividendReminderTitle": "{symbol}: osinko odotettavissa tänään",
+  "dividendReminderBody": "Noin {amount}. Kirjaa se salkkuusi, kun se saapuu.",
+  "dividendRemindersTitle": "Osinkomuistutukset",
+  "dividendRemindersSubtitle": "Ilmoitus päivänä, jolloin osinkoa odotetaan kirjaamiesi maksujen rytmin perusteella, jotta voit kirjata sen"
 }

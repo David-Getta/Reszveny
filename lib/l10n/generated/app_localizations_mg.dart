@@ -2127,6 +2127,23 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: dividandy andrasana anio';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Manodidina ny $amount. Raketo ao amin\'ny portfolio-nao izany rehefa tonga.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Fampahatsiahivana dividandy';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Fampandrenesana amin\'ny andro andrasana dividandy araka ny fiverimberenan\'ny fandoavana noraketinao, mba hahafahanao mirakitra azy';
+
+  @override
   String get earningsRemindersTitle => 'Fampahatsiahivana vokatra';
 
   @override

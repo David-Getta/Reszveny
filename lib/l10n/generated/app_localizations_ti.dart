@@ -2075,6 +2075,23 @@ class AppLocalizationsTi extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: ሎሚ ዝተጸበ ድቪደንድ';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'ኣስታት $amount። ምስ በጽሐ ኣብ ፖርትፎሊዮኹም መዝግብዎ።';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'መዘኻኸሪ ድቪደንድ';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'ብመሰረት ድግግም እቶም ዝመዝገብኩምዎም ክፍሊታት ድቪደንድ ኣብ ዝግመተሉ መዓልቲ ዝመጽእ መፍለጢ፣ ክትምዝግብዎ ምእንቲ';
+
+  @override
   String get earningsRemindersTitle => 'መዘኻኸሪ ውጽኢት';
 
   @override

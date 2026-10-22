@@ -2113,6 +2113,23 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: väntad utdelning i dag';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Omkring $amount. Registrera den i din portfölj när den har kommit.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Utdelningspåminnelser';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'En notis den dag en utdelning väntas utifrån rytmen i dina registrerade utdelningar, så att du kan registrera den';
+
+  @override
   String get earningsRemindersTitle => 'Rapportpåminnelser';
 
   @override

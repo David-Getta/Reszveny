@@ -2114,6 +2114,23 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: osinko odotettavissa tänään';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Noin $amount. Kirjaa se salkkuusi, kun se saapuu.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Osinkomuistutukset';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Ilmoitus päivänä, jolloin osinkoa odotetaan kirjaamiesi maksujen rytmin perusteella, jotta voit kirjata sen';
+
+  @override
   String get earningsRemindersTitle => 'Tulosmuistutukset';
 
   @override

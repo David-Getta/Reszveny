@@ -2166,6 +2166,23 @@ class AppLocalizationsBe extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: сёння чакаецца дывідэнд';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Каля $amount. Запішыце яго ў партфель, калі ён паступіць.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Напаміны пра дывідэнды';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Апавяшчэнне ў дзень, калі паводле рытму вашых запісаных выплат чакаецца дывідэнд, каб вы маглі яго запісаць';
+
+  @override
   String get earningsRemindersTitle => 'Напаміны пра вынікі';
 
   @override

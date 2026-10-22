@@ -307,6 +307,18 @@ class SettingsPage extends StatelessWidget {
                         ListenableBuilder(
                           listenable: services.preferences,
                           builder: (context, _) => SwitchListTile(
+                            key: const ValueKey('dividend-reminders'),
+                            secondary: const Icon(Icons.payments_outlined),
+                            title: Text(l10n.dividendRemindersTitle),
+                            subtitle: Text(l10n.dividendRemindersSubtitle),
+                            value: services.preferences.dividendReminders,
+                            onChanged: services.preferences.setDividendReminders,
+                          ),
+                        ),
+                        const Divider(height: 1),
+                        ListenableBuilder(
+                          listenable: services.preferences,
+                          builder: (context, _) => SwitchListTile(
                             key: const ValueKey('signal-alerts'),
                             secondary: const Icon(Icons.show_chart_rounded),
                             title: Text(l10n.signalAlertsTitle),

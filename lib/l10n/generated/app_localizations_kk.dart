@@ -2111,6 +2111,23 @@ class AppLocalizationsKk extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol дивиденді бүгін күтілуде';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Шамамен $amount. Түскен соң оны портфеліңізге жазыңыз.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Дивидендтер туралы еске салу';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Жазылған төлемдеріңіздің ырғағы бойынша дивиденд күтілетін күні хабарландыру, оны жазып қоюыңыз үшін';
+
+  @override
   String get earningsRemindersTitle => 'Нәтижелер туралы еске салу';
 
   @override

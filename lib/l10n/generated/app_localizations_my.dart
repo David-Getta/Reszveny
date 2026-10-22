@@ -2106,6 +2106,23 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol ၏ အမြတ်ဝေစု ယနေ့ ရောက်ရှိရန် မျှော်မှန်းထားသည်';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'ခန့်မှန်းခြေ $amount။ ရောက်ရှိလာသည်နှင့် သင်၏ ပေါ့ဖိုလီယိုတွင် မှတ်တမ်းတင်ပါ။';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'အမြတ်ဝေစု သတိပေးချက်များ';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'သင်မှတ်တမ်းတင်ထားသော ပေးချေမှုများ၏ ပုံမှန်အစီအစဉ်အရ အမြတ်ဝေစု မျှော်မှန်းသည့်နေ့တွင် မှတ်တမ်းတင်နိုင်ရန် အသိပေးချက်';
+
+  @override
   String get earningsRemindersTitle => 'ရလဒ် သတိပေးချက်များ';
 
   @override

@@ -2110,6 +2110,23 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return 'Dividann $symbol yo atann jodi a';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Anviwon $amount. Anrejistre l nan pòtfolyo w lè l rive.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Rapèl dividann';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Yon notifikasyon jou yo atann yon dividann dapre ritm peman ou te anrejistre yo, pou w ka anrejistre l';
+
+  @override
   String get earningsRemindersTitle => 'Rapèl rezilta';
 
   @override

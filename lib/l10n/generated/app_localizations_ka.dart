@@ -2113,6 +2113,23 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol-ის დივიდენდი დღეს მოსალოდნელია';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'დაახლოებით $amount. მიღებისთანავე ჩაწერეთ თქვენს პორტფელში.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'დივიდენდების შეხსენებები';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'შეტყობინება იმ დღეს, როცა თქვენი ჩაწერილი გადახდების რიტმით დივიდენდია მოსალოდნელი, რომ შეძლოთ მისი ჩაწერა';
+
+  @override
   String get earningsRemindersTitle => 'შედეგების შეხსენებები';
 
   @override

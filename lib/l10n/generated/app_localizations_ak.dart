@@ -2113,6 +2113,23 @@ class AppLocalizationsAk extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol dividend a wɔhwɛ kwan ɛnnɛ';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Bɛyɛ $amount. Sɛ ɛba a, kyerɛw no wɔ wo portfolio mu.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Dividend ho nkaebɔ';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Wɔbɛbɔ wo amanneɛ da a wɔhwɛ dividend kwan, gyina ntua a wokyerɛw too hɔ no nhyehyɛe so, sɛnea ɛbɛyɛ a wobɛtumi akyerɛw';
+
+  @override
   String get earningsRemindersTitle => 'Akontaabu ho nkaebɔ';
 
   @override

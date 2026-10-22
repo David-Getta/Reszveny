@@ -2114,6 +2114,23 @@ class AppLocalizationsAz extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol üzrə dividend bu gün gözlənilir';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Təxminən $amount. Daxil olduqda portfelinizdə qeyd edin.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Dividend xatırlatmaları';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Qeyd etdiyiniz ödənişlərin ritminə əsasən dividend gözlənilən gün bildiriş ki, onu qeyd edə biləsiniz';
+
+  @override
   String get earningsRemindersTitle => 'Nəticə xatırlatmaları';
 
   @override

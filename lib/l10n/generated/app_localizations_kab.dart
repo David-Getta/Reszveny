@@ -2111,6 +2111,23 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return 'Dividende n $symbol yettwaṛǧu ass-a';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Azal n $amount. Sekles-it deg uportfolio-k mi ara d-yawed.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Asmekti n dividende';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Alɣu ass ideg yettwaṛǧu dividende almend n urritm n lexlaṣat i tesekleseḍ, akken ad t-teskelseḍ';
+
+  @override
   String get earningsRemindersTitle => 'Asmekti n yigmaḍ';
 
   @override

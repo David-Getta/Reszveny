@@ -768,5 +768,9 @@
   "portfolioBeta": "Beta ya phothifoliyo",
   "glossPortfolioBeta": "Beta ya tixere ta wena, leyi pimiweke hi ku ya hi nkoka wa tona: kwalomu ka tiphesente tingani leti tixere ta wena ti fambaka ha tona loko makete wu famba hi 1%. Ehenhla ka 1 ti tsekatseka ku tlula makete, ehansi ka 1 ku tsongo. Mali a yi katsiwanga.",
   "portfolioTop3": "Tixere ta 3 letikulu",
-  "glossPortfolioTop3": "Xiphemu xa nkoka wa tixere ta wena lexi nga eka tixere ta wena tinharhu letikulu ngopfu. Loko xi tlakuka, mahungu yo biha ya khampani yin'we ntsena ma nga vavisa phothifoliyo hinkwayo ku tlula."
+  "glossPortfolioTop3": "Xiphemu xa nkoka wa tixere ta wena lexi nga eka tixere ta wena tinharhu letikulu ngopfu. Loko xi tlakuka, mahungu yo biha ya khampani yin'we ntsena ma nga vavisa phothifoliyo hinkwayo ku tlula.",
+  "dividendReminderTitle": "{symbol}: dividende leyi languteriweke namuntlha",
+  "dividendReminderBody": "Kwalomu ka {amount}. Yi tsale eka phothifoliyo ya wena loko yi fika.",
+  "dividendRemindersTitle": "Swotsundzuxo swa dividende",
+  "dividendRemindersSubtitle": "Xitiviso hi siku leri dividende yi languteriweke ha rona hi ku ya hi ndlela ya tihakelo leti u ti tsaleke, leswaku u kota ku yi tsala"
 }

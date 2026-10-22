@@ -2170,6 +2170,23 @@ class AppLocalizationsSl extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: danes pričakovana dividenda';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Približno $amount. Ko prispe, jo zabeležite v portfelj.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Opomniki za dividende';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Obvestilo na dan, ko je glede na ritem vaših zabeleženih izplačil pričakovana dividenda, da jo lahko zabeležite';
+
+  @override
   String get earningsRemindersTitle => 'Opomniki za rezultate';
 
   @override

@@ -768,5 +768,9 @@
   "portfolioBeta": "Beta aksiyoŋ am",
   "glossPortfolioBeta": "Beta aksiyonji maa, kala ngo e njoŋdi mum: hono no teemedere jelu aksiyonji maa dillirta so luumo dillii 1%. Ko ɓuri 1, ɗi ɓuri luumo dillude; ko les 1, ɗi ɓuri famɗude dillude. Kaalis naatnaaka.",
   "portfolioTop3": "Aksiyonji 3 ɓurɗi mawnude",
-  "glossPortfolioTop3": "No foti njoŋdi aksiyonji maa woni e tati ɓurɗi mawnude e ko a jogii. So ɗum ɓurii toownude, kabaruuji boni e sosiyete gooto ina mbaawi lorlude aksiyonji maa fof ko ɓuri."
+  "glossPortfolioTop3": "No foti njoŋdi aksiyonji maa woni e tati ɓurɗi mawnude e ko a jogii. So ɗum ɓurii toownude, kabaruuji boni e sosiyete gooto ina mbaawi lorlude aksiyonji maa fof ko ɓuri.",
+  "dividendReminderTitle": "Dividende {symbol} habbaaɗo hannde",
+  "dividendReminderBody": "Hono {amount}. So yettii, winndu ɗum e portfolio maa.",
+  "dividendRemindersTitle": "Siftorɗe dividende",
+  "dividendRemindersSubtitle": "Tintinol ñalawma nde dividende habbaa, rewrude e ɗoggol yoɓdiiji ɗe mbinnduɗaa, ngam a waawa winndude ɗum"
 }

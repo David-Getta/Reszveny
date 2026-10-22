@@ -768,5 +768,9 @@
   "portfolioBeta": "Porteføljebeta",
   "glossPortfolioBeta": "Betaen for dine aktier, vægtet efter deres værdi: cirka hvor mange procent dine aktier bevæger sig, når markedet bevæger sig 1%. Over 1 svinger de mere end markedet, under 1 mindre. Kontanter er ikke medregnet.",
   "portfolioTop3": "Top 3-beholdninger",
-  "glossPortfolioTop3": "Hvor stor en del af dine aktiers værdi der ligger i dine tre største beholdninger. Jo højere den er, jo mere kan dårlige nyheder fra et enkelt selskab skade hele porteføljen."
+  "glossPortfolioTop3": "Hvor stor en del af dine aktiers værdi der ligger i dine tre største beholdninger. Jo højere den er, jo mere kan dårlige nyheder fra et enkelt selskab skade hele porteføljen.",
+  "dividendReminderTitle": "Udbytte fra {symbol} forventes i dag",
+  "dividendReminderBody": "Ca. {amount}. Registrér det i din portefølje, når det kommer.",
+  "dividendRemindersTitle": "Påmindelser om udbytte",
+  "dividendRemindersSubtitle": "En notifikation den dag, et udbytte forventes ud fra rytmen i dine registrerede udbetalinger, så du kan registrere det"
 }

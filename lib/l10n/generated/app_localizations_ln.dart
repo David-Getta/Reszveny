@@ -2121,6 +2121,23 @@ class AppLocalizationsLn extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return 'Dividende ya $symbol ezelami lelo';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Pene na $amount. Koma yango na portefeuille na yo soki ekomi.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Bokundolisi ya dividende';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Liyebisi na mokolo oyo dividende ezelami engebene na ndenge ba futa oyo okomaki eyaka, mpo okoka kokoma yango';
+
+  @override
   String get earningsRemindersTitle => 'Bokundolisi ya ba résultats';
 
   @override

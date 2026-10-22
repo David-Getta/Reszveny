@@ -2124,6 +2124,23 @@ class AppLocalizationsTn extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: dividente e e lebeletsweng gompieno';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'E ka nna $amount. E kwale mo phothefoliong ya gago fa e goroga.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Dikgakololo tsa dividente';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Kitsiso ka letsatsi le dividente e lebeletsweng ka lone go ya ka mokgwa wa dituelo tse o di kwadileng, gore o kgone go e kwala';
+
+  @override
   String get earningsRemindersTitle => 'Dikgakololo tsa dipoelo';
 
   @override

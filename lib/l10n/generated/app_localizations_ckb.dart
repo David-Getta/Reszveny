@@ -2112,6 +2112,23 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return 'پشکی قازانجی $symbol ئەمڕۆ چاوەڕوان دەکرێت';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'نزیکەی $amount. کاتێک گەیشت، لە پۆرتفۆلیۆکەت تۆماری بکە.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'بیرخەرەوەی پشکی قازانج';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'ئاگادارکردنەوەیەک لەو ڕۆژەی بەپێی ڕیتمی پارەدانە تۆمارکراوەکانت پشکی قازانج چاوەڕوان دەکرێت، بۆ ئەوەی تۆماری بکەیت';
+
+  @override
   String get earningsRemindersTitle => 'بیرخەرەوەی ئەنجامەکان';
 
   @override

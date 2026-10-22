@@ -2121,6 +2121,23 @@ class AppLocalizationsXh extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: isahlulo esilindelekileyo namhlanje';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Malunga ne-$amount. Sirekhode kwipotifoliyo yakho xa sifikile.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Izikhumbuzi zesahlulo';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Isaziso ngosuku isahlulo esilindeleke ngalo ngokwesingqi seentlawulo ozirekhodileyo, ukuze usirekhode';
+
+  @override
   String get earningsRemindersTitle => 'Izikhumbuzi zeziphumo';
 
   @override

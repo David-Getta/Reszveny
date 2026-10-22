@@ -2122,6 +2122,23 @@ class AppLocalizationsCeb extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return 'Gipaabot karon ang dibidendo sa $symbol';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Mga $amount. Irekord kini sa imong portfolio kung moabot na.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Mga pahinumdom sa dibidendo';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Usa ka pahibalo sa adlaw nga gipaabot ang dibidendo sumala sa ritmo sa imong narekord nga mga bayad, aron imo kining marekord';
+
+  @override
   String get earningsRemindersTitle => 'Mga pahinumdom sa resulta';
 
   @override

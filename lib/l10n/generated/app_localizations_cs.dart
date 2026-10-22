@@ -2163,6 +2163,23 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: dnes se očekává dividenda';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Asi $amount. Až dorazí, zaznamenejte ji do portfolia.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Připomínky dividend';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Upozornění v den, kdy se podle rytmu vašich zaznamenaných výplat očekává dividenda, abyste ji mohli zaznamenat';
+
+  @override
   String get earningsRemindersTitle => 'Připomínky výsledků';
 
   @override

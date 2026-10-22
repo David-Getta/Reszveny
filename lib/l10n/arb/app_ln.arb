@@ -768,5 +768,9 @@
   "portfolioBeta": "Bêta ya portefeuille",
   "glossPortfolioBeta": "Bêta ya ba-action na yo, oyo epesameli kilo na kolanda motuya na yango: pene na pourcentage boni ba-action na yo eningani ntango zando eningani 1%. Likolo ya 1, eningani koleka zando; na nse ya 1, moke. Mbɔngɔ ya mabɔkɔ etángami te.",
   "portfolioTop3": "Ba-position 3 ya minene",
-  "glossPortfolioTop3": "Eteni nini ya motuya ya ba-action na yo ezali na ba-position na yo misato ya minene koleka. Soki ezali likolo mingi, nsango mabe ya kompanyi moko kaka ekoki kobebisa portefeuille mobimba mingi koleka."
+  "glossPortfolioTop3": "Eteni nini ya motuya ya ba-action na yo ezali na ba-position na yo misato ya minene koleka. Soki ezali likolo mingi, nsango mabe ya kompanyi moko kaka ekoki kobebisa portefeuille mobimba mingi koleka.",
+  "dividendReminderTitle": "Dividende ya {symbol} ezelami lelo",
+  "dividendReminderBody": "Pene na {amount}. Koma yango na portefeuille na yo soki ekomi.",
+  "dividendRemindersTitle": "Bokundolisi ya dividende",
+  "dividendRemindersSubtitle": "Liyebisi na mokolo oyo dividende ezelami engebene na ndenge ba futa oyo okomaki eyaka, mpo okoka kokoma yango"
 }

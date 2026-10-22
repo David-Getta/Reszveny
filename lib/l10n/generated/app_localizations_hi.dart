@@ -2110,6 +2110,23 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol का डिविडेंड आज अपेक्षित';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'लगभग $amount। आने पर इसे अपने पोर्टफ़ोलियो में दर्ज करें।';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'डिविडेंड के रिमाइंडर';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'आपके दर्ज किए गए भुगतानों के क्रम के आधार पर जिस दिन डिविडेंड अपेक्षित हो, उस दिन सूचना, ताकि आप उसे दर्ज कर सकें';
+
+  @override
   String get earningsRemindersTitle => 'तिमाही नतीजों के रिमाइंडर';
 
   @override

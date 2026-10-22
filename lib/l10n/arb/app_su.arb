@@ -768,5 +768,9 @@
   "portfolioBeta": "Béta portofolio",
   "glossPortfolioBeta": "Béta saham anjeun, ditimbang dumasar kana ajénna: kira-kira sabaraha persén saham anjeun obah nalika pasar obah 1%. Di luhur 1 ayunanana leuwih gedé batan pasar, handapeun 1 leuwih leutik. Tunai teu kaasup.",
   "portfolioTop3": "3 posisi panggedéna",
-  "glossPortfolioTop3": "Sabaraha bagian tina ajén saham anjeun aya dina tilu posisi panggedéna anjeun. Beuki luhur, beuki gedé warta goréng ngeunaan hiji perusahaan bisa ngarugikeun sakabéh portofolio."
+  "glossPortfolioTop3": "Sabaraha bagian tina ajén saham anjeun aya dina tilu posisi panggedéna anjeun. Beuki luhur, beuki gedé warta goréng ngeunaan hiji perusahaan bisa ngarugikeun sakabéh portofolio.",
+  "dividendReminderTitle": "Dividen {symbol} diperkirakeun poé ieu",
+  "dividendReminderBody": "Kira-kira {amount}. Catet dina portofolio anjeun upami parantos lebet.",
+  "dividendRemindersTitle": "Panginget dividen",
+  "dividendRemindersSubtitle": "Béwara dina poé dividen diperkirakeun dumasar kana wirahma pamayaran anu anjeun catet, supados anjeun tiasa nyatetna"
 }

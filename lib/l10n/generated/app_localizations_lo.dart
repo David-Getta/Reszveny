@@ -2087,6 +2087,23 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return 'ຄາດວ່າ $symbol ຈະຈ່າຍເງິນປັນຜົນມື້ນີ້';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'ປະມານ $amount. ບັນທຶກໄວ້ໃນພອດໂຟລິໂອຂອງທ່ານເມື່ອໄດ້ຮັບແລ້ວ.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'ການແຈ້ງເຕືອນເງິນປັນຜົນ';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'ແຈ້ງເຕືອນໃນມື້ທີ່ຄາດວ່າຈະໄດ້ເງິນປັນຜົນ ຕາມຮອບການຈ່າຍທີ່ທ່ານບັນທຶກໄວ້ ເພື່ອໃຫ້ທ່ານບັນທຶກໄດ້';
+
+  @override
   String get earningsRemindersTitle => 'ການແຈ້ງເຕືອນຜົນປະກອບການ';
 
   @override

@@ -2114,6 +2114,23 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return 'Dividenda $symbol îro tê hêvîkirin';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Nêzî $amount. Dema ku gihîşt, wê di portfolyoya xwe de tomar bike.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Bîranînên dividendê';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Agahdariyek di roja ku li gorî rîtma dayînên te yên tomarkirî dividend tê hêvîkirin, da ku tu wê tomar bikî';
+
+  @override
   String get earningsRemindersTitle => 'Bîranînên encaman';
 
   @override

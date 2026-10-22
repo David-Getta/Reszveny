@@ -768,5 +768,9 @@
   "portfolioBeta": "Beta portfelja",
   "glossPortfolioBeta": "Beta vaših delnic, utežena z njihovo vrednostjo: približno za koliko odstotkov se premaknejo vaše delnice, ko se trg premakne za 1 %. Nad 1 nihajo bolj kot trg, pod 1 manj. Gotovina ni vključena.",
   "portfolioTop3": "3 največje pozicije",
-  "glossPortfolioTop3": "Kolikšen del vrednosti vaših delnic je v vaših treh največjih pozicijah. Višji kot je, bolj lahko slabe novice o enem samem podjetju prizadenejo celoten portfelj."
+  "glossPortfolioTop3": "Kolikšen del vrednosti vaših delnic je v vaših treh največjih pozicijah. Višji kot je, bolj lahko slabe novice o enem samem podjetju prizadenejo celoten portfelj.",
+  "dividendReminderTitle": "{symbol}: danes pričakovana dividenda",
+  "dividendReminderBody": "Približno {amount}. Ko prispe, jo zabeležite v portfelj.",
+  "dividendRemindersTitle": "Opomniki za dividende",
+  "dividendRemindersSubtitle": "Obvestilo na dan, ko je glede na ritem vaših zabeleženih izplačil pričakovana dividenda, da jo lahko zabeležite"
 }

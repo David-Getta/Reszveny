@@ -768,5 +768,9 @@
   "portfolioBeta": "I-beta yephothifoliyo",
   "glossPortfolioBeta": "I-beta yamasheya akho, ilinganiswe ngokwenani lawo: cishe angamaphesenti amangaki amasheya akho anyakaza ngawo uma imakethe inyakaza ngo-1%. Ngaphezu kuka-1 ashintsha kakhulu kunemakethe, ngaphansi kuka-1 kancane. Imali ayifakiwe.",
   "portfolioTop3": "Amasheya ama-3 amakhulu",
-  "glossPortfolioTop3": "Ingakanani ingxenye yenani lamasheya akho ekumasheya akho amathathu amakhulu kakhulu. Okukhona liphezulu, kokukhona izindaba ezimbi zenkampani eyodwa zingalimaza kakhulu iphothifoliyo yonke."
+  "glossPortfolioTop3": "Ingakanani ingxenye yenani lamasheya akho ekumasheya akho amathathu amakhulu kakhulu. Okukhona liphezulu, kokukhona izindaba ezimbi zenkampani eyodwa zingalimaza kakhulu iphothifoliyo yonke.",
+  "dividendReminderTitle": "{symbol}: isabelo senzuzo esilindelekile namuhla",
+  "dividendReminderBody": "Cishe {amount}. Sirekhode kuphothifoliyo yakho uma sesifikile.",
+  "dividendRemindersTitle": "Izikhumbuzi zesabelo senzuzo",
+  "dividendRemindersSubtitle": "Isaziso ngosuku isabelo senzuzo esilindeleke ngalo ngokwesigqi sezinkokhelo ozirekhodile, ukuze usirekhode"
 }

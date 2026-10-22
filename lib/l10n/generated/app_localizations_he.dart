@@ -2104,6 +2104,23 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: צפוי דיבידנד היום';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'כ-$amount. כדאי לרשום אותו בתיק שלך כשיתקבל.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'תזכורות לדיבידנדים';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'התראה ביום שבו צפוי דיבידנד לפי קצב התשלומים שרשמת, כדי שאפשר יהיה לרשום אותו';
+
+  @override
   String get earningsRemindersTitle => 'תזכורות לדוחות רבעוניים';
 
   @override

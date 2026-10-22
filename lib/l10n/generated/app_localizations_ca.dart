@@ -2121,6 +2121,23 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return 'Dividend de $symbol previst avui';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Uns $amount. Registra\'l a la teva cartera quan arribi.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Recordatoris de dividends';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Una notificació el dia que s\'espera un dividend segons el ritme dels pagaments que has registrat, perquè el puguis registrar';
+
+  @override
   String get earningsRemindersTitle => 'Recordatoris de resultats';
 
   @override

@@ -768,5 +768,9 @@
   "portfolioBeta": "Bêta wa portefeuille",
   "glossPortfolioBeta": "Bêta wa actions yebe, mupima bilondeshile mushinga wayi: pabuipi ne pourcentage bungi kayi budi actions yebe inyunguluka padi tshisalu tshinyunguluka 1%. Pa mutu pa 1, idi inyunguluka bikole kupita tshisalu; panshi pa 1, kakese. Mfranga ya mu bianza kayena ibadibua to.",
   "portfolioTop3": "Position 3 minene",
-  "glossPortfolioTop3": "Tshitupa tshia mushinga wa actions yebe tshidi mu position yebe isatu minene. Padi tshitupa etshi tshivula, ke padi myanda mibi ya kompanyi umue patupu mua kunyanga portefeuille wonso bikole."
+  "glossPortfolioTop3": "Tshitupa tshia mushinga wa actions yebe tshidi mu position yebe isatu minene. Padi tshitupa etshi tshivula, ke padi myanda mibi ya kompanyi umue patupu mua kunyanga portefeuille wonso bikole.",
+  "dividendReminderTitle": "Dividende wa {symbol} idi mitekemene lelu",
+  "dividendReminderBody": "Pabuipi ne {amount}. Yifunde mu portefeuille webe padiyi ifika.",
+  "dividendRemindersTitle": "Bivuluija bia dividende",
+  "dividendRemindersSubtitle": "Dimanyisha dituku didi dividende mitekemene bilondeshile mushindu wa mfutu iwakafunda, bua wewe kuyifunda"
 }

@@ -2110,6 +2110,23 @@ class AppLocalizationsAs extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: আজি লাভাংশ প্ৰত্যাশিত';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'প্ৰায় $amount। আহি পোৱাৰ পিছত আপোনাৰ পৰ্টফ\'লিঅ\'ত লিপিবদ্ধ কৰক।';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'লাভাংশৰ সোঁৱৰণী';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'আপোনাৰ লিপিবদ্ধ পৰিশোধৰ ছন্দ অনুসৰি লাভাংশ প্ৰত্যাশিত দিনটোত এটা জাননী, যাতে আপুনি ইয়াক লিপিবদ্ধ কৰিব পাৰে';
+
+  @override
   String get earningsRemindersTitle => 'ফলাফলৰ সোঁৱৰণী';
 
   @override

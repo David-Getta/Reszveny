@@ -2118,6 +2118,23 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol ಡಿವಿಡೆಂಡ್ ಇಂದು ನಿರೀಕ್ಷಿತ';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'ಸುಮಾರು $amount. ಬಂದ ನಂತರ ಅದನ್ನು ನಿಮ್ಮ ಪೋರ್ಟ್‌ಫೋಲಿಯೊದಲ್ಲಿ ದಾಖಲಿಸಿ.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'ಡಿವಿಡೆಂಡ್ ಜ್ಞಾಪನೆಗಳು';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'ನೀವು ದಾಖಲಿಸಿದ ಪಾವತಿಗಳ ಲಯದ ಆಧಾರದಲ್ಲಿ ಡಿವಿಡೆಂಡ್ ನಿರೀಕ್ಷಿತವಾದ ದಿನ ಅಧಿಸೂಚನೆ, ಇದರಿಂದ ನೀವು ಅದನ್ನು ದಾಖಲಿಸಬಹುದು';
+
+  @override
   String get earningsRemindersTitle => 'ಫಲಿತಾಂಶ ಜ್ಞಾಪನೆಗಳು';
 
   @override

@@ -768,5 +768,9 @@
   "portfolioBeta": "Beta ti portfolio",
   "glossPortfolioBeta": "Ti beta dagiti stock-mo, natimbang segun iti pategda: agarup mano a porsiento ti panaggunay dagiti stock-mo no aggunay ti merkado iti 1%. No nangatngato ngem 1, dakdakkel ti panagbaliwda ngem ti merkado; no baba ti 1, basbassit. Saan a karaman ti cash.",
   "portfolioTop3": "Top 3 a posision",
-  "glossPortfolioTop3": "No kasano kadakkel ti paset ti pateg dagiti stock-mo nga adda iti tallo a kadakkelan a posisionmo. No nangatngato daytoy, ad-adu ti madangran ti dakes a damag maipapan iti maysa laeng a kompania iti intero a portfolio."
+  "glossPortfolioTop3": "No kasano kadakkel ti paset ti pateg dagiti stock-mo nga adda iti tallo a kadakkelan a posisionmo. No nangatngato daytoy, ad-adu ti madangran ti dakes a damag maipapan iti maysa laeng a kompania iti intero a portfolio.",
+  "dividendReminderTitle": "Manamnama ita nga aldaw ti dibidendo ti {symbol}",
+  "dividendReminderBody": "Agarup {amount}. Irekord daytoy iti portfoliom inton dumteng.",
+  "dividendRemindersTitle": "Pammalagip ti dibidendo",
+  "dividendRemindersSubtitle": "Pakaammo iti aldaw a manamnama ti dibidendo segun iti ritmo dagiti nairekord a bayadmo, tapno mairekordmo daytoy"
 }

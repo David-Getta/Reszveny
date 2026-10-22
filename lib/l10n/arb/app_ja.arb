@@ -768,5 +768,9 @@
   "portfolioBeta": "ポートフォリオのベータ",
   "glossPortfolioBeta": "保有株のベータを評価額で加重平均したもの。市場が1%動いたときに保有株がおよそ何%動くかを示します。1を超えると市場より値動きが大きく、1未満だと小さくなります。現金は含みません。",
   "portfolioTop3": "上位3銘柄",
-  "glossPortfolioTop3": "保有株の評価額のうち、上位3銘柄が占める割合。高いほど、1社の悪いニュースがポートフォリオ全体に与える打撃が大きくなります。"
+  "glossPortfolioTop3": "保有株の評価額のうち、上位3銘柄が占める割合。高いほど、1社の悪いニュースがポートフォリオ全体に与える打撃が大きくなります。",
+  "dividendReminderTitle": "{symbol}の配当は本日入金予定です",
+  "dividendReminderBody": "約 {amount}。入金されたらポートフォリオに記録してください。",
+  "dividendRemindersTitle": "配当リマインダー",
+  "dividendRemindersSubtitle": "記録した受取のペースから配当が見込まれる日に通知し、記録を忘れないようにします"
 }

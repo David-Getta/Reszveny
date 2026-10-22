@@ -768,5 +768,9 @@
   "portfolioBeta": "投資組合 Beta 值",
   "glossPortfolioBeta": "按市值加權的持股 Beta 值：大市升跌 1% 時，你的股票大約升跌百分之幾。高於 1 代表波幅大於大市，低於 1 則較小。不包括現金。",
   "portfolioTop3": "三大持倉",
-  "glossPortfolioTop3": "你的股票市值中有多少集中在三大持倉。比例越高，單一公司的壞消息對整個投資組合的打擊就越大。"
+  "glossPortfolioTop3": "你的股票市值中有多少集中在三大持倉。比例越高，單一公司的壞消息對整個投資組合的打擊就越大。",
+  "dividendReminderTitle": "{symbol} 預計今日派息",
+  "dividendReminderBody": "約 {amount}。到賬後請記入投資組合。",
+  "dividendRemindersTitle": "派息提示",
+  "dividendRemindersSubtitle": "根據你記錄的派息節奏，在預計派息當日發出通知，方便你記錄"
 }

@@ -2120,6 +2120,23 @@ class AppLocalizationsMl extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: ഇന്ന് ഡിവിഡന്റ് പ്രതീക്ഷിക്കുന്നു';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'ഏകദേശം $amount. ലഭിച്ചുകഴിഞ്ഞാൽ നിങ്ങളുടെ പോർട്ട്‌ഫോളിയോയിൽ രേഖപ്പെടുത്തുക.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'ഡിവിഡന്റ് ഓർമ്മപ്പെടുത്തലുകൾ';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'നിങ്ങൾ രേഖപ്പെടുത്തിയ പേയ്‌മെന്റുകളുടെ ക്രമം അനുസരിച്ച് ഡിവിഡന്റ് പ്രതീക്ഷിക്കുന്ന ദിവസം, അത് രേഖപ്പെടുത്താനായി ഒരു അറിയിപ്പ്';
+
+  @override
   String get earningsRemindersTitle => 'ഫല ഓർമ്മപ്പെടുത്തലുകൾ';
 
   @override

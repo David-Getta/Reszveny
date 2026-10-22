@@ -27,6 +27,7 @@ class AppPreferences extends ChangeNotifier {
     this.emailAlerts = true,
     this.weeklyDigest = false,
     this.earningsReminders = true,
+    this.dividendReminders = true,
     this.signalAlerts = true,
     this.morningBrief = false,
     this.portfolioMoveAlert = 0,
@@ -67,6 +68,7 @@ class AppPreferences extends ChangeNotifier {
   static const _emailAlertsKey = 'email_alerts';
   static const _weeklyDigestKey = 'weekly_digest';
   static const _earningsRemindersKey = 'earnings_reminders';
+  static const _dividendRemindersKey = 'dividend_reminders';
   static const _signalAlertsKey = 'signal_alerts';
   static const _morningBriefKey = 'morning_brief';
   static const _portfolioMoveKey = 'portfolio_move_alert';
@@ -151,6 +153,9 @@ class AppPreferences extends ChangeNotifier {
 
   /// Asztali értesítés a figyelt részvények gyorsjelentése előtti napon.
   bool earningsReminders;
+
+  /// Értesítés a várható osztalék napján (a rögzített kifizetések ritmusából).
+  bool dividendReminders;
 
   /// Napi technikai jelzés-értesítés (asztali gépen).
   bool signalAlerts;
@@ -410,6 +415,7 @@ class AppPreferences extends ChangeNotifier {
         emailAlerts: prefs.getBool(_emailAlertsKey) ?? true,
         weeklyDigest: prefs.getBool(_weeklyDigestKey) ?? false,
         earningsReminders: prefs.getBool(_earningsRemindersKey) ?? true,
+        dividendReminders: prefs.getBool(_dividendRemindersKey) ?? true,
         signalAlerts: prefs.getBool(_signalAlertsKey) ?? true,
         morningBrief: prefs.getBool(_morningBriefKey) ?? false,
         portfolioMoveAlert: prefs.getDouble(_portfolioMoveKey) ?? 0,
@@ -576,6 +582,13 @@ class AppPreferences extends ChangeNotifier {
     earningsReminders = enabled;
     notifyListeners();
     await _save((p) => p.setBool(_earningsRemindersKey, enabled));
+  }
+
+  Future<void> setDividendReminders(bool enabled) async {
+    if (dividendReminders == enabled) return;
+    dividendReminders = enabled;
+    notifyListeners();
+    await _save((p) => p.setBool(_dividendRemindersKey, enabled));
   }
 
   Future<void> setSignalAlerts(bool enabled) async {

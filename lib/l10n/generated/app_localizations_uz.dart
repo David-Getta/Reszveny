@@ -2116,6 +2116,23 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: bugun dividend kutilmoqda';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Taxminan $amount. Kelgach, uni portfelingizga yozib qoʻying.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Dividend eslatmalari';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Siz yozgan toʻlovlar maromiga koʻra dividend kutilayotgan kuni, uni yozib qoʻyishingiz uchun bildirishnoma';
+
+  @override
   String get earningsRemindersTitle => 'Natijalar eslatmalari';
 
   @override

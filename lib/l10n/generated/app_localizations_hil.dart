@@ -2126,6 +2126,23 @@ class AppLocalizationsHil extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return 'Ginapaabot subong ang dibidendo sang $symbol';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Mga $amount. Irekord ini sa imo portfolio kon mag-abot na.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Mga pahanumdom sa dibidendo';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Pahibalo sa adlaw nga ginapaabot ang dibidendo suno sa ritmo sang imo narekord nga mga bayad, agod marekord mo ini';
+
+  @override
   String get earningsRemindersTitle => 'Mga pahanumdom sa resulta';
 
   @override

@@ -768,5 +768,9 @@
   "portfolioBeta": "Portafoliopa betan",
   "glossPortfolioBeta": "Accionniykikunap betan, chaninkunaman hina llasachisqa: qhatu 1% kuyuptin, accionniykikuna yaqa hayk'a porcientota kuyunku. 1 hanaqpi kaptinqa qhatumanta aswan kuyunku, 1 uraypi kaptinqa aswan pisi. Qullqiqa mana yapakunchu.",
   "portfolioTop3": "Aswan hatun 3 posicionkuna",
-  "glossPortfolioTop3": "Accionniykikunap chaninmanta hayk'an kimsa aswan hatun posicionniykikunapi kachkan. Aswan hatun kaptinqa, huk empresallamanta mana allin willakuykuna llapan portafolioykita aswan k'irinman."
+  "glossPortfolioTop3": "Accionniykikunap chaninmanta hayk'an kimsa aswan hatun posicionniykikunapi kachkan. Aswan hatun kaptinqa, huk empresallamanta mana allin willakuykuna llapan portafolioykita aswan k'irinman.",
+  "dividendReminderTitle": "{symbol}: kunan p'unchaw dividendo suyasqa",
+  "dividendReminderBody": "Yaqa {amount}. Chayamuptinqa portafolioykipi qillqay.",
+  "dividendRemindersTitle": "Dividendo yuyarichiykuna",
+  "dividendRemindersSubtitle": "Qillqasqayki pagokunap purisqanman hina dividendo suyasqa p'unchawpi willachiy, qillqanaykipaq"
 }

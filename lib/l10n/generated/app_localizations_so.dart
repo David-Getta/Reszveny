@@ -2120,6 +2120,23 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: faa\'iido-saami la filayo maanta';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Qiyaastii $amount. Marka ay timaado, ku diiwaangeli boortfoliyahaaga.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Xasuusinta faa\'iido-saamiga';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Ogeysiis maalinta faa\'iido-saami la filayo, iyadoo lagu salaynayo habka bixinnada aad diiwaangelisay, si aad u diiwaangeliso';
+
+  @override
   String get earningsRemindersTitle => 'Xasuusinta natiijooyinka';
 
   @override

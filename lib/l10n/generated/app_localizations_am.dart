@@ -2081,6 +2081,23 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return 'ከ$symbol ዛሬ የትርፍ ድርሻ ይጠበቃል';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return '$amount ገደማ። ሲደርስዎ በፖርትፎሊዮዎ ውስጥ ይመዝግቡት።';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'የትርፍ ድርሻ ማስታወሻዎች';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'ከመዘገቧቸው ክፍያዎች ድግግሞሽ በመነሳት የትርፍ ድርሻ በሚጠበቅበት ቀን ማሳወቂያ፣ እንዲመዘግቡት';
+
+  @override
   String get earningsRemindersTitle => 'የውጤት ማስታወሻዎች';
 
   @override

@@ -2114,6 +2114,23 @@ class AppLocalizationsTg extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: имрӯз дивиденд интизор аст';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Тақрибан $amount. Пас аз омадан онро дар портфели худ сабт кунед.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Ёдраскуниҳои дивиденд';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Огоҳинома дар рӯзе, ки аз рӯи ритми пардохтҳои сабткардаи шумо дивиденд интизор аст, то онро сабт кунед';
+
+  @override
   String get earningsRemindersTitle => 'Ёдраскуниҳои натиҷаҳо';
 
   @override

@@ -1644,6 +1644,32 @@
       }
     }
   },
+  "dividendReminderTitle": "{symbol} dividend expected today",
+  "@dividendReminderTitle": {
+    "description": "Desktop notification title on the day a dividend is expected from the rhythm of the user's recorded payments.",
+    "placeholders": {
+      "symbol": {
+        "type": "String"
+      }
+    }
+  },
+  "dividendReminderBody": "About {amount}. Record it in your portfolio once it arrives.",
+  "@dividendReminderBody": {
+    "description": "Desktop notification body for an expected dividend; {amount} is like '~ 4.68 USD' (an estimate from the last payment).",
+    "placeholders": {
+      "amount": {
+        "type": "String"
+      }
+    }
+  },
+  "dividendRemindersTitle": "Dividend reminders",
+  "@dividendRemindersTitle": {
+    "description": "Settings switch title: notifications on the day an expected dividend should arrive."
+  },
+  "dividendRemindersSubtitle": "A notification on the day a dividend is expected from the rhythm of your recorded payments, so you can record it",
+  "@dividendRemindersSubtitle": {
+    "description": "Settings switch subtitle for dividend reminders."
+  },
   "earningsRemindersTitle": "Results reminders",
   "earningsRemindersSubtitle": "A notification the day before your favorites or portfolio stocks report quarterly results",
   "addAllToFavorites": "Add all to favorites ({count})",

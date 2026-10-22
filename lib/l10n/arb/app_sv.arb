@@ -768,5 +768,9 @@
   "portfolioBeta": "Portföljbeta",
   "glossPortfolioBeta": "Betan för dina aktier, viktad efter deras värde: ungefär hur många procent dina aktier rör sig när marknaden rör sig 1 %. Över 1 svänger de mer än marknaden, under 1 mindre. Kontanter ingår inte.",
   "portfolioTop3": "3 största innehav",
-  "glossPortfolioTop3": "Hur stor del av värdet på dina aktier som ligger i dina tre största innehav. Ju högre den är, desto mer kan dåliga nyheter om ett enda bolag skada hela portföljen."
+  "glossPortfolioTop3": "Hur stor del av värdet på dina aktier som ligger i dina tre största innehav. Ju högre den är, desto mer kan dåliga nyheter om ett enda bolag skada hela portföljen.",
+  "dividendReminderTitle": "{symbol}: väntad utdelning i dag",
+  "dividendReminderBody": "Omkring {amount}. Registrera den i din portfölj när den har kommit.",
+  "dividendRemindersTitle": "Utdelningspåminnelser",
+  "dividendRemindersSubtitle": "En notis den dag en utdelning väntas utifrån rytmen i dina registrerade utdelningar, så att du kan registrera den"
 }

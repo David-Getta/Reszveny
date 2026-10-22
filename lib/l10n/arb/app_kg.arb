@@ -768,5 +768,9 @@
   "portfolioBeta": "Bêta ya portefeuille",
   "glossPortfolioBeta": "Bêta ya ba actions na nge, yina bo me tala na kutadila ntalu na yo: pene-pene pourcentage ikwa ba actions na nge ke nyengana ntangu zandu ke nyengana 1%. Kuluta 1, yo ke nyengana mingi kuluta zandu; na nsi ya 1, fioti. Mbongo ya maboko ke kotaka ve.",
   "portfolioTop3": "Ba position 3 ya nene",
-  "glossPortfolioTop3": "Ikwa ya ntalu ya ba actions na nge kele na ba position na nge tatu ya nene kuluta. Kana yo ke kuluta kumata, mansangu ya mbi ya kompani mosi kaka lenda bebisa mingi portefeuille ya mvimba."
+  "glossPortfolioTop3": "Ikwa ya ntalu ya ba actions na nge kele na ba position na nge tatu ya nene kuluta. Kana yo ke kuluta kumata, mansangu ya mbi ya kompani mosi kaka lenda bebisa mingi portefeuille ya mvimba.",
+  "dividendReminderTitle": "Dividende ya {symbol} bo ke vingila yo bubu",
+  "dividendReminderBody": "Pene-pene {amount}. Sonika yo na portefeuille na nge kana yo me kwisa.",
+  "dividendRemindersTitle": "Kiyibusu ya dividende",
+  "dividendRemindersSubtitle": "Nkebisu na kilumbu yina bo ke vingila dividende na kutadila mutindu ya ba futa yina nge sonikaka, sambu nge sonika yo"
 }

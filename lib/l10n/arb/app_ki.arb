@@ -768,5 +768,9 @@
   "portfolioBeta": "Beta ya hisa ciaku",
   "glossPortfolioBeta": "Beta ya hisa ciaku, ĩtarĩtwo kũringana na thogora wacio: nĩ ta pasendi ciigana atĩa hisa ciaku ithiaga rĩrĩa thoko yathiĩ 1%. Igũrũ wa 1 ciĩgarũrũkaga makĩria ya thoko, rungu rwa 1 nĩ hanini. Mbeca cia moko ititarĩtwo.",
   "portfolioTop3": "Hisa 3 iria nene makĩria",
-  "glossPortfolioTop3": "Nĩ gĩcunjĩ kĩigana atĩa kĩa thogora wa hisa ciaku kĩrĩ hisa ithatũ iria nene makĩria ũrĩ nacio. O ũrĩa kĩrĩ kĩnene, noguo ũhoro mũũru wa kampuni ĩmwe tu ũngĩthũkia hisa ciaku ciothe makĩria."
+  "glossPortfolioTop3": "Nĩ gĩcunjĩ kĩigana atĩa kĩa thogora wa hisa ciaku kĩrĩ hisa ithatũ iria nene makĩria ũrĩ nacio. O ũrĩa kĩrĩ kĩnene, noguo ũhoro mũũru wa kampuni ĩmwe tu ũngĩthũkia hisa ciaku ciothe makĩria.",
+  "dividendReminderTitle": "Mũgai wa faida wa {symbol} ũrerĩgĩrĩirwo ũmũthĩ",
+  "dividendReminderBody": "Ta {amount}. Wandĩka thĩinĩ wa portfolio yaku ũgĩkinya.",
+  "dividendRemindersTitle": "Kũririkania mũgai wa faida",
+  "dividendRemindersSubtitle": "Imenyithia mũthenya ũrĩa mũgai wa faida ũrerĩgĩrĩirwo kũringana na mũtaratara wa marĩhi marĩa wandĩkĩte, nĩguo ũwandĩke"
 }

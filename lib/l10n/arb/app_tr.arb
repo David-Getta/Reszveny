@@ -768,5 +768,9 @@
   "portfolioBeta": "Portföy betası",
   "glossPortfolioBeta": "Hisselerinizin değerlerine göre ağırlıklandırılmış betası: piyasa %1 hareket ettiğinde hisselerinizin yaklaşık yüzde kaç hareket ettiği. 1'in üzerindeyse piyasadan daha fazla dalgalanır, 1'in altındaysa daha az. Nakit dahil değildir.",
   "portfolioTop3": "En büyük 3 pozisyon",
-  "glossPortfolioTop3": "Hisselerinizin değerinin ne kadarının en büyük üç pozisyonunuzda olduğu. Bu oran ne kadar yüksekse, tek bir şirketle ilgili kötü haberler tüm portföye o kadar çok zarar verebilir."
+  "glossPortfolioTop3": "Hisselerinizin değerinin ne kadarının en büyük üç pozisyonunuzda olduğu. Bu oran ne kadar yüksekse, tek bir şirketle ilgili kötü haberler tüm portföye o kadar çok zarar verebilir.",
+  "dividendReminderTitle": "{symbol}: bugün temettü bekleniyor",
+  "dividendReminderBody": "Yaklaşık {amount}. Geldiğinde portföyünüze kaydedin.",
+  "dividendRemindersTitle": "Temettü hatırlatıcıları",
+  "dividendRemindersSubtitle": "Kaydettiğiniz ödemelerin düzenine göre temettü beklenen gün, kaydedebilmeniz için bildirim"
 }

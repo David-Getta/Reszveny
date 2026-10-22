@@ -2107,6 +2107,23 @@ class AppLocalizationsFf extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return 'Dividende $symbol habbaaɗo hannde';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Hono $amount. So yettii, winndu ɗum e portfolio maa.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Siftorɗe dividende';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Tintinol ñalawma nde dividende habbaa, rewrude e ɗoggol yoɓdiiji ɗe mbinnduɗaa, ngam a waawa winndude ɗum';
+
+  @override
   String get earningsRemindersTitle => 'Siftorɗe ngalluuji';
 
   @override

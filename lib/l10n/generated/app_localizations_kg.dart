@@ -2120,6 +2120,23 @@ class AppLocalizationsKg extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return 'Dividende ya $symbol bo ke vingila yo bubu';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Pene-pene $amount. Sonika yo na portefeuille na nge kana yo me kwisa.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Kiyibusu ya dividende';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Nkebisu na kilumbu yina bo ke vingila dividende na kutadila mutindu ya ba futa yina nge sonikaka, sambu nge sonika yo';
+
+  @override
   String get earningsRemindersTitle => 'Kiyibusu ya ba résultats';
 
   @override

@@ -768,5 +768,9 @@
   "portfolioBeta": "投资组合贝塔系数",
   "glossPortfolioBeta": "按市值加权的持仓股票贝塔系数：大盘涨跌 1% 时，您的股票大约涨跌百分之几。高于 1 表示波动大于大盘，低于 1 则小于大盘。不含现金。",
   "portfolioTop3": "前三大持仓",
-  "glossPortfolioTop3": "您的股票市值中有多少集中在前三大持仓。比例越高，单一公司的坏消息对整个投资组合的冲击就越大。"
+  "glossPortfolioTop3": "您的股票市值中有多少集中在前三大持仓。比例越高，单一公司的坏消息对整个投资组合的冲击就越大。",
+  "dividendReminderTitle": "{symbol} 预计今天派息",
+  "dividendReminderBody": "约 {amount}。到账后请记入投资组合。",
+  "dividendRemindersTitle": "派息提醒",
+  "dividendRemindersSubtitle": "根据您记录的派息节奏，在预计派息当天发送通知，方便您及时记录"
 }

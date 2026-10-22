@@ -768,5 +768,9 @@
   "portfolioBeta": "Beta sama aksiyoŋ yi",
   "glossPortfolioBeta": "Beta sa aksiyoŋ yi, ñu natt ko ci seen njëg: lu tollu ci ñaata ci téeméer la sa aksiyoŋ yi di yëngu bu marse bi yëngoo 1%. Bu ëppee 1, dañuy yëngu lu ëpp marse bi; bu yées 1, dañuy yëngu lu néew. Xaalis bi bokkul ci.",
   "portfolioTop3": "3 aksiyoŋ yi gëna mag",
-  "glossPortfolioTop3": "Ñaata ci njëgu sa aksiyoŋ yi moo nekk ci sa ñetti aksiyoŋ yi gëna mag. Lu mu gën a kawe, lu gën a bare la xibaar bu bon ci benn kompaañi rekk mën a lor sa aksiyoŋ yépp."
+  "glossPortfolioTop3": "Ñaata ci njëgu sa aksiyoŋ yi moo nekk ci sa ñetti aksiyoŋ yi gëna mag. Lu mu gën a kawe, lu gën a bare la xibaar bu bon ci benn kompaañi rekk mën a lor sa aksiyoŋ yépp.",
+  "dividendReminderTitle": "{symbol}: dividande bu ñuy xaar tey",
+  "dividendReminderBody": "Lu tollu ci {amount}. Bu agsee, bind ko ci sa portfolio.",
+  "dividendRemindersTitle": "Fàttali dividande",
+  "dividendRemindersSubtitle": "Yégle ci bés bi ñuy xaar dividande, ci anam fey yi nga bind, ngir nga man koo bind"
 }

@@ -2125,6 +2125,23 @@ class AppLocalizationsTs extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return '$symbol: dividende leyi languteriweke namuntlha';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Kwalomu ka $amount. Yi tsale eka phothifoliyo ya wena loko yi fika.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Swotsundzuxo swa dividende';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Xitiviso hi siku leri dividende yi languteriweke ha rona hi ku ya hi ndlela ya tihakelo leti u ti tsaleke, leswaku u kota ku yi tsala';
+
+  @override
   String get earningsRemindersTitle => 'Swotsundzuxo swa mbuyelo';
 
   @override

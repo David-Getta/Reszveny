@@ -768,5 +768,9 @@
   "portfolioBeta": "Beta na jakar hannun jari",
   "glossPortfolioBeta": "Beta na hannun jarinka, an auna shi bisa ƙimarsu: kusan kashi nawa ne hannun jarinka ke motsawa idan kasuwa ta motsa da 1%. Sama da 1 suna jujjuyawa fiye da kasuwa, ƙasa da 1 ƙasa da haka. Ba a haɗa tsabar kuɗi ba.",
   "portfolioTop3": "Manyan matsayi 3",
-  "glossPortfolioTop3": "Nawa ne daga ƙimar hannun jarinka ke cikin manyan matsayinka uku. Idan ya ƙara girma, mummunan labari game da kamfani ɗaya kaɗai zai fi iya cutar da dukan jakar hannun jari."
+  "glossPortfolioTop3": "Nawa ne daga ƙimar hannun jarinka ke cikin manyan matsayinka uku. Idan ya ƙara girma, mummunan labari game da kamfani ɗaya kaɗai zai fi iya cutar da dukan jakar hannun jari.",
+  "dividendReminderTitle": "Ana sa ran rabon ribar {symbol} yau",
+  "dividendReminderBody": "Kusan {amount}. Rubuta shi a fayil ɗinka da zarar ya iso.",
+  "dividendRemindersTitle": "Tunatarwar rabon riba",
+  "dividendRemindersSubtitle": "Sanarwa a ranar da ake sa ran rabon riba bisa tsarin biyan da ka rubuta, don ka rubuta shi"
 }

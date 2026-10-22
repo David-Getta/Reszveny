@@ -768,5 +768,9 @@
   "portfolioBeta": "Beetaa poortfooliyoo",
   "glossPortfolioBeta": "Beetaa aksiyoonota keetii, akka gatii isaaniitti madaalame: gabaan 1% yoo sochoo'u, aksiyoonni kee tilmaamaan dhibbeentaa meeqa akka sochoo'an agarsiisa. 1 ol yoo ta'e gabaa caalaa jijjiiramu, 1 gadi yoo ta'e xiqqaa. Maallaqni callaa hin dabalamne.",
   "portfolioTop3": "Qabiyyeewwan gurguddoo 3",
-  "glossPortfolioTop3": "Gatii aksiyoonota keetii keessaa hammi kam qabiyyeewwan kee sadan gurguddoo keessa akka jiru. Hammuma ol ka'een, oduun badaan dhaabbata tokkoo poortfooliyoo guutuu caalaatti miidhuu danda'a."
+  "glossPortfolioTop3": "Gatii aksiyoonota keetii keessaa hammi kam qabiyyeewwan kee sadan gurguddoo keessa akka jiru. Hammuma ol ka'een, oduun badaan dhaabbata tokkoo poortfooliyoo guutuu caalaatti miidhuu danda'a.",
+  "dividendReminderTitle": "{symbol}: har'a diviidendii eegama",
+  "dividendReminderBody": "Gara {amount}. Yeroo ga'u poortfooliyoo kee keessatti galmeessi.",
+  "dividendRemindersTitle": "Yaadachiisa diviidendii",
+  "dividendRemindersSubtitle": "Beeksisa guyyaa diviidendiin akkaataa kaffaltiiwwan ati galmeessiteetiin eegamu, akka galmeessuu dandeessuuf"
 }

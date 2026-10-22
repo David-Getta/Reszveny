@@ -2107,6 +2107,23 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
+  String dividendReminderTitle(String symbol) {
+    return 'A na-atụ anya nkesa uru $symbol taa';
+  }
+
+  @override
+  String dividendReminderBody(String amount) {
+    return 'Ihe dị ka $amount. Dekọọ ya na pọtfolio gị ozugbo ọ bịarutere.';
+  }
+
+  @override
+  String get dividendRemindersTitle => 'Ncheta nkesa uru';
+
+  @override
+  String get dividendRemindersSubtitle =>
+      'Ọkwa n\'ụbọchị a na-atụ anya nkesa uru dịka usoro ụgwọ ị dekọrọ si dị, ka i wee dekọọ ya';
+
+  @override
   String get earningsRemindersTitle => 'Ncheta nsonaazụ';
 
   @override
