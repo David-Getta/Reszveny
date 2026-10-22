@@ -7,6 +7,7 @@ import 'package:test/test.dart';
 import 'package:whatstock_server/src/api.dart';
 import 'package:whatstock_server/src/db.dart';
 import 'package:whatstock_server/src/purchase_verifier.dart';
+import 'package:whatstock_server/src/glossary_data.dart';
 import 'package:whatstock_server/src/site_pages.dart';
 
 void main() {
@@ -149,4 +150,31 @@ void main() {
     );
     expect(await (await get('/sitemap.xml')).readAsString(), contains('<loc>https://ws.example/sample?lang=hu</loc>'));
   });
+
+  test(
+    'the glossary page: every figure of the app with its plain explanation, anchors, linked and in the sitemap',
+    () async {
+      final hu = await (await get('/glossary?lang=hu')).readAsString();
+      expect(hu, contains('<title>Fogalomtár – részvénymutatók közérthetően – WhatStock</title>'));
+      expect(RegExp('<h2 id="').allMatches(hu), hasLength(glossaryEntries['hu']!.length));
+      expect(glossaryEntries['hu']!.length, glossaryEntries['en']!.length);
+      expect(hu, contains('Osztalékhozam'));
+      expect(hu, contains('id="${glossarySlug(glossaryEntries['en']!.first.$1)}"'));
+      final en = await (await get('/glossary')).readAsString();
+      expect(en, contains('<h1>Glossary</h1>'));
+      expect(en, contains('Dividend yield'));
+      expect(glossarySlug('P/E (TTM)'), 'p-e-ttm');
+      expect(calls, isEmpty, reason: 'a fogalomtár nem kér piaci adatot');
+      expect(await (await get('/pricing?lang=hu')).readAsString(), contains('href="/glossary?lang=hu">Fogalomtár</a>'));
+      expect(
+        await (await get('/sitemap.xml')).readAsString(),
+        contains('<loc>https://ws.example/glossary?lang=en</loc>'),
+      );
+      // A részvény oldalán a fő mutatók alatt hivatkozás a fogalomtárra.
+      expect(
+        await (await get('/stocks/AAPL?lang=hu')).readAsString(),
+        contains('href="/glossary?lang=hu">Mit jelentenek ezek a mutatók?</a>'),
+      );
+    },
+  );
 }

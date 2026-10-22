@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'plans.dart';
+import 'glossary_data.dart';
 import 'shares.dart';
 
 /// A nyilvános oldalak: a megosztott elemzés (`/s/<id>`, link-előnézettel) és
@@ -200,6 +201,7 @@ const _site = {
     'privacy': 'Adatkezelési tájékoztató',
     'pricing': 'Árak',
     'sample': 'Milyen egy elemzés?',
+    'glossary': 'Fogalomtár',
   },
   'en': {
     'title': 'WhatStock – photograph a stock and understand it in minutes',
@@ -223,6 +225,7 @@ const _site = {
     'privacy': 'Privacy policy',
     'pricing': 'Pricing',
     'sample': 'See a sample analysis',
+    'glossary': 'Glossary',
   },
 };
 
@@ -272,6 +275,7 @@ String _footer(String lang) {
   return '<footer><p>${_esc(t['disclaimer'])}</p>'
       '<a href="/pricing?lang=$lang">${_esc(t['pricing'])}</a> · '
       '<a href="/sample?lang=$lang">${_esc(t['sample'])}</a> · '
+      '<a href="/glossary?lang=$lang">${_esc(t['glossary'])}</a> · '
       '<a href="/stocks?lang=$lang">${_esc(_stocks[lang]?['indexH1'] ?? 'Popular stocks')}</a> · '
       '<a href="/legal/terms?lang=$lang">${_esc(t['terms'])}</a> · '
       '<a href="/legal/privacy?lang=$lang">${_esc(t['privacy'])}</a></footer></main></body></html>';
@@ -392,6 +396,8 @@ String sitemapXml(String publicUrl) {
     '/pricing?lang=hu',
     '/sample?lang=en',
     '/sample?lang=hu',
+    '/glossary?lang=en',
+    '/glossary?lang=hu',
     '/stocks?lang=en',
     '/stocks?lang=hu',
     for (final s in popularStocks) ...['/stocks/$s?lang=en', '/stocks/$s?lang=hu'],
@@ -451,6 +457,7 @@ const _stocks = {
     'noDividend': 'nem fizet',
     'beta': 'Béta',
     'range52': '52 hetes sáv',
+    'whatMetrics': 'Mit jelentenek ezek a mutatók?',
     'ctaTitle': 'AI-elemzés a(z) {symbol} részvényről',
     'cta': 'A WhatStock percek alatt elmagyarázza, mi mozgatja a részvényt, mik a kockázatok, mennyit ér, és három forgatókönyvet ad az árfolyamra – a te nyelveden. Kérdezhetsz is utána.',
     'unavailable': 'Az árfolyam most nem érhető el.',
@@ -476,6 +483,7 @@ const _stocks = {
     'noDividend': 'none',
     'beta': 'Beta',
     'range52': '52-week range',
+    'whatMetrics': 'What do these figures mean?',
     'ctaTitle': 'AI analysis of {symbol}',
     'cta': 'WhatStock explains in minutes what moves the stock, the risks, the valuation and three scenarios for the price, in your language. You can ask follow-up questions too.',
     'unavailable': 'The price is not available right now.',
@@ -585,6 +593,7 @@ String stockPage(StockFacts s, {required String lang, required String downloadBa
   if (metrics.isNotEmpty) {
     b.write('<h2 style="font-size:17px;margin:18px 0 4px">${_esc(t['metrics'])}</h2>');
     table(metrics);
+    b.write('<p class="small"><a href="/glossary?lang=$lang">${_esc(t['whatMetrics'])}</a></p>');
   }
   b
     ..write('<p class="note">${_esc(t['delayed'])}</p></div>')
@@ -790,6 +799,57 @@ String samplePage({required String lang, required String downloadBase, String? p
     ..write('$h2${_esc(s('askT'))}</h2><p><b>${_esc(s('q'))}</b></p><p class="muted">${_esc(s('a'))}</p>')
     ..write('<p class="small muted" style="margin-top:18px">${_esc(s('generated'))}</p></div>')
     ..write('<div class="cta"><p>${_esc(s('cta'))}</p>${_downloadButtons(lang, downloadBase)}</div>')
+    ..write(_footer(lang));
+  return b.toString();
+}
+
+// ---- Fogalomtár (az app mutatóinak magyarázata a keresőknek) ----
+
+const _glossaryTexts = {
+  'hu': {
+    'title': 'Fogalomtár – részvénymutatók közérthetően – WhatStock',
+    'h1': 'Fogalomtár',
+    'intro': 'A WhatStock appban látható mutatók rövid, közérthető magyarázata – a P/E-től az osztalékhozamig. Az appban minden szám melletti ⓘ ugyanezt mutatja.',
+    'cta': 'A WhatStock a részvény saját számaival magyarázza el, mit jelentenek – és AI-elemzést ad róla, a te nyelveden.',
+  },
+  'en': {
+    'title': 'Glossary – stock metrics in plain words – WhatStock',
+    'h1': 'Glossary',
+    'intro': 'Short, plain explanations of the figures in the WhatStock app – from P/E to dividend yield. In the app, the ⓘ next to every number shows the same.',
+    'cta': 'WhatStock explains what these mean with the stock’s own numbers – and gives an AI analysis of it in your language.',
+  },
+};
+
+/// Horgony egy mutatóhoz az angol címkéből (mindkét nyelven ugyanaz): „P/E (TTM)” → `p-e-ttm`.
+String glossarySlug(String label) =>
+    label.toLowerCase().replaceAll(RegExp(r'[^a-z0-9]+'), '-').replaceAll(RegExp(r'^-+|-+$'), '');
+
+/// A fogalomtár oldala: a mutatók címkéje és közérthető magyarázata az app
+/// szövegeiből, horgonnyal; letöltés-gombokkal.
+String glossaryPage({required String lang, required String downloadBase, String? publicUrl}) {
+  final t = _glossaryTexts[lang] ?? _glossaryTexts['en']!;
+  final entries = glossaryEntries[lang] ?? glossaryEntries['en']!;
+  final slugs = [for (final (label, _) in glossaryEntries['en']!) glossarySlug(label)];
+  final b =
+      StringBuffer(
+          _head(
+            lang: lang,
+            title: t['title']!,
+            description: t['intro']!,
+            url: publicUrl == null ? null : '$publicUrl/glossary?lang=$lang',
+          ),
+        )
+        ..write('<div class="hero"><h1>${_esc(t['h1'])}</h1><p>${_esc(t['intro'])}</p></div>')
+        ..write('<div class="card">');
+  for (final (i, (label, text)) in entries.indexed) {
+    b
+      ..write(
+        '<h2 id="${_attr(slugs[i])}" style="font-size:17px;margin:${i == 0 ? 0 : 18}px 0 4px">${_esc(label)}</h2>',
+      )
+      ..write('<p class="muted" style="margin:0">${_esc(text)}</p>');
+  }
+  b
+    ..write('</div><div class="cta"><p>${_esc(t['cta'])}</p>${_downloadButtons(lang, downloadBase)}</div>')
     ..write(_footer(lang));
   return b.toString();
 }

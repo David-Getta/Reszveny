@@ -113,6 +113,9 @@ is bele kell írni (lásd a jogi dokumentumot).
   a keretek és az extra elemzések. Az árak a szerver `PlanSpec.usd`-jéből jönnek; egy teszt ellenőrzi,
   hogy egyeznek az app áraival (`lib/features/billing/pricing.dart`). A keresőknek `/robots.txt` és
   `/sitemap.xml` is van.
+- Fogalomtár: `https://<cím>/glossary` (`?lang=hu` vagy `en`) – az app mutatóinak közérthető magyarázata,
+  horgonyokkal (pl. `#dividend-yield`); a szövegek az appból generáltak (`python3 tool/glossary/gen_server_glossary.py`,
+  a `server/lib/src/glossary_data.dart` generált fájl), egy app-teszt jelzi, ha újra kell generálni.
 - Minta-elemzés: `https://<cím>/sample` (`?lang=hu` vagy `en`) – egy illusztratív elemzés kitalált cégen
   (lényeg, hangulat, forgatókönyvek, kulcsszintek, szekciók, kérdés-válasz), a nyitóoldalról és a láblécből
   linkelve, a sitemapben; piaci adatot nem kér.
