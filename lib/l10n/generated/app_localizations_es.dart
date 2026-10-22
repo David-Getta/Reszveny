@@ -2008,6 +2008,20 @@ class AppLocalizationsEs extends AppLocalizations {
       'La parte del beneficio que se reparte como dividendos. Por encima del 100% la empresa paga más de lo que gana, algo que rara vez dura.';
 
   @override
+  String get portfolioBeta => 'Beta de la cartera';
+
+  @override
+  String get glossPortfolioBeta =>
+      'La beta de tus acciones, ponderada por su valor: aproximadamente cuánto por ciento se mueven tus acciones cuando el mercado se mueve un 1%. Por encima de 1 oscilan más que el mercado; por debajo de 1, menos. No incluye el efectivo.';
+
+  @override
+  String get portfolioTop3 => '3 posiciones principales';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Qué parte del valor de tus acciones está en tus tres mayores posiciones. Cuanto más alto es, más puede dañar a toda la cartera una mala noticia de una sola empresa.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Cuánto ha crecido de media cada año el dividendo por acción en los últimos cinco años. Un crecimiento constante suele indicar que la empresa confía en su flujo de caja; un recorte a menudo es una señal de alarma.';
 

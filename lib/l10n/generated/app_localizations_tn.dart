@@ -2014,6 +2014,20 @@ class AppLocalizationsTn extends AppLocalizations {
       'Seabe sa poelo se se duelwang e le dividende. Fa godimo ga 100% khampani e duela go feta se e se dirang, mme seo ga se tswelele gantsi.';
 
   @override
+  String get portfolioBeta => 'Beta ya potefolio';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Beta ya dishere tsa gago, e lekantsweng go ya ka boleng jwa tsone: e bontsha gore dishere tsa gago di tsamaya ka diperesente di le kae fa mmaraka o tsamaya ka 1%. Fa e feta 1 di fetoga go feta mmaraka, fa e le kwa tlase ga 1 di fetoga go le gonnye. Madi ga a akarediwe.';
+
+  @override
+  String get portfolioTop3 => 'Dishere tse 3 tse dikgolo';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Gore ke karolo e kae ya boleng jwa dishere tsa gago e e leng mo dishereng tsa gago tse tharo tse dikgolo thata. Fa e le kwa godimo, dikgang tse di sa siamang tsa khampani e le nngwe fela di ka utlwisa potefolio yotlhe botlhoko go feta.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Gore dividende ka shere e golile bokae ka ngwaga ka palogare mo dingwageng di le tlhano tse di fetileng. Kgolo e e tsepameng gantsi e kaya gore khampani e ikanya kelelo ya yone ya madi; phokotso gantsi ke sesupo sa tlhagiso.';
 

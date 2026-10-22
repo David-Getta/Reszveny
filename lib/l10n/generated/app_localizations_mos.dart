@@ -1989,6 +1989,20 @@ class AppLocalizationsMos extends AppLocalizations {
       'Nafa pʋɩɩr b sẽn pʋɩt wala dividãnd. A sã n yɩɩd 100%, kʋmpaanã yaoda n yɩɩd a sẽn paamã, la yẽ pa kẽnd wakat wʋsg ye.';
 
   @override
+  String get portfolioBeta => 'Portfey beta';
+
+  @override
+  String get glossPortfolioBeta =>
+      'F aksiõ-rãmbã beta, sẽn mak ne b yõodo: a wilgda f aksiõ-rãmbã sẽn kẽnd wa wãna, raagã sã n kẽng 1%. 1 sẽn yɩɩda, b kẽnda n yɩɩd raagã; 1 sẽn pa ta, b kẽnda n pa ta raagã. Ligdã pa be pʋgẽ ye.';
+
+  @override
+  String get portfolioTop3 => 'Aksiõ kãsems 3';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'F aksiõ-rãmbã yõodã zĩig a wãna n be f aksiõ kãsems a tãabã pʋgẽ. A sã n yɩɩd n zẽka, kibar-wẽng sẽn tũ sosayet a ye bal tõe n sãam portfey wã fãa n paase.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Dividãnd aksiõ fãa sẽn paas to-to yʋʋmd fãa, b sã n mak a sʋka, yʋʋm a nu sẽn loogã pʋgẽ. Paasg sẽn pa sãamde wilgdame tɩ kʋmpaanã tẽeda a ligd sẽn kẽedã; a sã n booge, yaa makr sẽn wilgd tɩ f gũus f meng.';
 

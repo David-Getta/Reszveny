@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.178)
+# Változásjegyzék (0.2.130 → 0.2.179)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -29,6 +29,11 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - A részvény oldalán az **„Osztalék” kártya** az 5 éves osztaléknövekedéssel és a saját részvényekre jutó
   évi osztalékkal; ha a cég nem fizet, ezt egy mondat mondja ki (az összehasonlításban is új sor).
 
+## Kockázat
+
+- A megoszlás-kártya alján a **portfólió-béta** (a részvények bétája az értékükkel súlyozva) és **a 3
+  legnagyobb pozíció súlya**, ⓘ magyarázattal (a fogalomtár 32 mutatója); az AI-portfólióelemzés is megkapja.
+
 ## Készpénz
 
 - **Készpénz a brókernél** pénznemenként: az összértékbe és a megoszlásba számít, a hozamba nem; a cél-sávban,
@@ -51,7 +56,7 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
   összehasonlításban (köztük a kifizetési arány), trendkép a portfólió-grafikonon.
 - **„Jelzések”** sáv a Kedvencek oldalon (RSI szélsőség, a 200 napos átlag átlépése), napi
   rendszerértesítés asztali gépen (kikapcsolható), a heti e-mailben is.
-- **Fogalomtár** a Beállításokban: 30 mutató közérthető magyarázata, kereshetően; ⓘ a kártyák számainál.
+- **Fogalomtár** a Beállításokban: 32 mutató közérthető magyarázata, kereshetően; ⓘ a kártyák számainál.
 
 ## Események
 

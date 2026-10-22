@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Dividend ƒe taɖodzinu ɣleti sia ɣleti",
   "dividendGoalAmount": "Dividend ɣleti sia ɣleti",
   "dividendGoalProgress": "Ɖe egbe agbɔsɔsɔ nu, abe {amount} ene ɣleti sia ɣleti · {percent} · Taɖodzinu: {goal}",
-  "dividendGoalReached": "Ɖe egbe agbɔsɔsɔ nu, abe {amount} ene ɣleti sia ɣleti · Èɖo taɖodzinu: {goal}"
+  "dividendGoalReached": "Ɖe egbe agbɔsɔsɔ nu, abe {amount} ene ɣleti sia ɣleti · Èɖo taɖodzinu: {goal}",
+  "portfolioBeta": "Akpawo ƒe beta",
+  "glossPortfolioBeta": "Wò akpawo ƒe beta, si wodzidze ɖe woƒe asixɔxɔ nu: ɖe le alafa me nenie wò akpawo ʋãna kloe ne asi la ʋã 1%. Ne ekɔ wu 1 la, woʋuʋuna wu asi la; ne ele 1 te la, woʋuʋuna sue wu. Womebu ga le asi ɖe eme o.",
+  "portfolioTop3": "Akpa 3 gãtowo",
+  "glossPortfolioTop3": "Wò akpawo ƒe asixɔxɔ ƒe akpa ka le akpa etɔ̃ gãtɔ siwo le asiwò la me. Alesi wòkɔ wu la, nenema ke nya vɔ̃ tso dɔwɔƒe ɖeka ŋu ate ŋu agblẽ nu le wò akpawo katã ŋu wu."
 }

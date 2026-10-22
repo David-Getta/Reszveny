@@ -45,6 +45,8 @@ void main() {
       invested: 4278402,
       dividendYield: 1.31,
       dividendsReceived: 41250.4,
+      beta: 1.1234,
+      top3Weight: 0.643,
       expectedDividends: const [
         {'symbol': 'AAPL', 'date': '2026-11-13', 'amount': 4.68, 'currency': 'USD'},
       ],
@@ -53,6 +55,8 @@ void main() {
     );
     final user = ((body['messages'] as List).single as Map)['content'] as String;
     expect(user, contains('"dividends_received_12m":41250'));
+    expect(user, contains('"portfolio_beta":1.12'));
+    expect(user, contains('"top3_weight_pct":64'));
     expect(
       user,
       contains('"expected_dividends":[{"symbol":"AAPL","date":"2026-11-13","amount":4.68,"currency":"USD"}]'),

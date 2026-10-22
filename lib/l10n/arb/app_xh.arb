@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Usukelo lwe-dividend lwenyanga",
   "dividendGoalAmount": "I-dividend ngenyanga",
   "dividendGoalProgress": "Malunga ne-{amount} ngenyanga ngesivuno sanamhlanje · {percent} · Usukelo: {goal}",
-  "dividendGoalReached": "Malunga ne-{amount} ngenyanga ngesivuno sanamhlanje · Usukelo lufikelelwe: {goal}"
+  "dividendGoalReached": "Malunga ne-{amount} ngenyanga ngesivuno sanamhlanje · Usukelo lufikelelwe: {goal}",
+  "portfolioBeta": "I-beta yepotifoliyo",
+  "glossPortfolioBeta": "I-beta yezabelo zakho, ilinganiswe ngokwexabiso lazo: imalunga nepesenti ezingaphi izabelo zakho ezihamba ngazo xa imarike ihamba nge-1%. Ngaphezu kwe-1 zitshintsha ngaphezu kwemarike, ngaphantsi kwe-1 kancinci. Imali ayibandakanywanga.",
+  "portfolioTop3": "Iipozishini ezi-3 ezinkulu",
+  "glossPortfolioTop3": "Ingakanani ixabiso lezabelo zakho elikwiipozishini zakho ezintathu ezinkulu kakhulu. Okukhona liphezulu, kokukhona iindaba ezimbi zenkampani enye zinokonakalisa ipotifoliyo yonke."
 }

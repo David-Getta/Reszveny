@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Ekiruubirirwa kya dividendi buli mwezi",
   "dividendGoalAmount": "Dividendi buli mwezi",
   "dividendGoalProgress": "Nga {amount} buli mwezi ku magoba ga leero · {percent} · Ekiruubirirwa: {goal}",
-  "dividendGoalReached": "Nga {amount} buli mwezi ku magoba ga leero · Otuuse ku kiruubirirwa: {goal}"
+  "dividendGoalReached": "Nga {amount} buli mwezi ku magoba ga leero · Otuuse ku kiruubirirwa: {goal}",
+  "portfolioBeta": "Beta y'emigabo gyo",
+  "glossPortfolioBeta": "Beta y'emigabo gyo, epimiddwa okusinziira ku muwendo gwagyo: kumpi ebitundu ku kikumi bimeka emigabo gyo bye gitambula akatale bwe katambula 1%. Waggulu wa 1 gikyukakyuka okusinga akatale, wansi wa 1 kitono. Ensimbi enkalu tezibalibwa.",
+  "portfolioTop3": "Emigabo 3 egisinga obunene",
+  "glossPortfolioTop3": "Omuwendo gw'emigabo gyo gwenkana wa oguli mu migabo gyo esatu egisinga obunene. Gye gukoma okuba waggulu, amawulire amabi ku kkampuni emu yokka gye gakoma okusobola okwonoona emigabo gyo gyonna."
 }

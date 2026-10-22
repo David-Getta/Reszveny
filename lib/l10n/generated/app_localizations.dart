@@ -3589,6 +3589,30 @@ abstract class AppLocalizations {
   /// **'The share of profit paid out as dividends. Above 100% the company pays more than it earns, which rarely lasts.'**
   String get glossPayoutRatio;
 
+  /// Figure on the portfolio's allocation card: the value-weighted average beta of the held stocks, like '1.12'.
+  ///
+  /// In en, this message translates to:
+  /// **'Portfolio beta'**
+  String get portfolioBeta;
+
+  /// Plain-language explanation of the portfolio beta, opened from the info icon and listed in the glossary.
+  ///
+  /// In en, this message translates to:
+  /// **'The beta of your stocks, weighted by their value: roughly how many percent your stocks move when the market moves 1%. Above 1 they swing more than the market, below 1 less. Cash is not included.'**
+  String get glossPortfolioBeta;
+
+  /// Figure on the portfolio's allocation card: the combined share of the three largest positions in the value of the stocks, like '64%'.
+  ///
+  /// In en, this message translates to:
+  /// **'Top 3 positions'**
+  String get portfolioTop3;
+
+  /// Plain-language explanation of the top-3 concentration figure, opened from the info icon and listed in the glossary.
+  ///
+  /// In en, this message translates to:
+  /// **'How much of your stocks\' value sits in your three largest positions. The higher it is, the more bad news at a single company can hurt the whole portfolio.'**
+  String get glossPortfolioTop3;
+
   /// Plain-language explanation of the metric shown as labelDividendGrowth5y, opened from the info icon on the stock page and listed in the glossary.
   ///
   /// In en, this message translates to:

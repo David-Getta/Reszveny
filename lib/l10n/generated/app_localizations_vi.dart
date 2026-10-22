@@ -1998,6 +1998,20 @@ class AppLocalizationsVi extends AppLocalizations {
       'Phần lợi nhuận được chi trả dưới dạng cổ tức. Trên 100% thì công ty chi nhiều hơn số tiền kiếm được, điều hiếm khi kéo dài.';
 
   @override
+  String get portfolioBeta => 'Beta danh mục';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Beta của các cổ phiếu bạn nắm giữ, có trọng số theo giá trị: cổ phiếu của bạn biến động khoảng bao nhiêu phần trăm khi thị trường biến động 1%. Trên 1 thì dao động mạnh hơn thị trường, dưới 1 thì ít hơn. Không tính tiền mặt.';
+
+  @override
+  String get portfolioTop3 => '3 vị thế lớn nhất';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Tỷ trọng giá trị cổ phiếu của bạn nằm trong ba vị thế lớn nhất. Tỷ lệ này càng cao, tin xấu từ một công ty duy nhất càng có thể ảnh hưởng nhiều đến toàn bộ danh mục.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Cổ tức trên mỗi cổ phiếu đã tăng trung bình bao nhiêu mỗi năm trong 5 năm qua. Tăng trưởng đều đặn thường cho thấy công ty tin tưởng vào dòng tiền của mình; việc cắt giảm thường là dấu hiệu cảnh báo.';
 

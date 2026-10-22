@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Kuukausittainen osinkotavoite",
   "dividendGoalAmount": "Osingot kuukaudessa",
   "dividendGoalProgress": "Noin {amount} kuukaudessa nykyisillä tuotoilla: {percent} tavoitteesta {goal}",
-  "dividendGoalReached": "Noin {amount} kuukaudessa nykyisillä tuotoilla: tavoite {goal} saavutettu"
+  "dividendGoalReached": "Noin {amount} kuukaudessa nykyisillä tuotoilla: tavoite {goal} saavutettu",
+  "portfolioBeta": "Salkun beta",
+  "glossPortfolioBeta": "Osakkeidesi beta painotettuna niiden arvolla: suunnilleen kuinka monta prosenttia osakkeesi liikkuvat, kun markkina liikkuu 1 %. Jos se on yli 1, ne heiluvat markkinaa enemmän, jos alle 1, vähemmän. Käteistä ei lasketa mukaan.",
+  "portfolioTop3": "3 suurinta omistusta",
+  "glossPortfolioTop3": "Kuinka suuri osa osakkeidesi arvosta on kolmessa suurimmassa omistuksessasi. Mitä suurempi osuus on, sitä enemmän yhden yhtiön huonot uutiset voivat vahingoittaa koko salkkua."
 }

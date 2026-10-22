@@ -2012,6 +2012,20 @@ class AppLocalizationsRw extends AppLocalizations {
       'Igice cy\'inyungu kigabanywa abanyamigabane. Hejuru ya 100% ikigo gitanga ibirenze ibyo cyinjiza, kandi ibyo ntibikunze kuramba.';
 
   @override
+  String get portfolioBeta => 'Beta y\'ishoramari';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Beta y\'imigabane yawe, ipimwe hakurikijwe agaciro kayo: ni nk\'ijanisha imigabane yawe ihindagurikaho iyo isoko rihindagutse 1%. Hejuru ya 1 ihindagurika kurusha isoko, munsi ya 1 ihindagurika gake. Amafaranga ntabarirwamo.';
+
+  @override
+  String get portfolioTop3 => 'Imigabane 3 minini';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Igice cy\'agaciro k\'imigabane yawe kiri mu migabane yawe itatu minini kurusha iyindi. Uko kiri hejuru, ni ko inkuru mbi z\'ikigo kimwe gusa zishobora kwangiza ishoramari ryawe ryose.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Uko inyungu kuri buri mugabane yazamutse ku mwaka, ku kigereranyo, mu myaka itanu ishize. Izamuka rihoraho akenshi risobanura ko ikigo cyizeye amafaranga cyinjiza; kuyigabanya akenshi ni ikimenyetso cyo kuburira.';
 

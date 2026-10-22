@@ -2005,6 +2005,20 @@ class AppLocalizationsJv extends AppLocalizations {
       'Bagean bathi sing dibayarake minangka dividen. Ing ndhuwur 100% perusahaan mbayar luwih akeh tinimbang sing diasilake, lan iki arang suwe.';
 
   @override
+  String get portfolioBeta => 'Beta portofolio';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Beta saham sampeyan, ditimbang miturut regane: kira-kira pirang persen saham sampeyan obah nalika pasar obah 1%. Ing ndhuwur 1 obahe luwih gedhe tinimbang pasar, ing ngisor 1 luwih cilik. Kas ora kalebu.';
+
+  @override
+  String get portfolioTop3 => '3 posisi paling gedhe';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Pira bagean saka rega saham sampeyan sing ana ing telung posisi paling gedhe sampeyan. Saya dhuwur, saya gedhe kerugian sing bisa ditimbulake kabar ala saka siji perusahaan marang kabeh portofolio.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Sepira dividen saben saham tuwuh rata-rata saben taun sajrone limang taun pungkasan. Tuwuh sing stabil biasane ateges perusahaan percaya marang arus kase; pemotongan asring dadi tandha bebaya.';
 

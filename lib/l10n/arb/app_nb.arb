@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Månedlig utbyttemål",
   "dividendGoalAmount": "Utbytte per måned",
   "dividendGoalProgress": "Rundt {amount} i måneden med dagens direkteavkastning: {percent} av målet ditt på {goal}",
-  "dividendGoalReached": "Rundt {amount} i måneden med dagens direkteavkastning: målet ditt på {goal} er nådd"
+  "dividendGoalReached": "Rundt {amount} i måneden med dagens direkteavkastning: målet ditt på {goal} er nådd",
+  "portfolioBeta": "Porteføljebeta",
+  "glossPortfolioBeta": "Betaen til aksjene dine, vektet etter verdien deres: omtrent hvor mange prosent aksjene dine beveger seg når markedet beveger seg 1 %. Over 1 svinger de mer enn markedet, under 1 mindre. Kontanter er ikke tatt med.",
+  "portfolioTop3": "3 største beholdninger",
+  "glossPortfolioTop3": "Hvor stor del av verdien av aksjene dine som ligger i de tre største beholdningene dine. Jo høyere den er, desto mer kan dårlige nyheter fra ett enkelt selskap skade hele porteføljen."
 }

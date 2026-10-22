@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Oylik dividend maqsadi",
   "dividendGoalAmount": "Oyiga dividend",
   "dividendGoalProgress": "Bugungi daromadlilikda oyiga taxminan {amount} · {percent} · maqsad: {goal}",
-  "dividendGoalReached": "Bugungi daromadlilikda oyiga taxminan {amount} · Maqsadga erishildi: {goal}"
+  "dividendGoalReached": "Bugungi daromadlilikda oyiga taxminan {amount} · Maqsadga erishildi: {goal}",
+  "portfolioBeta": "Portfel betasi",
+  "glossPortfolioBeta": "Aksiyalaringizning qiymatiga koʻra tortilgan betasi: bozor 1% harakatlanganda aksiyalaringiz taxminan necha foiz harakatlanishini koʻrsatadi. 1 dan yuqori boʻlsa, ular bozordan koʻproq tebranadi, 1 dan past boʻlsa — kamroq. Naqd pul hisobga olinmaydi.",
+  "portfolioTop3": "Eng yirik 3 pozitsiya",
+  "glossPortfolioTop3": "Aksiyalaringiz qiymatining qancha qismi eng yirik uchta pozitsiyangizda ekanini koʻrsatadi. U qanchalik yuqori boʻlsa, bitta kompaniya haqidagi yomon xabar butun portfelga shunchalik koʻp zarar yetkazishi mumkin."
 }

@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Yoolka qaybta faa'iidada bishii",
   "dividendGoalAmount": "Qaybta faa'iidada bishii",
   "dividendGoalProgress": "Qiyaastii {amount} bishii sida heerka maanta · {percent} · Yool: {goal}",
-  "dividendGoalReached": "Qiyaastii {amount} bishii sida heerka maanta · Yoolka waa la gaadhay: {goal}"
+  "dividendGoalReached": "Qiyaastii {amount} bishii sida heerka maanta · Yoolka waa la gaadhay: {goal}",
+  "portfolioBeta": "Beta-da portfoliyada",
+  "glossPortfolioBeta": "Beta-da saamiyadaada, oo lagu miisaamay qiimahooda: qiyaastii boqolkiiba intee ayay saamiyadaadu dhaqaaqaan marka suuqu dhaqaaqo 1%. Ka sarreeya 1 waxay isbeddelaan in ka badan suuqa, ka hooseeya 1 in ka yar. Lacagta caddaanka ah kuma jirto.",
+  "portfolioTop3": "3-da haysasho ee ugu waaweyn",
+  "glossPortfolioTop3": "Inta qiimaha saamiyadaada ka mid ah ee ku jirta saddexda haysasho ee kuugu waaweyn. Inta uu sarreeyo, ayay war xun oo ku saabsan hal shirkad oo keliya si weyn u dhaawici kartaa portfoliyada oo dhan."
 }

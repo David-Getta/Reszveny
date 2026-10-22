@@ -2000,6 +2000,20 @@ class AppLocalizationsId extends AppLocalizations {
       'Bagian laba yang dibagikan sebagai dividen. Di atas 100% perusahaan membayar lebih dari yang dihasilkannya, dan itu jarang bertahan lama.';
 
   @override
+  String get portfolioBeta => 'Beta portofolio';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Beta saham Anda, dibobot menurut nilainya: kira-kira berapa persen saham Anda bergerak saat pasar bergerak 1%. Di atas 1 berarti saham Anda berayun lebih besar daripada pasar, di bawah 1 lebih kecil. Kas tidak termasuk.';
+
+  @override
+  String get portfolioTop3 => '3 posisi teratas';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Seberapa besar nilai saham Anda yang berada di tiga posisi terbesar Anda. Makin tinggi angkanya, makin besar kerugian yang bisa ditimbulkan kabar buruk dari satu perusahaan saja terhadap seluruh portofolio.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Seberapa besar dividen per saham tumbuh rata-rata per tahun selama lima tahun terakhir. Pertumbuhan yang stabil biasanya berarti perusahaan yakin dengan arus kasnya; pemangkasan sering kali merupakan tanda peringatan.';
 

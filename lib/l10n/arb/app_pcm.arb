@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Monthly dividend target",
   "dividendGoalAmount": "Dividend every month",
   "dividendGoalProgress": "About {amount} every month for today yield: {percent} of your {goal} target",
-  "dividendGoalReached": "About {amount} every month for today yield: you don hit your {goal} target"
+  "dividendGoalReached": "About {amount} every month for today yield: you don hit your {goal} target",
+  "portfolioBeta": "Portfolio beta",
+  "glossPortfolioBeta": "Di beta of your stocks, weighed by how much each one worth: about how many percent your stocks dey move when di market move 1%. If e pass 1, dem dey swing pass di market; if e dey under 1, dem no dey swing reach. Cash no dey inside.",
+  "portfolioTop3": "Top 3 stocks",
+  "glossPortfolioTop3": "How much of your stocks' value dey inside your three biggest stocks. Di higher e be, di more bad news for one company fit damage your whole portfolio."
 }

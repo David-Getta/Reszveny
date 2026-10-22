@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Månatligt utdelningsmål",
   "dividendGoalAmount": "Utdelning per månad",
   "dividendGoalProgress": "Cirka {amount} i månaden med dagens direktavkastning: {percent} av ditt mål på {goal}",
-  "dividendGoalReached": "Cirka {amount} i månaden med dagens direktavkastning: ditt mål på {goal} är nått"
+  "dividendGoalReached": "Cirka {amount} i månaden med dagens direktavkastning: ditt mål på {goal} är nått",
+  "portfolioBeta": "Portföljbeta",
+  "glossPortfolioBeta": "Betan för dina aktier, viktad efter deras värde: ungefär hur många procent dina aktier rör sig när marknaden rör sig 1 %. Över 1 svänger de mer än marknaden, under 1 mindre. Kontanter ingår inte.",
+  "portfolioTop3": "3 största innehav",
+  "glossPortfolioTop3": "Hur stor del av värdet på dina aktier som ligger i dina tre största innehav. Ju högre den är, desto mer kan dåliga nyheter om ett enda bolag skada hela portföljen."
 }

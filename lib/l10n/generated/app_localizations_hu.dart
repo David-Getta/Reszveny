@@ -2007,6 +2007,20 @@ class AppLocalizationsHu extends AppLocalizations {
       'A nyereség mekkora részét fizeti ki osztalékként. 100% fölött többet fizet, mint amennyit keres, ami ritkán tartható.';
 
   @override
+  String get portfolioBeta => 'Portfólió-béta';
+
+  @override
+  String get glossPortfolioBeta =>
+      'A részvényeid bétája az értékükkel súlyozva: nagyjából hány százalékot mozdulnak a részvényeid, ha a piac 1%-ot. 1 fölött nagyobbakat lengenek, mint a piac, 1 alatt kisebbeket. A készpénz nincs benne.';
+
+  @override
+  String get portfolioTop3 => 'A 3 legnagyobb pozíció';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'A részvényeid értékének mekkora része van a három legnagyobb pozíciódban. Minél magasabb, annál jobban fájhat egyetlen cég rossz híre az egész portfóliónak.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Mennyivel nőtt átlagosan évente a részvényenkénti osztalék az elmúlt öt évben. Az egyenletes növekedés általában azt jelzi, hogy a cég bízik a pénztermelésében; a csökkentés gyakran figyelmeztető jel.';
 

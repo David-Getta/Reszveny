@@ -2013,6 +2013,20 @@ class AppLocalizationsQu extends AppLocalizations {
       'Gananciamanta hayk\'a t\'aqa dividendo hina rakisqa. 100% hanaqpi, empresa ganasqanmanta aswanta pagan, chayqa pisillata unan.';
 
   @override
+  String get portfolioBeta => 'Portafoliopa betan';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Accionniykikunap betan, chaninkunaman hina llasachisqa: qhatu 1% kuyuptin, accionniykikuna yaqa hayk\'a porcientota kuyunku. 1 hanaqpi kaptinqa qhatumanta aswan kuyunku, 1 uraypi kaptinqa aswan pisi. Qullqiqa mana yapakunchu.';
+
+  @override
+  String get portfolioTop3 => 'Aswan hatun 3 posicionkuna';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Accionniykikunap chaninmanta hayk\'an kimsa aswan hatun posicionniykikunapi kachkan. Aswan hatun kaptinqa, huk empresallamanta mana allin willakuykuna llapan portafolioykita aswan k\'irinman.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Sapa accionpaq dividendo hayk\'ata wiñarqan sapa wata, chawpinpi, qhipa pichqa watakunapi. Takyasqa wiñayqa achkha kutipi rikuchin empresa qullqi puriyninpi hap\'ipakusqanta; pisiyachiyqa achkha kutipi willakuq unancha.';
 

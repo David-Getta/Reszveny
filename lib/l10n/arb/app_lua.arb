@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Tshipatshila tsha dividende ku ngondo",
   "dividendGoalAmount": "Dividende ku ngondo",
   "dividendGoalProgress": "Pabuipi ne {amount} ku ngondo ne rendement wa lelu · {percent} · Tshipatshila: {goal}",
-  "dividendGoalReached": "Pabuipi ne {amount} ku ngondo ne rendement wa lelu · Tshipatshila tshikumbaja: {goal}"
+  "dividendGoalReached": "Pabuipi ne {amount} ku ngondo ne rendement wa lelu · Tshipatshila tshikumbaja: {goal}",
+  "portfolioBeta": "Bêta wa portefeuille",
+  "glossPortfolioBeta": "Bêta wa actions yebe, mupima bilondeshile mushinga wayi: pabuipi ne pourcentage bungi kayi budi actions yebe inyunguluka padi tshisalu tshinyunguluka 1%. Pa mutu pa 1, idi inyunguluka bikole kupita tshisalu; panshi pa 1, kakese. Mfranga ya mu bianza kayena ibadibua to.",
+  "portfolioTop3": "Position 3 minene",
+  "glossPortfolioTop3": "Tshitupa tshia mushinga wa actions yebe tshidi mu position yebe isatu minene. Padi tshitupa etshi tshivula, ke padi myanda mibi ya kompanyi umue patupu mua kunyanga portefeuille wonso bikole."
 }

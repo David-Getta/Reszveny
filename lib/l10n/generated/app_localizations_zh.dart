@@ -1906,6 +1906,20 @@ class AppLocalizationsZh extends AppLocalizations {
   String get glossPayoutRatio => '利润中以股息形式派发的比例。超过 100% 表示公司派发的比赚的还多，这很少能持久。';
 
   @override
+  String get portfolioBeta => '投资组合贝塔系数';
+
+  @override
+  String get glossPortfolioBeta =>
+      '按市值加权的持仓股票贝塔系数：大盘涨跌 1% 时，您的股票大约涨跌百分之几。高于 1 表示波动大于大盘，低于 1 则小于大盘。不含现金。';
+
+  @override
+  String get portfolioTop3 => '前三大持仓';
+
+  @override
+  String get glossPortfolioTop3 =>
+      '您的股票市值中有多少集中在前三大持仓。比例越高，单一公司的坏消息对整个投资组合的冲击就越大。';
+
+  @override
   String get glossDividendGrowth5y =>
       '过去五年每股股息平均每年增长多少。稳定增长通常意味着公司对自身现金流有信心；削减股息往往是一个警示信号。';
 
@@ -4661,6 +4675,20 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get glossPayoutRatio => '盈利中以股息派發的比例。超過 100% 即公司派發多於所賺，這情況很少能持續。';
+
+  @override
+  String get portfolioBeta => '投資組合 Beta 值';
+
+  @override
+  String get glossPortfolioBeta =>
+      '按市值加權的持股 Beta 值：大市升跌 1% 時，你的股票大約升跌百分之幾。高於 1 代表波幅大於大市，低於 1 則較小。不包括現金。';
+
+  @override
+  String get portfolioTop3 => '三大持倉';
+
+  @override
+  String get glossPortfolioTop3 =>
+      '你的股票市值中有多少集中在三大持倉。比例越高，單一公司的壞消息對整個投資組合的打擊就越大。';
 
   @override
   String get glossDividendGrowth5y =>

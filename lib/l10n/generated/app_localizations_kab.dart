@@ -2002,6 +2002,20 @@ class AppLocalizationsKab extends AppLocalizations {
       'Aḥric n rrbeḥ yettwabḍan d dividand. Ugar n 100%, akampani yettxelliṣ ugar n wayen yerbeḥ, ayen ur nettdum ara.';
 
   @override
+  String get portfolioBeta => 'Beta n uqrab';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Beta n yiksyunen-ik, yettwaḥesben s wazal-nsen: azal n acḥal deg tmiḍi i ttembiwilen yiksyunen-ik mi ara tembiwel lbursa s 1%. Sennig 1, ttembiwilen ugar n lbursa; ddaw 1, drus. Idrimen n ufus ur ddan ara.';
+
+  @override
+  String get portfolioTop3 => '3 iksyunen imeqqranen';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Acḥal seg wazal n yiksyunen-ik i yellan deg kraḍ n yiksyunen-ik imeqqranen. Mi ara yali, ugar i zemrent tmesliwin n diri ɣef yiwet n tkebbanit ad ḍerrent aqrab akk.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Acḥal i yernu s talemmast dividand n yal aksyun yal aseggas deg semmus n yiseggasen ineggura. Timerna yerkden s umata tesskan-d belli takebbanit tettkel ɣef tazzla-ines n yedrimen; asenqes yettili s waṭas d tamatart n uḥezzeb.';
 

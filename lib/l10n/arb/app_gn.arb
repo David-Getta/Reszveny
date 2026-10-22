@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Dividendo jehupytyrã jasy ñavõme",
   "dividendGoalAmount": "Dividendo jasy ñavõme",
   "dividendGoalProgress": "Koʼág̃agua rendimiento-pe, {amount} rupi jasy ñavõme · {percent} · Jehupytyrã: {goal}",
-  "dividendGoalReached": "Koʼág̃agua rendimiento-pe, {amount} rupi jasy ñavõme · Rehupytýma jehupytyrã: {goal}"
+  "dividendGoalReached": "Koʼág̃agua rendimiento-pe, {amount} rupi jasy ñavõme · Rehupytýma jehupytyrã: {goal}",
+  "portfolioBeta": "Cartera beta",
+  "glossPortfolioBeta": "Ne aksiõkuéra beta, ojepesáva hepykuéra rupi: mboýpa porcentaje rupi omýi ne aksiõkuéra mercado omýirõ 1%. 1 ári oĩramo, omýive mercadogui; 1 guýpe oĩramo, omýi michĩve. Pirapire ndoikéi ko'ápe.",
+  "portfolioTop3": "Ereguerekóva 3 tuichavéva",
+  "glossPortfolioTop3": "Mboýpa ne aksiõkuéra repykuéragui oĩ mbohapy ereguerekóva tuichavévape. Ijyvateve jave, peteĩ empresa marandu vai ikatu ombyai hetave opaite ne cartera."
 }

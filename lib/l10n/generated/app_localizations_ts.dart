@@ -2015,6 +2015,20 @@ class AppLocalizationsTs extends AppLocalizations {
       'Xiphemu xa mbuyelo lexi hakeriwaka tanihi dividende. Ehenhla ka 100% khampani yi hakela ku tlula leswi yi swi kumaka, naswona leswi a swi tshami nkarhi wo leha.';
 
   @override
+  String get portfolioBeta => 'Beta ya phothifoliyo';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Beta ya tixere ta wena, leyi pimiweke hi ku ya hi nkoka wa tona: kwalomu ka tiphesente tingani leti tixere ta wena ti fambaka ha tona loko makete wu famba hi 1%. Ehenhla ka 1 ti tsekatseka ku tlula makete, ehansi ka 1 ku tsongo. Mali a yi katsiwanga.';
+
+  @override
+  String get portfolioTop3 => 'Tixere ta 3 letikulu';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Xiphemu xa nkoka wa tixere ta wena lexi nga eka tixere ta wena tinharhu letikulu ngopfu. Loko xi tlakuka, mahungu yo biha ya khampani yin\'we ntsena ma nga vavisa phothifoliyo hinkwayo ku tlula.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Leswi dividende hi xere yi kuleke ha swona hi lembe hi xiringaniso eka malembe ya ntlhanu lama hundzeke. Ku kula loku tshamaka ku ri kona hakanyingi swi vula leswaku khampani yi tshemba ku khuluka ka mali ya yona; ku hunguta hakanyingi i mfungho wa xilemukiso.';
 

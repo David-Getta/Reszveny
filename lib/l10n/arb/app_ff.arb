@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Faandaare dividendeeji kala lewru",
   "dividendGoalAmount": "Dividendeeji e lewru",
   "dividendGoalProgress": "Hono {amount} e lewru e nafoore hannde · {percent} · Faandaare: {goal}",
-  "dividendGoalReached": "Hono {amount} e lewru e nafoore hannde · A heɓii faandaare maa: {goal}"
+  "dividendGoalReached": "Hono {amount} e lewru e nafoore hannde · A heɓii faandaare maa: {goal}",
+  "portfolioBeta": "Beta aksiyoŋ am",
+  "glossPortfolioBeta": "Beta aksiyonji maa, kala ngo e njoŋdi mum: hono no teemedere jelu aksiyonji maa dillirta so luumo dillii 1%. Ko ɓuri 1, ɗi ɓuri luumo dillude; ko les 1, ɗi ɓuri famɗude dillude. Kaalis naatnaaka.",
+  "portfolioTop3": "Aksiyonji 3 ɓurɗi mawnude",
+  "glossPortfolioTop3": "No foti njoŋdi aksiyonji maa woni e tati ɓurɗi mawnude e ko a jogii. So ɗum ɓurii toownude, kabaruuji boni e sosiyete gooto ina mbaawi lorlude aksiyonji maa fof ko ɓuri."
 }

@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Objektivi mujor i dividendit",
   "dividendGoalAmount": "Dividendë në muaj",
   "dividendGoalProgress": "Rreth {amount} në muaj me rendimentet e sotme · {percent} · objektivi: {goal}",
-  "dividendGoalReached": "Rreth {amount} në muaj me rendimentet e sotme · Objektivi u arrit: {goal}"
+  "dividendGoalReached": "Rreth {amount} në muaj me rendimentet e sotme · Objektivi u arrit: {goal}",
+  "portfolioBeta": "Beta e portofolit",
+  "glossPortfolioBeta": "Beta e aksioneve tuaja, e peshuar sipas vlerës së tyre: përafërsisht me sa përqind lëvizin aksionet tuaja kur tregu lëviz 1%. Mbi 1 luhaten më shumë se tregu, nën 1 më pak. Paratë e gatshme nuk përfshihen.",
+  "portfolioTop3": "3 pozicionet më të mëdha",
+  "glossPortfolioTop3": "Sa nga vlera e aksioneve tuaja ndodhet në tri pozicionet tuaja më të mëdha. Sa më e lartë, aq më shumë mund ta dëmtojnë të gjithë portofolin lajmet e këqija për një kompani të vetme."
 }

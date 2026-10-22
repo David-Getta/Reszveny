@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Mjesečni cilj dividendi",
   "dividendGoalAmount": "Dividende mjesečno",
   "dividendGoalProgress": "Oko {amount} mjesečno uz današnje prinose: {percent} od tvog cilja od {goal}",
-  "dividendGoalReached": "Oko {amount} mjesečno uz današnje prinose: tvoj cilj od {goal} je dostignut"
+  "dividendGoalReached": "Oko {amount} mjesečno uz današnje prinose: tvoj cilj od {goal} je dostignut",
+  "portfolioBeta": "Beta portfolija",
+  "glossPortfolioBeta": "Beta vaših dionica, ponderisana njihovom vrijednošću: otprilike za koliko procenata se vaše dionice pomjere kada se tržište pomjeri za 1%. Iznad 1 osciliraju više od tržišta, ispod 1 manje. Gotovina nije uključena.",
+  "portfolioTop3": "Top 3 pozicije",
+  "glossPortfolioTop3": "Koliki dio vrijednosti vaših dionica čine vaše tri najveće pozicije. Što je veći, to loše vijesti o jednoj kompaniji mogu više naštetiti cijelom portfoliju."
 }

@@ -764,5 +764,9 @@
   "dividendGoalTitle": "ወርሃዊ የትርፍ ድርሻ ግብ",
   "dividendGoalAmount": "የትርፍ ድርሻ በወር",
   "dividendGoalProgress": "በአሁኑ ተመን በወር {amount} ገደማ · {percent} · ግብ፦ {goal}",
-  "dividendGoalReached": "በአሁኑ ተመን በወር {amount} ገደማ · ግቡ ተሳክቷል፦ {goal}"
+  "dividendGoalReached": "በአሁኑ ተመን በወር {amount} ገደማ · ግቡ ተሳክቷል፦ {goal}",
+  "portfolioBeta": "የፖርትፎሊዮ ቤታ",
+  "glossPortfolioBeta": "በዋጋቸው የተመዘነ የአክሲዮኖችዎ ቤታ፦ ገበያው በ1% ሲንቀሳቀስ አክሲዮኖችዎ በግምት ስንት በመቶ እንደሚንቀሳቀሱ። ከ1 በላይ ከሆነ ከገበያው የበለጠ ይዋዠቃሉ፣ ከ1 በታች ከሆነ ያነሰ። ጥሬ ገንዘብ አይካተትም።",
+  "portfolioTop3": "3 ትልልቅ ይዞታዎች",
+  "glossPortfolioTop3": "ከአክሲዮኖችዎ ዋጋ ምን ያህሉ በሦስቱ ትልልቅ ይዞታዎችዎ ውስጥ እንዳለ። ይህ በጨመረ ቁጥር በአንድ ኩባንያ ላይ የሚመጣ መጥፎ ዜና መላውን ፖርትፎሊዮ የበለጠ ሊጎዳ ይችላል።"
 }

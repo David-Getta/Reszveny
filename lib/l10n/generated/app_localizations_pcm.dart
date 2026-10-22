@@ -2002,6 +2002,20 @@ class AppLocalizationsPcm extends AppLocalizations {
       'Di part of profit wey dem share as dividend. Above 100%, di company dey pay pass wetin e dey make, and dat one no dey last.';
 
   @override
+  String get portfolioBeta => 'Portfolio beta';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Di beta of your stocks, weighed by how much each one worth: about how many percent your stocks dey move when di market move 1%. If e pass 1, dem dey swing pass di market; if e dey under 1, dem no dey swing reach. Cash no dey inside.';
+
+  @override
+  String get portfolioTop3 => 'Top 3 stocks';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'How much of your stocks\' value dey inside your three biggest stocks. Di higher e be, di more bad news for one company fit damage your whole portfolio.';
+
+  @override
   String get glossDividendGrowth5y =>
       'How much di dividend for each share grow every year on average for di last five years. If e dey grow steady, e usually mean say di company trust di cash wey dey enter; if dem cut am, na warning sign most times.';
 

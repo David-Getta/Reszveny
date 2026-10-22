@@ -2008,6 +2008,20 @@ class AppLocalizationsEe extends AppLocalizations {
       'Viɖe ƒe akpa si wotsɔna maa abe viɖemama ene. Ne ede 100% dzi la, dɔwɔƒea xea fe wu nusi wòkpɔna, si meyia edzi didi o.';
 
   @override
+  String get portfolioBeta => 'Akpawo ƒe beta';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Wò akpawo ƒe beta, si wodzidze ɖe woƒe asixɔxɔ nu: ɖe le alafa me nenie wò akpawo ʋãna kloe ne asi la ʋã 1%. Ne ekɔ wu 1 la, woʋuʋuna wu asi la; ne ele 1 te la, woʋuʋuna sue wu. Womebu ga le asi ɖe eme o.';
+
+  @override
+  String get portfolioTop3 => 'Akpa 3 gãtowo';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Wò akpawo ƒe asixɔxɔ ƒe akpa ka le akpa etɔ̃ gãtɔ siwo le asiwò la me. Alesi wòkɔ wu la, nenema ke nya vɔ̃ tso dɔwɔƒe ɖeka ŋu ate ŋu agblẽ nu le wò akpawo katã ŋu wu.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Alesi viɖemama le akpa ɖesiaɖe ŋu dzi ɖe edzi ƒe sia ƒe le titina le ƒe atɔ̃ siwo va yi me. Dzidziɖedzi si li ke zi geɖe fiana be dɔwɔƒea ka ɖe ga si gena ɖe eme kple esi dona le eme dzi; viɖemama ƒe ɖiɖiɖe zi geɖe nye nuxlɔ̃ame ƒe dzesi.';
 

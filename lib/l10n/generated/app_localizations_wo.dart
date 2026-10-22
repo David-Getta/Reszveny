@@ -1997,6 +1997,20 @@ class AppLocalizationsWo extends AppLocalizations {
       'Wàllu benefis bi ñu séddale ni dividand. Lu ëpp 100%, sosiete bi dafay fey lu ëpp li mu gañe, te loolu yàggul.';
 
   @override
+  String get portfolioBeta => 'Beta sama aksiyoŋ yi';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Beta sa aksiyoŋ yi, ñu natt ko ci seen njëg: lu tollu ci ñaata ci téeméer la sa aksiyoŋ yi di yëngu bu marse bi yëngoo 1%. Bu ëppee 1, dañuy yëngu lu ëpp marse bi; bu yées 1, dañuy yëngu lu néew. Xaalis bi bokkul ci.';
+
+  @override
+  String get portfolioTop3 => '3 aksiyoŋ yi gëna mag';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Ñaata ci njëgu sa aksiyoŋ yi moo nekk ci sa ñetti aksiyoŋ yi gëna mag. Lu mu gën a kawe, lu gën a bare la xibaar bu bon ci benn kompaañi rekk mën a lor sa aksiyoŋ yépp.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Ni dividand ci aksiyoŋ bu nekk yokkoo at mu nekk, ci diggante, ci juróom at yu mujj yi. Yokkute gu sax dafa faral di wone ne sosiete bi dafa wóolu xaalis bi koy dugg; wàññi ko dafa faral di doon màndarga moytu.';
 

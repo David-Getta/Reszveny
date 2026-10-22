@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Mokano ya dividende na sanza",
   "dividendGoalAmount": "Dividende na sanza",
   "dividendGoalProgress": "Pene na {amount} na sanza na rendement ya lelo · {percent} · Mokano: {goal}",
-  "dividendGoalReached": "Pene na {amount} na sanza na rendement ya lelo · Okokisi mokano: {goal}"
+  "dividendGoalReached": "Pene na {amount} na sanza na rendement ya lelo · Okokisi mokano: {goal}",
+  "portfolioBeta": "Bêta ya portefeuille",
+  "glossPortfolioBeta": "Bêta ya ba-action na yo, oyo epesameli kilo na kolanda motuya na yango: pene na pourcentage boni ba-action na yo eningani ntango zando eningani 1%. Likolo ya 1, eningani koleka zando; na nse ya 1, moke. Mbɔngɔ ya mabɔkɔ etángami te.",
+  "portfolioTop3": "Ba-position 3 ya minene",
+  "glossPortfolioTop3": "Eteni nini ya motuya ya ba-action na yo ezali na ba-position na yo misato ya minene koleka. Soki ezali likolo mingi, nsango mabe ya kompanyi moko kaka ekoki kobebisa portefeuille mobimba mingi koleka."
 }

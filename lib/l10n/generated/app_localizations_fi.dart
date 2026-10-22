@@ -2005,6 +2005,20 @@ class AppLocalizationsFi extends AppLocalizations {
       'Osuus voitosta, joka maksetaan osinkoina. Jos se on yli 100 %, yhtiö maksaa enemmän kuin ansaitsee, mikä harvoin kestää pitkään.';
 
   @override
+  String get portfolioBeta => 'Salkun beta';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Osakkeidesi beta painotettuna niiden arvolla: suunnilleen kuinka monta prosenttia osakkeesi liikkuvat, kun markkina liikkuu 1 %. Jos se on yli 1, ne heiluvat markkinaa enemmän, jos alle 1, vähemmän. Käteistä ei lasketa mukaan.';
+
+  @override
+  String get portfolioTop3 => '3 suurinta omistusta';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Kuinka suuri osa osakkeidesi arvosta on kolmessa suurimmassa omistuksessasi. Mitä suurempi osuus on, sitä enemmän yhden yhtiön huonot uutiset voivat vahingoittaa koko salkkua.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Kuinka paljon osakekohtainen osinko on kasvanut keskimäärin vuodessa viimeisten viiden vuoden aikana. Tasainen kasvu kertoo yleensä, että yhtiö luottaa kassavirtaansa; osingon leikkaus on usein varoitusmerkki.';
 

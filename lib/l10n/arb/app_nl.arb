@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Maandelijks dividenddoel",
   "dividendGoalAmount": "Dividend per maand",
   "dividendGoalProgress": "Ongeveer {amount} per maand bij het huidige rendement: {percent} van je doel van {goal}",
-  "dividendGoalReached": "Ongeveer {amount} per maand bij het huidige rendement: je doel van {goal} is bereikt"
+  "dividendGoalReached": "Ongeveer {amount} per maand bij het huidige rendement: je doel van {goal} is bereikt",
+  "portfolioBeta": "Portefeuillebèta",
+  "glossPortfolioBeta": "De bèta van je aandelen, gewogen naar hun waarde: ongeveer hoeveel procent je aandelen bewegen als de markt 1% beweegt. Boven 1 schommelen ze meer dan de markt, onder 1 minder. Cash telt niet mee.",
+  "portfolioTop3": "Top 3-posities",
+  "glossPortfolioTop3": "Hoeveel van de waarde van je aandelen in je drie grootste posities zit. Hoe hoger, hoe meer slecht nieuws bij één bedrijf de hele portefeuille kan raken."
 }

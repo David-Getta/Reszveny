@@ -2016,6 +2016,20 @@ class AppLocalizationsNso extends AppLocalizations {
       'Karolo ya poelo ye e lefšwago bjalo ka dividende. Godimo ga 100% khamphani e lefa go feta seo e se hwetšago, e lego seo se sa tšwelego pele gantši.';
 
   @override
+  String get portfolioBeta => 'Beta ya photefolio';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Beta ya dišere tša gago, e lekanyeditšwe go ya ka boleng bja tšona: e bontšha gore dišere tša gago di šutha ka diphesente tše kae ge mmaraka o šutha ka 1%. Ka godimo ga 1 di fetoga kudu go feta mmaraka, ka fase ga 1 di fetoga ka mo go nyenyane. Tšhelete ga e akaretšwe.';
+
+  @override
+  String get portfolioTop3 => 'Maemo a 3 a magolo';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Gore ke karolo ye kae ya boleng bja dišere tša gago yeo e lego maemong a gago a mararo a magolo kudu. Ge e le godimo kudu, ditaba tše mpe tša khamphani e tee di ka gobatša photefolio ka moka kudu.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Dividende ka šere e godile bjang ka ngwaga ka kakaretšo mengwageng ye mehlano ya go feta. Kgolo ye e tšwelago pele gantši e bontšha gore khamphani e tshepha phallo ya yona ya tšhelete; go fokotšwa gantši ke leswao la temošo.';
 

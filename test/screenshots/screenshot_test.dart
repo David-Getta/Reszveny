@@ -757,6 +757,12 @@ void main() {
     await tester.ensureVisible(find.byKey(const ValueKey('target-MSFT')));
     await tester.pumpAndSettle();
     await _shot(tester, 'portfolio_targets_phone_hu');
+    // Kockázat a megoszlás-kártya alján: súlyozott béta és a 3 legnagyobb pozíció súlya.
+    final risk = find.byKey(const ValueKey('portfolio-risk'));
+    await Scrollable.ensureVisible(tester.element(risk), alignment: 0.6);
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('portfolio-top3')), findsOneWidget);
+    await _shot(tester, 'portfolio_risk_phone_hu');
   });
 
   testWidgets('home with the „while you were away” card on a phone (hungarian)', (tester) async {

@@ -764,5 +764,9 @@
   "dividendGoalTitle": "ወርሓዊ ዕላማ ብጽሒት ትርፊ",
   "dividendGoalAmount": "ብጽሒት ትርፊ ኣብ ወርሒ",
   "dividendGoalProgress": "ብናይ ሎሚ መጠን ኣብ ወርሒ ኣስታት {amount} · {percent} · ዕላማ፦ {goal}",
-  "dividendGoalReached": "ብናይ ሎሚ መጠን ኣብ ወርሒ ኣስታት {amount} · ዕላማ ተወቒዑ፦ {goal}"
+  "dividendGoalReached": "ብናይ ሎሚ መጠን ኣብ ወርሒ ኣስታት {amount} · ዕላማ ተወቒዑ፦ {goal}",
+  "portfolioBeta": "ቤታ ፖርትፎሊዮ",
+  "glossPortfolioBeta": "ብዋጋኦም ዝተመዘነ ቤታ ኣክስዮናትኩም፦ ዕዳጋ ብ1% ክንቀሳቐስ ከሎ፡ ኣክስዮናትኩም ብግምት ክንደይ ሚእታዊት ከም ዝንቀሳቐሱ የርኢ። ልዕሊ 1 እንተኾይኑ ካብ ዕዳጋ ንላዕሊ ይለዋወጡ፡ ትሕቲ 1 እንተኾይኑ ውሑድ። ጥረ ገንዘብ ኣይተሓወሰን።",
+  "portfolioTop3": "ዝዓበዩ 3 ዋንነታት",
+  "glossPortfolioTop3": "ካብ ዋጋ ኣክስዮናትኩም ክንደይ ኣብቶም ሰለስተ ዝዓበዩ ዋንነታትኩም ከም ዘሎ። ዝለዓለ ብዝኾነ መጠን፡ ብዛዕባ ሓደ ኩባንያ ዝወጽእ ሕማቕ ዜና ንብምሉኡ ፖርትፎሊዮ ዝያዳ ክጎድእ ይኽእል።"
 }

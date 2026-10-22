@@ -1933,6 +1933,20 @@ class AppLocalizationsJa extends AppLocalizations {
       '利益のうち配当として支払われる割合。100%を超えると稼いだ以上を払っていることになり、長続きはまれです。';
 
   @override
+  String get portfolioBeta => 'ポートフォリオのベータ';
+
+  @override
+  String get glossPortfolioBeta =>
+      '保有株のベータを評価額で加重平均したもの。市場が1%動いたときに保有株がおよそ何%動くかを示します。1を超えると市場より値動きが大きく、1未満だと小さくなります。現金は含みません。';
+
+  @override
+  String get portfolioTop3 => '上位3銘柄';
+
+  @override
+  String get glossPortfolioTop3 =>
+      '保有株の評価額のうち、上位3銘柄が占める割合。高いほど、1社の悪いニュースがポートフォリオ全体に与える打撃が大きくなります。';
+
+  @override
   String get glossDividendGrowth5y =>
       '過去5年間に1株配当が年平均でどれだけ伸びたか。安定した増配は通常、会社がキャッシュフローに自信を持っていることを示し、減配はしばしば警告のサインです。';
 

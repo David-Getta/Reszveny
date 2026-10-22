@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Armanca dîvîdendê ya mehane",
   "dividendGoalAmount": "Dîvîdend di mehê de",
   "dividendGoalProgress": "Bi rêjeya îro nêzî {amount} di mehê de · {percent} · Armanc: {goal}",
-  "dividendGoalReached": "Bi rêjeya îro nêzî {amount} di mehê de · Gihîştî armancê: {goal}"
+  "dividendGoalReached": "Bi rêjeya îro nêzî {amount} di mehê de · Gihîştî armancê: {goal}",
+  "portfolioBeta": "Betaya portfolyoyê",
+  "glossPortfolioBeta": "Betaya pişkên te, li gorî nirxa wan hatiye pîvan: bi qasî çend ji sedî pişkên te dilivin dema ku bazar 1% dilive. Ji 1 bilindtir, ew ji bazarê zêdetir dihejin; ji 1 kêmtir, kêmtir. Pereyê nexd nayê hesibandin.",
+  "portfolioTop3": "3 pozîsyonên herî mezin",
+  "glossPortfolioTop3": "Çiqas ji nirxa pişkên te di sê pozîsyonên te yên herî mezin de ye. Çiqas bilindtir be, nûçeyên xirab ên li ser tenê yek şîrketê ewqas zêdetir dikarin zirarê bidin tevahiya portfolyoyê."
 }

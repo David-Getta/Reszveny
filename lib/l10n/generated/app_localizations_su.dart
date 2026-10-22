@@ -2006,6 +2006,20 @@ class AppLocalizationsSu extends AppLocalizations {
       'Bagian laba anu dibayarkeun salaku dividén. Leuwih ti 100% pausahaan mayar leuwih loba batan anu dimeunangkeun, anu jarang lumangsung lila.';
 
   @override
+  String get portfolioBeta => 'Béta portofolio';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Béta saham anjeun, ditimbang dumasar kana ajénna: kira-kira sabaraha persén saham anjeun obah nalika pasar obah 1%. Di luhur 1 ayunanana leuwih gedé batan pasar, handapeun 1 leuwih leutik. Tunai teu kaasup.';
+
+  @override
+  String get portfolioTop3 => '3 posisi panggedéna';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Sabaraha bagian tina ajén saham anjeun aya dina tilu posisi panggedéna anjeun. Beuki luhur, beuki gedé warta goréng ngeunaan hiji perusahaan bisa ngarugikeun sakabéh portofolio.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Sabaraha dividén per saham tumuwuh unggal taun sacara rata-rata salila lima taun ka tukang. Tumuwuh anu ajeg biasana hartosna pausahaan yakin kana aliran kasna; pamotongan sering janten tanda bahaya.';
 

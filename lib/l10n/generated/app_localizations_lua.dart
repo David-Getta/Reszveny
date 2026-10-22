@@ -2008,6 +2008,20 @@ class AppLocalizationsLua extends AppLocalizations {
       'Tshitupa tshia dipeta tshidibu bapana bu dividende. Kupita 100%, kompanyi udi ufuta bipite bidiye upeta, ne bualu ebu kabutu bushala matuku a bungi to.';
 
   @override
+  String get portfolioBeta => 'Bêta wa portefeuille';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Bêta wa actions yebe, mupima bilondeshile mushinga wayi: pabuipi ne pourcentage bungi kayi budi actions yebe inyunguluka padi tshisalu tshinyunguluka 1%. Pa mutu pa 1, idi inyunguluka bikole kupita tshisalu; panshi pa 1, kakese. Mfranga ya mu bianza kayena ibadibua to.';
+
+  @override
+  String get portfolioTop3 => 'Position 3 minene';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Tshitupa tshia mushinga wa actions yebe tshidi mu position yebe isatu minene. Padi tshitupa etshi tshivula, ke padi myanda mibi ya kompanyi umue patupu mua kunyanga portefeuille wonso bikole.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Mushindu udi dividende wa action umue mukole tshidimu tshionso, mu bungi bua pankatshi, mu bidimu bitanu bishale. Dikola dia pa tshibidilu didi dileja bikole ne: kompanyi udi weyemena mfranga yende idi ibuela ne ipatuka; dipuekesha didi misangu mivule tshimanyinu tshia kudimuija.';
 

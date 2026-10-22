@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Umgomo we-dividend wanyanga zonke",
   "dividendGoalAmount": "I-dividend ngenyanga",
   "dividendGoalProgress": "Cishe {amount} ngenyanga ngesivuno samanje · {percent} · Umgomo: {goal}",
-  "dividendGoalReached": "Cishe {amount} ngenyanga ngesivuno samanje · Umgomo ufinyelelwe: {goal}"
+  "dividendGoalReached": "Cishe {amount} ngenyanga ngesivuno samanje · Umgomo ufinyelelwe: {goal}",
+  "portfolioBeta": "I-beta yephothifoliyo",
+  "glossPortfolioBeta": "I-beta yamasheya akho, ilinganiswe ngokwenani lawo: cishe angamaphesenti amangaki amasheya akho anyakaza ngawo uma imakethe inyakaza ngo-1%. Ngaphezu kuka-1 ashintsha kakhulu kunemakethe, ngaphansi kuka-1 kancane. Imali ayifakiwe.",
+  "portfolioTop3": "Amasheya ama-3 amakhulu",
+  "glossPortfolioTop3": "Ingakanani ingxenye yenani lamasheya akho ekumasheya akho amathathu amakhulu kakhulu. Okukhona liphezulu, kokukhona izindaba ezimbi zenkampani eyodwa zingalimaza kakhulu iphothifoliyo yonke."
 }

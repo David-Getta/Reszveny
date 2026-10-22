@@ -2007,6 +2007,20 @@ class AppLocalizationsMs extends AppLocalizations {
       'Bahagian keuntungan yang dibayar sebagai dividen. Melebihi 100%, syarikat membayar lebih daripada yang diperolehnya, dan ini jarang bertahan.';
 
   @override
+  String get portfolioBeta => 'Beta portfolio';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Beta saham anda, ditimbang mengikut nilainya: kira-kira berapa peratus saham anda bergerak apabila pasaran bergerak 1%. Melebihi 1 bermakna turun naiknya lebih besar daripada pasaran, bawah 1 lebih kecil. Tunai tidak termasuk.';
+
+  @override
+  String get portfolioTop3 => '3 pegangan terbesar';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Berapa banyak nilai saham anda terletak dalam tiga pegangan terbesar anda. Semakin tinggi, semakin besar kesan berita buruk tentang satu syarikat terhadap keseluruhan portfolio.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Berapa banyak dividen sesaham meningkat setiap tahun secara purata sepanjang lima tahun lepas. Pertumbuhan yang stabil biasanya bermakna syarikat yakin dengan aliran tunainya; pemotongan selalunya tanda amaran.';
 

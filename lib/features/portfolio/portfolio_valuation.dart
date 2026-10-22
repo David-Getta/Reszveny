@@ -60,7 +60,23 @@ class PortfolioSnapshot {
     this.annualReturn,
     this.cash = 0,
     this.cashByCurrency = const {},
+    this.beta,
   });
+
+  /// A részvények értékkel súlyozott bétája (a bétával rendelkező pozíciókból):
+  /// nagyjából hány százalékot mozdul a portfólió részvényrésze, ha a piac 1%-ot.
+  final double? beta;
+
+  /// A három legnagyobb pozíció együttes súlya a részvények értékében (0–1);
+  /// `null`, ha legfeljebb három pozíció van (akkor nincs mit mérni).
+  double? get top3Weight {
+    final values = [
+      for (final r in rows)
+        if (r.inTotal) r.value! * r.rate!,
+    ]..sort((a, b) => b.compareTo(a));
+    if (values.length <= 3 || value <= 0) return null;
+    return values.take(3).fold(0.0, (s, v) => s + v) / value;
+  }
 
   /// Készpénz a brókernél az összesítés pénznemében (a felhasználó adja meg).
   final double cash;
@@ -124,9 +140,12 @@ class PortfolioSnapshot {
     List<Position> closed = const [],
     DateTime? now,
     Map<String, double> cash = const {},
+    Map<String, double> betas = const {},
   }) {
     final rows = <PositionValue>[];
     var value = 0.0, cost = 0.0, day = 0.0, dividend = 0.0, realized = 0.0;
+    // A béta súlyozott összege és a bétával rendelkező pozíciók értéke.
+    var betaSum = 0.0, betaBase = 0.0;
     double? rateOf(String c) => c == currency ? 1.0 : rate(c, currency);
     final closedRows = <({Position position, double? realized})>[];
     final byYear = <int?, double>{};
@@ -160,6 +179,10 @@ class PortfolioSnapshot {
       cost += p.cost * r;
       day += (row.dayGain ?? 0) * r;
       dividend += (row.annualDividend ?? 0) * r;
+      if (betas[p.symbol] case final b?) {
+        betaSum += b * row.value! * r;
+        betaBase += row.value! * r;
+      }
     }
     // Készpénz az összesítés pénznemére váltva; amelyikhez nincs árfolyam, kimarad.
     var cashValue = 0.0;
@@ -198,6 +221,7 @@ class PortfolioSnapshot {
       realizedByYear: byYear,
       cash: cashValue,
       cashByCurrency: cashByCurrency,
+      beta: betaBase > 0 ? betaSum / betaBase : null,
     );
   }
 
@@ -214,6 +238,7 @@ class PortfolioSnapshot {
     final quotes = <String, StockQuote>{};
     final rates = <String, double>{};
     final dividends = <String, double>{};
+    final betas = <String, double>{};
     Future<void> quote(String symbol) async {
       try {
         quotes[symbol] = await marketData.quote(symbol);
@@ -222,11 +247,12 @@ class PortfolioSnapshot {
       }
     }
 
-    // Az osztalék a mutatókból jön; ha nem érhető el, egyszerűen nincs.
-    Future<void> dividend(String symbol) async {
+    // Az osztalék és a béta a mutatókból jön; ha nem érhető el, egyszerűen nincs.
+    Future<void> metrics(String symbol) async {
       try {
-        final d = (await marketData.metrics(symbol)).dividendPerShare;
-        if (d != null && d > 0) dividends[symbol] = d;
+        final m = await marketData.metrics(symbol);
+        if (m.dividendPerShare case final d? when d > 0) dividends[symbol] = d;
+        if (m.beta case final b? when b.isFinite) betas[symbol] = b;
       } catch (_) {}
     }
 
@@ -237,7 +263,7 @@ class PortfolioSnapshot {
 
     await Future.wait([
       for (final p in positions) quote(p.symbol),
-      for (final s in {for (final p in positions) p.symbol}) dividend(s),
+      for (final s in {for (final p in positions) p.symbol}) metrics(s),
       for (final c in {
         for (final p in [...positions, ...closed]) p.currency,
         ...cash.keys,
@@ -252,6 +278,7 @@ class PortfolioSnapshot {
       dividends: dividends,
       closed: closed,
       cash: cash,
+      betas: betas,
     );
   }
 

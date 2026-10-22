@@ -2017,6 +2017,20 @@ class AppLocalizationsMg extends AppLocalizations {
       'Ny ampahany amin\'ny tombony zaraina ho dividenda. Mihoatra ny 100% dia mandoa mihoatra noho izay azony ny orinasa, ary tsy maharitra matetika izany.';
 
   @override
+  String get portfolioBeta => 'Beta-n\'ny kitapom-bola';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Ny beta-n\'ny aksionao, voalanjalanja araka ny sandany: eo ho eo amin\'ny firy isan-jato no mihetsika ny aksionao rehefa mihetsika 1% ny tsena. Ambonin\'ny 1 dia mihetsika mihoatra ny tsena izy ireo, ambanin\'ny 1 dia latsaka. Tsy tafiditra ny vola.';
+
+  @override
+  String get portfolioTop3 => 'Fananana 3 lehibe indrindra';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Ny ampahany amin\'ny sandan\'ny aksionao izay ao amin\'ireo fananana telo lehibe indrindra anananao. Arakaraka ny hiakarany no vao mainka afaka manimba ny kitapom-bola manontolo ny vaovao ratsy momba ny orinasa iray monja.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Hatraiza no nitomboan\'ny dividenda isaky ny aksiona isan-taona, raha atao salan\'isa, tao anatin\'ny dimy taona farany. Ny fitomboana tsy tapaka matetika dia midika fa matoky ny fikorianan\'ny volany ny orinasa; ny fampihenana kosa matetika dia famantarana mampitandrina.';
 

@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Mục tiêu cổ tức hằng tháng",
   "dividendGoalAmount": "Cổ tức mỗi tháng",
   "dividendGoalProgress": "Khoảng {amount} mỗi tháng theo tỷ suất hiện tại: {percent} mục tiêu {goal}",
-  "dividendGoalReached": "Khoảng {amount} mỗi tháng theo tỷ suất hiện tại: đã đạt mục tiêu {goal}"
+  "dividendGoalReached": "Khoảng {amount} mỗi tháng theo tỷ suất hiện tại: đã đạt mục tiêu {goal}",
+  "portfolioBeta": "Beta danh mục",
+  "glossPortfolioBeta": "Beta của các cổ phiếu bạn nắm giữ, có trọng số theo giá trị: cổ phiếu của bạn biến động khoảng bao nhiêu phần trăm khi thị trường biến động 1%. Trên 1 thì dao động mạnh hơn thị trường, dưới 1 thì ít hơn. Không tính tiền mặt.",
+  "portfolioTop3": "3 vị thế lớn nhất",
+  "glossPortfolioTop3": "Tỷ trọng giá trị cổ phiếu của bạn nằm trong ba vị thế lớn nhất. Tỷ lệ này càng cao, tin xấu từ một công ty duy nhất càng có thể ảnh hưởng nhiều đến toàn bộ danh mục."
 }

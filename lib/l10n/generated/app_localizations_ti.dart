@@ -1967,6 +1967,20 @@ class AppLocalizationsTi extends AppLocalizations {
       'ከም ብጽሒት ትርፊ ዝኽፈል ክፋል ትርፊ። ልዕሊ 100% እቲ ኩባንያ ካብ ዘእትዎ ንላዕሊ ይኸፍል ኣሎ፣ እዚ ድማ ሳሕቲ እዩ ዝቕጽል።';
 
   @override
+  String get portfolioBeta => 'ቤታ ፖርትፎሊዮ';
+
+  @override
+  String get glossPortfolioBeta =>
+      'ብዋጋኦም ዝተመዘነ ቤታ ኣክስዮናትኩም፦ ዕዳጋ ብ1% ክንቀሳቐስ ከሎ፡ ኣክስዮናትኩም ብግምት ክንደይ ሚእታዊት ከም ዝንቀሳቐሱ የርኢ። ልዕሊ 1 እንተኾይኑ ካብ ዕዳጋ ንላዕሊ ይለዋወጡ፡ ትሕቲ 1 እንተኾይኑ ውሑድ። ጥረ ገንዘብ ኣይተሓወሰን።';
+
+  @override
+  String get portfolioTop3 => 'ዝዓበዩ 3 ዋንነታት';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'ካብ ዋጋ ኣክስዮናትኩም ክንደይ ኣብቶም ሰለስተ ዝዓበዩ ዋንነታትኩም ከም ዘሎ። ዝለዓለ ብዝኾነ መጠን፡ ብዛዕባ ሓደ ኩባንያ ዝወጽእ ሕማቕ ዜና ንብምሉኡ ፖርትፎሊዮ ዝያዳ ክጎድእ ይኽእል።';
+
+  @override
   String get glossDividendGrowth5y =>
       'ብጽሒት ትርፊ ንሓደ ኣክሲዮን ኣብ ዝሓለፉ ሓሙሽተ ዓመታት ብማእከላይ ኣብ ዓመት ክንደይ ከም ዝዓበየ። ቀጻሊ ዕቤት መብዛሕትኡ ግዜ እቲ ኩባንያ ብገንዘባዊ ውሕዝኡ ከም ዝኣምን የርኢ፤ ምጉዳል ድማ መብዛሕትኡ ግዜ ምልክት ማስጠንቀቕታ እዩ።';
 

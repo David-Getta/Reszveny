@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Tanjon'ny dividenda isam-bolana",
   "dividendGoalAmount": "Dividenda isam-bolana",
   "dividendGoalProgress": "Manodidina ny {amount} isam-bolana amin'ny tahan'ny dividenda ankehitriny · {percent} · Tanjona: {goal}",
-  "dividendGoalReached": "Manodidina ny {amount} isam-bolana amin'ny tahan'ny dividenda ankehitriny · Tratra ny tanjona: {goal}"
+  "dividendGoalReached": "Manodidina ny {amount} isam-bolana amin'ny tahan'ny dividenda ankehitriny · Tratra ny tanjona: {goal}",
+  "portfolioBeta": "Beta-n'ny kitapom-bola",
+  "glossPortfolioBeta": "Ny beta-n'ny aksionao, voalanjalanja araka ny sandany: eo ho eo amin'ny firy isan-jato no mihetsika ny aksionao rehefa mihetsika 1% ny tsena. Ambonin'ny 1 dia mihetsika mihoatra ny tsena izy ireo, ambanin'ny 1 dia latsaka. Tsy tafiditra ny vola.",
+  "portfolioTop3": "Fananana 3 lehibe indrindra",
+  "glossPortfolioTop3": "Ny ampahany amin'ny sandan'ny aksionao izay ao amin'ireo fananana telo lehibe indrindra anananao. Arakaraka ny hiakarany no vao mainka afaka manimba ny kitapom-bola manontolo ny vaovao ratsy momba ny orinasa iray monja."
 }

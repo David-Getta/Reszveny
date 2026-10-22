@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Bosome biara dividend botaeɛ",
   "dividendGoalAmount": "Dividend bosome biara",
   "dividendGoalProgress": "Bɛyɛ {amount} bosome biara, sɛnea mfaso te nnɛ · {percent} · Botaeɛ: {goal}",
-  "dividendGoalReached": "Bɛyɛ {amount} bosome biara, sɛnea mfaso te nnɛ · Woadu wo botaeɛ: {goal}"
+  "dividendGoalReached": "Bɛyɛ {amount} bosome biara, sɛnea mfaso te nnɛ · Woadu wo botaeɛ: {goal}",
+  "portfolioBeta": "Wo nkyɛfa beta",
+  "glossPortfolioBeta": "Wo nkyɛfa no beta, a wɔakari no sɛnea wɔn bo te: ɛkyerɛ bɛyɛ ɔha mu nkyɛmu dodoɔ a wo nkyɛfa sesa bere a dwa no sesa 1%. Sɛ ɛboro 1 a, wɔsesa sene dwa no; sɛ ɛwɔ 1 ase a, wɔsesa kakra. Wɔmfa sika a ɛda hɔ nka ho.",
+  "portfolioTop3": "Nkyɛfa 3 a ɛsõ koraa",
+  "glossPortfolioTop3": "Wo nkyɛfa no bo dodoɔ a ɛwɔ nkyɛfa mmiɛnsa a ɛsõ koraa a wowɔ no mu. Sɛ ɛkɔ soro a, adwumakuo baako ho asɛm bɔne betumi asɛe wo nkyɛfa nyinaa kɛse."
 }

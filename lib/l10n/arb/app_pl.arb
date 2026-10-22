@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Miesięczny cel dywidend",
   "dividendGoalAmount": "Dywidendy miesięcznie",
   "dividendGoalProgress": "Ok. {amount} miesięcznie przy obecnych stopach dywidendy · {percent} · cel: {goal}",
-  "dividendGoalReached": "Ok. {amount} miesięcznie przy obecnych stopach dywidendy · Cel osiągnięty: {goal}"
+  "dividendGoalReached": "Ok. {amount} miesięcznie przy obecnych stopach dywidendy · Cel osiągnięty: {goal}",
+  "portfolioBeta": "Beta portfela",
+  "glossPortfolioBeta": "Beta twoich akcji ważona ich wartością: mniej więcej o ile procent zmieniają się twoje akcje, gdy rynek zmienia się o 1%. Powyżej 1 wahają się mocniej niż rynek, poniżej 1 słabiej. Gotówka nie jest uwzględniana.",
+  "portfolioTop3": "3 największe pozycje",
+  "glossPortfolioTop3": "Jaka część wartości twoich akcji przypada na trzy największe pozycje. Im jest wyższa, tym bardziej złe wieści z jednej spółki mogą zaszkodzić całemu portfelowi."
 }

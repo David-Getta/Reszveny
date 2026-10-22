@@ -764,5 +764,9 @@
   "dividendGoalTitle": "月間配当目標",
   "dividendGoalAmount": "月あたりの配当",
   "dividendGoalProgress": "現在の利回りで月あたり約 {amount}：{percent} 達成 · 目標 {goal}",
-  "dividendGoalReached": "現在の利回りで月あたり約 {amount}：目標 {goal} を達成"
+  "dividendGoalReached": "現在の利回りで月あたり約 {amount}：目標 {goal} を達成",
+  "portfolioBeta": "ポートフォリオのベータ",
+  "glossPortfolioBeta": "保有株のベータを評価額で加重平均したもの。市場が1%動いたときに保有株がおよそ何%動くかを示します。1を超えると市場より値動きが大きく、1未満だと小さくなります。現金は含みません。",
+  "portfolioTop3": "上位3銘柄",
+  "glossPortfolioTop3": "保有株の評価額のうち、上位3銘柄が占める割合。高いほど、1社の悪いニュースがポートフォリオ全体に与える打撃が大きくなります。"
 }

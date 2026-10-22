@@ -2011,6 +2011,20 @@ class AppLocalizationsKg extends AppLocalizations {
       'Kitini ya mbakulu yina bo ke kabula bonso dividende. Kuluta 100%, kompani ke futa mingi kuluta yina yo ke zwa, mpi yo ke zingaka ve.';
 
   @override
+  String get portfolioBeta => 'Bêta ya portefeuille';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Bêta ya ba actions na nge, yina bo me tala na kutadila ntalu na yo: pene-pene pourcentage ikwa ba actions na nge ke nyengana ntangu zandu ke nyengana 1%. Kuluta 1, yo ke nyengana mingi kuluta zandu; na nsi ya 1, fioti. Mbongo ya maboko ke kotaka ve.';
+
+  @override
+  String get portfolioTop3 => 'Ba position 3 ya nene';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Ikwa ya ntalu ya ba actions na nge kele na ba position na nge tatu ya nene kuluta. Kana yo ke kuluta kumata, mansangu ya mbi ya kompani mosi kaka lenda bebisa mingi portefeuille ya mvimba.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Nki mutindu dividende ya action mosi me kula konso mvula na kati-kati na mivu tanu yina me luta. Kukula ya ntangu yonso ke monisaka mingi nde kompani ke tula ntima na mbongo yina ke kota mpi ke basika; kukulumusa yo ke vandaka mingi kidimbu ya kukebisa.';
 

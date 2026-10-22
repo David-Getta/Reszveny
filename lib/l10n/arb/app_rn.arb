@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Intumbero y'inyungu ku migabane ku kwezi",
   "dividendGoalAmount": "Inyungu ku migabane ku kwezi",
   "dividendGoalProgress": "Hafi {amount} ku kwezi ku gipimo c'ubu · {percent} · Intumbero: {goal}",
-  "dividendGoalReached": "Hafi {amount} ku kwezi ku gipimo c'ubu · Washikiye ku ntumbero: {goal}"
+  "dividendGoalReached": "Hafi {amount} ku kwezi ku gipimo c'ubu · Washikiye ku ntumbero: {goal}",
+  "portfolioBeta": "Beta y'ishoramari",
+  "glossPortfolioBeta": "Beta y'imigabane yawe, ipimwe hakurikijwe agaciro kayo: ni nk'ibice bingahe kw'ijana imigabane yawe ihindagurika iyo isoko rihindagutse 1%. Hejuru ya 1 ihindagurika kuruta isoko, munsi ya 1 ihindagurika gake. Amafaranga ntarimwo.",
+  "portfolioTop3": "Imigabane 3 minini",
+  "glossPortfolioTop3": "Igice c'agaciro k'imigabane yawe kiri mu migabane yawe itatu minini kuruta iyindi. Uko kiri hejuru, ni ko inkuru mbi y'isosiyete imwe gusa ishobora kwonona ishoramari ryawe ryose."
 }

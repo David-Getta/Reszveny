@@ -2003,6 +2003,20 @@ class AppLocalizationsAk extends AppLocalizations {
       'Mfaso no ɔfa a wɔde kyɛ sɛ mfaso kyɛ. Sɛ ɛboro 100% a, adwumakuw no tua bɛboro nea ɛnya, na ɛntaa nkyɛ.';
 
   @override
+  String get portfolioBeta => 'Wo nkyɛfa beta';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Wo nkyɛfa no beta, a wɔakari no sɛnea wɔn bo te: ɛkyerɛ bɛyɛ ɔha mu nkyɛmu dodoɔ a wo nkyɛfa sesa bere a dwa no sesa 1%. Sɛ ɛboro 1 a, wɔsesa sene dwa no; sɛ ɛwɔ 1 ase a, wɔsesa kakra. Wɔmfa sika a ɛda hɔ nka ho.';
+
+  @override
+  String get portfolioTop3 => 'Nkyɛfa 3 a ɛsõ koraa';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Wo nkyɛfa no bo dodoɔ a ɛwɔ nkyɛfa mmiɛnsa a ɛsõ koraa a wowɔ no mu. Sɛ ɛkɔ soro a, adwumakuo baako ho asɛm bɔne betumi asɛe wo nkyɛfa nyinaa kɛse.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Sɛnea mfaso kyɛ wɔ kyɛfa biara so nyinii afe biara, sɛ yɛkyɛ mu pɛpɛɛpɛ a, wɔ mfe enum a atwam no mu. Nkɔso a ɛkɔ so daa taa kyerɛ sɛ adwumakuw no wɔ ahotoso wɔ ne sika a ɛba ne nea ɛkɔ mu; sɛ wɔtew so a, ɛtaa yɛ kɔkɔbɔ sɛnkyerɛnne.';
 

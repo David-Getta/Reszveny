@@ -2013,6 +2013,20 @@ class AppLocalizationsCeb extends AppLocalizations {
       'Ang bahin sa ganansya nga gibayad isip dibidendo. Labaw sa 100%, mas daghan ang gibayad sa kompanya kaysa sa iyang kinitaan, nga panagsa ra molungtad.';
 
   @override
+  String get portfolioBeta => 'Beta sa portfolio';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Ang beta sa imong mga stock, gitimbang sumala sa ilang bili: mga pila ka porsiyento ang paglihok sa imong mga stock kon ang merkado molihok og 1%. Kon labaw sa 1, mas dako ang ilang pag-uyog kaysa merkado; kon ubos sa 1, mas gamay. Wala giapil ang cash.';
+
+  @override
+  String get portfolioTop3 => 'Top 3 nga posisyon';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Pila sa bili sa imong mga stock ang anaa sa imong tulo ka pinakadakong posisyon. Kon mas taas kini, mas makadaot sa tibuok portfolio ang daotang balita bahin sa usa lang ka kompanya.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Pila ang gitubo sa dibidendo matag share kada tuig sa aberids sulod sa miaging lima ka tuig. Ang makanunayong pagtubo kasagaran nagpasabot nga nagsalig ang kompanya sa iyang cash flow; ang pagkunhod kasagaran usa ka timaan sa pasidaan.';
 

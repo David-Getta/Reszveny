@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Ebumnuche nkesa uru kwa ọnwa",
   "dividendGoalAmount": "Nkesa uru kwa ọnwa",
   "dividendGoalProgress": "Ihe dị ka {amount} kwa ọnwa na mkpụrụ nke taa · {percent} · Ebumnuche: {goal}",
-  "dividendGoalReached": "Ihe dị ka {amount} kwa ọnwa na mkpụrụ nke taa · Emezuru ebumnuche: {goal}"
+  "dividendGoalReached": "Ihe dị ka {amount} kwa ọnwa na mkpụrụ nke taa · Emezuru ebumnuche: {goal}",
+  "portfolioBeta": "Beta nke portfolio",
+  "glossPortfolioBeta": "Beta nke òkè gị, a tụrụ ya dịka uru ha si dị: ihe dị ka pasentị ole òkè gị na-agagharị mgbe ahịa na-agagharị 1%. Ọ bụrụ na ọ karịrị 1, ha na-agagharị karịa ahịa; ọ bụrụ n'okpuru 1, ha na-agagharị obere. Etinyeghị ego ka ego n'ime ya.",
+  "portfolioTop3": "Ihe 3 kachasị ukwuu ị nwere",
+  "glossPortfolioTop3": "Ole n'ime uru òkè gị dị n'ihe atọ kachasị ukwuu ị nwere. Ka ọ na-adị elu, ka akụkọ ọjọọ banyere naanị otu ụlọ ọrụ nwere ike imebi portfolio gị niile karịa."
 }

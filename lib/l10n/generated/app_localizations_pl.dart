@@ -2061,6 +2061,20 @@ class AppLocalizationsPl extends AppLocalizations {
       'Część zysku wypłacana jako dywidenda. Powyżej 100% spółka wypłaca więcej, niż zarabia, co rzadko trwa długo.';
 
   @override
+  String get portfolioBeta => 'Beta portfela';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Beta twoich akcji ważona ich wartością: mniej więcej o ile procent zmieniają się twoje akcje, gdy rynek zmienia się o 1%. Powyżej 1 wahają się mocniej niż rynek, poniżej 1 słabiej. Gotówka nie jest uwzględniana.';
+
+  @override
+  String get portfolioTop3 => '3 największe pozycje';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Jaka część wartości twoich akcji przypada na trzy największe pozycje. Im jest wyższa, tym bardziej złe wieści z jednej spółki mogą zaszkodzić całemu portfelowi.';
+
+  @override
   String get glossDividendGrowth5y =>
       'O ile średnio rocznie rosła dywidenda na akcję w ostatnich pięciu latach. Stały wzrost zwykle oznacza, że spółka ufa swoim przepływom pieniężnym; obniżka często jest sygnałem ostrzegawczym.';
 

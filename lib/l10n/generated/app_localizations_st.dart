@@ -2014,6 +2014,20 @@ class AppLocalizationsSt extends AppLocalizations {
       'Karolo ya phaello e lefuwang e le dividende. Ka hodima 100% khampani e lefa ho feta seo e se fumanang, mme hoo ha se hangata ho tswelang pele.';
 
   @override
+  String get portfolioBeta => 'Beta ya potefolio';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Beta ya dishere tsa hao, e lekantsweng ho ya ka boleng ba tsona: e bontsha hore dishere tsa hao di tsamaya ka diperesente tse kae ha mmaraka o tsamaya ka 1%. Ka hodimo ho 1 di fetoha ho feta mmaraka, ka tlase ho 1 di fetoha hanyane. Chelete ha e kenyelletswe.';
+
+  @override
+  String get portfolioTop3 => 'Dishere tse 3 tse kgolo';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Hore na ke karolo e kae ya boleng ba dishere tsa hao e leng ho dishere tsa hao tse tharo tse kgolo ka ho fetisisa. Ha e le hodimo haholo, ditaba tse mpe tsa khampani e le nngwe di ka utlwisa potefolio yohle bohloko haholo.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Hore na dividende ka shere e hotse hakae ka selemo ka karolelano dilemong tse hlano tse fetileng. Kgolo e tsitsitseng hangata e bolela hore khampani e tshepa phallo ya yona ya tjhelete; phokotso hangata ke letshwao la temoso.';
 

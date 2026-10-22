@@ -2008,6 +2008,20 @@ class AppLocalizationsIt extends AppLocalizations {
       'La quota dell\'utile distribuita come dividendi. Sopra il 100% l\'azienda paga più di quanto guadagna, cosa che raramente dura.';
 
   @override
+  String get portfolioBeta => 'Beta del portafoglio';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Il beta delle tue azioni, ponderato in base al loro valore: all\'incirca di quanto per cento si muovono le tue azioni quando il mercato si muove dell\'1%. Sopra 1 oscillano più del mercato, sotto 1 meno. La liquidità non è inclusa.';
+
+  @override
+  String get portfolioTop3 => 'Prime 3 posizioni';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Quanta parte del valore delle tue azioni è concentrata nelle tue tre posizioni più grandi. Più è alta, più una cattiva notizia su una singola società può danneggiare l\'intero portafoglio.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Di quanto è cresciuto in media ogni anno il dividendo per azione negli ultimi cinque anni. Una crescita costante di solito indica che l’azienda ha fiducia nel proprio flusso di cassa; un taglio è spesso un segnale d’allarme.';
 

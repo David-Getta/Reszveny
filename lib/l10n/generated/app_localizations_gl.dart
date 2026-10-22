@@ -2026,6 +2026,20 @@ class AppLocalizationsGl extends AppLocalizations {
       'A parte do beneficio que se reparte como dividendos. Por riba do 100 % a empresa paga máis do que gaña, algo que rara vez dura.';
 
   @override
+  String get portfolioBeta => 'Beta da carteira';
+
+  @override
+  String get glossPortfolioBeta =>
+      'A beta das túas accións, ponderada polo seu valor: aproximadamente canto por cento se moven as túas accións cando o mercado se move un 1 %. Por riba de 1 oscilan máis ca o mercado; por baixo de 1, menos. Non inclúe o efectivo.';
+
+  @override
+  String get portfolioTop3 => '3 posicións principais';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Que parte do valor das túas accións está nas túas tres maiores posicións. Canto máis alta é, máis pode prexudicar a toda a carteira unha mala nova dunha soa empresa.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Canto medrou de media cada ano o dividendo por acción nos últimos cinco anos. Un crecemento constante adoita indicar que a empresa confía no seu fluxo de caixa; un recorte a miúdo é un sinal de alerta.';
 

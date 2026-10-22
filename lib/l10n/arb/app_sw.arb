@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Lengo la gawio la kila mwezi",
   "dividendGoalAmount": "Gawio kwa mwezi",
   "dividendGoalProgress": "Takriban {amount} kwa mwezi kwa mavuno ya sasa: {percent} ya lengo lako la {goal}",
-  "dividendGoalReached": "Takriban {amount} kwa mwezi kwa mavuno ya sasa: lengo lako la {goal} limefikiwa"
+  "dividendGoalReached": "Takriban {amount} kwa mwezi kwa mavuno ya sasa: lengo lako la {goal} limefikiwa",
+  "portfolioBeta": "Beta ya jalada la hisa",
+  "glossPortfolioBeta": "Beta ya hisa zako, iliyopimwa kulingana na thamani yake: takriban hisa zako husonga kwa asilimia ngapi soko linaposonga kwa 1%. Juu ya 1 zinayumba zaidi ya soko, chini ya 1 kidogo. Taslimu haijajumuishwa.",
+  "portfolioTop3": "Nafasi 3 kubwa zaidi",
+  "glossPortfolioTop3": "Sehemu ya thamani ya hisa zako iliyo katika nafasi zako tatu kubwa zaidi. Kadiri inavyokuwa juu, ndivyo habari mbaya kuhusu kampuni moja tu zinavyoweza kudhuru jalada lote la hisa."
 }

@@ -2009,6 +2009,20 @@ class AppLocalizationsSq extends AppLocalizations {
       'Pjesa e fitimit që paguhet si dividend. Mbi 100% kompania paguan më shumë se sa fiton, gjë që rrallë zgjat.';
 
   @override
+  String get portfolioBeta => 'Beta e portofolit';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Beta e aksioneve tuaja, e peshuar sipas vlerës së tyre: përafërsisht me sa përqind lëvizin aksionet tuaja kur tregu lëviz 1%. Mbi 1 luhaten më shumë se tregu, nën 1 më pak. Paratë e gatshme nuk përfshihen.';
+
+  @override
+  String get portfolioTop3 => '3 pozicionet më të mëdha';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Sa nga vlera e aksioneve tuaja ndodhet në tri pozicionet tuaja më të mëdha. Sa më e lartë, aq më shumë mund ta dëmtojnë të gjithë portofolin lajmet e këqija për një kompani të vetme.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Sa është rritur mesatarisht në vit dividendi për aksion gjatë pesë viteve të fundit. Një rritje e qëndrueshme zakonisht do të thotë se kompania i beson rrjedhës së saj të parasë; një ulje shpesh është shenjë paralajmëruese.';
 

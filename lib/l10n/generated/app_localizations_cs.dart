@@ -2054,6 +2054,20 @@ class AppLocalizationsCs extends AppLocalizations {
       'Podíl zisku vyplacený jako dividendy. Nad 100 % firma vyplácí víc, než vydělá, a to zřídka vydrží.';
 
   @override
+  String get portfolioBeta => 'Beta portfolia';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Beta vašich akcií vážená jejich hodnotou: zhruba o kolik procent se vaše akcie pohnou, když se trh pohne o 1 %. Nad 1 kolísají víc než trh, pod 1 méně. Hotovost se nezapočítává.';
+
+  @override
+  String get portfolioTop3 => 'Top 3 pozice';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Jaká část hodnoty vašich akcií připadá na vaše tři největší pozice. Čím je vyšší, tím víc může špatná zpráva o jediné firmě poškodit celé portfolio.';
+
+  @override
   String get glossDividendGrowth5y =>
       'O kolik v průměru ročně rostla dividenda na akcii za posledních pět let. Stabilní růst obvykle znamená, že firma věří svému peněžnímu toku; snížení bývá varovným signálem.';
 

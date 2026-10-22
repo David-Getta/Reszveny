@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Mesačný cieľ dividend",
   "dividendGoalAmount": "Dividendy mesačne",
   "dividendGoalProgress": "Približne {amount} mesačne pri dnešných výnosoch: {percent} z cieľa {goal}",
-  "dividendGoalReached": "Približne {amount} mesačne pri dnešných výnosoch: cieľ {goal} splnený"
+  "dividendGoalReached": "Približne {amount} mesačne pri dnešných výnosoch: cieľ {goal} splnený",
+  "portfolioBeta": "Beta portfólia",
+  "glossPortfolioBeta": "Beta vašich akcií vážená ich hodnotou: približne o koľko percent sa pohnú vaše akcie, keď sa trh pohne o 1 %. Nad 1 kolíšu viac ako trh, pod 1 menej. Hotovosť nie je zahrnutá.",
+  "portfolioTop3": "Top 3 pozície",
+  "glossPortfolioTop3": "Aká časť hodnoty vašich akcií pripadá na vaše tri najväčšie pozície. Čím je vyššia, tým viac môžu zlé správy o jednej firme poškodiť celé portfólio."
 }

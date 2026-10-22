@@ -2016,6 +2016,20 @@ class AppLocalizationsHil extends AppLocalizations {
       'Ang parte sang ganansya nga ginabayad bilang dibidendo. Labaw sa 100% ang kompanya nagabayad sang labaw sa iya ginakita, nga talagsa lang magdugay.';
 
   @override
+  String get portfolioBeta => 'Beta sang portfolio';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Ang beta sang imo mga stock, gintimbang suno sa ila balor: mga pila ka porsiyento ang paghulag sang imo mga stock kon maghulag ang merkado sing 1%. Kon labaw sa 1, mas dako ang ila pagsaka-panaog sangsa merkado; kon idalom sa 1, mas diutay. Indi upod ang cash.';
+
+  @override
+  String get portfolioTop3 => 'Top 3 nga posisyon';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Pila sang balor sang imo mga stock ang yara sa imo tatlo ka pinakadako nga posisyon. Kon mas mataas ini, mas makahalit sa bug-os nga portfolio ang malain nga balita parte sa isa lang ka kompanya.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Pila ang gintubo sang dibidendo kada share kada tuig sa average sa nagligad nga lima ka tuig. Ang padayon nga pagtubo kasagaran nagakahulugan nga nagasalig ang kompanya sa iya cash flow; ang pagbuhin kasagaran isa ka tanda sang paandam.';
 

@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Cholinga cha gawo la phindu pamwezi",
   "dividendGoalAmount": "Gawo la phindu pamwezi",
   "dividendGoalProgress": "Pafupifupi {amount} pamwezi ndi chiwerengero cha lero · {percent} · Cholinga: {goal}",
-  "dividendGoalReached": "Pafupifupi {amount} pamwezi ndi chiwerengero cha lero · Mwakwaniritsa cholinga: {goal}"
+  "dividendGoalReached": "Pafupifupi {amount} pamwezi ndi chiwerengero cha lero · Mwakwaniritsa cholinga: {goal}",
+  "portfolioBeta": "Beta ya masheya anu",
+  "glossPortfolioBeta": "Beta ya masheya anu, yoyezedwa malinga ndi mtengo wake: pafupifupi kuti masheya anu amasintha ndi peresenti zingati msika ukasintha ndi 1%. Pamwamba pa 1 amasinthasintha kuposa msika, pansi pa 1 pang'ono. Ndalama sizikuphatikizidwa.",
+  "portfolioTop3": "Masheya 3 akuluakulu",
+  "glossPortfolioTop3": "Gawo la mtengo wa masheya anu lomwe lili m'masheya anu atatu akuluakulu. Likakhala lalikulu, nkhani zoipa za kampani imodzi zingathe kuwononga kwambiri masheya anu onse."
 }

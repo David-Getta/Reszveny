@@ -2008,6 +2008,20 @@ class AppLocalizationsGn extends AppLocalizations {
       'Ganancia pehẽ oñepagáva dividendo ramo. 100% ári, empresa opaga hetave ohupytývagui, ha upéva ndaipukúi jepi.';
 
   @override
+  String get portfolioBeta => 'Cartera beta';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Ne aksiõkuéra beta, ojepesáva hepykuéra rupi: mboýpa porcentaje rupi omýi ne aksiõkuéra mercado omýirõ 1%. 1 ári oĩramo, omýive mercadogui; 1 guýpe oĩramo, omýi michĩve. Pirapire ndoikéi ko\'ápe.';
+
+  @override
+  String get portfolioTop3 => 'Ereguerekóva 3 tuichavéva';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Mboýpa ne aksiõkuéra repykuéragui oĩ mbohapy ereguerekóva tuichavévape. Ijyvateve jave, peteĩ empresa marandu vai ikatu ombyai hetave opaite ne cartera.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Mbaʼeichaitépa okakuaa dividendo peteĩteĩ acción rehe ary ha ary, promedio-pe, ary po ohasavaʼekuépe. Jekakuaa hekopete ohechauka jepi pe empresa ojeroviaha iviru oikéva ha osẽvare; ojepoʼíramo, heta jey haʼe peteĩ señal de alerta.';
 

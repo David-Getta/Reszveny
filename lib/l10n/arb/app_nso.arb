@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Maikemišetšo a dividende a kgwedi le kgwedi",
   "dividendGoalAmount": "Dividende ka kgwedi",
   "dividendGoalProgress": "Ka poelo ya lehono, e ka ba {amount} ka kgwedi · {percent} · Maikemišetšo: {goal}",
-  "dividendGoalReached": "Ka poelo ya lehono, e ka ba {amount} ka kgwedi · Maikemišetšo a fihleletšwe: {goal}"
+  "dividendGoalReached": "Ka poelo ya lehono, e ka ba {amount} ka kgwedi · Maikemišetšo a fihleletšwe: {goal}",
+  "portfolioBeta": "Beta ya photefolio",
+  "glossPortfolioBeta": "Beta ya dišere tša gago, e lekanyeditšwe go ya ka boleng bja tšona: e bontšha gore dišere tša gago di šutha ka diphesente tše kae ge mmaraka o šutha ka 1%. Ka godimo ga 1 di fetoga kudu go feta mmaraka, ka fase ga 1 di fetoga ka mo go nyenyane. Tšhelete ga e akaretšwe.",
+  "portfolioTop3": "Maemo a 3 a magolo",
+  "glossPortfolioTop3": "Gore ke karolo ye kae ya boleng bja dišere tša gago yeo e lego maemong a gago a mararo a magolo kudu. Ge e le godimo kudu, ditaba tše mpe tša khamphani e tee di ka gobatša photefolio ka moka kudu."
 }

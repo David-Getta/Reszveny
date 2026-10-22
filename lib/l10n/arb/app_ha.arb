@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Burin rabon riba na wata-wata",
   "dividendGoalAmount": "Rabon riba a wata",
   "dividendGoalProgress": "Kusan {amount} a wata bisa yawan riba na yanzu · {percent} · Buri: {goal}",
-  "dividendGoalReached": "Kusan {amount} a wata bisa yawan riba na yanzu · An cimma buri: {goal}"
+  "dividendGoalReached": "Kusan {amount} a wata bisa yawan riba na yanzu · An cimma buri: {goal}",
+  "portfolioBeta": "Beta na jakar hannun jari",
+  "glossPortfolioBeta": "Beta na hannun jarinka, an auna shi bisa ƙimarsu: kusan kashi nawa ne hannun jarinka ke motsawa idan kasuwa ta motsa da 1%. Sama da 1 suna jujjuyawa fiye da kasuwa, ƙasa da 1 ƙasa da haka. Ba a haɗa tsabar kuɗi ba.",
+  "portfolioTop3": "Manyan matsayi 3",
+  "glossPortfolioTop3": "Nawa ne daga ƙimar hannun jarinka ke cikin manyan matsayinka uku. Idan ya ƙara girma, mummunan labari game da kamfani ɗaya kaɗai zai fi iya cutar da dukan jakar hannun jari."
 }

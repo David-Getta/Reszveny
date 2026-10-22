@@ -2003,6 +2003,20 @@ class AppLocalizationsNb extends AppLocalizations {
       'Andelen av overskuddet som deles ut som utbytte. Over 100 % betaler selskapet ut mer enn det tjener, og det varer sjelden.';
 
   @override
+  String get portfolioBeta => 'Porteføljebeta';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Betaen til aksjene dine, vektet etter verdien deres: omtrent hvor mange prosent aksjene dine beveger seg når markedet beveger seg 1 %. Over 1 svinger de mer enn markedet, under 1 mindre. Kontanter er ikke tatt med.';
+
+  @override
+  String get portfolioTop3 => '3 største beholdninger';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Hvor stor del av verdien av aksjene dine som ligger i de tre største beholdningene dine. Jo høyere den er, desto mer kan dårlige nyheter fra ett enkelt selskap skade hele porteføljen.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Hvor mye utbyttet per aksje har økt i gjennomsnitt per år de siste fem årene. Jevn vekst betyr som regel at selskapet har tillit til kontantstrømmen sin; et kutt er ofte et faresignal.';
 

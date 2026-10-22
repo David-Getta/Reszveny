@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Obxectivo mensual de dividendos",
   "dividendGoalAmount": "Dividendos ao mes",
   "dividendGoalProgress": "Uns {amount} ao mes coa rendibilidade actual: {percent} do teu obxectivo de {goal}",
-  "dividendGoalReached": "Uns {amount} ao mes coa rendibilidade actual: obxectivo de {goal} acadado"
+  "dividendGoalReached": "Uns {amount} ao mes coa rendibilidade actual: obxectivo de {goal} acadado",
+  "portfolioBeta": "Beta da carteira",
+  "glossPortfolioBeta": "A beta das túas accións, ponderada polo seu valor: aproximadamente canto por cento se moven as túas accións cando o mercado se move un 1 %. Por riba de 1 oscilan máis ca o mercado; por baixo de 1, menos. Non inclúe o efectivo.",
+  "portfolioTop3": "3 posicións principais",
+  "glossPortfolioTop3": "Que parte do valor das túas accións está nas túas tres maiores posicións. Canto máis alta é, máis pode prexudicar a toda a carteira unha mala nova dunha soa empresa."
 }

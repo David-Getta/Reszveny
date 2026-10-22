@@ -546,6 +546,31 @@ class _AllocationCardState extends State<AllocationCard> {
                 },
               ),
             },
+            // Kockázat: a részvények súlyozott bétája és a koncentráció (a 3 legnagyobb súlya).
+            if (widget.snapshot.beta != null || widget.snapshot.top3Weight != null) ...[
+              const SizedBox(height: 14),
+              Wrap(
+                key: const ValueKey('portfolio-risk'),
+                spacing: 28,
+                runSpacing: 10,
+                children: [
+                  if (widget.snapshot.beta case final b?)
+                    MetricFigure(
+                      key: const ValueKey('portfolio-beta'),
+                      label: l10n.portfolioBeta,
+                      value: widget.fmt.number(b),
+                      hint: l10n.glossPortfolioBeta,
+                    ),
+                  if (widget.snapshot.top3Weight case final t?)
+                    MetricFigure(
+                      key: const ValueKey('portfolio-top3'),
+                      label: l10n.portfolioTop3,
+                      value: widget.fmt.percent(t * 100, decimals: 0),
+                      hint: l10n.glossPortfolioTop3,
+                    ),
+                ],
+              ),
+            ],
           ],
         ),
       ),

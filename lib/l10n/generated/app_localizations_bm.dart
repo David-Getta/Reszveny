@@ -2000,6 +2000,20 @@ class AppLocalizationsBm extends AppLocalizations {
       'Tɔnɔ niyɔrɔ min bɛ tila ka di aksiyɔntigiw ma. 100% sanfɛ, sosiyete bɛ wari di ka tɛmɛ a ka sɔrɔ kan, o tɛ mɛn tuma caman.';
 
   @override
+  String get portfolioBeta => 'Aksiyɔn kɛsu beta';
+
+  @override
+  String get glossPortfolioBeta =>
+      'I ka aksiyɔnw ka beta, u sɔngɔ hakɛ jatelen: ni sugu yɛlɛmana 1%, i ka aksiyɔnw bɛ yɛlɛma kɛmɛsarada joli ɲɔgɔn. Ni a ka bon ni 1 ye, u bɛ yɛlɛma ka tɛmɛ sugu kan; ni a ka dɔgɔ ni 1 ye, u bɛ yɛlɛma ka dɔgɔ ni sugu ye. Wari gansan tɛ jate a la.';
+
+  @override
+  String get portfolioTop3 => 'Aksiyɔn 3 belebelebaw';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'I ka aksiyɔnw sɔngɔ hakɛ min bɛ i ka aksiyɔn saba belebelebaw la. Ni o hakɛ ka bon, sosiyete kelen ka kunnafoni jugu bɛ se ka i ka aksiyɔn kɛsu bɛɛ tiɲɛ kosɛbɛ.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Aksiyɔn kelen tɔnɔ tilali yiriwala cogo min na san o san, ka a hakɛ cɛmancɛ ta, san duuru tɛmɛnenw kɔnɔ. Yiriwali min bɛ taa ɲɛ a cogo kelen na, o b\'a jira tuma caman na ko sosiyete dalen bɛ a ka wari donta ni bɔta la; ni tɔnɔ tilali dɔgɔyara, o ye lasɔmini taamasiyɛn ye tuma caman na.';
 

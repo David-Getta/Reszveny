@@ -2009,6 +2009,20 @@ class AppLocalizationsSn extends AppLocalizations {
       'Chikamu chepundutso chinobhadharwa sedhividhendi. Pamusoro pe100% kambani inobhadhara kupfuura zvainowana, izvo zvisingawanzogari.';
 
   @override
+  String get portfolioBeta => 'Beta yepotiforiyo';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Beta yemasheya ako, yakayerwa maererano nekukosha kwawo: inenge masheya ako anofamba nezvikamu zvingani muzana kana musika ukafamba ne1%. Pamusoro pe1 anozununguka kupfuura musika, pasi pe1 zvishoma. Mari haina kuverengerwa.';
+
+  @override
+  String get portfolioTop3 => 'Masheya makuru 3';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Chikamu chekukosha kwemasheya ako chiri mumasheya ako matatu makuru. Pachinowedzera, ndipo nhau dzakaipa dzekambani imwe chete dzinogona kukuvadza potiforiyo yese.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Kuti dhividhendi pasheya yakakura zvakadii pagore pavhareji mumakore mashanu apfuura. Kukura kwakatsiga kazhinji kunoreva kuti kambani inovimba nemari yayo inopinda; kuderedzwa kazhinji chiratidzo chenyevero.';
 

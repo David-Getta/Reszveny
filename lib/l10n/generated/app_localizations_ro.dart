@@ -2035,6 +2035,20 @@ class AppLocalizationsRo extends AppLocalizations {
       'Partea din profit plătită ca dividende. Peste 100%, compania plătește mai mult decât câștigă, ceea ce rareori durează.';
 
   @override
+  String get portfolioBeta => 'Beta portofoliului';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Beta acțiunilor tale, ponderată după valoarea lor: cam cu câte procente se mișcă acțiunile tale când piața se mișcă cu 1%. Peste 1 oscilează mai mult decât piața, sub 1 mai puțin. Numerarul nu este inclus.';
+
+  @override
+  String get portfolioTop3 => 'Top 3 poziții';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Cât din valoarea acțiunilor tale se află în cele mai mari trei poziții. Cu cât e mai mare, cu atât veștile proaste de la o singură companie pot afecta mai mult întregul portofoliu.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Cât a crescut în medie pe an dividendul pe acțiune în ultimii cinci ani. O creștere constantă înseamnă de obicei că firma are încredere în fluxul său de numerar; o reducere este adesea un semnal de alarmă.';
 

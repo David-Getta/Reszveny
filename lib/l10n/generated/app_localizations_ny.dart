@@ -2010,6 +2010,20 @@ class AppLocalizationsNy extends AppLocalizations {
       'Gawo la phindu lomwe limagawidwa kwa eni masheya. Kupitirira 100% kampani imapereka zambiri kuposa zomwe imapeza, zomwe sizikhalitsa kawirikawiri.';
 
   @override
+  String get portfolioBeta => 'Beta ya masheya anu';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Beta ya masheya anu, yoyezedwa malinga ndi mtengo wake: pafupifupi kuti masheya anu amasintha ndi peresenti zingati msika ukasintha ndi 1%. Pamwamba pa 1 amasinthasintha kuposa msika, pansi pa 1 pang\'ono. Ndalama sizikuphatikizidwa.';
+
+  @override
+  String get portfolioTop3 => 'Masheya 3 akuluakulu';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Gawo la mtengo wa masheya anu lomwe lili m\'masheya anu atatu akuluakulu. Likakhala lalikulu, nkhani zoipa za kampani imodzi zingathe kuwononga kwambiri masheya anu onse.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Kuchuluka komwe gawo la phindu pa sheya iliyonse lakula pachaka pafupifupi m\'zaka zisanu zapitazi. Kukula kosasunthika nthawi zambiri kumatanthauza kuti kampani ikukhulupirira ndalama zomwe imapeza; kuchepetsa nthawi zambiri ndi chizindikiro chochenjeza.';
 

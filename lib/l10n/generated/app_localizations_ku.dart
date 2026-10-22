@@ -2005,6 +2005,20 @@ class AppLocalizationsKu extends AppLocalizations {
       'Para qezencê ya ku wekî dîvîdend tê dayîn. Ji 100% zêdetir şirket ji qezenca xwe zêdetir dide, ku kêm caran dom dike.';
 
   @override
+  String get portfolioBeta => 'Betaya portfolyoyê';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Betaya pişkên te, li gorî nirxa wan hatiye pîvan: bi qasî çend ji sedî pişkên te dilivin dema ku bazar 1% dilive. Ji 1 bilindtir, ew ji bazarê zêdetir dihejin; ji 1 kêmtir, kêmtir. Pereyê nexd nayê hesibandin.';
+
+  @override
+  String get portfolioTop3 => '3 pozîsyonên herî mezin';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Çiqas ji nirxa pişkên te di sê pozîsyonên te yên herî mezin de ye. Çiqas bilindtir be, nûçeyên xirab ên li ser tenê yek şîrketê ewqas zêdetir dikarin zirarê bidin tevahiya portfolyoyê.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Dîvîdenda her pişkê di pênc salên dawî de bi navînî salê çiqas mezin bûye. Mezinbûna domdar bi gelemperî nîşan dide ku pargîdanî bi herikîna xwe ya pereyan bawer e; kêmkirin pir caran nîşaneyek hişyariyê ye.';
 

@@ -2006,6 +2006,20 @@ class AppLocalizationsUz extends AppLocalizations {
       'Foydaning dividend sifatida toʻlanadigan ulushi. 100% dan yuqori boʻlsa, kompaniya topganidan koʻproq toʻlaydi, bu kamdan-kam uzoq davom etadi.';
 
   @override
+  String get portfolioBeta => 'Portfel betasi';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Aksiyalaringizning qiymatiga koʻra tortilgan betasi: bozor 1% harakatlanganda aksiyalaringiz taxminan necha foiz harakatlanishini koʻrsatadi. 1 dan yuqori boʻlsa, ular bozordan koʻproq tebranadi, 1 dan past boʻlsa — kamroq. Naqd pul hisobga olinmaydi.';
+
+  @override
+  String get portfolioTop3 => 'Eng yirik 3 pozitsiya';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Aksiyalaringiz qiymatining qancha qismi eng yirik uchta pozitsiyangizda ekanini koʻrsatadi. U qanchalik yuqori boʻlsa, bitta kompaniya haqidagi yomon xabar butun portfelga shunchalik koʻp zarar yetkazishi mumkin.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Oxirgi besh yilda bir aksiyaga toʻgʻri keladigan dividend yiliga oʻrtacha qanchaga oshgani. Barqaror oʻsish odatda kompaniya oʻz pul oqimiga ishonishini bildiradi; qisqartirish koʻpincha ogohlantiruvchi belgi hisoblanadi.';
 

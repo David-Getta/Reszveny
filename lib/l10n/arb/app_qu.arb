@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Sapa killa dividendopa hayparinan",
   "dividendGoalAmount": "Sapa killa dividendo",
   "dividendGoalProgress": "Kunan rendimientowan sapa killa yaqa {amount} · {percent} · Hayparina: {goal}",
-  "dividendGoalReached": "Kunan rendimientowan sapa killa yaqa {amount} · Hayparinaman chayarqanki: {goal}"
+  "dividendGoalReached": "Kunan rendimientowan sapa killa yaqa {amount} · Hayparinaman chayarqanki: {goal}",
+  "portfolioBeta": "Portafoliopa betan",
+  "glossPortfolioBeta": "Accionniykikunap betan, chaninkunaman hina llasachisqa: qhatu 1% kuyuptin, accionniykikuna yaqa hayk'a porcientota kuyunku. 1 hanaqpi kaptinqa qhatumanta aswan kuyunku, 1 uraypi kaptinqa aswan pisi. Qullqiqa mana yapakunchu.",
+  "portfolioTop3": "Aswan hatun 3 posicionkuna",
+  "glossPortfolioTop3": "Accionniykikunap chaninmanta hayk'an kimsa aswan hatun posicionniykikunapi kachkan. Aswan hatun kaptinqa, huk empresallamanta mana allin willakuykuna llapan portafolioykita aswan k'irinman."
 }

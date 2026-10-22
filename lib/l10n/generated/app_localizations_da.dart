@@ -2001,6 +2001,20 @@ class AppLocalizationsDa extends AppLocalizations {
       'Den del af overskuddet, der udbetales som udbytte. Over 100% udbetaler selskabet mere, end det tjener, hvilket sjældent holder.';
 
   @override
+  String get portfolioBeta => 'Porteføljebeta';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Betaen for dine aktier, vægtet efter deres værdi: cirka hvor mange procent dine aktier bevæger sig, når markedet bevæger sig 1%. Over 1 svinger de mere end markedet, under 1 mindre. Kontanter er ikke medregnet.';
+
+  @override
+  String get portfolioTop3 => 'Top 3-beholdninger';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Hvor stor en del af dine aktiers værdi der ligger i dine tre største beholdninger. Jo højere den er, jo mere kan dårlige nyheder fra et enkelt selskab skade hele porteføljen.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Hvor meget udbyttet pr. aktie i gennemsnit er vokset om året over de seneste fem år. Stabil vækst betyder som regel, at selskabet har tillid til sit cashflow; en nedsættelse er ofte et faresignal.';
 

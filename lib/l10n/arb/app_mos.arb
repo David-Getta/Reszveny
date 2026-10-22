@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Dividãnd raabo kiuug fãa",
   "dividendGoalAmount": "Dividãnd kiuug fãa",
   "dividendGoalProgress": "≈ {amount} kiuug fãa ne rũndã nafa · {percent} · Raabo: {goal}",
-  "dividendGoalReached": "≈ {amount} kiuug fãa ne rũndã nafa · Raabã paame: {goal}"
+  "dividendGoalReached": "≈ {amount} kiuug fãa ne rũndã nafa · Raabã paame: {goal}",
+  "portfolioBeta": "Portfey beta",
+  "glossPortfolioBeta": "F aksiõ-rãmbã beta, sẽn mak ne b yõodo: a wilgda f aksiõ-rãmbã sẽn kẽnd wa wãna, raagã sã n kẽng 1%. 1 sẽn yɩɩda, b kẽnda n yɩɩd raagã; 1 sẽn pa ta, b kẽnda n pa ta raagã. Ligdã pa be pʋgẽ ye.",
+  "portfolioTop3": "Aksiõ kãsems 3",
+  "glossPortfolioTop3": "F aksiõ-rãmbã yõodã zĩig a wãna n be f aksiõ kãsems a tãabã pʋgẽ. A sã n yɩɩd n zẽka, kibar-wẽng sẽn tũ sosayet a ye bal tõe n sãam portfey wã fãa n paase."
 }

@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Obiectiv lunar de dividende",
   "dividendGoalAmount": "Dividende pe lună",
   "dividendGoalProgress": "Circa {amount} pe lună la randamentele actuale: {percent} din obiectivul de {goal}",
-  "dividendGoalReached": "Circa {amount} pe lună la randamentele actuale: obiectivul de {goal} a fost atins"
+  "dividendGoalReached": "Circa {amount} pe lună la randamentele actuale: obiectivul de {goal} a fost atins",
+  "portfolioBeta": "Beta portofoliului",
+  "glossPortfolioBeta": "Beta acțiunilor tale, ponderată după valoarea lor: cam cu câte procente se mișcă acțiunile tale când piața se mișcă cu 1%. Peste 1 oscilează mai mult decât piața, sub 1 mai puțin. Numerarul nu este inclus.",
+  "portfolioTop3": "Top 3 poziții",
+  "glossPortfolioTop3": "Cât din valoarea acțiunilor tale se află în cele mai mari trei poziții. Cu cât e mai mare, cu atât veștile proaste de la o singură companie pot afecta mai mult întregul portofoliu."
 }

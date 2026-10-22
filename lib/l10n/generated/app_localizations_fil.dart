@@ -2010,6 +2010,20 @@ class AppLocalizationsFil extends AppLocalizations {
       'Ang bahagi ng tubo na ibinabayad bilang dibidendo. Kapag lampas sa 100%, mas malaki ang ibinabayad ng kumpanya kaysa sa kinikita nito, na bihirang tumagal.';
 
   @override
+  String get portfolioBeta => 'Beta ng portfolio';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Ang beta ng iyong mga stock, tinimbang ayon sa halaga nila: humigit-kumulang ilang porsiyento gumagalaw ang mga stock mo kapag gumalaw nang 1% ang merkado. Kapag lampas sa 1, mas malaki ang galaw nila kaysa sa merkado; kapag mas mababa sa 1, mas maliit. Hindi kasama ang cash.';
+
+  @override
+  String get portfolioTop3 => 'Top 3 na posisyon';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Gaano kalaking bahagi ng halaga ng mga stock mo ang nasa tatlo mong pinakamalaking posisyon. Kapag mas mataas ito, mas makakasira sa buong portfolio ang masamang balita tungkol sa iisang kumpanya.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Gaano kalaki ang average na taunang paglago ng dibidendo kada share sa nakalipas na limang taon. Kadalasang ibig sabihin ng tuloy-tuloy na paglago na may tiwala ang kompanya sa cash flow nito; ang pagbawas ay madalas na babala.';
 

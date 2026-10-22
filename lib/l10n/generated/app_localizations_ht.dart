@@ -2001,6 +2001,20 @@ class AppLocalizationsHt extends AppLocalizations {
       'Pati nan benefis la yo peye kòm dividann. Plis pase 100% konpayi a peye plis pase sa li fè, e sa raman dire.';
 
   @override
+  String get portfolioBeta => 'Beta pòtfèy la';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Beta aksyon ou yo, an mwayèn selon valè chak: apeprè konbyen pousan aksyon ou yo bouje lè mache a bouje 1%. Pi wo pase 1, yo bouje plis pase mache a; anba 1, mwens. Lajan kach pa ladan l.';
+
+  @override
+  String get portfolioTop3 => '3 pi gwo pozisyon';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Ki pati nan valè aksyon ou yo ki nan twa pi gwo pozisyon ou yo. Plis li wo, plis move nouvèl sou yon sèl konpayi ka fè tout pòtfèy la mal.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Konbyen dividann pa aksyon an te grandi chak ane an mwayèn pandan senk dènye ane yo. Yon kwasans regilye anjeneral vle di konpayi an gen konfyans nan lajan k ap antre ak soti li; yon diminisyon souvan se yon siy avètisman.';
 

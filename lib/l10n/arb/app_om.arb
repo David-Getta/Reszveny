@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Kaayyoo qooda bu'aa ji'aa",
   "dividendGoalAmount": "Qooda bu'aa ji'atti",
   "dividendGoalProgress": "Dhibbeentaa har'aatiin ji'atti gara {amount} · {percent} · Kaayyoo: {goal}",
-  "dividendGoalReached": "Dhibbeentaa har'aatiin ji'atti gara {amount} · Kaayyoon galma ga'eera: {goal}"
+  "dividendGoalReached": "Dhibbeentaa har'aatiin ji'atti gara {amount} · Kaayyoon galma ga'eera: {goal}",
+  "portfolioBeta": "Beetaa poortfooliyoo",
+  "glossPortfolioBeta": "Beetaa aksiyoonota keetii, akka gatii isaaniitti madaalame: gabaan 1% yoo sochoo'u, aksiyoonni kee tilmaamaan dhibbeentaa meeqa akka sochoo'an agarsiisa. 1 ol yoo ta'e gabaa caalaa jijjiiramu, 1 gadi yoo ta'e xiqqaa. Maallaqni callaa hin dabalamne.",
+  "portfolioTop3": "Qabiyyeewwan gurguddoo 3",
+  "glossPortfolioTop3": "Gatii aksiyoonota keetii keessaa hammi kam qabiyyeewwan kee sadan gurguddoo keessa akka jiru. Hammuma ol ka'een, oduun badaan dhaabbata tokkoo poortfooliyoo guutuu caalaatti miidhuu danda'a."
 }

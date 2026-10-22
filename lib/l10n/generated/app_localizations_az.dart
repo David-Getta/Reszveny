@@ -2004,6 +2004,20 @@ class AppLocalizationsAz extends AppLocalizations {
       'Mənfəətin dividend kimi ödənilən payı. 100%-dən yuxarı şirkət qazandığından çox ödəyir və bu nadir hallarda davam edir.';
 
   @override
+  String get portfolioBeta => 'Portfel betası';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Səhmlərinizin dəyərinə görə çəkili betası: bazar 1% hərəkət etdikdə səhmlərinizin təxminən neçə faiz hərəkət etdiyi. 1-dən yuxarı olduqda bazardan çox, 1-dən aşağı olduqda az dalğalanırlar. Nağd vəsait daxil deyil.';
+
+  @override
+  String get portfolioTop3 => 'Ən böyük 3 mövqe';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Səhmlərinizin dəyərinin nə qədərinin ən böyük üç mövqeyinizdə olduğu. Bu nə qədər yüksəkdirsə, tək bir şirkət haqqında pis xəbər bütün portfelə bir o qədər çox zərər verə bilər.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Səhm başına dividendin son beş ildə orta hesabla ildə nə qədər artdığı. Sabit artım adətən şirkətin pul axınına güvəndiyini göstərir; dividendin azaldılması isə çox vaxt xəbərdarlıq əlamətidir.';
 

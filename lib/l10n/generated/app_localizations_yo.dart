@@ -2002,6 +2002,20 @@ class AppLocalizationsYo extends AppLocalizations {
       'Ìpín èrè tí wọ́n san jáde gẹ́gẹ́ bí èrè ìpín. Lókè 100% ilé-iṣẹ́ náà ń san ju ohun tó ń pa lọ, èyí tí kì í sábà pẹ́.';
 
   @override
+  String get portfolioBeta => 'Beta àpò ìdókòwò';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Beta àwọn ìpín rẹ, tí a wọ̀n gẹ́gẹ́ bí iye wọn: nǹkan bí ìdá-ọgọ́rùn-ún mélòó ni àwọn ìpín rẹ máa ń rìn nígbà tí ọjà bá rìn ní 1%. Tó bá ju 1 lọ, wọ́n máa ń yí padà ju ọjà lọ; nísàlẹ̀ 1, wọ́n máa ń yí padà díẹ̀. Owó kò sí nínú rẹ̀.';
+
+  @override
+  String get portfolioTop3 => 'Àwọn ohun ìní 3 tó tóbi jù';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Iye tí ó wà nínú àwọn ohun ìní mẹ́ta rẹ tó tóbi jù lọ nínú àpapọ̀ iye àwọn ìpín rẹ. Bí ó bá ṣe ga tó, bẹ́ẹ̀ ni ìròyìn burúkú nípa ilé-iṣẹ́ kan ṣoṣo ṣe lè ṣe gbogbo àpò ìdókòwò náà léṣe tó.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Bí èrè ìpín fún ìpín kọ̀ọ̀kan ṣe pọ̀ sí i tó lọ́dún ní ìpíndọ́gba láàrin ọdún márùn-ún sẹ́yìn. Ìdàgbàsókè tó dúró ṣinṣin sábà máa ń fi hàn pé ilé-iṣẹ́ náà gbẹ́kẹ̀lé ìṣàn owó rẹ̀; dídín in kù sábà máa ń jẹ́ àmì ìkìlọ̀.';
 

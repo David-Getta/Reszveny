@@ -1973,6 +1973,20 @@ class AppLocalizationsAm extends AppLocalizations {
       'እንደ የትርፍ ድርሻ የሚከፈለው የትርፍ ክፍል። ከ100% በላይ ከሆነ ኩባንያው ከሚያገኘው በላይ ይከፍላል፤ ይህ እምብዛም አይዘልቅም።';
 
   @override
+  String get portfolioBeta => 'የፖርትፎሊዮ ቤታ';
+
+  @override
+  String get glossPortfolioBeta =>
+      'በዋጋቸው የተመዘነ የአክሲዮኖችዎ ቤታ፦ ገበያው በ1% ሲንቀሳቀስ አክሲዮኖችዎ በግምት ስንት በመቶ እንደሚንቀሳቀሱ። ከ1 በላይ ከሆነ ከገበያው የበለጠ ይዋዠቃሉ፣ ከ1 በታች ከሆነ ያነሰ። ጥሬ ገንዘብ አይካተትም።';
+
+  @override
+  String get portfolioTop3 => '3 ትልልቅ ይዞታዎች';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'ከአክሲዮኖችዎ ዋጋ ምን ያህሉ በሦስቱ ትልልቅ ይዞታዎችዎ ውስጥ እንዳለ። ይህ በጨመረ ቁጥር በአንድ ኩባንያ ላይ የሚመጣ መጥፎ ዜና መላውን ፖርትፎሊዮ የበለጠ ሊጎዳ ይችላል።';
+
+  @override
   String get glossDividendGrowth5y =>
       'ባለፉት አምስት ዓመታት የአንድ አክሲዮን የትርፍ ድርሻ በአማካይ በዓመት ምን ያህል እንዳደገ። የተረጋጋ ዕድገት ብዙውን ጊዜ ኩባንያው በጥሬ ገንዘብ ፍሰቱ እንደሚተማመን ያሳያል፤ ቅናሽ ደግሞ ብዙ ጊዜ የማስጠንቀቂያ ምልክት ነው።';
 

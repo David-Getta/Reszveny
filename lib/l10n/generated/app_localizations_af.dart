@@ -2007,6 +2007,20 @@ class AppLocalizationsAf extends AppLocalizations {
       'Die deel van die wins wat as dividende uitbetaal word. Bo 100% betaal die maatskappy meer as wat dit verdien, wat selde hou.';
 
   @override
+  String get portfolioBeta => 'Portefeuljebeta';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Die beta van jou aandele, geweeg volgens hul waarde: rofweg hoeveel persent jou aandele beweeg wanneer die mark 1% beweeg. Bo 1 swaai hulle meer as die mark, onder 1 minder. Kontant word nie ingesluit nie.';
+
+  @override
+  String get portfolioTop3 => 'Top 3-posisies';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Hoeveel van jou aandele se waarde in jou drie grootste posisies sit. Hoe hoër dit is, hoe meer kan slegte nuus by \'n enkele maatskappy die hele portefeulje skaad.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Hoeveel die dividend per aandeel oor die afgelope vyf jaar gemiddeld per jaar gegroei het. Bestendige groei beteken gewoonlik dat die maatskappy sy kontantvloei vertrou; \'n verlaging is dikwels \'n waarskuwingsteken.';
 

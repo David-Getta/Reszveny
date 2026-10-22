@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Muoroto wa dividend wa o mweri",
   "dividendGoalAmount": "Dividend o mweri",
   "dividendGoalProgress": "Ta {amount} o mweri na uumithio wa ũmũthĩ · {percent} · Muoroto: {goal}",
-  "dividendGoalReached": "Ta {amount} o mweri na uumithio wa ũmũthĩ · Muoroto nĩ wakinyĩrwo: {goal}"
+  "dividendGoalReached": "Ta {amount} o mweri na uumithio wa ũmũthĩ · Muoroto nĩ wakinyĩrwo: {goal}",
+  "portfolioBeta": "Beta ya hisa ciaku",
+  "glossPortfolioBeta": "Beta ya hisa ciaku, ĩtarĩtwo kũringana na thogora wacio: nĩ ta pasendi ciigana atĩa hisa ciaku ithiaga rĩrĩa thoko yathiĩ 1%. Igũrũ wa 1 ciĩgarũrũkaga makĩria ya thoko, rungu rwa 1 nĩ hanini. Mbeca cia moko ititarĩtwo.",
+  "portfolioTop3": "Hisa 3 iria nene makĩria",
+  "glossPortfolioTop3": "Nĩ gĩcunjĩ kĩigana atĩa kĩa thogora wa hisa ciaku kĩrĩ hisa ithatũ iria nene makĩria ũrĩ nacio. O ũrĩa kĩrĩ kĩnene, noguo ũhoro mũũru wa kampuni ĩmwe tu ũngĩthũkia hisa ciaku ciothe makĩria."
 }

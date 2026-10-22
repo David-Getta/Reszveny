@@ -2004,6 +2004,20 @@ class AppLocalizationsSv extends AppLocalizations {
       'Andelen av vinsten som delas ut. Över 100 % delar bolaget ut mer än det tjänar, vilket sällan håller i längden.';
 
   @override
+  String get portfolioBeta => 'Portföljbeta';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Betan för dina aktier, viktad efter deras värde: ungefär hur många procent dina aktier rör sig när marknaden rör sig 1 %. Över 1 svänger de mer än marknaden, under 1 mindre. Kontanter ingår inte.';
+
+  @override
+  String get portfolioTop3 => '3 största innehav';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Hur stor del av värdet på dina aktier som ligger i dina tre största innehav. Ju högre den är, desto mer kan dåliga nyheter om ett enda bolag skada hela portföljen.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Hur mycket utdelningen per aktie i genomsnitt har ökat per år de senaste fem åren. Jämn tillväxt betyder oftast att bolaget litar på sitt kassaflöde; en sänkning är ofta en varningssignal.';
 

@@ -2001,6 +2001,20 @@ class AppLocalizationsEn extends AppLocalizations {
       'The share of profit paid out as dividends. Above 100% the company pays more than it earns, which rarely lasts.';
 
   @override
+  String get portfolioBeta => 'Portfolio beta';
+
+  @override
+  String get glossPortfolioBeta =>
+      'The beta of your stocks, weighted by their value: roughly how many percent your stocks move when the market moves 1%. Above 1 they swing more than the market, below 1 less. Cash is not included.';
+
+  @override
+  String get portfolioTop3 => 'Top 3 positions';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'How much of your stocks\' value sits in your three largest positions. The higher it is, the more bad news at a single company can hurt the whole portfolio.';
+
+  @override
   String get glossDividendGrowth5y =>
       'How much the dividend per share grew a year on average over the last five years. Steady growth usually means the company trusts its cash flow; a cut is often a warning sign.';
 

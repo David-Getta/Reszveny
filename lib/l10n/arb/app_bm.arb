@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Kalo o kalo dividandi laɲini",
   "dividendGoalAmount": "Dividandi kalo o kalo",
   "dividendGoalProgress": "Bi sɔrɔ hakɛ la, {amount} ɲɔgɔn kalo o kalo · {percent} · Laɲini: {goal}",
-  "dividendGoalReached": "Bi sɔrɔ hakɛ la, {amount} ɲɔgɔn kalo o kalo · I ye i ka laɲini sɔrɔ: {goal}"
+  "dividendGoalReached": "Bi sɔrɔ hakɛ la, {amount} ɲɔgɔn kalo o kalo · I ye i ka laɲini sɔrɔ: {goal}",
+  "portfolioBeta": "Aksiyɔn kɛsu beta",
+  "glossPortfolioBeta": "I ka aksiyɔnw ka beta, u sɔngɔ hakɛ jatelen: ni sugu yɛlɛmana 1%, i ka aksiyɔnw bɛ yɛlɛma kɛmɛsarada joli ɲɔgɔn. Ni a ka bon ni 1 ye, u bɛ yɛlɛma ka tɛmɛ sugu kan; ni a ka dɔgɔ ni 1 ye, u bɛ yɛlɛma ka dɔgɔ ni sugu ye. Wari gansan tɛ jate a la.",
+  "portfolioTop3": "Aksiyɔn 3 belebelebaw",
+  "glossPortfolioTop3": "I ka aksiyɔnw sɔngɔ hakɛ min bɛ i ka aksiyɔn saba belebelebaw la. Ni o hakɛ ka bon, sosiyete kelen ka kunnafoni jugu bɛ se ka i ka aksiyɔn kɛsu bɛɛ tiɲɛ kosɛbɛ."
 }

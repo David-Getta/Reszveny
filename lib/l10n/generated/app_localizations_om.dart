@@ -2011,6 +2011,20 @@ class AppLocalizationsOm extends AppLocalizations {
       'Bu\'aa keessaa hammi isaa akka qooda bu\'aatti raabsamu. 100% ol yoo ta\'e dhaabbatichi waan argatu caalaa kaffala, kun immoo yeroo dheeraa hin turu.';
 
   @override
+  String get portfolioBeta => 'Beetaa poortfooliyoo';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Beetaa aksiyoonota keetii, akka gatii isaaniitti madaalame: gabaan 1% yoo sochoo\'u, aksiyoonni kee tilmaamaan dhibbeentaa meeqa akka sochoo\'an agarsiisa. 1 ol yoo ta\'e gabaa caalaa jijjiiramu, 1 gadi yoo ta\'e xiqqaa. Maallaqni callaa hin dabalamne.';
+
+  @override
+  String get portfolioTop3 => 'Qabiyyeewwan gurguddoo 3';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Gatii aksiyoonota keetii keessaa hammi kam qabiyyeewwan kee sadan gurguddoo keessa akka jiru. Hammuma ol ka\'een, oduun badaan dhaabbata tokkoo poortfooliyoo guutuu caalaatti miidhuu danda\'a.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Qoodni bu\'aa aksiyoona tokkoo waggoota shanan darban keessatti giddugaleessaan waggaatti hammam akka guddate. Guddinni itti fufaan yeroo baay\'ee dhaabbatichi yaa\'insa maallaqa isaa akka amanu agarsiisa; hir\'isuun immoo yeroo baay\'ee mallattoo akeekkachiisaati.';
 

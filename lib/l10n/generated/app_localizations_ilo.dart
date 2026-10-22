@@ -2019,6 +2019,20 @@ class AppLocalizationsIlo extends AppLocalizations {
       'Ti paset ti ganansia a maibayad kas dibidendo. Ngato ti 100% ket ad-adu ti ibaybayad ti kompania ngem ti magunggonana, a manmano nga agpaut.';
 
   @override
+  String get portfolioBeta => 'Beta ti portfolio';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Ti beta dagiti stock-mo, natimbang segun iti pategda: agarup mano a porsiento ti panaggunay dagiti stock-mo no aggunay ti merkado iti 1%. No nangatngato ngem 1, dakdakkel ti panagbaliwda ngem ti merkado; no baba ti 1, basbassit. Saan a karaman ti cash.';
+
+  @override
+  String get portfolioTop3 => 'Top 3 a posision';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'No kasano kadakkel ti paset ti pateg dagiti stock-mo nga adda iti tallo a kadakkelan a posisionmo. No nangatngato daytoy, ad-adu ti madangran ti dakes a damag maipapan iti maysa laeng a kompania iti intero a portfolio.';
+
+  @override
   String get glossDividendGrowth5y =>
       'No kasano ti kadakkel ti inyadu ti dibidendo iti tunggal share iti tinawen, iti promedio, iti napalabas a lima a tawen. Ti agtultuloy a panagdakkel ket kaaduanna a kaipapananna nga agtalek ti kompania iti cash flow-na; ti panangkissay ket masansan a pagilasinan ti pakdaar.';
 

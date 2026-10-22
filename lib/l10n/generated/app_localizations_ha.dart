@@ -2008,6 +2008,20 @@ class AppLocalizationsHa extends AppLocalizations {
       'Kason ribar da ake biya a matsayin rabon riba. Sama da 100% kamfanin yana biyan fiye da abin da yake samu, wanda ba kasafai yake ɗorewa ba.';
 
   @override
+  String get portfolioBeta => 'Beta na jakar hannun jari';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Beta na hannun jarinka, an auna shi bisa ƙimarsu: kusan kashi nawa ne hannun jarinka ke motsawa idan kasuwa ta motsa da 1%. Sama da 1 suna jujjuyawa fiye da kasuwa, ƙasa da 1 ƙasa da haka. Ba a haɗa tsabar kuɗi ba.';
+
+  @override
+  String get portfolioTop3 => 'Manyan matsayi 3';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Nawa ne daga ƙimar hannun jarinka ke cikin manyan matsayinka uku. Idan ya ƙara girma, mummunan labari game da kamfani ɗaya kaɗai zai fi iya cutar da dukan jakar hannun jari.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Yawan da rabon riba kan kowane hannun jari ya ƙaru a kowace shekara a matsakaici cikin shekaru biyar da suka wuce. Ƙaruwa mai dorewa yawanci tana nufin kamfanin ya amince da kwararar kuɗinsa; ragewa sau da yawa alamar gargaɗi ce.';
 

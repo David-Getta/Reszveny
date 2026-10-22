@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Jublu dividand ci weer wi",
   "dividendGoalAmount": "Dividand ci weer wi",
   "dividendGoalProgress": "Ci njureef bu tey, lu tollu ci {amount} ci weer wi · {percent} · Jublu: {goal}",
-  "dividendGoalReached": "Ci njureef bu tey, lu tollu ci {amount} ci weer wi · Agsi nga ci sa jublu: {goal}"
+  "dividendGoalReached": "Ci njureef bu tey, lu tollu ci {amount} ci weer wi · Agsi nga ci sa jublu: {goal}",
+  "portfolioBeta": "Beta sama aksiyoŋ yi",
+  "glossPortfolioBeta": "Beta sa aksiyoŋ yi, ñu natt ko ci seen njëg: lu tollu ci ñaata ci téeméer la sa aksiyoŋ yi di yëngu bu marse bi yëngoo 1%. Bu ëppee 1, dañuy yëngu lu ëpp marse bi; bu yées 1, dañuy yëngu lu néew. Xaalis bi bokkul ci.",
+  "portfolioTop3": "3 aksiyoŋ yi gëna mag",
+  "glossPortfolioTop3": "Ñaata ci njëgu sa aksiyoŋ yi moo nekk ci sa ñetti aksiyoŋ yi gëna mag. Lu mu gën a kawe, lu gën a bare la xibaar bu bon ci benn kompaañi rekk mën a lor sa aksiyoŋ yépp."
 }

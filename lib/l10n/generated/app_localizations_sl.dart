@@ -2061,6 +2061,20 @@ class AppLocalizationsSl extends AppLocalizations {
       'Delež dobička, izplačan kot dividende. Nad 100 % podjetje izplača več, kot zasluži, kar redko traja dolgo.';
 
   @override
+  String get portfolioBeta => 'Beta portfelja';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Beta vaših delnic, utežena z njihovo vrednostjo: približno za koliko odstotkov se premaknejo vaše delnice, ko se trg premakne za 1 %. Nad 1 nihajo bolj kot trg, pod 1 manj. Gotovina ni vključena.';
+
+  @override
+  String get portfolioTop3 => '3 največje pozicije';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Kolikšen del vrednosti vaših delnic je v vaših treh največjih pozicijah. Višji kot je, bolj lahko slabe novice o enem samem podjetju prizadenejo celoten portfelj.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Za koliko se je dividenda na delnico v zadnjih petih letih v povprečju povečevala na leto. Enakomerna rast običajno pomeni, da podjetje zaupa svojemu denarnemu toku; znižanje je pogosto opozorilni znak.';
 

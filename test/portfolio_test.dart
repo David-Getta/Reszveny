@@ -219,6 +219,35 @@ void main() {
       'XYZ': const StockQuote(symbol: 'XYZ', price: 12, change: 1),
     };
 
+    test('risk: value-weighted beta of the stocks with a beta; top-3 weight only above three positions', () {
+      Position pos(String s, double q) => Position(
+        symbol: s,
+        currency: 'USD',
+        lots: [PortfolioLot(id: s, symbol: s, quantity: q, price: 1, currency: 'USD')],
+      );
+      final q = {
+        for (final s in ['A', 'B', 'C', 'D']) s: StockQuote(symbol: s, price: 10),
+      };
+      // Értékek: A 400, B 300, C 200, D 100 (D-nek nincs bétája).
+      final s = PortfolioSnapshot.compute(
+        [pos('A', 40), pos('B', 30), pos('C', 20), pos('D', 10)],
+        quotes: q,
+        rate: (_, _) => 1,
+        currency: 'USD',
+        betas: {'A': 1.5, 'B': 1.0, 'C': 0.5},
+        cash: {'USD': 1000},
+      );
+      expect(s.beta, closeTo((1.5 * 400 + 1.0 * 300 + 0.5 * 200) / 900, 1e-9));
+      expect(s.top3Weight, closeTo(0.9, 1e-9), reason: 'a készpénz nélkül, a részvények értékéből');
+      final three = PortfolioSnapshot.compute(
+        [pos('A', 40), pos('B', 30), pos('C', 20)],
+        quotes: q,
+        rate: (_, _) => 1,
+        currency: 'USD',
+      );
+      expect((three.beta, three.top3Weight), (null, null));
+    });
+
     test('expected yearly dividends: per position, converted and as a yield', () {
       final s = PortfolioSnapshot.compute(
         store.positions,
@@ -557,6 +586,10 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.byKey(const ValueKey('allocation-by')), findsOneWidget);
     expect(find.textContaining(RegExp(r'^AAPL \d')), findsOneWidget);
+    // Kockázat: a demó bétáiból súlyozva (AAPL 1,21 és MSFT 0,93, az OTP árfolyam nélkül kimarad).
+    expect(find.byKey(const ValueKey('portfolio-beta')), findsOneWidget);
+    expect(find.byKey(const ValueKey('hint-Portfolio beta')), findsOneWidget);
+    expect(find.byKey(const ValueKey('portfolio-top3')), findsNothing, reason: 'legfeljebb három pozíció');
 
     await tester.tap(find.text('Currencies'));
     await tester.pumpAndSettle();

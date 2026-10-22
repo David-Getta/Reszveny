@@ -2011,6 +2011,20 @@ class AppLocalizationsSo extends AppLocalizations {
       'Qaybta faa\'iidada ee loo qaybiyo saamilayda. Ka sarreysa 100% shirkaddu waxay bixinaysaa wax ka badan inta ay kasbato, taas oo dhif ah inay sii socoto.';
 
   @override
+  String get portfolioBeta => 'Beta-da portfoliyada';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Beta-da saamiyadaada, oo lagu miisaamay qiimahooda: qiyaastii boqolkiiba intee ayay saamiyadaadu dhaqaaqaan marka suuqu dhaqaaqo 1%. Ka sarreeya 1 waxay isbeddelaan in ka badan suuqa, ka hooseeya 1 in ka yar. Lacagta caddaanka ah kuma jirto.';
+
+  @override
+  String get portfolioTop3 => '3-da haysasho ee ugu waaweyn';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Inta qiimaha saamiyadaada ka mid ah ee ku jirta saddexda haysasho ee kuugu waaweyn. Inta uu sarreeyo, ayay war xun oo ku saabsan hal shirkad oo keliya si weyn u dhaawici kartaa portfoliyada oo dhan.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Inta qaybta faa\'iidada saamigiiba ay celcelis ahaan sannadkii kordhay shantii sano ee la soo dhaafay. Koror joogto ah wuxuu badanaa muujiyaa in shirkaddu ku kalsoon tahay socodka lacageeda caddaanka ah; dhimistu badanaa waa calaamad digniin ah.';
 

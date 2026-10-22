@@ -121,9 +121,9 @@ Work only from the provided data and your general knowledge (no web access); giv
 
 Write in the requested language the way a native financial journalist would, plainly and without jargon (explain a term the first time you use it). Sections, in this order (kind: content):
 - summary: 2-3 sentences on the overall picture and the single most important point.
-- diversification: concentration (largest positions, top-3 weight), sector and country spread, and what is missing; if "cash" is given (uninvested money in the portfolio currency), say what share of the whole it is and what it means. A holding marked with a "note" has no company profile: it is probably an ETF or a fund – treat it as a basket (the index or theme it tracks, from its ticker and your knowledge), count its exposure in the sector and country spread accordingly, and say what you assumed.
+- diversification: concentration (largest positions, top-3 weight; "top3_weight_pct" is computed for you), sector and country spread, and what is missing; if "cash" is given (uninvested money in the portfolio currency), say what share of the whole it is and what it means. A holding marked with a "note" has no company profile: it is probably an ETF or a fund – treat it as a basket (the index or theme it tracks, from its ticker and your knowledge), count its exposure in the sector and country spread accordingly, and say what you assumed.
 - currency: the currency split and what a move in the main currencies would do to the reader's home-currency value.
-- risks: risks shared by several positions (same theme, supplier, rate sensitivity, valuation level, beta), and the biggest single point of failure.
+- risks: risks shared by several positions (same theme, supplier, rate sensitivity, valuation level, beta – "portfolio_beta" is the value-weighted beta of the stocks, when given), and the biggest single point of failure.
 - income: dividend yield of the portfolio and of the main payers; if "dividends_received_12m" is given (cash actually received in the last 12 months, in the portfolio currency), compare it with what the yield implies and with "invested" (yield on cost); if "expected_dividends" is given (the next payments the app expects from the rhythm of the recorded ones, with amount and currency), mention the nearest ones briefly and treat them as estimates; skip the section only if no position pays and nothing was received.
 - consider: 3-5 bullets of things worth considering, each with the reason and what it depends on (not instructions).
 
@@ -137,6 +137,8 @@ Return one JSON object: {"headline": string (one sentence: the most decision-rel
     double? dividendYield,
     double? dividendsReceived,
     double cash = 0,
+    double? beta,
+    double? top3Weight,
     List<Map<String, dynamic>> expectedDividends = const [],
     required String language,
     required DateTime today,
@@ -165,6 +167,9 @@ Return one JSON object: {"headline": string (one sentence: the most decision-rel
               'dividends_received_12m': ?dividendsReceived == null || dividendsReceived <= 0 ? null : dividendsReceived.round(),
               // Be nem fektetett készpénz a brókernél (ha megadta).
               if (cash > 0) 'cash': cash.round(),
+              // A részvények értékkel súlyozott bétája és a 3 legnagyobb pozíció súlya (számolt).
+              'portfolio_beta': ?beta == null ? null : double.parse(beta.toStringAsFixed(2)),
+              'top3_weight_pct': ?top3Weight == null ? null : (top3Weight * 100).round(),
               // A rögzített kifizetések ritmusából várható következő osztalékok (legfeljebb hat).
               if (expectedDividends.isNotEmpty) 'expected_dividends': expectedDividends.take(6).toList(),
               'positions': [for (final h in holdings) h.toJson()],
@@ -223,6 +228,8 @@ Return one JSON object: {"headline": string (one sentence: the most decision-rel
       dividendYield: snapshot.dividendYield,
       dividendsReceived: dividendsReceived,
       cash: snapshot.cash,
+      beta: snapshot.beta,
+      top3Weight: snapshot.top3Weight,
       expectedDividends: [
         for (final x in expectedDividends)
           {

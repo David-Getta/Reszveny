@@ -2058,6 +2058,20 @@ class AppLocalizationsLt extends AppLocalizations {
       'Pelno dalis, išmokama kaip dividendai. Viršijus 100% bendrovė išmoka daugiau, nei uždirba, ir tai retai trunka ilgai.';
 
   @override
+  String get portfolioBeta => 'Portfelio beta';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Jūsų akcijų beta, pasverta pagal jų vertę: maždaug keliais procentais pajuda jūsų akcijos, kai rinka pajuda 1%. Virš 1 jos svyruoja labiau nei rinka, žemiau 1 – mažiau. Grynieji neįskaičiuojami.';
+
+  @override
+  String get portfolioTop3 => '3 didžiausios pozicijos';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Kokia jūsų akcijų vertės dalis tenka trims didžiausioms jūsų pozicijoms. Kuo ji didesnė, tuo labiau blogos naujienos apie vieną bendrovę gali pakenkti visam portfeliui.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Kiek vidutiniškai per metus augo dividendas vienai akcijai per pastaruosius penkerius metus. Stabilus augimas paprastai reiškia, kad įmonė pasitiki savo pinigų srautais; sumažinimas dažnai yra įspėjamasis ženklas.';
 

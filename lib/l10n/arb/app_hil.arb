@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Binulan nga tulumuron sa dibidendo",
   "dividendGoalAmount": "Dibidendo kada bulan",
   "dividendGoalProgress": "Mga {amount} kada bulan sa yield subong: {percent} sang imo tulumuron nga {goal}",
-  "dividendGoalReached": "Mga {amount} kada bulan sa yield subong: naabot na ang imo tulumuron nga {goal}"
+  "dividendGoalReached": "Mga {amount} kada bulan sa yield subong: naabot na ang imo tulumuron nga {goal}",
+  "portfolioBeta": "Beta sang portfolio",
+  "glossPortfolioBeta": "Ang beta sang imo mga stock, gintimbang suno sa ila balor: mga pila ka porsiyento ang paghulag sang imo mga stock kon maghulag ang merkado sing 1%. Kon labaw sa 1, mas dako ang ila pagsaka-panaog sangsa merkado; kon idalom sa 1, mas diutay. Indi upod ang cash.",
+  "portfolioTop3": "Top 3 nga posisyon",
+  "glossPortfolioTop3": "Pila sang balor sang imo mga stock ang yara sa imo tatlo ka pinakadako nga posisyon. Kon mas mataas ini, mas makahalit sa bug-os nga portfolio ang malain nga balita parte sa isa lang ka kompanya."
 }

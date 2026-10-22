@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Objektif dividann chak mwa",
   "dividendGoalAmount": "Dividann pa mwa",
   "dividendGoalProgress": "Anviwon {amount} pa mwa ak rannman jodi a · {percent} · Objektif: {goal}",
-  "dividendGoalReached": "Anviwon {amount} pa mwa ak rannman jodi a · Objektif atenn: {goal}"
+  "dividendGoalReached": "Anviwon {amount} pa mwa ak rannman jodi a · Objektif atenn: {goal}",
+  "portfolioBeta": "Beta pòtfèy la",
+  "glossPortfolioBeta": "Beta aksyon ou yo, an mwayèn selon valè chak: apeprè konbyen pousan aksyon ou yo bouje lè mache a bouje 1%. Pi wo pase 1, yo bouje plis pase mache a; anba 1, mwens. Lajan kach pa ladan l.",
+  "portfolioTop3": "3 pi gwo pozisyon",
+  "glossPortfolioTop3": "Ki pati nan valè aksyon ou yo ki nan twa pi gwo pozisyon ou yo. Plis li wo, plis move nouvèl sou yon sèl konpayi ka fè tout pòtfèy la mal."
 }

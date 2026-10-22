@@ -1998,6 +1998,20 @@ class AppLocalizationsFf extends AppLocalizations {
       'Geɗal nafoore yoɓetee jom aksiyoŋ\'en. Ɓuri 100% kompaañi ndii ina yoɓa ko ɓuri ko heɓata, ɗum ɓooyataa.';
 
   @override
+  String get portfolioBeta => 'Beta aksiyoŋ am';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Beta aksiyonji maa, kala ngo e njoŋdi mum: hono no teemedere jelu aksiyonji maa dillirta so luumo dillii 1%. Ko ɓuri 1, ɗi ɓuri luumo dillude; ko les 1, ɗi ɓuri famɗude dillude. Kaalis naatnaaka.';
+
+  @override
+  String get portfolioTop3 => 'Aksiyonji 3 ɓurɗi mawnude';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'No foti njoŋdi aksiyonji maa woni e tati ɓurɗi mawnude e ko a jogii. So ɗum ɓurii toownude, kabaruuji boni e sosiyete gooto ina mbaawi lorlude aksiyonji maa fof ko ɓuri.';
+
+  @override
   String get glossDividendGrowth5y =>
       'No geɗal nafoore kala aksiyoŋ ɓeydiri kala hitaande e hakkundeeru, e nder duuɓi joy ɓennuɗi ɗii. Ɓeydagol tabitngol ina hollira ko ɓuri heewde wonde sosiyetee oo ina hoolii ceede mum naatooɗe e yaltooɗe; ustugol ngol ina heewi wonde maande reentaare.';
 

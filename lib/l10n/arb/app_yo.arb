@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Àfojúsùn èrè ìpín oṣooṣù",
   "dividendGoalAmount": "Èrè ìpín lóṣù",
   "dividendGoalProgress": "Ní ìwọ̀n òní, nǹkan bí {amount} lóṣù · {percent} · Àfojúsùn: {goal}",
-  "dividendGoalReached": "Ní ìwọ̀n òní, nǹkan bí {amount} lóṣù · O ti dé àfojúsùn: {goal}"
+  "dividendGoalReached": "Ní ìwọ̀n òní, nǹkan bí {amount} lóṣù · O ti dé àfojúsùn: {goal}",
+  "portfolioBeta": "Beta àpò ìdókòwò",
+  "glossPortfolioBeta": "Beta àwọn ìpín rẹ, tí a wọ̀n gẹ́gẹ́ bí iye wọn: nǹkan bí ìdá-ọgọ́rùn-ún mélòó ni àwọn ìpín rẹ máa ń rìn nígbà tí ọjà bá rìn ní 1%. Tó bá ju 1 lọ, wọ́n máa ń yí padà ju ọjà lọ; nísàlẹ̀ 1, wọ́n máa ń yí padà díẹ̀. Owó kò sí nínú rẹ̀.",
+  "portfolioTop3": "Àwọn ohun ìní 3 tó tóbi jù",
+  "glossPortfolioTop3": "Iye tí ó wà nínú àwọn ohun ìní mẹ́ta rẹ tó tóbi jù lọ nínú àpapọ̀ iye àwọn ìpín rẹ. Bí ó bá ṣe ga tó, bẹ́ẹ̀ ni ìròyìn burúkú nípa ilé-iṣẹ́ kan ṣoṣo ṣe lè ṣe gbogbo àpò ìdókòwò náà léṣe tó."
 }

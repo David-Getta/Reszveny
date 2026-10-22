@@ -2009,6 +2009,20 @@ class AppLocalizationsNl extends AppLocalizations {
       'Het deel van de winst dat als dividend wordt uitgekeerd. Boven 100% keert het bedrijf meer uit dan het verdient, wat zelden lang houdbaar is.';
 
   @override
+  String get portfolioBeta => 'Portefeuillebèta';
+
+  @override
+  String get glossPortfolioBeta =>
+      'De bèta van je aandelen, gewogen naar hun waarde: ongeveer hoeveel procent je aandelen bewegen als de markt 1% beweegt. Boven 1 schommelen ze meer dan de markt, onder 1 minder. Cash telt niet mee.';
+
+  @override
+  String get portfolioTop3 => 'Top 3-posities';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Hoeveel van de waarde van je aandelen in je drie grootste posities zit. Hoe hoger, hoe meer slecht nieuws bij één bedrijf de hele portefeuille kan raken.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Hoeveel het dividend per aandeel de afgelopen vijf jaar gemiddeld per jaar is gegroeid. Gestage groei betekent meestal dat het bedrijf vertrouwen heeft in zijn kasstroom; een verlaging is vaak een waarschuwingssignaal.';
 

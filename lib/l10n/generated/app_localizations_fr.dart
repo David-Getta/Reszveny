@@ -2014,6 +2014,20 @@ class AppLocalizationsFr extends AppLocalizations {
       'La part du bénéfice versée en dividendes. Au-delà de 100 %, l\'entreprise verse plus qu\'elle ne gagne, ce qui dure rarement.';
 
   @override
+  String get portfolioBeta => 'Bêta du portefeuille';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Le bêta de vos actions, pondéré par leur valeur : environ de combien de pour cent vos actions évoluent quand le marché bouge de 1 %. Au-dessus de 1, elles fluctuent plus que le marché ; en dessous de 1, moins. Les liquidités ne sont pas prises en compte.';
+
+  @override
+  String get portfolioTop3 => '3 principales positions';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'La part de la valeur de vos actions détenue dans vos trois plus grosses positions. Plus elle est élevée, plus une mauvaise nouvelle concernant une seule entreprise peut pénaliser l\'ensemble du portefeuille.';
+
+  @override
   String get glossDividendGrowth5y =>
       'De combien le dividende par action a augmenté en moyenne chaque année au cours des cinq dernières années. Une croissance régulière signifie généralement que l’entreprise a confiance en ses flux de trésorerie ; une baisse est souvent un signal d’alerte.';
 

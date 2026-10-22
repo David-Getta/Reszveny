@@ -2012,6 +2012,20 @@ class AppLocalizationsLn extends AppLocalizations {
       'Eteni ya litomba oyo bakabolaka lokola dividende. Koleka 100%, kompanyi efutaka koleka oyo ezwaka, mpe yango eumelaka mingi te.';
 
   @override
+  String get portfolioBeta => 'Bêta ya portefeuille';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Bêta ya ba-action na yo, oyo epesameli kilo na kolanda motuya na yango: pene na pourcentage boni ba-action na yo eningani ntango zando eningani 1%. Likolo ya 1, eningani koleka zando; na nse ya 1, moke. Mbɔngɔ ya mabɔkɔ etángami te.';
+
+  @override
+  String get portfolioTop3 => 'Ba-position 3 ya minene';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Eteni nini ya motuya ya ba-action na yo ezali na ba-position na yo misato ya minene koleka. Soki ezali likolo mingi, nsango mabe ya kompanyi moko kaka ekoki kobebisa portefeuille mobimba mingi koleka.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Ndenge dividende ya action moko ekolaki mobu na mobu na kati-kati na mibu mitano oyo eleki. Bokoli ya ntango nyonso elakisaka mingimingi ete kompani ezali na elikya na mbongo oyo ekoti mpe ebimi; kokitisa yango ezalaka mbala mingi elembo ya likebisi.';
 

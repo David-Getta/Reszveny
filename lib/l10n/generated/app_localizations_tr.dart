@@ -2003,6 +2003,20 @@ class AppLocalizationsTr extends AppLocalizations {
       'Kârın temettü olarak dağıtılan payı. %100\'ün üzerinde şirket kazandığından fazlasını öder; bu nadiren uzun sürer.';
 
   @override
+  String get portfolioBeta => 'Portföy betası';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Hisselerinizin değerlerine göre ağırlıklandırılmış betası: piyasa %1 hareket ettiğinde hisselerinizin yaklaşık yüzde kaç hareket ettiği. 1\'in üzerindeyse piyasadan daha fazla dalgalanır, 1\'in altındaysa daha az. Nakit dahil değildir.';
+
+  @override
+  String get portfolioTop3 => 'En büyük 3 pozisyon';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Hisselerinizin değerinin ne kadarının en büyük üç pozisyonunuzda olduğu. Bu oran ne kadar yüksekse, tek bir şirketle ilgili kötü haberler tüm portföye o kadar çok zarar verebilir.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Hisse başına temettünün son beş yılda yılda ortalama ne kadar arttığı. İstikrarlı büyüme genellikle şirketin nakit akışına güvendiği anlamına gelir; temettü kesintisi çoğu zaman bir uyarı işaretidir.';
 

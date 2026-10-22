@@ -2015,6 +2015,20 @@ class AppLocalizationsLg extends AppLocalizations {
       'Ekitundu ky\'amagoba ekigabibwa eri abalina emigabo. Okusukka 100% kkampuni egaba okusinga by\'efuna, ekitera obutawangaala.';
 
   @override
+  String get portfolioBeta => 'Beta y\'emigabo gyo';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Beta y\'emigabo gyo, epimiddwa okusinziira ku muwendo gwagyo: kumpi ebitundu ku kikumi bimeka emigabo gyo bye gitambula akatale bwe katambula 1%. Waggulu wa 1 gikyukakyuka okusinga akatale, wansi wa 1 kitono. Ensimbi enkalu tezibalibwa.';
+
+  @override
+  String get portfolioTop3 => 'Emigabo 3 egisinga obunene';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Omuwendo gw\'emigabo gyo gwenkana wa oguli mu migabo gyo esatu egisinga obunene. Gye gukoma okuba waggulu, amawulire amabi ku kkampuni emu yokka gye gakoma okusobola okwonoona emigabo gyo gyonna.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Obungi amagoba ku buli mugabo bwe gaayongerwako buli mwaka ku kigero mu myaka etaano egiyise. Okukula okutakyukakyuka kutera okulaga nti kkampuni yeesiga ensimbi zaayo eziyingira n\'ezifuluma; okukendeeza amagoba kutera okuba akabonero ak\'okulabula.';
 

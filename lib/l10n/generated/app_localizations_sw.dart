@@ -2004,6 +2004,20 @@ class AppLocalizationsSw extends AppLocalizations {
       'Sehemu ya faida inayolipwa kama gawio. Zaidi ya 100% kampuni inalipa zaidi ya inavyopata, jambo ambalo mara chache hudumu.';
 
   @override
+  String get portfolioBeta => 'Beta ya jalada la hisa';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Beta ya hisa zako, iliyopimwa kulingana na thamani yake: takriban hisa zako husonga kwa asilimia ngapi soko linaposonga kwa 1%. Juu ya 1 zinayumba zaidi ya soko, chini ya 1 kidogo. Taslimu haijajumuishwa.';
+
+  @override
+  String get portfolioTop3 => 'Nafasi 3 kubwa zaidi';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Sehemu ya thamani ya hisa zako iliyo katika nafasi zako tatu kubwa zaidi. Kadiri inavyokuwa juu, ndivyo habari mbaya kuhusu kampuni moja tu zinavyoweza kudhuru jalada lote la hisa.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Kiasi ambacho gawio kwa hisa lilikua kila mwaka kwa wastani katika miaka mitano iliyopita. Ukuaji thabiti kwa kawaida humaanisha kampuni inaamini mtiririko wake wa fedha; kupunguzwa mara nyingi ni ishara ya tahadhari.';
 

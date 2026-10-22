@@ -2041,6 +2041,20 @@ class AppLocalizationsBs extends AppLocalizations {
       'Dio dobiti isplaćen kao dividende. Iznad 100% kompanija isplaćuje više nego što zarađuje, što rijetko traje.';
 
   @override
+  String get portfolioBeta => 'Beta portfolija';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Beta vaših dionica, ponderisana njihovom vrijednošću: otprilike za koliko procenata se vaše dionice pomjere kada se tržište pomjeri za 1%. Iznad 1 osciliraju više od tržišta, ispod 1 manje. Gotovina nije uključena.';
+
+  @override
+  String get portfolioTop3 => 'Top 3 pozicije';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Koliki dio vrijednosti vaših dionica čine vaše tri najveće pozicije. Što je veći, to loše vijesti o jednoj kompaniji mogu više naštetiti cijelom portfoliju.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Koliko je dividenda po dionici u prosjeku rasla godišnje u posljednjih pet godina. Stabilan rast obično znači da kompanija ima povjerenja u svoj novčani tok; smanjenje je često znak upozorenja.';
 

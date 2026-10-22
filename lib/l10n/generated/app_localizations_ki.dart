@@ -2003,6 +2003,20 @@ class AppLocalizationsKi extends AppLocalizations {
       'Gĩcunjĩ kĩa uumithio kĩrĩa kĩrĩhagwo ta dividend. Igũrũ wa 100% kambuni nĩ ĩrarĩha gũkĩra ũrĩa ĩrona, na ũndũ ũcio ndũikaraga ihinda iraaya.';
 
   @override
+  String get portfolioBeta => 'Beta ya hisa ciaku';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Beta ya hisa ciaku, ĩtarĩtwo kũringana na thogora wacio: nĩ ta pasendi ciigana atĩa hisa ciaku ithiaga rĩrĩa thoko yathiĩ 1%. Igũrũ wa 1 ciĩgarũrũkaga makĩria ya thoko, rungu rwa 1 nĩ hanini. Mbeca cia moko ititarĩtwo.';
+
+  @override
+  String get portfolioTop3 => 'Hisa 3 iria nene makĩria';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Nĩ gĩcunjĩ kĩigana atĩa kĩa thogora wa hisa ciaku kĩrĩ hisa ithatũ iria nene makĩria ũrĩ nacio. O ũrĩa kĩrĩ kĩnene, noguo ũhoro mũũru wa kampuni ĩmwe tu ũngĩthũkia hisa ciaku ciothe makĩria.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Nĩ ũigana dividend harĩ hisa ĩmwe yakũrire o mwaka gwa gatagatĩ mĩaka-inĩ ĩtano ĩrĩa ĩhĩtũku. Gũkũra kũrĩa kũrũmie kaingĩ kuonanagia atĩ kampuni nĩ ĩĩhokete mbeca iria itonyaga na iria ciumaga; kũnyihia dividend kaingĩ nĩ kĩmenyithia kĩa ũgwati.';
 

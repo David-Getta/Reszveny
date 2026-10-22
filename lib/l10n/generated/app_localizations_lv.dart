@@ -2042,6 +2042,20 @@ class AppLocalizationsLv extends AppLocalizations {
       'Peļņas daļa, ko izmaksā dividendēs. Virs 100% uzņēmums izmaksā vairāk, nekā nopelna, un tas reti ilgst.';
 
   @override
+  String get portfolioBeta => 'Portfeļa beta';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Jūsu akciju beta, svērta pēc to vērtības: aptuveni par cik procentiem kustas jūsu akcijas, kad tirgus pakustas par 1%. Virs 1 tās svārstās vairāk nekā tirgus, zem 1 – mazāk. Nauda netiek ieskaitīta.';
+
+  @override
+  String get portfolioTop3 => '3 lielākās pozīcijas';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Cik liela daļa no jūsu akciju vērtības ir jūsu trīs lielākajās pozīcijās. Jo augstāka tā ir, jo vairāk sliktas ziņas par vienu uzņēmumu var kaitēt visam portfelim.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Cik vidēji gadā pēdējo piecu gadu laikā pieaugusi dividende uz akciju. Stabils pieaugums parasti nozīmē, ka uzņēmums uzticas savai naudas plūsmai; samazinājums bieži ir brīdinājuma zīme.';
 

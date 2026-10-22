@@ -2011,6 +2011,20 @@ class AppLocalizationsXh extends AppLocalizations {
       'Inxalenye yenzuzo ehlawulwa njenge-dividend. Ngaphezu kwe-100% inkampani ihlawula ngaphezu koko ikufumanayo, nto leyo engafane ihlale ixesha elide.';
 
   @override
+  String get portfolioBeta => 'I-beta yepotifoliyo';
+
+  @override
+  String get glossPortfolioBeta =>
+      'I-beta yezabelo zakho, ilinganiswe ngokwexabiso lazo: imalunga nepesenti ezingaphi izabelo zakho ezihamba ngazo xa imarike ihamba nge-1%. Ngaphezu kwe-1 zitshintsha ngaphezu kwemarike, ngaphantsi kwe-1 kancinci. Imali ayibandakanywanga.';
+
+  @override
+  String get portfolioTop3 => 'Iipozishini ezi-3 ezinkulu';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Ingakanani ixabiso lezabelo zakho elikwiipozishini zakho ezintathu ezinkulu kakhulu. Okukhona liphezulu, kokukhona iindaba ezimbi zenkampani enye zinokonakalisa ipotifoliyo yonke.';
+
+  @override
   String get glossDividendGrowth5y =>
       'I-dividend ngesabelo ngasinye ikhule kangakanani ngonyaka ngokomndilili kwiminyaka emihlanu edlulileyo. Ukukhula okuzinzileyo kudla ngokuthetha ukuba inkampani iyakuthemba ukuhamba kwemali yayo; ukuncitshiswa kudla ngokuba luphawu lwesilumkiso.';
 

@@ -2012,6 +2012,20 @@ class AppLocalizationsCa extends AppLocalizations {
       'La part del benefici que es reparteix com a dividends. Per sobre del 100% l\'empresa paga més del que guanya, cosa que rarament dura.';
 
   @override
+  String get portfolioBeta => 'Beta de la cartera';
+
+  @override
+  String get glossPortfolioBeta =>
+      'La beta de les teves accions, ponderada pel seu valor: aproximadament quant per cent es mouen les teves accions quan el mercat es mou un 1%. Per sobre d\'1 oscil·len més que el mercat; per sota d\'1, menys. L\'efectiu no s\'hi inclou.';
+
+  @override
+  String get portfolioTop3 => '3 posicions principals';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Quina part del valor de les teves accions és a les teves tres posicions més grans. Com més alta és, més mal pot fer a tota la cartera una mala notícia d\'una sola empresa.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Quant ha crescut de mitjana cada any el dividend per acció durant els últims cinc anys. Un creixement constant sol indicar que l’empresa confia en el seu flux de caixa; una retallada sovint és un senyal d’alerta.';
 

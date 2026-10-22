@@ -2015,6 +2015,20 @@ class AppLocalizationsDe extends AppLocalizations {
       'Der Anteil des Gewinns, der als Dividende ausgeschüttet wird. Über 100% zahlt das Unternehmen mehr aus, als es verdient – das hält selten lange.';
 
   @override
+  String get portfolioBeta => 'Portfolio-Beta';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Das Beta deiner Aktien, gewichtet nach ihrem Wert: ungefähr um wie viel Prozent sich deine Aktien bewegen, wenn sich der Markt um 1% bewegt. Über 1 schwanken sie stärker als der Markt, unter 1 schwächer. Cash ist nicht enthalten.';
+
+  @override
+  String get portfolioTop3 => 'Top-3-Positionen';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Wie viel vom Wert deiner Aktien in deinen drei größten Positionen steckt. Je höher er ist, desto stärker können schlechte Nachrichten bei einem einzelnen Unternehmen dem ganzen Portfolio schaden.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Wie stark die Dividende je Aktie in den letzten fünf Jahren im Schnitt pro Jahr gewachsen ist. Stetiges Wachstum heißt meist, dass das Unternehmen seinem Cashflow vertraut; eine Kürzung ist oft ein Warnsignal.';
 

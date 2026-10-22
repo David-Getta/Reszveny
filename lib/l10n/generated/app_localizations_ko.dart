@@ -1940,6 +1940,20 @@ class AppLocalizationsKo extends AppLocalizations {
       '이익 중 배당금으로 지급되는 비율. 100%를 넘으면 버는 것보다 많이 지급하는 것으로, 오래 지속되기 어렵습니다.';
 
   @override
+  String get portfolioBeta => '포트폴리오 베타';
+
+  @override
+  String get glossPortfolioBeta =>
+      '보유 종목의 베타를 평가액 기준으로 가중 평균한 값이에요. 시장이 1% 움직일 때 보유 종목이 대략 몇 % 움직이는지 보여 줘요. 1보다 크면 시장보다 크게, 1보다 작으면 덜 움직여요. 현금은 포함되지 않아요.';
+
+  @override
+  String get portfolioTop3 => '상위 3개 종목';
+
+  @override
+  String get glossPortfolioTop3 =>
+      '보유 종목 평가액 중 가장 큰 3개 종목이 차지하는 비중이에요. 높을수록 한 회사의 악재가 포트폴리오 전체에 더 큰 타격을 줄 수 있어요.';
+
+  @override
   String get glossDividendGrowth5y =>
       '지난 5년간 주당 배당금이 연평균 얼마나 늘었는지를 나타냅니다. 꾸준한 증가는 보통 회사가 현금 흐름에 자신이 있다는 뜻이며, 배당 삭감은 흔히 경고 신호입니다.';
 

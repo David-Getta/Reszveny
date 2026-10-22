@@ -2002,6 +2002,20 @@ class AppLocalizationsTk extends AppLocalizations {
       'Peýdanyň diwidend hökmünde tölenýän paýy. 100%-den ýokary bolsa, kompaniýa gazanýanyndan köp töleýär, bu seýrek dowam edýär.';
 
   @override
+  String get portfolioBeta => 'Portfeliň betasy';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Paýnamalaryňyzyň gymmatyna görä agramlandyrylan betasy: bazar 1% hereket edende paýnamalaryňyz takmynan näçe göterim hereket edýär. 1-den ýokary bolsa bazardan has köp yrgyldaýar, 1-den pes bolsa az. Nagt pul hasaba alynmaýar.';
+
+  @override
+  String get portfolioTop3 => 'Iň uly 3 pozisiýa';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Paýnamalaryňyzyň gymmatynyň näçesiniň iň uly üç pozisiýaňyzda ýerleşýändigi. Näçe ýokary bolsa, ýeke-täk kompaniýa baradaky erbet habar şonça-da tutuş portfele zyýan ýetirip biler.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Soňky bäş ýylda bir paýnama düşýän diwidendiň ýylda ortaça näçe artandygy. Durnukly ösüş adatça kompaniýanyň öz pul akymyna ynanýandygyny aňladýar; azaldylmagy köplenç duýduryş alamatydyr.';
 

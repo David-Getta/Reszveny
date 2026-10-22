@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Sepheo sa dividende sa kgwedi le kgwedi",
   "dividendGoalAmount": "Dividende ka kgwedi",
   "dividendGoalProgress": "Ka poelo ya kajeno, e ka ba {amount} ka kgwedi · {percent} · Sepheo: {goal}",
-  "dividendGoalReached": "Ka poelo ya kajeno, e ka ba {amount} ka kgwedi · Sepheo se fihletswe: {goal}"
+  "dividendGoalReached": "Ka poelo ya kajeno, e ka ba {amount} ka kgwedi · Sepheo se fihletswe: {goal}",
+  "portfolioBeta": "Beta ya potefolio",
+  "glossPortfolioBeta": "Beta ya dishere tsa hao, e lekantsweng ho ya ka boleng ba tsona: e bontsha hore dishere tsa hao di tsamaya ka diperesente tse kae ha mmaraka o tsamaya ka 1%. Ka hodimo ho 1 di fetoha ho feta mmaraka, ka tlase ho 1 di fetoha hanyane. Chelete ha e kenyelletswe.",
+  "portfolioTop3": "Dishere tse 3 tse kgolo",
+  "glossPortfolioTop3": "Hore na ke karolo e kae ya boleng ba dishere tsa hao e leng ho dishere tsa hao tse tharo tse kgolo ka ho fetisisa. Ha e le hodimo haholo, ditaba tse mpe tsa khampani e le nngwe di ka utlwisa potefolio yohle bohloko haholo."
 }

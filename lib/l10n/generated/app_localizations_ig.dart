@@ -1997,6 +1997,20 @@ class AppLocalizationsIg extends AppLocalizations {
       'Òkè uru a na-akwụ dị ka dividend. Karịa 100%, ụlọ ọrụ ahụ na-akwụ karịa ihe ọ na-enweta, nke anaghị adịgide.';
 
   @override
+  String get portfolioBeta => 'Beta nke portfolio';
+
+  @override
+  String get glossPortfolioBeta =>
+      'Beta nke òkè gị, a tụrụ ya dịka uru ha si dị: ihe dị ka pasentị ole òkè gị na-agagharị mgbe ahịa na-agagharị 1%. Ọ bụrụ na ọ karịrị 1, ha na-agagharị karịa ahịa; ọ bụrụ n\'okpuru 1, ha na-agagharị obere. Etinyeghị ego ka ego n\'ime ya.';
+
+  @override
+  String get portfolioTop3 => 'Ihe 3 kachasị ukwuu ị nwere';
+
+  @override
+  String get glossPortfolioTop3 =>
+      'Ole n\'ime uru òkè gị dị n\'ihe atọ kachasị ukwuu ị nwere. Ka ọ na-adị elu, ka akụkọ ọjọọ banyere naanị otu ụlọ ọrụ nwere ike imebi portfolio gị niile karịa.';
+
+  @override
   String get glossDividendGrowth5y =>
       'Ole dividend kwa share tolitere kwa afọ n\'nkezi n\'ime afọ ise gara aga. Uto na-aga n\'ihu nke ọma na-egosikarị na ụlọ ọrụ ahụ tụkwasịrị obi n\'ego na-abata na nke na-apụ ya; mbelata na-abụkarị ihe ịdọ aka ná ntị.';
 

@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Chinangwa chedhividhendi pamwedzi",
   "dividendGoalAmount": "Dhividhendi pamwedzi",
   "dividendGoalProgress": "Ingangoita {amount} pamwedzi nepundutso yanhasi · {percent} · Chinangwa: {goal}",
-  "dividendGoalReached": "Ingangoita {amount} pamwedzi nepundutso yanhasi · Wasvika pachinangwa: {goal}"
+  "dividendGoalReached": "Ingangoita {amount} pamwedzi nepundutso yanhasi · Wasvika pachinangwa: {goal}",
+  "portfolioBeta": "Beta yepotiforiyo",
+  "glossPortfolioBeta": "Beta yemasheya ako, yakayerwa maererano nekukosha kwawo: inenge masheya ako anofamba nezvikamu zvingani muzana kana musika ukafamba ne1%. Pamusoro pe1 anozununguka kupfuura musika, pasi pe1 zvishoma. Mari haina kuverengerwa.",
+  "portfolioTop3": "Masheya makuru 3",
+  "glossPortfolioTop3": "Chikamu chekukosha kwemasheya ako chiri mumasheya ako matatu makuru. Pachinowedzera, ndipo nhau dzakaipa dzekambani imwe chete dzinogona kukuvadza potiforiyo yese."
 }

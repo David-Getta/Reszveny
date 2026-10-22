@@ -764,5 +764,9 @@
   "dividendGoalTitle": "Iswi n dividand i wayyur",
   "dividendGoalAmount": "Dividand deg wayyur",
   "dividendGoalProgress": "Azal n {amount} deg wayyur s ufaris n tura · {percent} · Iswi: {goal}",
-  "dividendGoalReached": "Azal n {amount} deg wayyur s ufaris n tura · Tewwḍeḍ ɣer yiswi: {goal}"
+  "dividendGoalReached": "Azal n {amount} deg wayyur s ufaris n tura · Tewwḍeḍ ɣer yiswi: {goal}",
+  "portfolioBeta": "Beta n uqrab",
+  "glossPortfolioBeta": "Beta n yiksyunen-ik, yettwaḥesben s wazal-nsen: azal n acḥal deg tmiḍi i ttembiwilen yiksyunen-ik mi ara tembiwel lbursa s 1%. Sennig 1, ttembiwilen ugar n lbursa; ddaw 1, drus. Idrimen n ufus ur ddan ara.",
+  "portfolioTop3": "3 iksyunen imeqqranen",
+  "glossPortfolioTop3": "Acḥal seg wazal n yiksyunen-ik i yellan deg kraḍ n yiksyunen-ik imeqqranen. Mi ara yali, ugar i zemrent tmesliwin n diri ɣef yiwet n tkebbanit ad ḍerrent aqrab akk."
 }
