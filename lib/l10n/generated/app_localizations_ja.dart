@@ -2466,6 +2466,9 @@ class AppLocalizationsJa extends AppLocalizations {
       'この口座の取引のみを表示しています。現金と配当金は「すべての口座」に表示されます。';
 
   @override
+  String get portfolioNoAccount => '口座なし';
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override

@@ -2546,6 +2546,9 @@ class AppLocalizationsNb extends AppLocalizations {
       'Bare transaksjoner på denne kontoen. Kontanter og utbytte vises under Alle kontoer.';
 
   @override
+  String get portfolioNoAccount => 'Ingen konto';
+
+  @override
   String get portfolioGoalSet => 'Sett et mål';
 
   @override

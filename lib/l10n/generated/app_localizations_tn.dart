@@ -2564,6 +2564,9 @@ class AppLocalizationsTn extends AppLocalizations {
       'Ditheko le dithekiso tsa akhaonto eno fela. Madi le dividente di bontshiwa ka fa tlase ga Diakhaonto tsotlhe.';
 
   @override
+  String get portfolioNoAccount => 'Ga go na akhaonto';
+
+  @override
   String get portfolioGoalSet => 'Baya maikaelelo';
 
   @override

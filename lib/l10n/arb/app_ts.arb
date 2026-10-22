@@ -777,5 +777,6 @@
   "portfolioAccountHint": "xik. TFSA (a swi bohi)",
   "portfolioAccountAdd": "Kombisa akhawunti",
   "portfolioAccountsAll": "Tiakhawunti hinkwato",
-  "portfolioAccountNote": "Swixaviwa ni swixavisiwa swa akhawunti leyi ntsena. Mali na tidividende swi kombisiwa ehansi ka Tiakhawunti hinkwato."
+  "portfolioAccountNote": "Swixaviwa ni swixavisiwa swa akhawunti leyi ntsena. Mali na tidividende swi kombisiwa ehansi ka Tiakhawunti hinkwato.",
+  "portfolioNoAccount": "A ku na akhawunti"
 }

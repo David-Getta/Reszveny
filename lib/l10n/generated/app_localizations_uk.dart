@@ -2614,6 +2614,9 @@ class AppLocalizationsUk extends AppLocalizations {
       'Лише операції цього рахунку. Кошти й дивіденди — у розділі «Усі рахунки».';
 
   @override
+  String get portfolioNoAccount => 'Без рахунку';
+
+  @override
   String get portfolioGoalSet => 'Задати ціль';
 
   @override

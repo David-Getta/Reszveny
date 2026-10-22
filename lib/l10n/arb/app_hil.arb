@@ -777,5 +777,6 @@
   "portfolioAccountHint": "pananglitan PERA (opsyonal)",
   "portfolioAccountAdd": "Itakda ang account",
   "portfolioAccountsAll": "Tanan nga account",
-  "portfolioAccountNote": "Mga transaksyon lang sini nga account. Ang cash kag dibidendo makita sa Tanan nga account."
+  "portfolioAccountNote": "Mga transaksyon lang sini nga account. Ang cash kag dibidendo makita sa Tanan nga account.",
+  "portfolioNoAccount": "Wala sing account"
 }

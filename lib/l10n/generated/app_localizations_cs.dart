@@ -2606,6 +2606,9 @@ class AppLocalizationsCs extends AppLocalizations {
       'Jen transakce tohoto účtu. Hotovost a dividendy se zobrazují v části Všechny účty.';
 
   @override
+  String get portfolioNoAccount => 'Bez účtu';
+
+  @override
   String get portfolioGoalSet => 'Nastavit cíl';
 
   @override

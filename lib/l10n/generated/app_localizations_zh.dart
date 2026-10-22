@@ -2432,6 +2432,9 @@ class AppLocalizationsZh extends AppLocalizations {
   String get portfolioAccountNote => '仅显示此账户的交易。现金和股息显示在“全部账户”下。';
 
   @override
+  String get portfolioNoAccount => '无账户';
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5231,6 +5234,9 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get portfolioAccountNote => '只顯示此帳戶的交易。現金及股息會在「全部帳戶」下顯示。';
+
+  @override
+  String get portfolioNoAccount => '無帳戶';
 
   @override
   String get portfolioGoalSet => '設定目標';

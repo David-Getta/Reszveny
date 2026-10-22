@@ -777,5 +777,6 @@
   "portfolioAccountHint": "egz. TBSZ 2026 (opsyonèl)",
   "portfolioAccountAdd": "Presize yon kont",
   "portfolioAccountsAll": "Tout kont yo",
-  "portfolioAccountNote": "Se sèlman tranzaksyon kont sa a. Lajan kach ak dividann yo parèt nan Tout kont yo."
+  "portfolioAccountNote": "Se sèlman tranzaksyon kont sa a. Lajan kach ak dividann yo parèt nan Tout kont yo.",
+  "portfolioNoAccount": "San kont"
 }

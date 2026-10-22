@@ -38,7 +38,10 @@ class PortfolioSnapshotBuilder extends StatefulWidget {
 class _PortfolioSnapshotBuilderState extends State<PortfolioSnapshotBuilder> {
   String? _key;
   Future<PortfolioSnapshot>? _future;
-  PortfolioSnapshot? _last;
+
+  /// A legutóbbi pillanatkép számlánként: számlaváltáskor nem a másik számla
+  /// számai látszanak a töltés alatt (visszaváltáskor viszont azonnal van mit mutatni).
+  final _last = <String?, PortfolioSnapshot>{};
 
   /// Újratöltés: a következő képkockában indul az új lekérés, azt várjuk meg.
   Future<void> _refresh() async {
@@ -69,11 +72,12 @@ class _PortfolioSnapshotBuilderState extends State<PortfolioSnapshotBuilder> {
             currency: currency,
             closed: services.portfolio.closedIn(account),
             cash: cash,
-          ).then((s) => _last = s);
+          ).then((s) => _last[account] = s);
         }
+        // A FutureBuilder az új lekérés alatt az előzőt (akár másik számláét) tartaná meg.
         return FutureBuilder<PortfolioSnapshot>(
           future: _future,
-          builder: (context, snap) => widget.builder(context, snap.data ?? _last, _refresh),
+          builder: (context, _) => widget.builder(context, _last[account], _refresh),
         );
       },
     );
@@ -352,9 +356,12 @@ class _PortfolioBody extends StatelessWidget {
                     ),
                   ),
                 ),
-                if (s.rows.where((r) => r.weight > 0).length > 1) AllocationCard(snapshot: s, fmt: fmt),
+                // A célarányok az egész portfólióra szólnak: számla-nézetben nincs újrasúlyozás.
+                if (s.rows.where((r) => r.weight > 0).length > 1)
+                  AllocationCard(snapshot: s, fmt: fmt, targets: account == null),
                 PortfolioHistoryCard(snapshot: s, account: account),
-                PortfolioReviewCard(snapshot: s),
+                // Az AI-elemzés az egész portfólióról szól (készpénzzel, osztalékokkal), egy mentett példányban.
+                if (account == null) PortfolioReviewCard(snapshot: s),
                 if (s.rows.isNotEmpty)
                   _PositionsSection(snapshot: s, fmt: fmt, onOpenSymbol: onOpenSymbol, account: account),
                 if (s.realizedByYear.isNotEmpty) ...[
@@ -482,10 +489,13 @@ List<({String label, double weight})> groupWeights(List<PositionValue> rows, Str
 
 /// A megoszlás kártyája: pozíciók, szektorok vagy devizák szerint.
 class AllocationCard extends StatefulWidget {
-  const AllocationCard({super.key, required this.snapshot, required this.fmt});
+  const AllocationCard({super.key, required this.snapshot, required this.fmt, this.targets = true});
 
   final PortfolioSnapshot snapshot;
   final Fmt fmt;
+
+  /// A célarányok és az újrasúlyozás (csak az egész portfólió nézetében).
+  final bool targets;
 
   List<PositionValue> get rows => snapshot.rows;
 
@@ -577,7 +587,7 @@ class _AllocationCardState extends State<AllocationCard> {
                     entries: _withCash(groupWeights(widget.rows, (r) => r.position.symbol)),
                     fmt: widget.fmt,
                   ),
-                  _Targets(snapshot: widget.snapshot, fmt: widget.fmt),
+                  if (widget.targets) _Targets(snapshot: widget.snapshot, fmt: widget.fmt),
                 ],
               ),
               AllocationBy.currencies => AllocationBar(
@@ -1184,7 +1194,10 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
                               symbol: position.symbol,
                               currency: position.currency,
                               currentPrice: currentPrice,
-                              sellMax: now.quantity,
+                              // Minden számla nézetében a számlák közül választható, honnan.
+                              holdings: account == null
+                                  ? services.portfolio.heldByAccount(position.symbol)
+                                  : {account: now.quantity},
                               account: account,
                             ),
                             icon: const Icon(Icons.sell_outlined, size: 18),

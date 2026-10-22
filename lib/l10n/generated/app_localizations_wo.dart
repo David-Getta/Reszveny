@@ -2539,6 +2539,9 @@ class AppLocalizationsWo extends AppLocalizations {
       'Jënd ak jaay yu kont bii rekk. Xaalis ak dividande yi ñu ngi feeñ ci \"Kont yépp\".';
 
   @override
+  String get portfolioNoAccount => 'Amul kont';
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

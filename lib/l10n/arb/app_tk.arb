@@ -777,5 +777,6 @@
   "portfolioAccountHint": "meselem, TBSZ 2026 (hökmany däl)",
   "portfolioAccountAdd": "Hasaby görkez",
   "portfolioAccountsAll": "Ähli hasaplar",
-  "portfolioAccountNote": "Diňe şu hasabyň amallary. Nagt pul we diwidendler «Ähli hasaplar» bölüminde görkezilýär."
+  "portfolioAccountNote": "Diňe şu hasabyň amallary. Nagt pul we diwidendler «Ähli hasaplar» bölüminde görkezilýär.",
+  "portfolioNoAccount": "Hasapsyz"
 }

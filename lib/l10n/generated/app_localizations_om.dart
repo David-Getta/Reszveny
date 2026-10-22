@@ -2555,6 +2555,9 @@ class AppLocalizationsOm extends AppLocalizations {
       'Bittaa fi gurgurtaa herrega kanaa qofa. Maallaqni callaa fi diviidendiin \"Herregoota hunda\" jalatti mul\'atu.';
 
   @override
+  String get portfolioNoAccount => 'Herrega malee';
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

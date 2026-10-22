@@ -140,6 +140,42 @@ void main() {
     // Fejléc nélkül a hetedik oszlop; magyar fejléccel is („Számla”).
     expect(parsePortfolioCsv('OTP;10;30000;HUF;2026-01-05;buy;TBSZ').lots.single.account, 'TBSZ');
     expect(parsePortfolioCsv('Ticker;Quantity;Price;Számla\nOTP;10;30000;NYESZ').lots.single.account, 'NYESZ');
+    // Pontosvessző a számlanévben: idézőjelben, a beolvasás nem bontja ott.
+    const semi = [
+      PortfolioLot(id: 'c', symbol: 'OTP', quantity: 10, price: 30000, currency: 'HUF', account: 'TBSZ; 2026'),
+    ];
+    expect(parsePortfolioCsv(portfolioCsv(semi)).lots.single.account, 'TBSZ; 2026');
+    // Fejléc nélkül egy szám a hetedik oszlopban (pl. végösszeg) nem számla.
+    expect(parsePortfolioCsv('OTP;10;30000;HUF;2026-01-05;buy;300000.00').lots.single.account, isNull);
+  });
+
+  test('realized gains CSV: an account column when a sale has an account', () {
+    final lots = [
+      PortfolioLot(id: 'a', symbol: 'OTP', quantity: 10, price: 100, currency: 'HUF', date: DateTime(2024, 1, 2)),
+      PortfolioLot(
+        id: 'b',
+        symbol: 'OTP',
+        quantity: 10,
+        price: 200,
+        currency: 'HUF',
+        date: DateTime(2025, 1, 2),
+        account: 'TBSZ',
+      ),
+      PortfolioLot(
+        id: 'c',
+        symbol: 'OTP',
+        quantity: 4,
+        price: 250,
+        currency: 'HUF',
+        date: DateTime(2026, 1, 2),
+        sell: true,
+        account: 'TBSZ',
+      ),
+    ];
+    final csv = realizedCsv([Position(symbol: 'OTP', currency: 'HUF', lots: lots)]);
+    expect(csv.split('\n')[0], 'date,symbol,quantity,sale_price,proceeds,cost_basis,gain,currency,account');
+    // A TBSZ eladása a TBSZ 200-as vételéből (nem a régebbi, számla nélküli 100-asból).
+    expect(csv.split('\n')[1], '2026-01-02,OTP,4,250,1000,800,200,HUF,TBSZ');
   });
 
   test('dividends: exported as dividend rows and read back; a separate CSV for the tax return', () {

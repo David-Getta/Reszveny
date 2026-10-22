@@ -2566,6 +2566,9 @@ class AppLocalizationsMk extends AppLocalizations {
       'Само трансакциите на оваа сметка. Готовината и дивидендите се прикажани под „Сите сметки“.';
 
   @override
+  String get portfolioNoAccount => 'Без сметка';
+
+  @override
   String get portfolioGoalSet => 'Постави цел';
 
   @override

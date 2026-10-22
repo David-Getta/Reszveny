@@ -777,5 +777,6 @@
   "portfolioAccountHint": "t.ex. ISK (valfritt)",
   "portfolioAccountAdd": "Ange konto",
   "portfolioAccountsAll": "Alla konton",
-  "portfolioAccountNote": "Endast transaktioner på det här kontot. Kontanter och utdelningar visas under Alla konton."
+  "portfolioAccountNote": "Endast transaktioner på det här kontot. Kontanter och utdelningar visas under Alla konton.",
+  "portfolioNoAccount": "Inget konto"
 }

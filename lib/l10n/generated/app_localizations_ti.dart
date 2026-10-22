@@ -2507,6 +2507,9 @@ class AppLocalizationsTi extends AppLocalizations {
       'ልውውጣት ናይዚ ሕሳብ ጥራይ። ጥረ ገንዘብን ድቪደንድታትን ኣብ \"ኩሎም ሕሳባት\" ይርኣዩ።';
 
   @override
+  String get portfolioNoAccount => 'ብዘይ ሕሳብ';
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

@@ -2542,6 +2542,9 @@ class AppLocalizationsOr extends AppLocalizations {
       'କେବଳ ଏହି ଆକାଉଣ୍ଟର କାରବାର। ନଗଦ ଓ ଡିଭିଡେଣ୍ଡ \'ସମସ୍ତ ଆକାଉଣ୍ଟ\'ରେ ଦେଖାଯାଏ।';
 
   @override
+  String get portfolioNoAccount => 'ଆକାଉଣ୍ଟ ନାହିଁ';
+
+  @override
   String get portfolioGoalSet => 'ଲକ୍ଷ୍ୟ ସ୍ଥିର କରନ୍ତୁ';
 
   @override

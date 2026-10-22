@@ -2556,6 +2556,9 @@ class AppLocalizationsTa extends AppLocalizations {
       'இந்தக் கணக்கின் பரிவர்த்தனைகள் மட்டும். ரொக்கம் மற்றும் ஈவுத்தொகை \'அனைத்து கணக்குகள்\' பிரிவில் காட்டப்படும்.';
 
   @override
+  String get portfolioNoAccount => 'கணக்கு இல்லை';
+
+  @override
   String get portfolioGoalSet => 'இலக்கை அமை';
 
   @override

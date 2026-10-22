@@ -2537,6 +2537,9 @@ class AppLocalizationsHe extends AppLocalizations {
       'רק העסקאות של החשבון הזה. מזומן ודיבידנדים מוצגים תחת ״כל החשבונות״.';
 
   @override
+  String get portfolioNoAccount => 'ללא חשבון';
+
+  @override
   String get portfolioGoalSet => 'הגדרת יעד';
 
   @override

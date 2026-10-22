@@ -777,5 +777,6 @@
   "portfolioAccountHint": "بۆ نموونە TBSZ 2026 (ئارەزوومەندانە)",
   "portfolioAccountAdd": "هەژمارێک دیاری بکە",
   "portfolioAccountsAll": "هەموو هەژمارەکان",
-  "portfolioAccountNote": "تەنها مامەڵەکانی ئەم هەژمارە. پارەی کاش و پشکی قازانج لە «هەموو هەژمارەکان» پیشان دەدرێن."
+  "portfolioAccountNote": "تەنها مامەڵەکانی ئەم هەژمارە. پارەی کاش و پشکی قازانج لە «هەموو هەژمارەکان» پیشان دەدرێن.",
+  "portfolioNoAccount": "بێ هەژمار"
 }

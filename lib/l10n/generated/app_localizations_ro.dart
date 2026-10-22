@@ -2584,6 +2584,9 @@ class AppLocalizationsRo extends AppLocalizations {
       'Doar tranzacțiile acestui cont. Numerarul și dividendele apar la Toate conturile.';
 
   @override
+  String get portfolioNoAccount => 'Fără cont';
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

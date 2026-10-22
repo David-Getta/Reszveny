@@ -777,5 +777,6 @@
   "portfolioAccountHint": "fkn. TBSZ 2026 (dirqama miti)",
   "portfolioAccountAdd": "Herrega ibsi",
   "portfolioAccountsAll": "Herregoota hunda",
-  "portfolioAccountNote": "Bittaa fi gurgurtaa herrega kanaa qofa. Maallaqni callaa fi diviidendiin \"Herregoota hunda\" jalatti mul'atu."
+  "portfolioAccountNote": "Bittaa fi gurgurtaa herrega kanaa qofa. Maallaqni callaa fi diviidendiin \"Herregoota hunda\" jalatti mul'atu.",
+  "portfolioNoAccount": "Herrega malee"
 }

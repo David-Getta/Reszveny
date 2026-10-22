@@ -2542,6 +2542,9 @@ class AppLocalizationsSi extends AppLocalizations {
       'මෙම ගිණුමේ ගනුදෙනු පමණි. මුදල් සහ ලාභාංශ \'සියලු ගිණුම්\' යටතේ පෙන්වයි.';
 
   @override
+  String get portfolioNoAccount => 'ගිණුමක් නැත';
+
+  @override
   String get portfolioGoalSet => 'ඉලක්කයක් සකසන්න';
 
   @override

@@ -777,5 +777,6 @@
   "portfolioAccountHint": "mohl. TFSA (ga go gapeletšwe)",
   "portfolioAccountAdd": "Laetša akhaonto",
   "portfolioAccountsAll": "Diakhaonto ka moka",
-  "portfolioAccountNote": "Dithekišano tša akhaonto ye fela. Tšhelete le dividende di bontšhwa ka fase ga Diakhaonto ka moka."
+  "portfolioAccountNote": "Dithekišano tša akhaonto ye fela. Tšhelete le dividende di bontšhwa ka fase ga Diakhaonto ka moka.",
+  "portfolioNoAccount": "Ga go na akhaonto"
 }

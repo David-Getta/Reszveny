@@ -777,5 +777,6 @@
   "portfolioAccountHint": "npr. TBSZ 2026 (neobvezno)",
   "portfolioAccountAdd": "Navedi račun",
   "portfolioAccountsAll": "Vsi računi",
-  "portfolioAccountNote": "Samo transakcije tega računa. Gotovina in dividende so prikazane pod Vsi računi."
+  "portfolioAccountNote": "Samo transakcije tega računa. Gotovina in dividende so prikazane pod Vsi računi.",
+  "portfolioNoAccount": "Brez računa"
 }

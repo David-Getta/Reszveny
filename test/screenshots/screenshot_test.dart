@@ -799,6 +799,30 @@ void main() {
     await _shot(tester, 'portfolio_account_phone_hu');
   });
 
+  testWidgets('selling from one of two accounts on a phone (hungarian)', (tester) async {
+    final portfolio = PortfolioStore(lots: _samplePortfolio().lots);
+    await portfolio.add(
+      symbol: 'AAPL',
+      quantity: 5,
+      price: 180,
+      currency: 'USD',
+      date: DateTime(2024, 3, 4),
+      account: 'TBSZ 2026',
+    );
+    final s = _services(locale: const Locale('hu'), portfolio: portfolio, currency: 'HUF');
+    await pumpApp(tester, s, const Size(430, 1000));
+    await tester.tap(find.text('Portfólió').last);
+    await tester.pumpAndSettle();
+    final menu = find.byKey(const ValueKey('position-menu-AAPL'));
+    await tester.ensureVisible(menu);
+    await tester.pumpAndSettle();
+    await tester.tap(menu);
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('position-sell')));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'portfolio_sell_accounts_phone_hu');
+  });
+
   testWidgets('home with the „while you were away” card on a phone (hungarian)', (tester) async {
     final now = DateTime.now();
     final yesterday = now.subtract(const Duration(days: 1)).toIso8601String().substring(0, 10);

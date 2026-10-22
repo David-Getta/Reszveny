@@ -2610,6 +2610,9 @@ class AppLocalizationsLt extends AppLocalizations {
       'Tik šios sąskaitos operacijos. Grynieji pinigai ir dividendai rodomi skiltyje „Visos sąskaitos“.';
 
   @override
+  String get portfolioNoAccount => 'Be sąskaitos';
+
+  @override
   String get portfolioGoalSet => 'Nustatyti tikslą';
 
   @override

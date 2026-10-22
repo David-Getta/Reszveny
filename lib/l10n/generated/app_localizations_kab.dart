@@ -2544,6 +2544,9 @@ class AppLocalizationsKab extends AppLocalizations {
       'Ala tiɣin d uznuzu n umiḍan-a. Idrimen n ufus d dividendes ttbanen deg Akk imiḍanen.';
 
   @override
+  String get portfolioNoAccount => 'War amiḍan';
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

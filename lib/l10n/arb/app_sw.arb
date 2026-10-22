@@ -777,5 +777,6 @@
   "portfolioAccountHint": "k.m. TBSZ 2026 (si lazima)",
   "portfolioAccountAdd": "Bainisha akaunti",
   "portfolioAccountsAll": "Akaunti zote",
-  "portfolioAccountNote": "Miamala ya akaunti hii pekee. Taslimu na gawio huonyeshwa chini ya Akaunti zote."
+  "portfolioAccountNote": "Miamala ya akaunti hii pekee. Taslimu na gawio huonyeshwa chini ya Akaunti zote.",
+  "portfolioNoAccount": "Bila akaunti"
 }

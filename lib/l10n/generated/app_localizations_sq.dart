@@ -2551,6 +2551,9 @@ class AppLocalizationsSq extends AppLocalizations {
       'Vetëm transaksionet e kësaj llogarie. Paratë e gatshme dhe dividendët shfaqen te „Të gjitha llogaritë“.';
 
   @override
+  String get portfolioNoAccount => 'Pa llogari';
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

@@ -79,16 +79,28 @@ void main() {
       expect(store.closedIn('Normál').single.realizedGain, closeTo(5 * 50, 1e-9));
       expect(store.positions.map((p) => p.symbol), ['AAPL', 'MSFT'], reason: 'mind együtt');
       expect(store.positionOf('AAPL')!.quantity, 10);
+      // Minden számla nézetében is számlánként fut a FIFO: a normál számla eladása nem a TBSZ
+      // régebbi, 100-as vételét fogyasztja (különben a realizált nyereség 750 lenne).
+      final all = store.allPositions.firstWhere((p) => p.symbol == 'AAPL');
+      expect((all.cost, all.realizedGain), (1000.0, 250.0));
+      expect(all.sales.single.account, 'Normál');
+      expect(store.heldByAccount('aapl'), {'TBSZ 2026': 10.0});
       expect(store.adjustedLotsIn('TBSZ 2026'), hasLength(1));
       // Tárolva és visszaolvasva megmarad; a túl hosszú név levágva, az üres nincs.
       final again = await PortfolioStore.load();
       expect(again.accounts, ['Normál', 'TBSZ 2026']);
       expect(PortfolioLot.cleanAccount('   '), isNull);
       expect(PortfolioLot.cleanAccount('x' * 40)!.length, PortfolioLot.maxAccountName);
+      // Emodzsi közepén nem vág.
+      expect(PortfolioLot.cleanAccount('${'x' * 29}😀'), 'x' * 29);
       expect(PortfolioLot.fromJson({'symbol': 'A', 'quantity': 1, 'price': 1, 'account': 3})!.account, isNull);
       // A felaprózás igazítása megtartja a számlát.
       await store.addSplit(symbol: 'AAPL', from: 1, to: 2, date: DateTime(2024, 6, 1));
       expect(store.positionsIn('TBSZ 2026').single.quantity, 20);
+      // A kis- és nagybetű eltérése nem nyit új számlát.
+      await store.add(symbol: 'MSFT', quantity: 1, price: 400, currency: 'USD', account: 'tbsz 2026');
+      expect(store.accounts, ['Normál', 'TBSZ 2026']);
+      expect(store.heldByAccount('MSFT'), {null: 2.0, 'TBSZ 2026': 1.0});
     });
 
     test('a stock split adjusts the transactions before its day; the cost stays, ids stay', () async {
@@ -861,6 +873,7 @@ void main() {
     );
     expect(find.byKey(const ValueKey('portfolio-dividends-received')), findsNothing);
     expect(find.byKey(const ValueKey('goal-set')), findsNothing, reason: 'a cél az egész portfólióra szól');
+    expect(find.byKey(const ValueKey('portfolio-review')), findsNothing, reason: 'az AI-elemzés is');
 
     // Eladás a TBSZ-nézetből: a dialógusban a számla kitöltve, az eladás oda kerül.
     await tester.tap(find.byKey(const ValueKey('position-menu-AAPL')));
@@ -868,7 +881,8 @@ void main() {
     expect(find.text('AAPL · Transactions · TBSZ'), findsOneWidget);
     await tester.tap(find.byKey(const ValueKey('position-sell')));
     await tester.pumpAndSettle();
-    expect(find.widgetWithText(TextField, 'TBSZ'), findsOneWidget);
+    expect(find.byKey(const ValueKey('lot-sell-from-TBSZ')), findsOneWidget);
+    expect(find.byKey(const ValueKey('lot-account')), findsNothing, reason: 'eladásnál nem írható át');
     await tester.enterText(find.byKey(const ValueKey('lot-quantity')), '4');
     await tester.tap(find.byKey(const ValueKey('lot-submit')));
     await tester.pumpAndSettle();
@@ -881,6 +895,49 @@ void main() {
     await tester.tap(find.byKey(const ValueKey('account-*')));
     await tester.pumpAndSettle();
     expect(find.byKey(const ValueKey('position-menu-MSFT')), findsOneWidget);
+  });
+
+  testWidgets('selling from all accounts: choose the account; at most what is held there', (tester) async {
+    tester.view.physicalSize = const Size(1200, 2600);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    SharedPreferences.setMockInitialValues({});
+    final s = services();
+    await s.portfolio.add(
+      symbol: 'AAPL',
+      quantity: 10,
+      price: 200,
+      currency: 'USD',
+      account: 'TBSZ',
+      date: DateTime(2025, 5, 2),
+    );
+    await s.portfolio.add(symbol: 'AAPL', quantity: 3, price: 150, currency: 'USD', date: DateTime(2024, 5, 2));
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Portfolio').first);
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('position-menu-AAPL')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('position-sell')));
+    await tester.pumpAndSettle();
+    // A legtöbb darabot tartó számla az alap; a számla nélküli tételek is választhatók.
+    expect(find.text('TBSZ · 10'), findsOneWidget);
+    expect(find.text('No account · 3'), findsOneWidget);
+    expect(tester.widget<ChoiceChip>(find.byKey(const ValueKey('lot-sell-from-TBSZ'))).selected, isTrue);
+    await tester.tap(find.byKey(const ValueKey('lot-sell-from-*')));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byKey(const ValueKey('lot-quantity')), '5');
+    await tester.tap(find.byKey(const ValueKey('lot-submit')));
+    await tester.pumpAndSettle();
+    expect(find.text('You hold 3'), findsOneWidget);
+    await tester.tap(find.byKey(const ValueKey('lot-sell-all')));
+    await tester.tap(find.byKey(const ValueKey('lot-submit')));
+    await tester.pumpAndSettle();
+    final sale = s.portfolio.lots.firstWhere((l) => l.sell);
+    expect((sale.quantity, sale.account), (3.0, null));
+    expect(s.portfolio.heldByAccount('AAPL'), {'TBSZ': 10.0});
+    // A realizált nyereség a számla nélküli 150-es vételből.
+    expect(s.portfolio.positionOf('AAPL')!.realizedGain, closeTo(3 * (sale.price - 150), 1e-9));
   });
 
   testWidgets('the account field is optional: hidden behind a button until the first account exists', (tester) async {

@@ -777,5 +777,6 @@
   "portfolioAccountHint": "sɛ nhwɛso, TBSZ 2026 (ɛnhia)",
   "portfolioAccountAdd": "Kyerɛ akontaabu bi",
   "portfolioAccountsAll": "Akontaabu nyinaa",
-  "portfolioAccountNote": "Saa akontaabu yi adetɔ ne adetɔn nko ara. Sika a ɛda hɔ ne dividend da adi wɔ Akontaabu nyinaa ase."
+  "portfolioAccountNote": "Saa akontaabu yi adetɔ ne adetɔn nko ara. Sika a ɛda hɔ ne dividend da adi wɔ Akontaabu nyinaa ase.",
+  "portfolioNoAccount": "Akontaabu nni hɔ"
 }

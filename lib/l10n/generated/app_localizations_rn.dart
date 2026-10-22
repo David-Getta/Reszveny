@@ -2554,6 +2554,9 @@ class AppLocalizationsRn extends AppLocalizations {
       'Ivyaguzwe n\'ivyagurishijwe vy\'iyi konti gusa. Amafaranga n\'amadividende vyerekanwa muri \"Konti zose\".';
 
   @override
+  String get portfolioNoAccount => 'Nta konti';
+
+  @override
   String get portfolioGoalSet => 'Shiraho intumbero';
 
   @override

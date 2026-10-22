@@ -69,7 +69,11 @@ String realizedCsv(List<Position> positions) {
     for (final p in positions)
       for (final s in p.sales) (p, s),
   ]..sort((a, b) => (a.$2.date ?? DateTime(9999)).compareTo(b.$2.date ?? DateTime(9999)));
-  final b = StringBuffer('date,symbol,quantity,sale_price,proceeds,cost_basis,gain,currency\n');
+  // A számla oszlopa csak akkor, ha van számlás eladás (pl. a TBSZ nyeresége másként adózik).
+  final withAccount = rows.any((r) => r.$2.account != null);
+  final b = StringBuffer(
+    'date,symbol,quantity,sale_price,proceeds,cost_basis,gain,currency${withAccount ? ',account' : ''}\n',
+  );
   for (final (p, s) in rows) {
     b.writeln(
       [
@@ -81,14 +85,16 @@ String realizedCsv(List<Position> positions) {
         n(s.cost),
         n(s.proceeds - s.cost),
         p.currency,
+        if (withAccount) _csvField(s.account ?? ''),
       ].join(','),
     );
   }
   return b.toString();
 }
 
-/// CSV-mező: vesszőt, idézőjelet vagy sortörést tartalmazó szöveg idézőjelek között.
-String _csvField(String s) => RegExp(r'[,"\n]').hasMatch(s) ? '"${s.replaceAll('"', '""')}"' : s;
+/// CSV-mező: elválasztójelet (vessző, pontosvessző, tab), idézőjelet vagy sortörést
+/// tartalmazó szöveg idézőjelek között – a beolvasás soronként találgatja az elválasztót.
+String _csvField(String s) => RegExp(r'[,;\t"\n]').hasMatch(s) ? '"${s.replaceAll('"', '""')}"' : s;
 
 /// Egy beolvasott sor (még nem került a portfólióba).
 class ImportedLot {
@@ -189,7 +195,15 @@ List<String> splitCsvLine(String line, String sep) {
   return out;
 }
 
-String _separator(String line) => line.contains('\t') ? '\t' : (line.contains(';') ? ';' : ',');
+String _separator(String line) {
+  // Az idézőjeles mezőben (pl. „TBSZ; 2026” számlanévben) lévő jel nem elválasztó.
+  final bare = line.replaceAll(RegExp(r'"[^"]*"'), '');
+  return bare.contains('\t') ? '\t' : (bare.contains(';') ? ';' : ',');
+}
+
+/// Fejléc nélküli sorban a hetedik oszlop csak akkor számla, ha betű is van benne
+/// (egy összeg-oszlop, pl. „1500.00” vagy „$1,500”, nem az).
+final _accountLike = RegExp(r'\p{L}', unicode: true);
 
 /// A bróker-exportok oszlopnevei (kisbetűvel, írásjelek és szóközök nélkül).
 const _roles = <String, Set<String>>{
@@ -449,8 +463,10 @@ CsvImport _positional(List<String> lines, String defaultCurrency) {
         currency: ccy,
         date: date,
         sell: sell,
-        // Fejléc nélkül a hetedik oszlop a számla (saját export).
-        account: PortfolioLot.cleanAccount(f.length > 6 ? f[6] : null),
+        // Fejléc nélkül a hetedik oszlop a számla (saját export) – ha nem szám (pl. egy összeg-oszlop).
+        account: f.length > 6 && _accountLike.hasMatch(f[6]) && parseDecimal(f[6]) == null
+            ? PortfolioLot.cleanAccount(f[6])
+            : null,
       ),
     );
   }

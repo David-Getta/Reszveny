@@ -2536,6 +2536,9 @@ class AppLocalizationsSd extends AppLocalizations {
       'صرف هن اڪائونٽ جي ليڻ دين. نقد ۽ ڊيويڊنڊ ”سڀ اڪائونٽ“ هيٺ ڏيکاريا وڃن ٿا.';
 
   @override
+  String get portfolioNoAccount => 'ڪو اڪائونٽ ناهي';
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

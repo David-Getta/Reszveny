@@ -2475,6 +2475,9 @@ class AppLocalizationsKo extends AppLocalizations {
       '이 계좌의 거래만 표시됩니다. 현금과 배당금은 \'전체 계좌\'에 표시됩니다.';
 
   @override
+  String get portfolioNoAccount => '계좌 없음';
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

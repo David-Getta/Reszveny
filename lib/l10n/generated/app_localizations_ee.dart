@@ -2550,6 +2550,9 @@ class AppLocalizationsEe extends AppLocalizations {
       'Akɔnta sia ƒe nuƒeƒle kple nudzadzra ko. Ga le asi kple dividendwo dzena le Akɔntawo katã te.';
 
   @override
+  String get portfolioNoAccount => 'Akɔnta manɔmee';
+
+  @override
   String get portfolioGoalSet => 'Ɖo taɖodzinu';
 
   @override

@@ -777,5 +777,6 @@
   "portfolioAccountHint": "예: ISA (선택)",
   "portfolioAccountAdd": "계좌 지정",
   "portfolioAccountsAll": "전체 계좌",
-  "portfolioAccountNote": "이 계좌의 거래만 표시됩니다. 현금과 배당금은 '전체 계좌'에 표시됩니다."
+  "portfolioAccountNote": "이 계좌의 거래만 표시됩니다. 현금과 배당금은 '전체 계좌'에 표시됩니다.",
+  "portfolioNoAccount": "계좌 없음"
 }

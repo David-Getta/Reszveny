@@ -4405,6 +4405,12 @@ abstract class AppLocalizations {
   /// **'Only this account\'s transactions. Cash and dividends are shown under All accounts.'**
   String get portfolioAccountNote;
 
+  /// Label for transactions recorded without an account (e.g. on the account choice when selling shares held in several accounts).
+  ///
+  /// In en, this message translates to:
+  /// **'No account'**
+  String get portfolioNoAccount;
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

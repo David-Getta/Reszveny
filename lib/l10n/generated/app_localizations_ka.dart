@@ -2546,6 +2546,9 @@ class AppLocalizationsKa extends AppLocalizations {
       'მხოლოდ ამ ანგარიშის ტრანზაქციები. ნაღდი ფული და დივიდენდები ნაჩვენებია განყოფილებაში „ყველა ანგარიში“.';
 
   @override
+  String get portfolioNoAccount => 'ანგარიშის გარეშე';
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

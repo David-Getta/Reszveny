@@ -2548,6 +2548,9 @@ class AppLocalizationsUg extends AppLocalizations {
       'پەقەت بۇ ھېساباتنىڭ سودىلىرى. نەق پۇل ۋە دىۋىدېندلار «بارلىق ھېساباتلار» دا كۆرسىتىلىدۇ.';
 
   @override
+  String get portfolioNoAccount => 'ھېساباتسىز';
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

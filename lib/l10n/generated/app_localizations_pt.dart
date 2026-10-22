@@ -2551,6 +2551,9 @@ class AppLocalizationsPt extends AppLocalizations {
       'Apenas as transações desta conta. Caixa e dividendos aparecem em Todas as contas.';
 
   @override
+  String get portfolioNoAccount => 'Sem conta';
+
+  @override
   String get portfolioGoalSet => 'Definir meta';
 
   @override

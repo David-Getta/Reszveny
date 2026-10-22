@@ -2561,6 +2561,9 @@ class AppLocalizationsSt extends AppLocalizations {
       'Ditheko le dithekiso tsa akhaonto ena feela. Chelete le dividende di bontshwa tlasa Diakhaonto tsohle.';
 
   @override
+  String get portfolioNoAccount => 'Ha ho akhaonto';
+
+  @override
   String get portfolioGoalSet => 'Beha sepheo';
 
   @override

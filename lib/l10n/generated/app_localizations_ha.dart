@@ -2551,6 +2551,9 @@ class AppLocalizationsHa extends AppLocalizations {
       'Ma\'amalolin wannan asusu kawai. Ana nuna tsabar kuɗi da rabon riba a ƙarƙashin Dukkan asusu.';
 
   @override
+  String get portfolioNoAccount => 'Babu asusu';
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

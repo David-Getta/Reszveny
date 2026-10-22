@@ -2545,6 +2545,9 @@ class AppLocalizationsUr extends AppLocalizations {
       'صرف اس اکاؤنٹ کے لین دین۔ نقد اور ڈیویڈنڈ ”تمام اکاؤنٹس“ کے تحت دکھائے جاتے ہیں۔';
 
   @override
+  String get portfolioNoAccount => 'بغیر اکاؤنٹ';
+
+  @override
   String get portfolioGoalSet => 'ہدف مقرر کریں';
 
   @override

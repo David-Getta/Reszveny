@@ -2543,6 +2543,9 @@ class AppLocalizationsHt extends AppLocalizations {
       'Se sèlman tranzaksyon kont sa a. Lajan kach ak dividann yo parèt nan Tout kont yo.';
 
   @override
+  String get portfolioNoAccount => 'San kont';
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

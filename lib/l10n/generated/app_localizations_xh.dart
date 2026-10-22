@@ -2557,6 +2557,9 @@ class AppLocalizationsXh extends AppLocalizations {
       'Iintengiselwano zale akhawunti kuphela. Imali nezahlulo ziboniswa phantsi kwe-\"Zonke iiakhawunti\".';
 
   @override
+  String get portfolioNoAccount => 'Akukho akhawunti';
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

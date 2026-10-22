@@ -2553,6 +2553,9 @@ class AppLocalizationsHy extends AppLocalizations {
       'Միայն այս հաշվի գործարքները։ Կանխիկը և շահաբաժինները ցուցադրվում են «Բոլոր հաշիվները» բաժնում։';
 
   @override
+  String get portfolioNoAccount => 'Առանց հաշվի';
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

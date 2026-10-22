@@ -777,5 +777,6 @@
   "portfolioAccountHint": "mis. TBSZ 2026 (opsional)",
   "portfolioAccountAdd": "Tentukan akun",
   "portfolioAccountsAll": "Semua akun",
-  "portfolioAccountNote": "Hanya transaksi akun ini. Kas dan dividen ditampilkan di Semua akun."
+  "portfolioAccountNote": "Hanya transaksi akun ini. Kas dan dividen ditampilkan di Semua akun.",
+  "portfolioNoAccount": "Tanpa akun"
 }

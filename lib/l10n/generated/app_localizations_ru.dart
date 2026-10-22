@@ -2613,6 +2613,9 @@ class AppLocalizationsRu extends AppLocalizations {
       'Только сделки по этому счёту. Денежные средства и дивиденды — в разделе «Все счета».';
 
   @override
+  String get portfolioNoAccount => 'Без счёта';
+
+  @override
   String get portfolioGoalSet => 'Задать цель';
 
   @override

@@ -2524,6 +2524,9 @@ class AppLocalizationsKm extends AppLocalizations {
       'មានតែប្រតិបត្តិការរបស់គណនីនេះប៉ុណ្ណោះ។ សាច់ប្រាក់ និងភាគលាភត្រូវបានបង្ហាញនៅក្រោម «គណនីទាំងអស់»។';
 
   @override
+  String get portfolioNoAccount => 'គ្មានគណនី';
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

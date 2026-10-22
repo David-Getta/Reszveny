@@ -2543,6 +2543,9 @@ class AppLocalizationsTt extends AppLocalizations {
       'Бу хисапның операцияләре генә. Акча һәм дивидендлар «Барлык хисаплар» бүлегендә күрсәтелә.';
 
   @override
+  String get portfolioNoAccount => 'Хисапсыз';
+
+  @override
   String get portfolioGoalSet => 'Максат кую';
 
   @override

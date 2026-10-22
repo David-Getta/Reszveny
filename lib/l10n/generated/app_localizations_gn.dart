@@ -2550,6 +2550,9 @@ class AppLocalizationsGn extends AppLocalizations {
       'Ko cuenta jejogua ha ñemu añoite. Pirapire ha dividendo ojehechauka Opaite cuenta-pe.';
 
   @override
+  String get portfolioNoAccount => 'Ndaipóri cuenta';
+
+  @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';
 
   @override

@@ -777,5 +777,6 @@
   "portfolioAccountHint": "ਜਿਵੇਂ NPS (ਵਿਕਲਪਿਕ)",
   "portfolioAccountAdd": "ਖਾਤਾ ਦੱਸੋ",
   "portfolioAccountsAll": "ਸਾਰੇ ਖਾਤੇ",
-  "portfolioAccountNote": "ਸਿਰਫ਼ ਇਸ ਖਾਤੇ ਦੇ ਲੈਣ-ਦੇਣ। ਨਕਦ ਅਤੇ ਡਿਵੀਡੈਂਡ ‘ਸਾਰੇ ਖਾਤੇ’ ਹੇਠ ਦਿਖਾਏ ਜਾਂਦੇ ਹਨ।"
+  "portfolioAccountNote": "ਸਿਰਫ਼ ਇਸ ਖਾਤੇ ਦੇ ਲੈਣ-ਦੇਣ। ਨਕਦ ਅਤੇ ਡਿਵੀਡੈਂਡ ‘ਸਾਰੇ ਖਾਤੇ’ ਹੇਠ ਦਿਖਾਏ ਜਾਂਦੇ ਹਨ।",
+  "portfolioNoAccount": "ਕੋਈ ਖਾਤਾ ਨਹੀਂ"
 }

@@ -2512,6 +2512,9 @@ class AppLocalizationsAm extends AppLocalizations {
       'የዚህ መለያ ግብይቶች ብቻ። ጥሬ ገንዘብ እና የትርፍ ድርሻዎች በ«ሁሉም መለያዎች» ስር ይታያሉ።';
 
   @override
+  String get portfolioNoAccount => 'ያለ መለያ';
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

@@ -109,9 +109,10 @@ Future<void> showPortfolioImport(BuildContext context) async {
   final services = AppServices.of(context);
   final result = await showDialog<CsvImport>(context: context, builder: (_) => const _ImportDialog());
   if (result == null) return;
-  // A számla is része a kulcsnak: ugyanaz a vétel két számlán két tranzakció.
+  // A számla is része a kulcsnak: ugyanaz a vétel két számlán két tranzakció
+  // (a kis- és nagybetű nem számít, a tároló a meglévő írásmódot használja).
   String key(String symbol, double q, double p, DateTime? d, bool sell, String? account) =>
-      '$symbol|$q|$p|${d?.toIso8601String().substring(0, 10)}|$sell|${account ?? ''}';
+      '$symbol|$q|$p|${d?.toIso8601String().substring(0, 10)}|$sell|${account?.toLowerCase() ?? ''}';
   final existing = {
     for (final l in services.portfolio.lots) key(l.symbol, l.quantity, l.price, l.date, l.sell, l.account),
   };

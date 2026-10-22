@@ -678,6 +678,7 @@
   "portfolioAccountAdd": "Számla megadása",
   "portfolioAccountsAll": "Minden számla",
   "portfolioAccountNote": "Csak ennek a számlának a tranzakciói. A készpénz és az osztalékok a „Minden számla” nézetben látszanak.",
+  "portfolioNoAccount": "Számla nélkül",
   "portfolioGoalSet": "Cél kitűzése",
   "portfolioGoalTitle": "Portfólió-cél",
   "portfolioGoalProgress": "{percent} kész · cél: {amount}",

@@ -2564,6 +2564,9 @@ class AppLocalizationsMg extends AppLocalizations {
       'Ny fividianana sy fivarotana amin\'ity kaonty ity ihany. Ny vola sy ny dividandy dia hita ao amin\'ny « Kaonty rehetra ».';
 
   @override
+  String get portfolioNoAccount => 'Tsy misy kaonty';
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

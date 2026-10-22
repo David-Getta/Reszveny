@@ -777,5 +777,6 @@
   "portfolioAccountHint": "p. ex. Conta de valores (opcional)",
   "portfolioAccountAdd": "Indicar unha conta",
   "portfolioAccountsAll": "Todas as contas",
-  "portfolioAccountNote": "Só as transaccións desta conta. O efectivo e os dividendos móstranse en Todas as contas."
+  "portfolioAccountNote": "Só as transaccións desta conta. O efectivo e os dividendos móstranse en Todas as contas.",
+  "portfolioNoAccount": "Sen conta"
 }

@@ -777,5 +777,6 @@
   "portfolioAccountHint": "օր.՝ TBSZ 2026 (ոչ պարտադիր)",
   "portfolioAccountAdd": "Նշել հաշիվը",
   "portfolioAccountsAll": "Բոլոր հաշիվները",
-  "portfolioAccountNote": "Միայն այս հաշվի գործարքները։ Կանխիկը և շահաբաժինները ցուցադրվում են «Բոլոր հաշիվները» բաժնում։"
+  "portfolioAccountNote": "Միայն այս հաշվի գործարքները։ Կանխիկը և շահաբաժինները ցուցադրվում են «Բոլոր հաշիվները» բաժնում։",
+  "portfolioNoAccount": "Առանց հաշվի"
 }

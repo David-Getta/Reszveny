@@ -2544,6 +2544,9 @@ class AppLocalizationsMr extends AppLocalizations {
       'फक्त या खात्याचे व्यवहार. रोख आणि लाभांश \'सर्व खाती\' मध्ये दाखवले जातात.';
 
   @override
+  String get portfolioNoAccount => 'खाते नाही';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य ठरवा';
 
   @override

@@ -777,5 +777,6 @@
   "portfolioAccountHint": "مثال: TBSZ 2026 (اختياري)",
   "portfolioAccountAdd": "تحديد حساب",
   "portfolioAccountsAll": "جميع الحسابات",
-  "portfolioAccountNote": "معاملات هذا الحساب فقط. يظهر النقد وتوزيعات الأرباح ضمن «جميع الحسابات»."
+  "portfolioAccountNote": "معاملات هذا الحساب فقط. يظهر النقد وتوزيعات الأرباح ضمن «جميع الحسابات».",
+  "portfolioNoAccount": "بدون حساب"
 }

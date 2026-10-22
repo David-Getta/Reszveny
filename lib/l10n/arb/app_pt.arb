@@ -777,5 +777,6 @@
   "portfolioAccountHint": "ex.: PGBL (opcional)",
   "portfolioAccountAdd": "Informar conta",
   "portfolioAccountsAll": "Todas as contas",
-  "portfolioAccountNote": "Apenas as transações desta conta. Caixa e dividendos aparecem em Todas as contas."
+  "portfolioAccountNote": "Apenas as transações desta conta. Caixa e dividendos aparecem em Todas as contas.",
+  "portfolioNoAccount": "Sem conta"
 }

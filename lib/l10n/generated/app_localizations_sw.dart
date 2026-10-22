@@ -2546,6 +2546,9 @@ class AppLocalizationsSw extends AppLocalizations {
       'Miamala ya akaunti hii pekee. Taslimu na gawio huonyeshwa chini ya Akaunti zote.';
 
   @override
+  String get portfolioNoAccount => 'Bila akaunti';
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

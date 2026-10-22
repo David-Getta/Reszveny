@@ -2556,6 +2556,9 @@ class AppLocalizationsLn extends AppLocalizations {
       'Kaka bosombi mpe boteki ya compte oyo. Mbɔngɔ ya mabɔkɔ mpe ba dividende ezali kolakisama na Ba compte nyonso.';
 
   @override
+  String get portfolioNoAccount => 'Na compte te';
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

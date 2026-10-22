@@ -2562,6 +2562,9 @@ class AppLocalizationsHil extends AppLocalizations {
       'Mga transaksyon lang sini nga account. Ang cash kag dibidendo makita sa Tanan nga account.';
 
   @override
+  String get portfolioNoAccount => 'Wala sing account';
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

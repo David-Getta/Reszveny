@@ -2551,6 +2551,9 @@ class AppLocalizationsTe extends AppLocalizations {
       'ఈ ఖాతా లావాదేవీలు మాత్రమే. నగదు, డివిడెండ్లు \'అన్ని ఖాతాలు\'లో చూపబడతాయి.';
 
   @override
+  String get portfolioNoAccount => 'ఖాతా లేదు';
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

@@ -2613,6 +2613,9 @@ class AppLocalizationsPl extends AppLocalizations {
       'Tylko transakcje tego rachunku. Gotówkę i dywidendy zobaczysz po wybraniu „Wszystkie rachunki”.';
 
   @override
+  String get portfolioNoAccount => 'Bez rachunku';
+
+  @override
   String get portfolioGoalSet => 'Ustaw cel';
 
   @override

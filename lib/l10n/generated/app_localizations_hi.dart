@@ -2543,6 +2543,9 @@ class AppLocalizationsHi extends AppLocalizations {
       'सिर्फ़ इस खाते के लेन-देन। नकद और डिविडेंड ‘सभी खाते’ में दिखाए जाते हैं।';
 
   @override
+  String get portfolioNoAccount => 'कोई खाता नहीं';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करें';
 
   @override

@@ -2589,6 +2589,9 @@ class AppLocalizationsBs extends AppLocalizations {
       'Samo transakcije ovog računa. Gotovina i dividende prikazuju se pod „Svi računi“.';
 
   @override
+  String get portfolioNoAccount => 'Bez računa';
+
+  @override
   String get portfolioGoalSet => 'Postavi cilj';
 
   @override

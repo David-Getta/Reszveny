@@ -2540,6 +2540,9 @@ class AppLocalizationsFf extends AppLocalizations {
       'Ko soodgol e yeeyugol konte ndee tan. Kaalis e dividendeeji ina njiytee ka Konteeji fof.';
 
   @override
+  String get portfolioNoAccount => 'Alaa konte';
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

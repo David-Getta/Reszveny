@@ -2087,6 +2087,10 @@
   "@portfolioAccountNote": {
     "description": "Note under the account filter when a single account is selected on the portfolio page."
   },
+  "portfolioNoAccount": "No account",
+  "@portfolioNoAccount": {
+    "description": "Label for transactions recorded without an account (e.g. on the account choice when selling shares held in several accounts)."
+  },
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

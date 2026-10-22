@@ -2539,6 +2539,9 @@ class AppLocalizationsVi extends AppLocalizations {
       'Chỉ giao dịch của tài khoản này. Tiền mặt và cổ tức hiển thị trong Tất cả tài khoản.';
 
   @override
+  String get portfolioNoAccount => 'Không có tài khoản';
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

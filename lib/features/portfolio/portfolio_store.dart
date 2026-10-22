@@ -38,7 +38,10 @@ class PortfolioLot {
   static String? cleanAccount(Object? v) {
     final s = v is String ? v.trim() : '';
     if (s.isEmpty) return null;
-    return s.length > maxAccountName ? s.substring(0, maxAccountName) : s;
+    if (s.length <= maxAccountName) return s;
+    // Karakterpár (pl. emodzsi) közepén nem vágunk.
+    final cut = s.codeUnitAt(maxAccountName - 1) & 0xFC00 == 0xD800 ? maxAccountName - 1 : maxAccountName;
+    return s.substring(0, cut).trimRight();
   }
 
   static const maxAccountName = 30;
@@ -192,7 +195,7 @@ typedef _Fifo = ({
 });
 
 /// Egy eladás a FIFO szerinti bekerülési értékkel (az adóbevalláshoz).
-typedef Sale = ({DateTime? date, double quantity, double price, double proceeds, double cost});
+typedef Sale = ({DateTime? date, double quantity, double price, double proceeds, double cost, String? account});
 
 /// Egy részvény összes tranzakciója együtt. Az eladások a legrégebbi vételeket
 /// fogyasztják (FIFO): a megmaradt darabok adják a darabszámot és a bekerülési
@@ -208,7 +211,35 @@ class Position {
 
   late final _Fifo _fifo = _compute();
 
+  /// A FIFO számlánként fut, ahogy a bróker is számol (egyik számla eladása nem
+  /// fogyaszthatja a másik vételeit); több számlánál az eredmények összeadódnak.
   _Fifo _compute() {
+    final byAccount = <String?, List<PortfolioLot>>{};
+    for (final l in lots) {
+      byAccount.putIfAbsent(l.account, () => []).add(l);
+    }
+    if (byAccount.length <= 1) return _fifoOf(lots);
+    final parts = [for (final l in byAccount.values) _fifoOf(l)];
+    final byYear = <int?, double>{};
+    for (final p in parts) {
+      for (final e in p.byYear.entries) {
+        byYear[e.key] = (byYear[e.key] ?? 0) + e.value;
+      }
+    }
+    return (
+      // A birtokolt tételek a vétel napja szerint (dátum nélküli elöl), az eladások időrendben (dátum nélküli a végén).
+      open: [for (final p in parts) ...p.open]
+        ..sort((a, b) => (a.date ?? DateTime(0)).compareTo(b.date ?? DateTime(0))),
+      realized: parts.fold(0.0, (s, p) => s + p.realized),
+      sold: parts.fold(0.0, (s, p) => s + p.sold),
+      byYear: byYear,
+      sales: [for (final p in parts) ...p.sales]
+        ..sort((a, b) => (a.date ?? DateTime(9999)).compareTo(b.date ?? DateTime(9999))),
+    );
+  }
+
+  /// Egy számla (vagy a számla nélküli tételek) FIFO-ja.
+  static _Fifo _fifoOf(List<PortfolioLot> lots) {
     // Időrend: dátum nélküli vétel a legelején, dátum nélküli eladás a végén;
     // azonos napon a vétel előbb.
     int order(PortfolioLot a, PortfolioLot b) {
@@ -246,7 +277,14 @@ class Position {
       }
       final matched = t.quantity - left;
       if (matched > 1e-9) {
-        sales.add((date: t.date, quantity: matched, price: t.price, proceeds: matched * t.price, cost: cost));
+        sales.add((
+          date: t.date,
+          quantity: matched,
+          price: t.price,
+          proceeds: matched * t.price,
+          cost: cost,
+          account: t.account,
+        ));
       }
     }
     return (open: open, realized: realized, sold: sold, byYear: byYear, sales: sales);
@@ -539,6 +577,29 @@ class PortfolioStore extends ChangeNotifier {
     return positions.where((p) => p.symbol == s).firstOrNull;
   }
 
+  /// Egy részvény birtokolt darabszáma számlánként (`null` kulcs: számla nélkül),
+  /// csak ahol van még – az eladás ezekből választhat.
+  Map<String?, double> heldByAccount(String symbol) {
+    final s = symbol.toUpperCase();
+    final byAccount = <String?, List<PortfolioLot>>{};
+    for (final l in adjustedLots) {
+      if (l.symbol == s) byAccount.putIfAbsent(l.account, () => []).add(l);
+    }
+    return {
+      for (final e in byAccount.entries)
+        if (Position(symbol: s, currency: e.value.first.currency, lots: e.value) case final p when !p.isClosed)
+          e.key: p.quantity,
+    };
+  }
+
+  /// A számlanév a már használt írásmóddal („tbsz” → „TBSZ”, ha az már van), hogy
+  /// a kis- és nagybetű eltérése ne nyisson új számlát.
+  String? canonicalAccount(String? account) {
+    final a = PortfolioLot.cleanAccount(account);
+    if (a == null) return null;
+    return accounts.where((x) => x.toLowerCase() == a.toLowerCase()).firstOrNull ?? a;
+  }
+
   Future<PortfolioLot> add({
     required String symbol,
     required double quantity,
@@ -557,7 +618,7 @@ class PortfolioStore extends ChangeNotifier {
       currency: currency.toUpperCase(),
       date: date,
       sell: sell,
-      account: PortfolioLot.cleanAccount(account),
+      account: canonicalAccount(account),
     );
     _lots.add(lot);
     notifyListeners();

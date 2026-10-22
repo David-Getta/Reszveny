@@ -2556,6 +2556,9 @@ class AppLocalizationsEl extends AppLocalizations {
       'Μόνο οι συναλλαγές αυτού του λογαριασμού. Τα μετρητά και τα μερίσματα εμφανίζονται στο «Όλοι οι λογαριασμοί».';
 
   @override
+  String get portfolioNoAccount => 'Χωρίς λογαριασμό';
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

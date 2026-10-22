@@ -777,5 +777,6 @@
   "portfolioAccountHint": "bijv. lijfrente (optioneel)",
   "portfolioAccountAdd": "Rekening opgeven",
   "portfolioAccountsAll": "Alle rekeningen",
-  "portfolioAccountNote": "Alleen transacties van deze rekening. Cash en dividend staan onder Alle rekeningen."
+  "portfolioAccountNote": "Alleen transacties van deze rekening. Cash en dividend staan onder Alle rekeningen.",
+  "portfolioNoAccount": "Geen rekening"
 }

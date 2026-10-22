@@ -2553,6 +2553,9 @@ class AppLocalizationsNy extends AppLocalizations {
       'Zogula ndi zogulitsa za akaunti iyi zokha. Ndalama ndi madividendi zikuwonetsedwa pansi pa Maakaunti onse.';
 
   @override
+  String get portfolioNoAccount => 'Palibe akaunti';
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

@@ -138,6 +138,26 @@ void main() {
     expect(a.sync.failed, isFalse);
   });
 
+  test('an older app that drops the account names does not wipe them; they are sent back', () async {
+    final server = _Server();
+    SharedPreferences.setMockInitialValues({});
+    final a = _Device(server);
+    await a.portfolio.add(symbol: 'OTP', quantity: 10, price: 30000, currency: 'HUF', account: 'TBSZ');
+    await a.sync.start();
+    expect((server.data!['lots'] as List).single['account'], 'TBSZ');
+    // Egy régebbi app (a számlát nem ismeri) ugyanazt a tételt számla nélkül tölti fel.
+    server.data = {
+      ...server.data!,
+      'lots': [
+        for (final l in server.data!['lots'] as List) {...(l as Map)}..remove('account'),
+      ],
+    };
+    server.updatedAt = DateTime.utc(2026, 10, 16);
+    await a.sync.syncNow();
+    expect(a.portfolio.lots.single.account, 'TBSZ');
+    expect((server.data!['lots'] as List).single['account'], 'TBSZ');
+  });
+
   test('goals follow the account: the newer change wins, a removed goal does not come back', () async {
     final server = _Server();
     SharedPreferences.setMockInitialValues({});

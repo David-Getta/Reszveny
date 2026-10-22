@@ -777,5 +777,6 @@
   "portfolioAccountHint": "bv. TFSA (opsioneel)",
   "portfolioAccountAdd": "Gee 'n rekening aan",
   "portfolioAccountsAll": "Alle rekeninge",
-  "portfolioAccountNote": "Slegs hierdie rekening se transaksies. Kontant en dividende word onder Alle rekeninge gewys."
+  "portfolioAccountNote": "Slegs hierdie rekening se transaksies. Kontant en dividende word onder Alle rekeninge gewys.",
+  "portfolioNoAccount": "Geen rekening"
 }

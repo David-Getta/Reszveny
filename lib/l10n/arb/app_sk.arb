@@ -777,5 +777,6 @@
   "portfolioAccountHint": "napr. DIP (voliteľné)",
   "portfolioAccountAdd": "Zadať účet",
   "portfolioAccountsAll": "Všetky účty",
-  "portfolioAccountNote": "Len transakcie tohto účtu. Hotovosť a dividendy nájdete v časti Všetky účty."
+  "portfolioAccountNote": "Len transakcie tohto účtu. Hotovosť a dividendy nájdete v časti Všetky účty.",
+  "portfolioNoAccount": "Bez účtu"
 }

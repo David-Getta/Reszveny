@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.184)
+# Változásjegyzék (0.2.130 → 0.2.185)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -43,6 +43,9 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - **Számlák** (pl. TBSZ, normál, NYESZ): a vételhez és az eladáshoz számla adható meg (a meglévők közül kiegészítve,
   nem kötelező); a portfólió oldalon számlánként szűrhető – a FIFO, a realizált nyereség és az értékalakulás is a
   számlán belül; szinkronban, mentésben és a CSV-ben is.
+- A FIFO a „Minden számla” nézetben is számlánként fut (egyik számla eladása nem fogyasztja a másik vételeit); eladáskor
+  a birtokló számlák közül választható, honnan; a realizált nyereség CSV-je számla-oszlopot kap; a kis- és nagybetű
+  eltérése nem nyit új számlát; a számlát nem ismerő régebbi app szinkronja nem törli a számlákat.
 
 ## Készpénz
 

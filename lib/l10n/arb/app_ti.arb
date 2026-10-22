@@ -777,5 +777,6 @@
   "portfolioAccountHint": "ንኣብነት TBSZ 2026 (ግዴታ ኣይኮነን)",
   "portfolioAccountAdd": "ሕሳብ ግለጽ",
   "portfolioAccountsAll": "ኩሎም ሕሳባት",
-  "portfolioAccountNote": "ልውውጣት ናይዚ ሕሳብ ጥራይ። ጥረ ገንዘብን ድቪደንድታትን ኣብ \"ኩሎም ሕሳባት\" ይርኣዩ።"
+  "portfolioAccountNote": "ልውውጣት ናይዚ ሕሳብ ጥራይ። ጥረ ገንዘብን ድቪደንድታትን ኣብ \"ኩሎም ሕሳባት\" ይርኣዩ።",
+  "portfolioNoAccount": "ብዘይ ሕሳብ"
 }

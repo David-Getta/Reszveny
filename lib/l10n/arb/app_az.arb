@@ -777,5 +777,6 @@
   "portfolioAccountHint": "məs., TBSZ 2026 (istəyə bağlı)",
   "portfolioAccountAdd": "Hesabı qeyd edin",
   "portfolioAccountsAll": "Bütün hesablar",
-  "portfolioAccountNote": "Yalnız bu hesabın əməliyyatları. Nağd vəsait və dividendlər «Bütün hesablar» bölməsində göstərilir."
+  "portfolioAccountNote": "Yalnız bu hesabın əməliyyatları. Nağd vəsait və dividendlər «Bütün hesablar» bölməsində göstərilir.",
+  "portfolioNoAccount": "Hesabsız"
 }

@@ -2546,6 +2546,9 @@ class AppLocalizationsTk extends AppLocalizations {
       'Diňe şu hasabyň amallary. Nagt pul we diwidendler «Ähli hasaplar» bölüminde görkezilýär.';
 
   @override
+  String get portfolioNoAccount => 'Hasapsyz';
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

@@ -777,5 +777,6 @@
   "portfolioAccountHint": "misali TBSZ 2026 (ba dole ba)",
   "portfolioAccountAdd": "Bayyana asusu",
   "portfolioAccountsAll": "Dukkan asusu",
-  "portfolioAccountNote": "Ma'amalolin wannan asusu kawai. Ana nuna tsabar kuɗi da rabon riba a ƙarƙashin Dukkan asusu."
+  "portfolioAccountNote": "Ma'amalolin wannan asusu kawai. Ana nuna tsabar kuɗi da rabon riba a ƙarƙashin Dukkan asusu.",
+  "portfolioNoAccount": "Babu asusu"
 }

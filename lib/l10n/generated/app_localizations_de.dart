@@ -2559,6 +2559,9 @@ class AppLocalizationsDe extends AppLocalizations {
       'Nur Transaktionen dieses Kontos. Cash und Dividenden werden unter „Alle Konten“ angezeigt.';
 
   @override
+  String get portfolioNoAccount => 'Ohne Konto';
+
+  @override
   String get portfolioGoalSet => 'Ziel festlegen';
 
   @override

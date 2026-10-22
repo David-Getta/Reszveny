@@ -2558,6 +2558,9 @@ class AppLocalizationsQu extends AppLocalizations {
       'Kay cuentapa rantiy rantikuyninkunalla. Qullqi, dividendokunapas «Llapan cuentakuna» nisqapim rikhurin.';
 
   @override
+  String get portfolioNoAccount => 'Mana cuentayuq';
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

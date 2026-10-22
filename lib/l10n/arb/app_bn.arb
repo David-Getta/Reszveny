@@ -777,5 +777,6 @@
   "portfolioAccountHint": "যেমন TBSZ 2026 (ঐচ্ছিক)",
   "portfolioAccountAdd": "অ্যাকাউন্ট উল্লেখ করুন",
   "portfolioAccountsAll": "সব অ্যাকাউন্ট",
-  "portfolioAccountNote": "শুধু এই অ্যাকাউন্টের লেনদেন। নগদ ও ডিভিডেন্ড ‘সব অ্যাকাউন্ট’-এ দেখানো হয়।"
+  "portfolioAccountNote": "শুধু এই অ্যাকাউন্টের লেনদেন। নগদ ও ডিভিডেন্ড ‘সব অ্যাকাউন্ট’-এ দেখানো হয়।",
+  "portfolioNoAccount": "অ্যাকাউন্ট ছাড়া"
 }

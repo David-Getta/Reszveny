@@ -2550,6 +2550,9 @@ class AppLocalizationsMs extends AppLocalizations {
       'Hanya transaksi akaun ini. Tunai dan dividen dipaparkan di bawah Semua akaun.';
 
   @override
+  String get portfolioNoAccount => 'Tiada akaun';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

@@ -2531,6 +2531,9 @@ class AppLocalizationsMos extends AppLocalizations {
       'Kõntã-kãngã raaba la koosgo bal. Ligdi la dividand be \"Kõnte fãa\" pʋgẽ.';
 
   @override
+  String get portfolioNoAccount => 'Kõnte ka be ye';
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

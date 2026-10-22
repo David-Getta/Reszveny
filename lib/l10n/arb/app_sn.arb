@@ -777,5 +777,6 @@
   "portfolioAccountHint": "sem. TBSZ 2026 (kana uchida)",
   "portfolioAccountAdd": "Taura akaundi",
   "portfolioAccountsAll": "Maakaundi ese",
-  "portfolioAccountNote": "Zvakatengwa nezvakatengeswa muakaundi iyi chete. Mari nemadividendi zvinoratidzwa pasi pe\"Maakaundi ese\"."
+  "portfolioAccountNote": "Zvakatengwa nezvakatengeswa muakaundi iyi chete. Mari nemadividendi zvinoratidzwa pasi pe\"Maakaundi ese\".",
+  "portfolioNoAccount": "Hapana akaundi"
 }

@@ -2518,6 +2518,9 @@ class AppLocalizationsLo extends AppLocalizations {
       'ສະເພາະທຸລະກຳຂອງບັນຊີນີ້. ເງິນສົດ ແລະ ເງິນປັນຜົນສະແດງຢູ່ໃນ “ທຸກບັນຊີ”.';
 
   @override
+  String get portfolioNoAccount => 'ບໍ່ມີບັນຊີ';
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

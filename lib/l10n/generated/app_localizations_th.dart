@@ -2515,6 +2515,9 @@ class AppLocalizationsTh extends AppLocalizations {
       'เฉพาะรายการซื้อขายของบัญชีนี้ เงินสดและเงินปันผลแสดงอยู่ใน “ทุกบัญชี”';
 
   @override
+  String get portfolioNoAccount => 'ไม่มีบัญชี';
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

@@ -2537,6 +2537,9 @@ class AppLocalizationsMy extends AppLocalizations {
       'ဤအကောင့်၏ အရောင်းအဝယ်များသာ။ ငွေသားနှင့် အမြတ်ဝေစုများကို \"အကောင့်အားလုံး\" တွင် ပြသသည်။';
 
   @override
+  String get portfolioNoAccount => 'အကောင့် မရှိ';
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

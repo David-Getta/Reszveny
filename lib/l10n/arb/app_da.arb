@@ -777,5 +777,6 @@
   "portfolioAccountHint": "f.eks. Aktiesparekonto (valgfrit)",
   "portfolioAccountAdd": "Angiv en konto",
   "portfolioAccountsAll": "Alle konti",
-  "portfolioAccountNote": "Kun transaktioner på denne konto. Kontanter og udbytte vises under Alle konti."
+  "portfolioAccountNote": "Kun transaktioner på denne konto. Kontanter og udbytte vises under Alle konti.",
+  "portfolioNoAccount": "Uden konto"
 }

@@ -777,5 +777,6 @@
   "portfolioAccountHint": "напр. ИИС (необязательно)",
   "portfolioAccountAdd": "Указать счёт",
   "portfolioAccountsAll": "Все счета",
-  "portfolioAccountNote": "Только сделки по этому счёту. Денежные средства и дивиденды — в разделе «Все счета»."
+  "portfolioAccountNote": "Только сделки по этому счёту. Денежные средства и дивиденды — в разделе «Все счета».",
+  "portfolioNoAccount": "Без счёта"
 }

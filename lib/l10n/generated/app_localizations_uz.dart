@@ -2550,6 +2550,9 @@ class AppLocalizationsUz extends AppLocalizations {
       'Faqat shu hisob operatsiyalari. Naqd pul va dividendlar «Barcha hisoblar» boʻlimida koʻrsatiladi.';
 
   @override
+  String get portfolioNoAccount => 'Hisobsiz';
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

@@ -270,6 +270,15 @@ class SyncService extends ChangeNotifier {
     return [for (final l in merged.values) l.toJson()];
   }
 
+  /// Maradt-e helyi számla olyan tételen, amelyet a csomag számla nélkül hozott.
+  bool _keptAccounts(Map<String, dynamic> data) {
+    final remote = {
+      for (final j in (data['lots'] is List ? data['lots'] as List : const []))
+        if (j is Map) '${j['id']}': PortfolioLot.cleanAccount(j['account']),
+    };
+    return portfolio.lots.any((l) => l.account != null && remote[l.id] == null);
+  }
+
   Future<void> _apply(Map<String, dynamic> data) async {
     _applying = true;
     _lastJson = null;
@@ -310,7 +319,16 @@ class SyncService extends ChangeNotifier {
     }
     await preferences.setEmailAlerts(data['email_alerts'] != false);
     await preferences.setWeeklyDigest(data['weekly_digest'] == true);
-    await portfolio.replaceAll([for (final j in maps(data['lots'])) ?PortfolioLot.fromJson(j)]);
+    // A számlát nem ismerő (régebbi) app a tételt számla nélkül tölti vissza: azonos
+    // tételnél a helyi számla marad (a felületen a számla utólag nem törölhető).
+    final accountOf = {for (final l in portfolio.lots) l.id: ?l.account};
+    await portfolio.replaceAll([
+      for (final j in maps(data['lots']))
+        ?PortfolioLot.fromJson({
+          ...j,
+          if (accountOf['${j['id']}'] case final a? when PortfolioLot.cleanAccount(j['account']) == null) 'account': a,
+        }),
+    ]);
     // Régi csomagban (korábbi app) nincs osztaléklista: akkor a helyi marad.
     if (data['dividends'] is List) {
       await portfolio.replaceAllDividends([for (final j in maps(data['dividends'])) ?DividendRecord.fromJson(j)]);
@@ -356,6 +374,8 @@ class SyncService extends ChangeNotifier {
         await _apply(data);
         _last = remote.updatedAt;
         (await SharedPreferences.getInstance()).setString(_lastKey, _last!.toIso8601String());
+        // Régebbi app számla nélkül töltötte vissza a tételeket: a megtartott számlák visszamennek.
+        if (_keptAccounts(data)) await _push(snapshot());
       } else if (_dirty) {
         await _push(snapshot());
       }

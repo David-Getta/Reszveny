@@ -2547,6 +2547,9 @@ class AppLocalizationsFi extends AppLocalizations {
       'Vain tämän tilin tapahtumat. Käteinen ja osingot näkyvät kohdassa Kaikki tilit.';
 
   @override
+  String get portfolioNoAccount => 'Ilman tiliä';
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

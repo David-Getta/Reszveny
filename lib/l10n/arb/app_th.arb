@@ -777,5 +777,6 @@
   "portfolioAccountHint": "เช่น RMF (ไม่บังคับ)",
   "portfolioAccountAdd": "ระบุบัญชี",
   "portfolioAccountsAll": "ทุกบัญชี",
-  "portfolioAccountNote": "เฉพาะรายการซื้อขายของบัญชีนี้ เงินสดและเงินปันผลแสดงอยู่ใน “ทุกบัญชี”"
+  "portfolioAccountNote": "เฉพาะรายการซื้อขายของบัญชีนี้ เงินสดและเงินปันผลแสดงอยู่ใน “ทุกบัญชี”",
+  "portfolioNoAccount": "ไม่มีบัญชี"
 }

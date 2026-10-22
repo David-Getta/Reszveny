@@ -2556,6 +2556,9 @@ class AppLocalizationsZu extends AppLocalizations {
       'Ukuthenga nokuthengisa kwale akhawunti kuphela. Imali nezabelo zenzuzo kuboniswa ngaphansi kokuthi Wonke ama-akhawunti.';
 
   @override
+  String get portfolioNoAccount => 'Ayikho i-akhawunti';
+
+  @override
   String get portfolioGoalSet => 'Setha umgomo';
 
   @override

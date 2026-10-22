@@ -2565,6 +2565,9 @@ class AppLocalizationsTs extends AppLocalizations {
       'Swixaviwa ni swixavisiwa swa akhawunti leyi ntsena. Mali na tidividende swi kombisiwa ehansi ka Tiakhawunti hinkwato.';
 
   @override
+  String get portfolioNoAccount => 'A ku na akhawunti';
+
+  @override
   String get portfolioGoalSet => 'Veka xikongomelo';
 
   @override

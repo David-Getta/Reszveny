@@ -24,7 +24,7 @@ double? parseDecimal(String input) {
   return double.tryParse(s.replaceAll(',', '.'));
 }
 
-/// Vétel (vagy [sellMax] megadásával eladás) rögzítése: darabszám,
+/// Vétel (vagy [holdings] megadásával eladás) rögzítése: darabszám,
 /// darabonkénti ár (a jelenlegi árral kitöltve) és dátum. `true`-val tér
 /// vissza, ha a tranzakció bekerült a portfólióba.
 Future<bool> showAddLotDialog(
@@ -32,7 +32,7 @@ Future<bool> showAddLotDialog(
   required String symbol,
   required String currency,
   double? currentPrice,
-  double? sellMax,
+  Map<String?, double>? holdings,
   String? account,
 }) async {
   final added = await showDialog<bool>(
@@ -41,7 +41,7 @@ Future<bool> showAddLotDialog(
       symbol: symbol,
       currency: currency,
       currentPrice: currentPrice,
-      sellMax: sellMax,
+      holdings: holdings,
       account: account,
     ),
   );
@@ -49,7 +49,7 @@ Future<bool> showAddLotDialog(
 }
 
 class _AddLotDialog extends StatefulWidget {
-  const _AddLotDialog({required this.symbol, required this.currency, this.currentPrice, this.sellMax, this.account});
+  const _AddLotDialog({required this.symbol, required this.currency, this.currentPrice, this.holdings, this.account});
 
   final String symbol;
   final String currency;
@@ -58,10 +58,11 @@ class _AddLotDialog extends StatefulWidget {
   /// Előre kitöltött számla (pl. a portfólió oldalon választott számla).
   final String? account;
 
-  /// Eladásnál a birtokolt darabszám (ennél többet nem lehet eladni).
-  final double? sellMax;
+  /// Eladásnál a birtokolt darabszám számlánként (`null` kulcs: számla nélkül);
+  /// az eladás ezek egyikéről megy, legfeljebb az ott birtokolt darabszámig.
+  final Map<String?, double>? holdings;
 
-  bool get sell => sellMax != null;
+  bool get sell => holdings != null;
 
   @override
   State<_AddLotDialog> createState() => _AddLotDialogState();
@@ -78,6 +79,16 @@ class _AddLotDialogState extends State<_AddLotDialog> {
   /// számla, egy „Számla megadása” gomb mutatja meg.
   TextEditingController? _accountField;
   late bool _showAccount = widget.account != null || AppServices.of(context).portfolio.accounts.isNotEmpty;
+
+  /// Eladásnál a számla, amelyről elad: az előre megadott, különben ahol a legtöbb darab van.
+  late String? _sellFrom = switch (widget.holdings) {
+    final h? when widget.account != null && h.containsKey(widget.account) => widget.account,
+    final h? when h.isNotEmpty => (h.entries.toList()..sort((a, b) => b.value.compareTo(a.value))).first.key,
+    _ => widget.account,
+  };
+
+  /// Ennél többet nem lehet eladni (a választott számlán birtokolt darabszám).
+  double? get _sellMax => widget.holdings == null ? null : (widget.holdings![_sellFrom] ?? 0);
 
   @override
   void initState() {
@@ -97,7 +108,7 @@ class _AddLotDialogState extends State<_AddLotDialog> {
     final l10n = AppLocalizations.of(context);
     final q = parseDecimal(_quantity.text);
     final p = parseDecimal(_price.text);
-    final max = widget.sellMax;
+    final max = _sellMax;
     final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
     setState(() {
       _quantityError = q == null || q <= 0
@@ -115,7 +126,7 @@ class _AddLotDialogState extends State<_AddLotDialog> {
       currency: widget.currency,
       date: _date,
       sell: widget.sell,
-      account: _showAccount ? (_accountField?.text ?? widget.account) : null,
+      account: widget.sell ? _sellFrom : (_showAccount ? (_accountField?.text ?? widget.account) : null),
     );
     if (mounted) Navigator.of(context).pop(true);
   }
@@ -124,6 +135,8 @@ class _AddLotDialogState extends State<_AddLotDialog> {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     final p = AppPalette.of(context);
+    final theme = Theme.of(context);
+    final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
     const numberKeyboard = TextInputType.numberWithOptions(decimal: true);
     return AlertDialog(
       title: Text(widget.sell ? l10n.portfolioSellTitle(widget.symbol) : l10n.portfolioAddTitle(widget.symbol)),
@@ -142,11 +155,11 @@ class _AddLotDialogState extends State<_AddLotDialog> {
                 labelText: l10n.portfolioQuantity,
                 errorText: _quantityError,
                 // Eladásnál a birtokolt darabszám, egy koppintással kitölthető.
-                suffix: widget.sellMax == null
+                suffix: _sellMax == null
                     ? null
                     : InkWell(
                         key: const ValueKey('lot-sell-all'),
-                        onTap: () => _quantity.text = plainNumber(widget.sellMax!),
+                        onTap: () => _quantity.text = plainNumber(_sellMax!),
                         child: Text(l10n.portfolioSellAll, style: TextStyle(color: p.accent)),
                       ),
               ),
@@ -171,8 +184,34 @@ class _AddLotDialogState extends State<_AddLotDialog> {
               date: _date,
               onChanged: (d) => setState(() => _date = d),
             ),
+            // Eladásnál a számla, amelyen a részvény van (több számlánál választható);
+            // ha csak számla nélküli tétele van, nincs mit mutatni.
+            if (widget.holdings case final h?) ...[
+              if (h.keys.any((a) => a != null)) ...[
+                const SizedBox(height: 4),
+                Text(l10n.portfolioAccount, style: theme.textTheme.labelMedium?.copyWith(color: p.muted)),
+                const SizedBox(height: 6),
+                Wrap(
+                  key: const ValueKey('lot-sell-from'),
+                  spacing: 8,
+                  runSpacing: 6,
+                  children: [
+                    for (final e in h.entries)
+                      ChoiceChip(
+                        key: ValueKey('lot-sell-from-${e.key ?? '*'}'),
+                        label: Text(
+                          '${e.key ?? l10n.portfolioNoAccount} · '
+                          '${fmt.number(e.value, decimals: e.value == e.value.roundToDouble() ? 0 : 4)}',
+                        ),
+                        selected: e.key == _sellFrom,
+                        onSelected: h.length > 1 ? (_) => setState(() => _sellFrom = e.key) : null,
+                      ),
+                  ],
+                ),
+              ],
+            ]
             // Számla (pl. TBSZ): a meglévők közül kiegészítve; nem kötelező.
-            if (_showAccount)
+            else if (_showAccount)
               Autocomplete<String>(
                 initialValue: TextEditingValue(text: widget.account ?? ''),
                 optionsBuilder: (v) {
@@ -191,7 +230,8 @@ class _AddLotDialogState extends State<_AddLotDialog> {
                       hintText: l10n.portfolioAccountHint,
                       counterText: '',
                     ),
-                    onSubmitted: (_) => onSubmitted(),
+                    // Az Enter a dialógust menti (nem a kiegészítés első javaslatát választja).
+                    onSubmitted: (_) => _submit(),
                   );
                 },
               )

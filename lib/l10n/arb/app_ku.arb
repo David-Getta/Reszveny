@@ -777,5 +777,6 @@
   "portfolioAccountHint": "mînak TBSZ 2026 (vebijarkî)",
   "portfolioAccountAdd": "Hesabekî diyar bike",
   "portfolioAccountsAll": "Hemû hesab",
-  "portfolioAccountNote": "Tenê danûstandinên vî hesabî. Pereyê nexd û dividend di bin Hemû hesab de têne nîşandan."
+  "portfolioAccountNote": "Tenê danûstandinên vî hesabî. Pereyê nexd û dividend di bin Hemû hesab de têne nîşandan.",
+  "portfolioNoAccount": "Bê hesab"
 }

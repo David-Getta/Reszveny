@@ -777,5 +777,6 @@
   "portfolioAccountHint": "mũhiano: TBSZ 2026 (ũngĩenda)",
   "portfolioAccountAdd": "Onania akaũnti",
   "portfolioAccountsAll": "Akaũnti ciothe",
-  "portfolioAccountNote": "Ũgũri na ũendia wa akaũnti ĩno tu. Mbeca cia moko na mĩgai ya faida ionekaga harĩ Akaũnti ciothe."
+  "portfolioAccountNote": "Ũgũri na ũendia wa akaũnti ĩno tu. Mbeca cia moko na mĩgai ya faida ionekaga harĩ Akaũnti ciothe.",
+  "portfolioNoAccount": "Hatarĩ akaũnti"
 }

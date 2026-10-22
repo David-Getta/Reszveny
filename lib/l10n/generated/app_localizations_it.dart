@@ -2551,6 +2551,9 @@ class AppLocalizationsIt extends AppLocalizations {
       'Solo le transazioni di questo conto. Liquidità e dividendi sono mostrati in Tutti i conti.';
 
   @override
+  String get portfolioNoAccount => 'Senza conto';
+
+  @override
   String get portfolioGoalSet => 'Imposta un obiettivo';
 
   @override

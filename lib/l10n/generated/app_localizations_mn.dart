@@ -2545,6 +2545,9 @@ class AppLocalizationsMn extends AppLocalizations {
       'Зөвхөн энэ дансны гүйлгээ. Бэлэн мөнгө болон ногдол ашгийг «Бүх данс» хэсэгт харуулна.';
 
   @override
+  String get portfolioNoAccount => 'Дансгүй';
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

@@ -777,5 +777,6 @@
   "portfolioAccountHint": "hal. PERA (opsyonal)",
   "portfolioAccountAdd": "Tukuyin ang account",
   "portfolioAccountsAll": "Lahat ng account",
-  "portfolioAccountNote": "Mga transaksyon lang ng account na ito. Makikita ang cash at dibidendo sa Lahat ng account."
+  "portfolioAccountNote": "Mga transaksyon lang ng account na ito. Makikita ang cash at dibidendo sa Lahat ng account.",
+  "portfolioNoAccount": "Walang account"
 }

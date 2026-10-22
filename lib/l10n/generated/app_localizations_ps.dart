@@ -2537,6 +2537,9 @@ class AppLocalizationsPs extends AppLocalizations {
       'یوازې د دې حساب راکړې ورکړې. نغدې او ډیویډنډونه د «ټول حسابونه» لاندې ښودل کېږي.';
 
   @override
+  String get portfolioNoAccount => 'حساب نشته';
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

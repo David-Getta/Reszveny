@@ -2541,6 +2541,9 @@ class AppLocalizationsFa extends AppLocalizations {
       'فقط تراکنش‌های این حساب. نقد و سود سهام در «همه حساب‌ها» نمایش داده می‌شوند.';
 
   @override
+  String get portfolioNoAccount => 'بدون حساب';
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

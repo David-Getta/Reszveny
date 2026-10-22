@@ -2553,6 +2553,9 @@ class AppLocalizationsSo extends AppLocalizations {
       'Kaliya macaamilada akoonkan. Lacagta caddaanka ah iyo faa\'iido-saamiyada waxaa lagu muujiyaa \"Dhammaan akoonnada\".';
 
   @override
+  String get portfolioNoAccount => 'Akoon la\'aan';
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override
