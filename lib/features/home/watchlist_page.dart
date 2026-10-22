@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../compare/compare_page.dart';
 import '../../app_services.dart';
 import '../../core/app_preferences.dart';
 import '../../core/models/price_history.dart';
@@ -270,6 +271,25 @@ class _WatchlistPageState extends State<WatchlistPage> {
         title: Text(l10n.favorites),
         hasSidebar: MediaQuery.sizeOf(context).width >= 860,
         actions: [
+          // A látott sorrend első három részvénye egymás mellett (a kedvencek vagy a választott lista).
+          ListenableBuilder(
+            listenable: services.preferences,
+            builder: (context, _) {
+              final prefs = services.preferences;
+              final symbols = prefs.watchLists.where((l) => l.name == _list).firstOrNull?.symbols ?? prefs.favorites;
+              if (symbols.length < 2) return const SizedBox.shrink();
+              return IconButton(
+                key: const ValueKey('watch-compare'),
+                tooltip: l10n.compareTitle,
+                icon: const Icon(Icons.compare_arrows_rounded),
+                onPressed: () => ComparePage.open(
+                  context,
+                  _sorted(symbols).take(ComparePage.maxStocks).toList(),
+                  onOpenSymbol: widget.onOpenSymbol,
+                ),
+              );
+            },
+          ),
           PopupMenuButton<WatchSort>(
             key: const ValueKey('watch-sort'),
             icon: const Icon(Icons.sort_rounded),

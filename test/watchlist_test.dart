@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:reszveny/features/compare/compare_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:reszveny/app.dart';
 import 'package:reszveny/core/app_preferences.dart';
@@ -270,5 +271,34 @@ void main() {
     expect(s.preferences.favorites, ['MSFT', 'AAPL', 'NVDA', 'AMD']);
     expect(s.preferences.watchLists.single.symbols, ['NVDA', 'AMD', 'MSFT']);
     expect(find.text('3 stocks added'), findsOneWidget);
+  });
+
+  testWidgets('compare from the favorites and from the portfolio: the first three side by side', (tester) async {
+    tester.view.physicalSize = const Size(1200, 2400);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final s = services();
+    await s.preferences.setFavorites(['MSFT', 'AAPL', 'NVDA', 'OTP']);
+    await s.portfolio.add(symbol: 'AAPL', quantity: 10, price: 200, currency: 'USD');
+    await s.portfolio.add(symbol: 'MSFT', quantity: 1, price: 400, currency: 'USD');
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('favorites-see-all')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('watch-compare')));
+    await tester.pumpAndSettle();
+    expect(find.byType(ComparePage), findsOneWidget);
+    expect(tester.widget<ComparePage>(find.byType(ComparePage)).symbols, ['MSFT', 'AAPL', 'NVDA']);
+    await tester.pageBack();
+    await tester.pumpAndSettle();
+
+    await tester.tap(find.text('Portfolio').first);
+    await tester.pumpAndSettle();
+    final compare = find.byKey(const ValueKey('positions-compare'));
+    await tester.ensureVisible(compare);
+    await tester.pumpAndSettle();
+    await tester.tap(compare);
+    await tester.pumpAndSettle();
+    expect(tester.widget<ComparePage>(find.byType(ComparePage)).symbols, ['AAPL', 'MSFT'], reason: 'súly szerint');
   });
 }

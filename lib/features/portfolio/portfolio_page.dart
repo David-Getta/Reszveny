@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../compare/compare_page.dart';
 import '../../app_services.dart';
 import '../../core/models/stock_candidate.dart';
 import '../../core/util/formatters.dart';
@@ -900,6 +901,16 @@ class _PositionsSectionState extends State<_PositionsSection> {
               Expanded(
                 child: Text(l10n.portfolioPositions, style: theme.textTheme.labelLarge?.copyWith(color: p.muted)),
               ),
+              // A legnagyobb pozíciók (a súly szerint) egymás mellett az összehasonlításban.
+              if (widget.snapshot.rows.length >= 2)
+                IconButton(
+                  key: const ValueKey('positions-compare'),
+                  tooltip: l10n.compareTitle,
+                  icon: Icon(Icons.compare_arrows_rounded, color: p.muted, size: 20),
+                  onPressed: () => ComparePage.open(context, [
+                    for (final r in widget.snapshot.rows.take(ComparePage.maxStocks)) r.position.symbol,
+                  ], onOpenSymbol: widget.onOpenSymbol),
+                ),
               PopupMenuButton<PositionSort>(
                 key: const ValueKey('positions-sort'),
                 icon: Icon(Icons.sort_rounded, color: p.muted, size: 20),
