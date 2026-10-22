@@ -2848,6 +2848,15 @@ class AppLocalizationsKy extends AppLocalizations {
   String get portfolioCashEdit => 'Нак акча калдыгын коюу';
 
   @override
+  String get portfolioDividendsByMonth => 'Ай боюнча';
+
+  @override
+  String get dividendsLegendReceived => 'Алынган';
+
+  @override
+  String get dividendsLegendExpected => 'Күтүлүүчү';
+
+  @override
   String get portfolioDividendsExpected => 'Кийинки күтүлгөн';
 
   @override

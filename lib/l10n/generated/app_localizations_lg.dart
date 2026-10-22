@@ -2857,6 +2857,15 @@ class AppLocalizationsLg extends AppLocalizations {
   String get portfolioCashEdit => 'Teeka ensimbi enkalu eziriwo';
 
   @override
+  String get portfolioDividendsByMonth => 'Buli mwezi';
+
+  @override
+  String get dividendsLegendReceived => 'Ebyafunibwa';
+
+  @override
+  String get dividendsLegendExpected => 'Ebisuubirwa';
+
+  @override
   String get portfolioDividendsExpected => 'Ezisuubirwa okuddako';
 
   @override

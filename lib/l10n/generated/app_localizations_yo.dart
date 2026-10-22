@@ -2843,6 +2843,15 @@ class AppLocalizationsYo extends AppLocalizations {
   String get portfolioCashEdit => 'Ṣètò owó tó kù';
 
   @override
+  String get portfolioDividendsByMonth => 'Lóṣooṣù';
+
+  @override
+  String get dividendsLegendReceived => 'Èyí tí o gbà';
+
+  @override
+  String get dividendsLegendExpected => 'Èyí tí a ń retí';
+
+  @override
   String get portfolioDividendsExpected => 'Èyí tí a ń retí tó kàn';
 
   @override

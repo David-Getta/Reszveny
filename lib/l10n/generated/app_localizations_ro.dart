@@ -2887,6 +2887,15 @@ class AppLocalizationsRo extends AppLocalizations {
   String get portfolioCashEdit => 'Setează soldul de numerar';
 
   @override
+  String get portfolioDividendsByMonth => 'Pe luni';
+
+  @override
+  String get dividendsLegendReceived => 'Încasate';
+
+  @override
+  String get dividendsLegendExpected => 'Așteptate';
+
+  @override
   String get portfolioDividendsExpected => 'Următoarea estimată';
 
   @override

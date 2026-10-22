@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Pertumbuhan dividen (5 thn)",
   "dividendNone": "Tiada dividen dibayar dalam 12 bulan lepas.",
   "dividendOnYourShares": "Atas saham anda, setahun",
-  "glossDividendGrowth5y": "Berapa banyak dividen sesaham meningkat setiap tahun secara purata sepanjang lima tahun lepas. Pertumbuhan yang stabil biasanya bermakna syarikat yakin dengan aliran tunainya; pemotongan selalunya tanda amaran."
+  "glossDividendGrowth5y": "Berapa banyak dividen sesaham meningkat setiap tahun secara purata sepanjang lima tahun lepas. Pertumbuhan yang stabil biasanya bermakna syarikat yakin dengan aliran tunainya; pemotongan selalunya tanda amaran.",
+  "portfolioDividendsByMonth": "Mengikut bulan",
+  "dividendsLegendReceived": "Diterima",
+  "dividendsLegendExpected": "Dijangka"
 }

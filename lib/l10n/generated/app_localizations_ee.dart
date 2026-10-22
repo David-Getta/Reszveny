@@ -2849,6 +2849,15 @@ class AppLocalizationsEe extends AppLocalizations {
   String get portfolioCashEdit => 'Ɖo ga si le asi ƒe home';
 
   @override
+  String get portfolioDividendsByMonth => 'Ɣleti ɖesiaɖe';
+
+  @override
+  String get dividendsLegendReceived => 'Esiwo woxɔ';
+
+  @override
+  String get dividendsLegendExpected => 'Esiwo wole mɔ kpɔm na';
+
+  @override
   String get portfolioDividendsExpected => 'Esi wokpɔ mɔ na kplɔe ɖo';
 
   @override

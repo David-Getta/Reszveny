@@ -2844,6 +2844,15 @@ class AppLocalizationsNe extends AppLocalizations {
   String get portfolioCashEdit => 'नगद मौज्दात सेट गर्नुहोस्';
 
   @override
+  String get portfolioDividendsByMonth => 'महिनाअनुसार';
+
+  @override
+  String get dividendsLegendReceived => 'प्राप्त';
+
+  @override
+  String get dividendsLegendExpected => 'अपेक्षित';
+
+  @override
   String get portfolioDividendsExpected => 'अर्को अपेक्षित';
 
   @override

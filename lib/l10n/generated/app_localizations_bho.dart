@@ -2840,6 +2840,15 @@ class AppLocalizationsBho extends AppLocalizations {
   String get portfolioCashEdit => 'नकद बैलेंस सेट करीं';
 
   @override
+  String get portfolioDividendsByMonth => 'महीना के हिसाब से';
+
+  @override
+  String get dividendsLegendReceived => 'मिलल';
+
+  @override
+  String get dividendsLegendExpected => 'अपेक्षित';
+
+  @override
   String get portfolioDividendsExpected => 'अगिला अपेक्षित';
 
   @override

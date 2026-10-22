@@ -2852,6 +2852,15 @@ class AppLocalizationsIt extends AppLocalizations {
   String get portfolioCashEdit => 'Imposta saldo liquidità';
 
   @override
+  String get portfolioDividendsByMonth => 'Per mese';
+
+  @override
+  String get dividendsLegendReceived => 'Ricevuti';
+
+  @override
+  String get dividendsLegendExpected => 'Previsti';
+
+  @override
   String get portfolioDividendsExpected => 'Prossimi attesi';
 
   @override

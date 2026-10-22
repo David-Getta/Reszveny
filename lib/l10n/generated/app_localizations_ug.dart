@@ -2848,6 +2848,15 @@ class AppLocalizationsUg extends AppLocalizations {
   String get portfolioCashEdit => 'نەق پۇل قالدۇقىنى تەڭشەش';
 
   @override
+  String get portfolioDividendsByMonth => 'ئايلار بويىچە';
+
+  @override
+  String get dividendsLegendReceived => 'تاپشۇرۇۋالغان';
+
+  @override
+  String get dividendsLegendExpected => 'كۈتۈلگەن';
+
+  @override
   String get portfolioDividendsExpected => 'كېيىنكى كۈتۈلگەن';
 
   @override

@@ -2842,6 +2842,15 @@ class AppLocalizationsOr extends AppLocalizations {
   String get portfolioCashEdit => 'ନଗଦ ବାଲାନ୍ସ ସେଟ କରନ୍ତୁ';
 
   @override
+  String get portfolioDividendsByMonth => 'ମାସ ଅନୁସାରେ';
+
+  @override
+  String get dividendsLegendReceived => 'ପ୍ରାପ୍ତ';
+
+  @override
+  String get dividendsLegendExpected => 'ପ୍ରତ୍ୟାଶିତ';
+
+  @override
   String get portfolioDividendsExpected => 'ପରବର୍ତ୍ତୀ ଆଶା କରାଯାଉଛି';
 
   @override

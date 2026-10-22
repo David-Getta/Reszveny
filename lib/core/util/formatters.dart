@@ -109,6 +109,15 @@ class Fmt {
     }
   }
 
+  /// Keskeny hónapnév (pl. „O”, „J”) – a havi diagram oszlopai alá.
+  String monthNarrow(DateTime d) {
+    try {
+      return DateFormat('MMMMM', dateLocale).format(d);
+    } catch (_) {
+      return '${d.month}';
+    }
+  }
+
   /// Rövid hónapnév (pl. „okt.”, „Oct”).
   String monthShort(DateTime d) {
     try {

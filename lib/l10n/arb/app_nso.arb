@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Kgolo ya dividende (mengwaga ye 5)",
   "dividendNone": "Ga go dividende ye e lefilwego dikgweding tše 12 tša go feta.",
   "dividendOnYourShares": "Go dišere tša gago, ka ngwaga",
-  "glossDividendGrowth5y": "Dividende ka šere e godile bjang ka ngwaga ka kakaretšo mengwageng ye mehlano ya go feta. Kgolo ye e tšwelago pele gantši e bontšha gore khamphani e tshepha phallo ya yona ya tšhelete; go fokotšwa gantši ke leswao la temošo."
+  "glossDividendGrowth5y": "Dividende ka šere e godile bjang ka ngwaga ka kakaretšo mengwageng ye mehlano ya go feta. Kgolo ye e tšwelago pele gantši e bontšha gore khamphani e tshepha phallo ya yona ya tšhelete; go fokotšwa gantši ke leswao la temošo.",
+  "portfolioDividendsByMonth": "Ka kgwedi",
+  "dividendsLegendReceived": "Tše di amogetšwego",
+  "dividendsLegendExpected": "Tše di letetšwego"
 }

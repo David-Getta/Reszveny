@@ -2844,6 +2844,15 @@ class AppLocalizationsMr extends AppLocalizations {
   String get portfolioCashEdit => 'रोख शिल्लक सेट करा';
 
   @override
+  String get portfolioDividendsByMonth => 'महिन्यानुसार';
+
+  @override
+  String get dividendsLegendReceived => 'मिळालेला';
+
+  @override
+  String get dividendsLegendExpected => 'अपेक्षित';
+
+  @override
   String get portfolioDividendsExpected => 'पुढील अपेक्षित';
 
   @override

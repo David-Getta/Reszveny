@@ -2823,6 +2823,15 @@ class AppLocalizationsKm extends AppLocalizations {
   String get portfolioCashEdit => 'កំណត់សមតុល្យសាច់ប្រាក់';
 
   @override
+  String get portfolioDividendsByMonth => 'តាមខែ';
+
+  @override
+  String get dividendsLegendReceived => 'បានទទួល';
+
+  @override
+  String get dividendsLegendExpected => 'រំពឹងទុក';
+
+  @override
   String get portfolioDividendsExpected => 'រំពឹងទុកបន្ទាប់';
 
   @override

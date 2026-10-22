@@ -2847,6 +2847,15 @@ class AppLocalizationsKu extends AppLocalizations {
   String get portfolioCashEdit => 'Bakiyeya nexd diyar bike';
 
   @override
+  String get portfolioDividendsByMonth => 'Li gorî mehan';
+
+  @override
+  String get dividendsLegendReceived => 'Wergirtî';
+
+  @override
+  String get dividendsLegendExpected => 'Tê payîn';
+
+  @override
   String get portfolioDividendsExpected => 'Ya din a tê hêvîkirin';
 
   @override

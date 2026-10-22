@@ -2772,6 +2772,15 @@ class AppLocalizationsKo extends AppLocalizations {
   String get portfolioCashEdit => '현금 잔고 설정';
 
   @override
+  String get portfolioDividendsByMonth => '월별';
+
+  @override
+  String get dividendsLegendReceived => '수령';
+
+  @override
+  String get dividendsLegendExpected => '예상';
+
+  @override
   String get portfolioDividendsExpected => '다음 예상';
 
   @override

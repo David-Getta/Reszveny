@@ -2817,6 +2817,15 @@ class AppLocalizationsLo extends AppLocalizations {
   String get portfolioCashEdit => 'ຕັ້ງຍອດເງິນສົດ';
 
   @override
+  String get portfolioDividendsByMonth => 'ຕາມເດືອນ';
+
+  @override
+  String get dividendsLegendReceived => 'ໄດ້ຮັບແລ້ວ';
+
+  @override
+  String get dividendsLegendExpected => 'ຄາດໝາຍ';
+
+  @override
   String get portfolioDividendsExpected => 'ຄາດວ່າຈະໄດ້ຮັບຕໍ່ໄປ';
 
   @override

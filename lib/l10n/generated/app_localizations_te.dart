@@ -2852,6 +2852,15 @@ class AppLocalizationsTe extends AppLocalizations {
   String get portfolioCashEdit => 'నగదు బ్యాలెన్స్ సెట్ చేయండి';
 
   @override
+  String get portfolioDividendsByMonth => 'నెలవారీగా';
+
+  @override
+  String get dividendsLegendReceived => 'అందుకున్నవి';
+
+  @override
+  String get dividendsLegendExpected => 'అంచనా';
+
+  @override
   String get portfolioDividendsExpected => 'తదుపరి అంచనా';
 
   @override

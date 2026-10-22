@@ -2839,6 +2839,15 @@ class AppLocalizationsFf extends AppLocalizations {
   String get portfolioCashEdit => 'Teelto keddiiɗum kaalis';
 
   @override
+  String get portfolioDividendsByMonth => 'Lewru kala';
+
+  @override
+  String get dividendsLegendReceived => 'Keɓaaɗi';
+
+  @override
+  String get dividendsLegendExpected => 'Fadaaɗi';
+
+  @override
   String get portfolioDividendsExpected => 'Ko habbaa rewde';
 
   @override

@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Dividendo jekakuaa (5 ary)",
   "dividendNone": "Ndojehepymeʼẽi dividendo 12 jasy ohasavaʼekuépe.",
   "dividendOnYourShares": "Ne acción-kuérare, arýpe",
-  "glossDividendGrowth5y": "Mbaʼeichaitépa okakuaa dividendo peteĩteĩ acción rehe ary ha ary, promedio-pe, ary po ohasavaʼekuépe. Jekakuaa hekopete ohechauka jepi pe empresa ojeroviaha iviru oikéva ha osẽvare; ojepoʼíramo, heta jey haʼe peteĩ señal de alerta."
+  "glossDividendGrowth5y": "Mbaʼeichaitépa okakuaa dividendo peteĩteĩ acción rehe ary ha ary, promedio-pe, ary po ohasavaʼekuépe. Jekakuaa hekopete ohechauka jepi pe empresa ojeroviaha iviru oikéva ha osẽvare; ojepoʼíramo, heta jey haʼe peteĩ señal de alerta.",
+  "portfolioDividendsByMonth": "Jasy rupi",
+  "dividendsLegendReceived": "Ojehupytýva",
+  "dividendsLegendExpected": "Oñehaʼarõva"
 }

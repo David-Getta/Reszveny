@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Ìdàgbàsókè èrè ìpín (ọdún 5)",
   "dividendNone": "Wọn kò san èrè ìpín kankan ní oṣù 12 sẹ́yìn.",
   "dividendOnYourShares": "Lórí àwọn ìpín rẹ, lọ́dún",
-  "glossDividendGrowth5y": "Bí èrè ìpín fún ìpín kọ̀ọ̀kan ṣe pọ̀ sí i tó lọ́dún ní ìpíndọ́gba láàrin ọdún márùn-ún sẹ́yìn. Ìdàgbàsókè tó dúró ṣinṣin sábà máa ń fi hàn pé ilé-iṣẹ́ náà gbẹ́kẹ̀lé ìṣàn owó rẹ̀; dídín in kù sábà máa ń jẹ́ àmì ìkìlọ̀."
+  "glossDividendGrowth5y": "Bí èrè ìpín fún ìpín kọ̀ọ̀kan ṣe pọ̀ sí i tó lọ́dún ní ìpíndọ́gba láàrin ọdún márùn-ún sẹ́yìn. Ìdàgbàsókè tó dúró ṣinṣin sábà máa ń fi hàn pé ilé-iṣẹ́ náà gbẹ́kẹ̀lé ìṣàn owó rẹ̀; dídín in kù sábà máa ń jẹ́ àmì ìkìlọ̀.",
+  "portfolioDividendsByMonth": "Lóṣooṣù",
+  "dividendsLegendReceived": "Èyí tí o gbà",
+  "dividendsLegendExpected": "Èyí tí a ń retí"
 }

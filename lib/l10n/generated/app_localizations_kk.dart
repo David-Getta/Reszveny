@@ -2845,6 +2845,15 @@ class AppLocalizationsKk extends AppLocalizations {
   String get portfolioCashEdit => 'Қолма-қол қалдықты орнату';
 
   @override
+  String get portfolioDividendsByMonth => 'Ай бойынша';
+
+  @override
+  String get dividendsLegendReceived => 'Алынған';
+
+  @override
+  String get dividendsLegendExpected => 'Күтілетін';
+
+  @override
   String get portfolioDividendsExpected => 'Келесі күтілетін';
 
   @override

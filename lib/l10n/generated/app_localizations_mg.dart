@@ -2865,6 +2865,15 @@ class AppLocalizationsMg extends AppLocalizations {
   String get portfolioCashEdit => 'Hametraka ny vola eo an-tanana';
 
   @override
+  String get portfolioDividendsByMonth => 'Isam-bolana';
+
+  @override
+  String get dividendsLegendReceived => 'Voaray';
+
+  @override
+  String get dividendsLegendExpected => 'Andrasana';
+
+  @override
   String get portfolioDividendsExpected => 'Andrasana manaraka';
 
   @override

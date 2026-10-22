@@ -2848,6 +2848,15 @@ class AppLocalizationsJv extends AppLocalizations {
   String get portfolioCashEdit => 'Setel saldo kas';
 
   @override
+  String get portfolioDividendsByMonth => 'Saben sasi';
+
+  @override
+  String get dividendsLegendReceived => 'Ditampa';
+
+  @override
+  String get dividendsLegendExpected => 'Dikira-kira';
+
+  @override
   String get portfolioDividendsExpected => 'Sing dikarepake sabanjuré';
 
   @override

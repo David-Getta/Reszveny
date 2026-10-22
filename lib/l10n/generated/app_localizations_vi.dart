@@ -2838,6 +2838,15 @@ class AppLocalizationsVi extends AppLocalizations {
   String get portfolioCashEdit => 'Đặt số dư tiền mặt';
 
   @override
+  String get portfolioDividendsByMonth => 'Theo tháng';
+
+  @override
+  String get dividendsLegendReceived => 'Đã nhận';
+
+  @override
+  String get dividendsLegendExpected => 'Dự kiến';
+
+  @override
   String get portfolioDividendsExpected => 'Dự kiến sắp tới';
 
   @override

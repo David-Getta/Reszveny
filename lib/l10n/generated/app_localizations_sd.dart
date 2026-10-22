@@ -2836,6 +2836,15 @@ class AppLocalizationsSd extends AppLocalizations {
   String get portfolioCashEdit => 'نقد بيلنس سيٽ ڪريو';
 
   @override
+  String get portfolioDividendsByMonth => 'مهيني موجب';
+
+  @override
+  String get dividendsLegendReceived => 'وصول ٿيل';
+
+  @override
+  String get dividendsLegendExpected => 'متوقع';
+
+  @override
   String get portfolioDividendsExpected => 'اڳيون متوقع';
 
   @override

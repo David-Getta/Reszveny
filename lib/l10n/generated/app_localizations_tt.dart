@@ -2843,6 +2843,15 @@ class AppLocalizationsTt extends AppLocalizations {
   String get portfolioCashEdit => 'Акча калдыгын куегыз';
 
   @override
+  String get portfolioDividendsByMonth => 'Айлар буенча';
+
+  @override
+  String get dividendsLegendReceived => 'Алынган';
+
+  @override
+  String get dividendsLegendExpected => 'Көтелгән';
+
+  @override
   String get portfolioDividendsExpected => 'Киләсе көтелгән';
 
   @override

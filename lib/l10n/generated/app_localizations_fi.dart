@@ -2846,6 +2846,15 @@ class AppLocalizationsFi extends AppLocalizations {
   String get portfolioCashEdit => 'Aseta käteissaldo';
 
   @override
+  String get portfolioDividendsByMonth => 'Kuukausittain';
+
+  @override
+  String get dividendsLegendReceived => 'Saadut';
+
+  @override
+  String get dividendsLegendExpected => 'Odotetut';
+
+  @override
   String get portfolioDividendsExpected => 'Odotettavissa seuraavaksi';
 
   @override

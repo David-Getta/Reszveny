@@ -2814,6 +2814,15 @@ class AppLocalizationsTh extends AppLocalizations {
   String get portfolioCashEdit => 'ตั้งค่ายอดเงินสด';
 
   @override
+  String get portfolioDividendsByMonth => 'รายเดือน';
+
+  @override
+  String get dividendsLegendReceived => 'ได้รับแล้ว';
+
+  @override
+  String get dividendsLegendExpected => 'คาดการณ์';
+
+  @override
   String get portfolioDividendsExpected => 'คาดว่าจะได้รับถัดไป';
 
   @override

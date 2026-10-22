@@ -2841,6 +2841,15 @@ class AppLocalizationsSi extends AppLocalizations {
   String get portfolioCashEdit => 'මුදල් ශේෂය සකසන්න';
 
   @override
+  String get portfolioDividendsByMonth => 'මාසය අනුව';
+
+  @override
+  String get dividendsLegendReceived => 'ලැබුණු';
+
+  @override
+  String get dividendsLegendExpected => 'අපේක්ෂිත';
+
+  @override
   String get portfolioDividendsExpected => 'ඊළඟට අපේක්ෂිත';
 
   @override

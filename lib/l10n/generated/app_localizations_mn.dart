@@ -2845,6 +2845,15 @@ class AppLocalizationsMn extends AppLocalizations {
   String get portfolioCashEdit => 'Бэлэн мөнгөний үлдэгдэл тохируулах';
 
   @override
+  String get portfolioDividendsByMonth => 'Сараар';
+
+  @override
+  String get dividendsLegendReceived => 'Хүлээн авсан';
+
+  @override
+  String get dividendsLegendExpected => 'Хүлээгдэж буй';
+
+  @override
   String get portfolioDividendsExpected => 'Дараагийн хүлээгдэж буй';
 
   @override

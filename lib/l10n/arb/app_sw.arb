@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Ukuaji wa gawio (miaka 5)",
   "dividendNone": "Hakuna gawio lililolipwa katika miezi 12 iliyopita.",
   "dividendOnYourShares": "Kwa hisa zako, kwa mwaka",
-  "glossDividendGrowth5y": "Kiasi ambacho gawio kwa hisa lilikua kila mwaka kwa wastani katika miaka mitano iliyopita. Ukuaji thabiti kwa kawaida humaanisha kampuni inaamini mtiririko wake wa fedha; kupunguzwa mara nyingi ni ishara ya tahadhari."
+  "glossDividendGrowth5y": "Kiasi ambacho gawio kwa hisa lilikua kila mwaka kwa wastani katika miaka mitano iliyopita. Ukuaji thabiti kwa kawaida humaanisha kampuni inaamini mtiririko wake wa fedha; kupunguzwa mara nyingi ni ishara ya tahadhari.",
+  "portfolioDividendsByMonth": "Kwa mwezi",
+  "dividendsLegendReceived": "Yaliyopokelewa",
+  "dividendsLegendExpected": "Yanayotarajiwa"
 }

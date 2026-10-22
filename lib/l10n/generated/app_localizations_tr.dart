@@ -2845,6 +2845,15 @@ class AppLocalizationsTr extends AppLocalizations {
   String get portfolioCashEdit => 'Nakit bakiyesini ayarla';
 
   @override
+  String get portfolioDividendsByMonth => 'Aylara göre';
+
+  @override
+  String get dividendsLegendReceived => 'Alınan';
+
+  @override
+  String get dividendsLegendExpected => 'Beklenen';
+
+  @override
   String get portfolioDividendsExpected => 'Sıradaki beklenen';
 
   @override

@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Ɓeydagol geɗal nafoore (duuɓi 5)",
   "dividendNone": "Alaa geɗal nafoore yoɓaangal e lebbi 12 ɓennuɗi ɗii.",
   "dividendOnYourShares": "E aksiyoŋ maa, kala hitaande",
-  "glossDividendGrowth5y": "No geɗal nafoore kala aksiyoŋ ɓeydiri kala hitaande e hakkundeeru, e nder duuɓi joy ɓennuɗi ɗii. Ɓeydagol tabitngol ina hollira ko ɓuri heewde wonde sosiyetee oo ina hoolii ceede mum naatooɗe e yaltooɗe; ustugol ngol ina heewi wonde maande reentaare."
+  "glossDividendGrowth5y": "No geɗal nafoore kala aksiyoŋ ɓeydiri kala hitaande e hakkundeeru, e nder duuɓi joy ɓennuɗi ɗii. Ɓeydagol tabitngol ina hollira ko ɓuri heewde wonde sosiyetee oo ina hoolii ceede mum naatooɗe e yaltooɗe; ustugol ngol ina heewi wonde maande reentaare.",
+  "portfolioDividendsByMonth": "Lewru kala",
+  "dividendsLegendReceived": "Keɓaaɗi",
+  "dividendsLegendExpected": "Fadaaɗi"
 }

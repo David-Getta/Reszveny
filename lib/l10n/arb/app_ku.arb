@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Mezinbûna dîvîdendê (5 sal)",
   "dividendNone": "Di 12 mehên dawî de tu dîvîdend nehatiye dayîn.",
   "dividendOnYourShares": "Li ser pişkên te, salê",
-  "glossDividendGrowth5y": "Dîvîdenda her pişkê di pênc salên dawî de bi navînî salê çiqas mezin bûye. Mezinbûna domdar bi gelemperî nîşan dide ku pargîdanî bi herikîna xwe ya pereyan bawer e; kêmkirin pir caran nîşaneyek hişyariyê ye."
+  "glossDividendGrowth5y": "Dîvîdenda her pişkê di pênc salên dawî de bi navînî salê çiqas mezin bûye. Mezinbûna domdar bi gelemperî nîşan dide ku pargîdanî bi herikîna xwe ya pereyan bawer e; kêmkirin pir caran nîşaneyek hişyariyê ye.",
+  "portfolioDividendsByMonth": "Li gorî mehan",
+  "dividendsLegendReceived": "Wergirtî",
+  "dividendsLegendExpected": "Tê payîn"
 }

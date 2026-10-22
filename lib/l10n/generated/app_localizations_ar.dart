@@ -2909,6 +2909,15 @@ class AppLocalizationsAr extends AppLocalizations {
   String get portfolioCashEdit => 'تعيين الرصيد النقدي';
 
   @override
+  String get portfolioDividendsByMonth => 'حسب الشهر';
+
+  @override
+  String get dividendsLegendReceived => 'مستلمة';
+
+  @override
+  String get dividendsLegendExpected => 'متوقعة';
+
+  @override
   String get portfolioDividendsExpected => 'المتوقع تاليًا';
 
   @override

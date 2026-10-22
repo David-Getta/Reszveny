@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Wzrost dywidendy (5 lat)",
   "dividendNone": "Brak dywidendy w ostatnich 12 miesiącach.",
   "dividendOnYourShares": "Z twoich akcji, rocznie",
-  "glossDividendGrowth5y": "O ile średnio rocznie rosła dywidenda na akcję w ostatnich pięciu latach. Stały wzrost zwykle oznacza, że spółka ufa swoim przepływom pieniężnym; obniżka często jest sygnałem ostrzegawczym."
+  "glossDividendGrowth5y": "O ile średnio rocznie rosła dywidenda na akcję w ostatnich pięciu latach. Stały wzrost zwykle oznacza, że spółka ufa swoim przepływom pieniężnym; obniżka często jest sygnałem ostrzegawczym.",
+  "portfolioDividendsByMonth": "Miesięcznie",
+  "dividendsLegendReceived": "Otrzymane",
+  "dividendsLegendExpected": "Spodziewane"
 }

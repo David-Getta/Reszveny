@@ -2836,6 +2836,15 @@ class AppLocalizationsPs extends AppLocalizations {
   String get portfolioCashEdit => 'نغدي بیلانس ټاکل';
 
   @override
+  String get portfolioDividendsByMonth => 'د میاشتو له مخې';
+
+  @override
+  String get dividendsLegendReceived => 'ترلاسه شوي';
+
+  @override
+  String get dividendsLegendExpected => 'تمه کېدونکي';
+
+  @override
   String get portfolioDividendsExpected => 'راتلونکی تمه کېدونکی';
 
   @override

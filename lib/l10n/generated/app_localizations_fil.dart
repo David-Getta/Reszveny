@@ -2853,6 +2853,15 @@ class AppLocalizationsFil extends AppLocalizations {
   String get portfolioCashEdit => 'Itakda ang cash balance';
 
   @override
+  String get portfolioDividendsByMonth => 'Kada buwan';
+
+  @override
+  String get dividendsLegendReceived => 'Natanggap';
+
+  @override
+  String get dividendsLegendExpected => 'Inaasahan';
+
+  @override
   String get portfolioDividendsExpected => 'Inaasahang susunod';
 
   @override

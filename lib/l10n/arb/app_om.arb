@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Guddina qooda bu'aa (waggaa 5)",
   "dividendNone": "Ji'oota 12 darban keessatti qoodni bu'aa hin kaffalamne.",
   "dividendOnYourShares": "Aksiyoona kee irratti, waggaatti",
-  "glossDividendGrowth5y": "Qoodni bu'aa aksiyoona tokkoo waggoota shanan darban keessatti giddugaleessaan waggaatti hammam akka guddate. Guddinni itti fufaan yeroo baay'ee dhaabbatichi yaa'insa maallaqa isaa akka amanu agarsiisa; hir'isuun immoo yeroo baay'ee mallattoo akeekkachiisaati."
+  "glossDividendGrowth5y": "Qoodni bu'aa aksiyoona tokkoo waggoota shanan darban keessatti giddugaleessaan waggaatti hammam akka guddate. Guddinni itti fufaan yeroo baay'ee dhaabbatichi yaa'insa maallaqa isaa akka amanu agarsiisa; hir'isuun immoo yeroo baay'ee mallattoo akeekkachiisaati.",
+  "portfolioDividendsByMonth": "Ji'aan",
+  "dividendsLegendReceived": "Kan argame",
+  "dividendsLegendExpected": "Kan eegamu"
 }

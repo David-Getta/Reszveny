@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Ƙaruwar rabon riba (shekara 5)",
   "dividendNone": "Ba a biya rabon riba ba a cikin watanni 12 da suka wuce.",
   "dividendOnYourShares": "Kan hannun jarinka, a shekara",
-  "glossDividendGrowth5y": "Yawan da rabon riba kan kowane hannun jari ya ƙaru a kowace shekara a matsakaici cikin shekaru biyar da suka wuce. Ƙaruwa mai dorewa yawanci tana nufin kamfanin ya amince da kwararar kuɗinsa; ragewa sau da yawa alamar gargaɗi ce."
+  "glossDividendGrowth5y": "Yawan da rabon riba kan kowane hannun jari ya ƙaru a kowace shekara a matsakaici cikin shekaru biyar da suka wuce. Ƙaruwa mai dorewa yawanci tana nufin kamfanin ya amince da kwararar kuɗinsa; ragewa sau da yawa alamar gargaɗi ce.",
+  "portfolioDividendsByMonth": "Ta wata",
+  "dividendsLegendReceived": "An karɓa",
+  "dividendsLegendExpected": "Ana sa ran"
 }

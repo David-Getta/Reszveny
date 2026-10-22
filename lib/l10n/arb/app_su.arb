@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Tumuwuhna dividén (5 taun)",
   "dividendNone": "Teu aya dividén anu dibayarkeun dina 12 bulan ka tukang.",
   "dividendOnYourShares": "Tina saham anjeun, sataun",
-  "glossDividendGrowth5y": "Sabaraha dividén per saham tumuwuh unggal taun sacara rata-rata salila lima taun ka tukang. Tumuwuh anu ajeg biasana hartosna pausahaan yakin kana aliran kasna; pamotongan sering janten tanda bahaya."
+  "glossDividendGrowth5y": "Sabaraha dividén per saham tumuwuh unggal taun sacara rata-rata salila lima taun ka tukang. Tumuwuh anu ajeg biasana hartosna pausahaan yakin kana aliran kasna; pamotongan sering janten tanda bahaya.",
+  "portfolioDividendsByMonth": "Per bulan",
+  "dividendsLegendReceived": "Katampi",
+  "dividendsLegendExpected": "Diperkirakeun"
 }

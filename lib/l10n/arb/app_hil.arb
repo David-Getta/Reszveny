@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Pagtubo sang dibidendo (5 ka tuig)",
   "dividendNone": "Wala sing dibidendo nga ginbayad sa nagligad nga 12 ka bulan.",
   "dividendOnYourShares": "Sa imo mga share, kada tuig",
-  "glossDividendGrowth5y": "Pila ang gintubo sang dibidendo kada share kada tuig sa average sa nagligad nga lima ka tuig. Ang padayon nga pagtubo kasagaran nagakahulugan nga nagasalig ang kompanya sa iya cash flow; ang pagbuhin kasagaran isa ka tanda sang paandam."
+  "glossDividendGrowth5y": "Pila ang gintubo sang dibidendo kada share kada tuig sa average sa nagligad nga lima ka tuig. Ang padayon nga pagtubo kasagaran nagakahulugan nga nagasalig ang kompanya sa iya cash flow; ang pagbuhin kasagaran isa ka tanda sang paandam.",
+  "portfolioDividendsByMonth": "Kada bulan",
+  "dividendsLegendReceived": "Nabaton",
+  "dividendsLegendExpected": "Ginalauman"
 }

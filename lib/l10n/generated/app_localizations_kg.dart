@@ -2856,6 +2856,15 @@ class AppLocalizationsKg extends AppLocalizations {
   String get portfolioCashEdit => 'Tula mbongo ya maboko';
 
   @override
+  String get portfolioDividendsByMonth => 'Konso ngonda';
+
+  @override
+  String get dividendsLegendReceived => 'Bo me baka';
+
+  @override
+  String get dividendsLegendExpected => 'Bo ke vingila';
+
+  @override
   String get portfolioDividendsExpected => 'Yina bo ke vingila na nima';
 
   @override

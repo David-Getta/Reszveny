@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Dikola dia dividende (bidimu 5)",
   "dividendNone": "Kabavua bafute dividende mu ngondo 12 mishale to.",
   "dividendOnYourShares": "Pa ba-action bebe, ku tshidimu",
-  "glossDividendGrowth5y": "Mushindu udi dividende wa action umue mukole tshidimu tshionso, mu bungi bua pankatshi, mu bidimu bitanu bishale. Dikola dia pa tshibidilu didi dileja bikole ne: kompanyi udi weyemena mfranga yende idi ibuela ne ipatuka; dipuekesha didi misangu mivule tshimanyinu tshia kudimuija."
+  "glossDividendGrowth5y": "Mushindu udi dividende wa action umue mukole tshidimu tshionso, mu bungi bua pankatshi, mu bidimu bitanu bishale. Dikola dia pa tshibidilu didi dileja bikole ne: kompanyi udi weyemena mfranga yende idi ibuela ne ipatuka; dipuekesha didi misangu mivule tshimanyinu tshia kudimuija.",
+  "portfolioDividendsByMonth": "Ku ngondo",
+  "dividendsLegendReceived": "Bipeta",
+  "dividendsLegendExpected": "Bitekemena"
 }

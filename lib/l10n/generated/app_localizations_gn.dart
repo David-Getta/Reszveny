@@ -2849,6 +2849,15 @@ class AppLocalizationsGn extends AppLocalizations {
   String get portfolioCashEdit => 'Emoĩ pirapire oĩva';
 
   @override
+  String get portfolioDividendsByMonth => 'Jasy rupi';
+
+  @override
+  String get dividendsLegendReceived => 'Ojehupytýva';
+
+  @override
+  String get dividendsLegendExpected => 'Oñehaʼarõva';
+
+  @override
   String get portfolioDividendsExpected => 'Oñeha\'arõva upéi';
 
   @override

@@ -2857,6 +2857,15 @@ class AppLocalizationsMl extends AppLocalizations {
   String get portfolioCashEdit => 'പണ ബാലൻസ് സജ്ജമാക്കുക';
 
   @override
+  String get portfolioDividendsByMonth => 'മാസം തിരിച്ച്';
+
+  @override
+  String get dividendsLegendReceived => 'ലഭിച്ചത്';
+
+  @override
+  String get dividendsLegendExpected => 'പ്രതീക്ഷിക്കുന്നത്';
+
+  @override
   String get portfolioDividendsExpected => 'അടുത്തത് പ്രതീക്ഷിക്കുന്നത്';
 
   @override

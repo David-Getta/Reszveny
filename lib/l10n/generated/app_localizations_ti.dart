@@ -2806,6 +2806,15 @@ class AppLocalizationsTi extends AppLocalizations {
   String get portfolioCashEdit => 'ተረፍ ጥረ ገንዘብ ኣቐምጥ';
 
   @override
+  String get portfolioDividendsByMonth => 'ብወርሒ';
+
+  @override
+  String get dividendsLegendReceived => 'ዝተረኽበ';
+
+  @override
+  String get dividendsLegendExpected => 'ዝጽበ';
+
+  @override
   String get portfolioDividendsExpected => 'ቀጺሉ ዝተጸበ';
 
   @override

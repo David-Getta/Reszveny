@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Dividend artımı (5 il)",
   "dividendNone": "Son 12 ayda dividend ödənilməyib.",
   "dividendOnYourShares": "Səhmlərinizə görə, illik",
-  "glossDividendGrowth5y": "Səhm başına dividendin son beş ildə orta hesabla ildə nə qədər artdığı. Sabit artım adətən şirkətin pul axınına güvəndiyini göstərir; dividendin azaldılması isə çox vaxt xəbərdarlıq əlamətidir."
+  "glossDividendGrowth5y": "Səhm başına dividendin son beş ildə orta hesabla ildə nə qədər artdığı. Sabit artım adətən şirkətin pul axınına güvəndiyini göstərir; dividendin azaldılması isə çox vaxt xəbərdarlıq əlamətidir.",
+  "portfolioDividendsByMonth": "Aylar üzrə",
+  "dividendsLegendReceived": "Alınmış",
+  "dividendsLegendExpected": "Gözlənilən"
 }

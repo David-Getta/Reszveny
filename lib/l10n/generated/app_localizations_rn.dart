@@ -2855,6 +2855,15 @@ class AppLocalizationsRn extends AppLocalizations {
   String get portfolioCashEdit => 'Shiraho amafaranga asigaye';
 
   @override
+  String get portfolioDividendsByMonth => 'Ku kwezi';
+
+  @override
+  String get dividendsLegendReceived => 'Yakiriwe';
+
+  @override
+  String get dividendsLegendExpected => 'Yitezwe';
+
+  @override
   String get portfolioDividendsExpected => 'Ikurikira yitezwe';
 
   @override

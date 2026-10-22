@@ -2851,6 +2851,15 @@ class AppLocalizationsSq extends AppLocalizations {
   String get portfolioCashEdit => 'Cakto gjendjen e parave të gatshme';
 
   @override
+  String get portfolioDividendsByMonth => 'Sipas muajve';
+
+  @override
+  String get dividendsLegendReceived => 'Të marrë';
+
+  @override
+  String get dividendsLegendExpected => 'Të pritur';
+
+  @override
   String get portfolioDividendsExpected => 'Pritet më pas';
 
   @override

@@ -2842,6 +2842,15 @@ class AppLocalizationsId extends AppLocalizations {
   String get portfolioCashEdit => 'Atur saldo kas';
 
   @override
+  String get portfolioDividendsByMonth => 'Per bulan';
+
+  @override
+  String get dividendsLegendReceived => 'Diterima';
+
+  @override
+  String get dividendsLegendExpected => 'Diperkirakan';
+
+  @override
   String get portfolioDividendsExpected => 'Diperkirakan berikutnya';
 
   @override

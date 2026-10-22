@@ -2846,6 +2846,15 @@ class AppLocalizationsSw extends AppLocalizations {
   String get portfolioCashEdit => 'Weka salio la pesa taslimu';
 
   @override
+  String get portfolioDividendsByMonth => 'Kwa mwezi';
+
+  @override
+  String get dividendsLegendReceived => 'Yaliyopokelewa';
+
+  @override
+  String get dividendsLegendExpected => 'Yanayotarajiwa';
+
+  @override
   String get portfolioDividendsExpected => 'Yanayotarajiwa yajayo';
 
   @override

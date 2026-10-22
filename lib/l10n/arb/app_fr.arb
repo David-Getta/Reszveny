@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Croissance du dividende (5 ans)",
   "dividendNone": "Aucun dividende versé au cours des 12 derniers mois.",
   "dividendOnYourShares": "Sur vos actions, par an",
-  "glossDividendGrowth5y": "De combien le dividende par action a augmenté en moyenne chaque année au cours des cinq dernières années. Une croissance régulière signifie généralement que l’entreprise a confiance en ses flux de trésorerie ; une baisse est souvent un signal d’alerte."
+  "glossDividendGrowth5y": "De combien le dividende par action a augmenté en moyenne chaque année au cours des cinq dernières années. Une croissance régulière signifie généralement que l’entreprise a confiance en ses flux de trésorerie ; une baisse est souvent un signal d’alerte.",
+  "portfolioDividendsByMonth": "Par mois",
+  "dividendsLegendReceived": "Reçus",
+  "dividendsLegendExpected": "Prévus"
 }

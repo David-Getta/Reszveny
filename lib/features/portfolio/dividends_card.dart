@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 
 import '../../app_services.dart';
@@ -130,6 +132,12 @@ class DividendsCard extends StatelessWidget {
                                   hint: l10n.glossYieldOnCost,
                                 ),
                             ],
+                          ),
+                          // Havonta: az elmúlt 12 hónap kapott és a következő 3 hónap várható osztaléka.
+                          _MonthsChart(
+                            months: dividendMonths(all, expected, now: now, rate: rate),
+                            currency: currency,
+                            fmt: fmt,
                           ),
                           if (years.length > 1) ...[
                             const SizedBox(height: 10),
@@ -411,6 +419,127 @@ class _AddDividendDialogState extends State<_AddDividendDialog> {
         TextButton(onPressed: () => Navigator.of(context).pop(false), child: Text(l10n.cancel)),
         FilledButton(key: const ValueKey('dividend-submit'), onPressed: _submit, child: Text(l10n.portfolioAdd)),
       ],
+    );
+  }
+}
+
+/// Havi oszlopdiagram: a kapott osztalék teli, a várható halvány oszlop (a folyó
+/// hónapban egymásra rakva); koppintva vagy fölé állva a hónap összegei. Ha az
+/// ablakban nincs tétel, nem látszik.
+class _MonthsChart extends StatelessWidget {
+  const _MonthsChart({required this.months, required this.currency, required this.fmt});
+
+  final List<DividendMonth> months;
+  final String currency;
+  final Fmt fmt;
+
+  static const _height = 64.0;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final p = AppPalette.of(context);
+    final theme = Theme.of(context);
+    final max = months.fold(0.0, (m, x) => math.max(m, x.received + x.expected));
+    if (max <= 0) return const SizedBox.shrink();
+    final now = DateTime.now();
+    // Legalább 2 képpont, hogy a kis összeg is látsszon.
+    double h(double v) => v <= 0 ? 0 : math.max(2, _height * v / max);
+    Widget swatch(Color c) => Container(
+      width: 10,
+      height: 10,
+      margin: const EdgeInsetsDirectional.only(end: 4),
+      decoration: BoxDecoration(color: c, borderRadius: BorderRadius.circular(2)),
+    );
+    final light = p.accent.withValues(alpha: 0.3);
+    return Padding(
+      key: const ValueKey('dividends-months'),
+      padding: const EdgeInsets.only(top: 12, right: 8),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(l10n.portfolioDividendsByMonth, style: theme.textTheme.labelMedium?.copyWith(color: p.muted)),
+          const SizedBox(height: 6),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: [
+              for (final m in months)
+                Expanded(
+                  child: Tooltip(
+                    key: ValueKey('dividend-month-${m.month.year}-${m.month.month.toString().padLeft(2, '0')}'),
+                    message: [
+                      '${fmt.monthYear(m.month)}: ${fmt.money(m.received, currency)}',
+                      if (m.expected > 0) '${l10n.dividendsLegendExpected}: ${approxMoney(fmt, m.expected, currency)}',
+                    ].join('\n'),
+                    triggerMode: TooltipTriggerMode.tap,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 2),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          SizedBox(height: _height - h(m.received + m.expected)),
+                          if (m.expected > 0)
+                            Container(
+                              height: h(m.expected),
+                              decoration: BoxDecoration(
+                                color: light,
+                                borderRadius: const BorderRadius.vertical(top: Radius.circular(3)),
+                              ),
+                            ),
+                          if (m.received > 0)
+                            Container(
+                              height: h(m.received),
+                              decoration: BoxDecoration(
+                                color: p.accent,
+                                borderRadius: m.expected > 0
+                                    ? null
+                                    : const BorderRadius.vertical(top: Radius.circular(3)),
+                              ),
+                            ),
+                          const SizedBox(height: 4),
+                          Text(
+                            fmt.monthNarrow(m.month),
+                            maxLines: 1,
+                            overflow: TextOverflow.clip,
+                            style: theme.textTheme.labelSmall?.copyWith(
+                              color: p.muted,
+                              fontSize: 10,
+                              fontWeight: m.month.year == now.year && m.month.month == now.month
+                                  ? FontWeight.w700
+                                  : null,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+            ],
+          ),
+          const SizedBox(height: 6),
+          Wrap(
+            spacing: 14,
+            runSpacing: 4,
+            children: [
+              Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  swatch(p.accent),
+                  Text(l10n.dividendsLegendReceived, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+                ],
+              ),
+              if (months.any((m) => m.expected > 0))
+                Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    swatch(light),
+                    Text(l10n.dividendsLegendExpected, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+                  ],
+                ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }

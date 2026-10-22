@@ -2845,6 +2845,15 @@ class AppLocalizationsNb extends AppLocalizations {
   String get portfolioCashEdit => 'Angi kontantbeholdning';
 
   @override
+  String get portfolioDividendsByMonth => 'Per måned';
+
+  @override
+  String get dividendsLegendReceived => 'Mottatt';
+
+  @override
+  String get dividendsLegendExpected => 'Forventet';
+
+  @override
   String get portfolioDividendsExpected => 'Forventet neste';
 
   @override

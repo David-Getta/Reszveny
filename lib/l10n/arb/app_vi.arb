@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Tăng trưởng cổ tức (5 năm)",
   "dividendNone": "Không trả cổ tức trong 12 tháng qua.",
   "dividendOnYourShares": "Trên số cổ phiếu của bạn, mỗi năm",
-  "glossDividendGrowth5y": "Cổ tức trên mỗi cổ phiếu đã tăng trung bình bao nhiêu mỗi năm trong 5 năm qua. Tăng trưởng đều đặn thường cho thấy công ty tin tưởng vào dòng tiền của mình; việc cắt giảm thường là dấu hiệu cảnh báo."
+  "glossDividendGrowth5y": "Cổ tức trên mỗi cổ phiếu đã tăng trung bình bao nhiêu mỗi năm trong 5 năm qua. Tăng trưởng đều đặn thường cho thấy công ty tin tưởng vào dòng tiền của mình; việc cắt giảm thường là dấu hiệu cảnh báo.",
+  "portfolioDividendsByMonth": "Theo tháng",
+  "dividendsLegendReceived": "Đã nhận",
+  "dividendsLegendExpected": "Dự kiến"
 }

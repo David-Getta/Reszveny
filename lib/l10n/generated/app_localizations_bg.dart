@@ -2846,6 +2846,15 @@ class AppLocalizationsBg extends AppLocalizations {
   String get portfolioCashEdit => 'Задаване на паричен баланс';
 
   @override
+  String get portfolioDividendsByMonth => 'По месеци';
+
+  @override
+  String get dividendsLegendReceived => 'Получени';
+
+  @override
+  String get dividendsLegendExpected => 'Очаквани';
+
+  @override
   String get portfolioDividendsExpected => 'Очаквани следващи';
 
   @override

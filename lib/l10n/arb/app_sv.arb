@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Utdelningstillväxt (5 år)",
   "dividendNone": "Ingen utdelning de senaste 12 månaderna.",
   "dividendOnYourShares": "På dina aktier, per år",
-  "glossDividendGrowth5y": "Hur mycket utdelningen per aktie i genomsnitt har ökat per år de senaste fem åren. Jämn tillväxt betyder oftast att bolaget litar på sitt kassaflöde; en sänkning är ofta en varningssignal."
+  "glossDividendGrowth5y": "Hur mycket utdelningen per aktie i genomsnitt har ökat per år de senaste fem åren. Jämn tillväxt betyder oftast att bolaget litar på sitt kassaflöde; en sänkning är ofta en varningssignal.",
+  "portfolioDividendsByMonth": "Per månad",
+  "dividendsLegendReceived": "Mottagna",
+  "dividendsLegendExpected": "Förväntade"
 }

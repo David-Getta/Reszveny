@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Dividenžu pieaugums (5 g.)",
   "dividendNone": "Pēdējos 12 mēnešos dividendes nav izmaksātas.",
   "dividendOnYourShares": "Par jūsu akcijām, gadā",
-  "glossDividendGrowth5y": "Cik vidēji gadā pēdējo piecu gadu laikā pieaugusi dividende uz akciju. Stabils pieaugums parasti nozīmē, ka uzņēmums uzticas savai naudas plūsmai; samazinājums bieži ir brīdinājuma zīme."
+  "glossDividendGrowth5y": "Cik vidēji gadā pēdējo piecu gadu laikā pieaugusi dividende uz akciju. Stabils pieaugums parasti nozīmē, ka uzņēmums uzticas savai naudas plūsmai; samazinājums bieži ir brīdinājuma zīme.",
+  "portfolioDividendsByMonth": "Pa mēnešiem",
+  "dividendsLegendReceived": "Saņemtās",
+  "dividendsLegendExpected": "Gaidāmās"
 }

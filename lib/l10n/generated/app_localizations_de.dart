@@ -2859,6 +2859,15 @@ class AppLocalizationsDe extends AppLocalizations {
   String get portfolioCashEdit => 'Cash-Bestand festlegen';
 
   @override
+  String get portfolioDividendsByMonth => 'Nach Monat';
+
+  @override
+  String get dividendsLegendReceived => 'Erhalten';
+
+  @override
+  String get dividendsLegendExpected => 'Erwartet';
+
+  @override
   String get portfolioDividendsExpected => 'Als Nächstes erwartet';
 
   @override

@@ -2855,6 +2855,15 @@ class AppLocalizationsOm extends AppLocalizations {
   String get portfolioCashEdit => 'Hafaa maallaqaa qindeessi';
 
   @override
+  String get portfolioDividendsByMonth => 'Ji\'aan';
+
+  @override
+  String get dividendsLegendReceived => 'Kan argame';
+
+  @override
+  String get dividendsLegendExpected => 'Kan eegamu';
+
+  @override
   String get portfolioDividendsExpected => 'Itti aanee eegamu';
 
   @override

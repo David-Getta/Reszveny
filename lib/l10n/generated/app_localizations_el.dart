@@ -2855,6 +2855,15 @@ class AppLocalizationsEl extends AppLocalizations {
   String get portfolioCashEdit => 'Ορισμός υπολοίπου μετρητών';
 
   @override
+  String get portfolioDividendsByMonth => 'Ανά μήνα';
+
+  @override
+  String get dividendsLegendReceived => 'Εισπραγμένα';
+
+  @override
+  String get dividendsLegendExpected => 'Αναμενόμενα';
+
+  @override
   String get portfolioDividendsExpected => 'Επόμενα αναμενόμενα';
 
   @override

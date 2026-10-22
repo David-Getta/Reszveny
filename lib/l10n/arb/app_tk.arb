@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Diwidendiň ösüşi (5 ýyl)",
   "dividendNone": "Soňky 12 aýda diwidend tölenmedi.",
   "dividendOnYourShares": "Siziň paýnamalaryňyza, ýylda",
-  "glossDividendGrowth5y": "Soňky bäş ýylda bir paýnama düşýän diwidendiň ýylda ortaça näçe artandygy. Durnukly ösüş adatça kompaniýanyň öz pul akymyna ynanýandygyny aňladýar; azaldylmagy köplenç duýduryş alamatydyr."
+  "glossDividendGrowth5y": "Soňky bäş ýylda bir paýnama düşýän diwidendiň ýylda ortaça näçe artandygy. Durnukly ösüş adatça kompaniýanyň öz pul akymyna ynanýandygyny aňladýar; azaldylmagy köplenç duýduryş alamatydyr.",
+  "portfolioDividendsByMonth": "Aýlar boýunça",
+  "dividendsLegendReceived": "Alnan",
+  "dividendsLegendExpected": "Garaşylýan"
 }

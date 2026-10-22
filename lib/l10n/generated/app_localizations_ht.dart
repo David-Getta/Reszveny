@@ -2842,6 +2842,15 @@ class AppLocalizationsHt extends AppLocalizations {
   String get portfolioCashEdit => 'Fikse balans lajan kach';
 
   @override
+  String get portfolioDividendsByMonth => 'Pa mwa';
+
+  @override
+  String get dividendsLegendReceived => 'Resevwa';
+
+  @override
+  String get dividendsLegendExpected => 'Prevwa';
+
+  @override
   String get portfolioDividendsExpected => 'Pwochen yo atann';
 
   @override

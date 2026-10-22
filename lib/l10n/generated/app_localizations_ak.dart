@@ -2845,6 +2845,15 @@ class AppLocalizationsAk extends AppLocalizations {
   String get portfolioCashEdit => 'Hyehyɛ sika a ɛda hɔ';
 
   @override
+  String get portfolioDividendsByMonth => 'Ɔsram biara';
+
+  @override
+  String get dividendsLegendReceived => 'Nea wɔanya';
+
+  @override
+  String get dividendsLegendExpected => 'Nea wɔhwɛ kwan';
+
+  @override
   String get portfolioDividendsExpected => 'Nea ɛdi hɔ a wɔhwɛ kwan';
 
   @override

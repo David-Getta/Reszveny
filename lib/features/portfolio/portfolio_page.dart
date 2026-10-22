@@ -814,14 +814,20 @@ class AllocationBar extends StatelessWidget {
 }
 
 /// Mi szerint rendezzük a pozíciókat.
-enum PositionSort { weight, gain, today, name }
+enum PositionSort { weight, gain, today, dividend, name }
 
-/// A pozíciók rendezése: súly (alapból), összes hozam %, mai mozgás %, ticker.
-/// Az ár nélküli pozíciók a végére kerülnek.
+/// A pozíciók rendezése: súly (alapból), összes hozam %, mai mozgás %,
+/// osztalékhozam (a mai árhoz), ticker. Az ár (illetve osztalék) nélküli
+/// pozíciók a végére kerülnek.
 List<PositionValue> sortPositions(List<PositionValue> rows, PositionSort sort) {
   double? today(PositionValue r) {
     final price = r.price, change = r.dayChange;
     return price == null || change == null || price - change == 0 ? null : change / (price - change) * 100;
+  }
+
+  double? dividendYield(PositionValue r) {
+    final d = r.annualDividend, v = r.value;
+    return d == null || v == null || v <= 0 ? null : d / v * 100;
   }
 
   int byValue(double? a, double? b) => a == null ? (b == null ? 0 : 1) : (b == null ? -1 : b.compareTo(a));
@@ -829,6 +835,7 @@ List<PositionValue> sortPositions(List<PositionValue> rows, PositionSort sort) {
     PositionSort.weight => rows,
     PositionSort.gain => [...rows]..sort((a, b) => byValue(a.gainPercent, b.gainPercent)),
     PositionSort.today => [...rows]..sort((a, b) => byValue(today(a), today(b))),
+    PositionSort.dividend => [...rows]..sort((a, b) => byValue(dividendYield(a), dividendYield(b))),
     PositionSort.name => [...rows]..sort((a, b) => a.position.symbol.compareTo(b.position.symbol)),
   };
 }
@@ -846,7 +853,10 @@ class _PositionsSection extends StatefulWidget {
 }
 
 class _PositionsSectionState extends State<_PositionsSection> {
-  PositionSort _sort = PositionSort.weight;
+  /// A legutóbb választott rendezés (a beállításokban megjegyezve).
+  late PositionSort _sort =
+      PositionSort.values.asNameMap()[AppServices.of(context).preferences.sortOf('positions') ?? ''] ??
+      PositionSort.weight;
 
   @override
   Widget build(BuildContext context) {
@@ -869,12 +879,16 @@ class _PositionsSectionState extends State<_PositionsSection> {
                 icon: Icon(Icons.sort_rounded, color: p.muted, size: 20),
                 tooltip: l10n.watchSort,
                 initialValue: _sort,
-                onSelected: (v) => setState(() => _sort = v),
+                onSelected: (v) {
+                  setState(() => _sort = v);
+                  AppServices.of(context).preferences.setSort('positions', v.name);
+                },
                 itemBuilder: (_) => [
                   for (final (v, label) in [
                     (PositionSort.weight, l10n.positionsSortWeight),
                     (PositionSort.gain, l10n.positionsSortGain),
                     (PositionSort.today, l10n.positionsSortToday),
+                    (PositionSort.dividend, l10n.labelDividendYield),
                     (PositionSort.name, l10n.watchSortName),
                   ])
                     PopupMenuItem(key: ValueKey('positions-sort-${v.name}'), value: v, child: Text(label)),

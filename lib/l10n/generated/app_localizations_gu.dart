@@ -2839,6 +2839,15 @@ class AppLocalizationsGu extends AppLocalizations {
   String get portfolioCashEdit => 'રોકડ બેલેન્સ સેટ કરો';
 
   @override
+  String get portfolioDividendsByMonth => 'મહિના મુજબ';
+
+  @override
+  String get dividendsLegendReceived => 'પ્રાપ્ત';
+
+  @override
+  String get dividendsLegendExpected => 'અપેક્ષિત';
+
+  @override
   String get portfolioDividendsExpected => 'આગામી અપેક્ષિત';
 
   @override

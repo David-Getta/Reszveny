@@ -2888,6 +2888,15 @@ class AppLocalizationsLv extends AppLocalizations {
   String get portfolioCashEdit => 'Iestatīt naudas atlikumu';
 
   @override
+  String get portfolioDividendsByMonth => 'Pa mēnešiem';
+
+  @override
+  String get dividendsLegendReceived => 'Saņemtās';
+
+  @override
+  String get dividendsLegendExpected => 'Gaidāmās';
+
+  @override
   String get portfolioDividendsExpected => 'Nākamās gaidāmās';
 
   @override

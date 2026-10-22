@@ -4861,6 +4861,24 @@ abstract class AppLocalizations {
   /// **'Set cash balance'**
   String get portfolioCashEdit;
 
+  /// Title of the small monthly bar chart in the Dividends received card: received dividends of the last 12 months and expected ones of the next 3.
+  ///
+  /// In en, this message translates to:
+  /// **'By month'**
+  String get portfolioDividendsByMonth;
+
+  /// Legend of the monthly dividend chart: solid bars are dividends already received.
+  ///
+  /// In en, this message translates to:
+  /// **'Received'**
+  String get dividendsLegendReceived;
+
+  /// Legend of the monthly dividend chart (and its tooltip): light bars are dividends expected from the rhythm of the recorded payments, an estimate.
+  ///
+  /// In en, this message translates to:
+  /// **'Expected'**
+  String get dividendsLegendExpected;
+
   /// Heading in the dividends card: the next dividend payment expected per stock, estimated from the recorded payments.
   ///
   /// In en, this message translates to:

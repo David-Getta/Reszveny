@@ -2846,6 +2846,15 @@ class AppLocalizationsKa extends AppLocalizations {
   String get portfolioCashEdit => 'ნაღდი ფულის ნაშთის მითითება';
 
   @override
+  String get portfolioDividendsByMonth => 'თვეების მიხედვით';
+
+  @override
+  String get dividendsLegendReceived => 'მიღებული';
+
+  @override
+  String get dividendsLegendExpected => 'მოსალოდნელი';
+
+  @override
   String get portfolioDividendsExpected => 'მოსალოდნელი შემდეგი';
 
   @override

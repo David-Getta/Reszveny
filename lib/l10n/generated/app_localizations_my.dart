@@ -2836,6 +2836,15 @@ class AppLocalizationsMy extends AppLocalizations {
   String get portfolioCashEdit => 'ငွေသား လက်ကျန် သတ်မှတ်ရန်';
 
   @override
+  String get portfolioDividendsByMonth => 'လအလိုက်';
+
+  @override
+  String get dividendsLegendReceived => 'ရရှိပြီး';
+
+  @override
+  String get dividendsLegendExpected => 'မျှော်မှန်း';
+
+  @override
   String get portfolioDividendsExpected => 'နောက်ထပ် မျှော်မှန်း';
 
   @override

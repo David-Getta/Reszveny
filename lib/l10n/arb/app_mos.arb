@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Dividãnd paasgo (yʋʋm 5)",
   "dividendNone": "B pa yao dividãnd kiis 12 sẽn loogã pʋgẽ ye.",
   "dividendOnYourShares": "F aksiõ-rãmba zugu, yʋʋmd fãa",
-  "glossDividendGrowth5y": "Dividãnd aksiõ fãa sẽn paas to-to yʋʋmd fãa, b sã n mak a sʋka, yʋʋm a nu sẽn loogã pʋgẽ. Paasg sẽn pa sãamde wilgdame tɩ kʋmpaanã tẽeda a ligd sẽn kẽedã; a sã n booge, yaa makr sẽn wilgd tɩ f gũus f meng."
+  "glossDividendGrowth5y": "Dividãnd aksiõ fãa sẽn paas to-to yʋʋmd fãa, b sã n mak a sʋka, yʋʋm a nu sẽn loogã pʋgẽ. Paasg sẽn pa sãamde wilgdame tɩ kʋmpaanã tẽeda a ligd sẽn kẽedã; a sã n booge, yaa makr sẽn wilgd tɩ f gũus f meng.",
+  "portfolioDividendsByMonth": "Kiuug fãa",
+  "dividendsLegendReceived": "Sẽn paam",
+  "dividendsLegendExpected": "Sẽn gũud"
 }

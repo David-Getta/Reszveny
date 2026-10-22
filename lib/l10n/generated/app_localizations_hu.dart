@@ -2849,6 +2849,15 @@ class AppLocalizationsHu extends AppLocalizations {
   String get portfolioCashEdit => 'Készpénz-egyenleg megadása';
 
   @override
+  String get portfolioDividendsByMonth => 'Havonta';
+
+  @override
+  String get dividendsLegendReceived => 'Kapott';
+
+  @override
+  String get dividendsLegendExpected => 'Várható';
+
+  @override
   String get portfolioDividendsExpected => 'Várható következő';
 
   @override

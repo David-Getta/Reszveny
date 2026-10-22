@@ -2843,6 +2843,15 @@ class AppLocalizationsAs extends AppLocalizations {
   String get portfolioCashEdit => 'নগদ বেলেঞ্চ ছেট কৰক';
 
   @override
+  String get portfolioDividendsByMonth => 'মাহ অনুসৰি';
+
+  @override
+  String get dividendsLegendReceived => 'প্ৰাপ্ত';
+
+  @override
+  String get dividendsLegendExpected => 'প্ৰত্যাশিত';
+
+  @override
   String get portfolioDividendsExpected => 'পৰবৰ্তী প্ৰত্যাশিত';
 
   @override

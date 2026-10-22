@@ -2864,6 +2864,15 @@ class AppLocalizationsHil extends AppLocalizations {
   String get portfolioCashEdit => 'I-set ang balanse sang cash';
 
   @override
+  String get portfolioDividendsByMonth => 'Kada bulan';
+
+  @override
+  String get dividendsLegendReceived => 'Nabaton';
+
+  @override
+  String get dividendsLegendExpected => 'Ginalauman';
+
+  @override
   String get portfolioDividendsExpected => 'Ginapaabot nga masunod';
 
   @override

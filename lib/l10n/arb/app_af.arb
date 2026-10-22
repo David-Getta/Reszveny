@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Dividendgroei (5 j.)",
   "dividendNone": "Geen dividend in die afgelope 12 maande betaal nie.",
   "dividendOnYourShares": "Op jou aandele, per jaar",
-  "glossDividendGrowth5y": "Hoeveel die dividend per aandeel oor die afgelope vyf jaar gemiddeld per jaar gegroei het. Bestendige groei beteken gewoonlik dat die maatskappy sy kontantvloei vertrou; 'n verlaging is dikwels 'n waarskuwingsteken."
+  "glossDividendGrowth5y": "Hoeveel die dividend per aandeel oor die afgelope vyf jaar gemiddeld per jaar gegroei het. Bestendige groei beteken gewoonlik dat die maatskappy sy kontantvloei vertrou; 'n verlaging is dikwels 'n waarskuwingsteken.",
+  "portfolioDividendsByMonth": "Per maand",
+  "dividendsLegendReceived": "Ontvang",
+  "dividendsLegendExpected": "Verwag"
 }

@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Okukula kw'amagoba ku migabo (emyaka 5)",
   "dividendNone": "Tewali magoba ku migabo agasasuddwa mu myezi 12 egiyise.",
   "dividendOnYourShares": "Ku migabo gyo, buli mwaka",
-  "glossDividendGrowth5y": "Obungi amagoba ku buli mugabo bwe gaayongerwako buli mwaka ku kigero mu myaka etaano egiyise. Okukula okutakyukakyuka kutera okulaga nti kkampuni yeesiga ensimbi zaayo eziyingira n'ezifuluma; okukendeeza amagoba kutera okuba akabonero ak'okulabula."
+  "glossDividendGrowth5y": "Obungi amagoba ku buli mugabo bwe gaayongerwako buli mwaka ku kigero mu myaka etaano egiyise. Okukula okutakyukakyuka kutera okulaga nti kkampuni yeesiga ensimbi zaayo eziyingira n'ezifuluma; okukendeeza amagoba kutera okuba akabonero ak'okulabula.",
+  "portfolioDividendsByMonth": "Buli mwezi",
+  "dividendsLegendReceived": "Ebyafunibwa",
+  "dividendsLegendExpected": "Ebisuubirwa"
 }

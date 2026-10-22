@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Tuwuhing dividen (5 taun)",
   "dividendNone": "Ora ana dividen sing dibayar sajrone 12 sasi pungkasan.",
   "dividendOnYourShares": "Saka saham sampeyan, saben taun",
-  "glossDividendGrowth5y": "Sepira dividen saben saham tuwuh rata-rata saben taun sajrone limang taun pungkasan. Tuwuh sing stabil biasane ateges perusahaan percaya marang arus kase; pemotongan asring dadi tandha bebaya."
+  "glossDividendGrowth5y": "Sepira dividen saben saham tuwuh rata-rata saben taun sajrone limang taun pungkasan. Tuwuh sing stabil biasane ateges perusahaan percaya marang arus kase; pemotongan asring dadi tandha bebaya.",
+  "portfolioDividendsByMonth": "Saben sasi",
+  "dividendsLegendReceived": "Ditampa",
+  "dividendsLegendExpected": "Dikira-kira"
 }

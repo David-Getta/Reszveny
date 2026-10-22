@@ -2844,6 +2844,15 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get portfolioCashEdit => 'Set cash balance';
 
   @override
+  String get portfolioDividendsByMonth => 'By month';
+
+  @override
+  String get dividendsLegendReceived => 'Wey you collect';
+
+  @override
+  String get dividendsLegendExpected => 'Wey we expect';
+
+  @override
   String get portfolioDividendsExpected => 'Wetin we expect next';
 
   @override

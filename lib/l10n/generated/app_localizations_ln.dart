@@ -2855,6 +2855,15 @@ class AppLocalizationsLn extends AppLocalizations {
   String get portfolioCashEdit => 'Tiá mbɔngɔ ya mabɔkɔ';
 
   @override
+  String get portfolioDividendsByMonth => 'Na sanza';
+
+  @override
+  String get dividendsLegendReceived => 'Oyo ezwami';
+
+  @override
+  String get dividendsLegendExpected => 'Oyo ezelami';
+
+  @override
   String get portfolioDividendsExpected => 'Ezelami na nsima';
 
   @override

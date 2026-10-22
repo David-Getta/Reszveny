@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Utbyttevekst (5 år)",
   "dividendNone": "Ingen utbytte utbetalt de siste 12 månedene.",
   "dividendOnYourShares": "På dine aksjer, per år",
-  "glossDividendGrowth5y": "Hvor mye utbyttet per aksje har økt i gjennomsnitt per år de siste fem årene. Jevn vekst betyr som regel at selskapet har tillit til kontantstrømmen sin; et kutt er ofte et faresignal."
+  "glossDividendGrowth5y": "Hvor mye utbyttet per aksje har økt i gjennomsnitt per år de siste fem årene. Jevn vekst betyr som regel at selskapet har tillit til kontantstrømmen sin; et kutt er ofte et faresignal.",
+  "portfolioDividendsByMonth": "Per måned",
+  "dividendsLegendReceived": "Mottatt",
+  "dividendsLegendExpected": "Forventet"
 }

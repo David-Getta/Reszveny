@@ -2838,6 +2838,15 @@ class AppLocalizationsMai extends AppLocalizations {
   String get portfolioCashEdit => 'नकद बैलेंस सेट करू';
 
   @override
+  String get portfolioDividendsByMonth => 'मासक अनुसार';
+
+  @override
+  String get dividendsLegendReceived => 'प्राप्त';
+
+  @override
+  String get dividendsLegendExpected => 'अपेक्षित';
+
+  @override
   String get portfolioDividendsExpected => 'अगिला अपेक्षित';
 
   @override

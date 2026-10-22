@@ -2858,6 +2858,15 @@ class AppLocalizationsXh extends AppLocalizations {
   String get portfolioCashEdit => 'Misela ibhalansi yemali';
 
   @override
+  String get portfolioDividendsByMonth => 'Ngenyanga';
+
+  @override
+  String get dividendsLegendReceived => 'Ezifunyenweyo';
+
+  @override
+  String get dividendsLegendExpected => 'Ezilindelekileyo';
+
+  @override
   String get portfolioDividendsExpected => 'Ezilindelekileyo ngokulandelayo';
 
   @override

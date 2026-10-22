@@ -48,7 +48,9 @@ class WatchlistPage extends StatefulWidget {
 }
 
 class _WatchlistPageState extends State<WatchlistPage> {
-  WatchSort _sort = WatchSort.own;
+  /// A legutóbb választott rendezés (a beállításokban megjegyezve).
+  late WatchSort _sort =
+      WatchSort.values.asNameMap()[AppServices.of(context).preferences.sortOf('watch') ?? ''] ?? WatchSort.own;
 
   /// A kiválasztott saját lista neve, vagy `null`: az összes kedvenc.
   String? _list;
@@ -273,7 +275,10 @@ class _WatchlistPageState extends State<WatchlistPage> {
             icon: const Icon(Icons.sort_rounded),
             tooltip: l10n.watchSort,
             initialValue: _sort,
-            onSelected: (v) => setState(() => _sort = v),
+            onSelected: (v) {
+              setState(() => _sort = v);
+              AppServices.of(context).preferences.setSort('watch', v.name);
+            },
             itemBuilder: (_) => [
               for (final (v, label) in [
                 (WatchSort.own, l10n.watchSortOwn),

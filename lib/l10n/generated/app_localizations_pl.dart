@@ -2918,6 +2918,15 @@ class AppLocalizationsPl extends AppLocalizations {
   String get portfolioCashEdit => 'Ustaw saldo gotówkowe';
 
   @override
+  String get portfolioDividendsByMonth => 'Miesięcznie';
+
+  @override
+  String get dividendsLegendReceived => 'Otrzymane';
+
+  @override
+  String get dividendsLegendExpected => 'Spodziewane';
+
+  @override
   String get portfolioDividendsExpected => 'Następna spodziewana';
 
   @override

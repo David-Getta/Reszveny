@@ -2848,6 +2848,15 @@ class AppLocalizationsAz extends AppLocalizations {
   String get portfolioCashEdit => 'Nağd qalığı təyin et';
 
   @override
+  String get portfolioDividendsByMonth => 'Aylar üzrə';
+
+  @override
+  String get dividendsLegendReceived => 'Alınmış';
+
+  @override
+  String get dividendsLegendExpected => 'Gözlənilən';
+
+  @override
   String get portfolioDividendsExpected => 'Növbəti gözlənilən';
 
   @override

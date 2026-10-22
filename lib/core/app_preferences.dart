@@ -35,7 +35,9 @@ class AppPreferences extends ChangeNotifier {
     this.portfolioMoveNotified,
     List<WatchList> watchLists = const [],
     Map<String, double> targets = const {},
+    Map<String, String> sorts = const {},
   }) : _hiddenHome = Set.of(hiddenHome),
+       _sorts = Map.of(sorts),
        _lists = List.of(watchLists),
        _targets = Map.of(targets),
        _recent = List.of(recent),
@@ -84,6 +86,7 @@ class AppPreferences extends ChangeNotifier {
     'analyses',
   ];
   static const _listsKey = 'watch_lists';
+  static const _sortsKey = 'list_sorts';
 
   /// Legfeljebb ennyi saját lista, és egy név legfeljebb ennyi karakter.
   static const maxLists = 20;
@@ -203,6 +206,32 @@ class AppPreferences extends ChangeNotifier {
     await _save((p) => p.setStringList(_hiddenHomeKey, _hiddenHome.toList()));
   }
 
+  final Map<String, String> _sorts;
+
+  /// Egy lista legutóbb választott rendezése (pl. `positions` → `dividend`), hogy
+  /// az app újraindítása után is megmaradjon; `null`, ha még nem választottak.
+  String? sortOf(String list) => _sorts[list];
+
+  Future<void> setSort(String list, String value) async {
+    if (_sorts[list] == value) return;
+    _sorts[list] = value;
+    await _save((p) => p.setString(_sortsKey, jsonEncode(_sorts)));
+  }
+
+  /// A tárolt rendezések beolvasása; a hibás tételek kimaradnak.
+  static Map<String, String> parseSorts(String? raw) {
+    try {
+      final v = raw == null ? null : jsonDecode(raw);
+      return {
+        if (v is Map)
+          for (final e in v.entries)
+            if (e.value is String) '${e.key}': e.value as String,
+      };
+    } catch (_) {
+      return const {};
+    }
+  }
+
   /// A portfólió célértéke és pénzneme (pl. 10 000 000 HUF); `null`, ha nincs.
   ({double amount, String currency})? portfolioGoal;
 
@@ -312,6 +341,7 @@ class AppPreferences extends ChangeNotifier {
         portfolioMoveNotified: prefs.getString(_portfolioMoveNotifiedKey),
         watchLists: WatchList.parseAll(prefs.getString(_listsKey)),
         targets: parseTargets(prefs.getString(_targetsKey)),
+        sorts: parseSorts(prefs.getString(_sortsKey)),
       );
       loaded._loadResolved(prefs.getStringList(_resolvedKey));
       return loaded;

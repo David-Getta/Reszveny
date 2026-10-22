@@ -2839,6 +2839,15 @@ class AppLocalizationsWo extends AppLocalizations {
   String get portfolioCashEdit => 'Tëral xaalis bi des';
 
   @override
+  String get portfolioDividendsByMonth => 'Weer bu nekk';
+
+  @override
+  String get dividendsLegendReceived => 'Yi ñu jot';
+
+  @override
+  String get dividendsLegendExpected => 'Yi ñuy xaar';
+
+  @override
   String get portfolioDividendsExpected => 'Li ñuy xaar ci kanam';
 
   @override

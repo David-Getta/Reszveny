@@ -301,9 +301,54 @@ void main() {
       await tester.pumpAndSettle();
       expect(find.byKey(ValueKey('dividends-year-change-${year - 1}')), findsOneWidget);
       expect(find.text('+12%'), findsOneWidget);
+      // A havi diagram: 15 oszlop, a januári tétel a saját hónapjában (ha az ablakban van).
+      expect(find.byKey(const ValueKey('dividends-months')), findsOneWidget);
+      expect(find.text('By month'), findsOneWidget);
+      final jan = find.byKey(ValueKey('dividend-month-$year-01'));
+      if (DateTime.now().month < 12) expect(jan, findsOneWidget);
       // Az első évhez nincs előző, a folyó évhez nincs százalék.
       expect(find.byKey(ValueKey('dividends-year-change-${year - 2}')), findsNothing);
       expect(find.byKey(ValueKey('dividends-year-change-$year')), findsNothing);
+    });
+
+    test('by month: received in their month, expected projected with their rhythm, converted, window of 15', () {
+      final today = DateTime(2026, 10, 22);
+      final ds = [
+        rec('KO', DateTime(2026, 10, 1), 5),
+        rec('KO', DateTime(2026, 10, 15), 2),
+        rec('OTP', DateTime(2026, 6, 2), 1000, currency: 'HUF'),
+        rec('KO', DateTime(2025, 10, 31), 9), // az ablak előtt (2025. nov. az első hónap)
+        rec('KO', DateTime(2026, 11, 1), 50), // jövőbeli rögzítés: nem kapott
+        DividendRecord(id: 'x', symbol: 'KO', amount: 7, currency: 'USD'),
+      ];
+      final expected = <ExpectedDividend>[
+        // Havonta fizető: a következő három hónapban is.
+        (symbol: 'O', date: DateTime(2026, 11, 14), amount: 1, currency: 'USD', periodDays: 30),
+        // Negyedéves: csak egyszer fér az ablakba.
+        (symbol: 'AAPL', date: DateTime(2026, 11, 13), amount: 3, currency: 'USD', periodDays: 91),
+        (symbol: 'X', date: DateTime(2026, 12, 1), amount: 4, currency: 'CHF', periodDays: 91),
+      ];
+      final months = dividendMonths(
+        ds,
+        expected,
+        now: today,
+        rate: (c) => switch (c) {
+          'USD' => 1.0,
+          'HUF' => 0.003,
+          _ => null,
+        },
+      );
+      expect(months, hasLength(15));
+      expect(months.first.month, DateTime(2025, 11));
+      expect(months.last.month, DateTime(2027, 1));
+      DividendMonth at(int y, int m) => months.firstWhere((x) => x.month == DateTime(y, m));
+      expect(at(2026, 10).received, 7);
+      expect(at(2026, 6).received, closeTo(3, 1e-9));
+      expect(at(2026, 11).received, 0);
+      expect(at(2026, 11).expected, 4);
+      expect(at(2026, 12).expected, 1, reason: 'a CHF-tétel átváltás nélkül kimarad');
+      expect(at(2027, 1).expected, 1);
+      expect(months.fold(0.0, (s, m) => s + m.received), closeTo(10, 1e-9));
     });
 
     test('two currencies for one stock (two brokers) are separate series, never summed together', () {

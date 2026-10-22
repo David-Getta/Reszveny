@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Rast dividende (5 g.)",
   "dividendNone": "U posljednjih 12 mjeseci nije isplaćena dividenda.",
   "dividendOnYourShares": "Na vaše dionice, godišnje",
-  "glossDividendGrowth5y": "Koliko je dividenda po dionici u prosjeku rasla godišnje u posljednjih pet godina. Stabilan rast obično znači da kompanija ima povjerenja u svoj novčani tok; smanjenje je često znak upozorenja."
+  "glossDividendGrowth5y": "Koliko je dividenda po dionici u prosjeku rasla godišnje u posljednjih pet godina. Stabilan rast obično znači da kompanija ima povjerenja u svoj novčani tok; smanjenje je često znak upozorenja.",
+  "portfolioDividendsByMonth": "Po mjesecima",
+  "dividendsLegendReceived": "Primljene",
+  "dividendsLegendExpected": "Očekivane"
 }

@@ -2850,6 +2850,15 @@ class AppLocalizationsPt extends AppLocalizations {
   String get portfolioCashEdit => 'Definir saldo em caixa';
 
   @override
+  String get portfolioDividendsByMonth => 'Por mês';
+
+  @override
+  String get dividendsLegendReceived => 'Recebidos';
+
+  @override
+  String get dividendsLegendExpected => 'Esperados';
+
+  @override
   String get portfolioDividendsExpected => 'Próximo esperado';
 
   @override

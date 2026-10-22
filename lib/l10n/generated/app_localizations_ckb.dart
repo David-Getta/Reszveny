@@ -2845,6 +2845,15 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get portfolioCashEdit => 'دانانی باڵانسی کاش';
 
   @override
+  String get portfolioDividendsByMonth => 'بەپێی مانگ';
+
+  @override
+  String get dividendsLegendReceived => 'وەرگیراو';
+
+  @override
+  String get dividendsLegendExpected => 'چاوەڕوانکراو';
+
+  @override
   String get portfolioDividendsExpected => 'چاوەڕوانکراوی داهاتوو';
 
   @override

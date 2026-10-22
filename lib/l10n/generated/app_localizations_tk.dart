@@ -2846,6 +2846,15 @@ class AppLocalizationsTk extends AppLocalizations {
   String get portfolioCashEdit => 'Nagt pul galyndysyny belle';
 
   @override
+  String get portfolioDividendsByMonth => 'Aýlar boýunça';
+
+  @override
+  String get dividendsLegendReceived => 'Alnan';
+
+  @override
+  String get dividendsLegendExpected => 'Garaşylýan';
+
+  @override
   String get portfolioDividendsExpected => 'Indiki garaşylýan';
 
   @override

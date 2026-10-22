@@ -2915,6 +2915,15 @@ class AppLocalizationsSk extends AppLocalizations {
   String get portfolioCashEdit => 'Nastaviť hotovostný zostatok';
 
   @override
+  String get portfolioDividendsByMonth => 'Podľa mesiacov';
+
+  @override
+  String get dividendsLegendReceived => 'Prijaté';
+
+  @override
+  String get dividendsLegendExpected => 'Očakávané';
+
+  @override
   String get portfolioDividendsExpected => 'Ďalšie očakávané';
 
   @override

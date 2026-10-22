@@ -2831,6 +2831,15 @@ class AppLocalizationsMos extends AppLocalizations {
   String get portfolioCashEdit => 'Ning ligd sẽn ket';
 
   @override
+  String get portfolioDividendsByMonth => 'Kiuug fãa';
+
+  @override
+  String get dividendsLegendReceived => 'Sẽn paam';
+
+  @override
+  String get dividendsLegendExpected => 'Sẽn gũud';
+
+  @override
   String get portfolioDividendsExpected => 'Sẽn gũud tɩ wa';
 
   @override

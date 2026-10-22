@@ -2760,6 +2760,15 @@ class AppLocalizationsJa extends AppLocalizations {
   String get portfolioCashEdit => '現金残高を設定';
 
   @override
+  String get portfolioDividendsByMonth => '月別';
+
+  @override
+  String get dividendsLegendReceived => '受取済み';
+
+  @override
+  String get dividendsLegendExpected => '予想';
+
+  @override
   String get portfolioDividendsExpected => '次回の予想';
 
   @override

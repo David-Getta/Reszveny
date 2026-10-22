@@ -2811,6 +2811,15 @@ class AppLocalizationsAm extends AppLocalizations {
   String get portfolioCashEdit => 'የጥሬ ገንዘብ ሚዛን አስቀምጥ';
 
   @override
+  String get portfolioDividendsByMonth => 'በወር';
+
+  @override
+  String get dividendsLegendReceived => 'የተቀበሉ';
+
+  @override
+  String get dividendsLegendExpected => 'የሚጠበቁ';
+
+  @override
   String get portfolioDividendsExpected => 'ቀጥሎ የሚጠበቅ';
 
   @override

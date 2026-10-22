@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Rritja e dividendit (5 vjet)",
   "dividendNone": "Asnjë dividend i paguar në 12 muajt e fundit.",
   "dividendOnYourShares": "Për aksionet tuaja, në vit",
-  "glossDividendGrowth5y": "Sa është rritur mesatarisht në vit dividendi për aksion gjatë pesë viteve të fundit. Një rritje e qëndrueshme zakonisht do të thotë se kompania i beson rrjedhës së saj të parasë; një ulje shpesh është shenjë paralajmëruese."
+  "glossDividendGrowth5y": "Sa është rritur mesatarisht në vit dividendi për aksion gjatë pesë viteve të fundit. Një rritje e qëndrueshme zakonisht do të thotë se kompania i beson rrjedhës së saj të parasë; një ulje shpesh është shenjë paralajmëruese.",
+  "portfolioDividendsByMonth": "Sipas muajve",
+  "dividendsLegendReceived": "Të marrë",
+  "dividendsLegendExpected": "Të pritur"
 }

@@ -2838,6 +2838,15 @@ class AppLocalizationsHe extends AppLocalizations {
   String get portfolioCashEdit => 'הגדרת יתרת מזומן';
 
   @override
+  String get portfolioDividendsByMonth => 'לפי חודש';
+
+  @override
+  String get dividendsLegendReceived => 'התקבלו';
+
+  @override
+  String get dividendsLegendExpected => 'צפויים';
+
+  @override
   String get portfolioDividendsExpected => 'צפוי בהמשך';
 
   @override

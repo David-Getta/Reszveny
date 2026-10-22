@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:reszveny/core/app_preferences.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:reszveny/core/models/price_history.dart';
 import 'package:reszveny/core/models/stock_quote.dart';
 import 'package:reszveny/core/util/formatters.dart';
@@ -26,12 +28,28 @@ void main() {
       },
       rate: (_, _) => 1,
       currency: 'USD',
+      // Részvényenkénti évi osztalék: AAA 2,2/110 = 2%, CCC 2/40 = 5%; BBB nem fizet.
+      dividends: {'AAA': 2.2, 'CCC': 2},
     );
     List<String> order(PositionSort s) => sortPositions(snap.rows, s).map((r) => r.position.symbol).toList();
     expect(order(PositionSort.weight), ['AAA', 'CCC', 'BBB', 'DDD']);
     expect(order(PositionSort.gain), ['BBB', 'AAA', 'CCC', 'DDD']);
     expect(order(PositionSort.today), ['BBB', 'CCC', 'AAA', 'DDD']);
     expect(order(PositionSort.name), ['AAA', 'BBB', 'CCC', 'DDD']);
+    expect(order(PositionSort.dividend), ['CCC', 'AAA', 'BBB', 'DDD'], reason: 'osztalék nélkül a végére');
+  });
+
+  test('the chosen sort is remembered across restarts; broken stored values are ignored', () async {
+    SharedPreferences.setMockInitialValues({});
+    final p = await AppPreferences.load();
+    expect(p.sortOf('positions'), isNull);
+    await p.setSort('positions', 'dividend');
+    await p.setSort('watch', 'gainers');
+    final again = await AppPreferences.load();
+    expect(again.sortOf('positions'), 'dividend');
+    expect(again.sortOf('watch'), 'gainers');
+    expect(AppPreferences.parseSorts('{"positions": 3, "watch": "name"}'), {'watch': 'name'});
+    expect(AppPreferences.parseSorts('nem json'), isEmpty);
   });
 
   test('a marker sits on the nearest day of the chart', () {

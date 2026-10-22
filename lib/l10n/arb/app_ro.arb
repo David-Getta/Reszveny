@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Creșterea dividendului (5 ani)",
   "dividendNone": "Niciun dividend plătit în ultimele 12 luni.",
   "dividendOnYourShares": "Pe acțiunile tale, anual",
-  "glossDividendGrowth5y": "Cât a crescut în medie pe an dividendul pe acțiune în ultimii cinci ani. O creștere constantă înseamnă de obicei că firma are încredere în fluxul său de numerar; o reducere este adesea un semnal de alarmă."
+  "glossDividendGrowth5y": "Cât a crescut în medie pe an dividendul pe acțiune în ultimii cinci ani. O creștere constantă înseamnă de obicei că firma are încredere în fluxul său de numerar; o reducere este adesea un semnal de alarmă.",
+  "portfolioDividendsByMonth": "Pe luni",
+  "dividendsLegendReceived": "Încasate",
+  "dividendsLegendExpected": "Așteptate"
 }

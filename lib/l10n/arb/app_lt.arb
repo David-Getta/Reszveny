@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Dividendų augimas (5 m.)",
   "dividendNone": "Per pastaruosius 12 mėnesių dividendų nemokėta.",
   "dividendOnYourShares": "Už jūsų akcijas, per metus",
-  "glossDividendGrowth5y": "Kiek vidutiniškai per metus augo dividendas vienai akcijai per pastaruosius penkerius metus. Stabilus augimas paprastai reiškia, kad įmonė pasitiki savo pinigų srautais; sumažinimas dažnai yra įspėjamasis ženklas."
+  "glossDividendGrowth5y": "Kiek vidutiniškai per metus augo dividendas vienai akcijai per pastaruosius penkerius metus. Stabilus augimas paprastai reiškia, kad įmonė pasitiki savo pinigų srautais; sumažinimas dažnai yra įspėjamasis ženklas.",
+  "portfolioDividendsByMonth": "Pagal mėnesius",
+  "dividendsLegendReceived": "Gauti",
+  "dividendsLegendExpected": "Numatomi"
 }

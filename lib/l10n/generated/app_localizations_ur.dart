@@ -2845,6 +2845,15 @@ class AppLocalizationsUr extends AppLocalizations {
   String get portfolioCashEdit => 'نقد بیلنس سیٹ کریں';
 
   @override
+  String get portfolioDividendsByMonth => 'ماہ وار';
+
+  @override
+  String get dividendsLegendReceived => 'موصول شدہ';
+
+  @override
+  String get dividendsLegendExpected => 'متوقع';
+
+  @override
   String get portfolioDividendsExpected => 'اگلا متوقع';
 
   @override

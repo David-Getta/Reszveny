@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Rast dividendy (5 rokov)",
   "dividendNone": "Za posledných 12 mesiacov nebola vyplatená žiadna dividenda.",
   "dividendOnYourShares": "Na vaše akcie, ročne",
-  "glossDividendGrowth5y": "O koľko v priemere ročne rástla dividenda na akciu za posledných päť rokov. Stabilný rast zvyčajne znamená, že firma dôveruje svojmu peňažnému toku; zníženie je často varovným signálom."
+  "glossDividendGrowth5y": "O koľko v priemere ročne rástla dividenda na akciu za posledných päť rokov. Stabilný rast zvyčajne znamená, že firma dôveruje svojmu peňažnému toku; zníženie je často varovným signálom.",
+  "portfolioDividendsByMonth": "Podľa mesiacov",
+  "dividendsLegendReceived": "Prijaté",
+  "dividendsLegendExpected": "Očakávané"
 }

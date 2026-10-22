@@ -2853,6 +2853,15 @@ class AppLocalizationsHy extends AppLocalizations {
   String get portfolioCashEdit => 'Սահմանել կանխիկի մնացորդը';
 
   @override
+  String get portfolioDividendsByMonth => 'Ըստ ամիսների';
+
+  @override
+  String get dividendsLegendReceived => 'Ստացված';
+
+  @override
+  String get dividendsLegendExpected => 'Սպասվող';
+
+  @override
   String get portfolioDividendsExpected => 'Սպասվում է հաջորդը';
 
   @override

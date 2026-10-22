@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Kwasans dividann (5 an)",
   "dividendNone": "Pa gen dividann ki peye nan 12 dènye mwa yo.",
   "dividendOnYourShares": "Sou aksyon ou yo, pa ane",
-  "glossDividendGrowth5y": "Konbyen dividann pa aksyon an te grandi chak ane an mwayèn pandan senk dènye ane yo. Yon kwasans regilye anjeneral vle di konpayi an gen konfyans nan lajan k ap antre ak soti li; yon diminisyon souvan se yon siy avètisman."
+  "glossDividendGrowth5y": "Konbyen dividann pa aksyon an te grandi chak ane an mwayèn pandan senk dènye ane yo. Yon kwasans regilye anjeneral vle di konpayi an gen konfyans nan lajan k ap antre ak soti li; yon diminisyon souvan se yon siy avètisman.",
+  "portfolioDividendsByMonth": "Pa mwa",
+  "dividendsLegendReceived": "Resevwa",
+  "dividendsLegendExpected": "Prevwa"
 }

@@ -2855,6 +2855,15 @@ class AppLocalizationsSo extends AppLocalizations {
   String get portfolioCashEdit => 'Deji haraaga lacagta';
 
   @override
+  String get portfolioDividendsByMonth => 'Bil ahaan';
+
+  @override
+  String get dividendsLegendReceived => 'La helay';
+
+  @override
+  String get dividendsLegendExpected => 'La filayo';
+
+  @override
   String get portfolioDividendsExpected => 'Kuwa xiga ee la filayo';
 
   @override

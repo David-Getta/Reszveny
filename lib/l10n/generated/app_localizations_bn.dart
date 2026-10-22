@@ -2843,6 +2843,15 @@ class AppLocalizationsBn extends AppLocalizations {
   String get portfolioCashEdit => 'নগদ ব্যালেন্স সেট করুন';
 
   @override
+  String get portfolioDividendsByMonth => 'মাস অনুযায়ী';
+
+  @override
+  String get dividendsLegendReceived => 'প্রাপ্ত';
+
+  @override
+  String get dividendsLegendExpected => 'প্রত্যাশিত';
+
+  @override
   String get portfolioDividendsExpected => 'পরবর্তী প্রত্যাশিত';
 
   @override

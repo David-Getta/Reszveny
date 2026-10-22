@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Iyongerekana ry'inyungu ku migabane (imyaka 5)",
   "dividendNone": "Nta nyungu ku migabane yarihwe mu mezi 12 aheze.",
   "dividendOnYourShares": "Ku migabane yawe, ku mwaka",
-  "glossDividendGrowth5y": "Ingene inyungu kuri buri mugabane yagiye yongerekana ku mwaka, ku kigereranyo, mu myaka itanu iheze. Iyongerekana ridahagarara kenshi risobanura ko isosiyete yizigiye amafaranga yinjiza; kuyigabanya kenshi ni ikimenyetso c'umuburo."
+  "glossDividendGrowth5y": "Ingene inyungu kuri buri mugabane yagiye yongerekana ku mwaka, ku kigereranyo, mu myaka itanu iheze. Iyongerekana ridahagarara kenshi risobanura ko isosiyete yizigiye amafaranga yinjiza; kuyigabanya kenshi ni ikimenyetso c'umuburo.",
+  "portfolioDividendsByMonth": "Ku kwezi",
+  "dividendsLegendReceived": "Yakiriwe",
+  "dividendsLegendExpected": "Yitezwe"
 }

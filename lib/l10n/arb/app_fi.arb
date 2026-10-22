@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Osingon kasvu (5 v)",
   "dividendNone": "Osinkoa ei ole maksettu viimeisten 12 kuukauden aikana.",
   "dividendOnYourShares": "Osakkeillesi vuodessa",
-  "glossDividendGrowth5y": "Kuinka paljon osakekohtainen osinko on kasvanut keskimäärin vuodessa viimeisten viiden vuoden aikana. Tasainen kasvu kertoo yleensä, että yhtiö luottaa kassavirtaansa; osingon leikkaus on usein varoitusmerkki."
+  "glossDividendGrowth5y": "Kuinka paljon osakekohtainen osinko on kasvanut keskimäärin vuodessa viimeisten viiden vuoden aikana. Tasainen kasvu kertoo yleensä, että yhtiö luottaa kassavirtaansa; osingon leikkaus on usein varoitusmerkki.",
+  "portfolioDividendsByMonth": "Kuukausittain",
+  "dividendsLegendReceived": "Saadut",
+  "dividendsLegendExpected": "Odotetut"
 }

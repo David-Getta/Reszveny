@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Kgolo ya dividende (dilemo tse 5)",
   "dividendNone": "Ha ho dividende e lefilweng dikgweding tse 12 tse fetileng.",
   "dividendOnYourShares": "Dishereng tsa hao, ka selemo",
-  "glossDividendGrowth5y": "Hore na dividende ka shere e hotse hakae ka selemo ka karolelano dilemong tse hlano tse fetileng. Kgolo e tsitsitseng hangata e bolela hore khampani e tshepa phallo ya yona ya tjhelete; phokotso hangata ke letshwao la temoso."
+  "glossDividendGrowth5y": "Hore na dividende ka shere e hotse hakae ka selemo ka karolelano dilemong tse hlano tse fetileng. Kgolo e tsitsitseng hangata e bolela hore khampani e tshepa phallo ya yona ya tjhelete; phokotso hangata ke letshwao la temoso.",
+  "portfolioDividendsByMonth": "Ka kgwedi",
+  "dividendsLegendReceived": "Tse amohetsweng",
+  "dividendsLegendExpected": "Tse lebelletsweng"
 }

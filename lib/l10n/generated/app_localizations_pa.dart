@@ -2842,6 +2842,15 @@ class AppLocalizationsPa extends AppLocalizations {
   String get portfolioCashEdit => 'ਨਕਦ ਬਕਾਇਆ ਸੈੱਟ ਕਰੋ';
 
   @override
+  String get portfolioDividendsByMonth => 'ਮਹੀਨੇ ਅਨੁਸਾਰ';
+
+  @override
+  String get dividendsLegendReceived => 'ਪ੍ਰਾਪਤ';
+
+  @override
+  String get dividendsLegendExpected => 'ਸੰਭਾਵਿਤ';
+
+  @override
   String get portfolioDividendsExpected => 'ਅਗਲਾ ਸੰਭਾਵਿਤ';
 
   @override

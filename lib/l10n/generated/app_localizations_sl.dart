@@ -2919,6 +2919,15 @@ class AppLocalizationsSl extends AppLocalizations {
   String get portfolioCashEdit => 'Nastavi stanje gotovine';
 
   @override
+  String get portfolioDividendsByMonth => 'Po mesecih';
+
+  @override
+  String get dividendsLegendReceived => 'Prejete';
+
+  @override
+  String get dividendsLegendExpected => 'Pričakovane';
+
+  @override
   String get portfolioDividendsExpected => 'Naslednje pričakovane';
 
   @override

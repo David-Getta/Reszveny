@@ -151,3 +151,50 @@ int? periodDaysFor(int medianGapDays) {
   if (medianGapDays <= 420) return 365;
   return null;
 }
+
+/// Egy hónap osztaléka a havi diagramhoz: a kapott (a mai napig) és a várható
+/// (a rögzítettek ritmusából) összeg, átváltva.
+typedef DividendMonth = ({DateTime month, double received, double expected});
+
+/// Havi bontás a [now] hónapja körül: az előző [past] − 1 hónap, a folyó és a
+/// következő [ahead] hónap. A kapott tételek közül a dátumozott, nem jövőbeli; a
+/// várhatók az [expected] listából, a ritmusukkal továbbvetítve (a havonta fizető
+/// részvény mindhárom következő hónapban), a már esedékes is a saját hónapjában.
+/// A [rate] a pénznem átváltása (`null`: a tétel kimarad).
+List<DividendMonth> dividendMonths(
+  Iterable<DividendRecord> dividends,
+  Iterable<ExpectedDividend> expected, {
+  required DateTime now,
+  required double? Function(String currency) rate,
+  int past = 12,
+  int ahead = 3,
+}) {
+  final first = DateTime(now.year, now.month - past + 1);
+  final count = past + ahead;
+  int? index(DateTime d) {
+    final i = (d.year - first.year) * 12 + d.month - first.month;
+    return i >= 0 && i < count ? i : null;
+  }
+
+  final received = List.filled(count, 0.0), coming = List.filled(count, 0.0);
+  for (final d in dividends) {
+    final date = d.date;
+    if (date == null || date.isAfter(now)) continue;
+    final (i, r) = (index(date), rate(d.currency));
+    if (i != null && r != null) received[i] += d.amount * r;
+  }
+  for (final x in expected) {
+    final r = rate(x.currency);
+    if (r == null) continue;
+    // A következő kifizetés, majd a ritmus szerint a további, amíg az ablakban van.
+    for (var date = x.date; ; date = DateTime(date.year, date.month, date.day + x.periodDays)) {
+      final i = index(date);
+      if (i == null) break;
+      coming[i] += x.amount * r;
+    }
+  }
+  return [
+    for (var i = 0; i < count; i++)
+      (month: DateTime(first.year, first.month + i), received: received[i], expected: coming[i]),
+  ];
+}

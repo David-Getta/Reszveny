@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Yokkuteg dividand (5 at)",
   "dividendNone": "Feyuñu benn dividand ci 12 weer yu mujj yi.",
   "dividendOnYourShares": "Ci say aksiyoŋ, at mu nekk",
-  "glossDividendGrowth5y": "Ni dividand ci aksiyoŋ bu nekk yokkoo at mu nekk, ci diggante, ci juróom at yu mujj yi. Yokkute gu sax dafa faral di wone ne sosiete bi dafa wóolu xaalis bi koy dugg; wàññi ko dafa faral di doon màndarga moytu."
+  "glossDividendGrowth5y": "Ni dividand ci aksiyoŋ bu nekk yokkoo at mu nekk, ci diggante, ci juróom at yu mujj yi. Yokkute gu sax dafa faral di wone ne sosiete bi dafa wóolu xaalis bi koy dugg; wàññi ko dafa faral di doon màndarga moytu.",
+  "portfolioDividendsByMonth": "Weer bu nekk",
+  "dividendsLegendReceived": "Yi ñu jot",
+  "dividendsLegendExpected": "Yi ñuy xaar"
 }

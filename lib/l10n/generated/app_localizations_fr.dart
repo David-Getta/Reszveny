@@ -2857,6 +2857,15 @@ class AppLocalizationsFr extends AppLocalizations {
   String get portfolioCashEdit => 'Définir le solde de liquidités';
 
   @override
+  String get portfolioDividendsByMonth => 'Par mois';
+
+  @override
+  String get dividendsLegendReceived => 'Reçus';
+
+  @override
+  String get dividendsLegendExpected => 'Prévus';
+
+  @override
   String get portfolioDividendsExpected => 'Prochains attendus';
 
   @override

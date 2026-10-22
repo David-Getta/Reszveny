@@ -2854,6 +2854,15 @@ class AppLocalizationsLua extends AppLocalizations {
   String get portfolioCashEdit => 'Teka mfranga ya mu bianza';
 
   @override
+  String get portfolioDividendsByMonth => 'Ku ngondo';
+
+  @override
+  String get dividendsLegendReceived => 'Bipeta';
+
+  @override
+  String get dividendsLegendExpected => 'Bitekemena';
+
+  @override
   String get portfolioDividendsExpected => 'Idi mitekemene kulonda';
 
   @override

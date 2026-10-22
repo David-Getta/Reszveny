@@ -2850,6 +2850,15 @@ class AppLocalizationsMs extends AppLocalizations {
   String get portfolioCashEdit => 'Tetapkan baki tunai';
 
   @override
+  String get portfolioDividendsByMonth => 'Mengikut bulan';
+
+  @override
+  String get dividendsLegendReceived => 'Diterima';
+
+  @override
+  String get dividendsLegendExpected => 'Dijangka';
+
+  @override
   String get portfolioDividendsExpected => 'Dijangka seterusnya';
 
   @override

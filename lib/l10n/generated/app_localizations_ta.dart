@@ -2856,6 +2856,15 @@ class AppLocalizationsTa extends AppLocalizations {
   String get portfolioCashEdit => 'ரொக்க இருப்பை அமைக்கவும்';
 
   @override
+  String get portfolioDividendsByMonth => 'மாத வாரியாக';
+
+  @override
+  String get dividendsLegendReceived => 'பெறப்பட்டவை';
+
+  @override
+  String get dividendsLegendExpected => 'எதிர்பார்ப்பு';
+
+  @override
   String get portfolioDividendsExpected => 'அடுத்து எதிர்பார்ப்பது';
 
   @override

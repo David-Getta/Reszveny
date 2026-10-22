@@ -2851,6 +2851,15 @@ class AppLocalizationsUz extends AppLocalizations {
   String get portfolioCashEdit => 'Naqd pul qoldigʻini belgilash';
 
   @override
+  String get portfolioDividendsByMonth => 'Oylar boʻyicha';
+
+  @override
+  String get dividendsLegendReceived => 'Olingan';
+
+  @override
+  String get dividendsLegendExpected => 'Kutilayotgan';
+
+  @override
   String get portfolioDividendsExpected => 'Keyingi kutilayotgan';
 
   @override

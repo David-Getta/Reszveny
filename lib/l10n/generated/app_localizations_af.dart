@@ -2848,6 +2848,15 @@ class AppLocalizationsAf extends AppLocalizations {
   String get portfolioCashEdit => 'Stel kontantsaldo in';
 
   @override
+  String get portfolioDividendsByMonth => 'Per maand';
+
+  @override
+  String get dividendsLegendReceived => 'Ontvang';
+
+  @override
+  String get dividendsLegendExpected => 'Verwag';
+
+  @override
   String get portfolioDividendsExpected => 'Volgende verwag';
 
   @override

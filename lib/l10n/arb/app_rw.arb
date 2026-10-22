@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Izamuka ry'inyungu ku migabane (imyaka 5)",
   "dividendNone": "Nta nyungu ku migabane yishyuwe mu mezi 12 ashize.",
   "dividendOnYourShares": "Ku migabane yawe, ku mwaka",
-  "glossDividendGrowth5y": "Uko inyungu kuri buri mugabane yazamutse ku mwaka, ku kigereranyo, mu myaka itanu ishize. Izamuka rihoraho akenshi risobanura ko ikigo cyizeye amafaranga cyinjiza; kuyigabanya akenshi ni ikimenyetso cyo kuburira."
+  "glossDividendGrowth5y": "Uko inyungu kuri buri mugabane yazamutse ku mwaka, ku kigereranyo, mu myaka itanu ishize. Izamuka rihoraho akenshi risobanura ko ikigo cyizeye amafaranga cyinjiza; kuyigabanya akenshi ni ikimenyetso cyo kuburira.",
+  "portfolioDividendsByMonth": "Ku kwezi",
+  "dividendsLegendReceived": "Yakiriwe",
+  "dividendsLegendExpected": "Yitezwe"
 }

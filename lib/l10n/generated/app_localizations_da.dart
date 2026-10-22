@@ -2843,6 +2843,15 @@ class AppLocalizationsDa extends AppLocalizations {
   String get portfolioCashEdit => 'Angiv kontantsaldo';
 
   @override
+  String get portfolioDividendsByMonth => 'Pr. måned';
+
+  @override
+  String get dividendsLegendReceived => 'Modtaget';
+
+  @override
+  String get dividendsLegendExpected => 'Forventet';
+
+  @override
   String get portfolioDividendsExpected => 'Forventet næste';
 
   @override

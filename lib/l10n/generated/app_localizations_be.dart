@@ -2916,6 +2916,15 @@ class AppLocalizationsBe extends AppLocalizations {
   String get portfolioCashEdit => 'Задаць грашовы рэшт';
 
   @override
+  String get portfolioDividendsByMonth => 'Па месяцах';
+
+  @override
+  String get dividendsLegendReceived => 'Атрыманыя';
+
+  @override
+  String get dividendsLegendExpected => 'Чаканыя';
+
+  @override
   String get portfolioDividendsExpected => 'Чакаецца далей';
 
   @override

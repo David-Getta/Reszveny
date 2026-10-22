@@ -2865,6 +2865,15 @@ class AppLocalizationsTs extends AppLocalizations {
   String get portfolioCashEdit => 'Veka mali leyi saleke';
 
   @override
+  String get portfolioDividendsByMonth => 'Hi n\'hweti';
+
+  @override
+  String get dividendsLegendReceived => 'Leti amukeriweke';
+
+  @override
+  String get dividendsLegendExpected => 'Leti languteriweke';
+
+  @override
   String get portfolioDividendsExpected => 'Leti landzelaka leti languteriweke';
 
   @override

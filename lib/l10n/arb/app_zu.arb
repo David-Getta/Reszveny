@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Ukukhula kwe-dividend (iminyaka engu-5)",
   "dividendNone": "Ayikho i-dividend ekhokhwe ezinyangeni ezingu-12 ezedlule.",
   "dividendOnYourShares": "Kumasheya akho, ngonyaka",
-  "glossDividendGrowth5y": "I-dividend ngesheya ngalinye ikhule kangakanani ngonyaka ngokwesilinganiso eminyakeni emihlanu edlule. Ukukhula okuqhubekayo ngokuvamile kusho ukuthi inkampani iyakwethemba ukugeleza kwemali yayo; ukuncishiswa kuvame ukuba uphawu lwesixwayiso."
+  "glossDividendGrowth5y": "I-dividend ngesheya ngalinye ikhule kangakanani ngonyaka ngokwesilinganiso eminyakeni emihlanu edlule. Ukukhula okuqhubekayo ngokuvamile kusho ukuthi inkampani iyakwethemba ukugeleza kwemali yayo; ukuncishiswa kuvame ukuba uphawu lwesixwayiso.",
+  "portfolioDividendsByMonth": "Ngenyanga",
+  "dividendsLegendReceived": "Ezitholiwe",
+  "dividendsLegendExpected": "Ezilindelekile"
 }

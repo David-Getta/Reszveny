@@ -2853,6 +2853,15 @@ class AppLocalizationsNy extends AppLocalizations {
   String get portfolioCashEdit => 'Ikani ndalama zotsala';
 
   @override
+  String get portfolioDividendsByMonth => 'Pa mwezi';
+
+  @override
+  String get dividendsLegendReceived => 'Zolandiridwa';
+
+  @override
+  String get dividendsLegendExpected => 'Zoyembekezeka';
+
+  @override
   String get portfolioDividendsExpected => 'Zikuyembekezeka kutsatira';
 
   @override

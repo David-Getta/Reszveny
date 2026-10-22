@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Creixement del dividend (5 anys)",
   "dividendNone": "No ha pagat cap dividend en els últims 12 mesos.",
   "dividendOnYourShares": "Sobre les teves accions, a l’any",
-  "glossDividendGrowth5y": "Quant ha crescut de mitjana cada any el dividend per acció durant els últims cinc anys. Un creixement constant sol indicar que l’empresa confia en el seu flux de caixa; una retallada sovint és un senyal d’alerta."
+  "glossDividendGrowth5y": "Quant ha crescut de mitjana cada any el dividend per acció durant els últims cinc anys. Un creixement constant sol indicar que l’empresa confia en el seu flux de caixa; una retallada sovint és un senyal d’alerta.",
+  "portfolioDividendsByMonth": "Per mes",
+  "dividendsLegendReceived": "Rebuts",
+  "dividendsLegendExpected": "Previstos"
 }

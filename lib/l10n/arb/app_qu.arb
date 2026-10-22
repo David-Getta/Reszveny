@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Dividendopa wiñaynin (5 wata)",
   "dividendNone": "Qhipa 12 killapi mana dividendo pagasqachu.",
   "dividendOnYourShares": "Accionniykikunapaq, watapi",
-  "glossDividendGrowth5y": "Sapa accionpaq dividendo hayk'ata wiñarqan sapa wata, chawpinpi, qhipa pichqa watakunapi. Takyasqa wiñayqa achkha kutipi rikuchin empresa qullqi puriyninpi hap'ipakusqanta; pisiyachiyqa achkha kutipi willakuq unancha."
+  "glossDividendGrowth5y": "Sapa accionpaq dividendo hayk'ata wiñarqan sapa wata, chawpinpi, qhipa pichqa watakunapi. Takyasqa wiñayqa achkha kutipi rikuchin empresa qullqi puriyninpi hap'ipakusqanta; pisiyachiyqa achkha kutipi willakuq unancha.",
+  "portfolioDividendsByMonth": "Sapa killa",
+  "dividendsLegendReceived": "Chaskisqa",
+  "dividendsLegendExpected": "Suyasqa"
 }

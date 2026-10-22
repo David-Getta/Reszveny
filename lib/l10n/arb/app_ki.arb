@@ -756,5 +756,8 @@
   "labelDividendGrowth5y": "Gũkũra kwa dividend (mĩaka 5)",
   "dividendNone": "Gũtirĩ dividend yarĩhirwo mieri-inĩ 12 ĩrĩa ĩhĩtũku.",
   "dividendOnYourShares": "Hisa-inĩ ciaku, o mwaka",
-  "glossDividendGrowth5y": "Nĩ ũigana dividend harĩ hisa ĩmwe yakũrire o mwaka gwa gatagatĩ mĩaka-inĩ ĩtano ĩrĩa ĩhĩtũku. Gũkũra kũrĩa kũrũmie kaingĩ kuonanagia atĩ kampuni nĩ ĩĩhokete mbeca iria itonyaga na iria ciumaga; kũnyihia dividend kaingĩ nĩ kĩmenyithia kĩa ũgwati."
+  "glossDividendGrowth5y": "Nĩ ũigana dividend harĩ hisa ĩmwe yakũrire o mwaka gwa gatagatĩ mĩaka-inĩ ĩtano ĩrĩa ĩhĩtũku. Gũkũra kũrĩa kũrũmie kaingĩ kuonanagia atĩ kampuni nĩ ĩĩhokete mbeca iria itonyaga na iria ciumaga; kũnyihia dividend kaingĩ nĩ kĩmenyithia kĩa ũgwati.",
+  "portfolioDividendsByMonth": "Mweri o mweri",
+  "dividendsLegendReceived": "Yamũkĩrĩtwo",
+  "dividendsLegendExpected": "Yetereirwo"
 }

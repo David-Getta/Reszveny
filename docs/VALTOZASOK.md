@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.174)
+# Változásjegyzék (0.2.130 → 0.2.175)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -19,6 +19,10 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - A **megérkezett osztalék egy koppintással** rögzíthető a várható tételből (a kártyán és az Események
   sorában, előre kitöltve); a részvény AI-elemzése a saját pozíció 12 havi osztalékát és bekerülési hozamát
   is megkapja; a „Mi lett volna, ha…” kártya a mai hozammal számolt évi osztalékot is mutatja.
+- **Havi osztalék-diagram** a „Kapott osztalékok” kártyán: az elmúlt 12 hónap kapott és a következő 3 hónap
+  várható osztaléka (a havonta fizető részvény minden hónapban), koppintásra a hónap összegeivel.
+- A pozíciók **osztalékhozam szerint** is rendezhetők; a pozíciók és a kedvencek választott rendezése
+  megmarad az app újraindítása után.
 - A részvény oldalán az **„Osztalék” kártya** az 5 éves osztaléknövekedéssel és a saját részvényekre jutó
   évi osztalékkal; ha a cég nem fizet, ezt egy mondat mondja ki (az összehasonlításban is új sor).
 

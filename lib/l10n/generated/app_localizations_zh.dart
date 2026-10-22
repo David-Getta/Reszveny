@@ -2723,6 +2723,15 @@ class AppLocalizationsZh extends AppLocalizations {
   String get portfolioCashEdit => '设置现金余额';
 
   @override
+  String get portfolioDividendsByMonth => '按月';
+
+  @override
+  String get dividendsLegendReceived => '已收';
+
+  @override
+  String get dividendsLegendExpected => '预计';
+
+  @override
   String get portfolioDividendsExpected => '预计下次';
 
   @override
@@ -5449,6 +5458,15 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get portfolioCashEdit => '設定現金結餘';
+
+  @override
+  String get portfolioDividendsByMonth => '按月';
+
+  @override
+  String get dividendsLegendReceived => '已收';
+
+  @override
+  String get dividendsLegendExpected => '預計';
 
   @override
   String get portfolioDividendsExpected => '預計下次';

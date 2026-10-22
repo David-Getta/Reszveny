@@ -2846,6 +2846,15 @@ class AppLocalizationsSv extends AppLocalizations {
   String get portfolioCashEdit => 'Ange kontantsaldo';
 
   @override
+  String get portfolioDividendsByMonth => 'Per månad';
+
+  @override
+  String get dividendsLegendReceived => 'Mottagna';
+
+  @override
+  String get dividendsLegendExpected => 'Förväntade';
+
+  @override
   String get portfolioDividendsExpected => 'Väntas härnäst';
 
   @override

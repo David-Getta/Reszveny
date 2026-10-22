@@ -2852,6 +2852,15 @@ class AppLocalizationsKn extends AppLocalizations {
   String get portfolioCashEdit => 'ನಗದು ಬಾಕಿ ಹೊಂದಿಸಿ';
 
   @override
+  String get portfolioDividendsByMonth => 'ತಿಂಗಳ ಪ್ರಕಾರ';
+
+  @override
+  String get dividendsLegendReceived => 'ಸ್ವೀಕೃತ';
+
+  @override
+  String get dividendsLegendExpected => 'ನಿರೀಕ್ಷಿತ';
+
+  @override
   String get portfolioDividendsExpected => 'ಮುಂದೆ ನಿರೀಕ್ಷಿತ';
 
   @override

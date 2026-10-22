@@ -2840,6 +2840,15 @@ class AppLocalizationsFa extends AppLocalizations {
   String get portfolioCashEdit => 'تعیین موجودی نقد';
 
   @override
+  String get portfolioDividendsByMonth => 'به تفکیک ماه';
+
+  @override
+  String get dividendsLegendReceived => 'دریافت‌شده';
+
+  @override
+  String get dividendsLegendExpected => 'مورد انتظار';
+
+  @override
   String get portfolioDividendsExpected => 'مورد انتظار بعدی';
 
   @override
