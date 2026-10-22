@@ -291,6 +291,16 @@ class AppLocalizationsFf extends AppLocalizations {
   String get labelYieldOnCost => 'Nafoore e coggu soodgol (%)';
 
   @override
+  String get labelDividendGrowth5y => 'Ɓeydagol geɗal nafoore (duuɓi 5)';
+
+  @override
+  String get dividendNone =>
+      'Alaa geɗal nafoore yoɓaangal e lebbi 12 ɓennuɗi ɗii.';
+
+  @override
+  String get dividendOnYourShares => 'E aksiyoŋ maa, kala hitaande';
+
+  @override
   String get labelConsensus => 'Ko ɓe kawri';
 
   @override
@@ -1986,6 +1996,10 @@ class AppLocalizationsFf extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Geɗal nafoore yoɓetee jom aksiyoŋ\'en. Ɓuri 100% kompaañi ndii ina yoɓa ko ɓuri ko heɓata, ɗum ɓooyataa.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'No geɗal nafoore kala aksiyoŋ ɓeydiri kala hitaande e hakkundeeru, e nder duuɓi joy ɓennuɗi ɗii. Ɓeydagol tabitngol ina hollira ko ɓuri heewde wonde sosiyetee oo ina hoolii ceede mum naatooɗe e yaltooɗe; ustugol ngol ina heewi wonde maande reentaare.';
 
   @override
   String get glossYieldOnCost =>

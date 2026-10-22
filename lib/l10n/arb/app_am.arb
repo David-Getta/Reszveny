@@ -752,5 +752,9 @@
   "portfolioSplitDate": "የክፍፍሉ ቀን",
   "portfolioSplitRow": "የአክሲዮን ክፍፍል {ratio}",
   "portfolioSplitRemoved": "የአክሲዮን ክፍፍሉ ተሰርዟል",
-  "portfolioSplitsImported": "{count, plural, =1{1 የአክሲዮን ክፍፍል ታክሏል} other{{count} የአክሲዮን ክፍፍሎች ታክለዋል}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 የአክሲዮን ክፍፍል ታክሏል} other{{count} የአክሲዮን ክፍፍሎች ታክለዋል}}",
+  "labelDividendGrowth5y": "የትርፍ ድርሻ ዕድገት (5 ዓመት)",
+  "dividendNone": "ባለፉት 12 ወራት ምንም የትርፍ ድርሻ አልተከፈለም።",
+  "dividendOnYourShares": "በአክሲዮኖችዎ ላይ፣ በዓመት",
+  "glossDividendGrowth5y": "ባለፉት አምስት ዓመታት የአንድ አክሲዮን የትርፍ ድርሻ በአማካይ በዓመት ምን ያህል እንዳደገ። የተረጋጋ ዕድገት ብዙውን ጊዜ ኩባንያው በጥሬ ገንዘብ ፍሰቱ እንደሚተማመን ያሳያል፤ ቅናሽ ደግሞ ብዙ ጊዜ የማስጠንቀቂያ ምልክት ነው።"
 }

@@ -291,6 +291,15 @@ class AppLocalizationsSq extends AppLocalizations {
   String get labelYieldOnCost => 'Rendimenti mbi çmimin e blerjes';
 
   @override
+  String get labelDividendGrowth5y => 'Rritja e dividendit (5 vjet)';
+
+  @override
+  String get dividendNone => 'Asnjë dividend i paguar në 12 muajt e fundit.';
+
+  @override
+  String get dividendOnYourShares => 'Për aksionet tuaja, në vit';
+
+  @override
   String get labelConsensus => 'Konsensusi';
 
   @override
@@ -1998,6 +2007,10 @@ class AppLocalizationsSq extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Pjesa e fitimit që paguhet si dividend. Mbi 100% kompania paguan më shumë se sa fiton, gjë që rrallë zgjat.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Sa është rritur mesatarisht në vit dividendi për aksion gjatë pesë viteve të fundit. Një rritje e qëndrueshme zakonisht do të thotë se kompania i beson rrjedhës së saj të parasë; një ulje shpesh është shenjë paralajmëruese.';
 
   @override
   String get glossYieldOnCost =>

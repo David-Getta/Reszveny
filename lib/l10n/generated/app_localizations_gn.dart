@@ -291,6 +291,15 @@ class AppLocalizationsGn extends AppLocalizations {
   String get labelYieldOnCost => 'Rendimiento jogua repy rehe';
 
   @override
+  String get labelDividendGrowth5y => 'Dividendo jekakuaa (5 ary)';
+
+  @override
+  String get dividendNone => 'Ndojehepymeʼẽi dividendo 12 jasy ohasavaʼekuépe.';
+
+  @override
+  String get dividendOnYourShares => 'Ne acción-kuérare, arýpe';
+
+  @override
   String get labelConsensus => 'Ñoñeʼẽmeʼẽ';
 
   @override
@@ -1997,6 +2006,10 @@ class AppLocalizationsGn extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Ganancia pehẽ oñepagáva dividendo ramo. 100% ári, empresa opaga hetave ohupytývagui, ha upéva ndaipukúi jepi.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Mbaʼeichaitépa okakuaa dividendo peteĩteĩ acción rehe ary ha ary, promedio-pe, ary po ohasavaʼekuépe. Jekakuaa hekopete ohechauka jepi pe empresa ojeroviaha iviru oikéva ha osẽvare; ojepoʼíramo, heta jey haʼe peteĩ señal de alerta.';
 
   @override
   String get glossYieldOnCost =>

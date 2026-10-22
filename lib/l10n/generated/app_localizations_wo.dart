@@ -290,6 +290,15 @@ class AppLocalizationsWo extends AppLocalizations {
   String get labelYieldOnCost => 'Njureef ci njëgu jënd';
 
   @override
+  String get labelDividendGrowth5y => 'Yokkuteg dividand (5 at)';
+
+  @override
+  String get dividendNone => 'Feyuñu benn dividand ci 12 weer yu mujj yi.';
+
+  @override
+  String get dividendOnYourShares => 'Ci say aksiyoŋ, at mu nekk';
+
+  @override
   String get labelConsensus => 'Déggoo';
 
   @override
@@ -1986,6 +1995,10 @@ class AppLocalizationsWo extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Wàllu benefis bi ñu séddale ni dividand. Lu ëpp 100%, sosiete bi dafay fey lu ëpp li mu gañe, te loolu yàggul.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Ni dividand ci aksiyoŋ bu nekk yokkoo at mu nekk, ci diggante, ci juróom at yu mujj yi. Yokkute gu sax dafa faral di wone ne sosiete bi dafa wóolu xaalis bi koy dugg; wàññi ko dafa faral di doon màndarga moytu.';
 
   @override
   String get glossYieldOnCost =>

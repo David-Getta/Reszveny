@@ -752,5 +752,9 @@
   "portfolioSplitDate": "સ્પ્લિટની તારીખ",
   "portfolioSplitRow": "સ્ટૉક સ્પ્લિટ {ratio}",
   "portfolioSplitRemoved": "સ્ટૉક સ્પ્લિટ કાઢી નાખ્યો",
-  "portfolioSplitsImported": "{count, plural, =1{1 સ્ટૉક સ્પ્લિટ ઉમેરાયો} other{{count} સ્ટૉક સ્પ્લિટ ઉમેરાયા}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 સ્ટૉક સ્પ્લિટ ઉમેરાયો} other{{count} સ્ટૉક સ્પ્લિટ ઉમેરાયા}}",
+  "labelDividendGrowth5y": "ડિવિડન્ડ વૃદ્ધિ (5 વર્ષ)",
+  "dividendNone": "છેલ્લા 12 મહિનામાં કોઈ ડિવિડન્ડ ચૂકવાયું નથી.",
+  "dividendOnYourShares": "તમારા શેર પર, વાર્ષિક",
+  "glossDividendGrowth5y": "છેલ્લાં પાંચ વર્ષમાં શેર દીઠ ડિવિડન્ડ દર વર્ષે સરેરાશ કેટલું વધ્યું. સ્થિર વૃદ્ધિનો સામાન્ય રીતે અર્થ એ છે કે કંપનીને પોતાના રોકડ પ્રવાહ પર વિશ્વાસ છે; ઘટાડો ઘણીવાર ચેતવણીનો સંકેત હોય છે."
 }

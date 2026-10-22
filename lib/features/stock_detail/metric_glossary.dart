@@ -32,4 +32,5 @@ Map<String, String> metricGlossary(AppLocalizations l10n) => {
   l10n.labelDividendYield: l10n.glossDividendYield,
   l10n.labelDividendPerShare: l10n.glossDividendPerShare,
   l10n.labelPayoutRatio: l10n.glossPayoutRatio,
+  l10n.labelDividendGrowth5y: l10n.glossDividendGrowth5y,
 };

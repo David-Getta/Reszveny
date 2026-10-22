@@ -290,6 +290,15 @@ class AppLocalizationsLv extends AppLocalizations {
   String get labelYieldOnCost => 'Ienesīgums pret pirkuma cenu';
 
   @override
+  String get labelDividendGrowth5y => 'Dividenžu pieaugums (5 g.)';
+
+  @override
+  String get dividendNone => 'Pēdējos 12 mēnešos dividendes nav izmaksātas.';
+
+  @override
+  String get dividendOnYourShares => 'Par jūsu akcijām, gadā';
+
+  @override
   String get labelConsensus => 'Konsenss';
 
   @override
@@ -2031,6 +2040,10 @@ class AppLocalizationsLv extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Peļņas daļa, ko izmaksā dividendēs. Virs 100% uzņēmums izmaksā vairāk, nekā nopelna, un tas reti ilgst.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Cik vidēji gadā pēdējo piecu gadu laikā pieaugusi dividende uz akciju. Stabils pieaugums parasti nozīmē, ka uzņēmums uzticas savai naudas plūsmai; samazinājums bieži ir brīdinājuma zīme.';
 
   @override
   String get glossYieldOnCost =>

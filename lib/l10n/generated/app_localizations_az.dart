@@ -291,6 +291,15 @@ class AppLocalizationsAz extends AppLocalizations {
   String get labelYieldOnCost => 'Alış qiymətinə görə gəlirlilik';
 
   @override
+  String get labelDividendGrowth5y => 'Dividend artımı (5 il)';
+
+  @override
+  String get dividendNone => 'Son 12 ayda dividend ödənilməyib.';
+
+  @override
+  String get dividendOnYourShares => 'Səhmlərinizə görə, illik';
+
+  @override
   String get labelConsensus => 'Konsensus';
 
   @override
@@ -1993,6 +2002,10 @@ class AppLocalizationsAz extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Mənfəətin dividend kimi ödənilən payı. 100%-dən yuxarı şirkət qazandığından çox ödəyir və bu nadir hallarda davam edir.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Səhm başına dividendin son beş ildə orta hesabla ildə nə qədər artdığı. Sabit artım adətən şirkətin pul axınına güvəndiyini göstərir; dividendin azaldılması isə çox vaxt xəbərdarlıq əlamətidir.';
 
   @override
   String get glossYieldOnCost =>

@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Umhla wokwahlulwa",
   "portfolioSplitRow": "Ukwahlulwa kwezabelo {ratio}",
   "portfolioSplitRemoved": "Ukwahlulwa kwezabelo kucinyiwe",
-  "portfolioSplitsImported": "{count, plural, =1{Ukwahlulwa kwezabelo oku-1 kongeziwe} other{Ukwahlulwa kwezabelo oku-{count} kongeziwe}}"
+  "portfolioSplitsImported": "{count, plural, =1{Ukwahlulwa kwezabelo oku-1 kongeziwe} other{Ukwahlulwa kwezabelo oku-{count} kongeziwe}}",
+  "labelDividendGrowth5y": "Ukukhula kwe-dividend (iminyaka eyi-5)",
+  "dividendNone": "Akukho dividend ihlawulweyo kwiinyanga ezili-12 ezidlulileyo.",
+  "dividendOnYourShares": "Kwizabelo zakho, ngonyaka",
+  "glossDividendGrowth5y": "I-dividend ngesabelo ngasinye ikhule kangakanani ngonyaka ngokomndilili kwiminyaka emihlanu edlulileyo. Ukukhula okuzinzileyo kudla ngokuthetha ukuba inkampani iyakuthemba ukuhamba kwemali yayo; ukuncitshiswa kudla ngokuba luphawu lwesilumkiso."
 }

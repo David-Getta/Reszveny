@@ -752,5 +752,9 @@
   "portfolioSplitDate": "ዕለት ምክፍፋል",
   "portfolioSplitRow": "ምክፍፋል ኣክስዮን {ratio}",
   "portfolioSplitRemoved": "ምክፍፋል ኣክስዮን ተደምሲሱ",
-  "portfolioSplitsImported": "{count, plural, =1{1 ምክፍፋል ኣክስዮን ተወሲኹ} other{{count} ምክፍፋላት ኣክስዮን ተወሲኾም}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 ምክፍፋል ኣክስዮን ተወሲኹ} other{{count} ምክፍፋላት ኣክስዮን ተወሲኾም}}",
+  "labelDividendGrowth5y": "ዕቤት ብጽሒት ትርፊ (5 ዓመት)",
+  "dividendNone": "ኣብ ዝሓለፉ 12 ኣዋርሕ ብጽሒት ትርፊ ኣይተኸፍለን።",
+  "dividendOnYourShares": "ኣብ ኣክሲዮናትኩም፣ ኣብ ዓመት",
+  "glossDividendGrowth5y": "ብጽሒት ትርፊ ንሓደ ኣክሲዮን ኣብ ዝሓለፉ ሓሙሽተ ዓመታት ብማእከላይ ኣብ ዓመት ክንደይ ከም ዝዓበየ። ቀጻሊ ዕቤት መብዛሕትኡ ግዜ እቲ ኩባንያ ብገንዘባዊ ውሕዝኡ ከም ዝኣምን የርኢ፤ ምጉዳል ድማ መብዛሕትኡ ግዜ ምልክት ማስጠንቀቕታ እዩ።"
 }

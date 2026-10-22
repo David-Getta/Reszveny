@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Data do desdobramento",
   "portfolioSplitRow": "Desdobramento de accións {ratio}",
   "portfolioSplitRemoved": "Desdobramento de accións eliminado",
-  "portfolioSplitsImported": "{count, plural, =1{Engadiuse 1 desdobramento de accións} other{Engadíronse {count} desdobramentos de accións}}"
+  "portfolioSplitsImported": "{count, plural, =1{Engadiuse 1 desdobramento de accións} other{Engadíronse {count} desdobramentos de accións}}",
+  "labelDividendGrowth5y": "Crecemento do dividendo (5 anos)",
+  "dividendNone": "Non pagou dividendos nos últimos 12 meses.",
+  "dividendOnYourShares": "Sobre as túas accións, ao ano",
+  "glossDividendGrowth5y": "Canto medrou de media cada ano o dividendo por acción nos últimos cinco anos. Un crecemento constante adoita indicar que a empresa confía no seu fluxo de caixa; un recorte a miúdo é un sinal de alerta."
 }

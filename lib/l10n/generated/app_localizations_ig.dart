@@ -290,6 +290,15 @@ class AppLocalizationsIg extends AppLocalizations {
   String get labelYieldOnCost => 'Mkpụrụ dividend n\'ọnụahịa ịzụ';
 
   @override
+  String get labelDividendGrowth5y => 'Uto dividend (afọ 5)';
+
+  @override
+  String get dividendNone => 'Akwụghị dividend ọ bụla n\'ime ọnwa 12 gara aga.';
+
+  @override
+  String get dividendOnYourShares => 'Na share gị, kwa afọ';
+
+  @override
   String get labelConsensus => 'Nkwekọrịta';
 
   @override
@@ -1986,6 +1995,10 @@ class AppLocalizationsIg extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Òkè uru a na-akwụ dị ka dividend. Karịa 100%, ụlọ ọrụ ahụ na-akwụ karịa ihe ọ na-enweta, nke anaghị adịgide.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Ole dividend kwa share tolitere kwa afọ n\'nkezi n\'ime afọ ise gara aga. Uto na-aga n\'ihu nke ọma na-egosikarị na ụlọ ọrụ ahụ tụkwasịrị obi n\'ego na-abata na nke na-apụ ya; mbelata na-abụkarị ihe ịdọ aka ná ntị.';
 
   @override
   String get glossYieldOnCost =>

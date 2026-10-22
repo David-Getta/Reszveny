@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Datum des Splits",
   "portfolioSplitRow": "Aktiensplit {ratio}",
   "portfolioSplitRemoved": "Aktiensplit gelöscht",
-  "portfolioSplitsImported": "{count, plural, =1{1 Aktiensplit hinzugefügt} other{{count} Aktiensplits hinzugefügt}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 Aktiensplit hinzugefügt} other{{count} Aktiensplits hinzugefügt}}",
+  "labelDividendGrowth5y": "Dividendenwachstum (5 J.)",
+  "dividendNone": "In den letzten 12 Monaten wurde keine Dividende gezahlt.",
+  "dividendOnYourShares": "Auf deine Aktien, pro Jahr",
+  "glossDividendGrowth5y": "Wie stark die Dividende je Aktie in den letzten fünf Jahren im Schnitt pro Jahr gewachsen ist. Stetiges Wachstum heißt meist, dass das Unternehmen seinem Cashflow vertraut; eine Kürzung ist oft ein Warnsignal."
 }

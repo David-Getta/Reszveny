@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Itariki y'igabanywa",
   "portfolioSplitRow": "Igabanywa ry'imigabane {ratio}",
   "portfolioSplitRemoved": "Igabanywa ry'imigabane ryafuswe",
-  "portfolioSplitsImported": "{count, plural, =1{Igabanywa ry'imigabane 1 ryongewemwo} other{Amagabanywa y'imigabane {count} yongewemwo}}"
+  "portfolioSplitsImported": "{count, plural, =1{Igabanywa ry'imigabane 1 ryongewemwo} other{Amagabanywa y'imigabane {count} yongewemwo}}",
+  "labelDividendGrowth5y": "Iyongerekana ry'inyungu ku migabane (imyaka 5)",
+  "dividendNone": "Nta nyungu ku migabane yarihwe mu mezi 12 aheze.",
+  "dividendOnYourShares": "Ku migabane yawe, ku mwaka",
+  "glossDividendGrowth5y": "Ingene inyungu kuri buri mugabane yagiye yongerekana ku mwaka, ku kigereranyo, mu myaka itanu iheze. Iyongerekana ridahagarara kenshi risobanura ko isosiyete yizigiye amafaranga yinjiza; kuyigabanya kenshi ni ikimenyetso c'umuburo."
 }

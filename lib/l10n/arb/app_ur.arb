@@ -752,5 +752,9 @@
   "portfolioSplitDate": "تقسیم کی تاریخ",
   "portfolioSplitRow": "حصص کی تقسیم {ratio}",
   "portfolioSplitRemoved": "حصص کی تقسیم حذف کر دی گئی",
-  "portfolioSplitsImported": "{count, plural, =1{1 حصص کی تقسیم شامل کی گئی} other{{count} حصص کی تقسیمیں شامل کی گئیں}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 حصص کی تقسیم شامل کی گئی} other{{count} حصص کی تقسیمیں شامل کی گئیں}}",
+  "labelDividendGrowth5y": "ڈیویڈنڈ میں اضافہ (5 سال)",
+  "dividendNone": "پچھلے 12 مہینوں میں کوئی ڈیویڈنڈ ادا نہیں کیا گیا۔",
+  "dividendOnYourShares": "آپ کے شیئرز پر، سالانہ",
+  "glossDividendGrowth5y": "پچھلے پانچ سالوں میں فی شیئر ڈیویڈنڈ ہر سال اوسطاً کتنا بڑھا۔ مستقل اضافے کا عموماً مطلب ہوتا ہے کہ کمپنی کو اپنے نقد بہاؤ پر بھروسہ ہے؛ کٹوتی اکثر ایک انتباہی علامت ہوتی ہے۔"
 }

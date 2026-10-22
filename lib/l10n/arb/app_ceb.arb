@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Petsa sa split",
   "portfolioSplitRow": "Stock split {ratio}",
   "portfolioSplitRemoved": "Gipapas ang stock split",
-  "portfolioSplitsImported": "{count, plural, =1{1 stock split ang gidugang} other{{count} stock split ang gidugang}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 stock split ang gidugang} other{{count} stock split ang gidugang}}",
+  "labelDividendGrowth5y": "Pagtubo sa dibidendo (5 ka tuig)",
+  "dividendNone": "Walay dibidendo nga gibayad sulod sa miaging 12 ka bulan.",
+  "dividendOnYourShares": "Sa imong mga share, kada tuig",
+  "glossDividendGrowth5y": "Pila ang gitubo sa dibidendo matag share kada tuig sa aberids sulod sa miaging lima ka tuig. Ang makanunayong pagtubo kasagaran nagpasabot nga nagsalig ang kompanya sa iyang cash flow; ang pagkunhod kasagaran usa ka timaan sa pasidaan."
 }

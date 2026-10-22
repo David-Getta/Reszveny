@@ -752,5 +752,9 @@
   "portfolioSplitDate": "බෙදීමේ දිනය",
   "portfolioSplitRow": "කොටස් බෙදීම {ratio}",
   "portfolioSplitRemoved": "කොටස් බෙදීම මකා දමන ලදී",
-  "portfolioSplitsImported": "{count, plural, =1{කොටස් බෙදීම් 1ක් එක් කළා} other{කොටස් බෙදීම් {count}ක් එක් කළා}}"
+  "portfolioSplitsImported": "{count, plural, =1{කොටස් බෙදීම් 1ක් එක් කළා} other{කොටස් බෙදීම් {count}ක් එක් කළා}}",
+  "labelDividendGrowth5y": "ලාභාංශ වර්ධනය (වසර 5)",
+  "dividendNone": "පසුගිය මාස 12 තුළ ලාභාංශ ගෙවා නැත.",
+  "dividendOnYourShares": "ඔබේ කොටස් මත, වසරකට",
+  "glossDividendGrowth5y": "පසුගිය වසර පහ තුළ කොටසකට ලාභාංශය වසරකට සාමාන්‍යයෙන් කොපමණ වර්ධනය වූවාද. ස්ථාවර වර්ධනය බොහෝ විට පෙන්නුම් කරන්නේ සමාගම තම මුදල් ප්‍රවාහය ගැන විශ්වාසයෙන් සිටින බවයි; කප්පාදුවක් නිතර අනතුරු ඇඟවීමේ ලකුණකි."
 }

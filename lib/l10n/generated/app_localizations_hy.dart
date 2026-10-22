@@ -291,6 +291,15 @@ class AppLocalizationsHy extends AppLocalizations {
   String get labelYieldOnCost => 'Եկամտաբերություն գնման գնից';
 
   @override
+  String get labelDividendGrowth5y => 'Շահաբաժնի աճ (5 տ.)';
+
+  @override
+  String get dividendNone => 'Վերջին 12 ամսում շահաբաժին չի վճարվել։';
+
+  @override
+  String get dividendOnYourShares => 'Ձեր բաժնետոմսերի դիմաց, տարեկան';
+
+  @override
   String get labelConsensus => 'Կոնսենսուս';
 
   @override
@@ -1999,6 +2008,10 @@ class AppLocalizationsHy extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Շահույթի այն մասը, որը վճարվում է որպես շահաբաժին։ 100%-ից բարձրի դեպքում ընկերությունը վճարում է ավելին, քան վաստակում է, ինչը հազվադեպ է երկար տևում։';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Ցույց է տալիս, թե միջինում տարեկան որքան է աճել մեկ բաժնետոմսի դիմաց շահաբաժինը վերջին հինգ տարում։ Կայուն աճը սովորաբար նշանակում է, որ ընկերությունը վստահում է իր դրամական հոսքերին, իսկ կրճատումը հաճախ նախազգուշացնող նշան է։';
 
   @override
   String get glossYieldOnCost =>

@@ -291,6 +291,15 @@ class AppLocalizationsOr extends AppLocalizations {
   String get labelYieldOnCost => 'କ୍ରୟ ମୂଲ୍ୟ ଉପରେ ୟିଲ୍ଡ';
 
   @override
+  String get labelDividendGrowth5y => 'ଲାଭାଂଶ ବୃଦ୍ଧି (5 ବର୍ଷ)';
+
+  @override
+  String get dividendNone => 'ଗତ 12 ମାସରେ କୌଣସି ଲାଭାଂଶ ଦିଆଯାଇନାହିଁ।';
+
+  @override
+  String get dividendOnYourShares => 'ଆପଣଙ୍କ ସେୟାର ଉପରେ, ବାର୍ଷିକ';
+
+  @override
   String get labelConsensus => 'ସର୍ବସମ୍ମତି';
 
   @override
@@ -1989,6 +1998,10 @@ class AppLocalizationsOr extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'ଲାଭର କେତେ ଅଂଶ ଲାଭାଂଶ ଭାବେ ଦିଆଯାଏ। 100% ରୁ ଅଧିକ ହେଲେ କମ୍ପାନୀ ଯେତେ ରୋଜଗାର କରେ ତାଠାରୁ ଅଧିକ ଦିଏ, ଯାହା କ୍ୱଚିତ୍ ସ୍ଥାୟୀ ହୁଏ।';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'ଗତ ପାଞ୍ଚ ବର୍ଷରେ ପ୍ରତି ସେୟାର ଲାଭାଂଶ ବାର୍ଷିକ ହାରାହାରି କେତେ ବଢ଼ିଲା। ସ୍ଥିର ବୃଦ୍ଧି ସାଧାରଣତଃ ଦର୍ଶାଏ ଯେ କମ୍ପାନୀ ନିଜ ନଗଦ ପ୍ରବାହ ଉପରେ ଭରସା କରେ; ହ୍ରାସ ପ୍ରାୟତଃ ଏକ ଚେତାବନୀ ସଙ୍କେତ।';
 
   @override
   String get glossYieldOnCost =>

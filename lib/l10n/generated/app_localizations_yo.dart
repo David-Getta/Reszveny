@@ -291,6 +291,15 @@ class AppLocalizationsYo extends AppLocalizations {
   String get labelYieldOnCost => 'Ìwọ̀n èrè lórí owó tí o san';
 
   @override
+  String get labelDividendGrowth5y => 'Ìdàgbàsókè èrè ìpín (ọdún 5)';
+
+  @override
+  String get dividendNone => 'Wọn kò san èrè ìpín kankan ní oṣù 12 sẹ́yìn.';
+
+  @override
+  String get dividendOnYourShares => 'Lórí àwọn ìpín rẹ, lọ́dún';
+
+  @override
   String get labelConsensus => 'Èrò gbogbogbò';
 
   @override
@@ -1991,6 +2000,10 @@ class AppLocalizationsYo extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Ìpín èrè tí wọ́n san jáde gẹ́gẹ́ bí èrè ìpín. Lókè 100% ilé-iṣẹ́ náà ń san ju ohun tó ń pa lọ, èyí tí kì í sábà pẹ́.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Bí èrè ìpín fún ìpín kọ̀ọ̀kan ṣe pọ̀ sí i tó lọ́dún ní ìpíndọ́gba láàrin ọdún márùn-ún sẹ́yìn. Ìdàgbàsókè tó dúró ṣinṣin sábà máa ń fi hàn pé ilé-iṣẹ́ náà gbẹ́kẹ̀lé ìṣàn owó rẹ̀; dídín in kù sábà máa ń jẹ́ àmì ìkìlọ̀.';
 
   @override
   String get glossYieldOnCost =>

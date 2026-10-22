@@ -291,6 +291,16 @@ class AppLocalizationsFil extends AppLocalizations {
   String get labelYieldOnCost => 'Yield on cost';
 
   @override
+  String get labelDividendGrowth5y => 'Paglago ng dibidendo (5 taon)';
+
+  @override
+  String get dividendNone =>
+      'Walang dibidendong ibinayad sa nakalipas na 12 buwan.';
+
+  @override
+  String get dividendOnYourShares => 'Sa iyong mga share, kada taon';
+
+  @override
   String get labelConsensus => 'Consensus';
 
   @override
@@ -1998,6 +2008,10 @@ class AppLocalizationsFil extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Ang bahagi ng tubo na ibinabayad bilang dibidendo. Kapag lampas sa 100%, mas malaki ang ibinabayad ng kumpanya kaysa sa kinikita nito, na bihirang tumagal.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Gaano kalaki ang average na taunang paglago ng dibidendo kada share sa nakalipas na limang taon. Kadalasang ibig sabihin ng tuloy-tuloy na paglago na may tiwala ang kompanya sa cash flow nito; ang pagbawas ay madalas na babala.';
 
   @override
   String get glossYieldOnCost =>

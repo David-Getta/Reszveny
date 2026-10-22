@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Ngày chia tách",
   "portfolioSplitRow": "Chia tách cổ phiếu {ratio}",
   "portfolioSplitRemoved": "Đã xóa chia tách cổ phiếu",
-  "portfolioSplitsImported": "{count, plural, =1{Đã thêm 1 đợt chia tách cổ phiếu} other{Đã thêm {count} đợt chia tách cổ phiếu}}"
+  "portfolioSplitsImported": "{count, plural, =1{Đã thêm 1 đợt chia tách cổ phiếu} other{Đã thêm {count} đợt chia tách cổ phiếu}}",
+  "labelDividendGrowth5y": "Tăng trưởng cổ tức (5 năm)",
+  "dividendNone": "Không trả cổ tức trong 12 tháng qua.",
+  "dividendOnYourShares": "Trên số cổ phiếu của bạn, mỗi năm",
+  "glossDividendGrowth5y": "Cổ tức trên mỗi cổ phiếu đã tăng trung bình bao nhiêu mỗi năm trong 5 năm qua. Tăng trưởng đều đặn thường cho thấy công ty tin tưởng vào dòng tiền của mình; việc cắt giảm thường là dấu hiệu cảnh báo."
 }

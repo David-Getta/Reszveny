@@ -291,6 +291,15 @@ class AppLocalizationsBo extends AppLocalizations {
   String get labelYieldOnCost => 'མ་གནས་ཐོག་ཁེ་འབབ་ཚད';
 
   @override
+  String get labelDividendGrowth5y => 'ཁེ་བགོའི་འཕེལ་ཚད (ལོ་ 5)';
+
+  @override
+  String get dividendNone => 'ཟླ་བ་ 12 སྔོན་ནས་ཁེ་བགོ་གང་ཡང་སྤྲད་མེད།';
+
+  @override
+  String get dividendOnYourShares => 'ཁྱེད་ཀྱི་ཧུར་ཁག་ལ་ལོ་རེར';
+
+  @override
   String get labelConsensus => 'མཐུན་མོང་བསམ་འཆར';
 
   @override
@@ -1983,6 +1992,10 @@ class AppLocalizationsBo extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'ཁེ་སྤོགས་ལས་ཁེ་བགོར་སྤྲད་པའི་ཆ་ཚད། 100% ལས་བརྒལ་ན་ཚོང་ཁང་གིས་ཐོབ་པ་ལས་མང་བ་སྤྲོད་ཀྱི་ཡོད་པས་ཡུན་རིང་མི་ཐུབ།';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'ལོ་ལྔ་སྔོན་ནས་ཧུར་ཁག་རེའི་ཁེ་བགོ་ལོ་རེར་ཆ་སྙོམས་གང་ཙམ་འཕེལ་ཡོད་པ། འཕེལ་ཚད་བརྟན་པོ་ཡིན་ན་སྤྱིར་བཏང་ཀུང་སིས་ཀྱིས་རང་གི་དངུལ་ལག་མའི་རྒྱུན་ལ་ཡིད་ཆེས་ཡོད་པ་མཚོན། ཁེ་བགོ་ཇེ་ཉུང་དུ་བཏང་ན་རྒྱུན་དུ་ཉེན་བརྡ་ཞིག་ཡིན།';
 
   @override
   String get glossYieldOnCost =>

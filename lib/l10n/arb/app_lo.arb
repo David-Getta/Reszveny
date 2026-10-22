@@ -752,5 +752,9 @@
   "portfolioSplitDate": "ວັນທີແບ່ງຫຸ້ນ",
   "portfolioSplitRow": "ການແບ່ງຫຸ້ນ {ratio}",
   "portfolioSplitRemoved": "ລຶບການແບ່ງຫຸ້ນແລ້ວ",
-  "portfolioSplitsImported": "{count, plural, =1{ເພີ່ມການແບ່ງຫຸ້ນ 1 ຄັ້ງແລ້ວ} other{ເພີ່ມການແບ່ງຫຸ້ນ {count} ຄັ້ງແລ້ວ}}"
+  "portfolioSplitsImported": "{count, plural, =1{ເພີ່ມການແບ່ງຫຸ້ນ 1 ຄັ້ງແລ້ວ} other{ເພີ່ມການແບ່ງຫຸ້ນ {count} ຄັ້ງແລ້ວ}}",
+  "labelDividendGrowth5y": "ການເຕີບໂຕຂອງເງິນປັນຜົນ (5 ປີ)",
+  "dividendNone": "ບໍ່ມີການຈ່າຍເງິນປັນຜົນໃນ 12 ເດືອນຜ່ານມາ.",
+  "dividendOnYourShares": "ຈາກຮຸ້ນຂອງທ່ານ ຕໍ່ປີ",
+  "glossDividendGrowth5y": "ເງິນປັນຜົນຕໍ່ຮຸ້ນເຕີບໂຕສະເລ່ຍປີລະເທົ່າໃດໃນຫ້າປີຜ່ານມາ. ການເຕີບໂຕຢ່າງໝັ້ນຄົງໂດຍທົ່ວໄປໝາຍຄວາມວ່າບໍລິສັດໝັ້ນໃຈໃນກະແສເງິນສົດຂອງຕົນ; ການຫຼຸດລົງມັກເປັນສັນຍານເຕືອນ."
 }

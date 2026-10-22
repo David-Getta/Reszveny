@@ -290,6 +290,16 @@ class AppLocalizationsId extends AppLocalizations {
   String get labelYieldOnCost => 'Imbal hasil atas harga beli';
 
   @override
+  String get labelDividendGrowth5y => 'Pertumbuhan dividen (5 thn)';
+
+  @override
+  String get dividendNone =>
+      'Tidak ada dividen yang dibayarkan dalam 12 bulan terakhir.';
+
+  @override
+  String get dividendOnYourShares => 'Atas saham Anda, per tahun';
+
+  @override
   String get labelConsensus => 'Konsensus';
 
   @override
@@ -1988,6 +1998,10 @@ class AppLocalizationsId extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Bagian laba yang dibagikan sebagai dividen. Di atas 100% perusahaan membayar lebih dari yang dihasilkannya, dan itu jarang bertahan lama.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Seberapa besar dividen per saham tumbuh rata-rata per tahun selama lima tahun terakhir. Pertumbuhan yang stabil biasanya berarti perusahaan yakin dengan arus kasnya; pemangkasan sering kali merupakan tanda peringatan.';
 
   @override
   String get glossYieldOnCost =>

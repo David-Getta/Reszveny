@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Mamã ƒe ŋkeke",
   "portfolioSplitRow": "Share mamã {ratio}",
   "portfolioSplitRemoved": "Wotutu share mamã la",
-  "portfolioSplitsImported": "{count, plural, =1{Wotsɔ share mamã 1 kpe ɖe eŋu} other{Wotsɔ share mamã {count} kpe ɖe eŋu}}"
+  "portfolioSplitsImported": "{count, plural, =1{Wotsɔ share mamã 1 kpe ɖe eŋu} other{Wotsɔ share mamã {count} kpe ɖe eŋu}}",
+  "labelDividendGrowth5y": "Viɖemama ƒe dzidziɖedzi (ƒe 5)",
+  "dividendNone": "Womexe viɖemama aɖeke le ɣleti 12 siwo va yi me o.",
+  "dividendOnYourShares": "Le wò akpawo ŋu, ƒe sia ƒe",
+  "glossDividendGrowth5y": "Alesi viɖemama le akpa ɖesiaɖe ŋu dzi ɖe edzi ƒe sia ƒe le titina le ƒe atɔ̃ siwo va yi me. Dzidziɖedzi si li ke zi geɖe fiana be dɔwɔƒea ka ɖe ga si gena ɖe eme kple esi dona le eme dzi; viɖemama ƒe ɖiɖiɖe zi geɖe nye nuxlɔ̃ame ƒe dzesi."
 }

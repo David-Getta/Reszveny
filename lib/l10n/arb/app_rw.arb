@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Itariki y'igabanywa",
   "portfolioSplitRow": "Igabanywa ry'imigabane {ratio}",
   "portfolioSplitRemoved": "Igabanywa ry'imigabane ryasibwe",
-  "portfolioSplitsImported": "{count, plural, =1{Igabanywa ry'imigabane 1 ryongewemo} other{Amagabanywa y'imigabane {count} yongewemo}}"
+  "portfolioSplitsImported": "{count, plural, =1{Igabanywa ry'imigabane 1 ryongewemo} other{Amagabanywa y'imigabane {count} yongewemo}}",
+  "labelDividendGrowth5y": "Izamuka ry'inyungu ku migabane (imyaka 5)",
+  "dividendNone": "Nta nyungu ku migabane yishyuwe mu mezi 12 ashize.",
+  "dividendOnYourShares": "Ku migabane yawe, ku mwaka",
+  "glossDividendGrowth5y": "Uko inyungu kuri buri mugabane yazamutse ku mwaka, ku kigereranyo, mu myaka itanu ishize. Izamuka rihoraho akenshi risobanura ko ikigo cyizeye amafaranga cyinjiza; kuyigabanya akenshi ni ikimenyetso cyo kuburira."
 }

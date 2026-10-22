@@ -292,6 +292,15 @@ class AppLocalizationsQu extends AppLocalizations {
   String get labelYieldOnCost => 'Rantisqa chaninpi rendimiento';
 
   @override
+  String get labelDividendGrowth5y => 'Dividendopa wiñaynin (5 wata)';
+
+  @override
+  String get dividendNone => 'Qhipa 12 killapi mana dividendo pagasqachu.';
+
+  @override
+  String get dividendOnYourShares => 'Accionniykikunapaq, watapi';
+
+  @override
   String get labelConsensus => 'Consenso';
 
   @override
@@ -2002,6 +2011,10 @@ class AppLocalizationsQu extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Gananciamanta hayk\'a t\'aqa dividendo hina rakisqa. 100% hanaqpi, empresa ganasqanmanta aswanta pagan, chayqa pisillata unan.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Sapa accionpaq dividendo hayk\'ata wiñarqan sapa wata, chawpinpi, qhipa pichqa watakunapi. Takyasqa wiñayqa achkha kutipi rikuchin empresa qullqi puriyninpi hap\'ipakusqanta; pisiyachiyqa achkha kutipi willakuq unancha.';
 
   @override
   String get glossYieldOnCost =>

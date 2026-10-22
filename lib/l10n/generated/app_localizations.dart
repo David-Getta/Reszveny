@@ -871,6 +871,24 @@ abstract class AppLocalizations {
   /// **'Yield on cost'**
   String get labelYieldOnCost;
 
+  /// Row label on the stock page and in the comparison: average yearly growth of the dividend per share over the last five years, in percent.
+  ///
+  /// In en, this message translates to:
+  /// **'Dividend growth (5y)'**
+  String get labelDividendGrowth5y;
+
+  /// Shown in the stock page's Dividend card instead of the rows when the company paid no dividend in the last 12 months.
+  ///
+  /// In en, this message translates to:
+  /// **'No dividend paid in the last 12 months.'**
+  String get dividendNone;
+
+  /// Row label in the stock page's Dividend card when the stock is in the user's portfolio; the value is the approximate yearly dividend for the shares they hold, like '~ 41.60 USD'.
+  ///
+  /// In en, this message translates to:
+  /// **'On your shares, a year'**
+  String get dividendOnYourShares;
+
   /// No description provided for @labelConsensus.
   ///
   /// In en, this message translates to:
@@ -3570,6 +3588,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'The share of profit paid out as dividends. Above 100% the company pays more than it earns, which rarely lasts.'**
   String get glossPayoutRatio;
+
+  /// Plain-language explanation of the metric shown as labelDividendGrowth5y, opened from the info icon on the stock page and listed in the glossary.
+  ///
+  /// In en, this message translates to:
+  /// **'How much the dividend per share grew a year on average over the last five years. Steady growth usually means the company trusts its cash flow; a cut is often a warning sign.'**
+  String get glossDividendGrowth5y;
 
   /// Plain-language explanation of the figure shown as labelYieldOnCost on the position card and in the glossary.
   ///

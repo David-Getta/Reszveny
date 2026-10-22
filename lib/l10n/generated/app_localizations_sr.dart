@@ -290,6 +290,15 @@ class AppLocalizationsSr extends AppLocalizations {
   String get labelYieldOnCost => 'Принос на набавну цену';
 
   @override
+  String get labelDividendGrowth5y => 'Раст дивиденде (5 год.)';
+
+  @override
+  String get dividendNone => 'У последњих 12 месеци није исплаћена дивиденда.';
+
+  @override
+  String get dividendOnYourShares => 'На ваше акције, годишње';
+
+  @override
   String get labelConsensus => 'Консензус';
 
   @override
@@ -2030,6 +2039,10 @@ class AppLocalizationsSr extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Удео добити који се исплаћује као дивиденде. Изнад 100% компанија исплаћује више него што зарађује, што ретко дуго траје.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Колико је дивиденда по акцији у просеку годишње расла у последњих пет година. Стабилан раст обично значи да компанија има поверења у свој новчани ток; смањење је често знак упозорења.';
 
   @override
   String get glossYieldOnCost =>

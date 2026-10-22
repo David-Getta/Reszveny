@@ -291,6 +291,15 @@ class AppLocalizationsRo extends AppLocalizations {
   String get labelYieldOnCost => 'Randament la prețul de achiziție';
 
   @override
+  String get labelDividendGrowth5y => 'Creșterea dividendului (5 ani)';
+
+  @override
+  String get dividendNone => 'Niciun dividend plătit în ultimele 12 luni.';
+
+  @override
+  String get dividendOnYourShares => 'Pe acțiunile tale, anual';
+
+  @override
   String get labelConsensus => 'Consens';
 
   @override
@@ -2024,6 +2033,10 @@ class AppLocalizationsRo extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Partea din profit plătită ca dividende. Peste 100%, compania plătește mai mult decât câștigă, ceea ce rareori durează.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Cât a crescut în medie pe an dividendul pe acțiune în ultimii cinci ani. O creștere constantă înseamnă de obicei că firma are încredere în fluxul său de numerar; o reducere este adesea un semnal de alarmă.';
 
   @override
   String get glossYieldOnCost =>

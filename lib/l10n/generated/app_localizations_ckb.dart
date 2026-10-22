@@ -290,6 +290,15 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get labelYieldOnCost => 'ڕێژەی قازانج بەپێی تێچوو';
 
   @override
+  String get labelDividendGrowth5y => 'گەشەی قازانجی پشک (5 ساڵ)';
+
+  @override
+  String get dividendNone => 'لە 12 مانگی ڕابردوودا هیچ قازانجێکی پشک نەدراوە.';
+
+  @override
+  String get dividendOnYourShares => 'لەسەر پشکەکانت، ساڵانە';
+
+  @override
   String get labelConsensus => 'کۆدەنگی';
 
   @override
@@ -1992,6 +2001,10 @@ class AppLocalizationsCkb extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'ئەو بەشەی قازانج کە وەک قازانجی پشک دابەش دەکرێت. سەروو 100% کۆمپانیاکە زیاتر لە داهاتی خۆی دەدات، کە بە دەگمەن بەردەوام دەبێت.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'قازانجی هەر پشکێک لە پێنج ساڵی ڕابردوودا بە تێکڕا ساڵانە چەندە گەشەی کردووە. گەشەی جێگیر بە زۆری ئەوە دەگەیەنێت کە کۆمپانیاکە متمانەی بە ڕەوتی پارەی نەختی خۆی هەیە؛ کەمکردنەوەی بە زۆری نیشانەی ئاگادارکردنەوەیە.';
 
   @override
   String get glossYieldOnCost =>

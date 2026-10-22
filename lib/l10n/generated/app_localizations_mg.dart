@@ -292,6 +292,16 @@ class AppLocalizationsMg extends AppLocalizations {
   String get labelYieldOnCost => 'Tahan\'ny dividenda amin\'ny vidiny naloa';
 
   @override
+  String get labelDividendGrowth5y => 'Fitomboan\'ny dividenda (5 taona)';
+
+  @override
+  String get dividendNone =>
+      'Tsy nisy dividenda naloa tao anatin\'ny 12 volana farany.';
+
+  @override
+  String get dividendOnYourShares => 'Amin\'ny aksionanao, isan-taona';
+
+  @override
   String get labelConsensus => 'Hevitra iraisana';
 
   @override
@@ -2005,6 +2015,10 @@ class AppLocalizationsMg extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Ny ampahany amin\'ny tombony zaraina ho dividenda. Mihoatra ny 100% dia mandoa mihoatra noho izay azony ny orinasa, ary tsy maharitra matetika izany.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Hatraiza no nitomboan\'ny dividenda isaky ny aksiona isan-taona, raha atao salan\'isa, tao anatin\'ny dimy taona farany. Ny fitomboana tsy tapaka matetika dia midika fa matoky ny fikorianan\'ny volany ny orinasa; ny fampihenana kosa matetika dia famantarana mampitandrina.';
 
   @override
   String get glossYieldOnCost =>

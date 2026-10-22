@@ -290,6 +290,15 @@ class AppLocalizationsDa extends AppLocalizations {
   String get labelYieldOnCost => 'Afkast på købskurs';
 
   @override
+  String get labelDividendGrowth5y => 'Udbyttevækst (5 år)';
+
+  @override
+  String get dividendNone => 'Intet udbytte udbetalt de seneste 12 måneder.';
+
+  @override
+  String get dividendOnYourShares => 'På dine aktier, om året';
+
+  @override
   String get labelConsensus => 'Konsensus';
 
   @override
@@ -1990,6 +1999,10 @@ class AppLocalizationsDa extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Den del af overskuddet, der udbetales som udbytte. Over 100% udbetaler selskabet mere, end det tjener, hvilket sjældent holder.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Hvor meget udbyttet pr. aktie i gennemsnit er vokset om året over de seneste fem år. Stabil vækst betyder som regel, at selskabet har tillid til sit cashflow; en nedsættelse er ofte et faresignal.';
 
   @override
   String get glossYieldOnCost =>

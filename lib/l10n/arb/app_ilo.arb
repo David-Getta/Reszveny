@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Petsa ti split",
   "portfolioSplitRow": "Stock split {ratio}",
   "portfolioSplitRemoved": "Naikkat ti stock split",
-  "portfolioSplitsImported": "{count, plural, =1{1 stock split ti nainayon} other{{count} stock split ti nainayon}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 stock split ti nainayon} other{{count} stock split ti nainayon}}",
+  "labelDividendGrowth5y": "Panagdakkel ti dibidendo (5 a tawen)",
+  "dividendNone": "Awan ti dibidendo a naibayad iti napalabas a 12 a bulan.",
+  "dividendOnYourShares": "Kadagiti sharem, iti tinawen",
+  "glossDividendGrowth5y": "No kasano ti kadakkel ti inyadu ti dibidendo iti tunggal share iti tinawen, iti promedio, iti napalabas a lima a tawen. Ti agtultuloy a panagdakkel ket kaaduanna a kaipapananna nga agtalek ti kompania iti cash flow-na; ti panangkissay ket masansan a pagilasinan ti pakdaar."
 }

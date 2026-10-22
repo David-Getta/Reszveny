@@ -290,6 +290,16 @@ class AppLocalizationsAk extends AppLocalizations {
   String get labelYieldOnCost => 'Mfaso kyɛ wɔ tɔ bo so';
 
   @override
+  String get labelDividendGrowth5y => 'Mfaso kyɛ nkɔso (mfe 5)';
+
+  @override
+  String get dividendNone =>
+      'Wɔantua mfaso kyɛ biara wɔ abosome 12 a atwam no mu.';
+
+  @override
+  String get dividendOnYourShares => 'Wɔ wo kyɛfa so, afe biara';
+
+  @override
   String get labelConsensus => 'Adwene a wɔapene so';
 
   @override
@@ -1991,6 +2001,10 @@ class AppLocalizationsAk extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Mfaso no ɔfa a wɔde kyɛ sɛ mfaso kyɛ. Sɛ ɛboro 100% a, adwumakuw no tua bɛboro nea ɛnya, na ɛntaa nkyɛ.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Sɛnea mfaso kyɛ wɔ kyɛfa biara so nyinii afe biara, sɛ yɛkyɛ mu pɛpɛɛpɛ a, wɔ mfe enum a atwam no mu. Nkɔso a ɛkɔ so daa taa kyerɛ sɛ adwumakuw no wɔ ahotoso wɔ ne sika a ɛba ne nea ɛkɔ mu; sɛ wɔtew so a, ɛtaa yɛ kɔkɔbɔ sɛnkyerɛnne.';
 
   @override
   String get glossYieldOnCost =>

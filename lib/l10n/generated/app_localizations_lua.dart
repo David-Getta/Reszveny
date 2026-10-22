@@ -290,6 +290,16 @@ class AppLocalizationsLua extends AppLocalizations {
   String get labelYieldOnCost => 'Rendement pa mushinga wa kusumba';
 
   @override
+  String get labelDividendGrowth5y => 'Dikola dia dividende (bidimu 5)';
+
+  @override
+  String get dividendNone =>
+      'Kabavua bafute dividende mu ngondo 12 mishale to.';
+
+  @override
+  String get dividendOnYourShares => 'Pa ba-action bebe, ku tshidimu';
+
+  @override
   String get labelConsensus => 'Meji a bonso';
 
   @override
@@ -1996,6 +2006,10 @@ class AppLocalizationsLua extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Tshitupa tshia dipeta tshidibu bapana bu dividende. Kupita 100%, kompanyi udi ufuta bipite bidiye upeta, ne bualu ebu kabutu bushala matuku a bungi to.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Mushindu udi dividende wa action umue mukole tshidimu tshionso, mu bungi bua pankatshi, mu bidimu bitanu bishale. Dikola dia pa tshibidilu didi dileja bikole ne: kompanyi udi weyemena mfranga yende idi ibuela ne ipatuka; dipuekesha didi misangu mivule tshimanyinu tshia kudimuija.';
 
   @override
   String get glossYieldOnCost =>

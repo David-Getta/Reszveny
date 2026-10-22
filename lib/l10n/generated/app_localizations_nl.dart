@@ -290,6 +290,16 @@ class AppLocalizationsNl extends AppLocalizations {
   String get labelYieldOnCost => 'Rendement op aankoopprijs';
 
   @override
+  String get labelDividendGrowth5y => 'Dividendgroei (5 jr)';
+
+  @override
+  String get dividendNone =>
+      'Geen dividend uitgekeerd in de afgelopen 12 maanden.';
+
+  @override
+  String get dividendOnYourShares => 'Op je aandelen, per jaar';
+
+  @override
   String get labelConsensus => 'Consensus';
 
   @override
@@ -1997,6 +2007,10 @@ class AppLocalizationsNl extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Het deel van de winst dat als dividend wordt uitgekeerd. Boven 100% keert het bedrijf meer uit dan het verdient, wat zelden lang houdbaar is.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Hoeveel het dividend per aandeel de afgelopen vijf jaar gemiddeld per jaar is gegroeid. Gestage groei betekent meestal dat het bedrijf vertrouwen heeft in zijn kasstroom; een verlaging is vaak een waarschuwingssignaal.';
 
   @override
   String get glossYieldOnCost =>

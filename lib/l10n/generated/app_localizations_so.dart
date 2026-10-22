@@ -290,6 +290,16 @@ class AppLocalizationsSo extends AppLocalizations {
   String get labelYieldOnCost => 'Faa\'iidada qiimaha iibsiga';
 
   @override
+  String get labelDividendGrowth5y => 'Kororka qaybta faa\'iidada (5 sano)';
+
+  @override
+  String get dividendNone =>
+      'Wax qaybta faa\'iidada ah lama bixin 12-kii bilood ee la soo dhaafay.';
+
+  @override
+  String get dividendOnYourShares => 'Saamiyadaada, sannadkii';
+
+  @override
   String get labelConsensus => 'Is-afgarad';
 
   @override
@@ -1999,6 +2009,10 @@ class AppLocalizationsSo extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Qaybta faa\'iidada ee loo qaybiyo saamilayda. Ka sarreysa 100% shirkaddu waxay bixinaysaa wax ka badan inta ay kasbato, taas oo dhif ah inay sii socoto.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Inta qaybta faa\'iidada saamigiiba ay celcelis ahaan sannadkii kordhay shantii sano ee la soo dhaafay. Koror joogto ah wuxuu badanaa muujiyaa in shirkaddu ku kalsoon tahay socodka lacageeda caddaanka ah; dhimistu badanaa waa calaamad digniin ah.';
 
   @override
   String get glossYieldOnCost =>

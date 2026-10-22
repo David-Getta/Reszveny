@@ -292,6 +292,15 @@ class AppLocalizationsHu extends AppLocalizations {
   String get labelYieldOnCost => 'Bekerülési osztalékhozam';
 
   @override
+  String get labelDividendGrowth5y => 'Osztaléknövekedés (5 év)';
+
+  @override
+  String get dividendNone => 'Az elmúlt 12 hónapban nem fizetett osztalékot.';
+
+  @override
+  String get dividendOnYourShares => 'A te részvényeidre, évente';
+
+  @override
   String get labelConsensus => 'Konszenzus';
 
   @override
@@ -1996,6 +2005,10 @@ class AppLocalizationsHu extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'A nyereség mekkora részét fizeti ki osztalékként. 100% fölött többet fizet, mint amennyit keres, ami ritkán tartható.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Mennyivel nőtt átlagosan évente a részvényenkénti osztalék az elmúlt öt évben. Az egyenletes növekedés általában azt jelzi, hogy a cég bízik a pénztermelésében; a csökkentés gyakran figyelmeztető jel.';
 
   @override
   String get glossYieldOnCost =>

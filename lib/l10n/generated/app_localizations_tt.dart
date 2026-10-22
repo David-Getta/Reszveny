@@ -291,6 +291,15 @@ class AppLocalizationsTt extends AppLocalizations {
   String get labelYieldOnCost => 'Сатып алу бәясенә керемлелек';
 
   @override
+  String get labelDividendGrowth5y => 'Дивиденд үсеше (5 ел)';
+
+  @override
+  String get dividendNone => 'Соңгы 12 айда дивиденд түләнмәде.';
+
+  @override
+  String get dividendOnYourShares => 'Сезнең акцияләргә, елына';
+
+  @override
   String get labelConsensus => 'Консенсус';
 
   @override
@@ -1988,6 +1997,10 @@ class AppLocalizationsTt extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Табышның дивиденд итеп түләнгән өлеше. 100%-тан югары булса, компания эшләгәненнән күбрәк түли, һәм бу сирәк озакка бара.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Соңгы биш елда бер акциягә дивиденд елына уртача күпме арткан. Тотрыклы үсеш гадәттә компаниянең акча агымына ышанганын аңлата; киметү еш кына кисәтү билгесе була.';
 
   @override
   String get glossYieldOnCost =>

@@ -124,6 +124,18 @@
   "labelDividendPerShare": "Dividend per share",
   "labelPayoutRatio": "Payout ratio",
   "labelYieldOnCost": "Yield on cost",
+  "labelDividendGrowth5y": "Dividend growth (5y)",
+  "@labelDividendGrowth5y": {
+    "description": "Row label on the stock page and in the comparison: average yearly growth of the dividend per share over the last five years, in percent."
+  },
+  "dividendNone": "No dividend paid in the last 12 months.",
+  "@dividendNone": {
+    "description": "Shown in the stock page's Dividend card instead of the rows when the company paid no dividend in the last 12 months."
+  },
+  "dividendOnYourShares": "On your shares, a year",
+  "@dividendOnYourShares": {
+    "description": "Row label in the stock page's Dividend card when the stock is in the user's portfolio; the value is the approximate yearly dividend for the shares they hold, like '~ 41.60 USD'."
+  },
   "labelConsensus": "Consensus",
   "ratingStrongBuy": "Strong buy",
   "ratingBuy": "Buy",
@@ -1493,6 +1505,10 @@
   "glossPayoutRatio": "The share of profit paid out as dividends. Above 100% the company pays more than it earns, which rarely lasts.",
   "@glossPayoutRatio": {
     "description": "Plain-language explanation of the metric shown as labelPayoutRatio, opened from the info icon on the stock page."
+  },
+  "glossDividendGrowth5y": "How much the dividend per share grew a year on average over the last five years. Steady growth usually means the company trusts its cash flow; a cut is often a warning sign.",
+  "@glossDividendGrowth5y": {
+    "description": "Plain-language explanation of the metric shown as labelDividendGrowth5y, opened from the info icon on the stock page and listed in the glossary."
   },
   "glossYieldOnCost": "Dividends received in the last 12 months divided by what you paid for the shares you still hold. Unlike the dividend yield, it is measured against your own purchase price, not today's price.",
   "@glossYieldOnCost": {

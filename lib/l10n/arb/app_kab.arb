@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Azemz n beṭṭu",
   "portfolioSplitRow": "Beṭṭu n yimuren {ratio}",
   "portfolioSplitRemoved": "Beṭṭu n yimuren yettwakkes",
-  "portfolioSplitsImported": "{count, plural, =1{Yettwarna 1 n beṭṭu n yimuren} other{Ttwarnan {count} n beṭṭu n yimuren}}"
+  "portfolioSplitsImported": "{count, plural, =1{Yettwarna 1 n beṭṭu n yimuren} other{Ttwarnan {count} n beṭṭu n yimuren}}",
+  "labelDividendGrowth5y": "Timerna n dividand (5 yiseggasen)",
+  "dividendNone": "Ulac dividand i yettwaxelṣen deg 12 n wayyuren ineggura.",
+  "dividendOnYourShares": "Ɣef yiksyunen-ik, i useggas",
+  "glossDividendGrowth5y": "Acḥal i yernu s talemmast dividand n yal aksyun yal aseggas deg semmus n yiseggasen ineggura. Timerna yerkden s umata tesskan-d belli takebbanit tettkel ɣef tazzla-ines n yedrimen; asenqes yettili s waṭas d tamatart n uḥezzeb."
 }

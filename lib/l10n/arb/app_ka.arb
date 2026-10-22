@@ -752,5 +752,9 @@
   "portfolioSplitDate": "დაყოფის თარიღი",
   "portfolioSplitRow": "აქციების დაყოფა {ratio}",
   "portfolioSplitRemoved": "აქციების დაყოფა წაიშალა",
-  "portfolioSplitsImported": "{count, plural, =1{დაემატა 1 აქციების დაყოფა} other{დაემატა {count} აქციების დაყოფა}}"
+  "portfolioSplitsImported": "{count, plural, =1{დაემატა 1 აქციების დაყოფა} other{დაემატა {count} აქციების დაყოფა}}",
+  "labelDividendGrowth5y": "დივიდენდის ზრდა (5 წ.)",
+  "dividendNone": "ბოლო 12 თვეში დივიდენდი არ გადახდილა.",
+  "dividendOnYourShares": "თქვენს აქციებზე, წელიწადში",
+  "glossDividendGrowth5y": "რამდენით იზრდებოდა ერთ აქციაზე დივიდენდი საშუალოდ წელიწადში ბოლო ხუთი წლის განმავლობაში. სტაბილური ზრდა, როგორც წესი, ნიშნავს, რომ კომპანია ენდობა თავის ფულად ნაკადებს; შემცირება ხშირად გამაფრთხილებელი ნიშანია."
 }

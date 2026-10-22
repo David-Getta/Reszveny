@@ -289,6 +289,15 @@ class AppLocalizationsJa extends AppLocalizations {
   String get labelYieldOnCost => '取得利回り';
 
   @override
+  String get labelDividendGrowth5y => '配当成長率（5年）';
+
+  @override
+  String get dividendNone => '過去12か月間、配当の支払いはありません。';
+
+  @override
+  String get dividendOnYourShares => '保有株の年間配当';
+
+  @override
   String get labelConsensus => 'コンセンサス';
 
   @override
@@ -1922,6 +1931,10 @@ class AppLocalizationsJa extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       '利益のうち配当として支払われる割合。100%を超えると稼いだ以上を払っていることになり、長続きはまれです。';
+
+  @override
+  String get glossDividendGrowth5y =>
+      '過去5年間に1株配当が年平均でどれだけ伸びたか。安定した増配は通常、会社がキャッシュフローに自信を持っていることを示し、減配はしばしば警告のサインです。';
 
   @override
   String get glossYieldOnCost =>

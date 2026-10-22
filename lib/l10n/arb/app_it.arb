@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Data del frazionamento",
   "portfolioSplitRow": "Frazionamento azionario {ratio}",
   "portfolioSplitRemoved": "Frazionamento azionario eliminato",
-  "portfolioSplitsImported": "{count, plural, =1{1 frazionamento azionario aggiunto} other{{count} frazionamenti azionari aggiunti}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 frazionamento azionario aggiunto} other{{count} frazionamenti azionari aggiunti}}",
+  "labelDividendGrowth5y": "Crescita del dividendo (5 anni)",
+  "dividendNone": "Nessun dividendo pagato negli ultimi 12 mesi.",
+  "dividendOnYourShares": "Sulle tue azioni, all’anno",
+  "glossDividendGrowth5y": "Di quanto è cresciuto in media ogni anno il dividendo per azione negli ultimi cinque anni. Una crescita costante di solito indica che l’azienda ha fiducia nel proprio flusso di cassa; un taglio è spesso un segnale d’allarme."
 }

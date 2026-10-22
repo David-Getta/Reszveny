@@ -292,6 +292,16 @@ class AppLocalizationsTs extends AppLocalizations {
   String get labelYieldOnCost => 'Mbuyelo eka nxavo wo xava';
 
   @override
+  String get labelDividendGrowth5y => 'Ku kula ka dividende (malembe ya 5)';
+
+  @override
+  String get dividendNone =>
+      'A ku hakeriwanga dividende eka tin\'hweti ta 12 leti hundzeke.';
+
+  @override
+  String get dividendOnYourShares => 'Eka tixere ta wena, hi lembe';
+
+  @override
   String get labelConsensus => 'Ntwanano';
 
   @override
@@ -2003,6 +2013,10 @@ class AppLocalizationsTs extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Xiphemu xa mbuyelo lexi hakeriwaka tanihi dividende. Ehenhla ka 100% khampani yi hakela ku tlula leswi yi swi kumaka, naswona leswi a swi tshami nkarhi wo leha.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Leswi dividende hi xere yi kuleke ha swona hi lembe hi xiringaniso eka malembe ya ntlhanu lama hundzeke. Ku kula loku tshamaka ku ri kona hakanyingi swi vula leswaku khampani yi tshemba ku khuluka ka mali ya yona; ku hunguta hakanyingi i mfungho wa xilemukiso.';
 
   @override
   String get glossYieldOnCost =>

@@ -290,6 +290,15 @@ class AppLocalizationsVi extends AppLocalizations {
   String get labelYieldOnCost => 'Tỷ suất cổ tức trên giá vốn';
 
   @override
+  String get labelDividendGrowth5y => 'Tăng trưởng cổ tức (5 năm)';
+
+  @override
+  String get dividendNone => 'Không trả cổ tức trong 12 tháng qua.';
+
+  @override
+  String get dividendOnYourShares => 'Trên số cổ phiếu của bạn, mỗi năm';
+
+  @override
   String get labelConsensus => 'Đồng thuận';
 
   @override
@@ -1987,6 +1996,10 @@ class AppLocalizationsVi extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Phần lợi nhuận được chi trả dưới dạng cổ tức. Trên 100% thì công ty chi nhiều hơn số tiền kiếm được, điều hiếm khi kéo dài.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Cổ tức trên mỗi cổ phiếu đã tăng trung bình bao nhiêu mỗi năm trong 5 năm qua. Tăng trưởng đều đặn thường cho thấy công ty tin tưởng vào dòng tiền của mình; việc cắt giảm thường là dấu hiệu cảnh báo.';
 
   @override
   String get glossYieldOnCost =>

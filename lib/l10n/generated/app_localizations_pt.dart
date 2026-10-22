@@ -291,6 +291,15 @@ class AppLocalizationsPt extends AppLocalizations {
   String get labelYieldOnCost => 'Rendimento sobre o custo';
 
   @override
+  String get labelDividendGrowth5y => 'Crescimento do dividendo (5 anos)';
+
+  @override
+  String get dividendNone => 'Nenhum dividendo pago nos últimos 12 meses.';
+
+  @override
+  String get dividendOnYourShares => 'Nas suas ações, por ano';
+
+  @override
   String get labelConsensus => 'Consenso';
 
   @override
@@ -1998,6 +2007,10 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'A parte do lucro distribuída como dividendos. Acima de 100%, a empresa paga mais do que ganha, o que raramente dura.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Quanto o dividendo por ação cresceu, em média, por ano nos últimos cinco anos. Um crescimento constante costuma indicar que a empresa confia no seu fluxo de caixa; um corte é muitas vezes um sinal de alerta.';
 
   @override
   String get glossYieldOnCost =>

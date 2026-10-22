@@ -752,5 +752,9 @@
   "portfolioSplitDate": "تاريخ التجزئة",
   "portfolioSplitRow": "تجزئة الأسهم {ratio}",
   "portfolioSplitRemoved": "تم حذف تجزئة الأسهم",
-  "portfolioSplitsImported": "{count, plural, =1{تمت إضافة تجزئة أسهم واحدة} other{تمت إضافة {count} من تجزئات الأسهم}}"
+  "portfolioSplitsImported": "{count, plural, =1{تمت إضافة تجزئة أسهم واحدة} other{تمت إضافة {count} من تجزئات الأسهم}}",
+  "labelDividendGrowth5y": "نمو التوزيعات (5 سنوات)",
+  "dividendNone": "لم تُدفع أي توزيعات خلال آخر 12 شهرًا.",
+  "dividendOnYourShares": "على أسهمك، سنويًا",
+  "glossDividendGrowth5y": "متوسط النمو السنوي للتوزيعات لكل سهم خلال السنوات الخمس الماضية. يدل النمو المستقر عادةً على ثقة الشركة بتدفقها النقدي؛ أما خفض التوزيعات فغالبًا ما يكون علامة تحذير."
 }

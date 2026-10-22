@@ -291,6 +291,15 @@ class AppLocalizationsLn extends AppLocalizations {
   String get labelYieldOnCost => 'Rendement na ntalo ya kosomba';
 
   @override
+  String get labelDividendGrowth5y => 'Bokoli ya dividende (mibu 5)';
+
+  @override
+  String get dividendNone => 'Bafuti dividende te na sanza 12 oyo eleki.';
+
+  @override
+  String get dividendOnYourShares => 'Na ba action na yo, na mobu';
+
+  @override
   String get labelConsensus => 'Boyokani';
 
   @override
@@ -2001,6 +2010,10 @@ class AppLocalizationsLn extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Eteni ya litomba oyo bakabolaka lokola dividende. Koleka 100%, kompanyi efutaka koleka oyo ezwaka, mpe yango eumelaka mingi te.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Ndenge dividende ya action moko ekolaki mobu na mobu na kati-kati na mibu mitano oyo eleki. Bokoli ya ntango nyonso elakisaka mingimingi ete kompani ezali na elikya na mbongo oyo ekoti mpe ebimi; kokitisa yango ezalaka mbala mingi elembo ya likebisi.';
 
   @override
   String get glossYieldOnCost =>

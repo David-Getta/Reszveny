@@ -291,6 +291,15 @@ class AppLocalizationsKu extends AppLocalizations {
   String get labelYieldOnCost => 'Rêje li gorî bihayê kirînê';
 
   @override
+  String get labelDividendGrowth5y => 'Mezinbûna dîvîdendê (5 sal)';
+
+  @override
+  String get dividendNone => 'Di 12 mehên dawî de tu dîvîdend nehatiye dayîn.';
+
+  @override
+  String get dividendOnYourShares => 'Li ser pişkên te, salê';
+
+  @override
   String get labelConsensus => 'Lihevkirin';
 
   @override
@@ -1994,6 +2003,10 @@ class AppLocalizationsKu extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Para qezencê ya ku wekî dîvîdend tê dayîn. Ji 100% zêdetir şirket ji qezenca xwe zêdetir dide, ku kêm caran dom dike.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Dîvîdenda her pişkê di pênc salên dawî de bi navînî salê çiqas mezin bûye. Mezinbûna domdar bi gelemperî nîşan dide ku pargîdanî bi herikîna xwe ya pereyan bawer e; kêmkirin pir caran nîşaneyek hişyariyê ye.';
 
   @override
   String get glossYieldOnCost =>

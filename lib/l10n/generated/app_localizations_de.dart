@@ -292,6 +292,16 @@ class AppLocalizationsDe extends AppLocalizations {
   String get labelYieldOnCost => 'Rendite auf Kaufpreis';
 
   @override
+  String get labelDividendGrowth5y => 'Dividendenwachstum (5 J.)';
+
+  @override
+  String get dividendNone =>
+      'In den letzten 12 Monaten wurde keine Dividende gezahlt.';
+
+  @override
+  String get dividendOnYourShares => 'Auf deine Aktien, pro Jahr';
+
+  @override
   String get labelConsensus => 'Konsens';
 
   @override
@@ -2003,6 +2013,10 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Der Anteil des Gewinns, der als Dividende ausgeschüttet wird. Über 100% zahlt das Unternehmen mehr aus, als es verdient – das hält selten lange.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Wie stark die Dividende je Aktie in den letzten fünf Jahren im Schnitt pro Jahr gewachsen ist. Stetiges Wachstum heißt meist, dass das Unternehmen seinem Cashflow vertraut; eine Kürzung ist oft ein Warnsignal.';
 
   @override
   String get glossYieldOnCost =>

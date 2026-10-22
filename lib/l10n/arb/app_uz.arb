@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Boʻlish sanasi",
   "portfolioSplitRow": "Aksiyalarni boʻlish {ratio}",
   "portfolioSplitRemoved": "Aksiyalarni boʻlish oʻchirildi",
-  "portfolioSplitsImported": "{count, plural, =1{1 ta aksiya boʻlinishi qoʻshildi} other{{count} ta aksiya boʻlinishi qoʻshildi}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 ta aksiya boʻlinishi qoʻshildi} other{{count} ta aksiya boʻlinishi qoʻshildi}}",
+  "labelDividendGrowth5y": "Dividend oʻsishi (5 yil)",
+  "dividendNone": "Oxirgi 12 oyda dividend toʻlanmagan.",
+  "dividendOnYourShares": "Aksiyalaringizga, yiliga",
+  "glossDividendGrowth5y": "Oxirgi besh yilda bir aksiyaga toʻgʻri keladigan dividend yiliga oʻrtacha qanchaga oshgani. Barqaror oʻsish odatda kompaniya oʻz pul oqimiga ishonishini bildiradi; qisqartirish koʻpincha ogohlantiruvchi belgi hisoblanadi."
 }

@@ -292,6 +292,15 @@ class AppLocalizationsKn extends AppLocalizations {
   String get labelYieldOnCost => 'ವೆಚ್ಚದ ಮೇಲೆ ಯೀಲ್ಡ್';
 
   @override
+  String get labelDividendGrowth5y => 'ಡಿವಿಡೆಂಡ್ ಬೆಳವಣಿಗೆ (5 ವರ್ಷ)';
+
+  @override
+  String get dividendNone => 'ಕಳೆದ 12 ತಿಂಗಳಲ್ಲಿ ಯಾವುದೇ ಡಿವಿಡೆಂಡ್ ಪಾವತಿಸಿಲ್ಲ.';
+
+  @override
+  String get dividendOnYourShares => 'ನಿಮ್ಮ ಷೇರುಗಳ ಮೇಲೆ, ವಾರ್ಷಿಕ';
+
+  @override
   String get labelConsensus => 'ಒಮ್ಮತ';
 
   @override
@@ -1998,6 +2007,10 @@ class AppLocalizationsKn extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'ಲಾಭದಲ್ಲಿ ಡಿವಿಡೆಂಡ್ ಆಗಿ ಪಾವತಿಸುವ ಪಾಲು. 100% ಕ್ಕಿಂತ ಹೆಚ್ಚಾದರೆ ಕಂಪನಿ ಗಳಿಸುವುದಕ್ಕಿಂತ ಹೆಚ್ಚು ಪಾವತಿಸುತ್ತದೆ, ಇದು ಅಪರೂಪವಾಗಿ ಮುಂದುವರಿಯುತ್ತದೆ.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'ಕಳೆದ ಐದು ವರ್ಷಗಳಲ್ಲಿ ಪ್ರತಿ ಷೇರಿಗೆ ಡಿವಿಡೆಂಡ್ ವರ್ಷಕ್ಕೆ ಸರಾಸರಿ ಎಷ್ಟು ಬೆಳೆದಿದೆ ಎಂಬುದು. ಸ್ಥಿರ ಬೆಳವಣಿಗೆ ಸಾಮಾನ್ಯವಾಗಿ ಕಂಪನಿಗೆ ತನ್ನ ನಗದು ಹರಿವಿನ ಮೇಲೆ ವಿಶ್ವಾಸವಿದೆ ಎಂದು ಸೂಚಿಸುತ್ತದೆ; ಕಡಿತವು ಹಲವು ಬಾರಿ ಎಚ್ಚರಿಕೆಯ ಸಂಕೇತ.';
 
   @override
   String get glossYieldOnCost =>

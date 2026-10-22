@@ -752,5 +752,9 @@
   "portfolioSplitDate": "分割日",
   "portfolioSplitRow": "株式分割 {ratio}",
   "portfolioSplitRemoved": "株式分割を削除しました",
-  "portfolioSplitsImported": "{count, plural, =1{株式分割を1件追加しました} other{株式分割を{count}件追加しました}}"
+  "portfolioSplitsImported": "{count, plural, =1{株式分割を1件追加しました} other{株式分割を{count}件追加しました}}",
+  "labelDividendGrowth5y": "配当成長率（5年）",
+  "dividendNone": "過去12か月間、配当の支払いはありません。",
+  "dividendOnYourShares": "保有株の年間配当",
+  "glossDividendGrowth5y": "過去5年間に1株配当が年平均でどれだけ伸びたか。安定した増配は通常、会社がキャッシュフローに自信を持っていることを示し、減配はしばしば警告のサインです。"
 }

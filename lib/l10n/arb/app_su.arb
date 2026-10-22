@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Tanggal pamecahan",
   "portfolioSplitRow": "Pamecahan saham {ratio}",
   "portfolioSplitRemoved": "Pamecahan saham parantos dihapus",
-  "portfolioSplitsImported": "{count, plural, =1{1 pamecahan saham ditambihkeun} other{{count} pamecahan saham ditambihkeun}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 pamecahan saham ditambihkeun} other{{count} pamecahan saham ditambihkeun}}",
+  "labelDividendGrowth5y": "Tumuwuhna dividén (5 taun)",
+  "dividendNone": "Teu aya dividén anu dibayarkeun dina 12 bulan ka tukang.",
+  "dividendOnYourShares": "Tina saham anjeun, sataun",
+  "glossDividendGrowth5y": "Sabaraha dividén per saham tumuwuh unggal taun sacara rata-rata salila lima taun ka tukang. Tumuwuh anu ajeg biasana hartosna pausahaan yakin kana aliran kasna; pamotongan sering janten tanda bahaya."
 }

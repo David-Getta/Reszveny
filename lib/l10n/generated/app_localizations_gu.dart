@@ -290,6 +290,15 @@ class AppLocalizationsGu extends AppLocalizations {
   String get labelYieldOnCost => 'ખર્ચ પર યીલ્ડ';
 
   @override
+  String get labelDividendGrowth5y => 'ડિવિડન્ડ વૃદ્ધિ (5 વર્ષ)';
+
+  @override
+  String get dividendNone => 'છેલ્લા 12 મહિનામાં કોઈ ડિવિડન્ડ ચૂકવાયું નથી.';
+
+  @override
+  String get dividendOnYourShares => 'તમારા શેર પર, વાર્ષિક';
+
+  @override
   String get labelConsensus => 'સર્વસંમતિ';
 
   @override
@@ -1987,6 +1996,10 @@ class AppLocalizationsGu extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'નફાનો કેટલો હિસ્સો ડિવિડન્ડ તરીકે ચૂકવાય છે. 100% થી વધુ હોય તો કંપની કમાણી કરતાં વધુ ચૂકવે છે, જે ભાગ્યે જ ટકે છે.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'છેલ્લાં પાંચ વર્ષમાં શેર દીઠ ડિવિડન્ડ દર વર્ષે સરેરાશ કેટલું વધ્યું. સ્થિર વૃદ્ધિનો સામાન્ય રીતે અર્થ એ છે કે કંપનીને પોતાના રોકડ પ્રવાહ પર વિશ્વાસ છે; ઘટાડો ઘણીવાર ચેતવણીનો સંકેત હોય છે.';
 
   @override
   String get glossYieldOnCost =>

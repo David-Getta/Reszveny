@@ -291,6 +291,15 @@ class AppLocalizationsMl extends AppLocalizations {
   String get labelYieldOnCost => 'വാങ്ങിയ വിലയിലെ യീൽഡ്';
 
   @override
+  String get labelDividendGrowth5y => 'ലാഭവിഹിത വളർച്ച (5 വർഷം)';
+
+  @override
+  String get dividendNone => 'കഴിഞ്ഞ 12 മാസത്തിൽ ലാഭവിഹിതം നൽകിയിട്ടില്ല.';
+
+  @override
+  String get dividendOnYourShares => 'നിങ്ങളുടെ ഓഹരികൾക്ക്, പ്രതിവർഷം';
+
+  @override
   String get labelConsensus => 'സമവായം';
 
   @override
@@ -2000,6 +2009,10 @@ class AppLocalizationsMl extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'ലാഭത്തിന്റെ എത്ര ഭാഗം ലാഭവിഹിതമായി നൽകുന്നു. 100%-ന് മുകളിൽ കമ്പനി സമ്പാദിക്കുന്നതിലും കൂടുതൽ നൽകുന്നു, ഇത് അപൂർവമായേ നീണ്ടുനിൽക്കൂ.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'കഴിഞ്ഞ അഞ്ച് വർഷത്തിൽ ഓഹരിയൊന്നിന് ലാഭവിഹിതം പ്രതിവർഷം ശരാശരി എത്ര വളർന്നു. സ്ഥിരമായ വളർച്ച സാധാരണയായി കമ്പനിക്ക് അതിന്റെ പണമൊഴുക്കിൽ വിശ്വാസമുണ്ടെന്ന് സൂചിപ്പിക്കുന്നു; വെട്ടിക്കുറയ്ക്കൽ പലപ്പോഴും ഒരു മുന്നറിയിപ്പ് സൂചനയാണ്.';
 
   @override
   String get glossYieldOnCost =>

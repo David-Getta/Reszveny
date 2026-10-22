@@ -752,5 +752,9 @@
   "portfolioSplitDate": "분할 날짜",
   "portfolioSplitRow": "주식 분할 {ratio}",
   "portfolioSplitRemoved": "주식 분할이 삭제되었습니다",
-  "portfolioSplitsImported": "{count, plural, =1{주식 분할 1건이 추가되었습니다} other{주식 분할 {count}건이 추가되었습니다}}"
+  "portfolioSplitsImported": "{count, plural, =1{주식 분할 1건이 추가되었습니다} other{주식 분할 {count}건이 추가되었습니다}}",
+  "labelDividendGrowth5y": "배당 성장률(5년)",
+  "dividendNone": "최근 12개월 동안 지급된 배당이 없습니다.",
+  "dividendOnYourShares": "보유 주식 기준, 연간",
+  "glossDividendGrowth5y": "지난 5년간 주당 배당금이 연평균 얼마나 늘었는지를 나타냅니다. 꾸준한 증가는 보통 회사가 현금 흐름에 자신이 있다는 뜻이며, 배당 삭감은 흔히 경고 신호입니다."
 }

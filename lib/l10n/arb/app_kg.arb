@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Kilumbu ya kukabula",
   "portfolioSplitRow": "Kukabula ba share {ratio}",
   "portfolioSplitRemoved": "Kukabula ba share me katulama",
-  "portfolioSplitsImported": "{count, plural, =1{Kukabula ba share 1 me yikama} other{Kukabula ba share {count} me yikama}}"
+  "portfolioSplitsImported": "{count, plural, =1{Kukabula ba share 1 me yikama} other{Kukabula ba share {count} me yikama}}",
+  "labelDividendGrowth5y": "Kukula ya dividende (mivu 5)",
+  "dividendNone": "Bo futaka ve dividende na bangonda 12 yina me luta.",
+  "dividendOnYourShares": "Na ba action na nge, na mvula",
+  "glossDividendGrowth5y": "Nki mutindu dividende ya action mosi me kula konso mvula na kati-kati na mivu tanu yina me luta. Kukula ya ntangu yonso ke monisaka mingi nde kompani ke tula ntima na mbongo yina ke kota mpi ke basika; kukulumusa yo ke vandaka mingi kidimbu ya kukebisa."
 }

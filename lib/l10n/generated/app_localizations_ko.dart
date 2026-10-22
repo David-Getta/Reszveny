@@ -290,6 +290,15 @@ class AppLocalizationsKo extends AppLocalizations {
   String get labelYieldOnCost => '매입가 대비 배당수익률';
 
   @override
+  String get labelDividendGrowth5y => '배당 성장률(5년)';
+
+  @override
+  String get dividendNone => '최근 12개월 동안 지급된 배당이 없습니다.';
+
+  @override
+  String get dividendOnYourShares => '보유 주식 기준, 연간';
+
+  @override
   String get labelConsensus => '컨센서스';
 
   @override
@@ -1929,6 +1938,10 @@ class AppLocalizationsKo extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       '이익 중 배당금으로 지급되는 비율. 100%를 넘으면 버는 것보다 많이 지급하는 것으로, 오래 지속되기 어렵습니다.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      '지난 5년간 주당 배당금이 연평균 얼마나 늘었는지를 나타냅니다. 꾸준한 증가는 보통 회사가 현금 흐름에 자신이 있다는 뜻이며, 배당 삭감은 흔히 경고 신호입니다.';
 
   @override
   String get glossYieldOnCost =>

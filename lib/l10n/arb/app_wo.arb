@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Bésu xaaj bi",
   "portfolioSplitRow": "Xaaj aksiyoŋ yi {ratio}",
   "portfolioSplitRemoved": "Xaaj aksiyoŋ yi dañu ko far",
-  "portfolioSplitsImported": "{count, plural, =1{Yokk nañu 1 xaaj aksiyoŋ} other{Yokk nañu {count} xaaj aksiyoŋ}}"
+  "portfolioSplitsImported": "{count, plural, =1{Yokk nañu 1 xaaj aksiyoŋ} other{Yokk nañu {count} xaaj aksiyoŋ}}",
+  "labelDividendGrowth5y": "Yokkuteg dividand (5 at)",
+  "dividendNone": "Feyuñu benn dividand ci 12 weer yu mujj yi.",
+  "dividendOnYourShares": "Ci say aksiyoŋ, at mu nekk",
+  "glossDividendGrowth5y": "Ni dividand ci aksiyoŋ bu nekk yokkoo at mu nekk, ci diggante, ci juróom at yu mujj yi. Yokkute gu sax dafa faral di wone ne sosiete bi dafa wóolu xaalis bi koy dugg; wàññi ko dafa faral di doon màndarga moytu."
 }

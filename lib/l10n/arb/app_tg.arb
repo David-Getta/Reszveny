@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Санаи тақсим",
   "portfolioSplitRow": "Тақсими саҳмияҳо {ratio}",
   "portfolioSplitRemoved": "Тақсими саҳмияҳо нест карда шуд",
-  "portfolioSplitsImported": "{count, plural, =1{1 тақсими саҳмияҳо илова шуд} other{{count} тақсими саҳмияҳо илова шуд}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 тақсими саҳмияҳо илова шуд} other{{count} тақсими саҳмияҳо илова шуд}}",
+  "labelDividendGrowth5y": "Афзоиши дивиденд (5 сол)",
+  "dividendNone": "Дар 12 моҳи охир дивиденд пардохт нашудааст.",
+  "dividendOnYourShares": "Ба саҳмияҳои шумо, дар як сол",
+  "glossDividendGrowth5y": "Дивиденд ба як саҳмия дар панҷ соли охир ба ҳисоби миёна ҳар сол чӣ қадар афзудааст. Афзоиши устувор одатан маънои онро дорад, ки ширкат ба ҷараёни пулии худ эътимод дорад; кам кардани он аксар вақт аломати ҳушдор аст."
 }

@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Dátum štiepenia",
   "portfolioSplitRow": "Štiepenie akcií {ratio}",
   "portfolioSplitRemoved": "Štiepenie akcií bolo odstránené",
-  "portfolioSplitsImported": "{count, plural, =1{Pridané 1 štiepenie akcií} other{Pridané štiepenia akcií: {count}}}"
+  "portfolioSplitsImported": "{count, plural, =1{Pridané 1 štiepenie akcií} other{Pridané štiepenia akcií: {count}}}",
+  "labelDividendGrowth5y": "Rast dividendy (5 rokov)",
+  "dividendNone": "Za posledných 12 mesiacov nebola vyplatená žiadna dividenda.",
+  "dividendOnYourShares": "Na vaše akcie, ročne",
+  "glossDividendGrowth5y": "O koľko v priemere ročne rástla dividenda na akciu za posledných päť rokov. Stabilný rast zvyčajne znamená, že firma dôveruje svojmu peňažnému toku; zníženie je často varovným signálom."
 }

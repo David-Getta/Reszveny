@@ -291,6 +291,16 @@ class AppLocalizationsSl extends AppLocalizations {
   String get labelYieldOnCost => 'Donosnost na nakupno ceno';
 
   @override
+  String get labelDividendGrowth5y => 'Rast dividende (5 let)';
+
+  @override
+  String get dividendNone =>
+      'V zadnjih 12 mesecih ni bila izplačana nobena dividenda.';
+
+  @override
+  String get dividendOnYourShares => 'Na vaše delnice, na leto';
+
+  @override
   String get labelConsensus => 'Konsenz';
 
   @override
@@ -2049,6 +2059,10 @@ class AppLocalizationsSl extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Delež dobička, izplačan kot dividende. Nad 100 % podjetje izplača več, kot zasluži, kar redko traja dolgo.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Za koliko se je dividenda na delnico v zadnjih petih letih v povprečju povečevala na leto. Enakomerna rast običajno pomeni, da podjetje zaupa svojemu denarnemu toku; znižanje je pogosto opozorilni znak.';
 
   @override
   String get glossYieldOnCost =>

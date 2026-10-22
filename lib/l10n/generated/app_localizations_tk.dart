@@ -291,6 +291,15 @@ class AppLocalizationsTk extends AppLocalizations {
   String get labelYieldOnCost => 'Satyn alyş bahasyna girdejililik';
 
   @override
+  String get labelDividendGrowth5y => 'Diwidendiň ösüşi (5 ýyl)';
+
+  @override
+  String get dividendNone => 'Soňky 12 aýda diwidend tölenmedi.';
+
+  @override
+  String get dividendOnYourShares => 'Siziň paýnamalaryňyza, ýylda';
+
+  @override
   String get labelConsensus => 'Konsensus';
 
   @override
@@ -1991,6 +2000,10 @@ class AppLocalizationsTk extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Peýdanyň diwidend hökmünde tölenýän paýy. 100%-den ýokary bolsa, kompaniýa gazanýanyndan köp töleýär, bu seýrek dowam edýär.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Soňky bäş ýylda bir paýnama düşýän diwidendiň ýylda ortaça näçe artandygy. Durnukly ösüş adatça kompaniýanyň öz pul akymyna ynanýandygyny aňladýar; azaldylmagy köplenç duýduryş alamatydyr.';
 
   @override
   String get glossYieldOnCost =>

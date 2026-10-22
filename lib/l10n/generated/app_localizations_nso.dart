@@ -291,6 +291,16 @@ class AppLocalizationsNso extends AppLocalizations {
   String get labelYieldOnCost => 'Poelo go theko ya go reka';
 
   @override
+  String get labelDividendGrowth5y => 'Kgolo ya dividende (mengwaga ye 5)';
+
+  @override
+  String get dividendNone =>
+      'Ga go dividende ye e lefilwego dikgweding tše 12 tša go feta.';
+
+  @override
+  String get dividendOnYourShares => 'Go dišere tša gago, ka ngwaga';
+
+  @override
   String get labelConsensus => 'Kwano';
 
   @override
@@ -2004,6 +2014,10 @@ class AppLocalizationsNso extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Karolo ya poelo ye e lefšwago bjalo ka dividende. Godimo ga 100% khamphani e lefa go feta seo e se hwetšago, e lego seo se sa tšwelego pele gantši.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Dividende ka šere e godile bjang ka ngwaga ka kakaretšo mengwageng ye mehlano ya go feta. Kgolo ye e tšwelago pele gantši e bontšha gore khamphani e tshepha phallo ya yona ya tšhelete; go fokotšwa gantši ke leswao la temošo.';
 
   @override
   String get glossYieldOnCost =>

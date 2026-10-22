@@ -291,6 +291,15 @@ class AppLocalizationsMr extends AppLocalizations {
   String get labelYieldOnCost => 'खरेदी किंमतीवरील उत्पन्न';
 
   @override
+  String get labelDividendGrowth5y => 'लाभांश वाढ (5 वर्षे)';
+
+  @override
+  String get dividendNone => 'मागील 12 महिन्यांत कोणताही लाभांश दिलेला नाही.';
+
+  @override
+  String get dividendOnYourShares => 'तुमच्या शेअर्सवर, वार्षिक';
+
+  @override
   String get labelConsensus => 'एकमत';
 
   @override
@@ -1991,6 +2000,10 @@ class AppLocalizationsMr extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'नफ्याचा किती भाग लाभांश म्हणून दिला जातो. 100% पेक्षा जास्त असल्यास कंपनी कमावते त्यापेक्षा जास्त देते, जे क्वचितच टिकते.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'मागील पाच वर्षांत प्रति शेअर लाभांश दरवर्षी सरासरी किती वाढला. स्थिर वाढ सहसा दर्शवते की कंपनीला तिच्या रोख प्रवाहावर विश्वास आहे; लाभांशात कपात हे अनेकदा धोक्याचे लक्षण असते.';
 
   @override
   String get glossYieldOnCost =>

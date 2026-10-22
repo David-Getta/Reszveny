@@ -291,6 +291,16 @@ class AppLocalizationsHil extends AppLocalizations {
   String get labelYieldOnCost => 'Yield sa gasto';
 
   @override
+  String get labelDividendGrowth5y => 'Pagtubo sang dibidendo (5 ka tuig)';
+
+  @override
+  String get dividendNone =>
+      'Wala sing dibidendo nga ginbayad sa nagligad nga 12 ka bulan.';
+
+  @override
+  String get dividendOnYourShares => 'Sa imo mga share, kada tuig';
+
+  @override
   String get labelConsensus => 'Konsenso';
 
   @override
@@ -2004,6 +2014,10 @@ class AppLocalizationsHil extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Ang parte sang ganansya nga ginabayad bilang dibidendo. Labaw sa 100% ang kompanya nagabayad sang labaw sa iya ginakita, nga talagsa lang magdugay.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Pila ang gintubo sang dibidendo kada share kada tuig sa average sa nagligad nga lima ka tuig. Ang padayon nga pagtubo kasagaran nagakahulugan nga nagasalig ang kompanya sa iya cash flow; ang pagbuhin kasagaran isa ka tanda sang paandam.';
 
   @override
   String get glossYieldOnCost =>

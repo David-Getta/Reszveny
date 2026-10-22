@@ -290,6 +290,15 @@ class AppLocalizationsBm extends AppLocalizations {
   String get labelYieldOnCost => 'Tɔnɔ tilali sɔrɔ hakɛ san sɔngɔ kan';
 
   @override
+  String get labelDividendGrowth5y => 'Tɔnɔ tilali yiriwali (san 5)';
+
+  @override
+  String get dividendNone => 'Tɔnɔ tilali si ma sara kalo 12 tɛmɛnenw kɔnɔ.';
+
+  @override
+  String get dividendOnYourShares => 'I ka aksiyɔnw kan, san o san';
+
+  @override
   String get labelConsensus => 'Bɛnkan';
 
   @override
@@ -1989,6 +1998,10 @@ class AppLocalizationsBm extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Tɔnɔ niyɔrɔ min bɛ tila ka di aksiyɔntigiw ma. 100% sanfɛ, sosiyete bɛ wari di ka tɛmɛ a ka sɔrɔ kan, o tɛ mɛn tuma caman.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Aksiyɔn kelen tɔnɔ tilali yiriwala cogo min na san o san, ka a hakɛ cɛmancɛ ta, san duuru tɛmɛnenw kɔnɔ. Yiriwali min bɛ taa ɲɛ a cogo kelen na, o b\'a jira tuma caman na ko sosiyete dalen bɛ a ka wari donta ni bɔta la; ni tɔnɔ tilali dɔgɔyara, o ye lasɔmini taamasiyɛn ye tuma caman na.';
 
   @override
   String get glossYieldOnCost =>

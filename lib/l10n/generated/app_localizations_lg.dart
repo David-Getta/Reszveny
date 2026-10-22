@@ -291,6 +291,17 @@ class AppLocalizationsLg extends AppLocalizations {
   String get labelYieldOnCost => 'Amagoba ku bbeeyi ey\'okugula (%)';
 
   @override
+  String get labelDividendGrowth5y =>
+      'Okukula kw\'amagoba ku migabo (emyaka 5)';
+
+  @override
+  String get dividendNone =>
+      'Tewali magoba ku migabo agasasuddwa mu myezi 12 egiyise.';
+
+  @override
+  String get dividendOnYourShares => 'Ku migabo gyo, buli mwaka';
+
+  @override
   String get labelConsensus => 'Endowooza ya bonna';
 
   @override
@@ -2002,6 +2013,10 @@ class AppLocalizationsLg extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Ekitundu ky\'amagoba ekigabibwa eri abalina emigabo. Okusukka 100% kkampuni egaba okusinga by\'efuna, ekitera obutawangaala.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Obungi amagoba ku buli mugabo bwe gaayongerwako buli mwaka ku kigero mu myaka etaano egiyise. Okukula okutakyukakyuka kutera okulaga nti kkampuni yeesiga ensimbi zaayo eziyingira n\'ezifuluma; okukendeeza amagoba kutera okuba akabonero ak\'okulabula.';
 
   @override
   String get glossYieldOnCost =>

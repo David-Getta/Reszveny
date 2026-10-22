@@ -291,6 +291,16 @@ class AppLocalizationsUr extends AppLocalizations {
   String get labelYieldOnCost => 'خرید قیمت پر ییلڈ';
 
   @override
+  String get labelDividendGrowth5y => 'ڈیویڈنڈ میں اضافہ (5 سال)';
+
+  @override
+  String get dividendNone =>
+      'پچھلے 12 مہینوں میں کوئی ڈیویڈنڈ ادا نہیں کیا گیا۔';
+
+  @override
+  String get dividendOnYourShares => 'آپ کے شیئرز پر، سالانہ';
+
+  @override
   String get labelConsensus => 'اتفاقِ رائے';
 
   @override
@@ -1991,6 +2001,10 @@ class AppLocalizationsUr extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'منافع کا وہ حصہ جو ڈیویڈنڈ کے طور پر ادا ہوتا ہے۔ 100% سے اوپر کمپنی اپنی کمائی سے زیادہ ادا کرتی ہے، جو شاذ و نادر ہی دیر تک چلتا ہے۔';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'پچھلے پانچ سالوں میں فی شیئر ڈیویڈنڈ ہر سال اوسطاً کتنا بڑھا۔ مستقل اضافے کا عموماً مطلب ہوتا ہے کہ کمپنی کو اپنے نقد بہاؤ پر بھروسہ ہے؛ کٹوتی اکثر ایک انتباہی علامت ہوتی ہے۔';
 
   @override
   String get glossYieldOnCost =>

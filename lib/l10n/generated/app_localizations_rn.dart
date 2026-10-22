@@ -291,6 +291,16 @@ class AppLocalizationsRn extends AppLocalizations {
   String get labelYieldOnCost => 'Inyungu ku giciro waguze';
 
   @override
+  String get labelDividendGrowth5y =>
+      'Iyongerekana ry\'inyungu ku migabane (imyaka 5)';
+
+  @override
+  String get dividendNone => 'Nta nyungu ku migabane yarihwe mu mezi 12 aheze.';
+
+  @override
+  String get dividendOnYourShares => 'Ku migabane yawe, ku mwaka';
+
+  @override
   String get labelConsensus => 'Iciyumviro rusangi';
 
   @override
@@ -1997,6 +2007,10 @@ class AppLocalizationsRn extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Igice c\'inyungu kigaburwa ku banyamigabane. Hejuru ya 100% isosiyete iriha ibirenze ivyo yinjiza, kandi ivyo ntibimara igihe kirekire.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Ingene inyungu kuri buri mugabane yagiye yongerekana ku mwaka, ku kigereranyo, mu myaka itanu iheze. Iyongerekana ridahagarara kenshi risobanura ko isosiyete yizigiye amafaranga yinjiza; kuyigabanya kenshi ni ikimenyetso c\'umuburo.';
 
   @override
   String get glossYieldOnCost =>

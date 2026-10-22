@@ -291,6 +291,15 @@ class AppLocalizationsBn extends AppLocalizations {
   String get labelYieldOnCost => 'খরচের ওপর ইল্ড';
 
   @override
+  String get labelDividendGrowth5y => 'ডিভিডেন্ড বৃদ্ধি (5 বছর)';
+
+  @override
+  String get dividendNone => 'গত 12 মাসে কোনো ডিভিডেন্ড দেওয়া হয়নি।';
+
+  @override
+  String get dividendOnYourShares => 'আপনার শেয়ারে, বছরে';
+
+  @override
   String get labelConsensus => 'ঐকমত্য';
 
   @override
@@ -1990,6 +1999,10 @@ class AppLocalizationsBn extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'মুনাফার যে অংশ ডিভিডেন্ড হিসেবে দেওয়া হয়। 100%-এর বেশি হলে কোম্পানি আয়ের চেয়ে বেশি দেয়, যা কদাচিৎ টেকে।';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'গত পাঁচ বছরে শেয়ার প্রতি ডিভিডেন্ড বছরে গড়ে কতটা বেড়েছে। স্থির বৃদ্ধি সাধারণত বোঝায় যে কোম্পানি তার নগদ প্রবাহের ওপর আস্থা রাখে; ডিভিডেন্ড কমানো প্রায়ই একটি সতর্ক সংকেত।';
 
   @override
   String get glossYieldOnCost =>

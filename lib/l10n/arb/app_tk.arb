@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Bölünişiň senesi",
   "portfolioSplitRow": "Paýnamalaryň bölünişi {ratio}",
   "portfolioSplitRemoved": "Paýnamalaryň bölünişi pozuldy",
-  "portfolioSplitsImported": "{count, plural, =1{1 paýnama bölünişi goşuldy} other{{count} paýnama bölünişi goşuldy}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 paýnama bölünişi goşuldy} other{{count} paýnama bölünişi goşuldy}}",
+  "labelDividendGrowth5y": "Diwidendiň ösüşi (5 ýyl)",
+  "dividendNone": "Soňky 12 aýda diwidend tölenmedi.",
+  "dividendOnYourShares": "Siziň paýnamalaryňyza, ýylda",
+  "glossDividendGrowth5y": "Soňky bäş ýylda bir paýnama düşýän diwidendiň ýylda ortaça näçe artandygy. Durnukly ösüş adatça kompaniýanyň öz pul akymyna ynanýandygyny aňladýar; azaldylmagy köplenç duýduryş alamatydyr."
 }

@@ -291,6 +291,15 @@ class AppLocalizationsTg extends AppLocalizations {
   String get labelYieldOnCost => 'Даромаднокӣ аз нархи харид';
 
   @override
+  String get labelDividendGrowth5y => 'Афзоиши дивиденд (5 сол)';
+
+  @override
+  String get dividendNone => 'Дар 12 моҳи охир дивиденд пардохт нашудааст.';
+
+  @override
+  String get dividendOnYourShares => 'Ба саҳмияҳои шумо, дар як сол';
+
+  @override
   String get labelConsensus => 'Консенсус';
 
   @override
@@ -1994,6 +2003,10 @@ class AppLocalizationsTg extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Ҳиссаи фоида, ки ҳамчун дивиденд пардохт мешавад. Болотар аз 100% ширкат аз он чи ба даст меорад, бештар пардохт мекунад, ки ин кам давом мекунад.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Дивиденд ба як саҳмия дар панҷ соли охир ба ҳисоби миёна ҳар сол чӣ қадар афзудааст. Афзоиши устувор одатан маънои онро дорад, ки ширкат ба ҷараёни пулии худ эътимод дорад; кам кардани он аксар вақт аломати ҳушдор аст.';
 
   @override
   String get glossYieldOnCost =>

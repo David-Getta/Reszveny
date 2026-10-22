@@ -1036,6 +1036,18 @@ void main() {
     await tester.tap(find.byTooltip('Add to portfolio'));
     await tester.pumpAndSettle();
     await _shot(tester, 'add_to_portfolio');
+    await tester.tap(find.text('Cancel'));
+    await tester.pumpAndSettle();
+    // Az „Osztalék” kártya: 5 éves növekedés és a saját részvényekre jutó évi osztalék.
+    final dividend = find.byKey(const ValueKey('dividend-card'));
+    for (var i = 0; i < 40 && dividend.evaluate().isEmpty; i++) {
+      await tester.drag(page, const Offset(0, -300));
+      await tester.pumpAndSettle();
+    }
+    await Scrollable.ensureVisible(tester.element(dividend), alignment: 0.3);
+    await tester.pumpAndSettle();
+    expect(find.text('On your shares, a year'), findsOneWidget);
+    await _shot(tester, 'detail_dividend_card');
   });
 
   testWidgets('price alerts', (tester) async {

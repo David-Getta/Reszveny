@@ -290,6 +290,15 @@ class AppLocalizationsMai extends AppLocalizations {
   String get labelYieldOnCost => 'लागत पर यील्ड';
 
   @override
+  String get labelDividendGrowth5y => 'लाभांश वृद्धि (5 साल)';
+
+  @override
+  String get dividendNone => 'पछिला 12 मासमे कोनो लाभांश नहि देल गेल।';
+
+  @override
+  String get dividendOnYourShares => 'अहाँक शेयर पर, सालाना';
+
+  @override
   String get labelConsensus => 'सर्वसम्मति';
 
   @override
@@ -1985,6 +1994,10 @@ class AppLocalizationsMai extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'मुनाफाक कतेक हिस्सा लाभांशक रूप मे बाँटल जाइत अछि। 100% सँ ऊपर कंपनी जतबा कमाइत अछि ओहि सँ बेसी दैत अछि, जे बिरले टिकैत अछि।';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'पछिला पाँच सालमे प्रति शेयर लाभांश औसतन सालाना कतेक बढ़ल। स्थिर वृद्धिक अर्थ सामान्यतः ई होइत अछि जे कंपनीकेँ अपन नकदी प्रवाह पर भरोसा छैक; कटौती प्रायः चेतावनीक संकेत होइत अछि।';
 
   @override
   String get glossYieldOnCost =>

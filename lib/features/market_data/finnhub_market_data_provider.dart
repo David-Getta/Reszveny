@@ -346,6 +346,7 @@ class FinnhubMarketDataProvider extends MarketDataProvider {
       dividendYield: _d(m['dividendYieldIndicatedAnnual']) ?? _d(m['currentDividendYieldTTM']),
       dividendPerShare: _d(m['dividendPerShareTTM']) ?? _d(m['dividendPerShareAnnual']),
       payoutRatio: _d(m['payoutRatioTTM']) ?? _d(m['payoutRatioAnnual']),
+      dividendGrowth5y: _d(m['dividendGrowthRate5Y']),
       beta: _d(m['beta']),
       week52High: _d(m['52WeekHigh']),
       week52Low: _d(m['52WeekLow']),

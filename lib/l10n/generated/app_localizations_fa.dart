@@ -291,6 +291,15 @@ class AppLocalizationsFa extends AppLocalizations {
   String get labelYieldOnCost => 'بازده بر بهای خرید';
 
   @override
+  String get labelDividendGrowth5y => 'رشد سود نقدی (5 ساله)';
+
+  @override
+  String get dividendNone => 'در 12 ماه گذشته سود نقدی پرداخت نشده است.';
+
+  @override
+  String get dividendOnYourShares => 'برای سهام شما، سالانه';
+
+  @override
   String get labelConsensus => 'اجماع';
 
   @override
@@ -1989,6 +1998,10 @@ class AppLocalizationsFa extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'بخشی از سود که به‌صورت سود نقدی پرداخت می‌شود. بالای 100% یعنی شرکت بیش از درآمدش پرداخت می‌کند، که به‌ندرت دوام می‌آورد.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'سود نقدی هر سهم در پنج سال گذشته به‌طور میانگین سالانه چقدر رشد کرده است. رشد پایدار معمولاً نشان می‌دهد که شرکت به جریان نقدی خود اطمینان دارد؛ کاهش آن اغلب یک علامت هشدار است.';
 
   @override
   String get glossYieldOnCost =>

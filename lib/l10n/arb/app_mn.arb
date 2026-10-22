@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Хуваалтын огноо",
   "portfolioSplitRow": "Хувьцааны хуваалт {ratio}",
   "portfolioSplitRemoved": "Хувьцааны хуваалтыг устгасан",
-  "portfolioSplitsImported": "{count, plural, =1{1 хувьцааны хуваалт нэмэгдсэн} other{{count} хувьцааны хуваалт нэмэгдсэн}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 хувьцааны хуваалт нэмэгдсэн} other{{count} хувьцааны хуваалт нэмэгдсэн}}",
+  "labelDividendGrowth5y": "Ногдол ашгийн өсөлт (5 жил)",
+  "dividendNone": "Сүүлийн 12 сард ногдол ашиг олгоогүй.",
+  "dividendOnYourShares": "Таны хувьцаанд, жилд",
+  "glossDividendGrowth5y": "Сүүлийн таван жилд нэгж хувьцаанд ногдох ногдол ашиг жилд дунджаар хэр өссөн бэ. Тогтвортой өсөлт нь ихэвчлэн компани мөнгөн урсгалдаа итгэлтэй байгааг илтгэнэ; бууруулах нь ихэнхдээ анхааруулах дохио болдог."
 }

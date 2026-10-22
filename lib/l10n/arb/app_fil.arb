@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Petsa ng split",
   "portfolioSplitRow": "Stock split {ratio}",
   "portfolioSplitRemoved": "Na-delete ang stock split",
-  "portfolioSplitsImported": "{count, plural, =1{1 stock split ang naidagdag} other{{count} stock split ang naidagdag}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 stock split ang naidagdag} other{{count} stock split ang naidagdag}}",
+  "labelDividendGrowth5y": "Paglago ng dibidendo (5 taon)",
+  "dividendNone": "Walang dibidendong ibinayad sa nakalipas na 12 buwan.",
+  "dividendOnYourShares": "Sa iyong mga share, kada taon",
+  "glossDividendGrowth5y": "Gaano kalaki ang average na taunang paglago ng dibidendo kada share sa nakalipas na limang taon. Kadalasang ibig sabihin ng tuloy-tuloy na paglago na may tiwala ang kompanya sa cash flow nito; ang pagbawas ay madalas na babala."
 }

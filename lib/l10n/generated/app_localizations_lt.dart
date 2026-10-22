@@ -291,6 +291,15 @@ class AppLocalizationsLt extends AppLocalizations {
   String get labelYieldOnCost => 'Pajamingumas nuo pirkimo kainos';
 
   @override
+  String get labelDividendGrowth5y => 'Dividendų augimas (5 m.)';
+
+  @override
+  String get dividendNone => 'Per pastaruosius 12 mėnesių dividendų nemokėta.';
+
+  @override
+  String get dividendOnYourShares => 'Už jūsų akcijas, per metus';
+
+  @override
   String get labelConsensus => 'Konsensusas';
 
   @override
@@ -2047,6 +2056,10 @@ class AppLocalizationsLt extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Pelno dalis, išmokama kaip dividendai. Viršijus 100% bendrovė išmoka daugiau, nei uždirba, ir tai retai trunka ilgai.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Kiek vidutiniškai per metus augo dividendas vienai akcijai per pastaruosius penkerius metus. Stabilus augimas paprastai reiškia, kad įmonė pasitiki savo pinigų srautais; sumažinimas dažnai yra įspėjamasis ženklas.';
 
   @override
   String get glossYieldOnCost =>

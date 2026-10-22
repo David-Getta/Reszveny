@@ -291,6 +291,15 @@ class AppLocalizationsMn extends AppLocalizations {
   String get labelYieldOnCost => 'Өртөг дээрх өгөөж';
 
   @override
+  String get labelDividendGrowth5y => 'Ногдол ашгийн өсөлт (5 жил)';
+
+  @override
+  String get dividendNone => 'Сүүлийн 12 сард ногдол ашиг олгоогүй.';
+
+  @override
+  String get dividendOnYourShares => 'Таны хувьцаанд, жилд';
+
+  @override
   String get labelConsensus => 'Консенсус';
 
   @override
@@ -1992,6 +2001,10 @@ class AppLocalizationsMn extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Ашгийн хэдэн хувийг ногдол ашиг болгон хуваарилдаг вэ. 100%-иас дээш бол компани олсноосоо их төлж байгаа бөгөөд энэ нь ховорхон удаан үргэлжилдэг.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Сүүлийн таван жилд нэгж хувьцаанд ногдох ногдол ашиг жилд дунджаар хэр өссөн бэ. Тогтвортой өсөлт нь ихэвчлэн компани мөнгөн урсгалдаа итгэлтэй байгааг илтгэнэ; бууруулах нь ихэнхдээ анхааруулах дохио болдог.';
 
   @override
   String get glossYieldOnCost =>

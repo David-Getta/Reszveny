@@ -291,6 +291,15 @@ class AppLocalizationsUg extends AppLocalizations {
   String get labelYieldOnCost => 'سېتىۋالغان باھادىكى نىسبەت';
 
   @override
+  String get labelDividendGrowth5y => 'پايدا ئۈلۈشى ئېشىشى (5 يىل)';
+
+  @override
+  String get dividendNone => 'ئاخىرقى 12 ئايدا پايدا ئۈلۈشى تارقىتىلمىدى.';
+
+  @override
+  String get dividendOnYourShares => 'پايلىرىڭىزغا، يىلىغا';
+
+  @override
   String get labelConsensus => 'ئورتاق پىكىر';
 
   @override
@@ -1995,6 +2004,10 @@ class AppLocalizationsUg extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'پايدىنىڭ پايدا ئۈلۈشى سۈپىتىدە تارقىتىلغان قىسمى. 100% دىن يۇقىرى بولسا، شىركەت تاپقىنىدىن كۆپ تارقىتىدۇ، بۇ ناھايىتى ئاز ئۇزاققا سوزۇلىدۇ.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'ئاخىرقى بەش يىلدا ھەر پايغا پايدا ئۈلۈشىنىڭ يىلىغا ئوتتۇرىچە قانچىلىك ئاشقانلىقى. مۇقىم ئېشىش ئادەتتە شىركەتنىڭ ئۆز نەق پۇل ئېقىمىغا ئىشىنىدىغانلىقىنى بىلدۈرىدۇ؛ ئازايتىش كۆپىنچە ئاگاھلاندۇرۇش بەلگىسى.';
 
   @override
   String get glossYieldOnCost =>

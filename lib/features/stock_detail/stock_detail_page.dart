@@ -26,6 +26,7 @@ import '../news/watch_news.dart';
 import '../news/move_explainer.dart';
 import '../news/watch_news_view.dart' show showNewsExplanation;
 import 'widgets/converted_price.dart';
+import 'widgets/dividend_card.dart';
 import 'widgets/earnings_card.dart';
 import 'widgets/instrument_card.dart';
 import 'widgets/technical_card.dart';
@@ -520,24 +521,8 @@ class _DetailsBody extends StatelessWidget {
               : StatementsTable(statements: d.statements!, fmt: fmt, currency: cur),
         ),
 
-      // Osztalék
-      SectionCard(
-        title: l10n.sectionDividend,
-        child: err(DetailSection.metrics) != null
-            ? SectionError(err(DetailSection.metrics)!)
-            : KvTable(
-                missing: l10n.notAvailable,
-                hints: glossary,
-                rows: [
-                  (l10n.labelDividendYield, m?.dividendYield == null ? null : fmt.percent(m!.dividendYield)),
-                  (
-                    l10n.labelDividendPerShare,
-                    m?.dividendPerShare == null ? null : fmt.price(m!.dividendPerShare, cur),
-                  ),
-                  (l10n.labelPayoutRatio, m?.payoutRatio == null ? null : fmt.percent(m!.payoutRatio)),
-                ],
-              ),
-      ),
+      // Osztalék (a saját pozícióra jutó évi osztalékkal)
+      DividendCard(symbol: d.symbol, currency: cur, metrics: m, error: err(DetailSection.metrics), hints: glossary),
 
       // Cégprofil
       SectionCard(

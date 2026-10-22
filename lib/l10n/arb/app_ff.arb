@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Ñalngu feccugol",
   "portfolioSplitRow": "Feccugol share {ratio}",
   "portfolioSplitRemoved": "Feccugol share momtaama",
-  "portfolioSplitsImported": "{count, plural, =1{Feccugol share 1 ɓeydaama} other{Feccugol share {count} ɓeydaama}}"
+  "portfolioSplitsImported": "{count, plural, =1{Feccugol share 1 ɓeydaama} other{Feccugol share {count} ɓeydaama}}",
+  "labelDividendGrowth5y": "Ɓeydagol geɗal nafoore (duuɓi 5)",
+  "dividendNone": "Alaa geɗal nafoore yoɓaangal e lebbi 12 ɓennuɗi ɗii.",
+  "dividendOnYourShares": "E aksiyoŋ maa, kala hitaande",
+  "glossDividendGrowth5y": "No geɗal nafoore kala aksiyoŋ ɓeydiri kala hitaande e hakkundeeru, e nder duuɓi joy ɓennuɗi ɗii. Ɓeydagol tabitngol ina hollira ko ɓuri heewde wonde sosiyetee oo ina hoolii ceede mum naatooɗe e yaltooɗe; ustugol ngol ina heewi wonde maande reentaare."
 }

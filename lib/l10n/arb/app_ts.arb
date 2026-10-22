@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Siku ra ku avanyisiwa",
   "portfolioSplitRow": "Ku avanyisiwa ka tishere {ratio}",
   "portfolioSplitRemoved": "Ku avanyisiwa ka tishere ku susiwile",
-  "portfolioSplitsImported": "{count, plural, =1{Ku avanyisiwa ka tishere 1 ku engeteriwile} other{Ku avanyisiwa ka tishere {count} ku engeteriwile}}"
+  "portfolioSplitsImported": "{count, plural, =1{Ku avanyisiwa ka tishere 1 ku engeteriwile} other{Ku avanyisiwa ka tishere {count} ku engeteriwile}}",
+  "labelDividendGrowth5y": "Ku kula ka dividende (malembe ya 5)",
+  "dividendNone": "A ku hakeriwanga dividende eka tin'hweti ta 12 leti hundzeke.",
+  "dividendOnYourShares": "Eka tixere ta wena, hi lembe",
+  "glossDividendGrowth5y": "Leswi dividende hi xere yi kuleke ha swona hi lembe hi xiringaniso eka malembe ya ntlhanu lama hundzeke. Ku kula loku tshamaka ku ri kona hakanyingi swi vula leswaku khampani yi tshemba ku khuluka ka mali ya yona; ku hunguta hakanyingi i mfungho wa xilemukiso."
 }

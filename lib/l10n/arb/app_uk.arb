@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Дата спліту",
   "portfolioSplitRow": "Спліт акцій {ratio}",
   "portfolioSplitRemoved": "Спліт акцій видалено",
-  "portfolioSplitsImported": "{count, plural, =1{Додано 1 спліт акцій} other{Додано сплітів акцій: {count}}}"
+  "portfolioSplitsImported": "{count, plural, =1{Додано 1 спліт акцій} other{Додано сплітів акцій: {count}}}",
+  "labelDividendGrowth5y": "Зростання дивідендів (5 р.)",
+  "dividendNone": "За останні 12 місяців дивіденди не виплачувалися.",
+  "dividendOnYourShares": "На ваші акції, на рік",
+  "glossDividendGrowth5y": "Наскільки в середньому за рік зростав дивіденд на акцію за останні п’ять років. Стабільне зростання зазвичай означає, що компанія впевнена у своєму грошовому потоці; скорочення часто є тривожним сигналом."
 }

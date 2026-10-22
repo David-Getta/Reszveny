@@ -752,5 +752,9 @@
   "portfolioSplitDate": "بۆلۈش چېسلاسى",
   "portfolioSplitRow": "پاي بۆلۈش {ratio}",
   "portfolioSplitRemoved": "پاي بۆلۈش ئۆچۈرۈلدى",
-  "portfolioSplitsImported": "{count, plural, =1{1 پاي بۆلۈش قوشۇلدى} other{{count} پاي بۆلۈش قوشۇلدى}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 پاي بۆلۈش قوشۇلدى} other{{count} پاي بۆلۈش قوشۇلدى}}",
+  "labelDividendGrowth5y": "پايدا ئۈلۈشى ئېشىشى (5 يىل)",
+  "dividendNone": "ئاخىرقى 12 ئايدا پايدا ئۈلۈشى تارقىتىلمىدى.",
+  "dividendOnYourShares": "پايلىرىڭىزغا، يىلىغا",
+  "glossDividendGrowth5y": "ئاخىرقى بەش يىلدا ھەر پايغا پايدا ئۈلۈشىنىڭ يىلىغا ئوتتۇرىچە قانچىلىك ئاشقانلىقى. مۇقىم ئېشىش ئادەتتە شىركەتنىڭ ئۆز نەق پۇل ئېقىمىغا ئىشىنىدىغانلىقىنى بىلدۈرىدۇ؛ ئازايتىش كۆپىنچە ئاگاھلاندۇرۇش بەلگىسى."
 }

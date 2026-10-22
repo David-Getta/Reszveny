@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Datin'ny fizarana",
   "portfolioSplitRow": "Fizarana anjara {ratio}",
   "portfolioSplitRemoved": "Voafafa ny fizarana anjara",
-  "portfolioSplitsImported": "{count, plural, =1{Fizarana anjara 1 nampiana} other{Fizarana anjara {count} nampiana}}"
+  "portfolioSplitsImported": "{count, plural, =1{Fizarana anjara 1 nampiana} other{Fizarana anjara {count} nampiana}}",
+  "labelDividendGrowth5y": "Fitomboan'ny dividenda (5 taona)",
+  "dividendNone": "Tsy nisy dividenda naloa tao anatin'ny 12 volana farany.",
+  "dividendOnYourShares": "Amin'ny aksionanao, isan-taona",
+  "glossDividendGrowth5y": "Hatraiza no nitomboan'ny dividenda isaky ny aksiona isan-taona, raha atao salan'isa, tao anatin'ny dimy taona farany. Ny fitomboana tsy tapaka matetika dia midika fa matoky ny fikorianan'ny volany ny orinasa; ny fampihenana kosa matetika dia famantarana mampitandrina."
 }

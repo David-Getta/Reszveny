@@ -291,6 +291,16 @@ class AppLocalizationsHr extends AppLocalizations {
   String get labelYieldOnCost => 'Prinos na nabavnu cijenu';
 
   @override
+  String get labelDividendGrowth5y => 'Rast dividende (5 g.)';
+
+  @override
+  String get dividendNone =>
+      'U posljednjih 12 mjeseci nije isplaćena dividenda.';
+
+  @override
+  String get dividendOnYourShares => 'Na vaše dionice, godišnje';
+
+  @override
   String get labelConsensus => 'Konsenzus';
 
   @override
@@ -2030,6 +2040,10 @@ class AppLocalizationsHr extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Udio dobiti isplaćen kao dividenda. Iznad 100% tvrtka isplaćuje više nego što zarađuje, što rijetko dugo traje.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Koliko je dividenda po dionici prosječno rasla godišnje u posljednjih pet godina. Stabilan rast obično znači da tvrtka ima povjerenja u svoj novčani tok; smanjenje je često znak upozorenja.';
 
   @override
   String get glossYieldOnCost =>

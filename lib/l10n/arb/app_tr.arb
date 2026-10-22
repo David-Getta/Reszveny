@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Bölünme tarihi",
   "portfolioSplitRow": "Hisse bölünmesi {ratio}",
   "portfolioSplitRemoved": "Hisse bölünmesi silindi",
-  "portfolioSplitsImported": "{count, plural, =1{1 hisse bölünmesi eklendi} other{{count} hisse bölünmesi eklendi}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 hisse bölünmesi eklendi} other{{count} hisse bölünmesi eklendi}}",
+  "labelDividendGrowth5y": "Temettü büyümesi (5 yıl)",
+  "dividendNone": "Son 12 ayda temettü ödenmedi.",
+  "dividendOnYourShares": "Hisseleriniz için, yıllık",
+  "glossDividendGrowth5y": "Hisse başına temettünün son beş yılda yılda ortalama ne kadar arttığı. İstikrarlı büyüme genellikle şirketin nakit akışına güvendiği anlamına gelir; temettü kesintisi çoğu zaman bir uyarı işaretidir."
 }

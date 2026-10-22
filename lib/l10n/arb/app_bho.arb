@@ -752,5 +752,9 @@
   "portfolioSplitDate": "स्प्लिट के तारीख",
   "portfolioSplitRow": "स्टॉक स्प्लिट {ratio}",
   "portfolioSplitRemoved": "स्टॉक स्प्लिट हटा दिहल गइल",
-  "portfolioSplitsImported": "{count, plural, =1{1 स्टॉक स्प्लिट जोड़ल गइल} other{{count} स्टॉक स्प्लिट जोड़ल गइल}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 स्टॉक स्प्लिट जोड़ल गइल} other{{count} स्टॉक स्प्लिट जोड़ल गइल}}",
+  "labelDividendGrowth5y": "लाभांश बढ़ोतरी (5 साल)",
+  "dividendNone": "पिछला 12 महीना में कवनो लाभांश ना दिहल गइल।",
+  "dividendOnYourShares": "रउआ शेयर पर, सालाना",
+  "glossDividendGrowth5y": "पिछला पाँच साल में प्रति शेयर लाभांश औसतन हर साल केतना बढ़ल। लगातार बढ़ोतरी के मतलब आमतौर पर ई होला कि कंपनी के अपना नकदी प्रवाह पर भरोसा बा; लाभांश में कटौती अक्सर चेतावनी के संकेत होला।"
 }

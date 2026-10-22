@@ -290,6 +290,16 @@ class AppLocalizationsSk extends AppLocalizations {
   String get labelYieldOnCost => 'Výnos z nákupnej ceny';
 
   @override
+  String get labelDividendGrowth5y => 'Rast dividendy (5 rokov)';
+
+  @override
+  String get dividendNone =>
+      'Za posledných 12 mesiacov nebola vyplatená žiadna dividenda.';
+
+  @override
+  String get dividendOnYourShares => 'Na vaše akcie, ročne';
+
+  @override
   String get labelConsensus => 'Konsenzus';
 
   @override
@@ -2047,6 +2057,10 @@ class AppLocalizationsSk extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Podiel zisku vyplatený ako dividendy. Nad 100 % firma vypláca viac, než zarába, a to málokedy vydrží.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'O koľko v priemere ročne rástla dividenda na akciu za posledných päť rokov. Stabilný rast zvyčajne znamená, že firma dôveruje svojmu peňažnému toku; zníženie je často varovným signálom.';
 
   @override
   String get glossYieldOnCost =>

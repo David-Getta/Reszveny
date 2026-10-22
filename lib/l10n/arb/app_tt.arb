@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Бүлү датасы",
   "portfolioSplitRow": "Акцияләрне бүлү {ratio}",
   "portfolioSplitRemoved": "Акцияләрне бүлү бетерелде",
-  "portfolioSplitsImported": "{count, plural, =1{1 акцияләрне бүлү өстәлде} other{{count} акцияләрне бүлү өстәлде}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 акцияләрне бүлү өстәлде} other{{count} акцияләрне бүлү өстәлде}}",
+  "labelDividendGrowth5y": "Дивиденд үсеше (5 ел)",
+  "dividendNone": "Соңгы 12 айда дивиденд түләнмәде.",
+  "dividendOnYourShares": "Сезнең акцияләргә, елына",
+  "glossDividendGrowth5y": "Соңгы биш елда бер акциягә дивиденд елына уртача күпме арткан. Тотрыклы үсеш гадәттә компаниянең акча агымына ышанганын аңлата; киметү еш кына кисәтү билгесе була."
 }

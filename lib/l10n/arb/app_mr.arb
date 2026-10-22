@@ -752,5 +752,9 @@
   "portfolioSplitDate": "स्प्लिटची तारीख",
   "portfolioSplitRow": "स्टॉक स्प्लिट {ratio}",
   "portfolioSplitRemoved": "स्टॉक स्प्लिट हटवला",
-  "portfolioSplitsImported": "{count, plural, =1{1 स्टॉक स्प्लिट जोडला} other{{count} स्टॉक स्प्लिट जोडले}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 स्टॉक स्प्लिट जोडला} other{{count} स्टॉक स्प्लिट जोडले}}",
+  "labelDividendGrowth5y": "लाभांश वाढ (5 वर्षे)",
+  "dividendNone": "मागील 12 महिन्यांत कोणताही लाभांश दिलेला नाही.",
+  "dividendOnYourShares": "तुमच्या शेअर्सवर, वार्षिक",
+  "glossDividendGrowth5y": "मागील पाच वर्षांत प्रति शेअर लाभांश दरवर्षी सरासरी किती वाढला. स्थिर वाढ सहसा दर्शवते की कंपनीला तिच्या रोख प्रवाहावर विश्वास आहे; लाभांशात कपात हे अनेकदा धोक्याचे लक्षण असते."
 }

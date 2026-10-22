@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Datum van de splitsing",
   "portfolioSplitRow": "Aandelensplitsing {ratio}",
   "portfolioSplitRemoved": "Aandelensplitsing verwijderd",
-  "portfolioSplitsImported": "{count, plural, =1{1 aandelensplitsing toegevoegd} other{{count} aandelensplitsingen toegevoegd}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 aandelensplitsing toegevoegd} other{{count} aandelensplitsingen toegevoegd}}",
+  "labelDividendGrowth5y": "Dividendgroei (5 jr)",
+  "dividendNone": "Geen dividend uitgekeerd in de afgelopen 12 maanden.",
+  "dividendOnYourShares": "Op je aandelen, per jaar",
+  "glossDividendGrowth5y": "Hoeveel het dividend per aandeel de afgelopen vijf jaar gemiddeld per jaar is gegroeid. Gestage groei betekent meestal dat het bedrijf vertrouwen heeft in zijn kasstroom; een verlaging is vaak een waarschuwingssignaal."
 }

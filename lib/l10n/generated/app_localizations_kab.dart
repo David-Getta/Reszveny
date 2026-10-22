@@ -290,6 +290,16 @@ class AppLocalizationsKab extends AppLocalizations {
   String get labelYieldOnCost => 'Afaris ɣef ssuma n tiɣin';
 
   @override
+  String get labelDividendGrowth5y => 'Timerna n dividand (5 yiseggasen)';
+
+  @override
+  String get dividendNone =>
+      'Ulac dividand i yettwaxelṣen deg 12 n wayyuren ineggura.';
+
+  @override
+  String get dividendOnYourShares => 'Ɣef yiksyunen-ik, i useggas';
+
+  @override
   String get labelConsensus => 'Amtawa';
 
   @override
@@ -1990,6 +2000,10 @@ class AppLocalizationsKab extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Aḥric n rrbeḥ yettwabḍan d dividand. Ugar n 100%, akampani yettxelliṣ ugar n wayen yerbeḥ, ayen ur nettdum ara.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Acḥal i yernu s talemmast dividand n yal aksyun yal aseggas deg semmus n yiseggasen ineggura. Timerna yerkden s umata tesskan-d belli takebbanit tettkel ɣef tazzla-ines n yedrimen; asenqes yettili s waṭas d tamatart n uḥezzeb.';
 
   @override
   String get glossYieldOnCost =>

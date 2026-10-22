@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Tanggal pemecahan",
   "portfolioSplitRow": "Pemecahan saham {ratio}",
   "portfolioSplitRemoved": "Pemecahan saham dihapus",
-  "portfolioSplitsImported": "{count, plural, =1{1 pemecahan saham ditambahkan} other{{count} pemecahan saham ditambahkan}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 pemecahan saham ditambahkan} other{{count} pemecahan saham ditambahkan}}",
+  "labelDividendGrowth5y": "Pertumbuhan dividen (5 thn)",
+  "dividendNone": "Tidak ada dividen yang dibayarkan dalam 12 bulan terakhir.",
+  "dividendOnYourShares": "Atas saham Anda, per tahun",
+  "glossDividendGrowth5y": "Seberapa besar dividen per saham tumbuh rata-rata per tahun selama lima tahun terakhir. Pertumbuhan yang stabil biasanya berarti perusahaan yakin dengan arus kasnya; pemangkasan sering kali merupakan tanda peringatan."
 }

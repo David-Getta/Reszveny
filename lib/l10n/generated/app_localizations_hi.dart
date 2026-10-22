@@ -291,6 +291,15 @@ class AppLocalizationsHi extends AppLocalizations {
   String get labelYieldOnCost => 'लागत पर यील्ड';
 
   @override
+  String get labelDividendGrowth5y => 'लाभांश वृद्धि (5 वर्ष)';
+
+  @override
+  String get dividendNone => 'पिछले 12 महीनों में कोई लाभांश नहीं दिया गया।';
+
+  @override
+  String get dividendOnYourShares => 'आपके शेयरों पर, सालाना';
+
+  @override
   String get labelConsensus => 'सर्वसम्मति';
 
   @override
@@ -1990,6 +1999,10 @@ class AppLocalizationsHi extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'मुनाफ़े का वह हिस्सा जो लाभांश के रूप में बाँटा जाता है। 100% से ऊपर कंपनी कमाई से ज़्यादा बाँटती है, जो शायद ही टिकता है।';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'पिछले पाँच वर्षों में प्रति शेयर लाभांश हर साल औसतन कितना बढ़ा। लगातार वृद्धि का आमतौर पर मतलब है कि कंपनी को अपने नकदी प्रवाह पर भरोसा है; लाभांश में कटौती अक्सर चेतावनी का संकेत होती है।';
 
   @override
   String get glossYieldOnCost =>

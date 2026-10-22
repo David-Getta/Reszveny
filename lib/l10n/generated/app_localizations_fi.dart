@@ -290,6 +290,16 @@ class AppLocalizationsFi extends AppLocalizations {
   String get labelYieldOnCost => 'Tuotto hankintahinnalle';
 
   @override
+  String get labelDividendGrowth5y => 'Osingon kasvu (5 v)';
+
+  @override
+  String get dividendNone =>
+      'Osinkoa ei ole maksettu viimeisten 12 kuukauden aikana.';
+
+  @override
+  String get dividendOnYourShares => 'Osakkeillesi vuodessa';
+
+  @override
   String get labelConsensus => 'Konsensus';
 
   @override
@@ -1993,6 +2003,10 @@ class AppLocalizationsFi extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Osuus voitosta, joka maksetaan osinkoina. Jos se on yli 100 %, yhtiö maksaa enemmän kuin ansaitsee, mikä harvoin kestää pitkään.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Kuinka paljon osakekohtainen osinko on kasvanut keskimäärin vuodessa viimeisten viiden vuoden aikana. Tasainen kasvu kertoo yleensä, että yhtiö luottaa kassavirtaansa; osingon leikkaus on usein varoitusmerkki.';
 
   @override
   String get glossYieldOnCost =>

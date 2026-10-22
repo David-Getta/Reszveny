@@ -290,6 +290,16 @@ class AppLocalizationsEe extends AppLocalizations {
   String get labelYieldOnCost => 'Viɖemama ƒe agbɔsɔsɔ le ƒlexɔ ŋu';
 
   @override
+  String get labelDividendGrowth5y => 'Viɖemama ƒe dzidziɖedzi (ƒe 5)';
+
+  @override
+  String get dividendNone =>
+      'Womexe viɖemama aɖeke le ɣleti 12 siwo va yi me o.';
+
+  @override
+  String get dividendOnYourShares => 'Le wò akpawo ŋu, ƒe sia ƒe';
+
+  @override
   String get labelConsensus => 'Susu si wolɔ̃ ɖe edzi';
 
   @override
@@ -1996,6 +2006,10 @@ class AppLocalizationsEe extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Viɖe ƒe akpa si wotsɔna maa abe viɖemama ene. Ne ede 100% dzi la, dɔwɔƒea xea fe wu nusi wòkpɔna, si meyia edzi didi o.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Alesi viɖemama le akpa ɖesiaɖe ŋu dzi ɖe edzi ƒe sia ƒe le titina le ƒe atɔ̃ siwo va yi me. Dzidziɖedzi si li ke zi geɖe fiana be dɔwɔƒea ka ɖe ga si gena ɖe eme kple esi dona le eme dzi; viɖemama ƒe ɖiɖiɖe zi geɖe nye nuxlɔ̃ame ƒe dzesi.';
 
   @override
   String get glossYieldOnCost =>

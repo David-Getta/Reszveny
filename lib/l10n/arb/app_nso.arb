@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Letšatšikgwedi la karoganyo",
   "portfolioSplitRow": "Karoganyo ya dišere {ratio}",
   "portfolioSplitRemoved": "Karoganyo ya dišere e phumotšwe",
-  "portfolioSplitsImported": "{count, plural, =1{Karoganyo ya dišere e 1 e okeditšwe} other{Dikaroganyo tša dišere tše {count} di okeditšwe}}"
+  "portfolioSplitsImported": "{count, plural, =1{Karoganyo ya dišere e 1 e okeditšwe} other{Dikaroganyo tša dišere tše {count} di okeditšwe}}",
+  "labelDividendGrowth5y": "Kgolo ya dividende (mengwaga ye 5)",
+  "dividendNone": "Ga go dividende ye e lefilwego dikgweding tše 12 tša go feta.",
+  "dividendOnYourShares": "Go dišere tša gago, ka ngwaga",
+  "glossDividendGrowth5y": "Dividende ka šere e godile bjang ka ngwaga ka kakaretšo mengwageng ye mehlano ya go feta. Kgolo ye e tšwelago pele gantši e bontšha gore khamphani e tshepha phallo ya yona ya tšhelete; go fokotšwa gantši ke leswao la temošo."
 }

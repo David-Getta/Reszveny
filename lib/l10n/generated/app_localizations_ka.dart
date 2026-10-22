@@ -291,6 +291,15 @@ class AppLocalizationsKa extends AppLocalizations {
   String get labelYieldOnCost => 'შემოსავლიანობა შესყიდვის ფასზე';
 
   @override
+  String get labelDividendGrowth5y => 'დივიდენდის ზრდა (5 წ.)';
+
+  @override
+  String get dividendNone => 'ბოლო 12 თვეში დივიდენდი არ გადახდილა.';
+
+  @override
+  String get dividendOnYourShares => 'თქვენს აქციებზე, წელიწადში';
+
+  @override
   String get labelConsensus => 'კონსენსუსი';
 
   @override
@@ -1994,6 +2003,10 @@ class AppLocalizationsKa extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'მოგების წილი, რომელიც დივიდენდად გაიცემა. 100%-ზე მეტისას კომპანია იმაზე მეტს იხდის, ვიდრე გამოიმუშავებს, რაც იშვიათად გრძელდება.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'რამდენით იზრდებოდა ერთ აქციაზე დივიდენდი საშუალოდ წელიწადში ბოლო ხუთი წლის განმავლობაში. სტაბილური ზრდა, როგორც წესი, ნიშნავს, რომ კომპანია ენდობა თავის ფულად ნაკადებს; შემცირება ხშირად გამაფრთხილებელი ნიშანია.';
 
   @override
   String get glossYieldOnCost =>

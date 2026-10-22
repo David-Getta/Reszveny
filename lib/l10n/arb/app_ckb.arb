@@ -752,5 +752,9 @@
   "portfolioSplitDate": "بەرواری دابەشکردن",
   "portfolioSplitRow": "دابەشکردنی پشک {ratio}",
   "portfolioSplitRemoved": "دابەشکردنی پشک سڕایەوە",
-  "portfolioSplitsImported": "{count, plural, =1{1 دابەشکردنی پشک زیادکرا} other{{count} دابەشکردنی پشک زیادکرا}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 دابەشکردنی پشک زیادکرا} other{{count} دابەشکردنی پشک زیادکرا}}",
+  "labelDividendGrowth5y": "گەشەی قازانجی پشک (5 ساڵ)",
+  "dividendNone": "لە 12 مانگی ڕابردوودا هیچ قازانجێکی پشک نەدراوە.",
+  "dividendOnYourShares": "لەسەر پشکەکانت، ساڵانە",
+  "glossDividendGrowth5y": "قازانجی هەر پشکێک لە پێنج ساڵی ڕابردوودا بە تێکڕا ساڵانە چەندە گەشەی کردووە. گەشەی جێگیر بە زۆری ئەوە دەگەیەنێت کە کۆمپانیاکە متمانەی بە ڕەوتی پارەی نەختی خۆی هەیە؛ کەمکردنەوەی بە زۆری نیشانەی ئاگادارکردنەوەیە."
 }

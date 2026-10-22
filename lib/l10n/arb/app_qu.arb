@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Rakiypa p'unchawnin",
   "portfolioSplitRow": "Akcionkuna rakiy {ratio}",
   "portfolioSplitRemoved": "Akcionkuna rakiy qullusqa",
-  "portfolioSplitsImported": "{count, plural, =1{1 akcionkuna rakiy yapasqa} other{{count} akcionkuna rakiykuna yapasqa}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 akcionkuna rakiy yapasqa} other{{count} akcionkuna rakiykuna yapasqa}}",
+  "labelDividendGrowth5y": "Dividendopa wiñaynin (5 wata)",
+  "dividendNone": "Qhipa 12 killapi mana dividendo pagasqachu.",
+  "dividendOnYourShares": "Accionniykikunapaq, watapi",
+  "glossDividendGrowth5y": "Sapa accionpaq dividendo hayk'ata wiñarqan sapa wata, chawpinpi, qhipa pichqa watakunapi. Takyasqa wiñayqa achkha kutipi rikuchin empresa qullqi puriyninpi hap'ipakusqanta; pisiyachiyqa achkha kutipi willakuq unancha."
 }

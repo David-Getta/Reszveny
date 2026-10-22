@@ -752,5 +752,9 @@
   "portfolioSplitDate": "ਸਪਲਿਟ ਦੀ ਤਾਰੀਖ਼",
   "portfolioSplitRow": "ਸਟਾਕ ਸਪਲਿਟ {ratio}",
   "portfolioSplitRemoved": "ਸਟਾਕ ਸਪਲਿਟ ਮਿਟਾਇਆ ਗਿਆ",
-  "portfolioSplitsImported": "{count, plural, =1{1 ਸਟਾਕ ਸਪਲਿਟ ਜੋੜਿਆ ਗਿਆ} other{{count} ਸਟਾਕ ਸਪਲਿਟ ਜੋੜੇ ਗਏ}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 ਸਟਾਕ ਸਪਲਿਟ ਜੋੜਿਆ ਗਿਆ} other{{count} ਸਟਾਕ ਸਪਲਿਟ ਜੋੜੇ ਗਏ}}",
+  "labelDividendGrowth5y": "ਲਾਭਅੰਸ਼ ਵਾਧਾ (5 ਸਾਲ)",
+  "dividendNone": "ਪਿਛਲੇ 12 ਮਹੀਨਿਆਂ ਵਿੱਚ ਕੋਈ ਲਾਭਅੰਸ਼ ਨਹੀਂ ਦਿੱਤਾ ਗਿਆ।",
+  "dividendOnYourShares": "ਤੁਹਾਡੇ ਸ਼ੇਅਰਾਂ ’ਤੇ, ਸਾਲਾਨਾ",
+  "glossDividendGrowth5y": "ਪਿਛਲੇ ਪੰਜ ਸਾਲਾਂ ਵਿੱਚ ਪ੍ਰਤੀ ਸ਼ੇਅਰ ਲਾਭਅੰਸ਼ ਹਰ ਸਾਲ ਔਸਤਨ ਕਿੰਨਾ ਵਧਿਆ। ਸਥਿਰ ਵਾਧੇ ਦਾ ਆਮ ਤੌਰ ’ਤੇ ਮਤਲਬ ਹੁੰਦਾ ਹੈ ਕਿ ਕੰਪਨੀ ਨੂੰ ਆਪਣੇ ਨਕਦ ਪ੍ਰਵਾਹ ’ਤੇ ਭਰੋਸਾ ਹੈ; ਕਟੌਤੀ ਅਕਸਰ ਚੇਤਾਵਨੀ ਦਾ ਸੰਕੇਤ ਹੁੰਦੀ ਹੈ।"
 }

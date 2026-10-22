@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Dituku dia diabanya",
   "portfolioSplitRow": "Diabanya dia share {ratio}",
   "portfolioSplitRemoved": "Diabanya dia share ndijimija",
-  "portfolioSplitsImported": "{count, plural, =1{Diabanya dia share 1 ndisakidila} other{Diabanya dia share {count} ndisakidila}}"
+  "portfolioSplitsImported": "{count, plural, =1{Diabanya dia share 1 ndisakidila} other{Diabanya dia share {count} ndisakidila}}",
+  "labelDividendGrowth5y": "Dikola dia dividende (bidimu 5)",
+  "dividendNone": "Kabavua bafute dividende mu ngondo 12 mishale to.",
+  "dividendOnYourShares": "Pa ba-action bebe, ku tshidimu",
+  "glossDividendGrowth5y": "Mushindu udi dividende wa action umue mukole tshidimu tshionso, mu bungi bua pankatshi, mu bidimu bitanu bishale. Dikola dia pa tshibidilu didi dileja bikole ne: kompanyi udi weyemena mfranga yende idi ibuela ne ipatuka; dipuekesha didi misangu mivule tshimanyinu tshia kudimuija."
 }

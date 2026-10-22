@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Ñembojaʼo ára",
   "portfolioSplitRow": "Acción ñembojaʼo {ratio}",
   "portfolioSplitRemoved": "Acción ñembojaʼo oñembogue",
-  "portfolioSplitsImported": "{count, plural, =1{1 acción ñembojaʼo oñembojoapy} other{{count} acción ñembojaʼo oñembojoapy}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 acción ñembojaʼo oñembojoapy} other{{count} acción ñembojaʼo oñembojoapy}}",
+  "labelDividendGrowth5y": "Dividendo jekakuaa (5 ary)",
+  "dividendNone": "Ndojehepymeʼẽi dividendo 12 jasy ohasavaʼekuépe.",
+  "dividendOnYourShares": "Ne acción-kuérare, arýpe",
+  "glossDividendGrowth5y": "Mbaʼeichaitépa okakuaa dividendo peteĩteĩ acción rehe ary ha ary, promedio-pe, ary po ohasavaʼekuépe. Jekakuaa hekopete ohechauka jepi pe empresa ojeroviaha iviru oikéva ha osẽvare; ojepoʼíramo, heta jey haʼe peteĩ señal de alerta."
 }

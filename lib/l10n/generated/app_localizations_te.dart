@@ -291,6 +291,15 @@ class AppLocalizationsTe extends AppLocalizations {
   String get labelYieldOnCost => 'కొన్న ధరపై ఈల్డ్';
 
   @override
+  String get labelDividendGrowth5y => 'డివిడెండ్ వృద్ధి (5 ఏళ్లు)';
+
+  @override
+  String get dividendNone => 'గత 12 నెలల్లో డివిడెండ్ చెల్లించలేదు.';
+
+  @override
+  String get dividendOnYourShares => 'మీ షేర్లపై, సంవత్సరానికి';
+
+  @override
   String get labelConsensus => 'ఏకాభిప్రాయం';
 
   @override
@@ -1998,6 +2007,10 @@ class AppLocalizationsTe extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'లాభంలో డివిడెండ్‌లుగా చెల్లించే వాటా. 100% పైన ఉంటే కంపెనీ సంపాదించే దానికంటే ఎక్కువ చెల్లిస్తోంది, ఇది అరుదుగా కొనసాగుతుంది.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'గత ఐదు సంవత్సరాల్లో షేరుకు డివిడెండ్ సంవత్సరానికి సగటున ఎంత పెరిగింది. స్థిరమైన వృద్ధి సాధారణంగా కంపెనీకి తన నగదు ప్రవాహంపై నమ్మకం ఉందని సూచిస్తుంది; కోత తరచుగా హెచ్చరిక సంకేతం.';
 
   @override
   String get glossYieldOnCost =>

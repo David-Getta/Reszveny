@@ -290,6 +290,15 @@ class AppLocalizationsSd extends AppLocalizations {
   String get labelYieldOnCost => 'خريد قيمت تي ييلڊ';
 
   @override
+  String get labelDividendGrowth5y => 'ڊيويڊنڊ ۾ واڌ (5 سال)';
+
+  @override
+  String get dividendNone => 'گذريل 12 مهينن ۾ ڪو ڊيويڊنڊ ادا نه ڪيو ويو.';
+
+  @override
+  String get dividendOnYourShares => 'توهان جي شيئرن تي، سالياني';
+
+  @override
   String get labelConsensus => 'گڏيل راءِ';
 
   @override
@@ -1983,6 +1992,10 @@ class AppLocalizationsSd extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'منافعي جو ڪيترو حصو ڊيويڊنڊ طور ورهايو وڃي ٿو. 100% کان مٿي ڪمپني ڪمائي کان وڌيڪ ڏئي ٿي، جيڪو گهٽ ئي هلي ٿو.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'گذريل پنجن سالن ۾ في شيئر ڊيويڊنڊ هر سال سراسري طور ڪيترو وڌيو. مسلسل واڌ جو مطلب عام طور تي اهو آهي ته ڪمپني کي پنهنجي نقد وهڪري تي ڀروسو آهي؛ ڪٽوتي اڪثر خبرداري جي نشاني هوندي آهي.';
 
   @override
   String get glossYieldOnCost =>

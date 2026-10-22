@@ -291,6 +291,15 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get labelYieldOnCost => 'Yield on cost';
 
   @override
+  String get labelDividendGrowth5y => 'Dividend growth (5 yrs)';
+
+  @override
+  String get dividendNone => 'Dem no pay dividend for di last 12 months.';
+
+  @override
+  String get dividendOnYourShares => 'For your shares, every year';
+
+  @override
   String get labelConsensus => 'Wetin most of dem tok';
 
   @override
@@ -1991,6 +2000,10 @@ class AppLocalizationsPcm extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Di part of profit wey dem share as dividend. Above 100%, di company dey pay pass wetin e dey make, and dat one no dey last.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'How much di dividend for each share grow every year on average for di last five years. If e dey grow steady, e usually mean say di company trust di cash wey dey enter; if dem cut am, na warning sign most times.';
 
   @override
   String get glossYieldOnCost =>

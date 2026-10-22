@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Датум поделе",
   "portfolioSplitRow": "Подела акција {ratio}",
   "portfolioSplitRemoved": "Подела акција је избрисана",
-  "portfolioSplitsImported": "{count, plural, =1{Додата је 1 подела акција} other{Додато подела акција: {count}}}"
+  "portfolioSplitsImported": "{count, plural, =1{Додата је 1 подела акција} other{Додато подела акција: {count}}}",
+  "labelDividendGrowth5y": "Раст дивиденде (5 год.)",
+  "dividendNone": "У последњих 12 месеци није исплаћена дивиденда.",
+  "dividendOnYourShares": "На ваше акције, годишње",
+  "glossDividendGrowth5y": "Колико је дивиденда по акцији у просеку годишње расла у последњих пет година. Стабилан раст обично значи да компанија има поверења у свој новчани ток; смањење је често знак упозорења."
 }

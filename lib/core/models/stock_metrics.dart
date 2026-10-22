@@ -12,6 +12,7 @@ class StockMetrics {
     this.dividendYield,
     this.dividendPerShare,
     this.payoutRatio,
+    this.dividendGrowth5y,
     this.beta,
     this.week52High,
     this.week52Low,
@@ -43,6 +44,9 @@ class StockMetrics {
   final double? dividendYield;
   final double? dividendPerShare;
   final double? payoutRatio;
+
+  /// A részvényenkénti osztalék átlagos évi növekedése az elmúlt öt évben, százalékban.
+  final double? dividendGrowth5y;
   final double? beta;
   final double? week52High;
   final double? week52Low;
@@ -73,6 +77,7 @@ class StockMetrics {
     'dividendYield': ?dividendYield,
     'dividendPerShare': ?dividendPerShare,
     'payoutRatio': ?payoutRatio,
+    'dividendGrowth5y': ?dividendGrowth5y,
     'beta': ?beta,
     'week52High': ?week52High,
     'week52Low': ?week52Low,
@@ -103,6 +108,7 @@ class StockMetrics {
     dividendYield: (j['dividendYield'] as num?)?.toDouble(),
     dividendPerShare: (j['dividendPerShare'] as num?)?.toDouble(),
     payoutRatio: (j['payoutRatio'] as num?)?.toDouble(),
+    dividendGrowth5y: (j['dividendGrowth5y'] as num?)?.toDouble(),
     beta: (j['beta'] as num?)?.toDouble(),
     week52High: (j['week52High'] as num?)?.toDouble(),
     week52Low: (j['week52Low'] as num?)?.toDouble(),

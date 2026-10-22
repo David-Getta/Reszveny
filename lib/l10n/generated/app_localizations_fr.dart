@@ -292,6 +292,16 @@ class AppLocalizationsFr extends AppLocalizations {
   String get labelYieldOnCost => 'Rendement sur PRU';
 
   @override
+  String get labelDividendGrowth5y => 'Croissance du dividende (5 ans)';
+
+  @override
+  String get dividendNone =>
+      'Aucun dividende versé au cours des 12 derniers mois.';
+
+  @override
+  String get dividendOnYourShares => 'Sur vos actions, par an';
+
+  @override
   String get labelConsensus => 'Consensus';
 
   @override
@@ -2002,6 +2012,10 @@ class AppLocalizationsFr extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'La part du bénéfice versée en dividendes. Au-delà de 100 %, l\'entreprise verse plus qu\'elle ne gagne, ce qui dure rarement.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'De combien le dividende par action a augmenté en moyenne chaque année au cours des cinq dernières années. Une croissance régulière signifie généralement que l’entreprise a confiance en ses flux de trésorerie ; une baisse est souvent un signal d’alerte.';
 
   @override
   String get glossYieldOnCost =>

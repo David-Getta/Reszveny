@@ -290,6 +290,15 @@ class AppLocalizationsNb extends AppLocalizations {
   String get labelYieldOnCost => 'Direkteavkastning på kostpris';
 
   @override
+  String get labelDividendGrowth5y => 'Utbyttevekst (5 år)';
+
+  @override
+  String get dividendNone => 'Ingen utbytte utbetalt de siste 12 månedene.';
+
+  @override
+  String get dividendOnYourShares => 'På dine aksjer, per år';
+
+  @override
   String get labelConsensus => 'Konsensus';
 
   @override
@@ -1992,6 +2001,10 @@ class AppLocalizationsNb extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Andelen av overskuddet som deles ut som utbytte. Over 100 % betaler selskapet ut mer enn det tjener, og det varer sjelden.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Hvor mye utbyttet per aksje har økt i gjennomsnitt per år de siste fem årene. Jevn vekst betyr som regel at selskapet har tillit til kontantstrømmen sin; et kutt er ofte et faresignal.';
 
   @override
   String get glossYieldOnCost =>

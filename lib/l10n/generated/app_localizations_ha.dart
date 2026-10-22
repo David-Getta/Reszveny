@@ -291,6 +291,16 @@ class AppLocalizationsHa extends AppLocalizations {
   String get labelYieldOnCost => 'Yawan rabon riba kan farashin saye';
 
   @override
+  String get labelDividendGrowth5y => 'Ƙaruwar rabon riba (shekara 5)';
+
+  @override
+  String get dividendNone =>
+      'Ba a biya rabon riba ba a cikin watanni 12 da suka wuce.';
+
+  @override
+  String get dividendOnYourShares => 'Kan hannun jarinka, a shekara';
+
+  @override
   String get labelConsensus => 'Matsayar manazarta';
 
   @override
@@ -1996,6 +2006,10 @@ class AppLocalizationsHa extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Kason ribar da ake biya a matsayin rabon riba. Sama da 100% kamfanin yana biyan fiye da abin da yake samu, wanda ba kasafai yake ɗorewa ba.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Yawan da rabon riba kan kowane hannun jari ya ƙaru a kowace shekara a matsakaici cikin shekaru biyar da suka wuce. Ƙaruwa mai dorewa yawanci tana nufin kamfanin ya amince da kwararar kuɗinsa; ragewa sau da yawa alamar gargaɗi ce.';
 
   @override
   String get glossYieldOnCost =>

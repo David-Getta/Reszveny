@@ -291,6 +291,15 @@ class AppLocalizationsMy extends AppLocalizations {
   String get labelYieldOnCost => 'ဝယ်ဈေးအပေါ် အထွက်နှုန်း';
 
   @override
+  String get labelDividendGrowth5y => 'အမြတ်ဝေစု တိုးတက်မှု (5 နှစ်)';
+
+  @override
+  String get dividendNone => 'ပြီးခဲ့သော 12 လအတွင်း အမြတ်ဝေစု မပေးခဲ့ပါ။';
+
+  @override
+  String get dividendOnYourShares => 'သင့်ရှယ်ယာများအတွက်၊ တစ်နှစ်လျှင်';
+
+  @override
   String get labelConsensus => 'ဘုံသဘောထား';
 
   @override
@@ -1985,6 +1994,10 @@ class AppLocalizationsMy extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'အမြတ်၏ မည်မျှကို အမြတ်ဝေစုအဖြစ် ပေးသနည်း။ 100% အထက်ဆိုလျှင် ကုမ္ပဏီက ရသည်ထက် ပိုပေးနေပြီး ယင်းသည် ကြာရှည် မခံတတ်ပါ။';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'ပြီးခဲ့သော ငါးနှစ်အတွင်း တစ်ရှယ်ယာလျှင် အမြတ်ဝေစု တစ်နှစ်လျှင် ပျမ်းမျှ မည်မျှ တိုးလာသနည်း။ တည်ငြိမ်သော တိုးတက်မှုသည် များသောအားဖြင့် ကုမ္ပဏီက ၎င်း၏ ငွေသားစီးဆင်းမှုကို ယုံကြည်သည်ဟု ဆိုလိုသည်။ လျှော့ချခြင်းမှာမူ မကြာခဏ သတိပေးလက္ခဏာ ဖြစ်တတ်သည်။';
 
   @override
   String get glossYieldOnCost =>

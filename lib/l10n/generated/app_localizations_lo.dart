@@ -290,6 +290,15 @@ class AppLocalizationsLo extends AppLocalizations {
   String get labelYieldOnCost => 'ຜົນຕອບແທນຕໍ່ຕົ້ນທຶນ';
 
   @override
+  String get labelDividendGrowth5y => 'ການເຕີບໂຕຂອງເງິນປັນຜົນ (5 ປີ)';
+
+  @override
+  String get dividendNone => 'ບໍ່ມີການຈ່າຍເງິນປັນຜົນໃນ 12 ເດືອນຜ່ານມາ.';
+
+  @override
+  String get dividendOnYourShares => 'ຈາກຮຸ້ນຂອງທ່ານ ຕໍ່ປີ';
+
+  @override
   String get labelConsensus => 'ມຸມມອງລວມ';
 
   @override
@@ -1968,6 +1977,10 @@ class AppLocalizationsLo extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'ສ່ວນຂອງກຳໄລທີ່ຈ່າຍເປັນເງິນປັນຜົນ. ສູງກວ່າ 100% ບໍລິສັດຈ່າຍຫຼາຍກວ່າທີ່ຫາໄດ້ ເຊິ່ງບໍ່ຄ່ອຍຍືນຍົງ.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'ເງິນປັນຜົນຕໍ່ຮຸ້ນເຕີບໂຕສະເລ່ຍປີລະເທົ່າໃດໃນຫ້າປີຜ່ານມາ. ການເຕີບໂຕຢ່າງໝັ້ນຄົງໂດຍທົ່ວໄປໝາຍຄວາມວ່າບໍລິສັດໝັ້ນໃຈໃນກະແສເງິນສົດຂອງຕົນ; ການຫຼຸດລົງມັກເປັນສັນຍານເຕືອນ.';
 
   @override
   String get glossYieldOnCost =>

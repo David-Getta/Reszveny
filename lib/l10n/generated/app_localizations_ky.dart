@@ -291,6 +291,15 @@ class AppLocalizationsKy extends AppLocalizations {
   String get labelYieldOnCost => 'Сатып алуу баасына кирешелүүлүк';
 
   @override
+  String get labelDividendGrowth5y => 'Дивиденддин өсүшү (5 ж.)';
+
+  @override
+  String get dividendNone => 'Акыркы 12 айда дивиденд төлөнгөн жок.';
+
+  @override
+  String get dividendOnYourShares => 'Акцияларыңызга, жылына';
+
+  @override
   String get labelConsensus => 'Консенсус';
 
   @override
@@ -1994,6 +2003,10 @@ class AppLocalizationsKy extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Пайданын дивиденд катары төлөнгөн үлүшү. 100%дан ашса, компания тапканынан көп төлөйт, бул сейрек узакка созулат.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Акыркы беш жылда бир акцияга дивиденд жылына орточо канчалык өскөнү. Туруктуу өсүш адатта компания өзүнүн акча агымына ишенерин билдирет; кыскартуу көбүнчө эскертүүчү белги болот.';
 
   @override
   String get glossYieldOnCost =>

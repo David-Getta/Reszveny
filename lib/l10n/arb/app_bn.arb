@@ -752,5 +752,9 @@
   "portfolioSplitDate": "স্প্লিটের তারিখ",
   "portfolioSplitRow": "স্টক স্প্লিট {ratio}",
   "portfolioSplitRemoved": "স্টক স্প্লিট মুছে ফেলা হয়েছে",
-  "portfolioSplitsImported": "{count, plural, =1{1টি স্টক স্প্লিট যোগ করা হয়েছে} other{{count}টি স্টক স্প্লিট যোগ করা হয়েছে}}"
+  "portfolioSplitsImported": "{count, plural, =1{1টি স্টক স্প্লিট যোগ করা হয়েছে} other{{count}টি স্টক স্প্লিট যোগ করা হয়েছে}}",
+  "labelDividendGrowth5y": "ডিভিডেন্ড বৃদ্ধি (5 বছর)",
+  "dividendNone": "গত 12 মাসে কোনো ডিভিডেন্ড দেওয়া হয়নি।",
+  "dividendOnYourShares": "আপনার শেয়ারে, বছরে",
+  "glossDividendGrowth5y": "গত পাঁচ বছরে শেয়ার প্রতি ডিভিডেন্ড বছরে গড়ে কতটা বেড়েছে। স্থির বৃদ্ধি সাধারণত বোঝায় যে কোম্পানি তার নগদ প্রবাহের ওপর আস্থা রাখে; ডিভিডেন্ড কমানো প্রায়ই একটি সতর্ক সংকেত।"
 }

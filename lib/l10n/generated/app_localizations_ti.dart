@@ -290,6 +290,15 @@ class AppLocalizationsTi extends AppLocalizations {
   String get labelYieldOnCost => 'ትርፊ ኣብ ዋጋ ዕድጊ';
 
   @override
+  String get labelDividendGrowth5y => 'ዕቤት ብጽሒት ትርፊ (5 ዓመት)';
+
+  @override
+  String get dividendNone => 'ኣብ ዝሓለፉ 12 ኣዋርሕ ብጽሒት ትርፊ ኣይተኸፍለን።';
+
+  @override
+  String get dividendOnYourShares => 'ኣብ ኣክሲዮናትኩም፣ ኣብ ዓመት';
+
+  @override
   String get labelConsensus => 'ሓባራዊ ስምምዕ';
 
   @override
@@ -1956,6 +1965,10 @@ class AppLocalizationsTi extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'ከም ብጽሒት ትርፊ ዝኽፈል ክፋል ትርፊ። ልዕሊ 100% እቲ ኩባንያ ካብ ዘእትዎ ንላዕሊ ይኸፍል ኣሎ፣ እዚ ድማ ሳሕቲ እዩ ዝቕጽል።';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'ብጽሒት ትርፊ ንሓደ ኣክሲዮን ኣብ ዝሓለፉ ሓሙሽተ ዓመታት ብማእከላይ ኣብ ዓመት ክንደይ ከም ዝዓበየ። ቀጻሊ ዕቤት መብዛሕትኡ ግዜ እቲ ኩባንያ ብገንዘባዊ ውሕዝኡ ከም ዝኣምን የርኢ፤ ምጉዳል ድማ መብዛሕትኡ ግዜ ምልክት ማስጠንቀቕታ እዩ።';
 
   @override
   String get glossYieldOnCost =>

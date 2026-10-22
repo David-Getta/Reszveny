@@ -290,6 +290,16 @@ class AppLocalizationsSw extends AppLocalizations {
   String get labelYieldOnCost => 'Mavuno kwa bei ya kununua';
 
   @override
+  String get labelDividendGrowth5y => 'Ukuaji wa gawio (miaka 5)';
+
+  @override
+  String get dividendNone =>
+      'Hakuna gawio lililolipwa katika miezi 12 iliyopita.';
+
+  @override
+  String get dividendOnYourShares => 'Kwa hisa zako, kwa mwaka';
+
+  @override
   String get labelConsensus => 'Makubaliano';
 
   @override
@@ -1992,6 +2002,10 @@ class AppLocalizationsSw extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Sehemu ya faida inayolipwa kama gawio. Zaidi ya 100% kampuni inalipa zaidi ya inavyopata, jambo ambalo mara chache hudumu.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Kiasi ambacho gawio kwa hisa lilikua kila mwaka kwa wastani katika miaka mitano iliyopita. Ukuaji thabiti kwa kawaida humaanisha kampuni inaamini mtiririko wake wa fedha; kupunguzwa mara nyingi ni ishara ya tahadhari.';
 
   @override
   String get glossYieldOnCost =>

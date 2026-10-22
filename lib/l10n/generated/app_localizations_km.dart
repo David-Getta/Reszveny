@@ -290,6 +290,15 @@ class AppLocalizationsKm extends AppLocalizations {
   String get labelYieldOnCost => 'ទិន្នផលលើថ្លៃដើម';
 
   @override
+  String get labelDividendGrowth5y => 'កំណើនភាគលាភ (5 ឆ្នាំ)';
+
+  @override
+  String get dividendNone => 'មិនមានការបង់ភាគលាភក្នុងរយៈពេល 12 ខែចុងក្រោយទេ។';
+
+  @override
+  String get dividendOnYourShares => 'លើភាគហ៊ុនរបស់អ្នក ក្នុងមួយឆ្នាំ';
+
+  @override
   String get labelConsensus => 'មតិរួម';
 
   @override
@@ -1974,6 +1983,10 @@ class AppLocalizationsKm extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'ចំណែកនៃប្រាក់ចំណេញដែលបានបង់ជាភាគលាភ។ លើសពី 100% ក្រុមហ៊ុនបង់ច្រើនជាងអ្វីដែលវារកបាន ដែលកម្រនឹងស្ថិតស្ថេរយូរ។';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'កម្រិតដែលភាគលាភក្នុងមួយភាគហ៊ុនបានកើនឡើងជាមធ្យមក្នុងមួយឆ្នាំ ក្នុងរយៈពេលប្រាំឆ្នាំចុងក្រោយ។ កំណើនថេរជាធម្មតាមានន័យថាក្រុមហ៊ុនទុកចិត្តលើលំហូរសាច់ប្រាក់របស់ខ្លួន ចំណែកការកាត់បន្ថយច្រើនតែជាសញ្ញាព្រមាន។';
 
   @override
   String get glossYieldOnCost =>

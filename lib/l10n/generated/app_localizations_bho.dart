@@ -291,6 +291,15 @@ class AppLocalizationsBho extends AppLocalizations {
   String get labelYieldOnCost => 'लागत पर यील्ड';
 
   @override
+  String get labelDividendGrowth5y => 'लाभांश बढ़ोतरी (5 साल)';
+
+  @override
+  String get dividendNone => 'पिछला 12 महीना में कवनो लाभांश ना दिहल गइल।';
+
+  @override
+  String get dividendOnYourShares => 'रउआ शेयर पर, सालाना';
+
+  @override
   String get labelConsensus => 'आम राय';
 
   @override
@@ -1987,6 +1996,10 @@ class AppLocalizationsBho extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'मुनाफा के ऊ हिस्सा जवन लाभांश के रूप में बाँटल जाला। 100% से ऊपर कंपनी कमाई से ज्यादा बाँटत बिया, जवन कमे टिकेला।';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'पिछला पाँच साल में प्रति शेयर लाभांश औसतन हर साल केतना बढ़ल। लगातार बढ़ोतरी के मतलब आमतौर पर ई होला कि कंपनी के अपना नकदी प्रवाह पर भरोसा बा; लाभांश में कटौती अक्सर चेतावनी के संकेत होला।';
 
   @override
   String get glossYieldOnCost =>

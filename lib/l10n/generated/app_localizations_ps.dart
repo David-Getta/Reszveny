@@ -291,6 +291,15 @@ class AppLocalizationsPs extends AppLocalizations {
   String get labelYieldOnCost => 'د پېرودلو بیې پر بنسټ ګټه';
 
   @override
+  String get labelDividendGrowth5y => 'د ونډې ګټې وده (5 کاله)';
+
+  @override
+  String get dividendNone => 'په تېرو 12 میاشتو کې د ونډې ګټه نه ده ورکړل شوې.';
+
+  @override
+  String get dividendOnYourShares => 'ستاسو پر ونډو، کلنۍ';
+
+  @override
   String get labelConsensus => 'ګډ نظر';
 
   @override
@@ -1984,6 +1993,10 @@ class AppLocalizationsPs extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'د ګټې هغه برخه چې د وېشل شوې ګټې په توګه ورکول کېږي. له 100% پورته شرکت له خپل عاید ډېر ورکوي، چې ډېر کم دوام کوي.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'په هره ونډه وېشل شوې ګټه په تېرو پنځو کلونو کې په منځني ډول هر کال څومره وده کړې. ثابته وده معمولاً دا معنا لري چې شرکت پر خپل نغدي جریان باور لري؛ کمول یې ډېری وخت د خبرتیا نښه وي.';
 
   @override
   String get glossYieldOnCost =>

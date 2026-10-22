@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Бөлүү датасы",
   "portfolioSplitRow": "Акцияларды бөлүү {ratio}",
   "portfolioSplitRemoved": "Акцияларды бөлүү өчүрүлдү",
-  "portfolioSplitsImported": "{count, plural, =1{1 акция бөлүүсү кошулду} other{{count} акция бөлүүсү кошулду}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 акция бөлүүсү кошулду} other{{count} акция бөлүүсү кошулду}}",
+  "labelDividendGrowth5y": "Дивиденддин өсүшү (5 ж.)",
+  "dividendNone": "Акыркы 12 айда дивиденд төлөнгөн жок.",
+  "dividendOnYourShares": "Акцияларыңызга, жылына",
+  "glossDividendGrowth5y": "Акыркы беш жылда бир акцияга дивиденд жылына орточо канчалык өскөнү. Туруктуу өсүш адатта компания өзүнүн акча агымына ишенерин билдирет; кыскартуу көбүнчө эскертүүчү белги болот."
 }

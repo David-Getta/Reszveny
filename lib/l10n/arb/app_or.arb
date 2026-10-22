@@ -752,5 +752,9 @@
   "portfolioSplitDate": "ସ୍ପ୍ଲିଟ୍ ତାରିଖ",
   "portfolioSplitRow": "ଷ୍ଟକ୍ ସ୍ପ୍ଲିଟ୍ {ratio}",
   "portfolioSplitRemoved": "ଷ୍ଟକ୍ ସ୍ପ୍ଲିଟ୍ ବିଲୋପ ହେଲା",
-  "portfolioSplitsImported": "{count, plural, =1{1 ଷ୍ଟକ୍ ସ୍ପ୍ଲିଟ୍ ଯୋଡ଼ା ହେଲା} other{{count} ଷ୍ଟକ୍ ସ୍ପ୍ଲିଟ୍ ଯୋଡ଼ା ହେଲା}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 ଷ୍ଟକ୍ ସ୍ପ୍ଲିଟ୍ ଯୋଡ଼ା ହେଲା} other{{count} ଷ୍ଟକ୍ ସ୍ପ୍ଲିଟ୍ ଯୋଡ଼ା ହେଲା}}",
+  "labelDividendGrowth5y": "ଲାଭାଂଶ ବୃଦ୍ଧି (5 ବର୍ଷ)",
+  "dividendNone": "ଗତ 12 ମାସରେ କୌଣସି ଲାଭାଂଶ ଦିଆଯାଇନାହିଁ।",
+  "dividendOnYourShares": "ଆପଣଙ୍କ ସେୟାର ଉପରେ, ବାର୍ଷିକ",
+  "glossDividendGrowth5y": "ଗତ ପାଞ୍ଚ ବର୍ଷରେ ପ୍ରତି ସେୟାର ଲାଭାଂଶ ବାର୍ଷିକ ହାରାହାରି କେତେ ବଢ଼ିଲା। ସ୍ଥିର ବୃଦ୍ଧି ସାଧାରଣତଃ ଦର୍ଶାଏ ଯେ କମ୍ପାନୀ ନିଜ ନଗଦ ପ୍ରବାହ ଉପରେ ଭରସା କରେ; ହ୍ରାସ ପ୍ରାୟତଃ ଏକ ଚେତାବନୀ ସଙ୍କେତ।"
 }

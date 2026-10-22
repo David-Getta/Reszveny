@@ -290,6 +290,16 @@ class AppLocalizationsBg extends AppLocalizations {
   String get labelYieldOnCost => 'Доходност спрямо покупната цена';
 
   @override
+  String get labelDividendGrowth5y => 'Ръст на дивидента (5 г.)';
+
+  @override
+  String get dividendNone =>
+      'Не е изплащан дивидент през последните 12 месеца.';
+
+  @override
+  String get dividendOnYourShares => 'За вашите акции, годишно';
+
+  @override
   String get labelConsensus => 'Консенсус';
 
   @override
@@ -1992,6 +2002,10 @@ class AppLocalizationsBg extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Делът от печалбата, изплатен като дивиденти. Над 100% компанията плаща повече, отколкото печели, което рядко трае дълго.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'С колко средно на година е нараствал дивидентът на акция през последните пет години. Стабилният ръст обикновено означава, че компанията има доверие в паричния си поток; намаляването често е предупредителен знак.';
 
   @override
   String get glossYieldOnCost =>

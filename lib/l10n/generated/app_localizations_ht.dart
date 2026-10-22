@@ -291,6 +291,15 @@ class AppLocalizationsHt extends AppLocalizations {
   String get labelYieldOnCost => 'Rannman sou pri acha';
 
   @override
+  String get labelDividendGrowth5y => 'Kwasans dividann (5 an)';
+
+  @override
+  String get dividendNone => 'Pa gen dividann ki peye nan 12 dènye mwa yo.';
+
+  @override
+  String get dividendOnYourShares => 'Sou aksyon ou yo, pa ane';
+
+  @override
   String get labelConsensus => 'Konsansis';
 
   @override
@@ -1990,6 +1999,10 @@ class AppLocalizationsHt extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Pati nan benefis la yo peye kòm dividann. Plis pase 100% konpayi a peye plis pase sa li fè, e sa raman dire.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Konbyen dividann pa aksyon an te grandi chak ane an mwayèn pandan senk dènye ane yo. Yon kwasans regilye anjeneral vle di konpayi an gen konfyans nan lajan k ap antre ak soti li; yon diminisyon souvan se yon siy avètisman.';
 
   @override
   String get glossYieldOnCost =>

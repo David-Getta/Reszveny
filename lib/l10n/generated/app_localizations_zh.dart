@@ -287,6 +287,15 @@ class AppLocalizationsZh extends AppLocalizations {
   String get labelYieldOnCost => '成本股息率';
 
   @override
+  String get labelDividendGrowth5y => '股息增长（5年）';
+
+  @override
+  String get dividendNone => '过去 12 个月未派发股息。';
+
+  @override
+  String get dividendOnYourShares => '按您的持股，每年';
+
+  @override
   String get labelConsensus => '一致预期';
 
   @override
@@ -1897,6 +1906,10 @@ class AppLocalizationsZh extends AppLocalizations {
   String get glossPayoutRatio => '利润中以股息形式派发的比例。超过 100% 表示公司派发的比赚的还多，这很少能持久。';
 
   @override
+  String get glossDividendGrowth5y =>
+      '过去五年每股股息平均每年增长多少。稳定增长通常意味着公司对自身现金流有信心；削减股息往往是一个警示信号。';
+
+  @override
   String get glossYieldOnCost =>
       '最近12个月收到的股息，除以您为仍持有的股份所支付的金额。与股息率不同，它以您自己的买入价而非当前价格为基准。';
 
@@ -3001,6 +3014,15 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get labelYieldOnCost => '成本股息率';
+
+  @override
+  String get labelDividendGrowth5y => '股息增長（5年）';
+
+  @override
+  String get dividendNone => '過去 12 個月未有派發股息。';
+
+  @override
+  String get dividendOnYourShares => '按你的持股，每年';
 
   @override
   String get labelConsensus => '綜合評級';
@@ -4611,6 +4633,10 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get glossPayoutRatio => '盈利中以股息派發的比例。超過 100% 即公司派發多於所賺，這情況很少能持續。';
+
+  @override
+  String get glossDividendGrowth5y =>
+      '過去五年每股股息平均每年增長多少。穩定增長通常代表公司對自身現金流有信心；削減股息往往是警號。';
 
   @override
   String get glossYieldOnCost =>

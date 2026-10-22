@@ -292,6 +292,16 @@ class AppLocalizationsEl extends AppLocalizations {
   String get labelYieldOnCost => 'Απόδοση επί του κόστους';
 
   @override
+  String get labelDividendGrowth5y => 'Αύξηση μερίσματος (5 έτη)';
+
+  @override
+  String get dividendNone =>
+      'Δεν καταβλήθηκε μέρισμα τους τελευταίους 12 μήνες.';
+
+  @override
+  String get dividendOnYourShares => 'Στις μετοχές σας, ετησίως';
+
+  @override
   String get labelConsensus => 'Συναίνεση';
 
   @override
@@ -2000,6 +2010,10 @@ class AppLocalizationsEl extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Το μέρος των κερδών που διανέμεται ως μέρισμα. Πάνω από 100% η εταιρεία πληρώνει περισσότερα από όσα κερδίζει, κάτι που σπάνια διαρκεί.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Πόσο αυξήθηκε κατά μέσο όρο ετησίως το μέρισμα ανά μετοχή τα τελευταία πέντε χρόνια. Η σταθερή αύξηση συνήθως σημαίνει ότι η εταιρεία εμπιστεύεται τις ταμειακές ροές της· μια περικοπή είναι συχνά προειδοποιητικό σημάδι.';
 
   @override
   String get glossYieldOnCost =>

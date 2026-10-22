@@ -290,6 +290,15 @@ class AppLocalizationsSi extends AppLocalizations {
   String get labelYieldOnCost => 'මිලදී ගත් මිල මත ඵලදාව';
 
   @override
+  String get labelDividendGrowth5y => 'ලාභාංශ වර්ධනය (වසර 5)';
+
+  @override
+  String get dividendNone => 'පසුගිය මාස 12 තුළ ලාභාංශ ගෙවා නැත.';
+
+  @override
+  String get dividendOnYourShares => 'ඔබේ කොටස් මත, වසරකට';
+
+  @override
   String get labelConsensus => 'එකඟතාව';
 
   @override
@@ -1990,6 +1999,10 @@ class AppLocalizationsSi extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'ලාභයෙන් කොපමණ කොටසක් ලාභාංශ ලෙස ගෙවනවාද. 100% ට වැඩි නම් සමාගම උපයන ප්‍රමාණයට වඩා ගෙවයි, එය කලාතුරකින් පවතී.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'පසුගිය වසර පහ තුළ කොටසකට ලාභාංශය වසරකට සාමාන්‍යයෙන් කොපමණ වර්ධනය වූවාද. ස්ථාවර වර්ධනය බොහෝ විට පෙන්නුම් කරන්නේ සමාගම තම මුදල් ප්‍රවාහය ගැන විශ්වාසයෙන් සිටින බවයි; කප්පාදුවක් නිතර අනතුරු ඇඟවීමේ ලකුණකි.';
 
   @override
   String get glossYieldOnCost =>

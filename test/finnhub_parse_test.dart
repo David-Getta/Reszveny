@@ -1,4 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
+import 'package:reszveny/core/models/stock_metrics.dart';
 import 'package:reszveny/core/errors.dart';
 import 'package:reszveny/features/market_data/finnhub_market_data_provider.dart';
 
@@ -65,6 +66,7 @@ void main() {
         '52WeekHighDate': '2026-07-15',
         '10DayAverageTradingVolume': 52.3,
         'beta': '1.21',
+        'dividendGrowthRate5Y': 7.25,
       },
     });
     expect(m.peTrailing, 35.2);
@@ -72,6 +74,8 @@ void main() {
     expect(m.week52HighDate, DateTime(2026, 7, 15));
     expect(m.averageVolume10d, 52.3e6);
     expect(m.beta, 1.21);
+    expect(m.dividendGrowth5y, 7.25);
+    expect(StockMetrics.fromJson(m.toJson()).dividendGrowth5y, 7.25, reason: 'a gyorsítótárban is megmarad');
   });
 
   test('parseNews skips incomplete rows and sorts newest first', () {

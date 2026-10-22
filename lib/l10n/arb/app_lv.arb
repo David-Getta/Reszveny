@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Sadalīšanas datums",
   "portfolioSplitRow": "Akciju sadalīšana {ratio}",
   "portfolioSplitRemoved": "Akciju sadalīšana izdzēsta",
-  "portfolioSplitsImported": "{count, plural, =1{Pievienota 1 akciju sadalīšana} other{Pievienotas {count} akciju sadalīšanas}}"
+  "portfolioSplitsImported": "{count, plural, =1{Pievienota 1 akciju sadalīšana} other{Pievienotas {count} akciju sadalīšanas}}",
+  "labelDividendGrowth5y": "Dividenžu pieaugums (5 g.)",
+  "dividendNone": "Pēdējos 12 mēnešos dividendes nav izmaksātas.",
+  "dividendOnYourShares": "Par jūsu akcijām, gadā",
+  "glossDividendGrowth5y": "Cik vidēji gadā pēdējo piecu gadu laikā pieaugusi dividende uz akciju. Stabils pieaugums parasti nozīmē, ka uzņēmums uzticas savai naudas plūsmai; samazinājums bieži ir brīdinājuma zīme."
 }

@@ -292,6 +292,16 @@ class AppLocalizationsAf extends AppLocalizations {
   String get labelYieldOnCost => 'Opbrengs op koste';
 
   @override
+  String get labelDividendGrowth5y => 'Dividendgroei (5 j.)';
+
+  @override
+  String get dividendNone =>
+      'Geen dividend in die afgelope 12 maande betaal nie.';
+
+  @override
+  String get dividendOnYourShares => 'Op jou aandele, per jaar';
+
+  @override
   String get labelConsensus => 'Konsensus';
 
   @override
@@ -1995,6 +2005,10 @@ class AppLocalizationsAf extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Die deel van die wins wat as dividende uitbetaal word. Bo 100% betaal die maatskappy meer as wat dit verdien, wat selde hou.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Hoeveel die dividend per aandeel oor die afgelope vyf jaar gemiddeld per jaar gegroei het. Bestendige groei beteken gewoonlik dat die maatskappy sy kontantvloei vertrou; \'n verlaging is dikwels \'n waarskuwingsteken.';
 
   @override
   String get glossYieldOnCost =>

@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Mokolo ya bokabolami",
   "portfolioSplitRow": "Bokabolami ya ba share {ratio}",
   "portfolioSplitRemoved": "Bokabolami ya ba share elongolami",
-  "portfolioSplitsImported": "{count, plural, =1{Bokabolami ya ba share 1 ebakisami} other{Bokabolami ya ba share {count} ebakisami}}"
+  "portfolioSplitsImported": "{count, plural, =1{Bokabolami ya ba share 1 ebakisami} other{Bokabolami ya ba share {count} ebakisami}}",
+  "labelDividendGrowth5y": "Bokoli ya dividende (mibu 5)",
+  "dividendNone": "Bafuti dividende te na sanza 12 oyo eleki.",
+  "dividendOnYourShares": "Na ba action na yo, na mobu",
+  "glossDividendGrowth5y": "Ndenge dividende ya action moko ekolaki mobu na mobu na kati-kati na mibu mitano oyo eleki. Bokoli ya ntango nyonso elakisaka mingimingi ete kompani ezali na elikya na mbongo oyo ekoti mpe ebimi; kokitisa yango ezalaka mbala mingi elembo ya likebisi."
 }

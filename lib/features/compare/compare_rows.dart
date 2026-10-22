@@ -120,6 +120,7 @@ List<CompareRow> buildCompareRows(
     row(l10n.labelDividendYield, metric((m) => m.dividendYield), pct, Better.higher),
     // Kifizetési arány: nincs „jobb” irány (a magas fenntarthatatlan, a nagyon alacsony fukar).
     row(l10n.labelPayoutRatio, metric((m) => m.payoutRatio), pct, Better.none),
+    row(l10n.labelDividendGrowth5y, metric((m) => m.dividendGrowth5y), signed, Better.higher),
     row(l10n.labelBeta, metric((m) => m.beta), num, Better.none),
     // Gyorsjelentések: az utolsó negyedév EPS-meglepetése (a nagyobb a jobb) és a következő jelentés napja.
     if (earnings != null) ...[

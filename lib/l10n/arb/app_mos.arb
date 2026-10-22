@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Pʋɩɩbã daar",
   "portfolioSplitRow": "Paart-rãmbã pʋɩɩbo {ratio}",
   "portfolioSplitRemoved": "Paart-rãmbã pʋɩɩbo yiisame",
-  "portfolioSplitsImported": "{count, plural, =1{Paart pʋɩɩb a 1 paasame} other{Paart pʋɩɩb {count} paasame}}"
+  "portfolioSplitsImported": "{count, plural, =1{Paart pʋɩɩb a 1 paasame} other{Paart pʋɩɩb {count} paasame}}",
+  "labelDividendGrowth5y": "Dividãnd paasgo (yʋʋm 5)",
+  "dividendNone": "B pa yao dividãnd kiis 12 sẽn loogã pʋgẽ ye.",
+  "dividendOnYourShares": "F aksiõ-rãmba zugu, yʋʋmd fãa",
+  "glossDividendGrowth5y": "Dividãnd aksiõ fãa sẽn paas to-to yʋʋmd fãa, b sã n mak a sʋka, yʋʋm a nu sẽn loogã pʋgẽ. Paasg sẽn pa sãamde wilgdame tɩ kʋmpaanã tẽeda a ligd sẽn kẽedã; a sã n booge, yaa makr sẽn wilgd tɩ f gũus f meng."
 }

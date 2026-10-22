@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Zuva rekupatsanura",
   "portfolioSplitRow": "Kupatsanura masheya {ratio}",
   "portfolioSplitRemoved": "Kupatsanura masheya kwabviswa",
-  "portfolioSplitsImported": "{count, plural, =1{Kupatsanura masheya 1 kwawedzerwa} other{Kupatsanura masheya {count} kwawedzerwa}}"
+  "portfolioSplitsImported": "{count, plural, =1{Kupatsanura masheya 1 kwawedzerwa} other{Kupatsanura masheya {count} kwawedzerwa}}",
+  "labelDividendGrowth5y": "Kukura kwedhividhendi (makore 5)",
+  "dividendNone": "Hapana dhividhendi yakabhadharwa mumwedzi 12 yapfuura.",
+  "dividendOnYourShares": "Pamasheya ako, pagore",
+  "glossDividendGrowth5y": "Kuti dhividhendi pasheya yakakura zvakadii pagore pavhareji mumakore mashanu apfuura. Kukura kwakatsiga kazhinji kunoreva kuti kambani inovimba nemari yayo inopinda; kuderedzwa kazhinji chiratidzo chenyevero."
 }

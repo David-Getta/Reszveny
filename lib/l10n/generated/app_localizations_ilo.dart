@@ -291,6 +291,16 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get labelYieldOnCost => 'Yield iti gastos';
 
   @override
+  String get labelDividendGrowth5y => 'Panagdakkel ti dibidendo (5 a tawen)';
+
+  @override
+  String get dividendNone =>
+      'Awan ti dibidendo a naibayad iti napalabas a 12 a bulan.';
+
+  @override
+  String get dividendOnYourShares => 'Kadagiti sharem, iti tinawen';
+
+  @override
   String get labelConsensus => 'Konsensus';
 
   @override
@@ -2007,6 +2017,10 @@ class AppLocalizationsIlo extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Ti paset ti ganansia a maibayad kas dibidendo. Ngato ti 100% ket ad-adu ti ibaybayad ti kompania ngem ti magunggonana, a manmano nga agpaut.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'No kasano ti kadakkel ti inyadu ti dibidendo iti tunggal share iti tinawen, iti promedio, iti napalabas a lima a tawen. Ti agtultuloy a panagdakkel ket kaaduanna a kaipapananna nga agtalek ti kompania iti cash flow-na; ti panangkissay ket masansan a pagilasinan ti pakdaar.';
 
   @override
   String get glossYieldOnCost =>

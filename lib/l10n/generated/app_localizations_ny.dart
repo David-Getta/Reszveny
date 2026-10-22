@@ -290,6 +290,16 @@ class AppLocalizationsNy extends AppLocalizations {
   String get labelYieldOnCost => 'Phindu pa mtengo wogula';
 
   @override
+  String get labelDividendGrowth5y => 'Kukula kwa gawo la phindu (zaka 5)';
+
+  @override
+  String get dividendNone =>
+      'Palibe gawo la phindu lomwe laperekedwa m\'miyezi 12 yapitayi.';
+
+  @override
+  String get dividendOnYourShares => 'Pa masheya anu, pachaka';
+
+  @override
   String get labelConsensus => 'Maganizo a ambiri';
 
   @override
@@ -1998,6 +2008,10 @@ class AppLocalizationsNy extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Gawo la phindu lomwe limagawidwa kwa eni masheya. Kupitirira 100% kampani imapereka zambiri kuposa zomwe imapeza, zomwe sizikhalitsa kawirikawiri.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Kuchuluka komwe gawo la phindu pa sheya iliyonse lakula pachaka pafupifupi m\'zaka zisanu zapitazi. Kukula kosasunthika nthawi zambiri kumatanthauza kuti kampani ikukhulupirira ndalama zomwe imapeza; kuchepetsa nthawi zambiri ndi chizindikiro chochenjeza.';
 
   @override
   String get glossYieldOnCost =>

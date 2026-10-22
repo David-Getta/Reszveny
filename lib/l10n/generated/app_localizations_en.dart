@@ -290,6 +290,15 @@ class AppLocalizationsEn extends AppLocalizations {
   String get labelYieldOnCost => 'Yield on cost';
 
   @override
+  String get labelDividendGrowth5y => 'Dividend growth (5y)';
+
+  @override
+  String get dividendNone => 'No dividend paid in the last 12 months.';
+
+  @override
+  String get dividendOnYourShares => 'On your shares, a year';
+
+  @override
   String get labelConsensus => 'Consensus';
 
   @override
@@ -1990,6 +1999,10 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'The share of profit paid out as dividends. Above 100% the company pays more than it earns, which rarely lasts.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'How much the dividend per share grew a year on average over the last five years. Steady growth usually means the company trusts its cash flow; a cut is often a warning sign.';
 
   @override
   String get glossYieldOnCost =>

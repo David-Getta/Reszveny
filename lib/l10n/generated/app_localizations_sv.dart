@@ -291,6 +291,15 @@ class AppLocalizationsSv extends AppLocalizations {
   String get labelYieldOnCost => 'Direktavkastning på inköpspris';
 
   @override
+  String get labelDividendGrowth5y => 'Utdelningstillväxt (5 år)';
+
+  @override
+  String get dividendNone => 'Ingen utdelning de senaste 12 månaderna.';
+
+  @override
+  String get dividendOnYourShares => 'På dina aktier, per år';
+
+  @override
   String get labelConsensus => 'Konsensus';
 
   @override
@@ -1993,6 +2002,10 @@ class AppLocalizationsSv extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Andelen av vinsten som delas ut. Över 100 % delar bolaget ut mer än det tjänar, vilket sällan håller i längden.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Hur mycket utdelningen per aktie i genomsnitt har ökat per år de senaste fem åren. Jämn tillväxt betyder oftast att bolaget litar på sitt kassaflöde; en sänkning är ofta en varningssignal.';
 
   @override
   String get glossYieldOnCost =>

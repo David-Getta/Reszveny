@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Datum för spliten",
   "portfolioSplitRow": "Aktiesplit {ratio}",
   "portfolioSplitRemoved": "Aktiesplit borttagen",
-  "portfolioSplitsImported": "{count, plural, =1{1 aktiesplit tillagd} other{{count} aktiesplittar tillagda}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 aktiesplit tillagd} other{{count} aktiesplittar tillagda}}",
+  "labelDividendGrowth5y": "Utdelningstillväxt (5 år)",
+  "dividendNone": "Ingen utdelning de senaste 12 månaderna.",
+  "dividendOnYourShares": "På dina aktier, per år",
+  "glossDividendGrowth5y": "Hur mycket utdelningen per aktie i genomsnitt har ökat per år de senaste fem åren. Jämn tillväxt betyder oftast att bolaget litar på sitt kassaflöde; en sänkning är ofta en varningssignal."
 }

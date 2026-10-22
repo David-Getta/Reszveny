@@ -291,6 +291,15 @@ class AppLocalizationsUz extends AppLocalizations {
   String get labelYieldOnCost => 'Xarid narxiga daromadlilik';
 
   @override
+  String get labelDividendGrowth5y => 'Dividend oʻsishi (5 yil)';
+
+  @override
+  String get dividendNone => 'Oxirgi 12 oyda dividend toʻlanmagan.';
+
+  @override
+  String get dividendOnYourShares => 'Aksiyalaringizga, yiliga';
+
+  @override
   String get labelConsensus => 'Konsensus';
 
   @override
@@ -1995,6 +2004,10 @@ class AppLocalizationsUz extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Foydaning dividend sifatida toʻlanadigan ulushi. 100% dan yuqori boʻlsa, kompaniya topganidan koʻproq toʻlaydi, bu kamdan-kam uzoq davom etadi.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Oxirgi besh yilda bir aksiyaga toʻgʻri keladigan dividend yiliga oʻrtacha qanchaga oshgani. Barqaror oʻsish odatda kompaniya oʻz pul oqimiga ishonishini bildiradi; qisqartirish koʻpincha ogohlantiruvchi belgi hisoblanadi.';
 
   @override
   String get glossYieldOnCost =>

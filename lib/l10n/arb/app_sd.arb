@@ -752,5 +752,9 @@
   "portfolioSplitDate": "ورهاست جي تاريخ",
   "portfolioSplitRow": "حصن جي ورهاست {ratio}",
   "portfolioSplitRemoved": "حصن جي ورهاست ڊاهي وئي",
-  "portfolioSplitsImported": "{count, plural, =1{1 حصن جي ورهاست شامل ڪئي وئي} other{{count} حصن جون ورهاستون شامل ڪيون ويون}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 حصن جي ورهاست شامل ڪئي وئي} other{{count} حصن جون ورهاستون شامل ڪيون ويون}}",
+  "labelDividendGrowth5y": "ڊيويڊنڊ ۾ واڌ (5 سال)",
+  "dividendNone": "گذريل 12 مهينن ۾ ڪو ڊيويڊنڊ ادا نه ڪيو ويو.",
+  "dividendOnYourShares": "توهان جي شيئرن تي، سالياني",
+  "glossDividendGrowth5y": "گذريل پنجن سالن ۾ في شيئر ڊيويڊنڊ هر سال سراسري طور ڪيترو وڌيو. مسلسل واڌ جو مطلب عام طور تي اهو آهي ته ڪمپني کي پنهنجي نقد وهڪري تي ڀروسو آهي؛ ڪٽوتي اڪثر خبرداري جي نشاني هوندي آهي."
 }

@@ -292,6 +292,15 @@ class AppLocalizationsCa extends AppLocalizations {
   String get labelYieldOnCost => 'Rendibilitat sobre el cost';
 
   @override
+  String get labelDividendGrowth5y => 'Creixement del dividend (5 anys)';
+
+  @override
+  String get dividendNone => 'No ha pagat cap dividend en els últims 12 mesos.';
+
+  @override
+  String get dividendOnYourShares => 'Sobre les teves accions, a l’any';
+
+  @override
   String get labelConsensus => 'Consens';
 
   @override
@@ -2001,6 +2010,10 @@ class AppLocalizationsCa extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'La part del benefici que es reparteix com a dividends. Per sobre del 100% l\'empresa paga més del que guanya, cosa que rarament dura.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Quant ha crescut de mitjana cada any el dividend per acció durant els últims cinc anys. Un creixement constant sol indicar que l’empresa confia en el seu flux de caixa; una retallada sovint és un senyal d’alerta.';
 
   @override
   String get glossYieldOnCost =>

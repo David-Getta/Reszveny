@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Date de la division",
   "portfolioSplitRow": "Division d’actions {ratio}",
   "portfolioSplitRemoved": "Division d’actions supprimée",
-  "portfolioSplitsImported": "{count, plural, =1{1 division d’actions ajoutée} other{{count} divisions d’actions ajoutées}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 division d’actions ajoutée} other{{count} divisions d’actions ajoutées}}",
+  "labelDividendGrowth5y": "Croissance du dividende (5 ans)",
+  "dividendNone": "Aucun dividende versé au cours des 12 derniers mois.",
+  "dividendOnYourShares": "Sur vos actions, par an",
+  "glossDividendGrowth5y": "De combien le dividende par action a augmenté en moyenne chaque année au cours des cinq dernières années. Une croissance régulière signifie généralement que l’entreprise a confiance en ses flux de trésorerie ; une baisse est souvent un signal d’alerte."
 }

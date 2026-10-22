@@ -291,6 +291,15 @@ class AppLocalizationsPl extends AppLocalizations {
   String get labelYieldOnCost => 'Stopa dywidendy od ceny zakupu';
 
   @override
+  String get labelDividendGrowth5y => 'Wzrost dywidendy (5 lat)';
+
+  @override
+  String get dividendNone => 'Brak dywidendy w ostatnich 12 miesiącach.';
+
+  @override
+  String get dividendOnYourShares => 'Z twoich akcji, rocznie';
+
+  @override
   String get labelConsensus => 'Konsensus';
 
   @override
@@ -2050,6 +2059,10 @@ class AppLocalizationsPl extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Część zysku wypłacana jako dywidenda. Powyżej 100% spółka wypłaca więcej, niż zarabia, co rzadko trwa długo.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'O ile średnio rocznie rosła dywidenda na akcję w ostatnich pięciu latach. Stały wzrost zwykle oznacza, że spółka ufa swoim przepływom pieniężnym; obniżka często jest sygnałem ostrzegawczym.';
 
   @override
   String get glossYieldOnCost =>

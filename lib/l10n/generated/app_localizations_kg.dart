@@ -290,6 +290,16 @@ class AppLocalizationsKg extends AppLocalizations {
   String get labelYieldOnCost => 'Rendement na ntalu ya kusumba';
 
   @override
+  String get labelDividendGrowth5y => 'Kukula ya dividende (mivu 5)';
+
+  @override
+  String get dividendNone =>
+      'Bo futaka ve dividende na bangonda 12 yina me luta.';
+
+  @override
+  String get dividendOnYourShares => 'Na ba action na nge, na mvula';
+
+  @override
   String get labelConsensus => 'Mabanza ma bawonso';
 
   @override
@@ -1999,6 +2009,10 @@ class AppLocalizationsKg extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Kitini ya mbakulu yina bo ke kabula bonso dividende. Kuluta 100%, kompani ke futa mingi kuluta yina yo ke zwa, mpi yo ke zingaka ve.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Nki mutindu dividende ya action mosi me kula konso mvula na kati-kati na mivu tanu yina me luta. Kukula ya ntangu yonso ke monisaka mingi nde kompani ke tula ntima na mbongo yina ke kota mpi ke basika; kukulumusa yo ke vandaka mingi kidimbu ya kukebisa.';
 
   @override
   String get glossYieldOnCost =>

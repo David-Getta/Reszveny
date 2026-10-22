@@ -290,6 +290,15 @@ class AppLocalizationsAr extends AppLocalizations {
   String get labelYieldOnCost => 'العائد على التكلفة';
 
   @override
+  String get labelDividendGrowth5y => 'نمو التوزيعات (5 سنوات)';
+
+  @override
+  String get dividendNone => 'لم تُدفع أي توزيعات خلال آخر 12 شهرًا.';
+
+  @override
+  String get dividendOnYourShares => 'على أسهمك، سنويًا';
+
+  @override
   String get labelConsensus => 'الإجماع';
 
   @override
@@ -2032,6 +2041,10 @@ class AppLocalizationsAr extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'حصة الأرباح المدفوعة كتوزيعات. فوق 100% تدفع الشركة أكثر مما تكسب، ونادرًا ما يدوم ذلك.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'متوسط النمو السنوي للتوزيعات لكل سهم خلال السنوات الخمس الماضية. يدل النمو المستقر عادةً على ثقة الشركة بتدفقها النقدي؛ أما خفض التوزيعات فغالبًا ما يكون علامة تحذير.';
 
   @override
   String get glossYieldOnCost =>

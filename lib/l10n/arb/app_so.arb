@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Taariikhda kala qaybinta",
   "portfolioSplitRow": "Kala qaybinta saamiyada {ratio}",
   "portfolioSplitRemoved": "Kala qaybinta saamiyada waa la tirtiray",
-  "portfolioSplitsImported": "{count, plural, =1{1 kala qaybin saamiyo ayaa lagu daray} other{{count} kala qaybin saamiyo ayaa lagu daray}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 kala qaybin saamiyo ayaa lagu daray} other{{count} kala qaybin saamiyo ayaa lagu daray}}",
+  "labelDividendGrowth5y": "Kororka qaybta faa'iidada (5 sano)",
+  "dividendNone": "Wax qaybta faa'iidada ah lama bixin 12-kii bilood ee la soo dhaafay.",
+  "dividendOnYourShares": "Saamiyadaada, sannadkii",
+  "glossDividendGrowth5y": "Inta qaybta faa'iidada saamigiiba ay celcelis ahaan sannadkii kordhay shantii sano ee la soo dhaafay. Koror joogto ah wuxuu badanaa muujiyaa in shirkaddu ku kalsoon tahay socodka lacageeda caddaanka ah; dhimistu badanaa waa calaamad digniin ah."
 }

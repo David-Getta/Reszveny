@@ -290,6 +290,15 @@ class AppLocalizationsAm extends AppLocalizations {
   String get labelYieldOnCost => 'የትርፍ ድርሻ ተመን በወጪ';
 
   @override
+  String get labelDividendGrowth5y => 'የትርፍ ድርሻ ዕድገት (5 ዓመት)';
+
+  @override
+  String get dividendNone => 'ባለፉት 12 ወራት ምንም የትርፍ ድርሻ አልተከፈለም።';
+
+  @override
+  String get dividendOnYourShares => 'በአክሲዮኖችዎ ላይ፣ በዓመት';
+
+  @override
   String get labelConsensus => 'አጠቃላይ ስምምነት';
 
   @override
@@ -1962,6 +1971,10 @@ class AppLocalizationsAm extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'እንደ የትርፍ ድርሻ የሚከፈለው የትርፍ ክፍል። ከ100% በላይ ከሆነ ኩባንያው ከሚያገኘው በላይ ይከፍላል፤ ይህ እምብዛም አይዘልቅም።';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'ባለፉት አምስት ዓመታት የአንድ አክሲዮን የትርፍ ድርሻ በአማካይ በዓመት ምን ያህል እንዳደገ። የተረጋጋ ዕድገት ብዙውን ጊዜ ኩባንያው በጥሬ ገንዘብ ፍሰቱ እንደሚተማመን ያሳያል፤ ቅናሽ ደግሞ ብዙ ጊዜ የማስጠንቀቂያ ምልክት ነው።';
 
   @override
   String get glossYieldOnCost =>

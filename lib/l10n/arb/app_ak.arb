@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Nkyekyɛmu no da",
   "portfolioSplitRow": "Share nkyekyɛmu {ratio}",
   "portfolioSplitRemoved": "Wɔayi share nkyekyɛmu no afiri hɔ",
-  "portfolioSplitsImported": "{count, plural, =1{Wɔde share nkyekyɛmu 1 akã ho} other{Wɔde share nkyekyɛmu {count} akã ho}}"
+  "portfolioSplitsImported": "{count, plural, =1{Wɔde share nkyekyɛmu 1 akã ho} other{Wɔde share nkyekyɛmu {count} akã ho}}",
+  "labelDividendGrowth5y": "Mfaso kyɛ nkɔso (mfe 5)",
+  "dividendNone": "Wɔantua mfaso kyɛ biara wɔ abosome 12 a atwam no mu.",
+  "dividendOnYourShares": "Wɔ wo kyɛfa so, afe biara",
+  "glossDividendGrowth5y": "Sɛnea mfaso kyɛ wɔ kyɛfa biara so nyinii afe biara, sɛ yɛkyɛ mu pɛpɛɛpɛ a, wɔ mfe enum a atwam no mu. Nkɔso a ɛkɔ so daa taa kyerɛ sɛ adwumakuw no wɔ ahotoso wɔ ne sika a ɛba ne nea ɛkɔ mu; sɛ wɔtew so a, ɛtaa yɛ kɔkɔbɔ sɛnkyerɛnne."
 }

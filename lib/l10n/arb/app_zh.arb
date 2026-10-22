@@ -752,5 +752,9 @@
   "portfolioSplitDate": "拆分日期",
   "portfolioSplitRow": "股票拆分 {ratio}",
   "portfolioSplitRemoved": "已删除股票拆分",
-  "portfolioSplitsImported": "{count, plural, =1{已添加 1 项股票拆分} other{已添加 {count} 项股票拆分}}"
+  "portfolioSplitsImported": "{count, plural, =1{已添加 1 项股票拆分} other{已添加 {count} 项股票拆分}}",
+  "labelDividendGrowth5y": "股息增长（5年）",
+  "dividendNone": "过去 12 个月未派发股息。",
+  "dividendOnYourShares": "按您的持股，每年",
+  "glossDividendGrowth5y": "过去五年每股股息平均每年增长多少。稳定增长通常意味着公司对自身现金流有信心；削减股息往往是一个警示信号。"
 }

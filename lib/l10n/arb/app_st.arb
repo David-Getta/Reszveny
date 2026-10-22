@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Letsatsi la karohano",
   "portfolioSplitRow": "Karohano ya dishere {ratio}",
   "portfolioSplitRemoved": "Karohano ya dishere e hlakotswe",
-  "portfolioSplitsImported": "{count, plural, =1{Karohano ya dishere e 1 e ekeditswe} other{Dikarohano tsa dishere tse {count} di ekeditswe}}"
+  "portfolioSplitsImported": "{count, plural, =1{Karohano ya dishere e 1 e ekeditswe} other{Dikarohano tsa dishere tse {count} di ekeditswe}}",
+  "labelDividendGrowth5y": "Kgolo ya dividende (dilemo tse 5)",
+  "dividendNone": "Ha ho dividende e lefilweng dikgweding tse 12 tse fetileng.",
+  "dividendOnYourShares": "Dishereng tsa hao, ka selemo",
+  "glossDividendGrowth5y": "Hore na dividende ka shere e hotse hakae ka selemo ka karolelano dilemong tse hlano tse fetileng. Kgolo e tsitsitseng hangata e bolela hore khampani e tshepa phallo ya yona ya tjhelete; phokotso hangata ke letshwao la temoso."
 }

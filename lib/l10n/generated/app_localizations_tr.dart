@@ -291,6 +291,15 @@ class AppLocalizationsTr extends AppLocalizations {
   String get labelYieldOnCost => 'Maliyete göre temettü verimi';
 
   @override
+  String get labelDividendGrowth5y => 'Temettü büyümesi (5 yıl)';
+
+  @override
+  String get dividendNone => 'Son 12 ayda temettü ödenmedi.';
+
+  @override
+  String get dividendOnYourShares => 'Hisseleriniz için, yıllık';
+
+  @override
   String get labelConsensus => 'Konsensüs';
 
   @override
@@ -1992,6 +2001,10 @@ class AppLocalizationsTr extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Kârın temettü olarak dağıtılan payı. %100\'ün üzerinde şirket kazandığından fazlasını öder; bu nadiren uzun sürer.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Hisse başına temettünün son beş yılda yılda ortalama ne kadar arttığı. İstikrarlı büyüme genellikle şirketin nakit akışına güvendiği anlamına gelir; temettü kesintisi çoğu zaman bir uyarı işaretidir.';
 
   @override
   String get glossYieldOnCost =>

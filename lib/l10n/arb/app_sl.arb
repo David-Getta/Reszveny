@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Datum delitve",
   "portfolioSplitRow": "Delitev delnic {ratio}",
   "portfolioSplitRemoved": "Delitev delnic je izbrisana",
-  "portfolioSplitsImported": "{count, plural, =1{Dodana 1 delitev delnic} other{Dodane delitve delnic: {count}}}"
+  "portfolioSplitsImported": "{count, plural, =1{Dodana 1 delitev delnic} other{Dodane delitve delnic: {count}}}",
+  "labelDividendGrowth5y": "Rast dividende (5 let)",
+  "dividendNone": "V zadnjih 12 mesecih ni bila izplačana nobena dividenda.",
+  "dividendOnYourShares": "Na vaše delnice, na leto",
+  "glossDividendGrowth5y": "Za koliko se je dividenda na delnico v zadnjih petih letih v povprečju povečevala na leto. Enakomerna rast običajno pomeni, da podjetje zaupa svojemu denarnemu toku; znižanje je pogosto opozorilni znak."
 }

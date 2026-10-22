@@ -697,6 +697,7 @@ Check that all eleven sections are present, in order and in the requested langua
           'dividend_yield_percent': m.dividendYield,
           'dividend_per_share': m.dividendPerShare,
           'payout_ratio_percent': m.payoutRatio,
+          'dividend_growth_5y_percent': m.dividendGrowth5y,
           'beta': m.beta,
           'week52_high': m.week52High,
           'week52_low': m.week52Low,

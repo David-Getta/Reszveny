@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Дата драблення",
   "portfolioSplitRow": "Дробленне акцый {ratio}",
   "portfolioSplitRemoved": "Дробленне акцый выдалена",
-  "portfolioSplitsImported": "{count, plural, =1{Дададзена 1 дробленне акцый} other{Дададзена драбленняў акцый: {count}}}"
+  "portfolioSplitsImported": "{count, plural, =1{Дададзена 1 дробленне акцый} other{Дададзена драбленняў акцый: {count}}}",
+  "labelDividendGrowth5y": "Рост дывідэнду (5 г.)",
+  "dividendNone": "За апошнія 12 месяцаў дывідэнды не выплачваліся.",
+  "dividendOnYourShares": "На вашы акцыі, за год",
+  "glossDividendGrowth5y": "Наколькі ў сярэднім за год рос дывідэнд на акцыю на працягу апошніх пяці гадоў. Стабільны рост звычайна азначае, што кампанія ўпэўненая ў сваім грашовым патоку; скарачэнне часта — трывожны сігнал."
 }

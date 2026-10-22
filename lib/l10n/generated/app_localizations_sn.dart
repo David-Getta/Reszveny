@@ -291,6 +291,16 @@ class AppLocalizationsSn extends AppLocalizations {
   String get labelYieldOnCost => 'Pundutso pamutengo wawakatenga';
 
   @override
+  String get labelDividendGrowth5y => 'Kukura kwedhividhendi (makore 5)';
+
+  @override
+  String get dividendNone =>
+      'Hapana dhividhendi yakabhadharwa mumwedzi 12 yapfuura.';
+
+  @override
+  String get dividendOnYourShares => 'Pamasheya ako, pagore';
+
+  @override
   String get labelConsensus => 'Kubvumirana';
 
   @override
@@ -1997,6 +2007,10 @@ class AppLocalizationsSn extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Chikamu chepundutso chinobhadharwa sedhividhendi. Pamusoro pe100% kambani inobhadhara kupfuura zvainowana, izvo zvisingawanzogari.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Kuti dhividhendi pasheya yakakura zvakadii pagore pavhareji mumakore mashanu apfuura. Kukura kwakatsiga kazhinji kunoreva kuti kambani inovimba nemari yayo inopinda; kuderedzwa kazhinji chiratidzo chenyevero.';
 
   @override
   String get glossYieldOnCost =>

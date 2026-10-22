@@ -291,6 +291,16 @@ class AppLocalizationsJv extends AppLocalizations {
   String get labelYieldOnCost => 'Imbal hasil saka rega tuku';
 
   @override
+  String get labelDividendGrowth5y => 'Tuwuhing dividen (5 taun)';
+
+  @override
+  String get dividendNone =>
+      'Ora ana dividen sing dibayar sajrone 12 sasi pungkasan.';
+
+  @override
+  String get dividendOnYourShares => 'Saka saham sampeyan, saben taun';
+
+  @override
   String get labelConsensus => 'Konsensus';
 
   @override
@@ -1993,6 +2003,10 @@ class AppLocalizationsJv extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Bagean bathi sing dibayarake minangka dividen. Ing ndhuwur 100% perusahaan mbayar luwih akeh tinimbang sing diasilake, lan iki arang suwe.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Sepira dividen saben saham tuwuh rata-rata saben taun sajrone limang taun pungkasan. Tuwuh sing stabil biasane ateges perusahaan percaya marang arus kase; pemotongan asring dadi tandha bebaya.';
 
   @override
   String get glossYieldOnCost =>

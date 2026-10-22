@@ -290,6 +290,15 @@ class AppLocalizationsKk extends AppLocalizations {
   String get labelYieldOnCost => 'Сатып алу бағасына кірістілік';
 
   @override
+  String get labelDividendGrowth5y => 'Дивиденд өсімі (5 ж.)';
+
+  @override
+  String get dividendNone => 'Соңғы 12 айда дивиденд төленбеген.';
+
+  @override
+  String get dividendOnYourShares => 'Акцияларыңызға, жылына';
+
+  @override
   String get labelConsensus => 'Консенсус';
 
   @override
@@ -1992,6 +2001,10 @@ class AppLocalizationsKk extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Пайданың дивиденд ретінде төленетін үлесі. 100%-дан асса, компания тапқанынан көп төлейді, бұл сирек ұзаққа созылады.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Соңғы бес жылда бір акцияға шаққандағы дивидендтің жылына орта есеппен қаншалықты өскені. Тұрақты өсім әдетте компанияның ақша ағынына сенетінін білдіреді; қысқарту көбіне ескерту белгісі болып табылады.';
 
   @override
   String get glossYieldOnCost =>

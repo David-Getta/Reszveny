@@ -290,6 +290,15 @@ class AppLocalizationsHe extends AppLocalizations {
   String get labelYieldOnCost => 'תשואה על העלות';
 
   @override
+  String get labelDividendGrowth5y => 'צמיחת הדיבידנד (5 ש׳)';
+
+  @override
+  String get dividendNone => 'לא שולם דיבידנד ב-12 החודשים האחרונים.';
+
+  @override
+  String get dividendOnYourShares => 'על המניות שלך, בשנה';
+
+  @override
   String get labelConsensus => 'קונצנזוס';
 
   @override
@@ -1985,6 +1994,10 @@ class AppLocalizationsHe extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'החלק מהרווח שמחולק כדיבידנד. מעל 100% החברה משלמת יותר ממה שהיא מרוויחה, ומצב כזה לרוב לא מחזיק מעמד.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'בכמה צמח הדיבידנד למניה בממוצע בכל שנה בחמש השנים האחרונות. צמיחה יציבה מעידה בדרך כלל שהחברה בוטחת בתזרים המזומנים שלה; קיצוץ הוא לעיתים קרובות סימן אזהרה.';
 
   @override
   String get glossYieldOnCost =>

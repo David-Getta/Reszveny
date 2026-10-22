@@ -291,6 +291,15 @@ class AppLocalizationsAs extends AppLocalizations {
   String get labelYieldOnCost => 'খৰচৰ ওপৰত ইল্ড';
 
   @override
+  String get labelDividendGrowth5y => 'লভ্যাংশ বৃদ্ধি (5 বছৰ)';
+
+  @override
+  String get dividendNone => 'যোৱা 12 মাহত কোনো লভ্যাংশ দিয়া হোৱা নাই।';
+
+  @override
+  String get dividendOnYourShares => 'আপোনাৰ শ্বেয়াৰত, বছৰি';
+
+  @override
   String get labelConsensus => 'সৰ্বসন্মতি';
 
   @override
@@ -1990,6 +1999,10 @@ class AppLocalizationsAs extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'লাভৰ যি অংশ লভ্যাংশ হিচাপে দিয়া হয়। 100%-ৰ ওপৰত কোম্পানীয়ে উপাৰ্জনতকৈ বেছি দিয়ে, যি কমেইহে টিকি থাকে।';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'যোৱা পাঁচ বছৰত প্ৰতি শ্বেয়াৰত লভ্যাংশ বছৰি গড়ে কিমান বাঢ়িছে। স্থিৰ বৃদ্ধিয়ে সাধাৰণতে বুজায় যে কোম্পানীটোৱে নিজৰ নগদ ধনৰ প্ৰবাহৰ ওপৰত ভৰসা কৰে; লভ্যাংশ কমোৱাটো প্ৰায়ে এটা সতৰ্কবাণী।';
 
   @override
   String get glossYieldOnCost =>

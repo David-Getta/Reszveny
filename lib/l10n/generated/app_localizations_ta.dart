@@ -291,6 +291,16 @@ class AppLocalizationsTa extends AppLocalizations {
   String get labelYieldOnCost => 'வாங்கிய விலையில் ஈவுத்தொகை விகிதம்';
 
   @override
+  String get labelDividendGrowth5y => 'ஈவுத்தொகை வளர்ச்சி (5 ஆண்டு)';
+
+  @override
+  String get dividendNone =>
+      'கடந்த 12 மாதங்களில் ஈவுத்தொகை எதுவும் வழங்கப்படவில்லை.';
+
+  @override
+  String get dividendOnYourShares => 'உங்கள் பங்குகளுக்கு, ஆண்டுக்கு';
+
+  @override
   String get labelConsensus => 'ஒருமித்த கருத்து';
 
   @override
@@ -2001,6 +2011,10 @@ class AppLocalizationsTa extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'ஈவுத்தொகையாகச் செலுத்தப்படும் லாபத்தின் பங்கு. 100%-க்கு மேல் என்றால் நிறுவனம் சம்பாதிப்பதை விட அதிகமாகச் செலுத்துகிறது, இது அரிதாகவே நீடிக்கும்.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'கடந்த ஐந்து ஆண்டுகளில் ஒரு பங்கிற்கான ஈவுத்தொகை ஆண்டுக்குச் சராசரியாக எவ்வளவு வளர்ந்தது. சீரான வளர்ச்சி பொதுவாக நிறுவனம் தனது பணப்புழக்கத்தில் நம்பிக்கை வைத்திருப்பதைக் காட்டுகிறது; குறைப்பு பெரும்பாலும் ஓர் எச்சரிக்கை அறிகுறி.';
 
   @override
   String get glossYieldOnCost =>

@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Tsiku logawa",
   "portfolioSplitRow": "Kugawa masheya {ratio}",
   "portfolioSplitRemoved": "Kugawa masheya kwachotsedwa",
-  "portfolioSplitsImported": "{count, plural, =1{Kugawa masheya 1 kwawonjezedwa} other{Kugawa masheya {count} kwawonjezedwa}}"
+  "portfolioSplitsImported": "{count, plural, =1{Kugawa masheya 1 kwawonjezedwa} other{Kugawa masheya {count} kwawonjezedwa}}",
+  "labelDividendGrowth5y": "Kukula kwa gawo la phindu (zaka 5)",
+  "dividendNone": "Palibe gawo la phindu lomwe laperekedwa m'miyezi 12 yapitayi.",
+  "dividendOnYourShares": "Pa masheya anu, pachaka",
+  "glossDividendGrowth5y": "Kuchuluka komwe gawo la phindu pa sheya iliyonse lakula pachaka pafupifupi m'zaka zisanu zapitazi. Kukula kosasunthika nthawi zambiri kumatanthauza kuti kampani ikukhulupirira ndalama zomwe imapeza; kuchepetsa nthawi zambiri ndi chizindikiro chochenjeza."
 }

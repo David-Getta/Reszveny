@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Guyyaa qoqqoodinsaa",
   "portfolioSplitRow": "Qoqqoodinsa aksiyoonaa {ratio}",
   "portfolioSplitRemoved": "Qoqqoodinsi aksiyoonaa haqameera",
-  "portfolioSplitsImported": "{count, plural, =1{Qoqqoodinsa aksiyoonaa 1 dabalame} other{Qoqqoodinsa aksiyoonaa {count} dabalaman}}"
+  "portfolioSplitsImported": "{count, plural, =1{Qoqqoodinsa aksiyoonaa 1 dabalame} other{Qoqqoodinsa aksiyoonaa {count} dabalaman}}",
+  "labelDividendGrowth5y": "Guddina qooda bu'aa (waggaa 5)",
+  "dividendNone": "Ji'oota 12 darban keessatti qoodni bu'aa hin kaffalamne.",
+  "dividendOnYourShares": "Aksiyoona kee irratti, waggaatti",
+  "glossDividendGrowth5y": "Qoodni bu'aa aksiyoona tokkoo waggoota shanan darban keessatti giddugaleessaan waggaatti hammam akka guddate. Guddinni itti fufaan yeroo baay'ee dhaabbatichi yaa'insa maallaqa isaa akka amanu agarsiisa; hir'isuun immoo yeroo baay'ee mallattoo akeekkachiisaati."
 }

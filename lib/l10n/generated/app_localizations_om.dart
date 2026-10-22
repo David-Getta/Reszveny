@@ -292,6 +292,16 @@ class AppLocalizationsOm extends AppLocalizations {
   String get labelYieldOnCost => 'Bu\'aa gatii bittaa irratti';
 
   @override
+  String get labelDividendGrowth5y => 'Guddina qooda bu\'aa (waggaa 5)';
+
+  @override
+  String get dividendNone =>
+      'Ji\'oota 12 darban keessatti qoodni bu\'aa hin kaffalamne.';
+
+  @override
+  String get dividendOnYourShares => 'Aksiyoona kee irratti, waggaatti';
+
+  @override
   String get labelConsensus => 'Waliigaltee';
 
   @override
@@ -1999,6 +2009,10 @@ class AppLocalizationsOm extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'Bu\'aa keessaa hammi isaa akka qooda bu\'aatti raabsamu. 100% ol yoo ta\'e dhaabbatichi waan argatu caalaa kaffala, kun immoo yeroo dheeraa hin turu.';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'Qoodni bu\'aa aksiyoona tokkoo waggoota shanan darban keessatti giddugaleessaan waggaatti hammam akka guddate. Guddinni itti fufaan yeroo baay\'ee dhaabbatichi yaa\'insa maallaqa isaa akka amanu agarsiisa; hir\'isuun immoo yeroo baay\'ee mallattoo akeekkachiisaati.';
 
   @override
   String get glossYieldOnCost =>

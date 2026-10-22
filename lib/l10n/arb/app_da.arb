@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Dato for splittet",
   "portfolioSplitRow": "Aktiesplit {ratio}",
   "portfolioSplitRemoved": "Aktiesplit slettet",
-  "portfolioSplitsImported": "{count, plural, =1{1 aktiesplit tilføjet} other{{count} aktiesplits tilføjet}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 aktiesplit tilføjet} other{{count} aktiesplits tilføjet}}",
+  "labelDividendGrowth5y": "Udbyttevækst (5 år)",
+  "dividendNone": "Intet udbytte udbetalt de seneste 12 måneder.",
+  "dividendOnYourShares": "På dine aktier, om året",
+  "glossDividendGrowth5y": "Hvor meget udbyttet pr. aktie i gennemsnit er vokset om året over de seneste fem år. Stabil vækst betyder som regel, at selskabet har tillid til sit cashflow; en nedsættelse er ofte et faresignal."
 }

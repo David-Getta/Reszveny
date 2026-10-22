@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Ranar rabon",
   "portfolioSplitRow": "Rabon hannun jari {ratio}",
   "portfolioSplitRemoved": "An goge rabon hannun jari",
-  "portfolioSplitsImported": "{count, plural, =1{An ƙara rabon hannun jari 1} other{An ƙara rabon hannun jari {count}}}"
+  "portfolioSplitsImported": "{count, plural, =1{An ƙara rabon hannun jari 1} other{An ƙara rabon hannun jari {count}}}",
+  "labelDividendGrowth5y": "Ƙaruwar rabon riba (shekara 5)",
+  "dividendNone": "Ba a biya rabon riba ba a cikin watanni 12 da suka wuce.",
+  "dividendOnYourShares": "Kan hannun jarinka, a shekara",
+  "glossDividendGrowth5y": "Yawan da rabon riba kan kowane hannun jari ya ƙaru a kowace shekara a matsakaici cikin shekaru biyar da suka wuce. Ƙaruwa mai dorewa yawanci tana nufin kamfanin ya amince da kwararar kuɗinsa; ragewa sau da yawa alamar gargaɗi ce."
 }

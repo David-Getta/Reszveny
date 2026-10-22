@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Date of di split",
   "portfolioSplitRow": "Stock split {ratio}",
   "portfolioSplitRemoved": "Stock split don delete",
-  "portfolioSplitsImported": "{count, plural, =1{1 stock split don add} other{{count} stock splits don add}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 stock split don add} other{{count} stock splits don add}}",
+  "labelDividendGrowth5y": "Dividend growth (5 yrs)",
+  "dividendNone": "Dem no pay dividend for di last 12 months.",
+  "dividendOnYourShares": "For your shares, every year",
+  "glossDividendGrowth5y": "How much di dividend for each share grow every year on average for di last five years. If e dey grow steady, e usually mean say di company trust di cash wey dey enter; if dem cut am, na warning sign most times."
 }

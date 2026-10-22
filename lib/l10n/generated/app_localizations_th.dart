@@ -290,6 +290,15 @@ class AppLocalizationsTh extends AppLocalizations {
   String get labelYieldOnCost => 'ผลตอบแทนต่อต้นทุน';
 
   @override
+  String get labelDividendGrowth5y => 'การเติบโตของเงินปันผล (5 ปี)';
+
+  @override
+  String get dividendNone => 'ไม่มีการจ่ายเงินปันผลในช่วง 12 เดือนที่ผ่านมา';
+
+  @override
+  String get dividendOnYourShares => 'จากหุ้นของคุณ ต่อปี';
+
+  @override
   String get labelConsensus => 'มุมมองโดยรวม';
 
   @override
@@ -1965,6 +1974,10 @@ class AppLocalizationsTh extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'สัดส่วนของกำไรที่จ่ายเป็นเงินปันผล ถ้าเกิน 100% บริษัทจ่ายมากกว่าที่หาได้ ซึ่งมักอยู่ได้ไม่นาน';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'เงินปันผลต่อหุ้นเติบโตขึ้นเฉลี่ยปีละเท่าไรในช่วงห้าปีที่ผ่านมา การเติบโตอย่างสม่ำเสมอมักหมายความว่าบริษัทมั่นใจในกระแสเงินสดของตน ส่วนการลดเงินปันผลมักเป็นสัญญาณเตือน';
 
   @override
   String get glossYieldOnCost =>

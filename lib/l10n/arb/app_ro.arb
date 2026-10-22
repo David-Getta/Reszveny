@@ -752,5 +752,9 @@
   "portfolioSplitDate": "Data divizării",
   "portfolioSplitRow": "Divizare de acțiuni {ratio}",
   "portfolioSplitRemoved": "Divizare de acțiuni ștearsă",
-  "portfolioSplitsImported": "{count, plural, =1{1 divizare de acțiuni adăugată} other{{count} divizări de acțiuni adăugate}}"
+  "portfolioSplitsImported": "{count, plural, =1{1 divizare de acțiuni adăugată} other{{count} divizări de acțiuni adăugate}}",
+  "labelDividendGrowth5y": "Creșterea dividendului (5 ani)",
+  "dividendNone": "Niciun dividend plătit în ultimele 12 luni.",
+  "dividendOnYourShares": "Pe acțiunile tale, anual",
+  "glossDividendGrowth5y": "Cât a crescut în medie pe an dividendul pe acțiune în ultimii cinci ani. O creștere constantă înseamnă de obicei că firma are încredere în fluxul său de numerar; o reducere este adesea un semnal de alarmă."
 }

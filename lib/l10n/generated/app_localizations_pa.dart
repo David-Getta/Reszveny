@@ -291,6 +291,16 @@ class AppLocalizationsPa extends AppLocalizations {
   String get labelYieldOnCost => 'ਖਰੀਦ ਕੀਮਤ ’ਤੇ ਯੀਲਡ';
 
   @override
+  String get labelDividendGrowth5y => 'ਲਾਭਅੰਸ਼ ਵਾਧਾ (5 ਸਾਲ)';
+
+  @override
+  String get dividendNone =>
+      'ਪਿਛਲੇ 12 ਮਹੀਨਿਆਂ ਵਿੱਚ ਕੋਈ ਲਾਭਅੰਸ਼ ਨਹੀਂ ਦਿੱਤਾ ਗਿਆ।';
+
+  @override
+  String get dividendOnYourShares => 'ਤੁਹਾਡੇ ਸ਼ੇਅਰਾਂ ’ਤੇ, ਸਾਲਾਨਾ';
+
+  @override
   String get labelConsensus => 'ਸਹਿਮਤੀ';
 
   @override
@@ -1988,6 +1998,10 @@ class AppLocalizationsPa extends AppLocalizations {
   @override
   String get glossPayoutRatio =>
       'ਮੁਨਾਫ਼ੇ ਦਾ ਕਿੰਨਾ ਹਿੱਸਾ ਲਾਭਅੰਸ਼ ਵਜੋਂ ਵੰਡਿਆ ਜਾਂਦਾ ਹੈ। 100% ਤੋਂ ਉੱਪਰ ਕੰਪਨੀ ਜਿੰਨਾ ਕਮਾਉਂਦੀ ਹੈ ਉਸ ਤੋਂ ਵੱਧ ਦਿੰਦੀ ਹੈ, ਜੋ ਘੱਟ ਹੀ ਟਿਕਦਾ ਹੈ।';
+
+  @override
+  String get glossDividendGrowth5y =>
+      'ਪਿਛਲੇ ਪੰਜ ਸਾਲਾਂ ਵਿੱਚ ਪ੍ਰਤੀ ਸ਼ੇਅਰ ਲਾਭਅੰਸ਼ ਹਰ ਸਾਲ ਔਸਤਨ ਕਿੰਨਾ ਵਧਿਆ। ਸਥਿਰ ਵਾਧੇ ਦਾ ਆਮ ਤੌਰ ’ਤੇ ਮਤਲਬ ਹੁੰਦਾ ਹੈ ਕਿ ਕੰਪਨੀ ਨੂੰ ਆਪਣੇ ਨਕਦ ਪ੍ਰਵਾਹ ’ਤੇ ਭਰੋਸਾ ਹੈ; ਕਟੌਤੀ ਅਕਸਰ ਚੇਤਾਵਨੀ ਦਾ ਸੰਕੇਤ ਹੁੰਦੀ ਹੈ।';
 
   @override
   String get glossYieldOnCost =>
