@@ -52,7 +52,7 @@ import 'features/notes/notes_store.dart';
 import 'features/portfolio/portfolio_review.dart';
 import 'features/portfolio/holdings_reader.dart';
 import 'features/portfolio/portfolio_move_watcher.dart';
-import 'features/portfolio/dividend_forecast.dart' show approxMoney, dividendsInLast12Months, dividendsLast12Months;
+import 'features/portfolio/dividend_forecast.dart' show dividendsInLast12Months, dividendsLast12Months;
 import 'features/portfolio/portfolio_store.dart';
 import 'features/portfolio/portfolio_valuation.dart';
 import 'features/sync/sync_service.dart';
@@ -496,7 +496,8 @@ class AppServices {
     return (
       title: l10n.dividendReminderTitle(e.symbol),
       body: l10n.dividendReminderBody(
-        amount == null || currency == null ? l10n.notAvailable : approxMoney(fmt, amount, currency),
+        // A szöveg maga mondja, hogy közelítés („Kb.”): itt nincs „~”.
+        amount == null || currency == null ? l10n.notAvailable : fmt.money(amount, currency),
       ),
     );
   }

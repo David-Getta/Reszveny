@@ -5,6 +5,7 @@ import '../analysis/price_stats.dart';
 import '../../core/models/price_history.dart';
 import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
+import '../home/markets_strip.dart' show MarketsStrip;
 import '../../theme/app_theme.dart';
 import '../stock_detail/widgets/price_chart.dart';
 import 'portfolio_store.dart';
@@ -140,16 +141,12 @@ BenchmarkComparison? benchmarkComparison(
   return BenchmarkComparison(invested: invested, portfolioValue: value, benchmarkValue: units * idx.last.close + cash);
 }
 
-/// Az összevetés alapértelmezett indexe: S&P 500 indexkövető ETF (a részvény
-/// grafikonján is ez).
-const benchmarkSymbol = 'SPY';
+/// A portfólió értékalakulásánál választható indexek: ugyanazok, mint a „Piacok
+/// ma” sávban (indexkövető ETF-ek); az első az alapértelmezett.
+final benchmarks = [for (final (symbol, name) in MarketsStrip.markets) (symbol: symbol, name: name)];
 
-/// A portfólió értékalakulásánál választható indexek (indexkövető ETF-ek).
-const benchmarks = [
-  (symbol: 'SPY', name: 'S&P 500'),
-  (symbol: 'QQQ', name: 'Nasdaq 100'),
-  (symbol: 'DIA', name: 'Dow Jones'),
-];
+/// Az alapértelmezett összevetési index (S&P 500): a részvény grafikonján is ez.
+final benchmarkSymbol = benchmarks.first.symbol;
 
 /// A választott index (ismeretlen tárolt értéknél az alapértelmezett).
 ({String symbol, String name}) benchmarkOf(String? symbol) =>
@@ -182,9 +179,10 @@ class PortfolioHistoryCard extends StatefulWidget {
 
 class _PortfolioHistoryCardState extends State<PortfolioHistoryCard> {
   String? _key;
-  Future<(PriceHistory?, BenchmarkComparison?, ({int above, int count})?)>? _future;
+  Future<_History>? _future;
 
-  Future<(PriceHistory?, BenchmarkComparison?, ({int above, int count})?)> _load(AppServices services) async {
+  Future<_History> _load(AppServices services) async {
+    final symbol = benchmarkOf(services.preferences.benchmark).symbol;
     // A felaprózásokkal igazított tételek (az árfolyam-idősor is igazított).
     final lots = services.portfolio.adjustedLots;
     final histories = <String, PriceHistory>{};
@@ -192,18 +190,17 @@ class _PortfolioHistoryCardState extends State<PortfolioHistoryCard> {
     await Future.wait([
       for (final s in {for (final l in lots) l.symbol})
         services.marketData.history(s).then((h) => histories[s] = h).then((_) {}, onError: (Object _) {}),
-      services.marketData
-          .history(benchmarkOf(services.preferences.benchmark).symbol)
-          .then((h) => index = h)
-          .then((_) {}, onError: (Object _) {}),
+      services.marketData.history(symbol).then((h) => index = h).then((_) {}, onError: (Object _) {}),
     ]);
     final rates = <String, double>{for (final r in widget.snapshot.rows) r.position.currency: ?r.rate};
     double? rate(String c) => c == widget.snapshot.currency ? 1.0 : rates[c];
     final i = index;
     return (
-      portfolioValueHistory(lots, histories, rate),
-      i == null ? null : benchmarkComparison(lots, histories, i, rate),
-      portfolioTrend([for (final p in services.portfolio.positions) p.symbol], histories),
+      history: portfolioValueHistory(lots, histories, rate),
+      bench: i == null ? null : benchmarkComparison(lots, histories, i, rate),
+      trend: portfolioTrend([for (final p in services.portfolio.positions) p.symbol], histories),
+      symbol: symbol,
+      indexMissing: i == null || i.points.isEmpty,
     );
   }
 
@@ -220,11 +217,16 @@ class _PortfolioHistoryCardState extends State<PortfolioHistoryCard> {
       _key = key;
       _future = _load(services);
     }
-    return FutureBuilder<(PriceHistory?, BenchmarkComparison?, ({int above, int count})?)>(
+    return FutureBuilder<_History>(
       future: _future,
       builder: (context, snap) {
-        final (h, bench, trend) = snap.data ?? (null, null, null);
-        if (h == null) return const SizedBox.shrink();
+        final data = snap.data;
+        final h = data?.history;
+        if (data == null || h == null) return const SizedBox.shrink();
+        final trend = data.trend;
+        // Indexváltás után, amíg az új index töltődik, a régi értékei nem látszanak az új neve alatt.
+        final switching = data.symbol != bench0.symbol;
+        final bench = switching ? null : data.bench;
         Color tone(double v) => v >= 0 ? p.positive : p.negative;
         return Card(
           key: const ValueKey('portfolio-history'),
@@ -263,7 +265,8 @@ class _PortfolioHistoryCardState extends State<PortfolioHistoryCard> {
                     ],
                   ),
                 ],
-                if (bench != null) ...[
+                // A választó akkor is látszik, ha az index nem töltődött be (vissza lehessen váltani).
+                if (data.bench != null || switching || data.indexMissing) ...[
                   const SizedBox(height: 14),
                   Text(l10n.benchmarkTitleIndex, style: theme.textTheme.titleSmall),
                   const SizedBox(height: 6),
@@ -287,44 +290,54 @@ class _PortfolioHistoryCardState extends State<PortfolioHistoryCard> {
                     ],
                   ),
                   const SizedBox(height: 8),
-                  Wrap(
-                    key: const ValueKey('portfolio-benchmark'),
-                    spacing: 28,
-                    runSpacing: 8,
-                    children: [
-                      for (final (label, value) in [
-                        (l10n.benchmarkYours, bench.portfolioValue),
-                        (bench0.name, bench.benchmarkValue),
-                      ])
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(label, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
-                            const SizedBox(height: 2),
-                            Text(
-                              fmt.percent((value / bench.invested - 1) * 100, withSign: true),
-                              style: theme.textTheme.titleSmall?.copyWith(
-                                color: tone(value - bench.invested),
-                                fontWeight: FontWeight.w700,
+                  if (bench == null)
+                    switching
+                        ? const LinearProgressIndicator(key: ValueKey('benchmark-loading'))
+                        : Text(
+                            l10n.notAvailable,
+                            key: const ValueKey('benchmark-unavailable'),
+                            style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                          )
+                  else ...[
+                    Wrap(
+                      key: const ValueKey('portfolio-benchmark'),
+                      spacing: 28,
+                      runSpacing: 8,
+                      children: [
+                        for (final (label, value) in [
+                          (l10n.benchmarkYours, bench.portfolioValue),
+                          (bench0.name, bench.benchmarkValue),
+                        ])
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(label, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+                              const SizedBox(height: 2),
+                              Text(
+                                fmt.percent((value / bench.invested - 1) * 100, withSign: true),
+                                style: theme.textTheme.titleSmall?.copyWith(
+                                  color: tone(value - bench.invested),
+                                  fontWeight: FontWeight.w700,
+                                ),
                               ),
-                            ),
-                            Text(
-                              fmt.money(value, widget.snapshot.currency),
-                              style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
-                            ),
-                          ],
-                        ),
-                    ],
-                  ),
-                  const SizedBox(height: 8),
-                  Text(
-                    bench.difference >= 0
-                        ? l10n.benchmarkAhead(fmt.number(bench.difference, decimals: 1))
-                        : l10n.benchmarkBehind(fmt.number(-bench.difference, decimals: 1)),
-                    style: theme.textTheme.bodyMedium?.copyWith(color: tone(bench.difference)),
-                  ),
-                  const SizedBox(height: 4),
-                  Text(l10n.benchmarkHintIndex, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+                              Text(
+                                fmt.money(value, widget.snapshot.currency),
+                                style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
+                              ),
+                            ],
+                          ),
+                      ],
+                    ),
+                    const SizedBox(height: 8),
+                    Text(
+                      bench.difference >= 0
+                          ? l10n.benchmarkAhead(fmt.number(bench.difference, decimals: 1))
+                          : l10n.benchmarkBehind(fmt.number(-bench.difference, decimals: 1)),
+                      style: theme.textTheme.bodyMedium?.copyWith(color: tone(bench.difference)),
+                    ),
+                    const SizedBox(height: 4),
+                    Text(l10n.benchmarkHintIndex, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+                  ],
                 ],
               ],
             ),
@@ -334,3 +347,13 @@ class _PortfolioHistoryCardState extends State<PortfolioHistoryCard> {
     );
   }
 }
+
+/// Az értékalakulás-kártya betöltött adatai: a grafikon, az index-összevetés, a
+/// trendkép, az index, amellyel számoltunk, és hogy annak idősora hiányzott-e.
+typedef _History = ({
+  PriceHistory? history,
+  BenchmarkComparison? bench,
+  ({int above, int count})? trend,
+  String symbol,
+  bool indexMissing,
+});

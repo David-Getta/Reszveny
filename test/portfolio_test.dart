@@ -246,6 +246,15 @@ void main() {
         currency: 'USD',
       );
       expect((three.beta, three.top3Weight), (null, null));
+      // Ha a bétával rendelkező pozíciók a részvények értékének felét sem adják, nincs béta.
+      final sparse = PortfolioSnapshot.compute(
+        [pos('A', 40), pos('B', 30), pos('C', 20), pos('D', 10)],
+        quotes: q,
+        rate: (_, _) => 1,
+        currency: 'USD',
+        betas: {'C': 2.1, 'D': 1.5},
+      );
+      expect(sparse.beta, isNull, reason: 'a lefedettség 30%');
     });
 
     test('expected yearly dividends: per position, converted and as a yield', () {

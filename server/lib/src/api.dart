@@ -584,8 +584,12 @@ class Api {
       week52Low: num_(m['52WeekLow']),
       week52High: num_(m['52WeekHigh']),
     );
-    // Hibás válasz (se név, se ár) nem kerül a gyorsítótárba.
-    if (facts.name != null || facts.price != null) _factsCache[symbol] = (DateTime.now(), facts);
+    // Hibás válasz (se név, se ár) nem kerül a gyorsítótárba; ha csak a mutatók
+    // hiányoznak, 10 perc múlva újra próbáljuk (a többi adat egy órára marad).
+    if (facts.name != null || facts.price != null) {
+      final at = m.isEmpty ? DateTime.now().subtract(const Duration(minutes: 50)) : DateTime.now();
+      _factsCache[symbol] = (at, facts);
+    }
     return facts;
   }
 

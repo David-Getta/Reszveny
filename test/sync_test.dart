@@ -169,7 +169,7 @@ void main() {
     expect(b.preferences.portfolioGoal, (amount: 12000000.0, currency: 'HUF'));
   });
 
-  test('goal merge: by timestamp; an old package without times keeps the local goal', () {
+  test('goal merge: by timestamp; an old package without times keeps the local goal', () async {
     final older = {'amount': 100, 'currency': 'USD', 'at': '2026-10-01T00:00:00Z'};
     final newer = {'amount': 200, 'currency': 'USD', 'at': '2026-10-10T00:00:00Z'};
     final removed = {'at': '2026-10-12T00:00:00Z'};
@@ -187,6 +187,15 @@ void main() {
       {'portfolio': older},
       reason: 'időbélyeg nélküli helyi cél régebbinek számít',
     );
+    // Régi csomag (idő nélküli cél): átvéve, de bélyeg nélkül – nem lesz mesterségesen a legújabb.
+    final prefs = AppPreferences();
+    await prefs.applyGoals(
+      AppPreferences.parseGoals({
+        'portfolio': {'amount': 5, 'currency': 'EUR'},
+      }),
+    );
+    expect(prefs.portfolioGoal, (amount: 5.0, currency: 'EUR'));
+    expect(prefs.goalsJson['portfolio']?.containsKey('at'), isFalse);
     final parsed = AppPreferences.parseGoals({'dividend': removed, 'portfolio': newer, 'x': newer});
     expect(parsed.keys, ['dividend', 'portfolio']);
     expect(parsed['dividend']!.goal, isNull);

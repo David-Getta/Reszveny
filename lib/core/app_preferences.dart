@@ -298,9 +298,20 @@ class AppPreferences extends ChangeNotifier {
   /// az újabb nyerjen, és a törölt cél ne éledjen újra egy másik készülékről.
   final Map<String, DateTime> _goalsAt;
 
-  /// [at] nélkül (a felhasználó állította) most; a szinkron a csomag idejével hívja.
-  Future<void> _saveGoal(String kind, String key, ({double amount, String currency})? goal, DateTime? at) async {
-    _goalsAt[kind] = (at ?? DateTime.now()).toUtc();
+  /// [fromSync] nélkül (a felhasználó állította) most; a szinkron a csomag idejével
+  /// hívja, és ha annak nincs ideje (régi csomag), a cél bélyeg nélkül marad.
+  Future<void> _saveGoal(
+    String kind,
+    String key,
+    ({double amount, String currency})? goal,
+    DateTime? at, {
+    bool fromSync = false,
+  }) async {
+    if (fromSync && at == null) {
+      _goalsAt.remove(kind);
+    } else {
+      _goalsAt[kind] = (at ?? DateTime.now()).toUtc();
+    }
     notifyListeners();
     await _save((p) async {
       await (goal == null ? p.remove(key) : p.setString(key, '${goal.amount}|${goal.currency}'));
@@ -338,8 +349,14 @@ class AppPreferences extends ChangeNotifier {
 
   /// A szinkronból kapott célok átvétele a csomag idejével (nem most bélyegezve).
   Future<void> applyGoals(Map<String, ({({double amount, String currency})? goal, DateTime? at})> goals) async {
-    if (goals[goalPortfolio] case final g?) await setPortfolioGoal(g.goal, at: g.at);
-    if (goals[goalDividend] case final g?) await setDividendGoal(g.goal, at: g.at);
+    if (goals[goalPortfolio] case final g?) {
+      portfolioGoal = g.goal;
+      await _saveGoal(goalPortfolio, _goalKey, g.goal, g.at, fromSync: true);
+    }
+    if (goals[goalDividend] case final g?) {
+      dividendGoal = g.goal;
+      await _saveGoal(goalDividend, _dividendGoalKey, g.goal, g.at, fromSync: true);
+    }
   }
 
   /// Értesítés, ha a teljes portfólió egy nap alatt legalább ennyi %-ot mozdul (0: ki).

@@ -129,7 +129,7 @@ void main() {
     final notifier = FakeNotifier();
     final prefs = AppPreferences(earningsReminders: false);
     final sent = await reminder(market, notifier, prefs, portfolio: portfolio).check();
-    expect(sent, ['dividend-KO-${today.toIso8601String().substring(0, 10)}']);
+    expect(sent, ['dividend-KO-USD-${today.toIso8601String().substring(0, 10)}']);
     expect(notifier.sent.single.title, 'KO dividend today');
     expect(notifier.sent.single.body, '5.0 USD');
     // Egyszer szól; kikapcsolva sem.
@@ -142,7 +142,16 @@ void main() {
   test('the notification id carries the ticker and the day', () {
     final e = UpcomingEvent(symbol: 'BRK.B', date: DateTime(2026, 10, 30), kind: UpcomingEventKind.earnings);
     expect(EarningsReminder.idOf(e), 'earnings-BRK.B-2026-10-30');
-    final d = UpcomingEvent(symbol: 'KO', date: DateTime(2026, 12, 1), kind: UpcomingEventKind.dividend);
-    expect(EarningsReminder.idOf(d), 'dividend-KO-2026-12-01');
+    final d = UpcomingEvent(
+      symbol: 'KO',
+      date: DateTime(2026, 12, 1),
+      kind: UpcomingEventKind.dividend,
+      currency: 'EUR',
+    );
+    expect(EarningsReminder.idOf(d), 'dividend-KO-EUR-2026-12-01', reason: 'két pénznem: két értesítés');
+    // Naptári napok: az óraátállítás napja (23 vagy 25 óra) is egy nap.
+    expect(EarningsReminder.daysBetween(DateTime(2026, 3, 29), DateTime(2026, 3, 30)), 1);
+    expect(EarningsReminder.daysBetween(DateTime(2026, 10, 25), DateTime(2026, 10, 26)), 1);
+    expect(EarningsReminder.daysBetween(DateTime(2026, 10, 26, 23), DateTime(2026, 10, 26)), 0);
   });
 }

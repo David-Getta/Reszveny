@@ -53,8 +53,18 @@ class EarningsReminder {
   }
 
   /// Az értesítés azonosítója (egyszer szól egy jelentésről, illetve egy várható osztalékról).
-  static String idOf(UpcomingEvent e) =>
-      '${e.kind == UpcomingEventKind.dividend ? 'dividend' : 'earnings'}-${e.symbol}-${e.date.toIso8601String().substring(0, 10)}';
+  static String idOf(UpcomingEvent e) => switch (e.kind) {
+    // A pénznem is benne van (két brókernél két sorozat); a végén mindig a nap.
+    UpcomingEventKind.dividend => 'dividend-${e.symbol}-${e.currency ?? ''}-${_day(e.date)}',
+    _ => 'earnings-${e.symbol}-${_day(e.date)}',
+  };
+
+  static String _day(DateTime d) => d.toIso8601String().substring(0, 10);
+
+  /// Két dátum között eltelt naptári napok (az óraátállítás napja 23 vagy 25 óra,
+  /// ezért nem a [Duration]-ből).
+  static int daysBetween(DateTime from, DateTime to) =>
+      DateTime.utc(to.year, to.month, to.day).difference(DateTime.utc(from.year, from.month, from.day)).inDays;
 
   /// Ellenőrzés most; a kiküldött értesítések azonosítóival tér vissza.
   Future<List<String>> check() async {
@@ -65,13 +75,18 @@ class EarningsReminder {
     final sent = <String>[];
     try {
       if (events.watched.isEmpty) return const [];
-      await events.refresh();
+      // Az osztalék-események a portfólióból jönnek: gyorsjelentés nélkül nem kell hálózat.
+      if (earnings) {
+        await events.refresh();
+      } else {
+        await events.rebuildOffline();
+      }
       final n = _clock();
       final today = DateTime(n.year, n.month, n.day);
       final prefs = await SharedPreferences.getInstance();
       final done = (prefs.getStringList(_key) ?? const []).toSet();
       for (final e in events.events) {
-        final days = e.date.difference(today).inDays;
+        final days = daysBetween(today, e.date);
         // Gyorsjelentés: előtte való nap vagy aznap; várható osztalék: a napján.
         final text = switch (e.kind) {
           UpcomingEventKind.earnings when earnings && days >= 0 && days <= 1 => describe(e, tomorrow: days == 1),
@@ -114,7 +129,7 @@ class EarningsReminder {
       final day = DateTime.tryParse(id.substring(id.length - 10));
       final symbol = id.substring('earnings-'.length, id.length - 11);
       if (day == null || symbol.isEmpty) continue;
-      final age = today.difference(day).inDays;
+      final age = daysBetween(day, today);
       final resultId = 'result-$symbol-${id.substring(id.length - 10)}';
       if (age < 0 || age > 4 || done.contains(resultId)) continue;
       try {

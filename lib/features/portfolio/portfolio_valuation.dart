@@ -65,7 +65,12 @@ class PortfolioSnapshot {
 
   /// A részvények értékkel súlyozott bétája (a bétával rendelkező pozíciókból):
   /// nagyjából hány százalékot mozdul a portfólió részvényrésze, ha a piac 1%-ot.
+  /// `null`, ha a bétával rendelkező pozíciók a részvények értékének felét sem
+  /// adják (pl. főleg ETF-ek béta nélkül) – akkor egy kis pozíció bétája félrevezető volna.
   final double? beta;
+
+  /// A béta legalább ekkora részét fedje le a részvények értékének.
+  static const minBetaCoverage = 0.5;
 
   /// A három legnagyobb pozíció együttes súlya a részvények értékében (0–1);
   /// `null`, ha legfeljebb három pozíció van (akkor nincs mit mérni).
@@ -221,7 +226,7 @@ class PortfolioSnapshot {
       realizedByYear: byYear,
       cash: cashValue,
       cashByCurrency: cashByCurrency,
-      beta: betaBase > 0 ? betaSum / betaBase : null,
+      beta: betaBase > 0 && betaBase >= value * minBetaCoverage ? betaSum / betaBase : null,
     );
   }
 

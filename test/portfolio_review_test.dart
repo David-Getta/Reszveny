@@ -12,6 +12,7 @@ import 'package:reszveny/core/app_preferences.dart';
 import 'package:reszveny/core/config/app_config.dart';
 import 'package:reszveny/core/desktop/desktop_integration.dart';
 import 'package:reszveny/core/locale_controller.dart';
+import 'package:reszveny/core/models/price_history.dart';
 import 'package:reszveny/features/analysis/claude_stock_analyst.dart';
 import 'package:reszveny/features/analysis/report_store.dart';
 import 'package:reszveny/features/billing/entitlement_service.dart';
@@ -173,4 +174,53 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text('Questions about your portfolio'), findsOneWidget);
   });
+
+  testWidgets('a chosen index whose history does not load keeps the chips, so the user can switch back', (
+    tester,
+  ) async {
+    tester.view.physicalSize = const Size(1200, 4000);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    SharedPreferences.setMockInitialValues({});
+    const config = AppConfig();
+    final market = _NoQqq();
+    final portfolio = PortfolioStore();
+    await portfolio.add(symbol: 'AAPL', quantity: 10, price: 180, currency: 'USD', date: DateTime(2025, 3, 3));
+    final prefs = AppPreferences(benchmark: 'QQQ');
+    final services = AppServices(
+      alertNotifier: FakeNotifier(),
+      config: config,
+      capture: CaptureService(),
+      recognizer: _NoRecognizer(),
+      marketData: market,
+      locale: LocaleController(),
+      preferences: prefs,
+      desktop: DesktopIntegration(),
+      reports: ReportStore(analyst: ClaudeStockAnalyst(config: config)),
+      entitlements: EntitlementService(),
+      portfolio: portfolio,
+    );
+    await tester.pumpWidget(WhatStockApp(services: services));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Portfolio').first);
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('benchmark-unavailable')), findsOneWidget);
+    expect(find.byKey(const ValueKey('portfolio-benchmark')), findsNothing);
+    await tester.ensureVisible(find.byKey(const ValueKey('benchmark-SPY')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('benchmark-SPY')));
+    await tester.pumpAndSettle();
+    expect(prefs.benchmark, 'SPY');
+    expect(find.byKey(const ValueKey('portfolio-benchmark')), findsOneWidget);
+    expect(find.byKey(const ValueKey('benchmark-unavailable')), findsNothing);
+  });
+}
+
+/// A Nasdaq 100 idősora nem tölthető (pl. hálózati hiba).
+class _NoQqq extends DemoMarketDataProvider {
+  _NoQqq() : super(latency: Duration.zero);
+
+  @override
+  Future<PriceHistory> history(String symbol, {int years = 5}) =>
+      symbol == 'QQQ' ? Future.error(Exception('offline')) : super.history(symbol, years: years);
 }

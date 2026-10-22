@@ -26,6 +26,7 @@ import '../news/watch_news.dart';
 import '../news/move_explainer.dart';
 import '../news/watch_news_view.dart' show showNewsExplanation;
 import 'widgets/converted_price.dart';
+import '../portfolio/portfolio_history.dart' show benchmarkSymbol;
 import 'widgets/dividend_card.dart';
 import 'widgets/earnings_card.dart';
 import 'widgets/instrument_card.dart';
@@ -350,9 +351,9 @@ class _DetailsBody extends StatelessWidget {
                       currency: cur,
                       levels: chartLevels(context, d.symbol, cur),
                       markers: chartMarkers(context, d.symbol),
-                      loadBenchmark: d.symbol.toUpperCase() == 'SPY'
+                      loadBenchmark: d.symbol.toUpperCase() == benchmarkSymbol
                           ? null
-                          : () => AppServices.of(context).marketData.history('SPY'),
+                          : () => AppServices.of(context).marketData.history(benchmarkSymbol),
                     ),
                     // Hozamok több időtávon, egy pillantással.
                     ReturnsStrip(history: d.history!, fmt: fmt),

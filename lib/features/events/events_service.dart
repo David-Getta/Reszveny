@@ -186,6 +186,10 @@ class EventsService extends ChangeNotifier {
     if (_fingerprint() != started) await refresh();
   }
 
+  /// Újraépítés hálózat nélkül (pl. az osztalék-emlékeztetőnek, ha a
+  /// gyorsjelentés-emlékeztető ki van kapcsolva).
+  Future<void> rebuildOffline() => _rebuild();
+
   /// A lista és a friss eredmények összeállítása a már lekért dátumokból, az
   /// elmentett elemzésekből és a portfólióból – hálózat nélkül.
   Future<void> _rebuild({List<String>? symbols, bool notify = true}) async {
