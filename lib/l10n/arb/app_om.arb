@@ -489,10 +489,8 @@
   "digestHint": "Wiixata hunda: filatamoonni kee fi poortfooliyoon kee torban darbe akkamitti akka socho'an, akkasumas guyyoota bu'aa isaanii dhufan.",
   "benchmarkTitle": "S&P 500 waliin wal bira qabame",
   "benchmarkYours": "Bittaawwan kee",
-  "benchmarkIndex": "Maallaqa walfakkaatu S&P 500 keessatti",
   "benchmarkAhead": "Indeeksii caalaa qabxii dhibbeentaa {points}n wayya",
   "benchmarkBehind": "Indeeksii irraa qabxii dhibbeentaa {points}n duubatti hafe",
-  "benchmarkHint": "Akka waan bittaan hundi guyyuma sana fandii indeeksii S&P 500 keessatti invastii godhameetti. Diviidendii hin dabalatu; bu'aan darbe bu'aa gara fuulduraa hin tilmaamu.",
   "portfolioSell": "Gurguri",
   "portfolioSellTitle": "{symbol} gurguri",
   "portfolioSellPrice": "Gatii gurgurtaa aksiyoona tokkoo ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol}: har'a diviidendii eegama",
   "dividendReminderBody": "Gara {amount}. Yeroo ga'u poortfooliyoo kee keessatti galmeessi.",
   "dividendRemindersTitle": "Yaadachiisa diviidendii",
-  "dividendRemindersSubtitle": "Beeksisa guyyaa diviidendiin akkaataa kaffaltiiwwan ati galmeessiteetiin eegamu, akka galmeessuu dandeessuuf"
+  "dividendRemindersSubtitle": "Beeksisa guyyaa diviidendiin akkaataa kaffaltiiwwan ati galmeessiteetiin eegamu, akka galmeessuu dandeessuuf",
+  "benchmarkTitleIndex": "Indeeksii tokko waliin wal bira qabame",
+  "benchmarkHintIndex": "Akka waan bittaan kee hundi guyyuma sana fandii indeeksii filatame hordofu keessa galeetti. Qoodni bu'aa hin hammatamne; bu'aan darbe kan gara fuulduraa hin raaguu."
 }

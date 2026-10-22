@@ -489,10 +489,8 @@
   "digestHint": "Cada luns: como se moveron os teus favoritos e a túa carteira a semana pasada, e as súas próximas datas de resultados.",
   "benchmarkTitle": "Comparado co S&P 500",
   "benchmarkYours": "As túas compras",
-  "benchmarkIndex": "Mesmos importes no S&P 500",
   "benchmarkAhead": "{points} puntos porcentuais mellor ca o índice",
   "benchmarkBehind": "{points} puntos porcentuais por debaixo do índice",
-  "benchmarkHint": "Como se cada compra se investise o mesmo día nun fondo indexado ao S&P 500. Sen dividendos; as rendibilidades pasadas non predín as futuras.",
   "portfolioSell": "Vender",
   "portfolioSellTitle": "Vender {symbol}",
   "portfolioSellPrice": "Prezo de venda por acción ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "Dividendo de {symbol} previsto para hoxe",
   "dividendReminderBody": "Uns {amount}. Rexístrao na túa carteira cando chegue.",
   "dividendRemindersTitle": "Lembretes de dividendos",
-  "dividendRemindersSubtitle": "Unha notificación o día en que se espera un dividendo segundo o ritmo dos teus pagamentos rexistrados, para que poidas rexistralo"
+  "dividendRemindersSubtitle": "Unha notificación o día en que se espera un dividendo segundo o ritmo dos teus pagamentos rexistrados, para que poidas rexistralo",
+  "benchmarkTitleIndex": "Comparado cun índice",
+  "benchmarkHintIndex": "Como se cada compra se investise o mesmo día nun fondo que replica o índice escollido. Sen dividendos; as rendibilidades pasadas non predín as futuras."
 }

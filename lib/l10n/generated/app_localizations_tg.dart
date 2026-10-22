@@ -1823,10 +1823,14 @@ class AppLocalizationsTg extends AppLocalizations {
   String get benchmarkTitle => 'Муқоиса бо S&P 500';
 
   @override
-  String get benchmarkYours => 'Харидҳои шумо';
+  String get benchmarkTitleIndex => 'Муқоиса бо индекс';
 
   @override
-  String get benchmarkIndex => 'Ҳамон маблағҳо дар S&P 500';
+  String get benchmarkHintIndex =>
+      'Гӯё ҳар як хариди шумо ҳамон рӯз ба фонде гузошта шуда бошад, ки индекси интихобшударо пайгирӣ мекунад. Дивидендҳо дохил нестанд; даромади гузашта даромади ояндаро пешгӯӣ намекунад.';
+
+  @override
+  String get benchmarkYours => 'Харидҳои шумо';
 
   @override
   String benchmarkAhead(String points) {
@@ -1837,10 +1841,6 @@ class AppLocalizationsTg extends AppLocalizations {
   String benchmarkBehind(String points) {
     return 'Аз индекс $points банди фоизӣ қафо';
   }
-
-  @override
-  String get benchmarkHint =>
-      'Гӯё ҳар як харид дар ҳамон рӯз ба фонди индексии S&P 500 гузошта шуда бошад. Бе дивидендҳо; даромади гузашта даромади ояндаро пешгӯӣ намекунад.';
 
   @override
   String get portfolioSell => 'Фурӯш';

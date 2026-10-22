@@ -1821,10 +1821,14 @@ class AppLocalizationsAk extends AppLocalizations {
   String get benchmarkTitle => 'Ɛne S&P 500 a wɔde toto ho';
 
   @override
-  String get benchmarkYours => 'Nea wotɔe';
+  String get benchmarkTitleIndex => 'Ɛne index bi a wɔde toto ho';
 
   @override
-  String get benchmarkIndex => 'Sika koro no ara wɔ S&P 500 mu';
+  String get benchmarkHintIndex =>
+      'Te sɛ nea wode nneɛma a wotɔe biara sika hyɛɛ fund a edi index a woapaw no akyi mu da koro no ara. Mfaso a wɔkyɛ (dividend) nka ho; mfaso a atwam nkyerɛ daakye de.';
+
+  @override
+  String get benchmarkYours => 'Nea wotɔe';
 
   @override
   String benchmarkAhead(String points) {
@@ -1835,10 +1839,6 @@ class AppLocalizationsAk extends AppLocalizations {
   String benchmarkBehind(String points) {
     return 'Ɛka index no akyi ɔha mu nkyɛmu $points';
   }
-
-  @override
-  String get benchmarkHint =>
-      'Te sɛ nea wode nneɛma a wotɔe biara sika hyɛɛ S&P 500 index fund mu da koro no ara. Mfaso a wɔkyɛ (dividend) nka ho; mfaso a atwam nkyerɛ daakye de.';
 
   @override
   String get portfolioSell => 'Tɔn';

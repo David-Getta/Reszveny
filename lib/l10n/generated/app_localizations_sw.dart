@@ -1822,10 +1822,14 @@ class AppLocalizationsSw extends AppLocalizations {
   String get benchmarkTitle => 'Ikilinganishwa na S&P 500';
 
   @override
-  String get benchmarkYours => 'Ununuzi wako';
+  String get benchmarkTitleIndex => 'Ikilinganishwa na fahirisi';
 
   @override
-  String get benchmarkIndex => 'Kiasi sawa katika S&P 500';
+  String get benchmarkHintIndex =>
+      'Kana kwamba kila ununuzi wako uliwekwa siku hiyo hiyo kwenye mfuko unaofuata fahirisi uliyochagua. Gawio halijajumuishwa; faida za zamani hazitabiri za baadaye.';
+
+  @override
+  String get benchmarkYours => 'Ununuzi wako';
 
   @override
   String benchmarkAhead(String points) {
@@ -1836,10 +1840,6 @@ class AppLocalizationsSw extends AppLocalizations {
   String benchmarkBehind(String points) {
     return 'Nyuma ya fahirisi kwa pointi $points za asilimia';
   }
-
-  @override
-  String get benchmarkHint =>
-      'Kana kwamba kila ununuzi uliwekezwa katika mfuko wa fahirisi wa S&P 500 siku hiyo hiyo. Gawio halijajumuishwa; mapato ya zamani hayatabiri ya baadaye.';
 
   @override
   String get portfolioSell => 'Uza';

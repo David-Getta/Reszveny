@@ -489,10 +489,8 @@
   "digestHint": "W każdy poniedziałek: jak w zeszłym tygodniu zmieniały się Twoje ulubione i portfel oraz najbliższe daty ich wyników.",
   "benchmarkTitle": "W porównaniu z S&P 500",
   "benchmarkYours": "Twoje zakupy",
-  "benchmarkIndex": "Te same kwoty w S&P 500",
   "benchmarkAhead": "O {points} pkt proc. lepiej niż indeks",
   "benchmarkBehind": "O {points} pkt proc. gorzej niż indeks",
-  "benchmarkHint": "Tak jakby każdy zakup został tego samego dnia zainwestowany w fundusz indeksowy S&P 500. Bez dywidend; przeszłe stopy zwrotu nie przewidują przyszłych.",
   "portfolioSell": "Sprzedaj",
   "portfolioSellTitle": "Sprzedaj {symbol}",
   "portfolioSellPrice": "Cena sprzedaży za akcję ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol}: dziś spodziewana dywidenda",
   "dividendReminderBody": "Około {amount}. Gdy wpłynie, zapisz ją w portfelu.",
   "dividendRemindersTitle": "Przypomnienia o dywidendach",
-  "dividendRemindersSubtitle": "Powiadomienie w dniu spodziewanej dywidendy, wyznaczonym na podstawie rytmu zapisanych wypłat, by można ją było zapisać"
+  "dividendRemindersSubtitle": "Powiadomienie w dniu spodziewanej dywidendy, wyznaczonym na podstawie rytmu zapisanych wypłat, by można ją było zapisać",
+  "benchmarkTitleIndex": "W porównaniu z indeksem",
+  "benchmarkHintIndex": "Tak, jakby każdy zakup trafił tego samego dnia do funduszu odwzorowującego wybrany indeks. Bez dywidend; przeszłe stopy zwrotu nie przewidują przyszłych."
 }

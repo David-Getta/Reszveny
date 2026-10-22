@@ -140,8 +140,20 @@ BenchmarkComparison? benchmarkComparison(
   return BenchmarkComparison(invested: invested, portfolioValue: value, benchmarkValue: units * idx.last.close + cash);
 }
 
-/// Az összevetés indexe: S&P 500 indexkövető ETF.
+/// Az összevetés alapértelmezett indexe: S&P 500 indexkövető ETF (a részvény
+/// grafikonján is ez).
 const benchmarkSymbol = 'SPY';
+
+/// A portfólió értékalakulásánál választható indexek (indexkövető ETF-ek).
+const benchmarks = [
+  (symbol: 'SPY', name: 'S&P 500'),
+  (symbol: 'QQQ', name: 'Nasdaq 100'),
+  (symbol: 'DIA', name: 'Dow Jones'),
+];
+
+/// A választott index (ismeretlen tárolt értéknél az alapértelmezett).
+({String symbol, String name}) benchmarkOf(String? symbol) =>
+    benchmarks.firstWhere((b) => b.symbol == symbol, orElse: () => benchmarks.first);
 
 /// Hány nyitott pozíció ára jár a saját 200 napos mozgóátlaga felett (egyszerű
 /// trendkép); `null`, ha egyikhez sincs elég adat.
@@ -180,7 +192,10 @@ class _PortfolioHistoryCardState extends State<PortfolioHistoryCard> {
     await Future.wait([
       for (final s in {for (final l in lots) l.symbol})
         services.marketData.history(s).then((h) => histories[s] = h).then((_) {}, onError: (Object _) {}),
-      services.marketData.history(benchmarkSymbol).then((h) => index = h).then((_) {}, onError: (Object _) {}),
+      services.marketData
+          .history(benchmarkOf(services.preferences.benchmark).symbol)
+          .then((h) => index = h)
+          .then((_) {}, onError: (Object _) {}),
     ]);
     final rates = <String, double>{for (final r in widget.snapshot.rows) r.position.currency: ?r.rate};
     double? rate(String c) => c == widget.snapshot.currency ? 1.0 : rates[c];
@@ -199,7 +214,8 @@ class _PortfolioHistoryCardState extends State<PortfolioHistoryCard> {
     final p = AppPalette.of(context);
     final theme = Theme.of(context);
     final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
-    final key = '${widget.snapshot.currency}|${services.portfolio.holdingsKey}';
+    final bench0 = benchmarkOf(services.preferences.benchmark);
+    final key = '${widget.snapshot.currency}|${services.portfolio.holdingsKey}|${bench0.symbol}';
     if (key != _key) {
       _key = key;
       _future = _load(services);
@@ -249,7 +265,27 @@ class _PortfolioHistoryCardState extends State<PortfolioHistoryCard> {
                 ],
                 if (bench != null) ...[
                   const SizedBox(height: 14),
-                  Text(l10n.benchmarkTitle, style: theme.textTheme.titleSmall),
+                  Text(l10n.benchmarkTitleIndex, style: theme.textTheme.titleSmall),
+                  const SizedBox(height: 6),
+                  // Az index választható (megjegyezve); a nevek tulajdonnevek, nem fordítjuk.
+                  Wrap(
+                    spacing: 6,
+                    runSpacing: 4,
+                    children: [
+                      for (final b in benchmarks)
+                        ChoiceChip(
+                          key: ValueKey('benchmark-${b.symbol}'),
+                          label: Text(b.name),
+                          selected: b.symbol == bench0.symbol,
+                          visualDensity: VisualDensity.compact,
+                          onSelected: (_) {
+                            // A beállítás azonnal átáll (a mentés a háttérben); a kártya új indexszel tölt.
+                            services.preferences.setBenchmark(b.symbol);
+                            setState(() {});
+                          },
+                        ),
+                    ],
+                  ),
                   const SizedBox(height: 8),
                   Wrap(
                     key: const ValueKey('portfolio-benchmark'),
@@ -258,7 +294,7 @@ class _PortfolioHistoryCardState extends State<PortfolioHistoryCard> {
                     children: [
                       for (final (label, value) in [
                         (l10n.benchmarkYours, bench.portfolioValue),
-                        (l10n.benchmarkIndex, bench.benchmarkValue),
+                        (bench0.name, bench.benchmarkValue),
                       ])
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -288,7 +324,7 @@ class _PortfolioHistoryCardState extends State<PortfolioHistoryCard> {
                     style: theme.textTheme.bodyMedium?.copyWith(color: tone(bench.difference)),
                   ),
                   const SizedBox(height: 4),
-                  Text(l10n.benchmarkHint, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
+                  Text(l10n.benchmarkHintIndex, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),
                 ],
               ],
             ),

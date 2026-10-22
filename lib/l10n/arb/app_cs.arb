@@ -489,10 +489,8 @@
   "digestHint": "Každé pondělí: jak se minulý týden vyvíjely vaše oblíbené a portfolio a nejbližší data jejich výsledků.",
   "benchmarkTitle": "Srovnání s S&P 500",
   "benchmarkYours": "Vaše nákupy",
-  "benchmarkIndex": "Stejné částky v S&P 500",
   "benchmarkAhead": "O {points} p. b. lépe než index",
   "benchmarkBehind": "O {points} p. b. za indexem",
-  "benchmarkHint": "Jako by každý nákup byl týž den vložen do indexového fondu S&P 500. Bez dividend; minulé výnosy nepředpovídají budoucí.",
   "portfolioSell": "Prodat",
   "portfolioSellTitle": "Prodat {symbol}",
   "portfolioSellPrice": "Prodejní cena za akcii ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol}: dnes se očekává dividenda",
   "dividendReminderBody": "Asi {amount}. Až dorazí, zaznamenejte ji do portfolia.",
   "dividendRemindersTitle": "Připomínky dividend",
-  "dividendRemindersSubtitle": "Upozornění v den, kdy se podle rytmu vašich zaznamenaných výplat očekává dividenda, abyste ji mohli zaznamenat"
+  "dividendRemindersSubtitle": "Upozornění v den, kdy se podle rytmu vašich zaznamenaných výplat očekává dividenda, abyste ji mohli zaznamenat",
+  "benchmarkTitleIndex": "Srovnání s indexem",
+  "benchmarkHintIndex": "Jako by každý nákup byl týž den vložen do fondu sledujícího zvolený index. Bez dividend; minulé výnosy nepředpovídají budoucí."
 }

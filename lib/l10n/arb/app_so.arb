@@ -489,10 +489,8 @@
   "digestHint": "Isniin kasta: sida ay u dhaqaaqeen kuwa aad jeceshahay iyo portfoliyadaada toddobaadkii hore, iyo taariikhaha natiijooyinkooda soo socda.",
   "benchmarkTitle": "Marka la barbardhigo S&P 500",
   "benchmarkYours": "Iibsadaada",
-  "benchmarkIndex": "Isla lacagta S&P 500",
   "benchmarkAhead": "{points} dhibcood oo boqolkiiba ka fiican tusmada",
   "benchmarkBehind": "{points} dhibcood oo boqolkiiba ka dambeeya tusmada",
-  "benchmarkHint": "Sidii in iibsasho kasta lagu maalgeliyey sanduuqa tusmada S&P 500 isla maalintaas. Saami-qaybsiga kuma jiro; soo-celintii hore ma saadaalinayso tan mustaqbalka.",
   "portfolioSell": "Iibi",
   "portfolioSellTitle": "Iibi {symbol}",
   "portfolioSellPrice": "Qiimaha iibka saamigiiba ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol}: faa'iido-saami la filayo maanta",
   "dividendReminderBody": "Qiyaastii {amount}. Marka ay timaado, ku diiwaangeli boortfoliyahaaga.",
   "dividendRemindersTitle": "Xasuusinta faa'iido-saamiga",
-  "dividendRemindersSubtitle": "Ogeysiis maalinta faa'iido-saami la filayo, iyadoo lagu salaynayo habka bixinnada aad diiwaangelisay, si aad u diiwaangeliso"
+  "dividendRemindersSubtitle": "Ogeysiis maalinta faa'iido-saami la filayo, iyadoo lagu salaynayo habka bixinnada aad diiwaangelisay, si aad u diiwaangeliso",
+  "benchmarkTitleIndex": "Marka la barbardhigo tusmo",
+  "benchmarkHintIndex": "Sidii iibsi kasta oo aad samaysay maalintaas lagu geliyey sanduuq raacaya tusmada aad dooratay. Qaybaha faa'iidada laguma darin; faa'iidadii hore ma saadaaliso tan mustaqbalka."
 }

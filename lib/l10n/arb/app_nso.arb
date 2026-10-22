@@ -489,10 +489,8 @@
   "digestHint": "Mošupologo o mongwe le o mongwe: ka fao tše o di ratago le photefolio ya gago di sepetšego ka gona bekeng ye e fetilego, le matšatši a dipoelo a a tlago.",
   "benchmarkTitle": "Bapetšwa le S&P 500",
   "benchmarkYours": "Dithekgo tša gago",
-  "benchmarkIndex": "Tšhelete ye e swanago go S&P 500",
   "benchmarkAhead": "Bokaone go feta index ka dintlha tša phesente tše {points}",
   "benchmarkBehind": "Morago ga index ka dintlha tša phesente tše {points}",
-  "benchmarkHint": "Bjalo ka ge eka theko ye nngwe le ye nngwe e beeleditšwe ka letšatši leo go S&P 500 index fund. Ga go akaretšwe letseno la dišere; dipoelo tša nakong ye e fetilego ga di bolele tša ka moso.",
   "portfolioSell": "Rekiša",
   "portfolioSellTitle": "Rekiša {symbol}",
   "portfolioSellPrice": "Theko ya go rekiša ka šere ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol}: dividende e letetšwego lehono",
   "dividendReminderBody": "Mo e ka bago {amount}. E rekote potefoliong ya gago ge e fihla.",
   "dividendRemindersTitle": "Dikgopotšo tša dividende",
-  "dividendRemindersSubtitle": "Tsebišo ka letšatši leo dividende e letetšwego ka lona go ya ka morethetho wa ditefelo tše o di rekotilego, gore o kgone go e rekota"
+  "dividendRemindersSubtitle": "Tsebišo ka letšatši leo dividende e letetšwego ka lona go ya ka morethetho wa ditefelo tše o di rekotilego, gore o kgone go e rekota",
+  "benchmarkTitleIndex": "Bapetšwa le index",
+  "benchmarkHintIndex": "Bjalo ka ge eka theko ye nngwe le ye nngwe ya gago e tsentšwe ka letšatši leo ka sekhwameng se se latelago index ye o e kgethilego. Dividende ga di akaretšwe; dipoelo tša nakong ye e fetilego ga di bontšhe tša ka moso."
 }

@@ -489,10 +489,8 @@
   "digestHint": "Svakog ponedjeljka: kako su se vaši favoriti i portfelj kretali prošlog tjedna te njihovi nadolazeći datumi rezultata.",
   "benchmarkTitle": "Usporedba sa S&P 500",
   "benchmarkYours": "Vaše kupnje",
-  "benchmarkIndex": "Isti iznosi u S&P 500",
   "benchmarkAhead": "{points} postotnih bodova bolje od indeksa",
   "benchmarkBehind": "{points} postotnih bodova iza indeksa",
-  "benchmarkHint": "Kao da je svaka kupnja istoga dana uložena u indeksni fond S&P 500. Bez dividendi; prošli prinosi ne predviđaju buduće.",
   "portfolioSell": "Prodaj",
   "portfolioSellTitle": "Prodaj {symbol}",
   "portfolioSellPrice": "Prodajna cijena po dionici ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol}: dividenda se očekuje danas",
   "dividendReminderBody": "Oko {amount}. Evidentirajte je u portfelju kada stigne.",
   "dividendRemindersTitle": "Podsjetnici na dividende",
-  "dividendRemindersSubtitle": "Obavijest na dan kada se prema ritmu vaših evidentiranih isplata očekuje dividenda, kako biste je mogli evidentirati"
+  "dividendRemindersSubtitle": "Obavijest na dan kada se prema ritmu vaših evidentiranih isplata očekuje dividenda, kako biste je mogli evidentirati",
+  "benchmarkTitleIndex": "Usporedba s indeksom",
+  "benchmarkHintIndex": "Kao da je svaka kupnja istoga dana uložena u fond koji prati odabrani indeks. Bez dividendi; prošli prinosi ne predviđaju buduće."
 }

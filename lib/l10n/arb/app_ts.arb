@@ -489,10 +489,8 @@
   "digestHint": "Musumbuluko wun'wana ni wun'wana: ndlela leyi leswi u swi rhandzaka ni phothifoliyo ya wena swi fambeke ha yona evhikini leyi hundzeke, ni masiku lama taka ya mbuyelo wa swona.",
   "benchmarkTitle": "Loko ku pimanisiwa na S&P 500",
   "benchmarkYours": "Leswi u swi xaveke",
-  "benchmarkIndex": "Mali leyi fanaka eka S&P 500",
   "benchmarkAhead": "Swi antswa ku tlula index hi tiphoyinti ta phesente ta {points}",
   "benchmarkBehind": "Endzhaku ka index hi tiphoyinti ta phesente ta {points}",
-  "benchmarkHint": "Onge mali ya xixavo xin'wana na xin'wana yi vekiwile eka S&P 500 index fund hi siku rero. A swi katsi mbuyelo wa swiavelo; mbuyelo wa khale a wu vhumbhi wa nkarhi lowu taka.",
   "portfolioSell": "Xavisa",
   "portfolioSellTitle": "Xavisa {symbol}",
   "portfolioSellPrice": "Nxavo wo xavisa hi xere ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol}: dividende leyi languteriweke namuntlha",
   "dividendReminderBody": "Kwalomu ka {amount}. Yi tsale eka phothifoliyo ya wena loko yi fika.",
   "dividendRemindersTitle": "Swotsundzuxo swa dividende",
-  "dividendRemindersSubtitle": "Xitiviso hi siku leri dividende yi languteriweke ha rona hi ku ya hi ndlela ya tihakelo leti u ti tsaleke, leswaku u kota ku yi tsala"
+  "dividendRemindersSubtitle": "Xitiviso hi siku leri dividende yi languteriweke ha rona hi ku ya hi ndlela ya tihakelo leti u ti tsaleke, leswaku u kota ku yi tsala",
+  "benchmarkTitleIndex": "Loko ku pimanisiwa na index",
+  "benchmarkHintIndex": "Onge xin'wana ni xin'wana lexi u xi xaveke xi nghenisiwile siku rero eka nkwama lowu landzelaka index leyi u yi hlawuleke. Dividende a yi katsiwanga; mbuyelo wa khale a wu vuli wa vumundzuku."
 }

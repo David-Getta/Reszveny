@@ -489,10 +489,8 @@
   "digestHint": "Kowace Litinin: yadda abubuwan da ka fi so da jakar hannun jarinka suka motsa a makon da ya gabata, da kwanakin sakamakonsu masu zuwa.",
   "benchmarkTitle": "Kwatanta da S&P 500",
   "benchmarkYours": "Siyayyarka",
-  "benchmarkIndex": "Kuɗi ɗaya a S&P 500",
   "benchmarkAhead": "Ya fi ma'auni da maki kashi {points}",
   "benchmarkBehind": "Ya gaza ma'auni da maki kashi {points}",
-  "benchmarkHint": "Kamar an saka kuɗin kowace siyayya a asusun ma'aunin S&P 500 a rana ɗaya. Ba a haɗa rabon riba ba; ribar da ta gabata ba ta hasashen ta gaba.",
   "portfolioSell": "Sayar",
   "portfolioSellTitle": "Sayar da {symbol}",
   "portfolioSellPrice": "Farashin sayarwa na kowane hannun jari ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "Ana sa ran rabon ribar {symbol} yau",
   "dividendReminderBody": "Kusan {amount}. Rubuta shi a fayil ɗinka da zarar ya iso.",
   "dividendRemindersTitle": "Tunatarwar rabon riba",
-  "dividendRemindersSubtitle": "Sanarwa a ranar da ake sa ran rabon riba bisa tsarin biyan da ka rubuta, don ka rubuta shi"
+  "dividendRemindersSubtitle": "Sanarwa a ranar da ake sa ran rabon riba bisa tsarin biyan da ka rubuta, don ka rubuta shi",
+  "benchmarkTitleIndex": "Kwatanta da ma'auni",
+  "benchmarkHintIndex": "Kamar an saka kuɗin kowace siyayya a asusun da ke bin ma'aunin da aka zaɓa a rana ɗaya. Ba a haɗa rabon riba ba; ribar da ta gabata ba ta hasashen ta gaba."
 }

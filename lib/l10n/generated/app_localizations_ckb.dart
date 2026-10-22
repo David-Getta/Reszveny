@@ -1821,10 +1821,14 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get benchmarkTitle => 'بەراورد لەگەڵ S&P 500';
 
   @override
-  String get benchmarkYours => 'کڕینەکانت';
+  String get benchmarkTitleIndex => 'بەراورد لەگەڵ ئیندێکسێک';
 
   @override
-  String get benchmarkIndex => 'هەمان بڕ لە S&P 500';
+  String get benchmarkHintIndex =>
+      'وەک ئەوەی هەر کڕینێک لە هەمان ڕۆژدا لە سندوقێک وەبەرهێنرابێت کە شوێن ئیندێکسی هەڵبژێردراو دەکەوێت. قازانجی پشک لەخۆناگرێت؛ گەڕانەوەی ڕابردوو پێشبینی داهاتوو ناکات.';
+
+  @override
+  String get benchmarkYours => 'کڕینەکانت';
 
   @override
   String benchmarkAhead(String points) {
@@ -1835,10 +1839,6 @@ class AppLocalizationsCkb extends AppLocalizations {
   String benchmarkBehind(String points) {
     return '$points خاڵی سەدی لە دوای ئیندێکسەکەیە';
   }
-
-  @override
-  String get benchmarkHint =>
-      'وەک ئەوەی هەر کڕینێک لە هەمان ڕۆژدا لە سندوقێکی ئیندێکسی S&P 500 وەبەرهێنرابێت. قازانجی پشک لەخۆناگرێت؛ گەڕانەوەی ڕابردوو پێشبینی داهاتوو ناکات.';
 
   @override
   String get portfolioSell => 'فرۆشتن';

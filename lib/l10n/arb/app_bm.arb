@@ -489,10 +489,8 @@
   "digestHint": "Ntɛnɛn o ntɛnɛn: i ka diyanyelenw ni i ka aksiyɔn kɛsu tun bɛ cogo min dɔgɔkun tɛmɛnen na, ani u ka jatebɔ don nataw.",
   "benchmarkTitle": "Ni S&P 500 sanga",
   "benchmarkYours": "I ka sanniw",
-  "benchmarkIndex": "Wari kelen in S&P 500 kɔnɔ",
   "benchmarkAhead": "Ka fisa ni indɛkisi ye ni pursantazi pwɛn {points} ye",
   "benchmarkBehind": "Ka dɔgɔ ni indɛkisi ye ni pursantazi pwɛn {points} ye",
-  "benchmarkHint": "I n'a fɔ i ka sanni kelen kelen bɛɛ wari donna S&P 500 indɛkisi fɔn na o don kelen in. Tɔnɔ tilalenw ma jate; tɛmɛnen tɔnɔ tɛ nata tɔnɔ fɔ ka kɔn.",
   "portfolioSell": "Feere",
   "portfolioSellTitle": "{symbol} feere",
   "portfolioSellPrice": "Aksiyɔn kelen feereli sɔngɔ ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol} ka dividandi bɛ makɔnɔ bi",
   "dividendReminderBody": "{amount} ɲɔgɔn. N'a sera, a sɛbɛn i ka portfolio la.",
   "dividendRemindersTitle": "Dividandi hakilijiginw",
-  "dividendRemindersSubtitle": "Kunnafoni dividandi makɔnɔnen don, ka da i ka sarali sɛbɛnnenw taamacogo kan, walasa i k'a sɛbɛn"
+  "dividendRemindersSubtitle": "Kunnafoni dividandi makɔnɔnen don, ka da i ka sarali sɛbɛnnenw taamacogo kan, walasa i k'a sɛbɛn",
+  "benchmarkTitleIndex": "Ni indɛkisi dɔ sanga",
+  "benchmarkHintIndex": "I n'a fɔ i ka sanni kelen kelen bɛɛ wari donna fɔn dɔ la min bɛ i ka indɛkisi sugandilen tugu o don kelen in. Tɔnɔ tilalenw ma jate; tɛmɛnen tɔnɔ tɛ nata tɔnɔ fɔ ka kɔn."
 }

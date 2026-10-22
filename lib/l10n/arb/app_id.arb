@@ -489,10 +489,8 @@
   "digestHint": "Setiap Senin: pergerakan favorit dan portofolio Anda minggu lalu, serta jadwal laporan kuartalan mendatang.",
   "benchmarkTitle": "Dibandingkan dengan S&P 500",
   "benchmarkYours": "Pembelian Anda",
-  "benchmarkIndex": "Jumlah sama di S&P 500",
   "benchmarkAhead": "{points} poin persentase lebih baik dari indeks",
   "benchmarkBehind": "{points} poin persentase di bawah indeks",
-  "benchmarkHint": "Seolah setiap pembelian diinvestasikan ke reksa dana indeks S&P 500 pada hari yang sama. Tanpa dividen; imbal hasil masa lalu tidak memprediksi imbal hasil masa depan.",
   "portfolioSell": "Jual",
   "portfolioSellTitle": "Jual {symbol}",
   "portfolioSellPrice": "Harga jual per saham ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "Dividen {symbol} diperkirakan hari ini",
   "dividendReminderBody": "Sekitar {amount}. Catat di portofolio Anda setelah diterima.",
   "dividendRemindersTitle": "Pengingat dividen",
-  "dividendRemindersSubtitle": "Notifikasi pada hari dividen diperkirakan tiba berdasarkan pola pembayaran yang Anda catat, agar Anda dapat mencatatnya"
+  "dividendRemindersSubtitle": "Notifikasi pada hari dividen diperkirakan tiba berdasarkan pola pembayaran yang Anda catat, agar Anda dapat mencatatnya",
+  "benchmarkTitleIndex": "Dibandingkan dengan indeks",
+  "benchmarkHintIndex": "Seolah setiap pembelian diinvestasikan ke reksa dana yang mengikuti indeks pilihan pada hari yang sama. Tanpa dividen; imbal hasil masa lalu tidak memprediksi imbal hasil masa depan."
 }

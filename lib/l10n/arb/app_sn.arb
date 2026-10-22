@@ -489,10 +489,8 @@
   "digestHint": "Muvhuro wega wega: mafambiro akaita zvaunofarira nepotiforiyo yako vhiki rapfuura, nemazuva anotevera emhedzisiro yazvo.",
   "benchmarkTitle": "Kuenzaniswa neS&P 500",
   "benchmarkYours": "Zvawakatenga",
-  "benchmarkIndex": "Mari imwe chete muS&P 500",
   "benchmarkAhead": "Zvirinani pane index nemapoinzi epasenti {points}",
   "benchmarkBehind": "Kumashure kwe index nemapoinzi epasenti {points}",
-  "benchmarkHint": "Sekunge mari yechinhu chimwe nechimwe chawakatenga yakaiswa muS&P 500 index fund pazuva rimwe chete iroro. Madividend haana kuverengerwa; purofiti yakare haifanotauri yeramangwana.",
   "portfolioSell": "Tengesa",
   "portfolioSellTitle": "Tengesa {symbol}",
   "portfolioSellPrice": "Mutengo wekutengesa pasheya ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol}: dividendi inotarisirwa nhasi",
   "dividendReminderBody": "Inenge {amount}. Inyore mupotiforiyo yako kana yasvika.",
   "dividendRemindersTitle": "Zviyeuchidzo zvedividendi",
-  "dividendRemindersSubtitle": "Chiziviso pazuva rinotarisirwa dividendi zvichienderana nemaitiro emibhadharo yawakanyora, kuti uinyore"
+  "dividendRemindersSubtitle": "Chiziviso pazuva rinotarisirwa dividendi zvichienderana nemaitiro emibhadharo yawakanyora, kuti uinyore",
+  "benchmarkTitleIndex": "Kuenzaniswa neindex",
+  "benchmarkHintIndex": "Sekunge chese chawakatenga chakaiswa zuva iroro muhomwe yemari inotevera index yawasarudza. Dhividhendi hadzisanganisirwi; purofiti dzakapfuura hadzifanotaure dzeramangwana."
 }

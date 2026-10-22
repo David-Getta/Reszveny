@@ -489,10 +489,8 @@
   "digestHint": "Njalo ngoMsombuluko: ukuthi izintandokazi zakho nephothifoliyo yakho kuhambe kanjani ngesonto eledlule, nezinsuku ezizayo zemiphumela yazo.",
   "benchmarkTitle": "Uma kuqhathaniswa ne-S&P 500",
   "benchmarkYours": "Okuthengile",
-  "benchmarkIndex": "Imali efanayo ku-S&P 500",
   "benchmarkAhead": "Ngcono kune-index ngamaphuzu amaphesenti angu-{points}",
   "benchmarkBehind": "Ngemuva kwe-index ngamaphuzu amaphesenti angu-{points}",
-  "benchmarkHint": "Kungathi imali yokuthenga ngakunye ityalwe esikhwameni se-index se-S&P 500 ngalolo suku. Izabelo azifakiwe; imbuyiselo yesikhathi esedlule ayibikezeli eyesikhathi esizayo.",
   "portfolioSell": "Thengisa",
   "portfolioSellTitle": "Thengisa {symbol}",
   "portfolioSellPrice": "Intengo yokuthengisa yesheya ngalinye ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol}: isabelo senzuzo esilindelekile namuhla",
   "dividendReminderBody": "Cishe {amount}. Sirekhode kuphothifoliyo yakho uma sesifikile.",
   "dividendRemindersTitle": "Izikhumbuzi zesabelo senzuzo",
-  "dividendRemindersSubtitle": "Isaziso ngosuku isabelo senzuzo esilindeleke ngalo ngokwesigqi sezinkokhelo ozirekhodile, ukuze usirekhode"
+  "dividendRemindersSubtitle": "Isaziso ngosuku isabelo senzuzo esilindeleke ngalo ngokwesigqi sezinkokhelo ozirekhodile, ukuze usirekhode",
+  "benchmarkTitleIndex": "Uma kuqhathaniswa ne-index",
+  "benchmarkHintIndex": "Kungathi konke okuthengile kufakwe ngalolo suku esikhwameni semali esilandela i-index oyikhethile. Ama-dividend awafakiwe; imbuyiselo yangaphambilini ayibikezeli ezizayo."
 }

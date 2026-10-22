@@ -489,10 +489,8 @@
   "digestHint": "Buri wa mbere: ingene ivyo ukunda n'ishoramari ryawe vyagenze mu ndwi iheze, n'amatariki y'ivyavuye mu gihembwe biri imbere.",
   "benchmarkTitle": "Ugereranije na S&P 500",
   "benchmarkYours": "Ivyo waguze",
-  "benchmarkIndex": "Amahera angana muri S&P 500",
   "benchmarkAhead": "Iruta index ku manota y'ijana {points}",
   "benchmarkBehind": "Iri inyuma ya index ku manota y'ijana {points}",
-  "benchmarkHint": "Nk'aho amahera ya buri kiguzi yashowe muri S&P 500 index fund uwo musi nyene. Inyungu zigabanywa ntizirimwo; inyungu zo hambere ntiziraguza izo muri kazoza.",
   "portfolioSell": "Gurisha",
   "portfolioSellTitle": "Gurisha {symbol}",
   "portfolioSellPrice": "Igiciro co kugurisha buri mugabane ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol}: idividende yitezwe uyu munsi",
   "dividendReminderBody": "Hafi {amount}. Niyashika, uyandike muri portfolio yawe.",
   "dividendRemindersTitle": "Kwibutswa idividende",
-  "dividendRemindersSubtitle": "Imenyesha ku munsi idividende yitezwe hisunzwe ingene ivyishurwa wanditse bigenda, kugira ngo uyandike"
+  "dividendRemindersSubtitle": "Imenyesha ku munsi idividende yitezwe hisunzwe ingene ivyishurwa wanditse bigenda, kugira ngo uyandike",
+  "benchmarkTitleIndex": "Ugereranije na index",
+  "benchmarkHintIndex": "Nk'aho ico waguze cose cashizwe uwo musi nyene mu kigega gikurikira index wahisemwo. Inyungu ku migabane ntizirimwo; inyungu zahise ntizerekana izizoza."
 }

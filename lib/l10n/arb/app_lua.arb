@@ -489,10 +489,8 @@
   "digestHint": "Dituku dionso dia kumpala dia lumingu: mudi biudi musue ne portefeuille webe bienze mu lumingu luakapita, ne matuku a mapeta alualua.",
   "benchmarkTitle": "Kufuanyikija ne S&P 500",
   "benchmarkYours": "Bintu biuvua musumbe",
-  "benchmarkIndex": "Makuta amue mu S&P 500",
   "benchmarkAhead": "Bimpe kupita indice ku ma points a pourcentage {points}",
   "benchmarkBehind": "Panyima pa indice ku ma points a pourcentage {points}",
-  "benchmarkHint": "Bu muvua makuta a tshintu tshionso tshiuvua musumbe muteke mu fonds indiciel wa S&P 500 dituku dimue adi. Ma dividendes kaena mu bualu; bipeta bia kale kabiena bileja bia matuku atshilualua to.",
   "portfolioSell": "Sumbisha",
   "portfolioSellTitle": "Sumbisha {symbol}",
   "portfolioSellPrice": "Mushinga wa kusumbisha action umue ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "Dividende wa {symbol} idi mitekemene lelu",
   "dividendReminderBody": "Pabuipi ne {amount}. Yifunde mu portefeuille webe padiyi ifika.",
   "dividendRemindersTitle": "Bivuluija bia dividende",
-  "dividendRemindersSubtitle": "Dimanyisha dituku didi dividende mitekemene bilondeshile mushindu wa mfutu iwakafunda, bua wewe kuyifunda"
+  "dividendRemindersSubtitle": "Dimanyisha dituku didi dividende mitekemene bilondeshile mushindu wa mfutu iwakafunda, bua wewe kuyifunda",
+  "benchmarkTitleIndex": "Kufuanyikija ne indice",
+  "benchmarkHintIndex": "Bu muvua makuta a tshintu tshionso tshiuvua musumbe muteke mu fonds udi ulonda indice uvua musungule dituku dimue adi. Ma dividendes kaena mu bualu; bipeta bia kale kabiena bileja bia matuku atshilualua to."
 }

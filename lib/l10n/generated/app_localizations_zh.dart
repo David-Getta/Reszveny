@@ -1747,10 +1747,13 @@ class AppLocalizationsZh extends AppLocalizations {
   String get benchmarkTitle => '与 S&P 500 对比';
 
   @override
-  String get benchmarkYours => '您的买入';
+  String get benchmarkTitleIndex => '与指数对比';
 
   @override
-  String get benchmarkIndex => '同等金额买入 S&P 500';
+  String get benchmarkHintIndex => '假设每笔买入都在当天投入跟踪所选指数的基金。不含股息；过往回报不代表未来表现。';
+
+  @override
+  String get benchmarkYours => '您的买入';
 
   @override
   String benchmarkAhead(String points) {
@@ -1761,9 +1764,6 @@ class AppLocalizationsZh extends AppLocalizations {
   String benchmarkBehind(String points) {
     return '比指数低 $points 个百分点';
   }
-
-  @override
-  String get benchmarkHint => '假设每笔买入金额在同一天投入 S&P 500 指数基金。不含股息；过往收益不代表未来收益。';
 
   @override
   String get portfolioSell => '卖出';
@@ -4533,10 +4533,13 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String get benchmarkTitle => '與 S&P 500 比較';
 
   @override
-  String get benchmarkYours => '你的買入';
+  String get benchmarkTitleIndex => '與指數比較';
 
   @override
-  String get benchmarkIndex => '同等金額買入 S&P 500';
+  String get benchmarkHintIndex => '假設每筆買入都在同日投入追蹤所選指數的基金。不包括股息；過往回報並不預示未來表現。';
+
+  @override
+  String get benchmarkYours => '你的買入';
 
   @override
   String benchmarkAhead(String points) {
@@ -4547,9 +4550,6 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String benchmarkBehind(String points) {
     return '比指數低 $points 個百分點';
   }
-
-  @override
-  String get benchmarkHint => '假設每筆買入金額於同一天投入 S&P 500 指數基金。不包括股息；過往回報不代表將來回報。';
 
   @override
   String get portfolioSell => '賣出';

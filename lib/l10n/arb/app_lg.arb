@@ -489,10 +489,8 @@
   "digestHint": "Buli Mmande: engeri by'oyagala n'emigabo gyo gye byatambulamu wiiki ewedde, n'ennaku z'ebivudde mu kitundu ky'omwaka ebijja.",
   "benchmarkTitle": "Okugeraageranya ne S&P 500",
   "benchmarkYours": "By'wagula",
-  "benchmarkIndex": "Ssente ze zimu mu S&P 500",
   "benchmarkAhead": "Kisinga index ebitundu ku kikumi {points}",
   "benchmarkBehind": "Kiri emabega wa index ebitundu ku kikumi {points}",
-  "benchmarkHint": "Nga buli kye wagula ssente zaakyo zaateekebwa mu S&P 500 index fund ku lunaku lwe lumu. Amagoba agagabanyizibwa tegazingiddwamu; amagoba ag'emabega tegalagula ag'omu maaso.",
   "portfolioSell": "Tunda",
   "portfolioSellTitle": "Tunda {symbol}",
   "portfolioSellPrice": "Ebbeeyi y'okutunda buli mugabo ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "Dividendi ya {symbol} esuubirwa leero",
   "dividendReminderBody": "Nga {amount}. Giwandiike mu portfolio yo ng'etuuse.",
   "dividendRemindersTitle": "Okujjukiza ku dividendi",
-  "dividendRemindersSubtitle": "Obubaka ku lunaku dividendi lw'esuubirwa okusinziira ku nkola y'ensasula z'owandiise, osobole okugiwandiika"
+  "dividendRemindersSubtitle": "Obubaka ku lunaku dividendi lw'esuubirwa okusinziira ku nkola y'ensasula z'owandiise, osobole okugiwandiika",
+  "benchmarkTitleIndex": "Okugeraageranya ne index",
+  "benchmarkHintIndex": "Nga buli kye wagula ssente zaakyo zaateekebwa mu fund egoberera index gy'olonze ku lunaku lwe lumu. Amagoba agagabanyizibwa tegazingiddwamu; amagoba ag'emabega tegalagula ag'omu maaso."
 }

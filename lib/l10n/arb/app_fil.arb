@@ -489,10 +489,8 @@
   "digestHint": "Tuwing Lunes: kung paano gumalaw ang iyong mga paborito at portfolio noong nakaraang linggo, at ang kanilang mga paparating na petsa ng resulta.",
   "benchmarkTitle": "Kumpara sa S&P 500",
   "benchmarkYours": "Iyong mga binili",
-  "benchmarkIndex": "Parehong halaga sa S&P 500",
   "benchmarkAhead": "{points} percentage point na mas mahusay kaysa sa index",
   "benchmarkBehind": "{points} percentage point na mas mababa sa index",
-  "benchmarkHint": "Na para bang inilagay ang bawat binili sa isang S&P 500 index fund sa parehong araw. Hindi kasama ang dibidendo; hindi hinuhulaan ng nakaraang kita ang hinaharap.",
   "portfolioSell": "Ibenta",
   "portfolioSellTitle": "Ibenta ang {symbol}",
   "portfolioSellPrice": "Presyo ng pagbenta bawat share ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "Inaasahan ngayon ang dibidendo ng {symbol}",
   "dividendReminderBody": "Mga {amount}. Itala ito sa iyong portfolio kapag dumating na.",
   "dividendRemindersTitle": "Mga paalala sa dibidendo",
-  "dividendRemindersSubtitle": "Isang notification sa araw na inaasahan ang dibidendo batay sa ritmo ng iyong mga naitalang bayad, para maitala mo ito"
+  "dividendRemindersSubtitle": "Isang notification sa araw na inaasahan ang dibidendo batay sa ritmo ng iyong mga naitalang bayad, para maitala mo ito",
+  "benchmarkTitleIndex": "Kumpara sa isang index",
+  "benchmarkHintIndex": "Na para bang inilagay ang bawat binili sa isang fund na sumusunod sa napiling index sa parehong araw. Hindi kasama ang dibidendo; hindi hinuhulaan ng nakaraang kita ang hinaharap."
 }

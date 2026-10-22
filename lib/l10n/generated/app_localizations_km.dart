@@ -1804,10 +1804,14 @@ class AppLocalizationsKm extends AppLocalizations {
   String get benchmarkTitle => 'ប្រៀបធៀបជាមួយ S&P 500';
 
   @override
-  String get benchmarkYours => 'ការទិញរបស់អ្នក';
+  String get benchmarkTitleIndex => 'ប្រៀបធៀបជាមួយសន្ទស្សន៍មួយ';
 
   @override
-  String get benchmarkIndex => 'ចំនួនដូចគ្នាក្នុង S&P 500';
+  String get benchmarkHintIndex =>
+      'ដូចជាការទិញនីមួយៗត្រូវបានវិនិយោគក្នុងមូលនិធិដែលតាមដានសន្ទស្សន៍ដែលបានជ្រើសរើស នៅថ្ងៃដដែល។ មិនរាប់បញ្ចូលភាគលាភ; ផលចំណេញកន្លងមកមិនព្យាករណ៍ផលចំណេញនាពេលអនាគតទេ។';
+
+  @override
+  String get benchmarkYours => 'ការទិញរបស់អ្នក';
 
   @override
   String benchmarkAhead(String points) {
@@ -1818,10 +1822,6 @@ class AppLocalizationsKm extends AppLocalizations {
   String benchmarkBehind(String points) {
     return 'ទាបជាងសន្ទស្សន៍ $points ពិន្ទុភាគរយ';
   }
-
-  @override
-  String get benchmarkHint =>
-      'ដូចជាការទិញនីមួយៗត្រូវបានវិនិយោគក្នុងមូលនិធិសន្ទស្សន៍ S&P 500 នៅថ្ងៃដដែល។ មិនរាប់បញ្ចូលភាគលាភ; ផលចំណេញកន្លងមកមិនព្យាករណ៍ផលចំណេញនាពេលអនាគតទេ។';
 
   @override
   String get portfolioSell => 'លក់';

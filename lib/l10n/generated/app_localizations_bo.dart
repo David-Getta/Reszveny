@@ -1812,10 +1812,14 @@ class AppLocalizationsBo extends AppLocalizations {
   String get benchmarkTitle => 'S&P 500 དང་བསྡུར་བ།';
 
   @override
-  String get benchmarkYours => 'ཁྱེད་ཀྱི་ཉོ་ཚོང་།';
+  String get benchmarkTitleIndex => 'སྟོན་གྲངས་ཤིག་དང་བསྡུར་བ།';
 
   @override
-  String get benchmarkIndex => 'དངུལ་གྲངས་གཅིག་པ་ S&P 500 ནང་།';
+  String get benchmarkHintIndex =>
+      'ཉོ་ཚོང་རེ་རེའི་དངུལ་ཉིན་གཅིག་པར་བདམས་པའི་སྟོན་གྲངས་ཀྱི་རྗེས་སུ་འབྲང་བའི་མ་དངུལ་ཞིག་ནང་མ་འཇོག་བྱས་པ་ལྟར། ཁེ་བགོས་མི་ཚུད། སྔོན་གྱི་ཁེ་སྤོགས་ཀྱིས་མ་འོངས་པའི་ཁེ་སྤོགས་སྔོན་དཔག་མི་བྱེད།';
+
+  @override
+  String get benchmarkYours => 'ཁྱེད་ཀྱི་ཉོ་ཚོང་།';
 
   @override
   String benchmarkAhead(String points) {
@@ -1826,10 +1830,6 @@ class AppLocalizationsBo extends AppLocalizations {
   String benchmarkBehind(String points) {
     return 'སྟོན་གྲངས་ལས་བརྒྱ་ཆའི་ཚག་ $points རྗེས་ལུས།';
   }
-
-  @override
-  String get benchmarkHint =>
-      'ཉོ་ཚོང་རེ་རེའི་དངུལ་ཉིན་གཅིག་པར་ S&P 500 སྟོན་གྲངས་མ་དངུལ་ནང་མ་འཇོག་བྱས་པ་ལྟར། ཁེ་བགོས་མི་ཚུད། སྔོན་གྱི་ཁེ་སྤོགས་ཀྱིས་མ་འོངས་པའི་ཁེ་སྤོགས་སྔོན་དཔག་མི་བྱེད།';
 
   @override
   String get portfolioSell => 'འཚོང';

@@ -489,10 +489,8 @@
   "digestHint": "Saben Senin: obahé favorit lan portofolio sampeyan minggu kepungkur, uga tanggal laporan kuartalan sing bakal teka.",
   "benchmarkTitle": "Dibandhingake karo S&P 500",
   "benchmarkYours": "Tumbasan sampeyan",
-  "benchmarkIndex": "Jumlah padha ing S&P 500",
   "benchmarkAhead": "{points} poin persentase luwih apik tinimbang indeks",
   "benchmarkBehind": "{points} poin persentase ing ngisor indeks",
-  "benchmarkHint": "Kaya-kaya saben tumbasan diinvestasekake menyang reksa dana indeks S&P 500 ing dina sing padha. Tanpa dividen; asil kepungkur ora bisa kanggo ngramal asil ing mbesuk.",
   "portfolioSell": "Dol",
   "portfolioSellTitle": "Dol {symbol}",
   "portfolioSellPrice": "Rega dodolan saben saham ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "Dividen {symbol} dikarepake dina iki",
   "dividendReminderBody": "Kira-kira {amount}. Cathet ing portofolio sampeyan yen wis teka.",
   "dividendRemindersTitle": "Pangéling dividen",
-  "dividendRemindersSubtitle": "Notifikasi ing dina dividen dikarepake miturut pola pambayaran sing sampeyan cathet, supaya sampeyan bisa nyathet"
+  "dividendRemindersSubtitle": "Notifikasi ing dina dividen dikarepake miturut pola pambayaran sing sampeyan cathet, supaya sampeyan bisa nyathet",
+  "benchmarkTitleIndex": "Dibandhingake karo indeks",
+  "benchmarkHintIndex": "Kaya-kaya saben tumbasan diinvestasekake menyang reksa dana sing ngetutake indeks pilihan ing dina sing padha. Tanpa dividen; asil kepungkur ora bisa kanggo ngramal asil ing mbesuk."
 }

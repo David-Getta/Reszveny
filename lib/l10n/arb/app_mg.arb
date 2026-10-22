@@ -489,10 +489,8 @@
   "digestHint": "Isaky ny alatsinainy: ny fivoaran'ny ankafizinao sy ny kitapom-bolanao tamin'ny herinandro lasa, ary ny daty hivoahan'ny vokatra manaraka.",
   "benchmarkTitle": "Ampitahaina amin'ny S&P 500",
   "benchmarkYours": "Ny novidinao",
-  "benchmarkIndex": "Vola mitovy amin'ny S&P 500",
   "benchmarkAhead": "Mihoatra ny index {points} isa isan-jato",
   "benchmarkBehind": "Ambany noho ny index {points} isa isan-jato",
-  "benchmarkHint": "Toy ny hoe napetraka tao amin'ny tahirim-bola index S&P 500 tamin'io andro io ihany ny vidin'ny fividianana tsirairay. Tsy tafiditra ny dividende; ny tombony taloha tsy maminavina ny ho avy.",
   "portfolioSell": "Amidy",
   "portfolioSellTitle": "Amidy ny {symbol}",
   "portfolioSellPrice": "Vidim-pivarotana isaky ny aksiona ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol}: dividandy andrasana anio",
   "dividendReminderBody": "Manodidina ny {amount}. Raketo ao amin'ny portfolio-nao izany rehefa tonga.",
   "dividendRemindersTitle": "Fampahatsiahivana dividandy",
-  "dividendRemindersSubtitle": "Fampandrenesana amin'ny andro andrasana dividandy araka ny fiverimberenan'ny fandoavana noraketinao, mba hahafahanao mirakitra azy"
+  "dividendRemindersSubtitle": "Fampandrenesana amin'ny andro andrasana dividandy araka ny fiverimberenan'ny fandoavana noraketinao, mba hahafahanao mirakitra azy",
+  "benchmarkTitleIndex": "Ampitahaina amin'ny index iray",
+  "benchmarkHintIndex": "Toy ny hoe napetraka tamin'io andro io ihany tao amin'ny tahiry manaraka ny index voafidy ny novidinao tsirairay. Tsy tafiditra ny dividenda; ny tombony lasa dia tsy maminavina ny ho avy."
 }

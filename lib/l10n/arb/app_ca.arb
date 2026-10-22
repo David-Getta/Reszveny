@@ -489,10 +489,8 @@
   "digestHint": "Cada dilluns: com s'han mogut els teus favorits i la teva cartera la setmana passada, i les properes dates de resultats.",
   "benchmarkTitle": "Comparat amb l'S&P 500",
   "benchmarkYours": "Les teves compres",
-  "benchmarkIndex": "Mateixos imports a l'S&P 500",
   "benchmarkAhead": "{points} punts percentuals millor que l'índex",
   "benchmarkBehind": "{points} punts percentuals per sota de l'índex",
-  "benchmarkHint": "Com si cada compra s'hagués invertit el mateix dia en un fons indexat a l'S&P 500. Sense dividends; les rendibilitats passades no prediuen les futures.",
   "portfolioSell": "Ven",
   "portfolioSellTitle": "Ven {symbol}",
   "portfolioSellPrice": "Preu de venda per acció ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "Dividend de {symbol} previst avui",
   "dividendReminderBody": "Uns {amount}. Registra'l a la teva cartera quan arribi.",
   "dividendRemindersTitle": "Recordatoris de dividends",
-  "dividendRemindersSubtitle": "Una notificació el dia que s'espera un dividend segons el ritme dels pagaments que has registrat, perquè el puguis registrar"
+  "dividendRemindersSubtitle": "Una notificació el dia que s'espera un dividend segons el ritme dels pagaments que has registrat, perquè el puguis registrar",
+  "benchmarkTitleIndex": "Comparat amb un índex",
+  "benchmarkHintIndex": "Com si cada compra s'hagués invertit el mateix dia en un fons que replica l'índex triat. Sense dividends; les rendibilitats passades no prediuen les futures."
 }

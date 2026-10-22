@@ -1824,10 +1824,14 @@ class AppLocalizationsUg extends AppLocalizations {
   String get benchmarkTitle => 'S&P 500 بىلەن سېلىشتۇرۇش';
 
   @override
-  String get benchmarkYours => 'سېتىۋالغانلىرىڭىز';
+  String get benchmarkTitleIndex => 'كۆرسەتكۈچ بىلەن سېلىشتۇرۇش';
 
   @override
-  String get benchmarkIndex => 'ئوخشاش سومما S&P 500 دە';
+  String get benchmarkHintIndex =>
+      'خۇددى ھەربىر سېتىۋېلىشىڭىز شۇ كۈنىلا تاللانغان كۆرسەتكۈچكە ئەگىشىدىغان فوندقا سېلىنغاندەك. پايدا ئۈلۈشى ئۆز ئىچىگە ئېلىنمىغان؛ ئۆتمۈشتىكى پايدا كەلگۈسىنى مۆلچەرلىمەيدۇ.';
+
+  @override
+  String get benchmarkYours => 'سېتىۋالغانلىرىڭىز';
 
   @override
   String benchmarkAhead(String points) {
@@ -1838,10 +1842,6 @@ class AppLocalizationsUg extends AppLocalizations {
   String benchmarkBehind(String points) {
     return 'كۆرسەتكۈچتىن $points پىرسەنت نۇقتا ئارقىدا';
   }
-
-  @override
-  String get benchmarkHint =>
-      'خۇددى ھەر بىر سېتىۋېلىش شۇ كۈنىلا S&P 500 كۆرسەتكۈچ فوندىغا سېلىنغاندەك. پايدا ئۈلۈشى ھېسابلانمىغان؛ ئۆتمۈشتىكى پايدا كەلگۈسىنى ئالدىن بەلگىلىمەيدۇ.';
 
   @override
   String get portfolioSell => 'سېتىش';

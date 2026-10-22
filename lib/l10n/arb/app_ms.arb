@@ -489,10 +489,8 @@
   "digestHint": "Setiap Isnin: pergerakan kegemaran dan portfolio anda minggu lalu, serta tarikh keputusan suku tahunan yang akan datang.",
   "benchmarkTitle": "Berbanding S&P 500",
   "benchmarkYours": "Belian anda",
-  "benchmarkIndex": "Jumlah sama dalam S&P 500",
   "benchmarkAhead": "{points} mata peratusan lebih baik daripada indeks",
   "benchmarkBehind": "{points} mata peratusan di belakang indeks",
-  "benchmarkHint": "Seolah-olah setiap belian dilaburkan dalam dana indeks S&P 500 pada hari yang sama. Tidak termasuk dividen; pulangan lalu tidak meramalkan pulangan masa depan.",
   "portfolioSell": "Jual",
   "portfolioSellTitle": "Jual {symbol}",
   "portfolioSellPrice": "Harga jualan sesaham ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "Dividen {symbol} dijangka hari ini",
   "dividendReminderBody": "Kira-kira {amount}. Rekodkannya dalam portfolio anda sebaik sahaja ia diterima.",
   "dividendRemindersTitle": "Peringatan dividen",
-  "dividendRemindersSubtitle": "Pemberitahuan pada hari dividen dijangka berdasarkan rentak pembayaran yang anda rekodkan, supaya anda boleh merekodkannya"
+  "dividendRemindersSubtitle": "Pemberitahuan pada hari dividen dijangka berdasarkan rentak pembayaran yang anda rekodkan, supaya anda boleh merekodkannya",
+  "benchmarkTitleIndex": "Berbanding indeks",
+  "benchmarkHintIndex": "Seolah-olah setiap belian anda dimasukkan ke dalam dana yang menjejaki indeks pilihan pada hari yang sama. Dividen tidak termasuk; pulangan lalu tidak meramalkan pulangan masa hadapan."
 }

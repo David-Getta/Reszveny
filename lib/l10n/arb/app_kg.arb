@@ -489,10 +489,8 @@
   "digestHint": "Konso Kilumbu ya ntete: mutindu bizolwa na nge ye portefeuille na nge kusalaka na mposo yina me luta, ye bilumbu ya ba résultats yina ke kwisa.",
   "benchmarkTitle": "Kufwanikisa ti S&P 500",
   "benchmarkYours": "Bima nge sumbaka",
-  "benchmarkIndex": "Mbongo mosi na S&P 500",
   "benchmarkAhead": "Mbote kuluta indice na ba point ya pourcentage {points}",
   "benchmarkBehind": "Na nima ya indice na ba point ya pourcentage {points}",
-  "benchmarkHint": "Bonso nde mbongo ya konso kisumbu tulamaka na fonds indiciel S&P 500 na kilumbu yina mosi. Ba dividende kele ve; mbote ya ntama ke songa ve ya ntangu ke kwisa.",
   "portfolioSell": "Teka",
   "portfolioSellTitle": "Teka {symbol}",
   "portfolioSellPrice": "Ntalu ya kuteka action mosi ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "Dividende ya {symbol} bo ke vingila yo bubu",
   "dividendReminderBody": "Pene-pene {amount}. Sonika yo na portefeuille na nge kana yo me kwisa.",
   "dividendRemindersTitle": "Kiyibusu ya dividende",
-  "dividendRemindersSubtitle": "Nkebisu na kilumbu yina bo ke vingila dividende na kutadila mutindu ya ba futa yina nge sonikaka, sambu nge sonika yo"
+  "dividendRemindersSubtitle": "Nkebisu na kilumbu yina bo ke vingila dividende na kutadila mutindu ya ba futa yina nge sonikaka, sambu nge sonika yo",
+  "benchmarkTitleIndex": "Kufwanikisa ti indice mosi",
+  "benchmarkHintIndex": "Bonso nde mbongo ya konso kisumbu tulamaka na fonds yina ke landa indice ya nge sola na kilumbu yina mosi. Ba dividende kele ve; mbote ya ntama ke songa ve ya ntangu ke kwisa."
 }

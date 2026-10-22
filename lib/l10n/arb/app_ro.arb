@@ -489,10 +489,8 @@
   "digestHint": "În fiecare luni: cum au evoluat favoritele și portofoliul tău săptămâna trecută și datele viitoare ale rezultatelor lor.",
   "benchmarkTitle": "Comparație cu S&P 500",
   "benchmarkYours": "Achizițiile tale",
-  "benchmarkIndex": "Aceleași sume în S&P 500",
   "benchmarkAhead": "Cu {points} puncte procentuale peste indice",
   "benchmarkBehind": "Cu {points} puncte procentuale sub indice",
-  "benchmarkHint": "Ca și cum fiecare achiziție ar fi fost investită în aceeași zi într-un fond indexat pe S&P 500. Fără dividende; randamentele trecute nu prezic randamentele viitoare.",
   "portfolioSell": "Vinde",
   "portfolioSellTitle": "Vinde {symbol}",
   "portfolioSellPrice": "Preț de vânzare pe acțiune ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol}: dividend așteptat azi",
   "dividendReminderBody": "Aproximativ {amount}. Înregistrează-l în portofoliu când ajunge.",
   "dividendRemindersTitle": "Mementouri pentru dividende",
-  "dividendRemindersSubtitle": "O notificare în ziua în care e așteptat un dividend, după ritmul plăților înregistrate de tine, ca să-l poți înregistra"
+  "dividendRemindersSubtitle": "O notificare în ziua în care e așteptat un dividend, după ritmul plăților înregistrate de tine, ca să-l poți înregistra",
+  "benchmarkTitleIndex": "Comparație cu un indice",
+  "benchmarkHintIndex": "Ca și cum fiecare achiziție ar fi fost investită în aceeași zi într-un fond care urmărește indicele ales. Fără dividende; randamentele trecute nu prezic randamentele viitoare."
 }

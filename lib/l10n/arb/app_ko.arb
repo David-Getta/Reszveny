@@ -489,10 +489,8 @@
   "digestHint": "매주 월요일: 지난주 즐겨찾기와 포트폴리오의 움직임, 그리고 다가오는 실적 발표일을 알려 드립니다.",
   "benchmarkTitle": "S&P 500과 비교",
   "benchmarkYours": "내 매수",
-  "benchmarkIndex": "같은 금액을 S&P 500에",
   "benchmarkAhead": "지수보다 {points}%p 높음",
   "benchmarkBehind": "지수보다 {points}%p 낮음",
-  "benchmarkHint": "각 매수 금액을 같은 날 S&P 500 인덱스 펀드에 투자했다고 가정한 결과입니다. 배당금 제외. 과거 수익률이 미래 수익률을 보장하지 않습니다.",
   "portfolioSell": "매도",
   "portfolioSellTitle": "{symbol} 매도",
   "portfolioSellPrice": "주당 매도 가격({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol} 오늘 배당금 입금 예상",
   "dividendReminderBody": "약 {amount}. 입금되면 포트폴리오에 기록하세요.",
   "dividendRemindersTitle": "배당금 알림",
-  "dividendRemindersSubtitle": "기록한 배당 내역의 주기를 바탕으로 배당금이 예상되는 날 알려 드려 바로 기록할 수 있습니다"
+  "dividendRemindersSubtitle": "기록한 배당 내역의 주기를 바탕으로 배당금이 예상되는 날 알려 드려 바로 기록할 수 있습니다",
+  "benchmarkTitleIndex": "지수와 비교",
+  "benchmarkHintIndex": "각 매수 금액을 같은 날 선택한 지수를 추종하는 펀드에 투자했다고 가정한 결과입니다. 배당금 제외. 과거 수익률이 미래 수익률을 보장하지 않습니다."
 }

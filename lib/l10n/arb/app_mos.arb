@@ -489,10 +489,8 @@
   "digestHint": "Tɛnen fãa: a nong-n-yɩɩda la a portfey sẽn kẽng to-to semen sẽn loogã, la b ligd-yɛla rasem nins sẽn watã.",
   "benchmarkTitle": "Makr ne S&P 500",
   "benchmarkYours": "Bũmb ning f sẽn da",
-  "benchmarkIndex": "Ligd a yembr S&P 500 pʋgẽ",
   "benchmarkAhead": "Yɩɩda indɛks wã ne pursantaaz poẽn {points}",
   "benchmarkBehind": "Be indɛks wã poorẽ ne pursantaaz poẽn {points}",
-  "benchmarkHint": "Wa f sẽn da bũmb fãa ligdã ra kẽe S&P 500 indɛks fõon pʋgẽ rasem kãng zug bal. Dividand ka be ye; yʋʋm sẽn loogã yõod pa wilgd beoog yõod ye.",
   "portfolioSell": "Koose",
   "portfolioSellTitle": "Koose {symbol}",
   "portfolioSellPrice": "Aksiõ fãa koosg ligdi ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol}: dividand sẽn gũud rũndã",
   "dividendReminderBody": "Wa {amount}. A sã n ta, gʋls-a f portfolio wã pʋgẽ.",
   "dividendRemindersTitle": "Dividand tẽegre",
-  "dividendRemindersSubtitle": "Gũusgu daar ning dividand sẽn gũud, b sẽn geelg ne f sẽn gʋls yaoodã, tɩ f tõe n gʋls-a"
+  "dividendRemindersSubtitle": "Gũusgu daar ning dividand sẽn gũud, b sẽn geelg ne f sẽn gʋls yaoodã, tɩ f tõe n gʋls-a",
+  "benchmarkTitleIndex": "Makr ne indɛks a yembre",
+  "benchmarkHintIndex": "Wa f bũmb ning f sẽn da fãa ra kẽe ligd-koglg sẽn pʋgd indɛks ning f sẽn yãk wã, raar kãng menga. Dividãnd pa be ye; pĩnd yɩɩbã pa wilgd beoog yɩɩbã ye."
 }

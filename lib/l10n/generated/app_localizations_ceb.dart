@@ -1831,10 +1831,14 @@ class AppLocalizationsCeb extends AppLocalizations {
   String get benchmarkTitle => 'Itandi sa S&P 500';
 
   @override
-  String get benchmarkYours => 'Imong mga gipalit';
+  String get benchmarkTitleIndex => 'Itandi sa usa ka index';
 
   @override
-  String get benchmarkIndex => 'Parehas nga kantidad sa S&P 500';
+  String get benchmarkHintIndex =>
+      'Ingon nga ang matag palit gibutang sa usa ka fund nga nagsunod sa gipiling index sa samang adlaw. Wala giapil ang dibidendo; ang nangaging kita dili magtagna sa umaabot.';
+
+  @override
+  String get benchmarkYours => 'Imong mga gipalit';
 
   @override
   String benchmarkAhead(String points) {
@@ -1845,10 +1849,6 @@ class AppLocalizationsCeb extends AppLocalizations {
   String benchmarkBehind(String points) {
     return '$points ka percentage point nga ubos sa index';
   }
-
-  @override
-  String get benchmarkHint =>
-      'Ingon nga ang matag palit gibutang sa usa ka S&P 500 index fund sa samang adlaw. Wala giapil ang dibidendo; ang nangaging kita dili magtagna sa umaabot.';
 
   @override
   String get portfolioSell => 'Ibaligya';

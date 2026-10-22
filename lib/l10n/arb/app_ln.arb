@@ -489,10 +489,8 @@
   "digestHint": "Mokolo ya yambo nyonso: ndenge oyo olingaka mpe portefeuille na yo etambolaki na pɔsɔ eleki, mpe mikolo ya ba résultats oyo ezali koya.",
   "benchmarkTitle": "Kokokanisa na S&P 500",
   "benchmarkYours": "Biloko osombaki",
-  "benchmarkIndex": "Mbɔngɔ moko na S&P 500",
   "benchmarkAhead": "Eleki indice na ba points ya pourcentage {points}",
   "benchmarkBehind": "Ezali nsima ya indice na ba points ya pourcentage {points}",
-  "benchmarkHint": "Lokola mbɔngɔ ya esombeli moko na moko etiamaki na fonds indiciel S&P 500 na mokolo yango moko. Ba dividendes ezali te; matomba ya kala elakisaka te oyo ya mikolo ezali koya.",
   "portfolioSell": "Teka",
   "portfolioSellTitle": "Teka {symbol}",
   "portfolioSellPrice": "Ntalo ya koteka action moko ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "Dividende ya {symbol} ezelami lelo",
   "dividendReminderBody": "Pene na {amount}. Koma yango na portefeuille na yo soki ekomi.",
   "dividendRemindersTitle": "Bokundolisi ya dividende",
-  "dividendRemindersSubtitle": "Liyebisi na mokolo oyo dividende ezelami engebene na ndenge ba futa oyo okomaki eyaka, mpo okoka kokoma yango"
+  "dividendRemindersSubtitle": "Liyebisi na mokolo oyo dividende ezelami engebene na ndenge ba futa oyo okomaki eyaka, mpo okoka kokoma yango",
+  "benchmarkTitleIndex": "Kokokanisa na indice moko",
+  "benchmarkHintIndex": "Lokola mbɔngɔ ya esombeli moko na moko etiamaki na fonds oyo elandaka indice oyo oponi na mokolo yango moko. Ba dividendes ezali te; matomba ya kala elakisaka te oyo ya mikolo ezali koya."
 }

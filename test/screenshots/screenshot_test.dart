@@ -763,6 +763,13 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.byKey(const ValueKey('portfolio-top3')), findsOneWidget);
     await _shot(tester, 'portfolio_risk_phone_hu');
+    // Index-összevetés: a Nasdaq 100 választva.
+    final qqq = find.byKey(const ValueKey('benchmark-QQQ'));
+    await Scrollable.ensureVisible(tester.element(qqq), alignment: 0.4);
+    await tester.pumpAndSettle();
+    await tester.tap(qqq);
+    await tester.pumpAndSettle();
+    await _shot(tester, 'portfolio_benchmark_phone_hu');
   });
 
   testWidgets('home with the „while you were away” card on a phone (hungarian)', (tester) async {

@@ -489,10 +489,8 @@
   "digestHint": "Jeden Montag: wie sich deine Favoriten und dein Portfolio letzte Woche entwickelt haben und ihre nächsten Termine für Quartalszahlen.",
   "benchmarkTitle": "Im Vergleich zum S&P 500",
   "benchmarkYours": "Deine Käufe",
-  "benchmarkIndex": "Gleiche Beträge im S&P 500",
   "benchmarkAhead": "{points} Prozentpunkte besser als der Index",
   "benchmarkBehind": "{points} Prozentpunkte hinter dem Index",
-  "benchmarkHint": "Als wäre jeder Kauf am selben Tag in einen Indexfonds auf den S&P 500 geflossen. Ohne Dividenden; vergangene Renditen sagen keine zukünftigen voraus.",
   "portfolioSell": "Verkaufen",
   "portfolioSellTitle": "{symbol} verkaufen",
   "portfolioSellPrice": "Verkaufspreis pro Aktie ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "Dividende von {symbol} heute erwartet",
   "dividendReminderBody": "Etwa {amount}. Erfasse sie in deinem Portfolio, sobald sie eingeht.",
   "dividendRemindersTitle": "Erinnerung an Dividenden",
-  "dividendRemindersSubtitle": "Eine Benachrichtigung am Tag, an dem nach dem Rhythmus deiner erfassten Zahlungen eine Dividende erwartet wird, damit du sie erfassen kannst"
+  "dividendRemindersSubtitle": "Eine Benachrichtigung am Tag, an dem nach dem Rhythmus deiner erfassten Zahlungen eine Dividende erwartet wird, damit du sie erfassen kannst",
+  "benchmarkTitleIndex": "Im Vergleich zu einem Index",
+  "benchmarkHintIndex": "Als wäre jeder Kauf am selben Tag in einen Fonds geflossen, der den gewählten Index abbildet. Ohne Dividenden; vergangene Renditen sagen keine zukünftigen voraus."
 }

@@ -1837,10 +1837,14 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get benchmarkTitle => 'Naikompara iti S&P 500';
 
   @override
-  String get benchmarkYours => 'Dagiti ginatangmo';
+  String get benchmarkTitleIndex => 'Naikompara iti maysa nga index';
 
   @override
-  String get benchmarkIndex => 'Isu met laeng a gatad iti S&P 500';
+  String get benchmarkHintIndex =>
+      'Kasla la naipuonan ti tunggal gatang iti fund a mangsurot iti napili nga index iti isu met laeng nga aldaw. Saan a nairaman ti dibidendo; saan a mangipakpakita ti napalabas a ganansia iti masakbayan.';
+
+  @override
+  String get benchmarkYours => 'Dagiti ginatangmo';
 
   @override
   String benchmarkAhead(String points) {
@@ -1851,10 +1855,6 @@ class AppLocalizationsIlo extends AppLocalizations {
   String benchmarkBehind(String points) {
     return '$points a percentage point a nababbaba ngem ti index';
   }
-
-  @override
-  String get benchmarkHint =>
-      'Kasla la naipuonan ti tunggal gatang iti S&P 500 index fund iti isu met laeng nga aldaw. Saan a nairaman ti dibidendo; saan a mangipakpakita ti napalabas a ganansia iti masakbayan.';
 
   @override
   String get portfolioSell => 'Ilako';

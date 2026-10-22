@@ -489,10 +489,8 @@
   "digestHint": "هره دوشنبه: ستاسو خوښې او پورټفولیو تېره اوونۍ څنګه وخوځېدل، او د هغوی د راتلونکو پایلو نېټې.",
   "benchmarkTitle": "د S&P 500 سره پرتله",
   "benchmarkYours": "ستاسو پېرودنې",
-  "benchmarkIndex": "همدا اندازه په S&P 500 کې",
   "benchmarkAhead": "له شاخص څخه {points} سلنه ټکي ښه",
   "benchmarkBehind": "له شاخص څخه {points} سلنه ټکي وروسته",
-  "benchmarkHint": "لکه هره پېرودنه چې په همغه ورځ د S&P 500 شاخص فنډ کې پانګونه شوې وي. ګټه‌وېش نه دی شامل؛ تېره ګټه د راتلونکې ګټې وړاندوینه نه کوي.",
   "portfolioSell": "وپلورئ",
   "portfolioSellTitle": "{symbol} وپلورئ",
   "portfolioSellPrice": "د هرې ونډې د پلور بیه ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "د {symbol} ډیویډنډ نن تمه کېږي",
   "dividendReminderBody": "شاوخوا {amount}. کله چې ورسېږي، په خپل پورټفولیو کې یې ثبت کړئ.",
   "dividendRemindersTitle": "د ډیویډنډ یادونې",
-  "dividendRemindersSubtitle": "ستاسو د ثبت شویو تادیاتو د ریتم له مخې د ډیویډنډ د تمې په ورځ خبرتیا، څو یې ثبت کړای شئ"
+  "dividendRemindersSubtitle": "ستاسو د ثبت شویو تادیاتو د ریتم له مخې د ډیویډنډ د تمې په ورځ خبرتیا، څو یې ثبت کړای شئ",
+  "benchmarkTitleIndex": "د یوه شاخص سره پرتله",
+  "benchmarkHintIndex": "لکه ستاسو هره پېرودنه چې په همغه ورځ د ټاکل شوي شاخص تعقیبوونکي فنډ ته تللې وي. د ونډې ګټه پکې نه ده شامله؛ تېرې ګټې د راتلونکو وړاندوینه نه کوي."
 }

@@ -489,10 +489,8 @@
   "digestHint": "Kila Jumatatu: jinsi vipendwa vyako na jalada lako la hisa vilivyoenda wiki iliyopita, na tarehe zijazo za matokeo yao.",
   "benchmarkTitle": "Ikilinganishwa na S&P 500",
   "benchmarkYours": "Ununuzi wako",
-  "benchmarkIndex": "Kiasi sawa katika S&P 500",
   "benchmarkAhead": "Bora kuliko fahirisi kwa pointi {points} za asilimia",
   "benchmarkBehind": "Nyuma ya fahirisi kwa pointi {points} za asilimia",
-  "benchmarkHint": "Kana kwamba kila ununuzi uliwekezwa katika mfuko wa fahirisi wa S&P 500 siku hiyo hiyo. Gawio halijajumuishwa; mapato ya zamani hayatabiri ya baadaye.",
   "portfolioSell": "Uza",
   "portfolioSellTitle": "Uza {symbol}",
   "portfolioSellPrice": "Bei ya kuuza kwa kila hisa ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol}: gawio linalotarajiwa leo",
   "dividendReminderBody": "Takriban {amount}. Lirekodi kwenye jalada lako likishafika.",
   "dividendRemindersTitle": "Vikumbusho vya gawio",
-  "dividendRemindersSubtitle": "Arifa siku ambayo gawio linatarajiwa kulingana na mwenendo wa malipo uliyorekodi, ili uweze kulirekodi"
+  "dividendRemindersSubtitle": "Arifa siku ambayo gawio linatarajiwa kulingana na mwenendo wa malipo uliyorekodi, ili uweze kulirekodi",
+  "benchmarkTitleIndex": "Ikilinganishwa na fahirisi",
+  "benchmarkHintIndex": "Kana kwamba kila ununuzi wako uliwekwa siku hiyo hiyo kwenye mfuko unaofuata fahirisi uliyochagua. Gawio halijajumuishwa; faida za zamani hazitabiri za baadaye."
 }

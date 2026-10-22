@@ -489,10 +489,8 @@
   "digestHint": "Kada Lunes: kon paano naghulag ang imo mga paborito kag portfolio sang nagligad nga semana, kag ang ila masunod nga mga petsa sang resulta.",
   "benchmarkTitle": "Kumparar sa S&P 500",
   "benchmarkYours": "Imo mga ginbakal",
-  "benchmarkIndex": "Pareho nga kantidad sa S&P 500",
   "benchmarkAhead": "{points} ka percentage point nga mas maayo sang sa index",
   "benchmarkBehind": "{points} ka percentage point nga kubos sa index",
-  "benchmarkHint": "Subong nga ang kada bakal gin-invest sa isa ka S&P 500 index fund sa amo man nga adlaw. Wala labot ang dibidendo; ang nagligad nga ganansya indi nagatagna sang palaabuton.",
   "portfolioSell": "Ibaligya",
   "portfolioSellTitle": "Ibaligya ang {symbol}",
   "portfolioSellPrice": "Presyo sang pagbaligya kada share ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "Ginapaabot subong ang dibidendo sang {symbol}",
   "dividendReminderBody": "Mga {amount}. Irekord ini sa imo portfolio kon mag-abot na.",
   "dividendRemindersTitle": "Mga pahanumdom sa dibidendo",
-  "dividendRemindersSubtitle": "Pahibalo sa adlaw nga ginapaabot ang dibidendo suno sa ritmo sang imo narekord nga mga bayad, agod marekord mo ini"
+  "dividendRemindersSubtitle": "Pahibalo sa adlaw nga ginapaabot ang dibidendo suno sa ritmo sang imo narekord nga mga bayad, agod marekord mo ini",
+  "benchmarkTitleIndex": "Kumparar sa isa ka index",
+  "benchmarkHintIndex": "Subong nga ang kada bakal gin-invest sa isa ka fund nga nagasunod sa ginpili nga index sa amo man nga adlaw. Wala labot ang dibidendo; ang nagligad nga ganansya indi nagatagna sang palaabuton."
 }

@@ -489,10 +489,8 @@
   "digestHint": "Unggal Senén: kumaha obahna paporit jeung portofolio anjeun minggu kamari, sarta tanggal laporan kuartalan nu bakal datang.",
   "benchmarkTitle": "Dibandingkeun jeung S&P 500",
   "benchmarkYours": "Pameser anjeun",
-  "benchmarkIndex": "Jumlah sarua dina S&P 500",
   "benchmarkAhead": "{points} poin persentase leuwih alus batan indéks",
   "benchmarkBehind": "{points} poin persentase katinggaleun ku indéks",
-  "benchmarkHint": "Saolah-olah unggal pameser diinvestasikeun kana reksa dana indéks S&P 500 dina poé nu sarua. Tanpa dividen; hasil baheula henteu ngaramal hasil ka hareup.",
   "portfolioSell": "Jual",
   "portfolioSellTitle": "Jual {symbol}",
   "portfolioSellPrice": "Harga jual per saham ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "Dividen {symbol} diperkirakeun poé ieu",
   "dividendReminderBody": "Kira-kira {amount}. Catet dina portofolio anjeun upami parantos lebet.",
   "dividendRemindersTitle": "Panginget dividen",
-  "dividendRemindersSubtitle": "Béwara dina poé dividen diperkirakeun dumasar kana wirahma pamayaran anu anjeun catet, supados anjeun tiasa nyatetna"
+  "dividendRemindersSubtitle": "Béwara dina poé dividen diperkirakeun dumasar kana wirahma pamayaran anu anjeun catet, supados anjeun tiasa nyatetna",
+  "benchmarkTitleIndex": "Dibandingkeun jeung indéks",
+  "benchmarkHintIndex": "Saolah-olah unggal pameser anjeun diasupkeun dina poé anu sarua ka dana anu nuturkeun indéks anu dipilih. Dividén teu kaasup; hasil ti tukang henteu ngaramal hasil ka hareup."
 }

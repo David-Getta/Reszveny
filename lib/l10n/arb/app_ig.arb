@@ -489,10 +489,8 @@
   "digestHint": "Mọnde ọ bụla: otú ọkacha mmasị gị na portfolio gị si gaa n'izu gara aga, na ụbọchị nsonaazụ ha na-abịa.",
   "benchmarkTitle": "Atụnyere S&P 500",
   "benchmarkYours": "Ihe ị zụrụ",
-  "benchmarkIndex": "Otu ego ahụ na S&P 500",
   "benchmarkAhead": "Ka ndeksi mma site na pasentị {points}",
   "benchmarkBehind": "Nọ n'azụ ndeksi site na pasentị {points}",
-  "benchmarkHint": "Dị ka a ga-asị na etinyere ego nke ọ bụla ịzụrụ n'ego ndeksi S&P 500 n'otu ụbọchị ahụ. Etinyeghị dividend; uru gara aga anaghị ebu amụma uru ga-abịa.",
   "portfolioSell": "Ree",
   "portfolioSellTitle": "Ree {symbol}",
   "portfolioSellPrice": "Ọnụahịa ire kwa share ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "A na-atụ anya nkesa uru {symbol} taa",
   "dividendReminderBody": "Ihe dị ka {amount}. Dekọọ ya na pọtfolio gị ozugbo ọ bịarutere.",
   "dividendRemindersTitle": "Ncheta nkesa uru",
-  "dividendRemindersSubtitle": "Ọkwa n'ụbọchị a na-atụ anya nkesa uru dịka usoro ụgwọ ị dekọrọ si dị, ka i wee dekọọ ya"
+  "dividendRemindersSubtitle": "Ọkwa n'ụbọchị a na-atụ anya nkesa uru dịka usoro ụgwọ ị dekọrọ si dị, ka i wee dekọọ ya",
+  "benchmarkTitleIndex": "Atụnyere otu ndeksi",
+  "benchmarkHintIndex": "Dị ka a ga-asị na etinyere ego nke ọ bụla ịzụrụ n'ego na-eso ndeksi a họọrọ n'otu ụbọchị ahụ. Etinyeghị dividend; uru gara aga anaghị ebu amụma uru ga-abịa."
 }

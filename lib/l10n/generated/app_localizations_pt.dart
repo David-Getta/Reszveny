@@ -1827,10 +1827,14 @@ class AppLocalizationsPt extends AppLocalizations {
   String get benchmarkTitle => 'Comparação com o S&P 500';
 
   @override
-  String get benchmarkYours => 'As suas compras';
+  String get benchmarkTitleIndex => 'Comparação com um índice';
 
   @override
-  String get benchmarkIndex => 'Mesmos montantes no S&P 500';
+  String get benchmarkHintIndex =>
+      'Como se cada compra tivesse sido investida, no mesmo dia, num fundo que replica o índice escolhido. Dividendos não incluídos; rendibilidades passadas não preveem as futuras.';
+
+  @override
+  String get benchmarkYours => 'As suas compras';
 
   @override
   String benchmarkAhead(String points) {
@@ -1841,10 +1845,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String benchmarkBehind(String points) {
     return '$points pontos percentuais abaixo do índice';
   }
-
-  @override
-  String get benchmarkHint =>
-      'Como se cada compra tivesse sido investida no mesmo dia num fundo de índice do S&P 500. Sem dividendos; as rentabilidades passadas não preveem as futuras.';
 
   @override
   String get portfolioSell => 'Vender';

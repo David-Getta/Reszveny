@@ -1820,10 +1820,14 @@ class AppLocalizationsMr extends AppLocalizations {
   String get benchmarkTitle => 'S&P 500 शी तुलना';
 
   @override
-  String get benchmarkYours => 'तुमची खरेदी';
+  String get benchmarkTitleIndex => 'एखाद्या निर्देशांकाशी तुलना';
 
   @override
-  String get benchmarkIndex => 'तेवढीच रक्कम S&P 500 मध्ये';
+  String get benchmarkHintIndex =>
+      'जणू तुमची प्रत्येक खरेदी त्याच दिवशी निवडलेल्या निर्देशांकाचा मागोवा घेणाऱ्या फंडात गेली असती. लाभांश समाविष्ट नाही; मागील परतावा भविष्यातील परताव्याचा अंदाज देत नाही.';
+
+  @override
+  String get benchmarkYours => 'तुमची खरेदी';
 
   @override
   String benchmarkAhead(String points) {
@@ -1834,10 +1838,6 @@ class AppLocalizationsMr extends AppLocalizations {
   String benchmarkBehind(String points) {
     return 'निर्देशांकापेक्षा $points टक्केवारी गुण मागे';
   }
-
-  @override
-  String get benchmarkHint =>
-      'जणू प्रत्येक खरेदीची रक्कम त्याच दिवशी S&P 500 इंडेक्स फंडात गुंतवली होती. लाभांश समाविष्ट नाही; मागील परतावा भविष्यातील परताव्याचा अंदाज देत नाही.';
 
   @override
   String get portfolioSell => 'विका';

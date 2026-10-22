@@ -489,10 +489,8 @@
   "digestHint": "Hər bazar ertəsi: seçilmişləriniz və portfeliniz keçən həftə necə dəyişdi və onların qarşıdakı hesabat tarixləri.",
   "benchmarkTitle": "S&P 500 ilə müqayisə",
   "benchmarkYours": "Alışlarınız",
-  "benchmarkIndex": "Eyni məbləğ S&P 500-də",
   "benchmarkAhead": "İndeksdən {points} faiz bəndi yaxşı",
   "benchmarkBehind": "İndeksdən {points} faiz bəndi geri",
-  "benchmarkHint": "Sanki hər alışınız eyni gün S&P 500 indeks fonduna yatırılıb. Dividendlər daxil deyil; keçmiş gəlirlər gələcək gəlirləri proqnozlaşdırmır.",
   "portfolioSell": "Sat",
   "portfolioSellTitle": "{symbol} sat",
   "portfolioSellPrice": "Səhm başına satış qiyməti ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol} üzrə dividend bu gün gözlənilir",
   "dividendReminderBody": "Təxminən {amount}. Daxil olduqda portfelinizdə qeyd edin.",
   "dividendRemindersTitle": "Dividend xatırlatmaları",
-  "dividendRemindersSubtitle": "Qeyd etdiyiniz ödənişlərin ritminə əsasən dividend gözlənilən gün bildiriş ki, onu qeyd edə biləsiniz"
+  "dividendRemindersSubtitle": "Qeyd etdiyiniz ödənişlərin ritminə əsasən dividend gözlənilən gün bildiriş ki, onu qeyd edə biləsiniz",
+  "benchmarkTitleIndex": "İndekslə müqayisə",
+  "benchmarkHintIndex": "Sanki hər alışınız eyni gün seçilmiş indeksi izləyən fonda yatırılıb. Dividendlər daxil deyil; keçmiş gəlirlər gələcək gəlirləri proqnozlaşdırmır."
 }

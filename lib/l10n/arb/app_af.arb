@@ -489,10 +489,8 @@
   "digestHint": "Elke Maandag: hoe jou gunstelinge en portefeulje verlede week beweeg het, en hul komende resultaatdatums.",
   "benchmarkTitle": "Vergeleke met die S&P 500",
   "benchmarkYours": "Jou aankope",
-  "benchmarkIndex": "Dieselfde bedrae in S&P 500",
   "benchmarkAhead": "{points} persentasiepunte beter as die indeks",
   "benchmarkBehind": "{points} persentasiepunte agter die indeks",
-  "benchmarkHint": "Asof elke aankoop op dieselfde dag in 'n S&P 500-indeksfonds belê is. Dividende nie ingesluit nie; vorige opbrengste voorspel nie toekomstige opbrengste nie.",
   "portfolioSell": "Verkoop",
   "portfolioSellTitle": "Verkoop {symbol}",
   "portfolioSellPrice": "Verkoopprys per aandeel ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol} se dividend word vandag verwag",
   "dividendReminderBody": "Sowat {amount}. Teken dit in jou portefeulje aan sodra dit inkom.",
   "dividendRemindersTitle": "Dividendherinneringe",
-  "dividendRemindersSubtitle": "’n Kennisgewing op die dag wanneer ’n dividend volgens die ritme van jou aangetekende betalings verwag word, sodat jy dit kan aanteken"
+  "dividendRemindersSubtitle": "’n Kennisgewing op die dag wanneer ’n dividend volgens die ritme van jou aangetekende betalings verwag word, sodat jy dit kan aanteken",
+  "benchmarkTitleIndex": "Vergeleke met 'n indeks",
+  "benchmarkHintIndex": "Asof elke aankoop op dieselfde dag in 'n fonds belê is wat die gekose indeks volg. Dividende nie ingesluit nie; vorige opbrengste voorspel nie toekomstige opbrengste nie."
 }

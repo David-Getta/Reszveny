@@ -489,10 +489,8 @@
   "digestHint": "Çdo të hënë: si lëvizën të preferuarat dhe portofoli juaj javën e kaluar, si dhe datat e ardhshme të rezultateve të tyre.",
   "benchmarkTitle": "Krahasuar me S&P 500",
   "benchmarkYours": "Blerjet tuaja",
-  "benchmarkIndex": "Të njëjtat shuma në S&P 500",
   "benchmarkAhead": "{points} pikë përqindjeje më mirë se indeksi",
   "benchmarkBehind": "{points} pikë përqindjeje pas indeksit",
-  "benchmarkHint": "Sikur çdo blerje të ishte investuar në një fond indeksi S&P 500 në të njëjtën ditë. Pa dividendë; kthimet e kaluara nuk parashikojnë ato të ardhshme.",
   "portfolioSell": "Shit",
   "portfolioSellTitle": "Shit {symbol}",
   "portfolioSellPrice": "Çmimi i shitjes për aksion ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol}: dividend i pritur sot",
   "dividendReminderBody": "Rreth {amount}. Kur të mbërrijë, regjistrojeni në portofol.",
   "dividendRemindersTitle": "Kujtues për dividendët",
-  "dividendRemindersSubtitle": "Një njoftim në ditën kur pritet një dividend sipas ritmit të pagesave që keni regjistruar, që ta regjistroni"
+  "dividendRemindersSubtitle": "Një njoftim në ditën kur pritet një dividend sipas ritmit të pagesave që keni regjistruar, që ta regjistroni",
+  "benchmarkTitleIndex": "Krahasuar me një indeks",
+  "benchmarkHintIndex": "Sikur çdo blerje të ishte investuar në të njëjtën ditë në një fond që ndjek indeksin e zgjedhur. Pa dividendë; kthimet e kaluara nuk parashikojnë ato të ardhshme."
 }

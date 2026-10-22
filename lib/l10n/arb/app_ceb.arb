@@ -489,10 +489,8 @@
   "digestHint": "Matag Lunes: giunsa paglihok sa imong mga paborito ug portfolio sa miaging semana, ug ang ilang umaabot nga mga petsa sa resulta.",
   "benchmarkTitle": "Itandi sa S&P 500",
   "benchmarkYours": "Imong mga gipalit",
-  "benchmarkIndex": "Parehas nga kantidad sa S&P 500",
   "benchmarkAhead": "{points} ka percentage point nga mas maayo kaysa index",
   "benchmarkBehind": "{points} ka percentage point nga ubos sa index",
-  "benchmarkHint": "Ingon nga ang matag palit gibutang sa usa ka S&P 500 index fund sa samang adlaw. Wala giapil ang dibidendo; ang nangaging kita dili magtagna sa umaabot.",
   "portfolioSell": "Ibaligya",
   "portfolioSellTitle": "Ibaligya ang {symbol}",
   "portfolioSellPrice": "Presyo sa pagbaligya matag share ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "Gipaabot karon ang dibidendo sa {symbol}",
   "dividendReminderBody": "Mga {amount}. Irekord kini sa imong portfolio kung moabot na.",
   "dividendRemindersTitle": "Mga pahinumdom sa dibidendo",
-  "dividendRemindersSubtitle": "Usa ka pahibalo sa adlaw nga gipaabot ang dibidendo sumala sa ritmo sa imong narekord nga mga bayad, aron imo kining marekord"
+  "dividendRemindersSubtitle": "Usa ka pahibalo sa adlaw nga gipaabot ang dibidendo sumala sa ritmo sa imong narekord nga mga bayad, aron imo kining marekord",
+  "benchmarkTitleIndex": "Itandi sa usa ka index",
+  "benchmarkHintIndex": "Ingon nga ang matag palit gibutang sa usa ka fund nga nagsunod sa gipiling index sa samang adlaw. Wala giapil ang dibidendo; ang nangaging kita dili magtagna sa umaabot."
 }

@@ -1820,10 +1820,14 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get benchmarkTitle => 'Compare am with S&P 500';
 
   @override
-  String get benchmarkYours => 'Wetin you buy';
+  String get benchmarkTitleIndex => 'Compare am with one index';
 
   @override
-  String get benchmarkIndex => 'Same moni for S&P 500';
+  String get benchmarkHintIndex =>
+      'Like say everytin wey you buy enter fund wey dey follow di index wey you choose, dat same day. Dividend no dey inside; wetin e gain before no mean say e go gain like dat for future.';
+
+  @override
+  String get benchmarkYours => 'Wetin you buy';
 
   @override
   String benchmarkAhead(String points) {
@@ -1834,10 +1838,6 @@ class AppLocalizationsPcm extends AppLocalizations {
   String benchmarkBehind(String points) {
     return '$points percentage points behind di index';
   }
-
-  @override
-  String get benchmarkHint =>
-      'Like say every moni wey you take buy, you put am for S&P 500 index fund dat same day. Dividend no dey inside; how e perform before no mean say na so e go be for future.';
 
   @override
   String get portfolioSell => 'Sell';

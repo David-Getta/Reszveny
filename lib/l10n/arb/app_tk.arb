@@ -489,10 +489,8 @@
   "digestHint": "Her duşenbe: saýlananlaryňyz we portfeliňiz geçen hepde nähili üýtgedi we olaryň ýakynlaşýan hasabat seneleri.",
   "benchmarkTitle": "S&P 500 bilen deňeşdirme",
   "benchmarkYours": "Satyn alanlaryňyz",
-  "benchmarkIndex": "Şol möçber S&P 500-de",
   "benchmarkAhead": "Indeksden {points} göterim bendi gowy",
   "benchmarkBehind": "Indeksden {points} göterim bendi yzda",
-  "benchmarkHint": "Her satyn alyş şol gün S&P 500 indeks gaznasyna goýlan ýaly. Diwidendsiz; geçmişdäki girdeji geljegi çaklamaýar.",
   "portfolioSell": "Sat",
   "portfolioSellTitle": "{symbol} sat",
   "portfolioSellPrice": "Bir paýnamanyň satuw bahasy ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol}: şu gün diwidend garaşylýar",
   "dividendReminderBody": "Takmynan {amount}. Gelenden soň ony portfeliňize ýazyň.",
   "dividendRemindersTitle": "Diwidend ýatlatmalary",
-  "dividendRemindersSubtitle": "Siziň ýazan tölegleriňiziň yzygiderliligi esasynda diwidend garaşylýan gün, ony ýazmagyňyz üçin duýduryş"
+  "dividendRemindersSubtitle": "Siziň ýazan tölegleriňiziň yzygiderliligi esasynda diwidend garaşylýan gün, ony ýazmagyňyz üçin duýduryş",
+  "benchmarkTitleIndex": "Indeks bilen deňeşdirme",
+  "benchmarkHintIndex": "Edil her satyn alşyňyz şol gün saýlanan indeksi yzarlaýan gazna goýlan ýaly. Diwidendler girizilmedi; geçmişdäki girdeji geljekdäkini çaklamaýar."
 }

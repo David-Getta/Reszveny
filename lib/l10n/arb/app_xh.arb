@@ -489,10 +489,8 @@
   "digestHint": "Rhoqo ngoMvulo: indlela ezithandwayo zakho nepotifoliyo yakho eziye zahamba ngayo kwiveki ephelileyo, kunye nemihla ezayo yeziphumo zazo.",
   "benchmarkTitle": "Xa kuthelekiswa ne-S&P 500",
   "benchmarkYours": "Ozithengileyo",
-  "benchmarkIndex": "Imali efanayo kwi-S&P 500",
   "benchmarkAhead": "Ngcono kune-index ngamanqaku epesenti angama-{points}",
   "benchmarkBehind": "Emva kwe-index ngamanqaku epesenti angama-{points}",
-  "benchmarkHint": "Ngokungathi imali yento nganye oyithengileyo ityalwe kwi-S&P 500 index fund ngaloo mini. Izabelo zengeniso azibandakanywanga; inzuzo yangaphambili ayiqikeleli eyexesha elizayo.",
   "portfolioSell": "Thengisa",
   "portfolioSellTitle": "Thengisa {symbol}",
   "portfolioSellPrice": "Ixabiso lokuthengisa ngesabelo ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol}: isahlulo esilindelekileyo namhlanje",
   "dividendReminderBody": "Malunga ne-{amount}. Sirekhode kwipotifoliyo yakho xa sifikile.",
   "dividendRemindersTitle": "Izikhumbuzi zesahlulo",
-  "dividendRemindersSubtitle": "Isaziso ngosuku isahlulo esilindeleke ngalo ngokwesingqi seentlawulo ozirekhodileyo, ukuze usirekhode"
+  "dividendRemindersSubtitle": "Isaziso ngosuku isahlulo esilindeleke ngalo ngokwesingqi seentlawulo ozirekhodileyo, ukuze usirekhode",
+  "benchmarkTitleIndex": "Xa kuthelekiswa ne-index",
+  "benchmarkHintIndex": "Ngokungathi into nganye oyithengileyo ifakwe ngaloo mini kwingxowa-mali elandela i-index oyikhethileyo. Ii-dividend azibandakanywanga; iingeniso zangaphambili azixeli kwangaphambili ezizayo."
 }

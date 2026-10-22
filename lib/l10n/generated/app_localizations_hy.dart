@@ -1828,10 +1828,14 @@ class AppLocalizationsHy extends AppLocalizations {
   String get benchmarkTitle => 'Համեմատած S&P 500-ի հետ';
 
   @override
-  String get benchmarkYours => 'Ձեր գնումները';
+  String get benchmarkTitleIndex => 'Համեմատած ինդեքսի հետ';
 
   @override
-  String get benchmarkIndex => 'Նույն գումարները S&P 500-ում';
+  String get benchmarkHintIndex =>
+      'Կարծես յուրաքանչյուր գնում նույն օրը ներդրված լիներ ընտրված ինդեքսին հետևող ֆոնդում։ Առանց շահաբաժինների․ անցյալ եկամտաբերությունը չի կանխատեսում ապագան։';
+
+  @override
+  String get benchmarkYours => 'Ձեր գնումները';
 
   @override
   String benchmarkAhead(String points) {
@@ -1842,10 +1846,6 @@ class AppLocalizationsHy extends AppLocalizations {
   String benchmarkBehind(String points) {
     return 'Ինդեքսից $points տոկոսային կետով հետ';
   }
-
-  @override
-  String get benchmarkHint =>
-      'Կարծես յուրաքանչյուր գնում նույն օրը ներդրված լիներ S&P 500 ինդեքսային ֆոնդում։ Առանց շահաբաժինների․ անցյալ եկամտաբերությունը չի կանխատեսում ապագան։';
 
   @override
   String get portfolioSell => 'Վաճառել';

@@ -489,10 +489,8 @@
   "digestHint": "Sapa lunes: munasqaykikuna, portafolioykipas qayna semanapi imayna kuyurirqan, hinallataq hamuq willakuyninkunapa p'unchawninkuna.",
   "benchmarkTitle": "S&P 500-wan tupachisqa",
   "benchmarkYours": "Rantisqaykikuna",
-  "benchmarkIndex": "Kikin qullqi S&P 500-pi",
   "benchmarkAhead": "Índicemanta {points} punto porcentual aswan allin",
   "benchmarkBehind": "Índicemanta {points} punto porcentual qhipapi",
-  "benchmarkHint": "Sapa rantiyniyki qullqin chay p'unchawllataq S&P 500 índice fondopi churasqa kanman hina. Dividendokuna mana yapasqachu; ñawpa gananciaqa mana hamuq gananciata willanchu.",
   "portfolioSell": "Rantikuy",
   "portfolioSellTitle": "{symbol} rantikuy",
   "portfolioSellPrice": "Sapa accionpa rantikusqa chanin ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol}: kunan p'unchaw dividendo suyasqa",
   "dividendReminderBody": "Yaqa {amount}. Chayamuptinqa portafolioykipi qillqay.",
   "dividendRemindersTitle": "Dividendo yuyarichiykuna",
-  "dividendRemindersSubtitle": "Qillqasqayki pagokunap purisqanman hina dividendo suyasqa p'unchawpi willachiy, qillqanaykipaq"
+  "dividendRemindersSubtitle": "Qillqasqayki pagokunap purisqanman hina dividendo suyasqa p'unchawpi willachiy, qillqanaykipaq",
+  "benchmarkTitleIndex": "Huk índicewan tupachisqa",
+  "benchmarkHintIndex": "Sapa rantisqaykita chay punchawllataq akllasqa índiceta qatiq fondoman churasqa hina. Dividendokuna manam yapasqachu; ñawpa gananciakunaqa manam hamuqta willanchu."
 }

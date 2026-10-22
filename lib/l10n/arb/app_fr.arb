@@ -489,10 +489,8 @@
   "digestHint": "Chaque lundi : l'évolution de vos favoris et de votre portefeuille la semaine passée, et leurs prochaines dates de résultats.",
   "benchmarkTitle": "Comparaison avec le S&P 500",
   "benchmarkYours": "Vos achats",
-  "benchmarkIndex": "Mêmes montants dans le S&P 500",
   "benchmarkAhead": "{points} points de pourcentage de mieux que l'indice",
   "benchmarkBehind": "{points} points de pourcentage de retard sur l'indice",
-  "benchmarkHint": "Comme si chaque achat avait été placé le même jour dans un fonds indiciel S&P 500. Hors dividendes ; les performances passées ne préjugent pas des performances futures.",
   "portfolioSell": "Vendre",
   "portfolioSellTitle": "Vendre {symbol}",
   "portfolioSellPrice": "Prix de vente par action ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "Dividende de {symbol} attendu aujourd’hui",
   "dividendReminderBody": "Environ {amount}. Enregistrez-le dans votre portefeuille dès qu’il arrive.",
   "dividendRemindersTitle": "Rappels de dividendes",
-  "dividendRemindersSubtitle": "Une notification le jour où un dividende est attendu d’après le rythme de vos versements enregistrés, pour que vous puissiez l’enregistrer"
+  "dividendRemindersSubtitle": "Une notification le jour où un dividende est attendu d’après le rythme de vos versements enregistrés, pour que vous puissiez l’enregistrer",
+  "benchmarkTitleIndex": "Comparaison avec un indice",
+  "benchmarkHintIndex": "Comme si chaque achat avait été placé le même jour dans un fonds répliquant l'indice choisi. Hors dividendes ; les performances passées ne préjugent pas des performances futures."
 }

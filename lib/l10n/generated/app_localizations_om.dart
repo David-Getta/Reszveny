@@ -1829,10 +1829,14 @@ class AppLocalizationsOm extends AppLocalizations {
   String get benchmarkTitle => 'S&P 500 waliin wal bira qabame';
 
   @override
-  String get benchmarkYours => 'Bittaawwan kee';
+  String get benchmarkTitleIndex => 'Indeeksii tokko waliin wal bira qabame';
 
   @override
-  String get benchmarkIndex => 'Maallaqa walfakkaatu S&P 500 keessatti';
+  String get benchmarkHintIndex =>
+      'Akka waan bittaan kee hundi guyyuma sana fandii indeeksii filatame hordofu keessa galeetti. Qoodni bu\'aa hin hammatamne; bu\'aan darbe kan gara fuulduraa hin raaguu.';
+
+  @override
+  String get benchmarkYours => 'Bittaawwan kee';
 
   @override
   String benchmarkAhead(String points) {
@@ -1843,10 +1847,6 @@ class AppLocalizationsOm extends AppLocalizations {
   String benchmarkBehind(String points) {
     return 'Indeeksii irraa qabxii dhibbeentaa ${points}n duubatti hafe';
   }
-
-  @override
-  String get benchmarkHint =>
-      'Akka waan bittaan hundi guyyuma sana fandii indeeksii S&P 500 keessatti invastii godhameetti. Diviidendii hin dabalatu; bu\'aan darbe bu\'aa gara fuulduraa hin tilmaamu.';
 
   @override
   String get portfolioSell => 'Gurguri';

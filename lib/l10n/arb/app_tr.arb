@@ -489,10 +489,8 @@
   "digestHint": "Her pazartesi: favorilerinizin ve portföyünüzün geçen hafta nasıl hareket ettiği ve yaklaşan bilanço tarihleri.",
   "benchmarkTitle": "S&P 500 ile karşılaştırma",
   "benchmarkYours": "Alımlarınız",
-  "benchmarkIndex": "Aynı tutarlar S&P 500'de",
   "benchmarkAhead": "Endeksten {points} yüzde puan iyi",
   "benchmarkBehind": "Endeksin {points} yüzde puan gerisinde",
-  "benchmarkHint": "Sanki her alım aynı gün bir S&P 500 endeks fonuna yatırılmış gibi. Temettüler dahil değildir; geçmiş getiriler gelecekteki getirileri öngörmez.",
   "portfolioSell": "Sat",
   "portfolioSellTitle": "{symbol} sat",
   "portfolioSellPrice": "Hisse başına satış fiyatı ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol}: bugün temettü bekleniyor",
   "dividendReminderBody": "Yaklaşık {amount}. Geldiğinde portföyünüze kaydedin.",
   "dividendRemindersTitle": "Temettü hatırlatıcıları",
-  "dividendRemindersSubtitle": "Kaydettiğiniz ödemelerin düzenine göre temettü beklenen gün, kaydedebilmeniz için bildirim"
+  "dividendRemindersSubtitle": "Kaydettiğiniz ödemelerin düzenine göre temettü beklenen gün, kaydedebilmeniz için bildirim",
+  "benchmarkTitleIndex": "Bir endeksle karşılaştırma",
+  "benchmarkHintIndex": "Her alımınız aynı gün seçilen endeksi izleyen bir fona yatırılmış gibi. Temettüler dahil değildir; geçmiş getiriler gelecekteki getirileri öngörmez."
 }

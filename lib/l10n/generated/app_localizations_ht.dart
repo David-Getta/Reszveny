@@ -1819,10 +1819,14 @@ class AppLocalizationsHt extends AppLocalizations {
   String get benchmarkTitle => 'Konpare ak S&P 500';
 
   @override
-  String get benchmarkYours => 'Acha ou yo';
+  String get benchmarkTitleIndex => 'Konpare ak yon endèks';
 
   @override
-  String get benchmarkIndex => 'Menm kantite nan S&P 500';
+  String get benchmarkHintIndex =>
+      'Tankou si chak acha te envesti nan yon fon ki swiv endèks ou chwazi a menm jou a. San dividann; rannman pase pa predi rannman nan lavni.';
+
+  @override
+  String get benchmarkYours => 'Acha ou yo';
 
   @override
   String benchmarkAhead(String points) {
@@ -1833,10 +1837,6 @@ class AppLocalizationsHt extends AppLocalizations {
   String benchmarkBehind(String points) {
     return '$points pwen pousantaj dèyè endèks la';
   }
-
-  @override
-  String get benchmarkHint =>
-      'Tankou si chak acha te envesti nan yon fon endèks S&P 500 menm jou a. San dividann; rannman pase pa predi rannman nan lavni.';
 
   @override
   String get portfolioSell => 'Vann';

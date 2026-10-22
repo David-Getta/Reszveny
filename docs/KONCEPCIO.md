@@ -204,7 +204,7 @@ bizonylatot. Részletek: `docs/ELOFIZETES.md`, `server/README.md`.
 | 5x | Portfólió értékalakulása grafikonon (napi záróárakból, a vételek dátumától, a befektetett összeg szintjével); a nagy számok tömören a tengelyen | ✅ kész |
 | 5y | AI-portfólióelemzés: az egész portfólió (koncentráció, szektor-, ország- és devizakitettség, közös kockázatok, osztalék, megfontolandó szempontok) egy rövid elemzésnyi keretért; a legutóbbi a készüléken marad | ✅ kész |
 | 5z | Heti összefoglaló e-mailben (bekapcsolható): hétfő reggel a portfólió és a kedvencek heti mozgása, a friss (45 napon belül zárult) negyedéves eredmények EPS-sel, és a következő két hét gyorsjelentései | ✅ kész |
-| 5aa | Portfólió összevetése az S&P 500-zal: mintha minden vétel összegét aznap indexalapba tetted volna (eladáskor ugyanannyit kivéve) | ✅ kész |
+| 5aa | Portfólió összevetése egy indexszel (S&P 500, Nasdaq 100 vagy Dow Jones – chipekkel választható, megjegyezve): mintha minden vétel összegét aznap indexalapba tetted volna (eladáskor ugyanannyit kivéve) | ✅ kész |
 | 5ab | Eladások rögzítése: FIFO bekerülési érték, realizált nyereség (évenként is, az adóbevalláshoz), lezárt pozíciók; a grafikon, a CSV, a szinkron és a heti e-mail is kezeli | ✅ kész |
 | 5ac | „Új gyorsjelentés” jelzés: ha egy mentett elemzés óta a cég gyorsjelentést tett közzé, a listában jelvény, megnyitáskor a frissítés-kérdés megemlíti | ✅ kész |
 | 5ad | Bróker-exportok importja (Revolut, Trading 212, Interactive Brokers) fájlból is, eladásokkal; osztalék- és befizetéssorok kihagyva, ismételt import nem duplikál | ✅ kész |

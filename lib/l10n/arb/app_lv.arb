@@ -489,10 +489,8 @@
   "digestHint": "Katru pirmdienu: kā pagājušajā nedēļā mainījās jūsu izlase un portfelis, kā arī to tuvākie rezultātu datumi.",
   "benchmarkTitle": "Salīdzinājumā ar S&P 500",
   "benchmarkYours": "Jūsu pirkumi",
-  "benchmarkIndex": "Tās pašas summas S&P 500",
   "benchmarkAhead": "Par {points} procentpunktiem labāk nekā indekss",
   "benchmarkBehind": "Par {points} procentpunktiem atpaliek no indeksa",
-  "benchmarkHint": "It kā katrs pirkums tajā pašā dienā būtu ieguldīts S&P 500 indeksa fondā. Bez dividendēm; pagātnes ienesīgums neparedz nākotnes ienesīgumu.",
   "portfolioSell": "Pārdot",
   "portfolioSellTitle": "Pārdot {symbol}",
   "portfolioSellPrice": "Pārdošanas cena par akciju ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol}: šodien gaidāma dividende",
   "dividendReminderBody": "Apmēram {amount}. Kad tā pienāk, reģistrējiet to savā portfelī.",
   "dividendRemindersTitle": "Atgādinājumi par dividendēm",
-  "dividendRemindersSubtitle": "Paziņojums dienā, kad pēc jūsu reģistrēto maksājumu ritma gaidāma dividende, lai jūs to varētu reģistrēt"
+  "dividendRemindersSubtitle": "Paziņojums dienā, kad pēc jūsu reģistrēto maksājumu ritma gaidāma dividende, lai jūs to varētu reģistrēt",
+  "benchmarkTitleIndex": "Salīdzinājumā ar indeksu",
+  "benchmarkHintIndex": "It kā katrs pirkums tajā pašā dienā būtu ieguldīts fondā, kas seko izvēlētajam indeksam. Bez dividendēm; pagātnes ienesīgums neparedz nākotnes ienesīgumu."
 }

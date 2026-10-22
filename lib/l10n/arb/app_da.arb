@@ -489,10 +489,8 @@
   "digestHint": "Hver mandag: hvordan dine favoritter og din portefølje bevægede sig i sidste uge, og deres kommende regnskabsdatoer.",
   "benchmarkTitle": "Sammenlignet med S&P 500",
   "benchmarkYours": "Dine køb",
-  "benchmarkIndex": "Samme beløb i S&P 500",
   "benchmarkAhead": "{points} procentpoint bedre end indekset",
   "benchmarkBehind": "{points} procentpoint efter indekset",
-  "benchmarkHint": "Som om hvert køb var investeret i en S&P 500-indeksfond samme dag. Udbytte ikke medregnet; tidligere afkast forudsiger ikke fremtidige.",
   "portfolioSell": "Sælg",
   "portfolioSellTitle": "Sælg {symbol}",
   "portfolioSellPrice": "Salgspris pr. aktie ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "Udbytte fra {symbol} forventes i dag",
   "dividendReminderBody": "Ca. {amount}. Registrér det i din portefølje, når det kommer.",
   "dividendRemindersTitle": "Påmindelser om udbytte",
-  "dividendRemindersSubtitle": "En notifikation den dag, et udbytte forventes ud fra rytmen i dine registrerede udbetalinger, så du kan registrere det"
+  "dividendRemindersSubtitle": "En notifikation den dag, et udbytte forventes ud fra rytmen i dine registrerede udbetalinger, så du kan registrere det",
+  "benchmarkTitleIndex": "Sammenlignet med et indeks",
+  "benchmarkHintIndex": "Som om hvert køb var investeret samme dag i en fond, der følger det valgte indeks. Udbytte ikke medregnet; tidligere afkast forudsiger ikke fremtidige."
 }

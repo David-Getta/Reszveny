@@ -489,10 +489,8 @@
   "digestHint": "Har dushanba: sevimlilaringiz va portfelingiz oʻtgan hafta qanday oʻzgargani hamda ularning yaqinlashayotgan hisobot sanalari.",
   "benchmarkTitle": "S&P 500 bilan taqqoslash",
   "benchmarkYours": "Xaridlaringiz",
-  "benchmarkIndex": "Shu summalar S&P 500da",
   "benchmarkAhead": "Indeksdan {points} foiz punkt yaxshiroq",
   "benchmarkBehind": "Indeksdan {points} foiz punkt ortda",
-  "benchmarkHint": "Goʻyo har bir xarid oʻsha kuni S&P 500 indeks fondiga kiritilgandek. Dividendlarsiz; oʻtgan daromad kelajakdagi daromadni bashorat qilmaydi.",
   "portfolioSell": "Sotish",
   "portfolioSellTitle": "{symbol} sotish",
   "portfolioSellPrice": "Bir aksiyaning sotish narxi ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol}: bugun dividend kutilmoqda",
   "dividendReminderBody": "Taxminan {amount}. Kelgach, uni portfelingizga yozib qoʻying.",
   "dividendRemindersTitle": "Dividend eslatmalari",
-  "dividendRemindersSubtitle": "Siz yozgan toʻlovlar maromiga koʻra dividend kutilayotgan kuni, uni yozib qoʻyishingiz uchun bildirishnoma"
+  "dividendRemindersSubtitle": "Siz yozgan toʻlovlar maromiga koʻra dividend kutilayotgan kuni, uni yozib qoʻyishingiz uchun bildirishnoma",
+  "benchmarkTitleIndex": "Indeks bilan taqqoslash",
+  "benchmarkHintIndex": "Goʻyo har bir xaridingiz oʻsha kuniyoq tanlangan indeksni kuzatuvchi fondga kiritilgandek. Dividendlar hisobga olinmagan; oʻtgan daromad kelajakdagisini bashorat qilmaydi."
 }

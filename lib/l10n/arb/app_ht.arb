@@ -489,10 +489,8 @@
   "digestHint": "Chak lendi: kijan favori ou ak pòtfèy ou te mache semèn pase a, ak pwochen dat rezilta yo.",
   "benchmarkTitle": "Konpare ak S&P 500",
   "benchmarkYours": "Acha ou yo",
-  "benchmarkIndex": "Menm kantite nan S&P 500",
   "benchmarkAhead": "{points} pwen pousantaj pi bon pase endèks la",
   "benchmarkBehind": "{points} pwen pousantaj dèyè endèks la",
-  "benchmarkHint": "Tankou si chak acha te envesti nan yon fon endèks S&P 500 menm jou a. San dividann; rannman pase pa predi rannman nan lavni.",
   "portfolioSell": "Vann",
   "portfolioSellTitle": "Vann {symbol}",
   "portfolioSellPrice": "Pri vant pa aksyon ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "Dividann {symbol} yo atann jodi a",
   "dividendReminderBody": "Anviwon {amount}. Anrejistre l nan pòtfolyo w lè l rive.",
   "dividendRemindersTitle": "Rapèl dividann",
-  "dividendRemindersSubtitle": "Yon notifikasyon jou yo atann yon dividann dapre ritm peman ou te anrejistre yo, pou w ka anrejistre l"
+  "dividendRemindersSubtitle": "Yon notifikasyon jou yo atann yon dividann dapre ritm peman ou te anrejistre yo, pou w ka anrejistre l",
+  "benchmarkTitleIndex": "Konpare ak yon endèks",
+  "benchmarkHintIndex": "Tankou si chak acha te envesti nan yon fon ki swiv endèks ou chwazi a menm jou a. San dividann; rannman pase pa predi rannman nan lavni."
 }

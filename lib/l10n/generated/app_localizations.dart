@@ -3307,17 +3307,23 @@ abstract class AppLocalizations {
   /// **'Compared with the S&P 500'**
   String get benchmarkTitle;
 
+  /// Portfolio page, value-history card: title of the comparison of the user's purchases with a chosen stock index (S&P 500, Nasdaq 100 or Dow Jones, picked with chips below).
+  ///
+  /// In en, this message translates to:
+  /// **'Compared with an index'**
+  String get benchmarkTitleIndex;
+
+  /// Portfolio page, value-history card: explanation under the comparison with the chosen index.
+  ///
+  /// In en, this message translates to:
+  /// **'As if each purchase had gone into a fund tracking the chosen index on the same day. Dividends not included; past returns do not predict future ones.'**
+  String get benchmarkHintIndex;
+
   /// Portfolio page, value-history card: comparison of the user's purchases with the S&P 500 index.
   ///
   /// In en, this message translates to:
   /// **'Your purchases'**
   String get benchmarkYours;
-
-  /// Portfolio page, value-history card: comparison of the user's purchases with the S&P 500 index.
-  ///
-  /// In en, this message translates to:
-  /// **'Same amounts in the S&P 500'**
-  String get benchmarkIndex;
 
   /// Portfolio page, value-history card: comparison of the user's purchases with the S&P 500 index.
   ///
@@ -3330,12 +3336,6 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{points} percentage points behind the index'**
   String benchmarkBehind(String points);
-
-  /// Portfolio page, value-history card: comparison of the user's purchases with the S&P 500 index.
-  ///
-  /// In en, this message translates to:
-  /// **'As if each purchase had gone into an S&P 500 index fund on the same day. Dividends not included; past returns do not predict future ones.'**
-  String get benchmarkHint;
 
   /// Button: record a sale of shares in the portfolio.
   ///

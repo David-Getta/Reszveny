@@ -1816,10 +1816,14 @@ class AppLocalizationsVi extends AppLocalizations {
   String get benchmarkTitle => 'So với S&P 500';
 
   @override
-  String get benchmarkYours => 'Khoản mua của bạn';
+  String get benchmarkTitleIndex => 'So với một chỉ số';
 
   @override
-  String get benchmarkIndex => 'Cùng số tiền vào S&P 500';
+  String get benchmarkHintIndex =>
+      'Như thể mỗi khoản mua được đưa vào một quỹ theo dõi chỉ số đã chọn ngay trong ngày đó. Không bao gồm cổ tức; lợi nhuận trong quá khứ không dự báo lợi nhuận tương lai.';
+
+  @override
+  String get benchmarkYours => 'Khoản mua của bạn';
 
   @override
   String benchmarkAhead(String points) {
@@ -1830,10 +1834,6 @@ class AppLocalizationsVi extends AppLocalizations {
   String benchmarkBehind(String points) {
     return 'Thấp hơn chỉ số $points điểm phần trăm';
   }
-
-  @override
-  String get benchmarkHint =>
-      'Như thể mỗi khoản mua được đầu tư vào một quỹ chỉ số S&P 500 trong cùng ngày. Không tính cổ tức; lợi nhuận trong quá khứ không dự báo lợi nhuận tương lai.';
 
   @override
   String get portfolioSell => 'Bán';

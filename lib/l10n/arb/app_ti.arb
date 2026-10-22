@@ -489,10 +489,8 @@
   "digestHint": "ኩሉ ሰኑይ፦ ዝተፈተዉኹምን ፖርትፎሊዮኹምን ኣብ ዝሓለፈ ሰሙን ከመይ ከም ዝተንቀሳቐሱ፣ ከምኡውን ዝመጽእ ዕለታት ውጽኢቶም።",
   "benchmarkTitle": "ምስ S&P 500 ክነጻጸር",
   "benchmarkYours": "ዝዓደግኩምዎ",
-  "benchmarkIndex": "ተመሳሳሊ መጠን ኣብ S&P 500",
   "benchmarkAhead": "ካብ ኢንዴክስ ብ{points} ነጥቢ ሚእታዊት ዝሓሸ",
   "benchmarkBehind": "ካብ ኢንዴክስ ብ{points} ነጥቢ ሚእታዊት ዝተረፈ",
-  "benchmarkHint": "ነፍሲ ወከፍ ዕድጊ ኣብታ ሓንቲ መዓልቲ ኣብ S&P 500 ኢንዴክስ ፈንድ ከም ዝተወፈረ ጌርካ። ትርፊ ኣክሲዮን ኣይተሓወሰን፤ ዝሓለፈ እቶት ናይ መጻኢ ኣይትንብን።",
   "portfolioSell": "ሽጥ",
   "portfolioSellTitle": "{symbol} ሽጥ",
   "portfolioSellPrice": "ዋጋ መሸጣ ንሓደ ኣክሲዮን ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol}: ሎሚ ዝተጸበ ድቪደንድ",
   "dividendReminderBody": "ኣስታት {amount}። ምስ በጽሐ ኣብ ፖርትፎሊዮኹም መዝግብዎ።",
   "dividendRemindersTitle": "መዘኻኸሪ ድቪደንድ",
-  "dividendRemindersSubtitle": "ብመሰረት ድግግም እቶም ዝመዝገብኩምዎም ክፍሊታት ድቪደንድ ኣብ ዝግመተሉ መዓልቲ ዝመጽእ መፍለጢ፣ ክትምዝግብዎ ምእንቲ"
+  "dividendRemindersSubtitle": "ብመሰረት ድግግም እቶም ዝመዝገብኩምዎም ክፍሊታት ድቪደንድ ኣብ ዝግመተሉ መዓልቲ ዝመጽእ መፍለጢ፣ ክትምዝግብዎ ምእንቲ",
+  "benchmarkTitleIndex": "ምስ ኢንዴክስ ክነጻጸር",
+  "benchmarkHintIndex": "ነፍሲ ወከፍ ዝዓደግኩምዎ ኣብታ ሓንቲ መዓልቲ ናብ ነቲ ዝመረጽኩምዎ ኢንዴክስ ዝስዕብ ፈንድ ከም ዝኣተወ ጌርካ። ብጽሒት ትርፊ ኣይተኣተወን፤ ዝሓለፈ ኣታዊ ንመጻኢ ኣይትንብዮን።"
 }

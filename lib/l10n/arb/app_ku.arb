@@ -489,10 +489,8 @@
   "digestHint": "Her duşem: bijareyên te û portfolyoya te hefteya borî çawa tevgeriyan, û dîrokên encamên wan ên pêşerojê.",
   "benchmarkTitle": "Li gorî S&P 500",
   "benchmarkYours": "Kirînên te",
-  "benchmarkIndex": "Heman mîqdar di S&P 500 de",
   "benchmarkAhead": "{points} xalên sedî ji îndeksê baştir",
   "benchmarkBehind": "{points} xalên sedî li pişt îndeksê",
-  "benchmarkHint": "Wekî ku her kirîn di heman rojê de li fonek îndeksa S&P 500 hatibe veberhênan. Dabeşên qazancê ne tê de; vegerên berê pêşerojê pêşbînî nakin.",
   "portfolioSell": "Bifiroşe",
   "portfolioSellTitle": "{symbol} bifiroşe",
   "portfolioSellPrice": "Bihayê firotinê ji bo her pişkê ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "Dividenda {symbol} îro tê hêvîkirin",
   "dividendReminderBody": "Nêzî {amount}. Dema ku gihîşt, wê di portfolyoya xwe de tomar bike.",
   "dividendRemindersTitle": "Bîranînên dividendê",
-  "dividendRemindersSubtitle": "Agahdariyek di roja ku li gorî rîtma dayînên te yên tomarkirî dividend tê hêvîkirin, da ku tu wê tomar bikî"
+  "dividendRemindersSubtitle": "Agahdariyek di roja ku li gorî rîtma dayînên te yên tomarkirî dividend tê hêvîkirin, da ku tu wê tomar bikî",
+  "benchmarkTitleIndex": "Li gorî îndeksekê",
+  "benchmarkHintIndex": "Wekî ku her kirîn di heman rojê de li fonekê ku li pey îndeksa hilbijartî diçe hatibe veberhênan. Dabeşên qazancê ne tê de; vegerên berê pêşerojê pêşbînî nakin."
 }

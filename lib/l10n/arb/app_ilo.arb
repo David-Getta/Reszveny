@@ -489,10 +489,8 @@
   "digestHint": "Tunggal Lunes: no kasano ti panaggaraw dagiti paboritom ken ti portfolio-m iti napalabas a lawas, ken dagiti umay a petsa ti resultada.",
   "benchmarkTitle": "Naikompara iti S&P 500",
   "benchmarkYours": "Dagiti ginatangmo",
-  "benchmarkIndex": "Isu met laeng a gatad iti S&P 500",
   "benchmarkAhead": "{points} a percentage point a nasaysayaat ngem ti index",
   "benchmarkBehind": "{points} a percentage point a nababbaba ngem ti index",
-  "benchmarkHint": "Kasla la naipuonan ti tunggal gatang iti S&P 500 index fund iti isu met laeng nga aldaw. Saan a nairaman ti dibidendo; saan a mangipakpakita ti napalabas a ganansia iti masakbayan.",
   "portfolioSell": "Ilako",
   "portfolioSellTitle": "Ilako ti {symbol}",
   "portfolioSellPrice": "Presio ti panaglako iti tunggal share ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "Manamnama ita nga aldaw ti dibidendo ti {symbol}",
   "dividendReminderBody": "Agarup {amount}. Irekord daytoy iti portfoliom inton dumteng.",
   "dividendRemindersTitle": "Pammalagip ti dibidendo",
-  "dividendRemindersSubtitle": "Pakaammo iti aldaw a manamnama ti dibidendo segun iti ritmo dagiti nairekord a bayadmo, tapno mairekordmo daytoy"
+  "dividendRemindersSubtitle": "Pakaammo iti aldaw a manamnama ti dibidendo segun iti ritmo dagiti nairekord a bayadmo, tapno mairekordmo daytoy",
+  "benchmarkTitleIndex": "Naikompara iti maysa nga index",
+  "benchmarkHintIndex": "Kasla la naipuonan ti tunggal gatang iti fund a mangsurot iti napili nga index iti isu met laeng nga aldaw. Saan a nairaman ti dibidendo; saan a mangipakpakita ti napalabas a ganansia iti masakbayan."
 }

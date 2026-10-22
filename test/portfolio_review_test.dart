@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:reszveny/features/portfolio/portfolio_history.dart' show benchmarkOf;
 import 'package:http/http.dart' as http;
 import 'package:http/testing.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -136,9 +137,25 @@ void main() {
     await tester.tap(find.text('Portfolio').first);
     await tester.pumpAndSettle();
     expect(find.text('AI portfolio review'), findsOneWidget);
-    // Az értékalakulás alatt az S&P 500-összevetés.
+    // Az értékalakulás alatt az index-összevetés (alapból S&P 500); az index választható és megmarad.
     expect(find.byKey(const ValueKey('portfolio-benchmark')), findsOneWidget);
-    expect(find.text('Same amounts in the S&P 500'), findsOneWidget);
+    expect(find.text('Compared with an index'), findsOneWidget);
+    expect(tester.widget<ChoiceChip>(find.byKey(const ValueKey('benchmark-SPY'))).selected, isTrue);
+    expect(
+      find.descendant(of: find.byKey(const ValueKey('portfolio-benchmark')), matching: find.text('S&P 500')),
+      findsOneWidget,
+    );
+    await tester.ensureVisible(find.byKey(const ValueKey('benchmark-QQQ')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('benchmark-QQQ')));
+    await tester.pumpAndSettle();
+    expect(services.preferences.benchmark, 'QQQ');
+    expect(tester.widget<ChoiceChip>(find.byKey(const ValueKey('benchmark-QQQ'))).selected, isTrue);
+    expect(
+      find.descendant(of: find.byKey(const ValueKey('portfolio-benchmark')), matching: find.text('Nasdaq 100')),
+      findsOneWidget,
+    );
+    expect(benchmarkOf('nincs ilyen').symbol, 'SPY');
     await tester.tap(find.byKey(const ValueKey('portfolio-review-run')));
     await tester.pumpAndSettle();
 

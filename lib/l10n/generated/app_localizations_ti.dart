@@ -1788,10 +1788,14 @@ class AppLocalizationsTi extends AppLocalizations {
   String get benchmarkTitle => 'ምስ S&P 500 ክነጻጸር';
 
   @override
-  String get benchmarkYours => 'ዝዓደግኩምዎ';
+  String get benchmarkTitleIndex => 'ምስ ኢንዴክስ ክነጻጸር';
 
   @override
-  String get benchmarkIndex => 'ተመሳሳሊ መጠን ኣብ S&P 500';
+  String get benchmarkHintIndex =>
+      'ነፍሲ ወከፍ ዝዓደግኩምዎ ኣብታ ሓንቲ መዓልቲ ናብ ነቲ ዝመረጽኩምዎ ኢንዴክስ ዝስዕብ ፈንድ ከም ዝኣተወ ጌርካ። ብጽሒት ትርፊ ኣይተኣተወን፤ ዝሓለፈ ኣታዊ ንመጻኢ ኣይትንብዮን።';
+
+  @override
+  String get benchmarkYours => 'ዝዓደግኩምዎ';
 
   @override
   String benchmarkAhead(String points) {
@@ -1802,10 +1806,6 @@ class AppLocalizationsTi extends AppLocalizations {
   String benchmarkBehind(String points) {
     return 'ካብ ኢንዴክስ ብ$points ነጥቢ ሚእታዊት ዝተረፈ';
   }
-
-  @override
-  String get benchmarkHint =>
-      'ነፍሲ ወከፍ ዕድጊ ኣብታ ሓንቲ መዓልቲ ኣብ S&P 500 ኢንዴክስ ፈንድ ከም ዝተወፈረ ጌርካ። ትርፊ ኣክሲዮን ኣይተሓወሰን፤ ዝሓለፈ እቶት ናይ መጻኢ ኣይትንብን።';
 
   @override
   String get portfolioSell => 'ሽጥ';

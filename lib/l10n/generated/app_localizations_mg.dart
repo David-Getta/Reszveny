@@ -1835,10 +1835,14 @@ class AppLocalizationsMg extends AppLocalizations {
   String get benchmarkTitle => 'Ampitahaina amin\'ny S&P 500';
 
   @override
-  String get benchmarkYours => 'Ny novidinao';
+  String get benchmarkTitleIndex => 'Ampitahaina amin\'ny index iray';
 
   @override
-  String get benchmarkIndex => 'Vola mitovy amin\'ny S&P 500';
+  String get benchmarkHintIndex =>
+      'Toy ny hoe napetraka tamin\'io andro io ihany tao amin\'ny tahiry manaraka ny index voafidy ny novidinao tsirairay. Tsy tafiditra ny dividenda; ny tombony lasa dia tsy maminavina ny ho avy.';
+
+  @override
+  String get benchmarkYours => 'Ny novidinao';
 
   @override
   String benchmarkAhead(String points) {
@@ -1849,10 +1853,6 @@ class AppLocalizationsMg extends AppLocalizations {
   String benchmarkBehind(String points) {
     return 'Ambany noho ny index $points isa isan-jato';
   }
-
-  @override
-  String get benchmarkHint =>
-      'Toy ny hoe napetraka tao amin\'ny tahirim-bola index S&P 500 tamin\'io andro io ihany ny vidin\'ny fividianana tsirairay. Tsy tafiditra ny dividende; ny tombony taloha tsy maminavina ny ho avy.';
 
   @override
   String get portfolioSell => 'Amidy';

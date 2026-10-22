@@ -489,10 +489,8 @@
   "digestHint": "Arakõi ñavõ: mbaʼéichapa oho ne ojeguerohoryvéva ha ne cartera arapokõindy ohasavaʼekuépe, ha umi resultado ára oúva.",
   "benchmarkTitle": "Ojeporombojoja S&P 500 ndive",
   "benchmarkYours": "Ne jogua",
-  "benchmarkIndex": "Upéichagua viru S&P 500-pe",
   "benchmarkAhead": "{points} punto porcentual iporãve índice-gui",
   "benchmarkBehind": "{points} punto porcentual oĩ índice rapykuévo",
-  "benchmarkHint": "Peteĩteĩ ne jogua viru ojemoĩramoguáicha peteĩ fondo indexado S&P 500-pe upe ára berõ. Ndoikéi dividendo; ganancia ohasaramoguare ndohechaukái tenonderãgua.",
   "portfolioSell": "Ñemu",
   "portfolioSellTitle": "Ñemu {symbol}",
   "portfolioSellPrice": "Tepy ñemu peteĩteĩ acción ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "Oñehaʼarõ {symbol} dividendo koʼága",
   "dividendReminderBody": "{amount} rupi. Og̃uahẽvo, emboguapy nde portafóliope.",
   "dividendRemindersTitle": "Dividendo manduʼarã",
-  "dividendRemindersSubtitle": "Marandu pe ára oñehaʼarõ jave dividendo, umi pago remboguapyvaʼekue ritmo rupi, ikatu hag̃ua remboguapy"
+  "dividendRemindersSubtitle": "Marandu pe ára oñehaʼarõ jave dividendo, umi pago remboguapyvaʼekue ritmo rupi, ikatu hag̃ua remboguapy",
+  "benchmarkTitleIndex": "Ojeporombojoja peteĩ índice ndive",
+  "benchmarkHintIndex": "Peteĩteĩ ne jogua viru ojemoĩramoguáicha peteĩ fondo omoirũva índice reiporavóva-pe upe ára berõ. Ndoikéi dividendo; ganancia ohasaramoguare ndohechaukái tenonderãgua."
 }

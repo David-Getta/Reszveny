@@ -489,10 +489,8 @@
   "digestHint": "Ní gbogbo Ọjọ́ Ajé: bí àwọn ààyò rẹ àti àpò ìdókòwò rẹ ṣe lọ ní ọ̀sẹ̀ tó kọjá, àti àwọn ọjọ́ àbájáde wọn tó ń bọ̀.",
   "benchmarkTitle": "Ìfiwéra pẹ̀lú S&P 500",
   "benchmarkYours": "Ohun tí o rà",
-  "benchmarkIndex": "Iye kan náà nínú S&P 500",
   "benchmarkAhead": "Ó dára ju atọ́ka lọ ní ààmì ìdá-ọgọ́rùn-ún {points}",
   "benchmarkBehind": "Ó wà lẹ́yìn atọ́ka ní ààmì ìdá-ọgọ́rùn-ún {points}",
-  "benchmarkHint": "Bí ẹni pé owó ọjà kọ̀ọ̀kan tí o rà ni a fi sínú owó-àkójọ atọ́ka S&P 500 ní ọjọ́ kan náà. Kò kan èrè ìpín; èrè àtẹ̀yìnwá kò sọ tẹ́lẹ̀ èrè ọjọ́ iwájú.",
   "portfolioSell": "Tà á",
   "portfolioSellTitle": "Ta {symbol}",
   "portfolioSellPrice": "Iye owó títà fún ìpín kọ̀ọ̀kan ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol}: ìpín èrè tí a ń retí lónìí",
   "dividendReminderBody": "Nǹkan bí {amount}. Kọ ọ́ sílẹ̀ nínú pọ́tífólíò rẹ nígbà tí ó bá dé.",
   "dividendRemindersTitle": "Ìránnilétí ìpín èrè",
-  "dividendRemindersSubtitle": "Ìfitónilétí ní ọjọ́ tí a ń retí ìpín èrè gẹ́gẹ́ bí ìlànà ìsanwó tí o kọ sílẹ̀, kí o lè kọ ọ́ sílẹ̀"
+  "dividendRemindersSubtitle": "Ìfitónilétí ní ọjọ́ tí a ń retí ìpín èrè gẹ́gẹ́ bí ìlànà ìsanwó tí o kọ sílẹ̀, kí o lè kọ ọ́ sílẹ̀",
+  "benchmarkTitleIndex": "Ìfiwéra pẹ̀lú atọ́ka kan",
+  "benchmarkHintIndex": "Bí ẹni pé gbogbo ohun tí o rà ni a fi sínú owó-ìkójọpọ̀ tí ó ń tẹ̀lé atọ́ka tí o yàn ní ọjọ́ kan náà. Èrè ìpín kò sí nínú rẹ̀; èrè àtẹ̀yìnwá kò sọ tọjọ́ iwájú."
 }

@@ -1824,10 +1824,14 @@ class AppLocalizationsUz extends AppLocalizations {
   String get benchmarkTitle => 'S&P 500 bilan taqqoslash';
 
   @override
-  String get benchmarkYours => 'Xaridlaringiz';
+  String get benchmarkTitleIndex => 'Indeks bilan taqqoslash';
 
   @override
-  String get benchmarkIndex => 'Shu summalar S&P 500da';
+  String get benchmarkHintIndex =>
+      'Goʻyo har bir xaridingiz oʻsha kuniyoq tanlangan indeksni kuzatuvchi fondga kiritilgandek. Dividendlar hisobga olinmagan; oʻtgan daromad kelajakdagisini bashorat qilmaydi.';
+
+  @override
+  String get benchmarkYours => 'Xaridlaringiz';
 
   @override
   String benchmarkAhead(String points) {
@@ -1838,10 +1842,6 @@ class AppLocalizationsUz extends AppLocalizations {
   String benchmarkBehind(String points) {
     return 'Indeksdan $points foiz punkt ortda';
   }
-
-  @override
-  String get benchmarkHint =>
-      'Goʻyo har bir xarid oʻsha kuni S&P 500 indeks fondiga kiritilgandek. Dividendlarsiz; oʻtgan daromad kelajakdagi daromadni bashorat qilmaydi.';
 
   @override
   String get portfolioSell => 'Sotish';

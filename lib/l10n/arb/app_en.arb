@@ -1272,12 +1272,16 @@
   "@benchmarkTitle": {
     "description": "Portfolio page, value-history card: comparison of the user's purchases with the S&P 500 index."
   },
+  "benchmarkTitleIndex": "Compared with an index",
+  "@benchmarkTitleIndex": {
+    "description": "Portfolio page, value-history card: title of the comparison of the user's purchases with a chosen stock index (S&P 500, Nasdaq 100 or Dow Jones, picked with chips below)."
+  },
+  "benchmarkHintIndex": "As if each purchase had gone into a fund tracking the chosen index on the same day. Dividends not included; past returns do not predict future ones.",
+  "@benchmarkHintIndex": {
+    "description": "Portfolio page, value-history card: explanation under the comparison with the chosen index."
+  },
   "benchmarkYours": "Your purchases",
   "@benchmarkYours": {
-    "description": "Portfolio page, value-history card: comparison of the user's purchases with the S&P 500 index."
-  },
-  "benchmarkIndex": "Same amounts in the S&P 500",
-  "@benchmarkIndex": {
     "description": "Portfolio page, value-history card: comparison of the user's purchases with the S&P 500 index."
   },
   "benchmarkAhead": "{points} percentage points better than the index",
@@ -1299,10 +1303,6 @@
         "example": "6.1"
       }
     }
-  },
-  "benchmarkHint": "As if each purchase had gone into an S&P 500 index fund on the same day. Dividends not included; past returns do not predict future ones.",
-  "@benchmarkHint": {
-    "description": "Portfolio page, value-history card: comparison of the user's purchases with the S&P 500 index."
   },
   "portfolioSell": "Sell",
   "@portfolioSell": {

@@ -489,10 +489,8 @@
   "digestHint": "በየሰኞ፦ ተወዳጆችዎ እና ፖርትፎሊዮዎ ባለፈው ሳምንት እንዴት እንደተንቀሳቀሱ እና የሚመጡት የውጤት ቀኖቻቸው።",
   "benchmarkTitle": "ከS&P 500 ጋር ሲነጻጸር",
   "benchmarkYours": "የእርስዎ ግዢዎች",
-  "benchmarkIndex": "ተመሳሳይ መጠን በS&P 500",
   "benchmarkAhead": "ከኢንዴክሱ በ{points} የመቶኛ ነጥብ የተሻለ",
   "benchmarkBehind": "ከኢንዴክሱ በ{points} የመቶኛ ነጥብ ያነሰ",
-  "benchmarkHint": "እያንዳንዱ ግዢ በዚያው ቀን በS&P 500 ኢንዴክስ ፈንድ ውስጥ ኢንቨስት እንደተደረገ ተደርጎ። የትርፍ ድርሻ አልተካተተም፤ ያለፈ ተመላሽ የወደፊቱን አይተነብይም።",
   "portfolioSell": "ሽጥ",
   "portfolioSellTitle": "{symbol} ሽጥ",
   "portfolioSellPrice": "የሽያጭ ዋጋ በአክሲዮን ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "ከ{symbol} ዛሬ የትርፍ ድርሻ ይጠበቃል",
   "dividendReminderBody": "{amount} ገደማ። ሲደርስዎ በፖርትፎሊዮዎ ውስጥ ይመዝግቡት።",
   "dividendRemindersTitle": "የትርፍ ድርሻ ማስታወሻዎች",
-  "dividendRemindersSubtitle": "ከመዘገቧቸው ክፍያዎች ድግግሞሽ በመነሳት የትርፍ ድርሻ በሚጠበቅበት ቀን ማሳወቂያ፣ እንዲመዘግቡት"
+  "dividendRemindersSubtitle": "ከመዘገቧቸው ክፍያዎች ድግግሞሽ በመነሳት የትርፍ ድርሻ በሚጠበቅበት ቀን ማሳወቂያ፣ እንዲመዘግቡት",
+  "benchmarkTitleIndex": "ከአንድ ኢንዴክስ ጋር ሲነጻጸር",
+  "benchmarkHintIndex": "እያንዳንዱ ግዢ በዚያው ቀን የተመረጠውን ኢንዴክስ በሚከተል ፈንድ ውስጥ ኢንቨስት እንደተደረገ ተደርጎ። የትርፍ ድርሻ አልተካተተም፤ ያለፈ ተመላሽ የወደፊቱን አይተነብይም።"
 }

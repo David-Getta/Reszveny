@@ -489,10 +489,8 @@
   "digestHint": "Joka maanantai: miten suosikkisi ja salkkusi kehittyivät viime viikolla sekä niiden tulevat tulosjulkistuspäivät.",
   "benchmarkTitle": "Verrattuna S&P 500:aan",
   "benchmarkYours": "Omat ostosi",
-  "benchmarkIndex": "Samat summat S&P 500:ssa",
   "benchmarkAhead": "{points} prosenttiyksikköä indeksiä parempi",
   "benchmarkBehind": "{points} prosenttiyksikköä indeksistä jäljessä",
-  "benchmarkHint": "Ikään kuin jokainen osto olisi sijoitettu samana päivänä S&P 500 -indeksirahastoon. Ilman osinkoja; aiempi tuotto ei ennusta tulevaa.",
   "portfolioSell": "Myy",
   "portfolioSellTitle": "Myy {symbol}",
   "portfolioSellPrice": "Myyntihinta per osake ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol}: osinko odotettavissa tänään",
   "dividendReminderBody": "Noin {amount}. Kirjaa se salkkuusi, kun se saapuu.",
   "dividendRemindersTitle": "Osinkomuistutukset",
-  "dividendRemindersSubtitle": "Ilmoitus päivänä, jolloin osinkoa odotetaan kirjaamiesi maksujen rytmin perusteella, jotta voit kirjata sen"
+  "dividendRemindersSubtitle": "Ilmoitus päivänä, jolloin osinkoa odotetaan kirjaamiesi maksujen rytmin perusteella, jotta voit kirjata sen",
+  "benchmarkTitleIndex": "Verrattuna indeksiin",
+  "benchmarkHintIndex": "Ikään kuin jokainen osto olisi sijoitettu samana päivänä valittua indeksiä seuraavaan rahastoon. Ilman osinkoja; aiempi tuotto ei ennusta tulevaa."
 }

@@ -489,10 +489,8 @@
   "digestHint": "Mosupologo mongwe le mongwe: ka fa tse o di ratang le potefolio ya gago di tsamaileng ka teng mo bekeng e e fetileng, le malatsi a a tlang a dipoelo tsa tsone.",
   "benchmarkTitle": "Fa e bapisiwa le S&P 500",
   "benchmarkYours": "Tse o di rekileng",
-  "benchmarkIndex": "Madi a a tshwanang mo S&P 500",
   "benchmarkAhead": "Botoka go feta index ka dintlha tsa phesente tse {points}",
   "benchmarkBehind": "Kwa morago ga index ka dintlha tsa phesente tse {points}",
-  "benchmarkHint": "Jaaka e kete theko nngwe le nngwe e beeleditswe mo S&P 500 index fund ka letsatsi leo. Ga go akaretswe dipoelo tsa seabe; dipoelo tsa maloba ga di bolelele pele tsa isago.",
   "portfolioSell": "Rekisa",
   "portfolioSellTitle": "Rekisa {symbol}",
   "portfolioSellPrice": "Tlhwatlhwa ya go rekisa ka shere ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol}: dividente e e lebeletsweng gompieno",
   "dividendReminderBody": "E ka nna {amount}. E kwale mo phothefoliong ya gago fa e goroga.",
   "dividendRemindersTitle": "Dikgakololo tsa dividente",
-  "dividendRemindersSubtitle": "Kitsiso ka letsatsi le dividente e lebeletsweng ka lone go ya ka mokgwa wa dituelo tse o di kwadileng, gore o kgone go e kwala"
+  "dividendRemindersSubtitle": "Kitsiso ka letsatsi le dividente e lebeletsweng ka lone go ya ka mokgwa wa dituelo tse o di kwadileng, gore o kgone go e kwala",
+  "benchmarkTitleIndex": "Fa e bapisiwa le index",
+  "benchmarkHintIndex": "Jaaka e kete sengwe le sengwe se o se rekileng se ne sa tsenngwa ka letsatsi leo lone mo letloleng le le latelang index e o e tlhophileng. Dividende ga di a akarediwa; dipoelo tsa nako e e fetileng ga di bolelele pele tsa isago."
 }

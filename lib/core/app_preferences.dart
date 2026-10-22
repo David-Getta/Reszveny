@@ -39,6 +39,7 @@ class AppPreferences extends ChangeNotifier {
     List<WatchList> watchLists = const [],
     Map<String, double> targets = const {},
     Map<String, String> sorts = const {},
+    this.benchmark,
   }) : _hiddenHome = Set.of(hiddenHome),
        _sorts = Map.of(sorts),
        _goalsAt = Map.of(goalsAt),
@@ -94,6 +95,7 @@ class AppPreferences extends ChangeNotifier {
   ];
   static const _listsKey = 'watch_lists';
   static const _sortsKey = 'list_sorts';
+  static const _benchmarkKey = 'portfolio_benchmark';
 
   /// Legfeljebb ennyi saját lista, és egy név legfeljebb ennyi karakter.
   static const maxLists = 20;
@@ -217,6 +219,16 @@ class AppPreferences extends ChangeNotifier {
   }
 
   final Map<String, String> _sorts;
+
+  /// Az értékalakulás összevetésének indexe (ETF-ticker, pl. `QQQ`); `null`: S&P 500.
+  String? benchmark;
+
+  Future<void> setBenchmark(String symbol) async {
+    if (benchmark == symbol) return;
+    benchmark = symbol;
+    notifyListeners();
+    await _save((p) => p.setString(_benchmarkKey, symbol));
+  }
 
   /// Egy lista legutóbb választott rendezése (pl. `positions` → `dividend`), hogy
   /// az app újraindítása után is megmaradjon; `null`, ha még nem választottak.
@@ -427,6 +439,7 @@ class AppPreferences extends ChangeNotifier {
         watchLists: WatchList.parseAll(prefs.getString(_listsKey)),
         targets: parseTargets(prefs.getString(_targetsKey)),
         sorts: parseSorts(prefs.getString(_sortsKey)),
+        benchmark: prefs.getString(_benchmarkKey),
       );
       loaded._loadResolved(prefs.getStringList(_resolvedKey));
       return loaded;

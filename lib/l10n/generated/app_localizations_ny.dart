@@ -1828,10 +1828,14 @@ class AppLocalizationsNy extends AppLocalizations {
   String get benchmarkTitle => 'Poyerekeza ndi S&P 500';
 
   @override
-  String get benchmarkYours => 'Zomwe munagula';
+  String get benchmarkTitleIndex => 'Poyerekeza ndi index';
 
   @override
-  String get benchmarkIndex => 'Ndalama zomwezo mu S&P 500';
+  String get benchmarkHintIndex =>
+      'Ngati kuti chilichonse chomwe munagula chinaikidwa tsiku lomwelo m\'thumba la ndalama lotsatira index yomwe mwasankha. Magawo a phindu sawerengedwa; phindu lakale siliwonetsa la mtsogolo.';
+
+  @override
+  String get benchmarkYours => 'Zomwe munagula';
 
   @override
   String benchmarkAhead(String points) {
@@ -1842,10 +1846,6 @@ class AppLocalizationsNy extends AppLocalizations {
   String benchmarkBehind(String points) {
     return 'Kumbuyo kwa index ndi mapointi a peresenti $points';
   }
-
-  @override
-  String get benchmarkHint =>
-      'Ngati kuti chilichonse chomwe munagula chinayikidwa mu S&P 500 index fund tsiku lomwelo. Popanda magawo a phindu; phindu lakale siliwonetsa phindu la mtsogolo.';
 
   @override
   String get portfolioSell => 'Gulitsani';

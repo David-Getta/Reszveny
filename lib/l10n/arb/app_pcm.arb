@@ -489,10 +489,8 @@
   "digestHint": "Every Monday: how your favourites and portfolio waka last week, and when their next results go come out.",
   "benchmarkTitle": "Compare am with S&P 500",
   "benchmarkYours": "Wetin you buy",
-  "benchmarkIndex": "Same moni for S&P 500",
   "benchmarkAhead": "{points} percentage points pass di index",
   "benchmarkBehind": "{points} percentage points behind di index",
-  "benchmarkHint": "Like say every moni wey you take buy, you put am for S&P 500 index fund dat same day. Dividend no dey inside; how e perform before no mean say na so e go be for future.",
   "portfolioSell": "Sell",
   "portfolioSellTitle": "Sell {symbol}",
   "portfolioSellPrice": "Price wey you sell each share ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "We dey expect {symbol} dividend today",
   "dividendReminderBody": "E go reach about {amount}. Record am for your portfolio once e land.",
   "dividendRemindersTitle": "Dividend reminder",
-  "dividendRemindersSubtitle": "Notification for di day wey we expect dividend, based on how your recorded payments dey come, so you fit record am"
+  "dividendRemindersSubtitle": "Notification for di day wey we expect dividend, based on how your recorded payments dey come, so you fit record am",
+  "benchmarkTitleIndex": "Compare am with one index",
+  "benchmarkHintIndex": "Like say everytin wey you buy enter fund wey dey follow di index wey you choose, dat same day. Dividend no dey inside; wetin e gain before no mean say e go gain like dat for future."
 }

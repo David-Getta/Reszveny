@@ -489,10 +489,8 @@
   "digestHint": "Yal Letnayen: amek llan ismenyifen-ik d uqrab-ik deg ddurt yezrin, d wazemz n yigmaḍ-nsen i d-iteddun.",
   "benchmarkTitle": "Asnemhel d S&P 500",
   "benchmarkYours": "Ayen i d-tuɣeḍ",
-  "benchmarkIndex": "Idrimen-nni deg S&P 500",
   "benchmarkAhead": "Yif amatar s {points} n yiqqiḍen n ufmiḍi",
   "benchmarkBehind": "Deffir n umatar s {points} n yiqqiḍen n ufmiḍi",
-  "benchmarkHint": "Am akken yal taɣuct tettwasers ass-nni kan deg ufus n umatar S&P 500. War tibḍit n tɣellit; tiɣellit yezrin ur d-tettbeggin ara tid ara d-yasen.",
   "portfolioSell": "Zenz",
   "portfolioSellTitle": "Zenz {symbol}",
   "portfolioSellPrice": "Ssuma n uznuzu n yal aksyun ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "Dividende n {symbol} yettwaṛǧu ass-a",
   "dividendReminderBody": "Azal n {amount}. Sekles-it deg uportfolio-k mi ara d-yawed.",
   "dividendRemindersTitle": "Asmekti n dividende",
-  "dividendRemindersSubtitle": "Alɣu ass ideg yettwaṛǧu dividende almend n urritm n lexlaṣat i tesekleseḍ, akken ad t-teskelseḍ"
+  "dividendRemindersSubtitle": "Alɣu ass ideg yettwaṛǧu dividende almend n urritm n lexlaṣat i tesekleseḍ, akken ad t-teskelseḍ",
+  "benchmarkTitleIndex": "Asnemhel d umatar",
+  "benchmarkHintIndex": "Am akken yal taɣuct tettwasers ass-nni kan deg ufus i yeṭṭafaren amatar i tferneḍ. War tibḍit n tɣellit; tiɣellit yezrin ur d-tettbeggin ara tid ara d-yasen."
 }

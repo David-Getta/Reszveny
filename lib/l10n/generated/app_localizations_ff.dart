@@ -1816,10 +1816,14 @@ class AppLocalizationsFf extends AppLocalizations {
   String get benchmarkTitle => 'Fondaade e S&P 500';
 
   @override
-  String get benchmarkYours => 'Coodgu maa';
+  String get benchmarkTitleIndex => 'Fondaade e indeks';
 
   @override
-  String get benchmarkIndex => 'Kaalis gooto e S&P 500';
+  String get benchmarkHintIndex =>
+      'Wano si ceede coodgu kala waɗaa e fonds jokkiiɗo indeks suɓaaɗo oo e ñalawma gooto oo. Dividende naatiraaka; ngañaari ɓennuɗi hollataa ngañaari garooji.';
+
+  @override
+  String get benchmarkYours => 'Coodgu maa';
 
   @override
   String benchmarkAhead(String points) {
@@ -1830,10 +1834,6 @@ class AppLocalizationsFf extends AppLocalizations {
   String benchmarkBehind(String points) {
     return 'Ina rewi indeks oo pursantaas $points';
   }
-
-  @override
-  String get benchmarkHint =>
-      'Wano si ceede coodgu kala waɗaa e fonds indeks S&P 500 e ñalawma gooto oo. Dividende naatiraaka; ngañaari ɓennuɗi hollataa ngañaari garooji.';
 
   @override
   String get portfolioSell => 'Yeeyu';

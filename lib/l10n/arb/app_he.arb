@@ -489,10 +489,8 @@
   "digestHint": "בכל יום שני: איך זזו המועדפים ותיק ההשקעות שלך בשבוע שעבר, ומועדי הדוחות הקרובים שלהם.",
   "benchmarkTitle": "בהשוואה ל-S&P 500",
   "benchmarkYours": "הרכישות שלך",
-  "benchmarkIndex": "אותם סכומים ב-S&P 500",
   "benchmarkAhead": "טוב מהמדד ב-{points} נקודות אחוז",
   "benchmarkBehind": "מפגר אחרי המדד ב-{points} נקודות אחוז",
-  "benchmarkHint": "כאילו כל רכישה הושקעה באותו יום בקרן מחקה של S&P 500. ללא דיבידנדים; תשואות עבר אינן מנבאות תשואות עתידיות.",
   "portfolioSell": "מכירה",
   "portfolioSellTitle": "מכירת {symbol}",
   "portfolioSellPrice": "מחיר מכירה למניה ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol}: צפוי דיבידנד היום",
   "dividendReminderBody": "כ-{amount}. כדאי לרשום אותו בתיק שלך כשיתקבל.",
   "dividendRemindersTitle": "תזכורות לדיבידנדים",
-  "dividendRemindersSubtitle": "התראה ביום שבו צפוי דיבידנד לפי קצב התשלומים שרשמת, כדי שאפשר יהיה לרשום אותו"
+  "dividendRemindersSubtitle": "התראה ביום שבו צפוי דיבידנד לפי קצב התשלומים שרשמת, כדי שאפשר יהיה לרשום אותו",
+  "benchmarkTitleIndex": "בהשוואה למדד",
+  "benchmarkHintIndex": "כאילו כל רכישה הושקעה באותו יום בקרן המחקה את המדד שנבחר. ללא דיבידנדים; תשואות עבר אינן מנבאות תשואות עתידיות."
 }

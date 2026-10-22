@@ -1820,10 +1820,14 @@ class AppLocalizationsKab extends AppLocalizations {
   String get benchmarkTitle => 'Asnemhel d S&P 500';
 
   @override
-  String get benchmarkYours => 'Ayen i d-tuɣeḍ';
+  String get benchmarkTitleIndex => 'Asnemhel d umatar';
 
   @override
-  String get benchmarkIndex => 'Idrimen-nni deg S&P 500';
+  String get benchmarkHintIndex =>
+      'Am akken yal taɣuct tettwasers ass-nni kan deg ufus i yeṭṭafaren amatar i tferneḍ. War tibḍit n tɣellit; tiɣellit yezrin ur d-tettbeggin ara tid ara d-yasen.';
+
+  @override
+  String get benchmarkYours => 'Ayen i d-tuɣeḍ';
 
   @override
   String benchmarkAhead(String points) {
@@ -1834,10 +1838,6 @@ class AppLocalizationsKab extends AppLocalizations {
   String benchmarkBehind(String points) {
     return 'Deffir n umatar s $points n yiqqiḍen n ufmiḍi';
   }
-
-  @override
-  String get benchmarkHint =>
-      'Am akken yal taɣuct tettwasers ass-nni kan deg ufus n umatar S&P 500. War tibḍit n tɣellit; tiɣellit yezrin ur d-tettbeggin ara tid ara d-yasen.';
 
   @override
   String get portfolioSell => 'Zenz';

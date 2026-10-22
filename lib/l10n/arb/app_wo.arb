@@ -489,10 +489,8 @@
   "digestHint": "Altine bu nekk: naka la yi nga gënal ak sa aksiyoŋ yi demee ci ayu-bés bi weesu, ak bési njureef yi ñuy ñëw.",
   "benchmarkTitle": "Méngale ak S&P 500",
   "benchmarkYours": "Li nga jënd",
-  "benchmarkIndex": "Xaalis bu mel noonu ci S&P 500",
   "benchmarkAhead": "Gën indeks bi ak {points} poñ ci téeméer",
   "benchmarkBehind": "Ci gannaaw indeks bi ak {points} poñ ci téeméer",
-  "benchmarkHint": "Ni ku xaalisu bépp jënd duggoon ci benn fonds indeks S&P 500 ci bés boobu. Dividende yi bokkuñu ci; njariñ yu weesu wonewul yu ëllëg.",
   "portfolioSell": "Jaay",
   "portfolioSellTitle": "Jaay {symbol}",
   "portfolioSellPrice": "Njëgu jaay aksiyoŋ bu nekk ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol}: dividande bu ñuy xaar tey",
   "dividendReminderBody": "Lu tollu ci {amount}. Bu agsee, bind ko ci sa portfolio.",
   "dividendRemindersTitle": "Fàttali dividande",
-  "dividendRemindersSubtitle": "Yégle ci bés bi ñuy xaar dividande, ci anam fey yi nga bind, ngir nga man koo bind"
+  "dividendRemindersSubtitle": "Yégle ci bés bi ñuy xaar dividande, ci anam fey yi nga bind, ngir nga man koo bind",
+  "benchmarkTitleIndex": "Méngale ak benn indeks",
+  "benchmarkHintIndex": "Mel ni lépp lu nga jënd dañu ko dugal ci bés boobu ci fon buy topp indeks bi nga tànn. Dividand bokku ci; ñeel gu weesu waxul lu ëllëg di indi."
 }

@@ -1820,10 +1820,14 @@ class AppLocalizationsTk extends AppLocalizations {
   String get benchmarkTitle => 'S&P 500 bilen deňeşdirme';
 
   @override
-  String get benchmarkYours => 'Satyn alanlaryňyz';
+  String get benchmarkTitleIndex => 'Indeks bilen deňeşdirme';
 
   @override
-  String get benchmarkIndex => 'Şol möçber S&P 500-de';
+  String get benchmarkHintIndex =>
+      'Edil her satyn alşyňyz şol gün saýlanan indeksi yzarlaýan gazna goýlan ýaly. Diwidendler girizilmedi; geçmişdäki girdeji geljekdäkini çaklamaýar.';
+
+  @override
+  String get benchmarkYours => 'Satyn alanlaryňyz';
 
   @override
   String benchmarkAhead(String points) {
@@ -1834,10 +1838,6 @@ class AppLocalizationsTk extends AppLocalizations {
   String benchmarkBehind(String points) {
     return 'Indeksden $points göterim bendi yzda';
   }
-
-  @override
-  String get benchmarkHint =>
-      'Her satyn alyş şol gün S&P 500 indeks gaznasyna goýlan ýaly. Diwidendsiz; geçmişdäki girdeji geljegi çaklamaýar.';
 
   @override
   String get portfolioSell => 'Sat';

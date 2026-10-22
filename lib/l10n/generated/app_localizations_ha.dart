@@ -1826,10 +1826,14 @@ class AppLocalizationsHa extends AppLocalizations {
   String get benchmarkTitle => 'Kwatanta da S&P 500';
 
   @override
-  String get benchmarkYours => 'Siyayyarka';
+  String get benchmarkTitleIndex => 'Kwatanta da ma\'auni';
 
   @override
-  String get benchmarkIndex => 'Kuɗi ɗaya a S&P 500';
+  String get benchmarkHintIndex =>
+      'Kamar an saka kuɗin kowace siyayya a asusun da ke bin ma\'aunin da aka zaɓa a rana ɗaya. Ba a haɗa rabon riba ba; ribar da ta gabata ba ta hasashen ta gaba.';
+
+  @override
+  String get benchmarkYours => 'Siyayyarka';
 
   @override
   String benchmarkAhead(String points) {
@@ -1840,10 +1844,6 @@ class AppLocalizationsHa extends AppLocalizations {
   String benchmarkBehind(String points) {
     return 'Ya gaza ma\'auni da maki kashi $points';
   }
-
-  @override
-  String get benchmarkHint =>
-      'Kamar an saka kuɗin kowace siyayya a asusun ma\'aunin S&P 500 a rana ɗaya. Ba a haɗa rabon riba ba; ribar da ta gabata ba ta hasashen ta gaba.';
 
   @override
   String get portfolioSell => 'Sayar';

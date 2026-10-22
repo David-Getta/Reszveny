@@ -489,10 +489,8 @@
   "digestHint": "O Mũmatũ: ũrĩa iria wendete na hisa ciaku ciathiire kiumia kĩrĩa gĩthirĩte, na mĩthenya ĩrĩa ĩrooka ya maumĩrĩra mao.",
   "benchmarkTitle": "Kũgerekanio na S&P 500",
   "benchmarkYours": "Indo iria wagũrire",
-  "benchmarkIndex": "Mbeca o iyo thĩinĩ wa S&P 500",
   "benchmarkAhead": "Ni mwega gũkĩra index na point cia percent {points}",
   "benchmarkBehind": "Rĩ thutha wa index na point cia percent {points}",
-  "benchmarkHint": "Taarĩ ta mbeca cia o ũgũri ciaigirũo thĩinĩ wa S&P 500 index fund mũthenya o ũcio. Dividend itiigĩtwo; uumithio wa tene ndũrathaga uumithio wa thutha.",
   "portfolioSell": "Endia",
   "portfolioSellTitle": "Endia {symbol}",
   "portfolioSellPrice": "Thogora wa kwendia o hisa ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "Mũgai wa faida wa {symbol} ũrerĩgĩrĩirwo ũmũthĩ",
   "dividendReminderBody": "Ta {amount}. Wandĩka thĩinĩ wa portfolio yaku ũgĩkinya.",
   "dividendRemindersTitle": "Kũririkania mũgai wa faida",
-  "dividendRemindersSubtitle": "Imenyithia mũthenya ũrĩa mũgai wa faida ũrerĩgĩrĩirwo kũringana na mũtaratara wa marĩhi marĩa wandĩkĩte, nĩguo ũwandĩke"
+  "dividendRemindersSubtitle": "Imenyithia mũthenya ũrĩa mũgai wa faida ũrerĩgĩrĩirwo kũringana na mũtaratara wa marĩhi marĩa wandĩkĩte, nĩguo ũwandĩke",
+  "benchmarkTitleIndex": "Kũgerekanio na index",
+  "benchmarkHintIndex": "Taarĩ ta mbeca cia o ũgũri ciaigirũo thĩinĩ wa fund ĩrũmagĩrĩra index ĩrĩa wathuurire mũthenya o ũcio. Dividend itiigĩtwo; uumithio wa tene ndũrathaga uumithio wa thutha."
 }

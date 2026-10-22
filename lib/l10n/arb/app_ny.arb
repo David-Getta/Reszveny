@@ -489,10 +489,8 @@
   "digestHint": "Lolemba lililonse: momwe zokondedwa zanu ndi masheya anu zinayendera sabata yatha, ndi masiku a zotsatira zawo omwe akubwera.",
   "benchmarkTitle": "Poyerekeza ndi S&P 500",
   "benchmarkYours": "Zomwe munagula",
-  "benchmarkIndex": "Ndalama zomwezo mu S&P 500",
   "benchmarkAhead": "Bwino kuposa index ndi mapointi a peresenti {points}",
   "benchmarkBehind": "Kumbuyo kwa index ndi mapointi a peresenti {points}",
-  "benchmarkHint": "Ngati kuti chilichonse chomwe munagula chinayikidwa mu S&P 500 index fund tsiku lomwelo. Popanda magawo a phindu; phindu lakale siliwonetsa phindu la mtsogolo.",
   "portfolioSell": "Gulitsani",
   "portfolioSellTitle": "Gulitsani {symbol}",
   "portfolioSellPrice": "Mtengo wogulitsira pa sheya iliyonse ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol}: dividendi yoyembekezeka lero",
   "dividendReminderBody": "Pafupifupi {amount}. Ilembeni mu portfolio yanu ikafika.",
   "dividendRemindersTitle": "Zikumbutso za dividendi",
-  "dividendRemindersSubtitle": "Chidziwitso pa tsiku limene dividendi ikuyembekezeka potengera kayendedwe ka malipiro omwe mudalemba, kuti muthe kuilemba"
+  "dividendRemindersSubtitle": "Chidziwitso pa tsiku limene dividendi ikuyembekezeka potengera kayendedwe ka malipiro omwe mudalemba, kuti muthe kuilemba",
+  "benchmarkTitleIndex": "Poyerekeza ndi index",
+  "benchmarkHintIndex": "Ngati kuti chilichonse chomwe munagula chinaikidwa tsiku lomwelo m'thumba la ndalama lotsatira index yomwe mwasankha. Magawo a phindu sawerengedwa; phindu lakale siliwonetsa la mtsogolo."
 }

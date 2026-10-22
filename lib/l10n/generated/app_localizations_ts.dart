@@ -1833,10 +1833,14 @@ class AppLocalizationsTs extends AppLocalizations {
   String get benchmarkTitle => 'Loko ku pimanisiwa na S&P 500';
 
   @override
-  String get benchmarkYours => 'Leswi u swi xaveke';
+  String get benchmarkTitleIndex => 'Loko ku pimanisiwa na index';
 
   @override
-  String get benchmarkIndex => 'Mali leyi fanaka eka S&P 500';
+  String get benchmarkHintIndex =>
+      'Onge xin\'wana ni xin\'wana lexi u xi xaveke xi nghenisiwile siku rero eka nkwama lowu landzelaka index leyi u yi hlawuleke. Dividende a yi katsiwanga; mbuyelo wa khale a wu vuli wa vumundzuku.';
+
+  @override
+  String get benchmarkYours => 'Leswi u swi xaveke';
 
   @override
   String benchmarkAhead(String points) {
@@ -1847,10 +1851,6 @@ class AppLocalizationsTs extends AppLocalizations {
   String benchmarkBehind(String points) {
     return 'Endzhaku ka index hi tiphoyinti ta phesente ta $points';
   }
-
-  @override
-  String get benchmarkHint =>
-      'Onge mali ya xixavo xin\'wana na xin\'wana yi vekiwile eka S&P 500 index fund hi siku rero. A swi katsi mbuyelo wa swiavelo; mbuyelo wa khale a wu vhumbhi wa nkarhi lowu taka.';
 
   @override
   String get portfolioSell => 'Xavisa';

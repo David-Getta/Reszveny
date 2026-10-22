@@ -489,10 +489,8 @@
   "digestHint": "逢星期一：你的收藏及投資組合上週的走勢，以及即將公佈業績的日期。",
   "benchmarkTitle": "與 S&P 500 比較",
   "benchmarkYours": "你的買入",
-  "benchmarkIndex": "同等金額買入 S&P 500",
   "benchmarkAhead": "比指數高 {points} 個百分點",
   "benchmarkBehind": "比指數低 {points} 個百分點",
-  "benchmarkHint": "假設每筆買入金額於同一天投入 S&P 500 指數基金。不包括股息；過往回報不代表將來回報。",
   "portfolioSell": "賣出",
   "portfolioSellTitle": "賣出 {symbol}",
   "portfolioSellPrice": "每股賣出價格（{currency}）",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol} 預計今日派息",
   "dividendReminderBody": "約 {amount}。到賬後請記入投資組合。",
   "dividendRemindersTitle": "派息提示",
-  "dividendRemindersSubtitle": "根據你記錄的派息節奏，在預計派息當日發出通知，方便你記錄"
+  "dividendRemindersSubtitle": "根據你記錄的派息節奏，在預計派息當日發出通知，方便你記錄",
+  "benchmarkTitleIndex": "與指數比較",
+  "benchmarkHintIndex": "假設每筆買入都在同日投入追蹤所選指數的基金。不包括股息；過往回報並不預示未來表現。"
 }

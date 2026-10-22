@@ -1825,10 +1825,14 @@ class AppLocalizationsHu extends AppLocalizations {
   String get benchmarkTitle => 'Összevetés az S&P 500-zal';
 
   @override
-  String get benchmarkYours => 'A te vételeid';
+  String get benchmarkTitleIndex => 'Összevetés egy indexszel';
 
   @override
-  String get benchmarkIndex => 'Ugyanez az S&P 500-ban';
+  String get benchmarkHintIndex =>
+      'Mintha minden vételed összegét ugyanazon a napon egy, a választott indexet követő alapba tetted volna. Osztalék nélkül; a múltbeli hozam nem jelzi előre a jövőbelit.';
+
+  @override
+  String get benchmarkYours => 'A te vételeid';
 
   @override
   String benchmarkAhead(String points) {
@@ -1839,10 +1843,6 @@ class AppLocalizationsHu extends AppLocalizations {
   String benchmarkBehind(String points) {
     return '$points százalékponttal elmarad az indextől';
   }
-
-  @override
-  String get benchmarkHint =>
-      'Mintha minden vételed összegét ugyanazon a napon egy S&P 500 indexalapba tetted volna. Osztalék nélkül; a múltbeli hozam nem jelzi előre a jövőbelit.';
 
   @override
   String get portfolioSell => 'Eladás';

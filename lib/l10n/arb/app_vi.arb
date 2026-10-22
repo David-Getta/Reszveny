@@ -489,10 +489,8 @@
   "digestHint": "Mỗi thứ Hai: mục yêu thích và danh mục của bạn biến động ra sao trong tuần trước, cùng ngày công bố kết quả kinh doanh sắp tới.",
   "benchmarkTitle": "So với S&P 500",
   "benchmarkYours": "Khoản mua của bạn",
-  "benchmarkIndex": "Cùng số tiền vào S&P 500",
   "benchmarkAhead": "Cao hơn chỉ số {points} điểm phần trăm",
   "benchmarkBehind": "Thấp hơn chỉ số {points} điểm phần trăm",
-  "benchmarkHint": "Như thể mỗi khoản mua được đầu tư vào một quỹ chỉ số S&P 500 trong cùng ngày. Không tính cổ tức; lợi nhuận trong quá khứ không dự báo lợi nhuận tương lai.",
   "portfolioSell": "Bán",
   "portfolioSellTitle": "Bán {symbol}",
   "portfolioSellPrice": "Giá bán mỗi cổ phiếu ({currency})",
@@ -772,5 +770,7 @@
   "dividendReminderTitle": "{symbol} dự kiến trả cổ tức hôm nay",
   "dividendReminderBody": "Khoảng {amount}. Hãy ghi lại vào danh mục khi tiền về.",
   "dividendRemindersTitle": "Nhắc cổ tức",
-  "dividendRemindersSubtitle": "Thông báo vào ngày dự kiến có cổ tức theo nhịp các khoản chi trả bạn đã ghi lại, để bạn ghi nhận"
+  "dividendRemindersSubtitle": "Thông báo vào ngày dự kiến có cổ tức theo nhịp các khoản chi trả bạn đã ghi lại, để bạn ghi nhận",
+  "benchmarkTitleIndex": "So với một chỉ số",
+  "benchmarkHintIndex": "Như thể mỗi khoản mua được đưa vào một quỹ theo dõi chỉ số đã chọn ngay trong ngày đó. Không bao gồm cổ tức; lợi nhuận trong quá khứ không dự báo lợi nhuận tương lai."
 }
