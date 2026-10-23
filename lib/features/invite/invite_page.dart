@@ -21,13 +21,15 @@ class InvitePage extends StatefulWidget {
 class _InvitePageState extends State<InvitePage> {
   final _code = TextEditingController();
   bool _busy = false;
-  InviteProblem? _error;
+
+  /// A hiba üzenete: a kód hibája, a túl sok próbálkozás vagy a kapcsolat.
+  String Function(AppLocalizations l10n)? _error;
 
   @override
   void initState() {
     super.initState();
     // Ha már volt mentett kód, a szerver üzenete (lejárt, túl sok eszköz) számít.
-    if (widget.problem != InviteProblem.required) _error = widget.problem;
+    if (widget.problem case final p when p != InviteProblem.required) _error = (l10n) => message(l10n, p);
   }
 
   @override
@@ -49,9 +51,16 @@ class _InvitePageState extends State<InvitePage> {
       // A szerver szerinti csomag és keret betöltése (eddig nem érhette el).
       services.syncEntitlements();
     } on BackendException catch (e) {
-      if (mounted) setState(() => _error = BackendClient.inviteProblemFor(e.code) ?? InviteProblem.invalid);
+      // A túl sok próbálkozás és a szerverhiba nem „érvénytelen kód”.
+      final String Function(AppLocalizations) error = switch ((BackendClient.inviteProblemFor(e.code), e.status)) {
+        (final problem?, _) => (l10n) => message(l10n, problem),
+        (_, 429) => (l10n) => l10n.errRateLimited,
+        (_, final status) when status >= 500 => (l10n) => l10n.errSignInFailed,
+        _ => (l10n) => message(l10n, InviteProblem.invalid),
+      };
+      if (mounted) setState(() => _error = error);
     } catch (_) {
-      if (mounted) setState(() => _error = InviteProblem.invalid);
+      if (mounted) setState(() => _error = (l10n) => l10n.errSignInFailed);
     } finally {
       if (mounted) setState(() => _busy = false);
     }
@@ -100,7 +109,7 @@ class _InvitePageState extends State<InvitePage> {
                 decoration: InputDecoration(
                   labelText: l10n.inviteCodeLabel,
                   prefixIcon: const Icon(Icons.vpn_key_outlined),
-                  errorText: error == null ? null : message(l10n, error),
+                  errorText: error?.call(l10n),
                   errorMaxLines: 3,
                 ),
               ),

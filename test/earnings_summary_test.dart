@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:reszveny/features/portfolio/portfolio_page.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/testing.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -210,6 +211,16 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.text('Microsoft Corporation'), findsWidgets);
     expect(find.byKey(const ValueKey('earnings-summary-sheet')), findsNothing);
+    // Osztalék-emlékeztető: a részvény; portfólió-értesítés: a portfólió oldala.
+    s.openNotification('dividend-NVDA-USD-2026-10-23');
+    await tester.pumpAndSettle();
+    expect(find.text('NVIDIA Corporation'), findsWidgets);
+    s.openNotification('portfolio-goal');
+    await tester.pumpAndSettle();
+    expect(find.byType(PortfolioPage), findsOneWidget);
+    s.openNotification('brief-2026-10-23');
+    await tester.pumpAndSettle();
+    expect(find.byType(PortfolioPage), findsNothing);
   });
 
   testWidgets('no recent quarter: no summary button', (tester) async {

@@ -1,4 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
+import 'package:reszveny/core/config/app_config.dart';
 import 'package:reszveny/features/updates/app_version.dart';
 import 'package:reszveny/features/updates/update_service.dart';
 
@@ -23,5 +24,11 @@ void main() {
     expect(m.version, '0.7.0+8');
     expect(m.url, 'https://example.com/mac.zip');
     expect(UpdateService.parseManifest({'version': '1', 'url': 'https://x'}, 'ios').url, 'https://x');
+  });
+
+  test('Sparkle: a found update is "available", not a download that never ends', () {
+    final u = UpdateService(config: const AppConfig());
+    u.onUpdaterUpdateAvailable(null);
+    expect(u.status, UpdateStatus.available);
   });
 }

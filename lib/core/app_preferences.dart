@@ -586,51 +586,74 @@ class AppPreferences extends ChangeNotifier {
   static Future<AppPreferences> load() async {
     try {
       final prefs = await SharedPreferences.getInstance();
-      final mode = ThemeMode.values.asNameMap()[prefs.getString(_themeKey) ?? ''] ?? ThemeMode.system;
-      final hk = prefs.getString(_hotkeyKey);
+      // Kulcsonként hibatűrő olvasás: egy sérült vagy más típusú érték (pl. a
+      // gyorsbillentyűé) nem viszi el a többi beállítást (a kedvenceket, a hozzájárulást).
+      T? safe<T>(T? Function() read) {
+        try {
+          return read();
+        } catch (_) {
+          return null;
+        }
+      }
+
+      String? str(String key) => safe(() => prefs.getString(key));
+      bool? flag(String key) => safe(() => prefs.getBool(key));
+      List<String>? strings(String key) => safe(() => prefs.getStringList(key));
+      final mode = ThemeMode.values.asNameMap()[str(_themeKey) ?? ''] ?? ThemeMode.system;
+      final hotkey = safe(
+        () => switch (str(_hotkeyKey)) {
+          final raw? => jsonDecode(raw),
+          null => null,
+        },
+      );
+      // Az első indításkor (még üres tár) a bevezető ki nem fejezettnek jelölve: így
+      // a közben írt kulcsok (pl. a próbaidő) után sem tűnik a régi felhasználóénak.
+      final onboarding = flag(_onboardingKey);
+      final fresh = onboarding == null && prefs.getKeys().isEmpty;
+      if (fresh) await prefs.setBool(_onboardingKey, false);
       final loaded = AppPreferences(
         themeMode: mode,
-        recent: prefs.getStringList(_recentKey) ?? const [],
-        favorites: prefs.getStringList(_favoritesKey) ?? const [],
-        hotkeyJson: hk == null ? null : (jsonDecode(hk) as Map<String, dynamic>),
-        displayCurrency: prefs.getString(_currencyKey) ?? currencyUnset,
-        autoUpdate: prefs.getBool(_autoUpdateKey) ?? true,
-        analysisDepth: AnalysisDepth.values.asNameMap()[prefs.getString(_depthKey) ?? ''] ?? AnalysisDepth.standard,
-        readerLevel: ReaderLevel.values.asNameMap()[prefs.getString(_readerKey) ?? ''] ?? ReaderLevel.beginner,
-        counterArgument: prefs.getBool(_counterKey) ?? true,
+        recent: strings(_recentKey) ?? const [],
+        favorites: strings(_favoritesKey) ?? const [],
+        hotkeyJson: hotkey is Map<String, dynamic> ? hotkey : null,
+        displayCurrency: str(_currencyKey) ?? currencyUnset,
+        autoUpdate: flag(_autoUpdateKey) ?? true,
+        analysisDepth: AnalysisDepth.values.asNameMap()[str(_depthKey) ?? ''] ?? AnalysisDepth.standard,
+        readerLevel: ReaderLevel.values.asNameMap()[str(_readerKey) ?? ''] ?? ReaderLevel.beginner,
+        counterArgument: flag(_counterKey) ?? true,
         // Alapból ki: a Claude asztali appja is a dupla Option-nyomást figyeli.
-        doubleOption: prefs.getBool(_doubleOptionKey) ?? false,
-        doubleOptionAsked: prefs.getBool(_doubleOptionAskedKey) ?? false,
-        keepInTray: prefs.getBool(_keepInTrayKey) ?? true,
-        onboardingDone: prefs.getBool(_onboardingKey) ?? prefs.getKeys().isNotEmpty,
-        analysesDone: prefs.getInt(_analysesDoneKey) ?? 0,
-        reviewAsked: prefs.getBool(_reviewAskedKey) ?? false,
-        telemetryConsent: prefs.getBool(_telemetryKey),
-        emailAlerts: prefs.getBool(_emailAlertsKey) ?? true,
-        weeklyDigest: prefs.getBool(_weeklyDigestKey) ?? false,
-        switchesAt: _parseMarks(prefs.getString(_switchesAtKey)),
-        earningsReminders: prefs.getBool(_earningsRemindersKey) ?? true,
-        dividendReminders: prefs.getBool(_dividendRemindersKey) ?? true,
-        signalAlerts: prefs.getBool(_signalAlertsKey) ?? true,
-        morningBrief: prefs.getBool(_morningBriefKey) ?? false,
-        portfolioMoveAlert: prefs.getDouble(_portfolioMoveKey) ?? 0,
-        portfolioGoal: parseGoal(prefs.getString(_goalKey)),
-        dividendGoal: parseGoal(prefs.getString(_dividendGoalKey)),
-        goalsAt: parseGoalsAt(prefs.getString(_goalsAtKey)),
-        hiddenHome: {...?prefs.getStringList(_hiddenHomeKey)},
-        portfolioMoveNotified: prefs.getString(_portfolioMoveNotifiedKey),
-        portfolioGoalNotified: prefs.getString(_portfolioGoalNotifiedKey),
-        watchLists: WatchList.parseAll(prefs.getString(_listsKey)),
-        targets: parseTargets(prefs.getString(_targetsKey)),
-        sorts: parseSorts(prefs.getString(_sortsKey)),
-        benchmark: prefs.getString(_benchmarkKey),
-        favoriteSince: parseFavoriteSince(prefs.getString(_favoriteSinceKey)),
-        favoritesRemoved: _parseMarks(prefs.getString(_favoritesRemovedKey)),
-        favoritesAdded: _parseMarks(prefs.getString(_favoritesAddedKey)),
-        listsRemoved: _parseMarks(prefs.getString(_listsRemovedKey)),
-        listsAdded: _parseMarks(prefs.getString(_listsAddedKey)),
+        doubleOption: flag(_doubleOptionKey) ?? false,
+        doubleOptionAsked: flag(_doubleOptionAskedKey) ?? false,
+        keepInTray: flag(_keepInTrayKey) ?? true,
+        onboardingDone: onboarding ?? !fresh,
+        analysesDone: safe(() => prefs.getInt(_analysesDoneKey)) ?? 0,
+        reviewAsked: flag(_reviewAskedKey) ?? false,
+        telemetryConsent: flag(_telemetryKey),
+        emailAlerts: flag(_emailAlertsKey) ?? true,
+        weeklyDigest: flag(_weeklyDigestKey) ?? false,
+        switchesAt: _parseMarks(str(_switchesAtKey)),
+        earningsReminders: flag(_earningsRemindersKey) ?? true,
+        dividendReminders: flag(_dividendRemindersKey) ?? true,
+        signalAlerts: flag(_signalAlertsKey) ?? true,
+        morningBrief: flag(_morningBriefKey) ?? false,
+        portfolioMoveAlert: safe(() => prefs.getDouble(_portfolioMoveKey)) ?? 0,
+        portfolioGoal: parseGoal(str(_goalKey)),
+        dividendGoal: parseGoal(str(_dividendGoalKey)),
+        goalsAt: parseGoalsAt(str(_goalsAtKey)),
+        hiddenHome: {...?strings(_hiddenHomeKey)},
+        portfolioMoveNotified: str(_portfolioMoveNotifiedKey),
+        portfolioGoalNotified: str(_portfolioGoalNotifiedKey),
+        watchLists: WatchList.parseAll(str(_listsKey)),
+        targets: parseTargets(str(_targetsKey)),
+        sorts: parseSorts(str(_sortsKey)),
+        benchmark: str(_benchmarkKey),
+        favoriteSince: parseFavoriteSince(str(_favoriteSinceKey)),
+        favoritesRemoved: _parseMarks(str(_favoritesRemovedKey)),
+        favoritesAdded: _parseMarks(str(_favoritesAddedKey)),
+        listsRemoved: _parseMarks(str(_listsRemovedKey)),
+        listsAdded: _parseMarks(str(_listsAddedKey)),
       );
-      loaded._loadResolved(prefs.getStringList(_resolvedKey));
+      loaded._loadResolved(strings(_resolvedKey));
       return loaded;
     } catch (_) {
       return AppPreferences();

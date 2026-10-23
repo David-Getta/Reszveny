@@ -351,16 +351,17 @@ class DesktopIntegration extends ChangeNotifier with WindowListener, TrayListene
   void onTrayIconRightMouseDown() => trayManager.popUpContextMenu();
 
   @override
-  void onTrayMenuItemClick(MenuItem menuItem) {
+  Future<void> onTrayMenuItemClick(MenuItem menuItem) async {
     switch (menuItem.key) {
       case _trayOpen:
-        showFullWindow();
+        await showFullWindow();
       case _trayQuick:
-        showQuickBar();
+        await showQuickBar();
       case _trayQuit:
         exit(0);
       case _trayPortfolio:
-        showFullWindow();
+        // Előbb a teljes ablak (a gyorssávból is), utána a navigáció.
+        await showFullWindow();
         _onTrayPortfolio?.call();
       case final String key when key.startsWith(_trayStock):
         _onTrayStock?.call(key.substring(_trayStock.length));

@@ -82,12 +82,29 @@ void main() {
   test('only a fresh install sees the onboarding, not existing users', () async {
     SharedPreferences.setMockInitialValues({});
     expect((await AppPreferences.load()).onboardingDone, isFalse);
+    // Az első indításkor közben írt kulcsok (pl. a próbaidő) után sem tűnik régi felhasználónak.
+    await (await SharedPreferences.getInstance()).setString('trial_started', 'x');
+    expect((await AppPreferences.load()).onboardingDone, isFalse);
     SharedPreferences.setMockInitialValues({
       'recent_symbols': <String>['AAPL'],
     });
     expect((await AppPreferences.load()).onboardingDone, isTrue);
     SharedPreferences.setMockInitialValues({'onboarding_done': true});
     expect((await AppPreferences.load()).onboardingDone, isTrue);
+  });
+
+  test('one damaged stored value does not reset the other preferences', () async {
+    SharedPreferences.setMockInitialValues({
+      'global_hotkey': '"oops"',
+      'favorite_symbols': <String>['AAPL'],
+      'telemetry_consent': true,
+      'keep_in_tray': 'not a bool',
+    });
+    final p = await AppPreferences.load();
+    expect(p.hotkeyJson, isNull);
+    expect(p.favorites, ['AAPL']);
+    expect(p.telemetryConsent, isTrue);
+    expect(p.keepInTray, isTrue);
   });
 
   test('the store review is requested once, after the third analysis', () async {

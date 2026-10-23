@@ -11,6 +11,7 @@ import 'package:window_manager/window_manager.dart';
 import '../../app_services.dart';
 import '../../core/desktop/desktop_integration.dart';
 import '../../core/desktop/quick_panel.dart';
+import '../../core/desktop/system_notifier.dart';
 import '../../core/models/stock_candidate.dart';
 import '../../core/models/stock_quote.dart';
 import '../../core/util/formatters.dart';
@@ -87,6 +88,9 @@ class _AppShellState extends State<AppShell> {
 
   bool _trayReady = false;
   bool _quickPanelReady = false;
+
+  /// A teljes ablak legutóbbi mérete: gyorssáv alatt ezen marad a rejtett felület.
+  Size? _fullSize;
   AppServices? _services;
 
   /// A gyorskereső panelből választott részvény: a panel eltűnik, és a teljes
@@ -147,6 +151,7 @@ class _AppShellState extends State<AppShell> {
     _services?.preferences.removeListener(_onPrefsForTray);
     _services?.alertMonitor.removeListener(_onAlertHits);
     _services?.alertMonitor.openRequest.removeListener(_onOpenRequest);
+    _services?.pageRequest.removeListener(_onPageRequest);
     _services?.reports.completed.removeListener(_onAnalysisDone);
     super.dispose();
   }
@@ -200,6 +205,16 @@ class _AppShellState extends State<AppShell> {
   }
 
   /// Értesítésre (vagy a „Megnyitás”-ra) koppintva a részvény nyílik meg.
+  /// Értesítésről kért oldal (portfólió, kezdőlap): a teljes ablakban.
+  Future<void> _onPageRequest() async {
+    final page = _services?.pageRequest.value;
+    if (page == null || !mounted) return;
+    await _services!.desktop.showFullWindow();
+    if (!mounted) return;
+    _goHome();
+    if (page == ShellPage.portfolio) _openPortfolio();
+  }
+
   Future<void> _onOpenRequest() async {
     final symbol = _services?.alertMonitor.openRequest.value;
     if (symbol == null || !mounted) return;
@@ -217,7 +232,10 @@ class _AppShellState extends State<AppShell> {
       _services = services;
       services.alertMonitor.addListener(_onAlertHits);
       services.alertMonitor.openRequest.addListener(_onOpenRequest);
+      services.pageRequest.addListener(_onPageRequest);
       services.reports.completed.addListener(_onAnalysisDone);
+      // A megnyitás már figyelve: jöhetnek a korábbi értesítésekre érkezett kattintások.
+      if (services.alertMonitor.notifier case final SystemNotifier n) unawaited(n.listen());
     }
     if (NativeQuickPanel.isSupported) {
       final panel = services.desktop.quickPanel;
@@ -255,6 +273,10 @@ class _AppShellState extends State<AppShell> {
         dark: Theme.of(context).brightness == Brightness.dark,
       );
     }
+    // Nyelvváltáskor a tálcamenü is az új nyelven (a következő képkocka után).
+    final locale = Localizations.localeOf(context);
+    if (_trayReady && _trayLocale != locale) WidgetsBinding.instance.addPostFrameCallback((_) => _refreshTray());
+    _trayLocale = locale;
     if (DesktopIntegration.isSupported && !_trayReady) {
       _trayReady = true;
       services.desktop.setupTray(
@@ -272,6 +294,10 @@ class _AppShellState extends State<AppShell> {
 
   Timer? _trayTimer;
   String _trayFavorites = '';
+  Locale? _trayLocale;
+
+  /// Minden frissítés növeli: egy lassabb, régebbi frissítés nem írja felül az újabbat.
+  int _trayGeneration = 0;
 
   void _onPrefsForTray() {
     final now = _services?.preferences.favorites.take(DesktopIntegration.trayMaxStocks).join(',') ?? '';
@@ -283,6 +309,7 @@ class _AppShellState extends State<AppShell> {
     if (services == null || !mounted) return;
     final l10n = AppLocalizations.of(context);
     final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
+    final generation = ++_trayGeneration;
     final symbols = services.preferences.favorites.take(DesktopIntegration.trayMaxStocks).toList();
     _trayFavorites = symbols.join(',');
     final quotes = await Future.wait([
@@ -295,7 +322,7 @@ class _AppShellState extends State<AppShell> {
         snapshot = await services.portfolioSnapshot();
       } catch (_) {}
     }
-    if (!mounted) return;
+    if (!mounted || generation != _trayGeneration) return;
     await services.desktop.setupTray(
       open: l10n.trayOpen,
       quickSearch: l10n.trayQuickSearch,
@@ -389,64 +416,40 @@ class _AppShellState extends State<AppShell> {
     return ListenableBuilder(
       listenable: services.desktop,
       builder: (context, _) {
-        if (services.desktop.isQuickBar) {
-          return QuickBar(
-            onOpenSymbol: (c) async {
-              await services.desktop.showFullWindow();
-              _goHome();
-              _openSymbol(c);
-            },
-            onOpenWindow: () async {
-              await services.desktop.showFullWindow();
-            },
-          );
-        }
-        return LayoutBuilder(
-          builder: (context, constraints) {
-            final wide = constraints.maxWidth >= AppShell.sidebarBreakpoint;
-            _wide = wide;
-            final content = Navigator(
-              key: _navigatorKey,
-              onGenerateRoute: (settings) => MaterialPageRoute<void>(
-                settings: settings,
-                builder: (_) => HomePage(onOpenSymbol: _openSymbol, showAppBarActions: !wide),
-              ),
-            );
-            if (!wide) {
-              return PopScope(
-                canPop: false,
-                onPopInvokedWithResult: (didPop, _) {
-                  if (!didPop) _onBack();
-                },
-                child: _phoneShell(context, content),
-              );
-            }
-            return PopScope(
-              canPop: false,
-              onPopInvokedWithResult: (didPop, _) {
-                if (!didPop) _onBack();
-              },
-              child: CallbackShortcuts(
-                bindings: _shortcuts(),
-                child: Scaffold(
-                  body: Row(
-                    children: [
-                      _Sidebar(
-                        onHome: _goHome,
-                        onNewSearch: _goHome,
-                        onOpenSymbol: _openSymbol,
-                        onOpenSettings: _openSettings,
-                        onOpenPortfolio: _openPortfolio,
-                        onOpenAlerts: _openAlerts,
-                        onShowShortcuts: _showShortcuts,
-                      ),
-                      Expanded(child: content),
-                    ],
-                  ),
+        final quick = services.desktop.isQuickBar;
+        final full = _fullSize;
+        // A gyorssáv a teljes felület fölött jelenik meg: az alatta lévő (rejtett, a
+        // legutóbbi ablakméreten tartott) navigáció és a megnyitott oldalak megmaradnak,
+        // így a sávból és a tálcamenüből is oda lehet lépni.
+        return Stack(
+          fit: StackFit.expand,
+          children: [
+            Offstage(
+              offstage: quick,
+              child: TickerMode(
+                enabled: !quick,
+                child: OverflowBox(
+                  alignment: Alignment.topLeft,
+                  minWidth: quick ? full?.width : null,
+                  maxWidth: quick ? full?.width : null,
+                  minHeight: quick ? full?.height : null,
+                  maxHeight: quick ? full?.height : null,
+                  child: _fullWindow(),
                 ),
               ),
-            );
-          },
+            ),
+            if (quick)
+              QuickBar(
+                onOpenSymbol: (c) async {
+                  await services.desktop.showFullWindow();
+                  _goHome();
+                  _openSymbol(c);
+                },
+                onOpenWindow: () async {
+                  await services.desktop.showFullWindow();
+                },
+              ),
+          ],
         );
       },
     );
@@ -454,6 +457,56 @@ class _AppShellState extends State<AppShell> {
 }
 
 extension on _AppShellState {
+  /// A teljes ablak: oldalsáv vagy telefonos keret, benne a navigációval.
+  Widget _fullWindow() => LayoutBuilder(
+    builder: (context, constraints) {
+      if (!AppServices.of(context).desktop.isQuickBar) _fullSize = constraints.biggest;
+      final wide = constraints.maxWidth >= AppShell.sidebarBreakpoint;
+      _wide = wide;
+      final content = Navigator(
+        key: _navigatorKey,
+        onGenerateRoute: (settings) => MaterialPageRoute<void>(
+          settings: settings,
+          builder: (_) => HomePage(onOpenSymbol: _openSymbol, showAppBarActions: !wide),
+        ),
+      );
+      if (!wide) {
+        return PopScope(
+          canPop: false,
+          onPopInvokedWithResult: (didPop, _) {
+            if (!didPop) _onBack();
+          },
+          child: _phoneShell(context, content),
+        );
+      }
+      return PopScope(
+        canPop: false,
+        onPopInvokedWithResult: (didPop, _) {
+          if (!didPop) _onBack();
+        },
+        child: CallbackShortcuts(
+          bindings: _shortcuts(),
+          child: Scaffold(
+            body: Row(
+              children: [
+                _Sidebar(
+                  onHome: _goHome,
+                  onNewSearch: _goHome,
+                  onOpenSymbol: _openSymbol,
+                  onOpenSettings: _openSettings,
+                  onOpenPortfolio: _openPortfolio,
+                  onOpenAlerts: _openAlerts,
+                  onShowShortcuts: _showShortcuts,
+                ),
+                Expanded(child: content),
+              ],
+            ),
+          ),
+        ),
+      );
+    },
+  );
+
   /// Telefonos keret: a fülek tartalma és alul a menüsor (feliratokkal).
   Widget _phoneShell(BuildContext context, Widget home) {
     final l10n = AppLocalizations.of(context);

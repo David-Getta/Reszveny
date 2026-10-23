@@ -93,6 +93,26 @@ void main() {
       expect(b.token, 'tok1');
     });
 
+    test('két egyszerre elutasított kérés után is csak egy új fiók készül', () async {
+      var tokens = 0;
+      final client = MockClient((req) async {
+        if (req.url.path == '/v1/auth/anonymous') {
+          tokens++;
+          return _json({'user_id': 'u$tokens', 'token': 'tok$tokens', 'entitlements': _ent()});
+        }
+        if (req.headers['authorization'] == 'Bearer stale') {
+          // A második elutasítás később érkezik, mint az első kérés új fiókja.
+          if (req.url.path == '/v1/sync') await Future<void>.delayed(const Duration(milliseconds: 50));
+          return _json({'error': 'unauthorized'}, 401);
+        }
+        return _json({'entitlements': _ent(tier: 'pro'), 'data': null, 'updated_at': null});
+      });
+      final b = BackendClient(baseUrl: 'https://x.test', inner: client, tokenLoader: () async => 'stale');
+      await Future.wait([b.me(), b.getSync().then<Object?>((r) => r, onError: (Object _) => null)]);
+      expect(tokens, 1);
+      expect(b.token, 'tok1');
+    });
+
     test('vásárlás-ellenőrzés a szerver jogosultságát adja vissza, hibát kóddal dob', () async {
       final client = MockClient((req) async {
         if (req.url.path == '/v1/auth/anonymous') {

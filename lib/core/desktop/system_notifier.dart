@@ -24,13 +24,28 @@ class SystemNotifier implements AlertNotifier {
 
   static bool get isSupported => !kIsWeb && (Platform.isMacOS || Platform.isWindows || Platform.isLinux);
 
+  /// macOS: a kattintások fogadása már az első értesítés előtt (az előző futás
+  /// értesítésére kattintva, vagy ha a kattintás indította az appot); a natív
+  /// oldal addig gyűjti őket. Akkor hívandó, amikor a megnyitást már figyelik.
+  Future<void> listen() async {
+    if (!isSupported || !Platform.isMacOS) return;
+    _listenForClicks();
+    try {
+      await _channel.invokeMethod<void>('ready');
+    } catch (e) {
+      debugPrint('Értesítés-kattintások fogadása nem indult el: $e');
+    }
+  }
+
+  void _listenForClicks() => _channel.setMethodCallHandler((call) async {
+    if (call.method == 'clicked') onClick?.call(call.arguments as String? ?? '');
+  });
+
   Future<void> _setUp() async {
     if (_ready) return;
     _ready = true;
     if (Platform.isMacOS) {
-      _channel.setMethodCallHandler((call) async {
-        if (call.method == 'clicked') onClick?.call(call.arguments as String? ?? '');
-      });
+      _listenForClicks();
     } else {
       await localNotifier.setup(appName: 'WhatStock', shortcutPolicy: ShortcutPolicy.requireCreate);
     }

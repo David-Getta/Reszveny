@@ -120,7 +120,10 @@ class UpdateService extends ChangeNotifier with UpdaterListener {
 
   /// Kézi vagy háttér-ellenőrzés. [silent] esetén nem jelez hibát.
   Future<void> check({bool silent = false}) async {
-    if (_status == UpdateStatus.checking || _status == UpdateStatus.downloading) return;
+    // Sparkle/WinSparkle-nél az állapot a saját ablakukból jön, és nem mindig ér véget
+    // (a felhasználó bezárja az ablakot): ott a kézi ellenőrzés mindig indulhat.
+    final busy = _status == UpdateStatus.checking || _status == UpdateStatus.downloading;
+    if (busy && channel != UpdateChannel.sparkle) return;
     _set(UpdateStatus.checking);
     try {
       switch (channel) {
@@ -227,7 +230,9 @@ class UpdateService extends ChangeNotifier with UpdaterListener {
   @override
   void onUpdaterUpdateAvailable(AppcastItem? item) {
     _latestVersion = item?.displayVersionString ?? item?.versionString;
-    _set(_autoInstall ? UpdateStatus.downloading : UpdateStatus.available);
+    // Nem „letöltés”: a WinSparkle nem jelzi a letöltés végét, a Sparkle csak akkor,
+    // ha a felhasználó a saját ablakában a telepítést választja – a jelző beragadna.
+    _set(UpdateStatus.available);
   }
 
   @override

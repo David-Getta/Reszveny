@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.267)
+# Változásjegyzék (0.2.130 → 0.2.268)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,22 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Asztali app és háttér: egy tizennegyedik kódátnézés javításai
+
+- **0.2.268**: Windowson egyszerre csak egy WhatStock fut: az újbóli indítás a tálcán rejtőző ablakot hozza elő
+  (eddig egy második példány indult, minden értesítés kétszer jött, és a két példány felülírta egymás mentett
+  adatait). A gyorssáv nem bontja le a főablak navigációját (a megnyitott részvény megmarad), a tálca
+  „Portfólió” pontja a gyorssávból is működik. macOS-en az előző futás értesítésére kattintva is megnyílik a
+  részvény (eddig csak akkor, ha ebben a futásban már ment értesítés). A portfólió napi mozgása és célja, a
+  reggeli összefoglaló és az osztalék-emlékeztető értesítése is megnyitja a hozzá tartozó oldalt. Egy késve
+  érkező 401-es válasz nem hoz létre második névtelen fiókot (második próbaidőt, elveszett vásárlás-ellenőrzést).
+  A hibásan beírt meghívókód nem mentődik el (eddig minden további kéréssel ment, és a szerver egy óra után
+  kizárta az IP-címet); a túl sok próbálkozás és a kapcsolati hiba saját üzenetet kap. A Sparkle/WinSparkle
+  frissítésnél a „Letöltés…” jelző nem ragad be, és a kézi ellenőrzés mindig indul. Egy sérült tárolt érték (pl.
+  a gyorsbillentyűé) nem nullázza le az összes beállítást (kedvenceket, hozzájárulást). Az első indításkor
+  félbehagyott bevezető a következő indításkor újra megjelenik. A tálcamenü nem mutat régebbi kedvenclistát egy
+  lassabb frissítés miatt, és nyelvváltáskor azonnal az új nyelven jelenik meg.
 
 ## Képfelismerés és keresés: egy tizenharmadik kódátnézés javításai
 

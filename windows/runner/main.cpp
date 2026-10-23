@@ -13,6 +13,21 @@ int APIENTRY wWinMain(_In_ HINSTANCE instance, _In_opt_ HINSTANCE prev,
     CreateAndAttachConsole();
   }
 
+  // Egyetlen példány: ha az app már fut (pl. a tálcán, rejtett ablakkal), azt
+  // hozzuk elő, és ez a példány kilép. Két példány kétszer értesítene, és
+  // felülírná egymás mentett adatait (a beállításfájlt egészében írják).
+  HANDLE instance_mutex =
+      ::CreateMutexW(nullptr, TRUE, L"Local\\WhatStock.SingleInstance");
+  if (instance_mutex != nullptr && ::GetLastError() == ERROR_ALREADY_EXISTS) {
+    HWND existing = ::FindWindowW(L"FLUTTER_RUNNER_WIN32_WINDOW", L"WhatStock");
+    if (existing != nullptr) {
+      ::ShowWindow(existing, ::IsIconic(existing) ? SW_RESTORE : SW_SHOW);
+      ::SetForegroundWindow(existing);
+    }
+    ::CloseHandle(instance_mutex);
+    return EXIT_SUCCESS;
+  }
+
   // Initialize COM, so that it is available for use in the library and/or
   // plugins.
   ::CoInitializeEx(nullptr, COINIT_APARTMENTTHREADED);

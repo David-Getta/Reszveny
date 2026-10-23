@@ -92,6 +92,16 @@ void main() {
     expect(server.seenInvites.last, 'GABOR-7K2Q');
   });
 
+  test('a mistyped invite code is not kept, so later requests do not send it', () async {
+    final server = _FakeServer();
+    final backend = BackendClient(baseUrl: 'https://api.test', inner: server.client);
+    await expectLater(backend.submitInvite('typo'), throwsA(isA<BackendException>()));
+    expect(backend.inviteProblem.value, InviteProblem.invalid);
+    expect((await SharedPreferences.getInstance()).getString('backend_invite'), isNull);
+    await expectLater(backend.me(), throwsA(isA<BackendException>()));
+    expect(server.seenInvites.last, isNull);
+  });
+
   test('an expired or overused invite is reported so the app can explain it', () async {
     final server = _FakeServer()..forcedError = 'invite_device_limit';
     final backend = BackendClient(baseUrl: 'https://api.test', inner: server.client);

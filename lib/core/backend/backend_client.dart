@@ -132,11 +132,18 @@ class BackendClient {
 
   /// A beírt meghívókód mentése és kipróbálása: siker esetén a szerver
   /// visszaadja, kinek szól; hibás kódnál [BackendException] (`invite_invalid`…).
+  /// A kód csak a sikeres próba után mentődik: a hibás nem megy tovább minden
+  /// kéréssel (a szerver a rossz kódokat IP-nként számolja, és egy idő után kizár).
   Future<void> submitInvite(String code) async {
+    final previous = await _loadInvite();
     _inviteCode = code.trim().toUpperCase();
-    _inviteLoaded = true;
+    try {
+      await account();
+    } catch (_) {
+      _inviteCode = previous;
+      rethrow;
+    }
     await _writeStored(_inviteKey, _inviteCode);
-    await account();
     inviteProblem.value = null;
   }
 
@@ -368,11 +375,14 @@ class BackendClient {
     return _entitlements(_decode(res));
   }
 
-  /// Hitelesített kérés; 401-re egyszer új fiókkal újrapróbálja.
+  /// Hitelesített kérés; 401-re egyszer új fiókkal újrapróbálja. Új fiók csak akkor
+  /// kell, ha még az elutasított token az érvényes: egy közben futó másik kérés már
+  /// létrehozhatta az újat (különben két névtelen fiók, két próbaidő készülne).
   Future<http.Response> _authorized(Future<http.Response> Function(Map<String, String> headers) send) async {
-    var res = await send(await authHeaders()).timeout(const Duration(seconds: 30));
+    final token = await ensureToken();
+    var res = await send({'authorization': 'Bearer $token'}).timeout(const Duration(seconds: 30));
     if (res.statusCode == 401) {
-      await resetToken();
+      if (_token == token) await resetToken();
       res = await send(await authHeaders()).timeout(const Duration(seconds: 30));
     }
     return res;

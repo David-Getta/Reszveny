@@ -698,11 +698,26 @@ class MainFlutterWindow: NSWindow {
     )
     let notifier = AlertNotifications.shared
     notifier.setUp()
+    // Amíg a Dart oldal nem jelez („ready”), a kattintások várnak: így az előző futás
+    // értesítésére kattintva (vagy ha a kattintás indította az appot) sem vesznek el.
+    var dartReady = false
+    var pendingClicks: [String] = []
     notifier.onClick = { id in
       NSApp.activate(ignoringOtherApps: true)
-      notifications.invokeMethod("clicked", arguments: id)
+      if dartReady {
+        notifications.invokeMethod("clicked", arguments: id)
+      } else {
+        pendingClicks.append(id)
+      }
     }
     notifications.setMethodCallHandler { call, result in
+      if call.method == "ready" {
+        dartReady = true
+        for id in pendingClicks { notifications.invokeMethod("clicked", arguments: id) }
+        pendingClicks.removeAll()
+        result(nil)
+        return
+      }
       guard call.method == "show", let args = call.arguments as? [String: Any] else {
         result(FlutterMethodNotImplemented)
         return

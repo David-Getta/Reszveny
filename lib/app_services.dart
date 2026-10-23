@@ -415,8 +415,16 @@ class AppServices {
     return u.replace(queryParameters: {...u.queryParameters, 'lang': locale.languageCode == 'hu' ? 'hu' : 'en'});
   }
 
-  /// Értesítésre koppintás: a riasztás részvénye nyíljon meg.
-  /// Koppintás egy rendszerértesítésre: a hozzá tartozó részvény nyílik meg.
+  /// Értesítésről kért oldal; a héj figyeli, és a teljes ablakban megnyitja.
+  final ValueNotifier<ShellPage?> pageRequest = ValueNotifier(null);
+
+  void requestPage(ShellPage page) {
+    pageRequest.value = null;
+    pageRequest.value = page;
+  }
+
+  /// Koppintás egy rendszerértesítésre: a hozzá tartozó részvény vagy oldal nyílik meg;
+  /// ismeretlen azonosítónál (pl. azóta törölt riasztás) legalább az ablak előjön.
   void openNotification(String id) {
     // Gyorsjelentés eredménye: `result-<ticker>-<nap>` – a részvény és az AI-összefoglaló.
     final result = RegExp(r'^result-(.+)-\d{4}-\d{2}-\d{2}$').firstMatch(id);
@@ -427,8 +435,14 @@ class AppServices {
     // Technikai jelzés: `signals-<nap>-<ticker>` – az első jelzett részvény.
     final signal = RegExp(r'^signals-\d{4}-\d{2}-\d{2}-(.+)$').firstMatch(id);
     if (signal != null) return alertMonitor.requestOpen(signal[1]!);
+    // Osztalék-emlékeztető: `dividend-<ticker>-<pénznem>-<nap>`.
+    final dividend = RegExp(r'^dividend-(.+)-[A-Z]{0,3}-\d{4}-\d{2}-\d{2}$').firstMatch(id);
+    if (dividend != null) return alertMonitor.requestOpen(dividend[1]!);
+    // A portfólió napi mozgása és célja: a portfólió; a reggeli összefoglaló: a kezdőlap.
+    if (id.startsWith('portfolio-')) return requestPage(ShellPage.portfolio);
     final alert = alerts.alerts.where((a) => a.id == id).firstOrNull;
-    if (alert != null) alertMonitor.requestOpen(alert.symbol);
+    if (alert != null) return alertMonitor.requestOpen(alert.symbol);
+    requestPage(ShellPage.home);
   }
 
   /// A jelzés-értesítés címe és szövege (részvényenként egy sor).
@@ -654,3 +668,6 @@ class AppServicesScope extends InheritedWidget {
   @override
   bool updateShouldNotify(AppServicesScope oldWidget) => services != oldWidget.services;
 }
+
+/// A héj oldalai, amelyeket egy értesítés kérhet.
+enum ShellPage { home, portfolio }
