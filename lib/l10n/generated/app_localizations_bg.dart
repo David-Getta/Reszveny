@@ -2780,6 +2780,11 @@ class AppLocalizationsBg extends AppLocalizations {
   String get lotSave => 'Запази';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Редактирай дивидент · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задай цел';
 
   @override

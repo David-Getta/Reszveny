@@ -2785,6 +2785,11 @@ class AppLocalizationsGn extends AppLocalizations {
   String get lotSave => 'Eñongatu';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Emoambue dividendo · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';
 
   @override

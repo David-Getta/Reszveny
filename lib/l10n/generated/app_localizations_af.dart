@@ -2783,6 +2783,11 @@ class AppLocalizationsAf extends AppLocalizations {
   String get lotSave => 'Stoor';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Wysig dividend · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Stel \'n doelwit';
 
   @override

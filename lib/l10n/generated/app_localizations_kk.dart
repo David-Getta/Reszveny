@@ -2778,6 +2778,11 @@ class AppLocalizationsKk extends AppLocalizations {
   String get lotSave => 'Сақтау';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Дивидендті өңдеу · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Мақсат қою';
 
   @override

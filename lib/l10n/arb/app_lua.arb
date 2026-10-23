@@ -831,5 +831,6 @@
   "onboardBody4": "Tuala export wa broker webe (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) anyi funda bisumba ne bisumbisha ne bianza: mona dipeta diebe ku luseke lua indice, dividende yebe ne tshikoso tsha tshidimu bua mukanda wa bitadi.",
   "lotEdit": "Shintulula",
   "lotEditTitle": "Shintulula kusumba anyi kusumbisha · {symbol}",
-  "lotSave": "Lama"
+  "lotSave": "Lama",
+  "dividendEditTitle": "Shintulula dividende · {symbol}"
 }

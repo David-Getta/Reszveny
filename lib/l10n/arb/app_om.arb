@@ -831,5 +831,6 @@
   "onboardBody4": "Faayilii ekspoortii birookerii keetii galchi (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) yookiin bittaa fi gurgurtaa harkaan dabali: bu'aa kee indeeksii tokko waliin wal bira qabamee, diviidendii kee fi cuunfaa waggaa gabaasa gibiraa keetiif ilaali.",
   "lotEdit": "Gulaali",
   "lotEditTitle": "Bittaa ykn gurgurtaa gulaali · {symbol}",
-  "lotSave": "Olkaa'i"
+  "lotSave": "Olkaa'i",
+  "dividendEditTitle": "Diviidendii gulaali · {symbol}"
 }

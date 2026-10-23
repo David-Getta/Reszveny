@@ -831,5 +831,6 @@
   "onboardBody4": "Importa l'exportació del teu bròquer (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) o afegeix operacions a mà: mira la teva rendibilitat comparada amb un índex, els teus dividends i un resum anual per a la declaració d'impostos.",
   "lotEdit": "Edita",
   "lotEditTitle": "Edita la transacció · {symbol}",
-  "lotSave": "Desa"
+  "lotSave": "Desa",
+  "dividendEditTitle": "Edita el dividend · {symbol}"
 }

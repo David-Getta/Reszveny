@@ -2783,6 +2783,11 @@ class AppLocalizationsUz extends AppLocalizations {
   String get lotSave => 'Saqlash';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Dividendni tahrirlash · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

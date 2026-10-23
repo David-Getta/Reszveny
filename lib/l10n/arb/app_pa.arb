@@ -831,5 +831,6 @@
   "onboardBody4": "ਆਪਣੇ ਬ੍ਰੋਕਰ ਦੀ ਐਕਸਪੋਰਟ ਫਾਈਲ ਇੰਪੋਰਟ ਕਰੋ (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ਜਾਂ ਲੈਣ-ਦੇਣ ਹੱਥੀਂ ਸ਼ਾਮਲ ਕਰੋ: ਕਿਸੇ ਇੰਡੈਕਸ ਦੇ ਮੁਕਾਬਲੇ ਆਪਣਾ ਰਿਟਰਨ, ਆਪਣੇ ਡਿਵੀਡੈਂਡ ਅਤੇ ਟੈਕਸ ਰਿਟਰਨ ਲਈ ਸਾਲਾਨਾ ਸਾਰ ਵੇਖੋ।",
   "lotEdit": "ਸੋਧੋ",
   "lotEditTitle": "ਲੈਣ-ਦੇਣ ਸੋਧੋ · {symbol}",
-  "lotSave": "ਸੇਵ ਕਰੋ"
+  "lotSave": "ਸੇਵ ਕਰੋ",
+  "dividendEditTitle": "ਡਿਵੀਡੈਂਡ ਸੋਧੋ · {symbol}"
 }

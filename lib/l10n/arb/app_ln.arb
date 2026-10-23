@@ -831,5 +831,6 @@
   "onboardBody4": "Kotisa export ya broker na yo (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) to bakisa bosombi mpe boteki na maboko: talá litomba na yo pembeni ya indice moko, ba dividende na yo mpe bokuse ya mbula mpo na declaration ya mpako.",
   "lotEdit": "Bongola",
   "lotEditTitle": "Bongola bosombi to boteki · {symbol}",
-  "lotSave": "Bomba"
+  "lotSave": "Bomba",
+  "dividendEditTitle": "Bongola dividende · {symbol}"
 }

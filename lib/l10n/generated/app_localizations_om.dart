@@ -2791,6 +2791,11 @@ class AppLocalizationsOm extends AppLocalizations {
   String get lotSave => 'Olkaa\'i';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Diviidendii gulaali · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

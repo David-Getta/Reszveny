@@ -831,5 +831,6 @@
   "onboardBody4": "Importujte export od svojho brokera (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) alebo zadajte obchody ručne: uvidíte svoj výnos v porovnaní s indexom, svoje dividendy aj ročný prehľad na daňové priznanie.",
   "lotEdit": "Upraviť",
   "lotEditTitle": "Upraviť transakciu · {symbol}",
-  "lotSave": "Uložiť"
+  "lotSave": "Uložiť",
+  "dividendEditTitle": "Upraviť dividendu · {symbol}"
 }

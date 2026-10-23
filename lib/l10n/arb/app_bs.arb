@@ -831,5 +831,6 @@
   "onboardBody4": "Uvezite izvoz svog brokera (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ili ručno dodajte transakcije: pogledajte svoj prinos u poređenju sa indeksom, svoje dividende i godišnji pregled za poresku prijavu.",
   "lotEdit": "Uredi",
   "lotEditTitle": "Uredi transakciju · {symbol}",
-  "lotSave": "Sačuvaj"
+  "lotSave": "Sačuvaj",
+  "dividendEditTitle": "Uredi dividendu · {symbol}"
 }

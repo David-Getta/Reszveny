@@ -831,5 +831,6 @@
   "onboardBody4": "Shigo da fitarwar dillalinka (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ko ƙara ma'amaloli da hannu: ga ribarka idan aka kwatanta da ma'auni, rabon ribarka da taƙaitaccen bayanin shekara don bayanin harajinka.",
   "lotEdit": "Gyara",
   "lotEditTitle": "Gyara ma'amala · {symbol}",
-  "lotSave": "Ajiye"
+  "lotSave": "Ajiye",
+  "dividendEditTitle": "Gyara rabon riba · {symbol}"
 }

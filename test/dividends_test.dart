@@ -44,6 +44,34 @@ void main() {
       expect((await PortfolioStore.load()).dividends, isEmpty);
     });
 
+    test('a dividend corrected in place keeps its id; a deleted one does not come back', () async {
+      final store = PortfolioStore();
+      await store.add(symbol: 'KO', quantity: 10, price: 60, currency: 'USD', account: 'Revolut');
+      final a = await store.addDividend(symbol: 'KO', amount: 4.6, currency: 'USD', date: DateTime(2026, 4, 1));
+      final b = await store.addDividend(symbol: 'KO', amount: 4.6, currency: 'USD', date: DateTime(2026, 7, 1));
+      await store.replaceDividend(
+        DividendRecord(
+          id: a.id,
+          symbol: ' ko',
+          amount: 5.1,
+          currency: 'usd',
+          date: DateTime(2026, 9, 1),
+          account: 'revolut',
+        ),
+      );
+      final edited = store.dividends.first;
+      expect((edited.id, edited.symbol, edited.amount, edited.currency), (a.id, 'KO', 5.1, 'USD'));
+      expect(edited.account, 'Revolut', reason: 'a már használt írásmód');
+      expect(store.dividends.map((d) => d.id), [a.id, b.id], reason: 'az új dátum szerint elöl');
+      expect((await PortfolioStore.load()).dividends.first.amount, 5.1);
+
+      await store.removeDividend(b.id);
+      await store.replaceDividend(
+        DividendRecord(id: b.id, symbol: 'KO', amount: 9, currency: 'USD', date: DateTime(2026, 7, 1)),
+      );
+      expect(store.dividends.map((d) => d.id), [a.id]);
+    });
+
     test('a corrupt dividends store does not lose the lots (and vice versa)', () async {
       SharedPreferences.setMockInitialValues({
         'portfolio_lots': '[{"id":"a","symbol":"AAPL","quantity":2,"price":100,"currency":"USD"}]',
@@ -580,5 +608,53 @@ void main() {
       find.descendant(of: next, matching: find.textContaining(RegExp(r'^around .* · ~ [\d.,]+ USD$'))),
       findsOneWidget,
     );
+  });
+  testWidgets('a received dividend can be corrected from the card and from the position sheet', (tester) async {
+    tester.view.physicalSize = const Size(1200, 2600);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final s = services();
+    await s.portfolio.add(symbol: 'AAPL', quantity: 10, price: 200, currency: 'USD', date: DateTime(2025, 5, 2));
+    final d = await s.portfolio.addDividend(
+      symbol: 'AAPL',
+      amount: 2.345,
+      currency: 'USD',
+      date: DateTime(2025, 11, 13),
+    );
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Portfolio').first);
+    await tester.pumpAndSettle();
+
+    final edit = find.byKey(ValueKey('dividend-edit-${d.id}'));
+    await tester.ensureVisible(edit);
+    await tester.pumpAndSettle();
+    await tester.tap(edit);
+    await tester.pumpAndSettle();
+    expect(find.text('Edit dividend · AAPL'), findsOneWidget);
+    // A tárolt összeg kerekítés nélkül, a múltbeli nap megmarad.
+    expect(tester.widget<TextField>(find.byKey(const ValueKey('dividend-amount'))).controller!.text, '2.345');
+    expect(
+      find.descendant(of: find.byType(AlertDialog), matching: find.text(Fmt('en').date(DateTime(2025, 11, 13)))),
+      findsOneWidget,
+    );
+    expect(find.text('Save'), findsOneWidget);
+    await tester.enterText(find.byKey(const ValueKey('dividend-amount')), '2.4');
+    await tester.tap(find.byKey(const ValueKey('dividend-submit')));
+    await tester.pumpAndSettle();
+    final edited = s.portfolio.dividends.single;
+    expect((edited.id, edited.amount, edited.date), (d.id, 2.4, DateTime(2025, 11, 13)));
+
+    // A pozíció tranzakciós lapján is javítható.
+    await tester.tap(find.byKey(const ValueKey('position-menu-AAPL')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(ValueKey('sheet-dividend-edit-${d.id}')));
+    await tester.pumpAndSettle();
+    expect(tester.widget<TextField>(find.byKey(const ValueKey('dividend-amount'))).controller!.text, '2.4');
+    await tester.enterText(find.byKey(const ValueKey('dividend-amount')), '2.5');
+    await tester.tap(find.byKey(const ValueKey('dividend-submit')));
+    await tester.pumpAndSettle();
+    expect(s.portfolio.dividends.single.amount, 2.5);
+    expect(find.textContaining('Dividends received: 2.50 USD'), findsOneWidget);
   });
 }

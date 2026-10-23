@@ -831,5 +831,6 @@
   "onboardBody4": "Ampidiro ny fanondranana avy amin'ny broker-nao (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) na ampio tanana ny fividianana sy fivarotana: jereo ny tombonao raha ampitahaina amin'ny index iray, ny dividandinao ary ny famintinana isan-taona ho an'ny fanambaranao hetra.",
   "lotEdit": "Ovay",
   "lotEditTitle": "Ovay ny fividianana na fivarotana · {symbol}",
-  "lotSave": "Tehirizo"
+  "lotSave": "Tehirizo",
+  "dividendEditTitle": "Ovay ny dividandy · {symbol}"
 }

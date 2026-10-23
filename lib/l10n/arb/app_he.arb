@@ -831,5 +831,6 @@
   "onboardBody4": "ייבאו את קובץ הייצוא של הברוקר (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) או הוסיפו עסקאות ידנית: ראו את התשואה שלכם לצד מדד, את הדיבידנדים ואת הסיכום השנתי לדוח המס.",
   "lotEdit": "עריכה",
   "lotEditTitle": "עריכת עסקה · {symbol}",
-  "lotSave": "שמירה"
+  "lotSave": "שמירה",
+  "dividendEditTitle": "עריכת דיבידנד · {symbol}"
 }

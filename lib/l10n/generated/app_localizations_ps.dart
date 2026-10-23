@@ -2771,6 +2771,11 @@ class AppLocalizationsPs extends AppLocalizations {
   String get lotSave => 'خوندي کړئ';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'ډیویډنډ سم کړئ · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

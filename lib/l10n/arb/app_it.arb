@@ -831,5 +831,6 @@
   "onboardBody4": "Importa l’esportazione del tuo broker (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) o aggiungi le operazioni a mano: vedi il tuo rendimento accanto a un indice, i tuoi dividendi e un riepilogo annuale per la dichiarazione dei redditi.",
   "lotEdit": "Modifica",
   "lotEditTitle": "Modifica transazione · {symbol}",
-  "lotSave": "Salva"
+  "lotSave": "Salva",
+  "dividendEditTitle": "Modifica dividendo · {symbol}"
 }

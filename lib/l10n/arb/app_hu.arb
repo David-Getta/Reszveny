@@ -732,6 +732,7 @@
   "lotEdit": "Szerkesztés",
   "lotEditTitle": "Tranzakció javítása · {symbol}",
   "lotSave": "Mentés",
+  "dividendEditTitle": "Osztalék javítása · {symbol}",
   "portfolioGoalSet": "Cél kitűzése",
   "portfolioGoalTitle": "Portfólió-cél",
   "portfolioGoalProgress": "{percent} kész · cél: {amount}",

@@ -831,5 +831,6 @@
   "onboardBody4": "I ka broker ka export fayili lase (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) walima ka i ka sanniw ni feereliw sɛbɛn ni bolo ye: i ka tɔnɔ filɛ ka a sanga indɛkisi dɔ ma, i ka dividandiw ani san jatebɔ i ka nisɔngɔ dantigɛli kama.",
   "lotEdit": "A yɛlɛma",
   "lotEditTitle": "Sanni walima feereli yɛlɛma · {symbol}",
-  "lotSave": "A mara"
+  "lotSave": "A mara",
+  "dividendEditTitle": "Dividandi yɛlɛma · {symbol}"
 }

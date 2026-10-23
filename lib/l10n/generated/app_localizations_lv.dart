@@ -2823,6 +2823,11 @@ class AppLocalizationsLv extends AppLocalizations {
   String get lotSave => 'Saglabāt';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Rediģēt dividendi · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

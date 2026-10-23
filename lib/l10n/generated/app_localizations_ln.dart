@@ -2791,6 +2791,11 @@ class AppLocalizationsLn extends AppLocalizations {
   String get lotSave => 'Bomba';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Bongola dividende · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

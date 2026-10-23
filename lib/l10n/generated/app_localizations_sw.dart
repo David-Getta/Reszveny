@@ -2781,6 +2781,11 @@ class AppLocalizationsSw extends AppLocalizations {
   String get lotSave => 'Hifadhi';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Hariri gawio · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

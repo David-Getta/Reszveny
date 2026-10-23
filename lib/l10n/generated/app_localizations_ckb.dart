@@ -2781,6 +2781,11 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get lotSave => 'پاشەکەوتکردن';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'دەستکاریکردنی پشکی قازانج · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

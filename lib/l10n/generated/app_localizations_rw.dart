@@ -2792,6 +2792,11 @@ class AppLocalizationsRw extends AppLocalizations {
   String get lotSave => 'Bika';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Hindura idividende · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Shyiraho intego';
 
   @override

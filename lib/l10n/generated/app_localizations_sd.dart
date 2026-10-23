@@ -2769,6 +2769,11 @@ class AppLocalizationsSd extends AppLocalizations {
   String get lotSave => 'محفوظ ڪريو';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'ڊيويڊنڊ ۾ ترميم ڪريو · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

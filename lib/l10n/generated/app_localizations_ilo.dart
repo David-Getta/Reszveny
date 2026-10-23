@@ -2800,6 +2800,11 @@ class AppLocalizationsIlo extends AppLocalizations {
   String get lotSave => 'I-save';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'I-edit ti dibidendo · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

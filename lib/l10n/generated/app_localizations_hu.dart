@@ -2784,6 +2784,11 @@ class AppLocalizationsHu extends AppLocalizations {
   String get lotSave => 'Mentés';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Osztalék javítása · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

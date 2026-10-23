@@ -831,5 +831,6 @@
   "onboardBody4": "Egueru nde broker export (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) térã embojoapy nde pópe ne jejogua ha ñemu: ehecha ne rendimiento peteĩ índice ykére, ne dividendo-kuéra ha ary ñemombykymi ne declaración de impuestos-rã.",
   "lotEdit": "Emoambue",
   "lotEditTitle": "Emoambue jejogua térã ñemu · {symbol}",
-  "lotSave": "Eñongatu"
+  "lotSave": "Eñongatu",
+  "dividendEditTitle": "Emoambue dividendo · {symbol}"
 }

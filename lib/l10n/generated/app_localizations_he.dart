@@ -2774,6 +2774,11 @@ class AppLocalizationsHe extends AppLocalizations {
   String get lotSave => 'שמירה';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'עריכת דיבידנד · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'הגדרת יעד';
 
   @override

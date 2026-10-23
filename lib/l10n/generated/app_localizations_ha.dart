@@ -2786,6 +2786,11 @@ class AppLocalizationsHa extends AppLocalizations {
   String get lotSave => 'Ajiye';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Gyara rabon riba · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

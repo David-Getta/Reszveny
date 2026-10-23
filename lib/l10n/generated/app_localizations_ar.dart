@@ -2848,6 +2848,11 @@ class AppLocalizationsAr extends AppLocalizations {
   String get lotSave => 'حفظ';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'تعديل توزيعة الأرباح · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'تحديد هدف';
 
   @override

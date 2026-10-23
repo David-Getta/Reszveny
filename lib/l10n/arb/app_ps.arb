@@ -831,5 +831,6 @@
   "onboardBody4": "د خپل بروکر اکسپورټ وارد کړئ (Revolut، Trading 212، IBKR، DEGIRO، Schwab…) یا راکړې ورکړې په لاس اضافه کړئ: د یوه شاخص په پرتله خپله ګټه، ډیویډنډونه او د مالیې د اظهارنامې لپاره کلنۍ لنډیز وګورئ.",
   "lotEdit": "سمول",
   "lotEditTitle": "راکړه ورکړه سمه کړئ · {symbol}",
-  "lotSave": "خوندي کړئ"
+  "lotSave": "خوندي کړئ",
+  "dividendEditTitle": "ډیویډنډ سم کړئ · {symbol}"
 }

@@ -2780,6 +2780,11 @@ class AppLocalizationsAz extends AppLocalizations {
   String get lotSave => 'Yadda saxla';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Dividendi redaktə et · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hədəf təyin et';
 
   @override

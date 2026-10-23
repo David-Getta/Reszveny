@@ -831,5 +831,6 @@
   "onboardBody4": "Tengani fayilo ya export ya broker wanu (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) kapena lowetsani zogula ndi zogulitsa pamanja: onani phindu lanu poyerekeza ndi index, madividendi anu ndi chidule cha pachaka cha msonkho wanu.",
   "lotEdit": "Sinthani",
   "lotEditTitle": "Sinthani kugula kapena kugulitsa · {symbol}",
-  "lotSave": "Sungani"
+  "lotSave": "Sungani",
+  "dividendEditTitle": "Sinthani dividendi · {symbol}"
 }

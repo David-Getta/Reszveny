@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.234)
+# Változásjegyzék (0.2.130 → 0.2.235)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -90,7 +90,10 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - **Tartási idő** a „Pozícióm” kártyán: mióta tartod a legrégebbi még birtokolt darabokat („Tartod: 1 év 7 hónap ·
   2024. márc. 4. óta”).
 - **Tranzakció javítása**: a tranzakciós lapon a ceruzával a darab, az ár, a dátum, a számla és a díj javítható
-  (ugyanaz a tétel marad, szinkronban); eddig csak törölni és újra felvenni lehetett.
+  (ugyanaz a tétel marad, szinkronban); eddig csak törölni és újra felvenni lehetett. A **kapott osztalék** is
+  javítható (a „Kapott osztalékok” kártyán és a tranzakciós lapon): összeg, pénznem, nap, számla. Javításkor a tárolt
+  számok kerekítés nélkül töltődnek vissza (a 0,12345678 tört részvény nem lesz 0,1235 mentéskor, a „Mind” gomb is
+  pontosan a birtokolt darabot írja be).
 - **Jegyzet a tranzakcióhoz** (befektetési napló): a vétel/eladás dialógusban „Jegyzet hozzáadása” – a „miért veszed /
   adod el” a részvény jegyzeteinek végére kerül, dátummal, darabszámmal és árral; szinkronban, az AI-elemzés is látja.
 - Az előnézet a **súlyt** is mutatja: mekkora része lesz a részvény a portfóliónak a vétel/eladás után („Súly a

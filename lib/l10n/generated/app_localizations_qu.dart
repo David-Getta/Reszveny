@@ -2793,6 +2793,11 @@ class AppLocalizationsQu extends AppLocalizations {
   String get lotSave => 'Waqaychay';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Dividendota allichay · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

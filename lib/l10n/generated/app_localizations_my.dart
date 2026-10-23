@@ -2769,6 +2769,11 @@ class AppLocalizationsMy extends AppLocalizations {
   String get lotSave => 'သိမ်းရန်';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'အမြတ်ဝေစု ပြင်ရန် · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

@@ -2821,6 +2821,11 @@ class AppLocalizationsRo extends AppLocalizations {
   String get lotSave => 'Salvează';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Editează dividendul · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

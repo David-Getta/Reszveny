@@ -2659,6 +2659,11 @@ class AppLocalizationsZh extends AppLocalizations {
   String get lotSave => '保存';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return '编辑股息 · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5685,6 +5690,11 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get lotSave => '儲存';
+
+  @override
+  String dividendEditTitle(String symbol) {
+    return '編輯股息 · $symbol';
+  }
 
   @override
   String get portfolioGoalSet => '設定目標';

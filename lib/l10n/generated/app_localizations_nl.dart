@@ -2785,6 +2785,11 @@ class AppLocalizationsNl extends AppLocalizations {
   String get lotSave => 'Opslaan';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Dividend bewerken · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Doel instellen';
 
   @override

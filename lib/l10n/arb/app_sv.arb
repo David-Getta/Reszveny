@@ -831,5 +831,6 @@
   "onboardBody4": "Importera exporten från din mäklare (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) eller lägg till affärer manuellt: se din avkastning bredvid ett index, dina utdelningar och en årsöversikt till deklarationen.",
   "lotEdit": "Redigera",
   "lotEditTitle": "Redigera transaktion · {symbol}",
-  "lotSave": "Spara"
+  "lotSave": "Spara",
+  "dividendEditTitle": "Redigera utdelning · {symbol}"
 }

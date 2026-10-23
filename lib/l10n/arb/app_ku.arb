@@ -831,5 +831,6 @@
   "onboardBody4": "Eksporta brokerê xwe import bike (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) an danûstandinan bi destan lê zêde bike: qezenca xwe li gorî îndeksekê, dividendên xwe û kurteya salane ji bo daxuyaniya bacê bibîne.",
   "lotEdit": "Biguherîne",
   "lotEditTitle": "Danûstandinê biguherîne · {symbol}",
-  "lotSave": "Tomar bike"
+  "lotSave": "Tomar bike",
+  "dividendEditTitle": "Dividendê biguherîne · {symbol}"
 }

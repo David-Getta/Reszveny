@@ -2782,6 +2782,11 @@ class AppLocalizationsKu extends AppLocalizations {
   String get lotSave => 'Tomar bike';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Dividendê biguherîne · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

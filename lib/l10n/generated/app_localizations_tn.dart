@@ -2798,6 +2798,11 @@ class AppLocalizationsTn extends AppLocalizations {
   String get lotSave => 'Boloka';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Fetola dividente · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Baya maikaelelo';
 
   @override

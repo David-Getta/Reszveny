@@ -2777,6 +2777,11 @@ class AppLocalizationsNe extends AppLocalizations {
   String get lotSave => 'सुरक्षित गर्नुहोस्';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'लाभांश सम्पादन गर्नुहोस् · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तोक्नुहोस्';
 
   @override

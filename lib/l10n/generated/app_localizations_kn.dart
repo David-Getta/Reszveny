@@ -2785,6 +2785,11 @@ class AppLocalizationsKn extends AppLocalizations {
   String get lotSave => 'ಉಳಿಸಿ';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'ಡಿವಿಡೆಂಡ್ ಎಡಿಟ್ ಮಾಡಿ · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

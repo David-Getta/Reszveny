@@ -831,5 +831,6 @@
   "onboardBody4": "Zaimportuj eksport od swojego brokera (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) lub dodaj transakcje ręcznie: zobacz swoją stopę zwrotu na tle indeksu, dywidendy i podsumowanie roczne do zeznania podatkowego.",
   "lotEdit": "Edytuj",
   "lotEditTitle": "Edytuj transakcję · {symbol}",
-  "lotSave": "Zapisz"
+  "lotSave": "Zapisz",
+  "dividendEditTitle": "Edytuj dywidendę · {symbol}"
 }

@@ -831,5 +831,6 @@
   "onboardBody4": "Import your broker export (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) or add your buy and sell by hand: see your return side by side with one index, your dividends and yearly summary for your tax return.",
   "lotEdit": "Change",
   "lotEditTitle": "Change buy or sell · {symbol}",
-  "lotSave": "Save"
+  "lotSave": "Save",
+  "dividendEditTitle": "Change dividend · {symbol}"
 }

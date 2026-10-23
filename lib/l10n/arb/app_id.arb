@@ -831,5 +831,6 @@
   "onboardBody4": "Impor ekspor dari broker Anda (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) atau tambahkan transaksi secara manual: lihat imbal hasil Anda dibandingkan indeks, dividen Anda, dan ringkasan tahunan untuk pelaporan pajak.",
   "lotEdit": "Edit",
   "lotEditTitle": "Edit transaksi · {symbol}",
-  "lotSave": "Simpan"
+  "lotSave": "Simpan",
+  "dividendEditTitle": "Edit dividen · {symbol}"
 }

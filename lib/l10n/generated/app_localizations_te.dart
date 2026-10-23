@@ -2785,6 +2785,11 @@ class AppLocalizationsTe extends AppLocalizations {
   String get lotSave => 'సేవ్ చేయండి';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'డివిడెండ్‌ను సవరించండి · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

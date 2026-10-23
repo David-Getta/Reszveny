@@ -15,6 +15,10 @@ import 'portfolio_valuation.dart' show PortfolioSnapshot, weightChange;
 String plainNumber(double v) =>
     v == v.roundToDouble() ? v.toStringAsFixed(0) : v.toStringAsFixed(v < 1 ? 4 : 2).replaceAll(RegExp(r'0+$'), '');
 
+/// Tárolt szám a beviteli mezőbe pontosan, kerekítés nélkül (javításkor és a
+/// „Mind” gombnál: a 0,12345678 tört részvény ne változzon mentéskor).
+String exactNumber(double v) => v == v.roundToDouble() && v.abs() < 1e15 ? v.toStringAsFixed(0) : v.toString();
+
 /// Szám beolvasása a felhasználó írásmódjában: „1 234,5”, „1,234.5”, „12,5”.
 /// Ha pont és vessző is van, az utolsó a tizedesjel. `null`, ha nem szám.
 double? parseDecimal(String input) {
@@ -167,11 +171,16 @@ class _AddLotDialogState extends State<_AddLotDialog> {
   @override
   void initState() {
     super.initState();
-    final p = widget.editing?.price ?? widget.currentPrice;
-    _price = TextEditingController(text: p == null ? '' : plainNumber(p));
+    _price = TextEditingController(
+      text: switch ((widget.editing, widget.currentPrice)) {
+        (final e?, _) => exactNumber(e.price),
+        (null, final p?) => plainNumber(p),
+        _ => '',
+      },
+    );
     if (widget.editing case final e?) {
-      _quantity.text = plainNumber(e.quantity);
-      if (e.fee > 0) _fee.text = plainNumber(e.fee);
+      _quantity.text = exactNumber(e.quantity);
+      if (e.fee > 0) _fee.text = exactNumber(e.fee);
     }
     // Az előnézet minden beírásra frissül (a „Mind” gomb kitöltésére is).
     for (final c in [_quantity, _price, _fee]) {
@@ -403,7 +412,7 @@ class _AddLotDialogState extends State<_AddLotDialog> {
                     ? null
                     : InkWell(
                         key: const ValueKey('lot-sell-all'),
-                        onTap: () => _quantity.text = plainNumber(_sellMax!),
+                        onTap: () => _quantity.text = exactNumber(_sellMax!),
                         child: Text(l10n.portfolioSellAll, style: TextStyle(color: p.accent)),
                       ),
               ),

@@ -2778,6 +2778,11 @@ class AppLocalizationsUr extends AppLocalizations {
   String get lotSave => 'محفوظ کریں';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'ڈیویڈنڈ میں ترمیم کریں · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'ہدف مقرر کریں';
 
   @override

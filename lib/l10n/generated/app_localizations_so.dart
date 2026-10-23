@@ -2788,6 +2788,11 @@ class AppLocalizationsSo extends AppLocalizations {
   String get lotSave => 'Kaydi';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Wax ka beddel faa\'iido-saamiga · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

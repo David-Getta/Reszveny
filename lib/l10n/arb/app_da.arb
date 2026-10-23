@@ -831,5 +831,6 @@
   "onboardBody4": "Importér din brokers eksport (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) eller tilføj handler manuelt: se dit afkast ved siden af et indeks, dine udbytter og en årsoversigt til selvangivelsen.",
   "lotEdit": "Rediger",
   "lotEditTitle": "Rediger transaktion · {symbol}",
-  "lotSave": "Gem"
+  "lotSave": "Gem",
+  "dividendEditTitle": "Rediger udbytte · {symbol}"
 }

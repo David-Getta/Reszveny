@@ -831,5 +831,6 @@
   "onboardBody4": "Importa la exportación de tu bróker (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) o añade operaciones a mano: consulta tu rentabilidad frente a un índice, tus dividendos y un resumen anual para tu declaración de impuestos.",
   "lotEdit": "Editar",
   "lotEditTitle": "Editar transacción · {symbol}",
-  "lotSave": "Guardar"
+  "lotSave": "Guardar",
+  "dividendEditTitle": "Editar dividendo · {symbol}"
 }

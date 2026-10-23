@@ -2770,6 +2770,11 @@ class AppLocalizationsWo extends AppLocalizations {
   String get lotSave => 'Denc';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Soppi dividande bi · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

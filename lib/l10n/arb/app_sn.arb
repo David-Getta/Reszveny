@@ -831,5 +831,6 @@
   "onboardBody4": "Pinza export yebroker wako (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) kana kuti nyora zvawakatenga nezvawakatengesa nemaoko: ona pundutso yako ichienzaniswa neindex, madividendi ako uye pfupiso yegore yemushumo wako wemutero.",
   "lotEdit": "Gadzirisa",
   "lotEditTitle": "Gadzirisa kutenga kana kutengesa · {symbol}",
-  "lotSave": "Chengetedza"
+  "lotSave": "Chengetedza",
+  "dividendEditTitle": "Gadzirisa dividendi · {symbol}"
 }

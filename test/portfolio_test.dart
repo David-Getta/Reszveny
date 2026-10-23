@@ -487,6 +487,16 @@ void main() {
     expect(parseDecimal('1e400'), isNull);
   });
 
+  test('stored numbers go back into an input field exactly, and read back unchanged', () {
+    for (final v in [0.12345678, 12.345, 199.9999, 12.0, 1e-7, 1234567.891]) {
+      expect(parseDecimal(exactNumber(v)), v, reason: '$v');
+    }
+    expect(exactNumber(0.12345678), '0.12345678', reason: 'a tört részvény nem kerekedik');
+    expect(exactNumber(12), '12');
+    // A nyelv tizedesjelével a 12,345 németül sem lesz 12345.
+    expect(parseAmount(exactNumber(12.345).replaceFirst('.', ','), 'de'), 12.345);
+  });
+
   test('money amounts: thousands separators in the reader’s language', () {
     // Angolul a vessző ezres tagolás (ha utána három számjegy jön), magyarul és németül a pont.
     expect(parseAmount('5,000', 'en'), 5000);

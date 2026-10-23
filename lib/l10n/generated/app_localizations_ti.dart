@@ -2741,6 +2741,11 @@ class AppLocalizationsTi extends AppLocalizations {
   String get lotSave => 'ዓቅብ';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'ድቪደንድ ኣመዓራሪ · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

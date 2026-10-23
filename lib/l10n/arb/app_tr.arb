@@ -831,5 +831,6 @@
   "onboardBody4": "Aracı kurumunuzun dışa aktarım dosyasını içe aktarın (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) veya işlemleri elle ekleyin: getirinizi bir endeksle karşılaştırmalı olarak, temettülerinizi ve vergi beyannameniz için yıllık özeti görün.",
   "lotEdit": "Düzenle",
   "lotEditTitle": "İşlemi düzenle · {symbol}",
-  "lotSave": "Kaydet"
+  "lotSave": "Kaydet",
+  "dividendEditTitle": "Temettüyü düzenle · {symbol}"
 }

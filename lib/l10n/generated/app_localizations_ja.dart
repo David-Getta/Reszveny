@@ -2694,6 +2694,11 @@ class AppLocalizationsJa extends AppLocalizations {
   String get lotSave => '保存';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return '配当を編集 · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override

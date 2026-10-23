@@ -2791,6 +2791,11 @@ class AppLocalizationsCeb extends AppLocalizations {
   String get lotSave => 'I-save';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Usba ang dibidendo · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

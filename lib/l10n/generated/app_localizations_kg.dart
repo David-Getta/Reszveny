@@ -2789,6 +2789,11 @@ class AppLocalizationsKg extends AppLocalizations {
   String get lotSave => 'Bumba';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Soba dividende · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

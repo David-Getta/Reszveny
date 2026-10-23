@@ -4729,6 +4729,12 @@ abstract class AppLocalizations {
   /// **'Save'**
   String get lotSave;
 
+  /// Title of the dialog that edits a recorded received dividend, e.g. "Edit dividend · KO".
+  ///
+  /// In en, this message translates to:
+  /// **'Edit dividend · {symbol}'**
+  String dividendEditTitle(String symbol);
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

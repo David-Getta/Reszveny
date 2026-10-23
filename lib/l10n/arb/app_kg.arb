@@ -831,5 +831,6 @@
   "onboardBody4": "Kotisa export ya broker na nge (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) to sonika kusumba ti kuteka na maboko: tala mbakulu na nge ti indice mosi, ba dividende na nge ye nkufi ya mvula sambu na mukanda ya mpaku.",
   "lotEdit": "Soba",
   "lotEditTitle": "Soba kusumba to kuteka · {symbol}",
-  "lotSave": "Bumba"
+  "lotSave": "Bumba",
+  "dividendEditTitle": "Soba dividende · {symbol}"
 }

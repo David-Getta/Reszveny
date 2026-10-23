@@ -2781,6 +2781,11 @@ class AppLocalizationsAk extends AppLocalizations {
   String get lotSave => 'Kora';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Sesa dividend · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';
 
   @override

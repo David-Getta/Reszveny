@@ -2775,6 +2775,11 @@ class AppLocalizationsYo extends AppLocalizations {
   String get lotSave => 'Fi pamọ́';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Ṣàtúnṣe ìpín èrè · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ṣètò àfojúsùn';
 
   @override

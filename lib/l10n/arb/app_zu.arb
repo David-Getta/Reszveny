@@ -831,5 +831,6 @@
   "onboardBody4": "Ngenisa i-export ye-broker yakho (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) noma wengeze ukuthenga nokuthengisa ngesandla: bona inzuzo yakho uma iqhathaniswa ne-index, izabelo zakho zenzuzo nesifinyezo sonyaka sombiko wakho wentela.",
   "lotEdit": "Hlela",
   "lotEditTitle": "Hlela ukuthenga noma ukuthengisa · {symbol}",
-  "lotSave": "Londoloza"
+  "lotSave": "Londoloza",
+  "dividendEditTitle": "Hlela isabelo senzuzo · {symbol}"
 }

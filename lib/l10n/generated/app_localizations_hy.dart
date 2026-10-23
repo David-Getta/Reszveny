@@ -2788,6 +2788,11 @@ class AppLocalizationsHy extends AppLocalizations {
   String get lotSave => 'Պահել';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Խմբագրել շահաբաժինը · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

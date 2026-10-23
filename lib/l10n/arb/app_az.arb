@@ -831,5 +831,6 @@
   "onboardBody4": "Brokerinizin ixrac faylını idxal edin (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) və ya əməliyyatları əl ilə əlavə edin: gəlirliliyinizi indekslə müqayisədə, dividendlərinizi və vergi bəyannaməsi üçün illik xülasəni görün.",
   "lotEdit": "Redaktə et",
   "lotEditTitle": "Əməliyyatı redaktə et · {symbol}",
-  "lotSave": "Yadda saxla"
+  "lotSave": "Yadda saxla",
+  "dividendEditTitle": "Dividendi redaktə et · {symbol}"
 }

@@ -2847,6 +2847,11 @@ class AppLocalizationsCs extends AppLocalizations {
   String get lotSave => 'Uložit';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Upravit dividendu · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastavit cíl';
 
   @override

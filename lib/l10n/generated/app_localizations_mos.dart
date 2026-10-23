@@ -2764,6 +2764,11 @@ class AppLocalizationsMos extends AppLocalizations {
   String get lotSave => 'Bĩng';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Toeem dividand · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

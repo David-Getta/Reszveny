@@ -892,6 +892,24 @@ class PortfolioStore extends ChangeNotifier {
     await _save();
   }
 
+  /// Egy osztalék javítása ugyanazzal az azonosítóval (a számla a már használt
+  /// írásmóddal); ha közben törölték, nem kerül vissza.
+  Future<void> replaceDividend(DividendRecord d) async {
+    final i = _dividends.indexWhere((x) => x.id == d.id);
+    if (i < 0) return;
+    _dividends[i] = DividendRecord(
+      id: d.id,
+      symbol: d.symbol.trim().toUpperCase(),
+      amount: d.amount,
+      currency: d.currency.trim().toUpperCase(),
+      date: d.date,
+      account: canonicalAccount(d.account),
+    );
+    _dividends.sort(_newestFirst);
+    notifyListeners();
+    await _save();
+  }
+
   /// Új felaprózás; érvénytelen aránynál vagy ha ugyanez már rögzítve van, `null`
   /// (nem kerül be kétszer – kétszer alkalmazva a darabszám hibás lenne).
   Future<SplitRecord?> addSplit({

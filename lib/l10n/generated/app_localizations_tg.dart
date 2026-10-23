@@ -2781,6 +2781,11 @@ class AppLocalizationsTg extends AppLocalizations {
   String get lotSave => 'Нигоҳ доштан';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Таҳрири дивиденд · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

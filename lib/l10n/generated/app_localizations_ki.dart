@@ -2780,6 +2780,11 @@ class AppLocalizationsKi extends AppLocalizations {
   String get lotSave => 'Iga';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Garũra mũgai wa faida · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

@@ -2776,6 +2776,11 @@ class AppLocalizationsPa extends AppLocalizations {
   String get lotSave => 'ਸੇਵ ਕਰੋ';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'ਡਿਵੀਡੈਂਡ ਸੋਧੋ · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'ਟੀਚਾ ਤੈਅ ਕਰੋ';
 
   @override

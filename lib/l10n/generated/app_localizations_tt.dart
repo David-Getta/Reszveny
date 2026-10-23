@@ -2776,6 +2776,11 @@ class AppLocalizationsTt extends AppLocalizations {
   String get lotSave => 'Саклау';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Дивидендны үзгәртү · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Максат кую';
 
   @override

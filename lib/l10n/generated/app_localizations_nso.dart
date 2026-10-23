@@ -2798,6 +2798,11 @@ class AppLocalizationsNso extends AppLocalizations {
   String get lotSave => 'Boloka';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Lokiša dividende · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Bea maikemišetšo';
 
   @override

@@ -2792,6 +2792,11 @@ class AppLocalizationsXh extends AppLocalizations {
   String get lotSave => 'Gcina';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Hlela isahlulo · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

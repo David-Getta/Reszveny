@@ -2787,6 +2787,11 @@ class AppLocalizationsFil extends AppLocalizations {
   String get lotSave => 'I-save';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'I-edit ang dibidendo · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

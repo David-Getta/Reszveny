@@ -831,5 +831,6 @@
   "onboardBody4": "Import eksport daripada broker anda (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) atau tambah transaksi secara manual: lihat pulangan anda berbanding indeks, dividen anda dan ringkasan tahunan untuk penyata cukai anda.",
   "lotEdit": "Edit",
   "lotEditTitle": "Edit transaksi · {symbol}",
-  "lotSave": "Simpan"
+  "lotSave": "Simpan",
+  "dividendEditTitle": "Edit dividen · {symbol}"
 }

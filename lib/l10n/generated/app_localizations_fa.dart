@@ -2775,6 +2775,11 @@ class AppLocalizationsFa extends AppLocalizations {
   String get lotSave => 'ذخیره';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'ویرایش سود سهام · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

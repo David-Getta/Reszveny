@@ -2773,6 +2773,11 @@ class AppLocalizationsBho extends AppLocalizations {
   String get lotSave => 'सेव करीं';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'डिविडेंड बदलीं · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करीं';
 
   @override

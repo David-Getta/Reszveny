@@ -2791,6 +2791,11 @@ class AppLocalizationsZu extends AppLocalizations {
   String get lotSave => 'Londoloza';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Hlela isabelo senzuzo · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setha umgomo';
 
   @override

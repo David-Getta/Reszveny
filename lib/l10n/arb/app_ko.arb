@@ -831,5 +831,6 @@
   "onboardBody4": "증권사 내보내기 파일(Revolut, Trading 212, IBKR, DEGIRO, Schwab…)을 가져오거나 거래를 직접 추가하세요. 지수와 비교한 수익률, 배당금, 세금 신고용 연간 요약을 확인할 수 있습니다.",
   "lotEdit": "수정",
   "lotEditTitle": "거래 수정 · {symbol}",
-  "lotSave": "저장"
+  "lotSave": "저장",
+  "dividendEditTitle": "배당금 수정 · {symbol}"
 }

@@ -831,5 +831,6 @@
   "onboardBody4": "Leeta export ya broker wo (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) oba yongera bye wagula ne bye watunda n'engalo: laba amagoba go nga gageraageranyizibwa ne index, dividendi zo n'ebifunze by'omwaka ku lipoota y'omusolo.",
   "lotEdit": "Kyusa",
   "lotEditTitle": "Kyusa ekyaguliddwa oba ekyatundiddwa · {symbol}",
-  "lotSave": "Tereka"
+  "lotSave": "Tereka",
+  "dividendEditTitle": "Kyusa dividendi · {symbol}"
 }

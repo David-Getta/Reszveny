@@ -2790,6 +2790,11 @@ class AppLocalizationsEl extends AppLocalizations {
   String get lotSave => 'Αποθήκευση';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Επεξεργασία μερίσματος · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

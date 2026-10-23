@@ -2790,6 +2790,11 @@ class AppLocalizationsLua extends AppLocalizations {
   String get lotSave => 'Lama';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Shintulula dividende · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

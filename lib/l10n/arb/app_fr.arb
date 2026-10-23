@@ -831,5 +831,6 @@
   "onboardBody4": "Importez l’export de votre courtier (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ou ajoutez vos transactions à la main : voyez votre rendement face à un indice, vos dividendes et un récapitulatif annuel pour votre déclaration d’impôts.",
   "lotEdit": "Modifier",
   "lotEditTitle": "Modifier la transaction · {symbol}",
-  "lotSave": "Enregistrer"
+  "lotSave": "Enregistrer",
+  "dividendEditTitle": "Modifier le dividende · {symbol}"
 }

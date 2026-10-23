@@ -2777,6 +2777,11 @@ class AppLocalizationsKab extends AppLocalizations {
   String get lotSave => 'Sekles';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Ẓreg dividende · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

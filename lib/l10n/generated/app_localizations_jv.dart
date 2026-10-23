@@ -2781,6 +2781,11 @@ class AppLocalizationsJv extends AppLocalizations {
   String get lotSave => 'Simpen';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Owahi dividen · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setel target';
 
   @override

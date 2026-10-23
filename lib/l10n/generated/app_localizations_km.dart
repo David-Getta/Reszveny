@@ -2756,6 +2756,11 @@ class AppLocalizationsKm extends AppLocalizations {
   String get lotSave => 'រក្សាទុក';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'កែភាគលាភ · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

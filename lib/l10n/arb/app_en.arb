@@ -2425,6 +2425,16 @@
   "@lotSave": {
     "description": "Button that saves the edited transaction."
   },
+  "dividendEditTitle": "Edit dividend · {symbol}",
+  "@dividendEditTitle": {
+    "description": "Title of the dialog that edits a recorded received dividend, e.g. \"Edit dividend · KO\".",
+    "placeholders": {
+      "symbol": {
+        "type": "String",
+        "example": "KO"
+      }
+    }
+  },
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

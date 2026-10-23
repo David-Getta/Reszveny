@@ -831,5 +831,6 @@
   "onboardBody4": "Voer jou makelaar se uitvoer in (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) of voeg transaksies met die hand by: sien jou opbrengs naas ’n indeks, jou dividende en ’n jaaroorsig vir jou belastingopgawe.",
   "lotEdit": "Wysig",
   "lotEditTitle": "Wysig transaksie · {symbol}",
-  "lotSave": "Stoor"
+  "lotSave": "Stoor",
+  "dividendEditTitle": "Wysig dividend · {symbol}"
 }

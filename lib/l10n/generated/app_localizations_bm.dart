@@ -2775,6 +2775,11 @@ class AppLocalizationsBm extends AppLocalizations {
   String get lotSave => 'A mara';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Dividandi yɛlɛma · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

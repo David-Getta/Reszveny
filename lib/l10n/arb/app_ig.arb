@@ -831,5 +831,6 @@
   "onboardBody4": "Bubata export nke broker gị (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ma ọ bụ tinye azụmahịa n'aka: hụ uru gị n'akụkụ otu ndeksi, nkesa uru gị na nchịkọta afọ maka akụkọ ụtụ isi gị.",
   "lotEdit": "Dezie",
   "lotEditTitle": "Dezie azụmahịa · {symbol}",
-  "lotSave": "Chekwaa"
+  "lotSave": "Chekwaa",
+  "dividendEditTitle": "Dezie nkesa uru · {symbol}"
 }

@@ -831,5 +831,6 @@
   "onboardBody4": "Brokeringiz eksportini import qiling (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) yoki operatsiyalarni qoʻlda qoʻshing: daromadliligingizni indeks bilan taqqoslab, dividendlaringizni va soliq deklaratsiyasi uchun yillik xulosani koʻring.",
   "lotEdit": "Tahrirlash",
   "lotEditTitle": "Operatsiyani tahrirlash · {symbol}",
-  "lotSave": "Saqlash"
+  "lotSave": "Saqlash",
+  "dividendEditTitle": "Dividendni tahrirlash · {symbol}"
 }

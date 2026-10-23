@@ -831,5 +831,6 @@
   "onboardBody4": "अपन ब्रोकरक एक्सपोर्ट इम्पोर्ट करू (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) वा सौदा हाथसँ जोड़ू: कोनो इंडेक्सक तुलनामे अपन रिटर्न, अपन डिविडेंड आ कर रिटर्नक लेल वार्षिक सारांश देखू।",
   "lotEdit": "बदलू",
   "lotEditTitle": "लेन-देन बदलू · {symbol}",
-  "lotSave": "सेव करू"
+  "lotSave": "सेव करू",
+  "dividendEditTitle": "डिविडेंड बदलू · {symbol}"
 }

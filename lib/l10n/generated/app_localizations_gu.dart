@@ -2773,6 +2773,11 @@ class AppLocalizationsGu extends AppLocalizations {
   String get lotSave => 'સાચવો';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'ડિવિડન્ડ એડિટ કરો · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'લક્ષ્ય નક્કી કરો';
 
   @override

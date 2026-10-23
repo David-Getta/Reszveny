@@ -2795,6 +2795,11 @@ class AppLocalizationsLg extends AppLocalizations {
   String get lotSave => 'Tereka';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Kyusa dividendi · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

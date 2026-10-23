@@ -831,5 +831,6 @@
   "onboardBody4": "Nhập file xuất từ công ty chứng khoán của bạn (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) hoặc tự thêm giao dịch: xem lợi nhuận của bạn so với một chỉ số, cổ tức và bản tổng kết năm để khai thuế.",
   "lotEdit": "Sửa",
   "lotEditTitle": "Sửa giao dịch · {symbol}",
-  "lotSave": "Lưu"
+  "lotSave": "Lưu",
+  "dividendEditTitle": "Sửa cổ tức · {symbol}"
 }

@@ -2771,6 +2771,11 @@ class AppLocalizationsMai extends AppLocalizations {
   String get lotSave => 'सेव करू';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'डिविडेंड बदलू · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य निर्धारित करू';
 
   @override

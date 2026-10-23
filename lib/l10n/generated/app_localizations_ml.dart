@@ -2790,6 +2790,11 @@ class AppLocalizationsMl extends AppLocalizations {
   String get lotSave => 'സേവ് ചെയ്യുക';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'ഡിവിഡന്റ് എഡിറ്റ് ചെയ്യുക · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'ലക്ഷ്യം സജ്ജമാക്കുക';
 
   @override

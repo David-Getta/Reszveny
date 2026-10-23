@@ -831,5 +831,6 @@
   "onboardBody4": "فایل خروجی کارگزارتان را وارد کنید (Revolut، Trading 212، IBKR، DEGIRO، Schwab…) یا معاملات را دستی اضافه کنید: بازده خود را در کنار یک شاخص، سود سهامتان و خلاصه سالانه برای اظهارنامه مالیاتی ببینید.",
   "lotEdit": "ویرایش",
   "lotEditTitle": "ویرایش تراکنش · {symbol}",
-  "lotSave": "ذخیره"
+  "lotSave": "ذخیره",
+  "dividendEditTitle": "ویرایش سود سهام · {symbol}"
 }

@@ -831,5 +831,6 @@
   "onboardBody4": "Enpòte ekspò koutye w la (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) oswa ajoute tranzaksyon yo alamen: wè rannman ou bò kote yon endèks, dividann ou yo ak yon rezime anyèl pou deklarasyon taks ou.",
   "lotEdit": "Modifye",
   "lotEditTitle": "Modifye tranzaksyon an · {symbol}",
-  "lotSave": "Anrejistre"
+  "lotSave": "Anrejistre",
+  "dividendEditTitle": "Modifye dividann nan · {symbol}"
 }

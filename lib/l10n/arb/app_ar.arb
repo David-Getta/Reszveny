@@ -831,5 +831,6 @@
   "onboardBody4": "استورد ملف التصدير من وسيطك (Revolut، Trading 212، IBKR، DEGIRO، Schwab…) أو أضف صفقاتك يدويًا: شاهد عائدك مقارنةً بمؤشر، وتوزيعات أرباحك، وملخصًا سنويًا لإقرارك الضريبي.",
   "lotEdit": "تعديل",
   "lotEditTitle": "تعديل المعاملة · {symbol}",
-  "lotSave": "حفظ"
+  "lotSave": "حفظ",
+  "dividendEditTitle": "تعديل توزيعة الأرباح · {symbol}"
 }

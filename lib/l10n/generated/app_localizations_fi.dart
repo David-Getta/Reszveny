@@ -2780,6 +2780,11 @@ class AppLocalizationsFi extends AppLocalizations {
   String get lotSave => 'Tallenna';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Muokkaa osinkoa · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

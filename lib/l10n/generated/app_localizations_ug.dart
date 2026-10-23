@@ -2782,6 +2782,11 @@ class AppLocalizationsUg extends AppLocalizations {
   String get lotSave => 'ساقلاش';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'دىۋىدېندنى تەھرىرلەش · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

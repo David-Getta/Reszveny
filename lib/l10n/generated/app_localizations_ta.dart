@@ -2790,6 +2790,11 @@ class AppLocalizationsTa extends AppLocalizations {
   String get lotSave => 'சேமி';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'ஈவுத்தொகையைத் திருத்து · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'இலக்கை அமை';
 
   @override

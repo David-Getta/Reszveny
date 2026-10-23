@@ -2779,6 +2779,11 @@ class AppLocalizationsKa extends AppLocalizations {
   String get lotSave => 'შენახვა';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'დივიდენდის რედაქტირება · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

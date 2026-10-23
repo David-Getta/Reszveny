@@ -2770,6 +2770,11 @@ class AppLocalizationsVi extends AppLocalizations {
   String get lotSave => 'Lưu';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Sửa cổ tức · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

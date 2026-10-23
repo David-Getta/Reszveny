@@ -831,5 +831,6 @@
   "onboardBody4": "証券会社のエクスポート（Revolut、Trading 212、IBKR、DEGIRO、Schwab…）を取り込むか、取引を手動で追加。指数と比べたリターン、配当、確定申告に使える年間サマリーを確認できます。",
   "lotEdit": "編集",
   "lotEditTitle": "取引を編集 · {symbol}",
-  "lotSave": "保存"
+  "lotSave": "保存",
+  "dividendEditTitle": "配当を編集 · {symbol}"
 }

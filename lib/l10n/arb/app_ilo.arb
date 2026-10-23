@@ -831,5 +831,6 @@
   "onboardBody4": "I-import ti export ti broker-mo (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) wenno inayon dagiti transaksion babaen ti ima: kitaem ti ganansiam iti abay ti maysa nga index, dagiti dibidendom ken tinawen a pakabuklan para iti tax return-mo.",
   "lotEdit": "I-edit",
   "lotEditTitle": "I-edit ti transaksion · {symbol}",
-  "lotSave": "I-save"
+  "lotSave": "I-save",
+  "dividendEditTitle": "I-edit ti dibidendo · {symbol}"
 }

@@ -831,5 +831,6 @@
   "onboardBody4": "I-import ang export sang imo broker (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ukon idugang sa kamot ang mga transaksyon: tan-awa ang imo kita tupad sa isa ka index, ang imo mga dibidendo kag tinuig nga sumaryo para sa imo tax return.",
   "lotEdit": "I-edit",
   "lotEditTitle": "I-edit ang transaksyon · {symbol}",
-  "lotSave": "I-save"
+  "lotSave": "I-save",
+  "dividendEditTitle": "I-edit ang dibidendo · {symbol}"
 }

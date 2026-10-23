@@ -831,5 +831,6 @@
   "onboardBody4": "Importējiet sava brokera eksportu (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) vai pievienojiet darījumus manuāli: redziet savu ienesīgumu līdzās indeksam, savas dividendes un gada kopsavilkumu nodokļu deklarācijai.",
   "lotEdit": "Rediģēt",
   "lotEditTitle": "Rediģēt darījumu · {symbol}",
-  "lotSave": "Saglabāt"
+  "lotSave": "Saglabāt",
+  "dividendEditTitle": "Rediģēt dividendi · {symbol}"
 }

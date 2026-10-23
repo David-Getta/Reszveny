@@ -831,5 +831,6 @@
   "onboardBody4": "Leta faili la broker wako (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) au ongeza miamala kwa mkono: ona faida yako ikilinganishwa na fahirisi, gawio lako na muhtasari wa mwaka kwa ripoti yako ya kodi.",
   "lotEdit": "Hariri",
   "lotEditTitle": "Hariri muamala · {symbol}",
-  "lotSave": "Hifadhi"
+  "lotSave": "Hifadhi",
+  "dividendEditTitle": "Hariri gawio · {symbol}"
 }

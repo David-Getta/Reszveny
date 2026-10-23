@@ -147,6 +147,12 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
                       leading: Icon(Icons.payments_outlined, color: p.muted, size: 20),
                       title: Text(fmt.money(d.amount, d.currency)),
                       subtitle: d.date == null ? null : Text(fmt.date(d.date)),
+                      trailing: IconButton(
+                        key: ValueKey('sheet-dividend-edit-${d.id}'),
+                        tooltip: l10n.lotEdit,
+                        icon: Icon(Icons.edit_outlined, size: 18, color: p.muted),
+                        onPressed: () => showEditDividendDialog(context, d),
+                      ),
                     ),
                   // A részvény felaprózásai (az újabb elöl), törölhetők.
                   for (final s in services.portfolio.splitsOf(position.symbol).reversed)

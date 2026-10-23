@@ -831,5 +831,6 @@
   "onboardBody4": "导入券商的导出文件（Revolut、Trading 212、IBKR、DEGIRO、Schwab…），或手动添加交易：查看与指数对比的收益率、你的股息，以及可用于报税的年度汇总。",
   "lotEdit": "编辑",
   "lotEditTitle": "编辑交易 · {symbol}",
-  "lotSave": "保存"
+  "lotSave": "保存",
+  "dividendEditTitle": "编辑股息 · {symbol}"
 }

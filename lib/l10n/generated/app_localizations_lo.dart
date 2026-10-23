@@ -2750,6 +2750,11 @@ class AppLocalizationsLo extends AppLocalizations {
   String get lotSave => 'ບັນທຶກ';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'ແກ້ໄຂເງິນປັນຜົນ · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

@@ -2799,6 +2799,11 @@ class AppLocalizationsMg extends AppLocalizations {
   String get lotSave => 'Tehirizo';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Ovay ny dividandy · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

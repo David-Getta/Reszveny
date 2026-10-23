@@ -2781,6 +2781,11 @@ class AppLocalizationsTk extends AppLocalizations {
   String get lotSave => 'Sakla';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Diwidendi üýtget · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

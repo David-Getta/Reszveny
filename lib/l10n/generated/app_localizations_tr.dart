@@ -2779,6 +2779,11 @@ class AppLocalizationsTr extends AppLocalizations {
   String get lotSave => 'Kaydet';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Temettüyü düzenle · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hedef belirle';
 
   @override

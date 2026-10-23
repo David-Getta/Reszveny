@@ -2779,6 +2779,11 @@ class AppLocalizationsMn extends AppLocalizations {
   String get lotSave => 'Хадгалах';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Ногдол ашиг засах · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

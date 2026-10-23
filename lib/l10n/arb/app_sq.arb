@@ -831,5 +831,6 @@
   "onboardBody4": "Importoni eksportin e brokerit tuaj (Revolut, Trading 212, IBKR, DEGIRO, Schwab…) ose shtoni transaksionet me dorë: shihni rendimentin tuaj krahasuar me një indeks, dividendët tuaj dhe një përmbledhje vjetore për deklaratën tatimore.",
   "lotEdit": "Ndrysho",
   "lotEditTitle": "Ndrysho transaksionin · {symbol}",
-  "lotSave": "Ruaj"
+  "lotSave": "Ruaj",
+  "dividendEditTitle": "Ndrysho dividendin · {symbol}"
 }

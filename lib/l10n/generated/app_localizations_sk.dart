@@ -2852,6 +2852,11 @@ class AppLocalizationsSk extends AppLocalizations {
   String get lotSave => 'Uložiť';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Upraviť dividendu · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastaviť cieľ';
 
   @override

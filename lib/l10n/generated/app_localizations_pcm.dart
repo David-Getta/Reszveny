@@ -2778,6 +2778,11 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get lotSave => 'Save';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Change dividend · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

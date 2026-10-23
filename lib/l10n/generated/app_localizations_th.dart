@@ -2745,6 +2745,11 @@ class AppLocalizationsTh extends AppLocalizations {
   String get lotSave => 'บันทึก';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'แก้ไขเงินปันผล · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

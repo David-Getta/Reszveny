@@ -2785,6 +2785,11 @@ class AppLocalizationsSq extends AppLocalizations {
   String get lotSave => 'Ruaj';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Ndrysho dividendin · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

@@ -2855,6 +2855,11 @@ class AppLocalizationsUk extends AppLocalizations {
   String get lotSave => 'Зберегти';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Редагувати дивіденд · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задати ціль';
 
   @override

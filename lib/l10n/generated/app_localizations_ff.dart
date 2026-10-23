@@ -2774,6 +2774,11 @@ class AppLocalizationsFf extends AppLocalizations {
   String get lotSave => 'Mooftu';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Waylu dividende · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

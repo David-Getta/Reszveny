@@ -2796,6 +2796,11 @@ class AppLocalizationsHil extends AppLocalizations {
   String get lotSave => 'I-save';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'I-edit ang dibidendo · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

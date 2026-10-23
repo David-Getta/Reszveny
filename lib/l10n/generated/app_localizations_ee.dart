@@ -2785,6 +2785,11 @@ class AppLocalizationsEe extends AppLocalizations {
   String get lotSave => 'Dzra ɖo';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Trɔ dividend la · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ɖo taɖodzinu';
 
   @override

@@ -2781,6 +2781,11 @@ class AppLocalizationsKy extends AppLocalizations {
   String get lotSave => 'Сактоо';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Дивидендди түзөтүү · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Максат коюу';
 
   @override

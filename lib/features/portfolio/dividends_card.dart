@@ -9,7 +9,7 @@ import '../../theme/app_theme.dart';
 import '../../widgets/date_picker_row.dart';
 import '../../widgets/metric_hint.dart';
 import 'account_field.dart';
-import 'add_lot_dialog.dart' show parseAmount;
+import 'add_lot_dialog.dart' show exactNumber, parseAmount;
 import 'dividend_forecast.dart';
 import 'goal_dialog.dart';
 import 'portfolio_store.dart';
@@ -268,6 +268,13 @@ class DividendsCard extends StatelessWidget {
                         ),
                         Text(fmt.money(d.amount, d.currency), style: const TextStyle(fontWeight: FontWeight.w600)),
                         IconButton(
+                          key: ValueKey('dividend-edit-${d.id}'),
+                          tooltip: l10n.lotEdit,
+                          visualDensity: VisualDensity.compact,
+                          icon: Icon(Icons.edit_outlined, size: 18, color: p.muted),
+                          onPressed: () => showEditDividendDialog(context, d),
+                        ),
+                        IconButton(
                           key: ValueKey('dividend-delete-${d.id}'),
                           tooltip: l10n.portfolioRemove,
                           visualDensity: VisualDensity.compact,
@@ -338,8 +345,28 @@ Future<bool> showAddDividendDialog(
   return added ?? false;
 }
 
+/// Egy rögzített osztalék javítása (ugyanaz a dialógus előre kitöltve); `true`,
+/// ha mentették.
+Future<bool> showEditDividendDialog(BuildContext context, DividendRecord dividend) async {
+  final saved = await showDialog<bool>(
+    context: context,
+    builder: (_) => _AddDividendDialog(
+      symbol: dividend.symbol,
+      currency: dividend.currency,
+      amount: dividend.amount,
+      date: dividend.date,
+      account: dividend.account,
+      editing: dividend,
+    ),
+  );
+  return saved ?? false;
+}
+
 class _AddDividendDialog extends StatefulWidget {
-  const _AddDividendDialog({this.symbol, required this.currency, this.amount, this.date, this.account});
+  const _AddDividendDialog({this.symbol, required this.currency, this.amount, this.date, this.account, this.editing});
+
+  /// A javított osztalék (`null`: új felvétele).
+  final DividendRecord? editing;
 
   /// Előre kitöltött számla (pl. a portfólió oldalon választott számla).
   final String? account;
@@ -355,12 +382,23 @@ class _AddDividendDialog extends StatefulWidget {
 
 class _AddDividendDialogState extends State<_AddDividendDialog> {
   late final _symbol = TextEditingController(text: widget.symbol ?? '');
-  late final _amount = TextEditingController(text: widget.amount == null ? '' : widget.amount!.toStringAsFixed(2));
+  // Javításkor a tárolt összeg pontosan (pl. 12,345), új felvételnél két tizedesre.
+  // A tizedesjel a nyelvé: a [parseAmount] a „12.345”-öt németül 12345-nek olvasná.
+  late final _amount = TextEditingController(
+    text: switch ((widget.amount, widget.editing)) {
+      (null, _) => '',
+      (final a?, null) => a.toStringAsFixed(2),
+      (final a?, _) => exactNumber(
+        a,
+      ).replaceFirst('.', Fmt(Localizations.localeOf(context).toString()).decimalSeparator),
+    },
+  );
   late final _currency = TextEditingController(text: widget.currency);
   late DateTime _date = switch (widget.date) {
-    final d? when !d.isAfter(DateTime.now()) => d,
+    final d? when widget.editing != null || !d.isAfter(DateTime.now()) => d,
     _ => DateTime.now(),
   };
+  bool _saving = false;
   bool _symbolError = false;
   String? _amountError;
   bool _currencyError = false;
@@ -395,8 +433,15 @@ class _AddDividendDialogState extends State<_AddDividendDialog> {
       _currencyError = !RegExp(r'^[A-Z]{3}$').hasMatch(ccy);
     });
     if (_symbolError || _amountError != null || _currencyError) return;
-    await AppServices.of(context).portfolio
-        .addDividend(symbol: symbol, amount: amount!, currency: ccy, date: _date, account: _account);
+    setState(() => _saving = true);
+    final portfolio = AppServices.of(context).portfolio;
+    if (widget.editing case final e?) {
+      await portfolio.replaceDividend(
+        DividendRecord(id: e.id, symbol: symbol, amount: amount!, currency: ccy, date: _date, account: _account),
+      );
+    } else {
+      await portfolio.addDividend(symbol: symbol, amount: amount!, currency: ccy, date: _date, account: _account);
+    }
     if (mounted) Navigator.of(context).pop(true);
   }
 
@@ -404,7 +449,10 @@ class _AddDividendDialogState extends State<_AddDividendDialog> {
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     return AlertDialog(
-      title: Text(l10n.portfolioAddDividend),
+      title: Text(switch (widget.editing) {
+        final e? => l10n.dividendEditTitle(e.symbol),
+        null => l10n.portfolioAddDividend,
+      }),
       content: SizedBox(
         width: 360,
         child: Column(
@@ -468,7 +516,11 @@ class _AddDividendDialogState extends State<_AddDividendDialog> {
       ),
       actions: [
         TextButton(onPressed: () => Navigator.of(context).pop(false), child: Text(l10n.cancel)),
-        FilledButton(key: const ValueKey('dividend-submit'), onPressed: _submit, child: Text(l10n.portfolioAdd)),
+        FilledButton(
+          key: const ValueKey('dividend-submit'),
+          onPressed: _saving ? null : _submit,
+          child: Text(widget.editing == null ? l10n.portfolioAdd : l10n.lotSave),
+        ),
       ],
     );
   }

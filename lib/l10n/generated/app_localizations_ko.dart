@@ -2704,6 +2704,11 @@ class AppLocalizationsKo extends AppLocalizations {
   String get lotSave => '저장';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return '배당금 수정 · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

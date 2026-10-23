@@ -2772,6 +2772,11 @@ class AppLocalizationsIg extends AppLocalizations {
   String get lotSave => 'Chekwaa';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Dezie nkesa uru · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tọọ ebumnuche';
 
   @override

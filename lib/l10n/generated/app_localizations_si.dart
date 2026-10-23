@@ -2776,6 +2776,11 @@ class AppLocalizationsSi extends AppLocalizations {
   String get lotSave => 'සුරකින්න';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'ලාභාංශය සංස්කරණය කරන්න · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'ඉලක්කයක් සකසන්න';
 
   @override

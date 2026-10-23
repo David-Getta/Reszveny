@@ -2743,6 +2743,11 @@ class AppLocalizationsAm extends AppLocalizations {
   String get lotSave => 'አስቀምጥ';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'የትርፍ ድርሻ አርትዕ · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

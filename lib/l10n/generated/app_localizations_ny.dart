@@ -2789,6 +2789,11 @@ class AppLocalizationsNy extends AppLocalizations {
   String get lotSave => 'Sungani';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Sinthani dividendi · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

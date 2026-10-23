@@ -2779,6 +2779,11 @@ class AppLocalizationsNb extends AppLocalizations {
   String get lotSave => 'Lagre';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'Rediger utbytte · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sett et mål';
 
   @override

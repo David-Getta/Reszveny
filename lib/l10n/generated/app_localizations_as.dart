@@ -2777,6 +2777,11 @@ class AppLocalizationsAs extends AppLocalizations {
   String get lotSave => 'ছেভ কৰক';
 
   @override
+  String dividendEditTitle(String symbol) {
+    return 'লাভাংশ সম্পাদনা কৰক · $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য নিৰ্ধাৰণ কৰক';
 
   @override
