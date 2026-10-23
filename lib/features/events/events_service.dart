@@ -131,6 +131,13 @@ class EventsService extends ChangeNotifier {
   }
 
   List<UpcomingEvent> get events => _events;
+
+  /// Az elmúlt [recentEarningsDays] nap gyorsjelentései (a korábban lekért dátumból):
+  /// a napi összefoglaló ezekhez kéri le a friss eredményt.
+  List<UpcomingEvent> get recentEarnings => _recentEarnings;
+  List<UpcomingEvent> _recentEarnings = const [];
+  final Map<String, UpcomingEarnings> _pastReports = {};
+  static const recentEarningsDays = 2;
   bool get loading => _loading;
   bool get loaded => _loaded;
 
@@ -167,6 +174,12 @@ class EventsService extends ChangeNotifier {
             final overview = withHistory.contains(s)
                 ? await marketData.earnings(s).timeout(const Duration(seconds: 20))
                 : EarningsOverview(next: await marketData.nextEarnings(s).timeout(const Duration(seconds: 20)));
+            // Az újralekérés már a következő negyedévet adja: a most elmúlt jelentés
+            // napja megmarad (a napi összefoglaló friss eredményéhez).
+            if (cached?.$2.next case final old?
+                when _day(old.date).isBefore(_today) && overview.next?.date != old.date) {
+              _pastReports[s] = old;
+            }
             _earnings[s] = (_clock(), overview);
             _failed.remove(s);
           } catch (e) {
@@ -203,6 +216,21 @@ class EventsService extends ChangeNotifier {
     final until = today.add(const Duration(days: horizonDays));
     bool inRange(DateTime d) => !d.isBefore(today) && !d.isAfter(until);
     symbols ??= watched;
+    final since = today.subtract(const Duration(days: recentEarningsDays));
+    _recentEarnings = [
+      for (final s in symbols)
+        for (final e in [
+          ?_earnings[s]?.$2.next,
+          ?_pastReports[s],
+        ].where((e) => _day(e.date).isBefore(today) && !_day(e.date).isBefore(since)).take(1))
+          UpcomingEvent(
+            symbol: s,
+            date: _day(e.date),
+            kind: UpcomingEventKind.earnings,
+            hour: e.hour,
+            epsEstimate: e.epsEstimate,
+          ),
+    ];
     final list = <UpcomingEvent>[
       for (final s in symbols)
         if (_earnings[s]?.$2.next case final e? when inRange(_day(e.date)))

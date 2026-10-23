@@ -52,6 +52,34 @@ class UsMarketHours {
     return d.weekday != DateTime.saturday && d.weekday != DateTime.sunday && !holidays.contains(d);
   }
 
+  static DateTime _closeOf(DateTime day) =>
+      DateTime(day.year, day.month, day.day, earlyCloses.contains(DateTime(day.year, day.month, day.day)) ? 13 : 16);
+
+  /// A legutóbbi, már elkezdődött kereskedési nap New York-i dátuma: nyitvatartás alatt
+  /// a mai, zárás után is a mai, nyitás előtt és szünnapon az előző kereskedési nap.
+  static DateTime sessionDate(DateTime nowUtc) {
+    final ny = newYorkTime(nowUtc);
+    var day = DateTime(ny.year, ny.month, ny.day);
+    if (isTradingDay(day) && !ny.isBefore(DateTime(day.year, day.month, day.day, 9, 30))) return day;
+    for (var i = 0; i < 14; i++) {
+      day = DateTime(day.year, day.month, day.day - 1);
+      if (isTradingDay(day)) return day;
+    }
+    return day;
+  }
+
+  /// A legutóbbi rendes zárás időpontja (UTC), amely legfeljebb [nowUtc].
+  static DateTime lastClose(DateTime nowUtc) {
+    final ny = newYorkTime(nowUtc);
+    var day = DateTime(ny.year, ny.month, ny.day);
+    if (isTradingDay(day) && !ny.isBefore(_closeOf(day))) return utcOf(_closeOf(day));
+    for (var i = 0; i < 14; i++) {
+      day = DateTime(day.year, day.month, day.day - 1);
+      if (isTradingDay(day)) break;
+    }
+    return utcOf(_closeOf(day));
+  }
+
   /// Nyitva van-e most a piac, és mikor változik ez (UTC).
   static ({bool open, DateTime next}) status(DateTime nowUtc) {
     final ny = newYorkTime(nowUtc);

@@ -54,7 +54,9 @@ class _DailyBriefCardState extends State<DailyBriefCard> {
       builder: (context, _) {
         if (services.news.watched.isEmpty) return const SizedBox.shrink();
         final brief = services.brief;
-        final last = brief.isToday ? brief.last : null;
+        // Nyelvváltás után a régi nyelvű összefoglaló helyett újat kínál.
+        final language = SupportedLocales.languageFor(Localizations.localeOf(context)).englishName;
+        final last = brief.isTodayIn(language) ? brief.last : null;
         return Padding(
           padding: const EdgeInsets.only(top: 24),
           child: Card(

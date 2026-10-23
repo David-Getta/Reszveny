@@ -147,7 +147,7 @@ void main() {
     expect(again.last!.text, startsWith('A quiet day overall.'));
   });
 
-  test('a stock that reported today: the result goes into the data; one reporting soon: the day', () async {
+  test('a stock that reported yesterday: the result goes into the data; one reporting soon: the day', () async {
     final sent = <String>[];
     final client = MockClient((req) async {
       sent.add((((jsonDecode(req.body) as Map)['messages'] as List).single as Map)['content'] as String);
@@ -181,19 +181,27 @@ void main() {
             ];
           }
           ..upcoming = () => [
-            UpcomingEvent(symbol: 'AAPL', date: today, kind: UpcomingEventKind.earnings),
+            UpcomingEvent(
+              symbol: 'AAPL',
+              date: today.subtract(const Duration(days: 1)),
+              kind: UpcomingEventKind.earnings,
+            ),
             UpcomingEvent(symbol: 'MSFT', date: today.add(const Duration(days: 3)), kind: UpcomingEventKind.earnings),
+            // Ma zárás után jelent: az előző negyedév számai még nem „friss eredmény”.
+            UpcomingEvent(symbol: 'GOOG', date: today, kind: UpcomingEventKind.earnings, hour: 'amc'),
           ];
-    await brief.generate(symbols: ['AAPL', 'MSFT'], language: 'English');
+    await brief.generate(symbols: ['AAPL', 'MSFT', 'GOOG'], language: 'English');
     final user = sent.single;
     // A saját devizapár napi mozgása is az adatok között (+0,5%).
     expect(user, contains('"pair":"USD/HUF","rate":361.8,"change_today_pct":0.5'));
     // A demó utolsó negyedéve: 1,15 a várt 1,12 helyett.
     expect(user, contains('"reported":{"eps":1.15,"expected_eps":1.12,"beat":true}'));
-    expect(user, contains('"reports_in_days":0'));
+    expect('"reported"'.allMatches(user), hasLength(1));
     expect(user, contains('"symbol":"MSFT"'));
     expect(user, contains('"reports_in_days":3'));
+    expect(user, contains('"reports_in_days":0'));
     expect(user.indexOf('"reported"'), lessThan(user.indexOf('"symbol":"MSFT"')));
+    expect(user, contains('Last US trading session: '));
   });
 
   test('an answer keeps only the text after the last search, not the model’s “I’ll look it up” note', () async {

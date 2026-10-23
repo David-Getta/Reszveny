@@ -2,6 +2,7 @@ import 'package:http/http.dart' as http;
 
 import '../../core/config/app_config.dart';
 import '../../core/errors.dart';
+import '../../core/util/us_market_hours.dart';
 import 'cached_research.dart';
 import 'daily_brief.dart' show sharedCacheField;
 import 'research_store.dart';
@@ -48,8 +49,10 @@ Rules:
     return {
       'model': model,
       'max_tokens': 1200,
-      // Ugyanaz a részvény ugyanazon a napon mindenkinek ugyanaz: a szerver megosztja.
-      sharedCacheField: 'move|${symbol.toUpperCase()}|$day|${language.replaceAll(RegExp(r'[^A-Za-z0-9_-]'), '_')}',
+      // Ugyanaz a részvény ugyanabban a kereskedési napban, hasonló mozgásnál mindenkinek
+      // ugyanaz: a szerver megosztja (időzónától függetlenül).
+      sharedCacheField:
+          'move|${symbol.toUpperCase()}|${sessionKey(today, changePercent)}|${language.replaceAll(RegExp(r'[^A-Za-z0-9_-]'), '_')}',
       'system': [
         {'type': 'text', 'text': systemPrompt},
       ],
@@ -72,7 +75,15 @@ Rules:
     };
   }
 
-  /// A magyarázat (részvényenként, naponként és nyelvenként egyszer kérve).
+  /// A kereskedési nap (New York-i dátum, így éjfél után és más időzónában is ugyanaz)
+  /// és a mozgás iránya-nagyságrendje ([minMovePercent] lépésekben): ha napközben
+  /// +3%-ról +8%-ra nő vagy előjelet vált a mozgás, új magyarázat kell.
+  static String sessionKey(DateTime now, double changePercent) {
+    final step = (changePercent / minMovePercent).truncate();
+    return '${UsMarketHours.sessionDate(now.toUtc()).toIso8601String().substring(0, 10)}|${step >= 0 ? '+' : ''}$step';
+  }
+
+  /// A magyarázat (részvényenként, kereskedési naponként, mozgás-sávonként és nyelvenként egyszer kérve).
   Future<ResearchResult> explain({
     required String symbol,
     required String name,
@@ -81,7 +92,7 @@ Rules:
   }) {
     if (!config.hasAnthropicKey) return Future.error(const AnalysisException(AppErrorCode.aiNotConfigured));
     final today = _clock();
-    final key = '$language|${symbol.toUpperCase()}|${today.toIso8601String().substring(0, 10)}';
+    final key = '$language|${symbol.toUpperCase()}|${sessionKey(today, changePercent)}';
     return cachedResearch(
       cache: _cache,
       store: _store,

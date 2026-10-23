@@ -21,6 +21,62 @@ void main() {
     expect(MorningBrief.firstSentence('A quiet day. NVDA rose.\n- more'), 'A quiet day.');
     expect(MorningBrief.firstSentence('No full stop here\n- x'), 'No full stop here');
     expect(MorningBrief.firstSentence('平静的一天。英伟达上涨。'), '平静的一天。');
+    // A rövidítés pontja nem mondatvég.
+    expect(MorningBrief.firstSentence('U.S. stocks rose on Friday. NVDA led.'), 'U.S. stocks rose on Friday.');
+    expect(MorningBrief.firstSentence('Chips, e.g. NVDA, rose. More.'), 'Chips, e.g. NVDA, rose.');
+  });
+
+  test('no repeat on the weekend; a new language makes a new one the same day', () async {
+    var calls = 0;
+    final client = MockClient((req) async {
+      calls++;
+      return http.Response(
+        jsonEncode({
+          'stop_reason': 'end_turn',
+          'content': [
+            {'type': 'text', 'text': 'Brief $calls.'},
+          ],
+        }),
+        200,
+        headers: {'content-type': 'application/json; charset=utf-8'},
+      );
+    });
+    // Szombat reggel (UTC): a péntek esti zárás után.
+    var now = DateTime.utc(2026, 10, 17, 8);
+    var language = 'English';
+    final market = DemoMarketDataProvider(latency: Duration.zero);
+    final prefs = AppPreferences(favorites: const ['NVDA']);
+    await prefs.setMorningBrief(true);
+    final news = WatchNewsService(marketData: market, preferences: prefs, portfolio: PortfolioStore());
+    final brief = DailyBrief(
+      config: const AppConfig(backendUrl: 'https://api.test'),
+      marketData: market,
+      news: news,
+      client: client,
+      clock: () => now,
+    );
+    final morning = MorningBrief(
+      brief: brief,
+      news: news,
+      preferences: prefs,
+      notifier: FakeNotifier(),
+      language: () => language,
+      title: () => 'Today',
+      clock: () => now,
+    );
+    expect(await morning.check(), isTrue);
+    // Vasárnap nem zárt új kereskedési nap: nincs új összefoglaló.
+    now = DateTime.utc(2026, 10, 18, 8);
+    expect(await morning.check(), isFalse);
+    // Nyelvváltás után igen (a régi nyelvű nem jó).
+    language = 'Hungarian';
+    expect(await morning.check(), isTrue);
+    expect(brief.isTodayIn('Hungarian'), isTrue);
+    expect(brief.isTodayIn('English'), isFalse);
+    // Hétfő este, a zárás után megint.
+    now = DateTime.utc(2026, 10, 19, 21);
+    expect(await morning.check(), isTrue);
+    expect(calls, 3);
   });
 
   test('made once a day after 7 am when switched on, with a notification', () async {

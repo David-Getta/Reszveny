@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.273)
+# Változásjegyzék (0.2.130 → 0.2.274)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,22 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Hírek és napi összefoglaló: egy huszadik kódátnézés javításai
+
+- **0.2.274**: a napi összefoglaló már csak a ténylegesen megjelent gyorsjelentés eredményét írja „friss
+  eredménynek”. Eddig a jelentés napján, zárás után jelentő cégnél reggel az előző negyedév számait mutatta be
+  frissként, a tegnap jelentő cégnél pedig semmit, mert a múltbeli dátum kiesett a listából. A jelentés napja most
+  újralekérés után is megmarad két napig. A „Miért mozog ma?” magyarázat kulcsa a New York-i kereskedési nap és a
+  mozgás nagysága: közép-európai éjfél után nem kér újat ugyanarra a mozgásra, és ha a +3%-ból +8% lesz, nem a
+  reggeli magyarázatot adja. Az összefoglalóba részvényenként a saját hírei kerülnek, a több részvényt érintő közös
+  hír mindegyikhez. Egy már futó hírfrissítést az összefoglaló megvár, nem üres hírekből készül. A reggeli
+  összefoglaló hétvégén és ünnepnap után nem ismétli ugyanazokat a számokat, nyelvváltás után az új nyelven
+  készül, és az értesítés első mondata nem szakad meg az „U.S.” pontjánál. Hálózat nélkül a távollét-összefoglaló
+  nem a gyorsítótár régi árából számol, és nem írja felül vele a pillanatképet. A kezdőképernyő piaci sávja és
+  hírei nyitva hagyva is frissülnek (félóránként és előtérbe kerüléskor). A helyi adatok törlése az
+  AI-utánanézéseket, a kérdezz-vissza beszélgetéseket és a távollét-pillanatképet is törli. A naplenyomat
+  műveleti sorrendje javítva (eddig sok szövegnek azonos lenyomata lehetett).
 
 ## AI-jelentés, kérdések, megosztás: egy tizenkilencedik kódátnézés javításai
 

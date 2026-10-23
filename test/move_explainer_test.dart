@@ -59,7 +59,7 @@ void main() {
     expect(user, contains('Today: 2026-10-21'));
     expect(user, contains('Move today: +4.2%'));
     expect(user, contains('Language: Hungarian'));
-    expect(body['shared_cache'], 'move|NVDA|2026-10-21|Hungarian');
+    expect(body['shared_cache'], 'move|NVDA|2026-10-21|+1|Hungarian');
     expect(((body['tools'] as List).first as Map)['max_uses'], MoveExplainer.maxSearches);
     expect(MoveExplainer.systemPrompt, contains('Never invent facts'));
   });

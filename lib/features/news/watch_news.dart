@@ -42,18 +42,33 @@ class WatchNewsService extends ChangeNotifier {
 
   final Map<String, (DateTime at, List<NewsItem> items)> _cache = {};
   List<WatchedNews> _news = const [];
-  bool _loading = false;
+  Future<void>? _running;
 
+  /// A listában (megjelenítésre) ugyanaz a hír csak egyszer, az első részvénynél.
   List<WatchedNews> get news => _news;
-  bool get loading => _loading;
+  bool get loading => _running != null;
+
+  /// Egy részvény friss hírei, a többi részvénnyel közös hírekkel együtt (az
+  /// összefoglalóhoz: a közös hír mindkét részvényhez tartozik).
+  List<NewsItem> newsOf(String symbol) {
+    final since = _clock().subtract(maxAge);
+    return [
+      for (final n in _cache[symbol]?.$2 ?? const <NewsItem>[])
+        if (n.publishedAt.isAfter(since)) n,
+    ]..sort((a, b) => b.publishedAt.compareTo(a.publishedAt));
+  }
 
   /// A figyelt részvények: előbb a portfólió (bekerülési érték szerint), aztán a kedvencek.
   List<String> get watched =>
       {for (final p in portfolio.positions) p.symbol, ...preferences.favorites}.take(maxSymbols).toList();
 
-  Future<void> refresh({bool force = false}) async {
-    if (_loading) return;
-    _loading = true;
+  /// Frissítés; ha már fut egy, azt várja meg (pl. az összefoglaló ne üres hírekből készüljön).
+  Future<void> refresh({bool force = false}) => _running ??= _refresh(force).whenComplete(() {
+    _running = null;
+    notifyListeners();
+  });
+
+  Future<void> _refresh(bool force) async {
     notifyListeners();
     try {
       final symbols = watched;
@@ -73,7 +88,8 @@ class WatchNewsService extends ChangeNotifier {
 
       await Future.wait([for (var i = 0; i < parallel; i++) worker()]);
       final since = _clock().subtract(maxAge);
-      final seen = <String>{};
+      // A link és a cím külön halmazban: egy link nélküli hír címe nem ütközhet önmagával.
+      final urls = <String>{}, headlines = <String>{};
       final list = <WatchedNews>[
         for (final s in symbols)
           for (final n in _cache[s]?.$2 ?? const <NewsItem>[])
@@ -81,11 +97,10 @@ class WatchNewsService extends ChangeNotifier {
       ]..sort((a, b) => b.item.publishedAt.compareTo(a.item.publishedAt));
       _news = [
         for (final n in list)
-          if (seen.add(n.item.url.isEmpty ? n.item.headline : n.item.url) && seen.add(n.item.headline.toLowerCase())) n,
+          if ((n.item.url.isEmpty || urls.add(n.item.url)) && headlines.add(n.item.headline.toLowerCase())) n,
       ];
-    } finally {
-      _loading = false;
-      notifyListeners();
+    } catch (e) {
+      debugPrint('Hírek frissítése nem sikerült: $e');
     }
   }
 }

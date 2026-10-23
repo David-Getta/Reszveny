@@ -3,6 +3,7 @@ import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'core/app_preferences.dart';
@@ -139,7 +140,8 @@ class AppServices {
     brief =
         dailyBrief?.call(news) ??
         DailyBrief(config: config, marketData: marketData, news: news, client: backend?.authenticated);
-    brief.upcoming ??= () => events.events;
+    // A közelmúlt gyorsjelentései is (a friss eredményhez), a közeliek mellett.
+    brief.upcoming ??= () => [...events.recentEarnings, ...events.events];
     brief.fx ??= () {
       final pair = FxService.homePair(
         displayCurrency(locale.effective(WidgetsBinding.instance.platformDispatcher.locale)),
@@ -390,6 +392,16 @@ class AppServices {
   /// Reggelente magától elkészülő napi összefoglaló (ha be van kapcsolva).
   late final MorningBrief morningBrief;
 
+  /// A személyes adatok törlésekor eltávolított további helyi tárolók.
+  static const wipedKeys = [
+    'research_followups',
+    AwaySummary.storeKey,
+    'move_notes',
+    'news_explanations',
+    'earnings_summaries',
+    'instrument_notes',
+  ];
+
   /// Fiók törlése a szerveren, és ha kérik, a készüléken tárolt személyes adatoké
   /// is (portfólió, riasztások, kedvencek, előzmények, elmentett elemzések).
   Future<void> deleteAccount({required bool wipeLocalData}) async {
@@ -401,8 +413,15 @@ class AppServices {
       await reports.clearCache();
       await notes.clear();
       await PortfolioReviewer.clearLast();
-      await DailyBrief.clearSaved();
+      await brief.forget();
       await CachingMarketDataProvider.clear();
+      // Az AI-utánanézések, a kérdezz-vissza beszélgetések és a távollét-pillanatkép is.
+      try {
+        final prefs = await SharedPreferences.getInstance();
+        for (final k in wipedKeys) {
+          await prefs.remove(k);
+        }
+      } catch (_) {}
     }
     // Az app névtelen fiókkal megy tovább; a friss állapotot a szerver adja.
     await syncEntitlements();

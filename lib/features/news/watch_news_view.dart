@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -28,6 +30,11 @@ class WatchNewsSection extends StatefulWidget {
 class _WatchNewsSectionState extends State<WatchNewsSection> {
   bool _started = false;
 
+  /// Nyitva hagyott kezdőképernyőn is frissül (a szolgáltatás részvényenként
+  /// [WatchNewsService.cacheFor] ideig a meglévőt adja), és előtérbe kerüléskor.
+  Timer? _timer;
+  AppLifecycleListener? _lifecycle;
+
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
@@ -35,6 +42,15 @@ class _WatchNewsSectionState extends State<WatchNewsSection> {
     _started = true;
     final news = AppServices.of(context).news;
     WidgetsBinding.instance.addPostFrameCallback((_) => news.refresh());
+    _timer = Timer.periodic(WatchNewsService.cacheFor, (_) => news.refresh());
+    _lifecycle = AppLifecycleListener(onResume: news.refresh);
+  }
+
+  @override
+  void dispose() {
+    _timer?.cancel();
+    _lifecycle?.dispose();
+    super.dispose();
   }
 
   @override

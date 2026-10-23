@@ -6,6 +6,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../core/app_preferences.dart';
 import '../alerts/price_alert.dart';
+import '../market_data/caching_market_data_provider.dart';
 import '../events/events_service.dart';
 import '../market_data/market_data_provider.dart';
 import '../fx/fx_service.dart';
@@ -104,13 +105,21 @@ class AwaySummary extends ChangeNotifier {
     }
     final prev = _parse(prefs.getString(storeKey));
     final prices = <String, double>{};
-    // Egy-egy hiányzó ár (vagy azonnal dobó, hálózat nélküli lekérés) nem állítja meg.
+    final market = marketData;
+    // Egy-egy hiányzó ár (vagy azonnal dobó, hálózat nélküli lekérés) nem állítja meg;
+    // a gyorsítótárból jött (régi) ár nem friss, kimarad.
     await Future.wait([
       for (final s in symbols)
-        Future.sync(() => marketData.quote(s)).then((q) {
-          if (q.price > 0) prices[s] = q.price;
+        Future.sync(() => market.quote(s)).then((q) {
+          if (q.price > 0 && !(market is CachingMarketDataProvider && market.quoteIsStale(s))) prices[s] = q.price;
         }, onError: (_) {}),
     ]);
+    // Friss árak nélkül (hálózat nélkül) se jelentés, se új pillanatkép: a következő,
+    // már online ellenőrzés a régi pillanatképhez mér.
+    if (prices.isEmpty) {
+      _lastCheck = null;
+      return;
+    }
     if (prev != null && now.difference(prev.at) >= minAway) {
       final moves =
           [
@@ -133,7 +142,6 @@ class AwaySummary extends ChangeNotifier {
       );
       notifyListeners();
     }
-    if (prices.isEmpty) return;
     // A következő gyorsjelentések napja: amelyik a következő látogatásig elmúlik, az „jelentett”.
     try {
       await _eventsReady().timeout(const Duration(seconds: 25));

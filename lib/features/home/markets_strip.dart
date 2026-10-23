@@ -54,28 +54,54 @@ class _MarketsStripState extends State<MarketsStrip> {
   Future<PriceHistory>? _tech;
   (String, String)? _pair;
 
-  /// Percenként frissül a nyitvatartás visszaszámlálása.
+  /// Percenként frissül a nyitvatartás visszaszámlálása, [refreshEvery] után (és
+  /// előtérbe kerüléskor, ha legalább 5 perce töltött) az árfolyamok is.
   Timer? _tick;
+  AppLifecycleListener? _lifecycle;
+  DateTime _loadedAt = DateTime.now();
+  static const refreshEvery = Duration(minutes: 30);
 
   @override
   void initState() {
     super.initState();
     _tick = Timer.periodic(const Duration(minutes: 1), (_) {
-      if (mounted) setState(() {});
+      if (!mounted) return;
+      setState(() {
+        if (DateTime.now().difference(_loadedAt) >= refreshEvery) _reload();
+      });
     });
+    _lifecycle = AppLifecycleListener(
+      onResume: () {
+        if (mounted && DateTime.now().difference(_loadedAt) >= const Duration(minutes: 5)) setState(_reload);
+      },
+    );
   }
 
   @override
   void dispose() {
     _tick?.cancel();
+    _lifecycle?.dispose();
     super.dispose();
+  }
+
+  /// Újratöltés: a FutureBuilder a régi adatot mutatja, amíg az új megérkezik.
+  void _reload() {
+    _quotes = null;
+    _tech = null;
+    _pair = null;
+    _load();
   }
 
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
+    _load();
+  }
+
+  void _load() {
     final services = AppServices.of(context);
     final market = services.marketData;
+    if (_quotes == null) _loadedAt = DateTime.now();
     _quotes ??= Future.wait([
       for (final (s, _) in MarketsStrip.markets)
         market.quote(s).then<StockQuote?>((q) => q, onError: (Object _) => null),

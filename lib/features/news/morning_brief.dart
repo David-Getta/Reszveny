@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 
 import '../../core/app_preferences.dart';
 import '../../core/desktop/system_notifier.dart';
+import '../../core/util/us_market_hours.dart';
 import 'daily_brief.dart';
 import 'watch_news.dart';
 import '../../core/util/text.dart';
@@ -48,12 +49,24 @@ class MorningBrief {
     Timer(const Duration(minutes: 2), check);
   }
 
-  /// Az összefoglaló első mondata (az értesítés szövegének).
+  /// Az összefoglaló első mondata (az értesítés szövegének). A rövidítés pontja
+  /// („U.S. stocks…”, „e.g. the…”) nem mondatvég: az egybetűs tagokból álló szó
+  /// után, vagy ha kisbetűvel folytatódik.
   static String firstSentence(String text) {
     final line = text.trim().split('\n').first.trim();
+    var end = line.length;
     // A kínai/japán mondatvég után nincs szóköz.
-    final m = RegExp(r'^.+?([.!?](\s|$)|[。！？])').firstMatch(line);
-    final s = (m?.group(0) ?? line).trim();
+    for (final m in RegExp(r'[.!?](?=\s|$)|[。！？]').allMatches(line)) {
+      if (m.group(0) == '.') {
+        final word = line.substring(0, m.start).split(RegExp(r'\s')).last;
+        final next = line.substring(m.end).trimLeft();
+        if (RegExp(r'^(\p{L}\.)*\p{L}$', unicode: true).hasMatch(word)) continue;
+        if (next.isNotEmpty && next[0] != next[0].toUpperCase()) continue;
+      }
+      end = m.end;
+      break;
+    }
+    final s = line.substring(0, end).trim();
     return s.length <= 180 ? s : '${clipText(s, 179)}…';
   }
 
@@ -61,11 +74,19 @@ class MorningBrief {
   Future<bool> check() async {
     if (!preferences.morningBrief || _clock().hour < fromHour) return false;
     await brief.load();
-    if (brief.isToday || brief.busy) return false;
+    final lang = language();
+    if (brief.isTodayIn(lang) || brief.busy) return false;
+    // Csak ha a legutóbbi összefoglaló óta zárt egy amerikai kereskedési nap: hétvégén
+    // és ünnepnap után ne ismételje ugyanazokat a számokat.
+    if (brief.last case final l?
+        when (l.language.isEmpty || l.language == lang) &&
+            !l.at.toUtc().isBefore(UsMarketHours.lastClose(_clock().toUtc()))) {
+      return false;
+    }
     final symbols = news.watched;
     if (symbols.isEmpty) return false;
     try {
-      final b = await brief.generate(symbols: symbols, language: language());
+      final b = await brief.generate(symbols: symbols, language: lang);
       final day = b.at.toIso8601String().substring(0, 10);
       await notifier.show(id: 'brief-$day', title: title(), body: firstSentence(b.text));
       onMade?.call();

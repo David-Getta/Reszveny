@@ -50,6 +50,9 @@ class CachingMarketDataProvider extends MarketDataProvider {
     return oldest;
   }
 
+  /// A részvény legutóbbi árfolyama a gyorsítótárból jött-e (nem friss).
+  bool quoteIsStale(String symbol) => stale.value.containsKey('${_prefix}quote_${symbol.toUpperCase()}');
+
   void _setStale(String key, DateTime? at) {
     final next = {...stale.value};
     if (at == null) {

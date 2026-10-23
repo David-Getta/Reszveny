@@ -14,6 +14,7 @@ import '../fx/fx_service.dart';
 import '../market_data/market_data_provider.dart';
 import 'watch_news.dart';
 import '../../core/util/dates.dart';
+import '../../core/util/us_market_hours.dart';
 
 /// Egy elkészült napi összefoglaló.
 class Brief {
@@ -88,6 +89,9 @@ class DailyBrief extends ChangeNotifier {
     return l.at.year == n.year && l.at.month == n.month && l.at.day == n.day;
   }
 
+  /// Mai, és a megadott nyelvű-e a legutóbbi (nyelvváltás után újat kell készíteni).
+  bool isTodayIn(String language) => isToday && (_last!.language.isEmpty || _last!.language == language);
+
   Future<void> load() async {
     if (_loaded) return;
     _loaded = true;
@@ -96,6 +100,14 @@ class DailyBrief extends ChangeNotifier {
       _last = raw == null ? null : Brief.fromJson(jsonDecode(raw));
       notifyListeners();
     } catch (_) {}
+  }
+
+  /// A legutóbbi összefoglaló elfelejtése (memóriából és a készülékről).
+  Future<void> forget() async {
+    _last = null;
+    _loaded = true;
+    notifyListeners();
+    await clearSaved();
   }
 
   static Future<void> clearSaved() async {
@@ -135,6 +147,8 @@ Rules:
         'role': 'user',
         'content':
             'Language: $language\nToday: ${today.toIso8601String().substring(0, 10)}\n'
+            // A „mai változás” a legutóbbi amerikai kereskedési napra vonatkozik (hétvégén a péntekire).
+            'Last US trading session: ${UsMarketHours.sessionDate(today.toUtc()).toIso8601String().substring(0, 10)}\n'
             '${homeCurrency == null ? '' : 'Home currency (JSON): ${jsonEncode({'pair': homeCurrency.pair, 'rate': homeCurrency.rate, if (homeCurrency.changePercent != null) 'change_today_pct': double.parse(homeCurrency.changePercent!.toStringAsFixed(2))})}\n'}'
             'Stocks (JSON): ${jsonEncode([
               for (final s in stocks) {
@@ -158,12 +172,13 @@ Rules:
     _busy = true;
     notifyListeners();
     try {
+      // Egyszer rögzítve: egy éjfél után megérkező válasz is ugyanahhoz a naphoz tartozik.
+      final today = _clock();
       await news.refresh();
       final picked = symbols.take(maxSymbols).toList();
       final quotes = await Future.wait([
         for (final s in picked) marketData.quote(s).then<StockQuote?>((q) => q, onError: (Object _) => null),
       ]);
-      final today = _clock();
       final day = DateTime(today.year, today.month, today.day);
       final stocks = <BriefStock>[];
       for (final (i, s) in picked.indexed) {
@@ -172,12 +187,20 @@ Rules:
             .where((e) => e.symbol == s && e.kind == UpcomingEventKind.earnings)
             .firstOrNull;
         final inDays = e == null ? null : calendarDaysBetween(day, e.date);
+        // Friss eredmény: csak ha a jelentés már megjelent (tegnap vagy korábban, vagy
+        // ma nyitás előtt és a nyitás már elmúlt), és a negyedév közvetlenül előtte zárult
+        // – különben a múlt negyedév számai „frissnek” látszanának.
         EarningsSurprise? reported;
-        if (inDays != null && inDays <= 0 && inDays >= -reportedWithinDays) {
+        final ny = UsMarketHours.newYorkTime(today.toUtc());
+        final pastOpen = !ny.isBefore(DateTime(ny.year, ny.month, ny.day, 9, 30));
+        final released =
+            inDays != null && inDays >= -reportedWithinDays && (inDays < 0 || (e!.hour == 'bmo' && pastOpen));
+        if (released) {
           try {
-            reported = (await marketData.earnings(s)).history
-                .where((h) => h.actual != null && h.estimate != null && day.difference(h.period).inDays <= 120)
-                .firstOrNull;
+            reported = (await marketData.earnings(s)).history.where((h) {
+              final gap = e!.date.difference(h.period).inDays;
+              return h.actual != null && h.estimate != null && gap >= 0 && gap <= 95;
+            }).firstOrNull;
           } catch (_) {
             reported = null;
           }
@@ -187,7 +210,8 @@ Rules:
           changePercent: quotes[i]?.changePercent,
           price: quotes[i]?.price,
           currency: null as String?,
-          headlines: [for (final n in news.news.where((n) => n.symbol == s).take(headlinesPerSymbol)) n.item.headline],
+          // A részvény saját hírei (a több részvényt érintő közös hír mindegyiknél).
+          headlines: [for (final n in news.newsOf(s).take(headlinesPerSymbol)) n.headline],
           reportsInDays: inDays != null && inDays >= 0 && inDays <= earningsWithinDays ? inDays : null,
           reported: reported,
         ));
@@ -210,12 +234,12 @@ Rules:
       final body = requestBody(
         stocks: stocks,
         language: language,
-        today: _clock(),
+        today: today,
         homeCurrency: home,
         model: config.anthropicModel,
       );
       final text = await askText(config, _client, body);
-      final brief = Brief(text: text, at: _clock(), language: language);
+      final brief = Brief(text: text, at: today, language: language);
       _last = brief;
       try {
         await (await SharedPreferences.getInstance()).setString(_key, jsonEncode(brief.toJson()));
@@ -264,7 +288,8 @@ String stableDigest(String s) {
     var h = seed;
     for (final b in bytes) {
       final x = h ^ b;
-      h = ((x & 0xffff) * 0x01000193 + ((((x >> 16) & 0xffff) * 0x01000193) & 0xffff) << 16) & 0xffffffff;
+      // A felső 16 bit szorzata külön eltolva (a `+` erősebben köt, mint a `<<`).
+      h = ((x & 0xffff) * 0x01000193 + (((((x >> 16) & 0xffff) * 0x01000193) & 0xffff) << 16)) & 0xffffffff;
     }
     return h.toRadixString(16).padLeft(8, '0');
   }
