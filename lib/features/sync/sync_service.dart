@@ -158,15 +158,18 @@ class SyncService extends ChangeNotifier {
     'notes': {for (final e in notes.all.entries) e.key: e.value.toJson()},
   };
 
-  /// Két csomag uniója: a helyi elemek elöl, azonos azonosítónál a helyi
-  /// marad; jegyzetnél az újabb.
+  /// Két csomag uniója: a helyi elemek elöl, azonos azonosítónál a később
+  /// javított (egyezésnél vagy javítás nélkül a helyi) marad; jegyzetnél az újabb.
   static Map<String, dynamic> merge(Map<String, dynamic> local, Map<String, dynamic> remote) {
+    DateTime edited(Map<String, dynamic> e) => DateTime.tryParse('${e['edited'] ?? ''}') ?? DateTime(0);
     List<Map<String, dynamic>> byId(Object? a, Object? b) {
-      final seen = <String>{};
-      return [
-        for (final e in [..._maps(a), ..._maps(b)])
-          if (seen.add('${e['id']}')) e,
-      ];
+      final out = <String, Map<String, dynamic>>{};
+      for (final e in [..._maps(a), ..._maps(b)]) {
+        final id = '${e['id']}';
+        if (out[id] case final prev? when !edited(e).isAfter(edited(prev))) continue;
+        out[id] = e;
+      }
+      return out.values.toList();
     }
 
     final notesL = (local['notes'] as Map? ?? const {}).cast<String, dynamic>();

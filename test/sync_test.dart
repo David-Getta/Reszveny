@@ -204,6 +204,37 @@ void main() {
     expect(a.portfolio.dividends.single.account, isNull);
   });
 
+  test('both devices changed: a correction made on the other device is not lost to the older local copy', () async {
+    final server = _Server();
+    SharedPreferences.setMockInitialValues({});
+    final a = _Device(server);
+    final lot = await a.portfolio.add(symbol: 'AAPL', quantity: 10, price: 180, currency: 'USD');
+    await a.sync.start();
+    SharedPreferences.setMockInitialValues({});
+    final b = _Device(server);
+    await b.sync.start();
+
+    // A javítja az árat és feltölti; B közben (még a régi tétellel) osztalékot vesz fel.
+    await a.portfolio.replace(PortfolioLot(id: lot.id, symbol: 'AAPL', quantity: 10, price: 175, currency: 'USD'));
+    await a.sync.syncNow();
+    await b.portfolio.addDividend(symbol: 'AAPL', amount: 2.5, currency: 'USD');
+    await b.sync.syncNow();
+    expect(b.portfolio.lots.single.price, 175, reason: 'a később javított változat nyer');
+    expect(b.portfolio.dividends, hasLength(1));
+    await a.sync.syncNow();
+    expect(a.portfolio.lots.single.price, 175);
+    expect(a.portfolio.dividends.single.amount, 2.5);
+
+    // Fordított sorrend: B javítja az osztalékot, A közben vesz; A szinkronizál utóbb.
+    final d = b.portfolio.dividends.single;
+    await b.portfolio.replaceDividend(DividendRecord(id: d.id, symbol: 'AAPL', amount: 2.6, currency: 'USD'));
+    await a.portfolio.add(symbol: 'MSFT', quantity: 1, price: 400, currency: 'USD');
+    await b.sync.syncNow();
+    await a.sync.syncNow();
+    expect(a.portfolio.dividends.single.amount, 2.6);
+    expect(a.portfolio.lots, hasLength(2));
+  });
+
   test('goals follow the account: the newer change wins, a removed goal does not come back', () async {
     final server = _Server();
     SharedPreferences.setMockInitialValues({});

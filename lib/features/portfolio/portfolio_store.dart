@@ -16,11 +16,16 @@ class PortfolioLot {
     this.sell = false,
     this.account,
     this.fee = 0,
+    this.edited,
   });
 
   final String id;
   final String symbol;
   final double quantity;
+
+  /// Az utolsó javítás ideje (UTC); `null`, ha nem javították. Szinkronkor azonos
+  /// azonosítónál az újabb javítás nyer.
+  final DateTime? edited;
 
   /// Darabonkénti vétel- vagy eladási ár a részvény pénznemében.
   final double price;
@@ -73,6 +78,7 @@ class PortfolioLot {
     if (sell) 'side': 'sell',
     'account': ?account,
     if (fee > 0) 'fee': fee,
+    if (edited != null) 'edited': edited!.toUtc().toIso8601String(),
   };
 
   static PortfolioLot? fromJson(Map<String, dynamic> j) {
@@ -89,6 +95,7 @@ class PortfolioLot {
       sell: j['side'] == 'sell',
       account: cleanAccount(j['account']),
       fee: cleanFee(j['fee']),
+      edited: DateTime.tryParse(j['edited'] as String? ?? ''),
     );
   }
 }
@@ -103,11 +110,15 @@ class DividendRecord {
     required this.currency,
     this.date,
     this.account,
+    this.edited,
   });
 
   final String id;
   final String symbol;
   final double amount;
+
+  /// Az utolsó javítás ideje (UTC); `null`, ha nem javították.
+  final DateTime? edited;
   final String currency;
   final DateTime? date;
 
@@ -124,6 +135,7 @@ class DividendRecord {
     'currency': currency,
     if (date != null) 'date': date!.toIso8601String().substring(0, 10),
     'account': ?account,
+    if (edited != null) 'edited': edited!.toUtc().toIso8601String(),
   };
 
   static DividendRecord? fromJson(Map<String, dynamic> j) {
@@ -137,6 +149,7 @@ class DividendRecord {
       currency: (j['currency'] as String? ?? 'USD').toUpperCase(),
       date: DateTime.tryParse(j['date'] as String? ?? ''),
       account: PortfolioLot.cleanAccount(j['account']),
+      edited: DateTime.tryParse(j['edited'] as String? ?? ''),
     );
   }
 }
@@ -205,6 +218,7 @@ class SplitRecord {
       sell: l.sell,
       account: l.account,
       fee: l.fee,
+      edited: l.edited,
     );
   }
 
@@ -223,6 +237,7 @@ class SplitRecord {
       sell: l.sell,
       account: l.account,
       fee: l.fee,
+      edited: l.edited,
     );
   }
 }
@@ -983,6 +998,7 @@ class PortfolioStore extends ChangeNotifier {
       currency: d.currency.trim().toUpperCase(),
       date: d.date,
       account: canonicalAccount(d.account),
+      edited: DateTime.now().toUtc(),
     );
     _dividends.sort(_newestFirst);
     notifyListeners();
@@ -1095,6 +1111,7 @@ class PortfolioStore extends ChangeNotifier {
       sell: lot.sell,
       account: canonicalAccount(lot.account),
       fee: PortfolioLot.cleanFee(lot.fee),
+      edited: DateTime.now().toUtc(),
     );
     notifyListeners();
     await _save();

@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.240)
+# Változásjegyzék (0.2.130 → 0.2.241)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -151,7 +151,8 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
   és mentéskor visszaalakul; a jövőbeli vagy 1980 előtti tárolt nap nem akasztja meg a naptárt; perzsa és pastu nyelven
   is menthető a kitöltött osztalékösszeg; a javított eladás sem lehet több, mint a számlán birtokolt darab plusz maga
   az eladás. Szinkronnál a javításkor törölt számla és díj sem tér vissza a másik eszközről (eddig a régebbi appok
-  elleni védelem visszaírta).
+  elleni védelem visszaírta). Ha mindkét eszközön volt változás, azonos tételnél a később javított változat nyer (eddig
+  a helyi, így a másik eszközön végzett javítás elveszhetett).
 - **Ismételt import duplikálás nélkül**: a frissebb (a régi sorokat is tartalmazó) bróker-export újbóli beolvasásakor
   a már rögzített tranzakciók és osztalékok kimaradnak, és az import végén látszik, hány („2 már rögzítve volt,
   kimaradt”); a fájlon belüli két azonos részteljesítés viszont elsőre mindkettő bekerül (eddig a második elveszett).
