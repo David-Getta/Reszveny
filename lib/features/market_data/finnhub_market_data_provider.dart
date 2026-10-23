@@ -424,9 +424,13 @@ class FinnhubMarketDataProvider extends MarketDataProvider {
       final close = _d(c[i]);
       final ts = _d(t[i]);
       if (close == null || ts == null) continue;
+      // Napi gyertya: a kereskedési nap (az időbélyeg UTC-napja – éjfél UTC vagy
+      // New York-i éjfél is ugyanaz), helyi naptári napként: a dátum kiírása és a
+      // vételek napjával való összevetés így nem csúszik el nyugati időzónában.
+      final u = DateTime.fromMillisecondsSinceEpoch((ts * 1000).round(), isUtc: true);
       points.add(
         PricePoint(
-          time: DateTime.fromMillisecondsSinceEpoch((ts * 1000).round(), isUtc: true),
+          time: DateTime(u.year, u.month, u.day),
           close: close,
           open: i < o.length ? _d(o[i]) : null,
           high: i < h.length ? _d(h[i]) : null,

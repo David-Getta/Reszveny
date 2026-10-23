@@ -91,9 +91,15 @@ void main() {
     // Amit még sosem töltöttünk le, az offline is hiba.
     await expectLater(cache.quote('MSFT'), throwsA(isA<MarketDataException>()));
 
-    // Visszajön a hálózat: a jelzés eltűnik.
+    // Visszajön a hálózat: egy adat frissülése még nem törli a többi régi adat jelzését;
+    // ha mind friss, a jelzés eltűnik.
     inner.offline = false;
     await cache.quote('AAPL');
+    expect(cache.staleSince('AAPL'), DateTime(2026, 10, 15, 9, 12));
+    await cache.profile('AAPL');
+    await cache.metrics('AAPL');
+    await cache.history('AAPL');
+    expect(cache.staleSince('AAPL'), isNull);
     expect(cache.offlineSince.value, isNull);
 
     // Az „ismeretlen részvény” hibát nem takarja el a mentett adat.
@@ -102,6 +108,17 @@ void main() {
     await CachingMarketDataProvider.clear();
     inner.offline = true;
     await expectLater(cache.quote('AAPL'), throwsA(isA<MarketDataException>()));
+  });
+
+  test('the history is kept per length: a 1-year load does not replace the 5-year one', () async {
+    final inner = _Switchable();
+    final cache = CachingMarketDataProvider(inner, clock: () => DateTime(2026, 10, 15, 9, 12));
+    final five = await cache.history('SPY');
+    final one = await cache.history('SPY', years: 1);
+    expect(one.points.length, lessThan(five.points.length));
+    inner.offline = true;
+    expect((await cache.history('SPY')).points.length, five.points.length);
+    expect((await cache.history('SPY', years: 1)).points.length, one.points.length);
   });
 
   testWidgets('offline, the stock page shows the saved data with a banner', (tester) async {

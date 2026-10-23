@@ -52,13 +52,14 @@ class AlertWatcher {
     final v = a['value'];
     if (v is! num) return false;
     final price = q.price;
-    // A napi mozgás csak az élesítés (létrehozás, szerkesztés) utáni kötésből: hétvégén
-    // és nyitás előtt még az előző nap mozgása látszik.
+    // Csak az élesítés (létrehozás, szerkesztés) utáni kötés számít: hétvégén és nyitás
+    // előtt még az előző nap ára és mozgása látszik (ahogy az appban is).
     final armed = DateTime.tryParse('${a['edited'] ?? a['created_at'] ?? ''}');
+    if (q.time != null && armed != null && !q.time!.isAfter(armed)) return false;
     return switch (a['kind']) {
       'above' => price >= v,
       'below' => price <= v,
-      'move' => (q.changePercent ?? 0).abs() >= v && (q.time == null || armed == null || q.time!.isAfter(armed)),
+      'move' => (q.changePercent ?? 0).abs() >= v,
       // Követő stop: a csúcsot a hívó előbb frissíti ([_raisePeak]).
       'trailing' => a['peak'] is num && price <= (a['peak'] as num) * (1 - v / 100),
       _ => false,

@@ -56,4 +56,33 @@ void main() {
     expect(moves.first['date'], '2026-01-03');
     expect(moves.first['change_percent'], closeTo(-10.89, 0.01));
   });
+
+  test('the year-to-date return is from the previous year’s last close (as on the stock page)', () {
+    final pts = [
+      PricePoint(time: DateTime(2025, 12, 31), close: 100),
+      PricePoint(time: DateTime(2026, 1, 2), close: 110),
+      PricePoint(time: DateTime(2026, 1, 5), close: 121),
+    ];
+    expect(PriceStats.ytd(pts), closeTo(21, 1e-9));
+    final stats = PriceStats.summarize(PriceHistory(symbol: 'X', points: pts))!;
+    expect(stats['return_ytd_percent'], 21.0);
+    // A dátum a naptári nap (időzóna-átváltás nélkül).
+    expect(stats['last_date'], '2026-01-05');
+  });
+
+  test('the chart period starts at the last close on or before the target day, as the returns do', () {
+    // Július 3. (péntek) ünnepnap: az 1 hetes változás a július 2-i zárástól.
+    final h = PriceHistory(
+      symbol: 'X',
+      points: [
+        PricePoint(time: DateTime(2026, 7, 1), close: 99),
+        PricePoint(time: DateTime(2026, 7, 2), close: 100),
+        PricePoint(time: DateTime(2026, 7, 6), close: 101),
+        PricePoint(time: DateTime(2026, 7, 10), close: 103),
+      ],
+    );
+    final week = h.since(7);
+    expect(week.first.time, DateTime(2026, 7, 2));
+    expect((week.last.close / week.first.close - 1) * 100, closeTo(PriceStats.returnOver(h.points, 7)!, 0.01));
+  });
 }

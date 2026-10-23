@@ -15,7 +15,26 @@ class PriceStats {
     return (v * f).roundToDouble() / f;
   }
 
-  static String _date(DateTime t) => t.toUtc().toIso8601String().substring(0, 10);
+  /// A nap (a napi adatok naptári napok: nincs időzóna-átváltás, különben kelet felé egy nappal korábbi lenne).
+  static String _date(DateTime t) =>
+      '${t.year.toString().padLeft(4, '0')}-${t.month.toString().padLeft(2, '0')}-${t.day.toString().padLeft(2, '0')}';
+
+  /// Idei hozam %-ban: az előző év utolsó záróárához mérve (ha a történet az év
+  /// első napjaiban kezdődik, az első ponthoz); `null`, ha nincs mihez mérni.
+  static double? ytd(List<PricePoint> pts) {
+    if (pts.length < 2) return null;
+    final last = pts.last;
+    PricePoint? base;
+    for (final p in pts) {
+      if (p.time.year >= last.time.year) {
+        if (base == null && p.time.month == 1 && p.time.day <= 7) base = p;
+        break;
+      }
+      base = p;
+    }
+    if (base == null || base.close == 0 || identical(base, last)) return null;
+    return (last.close / base.close - 1) * 100;
+  }
 
   /// Hozam %-ban [days] naptári nap alatt (null, ha nincs elég adat).
   static double? returnOver(List<PricePoint> pts, int days) {
@@ -113,7 +132,6 @@ class PriceStats {
     moves.sort((a, b) => b.pct.abs().compareTo(a.pct.abs()));
 
     final vols = h.lastDays(31).map((p) => p.volume).whereType<double>().toList();
-    final ytdStart = pts.where((p) => p.time.year == last.time.year).firstOrNull;
 
     return {
       'last_close': _round(last.close, 4),
@@ -123,7 +141,8 @@ class PriceStats {
       'return_6m_percent': returnOver(pts, 182),
       'return_1y_percent': returnOver(pts, 365),
       'return_3y_percent': returnOver(pts, 365 * 3),
-      if (ytdStart != null && ytdStart.close > 0) 'return_ytd_percent': _round((last.close / ytdStart.close - 1) * 100),
+      // Ugyanaz, mint a részvény oldalán: az előző év utolsó záróárától.
+      if (ytd(pts) case final y?) 'return_ytd_percent': _round(y),
       'high_52w': _round(high52, 4),
       'low_52w': _round(low52, 4),
       'from_52w_high_percent': high52 > 0 ? _round((last.close / high52 - 1) * 100) : null,

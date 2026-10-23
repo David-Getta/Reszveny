@@ -291,6 +291,15 @@ void main() {
     expect((store.alerts.single.value, store.alerts.single.isActive), (300.0, true));
   });
 
+  test('a price from before the alert was set (e.g. a cached quote) does not fire it', () {
+    final armed = DateTime.utc(2026, 10, 15, 15);
+    final a = PriceAlert(id: 'b', symbol: 'AAPL', kind: AlertKind.below, value: 150, createdAt: armed);
+    final cached = StockQuote(symbol: 'AAPL', price: 148, timestamp: DateTime.utc(2026, 10, 15, 13));
+    final fresh = StockQuote(symbol: 'AAPL', price: 148, timestamp: DateTime.utc(2026, 10, 15, 16));
+    expect(a.isHit(cached), isFalse);
+    expect(a.isHit(fresh), isTrue);
+  });
+
   test('a daily move from before the alert was set does not fire; a trade after it does', () {
     final armed = DateTime.utc(2026, 10, 17, 10); // szombat
     final a = PriceAlert(id: 'm', symbol: 'NVDA', kind: AlertKind.move, value: 5, createdAt: armed);

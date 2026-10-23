@@ -76,14 +76,18 @@ class PriceAlert {
   }
 
   /// Teljesül-e a feltétel az adott árfolyamnál.
-  bool isHit(StockQuote q) => switch (kind) {
-    AlertKind.above => q.price >= value,
-    AlertKind.below => q.price <= value,
-    // A napi mozgás csak az élesítés utáni kereskedésből: hétvégén, ünnepnapon és
-    // nyitás előtt még az előző nap mozgása látszik, az nem szól.
-    AlertKind.move => (q.changePercent ?? 0).abs() >= value && (q.timestamp?.isAfter(armedAt) ?? true),
-    AlertKind.trailing => trailingLevel != null && q.price <= trailingLevel!,
-  };
+  /// Csak az élesítés utáni kötés számít: egy korábbi ár (hétvégén, ünnepnapon,
+  /// nyitás előtt, vagy hálózati hibánál a gyorsítótárból) nem süti el – a napi
+  /// mozgásnál ilyenkor még az előző nap mozgása látszik.
+  bool isHit(StockQuote q) {
+    if (q.timestamp case final t? when !t.isAfter(armedAt)) return false;
+    return switch (kind) {
+      AlertKind.above => q.price >= value,
+      AlertKind.below => q.price <= value,
+      AlertKind.move => (q.changePercent ?? 0).abs() >= value,
+      AlertKind.trailing => trailingLevel != null && q.price <= trailingLevel!,
+    };
+  }
 
   /// Mikor élesítették utoljára (létrehozás, szerkesztés vagy újraélesítés).
   DateTime get armedAt => modified ?? createdAt;

@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 import '../../../core/models/price_history.dart';
@@ -87,10 +89,20 @@ class _PriceChartState extends State<PriceChart> {
 
   void _toggleBenchmark() {
     setState(() => _bench = !_bench);
-    _benchLoad ??= widget.loadBenchmark!().then((h) {
-      if (mounted) setState(() => _benchData = h);
-      return h;
-    });
+    if (_benchLoad != null) return;
+    final load = _benchLoad = widget.loadBenchmark!();
+    unawaited(
+      load.then(
+        (h) {
+          if (mounted) setState(() => _benchData = h);
+        },
+        // Sikertelen betöltésnél kikapcsol, és a következő koppintás újra próbálja.
+        onError: (Object _) {
+          _benchLoad = null;
+          if (mounted) setState(() => _bench = false);
+        },
+      ),
+    );
   }
 
   /// A kijelölt pont indexe a látható pontok között (`null`: nincs kijelölés).
@@ -108,12 +120,13 @@ class _PriceChartState extends State<PriceChart> {
     if (_hover != null) setState(() => _hover = null);
   }
 
+  // Ugyanazok a napok, mint a hozamsávban (a két szám így egyezik).
   int _days(ChartRange r) => switch (r) {
     ChartRange.week => 7,
-    ChartRange.month => 31,
-    ChartRange.threeMonths => 92,
-    ChartRange.year => 366,
-    ChartRange.fiveYears => 5 * 366,
+    ChartRange.month => 30,
+    ChartRange.threeMonths => 91,
+    ChartRange.year => 365,
+    ChartRange.fiveYears => 5 * 365 - 5,
   };
 
   @override
@@ -121,7 +134,7 @@ class _PriceChartState extends State<PriceChart> {
     final l10n = AppLocalizations.of(context);
     final p = AppPalette.of(context);
     final theme = Theme.of(context);
-    final points = widget.history.lastDays(_days(_range));
+    final points = widget.history.since(_days(_range));
     final hover = _hover != null && _hover! < points.length ? _hover : null;
     final shownMarkers = points.length < 2
         ? const <ChartMarker>[]

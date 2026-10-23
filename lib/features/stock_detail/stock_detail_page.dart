@@ -230,7 +230,7 @@ class _DetailsBody extends StatelessWidget {
     // Cégprofil nélküli papír (ETF, alap): az üres cégspecifikus kártyák kimaradnak.
     final isInstrument = q != null && (p == null || (p.industry == null && p.sector == null));
     final sections = <Widget>[
-      const OfflineBanner(),
+      OfflineBanner(symbol: d.symbol),
       // Fejléc: név, ár, változás. Keskeny képernyőn (telefon) az ár a név alá
       // kerül, különben a hosszú árfolyam-megjegyzés összenyomná a cégnevet.
       Padding(

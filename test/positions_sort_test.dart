@@ -134,6 +134,8 @@ void main() {
               fmt: Fmt('en'),
               loadBenchmark: () async {
                 loads++;
+                // Az első kísérlet hibázik (pl. elérte a keretet): kikapcsol, a következő újra próbálja.
+                if (loads == 1) throw Exception('rate limited');
                 return PriceHistory(symbol: 'SPY', points: spy);
               },
             ),
@@ -146,6 +148,10 @@ void main() {
     await tester.tap(find.byKey(const ValueKey('chart-benchmark')));
     await tester.pumpAndSettle();
     expect(loads, 1);
+    expect(find.byKey(const ValueKey('chart-benchmark-change')), findsNothing);
+    await tester.tap(find.byKey(const ValueKey('chart-benchmark')));
+    await tester.pumpAndSettle();
+    expect(loads, 2);
     expect(find.byKey(const ValueKey('chart-benchmark-change')), findsOneWidget);
     expect(find.textContaining(RegExp(r'^S&P 500 \+')), findsOneWidget);
     // Ki- és bekapcsolva nem tölti újra.
@@ -154,7 +160,7 @@ void main() {
     expect(find.byKey(const ValueKey('chart-benchmark-change')), findsNothing);
     await tester.tap(find.byKey(const ValueKey('chart-benchmark')));
     await tester.pumpAndSettle();
-    expect(loads, 1);
+    expect(loads, 2);
   });
 
   test('open lots after a sale: the oldest purchase is used up first', () {

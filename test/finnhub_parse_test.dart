@@ -159,4 +159,18 @@ void main() {
     expect(e.isEmpty, isTrue);
     expect(e.toJson(), isEmpty);
   });
+
+  test('daily candles are calendar days (their UTC date), whatever the time zone', () {
+    final h = FinnhubMarketDataProvider.parseCandles('AAPL', {
+      's': 'ok',
+      // 2026-10-22 és 23, éjfél UTC; és egy New York-i éjfél (04:00Z).
+      't': [1792627200, 1792713600, 1792814400],
+      'c': [230.0, 231.0, 232.0],
+    });
+    expect(h.points.map((p) => (p.time.year, p.time.month, p.time.day, p.time.isUtc)), [
+      (2026, 10, 22, false),
+      (2026, 10, 23, false),
+      (2026, 10, 24, false),
+    ]);
+  });
 }

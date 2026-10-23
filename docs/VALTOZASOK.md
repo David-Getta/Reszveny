@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.261)
+# Változásjegyzék (0.2.130 → 0.2.262)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,18 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Piaci adatok és offline gyorsítótár: egy tizedik kódátnézés javításai
+
+- **0.2.262**: az offline-sáv a részvény oldalán akkor is látszik, ha csak egy része (pl. az ár) jött a mentett
+  adatból (eddig egy másik adat sikeres letöltése eltüntette); az 1 éves és az 5 éves árfolyam-történet külön
+  mentődik (offline az 5 éves diagramon eddig az 1 éves adat látszhatott); a diagram időszakának változása
+  ugyanattól a záróártól számít, mint a hozamsáv (ünnepnap után a tényleges előző zárástól); a napi gyertyák
+  naptári napok (Amerikában eddig egy nappal korábbi dátum, és a vételek jelölése eltűnhetett a diagram
+  végéről); az AI-elemzésnek küldött idei hozam az előző év utolsó záróárától számít (mint a képernyőn), a
+  dátumok időzóna-eltolás nélkül; az S&P 500 összevetés sikertelen betöltése kikapcsol, és újrapróbálható;
+  az árfolyam-riasztás csak az élesítés utáni árra szól (a hálózati hibánál mentett régebbi ár nem süti el – az
+  appban és a szerveren is).
 
 ## Szerver: heti levél, megosztás, belépés – egy kilencedik kódátnézés javításai
 

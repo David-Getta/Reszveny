@@ -17,20 +17,7 @@ class ReturnsStrip extends StatelessWidget {
   /// Hozam az év eleje óta: az előző év utolsó záróárától. Ha nincs tavalyi
   /// adat, csak akkor az év első napjától, ha az január első hetébe esik
   /// (különben az év közepéről indulna, félrevezetően).
-  static double? ytd(List<PricePoint> pts) {
-    if (pts.length < 2) return null;
-    final last = pts.last;
-    PricePoint? base;
-    for (final p in pts) {
-      if (p.time.year >= last.time.year) {
-        if (base == null && p.time.month == 1 && p.time.day <= 7) base = p;
-        break;
-      }
-      base = p;
-    }
-    if (base == null || base.close == 0 || identical(base, last)) return null;
-    return (last.close / base.close - 1) * 100;
-  }
+  static double? ytd(List<PricePoint> pts) => PriceStats.ytd(pts);
 
   @override
   Widget build(BuildContext context) {
