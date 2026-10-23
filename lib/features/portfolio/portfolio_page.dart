@@ -391,25 +391,9 @@ class _PortfolioBody extends StatelessWidget {
                           ],
                         ),
                         // Mi mozgatta ma a portfóliót: a két legnagyobb mai változás pozíciónként.
-                        if (topDayMovers(s) case final movers when movers.isNotEmpty) ...[
+                        if (topDayMovers(s).isNotEmpty) ...[
                           const SizedBox(height: 10),
-                          Text.rich(
-                            key: const ValueKey('portfolio-movers'),
-                            TextSpan(
-                              text: '${l10n.portfolioTodayMovers} ',
-                              children: [
-                                for (final (i, m) in movers.indexed) ...[
-                                  if (i > 0) const TextSpan(text: ' · '),
-                                  TextSpan(text: '${m.symbol} '),
-                                  TextSpan(
-                                    text: fmt.money(m.amount, ccy, withSign: true),
-                                    style: TextStyle(color: gainColor(p, m.amount), fontWeight: FontWeight.w600),
-                                  ),
-                                ],
-                              ],
-                            ),
-                            style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
-                          ),
+                          _TodayMovers(snapshot: s, fmt: fmt),
                         ],
                         if (s.annualDividend > 0) ...[
                           const SizedBox(height: 10),
@@ -1701,6 +1685,12 @@ class PortfolioSummaryCard extends StatelessWidget {
                                     _YearDividends(dividends: ds, currency: s.currency, fmt: fmt),
                                 ],
                               ),
+                            // Mi mozgatta ma: a két legnagyobb mai változás (ha legalább kettő mozdult).
+                            if (s != null && !s.unknown && topDayMovers(s).isNotEmpty)
+                              Padding(
+                                padding: const EdgeInsets.only(top: 2),
+                                child: _TodayMovers(snapshot: s, fmt: fmt),
+                              ),
                           ],
                         ),
                       ),
@@ -1714,6 +1704,38 @@ class PortfolioSummaryCard extends StatelessWidget {
           ),
         );
       },
+    );
+  }
+}
+
+/// „Ma leginkább mozgott: NVDA +39 284 HUF · OTP +18 600 HUF” – a két legnagyobb mai
+/// változás pozíciónként, színezve (a portfólió oldalán és a kezdőképernyő kártyáján).
+class _TodayMovers extends StatelessWidget {
+  const _TodayMovers({required this.snapshot, required this.fmt});
+
+  final PortfolioSnapshot snapshot;
+  final Fmt fmt;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context);
+    final p = AppPalette.of(context);
+    return Text.rich(
+      key: const ValueKey('portfolio-movers'),
+      TextSpan(
+        text: '${l10n.portfolioTodayMovers} ',
+        children: [
+          for (final (i, m) in topDayMovers(snapshot).indexed) ...[
+            if (i > 0) const TextSpan(text: ' · '),
+            TextSpan(text: '${m.symbol} '),
+            TextSpan(
+              text: fmt.money(m.amount, snapshot.currency, withSign: true),
+              style: TextStyle(color: gainColor(p, m.amount), fontWeight: FontWeight.w600),
+            ),
+          ],
+        ],
+      ),
+      style: Theme.of(context).textTheme.bodySmall?.copyWith(color: p.muted),
     );
   }
 }

@@ -6,6 +6,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:reszveny/app.dart';
 import 'package:reszveny/core/models/stock_quote.dart';
 import 'package:reszveny/core/share/share_text.dart';
+import 'package:reszveny/features/portfolio/portfolio_page.dart' show PortfolioSummaryCard;
 import 'package:reszveny/features/portfolio/portfolio_share_card.dart';
 import 'package:reszveny/features/portfolio/portfolio_store.dart';
 import 'package:reszveny/features/portfolio/portfolio_valuation.dart';
@@ -108,6 +109,11 @@ void main() {
     await s.preferences.setDisplayCurrency('USD');
     await tester.pumpWidget(WhatStockApp(services: s));
     await tester.pumpAndSettle();
+    // A kezdőképernyő kártyáján is: mi mozgatta ma a portfóliót.
+    expect(
+      find.descendant(of: find.byType(PortfolioSummaryCard), matching: find.byKey(const ValueKey('portfolio-movers'))),
+      findsOneWidget,
+    );
     await tester.tap(find.text('Portfolio').first);
     await tester.pumpAndSettle();
     await tester.tap(find.byKey(const ValueKey('portfolio-share')));
