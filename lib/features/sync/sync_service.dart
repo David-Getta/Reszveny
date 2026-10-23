@@ -145,6 +145,8 @@ class SyncService extends ChangeNotifier {
   }
 
   void _setDirty(bool v) {
+    // Csak változáskor írunk (egy import sok értesítése ne írja újra minden alkalommal).
+    if (_dirty == v) return;
     _dirty = v;
     SharedPreferences.getInstance().then((p) => p.setBool(_dirtyKey, v)).catchError((_) => false);
   }

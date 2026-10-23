@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 
 import '../compare/compare_page.dart';
 import '../../app_services.dart';
@@ -31,9 +32,11 @@ enum WatchSort { own, gainers, losers, since, name }
 /// napja helyi). `null`, ha a sorozat a felvétel után kezdődik, vagy még nincs
 /// a felvétel utáni nap.
 double? sinceAddedPercent(double price, List<PricePoint> pts, DateTime since) {
-  DateTime dayOf(PricePoint x) => DateTime(x.time.year, x.time.month, x.time.day);
-  if (pts.isEmpty || dayOf(pts.first).isAfter(since) || !dayOf(pts.last).isAfter(since)) return null;
-  final base = pts.where((x) => !dayOf(x).isBefore(since)).firstOrNull;
+  // Napkulcs (ÉÉÉÉHHNN) dátum-objektum helyett: rendezéskor sokszor fut le.
+  int dayOf(DateTime x) => x.year * 10000 + x.month * 100 + x.day;
+  final s = dayOf(since);
+  if (pts.isEmpty || dayOf(pts.first.time) > s || dayOf(pts.last.time) <= s) return null;
+  final base = pts.where((x) => dayOf(x.time) >= s).firstOrNull;
   if (base == null || base.close <= 0) return null;
   return (price / base.close - 1) * 100;
 }
@@ -144,22 +147,38 @@ class _WatchlistPageState extends State<WatchlistPage> {
 
   Future<StockQuote> _quote(String s) => _cached(_quotes, s, () => AppServices.of(context).marketData.quote(s), (q) {
     _loaded[s] = q;
-    if (_sortByData) setState(() {});
+    if (_sortByData) _resort();
   });
 
   Future<PriceHistory> _history(String s) =>
       _cached(_histories, s, () => AppServices.of(context).marketData.history(s, years: 1), (h) {
         _loadedHistory[s] = h;
-        if (_sort == WatchSort.since) setState(() {});
+        if (_sort == WatchSort.since) _resort();
       });
+
+  /// Az érkező adatok miatti újrarendezés képkockánként legfeljebb egyszer (sok
+  /// kedvencnél minden egyes válasz külön teljes rendezést indítana).
+  bool _resortPending = false;
+
+  void _resort() {
+    if (_resortPending) return;
+    _resortPending = true;
+    SchedulerBinding.instance.addPostFrameCallback((_) {
+      _resortPending = false;
+      if (mounted) setState(() {});
+    });
+    SchedulerBinding.instance.ensureVisualUpdate();
+  }
 
   List<String> _sorted(List<String> favorites) {
     // Csökkenő kulcs szerint, egyenlőségnél a saját sorrendben (a List.sort nem stabil:
     // a még betöltetlen sorok összekeverednének).
     List<String> byDesc(double Function(String s) key) {
       final pos = {for (final (i, s) in favorites.indexed) s: i};
+      // A kulcs részvényenként egyszer (nem minden összehasonlításnál újra).
+      final keys = {for (final s in favorites) s: key(s)};
       return [...favorites]..sort((a, b) {
-        final c = key(b).compareTo(key(a));
+        final c = keys[b]!.compareTo(keys[a]!);
         return c != 0 ? c : pos[a]!.compareTo(pos[b]!);
       });
     }

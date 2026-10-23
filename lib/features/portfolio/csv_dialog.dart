@@ -172,36 +172,39 @@ Future<void> showPortfolioImport(BuildContext context) async {
   final (rest: result, :duplicates) = resolved.withoutRecorded(services.portfolio.lots, services.portfolio.dividends);
   // A felvett tételek azonosítói: az egész import egy koppintással visszavonható.
   final lotIds = <String>{}, dividendIds = <String>{}, splitIds = <String>{};
-  for (final l in result.lots) {
-    final lot = await services.portfolio.add(
-      symbol: l.symbol,
-      quantity: l.quantity,
-      price: l.price,
-      currency: l.currency,
-      date: l.date,
-      sell: l.sell,
-      account: l.account,
-      fee: l.fee,
-    );
-    lotIds.add(lot.id);
-  }
-  for (final d in result.dividends) {
-    final dividend = await services.portfolio.addDividend(
-      symbol: d.symbol,
-      amount: d.amount,
-      currency: d.currency,
-      date: d.date,
-      account: d.account,
-    );
-    dividendIds.add(dividend.id);
-  }
-  // Felaprózások (saját exportból): a tároló nem veszi fel kétszer ugyanazt (ticker, nap, arány).
-  for (final s in result.splits) {
-    if (await services.portfolio.addSplit(symbol: s.symbol, from: s.from, to: s.to, date: s.date) case final split?) {
-      splitIds.add(split.id);
-      await services.alerts.applySplit(split.symbol, from: split.from, to: split.to, date: split.date);
+  // Egy kötegben: egyetlen értesítés és mentés a végén (nem tételenként).
+  await services.portfolio.batch(() async {
+    for (final l in result.lots) {
+      final lot = await services.portfolio.add(
+        symbol: l.symbol,
+        quantity: l.quantity,
+        price: l.price,
+        currency: l.currency,
+        date: l.date,
+        sell: l.sell,
+        account: l.account,
+        fee: l.fee,
+      );
+      lotIds.add(lot.id);
     }
-  }
+    for (final d in result.dividends) {
+      final dividend = await services.portfolio.addDividend(
+        symbol: d.symbol,
+        amount: d.amount,
+        currency: d.currency,
+        date: d.date,
+        account: d.account,
+      );
+      dividendIds.add(dividend.id);
+    }
+    // Felaprózások (saját exportból): a tároló nem veszi fel kétszer ugyanazt (ticker, nap, arány).
+    for (final s in result.splits) {
+      if (await services.portfolio.addSplit(symbol: s.symbol, from: s.from, to: s.to, date: s.date) case final split?) {
+        splitIds.add(split.id);
+        await services.alerts.applySplit(split.symbol, from: split.from, to: split.to, date: split.date);
+      }
+    }
+  });
   messenger
     ..hideCurrentSnackBar()
     ..showSnackBar(

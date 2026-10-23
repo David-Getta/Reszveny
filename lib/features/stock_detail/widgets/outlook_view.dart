@@ -521,9 +521,11 @@ class _FanPainter extends CustomPainter {
     for (final v in [top, ?cur, bottom]) {
       final tp = _text(priceLabel(v));
       final ty = (y(v) - tp.height / 2).clamp(0.0, h - tp.height);
-      if (placed.any((p) => (p - ty).abs() < tp.height)) continue;
-      placed.add(ty);
-      tp.paint(canvas, Offset(w + 6, ty));
+      if (!placed.any((p) => (p - ty).abs() < tp.height)) {
+        placed.add(ty);
+        tp.paint(canvas, Offset(w + 6, ty));
+      }
+      tp.dispose();
     }
 
     // Évszámok alul.
@@ -535,6 +537,7 @@ class _FanPainter extends CustomPainter {
       final tp = _text(label);
       final dx = (x(years) - tp.width / 2).clamp(0.0, w - tp.width);
       tp.paint(canvas, Offset(dx, h + 4));
+      tp.dispose();
     }
   }
 

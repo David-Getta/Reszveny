@@ -672,7 +672,32 @@ class PortfolioStore extends ChangeNotifier {
     _dividendsContent = null;
     _accounts = null;
     _views.clear();
+    // Kötegelt módosítás közben a figyelők csak a végén kapnak értesítést.
+    if (_batch > 0) {
+      _batchChanged = true;
+      return;
+    }
     super.notifyListeners();
+  }
+
+  int _batch = 0;
+  bool _batchChanged = false;
+
+  /// Kötegelt módosítás (pl. egy bróker-export importja): a közben hívott
+  /// felvételek egyetlen értesítéssel és egyetlen mentéssel zárulnak (különben
+  /// minden tétel az egész portfóliót újra kódolná és mentené).
+  Future<T> batch<T>(Future<T> Function() body) async {
+    _batch++;
+    try {
+      return await body();
+    } finally {
+      _batch--;
+      if (_batch == 0 && _batchChanged) {
+        _batchChanged = false;
+        notifyListeners();
+        await _save();
+      }
+    }
   }
 
   /// A még birtokolt részvények tickerei.
@@ -1344,6 +1369,10 @@ class PortfolioStore extends ChangeNotifier {
   }
 
   Future<void> _save() async {
+    if (_batch > 0) {
+      _batchChanged = true;
+      return;
+    }
     try {
       final prefs = await SharedPreferences.getInstance();
       await Future.wait([

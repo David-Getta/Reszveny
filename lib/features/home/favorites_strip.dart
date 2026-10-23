@@ -18,6 +18,9 @@ class FavoritesStrip extends StatefulWidget {
 
   final ValueChanged<StockCandidate> onOpenSymbol;
 
+  /// A kezdőlapon mutatott kedvencek száma.
+  static const shownCount = 12;
+
   @override
   State<FavoritesStrip> createState() => _FavoritesStripState();
 }
@@ -121,7 +124,9 @@ class _FavoritesStripState extends State<FavoritesStrip> {
               spacing: 8,
               runSpacing: 8,
               children: [
-                for (final s in favorites)
+                // Legfeljebb [shownCount] chip (a többi a „Mind” oldalon): sok kedvencnél
+                // minden billentyűleütés és mentés az összeset újrarajzolná.
+                for (final s in favorites.take(FavoritesStrip.shownCount))
                   FutureBuilder<StockQuote>(
                     future: _quote(s),
                     builder: (context, snap) {

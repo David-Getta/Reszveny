@@ -539,6 +539,8 @@ class _LinePainter extends CustomPainter {
         textDirection: TextDirection.ltr,
       )..layout(maxWidth: rightPad - 6);
       tp.paint(canvas, Offset(w + 6, y - tp.height / 2));
+      // A natív bekezdés azonnal felszabadul (rámutatáskor képkockánként új festés).
+      tp.dispose();
     }
 
     // Szintek: szaggatott vonal, bal oldalt címke.
@@ -563,6 +565,7 @@ class _LinePainter extends CustomPainter {
         Paint()..color = background.withValues(alpha: 0.75),
       );
       tp.paint(canvas, Offset(5, ty));
+      tp.dispose();
     }
 
     // Összevetés: halvány vonal a fő görbe alatt.
@@ -658,6 +661,8 @@ class _LinePainter extends CustomPainter {
       final y = (topPad - price.height) / 2;
       date.paint(canvas, Offset(left, y + (price.height - date.height) / 2));
       price.paint(canvas, Offset(left + date.width + gap, y));
+      date.dispose();
+      price.dispose();
     } else {
       canvas.restore();
     }

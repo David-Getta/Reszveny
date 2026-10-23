@@ -107,29 +107,36 @@ class FxService extends ChangeNotifier {
     return _rate(f, t).then((r) => r == null ? null : FxRate(from: from, to: to, rate: r.rate * scale, date: r.date));
   }
 
+  /// A sikertelen lekérés ideje páronként: ennyi ideig nem próbáljuk újra (minden
+  /// újrarajzolás új kérést indítana, amíg az árfolyam-szolgáltató nem válaszol).
+  final Map<String, DateTime> _failedAt = {};
+  static const retryAfter = Duration(minutes: 1);
+
   Future<FxRate?> _rate(String f, String t) {
     if (f == t || !isSupported(f) || !isSupported(t)) return Future.value(null);
     final key = '$f>$t';
     final cached = _cache[key];
     if (cached != null && DateTime.now().difference(cached.$1) < _ttl) return Future.value(cached.$2);
+    if (_failedAt[key] case final at? when DateTime.now().difference(at) < retryAfter) return Future.value(null);
     return _inFlight.putIfAbsent(key, () async {
+      FxRate? parsed;
       try {
         final res = await _client
             .get(Uri.parse('$baseUrl/latest').replace(queryParameters: {'from': f, 'to': t}))
             .timeout(const Duration(seconds: 15));
-        if (res.statusCode != 200) return null;
-        final parsed = parseLatest(jsonDecode(res.body) as Map<String, dynamic>, f, t);
+        if (res.statusCode == 200) parsed = parseLatest(jsonDecode(res.body) as Map<String, dynamic>, f, t);
         if (parsed != null) {
           _cache[key] = (DateTime.now(), parsed);
+          _failedAt.remove(key);
           notifyListeners();
         }
-        return parsed;
       } catch (e) {
         debugPrint('Árfolyam lekérése nem sikerült ($key): $e');
-        return null;
       } finally {
         _inFlight.remove(key);
       }
+      if (parsed == null) _failedAt[key] = DateTime.now();
+      return parsed;
     });
   }
 

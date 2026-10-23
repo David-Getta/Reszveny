@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.283)
+# Változásjegyzék (0.2.130 → 0.2.284)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,18 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Teljesítmény: egy harmincadik kódátnézés javításai
+
+- **0.2.284**: a portfólió értékalakulása, időarányos hozama és indexösszevetése egész napkulcsokkal és előre
+  haladó mutatókkal számolódik (nagy portfóliónál eddig másodpercekre megakasztotta a felületet). A teljes
+  kedvenclista rendezése részvényenként egyszer számolja a kulcsot, és az érkező adatok képkockánként legfeljebb
+  egyszer rendezik újra. A bróker-export importja egyetlen értesítéssel és mentéssel zárul (eddig tételenként
+  az egész portfóliót újra kódolta és mentette), és a szinkron „piszkos” jelzője csak változáskor íródik. A piaci
+  adatok rövid ideig memóriában maradnak (egy vétel vagy görgetés nem tölt le újra mindent), és a készülékre ritkábban
+  mentődnek (Windowson minden írás az egész beállítástárat újraírja). A sikertelen árfolyam-lekérést egy percig nem
+  ismétli, a mentett elemzéseket nem dekódolja újra minden értesítéskor, a kezdőlap legfeljebb 12 kedvencet mutat (a
+  többi a „Mind” oldalon), és a grafikonok felirat-rajzolói felszabadulnak.
 
 ## Csomagok és beállítások: egy huszonkilencedik kódátnézés javításai
 

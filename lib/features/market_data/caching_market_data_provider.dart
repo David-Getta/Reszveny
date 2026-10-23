@@ -21,9 +21,28 @@ import 'market_data_provider.dart';
 /// adat idejét mutatja (a felület ebből jelez); az első sikeres lekéréskor
 /// visszaáll `null`-ra. A „nincs ilyen részvény” típusú hibákat nem takarja el.
 class CachingMarketDataProvider extends MarketDataProvider {
-  CachingMarketDataProvider(this.inner, {DateTime Function()? clock}) : _clock = clock ?? DateTime.now;
+  CachingMarketDataProvider(
+    this.inner, {
+    DateTime Function()? clock,
+    this.quoteMemo = Duration.zero,
+    this.dataMemo = Duration.zero,
+    this.persistQuoteEvery = Duration.zero,
+    this.persistDataEvery = Duration.zero,
+  }) : _clock = clock ?? DateTime.now;
 
   final MarketDataProvider inner;
+
+  /// Memóriában ennyi ideig ugyanaz a válasz (az árfolyamé, illetve a profilé, a
+  /// mutatóké és a történeté): egy vétel után vagy görgetéskor ne kérjük le újra
+  /// minden részvény adatát. Alapból kikapcsolva (az app beállítja).
+  final Duration quoteMemo;
+  final Duration dataMemo;
+
+  /// A készülékre mentés legfeljebb ilyen gyakran kulcsonként: Windowson minden
+  /// írás az egész beállítástárat újraírja. Alapból minden sikeres válasz mentődik.
+  final Duration persistQuoteEvery;
+  final Duration persistDataEvery;
+  final Map<String, DateTime> _persistedAt = {};
   final DateTime Function() _clock;
 
   /// Legfeljebb ennyi részvény adatát őrizzük (a legrégebben használtakat töröljük).
@@ -87,12 +106,18 @@ class CachingMarketDataProvider extends MarketDataProvider {
     try {
       final v = await load();
       _setStale(key, null);
-      try {
-        final prefs = await SharedPreferences.getInstance();
-        await prefs.setString(key, jsonEncode({'at': _clock().toIso8601String(), 'v': encode(v)}));
-        await _touch(prefs, symbol.toUpperCase());
-      } catch (_) {
-        // A mentés hibája nem akadályozza a megjelenítést.
+      final now = _clock();
+      final every = kind == 'quote' ? persistQuoteEvery : persistDataEvery;
+      final last = _persistedAt[key];
+      if (last == null || now.difference(last) >= every) {
+        _persistedAt[key] = now;
+        try {
+          final prefs = await SharedPreferences.getInstance();
+          await prefs.setString(key, jsonEncode({'at': now.toIso8601String(), 'v': encode(v)}));
+          await _touch(prefs, symbol.toUpperCase());
+        } catch (_) {
+          // A mentés hibája nem akadályozza a megjelenítést.
+        }
       }
       return v;
     } catch (e) {
@@ -140,20 +165,35 @@ class CachingMarketDataProvider extends MarketDataProvider {
   }
 
   @override
-  Future<StockQuote> quote(String symbol) =>
-      _cached('quote', symbol, () => inner.quote(symbol), (q) => q.toJson(), StockQuote.fromJson);
+  Future<StockQuote> quote(String symbol) => _memoized(
+    'quote',
+    symbol,
+    () => _cached('quote', symbol, () => inner.quote(symbol), (q) => q.toJson(), StockQuote.fromJson),
+    ttl: quoteMemo,
+  );
 
   @override
-  Future<CompanyProfile> profile(String symbol) =>
-      _cached('profile', symbol, () => inner.profile(symbol), (p) => p.toJson(), CompanyProfile.fromJson);
+  Future<CompanyProfile> profile(String symbol) => _memoized(
+    'profile',
+    symbol,
+    () => _cached('profile', symbol, () => inner.profile(symbol), (p) => p.toJson(), CompanyProfile.fromJson),
+    ttl: dataMemo,
+  );
 
   @override
-  Future<StockMetrics> metrics(String symbol) =>
-      _cached('metrics', symbol, () => inner.metrics(symbol), (m) => m.toJson(), StockMetrics.fromJson);
+  Future<StockMetrics> metrics(String symbol) => _memoized(
+    'metrics',
+    symbol,
+    () => _cached('metrics', symbol, () => inner.metrics(symbol), (m) => m.toJson(), StockMetrics.fromJson),
+    ttl: dataMemo,
+  );
 
   /// Az árfolyam-történetből csak a dátum és a záróár kerül a gyorsítótárba.
   @override
-  Future<PriceHistory> history(String symbol, {int years = 5}) => _cached(
+  Future<PriceHistory> history(String symbol, {int years = 5}) =>
+      _memoized('history$years', symbol, () => _history(symbol, years), ttl: dataMemo);
+
+  Future<PriceHistory> _history(String symbol, int years) => _cached(
     // Évszámonként külön: az 1 éves lekérés nem írja felül az 5 évest.
     'history$years',
     symbol,
@@ -208,10 +248,11 @@ class CachingMarketDataProvider extends MarketDataProvider {
   static const memoFor = Duration(minutes: 10);
   final Map<String, (DateTime, Future<Object?>)> _memo = {};
 
-  Future<T> _memoized<T>(String kind, String symbol, Future<T> Function() load) {
+  Future<T> _memoized<T>(String kind, String symbol, Future<T> Function() load, {Duration ttl = memoFor}) {
+    if (ttl <= Duration.zero) return load();
     final key = '${kind}_${symbol.toUpperCase()}';
     final now = _clock();
-    if (_memo[key] case (final at, final f) when now.difference(at) < memoFor) return f as Future<T>;
+    if (_memo[key] case (final at, final f) when now.difference(at) < ttl) return f as Future<T>;
     final f = Future.sync(load);
     _memo[key] = (now, f);
     // A hiba nem marad meg: a következő kérés újra próbálja.

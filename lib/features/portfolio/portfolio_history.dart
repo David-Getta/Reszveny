@@ -22,57 +22,72 @@ PriceHistory? portfolioValueHistory(
   Map<String, PriceHistory> histories,
   double? Function(String currency) rate,
 ) {
-  DateTime day(DateTime t) => DateTime(t.year, t.month, t.day);
   final usable = [
     for (final l in lots)
       if (histories[l.symbol]?.points.isNotEmpty == true && rate(l.currency) != null) l,
   ];
   if (usable.isEmpty) return null;
-  final days = <DateTime>{
-    for (final s in {for (final l in usable) l.symbol})
-      for (final p in histories[s]!.points) day(p.time),
-  }.toList()..sort();
+  // Egész napkulcsok (ÉÉÉÉHHNN) dátum-objektumok helyett: napi pontoknál és sok
+  // tranzakciónál a ciklusok ezerszer futnak le.
+  final symbols = {for (final l in usable) l.symbol};
+  final keysOf = {
+    for (final s in symbols) s: [for (final p in histories[s]!.points) _dayKey(p.time)],
+  };
+  final days = <int>{for (final k in keysOf.values) ...k}.toList()..sort();
   final buys = usable.where((l) => !l.sell);
   final dated = [for (final l in buys) l.date].whereType<DateTime>();
   final start = buys.any((l) => l.date == null) || dated.isEmpty
       ? days.first
-      : dated.map(day).reduce((a, b) => a.isBefore(b) ? a : b);
+      : dated.map(_dayKey).reduce((a, b) => a < b ? a : b);
+  final rateOf = {for (final l in usable) l.currency: rate(l.currency)!};
+  // A tranzakciók időrendben (dátum nélküli elöl): a darabszám napról napra, növekményesen.
+  final ordered = [...usable]..sort((a, b) => _lotKey(a).compareTo(_lotKey(b)));
+  var next = 0;
 
   // Tickerenként az adott napig utolsó ismert záróár (előre haladó mutatóval).
   final idx = <String, int>{};
   final last = <String, double>{};
+  final held = <String, double>{};
+  final ccy = <String, String>{};
   final points = <PricePoint>[];
   for (final d in days) {
-    for (final s in histories.keys) {
+    for (final s in symbols) {
       final pts = histories[s]!.points;
+      final keys = keysOf[s]!;
       var i = idx[s] ?? 0;
-      while (i < pts.length && !day(pts[i].time).isAfter(d)) {
+      while (i < keys.length && keys[i] <= d) {
         last[s] = pts[i].close;
         i++;
       }
       idx[s] = i;
     }
-    if (d.isBefore(start)) continue;
     // Tickerenként az aznap birtokolt darabszám (vételek − eladások, legalább 0).
-    final held = <String, double>{};
-    final ccy = <String, String>{};
-    for (final l in usable) {
-      if (l.date != null && day(l.date!).isAfter(d)) continue;
+    while (next < ordered.length && _lotKey(ordered[next]) <= d) {
+      final l = ordered[next++];
       held[l.symbol] = (held[l.symbol] ?? 0) + l.signedQuantity;
       ccy[l.symbol] = l.currency;
     }
+    if (d < start) continue;
     var value = 0.0;
     var any = false;
     for (final e in held.entries) {
       final close = last[e.key];
       if (close == null) continue;
-      value += (e.value < 0 ? 0 : e.value) * close * rate(ccy[e.key]!)!;
+      value += (e.value < 0 ? 0 : e.value) * close * rateOf[ccy[e.key]!]!;
       any = true;
     }
-    if (any) points.add(PricePoint(time: d, close: value));
+    if (any) points.add(PricePoint(time: _keyDay(d), close: value));
   }
   return points.length < 2 ? null : PriceHistory(symbol: 'PORTFOLIO', points: points);
 }
+
+/// A nap egész kulcsa (ÉÉÉÉHHNN), a helyi naptári nap szerint.
+int _dayKey(DateTime t) => t.year * 10000 + t.month * 100 + t.day;
+
+DateTime _keyDay(int k) => DateTime(k ~/ 10000, k ~/ 100 % 100, k % 100);
+
+/// A tranzakció napkulcsa; a dátum nélküli az elejétől számít.
+int _lotKey(PortfolioLot l) => l.date == null ? -1 : _dayKey(l.date!);
 
 DateTime _day(DateTime t) => DateTime(t.year, t.month, t.day);
 
@@ -91,13 +106,13 @@ List<PricePoint> portfolioTwrIndex(
   ];
   if (usable.isEmpty) return const [];
   final symbols = {for (final l in usable) l.symbol};
-  final days = <DateTime>{
-    for (final s in symbols)
-      for (final p in histories[s]!.points) _day(p.time),
-  }.toList()..sort();
+  final keysOf = {
+    for (final s in symbols) s: [for (final p in histories[s]!.points) _dayKey(p.time)],
+  };
+  final days = <int>{for (final k in keysOf.values) ...k}.toList()..sort();
   final rateOf = {for (final l in usable) l.symbol: rate(l.currency)!};
   // A tranzakciók időrendben (dátum nélküli elöl): a darabszám napról napra, növekményesen.
-  final ordered = [...usable]..sort((a, b) => (a.date ?? DateTime(0)).compareTo(b.date ?? DateTime(0)));
+  final ordered = [...usable]..sort((a, b) => _lotKey(a).compareTo(_lotKey(b)));
   var next = 0;
   final idx = <String, int>{};
   final last = <String, double>{};
@@ -109,8 +124,9 @@ List<PricePoint> portfolioTwrIndex(
   for (final d in days) {
     for (final s in symbols) {
       final pts = histories[s]!.points;
+      final keys = keysOf[s]!;
       var i = idx[s] ?? 0;
-      while (i < pts.length && !_day(pts[i].time).isAfter(d)) {
+      while (i < keys.length && keys[i] <= d) {
         // A hibás (nem pozitív) záróár kimarad: az előző ismert ár marad.
         if (pts[i].close > 0) last[s] = pts[i].close;
         i++;
@@ -118,7 +134,7 @@ List<PricePoint> portfolioTwrIndex(
       idx[s] = i;
     }
     // A nap végéig történt tranzakciók (dátum nélküli az elejétől).
-    while (next < ordered.length && (ordered[next].date == null || !_day(ordered[next].date!).isAfter(d))) {
+    while (next < ordered.length && _lotKey(ordered[next]) <= d) {
       final l = ordered[next++];
       held[l.symbol] = (held[l.symbol] ?? 0) + l.signedQuantity;
     }
@@ -133,12 +149,12 @@ List<PricePoint> portfolioTwrIndex(
       }
       if (yesterday > 0) {
         index *= today / yesterday;
-        points.add(PricePoint(time: d, close: index));
+        points.add(PricePoint(time: _keyDay(d), close: index));
       }
     }
     if (held.values.any((q) => q > 0)) {
       // Az első birtokolt nap a kiindulás.
-      if (points.isEmpty) points.add(PricePoint(time: d, close: 1));
+      if (points.isEmpty) points.add(PricePoint(time: _keyDay(d), close: 1));
       prevHeld = Map.of(held);
     } else {
       prevHeld = null;
@@ -238,14 +254,20 @@ BenchmarkComparison? benchmarkComparison(
         l.date != null && day(l.date!).isBefore(day(first)) && histories[l.symbol] != null && rate(l.currency) != null,
   );
   if (tooOld) return null;
-  // Az adott napig utolsó ismert indexár.
+  // Az adott napig utolsó ismert indexár (bináris kereséssel a napkulcsokon).
+  final idxKeys = [for (final p in idx) _dayKey(p.time)];
   double indexAt(DateTime d) {
-    var v = idx.first.close;
-    for (final p in idx) {
-      if (day(p.time).isAfter(d)) break;
-      v = p.close;
+    final k = _dayKey(d);
+    var lo = 0, hi = idxKeys.length;
+    while (lo < hi) {
+      final mid = (lo + hi) >> 1;
+      if (idxKeys[mid] <= k) {
+        lo = mid + 1;
+      } else {
+        hi = mid;
+      }
     }
-    return v;
+    return lo == 0 ? idx.first.close : idx[lo - 1].close;
   }
 
   var invested = 0.0, cash = 0.0, units = 0.0;

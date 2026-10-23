@@ -184,15 +184,26 @@ class ReportStore extends ChangeNotifier {
   /// A készüléken elmentett elemzések, a legújabb elöl („Elemzéseim”). Ha a
   /// [language] meg van adva, csak az azon a nyelven készülteket adja (a többit
   /// a [restore] sem nyitná meg).
+  /// A már dekódolt mentések (kulcs → a tárolt szöveg és az elemzés): minden értesítés
+  /// után nem kell újra JSON-ból olvasni mind az 50 mentést, csak a megváltozottat.
+  final Map<String, (String, StockReport)> _decoded = {};
+
   Future<List<StockReport>> savedReports({String? language, int limit = maxSaved}) async {
     final out = <String, StockReport>{};
     try {
       final prefs = await SharedPreferences.getInstance();
-      for (final k in prefs.getKeys().where((k) => k.startsWith(_prefix))) {
+      final keys = prefs.getKeys().where((k) => k.startsWith(_prefix)).toSet();
+      _decoded.removeWhere((k, _) => !keys.contains(k));
+      for (final k in keys) {
         final raw = prefs.getString(k);
         if (raw == null) continue;
+        if (_decoded[k] case (final text, final r) when identical(text, raw) || text == raw) {
+          out[r.symbol] = r;
+          continue;
+        }
         try {
           final r = StockReport.fromJson(jsonDecode(raw) as Map<String, dynamic>);
+          _decoded[k] = (raw, r);
           out[r.symbol] = r;
         } catch (_) {
           // Sérült bejegyzés: kihagyjuk.

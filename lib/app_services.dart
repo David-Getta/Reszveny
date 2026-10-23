@@ -280,7 +280,15 @@ class AppServices {
     final client = backend?.authenticated;
     // Valódi adatforrásnál offline gyorsítótárral: hálózat nélkül az utolsó ismert adat látszik.
     final MarketDataProvider marketData = config.hasFinnhubKey
-        ? CachingMarketDataProvider(FinnhubMarketDataProvider(config: config, client: client))
+        ? CachingMarketDataProvider(
+            FinnhubMarketDataProvider(config: config, client: client),
+            // Rövid memória (egy vétel vagy görgetés ne töltsön újra mindent), és ritkított
+            // mentés (Windowson minden írás az egész beállítástárat újraírja).
+            quoteMemo: const Duration(seconds: 20),
+            dataMemo: const Duration(minutes: 10),
+            persistQuoteEvery: const Duration(minutes: 10),
+            persistDataEvery: const Duration(hours: 6),
+          )
         : DemoMarketDataProvider();
     late final AppServices services;
     services = AppServices(
