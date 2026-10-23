@@ -579,8 +579,8 @@ Widget _alertCard(List<Widget> tiles) => Card(
   ),
 );
 
-/// Az aktív riasztások kártyája a mostani árakkal (a kioldásig hátralévő változáshoz);
-/// az árak a tickerek változásáig egyszer töltődnek.
+/// Az aktív riasztások kártyája a mostani árakkal (a kioldásig hátralévő változáshoz),
+/// a kioldáshoz legközelebbi elöl; az árak a tickerek változásáig egyszer töltődnek.
 class _ActiveAlerts extends StatefulWidget {
   const _ActiveAlerts({required this.alerts, required this.tile});
 
@@ -613,7 +613,22 @@ class _ActiveAlertsState extends State<_ActiveAlerts> {
     }
     return FutureBuilder<Map<String, double>>(
       future: _prices,
-      builder: (context, snap) => _alertCard([for (final a in widget.alerts) widget.tile(a, snap.data?[a.symbol])]),
+      builder: (context, snap) {
+        final prices = snap.data ?? const <String, double>{};
+        // A kioldáshoz legközelebbi elöl (ár nélkül és a napi mozgás riasztás a végén, a
+        // mostani sorrendben – a rendezés stabil).
+        double distance(PriceAlert a) =>
+            (prices[a.symbol] == null ? null : a.distancePercent(prices[a.symbol]!))?.abs() ?? double.infinity;
+        final order = {for (final (i, a) in widget.alerts.indexed) a.id: i};
+        final sorted = [...widget.alerts]
+          ..sort(
+            (a, b) => switch (distance(a).compareTo(distance(b))) {
+              0 => order[a.id]!.compareTo(order[b.id]!),
+              final c => c,
+            },
+          );
+        return _alertCard([for (final a in sorted) widget.tile(a, prices[a.symbol])]);
+      },
     );
   }
 }

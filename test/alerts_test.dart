@@ -4,6 +4,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:reszveny/app.dart';
 import 'package:reszveny/core/models/stock_quote.dart';
 import 'package:reszveny/features/alerts/alert_monitor.dart';
+import 'package:reszveny/features/alerts/alerts_view.dart' show AlertTile;
 import 'package:reszveny/features/alerts/price_alert.dart';
 import 'package:reszveny/features/market_data/demo_market_data_provider.dart';
 import 'package:reszveny/features/sync/sync_service.dart';
@@ -288,5 +289,21 @@ void main() {
     await tester.tap(find.text('Undo'));
     await tester.pumpAndSettle();
     expect(s.alerts.alerts, hasLength(3));
+  });
+
+  testWidgets('active alerts: the one closest to firing first, daily-move alerts at the end', (tester) async {
+    tester.view.physicalSize = const Size(1200, 1600);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final s = services();
+    final far = await s.alerts.add(symbol: 'AAPL', kind: AlertKind.above, value: 300, currency: 'USD');
+    final near = await s.alerts.add(symbol: 'AAPL', kind: AlertKind.above, value: 240, currency: 'USD');
+    final move = await s.alerts.add(symbol: 'AAPL', kind: AlertKind.move, value: 5);
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Price alerts').first);
+    await tester.pumpAndSettle();
+    final order = [for (final e in find.byType(AlertTile).evaluate()) (e.widget as AlertTile).alert.id];
+    expect(order, [near.id, far.id, move.id]);
   });
 }

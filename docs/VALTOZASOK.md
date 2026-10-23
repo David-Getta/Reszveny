@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.227)
+# Változásjegyzék (0.2.130 → 0.2.228)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -43,7 +43,7 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
   egy koppintással visszavonható.
 - **Távolság a riasztásig**: a Riasztások oldalon és a részvény oldalán minden aktív riasztás alatt a mostani ár és
   hogy mennyit kell még mozdulnia a kioldásig („Most 231,45 USD · még +4,2%”); követő stopnál a csúcstól számolt
-  szintig.
+  szintig. A Riasztások oldalon a kioldáshoz legközelebbi van elöl.
 
 - **Legnagyobb visszaesés** az értékalakulás-kártyán (a vételek és eladások hatása nélkül, időarányosan), a csúcs és
   a mélypont napjával, ⓘ magyarázattal.
