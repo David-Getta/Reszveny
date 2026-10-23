@@ -318,6 +318,29 @@ class AlertStore extends ChangeNotifier {
     }
   }
 
+  /// Tickerváltás: a részvény riasztásai az új tickerre kerülnek (újabbnak jelölve).
+  Future<void> renameSymbol(String from, String to) async {
+    final f = from.trim().toUpperCase(), t = to.trim().toUpperCase();
+    if (f == t || t.isEmpty || !_alerts.any((a) => a.symbol == f)) return;
+    final stamp = DateTime.now().toUtc();
+    for (final (i, a) in _alerts.indexed) {
+      if (a.symbol != f) continue;
+      _alerts[i] = PriceAlert(
+        id: a.id,
+        symbol: t,
+        kind: a.kind,
+        value: a.value,
+        currency: a.currency,
+        createdAt: a.createdAt,
+        triggeredAt: a.triggeredAt,
+        triggeredPrice: a.triggeredPrice,
+        peak: a.peak,
+        modified: stamp,
+      );
+    }
+    await _changed();
+  }
+
   Future<void> markTriggered(String id, DateTime at, double price) => _replace(id, (a) => a.triggered(at, price));
 
   Future<void> rearm(String id) => _replace(id, (a) => a.rearmed());

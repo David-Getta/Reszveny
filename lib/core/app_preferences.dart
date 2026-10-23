@@ -626,6 +626,30 @@ class AppPreferences extends ChangeNotifier {
     await _saveLists();
   }
 
+  /// Tickerváltás (pl. átnevezett cég): a kedvencekben a régi helyén az új (ha még
+  /// nincs ott), a felvételi nap, a célarány és a saját listák tagsága is átkerül.
+  Future<void> renameSymbol(String from, String to) async {
+    final f = from.trim().toUpperCase(), t = to.trim().toUpperCase();
+    if (f == t || t.isEmpty) return;
+    final i = _favorites.indexOf(f);
+    if (i >= 0) {
+      if (_favorites.contains(t)) {
+        _favorites.removeAt(i);
+      } else {
+        _favorites[i] = t;
+      }
+      if (_favoriteSince.remove(f) case final since?) _favoriteSince.putIfAbsent(t, () => since);
+    }
+    if (_targets.remove(f) case final target?) _targets[t] = ((_targets[t] ?? 0) + target).clamp(0, 100).toDouble();
+    for (final (n, l) in _lists.indexed) {
+      if (!l.symbols.contains(f)) continue;
+      _lists[n] = WatchList(name: l.name, symbols: {for (final s in l.symbols) s == f ? t : s}.toList());
+    }
+    await _saveFavorites();
+    await _save((p) => p.setString(_targetsKey, jsonEncode(_targets)));
+    await _saveLists();
+  }
+
   WatchList? _listNamed(String name) =>
       _lists.where((l) => l.name.toLowerCase() == name.trim().toLowerCase()).firstOrNull;
 

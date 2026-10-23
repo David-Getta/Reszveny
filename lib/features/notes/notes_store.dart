@@ -93,6 +93,15 @@ class NotesStore extends ChangeNotifier {
     await _save();
   }
 
+  /// Tickerváltás: a jegyzet az új tickerhez kerül (ha ott is volt, utána fűzve).
+  Future<void> renameSymbol(String from, String to) async {
+    final f = from.trim().toUpperCase(), t = to.trim().toUpperCase();
+    final note = _notes[f];
+    if (f == t || t.isEmpty || note == null) return;
+    await append(t, note.text);
+    await set(f, '');
+  }
+
   Map<String, StockNote> get all => Map.unmodifiable(_notes);
 
   /// Az összes jegyzet cseréje (szinkronkor a fiók adataira).

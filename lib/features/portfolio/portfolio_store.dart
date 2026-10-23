@@ -1212,6 +1212,64 @@ class PortfolioStore extends ChangeNotifier {
     await _save();
   }
 
+  /// Tickerváltás (pl. átnevezett cég): a részvény minden tranzakciója, osztaléka és
+  /// felaprózása az új tickerre kerül, ugyanazzal az azonosítóval, újabbnak jelölve
+  /// (a szinkron így a másik eszközre is átviszi). Az áthelyezett tételek számát adja.
+  Future<int> renameSymbol(String from, String to) async {
+    final f = from.trim().toUpperCase(), t = to.trim().toUpperCase();
+    if (f == t || t.isEmpty) return 0;
+    final stamp = DateTime.now().toUtc();
+    var moved = 0;
+    for (final (i, l) in _lots.indexed) {
+      if (l.symbol != f) continue;
+      moved++;
+      _lots[i] = PortfolioLot(
+        id: l.id,
+        symbol: t,
+        quantity: l.quantity,
+        price: l.price,
+        currency: l.currency,
+        date: l.date,
+        sell: l.sell,
+        account: l.account,
+        fee: l.fee,
+        edited: stamp,
+      );
+    }
+    for (final (i, d) in _dividends.indexed) {
+      if (d.symbol != f) continue;
+      moved++;
+      _dividends[i] = DividendRecord(
+        id: d.id,
+        symbol: t,
+        amount: d.amount,
+        currency: d.currency,
+        date: d.date,
+        account: d.account,
+        edited: stamp,
+      );
+    }
+    final renamed = [
+      for (final s in _splits)
+        if (s.symbol == f) SplitRecord(id: s.id, symbol: t, from: s.from, to: s.to, date: s.date, edited: stamp),
+    ];
+    moved += renamed.length;
+    // Ha az új tickeren már rögzítve volt ugyanaz a felaprózás, az marad; a
+    // kimaradó áthelyezett törlési jelzést kap, hogy a szinkron ne hozza vissza.
+    final unique = _unique([..._splits.where((s) => s.symbol != f), ...renamed]);
+    _tombstone([
+      for (final s in renamed)
+        if (!unique.contains(s)) s.id,
+    ]);
+    _splits
+      ..clear()
+      ..addAll(unique..sort(_oldestFirst));
+    if (moved == 0) return 0;
+    notifyListeners();
+    await _save();
+    return moved;
+  }
+
   /// Egy import visszavonása: a megadott azonosítójú tranzakciók, osztalékok és
   /// felaprózások törlése egyetlen mentéssel.
   Future<void> removeIds({
