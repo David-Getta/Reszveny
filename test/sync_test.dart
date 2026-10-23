@@ -168,6 +168,42 @@ void main() {
     expect((server.data!['dividends'] as List).single['account'], 'TBSZ');
   });
 
+  test('a correction reaches the other device, also when it removes the account or the fee', () async {
+    final server = _Server();
+    SharedPreferences.setMockInitialValues({});
+    final a = _Device(server);
+    final lot = await a.portfolio.add(
+      symbol: 'OTP',
+      quantity: 10,
+      price: 30000,
+      currency: 'HUF',
+      account: 'TBSZ',
+      fee: 300,
+    );
+    final d = await a.portfolio.addDividend(symbol: 'OTP', amount: 2400, currency: 'HUF', account: 'TBSZ');
+    await a.sync.start();
+    SharedPreferences.setMockInitialValues({});
+    final b = _Device(server);
+    await b.sync.start();
+    expect(b.portfolio.lots.single.account, 'TBSZ');
+
+    // A javítja: más ár, számla és díj nélkül; az osztalék is számla nélkül.
+    await a.portfolio.replace(
+      PortfolioLot(id: lot.id, symbol: 'OTP', quantity: 10, price: 29500, currency: 'HUF', date: lot.date),
+    );
+    await a.portfolio.replaceDividend(DividendRecord(id: d.id, symbol: 'OTP', amount: 2500, currency: 'HUF'));
+    await a.sync.syncNow();
+    await b.sync.syncNow();
+    final got = b.portfolio.lots.single;
+    expect((got.id, got.price, got.account, got.fee), (lot.id, 29500.0, null, 0.0));
+    expect((b.portfolio.dividends.single.amount, b.portfolio.dividends.single.account), (2500.0, null));
+    // B nem küldi vissza a régi számlát és díjat.
+    await b.sync.syncNow();
+    await a.sync.syncNow();
+    expect((a.portfolio.lots.single.account, a.portfolio.lots.single.fee), (null, 0.0));
+    expect(a.portfolio.dividends.single.account, isNull);
+  });
+
   test('goals follow the account: the newer change wins, a removed goal does not come back', () async {
     final server = _Server();
     SharedPreferences.setMockInitialValues({});

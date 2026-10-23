@@ -143,8 +143,14 @@ class SyncService extends ChangeNotifier {
     'watch_lists': [for (final l in preferences.watchLists) l.toJson()],
     if (preferences.targets.isNotEmpty) 'targets': preferences.targets,
     'goals': preferences.goalsJson,
-    'lots': [for (final l in portfolio.lots) l.toJson()],
-    'dividends': [for (final d in portfolio.dividends) d.toJson()],
+    // A számla és a díj üresen is szerepel: így a javításkor törölt érték
+    // megkülönböztethető attól, hogy egy régebbi app nem ismerte (az kihagyja).
+    'lots': [
+      for (final l in portfolio.lots) {...l.toJson(), 'account': l.account, 'fee': l.fee},
+    ],
+    'dividends': [
+      for (final d in portfolio.dividends) {...d.toJson(), 'account': d.account},
+    ],
     'splits': [for (final s in portfolio.splits) s.toJson()],
     'cash': portfolio.cash,
     'cash_at': portfolio.cashAtJson,
@@ -324,8 +330,9 @@ class SyncService extends ChangeNotifier {
     }
     await preferences.setEmailAlerts(data['email_alerts'] != false);
     await preferences.setWeeklyDigest(data['weekly_digest'] == true);
-    // A számlát és a díjat nem ismerő (régebbi) app a tételt nélkülük tölti vissza: azonos
-    // tételnél a helyi számla és díj marad (a felületen utólag egyik sem törölhető).
+    // A számlát és a díjat nem ismerő (régebbi) app a tételt a mezők nélkül tölti
+    // vissza: azonos tételnél ilyenkor a helyi számla és díj marad. Ha a mező ott
+    // van (üresen is), az a javított érték – az nyer.
     var kept = false;
     Map<String, dynamic> keep(Map<String, dynamic> j, Map<String, Object> fields) {
       if (fields.isNotEmpty) kept = true;
@@ -338,8 +345,8 @@ class SyncService extends ChangeNotifier {
         ?PortfolioLot.fromJson(
           keep(j, {
             if (local['${j['id']}'] case final l?) ...{
-              if (l.account case final a? when PortfolioLot.cleanAccount(j['account']) == null) 'account': a,
-              if (l.fee > 0 && PortfolioLot.cleanFee(j['fee']) == 0) 'fee': l.fee,
+              if (l.account case final a? when !j.containsKey('account')) 'account': a,
+              if (l.fee > 0 && !j.containsKey('fee')) 'fee': l.fee,
             },
           }),
         ),
@@ -352,9 +359,7 @@ class SyncService extends ChangeNotifier {
         for (final j in _maps(data['dividends']))
           ?DividendRecord.fromJson(
             keep(j, {
-              if (localDividend['${j['id']}']?.account case final a?
-                  when PortfolioLot.cleanAccount(j['account']) == null)
-                'account': a,
+              if (localDividend['${j['id']}']?.account case final a? when !j.containsKey('account')) 'account': a,
             }),
           ),
       ]);
