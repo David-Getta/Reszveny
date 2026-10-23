@@ -235,7 +235,20 @@ void main() {
       ),
       UpcomingEvent(symbol: 'KO', date: DateTime(2026, 10, 29), kind: UpcomingEventKind.dividend),
     ]);
-    expect(entries.first.uid, 'dividend-KO-2026-10-29');
+    expect(entries.first.uid, 'dividend-KO-USD-2026-10');
+    // A pontosított nap (és két pénznem) mellett is állandó, egyedi azonosító.
+    final moved = calendarEntries(l10n, fmt, [
+      UpcomingEvent(symbol: 'KO', date: DateTime(2026, 10, 30), kind: UpcomingEventKind.dividend, currency: 'USD'),
+      UpcomingEvent(symbol: 'KO', date: DateTime(2026, 10, 29), kind: UpcomingEventKind.dividend, currency: 'HUF'),
+      UpcomingEvent(symbol: 'AAPL', date: DateTime(2026, 10, 29), kind: UpcomingEventKind.earnings),
+      UpcomingEvent(symbol: 'AAPL', date: DateTime(2026, 10, 30), kind: UpcomingEventKind.earnings),
+    ]);
+    expect(moved.map((e) => e.uid), [
+      'dividend-KO-USD-2026-10',
+      'dividend-KO-HUF-2026-10',
+      'earnings-AAPL-2026-Q4',
+      'earnings-AAPL-2026-Q4',
+    ]);
     expect(entries.first.summary, 'KO · Dividend expected');
     expect(entries.first.description, '~ 5.10 USD · Estimated from your recorded payments');
     // Összeg nélkül csak a megjegyzés.
@@ -322,7 +335,8 @@ void main() {
     final ics = saved['whatstock-events.ics']!.replaceAll('\r\n ', '');
     expect('BEGIN:VEVENT'.allMatches(ics), hasLength(3));
     expect(ics, contains('SUMMARY:MSFT · Quarterly results · after the close\r\nDESCRIPTION:EPS estimate: 1.62\r\n'));
-    expect(ics, contains('UID:earnings-MSFT-${_day(today.add(const Duration(days: 1)))}@whatstock.app'));
+    final reportDay = today.add(const Duration(days: 1));
+    expect(ics, contains('UID:earnings-MSFT-${reportDay.year}-Q${(reportDay.month - 1) ~/ 3 + 1}@whatstock.app'));
     expect(ics, contains('SUMMARY:NVDA · GTC keynote\r\nDESCRIPTION:From your analysis\r\n'));
 
     await tester.tap(find.text('GTC keynote\nFrom your analysis'));

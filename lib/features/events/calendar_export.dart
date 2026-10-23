@@ -4,8 +4,8 @@ import 'dart:convert';
 typedef CalendarEntry = ({String uid, DateTime day, String summary, String description});
 
 /// iCalendar (.ics) fájl egész napos eseményekkel – a Google Naptár, az Apple
-/// Naptár és az Outlook is beolvassa. Az [uid] állandó, így újraimportáláskor
-/// a naptár frissíti a bejegyzést, nem duplázza.
+/// Naptár és az Outlook is beolvassa. Az [uid] állandó (a pontosított nap sem
+/// változtatja meg), így újraimportáláskor a naptár frissíti a bejegyzést, nem duplázza.
 String icsCalendar(List<CalendarEntry> entries, {required DateTime now}) {
   String d(DateTime t) => '${t.year.toString().padLeft(4, '0')}${_two(t.month)}${_two(t.day)}';
   final u = now.toUtc();

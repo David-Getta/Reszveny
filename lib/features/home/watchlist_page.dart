@@ -19,6 +19,7 @@ import '../stock_detail/widgets/move_why_button.dart';
 import '../events/events_view.dart' show eventWhen;
 import '../portfolio/add_lot_dialog.dart' show parseDecimal;
 import 'watch_signals.dart';
+import '../../core/util/dates.dart';
 
 /// A figyelőlista rendezése.
 enum WatchSort { own, gainers, losers, since, name }
@@ -276,7 +277,7 @@ class _WatchlistPageState extends State<WatchlistPage> {
               e.kind == UpcomingEventKind.earnings &&
               e.symbol == symbol &&
               !e.date.isBefore(today) &&
-              e.date.difference(today).inDays <= 7,
+              calendarDaysBetween(today, e.date) <= 7,
         )
         .firstOrNull;
   }

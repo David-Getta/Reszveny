@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.259)
+# Változásjegyzék (0.2.130 → 0.2.260)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -260,6 +260,17 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - Tizenhat kódátnézés és három egyszerűsítési átnézés javításai (közös FIFO-lépés, gyorsítótárazott számla-nézetek,
   egy számla mező a tranzakcióhoz és az osztalékhoz, egylépéses kedvenc-szinkron), bővített tesztek; 120 nyelven
   minden új szöveg.
+
+## Események, naptár, osztalék-előrejelzés: egy nyolcadik kódátnézés javításai
+
+- **0.2.260**: a „holnap / N nap múlva” az óraátállítás körül is pontos (a tavaszi napon eddig egy nappal
+  kevesebbet mutatott; a napi összefoglaló is a holnapi jelentést hitte megjelentnek); a naptárexport azonosítója
+  a pontosított nap mellett is állandó (gyorsjelentés: negyedév, várható osztalék: hónap és pénznem), és két
+  pénznemű sorozat nem ütközik; a jövőre rögzített (bejelentett) osztalék maga a következő kifizetés (pontos
+  összeggel, az Eseményekben is; emlékeztető nélkül, mert már rögzítve van), és nem számít bele az idei és az
+  összes kapott osztalékba, sem az éves összesítőbe; a 12 havi osztalék nem számolja kétszer az éves kifizetést;
+  az árfolyam 12 óráig marad meg a lekéréstől (eddig az ECB-nap szerint akár 3,5 napig, ünnep után pedig
+  egyáltalán nem); egyedi kulcsok a két pénznemű osztalék-soroknak.
 
 ## Riasztások és értesítések: egy hetedik kódátnézés javításai
 

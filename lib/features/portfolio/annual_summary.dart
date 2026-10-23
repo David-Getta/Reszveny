@@ -50,8 +50,12 @@ List<SummaryRow> annualSummary(PortfolioStore store, int year) {
       if (s.date?.year == year) add((s.account, p.currency), proceeds: s.proceeds, cost: s.cost);
     }
   }
+  final now = DateTime.now();
   for (final d in store.dividends) {
-    if (d.date?.year == year) add((d.account, d.currency), dividends: d.amount);
+    // A jövőre rögzített (bejelentett) osztalék még nem kapott.
+    if (d.date case final date? when date.year == year && !date.isAfter(now)) {
+      add((d.account, d.currency), dividends: d.amount);
+    }
   }
   for (final l in store.lots) {
     if (l.fee > 0 && l.date?.year == year) add((l.account, l.currency), fees: l.fee);

@@ -1247,7 +1247,7 @@ void main() {
     expect(find.byKey(const ValueKey('portfolio-sample')), findsOneWidget);
     expect(find.byKey(const ValueKey('position-menu-AAPL')), findsOneWidget);
     // A negyedéves osztalékokból várható kifizetés, a TBSZ-en lévő OTP-vel számla is.
-    expect(find.byKey(const ValueKey('dividend-expected-AAPL')), findsOneWidget);
+    expect(find.byKey(const ValueKey('dividend-expected-AAPL-USD')), findsOneWidget);
     expect(s.portfolio.accounts, ['TBSZ']);
     expect(s.portfolio.positionOf('AAPL')!.quantity, 8);
     // Saját vétel mellé, majd a minta eltávolítása: a saját marad.

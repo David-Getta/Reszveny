@@ -1,9 +1,12 @@
+import '../../core/util/dates.dart';
 import '../../core/util/formatters.dart';
 import '../fx/fx_service.dart';
 import 'portfolio_store.dart';
 
 /// Egy részvény várható következő osztaléka, a rögzített kifizetésekből becsülve;
-/// a [byAccount] az összeg számlánkénti része (a legutóbbi kifizetés szerint).
+/// a [byAccount] az összeg számlánkénti része (a legutóbbi kifizetés szerint). Az
+/// [announced] a jövőre rögzített (bejelentett) kifizetés: az összege pontos, és már
+/// rögzítve van (nem becslés; a [periodMonths] 0, ha a ritmusa nem ismert).
 typedef ExpectedDividend = ({
   String symbol,
   DateTime date,
@@ -11,6 +14,7 @@ typedef ExpectedDividend = ({
   String currency,
   int periodMonths,
   Map<String?, double> byAccount,
+  bool announced,
 });
 
 /// Ennyi napon belül rögzített tételek egy kifizetésnek számítanak (pl. két
@@ -26,7 +30,8 @@ const payoutWindowDays = 7;
 /// napja marad; ha nincs ilyen nap, a hónap utolsó napja), az összeg az utolsó
 /// kifizetés. Ami már [grace]-nél régebben lett volna esedékes, kimarad
 /// (valószínűleg nem lett rögzítve, vagy elmaradt), ahogy a [horizon]-nál
-/// távolabbi is. Dátum, azon belül ticker szerint rendezve.
+/// távolabbi is. Ha a sorozatban van jövőre rögzített (bejelentett) kifizetés, a
+/// következő az ([announced]), nem a becslés. Dátum, azon belül ticker szerint rendezve.
 ///
 /// Ugyanez a becslés fut a szerveren a heti e-mailhez
 /// (`server/lib/src/digest.dart`, `expectedDividendsOf`): a küszöböket ott is
@@ -54,7 +59,7 @@ List<ExpectedDividend> expectedDividends(
     final payouts = <({DateTime day, Map<String?, double> parts})>[];
     for (final day in e.value.keys.toList()..sort()) {
       final parts = e.value[day]!;
-      if (payouts.isNotEmpty && _calendarDays(payouts.last.day, day) < payoutWindowDays) {
+      if (payouts.isNotEmpty && calendarDaysBetween(payouts.last.day, day) < payoutWindowDays) {
         for (final p in parts.entries) {
           payouts.last.parts[p.key] = (payouts.last.parts[p.key] ?? 0) + p.value;
         }
@@ -62,8 +67,22 @@ List<ExpectedDividend> expectedDividends(
         payouts.add((day: day, parts: {...parts}));
       }
     }
-    if (payouts.length < 2) continue;
-    final period = periodMonthsFor(medianRecentGap([for (final p in payouts) p.day]));
+    final period = payouts.length < 2 ? null : periodMonthsFor(medianRecentGap([for (final p in payouts) p.day]));
+    // A jövőre rögzített (bejelentett) kifizetés maga a következő.
+    final today = DateTime(now.year, now.month, now.day);
+    if (payouts.where((p) => p.day.isAfter(today)).firstOrNull case final a?) {
+      if (a.day.isAfter(now.add(horizon))) continue;
+      out.add((
+        symbol: e.key.$1,
+        date: a.day,
+        amount: a.parts.values.fold(0.0, (s, v) => s + v),
+        currency: e.key.$2,
+        periodMonths: period ?? 0,
+        byAccount: a.parts,
+        announced: true,
+      ));
+      continue;
+    }
     if (period == null) continue;
     final last = payouts.last;
     final next = addMonths(last.day, period);
@@ -75,6 +94,7 @@ List<ExpectedDividend> expectedDividends(
       currency: e.key.$2,
       periodMonths: period,
       byAccount: last.parts,
+      announced: false,
     ));
   }
   out.sort((a, b) {
@@ -83,10 +103,6 @@ List<ExpectedDividend> expectedDividends(
   });
   return out;
 }
-
-/// Naptári napok két nap között (az óraátállítás nem csúsztatja el).
-int _calendarDays(DateTime a, DateTime b) =>
-    DateTime.utc(b.year, b.month, b.day).difference(DateTime.utc(a.year, a.month, a.day)).inDays;
 
 /// Bekerülési osztalékhozam százalékban: az utolsó 12 hónap (dátumozott) kapott
 /// osztaléka a [cost] vételi értékhez mérve; `null`, ha nincs ilyen tétel. A
@@ -106,10 +122,11 @@ double? yieldOnCost(
 /// Az utolsó 12 hónap dátumozott, nem jövőbeli tételei (a 12 havi összeg és a
 /// hozzá kért árfolyamok ugyanezt az ablakot használják).
 Iterable<DividendRecord> dividendsInLast12Months(Iterable<DividendRecord> dividends, {required DateTime now}) {
-  final from = DateTime(now.year - 1, now.month, now.day);
+  // Pontosan egy éve kapott tétel már nem számít (különben 366 nap: két éves kifizetés).
+  final from = DateTime(now.year - 1, now.month, now.day, now.hour, now.minute, now.second);
   return dividends.where((d) {
     final date = d.date;
-    return date != null && !date.isBefore(from) && !date.isAfter(now);
+    return date != null && date.isAfter(from) && !date.isAfter(now);
   });
 }
 
@@ -235,8 +252,9 @@ List<DividendMonth> dividendMonths(
   for (final x in expected) {
     final r = rate(x.currency);
     if (r == null) continue;
-    // A következő kifizetés, majd a ritmus szerint a további, amíg az ablakban van.
-    for (var n = 0; ; n++) {
+    // A következő kifizetés, majd a ritmus szerint a további, amíg az ablakban van (a
+    // bejelentett kifizetés már a rögzített tételek közt szerepel: csak az utána következők).
+    for (var n = x.announced ? 1 : 0; n == 0 || x.periodMonths > 0; n++) {
       final date = addMonths(x.date, n * x.periodMonths);
       final i = index(date);
       if (i == null) break;

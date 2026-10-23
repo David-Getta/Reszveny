@@ -50,6 +50,8 @@ class DividendsCard extends StatelessWidget {
         final positions = services.portfolio.positionsIn(account);
         final now = DateTime.now();
         final year = now.year;
+        // A kapott összegekben a jövőre rögzített (bejelentett) kifizetés még nincs benne.
+        final received = all.where((d) => !(d.date?.isAfter(now) ?? false)).toList();
         // Várható következő kifizetések a még birtokolt részvényekre, a rögzítettek ritmusából.
         final expected = expectedDividends(all, positions.map((x) => x.symbol), now: now);
         // Az osztalékok és a nyitott pozíciók pénznemei (a bekerülési osztalékhozamhoz is).
@@ -127,12 +129,12 @@ class DividendsCard extends StatelessWidget {
                               MetricFigure(
                                 key: const ValueKey('dividends-this-year'),
                                 label: l10n.portfolioDividendsThisYear,
-                                value: fmt.money(sum(all.where((d) => d.date?.year == year)), currency),
+                                value: fmt.money(sum(received.where((d) => d.date?.year == year)), currency),
                               ),
                               MetricFigure(
                                 key: const ValueKey('dividends-all-time'),
                                 label: l10n.portfolioDividendsAllTime,
-                                value: fmt.money(sum(all), currency),
+                                value: fmt.money(sum(received), currency),
                               ),
                               if (yoc != null)
                                 MetricFigure(
@@ -186,7 +188,7 @@ class DividendsCard extends StatelessWidget {
                     Text(l10n.portfolioDividendsExpected, style: theme.textTheme.labelMedium?.copyWith(color: p.muted)),
                     for (final x in expected.take(maxExpected))
                       Padding(
-                        key: ValueKey('dividend-expected-${x.symbol}'),
+                        key: ValueKey('dividend-expected-${x.symbol}-${x.currency}'),
                         padding: const EdgeInsets.only(right: 8, top: 4),
                         child: FitRow(
                           lead: Text.rich(
@@ -194,8 +196,10 @@ class DividendsCard extends StatelessWidget {
                               text: x.symbol,
                               style: const TextStyle(fontWeight: FontWeight.w600),
                               children: [
+                                // A bejelentett (jövőre rögzített) kifizetésnek pontos a napja és az összege.
                                 TextSpan(
-                                  text: '  ${l10n.portfolioDividendAround(fmt.date(x.date))}',
+                                  text:
+                                      '  ${x.announced ? fmt.date(x.date) : l10n.portfolioDividendAround(fmt.date(x.date))}',
                                   style: TextStyle(color: p.muted, fontWeight: FontWeight.normal),
                                 ),
                               ],
@@ -205,37 +209,44 @@ class DividendsCard extends StatelessWidget {
                             mainAxisSize: MainAxisSize.min,
                             children: [
                               Flexible(
-                                child: Text(approxMoney(fmt, x.amount, x.currency), style: TextStyle(color: p.muted)),
+                                child: Text(
+                                  x.announced
+                                      ? fmt.money(x.amount, x.currency)
+                                      : approxMoney(fmt, x.amount, x.currency),
+                                  style: TextStyle(color: p.muted),
+                                ),
                               ),
-                              // Megérkezett: egy koppintással rögzíthető a várható adatokkal előre kitöltve.
-                              IconButton(
-                                key: ValueKey('dividend-expected-add-${x.symbol}'),
-                                tooltip: l10n.portfolioAddDividend,
-                                visualDensity: VisualDensity.compact,
-                                icon: Icon(Icons.add_circle_outline_rounded, size: 18, color: p.muted),
-                                // Több számlán érkező kifizetésnél a legnagyobb rész a saját számlájára
-                                // (a többi a számla nézetéből vagy kézzel rögzíthető).
-                                onPressed: () {
-                                  // Csak a részvényt még tartó számlák közül (ha van ilyen rész).
-                                  final holders = services.portfolio.heldByAccount(x.symbol).keys.toSet();
-                                  final candidates = {
-                                    for (final e in x.byAccount.entries)
-                                      if (holders.contains(e.key)) e.key: e.value,
-                                  };
-                                  final mainKey = largestKey<String?>(candidates);
-                                  final part = account != null || candidates.isEmpty
-                                      ? null
-                                      : (key: mainKey, value: candidates[mainKey]!);
-                                  showAddDividendDialog(
-                                    context,
-                                    symbol: x.symbol,
-                                    currency: x.currency,
-                                    amount: part?.value ?? x.amount,
-                                    date: x.date,
-                                    account: part?.key ?? account,
-                                  );
-                                },
-                              ),
+                              // Megérkezett: egy koppintással rögzíthető a várható adatokkal előre kitöltve
+                              // (a bejelentett már rögzítve van).
+                              if (!x.announced)
+                                IconButton(
+                                  key: ValueKey('dividend-expected-add-${x.symbol}-${x.currency}'),
+                                  tooltip: l10n.portfolioAddDividend,
+                                  visualDensity: VisualDensity.compact,
+                                  icon: Icon(Icons.add_circle_outline_rounded, size: 18, color: p.muted),
+                                  // Több számlán érkező kifizetésnél a legnagyobb rész a saját számlájára
+                                  // (a többi a számla nézetéből vagy kézzel rögzíthető).
+                                  onPressed: () {
+                                    // Csak a részvényt még tartó számlák közül (ha van ilyen rész).
+                                    final holders = services.portfolio.heldByAccount(x.symbol).keys.toSet();
+                                    final candidates = {
+                                      for (final e in x.byAccount.entries)
+                                        if (holders.contains(e.key)) e.key: e.value,
+                                    };
+                                    final mainKey = largestKey<String?>(candidates);
+                                    final part = account != null || candidates.isEmpty
+                                        ? null
+                                        : (key: mainKey, value: candidates[mainKey]!);
+                                    showAddDividendDialog(
+                                      context,
+                                      symbol: x.symbol,
+                                      currency: x.currency,
+                                      amount: part?.value ?? x.amount,
+                                      date: x.date,
+                                      account: part?.key ?? account,
+                                    );
+                                  },
+                                ),
                             ],
                           ),
                         ),

@@ -13,6 +13,7 @@ import '../events/events_service.dart';
 import '../fx/fx_service.dart';
 import '../market_data/market_data_provider.dart';
 import 'watch_news.dart';
+import '../../core/util/dates.dart';
 
 /// Egy elkészült napi összefoglaló.
 class Brief {
@@ -170,7 +171,7 @@ Rules:
         final e = (upcoming?.call() ?? const <UpcomingEvent>[])
             .where((e) => e.symbol == s && e.kind == UpcomingEventKind.earnings)
             .firstOrNull;
-        final inDays = e == null ? null : DateTime(e.date.year, e.date.month, e.date.day).difference(day).inDays;
+        final inDays = e == null ? null : calendarDaysBetween(day, e.date);
         EarningsSurprise? reported;
         if (inDays != null && inDays <= 0 && inDays >= -reportedWithinDays) {
           try {

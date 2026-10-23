@@ -28,6 +28,7 @@ class UpcomingEvent {
     this.epsEstimate,
     this.amount,
     this.currency,
+    this.announced = false,
   });
 
   final String symbol;
@@ -46,6 +47,9 @@ class UpcomingEvent {
   /// Várható osztaléknál: az utolsó rögzített kifizetés összege és pénzneme.
   final double? amount;
   final String? currency;
+
+  /// Jövőre rögzített (bejelentett) osztalék: pontos összeg, már rögzítve (nem becslés).
+  final bool announced;
 }
 
 /// A kedvencek és a portfólió közelgő gyorsjelentései, valamint az elmentett
@@ -244,6 +248,7 @@ class EventsService extends ChangeNotifier {
           kind: UpcomingEventKind.dividend,
           amount: x.amount,
           currency: x.currency,
+          announced: x.announced,
         ),
       );
     }

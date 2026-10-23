@@ -61,7 +61,9 @@ class FxService extends ChangeNotifier {
 
   static bool isSupported(String? code) => code != null && supportedCurrencies.contains(code.toUpperCase());
 
-  final Map<String, FxRate> _cache = {};
+  /// A lekért árfolyam és a lekérés ideje (a 12 óra ettől számít, nem az ECB
+  /// árfolyamának napjától – az ünnepnapok után is lehet több napos).
+  final Map<String, (DateTime, FxRate)> _cache = {};
   final Map<String, Future<FxRate?>> _inFlight = {};
   static const _ttl = Duration(hours: 12);
 
@@ -88,9 +90,7 @@ class FxService extends ChangeNotifier {
     if (f == t || !isSupported(f) || !isSupported(t)) return Future.value(null);
     final key = '$f>$t';
     final cached = _cache[key];
-    if (cached != null && DateTime.now().difference(cached.date) < _ttl + const Duration(days: 3)) {
-      return Future.value(cached);
-    }
+    if (cached != null && DateTime.now().difference(cached.$1) < _ttl) return Future.value(cached.$2);
     return _inFlight.putIfAbsent(key, () async {
       try {
         final res = await _client
@@ -99,7 +99,7 @@ class FxService extends ChangeNotifier {
         if (res.statusCode != 200) return null;
         final parsed = parseLatest(jsonDecode(res.body) as Map<String, dynamic>, f, t);
         if (parsed != null) {
-          _cache[key] = parsed;
+          _cache[key] = (DateTime.now(), parsed);
           notifyListeners();
         }
         return parsed;
@@ -165,7 +165,7 @@ class FxService extends ChangeNotifier {
   }
 
   /// Azonnali (már gyorsítótárazott) árfolyam, szinkron megjelenítéshez.
-  FxRate? cachedRate(String from, String to) => _cache['${from.toUpperCase()}>${to.toUpperCase()}'];
+  FxRate? cachedRate(String from, String to) => _cache['${from.toUpperCase()}>${to.toUpperCase()}']?.$2;
 
   /// A Frankfurter `/latest` válasza: `{"amount":1,"base":"USD","date":"2026-10-09","rates":{"HUF":355.2}}`.
   static FxRate? parseLatest(Map<String, dynamic> j, String from, String to) {

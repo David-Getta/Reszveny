@@ -16,10 +16,11 @@ import '../portfolio/dividend_forecast.dart' show approxMoney;
 import '../portfolio/dividends_card.dart' show showAddDividendDialog;
 import 'calendar_export.dart';
 import 'events_service.dart';
+import '../../core/util/dates.dart';
 
 /// „Mikor?”: ma, holnap, N nap múlva.
 String eventWhen(AppLocalizations l10n, DateTime day, DateTime today) {
-  final days = DateTime(day.year, day.month, day.day).difference(DateTime(today.year, today.month, today.day)).inDays;
+  final days = calendarDaysBetween(today, day);
   return switch (days) {
     <= 0 => l10n.longTermToday,
     1 => l10n.eventTomorrow,
@@ -41,6 +42,11 @@ String eventWhen(AppLocalizations l10n, DateTime day, DateTime today) {
       title: [l10n.eventEarnings, ?when].join(' · '),
       detail: e.epsEstimate == null ? null : l10n.eventEpsEstimate(fmt.number(e.epsEstimate!)),
     ),
+    // A bejelentett (jövőre rögzített) kifizetés pontos, nem becslés.
+    UpcomingEventKind.dividend when e.announced => (
+      title: l10n.eventDividend,
+      detail: e.amount != null && e.currency != null ? fmt.money(e.amount!, e.currency!) : null,
+    ),
     UpcomingEventKind.dividend => (
       title: l10n.eventDividend,
       detail: [
@@ -52,8 +58,11 @@ String eventWhen(AppLocalizations l10n, DateTime day, DateTime today) {
   };
 }
 
-/// Az események naptárbejegyzésként; az azonosító a ticker, a fajta, a nap
-/// (és elemzésből jövő eseménynél a szöveg) alapján állandó.
+/// Az események naptárbejegyzésként. Az azonosító a pontos naptól független, hogy
+/// a később pontosított nap (becsült → bejelentett jelentésnap, a ritmusból becsült
+/// osztaléknap) újraimportáláskor a régi bejegyzést frissítse, ne mellé kerüljön:
+/// gyorsjelentésnél a negyedév, várható osztaléknál a hónap és a pénznem (két
+/// brókernél két sorozat), elemzésből jövő eseménynél a nap és a szöveg.
 List<CalendarEntry> calendarEntries(AppLocalizations l10n, Fmt fmt, List<UpcomingEvent> events) => [
   for (final e in events)
     if (eventText(l10n, fmt, e) case final t)
@@ -61,8 +70,11 @@ List<CalendarEntry> calendarEntries(AppLocalizations l10n, Fmt fmt, List<Upcomin
         uid: [
           e.kind.name,
           e.symbol,
-          e.date.toIso8601String().substring(0, 10),
-          if (e.kind == UpcomingEventKind.catalyst) _stableHash(e.text),
+          ...switch (e.kind) {
+            UpcomingEventKind.earnings => ['${e.date.year}', 'Q${(e.date.month - 1) ~/ 3 + 1}'],
+            UpcomingEventKind.dividend => [?e.currency, e.date.toIso8601String().substring(0, 7)],
+            UpcomingEventKind.catalyst => [e.date.toIso8601String().substring(0, 10), _stableHash(e.text)],
+          },
         ].join('-'),
         day: e.date,
         summary: '${e.symbol} · ${t.title}',
@@ -127,7 +139,7 @@ class _UpcomingEventsSectionState extends State<UpcomingEventsSection> {
       builder: (context, _) {
         final now = DateTime.now();
         final soon = services.events.events
-            .where((e) => e.date.difference(now).inDays < UpcomingEventsSection.shownDays)
+            .where((e) => calendarDaysBetween(now, e.date) < UpcomingEventsSection.shownDays)
             .toList();
         if (soon.isEmpty) return const SizedBox.shrink();
         return Column(

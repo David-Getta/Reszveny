@@ -31,6 +31,7 @@ import '../portfolio/portfolio_valuation.dart';
 import '../settings/settings_page.dart';
 import 'shortcuts_dialog.dart';
 import '../stock_detail/stock_detail_page.dart';
+import '../../core/util/dates.dart';
 
 /// Az app kerete: széles képernyőn oldalsáv (új keresés, előzmények,
 /// beállítások) és tartalom – mint a Claude asztali alkalmazása; keskeny
@@ -318,7 +319,7 @@ class _AppShellState extends State<AppShell> {
     final today = DateTime(now.year, now.month, now.day);
     final e = services.events.events
         .where((e) => e.kind == UpcomingEventKind.earnings && e.symbol == symbol && !e.date.isBefore(today))
-        .where((e) => e.date.difference(today).inDays < 7)
+        .where((e) => calendarDaysBetween(today, e.date) < 7)
         .firstOrNull;
     return e == null ? null : eventWhen(l10n, e.date, now);
   }

@@ -383,7 +383,15 @@ void main() {
       ];
       final expected = <ExpectedDividend>[
         // Havonta fizető: a következő három hónapban is.
-        (symbol: 'O', date: DateTime(2026, 11, 14), amount: 1, currency: 'USD', periodMonths: 1, byAccount: const {}),
+        (
+          symbol: 'O',
+          date: DateTime(2026, 11, 14),
+          amount: 1,
+          currency: 'USD',
+          periodMonths: 1,
+          byAccount: const {},
+          announced: false,
+        ),
         // Negyedéves: csak egyszer fér az ablakba.
         (
           symbol: 'AAPL',
@@ -392,8 +400,17 @@ void main() {
           currency: 'USD',
           periodMonths: 3,
           byAccount: const {},
+          announced: false,
         ),
-        (symbol: 'X', date: DateTime(2026, 12, 1), amount: 4, currency: 'CHF', periodMonths: 3, byAccount: const {}),
+        (
+          symbol: 'X',
+          date: DateTime(2026, 12, 1),
+          amount: 4,
+          currency: 'CHF',
+          periodMonths: 3,
+          byAccount: const {},
+          announced: false,
+        ),
       ];
       final months = dividendMonths(
         ds,
@@ -419,7 +436,17 @@ void main() {
       // Hónapfordulón fizető havi részvény: minden hónapban pontosan egyszer (nem 30 naponként csúszva).
       final edge = dividendMonths(
         const [],
-        [(symbol: 'M', date: DateTime(2026, 12, 1), amount: 1, currency: 'USD', periodMonths: 1, byAccount: const {})],
+        [
+          (
+            symbol: 'M',
+            date: DateTime(2026, 12, 1),
+            amount: 1,
+            currency: 'USD',
+            periodMonths: 1,
+            byAccount: const {},
+            announced: false,
+          ),
+        ],
         now: DateTime(2026, 11, 22),
         rate: (_) => 1.0,
       );
@@ -428,6 +455,29 @@ void main() {
         (1, 1.0),
         (2, 1.0),
       ]);
+    });
+
+    test('an announced (future-dated) payout is the next one: exact, not estimated, counted once by month', () {
+      final now = DateTime(2026, 10, 23, 12);
+      final ds = [
+        rec('AAPL', DateTime(2026, 5, 14), 2.6),
+        rec('AAPL', DateTime(2026, 8, 13), 2.6),
+        rec('AAPL', DateTime(2026, 11, 13), 2.8),
+      ];
+      final next = expectedDividends(ds, ['AAPL'], now: now);
+      expect(next.map((x) => (x.date, x.amount, x.announced, x.periodMonths)), [
+        (DateTime(2026, 11, 13), 2.8, true, 3),
+      ]);
+      final months = dividendMonths(ds, next, now: now, rate: (_) => 1.0);
+      expect(months.where((m) => m.expected > 0).map((m) => (m.month.month, m.expected)), [
+        (11, 2.8),
+      ], reason: 'a bejelentett egyszer; a következő (február) már az ablakon túl');
+    });
+
+    test('the 12-month window does not count a payout from exactly a year ago', () {
+      final now = DateTime(2026, 10, 23, 12);
+      final ds = [rec('KO', DateTime(2025, 10, 23), 10), rec('KO', DateTime(2026, 10, 23), 10)];
+      expect(dividendsLast12Months(ds, now: now), 10);
     });
 
     test('two currencies for one stock (two brokers) are separate series, never summed together', () {
@@ -474,7 +524,7 @@ void main() {
     final cardYoc = find.byKey(const ValueKey('dividends-yield-on-cost'));
     expect(find.descendant(of: cardYoc, matching: find.text('0.13%')), findsOneWidget);
     // Egy tételből nincs várható következő; két negyedéves tételből van.
-    expect(find.byKey(const ValueKey('dividend-expected-AAPL')), findsNothing);
+    expect(find.byKey(const ValueKey('dividend-expected-AAPL-USD')), findsNothing);
     final q = DateTime.now().subtract(const Duration(days: 40));
     await s.portfolio.addDividend(symbol: 'AAPL', amount: 2.6, currency: 'USD', date: q);
     await s.portfolio.addDividend(
@@ -484,11 +534,11 @@ void main() {
       date: q.subtract(const Duration(days: 91)),
     );
     await tester.pumpAndSettle();
-    expect(find.byKey(const ValueKey('dividend-expected-AAPL')), findsOneWidget);
+    expect(find.byKey(const ValueKey('dividend-expected-AAPL-USD')), findsOneWidget);
     expect(find.text('Expected next'), findsOneWidget);
     expect(find.textContaining('~ 2.60 USD'), findsOneWidget);
     // Megérkezett: a + gomb a várható adatokkal előre kitöltött párbeszédet nyit.
-    await tester.tap(find.byKey(const ValueKey('dividend-expected-add-AAPL')));
+    await tester.tap(find.byKey(const ValueKey('dividend-expected-add-AAPL-USD')));
     await tester.pumpAndSettle();
     expect(find.text('Add dividend'), findsOneWidget);
     expect(tester.widget<TextField>(find.byKey(const ValueKey('dividend-amount'))).controller!.text, '2.60');

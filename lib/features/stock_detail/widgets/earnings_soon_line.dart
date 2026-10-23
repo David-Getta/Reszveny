@@ -5,6 +5,7 @@ import '../../../core/models/analysis_extras.dart';
 import '../../../l10n/generated/app_localizations.dart';
 import '../../../theme/app_theme.dart';
 import '../../events/events_view.dart' show eventWhen;
+import '../../../core/util/dates.dart';
 
 /// A részvény fejlécében és a vétel/eladás dialógusban: ha 7 napon belül gyorsjelentés
 /// jön („Negyedéves gyorsjelentés · holnap · zárás után”). A gyorsjelentés-kártyával közös (gyorsítótárazott) adatból.
@@ -37,11 +38,7 @@ class _EarningsSoonLineState extends State<EarningsSoonLine> {
         final next = snap.data?.next;
         if (next == null) return const SizedBox.shrink();
         final now = DateTime.now();
-        final days = DateTime(
-          next.date.year,
-          next.date.month,
-          next.date.day,
-        ).difference(DateTime(now.year, now.month, now.day)).inDays;
+        final days = calendarDaysBetween(now, next.date);
         if (days < 0 || days > 7) return const SizedBox.shrink();
         final text = [
           l10n.eventEarnings,

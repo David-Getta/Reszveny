@@ -7,6 +7,7 @@ import '../../core/app_preferences.dart';
 import '../../core/desktop/system_notifier.dart';
 import '../../core/models/analysis_extras.dart';
 import 'events_service.dart';
+import '../../core/util/dates.dart';
 
 /// Gyorsjelentés- és osztalék-emlékeztető: a kedvencek és a portfólió
 /// részvényeinek gyorsjelentése előtti napon (vagy ha azt elmulasztottuk, aznap)
@@ -65,10 +66,8 @@ class EarningsReminder {
 
   static String _day(DateTime d) => d.toIso8601String().substring(0, 10);
 
-  /// Két dátum között eltelt naptári napok (az óraátállítás napja 23 vagy 25 óra,
-  /// ezért nem a [Duration]-ből).
-  static int daysBetween(DateTime from, DateTime to) =>
-      DateTime.utc(to.year, to.month, to.day).difference(DateTime.utc(from.year, from.month, from.day)).inDays;
+  /// Két dátum között eltelt naptári napok ([calendarDaysBetween]).
+  static int daysBetween(DateTime from, DateTime to) => calendarDaysBetween(from, to);
 
   /// Ellenőrzés most; a kiküldött értesítések azonosítóival tér vissza.
   Future<List<String>> check() async {
@@ -94,7 +93,8 @@ class EarningsReminder {
         // Gyorsjelentés: előtte való nap vagy aznap; várható osztalék: a napján.
         final text = switch (e.kind) {
           UpcomingEventKind.earnings when earnings && days >= 0 && days <= 1 => describe(e, tomorrow: days == 1),
-          UpcomingEventKind.dividend when dividends && days == 0 => describeDividend!(e),
+          // A bejelentett (már rögzített) osztalékot nem kell rögzíteni: arról nem szól.
+          UpcomingEventKind.dividend when dividends && days == 0 && !e.announced => describeDividend!(e),
           _ => null,
         };
         if (text == null) continue;
