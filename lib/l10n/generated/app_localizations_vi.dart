@@ -2822,6 +2822,11 @@ class AppLocalizationsVi extends AppLocalizations {
   String get referralErrFull => 'Mã này đã được đổi đủ số lần tối đa.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Danh mục của bạn hiện có giá trị $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

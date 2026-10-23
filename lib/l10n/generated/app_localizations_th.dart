@@ -2798,6 +2798,11 @@ class AppLocalizationsTh extends AppLocalizations {
   String get referralErrFull => 'โค้ดนี้ถูกใช้ครบจำนวนครั้งสูงสุดแล้ว';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'พอร์ตโฟลิโอของคุณมีมูลค่า $value แล้ว';
+  }
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

@@ -843,5 +843,6 @@
   "tickerChangeHint": "Kun yhtiö vaihtaa tunnustaan (esim. FB → META): kaikki tapahtumat, osingot, osakesplitit, muistiinpano ja hälytykset siirtyvät uudelle tunnukselle.",
   "tickerChanged": "Siirretty tunnukselle {symbol}",
   "referralErrSignIn": "Kirjaudu sisään sähköpostillasi lunastaaksesi ystävän koodin.",
-  "referralErrFull": "Tämä koodi on jo lunastettu niin monta kertaa kuin mahdollista."
+  "referralErrFull": "Tämä koodi on jo lunastettu niin monta kertaa kuin mahdollista.",
+  "portfolioGoalReachedBody": "Salkkusi arvo on nyt {value}."
 }

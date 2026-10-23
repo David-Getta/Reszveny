@@ -2710,6 +2710,11 @@ class AppLocalizationsZh extends AppLocalizations {
   String get referralErrFull => '该邀请码已达到兑换次数上限。';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return '您的投资组合市值已达 $value。';
+  }
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5787,6 +5792,11 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get referralErrFull => '此邀請碼已達兌換次數上限。';
+
+  @override
+  String portfolioGoalReachedBody(String value) {
+    return '你的投資組合市值已達 $value。';
+  }
 
   @override
   String get portfolioGoalSet => '設定目標';

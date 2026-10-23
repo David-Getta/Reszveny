@@ -2850,6 +2850,11 @@ class AppLocalizationsHil extends AppLocalizations {
       'Nagamit na ini nga code sa pinakamadamo nga beses nga ginatugot.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Ang bili sang imo portfolio subong $value na.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

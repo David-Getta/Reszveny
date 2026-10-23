@@ -2831,6 +2831,11 @@ class AppLocalizationsPcm extends AppLocalizations {
       'Dem don use dis code reach di maximum times wey e fit take.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Your portfolio don reach $value now.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

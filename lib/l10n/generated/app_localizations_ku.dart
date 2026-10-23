@@ -2835,6 +2835,11 @@ class AppLocalizationsKu extends AppLocalizations {
       'Ev kod berê bi qasî herî zêde hatiye bikaranîn.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Nirxa portfolyoya te niha $value e.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

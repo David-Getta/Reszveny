@@ -2820,6 +2820,11 @@ class AppLocalizationsBo extends AppLocalizations {
       'ཨང་རྟགས་འདི་བེད་སྤྱོད་ཆོག་པའི་ཐེངས་གྲངས་ཡོངས་རྫོགས་བེད་སྤྱོད་བྱས་ཟིན།';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'ད་ལྟ་ཁྱེད་ཀྱི་མ་འཇོག་ཚོགས་སྡེབ་ཀྱི་རིན་ཐང་ $value ཡིན།';
+  }
+
+  @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
 
   @override

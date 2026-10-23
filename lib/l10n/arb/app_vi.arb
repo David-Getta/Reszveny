@@ -843,5 +843,6 @@
   "tickerChangeHint": "Khi công ty đổi mã cổ phiếu (ví dụ: FB → META): toàn bộ giao dịch, cổ tức, các đợt chia tách cổ phiếu, ghi chú và cảnh báo sẽ được chuyển sang mã mới.",
   "tickerChanged": "Đã chuyển sang {symbol}",
   "referralErrSignIn": "Đăng nhập bằng email để đổi mã của một người bạn.",
-  "referralErrFull": "Mã này đã được đổi đủ số lần tối đa."
+  "referralErrFull": "Mã này đã được đổi đủ số lần tối đa.",
+  "portfolioGoalReachedBody": "Danh mục của bạn hiện có giá trị {value}."
 }

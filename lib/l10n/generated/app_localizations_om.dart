@@ -2845,6 +2845,11 @@ class AppLocalizationsOm extends AppLocalizations {
       'Koodiin kun daangaa itti fayyadamaa isaa ga\'eera.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Gatiin poortfooliyoo keetii amma $value ga\'eera.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

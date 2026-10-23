@@ -2842,6 +2842,11 @@ class AppLocalizationsRn extends AppLocalizations {
       'Iyi kode yamaze gukoreshwa incuro zose zemewe.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Ishoramari ryawe ubu rifise agaciro ka $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Shiraho intumbero';
 
   @override

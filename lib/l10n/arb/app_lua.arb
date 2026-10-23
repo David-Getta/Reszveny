@@ -843,5 +843,6 @@
   "tickerChangeHint": "Padi kompani ushintulula ticker wayi (bu tshilejilu FB → META): kusumba ne kusumbisha konso, dividende, diabanya dia share, mufundu ne alerte bionso bidi biya ku ticker mupiamupia.",
   "tickerChanged": "Biakuya ku {symbol}",
   "referralErrSignIn": "Buela ne e-mail webe bua kuenza nadi code wa mulunda.",
-  "referralErrFull": "Bakadi bamane kuenza nadi code eu misangu yonso idi yanyishibue."
+  "referralErrFull": "Bakadi bamane kuenza nadi code eu misangu yonso idi yanyishibue.",
+  "portfolioGoalReachedBody": "Mpindieu, mushinga wa portefeuille webe udi {value}."
 }

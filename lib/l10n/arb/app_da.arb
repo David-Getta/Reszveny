@@ -843,5 +843,6 @@
   "tickerChangeHint": "Når et selskab skifter ticker (f.eks. FB → META): alle transaktioner, udbytte, aktiesplits, noten og alarmerne flyttes til den nye.",
   "tickerChanged": "Flyttet til {symbol}",
   "referralErrSignIn": "Log ind med din e-mail for at indløse en vens kode.",
-  "referralErrFull": "Koden er allerede indløst det maksimale antal gange."
+  "referralErrFull": "Koden er allerede indløst det maksimale antal gange.",
+  "portfolioGoalReachedBody": "Din portefølje er nu {value} værd."
 }

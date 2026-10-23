@@ -2824,6 +2824,11 @@ class AppLocalizationsIg extends AppLocalizations {
   String get referralErrFull => 'E jirila koodu a ruo ugboro kachasị ekwere.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Ugbu a, uru portfolio gị bụ $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tọọ ebumnuche';
 
   @override

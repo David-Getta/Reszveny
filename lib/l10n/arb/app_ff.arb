@@ -843,5 +843,6 @@
   "tickerChangeHint": "So isiyee waylii kod mum (yeru: FB → META): soodgol e yeeyugol fof, dividendeeji, feccugol share, binndi ndii e tintine ɗee fof ina njaha e kod kesum oo.",
   "tickerChanged": "Eggitinaama e {symbol}",
   "referralErrSignIn": "Seŋo e e-mail maa ngam huutoraade kod sehil maa.",
-  "referralErrFull": "Ndee kod huutoraama gila law laabi keewɗi ɗi nde waawi."
+  "referralErrFull": "Ndee kod huutoraama gila law laabi keewɗi ɗi nde waawi.",
+  "portfolioGoalReachedBody": "Jooni, njaru aksiyoŋ maa ko {value}."
 }

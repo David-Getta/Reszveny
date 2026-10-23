@@ -2831,6 +2831,11 @@ class AppLocalizationsKa extends AppLocalizations {
   String get referralErrFull => 'ამ კოდის გამოყენების ლიმიტი ამოიწურა.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'თქვენი პორტფელი ახლა $value ღირს.';
+  }
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

@@ -2823,6 +2823,11 @@ class AppLocalizationsMai extends AppLocalizations {
   String get referralErrFull => 'ई कोड पहिनहि अधिकतम बेर रिडीम भऽ चुकल अछि।';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'आब अहाँक पोर्टफ़ोलियोक मूल्य $value अछि।';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य निर्धारित करू';
 
   @override

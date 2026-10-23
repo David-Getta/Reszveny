@@ -2829,6 +2829,11 @@ class AppLocalizationsPa extends AppLocalizations {
       'ਇਹ ਕੋਡ ਪਹਿਲਾਂ ਹੀ ਵੱਧ ਤੋਂ ਵੱਧ ਵਾਰ ਰਿਡੀਮ ਹੋ ਚੁੱਕਾ ਹੈ।';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'ਤੁਹਾਡੇ ਪੋਰਟਫ਼ੋਲੀਓ ਦਾ ਮੁੱਲ ਹੁਣ $value ਹੈ।';
+  }
+
+  @override
   String get portfolioGoalSet => 'ਟੀਚਾ ਤੈਅ ਕਰੋ';
 
   @override

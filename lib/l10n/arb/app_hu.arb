@@ -744,6 +744,7 @@
   "tickerChanged": "Áthelyezve: {symbol}",
   "referralErrSignIn": "Egy barát kódjának beváltásához lépj be az e-mail-címeddel.",
   "referralErrFull": "Ezt a kódot már annyiszor beváltották, ahányszor lehet.",
+  "portfolioGoalReachedBody": "A portfóliód most {value} értékű.",
   "portfolioGoalSet": "Cél kitűzése",
   "portfolioGoalTitle": "Portfólió-cél",
   "portfolioGoalProgress": "{percent} kész · cél: {amount}",

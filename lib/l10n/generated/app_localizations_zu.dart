@@ -2846,6 +2846,11 @@ class AppLocalizationsZu extends AppLocalizations {
       'Le khodi isivele isetshenziswe izikhathi zonke ezivumelekile.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Inani lephothifoliyo yakho manje lingu-$value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setha umgomo';
 
   @override

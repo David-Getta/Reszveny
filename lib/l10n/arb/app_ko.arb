@@ -843,5 +843,6 @@
   "tickerChangeHint": "회사가 티커를 변경하면(예: FB → META) 모든 거래, 배당금, 주식 분할, 메모, 알림이 새 티커로 옮겨집니다.",
   "tickerChanged": "{symbol}(으)로 옮겼습니다",
   "referralErrSignIn": "친구 코드를 사용하려면 이메일로 로그인하세요.",
-  "referralErrFull": "이 코드는 사용 가능 횟수를 모두 소진했습니다."
+  "referralErrFull": "이 코드는 사용 가능 횟수를 모두 소진했습니다.",
+  "portfolioGoalReachedBody": "포트폴리오 평가액이 이제 {value}입니다."
 }

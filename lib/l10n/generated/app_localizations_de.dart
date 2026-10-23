@@ -2846,6 +2846,11 @@ class AppLocalizationsDe extends AppLocalizations {
       'Dieser Code wurde bereits so oft wie möglich eingelöst.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Dein Portfolio ist jetzt $value wert.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ziel festlegen';
 
   @override

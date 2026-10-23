@@ -2835,6 +2835,11 @@ class AppLocalizationsUz extends AppLocalizations {
   String get referralErrFull => 'Bu kod foydalanish chegarasiga yetgan.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Portfelingiz qiymati endi $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

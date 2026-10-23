@@ -843,5 +843,6 @@
   "tickerChangeHint": "企業がティッカーを変更した場合（例：FB → META）、すべての取引、配当金、株式分割、メモ、アラートが新しいティッカーに移行します。",
   "tickerChanged": "{symbol} に移行しました",
   "referralErrSignIn": "友達のコードを使用するには、メールアドレスでサインインしてください。",
-  "referralErrFull": "このコードは使用回数の上限に達しています。"
+  "referralErrFull": "このコードは使用回数の上限に達しています。",
+  "portfolioGoalReachedBody": "ポートフォリオの評価額が{value}になりました。"
 }

@@ -2842,6 +2842,11 @@ class AppLocalizationsCa extends AppLocalizations {
       'Aquest codi ja s’ha bescanviat el màxim de vegades possible.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'La teva cartera ara val $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Defineix un objectiu';
 
   @override

@@ -2833,6 +2833,11 @@ class AppLocalizationsBg extends AppLocalizations {
       'Този код вече е използван максималния брой пъти.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Портфейлът ви вече струва $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задай цел';
 
   @override

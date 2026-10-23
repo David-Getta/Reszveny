@@ -843,5 +843,6 @@
   "tickerChangeHint": "公司更改股票代码时（例如 FB → META），所有交易、股息、股票拆分、笔记和提醒都会转移到新代码下。",
   "tickerChanged": "已转移到 {symbol}",
   "referralErrSignIn": "请用电子邮件登录后再兑换好友的邀请码。",
-  "referralErrFull": "该邀请码已达到兑换次数上限。"
+  "referralErrFull": "该邀请码已达到兑换次数上限。",
+  "portfolioGoalReachedBody": "您的投资组合市值已达 {value}。"
 }

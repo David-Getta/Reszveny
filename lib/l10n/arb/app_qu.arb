@@ -843,5 +843,6 @@
   "tickerChangeHint": "Huk empresa tickerninta t'ikraqtin (kayhina: FB → META): llapan rantiy rantikuykuna, dividendokuna, akcionkuna rakiykuna, qillqasqa, willachiykunapas musuq tickerman astakun.",
   "tickerChanged": "{symbol}-man astasqa",
   "referralErrSignIn": "Correoykiwan yaykuy, huk masiykiq kódigonta llamk'achinaykipaq.",
-  "referralErrFull": "Kay kódigoqa ñam llamk'achisqaña tukuy atikusqan kutikama."
+  "referralErrFull": "Kay kódigoqa ñam llamk'achisqaña tukuy atikusqan kutikama.",
+  "portfolioGoalReachedBody": "Portafolioykiqa kunan {value} chaniyuqña."
 }

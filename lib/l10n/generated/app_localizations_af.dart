@@ -2836,6 +2836,11 @@ class AppLocalizationsAf extends AppLocalizations {
       'Hierdie kode is reeds die maksimum aantal kere ingelos.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Jou portefeulje is nou $value werd.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Stel \'n doelwit';
 
   @override

@@ -2833,6 +2833,11 @@ class AppLocalizationsTg extends AppLocalizations {
   String get referralErrFull => 'Ин код ба ҳадди ниҳоии истифода расидааст.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Арзиши портфели шумо акнун $value аст.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

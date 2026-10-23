@@ -10,7 +10,8 @@ import 'portfolio_valuation.dart';
 /// Portfólió-riasztás: ha a teljes portfólió egy nap alatt legalább a beállított
 /// %-ot mozdul (fel vagy le), egy értesítés jelzi – naponta legfeljebb egyszer,
 /// hétvégén nem. Ha a mozgás ugyanaz, mint a legutóbb jelzett (pl. hétfő reggel
-/// még a pénteki árak látszanak), nem szól újra.
+/// még a pénteki árak látszanak), nem szól újra. A kitűzött portfólió-cél
+/// elérésekor is szól, célonként egyszer.
 class PortfolioMoveWatcher {
   PortfolioMoveWatcher({
     required this.portfolio,
@@ -18,6 +19,7 @@ class PortfolioMoveWatcher {
     required this.notifier,
     required this.snapshot,
     required this.describe,
+    this.describeGoal,
     this.onNotified,
     this.interval = const Duration(minutes: 15),
     DateTime Function()? clock,
@@ -32,6 +34,10 @@ class PortfolioMoveWatcher {
 
   /// Az értesítés szövege a felhasználó nyelvén.
   final ({String title, String body}) Function(PortfolioSnapshot s) describe;
+
+  /// A cél elérésének szövege (ha nincs megadva, a célt nem figyeli).
+  final ({String title, String body}) Function(PortfolioSnapshot s, ({double amount, String currency}) goal)?
+  describeGoal;
   final void Function()? onNotified;
   final Duration interval;
   final DateTime Function() _clock;
@@ -46,20 +52,36 @@ class PortfolioMoveWatcher {
   /// A napi mozgás tizedre kerekítve (ezt hasonlítjuk a legutóbb jelzetthez).
   static String _rounded(double v) => v.toStringAsFixed(1);
 
+  /// A cél azonosítója (összeg és pénznem): új célnál újra szól.
+  static String _goalKey(({double amount, String currency}) g) => '${g.amount}|${g.currency}';
+
   /// Ellenőrzés most; igaz, ha értesítést küldött.
   Future<bool> check() async {
+    if (portfolio.positions.isEmpty) return false;
     final threshold = preferences.portfolioMoveAlert;
     final now = _clock();
-    if (threshold <= 0 || portfolio.positions.isEmpty) return false;
-    if (now.weekday == DateTime.saturday || now.weekday == DateTime.sunday) return false;
     final day = now.toIso8601String().substring(0, 10);
     final last = preferences.portfolioMoveNotified?.split('|');
-    if (last != null && last.first == day) return false;
+    final moveDue =
+        threshold > 0 &&
+        now.weekday != DateTime.saturday &&
+        now.weekday != DateTime.sunday &&
+        (last == null || last.first != day);
+    final goal = preferences.portfolioGoal;
+    final goalDue = describeGoal != null && goal != null && preferences.portfolioGoalNotified != _goalKey(goal);
+    if (!moveDue && !goalDue) return false;
     try {
       final s = await snapshot();
+      var sent = false;
+      if (goalDue && s.currency == goal.currency && !s.hasExcluded && s.totalValue >= goal.amount) {
+        final text = describeGoal!(s, goal);
+        await notifier.show(id: 'portfolio-goal', title: text.title, body: text.body);
+        await preferences.setPortfolioGoalNotified(_goalKey(goal));
+        sent = true;
+      }
       final move = s.dayGainPercent;
-      if (move == null || move.abs() < threshold || s.hasExcluded) return false;
-      if (last != null && last.length == 2 && last[1] == _rounded(move)) return false;
+      if (!moveDue || move == null || move.abs() < threshold || s.hasExcluded) return sent;
+      if (last != null && last.length == 2 && last[1] == _rounded(move)) return sent;
       final text = describe(s);
       await notifier.show(id: 'portfolio-move-$day', title: text.title, body: text.body);
       await preferences.setPortfolioMoveNotified('$day|${_rounded(move)}');

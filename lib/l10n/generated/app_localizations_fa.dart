@@ -2828,6 +2828,11 @@ class AppLocalizationsFa extends AppLocalizations {
       'این کد قبلاً به حداکثر تعداد دفعات مجاز اعمال شده است.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'ارزش سبد سهام شما اکنون $value است.';
+  }
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

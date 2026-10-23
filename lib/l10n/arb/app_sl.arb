@@ -843,5 +843,6 @@
   "tickerChangeHint": "Ko podjetje spremeni oznako (npr. FB → META): vse transakcije, dividende, delitve delnic, zapisek in opozorila se prenesejo na novo.",
   "tickerChanged": "Preneseno na {symbol}",
   "referralErrSignIn": "Prijavi se z e-pošto, da unovčiš kodo prijatelja.",
-  "referralErrFull": "Ta koda je dosegla največje število unovčitev."
+  "referralErrFull": "Ta koda je dosegla največje število unovčitev.",
+  "portfolioGoalReachedBody": "Vaš portfelj je zdaj vreden {value}."
 }

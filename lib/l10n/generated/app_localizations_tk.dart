@@ -2833,6 +2833,11 @@ class AppLocalizationsTk extends AppLocalizations {
   String get referralErrFull => 'Bu kody ulanmagyň çägi doldy.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Portfeliňiziň gymmaty indi $value boldy.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

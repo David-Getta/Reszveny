@@ -2881,6 +2881,11 @@ class AppLocalizationsHr extends AppLocalizations {
       'Ovaj je kôd već iskorišten najveći dopušteni broj puta.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Vaš portfelj sada vrijedi $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Postavi cilj';
 
   @override

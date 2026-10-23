@@ -2833,6 +2833,11 @@ class AppLocalizationsSv extends AppLocalizations {
       'Koden har redan lösts in det maximala antalet gånger.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Din portfölj är nu värd $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sätt ett mål';
 
   @override

@@ -2841,6 +2841,11 @@ class AppLocalizationsHy extends AppLocalizations {
       'Այս կոդն արդեն ակտիվացվել է առավելագույն թվով անգամ։';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Ձեր պորտֆելն այժմ արժե $value։';
+  }
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

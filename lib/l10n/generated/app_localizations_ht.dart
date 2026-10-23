@@ -2830,6 +2830,11 @@ class AppLocalizationsHt extends AppLocalizations {
       'Kòd sa a deja rive nan limit kantite fwa li ka itilize.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Pòtfèy ou vo $value kounye a.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

@@ -4801,6 +4801,12 @@ abstract class AppLocalizations {
   /// **'This code has already been used as many times as it can be.'**
   String get referralErrFull;
 
+  /// Body of the desktop notification sent once when the portfolio's total value reaches the goal the user set; the title is "Goal of {amount} reached".
+  ///
+  /// In en, this message translates to:
+  /// **'Your portfolio is now worth {value}.'**
+  String portfolioGoalReachedBody(String value);
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

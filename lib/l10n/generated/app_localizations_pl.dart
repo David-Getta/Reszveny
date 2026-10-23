@@ -2910,6 +2910,11 @@ class AppLocalizationsPl extends AppLocalizations {
       'Ten kod został już wykorzystany maksymalną liczbę razy.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Twój portfel jest teraz wart $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ustaw cel';
 
   @override

@@ -603,6 +603,12 @@ class Store {
           ]).first['n']
           as int;
 
+  /// Volt-e a felhasználónak elkészült elemzése [since] óta.
+  bool hasUsageSince(String userId, DateTime since) => _db.select(
+    'SELECT 1 FROM usage_log WHERE user_id = ? AND created_at > ? LIMIT 1',
+    [userId, since.toUtc().toIso8601String()],
+  ).isNotEmpty;
+
   void logUsage(String userId, String? symbol, int? inputTokens, int? outputTokens) {
     _db.execute(
       'INSERT INTO usage_log (user_id, symbol, input_tokens, output_tokens, created_at) VALUES (?, ?, ?, ?, ?)',

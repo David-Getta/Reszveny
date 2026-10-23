@@ -164,6 +164,7 @@ class AppServices {
       notifier: alertMonitor.notifier,
       snapshot: portfolioSnapshot,
       describe: describePortfolioMove,
+      describeGoal: describePortfolioGoal,
       onNotified: () => this.telemetry.track('portfolio_move'),
     );
     earningsReminder = EarningsReminder(
@@ -473,6 +474,15 @@ class AppServices {
         fmt.money(s.dayGain, s.currency, withSign: true),
         if (mover != null) '${mover.symbol} ${fmt.percent(mover.percent, decimals: 1, withSign: true)}',
       ].join(' · '),
+    );
+  }
+
+  /// A portfólió-cél elérésének szövege: a cél és a mostani összérték.
+  ({String title, String body}) describePortfolioGoal(PortfolioSnapshot s, ({double amount, String currency}) goal) {
+    final (l10n, fmt) = _l10n();
+    return (
+      title: l10n.portfolioGoalReached(fmt.money(goal.amount, goal.currency)),
+      body: l10n.portfolioGoalReachedBody(fmt.money(s.totalValue, s.currency)),
     );
   }
 

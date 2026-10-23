@@ -2826,6 +2826,11 @@ class AppLocalizationsGu extends AppLocalizations {
       'આ કોડ પહેલેથી જ મહત્તમ વખત રિડીમ થઈ ચૂક્યો છે.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'તમારા પોર્ટફોલિયોનું મૂલ્ય હવે $value છે.';
+  }
+
+  @override
   String get portfolioGoalSet => 'લક્ષ્ય નક્કી કરો';
 
   @override

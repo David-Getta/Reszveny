@@ -2794,6 +2794,11 @@ class AppLocalizationsAm extends AppLocalizations {
   String get referralErrFull => 'ይህ ኮድ የሚፈቀደውን ያህል ጊዜ ጥቅም ላይ ውሏል።';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'ፖርትፎሊዮዎ አሁን $value ዋጋ አለው።';
+  }
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

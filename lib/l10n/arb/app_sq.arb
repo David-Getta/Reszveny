@@ -843,5 +843,6 @@
   "tickerChangeHint": "Kur një kompani ndryshon simbolin (p.sh. FB → META): të gjitha transaksionet, dividendët, ndarjet e aksioneve, shënimi dhe alarmet kalojnë te i riu.",
   "tickerChanged": "U zhvendos te {symbol}",
   "referralErrSignIn": "Hyr me email-in tënd për të aktivizuar kodin e një miku.",
-  "referralErrFull": "Ky kod është aktivizuar tashmë numrin maksimal të herëve."
+  "referralErrFull": "Ky kod është aktivizuar tashmë numrin maksimal të herëve.",
+  "portfolioGoalReachedBody": "Portofoli juaj tani vlen {value}."
 }

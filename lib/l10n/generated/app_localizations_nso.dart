@@ -2851,6 +2851,11 @@ class AppLocalizationsNso extends AppLocalizations {
       'Khoutu ye e šetše e šomišitšwe ga ntši ka mo go dumeletšwego.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Boleng bja photefolio ya gago bjale ke $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Bea maikemišetšo';
 
   @override

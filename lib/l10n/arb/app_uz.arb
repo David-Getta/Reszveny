@@ -843,5 +843,6 @@
   "tickerChangeHint": "Kompaniya tikerini oʻzgartirganda (masalan, FB → META): barcha operatsiyalar, dividendlar, aksiya boʻlinishlari, qayd va signallar yangi tikerga koʻchiriladi.",
   "tickerChanged": "{symbol} tikeriga koʻchirildi",
   "referralErrSignIn": "Doʻstingiz kodini faollashtirish uchun e-pochtangiz bilan kiring.",
-  "referralErrFull": "Bu kod foydalanish chegarasiga yetgan."
+  "referralErrFull": "Bu kod foydalanish chegarasiga yetgan.",
+  "portfolioGoalReachedBody": "Portfelingiz qiymati endi {value}."
 }

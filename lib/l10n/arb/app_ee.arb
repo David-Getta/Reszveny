@@ -843,5 +843,6 @@
   "tickerChangeHint": "Ne dɔwɔƒe aɖe trɔ eƒe ticker (abe FB → META ene): nuƒeƒle kple nudzadzra katã, dividendwo, share mamãwo, nuŋlɔɖi la kple nuxlɔ̃amewo katã ayi ticker yeye la dzi.",
   "tickerChanged": "Wotsɔe yi {symbol} dzi",
   "referralErrSignIn": "Ge ɖe eme kple wò e-mail be nàte ŋu azã xɔ̃wò ƒe code.",
-  "referralErrFull": "Wozã code sia zi gbogbo si wòɖe mɔ ɖo xoxo."
+  "referralErrFull": "Wozã code sia zi gbogbo si wòɖe mɔ ɖo xoxo.",
+  "portfolioGoalReachedBody": "Fifia la, wò akpawo ƒe asi nye {value}."
 }

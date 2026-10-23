@@ -843,5 +843,6 @@
   "tickerChangeHint": "Mi ara tbeddel tkebbanit azamul-is (amedya FB → META): akk tiɣin d uznuzu, dividendes, beṭṭu n yimuren, tazmilt d yilɣa ad ddun ɣer uzamul amaynut.",
   "tickerChanged": "Yettwasmutti ɣer {symbol}",
   "referralErrSignIn": "Kcem s imayl-ik akken ad tesqedceḍ tangalt n umdakel.",
-  "referralErrFull": "Tangalt-a tewweḍ yakan ɣer tlisa n useqdec-is."
+  "referralErrFull": "Tangalt-a tewweḍ yakan ɣer tlisa n useqdec-is.",
+  "portfolioGoalReachedBody": "Tura, azal n uqrab-ik d {value}."
 }

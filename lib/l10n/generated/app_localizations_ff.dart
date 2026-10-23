@@ -2828,6 +2828,11 @@ class AppLocalizationsFf extends AppLocalizations {
       'Ndee kod huutoraama gila law laabi keewɗi ɗi nde waawi.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Jooni, njaru aksiyoŋ maa ko $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

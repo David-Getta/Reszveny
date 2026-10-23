@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.252)
+# Változásjegyzék (0.2.130 → 0.2.253)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -269,6 +269,19 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - **0.2.251–0.2.252**: az ajánlói kód új hibaüzenetei (belépés kell, a kód betelt) 120 nyelven; böngészős fizetésnél
   élő előfizetés mellett a csomagváltás a Stripe portálon nyílik meg (nem indul második előfizetés), és az app figyeli,
   mikor érvényes az új csomag.
+- **0.2.253** (szerver-biztonság, második átnézés): a kérés törzse útvonalanként korlátos (1 MB, a képes AI-kéréseknél
+  8 MB, megosztásnál 2 MB), darabolt küldésnél is; új névtelen fiók IP-címenként óránként legfeljebb 20; a piaci proxy
+  csak az app által használt Finnhub-végpontokat engedi, felhasználónként korlátos, időkorláttal, és az árfolyamot 30
+  másodpercig közösen tárolja; az AI-kérésből csak az ismert mezők mennek tovább (más modellre váltó `fallbacks`,
+  hosszabb gyorsítótár nem); a segédhívás próbaidőben az olcsóbb modellel és kisebb napi kerettel megy, nagy kimenetet
+  csak egy friss elemzés javítása kérhet; a telemetria csak ismert platformot és szabályos verziót fogad, napi
+  korláttal; megosztani csak jogosultsággal lehet; a hibás admin-kulcs és meghívókód IP-címenként korlátozott.
+
+## Portfólió-cél értesítés
+
+- **0.2.253**: amikor a portfólió összértéke eléri a kitűzött célt, egyszer asztali értesítés jön („10 000 000 Ft-os
+  cél elérve · A portfóliód most 10 250 000 Ft értékű”); új célnál újra, hétvégén is (a napi mozgás-riasztástól
+  függetlenül).
 
 ## Bolti „Újdonságok” (rövid)
 

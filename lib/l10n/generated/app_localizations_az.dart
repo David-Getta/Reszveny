@@ -2832,6 +2832,11 @@ class AppLocalizationsAz extends AppLocalizations {
   String get referralErrFull => 'Bu kod artıq maksimum sayda aktivləşdirilib.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Portfelinizin dəyəri indi $value təşkil edir.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hədəf təyin et';
 
   @override

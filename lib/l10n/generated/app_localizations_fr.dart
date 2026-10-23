@@ -2844,6 +2844,11 @@ class AppLocalizationsFr extends AppLocalizations {
       'Ce code a déjà été utilisé le nombre maximal de fois.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Votre portefeuille vaut désormais $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Définir un objectif';
 
   @override

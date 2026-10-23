@@ -2833,6 +2833,11 @@ class AppLocalizationsFi extends AppLocalizations {
       'Tämä koodi on jo lunastettu niin monta kertaa kuin mahdollista.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Salkkusi arvo on nyt $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

@@ -2831,6 +2831,11 @@ class AppLocalizationsUr extends AppLocalizations {
       'یہ کوڈ پہلے ہی زیادہ سے زیادہ بار استعمال ہو چکا ہے۔';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'آپ کے پورٹ فولیو کی مالیت اب $value ہے۔';
+  }
+
+  @override
   String get portfolioGoalSet => 'ہدف مقرر کریں';
 
   @override

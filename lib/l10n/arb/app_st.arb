@@ -843,5 +843,6 @@
   "tickerChangeHint": "Ha khampani e fetola ticker ya yona (mohl. FB → META): ditheko le dithekiso tsohle, dividende, dikarohano tsa dishere, ntlha le ditsebiso di fallisetswa ho ticker e ntjha.",
   "tickerChanged": "E fallisetswe ho {symbol}",
   "referralErrSignIn": "Kena ka imeile ya hao hore o sebedise khoutu ya motswalle.",
-  "referralErrFull": "Khoutu ena e se e sebedisitswe ka makgetlo ohle a dumeletsweng."
+  "referralErrFull": "Khoutu ena e se e sebedisitswe ka makgetlo ohle a dumeletsweng.",
+  "portfolioGoalReachedBody": "Boleng ba potefolio ya hao jwale ke {value}."
 }

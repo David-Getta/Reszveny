@@ -843,5 +843,6 @@
   "tickerChangeHint": "Uma inkampani ishintsha i-ticker yayo (isb. FB → META): konke ukuthenga nokuthengisa, izabelo zenzuzo, ukuhlukaniswa kwamasheya, inothi nezexwayiso kudluliselwa ku-ticker entsha.",
   "tickerChanged": "Kudluliselwe ku-{symbol}",
   "referralErrSignIn": "Ngena ngemvume nge-imeyili yakho ukuze usebenzise ikhodi yomngane.",
-  "referralErrFull": "Le khodi isivele isetshenziswe izikhathi zonke ezivumelekile."
+  "referralErrFull": "Le khodi isivele isetshenziswe izikhathi zonke ezivumelekile.",
+  "portfolioGoalReachedBody": "Inani lephothifoliyo yakho manje lingu-{value}."
 }

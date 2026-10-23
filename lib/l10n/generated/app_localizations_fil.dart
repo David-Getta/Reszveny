@@ -2840,6 +2840,11 @@ class AppLocalizationsFil extends AppLocalizations {
       'Naabot na ng code na ito ang maximum na bilang ng pag-redeem.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Nagkakahalaga na ng $value ang portfolio mo.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

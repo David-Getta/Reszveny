@@ -2853,6 +2853,11 @@ class AppLocalizationsMg extends AppLocalizations {
       'Efa tratra ny fetran\'ny fampiasana ity kaody ity.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Ny sandan\'ny kitapom-bolanao izao dia $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

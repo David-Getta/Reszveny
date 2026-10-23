@@ -568,7 +568,12 @@ void main() {
     };
 
     test('is sanitised: server model, capped tokens and effort, no tools', () async {
-      final token = (await call('POST', '/v1/auth/anonymous'))['body']['token'] as String;
+      final anon = (await call('POST', '/v1/auth/anonymous'))['body'] as Map;
+      final token = anon['token'] as String;
+      // Fizetős felhasználó egy friss elemzés után (formátumjavítás): a teljes kimenet.
+      store
+        ..save(store.entitlement(anon['user_id'] as String)..tier = 'pro')
+        ..logUsage(anon['user_id'] as String, 'AAPL', 1, 1);
       final r = await call(
         'POST',
         '/v1/anthropic/v1/messages',
@@ -598,6 +603,12 @@ void main() {
       await call('POST', '/v1/anthropic/v1/messages', token: token, body: recognition());
       expect(lastUpstream!['max_tokens'], 4096);
       expect((lastUpstream!['messages'] as List).single['content'], hasLength(2));
+
+      // Próbaidőben az olcsóbb modell, és friss elemzés nélkül kis kimenet.
+      final trial = (await call('POST', '/v1/auth/anonymous'))['body']['token'] as String;
+      await call('POST', '/v1/anthropic/v1/messages', token: trial, body: {...recognition(), 'max_tokens': 64000});
+      expect(lastUpstream!['model'], api.trialModel);
+      expect(lastUpstream!['max_tokens'], Api.helperSmallMaxTokens);
     });
 
     test('rejects unusual requests', () async {
@@ -635,8 +646,14 @@ void main() {
     });
 
     test('is rate limited per user per hour and per day', () async {
-      final token = (await call('POST', '/v1/auth/anonymous'))['body']['token'] as String;
-      final other = (await call('POST', '/v1/auth/anonymous'))['body']['token'] as String;
+      Future<String> paid() async {
+        final b = (await call('POST', '/v1/auth/anonymous'))['body'] as Map;
+        store.save(store.entitlement(b['user_id'] as String)..tier = 'pro');
+        return b['token'] as String;
+      }
+
+      final token = await paid();
+      final other = await paid();
       Future<int> send(String t) async =>
           (await call('POST', '/v1/anthropic/v1/messages', token: t, body: recognition()))['status'] as int;
       for (var i = 0; i < Api.helperPerHour; i++) {

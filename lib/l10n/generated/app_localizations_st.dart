@@ -2850,6 +2850,11 @@ class AppLocalizationsSt extends AppLocalizations {
       'Khoutu ena e se e sebedisitswe ka makgetlo ohle a dumeletsweng.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Boleng ba potefolio ya hao jwale ke $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Beha sepheo';
 
   @override

@@ -2828,6 +2828,11 @@ class AppLocalizationsSi extends AppLocalizations {
   String get referralErrFull => 'මෙම කේතය දැනටමත් උපරිම වාර ගණනක් භාවිත කර ඇත.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'ඔබේ කළඹේ වටිනාකම දැන් $value වේ.';
+  }
+
+  @override
   String get portfolioGoalSet => 'ඉලක්කයක් සකසන්න';
 
   @override

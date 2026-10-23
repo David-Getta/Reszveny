@@ -2831,6 +2831,11 @@ class AppLocalizationsMn extends AppLocalizations {
   String get referralErrFull => 'Энэ кодыг ашиглах хязгаар дууссан байна.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Таны портфолионы үнэ цэнэ одоо $value боллоо.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

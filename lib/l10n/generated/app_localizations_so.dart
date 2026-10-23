@@ -2841,6 +2841,11 @@ class AppLocalizationsSo extends AppLocalizations {
       'Koodhkan waxaa horay loo isticmaalay inta ugu badan ee la oggol yahay.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Qiimaha portfoliyadaada hadda waa $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

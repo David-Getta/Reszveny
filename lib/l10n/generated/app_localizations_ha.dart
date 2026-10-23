@@ -2839,6 +2839,11 @@ class AppLocalizationsHa extends AppLocalizations {
       'An riga an yi amfani da wannan lambar iyakar adadin da aka yarda.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Ƙimar jakar hannun jarinka yanzu ta kai $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

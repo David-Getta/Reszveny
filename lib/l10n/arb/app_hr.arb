@@ -843,5 +843,6 @@
   "tickerChangeHint": "Kada tvrtka promijeni ticker (npr. FB → META): sve transakcije, dividende, podjele dionica, bilješka i obavijesti prelaze na novi.",
   "tickerChanged": "Premješteno na {symbol}",
   "referralErrSignIn": "Prijavite se e-poštom da biste iskoristili kôd prijatelja.",
-  "referralErrFull": "Ovaj je kôd već iskorišten najveći dopušteni broj puta."
+  "referralErrFull": "Ovaj je kôd već iskorišten najveći dopušteni broj puta.",
+  "portfolioGoalReachedBody": "Vaš portfelj sada vrijedi {value}."
 }

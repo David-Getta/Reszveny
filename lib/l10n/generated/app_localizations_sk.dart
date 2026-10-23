@@ -2907,6 +2907,11 @@ class AppLocalizationsSk extends AppLocalizations {
       'Tento kód už dosiahol maximálny počet uplatnení.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Vaše portfólio má teraz hodnotu $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastaviť cieľ';
 
   @override

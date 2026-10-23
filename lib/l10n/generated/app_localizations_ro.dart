@@ -2875,6 +2875,11 @@ class AppLocalizationsRo extends AppLocalizations {
       'Acest cod a fost deja folosit de numărul maxim de ori.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Portofoliul tău valorează acum $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

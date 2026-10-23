@@ -2843,6 +2843,11 @@ class AppLocalizationsEl extends AppLocalizations {
       'Αυτός ο κωδικός έχει ήδη εξαργυρωθεί τον μέγιστο αριθμό φορών.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Το χαρτοφυλάκιό σας αξίζει πλέον $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

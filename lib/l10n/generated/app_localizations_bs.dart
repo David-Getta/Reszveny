@@ -2880,6 +2880,11 @@ class AppLocalizationsBs extends AppLocalizations {
       'Ovaj kod je već iskorišten najveći dozvoljeni broj puta.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Vaš portfolio sada vrijedi $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Postavi cilj';
 
   @override

@@ -2838,6 +2838,11 @@ class AppLocalizationsNl extends AppLocalizations {
       'Deze code is al het maximale aantal keren ingewisseld.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Je portefeuille is nu $value waard.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Doel instellen';
 
   @override

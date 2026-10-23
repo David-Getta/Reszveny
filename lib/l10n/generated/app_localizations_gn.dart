@@ -2838,6 +2838,11 @@ class AppLocalizationsGn extends AppLocalizations {
   String get referralErrFull => 'Ko código ojeporúma opaite jey ikatuháicha.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Koʼág̃a nde cartera hepykue $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';
 
   @override

@@ -843,5 +843,6 @@
   "tickerChangeHint": "Sɛ adwumakuo bi sesa ne ticker a (sɛ nhwɛso, FB → META): adetɔ ne adetɔn nyinaa, dividend, share nkyekyɛmu, nkyerɛwee no ne kɔkɔbɔ no nyinaa tu kɔ foforo no so.",
   "tickerChanged": "Wɔatu akɔ {symbol} so",
   "referralErrSignIn": "Fa wo email wura mu na woatumi de wo damfo bi code adi dwuma.",
-  "referralErrFull": "Wɔde code yi adi dwuma mpɛn dodow a wɔma ho kwan no dedaw."
+  "referralErrFull": "Wɔde code yi adi dwuma mpɛn dodow a wɔma ho kwan no dedaw.",
+  "portfolioGoalReachedBody": "Seesei wo nkyɛfa bo yɛ {value}."
 }

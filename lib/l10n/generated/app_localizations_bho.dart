@@ -2825,6 +2825,11 @@ class AppLocalizationsBho extends AppLocalizations {
   String get referralErrFull => 'ई कोड पहिलहीं अधिकतम बेर भुनावल जा चुकल बा।';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'अब राउर पोर्टफ़ोलियो के मूल्य $value बा।';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करीं';
 
   @override

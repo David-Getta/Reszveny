@@ -2844,6 +2844,11 @@ class AppLocalizationsMl extends AppLocalizations {
       'ഈ കോഡ് ഇതിനകം പരമാവധി തവണ റിഡീം ചെയ്തുകഴിഞ്ഞു.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'നിങ്ങളുടെ പോർട്ട്ഫോളിയോയുടെ മൂല്യം ഇപ്പോൾ $value ആണ്.';
+  }
+
+  @override
   String get portfolioGoalSet => 'ലക്ഷ്യം സജ്ജമാക്കുക';
 
   @override

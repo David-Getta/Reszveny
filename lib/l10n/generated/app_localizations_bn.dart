@@ -2830,6 +2830,11 @@ class AppLocalizationsBn extends AppLocalizations {
       'এই কোডটি ইতিমধ্যে সর্বোচ্চ সংখ্যকবার রিডিম করা হয়েছে।';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'আপনার পোর্টফোলিওর মূল্য এখন $value।';
+  }
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য ঠিক করুন';
 
   @override

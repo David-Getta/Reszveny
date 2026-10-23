@@ -2909,6 +2909,11 @@ class AppLocalizationsSl extends AppLocalizations {
       'Ta koda je dosegla največje število unovčitev.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Vaš portfelj je zdaj vreden $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastavi cilj';
 
   @override

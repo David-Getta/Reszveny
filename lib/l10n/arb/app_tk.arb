@@ -843,5 +843,6 @@
   "tickerChangeHint": "Kompaniýa tikerini üýtgedende (meselem, FB → META): ähli amallar, diwidendler, paýnama bölünişleri, bellik we duýduryşlar täze tikere geçirilýär.",
   "tickerChanged": "{symbol} tikerine geçirildi",
   "referralErrSignIn": "Dostuňyň koduny ulanmak üçin e-poçtaň bilen gir.",
-  "referralErrFull": "Bu kody ulanmagyň çägi doldy."
+  "referralErrFull": "Bu kody ulanmagyň çägi doldy.",
+  "portfolioGoalReachedBody": "Portfeliňiziň gymmaty indi {value} boldy."
 }

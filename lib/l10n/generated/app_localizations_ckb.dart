@@ -2834,6 +2834,11 @@ class AppLocalizationsCkb extends AppLocalizations {
       'ئەم کۆدە پێشتر بە زۆرترین ژمارەی ڕێگەپێدراو بەکارهاتووە.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'ئێستا بەهای پۆرتفۆلیۆکەت گەیشتە $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

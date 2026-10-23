@@ -843,5 +843,6 @@
   "tickerChangeHint": "Když společnost změní svůj ticker (např. FB → META): všechny transakce, dividendy, štěpení akcií, poznámka i upozornění se přesunou na nový.",
   "tickerChanged": "Přesunuto na {symbol}",
   "referralErrSignIn": "Pro uplatnění kódu od přítele se přihlaste e-mailem.",
-  "referralErrFull": "Tento kód už dosáhl maximálního počtu uplatnění."
+  "referralErrFull": "Tento kód už dosáhl maximálního počtu uplatnění.",
+  "portfolioGoalReachedBody": "Vaše portfolio má nyní hodnotu {value}."
 }

@@ -843,5 +843,6 @@
   "tickerChangeHint": "Cuando una empresa cambia de ticker (p. ej. FB → META): todas las transacciones, los dividendos, los splits de acciones, la nota y las alertas pasan al nuevo.",
   "tickerChanged": "Trasladado a {symbol}",
   "referralErrSignIn": "Inicia sesión con tu correo para canjear el código de un amigo.",
-  "referralErrFull": "Este código ya se ha canjeado el máximo de veces posible."
+  "referralErrFull": "Este código ya se ha canjeado el máximo de veces posible.",
+  "portfolioGoalReachedBody": "Tu cartera ya vale {value}."
 }

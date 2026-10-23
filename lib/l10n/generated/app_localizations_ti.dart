@@ -2792,6 +2792,11 @@ class AppLocalizationsTi extends AppLocalizations {
   String get referralErrFull => 'እዚ ኮድ ድሮ ክሳብ ዝተፈቕደሉ ብዝሒ ተጠቒሙ እዩ።';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'ዋጋ ፖርትፎሊዮኹም ሕጂ $value በጺሑ ኣሎ።';
+  }
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

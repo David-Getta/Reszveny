@@ -28,6 +28,37 @@ void main() {
     currency: 'USD',
   );
 
+  test(
+    'the portfolio goal: one notification when reached (also without the move alert), again for a new goal',
+    () async {
+      final p = store();
+      final prefs = AppPreferences(portfolioGoal: (amount: 2100, currency: 'USD'));
+      final notifier = FakeNotifier();
+      var change = {'AAPL': 0.0, 'NVDA': 0.0};
+      final w = PortfolioMoveWatcher(
+        portfolio: p,
+        preferences: prefs,
+        notifier: notifier,
+        snapshot: () async => snap(p, change),
+        describe: (s) => (title: 'move', body: ''),
+        describeGoal: (s, g) => (title: 'goal ${g.amount}', body: 'value ${s.totalValue}'),
+        clock: () => DateTime(2026, 10, 17, 10), // szombat: a mozgást nem nézi, a célt igen
+      );
+      expect(await w.check(), isFalse, reason: '2000 < 2100');
+      change = {'AAPL': 6.0, 'NVDA': 5.0};
+      expect(await w.check(), isTrue);
+      expect((notifier.sent.single.id, notifier.sent.single.title), ('portfolio-goal', 'goal 2100.0'));
+      expect(notifier.sent.single.body, 'value 2110.0');
+      expect(await w.check(), isFalse, reason: 'célonként egyszer');
+      // Más pénznemű cél nem számolható össze: nem szól.
+      await prefs.setPortfolioGoal((amount: 100, currency: 'EUR'));
+      expect(await w.check(), isFalse);
+      await prefs.setPortfolioGoal((amount: 2050, currency: 'USD'));
+      expect(await w.check(), isTrue, reason: 'új cél');
+      expect(notifier.sent, hasLength(2));
+    },
+  );
+
   test('notifies once a day above the threshold, not on weekends, not twice for the same move', () async {
     final p = store();
     final prefs = AppPreferences(portfolioMoveAlert: 3);

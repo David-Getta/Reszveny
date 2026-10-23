@@ -2853,6 +2853,11 @@ class AppLocalizationsIlo extends AppLocalizations {
       'Nausaren daytoy a kodigo iti kaadu a maipalubos.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Ti pateg ti portfoliom ita ket $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

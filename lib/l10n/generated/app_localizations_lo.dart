@@ -2803,6 +2803,11 @@ class AppLocalizationsLo extends AppLocalizations {
   String get referralErrFull => 'ລະຫັດນີ້ຖືກໃຊ້ຄົບຈຳນວນສູງສຸດແລ້ວ';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'ຕອນນີ້ພອດໂຟລິໂອຂອງທ່ານມີມູນຄ່າ $value ແລ້ວ';
+  }
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

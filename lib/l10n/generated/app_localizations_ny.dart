@@ -2843,6 +2843,11 @@ class AppLocalizationsNy extends AppLocalizations {
       'Khodi iyi yagwiritsidwa kale ntchito nthawi zonse zololedwa.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Mtengo wa masheya anu tsopano ndi $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

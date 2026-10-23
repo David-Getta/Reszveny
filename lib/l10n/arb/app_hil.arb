@@ -843,5 +843,6 @@
   "tickerChangeHint": "Kon baguhon sang kompanya ang ticker sini (pananglitan FB → META): ang tanan nga transaksyon, dibidendo, stock split, ang nota kag ang mga alerto mabalhin sa bag-o.",
   "tickerChanged": "Ginbalhin sa {symbol}",
   "referralErrSignIn": "Mag-sign in gamit ang imo e-mail para magamit ang code sang imo abyan.",
-  "referralErrFull": "Nagamit na ini nga code sa pinakamadamo nga beses nga ginatugot."
+  "referralErrFull": "Nagamit na ini nga code sa pinakamadamo nga beses nga ginatugot.",
+  "portfolioGoalReachedBody": "Ang bili sang imo portfolio subong {value} na."
 }

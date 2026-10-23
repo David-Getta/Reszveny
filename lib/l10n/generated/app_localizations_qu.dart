@@ -2847,6 +2847,11 @@ class AppLocalizationsQu extends AppLocalizations {
       'Kay kódigoqa ñam llamk\'achisqaña tukuy atikusqan kutikama.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Portafolioykiqa kunan $value chaniyuqña.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

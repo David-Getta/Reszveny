@@ -2843,6 +2843,11 @@ class AppLocalizationsKg extends AppLocalizations {
       'Bo me sadila dezia code yai mbala yonso ya bo me pesa nzila.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Ntangu yai, ntalu ya portefeuille na nge kele $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

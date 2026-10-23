@@ -2837,6 +2837,11 @@ class AppLocalizationsHu extends AppLocalizations {
       'Ezt a kódot már annyiszor beváltották, ahányszor lehet.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'A portfóliód most $value értékű.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

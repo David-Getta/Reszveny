@@ -2838,6 +2838,11 @@ class AppLocalizationsSq extends AppLocalizations {
       'Ky kod është aktivizuar tashmë numrin maksimal të herëve.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Portofoli juaj tani vlen $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

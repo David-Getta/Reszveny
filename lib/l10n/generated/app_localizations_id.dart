@@ -2827,6 +2827,11 @@ class AppLocalizationsId extends AppLocalizations {
       'Kode ini sudah ditukarkan sebanyak batas maksimum.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Nilai portofolio Anda kini $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tetapkan target';
 
   @override

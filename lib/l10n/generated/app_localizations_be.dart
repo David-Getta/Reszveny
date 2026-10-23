@@ -2907,6 +2907,11 @@ class AppLocalizationsBe extends AppLocalizations {
       'Гэты код ужо актываваны максімальную колькасць разоў.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Вартасць вашага партфеля цяпер складае $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задаць мэту';
 
   @override

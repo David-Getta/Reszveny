@@ -2822,6 +2822,11 @@ class AppLocalizationsSd extends AppLocalizations {
       'هي ڪوڊ اڳ ۾ ئي وڌ کان وڌ ڀيرا استعمال ٿي چڪو آهي.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'توهان جي پورٽ فوليو جو قدر هاڻي $value آهي.';
+  }
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

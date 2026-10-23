@@ -843,5 +843,6 @@
   "tickerChangeHint": "Xa inkampani itshintsha i-ticker yayo (umz. FB → META): zonke iintengiselwano, izahlulo, ukwahlulwa kwezabelo, inqaku nezilumkiso zifuduselwa kwi-ticker entsha.",
   "tickerChanged": "Kufuduselwe ku-{symbol}",
   "referralErrSignIn": "Ngena nge-imeyile yakho ukuze usebenzise ikhowudi yomhlobo.",
-  "referralErrFull": "Le khowudi sele isetyenziswe amaxesha onke avumelekileyo."
+  "referralErrFull": "Le khowudi sele isetyenziswe amaxesha onke avumelekileyo.",
+  "portfolioGoalReachedBody": "Ipotifoliyo yakho ngoku ixabisa {value}."
 }

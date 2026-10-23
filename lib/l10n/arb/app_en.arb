@@ -2496,6 +2496,16 @@
   "@referralErrFull": {
     "description": "Error when a referral (or tester) code has reached its maximum number of redemptions."
   },
+  "portfolioGoalReachedBody": "Your portfolio is now worth {value}.",
+  "@portfolioGoalReachedBody": {
+    "description": "Body of the desktop notification sent once when the portfolio's total value reaches the goal the user set; the title is \"Goal of {amount} reached\".",
+    "placeholders": {
+      "value": {
+        "type": "String",
+        "example": "10,250,000 HUF"
+      }
+    }
+  },
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

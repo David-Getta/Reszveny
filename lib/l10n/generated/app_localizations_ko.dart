@@ -2755,6 +2755,11 @@ class AppLocalizationsKo extends AppLocalizations {
   String get referralErrFull => '이 코드는 사용 가능 횟수를 모두 소진했습니다.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return '포트폴리오 평가액이 이제 $value입니다.';
+  }
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

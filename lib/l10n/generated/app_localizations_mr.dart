@@ -2829,6 +2829,11 @@ class AppLocalizationsMr extends AppLocalizations {
   String get referralErrFull => 'हा कोड आधीच कमाल वेळा रिडीम झाला आहे.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'तुमच्या पोर्टफोलिओचे मूल्य आता $value आहे.';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य ठरवा';
 
   @override

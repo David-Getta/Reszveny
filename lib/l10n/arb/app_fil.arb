@@ -843,5 +843,6 @@
   "tickerChangeHint": "Kapag pinalitan ng kumpanya ang ticker nito (hal. FB → META): lahat ng transaksyon, dibidendo, stock split, ang tala at ang mga alerto ay ililipat sa bago.",
   "tickerChanged": "Inilipat sa {symbol}",
   "referralErrSignIn": "Mag-sign in gamit ang iyong email para i-redeem ang code ng kaibigan.",
-  "referralErrFull": "Naabot na ng code na ito ang maximum na bilang ng pag-redeem."
+  "referralErrFull": "Naabot na ng code na ito ang maximum na bilang ng pag-redeem.",
+  "portfolioGoalReachedBody": "Nagkakahalaga na ng {value} ang portfolio mo."
 }

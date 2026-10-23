@@ -2831,6 +2831,11 @@ class AppLocalizationsTr extends AppLocalizations {
   String get referralErrFull => 'Bu kod kullanım sınırına ulaştı.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Portföyünüzün değeri artık $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hedef belirle';
 
   @override

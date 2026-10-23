@@ -2825,6 +2825,11 @@ class AppLocalizationsHe extends AppLocalizations {
   String get referralErrFull => 'הקוד הזה כבר מומש את מספר הפעמים המרבי.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'שווי התיק שלך עומד כעת על $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'הגדרת יעד';
 
   @override

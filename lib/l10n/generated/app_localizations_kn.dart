@@ -2838,6 +2838,11 @@ class AppLocalizationsKn extends AppLocalizations {
       'ಈ ಕೋಡ್ ಅನ್ನು ಈಗಾಗಲೇ ಗರಿಷ್ಠ ಬಾರಿ ರಿಡೀಮ್ ಮಾಡಲಾಗಿದೆ.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'ನಿಮ್ಮ ಪೋರ್ಟ್‌ಫೋಲಿಯೊದ ಮೌಲ್ಯ ಈಗ $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

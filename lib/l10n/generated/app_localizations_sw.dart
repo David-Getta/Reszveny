@@ -2834,6 +2834,11 @@ class AppLocalizationsSw extends AppLocalizations {
       'Msimbo huu tayari umetumika mara nyingi kadiri inavyoruhusiwa.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Thamani ya jalada lako la hisa sasa ni $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

@@ -2844,6 +2844,11 @@ class AppLocalizationsCeb extends AppLocalizations {
       'Naabot na niini nga code ang kinatas-ang gidaghanon sa pag-redeem.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Nagkantidad na og $value ang imong portfolio karon.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

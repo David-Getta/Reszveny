@@ -2838,6 +2838,11 @@ class AppLocalizationsEs extends AppLocalizations {
       'Este código ya se ha canjeado el máximo de veces posible.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Tu cartera ya vale $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Fijar un objetivo';
 
   @override

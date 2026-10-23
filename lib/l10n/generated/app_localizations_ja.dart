@@ -2745,6 +2745,11 @@ class AppLocalizationsJa extends AppLocalizations {
   String get referralErrFull => 'このコードは使用回数の上限に達しています。';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'ポートフォリオの評価額が$valueになりました。';
+  }
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override

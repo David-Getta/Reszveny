@@ -2849,6 +2849,11 @@ class AppLocalizationsLg extends AppLocalizations {
       'Koodi eno ekozeseddwa dda emirundi gyonna egikkirizibwa.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Omuwendo gw\'emigabo gyo kati guli $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

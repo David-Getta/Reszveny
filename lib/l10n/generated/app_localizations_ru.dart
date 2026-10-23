@@ -2909,6 +2909,11 @@ class AppLocalizationsRu extends AppLocalizations {
       'Этот код уже активирован максимальное число раз.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Ваш портфель теперь стоит $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задать цель';
 
   @override

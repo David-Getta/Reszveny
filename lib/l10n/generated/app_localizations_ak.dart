@@ -2834,6 +2834,11 @@ class AppLocalizationsAk extends AppLocalizations {
       'Wɔde code yi adi dwuma mpɛn dodow a wɔma ho kwan no dedaw.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Seesei wo nkyɛfa bo yɛ $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';
 
   @override

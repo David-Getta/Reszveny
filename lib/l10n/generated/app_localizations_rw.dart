@@ -2846,6 +2846,11 @@ class AppLocalizationsRw extends AppLocalizations {
       'Iyi kode yamaze gukoreshwa inshuro zose zemewe.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Ishoramari ryawe ubu rifite agaciro ka $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Shyiraho intego';
 
   @override

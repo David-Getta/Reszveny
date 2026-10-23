@@ -2847,6 +2847,11 @@ class AppLocalizationsLn extends AppLocalizations {
       'Code oyo esalelami esili mbala nyonso oyo epesameli nzela.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Sikoyo, motuya ya portefeuille na yo ezali $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

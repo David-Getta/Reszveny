@@ -843,5 +843,6 @@
   "tickerChangeHint": "አንድ ኩባንያ ምልክቱን ሲቀይር (ለምሳሌ FB → META)፦ ሁሉም ግብይቶች፣ የትርፍ ድርሻዎች፣ የአክሲዮን ክፍፍሎች፣ ማስታወሻው እና ማንቂያዎቹ ወደ አዲሱ ምልክት ይዛወራሉ።",
   "tickerChanged": "ወደ {symbol} ተዛውሯል",
   "referralErrSignIn": "የጓደኛን ኮድ ለመጠቀም በኢሜይልዎ ይግቡ።",
-  "referralErrFull": "ይህ ኮድ የሚፈቀደውን ያህል ጊዜ ጥቅም ላይ ውሏል።"
+  "referralErrFull": "ይህ ኮድ የሚፈቀደውን ያህል ጊዜ ጥቅም ላይ ውሏል።",
+  "portfolioGoalReachedBody": "ፖርትፎሊዮዎ አሁን {value} ዋጋ አለው።"
 }

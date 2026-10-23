@@ -2845,6 +2845,11 @@ class AppLocalizationsXh extends AppLocalizations {
       'Le khowudi sele isetyenziswe amaxesha onke avumelekileyo.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Ipotifoliyo yakho ngoku ixabisa $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

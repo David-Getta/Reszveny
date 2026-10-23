@@ -2809,6 +2809,11 @@ class AppLocalizationsKm extends AppLocalizations {
   String get referralErrFull => 'កូដនេះត្រូវបានប្រើអស់ចំនួនដងអតិបរមារួចហើយ។';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'ឥឡូវនេះ ផលប័ត្ររបស់អ្នកមានតម្លៃ $value។';
+  }
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

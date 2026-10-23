@@ -2834,6 +2834,11 @@ class AppLocalizationsSu extends AppLocalizations {
       'Kode ieu geus ditukeurkeun nepi ka wates maksimal.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Nilai portofolio anjeun ayeuna $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setél target';
 
   @override

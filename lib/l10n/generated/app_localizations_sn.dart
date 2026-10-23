@@ -2841,6 +2841,11 @@ class AppLocalizationsSn extends AppLocalizations {
       'Kodhi iyi yatoshandiswa nguva dzose dzinobvumirwa.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Potiforiyo yako yava kukosha $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Isa chinangwa';
 
   @override

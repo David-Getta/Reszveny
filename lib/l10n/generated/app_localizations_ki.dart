@@ -2834,6 +2834,11 @@ class AppLocalizationsKi extends AppLocalizations {
       'Kodi ĩno nĩ yahũthĩrwo maita mothe marĩa yetĩkĩrĩtio.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Thogora wa hisa ciaku rĩu nĩ $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

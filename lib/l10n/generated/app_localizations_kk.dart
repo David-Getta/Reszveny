@@ -2830,6 +2830,11 @@ class AppLocalizationsKk extends AppLocalizations {
   String get referralErrFull => 'Бұл код қолдану шегіне жетті.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Портфеліңіздің құны енді $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Мақсат қою';
 
   @override

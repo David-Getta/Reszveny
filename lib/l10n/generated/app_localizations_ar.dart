@@ -2903,6 +2903,11 @@ class AppLocalizationsAr extends AppLocalizations {
   String get referralErrFull => 'بلغ هذا الرمز الحد الأقصى لعدد مرات التفعيل.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'تبلغ قيمة محفظتك الآن $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'تحديد هدف';
 
   @override

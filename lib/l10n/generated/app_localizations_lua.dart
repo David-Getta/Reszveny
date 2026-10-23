@@ -2844,6 +2844,11 @@ class AppLocalizationsLua extends AppLocalizations {
       'Bakadi bamane kuenza nadi code eu misangu yonso idi yanyishibue.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Mpindieu, mushinga wa portefeuille webe udi $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

@@ -2828,6 +2828,11 @@ class AppLocalizationsTt extends AppLocalizations {
   String get referralErrFull => 'Бу код куллану чигенә җитте.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Портфелегезнең кыйммәте хәзер $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Максат кую';
 
   @override

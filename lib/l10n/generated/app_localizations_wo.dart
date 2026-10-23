@@ -2824,6 +2824,11 @@ class AppLocalizationsWo extends AppLocalizations {
       'Kood bii jëfandikoo nañu ko ba mu àgg ci yamu bi.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Léegi, njëgu sa aksiyoŋ yi tollu na ci $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

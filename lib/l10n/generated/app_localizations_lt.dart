@@ -2907,6 +2907,11 @@ class AppLocalizationsLt extends AppLocalizations {
       'Šis kodas jau panaudotas didžiausią leistiną kartų skaičių.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Jūsų portfelio vertė dabar – $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nustatyti tikslą';
 
   @override

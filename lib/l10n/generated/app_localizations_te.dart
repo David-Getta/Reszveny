@@ -2838,6 +2838,11 @@ class AppLocalizationsTe extends AppLocalizations {
       'ఈ కోడ్ ఇప్పటికే గరిష్ఠ సార్లు రీడీమ్ చేయబడింది.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'మీ పోర్ట్‌ఫోలియో విలువ ఇప్పుడు $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

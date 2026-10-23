@@ -2823,6 +2823,11 @@ class AppLocalizationsPs extends AppLocalizations {
   String get referralErrFull => 'دا کوډ دمخه په اعظمي شمېر کارول شوی دی.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'ستاسو د پورټفولیو ارزښت اوس $value دی.';
+  }
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

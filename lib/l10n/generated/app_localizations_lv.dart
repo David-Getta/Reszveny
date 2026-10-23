@@ -2878,6 +2878,11 @@ class AppLocalizationsLv extends AppLocalizations {
       'Šis kods jau izmantots maksimālo reižu skaitu.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Jūsu portfeļa vērtība tagad ir $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

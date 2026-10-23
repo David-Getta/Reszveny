@@ -2852,6 +2852,11 @@ class AppLocalizationsTn extends AppLocalizations {
       'Khoutu e e setse e dirisitswe makgetlo otlhe a a letleletsweng.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Boleng jwa potefolio ya gago jaanong ke $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Baya maikaelelo';
 
   @override

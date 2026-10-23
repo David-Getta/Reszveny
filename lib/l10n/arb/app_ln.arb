@@ -843,5 +843,6 @@
   "tickerChangeHint": "Soki kompanyi ebongoli ticker na yango (ndakisa FB → META): bosombi mpe boteki nyonso, ba dividende, bokabolami ya ba share, note mpe makebisi ekokende na ticker ya sika.",
   "tickerChanged": "Etindami na {symbol}",
   "referralErrSignIn": "Kɔta na e-mail na yo mpo na kosalela code ya moninga.",
-  "referralErrFull": "Code oyo esalelami esili mbala nyonso oyo epesameli nzela."
+  "referralErrFull": "Code oyo esalelami esili mbala nyonso oyo epesameli nzela.",
+  "portfolioGoalReachedBody": "Sikoyo, motuya ya portefeuille na yo ezali {value}."
 }

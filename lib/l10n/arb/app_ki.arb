@@ -843,5 +843,6 @@
   "tickerChangeHint": "Kampuni ĩngĩgarũra ticker yayo (ta FB → META): ũgũri na ũendia wothe, mĩgai ya faida, ũgayanio wa share, ĩandĩko na imenyithia ciothe nĩ ithamagio ticker-inĩ ĩrĩa njerũ.",
   "tickerChanged": "Nĩ ithamĩirio harĩ {symbol}",
   "referralErrSignIn": "Toonya na e-mail yaku nĩguo ũhũthĩre kodi ya mũrata.",
-  "referralErrFull": "Kodi ĩno nĩ yahũthĩrwo maita mothe marĩa yetĩkĩrĩtio."
+  "referralErrFull": "Kodi ĩno nĩ yahũthĩrwo maita mothe marĩa yetĩkĩrĩtio.",
+  "portfolioGoalReachedBody": "Thogora wa hisa ciaku rĩu nĩ {value}."
 }

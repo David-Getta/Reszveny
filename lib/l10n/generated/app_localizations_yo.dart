@@ -2828,6 +2828,11 @@ class AppLocalizationsYo extends AppLocalizations {
       'Wọ́n ti lo kóòdù yìí dé iye ìgbà tó pọ̀ jù lọ tí a gbà láàyè.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Iye àpò ìdókòwò rẹ ti tó $value báyìí.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ṣètò àfojúsùn';
 
   @override

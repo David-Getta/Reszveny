@@ -2833,6 +2833,11 @@ class AppLocalizationsKy extends AppLocalizations {
   String get referralErrFull => 'Бул код колдонуу чегине жетти.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Портфелиңиздин наркы эми $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Максат коюу';
 
   @override

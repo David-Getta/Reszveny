@@ -8,6 +8,7 @@ import 'package:test/test.dart';
 import 'package:whatstock_server/src/api.dart';
 import 'package:whatstock_server/src/db.dart';
 import 'package:whatstock_server/src/invites.dart';
+import 'package:whatstock_server/src/plans.dart';
 import 'package:whatstock_server/src/mailer.dart';
 import 'package:whatstock_server/src/purchase_verifier.dart';
 import 'package:whatstock_server/src/stripe.dart';
@@ -49,7 +50,7 @@ void main() {
       upstreamCalls++;
       final g = gate;
       if (g != null) await g.future;
-      final b = jsonDecode(req.body) as Map;
+      final b = req.body.isEmpty ? const <String, Object?>{} : jsonDecode(req.body) as Map;
       betas.add(req.headers['anthropic-beta']);
       bodies.add(b);
       if (b['stream'] == true) {
@@ -451,6 +452,118 @@ void main() {
     await call('POST', '/v1/auth/email/start', body: {'email': 'victim@x.io'});
     final next = mailer.sent['victim@x.io']!;
     expect((await call('POST', '/v1/auth/email/verify', body: {'email': 'victim@x.io', 'code': next})).status, 200);
+  });
+
+  test('oversized bodies are refused before they are read, also without a length header', () async {
+    final big = await api.handler(
+      Request(
+        'POST',
+        Uri.parse('http://localhost/v1/auth/anonymous'),
+        headers: {'content-type': 'application/json', 'content-length': '${2 * 1024 * 1024}'},
+        body: 'x' * (2 * 1024 * 1024),
+      ),
+    );
+    expect(big.statusCode, 413);
+    final chunked = await api.handler(
+      Request(
+        'POST',
+        Uri.parse('http://localhost/v1/auth/anonymous'),
+        headers: {'content-type': 'application/json'},
+        body: Stream<List<int>>.fromIterable([for (var i = 0; i < 40; i++) List.filled(64 * 1024, 32)]),
+      ),
+    );
+    expect(chunked.statusCode, 413);
+    // Túl hosszú eszköz-azonosító nem tárolódik.
+    final r = await call('POST', '/v1/auth/anonymous', body: {'device_id': 'd' * 500});
+    final row = store.database.select('SELECT device_id FROM users WHERE id = ?', [r.body['user_id']]).single;
+    expect(row['device_id'], isNull);
+  });
+
+  test('new anonymous accounts are limited per address', () async {
+    var ok = 0;
+    for (var i = 0; i < Api.signupsPerIpPerHour + 3; i++) {
+      final r = await call('POST', '/v1/auth/anonymous', headers: {'x-forwarded-for': '203.0.113.50'});
+      if (r.status == 200) ok++;
+    }
+    expect(ok, Api.signupsPerIpPerHour);
+    expect((await call('POST', '/v1/auth/anonymous', headers: {'x-forwarded-for': '203.0.113.51'})).status, 200);
+  });
+
+  test('the market proxy serves only the endpoints the app uses, and caches quotes briefly', () async {
+    final (t, _) = await anon();
+    expect((await call('GET', '/v1/market/stock/insider-sentiment?symbol=AAPL', token: t)).status, 404);
+    expect((await call('GET', '/v1/market/crypto/candle?symbol=X', token: t)).status, 404);
+    final before = upstreamCalls;
+    expect((await call('GET', '/v1/market/quote?symbol=AAPL', token: t)).status, 200);
+    expect((await call('GET', '/v1/market/quote?symbol=aapl', token: t)).status, 200);
+    expect(upstreamCalls - before, 1, reason: '30 másodpercig a tárolt ár');
+    now = now.add(const Duration(seconds: 31));
+    await call('GET', '/v1/market/quote?symbol=AAPL', token: t);
+    expect(upstreamCalls - before, 2);
+  });
+
+  test('analysis requests keep only the fields the app uses', () {
+    final body = jsonDecode(
+      Api.limitRequest(
+        jsonEncode({
+          'max_tokens': 100,
+          'messages': [
+            {'role': 'user', 'content': 'AAPL'},
+          ],
+          'fallbacks': [
+            {'model': 'claude-opus-4-8', 'max_tokens': 128000},
+          ],
+          'cache_control': {'type': 'ephemeral', 'ttl': '1h'},
+          'inference_geo': 'us',
+          'tools': {'type': 'web_search'},
+          'output_config': {'effort': 'max'},
+        }),
+        depth: Depth.standard,
+        tier: 'pro',
+      )!,
+    ) as Map;
+    expect(body.keys, unorderedEquals(['model', 'max_tokens', 'messages', 'output_config']));
+    expect(body['output_config'], <String, Object?>{});
+  });
+
+  test('telemetry accepts known platforms and real version numbers only', () async {
+    final (t, _) = await anon();
+    await call(
+      'POST',
+      '/v1/telemetry',
+      token: t,
+      body: {
+        'platform': 'evil-platform',
+        'version': '<script>',
+        'events': {'paywall_view': 1},
+      },
+    );
+    await call(
+      'POST',
+      '/v1/telemetry',
+      token: t,
+      body: {
+        'platform': 'iOS',
+        'version': '0.2.253+256',
+        'events': {'paywall_view': 1},
+      },
+    );
+    final rows = store.database.select('SELECT DISTINCT platform, version FROM event_counts ORDER BY platform');
+    expect([for (final r in rows) '${r['platform']} ${r['version']}'], ['iOS 0.2.253+256', 'other other']);
+  });
+
+  test('sharing needs a plan, a live trial or extra analyses', () async {
+    api = build(trialPerIpPerDay: 1);
+    await anon(headers: {'x-forwarded-for': '203.0.113.60'});
+    final (t, _) = await anon(headers: {'x-forwarded-for': '203.0.113.60'});
+    final r = await call(
+      'POST',
+      '/v1/share',
+      token: t,
+      body: {'symbol': 'AAPL', 'name': 'Apple', 'language': 'en', 'summary': 'x'},
+    );
+    expect(r.status, anyOf(402, 400));
+    if (r.status == 400) fail('a megosztás tartalma itt nem számít: előbb a jogosultság');
   });
 }
 

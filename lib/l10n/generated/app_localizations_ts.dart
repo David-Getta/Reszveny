@@ -2855,6 +2855,11 @@ class AppLocalizationsTs extends AppLocalizations {
       'Khodi leyi yi tirhisiwile khale minkarhi hinkwayo leyi pfumeleriwaka.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Nkoka wa phothifoliyo ya wena sweswi i $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Veka xikongomelo';
 
   @override

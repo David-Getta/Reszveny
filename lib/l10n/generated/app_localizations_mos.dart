@@ -2815,6 +2815,11 @@ class AppLocalizationsMos extends AppLocalizations {
   String get referralErrFull => 'B tʋma ne kõod kãngã sor fãa b sẽn sak pĩnda.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Masã, f portfey yõodã yaa $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

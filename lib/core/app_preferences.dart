@@ -37,6 +37,7 @@ class AppPreferences extends ChangeNotifier {
     Map<String, DateTime> goalsAt = const {},
     Set<String> hiddenHome = const {},
     this.portfolioMoveNotified,
+    this.portfolioGoalNotified,
     List<WatchList> watchLists = const [],
     Map<String, double> targets = const {},
     Map<String, String> sorts = const {},
@@ -213,6 +214,7 @@ class AppPreferences extends ChangeNotifier {
   static const _morningBriefKey = 'morning_brief';
   static const _portfolioMoveKey = 'portfolio_move_alert';
   static const _portfolioMoveNotifiedKey = 'portfolio_move_notified';
+  static const _portfolioGoalNotifiedKey = 'portfolio_goal_notified';
   static const _targetsKey = 'portfolio_targets';
   static const _goalKey = 'portfolio_goal';
   static const _dividendGoalKey = 'dividend_goal';
@@ -505,6 +507,9 @@ class AppPreferences extends ChangeNotifier {
   /// naponta egyszer szóljon, és ugyanazt a mozgást ne jelezze újra.
   String? portfolioMoveNotified;
 
+  /// Melyik portfólió-célról (összeg|pénznem) ment már értesítés.
+  String? portfolioGoalNotified;
+
   /// A választható küszöbök a beállításokban.
   static const portfolioMoveSteps = [2.0, 3.0, 5.0];
 
@@ -600,6 +605,7 @@ class AppPreferences extends ChangeNotifier {
         goalsAt: parseGoalsAt(prefs.getString(_goalsAtKey)),
         hiddenHome: {...?prefs.getStringList(_hiddenHomeKey)},
         portfolioMoveNotified: prefs.getString(_portfolioMoveNotifiedKey),
+        portfolioGoalNotified: prefs.getString(_portfolioGoalNotifiedKey),
         watchLists: WatchList.parseAll(prefs.getString(_listsKey)),
         targets: parseTargets(prefs.getString(_targetsKey)),
         sorts: parseSorts(prefs.getString(_sortsKey)),
@@ -803,6 +809,11 @@ class AppPreferences extends ChangeNotifier {
   Future<void> setPortfolioMoveNotified(String value) async {
     portfolioMoveNotified = value;
     await _save((p) => p.setString(_portfolioMoveNotifiedKey, value));
+  }
+
+  Future<void> setPortfolioGoalNotified(String value) async {
+    portfolioGoalNotified = value;
+    await _save((p) => p.setString(_portfolioGoalNotifiedKey, value));
   }
 
   Future<void> setEarningsReminders(bool enabled) async {

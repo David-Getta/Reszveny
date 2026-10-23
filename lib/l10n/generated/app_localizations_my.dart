@@ -2824,6 +2824,11 @@ class AppLocalizationsMy extends AppLocalizations {
       'ဤကုဒ်ကို အများဆုံးအသုံးပြုနိုင်သည့် အကြိမ်အရေအတွက်အထိ အသုံးပြုပြီးဖြစ်သည်။';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'သင်၏ ပေါ့ဖိုလီယို တန်ဖိုးသည် ယခု $value ဖြစ်ပါပြီ။';
+  }
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

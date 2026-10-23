@@ -2831,6 +2831,11 @@ class AppLocalizationsKab extends AppLocalizations {
       'Tangalt-a tewweḍ yakan ɣer tlisa n useqdec-is.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Tura, azal n uqrab-ik d $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

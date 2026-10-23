@@ -2843,6 +2843,11 @@ class AppLocalizationsTa extends AppLocalizations {
       'இந்தக் குறியீடு ஏற்கனவே அதிகபட்ச முறை பயன்படுத்தப்பட்டுவிட்டது.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'உங்கள் போர்ட்ஃபோலியோவின் மதிப்பு இப்போது $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'இலக்கை அமை';
 
   @override

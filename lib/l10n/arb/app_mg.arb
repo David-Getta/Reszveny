@@ -843,5 +843,6 @@
   "tickerChangeHint": "Rehefa manova ny ticker-ny ny orinasa iray (oh. FB → META): afindra any amin'ny ticker vaovao avokoa ny fividianana sy fivarotana rehetra, ny dividandy, ny fizarana anjara, ny naoty ary ny fanairana.",
   "tickerChanged": "Nafindra any amin'ny {symbol}",
   "referralErrSignIn": "Midira amin'ny mailakao mba hampiasana kaodin'ny namana.",
-  "referralErrFull": "Efa tratra ny fetran'ny fampiasana ity kaody ity."
+  "referralErrFull": "Efa tratra ny fetran'ny fampiasana ity kaody ity.",
+  "portfolioGoalReachedBody": "Ny sandan'ny kitapom-bolanao izao dia {value}."
 }

@@ -2838,6 +2838,11 @@ class AppLocalizationsPt extends AppLocalizations {
       'Este código já foi resgatado o número máximo de vezes.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Sua carteira agora vale $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Definir meta';
 
   @override

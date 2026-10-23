@@ -2856,6 +2856,11 @@ class AppLocalizationsGl extends AppLocalizations {
       'Este código xa se canxeou o máximo de veces posible.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'A túa carteira xa vale $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Definir un obxectivo';
 
   @override

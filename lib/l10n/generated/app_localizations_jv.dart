@@ -2834,6 +2834,11 @@ class AppLocalizationsJv extends AppLocalizations {
       'Kodhe iki wis ditukarake nganti watesan maksimal.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Nilai portofolio sampeyan saiki $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setel target';
 
   @override

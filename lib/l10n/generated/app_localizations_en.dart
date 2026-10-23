@@ -2829,6 +2829,11 @@ class AppLocalizationsEn extends AppLocalizations {
       'This code has already been used as many times as it can be.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Your portfolio is now worth $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Set a goal';
 
   @override

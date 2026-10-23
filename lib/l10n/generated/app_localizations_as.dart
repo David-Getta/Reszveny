@@ -2830,6 +2830,11 @@ class AppLocalizationsAs extends AppLocalizations {
       'এই ক\'ডটো ইতিমধ্যে সৰ্বাধিক সংখ্যকবাৰ ব্যৱহাৰ কৰা হৈছে।';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'আপোনাৰ প\'ৰ্টফ\'লিঅ\'ৰ মূল্য এতিয়া $value।';
+  }
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য নিৰ্ধাৰণ কৰক';
 
   @override

@@ -2833,6 +2833,11 @@ class AppLocalizationsMs extends AppLocalizations {
   String get referralErrFull => 'Kod ini telah ditebus sebanyak had maksimum.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Nilai portfolio anda kini $value.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

@@ -2834,6 +2834,11 @@ class AppLocalizationsUg extends AppLocalizations {
   String get referralErrFull => 'بۇ كودنىڭ ئىشلىتىش چېكى توشتى.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'مەبلەغ بىرىكمىڭىزنىڭ قىممىتى ھازىر $value بولدى.';
+  }
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

@@ -843,5 +843,6 @@
   "tickerChangeHint": "No baliwan ti kompania ti tickerna (kas pagarigan FB → META): amin a transaksion, dibidendo, stock split, ti nota ken dagiti alerto ket maiyalis iti baro.",
   "tickerChanged": "Naiyalis iti {symbol}",
   "referralErrSignIn": "Ag-sign in babaen ti e-mailmo tapno mausarmo ti kodigo ti gayyem.",
-  "referralErrFull": "Nausaren daytoy a kodigo iti kaadu a maipalubos."
+  "referralErrFull": "Nausaren daytoy a kodigo iti kaadu a maipalubos.",
+  "portfolioGoalReachedBody": "Ti pateg ti portfoliom ita ket {value}."
 }

@@ -2828,6 +2828,11 @@ class AppLocalizationsBm extends AppLocalizations {
   String get referralErrFull => 'Nin kode labaarala ka se a dan ma ka ban.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Sisan i ka aksiyɔn kɛsu sɔngɔ ye $value ye.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

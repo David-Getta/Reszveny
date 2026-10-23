@@ -843,5 +843,6 @@
   "tickerChangeHint": "Quando una società cambia ticker (es. FB → META): tutte le transazioni, i dividendi, i frazionamenti azionari, la nota e gli avvisi passano al nuovo.",
   "tickerChanged": "Spostato su {symbol}",
   "referralErrSignIn": "Accedi con la tua email per riscattare il codice di un amico.",
-  "referralErrFull": "Questo codice è già stato riscattato il numero massimo di volte."
+  "referralErrFull": "Questo codice è già stato riscattato il numero massimo di volte.",
+  "portfolioGoalReachedBody": "Il tuo portafoglio ora vale {value}."
 }

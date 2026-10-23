@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 import 'dart:typed_data';
@@ -17,6 +18,7 @@ import 'mailer.dart';
 import 'plans.dart';
 import 'purchase_verifier.dart';
 import 'quota.dart';
+import 'rate_limit.dart';
 import 'shares.dart';
 import 'store_apis.dart';
 import 'site_pages.dart';
@@ -156,7 +158,12 @@ class Api {
   /// javítás, egy fotóhoz egy felismerés tartozik, így ez bőven elég.
   static const helperPerHour = 20;
   static const helperPerDay = 60;
+  static const helperPerDayTrial = 20;
   static const helperMaxTokens = 16000;
+
+  /// Nagy kimenet (a formátumjavítás) csak egy friss elemzés után kérhető;
+  /// egyébként (felismerés, fotó-import) ennyi bőven elég.
+  static const helperSmallMaxTokens = 4096;
 
   /// A fotók base64-ben érkeznek; ennél nagyobb kérést nem továbbítunk.
   static const helperMaxBytes = 8 * 1024 * 1024;
@@ -215,6 +222,7 @@ class Api {
     return const Pipeline()
         .addMiddleware(_cors())
         .addMiddleware(_logRequests())
+        .addMiddleware(_limitBody())
         .addMiddleware(_inviteGate())
         .addHandler(router.call);
   }
@@ -284,6 +292,42 @@ class Api {
         return res;
       };
 
+  /// A kérés törzsének legnagyobb mérete útvonalanként (a képes AI-kéréseknél
+  /// nagyobb, máshol 1 MB): a túl nagy kérés be sem olvasódik (413).
+  static int bodyLimit(String path) => switch (path) {
+    'v1/analyze' || 'v1/anthropic/v1/messages' => analyzeMaxBytes,
+    'v1/share' => 2 * 1024 * 1024,
+    _ => 1024 * 1024,
+  };
+
+  Middleware _limitBody() =>
+      (inner) => (req) async {
+        final limit = bodyLimit(req.url.path);
+        final length = req.contentLength;
+        if (length != null && length > limit) return _error(413, 'too_large');
+        if (length != null || req.method == 'GET' || req.method == 'OPTIONS') return inner(req);
+        // Darabolt (hossz nélküli) törzs: olvasás közben vágjuk el.
+        var seen = 0;
+        final capped = req.read().transform(
+          StreamTransformer<List<int>, List<int>>.fromHandlers(
+            handleData: (chunk, sink) {
+              seen += chunk.length;
+              if (seen > limit) {
+                sink.addError(const _TooLarge());
+                sink.close();
+              } else {
+                sink.add(chunk);
+              }
+            },
+          ),
+        );
+        try {
+          return await inner(req.change(body: capped));
+        } on _TooLarge {
+          return _error(413, 'too_large');
+        }
+      };
+
   static Middleware _cors() =>
       (inner) => (req) async {
         const headers = {
@@ -310,9 +354,13 @@ class Api {
           return inner(req);
         }
         final sent = req.headers[inviteHeader];
+        final missing = sent == null || sent.trim().isEmpty;
+        final ipKey = _ipKey(_clientIp(req) ?? '-');
+        if (!missing && _inviteFailures.blocked(ipKey)) return _error(429, 'rate_limited');
         final invite = invites.find(sent);
         if (invite == null) {
-          return _error(403, sent == null || sent.trim().isEmpty ? 'invite_required' : 'invite_invalid');
+          if (!missing) _inviteFailures.hit(ipKey);
+          return _error(403, missing ? 'invite_required' : 'invite_invalid');
         }
         if (invite.isExpired(store.clock())) return _error(403, 'invite_expired');
         final uid = _userId(req);
@@ -328,9 +376,17 @@ class Api {
 
   // ---- Útvonalak ----
 
+  /// Új névtelen fiók IP-címenként óránként legfeljebb ennyi (a fiók ingyenes,
+  /// így minden felhasználónkénti korlát csak ezzel együtt ér valamit).
+  static const signupsPerIpPerHour = 20;
+  final _signups = RateLimiter(signupsPerIpPerHour, const Duration(hours: 1));
+
   Future<Response> _auth(Request r) async {
+    final ip = _clientIp(r);
+    if (ip != null && !_signups.allow(_ipKey(ip))) return _error(429, 'rate_limited');
     final body = await _body(r);
-    final (id, token) = store.createAnonymousUser(body['device_id'] as String?);
+    final device = body['device_id'];
+    final (id, token) = store.createAnonymousUser(device is String && device.length <= 128 ? device : null);
     _limitTrial(r, id);
     final invite = _invite(r);
     if (invite != null) store.addInviteDevice(invite.code, id);
@@ -352,6 +408,14 @@ class Api {
     if (fwd != null) return fwd;
     final info = r.context['shelf.io.connection_info'];
     return info is HttpConnectionInfo ? info.remoteAddress.address : null;
+  }
+
+  /// A korlátokhoz használt kulcs: a cím hash-e (IPv6-nál a /64 előtag, mert egy
+  /// gép sok címet kaphat belőle).
+  static String _ipKey(String ip) {
+    final a = InternetAddress.tryParse(ip);
+    final prefix = a != null && a.type == InternetAddressType.IPv6 ? a.rawAddress.sublist(0, 8).join('.') : ip;
+    return sha256.convert(utf8.encode('ip:$prefix')).toString();
   }
 
   /// Belső hálózati (proxy-) cím: privát, helyi, CGNAT vagy egyedi helyi IPv6.
@@ -500,6 +564,8 @@ class Api {
       if (!isPng || image.length > ShareStore.maxImageBytes) return _error(400, 'bad_image');
     }
     if (shares.createdToday(uid) >= ShareStore.perDay) return _error(429, 'share_limit');
+    // Megosztani elemzést lehet: csomag, élő próbaidő vagy extra elemzés kell.
+    if (!quota.hasAccess(store.entitlement(uid))) return _error(402, 'no_plan');
     final id = shares.save(uid, data, image);
     return _json({'id': id, 'url': '$publicUrl/s/$id'});
   }
@@ -639,9 +705,13 @@ class Api {
 
   // ---- Névtelen statisztika ----
 
+  /// Telemetria: felhasználónként naponta legfeljebb ennyi küldés (az app ritkán küld).
+  final _telemetryBatches = RateLimiter(100, const Duration(days: 1));
+
   Future<Response> _telemetry(Request r) async {
     final uid = _userId(r);
     if (uid == null) return _error(401, 'unauthorized');
+    if (!_telemetryBatches.allow(uid)) return _error(429, 'rate_limited');
     telemetry.record(uid, await _body(r));
     return _json({'ok': true});
   }
@@ -667,10 +737,19 @@ class Api {
 
   Response _adminLogin(Request r) => adminToken.isEmpty ? Response.notFound('not found') : _html(adminLoginPage());
 
+  /// Hibás admin-kulcs és meghívókód: IP-címenként óránként legfeljebb ennyi próbálkozás.
+  final _adminFailures = RateLimiter(10, const Duration(hours: 1));
+  final _inviteFailures = RateLimiter(30, const Duration(hours: 1));
+
   Future<Response> _adminStats(Request r) async {
     if (adminToken.isEmpty) return Response.notFound('not found');
+    final ipKey = _ipKey(_clientIp(r) ?? '-');
+    if (_adminFailures.blocked(ipKey)) return _error(429, 'rate_limited');
     final key = Uri.splitQueryString(await r.readAsString())['key'];
-    if (!_isAdmin(key)) return _html(adminLoginPage(wrong: true), status: 403);
+    if (!_isAdmin(key)) {
+      _adminFailures.hit(ipKey);
+      return _html(adminLoginPage(wrong: true), status: 403);
+    }
     return _html(adminStatsPage({...telemetry.stats(), 'testers': _testerStats()}));
   }
 
@@ -1412,6 +1491,42 @@ class Api {
   /// modell, a `max_tokens`, a webkeresés és az oldalmegnyitás `max_uses`-a, és
   /// a megnyitott oldal mérete nem lehet nagyobb a megengedettnél; más eszköz
   /// nem fut, így a kliens nem tud drágább elemzést kérni, mint amiért fizet.
+  static const _requestKeys = {
+    'model',
+    'max_tokens',
+    'system',
+    'messages',
+    'tools',
+    'output_config',
+    'fallbacks',
+    'cache_control',
+  };
+
+  /// A kérés legfelső szintje az engedélyezett mezőkre szűrve: `fallbacks` csak
+  /// `default`, `cache_control` csak az alap (rövid) gyorsítótár, `tools` csak
+  /// lista, az `output_config`-ból csak az ismert erőfeszítés és a formátum.
+  static Map<String, dynamic> sanitizeTopLevel(Map<String, dynamic> body) {
+    final out = {
+      for (final e in body.entries)
+        if (_requestKeys.contains(e.key)) e.key: e.value,
+    };
+    if (out['fallbacks'] != 'default') out.remove('fallbacks');
+    final cache = out['cache_control'];
+    if (cache is! Map || cache.length != 1 || cache['type'] != 'ephemeral') out.remove('cache_control');
+    if (out['tools'] is! List) out.remove('tools');
+    final config = out['output_config'];
+    if (config is Map) {
+      final effort = config['effort'];
+      out['output_config'] = {
+        if (const {'low', 'medium', 'high'}.contains(effort)) 'effort': effort,
+        'format': ?config['format'],
+      };
+    } else {
+      out.remove('output_config');
+    }
+    return out;
+  }
+
   /// `null`, ha a kérés nem értelmezhető (nem engedjük át ellenőrizetlenül).
   static String? limitRequest(
     String raw, {
@@ -1425,9 +1540,11 @@ class Api {
     } catch (_) {
       return null;
     }
+    // Csak az app által használt mezők mennek tovább (pl. a `stream` nem: az
+    // elszámoláshoz a teljes válasz kell; más modellre váltó `fallbacks` vagy
+    // hosszabb gyorsítótár sem).
+    body = sanitizeTopLevel(body);
     body['model'] = model;
-    // Folyamatos (SSE) válasz nem kérhető: az elszámoláshoz a teljes válasz kell.
-    body.remove('stream');
     final maxTokens = body['max_tokens'];
     body['max_tokens'] = maxTokens is int && maxTokens < depth.maxTokens ? maxTokens : depth.maxTokens;
     final allowed = depth.searchesFor(tier);
@@ -1476,7 +1593,7 @@ class Api {
   /// Segéd-hívás szűrése: csak az ismert mezők maradnak (eszközök nélkül),
   /// rögzített modell, legfeljebb [helperMaxTokens] token és közepes erőfeszítés.
   /// `null`, ha a kérés nem értelmezhető vagy több üzenetet tartalmaz a szükségesnél.
-  static String? limitHelperRequest(String raw, {String model = 'claude-opus-5-5'}) {
+  static String? limitHelperRequest(String raw, {String model = 'claude-opus-5-5', int maxOutput = helperMaxTokens}) {
     Map<String, dynamic> body;
     try {
       body = (jsonDecode(raw) as Map).cast<String, dynamic>();
@@ -1507,11 +1624,11 @@ class Api {
     final effort = config is Map ? config['effort'] : null;
     return jsonEncode({
       'model': model,
-      'max_tokens': maxTokens is int && maxTokens > 0 && maxTokens < helperMaxTokens ? maxTokens : helperMaxTokens,
+      'max_tokens': maxTokens is int && maxTokens > 0 && maxTokens < maxOutput ? maxTokens : maxOutput,
       'system': ?body['system'],
       'messages': messages,
       if (config is Map) 'output_config': {'effort': effort == 'low' ? 'low' : 'medium', 'format': ?config['format']},
-      'fallbacks': ?body['fallbacks'],
+      if (body['fallbacks'] == 'default') 'fallbacks': 'default',
     });
   }
 
@@ -1664,13 +1781,22 @@ class Api {
     final raw = await r.readAsString();
     if (raw.length > helperMaxBytes) return _error(413, 'too_large');
     final now = store.clock();
+    final e = store.entitlement(uid);
+    // Csomag (vagy élő próbaidő, vagy extra elemzés) nélkül nincs segédhívás.
+    if (!quota.hasAccess(e)) return _error(402, 'no_plan');
+    final trial = e.tier == null || e.tier == 'trial';
     if (store.helperCallsSince(uid, now.subtract(const Duration(hours: 1))) >= helperPerHour ||
-        store.helperCallsSince(uid, now.subtract(const Duration(days: 1))) >= helperPerDay) {
+        store.helperCallsSince(uid, now.subtract(const Duration(days: 1))) >=
+            (trial ? helperPerDayTrial : helperPerDay)) {
       return _error(429, 'rate_limited', 'Too many requests, please try again later.');
     }
-    // Csomag (vagy élő próbaidő, vagy extra elemzés) nélkül nincs segédhívás.
-    if (!quota.hasAccess(store.entitlement(uid))) return _error(402, 'no_plan');
-    final body = limitHelperRequest(raw, model: anthropicModel);
+    final recentAnalysis = store.hasUsageSince(uid, now.subtract(const Duration(hours: 1)));
+    final body = limitHelperRequest(
+      raw,
+      // Próbaidőben az olcsóbb modell (mint az elemzésnél és a kérdésnél).
+      model: trial ? trialModel : anthropicModel,
+      maxOutput: recentAnalysis ? helperMaxTokens : helperSmallMaxTokens,
+    );
     if (body == null) return _error(400, 'bad_request');
     store.logHelperCall(uid);
     final upstream = await _forwardAnthropic(body, allowedBeta(r.headers['anthropic-beta']));
@@ -1700,19 +1826,63 @@ class Api {
     body: body,
   );
 
+  /// Az app által használt Finnhub-végpontok; mást nem engedünk át a szerver kulcsával.
+  static const marketPaths = {
+    'quote',
+    'search',
+    'stock/candle',
+    'stock/profile2',
+    'stock/metric',
+    'stock/recommendation',
+    'stock/financials-reported',
+    'stock/insider-transactions',
+    'stock/peers',
+    'stock/earnings',
+    'company-news',
+    'calendar/earnings',
+  };
+
+  /// Piaci adat felhasználónként 10 percenként legfeljebb ennyi kérés (a közös
+  /// adatkeret védelmére; egy teljes kedvenclista frissítése is bőven belefér).
+  final _marketCalls = RateLimiter(600, const Duration(minutes: 10));
+
+  /// Rövid árfolyam-gyorsítótár tickerenként (sok felhasználó ugyanazt kéri).
+  final _quotes = <String, ({DateTime at, String body})>{};
+  static const quoteCacheFor = Duration(seconds: 30);
+
   Future<Response> _market(Request r, String path) async {
     final uid = _userId(r);
     if (uid == null) return _error(401, 'unauthorized');
+    if (!marketPaths.contains(path)) return _error(404, 'not_found');
+    if (!_marketCalls.allow(uid)) return _error(429, 'rate_limited');
     if (path == 'stock/candle' && twelveDataApiKey.isNotEmpty) return _twelveDataCandles(r.url.queryParameters);
+    final symbol = (r.url.queryParameters['symbol'] ?? '').trim().toUpperCase();
+    final now = store.clock();
+    final cached = path == 'quote' ? _quotes[symbol] : null;
+    if (cached != null && now.difference(cached.at) < quoteCacheFor) {
+      return Response.ok(cached.body, headers: {'content-type': 'application/json'});
+    }
     final uri = Uri.parse('$finnhubBaseUrl/$path').replace(queryParameters: r.url.queryParameters);
-    final upstream = await _client.get(uri, headers: {'X-Finnhub-Token': finnhubApiKey});
+    final http.Response upstream;
+    try {
+      upstream = await _client
+          .get(uri, headers: {'X-Finnhub-Token': finnhubApiKey})
+          .timeout(const Duration(seconds: 15));
+    } on TimeoutException {
+      return _error(504, 'upstream_timeout');
+    }
+    var body = upstream.body;
     // A Finnhub ingyenes csomagja csak USA-részvényeket áraz: ha nincs ár (c = 0),
     // a Twelve Data is megpróbálható (a nem USA-tőzsdékhez annak fizetős csomagja kell).
     if (path == 'quote' && twelveDataApiKey.isNotEmpty && !_hasFinnhubPrice(upstream)) {
-      final td = await _twelveDataQuote((r.url.queryParameters['symbol'] ?? '').trim().toUpperCase());
-      if (td != null) return Response.ok(jsonEncode(td), headers: {'content-type': 'application/json'});
+      final td = await _twelveDataQuote(symbol);
+      if (td != null) body = jsonEncode(td);
     }
-    return Response(upstream.statusCode, body: upstream.body, headers: {'content-type': 'application/json'});
+    if (path == 'quote' && upstream.statusCode == 200 && symbol.isNotEmpty) {
+      if (_quotes.length > 5000) _quotes.clear();
+      _quotes[symbol] = (at: now, body: body);
+    }
+    return Response(upstream.statusCode, body: body, headers: {'content-type': 'application/json'});
   }
 
   static bool _hasFinnhubPrice(http.Response res) {
@@ -1880,4 +2050,9 @@ class Api {
     final m = RegExp(r'"symbol":\s*"([A-Za-z0-9.\-]{1,12})"').firstMatch(raw);
     return m?.group(1);
   }
+}
+
+/// A kérés törzse túllépte a megengedett méretet (olvasás közben derül ki).
+class _TooLarge implements Exception {
+  const _TooLarge();
 }

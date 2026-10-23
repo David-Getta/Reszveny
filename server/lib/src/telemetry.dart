@@ -115,11 +115,21 @@ class TelemetryStore {
           ]).first['n']
           as int;
 
+  /// Az app `defaultTargetPlatform.name` értékei (és a web).
+  static const knownPlatforms = {'android', 'iOS', 'macOS', 'windows', 'linux', 'fuchsia', 'web'};
+
+  /// Naponta legfeljebb ennyi új (eddig nem látott) hibasor kerül be.
+  static const maxNewErrorsPerDay = 200;
+
   void record(String userId, Map<String, dynamic> batch) {
     final now = clock().toUtc();
     final day = _day(now);
-    final platform = _clean(batch['platform'], 16);
-    final version = _clean(batch['version'], 24);
+    // Csak ismert platform és szabályos verziószám: tetszőleges szöveg nem
+    // nyithat új sorokat (és nem torzíthatja az admin táblát).
+    final p = _clean(batch['platform'], 16);
+    final platform = knownPlatforms.contains(p) ? p : 'other';
+    final v = _clean(batch['version'], 24);
+    final version = RegExp(r'^\d{1,3}\.\d{1,3}\.\d{1,4}(\+\d{1,6})?$').hasMatch(v) ? v : 'other';
     _db.execute('BEGIN');
     try {
       _db.execute('INSERT OR IGNORE INTO daily_users (day, user_hash, platform) VALUES (?, ?, ?)', [
@@ -148,6 +158,12 @@ class TelemetryStore {
           // Ugyanaz a hiba (üzenet + a verem eleje) egy sorba kerül.
           final top = stack.split('\n').take(4).join('\n');
           final hash = sha256.convert(utf8.encode('$message\n$top')).toString();
+          final known = _db.select('SELECT 1 FROM error_reports WHERE hash = ?', [hash]).isNotEmpty;
+          if (!known &&
+              (_db.select('SELECT COUNT(*) AS n FROM error_reports WHERE first_seen >= ?', [day]).first['n'] as int) >=
+                  maxNewErrorsPerDay) {
+            continue;
+          }
           _db.execute(
             'INSERT INTO error_reports (hash, message, stack, platform, version, count, first_seen, last_seen) '
             'VALUES (?, ?, ?, ?, ?, 1, ?, ?) ON CONFLICT(hash) DO UPDATE SET count = count + 1, '

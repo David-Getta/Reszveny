@@ -843,5 +843,6 @@
   "tickerChangeHint": "When company change im ticker (like FB → META): all di buy and sell, dividend, stock splits, di note and di alerts go move go di new one.",
   "tickerChanged": "E don move go {symbol}",
   "referralErrSignIn": "Sign in with your e-mail make you fit use padi code.",
-  "referralErrFull": "Dem don use dis code reach di maximum times wey e fit take."
+  "referralErrFull": "Dem don use dis code reach di maximum times wey e fit take.",
+  "portfolioGoalReachedBody": "Your portfolio don reach {value} now."
 }

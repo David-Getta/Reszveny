@@ -843,5 +843,6 @@
   "tickerChangeHint": "Kampuni inapobadilisha ticker yake (k.m. FB → META): miamala yote, gawio, migawanyo ya hisa, dokezo na arifa huhamishiwa kwenye ticker mpya.",
   "tickerChanged": "Imehamishiwa {symbol}",
   "referralErrSignIn": "Ingia kwa barua pepe yako ili utumie msimbo wa rafiki.",
-  "referralErrFull": "Msimbo huu tayari umetumika mara nyingi kadiri inavyoruhusiwa."
+  "referralErrFull": "Msimbo huu tayari umetumika mara nyingi kadiri inavyoruhusiwa.",
+  "portfolioGoalReachedBody": "Thamani ya jalada lako la hisa sasa ni {value}."
 }

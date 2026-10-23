@@ -2830,6 +2830,11 @@ class AppLocalizationsDa extends AppLocalizations {
       'Koden er allerede indløst det maksimale antal gange.';
 
   @override
+  String portfolioGoalReachedBody(String value) {
+    return 'Din portefølje er nu $value værd.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sæt et mål';
 
   @override
