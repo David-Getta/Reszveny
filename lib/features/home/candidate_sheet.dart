@@ -82,7 +82,12 @@ class _CandidateList extends StatelessWidget {
                 const SizedBox(height: 8),
                 OutlinedButton.icon(
                   key: const ValueKey('cand-fav-all'),
-                  onPressed: () => prefs.setFavorites([...missing, ...prefs.favorites]),
+                  // A felvétel napja is megmarad („mióta figyeled”); az új kedvencek elöl.
+                  onPressed: () async {
+                    final before = prefs.favorites;
+                    await prefs.addSymbols(missing);
+                    await prefs.setFavorites([...missing, ...before]);
+                  },
                   icon: const Icon(Icons.star_border_rounded),
                   label: Text(l10n.addAllToFavorites(missing.length)),
                 ),

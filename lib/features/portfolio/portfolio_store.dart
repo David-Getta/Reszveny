@@ -776,6 +776,9 @@ class PortfolioStore extends ChangeNotifier {
   /// egy eladás, jutalék és negyedéves osztalékok – a dátumok a mai naphoz
   /// képest, így az éves hozam, az értékalakulás és a várható osztalék is látszik.
   Future<void> loadSample({DateTime? now}) async {
+    // Újratöltéskor a korábbi minta-tételek helyére (nem ismétlődnek az azonosítók).
+    _lots.removeWhere((l) => l.id.startsWith(samplePrefix));
+    _dividends.removeWhere((d) => d.id.startsWith(samplePrefix));
     final today = now ?? DateTime.now();
     DateTime ago(int days) {
       final d = today.subtract(Duration(days: days));

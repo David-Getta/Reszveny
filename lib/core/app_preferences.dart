@@ -106,12 +106,15 @@ class AppPreferences extends ChangeNotifier {
     await _saveFavorites();
   }
 
-  /// A felvételi napok cseréje (szinkronkor): csak a kedvencekhez.
+  /// A felvételi napok átvétele (szinkronkor) tickerenként: a csomagban lévő nap
+  /// felülírja a helyit, a csomagból hiányzó helyi nap megmarad (egy a mezőt még nem
+  /// ismerő eszköz üres listája nem törli a dátumokat); csak a kedvencekhez.
   Future<void> setFavoriteSince(Map<String, DateTime> since) async {
+    final merged = {..._favoriteSince, ...since};
     _favoriteSince
       ..clear()
       ..addAll({
-        for (final e in since.entries)
+        for (final e in merged.entries)
           if (_favorites.contains(e.key)) e.key: e.value,
       });
     notifyListeners();

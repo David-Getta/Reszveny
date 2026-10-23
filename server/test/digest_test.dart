@@ -217,6 +217,16 @@ void main() {
         {'symbol': 'PEP', 'amount': 1.4, 'currency': 'USD', 'date': '2026-07-29'},
       ],
     };
+    // Az app minta-portfóliójának tételei (sample_) nem számítanak.
+    expect(
+      DigestSender.holdingsOf({
+        'lots': [
+          ...data['lots'] as List,
+          {'id': 'sample_a1', 'symbol': 'AAPL', 'quantity': 12, 'price': 168.4, 'currency': 'USD'},
+        ],
+      }).held.keys,
+      ['KO'],
+    );
     final ex = DigestSender.expectedDividendsOf(data, now: now);
     expect(ex.map((d) => (d.symbol, d.currency, d.date)), [('KO', 'USD', DateTime.utc(2026, 10, 30))]);
     expect(ex.single.amount, closeTo(5.1, 1e-9), reason: 'az egy napon rögzített két tétel együtt');

@@ -1159,6 +1159,20 @@ void main() {
     expect(s.portfolio.lots.single.symbol, 'MSFT');
     expect(s.portfolio.dividends, isEmpty);
     expect(find.byKey(const ValueKey('portfolio-sample')), findsNothing);
+    // Újratöltés: nem ismétlődnek a minta-tételek.
+    await s.portfolio.loadSample();
+    await s.portfolio.loadSample();
+    expect(s.portfolio.lots.where((l) => l.id.startsWith(PortfolioStore.samplePrefix)), hasLength(5));
+    // Ha a minta tranzakcióit egyenként törlik, az üres oldalról a megmaradt minta-osztalékok is eltávolíthatók.
+    for (final l in [...s.portfolio.lots]) {
+      await s.portfolio.remove(l.id);
+    }
+    await tester.pumpAndSettle();
+    expect(s.portfolio.dividends, isNotEmpty);
+    await tester.tap(find.byKey(const ValueKey('portfolio-sample-remove')));
+    await tester.pumpAndSettle();
+    expect(s.portfolio.hasSample, isFalse);
+    expect(find.byKey(const ValueKey('portfolio-empty-sample')), findsOneWidget);
     // A háttérben indított késleltetett frissítések (események, emlékeztetők) lefutnak.
     await tester.pump(const Duration(minutes: 1));
   });

@@ -14,7 +14,7 @@ import 'app_widget_test.dart' show services;
 void main() {
   setUp(() => SharedPreferences.setMockInitialValues({}));
 
-  test('favorites remember the day they were added; removing forgets it; sync keeps the earlier day', () async {
+  test('favorites remember the day they were added; removing forgets it; sync merges per ticker', () async {
     final prefs = AppPreferences();
     await prefs.toggleFavorite('aapl');
     final now = DateTime.now();
@@ -34,11 +34,15 @@ void main() {
         'favorite_since': {'A': '2026-01-01'},
       },
     );
-    expect(merged['favorite_since'], {'A': '2026-01-01', 'B': '2026-02-01'});
+    // Azonos tickernél a helyi nap marad (pl. levétel és újrafelvétel után a mai).
+    expect(merged['favorite_since'], {'A': '2026-03-01', 'B': '2026-02-01'});
     // A szinkron csak a kedvencekhez tartja meg.
     await prefs.setFavorites(['A']);
     await prefs.setFavoriteSince(AppPreferences.parseFavoriteSince(merged['favorite_since']));
-    expect((prefs.favoriteSince('A'), prefs.favoriteSince('B')), (DateTime(2026, 1, 1), null));
+    expect((prefs.favoriteSince('A'), prefs.favoriteSince('B')), (DateTime(2026, 3, 1), null));
+    // Egy a mezőt még nem ismerő eszköz üres listája nem törli a dátumokat.
+    await prefs.setFavoriteSince(const {});
+    expect(prefs.favoriteSince('A'), DateTime(2026, 3, 1));
     await prefs.clearPersonalData();
     expect(prefs.favoriteSince('A'), isNull);
   });

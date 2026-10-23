@@ -232,12 +232,21 @@ class _EmptyPortfolio extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             // Kipróbálás minta-adatokkal: egy gombbal betölthető, egy gombbal eltávolítható.
-            OutlinedButton.icon(
-              key: const ValueKey('portfolio-empty-sample'),
-              onPressed: () => AppServices.of(context).portfolio.loadSample(),
-              icon: const Icon(Icons.science_outlined, size: 18),
-              label: Text(l10n.portfolioSampleTry),
-            ),
+            // Ha a minta tranzakcióit egyenként törölték, a megmaradt minta-osztalékok is eltávolíthatók.
+            if (AppServices.of(context).portfolio.hasSample)
+              OutlinedButton.icon(
+                key: const ValueKey('portfolio-sample-remove'),
+                onPressed: () => AppServices.of(context).portfolio.removeSample(),
+                icon: const Icon(Icons.science_outlined, size: 18),
+                label: Text(l10n.portfolioSampleRemove),
+              )
+            else
+              OutlinedButton.icon(
+                key: const ValueKey('portfolio-empty-sample'),
+                onPressed: () => AppServices.of(context).portfolio.loadSample(),
+                icon: const Icon(Icons.science_outlined, size: 18),
+                label: Text(l10n.portfolioSampleTry),
+              ),
           ],
         ),
       ),

@@ -850,9 +850,11 @@ class _WatchRow extends StatelessWidget {
                             future: history,
                             builder: (context, h) {
                               final pts = h.data?.points ?? const <PricePoint>[];
-                              if (pts.isEmpty || pts.first.time.isAfter(since)) return const SizedBox.shrink();
-                              final base = pts.where((x) => !x.time.isBefore(since)).firstOrNull;
-                              if (base == null || base.close <= 0 || !pts.last.time.isAfter(since)) {
+                              // Naptári nap szerint (a napi gyertya időbélyege UTC, a felvétel napja helyi).
+                              DateTime dayOf(PricePoint x) => DateTime(x.time.year, x.time.month, x.time.day);
+                              if (pts.isEmpty || dayOf(pts.first).isAfter(since)) return const SizedBox.shrink();
+                              final base = pts.where((x) => !dayOf(x).isBefore(since)).firstOrNull;
+                              if (base == null || base.close <= 0 || !dayOf(pts.last).isAfter(since)) {
                                 return const SizedBox.shrink();
                               }
                               final pct = (q.price / base.close - 1) * 100;

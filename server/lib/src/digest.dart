@@ -88,7 +88,7 @@ class DigestSender {
     final held = <String, double>{}, currencies = <String, String>{};
     final splits = _splitsOf(data);
     for (final l in (data['lots'] as List? ?? const [])) {
-      if (l is! Map || l['symbol'] is! String || l['quantity'] is! num) continue;
+      if (l is! Map || l['symbol'] is! String || l['quantity'] is! num || _isSample(l)) continue;
       final s = (l['symbol'] as String).toUpperCase();
       var q = (l['quantity'] as num).toDouble();
       // A felaprózás napja előtti, dátumozott tétel darabszáma × új/régi; a dátum nélküli változatlan.
@@ -104,6 +104,10 @@ class DigestSender {
     held.removeWhere((_, q) => q <= 1e-9);
     return (held: held, currencies: currencies);
   }
+
+  /// Az app minta-portfóliójának tétele (`sample_` azonosító): a heti e-mailbe nem számít.
+  /// Az app `PortfolioStore.samplePrefix` értékével egyezik.
+  static bool _isSample(Map<dynamic, dynamic> record) => '${record['id']}'.startsWith('sample_');
 
   /// A szinkronizált felaprózások részvényenként (érvényes arány, napra kerekítve,
   /// ismétlés nélkül). Az app `SplitRecord` szabályának másolata
@@ -142,7 +146,9 @@ class DigestSender {
   /// pozitív összeg, pénznem (alapból USD), értelmezhető dátum.
   static Iterable<DigestDividend> _dividendRecords(Map<String, dynamic> data) sync* {
     for (final d in (data['dividends'] as List? ?? const [])) {
-      if (d is! Map || d['symbol'] is! String || d['amount'] is! num || (d['amount'] as num) <= 0) continue;
+      if (d is! Map || d['symbol'] is! String || d['amount'] is! num || (d['amount'] as num) <= 0 || _isSample(d)) {
+        continue;
+      }
       final date = DateTime.tryParse('${d['date']}');
       if (date == null) continue;
       yield (

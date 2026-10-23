@@ -199,16 +199,14 @@ class SyncService extends ChangeNotifier {
       'watch_lists': _mergeLists(local['watch_lists'], remote['watch_lists']),
       // Célarányok: tickerenként a helyi nyer.
       'targets': {...AppPreferences.parseTargets(remote['targets']), ...AppPreferences.parseTargets(local['targets'])},
-      // Kedvencenként a korábbi felvételi nap.
+      // Kedvencenként a felvételi nap: azonos tickernél a helyi marad (mint a többi tételnél) –
+      // így egy levétel és újrafelvétel nem veszik el a másik eszköz régebbi napja miatt.
       'favorite_since': {
         for (final e in {
           ...AppPreferences.parseFavoriteSince(remote['favorite_since']),
           ...AppPreferences.parseFavoriteSince(local['favorite_since']),
         }.entries)
-          e.key: [
-            ?AppPreferences.parseFavoriteSince(remote['favorite_since'])[e.key],
-            ?AppPreferences.parseFavoriteSince(local['favorite_since'])[e.key],
-          ].reduce((a, b) => a.isBefore(b) ? a : b).toIso8601String().substring(0, 10),
+          e.key: e.value.toIso8601String().substring(0, 10),
       },
       'goals': mergeGoals(local['goals'], remote['goals']),
       'lots': byId(local['lots'], remote['lots']),
