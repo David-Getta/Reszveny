@@ -1819,6 +1819,9 @@ void main() {
     await tester.tap(find.byKey(const ValueKey('onboarding-next')));
     await tester.pumpAndSettle();
     await _shot(tester, 'onboarding2_phone_hu');
+    await tester.tap(find.byKey(const ValueKey('onboarding-next')));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'onboarding3_phone_hu');
   });
 
   testWidgets('quick bar', (tester) async {
@@ -1925,7 +1928,7 @@ void main() {
 
         await tester.tap(find.byType(BackButton).first);
         await tester.pumpAndSettle();
-        await _setCaption(tester, l10n.onboardTitle3, l10n.onboardBody3);
+        await _setCaption(tester, l10n.onboardTitle4, l10n.onboardBody4);
         // Széles elrendezésben az oldalsáv, telefonon az alsó sáv gombja.
         final tab = find.text(l10n.portfolio);
         await tester.tap(device.name == 'desktop' || device.name == 'ipad13' ? tab.first : tab.last);
