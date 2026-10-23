@@ -823,5 +823,6 @@
   "positionHeld": "Muddada haysashada",
   "durationMonths": "{months, plural, one{{months} bil} other{{months} bilood}}",
   "durationDays": "{days, plural, one{{days} maalin} other{{days} maalmood}}",
-  "positionHeldSince": "laga bilaabo {date}"
+  "positionHeldSince": "laga bilaabo {date}",
+  "lotPreviewWeight": "Qaybta portfoliyada kadib: {after} (hadda {before})"
 }

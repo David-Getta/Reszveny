@@ -823,5 +823,6 @@
   "positionHeld": "Ntangu ya kusimba",
   "durationMonths": "{months, plural, one{ngonda {months}} other{ngonda {months}}}",
   "durationDays": "{days, plural, one{kilumbu {days}} other{bilumbu {days}}}",
-  "positionHeldSince": "banda {date}"
+  "positionHeldSince": "banda {date}",
+  "lotPreviewWeight": "Ndambu ya portfolio na nima: {after} (ntangu yai {before})"
 }

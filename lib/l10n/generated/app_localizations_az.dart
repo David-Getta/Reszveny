@@ -2747,6 +2747,11 @@ class AppLocalizationsAz extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Sonra portfeldəki pay: $after (hazırda $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hədəf təyin et';
 
   @override

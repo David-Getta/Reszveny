@@ -823,5 +823,6 @@
   "positionHeld": "Gehou vir",
   "durationMonths": "{months, plural, one{{months} maand} other{{months} maande}}",
   "durationDays": "{days, plural, one{{days} dag} other{{days} dae}}",
-  "positionHeldSince": "sedert {date}"
+  "positionHeldSince": "sedert {date}",
+  "lotPreviewWeight": "Deel van die portefeulje daarna: {after} (tans {before})"
 }

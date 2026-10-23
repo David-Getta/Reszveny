@@ -823,5 +823,6 @@
   "positionHeld": "Tagal ng paghawak",
   "durationMonths": "{months, plural, one{{months} buwan} other{{months} buwan}}",
   "durationDays": "{days, plural, one{{days} araw} other{{days} araw}}",
-  "positionHeldSince": "mula noong {date}"
+  "positionHeldSince": "mula noong {date}",
+  "lotPreviewWeight": "Bahagi sa portfolio pagkatapos: {after} (ngayon {before})"
 }

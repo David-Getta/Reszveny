@@ -2748,6 +2748,11 @@ class AppLocalizationsTk extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Soňra portfeldäki paý: $after (häzir $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

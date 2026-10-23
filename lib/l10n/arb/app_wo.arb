@@ -823,5 +823,6 @@
   "positionHeld": "Diir bi nga ko denc",
   "durationMonths": "{months, plural, other{{months} weer}}",
   "durationDays": "{days, plural, other{{days} fan}}",
-  "positionHeldSince": "li dale {date}"
+  "positionHeldSince": "li dale {date}",
+  "lotPreviewWeight": "Wàll ci portefeuille bi ginnaaw bi: {after} (léegi {before})"
 }

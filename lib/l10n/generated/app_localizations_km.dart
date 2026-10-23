@@ -2723,6 +2723,11 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'ចំណែកក្នុងផលប័ត្របន្ទាប់ពីនេះ៖ $after (បច្ចុប្បន្ន $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

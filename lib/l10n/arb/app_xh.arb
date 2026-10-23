@@ -823,5 +823,6 @@
   "positionHeld": "Ixesha lokubamba",
   "durationMonths": "{months, plural, one{inyanga e-{months}} other{iinyanga ezi-{months}}}",
   "durationDays": "{days, plural, one{usuku olu-{days}} other{iintsuku ezi-{days}}}",
-  "positionHeldSince": "ukususela ngo-{date}"
+  "positionHeldSince": "ukususela ngo-{date}",
+  "lotPreviewWeight": "Isiqephu sepotifoliyo emva koko: {after} (ngoku {before})"
 }

@@ -823,5 +823,6 @@
   "positionHeld": "Lama kepemilikan",
   "durationMonths": "{months, plural, other{{months} bulan}}",
   "durationDays": "{days, plural, other{{days} hari}}",
-  "positionHeldSince": "sejak {date}"
+  "positionHeldSince": "sejak {date}",
+  "lotPreviewWeight": "Porsi di portofolio setelahnya: {after} (saat ini {before})"
 }

@@ -2754,6 +2754,11 @@ class AppLocalizationsSn extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Chikamu chepotifoliyo pashure: $after (ikozvino $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Isa chinangwa';
 
   @override

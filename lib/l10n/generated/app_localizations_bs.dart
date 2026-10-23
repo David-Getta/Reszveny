@@ -2793,6 +2793,11 @@ class AppLocalizationsBs extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Udio u portfoliju nakon toga: $after (sada $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Postavi cilj';
 
   @override

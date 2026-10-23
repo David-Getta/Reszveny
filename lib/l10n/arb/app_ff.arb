@@ -823,5 +823,6 @@
   "positionHeld": "Duumol jogagol",
   "durationMonths": "{months, plural, one{lewru {months}} other{lebbi {months}}}",
   "durationDays": "{days, plural, one{ñalnde {days}} other{balɗe {days}}}",
-  "positionHeldSince": "gila {date}"
+  "positionHeldSince": "gila {date}",
+  "lotPreviewWeight": "Feccere e portfolio caggal ɗuum: {after} (jooni {before})"
 }

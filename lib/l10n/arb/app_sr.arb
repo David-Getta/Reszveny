@@ -823,5 +823,6 @@
   "positionHeld": "Период држања",
   "durationMonths": "{months, plural, one{{months} месец} few{{months} месеца} other{{months} месеци}}",
   "durationDays": "{days, plural, one{{days} дан} few{{days} дана} other{{days} дана}}",
-  "positionHeldSince": "од {date}"
+  "positionHeldSince": "од {date}",
+  "lotPreviewWeight": "Удео у портфолију након тога: {after} (сада {before})"
 }

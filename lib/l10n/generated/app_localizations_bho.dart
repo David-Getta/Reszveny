@@ -2740,6 +2740,11 @@ class AppLocalizationsBho extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'बाद में पोर्टफ़ोलियो में हिस्सा: $after (अभी $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करीं';
 
   @override

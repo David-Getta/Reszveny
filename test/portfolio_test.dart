@@ -1427,4 +1427,27 @@ void main() {
     expect(find.descendant(of: held, matching: find.text('$years$months')), findsOneWidget);
     expect(find.descendant(of: held, matching: find.text('since Mar 4, 2024')), findsOneWidget);
   });
+
+  testWidgets('the trade preview shows the share of the portfolio afterwards', (tester) async {
+    tester.view.physicalSize = const Size(1200, 2400);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final s = services();
+    await s.portfolio.add(symbol: 'AAPL', quantity: 10, price: 200, currency: 'USD', date: DateTime(2025, 5, 2));
+    await s.portfolio.add(symbol: 'MSFT', quantity: 2, price: 400, currency: 'USD', date: DateTime(2025, 5, 2));
+    await s.preferences.setDisplayCurrency('USD');
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Portfolio').first);
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('position-menu-AAPL')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('position-sell')));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byKey(const ValueKey('lot-quantity')), '10');
+    await tester.pumpAndSettle();
+    // Mindet eladva a súly 0 lesz.
+    expect(find.byKey(const ValueKey('lot-preview-weight')), findsOneWidget);
+    expect(find.textContaining('Share of the portfolio afterwards: 0.0% (now '), findsOneWidget);
+  });
 }

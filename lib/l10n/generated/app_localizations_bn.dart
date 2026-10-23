@@ -2744,6 +2744,11 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'পরে পোর্টফোলিওতে অংশ: $after (এখন $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য ঠিক করুন';
 
   @override

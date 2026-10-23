@@ -2748,6 +2748,11 @@ class AppLocalizationsTg extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Ҳисса дар портфел пас аз он: $after (ҳозир $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

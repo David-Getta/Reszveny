@@ -823,5 +823,6 @@
   "positionHeld": "Период на притежание",
   "durationMonths": "{months, plural, one{{months} месец} other{{months} месеца}}",
   "durationDays": "{days, plural, one{{days} ден} other{{days} дни}}",
-  "positionHeldSince": "от {date}"
+  "positionHeldSince": "от {date}",
+  "lotPreviewWeight": "Дял в портфейла след това: {after} (сега {before})"
 }

@@ -823,5 +823,6 @@
   "positionHeld": "ਹੋਲਡਿੰਗ ਮਿਆਦ",
   "durationMonths": "{months, plural, one{{months} ਮਹੀਨਾ} other{{months} ਮਹੀਨੇ}}",
   "durationDays": "{days, plural, one{{days} ਦਿਨ} other{{days} ਦਿਨ}}",
-  "positionHeldSince": "{date} ਤੋਂ"
+  "positionHeldSince": "{date} ਤੋਂ",
+  "lotPreviewWeight": "ਬਾਅਦ ਵਿੱਚ ਪੋਰਟਫ਼ੋਲੀਓ ਵਿੱਚ ਹਿੱਸਾ: {after} (ਹੁਣ {before})"
 }

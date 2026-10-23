@@ -823,5 +823,6 @@
   "positionHeld": "Àkókò tí o ti dì í mú",
   "durationMonths": "{months, plural, other{oṣù {months}}}",
   "durationDays": "{days, plural, other{ọjọ́ {days}}}",
-  "positionHeldSince": "láti {date}"
+  "positionHeldSince": "láti {date}",
+  "lotPreviewWeight": "Ìpín nínú àpò ìdókòwò lẹ́yìn náà: {after} (báyìí {before})"
 }

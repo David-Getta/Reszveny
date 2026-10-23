@@ -823,5 +823,6 @@
   "positionHeld": "Nthawi yosunga",
   "durationMonths": "{months, plural, one{mwezi {months}} other{miyezi {months}}}",
   "durationDays": "{days, plural, one{tsiku {days}} other{masiku {days}}}",
-  "positionHeldSince": "kuyambira {date}"
+  "positionHeldSince": "kuyambira {date}",
+  "lotPreviewWeight": "Gawo la potifoliyo pambuyo pake: {after} (pano {before})"
 }

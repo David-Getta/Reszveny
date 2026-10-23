@@ -2757,6 +2757,11 @@ class AppLocalizationsMl extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'പിന്നീട് പോർട്ട്ഫോളിയോയിലെ പങ്ക്: $after (ഇപ്പോൾ $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ലക്ഷ്യം സജ്ജമാക്കുക';
 
   @override

@@ -823,5 +823,6 @@
   "positionHeld": "Tiempo en cartera",
   "durationMonths": "{months, plural, one{{months} mes} other{{months} meses}}",
   "durationDays": "{days, plural, one{{days} día} other{{days} días}}",
-  "positionHeldSince": "desde el {date}"
+  "positionHeldSince": "desde el {date}",
+  "lotPreviewWeight": "Peso en la cartera después: {after} (ahora {before})"
 }

@@ -2758,6 +2758,11 @@ class AppLocalizationsOm extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Qooda poortfooliyoo booda: $after (amma $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

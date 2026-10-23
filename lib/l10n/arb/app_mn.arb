@@ -823,5 +823,6 @@
   "positionHeld": "Эзэмшсэн хугацаа",
   "durationMonths": "{months, plural, one{{months} сар} other{{months} сар}}",
   "durationDays": "{days, plural, one{{days} өдөр} other{{days} өдөр}}",
-  "positionHeldSince": "{date} өдрөөс хойш"
+  "positionHeldSince": "{date} өдрөөс хойш",
+  "lotPreviewWeight": "Дараа нь багц дахь эзлэх хувь: {after} (одоо {before})"
 }

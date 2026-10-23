@@ -2736,6 +2736,11 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'အရောင်းအဝယ်ပြီးနောက် ပေါ့ဖိုလီယို အချိုး - $after (ယခု $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

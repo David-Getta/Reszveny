@@ -823,5 +823,6 @@
   "positionHeld": "Muda wa umiliki",
   "durationMonths": "{months, plural, one{mwezi {months}} other{miezi {months}}}",
   "durationDays": "{days, plural, one{siku {days}} other{siku {days}}}",
-  "positionHeldSince": "tangu {date}"
+  "positionHeldSince": "tangu {date}",
+  "lotPreviewWeight": "Sehemu katika jalada la hisa baadaye: {after} (sasa {before})"
 }

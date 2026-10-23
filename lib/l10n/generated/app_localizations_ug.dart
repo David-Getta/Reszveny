@@ -2749,6 +2749,11 @@ class AppLocalizationsUg extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'كېيىن پورتفېلدىكى ئۈلۈش: $after (ھازىر $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

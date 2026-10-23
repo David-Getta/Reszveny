@@ -823,5 +823,6 @@
   "positionHeld": "Ntango ya kosimba",
   "durationMonths": "{months, plural, one{sanza {months}} other{sanza {months}}}",
   "durationDays": "{days, plural, one{mokɔlɔ {days}} other{mikɔlɔ {days}}}",
-  "positionHeldSince": "banda {date}"
+  "positionHeldSince": "banda {date}",
+  "lotPreviewWeight": "Ndambo ya portfolio na sima: {after} (sikoyo {before})"
 }

@@ -823,5 +823,6 @@
   "positionHeld": "ماوەی هەڵگرتن",
   "durationMonths": "{months, plural, one{{months} مانگ} other{{months} مانگ}}",
   "durationDays": "{days, plural, one{{days} ڕۆژ} other{{days} ڕۆژ}}",
-  "positionHeldSince": "لە {date}ەوە"
+  "positionHeldSince": "لە {date}ەوە",
+  "lotPreviewWeight": "بەش لە پۆرتفۆلیۆ دوای ئەمە: {after} (ئێستا {before})"
 }

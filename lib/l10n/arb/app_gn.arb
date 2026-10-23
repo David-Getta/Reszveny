@@ -823,5 +823,6 @@
   "positionHeld": "Mbovy aja reguereko",
   "durationMonths": "{months, plural, one{{months} jasy} other{{months} jasy}}",
   "durationDays": "{days, plural, one{{days} ára} other{{days} ára}}",
-  "positionHeldSince": "{date} guive"
+  "positionHeldSince": "{date} guive",
+  "lotPreviewWeight": "Ipehẽ cartera-pe upe rire: {after} (koʼág̃a {before})"
 }

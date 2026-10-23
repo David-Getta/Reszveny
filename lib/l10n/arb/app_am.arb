@@ -823,5 +823,6 @@
   "positionHeld": "የተያዘበት ጊዜ",
   "durationMonths": "{months, plural, one{{months} ወር} other{{months} ወራት}}",
   "durationDays": "{days, plural, one{{days} ቀን} other{{days} ቀናት}}",
-  "positionHeldSince": "ከ{date} ጀምሮ"
+  "positionHeldSince": "ከ{date} ጀምሮ",
+  "lotPreviewWeight": "ከግብይቱ በኋላ የፖርትፎሊዮ ድርሻ፦ {after} (አሁን {before})"
 }

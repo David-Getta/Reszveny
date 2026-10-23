@@ -2755,6 +2755,11 @@ class AppLocalizationsRn extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Igice mu ishoramari hanyuma: $after (ubu $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Shiraho intumbero';
 
   @override

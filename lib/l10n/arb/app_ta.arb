@@ -823,5 +823,6 @@
   "positionHeld": "வைத்திருக்கும் காலம்",
   "durationMonths": "{months, plural, one{{months} மாதம்} other{{months} மாதங்கள்}}",
   "durationDays": "{days, plural, one{{days} நாள்} other{{days} நாட்கள்}}",
-  "positionHeldSince": "{date} முதல்"
+  "positionHeldSince": "{date} முதல்",
+  "lotPreviewWeight": "பின்னர் போர்ட்ஃபோலியோவில் பங்கு: {after} (தற்போது {before})"
 }

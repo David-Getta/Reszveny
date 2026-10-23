@@ -2758,6 +2758,11 @@ class AppLocalizationsLn extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Ndambo ya portfolio na sima: $after (sikoyo $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

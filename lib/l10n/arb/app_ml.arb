@@ -823,5 +823,6 @@
   "positionHeld": "കൈവശം വെച്ച കാലയളവ്",
   "durationMonths": "{months, plural, one{{months} മാസം} other{{months} മാസം}}",
   "durationDays": "{days, plural, one{{days} ദിവസം} other{{days} ദിവസം}}",
-  "positionHeldSince": "{date} മുതൽ"
+  "positionHeldSince": "{date} മുതൽ",
+  "lotPreviewWeight": "പിന്നീട് പോർട്ട്ഫോളിയോയിലെ പങ്ക്: {after} (ഇപ്പോൾ {before})"
 }

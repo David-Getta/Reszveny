@@ -823,5 +823,6 @@
   "positionHeld": "Faharetan'ny fitazonana",
   "durationMonths": "{months, plural, one{{months} volana} other{{months} volana}}",
   "durationDays": "{days, plural, one{{days} andro} other{{days} andro}}",
-  "positionHeldSince": "hatramin'ny {date}"
+  "positionHeldSince": "hatramin'ny {date}",
+  "lotPreviewWeight": "Anjara ao amin'ny kitapom-bola aorian'izay: {after} (amin'izao {before})"
 }

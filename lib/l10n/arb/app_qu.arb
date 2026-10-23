@@ -823,5 +823,6 @@
   "positionHeld": "Hap'isqa pacha",
   "durationMonths": "{months, plural, one{{months} killa} other{{months} killa}}",
   "durationDays": "{days, plural, one{{days} p'unchaw} other{{days} p'unchaw}}",
-  "positionHeldSince": "{date}manta pacha"
+  "positionHeldSince": "{date}manta pacha",
+  "lotPreviewWeight": "Portafoliopi rakin chaymanta: {after} (kunan {before})"
 }

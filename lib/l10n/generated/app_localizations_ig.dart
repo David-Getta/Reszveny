@@ -2739,6 +2739,11 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Òkè na pọtụfoliyo mgbe e mesịrị: $after (ugbu a $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tọọ ebumnuche';
 
   @override

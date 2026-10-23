@@ -8,6 +8,7 @@ import '../../widgets/date_picker_row.dart';
 import '../stock_detail/widgets/earnings_soon_line.dart';
 import 'account_field.dart';
 import 'portfolio_store.dart' show PortfolioLot, largestKey;
+import 'portfolio_valuation.dart' show PortfolioSnapshot, weightChange;
 
 /// Szám a beviteli mezőbe: pont tizedesjellel, ezres tagolás nélkül, amit a
 /// [parseDecimal] változatlanul visszaolvas.
@@ -141,6 +142,30 @@ class _AddLotDialogState extends State<_AddLotDialog> {
 
   void _changed() => setState(() {});
 
+  /// A portfólió mostani értéke a súly-előnézethez (a gyorsítótárazott árakból);
+  /// amíg nem töltődött be, vagy ha nem sikerült, nincs súly-sor.
+  PortfolioSnapshot? _portfolio;
+  bool _portfolioLoading = false;
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    if (_portfolioLoading) return;
+    _portfolioLoading = true;
+    final services = AppServices.of(context);
+    final positions = services.portfolio.positions;
+    if (positions.isEmpty) return;
+    PortfolioSnapshot.load(
+      positions,
+      marketData: services.marketData,
+      fx: services.fx,
+      currency: PortfolioSnapshot.totalCurrency(positions, services.displayCurrency(Localizations.localeOf(context))),
+      cash: services.portfolio.cash,
+    ).then((s) {
+      if (mounted) setState(() => _portfolio = s);
+    }, onError: (Object _) {});
+  }
+
   /// Az előnézet: vételnél az új átlagár (ha már van a részvényből), eladásnál a
   /// FIFO szerint várható realizált eredmény (a díjjal); `null`, ha még nem érvényes
   /// a darabszám vagy az ár.
@@ -163,34 +188,63 @@ class _AddLotDialogState extends State<_AddLotDialog> {
       fee: fee,
     );
     final style = theme.textTheme.bodySmall?.copyWith(color: p.muted);
+    // A súly a portfólióban ezután (ha más is van benne – egyetlen pozíció mindig 100%).
+    final weight = switch (_portfolio) {
+      final snap? => weightChange(
+        snap,
+        widget.symbol,
+        q,
+        sell: widget.sell,
+        price: widget.currentPrice,
+        currency: widget.currency,
+      ),
+      _ => null,
+    };
+    final weightLine = weight == null || (weight.before > 99.95 && weight.after > 99.95)
+        ? null
+        : Text(
+            l10n.lotPreviewWeight(fmt.percent(weight.after, decimals: 1), fmt.percent(weight.before, decimals: 1)),
+            key: const ValueKey('lot-preview-weight'),
+            style: style,
+          );
+    Widget? withWeight(Widget? main) => main == null
+        ? weightLine
+        : weightLine == null
+        ? main
+        : Column(crossAxisAlignment: CrossAxisAlignment.start, children: [main, const SizedBox(height: 4), weightLine]);
     if (widget.sell) {
       // Az egész részvényen mérve: egy korábbi napra írt eladás a későbbiek párosítását is módosíthatja.
       final (:before, :after) = store.preview(lot);
       final gain = after.realizedGain - (before?.realizedGain ?? 0);
-      return Text.rich(
-        key: const ValueKey('lot-preview'),
-        TextSpan(
-          text: '${l10n.lotPreviewRealized} ',
-          children: [
-            TextSpan(
-              text: fmt.money(gain, widget.currency, withSign: true),
-              style: TextStyle(color: gainColor(p, gain), fontWeight: FontWeight.w600),
-            ),
-          ],
+      return withWeight(
+        Text.rich(
+          key: const ValueKey('lot-preview'),
+          TextSpan(
+            text: '${l10n.lotPreviewRealized} ',
+            children: [
+              TextSpan(
+                text: fmt.money(gain, widget.currency, withSign: true),
+                style: TextStyle(color: gainColor(p, gain), fontWeight: FontWeight.w600),
+              ),
+            ],
+          ),
+          style: style,
         ),
-        style: style,
       );
     }
     // Vételnél abban a nézetben, ahonnan a dialógus nyílt (számla-nézetben a vétel számlájáé).
     final (:before, :after) = store.preview(lot, view: widget.account == null ? null : account);
-    if (before == null || before.isClosed) return null;
-    return Text(
-      l10n.lotPreviewAverage(
-        fmt.money(after.averageCost, widget.currency),
-        fmt.money(before.averageCost, widget.currency),
-      ),
-      key: const ValueKey('lot-preview'),
-      style: style,
+    return withWeight(
+      before == null || before.isClosed
+          ? null
+          : Text(
+              l10n.lotPreviewAverage(
+                fmt.money(after.averageCost, widget.currency),
+                fmt.money(before.averageCost, widget.currency),
+              ),
+              key: const ValueKey('lot-preview'),
+              style: style,
+            ),
     );
   }
 

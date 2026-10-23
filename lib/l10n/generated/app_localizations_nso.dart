@@ -2765,6 +2765,11 @@ class AppLocalizationsNso extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Karolo ya potefolio ka morago: $after (bjale $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Bea maikemišetšo';
 
   @override

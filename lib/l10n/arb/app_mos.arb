@@ -823,5 +823,6 @@
   "positionHeld": "Wakat ning f sẽn tall-a",
   "durationMonths": "{months, plural, one{kiuug a yembre} other{kiuud {months}}}",
   "durationDays": "{days, plural, one{daar a yembre} other{rasem {days}}}",
-  "positionHeldSince": "sẽn sɩng {date}"
+  "positionHeldSince": "sẽn sɩng {date}",
+  "lotPreviewWeight": "Portfolio wã pʋɩɩr rẽ poorẽ: {after} (masã {before})"
 }

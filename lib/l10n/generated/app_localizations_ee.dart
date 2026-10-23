@@ -2752,6 +2752,11 @@ class AppLocalizationsEe extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Akpa si wòaxɔ le portfolio la me emegbe: $after (fifia $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ɖo taɖodzinu';
 
   @override

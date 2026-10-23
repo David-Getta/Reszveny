@@ -823,5 +823,6 @@
   "positionHeld": "Saqlash muddati",
   "durationMonths": "{months, plural, one{{months} oy} other{{months} oy}}",
   "durationDays": "{days, plural, one{{days} kun} other{{days} kun}}",
-  "positionHeldSince": "{date} sanasidan beri"
+  "positionHeldSince": "{date} sanasidan beri",
+  "lotPreviewWeight": "Keyin portfeldagi ulush: {after} (hozir {before})"
 }

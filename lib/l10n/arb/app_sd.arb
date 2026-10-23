@@ -823,5 +823,6 @@
   "positionHeld": "رکڻ جو عرصو",
   "durationMonths": "{months, plural, one{{months} مهينو} other{{months} مهينا}}",
   "durationDays": "{days, plural, one{{days} ڏينهن} other{{days} ڏينهن}}",
-  "positionHeldSince": "{date} کان"
+  "positionHeldSince": "{date} کان",
+  "lotPreviewWeight": "پوءِ پورٽ فوليو ۾ حصو: {after} (هاڻي {before})"
 }

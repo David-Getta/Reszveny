@@ -2752,6 +2752,11 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'ನಂತರ ಪೋರ್ಟ್‌ಫೋಲಿಯೊದಲ್ಲಿ ಪಾಲು: $after (ಈಗ $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

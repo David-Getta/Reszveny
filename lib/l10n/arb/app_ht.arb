@@ -823,5 +823,6 @@
   "positionHeld": "Tan ou kenbe l",
   "durationMonths": "{months, plural, one{{months} mwa} other{{months} mwa}}",
   "durationDays": "{days, plural, one{{days} jou} other{{days} jou}}",
-  "positionHeldSince": "depi {date}"
+  "positionHeldSince": "depi {date}",
+  "lotPreviewWeight": "Pòsyon nan pòtfèy la apre: {after} (kounye a {before})"
 }

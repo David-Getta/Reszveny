@@ -823,5 +823,6 @@
   "positionHeld": "Nako e o e tshwereng",
   "durationMonths": "{months, plural, one{kgwedi e le {months}} other{dikgwedi di le {months}}}",
   "durationDays": "{days, plural, one{letsatsi le le {days}} other{malatsi a le {days}}}",
-  "positionHeldSince": "go tloga ka {date}"
+  "positionHeldSince": "go tloga ka {date}",
+  "lotPreviewWeight": "Karolo ya potefolio morago: {after} (jaanong {before})"
 }

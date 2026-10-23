@@ -2819,6 +2819,11 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Podiel v portfóliu potom: $after (teraz $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastaviť cieľ';
 
   @override

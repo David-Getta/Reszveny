@@ -2365,6 +2365,20 @@
       }
     }
   },
+  "lotPreviewWeight": "Share of the portfolio afterwards: {after} (now {before})",
+  "@lotPreviewWeight": {
+    "description": "Buy/sell dialog preview: the stock's share of the whole portfolio value after this transaction and now (both percentages), e.g. \"Share of the portfolio afterwards: 27.4% (now 18.2%)\".",
+    "placeholders": {
+      "after": {
+        "type": "String",
+        "example": "27.4%"
+      },
+      "before": {
+        "type": "String",
+        "example": "18.2%"
+      }
+    }
+  },
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

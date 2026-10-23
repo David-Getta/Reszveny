@@ -823,5 +823,6 @@
   "positionHeld": "Dema xwedîkirinê",
   "durationMonths": "{months, plural, one{{months} meh} other{{months} meh}}",
   "durationDays": "{days, plural, one{{days} roj} other{{days} roj}}",
-  "positionHeldSince": "ji {date} ve"
+  "positionHeldSince": "ji {date} ve",
+  "lotPreviewWeight": "Para di portfoliyoyê de piştre: {after} (niha {before})"
 }

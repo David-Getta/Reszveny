@@ -302,6 +302,32 @@ class PortfolioSnapshot {
 /// venni (+) vagy eladni (−) a portfólió pénznemében.
 typedef RebalanceStep = ({String symbol, double current, double target, double amount});
 
+/// Egy részvény súlya a portfólió összértékében (%) egy vétel vagy eladás előtt és
+/// után, a mostani áron: a vétel új pénzként növeli, az eladás csökkenti az
+/// összértéket. Új pozíciónál a [price] és a [currency] kell (az árfolyam egy azonos
+/// pénznemű sorból vagy az összesítés pénzneméből). `null`, ha nincs ár, árfolyam
+/// vagy összérték.
+({double before, double after})? weightChange(
+  PortfolioSnapshot s,
+  String symbol,
+  double quantity, {
+  required bool sell,
+  double? price,
+  required String currency,
+}) {
+  final row = s.rows.where((r) => r.position.symbol == symbol.toUpperCase()).firstOrNull;
+  final px = row?.price ?? price;
+  final rate =
+      row?.rate ??
+      (currency == s.currency ? 1.0 : s.rows.where((r) => r.position.currency == currency).firstOrNull?.rate);
+  if (px == null || px <= 0 || rate == null || s.totalValue <= 0) return null;
+  final now = (row?.value ?? 0) * rate;
+  final delta = quantity * px * rate * (sell ? -1 : 1);
+  final total = s.totalValue + delta;
+  if (total <= 0) return null;
+  return (before: now / s.totalValue * 100, after: ((now + delta) / total * 100).clamp(0, 100).toDouble());
+}
+
 /// A mai változás legnagyobb okozói: pozíciónként a mai változás a megjelenítési
 /// pénznemben, abszolút érték szerint csökkenő sorrendben, legfeljebb [n] darab.
 /// Üres, ha kevesebb mint két pozíció mozdult (egynél nincs mit kiemelni).

@@ -2758,6 +2758,11 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Ingxenye yephothifoliyo ngemuva kwalokho: $after (manje $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setha umgomo';
 
   @override

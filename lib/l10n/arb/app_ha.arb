@@ -823,5 +823,6 @@
   "positionHeld": "Lokacin riƙewa",
   "durationMonths": "{months, plural, one{wata {months}} other{watanni {months}}}",
   "durationDays": "{days, plural, one{kwana {days}} other{kwanaki {days}}}",
-  "positionHeldSince": "tun {date}"
+  "positionHeldSince": "tun {date}",
+  "lotPreviewWeight": "Kaso a jakar hannun jari bayan haka: {after} (yanzu {before})"
 }

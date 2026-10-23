@@ -2752,6 +2752,11 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Weging in de portefeuille daarna: $after (nu $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Doel instellen';
 
   @override

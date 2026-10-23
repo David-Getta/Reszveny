@@ -2731,6 +2731,11 @@ class AppLocalizationsMos extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Portfolio wã pʋɩɩr rẽ poorẽ: $after (masã $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

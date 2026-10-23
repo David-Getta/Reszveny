@@ -2757,6 +2757,11 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Μερίδιο στο χαρτοφυλάκιο μετά: $after (τώρα $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

@@ -823,5 +823,6 @@
   "positionHeld": "Tshikondo tshia kulama",
   "durationMonths": "{months, plural, one{ngondo {months}} other{ngondo {months}}}",
   "durationDays": "{days, plural, one{dituku {days}} other{matuku {days}}}",
-  "positionHeldSince": "kubangila ku {date}"
+  "positionHeldSince": "kubangila ku {date}",
+  "lotPreviewWeight": "Tshitupa tshia portfolio pashishe: {after} (mpindieu {before})"
 }

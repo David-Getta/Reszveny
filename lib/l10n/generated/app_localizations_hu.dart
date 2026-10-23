@@ -2751,6 +2751,11 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Súly a portfólióban ezután: $after (most $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

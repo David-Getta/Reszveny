@@ -2748,6 +2748,11 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Sehemu katika jalada la hisa baadaye: $after (sasa $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

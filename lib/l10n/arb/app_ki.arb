@@ -823,5 +823,6 @@
   "positionHeld": "Ihinda rĩa kũnyiita",
   "durationMonths": "{months, plural, one{mweri {months}} other{mĩeri {months}}}",
   "durationDays": "{days, plural, one{mũthenya {days}} other{mĩthenya {days}}}",
-  "positionHeldSince": "kuuma {date}"
+  "positionHeldSince": "kuuma {date}",
+  "lotPreviewWeight": "Gĩcunjĩ kĩa portfolio thuutha: {after} (rĩu {before})"
 }

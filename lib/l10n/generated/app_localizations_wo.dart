@@ -2737,6 +2737,11 @@ class AppLocalizationsWo extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Wàll ci portefeuille bi ginnaaw bi: $after (léegi $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

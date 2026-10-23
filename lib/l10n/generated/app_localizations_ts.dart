@@ -2768,6 +2768,11 @@ class AppLocalizationsTs extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Xiphemu xa phothifoliyo endzhaku: $after (sweswi $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Veka xikongomelo';
 
   @override

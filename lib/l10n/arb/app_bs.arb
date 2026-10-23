@@ -823,5 +823,6 @@
   "positionHeld": "Period držanja",
   "durationMonths": "{months, plural, one{{months} mjesec} few{{months} mjeseca} other{{months} mjeseci}}",
   "durationDays": "{days, plural, one{{days} dan} few{{days} dana} other{{days} dana}}",
-  "positionHeldSince": "od {date}"
+  "positionHeldSince": "od {date}",
+  "lotPreviewWeight": "Udio u portfoliju nakon toga: {after} (sada {before})"
 }

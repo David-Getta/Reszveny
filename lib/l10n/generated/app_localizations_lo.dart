@@ -2717,6 +2717,11 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'ສ່ວນແບ່ງໃນພອດໂຟລິໂອຫຼັງຈາກນີ້: $after (ປັດຈຸບັນ $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

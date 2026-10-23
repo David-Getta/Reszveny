@@ -823,5 +823,6 @@
   "positionHeld": "ዝተታሕዘሉ ግዜ",
   "durationMonths": "{months, plural, one{{months} ወርሒ} other{{months} ኣዋርሕ}}",
   "durationDays": "{days, plural, one{{days} መዓልቲ} other{{days} መዓልታት}}",
-  "positionHeldSince": "ካብ {date} ጀሚሩ"
+  "positionHeldSince": "ካብ {date} ጀሚሩ",
+  "lotPreviewWeight": "ድሕሪ ግብይት ክፋል ፖርትፎሊዮ፦ {after} (ሕጂ {before})"
 }

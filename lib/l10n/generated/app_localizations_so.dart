@@ -2755,6 +2755,11 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Qaybta portfoliyada kadib: $after (hadda $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

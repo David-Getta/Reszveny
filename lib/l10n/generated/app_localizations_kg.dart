@@ -2756,6 +2756,11 @@ class AppLocalizationsKg extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Ndambu ya portfolio na nima: $after (ntangu yai $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

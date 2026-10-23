@@ -2733,6 +2733,11 @@ class AppLocalizationsBo extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'དེ་རྗེས་མ་འཇོག་ཚོགས་སྡེབ་ནང་གི་ཆ་ཤས: $after (ད་ལྟ $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
 
   @override

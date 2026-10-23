@@ -823,5 +823,6 @@
   "positionHeld": "Akud n uṭṭaf",
   "durationMonths": "{months, plural, one{{months} n wayyur} other{{months} n wayyuren}}",
   "durationDays": "{days, plural, one{{days} n wass} other{{days} n wussan}}",
-  "positionHeldSince": "seg {date}"
+  "positionHeldSince": "seg {date}",
+  "lotPreviewWeight": "Aḥric deg upurtfulyu sakin: {after} (tura {before})"
 }

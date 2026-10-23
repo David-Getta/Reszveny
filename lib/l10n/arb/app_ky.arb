@@ -823,5 +823,6 @@
   "positionHeld": "Кармоо мөөнөтү",
   "durationMonths": "{months, plural, one{{months} ай} other{{months} ай}}",
   "durationDays": "{days, plural, one{{days} күн} other{{days} күн}}",
-  "positionHeldSince": "{date} баштап"
+  "positionHeldSince": "{date} баштап",
+  "lotPreviewWeight": "Кийин портфелдеги үлүш: {after} (азыр {before})"
 }

@@ -2766,6 +2766,11 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Удел во портфолиото потоа: $after (сега $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Постави цел';
 
   @override

@@ -823,5 +823,6 @@
   "positionHeld": "Тоту вакыты",
   "durationMonths": "{months, plural, one{{months} ай} other{{months} ай}}",
   "durationDays": "{days, plural, one{{days} көн} other{{days} көн}}",
-  "positionHeldSince": "{date} датасыннан бирле"
+  "positionHeldSince": "{date} датасыннан бирле",
+  "lotPreviewWeight": "Аннары портфельдәге өлеш: {after} (хәзер {before})"
 }

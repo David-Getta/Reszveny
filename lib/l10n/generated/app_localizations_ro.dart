@@ -2788,6 +2788,11 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Pondere în portofoliu după tranzacție: $after (acum $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

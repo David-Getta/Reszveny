@@ -2710,6 +2710,11 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'ከግብይቱ በኋላ የፖርትፎሊዮ ድርሻ፦ $after (አሁን $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

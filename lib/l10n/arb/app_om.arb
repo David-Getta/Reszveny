@@ -823,5 +823,6 @@
   "positionHeld": "Yeroo qabannaa",
   "durationMonths": "{months, plural, one{ji'a {months}} other{ji'a {months}}}",
   "durationDays": "{days, plural, one{guyyaa {days}} other{guyyaa {days}}}",
-  "positionHeldSince": "{date} irraa kaasee"
+  "positionHeldSince": "{date} irraa kaasee",
+  "lotPreviewWeight": "Qooda poortfooliyoo booda: {after} (amma {before})"
 }

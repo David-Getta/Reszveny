@@ -2755,6 +2755,11 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Բաժինը պորտֆելում գործարքից հետո՝ $after (այժմ $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

@@ -823,5 +823,6 @@
   "positionHeld": "Durée de détention",
   "durationMonths": "{months, plural, one{{months} mois} other{{months} mois}}",
   "durationDays": "{days, plural, one{{days} jour} other{{days} jours}}",
-  "positionHeldSince": "depuis le {date}"
+  "positionHeldSince": "depuis le {date}",
+  "lotPreviewWeight": "Poids dans le portefeuille après l’opération : {after} (actuellement {before})"
 }

@@ -2741,6 +2741,11 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Porsi di portofolio setelahnya: $after (saat ini $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tetapkan target';
 
   @override

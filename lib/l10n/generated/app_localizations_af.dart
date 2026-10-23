@@ -2750,6 +2750,11 @@ class AppLocalizationsAf extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Deel van die portefeulje daarna: $after (tans $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Stel \'n doelwit';
 
   @override

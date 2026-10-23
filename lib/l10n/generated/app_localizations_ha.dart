@@ -2753,6 +2753,11 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Kaso a jakar hannun jari bayan haka: $after (yanzu $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

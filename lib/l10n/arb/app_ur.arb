@@ -823,5 +823,6 @@
   "positionHeld": "رکھنے کی مدت",
   "durationMonths": "{months, plural, one{{months} مہینہ} other{{months} مہینے}}",
   "durationDays": "{days, plural, one{{days} دن} other{{days} دن}}",
-  "positionHeldSince": "{date} سے"
+  "positionHeldSince": "{date} سے",
+  "lotPreviewWeight": "بعد میں پورٹ فولیو میں حصہ: {after} (فی الحال {before})"
 }

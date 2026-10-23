@@ -2752,6 +2752,11 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Pesha në portofol më pas: $after (tani $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

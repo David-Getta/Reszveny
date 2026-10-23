@@ -2756,6 +2756,11 @@ class AppLocalizationsNy extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Gawo la potifoliyo pambuyo pake: $after (pano $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

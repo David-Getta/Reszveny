@@ -823,5 +823,6 @@
   "positionHeld": "Thời gian nắm giữ",
   "durationMonths": "{months, plural, other{{months} tháng}}",
   "durationDays": "{days, plural, other{{days} ngày}}",
-  "positionHeldSince": "từ {date}"
+  "positionHeldSince": "từ {date}",
+  "lotPreviewWeight": "Tỷ trọng trong danh mục sau giao dịch: {after} (hiện tại {before})"
 }

@@ -823,5 +823,6 @@
   "positionHeld": "Turėjimo laikotarpis",
   "durationMonths": "{months, plural, one{{months} mėnuo} few{{months} mėnesiai} many{{months} mėnesio} other{{months} mėnesių}}",
   "durationDays": "{days, plural, one{{days} diena} few{{days} dienos} many{{days} dienos} other{{days} dienų}}",
-  "positionHeldSince": "nuo {date}"
+  "positionHeldSince": "nuo {date}",
+  "lotPreviewWeight": "Portfelio dalis po sandorio: {after} (dabar {before})"
 }

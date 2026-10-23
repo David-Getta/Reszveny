@@ -2746,6 +2746,11 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Дараа нь багц дахь эзлэх хувь: $after (одоо $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

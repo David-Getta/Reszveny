@@ -823,5 +823,6 @@
   "positionHeld": "مدت نگهداری",
   "durationMonths": "{months, plural, one{{months} ماه} other{{months} ماه}}",
   "durationDays": "{days, plural, one{{days} روز} other{{days} روز}}",
-  "positionHeldSince": "از {date}"
+  "positionHeldSince": "از {date}",
+  "lotPreviewWeight": "سهم از سبد پس از معامله: {after} (اکنون {before})"
 }

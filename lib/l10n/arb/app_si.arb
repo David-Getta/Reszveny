@@ -823,5 +823,6 @@
   "positionHeld": "රඳවා ගත් කාලය",
   "durationMonths": "{months, plural, one{මාස {months}} other{මාස {months}}}",
   "durationDays": "{days, plural, one{දින {days}} other{දින {days}}}",
-  "positionHeldSince": "{date} සිට"
+  "positionHeldSince": "{date} සිට",
+  "lotPreviewWeight": "ගනුදෙනුවෙන් පසු කළඹේ කොටස: {after} (දැනට {before})"
 }

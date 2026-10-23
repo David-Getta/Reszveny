@@ -4681,6 +4681,12 @@ abstract class AppLocalizations {
   /// **'since {date}'**
   String positionHeldSince(String date);
 
+  /// Buy/sell dialog preview: the stock's share of the whole portfolio value after this transaction and now (both percentages), e.g. "Share of the portfolio afterwards: 27.4% (now 18.2%)".
+  ///
+  /// In en, this message translates to:
+  /// **'Share of the portfolio afterwards: {after} (now {before})'**
+  String lotPreviewWeight(String after, String before);
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

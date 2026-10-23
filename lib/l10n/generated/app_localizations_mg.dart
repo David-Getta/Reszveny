@@ -2766,6 +2766,11 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Anjara ao amin\'ny kitapom-bola aorian\'izay: $after (amin\'izao $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

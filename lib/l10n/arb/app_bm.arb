@@ -823,5 +823,6 @@
   "positionHeld": "Marali waati",
   "durationMonths": "{months, plural, other{kalo {months}}}",
   "durationDays": "{days, plural, other{tile {days}}}",
-  "positionHeldSince": "kabini {date}"
+  "positionHeldSince": "kabini {date}",
+  "lotPreviewWeight": "Tilayɔrɔ portfolio kɔnɔ o kɔfɛ: {after} (sisan {before})"
 }

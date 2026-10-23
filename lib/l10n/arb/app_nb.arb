@@ -823,5 +823,6 @@
   "positionHeld": "Eiertid",
   "durationMonths": "{months, plural, one{{months} måned} other{{months} måneder}}",
   "durationDays": "{days, plural, one{{days} dag} other{{days} dager}}",
-  "positionHeldSince": "siden {date}"
+  "positionHeldSince": "siden {date}",
+  "lotPreviewWeight": "Andel av porteføljen etterpå: {after} (nå {before})"
 }

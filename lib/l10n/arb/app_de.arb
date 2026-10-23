@@ -823,5 +823,6 @@
   "positionHeld": "Haltedauer",
   "durationMonths": "{months, plural, one{{months} Monat} other{{months} Monate}}",
   "durationDays": "{days, plural, one{{days} Tag} other{{days} Tage}}",
-  "positionHeldSince": "seit {date}"
+  "positionHeldSince": "seit {date}",
+  "lotPreviewWeight": "Anteil am Portfolio danach: {after} (bisher {before})"
 }

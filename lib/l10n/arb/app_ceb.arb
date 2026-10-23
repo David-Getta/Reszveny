@@ -823,5 +823,6 @@
   "positionHeld": "Gidugayon sa paghupot",
   "durationMonths": "{months, plural, one{{months} ka bulan} other{{months} ka bulan}}",
   "durationDays": "{days, plural, one{{days} ka adlaw} other{{days} ka adlaw}}",
-  "positionHeldSince": "sukad sa {date}"
+  "positionHeldSince": "sukad sa {date}",
+  "lotPreviewWeight": "Bahin sa portfolio human niini: {after} (karon {before})"
 }

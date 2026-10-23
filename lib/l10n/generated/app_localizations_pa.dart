@@ -2743,6 +2743,11 @@ class AppLocalizationsPa extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'ਬਾਅਦ ਵਿੱਚ ਪੋਰਟਫ਼ੋਲੀਓ ਵਿੱਚ ਹਿੱਸਾ: $after (ਹੁਣ $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ਟੀਚਾ ਤੈਅ ਕਰੋ';
 
   @override

@@ -2743,6 +2743,11 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'ගනුදෙනුවෙන් පසු කළඹේ කොටස: $after (දැනට $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ඉලක්කයක් සකසන්න';
 
   @override

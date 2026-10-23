@@ -823,5 +823,6 @@
   "positionHeld": "ಹೊಂದಿರುವ ಅವಧಿ",
   "durationMonths": "{months, plural, one{{months} ತಿಂಗಳು} other{{months} ತಿಂಗಳುಗಳು}}",
   "durationDays": "{days, plural, one{{days} ದಿನ} other{{days} ದಿನಗಳು}}",
-  "positionHeldSince": "{date} ರಿಂದ"
+  "positionHeldSince": "{date} ರಿಂದ",
+  "lotPreviewWeight": "ನಂತರ ಪೋರ್ಟ್‌ಫೋಲಿಯೊದಲ್ಲಿ ಪಾಲು: {after} (ಈಗ {before})"
 }

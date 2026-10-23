@@ -2822,6 +2822,11 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Частка в портфелі після угоди: $after (зараз $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задати ціль';
 
   @override

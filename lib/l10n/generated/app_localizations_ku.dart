@@ -2749,6 +2749,11 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Para di portfoliyoyê de piştre: $after (niha $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

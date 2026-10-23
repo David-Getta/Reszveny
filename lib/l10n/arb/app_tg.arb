@@ -823,5 +823,6 @@
   "positionHeld": "Мӯҳлати нигоҳдорӣ",
   "durationMonths": "{months, plural, one{{months} моҳ} other{{months} моҳ}}",
   "durationDays": "{days, plural, one{{days} рӯз} other{{days} рӯз}}",
-  "positionHeldSince": "аз {date}"
+  "positionHeldSince": "аз {date}",
+  "lotPreviewWeight": "Ҳисса дар портфел пас аз он: {after} (ҳозир {before})"
 }

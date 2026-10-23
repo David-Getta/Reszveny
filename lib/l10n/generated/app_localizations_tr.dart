@@ -2746,6 +2746,11 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'İşlem sonrası portföy payı: $after (şu an $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hedef belirle';
 
   @override

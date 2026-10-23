@@ -823,5 +823,6 @@
   "positionHeld": "Oge i jidere ya",
   "durationMonths": "{months, plural, other{ọnwa {months}}}",
   "durationDays": "{days, plural, other{ụbọchị {days}}}",
-  "positionHeldSince": "kemgbe {date}"
+  "positionHeldSince": "kemgbe {date}",
+  "lotPreviewWeight": "Òkè na pọtụfoliyo mgbe e mesịrị: {after} (ugbu a {before})"
 }

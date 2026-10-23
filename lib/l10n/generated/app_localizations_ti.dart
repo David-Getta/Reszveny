@@ -2708,6 +2708,11 @@ class AppLocalizationsTi extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'ድሕሪ ግብይት ክፋል ፖርትፎሊዮ፦ $after (ሕጂ $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

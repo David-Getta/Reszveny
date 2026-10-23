@@ -2815,6 +2815,11 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'الحصة من المحفظة بعد العملية: $after (حاليًا $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'تحديد هدف';
 
   @override

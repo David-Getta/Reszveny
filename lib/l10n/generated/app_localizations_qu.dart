@@ -2760,6 +2760,11 @@ class AppLocalizationsQu extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Portafoliopi rakin chaymanta: $after (kunan $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

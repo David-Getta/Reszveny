@@ -823,5 +823,6 @@
   "positionHeld": "Saxlama müddəti",
   "durationMonths": "{months, plural, one{{months} ay} other{{months} ay}}",
   "durationDays": "{days, plural, one{{days} gün} other{{days} gün}}",
-  "positionHeldSince": "{date} tarixindən"
+  "positionHeldSince": "{date} tarixindən",
+  "lotPreviewWeight": "Sonra portfeldəki pay: {after} (hazırda {before})"
 }

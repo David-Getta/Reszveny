@@ -2736,6 +2736,11 @@ class AppLocalizationsSd extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'پوءِ پورٽ فوليو ۾ حصو: $after (هاڻي $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

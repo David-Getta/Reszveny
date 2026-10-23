@@ -823,5 +823,6 @@
   "positionHeld": "Aanhoudperiode",
   "durationMonths": "{months, plural, one{{months} maand} other{{months} maanden}}",
   "durationDays": "{days, plural, one{{days} dag} other{{days} dagen}}",
-  "positionHeldSince": "sinds {date}"
+  "positionHeldSince": "sinds {date}",
+  "lotPreviewWeight": "Weging in de portefeuille daarna: {after} (nu {before})"
 }

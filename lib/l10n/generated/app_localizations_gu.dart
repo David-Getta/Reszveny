@@ -2740,6 +2740,11 @@ class AppLocalizationsGu extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'પછી પોર્ટફોલિયોમાં હિસ્સો: $after (હાલ $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'લક્ષ્ય નક્કી કરો';
 
   @override

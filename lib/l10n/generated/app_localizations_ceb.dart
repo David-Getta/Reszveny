@@ -2758,6 +2758,11 @@ class AppLocalizationsCeb extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Bahin sa portfolio human niini: $after (karon $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

@@ -2757,6 +2757,11 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'பின்னர் போர்ட்ஃபோலியோவில் பங்கு: $after (தற்போது $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'இலக்கை அமை';
 
   @override

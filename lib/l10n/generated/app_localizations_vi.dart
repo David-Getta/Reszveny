@@ -2737,6 +2737,11 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Tỷ trọng trong danh mục sau giao dịch: $after (hiện tại $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

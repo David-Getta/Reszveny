@@ -2744,6 +2744,11 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Aḥric deg upurtfulyu sakin: $after (tura $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

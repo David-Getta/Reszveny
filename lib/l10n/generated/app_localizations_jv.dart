@@ -2748,6 +2748,11 @@ class AppLocalizationsJv extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Bagean ing portofolio sakwise: $after (saiki $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setel target';
 
   @override

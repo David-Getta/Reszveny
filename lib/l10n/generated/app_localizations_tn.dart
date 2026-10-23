@@ -2765,6 +2765,11 @@ class AppLocalizationsTn extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Karolo ya potefolio morago: $after (jaanong $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Baya maikaelelo';
 
   @override

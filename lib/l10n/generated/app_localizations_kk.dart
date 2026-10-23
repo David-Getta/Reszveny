@@ -2745,6 +2745,11 @@ class AppLocalizationsKk extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Кейін портфельдегі үлес: $after (қазір $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Мақсат қою';
 
   @override

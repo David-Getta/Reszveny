@@ -823,5 +823,6 @@
   "positionHeld": "ཉར་བའི་དུས་ཡུན",
   "durationMonths": "{months, plural, other{ཟླ་བ་ {months}}}",
   "durationDays": "{days, plural, other{ཉིན་ {days}}}",
-  "positionHeldSince": "{date} ནས་བཟུང་"
+  "positionHeldSince": "{date} ནས་བཟུང་",
+  "lotPreviewWeight": "དེ་རྗེས་མ་འཇོག་ཚོགས་སྡེབ་ནང་གི་ཆ་ཤས: {after} (ད་ལྟ {before})"
 }

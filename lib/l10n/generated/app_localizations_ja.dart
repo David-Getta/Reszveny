@@ -2661,6 +2661,11 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return '取引後のポートフォリオ比率：$after（現在 $before）';
+  }
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override

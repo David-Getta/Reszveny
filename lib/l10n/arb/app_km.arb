@@ -823,5 +823,6 @@
   "positionHeld": "រយៈពេលកាន់កាប់",
   "durationMonths": "{months, plural, other{{months} ខែ}}",
   "durationDays": "{days, plural, other{{days} ថ្ងៃ}}",
-  "positionHeldSince": "ចាប់ពី {date}"
+  "positionHeldSince": "ចាប់ពី {date}",
+  "lotPreviewWeight": "ចំណែកក្នុងផលប័ត្របន្ទាប់ពីនេះ៖ {after} (បច្ចុប្បន្ន {before})"
 }

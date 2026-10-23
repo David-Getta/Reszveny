@@ -2767,6 +2767,11 @@ class AppLocalizationsIlo extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Paset ti portfolio kalpasanna: $after (ita $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

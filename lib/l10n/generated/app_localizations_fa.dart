@@ -2742,6 +2742,11 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'سهم از سبد پس از معامله: $after (اکنون $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

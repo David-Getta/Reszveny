@@ -823,5 +823,6 @@
   "positionHeld": "ଧାରଣ ଅବଧି",
   "durationMonths": "{months, plural, one{{months} ମାସ} other{{months} ମାସ}}",
   "durationDays": "{days, plural, one{{days} ଦିନ} other{{days} ଦିନ}}",
-  "positionHeldSince": "{date}ଠାରୁ"
+  "positionHeldSince": "{date}ଠାରୁ",
+  "lotPreviewWeight": "ପରେ ପୋର୍ଟଫୋଲିଓରେ ଅଂଶ: {after} (ବର୍ତ୍ତମାନ {before})"
 }

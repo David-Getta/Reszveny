@@ -823,5 +823,6 @@
   "positionHeld": "Perioadă de deținere",
   "durationMonths": "{months, plural, one{{months} lună} few{{months} luni} other{{months} de luni}}",
   "durationDays": "{days, plural, one{{days} zi} few{{days} zile} other{{days} de zile}}",
-  "positionHeldSince": "din {date}"
+  "positionHeldSince": "din {date}",
+  "lotPreviewWeight": "Pondere în portofoliu după tranzacție: {after} (acum {before})"
 }

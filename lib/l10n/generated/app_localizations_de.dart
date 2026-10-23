@@ -2760,6 +2760,11 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Anteil am Portfolio danach: $after (bisher $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ziel festlegen';
 
   @override

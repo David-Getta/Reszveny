@@ -2744,6 +2744,11 @@ class AppLocalizationsDa extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Andel af porteføljen bagefter: $after (nu $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sæt et mål';
 
   @override

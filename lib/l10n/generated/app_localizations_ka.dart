@@ -2746,6 +2746,11 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'წილი პორტფელში შემდეგ: $after (ახლა $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

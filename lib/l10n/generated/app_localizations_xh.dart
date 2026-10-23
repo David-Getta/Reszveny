@@ -2759,6 +2759,11 @@ class AppLocalizationsXh extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Isiqephu sepotifoliyo emva koko: $after (ngoku $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

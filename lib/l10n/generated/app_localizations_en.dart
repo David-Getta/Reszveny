@@ -2743,6 +2743,11 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Share of the portfolio afterwards: $after (now $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Set a goal';
 
   @override

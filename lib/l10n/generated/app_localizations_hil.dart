@@ -2763,6 +2763,11 @@ class AppLocalizationsHil extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Bahin sa portfolio pagkatapos sini: $after (subong $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

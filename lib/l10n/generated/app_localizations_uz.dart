@@ -2750,6 +2750,11 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Keyin portfeldagi ulush: $after (hozir $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

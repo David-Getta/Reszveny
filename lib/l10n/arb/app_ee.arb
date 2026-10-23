@@ -823,5 +823,6 @@
   "positionHeld": "Ɣeyiɣi si nèlée ɖe asi",
   "durationMonths": "{months, plural, one{ɣleti {months}} other{ɣleti {months}}}",
   "durationDays": "{days, plural, one{ŋkeke {days}} other{ŋkeke {days}}}",
-  "positionHeldSince": "tso {date} dzi"
+  "positionHeldSince": "tso {date} dzi",
+  "lotPreviewWeight": "Akpa si wòaxɔ le portfolio la me emegbe: {after} (fifia {before})"
 }

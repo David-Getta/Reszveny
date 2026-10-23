@@ -60,6 +60,35 @@ void main() {
     expect(topDayMovers(snap({'A': 1})), isEmpty);
   });
 
+  test('weight before and after a trade: new money for a buy, less value after a sale', () {
+    final store = PortfolioStore(
+      lots: [
+        PortfolioLot(id: 'a', symbol: 'A', quantity: 10, price: 10, currency: 'USD'),
+        PortfolioLot(id: 'b', symbol: 'B', quantity: 30, price: 10, currency: 'USD'),
+      ],
+    );
+    final s = PortfolioSnapshot.compute(
+      store.positions,
+      quotes: const {
+        'A': StockQuote(symbol: 'A', price: 10, change: 0),
+        'B': StockQuote(symbol: 'B', price: 10, change: 0),
+      },
+      rate: (_, _) => 1,
+      currency: 'USD',
+    );
+    // A: 100 a 400-ból (25%); +20 darab (200 új pénz): 300 a 600-ból.
+    var w = weightChange(s, 'A', 20, sell: false, currency: 'USD')!;
+    expect((w.before, w.after), (25.0, 50.0));
+    // Eladás: −5 darab (50): 50 a 350-ből.
+    w = weightChange(s, 'A', 5, sell: true, currency: 'USD')!;
+    expect(w.after, closeTo(50 / 350 * 100, 1e-9));
+    // Új pozíció a megadott áron: 0-ról 100 az 500-ból.
+    w = weightChange(s, 'C', 10, sell: false, price: 10, currency: 'USD')!;
+    expect((w.before, w.after), (0.0, 20.0));
+    // Ismeretlen pénznem árfolyam nélkül: nincs mit mondani.
+    expect(weightChange(s, 'D', 1, sell: false, price: 10, currency: 'JPY'), isNull);
+  });
+
   testWidgets('share the performance from the portfolio page: image and text, no amounts', (tester) async {
     tester.view.physicalSize = const Size(1200, 2400);
     tester.view.devicePixelRatio = 1;

@@ -2822,6 +2822,11 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Udział w portfelu po transakcji: $after (obecnie $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ustaw cel';
 
   @override

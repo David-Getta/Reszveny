@@ -823,5 +823,6 @@
   "positionHeld": "You don hold am for",
   "durationMonths": "{months, plural, one{{months} month} other{{months} months}}",
   "durationDays": "{days, plural, one{{days} day} other{{days} days}}",
-  "positionHeldSince": "since {date}"
+  "positionHeldSince": "since {date}",
+  "lotPreviewWeight": "Im share for di portfolio after: {after} (now {before})"
 }

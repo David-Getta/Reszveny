@@ -2814,6 +2814,11 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Podíl v portfoliu poté: $after (nyní $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastavit cíl';
 
   @override

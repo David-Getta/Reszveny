@@ -2626,6 +2626,11 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return '交易后占投资组合比例：$after（当前 $before）';
+  }
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5618,6 +5623,11 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   @override
   String positionHeldSince(String date) {
     return '自$date起';
+  }
+
+  @override
+  String lotPreviewWeight(String after, String before) {
+    return '交易後佔投資組合比例：$after（現時 $before）';
   }
 
   @override

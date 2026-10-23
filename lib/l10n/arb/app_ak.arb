@@ -823,5 +823,6 @@
   "positionHeld": "Bere a woakura no",
   "durationMonths": "{months, plural, one{bosome {months}} other{bosome {months}}}",
   "durationDays": "{days, plural, one{da {days}} other{nna {days}}}",
-  "positionHeldSince": "efi {date}"
+  "positionHeldSince": "efi {date}",
+  "lotPreviewWeight": "Ɔfa wɔ portfolio no mu akyire: {after} (seesei {before})"
 }

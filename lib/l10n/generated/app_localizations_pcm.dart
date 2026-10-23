@@ -2745,6 +2745,11 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Im share for di portfolio after: $after (now $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

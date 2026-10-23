@@ -823,5 +823,6 @@
   "positionHeld": "रखबाक अवधि",
   "durationMonths": "{months, plural, one{{months} मास} other{{months} मास}}",
   "durationDays": "{days, plural, one{{days} दिन} other{{days} दिन}}",
-  "positionHeldSince": "{date}सँ"
+  "positionHeldSince": "{date}सँ",
+  "lotPreviewWeight": "बादमे पोर्टफ़ोलियोमे हिस्सा: {after} (एखन {before})"
 }

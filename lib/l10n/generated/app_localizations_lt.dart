@@ -2819,6 +2819,11 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Portfelio dalis po sandorio: $after (dabar $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nustatyti tikslą';
 
   @override

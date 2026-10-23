@@ -2744,6 +2744,11 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Pòsyon nan pòtfèy la apre: $after (kounye a $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

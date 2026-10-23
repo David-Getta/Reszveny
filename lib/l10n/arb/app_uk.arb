@@ -823,5 +823,6 @@
   "positionHeld": "Строк володіння",
   "durationMonths": "{months, plural, one{{months} місяць} few{{months} місяці} many{{months} місяців} other{{months} місяця}}",
   "durationDays": "{days, plural, one{{days} день} few{{days} дні} many{{days} днів} other{{days} дня}}",
-  "positionHeldSince": "з {date}"
+  "positionHeldSince": "з {date}",
+  "lotPreviewWeight": "Частка в портфелі після угоди: {after} (зараз {before})"
 }

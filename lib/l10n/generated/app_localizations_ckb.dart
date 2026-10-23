@@ -2748,6 +2748,11 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'بەش لە پۆرتفۆلیۆ دوای ئەمە: $after (ئێستا $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

@@ -2741,6 +2741,11 @@ class AppLocalizationsFf extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Feccere e portfolio caggal ɗuum: $after (jooni $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

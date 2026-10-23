@@ -823,5 +823,6 @@
   "positionHeld": "Tempoh pegangan",
   "durationMonths": "{months, plural, other{{months} bulan}}",
   "durationDays": "{days, plural, other{{days} hari}}",
-  "positionHeldSince": "sejak {date}"
+  "positionHeldSince": "sejak {date}",
+  "lotPreviewWeight": "Bahagian dalam portfolio selepas ini: {after} (kini {before})"
 }

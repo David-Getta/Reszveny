@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.224)
+# Változásjegyzék (0.2.130 → 0.2.225)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -91,6 +91,8 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
   2024. márc. 4. óta”).
 - **Jegyzet a tranzakcióhoz** (befektetési napló): a vétel/eladás dialógusban „Jegyzet hozzáadása” – a „miért veszed /
   adod el” a részvény jegyzeteinek végére kerül, dátummal, darabszámmal és árral; szinkronban, az AI-elemzés is látja.
+- Az előnézet a **súlyt** is mutatja: mekkora része lesz a részvény a portfóliónak a vétel/eladás után („Súly a
+  portfólióban ezután: 27,4% (most 18,2%)”) – a koncentráció a döntés előtt látszik.
 - **Előnézet rögzítés előtt** a vétel/eladás dialógusban: vételnél az új átlagár („Új átlagár: 150,00 USD (most
   200,00 USD)”, abban a nézetben, ahonnan nyílt), eladásnál a FIFO szerint ezen az eladáson realizált eredmény a
   jutalékkal (zölden / pirosan) – a felaprózásokkal és a számlákkal is úgy, ahogy rögzítés után lesz.

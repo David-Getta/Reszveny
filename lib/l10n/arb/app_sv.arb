@@ -823,5 +823,6 @@
   "positionHeld": "Innehavstid",
   "durationMonths": "{months, plural, one{{months} månad} other{{months} månader}}",
   "durationDays": "{days, plural, one{{days} dag} other{{days} dagar}}",
-  "positionHeldSince": "sedan {date}"
+  "positionHeldSince": "sedan {date}",
+  "lotPreviewWeight": "Andel av portföljen efteråt: {after} (nu {before})"
 }

@@ -823,5 +823,6 @@
   "positionHeld": "Nkarhi lowu u yi khomeke",
   "durationMonths": "{months, plural, one{n'hweti yin'we} other{tin'hweti ta {months}}}",
   "durationDays": "{days, plural, one{siku rin'we} other{masiku ya {days}}}",
-  "positionHeldSince": "ku sukela {date}"
+  "positionHeldSince": "ku sukela {date}",
+  "lotPreviewWeight": "Xiphemu xa phothifoliyo endzhaku: {after} (sweswi {before})"
 }

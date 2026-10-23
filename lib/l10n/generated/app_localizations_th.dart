@@ -2712,6 +2712,11 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'สัดส่วนในพอร์ตหลังจากนี้: $after (ปัจจุบัน $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

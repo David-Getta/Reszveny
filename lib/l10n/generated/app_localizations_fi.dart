@@ -2747,6 +2747,11 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Osuus salkusta tämän jälkeen: $after (nyt $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

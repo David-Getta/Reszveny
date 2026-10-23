@@ -823,5 +823,6 @@
   "positionHeld": "Kabayag ti panangiggem",
   "durationMonths": "{months, plural, one{{months} a bulan} other{{months} a bulan}}",
   "durationDays": "{days, plural, one{{days} nga aldaw} other{{days} nga aldaw}}",
-  "positionHeldSince": "manipud {date}"
+  "positionHeldSince": "manipud {date}",
+  "lotPreviewWeight": "Paset ti portfolio kalpasanna: {after} (ita {before})"
 }

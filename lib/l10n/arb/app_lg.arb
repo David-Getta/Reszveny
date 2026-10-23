@@ -823,5 +823,6 @@
   "positionHeld": "Ebbanga ly'okukwata",
   "durationMonths": "{months, plural, one{omwezi {months}} other{emyezi {months}}}",
   "durationDays": "{days, plural, one{olunaku {days}} other{ennaku {days}}}",
-  "positionHeldSince": "okuva ku {date}"
+  "positionHeldSince": "okuva ku {date}",
+  "lotPreviewWeight": "Ekitundu ky'omu portfolio oluvannyuma: {after} (kati {before})"
 }

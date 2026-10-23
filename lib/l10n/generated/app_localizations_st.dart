@@ -2763,6 +2763,11 @@ class AppLocalizationsSt extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Karolo ya potefolio ka mora moo: $after (hona jwale $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Beha sepheo';
 
   @override

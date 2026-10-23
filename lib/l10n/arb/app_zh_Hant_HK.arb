@@ -823,5 +823,6 @@
   "positionHeld": "持有時間",
   "durationMonths": "{months, plural, other{{months}個月}}",
   "durationDays": "{days, plural, other{{days}日}}",
-  "positionHeldSince": "自{date}起"
+  "positionHeldSince": "自{date}起",
+  "lotPreviewWeight": "交易後佔投資組合比例：{after}（現時 {before}）"
 }

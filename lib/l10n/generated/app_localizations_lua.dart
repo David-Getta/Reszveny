@@ -2757,6 +2757,11 @@ class AppLocalizationsLua extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Tshitupa tshia portfolio pashishe: $after (mpindieu $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

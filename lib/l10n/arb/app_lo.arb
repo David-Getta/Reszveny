@@ -823,5 +823,6 @@
   "positionHeld": "ໄລຍະຖືຄອງ",
   "durationMonths": "{months, plural, other{{months} ເດືອນ}}",
   "durationDays": "{days, plural, other{{days} ມື້}}",
-  "positionHeldSince": "ນັບແຕ່ {date}"
+  "positionHeldSince": "ນັບແຕ່ {date}",
+  "lotPreviewWeight": "ສ່ວນແບ່ງໃນພອດໂຟລິໂອຫຼັງຈາກນີ້: {after} (ປັດຈຸບັນ {before})"
 }

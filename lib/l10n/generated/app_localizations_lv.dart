@@ -2790,6 +2790,11 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Portfeļa daļa pēc darījuma: $after (tagad $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

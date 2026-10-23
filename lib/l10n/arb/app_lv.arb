@@ -823,5 +823,6 @@
   "positionHeld": "Turēšanas periods",
   "durationMonths": "{months, plural, zero{{months} mēneši} one{{months} mēnesis} other{{months} mēneši}}",
   "durationDays": "{days, plural, zero{{days} dienas} one{{days} diena} other{{days} dienas}}",
-  "positionHeldSince": "kopš {date}"
+  "positionHeldSince": "kopš {date}",
+  "lotPreviewWeight": "Portfeļa daļa pēc darījuma: {after} (tagad {before})"
 }

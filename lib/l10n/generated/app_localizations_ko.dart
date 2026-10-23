@@ -2671,6 +2671,11 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return '거래 후 포트폴리오 비중: $after (현재 $before)';
+  }
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

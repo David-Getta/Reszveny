@@ -823,5 +823,6 @@
   "positionHeld": "保有期間",
   "durationMonths": "{months, plural, other{{months}か月}}",
   "durationDays": "{days, plural, other{{days}日}}",
-  "positionHeldSince": "{date}から"
+  "positionHeldSince": "{date}から",
+  "lotPreviewWeight": "取引後のポートフォリオ比率：{after}（現在 {before}）"
 }

@@ -724,6 +724,7 @@
   "durationMonths": "{months, plural, one{1 hónap} other{{months} hónap}}",
   "durationDays": "{days, plural, one{1 nap} other{{days} nap}}",
   "positionHeldSince": "{date} óta",
+  "lotPreviewWeight": "Súly a portfólióban ezután: {after} (most {before})",
   "portfolioGoalSet": "Cél kitűzése",
   "portfolioGoalTitle": "Portfólió-cél",
   "portfolioGoalProgress": "{percent} kész · cél: {amount}",

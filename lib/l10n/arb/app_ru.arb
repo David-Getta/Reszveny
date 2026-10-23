@@ -823,5 +823,6 @@
   "positionHeld": "Срок владения",
   "durationMonths": "{months, plural, one{{months} месяц} few{{months} месяца} many{{months} месяцев} other{{months} месяца}}",
   "durationDays": "{days, plural, one{{days} день} few{{days} дня} many{{days} дней} other{{days} дня}}",
-  "positionHeldSince": "с {date}"
+  "positionHeldSince": "с {date}",
+  "lotPreviewWeight": "Доля в портфеле после сделки: {after} (сейчас {before})"
 }

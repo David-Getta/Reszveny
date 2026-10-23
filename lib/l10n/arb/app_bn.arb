@@ -823,5 +823,6 @@
   "positionHeld": "ধরে রাখার সময়কাল",
   "durationMonths": "{months, plural, one{{months} মাস} other{{months} মাস}}",
   "durationDays": "{days, plural, one{{days} দিন} other{{days} দিন}}",
-  "positionHeldSince": "{date} থেকে"
+  "positionHeldSince": "{date} থেকে",
+  "lotPreviewWeight": "পরে পোর্টফোলিওতে অংশ: {after} (এখন {before})"
 }

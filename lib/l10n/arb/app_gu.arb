@@ -823,5 +823,6 @@
   "positionHeld": "હોલ્ડિંગ અવધિ",
   "durationMonths": "{months, plural, one{{months} મહિનો} other{{months} મહિના}}",
   "durationDays": "{days, plural, one{{days} દિવસ} other{{days} દિવસ}}",
-  "positionHeldSince": "{date}થી"
+  "positionHeldSince": "{date}થી",
+  "lotPreviewWeight": "પછી પોર્ટફોલિયોમાં હિસ્સો: {after} (હાલ {before})"
 }

@@ -2821,6 +2821,11 @@ class AppLocalizationsSl extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Delež v portfelju nato: $after (zdaj $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastavi cilj';
 
   @override

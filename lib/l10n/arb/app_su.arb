@@ -823,5 +823,6 @@
   "positionHeld": "Lilana dicekel",
   "durationMonths": "{months, plural, other{{months} bulan}}",
   "durationDays": "{days, plural, other{{days} poé}}",
-  "positionHeldSince": "ti saprak {date}"
+  "positionHeldSince": "ti saprak {date}",
+  "lotPreviewWeight": "Bagian dina portofolio saenggeusna: {after} (ayeuna {before})"
 }

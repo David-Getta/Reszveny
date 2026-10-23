@@ -823,5 +823,6 @@
   "positionHeld": "Elde tutma süresi",
   "durationMonths": "{months, plural, one{{months} ay} other{{months} ay}}",
   "durationDays": "{days, plural, one{{days} gün} other{{days} gün}}",
-  "positionHeldSince": "{date} tarihinden beri"
+  "positionHeldSince": "{date} tarihinden beri",
+  "lotPreviewWeight": "İşlem sonrası portföy payı: {after} (şu an {before})"
 }

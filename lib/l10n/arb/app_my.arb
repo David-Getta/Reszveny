@@ -823,5 +823,6 @@
   "positionHeld": "ကိုင်ဆောင်ထားသည့်ကာလ",
   "durationMonths": "{months, plural, other{{months} လ}}",
   "durationDays": "{days, plural, other{{days} ရက်}}",
-  "positionHeldSince": "{date} မှစ၍"
+  "positionHeldSince": "{date} မှစ၍",
+  "lotPreviewWeight": "အရောင်းအဝယ်ပြီးနောက် ပေါ့ဖိုလီယို အချိုး - {after} (ယခု {before})"
 }

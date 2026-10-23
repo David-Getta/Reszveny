@@ -823,5 +823,6 @@
   "positionHeld": "Doba držení",
   "durationMonths": "{months, plural, one{{months} měsíc} few{{months} měsíce} many{{months} měsíce} other{{months} měsíců}}",
   "durationDays": "{days, plural, one{{days} den} few{{days} dny} many{{days} dne} other{{days} dní}}",
-  "positionHeldSince": "od {date}"
+  "positionHeldSince": "od {date}",
+  "lotPreviewWeight": "Podíl v portfoliu poté: {after} (nyní {before})"
 }

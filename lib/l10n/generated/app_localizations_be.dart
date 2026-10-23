@@ -2819,6 +2819,11 @@ class AppLocalizationsBe extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Доля ў партфелі пасля: $after (зараз $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задаць мэту';
 
   @override

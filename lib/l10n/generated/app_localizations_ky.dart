@@ -2748,6 +2748,11 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Кийин портфелдеги үлүш: $after (азыр $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Максат коюу';
 
   @override

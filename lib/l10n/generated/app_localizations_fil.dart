@@ -2754,6 +2754,11 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Bahagi sa portfolio pagkatapos: $after (ngayon $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

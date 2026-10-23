@@ -2742,6 +2742,11 @@ class AppLocalizationsBm extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Tilayɔrɔ portfolio kɔnɔ o kɔfɛ: $after (sisan $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

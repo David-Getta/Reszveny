@@ -2748,6 +2748,11 @@ class AppLocalizationsSu extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Bagian dina portofolio saenggeusna: $after (ayeuna $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setél target';
 
   @override

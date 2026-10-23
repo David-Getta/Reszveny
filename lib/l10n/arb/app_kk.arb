@@ -823,5 +823,6 @@
   "positionHeld": "Ұстау мерзімі",
   "durationMonths": "{months, plural, one{{months} ай} other{{months} ай}}",
   "durationDays": "{days, plural, one{{days} күн} other{{days} күн}}",
-  "positionHeldSince": "{date} бастап"
+  "positionHeldSince": "{date} бастап",
+  "lotPreviewWeight": "Кейін портфельдегі үлес: {after} (қазір {before})"
 }

@@ -2748,6 +2748,11 @@ class AppLocalizationsAk extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'Ɔfa wɔ portfolio no mu akyire: $after (seesei $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';
 
   @override

@@ -2738,6 +2738,11 @@ class AppLocalizationsPs extends AppLocalizations {
   }
 
   @override
+  String lotPreviewWeight(String after, String before) {
+    return 'وروسته په پورټفولیو کې برخه: $after (اوس $before)';
+  }
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override
