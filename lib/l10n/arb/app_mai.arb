@@ -798,5 +798,6 @@
   "contributionAmount": "निवेशक राशि ({currency})",
   "contributionHint": "केवल खरीद, बिक्री नहि: जे पोजीशन अपन लक्ष्यसँ सभसँ बेसी पाछाँ अछि, तकरा पहिने पाइ भेटैत अछि।",
   "contributionShares": "≈ {shares} शेयर",
-  "contributionMissing": "{symbols} लेल वर्तमान दाम उपलब्ध नहि अछि: बँटवारामे शामिल नहि कएल गेल।"
+  "contributionMissing": "{symbols} लेल वर्तमान दाम उपलब्ध नहि अछि: बँटवारामे शामिल नहि कएल गेल।",
+  "portfolioGoalEta": "जँ वार्षिक रिटर्न ({rate}) एहिना बनल रहत, तँ अहाँ {year} क आसपास लक्ष्य धरि पहुँचि जाएब।"
 }

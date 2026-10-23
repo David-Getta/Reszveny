@@ -2631,6 +2631,11 @@ class AppLocalizationsTg extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Агар даромаднокии солона ҳамин тавр боқӣ монад ($rate), шумо тақрибан дар соли $year ба ҳадаф мерасед.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

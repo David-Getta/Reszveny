@@ -2635,6 +2635,11 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Idan ribar shekara ta ci gaba haka ($rate), za ka cimma burinka kusan shekarar $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

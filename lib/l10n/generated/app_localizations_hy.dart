@@ -2637,6 +2637,11 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Եթե տարեկան եկամտաբերությունը պահպանվի ($rate), նպատակին կհասնեք մոտ $year թվականին։';
+  }
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

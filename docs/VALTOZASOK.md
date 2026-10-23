@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.195)
+# Változásjegyzék (0.2.130 → 0.2.196)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -33,6 +33,7 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 
 ## Kockázat
 
+- A **portfólió-cél becsült elérése** a cél-sáv alatt a mostani éves hozammal („kb. 2029 táján éred el”).
 - **Új befizetés elosztása** a célarányok szerint: a befektetendő összegből csak vétel, először a céljuktól leginkább
   elmaradó pozíciók kapnak; pozíciónként az összeg és nagyjából hány darab.
 

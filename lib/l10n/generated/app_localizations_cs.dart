@@ -2691,6 +2691,11 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Pokud roční výnos vydrží ($rate), dosáhnete cíle kolem roku $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastavit cíl';
 
   @override

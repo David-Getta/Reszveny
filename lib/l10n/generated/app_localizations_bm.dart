@@ -2627,6 +2627,11 @@ class AppLocalizationsBm extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Ni san o san tɔnɔ tora ten ($rate), i bɛna i ka laɲini sɔrɔ san $year ɲɔgɔn na.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

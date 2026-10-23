@@ -798,5 +798,6 @@
   "contributionAmount": "Valor a investir ({currency})",
   "contributionHint": "Só compras, sem vendas: as posições mais abaixo da meta recebem o dinheiro primeiro.",
   "contributionShares": "≈ {shares} ações",
-  "contributionMissing": "Sem preço atual para {symbols}: ficam fora da distribuição."
+  "contributionMissing": "Sem preço atual para {symbols}: ficam fora da distribuição.",
+  "portfolioGoalEta": "Se a rentabilidade anual se mantiver ({rate}), atingirá a meta por volta de {year}."
 }

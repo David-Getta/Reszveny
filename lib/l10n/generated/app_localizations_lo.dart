@@ -2601,6 +2601,11 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'ຖ້າຜົນຕອບແທນຕໍ່ປີຍັງຄົງຢູ່ ($rate) ທ່ານຈະບັນລຸເປົ້າໝາຍປະມານປີ $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

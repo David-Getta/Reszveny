@@ -2630,6 +2630,11 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'ئەگەر قازانجی ساڵانە وەک خۆی بمێنێتەوە ($rate)، نزیکەی ساڵی $year دەگەیت بە ئامانج.';
+  }
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

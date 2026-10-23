@@ -2622,6 +2622,11 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Nếu lợi nhuận hằng năm được duy trì ($rate), bạn sẽ đạt mục tiêu vào khoảng năm $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

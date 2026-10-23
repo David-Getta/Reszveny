@@ -2630,6 +2630,11 @@ class AppLocalizationsAz extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'İllik gəlirlilik belə qalsa ($rate), hədəfə təxminən $year ilində çatarsınız.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hədəf təyin et';
 
   @override

@@ -798,5 +798,6 @@
   "contributionAmount": "Bedrag om te belê ({currency})",
   "contributionHint": "Slegs aankope, geen verkope nie: die posisies wat die verste onder hul teiken is, kry die geld eerste.",
   "contributionShares": "≈ {shares} aandele",
-  "contributionMissing": "Geen huidige prys vir {symbols} nie: uitgelaat uit die verdeling."
+  "contributionMissing": "Geen huidige prys vir {symbols} nie: uitgelaat uit die verdeling.",
+  "portfolioGoalEta": "As die jaarlikse opbrengs so bly ({rate}), bereik jy dit omstreeks {year}."
 }

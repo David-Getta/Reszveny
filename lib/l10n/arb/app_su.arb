@@ -798,5 +798,6 @@
   "contributionAmount": "Jumlah anu diinvestasikeun ({currency})",
   "contributionHint": "Ngan ukur mésér, henteu ngajual: posisi anu panglangkung tebih di handapeun targetna nampi artos heula.",
   "contributionShares": "≈ {shares} saham",
-  "contributionMissing": "Teu aya harga ayeuna pikeun {symbols}: teu diasupkeun kana pambagian."
+  "contributionMissing": "Teu aya harga ayeuna pikeun {symbols}: teu diasupkeun kana pambagian.",
+  "portfolioGoalEta": "Upami imbal hasil taunan tetep ({rate}), anjeun bakal ngahontal target kira-kira taun {year}."
 }

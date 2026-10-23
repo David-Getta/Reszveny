@@ -798,5 +798,6 @@
   "contributionAmount": "Ieguldāmā summa ({currency})",
   "contributionHint": "Tikai pirkumi, bez pārdošanas: naudu vispirms saņem pozīcijas, kas visvairāk atpaliek no sava mērķa.",
   "contributionShares": "≈ {shares} akcijas",
-  "contributionMissing": "Pozīcijām {symbols} nav pašreizējās cenas: nav iekļautas sadalē."
+  "contributionMissing": "Pozīcijām {symbols} nav pašreizējās cenas: nav iekļautas sadalē.",
+  "portfolioGoalEta": "Ja gada ienesīgums saglabāsies ({rate}), mērķi sasniegsiet ap {year}. gadu."
 }

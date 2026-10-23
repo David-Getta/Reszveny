@@ -2630,6 +2630,11 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Faida ya mwaka ikiendelea hivi ($rate), utafikia lengo lako karibu mwaka $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

@@ -2641,6 +2641,11 @@ class AppLocalizationsFr extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Si le rendement annuel se maintient ($rate), vous atteindrez l’objectif vers $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Définir un objectif';
 
   @override

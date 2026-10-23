@@ -798,5 +798,6 @@
   "contributionAmount": "Lacagta la maalgelinayo ({currency})",
   "contributionHint": "Iibsasho kaliya, iib ma jiro: haysashooyinka sida ugu badan uga hooseeya hadafkooda ayaa lacagta hore u hela.",
   "contributionShares": "≈ {shares} saami",
-  "contributionMissing": "{symbols} ma laha qiime hadda ah: lagama darin qaybinta."
+  "contributionMissing": "{symbols} ma laha qiime hadda ah: lagama darin qaybinta.",
+  "portfolioGoalEta": "Haddii faa'iidada sannadlaha ahi sidan ku sii jirto ({rate}), waxaad gaadhi doontaa yoolka qiyaastii sannadka {year}."
 }

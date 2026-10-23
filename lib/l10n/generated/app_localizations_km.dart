@@ -2607,6 +2607,11 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'ប្រសិនបើទិន្នផលប្រចាំឆ្នាំនៅដដែល ($rate) អ្នកនឹងសម្រេចគោលដៅប្រហែលនៅឆ្នាំ $year។';
+  }
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

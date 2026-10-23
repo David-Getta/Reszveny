@@ -798,5 +798,6 @@
   "contributionAmount": "Износ за улагање ({currency})",
   "contributionHint": "Само куповине, без продаје: новац прво добијају позиције које су најдаље испод свог циља.",
   "contributionShares": "≈ {shares} акција",
-  "contributionMissing": "Нема тренутне цене за {symbols}: нису урачунате у расподелу."
+  "contributionMissing": "Нема тренутне цене за {symbols}: нису урачунате у расподелу.",
+  "portfolioGoalEta": "Ако годишњи принос остане такав ({rate}), циљ ћете достићи око {year}. године."
 }

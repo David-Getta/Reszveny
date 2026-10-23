@@ -798,5 +798,6 @@
   "contributionAmount": "Kantidad nga i-invest ({currency})",
   "contributionHint": "Pagbakal lang, wala sing pagbaligya: ang mga posisyon nga pinakamalayo sa idalom sang ila target ang una nga makabaton sang kuwarta.",
   "contributionShares": "≈ {shares} ka share",
-  "contributionMissing": "Wala sang presyo subong para sa {symbols}: wala ginlakip sa pagbinahin."
+  "contributionMissing": "Wala sang presyo subong para sa {symbols}: wala ginlakip sa pagbinahin.",
+  "portfolioGoalEta": "Kon magpabilin ang tinuig nga kita ({rate}), maabot mo ang tulumuron mga tuig {year}."
 }

@@ -2668,6 +2668,11 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Dacă randamentul anual se menține ($rate), îți vei atinge obiectivul în jurul anului $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

@@ -2633,6 +2633,11 @@ class AppLocalizationsAf extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'As die jaarlikse opbrengs so bly ($rate), bereik jy dit omstreeks $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Stel \'n doelwit';
 
   @override

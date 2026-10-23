@@ -2629,6 +2629,11 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'თუ წლიური შემოსავლიანობა შენარჩუნდება ($rate), მიზანს დაახლოებით $year წელს მიაღწევთ.';
+  }
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

@@ -2637,6 +2637,11 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Haddii faa\'iidada sannadlaha ahi sidan ku sii jirto ($rate), waxaad gaadhi doontaa yoolka qiyaastii sannadka $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

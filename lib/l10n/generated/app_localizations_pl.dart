@@ -2699,6 +2699,11 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Jeśli roczna stopa zwrotu się utrzyma ($rate), osiągniesz cel około $year roku.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ustaw cel';
 
   @override

@@ -2628,6 +2628,11 @@ class AppLocalizationsKk extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Жылдық кірістілік сақталса ($rate), мақсатқа шамамен $year жылы жетесіз.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Мақсат қою';
 
   @override

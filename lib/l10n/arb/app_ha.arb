@@ -798,5 +798,6 @@
   "contributionAmount": "Adadin da za a zuba ({currency})",
   "contributionHint": "Saye kawai, babu sayarwa: matsayin da suka fi nisa ƙasa da manufarsu ne za su fara samun kuɗin.",
   "contributionShares": "≈ hannun jari {shares}",
-  "contributionMissing": "Babu farashin yanzu na {symbols}: ba a saka su a rabon ba."
+  "contributionMissing": "Babu farashin yanzu na {symbols}: ba a saka su a rabon ba.",
+  "portfolioGoalEta": "Idan ribar shekara ta ci gaba haka ({rate}), za ka cimma burinka kusan shekarar {year}."
 }

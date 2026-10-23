@@ -798,5 +798,6 @@
   "contributionAmount": "Kwota do zainwestowania ({currency})",
   "contributionHint": "Tylko zakupy, bez sprzedaży: środki trafiają najpierw do pozycji, które są najdalej poniżej celu.",
   "contributionShares": "≈ {shares} szt.",
-  "contributionMissing": "Brak aktualnej ceny dla {symbols}: pominięte w podziale."
+  "contributionMissing": "Brak aktualnej ceny dla {symbols}: pominięte w podziale.",
+  "portfolioGoalEta": "Jeśli roczna stopa zwrotu się utrzyma ({rate}), osiągniesz cel około {year} roku."
 }

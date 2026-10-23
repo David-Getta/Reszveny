@@ -2622,6 +2622,11 @@ class AppLocalizationsWo extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Su benefis bu at bi desee noonu ($rate), dinga agsi ci sa jublu ci wetu at $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

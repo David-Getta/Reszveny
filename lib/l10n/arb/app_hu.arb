@@ -699,6 +699,7 @@
   "contributionHint": "Csak vétel, eladás nélkül: először a céljuktól leginkább elmaradó pozíciók kapnak belőle.",
   "contributionShares": "≈ {shares} db",
   "contributionMissing": "Most nincs ára: {symbols} – kimarad az elosztásból.",
+  "portfolioGoalEta": "Ha az éves hozam marad ({rate}), kb. {year} táján éred el.",
   "portfolioGoalSet": "Cél kitűzése",
   "portfolioGoalTitle": "Portfólió-cél",
   "portfolioGoalProgress": "{percent} kész · cél: {amount}",

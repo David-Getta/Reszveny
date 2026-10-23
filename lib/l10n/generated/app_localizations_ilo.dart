@@ -2650,6 +2650,11 @@ class AppLocalizationsIlo extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'No agtalinaed ti tinawen a ganansia ($rate), magun-odmo ti panggepmo iti agarup tawen $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

@@ -3,6 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:reszveny/app.dart';
 import 'package:reszveny/core/app_preferences.dart';
+import 'package:reszveny/features/portfolio/portfolio_valuation.dart';
 
 import 'app_widget_test.dart' show services;
 
@@ -23,6 +24,42 @@ void main() {
     await prefs.clearPersonalData();
     final wiped = await AppPreferences.load();
     expect((wiped.portfolioGoal, wiped.dividendGoal, wiped.sortOf('positions')), (null, null, null));
+  });
+
+  test('goal year at today\'s annual return: compounding, no new money; nothing when it says nothing', () {
+    final now = DateTime(2026, 10, 23);
+    // 10 000 → 20 000 évi 10%-kal: ln 2 / ln 1,1 ≈ 7,27 év → 2034.
+    expect(goalYear(10000, 20000, 0.10, now), 2034);
+    expect(goalYear(10000, 20000, 0, now), isNull);
+    expect(goalYear(10000, 20000, -0.05, now), isNull);
+    expect(goalYear(30000, 20000, 0.10, now), isNull, reason: 'már teljesült');
+    expect(goalYear(100, 1e9, 0.01, now), isNull, reason: '50 évnél messzebb');
+  });
+
+  testWidgets('the goal bar says when the goal would be reached at today\'s annual return', (tester) async {
+    tester.view.physicalSize = const Size(1200, 1600);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final s = services();
+    // Két éve vett AAPL: van éves hozam (XIRR).
+    await s.portfolio.add(
+      symbol: 'AAPL',
+      quantity: 10,
+      price: 150,
+      currency: 'USD',
+      date: DateTime.now().subtract(const Duration(days: 730)),
+    );
+    await s.preferences.setDisplayCurrency('USD');
+    await s.preferences.setPortfolioGoal((amount: 5000, currency: 'USD'));
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Portfolio').first);
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('goal-eta')), findsOneWidget);
+    expect(
+      find.textContaining(RegExp(r"^If the annual return holds \(\+[\d.]+%\), you'd reach it around 20\d\d\.$")),
+      findsOneWidget,
+    );
   });
 
   testWidgets('set a goal, see the progress, then remove it', (tester) async {

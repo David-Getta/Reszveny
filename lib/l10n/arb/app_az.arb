@@ -798,5 +798,6 @@
   "contributionAmount": "Yatırılacaq məbləğ ({currency})",
   "contributionHint": "Yalnız alış, satış yoxdur: pulu ilk növbədə hədəfindən ən çox geri qalan mövqelər alır.",
   "contributionShares": "≈ {shares} səhm",
-  "contributionMissing": "{symbols} üçün cari qiymət yoxdur: bölgüyə daxil edilmir."
+  "contributionMissing": "{symbols} üçün cari qiymət yoxdur: bölgüyə daxil edilmir.",
+  "portfolioGoalEta": "İllik gəlirlilik belə qalsa ({rate}), hədəfə təxminən {year} ilində çatarsınız."
 }

@@ -2639,6 +2639,11 @@ class AppLocalizationsOm extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Bu\'aan waggaa akkasumatti yoo itti fufe ($rate), kaayyoon kee gara bara $year galma ni ga\'a.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

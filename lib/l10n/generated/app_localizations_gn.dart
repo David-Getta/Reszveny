@@ -2634,6 +2634,11 @@ class AppLocalizationsGn extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Rendimiento arýpe opytáramo péicha ($rate), rehupytýta ne jehupytyrã ary $year rupi.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';
 
   @override

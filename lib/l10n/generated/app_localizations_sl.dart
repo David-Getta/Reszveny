@@ -2698,6 +2698,11 @@ class AppLocalizationsSl extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Če se letni donos ohrani ($rate), boste cilj dosegli okoli leta $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastavi cilj';
 
   @override

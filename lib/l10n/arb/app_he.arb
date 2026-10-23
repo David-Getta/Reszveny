@@ -798,5 +798,6 @@
   "contributionAmount": "סכום להשקעה ({currency})",
   "contributionHint": "רק קניות, בלי מכירות: הפוזיציות שהכי רחוקות מתחת ליעד שלהן מקבלות את הכסף ראשונות.",
   "contributionShares": "≈ {shares} מניות",
-  "contributionMissing": "אין מחיר נוכחי עבור {symbols}: לא נכללו בחלוקה."
+  "contributionMissing": "אין מחיר נוכחי עבור {symbols}: לא נכללו בחלוקה.",
+  "portfolioGoalEta": "אם התשואה השנתית תישמר ({rate}), היעד יושג בסביבות {year}."
 }

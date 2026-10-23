@@ -798,5 +798,6 @@
   "contributionAmount": "Isixa sokutyala ({currency})",
   "contributionHint": "Kuthengwa kuphela, akuthengiswa: iipozishini ezingaphantsi kakhulu kwenjongo yazo zifumana imali kuqala.",
   "contributionShares": "≈ izabelo {shares}",
-  "contributionMissing": "Akukho xabiso langoku kwi-{symbols}: azibandakanywanga kulwabiwo."
+  "contributionMissing": "Akukho xabiso langoku kwi-{symbols}: azibandakanywanga kulwabiwo.",
+  "portfolioGoalEta": "Ukuba inzuzo yonyaka ihlala injalo ({rate}), uya kufikelela usukelo lwakho malunga nonyaka ka-{year}."
 }

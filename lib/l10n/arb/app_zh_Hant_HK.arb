@@ -798,5 +798,6 @@
   "contributionAmount": "投資金額（{currency}）",
   "contributionHint": "只買不賣：低於目標比例最多的持倉優先獲分配資金。",
   "contributionShares": "≈ {shares} 股",
-  "contributionMissing": "{symbols}沒有目前股價，未有納入分配。"
+  "contributionMissing": "{symbols}沒有目前股價，未有納入分配。",
+  "portfolioGoalEta": "若年化回報率維持不變（{rate}），預計約 {year} 年達成目標。"
 }

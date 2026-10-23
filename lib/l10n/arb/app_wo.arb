@@ -798,5 +798,6 @@
   "contributionAmount": "Xaalis bi nga bëgg a dugal ({currency})",
   "contributionHint": "Jënd rekk, du jaay: aksiyoŋ yi gën a sore seen jubluwaay ci suuf ñoo jëkk a jot xaalis bi.",
   "contributionShares": "≈ {shares} aksiyoŋ",
-  "contributionMissing": "Amul njëg bu léegi ngir {symbols}: boolewuñu leen ci séddale bi."
+  "contributionMissing": "Amul njëg bu léegi ngir {symbols}: boolewuñu leen ci séddale bi.",
+  "portfolioGoalEta": "Su benefis bu at bi desee noonu ({rate}), dinga agsi ci sa jublu ci wetu at {year}."
 }

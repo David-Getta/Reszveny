@@ -798,5 +798,6 @@
   "contributionAmount": "Anlagebetrag ({currency})",
   "contributionHint": "Nur Käufe, keine Verkäufe: Die Positionen, die am weitesten unter ihrem Ziel liegen, bekommen das Geld zuerst.",
   "contributionShares": "≈ {shares} Aktien",
-  "contributionMissing": "Kein aktueller Kurs für {symbols}: bei der Aufteilung nicht berücksichtigt."
+  "contributionMissing": "Kein aktueller Kurs für {symbols}: bei der Aufteilung nicht berücksichtigt.",
+  "portfolioGoalEta": "Bleibt die Jahresrendite bei {rate}, erreichst du dein Ziel etwa {year}."
 }

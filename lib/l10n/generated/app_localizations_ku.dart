@@ -2631,6 +2631,11 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Ger qezenca salane wisa bimîne ($rate), tu dê nêzî sala $year bigihîjî armancê.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

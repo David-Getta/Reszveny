@@ -2634,6 +2634,11 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Ha az éves hozam marad ($rate), kb. $year táján éred el.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

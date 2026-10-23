@@ -798,5 +798,6 @@
   "contributionAmount": "Beløb at investere ({currency})",
   "contributionHint": "Kun køb, intet salg: de beholdninger, der ligger længst under deres mål, får pengene først.",
   "contributionShares": "≈ {shares} aktier",
-  "contributionMissing": "Ingen aktuel kurs for {symbols}: er ikke med i fordelingen."
+  "contributionMissing": "Ingen aktuel kurs for {symbols}: er ikke med i fordelingen.",
+  "portfolioGoalEta": "Hvis det årlige afkast holder ({rate}), når du målet omkring {year}."
 }

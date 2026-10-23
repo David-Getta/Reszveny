@@ -798,5 +798,6 @@
   "contributionAmount": "د پانګونې اندازه ({currency})",
   "contributionHint": "یوازې پېرود، پلور نه: هغه پوزیشنونه چې له خپل هدف څخه تر ټولو ډېر ټیټ دي، لومړی پیسې ترلاسه کوي.",
   "contributionShares": "≈ {shares} ونډې",
-  "contributionMissing": "د {symbols} لپاره اوسنۍ بیه نشته: په وېش کې نه دي شامل."
+  "contributionMissing": "د {symbols} لپاره اوسنۍ بیه نشته: په وېش کې نه دي شامل.",
+  "portfolioGoalEta": "که کلنۍ ګټه همداسې پاتې شي ({rate})، نو شاوخوا په {year} کال کې به موخې ته ورسېږئ."
 }

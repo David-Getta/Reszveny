@@ -798,5 +798,6 @@
   "contributionAmount": "Gatad a maipuonan ({currency})",
   "contributionHint": "Panaggatang laeng, awan ti panaglako: dagiti posision a kaadaywan iti baba ti targetda ti umuna a makaawat iti kuarta.",
   "contributionShares": "≈ {shares} a share",
-  "contributionMissing": "Awan ti agdama a presio para iti {symbols}: saan a nairaman iti panagbingay."
+  "contributionMissing": "Awan ti agdama a presio para iti {symbols}: saan a nairaman iti panagbingay.",
+  "portfolioGoalEta": "No agtalinaed ti tinawen a ganansia ({rate}), magun-odmo ti panggepmo iti agarup tawen {year}."
 }

@@ -798,5 +798,6 @@
   "contributionAmount": "Montan pou envesti ({currency})",
   "contributionHint": "Se achte sèlman, pa gen vant: pozisyon ki pi lwen anba sib yo resevwa lajan an an premye.",
   "contributionShares": "≈ {shares} aksyon",
-  "contributionMissing": "Pa gen pri aktyèl pou {symbols}: yo pa konte nan repatisyon an."
+  "contributionMissing": "Pa gen pri aktyèl pou {symbols}: yo pa konte nan repatisyon an.",
+  "portfolioGoalEta": "Si rannman anyèl la kenbe ({rate}), w ap rive nan objektif la anviwon {year}."
 }

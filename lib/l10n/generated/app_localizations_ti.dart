@@ -2590,6 +2590,11 @@ class AppLocalizationsTi extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'ዓመታዊ ትርፊ ከምዚ እንተቐጸለ ($rate)፣ ኣብ $year ኣቢሉ ናብ ዕላማኹም ክትበጽሑ ኢኹም።';
+  }
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

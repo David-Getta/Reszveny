@@ -2641,6 +2641,11 @@ class AppLocalizationsXh extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Ukuba inzuzo yonyaka ihlala injalo ($rate), uya kufikelela usukelo lwakho malunga nonyaka ka-$year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

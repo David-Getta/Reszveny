@@ -798,5 +798,6 @@
   "contributionAmount": "Ligd sõore f sẽn na n kẽes ({currency})",
   "contributionHint": "Da bala, koosg ka be: aksiõ nins sẽn ka ta b raabã wʋsgo n deng n paamd ligdã.",
   "contributionShares": "≈ aksiõ {shares}",
-  "contributionMissing": "{symbols} koosg ka be masã ye: b pa kẽes-b pʋɩɩbã pʋgẽ ye."
+  "contributionMissing": "{symbols} koosg ka be masã ye: b pa kẽes-b pʋɩɩbã pʋgẽ ye.",
+  "portfolioGoalEta": "Yʋʋmd nafa sã n kell n yaa woto ({rate}), f na n paama f raabã yʋʋmd {year} wakatã."
 }

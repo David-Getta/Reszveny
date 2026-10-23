@@ -2623,6 +2623,11 @@ class AppLocalizationsBho extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'अगर सालाना रिटर्न ($rate) अइसहीं बनल रही, त रउआ $year के आसपास लक्ष्य तक पहुँच जाइब।';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करीं';
 
   @override

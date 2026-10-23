@@ -798,5 +798,6 @@
   "contributionAmount": "Vola hapetraka ({currency})",
   "contributionHint": "Fividianana ihany, tsy misy fivarotana: ny fananana lavitra indrindra ambanin'ny tanjony no mahazo ny vola voalohany.",
   "contributionShares": "≈ {shares} aksiona",
-  "contributionMissing": "Tsy misy vidiny ankehitriny ho an'ny {symbols}: tsy tafiditra amin'ny fizarana."
+  "contributionMissing": "Tsy misy vidiny ankehitriny ho an'ny {symbols}: tsy tafiditra amin'ny fizarana.",
+  "portfolioGoalEta": "Raha mitoetra toy izao ny tombony isan-taona ({rate}), ho tratranao ny tanjona manodidina ny taona {year}."
 }

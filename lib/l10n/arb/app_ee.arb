@@ -798,5 +798,6 @@
   "contributionAmount": "Ga si nàde eme ({currency})",
   "contributionHint": "Ƒeƒle ko, dzadzra aɖeke meli o: akpa siwo tsi megbe wu na woƒe taɖodzinu la xɔa ga la gbã.",
   "contributionShares": "≈ akpa {shares}",
-  "contributionMissing": "Fifia asi aɖeke meli na {symbols} o: wometsɔ wo de mamã la me o."
+  "contributionMissing": "Fifia asi aɖeke meli na {symbols} o: wometsɔ wo de mamã la me o.",
+  "portfolioGoalEta": "Ne ƒe sia ƒe viɖe la yi edzi nenema ({rate}) la, àɖo taɖodzinu la ƒe {year} lɔƒo."
 }

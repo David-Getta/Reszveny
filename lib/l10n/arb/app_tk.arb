@@ -798,5 +798,6 @@
   "contributionAmount": "Goýuljak mukdar ({currency})",
   "contributionHint": "Diňe satyn almak, satmak ýok: maksadyndan iň köp aşakda galan pozisiýalar puly ilki alýar.",
   "contributionShares": "≈ {shares} paýnama",
-  "contributionMissing": "{symbols} üçin häzirki baha ýok: paýlanyşa goşulmady."
+  "contributionMissing": "{symbols} üçin häzirki baha ýok: paýlanyşa goşulmady.",
+  "portfolioGoalEta": "Ýyllyk girdejililik şeýle galsa ({rate}), maksada takmynan {year} ýyl töwereginde ýetersiňiz."
 }

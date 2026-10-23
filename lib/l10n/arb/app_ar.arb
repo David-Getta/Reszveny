@@ -798,5 +798,6 @@
   "contributionAmount": "المبلغ المراد استثماره ({currency})",
   "contributionHint": "شراء فقط دون أي بيع: تحصل المراكز الأكثر تأخرًا عن هدفها على المال أولًا.",
   "contributionShares": "≈ {shares} سهم",
-  "contributionMissing": "لا يوجد سعر حالي لـ {symbols}، لذا استُبعدت من التوزيع."
+  "contributionMissing": "لا يوجد سعر حالي لـ {symbols}، لذا استُبعدت من التوزيع.",
+  "portfolioGoalEta": "إذا حافظ العائد السنوي على مستواه ({rate})، فستبلغ هدفك نحو عام {year}."
 }

@@ -2626,6 +2626,11 @@ class AppLocalizationsTt extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Еллык керемлелек шулай сакланса ($rate), максатка якынча $year елда ирешерсез.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Максат кую';
 
   @override

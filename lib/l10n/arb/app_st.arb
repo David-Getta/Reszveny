@@ -798,5 +798,6 @@
   "contributionAmount": "Chelete ya ho tsetela ({currency})",
   "contributionHint": "Ho reka feela, ha ho rekiswe: dishere tse ka tlase haholo ho sepheo sa tsona di fumana chelete pele.",
   "contributionShares": "≈ dishere tse {shares}",
-  "contributionMissing": "Ha ho theko ya hona jwale ya {symbols}: ha di kenyelletswe kabong."
+  "contributionMissing": "Ha ho theko ya hona jwale ya {symbols}: ha di kenyelletswe kabong.",
+  "portfolioGoalEta": "Haeba poelo ya selemo e ka dula e le jwalo ({rate}), o tla fihlela sepheo sa hao hoo e ka bang ka selemo sa {year}."
 }

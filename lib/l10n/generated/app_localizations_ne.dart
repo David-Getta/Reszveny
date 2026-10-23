@@ -2627,6 +2627,11 @@ class AppLocalizationsNe extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'वार्षिक प्रतिफल ($rate) यस्तै रहे, तपाईं करिब $year सालतिर लक्ष्यमा पुग्नुहुनेछ।';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तोक्नुहोस्';
 
   @override

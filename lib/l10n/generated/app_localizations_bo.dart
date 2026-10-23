@@ -2617,6 +2617,11 @@ class AppLocalizationsBo extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'ལོ་རེའི་ཁེ་འབབ་ ($rate) འདི་བཞིན་མུ་མཐུད་ན། ཕྱི་ལོ་ $year ཙམ་ལ་དམིགས་ཚད་ལ་སླེབས་ཐུབ་ཀྱི་རེད།';
+  }
+
+  @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
 
   @override

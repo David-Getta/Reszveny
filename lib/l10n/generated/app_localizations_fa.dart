@@ -2625,6 +2625,11 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'اگر بازده سالانه حفظ شود ($rate)، حدود سال $year به هدف می‌رسید.';
+  }
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

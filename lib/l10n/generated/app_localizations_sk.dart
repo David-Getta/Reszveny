@@ -2696,6 +2696,11 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Ak ročný výnos vydrží ($rate), cieľ dosiahnete okolo roku $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastaviť cieľ';
 
   @override

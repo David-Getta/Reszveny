@@ -798,5 +798,6 @@
   "contributionAmount": "Сума для вкладення ({currency})",
   "contributionHint": "Лише купівлі, без продажів: гроші спершу отримують позиції, які найбільше відстають від цілі.",
   "contributionShares": "≈ {shares} шт.",
-  "contributionMissing": "Немає поточної ціни для {symbols}: не враховано під час розподілу."
+  "contributionMissing": "Немає поточної ціни для {symbols}: не враховано під час розподілу.",
+  "portfolioGoalEta": "Якщо річна дохідність збережеться ({rate}), ви досягнете цілі приблизно в {year} році."
 }

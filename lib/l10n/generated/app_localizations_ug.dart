@@ -2631,6 +2631,11 @@ class AppLocalizationsUg extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'يىللىق پايدا نىسبىتى مۇشۇنداق داۋاملاشسا ($rate)، نىشانغا تەخمىنەن $year-يىلى يېتىسىز.';
+  }
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

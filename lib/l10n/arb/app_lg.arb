@@ -798,5 +798,6 @@
   "contributionAmount": "Ssente z'onoteeka ({currency})",
   "contributionHint": "Kugula kwokka, tewali kutunda: emigabo egisinga okuba wansi w'ekigendererwa kyagyo gye gisooka okufuna ssente.",
   "contributionShares": "≈ emigabo {shares}",
-  "contributionMissing": "Tewali bbeeyi ya kati eya {symbols}: tegibaliddwa mu kugabanya."
+  "contributionMissing": "Tewali bbeeyi ya kati eya {symbols}: tegibaliddwa mu kugabanya.",
+  "portfolioGoalEta": "Amagoba ga buli mwaka bwe ganaasigala bwe gatyo ({rate}), ojja kutuuka ku kiruubirirwa nga mu mwaka gwa {year}."
 }

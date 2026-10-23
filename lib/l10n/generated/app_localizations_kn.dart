@@ -2635,6 +2635,11 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'ವಾರ್ಷಿಕ ರಿಟರ್ನ್ ($rate) ಹೀಗೆಯೇ ಮುಂದುವರಿದರೆ, ನೀವು ಸುಮಾರು $year ಇಸವಿಯ ವೇಳೆಗೆ ಗುರಿ ತಲುಪುತ್ತೀರಿ.';
+  }
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

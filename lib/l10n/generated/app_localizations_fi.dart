@@ -2630,6 +2630,11 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Jos vuosituotto pysyy ennallaan ($rate), saavutat tavoitteen noin vuonna $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

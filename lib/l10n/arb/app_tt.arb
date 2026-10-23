@@ -798,5 +798,6 @@
   "contributionAmount": "Салына торган сумма ({currency})",
   "contributionHint": "Сатып алу гына, сату юк: акча иң элек максатыннан иң күп калышкан позицияләргә бирелә.",
   "contributionShares": "≈ {shares} акция",
-  "contributionMissing": "{symbols} өчен агымдагы бәя юк: бүлүгә кертелмәде."
+  "contributionMissing": "{symbols} өчен агымдагы бәя юк: бүлүгә кертелмәде.",
+  "portfolioGoalEta": "Еллык керемлелек шулай сакланса ({rate}), максатка якынча {year} елда ирешерсез."
 }

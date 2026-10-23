@@ -2637,6 +2637,11 @@ class AppLocalizationsNy extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Ngati phindu la pachaka likhalebe chomwechi ($rate), mudzakwaniritsa cholinga pafupifupi chaka cha $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

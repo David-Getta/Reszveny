@@ -798,5 +798,6 @@
   "contributionAmount": "Churanapaq qullqi ({currency})",
   "contributionHint": "Rantiylla, mana rantikuychu: munasqanmanta aswan uraypi kaq posicionkuna ñawpaqta qullqita chaskinku.",
   "contributionShares": "≈ {shares} accionkuna",
-  "contributionMissing": "{symbols}-paq kunan chaninnin mana kanchu: rakinakuypi mana yupakunchu."
+  "contributionMissing": "{symbols}-paq kunan chaninnin mana kanchu: rakinakuypi mana yupakunchu.",
+  "portfolioGoalEta": "Watapaq rendimiento kaqlla kaptinqa ({rate}), yaqa {year} watapi hayparinaykiman chayanki."
 }

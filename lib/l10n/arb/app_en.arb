@@ -2196,6 +2196,20 @@
       }
     }
   },
+  "portfolioGoalEta": "If the annual return holds ({rate}), you'd reach it around {year}.",
+  "@portfolioGoalEta": {
+    "description": "Small note under the portfolio goal bar: when the goal would be reached at today's money-weighted annual return, compounding, without new money. {year} is a year number like 2031.",
+    "placeholders": {
+      "rate": {
+        "type": "String",
+        "example": "+12.0%"
+      },
+      "year": {
+        "type": "String",
+        "example": "2031"
+      }
+    }
+  },
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

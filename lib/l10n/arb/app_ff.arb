@@ -798,5 +798,6 @@
   "contributionAmount": "Limoore ceede ɗe a waɗata ({currency})",
   "contributionHint": "Sooda tan, alaa yeeya: ko a jogii ɓurɗo woɗɗude faandaare mum heɓan ceede ɗee adan.",
   "contributionShares": "≈ aksiyoŋ {shares}",
-  "contributionMissing": "Coggu jooni alaa wonande {symbols}: naatnaaka e feccugol."
+  "contributionMissing": "Coggu jooni alaa wonande {symbols}: naatnaaka e feccugol.",
+  "portfolioGoalEta": "So nafoore hitaande ndee duumii ({rate}), a heɓay faandaare maa hono hitaande {year}."
 }

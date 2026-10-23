@@ -2558,6 +2558,11 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return '연 수익률($rate)이 유지되면 $year년경 목표에 도달할 것으로 보여요.';
+  }
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

@@ -2595,6 +2595,11 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'ዓመታዊ ተመላሹ ($rate) እንዲሁ ከቀጠለ፣ በ$year ገደማ ግቡ ላይ ይደርሳሉ።';
+  }
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

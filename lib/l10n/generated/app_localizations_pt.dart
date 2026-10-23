@@ -2635,6 +2635,11 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Se a rentabilidade anual se mantiver ($rate), atingirá a meta por volta de $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Definir meta';
 
   @override

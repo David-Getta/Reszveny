@@ -798,5 +798,6 @@
   "contributionAmount": "Inani lokutshala ({currency})",
   "contributionHint": "Kuthengwa kuphela, akuthengiswa: amasheya angaphansi kakhulu komgomo wawo athola imali kuqala.",
   "contributionShares": "≈ amasheya {shares}",
-  "contributionMissing": "Ayikho intengo yamanje ye-{symbols}: akufakiwe ekwabiweni."
+  "contributionMissing": "Ayikho intengo yamanje ye-{symbols}: akufakiwe ekwabiweni.",
+  "portfolioGoalEta": "Uma inzuzo yonyaka ihlala injalo ({rate}), uzofinyelela umgomo wakho cishe ngonyaka ka-{year}."
 }

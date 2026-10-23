@@ -2633,6 +2633,11 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Jika pulangan tahunan kekal ($rate), anda akan mencapai sasaran sekitar tahun $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

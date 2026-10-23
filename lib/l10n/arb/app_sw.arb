@@ -798,5 +798,6 @@
   "contributionAmount": "Kiasi cha kuwekeza ({currency})",
   "contributionHint": "Ununuzi tu, hakuna mauzo: nafasi zilizo chini zaidi ya lengo lake hupata pesa kwanza.",
   "contributionShares": "≈ hisa {shares}",
-  "contributionMissing": "Hakuna bei ya sasa kwa {symbols}: hazijajumuishwa kwenye mgawanyo."
+  "contributionMissing": "Hakuna bei ya sasa kwa {symbols}: hazijajumuishwa kwenye mgawanyo.",
+  "portfolioGoalEta": "Faida ya mwaka ikiendelea hivi ({rate}), utafikia lengo lako karibu mwaka {year}."
 }

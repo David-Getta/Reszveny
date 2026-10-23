@@ -798,5 +798,6 @@
   "contributionAmount": "Ներդրման գումար ({currency})",
   "contributionHint": "Միայն գնումներ, առանց վաճառքի։ Գումարը նախ ստանում են այն դիրքերը, որոնք ամենաշատն են հետ մնում իրենց թիրախից։",
   "contributionShares": "≈ {shares} բաժնետոմս",
-  "contributionMissing": "{symbols}-ի ընթացիկ գինը չկա․ բաշխման մեջ չեն ներառվել։"
+  "contributionMissing": "{symbols}-ի ընթացիկ գինը չկա․ բաշխման մեջ չեն ներառվել։",
+  "portfolioGoalEta": "Եթե տարեկան եկամտաբերությունը պահպանվի ({rate}), նպատակին կհասնեք մոտ {year} թվականին։"
 }

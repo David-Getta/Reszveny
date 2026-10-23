@@ -2639,6 +2639,11 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Αν η ετήσια απόδοση διατηρηθεί ($rate), θα φτάσετε τον στόχο γύρω στο $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

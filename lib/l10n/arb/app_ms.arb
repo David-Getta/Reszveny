@@ -798,5 +798,6 @@
   "contributionAmount": "Jumlah untuk dilaburkan ({currency})",
   "contributionHint": "Beli sahaja, tanpa jualan: pegangan yang paling jauh di bawah sasarannya menerima wang dahulu.",
   "contributionShares": "≈ {shares} saham",
-  "contributionMissing": "Tiada harga semasa untuk {symbols}: tidak dimasukkan dalam pembahagian."
+  "contributionMissing": "Tiada harga semasa untuk {symbols}: tidak dimasukkan dalam pembahagian.",
+  "portfolioGoalEta": "Jika pulangan tahunan kekal ({rate}), anda akan mencapai sasaran sekitar tahun {year}."
 }

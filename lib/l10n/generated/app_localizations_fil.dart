@@ -2637,6 +2637,11 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Kung mananatili ang taunang kita ($rate), maaabot mo ang layunin bandang $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

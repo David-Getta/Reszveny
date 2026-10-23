@@ -798,5 +798,6 @@
   "contributionAmount": "Částka k investování ({currency})",
   "contributionHint": "Jen nákupy, žádné prodeje: peníze dostanou nejdřív pozice, které nejvíc zaostávají za svým cílem.",
   "contributionShares": "≈ {shares} ks",
-  "contributionMissing": "Pro {symbols} není k dispozici aktuální cena: nejsou zahrnuty do rozdělení."
+  "contributionMissing": "Pro {symbols} není k dispozici aktuální cena: nejsou zahrnuty do rozdělení.",
+  "portfolioGoalEta": "Pokud roční výnos vydrží ({rate}), dosáhnete cíle kolem roku {year}."
 }

@@ -2621,6 +2621,11 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'אם התשואה השנתית תישמר ($rate), היעד יושג בסביבות $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'הגדרת יעד';
 
   @override

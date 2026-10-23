@@ -2628,6 +2628,11 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'If the yearly return still dey like this ($rate), you go hit your target around $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

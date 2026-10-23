@@ -798,5 +798,6 @@
   "contributionAmount": "Azal ara tserseḍ ({currency})",
   "contributionHint": "Asɣi kan, ulac azenzi: iksyunen yeqqimen ugar deffir yiswi-nsen ad awin idrimen d imezwura.",
   "contributionShares": "≈ {shares} n yiksyunen",
-  "contributionMissing": "Ulac ssuma tamirant i {symbols}: ur ttwaḥesben ara deg beṭṭu."
+  "contributionMissing": "Ulac ssuma tamirant i {symbols}: ur ttwaḥesben ara deg beṭṭu.",
+  "portfolioGoalEta": "Ma yeqqim ufaris n useggas akka ({rate}), ad tawḍeḍ ɣer yiswi qrib deg useggas {year}."
 }

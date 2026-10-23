@@ -4531,6 +4531,12 @@ abstract class AppLocalizations {
   /// **'No price right now for {symbols}: left out of the split.'**
   String contributionMissing(String symbols);
 
+  /// Small note under the portfolio goal bar: when the goal would be reached at today's money-weighted annual return, compounding, without new money. {year} is a year number like 2031.
+  ///
+  /// In en, this message translates to:
+  /// **'If the annual return holds ({rate}), you\'d reach it around {year}.'**
+  String portfolioGoalEta(String rate, String year);
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

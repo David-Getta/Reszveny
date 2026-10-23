@@ -2670,6 +2670,11 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Ja gada ienesīgums saglabāsies ($rate), mērķi sasniegsiet ap $year. gadu.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

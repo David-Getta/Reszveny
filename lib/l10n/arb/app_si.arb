@@ -798,5 +798,6 @@
   "contributionAmount": "ආයෝජනය කරන මුදල ({currency})",
   "contributionHint": "මිලදී ගැනීම් පමණි, විකිණීම් නැත: තම ඉලක්කයට වඩා වැඩිපුරම පහළින් ඇති ස්ථානවලට මුදල් මුලින්ම ලැබේ.",
   "contributionShares": "≈ කොටස් {shares}",
-  "contributionMissing": "{symbols} සඳහා වත්මන් මිලක් නොමැත: බෙදීමට ඇතුළත් කර නැත."
+  "contributionMissing": "{symbols} සඳහා වත්මන් මිලක් නොමැත: බෙදීමට ඇතුළත් කර නැත.",
+  "portfolioGoalEta": "වාර්ෂික ප්‍රතිලාභය ({rate}) මෙලෙසම පැවතුණහොත්, ඔබ ආසන්න වශයෙන් {year} වසර වන විට ඉලක්කය සපුරා ගනු ඇත."
 }

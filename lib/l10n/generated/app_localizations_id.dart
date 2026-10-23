@@ -2626,6 +2626,11 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Jika imbal hasil tahunan bertahan ($rate), Anda akan mencapai target sekitar tahun $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tetapkan target';
 
   @override

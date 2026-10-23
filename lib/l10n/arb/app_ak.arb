@@ -798,5 +798,6 @@
   "contributionAmount": "Sika a wode bɛhyɛ mu ({currency})",
   "contributionHint": "Wɔtɔ nko ara, wɔntɔn hwee: nkyɛfa a aka akyi koraa wɔ wɔn botaeɛ ho na wɔnya sika no kan.",
   "contributionShares": "≈ nkyɛfa {shares}",
-  "contributionMissing": "Seesei bo biara nni hɔ mma {symbols}: wɔamfa wɔn anka sika nkyɛmu no ho."
+  "contributionMissing": "Seesei bo biara nni hɔ mma {symbols}: wɔamfa wɔn anka sika nkyɛmu no ho.",
+  "portfolioGoalEta": "Sɛ afe mfaso no kɔ so saa ({rate}) a, wobɛdu wo botaeɛ ho bɛyɛ afe {year}."
 }

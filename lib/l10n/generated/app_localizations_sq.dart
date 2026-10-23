@@ -2634,6 +2634,11 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Nëse rendimenti vjetor mbetet i tillë ($rate), objektivin do ta arrini rreth vitit $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

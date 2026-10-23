@@ -798,5 +798,6 @@
   "contributionAmount": "Montant à investir ({currency})",
   "contributionHint": "Achats uniquement, aucune vente : les positions les plus en dessous de leur cible reçoivent l’argent en premier.",
   "contributionShares": "≈ {shares} actions",
-  "contributionMissing": "Pas de cours actuel pour {symbols} : hors répartition."
+  "contributionMissing": "Pas de cours actuel pour {symbols} : hors répartition.",
+  "portfolioGoalEta": "Si le rendement annuel se maintient ({rate}), vous atteindrez l’objectif vers {year}."
 }

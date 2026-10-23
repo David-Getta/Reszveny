@@ -2648,6 +2648,11 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Raha mitoetra toy izao ny tombony isan-taona ($rate), ho tratranao ny tanjona manodidina ny taona $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

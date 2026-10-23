@@ -798,5 +798,6 @@
   "contributionAmount": "Sijoitettava summa ({currency})",
   "contributionHint": "Vain ostoja, ei myyntejä: eniten tavoitteestaan jäljessä olevat omistukset saavat rahat ensin.",
   "contributionShares": "≈ {shares} osaketta",
-  "contributionMissing": "Ei nykyistä hintaa kohteille {symbols}: jätetty jaon ulkopuolelle."
+  "contributionMissing": "Ei nykyistä hintaa kohteille {symbols}: jätetty jaon ulkopuolelle.",
+  "portfolioGoalEta": "Jos vuosituotto pysyy ennallaan ({rate}), saavutat tavoitteen noin vuonna {year}."
 }

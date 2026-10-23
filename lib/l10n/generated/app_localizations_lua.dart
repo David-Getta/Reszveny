@@ -2637,6 +2637,11 @@ class AppLocalizationsLua extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Bikala dipeta dia tshidimu dishala nunku ($rate), neukumbaje tshipatshila tshiebe pabuipi ne tshidimu tshia $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

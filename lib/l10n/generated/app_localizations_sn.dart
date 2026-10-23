@@ -2636,6 +2636,11 @@ class AppLocalizationsSn extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Kana pundutso yegore ikaramba yakadaro ($rate), uchasvika pachinangwa kunenge muna $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Isa chinangwa';
 
   @override

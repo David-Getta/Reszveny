@@ -26,7 +26,11 @@ class GoalProgress extends StatelessWidget {
     required this.onChanged,
     required this.fmt,
     this.padding = const EdgeInsets.only(top: 14, bottom: 2),
+    this.footnote,
   });
+
+  /// A sáv alatti kis megjegyzés (pl. a cél becsült elérése), ha a cél még nem teljesült.
+  final String? footnote;
 
   final String keyPrefix;
   final Goal? goal;
@@ -100,6 +104,14 @@ class GoalProgress extends StatelessWidget {
                 backgroundColor: p.border,
               ),
             ),
+            if (footnote case final f? when ratio < 1) ...[
+              const SizedBox(height: 4),
+              Text(
+                f,
+                key: ValueKey('$keyPrefix-eta'),
+                style: theme.textTheme.bodySmall?.copyWith(color: p.muted, fontSize: 11),
+              ),
+            ],
           ],
         ),
       ),

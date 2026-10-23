@@ -2675,6 +2675,11 @@ class AppLocalizationsSr extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Ако годишњи принос остане такав ($rate), циљ ћете достићи око $year. године.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Постави циљ';
 
   @override

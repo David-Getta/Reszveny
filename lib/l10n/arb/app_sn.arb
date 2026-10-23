@@ -798,5 +798,6 @@
   "contributionAmount": "Mari yekuisa ({currency})",
   "contributionHint": "Kutenga chete, hapana kutengesa: masheya ari pasi zvikuru pechinangwa chawo anotanga kuwana mari.",
   "contributionShares": "≈ masheya {shares}",
-  "contributionMissing": "Hapana mutengo wazvino we {symbols}: hazvina kuverengerwa mukugovera."
+  "contributionMissing": "Hapana mutengo wazvino we {symbols}: hazvina kuverengerwa mukugovera.",
+  "portfolioGoalEta": "Kana pundutso yegore ikaramba yakadaro ({rate}), uchasvika pachinangwa kunenge muna {year}."
 }

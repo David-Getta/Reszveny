@@ -2513,6 +2513,11 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return '若年化收益率保持不变（$rate），预计约 $year 年达成目标。';
+  }
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5392,6 +5397,11 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   @override
   String contributionMissing(String symbols) {
     return '$symbols沒有目前股價，未有納入分配。';
+  }
+
+  @override
+  String portfolioGoalEta(String rate, String year) {
+    return '若年化回報率維持不變（$rate），預計約 $year 年達成目標。';
   }
 
   @override

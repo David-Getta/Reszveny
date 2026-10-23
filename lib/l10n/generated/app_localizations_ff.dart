@@ -2623,6 +2623,11 @@ class AppLocalizationsFf extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'So nafoore hitaande ndee duumii ($rate), a heɓay faandaare maa hono hitaande $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

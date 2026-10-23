@@ -798,5 +798,6 @@
   "contributionAmount": "Madi a go beeletsa ({currency})",
   "contributionHint": "Go reka fela, ga go rekisiwe: dishere tse di kwa tlase thata ga maikaelelo a tsone di amogela madi pele.",
   "contributionShares": "≈ dishere di le {shares}",
-  "contributionMissing": "Ga go na tlhwatlhwa ya gompieno ya {symbols}: ga di akarediwe mo kabong."
+  "contributionMissing": "Ga go na tlhwatlhwa ya gompieno ya {symbols}: ga di akarediwe mo kabong.",
+  "portfolioGoalEta": "Fa poelo ya ngwaga e ka nna e ntse jalo ({rate}), o tla fitlhelela maikaelelo a gago gaufi le ngwaga wa {year}."
 }

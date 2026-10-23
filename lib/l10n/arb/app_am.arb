@@ -798,5 +798,6 @@
   "contributionAmount": "ኢንቨስት የሚደረገው መጠን ({currency})",
   "contributionHint": "ግዢ ብቻ፣ ሽያጭ የለም፦ ከዒላማቸው በጣም ወደ ኋላ የቀሩት ይዞታዎች ገንዘቡን መጀመሪያ ያገኛሉ።",
   "contributionShares": "≈ {shares} አክሲዮኖች",
-  "contributionMissing": "ለ{symbols} የአሁኑ ዋጋ የለም፤ ከክፍፍሉ ውጭ ተደርገዋል።"
+  "contributionMissing": "ለ{symbols} የአሁኑ ዋጋ የለም፤ ከክፍፍሉ ውጭ ተደርገዋል።",
+  "portfolioGoalEta": "ዓመታዊ ተመላሹ ({rate}) እንዲሁ ከቀጠለ፣ በ{year} ገደማ ግቡ ላይ ይደርሳሉ።"
 }

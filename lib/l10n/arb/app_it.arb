@@ -798,5 +798,6 @@
   "contributionAmount": "Importo da investire ({currency})",
   "contributionHint": "Solo acquisti, nessuna vendita: le posizioni più sotto il loro obiettivo ricevono il denaro per prime.",
   "contributionShares": "≈ {shares} azioni",
-  "contributionMissing": "Nessun prezzo attuale per {symbols}: esclusi dalla ripartizione."
+  "contributionMissing": "Nessun prezzo attuale per {symbols}: esclusi dalla ripartizione.",
+  "portfolioGoalEta": "Se il rendimento annuo si mantiene ({rate}), raggiungerai l’obiettivo intorno al {year}."
 }

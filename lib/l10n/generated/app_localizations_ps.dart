@@ -2620,6 +2620,11 @@ class AppLocalizationsPs extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'که کلنۍ ګټه همداسې پاتې شي ($rate)، نو شاوخوا په $year کال کې به موخې ته ورسېږئ.';
+  }
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

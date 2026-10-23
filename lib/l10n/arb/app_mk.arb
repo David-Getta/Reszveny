@@ -798,5 +798,6 @@
   "contributionAmount": "Износ за вложување ({currency})",
   "contributionHint": "Само купувања, без продажби: парите прво одат кај позициите што се најмногу под својата цел.",
   "contributionShares": "≈ {shares} акции",
-  "contributionMissing": "Нема актуелна цена за {symbols}: не се вклучени во распределбата."
+  "contributionMissing": "Нема актуелна цена за {symbols}: не се вклучени во распределбата.",
+  "portfolioGoalEta": "Ако годишниот принос се задржи ({rate}), целта ќе ја постигнете околу {year} година."
 }

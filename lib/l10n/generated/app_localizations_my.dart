@@ -2620,6 +2620,11 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'နှစ်စဉ် အမြတ်နှုန်း ($rate) ဆက်ရှိနေပါက $year ခုနှစ်ခန့်တွင် ပန်းတိုင် ပြည့်မီပါမည်။';
+  }
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

@@ -798,5 +798,6 @@
   "contributionAmount": "বিনিয়োগ কৰিবলগীয়া পৰিমাণ ({currency})",
   "contributionHint": "কেৱল ক্ৰয়, বিক্ৰী নাই: লক্ষ্যৰ পৰা আটাইতকৈ বেছি তলত থকা পজিচনসমূহে প্ৰথমে ধন পাব।",
   "contributionShares": "≈ {shares} শ্বেয়াৰ",
-  "contributionMissing": "{symbols}-ৰ বাবে বৰ্তমানৰ দাম নাই: বিতৰণৰ পৰা বাদ দিয়া হৈছে।"
+  "contributionMissing": "{symbols}-ৰ বাবে বৰ্তমানৰ দাম নাই: বিতৰণৰ পৰা বাদ দিয়া হৈছে।",
+  "portfolioGoalEta": "বাৰ্ষিক ৰিটাৰ্ণ ({rate}) এনেদৰে থাকিলে আপুনি প্ৰায় {year} চনত লক্ষ্য পূৰণ কৰিব।"
 }

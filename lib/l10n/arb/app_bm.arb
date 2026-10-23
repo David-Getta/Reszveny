@@ -798,5 +798,6 @@
   "contributionAmount": "Wari hakɛ min bɛna don ({currency})",
   "contributionHint": "San dɔrɔn, feere tɛ: aksiyɔn minnu tora kɔfɛ kosɛbɛ u ka laɲini na, olu bɛ wari sɔrɔ fɔlɔ.",
   "contributionShares": "≈ aksiyɔn {shares}",
-  "contributionMissing": "{symbols} sisan sɔngɔ tɛ yen: u ma don tilali la."
+  "contributionMissing": "{symbols} sisan sɔngɔ tɛ yen: u ma don tilali la.",
+  "portfolioGoalEta": "Ni san o san tɔnɔ tora ten ({rate}), i bɛna i ka laɲini sɔrɔ san {year} ɲɔgɔn na."
 }

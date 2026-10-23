@@ -798,5 +798,6 @@
   "contributionAmount": "Hanga invastii godhamu ({currency})",
   "contributionHint": "Bituu qofa, gurgurtaa hin qabu: qabiyyeewwan galma isaanii irraa baay'ee gadi jiran maallaqa dursanii argatu.",
   "contributionShares": "≈ aksiyoona {shares}",
-  "contributionMissing": "Gatiin ammaa {symbols} hin jiru: qoodinsa keessa hin galle."
+  "contributionMissing": "Gatiin ammaa {symbols} hin jiru: qoodinsa keessa hin galle.",
+  "portfolioGoalEta": "Bu'aan waggaa akkasumatti yoo itti fufe ({rate}), kaayyoon kee gara bara {year} galma ni ga'a."
 }

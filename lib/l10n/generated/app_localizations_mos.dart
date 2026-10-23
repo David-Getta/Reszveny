@@ -2614,6 +2614,11 @@ class AppLocalizationsMos extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Yʋʋmd nafa sã n kell n yaa woto ($rate), f na n paama f raabã yʋʋmd $year wakatã.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

@@ -798,5 +798,6 @@
   "contributionAmount": "Amount to invest ({currency})",
   "contributionHint": "Na only buy, no sell: di stocks wey fall pass under dia target go first collect di moni.",
   "contributionShares": "≈ {shares} shares",
-  "contributionMissing": "{symbols} no get current price: we no put dem for di sharing."
+  "contributionMissing": "{symbols} no get current price: we no put dem for di sharing.",
+  "portfolioGoalEta": "If the yearly return still dey like this ({rate}), you go hit your target around {year}."
 }

@@ -1637,6 +1637,19 @@ class _GoalBar extends StatelessWidget {
             : l10n.portfolioGoalProgress(fmt.percent(ratio * 100, decimals: 0), fmt.money(goal.amount, goal.currency)),
         onChanged: prefs.setPortfolioGoal,
         fmt: fmt,
+        // A mostani éves hozammal mikor érhető el (befizetés nélkül, kamatos kamattal).
+        footnote: switch ((prefs.portfolioGoal, snapshot.annualReturn)) {
+          (final g?, final r?) when g.currency == snapshot.currency => switch (goalYear(
+            snapshot.totalValue,
+            g.amount,
+            r,
+            DateTime.now(),
+          )) {
+            final y? => l10n.portfolioGoalEta(fmt.percent(r * 100, withSign: true), '$y'),
+            _ => null,
+          },
+          _ => null,
+        },
       ),
     );
   }

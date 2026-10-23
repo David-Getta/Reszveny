@@ -798,5 +798,6 @@
   "contributionAmount": "Amahera yo gushora ({currency})",
   "contributionHint": "Kugura gusa, nta kugurisha: imigabane iri kure cane munsi y'intumbero yayo ni yo ironka amahera mbere.",
   "contributionShares": "≈ imigabane {shares}",
-  "contributionMissing": "Nta giciro ca none ca {symbols}: ntibiharurwa mu kugabura."
+  "contributionMissing": "Nta giciro ca none ca {symbols}: ntibiharurwa mu kugabura.",
+  "portfolioGoalEta": "Nimba inyungu ku mwaka iguma uko iri ({rate}), uzoshika ku ntumbero hafi mu mwaka wa {year}."
 }

@@ -2637,6 +2637,11 @@ class AppLocalizationsRn extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Nimba inyungu ku mwaka iguma uko iri ($rate), uzoshika ku ntumbero hafi mu mwaka wa $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Shiraho intumbero';
 
   @override

@@ -2641,6 +2641,11 @@ class AppLocalizationsCeb extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Kung magpabilin ang tinuig nga kita ($rate), maabot nimo ang tumong mga tuig $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

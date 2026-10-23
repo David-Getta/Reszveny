@@ -798,5 +798,6 @@
   "contributionAmount": "বিনিয়োগের পরিমাণ ({currency})",
   "contributionHint": "শুধু কেনা, কোনো বিক্রি নয়: লক্ষ্যের চেয়ে সবচেয়ে বেশি পিছিয়ে থাকা অবস্থানগুলো আগে টাকা পায়।",
   "contributionShares": "≈ {shares} শেয়ার",
-  "contributionMissing": "{symbols}-এর বর্তমান দাম নেই: বণ্টনে ধরা হয়নি।"
+  "contributionMissing": "{symbols}-এর বর্তমান দাম নেই: বণ্টনে ধরা হয়নি।",
+  "portfolioGoalEta": "বার্ষিক রিটার্ন ({rate}) বজায় থাকলে আপনি প্রায় {year} সাল নাগাদ লক্ষ্যে পৌঁছাবেন।"
 }

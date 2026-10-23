@@ -798,5 +798,6 @@
   "contributionAmount": "Iznos za ulaganje ({currency})",
   "contributionHint": "Samo kupovina, bez prodaje: novac prvo dobijaju pozicije koje najviše zaostaju za svojim ciljem.",
   "contributionShares": "≈ {shares} kom.",
-  "contributionMissing": "Nema trenutne cijene za {symbols}: nisu uključeni u raspodjelu."
+  "contributionMissing": "Nema trenutne cijene za {symbols}: nisu uključeni u raspodjelu.",
+  "portfolioGoalEta": "Ako godišnji prinos ostane takav ({rate}), cilj ćete dostići oko {year}. godine."
 }

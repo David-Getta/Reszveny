@@ -798,5 +798,6 @@
   "contributionAmount": "投資額（{currency}）",
   "contributionHint": "購入のみで、売却はしません。目標を最も下回っている銘柄から優先して資金を配分します。",
   "contributionShares": "≈ {shares}株",
-  "contributionMissing": "{symbols}の現在の株価がないため、配分から除外しました。"
+  "contributionMissing": "{symbols}の現在の株価がないため、配分から除外しました。",
+  "portfolioGoalEta": "年率リターン（{rate}）が続けば、{year}年ごろに目標達成の見込みです。"
 }

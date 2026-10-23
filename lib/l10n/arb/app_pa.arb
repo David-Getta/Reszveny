@@ -798,5 +798,6 @@
   "contributionAmount": "ਨਿਵੇਸ਼ ਕਰਨ ਲਈ ਰਕਮ ({currency})",
   "contributionHint": "ਸਿਰਫ਼ ਖਰੀਦ, ਕੋਈ ਵਿਕਰੀ ਨਹੀਂ: ਆਪਣੇ ਟੀਚੇ ਤੋਂ ਸਭ ਤੋਂ ਵੱਧ ਹੇਠਾਂ ਵਾਲੀਆਂ ਪੁਜ਼ੀਸ਼ਨਾਂ ਨੂੰ ਪਹਿਲਾਂ ਪੈਸਾ ਮਿਲਦਾ ਹੈ।",
   "contributionShares": "≈ {shares} ਸ਼ੇਅਰ",
-  "contributionMissing": "{symbols} ਲਈ ਮੌਜੂਦਾ ਕੀਮਤ ਉਪਲਬਧ ਨਹੀਂ ਹੈ: ਵੰਡ ਵਿੱਚ ਸ਼ਾਮਲ ਨਹੀਂ ਕੀਤਾ ਗਿਆ।"
+  "contributionMissing": "{symbols} ਲਈ ਮੌਜੂਦਾ ਕੀਮਤ ਉਪਲਬਧ ਨਹੀਂ ਹੈ: ਵੰਡ ਵਿੱਚ ਸ਼ਾਮਲ ਨਹੀਂ ਕੀਤਾ ਗਿਆ।",
+  "portfolioGoalEta": "ਜੇ ਸਾਲਾਨਾ ਰਿਟਰਨ ({rate}) ਇਸੇ ਤਰ੍ਹਾਂ ਰਹੇ, ਤਾਂ ਤੁਸੀਂ {year} ਦੇ ਆਸ-ਪਾਸ ਟੀਚਾ ਪੂਰਾ ਕਰ ਲਵੋਗੇ।"
 }

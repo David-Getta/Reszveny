@@ -798,5 +798,6 @@
   "contributionAmount": "Jumlah yang diinvestasikan ({currency})",
   "contributionHint": "Hanya membeli, tanpa menjual: posisi yang paling jauh di bawah targetnya mendapat dana lebih dulu.",
   "contributionShares": "≈ {shares} saham",
-  "contributionMissing": "Tidak ada harga terkini untuk {symbols}: tidak disertakan dalam pembagian."
+  "contributionMissing": "Tidak ada harga terkini untuk {symbols}: tidak disertakan dalam pembagian.",
+  "portfolioGoalEta": "Jika imbal hasil tahunan bertahan ({rate}), Anda akan mencapai target sekitar tahun {year}."
 }

@@ -2627,6 +2627,11 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Si rannman anyèl la kenbe ($rate), w ap rive nan objektif la anviwon $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

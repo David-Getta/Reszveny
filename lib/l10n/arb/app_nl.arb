@@ -798,5 +798,6 @@
   "contributionAmount": "Te investeren bedrag ({currency})",
   "contributionHint": "Alleen kopen, niet verkopen: de posities die het verst onder hun doel liggen, krijgen het geld als eerste.",
   "contributionShares": "≈ {shares} aandelen",
-  "contributionMissing": "Geen actuele koers voor {symbols}: niet meegenomen in de verdeling."
+  "contributionMissing": "Geen actuele koers voor {symbols}: niet meegenomen in de verdeling.",
+  "portfolioGoalEta": "Als het jaarrendement zo blijft ({rate}), bereik je je doel rond {year}."
 }

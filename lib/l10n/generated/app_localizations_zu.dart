@@ -2640,6 +2640,11 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Uma inzuzo yonyaka ihlala injalo ($rate), uzofinyelela umgomo wakho cishe ngonyaka ka-$year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setha umgomo';
 
   @override

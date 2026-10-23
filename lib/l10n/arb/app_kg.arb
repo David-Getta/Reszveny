@@ -798,5 +798,6 @@
   "contributionAmount": "Ntalu ya kutula ({currency})",
   "contributionHint": "Kusumba kaka, kuteka ve: ba position yina me bikala nsi ya lukanu na yo kuluta ta baka mbongo ntete.",
   "contributionShares": "≈ action {shares}",
-  "contributionMissing": "Ka kuena ntalu ya bubu ya {symbols} ko: bo me katula yo na kukabula."
+  "contributionMissing": "Ka kuena ntalu ya bubu ya {symbols} ko: bo me katula yo na kukabula.",
+  "portfolioGoalEta": "Kana mbakulu ya mvula bikala mutindu yai ({rate}), nge ta lungisa lukanu pene-pene na mvula {year}."
 }

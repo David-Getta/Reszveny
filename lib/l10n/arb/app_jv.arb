@@ -798,5 +798,6 @@
   "contributionAmount": "Jumlah sing diinvestasekake ({currency})",
   "contributionHint": "Mung tuku, ora ana adol: posisi sing paling adoh ing ngisor target-e oleh dhuwit luwih dhisik.",
   "contributionShares": "≈ {shares} saham",
-  "contributionMissing": "Ora ana rega saiki kanggo {symbols}: ora dilebokake ing pambagian."
+  "contributionMissing": "Ora ana rega saiki kanggo {symbols}: ora dilebokake ing pambagian.",
+  "portfolioGoalEta": "Yen imbal hasil taunan tetep ({rate}), sampeyan bakal nggayuh target kira-kira taun {year}."
 }

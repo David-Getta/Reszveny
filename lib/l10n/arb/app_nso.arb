@@ -798,5 +798,6 @@
   "contributionAmount": "Tšhelete ya go beeletša ({currency})",
   "contributionHint": "Go reka fela, ga go rekišwe: maemo ao a lego ka fase kudu ga nepo ya ona a hwetša tšhelete pele.",
   "contributionShares": "≈ dišere tše {shares}",
-  "contributionMissing": "Ga go na theko ya bjale ya {symbols}: ga a akaretšwe kabong."
+  "contributionMissing": "Ga go na theko ya bjale ya {symbols}: ga a akaretšwe kabong.",
+  "portfolioGoalEta": "Ge poelo ya ngwaga e ka dula e le bjalo ({rate}), o tla fihlelela maikemišetšo a gago mo e ka bago ka ngwaga wa {year}."
 }

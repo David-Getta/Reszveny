@@ -2647,6 +2647,11 @@ class AppLocalizationsTn extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Fa poelo ya ngwaga e ka nna e ntse jalo ($rate), o tla fitlhelela maikaelelo a gago gaufi le ngwaga wa $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Baya maikaelelo';
 
   @override

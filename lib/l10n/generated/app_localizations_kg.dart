@@ -2638,6 +2638,11 @@ class AppLocalizationsKg extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Kana mbakulu ya mvula bikala mutindu yai ($rate), nge ta lungisa lukanu pene-pene na mvula $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

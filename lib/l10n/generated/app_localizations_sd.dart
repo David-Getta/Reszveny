@@ -2619,6 +2619,11 @@ class AppLocalizationsSd extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'جيڪڏهن سالياني رٽرن ($rate) ائين ئي رهيو، ته توهان $year ڌاري مقصد حاصل ڪندا.';
+  }
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

@@ -798,5 +798,6 @@
   "contributionAmount": "投资金额（{currency}）",
   "contributionHint": "只买不卖：低于目标比例最多的持仓优先分配资金。",
   "contributionShares": "≈ {shares} 股",
-  "contributionMissing": "{symbols}暂无当前价格，未纳入分配。"
+  "contributionMissing": "{symbols}暂无当前价格，未纳入分配。",
+  "portfolioGoalEta": "若年化收益率保持不变（{rate}），预计约 {year} 年达成目标。"
 }

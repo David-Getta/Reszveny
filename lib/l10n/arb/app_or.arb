@@ -798,5 +798,6 @@
   "contributionAmount": "ନିବେଶ ପାଇଁ ରାଶି ({currency})",
   "contributionHint": "କେବଳ କିଣିବା, ବିକ୍ରି ନୁହେଁ: ନିଜ ଲକ୍ଷ୍ୟଠାରୁ ସବୁଠାରୁ ଅଧିକ ତଳେ ଥିବା ପୋଜିସନଗୁଡ଼ିକ ପ୍ରଥମେ ଅର୍ଥ ପାଆନ୍ତି।",
   "contributionShares": "≈ {shares} ସେୟାର",
-  "contributionMissing": "{symbols} ପାଇଁ ବର୍ତ୍ତମାନର ଦର ଉପଲବ୍ଧ ନାହିଁ: ବଣ୍ଟନରୁ ବାଦ ଦିଆଯାଇଛି।"
+  "contributionMissing": "{symbols} ପାଇଁ ବର୍ତ୍ତମାନର ଦର ଉପଲବ୍ଧ ନାହିଁ: ବଣ୍ଟନରୁ ବାଦ ଦିଆଯାଇଛି।",
+  "portfolioGoalEta": "ବାର୍ଷିକ ରିଟର୍ନ ({rate}) ଏହିପରି ରହିଲେ, ଆପଣ ପ୍ରାୟ {year} ମସିହା ସୁଦ୍ଧା ଲକ୍ଷ୍ୟ ପୂରଣ କରିବେ।"
 }

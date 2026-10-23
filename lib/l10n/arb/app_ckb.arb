@@ -798,5 +798,6 @@
   "contributionAmount": "بڕی وەبەرهێنان ({currency})",
   "contributionHint": "تەنها کڕین، بێ فرۆشتن: ئەو پۆزیشنانەی زیاتر لە هەمووان لە ئامانجەکەیان دواکەوتوون، یەکەم پارەکە وەردەگرن.",
   "contributionShares": "≈ {shares} پشک",
-  "contributionMissing": "نرخی ئێستا بۆ {symbols} نییە: لە دابەشکردنەکە دەرکراون."
+  "contributionMissing": "نرخی ئێستا بۆ {symbols} نییە: لە دابەشکردنەکە دەرکراون.",
+  "portfolioGoalEta": "ئەگەر قازانجی ساڵانە وەک خۆی بمێنێتەوە ({rate})، نزیکەی ساڵی {year} دەگەیت بە ئامانج."
 }

@@ -2629,6 +2629,11 @@ class AppLocalizationsKi extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Uumithio wa mwaka ũngĩtũũra ũguo ($rate), nĩ ũgakinyĩra muoroto ta mwaka wa $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

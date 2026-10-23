@@ -798,5 +798,6 @@
   "contributionAmount": "Investuojama suma ({currency})",
   "contributionHint": "Tik pirkimai, jokių pardavimų: pinigus pirmiausia gauna pozicijos, labiausiai atsiliekančios nuo savo tikslo.",
   "contributionShares": "≈ {shares} vnt.",
-  "contributionMissing": "Nėra dabartinės {symbols} kainos: neįtrauktos į paskirstymą."
+  "contributionMissing": "Nėra dabartinės {symbols} kainos: neįtrauktos į paskirstymą.",
+  "portfolioGoalEta": "Jei metinė grąža išliks ({rate}), tikslą pasieksite apie {year} m."
 }

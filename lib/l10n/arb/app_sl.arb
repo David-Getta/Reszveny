@@ -798,5 +798,6 @@
   "contributionAmount": "Znesek za naložbo ({currency})",
   "contributionHint": "Samo nakupi, brez prodaj: denar najprej dobijo pozicije, ki so najbolj pod svojim ciljem.",
   "contributionShares": "≈ {shares} delnic",
-  "contributionMissing": "Ni trenutne cene za {symbols}: niso vključeni v razdelitev."
+  "contributionMissing": "Ni trenutne cene za {symbols}: niso vključeni v razdelitev.",
+  "portfolioGoalEta": "Če se letni donos ohrani ({rate}), boste cilj dosegli okoli leta {year}."
 }

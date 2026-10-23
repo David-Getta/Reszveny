@@ -2629,6 +2629,11 @@ class AppLocalizationsNb extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Hvis den årlige avkastningen holder seg ($rate), når du målet rundt $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sett et mål';
 
   @override

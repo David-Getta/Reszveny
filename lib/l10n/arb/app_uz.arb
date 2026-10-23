@@ -798,5 +798,6 @@
   "contributionAmount": "Kiritiladigan summa ({currency})",
   "contributionHint": "Faqat xarid, sotuvsiz: pul avval maqsadidan eng koʻp ortda qolgan pozitsiyalarga beriladi.",
   "contributionShares": "≈ {shares} aksiya",
-  "contributionMissing": "{symbols} uchun joriy narx yoʻq: taqsimotga kiritilmadi."
+  "contributionMissing": "{symbols} uchun joriy narx yoʻq: taqsimotga kiritilmadi.",
+  "portfolioGoalEta": "Yillik daromadlilik shunday saqlansa ({rate}), maqsadga taxminan {year}-yilda erishasiz."
 }

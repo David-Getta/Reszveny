@@ -2629,6 +2629,11 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Жилийн өгөөж ийм хэвээр байвал ($rate), та зорилтоо ойролцоогоор $year онд биелүүлнэ.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

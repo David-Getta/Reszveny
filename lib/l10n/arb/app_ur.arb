@@ -798,5 +798,6 @@
   "contributionAmount": "سرمایہ کاری کی رقم ({currency})",
   "contributionHint": "صرف خریداری، فروخت نہیں: جو پوزیشنز اپنے ہدف سے سب سے زیادہ نیچے ہیں، انہیں پہلے رقم ملتی ہے۔",
   "contributionShares": "≈ {shares} شیئرز",
-  "contributionMissing": "{symbols} کے لیے موجودہ قیمت دستیاب نہیں: تقسیم میں شامل نہیں کیا گیا۔"
+  "contributionMissing": "{symbols} کے لیے موجودہ قیمت دستیاب نہیں: تقسیم میں شامل نہیں کیا گیا۔",
+  "portfolioGoalEta": "اگر سالانہ ریٹرن ({rate}) برقرار رہا تو آپ {year} کے آس پاس ہدف حاصل کر لیں گے۔"
 }

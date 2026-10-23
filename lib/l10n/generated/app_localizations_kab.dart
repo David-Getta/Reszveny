@@ -2627,6 +2627,11 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
+  String portfolioGoalEta(String rate, String year) {
+    return 'Ma yeqqim ufaris n useggas akka ($rate), ad tawḍeḍ ɣer yiswi qrib deg useggas $year.';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override
