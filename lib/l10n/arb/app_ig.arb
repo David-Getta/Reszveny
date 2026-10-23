@@ -832,5 +832,8 @@
   "lotEdit": "Dezie",
   "lotEditTitle": "Dezie azụmahịa · {symbol}",
   "lotSave": "Chekwaa",
-  "dividendEditTitle": "Dezie nkesa uru · {symbol}"
+  "dividendEditTitle": "Dezie nkesa uru · {symbol}",
+  "activityTitle": "Azụmahịa niile",
+  "activitySearchHint": "Họrọ site na ticker",
+  "activityNoMatch": "Enweghị azụmahịa dakọrọ na nhọrọ ahụ."
 }

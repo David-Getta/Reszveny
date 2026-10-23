@@ -2785,6 +2785,15 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Alla transaktioner';
+
+  @override
+  String get activitySearchHint => 'Filtrera efter ticker';
+
+  @override
+  String get activityNoMatch => 'Inga transaktioner matchar filtret.';
+
+  @override
   String get portfolioGoalSet => 'Sätt ett mål';
 
   @override

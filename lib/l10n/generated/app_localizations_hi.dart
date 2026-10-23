@@ -2781,6 +2781,15 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'सभी लेन-देन';
+
+  @override
+  String get activitySearchHint => 'टिकर से फ़िल्टर करें';
+
+  @override
+  String get activityNoMatch => 'फ़िल्टर से कोई लेन-देन मेल नहीं खाता।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करें';
 
   @override

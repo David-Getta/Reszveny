@@ -832,5 +832,8 @@
   "lotEdit": "Hlela",
   "lotEditTitle": "Hlela intengiselwano · {symbol}",
   "lotSave": "Gcina",
-  "dividendEditTitle": "Hlela isahlulo · {symbol}"
+  "dividendEditTitle": "Hlela isahlulo · {symbol}",
+  "activityTitle": "Zonke iintengiselwano",
+  "activitySearchHint": "Hluza nge-ticker",
+  "activityNoMatch": "Akukho ntengiselwano ihambelana nesihluzi."
 }

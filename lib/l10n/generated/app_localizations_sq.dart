@@ -2790,6 +2790,15 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Të gjitha transaksionet';
+
+  @override
+  String get activitySearchHint => 'Filtro sipas simbolit';
+
+  @override
+  String get activityNoMatch => 'Asnjë transaksion nuk përputhet me filtrin.';
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

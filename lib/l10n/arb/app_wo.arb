@@ -832,5 +832,8 @@
   "lotEdit": "Soppi",
   "lotEditTitle": "Soppi jënd walla jaay bi · {symbol}",
   "lotSave": "Denc",
-  "dividendEditTitle": "Soppi dividande bi · {symbol}"
+  "dividendEditTitle": "Soppi dividande bi · {symbol}",
+  "activityTitle": "Jënd ak jaay yépp",
+  "activitySearchHint": "Tànn ci màndarga",
+  "activityNoMatch": "Amul jënd walla jaay bu dëppoo ak li nga tànn."
 }

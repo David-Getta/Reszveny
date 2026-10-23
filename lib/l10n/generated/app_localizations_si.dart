@@ -2781,6 +2781,15 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'සියලු ගනුදෙනු';
+
+  @override
+  String get activitySearchHint => 'ටිකර් අනුව පෙරන්න';
+
+  @override
+  String get activityNoMatch => 'පෙරහනට ගැළපෙන ගනුදෙනු නැත.';
+
+  @override
   String get portfolioGoalSet => 'ඉලක්කයක් සකසන්න';
 
   @override

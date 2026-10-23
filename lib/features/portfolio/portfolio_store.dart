@@ -211,12 +211,21 @@ typedef OpenLot = ({double quantity, double price, DateTime? date, String? accou
 K? largestKey<K>(Map<K, double> m) => m.isEmpty ? null : m.entries.reduce((a, b) => b.value > a.value ? b : a).key;
 
 /// Egy eladás (része), amelynek a saját számláján nem volt vétel.
-typedef _Unmatched = ({DateTime? date, double quantity, double price, double net, String? account});
+typedef _Unmatched = ({String id, DateTime? date, double quantity, double price, double net, String? account});
 
 typedef _Fifo = ({List<OpenLot> open, List<Sale> sales, List<_Unmatched> unmatched});
 
-/// Egy eladás a FIFO szerinti bekerülési értékkel (az adóbevalláshoz).
-typedef Sale = ({DateTime? date, double quantity, double price, double proceeds, double cost, String? account});
+/// Egy eladás a FIFO szerinti bekerülési értékkel (az adóbevalláshoz); [id] az
+/// eladó tranzakcióé (egy eladás több részben is szerepelhet).
+typedef Sale = ({
+  String id,
+  DateTime? date,
+  double quantity,
+  double price,
+  double proceeds,
+  double cost,
+  String? account,
+});
 
 /// Egy részvény összes tranzakciója együtt. Az eladások a legrégebbi vételeket
 /// fogyasztják (FIFO): a megmaradt darabok adják a darabszámot és a bekerülési
@@ -306,7 +315,14 @@ class Position {
       final (:matched, :cost) = _consume(open, u.quantity, notAfter: u.date);
       if (matched > 1e-9) sales.add(_sale(u, matched, cost));
       if (u.quantity - matched > 1e-9) {
-        left.add((date: u.date, quantity: u.quantity - matched, price: u.price, net: u.net, account: u.account));
+        left.add((
+          id: u.id,
+          date: u.date,
+          quantity: u.quantity - matched,
+          price: u.price,
+          net: u.net,
+          account: u.account,
+        ));
       }
     }
     // Az eladások időrendben (dátum nélküli a végén).
@@ -314,8 +330,15 @@ class Position {
   }
 
   /// Egy eladás [matched] darabja a FIFO szerinti [cost] bekerülési értékkel.
-  static Sale _sale(_Unmatched t, double matched, double cost) =>
-      (date: t.date, quantity: matched, price: t.price, proceeds: matched * t.net, cost: cost, account: t.account);
+  static Sale _sale(_Unmatched t, double matched, double cost) => (
+    id: t.id,
+    date: t.date,
+    quantity: matched,
+    price: t.price,
+    proceeds: matched * t.net,
+    cost: cost,
+    account: t.account,
+  );
 
   /// Egy számla (vagy a számla nélküli tételek) FIFO-ja.
   static _Fifo _fifoOf(List<PortfolioLot> lots) {
@@ -340,6 +363,7 @@ class Position {
         continue;
       }
       final sale = (
+        id: t.id,
         date: t.date,
         quantity: t.quantity,
         price: t.price,
@@ -350,6 +374,7 @@ class Position {
       if (matched > 1e-9) sales.add(_sale(sale, matched, cost));
       if (t.quantity - matched > 1e-9) {
         unmatched.add((
+          id: t.id,
           date: t.date,
           quantity: t.quantity - matched,
           price: t.price,
@@ -502,6 +527,7 @@ class PortfolioStore extends ChangeNotifier {
   void notifyListeners() {
     _adjusted = null;
     _allPositions = null;
+    _realizedBySale = null;
     _accounts = null;
     _views.clear();
     super.notifyListeners();
@@ -689,6 +715,18 @@ class PortfolioStore extends ChangeNotifier {
 
   /// Minden pozíció (a lezártak is) – a realizált nyereség exportjához.
   List<Position> get allPositions => List.unmodifiable(_all);
+
+  /// Eladásonként a FIFO szerinti realizált nyereség (díjjal, a pozíció
+  /// pénznemében), az eladó tranzakció azonosítója szerint.
+  Map<String, ({double gain, String currency})> get realizedBySale => _realizedBySale ??= {
+    for (final p in _all)
+      for (final id in {for (final x in p.sales) x.id})
+        id: (
+          gain: p.sales.where((x) => x.id == id).fold(0.0, (sum, x) => sum + x.proceeds - x.cost),
+          currency: p.currency,
+        ),
+  };
+  Map<String, ({double gain, String currency})>? _realizedBySale;
 
   /// Teljesen eladott pozíciók (a realizált nyereségükkel).
   List<Position> get closedPositions => closedIn(null);

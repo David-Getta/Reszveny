@@ -832,5 +832,8 @@
   "lotEdit": "बदलू",
   "lotEditTitle": "लेन-देन बदलू · {symbol}",
   "lotSave": "सेव करू",
-  "dividendEditTitle": "डिविडेंड बदलू · {symbol}"
+  "dividendEditTitle": "डिविडेंड बदलू · {symbol}",
+  "activityTitle": "सभ लेन-देन",
+  "activitySearchHint": "टिकर सँ फ़िल्टर करू",
+  "activityNoMatch": "फ़िल्टर सँ कोनो लेन-देन मेल नहि खाइत अछि।"
 }

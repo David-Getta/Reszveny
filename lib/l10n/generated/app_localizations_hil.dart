@@ -2801,6 +2801,16 @@ class AppLocalizationsHil extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Tanan nga transaksyon';
+
+  @override
+  String get activitySearchHint => 'I-filter suno sa ticker';
+
+  @override
+  String get activityNoMatch =>
+      'Wala sang transaksyon nga nagtupong sa filter.';
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

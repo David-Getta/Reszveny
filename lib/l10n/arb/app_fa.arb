@@ -832,5 +832,8 @@
   "lotEdit": "ویرایش",
   "lotEditTitle": "ویرایش تراکنش · {symbol}",
   "lotSave": "ذخیره",
-  "dividendEditTitle": "ویرایش سود سهام · {symbol}"
+  "dividendEditTitle": "ویرایش سود سهام · {symbol}",
+  "activityTitle": "همه تراکنش‌ها",
+  "activitySearchHint": "فیلتر بر اساس نماد",
+  "activityNoMatch": "هیچ تراکنشی با فیلتر مطابقت ندارد."
 }

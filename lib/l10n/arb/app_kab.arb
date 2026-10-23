@@ -832,5 +832,8 @@
   "lotEdit": "Ẓreg",
   "lotEditTitle": "Ẓreg tiɣin neɣ uznuzu · {symbol}",
   "lotSave": "Sekles",
-  "dividendEditTitle": "Ẓreg dividende · {symbol}"
+  "dividendEditTitle": "Ẓreg dividende · {symbol}",
+  "activityTitle": "Akk tiɣin d uznuzu",
+  "activitySearchHint": "Sizdeg s uzamul",
+  "activityNoMatch": "Ulac tiɣin neɣ aznuzu i yemmenṭaḍen d imsizdeg."
 }

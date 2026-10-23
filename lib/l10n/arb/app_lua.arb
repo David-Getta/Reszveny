@@ -832,5 +832,8 @@
   "lotEdit": "Shintulula",
   "lotEditTitle": "Shintulula kusumba anyi kusumbisha · {symbol}",
   "lotSave": "Lama",
-  "dividendEditTitle": "Shintulula dividende · {symbol}"
+  "dividendEditTitle": "Shintulula dividende · {symbol}",
+  "activityTitle": "Kusumba ne kusumbisha kuonso",
+  "activitySearchHint": "Sungula ku ticker",
+  "activityNoMatch": "Katuena bapete kusumba anyi kusumbisha kuakanyine ne disungula."
 }

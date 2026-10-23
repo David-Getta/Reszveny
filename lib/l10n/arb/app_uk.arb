@@ -832,5 +832,8 @@
   "lotEdit": "Редагувати",
   "lotEditTitle": "Редагувати операцію · {symbol}",
   "lotSave": "Зберегти",
-  "dividendEditTitle": "Редагувати дивіденд · {symbol}"
+  "dividendEditTitle": "Редагувати дивіденд · {symbol}",
+  "activityTitle": "Усі операції",
+  "activitySearchHint": "Фільтр за тікером",
+  "activityNoMatch": "Немає операцій, що відповідають фільтру."
 }

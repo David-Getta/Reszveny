@@ -2790,6 +2790,15 @@ class AppLocalizationsKn extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'ಎಲ್ಲಾ ವಹಿವಾಟುಗಳು';
+
+  @override
+  String get activitySearchHint => 'ಟಿಕರ್ ಪ್ರಕಾರ ಫಿಲ್ಟರ್ ಮಾಡಿ';
+
+  @override
+  String get activityNoMatch => 'ಫಿಲ್ಟರ್‌ಗೆ ಹೊಂದುವ ಯಾವುದೇ ವಹಿವಾಟುಗಳಿಲ್ಲ.';
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

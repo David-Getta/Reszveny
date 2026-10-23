@@ -832,5 +832,8 @@
   "lotEdit": "Waylu",
   "lotEditTitle": "Waylu soodgol walla yeeyugol · {symbol}",
   "lotSave": "Mooftu",
-  "dividendEditTitle": "Waylu dividende · {symbol}"
+  "dividendEditTitle": "Waylu dividende · {symbol}",
+  "activityTitle": "Soodgol e yeeyugol fof",
+  "activitySearchHint": "Suɓo e kod",
+  "activityNoMatch": "Alaa soodgol walla yeeyugol hawriingol e cuɓol maa."
 }

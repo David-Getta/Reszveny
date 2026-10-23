@@ -2782,6 +2782,15 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'সব লেনদেন';
+
+  @override
+  String get activitySearchHint => 'টিকার দিয়ে ফিল্টার করুন';
+
+  @override
+  String get activityNoMatch => 'ফিল্টারের সঙ্গে কোনো লেনদেন মেলেনি।';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য ঠিক করুন';
 
   @override

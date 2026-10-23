@@ -2775,6 +2775,15 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Tất cả giao dịch';
+
+  @override
+  String get activitySearchHint => 'Lọc theo mã cổ phiếu';
+
+  @override
+  String get activityNoMatch => 'Không có giao dịch nào khớp với bộ lọc.';
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

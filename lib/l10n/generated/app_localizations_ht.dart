@@ -2782,6 +2782,15 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Tout tranzaksyon yo';
+
+  @override
+  String get activitySearchHint => 'Filtre pa senbòl';
+
+  @override
+  String get activityNoMatch => 'Pa gen tranzaksyon ki koresponn ak filt la.';
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

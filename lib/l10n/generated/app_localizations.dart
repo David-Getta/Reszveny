@@ -4735,6 +4735,24 @@ abstract class AppLocalizations {
   /// **'Edit dividend · {symbol}'**
   String dividendEditTitle(String symbol);
 
+  /// Title of the page (and portfolio menu item) that lists every recorded buy, sell, dividend and stock split in one chronological list.
+  ///
+  /// In en, this message translates to:
+  /// **'All transactions'**
+  String get activityTitle;
+
+  /// Hint in the search field on the all-transactions page; typing part of a ticker (e.g. AAPL) narrows the list.
+  ///
+  /// In en, this message translates to:
+  /// **'Filter by ticker'**
+  String get activitySearchHint;
+
+  /// Shown on the all-transactions page when the ticker, type or account filter leaves nothing to show.
+  ///
+  /// In en, this message translates to:
+  /// **'No transactions match the filter.'**
+  String get activityNoMatch;
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

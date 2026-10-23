@@ -2786,6 +2786,15 @@ class AppLocalizationsTg extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Ҳамаи амалиётҳо';
+
+  @override
+  String get activitySearchHint => 'Филтр аз рӯи тикер';
+
+  @override
+  String get activityNoMatch => 'Ягон амалиёт ба филтр мувофиқ нест.';
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

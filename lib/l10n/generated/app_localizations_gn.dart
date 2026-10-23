@@ -2790,6 +2790,16 @@ class AppLocalizationsGn extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Opaite jejogua ha ñemu';
+
+  @override
+  String get activitySearchHint => 'Eheka símbolo rupi';
+
+  @override
+  String get activityNoMatch =>
+      'Ndaipóri jejogua térã ñemu ojojoguáva filtro ndive.';
+
+  @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';
 
   @override

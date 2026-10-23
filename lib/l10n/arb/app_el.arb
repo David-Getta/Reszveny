@@ -832,5 +832,8 @@
   "lotEdit": "Επεξεργασία",
   "lotEditTitle": "Επεξεργασία συναλλαγής · {symbol}",
   "lotSave": "Αποθήκευση",
-  "dividendEditTitle": "Επεξεργασία μερίσματος · {symbol}"
+  "dividendEditTitle": "Επεξεργασία μερίσματος · {symbol}",
+  "activityTitle": "Όλες οι συναλλαγές",
+  "activitySearchHint": "Φιλτράρισμα κατά σύμβολο",
+  "activityNoMatch": "Καμία συναλλαγή δεν ταιριάζει με το φίλτρο."
 }

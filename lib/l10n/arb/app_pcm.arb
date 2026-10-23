@@ -832,5 +832,8 @@
   "lotEdit": "Change",
   "lotEditTitle": "Change buy or sell · {symbol}",
   "lotSave": "Save",
-  "dividendEditTitle": "Change dividend · {symbol}"
+  "dividendEditTitle": "Change dividend · {symbol}",
+  "activityTitle": "All di buy and sell",
+  "activitySearchHint": "Filter am by ticker",
+  "activityNoMatch": "No buy or sell match di filter."
 }

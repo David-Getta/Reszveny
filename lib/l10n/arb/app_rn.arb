@@ -832,5 +832,8 @@
   "lotEdit": "Hindura",
   "lotEditTitle": "Hindura igikorwa co kugura canke kugurisha · {symbol}",
   "lotSave": "Bika",
-  "dividendEditTitle": "Hindura idividende · {symbol}"
+  "dividendEditTitle": "Hindura idividende · {symbol}",
+  "activityTitle": "Ivyaguzwe n'ivyagurishijwe vyose",
+  "activitySearchHint": "Shungura ukurikije ticker",
+  "activityNoMatch": "Nta gikorwa co kugura canke kugurisha gihuye n'ivyo washunguye."
 }

@@ -832,5 +832,8 @@
   "lotEdit": "Ovay",
   "lotEditTitle": "Ovay ny fividianana na fivarotana · {symbol}",
   "lotSave": "Tehirizo",
-  "dividendEditTitle": "Ovay ny dividandy · {symbol}"
+  "dividendEditTitle": "Ovay ny dividandy · {symbol}",
+  "activityTitle": "Ny fividianana sy fivarotana rehetra",
+  "activitySearchHint": "Sivano araka ny ticker",
+  "activityNoMatch": "Tsy misy fividianana na fivarotana mifanaraka amin'ny sivana."
 }

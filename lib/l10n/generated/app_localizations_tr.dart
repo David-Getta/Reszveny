@@ -2784,6 +2784,15 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Tüm işlemler';
+
+  @override
+  String get activitySearchHint => 'Sembole göre filtrele';
+
+  @override
+  String get activityNoMatch => 'Filtreyle eşleşen işlem yok.';
+
+  @override
   String get portfolioGoalSet => 'Hedef belirle';
 
   @override

@@ -832,5 +832,8 @@
   "lotEdit": "تعديل",
   "lotEditTitle": "تعديل المعاملة · {symbol}",
   "lotSave": "حفظ",
-  "dividendEditTitle": "تعديل توزيعة الأرباح · {symbol}"
+  "dividendEditTitle": "تعديل توزيعة الأرباح · {symbol}",
+  "activityTitle": "جميع المعاملات",
+  "activitySearchHint": "تصفية حسب رمز السهم",
+  "activityNoMatch": "لا توجد معاملات مطابقة لعامل التصفية."
 }

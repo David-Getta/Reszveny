@@ -2800,6 +2800,16 @@ class AppLocalizationsLg extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Byonna bye wagula ne bye watunda';
+
+  @override
+  String get activitySearchHint => 'Londa ng\'okozesa ticker';
+
+  @override
+  String get activityNoMatch =>
+      'Tewali kyaguliddwa oba kyatundiddwa kikwatagana n\'ekyo ky\'olonze.';
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

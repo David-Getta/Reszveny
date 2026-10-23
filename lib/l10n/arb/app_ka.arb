@@ -832,5 +832,8 @@
   "lotEdit": "რედაქტირება",
   "lotEditTitle": "ტრანზაქციის რედაქტირება · {symbol}",
   "lotSave": "შენახვა",
-  "dividendEditTitle": "დივიდენდის რედაქტირება · {symbol}"
+  "dividendEditTitle": "დივიდენდის რედაქტირება · {symbol}",
+  "activityTitle": "ყველა ტრანზაქცია",
+  "activitySearchHint": "გაფილტვრა ტიკერით",
+  "activityNoMatch": "ფილტრს არცერთი ტრანზაქცია არ შეესაბამება."
 }

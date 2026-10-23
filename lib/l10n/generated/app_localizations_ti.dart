@@ -2746,6 +2746,15 @@ class AppLocalizationsTi extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'ኩሎም ልውውጣት';
+
+  @override
+  String get activitySearchHint => 'ብምልክት ምጽራይ';
+
+  @override
+  String get activityNoMatch => 'ምስ መጻረዪ ዝሰማማዕ ልውውጥ የለን።';
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

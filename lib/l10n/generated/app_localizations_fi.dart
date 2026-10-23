@@ -2785,6 +2785,15 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Kaikki tapahtumat';
+
+  @override
+  String get activitySearchHint => 'Suodata tunnuksella';
+
+  @override
+  String get activityNoMatch => 'Suodatinta vastaavia tapahtumia ei ole.';
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

@@ -2859,6 +2859,15 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Все сделки';
+
+  @override
+  String get activitySearchHint => 'Фильтр по тикеру';
+
+  @override
+  String get activityNoMatch => 'Нет сделок, соответствующих фильтру.';
+
+  @override
   String get portfolioGoalSet => 'Задать цель';
 
   @override

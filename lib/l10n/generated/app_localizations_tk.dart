@@ -2786,6 +2786,15 @@ class AppLocalizationsTk extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Ähli amallar';
+
+  @override
+  String get activitySearchHint => 'Tiker boýunça süzgüçle';
+
+  @override
+  String get activityNoMatch => 'Süzgüje laýyk amal ýok.';
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

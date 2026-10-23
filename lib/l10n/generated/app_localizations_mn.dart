@@ -2784,6 +2784,15 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Бүх гүйлгээ';
+
+  @override
+  String get activitySearchHint => 'Тикерээр шүүх';
+
+  @override
+  String get activityNoMatch => 'Шүүлтүүрт тохирох гүйлгээ олдсонгүй.';
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

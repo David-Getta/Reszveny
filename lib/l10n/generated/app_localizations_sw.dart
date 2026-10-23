@@ -2786,6 +2786,15 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Miamala yote';
+
+  @override
+  String get activitySearchHint => 'Chuja kwa ticker';
+
+  @override
+  String get activityNoMatch => 'Hakuna muamala unaolingana na kichujio.';
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

@@ -832,5 +832,8 @@
   "lotEdit": "Uredi",
   "lotEditTitle": "Uredi transakciju · {symbol}",
   "lotSave": "Sačuvaj",
-  "dividendEditTitle": "Uredi dividendu · {symbol}"
+  "dividendEditTitle": "Uredi dividendu · {symbol}",
+  "activityTitle": "Sve transakcije",
+  "activitySearchHint": "Filtriraj po tikeru",
+  "activityNoMatch": "Nijedna transakcija ne odgovara filteru."
 }

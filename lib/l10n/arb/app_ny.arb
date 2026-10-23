@@ -832,5 +832,8 @@
   "lotEdit": "Sinthani",
   "lotEditTitle": "Sinthani kugula kapena kugulitsa · {symbol}",
   "lotSave": "Sungani",
-  "dividendEditTitle": "Sinthani dividendi · {symbol}"
+  "dividendEditTitle": "Sinthani dividendi · {symbol}",
+  "activityTitle": "Zogula ndi zogulitsa zonse",
+  "activitySearchHint": "Sefani ndi ticker",
+  "activityNoMatch": "Palibe zogula kapena zogulitsa zofanana ndi zomwe mwasankha."
 }

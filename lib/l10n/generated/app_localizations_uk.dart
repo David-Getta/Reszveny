@@ -2860,6 +2860,15 @@ class AppLocalizationsUk extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Усі операції';
+
+  @override
+  String get activitySearchHint => 'Фільтр за тікером';
+
+  @override
+  String get activityNoMatch => 'Немає операцій, що відповідають фільтру.';
+
+  @override
   String get portfolioGoalSet => 'Задати ціль';
 
   @override

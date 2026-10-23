@@ -832,5 +832,8 @@
   "lotEdit": "संपादित करा",
   "lotEditTitle": "व्यवहार संपादित करा · {symbol}",
   "lotSave": "जतन करा",
-  "dividendEditTitle": "लाभांश संपादित करा · {symbol}"
+  "dividendEditTitle": "लाभांश संपादित करा · {symbol}",
+  "activityTitle": "सर्व व्यवहार",
+  "activitySearchHint": "टिकरनुसार फिल्टर करा",
+  "activityNoMatch": "फिल्टरशी जुळणारे कोणतेही व्यवहार नाहीत."
 }

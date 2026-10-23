@@ -2857,6 +2857,15 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Všetky transakcie';
+
+  @override
+  String get activitySearchHint => 'Filtrovať podľa tickera';
+
+  @override
+  String get activityNoMatch => 'Filtru nezodpovedajú žiadne transakcie.';
+
+  @override
   String get portfolioGoalSet => 'Nastaviť cieľ';
 
   @override

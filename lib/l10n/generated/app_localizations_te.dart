@@ -2790,6 +2790,15 @@ class AppLocalizationsTe extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'అన్ని లావాదేవీలు';
+
+  @override
+  String get activitySearchHint => 'టికర్ ప్రకారం ఫిల్టర్ చేయండి';
+
+  @override
+  String get activityNoMatch => 'ఫిల్టర్‌కు సరిపోలే లావాదేవీలు లేవు.';
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

@@ -2750,6 +2750,15 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'รายการซื้อขายทั้งหมด';
+
+  @override
+  String get activitySearchHint => 'กรองตามชื่อย่อ';
+
+  @override
+  String get activityNoMatch => 'ไม่มีรายการซื้อขายที่ตรงกับตัวกรอง';
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

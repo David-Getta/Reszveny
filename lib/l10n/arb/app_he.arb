@@ -832,5 +832,8 @@
   "lotEdit": "עריכה",
   "lotEditTitle": "עריכת עסקה · {symbol}",
   "lotSave": "שמירה",
-  "dividendEditTitle": "עריכת דיבידנד · {symbol}"
+  "dividendEditTitle": "עריכת דיבידנד · {symbol}",
+  "activityTitle": "כל העסקאות",
+  "activitySearchHint": "סינון לפי סימול",
+  "activityNoMatch": "אין עסקאות שתואמות את הסינון."
 }

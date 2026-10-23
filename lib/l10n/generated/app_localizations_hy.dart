@@ -2793,6 +2793,15 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Բոլոր գործարքները';
+
+  @override
+  String get activitySearchHint => 'Զտել ըստ թիքերի';
+
+  @override
+  String get activityNoMatch => 'Զտիչին համապատասխանող գործարքներ չկան։';
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

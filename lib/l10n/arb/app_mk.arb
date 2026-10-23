@@ -832,5 +832,8 @@
   "lotEdit": "Уреди",
   "lotEditTitle": "Уреди трансакција · {symbol}",
   "lotSave": "Зачувај",
-  "dividendEditTitle": "Уреди дивиденда · {symbol}"
+  "dividendEditTitle": "Уреди дивиденда · {symbol}",
+  "activityTitle": "Сите трансакции",
+  "activitySearchHint": "Филтрирај по тикер",
+  "activityNoMatch": "Нема трансакции што одговараат на филтерот."
 }

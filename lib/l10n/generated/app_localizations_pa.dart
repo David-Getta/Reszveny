@@ -2781,6 +2781,15 @@ class AppLocalizationsPa extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'ਸਾਰੇ ਲੈਣ-ਦੇਣ';
+
+  @override
+  String get activitySearchHint => 'ਟਿਕਰ ਅਨੁਸਾਰ ਫਿਲਟਰ ਕਰੋ';
+
+  @override
+  String get activityNoMatch => 'ਫਿਲਟਰ ਨਾਲ ਕੋਈ ਲੈਣ-ਦੇਣ ਮੇਲ ਨਹੀਂ ਖਾਂਦਾ।';
+
+  @override
   String get portfolioGoalSet => 'ਟੀਚਾ ਤੈਅ ਕਰੋ';
 
   @override

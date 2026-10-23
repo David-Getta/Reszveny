@@ -2852,6 +2852,15 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Všechny transakce';
+
+  @override
+  String get activitySearchHint => 'Filtrovat podle tickeru';
+
+  @override
+  String get activityNoMatch => 'Filtru neodpovídají žádné transakce.';
+
+  @override
   String get portfolioGoalSet => 'Nastavit cíl';
 
   @override

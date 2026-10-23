@@ -2783,6 +2783,15 @@ class AppLocalizationsUr extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'تمام لین دین';
+
+  @override
+  String get activitySearchHint => 'ٹکر کے مطابق فلٹر کریں';
+
+  @override
+  String get activityNoMatch => 'فلٹر سے کوئی لین دین مطابقت نہیں رکھتا۔';
+
+  @override
   String get portfolioGoalSet => 'ہدف مقرر کریں';
 
   @override

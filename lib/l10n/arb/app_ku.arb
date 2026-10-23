@@ -832,5 +832,8 @@
   "lotEdit": "Biguherîne",
   "lotEditTitle": "Danûstandinê biguherîne · {symbol}",
   "lotSave": "Tomar bike",
-  "dividendEditTitle": "Dividendê biguherîne · {symbol}"
+  "dividendEditTitle": "Dividendê biguherîne · {symbol}",
+  "activityTitle": "Hemû danûstandin",
+  "activitySearchHint": "Li gorî sembolê parzûn bike",
+  "activityNoMatch": "Tu danûstandin bi parzûnê re li hev nayê."
 }

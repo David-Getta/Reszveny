@@ -2790,6 +2790,15 @@ class AppLocalizationsNl extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Alle transacties';
+
+  @override
+  String get activitySearchHint => 'Filter op ticker';
+
+  @override
+  String get activityNoMatch => 'Geen transacties die aan het filter voldoen.';
+
+  @override
   String get portfolioGoalSet => 'Doel instellen';
 
   @override

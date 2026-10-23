@@ -832,5 +832,8 @@
   "lotEdit": "Owahi",
   "lotEditTitle": "Owahi transaksi · {symbol}",
   "lotSave": "Simpen",
-  "dividendEditTitle": "Owahi dividen · {symbol}"
+  "dividendEditTitle": "Owahi dividen · {symbol}",
+  "activityTitle": "Kabeh transaksi",
+  "activitySearchHint": "Saring miturut kode saham",
+  "activityNoMatch": "Ora ana transaksi sing cocog karo saringan."
 }

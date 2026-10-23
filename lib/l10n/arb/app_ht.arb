@@ -832,5 +832,8 @@
   "lotEdit": "Modifye",
   "lotEditTitle": "Modifye tranzaksyon an · {symbol}",
   "lotSave": "Anrejistre",
-  "dividendEditTitle": "Modifye dividann nan · {symbol}"
+  "dividendEditTitle": "Modifye dividann nan · {symbol}",
+  "activityTitle": "Tout tranzaksyon yo",
+  "activitySearchHint": "Filtre pa senbòl",
+  "activityNoMatch": "Pa gen tranzaksyon ki koresponn ak filt la."
 }

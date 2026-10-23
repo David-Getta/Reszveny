@@ -2755,6 +2755,15 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'ທຸລະກຳທັງໝົດ';
+
+  @override
+  String get activitySearchHint => 'ກັ່ນຕອງຕາມສັນຍາລັກ';
+
+  @override
+  String get activityNoMatch => 'ບໍ່ມີທຸລະກຳທີ່ກົງກັບຕົວກັ່ນຕອງ';
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

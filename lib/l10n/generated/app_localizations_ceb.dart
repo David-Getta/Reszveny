@@ -2796,6 +2796,15 @@ class AppLocalizationsCeb extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Tanang transaksyon';
+
+  @override
+  String get activitySearchHint => 'I-filter sumala sa ticker';
+
+  @override
+  String get activityNoMatch => 'Walay transaksyon nga mitugma sa filter.';
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

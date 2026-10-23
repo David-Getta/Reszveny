@@ -2798,6 +2798,16 @@ class AppLocalizationsQu extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Llapan rantiy rantikuy';
+
+  @override
+  String get activitySearchHint => 'Ticker nisqawan akllay';
+
+  @override
+  String get activityNoMatch =>
+      'Mana ima rantiy rantikuypas akllasqaykiman tupanchu.';
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

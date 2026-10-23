@@ -832,5 +832,8 @@
   "lotEdit": "Düzenle",
   "lotEditTitle": "İşlemi düzenle · {symbol}",
   "lotSave": "Kaydet",
-  "dividendEditTitle": "Temettüyü düzenle · {symbol}"
+  "dividendEditTitle": "Temettüyü düzenle · {symbol}",
+  "activityTitle": "Tüm işlemler",
+  "activitySearchHint": "Sembole göre filtrele",
+  "activityNoMatch": "Filtreyle eşleşen işlem yok."
 }

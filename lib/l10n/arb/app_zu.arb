@@ -832,5 +832,8 @@
   "lotEdit": "Hlela",
   "lotEditTitle": "Hlela ukuthenga noma ukuthengisa · {symbol}",
   "lotSave": "Londoloza",
-  "dividendEditTitle": "Hlela isabelo senzuzo · {symbol}"
+  "dividendEditTitle": "Hlela isabelo senzuzo · {symbol}",
+  "activityTitle": "Konke ukuthenga nokuthengisa",
+  "activitySearchHint": "Hlunga nge-ticker",
+  "activityNoMatch": "Akukho kuthenga noma kuthengisa okuhambisana nesihlungi."
 }

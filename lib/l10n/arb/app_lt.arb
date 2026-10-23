@@ -832,5 +832,8 @@
   "lotEdit": "Redaguoti",
   "lotEditTitle": "Redaguoti operaciją · {symbol}",
   "lotSave": "Išsaugoti",
-  "dividendEditTitle": "Redaguoti dividendą · {symbol}"
+  "dividendEditTitle": "Redaguoti dividendą · {symbol}",
+  "activityTitle": "Visos operacijos",
+  "activitySearchHint": "Filtruoti pagal simbolį",
+  "activityNoMatch": "Filtrą atitinkančių operacijų nėra."
 }

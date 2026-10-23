@@ -2795,6 +2795,15 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'அனைத்து பரிவர்த்தனைகள்';
+
+  @override
+  String get activitySearchHint => 'டிக்கர்படி வடிகட்டு';
+
+  @override
+  String get activityNoMatch => 'வடிப்பானுடன் பொருந்தும் பரிவர்த்தனைகள் இல்லை.';
+
+  @override
   String get portfolioGoalSet => 'இலக்கை அமை';
 
   @override

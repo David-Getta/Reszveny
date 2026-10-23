@@ -832,5 +832,8 @@
   "lotEdit": "সম্পাদনা করুন",
   "lotEditTitle": "লেনদেন সম্পাদনা করুন · {symbol}",
   "lotSave": "সেভ করুন",
-  "dividendEditTitle": "ডিভিডেন্ড সম্পাদনা করুন · {symbol}"
+  "dividendEditTitle": "ডিভিডেন্ড সম্পাদনা করুন · {symbol}",
+  "activityTitle": "সব লেনদেন",
+  "activitySearchHint": "টিকার দিয়ে ফিল্টার করুন",
+  "activityNoMatch": "ফিল্টারের সঙ্গে কোনো লেনদেন মেলেনি।"
 }

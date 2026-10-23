@@ -2748,6 +2748,15 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'ሁሉም ግብይቶች';
+
+  @override
+  String get activitySearchHint => 'በምልክት አጣራ';
+
+  @override
+  String get activityNoMatch => 'ከማጣሪያው ጋር የሚዛመድ ግብይት የለም።';
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

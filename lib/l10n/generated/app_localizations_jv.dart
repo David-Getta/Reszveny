@@ -2786,6 +2786,15 @@ class AppLocalizationsJv extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Kabeh transaksi';
+
+  @override
+  String get activitySearchHint => 'Saring miturut kode saham';
+
+  @override
+  String get activityNoMatch => 'Ora ana transaksi sing cocog karo saringan.';
+
+  @override
   String get portfolioGoalSet => 'Setel target';
 
   @override

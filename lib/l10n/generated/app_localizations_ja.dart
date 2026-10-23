@@ -2699,6 +2699,15 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'すべての取引';
+
+  @override
+  String get activitySearchHint => 'ティッカーで絞り込み';
+
+  @override
+  String get activityNoMatch => '絞り込み条件に一致する取引はありません。';
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override

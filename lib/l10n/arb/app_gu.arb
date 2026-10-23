@@ -832,5 +832,8 @@
   "lotEdit": "એડિટ કરો",
   "lotEditTitle": "વ્યવહાર એડિટ કરો · {symbol}",
   "lotSave": "સાચવો",
-  "dividendEditTitle": "ડિવિડન્ડ એડિટ કરો · {symbol}"
+  "dividendEditTitle": "ડિવિડન્ડ એડિટ કરો · {symbol}",
+  "activityTitle": "બધા વ્યવહારો",
+  "activitySearchHint": "ટિકર મુજબ ફિલ્ટર કરો",
+  "activityNoMatch": "ફિલ્ટર સાથે કોઈ વ્યવહાર મેળ ખાતો નથી."
 }

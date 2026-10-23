@@ -2801,6 +2801,16 @@ class AppLocalizationsSt extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Ditheko le dithekiso tsohle';
+
+  @override
+  String get activitySearchHint => 'Sefa ka ticker';
+
+  @override
+  String get activityNoMatch =>
+      'Ha ho theko kapa thekiso e tsamaellanang le sefa.';
+
+  @override
   String get portfolioGoalSet => 'Beha sepheo';
 
   @override

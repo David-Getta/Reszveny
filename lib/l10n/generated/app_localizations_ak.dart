@@ -2786,6 +2786,15 @@ class AppLocalizationsAk extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Adetɔ ne adetɔn nyinaa';
+
+  @override
+  String get activitySearchHint => 'Fa ticker hwehwɛ mu';
+
+  @override
+  String get activityNoMatch => 'Adetɔ anaa adetɔn biara nhyia nea woapaw no.';
+
+  @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';
 
   @override

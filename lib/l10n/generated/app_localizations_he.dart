@@ -2779,6 +2779,15 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'כל העסקאות';
+
+  @override
+  String get activitySearchHint => 'סינון לפי סימול';
+
+  @override
+  String get activityNoMatch => 'אין עסקאות שתואמות את הסינון.';
+
+  @override
   String get portfolioGoalSet => 'הגדרת יעד';
 
   @override

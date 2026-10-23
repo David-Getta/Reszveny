@@ -832,5 +832,8 @@
   "lotEdit": "Garũra",
   "lotEditTitle": "Garũra ũgũri kana ũendia · {symbol}",
   "lotSave": "Iga",
-  "dividendEditTitle": "Garũra mũgai wa faida · {symbol}"
+  "dividendEditTitle": "Garũra mũgai wa faida · {symbol}",
+  "activityTitle": "Ũgũri na ũendia wothe",
+  "activitySearchHint": "Thuura na ticker",
+  "activityNoMatch": "Gũtirĩ ũgũri kana ũendia ũiganaine na ũthuuri ũcio."
 }

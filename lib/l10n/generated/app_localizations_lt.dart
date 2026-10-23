@@ -2857,6 +2857,15 @@ class AppLocalizationsLt extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Visos operacijos';
+
+  @override
+  String get activitySearchHint => 'Filtruoti pagal simbolį';
+
+  @override
+  String get activityNoMatch => 'Filtrą atitinkančių operacijų nėra.';
+
+  @override
   String get portfolioGoalSet => 'Nustatyti tikslą';
 
   @override

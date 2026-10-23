@@ -2796,6 +2796,16 @@ class AppLocalizationsLn extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Bosombi mpe boteki nyonso';
+
+  @override
+  String get activitySearchHint => 'Pona na ticker';
+
+  @override
+  String get activityNoMatch =>
+      'Bosombi to boteki moko te ekokani na oyo oponi.';
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

@@ -832,5 +832,8 @@
   "lotEdit": "ແກ້ໄຂ",
   "lotEditTitle": "ແກ້ໄຂທຸລະກຳ · {symbol}",
   "lotSave": "ບັນທຶກ",
-  "dividendEditTitle": "ແກ້ໄຂເງິນປັນຜົນ · {symbol}"
+  "dividendEditTitle": "ແກ້ໄຂເງິນປັນຜົນ · {symbol}",
+  "activityTitle": "ທຸລະກຳທັງໝົດ",
+  "activitySearchHint": "ກັ່ນຕອງຕາມສັນຍາລັກ",
+  "activityNoMatch": "ບໍ່ມີທຸລະກຳທີ່ກົງກັບຕົວກັ່ນຕອງ"
 }

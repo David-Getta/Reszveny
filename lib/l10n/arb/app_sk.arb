@@ -832,5 +832,8 @@
   "lotEdit": "Upraviť",
   "lotEditTitle": "Upraviť transakciu · {symbol}",
   "lotSave": "Uložiť",
-  "dividendEditTitle": "Upraviť dividendu · {symbol}"
+  "dividendEditTitle": "Upraviť dividendu · {symbol}",
+  "activityTitle": "Všetky transakcie",
+  "activitySearchHint": "Filtrovať podľa tickera",
+  "activityNoMatch": "Filtru nezodpovedajú žiadne transakcie."
 }

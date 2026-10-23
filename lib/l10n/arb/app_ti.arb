@@ -832,5 +832,8 @@
   "lotEdit": "ኣመዓራሪ",
   "lotEditTitle": "ልውውጥ ኣመዓራሪ · {symbol}",
   "lotSave": "ዓቅብ",
-  "dividendEditTitle": "ድቪደንድ ኣመዓራሪ · {symbol}"
+  "dividendEditTitle": "ድቪደንድ ኣመዓራሪ · {symbol}",
+  "activityTitle": "ኩሎም ልውውጣት",
+  "activitySearchHint": "ብምልክት ምጽራይ",
+  "activityNoMatch": "ምስ መጻረዪ ዝሰማማዕ ልውውጥ የለን።"
 }

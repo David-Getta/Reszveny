@@ -2774,6 +2774,16 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'အရောင်းအဝယ်အားလုံး';
+
+  @override
+  String get activitySearchHint => 'သင်္ကေတဖြင့် စစ်ထုတ်ရန်';
+
+  @override
+  String get activityNoMatch =>
+      'စစ်ထုတ်မှုနှင့် ကိုက်ညီသော အရောင်းအဝယ် မရှိပါ။';
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

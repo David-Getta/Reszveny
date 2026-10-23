@@ -2787,6 +2787,15 @@ class AppLocalizationsUg extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'بارلىق سودىلار';
+
+  @override
+  String get activitySearchHint => 'كود بويىچە سۈزۈش';
+
+  @override
+  String get activityNoMatch => 'سۈزگۈچكە ماس كېلىدىغان سودا يوق.';
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

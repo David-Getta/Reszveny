@@ -2790,6 +2790,16 @@ class AppLocalizationsEe extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Nuƒeƒle kple nudzadzra katã';
+
+  @override
+  String get activitySearchHint => 'Tia le ticker nu';
+
+  @override
+  String get activityNoMatch =>
+      'Nuƒeƒle alo nudzadzra aɖeke mesɔ kple tiatia la o.';
+
+  @override
   String get portfolioGoalSet => 'Ɖo taɖodzinu';
 
   @override

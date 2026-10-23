@@ -2786,6 +2786,15 @@ class AppLocalizationsKy extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Бардык транзакциялар';
+
+  @override
+  String get activitySearchHint => 'Тикер боюнча чыпкалоо';
+
+  @override
+  String get activityNoMatch => 'Чыпкага дал келген транзакция жок.';
+
+  @override
   String get portfolioGoalSet => 'Максат коюу';
 
   @override

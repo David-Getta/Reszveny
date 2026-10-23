@@ -832,5 +832,8 @@
   "lotEdit": "Toeem",
   "lotEditTitle": "Toeem raabã bɩ koosgã · {symbol}",
   "lotSave": "Bĩng",
-  "dividendEditTitle": "Toeem dividand · {symbol}"
+  "dividendEditTitle": "Toeem dividand · {symbol}",
+  "activityTitle": "Raaba la koosgo fãa",
+  "activitySearchHint": "Yãk ne bãnde",
+  "activityNoMatch": "Raaba bɩ koosgo ka zems ne yãkrã ye."
 }

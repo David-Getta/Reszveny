@@ -832,5 +832,8 @@
   "lotEdit": "Уреди",
   "lotEditTitle": "Уреди трансакцију · {symbol}",
   "lotSave": "Сачувај",
-  "dividendEditTitle": "Уреди дивиденду · {symbol}"
+  "dividendEditTitle": "Уреди дивиденду · {symbol}",
+  "activityTitle": "Све трансакције",
+  "activitySearchHint": "Филтрирај по тикеру",
+  "activityNoMatch": "Ниједна трансакција не одговара филтеру."
 }

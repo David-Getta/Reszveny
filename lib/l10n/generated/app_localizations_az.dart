@@ -2785,6 +2785,15 @@ class AppLocalizationsAz extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Bütün əməliyyatlar';
+
+  @override
+  String get activitySearchHint => 'Tikerə görə filtrlə';
+
+  @override
+  String get activityNoMatch => 'Filtrə uyğun əməliyyat yoxdur.';
+
+  @override
   String get portfolioGoalSet => 'Hədəf təyin et';
 
   @override

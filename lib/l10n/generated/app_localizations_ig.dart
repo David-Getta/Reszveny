@@ -2777,6 +2777,15 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Azụmahịa niile';
+
+  @override
+  String get activitySearchHint => 'Họrọ site na ticker';
+
+  @override
+  String get activityNoMatch => 'Enweghị azụmahịa dakọrọ na nhọrọ ahụ.';
+
+  @override
   String get portfolioGoalSet => 'Tọọ ebumnuche';
 
   @override

@@ -2769,6 +2769,15 @@ class AppLocalizationsMos extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Raaba la koosgo fãa';
+
+  @override
+  String get activitySearchHint => 'Yãk ne bãnde';
+
+  @override
+  String get activityNoMatch => 'Raaba bɩ koosgo ka zems ne yãkrã ye.';
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

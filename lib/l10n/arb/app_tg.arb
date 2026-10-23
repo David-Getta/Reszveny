@@ -832,5 +832,8 @@
   "lotEdit": "Таҳрир",
   "lotEditTitle": "Таҳрири амалиёт · {symbol}",
   "lotSave": "Нигоҳ доштан",
-  "dividendEditTitle": "Таҳрири дивиденд · {symbol}"
+  "dividendEditTitle": "Таҳрири дивиденд · {symbol}",
+  "activityTitle": "Ҳамаи амалиётҳо",
+  "activitySearchHint": "Филтр аз рӯи тикер",
+  "activityNoMatch": "Ягон амалиёт ба филтр мувофиқ нест."
 }

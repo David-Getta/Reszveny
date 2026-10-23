@@ -2785,6 +2785,15 @@ class AppLocalizationsBg extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Всички транзакции';
+
+  @override
+  String get activitySearchHint => 'Филтрирай по тикер';
+
+  @override
+  String get activityNoMatch => 'Няма транзакции, отговарящи на филтъра.';
+
+  @override
   String get portfolioGoalSet => 'Задай цел';
 
   @override

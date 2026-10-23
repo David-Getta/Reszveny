@@ -2806,6 +2806,16 @@ class AppLocalizationsTs extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Swixaviwa ni swixavisiwa hinkwaswo';
+
+  @override
+  String get activitySearchHint => 'Hlawula hi ticker';
+
+  @override
+  String get activityNoMatch =>
+      'A ku na xixaviwa kumbe xixavisiwa lexi fambelanaka ni leswi u swi hlawuleke.';
+
+  @override
   String get portfolioGoalSet => 'Veka xikongomelo';
 
   @override

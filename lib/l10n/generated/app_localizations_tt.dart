@@ -2781,6 +2781,15 @@ class AppLocalizationsTt extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Барлык операцияләр';
+
+  @override
+  String get activitySearchHint => 'Тикер буенча фильтрлау';
+
+  @override
+  String get activityNoMatch => 'Фильтрга туры килгән операция юк.';
+
+  @override
   String get portfolioGoalSet => 'Максат кую';
 
   @override

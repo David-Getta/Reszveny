@@ -832,5 +832,8 @@
   "lotEdit": "Cinca",
   "lotEditTitle": "Cinca xixaviwa kumbe xixavisiwa · {symbol}",
   "lotSave": "Hlayisa",
-  "dividendEditTitle": "Cinca dividende · {symbol}"
+  "dividendEditTitle": "Cinca dividende · {symbol}",
+  "activityTitle": "Swixaviwa ni swixavisiwa hinkwaswo",
+  "activitySearchHint": "Hlawula hi ticker",
+  "activityNoMatch": "A ku na xixaviwa kumbe xixavisiwa lexi fambelanaka ni leswi u swi hlawuleke."
 }

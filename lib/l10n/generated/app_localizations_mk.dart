@@ -2804,6 +2804,15 @@ class AppLocalizationsMk extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Сите трансакции';
+
+  @override
+  String get activitySearchHint => 'Филтрирај по тикер';
+
+  @override
+  String get activityNoMatch => 'Нема трансакции што одговараат на филтерот.';
+
+  @override
   String get portfolioGoalSet => 'Постави цел';
 
   @override

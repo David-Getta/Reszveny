@@ -832,5 +832,8 @@
   "lotEdit": "Gulaali",
   "lotEditTitle": "Bittaa ykn gurgurtaa gulaali · {symbol}",
   "lotSave": "Olkaa'i",
-  "dividendEditTitle": "Diviidendii gulaali · {symbol}"
+  "dividendEditTitle": "Diviidendii gulaali · {symbol}",
+  "activityTitle": "Bittaa fi gurgurtaa hunda",
+  "activitySearchHint": "Mallattoon calali",
+  "activityNoMatch": "Bittaan ykn gurgurtaan calallii wajjin walsimu hin jiru."
 }

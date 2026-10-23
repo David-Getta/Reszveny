@@ -832,5 +832,8 @@
   "lotEdit": "Редактирай",
   "lotEditTitle": "Редактирай транзакция · {symbol}",
   "lotSave": "Запази",
-  "dividendEditTitle": "Редактирай дивидент · {symbol}"
+  "dividendEditTitle": "Редактирай дивидент · {symbol}",
+  "activityTitle": "Всички транзакции",
+  "activitySearchHint": "Филтрирай по тикер",
+  "activityNoMatch": "Няма транзакции, отговарящи на филтъра."
 }

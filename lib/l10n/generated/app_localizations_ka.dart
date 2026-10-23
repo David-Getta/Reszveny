@@ -2784,6 +2784,15 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'ყველა ტრანზაქცია';
+
+  @override
+  String get activitySearchHint => 'გაფილტვრა ტიკერით';
+
+  @override
+  String get activityNoMatch => 'ფილტრს არცერთი ტრანზაქცია არ შეესაბამება.';
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

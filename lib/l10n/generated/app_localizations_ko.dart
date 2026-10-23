@@ -2709,6 +2709,15 @@ class AppLocalizationsKo extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => '전체 거래 내역';
+
+  @override
+  String get activitySearchHint => '티커로 필터링';
+
+  @override
+  String get activityNoMatch => '필터와 일치하는 거래가 없습니다.';
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

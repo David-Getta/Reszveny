@@ -832,5 +832,8 @@
   "lotEdit": "Засах",
   "lotEditTitle": "Гүйлгээ засах · {symbol}",
   "lotSave": "Хадгалах",
-  "dividendEditTitle": "Ногдол ашиг засах · {symbol}"
+  "dividendEditTitle": "Ногдол ашиг засах · {symbol}",
+  "activityTitle": "Бүх гүйлгээ",
+  "activitySearchHint": "Тикерээр шүүх",
+  "activityNoMatch": "Шүүлтүүрт тохирох гүйлгээ олдсонгүй."
 }

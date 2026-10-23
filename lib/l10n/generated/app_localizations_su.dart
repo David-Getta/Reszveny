@@ -2786,6 +2786,15 @@ class AppLocalizationsSu extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Sadaya transaksi';
+
+  @override
+  String get activitySearchHint => 'Saring dumasar kode saham';
+
+  @override
+  String get activityNoMatch => 'Teu aya transaksi nu cocog jeung saringan.';
+
+  @override
   String get portfolioGoalSet => 'Setél target';
 
   @override

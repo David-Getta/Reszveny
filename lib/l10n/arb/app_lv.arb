@@ -832,5 +832,8 @@
   "lotEdit": "Rediģēt",
   "lotEditTitle": "Rediģēt darījumu · {symbol}",
   "lotSave": "Saglabāt",
-  "dividendEditTitle": "Rediģēt dividendi · {symbol}"
+  "dividendEditTitle": "Rediģēt dividendi · {symbol}",
+  "activityTitle": "Visi darījumi",
+  "activitySearchHint": "Filtrēt pēc simbola",
+  "activityNoMatch": "Filtram neatbilst neviens darījums."
 }

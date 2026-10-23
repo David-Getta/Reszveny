@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.235)
+# Változásjegyzék (0.2.130 → 0.2.236)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -94,6 +94,9 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
   javítható (a „Kapott osztalékok” kártyán és a tranzakciós lapon): összeg, pénznem, nap, számla. Javításkor a tárolt
   számok kerekítés nélkül töltődnek vissza (a 0,12345678 tört részvény nem lesz 0,1235 mentéskor, a „Mind” gomb is
   pontosan a birtokolt darabot írja be).
+- **Összes tranzakció** (a portfólió menüjéből): minden vétel, eladás, kapott osztalék és felaprózás egy listában,
+  havonta fejléccel, az újabb elöl; szűrés tickerre, típusra és számlára; koppintva javítható, törölhető
+  visszavonással – egy több száz soros import után is gyorsan megtalálható a hibás tétel.
 - **Jegyzet a tranzakcióhoz** (befektetési napló): a vétel/eladás dialógusban „Jegyzet hozzáadása” – a „miért veszed /
   adod el” a részvény jegyzeteinek végére kerül, dátummal, darabszámmal és árral; szinkronban, az AI-elemzés is látja.
 - Az előnézet a **súlyt** is mutatja: mekkora része lesz a részvény a portfóliónak a vétel/eladás után („Súly a

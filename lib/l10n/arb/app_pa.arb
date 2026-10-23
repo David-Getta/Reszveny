@@ -832,5 +832,8 @@
   "lotEdit": "ਸੋਧੋ",
   "lotEditTitle": "ਲੈਣ-ਦੇਣ ਸੋਧੋ · {symbol}",
   "lotSave": "ਸੇਵ ਕਰੋ",
-  "dividendEditTitle": "ਡਿਵੀਡੈਂਡ ਸੋਧੋ · {symbol}"
+  "dividendEditTitle": "ਡਿਵੀਡੈਂਡ ਸੋਧੋ · {symbol}",
+  "activityTitle": "ਸਾਰੇ ਲੈਣ-ਦੇਣ",
+  "activitySearchHint": "ਟਿਕਰ ਅਨੁਸਾਰ ਫਿਲਟਰ ਕਰੋ",
+  "activityNoMatch": "ਫਿਲਟਰ ਨਾਲ ਕੋਈ ਲੈਣ-ਦੇਣ ਮੇਲ ਨਹੀਂ ਖਾਂਦਾ।"
 }

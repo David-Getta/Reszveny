@@ -2778,6 +2778,15 @@ class AppLocalizationsBho extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'सब लेन-देन';
+
+  @override
+  String get activitySearchHint => 'टिकर से फ़िल्टर करीं';
+
+  @override
+  String get activityNoMatch => 'फ़िल्टर से कवनो लेन-देन मेल ना खाइल।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करीं';
 
   @override

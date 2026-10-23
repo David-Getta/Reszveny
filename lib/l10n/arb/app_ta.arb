@@ -832,5 +832,8 @@
   "lotEdit": "திருத்து",
   "lotEditTitle": "பரிவர்த்தனையைத் திருத்து · {symbol}",
   "lotSave": "சேமி",
-  "dividendEditTitle": "ஈவுத்தொகையைத் திருத்து · {symbol}"
+  "dividendEditTitle": "ஈவுத்தொகையைத் திருத்து · {symbol}",
+  "activityTitle": "அனைத்து பரிவர்த்தனைகள்",
+  "activitySearchHint": "டிக்கர்படி வடிகட்டு",
+  "activityNoMatch": "வடிப்பானுடன் பொருந்தும் பரிவர்த்தனைகள் இல்லை."
 }

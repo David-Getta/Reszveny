@@ -2780,6 +2780,15 @@ class AppLocalizationsYo extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Gbogbo ìdúnàdúrà';
+
+  @override
+  String get activitySearchHint => 'Ṣàyàn nípa àmì ìpín';
+
+  @override
+  String get activityNoMatch => 'Kò sí ìdúnàdúrà tó bá àṣàyàn náà mu.';
+
+  @override
   String get portfolioGoalSet => 'Ṣètò àfojúsùn';
 
   @override

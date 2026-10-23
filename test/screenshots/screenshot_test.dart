@@ -274,6 +274,62 @@ Future<void> _loadFonts() async {
   await load('MaterialIcons', 'MaterialIcons-Regular.otf');
 }
 
+/// Vételek, eladások két számlán és osztalékok (az éves összesítőhöz és a tranzakció-listához).
+PortfolioStore _tradesPortfolio() => PortfolioStore(
+  lots: [
+    PortfolioLot(
+      id: 'a',
+      symbol: 'AAPL',
+      quantity: 10,
+      price: 168.4,
+      currency: 'USD',
+      date: DateTime(2024, 3, 1),
+      fee: 2,
+    ),
+    PortfolioLot(
+      id: 'b',
+      symbol: 'AAPL',
+      quantity: 4,
+      price: 231.2,
+      currency: 'USD',
+      date: DateTime(2025, 5, 2),
+      sell: true,
+      fee: 1.5,
+    ),
+    PortfolioLot(
+      id: 'c',
+      symbol: 'OTP',
+      quantity: 40,
+      price: 21500,
+      currency: 'HUF',
+      date: DateTime(2023, 1, 5),
+      account: 'TBSZ 2023',
+    ),
+    PortfolioLot(
+      id: 'd',
+      symbol: 'OTP',
+      quantity: 15,
+      price: 28900,
+      currency: 'HUF',
+      date: DateTime(2025, 8, 1),
+      sell: true,
+      account: 'TBSZ 2023',
+      fee: 650,
+    ),
+  ],
+  dividends: [
+    DividendRecord(
+      id: 'x',
+      symbol: 'OTP',
+      amount: 37400,
+      currency: 'HUF',
+      date: DateTime(2025, 6, 1),
+      account: 'TBSZ 2023',
+    ),
+    DividendRecord(id: 'y', symbol: 'AAPL', amount: 2.6, currency: 'USD', date: DateTime(2025, 2, 13)),
+  ],
+);
+
 Future<void> _shot(WidgetTester tester, String name) async {
   if (_outDir.isEmpty) return;
   await tester.runAsync(() async {
@@ -892,60 +948,7 @@ void main() {
   });
 
   testWidgets('annual summary on a phone (hungarian)', (tester) async {
-    final portfolio = PortfolioStore(
-      lots: [
-        PortfolioLot(
-          id: 'a',
-          symbol: 'AAPL',
-          quantity: 10,
-          price: 168.4,
-          currency: 'USD',
-          date: DateTime(2024, 3, 1),
-          fee: 2,
-        ),
-        PortfolioLot(
-          id: 'b',
-          symbol: 'AAPL',
-          quantity: 4,
-          price: 231.2,
-          currency: 'USD',
-          date: DateTime(2025, 5, 2),
-          sell: true,
-          fee: 1.5,
-        ),
-        PortfolioLot(
-          id: 'c',
-          symbol: 'OTP',
-          quantity: 40,
-          price: 21500,
-          currency: 'HUF',
-          date: DateTime(2023, 1, 5),
-          account: 'TBSZ 2023',
-        ),
-        PortfolioLot(
-          id: 'd',
-          symbol: 'OTP',
-          quantity: 15,
-          price: 28900,
-          currency: 'HUF',
-          date: DateTime(2025, 8, 1),
-          sell: true,
-          account: 'TBSZ 2023',
-          fee: 650,
-        ),
-      ],
-      dividends: [
-        DividendRecord(
-          id: 'x',
-          symbol: 'OTP',
-          amount: 37400,
-          currency: 'HUF',
-          date: DateTime(2025, 6, 1),
-          account: 'TBSZ 2023',
-        ),
-        DividendRecord(id: 'y', symbol: 'AAPL', amount: 2.6, currency: 'USD', date: DateTime(2025, 2, 13)),
-      ],
-    );
+    final portfolio = _tradesPortfolio();
     final s = _services(locale: const Locale('hu'), portfolio: portfolio, currency: 'HUF');
     await pumpApp(tester, s, const Size(430, 1000));
     await tester.tap(find.text('Portfólió').last);
@@ -957,6 +960,18 @@ void main() {
     await tester.tap(find.byKey(const ValueKey('annual-summary-year-2025')));
     await tester.pumpAndSettle();
     await _shot(tester, 'portfolio_annual_summary_phone_hu');
+  });
+
+  testWidgets('all transactions on a phone (hungarian)', (tester) async {
+    final s = _services(locale: const Locale('hu'), portfolio: _tradesPortfolio(), currency: 'HUF');
+    await pumpApp(tester, s, const Size(430, 1000));
+    await tester.tap(find.text('Portfólió').last);
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('portfolio-menu')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('portfolio-activity')));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'portfolio_activity_phone_hu');
   });
 
   testWidgets('selling from one of two accounts on a phone (hungarian)', (tester) async {

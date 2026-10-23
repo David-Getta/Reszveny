@@ -2804,6 +2804,16 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Ny fividianana sy fivarotana rehetra';
+
+  @override
+  String get activitySearchHint => 'Sivano araka ny ticker';
+
+  @override
+  String get activityNoMatch =>
+      'Tsy misy fividianana na fivarotana mifanaraka amin\'ny sivana.';
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

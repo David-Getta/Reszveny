@@ -2783,6 +2783,15 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'All di buy and sell';
+
+  @override
+  String get activitySearchHint => 'Filter am by ticker';
+
+  @override
+  String get activityNoMatch => 'No buy or sell match di filter.';
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

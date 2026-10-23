@@ -2776,6 +2776,15 @@ class AppLocalizationsPs extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'ټولې راکړې ورکړې';
+
+  @override
+  String get activitySearchHint => 'د ټیکر له مخې فلټر کړئ';
+
+  @override
+  String get activityNoMatch => 'هېڅ راکړه ورکړه له فلټر سره سمون نه لري.';
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

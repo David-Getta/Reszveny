@@ -832,5 +832,8 @@
   "lotEdit": "Edita",
   "lotEditTitle": "Edita la transacció · {symbol}",
   "lotSave": "Desa",
-  "dividendEditTitle": "Edita el dividend · {symbol}"
+  "dividendEditTitle": "Edita el dividend · {symbol}",
+  "activityTitle": "Totes les transaccions",
+  "activitySearchHint": "Filtra per ticker",
+  "activityNoMatch": "Cap transacció no coincideix amb el filtre."
 }

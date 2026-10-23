@@ -832,5 +832,8 @@
   "lotEdit": "Edytuj",
   "lotEditTitle": "Edytuj transakcję · {symbol}",
   "lotSave": "Zapisz",
-  "dividendEditTitle": "Edytuj dywidendę · {symbol}"
+  "dividendEditTitle": "Edytuj dywidendę · {symbol}",
+  "activityTitle": "Wszystkie transakcje",
+  "activitySearchHint": "Filtruj według tickera",
+  "activityNoMatch": "Żadna transakcja nie pasuje do filtra."
 }

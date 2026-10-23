@@ -2788,6 +2788,15 @@ class AppLocalizationsAf extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Alle transaksies';
+
+  @override
+  String get activitySearchHint => 'Filtreer volgens aandeelkode';
+
+  @override
+  String get activityNoMatch => 'Geen transaksies pas by die filter nie.';
+
+  @override
   String get portfolioGoalSet => 'Stel \'n doelwit';
 
   @override

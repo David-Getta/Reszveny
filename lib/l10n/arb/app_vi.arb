@@ -832,5 +832,8 @@
   "lotEdit": "Sửa",
   "lotEditTitle": "Sửa giao dịch · {symbol}",
   "lotSave": "Lưu",
-  "dividendEditTitle": "Sửa cổ tức · {symbol}"
+  "dividendEditTitle": "Sửa cổ tức · {symbol}",
+  "activityTitle": "Tất cả giao dịch",
+  "activitySearchHint": "Lọc theo mã cổ phiếu",
+  "activityNoMatch": "Không có giao dịch nào khớp với bộ lọc."
 }

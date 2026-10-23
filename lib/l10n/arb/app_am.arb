@@ -832,5 +832,8 @@
   "lotEdit": "አርትዕ",
   "lotEditTitle": "ግብይት አርትዕ · {symbol}",
   "lotSave": "አስቀምጥ",
-  "dividendEditTitle": "የትርፍ ድርሻ አርትዕ · {symbol}"
+  "dividendEditTitle": "የትርፍ ድርሻ አርትዕ · {symbol}",
+  "activityTitle": "ሁሉም ግብይቶች",
+  "activitySearchHint": "በምልክት አጣራ",
+  "activityNoMatch": "ከማጣሪያው ጋር የሚዛመድ ግብይት የለም።"
 }

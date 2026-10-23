@@ -2794,6 +2794,15 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Totes les transaccions';
+
+  @override
+  String get activitySearchHint => 'Filtra per ticker';
+
+  @override
+  String get activityNoMatch => 'Cap transacció no coincideix amb el filtre.';
+
+  @override
   String get portfolioGoalSet => 'Defineix un objectiu';
 
   @override

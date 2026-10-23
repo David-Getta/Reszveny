@@ -832,5 +832,8 @@
   "lotEdit": "編輯",
   "lotEditTitle": "編輯交易 · {symbol}",
   "lotSave": "儲存",
-  "dividendEditTitle": "編輯股息 · {symbol}"
+  "dividendEditTitle": "編輯股息 · {symbol}",
+  "activityTitle": "全部交易記錄",
+  "activitySearchHint": "按股票代號篩選",
+  "activityNoMatch": "沒有符合篩選條件的交易。"
 }

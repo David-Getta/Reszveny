@@ -2788,6 +2788,15 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Barcha operatsiyalar';
+
+  @override
+  String get activitySearchHint => 'Tiker boʻyicha filtrlash';
+
+  @override
+  String get activityNoMatch => 'Filtrga mos operatsiya topilmadi.';
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

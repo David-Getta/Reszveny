@@ -2664,6 +2664,15 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => '全部交易记录';
+
+  @override
+  String get activitySearchHint => '按股票代码筛选';
+
+  @override
+  String get activityNoMatch => '没有符合筛选条件的交易。';
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5695,6 +5704,15 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   String dividendEditTitle(String symbol) {
     return '編輯股息 · $symbol';
   }
+
+  @override
+  String get activityTitle => '全部交易記錄';
+
+  @override
+  String get activitySearchHint => '按股票代號篩選';
+
+  @override
+  String get activityNoMatch => '沒有符合篩選條件的交易。';
 
   @override
   String get portfolioGoalSet => '設定目標';

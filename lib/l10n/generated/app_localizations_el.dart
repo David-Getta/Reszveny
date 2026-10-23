@@ -2795,6 +2795,15 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Όλες οι συναλλαγές';
+
+  @override
+  String get activitySearchHint => 'Φιλτράρισμα κατά σύμβολο';
+
+  @override
+  String get activityNoMatch => 'Καμία συναλλαγή δεν ταιριάζει με το φίλτρο.';
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

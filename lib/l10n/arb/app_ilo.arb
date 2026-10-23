@@ -832,5 +832,8 @@
   "lotEdit": "I-edit",
   "lotEditTitle": "I-edit ti transaksion · {symbol}",
   "lotSave": "I-save",
-  "dividendEditTitle": "I-edit ti dibidendo · {symbol}"
+  "dividendEditTitle": "I-edit ti dibidendo · {symbol}",
+  "activityTitle": "Amin a transaksion",
+  "activitySearchHint": "I-filter babaen ti ticker",
+  "activityNoMatch": "Awan ti maitutop a transaksion iti filter."
 }

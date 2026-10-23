@@ -2805,6 +2805,15 @@ class AppLocalizationsIlo extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Amin a transaksion';
+
+  @override
+  String get activitySearchHint => 'I-filter babaen ti ticker';
+
+  @override
+  String get activityNoMatch => 'Awan ti maitutop a transaksion iti filter.';
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

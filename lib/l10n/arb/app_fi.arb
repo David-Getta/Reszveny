@@ -832,5 +832,8 @@
   "lotEdit": "Muokkaa",
   "lotEditTitle": "Muokkaa tapahtumaa · {symbol}",
   "lotSave": "Tallenna",
-  "dividendEditTitle": "Muokkaa osinkoa · {symbol}"
+  "dividendEditTitle": "Muokkaa osinkoa · {symbol}",
+  "activityTitle": "Kaikki tapahtumat",
+  "activitySearchHint": "Suodata tunnuksella",
+  "activityNoMatch": "Suodatinta vastaavia tapahtumia ei ole."
 }

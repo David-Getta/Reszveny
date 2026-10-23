@@ -2792,6 +2792,16 @@ class AppLocalizationsSn extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Zvese zvakatengwa nezvakatengeswa';
+
+  @override
+  String get activitySearchHint => 'Sarudza nema ticker';
+
+  @override
+  String get activityNoMatch =>
+      'Hapana kutenga kana kutengesa kunoenderana nezvawasarudza.';
+
+  @override
   String get portfolioGoalSet => 'Isa chinangwa';
 
   @override

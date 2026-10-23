@@ -832,5 +832,8 @@
   "lotEdit": "編集",
   "lotEditTitle": "取引を編集 · {symbol}",
   "lotSave": "保存",
-  "dividendEditTitle": "配当を編集 · {symbol}"
+  "dividendEditTitle": "配当を編集 · {symbol}",
+  "activityTitle": "すべての取引",
+  "activitySearchHint": "ティッカーで絞り込み",
+  "activityNoMatch": "絞り込み条件に一致する取引はありません。"
 }

@@ -2803,6 +2803,16 @@ class AppLocalizationsTn extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Ditheko le dithekiso tsotlhe';
+
+  @override
+  String get activitySearchHint => 'Sefa ka ticker';
+
+  @override
+  String get activityNoMatch =>
+      'Ga go na theko kgotsa thekiso e e tsamaelanang le sefa.';
+
+  @override
   String get portfolioGoalSet => 'Baya maikaelelo';
 
   @override

@@ -2797,6 +2797,15 @@ class AppLocalizationsXh extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Zonke iintengiselwano';
+
+  @override
+  String get activitySearchHint => 'Hluza nge-ticker';
+
+  @override
+  String get activityNoMatch => 'Akukho ntengiselwano ihambelana nesihluzi.';
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

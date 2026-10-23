@@ -2793,6 +2793,16 @@ class AppLocalizationsRn extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Ivyaguzwe n\'ivyagurishijwe vyose';
+
+  @override
+  String get activitySearchHint => 'Shungura ukurikije ticker';
+
+  @override
+  String get activityNoMatch =>
+      'Nta gikorwa co kugura canke kugurisha gihuye n\'ivyo washunguye.';
+
+  @override
   String get portfolioGoalSet => 'Shiraho intumbero';
 
   @override

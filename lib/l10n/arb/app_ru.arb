@@ -832,5 +832,8 @@
   "lotEdit": "Изменить",
   "lotEditTitle": "Изменить сделку · {symbol}",
   "lotSave": "Сохранить",
-  "dividendEditTitle": "Изменить дивиденд · {symbol}"
+  "dividendEditTitle": "Изменить дивиденд · {symbol}",
+  "activityTitle": "Все сделки",
+  "activitySearchHint": "Фильтр по тикеру",
+  "activityNoMatch": "Нет сделок, соответствующих фильтру."
 }

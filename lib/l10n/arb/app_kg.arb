@@ -832,5 +832,8 @@
   "lotEdit": "Soba",
   "lotEditTitle": "Soba kusumba to kuteka · {symbol}",
   "lotSave": "Bumba",
-  "dividendEditTitle": "Soba dividende · {symbol}"
+  "dividendEditTitle": "Soba dividende · {symbol}",
+  "activityTitle": "Kusumba ti kuteka yonso",
+  "activitySearchHint": "Pona na ticker",
+  "activityNoMatch": "Ka kuena kusumba to kuteka ifwanene ti kupona yai ko."
 }

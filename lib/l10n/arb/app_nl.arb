@@ -832,5 +832,8 @@
   "lotEdit": "Bewerken",
   "lotEditTitle": "Transactie bewerken · {symbol}",
   "lotSave": "Opslaan",
-  "dividendEditTitle": "Dividend bewerken · {symbol}"
+  "dividendEditTitle": "Dividend bewerken · {symbol}",
+  "activityTitle": "Alle transacties",
+  "activitySearchHint": "Filter op ticker",
+  "activityNoMatch": "Geen transacties die aan het filter voldoen."
 }

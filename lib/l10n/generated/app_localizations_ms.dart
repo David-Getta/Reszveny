@@ -2786,6 +2786,15 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Semua transaksi';
+
+  @override
+  String get activitySearchHint => 'Tapis mengikut ticker';
+
+  @override
+  String get activityNoMatch => 'Tiada transaksi yang sepadan dengan penapis.';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

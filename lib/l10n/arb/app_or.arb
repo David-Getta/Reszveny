@@ -832,5 +832,8 @@
   "lotEdit": "ଏଡିଟ କରନ୍ତୁ",
   "lotEditTitle": "କାରବାର ଏଡିଟ କରନ୍ତୁ · {symbol}",
   "lotSave": "ସେଭ୍ କରନ୍ତୁ",
-  "dividendEditTitle": "ଡିଭିଡେଣ୍ଡ ଏଡିଟ କରନ୍ତୁ · {symbol}"
+  "dividendEditTitle": "ଡିଭିଡେଣ୍ଡ ଏଡିଟ କରନ୍ତୁ · {symbol}",
+  "activityTitle": "ସମସ୍ତ କାରବାର",
+  "activitySearchHint": "ଟିକର ଅନୁସାରେ ଫିଲ୍ଟର କରନ୍ତୁ",
+  "activityNoMatch": "ଫିଲ୍ଟର ସହ କୌଣସି କାରବାର ମେଳ ଖାଉନାହିଁ।"
 }

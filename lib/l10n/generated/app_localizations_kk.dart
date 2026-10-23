@@ -2783,6 +2783,15 @@ class AppLocalizationsKk extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Барлық операциялар';
+
+  @override
+  String get activitySearchHint => 'Тикер бойынша сүзу';
+
+  @override
+  String get activityNoMatch => 'Сүзгіге сәйкес операция жоқ.';
+
+  @override
   String get portfolioGoalSet => 'Мақсат қою';
 
   @override

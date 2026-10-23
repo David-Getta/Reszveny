@@ -2778,6 +2778,15 @@ class AppLocalizationsGu extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'બધા વ્યવહારો';
+
+  @override
+  String get activitySearchHint => 'ટિકર મુજબ ફિલ્ટર કરો';
+
+  @override
+  String get activityNoMatch => 'ફિલ્ટર સાથે કોઈ વ્યવહાર મેળ ખાતો નથી.';
+
+  @override
   String get portfolioGoalSet => 'લક્ષ્ય નક્કી કરો';
 
   @override

@@ -9,6 +9,7 @@ import '../../core/share/share_text.dart';
 import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
+import 'activity_page.dart';
 import 'annual_summary.dart';
 import 'bulk_stops.dart';
 import 'holdings_import.dart';
@@ -51,6 +52,8 @@ class PortfolioCsvMenu extends StatelessWidget {
               ),
             );
           }
+        } else if (v == 'activity') {
+          if (context.mounted) await showActivityPage(context);
         } else if (v == 'stops') {
           if (context.mounted) await showBulkStops(context);
         } else if (v == 'summary') {
@@ -64,6 +67,13 @@ class PortfolioCsvMenu extends StatelessWidget {
         }
       },
       itemBuilder: (_) => [
+        // Minden tranzakció egy listában (szűrve, javítható).
+        if (services.portfolio.lots.isNotEmpty || services.portfolio.dividends.isNotEmpty)
+          PopupMenuItem(
+            key: const ValueKey('portfolio-activity'),
+            value: 'activity',
+            child: ListTile(leading: const Icon(Icons.history_rounded), title: Text(l10n.activityTitle)),
+          ),
         if (services.portfolio.lots.isNotEmpty)
           PopupMenuItem(
             key: const ValueKey('portfolio-export'),

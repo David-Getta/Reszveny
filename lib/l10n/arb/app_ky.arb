@@ -832,5 +832,8 @@
   "lotEdit": "Түзөтүү",
   "lotEditTitle": "Транзакцияны түзөтүү · {symbol}",
   "lotSave": "Сактоо",
-  "dividendEditTitle": "Дивидендди түзөтүү · {symbol}"
+  "dividendEditTitle": "Дивидендди түзөтүү · {symbol}",
+  "activityTitle": "Бардык транзакциялар",
+  "activitySearchHint": "Тикер боюнча чыпкалоо",
+  "activityNoMatch": "Чыпкага дал келген транзакция жок."
 }

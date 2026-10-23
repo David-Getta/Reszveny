@@ -2775,6 +2775,16 @@ class AppLocalizationsWo extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Jënd ak jaay yépp';
+
+  @override
+  String get activitySearchHint => 'Tànn ci màndarga';
+
+  @override
+  String get activityNoMatch =>
+      'Amul jënd walla jaay bu dëppoo ak li nga tànn.';
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

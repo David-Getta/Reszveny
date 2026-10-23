@@ -2796,6 +2796,16 @@ class AppLocalizationsOm extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Bittaa fi gurgurtaa hunda';
+
+  @override
+  String get activitySearchHint => 'Mallattoon calali';
+
+  @override
+  String get activityNoMatch =>
+      'Bittaan ykn gurgurtaan calallii wajjin walsimu hin jiru.';
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

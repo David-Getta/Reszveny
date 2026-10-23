@@ -832,5 +832,8 @@
   "lotEdit": "Hariri",
   "lotEditTitle": "Hariri muamala · {symbol}",
   "lotSave": "Hifadhi",
-  "dividendEditTitle": "Hariri gawio · {symbol}"
+  "dividendEditTitle": "Hariri gawio · {symbol}",
+  "activityTitle": "Miamala yote",
+  "activitySearchHint": "Chuja kwa ticker",
+  "activityNoMatch": "Hakuna muamala unaolingana na kichujio."
 }

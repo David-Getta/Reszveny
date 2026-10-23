@@ -2780,6 +2780,15 @@ class AppLocalizationsOr extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'ସମସ୍ତ କାରବାର';
+
+  @override
+  String get activitySearchHint => 'ଟିକର ଅନୁସାରେ ଫିଲ୍ଟର କରନ୍ତୁ';
+
+  @override
+  String get activityNoMatch => 'ଫିଲ୍ଟର ସହ କୌଣସି କାରବାର ମେଳ ଖାଉନାହିଁ।';
+
+  @override
   String get portfolioGoalSet => 'ଲକ୍ଷ୍ୟ ସ୍ଥିର କରନ୍ତୁ';
 
   @override

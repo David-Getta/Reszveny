@@ -2793,6 +2793,15 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Dhammaan macaamilada';
+
+  @override
+  String get activitySearchHint => 'Ku shaandhee astaan';
+
+  @override
+  String get activityNoMatch => 'Macaamil la mid ah shaandhaynta lama helin.';
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

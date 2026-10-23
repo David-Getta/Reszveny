@@ -832,5 +832,8 @@
   "lotEdit": "Edit",
   "lotEditTitle": "Edit transaksi · {symbol}",
   "lotSave": "Simpan",
-  "dividendEditTitle": "Edit dividen · {symbol}"
+  "dividendEditTitle": "Edit dividen · {symbol}",
+  "activityTitle": "Semua transaksi",
+  "activitySearchHint": "Tapis mengikut ticker",
+  "activityNoMatch": "Tiada transaksi yang sepadan dengan penapis."
 }

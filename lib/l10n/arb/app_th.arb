@@ -832,5 +832,8 @@
   "lotEdit": "แก้ไข",
   "lotEditTitle": "แก้ไขรายการซื้อขาย · {symbol}",
   "lotSave": "บันทึก",
-  "dividendEditTitle": "แก้ไขเงินปันผล · {symbol}"
+  "dividendEditTitle": "แก้ไขเงินปันผล · {symbol}",
+  "activityTitle": "รายการซื้อขายทั้งหมด",
+  "activitySearchHint": "กรองตามชื่อย่อ",
+  "activityNoMatch": "ไม่มีรายการซื้อขายที่ตรงกับตัวกรอง"
 }

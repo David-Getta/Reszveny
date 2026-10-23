@@ -2780,6 +2780,16 @@ class AppLocalizationsBm extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Sanniw ni feereliw bɛɛ';
+
+  @override
+  String get activitySearchHint => 'Sugandi taamasiyɛn fɛ';
+
+  @override
+  String get activityNoMatch =>
+      'Sanni walima feereli si ma bɛn i ka sugandili ma.';
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

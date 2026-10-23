@@ -2776,6 +2776,15 @@ class AppLocalizationsMai extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'सभ लेन-देन';
+
+  @override
+  String get activitySearchHint => 'टिकर सँ फ़िल्टर करू';
+
+  @override
+  String get activityNoMatch => 'फ़िल्टर सँ कोनो लेन-देन मेल नहि खाइत अछि।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य निर्धारित करू';
 
   @override

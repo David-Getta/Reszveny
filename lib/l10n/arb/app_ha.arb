@@ -832,5 +832,8 @@
   "lotEdit": "Gyara",
   "lotEditTitle": "Gyara ma'amala · {symbol}",
   "lotSave": "Ajiye",
-  "dividendEditTitle": "Gyara rabon riba · {symbol}"
+  "dividendEditTitle": "Gyara rabon riba · {symbol}",
+  "activityTitle": "Dukkan ma'amaloli",
+  "activitySearchHint": "Tace ta ticker",
+  "activityNoMatch": "Babu ma'amalar da ta dace da tacewa."
 }

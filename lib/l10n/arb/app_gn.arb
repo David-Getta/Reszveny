@@ -832,5 +832,8 @@
   "lotEdit": "Emoambue",
   "lotEditTitle": "Emoambue jejogua térã ñemu · {symbol}",
   "lotSave": "Eñongatu",
-  "dividendEditTitle": "Emoambue dividendo · {symbol}"
+  "dividendEditTitle": "Emoambue dividendo · {symbol}",
+  "activityTitle": "Opaite jejogua ha ñemu",
+  "activitySearchHint": "Eheka símbolo rupi",
+  "activityNoMatch": "Ndaipóri jejogua térã ñemu ojojoguáva filtro ndive."
 }

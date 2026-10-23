@@ -2786,6 +2786,15 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'هەموو مامەڵەکان';
+
+  @override
+  String get activitySearchHint => 'پاڵاوتن بەپێی هێما';
+
+  @override
+  String get activityNoMatch => 'هیچ مامەڵەیەک لەگەڵ پاڵاوتنەکە ناگونجێت.';
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

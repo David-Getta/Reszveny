@@ -2859,6 +2859,15 @@ class AppLocalizationsSl extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Vse transakcije';
+
+  @override
+  String get activitySearchHint => 'Filtriraj po oznaki';
+
+  @override
+  String get activityNoMatch => 'Nobena transakcija se ne ujema s filtrom.';
+
+  @override
   String get portfolioGoalSet => 'Nastavi cilj';
 
   @override

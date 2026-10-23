@@ -832,5 +832,8 @@
   "lotEdit": "සංස්කරණය කරන්න",
   "lotEditTitle": "ගනුදෙනුව සංස්කරණය කරන්න · {symbol}",
   "lotSave": "සුරකින්න",
-  "dividendEditTitle": "ලාභාංශය සංස්කරණය කරන්න · {symbol}"
+  "dividendEditTitle": "ලාභාංශය සංස්කරණය කරන්න · {symbol}",
+  "activityTitle": "සියලු ගනුදෙනු",
+  "activitySearchHint": "ටිකර් අනුව පෙරන්න",
+  "activityNoMatch": "පෙරහනට ගැළපෙන ගනුදෙනු නැත."
 }

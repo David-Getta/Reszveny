@@ -832,5 +832,8 @@
   "lotEdit": "Ndrysho",
   "lotEditTitle": "Ndrysho transaksionin · {symbol}",
   "lotSave": "Ruaj",
-  "dividendEditTitle": "Ndrysho dividendin · {symbol}"
+  "dividendEditTitle": "Ndrysho dividendin · {symbol}",
+  "activityTitle": "Të gjitha transaksionet",
+  "activitySearchHint": "Filtro sipas simbolit",
+  "activityNoMatch": "Asnjë transaksion nuk përputhet me filtrin."
 }

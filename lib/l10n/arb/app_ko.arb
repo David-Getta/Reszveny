@@ -832,5 +832,8 @@
   "lotEdit": "수정",
   "lotEditTitle": "거래 수정 · {symbol}",
   "lotSave": "저장",
-  "dividendEditTitle": "배당금 수정 · {symbol}"
+  "dividendEditTitle": "배당금 수정 · {symbol}",
+  "activityTitle": "전체 거래 내역",
+  "activitySearchHint": "티커로 필터링",
+  "activityNoMatch": "필터와 일치하는 거래가 없습니다."
 }

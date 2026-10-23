@@ -832,5 +832,8 @@
   "lotEdit": "កែ",
   "lotEditTitle": "កែប្រតិបត្តិការ · {symbol}",
   "lotSave": "រក្សាទុក",
-  "dividendEditTitle": "កែភាគលាភ · {symbol}"
+  "dividendEditTitle": "កែភាគលាភ · {symbol}",
+  "activityTitle": "ប្រតិបត្តិការទាំងអស់",
+  "activitySearchHint": "ត្រងតាមនិមិត្តសញ្ញា",
+  "activityNoMatch": "គ្មានប្រតិបត្តិការដែលត្រូវនឹងតម្រងទេ។"
 }

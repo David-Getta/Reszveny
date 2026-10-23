@@ -832,5 +832,8 @@
   "lotEdit": "Gadzirisa",
   "lotEditTitle": "Gadzirisa kutenga kana kutengesa · {symbol}",
   "lotSave": "Chengetedza",
-  "dividendEditTitle": "Gadzirisa dividendi · {symbol}"
+  "dividendEditTitle": "Gadzirisa dividendi · {symbol}",
+  "activityTitle": "Zvese zvakatengwa nezvakatengeswa",
+  "activitySearchHint": "Sarudza nema ticker",
+  "activityNoMatch": "Hapana kutenga kana kutengesa kunoenderana nezvawasarudza."
 }

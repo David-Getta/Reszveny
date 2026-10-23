@@ -2782,6 +2782,15 @@ class AppLocalizationsAs extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'সকলো লেনদেন';
+
+  @override
+  String get activitySearchHint => 'টিকাৰ অনুসৰি ফিল্টাৰ কৰক';
+
+  @override
+  String get activityNoMatch => 'ফিল্টাৰৰ সৈতে কোনো লেনদেন মিল নাখালে।';
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য নিৰ্ধাৰণ কৰক';
 
   @override

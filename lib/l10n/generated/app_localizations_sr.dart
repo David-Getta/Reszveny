@@ -2833,6 +2833,15 @@ class AppLocalizationsSr extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Све трансакције';
+
+  @override
+  String get activitySearchHint => 'Филтрирај по тикеру';
+
+  @override
+  String get activityNoMatch => 'Ниједна трансакција не одговара филтеру.';
+
+  @override
   String get portfolioGoalSet => 'Постави циљ';
 
   @override

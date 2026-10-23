@@ -2782,6 +2782,15 @@ class AppLocalizationsMr extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'सर्व व्यवहार';
+
+  @override
+  String get activitySearchHint => 'टिकरनुसार फिल्टर करा';
+
+  @override
+  String get activityNoMatch => 'फिल्टरशी जुळणारे कोणतेही व्यवहार नाहीत.';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य ठरवा';
 
   @override

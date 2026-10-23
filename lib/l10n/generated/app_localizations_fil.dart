@@ -2792,6 +2792,15 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Lahat ng transaksyon';
+
+  @override
+  String get activitySearchHint => 'I-filter ayon sa ticker';
+
+  @override
+  String get activityNoMatch => 'Walang transaksyong tumutugma sa filter.';
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

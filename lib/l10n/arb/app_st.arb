@@ -832,5 +832,8 @@
   "lotEdit": "Fetola",
   "lotEditTitle": "Fetola theko kapa thekiso · {symbol}",
   "lotSave": "Boloka",
-  "dividendEditTitle": "Fetola dividende · {symbol}"
+  "dividendEditTitle": "Fetola dividende · {symbol}",
+  "activityTitle": "Ditheko le dithekiso tsohle",
+  "activitySearchHint": "Sefa ka ticker",
+  "activityNoMatch": "Ha ho theko kapa thekiso e tsamaellanang le sefa."
 }

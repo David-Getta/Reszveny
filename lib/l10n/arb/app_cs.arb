@@ -832,5 +832,8 @@
   "lotEdit": "Upravit",
   "lotEditTitle": "Upravit transakci · {symbol}",
   "lotSave": "Uložit",
-  "dividendEditTitle": "Upravit dividendu · {symbol}"
+  "dividendEditTitle": "Upravit dividendu · {symbol}",
+  "activityTitle": "Všechny transakce",
+  "activitySearchHint": "Filtrovat podle tickeru",
+  "activityNoMatch": "Filtru neodpovídají žádné transakce."
 }

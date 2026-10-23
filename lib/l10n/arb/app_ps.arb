@@ -832,5 +832,8 @@
   "lotEdit": "سمول",
   "lotEditTitle": "راکړه ورکړه سمه کړئ · {symbol}",
   "lotSave": "خوندي کړئ",
-  "dividendEditTitle": "ډیویډنډ سم کړئ · {symbol}"
+  "dividendEditTitle": "ډیویډنډ سم کړئ · {symbol}",
+  "activityTitle": "ټولې راکړې ورکړې",
+  "activitySearchHint": "د ټیکر له مخې فلټر کړئ",
+  "activityNoMatch": "هېڅ راکړه ورکړه له فلټر سره سمون نه لري."
 }

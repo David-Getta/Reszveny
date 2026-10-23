@@ -832,5 +832,8 @@
   "lotEdit": "ಎಡಿಟ್ ಮಾಡಿ",
   "lotEditTitle": "ವಹಿವಾಟು ಎಡಿಟ್ ಮಾಡಿ · {symbol}",
   "lotSave": "ಉಳಿಸಿ",
-  "dividendEditTitle": "ಡಿವಿಡೆಂಡ್ ಎಡಿಟ್ ಮಾಡಿ · {symbol}"
+  "dividendEditTitle": "ಡಿವಿಡೆಂಡ್ ಎಡಿಟ್ ಮಾಡಿ · {symbol}",
+  "activityTitle": "ಎಲ್ಲಾ ವಹಿವಾಟುಗಳು",
+  "activitySearchHint": "ಟಿಕರ್ ಪ್ರಕಾರ ಫಿಲ್ಟರ್ ಮಾಡಿ",
+  "activityNoMatch": "ಫಿಲ್ಟರ್‌ಗೆ ಹೊಂದುವ ಯಾವುದೇ ವಹಿವಾಟುಗಳಿಲ್ಲ."
 }

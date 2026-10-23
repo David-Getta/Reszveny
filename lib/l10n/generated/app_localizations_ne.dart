@@ -2782,6 +2782,15 @@ class AppLocalizationsNe extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'सबै कारोबार';
+
+  @override
+  String get activitySearchHint => 'टिकर अनुसार फिल्टर गर्नुहोस्';
+
+  @override
+  String get activityNoMatch => 'फिल्टरसँग मिल्ने कुनै कारोबार छैन।';
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तोक्नुहोस्';
 
   @override

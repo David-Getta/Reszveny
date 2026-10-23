@@ -832,5 +832,8 @@
   "lotEdit": "Рэдагаваць",
   "lotEditTitle": "Рэдагаваць аперацыю · {symbol}",
   "lotSave": "Захаваць",
-  "dividendEditTitle": "Рэдагаваць дывідэнд · {symbol}"
+  "dividendEditTitle": "Рэдагаваць дывідэнд · {symbol}",
+  "activityTitle": "Усе аперацыі",
+  "activitySearchHint": "Фільтр па тыкеры",
+  "activityNoMatch": "Няма аперацый, якія адпавядаюць фільтру."
 }

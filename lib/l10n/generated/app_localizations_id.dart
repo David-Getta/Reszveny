@@ -2779,6 +2779,15 @@ class AppLocalizationsId extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Semua transaksi';
+
+  @override
+  String get activitySearchHint => 'Filter menurut kode saham';
+
+  @override
+  String get activityNoMatch => 'Tidak ada transaksi yang cocok dengan filter.';
+
+  @override
   String get portfolioGoalSet => 'Tetapkan target';
 
   @override

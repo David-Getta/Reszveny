@@ -832,5 +832,8 @@
   "lotEdit": "সম্পাদনা কৰক",
   "lotEditTitle": "লেনদেন সম্পাদনা কৰক · {symbol}",
   "lotSave": "ছেভ কৰক",
-  "dividendEditTitle": "লাভাংশ সম্পাদনা কৰক · {symbol}"
+  "dividendEditTitle": "লাভাংশ সম্পাদনা কৰক · {symbol}",
+  "activityTitle": "সকলো লেনদেন",
+  "activitySearchHint": "টিকাৰ অনুসৰি ফিল্টাৰ কৰক",
+  "activityNoMatch": "ফিল্টাৰৰ সৈতে কোনো লেনদেন মিল নাখালে।"
 }

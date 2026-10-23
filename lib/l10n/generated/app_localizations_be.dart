@@ -2857,6 +2857,15 @@ class AppLocalizationsBe extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Усе аперацыі';
+
+  @override
+  String get activitySearchHint => 'Фільтр па тыкеры';
+
+  @override
+  String get activityNoMatch => 'Няма аперацый, якія адпавядаюць фільтру.';
+
+  @override
   String get portfolioGoalSet => 'Задаць мэту';
 
   @override

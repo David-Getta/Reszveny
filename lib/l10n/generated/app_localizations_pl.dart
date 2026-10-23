@@ -2860,6 +2860,15 @@ class AppLocalizationsPl extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Wszystkie transakcje';
+
+  @override
+  String get activitySearchHint => 'Filtruj według tickera';
+
+  @override
+  String get activityNoMatch => 'Żadna transakcja nie pasuje do filtra.';
+
+  @override
   String get portfolioGoalSet => 'Ustaw cel';
 
   @override

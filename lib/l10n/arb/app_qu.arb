@@ -832,5 +832,8 @@
   "lotEdit": "Allichay",
   "lotEditTitle": "Rantiy rantikuyta allichay · {symbol}",
   "lotSave": "Waqaychay",
-  "dividendEditTitle": "Dividendota allichay · {symbol}"
+  "dividendEditTitle": "Dividendota allichay · {symbol}",
+  "activityTitle": "Llapan rantiy rantikuy",
+  "activitySearchHint": "Ticker nisqawan akllay",
+  "activityNoMatch": "Mana ima rantiy rantikuypas akllasqaykiman tupanchu."
 }

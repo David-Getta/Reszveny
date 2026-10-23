@@ -832,5 +832,8 @@
   "lotEdit": "Editar",
   "lotEditTitle": "Editar transacción · {symbol}",
   "lotSave": "Guardar",
-  "dividendEditTitle": "Editar dividendo · {symbol}"
+  "dividendEditTitle": "Editar dividendo · {symbol}",
+  "activityTitle": "Todas las transacciones",
+  "activitySearchHint": "Filtrar por ticker",
+  "activityNoMatch": "Ninguna transacción coincide con el filtro."
 }

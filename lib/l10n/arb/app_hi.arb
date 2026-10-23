@@ -832,5 +832,8 @@
   "lotEdit": "संपादित करें",
   "lotEditTitle": "लेन-देन संपादित करें · {symbol}",
   "lotSave": "सेव करें",
-  "dividendEditTitle": "डिविडेंड संपादित करें · {symbol}"
+  "dividendEditTitle": "डिविडेंड संपादित करें · {symbol}",
+  "activityTitle": "सभी लेन-देन",
+  "activitySearchHint": "टिकर से फ़िल्टर करें",
+  "activityNoMatch": "फ़िल्टर से कोई लेन-देन मेल नहीं खाता।"
 }

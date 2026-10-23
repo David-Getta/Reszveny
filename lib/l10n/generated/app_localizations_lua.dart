@@ -2795,6 +2795,16 @@ class AppLocalizationsLua extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Kusumba ne kusumbisha kuonso';
+
+  @override
+  String get activitySearchHint => 'Sungula ku ticker';
+
+  @override
+  String get activityNoMatch =>
+      'Katuena bapete kusumba anyi kusumbisha kuakanyine ne disungula.';
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

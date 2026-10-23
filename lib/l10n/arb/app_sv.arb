@@ -832,5 +832,8 @@
   "lotEdit": "Redigera",
   "lotEditTitle": "Redigera transaktion · {symbol}",
   "lotSave": "Spara",
-  "dividendEditTitle": "Redigera utdelning · {symbol}"
+  "dividendEditTitle": "Redigera utdelning · {symbol}",
+  "activityTitle": "Alla transaktioner",
+  "activitySearchHint": "Filtrera efter ticker",
+  "activityNoMatch": "Inga transaktioner matchar filtret."
 }

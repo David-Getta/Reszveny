@@ -2853,6 +2853,15 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'جميع المعاملات';
+
+  @override
+  String get activitySearchHint => 'تصفية حسب رمز السهم';
+
+  @override
+  String get activityNoMatch => 'لا توجد معاملات مطابقة لعامل التصفية.';
+
+  @override
   String get portfolioGoalSet => 'تحديد هدف';
 
   @override

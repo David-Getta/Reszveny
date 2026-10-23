@@ -832,5 +832,8 @@
   "lotEdit": "རྩོམ་སྒྲིག",
   "lotEditTitle": "ཉོ་འཚོང་རྩོམ་སྒྲིག · {symbol}",
   "lotSave": "ཉར་ཚགས།",
-  "dividendEditTitle": "ཁེ་བགོས་རྩོམ་སྒྲིག · {symbol}"
+  "dividendEditTitle": "ཁེ་བགོས་རྩོམ་སྒྲིག · {symbol}",
+  "activityTitle": "ཉོ་འཚོང་ཡོངས།",
+  "activitySearchHint": "ཨང་རྟགས་ལྟར་འདེམས་སྒྲུག",
+  "activityNoMatch": "འདེམས་སྒྲུག་དང་མཐུན་པའི་ཉོ་འཚོང་མེད།"
 }

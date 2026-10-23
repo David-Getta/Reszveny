@@ -832,5 +832,8 @@
   "lotEdit": "Usba",
   "lotEditTitle": "Usba ang transaksyon · {symbol}",
   "lotSave": "I-save",
-  "dividendEditTitle": "Usba ang dibidendo · {symbol}"
+  "dividendEditTitle": "Usba ang dibidendo · {symbol}",
+  "activityTitle": "Tanang transaksyon",
+  "activitySearchHint": "I-filter sumala sa ticker",
+  "activityNoMatch": "Walay transaksyon nga mitugma sa filter."
 }

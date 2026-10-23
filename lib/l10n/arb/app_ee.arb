@@ -832,5 +832,8 @@
   "lotEdit": "Trɔ",
   "lotEditTitle": "Trɔ nuƒeƒle alo nudzadzra · {symbol}",
   "lotSave": "Dzra ɖo",
-  "dividendEditTitle": "Trɔ dividend la · {symbol}"
+  "dividendEditTitle": "Trɔ dividend la · {symbol}",
+  "activityTitle": "Nuƒeƒle kple nudzadzra katã",
+  "activitySearchHint": "Tia le ticker nu",
+  "activityNoMatch": "Nuƒeƒle alo nudzadzra aɖeke mesɔ kple tiatia la o."
 }

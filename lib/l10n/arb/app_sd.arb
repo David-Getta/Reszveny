@@ -832,5 +832,8 @@
   "lotEdit": "ترميم ڪريو",
   "lotEditTitle": "ليڻ دين ۾ ترميم ڪريو · {symbol}",
   "lotSave": "محفوظ ڪريو",
-  "dividendEditTitle": "ڊيويڊنڊ ۾ ترميم ڪريو · {symbol}"
+  "dividendEditTitle": "ڊيويڊنڊ ۾ ترميم ڪريو · {symbol}",
+  "activityTitle": "سڀ ليڻ دين",
+  "activitySearchHint": "ٽڪر مطابق فلٽر ڪريو",
+  "activityNoMatch": "فلٽر سان ڪو به ليڻ دين نه ٿو ملي."
 }

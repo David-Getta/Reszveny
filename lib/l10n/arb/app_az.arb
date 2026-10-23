@@ -832,5 +832,8 @@
   "lotEdit": "Redaktə et",
   "lotEditTitle": "Əməliyyatı redaktə et · {symbol}",
   "lotSave": "Yadda saxla",
-  "dividendEditTitle": "Dividendi redaktə et · {symbol}"
+  "dividendEditTitle": "Dividendi redaktə et · {symbol}",
+  "activityTitle": "Bütün əməliyyatlar",
+  "activitySearchHint": "Tikerə görə filtrlə",
+  "activityNoMatch": "Filtrə uyğun əməliyyat yoxdur."
 }

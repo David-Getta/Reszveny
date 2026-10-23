@@ -2828,6 +2828,15 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Visi darījumi';
+
+  @override
+  String get activitySearchHint => 'Filtrēt pēc simbola';
+
+  @override
+  String get activityNoMatch => 'Filtram neatbilst neviens darījums.';
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

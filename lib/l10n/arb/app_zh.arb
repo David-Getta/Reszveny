@@ -832,5 +832,8 @@
   "lotEdit": "编辑",
   "lotEditTitle": "编辑交易 · {symbol}",
   "lotSave": "保存",
-  "dividendEditTitle": "编辑股息 · {symbol}"
+  "dividendEditTitle": "编辑股息 · {symbol}",
+  "activityTitle": "全部交易记录",
+  "activitySearchHint": "按股票代码筛选",
+  "activityNoMatch": "没有符合筛选条件的交易。"
 }

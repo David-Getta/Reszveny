@@ -2826,6 +2826,15 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Toate tranzacțiile';
+
+  @override
+  String get activitySearchHint => 'Filtrează după simbol';
+
+  @override
+  String get activityNoMatch => 'Nicio tranzacție nu se potrivește filtrului.';
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

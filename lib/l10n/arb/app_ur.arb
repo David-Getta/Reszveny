@@ -832,5 +832,8 @@
   "lotEdit": "ترمیم کریں",
   "lotEditTitle": "لین دین میں ترمیم کریں · {symbol}",
   "lotSave": "محفوظ کریں",
-  "dividendEditTitle": "ڈیویڈنڈ میں ترمیم کریں · {symbol}"
+  "dividendEditTitle": "ڈیویڈنڈ میں ترمیم کریں · {symbol}",
+  "activityTitle": "تمام لین دین",
+  "activitySearchHint": "ٹکر کے مطابق فلٹر کریں",
+  "activityNoMatch": "فلٹر سے کوئی لین دین مطابقت نہیں رکھتا۔"
 }

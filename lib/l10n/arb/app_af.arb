@@ -832,5 +832,8 @@
   "lotEdit": "Wysig",
   "lotEditTitle": "Wysig transaksie · {symbol}",
   "lotSave": "Stoor",
-  "dividendEditTitle": "Wysig dividend · {symbol}"
+  "dividendEditTitle": "Wysig dividend · {symbol}",
+  "activityTitle": "Alle transaksies",
+  "activitySearchHint": "Filtreer volgens aandeelkode",
+  "activityNoMatch": "Geen transaksies pas by die filter nie."
 }

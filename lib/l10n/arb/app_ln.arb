@@ -832,5 +832,8 @@
   "lotEdit": "Bongola",
   "lotEditTitle": "Bongola bosombi to boteki · {symbol}",
   "lotSave": "Bomba",
-  "dividendEditTitle": "Bongola dividende · {symbol}"
+  "dividendEditTitle": "Bongola dividende · {symbol}",
+  "activityTitle": "Bosombi mpe boteki nyonso",
+  "activitySearchHint": "Pona na ticker",
+  "activityNoMatch": "Bosombi to boteki moko te ekokani na oyo oponi."
 }

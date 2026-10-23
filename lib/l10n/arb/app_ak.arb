@@ -832,5 +832,8 @@
   "lotEdit": "Sesa",
   "lotEditTitle": "Sesa adetɔ anaa adetɔn · {symbol}",
   "lotSave": "Kora",
-  "dividendEditTitle": "Sesa dividend · {symbol}"
+  "dividendEditTitle": "Sesa dividend · {symbol}",
+  "activityTitle": "Adetɔ ne adetɔn nyinaa",
+  "activitySearchHint": "Fa ticker hwehwɛ mu",
+  "activityNoMatch": "Adetɔ anaa adetɔn biara nhyia nea woapaw no."
 }

@@ -2435,6 +2435,18 @@
       }
     }
   },
+  "activityTitle": "All transactions",
+  "@activityTitle": {
+    "description": "Title of the page (and portfolio menu item) that lists every recorded buy, sell, dividend and stock split in one chronological list."
+  },
+  "activitySearchHint": "Filter by ticker",
+  "@activitySearchHint": {
+    "description": "Hint in the search field on the all-transactions page; typing part of a ticker (e.g. AAPL) narrows the list."
+  },
+  "activityNoMatch": "No transactions match the filter.",
+  "@activityNoMatch": {
+    "description": "Shown on the all-transactions page when the ticker, type or account filter leaves nothing to show."
+  },
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

@@ -2794,6 +2794,16 @@ class AppLocalizationsNy extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Zogula ndi zogulitsa zonse';
+
+  @override
+  String get activitySearchHint => 'Sefani ndi ticker';
+
+  @override
+  String get activityNoMatch =>
+      'Palibe zogula kapena zogulitsa zofanana ndi zomwe mwasankha.';
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

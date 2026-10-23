@@ -832,5 +832,8 @@
   "lotEdit": "എഡിറ്റ് ചെയ്യുക",
   "lotEditTitle": "ഇടപാട് എഡിറ്റ് ചെയ്യുക · {symbol}",
   "lotSave": "സേവ് ചെയ്യുക",
-  "dividendEditTitle": "ഡിവിഡന്റ് എഡിറ്റ് ചെയ്യുക · {symbol}"
+  "dividendEditTitle": "ഡിവിഡന്റ് എഡിറ്റ് ചെയ്യുക · {symbol}",
+  "activityTitle": "എല്ലാ ഇടപാടുകളും",
+  "activitySearchHint": "ടിക്കർ പ്രകാരം ഫിൽട്ടർ ചെയ്യുക",
+  "activityNoMatch": "ഫിൽട്ടറുമായി പൊരുത്തപ്പെടുന്ന ഇടപാടുകളൊന്നുമില്ല."
 }

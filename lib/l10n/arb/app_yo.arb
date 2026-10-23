@@ -832,5 +832,8 @@
   "lotEdit": "Ṣàtúnṣe",
   "lotEditTitle": "Ṣàtúnṣe ìdúnàdúrà · {symbol}",
   "lotSave": "Fi pamọ́",
-  "dividendEditTitle": "Ṣàtúnṣe ìpín èrè · {symbol}"
+  "dividendEditTitle": "Ṣàtúnṣe ìpín èrè · {symbol}",
+  "activityTitle": "Gbogbo ìdúnàdúrà",
+  "activitySearchHint": "Ṣàyàn nípa àmì ìpín",
+  "activityNoMatch": "Kò sí ìdúnàdúrà tó bá àṣàyàn náà mu."
 }

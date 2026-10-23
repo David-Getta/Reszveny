@@ -2789,6 +2789,15 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Összes tranzakció';
+
+  @override
+  String get activitySearchHint => 'Szűrés tickerre';
+
+  @override
+  String get activityNoMatch => 'Egy tranzakció sem felel meg a szűrésnek.';
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

@@ -832,5 +832,8 @@
   "lotEdit": "सम्पादन गर्नुहोस्",
   "lotEditTitle": "कारोबार सम्पादन गर्नुहोस् · {symbol}",
   "lotSave": "सुरक्षित गर्नुहोस्",
-  "dividendEditTitle": "लाभांश सम्पादन गर्नुहोस् · {symbol}"
+  "dividendEditTitle": "लाभांश सम्पादन गर्नुहोस् · {symbol}",
+  "activityTitle": "सबै कारोबार",
+  "activitySearchHint": "टिकर अनुसार फिल्टर गर्नुहोस्",
+  "activityNoMatch": "फिल्टरसँग मिल्ने कुनै कारोबार छैन।"
 }

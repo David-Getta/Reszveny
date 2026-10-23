@@ -2795,6 +2795,16 @@ class AppLocalizationsMl extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'എല്ലാ ഇടപാടുകളും';
+
+  @override
+  String get activitySearchHint => 'ടിക്കർ പ്രകാരം ഫിൽട്ടർ ചെയ്യുക';
+
+  @override
+  String get activityNoMatch =>
+      'ഫിൽട്ടറുമായി പൊരുത്തപ്പെടുന്ന ഇടപാടുകളൊന്നുമില്ല.';
+
+  @override
   String get portfolioGoalSet => 'ലക്ഷ്യം സജ്ജമാക്കുക';
 
   @override

@@ -2771,6 +2771,15 @@ class AppLocalizationsBo extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'ཉོ་འཚོང་ཡོངས།';
+
+  @override
+  String get activitySearchHint => 'ཨང་རྟགས་ལྟར་འདེམས་སྒྲུག';
+
+  @override
+  String get activityNoMatch => 'འདེམས་སྒྲུག་དང་མཐུན་པའི་ཉོ་འཚོང་མེད།';
+
+  @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
 
   @override

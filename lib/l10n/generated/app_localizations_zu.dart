@@ -2796,6 +2796,16 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Konke ukuthenga nokuthengisa';
+
+  @override
+  String get activitySearchHint => 'Hlunga nge-ticker';
+
+  @override
+  String get activityNoMatch =>
+      'Akukho kuthenga noma kuthengisa okuhambisana nesihlungi.';
+
+  @override
   String get portfolioGoalSet => 'Setha umgomo';
 
   @override

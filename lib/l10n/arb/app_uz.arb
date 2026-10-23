@@ -832,5 +832,8 @@
   "lotEdit": "Tahrirlash",
   "lotEditTitle": "Operatsiyani tahrirlash · {symbol}",
   "lotSave": "Saqlash",
-  "dividendEditTitle": "Dividendni tahrirlash · {symbol}"
+  "dividendEditTitle": "Dividendni tahrirlash · {symbol}",
+  "activityTitle": "Barcha operatsiyalar",
+  "activitySearchHint": "Tiker boʻyicha filtrlash",
+  "activityNoMatch": "Filtrga mos operatsiya topilmadi."
 }

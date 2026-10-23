@@ -832,5 +832,8 @@
   "lotEdit": "I-edit",
   "lotEditTitle": "I-edit ang transaksyon · {symbol}",
   "lotSave": "I-save",
-  "dividendEditTitle": "I-edit ang dibidendo · {symbol}"
+  "dividendEditTitle": "I-edit ang dibidendo · {symbol}",
+  "activityTitle": "Lahat ng transaksyon",
+  "activitySearchHint": "I-filter ayon sa ticker",
+  "activityNoMatch": "Walang transaksyong tumutugma sa filter."
 }

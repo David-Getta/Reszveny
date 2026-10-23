@@ -832,5 +832,8 @@
   "lotEdit": "Wax ka beddel",
   "lotEditTitle": "Wax ka beddel macaamilka · {symbol}",
   "lotSave": "Kaydi",
-  "dividendEditTitle": "Wax ka beddel faa'iido-saamiga · {symbol}"
+  "dividendEditTitle": "Wax ka beddel faa'iido-saamiga · {symbol}",
+  "activityTitle": "Dhammaan macaamilada",
+  "activitySearchHint": "Ku shaandhee astaan",
+  "activityNoMatch": "Macaamil la mid ah shaandhaynta lama helin."
 }

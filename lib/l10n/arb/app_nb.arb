@@ -832,5 +832,8 @@
   "lotEdit": "Rediger",
   "lotEditTitle": "Rediger transaksjon · {symbol}",
   "lotSave": "Lagre",
-  "dividendEditTitle": "Rediger utbytte · {symbol}"
+  "dividendEditTitle": "Rediger utbytte · {symbol}",
+  "activityTitle": "Alle transaksjoner",
+  "activitySearchHint": "Filtrer etter ticker",
+  "activityNoMatch": "Ingen transaksjoner samsvarer med filteret."
 }

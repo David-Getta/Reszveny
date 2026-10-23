@@ -2787,6 +2787,15 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Hemû danûstandin';
+
+  @override
+  String get activitySearchHint => 'Li gorî sembolê parzûn bike';
+
+  @override
+  String get activityNoMatch => 'Tu danûstandin bi parzûnê re li hev nayê.';
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

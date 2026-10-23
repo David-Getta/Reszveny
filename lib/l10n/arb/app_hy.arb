@@ -832,5 +832,8 @@
   "lotEdit": "Խմբագրել",
   "lotEditTitle": "Խմբագրել գործարքը · {symbol}",
   "lotSave": "Պահել",
-  "dividendEditTitle": "Խմբագրել շահաբաժինը · {symbol}"
+  "dividendEditTitle": "Խմբագրել շահաբաժինը · {symbol}",
+  "activityTitle": "Բոլոր գործարքները",
+  "activitySearchHint": "Զտել ըստ թիքերի",
+  "activityNoMatch": "Զտիչին համապատասխանող գործարքներ չկան։"
 }

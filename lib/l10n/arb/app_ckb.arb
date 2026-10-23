@@ -832,5 +832,8 @@
   "lotEdit": "دەستکاریکردن",
   "lotEditTitle": "دەستکاریکردنی مامەڵە · {symbol}",
   "lotSave": "پاشەکەوتکردن",
-  "dividendEditTitle": "دەستکاریکردنی پشکی قازانج · {symbol}"
+  "dividendEditTitle": "دەستکاریکردنی پشکی قازانج · {symbol}",
+  "activityTitle": "هەموو مامەڵەکان",
+  "activitySearchHint": "پاڵاوتن بەپێی هێما",
+  "activityNoMatch": "هیچ مامەڵەیەک لەگەڵ پاڵاوتنەکە ناگونجێت."
 }

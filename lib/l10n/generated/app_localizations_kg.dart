@@ -2794,6 +2794,16 @@ class AppLocalizationsKg extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Kusumba ti kuteka yonso';
+
+  @override
+  String get activitySearchHint => 'Pona na ticker';
+
+  @override
+  String get activityNoMatch =>
+      'Ka kuena kusumba to kuteka ifwanene ti kupona yai ko.';
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

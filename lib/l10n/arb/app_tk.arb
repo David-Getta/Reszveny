@@ -832,5 +832,8 @@
   "lotEdit": "Üýtget",
   "lotEditTitle": "Amaly üýtget · {symbol}",
   "lotSave": "Sakla",
-  "dividendEditTitle": "Diwidendi üýtget · {symbol}"
+  "dividendEditTitle": "Diwidendi üýtget · {symbol}",
+  "activityTitle": "Ähli amallar",
+  "activitySearchHint": "Tiker boýunça süzgüçle",
+  "activityNoMatch": "Süzgüje laýyk amal ýok."
 }

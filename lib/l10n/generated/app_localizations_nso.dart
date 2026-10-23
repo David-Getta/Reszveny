@@ -2803,6 +2803,15 @@ class AppLocalizationsNso extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Dithekišano ka moka';
+
+  @override
+  String get activitySearchHint => 'Sefa ka ticker';
+
+  @override
+  String get activityNoMatch => 'Ga go thekišano ye e swanago le sefa.';
+
+  @override
   String get portfolioGoalSet => 'Bea maikemišetšo';
 
   @override

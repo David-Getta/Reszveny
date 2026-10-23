@@ -832,5 +832,8 @@
   "lotEdit": "Lokiša",
   "lotEditTitle": "Lokiša thekišano · {symbol}",
   "lotSave": "Boloka",
-  "dividendEditTitle": "Lokiša dividende · {symbol}"
+  "dividendEditTitle": "Lokiša dividende · {symbol}",
+  "activityTitle": "Dithekišano ka moka",
+  "activitySearchHint": "Sefa ka ticker",
+  "activityNoMatch": "Ga go thekišano ye e swanago le sefa."
 }

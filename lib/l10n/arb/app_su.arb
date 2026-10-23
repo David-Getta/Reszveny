@@ -832,5 +832,8 @@
   "lotEdit": "Robah",
   "lotEditTitle": "Robah transaksi · {symbol}",
   "lotSave": "Simpen",
-  "dividendEditTitle": "Robah dividen · {symbol}"
+  "dividendEditTitle": "Robah dividen · {symbol}",
+  "activityTitle": "Sadaya transaksi",
+  "activitySearchHint": "Saring dumasar kode saham",
+  "activityNoMatch": "Teu aya transaksi nu cocog jeung saringan."
 }

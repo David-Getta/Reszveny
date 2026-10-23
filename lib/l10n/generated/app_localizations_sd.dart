@@ -2774,6 +2774,15 @@ class AppLocalizationsSd extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'سڀ ليڻ دين';
+
+  @override
+  String get activitySearchHint => 'ٽڪر مطابق فلٽر ڪريو';
+
+  @override
+  String get activityNoMatch => 'فلٽر سان ڪو به ليڻ دين نه ٿو ملي.';
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

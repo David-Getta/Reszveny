@@ -2780,6 +2780,15 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'همه تراکنش‌ها';
+
+  @override
+  String get activitySearchHint => 'فیلتر بر اساس نماد';
+
+  @override
+  String get activityNoMatch => 'هیچ تراکنشی با فیلتر مطابقت ندارد.';
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

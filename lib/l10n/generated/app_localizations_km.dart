@@ -2761,6 +2761,15 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'ប្រតិបត្តិការទាំងអស់';
+
+  @override
+  String get activitySearchHint => 'ត្រងតាមនិមិត្តសញ្ញា';
+
+  @override
+  String get activityNoMatch => 'គ្មានប្រតិបត្តិការដែលត្រូវនឹងតម្រងទេ។';
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

@@ -832,5 +832,8 @@
   "lotEdit": "Editează",
   "lotEditTitle": "Editează tranzacția · {symbol}",
   "lotSave": "Salvează",
-  "dividendEditTitle": "Editează dividendul · {symbol}"
+  "dividendEditTitle": "Editează dividendul · {symbol}",
+  "activityTitle": "Toate tranzacțiile",
+  "activitySearchHint": "Filtrează după simbol",
+  "activityNoMatch": "Nicio tranzacție nu se potrivește filtrului."
 }

@@ -2791,6 +2791,15 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Dukkan ma\'amaloli';
+
+  @override
+  String get activitySearchHint => 'Tace ta ticker';
+
+  @override
+  String get activityNoMatch => 'Babu ma\'amalar da ta dace da tacewa.';
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

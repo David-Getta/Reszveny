@@ -832,5 +832,8 @@
   "lotEdit": "A yɛlɛma",
   "lotEditTitle": "Sanni walima feereli yɛlɛma · {symbol}",
   "lotSave": "A mara",
-  "dividendEditTitle": "Dividandi yɛlɛma · {symbol}"
+  "dividendEditTitle": "Dividandi yɛlɛma · {symbol}",
+  "activityTitle": "Sanniw ni feereliw bɛɛ",
+  "activitySearchHint": "Sugandi taamasiyɛn fɛ",
+  "activityNoMatch": "Sanni walima feereli si ma bɛn i ka sugandili ma."
 }

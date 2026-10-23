@@ -832,5 +832,8 @@
   "lotEdit": "Үзгәртү",
   "lotEditTitle": "Операцияне үзгәртү · {symbol}",
   "lotSave": "Саклау",
-  "dividendEditTitle": "Дивидендны үзгәртү · {symbol}"
+  "dividendEditTitle": "Дивидендны үзгәртү · {symbol}",
+  "activityTitle": "Барлык операцияләр",
+  "activitySearchHint": "Тикер буенча фильтрлау",
+  "activityNoMatch": "Фильтрга туры килгән операция юк."
 }

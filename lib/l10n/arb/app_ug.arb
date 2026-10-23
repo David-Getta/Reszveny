@@ -832,5 +832,8 @@
   "lotEdit": "تەھرىرلەش",
   "lotEditTitle": "سودىنى تەھرىرلەش · {symbol}",
   "lotSave": "ساقلاش",
-  "dividendEditTitle": "دىۋىدېندنى تەھرىرلەش · {symbol}"
+  "dividendEditTitle": "دىۋىدېندنى تەھرىرلەش · {symbol}",
+  "activityTitle": "بارلىق سودىلار",
+  "activitySearchHint": "كود بويىچە سۈزۈش",
+  "activityNoMatch": "سۈزگۈچكە ماس كېلىدىغان سودا يوق."
 }

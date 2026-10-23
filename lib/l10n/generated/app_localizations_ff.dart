@@ -2779,6 +2779,16 @@ class AppLocalizationsFf extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Soodgol e yeeyugol fof';
+
+  @override
+  String get activitySearchHint => 'Suɓo e kod';
+
+  @override
+  String get activityNoMatch =>
+      'Alaa soodgol walla yeeyugol hawriingol e cuɓol maa.';
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

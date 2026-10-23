@@ -2782,6 +2782,16 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Akk tiɣin d uznuzu';
+
+  @override
+  String get activitySearchHint => 'Sizdeg s uzamul';
+
+  @override
+  String get activityNoMatch =>
+      'Ulac tiɣin neɣ aznuzu i yemmenṭaḍen d imsizdeg.';
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

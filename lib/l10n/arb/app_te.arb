@@ -832,5 +832,8 @@
   "lotEdit": "సవరించండి",
   "lotEditTitle": "లావాదేవీని సవరించండి · {symbol}",
   "lotSave": "సేవ్ చేయండి",
-  "dividendEditTitle": "డివిడెండ్‌ను సవరించండి · {symbol}"
+  "dividendEditTitle": "డివిడెండ్‌ను సవరించండి · {symbol}",
+  "activityTitle": "అన్ని లావాదేవీలు",
+  "activitySearchHint": "టికర్ ప్రకారం ఫిల్టర్ చేయండి",
+  "activityNoMatch": "ఫిల్టర్‌కు సరిపోలే లావాదేవీలు లేవు."
 }

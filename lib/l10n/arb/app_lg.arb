@@ -832,5 +832,8 @@
   "lotEdit": "Kyusa",
   "lotEditTitle": "Kyusa ekyaguliddwa oba ekyatundiddwa · {symbol}",
   "lotSave": "Tereka",
-  "dividendEditTitle": "Kyusa dividendi · {symbol}"
+  "dividendEditTitle": "Kyusa dividendi · {symbol}",
+  "activityTitle": "Byonna bye wagula ne bye watunda",
+  "activitySearchHint": "Londa ng'okozesa ticker",
+  "activityNoMatch": "Tewali kyaguliddwa oba kyatundiddwa kikwatagana n'ekyo ky'olonze."
 }

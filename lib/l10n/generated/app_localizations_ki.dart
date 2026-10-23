@@ -2785,6 +2785,16 @@ class AppLocalizationsKi extends AppLocalizations {
   }
 
   @override
+  String get activityTitle => 'Ũgũri na ũendia wothe';
+
+  @override
+  String get activitySearchHint => 'Thuura na ticker';
+
+  @override
+  String get activityNoMatch =>
+      'Gũtirĩ ũgũri kana ũendia ũiganaine na ũthuuri ũcio.';
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

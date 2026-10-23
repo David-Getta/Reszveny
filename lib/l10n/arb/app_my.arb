@@ -832,5 +832,8 @@
   "lotEdit": "ပြင်ရန်",
   "lotEditTitle": "အရောင်းအဝယ် ပြင်ရန် · {symbol}",
   "lotSave": "သိမ်းရန်",
-  "dividendEditTitle": "အမြတ်ဝေစု ပြင်ရန် · {symbol}"
+  "dividendEditTitle": "အမြတ်ဝေစု ပြင်ရန် · {symbol}",
+  "activityTitle": "အရောင်းအဝယ်အားလုံး",
+  "activitySearchHint": "သင်္ကေတဖြင့် စစ်ထုတ်ရန်",
+  "activityNoMatch": "စစ်ထုတ်မှုနှင့် ကိုက်ညီသော အရောင်းအဝယ် မရှိပါ။"
 }
