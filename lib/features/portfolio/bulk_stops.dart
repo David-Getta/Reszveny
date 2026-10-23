@@ -12,14 +12,18 @@ const stopPercents = [5.0, 10.0, 15.0, 20.0, 25.0];
 /// még nincs aktív ilyen riasztás: a csúcs a riasztás első ellenőrzésekor az
 /// akkori ár, onnan követi az árat felfelé. A létrehozott riasztások száma.
 Future<int> addTrailingStops(AppServices services, double percent) async {
-  var added = 0;
-  for (final p in services.portfolio.positions) {
-    final has = services.alerts.forSymbol(p.symbol).any((a) => a.isActive && a.kind == AlertKind.trailing);
-    if (has) continue;
+  final covered = {
+    for (final a in services.alerts.active)
+      if (a.kind == AlertKind.trailing) a.symbol,
+  };
+  final todo = [
+    for (final p in services.portfolio.positions)
+      if (!covered.contains(p.symbol)) p,
+  ];
+  for (final p in todo) {
     await services.alerts.add(symbol: p.symbol, kind: AlertKind.trailing, value: percent, currency: p.currency);
-    added++;
   }
-  return added;
+  return todo.length;
 }
 
 /// A küszöb választása, majd a riasztások létrehozása; a végén egy sáv mondja meg, hány lett.

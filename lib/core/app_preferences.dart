@@ -70,15 +70,14 @@ class AppPreferences extends ChangeNotifier {
 
   /// Felvételi napok beolvasása; a hibás tételek kimaradnak.
   static Map<String, DateTime> parseFavoriteSince(Object? v) {
-    final m = v is String
-        ? (() {
-            try {
-              return jsonDecode(v);
-            } catch (_) {
-              return null;
-            }
-          })()
-        : v;
+    var m = v;
+    if (v is String) {
+      try {
+        m = jsonDecode(v);
+      } catch (_) {
+        return {};
+      }
+    }
     if (m is! Map) return {};
     return {
       for (final e in m.entries)
@@ -96,30 +95,6 @@ class AppPreferences extends ChangeNotifier {
     await p.setStringList(_favoritesKey, _favorites);
     await p.setString(_favoriteSinceKey, jsonEncode(favoriteSinceJson));
   });
-
-  /// Egy kedvenc felvételi napjának visszaállítása (a törlés visszavonásakor).
-  Future<void> restoreFavoriteSince(String symbol, DateTime since) async {
-    final s = symbol.toUpperCase();
-    if (!_favorites.contains(s)) return;
-    _favoriteSince[s] = since;
-    notifyListeners();
-    await _saveFavorites();
-  }
-
-  /// A felvételi napok átvétele (szinkronkor) tickerenként: a csomagban lévő nap
-  /// felülírja a helyit, a csomagból hiányzó helyi nap megmarad (egy a mezőt még nem
-  /// ismerő eszköz üres listája nem törli a dátumokat); csak a kedvencekhez.
-  Future<void> setFavoriteSince(Map<String, DateTime> since) async {
-    final merged = {..._favoriteSince, ...since};
-    _favoriteSince
-      ..clear()
-      ..addAll({
-        for (final e in merged.entries)
-          if (_favorites.contains(e.key)) e.key: e.value,
-      });
-    notifyListeners();
-    await _saveFavorites();
-  }
 
   static const _currencyKey = 'display_currency';
   static const _autoUpdateKey = 'auto_update';
@@ -786,12 +761,23 @@ class AppPreferences extends ChangeNotifier {
     await _save((p) => json == null ? p.remove(_hotkeyKey) : p.setString(_hotkeyKey, jsonEncode(json)));
   }
 
-  /// A kedvencek cseréje (szinkronkor a fiók adataira).
-  Future<void> setFavorites(List<String> symbols) async {
+  /// A kedvencek cseréje (szinkronkor a fiók adataira, visszavonáskor a korábbira).
+  /// A [since] felvételi napjai tickerenként felülírják a helyieket, a hiányzók
+  /// megmaradnak (egy a mezőt még nem ismerő eszköz üres listája nem törli a
+  /// dátumokat); [stampNew] esetén az új kedvencek a mai napot kapják.
+  Future<void> setFavorites(
+    List<String> symbols, {
+    Map<String, DateTime> since = const {},
+    bool stampNew = false,
+  }) async {
+    final previous = {..._favorites};
     _favorites
       ..clear()
       ..addAll(symbols.map((s) => s.toUpperCase()));
-    _favoriteSince.removeWhere((s, _) => !_favorites.contains(s));
+    _favoriteSince
+      ..addAll(since)
+      ..removeWhere((s, _) => !_favorites.contains(s));
+    if (stampNew) _favorites.where((s) => !previous.contains(s)).forEach(_markFavorite);
     notifyListeners();
     await _saveFavorites();
   }

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 
 import '../../app_services.dart';
 import '../../core/util/formatters.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/date_picker_row.dart';
-import 'portfolio_store.dart' show PortfolioLot;
+import 'account_field.dart';
+import 'portfolio_store.dart' show largestKey;
 
 /// Szám a beviteli mezőbe: pont tizedesjellel, ezres tagolás nélkül, amit a
 /// [parseDecimal] változatlanul visszaolvas.
@@ -16,7 +16,7 @@ String plainNumber(double v) =>
 /// Szám beolvasása a felhasználó írásmódjában: „1 234,5”, „1,234.5”, „12,5”.
 /// Ha pont és vessző is van, az utolsó a tizedesjel. `null`, ha nem szám.
 double? parseDecimal(String input) {
-  var s = input.replaceAll(RegExp(r"[\s\u00a0\u202f']"), '');
+  var s = input.replaceAll(_digitSpaces, '');
   final dot = s.lastIndexOf('.'), comma = s.lastIndexOf(',');
   if (dot >= 0 && comma >= 0) {
     final decimal = dot > comma ? '.' : ',';
@@ -32,18 +32,26 @@ double? parseDecimal(String input) {
 /// számjegy jön („5,000” angolul, „100.000” magyarul), az ezres tagolás; minden
 /// más esetben, mint a [parseDecimal].
 double? parseAmount(String input, String locale) {
-  final s = input.trim().replaceAll(RegExp(r"[\s\u00a0\u202f']"), '');
-  final decimal = NumberFormat.decimalPattern(Fmt(locale).numberLocale).symbols.DECIMAL_SEP;
+  final s = input.trim().replaceAll(_digitSpaces, '');
+  final decimal = Fmt(locale).decimalSeparator;
   final group = decimal == ',' ? '.' : ',';
-  // Az első csoport nem kezdődhet 0-val: a „0.125” tizedestört, nem 125. Az indiai
-  // tagolás („1,00,000”) kétjegyű csoportjai is: az utolsó csoport mindig háromjegyű.
-  final g = RegExp.escape(group);
-  if (!s.contains(decimal) && RegExp('^-?[1-9]\\d{0,2}(($g\\d{3})+|($g\\d{2})+$g\\d{3})\$').hasMatch(s)) {
+  if (!s.contains(decimal) && _grouped[group]!.hasMatch(s)) {
     final v = double.tryParse(s.replaceAll(group, ''));
     return v != null && v.isFinite ? v : null;
   }
   return parseDecimal(input);
 }
+
+/// A számjegyek közti tagoló szóközök és aposztróf („1 234”, „1'234”).
+final _digitSpaces = RegExp(r"[\s\u00a0\u202f']");
+
+/// Ezres tagolású egész szám ponttal vagy vesszővel. Az első csoport nem kezdődhet
+/// 0-val: a „0.125” tizedestört, nem 125. Az indiai tagolás („1,00,000”) kétjegyű
+/// csoportjai is: az utolsó csoport mindig háromjegyű.
+final _grouped = {
+  '.': RegExp(r'^-?[1-9]\d{0,2}((\.\d{3})+|(\.\d{2})+\.\d{3})$'),
+  ',': RegExp(r'^-?[1-9]\d{0,2}((,\d{3})+|(,\d{2})+,\d{3})$'),
+};
 
 /// Vétel (vagy [holdings] megadásával eladás) rögzítése: darabszám,
 /// darabonkénti ár (a jelenlegi árral kitöltve) és dátum. `true`-val tér
@@ -101,15 +109,14 @@ class _AddLotDialogState extends State<_AddLotDialog> {
   String? _feeError;
   late bool _showFee = AppServices.of(context).portfolio.lots.any((l) => l.fee > 0);
 
-  /// A számla mezője (az automatikus kiegészítés saját vezérlője); amíg nincs
-  /// számla, egy „Számla megadása” gomb mutatja meg.
-  TextEditingController? _accountField;
+  /// A számla mezőbe írt szöveg; amíg nincs számla, a mezőt egy „Számla
+  /// megadása” gomb mutatja meg.
+  late String? _account = widget.account;
   late bool _showAccount = widget.account != null || AppServices.of(context).portfolio.accounts.isNotEmpty;
 
   /// Eladásnál a számla, amelyről elad: az előre megadott, különben ahol a legtöbb darab van.
   late String? _sellFrom = switch (widget.holdings) {
-    final h? when widget.account != null && h.containsKey(widget.account) => widget.account,
-    final h? when h.isNotEmpty => (h.entries.toList()..sort((a, b) => b.value.compareTo(a.value))).first.key,
+    final h? when h.isNotEmpty && (widget.account == null || !h.containsKey(widget.account)) => largestKey<String?>(h),
     _ => widget.account,
   };
 
@@ -142,9 +149,7 @@ class _AddLotDialogState extends State<_AddLotDialog> {
     setState(() {
       _quantityError = q == null || q <= 0
           ? l10n.portfolioInvalidNumber
-          : (max != null && q > max + 1e-9
-                ? l10n.portfolioSellTooMany(fmt.number(max, decimals: max == max.roundToDouble() ? 0 : 4))
-                : null);
+          : (max != null && q > max + 1e-9 ? l10n.portfolioSellTooMany(fmt.quantity(max)) : null);
       _priceError = p == null || p <= 0 ? l10n.portfolioInvalidNumber : null;
       _feeError = fee == null || fee < 0 ? l10n.portfolioInvalidNumber : null;
     });
@@ -156,7 +161,7 @@ class _AddLotDialogState extends State<_AddLotDialog> {
       currency: widget.currency,
       date: _date,
       sell: widget.sell,
-      account: widget.sell ? _sellFrom : (_showAccount ? (_accountField?.text ?? widget.account) : null),
+      account: widget.sell ? _sellFrom : (_showAccount ? _account : null),
       fee: fee!,
     );
     if (mounted) Navigator.of(context).pop(true);
@@ -232,7 +237,7 @@ class _AddLotDialogState extends State<_AddLotDialog> {
                         key: ValueKey('lot-sell-from-${e.key ?? '*'}'),
                         label: Text(
                           '${e.key ?? l10n.portfolioNoAccount} · '
-                          '${fmt.number(e.value, decimals: e.value == e.value.roundToDouble() ? 0 : 4)}',
+                          '${fmt.quantity(e.value)}',
                         ),
                         selected: e.key == _sellFrom,
                         onSelected: h.length > 1 ? (_) => setState(() => _sellFrom = e.key) : null,
@@ -243,28 +248,11 @@ class _AddLotDialogState extends State<_AddLotDialog> {
             ]
             // Számla (pl. TBSZ): a meglévők közül kiegészítve; nem kötelező.
             else if (_showAccount)
-              Autocomplete<String>(
-                initialValue: TextEditingValue(text: widget.account ?? ''),
-                optionsBuilder: (v) {
-                  final q = v.text.trim().toLowerCase();
-                  return AppServices.of(context).portfolio.accounts.where((a) => a.toLowerCase().contains(q));
-                },
-                fieldViewBuilder: (context, controller, focusNode, onSubmitted) {
-                  _accountField = controller;
-                  return TextField(
-                    key: const ValueKey('lot-account'),
-                    controller: controller,
-                    focusNode: focusNode,
-                    maxLength: PortfolioLot.maxAccountName,
-                    decoration: InputDecoration(
-                      labelText: l10n.portfolioAccount,
-                      hintText: l10n.portfolioAccountHint,
-                      counterText: '',
-                    ),
-                    // Az Enter a dialógust menti (nem a kiegészítés első javaslatát választja).
-                    onSubmitted: (_) => _submit(),
-                  );
-                },
+              AccountField(
+                fieldKey: const ValueKey('lot-account'),
+                initial: widget.account,
+                onChanged: (v) => _account = v,
+                onSubmitted: _submit,
               ),
             // Díj (jutalék) egy összegben: ha már van díjas tranzakció, rögtön látszik.
             if (_showFee) ...[

@@ -8,6 +8,7 @@ import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/date_picker_row.dart';
 import '../../widgets/metric_hint.dart';
+import 'account_field.dart';
 import 'add_lot_dialog.dart' show parseAmount;
 import 'dividend_forecast.dart';
 import 'goal_dialog.dart';
@@ -214,11 +215,14 @@ class DividendsCard extends StatelessWidget {
                               onPressed: () {
                                 // Csak a részvényt még tartó számlák közül (ha van ilyen rész).
                                 final holders = services.portfolio.heldByAccount(x.symbol).keys.toSet();
-                                final parts = [
+                                final candidates = {
                                   for (final e in x.byAccount.entries)
-                                    if (holders.contains(e.key)) e,
-                                ]..sort((a, b) => b.value.compareTo(a.value));
-                                final part = account != null ? null : parts.firstOrNull;
+                                    if (holders.contains(e.key)) e.key: e.value,
+                                };
+                                final mainKey = largestKey<String?>(candidates);
+                                final part = account != null || candidates.isEmpty
+                                    ? null
+                                    : (key: mainKey, value: candidates[mainKey]!);
                                 showAddDividendDialog(
                                   context,
                                   symbol: x.symbol,
@@ -363,13 +367,10 @@ class _AddDividendDialogState extends State<_AddDividendDialog> {
 
   /// A számla mezője (csak ha már van számla); alapból a megadott, különben ahol
   /// a részvényből a legtöbb van.
-  TextEditingController? _accountField;
-  late final String? _initialAccount =
+  late String? _account =
       widget.account ??
       switch (widget.symbol) {
-        final s? => (AppServices.of(
-          context,
-        ).portfolio.heldByAccount(s).entries.toList()..sort((a, b) => b.value.compareTo(a.value))).firstOrNull?.key,
+        final s? => AppServices.of(context).portfolio.mainAccountOf(s),
         _ => null,
       };
 
@@ -395,7 +396,7 @@ class _AddDividendDialogState extends State<_AddDividendDialog> {
     });
     if (_symbolError || _amountError != null || _currencyError) return;
     await AppServices.of(context).portfolio
-        .addDividend(symbol: symbol, amount: amount!, currency: ccy, date: _date, account: _accountField?.text);
+        .addDividend(symbol: symbol, amount: amount!, currency: ccy, date: _date, account: _account);
     if (mounted) Navigator.of(context).pop(true);
   }
 
@@ -455,28 +456,12 @@ class _AddDividendDialogState extends State<_AddDividendDialog> {
             const SizedBox(height: 12),
             DatePickerRow(label: l10n.portfolioDividendDate, date: _date, onChanged: (d) => setState(() => _date = d)),
             // Számla (ha már van): a meglévők közül kiegészítve; nem kötelező.
-            if (AppServices.of(context).portfolio.accounts case final accounts when accounts.isNotEmpty)
-              Autocomplete<String>(
-                initialValue: TextEditingValue(text: _initialAccount ?? ''),
-                optionsBuilder: (v) {
-                  final q = v.text.trim().toLowerCase();
-                  return accounts.where((a) => a.toLowerCase().contains(q));
-                },
-                fieldViewBuilder: (context, controller, focusNode, _) {
-                  _accountField = controller;
-                  return TextField(
-                    key: const ValueKey('dividend-account'),
-                    controller: controller,
-                    focusNode: focusNode,
-                    maxLength: PortfolioLot.maxAccountName,
-                    decoration: InputDecoration(
-                      labelText: l10n.portfolioAccount,
-                      hintText: l10n.portfolioAccountHint,
-                      counterText: '',
-                    ),
-                    onSubmitted: (_) => _submit(),
-                  );
-                },
+            if (AppServices.of(context).portfolio.accounts.isNotEmpty)
+              AccountField(
+                fieldKey: const ValueKey('dividend-account'),
+                initial: _account,
+                onChanged: (v) => _account = v,
+                onSubmitted: _submit,
               ),
           ],
         ),

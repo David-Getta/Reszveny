@@ -284,31 +284,7 @@ class _PortfolioBody extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 // Minta-portfólió: jól látható jelzés és egy gomb az eltávolításához.
-                if (AppServices.of(context).portfolio.hasSample)
-                  Card(
-                    key: const ValueKey('portfolio-sample'),
-                    color: AppPalette.of(context).accent.withValues(alpha: 0.12),
-                    child: Padding(
-                      padding: const EdgeInsets.fromLTRB(16, 10, 8, 10),
-                      child: Row(
-                        children: [
-                          Icon(Icons.science_outlined, size: 20, color: AppPalette.of(context).accent),
-                          const SizedBox(width: 10),
-                          Expanded(child: Text(l10n.portfolioSampleBanner)),
-                          TextButton(
-                            key: const ValueKey('portfolio-sample-remove'),
-                            onPressed: () => AppServices.of(context).portfolio.removeSample(),
-                            // A színezett sávon a szöveg színe olvashatóbb, mint a kiemelő szín.
-                            style: TextButton.styleFrom(foregroundColor: AppPalette.of(context).text),
-                            child: Text(
-                              l10n.portfolioSampleRemove,
-                              style: const TextStyle(fontWeight: FontWeight.w700),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
+                if (AppServices.of(context).portfolio.hasSample) const _SampleBanner(),
                 // Számlák (ha legalább egy tranzakciónak van): szűrés egy számlára.
                 if (AppServices.of(context).portfolio.accounts case final accounts when accounts.isNotEmpty) ...[
                   Wrap(
@@ -426,7 +402,7 @@ class _PortfolioBody extends StatelessWidget {
                 ),
                 // A célarányok az egész portfólióra szólnak: számla-nézetben nincs újrasúlyozás.
                 if (s.rows.where((r) => r.weight > 0).length > 1)
-                  AllocationCard(snapshot: s, fmt: fmt, targets: account == null, byAccount: account == null),
+                  AllocationCard(snapshot: s, fmt: fmt, wholePortfolio: account == null),
                 PortfolioHistoryCard(snapshot: s, account: account),
                 // Az AI-elemzés az egész portfólióról szól (készpénzzel, osztalékokkal), egy mentett példányban.
                 if (account == null) PortfolioReviewCard(snapshot: s),
@@ -484,7 +460,7 @@ class _PortfolioBody extends StatelessWidget {
                           if (i > 0) const Divider(height: 1),
                           ListTile(
                             title: Text(c.position.symbol, style: const TextStyle(fontWeight: FontWeight.w700)),
-                            subtitle: _SinceSale(position: c.position, fmt: fmt),
+                            subtitle: _SinceSale(key: ValueKey(c.position.symbol), position: c.position, fmt: fmt),
                             trailing: Row(
                               mainAxisSize: MainAxisSize.min,
                               children: [
@@ -543,32 +519,74 @@ List<Color> allocationColors(AppPalette p) => [
   p.muted,
 ];
 
+/// A minta-portfólió jól látható jelzése, egy gombbal az eltávolításához.
+class _SampleBanner extends StatelessWidget {
+  const _SampleBanner();
+
+  @override
+  Widget build(BuildContext context) {
+    final p = AppPalette.of(context);
+    final l10n = AppLocalizations.of(context);
+    return Card(
+      key: const ValueKey('portfolio-sample'),
+      color: p.accent.withValues(alpha: 0.12),
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(16, 10, 8, 10),
+        child: Row(
+          children: [
+            Icon(Icons.science_outlined, size: 20, color: p.accent),
+            const SizedBox(width: 10),
+            Expanded(child: Text(l10n.portfolioSampleBanner)),
+            TextButton(
+              key: const ValueKey('portfolio-sample-remove'),
+              onPressed: () => AppServices.of(context).portfolio.removeSample(),
+              // A színezett sávon a szöveg színe olvashatóbb, mint a kiemelő szín.
+              style: TextButton.styleFrom(foregroundColor: p.text),
+              child: Text(l10n.portfolioSampleRemove, style: const TextStyle(fontWeight: FontWeight.w700)),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
 /// A lezárt pozíció alcíme: „Minden darabot eladtál”, és ha van ár, az ár változása
 /// az utolsó eladás óta (megérte-e eladni) – a részvény saját pénznemében.
-class _SinceSale extends StatelessWidget {
-  const _SinceSale({required this.position, required this.fmt});
+class _SinceSale extends StatefulWidget {
+  const _SinceSale({super.key, required this.position, required this.fmt});
 
   final Position position;
   final Fmt fmt;
 
   @override
+  State<_SinceSale> createState() => _SinceSaleState();
+}
+
+class _SinceSaleState extends State<_SinceSale> {
+  // Egyszer kérjük le (a szimbólum a kulcs), nem minden újraépítéskor.
+  late final Future<StockQuote>? _quote = widget.position.sales.isEmpty
+      ? null
+      : AppServices.of(context).marketData.quote(widget.position.symbol);
+
+  @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
     final p = AppPalette.of(context);
-    final last = position.sales.lastOrNull;
+    final last = widget.position.sales.lastOrNull;
     return FutureBuilder<StockQuote>(
-      future: last == null ? null : AppServices.of(context).marketData.quote(position.symbol),
+      future: _quote,
       builder: (context, snap) {
         final q = snap.data;
         if (last == null || q == null || last.price <= 0) return Text(l10n.portfolioClosedNote);
         final pct = (q.price / last.price - 1) * 100;
         return Text.rich(
-          key: ValueKey('closed-since-${position.symbol}'),
+          key: ValueKey('closed-since-${widget.position.symbol}'),
           TextSpan(
             text: '${l10n.portfolioClosedNote} · ',
             children: [
               TextSpan(
-                text: l10n.portfolioSinceSale(fmt.percent(pct, withSign: true)),
+                text: l10n.portfolioSinceSale(widget.fmt.percent(pct, withSign: true)),
                 style: TextStyle(color: gainColor(p, pct), fontWeight: FontWeight.w600),
               ),
             ],
@@ -593,22 +611,14 @@ List<({String label, double weight})> groupWeights(List<PositionValue> rows, Str
 
 /// A megoszlás kártyája: pozíciók, szektorok vagy devizák szerint.
 class AllocationCard extends StatefulWidget {
-  const AllocationCard({
-    super.key,
-    required this.snapshot,
-    required this.fmt,
-    this.targets = true,
-    this.byAccount = false,
-  });
+  const AllocationCard({super.key, required this.snapshot, required this.fmt, this.wholePortfolio = true});
 
   final PortfolioSnapshot snapshot;
   final Fmt fmt;
 
-  /// A célarányok és az újrasúlyozás (csak az egész portfólió nézetében).
-  final bool targets;
-
-  /// Megoszlás számlák szerint is (az egész portfólió nézetében, ha van számla).
-  final bool byAccount;
+  /// Az egész portfólió nézete (nem egy számláé): csak itt vannak célarányok és
+  /// újrasúlyozás, és megoszlás számlák szerint (ha van számla).
+  final bool wholePortfolio;
 
   List<PositionValue> get rows => snapshot.rows;
 
@@ -680,7 +690,7 @@ class _AllocationCardState extends State<AllocationCard> {
     final theme = Theme.of(context);
     final locale = Localizations.localeOf(context);
     final store = AppServices.of(context).portfolio;
-    final accounts = widget.byAccount && store.accounts.isNotEmpty;
+    final accounts = widget.wholePortfolio && store.accounts.isNotEmpty;
     // Ha közben megszűnt az utolsó számla, a pozíciók szerinti nézet marad.
     final by = _by == AllocationBy.accounts && !accounts ? AllocationBy.positions : _by;
     return Card(
@@ -726,7 +736,7 @@ class _AllocationCardState extends State<AllocationCard> {
                     entries: _withCash(groupWeights(widget.rows, (r) => r.position.symbol)),
                     fmt: widget.fmt,
                   ),
-                  if (widget.targets) _Targets(snapshot: widget.snapshot, fmt: widget.fmt),
+                  if (widget.wholePortfolio) _Targets(snapshot: widget.snapshot, fmt: widget.fmt),
                 ],
               ),
               AllocationBy.currencies => AllocationBar(
@@ -906,6 +916,12 @@ class _ContributionDialog extends StatefulWidget {
 class _ContributionDialogState extends State<_ContributionDialog> {
   final _amount = TextEditingController();
 
+  /// A céllal bíró, de most ár nélküli pozíciók: kimaradnak – ezt kimondjuk.
+  late final _missing = [
+    for (final r in widget.snapshot.rows)
+      if (!r.inTotal && widget.targets.containsKey(r.position.symbol.toUpperCase())) r.position.symbol,
+  ];
+
   @override
   void dispose() {
     _amount.dispose();
@@ -943,17 +959,12 @@ class _ContributionDialogState extends State<_ContributionDialog> {
                 decoration: InputDecoration(labelText: l10n.contributionAmount(ccy)),
                 onChanged: (_) => setState(() {}),
               ),
-              // A céllal bíró, de most ár nélküli pozíciók kimaradnak – ezt kimondjuk.
-              if ([
-                    for (final r in widget.snapshot.rows)
-                      if (!r.inTotal && widget.targets.containsKey(r.position.symbol.toUpperCase())) r.position.symbol,
-                  ]
-                  case final missing when missing.isNotEmpty)
+              if (_missing.isNotEmpty)
                 Padding(
                   key: const ValueKey('contribution-missing'),
                   padding: const EdgeInsets.only(top: 8),
                   child: Text(
-                    l10n.contributionMissing(missing.join(', ')),
+                    l10n.contributionMissing(_missing.join(', ')),
                     style: theme.textTheme.bodySmall?.copyWith(color: p.negative),
                   ),
                 ),
@@ -1310,7 +1321,7 @@ class _PositionTile extends StatelessWidget {
                 children: [
                   Text(pos.symbol, style: const TextStyle(fontWeight: FontWeight.w700)),
                   Text(
-                    '${fmt.number(pos.quantity, decimals: pos.quantity == pos.quantity.roundToDouble() ? 0 : 4)} × '
+                    '${fmt.quantity(pos.quantity)} × '
                     '${fmt.money(row.price, ccy)} · ${l10n.portfolioAvgCost(fmt.money(pos.averageCost, ccy, showCurrency: false))}',
                     style: theme.textTheme.bodySmall?.copyWith(color: p.muted),
                   ),
@@ -1383,7 +1394,7 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
       final services = AppServices.of(context);
       final p = AppPalette.of(context);
       final fmt = Fmt(Localizations.localeOf(context).toString(), na: l10n.notAvailable);
-      String qty(double q) => fmt.number(q, decimals: q == q.roundToDouble() ? 0 : 4);
+      String qty(double q) => fmt.quantity(q);
       return ListenableBuilder(
         listenable: Listenable.merge([services.portfolio, removed, removedSplit]),
         builder: (context, _) {
@@ -1392,10 +1403,7 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
           final lots = services.portfolio.adjustedLotsIn(account).where((l) => l.symbol == position.symbol).toList()
             ..sort((a, b) => (b.date ?? DateTime(0)).compareTo(a.date ?? DateTime(0)));
           // A részvény kapott osztalékai (számla-nézetben csak a számláé).
-          final dividends = [
-            for (final d in services.portfolio.dividendsOf(position.symbol))
-              if (account == null || d.account == account) d,
-          ];
+          final dividends = services.portfolio.dividendsIn(account).where((d) => d.symbol == position.symbol).toList();
           // A pozíció a tárolóból (számla-nézetben a teljes FIFO számlára eső része), hogy a
           // lap ugyanazt a darabszámot mutassa, mint az oldal.
           final now =
@@ -1704,35 +1712,33 @@ class _GoalBar extends StatelessWidget {
     final l10n = AppLocalizations.of(context);
     return ListenableBuilder(
       listenable: prefs,
-      builder: (context, _) => GoalProgress(
-        keyPrefix: 'goal',
-        goal: prefs.portfolioGoal,
-        currency: snapshot.currency,
-        current: snapshot.totalValue,
-        setLabel: l10n.portfolioGoalSet,
-        dialogTitle: l10n.portfolioGoalTitle,
-        dialogLabel: l10n.portfolioTotalValue,
-        text: (ratio, goal) => ratio >= 1
-            ? l10n.portfolioGoalReached(fmt.money(goal.amount, goal.currency))
-            : l10n.portfolioGoalProgress(fmt.percent(ratio * 100, decimals: 0), fmt.money(goal.amount, goal.currency)),
-        onChanged: prefs.setPortfolioGoal,
-        fmt: fmt,
-        // A mostani éves hozammal mikor érhető el (befizetés nélkül, kamatos kamattal).
-        footnote: switch ((prefs.portfolioGoal, snapshot.annualReturn)) {
-          // Az éves hozam a részvényeké: a készpénz nem nő vele.
-          (final g?, final r?) when g.currency == snapshot.currency => switch (goalYear(
-            snapshot.value,
-            g.amount,
-            r,
-            DateTime.now(),
-            cash: snapshot.cash,
-          )) {
-            final y? => l10n.portfolioGoalEta(fmt.percent(r * 100, withSign: true), '$y'),
-            _ => null,
-          },
-          _ => null,
-        },
-      ),
+      builder: (context, _) {
+        final goal = prefs.portfolioGoal;
+        final r = snapshot.annualReturn;
+        // A mostani éves hozammal mikor érhető el (befizetés nélkül, kamatos kamattal);
+        // az éves hozam a részvényeké, a készpénz nem nő vele.
+        final year = goal != null && r != null && goal.currency == snapshot.currency
+            ? goalYear(snapshot.value, goal.amount, r, DateTime.now(), cash: snapshot.cash)
+            : null;
+        return GoalProgress(
+          keyPrefix: 'goal',
+          goal: goal,
+          currency: snapshot.currency,
+          current: snapshot.totalValue,
+          setLabel: l10n.portfolioGoalSet,
+          dialogTitle: l10n.portfolioGoalTitle,
+          dialogLabel: l10n.portfolioTotalValue,
+          text: (ratio, goal) => ratio >= 1
+              ? l10n.portfolioGoalReached(fmt.money(goal.amount, goal.currency))
+              : l10n.portfolioGoalProgress(
+                  fmt.percent(ratio * 100, decimals: 0),
+                  fmt.money(goal.amount, goal.currency),
+                ),
+          onChanged: prefs.setPortfolioGoal,
+          fmt: fmt,
+          footnote: year == null ? null : l10n.portfolioGoalEta(fmt.percent(r! * 100, withSign: true), '$year'),
+        );
+      },
     );
   }
 }

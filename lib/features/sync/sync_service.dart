@@ -11,6 +11,12 @@ import '../alerts/price_alert.dart';
 import '../notes/notes_store.dart';
 import '../portfolio/portfolio_store.dart';
 
+/// A csomag egy listája térképekként (a hibás elemek kimaradnak).
+List<Map<String, dynamic>> _maps(Object? v) => [
+  for (final e in (v is List ? v : const []))
+    if (e is Map) e.cast<String, dynamic>(),
+];
+
 /// A portfólió, a kedvencek, a riasztások és a jegyzetek szinkronja az
 /// e-mailes fiókkal, így minden eszközön ugyanazok. Az utolsó írás nyer; ha
 /// mindkét oldalon volt változás (vagy ezen az eszközön most lép be először),
@@ -149,14 +155,10 @@ class SyncService extends ChangeNotifier {
   /// Két csomag uniója: a helyi elemek elöl, azonos azonosítónál a helyi
   /// marad; jegyzetnél az újabb.
   static Map<String, dynamic> merge(Map<String, dynamic> local, Map<String, dynamic> remote) {
-    List<Map<String, dynamic>> maps(Object? v) => [
-      for (final e in (v is List ? v : const []))
-        if (e is Map) e.cast<String, dynamic>(),
-    ];
     List<Map<String, dynamic>> byId(Object? a, Object? b) {
       final seen = <String>{};
       return [
-        for (final e in [...maps(a), ...maps(b)])
+        for (final e in [..._maps(a), ..._maps(b)])
           if (seen.add('${e['id']}')) e,
       ];
     }
@@ -174,7 +176,7 @@ class SyncService extends ChangeNotifier {
     // egy már kiküldött riasztás ne éledjen újra.
     final alertsMerged = <Map<String, dynamic>>[];
     final alertIndex = <String, int>{};
-    for (final a in [...maps(local['alerts']), ...maps(remote['alerts'])]) {
+    for (final a in [..._maps(local['alerts']), ..._maps(remote['alerts'])]) {
       final i = alertIndex['${a['id']}'];
       if (i == null) {
         alertIndex['${a['id']}'] = alertsMerged.length;
@@ -280,56 +282,32 @@ class SyncService extends ChangeNotifier {
     return [for (final l in merged.values) l.toJson()];
   }
 
-  /// Maradt-e helyi számla vagy díj olyan tételen, amelyet a csomag nélküle hozott.
-  bool _keptLocalFields(Map<String, dynamic> data) {
-    final remote = {
-      for (final j in (data['lots'] is List ? data['lots'] as List : const []))
-        if (j is Map) '${j['id']}': j,
-    };
-    final remoteDividends = {
-      for (final j in (data['dividends'] is List ? data['dividends'] as List : const []))
-        if (j is Map) '${j['id']}': j,
-    };
-    return portfolio.lots.any(
-          (l) =>
-              (l.account != null && PortfolioLot.cleanAccount(remote[l.id]?['account']) == null) ||
-              (l.fee > 0 && PortfolioLot.cleanFee(remote[l.id]?['fee']) == 0),
-        ) ||
-        // Régi csomagban nincs osztaléklista: akkor a helyi marad, nincs mit visszaküldeni.
-        (data['dividends'] is List &&
-            portfolio.dividends.any(
-              (d) => d.account != null && PortfolioLot.cleanAccount(remoteDividends[d.id]?['account']) == null,
-            ));
-  }
-
-  Future<void> _apply(Map<String, dynamic> data) async {
+  /// A csomag átvétele; igaz, ha egy tételen megmaradt a helyi számla vagy díj.
+  Future<bool> _apply(Map<String, dynamic> data) async {
     _applying = true;
     _lastJson = null;
     try {
-      await applyTo(data, preferences: preferences, portfolio: portfolio, alerts: alerts, notes: notes);
+      return await applyTo(data, preferences: preferences, portfolio: portfolio, alerts: alerts, notes: notes);
     } finally {
       _applying = false;
       _lastJson = jsonEncode(snapshot());
     }
   }
 
-  /// Egy csomag átvétele a helyi tárolókba (a meglévők helyére).
-  static Future<void> applyTo(
+  /// Egy csomag átvétele a helyi tárolókba (a meglévők helyére). Igaz, ha egy
+  /// tételen megmaradt a helyi számla vagy díj, mert a csomag nélküle hozta (ilyenkor
+  /// a helyi állapotot vissza kell küldeni).
+  static Future<bool> applyTo(
     Map<String, dynamic> data, {
     required AppPreferences preferences,
     required PortfolioStore portfolio,
     required AlertStore alerts,
     required NotesStore notes,
   }) async {
-    List<Map<String, dynamic>> maps(Object? v) => [
-      for (final e in (v is List ? v : const []))
-        if (e is Map) e.cast<String, dynamic>(),
-    ];
-    await preferences.setFavorites([for (final f in (data['favorites'] as List? ?? const [])) '$f']);
     // Régi csomagban nincs felvételi nap: akkor a helyiek maradnak (a kedvencekre szűkítve).
-    if (data['favorite_since'] is Map) {
-      await preferences.setFavoriteSince(AppPreferences.parseFavoriteSince(data['favorite_since']));
-    }
+    await preferences.setFavorites([
+      for (final f in (data['favorites'] as List? ?? const [])) '$f',
+    ], since: AppPreferences.parseFavoriteSince(data['favorite_since']));
     // Régi csomagban nincs ilyen mező: akkor a helyi listák maradnak.
     if (data['watch_lists'] is List) {
       await preferences.setWatchLists([for (final l in data['watch_lists'] as List) ?WatchList.fromJson(l)]);
@@ -348,37 +326,47 @@ class SyncService extends ChangeNotifier {
     await preferences.setWeeklyDigest(data['weekly_digest'] == true);
     // A számlát és a díjat nem ismerő (régebbi) app a tételt nélkülük tölti vissza: azonos
     // tételnél a helyi számla és díj marad (a felületen utólag egyik sem törölhető).
+    var kept = false;
+    Map<String, dynamic> keep(Map<String, dynamic> j, Map<String, Object> fields) {
+      if (fields.isNotEmpty) kept = true;
+      return {...j, ...fields};
+    }
+
     final local = {for (final l in portfolio.lots) l.id: l};
     await portfolio.replaceAll([
-      for (final j in maps(data['lots']))
-        ?PortfolioLot.fromJson({
-          ...j,
-          if (local['${j['id']}'] case final l?) ...{
-            if (l.account != null && PortfolioLot.cleanAccount(j['account']) == null) 'account': l.account,
-            if (l.fee > 0 && PortfolioLot.cleanFee(j['fee']) == 0) 'fee': l.fee,
-          },
-        }),
+      for (final j in _maps(data['lots']))
+        ?PortfolioLot.fromJson(
+          keep(j, {
+            if (local['${j['id']}'] case final l?) ...{
+              if (l.account case final a? when PortfolioLot.cleanAccount(j['account']) == null) 'account': a,
+              if (l.fee > 0 && PortfolioLot.cleanFee(j['fee']) == 0) 'fee': l.fee,
+            },
+          }),
+        ),
     ]);
     // Régi csomagban (korábbi app) nincs osztaléklista: akkor a helyi marad.
     if (data['dividends'] is List) {
       // Az osztalék számlája is megmarad, ha egy régebbi app nélküle töltötte vissza.
       final localDividend = {for (final d in portfolio.dividends) d.id: d};
       await portfolio.replaceAllDividends([
-        for (final j in maps(data['dividends']))
-          ?DividendRecord.fromJson({
-            ...j,
-            if (localDividend['${j['id']}']?.account case final a? when PortfolioLot.cleanAccount(j['account']) == null)
-              'account': a,
-          }),
+        for (final j in _maps(data['dividends']))
+          ?DividendRecord.fromJson(
+            keep(j, {
+              if (localDividend['${j['id']}']?.account case final a?
+                  when PortfolioLot.cleanAccount(j['account']) == null)
+                'account': a,
+            }),
+          ),
       ]);
     }
     if (data['splits'] is List) {
-      await portfolio.replaceAllSplits([for (final j in maps(data['splits'])) ?SplitRecord.fromJson(j)]);
+      await portfolio.replaceAllSplits([for (final j in _maps(data['splits'])) ?SplitRecord.fromJson(j)]);
     }
-    await alerts.replaceAll([for (final j in maps(data['alerts'])) ?PriceAlert.fromJson(j)]);
+    await alerts.replaceAll([for (final j in _maps(data['alerts'])) ?PriceAlert.fromJson(j)]);
     await notes.replaceAll({
       for (final e in (data['notes'] as Map? ?? const {}).entries) '${e.key}': ?StockNote.fromJson(e.value),
     });
+    return kept;
   }
 
   Future<void> _push(Map<String, dynamic> data) async {
@@ -410,11 +398,11 @@ class SyncService extends ChangeNotifier {
         await _apply(merged);
         await _push(merged);
       } else if (remote.updatedAt != null && (_last == null || remote.updatedAt!.isAfter(_last!))) {
-        await _apply(data);
+        final kept = await _apply(data);
         _last = remote.updatedAt;
         (await SharedPreferences.getInstance()).setString(_lastKey, _last!.toIso8601String());
         // Régebbi app számla vagy díj nélkül töltötte vissza a tételeket: a megtartottak visszamennek.
-        if (_keptLocalFields(data)) await _push(snapshot());
+        if (kept) await _push(snapshot());
       } else if (_dirty) {
         await _push(snapshot());
       }

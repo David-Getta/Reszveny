@@ -34,7 +34,7 @@ class PositionCard extends StatelessWidget {
         final row = PositionValue(position: pos, price: q?.price, dayChange: q?.change, rate: 1);
         final ccy = pos.currency;
         final now = DateTime.now();
-        String qty(double v) => fmt.number(v, decimals: v == v.roundToDouble() ? 0 : 4);
+        String qty(double v) => fmt.quantity(v);
         return SectionCard(
           title: l10n.portfolioYourPosition,
           trailing: TextButton(

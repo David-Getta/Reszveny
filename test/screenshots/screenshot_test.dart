@@ -1178,11 +1178,13 @@ void main() {
 
   testWidgets('favorites page and news on a phone (hungarian)', (tester) async {
     final s = _services(locale: const Locale('hu'));
-    await s.preferences.setFavorites(['AAPL', 'MSFT', 'NVDA', 'OTP']);
     // „Mióta figyeled”: a felvétel napjai.
     final today = DateTime.now();
     DateTime ago(int days) => DateTime(today.year, today.month, today.day - days);
-    await s.preferences.setFavoriteSince({'AAPL': ago(120), 'NVDA': ago(45), 'OTP': ago(200)});
+    await s.preferences.setFavorites(
+      ['AAPL', 'MSFT', 'NVDA', 'OTP'],
+      since: {'AAPL': ago(120), 'NVDA': ago(45), 'OTP': ago(200)},
+    );
     await s.preferences.addWatchList('Tech');
     await s.preferences.addWatchList('Osztalék');
     await s.preferences.toggleInList('Tech', 'NVDA');

@@ -62,6 +62,39 @@ List<SummaryRow> annualSummary(PortfolioStore store, int year) {
   });
 }
 
+/// Egy összesítő-sor a lapon és a megosztott szövegben: felirat, érték, a
+/// nyereség (a színezéshez) és a teszt-kulcs.
+typedef _Line = ({String label, String value, double? gain, String? key});
+
+/// A sor fejléce: számlák esetén a számla (a számla nélküli rész is megnevezve) és a pénznem.
+String _heading(AppLocalizations l10n, SummaryRow r, bool withAccounts) =>
+    [if (withAccounts) r.account ?? l10n.portfolioNoAccount, r.currency].join(' · ');
+
+List<_Line> _lines(AppLocalizations l10n, Fmt fmt, SummaryRow r) {
+  final id = '${r.account ?? '*'}-${r.currency}';
+  final realized = r.proceeds - r.cost;
+  return [
+    if (r.sales > 0) ...[
+      (label: l10n.portfolioProceeds, value: fmt.money(r.proceeds, r.currency), gain: null, key: null),
+      (label: l10n.portfolioCostBasis, value: fmt.money(r.cost, r.currency), gain: null, key: null),
+      (
+        label: l10n.portfolioRealized,
+        value: fmt.money(realized, r.currency, withSign: true),
+        gain: realized,
+        key: 'annual-summary-realized-$id',
+      ),
+    ],
+    if (r.dividends > 0)
+      (
+        label: l10n.portfolioDividendsReceived,
+        value: fmt.money(r.dividends, r.currency),
+        gain: null,
+        key: 'annual-summary-dividends-$id',
+      ),
+    if (r.fees > 0) (label: l10n.portfolioFeesPaid, value: fmt.money(r.fees, r.currency), gain: null, key: null),
+  ];
+}
+
 /// Az éves összesítő lapja: évválasztó, számlánként és pénznemenként a
 /// realizált nyereség (bevétel és bekerülési érték), a kapott osztalék és a
 /// fizetett díj; szövegként megosztható.
@@ -85,18 +118,14 @@ class _AnnualSummarySheetState extends State<_AnnualSummarySheet> {
   /// A sorok szövegként (a megosztáshoz): év, számla, pénznem és az összegek.
   String _text(AppLocalizations l10n, Fmt fmt, int year, List<SummaryRow> rows) {
     final b = StringBuffer('${l10n.portfolioAnnualSummary} $year\n');
-    // Ugyanaz a fejléc, mint a lapon (számlák esetén a számla nélküli rész is megnevezve).
     final withAccounts = rows.any((r) => r.account != null);
     for (final r in rows) {
-      b.writeln();
-      b.writeln([if (withAccounts) r.account ?? l10n.portfolioNoAccount, r.currency].join(' · '));
-      if (r.sales > 0) {
-        b.writeln('${l10n.portfolioProceeds}: ${fmt.money(r.proceeds, r.currency)}');
-        b.writeln('${l10n.portfolioCostBasis}: ${fmt.money(r.cost, r.currency)}');
-        b.writeln('${l10n.portfolioRealized}: ${fmt.money(r.proceeds - r.cost, r.currency, withSign: true)}');
+      b
+        ..writeln()
+        ..writeln(_heading(l10n, r, withAccounts));
+      for (final l in _lines(l10n, fmt, r)) {
+        b.writeln('${l.label}: ${l.value}');
       }
-      if (r.dividends > 0) b.writeln('${l10n.portfolioDividendsReceived}: ${fmt.money(r.dividends, r.currency)}');
-      if (r.fees > 0) b.writeln('${l10n.portfolioFeesPaid}: ${fmt.money(r.fees, r.currency)}');
     }
     b.writeln();
     b.writeln(l10n.portfolioAnnualSummaryNote);
@@ -180,28 +209,21 @@ class _AnnualSummarySheetState extends State<_AnnualSummarySheet> {
                   for (final r in rows) ...[
                     const SizedBox(height: 14),
                     Text(
-                      [if (withAccounts) r.account ?? l10n.portfolioNoAccount, r.currency].join(' · '),
+                      _heading(l10n, r, withAccounts),
                       key: ValueKey('annual-summary-${r.account ?? '*'}-${r.currency}'),
                       style: theme.textTheme.labelLarge,
                     ),
                     const Divider(height: 10),
-                    if (r.sales > 0) ...[
-                      line(l10n.portfolioProceeds, fmt.money(r.proceeds, r.currency)),
-                      line(l10n.portfolioCostBasis, fmt.money(r.cost, r.currency)),
+                    for (final l in _lines(l10n, fmt, r))
                       line(
-                        l10n.portfolioRealized,
-                        fmt.money(r.proceeds - r.cost, r.currency, withSign: true),
-                        color: gainColor(p, r.proceeds - r.cost),
-                        key: ValueKey('annual-summary-realized-${r.account ?? '*'}-${r.currency}'),
+                        l.label,
+                        l.value,
+                        color: l.gain == null ? null : gainColor(p, l.gain!),
+                        key: switch (l.key) {
+                          final k? => ValueKey(k),
+                          _ => null,
+                        },
                       ),
-                    ],
-                    if (r.dividends > 0)
-                      line(
-                        l10n.portfolioDividendsReceived,
-                        fmt.money(r.dividends, r.currency),
-                        key: ValueKey('annual-summary-dividends-${r.account ?? '*'}-${r.currency}'),
-                      ),
-                    if (r.fees > 0) line(l10n.portfolioFeesPaid, fmt.money(r.fees, r.currency)),
                   ],
                   const SizedBox(height: 14),
                   Text(l10n.portfolioAnnualSummaryNote, style: theme.textTheme.bodySmall?.copyWith(color: p.muted)),

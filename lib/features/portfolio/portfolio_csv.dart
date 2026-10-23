@@ -236,9 +236,12 @@ String _separator(String line) {
 final _sellWords = RegExp(r'(^|[^\p{L}])(eladás|verkauf)', unicode: true);
 final _buyWords = RegExp(r'(^|[^\p{L}])(vétel|vásárlás|kauf)', unicode: true);
 
-/// Fejléc nélküli sorban a hetedik oszlop csak akkor számla, ha betű is van benne
-/// (egy összeg-oszlop, pl. „1500.00” vagy „$1,500”, nem az).
 final _accountLike = RegExp(r'\p{L}', unicode: true);
+
+/// Fejléc nélküli sorban a hetedik oszlop a számla (saját export), de csak ha betű
+/// is van benne, és nem szám (egy összeg-oszlop, pl. „1500.00” vagy „$1,500”, nem az).
+String? _positionalAccount(List<String> f) =>
+    f.length > 6 && _accountLike.hasMatch(f[6]) && parseDecimal(f[6]) == null ? PortfolioLot.cleanAccount(f[6]) : null;
 
 /// A bróker-exportok oszlopnevei (kisbetűvel, írásjelek, ékezetes betűk és szóközök
 /// nélkül – így a magyar „Mennyiség” „mennyisg”, a német „Stück” „stck”). A saját
@@ -501,8 +504,7 @@ CsvImport _positional(List<String> lines, String defaultCurrency) {
             amount: amount,
             currency: ccy,
             date: f.length > 4 ? _date(f[4]) : null,
-            // Fejléc nélkül a hetedik oszlop a számla (saját export).
-            account: f.length > 6 && _accountLike.hasMatch(f[6]) ? PortfolioLot.cleanAccount(f[6]) : null,
+            account: _positionalAccount(f),
           ),
         );
       } else {
@@ -542,10 +544,7 @@ CsvImport _positional(List<String> lines, String defaultCurrency) {
         currency: ccy,
         date: date,
         sell: sell,
-        // Fejléc nélkül a hetedik oszlop a számla (saját export) – ha nem szám (pl. egy összeg-oszlop).
-        account: f.length > 6 && _accountLike.hasMatch(f[6]) && parseDecimal(f[6]) == null
-            ? PortfolioLot.cleanAccount(f[6])
-            : null,
+        account: _positionalAccount(f),
       ),
     );
   }

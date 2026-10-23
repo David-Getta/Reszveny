@@ -125,10 +125,7 @@ class _WatchlistPageState extends State<WatchlistPage> {
           content: Text('$symbol · ${l10n.removeFromFavorites}'),
           action: SnackBarAction(
             label: l10n.undo,
-            onPressed: () async {
-              await prefs.setFavorites(before);
-              if (since != null) await prefs.restoreFavoriteSince(symbol, since);
-            },
+            onPressed: () => prefs.setFavorites(before, since: {symbol.toUpperCase(): ?since}),
           ),
         ),
       );

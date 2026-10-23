@@ -207,17 +207,13 @@ class SplitRecord {
 /// a vétel napja és számlája.
 typedef OpenLot = ({double quantity, double price, DateTime? date, String? account});
 
+/// A legnagyobb értékű kulcs (pl. a legtöbb darabot tartó számla); `null`, ha üres.
+K? largestKey<K>(Map<K, double> m) => m.isEmpty ? null : m.entries.reduce((a, b) => b.value > a.value ? b : a).key;
+
 /// Egy eladás (része), amelynek a saját számláján nem volt vétel.
 typedef _Unmatched = ({DateTime? date, double quantity, double price, double net, String? account});
 
-typedef _Fifo = ({
-  List<OpenLot> open,
-  double realized,
-  double sold,
-  Map<int?, double> byYear,
-  List<Sale> sales,
-  List<_Unmatched> unmatched,
-});
+typedef _Fifo = ({List<OpenLot> open, List<Sale> sales, List<_Unmatched> unmatched});
 
 /// Egy eladás a FIFO szerinti bekerülési értékkel (az adóbevalláshoz).
 typedef Sale = ({DateTime? date, double quantity, double price, double proceeds, double cost, String? account});
@@ -252,27 +248,39 @@ class Position {
   static int _byDate(DateTime? a, DateTime? b) => (a ?? DateTime(0)).compareTo(b ?? DateTime(0));
   static int _saleOrder(Sale a, Sale b) => (a.date ?? DateTime(9999)).compareTo(b.date ?? DateTime(9999));
 
-  /// Egy számla része a teljes FIFO-ból (a realizált nyereség az eladásaiból).
-  static _Fifo _subset(_Fifo f, String? account) {
-    final sales = [
+  /// Egy számla része a teljes FIFO-ból.
+  static _Fifo _subset(_Fifo f, String? account) => (
+    open: [
+      for (final o in f.open)
+        if (o.account == account) o,
+    ],
+    sales: [
       for (final s in f.sales)
         if (s.account == account) s,
-    ];
-    final byYear = <int?, double>{};
-    for (final s in sales) {
-      byYear[s.date?.year] = (byYear[s.date?.year] ?? 0) + s.proceeds - s.cost;
+    ],
+    unmatched: const [],
+  );
+
+  /// A legrégebbi tételekből [quantity] darab elvétele (a [notAfter] nap után
+  /// vett tételt átugorva): az elvett darabszám és a bekerülési értéke.
+  static ({double matched, double cost}) _consume(List<OpenLot> open, double quantity, {DateTime? notAfter}) {
+    var rest = quantity, cost = 0.0, i = 0;
+    while (rest > 1e-9 && i < open.length) {
+      final o = open[i];
+      if (notAfter != null && o.date != null && o.date!.isAfter(notAfter)) {
+        i++;
+        continue;
+      }
+      final take = rest < o.quantity ? rest : o.quantity;
+      cost += take * o.price;
+      rest -= take;
+      if (o.quantity - take <= 1e-9) {
+        open.removeAt(i);
+      } else {
+        open[i] = (quantity: o.quantity - take, price: o.price, date: o.date, account: o.account);
+      }
     }
-    return (
-      open: [
-        for (final o in f.open)
-          if (o.account == account) o,
-      ],
-      realized: sales.fold(0.0, (a, s) => a + s.proceeds - s.cost),
-      sold: sales.fold(0.0, (a, s) => a + s.quantity),
-      byYear: byYear,
-      sales: sales,
-      unmatched: const [],
-    );
+    return (matched: quantity - rest, cost: cost);
   }
 
   /// A FIFO számlánként fut, ahogy a bróker is számol (egyik számla eladása nem
@@ -284,17 +292,9 @@ class Position {
     }
     if (byAccount.length <= 1) return _fifoOf(lots);
     final parts = [for (final l in byAccount.values) _fifoOf(l)];
-    final byYear = <int?, double>{};
-    for (final p in parts) {
-      for (final e in p.byYear.entries) {
-        byYear[e.key] = (byYear[e.key] ?? 0) + e.value;
-      }
-    }
     // A birtokolt tételek a vétel napja szerint (dátum nélküli elöl).
     final open = [for (final p in parts) ...p.open]..sort((a, b) => _byDate(a.date, b.date));
     final sales = [for (final p in parts) ...p.sales];
-    var realized = parts.fold(0.0, (s, p) => s + p.realized);
-    var sold = parts.fold(0.0, (s, p) => s + p.sold);
     // Ha egy eladásnak a saját számláján nincs (elég) vétele – pl. egy régebbi
     // appban számla nélkül rögzített eladás TBSZ-es vételre –, a maradék a többi
     // számla legrégebbi (az eladás előtti) tételeiből fogy: a darabszám így
@@ -303,50 +303,19 @@ class Position {
       ..sort((a, b) => (a.date ?? DateTime(9999)).compareTo(b.date ?? DateTime(9999)));
     final left = <_Unmatched>[];
     for (final u in unmatched) {
-      var rest = u.quantity, cost = 0.0;
-      var i = 0;
-      while (rest > 1e-9 && i < open.length) {
-        final o = open[i];
-        if (u.date != null && o.date != null && o.date!.isAfter(u.date!)) {
-          i++;
-          continue;
-        }
-        final take = rest < o.quantity ? rest : o.quantity;
-        cost += take * o.price;
-        rest -= take;
-        if (o.quantity - take <= 1e-9) {
-          open.removeAt(i);
-        } else {
-          open[i] = (quantity: o.quantity - take, price: o.price, date: o.date, account: o.account);
-        }
+      final (:matched, :cost) = _consume(open, u.quantity, notAfter: u.date);
+      if (matched > 1e-9) sales.add(_sale(u, matched, cost));
+      if (u.quantity - matched > 1e-9) {
+        left.add((date: u.date, quantity: u.quantity - matched, price: u.price, net: u.net, account: u.account));
       }
-      final matched = u.quantity - rest;
-      if (matched > 1e-9) {
-        final gain = matched * u.net - cost;
-        realized += gain;
-        sold += matched;
-        byYear[u.date?.year] = (byYear[u.date?.year] ?? 0) + gain;
-        sales.add((
-          date: u.date,
-          quantity: matched,
-          price: u.price,
-          proceeds: matched * u.net,
-          cost: cost,
-          account: u.account,
-        ));
-      }
-      if (rest > 1e-9) left.add((date: u.date, quantity: rest, price: u.price, net: u.net, account: u.account));
     }
     // Az eladások időrendben (dátum nélküli a végén).
-    return (
-      open: open,
-      realized: realized,
-      sold: sold,
-      byYear: byYear,
-      sales: sales..sort(_saleOrder),
-      unmatched: left,
-    );
+    return (open: open, sales: sales..sort(_saleOrder), unmatched: left);
   }
+
+  /// Egy eladás [matched] darabja a FIFO szerinti [cost] bekerülési értékkel.
+  static Sale _sale(_Unmatched t, double matched, double cost) =>
+      (date: t.date, quantity: matched, price: t.price, proceeds: matched * t.net, cost: cost, account: t.account);
 
   /// Egy számla (vagy a számla nélküli tételek) FIFO-ja.
   static _Fifo _fifoOf(List<PortfolioLot> lots) {
@@ -361,8 +330,6 @@ class Position {
     }
 
     final open = <OpenLot>[];
-    var realized = 0.0, sold = 0.0;
-    final byYear = <int?, double>{};
     final sales = <Sale>[];
     final unmatched = <_Unmatched>[];
     for (final t in [...lots]..sort(order)) {
@@ -372,37 +339,26 @@ class Position {
         open.add((quantity: t.quantity, price: t.price + t.fee / t.quantity, date: t.date, account: t.account));
         continue;
       }
-      final net = t.price - t.fee / t.quantity;
-      var left = t.quantity;
-      var cost = 0.0;
-      while (left > 1e-9 && open.isNotEmpty) {
-        final first = open.first;
-        final take = left < first.quantity ? left : first.quantity;
-        cost += take * first.price;
-        realized += take * (net - first.price);
-        byYear[t.date?.year] = (byYear[t.date?.year] ?? 0) + take * (net - first.price);
-        sold += take;
-        left -= take;
-        if (first.quantity - take <= 1e-9) {
-          open.removeAt(0);
-        } else {
-          open[0] = (quantity: first.quantity - take, price: first.price, date: first.date, account: first.account);
-        }
-      }
-      final matched = t.quantity - left;
-      if (matched > 1e-9) {
-        sales.add((
+      final sale = (
+        date: t.date,
+        quantity: t.quantity,
+        price: t.price,
+        net: t.price - t.fee / t.quantity,
+        account: t.account,
+      );
+      final (:matched, :cost) = _consume(open, t.quantity);
+      if (matched > 1e-9) sales.add(_sale(sale, matched, cost));
+      if (t.quantity - matched > 1e-9) {
+        unmatched.add((
           date: t.date,
-          quantity: matched,
+          quantity: t.quantity - matched,
           price: t.price,
-          proceeds: matched * net,
-          cost: cost,
+          net: sale.net,
           account: t.account,
         ));
       }
-      if (left > 1e-9) unmatched.add((date: t.date, quantity: left, price: t.price, net: net, account: t.account));
     }
-    return (open: open, realized: realized, sold: sold, byYear: byYear, sales: sales, unmatched: unmatched);
+    return (open: open, sales: sales, unmatched: unmatched);
   }
 
   /// A még birtokolt vételi tételek (FIFO szerint a legrégebbi fogy el először):
@@ -416,10 +372,16 @@ class Position {
   double get cost => _fifo.open.fold(0, (s, l) => s + l.quantity * l.price);
 
   /// Az eladásokon elért (realizált) nyereség a részvény pénznemében.
-  double get realizedGain => _fifo.realized;
+  late final double realizedGain = _fifo.sales.fold(0.0, (sum, x) => sum + x.proceeds - x.cost);
 
   /// A realizált nyereség az eladás éve szerint (dátum nélküli eladás: `null`).
-  Map<int?, double> get realizedByYear => _fifo.byYear;
+  late final Map<int?, double> realizedByYear = () {
+    final byYear = <int?, double>{};
+    for (final x in _fifo.sales) {
+      byYear[x.date?.year] = (byYear[x.date?.year] ?? 0) + x.proceeds - x.cost;
+    }
+    return byYear;
+  }();
 
   bool get hasSales => lots.any((l) => l.sell);
 
@@ -540,6 +502,8 @@ class PortfolioStore extends ChangeNotifier {
   void notifyListeners() {
     _adjusted = null;
     _allPositions = null;
+    _accounts = null;
+    _views.clear();
     super.notifyListeners();
   }
 
@@ -647,8 +611,10 @@ class PortfolioStore extends ChangeNotifier {
 
   /// A használt számlák neve ábécérendben (a szűrőhöz); üres, ha egyik
   /// tranzakciónak sincs számlája.
-  List<String> get accounts =>
-      ({for (final l in _lots) ?l.account, for (final d in _dividends) ?d.account}.toList()..sort());
+  List<String> get accounts => _accounts ??= List.unmodifiable(
+    {for (final l in _lots) ?l.account, for (final d in _dividends) ?d.account}.toList()..sort(),
+  );
+  List<String>? _accounts;
 
   /// Egy számla kapott osztalékai ([account] `null`: mind), az újabb elöl.
   List<DividendRecord> dividendsIn(String? account) => account == null
@@ -683,14 +649,21 @@ class PortfolioStore extends ChangeNotifier {
   /// darabszámai mindig a Minden számla nézetét adják ki.
   List<Position> _positionsOf(String? account) => account == null
       ? _all
-      : [
+      : _views[account] ??= [
           for (final p in _all)
             if (p.lots.any((l) => l.account == account)) Position._view(p, account),
         ];
 
+  /// A számla-nézetek a következő változásig.
+  final _views = <String, List<Position>>{};
+
   /// Egy részvény pozíciója egy számla nézetében ([account] `null`: mind), a lezártat is.
   Position? positionIn(String symbol, String? account) =>
       _positionsOf(account).where((p) => p.symbol == symbol.toUpperCase()).firstOrNull;
+
+  /// A számla, amelyen a részvényből a legtöbb darab van (`null`, ha a legtöbb számla
+  /// nélküli, vagy nincs belőle).
+  String? mainAccountOf(String symbol) => largestKey<String?>(heldByAccount(symbol));
 
   /// Minden pozíció (a lezártak is) – a realizált nyereség exportjához.
   List<Position> get allPositions => List.unmodifiable(_all);
@@ -764,7 +737,6 @@ class PortfolioStore extends ChangeNotifier {
     return lot;
   }
 
-  /// Az összes vétel cseréje (szinkronkor a fiók adataira).
   /// A minta-portfólió tételeinek azonosító-előtagja (így egy gombbal eltávolítható).
   static const samplePrefix = 'sample_';
 
@@ -777,8 +749,7 @@ class PortfolioStore extends ChangeNotifier {
   /// képest, így az éves hozam, az értékalakulás és a várható osztalék is látszik.
   Future<void> loadSample({DateTime? now}) async {
     // Újratöltéskor a korábbi minta-tételek helyére (nem ismétlődnek az azonosítók).
-    _lots.removeWhere((l) => l.id.startsWith(samplePrefix));
-    _dividends.removeWhere((d) => d.id.startsWith(samplePrefix));
+    _dropSample();
     final today = now ?? DateTime.now();
     DateTime ago(int days) {
       final d = today.subtract(Duration(days: days));
@@ -830,12 +801,17 @@ class PortfolioStore extends ChangeNotifier {
 
   /// A minta-portfólió eltávolítása (a saját tételek maradnak).
   Future<void> removeSample() async {
-    _lots.removeWhere((l) => l.id.startsWith(samplePrefix));
-    _dividends.removeWhere((d) => d.id.startsWith(samplePrefix));
+    _dropSample();
     notifyListeners();
     await _save();
   }
 
+  void _dropSample() {
+    _lots.removeWhere((l) => l.id.startsWith(samplePrefix));
+    _dividends.removeWhere((d) => d.id.startsWith(samplePrefix));
+  }
+
+  /// Az összes vétel cseréje (szinkronkor a fiók adataira).
   Future<void> replaceAll(List<PortfolioLot> lots) async {
     _lots
       ..clear()

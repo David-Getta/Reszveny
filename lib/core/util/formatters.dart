@@ -38,6 +38,12 @@ class Fmt {
     return NumberFormat.decimalPatternDigits(locale: numberLocale, decimalDigits: decimals).format(v);
   }
 
+  /// Darabszám: egész számnál tizedes nélkül, törtrésznél legfeljebb 4 tizedessel.
+  String quantity(double v) => number(v, decimals: v == v.roundToDouble() ? 0 : 4);
+
+  /// A nyelv tizedesjele (pl. magyarul vessző).
+  String get decimalSeparator => NumberFormat.decimalPattern(numberLocale).symbols.DECIMAL_SEP;
+
   /// Pénznemek, amelyeket egész egységben szokás kiírni (forint, jen, won…).
   static const wholeUnitCurrencies = {'HUF', 'JPY', 'KRW', 'IDR', 'ISK', 'CLP', 'VND', 'TWD'};
 

@@ -37,11 +37,10 @@ void main() {
     // Azonos tickernél a helyi nap marad (pl. levétel és újrafelvétel után a mai).
     expect(merged['favorite_since'], {'A': '2026-03-01', 'B': '2026-02-01'});
     // A szinkron csak a kedvencekhez tartja meg.
-    await prefs.setFavorites(['A']);
-    await prefs.setFavoriteSince(AppPreferences.parseFavoriteSince(merged['favorite_since']));
+    await prefs.setFavorites(['A'], since: AppPreferences.parseFavoriteSince(merged['favorite_since']));
     expect((prefs.favoriteSince('A'), prefs.favoriteSince('B')), (DateTime(2026, 3, 1), null));
     // Egy a mezőt még nem ismerő eszköz üres listája nem törli a dátumokat.
-    await prefs.setFavoriteSince(const {});
+    await prefs.setFavorites(['A']);
     expect(prefs.favoriteSince('A'), DateTime(2026, 3, 1));
     await prefs.clearPersonalData();
     expect(prefs.favoriteSince('A'), isNull);
