@@ -2646,6 +2646,11 @@ class AppLocalizationsHu extends AppLocalizations {
       'A részvényeid értékének legnagyobb esése egy korábbi csúcsról egy későbbi mélypontig, a vételeid és eladásaid hatása nélkül (időarányosan). Megmutatja, mekkora visszaesést élt már át a portfóliód.';
 
   @override
+  String watchSince(String date) {
+    return 'Mióta figyeled ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

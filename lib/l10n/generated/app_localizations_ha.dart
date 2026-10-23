@@ -2647,6 +2647,11 @@ class AppLocalizationsHa extends AppLocalizations {
       'Faɗuwa mafi girma ta ƙimar hannun jarinka daga wani koli na baya zuwa wani ƙasa na gaba, ba tare da tasirin saye da sayarwarka ba (an auna da lokaci). Tana nuna zurfin faɗuwar da jakar hannun jarinka ta riga ta fuskanta.';
 
   @override
+  String watchSince(String date) {
+    return 'Tun da ka ƙara shi zuwa abubuwan da aka fi so ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

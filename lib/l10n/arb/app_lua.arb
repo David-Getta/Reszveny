@@ -801,5 +801,6 @@
   "contributionMissing": "Kakuena mushinga wa mpindieu wa {symbols}: katuyi tubala mu diabanya.",
   "portfolioGoalEta": "Bikala dipeta dia tshidimu dishala nunku ({rate}), neukumbaje tshipatshila tshiebe pabuipi ne tshidimu tshia {year}.",
   "portfolioMaxDrawdown": "Dipueka dinene menemene",
-  "glossMaxDrawdown": "Dipueka dinene menemene dia mushinga wa actions yebe, kubangila ku mutu kua kumpala too ne panshi pashishe, kakuyi kubala bisumbu ne bisumbisha biebe (mupima bilondeshile tshikondo). Didi dileja mudi portefeuille webe muanji kupueka bikole."
+  "glossMaxDrawdown": "Dipueka dinene menemene dia mushinga wa actions yebe, kubangila ku mutu kua kumpala too ne panshi pashishe, kakuyi kubala bisumbu ne bisumbisha biebe (mupima bilondeshile tshikondo). Didi dileja mudi portefeuille webe muanji kupueka bikole.",
+  "watchSince": "Kubangila pawakayibueja mu biudi musue ({date})"
 }

@@ -2655,6 +2655,11 @@ class AppLocalizationsLg extends AppLocalizations {
       'Okugwa okusinga obunene okw\'omuwendo gw\'emigabo gyo okuva ku ntikko eyasooka okutuuka wansi ennyo oluvannyuma, nga tobaliddemu bye wagula ne bye watunda (kipimiddwa ku biseera). Kiraga emigabo gyo bwe gyakagwa wansi ennyo.';
 
   @override
+  String watchSince(String date) {
+    return 'Okuva lwe wagugattako ku by\'oyagala ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

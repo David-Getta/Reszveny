@@ -801,5 +801,6 @@
   "contributionMissing": "Brak aktualnej ceny dla {symbols}: pominięte w podziale.",
   "portfolioGoalEta": "Jeśli roczna stopa zwrotu się utrzyma ({rate}), osiągniesz cel około {year} roku.",
   "portfolioMaxDrawdown": "Największy spadek",
-  "glossMaxDrawdown": "Największy spadek wartości twoich akcji od wcześniejszego szczytu do późniejszego dołka, bez wpływu twoich zakupów i sprzedaży (ważony czasem). Pokazuje, jak głęboki spadek twój portfel już przeszedł."
+  "glossMaxDrawdown": "Największy spadek wartości twoich akcji od wcześniejszego szczytu do późniejszego dołka, bez wpływu twoich zakupów i sprzedaży (ważony czasem). Pokazuje, jak głęboki spadek twój portfel już przeszedł.",
+  "watchSince": "Od dodania do ulubionych ({date})"
 }

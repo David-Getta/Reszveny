@@ -2647,6 +2647,11 @@ class AppLocalizationsTe extends AppLocalizations {
       'మీ షేర్ల విలువలో మునుపటి గరిష్ఠ స్థాయి నుంచి తర్వాతి కనిష్ఠ స్థాయి వరకు వచ్చిన అతిపెద్ద పతనం, మీ కొనుగోళ్లు, అమ్మకాల ప్రభావం లేకుండా (కాల-భారిత). మీ పోర్ట్‌ఫోలియో ఇప్పటికే ఎంత లోతైన పతనాన్ని చవిచూసిందో ఇది చూపిస్తుంది.';
 
   @override
+  String watchSince(String date) {
+    return 'ఇష్టమైనవాటికి జోడించినప్పటి నుండి ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

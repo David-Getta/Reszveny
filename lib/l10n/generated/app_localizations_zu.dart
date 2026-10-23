@@ -2652,6 +2652,11 @@ class AppLocalizationsZu extends AppLocalizations {
       'Ukwehla okukhulu kakhulu kwenani lamasheya akho kusuka esiqongweni sangaphambilini kuya ezingeni eliphansi kakhulu langemuva, ngaphandle komthelela wokuthenga nokuthengisa kwakho (kukalwe ngesikhathi). Kukhombisa ukuthi iphothifoliyo yakho isike yehla kangakanani ngokujulile.';
 
   @override
+  String watchSince(String date) {
+    return 'Kusukela walengeza kuzintandokazi ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setha umgomo';
 
   @override

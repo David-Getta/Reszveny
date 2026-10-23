@@ -801,5 +801,6 @@
   "contributionMissing": "Nėra dabartinės {symbols} kainos: neįtrauktos į paskirstymą.",
   "portfolioGoalEta": "Jei metinė grąža išliks ({rate}), tikslą pasieksite apie {year} m.",
   "portfolioMaxDrawdown": "Didžiausias kritimas",
-  "glossMaxDrawdown": "Didžiausias jūsų akcijų vertės kritimas nuo ankstesnės viršūnės iki vėlesnės žemiausios vertės, neįskaitant jūsų pirkimų ir pardavimų poveikio (laiku svertinis). Rodo, kokį gilų nuosmukį jūsų portfelis jau yra patyręs."
+  "glossMaxDrawdown": "Didžiausias jūsų akcijų vertės kritimas nuo ankstesnės viršūnės iki vėlesnės žemiausios vertės, neįskaitant jūsų pirkimų ir pardavimų poveikio (laiku svertinis). Rodo, kokį gilų nuosmukį jūsų portfelis jau yra patyręs.",
+  "watchSince": "Nuo įtraukimo į mėgstamiausius ({date})"
 }

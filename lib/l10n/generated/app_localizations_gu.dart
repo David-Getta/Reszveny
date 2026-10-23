@@ -2635,6 +2635,11 @@ class AppLocalizationsGu extends AppLocalizations {
       'તમારા શેરના મૂલ્યમાં અગાઉના કોઈ ઊંચા સ્તરથી પછીના કોઈ નીચા સ્તર સુધીનો સૌથી મોટો ઘટાડો, તમારી ખરીદી અને વેચાણની અસર વિના (સમય-ભારિત). તે બતાવે છે કે તમારો પોર્ટફોલિયો અત્યાર સુધીમાં કેટલા ઊંડા ઘટાડામાંથી પસાર થઈ ચૂક્યો છે.';
 
   @override
+  String watchSince(String date) {
+    return 'મનપસંદમાં ઉમેર્યા પછીથી ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'લક્ષ્ય નક્કી કરો';
 
   @override

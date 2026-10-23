@@ -2711,6 +2711,11 @@ class AppLocalizationsPl extends AppLocalizations {
       'Największy spadek wartości twoich akcji od wcześniejszego szczytu do późniejszego dołka, bez wpływu twoich zakupów i sprzedaży (ważony czasem). Pokazuje, jak głęboki spadek twój portfel już przeszedł.';
 
   @override
+  String watchSince(String date) {
+    return 'Od dodania do ulubionych ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ustaw cel';
 
   @override

@@ -2632,6 +2632,11 @@ class AppLocalizationsPs extends AppLocalizations {
       'ستاسو د ونډو په ارزښت کې له یوې پخوانۍ لوړې کچې څخه تر یوې وروستۍ ټیټې کچې پورې تر ټولو لوی کمښت، ستاسو د پېرلو او پلورلو له اغېز پرته (د وخت له مخې وزن شوی). دا ښيي چې ستاسو پورټفولیو تر اوسه څومره ژور کمښت لیدلی دی.';
 
   @override
+  String watchSince(String date) {
+    return 'خوښو ته له ورزیاتولو راهیسې ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

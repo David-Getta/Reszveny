@@ -2649,6 +2649,11 @@ class AppLocalizationsSo extends AppLocalizations {
       'Hoos u dhaca ugu weyn ee qiimaha saamiyadaada, laga bilaabo heer sare oo hore ilaa heer hoose oo dambe, iyada oo aan la tixgelin saamaynta iibsashadaada iyo iibintaada (waqtiga lagu miisaamay). Waxay muujinaysaa inta uu le\'eg yahay hoos u dhaca qoto dheer ee portfoliyadaadu horay u soo martay.';
 
   @override
+  String watchSince(String date) {
+    return 'Tan iyo markii aad ku dartay kuwa la jecel yahay ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

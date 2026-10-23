@@ -801,5 +801,6 @@
   "contributionMissing": "{symbols} için güncel fiyat yok: dağılıma dahil edilmedi.",
   "portfolioGoalEta": "Yıllık getiri böyle sürerse ({rate}), hedefe {year} yılı civarında ulaşırsınız.",
   "portfolioMaxDrawdown": "En büyük düşüş",
-  "glossMaxDrawdown": "Hisselerinizin değerinin önceki bir zirveden sonraki bir dibe kadar yaşadığı en büyük düşüş; alım ve satımlarınızın etkisi olmadan (zaman ağırlıklı). Portföyünüzün şimdiye kadar ne kadar derin bir düşüş yaşadığını gösterir."
+  "glossMaxDrawdown": "Hisselerinizin değerinin önceki bir zirveden sonraki bir dibe kadar yaşadığı en büyük düşüş; alım ve satımlarınızın etkisi olmadan (zaman ağırlıklı). Portföyünüzün şimdiye kadar ne kadar derin bir düşüş yaşadığını gösterir.",
+  "watchSince": "Favorilere eklediğinizden bu yana ({date})"
 }

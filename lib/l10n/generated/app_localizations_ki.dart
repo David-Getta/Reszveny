@@ -2641,6 +2641,11 @@ class AppLocalizationsKi extends AppLocalizations {
       'Kũnyiha kũnene mũno kwa thogora wa hisa ciaku kuuma igũrũ rĩa mbere nginya hau thĩ thuutha, hatarĩ ũhoro wa kũgũra na kwendia gwaku (gũthimĩtwo na ihinda). Kuonanagia ũrĩa hisa ciaku ciagũĩte thĩ mũno hĩndĩ ĩhĩtũku.';
 
   @override
+  String watchSince(String date) {
+    return 'Kuuma rĩrĩa woongereire harĩ iria wendete ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

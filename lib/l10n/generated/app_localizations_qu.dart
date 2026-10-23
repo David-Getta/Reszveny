@@ -2654,6 +2654,11 @@ class AppLocalizationsQu extends AppLocalizations {
       'Accionniykikunap chaninpa aswan hatun urmaynin, ñawpaq hanaq kasqanmanta qhipa uray kasqankama, rantisqaykiq rantikusqaykiq kallpan mana yapasqa (pachawan llasachisqa). Portafolioyki ña hayk\'a ukhuta urmasqanta rikuchin.';
 
   @override
+  String watchSince(String date) {
+    return 'Munasqakunaman yapasqaykimanta ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

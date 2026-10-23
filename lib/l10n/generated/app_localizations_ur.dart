@@ -2640,6 +2640,11 @@ class AppLocalizationsUr extends AppLocalizations {
       'آپ کے حصص کی مالیت میں کسی پچھلی بلندی سے بعد کی کسی نچلی سطح تک سب سے بڑی گراوٹ، آپ کی خرید و فروخت کے اثر کے بغیر (وقت کے لحاظ سے وزنی)۔ یہ دکھاتی ہے کہ آپ کا پورٹ فولیو اب تک کتنی گہری گراوٹ سے گزر چکا ہے۔';
 
   @override
+  String watchSince(String date) {
+    return 'پسندیدہ میں شامل کرنے کے بعد سے ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ہدف مقرر کریں';
 
   @override

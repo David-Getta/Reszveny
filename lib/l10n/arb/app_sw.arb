@@ -801,5 +801,6 @@
   "contributionMissing": "Hakuna bei ya sasa kwa {symbols}: hazijajumuishwa kwenye mgawanyo.",
   "portfolioGoalEta": "Faida ya mwaka ikiendelea hivi ({rate}), utafikia lengo lako karibu mwaka {year}.",
   "portfolioMaxDrawdown": "Kushuka kukubwa zaidi",
-  "glossMaxDrawdown": "Kushuka kukubwa zaidi kwa thamani ya hisa zako kutoka kilele cha awali hadi kiwango cha chini cha baadaye, bila athari ya ununuzi na mauzo yako (kumepimwa kwa muda). Kunaonyesha jinsi jalada lako la hisa lilivyokwisha kushuka kwa kina."
+  "glossMaxDrawdown": "Kushuka kukubwa zaidi kwa thamani ya hisa zako kutoka kilele cha awali hadi kiwango cha chini cha baadaye, bila athari ya ununuzi na mauzo yako (kumepimwa kwa muda). Kunaonyesha jinsi jalada lako la hisa lilivyokwisha kushuka kwa kina.",
+  "watchSince": "Tangu ulipoiongeza kwenye vipendwa ({date})"
 }

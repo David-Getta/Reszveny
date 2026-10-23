@@ -2641,6 +2641,11 @@ class AppLocalizationsKa extends AppLocalizations {
       'თქვენი აქციების ღირებულების უდიდესი ვარდნა ადრინდელი პიკიდან მოგვიანებით მინიმუმამდე, თქვენი ყიდვებისა და გაყიდვების გავლენის გარეშე (დროით შეწონილი). გვიჩვენებს, რამდენად ღრმა ვარდნა გადაიტანა უკვე თქვენმა პორტფელმა.';
 
   @override
+  String watchSince(String date) {
+    return 'რჩეულებში დამატების შემდეგ ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

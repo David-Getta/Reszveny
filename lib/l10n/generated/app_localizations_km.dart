@@ -2619,6 +2619,11 @@ class AppLocalizationsKm extends AppLocalizations {
       'ការធ្លាក់ចុះធំបំផុតនៃតម្លៃភាគហ៊ុនរបស់អ្នក ពីកម្រិតខ្ពស់មុន ទៅកម្រិតទាបនៅពេលក្រោយ ដោយមិនគិតពីឥទ្ធិពលនៃការទិញ និងលក់របស់អ្នក (ថ្លឹងតាមពេលវេលា)។ វាបង្ហាញថាផលប័ត្ររបស់អ្នកបានឆ្លងកាត់ការធ្លាក់ចុះជ្រៅប៉ុណ្ណាមកហើយ។';
 
   @override
+  String watchSince(String date) {
+    return 'ចាប់តាំងពីបន្ថែមទៅចំណូលចិត្ត ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

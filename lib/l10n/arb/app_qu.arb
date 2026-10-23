@@ -801,5 +801,6 @@
   "contributionMissing": "{symbols}-paq kunan chaninnin mana kanchu: rakinakuypi mana yupakunchu.",
   "portfolioGoalEta": "Watapaq rendimiento kaqlla kaptinqa ({rate}), yaqa {year} watapi hayparinaykiman chayanki.",
   "portfolioMaxDrawdown": "Aswan hatun urmay",
-  "glossMaxDrawdown": "Accionniykikunap chaninpa aswan hatun urmaynin, ñawpaq hanaq kasqanmanta qhipa uray kasqankama, rantisqaykiq rantikusqaykiq kallpan mana yapasqa (pachawan llasachisqa). Portafolioyki ña hayk'a ukhuta urmasqanta rikuchin."
+  "glossMaxDrawdown": "Accionniykikunap chaninpa aswan hatun urmaynin, ñawpaq hanaq kasqanmanta qhipa uray kasqankama, rantisqaykiq rantikusqaykiq kallpan mana yapasqa (pachawan llasachisqa). Portafolioyki ña hayk'a ukhuta urmasqanta rikuchin.",
+  "watchSince": "Munasqakunaman yapasqaykimanta ({date})"
 }

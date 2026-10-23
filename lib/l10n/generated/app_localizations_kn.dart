@@ -2647,6 +2647,11 @@ class AppLocalizationsKn extends AppLocalizations {
       'ನಿಮ್ಮ ಷೇರುಗಳ ಮೌಲ್ಯದಲ್ಲಿ ಹಿಂದಿನ ಒಂದು ಗರಿಷ್ಠ ಮಟ್ಟದಿಂದ ನಂತರದ ಕನಿಷ್ಠ ಮಟ್ಟದವರೆಗಿನ ಅತಿದೊಡ್ಡ ಕುಸಿತ, ನಿಮ್ಮ ಖರೀದಿ ಮತ್ತು ಮಾರಾಟದ ಪರಿಣಾಮವಿಲ್ಲದೆ (ಸಮಯ-ತೂಕದ). ನಿಮ್ಮ ಪೋರ್ಟ್‌ಫೋಲಿಯೊ ಈಗಾಗಲೇ ಎಷ್ಟು ಆಳವಾದ ಕುಸಿತವನ್ನು ಕಂಡಿದೆ ಎಂಬುದನ್ನು ಇದು ತೋರಿಸುತ್ತದೆ.';
 
   @override
+  String watchSince(String date) {
+    return 'ಮೆಚ್ಚಿನವುಗಳಿಗೆ ಸೇರಿಸಿದಾಗಿನಿಂದ ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

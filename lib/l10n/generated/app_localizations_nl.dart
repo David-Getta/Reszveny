@@ -2647,6 +2647,11 @@ class AppLocalizationsNl extends AppLocalizations {
       'De grootste daling van de waarde van je aandelen van een eerdere piek tot een later dal, zonder het effect van je aankopen en verkopen (tijdgewogen). Het laat zien hoe diep je portefeuille al eens is gezakt.';
 
   @override
+  String watchSince(String date) {
+    return 'Sinds toevoeging aan favorieten ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Doel instellen';
 
   @override

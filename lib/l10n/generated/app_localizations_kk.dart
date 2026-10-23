@@ -2640,6 +2640,11 @@ class AppLocalizationsKk extends AppLocalizations {
       'Акцияларыңыз құнының бұрынғы шыңнан кейінгі ең төменгі деңгейге дейінгі ең үлкен құлдырауы, сатып алу мен сатуларыңыздың әсерінсіз (уақыт бойынша өлшенген). Портфеліңіздің бұрын қаншалықты терең құлдырауды бастан өткергенін көрсетеді.';
 
   @override
+  String watchSince(String date) {
+    return 'Таңдаулыларға қосылғаннан бері ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Мақсат қою';
 
   @override

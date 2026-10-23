@@ -40,7 +40,9 @@ class AppPreferences extends ChangeNotifier {
     Map<String, double> targets = const {},
     Map<String, String> sorts = const {},
     this.benchmark,
-  }) : _hiddenHome = Set.of(hiddenHome),
+    Map<String, DateTime> favoriteSince = const {},
+  }) : _favoriteSince = Map.of(favoriteSince),
+       _hiddenHome = Set.of(hiddenHome),
        _sorts = Map.of(sorts),
        _goalsAt = Map.of(goalsAt),
        _lists = List.of(watchLists),
@@ -54,6 +56,68 @@ class AppPreferences extends ChangeNotifier {
   static const _recentKey = 'recent_symbols';
   static const _hotkeyKey = 'global_hotkey';
   static const _favoritesKey = 'favorite_symbols';
+  static const _favoriteSinceKey = 'favorite_since';
+
+  /// Mikor lett a részvény kedvenc (a „mióta figyeled” változáshoz); a funkció
+  /// előtti kedvenceknél nincs.
+  final Map<String, DateTime> _favoriteSince;
+  DateTime? favoriteSince(String symbol) => _favoriteSince[symbol.toUpperCase()];
+
+  /// A felvételi napok a szinkronhoz (ticker → `yyyy-MM-dd`).
+  Map<String, String> get favoriteSinceJson => {
+    for (final e in _favoriteSince.entries) e.key: e.value.toIso8601String().substring(0, 10),
+  };
+
+  /// Felvételi napok beolvasása; a hibás tételek kimaradnak.
+  static Map<String, DateTime> parseFavoriteSince(Object? v) {
+    final m = v is String
+        ? (() {
+            try {
+              return jsonDecode(v);
+            } catch (_) {
+              return null;
+            }
+          })()
+        : v;
+    if (m is! Map) return {};
+    return {
+      for (final e in m.entries)
+        if (DateTime.tryParse('${e.value}') case final d?) '${e.key}'.toUpperCase(): DateTime(d.year, d.month, d.day),
+    };
+  }
+
+  /// Új kedvencnél a mai nap (a meglévőt nem írja felül).
+  void _markFavorite(String s) {
+    final now = DateTime.now();
+    _favoriteSince.putIfAbsent(s, () => DateTime(now.year, now.month, now.day));
+  }
+
+  Future<void> _saveFavorites() => _save((p) async {
+    await p.setStringList(_favoritesKey, _favorites);
+    await p.setString(_favoriteSinceKey, jsonEncode(favoriteSinceJson));
+  });
+
+  /// Egy kedvenc felvételi napjának visszaállítása (a törlés visszavonásakor).
+  Future<void> restoreFavoriteSince(String symbol, DateTime since) async {
+    final s = symbol.toUpperCase();
+    if (!_favorites.contains(s)) return;
+    _favoriteSince[s] = since;
+    notifyListeners();
+    await _saveFavorites();
+  }
+
+  /// A felvételi napok cseréje (szinkronkor): csak a kedvencekhez.
+  Future<void> setFavoriteSince(Map<String, DateTime> since) async {
+    _favoriteSince
+      ..clear()
+      ..addAll({
+        for (final e in since.entries)
+          if (_favorites.contains(e.key)) e.key: e.value,
+      });
+    notifyListeners();
+    await _saveFavorites();
+  }
+
   static const _currencyKey = 'display_currency';
   static const _autoUpdateKey = 'auto_update';
   static const _depthKey = 'analysis_depth';
@@ -457,6 +521,7 @@ class AppPreferences extends ChangeNotifier {
         targets: parseTargets(prefs.getString(_targetsKey)),
         sorts: parseSorts(prefs.getString(_sortsKey)),
         benchmark: prefs.getString(_benchmarkKey),
+        favoriteSince: parseFavoriteSince(prefs.getString(_favoriteSinceKey)),
       );
       loaded._loadResolved(prefs.getStringList(_resolvedKey));
       return loaded;
@@ -536,7 +601,8 @@ class AppPreferences extends ChangeNotifier {
       symbols.add(s);
       if (!_favorites.contains(s)) {
         _favorites.insert(0, s);
-        await _save((p) => p.setStringList(_favoritesKey, _favorites));
+        _markFavorite(s);
+        await _saveFavorites();
       }
     }
     _lists[_lists.indexOf(l)] = WatchList(name: l.name, symbols: symbols);
@@ -555,6 +621,7 @@ class AppPreferences extends ChangeNotifier {
       var isNew = false;
       if (!_favorites.contains(s)) {
         _favorites.add(s);
+        _markFavorite(s);
         isNew = true;
       }
       if (l != null && !inList.contains(s)) {
@@ -567,6 +634,7 @@ class AppPreferences extends ChangeNotifier {
     notifyListeners();
     await _save((p) async {
       await p.setStringList(_favoritesKey, _favorites);
+      await p.setString(_favoriteSinceKey, jsonEncode(favoriteSinceJson));
       await p.setString(_listsKey, jsonEncode([for (final l in _lists) l.toJson()]));
     });
     return added;
@@ -699,9 +767,14 @@ class AppPreferences extends ChangeNotifier {
   Future<void> toggleFavorite(String symbol) async {
     final s = symbol.trim().toUpperCase();
     if (s.isEmpty) return;
-    if (!_favorites.remove(s)) _favorites.insert(0, s);
+    if (_favorites.remove(s)) {
+      _favoriteSince.remove(s);
+    } else {
+      _favorites.insert(0, s);
+      _markFavorite(s);
+    }
     notifyListeners();
-    await _save((p) => p.setStringList(_favoritesKey, _favorites));
+    await _saveFavorites();
   }
 
   Future<void> setHotkeyJson(Map<String, dynamic>? json) async {
@@ -715,13 +788,15 @@ class AppPreferences extends ChangeNotifier {
     _favorites
       ..clear()
       ..addAll(symbols.map((s) => s.toUpperCase()));
+    _favoriteSince.removeWhere((s, _) => !_favorites.contains(s));
     notifyListeners();
-    await _save((p) => p.setStringList(_favoritesKey, _favorites));
+    await _saveFavorites();
   }
 
   /// A személyes listák (kedvencek, előzmények) törlése; a beállítások maradnak.
   Future<void> clearPersonalData() async {
     _favorites.clear();
+    _favoriteSince.clear();
     _recent = [];
     _lists.clear();
     _targets.clear();
@@ -733,6 +808,7 @@ class AppPreferences extends ChangeNotifier {
     await _save((p) async {
       for (final k in [
         _favoritesKey,
+        _favoriteSinceKey,
         _recentKey,
         _listsKey,
         _targetsKey,

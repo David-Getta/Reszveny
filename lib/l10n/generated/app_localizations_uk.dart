@@ -2711,6 +2711,11 @@ class AppLocalizationsUk extends AppLocalizations {
       'Найбільше падіння вартості ваших акцій від попереднього піку до пізнішого мінімуму без урахування ваших купівель і продажів (зважене за часом). Показує, яке глибоке просідання ваш портфель уже пережив.';
 
   @override
+  String watchSince(String date) {
+    return 'Від додавання до обраного ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задати ціль';
 
   @override

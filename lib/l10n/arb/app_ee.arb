@@ -801,5 +801,6 @@
   "contributionMissing": "Fifia asi aɖeke meli na {symbols} o: wometsɔ wo de mamã la me o.",
   "portfolioGoalEta": "Ne ƒe sia ƒe viɖe la yi edzi nenema ({rate}) la, àɖo taɖodzinu la ƒe {year} lɔƒo.",
   "portfolioMaxDrawdown": "Asixɔxɔ ƒe ɖiɖi gãtɔ",
-  "glossMaxDrawdown": "Wò akpawo ƒe asixɔxɔ ƒe ɖiɖi gãtɔ tso dzi aɖe si wòɖo do ŋgɔ va ɖo anyigba aɖe si wòɖo emegbe, eye womebu wò nuƒeƒle kple nudzadzra ƒe ŋusẽ ɖe eme o (wodzidze ɖe ɣeyiɣi nu). Efiana alesi wò akpawo ƒe asixɔxɔ ɖi va anyi do ŋgɔ xoxo."
+  "glossMaxDrawdown": "Wò akpawo ƒe asixɔxɔ ƒe ɖiɖi gãtɔ tso dzi aɖe si wòɖo do ŋgɔ va ɖo anyigba aɖe si wòɖo emegbe, eye womebu wò nuƒeƒle kple nudzadzra ƒe ŋusẽ ɖe eme o (wodzidze ɖe ɣeyiɣi nu). Efiana alesi wò akpawo ƒe asixɔxɔ ɖi va anyi do ŋgɔ xoxo.",
+  "watchSince": "Tso esime nètsɔe kpe ɖe nye lɔlɔ̃tɔwo ŋu ({date})"
 }

@@ -2642,6 +2642,11 @@ class AppLocalizationsSv extends AppLocalizations {
       'Den största nedgången i värdet på dina aktier från en tidigare topp till en senare botten, utan effekten av dina köp och försäljningar (tidsviktad). Den visar hur djup en nedgång din portfölj redan har gått igenom.';
 
   @override
+  String watchSince(String date) {
+    return 'Sedan du lade till den i favoriter ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sätt ett mål';
 
   @override

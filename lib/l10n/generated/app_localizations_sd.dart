@@ -2631,6 +2631,11 @@ class AppLocalizationsSd extends AppLocalizations {
       'توهان جي شيئرز جي قدر ۾ اڳوڻي ڪنهن چوٽيءَ کان پوءِ واري ڪنهن هيٺين سطح تائين سڀ کان وڏي گهٽتائي، توهان جي خريد ۽ وڪري جي اثر کان سواءِ (وقت جي وزن واري). اها ڏيکاري ٿي ته توهان جو پورٽ فوليو اڳ ۾ ئي ڪيتري اونهي گهٽتائي مان گذري چڪو آهي.';
 
   @override
+  String watchSince(String date) {
+    return 'پسنديده ۾ شامل ڪرڻ کان پوءِ ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

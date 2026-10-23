@@ -2651,6 +2651,11 @@ class AppLocalizationsEl extends AppLocalizations {
       'Η μεγαλύτερη πτώση της αξίας των μετοχών σας από ένα προηγούμενο υψηλό σε ένα μεταγενέστερο χαμηλό, χωρίς την επίδραση των αγορών και πωλήσεών σας (χρονικά σταθμισμένη). Δείχνει πόσο βαθιά πτώση έχει ήδη περάσει το χαρτοφυλάκιό σας.';
 
   @override
+  String watchSince(String date) {
+    return 'Από την προσθήκη στα αγαπημένα ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

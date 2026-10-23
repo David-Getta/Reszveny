@@ -801,5 +801,6 @@
   "contributionMissing": "Seesei bo biara nni hɔ mma {symbols}: wɔamfa wɔn anka sika nkyɛmu no ho.",
   "portfolioGoalEta": "Sɛ afe mfaso no kɔ so saa ({rate}) a, wobɛdu wo botaeɛ ho bɛyɛ afe {year}.",
   "portfolioMaxDrawdown": "Bo tɔ a ɛsõ koraa",
-  "glossMaxDrawdown": "Wo nkyɛfa no bo tɔ a ɛsõ koraa, efi soro bi a ɛduruu kan kosi fam bi a ɛbaa akyiri, a wo adetɔ ne wo adetɔn nka ho (wɔakari no bere so). Ɛkyerɛ sɛnea wo nkyɛfa nyinaa bo atɔ akɔ fam dedaw."
+  "glossMaxDrawdown": "Wo nkyɛfa no bo tɔ a ɛsõ koraa, efi soro bi a ɛduruu kan kosi fam bi a ɛbaa akyiri, a wo adetɔ ne wo adetɔn nka ho (wɔakari no bere so). Ɛkyerɛ sɛnea wo nkyɛfa nyinaa bo atɔ akɔ fam dedaw.",
+  "watchSince": "Efi bere a wode kaa nea mepɛ ho ({date})"
 }

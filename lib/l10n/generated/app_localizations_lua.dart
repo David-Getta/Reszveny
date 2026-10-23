@@ -2649,6 +2649,11 @@ class AppLocalizationsLua extends AppLocalizations {
       'Dipueka dinene menemene dia mushinga wa actions yebe, kubangila ku mutu kua kumpala too ne panshi pashishe, kakuyi kubala bisumbu ne bisumbisha biebe (mupima bilondeshile tshikondo). Didi dileja mudi portefeuille webe muanji kupueka bikole.';
 
   @override
+  String watchSince(String date) {
+    return 'Kubangila pawakayibueja mu biudi musue ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

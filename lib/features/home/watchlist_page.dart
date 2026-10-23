@@ -115,13 +115,21 @@ class _WatchlistPageState extends State<WatchlistPage> {
       return;
     }
     final before = prefs.favorites;
+    // A visszavonás a felvételi napot is visszaadja („mióta figyeled”).
+    final since = prefs.favoriteSince(symbol);
     await prefs.toggleFavorite(symbol);
     messenger
       ..hideCurrentSnackBar()
       ..showSnackBar(
         SnackBar(
           content: Text('$symbol · ${l10n.removeFromFavorites}'),
-          action: SnackBarAction(label: l10n.undo, onPressed: () => prefs.setFavorites(before)),
+          action: SnackBarAction(
+            label: l10n.undo,
+            onPressed: () async {
+              await prefs.setFavorites(before);
+              if (since != null) await prefs.restoreFavoriteSince(symbol, since);
+            },
+          ),
         ),
       );
   }
@@ -373,6 +381,7 @@ class _WatchlistPageState extends State<WatchlistPage> {
               hasNote: services.notes.of(s)?.text.trim().isNotEmpty ?? false,
               quote: _quote(s),
               history: _history(s),
+              since: services.preferences.favoriteSince(s),
               onTap: () => widget.onOpenSymbol(StockCandidate(symbol: s, companyName: s, confidence: 1)),
               trailing: Row(
                 mainAxisSize: MainAxisSize.min,
@@ -642,9 +651,13 @@ class _WatchRow extends StatelessWidget {
     required this.history,
     required this.onTap,
     this.trailing,
+    this.since,
   });
 
   final String symbol;
+
+  /// Mikor lett kedvenc: az ár változása azóta (ha az idősor odáig ér).
+  final DateTime? since;
 
   /// Van-e aktív árfolyam-riasztás a részvényre (kis harang a ticker mellett).
   final bool hasAlert;
@@ -831,6 +844,37 @@ class _WatchRow extends StatelessWidget {
                               fmt.percent(q.changePercent, withSign: true),
                               style: theme.textTheme.bodySmall?.copyWith(color: q.isUp ? p.positive : p.negative),
                             ),
+                        // „Mióta figyeled”: a felvétel napi (vagy utána első) záróárhoz képest.
+                        if ((q, since) case (final q?, final since?))
+                          FutureBuilder<PriceHistory>(
+                            future: history,
+                            builder: (context, h) {
+                              final pts = h.data?.points ?? const <PricePoint>[];
+                              if (pts.isEmpty || pts.first.time.isAfter(since)) return const SizedBox.shrink();
+                              final base = pts.where((x) => !x.time.isBefore(since)).firstOrNull;
+                              if (base == null || base.close <= 0 || !pts.last.time.isAfter(since)) {
+                                return const SizedBox.shrink();
+                              }
+                              final pct = (q.price / base.close - 1) * 100;
+                              return Tooltip(
+                                message: l10n.watchSince(fmt.date(since)),
+                                child: Row(
+                                  key: ValueKey('watch-since-$symbol'),
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Icon(Icons.star_rounded, size: 10, color: p.muted),
+                                    const SizedBox(width: 2),
+                                    Text(
+                                      fmt.percent(pct, withSign: true, decimals: 1),
+                                      style: theme.textTheme.labelSmall?.copyWith(
+                                        color: pct >= 0 ? p.positive : p.negative,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              );
+                            },
+                          ),
                       ],
                     ),
                   );

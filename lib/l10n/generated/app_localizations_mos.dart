@@ -2626,6 +2626,11 @@ class AppLocalizationsMos extends AppLocalizations {
       'F aksiõ-rãmbã yõodã sigr sẽn yɩɩd fãa, sẽn sɩng zĩ-zẽk sẽn da reng n tãag zĩ-sabl sẽn wa poorẽ, tɩ f raabã ne f koosgã pa be pʋgẽ ye (sẽn mak ne wakato). A wilgda f portfey wã sẽn sig n tãag zĩig ning hal tɛka.';
 
   @override
+  String watchSince(String date) {
+    return 'Sẽn sɩng f sẽn paas-a nong-n-yɩɩda pʋgẽ ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

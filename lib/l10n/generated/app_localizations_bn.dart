@@ -2639,6 +2639,11 @@ class AppLocalizationsBn extends AppLocalizations {
       'আপনার শেয়ারগুলোর মূল্যের আগের কোনো শীর্ষ থেকে পরের কোনো নিম্নবিন্দু পর্যন্ত সবচেয়ে বড় পতন, আপনার কেনাবেচার প্রভাব বাদ দিয়ে (সময়-ভারিত)। এটি দেখায় আপনার পোর্টফোলিও এর মধ্যেই কতটা গভীর পতনের মধ্য দিয়ে গেছে।';
 
   @override
+  String watchSince(String date) {
+    return 'পছন্দের তালিকায় যোগ করার পর থেকে ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য ঠিক করুন';
 
   @override

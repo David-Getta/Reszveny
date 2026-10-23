@@ -801,5 +801,6 @@
   "contributionMissing": "Ingen aktuel kurs for {symbols}: er ikke med i fordelingen.",
   "portfolioGoalEta": "Hvis det årlige afkast holder ({rate}), når du målet omkring {year}.",
   "portfolioMaxDrawdown": "Største fald",
-  "glossMaxDrawdown": "Det største fald i værdien af dine aktier fra en tidligere top til en senere bund, uden effekten af dine køb og salg (tidsvægtet). Det viser, hvor dybt et dyk din portefølje allerede har været igennem."
+  "glossMaxDrawdown": "Det største fald i værdien af dine aktier fra en tidligere top til en senere bund, uden effekten af dine køb og salg (tidsvægtet). Det viser, hvor dybt et dyk din portefølje allerede har været igennem.",
+  "watchSince": "Siden du føjede den til favoritter ({date})"
 }

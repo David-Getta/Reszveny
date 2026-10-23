@@ -4549,6 +4549,12 @@ abstract class AppLocalizations {
   /// **'The biggest fall of your holdings from an earlier high to a later low, without the effect of your buying and selling (time-weighted). It shows how deep a dip your portfolio has already been through.'**
   String get glossMaxDrawdown;
 
+  /// Tooltip on the small percentage under a favorite's price: the price change since the day it was added to the favorites.
+  ///
+  /// In en, this message translates to:
+  /// **'Since you added it ({date})'**
+  String watchSince(String date);
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

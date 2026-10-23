@@ -2638,6 +2638,11 @@ class AppLocalizationsSi extends AppLocalizations {
       'ඔබේ කොටස්වල වටිනාකම පෙර ඉහළම මට්ටමක සිට පසු පහළම මට්ටමක් දක්වා වූ විශාලතම පහත වැටීම, ඔබේ මිලදී ගැනීම් සහ විකිණීම්වල බලපෑමෙන් තොරව (කාල-බර තැබූ). ඔබේ කළඹ මේ වන විටත් කොතරම් ගැඹුරු පහත වැටීමක් අත්විඳ ඇත්දැයි එය පෙන්වයි.';
 
   @override
+  String watchSince(String date) {
+    return 'ප්‍රියතමවලට එක් කළ දින සිට ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ඉලක්කයක් සකසන්න';
 
   @override

@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.197)
+# Változásjegyzék (0.2.130 → 0.2.198)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -92,6 +92,9 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
   eladások darabszáma és ára igazodik, a bekerülési érték marad; szinkronban, mentésben és a CSV-ben is.
 
 ## Kezdőképernyő és piacok
+
+- **„Mióta figyeled”** a Kedvencek listán: a felvétel óta eltelt árváltozás az ár alatt („★ +1,3%”), a felvétel napja
+  szinkronban és a mentésben.
 
 - **„Amíg távol voltál”** kártya: a nagy mozgások, a megszólalt riasztások, a közben megjelent eredmények és
   a portfólió változása a legutóbbi látogatás óta (előtérbe kerüléskor is).

@@ -2648,6 +2648,11 @@ class AppLocalizationsSn extends AppLocalizations {
       'Kudzikira kukuru kwazvo kwekukosha kwemasheya ako kubva pakakwirira kwakambovapo kusvika pakaderera kwakazotevera, pasina mhedzisiro yekutenga nekutengesa kwako (kwakayerwa nenguva). Kunoratidza kuti potiforiyo yako yakambodzikira zvakadzama sei.';
 
   @override
+  String watchSince(String date) {
+    return 'Kubvira pawakaiwedzera kune zvaunofarira ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Isa chinangwa';
 
   @override

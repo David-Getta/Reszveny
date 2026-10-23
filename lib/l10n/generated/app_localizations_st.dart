@@ -2657,6 +2657,11 @@ class AppLocalizationsSt extends AppLocalizations {
       'Ho theoha ho hoholo ka ho fetisisa ha boleng ba dishere tsa hao ho tloha tlhorong ya pele ho fihla boemong bo tlase ba hamorao, ntle le phello ya ho reka le ho rekisa ha hao (ho lekantswe ka nako). Ho bontsha hore potefolio ya hao e se e theohile ka botebo bo bokae.';
 
   @override
+  String watchSince(String date) {
+    return 'Ho tloha ha o e kentse ho tseo o di ratang ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Beha sepheo';
 
   @override

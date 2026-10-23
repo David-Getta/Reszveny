@@ -2607,6 +2607,11 @@ class AppLocalizationsAm extends AppLocalizations {
       'የአክሲዮኖችዎ ዋጋ ከቀደመ ከፍተኛ ደረጃ ወደ ኋለኛ ዝቅተኛ ደረጃ ያሳየው ትልቁ ማሽቆልቆል፣ የግዢና የሽያጭዎ ተጽዕኖ ሳይካተት (በጊዜ የተመዘነ)። ፖርትፎሊዮዎ እስካሁን ምን ያህል ጥልቅ ውድቀት እንዳሳለፈ ያሳያል።';
 
   @override
+  String watchSince(String date) {
+    return 'ወደ ተወዳጆች ካከሉት ወዲህ ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

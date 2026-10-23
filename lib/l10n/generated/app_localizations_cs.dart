@@ -2703,6 +2703,11 @@ class AppLocalizationsCs extends AppLocalizations {
       'Největší pokles hodnoty vašich akcií z dřívějšího vrcholu na pozdější dno, bez vlivu vašich nákupů a prodejů (časově vážený). Ukazuje, jak hlubokým propadem už vaše portfolio prošlo.';
 
   @override
+  String watchSince(String date) {
+    return 'Od přidání do oblíbených ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastavit cíl';
 
   @override

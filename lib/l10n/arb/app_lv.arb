@@ -801,5 +801,6 @@
   "contributionMissing": "Pozīcijām {symbols} nav pašreizējās cenas: nav iekļautas sadalē.",
   "portfolioGoalEta": "Ja gada ienesīgums saglabāsies ({rate}), mērķi sasniegsiet ap {year}. gadu.",
   "portfolioMaxDrawdown": "Lielākais kritums",
-  "glossMaxDrawdown": "Lielākais jūsu akciju vērtības kritums no agrākas virsotnes līdz vēlākam zemākajam punktam, neņemot vērā jūsu pirkumu un pārdošanas ietekmi (laikā svērts). Tas parāda, cik dziļu kritumu jūsu portfelis jau ir piedzīvojis."
+  "glossMaxDrawdown": "Lielākais jūsu akciju vērtības kritums no agrākas virsotnes līdz vēlākam zemākajam punktam, neņemot vērā jūsu pirkumu un pārdošanas ietekmi (laikā svērts). Tas parāda, cik dziļu kritumu jūsu portfelis jau ir piedzīvojis.",
+  "watchSince": "Kopš pievienošanas izlasei ({date})"
 }

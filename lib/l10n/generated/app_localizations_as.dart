@@ -2639,6 +2639,11 @@ class AppLocalizationsAs extends AppLocalizations {
       'আপোনাৰ শ্বেয়াৰসমূহৰ মূল্যৰ এটা আগৰ শীৰ্ষৰ পৰা পিছৰ এটা নিম্নতম বিন্দুলৈ সৰ্ববৃহৎ পতন, আপোনাৰ ক্ৰয়-বিক্ৰীৰ প্ৰভাৱ বাদ দি (সময়-ভাৰিত)। ই দেখুৱায় যে আপোনাৰ প\'ৰ্টফ\'লিঅ\'ই ইতিমধ্যে কিমান গভীৰ পতনৰ মাজেৰে পাৰ হৈছে।';
 
   @override
+  String watchSince(String date) {
+    return 'প্ৰিয়ত যোগ কৰাৰ পৰা ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য নিৰ্ধাৰণ কৰক';
 
   @override

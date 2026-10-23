@@ -801,5 +801,6 @@
   "contributionMissing": "Amul njëg bu léegi ngir {symbols}: boolewuñu leen ci séddale bi.",
   "portfolioGoalEta": "Su benefis bu at bi desee noonu ({rate}), dinga agsi ci sa jublu ci wetu at {year}.",
   "portfolioMaxDrawdown": "Wàcc gi gëna mag",
-  "glossMaxDrawdown": "Wàcc gi gëna mag ci njëgu sa aksiyoŋ yi, dale ci benn kaw bu jiitu ba ci benn suuf bu ñëw ginnaaw, te say jënd ak say jaay bokkuñu ci (ñu natt ko ci jamono). Dafay wone ni sa aksiyoŋ yi wàcce bu xóot ba léegi."
+  "glossMaxDrawdown": "Wàcc gi gëna mag ci njëgu sa aksiyoŋ yi, dale ci benn kaw bu jiitu ba ci benn suuf bu ñëw ginnaaw, te say jënd ak say jaay bokkuñu ci (ñu natt ko ci jamono). Dafay wone ni sa aksiyoŋ yi wàcce bu xóot ba léegi.",
+  "watchSince": "Li dale ba nga ko yokk ci yi ma gënal ({date})"
 }

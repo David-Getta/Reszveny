@@ -801,5 +801,6 @@
   "contributionMissing": "Ntalo ya sikoyo ezali te mpo na {symbols}: etangami te na bokaboli.",
   "portfolioGoalEta": "Soki litomba ya mobu etikali ndenge wana ({rate}), okokokisa mokano pene na mobu {year}.",
   "portfolioMaxDrawdown": "Kokita ya monene koleka",
-  "glossMaxDrawdown": "Kokita ya monene koleka ya motuya ya ba-action na yo, longwa na likolo moko ya liboso kino na nse moko ya nsima, kozanga kotánga bosombi mpe boteki na yo (epimami na ntango). Emonisaka ndenge portefeuille na yo esilaki kokita na mozindo."
+  "glossMaxDrawdown": "Kokita ya monene koleka ya motuya ya ba-action na yo, longwa na likolo moko ya liboso kino na nse moko ya nsima, kozanga kotánga bosombi mpe boteki na yo (epimami na ntango). Emonisaka ndenge portefeuille na yo esilaki kokita na mozindo.",
+  "watchSince": "Banda obakisaki yango na oyo olingaka ({date})"
 }

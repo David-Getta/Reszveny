@@ -2525,6 +2525,11 @@ class AppLocalizationsZh extends AppLocalizations {
       '您持仓股票市值从此前高点到之后低点的最大跌幅，已剔除买入和卖出的影响（时间加权）。它显示您的投资组合曾经历过多深的下跌。';
 
   @override
+  String watchSince(String date) {
+    return '自添加到收藏以来（$date）';
+  }
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5417,6 +5422,11 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
   @override
   String get glossMaxDrawdown =>
       '你持股市值由先前高位至其後低位的最大跌幅，已剔除買入及賣出的影響（時間加權）。顯示你的投資組合曾經歷過多深的下跌。';
+
+  @override
+  String watchSince(String date) {
+    return '自加入收藏以來（$date）';
+  }
 
   @override
   String get portfolioGoalSet => '設定目標';

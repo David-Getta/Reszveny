@@ -2609,6 +2609,11 @@ class AppLocalizationsTh extends AppLocalizations {
       'การลดลงมากที่สุดของมูลค่าหุ้นที่คุณถือ จากจุดสูงสุดก่อนหน้าไปจนถึงจุดต่ำสุดในภายหลัง โดยไม่นับผลจากการซื้อขายของคุณ (ถ่วงน้ำหนักตามเวลา) แสดงให้เห็นว่าพอร์ตของคุณเคยผ่านการร่วงลงลึกแค่ไหนมาแล้ว';
 
   @override
+  String watchSince(String date) {
+    return 'ตั้งแต่เพิ่มในรายการโปรด ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

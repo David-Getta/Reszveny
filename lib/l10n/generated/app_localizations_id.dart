@@ -2638,6 +2638,11 @@ class AppLocalizationsId extends AppLocalizations {
       'Penurunan terbesar nilai saham Anda dari puncak sebelumnya ke titik terendah sesudahnya, tanpa pengaruh pembelian dan penjualan Anda (tertimbang waktu). Ini menunjukkan seberapa dalam penurunan yang pernah dialami portofolio Anda.';
 
   @override
+  String watchSince(String date) {
+    return 'Sejak ditambahkan ke favorit ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tetapkan target';
 
   @override

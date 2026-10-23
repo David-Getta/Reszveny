@@ -2602,6 +2602,11 @@ class AppLocalizationsTi extends AppLocalizations {
       'ዝዓበየ ውድቀት ዋጋ ኣክስዮናትኩም ካብ ዝቐደመ ጫፍ ክሳብ ዝሰዓበ ትሕተዋይ ደረጃ፡ ብዘይ ጽልዋ ዕድጊትኩምን መሸጣኹምን (ብግዜ ዝተመዘነ)። ፖርትፎሊዮኹም ክሳብ ሕጂ ክንደይ ዝዓሞቐ ውድቀት ከም ዘሕለፈ የርኢ።';
 
   @override
+  String watchSince(String date) {
+    return 'ናብ ዝተፈተዉ ካብ ዝወሰኽኩምዎ ጀሚሩ ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

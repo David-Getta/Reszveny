@@ -2642,6 +2642,11 @@ class AppLocalizationsFi extends AppLocalizations {
       'Osakkeidesi arvon suurin lasku aiemmasta huipusta myöhempään pohjaan ilman ostojesi ja myyntiesi vaikutusta (aikapainotettu). Se näyttää, kuinka syvän notkahduksen salkkusi on jo kokenut.';
 
   @override
+  String watchSince(String date) {
+    return 'Suosikkeihin lisäämisen jälkeen ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

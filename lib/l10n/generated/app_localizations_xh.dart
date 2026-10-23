@@ -2653,6 +2653,11 @@ class AppLocalizationsXh extends AppLocalizations {
       'Ukwehla okukhulu kakhulu kwexabiso lezabelo zakho ukusuka kwincopho yangaphambili ukuya kweyona ndawo iphantsi yamva, ngaphandle kwempembelelo yokuthenga nokuthengisa kwakho (kulinganiswe ngexesha). Kubonisa ukuba ipotifoliyo yakho sele yehle kangakanani ngokunzulu.';
 
   @override
+  String watchSince(String date) {
+    return 'Ukususela oko wasongeza kwezithandwayo ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

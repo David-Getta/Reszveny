@@ -2218,6 +2218,16 @@
   "@glossMaxDrawdown": {
     "description": "Explanation (ⓘ) of the largest drop (maximum drawdown) on the portfolio history card."
   },
+  "watchSince": "Since you added it ({date})",
+  "@watchSince": {
+    "description": "Tooltip on the small percentage under a favorite's price: the price change since the day it was added to the favorites.",
+    "placeholders": {
+      "date": {
+        "type": "String",
+        "example": "Mar 4, 2026"
+      }
+    }
+  },
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

@@ -2641,6 +2641,11 @@ class AppLocalizationsTr extends AppLocalizations {
       'Hisselerinizin değerinin önceki bir zirveden sonraki bir dibe kadar yaşadığı en büyük düşüş; alım ve satımlarınızın etkisi olmadan (zaman ağırlıklı). Portföyünüzün şimdiye kadar ne kadar derin bir düşüş yaşadığını gösterir.';
 
   @override
+  String watchSince(String date) {
+    return 'Favorilere eklediğinizden bu yana ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hedef belirle';
 
   @override

@@ -2659,6 +2659,11 @@ class AppLocalizationsTn extends AppLocalizations {
       'Phokotsego e kgolo thata ya boleng jwa dishere tsa gago go tswa kwa setlhoeng sa pele go ya kwa boemong jo bo kwa tlase jwa moragonyana, kwa ntle ga ditlamorago tsa go reka le go rekisa ga gago (e lekantswe ka nako). E bontsha gore potefolio ya gago e setse e wetse go le kae.';
 
   @override
+  String watchSince(String date) {
+    return 'Go tloga fa o e tsentse mo go tse o di ratang ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Baya maikaelelo';
 
   @override

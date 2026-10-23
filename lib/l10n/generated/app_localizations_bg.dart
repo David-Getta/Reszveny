@@ -2642,6 +2642,11 @@ class AppLocalizationsBg extends AppLocalizations {
       'Най-големият спад в стойността на вашите акции от по-ранен връх до по-късно дъно, без ефекта от вашите покупки и продажби (претеглен по време). Показва колко дълбок спад вече е преживял портфейлът ви.';
 
   @override
+  String watchSince(String date) {
+    return 'От добавянето в любими ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задай цел';
 
   @override

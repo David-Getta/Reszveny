@@ -2635,6 +2635,11 @@ class AppLocalizationsFf extends AppLocalizations {
       'Ustaare ɓurnde mawnude e njoŋdi aksiyonji maa, gila e toownde adiinde haa e lesdi ɓadiindi, tawa soodu e yeeyu maa naatnaaka (peesaande e sahaa). Ina hollira no aksiyonji maa ustiri ko adii.';
 
   @override
+  String watchSince(String date) {
+    return 'Gila nde ɓeyduɗaa ɗum e cuɓaaɗe ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

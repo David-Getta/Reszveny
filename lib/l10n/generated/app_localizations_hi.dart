@@ -2638,6 +2638,11 @@ class AppLocalizationsHi extends AppLocalizations {
       'आपके शेयरों के मूल्य में पहले के किसी शिखर से बाद के किसी निचले स्तर तक की सबसे बड़ी गिरावट, आपकी ख़रीद-बिक्री के असर के बिना (समय-भारित)। यह दिखाती है कि आपका पोर्टफ़ोलियो अब तक कितनी गहरी गिरावट झेल चुका है।';
 
   @override
+  String watchSince(String date) {
+    return 'पसंदीदा में जोड़ने के बाद से ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करें';
 
   @override

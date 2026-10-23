@@ -2646,6 +2646,11 @@ class AppLocalizationsGn extends AppLocalizations {
       'Ne aksiõkuéra repy jeguejy tuichavéva, peteĩ yvatekue guive peteĩ ypykue upéi peve; ne jejogua ha ne ñemu ndojepapái (ojepesáva ára rupi). Ohechauka mba\'eichaitépa ne cartera oguejýma.';
 
   @override
+  String watchSince(String date) {
+    return 'Ojeguerohoryvévape rembojuaju guive ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';
 
   @override

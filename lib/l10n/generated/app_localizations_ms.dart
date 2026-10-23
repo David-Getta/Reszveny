@@ -2645,6 +2645,11 @@ class AppLocalizationsMs extends AppLocalizations {
       'Penurunan terbesar nilai saham anda daripada puncak sebelumnya ke titik terendah selepasnya, tanpa kesan pembelian dan jualan anda (berwajaran masa). Ia menunjukkan sedalam mana kejatuhan yang pernah dilalui portfolio anda.';
 
   @override
+  String watchSince(String date) {
+    return 'Sejak ditambah ke kegemaran ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

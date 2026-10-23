@@ -2651,6 +2651,11 @@ class AppLocalizationsCa extends AppLocalizations {
       'La caiguda més gran del valor de les teves accions des d\'un màxim anterior fins a un mínim posterior, sense l\'efecte de les teves compres i vendes (ponderada en el temps). Mostra com de profunda ha estat la caiguda que ja ha patit la teva cartera.';
 
   @override
+  String watchSince(String date) {
+    return 'Des que la vas afegir als favorits ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Defineix un objectiu';
 
   @override

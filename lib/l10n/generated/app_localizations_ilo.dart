@@ -2662,6 +2662,11 @@ class AppLocalizationsIlo extends AppLocalizations {
       'Ti kadakkelan a panagbaba ti pateg dagiti stock-mo manipud iti maysa a nasapsapa a kangatoan agingga iti maysa a naud-udi a kababaan, nga awan ti epekto dagiti gatang ken lako-mo (time-weighted). Ipakitana no kasano kauneg ti panagbaba a nalasatan ti portfolio-mo.';
 
   @override
+  String watchSince(String date) {
+    return 'Manipud idi inayonmo kadagiti paborito ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

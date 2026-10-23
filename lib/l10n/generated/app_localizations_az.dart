@@ -2642,6 +2642,11 @@ class AppLocalizationsAz extends AppLocalizations {
       'Səhmlərinizin dəyərinin əvvəlki zirvədən sonrakı ən aşağı nöqtəyə qədər ən böyük enişi, alış və satışlarınızın təsiri nəzərə alınmadan (zamana görə çəkili). Portfelinizin artıq nə qədər dərin eniş yaşadığını göstərir.';
 
   @override
+  String watchSince(String date) {
+    return 'Seçilmişlərə əlavə etdiyinizdən bəri ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hədəf təyin et';
 
   @override

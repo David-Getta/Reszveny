@@ -2642,6 +2642,11 @@ class AppLocalizationsCkb extends AppLocalizations {
       'گەورەترین دابەزینی بەهای پشکەکانت لە لووتکەیەکی پێشووەوە بۆ نزمترین خاڵێکی دواتر، بەبێ کاریگەری کڕین و فرۆشتنەکانت (کێشکراو بە کات). نیشان دەدات پۆرتفۆلیۆکەت تا ئێستا چەند دابەزینێکی قووڵی بینیوە.';
 
   @override
+  String watchSince(String date) {
+    return 'لەو کاتەوەی زیادت کرد بۆ دڵخوازەکان ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

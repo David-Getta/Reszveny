@@ -2653,6 +2653,11 @@ class AppLocalizationsCeb extends AppLocalizations {
       'Ang pinakadakong pagkunhod sa bili sa imong mga stock gikan sa usa ka naunang kinatas-an ngadto sa usa ka ulahing kinaubsan, nga walay epekto sa imong pagpalit ug pagbaligya (time-weighted). Gipakita niini kung unsa ka lawom nga pagkunhod ang naagian na sa imong portfolio.';
 
   @override
+  String watchSince(String date) {
+    return 'Sukad nimo kini gidugang sa mga paborito ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

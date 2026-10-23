@@ -2708,6 +2708,11 @@ class AppLocalizationsSk extends AppLocalizations {
       'Najväčší pokles hodnoty vašich akcií z predchádzajúceho vrcholu na neskoršie dno, bez vplyvu vašich nákupov a predajov (časovo vážený). Ukazuje, akým hlbokým prepadom už vaše portfólio prešlo.';
 
   @override
+  String watchSince(String date) {
+    return 'Od pridania do obľúbených ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastaviť cieľ';
 
   @override

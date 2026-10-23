@@ -2650,6 +2650,11 @@ class AppLocalizationsKg extends AppLocalizations {
       'Kukulumuka ya nene kuluta ya ntalu ya ba actions na nge, katuka na zulu ya ntete tii na nsi ya nima, kukonda kutadila kusumba mpi kuteka na nge (bo me tala na ntangu). Yo ke monisa nki mutindu portefeuille na nge me kulumukaka dezia na nsi.';
 
   @override
+  String watchSince(String date) {
+    return 'Banda nge yikaka yo mu bizolwa ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

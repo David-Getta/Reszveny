@@ -801,5 +801,6 @@
   "contributionMissing": "Tewali bbeeyi ya kati eya {symbols}: tegibaliddwa mu kugabanya.",
   "portfolioGoalEta": "Amagoba ga buli mwaka bwe ganaasigala bwe gatyo ({rate}), ojja kutuuka ku kiruubirirwa nga mu mwaka gwa {year}.",
   "portfolioMaxDrawdown": "Okugwa okusinga obunene",
-  "glossMaxDrawdown": "Okugwa okusinga obunene okw'omuwendo gw'emigabo gyo okuva ku ntikko eyasooka okutuuka wansi ennyo oluvannyuma, nga tobaliddemu bye wagula ne bye watunda (kipimiddwa ku biseera). Kiraga emigabo gyo bwe gyakagwa wansi ennyo."
+  "glossMaxDrawdown": "Okugwa okusinga obunene okw'omuwendo gw'emigabo gyo okuva ku ntikko eyasooka okutuuka wansi ennyo oluvannyuma, nga tobaliddemu bye wagula ne bye watunda (kipimiddwa ku biseera). Kiraga emigabo gyo bwe gyakagwa wansi ennyo.",
+  "watchSince": "Okuva lwe wagugattako ku by'oyagala ({date})"
 }

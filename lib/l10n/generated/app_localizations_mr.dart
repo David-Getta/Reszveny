@@ -2639,6 +2639,11 @@ class AppLocalizationsMr extends AppLocalizations {
       'तुमच्या शेअर्सच्या मूल्यात आधीच्या एखाद्या शिखरापासून नंतरच्या एखाद्या नीचांकापर्यंत झालेली सर्वांत मोठी घसरण, तुमच्या खरेदी-विक्रीच्या परिणामाशिवाय (काल-भारित). तुमच्या पोर्टफोलिओने आतापर्यंत किती खोल घसरण अनुभवली आहे हे यातून दिसते.';
 
   @override
+  String watchSince(String date) {
+    return 'आवडत्यांमध्ये जोडल्यापासून ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य ठरवा';
 
   @override

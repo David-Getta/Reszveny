@@ -2643,6 +2643,11 @@ class AppLocalizationsKu extends AppLocalizations {
       'Daketina herî mezin a nirxa pişkên te ji lûtkeyeke berê heta asteke herî nizm a paşê, bêyî bandora kirîn û firotinên te (li gorî demê pîvandî). Nîşan dide ku portfolyoya te heta niha çiqas kûr daketiye.';
 
   @override
+  String watchSince(String date) {
+    return 'Ji dema ku te li bijareyan zêde kir ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

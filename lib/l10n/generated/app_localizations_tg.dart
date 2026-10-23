@@ -2643,6 +2643,11 @@ class AppLocalizationsTg extends AppLocalizations {
       'Бузургтарин афти арзиши саҳмияҳои шумо аз қуллаи пештара то нуқтаи пасттарини баъдӣ, бе таъсири харидҳо ва фурӯшҳои шумо (аз рӯи вақт вазншуда). Нишон медиҳад, ки портфели шумо аллакай чӣ қадар афти амиқро аз сар гузаронидааст.';
 
   @override
+  String watchSince(String date) {
+    return 'Аз замони илова ба интихобшудаҳо ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

@@ -2641,6 +2641,11 @@ class AppLocalizationsNb extends AppLocalizations {
       'Det største fallet i verdien av aksjene dine fra en tidligere topp til en senere bunn, uten effekten av kjøpene og salgene dine (tidsvektet). Det viser hvor dypt et fall porteføljen din allerede har vært gjennom.';
 
   @override
+  String watchSince(String date) {
+    return 'Siden du la den til i favoritter ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sett et mål';
 
   @override

@@ -2682,6 +2682,11 @@ class AppLocalizationsLv extends AppLocalizations {
       'Lielākais jūsu akciju vērtības kritums no agrākas virsotnes līdz vēlākam zemākajam punktam, neņemot vērā jūsu pirkumu un pārdošanas ietekmi (laikā svērts). Tas parāda, cik dziļu kritumu jūsu portfelis jau ir piedzīvojis.';
 
   @override
+  String watchSince(String date) {
+    return 'Kopš pievienošanas izlasei ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

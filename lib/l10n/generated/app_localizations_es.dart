@@ -2647,6 +2647,11 @@ class AppLocalizationsEs extends AppLocalizations {
       'La mayor caída del valor de tus acciones desde un máximo anterior hasta un mínimo posterior, sin el efecto de tus compras y ventas (ponderada en el tiempo). Muestra lo profunda que ha sido la caída que ya ha atravesado tu cartera.';
 
   @override
+  String watchSince(String date) {
+    return 'Desde que la añadiste a favoritos ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Fijar un objetivo';
 
   @override

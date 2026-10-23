@@ -2645,6 +2645,11 @@ class AppLocalizationsAf extends AppLocalizations {
       'Die grootste daling in die waarde van jou aandele van \'n vroeëre hoogtepunt tot \'n latere laagtepunt, sonder die effek van jou aankope en verkope (tydgeweeg). Dit wys hoe diep \'n insinking jou portefeulje al deurgemaak het.';
 
   @override
+  String watchSince(String date) {
+    return 'Sedert jy dit by gunstelinge gevoeg het ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Stel \'n doelwit';
 
   @override

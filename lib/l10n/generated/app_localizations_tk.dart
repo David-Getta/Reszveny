@@ -2642,6 +2642,11 @@ class AppLocalizationsTk extends AppLocalizations {
       'Paýnamalaryňyzyň gymmatynyň öňki iň ýokary derejeden soňky iň pes derejä çenli iň uly pese gaçyşy, satyn alyşlaryňyzyň we satyşlaryňyzyň täsiri hasaba alynmazdan (wagt boýunça agramlandyrylan). Portfeliňiziň eýýäm näçe çuň pese gaçyşy başdan geçirendigini görkezýär.';
 
   @override
+  String watchSince(String date) {
+    return 'Saýlananlara goşanyňyzdan bäri ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

@@ -2638,6 +2638,11 @@ class AppLocalizationsPa extends AppLocalizations {
       'ਤੁਹਾਡੇ ਸ਼ੇਅਰਾਂ ਦੇ ਮੁੱਲ ਵਿੱਚ ਪਹਿਲਾਂ ਦੇ ਕਿਸੇ ਸਿਖਰ ਤੋਂ ਬਾਅਦ ਦੇ ਕਿਸੇ ਹੇਠਲੇ ਪੱਧਰ ਤੱਕ ਦੀ ਸਭ ਤੋਂ ਵੱਡੀ ਗਿਰਾਵਟ, ਤੁਹਾਡੀ ਖ਼ਰੀਦ-ਵਿਕਰੀ ਦੇ ਅਸਰ ਤੋਂ ਬਿਨਾਂ (ਸਮਾਂ-ਭਾਰਿਤ)। ਇਹ ਦਿਖਾਉਂਦੀ ਹੈ ਕਿ ਤੁਹਾਡਾ ਪੋਰਟਫ਼ੋਲੀਓ ਹੁਣ ਤੱਕ ਕਿੰਨੀ ਡੂੰਘੀ ਗਿਰਾਵਟ ਝੱਲ ਚੁੱਕਾ ਹੈ।';
 
   @override
+  String watchSince(String date) {
+    return 'ਮਨਪਸੰਦ ਵਿੱਚ ਸ਼ਾਮਲ ਕਰਨ ਤੋਂ ਬਾਅਦ ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ਟੀਚਾ ਤੈਅ ਕਰੋ';
 
   @override

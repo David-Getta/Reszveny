@@ -2661,6 +2661,11 @@ class AppLocalizationsMk extends AppLocalizations {
       'Најголемиот пад на вредноста на вашите акции од претходен врв до подоцнежно дно, без влијание на вашите купувања и продажби (временски пондерирано). Покажува колку длабок пад веќе преживеало вашето портфолио.';
 
   @override
+  String watchSince(String date) {
+    return 'Од додавањето во омилени ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Постави цел';
 
   @override

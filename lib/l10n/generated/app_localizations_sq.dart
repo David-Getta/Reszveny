@@ -2646,6 +2646,11 @@ class AppLocalizationsSq extends AppLocalizations {
       'Rënia më e madhe e vlerës së aksioneve tuaja nga një kulm i mëparshëm në një minimum të mëvonshëm, pa efektin e blerjeve dhe shitjeve tuaja (e ponderuar me kohën). Tregon sa të thellë rënie ka kaluar tashmë portofoli juaj.';
 
   @override
+  String watchSince(String date) {
+    return 'Që kur e shtuat te të preferuarat ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

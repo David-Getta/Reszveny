@@ -2639,6 +2639,11 @@ class AppLocalizationsBm extends AppLocalizations {
       'I ka aksiyɔnw sɔngɔ jigin belebeba, ka bɔ sanfɛla dɔ la min tun bɛ yen fɔlɔ ka taa se duguma dɔ ma min nana kɔfɛ, i ka sanni ni i ka feereli nɔ tɛ jate a la (waati hakɛ jatelen). A bɛ a jira i ka aksiyɔn kɛsu jiginna ka taa duguma cogo min fɔlɔ.';
 
   @override
+  String watchSince(String date) {
+    return 'Kabini i y\'a fara diyanyelenw kan ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

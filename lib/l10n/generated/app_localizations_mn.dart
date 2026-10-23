@@ -2641,6 +2641,11 @@ class AppLocalizationsMn extends AppLocalizations {
       'Таны хувьцаануудын үнэ цэнийн өмнөх оргилоос дараагийн хамгийн доод цэг хүртэлх хамгийн их уналт, таны худалдан авалт, борлуулалтын нөлөөгүйгээр (хугацаагаар жигнэсэн). Таны портфолио өнөөг хүртэл хэр гүн уналтыг туулсныг харуулна.';
 
   @override
+  String watchSince(String date) {
+    return 'Дуртайд нэмснээс хойш ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

@@ -801,5 +801,6 @@
   "contributionMissing": "{symbols}暂无当前价格，未纳入分配。",
   "portfolioGoalEta": "若年化收益率保持不变（{rate}），预计约 {year} 年达成目标。",
   "portfolioMaxDrawdown": "最大回撤",
-  "glossMaxDrawdown": "您持仓股票市值从此前高点到之后低点的最大跌幅，已剔除买入和卖出的影响（时间加权）。它显示您的投资组合曾经历过多深的下跌。"
+  "glossMaxDrawdown": "您持仓股票市值从此前高点到之后低点的最大跌幅，已剔除买入和卖出的影响（时间加权）。它显示您的投资组合曾经历过多深的下跌。",
+  "watchSince": "自添加到收藏以来（{date}）"
 }

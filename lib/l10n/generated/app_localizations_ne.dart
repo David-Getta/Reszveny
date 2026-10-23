@@ -2639,6 +2639,11 @@ class AppLocalizationsNe extends AppLocalizations {
       'तपाईंका सेयरहरूको मूल्यमा पहिलेको कुनै उच्च बिन्दुबाट पछिको कुनै न्यून बिन्दुसम्मको सबैभन्दा ठूलो गिरावट, तपाईंको किनबेचको प्रभावबिना (समय-भारित)। यसले तपाईंको पोर्टफोलियोले अहिलेसम्म कति गहिरो गिरावट भोगिसकेको छ भनेर देखाउँछ।';
 
   @override
+  String watchSince(String date) {
+    return 'मनपर्नेमा थपेदेखि ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तोक्नुहोस्';
 
   @override

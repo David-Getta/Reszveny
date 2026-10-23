@@ -14,6 +14,62 @@ import 'app_widget_test.dart' show services;
 void main() {
   setUp(() => SharedPreferences.setMockInitialValues({}));
 
+  test('favorites remember the day they were added; removing forgets it; sync keeps the earlier day', () async {
+    final prefs = AppPreferences();
+    await prefs.toggleFavorite('aapl');
+    final now = DateTime.now();
+    expect(prefs.favoriteSince('AAPL'), DateTime(now.year, now.month, now.day));
+    await prefs.toggleFavorite('AAPL');
+    expect(prefs.favoriteSince('AAPL'), isNull);
+    await prefs.addSymbols(['MSFT']);
+    expect((await AppPreferences.load()).favoriteSince('MSFT'), isNotNull, reason: 'tárolva');
+    expect(AppPreferences.parseFavoriteSince({'x': 'bad', 'nvda': '2026-01-05'}), {'NVDA': DateTime(2026, 1, 5)});
+    final merged = SyncService.merge(
+      {
+        'favorites': ['A'],
+        'favorite_since': {'A': '2026-03-01', 'B': '2026-02-01'},
+      },
+      {
+        'favorites': ['A'],
+        'favorite_since': {'A': '2026-01-01'},
+      },
+    );
+    expect(merged['favorite_since'], {'A': '2026-01-01', 'B': '2026-02-01'});
+    // A szinkron csak a kedvencekhez tartja meg.
+    await prefs.setFavorites(['A']);
+    await prefs.setFavoriteSince(AppPreferences.parseFavoriteSince(merged['favorite_since']));
+    expect((prefs.favoriteSince('A'), prefs.favoriteSince('B')), (DateTime(2026, 1, 1), null));
+    await prefs.clearPersonalData();
+    expect(prefs.favoriteSince('A'), isNull);
+  });
+
+  testWidgets('a favorite shows how its price moved since it was added; undo keeps the day', (tester) async {
+    tester.view.physicalSize = const Size(1200, 2400);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.reset);
+    final added = DateTime.now().subtract(const Duration(days: 60));
+    final day = DateTime(added.year, added.month, added.day);
+    final s = services(
+      preferences: AppPreferences(favorites: ['AAPL', 'MSFT'], favoriteSince: {'AAPL': day}),
+    );
+    await tester.pumpWidget(WhatStockApp(services: s));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('favorites-see-all')));
+    await tester.pumpAndSettle();
+    expect(find.byKey(const ValueKey('watch-since-AAPL')), findsOneWidget);
+    expect(
+      find.byKey(const ValueKey('watch-since-MSFT')),
+      findsNothing,
+      reason: 'régebbi kedvenc: nincs felvételi nap',
+    );
+    await tester.drag(find.byKey(const ValueKey('watch-AAPL')), const Offset(-600, 0));
+    await tester.pumpAndSettle();
+    expect(s.preferences.favoriteSince('AAPL'), isNull);
+    await tester.tap(find.text('Undo'));
+    await tester.pumpAndSettle();
+    expect(s.preferences.favoriteSince('AAPL'), day);
+  });
+
   testWidgets('the favorites page: sort by daily change, remove with undo, reorder', (tester) async {
     tester.view.physicalSize = const Size(1200, 2400);
     tester.view.devicePixelRatio = 1;

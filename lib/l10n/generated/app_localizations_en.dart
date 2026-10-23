@@ -2638,6 +2638,11 @@ class AppLocalizationsEn extends AppLocalizations {
       'The biggest fall of your holdings from an earlier high to a later low, without the effect of your buying and selling (time-weighted). It shows how deep a dip your portfolio has already been through.';
 
   @override
+  String watchSince(String date) {
+    return 'Since you added it ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Set a goal';
 
   @override

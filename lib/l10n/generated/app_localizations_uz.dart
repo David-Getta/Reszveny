@@ -2645,6 +2645,11 @@ class AppLocalizationsUz extends AppLocalizations {
       'Aksiyalaringiz qiymatining avvalgi choʻqqidan keyingi eng past nuqtagacha boʻlgan eng katta pasayishi, xarid va sotuvlaringiz taʼsirisiz (vaqt boʻyicha tortilgan). Portfelingiz allaqachon qanchalik chuqur pasayishni boshidan kechirganini koʻrsatadi.';
 
   @override
+  String watchSince(String date) {
+    return 'Sevimlilarga qoʻshilgandan beri ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

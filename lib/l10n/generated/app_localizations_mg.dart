@@ -2660,6 +2660,11 @@ class AppLocalizationsMg extends AppLocalizations {
       'Ny fidinana lehibe indrindra amin\'ny sandan\'ny aksionao, avy amin\'ny tampony teo aloha ka hatramin\'ny ambany indrindra taty aoriana, tsy misy ny fiantraikan\'ny fividiananao sy ny fivarotanao (voalanja araka ny fotoana). Asehony ny halalin\'ny fidinana efa niainan\'ny kitapom-bolanao.';
 
   @override
+  String watchSince(String date) {
+    return 'Hatramin\'ny nanampianao azy amin\'ny ankafizina ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

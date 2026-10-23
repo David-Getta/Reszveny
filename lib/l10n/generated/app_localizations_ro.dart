@@ -2680,6 +2680,11 @@ class AppLocalizationsRo extends AppLocalizations {
       'Cea mai mare scădere a valorii acțiunilor tale de la un vârf anterior la un minim ulterior, fără efectul cumpărărilor și vânzărilor tale (ponderată în timp). Arată cât de adâncă a fost scăderea prin care a trecut deja portofoliul tău.';
 
   @override
+  String watchSince(String date) {
+    return 'De la adăugarea la favorite ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

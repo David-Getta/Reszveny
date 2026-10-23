@@ -801,5 +801,6 @@
   "contributionMissing": "{symbols} uchun joriy narx yoʻq: taqsimotga kiritilmadi.",
   "portfolioGoalEta": "Yillik daromadlilik shunday saqlansa ({rate}), maqsadga taxminan {year}-yilda erishasiz.",
   "portfolioMaxDrawdown": "Eng katta pasayish",
-  "glossMaxDrawdown": "Aksiyalaringiz qiymatining avvalgi choʻqqidan keyingi eng past nuqtagacha boʻlgan eng katta pasayishi, xarid va sotuvlaringiz taʼsirisiz (vaqt boʻyicha tortilgan). Portfelingiz allaqachon qanchalik chuqur pasayishni boshidan kechirganini koʻrsatadi."
+  "glossMaxDrawdown": "Aksiyalaringiz qiymatining avvalgi choʻqqidan keyingi eng past nuqtagacha boʻlgan eng katta pasayishi, xarid va sotuvlaringiz taʼsirisiz (vaqt boʻyicha tortilgan). Portfelingiz allaqachon qanchalik chuqur pasayishni boshidan kechirganini koʻrsatadi.",
+  "watchSince": "Sevimlilarga qoʻshilgandan beri ({date})"
 }

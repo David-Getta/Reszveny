@@ -801,5 +801,6 @@
   "contributionMissing": "Ulac ssuma tamirant i {symbols}: ur ttwaḥesben ara deg beṭṭu.",
   "portfolioGoalEta": "Ma yeqqim ufaris n useggas akka ({rate}), ad tawḍeḍ ɣer yiswi qrib deg useggas {year}.",
   "portfolioMaxDrawdown": "Asubu ameqqran",
-  "glossMaxDrawdown": "Asubu ameqqran n wazal n yiksyunen-ik seg usawen yezwaren ar wadda i d-yusan sakin, war ma nḥesb ayen i d-teɣiḍ d wayen i tzenzeḍ (yettwaktal s wakud). Yesskanay acḥal i yeɣli uqrab-ik yakan."
+  "glossMaxDrawdown": "Asubu ameqqran n wazal n yiksyunen-ik seg usawen yezwaren ar wadda i d-yusan sakin, war ma nḥesb ayen i d-teɣiḍ d wayen i tzenzeḍ (yettwaktal s wakud). Yesskanay acḥal i yeɣli uqrab-ik yakan.",
+  "watchSince": "Seg wasmi i t-ternuḍ ɣer yismenyifen ({date})"
 }

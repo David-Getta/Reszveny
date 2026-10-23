@@ -801,5 +801,6 @@
   "contributionMissing": "Sem preço atual para {symbols}: ficam fora da distribuição.",
   "portfolioGoalEta": "Se a rentabilidade anual se mantiver ({rate}), atingirá a meta por volta de {year}.",
   "portfolioMaxDrawdown": "Queda máxima",
-  "glossMaxDrawdown": "A maior queda do valor das suas ações de um pico anterior até um fundo posterior, sem o efeito das suas compras e vendas (ponderada pelo tempo). Mostra o quão profunda foi a queda que a sua carteira já atravessou."
+  "glossMaxDrawdown": "A maior queda do valor das suas ações de um pico anterior até um fundo posterior, sem o efeito das suas compras e vendas (ponderada pelo tempo). Mostra o quão profunda foi a queda que a sua carteira já atravessou.",
+  "watchSince": "Desde que a adicionou aos favoritos ({date})"
 }

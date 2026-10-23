@@ -2710,6 +2710,11 @@ class AppLocalizationsSl extends AppLocalizations {
       'Največji padec vrednosti vaših delnic od prejšnjega vrha do poznejšega dna, brez vpliva vaših nakupov in prodaj (časovno tehtano). Pokaže, kako globok padec je vaš portfelj že doživel.';
 
   @override
+  String watchSince(String date) {
+    return 'Od dodajanja med priljubljene ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastavi cilj';
 
   @override

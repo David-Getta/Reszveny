@@ -2661,6 +2661,11 @@ class AppLocalizationsTs extends AppLocalizations {
       'Ku hunguteka lokukulu ngopfu ka nkoka wa tixere ta wena ku suka eka nhlohlorhi ya khale ku ya eka xiyimo xa le hansi ngopfu xa endzhaku, handle ka vuyelo bya ku xava ni ku xavisa ka wena (ku pimiwile hi nkarhi). Swi kombisa leswaku phothifoliyo ya wena se yi tshame yi hunguteka ku fika kwihi.';
 
   @override
+  String watchSince(String date) {
+    return 'Ku sukela loko u yi engetele eka leswi u swi rhandzaka ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Veka xikongomelo';
 
   @override

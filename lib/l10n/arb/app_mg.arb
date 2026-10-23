@@ -801,5 +801,6 @@
   "contributionMissing": "Tsy misy vidiny ankehitriny ho an'ny {symbols}: tsy tafiditra amin'ny fizarana.",
   "portfolioGoalEta": "Raha mitoetra toy izao ny tombony isan-taona ({rate}), ho tratranao ny tanjona manodidina ny taona {year}.",
   "portfolioMaxDrawdown": "Fidinana lehibe indrindra",
-  "glossMaxDrawdown": "Ny fidinana lehibe indrindra amin'ny sandan'ny aksionao, avy amin'ny tampony teo aloha ka hatramin'ny ambany indrindra taty aoriana, tsy misy ny fiantraikan'ny fividiananao sy ny fivarotanao (voalanja araka ny fotoana). Asehony ny halalin'ny fidinana efa niainan'ny kitapom-bolanao."
+  "glossMaxDrawdown": "Ny fidinana lehibe indrindra amin'ny sandan'ny aksionao, avy amin'ny tampony teo aloha ka hatramin'ny ambany indrindra taty aoriana, tsy misy ny fiantraikan'ny fividiananao sy ny fivarotanao (voalanja araka ny fotoana). Asehony ny halalin'ny fidinana efa niainan'ny kitapom-bolanao.",
+  "watchSince": "Hatramin'ny nanampianao azy amin'ny ankafizina ({date})"
 }

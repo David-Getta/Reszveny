@@ -2651,6 +2651,11 @@ class AppLocalizationsOm extends AppLocalizations {
       'Gadi bu\'iinsa gatii aksiyoonota keetii isa guddaa, ol aantummaa duraa irraa hanga gadi aantummaa booda jiruutti, dhiibbaa bittaa fi gurgurtaa keetiin ala (yeroon madaalame). Poortfooliyoon kee hanga ammaatti gadi bu\'iinsa hammam gadi fagoo keessa akka darbe agarsiisa.';
 
   @override
+  String watchSince(String date) {
+    return 'Erga filatamootti dabaltee as ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

@@ -2642,6 +2642,11 @@ class AppLocalizationsSw extends AppLocalizations {
       'Kushuka kukubwa zaidi kwa thamani ya hisa zako kutoka kilele cha awali hadi kiwango cha chini cha baadaye, bila athari ya ununuzi na mauzo yako (kumepimwa kwa muda). Kunaonyesha jinsi jalada lako la hisa lilivyokwisha kushuka kwa kina.';
 
   @override
+  String watchSince(String date) {
+    return 'Tangu ulipoiongeza kwenye vipendwa ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

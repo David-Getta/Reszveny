@@ -2685,6 +2685,11 @@ class AppLocalizationsBs extends AppLocalizations {
       'Najveći pad vrijednosti vaših dionica s ranijeg vrha na kasnije dno, bez uticaja vaših kupovina i prodaja (vremenski ponderisano). Pokazuje koliko je dubok pad vaš portfolio već preživio.';
 
   @override
+  String watchSince(String date) {
+    return 'Od dodavanja u favorite ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Postavi cilj';
 
   @override

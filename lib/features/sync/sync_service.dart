@@ -133,6 +133,7 @@ class SyncService extends ChangeNotifier {
     'email_alerts': preferences.emailAlerts,
     'weekly_digest': preferences.weeklyDigest,
     'favorites': preferences.favorites,
+    'favorite_since': preferences.favoriteSinceJson,
     'watch_lists': [for (final l in preferences.watchLists) l.toJson()],
     if (preferences.targets.isNotEmpty) 'targets': preferences.targets,
     'goals': preferences.goalsJson,
@@ -198,6 +199,17 @@ class SyncService extends ChangeNotifier {
       'watch_lists': _mergeLists(local['watch_lists'], remote['watch_lists']),
       // Célarányok: tickerenként a helyi nyer.
       'targets': {...AppPreferences.parseTargets(remote['targets']), ...AppPreferences.parseTargets(local['targets'])},
+      // Kedvencenként a korábbi felvételi nap.
+      'favorite_since': {
+        for (final e in {
+          ...AppPreferences.parseFavoriteSince(remote['favorite_since']),
+          ...AppPreferences.parseFavoriteSince(local['favorite_since']),
+        }.entries)
+          e.key: [
+            ?AppPreferences.parseFavoriteSince(remote['favorite_since'])[e.key],
+            ?AppPreferences.parseFavoriteSince(local['favorite_since'])[e.key],
+          ].reduce((a, b) => a.isBefore(b) ? a : b).toIso8601String().substring(0, 10),
+      },
       'goals': mergeGoals(local['goals'], remote['goals']),
       'lots': byId(local['lots'], remote['lots']),
       'dividends': byId(local['dividends'], remote['dividends']),
@@ -316,6 +328,10 @@ class SyncService extends ChangeNotifier {
         if (e is Map) e.cast<String, dynamic>(),
     ];
     await preferences.setFavorites([for (final f in (data['favorites'] as List? ?? const [])) '$f']);
+    // Régi csomagban nincs felvételi nap: akkor a helyiek maradnak (a kedvencekre szűkítve).
+    if (data['favorite_since'] is Map) {
+      await preferences.setFavoriteSince(AppPreferences.parseFavoriteSince(data['favorite_since']));
+    }
     // Régi csomagban nincs ilyen mező: akkor a helyi listák maradnak.
     if (data['watch_lists'] is List) {
       await preferences.setWatchLists([for (final l in data['watch_lists'] as List) ?WatchList.fromJson(l)]);

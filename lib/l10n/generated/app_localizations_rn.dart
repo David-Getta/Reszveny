@@ -2649,6 +2649,11 @@ class AppLocalizationsRn extends AppLocalizations {
       'Igabanuka rinini kuruta ayandi ry\'agaciro k\'imigabane yawe, kuva ku gasongero ka mbere gushika ku rugero rwo hasi rwa nyuma, hatitawe ku vyo waguze n\'ivyo wagurishije (bipimwe hakurikijwe igihe). Rierekana ingene ishoramari ryawe ryamaze kumanuka cane.';
 
   @override
+  String watchSince(String date) {
+    return 'Kuva wawushira mu vyo ukunda ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Shiraho intumbero';
 
   @override

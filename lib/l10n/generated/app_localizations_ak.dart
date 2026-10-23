@@ -2642,6 +2642,11 @@ class AppLocalizationsAk extends AppLocalizations {
       'Wo nkyɛfa no bo tɔ a ɛsõ koraa, efi soro bi a ɛduruu kan kosi fam bi a ɛbaa akyiri, a wo adetɔ ne wo adetɔn nka ho (wɔakari no bere so). Ɛkyerɛ sɛnea wo nkyɛfa nyinaa bo atɔ akɔ fam dedaw.';
 
   @override
+  String watchSince(String date) {
+    return 'Efi bere a wode kaa nea mepɛ ho ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';
 
   @override

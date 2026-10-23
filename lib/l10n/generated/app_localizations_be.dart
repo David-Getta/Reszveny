@@ -2708,6 +2708,11 @@ class AppLocalizationsBe extends AppLocalizations {
       'Найбольшае падзенне кошту вашых акцый ад ранейшага піку да пазнейшага мінімуму без уплыву вашых купляў і продажаў (узважана па часе). Паказвае, наколькі глыбокую прасадку ваш партфель ужо перажыў.';
 
   @override
+  String watchSince(String date) {
+    return 'З часу дадання ў абранае ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задаць мэту';
 
   @override

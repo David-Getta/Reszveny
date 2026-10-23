@@ -2637,6 +2637,11 @@ class AppLocalizationsOr extends AppLocalizations {
       'ଆପଣଙ୍କ ସେୟାରର ମୂଲ୍ୟରେ ପୂର୍ବର ଏକ ଶୀର୍ଷ ସ୍ତରରୁ ପରବର୍ତ୍ତୀ ଏକ ନିମ୍ନ ସ୍ତର ପର୍ଯ୍ୟନ୍ତ ସବୁଠୁ ବଡ଼ ପତନ, ଆପଣଙ୍କ କିଣାବିକାର ପ୍ରଭାବ ବିନା (ସମୟ-ଭାରିତ)। ଆପଣଙ୍କ ପୋର୍ଟଫୋଲିଓ ଏଯାବତ୍ କେତେ ଗଭୀର ପତନ ଦେଇ ଗତି କରିସାରିଛି ତାହା ଏହା ଦେଖାଏ।';
 
   @override
+  String watchSince(String date) {
+    return 'ପସନ୍ଦରେ ଯୋଡ଼ିବା ପରଠାରୁ ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'ଲକ୍ଷ୍ୟ ସ୍ଥିର କରନ୍ତୁ';
 
   @override

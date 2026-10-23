@@ -2649,6 +2649,11 @@ class AppLocalizationsHy extends AppLocalizations {
       'Ձեր բաժնետոմսերի արժեքի ամենամեծ անկումը ավելի վաղ գագաթնակետից մինչև ավելի ուշ նվազագույն կետ՝ առանց ձեր գնումների և վաճառքների ազդեցության (ժամանակով կշռված)։ Այն ցույց է տալիս, թե որքան խորը անկում է արդեն ապրել ձեր պորտֆելը։';
 
   @override
+  String watchSince(String date) {
+    return 'Ընտրյալներում ավելացնելուց ի վեր ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

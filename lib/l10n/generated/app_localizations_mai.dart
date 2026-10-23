@@ -2633,6 +2633,11 @@ class AppLocalizationsMai extends AppLocalizations {
       'अहाँक शेयरक मूल्यमे पहिलुका कोनो शिखरसँ बादक कोनो निचला स्तर धरिक सभसँ पैघ गिरावट, अहाँक कीनब-बेचबक प्रभावक बिना (समय-भारित)। ई देखबैत अछि जे अहाँक पोर्टफ़ोलियो एखन धरि कतेक गहींर गिरावट झेलि चुकल अछि।';
 
   @override
+  String watchSince(String date) {
+    return 'पसंदीदामे जोड़लाक बादसँ ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य निर्धारित करू';
 
   @override

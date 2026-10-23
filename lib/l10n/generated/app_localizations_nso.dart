@@ -2659,6 +2659,11 @@ class AppLocalizationsNso extends AppLocalizations {
       'Theogo ye kgolo kudu ya boleng bja dišere tša gago go tloga sehloeng sa pele go fihla boemong bja fase kudu bja ka morago, ntle le khuetšo ya go reka le go rekiša ga gago (e lekanyeditšwe go ya ka nako). E bontšha gore photefolio ya gago e šetše e theogile ka mo go tseneletšego gakaakang.';
 
   @override
+  String watchSince(String date) {
+    return 'Go tloga ge o e okeditše go tše di ratwago ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Bea maikemišetšo';
 
   @override

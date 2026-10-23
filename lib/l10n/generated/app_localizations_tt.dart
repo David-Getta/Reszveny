@@ -2638,6 +2638,11 @@ class AppLocalizationsTt extends AppLocalizations {
       'Акцияләрегез кыйммәтенең элеккеге иң югары ноктадан соңрак иң түбән ноктага кадәр иң зур төшүе, сатып алуларыгыз һәм сатуларыгызның йогынтысыннан башка (вакыт буенча үлчәнгән). Портфелегезнең инде никадәр тирән төшүне кичергәнен күрсәтә.';
 
   @override
+  String watchSince(String date) {
+    return 'Сайланмаларга өстәгәннән бирле ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Максат кую';
 
   @override

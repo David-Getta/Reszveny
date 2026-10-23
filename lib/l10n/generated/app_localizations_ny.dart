@@ -2649,6 +2649,11 @@ class AppLocalizationsNy extends AppLocalizations {
       'Kutsika kwakukulu kwambiri kwa mtengo wa masheya anu kuchokera pamwamba pomwe munali kale kufika pansi pomwe panabwera pambuyo pake, popanda zotsatira za kugula ndi kugulitsa kwanu (koyezedwa malinga ndi nthawi). Kumasonyeza kuti masheya anu atsika mozama bwanji kale.';
 
   @override
+  String watchSince(String date) {
+    return 'Kuyambira pamene munaiwonjeza ku zokondedwa ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

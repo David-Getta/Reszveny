@@ -2655,6 +2655,11 @@ class AppLocalizationsDe extends AppLocalizations {
       'Der größte Rückgang des Werts deiner Aktien von einem früheren Hoch bis zu einem späteren Tief, ohne den Effekt deiner Käufe und Verkäufe (zeitgewichtet). Er zeigt, wie tief dein Portfolio schon einmal eingebrochen ist.';
 
   @override
+  String watchSince(String date) {
+    return 'Seit dem Hinzufügen zu den Favoriten ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ziel festlegen';
 
   @override

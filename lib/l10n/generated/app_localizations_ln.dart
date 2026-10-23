@@ -2652,6 +2652,11 @@ class AppLocalizationsLn extends AppLocalizations {
       'Kokita ya monene koleka ya motuya ya ba-action na yo, longwa na likolo moko ya liboso kino na nse moko ya nsima, kozanga kotánga bosombi mpe boteki na yo (epimami na ntango). Emonisaka ndenge portefeuille na yo esilaki kokita na mozindo.';
 
   @override
+  String watchSince(String date) {
+    return 'Banda obakisaki yango na oyo olingaka ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

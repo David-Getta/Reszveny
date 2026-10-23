@@ -2633,6 +2633,11 @@ class AppLocalizationsHe extends AppLocalizations {
       'הירידה הגדולה ביותר בשווי המניות שלך משיא קודם לשפל מאוחר יותר, בלי השפעת הקניות והמכירות שלך (משוקללת זמן). היא מראה כמה עמוקה הייתה הצניחה שהתיק שלך כבר עבר.';
 
   @override
+  String watchSince(String date) {
+    return 'מאז ההוספה למועדפים ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'הגדרת יעד';
 
   @override

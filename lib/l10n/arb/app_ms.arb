@@ -801,5 +801,6 @@
   "contributionMissing": "Tiada harga semasa untuk {symbols}: tidak dimasukkan dalam pembahagian.",
   "portfolioGoalEta": "Jika pulangan tahunan kekal ({rate}), anda akan mencapai sasaran sekitar tahun {year}.",
   "portfolioMaxDrawdown": "Penurunan terbesar",
-  "glossMaxDrawdown": "Penurunan terbesar nilai saham anda daripada puncak sebelumnya ke titik terendah selepasnya, tanpa kesan pembelian dan jualan anda (berwajaran masa). Ia menunjukkan sedalam mana kejatuhan yang pernah dilalui portfolio anda."
+  "glossMaxDrawdown": "Penurunan terbesar nilai saham anda daripada puncak sebelumnya ke titik terendah selepasnya, tanpa kesan pembelian dan jualan anda (berwajaran masa). Ia menunjukkan sedalam mana kejatuhan yang pernah dilalui portfolio anda.",
+  "watchSince": "Sejak ditambah ke kegemaran ({date})"
 }

@@ -801,5 +801,6 @@
   "contributionMissing": "{symbols} üçün cari qiymət yoxdur: bölgüyə daxil edilmir.",
   "portfolioGoalEta": "İllik gəlirlilik belə qalsa ({rate}), hədəfə təxminən {year} ilində çatarsınız.",
   "portfolioMaxDrawdown": "Ən böyük eniş",
-  "glossMaxDrawdown": "Səhmlərinizin dəyərinin əvvəlki zirvədən sonrakı ən aşağı nöqtəyə qədər ən böyük enişi, alış və satışlarınızın təsiri nəzərə alınmadan (zamana görə çəkili). Portfelinizin artıq nə qədər dərin eniş yaşadığını göstərir."
+  "glossMaxDrawdown": "Səhmlərinizin dəyərinin əvvəlki zirvədən sonrakı ən aşağı nöqtəyə qədər ən böyük enişi, alış və satışlarınızın təsiri nəzərə alınmadan (zamana görə çəkili). Portfelinizin artıq nə qədər dərin eniş yaşadığını göstərir.",
+  "watchSince": "Seçilmişlərə əlavə etdiyinizdən bəri ({date})"
 }

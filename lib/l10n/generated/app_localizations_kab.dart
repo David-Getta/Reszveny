@@ -2639,6 +2639,11 @@ class AppLocalizationsKab extends AppLocalizations {
       'Asubu ameqqran n wazal n yiksyunen-ik seg usawen yezwaren ar wadda i d-yusan sakin, war ma nḥesb ayen i d-teɣiḍ d wayen i tzenzeḍ (yettwaktal s wakud). Yesskanay acḥal i yeɣli uqrab-ik yakan.';
 
   @override
+  String watchSince(String date) {
+    return 'Seg wasmi i t-ternuḍ ɣer yismenyifen ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

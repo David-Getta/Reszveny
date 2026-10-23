@@ -2635,6 +2635,11 @@ class AppLocalizationsBho extends AppLocalizations {
       'राउर शेयरन के मूल्य में पहिले के कवनो ऊँचाई से बाद के कवनो निचला स्तर तक के सबसे बड़ गिरावट, राउर खरीद-बिक्री के असर के बिना (समय-भारित)। ई देखावेला कि राउर पोर्टफ़ोलियो अब तक कतना गहिराह गिरावट झेल चुकल बा।';
 
   @override
+  String watchSince(String date) {
+    return 'पसंदीदा में जोड़ला के बाद से ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करीं';
 
   @override

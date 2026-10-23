@@ -2634,6 +2634,11 @@ class AppLocalizationsWo extends AppLocalizations {
       'Wàcc gi gëna mag ci njëgu sa aksiyoŋ yi, dale ci benn kaw bu jiitu ba ci benn suuf bu ñëw ginnaaw, te say jënd ak say jaay bokkuñu ci (ñu natt ko ci jamono). Dafay wone ni sa aksiyoŋ yi wàcce bu xóot ba léegi.';
 
   @override
+  String watchSince(String date) {
+    return 'Li dale ba nga ko yokk ci yi ma gënal ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

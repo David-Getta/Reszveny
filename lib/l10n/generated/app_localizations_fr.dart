@@ -2653,6 +2653,11 @@ class AppLocalizationsFr extends AppLocalizations {
       'La plus forte baisse de la valeur de vos actions entre un sommet antérieur et un creux ultérieur, sans l\'effet de vos achats et ventes (pondérée par le temps). Elle montre la profondeur du repli que votre portefeuille a déjà traversé.';
 
   @override
+  String watchSince(String date) {
+    return 'Depuis l’ajout aux favoris ($date)';
+  }
+
+  @override
   String get portfolioGoalSet => 'Définir un objectif';
 
   @override
