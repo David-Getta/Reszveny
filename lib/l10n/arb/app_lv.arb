@@ -805,5 +805,7 @@
   "watchSince": "Kopš pievienošanas izlasei ({date})",
   "portfolioSampleTry": "Izmēģināt ar parauga portfeli",
   "portfolioSampleBanner": "Šis ir parauga portfelis. Pievienojiet tam blakus savus pirkumus vai noņemiet to.",
-  "portfolioSampleRemove": "Noņemt paraugu"
+  "portfolioSampleRemove": "Noņemt paraugu",
+  "portfolioStopsAll": "Krituma no virsotnes brīdinājums visām pozīcijām",
+  "portfolioStopsDone": "{count, plural, =0{Visām pozīcijām jau ir šis brīdinājums} =1{Iestatīts 1 brīdinājums} zero{Iestatīti {count} brīdinājumi} one{Iestatīts {count} brīdinājums} other{Iestatīti {count} brīdinājumi}}"
 }

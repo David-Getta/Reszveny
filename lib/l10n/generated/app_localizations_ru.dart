@@ -2725,6 +2725,23 @@ class AppLocalizationsRu extends AppLocalizations {
   String get portfolioSampleRemove => 'Удалить демо-портфель';
 
   @override
+  String get portfolioStopsAll => 'Трейлинг-стоп для всех позиций';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Установлено $count трейлинг-стопа',
+      many: 'Установлено $count трейлинг-стопов',
+      few: 'Установлено $count трейлинг-стопа',
+      one: 'Установлен $count трейлинг-стоп',
+      zero: 'У всех позиций уже есть трейлинг-стоп',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задать цель';
 
   @override

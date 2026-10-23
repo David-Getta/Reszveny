@@ -2661,6 +2661,21 @@ class AppLocalizationsHu extends AppLocalizations {
   String get portfolioSampleRemove => 'Minta eltávolítása';
 
   @override
+  String get portfolioStopsAll => 'Követő stop minden pozícióra';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count követő stop beállítva',
+      one: '1 követő stop beállítva',
+      zero: 'Minden pozíción van már követő stop',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

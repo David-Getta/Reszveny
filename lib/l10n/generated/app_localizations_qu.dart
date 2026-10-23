@@ -2669,6 +2669,22 @@ class AppLocalizationsQu extends AppLocalizations {
   String get portfolioSampleRemove => 'Muestrata hurquy';
 
   @override
+  String get portfolioStopsAll =>
+      'Aswan hanaqmanta uraykuy willay llapa posicionkunapaq';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count willay churasqa',
+      one: '1 willay churasqa',
+      zero: 'Llapa posicionkunaqa kay willayniyuqñam',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

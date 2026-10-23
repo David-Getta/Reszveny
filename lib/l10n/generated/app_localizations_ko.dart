@@ -2585,6 +2585,21 @@ class AppLocalizationsKo extends AppLocalizations {
   String get portfolioSampleRemove => '샘플 삭제';
 
   @override
+  String get portfolioStopsAll => '모든 보유 종목에 트레일링 스탑';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '트레일링 스탑 $count개가 설정되었습니다',
+      one: '트레일링 스탑 1개가 설정되었습니다',
+      zero: '모든 보유 종목에 이미 트레일링 스탑이 있습니다',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => '목표 설정';
 
   @override

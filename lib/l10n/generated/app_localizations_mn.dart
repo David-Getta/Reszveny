@@ -2656,6 +2656,21 @@ class AppLocalizationsMn extends AppLocalizations {
   String get portfolioSampleRemove => 'Жишээг хасах';
 
   @override
+  String get portfolioStopsAll => 'Бүх эзэмшилд оргилоос унах сэрэмжлүүлэг';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count сэрэмжлүүлэг тохирууллаа',
+      one: '1 сэрэмжлүүлэг тохирууллаа',
+      zero: 'Бүх эзэмшилд энэ сэрэмжлүүлэг аль хэдийн байна',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

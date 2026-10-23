@@ -2647,6 +2647,22 @@ class AppLocalizationsPs extends AppLocalizations {
   String get portfolioSampleRemove => 'نمونه لرې کړئ';
 
   @override
+  String get portfolioStopsAll =>
+      'د ټولو پوزیشنونو لپاره له لوړې کچې د ښکته کېدو خبرتیا';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count خبرتیاوې وټاکل شوې',
+      one: '1 خبرتیا وټاکل شوه',
+      zero: 'ټول پوزیشنونه دمخه دا خبرتیا لري',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

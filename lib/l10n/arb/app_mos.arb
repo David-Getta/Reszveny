@@ -805,5 +805,7 @@
   "watchSince": "Sẽn sɩng f sẽn paas-a nong-n-yɩɩda pʋgẽ ({date})",
   "portfolioSampleTry": "Maan n ges ne makr portfey",
   "portfolioSampleBanner": "Yaa makr portfey. Paas bũmb ning f sẽn da a sẽɛgẽ, bɩ f yiis-a.",
-  "portfolioSampleRemove": "Yiis makrã"
+  "portfolioSampleRemove": "Yiis makrã",
+  "portfolioStopsAll": "Kibay sigr n yi zʋʋgã aksiõ fãa yĩnga",
+  "portfolioStopsDone": "{count, plural, =0{Aksiõ fãa tara kibay kãnga} =1{B ningame kibay a yembre} other{B ningame kibay {count}}}"
 }

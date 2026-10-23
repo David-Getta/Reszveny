@@ -2657,6 +2657,21 @@ class AppLocalizationsFi extends AppLocalizations {
   String get portfolioSampleRemove => 'Poista esimerkki';
 
   @override
+  String get portfolioStopsAll => 'Liukuva stop kaikille omistuksille';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count liukuvaa stopia asetettu',
+      one: '1 liukuva stop asetettu',
+      zero: 'Kaikilla omistuksilla on jo liukuva stop',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

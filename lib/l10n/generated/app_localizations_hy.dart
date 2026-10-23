@@ -2664,6 +2664,22 @@ class AppLocalizationsHy extends AppLocalizations {
   String get portfolioSampleRemove => 'Հեռացնել օրինակը';
 
   @override
+  String get portfolioStopsAll =>
+      'Գագաթից անկման ծանուցում բոլոր դիրքերի համար';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Սահմանվեց $count ծանուցում',
+      one: 'Սահմանվեց 1 ծանուցում',
+      zero: 'Բոլոր դիրքերն արդեն ունեն այդ ծանուցումը',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

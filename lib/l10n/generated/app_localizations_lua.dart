@@ -2664,6 +2664,22 @@ class AppLocalizationsLua extends AppLocalizations {
   String get portfolioSampleRemove => 'Umbusha tshilejilu';
 
   @override
+  String get portfolioStopsAll =>
+      'Dimanyisha dia dipueka ku tshisongo bua bitupa bionso';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Mamanyisha $count maateka',
+      one: 'Dimanyisha 1 diateka',
+      zero: 'Tshitupa tshionso tshidi kale ne dimanyisha edi',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

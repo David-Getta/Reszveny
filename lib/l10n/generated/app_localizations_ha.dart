@@ -2662,6 +2662,22 @@ class AppLocalizationsHa extends AppLocalizations {
   String get portfolioSampleRemove => 'Cire misalin';
 
   @override
+  String get portfolioStopsAll =>
+      'Faɗakarwar faɗuwa daga ƙoli ga dukkan hannayen jari';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'An saita faɗakarwa $count',
+      one: 'An saita faɗakarwa 1',
+      zero: 'Kowane hannun jari yana da wannan faɗakarwa tuni',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

@@ -2668,6 +2668,22 @@ class AppLocalizationsXh extends AppLocalizations {
   String get portfolioSampleRemove => 'Susa umzekelo';
 
   @override
+  String get portfolioStopsAll =>
+      'Isilumkiso sokwehla ukusuka encotsheni kuzo zonke iipozishini';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kusetwe izilumkiso ezi-$count',
+      one: 'Kusetwe isilumkiso esinye',
+      zero: 'Ipozishini nganye sele inaso esi silumkiso',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

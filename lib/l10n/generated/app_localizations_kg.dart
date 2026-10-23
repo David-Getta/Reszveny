@@ -2665,6 +2665,22 @@ class AppLocalizationsKg extends AppLocalizations {
   String get portfolioSampleRemove => 'Katula mbandu';
 
   @override
+  String get portfolioStopsAll =>
+      'Lukebisu ya kukulumuka katuka na nsongi sambu na bitini yonso';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Bukebisu $count me tulama',
+      one: 'Lukebisu 1 me tulama',
+      zero: 'Bitini yonso kele dezia ti lukebisu yai',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

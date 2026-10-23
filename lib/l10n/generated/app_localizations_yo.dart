@@ -2654,6 +2654,21 @@ class AppLocalizationsYo extends AppLocalizations {
   String get portfolioSampleRemove => 'Yọ àpẹẹrẹ kúrò';
 
   @override
+  String get portfolioStopsAll => 'Ìkìlọ̀ ìwálẹ̀ láti òkè fún gbogbo ohun ìní';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'A ti ṣètò ìkìlọ̀ $count',
+      one: 'A ti ṣètò ìkìlọ̀ 1',
+      zero: 'Gbogbo ohun ìní ti ní ìkìlọ̀ yìí tẹ́lẹ̀',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ṣètò àfojúsùn';
 
   @override

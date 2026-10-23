@@ -2680,6 +2680,21 @@ class AppLocalizationsGl extends AppLocalizations {
   String get portfolioSampleRemove => 'Quitar o exemplo';
 
   @override
+  String get portfolioStopsAll => 'Stop dinámico para todas as posicións';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Creáronse $count stops dinámicos',
+      one: 'Creouse $count stop dinámico',
+      zero: 'Todas as posicións xa teñen un stop dinámico',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Definir un obxectivo';
 
   @override

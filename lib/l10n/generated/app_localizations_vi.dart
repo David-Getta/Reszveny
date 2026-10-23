@@ -2649,6 +2649,21 @@ class AppLocalizationsVi extends AppLocalizations {
   String get portfolioSampleRemove => 'Xóa danh mục mẫu';
 
   @override
+  String get portfolioStopsAll => 'Trailing stop cho tất cả vị thế';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Đã đặt $count trailing stop',
+      one: 'Đã đặt 1 trailing stop',
+      zero: 'Mọi vị thế đã có trailing stop',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

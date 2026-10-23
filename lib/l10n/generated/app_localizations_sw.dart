@@ -2657,6 +2657,22 @@ class AppLocalizationsSw extends AppLocalizations {
   String get portfolioSampleRemove => 'Ondoa mfano';
 
   @override
+  String get portfolioStopsAll =>
+      'Arifa ya kushuka kutoka kilele kwa nafasi zote';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Arifa $count zimewekwa',
+      one: 'Arifa 1 imewekwa',
+      zero: 'Kila nafasi tayari ina arifa hii',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

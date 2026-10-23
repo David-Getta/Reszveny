@@ -805,5 +805,7 @@
   "watchSince": "Tso esime nètsɔe kpe ɖe nye lɔlɔ̃tɔwo ŋu ({date})",
   "portfolioSampleTry": "Te ekpɔ kple kpɔɖeŋu akpawo",
   "portfolioSampleBanner": "Esia nye kpɔɖeŋu akpawo. Tsɔ wò ŋutɔ ƒe nuƒeƒlewo kpe ɖe eŋu, alo ɖe eɖa.",
-  "portfolioSampleRemove": "Ɖe kpɔɖeŋu ɖa"
+  "portfolioSampleRemove": "Ɖe kpɔɖeŋu ɖa",
+  "portfolioStopsAll": "Nuxlɔ̃ame ɖe ɖiɖi tso kɔkɔƒe ŋu na akpawo katã",
+  "portfolioStopsDone": "{count, plural, =0{Nuxlɔ̃ame sia le akpa ɖesiaɖe ŋu xoxo} =1{Woɖo nuxlɔ̃ame 1} other{Woɖo nuxlɔ̃ame {count}}}"
 }

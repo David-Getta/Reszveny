@@ -2658,6 +2658,21 @@ class AppLocalizationsTg extends AppLocalizations {
   String get portfolioSampleRemove => 'Хориҷ кардани намуна';
 
   @override
+  String get portfolioStopsAll => 'Огоҳии афтиш аз авҷ барои ҳамаи мавқеъҳо';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count огоҳӣ гузошта шуд',
+      one: '1 огоҳӣ гузошта шуд',
+      zero: 'Ҳамаи мавқеъҳо аллакай ин огоҳиро доранд',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

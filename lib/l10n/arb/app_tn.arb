@@ -805,5 +805,7 @@
   "watchSince": "Go tloga fa o e tsentse mo go tse o di ratang ({date})",
   "portfolioSampleTry": "Leka ka potefolio ya sekai",
   "portfolioSampleBanner": "Eno ke potefolio ya sekai. Tsenya ditheko tsa gago fa thoko ga yone, kgotsa o e tlose.",
-  "portfolioSampleRemove": "Tlosa sekai"
+  "portfolioSampleRemove": "Tlosa sekai",
+  "portfolioStopsAll": "Tlhagiso ya go wela go tswa kwa godimodimo go dishere tsotlhe",
+  "portfolioStopsDone": "{count, plural, =0{Shere nngwe le nngwe e setse e na le tlhagiso eno} =1{Go beilwe tlhagiso e le nngwe} other{Go beilwe ditlhagiso di le {count}}}"
 }

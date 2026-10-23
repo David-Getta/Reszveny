@@ -2656,6 +2656,22 @@ class AppLocalizationsKi extends AppLocalizations {
   String get portfolioSampleRemove => 'Ruta mũhiano';
 
   @override
+  String get portfolioStopsAll =>
+      'Mũmenyithia wa kũikũrũka kuuma gĩcũmbĩ-inĩ kũrĩ mĩgabana yothe';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Mĩmenyithia $count nĩ yahandwo',
+      one: 'Mũmenyithia 1 nĩ wahandwo',
+      zero: 'Mũgabana o wothe nĩ ũrĩ na mũmenyithia ũyũ',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

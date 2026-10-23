@@ -2660,6 +2660,21 @@ class AppLocalizationsUz extends AppLocalizations {
   String get portfolioSampleRemove => 'Namunani olib tashlash';
 
   @override
+  String get portfolioStopsAll => 'Barcha pozitsiyalar uchun treyling-stop';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ta treyling-stop oʻrnatildi',
+      one: '1 ta treyling-stop oʻrnatildi',
+      zero: 'Barcha pozitsiyalarda allaqachon treyling-stop bor',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

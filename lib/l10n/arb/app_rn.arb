@@ -805,5 +805,7 @@
   "watchSince": "Kuva wawushira mu vyo ukunda ({date})",
   "portfolioSampleTry": "Gerageza n'ishoramari ry'akarorero",
   "portfolioSampleBanner": "Iri ni ishoramari ry'akarorero. Shiramwo n'ivyo waguze ubwawe, canke urikureko.",
-  "portfolioSampleRemove": "Kuramwo akarorero"
+  "portfolioSampleRemove": "Kuramwo akarorero",
+  "portfolioStopsAll": "Imenyesha ry'imanuka kuva ku gasongero ku migabane yose",
+  "portfolioStopsDone": "{count, plural, =0{Imigabane yose isanzwe ifise iri menyesha} =1{Hashizweho imenyesha 1} other{Hashizweho amamenyesha {count}}}"
 }

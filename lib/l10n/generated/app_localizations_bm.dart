@@ -2654,6 +2654,21 @@ class AppLocalizationsBm extends AppLocalizations {
   String get portfolioSampleRemove => 'Misali bɔ a la';
 
   @override
+  String get portfolioStopsAll => 'Sanfɛla jigin kunnafoni aksiyɔnw bɛɛ ye';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Kunnafoni $count sigilen don',
+      one: 'Kunnafoni 1 sigilen don',
+      zero: 'Kunnafoni in bɛ aksiyɔn bɛɛ kan kaban',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

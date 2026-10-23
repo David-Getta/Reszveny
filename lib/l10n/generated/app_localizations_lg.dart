@@ -2670,6 +2670,22 @@ class AppLocalizationsLg extends AppLocalizations {
   String get portfolioSampleRemove => 'Ggyawo eby\'okulabirako';
 
   @override
+  String get portfolioStopsAll =>
+      'Okulabula okw\'okukka okuva ku ntikko ku migabo gyonna';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Okulabula $count kuteekeddwawo',
+      one: 'Okulabula 1 kuteekeddwawo',
+      zero: 'Buli mugabo gulina dda okulabula kuno',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

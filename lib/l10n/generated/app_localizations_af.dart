@@ -2660,6 +2660,21 @@ class AppLocalizationsAf extends AppLocalizations {
   String get portfolioSampleRemove => 'Verwyder voorbeeld';
 
   @override
+  String get portfolioStopsAll => 'Daal-van-piek-alarm vir alle posisies';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count alarms gestel',
+      one: '1 alarm gestel',
+      zero: 'Elke posisie het reeds so \'n alarm',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Stel \'n doelwit';
 
   @override

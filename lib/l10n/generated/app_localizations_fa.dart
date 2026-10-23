@@ -2652,6 +2652,21 @@ class AppLocalizationsFa extends AppLocalizations {
   String get portfolioSampleRemove => 'حذف نمونه';
 
   @override
+  String get portfolioStopsAll => 'حد ضرر متحرک برای همه موقعیت‌ها';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count حد ضرر متحرک تنظیم شد',
+      one: '1 حد ضرر متحرک تنظیم شد',
+      zero: 'همه موقعیت‌ها از قبل حد ضرر متحرک دارند',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

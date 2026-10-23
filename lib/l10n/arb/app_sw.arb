@@ -805,5 +805,7 @@
   "watchSince": "Tangu ulipoiongeza kwenye vipendwa ({date})",
   "portfolioSampleTry": "Jaribu ukitumia jalada la mfano",
   "portfolioSampleBanner": "Hili ni jalada la hisa la mfano. Ongeza ununuzi wako mwenyewe kando yake, au liondoe.",
-  "portfolioSampleRemove": "Ondoa mfano"
+  "portfolioSampleRemove": "Ondoa mfano",
+  "portfolioStopsAll": "Arifa ya kushuka kutoka kilele kwa nafasi zote",
+  "portfolioStopsDone": "{count, plural, =0{Kila nafasi tayari ina arifa hii} =1{Arifa 1 imewekwa} other{Arifa {count} zimewekwa}}"
 }

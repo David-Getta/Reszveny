@@ -805,5 +805,7 @@
   "watchSince": "Ojeguerohoryvévape rembojuaju guive ({date})",
   "portfolioSampleTry": "Eñehaʼã cartera techapyrã reheve",
   "portfolioSampleBanner": "Kóva haʼe peteĩ cartera techapyrã. Embojuaju ne jogua ijykére, térã embogue.",
-  "portfolioSampleRemove": "Embogue techapyrã"
+  "portfolioSampleRemove": "Embogue techapyrã",
+  "portfolioStopsAll": "Momarandu oguejýramo yvateguágui opaite ereguerekóvape",
+  "portfolioStopsDone": "{count, plural, =0{Opaite ereguerekóva oguereko voi ko momarandu} =1{Oñemohenda 1 momarandu} other{Oñemohenda {count} momarandu}}"
 }

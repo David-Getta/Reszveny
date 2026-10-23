@@ -805,5 +805,7 @@
   "watchSince": "Sinds toevoeging aan favorieten ({date})",
   "portfolioSampleTry": "Proberen met een voorbeeldportefeuille",
   "portfolioSampleBanner": "Dit is een voorbeeldportefeuille. Voeg je eigen aankopen ernaast toe, of verwijder hem.",
-  "portfolioSampleRemove": "Voorbeeld verwijderen"
+  "portfolioSampleRemove": "Voorbeeld verwijderen",
+  "portfolioStopsAll": "Trailing stop voor alle posities",
+  "portfolioStopsDone": "{count, plural, =0{Alle posities hebben al een trailing stop} =1{1 trailing stop ingesteld} other{{count} trailing stops ingesteld}}"
 }

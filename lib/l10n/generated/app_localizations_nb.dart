@@ -2656,6 +2656,21 @@ class AppLocalizationsNb extends AppLocalizations {
   String get portfolioSampleRemove => 'Fjern eksempelet';
 
   @override
+  String get portfolioStopsAll => 'Trailing stop for alle beholdninger';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count trailing stop opprettet',
+      one: '1 trailing stop opprettet',
+      zero: 'Alle beholdninger har allerede trailing stop',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sett et mål';
 
   @override

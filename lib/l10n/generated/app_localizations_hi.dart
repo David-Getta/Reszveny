@@ -2653,6 +2653,21 @@ class AppLocalizationsHi extends AppLocalizations {
   String get portfolioSampleRemove => 'नमूना हटाएँ';
 
   @override
+  String get portfolioStopsAll => 'सभी पोज़िशन के लिए ट्रेलिंग स्टॉप';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ट्रेलिंग स्टॉप सेट किए गए',
+      one: '1 ट्रेलिंग स्टॉप सेट किया गया',
+      zero: 'हर पोज़िशन पर पहले से ट्रेलिंग स्टॉप है',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करें';
 
   @override

@@ -2622,6 +2622,21 @@ class AppLocalizationsAm extends AppLocalizations {
   String get portfolioSampleRemove => 'ናሙናውን አስወግድ';
 
   @override
+  String get portfolioStopsAll => 'ለሁሉም ይዞታዎች ከከፍተኛው የመውረድ ማንቂያ';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ማንቂያዎች ተቀናብረዋል',
+      one: '1 ማንቂያ ተቀናብሯል',
+      zero: 'ሁሉም ይዞታዎች ቀድሞውኑ ይህ ማንቂያ አላቸው',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

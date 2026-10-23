@@ -2657,6 +2657,22 @@ class AppLocalizationsCkb extends AppLocalizations {
   String get portfolioSampleRemove => 'لابردنی نموونە';
 
   @override
+  String get portfolioStopsAll =>
+      'ئاگادارکردنەوەی دابەزین لە لووتکە بۆ هەموو پۆزیشنەکان';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ئاگادارکردنەوە دانران',
+      one: '1 ئاگادارکردنەوە دانرا',
+      zero: 'هەموو پۆزیشنەکان پێشتر ئەم ئاگادارکردنەوەیەیان هەیە',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

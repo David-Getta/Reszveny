@@ -805,5 +805,7 @@
   "watchSince": "خوښو ته له ورزیاتولو راهیسې ({date})",
   "portfolioSampleTry": "د نمونه پورټفولیو سره ازمویل",
   "portfolioSampleBanner": "دا یو نمونه پورټفولیو ده. خپلې پېرودنې ورسره ورزیاتې کړئ، یا یې لرې کړئ.",
-  "portfolioSampleRemove": "نمونه لرې کړئ"
+  "portfolioSampleRemove": "نمونه لرې کړئ",
+  "portfolioStopsAll": "د ټولو پوزیشنونو لپاره له لوړې کچې د ښکته کېدو خبرتیا",
+  "portfolioStopsDone": "{count, plural, =0{ټول پوزیشنونه دمخه دا خبرتیا لري} =1{1 خبرتیا وټاکل شوه} other{{count} خبرتیاوې وټاکل شوې}}"
 }

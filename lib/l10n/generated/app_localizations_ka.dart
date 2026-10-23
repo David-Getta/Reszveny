@@ -2656,6 +2656,21 @@ class AppLocalizationsKa extends AppLocalizations {
   String get portfolioSampleRemove => 'ნიმუშის წაშლა';
 
   @override
+  String get portfolioStopsAll => 'ტრეილინგ სტოპი ყველა პოზიციისთვის';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'დაყენდა $count ტრეილინგ სტოპი',
+      one: 'დაყენდა 1 ტრეილინგ სტოპი',
+      zero: 'ყველა პოზიციას უკვე აქვს ტრეილინგ სტოპი',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

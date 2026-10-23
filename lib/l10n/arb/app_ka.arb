@@ -805,5 +805,7 @@
   "watchSince": "რჩეულებში დამატების შემდეგ ({date})",
   "portfolioSampleTry": "სანიმუშო პორტფელით გამოცდა",
   "portfolioSampleBanner": "ეს სანიმუშო პორტფელია. დაამატეთ მის გვერდით თქვენი შენაძენები ან წაშალეთ იგი.",
-  "portfolioSampleRemove": "ნიმუშის წაშლა"
+  "portfolioSampleRemove": "ნიმუშის წაშლა",
+  "portfolioStopsAll": "ტრეილინგ სტოპი ყველა პოზიციისთვის",
+  "portfolioStopsDone": "{count, plural, =0{ყველა პოზიციას უკვე აქვს ტრეილინგ სტოპი} =1{დაყენდა 1 ტრეილინგ სტოპი} other{დაყენდა {count} ტრეილინგ სტოპი}}"
 }

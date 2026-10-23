@@ -2648,6 +2648,21 @@ class AppLocalizationsHe extends AppLocalizations {
   String get portfolioSampleRemove => 'הסרת הדוגמה';
 
   @override
+  String get portfolioStopsAll => 'סטופ נגרר לכל הפוזיציות';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'הוגדרו $count סטופים נגררים',
+      one: 'הוגדר סטופ נגרר אחד',
+      zero: 'לכל הפוזיציות כבר יש סטופ נגרר',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'הגדרת יעד';
 
   @override

@@ -805,5 +805,7 @@
   "watchSince": "Από την προσθήκη στα αγαπημένα ({date})",
   "portfolioSampleTry": "Δοκιμή με ενδεικτικό χαρτοφυλάκιο",
   "portfolioSampleBanner": "Αυτό είναι ένα ενδεικτικό χαρτοφυλάκιο. Προσθέστε δίπλα του τις δικές σας αγορές ή αφαιρέστε το.",
-  "portfolioSampleRemove": "Αφαίρεση δείγματος"
+  "portfolioSampleRemove": "Αφαίρεση δείγματος",
+  "portfolioStopsAll": "Trailing stop για όλες τις θέσεις",
+  "portfolioStopsDone": "{count, plural, =0{Όλες οι θέσεις έχουν ήδη trailing stop} =1{Ορίστηκε 1 trailing stop} other{Ορίστηκαν {count} trailing stop}}"
 }

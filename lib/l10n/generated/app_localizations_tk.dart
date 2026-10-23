@@ -2657,6 +2657,22 @@ class AppLocalizationsTk extends AppLocalizations {
   String get portfolioSampleRemove => 'Nusgany aýyr';
 
   @override
+  String get portfolioStopsAll =>
+      'Ähli pozisiýalar üçin iň ýokarydan düşüş duýduryşy';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count duýduryş goýuldy',
+      one: '1 duýduryş goýuldy',
+      zero: 'Ähli pozisiýalarda bu duýduryş eýýäm bar',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

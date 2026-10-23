@@ -805,5 +805,7 @@
   "watchSince": "منذ إضافته إلى المفضلة ({date})",
   "portfolioSampleTry": "تجربة محفظة نموذجية",
   "portfolioSampleBanner": "هذه محفظة نموذجية. أضف مشترياتك الخاصة إلى جانبها، أو أزلها.",
-  "portfolioSampleRemove": "إزالة المحفظة النموذجية"
+  "portfolioSampleRemove": "إزالة المحفظة النموذجية",
+  "portfolioStopsAll": "وقف متحرك لجميع المراكز",
+  "portfolioStopsDone": "{count, plural, =0{لدى كل المراكز وقف متحرك بالفعل} =1{تم ضبط وقف متحرك لمركز واحد} =2{تم ضبط وقف متحرك لمركزين} few{تم ضبط وقف متحرك لـ {count} مراكز} many{تم ضبط وقف متحرك لـ {count} مركزًا} other{تم ضبط وقف متحرك لـ {count} مركز}}"
 }

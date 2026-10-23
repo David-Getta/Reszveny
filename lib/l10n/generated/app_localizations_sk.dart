@@ -2723,6 +2723,23 @@ class AppLocalizationsSk extends AppLocalizations {
   String get portfolioSampleRemove => 'Odstrániť ukážku';
 
   @override
+  String get portfolioStopsAll => 'Trailing stop pre všetky pozície';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nastavených $count trailing stopov',
+      many: 'Nastavené $count trailing stopy',
+      few: 'Nastavené $count trailing stopy',
+      one: 'Nastavený 1 trailing stop',
+      zero: 'Všetky pozície už majú trailing stop',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastaviť cieľ';
 
   @override

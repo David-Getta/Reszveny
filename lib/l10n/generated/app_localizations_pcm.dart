@@ -2655,6 +2655,21 @@ class AppLocalizationsPcm extends AppLocalizations {
   String get portfolioSampleRemove => 'Comot sample';
 
   @override
+  String get portfolioStopsAll => 'Trailing stop for all your stocks';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'We don set $count trailing stops',
+      one: 'We don set $count trailing stop',
+      zero: 'All your stocks don get trailing stop already',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

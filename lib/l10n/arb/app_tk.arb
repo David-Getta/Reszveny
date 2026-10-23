@@ -805,5 +805,7 @@
   "watchSince": "Saýlananlara goşanyňyzdan bäri ({date})",
   "portfolioSampleTry": "Nusga portfel bilen synap gör",
   "portfolioSampleBanner": "Bu nusga portfel. Onuň ýanyna öz satyn alyşlaryňyzy goşuň ýa-da ony aýyryň.",
-  "portfolioSampleRemove": "Nusgany aýyr"
+  "portfolioSampleRemove": "Nusgany aýyr",
+  "portfolioStopsAll": "Ähli pozisiýalar üçin iň ýokarydan düşüş duýduryşy",
+  "portfolioStopsDone": "{count, plural, =0{Ähli pozisiýalarda bu duýduryş eýýäm bar} =1{1 duýduryş goýuldy} other{{count} duýduryş goýuldy}}"
 }

@@ -2661,6 +2661,22 @@ class AppLocalizationsEe extends AppLocalizations {
   String get portfolioSampleRemove => 'Ɖe kpɔɖeŋu ɖa';
 
   @override
+  String get portfolioStopsAll =>
+      'Nuxlɔ̃ame ɖe ɖiɖi tso kɔkɔƒe ŋu na akpawo katã';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Woɖo nuxlɔ̃ame $count',
+      one: 'Woɖo nuxlɔ̃ame 1',
+      zero: 'Nuxlɔ̃ame sia le akpa ɖesiaɖe ŋu xoxo',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ɖo taɖodzinu';
 
   @override

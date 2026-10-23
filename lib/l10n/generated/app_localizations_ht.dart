@@ -2654,6 +2654,21 @@ class AppLocalizationsHt extends AppLocalizations {
   String get portfolioSampleRemove => 'Retire egzanp lan';
 
   @override
+  String get portfolioStopsAll => 'Alèt bès depi pik la pou tout pozisyon yo';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nou mete $count alèt',
+      one: 'Nou mete 1 alèt',
+      zero: 'Tout pozisyon yo gen alèt sa a deja',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

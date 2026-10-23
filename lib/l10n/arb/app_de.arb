@@ -805,5 +805,7 @@
   "watchSince": "Seit dem Hinzufügen zu den Favoriten ({date})",
   "portfolioSampleTry": "Mit Beispielportfolio ausprobieren",
   "portfolioSampleBanner": "Das ist ein Beispielportfolio. Füge daneben deine eigenen Käufe hinzu oder entferne es.",
-  "portfolioSampleRemove": "Beispiel entfernen"
+  "portfolioSampleRemove": "Beispiel entfernen",
+  "portfolioStopsAll": "Trailing-Stop für alle Positionen",
+  "portfolioStopsDone": "{count, plural, =0{Alle Positionen haben schon einen Trailing-Stop} =1{1 Trailing-Stop eingerichtet} other{{count} Trailing-Stops eingerichtet}}"
 }

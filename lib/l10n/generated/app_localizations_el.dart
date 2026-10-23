@@ -2666,6 +2666,21 @@ class AppLocalizationsEl extends AppLocalizations {
   String get portfolioSampleRemove => 'Αφαίρεση δείγματος';
 
   @override
+  String get portfolioStopsAll => 'Trailing stop για όλες τις θέσεις';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ορίστηκαν $count trailing stop',
+      one: 'Ορίστηκε 1 trailing stop',
+      zero: 'Όλες οι θέσεις έχουν ήδη trailing stop',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

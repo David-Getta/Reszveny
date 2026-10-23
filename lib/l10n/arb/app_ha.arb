@@ -805,5 +805,7 @@
   "watchSince": "Tun da ka ƙara shi zuwa abubuwan da aka fi so ({date})",
   "portfolioSampleTry": "Gwada da jakar hannun jari ta misali",
   "portfolioSampleBanner": "Wannan jakar hannun jari ce ta misali. Ƙara sayayyarka a gefenta, ko ka cire ta.",
-  "portfolioSampleRemove": "Cire misalin"
+  "portfolioSampleRemove": "Cire misalin",
+  "portfolioStopsAll": "Faɗakarwar faɗuwa daga ƙoli ga dukkan hannayen jari",
+  "portfolioStopsDone": "{count, plural, =0{Kowane hannun jari yana da wannan faɗakarwa tuni} =1{An saita faɗakarwa 1} other{An saita faɗakarwa {count}}}"
 }

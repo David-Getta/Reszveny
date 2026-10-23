@@ -805,5 +805,7 @@
   "watchSince": "Ji dema ku te li bijareyan zêde kir ({date})",
   "portfolioSampleTry": "Bi portfolyoyeke mînak biceribîne",
   "portfolioSampleBanner": "Ev portfolyoyeke mînak e. Kirînên xwe li kêleka wê zêde bike, an wê rake.",
-  "portfolioSampleRemove": "Mînakê rake"
+  "portfolioSampleRemove": "Mînakê rake",
+  "portfolioStopsAll": "Hişyariya daketina ji lûtkeyê ji bo hemû pozîsyonan",
+  "portfolioStopsDone": "{count, plural, =0{Her pozîsyonek jixwe xwedî vê hişyariyê ye} =1{1 hişyarî hat danîn} other{{count} hişyarî hatin danîn}}"
 }

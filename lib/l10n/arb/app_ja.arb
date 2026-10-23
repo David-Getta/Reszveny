@@ -805,5 +805,7 @@
   "watchSince": "お気に入り追加（{date}）以降",
   "portfolioSampleTry": "サンプルのポートフォリオで試す",
   "portfolioSampleBanner": "これはサンプルのポートフォリオです。自分の購入を追加するか、サンプルを削除してください。",
-  "portfolioSampleRemove": "サンプルを削除"
+  "portfolioSampleRemove": "サンプルを削除",
+  "portfolioStopsAll": "全保有銘柄にトレーリングストップ",
+  "portfolioStopsDone": "{count, plural, =0{すべての保有銘柄にトレーリングストップが設定済みです} =1{1 件のトレーリングストップを設定しました} other{{count} 件のトレーリングストップを設定しました}}"
 }

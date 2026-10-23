@@ -805,5 +805,7 @@
   "watchSince": "Desde que a engadiches a favoritos ({date})",
   "portfolioSampleTry": "Probar cunha carteira de exemplo",
   "portfolioSampleBanner": "Esta é unha carteira de exemplo. Engade as túas propias compras xunto a ela ou quítaa.",
-  "portfolioSampleRemove": "Quitar o exemplo"
+  "portfolioSampleRemove": "Quitar o exemplo",
+  "portfolioStopsAll": "Stop dinámico para todas as posicións",
+  "portfolioStopsDone": "{count, plural, =0{Todas as posicións xa teñen un stop dinámico} =1{Creouse 1 stop dinámico} one{Creouse {count} stop dinámico} other{Creáronse {count} stops dinámicos}}"
 }

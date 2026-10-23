@@ -2658,6 +2658,22 @@ class AppLocalizationsKu extends AppLocalizations {
   String get portfolioSampleRemove => 'Mînakê rake';
 
   @override
+  String get portfolioStopsAll =>
+      'Hişyariya daketina ji lûtkeyê ji bo hemû pozîsyonan';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count hişyarî hatin danîn',
+      one: '1 hişyarî hat danîn',
+      zero: 'Her pozîsyonek jixwe xwedî vê hişyariyê ye',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

@@ -2662,6 +2662,21 @@ class AppLocalizationsKn extends AppLocalizations {
   String get portfolioSampleRemove => 'ಮಾದರಿ ತೆಗೆದುಹಾಕಿ';
 
   @override
+  String get portfolioStopsAll => 'ಎಲ್ಲ ಪೊಸಿಷನ್‌ಗಳಿಗೆ ಟ್ರೇಲಿಂಗ್ ಸ್ಟಾಪ್';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ಟ್ರೇಲಿಂಗ್ ಸ್ಟಾಪ್‌ಗಳನ್ನು ಹೊಂದಿಸಲಾಗಿದೆ',
+      one: '1 ಟ್ರೇಲಿಂಗ್ ಸ್ಟಾಪ್ ಹೊಂದಿಸಲಾಗಿದೆ',
+      zero: 'ಎಲ್ಲ ಪೊಸಿಷನ್‌ಗಳಿಗೂ ಈಗಾಗಲೇ ಟ್ರೇಲಿಂಗ್ ಸ್ಟಾಪ್ ಇದೆ',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'ಗುರಿ ಹೊಂದಿಸಿ';
 
   @override

@@ -805,5 +805,7 @@
   "watchSince": "Sedan du lade till den i favoriter ({date})",
   "portfolioSampleTry": "Testa med en exempelportfölj",
   "portfolioSampleBanner": "Det här är en exempelportfölj. Lägg till dina egna köp bredvid, eller ta bort den.",
-  "portfolioSampleRemove": "Ta bort exemplet"
+  "portfolioSampleRemove": "Ta bort exemplet",
+  "portfolioStopsAll": "Trailing stop för alla innehav",
+  "portfolioStopsDone": "{count, plural, =0{Alla innehav har redan trailing stop} =1{1 trailing stop har satts} other{{count} trailing stops har satts}}"
 }

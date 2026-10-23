@@ -2667,6 +2667,21 @@ class AppLocalizationsMl extends AppLocalizations {
   String get portfolioSampleRemove => 'സാമ്പിൾ നീക്കം ചെയ്യുക';
 
   @override
+  String get portfolioStopsAll => 'എല്ലാ പൊസിഷനുകൾക്കും ട്രെയിലിംഗ് സ്റ്റോപ്പ്';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ട്രെയിലിംഗ് സ്റ്റോപ്പുകൾ സജ്ജമാക്കി',
+      one: '1 ട്രെയിലിംഗ് സ്റ്റോപ്പ് സജ്ജമാക്കി',
+      zero: 'എല്ലാ പൊസിഷനുകൾക്കും ഇതിനകം ട്രെയിലിംഗ് സ്റ്റോപ്പ് ഉണ്ട്',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'ലക്ഷ്യം സജ്ജമാക്കുക';
 
   @override

@@ -2673,6 +2673,21 @@ class AppLocalizationsHil extends AppLocalizations {
   String get portfolioSampleRemove => 'Kuhaa ang sample';
 
   @override
+  String get portfolioStopsAll => 'Trailing stop para sa tanan nga posisyon';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Gin-set ang $count ka trailing stop',
+      one: 'Gin-set ang 1 ka trailing stop',
+      zero: 'May trailing stop na ang kada posisyon',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

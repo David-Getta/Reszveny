@@ -805,5 +805,7 @@
   "watchSince": "पसंदीदा में जोड़ने के बाद से ({date})",
   "portfolioSampleTry": "नमूना पोर्टफ़ोलियो से आज़माएँ",
   "portfolioSampleBanner": "यह एक नमूना पोर्टफ़ोलियो है। इसके साथ अपनी खरीदारियाँ जोड़ें, या इसे हटाएँ।",
-  "portfolioSampleRemove": "नमूना हटाएँ"
+  "portfolioSampleRemove": "नमूना हटाएँ",
+  "portfolioStopsAll": "सभी पोज़िशन के लिए ट्रेलिंग स्टॉप",
+  "portfolioStopsDone": "{count, plural, =0{हर पोज़िशन पर पहले से ट्रेलिंग स्टॉप है} =1{1 ट्रेलिंग स्टॉप सेट किया गया} other{{count} ट्रेलिंग स्टॉप सेट किए गए}}"
 }

@@ -2644,6 +2644,22 @@ class AppLocalizationsBo extends AppLocalizations {
   String get portfolioSampleRemove => 'དཔེ་གཞི་སུབ';
 
   @override
+  String get portfolioStopsAll =>
+      'ཉར་ཡོད་ཧུར་ཁག་ཚང་མར་ཡང་རྩེ་ནས་ཆག་པའི་ཉེན་བརྡ།';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ཉེན་བརྡ་ $count བཀོད་ཟིན།',
+      one: 'ཉེན་བརྡ་ 1 བཀོད་ཟིན།',
+      zero: 'ཉར་ཡོད་ཧུར་ཁག་ཚང་མར་ཉེན་བརྡ་འདི་སྔོན་ནས་ཡོད།',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
 
   @override

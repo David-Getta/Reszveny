@@ -2726,6 +2726,23 @@ class AppLocalizationsPl extends AppLocalizations {
   String get portfolioSampleRemove => 'Usuń przykład';
 
   @override
+  String get portfolioStopsAll => 'Trailing stop dla wszystkich pozycji';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ustawiono $count trailing stopu',
+      many: 'Ustawiono $count trailing stopów',
+      few: 'Ustawiono $count trailing stopy',
+      one: 'Ustawiono $count trailing stop',
+      zero: 'Wszystkie pozycje mają już trailing stop',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ustaw cel';
 
   @override

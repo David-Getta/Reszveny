@@ -4573,6 +4573,18 @@ abstract class AppLocalizations {
   /// **'Remove sample'**
   String get portfolioSampleRemove;
 
+  /// Portfolio menu item and dialog title: set a "drop from peak" price alert on every position at once.
+  ///
+  /// In en, this message translates to:
+  /// **'Trailing stop for all positions'**
+  String get portfolioStopsAll;
+
+  /// Message after setting trailing stops for all positions: how many new alerts were created.
+  ///
+  /// In en, this message translates to:
+  /// **'{count, plural, =0{Every position already has a trailing stop} =1{1 trailing stop set} other{{count} trailing stops set}}'**
+  String portfolioStopsDone(int count);
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

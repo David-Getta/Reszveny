@@ -852,6 +852,18 @@ void main() {
     await tester.pump(const Duration(minutes: 1));
   });
 
+  testWidgets('trailing stops for all positions on a phone (hungarian)', (tester) async {
+    final s = _services(locale: const Locale('hu'), portfolio: _samplePortfolio(), currency: 'HUF');
+    await pumpApp(tester, s, const Size(430, 1000));
+    await tester.tap(find.text('Portfólió').last);
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('portfolio-menu')));
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('portfolio-stops')));
+    await tester.pumpAndSettle();
+    await _shot(tester, 'portfolio_stops_phone_hu');
+  });
+
   testWidgets('annual summary on a phone (hungarian)', (tester) async {
     final portfolio = PortfolioStore(
       lots: [

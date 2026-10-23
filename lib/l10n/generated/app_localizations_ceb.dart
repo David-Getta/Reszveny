@@ -2668,6 +2668,21 @@ class AppLocalizationsCeb extends AppLocalizations {
   String get portfolioSampleRemove => 'Tangtanga ang sample';
 
   @override
+  String get portfolioStopsAll => 'Trailing stop para sa tanang posisyon';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Na-set ang $count ka trailing stop',
+      one: 'Na-set ang 1 ka trailing stop',
+      zero: 'Ang matag posisyon aduna nay trailing stop',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

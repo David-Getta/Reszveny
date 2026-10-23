@@ -2664,6 +2664,22 @@ class AppLocalizationsSo extends AppLocalizations {
   String get portfolioSampleRemove => 'Ka saar tusaalaha';
 
   @override
+  String get portfolioStopsAll =>
+      'Digniinta hoos u dhaca heerka ugu sarreeya ee dhammaan haysashooyinka';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count digniin ayaa la dejiyay',
+      one: '1 digniin ayaa la dejiyay',
+      zero: 'Haysasho kastaa horeba way leedahay digniintan',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

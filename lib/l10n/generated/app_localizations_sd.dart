@@ -2646,6 +2646,21 @@ class AppLocalizationsSd extends AppLocalizations {
   String get portfolioSampleRemove => 'نمونو هٽايو';
 
   @override
+  String get portfolioStopsAll => 'سڀني پوزيشنن لاءِ ٽريلنگ اسٽاپ';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ٽريلنگ اسٽاپ مقرر ڪيا ويا',
+      one: '1 ٽريلنگ اسٽاپ مقرر ڪيو ويو',
+      zero: 'هر پوزيشن تي اڳ ۾ ئي ٽريلنگ اسٽاپ آهي',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

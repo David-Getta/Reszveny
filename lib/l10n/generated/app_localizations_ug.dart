@@ -2658,6 +2658,22 @@ class AppLocalizationsUg extends AppLocalizations {
   String get portfolioSampleRemove => 'ئەۋرىشكىنى ئۆچۈرۈش';
 
   @override
+  String get portfolioStopsAll =>
+      'بارلىق پايلارغا چوققىدىن چۈشۈش ئاگاھلاندۇرۇشى';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ئاگاھلاندۇرۇش تەڭشەلدى',
+      one: '1 ئاگاھلاندۇرۇش تەڭشەلدى',
+      zero: 'ھەممە پايدا بۇ ئاگاھلاندۇرۇش ئاللىبۇرۇن بار',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

@@ -2718,6 +2718,23 @@ class AppLocalizationsCs extends AppLocalizations {
   String get portfolioSampleRemove => 'Odebrat ukázku';
 
   @override
+  String get portfolioStopsAll => 'Trailing stop pro všechny pozice';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nastaveno $count trailing stopů',
+      many: 'Nastaveno $count trailing stopu',
+      few: 'Nastaveny $count trailing stopy',
+      one: 'Nastaven 1 trailing stop',
+      zero: 'Všechny pozice už mají trailing stop',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastavit cíl';
 
   @override

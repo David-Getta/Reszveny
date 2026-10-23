@@ -2695,6 +2695,22 @@ class AppLocalizationsRo extends AppLocalizations {
   String get portfolioSampleRemove => 'Elimină exemplul';
 
   @override
+  String get portfolioStopsAll => 'Trailing stop pentru toate pozițiile';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Au fost setate $count de trailing stopuri',
+      few: 'Au fost setate $count trailing stopuri',
+      one: 'A fost setat $count trailing stop',
+      zero: 'Toate pozițiile au deja trailing stop',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

@@ -2655,6 +2655,21 @@ class AppLocalizationsKk extends AppLocalizations {
   String get portfolioSampleRemove => 'Үлгіні жою';
 
   @override
+  String get portfolioStopsAll => 'Барлық позицияға трейлинг-стоп';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count трейлинг-стоп орнатылды',
+      one: '1 трейлинг-стоп орнатылды',
+      zero: 'Барлық позицияда трейлинг-стоп бұрыннан бар',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Мақсат қою';
 
   @override

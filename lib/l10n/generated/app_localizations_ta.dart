@@ -2667,6 +2667,21 @@ class AppLocalizationsTa extends AppLocalizations {
   String get portfolioSampleRemove => 'மாதிரியை நீக்கு';
 
   @override
+  String get portfolioStopsAll => 'எல்லா நிலைகளுக்கும் டிரெய்லிங் ஸ்டாப்';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count டிரெய்லிங் ஸ்டாப்கள் அமைக்கப்பட்டன',
+      one: '1 டிரெய்லிங் ஸ்டாப் அமைக்கப்பட்டது',
+      zero: 'எல்லா நிலைகளுக்கும் ஏற்கெனவே டிரெய்லிங் ஸ்டாப் உள்ளது',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'இலக்கை அமை';
 
   @override

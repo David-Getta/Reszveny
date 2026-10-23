@@ -2666,6 +2666,22 @@ class AppLocalizationsOm extends AppLocalizations {
   String get portfolioSampleRemove => 'Fakkeenya haqi';
 
   @override
+  String get portfolioStopsAll =>
+      'Akeekkachiisa ol\'aanaa irraa bu\'uu qabiyyeewwan hundaaf';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Akeekkachiisni $count qindaa\'aniiru',
+      one: 'Akeekkachiisni 1 qindaa\'eera',
+      zero: 'Qabiyyeen hundi duraanuu akeekkachiisa kana qaba',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

@@ -805,5 +805,7 @@
   "watchSince": "Od přidání do oblíbených ({date})",
   "portfolioSampleTry": "Vyzkoušet s ukázkovým portfoliem",
   "portfolioSampleBanner": "Toto je ukázkové portfolio. Přidejte k němu své vlastní nákupy, nebo ho odeberte.",
-  "portfolioSampleRemove": "Odebrat ukázku"
+  "portfolioSampleRemove": "Odebrat ukázku",
+  "portfolioStopsAll": "Trailing stop pro všechny pozice",
+  "portfolioStopsDone": "{count, plural, =0{Všechny pozice už mají trailing stop} =1{Nastaven 1 trailing stop} few{Nastaveny {count} trailing stopy} many{Nastaveno {count} trailing stopu} other{Nastaveno {count} trailing stopů}}"
 }

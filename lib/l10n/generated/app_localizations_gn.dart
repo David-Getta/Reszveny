@@ -2661,6 +2661,22 @@ class AppLocalizationsGn extends AppLocalizations {
   String get portfolioSampleRemove => 'Embogue techapyrã';
 
   @override
+  String get portfolioStopsAll =>
+      'Momarandu oguejýramo yvateguágui opaite ereguerekóvape';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Oñemohenda $count momarandu',
+      one: 'Oñemohenda 1 momarandu',
+      zero: 'Opaite ereguerekóva oguereko voi ko momarandu',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';
 
   @override

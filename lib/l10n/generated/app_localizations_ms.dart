@@ -2660,6 +2660,21 @@ class AppLocalizationsMs extends AppLocalizations {
   String get portfolioSampleRemove => 'Alih keluar sampel';
 
   @override
+  String get portfolioStopsAll => 'Trailing stop untuk semua pegangan';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count trailing stop ditetapkan',
+      one: '1 trailing stop ditetapkan',
+      zero: 'Semua pegangan sudah mempunyai trailing stop',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

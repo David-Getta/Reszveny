@@ -805,5 +805,7 @@
   "watchSince": "Kuuma rĩrĩa woongereire harĩ iria wendete ({date})",
   "portfolioSampleTry": "Geria na hisa cia mũhiano",
   "portfolioSampleBanner": "Ici nĩ hisa cia mũhiano. Ongerera ũgũri waku mwene hamwe nacio, kana ũcirute.",
-  "portfolioSampleRemove": "Ruta mũhiano"
+  "portfolioSampleRemove": "Ruta mũhiano",
+  "portfolioStopsAll": "Mũmenyithia wa kũikũrũka kuuma gĩcũmbĩ-inĩ kũrĩ mĩgabana yothe",
+  "portfolioStopsDone": "{count, plural, =0{Mũgabana o wothe nĩ ũrĩ na mũmenyithia ũyũ} =1{Mũmenyithia 1 nĩ wahandwo} other{Mĩmenyithia {count} nĩ yahandwo}}"
 }

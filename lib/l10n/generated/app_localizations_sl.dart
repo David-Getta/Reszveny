@@ -2725,6 +2725,23 @@ class AppLocalizationsSl extends AppLocalizations {
   String get portfolioSampleRemove => 'Odstrani vzorec';
 
   @override
+  String get portfolioStopsAll => 'Opozorilo ob padcu z vrha za vse pozicije';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nastavljenih je $count opozoril',
+      few: 'Nastavljena so $count opozorila',
+      two: 'Nastavljeni sta $count opozorili',
+      one: 'Nastavljeno je $count opozorilo',
+      zero: 'Vse pozicije že imajo to opozorilo',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastavi cilj';
 
   @override

@@ -2654,6 +2654,21 @@ class AppLocalizationsBn extends AppLocalizations {
   String get portfolioSampleRemove => 'নমুনা সরান';
 
   @override
+  String get portfolioStopsAll => 'সব অবস্থানে ট্রেইলিং স্টপ';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$countটি ট্রেইলিং স্টপ সেট হয়েছে',
+      one: '1টি ট্রেইলিং স্টপ সেট হয়েছে',
+      zero: 'প্রতিটি অবস্থানে ইতিমধ্যে ট্রেইলিং স্টপ আছে',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য ঠিক করুন';
 
   @override

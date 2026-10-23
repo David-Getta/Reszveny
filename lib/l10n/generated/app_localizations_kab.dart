@@ -2654,6 +2654,21 @@ class AppLocalizationsKab extends AppLocalizations {
   String get portfolioSampleRemove => 'Kkes amedya';
 
   @override
+  String get portfolioStopsAll => 'Alɣu n uɣelluy seg tqacuct i yimukan meṛṛa';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Ttwasbadun $count n walɣuten',
+      one: 'Yettwasbadu 1 n walɣu',
+      zero: 'Yal adeg yesɛa yakan alɣu-agi',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

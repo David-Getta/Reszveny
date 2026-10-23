@@ -2661,6 +2661,22 @@ class AppLocalizationsSq extends AppLocalizations {
   String get portfolioSampleRemove => 'Hiq shembullin';
 
   @override
+  String get portfolioStopsAll =>
+      'Sinjalizim për rënie nga maja për të gjitha pozicionet';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'U vendosën $count sinjalizime',
+      one: 'U vendos 1 sinjalizim',
+      zero: 'Të gjitha pozicionet e kanë tashmë këtë sinjalizim',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

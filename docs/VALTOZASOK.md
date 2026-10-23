@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.202)
+# Változásjegyzék (0.2.130 → 0.2.203)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -32,6 +32,8 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
   évi osztalékkal; ha a cég nem fizet, ezt egy mondat mondja ki (az összehasonlításban is új sor).
 
 ## Kockázat
+
+- **Követő stop minden pozícióra** egy lépésben a portfólió menüjéből (−5 … −25%, a meglévők maradnak).
 
 - **Legnagyobb visszaesés** az értékalakulás-kártyán (a vételek és eladások hatása nélkül, időarányosan), a csúcs és
   a mélypont napjával, ⓘ magyarázattal.

@@ -8,6 +8,7 @@ import '../../core/share/share_text.dart';
 import '../../l10n/generated/app_localizations.dart';
 import '../../theme/app_theme.dart';
 import 'annual_summary.dart';
+import 'bulk_stops.dart';
 import 'holdings_import.dart';
 import 'cash_dialog.dart';
 import 'portfolio_csv.dart';
@@ -47,6 +48,8 @@ class PortfolioCsvMenu extends StatelessWidget {
               ),
             );
           }
+        } else if (v == 'stops') {
+          if (context.mounted) await showBulkStops(context);
         } else if (v == 'summary') {
           if (context.mounted) await showAnnualSummary(context);
         } else if (v == 'realized') {
@@ -63,6 +66,13 @@ class PortfolioCsvMenu extends StatelessWidget {
             key: const ValueKey('portfolio-export'),
             value: 'export',
             child: ListTile(leading: const Icon(Icons.ios_share_rounded), title: Text(l10n.portfolioExport)),
+          ),
+        // Követő stop (esés a csúcstól) egyszerre minden pozícióra.
+        if (services.portfolio.positions.isNotEmpty)
+          PopupMenuItem(
+            key: const ValueKey('portfolio-stops'),
+            value: 'stops',
+            child: ListTile(leading: const Icon(Icons.trending_down_rounded), title: Text(l10n.portfolioStopsAll)),
           ),
         // Éves összesítő (adóbevalláshoz), ha volt eladás, osztalék vagy díj.
         if (summaryYears(services.portfolio).isNotEmpty)

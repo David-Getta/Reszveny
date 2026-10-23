@@ -805,5 +805,7 @@
   "watchSince": "ወደ ተወዳጆች ካከሉት ወዲህ ({date})",
   "portfolioSampleTry": "በናሙና ፖርትፎሊዮ ሞክር",
   "portfolioSampleBanner": "ይህ የናሙና ፖርትፎሊዮ ነው። የራስዎን ግዢዎች ከጎኑ ያክሉ፣ ወይም ያስወግዱት።",
-  "portfolioSampleRemove": "ናሙናውን አስወግድ"
+  "portfolioSampleRemove": "ናሙናውን አስወግድ",
+  "portfolioStopsAll": "ለሁሉም ይዞታዎች ከከፍተኛው የመውረድ ማንቂያ",
+  "portfolioStopsDone": "{count, plural, =0{ሁሉም ይዞታዎች ቀድሞውኑ ይህ ማንቂያ አላቸው} =1{1 ማንቂያ ተቀናብሯል} other{{count} ማንቂያዎች ተቀናብረዋል}}"
 }

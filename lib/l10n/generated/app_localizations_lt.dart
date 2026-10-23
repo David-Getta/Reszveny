@@ -2722,6 +2722,24 @@ class AppLocalizationsLt extends AppLocalizations {
   String get portfolioSampleRemove => 'Pašalinti pavyzdį';
 
   @override
+  String get portfolioStopsAll =>
+      'Kritimo nuo piko įspėjimas visoms pozicijoms';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Nustatyta $count įspėjimų',
+      many: 'Nustatyta $count įspėjimo',
+      few: 'Nustatyti $count įspėjimai',
+      one: 'Nustatytas $count įspėjimas',
+      zero: 'Visos pozicijos jau turi šį įspėjimą',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nustatyti tikslą';
 
   @override

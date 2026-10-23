@@ -805,5 +805,7 @@
   "watchSince": "Siden du føjede den til favoritter ({date})",
   "portfolioSampleTry": "Prøv med en eksempelportefølje",
   "portfolioSampleBanner": "Dette er en eksempelportefølje. Tilføj dine egne køb ved siden af, eller fjern den.",
-  "portfolioSampleRemove": "Fjern eksempel"
+  "portfolioSampleRemove": "Fjern eksempel",
+  "portfolioStopsAll": "Trailing stop for alle beholdninger",
+  "portfolioStopsDone": "{count, plural, =0{Alle beholdninger har allerede et trailing stop} =1{1 trailing stop oprettet} other{{count} trailing stops oprettet}}"
 }

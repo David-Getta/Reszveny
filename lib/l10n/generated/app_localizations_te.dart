@@ -2662,6 +2662,21 @@ class AppLocalizationsTe extends AppLocalizations {
   String get portfolioSampleRemove => 'నమూనాను తీసివేయి';
 
   @override
+  String get portfolioStopsAll => 'అన్ని పొజిషన్లకు ట్రెయిలింగ్ స్టాప్';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ట్రెయిలింగ్ స్టాప్‌లు సెట్ చేయబడ్డాయి',
+      one: '1 ట్రెయిలింగ్ స్టాప్ సెట్ చేయబడింది',
+      zero: 'ప్రతి పొజిషన్‌కు ఇప్పటికే ట్రెయిలింగ్ స్టాప్ ఉంది',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

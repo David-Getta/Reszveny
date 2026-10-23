@@ -805,5 +805,7 @@
   "watchSince": "Kubangila pawakayibueja mu biudi musue ({date})",
   "portfolioSampleTry": "Teta ne portefeuille wa tshilejilu",
   "portfolioSampleBanner": "Eu udi portefeuille wa tshilejilu. Bueja bintu biuvua musumbe ku luseke luende, anyi umbusha.",
-  "portfolioSampleRemove": "Umbusha tshilejilu"
+  "portfolioSampleRemove": "Umbusha tshilejilu",
+  "portfolioStopsAll": "Dimanyisha dia dipueka ku tshisongo bua bitupa bionso",
+  "portfolioStopsDone": "{count, plural, =0{Tshitupa tshionso tshidi kale ne dimanyisha edi} =1{Dimanyisha 1 diateka} other{Mamanyisha {count} maateka}}"
 }

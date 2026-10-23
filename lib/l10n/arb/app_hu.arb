@@ -706,6 +706,8 @@
   "portfolioSampleTry": "Kipróbálom egy minta-portfólióval",
   "portfolioSampleBanner": "Ez egy minta-portfólió. Mellé veheted a saját vételeidet, vagy eltávolíthatod.",
   "portfolioSampleRemove": "Minta eltávolítása",
+  "portfolioStopsAll": "Követő stop minden pozícióra",
+  "portfolioStopsDone": "{count, plural, =0{Minden pozíción van már követő stop} =1{1 követő stop beállítva} other{{count} követő stop beállítva}}",
   "portfolioGoalSet": "Cél kitűzése",
   "portfolioGoalTitle": "Portfólió-cél",
   "portfolioGoalProgress": "{percent} kész · cél: {amount}",

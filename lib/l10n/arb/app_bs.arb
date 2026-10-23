@@ -805,5 +805,7 @@
   "watchSince": "Od dodavanja u favorite ({date})",
   "portfolioSampleTry": "Isprobaj s primjerom portfolija",
   "portfolioSampleBanner": "Ovo je primjer portfolija. Dodajte pored njega svoje kupovine ili ga uklonite.",
-  "portfolioSampleRemove": "Ukloni primjer"
+  "portfolioSampleRemove": "Ukloni primjer",
+  "portfolioStopsAll": "Upozorenje na pad od vrha za sve pozicije",
+  "portfolioStopsDone": "{count, plural, =0{Sve pozicije već imaju to upozorenje} =1{Postavljeno je 1 upozorenje} one{Postavljeno je {count} upozorenje} few{Postavljena su {count} upozorenja} other{Postavljeno je {count} upozorenja}}"
 }

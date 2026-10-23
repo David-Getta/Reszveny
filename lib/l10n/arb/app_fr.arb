@@ -805,5 +805,7 @@
   "watchSince": "Depuis l’ajout aux favoris ({date})",
   "portfolioSampleTry": "Essayer avec un portefeuille d’exemple",
   "portfolioSampleBanner": "Ceci est un portefeuille d’exemple. Ajoutez vos propres achats à côté, ou supprimez-le.",
-  "portfolioSampleRemove": "Supprimer l’exemple"
+  "portfolioSampleRemove": "Supprimer l’exemple",
+  "portfolioStopsAll": "Stop suiveur sur toutes les positions",
+  "portfolioStopsDone": "{count, plural, =0{Toutes les positions ont déjà un stop suiveur} =1{1 stop suiveur créé} other{{count} stops suiveurs créés}}"
 }

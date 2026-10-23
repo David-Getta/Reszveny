@@ -2539,6 +2539,21 @@ class AppLocalizationsZh extends AppLocalizations {
   String get portfolioSampleRemove => '移除示例';
 
   @override
+  String get portfolioStopsAll => '为所有持仓设置跟踪止损';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '已设置 $count 个跟踪止损',
+      one: '已设置 1 个跟踪止损',
+      zero: '所有持仓都已设置跟踪止损',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5445,6 +5460,21 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
 
   @override
   String get portfolioSampleRemove => '移除示範';
+
+  @override
+  String get portfolioStopsAll => '為所有持倉設定追蹤止蝕';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '已設定 $count 個追蹤止蝕',
+      one: '已設定 1 個追蹤止蝕',
+      zero: '所有持倉均已設定追蹤止蝕',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portfolioGoalSet => '設定目標';

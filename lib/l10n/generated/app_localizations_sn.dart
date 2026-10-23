@@ -2663,6 +2663,22 @@ class AppLocalizationsSn extends AppLocalizations {
   String get portfolioSampleRemove => 'Bvisa muenzaniso';
 
   @override
+  String get portfolioStopsAll =>
+      'Yambiro rekudzika kubva pamusoro-soro pamasheya ese';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Yambiro $count dzaiswa',
+      one: 'Yambiro 1 raiswa',
+      zero: 'Sheya yega yega yatova neyambiro iri',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Isa chinangwa';
 
   @override

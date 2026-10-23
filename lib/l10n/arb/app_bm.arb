@@ -805,5 +805,7 @@
   "watchSince": "Kabini i y'a fara diyanyelenw kan ({date})",
   "portfolioSampleTry": "A kɔrɔbɔ ni misali aksiyɔn kɛsu ye",
   "portfolioSampleBanner": "Nin ye misali aksiyɔn kɛsu ye. I yɛrɛ ka sanniw fara a kɛrɛ fɛ, walima a bɔ yen.",
-  "portfolioSampleRemove": "Misali bɔ a la"
+  "portfolioSampleRemove": "Misali bɔ a la",
+  "portfolioStopsAll": "Sanfɛla jigin kunnafoni aksiyɔnw bɛɛ ye",
+  "portfolioStopsDone": "{count, plural, =0{Kunnafoni in bɛ aksiyɔn bɛɛ kan kaban} =1{Kunnafoni 1 sigilen don} other{Kunnafoni {count} sigilen don}}"
 }

@@ -2634,6 +2634,22 @@ class AppLocalizationsKm extends AppLocalizations {
   String get portfolioSampleRemove => 'ដកគំរូចេញ';
 
   @override
+  String get portfolioStopsAll =>
+      'ការជូនដំណឹងពេលធ្លាក់ពីកំពូលសម្រាប់ការកាន់កាប់ទាំងអស់';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'បានកំណត់ការជូនដំណឹង $count',
+      one: 'បានកំណត់ការជូនដំណឹង 1',
+      zero: 'ការកាន់កាប់នីមួយៗមានការជូនដំណឹងនេះរួចហើយ',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

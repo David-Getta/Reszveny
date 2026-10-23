@@ -805,5 +805,7 @@
   "watchSince": "Kusukela walengeza kuzintandokazi ({date})",
   "portfolioSampleTry": "Zama ngephothifoliyo yesampula",
   "portfolioSampleBanner": "Lena iphothifoliyo yesampula. Engeza okuthengile kwakho eceleni kwayo, noma uyisuse.",
-  "portfolioSampleRemove": "Susa isampula"
+  "portfolioSampleRemove": "Susa isampula",
+  "portfolioStopsAll": "Isexwayiso sokwehla kusuka esiqongweni kuwo wonke amasheya",
+  "portfolioStopsDone": "{count, plural, =0{Isheya ngalinye selinaso lesi sexwayiso} =1{Kusethwe isexwayiso esisodwa} other{Kusethwe izexwayiso ezingu-{count}}}"
 }

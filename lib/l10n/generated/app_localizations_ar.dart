@@ -2714,6 +2714,24 @@ class AppLocalizationsAr extends AppLocalizations {
   String get portfolioSampleRemove => 'إزالة المحفظة النموذجية';
 
   @override
+  String get portfolioStopsAll => 'وقف متحرك لجميع المراكز';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'تم ضبط وقف متحرك لـ $count مركز',
+      many: 'تم ضبط وقف متحرك لـ $count مركزًا',
+      few: 'تم ضبط وقف متحرك لـ $count مراكز',
+      two: 'تم ضبط وقف متحرك لمركزين',
+      one: 'تم ضبط وقف متحرك لمركز واحد',
+      zero: 'لدى كل المراكز وقف متحرك بالفعل',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'تحديد هدف';
 
   @override

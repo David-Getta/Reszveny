@@ -2653,6 +2653,21 @@ class AppLocalizationsSi extends AppLocalizations {
   String get portfolioSampleRemove => 'නියැදිය ඉවත් කරන්න';
 
   @override
+  String get portfolioStopsAll => 'සියලු ස්ථාන සඳහා උපරිමයෙන් පහත වැටීමේ ඇඟවීම';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ඇඟවීම් $countක් සැකසුවා',
+      one: 'ඇඟවීමක් සැකසුවා',
+      zero: 'සෑම ස්ථානයකටම දැනටමත් මෙම ඇඟවීම ඇත',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'ඉලක්කයක් සකසන්න';
 
   @override

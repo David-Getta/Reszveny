@@ -2651,6 +2651,21 @@ class AppLocalizationsIg extends AppLocalizations {
   String get portfolioSampleRemove => 'Wepụ ọmụmaatụ';
 
   @override
+  String get portfolioStopsAll => 'Ọkwa ọdịda site n\'elu maka òkè niile';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Edobere ọkwa $count',
+      one: 'Edobere ọkwa 1',
+      zero: 'Òkè ọ bụla enwelarị ọkwa a',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tọọ ebumnuche';
 
   @override

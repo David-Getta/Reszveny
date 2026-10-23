@@ -2676,6 +2676,21 @@ class AppLocalizationsMk extends AppLocalizations {
   String get portfolioSampleRemove => 'Отстрани го примерот';
 
   @override
+  String get portfolioStopsAll => 'Известување за пад од врвот за сите позиции';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Поставени се $count известувања',
+      one: 'Поставено е $count известување',
+      zero: 'Сите позиции веќе го имаат ова известување',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Постави цел';
 
   @override

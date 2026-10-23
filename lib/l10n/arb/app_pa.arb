@@ -805,5 +805,7 @@
   "watchSince": "ਮਨਪਸੰਦ ਵਿੱਚ ਸ਼ਾਮਲ ਕਰਨ ਤੋਂ ਬਾਅਦ ({date})",
   "portfolioSampleTry": "ਨਮੂਨਾ ਪੋਰਟਫ਼ੋਲੀਓ ਨਾਲ ਅਜ਼ਮਾਓ",
   "portfolioSampleBanner": "ਇਹ ਇੱਕ ਨਮੂਨਾ ਪੋਰਟਫ਼ੋਲੀਓ ਹੈ। ਇਸਦੇ ਨਾਲ ਆਪਣੀਆਂ ਖ਼ਰੀਦਾਂ ਸ਼ਾਮਲ ਕਰੋ, ਜਾਂ ਇਸਨੂੰ ਹਟਾਓ।",
-  "portfolioSampleRemove": "ਨਮੂਨਾ ਹਟਾਓ"
+  "portfolioSampleRemove": "ਨਮੂਨਾ ਹਟਾਓ",
+  "portfolioStopsAll": "ਸਾਰੀਆਂ ਪੁਜ਼ੀਸ਼ਨਾਂ ਲਈ ਟ੍ਰੇਲਿੰਗ ਸਟਾਪ",
+  "portfolioStopsDone": "{count, plural, =0{ਹਰ ਪੁਜ਼ੀਸ਼ਨ 'ਤੇ ਪਹਿਲਾਂ ਹੀ ਟ੍ਰੇਲਿੰਗ ਸਟਾਪ ਹੈ} =1{1 ਟ੍ਰੇਲਿੰਗ ਸਟਾਪ ਸੈੱਟ ਕੀਤਾ} other{{count} ਟ੍ਰੇਲਿੰਗ ਸਟਾਪ ਸੈੱਟ ਕੀਤੇ}}"
 }

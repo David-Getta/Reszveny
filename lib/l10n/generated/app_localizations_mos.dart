@@ -2641,6 +2641,21 @@ class AppLocalizationsMos extends AppLocalizations {
   String get portfolioSampleRemove => 'Yiis makrã';
 
   @override
+  String get portfolioStopsAll => 'Kibay sigr n yi zʋʋgã aksiõ fãa yĩnga';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'B ningame kibay $count',
+      one: 'B ningame kibay a yembre',
+      zero: 'Aksiõ fãa tara kibay kãnga',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

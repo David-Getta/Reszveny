@@ -2662,6 +2662,21 @@ class AppLocalizationsPt extends AppLocalizations {
   String get portfolioSampleRemove => 'Remover exemplo';
 
   @override
+  String get portfolioStopsAll => 'Stop móvel para todas as posições';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count stops móveis definidos',
+      one: '1 stop móvel definido',
+      zero: 'Todas as posições já têm stop móvel',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Definir meta';
 
   @override

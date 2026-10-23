@@ -2697,6 +2697,22 @@ class AppLocalizationsLv extends AppLocalizations {
   String get portfolioSampleRemove => 'Noņemt paraugu';
 
   @override
+  String get portfolioStopsAll =>
+      'Krituma no virsotnes brīdinājums visām pozīcijām';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Iestatīti $count brīdinājumi',
+      one: 'Iestatīts $count brīdinājums',
+      zero: 'Iestatīti $count brīdinājumi',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

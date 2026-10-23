@@ -2664,6 +2664,22 @@ class AppLocalizationsRn extends AppLocalizations {
   String get portfolioSampleRemove => 'Kuramwo akarorero';
 
   @override
+  String get portfolioStopsAll =>
+      'Imenyesha ry\'imanuka kuva ku gasongero ku migabane yose';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Hashizweho amamenyesha $count',
+      one: 'Hashizweho imenyesha 1',
+      zero: 'Imigabane yose isanzwe ifise iri menyesha',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Shiraho intumbero';
 
   @override

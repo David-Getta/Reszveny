@@ -805,5 +805,7 @@
   "watchSince": "Favorilere eklediğinizden bu yana ({date})",
   "portfolioSampleTry": "Örnek portföyle dene",
   "portfolioSampleBanner": "Bu bir örnek portföy. Yanına kendi alımlarınızı ekleyin ya da onu kaldırın.",
-  "portfolioSampleRemove": "Örneği kaldır"
+  "portfolioSampleRemove": "Örneği kaldır",
+  "portfolioStopsAll": "Tüm pozisyonlar için iz süren stop",
+  "portfolioStopsDone": "{count, plural, =0{Tüm pozisyonlarda zaten iz süren stop var} =1{1 iz süren stop kuruldu} other{{count} iz süren stop kuruldu}}"
 }

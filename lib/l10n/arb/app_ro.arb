@@ -805,5 +805,7 @@
   "watchSince": "De la adăugarea la favorite ({date})",
   "portfolioSampleTry": "Încearcă cu un portofoliu de exemplu",
   "portfolioSampleBanner": "Acesta este un portofoliu de exemplu. Adaugă alături achizițiile tale sau elimină-l.",
-  "portfolioSampleRemove": "Elimină exemplul"
+  "portfolioSampleRemove": "Elimină exemplul",
+  "portfolioStopsAll": "Trailing stop pentru toate pozițiile",
+  "portfolioStopsDone": "{count, plural, =0{Toate pozițiile au deja trailing stop} =1{A fost setat 1 trailing stop} one{A fost setat {count} trailing stop} few{Au fost setate {count} trailing stopuri} other{Au fost setate {count} de trailing stopuri}}"
 }

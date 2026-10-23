@@ -805,5 +805,7 @@
   "watchSince": "Ku sukela loko u yi engetele eka leswi u swi rhandzaka ({date})",
   "portfolioSampleTry": "Ringeta hi phothifoliyo ya xikombiso",
   "portfolioSampleBanner": "Leyi i phothifoliyo ya xikombiso. Engetela leswi u swi xaveke etlhelo ka yona, kumbe u yi susa.",
-  "portfolioSampleRemove": "Susa xikombiso"
+  "portfolioSampleRemove": "Susa xikombiso",
+  "portfolioStopsAll": "Xitsundzuxo xa ku wela ku suka ehenhla eka tixere hinkwato",
+  "portfolioStopsDone": "{count, plural, =0{Xere yin'wana na yin'wana se yi na xitsundzuxo lexi} =1{Ku vekiwe xitsundzuxo xin'we} other{Ku vekiwe switsundzuxo swa {count}}}"
 }

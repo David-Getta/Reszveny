@@ -2664,6 +2664,22 @@ class AppLocalizationsNy extends AppLocalizations {
   String get portfolioSampleRemove => 'Chotsani chitsanzo';
 
   @override
+  String get portfolioStopsAll =>
+      'Chenjezo la kutsika kuchokera pamwamba pa masheya onse';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Machenjezo $count akhazikitsidwa',
+      one: 'Chenjezo 1 lakhazikitsidwa',
+      zero: 'Sheya iliyonse ili kale ndi chenjezo ili',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

@@ -805,5 +805,7 @@
   "watchSince": "От добавянето в любими ({date})",
   "portfolioSampleTry": "Опитайте с примерен портфейл",
   "portfolioSampleBanner": "Това е примерен портфейл. Добавете собствените си покупки до него или го премахнете.",
-  "portfolioSampleRemove": "Премахни примера"
+  "portfolioSampleRemove": "Премахни примера",
+  "portfolioStopsAll": "Трейлинг стоп за всички позиции",
+  "portfolioStopsDone": "{count, plural, =0{Всички позиции вече имат трейлинг стоп} =1{Зададен е 1 трейлинг стоп} other{Зададени са {count} трейлинг стопа}}"
 }

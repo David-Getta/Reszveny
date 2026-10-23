@@ -2624,6 +2624,21 @@ class AppLocalizationsTh extends AppLocalizations {
   String get portfolioSampleRemove => 'ลบตัวอย่าง';
 
   @override
+  String get portfolioStopsAll => 'Trailing Stop สำหรับหุ้นที่ถือทั้งหมด';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ตั้ง Trailing Stop $count รายการแล้ว',
+      one: 'ตั้ง Trailing Stop 1 รายการแล้ว',
+      zero: 'หุ้นที่ถือทุกรายการมี Trailing Stop อยู่แล้ว',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

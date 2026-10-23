@@ -2667,6 +2667,22 @@ class AppLocalizationsLn extends AppLocalizations {
   String get portfolioSampleRemove => 'Longola ndakisa';
 
   @override
+  String get portfolioStopsAll =>
+      'Likebisi ya bokiti uta na nsɔngɛ mpo na biteni nyonso';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Makebisi $count etyami',
+      one: 'Likebisi 1 etyami',
+      zero: 'Eteni nyonso esili kozala na likebisi oyo',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

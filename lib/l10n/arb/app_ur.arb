@@ -805,5 +805,7 @@
   "watchSince": "پسندیدہ میں شامل کرنے کے بعد سے ({date})",
   "portfolioSampleTry": "نمونہ پورٹ فولیو کے ساتھ آزمائیں",
   "portfolioSampleBanner": "یہ ایک نمونہ پورٹ فولیو ہے۔ اس کے ساتھ اپنی خریداریاں شامل کریں، یا اسے ہٹائیں۔",
-  "portfolioSampleRemove": "نمونہ ہٹائیں"
+  "portfolioSampleRemove": "نمونہ ہٹائیں",
+  "portfolioStopsAll": "تمام پوزیشنز کے لیے ٹریلنگ اسٹاپ",
+  "portfolioStopsDone": "{count, plural, =0{ہر پوزیشن پر پہلے سے ٹریلنگ اسٹاپ موجود ہے} =1{1 ٹریلنگ اسٹاپ سیٹ کر دیا گیا} other{{count} ٹریلنگ اسٹاپ سیٹ کر دیے گئے}}"
 }

@@ -805,5 +805,7 @@
   "watchSince": "Banda obakisaki yango na oyo olingaka ({date})",
   "portfolioSampleTry": "Meka na portefeuille ya ndakisa",
   "portfolioSampleBanner": "Oyo ezali portefeuille ya ndakisa. Bakisa biloko osombaki yo moko pembeni na yango, to longola yango.",
-  "portfolioSampleRemove": "Longola ndakisa"
+  "portfolioSampleRemove": "Longola ndakisa",
+  "portfolioStopsAll": "Likebisi ya bokiti uta na nsɔngɛ mpo na biteni nyonso",
+  "portfolioStopsDone": "{count, plural, =0{Eteni nyonso esili kozala na likebisi oyo} =1{Likebisi 1 etyami} other{Makebisi {count} etyami}}"
 }

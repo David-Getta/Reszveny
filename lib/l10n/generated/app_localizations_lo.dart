@@ -2628,6 +2628,22 @@ class AppLocalizationsLo extends AppLocalizations {
   String get portfolioSampleRemove => 'ລຶບຕົວຢ່າງ';
 
   @override
+  String get portfolioStopsAll =>
+      'ແຈ້ງເຕືອນລົງຈາກຈຸດສູງສຸດສຳລັບຮຸ້ນທີ່ຖືທັງໝົດ';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'ຕັ້ງການແຈ້ງເຕືອນ $count ລາຍການແລ້ວ',
+      one: 'ຕັ້ງການແຈ້ງເຕືອນ 1 ລາຍການແລ້ວ',
+      zero: 'ຮຸ້ນທີ່ຖືທຸກລາຍການມີການແຈ້ງເຕືອນນີ້ແລ້ວ',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

@@ -2647,6 +2647,22 @@ class AppLocalizationsMy extends AppLocalizations {
   String get portfolioSampleRemove => 'နမူနာ ဖယ်ရှားရန်';
 
   @override
+  String get portfolioStopsAll =>
+      'ကိုင်ဆောင်ထားမှုအားလုံးအတွက် အမြင့်ဆုံးမှ ကျဆင်းမှု သတိပေးချက်';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'သတိပေးချက် $count ခု သတ်မှတ်ပြီးပါပြီ',
+      one: 'သတိပေးချက် 1 ခု သတ်မှတ်ပြီးပါပြီ',
+      zero: 'ကိုင်ဆောင်ထားမှုတိုင်းတွင် ဤသတိပေးချက် ရှိပြီးသားဖြစ်သည်',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

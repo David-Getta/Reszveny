@@ -805,5 +805,7 @@
   "watchSince": "Hatramin'ny nanampianao azy amin'ny ankafizina ({date})",
   "portfolioSampleTry": "Andramo amin'ny kitapom-bola santionany",
   "portfolioSampleBanner": "Kitapom-bola santionany ity. Ampio eo anilany ny fividiananao manokana, na esory izy.",
-  "portfolioSampleRemove": "Esory ny santionany"
+  "portfolioSampleRemove": "Esory ny santionany",
+  "portfolioStopsAll": "Fampitandremana fidinana avy amin'ny tampony ho an'ny fananana rehetra",
+  "portfolioStopsDone": "{count, plural, =0{Efa manana io fampitandremana io ny fananana rehetra} =1{Napetraka ny fampitandremana 1} other{Napetraka ny fampitandremana {count}}}"
 }

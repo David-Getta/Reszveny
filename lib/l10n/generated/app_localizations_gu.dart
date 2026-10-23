@@ -2650,6 +2650,21 @@ class AppLocalizationsGu extends AppLocalizations {
   String get portfolioSampleRemove => 'નમૂનો કાઢી નાખો';
 
   @override
+  String get portfolioStopsAll => 'બધી પોઝિશન માટે ટ્રેલિંગ સ્ટોપ';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ટ્રેલિંગ સ્ટોપ સેટ કર્યા',
+      one: '1 ટ્રેલિંગ સ્ટોપ સેટ કર્યો',
+      zero: 'દરેક પોઝિશન પર પહેલેથી ટ્રેલિંગ સ્ટોપ છે',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'લક્ષ્ય નક્કી કરો';
 
   @override

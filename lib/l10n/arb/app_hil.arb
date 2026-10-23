@@ -805,5 +805,7 @@
   "watchSince": "Halin sang gindugang mo ini sa mga paborito ({date})",
   "portfolioSampleTry": "Tilawi gamit ang sample nga portfolio",
   "portfolioSampleBanner": "Sample nga portfolio ini. Idugang ang imo kaugalingon nga mga ginbakal sa tupad sini, ukon kuhaa ini.",
-  "portfolioSampleRemove": "Kuhaa ang sample"
+  "portfolioSampleRemove": "Kuhaa ang sample",
+  "portfolioStopsAll": "Trailing stop para sa tanan nga posisyon",
+  "portfolioStopsDone": "{count, plural, =0{May trailing stop na ang kada posisyon} =1{Gin-set ang 1 ka trailing stop} other{Gin-set ang {count} ka trailing stop}}"
 }

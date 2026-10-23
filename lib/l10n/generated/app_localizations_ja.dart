@@ -2575,6 +2575,21 @@ class AppLocalizationsJa extends AppLocalizations {
   String get portfolioSampleRemove => 'サンプルを削除';
 
   @override
+  String get portfolioStopsAll => '全保有銘柄にトレーリングストップ';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count 件のトレーリングストップを設定しました',
+      one: '1 件のトレーリングストップを設定しました',
+      zero: 'すべての保有銘柄にトレーリングストップが設定済みです',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override

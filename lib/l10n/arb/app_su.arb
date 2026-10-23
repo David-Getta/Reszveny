@@ -805,5 +805,7 @@
   "watchSince": "Ti saprak ditambahkeun ka paporit ({date})",
   "portfolioSampleTry": "Cobian ku portofolio conto",
   "portfolioSampleBanner": "Ieu portofolio conto. Tambahkeun pameser anjeun nyalira di gigireunana, atanapi piceun.",
-  "portfolioSampleRemove": "Piceun conto"
+  "portfolioSampleRemove": "Piceun conto",
+  "portfolioStopsAll": "Trailing stop pikeun sadaya posisi",
+  "portfolioStopsDone": "{count, plural, =0{Sadaya posisi parantos gaduh trailing stop} =1{1 trailing stop dipasang} other{{count} trailing stop dipasang}}"
 }

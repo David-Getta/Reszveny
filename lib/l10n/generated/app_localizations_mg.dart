@@ -2675,6 +2675,22 @@ class AppLocalizationsMg extends AppLocalizations {
   String get portfolioSampleRemove => 'Esory ny santionany';
 
   @override
+  String get portfolioStopsAll =>
+      'Fampitandremana fidinana avy amin\'ny tampony ho an\'ny fananana rehetra';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Napetraka ny fampitandremana $count',
+      one: 'Napetraka ny fampitandremana 1',
+      zero: 'Efa manana io fampitandremana io ny fananana rehetra',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

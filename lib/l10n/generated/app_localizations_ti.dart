@@ -2617,6 +2617,21 @@ class AppLocalizationsTi extends AppLocalizations {
   String get portfolioSampleRemove => 'ኣብነት ኣልግስ';
 
   @override
+  String get portfolioStopsAll => 'ንኹሎም ዋንነታት ካብ ጫፍ ናይ ምውራድ መጠንቀቕታ';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count መጠንቀቕታታት ተቐሚጦም',
+      one: '1 መጠንቀቕታ ተቐሚጡ',
+      zero: 'ኩሉ ዋንነት ድሮ እዚ መጠንቀቕታ ኣለዎ',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

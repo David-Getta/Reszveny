@@ -2650,6 +2650,22 @@ class AppLocalizationsFf extends AppLocalizations {
   String get portfolioSampleRemove => 'Ittu yeru';
 
   @override
+  String get portfolioStopsAll =>
+      'Jeertinol jippagol gila toownde wonande aksiyonji fof';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Jeertine $count teeltaama',
+      one: 'Jeertinol 1 teeltaama',
+      zero: 'Aksiyoŋ kala ena jogii jeertinol ngol',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

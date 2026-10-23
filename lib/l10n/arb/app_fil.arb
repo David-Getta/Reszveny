@@ -805,5 +805,7 @@
   "watchSince": "Mula nang idagdag mo sa mga paborito ({date})",
   "portfolioSampleTry": "Subukan gamit ang sample na portfolio",
   "portfolioSampleBanner": "Isa itong sample na portfolio. Idagdag ang sarili mong mga binili sa tabi nito, o alisin ito.",
-  "portfolioSampleRemove": "Alisin ang sample"
+  "portfolioSampleRemove": "Alisin ang sample",
+  "portfolioStopsAll": "Trailing stop para sa lahat ng posisyon",
+  "portfolioStopsDone": "{count, plural, =0{May trailing stop na ang bawat posisyon} =1{Na-set ang 1 trailing stop} other{Na-set ang {count} trailing stop}}"
 }

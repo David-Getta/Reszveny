@@ -2655,6 +2655,21 @@ class AppLocalizationsUr extends AppLocalizations {
   String get portfolioSampleRemove => 'نمونہ ہٹائیں';
 
   @override
+  String get portfolioStopsAll => 'تمام پوزیشنز کے لیے ٹریلنگ اسٹاپ';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count ٹریلنگ اسٹاپ سیٹ کر دیے گئے',
+      one: '1 ٹریلنگ اسٹاپ سیٹ کر دیا گیا',
+      zero: 'ہر پوزیشن پر پہلے سے ٹریلنگ اسٹاپ موجود ہے',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'ہدف مقرر کریں';
 
   @override

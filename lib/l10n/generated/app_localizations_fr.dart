@@ -2668,6 +2668,21 @@ class AppLocalizationsFr extends AppLocalizations {
   String get portfolioSampleRemove => 'Supprimer l’exemple';
 
   @override
+  String get portfolioStopsAll => 'Stop suiveur sur toutes les positions';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count stops suiveurs créés',
+      one: '1 stop suiveur créé',
+      zero: 'Toutes les positions ont déjà un stop suiveur',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Définir un objectif';
 
   @override

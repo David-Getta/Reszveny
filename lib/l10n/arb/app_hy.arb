@@ -805,5 +805,7 @@
   "watchSince": "Ընտրյալներում ավելացնելուց ի վեր ({date})",
   "portfolioSampleTry": "Փորձել օրինակային պորտֆելով",
   "portfolioSampleBanner": "Սա օրինակային պորտֆել է։ Ավելացրեք ձեր սեփական գնումները դրա կողքին կամ հեռացրեք այն։",
-  "portfolioSampleRemove": "Հեռացնել օրինակը"
+  "portfolioSampleRemove": "Հեռացնել օրինակը",
+  "portfolioStopsAll": "Գագաթից անկման ծանուցում բոլոր դիրքերի համար",
+  "portfolioStopsDone": "{count, plural, =0{Բոլոր դիրքերն արդեն ունեն այդ ծանուցումը} =1{Սահմանվեց 1 ծանուցում} other{Սահմանվեց {count} ծանուցում}}"
 }

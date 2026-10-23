@@ -2656,6 +2656,21 @@ class AppLocalizationsTr extends AppLocalizations {
   String get portfolioSampleRemove => 'Örneği kaldır';
 
   @override
+  String get portfolioStopsAll => 'Tüm pozisyonlar için iz süren stop';
+
+  @override
+  String portfolioStopsDone(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count iz süren stop kuruldu',
+      one: '1 iz süren stop kuruldu',
+      zero: 'Tüm pozisyonlarda zaten iz süren stop var',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hedef belirle';
 
   @override
