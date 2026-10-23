@@ -145,6 +145,8 @@ class SyncService extends ChangeNotifier {
     'email_alerts': preferences.emailAlerts,
     'weekly_digest': preferences.weeklyDigest,
     'favorites': preferences.favorites,
+    'favorites_removed': preferences.favoritesRemovedJson,
+    'favorites_added': preferences.favoritesAddedJson,
     'favorite_since': preferences.favoriteSinceJson,
     'watch_lists': [for (final l in preferences.watchLists) l.toJson()],
     if (preferences.targets.isNotEmpty) 'targets': preferences.targets,
@@ -251,6 +253,21 @@ class SyncService extends ChangeNotifier {
       },
     );
     final cash = mergeCash(local, remote);
+    // Kedvencek: a két oldal uniója, kivéve amit levettek, és utána nem vették fel újra.
+    final favRemoved = unionTombstones(local['favorites_removed'], remote['favorites_removed']);
+    final favAdded = unionTombstones(local['favorites_added'], remote['favorites_added']);
+    final favorites = [
+      for (final f in {
+        for (final f in [...?(local['favorites'] as List?), ...?(remote['favorites'] as List?)]) '$f',
+      })
+        if (switch (favRemoved[f]) {
+          final removed? => favAdded[f]?.isAfter(removed) ?? false,
+          null => true,
+        })
+          f,
+    ];
+    favRemoved.removeWhere((f, _) => favorites.contains(f));
+    favAdded.removeWhere((f, _) => !favorites.contains(f));
     final lots = byId(local['lots'], remote['lots']);
     final dividends = byId(local['dividends'], remote['dividends']);
     final splits = _uniqueSplits(byId(local['splits'], remote['splits']));
@@ -268,9 +285,9 @@ class SyncService extends ChangeNotifier {
       'lang': ?(local['lang'] ?? remote['lang']),
       'email_alerts': local['email_alerts'] ?? remote['email_alerts'] ?? true,
       'weekly_digest': local['weekly_digest'] ?? remote['weekly_digest'] ?? false,
-      'favorites': {
-        for (final f in [...?(local['favorites'] as List?), ...?(remote['favorites'] as List?)]) '$f',
-      }.toList(),
+      'favorites': favorites,
+      'favorites_removed': tombstonesJson(favRemoved),
+      'favorites_added': {for (final e in favAdded.entries) e.key: e.value.toUtc().toIso8601String()},
       'watch_lists': _mergeLists(local['watch_lists'], remote['watch_lists']),
       // Célarányok: tickerenként a helyi nyer.
       'targets': {...AppPreferences.parseTargets(remote['targets']), ...AppPreferences.parseTargets(local['targets'])},
@@ -387,9 +404,18 @@ class SyncService extends ChangeNotifier {
     required NotesStore notes,
   }) async {
     // Régi csomagban nincs felvételi nap: akkor a helyiek maradnak (a kedvencekre szűkítve).
-    await preferences.setFavorites([
-      for (final f in (data['favorites'] as List? ?? const [])) '$f',
-    ], since: AppPreferences.parseFavoriteSince(data['favorite_since']));
+    final favorites = [for (final f in (data['favorites'] as List? ?? const [])) '$f'];
+    await preferences.setFavorites(favorites, since: AppPreferences.parseFavoriteSince(data['favorite_since']));
+    // A kedvencek jelzései a csomag szerint; régi csomagban nincsenek: a helyiek
+    // maradnak, a csomagban szereplő kedvencek levételi jelzése nélkül.
+    await preferences.replaceFavoriteMarks(
+      removed: data['favorites_removed'] is Map
+          ? parseTombstones(data['favorites_removed'])
+          : _without(preferences.favoritesRemovedJson, favorites.map((f) => f.toUpperCase()).toSet()),
+      added: data['favorites_added'] is Map
+          ? parseTombstones(data['favorites_added'])
+          : parseTombstones(preferences.favoritesAddedJson),
+    );
     // Régi csomagban nincs ilyen mező: akkor a helyi listák maradnak.
     if (data['watch_lists'] is List) {
       await preferences.setWatchLists([for (final l in data['watch_lists'] as List) ?WatchList.fromJson(l)]);

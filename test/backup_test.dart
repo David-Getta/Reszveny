@@ -55,6 +55,17 @@ void main() {
     expect(a.notes.deletedJson, isEmpty);
   });
 
+  test('restoring brings back a favorite removed after the backup', () async {
+    final a = services();
+    await a.preferences.setFavorites(['AAPL', 'MSFT']);
+    final file = jsonEncode(Backup.data(a));
+    await a.preferences.toggleFavorite('MSFT');
+    expect(a.preferences.favoritesRemovedJson.keys, ['MSFT']);
+    await Backup.restore(a, Backup.parse(file)!);
+    expect(a.preferences.favorites.toSet(), {'AAPL', 'MSFT'});
+    expect(a.preferences.favoritesRemovedJson, isEmpty);
+  });
+
   test('restoring brings back what was deleted after the backup; other deletions stay deleted', () async {
     final a = services();
     final kept = await a.portfolio.add(symbol: 'AAPL', quantity: 3, price: 180, currency: 'USD');

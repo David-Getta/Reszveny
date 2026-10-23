@@ -431,6 +431,45 @@ void main() {
     server.afterNextGet = null;
   });
 
+  test('favorites: a removed one does not come back from the other device; re-added or undone it stays', () async {
+    final server = _Server();
+    SharedPreferences.setMockInitialValues({});
+    final a = _Device(server, favorites: ['AAPL', 'MSFT', 'NVDA']);
+    await a.sync.start();
+    SharedPreferences.setMockInitialValues({});
+    final b = _Device(server);
+    await b.sync.start();
+    expect(b.preferences.favorites, ['AAPL', 'MSFT', 'NVDA']);
+
+    // A leveszi az MSFT-t; B közben mást változtat, és utóbb szinkronizál.
+    await a.preferences.toggleFavorite('MSFT');
+    await a.sync.syncNow();
+    await b.portfolio.setCash('USD', 10);
+    await b.sync.syncNow();
+    await a.sync.syncNow();
+    expect(a.preferences.favorites, ['AAPL', 'NVDA']);
+    expect(b.preferences.favorites, ['AAPL', 'NVDA']);
+
+    // B később újra felveszi: megmarad (a felvétel későbbi, mint a levétel).
+    await b.preferences.toggleFavorite('MSFT');
+    await a.portfolio.setCash('EUR', 5);
+    await b.sync.syncNow();
+    await a.sync.syncNow();
+    expect(a.preferences.favorites, contains('MSFT'));
+
+    // A leveszi az NVDA-t, feltölti, majd visszavonja; B közben változtat: a visszavonás nyer.
+    final before = a.preferences.favorites;
+    await a.preferences.toggleFavorite('NVDA');
+    await a.sync.syncNow();
+    await a.preferences.setFavorites(before, restore: true);
+    await b.portfolio.setCash('HUF', 1000);
+    await b.sync.syncNow();
+    await a.sync.syncNow();
+    await b.sync.syncNow();
+    expect(a.preferences.favorites, contains('NVDA'));
+    expect(b.preferences.favorites, contains('NVDA'));
+  });
+
   test('goals follow the account: the newer change wins, a removed goal does not come back', () async {
     final server = _Server();
     SharedPreferences.setMockInitialValues({});

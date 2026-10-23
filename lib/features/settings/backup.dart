@@ -57,6 +57,7 @@ class Backup {
       'deleted': idsOf(['lots', 'dividends', 'splits']),
       'alerts_deleted': idsOf(['alerts']),
       'notes_deleted': {for (final k in (now['notes'] as Map? ?? const {}).keys) '$k'},
+      'favorites_removed': {for (final f in (now['favorites'] as List? ?? const [])) '$f'},
     };
     final revived = {for (final k in present.keys) k: <String>{}};
     // Visszajön-e (és ha igen, feljegyzi).
@@ -80,6 +81,11 @@ class Backup {
           '${e.key}': e.value is Map && back('notes_deleted', '${e.key}')
               ? {...e.value as Map, 'updated_at': stamp}
               : e.value,
+      },
+      'favorites_added': {
+        ...?(backup['favorites_added'] as Map?),
+        for (final f in (backup['favorites'] as List? ?? const []))
+          if (back('favorites_removed', '$f')) '$f': stamp,
       },
     };
     final current = {
