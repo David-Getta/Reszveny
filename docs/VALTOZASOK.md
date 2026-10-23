@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.250)
+# Változásjegyzék (0.2.130 → 0.2.252)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -266,6 +266,9 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
   (saját kérdéssel nem írható felül). Az app a szerveren még nem ellenőrzött vásárlást megjegyzi, és indításkor újra
   elküldi (hálózati hiba után sem vész el a megvett csomag). A belépőkód napi korlátja: címenként legfeljebb 10 kód
   és 15 hibás próbálkozás naponta (a 6 jegyű kód így nem találgatható ki).
+- **0.2.251–0.2.252**: az ajánlói kód új hibaüzenetei (belépés kell, a kód betelt) 120 nyelven; böngészős fizetésnél
+  élő előfizetés mellett a csomagváltás a Stripe portálon nyílik meg (nem indul második előfizetés), és az app figyeli,
+  mikor érvényes az új csomag.
 
 ## Bolti „Újdonságok” (rövid)
 

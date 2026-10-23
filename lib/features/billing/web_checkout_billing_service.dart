@@ -61,6 +61,15 @@ class WebCheckoutBillingService implements BillingService {
     try {
       url = await backend.checkoutUrl(product.id);
     } on BackendException catch (e) {
+      // Már van élő előfizetés: a csomagváltás a Stripe portálon megy (ott
+      // nem indul második előfizetés), utána a fiók változását figyeljük.
+      if (e.code == 'already_subscribed') {
+        final before = account.entitlements.state;
+        await manage();
+        _events.add(BillingEvent(productId: product.id, status: BillingStatus.pending, platform: 'stripe'));
+        _watch(product.id, before);
+        return;
+      }
       _events.add(
         BillingEvent(
           productId: product.id,

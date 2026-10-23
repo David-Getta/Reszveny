@@ -44,7 +44,10 @@ void main() {
           return json({'user_id': 'u1', 'email': email, 'entitlements': _ent(tier)});
         case '/v1/billing/checkout':
           if (email == null) return json({'error': 'login_required'}, 403);
+          if (tier == 'pro') return json({'error': 'already_subscribed'}, 409);
           return json({'url': 'https://checkout.stripe.com/c/1'});
+        case '/v1/billing/portal':
+          return json({'url': 'https://billing.stripe.com/p/1'});
       }
       return json({'error': 'nf'}, 404);
     });
@@ -89,6 +92,16 @@ void main() {
     await Future<void>.delayed(const Duration(milliseconds: 60));
     expect(ent.state.tier, PlanTier.pro);
     expect(bc.lastEvent?.status, BillingStatus.purchased);
+
+    // Élő előfizetés mellett a váltás a portálon megy (nincs második előfizetés).
+    final max = bc.products.firstWhere((p) => p.id == 'whatstock.sub.max');
+    await bc.buy(max);
+    await Future<void>.delayed(const Duration(milliseconds: 30));
+    expect(opened.last.toString(), 'https://billing.stripe.com/p/1');
+    expect(bc.lastEvent?.status, BillingStatus.pending);
+    tier = 'max';
+    await Future<void>.delayed(const Duration(milliseconds: 60));
+    expect(ent.state.tier, PlanTier.max);
 
     // Kijelentkezés.
     await account.signOut();
