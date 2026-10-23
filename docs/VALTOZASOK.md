@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.193)
+# Változásjegyzék (0.2.130 → 0.2.194)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -63,6 +63,12 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
 - **Tranzakciós díj (jutalék)**: a vételhez és az eladáshoz megadható; a bekerülési értékbe, a realizált nyereségbe
   (az adó-CSV-be is) és az éves hozamba beszámít; a bróker-exportok díj-oszlopa (IBKR „Comm/Fee”) importáláskor
   bekerül; szinkronban, mentésben és a CSV-ben is.
+
+## Import
+
+- A CSV-import a **magyar és német fejléceket** is felismeri (Mennyiség, Árfolyam, Pénznem, Dátum, Irány,
+  Számla, Jutalék; Stück, Kurs, Währung, Datum, Typ, Gebühr, Konto), a „Vétel/Eladás/Osztalék” és a
+  „Kauf/Verkauf” szavakat, és a magyar dátumot („2025.03.14.”).
 
 ## Megosztás
 

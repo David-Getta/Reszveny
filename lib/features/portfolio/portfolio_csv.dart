@@ -230,25 +230,41 @@ String _separator(String line) {
   return bare.contains('\t') ? '\t' : (bare.contains(';') ? ';' : ',');
 }
 
+/// Az eladás és a vétel magyarul és németül a „side” oszlopban (az eladás előbb:
+/// a „Verkauf” „kauf”-ot is tartalmaz).
+const _sellWords = ['eladás', 'verkauf'];
+const _buyWords = ['vétel', 'vásárlás', 'kauf'];
+
 /// Fejléc nélküli sorban a hetedik oszlop csak akkor számla, ha betű is van benne
 /// (egy összeg-oszlop, pl. „1500.00” vagy „$1,500”, nem az).
 final _accountLike = RegExp(r'\p{L}', unicode: true);
 
-/// A bróker-exportok oszlopnevei (kisbetűvel, írásjelek és szóközök nélkül).
+/// A bróker-exportok oszlopnevei (kisbetűvel, írásjelek, ékezetes betűk és szóközök
+/// nélkül – így a magyar „Mennyiség” „mennyisg”, a német „Stück” „stck”). A saját
+/// táblázatokhoz magyar és német fejlécek is.
 const _roles = <String, Set<String>>{
-  'symbol': {'symbol', 'ticker'},
-  'quantity': {'quantity', 'qty', 'shares', 'noofshares', 'numberofshares', 'units'},
-  'price': {'price', 'pricepershare', 'priceshare', 'tprice', 'tradeprice', 'unitprice', 'shareprice'},
-  'currency': {'currency', 'currencypriceshare', 'pricecurrency', 'currencyprimary'},
-  'date': {'date', 'time', 'datetime', 'tradedate'},
-  'side': {'type', 'action', 'side', 'buysell', 'transactiontype'},
+  'symbol': {'symbol', 'ticker', 'szimblum', 'tickerkd', 'krzel'},
+  'quantity': {
+    'quantity', 'qty', 'shares', 'noofshares', 'numberofshares', 'units', //
+    'mennyisg', 'darab', 'darabszm', 'db', 'stck', 'stckzahl', 'anzahl', 'menge',
+  },
+  'price': {
+    'price', 'pricepershare', 'priceshare', 'tprice', 'tradeprice', 'unitprice', 'shareprice', //
+    'rfolyam', 'egysgr', 'vtelir', 'eladsir', 'kurs', 'preis', 'ausfhrungskurs',
+  },
+  'currency': {'currency', 'currencypriceshare', 'pricecurrency', 'currencyprimary', 'pnznem', 'deviza', 'whrung'},
+  'date': {'date', 'time', 'datetime', 'tradedate', 'dtum', 'teljestsdtuma', 'ktsnap', 'datum', 'handelstag'},
+  'side': {
+    'type', 'action', 'side', 'buysell', 'transactiontype', //
+    'irny', 'mvelet', 'tpus', 'typ', 'art', 'transaktionsart', 'geschftsart',
+  },
   // Az osztaléksor összege (Revolut „Total Amount”, Trading 212 „Total”).
   'total': {'total', 'totalamount', 'amount', 'netamount'},
   'totalcurrency': {'currencytotal'},
   // A számla (saját export „account”, magyarul „számla”).
-  'account': {'account', 'accountname', 'szmla'},
+  'account': {'account', 'accountname', 'szmla', 'konto', 'depot'},
   // A tranzakció díja a kereskedés pénznemében (az IBKR negatívként írja).
-  'fee': {'fee', 'fees', 'commission', 'commissions', 'commfee', 'jutalk', 'dj'},
+  'fee': {'fee', 'fees', 'commission', 'commissions', 'commfee', 'jutalk', 'dj', 'gebhr', 'gebhren', 'provision'},
 };
 
 /// Fejlécsor felismerése: oszlopszerep → index, ha van ticker, darabszám és ár.
@@ -263,11 +279,17 @@ Map<String, int>? _header(List<String> cells) {
   return found.containsKey('symbol') && found.containsKey('quantity') && found.containsKey('price') ? found : null;
 }
 
-/// Dátum a gyakori alakokban: `2024-03-14…`, `20240314`, `14/03/2024`, `14.03.2024`.
+/// Dátum a gyakori alakokban: `2024-03-14…`, `2024.03.14.`, `20240314`, `14/03/2024`, `14.03.2024`.
 DateTime? _date(String raw) {
   final s = raw.trim();
   final iso = RegExp(r'^(\d{4})-(\d{2})-(\d{2})').firstMatch(s);
   if (iso != null) return DateTime.tryParse('${iso[1]}-${iso[2]}-${iso[3]}');
+  // Magyar (és ázsiai) sorrend: „2025.03.14.”, „2025. 03. 14.”, „2025/03/14”.
+  final ymd = RegExp(r'^(\d{4})[./]\s?(\d{1,2})[./]\s?(\d{1,2})').firstMatch(s);
+  if (ymd != null) {
+    final y = int.parse(ymd[1]!), m = int.parse(ymd[2]!), d = int.parse(ymd[3]!);
+    if (m >= 1 && m <= 12 && d >= 1 && d <= 31) return DateTime(y, m, d);
+  }
   final compact = RegExp(r'^(\d{4})(\d{2})(\d{2})(\D|$)').firstMatch(s);
   if (compact != null) return DateTime.tryParse('${compact[1]}-${compact[2]}-${compact[3]}');
   final eu = RegExp(r'^(\d{1,2})[./](\d{1,2})[./](\d{4})').firstMatch(s);
@@ -360,13 +382,13 @@ CsvImport _withHeader(
     bool? sell;
     if (side.isEmpty) {
       sell = signed != null && signed < 0;
-    } else if (side.contains('sell') || side == 's' || side == 'sld') {
+    } else if (side.contains('sell') || side == 's' || side == 'sld' || _sellWords.any(side.contains)) {
       sell = true;
-    } else if (side.contains('buy') || side == 'b' || side == 'bot') {
+    } else if (side.contains('buy') || side == 'b' || side == 'bot' || _buyWords.any(side.contains)) {
       sell = false;
     }
     final symbol = cell(f, 'symbol').toUpperCase();
-    if (side.contains('dividend')) {
+    if (side.contains('dividend') || side.contains('osztalék')) {
       // Kapott osztalék: a teljes összeg (ha nincs külön oszlopa, az ár oszlopában).
       final (amount, amountCcy) = _price(col.containsKey('total') ? cell(f, 'total') : cell(f, 'price'));
       final totalCcy = cell(f, 'totalcurrency').toUpperCase();

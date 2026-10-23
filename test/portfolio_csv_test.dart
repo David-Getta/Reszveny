@@ -162,7 +162,7 @@ void main() {
     final ib = parsePortfolioCsv('Symbol,Quantity,T. Price,Comm/Fee,Currency\nAAPL,10,190.5,-1.25,USD');
     expect(ib.lots.single.fee, 1.25);
     // Magyar fejléc: „Jutalék”.
-    expect(parsePortfolioCsv('Ticker;Darab;Price;Quantity;Jutalék\nOTP;x;30000;10;500').lots.single.fee, 500);
+    expect(parsePortfolioCsv('Ticker;Mennyiség;Árfolyam;Jutalék\nOTP;10;30000;500').lots.single.fee, 500);
   });
 
   test('dividends with an account: in both CSVs, read back with the account', () {
@@ -186,6 +186,32 @@ void main() {
       '2025-06-02,OTP,24000,HUF,TBSZ',
     ]);
     expect(dividendsCsv([dividends.last]), startsWith('date,symbol,amount,currency\n'));
+  });
+
+  test('own spreadsheets with Hungarian or German headers and buy/sell words', () {
+    final hu = parsePortfolioCsv(
+      'Ticker;Mennyiség;Árfolyam;Pénznem;Dátum;Irány;Számla\n'
+      'OTP;10;30 000;HUF;2025.03.14;Vétel;TBSZ\n'
+      'OTP;4;32 500,5;HUF;2026.01.05;Eladás;TBSZ\n'
+      'MOL;5;2 900;HUF;2025.05.02;Osztalék;',
+    );
+    expect(hu.skipped, 0);
+    expect(hu.lots.map((l) => (l.symbol, l.quantity, l.price, l.sell, l.account)), [
+      ('OTP', 10.0, 30000.0, false, 'TBSZ'),
+      ('OTP', 4.0, 32500.5, true, 'TBSZ'),
+    ]);
+    expect(hu.lots.last.date, DateTime(2026, 1, 5));
+    expect(hu.dividends.single.amount, 2900);
+    final de = parsePortfolioCsv(
+      'Kürzel;Stück;Kurs;Währung;Datum;Typ;Gebühr\n'
+      'SAP;10;180,50;EUR;14.03.2024;Kauf;4,90\n'
+      'SAP;3;210,00;EUR;02.02.2026;Verkauf;4,90',
+    );
+    expect(de.lots.map((l) => (l.symbol, l.quantity, l.price, l.currency, l.sell, l.fee)), [
+      ('SAP', 10.0, 180.5, 'EUR', false, 4.9),
+      ('SAP', 3.0, 210.0, 'EUR', true, 4.9),
+    ]);
+    expect(de.lots.first.date, DateTime(2024, 3, 14));
   });
 
   test('realized gains CSV: an account column when a sale has an account', () {
