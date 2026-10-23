@@ -836,5 +836,10 @@
   "activityTitle": "Të gjitha transaksionet",
   "activitySearchHint": "Filtro sipas simbolit",
   "activityNoMatch": "Asnjë transaksion nuk përputhet me filtrin.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 ishte regjistruar tashmë, u la jashtë} other{{count} ishin regjistruar tashmë, u lanë jashtë}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 ishte regjistruar tashmë, u la jashtë} other{{count} ishin regjistruar tashmë, u lanë jashtë}}",
+  "tickerChange": "Ndryshim simboli",
+  "tickerChangeTitle": "Ndryshim simboli · {symbol}",
+  "tickerChangeNew": "Simboli i ri",
+  "tickerChangeHint": "Kur një kompani ndryshon simbolin (p.sh. FB → META): të gjitha transaksionet, dividendët, ndarjet e aksioneve, shënimi dhe alarmet kalojnë te i riu.",
+  "tickerChanged": "U zhvendos te {symbol}"
 }

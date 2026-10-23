@@ -2801,6 +2801,26 @@ class AppLocalizationsBm extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Taamasiyɛn yɛlɛmali';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Taamasiyɛn yɛlɛmali · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Taamasiyɛn kura';
+
+  @override
+  String get tickerChangeHint =>
+      'Ni sosiyete dɔ ye a ka taamasiyɛn yɛlɛma (i n\'a fɔ FB → META): sanniw ni feereliw bɛɛ, dividandiw, share tilaliw, sɛbɛnni ani lasɔminiw bɛɛ bɛ taa taamasiyɛn kura kan.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'A taara $symbol kan';
+  }
+
+  @override
   String get portfolioGoalSet => 'Laɲini sigi';
 
   @override

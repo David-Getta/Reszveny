@@ -2810,6 +2810,26 @@ class AppLocalizationsTe extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'టికర్ మార్పు';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'టికర్ మార్పు · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'కొత్త టికర్';
+
+  @override
+  String get tickerChangeHint =>
+      'ఒక కంపెనీ తన టికర్‌ను మార్చినప్పుడు (ఉదా. FB → META): అన్ని లావాదేవీలు, డివిడెండ్లు, స్టాక్ స్ప్లిట్‌లు, గమనిక మరియు హెచ్చరికలు కొత్త టికర్‌కు తరలించబడతాయి.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return '$symbolకు తరలించబడింది';
+  }
+
+  @override
   String get portfolioGoalSet => 'లక్ష్యం సెట్ చేయి';
 
   @override

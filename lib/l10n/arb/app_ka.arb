@@ -836,5 +836,10 @@
   "activityTitle": "ყველა ტრანზაქცია",
   "activitySearchHint": "გაფილტვრა ტიკერით",
   "activityNoMatch": "ფილტრს არცერთი ტრანზაქცია არ შეესაბამება.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 უკვე ჩაწერილია, არ დაემატა} other{{count} უკვე ჩაწერილია, არ დაემატა}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 უკვე ჩაწერილია, არ დაემატა} other{{count} უკვე ჩაწერილია, არ დაემატა}}",
+  "tickerChange": "ტიკერის შეცვლა",
+  "tickerChangeTitle": "ტიკერის შეცვლა · {symbol}",
+  "tickerChangeNew": "ახალი ტიკერი",
+  "tickerChangeHint": "როცა კომპანია ტიკერს იცვლის (მაგ. FB → META): ყველა ტრანზაქცია, დივიდენდი, აქციების დაყოფა, ჩანაწერი და შეტყობინება ახალ ტიკერზე გადადის.",
+  "tickerChanged": "გადატანილია {symbol}-ზე"
 }

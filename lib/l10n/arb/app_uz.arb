@@ -836,5 +836,10 @@
   "activityTitle": "Barcha operatsiyalar",
   "activitySearchHint": "Tiker boʻyicha filtrlash",
   "activityNoMatch": "Filtrga mos operatsiya topilmadi.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 tasi allaqachon yozilgan, qoʻshilmadi} other{{count} tasi allaqachon yozilgan, qoʻshilmadi}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 tasi allaqachon yozilgan, qoʻshilmadi} other{{count} tasi allaqachon yozilgan, qoʻshilmadi}}",
+  "tickerChange": "Tikerni almashtirish",
+  "tickerChangeTitle": "Tikerni almashtirish · {symbol}",
+  "tickerChangeNew": "Yangi tiker",
+  "tickerChangeHint": "Kompaniya tikerini oʻzgartirganda (masalan, FB → META): barcha operatsiyalar, dividendlar, aksiya boʻlinishlari, qayd va signallar yangi tikerga koʻchiriladi.",
+  "tickerChanged": "{symbol} tikeriga koʻchirildi"
 }

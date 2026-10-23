@@ -836,5 +836,10 @@
   "activityTitle": "Kusumba ne kusumbisha kuonso",
   "activitySearchHint": "Sungula ku ticker",
   "activityNoMatch": "Katuena bapete kusumba anyi kusumbisha kuakanyine ne disungula.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 mufunda kale, kayi musakidibua} other{{count} mifunda kale, kayi misakidibua}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 mufunda kale, kayi musakidibua} other{{count} mifunda kale, kayi misakidibua}}",
+  "tickerChange": "Dishintulula dia ticker",
+  "tickerChangeTitle": "Dishintulula dia ticker · {symbol}",
+  "tickerChangeNew": "Ticker mupiamupia",
+  "tickerChangeHint": "Padi kompani ushintulula ticker wayi (bu tshilejilu FB → META): kusumba ne kusumbisha konso, dividende, diabanya dia share, mufundu ne alerte bionso bidi biya ku ticker mupiamupia.",
+  "tickerChanged": "Biakuya ku {symbol}"
 }

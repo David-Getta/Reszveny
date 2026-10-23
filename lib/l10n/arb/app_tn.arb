@@ -836,5 +836,10 @@
   "activityTitle": "Ditheko le dithekiso tsotlhe",
   "activitySearchHint": "Sefa ka ticker",
   "activityNoMatch": "Ga go na theko kgotsa thekiso e e tsamaelanang le sefa.",
-  "portfolioImportDuplicates": "{count, plural, =1{E le nngwe e setse e kwadilwe, ga e a okelwa} other{Di le {count} di setse di kwadilwe, ga di a okelwa}}"
+  "portfolioImportDuplicates": "{count, plural, =1{E le nngwe e setse e kwadilwe, ga e a okelwa} other{Di le {count} di setse di kwadilwe, ga di a okelwa}}",
+  "tickerChange": "Phetogo ya ticker",
+  "tickerChangeTitle": "Phetogo ya ticker · {symbol}",
+  "tickerChangeNew": "Ticker e ntšha",
+  "tickerChangeHint": "Fa khampani e fetola ticker ya yone (jaaka FB → META): ditheko le dithekiso tsotlhe, dividente, dikgaoganyo tsa dishere, ntlha le dikitsiso di fudusediwa kwa ticker e ntšha.",
+  "tickerChanged": "E fudusetswe kwa {symbol}"
 }

@@ -836,5 +836,10 @@
   "activityTitle": "全部交易记录",
   "activitySearchHint": "按股票代码筛选",
   "activityNoMatch": "没有符合筛选条件的交易。",
-  "portfolioImportDuplicates": "{count, plural, =1{1 笔已有记录，未重复添加} other{{count} 笔已有记录，未重复添加}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 笔已有记录，未重复添加} other{{count} 笔已有记录，未重复添加}}",
+  "tickerChange": "更改股票代码",
+  "tickerChangeTitle": "更改股票代码 · {symbol}",
+  "tickerChangeNew": "新股票代码",
+  "tickerChangeHint": "公司更改股票代码时（例如 FB → META），所有交易、股息、股票拆分、笔记和提醒都会转移到新代码下。",
+  "tickerChanged": "已转移到 {symbol}"
 }

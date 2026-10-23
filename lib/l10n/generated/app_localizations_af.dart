@@ -2808,6 +2808,26 @@ class AppLocalizationsAf extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Aandeelkodeverandering';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Aandeelkodeverandering · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Nuwe aandeelkode';
+
+  @override
+  String get tickerChangeHint =>
+      'Wanneer \'n maatskappy sy aandeelkode verander (bv. FB → META): alle transaksies, dividende, aandelesplitsings, die nota en die waarskuwings skuif na die nuwe een.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Geskuif na $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Stel \'n doelwit';
 
   @override

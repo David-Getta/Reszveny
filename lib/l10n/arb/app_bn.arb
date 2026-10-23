@@ -836,5 +836,10 @@
   "activityTitle": "সব লেনদেন",
   "activitySearchHint": "টিকার দিয়ে ফিল্টার করুন",
   "activityNoMatch": "ফিল্টারের সঙ্গে কোনো লেনদেন মেলেনি।",
-  "portfolioImportDuplicates": "{count, plural, one{{count}টি আগে থেকেই নথিভুক্ত, বাদ দেওয়া হয়েছে} other{{count}টি আগে থেকেই নথিভুক্ত, বাদ দেওয়া হয়েছে}}"
+  "portfolioImportDuplicates": "{count, plural, one{{count}টি আগে থেকেই নথিভুক্ত, বাদ দেওয়া হয়েছে} other{{count}টি আগে থেকেই নথিভুক্ত, বাদ দেওয়া হয়েছে}}",
+  "tickerChange": "টিকার পরিবর্তন",
+  "tickerChangeTitle": "টিকার পরিবর্তন · {symbol}",
+  "tickerChangeNew": "নতুন টিকার",
+  "tickerChangeHint": "কোনো কোম্পানি তার টিকার বদলালে (যেমন FB → META): সব লেনদেন, ডিভিডেন্ড, স্টক স্প্লিট, নোট ও সতর্কতা নতুন টিকারে চলে যায়।",
+  "tickerChanged": "{symbol}-এ সরানো হয়েছে"
 }

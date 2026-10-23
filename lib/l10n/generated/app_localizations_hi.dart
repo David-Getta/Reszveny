@@ -2801,6 +2801,26 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'टिकर बदलाव';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'टिकर बदलाव · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'नया टिकर';
+
+  @override
+  String get tickerChangeHint =>
+      'जब कोई कंपनी अपना टिकर बदलती है (जैसे FB → META): सभी लेन-देन, डिविडेंड, स्टॉक स्प्लिट, नोट और अलर्ट नए टिकर पर चले जाते हैं।';
+
+  @override
+  String tickerChanged(String symbol) {
+    return '$symbol पर ले जाया गया';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य तय करें';
 
   @override

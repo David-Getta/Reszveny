@@ -836,5 +836,10 @@
   "activityTitle": "Kaikki tapahtumat",
   "activitySearchHint": "Suodata tunnuksella",
   "activityNoMatch": "Suodatinta vastaavia tapahtumia ei ole.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 jo kirjattu, jätetty pois} other{{count} jo kirjattu, jätetty pois}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 jo kirjattu, jätetty pois} other{{count} jo kirjattu, jätetty pois}}",
+  "tickerChange": "Tunnuksen vaihto",
+  "tickerChangeTitle": "Tunnuksen vaihto · {symbol}",
+  "tickerChangeNew": "Uusi tunnus",
+  "tickerChangeHint": "Kun yhtiö vaihtaa tunnustaan (esim. FB → META): kaikki tapahtumat, osingot, osakesplitit, muistiinpano ja hälytykset siirtyvät uudelle tunnukselle.",
+  "tickerChanged": "Siirretty tunnukselle {symbol}"
 }

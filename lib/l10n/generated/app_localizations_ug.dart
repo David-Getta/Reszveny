@@ -2807,6 +2807,26 @@ class AppLocalizationsUg extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'كود ئۆزگەرتىش';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'كود ئۆزگەرتىش · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'يېڭى كود';
+
+  @override
+  String get tickerChangeHint =>
+      'شىركەت كودىنى ئۆزگەرتكەندە (مەسىلەن FB → META): بارلىق سودىلار، دىۋىدېندلار، پاي بۆلۈشلەر، خاتىرە ۋە ئاگاھلاندۇرۇشلار يېڭى كودقا يۆتكىلىدۇ.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return '$symbol غا يۆتكەلدى';
+  }
+
+  @override
   String get portfolioGoalSet => 'نىشان بەلگىلەش';
 
   @override

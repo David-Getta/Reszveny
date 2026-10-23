@@ -2796,6 +2796,26 @@ class AppLocalizationsMai extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'टिकर बदलाव';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'टिकर बदलाव · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'नव टिकर';
+
+  @override
+  String get tickerChangeHint =>
+      'जखन कोनो कंपनी अपन टिकर बदलैत अछि (जेना FB → META): सभ लेन-देन, डिविडेंड, स्टॉक स्प्लिट, नोट आ अलर्ट नव टिकर पर चलि जाइत अछि।';
+
+  @override
+  String tickerChanged(String symbol) {
+    return '$symbol पर लऽ जाओल गेल';
+  }
+
+  @override
   String get portfolioGoalSet => 'लक्ष्य निर्धारित करू';
 
   @override

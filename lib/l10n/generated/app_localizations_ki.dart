@@ -2806,6 +2806,26 @@ class AppLocalizationsKi extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Kũgarũra ticker';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Kũgarũra ticker · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Ticker njerũ';
+
+  @override
+  String get tickerChangeHint =>
+      'Kampuni ĩngĩgarũra ticker yayo (ta FB → META): ũgũri na ũendia wothe, mĩgai ya faida, ũgayanio wa share, ĩandĩko na imenyithia ciothe nĩ ithamagio ticker-inĩ ĩrĩa njerũ.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Nĩ ithamĩirio harĩ $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ĩkĩra muoroto';
 
   @override

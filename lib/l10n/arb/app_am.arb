@@ -836,5 +836,10 @@
   "activityTitle": "ሁሉም ግብይቶች",
   "activitySearchHint": "በምልክት አጣራ",
   "activityNoMatch": "ከማጣሪያው ጋር የሚዛመድ ግብይት የለም።",
-  "portfolioImportDuplicates": "{count, plural, one{{count} ቀድሞ ተመዝግቧል፣ ተትቷል} other{{count} ቀድመው ተመዝግበዋል፣ ተትተዋል}}"
+  "portfolioImportDuplicates": "{count, plural, one{{count} ቀድሞ ተመዝግቧል፣ ተትቷል} other{{count} ቀድመው ተመዝግበዋል፣ ተትተዋል}}",
+  "tickerChange": "የምልክት ለውጥ",
+  "tickerChangeTitle": "የምልክት ለውጥ · {symbol}",
+  "tickerChangeNew": "አዲስ ምልክት",
+  "tickerChangeHint": "አንድ ኩባንያ ምልክቱን ሲቀይር (ለምሳሌ FB → META)፦ ሁሉም ግብይቶች፣ የትርፍ ድርሻዎች፣ የአክሲዮን ክፍፍሎች፣ ማስታወሻው እና ማንቂያዎቹ ወደ አዲሱ ምልክት ይዛወራሉ።",
+  "tickerChanged": "ወደ {symbol} ተዛውሯል"
 }

@@ -2719,6 +2719,26 @@ class AppLocalizationsJa extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'ティッカー変更';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'ティッカー変更 · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => '新しいティッカー';
+
+  @override
+  String get tickerChangeHint =>
+      '企業がティッカーを変更した場合（例：FB → META）、すべての取引、配当金、株式分割、メモ、アラートが新しいティッカーに移行します。';
+
+  @override
+  String tickerChanged(String symbol) {
+    return '$symbol に移行しました';
+  }
+
+  @override
   String get portfolioGoalSet => '目標を設定';
 
   @override

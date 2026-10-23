@@ -836,5 +836,10 @@
   "activityTitle": "Все сделки",
   "activitySearchHint": "Фильтр по тикеру",
   "activityNoMatch": "Нет сделок, соответствующих фильтру.",
-  "portfolioImportDuplicates": "{count, plural, one{{count} уже есть, не добавлена} few{{count} уже есть, не добавлены} many{{count} уже есть, не добавлено} other{{count} уже есть, не добавлено}}"
+  "portfolioImportDuplicates": "{count, plural, one{{count} уже есть, не добавлена} few{{count} уже есть, не добавлены} many{{count} уже есть, не добавлено} other{{count} уже есть, не добавлено}}",
+  "tickerChange": "Смена тикера",
+  "tickerChangeTitle": "Смена тикера · {symbol}",
+  "tickerChangeNew": "Новый тикер",
+  "tickerChangeHint": "Когда компания меняет тикер (напр. FB → META): все сделки, дивиденды, сплиты акций, заметка и оповещения переносятся на новый.",
+  "tickerChanged": "Перенесено на {symbol}"
 }

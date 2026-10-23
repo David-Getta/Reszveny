@@ -836,5 +836,10 @@
   "activityTitle": "Ny fividianana sy fivarotana rehetra",
   "activitySearchHint": "Sivano araka ny ticker",
   "activityNoMatch": "Tsy misy fividianana na fivarotana mifanaraka amin'ny sivana.",
-  "portfolioImportDuplicates": "{count, plural, one{{count} efa voarakitra, tsy nampiana} other{{count} efa voarakitra, tsy nampiana}}"
+  "portfolioImportDuplicates": "{count, plural, one{{count} efa voarakitra, tsy nampiana} other{{count} efa voarakitra, tsy nampiana}}",
+  "tickerChange": "Fanovana ticker",
+  "tickerChangeTitle": "Fanovana ticker · {symbol}",
+  "tickerChangeNew": "Ticker vaovao",
+  "tickerChangeHint": "Rehefa manova ny ticker-ny ny orinasa iray (oh. FB → META): afindra any amin'ny ticker vaovao avokoa ny fividianana sy fivarotana rehetra, ny dividandy, ny fizarana anjara, ny naoty ary ny fanairana.",
+  "tickerChanged": "Nafindra any amin'ny {symbol}"
 }

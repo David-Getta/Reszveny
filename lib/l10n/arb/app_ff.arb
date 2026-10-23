@@ -836,5 +836,10 @@
   "activityTitle": "Soodgol e yeeyugol fof",
   "activitySearchHint": "Suɓo e kod",
   "activityNoMatch": "Alaa soodgol walla yeeyugol hawriingol e cuɓol maa.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 winndaama ko adii, ɓeydaaka} other{{count} winndaama ko adii, ɓeydaaka}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 winndaama ko adii, ɓeydaaka} other{{count} winndaama ko adii, ɓeydaaka}}",
+  "tickerChange": "Waylugol kod",
+  "tickerChangeTitle": "Waylugol kod · {symbol}",
+  "tickerChangeNew": "Kod kesum",
+  "tickerChangeHint": "So isiyee waylii kod mum (yeru: FB → META): soodgol e yeeyugol fof, dividendeeji, feccugol share, binndi ndii e tintine ɗee fof ina njaha e kod kesum oo.",
+  "tickerChanged": "Eggitinaama e {symbol}"
 }

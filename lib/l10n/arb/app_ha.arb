@@ -836,5 +836,10 @@
   "activityTitle": "Dukkan ma'amaloli",
   "activitySearchHint": "Tace ta ticker",
   "activityNoMatch": "Babu ma'amalar da ta dace da tacewa.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 an riga an rubuta, an bar shi} other{{count} an riga an rubuta, an bar su}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 an riga an rubuta, an bar shi} other{{count} an riga an rubuta, an bar su}}",
+  "tickerChange": "Canjin ticker",
+  "tickerChangeTitle": "Canjin ticker · {symbol}",
+  "tickerChangeNew": "Sabon ticker",
+  "tickerChangeHint": "Idan kamfani ya canza ticker ɗinsa (misali FB → META): duk ma'amaloli, rabon riba, rabon hannun jari, bayanin da faɗakarwar za su koma sabon ticker.",
+  "tickerChanged": "An mayar zuwa {symbol}"
 }

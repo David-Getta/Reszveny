@@ -2803,6 +2803,26 @@ class AppLocalizationsPcm extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Change ticker';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Change ticker · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Di new ticker';
+
+  @override
+  String get tickerChangeHint =>
+      'When company change im ticker (like FB → META): all di buy and sell, dividend, stock splits, di note and di alerts go move go di new one.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'E don move go $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Put target';
 
   @override

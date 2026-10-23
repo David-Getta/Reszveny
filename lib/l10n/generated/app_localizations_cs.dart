@@ -2874,6 +2874,26 @@ class AppLocalizationsCs extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Změna tickeru';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Změna tickeru · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Nový ticker';
+
+  @override
+  String get tickerChangeHint =>
+      'Když společnost změní svůj ticker (např. FB → META): všechny transakce, dividendy, štěpení akcií, poznámka i upozornění se přesunou na nový.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Přesunuto na $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastavit cíl';
 
   @override

@@ -836,5 +836,10 @@
   "activityTitle": "Tanang transaksyon",
   "activitySearchHint": "I-filter sumala sa ticker",
   "activityNoMatch": "Walay transaksyon nga mitugma sa filter.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 narekord na, wala gilakip} other{{count} narekord na, wala gilakip}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 narekord na, wala gilakip} other{{count} narekord na, wala gilakip}}",
+  "tickerChange": "Pag-usab sa ticker",
+  "tickerChangeTitle": "Pag-usab sa ticker · {symbol}",
+  "tickerChangeNew": "Bag-ong ticker",
+  "tickerChangeHint": "Kon usbon sa kompanya ang ticker niini (pananglitan FB → META): ang tanang transaksyon, dibidendo, stock split, ang nota ug ang mga alerto mabalhin sa bag-o.",
+  "tickerChanged": "Gibalhin ngadto sa {symbol}"
 }

@@ -836,5 +836,10 @@
   "activityTitle": "Ähli amallar",
   "activitySearchHint": "Tiker boýunça süzgüçle",
   "activityNoMatch": "Süzgüje laýyk amal ýok.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 eýýäm ýazylan, goşulmady} other{{count} eýýäm ýazylan, goşulmady}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 eýýäm ýazylan, goşulmady} other{{count} eýýäm ýazylan, goşulmady}}",
+  "tickerChange": "Tikeri üýtgetmek",
+  "tickerChangeTitle": "Tikeri üýtgetmek · {symbol}",
+  "tickerChangeNew": "Täze tiker",
+  "tickerChangeHint": "Kompaniýa tikerini üýtgedende (meselem, FB → META): ähli amallar, diwidendler, paýnama bölünişleri, bellik we duýduryşlar täze tikere geçirilýär.",
+  "tickerChanged": "{symbol} tikerine geçirildi"
 }

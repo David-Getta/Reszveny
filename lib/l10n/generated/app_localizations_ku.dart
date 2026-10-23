@@ -2807,6 +2807,26 @@ class AppLocalizationsKu extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Guhertina sembolê';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Guhertina sembolê · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Sembola nû';
+
+  @override
+  String get tickerChangeHint =>
+      'Dema ku şirketek sembola xwe diguherîne (mînak FB → META): hemû danûstandin, dividend, dabeşkirinên paran, not û hişyarî derbasî sembola nû dibin.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Hat guhastin bo $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Armanc deyne';
 
   @override

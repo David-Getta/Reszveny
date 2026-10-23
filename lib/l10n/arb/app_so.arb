@@ -836,5 +836,10 @@
   "activityTitle": "Dhammaan macaamilada",
   "activitySearchHint": "Ku shaandhee astaan",
   "activityNoMatch": "Macaamil la mid ah shaandhaynta lama helin.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 hore ayaa loo diiwaangeliyay, lama darin} other{{count} hore ayaa loo diiwaangeliyay, lama darin}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 hore ayaa loo diiwaangeliyay, lama darin} other{{count} hore ayaa loo diiwaangeliyay, lama darin}}",
+  "tickerChange": "Beddelka astaanta",
+  "tickerChangeTitle": "Beddelka astaanta · {symbol}",
+  "tickerChangeNew": "Astaan cusub",
+  "tickerChangeHint": "Marka shirkad ay beddesho astaanteeda (tus. FB → META): dhammaan macaamilada, faa'iido-saamiyada, kala qaybinta saamiyada, qoraalka iyo digniinaha waxaa loo wareejiyaa astaanta cusub.",
+  "tickerChanged": "Waxaa loo wareejiyay {symbol}"
 }

@@ -836,5 +836,10 @@
   "activityTitle": "همه تراکنش‌ها",
   "activitySearchHint": "فیلتر بر اساس نماد",
   "activityNoMatch": "هیچ تراکنشی با فیلتر مطابقت ندارد.",
-  "portfolioImportDuplicates": "{count, plural, one{{count} از قبل ثبت شده، کنار گذاشته شد} other{{count} از قبل ثبت شده، کنار گذاشته شد}}"
+  "portfolioImportDuplicates": "{count, plural, one{{count} از قبل ثبت شده، کنار گذاشته شد} other{{count} از قبل ثبت شده، کنار گذاشته شد}}",
+  "tickerChange": "تغییر نماد",
+  "tickerChangeTitle": "تغییر نماد · {symbol}",
+  "tickerChangeNew": "نماد جدید",
+  "tickerChangeHint": "وقتی شرکتی نماد خود را تغییر می‌دهد (مثلاً FB → META): همه تراکنش‌ها، سودهای سهام، تجزیه‌های سهام، یادداشت و هشدارها به نماد جدید منتقل می‌شوند.",
+  "tickerChanged": "به {symbol} منتقل شد"
 }

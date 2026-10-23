@@ -2792,6 +2792,26 @@ class AppLocalizationsBo extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'ཨང་རྟགས་བསྒྱུར་བ';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'ཨང་རྟགས་བསྒྱུར་བ · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'ཨང་རྟགས་གསར་པ';
+
+  @override
+  String get tickerChangeHint =>
+      'ཀུང་སི་ཞིག་གིས་རང་གི་ཨང་རྟགས་བསྒྱུར་སྐབས། (དཔེར་ན། FB → META) ཉོ་འཚོང་དང་། ཁེ་བགོས། མ་ཤེར་ཁ་བགོ། ཟིན་ཐོ། ཉེན་བརྡ་བཅས་ཚང་མ་ཨང་རྟགས་གསར་པར་སྤོ་གི་ཡོད།';
+
+  @override
+  String tickerChanged(String symbol) {
+    return '$symbol ལ་སྤོས་ཟིན།';
+  }
+
+  @override
   String get portfolioGoalSet => 'དམིགས་ཚད་འཇོག';
 
   @override

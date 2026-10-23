@@ -2823,6 +2823,26 @@ class AppLocalizationsNso extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Phetošo ya ticker';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Phetošo ya ticker · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Ticker ye mpsha';
+
+  @override
+  String get tickerChangeHint =>
+      'Ge khamphani e fetoša ticker ya yona (mohl. FB → META): dithekišano ka moka, dividende, dikaroganyo tša dišere, ntlha le ditemošo di šuthišetšwa go ticker ye mpsha.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'E šuthišeditšwe go $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Bea maikemišetšo';
 
   @override

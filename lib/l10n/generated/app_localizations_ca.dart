@@ -2814,6 +2814,26 @@ class AppLocalizationsCa extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Canvi de ticker';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Canvi de ticker · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Nou ticker';
+
+  @override
+  String get tickerChangeHint =>
+      'Quan una empresa canvia de ticker (p. ex. FB → META): totes les transaccions, els dividends, els desdoblaments d’accions, la nota i les alertes passen al nou.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'S’ha traslladat a $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Defineix un objectiu';
 
   @override

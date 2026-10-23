@@ -2825,6 +2825,26 @@ class AppLocalizationsIlo extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Panagbaliw ti ticker';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Panagbaliw ti ticker · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Baro a ticker';
+
+  @override
+  String get tickerChangeHint =>
+      'No baliwan ti kompania ti tickerna (kas pagarigan FB → META): amin a transaksion, dibidendo, stock split, ti nota ken dagiti alerto ket maiyalis iti baro.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Naiyalis iti $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mangikeddeng iti panggep';
 
   @override

@@ -836,5 +836,10 @@
   "activityTitle": "Todas las transacciones",
   "activitySearchHint": "Filtrar por ticker",
   "activityNoMatch": "Ninguna transacción coincide con el filtro.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 ya registrada, descartada} other{{count} ya registradas, descartadas}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 ya registrada, descartada} other{{count} ya registradas, descartadas}}",
+  "tickerChange": "Cambio de ticker",
+  "tickerChangeTitle": "Cambio de ticker · {symbol}",
+  "tickerChangeNew": "Nuevo ticker",
+  "tickerChangeHint": "Cuando una empresa cambia de ticker (p. ej. FB → META): todas las transacciones, los dividendos, los splits de acciones, la nota y las alertas pasan al nuevo.",
+  "tickerChanged": "Trasladado a {symbol}"
 }

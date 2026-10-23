@@ -836,5 +836,10 @@
   "activityTitle": "Sve transakcije",
   "activitySearchHint": "Filtriraj po tickeru",
   "activityNoMatch": "Nijedna transakcija ne odgovara filtru.",
-  "portfolioImportDuplicates": "{count, plural, one{Izostavljena je {count} već zabilježena} few{Izostavljene su {count} već zabilježene} other{Izostavljeno je {count} već zabilježenih}}"
+  "portfolioImportDuplicates": "{count, plural, one{Izostavljena je {count} već zabilježena} few{Izostavljene su {count} već zabilježene} other{Izostavljeno je {count} već zabilježenih}}",
+  "tickerChange": "Promjena tickera",
+  "tickerChangeTitle": "Promjena tickera · {symbol}",
+  "tickerChangeNew": "Novi ticker",
+  "tickerChangeHint": "Kada tvrtka promijeni ticker (npr. FB → META): sve transakcije, dividende, podjele dionica, bilješka i obavijesti prelaze na novi.",
+  "tickerChanged": "Premješteno na {symbol}"
 }

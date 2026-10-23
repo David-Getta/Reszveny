@@ -2800,6 +2800,26 @@ class AppLocalizationsFf extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Waylugol kod';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Waylugol kod · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Kod kesum';
+
+  @override
+  String get tickerChangeHint =>
+      'So isiyee waylii kod mum (yeru: FB → META): soodgol e yeeyugol fof, dividendeeji, feccugol share, binndi ndii e tintine ɗee fof ina njaha e kod kesum oo.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Eggitinaama e $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taƴto faandaare';
 
   @override

@@ -836,5 +836,10 @@
   "activityTitle": "Bütün əməliyyatlar",
   "activitySearchHint": "Tikerə görə filtrlə",
   "activityNoMatch": "Filtrə uyğun əməliyyat yoxdur.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 artıq qeyd olunub, əlavə edilmədi} other{{count} artıq qeyd olunub, əlavə edilmədi}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 artıq qeyd olunub, əlavə edilmədi} other{{count} artıq qeyd olunub, əlavə edilmədi}}",
+  "tickerChange": "Tiker dəyişikliyi",
+  "tickerChangeTitle": "Tiker dəyişikliyi · {symbol}",
+  "tickerChangeNew": "Yeni tiker",
+  "tickerChangeHint": "Şirkət tikerini dəyişdikdə (məs. FB → META): bütün əməliyyatlar, dividendlər, səhm bölünmələri, qeyd və bildirişlər yeni tikerə keçir.",
+  "tickerChanged": "{symbol} tikerinə köçürüldü"
 }

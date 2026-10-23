@@ -836,5 +836,10 @@
   "activityTitle": "Semua transaksi",
   "activitySearchHint": "Filter menurut kode saham",
   "activityNoMatch": "Tidak ada transaksi yang cocok dengan filter.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 sudah tercatat, tidak dimasukkan} other{{count} sudah tercatat, tidak dimasukkan}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 sudah tercatat, tidak dimasukkan} other{{count} sudah tercatat, tidak dimasukkan}}",
+  "tickerChange": "Perubahan kode saham",
+  "tickerChangeTitle": "Perubahan kode saham · {symbol}",
+  "tickerChangeNew": "Kode saham baru",
+  "tickerChangeHint": "Saat perusahaan mengganti kode sahamnya (mis. FB → META): semua transaksi, dividen, pemecahan saham, catatan, dan peringatan dipindahkan ke kode yang baru.",
+  "tickerChanged": "Dipindahkan ke {symbol}"
 }

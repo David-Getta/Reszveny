@@ -2806,6 +2806,26 @@ class AppLocalizationsSu extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Parobahan kode saham';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Parobahan kode saham · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Kode saham anyar';
+
+  @override
+  String get tickerChangeHint =>
+      'Upami perusahaan ngarobih kode sahamna (conto: FB → META): sadaya transaksi, dividen, pamecahan saham, catetan sareng béwara dipindahkeun ka kode anu anyar.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Dipindahkeun ka $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setél target';
 
   @override

@@ -836,5 +836,10 @@
   "activityTitle": "सब लेन-देन",
   "activitySearchHint": "टिकर से फ़िल्टर करीं",
   "activityNoMatch": "फ़िल्टर से कवनो लेन-देन मेल ना खाइल।",
-  "portfolioImportDuplicates": "{count, plural, =1{1 पहिले से दर्ज बा, छोड़ दिहल गइल} other{{count} पहिले से दर्ज बा, छोड़ दिहल गइल}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 पहिले से दर्ज बा, छोड़ दिहल गइल} other{{count} पहिले से दर्ज बा, छोड़ दिहल गइल}}",
+  "tickerChange": "टिकर बदलाव",
+  "tickerChangeTitle": "टिकर बदलाव · {symbol}",
+  "tickerChangeNew": "नया टिकर",
+  "tickerChangeHint": "जब कवनो कंपनी आपन टिकर बदलेले (जइसे FB → META): सगरी लेन-देन, डिविडेंड, स्टॉक स्प्लिट, नोट आ अलर्ट नया टिकर पर चल जाला।",
+  "tickerChanged": "{symbol} पर ले जाइल गइल"
 }

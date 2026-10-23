@@ -836,5 +836,10 @@
   "activityTitle": "Всички транзакции",
   "activitySearchHint": "Филтрирай по тикер",
   "activityNoMatch": "Няма транзакции, отговарящи на филтъра.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 вече е записана, не е добавена} other{{count} вече са записани, не са добавени}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 вече е записана, не е добавена} other{{count} вече са записани, не са добавени}}",
+  "tickerChange": "Смяна на тикер",
+  "tickerChangeTitle": "Смяна на тикер · {symbol}",
+  "tickerChangeNew": "Нов тикер",
+  "tickerChangeHint": "Когато компания смени тикера си (напр. FB → META): всички транзакции, дивиденти, сплитове на акции, бележката и известията се преместват към новия.",
+  "tickerChanged": "Преместено към {symbol}"
 }

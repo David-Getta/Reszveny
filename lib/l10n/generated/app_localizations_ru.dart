@@ -2881,6 +2881,26 @@ class AppLocalizationsRu extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Смена тикера';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Смена тикера · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Новый тикер';
+
+  @override
+  String get tickerChangeHint =>
+      'Когда компания меняет тикер (напр. FB → META): все сделки, дивиденды, сплиты акций, заметка и оповещения переносятся на новый.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Перенесено на $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Задать цель';
 
   @override

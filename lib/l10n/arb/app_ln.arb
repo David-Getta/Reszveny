@@ -836,5 +836,10 @@
   "activityTitle": "Bosombi mpe boteki nyonso",
   "activitySearchHint": "Pona na ticker",
   "activityNoMatch": "Bosombi to boteki moko te ekokani na oyo oponi.",
-  "portfolioImportDuplicates": "{count, plural, one{{count} esilaki kokomama, ebakisami te} other{{count} esilaki kokomama, ebakisami te}}"
+  "portfolioImportDuplicates": "{count, plural, one{{count} esilaki kokomama, ebakisami te} other{{count} esilaki kokomama, ebakisami te}}",
+  "tickerChange": "Kobongola ticker",
+  "tickerChangeTitle": "Kobongola ticker · {symbol}",
+  "tickerChangeNew": "Ticker ya sika",
+  "tickerChangeHint": "Soki kompanyi ebongoli ticker na yango (ndakisa FB → META): bosombi mpe boteki nyonso, ba dividende, bokabolami ya ba share, note mpe makebisi ekokende na ticker ya sika.",
+  "tickerChanged": "Etindami na {symbol}"
 }

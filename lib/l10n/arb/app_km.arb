@@ -836,5 +836,10 @@
   "activityTitle": "ប្រតិបត្តិការទាំងអស់",
   "activitySearchHint": "ត្រងតាមនិមិត្តសញ្ញា",
   "activityNoMatch": "គ្មានប្រតិបត្តិការដែលត្រូវនឹងតម្រងទេ។",
-  "portfolioImportDuplicates": "{count, plural, =1{1 បានកត់ត្រារួចហើយ មិនបានបញ្ចូលទេ} other{{count} បានកត់ត្រារួចហើយ មិនបានបញ្ចូលទេ}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 បានកត់ត្រារួចហើយ មិនបានបញ្ចូលទេ} other{{count} បានកត់ត្រារួចហើយ មិនបានបញ្ចូលទេ}}",
+  "tickerChange": "ការប្ដូរនិមិត្តសញ្ញា",
+  "tickerChangeTitle": "ការប្ដូរនិមិត្តសញ្ញា · {symbol}",
+  "tickerChangeNew": "និមិត្តសញ្ញាថ្មី",
+  "tickerChangeHint": "នៅពេលក្រុមហ៊ុនប្ដូរនិមិត្តសញ្ញារបស់ខ្លួន (ឧ. FB → META)៖ ប្រតិបត្តិការ ភាគលាភ ការបំបែកភាគហ៊ុន កំណត់ចំណាំ និងការជូនដំណឹងទាំងអស់ នឹងផ្លាស់ទៅនិមិត្តសញ្ញាថ្មី។",
+  "tickerChanged": "បានផ្លាស់ទៅ {symbol}"
 }

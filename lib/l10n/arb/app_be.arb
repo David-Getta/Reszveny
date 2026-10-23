@@ -836,5 +836,10 @@
   "activityTitle": "Усе аперацыі",
   "activitySearchHint": "Фільтр па тыкеры",
   "activityNoMatch": "Няма аперацый, якія адпавядаюць фільтру.",
-  "portfolioImportDuplicates": "{count, plural, one{{count} ужо ёсць, не дададзена} few{{count} ужо ёсць, не дададзены} many{{count} ужо ёсць, не дададзена} other{{count} ужо ёсць, не дададзена}}"
+  "portfolioImportDuplicates": "{count, plural, one{{count} ужо ёсць, не дададзена} few{{count} ужо ёсць, не дададзены} many{{count} ужо ёсць, не дададзена} other{{count} ужо ёсць, не дададзена}}",
+  "tickerChange": "Змена тыкера",
+  "tickerChangeTitle": "Змена тыкера · {symbol}",
+  "tickerChangeNew": "Новы тыкер",
+  "tickerChangeHint": "Калі кампанія мяняе тыкер (напр. FB → META): усе аперацыі, дывідэнды, драбленні акцый, нататка і апавяшчэнні пераносяцца на новы.",
+  "tickerChanged": "Перанесена на {symbol}"
 }

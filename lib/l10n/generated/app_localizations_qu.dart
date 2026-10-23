@@ -2819,6 +2819,26 @@ class AppLocalizationsQu extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Ticker t\'ikray';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Ticker t\'ikray · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Musuq ticker';
+
+  @override
+  String get tickerChangeHint =>
+      'Huk empresa tickerninta t\'ikraqtin (kayhina: FB → META): llapan rantiy rantikuykuna, dividendokuna, akcionkuna rakiykuna, qillqasqa, willachiykunapas musuq tickerman astakun.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return '$symbol-man astasqa';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hayparinata churay';
 
   @override

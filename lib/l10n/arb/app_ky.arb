@@ -836,5 +836,10 @@
   "activityTitle": "Бардык транзакциялар",
   "activitySearchHint": "Тикер боюнча чыпкалоо",
   "activityNoMatch": "Чыпкага дал келген транзакция жок.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 мурунтан жазылган, кошулган жок} other{{count} мурунтан жазылган, кошулган жок}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 мурунтан жазылган, кошулган жок} other{{count} мурунтан жазылган, кошулган жок}}",
+  "tickerChange": "Тикерди алмаштыруу",
+  "tickerChangeTitle": "Тикерди алмаштыруу · {symbol}",
+  "tickerChangeNew": "Жаңы тикер",
+  "tickerChangeHint": "Компания тикерин өзгөрткөндө (мис., FB → META): бардык транзакциялар, дивиденддер, акция бөлүүлөрү, жазуу жана эскертмелер жаңы тикерге көчүрүлөт.",
+  "tickerChanged": "{symbol} тикерине көчүрүлдү"
 }

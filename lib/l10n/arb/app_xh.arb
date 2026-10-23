@@ -836,5 +836,10 @@
   "activityTitle": "Zonke iintengiselwano",
   "activitySearchHint": "Hluza nge-ticker",
   "activityNoMatch": "Akukho ntengiselwano ihambelana nesihluzi.",
-  "portfolioImportDuplicates": "{count, plural, =1{Enye sele irekhodiwe, ayongezwanga} other{Ezi-{count} sele zirekhodiwe, azongezwanga}}"
+  "portfolioImportDuplicates": "{count, plural, =1{Enye sele irekhodiwe, ayongezwanga} other{Ezi-{count} sele zirekhodiwe, azongezwanga}}",
+  "tickerChange": "Ukutshintsha i-ticker",
+  "tickerChangeTitle": "Ukutshintsha i-ticker · {symbol}",
+  "tickerChangeNew": "I-ticker entsha",
+  "tickerChangeHint": "Xa inkampani itshintsha i-ticker yayo (umz. FB → META): zonke iintengiselwano, izahlulo, ukwahlulwa kwezabelo, inqaku nezilumkiso zifuduselwa kwi-ticker entsha.",
+  "tickerChanged": "Kufuduselwe ku-{symbol}"
 }

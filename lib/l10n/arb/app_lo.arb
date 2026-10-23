@@ -836,5 +836,10 @@
   "activityTitle": "ທຸລະກຳທັງໝົດ",
   "activitySearchHint": "ກັ່ນຕອງຕາມສັນຍາລັກ",
   "activityNoMatch": "ບໍ່ມີທຸລະກຳທີ່ກົງກັບຕົວກັ່ນຕອງ",
-  "portfolioImportDuplicates": "{count, plural, =1{1 ລາຍການບັນທຶກໄວ້ແລ້ວ, ບໍ່ໄດ້ເພີ່ມ} other{{count} ລາຍການບັນທຶກໄວ້ແລ້ວ, ບໍ່ໄດ້ເພີ່ມ}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 ລາຍການບັນທຶກໄວ້ແລ້ວ, ບໍ່ໄດ້ເພີ່ມ} other{{count} ລາຍການບັນທຶກໄວ້ແລ້ວ, ບໍ່ໄດ້ເພີ່ມ}}",
+  "tickerChange": "ປ່ຽນສັນຍາລັກ",
+  "tickerChangeTitle": "ປ່ຽນສັນຍາລັກ · {symbol}",
+  "tickerChangeNew": "ສັນຍາລັກໃໝ່",
+  "tickerChangeHint": "ເມື່ອບໍລິສັດປ່ຽນສັນຍາລັກຂອງຕົນ (ເຊັ່ນ FB → META): ທຸລະກຳ, ເງິນປັນຜົນ, ການແບ່ງຫຸ້ນ, ບັນທຶກ ແລະ ການແຈ້ງເຕືອນທັງໝົດຈະຖືກຍ້າຍໄປຫາສັນຍາລັກໃໝ່.",
+  "tickerChanged": "ຍ້າຍໄປ {symbol} ແລ້ວ"
 }

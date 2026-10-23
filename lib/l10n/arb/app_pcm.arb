@@ -836,5 +836,10 @@
   "activityTitle": "All di buy and sell",
   "activitySearchHint": "Filter am by ticker",
   "activityNoMatch": "No buy or sell match di filter.",
-  "portfolioImportDuplicates": "{count, plural, one{{count} don already dey, we no add am} other{{count} don already dey, we no add dem}}"
+  "portfolioImportDuplicates": "{count, plural, one{{count} don already dey, we no add am} other{{count} don already dey, we no add dem}}",
+  "tickerChange": "Change ticker",
+  "tickerChangeTitle": "Change ticker · {symbol}",
+  "tickerChangeNew": "Di new ticker",
+  "tickerChangeHint": "When company change im ticker (like FB → META): all di buy and sell, dividend, stock splits, di note and di alerts go move go di new one.",
+  "tickerChanged": "E don move go {symbol}"
 }

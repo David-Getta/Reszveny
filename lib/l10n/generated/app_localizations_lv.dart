@@ -2850,6 +2850,26 @@ class AppLocalizationsLv extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Simbola maiņa';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Simbola maiņa · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Jaunais simbols';
+
+  @override
+  String get tickerChangeHint =>
+      'Kad uzņēmums maina savu simbolu (piem., FB → META): visi darījumi, dividendes, akciju sadalīšanas, piezīme un brīdinājumi tiek pārcelti uz jauno.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Pārcelts uz $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Iestatīt mērķi';
 
   @override

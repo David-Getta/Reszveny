@@ -989,6 +989,23 @@ void main() {
     await _shot(tester, 'portfolio_annual_summary_phone_hu');
   });
 
+  testWidgets('ticker change on a phone (hungarian)', (tester) async {
+    final s = _services(locale: const Locale('hu'), portfolio: _tradesPortfolio(), currency: 'HUF');
+    await pumpApp(tester, s, const Size(430, 1000));
+    await tester.tap(find.text('Portfólió').last);
+    await tester.pumpAndSettle();
+    final menu = find.byKey(const ValueKey('position-menu-AAPL'));
+    await tester.ensureVisible(menu);
+    await tester.pumpAndSettle();
+    await tester.tap(menu);
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('position-ticker-change')));
+    await tester.pumpAndSettle();
+    await tester.enterText(find.byKey(const ValueKey('ticker-change-new')), 'APLE');
+    await tester.pumpAndSettle();
+    await _shot(tester, 'portfolio_ticker_change_phone_hu');
+  });
+
   testWidgets('all transactions on a phone (hungarian)', (tester) async {
     final s = _services(locale: const Locale('hu'), portfolio: _tradesPortfolio(), currency: 'HUF');
     await pumpApp(tester, s, const Size(430, 1000));

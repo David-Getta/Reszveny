@@ -836,5 +836,10 @@
   "activityTitle": "Zogula ndi zogulitsa zonse",
   "activitySearchHint": "Sefani ndi ticker",
   "activityNoMatch": "Palibe zogula kapena zogulitsa zofanana ndi zomwe mwasankha.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 chinalembedwa kale, sichinawonjezedwe} other{{count} zinalembedwa kale, sizinawonjezedwe}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 chinalembedwa kale, sichinawonjezedwe} other{{count} zinalembedwa kale, sizinawonjezedwe}}",
+  "tickerChange": "Kusintha ticker",
+  "tickerChangeTitle": "Kusintha ticker · {symbol}",
+  "tickerChangeNew": "Ticker yatsopano",
+  "tickerChangeHint": "Kampani ikasintha ticker yake (mwachitsanzo: FB → META): zogula ndi zogulitsa zonse, madividendi, kugawa masheya, cholemba ndi zidziwitso zimasamukira ku ticker yatsopano.",
+  "tickerChanged": "Zasamutsidwa ku {symbol}"
 }

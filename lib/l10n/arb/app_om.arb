@@ -836,5 +836,10 @@
   "activityTitle": "Bittaa fi gurgurtaa hunda",
   "activitySearchHint": "Mallattoon calali",
   "activityNoMatch": "Bittaan ykn gurgurtaan calallii wajjin walsimu hin jiru.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 duraan galmaa'eera, hin dabalamne} other{{count} duraan galmaa'aniiru, hin dabalamne}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 duraan galmaa'eera, hin dabalamne} other{{count} duraan galmaa'aniiru, hin dabalamne}}",
+  "tickerChange": "Jijjiirama mallattoo",
+  "tickerChangeTitle": "Jijjiirama mallattoo · {symbol}",
+  "tickerChangeNew": "Mallattoo haaraa",
+  "tickerChangeHint": "Yeroo dhaabbanni tokko mallattoo isaa jijjiiru (fkn. FB → META): bittaa fi gurgurtaan hundi, diviidendiin, qoqqoodinsi aksiyoonaa, yaadannoon fi akeekkachiisni gara mallattoo haaraatti ni ce'u.",
+  "tickerChanged": "Gara {symbol}-tti dabarfameera"
 }

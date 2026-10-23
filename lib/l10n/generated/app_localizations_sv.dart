@@ -2805,6 +2805,26 @@ class AppLocalizationsSv extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Tickerbyte';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Tickerbyte · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Ny ticker';
+
+  @override
+  String get tickerChangeHint =>
+      'När ett bolag byter ticker (t.ex. FB → META): alla transaktioner, utdelningar, aktiesplittar, anteckningen och larmen flyttas till den nya.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Flyttat till $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sätt ett mål';
 
   @override

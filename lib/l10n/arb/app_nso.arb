@@ -836,5 +836,10 @@
   "activityTitle": "Dithekišano ka moka",
   "activitySearchHint": "Sefa ka ticker",
   "activityNoMatch": "Ga go thekišano ye e swanago le sefa.",
-  "portfolioImportDuplicates": "{count, plural, =1{E 1 e šetše e rekotilwe, ga se ya okelwa} other{Tše {count} di šetše di rekotilwe, ga se tša okelwa}}"
+  "portfolioImportDuplicates": "{count, plural, =1{E 1 e šetše e rekotilwe, ga se ya okelwa} other{Tše {count} di šetše di rekotilwe, ga se tša okelwa}}",
+  "tickerChange": "Phetošo ya ticker",
+  "tickerChangeTitle": "Phetošo ya ticker · {symbol}",
+  "tickerChangeNew": "Ticker ye mpsha",
+  "tickerChangeHint": "Ge khamphani e fetoša ticker ya yona (mohl. FB → META): dithekišano ka moka, dividende, dikaroganyo tša dišere, ntlha le ditemošo di šuthišetšwa go ticker ye mpsha.",
+  "tickerChanged": "E šuthišeditšwe go {symbol}"
 }

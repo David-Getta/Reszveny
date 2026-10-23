@@ -2806,6 +2806,26 @@ class AppLocalizationsSw extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Kubadilisha ticker';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Kubadilisha ticker · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Ticker mpya';
+
+  @override
+  String get tickerChangeHint =>
+      'Kampuni inapobadilisha ticker yake (k.m. FB → META): miamala yote, gawio, migawanyo ya hisa, dokezo na arifa huhamishiwa kwenye ticker mpya.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Imehamishiwa $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Weka lengo';
 
   @override

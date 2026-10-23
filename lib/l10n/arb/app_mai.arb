@@ -836,5 +836,10 @@
   "activityTitle": "सभ लेन-देन",
   "activitySearchHint": "टिकर सँ फ़िल्टर करू",
   "activityNoMatch": "फ़िल्टर सँ कोनो लेन-देन मेल नहि खाइत अछि।",
-  "portfolioImportDuplicates": "{count, plural, =1{1 पहिनहिसँ दर्ज अछि, छोड़ल गेल} other{{count} पहिनहिसँ दर्ज अछि, छोड़ल गेल}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 पहिनहिसँ दर्ज अछि, छोड़ल गेल} other{{count} पहिनहिसँ दर्ज अछि, छोड़ल गेल}}",
+  "tickerChange": "टिकर बदलाव",
+  "tickerChangeTitle": "टिकर बदलाव · {symbol}",
+  "tickerChangeNew": "नव टिकर",
+  "tickerChangeHint": "जखन कोनो कंपनी अपन टिकर बदलैत अछि (जेना FB → META): सभ लेन-देन, डिविडेंड, स्टॉक स्प्लिट, नोट आ अलर्ट नव टिकर पर चलि जाइत अछि।",
+  "tickerChanged": "{symbol} पर लऽ जाओल गेल"
 }

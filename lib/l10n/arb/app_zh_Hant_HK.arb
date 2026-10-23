@@ -836,5 +836,10 @@
   "activityTitle": "全部交易記錄",
   "activitySearchHint": "按股票代號篩選",
   "activityNoMatch": "沒有符合篩選條件的交易。",
-  "portfolioImportDuplicates": "{count, plural, =1{1 筆已有記錄，未重複加入} other{{count} 筆已有記錄，未重複加入}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 筆已有記錄，未重複加入} other{{count} 筆已有記錄，未重複加入}}",
+  "tickerChange": "更改股票代號",
+  "tickerChangeTitle": "更改股票代號 · {symbol}",
+  "tickerChangeNew": "新股票代號",
+  "tickerChangeHint": "公司更改股票代號時（例如 FB → META），所有交易、股息、股票分拆、筆記及提示都會轉移至新代號。",
+  "tickerChanged": "已轉移至 {symbol}"
 }

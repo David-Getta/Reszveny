@@ -836,5 +836,10 @@
   "activityTitle": "Amin a transaksion",
   "activitySearchHint": "I-filter babaen ti ticker",
   "activityNoMatch": "Awan ti maitutop a transaksion iti filter.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 ti nairekordnan, saan a nainayon} other{{count} ti nairekordnan, saan a nainayon}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 ti nairekordnan, saan a nainayon} other{{count} ti nairekordnan, saan a nainayon}}",
+  "tickerChange": "Panagbaliw ti ticker",
+  "tickerChangeTitle": "Panagbaliw ti ticker · {symbol}",
+  "tickerChangeNew": "Baro a ticker",
+  "tickerChangeHint": "No baliwan ti kompania ti tickerna (kas pagarigan FB → META): amin a transaksion, dibidendo, stock split, ti nota ken dagiti alerto ket maiyalis iti baro.",
+  "tickerChanged": "Naiyalis iti {symbol}"
 }

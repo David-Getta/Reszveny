@@ -2815,6 +2815,26 @@ class AppLocalizationsKg extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Kusoba ticker';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Kusoba ticker · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Ticker ya mpa';
+
+  @override
+  String get tickerChangeHint =>
+      'Kana kompani me soba ticker na yo (mbandu FB → META): kusumba ti kuteka yonso, ba dividende, kukabula ba share, note ti nkebisu yonso ke kwenda na ticker ya mpa.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Me nata na $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tula lukanu';
 
   @override

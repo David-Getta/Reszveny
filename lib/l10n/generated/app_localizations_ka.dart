@@ -2804,6 +2804,26 @@ class AppLocalizationsKa extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'ტიკერის შეცვლა';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'ტიკერის შეცვლა · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'ახალი ტიკერი';
+
+  @override
+  String get tickerChangeHint =>
+      'როცა კომპანია ტიკერს იცვლის (მაგ. FB → META): ყველა ტრანზაქცია, დივიდენდი, აქციების დაყოფა, ჩანაწერი და შეტყობინება ახალ ტიკერზე გადადის.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'გადატანილია $symbol-ზე';
+  }
+
+  @override
   String get portfolioGoalSet => 'მიზნის დაყენება';
 
   @override

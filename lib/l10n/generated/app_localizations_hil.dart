@@ -2822,6 +2822,26 @@ class AppLocalizationsHil extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Pagbag-o sang ticker';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Pagbag-o sang ticker · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Bag-o nga ticker';
+
+  @override
+  String get tickerChangeHint =>
+      'Kon baguhon sang kompanya ang ticker sini (pananglitan FB → META): ang tanan nga transaksyon, dibidendo, stock split, ang nota kag ang mga alerto mabalhin sa bag-o.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Ginbalhin sa $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Magbutang sang tulumuron';
 
   @override

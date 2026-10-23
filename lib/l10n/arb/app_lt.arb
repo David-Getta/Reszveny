@@ -836,5 +836,10 @@
   "activityTitle": "Visos operacijos",
   "activitySearchHint": "Filtruoti pagal simbolį",
   "activityNoMatch": "Filtrą atitinkančių operacijų nėra.",
-  "portfolioImportDuplicates": "{count, plural, one{{count} jau įrašyta, neįtraukta} few{{count} jau įrašytos, neįtrauktos} many{{count} jau įrašyta, neįtraukta} other{{count} jau įrašyta, neįtraukta}}"
+  "portfolioImportDuplicates": "{count, plural, one{{count} jau įrašyta, neįtraukta} few{{count} jau įrašytos, neįtrauktos} many{{count} jau įrašyta, neįtraukta} other{{count} jau įrašyta, neįtraukta}}",
+  "tickerChange": "Simbolio keitimas",
+  "tickerChangeTitle": "Simbolio keitimas · {symbol}",
+  "tickerChangeNew": "Naujas simbolis",
+  "tickerChangeHint": "Kai bendrovė pakeičia savo simbolį (pvz., FB → META): visos operacijos, dividendai, akcijų skaidymai, užrašas ir įspėjimai perkeliami į naująjį.",
+  "tickerChanged": "Perkelta į {symbol}"
 }

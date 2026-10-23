@@ -836,5 +836,10 @@
   "activityTitle": "Барлық операциялар",
   "activitySearchHint": "Тикер бойынша сүзу",
   "activityNoMatch": "Сүзгіге сәйкес операция жоқ.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 бұрыннан жазылған, қосылмады} other{{count} бұрыннан жазылған, қосылмады}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 бұрыннан жазылған, қосылмады} other{{count} бұрыннан жазылған, қосылмады}}",
+  "tickerChange": "Тикерді ауыстыру",
+  "tickerChangeTitle": "Тикерді ауыстыру · {symbol}",
+  "tickerChangeNew": "Жаңа тикер",
+  "tickerChangeHint": "Компания тикерін өзгерткенде (мысалы, FB → META): барлық операциялар, дивидендтер, акция бөлулері, жазба және ескертулер жаңа тикерге көшеді.",
+  "tickerChanged": "{symbol} тикеріне көшірілді"
 }

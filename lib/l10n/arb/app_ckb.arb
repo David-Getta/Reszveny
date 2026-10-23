@@ -836,5 +836,10 @@
   "activityTitle": "هەموو مامەڵەکان",
   "activitySearchHint": "پاڵاوتن بەپێی هێما",
   "activityNoMatch": "هیچ مامەڵەیەک لەگەڵ پاڵاوتنەکە ناگونجێت.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 پێشتر تۆمارکراوە، زیاد نەکرا} other{{count} پێشتر تۆمارکراون، زیاد نەکران}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 پێشتر تۆمارکراوە، زیاد نەکرا} other{{count} پێشتر تۆمارکراون، زیاد نەکران}}",
+  "tickerChange": "گۆڕینی هێما",
+  "tickerChangeTitle": "گۆڕینی هێما · {symbol}",
+  "tickerChangeNew": "هێمای نوێ",
+  "tickerChangeHint": "کاتێک کۆمپانیایەک هێماکەی دەگۆڕێت (بۆ نموونە FB → META): هەموو مامەڵەکان، پشکی قازانج، دابەشکردنەکانی پشک، تێبینییەکە و ئاگادارییەکان دەگوازرێنەوە بۆ هێما نوێیەکە.",
+  "tickerChanged": "گوازرایەوە بۆ {symbol}"
 }

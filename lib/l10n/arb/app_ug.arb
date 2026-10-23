@@ -836,5 +836,10 @@
   "activityTitle": "بارلىق سودىلار",
   "activitySearchHint": "كود بويىچە سۈزۈش",
   "activityNoMatch": "سۈزگۈچكە ماس كېلىدىغان سودا يوق.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 ئاللىقاچان خاتىرىلەنگەن، قوشۇلمىدى} other{{count} ئاللىقاچان خاتىرىلەنگەن، قوشۇلمىدى}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 ئاللىقاچان خاتىرىلەنگەن، قوشۇلمىدى} other{{count} ئاللىقاچان خاتىرىلەنگەن، قوشۇلمىدى}}",
+  "tickerChange": "كود ئۆزگەرتىش",
+  "tickerChangeTitle": "كود ئۆزگەرتىش · {symbol}",
+  "tickerChangeNew": "يېڭى كود",
+  "tickerChangeHint": "شىركەت كودىنى ئۆزگەرتكەندە (مەسىلەن FB → META): بارلىق سودىلار، دىۋىدېندلار، پاي بۆلۈشلەر، خاتىرە ۋە ئاگاھلاندۇرۇشلار يېڭى كودقا يۆتكىلىدۇ.",
+  "tickerChanged": "{symbol} غا يۆتكەلدى"
 }

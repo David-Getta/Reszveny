@@ -11,6 +11,7 @@ import '../../theme/app_theme.dart';
 import 'add_lot_dialog.dart';
 import 'dividends_card.dart';
 import 'split_dialog.dart';
+import 'ticker_change_dialog.dart';
 import 'portfolio_store.dart';
 
 /// Egy pozíció tranzakciói (vételek és eladások) törlés-gombbal, fölöttük az
@@ -90,6 +91,20 @@ Future<void> showPurchasesSheet(BuildContext context, Position position, {double
                           tooltip: l10n.portfolioSplit,
                           icon: const Icon(Icons.call_split_rounded),
                           onPressed: () => showSplitDialog(context, symbol: position.symbol),
+                        ),
+                        // Tickerváltás (átnevezett cég): utána a lap bezárul, a pozíció az új tickeren.
+                        IconButton(
+                          key: const ValueKey('position-ticker-change'),
+                          tooltip: l10n.tickerChange,
+                          icon: const Icon(Icons.drive_file_rename_outline),
+                          onPressed: () async {
+                            final navigator = Navigator.of(context);
+                            final messenger = ScaffoldMessenger.of(context);
+                            final to = await showTickerChangeDialog(context, symbol: position.symbol);
+                            if (to == null) return;
+                            navigator.pop();
+                            messenger.showSnackBar(SnackBar(content: Text(l10n.tickerChanged(to))));
+                          },
                         ),
                         if (!now.isClosed)
                           FilledButton.tonalIcon(

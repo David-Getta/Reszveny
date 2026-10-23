@@ -836,5 +836,10 @@
   "activityTitle": "כל העסקאות",
   "activitySearchHint": "סינון לפי סימול",
   "activityNoMatch": "אין עסקאות שתואמות את הסינון.",
-  "portfolioImportDuplicates": "{count, plural, =1{אחת כבר רשומה, לא נוספה} other{{count} כבר רשומות, לא נוספו}}"
+  "portfolioImportDuplicates": "{count, plural, =1{אחת כבר רשומה, לא נוספה} other{{count} כבר רשומות, לא נוספו}}",
+  "tickerChange": "שינוי סימול",
+  "tickerChangeTitle": "שינוי סימול · {symbol}",
+  "tickerChangeNew": "סימול חדש",
+  "tickerChangeHint": "כשחברה משנה את הסימול שלה (למשל FB → META): כל העסקאות, הדיבידנדים, פיצולי המניות, ההערה וההתראות עוברים לסימול החדש.",
+  "tickerChanged": "הועבר ל-{symbol}"
 }

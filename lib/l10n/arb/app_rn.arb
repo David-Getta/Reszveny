@@ -836,5 +836,10 @@
   "activityTitle": "Ivyaguzwe n'ivyagurishijwe vyose",
   "activitySearchHint": "Shungura ukurikije ticker",
   "activityNoMatch": "Nta gikorwa co kugura canke kugurisha gihuye n'ivyo washunguye.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 cari casanzwe canditswe, ntico congewemwo} other{{count} vyari bisanzwe vyanditswe, ntivyongewemwo}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 cari casanzwe canditswe, ntico congewemwo} other{{count} vyari bisanzwe vyanditswe, ntivyongewemwo}}",
+  "tickerChange": "Ihindurwa rya ticker",
+  "tickerChangeTitle": "Ihindurwa rya ticker · {symbol}",
+  "tickerChangeNew": "Ticker nshasha",
+  "tickerChangeHint": "Iyo isosiyete ihinduye ticker yayo (akarorero: FB → META): ivyaguzwe n'ivyagurishijwe vyose, amadividende, amagabanywa y'imigabane, icandiko n'amamenyesha vyimurirwa kuri ticker nshasha.",
+  "tickerChanged": "Vyimuriwe kuri {symbol}"
 }

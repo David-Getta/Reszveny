@@ -1,4 +1,4 @@
-# Változásjegyzék (0.2.130 → 0.2.244)
+# Változásjegyzék (0.2.130 → 0.2.245)
 
 A kiadások a `claude/eager-bohr-pi0oy9` ágról, a GitHub Release-ből jönnek (minden verzió CI-vel és
 Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid összefoglaló.
@@ -97,6 +97,9 @@ Release-szel). A bolti „Újdonságok” szövegekhez a fejezet végén rövid 
   javítható (a „Kapott osztalékok” kártyán és a tranzakciós lapon): összeg, pénznem, nap, számla. Javításkor a tárolt
   számok kerekítés nélkül töltődnek vissza (a 0,12345678 tört részvény nem lesz 0,1235 mentéskor, a „Mind” gomb is
   pontosan a birtokolt darabot írja be).
+- **Tickerváltás** a tranzakciós lapon (pl. FB → META, SQ → XYZ): a részvény minden tranzakciója, osztaléka,
+  felaprózása, a jegyzete, a riasztásai, a kedvenc-jelölése, a célaránya és a saját listái egy lépésben átkerülnek az
+  új tickerre (ha ott már volt pozíció, összeadódnak); szinkronnal a többi eszközre is.
 - **Összes tranzakció** (a portfólió menüjéből): minden vétel, eladás, kapott osztalék és felaprózás egy listában,
   havonta fejléccel, az újabb elöl; szűrés tickerre, típusra és számlára; koppintva javítható, törölhető
   visszavonással – egy több száz soros import után is gyorsan megtalálható a hibás tétel.

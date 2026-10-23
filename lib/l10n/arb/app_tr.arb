@@ -836,5 +836,10 @@
   "activityTitle": "Tüm işlemler",
   "activitySearchHint": "Sembole göre filtrele",
   "activityNoMatch": "Filtreyle eşleşen işlem yok.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 zaten kayıtlı, eklenmedi} other{{count} zaten kayıtlı, eklenmedi}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 zaten kayıtlı, eklenmedi} other{{count} zaten kayıtlı, eklenmedi}}",
+  "tickerChange": "Sembol değişikliği",
+  "tickerChangeTitle": "Sembol değişikliği · {symbol}",
+  "tickerChangeNew": "Yeni sembol",
+  "tickerChangeHint": "Bir şirket sembolünü değiştirdiğinde (örn. FB → META): tüm işlemler, temettüler, hisse bölünmeleri, not ve alarmlar yeni sembole taşınır.",
+  "tickerChanged": "{symbol} sembolüne taşındı"
 }

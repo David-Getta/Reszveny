@@ -2813,6 +2813,26 @@ class AppLocalizationsSn extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Kuchinja ticker';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Kuchinja ticker · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Ticker itsva';
+
+  @override
+  String get tickerChangeHint =>
+      'Kambani painochinja ticker yayo (sem. FB → META): zvese zvakatengwa nezvakatengeswa, madividendi, kupatsanura masheya, chinyorwa nezviziviso zvinotamisirwa kuticker itsva.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Zvatamisirwa kuna $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Isa chinangwa';
 
   @override

@@ -836,5 +836,10 @@
   "activityTitle": "Semua transaksi",
   "activitySearchHint": "Tapis mengikut ticker",
   "activityNoMatch": "Tiada transaksi yang sepadan dengan penapis.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 sudah direkodkan, tidak dimasukkan} other{{count} sudah direkodkan, tidak dimasukkan}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 sudah direkodkan, tidak dimasukkan} other{{count} sudah direkodkan, tidak dimasukkan}}",
+  "tickerChange": "Pertukaran ticker",
+  "tickerChangeTitle": "Pertukaran ticker · {symbol}",
+  "tickerChangeNew": "Ticker baharu",
+  "tickerChangeHint": "Apabila syarikat menukar tickernya (cth. FB → META): semua transaksi, dividen, pecahan saham, nota dan amaran dipindahkan ke ticker baharu.",
+  "tickerChanged": "Dipindahkan ke {symbol}"
 }

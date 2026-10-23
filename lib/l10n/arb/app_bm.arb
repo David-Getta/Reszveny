@@ -836,5 +836,10 @@
   "activityTitle": "Sanniw ni feereliw bɛɛ",
   "activitySearchHint": "Sugandi taamasiyɛn fɛ",
   "activityNoMatch": "Sanni walima feereli si ma bɛn i ka sugandili ma.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 sɛbɛnna kaban, a ma fara a kan} other{{count} sɛbɛnna kaban, u ma fara a kan}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 sɛbɛnna kaban, a ma fara a kan} other{{count} sɛbɛnna kaban, u ma fara a kan}}",
+  "tickerChange": "Taamasiyɛn yɛlɛmali",
+  "tickerChangeTitle": "Taamasiyɛn yɛlɛmali · {symbol}",
+  "tickerChangeNew": "Taamasiyɛn kura",
+  "tickerChangeHint": "Ni sosiyete dɔ ye a ka taamasiyɛn yɛlɛma (i n'a fɔ FB → META): sanniw ni feereliw bɛɛ, dividandiw, share tilaliw, sɛbɛnni ani lasɔminiw bɛɛ bɛ taa taamasiyɛn kura kan.",
+  "tickerChanged": "A taara {symbol} kan"
 }

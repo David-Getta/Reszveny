@@ -2811,6 +2811,26 @@ class AppLocalizationsGn extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Símbolo ñemoambue';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Símbolo ñemoambue · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Símbolo pyahu';
+
+  @override
+  String get tickerChangeHint =>
+      'Peteĩ empresa omoambuévo isímbolo (techapyrã FB → META): opaite jejogua ha ñemu, dividendo, acción ñembojaʼo, jehaipy ha maranduʼi ohasa símbolo pyahúpe.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Oñembohasa $symbol-pe';
+  }
+
+  @override
   String get portfolioGoalSet => 'Emoĩ jehupytyrã';
 
   @override

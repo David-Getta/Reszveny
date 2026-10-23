@@ -836,5 +836,10 @@
   "activityTitle": "Alle transaksies",
   "activitySearchHint": "Filtreer volgens aandeelkode",
   "activityNoMatch": "Geen transaksies pas by die filter nie.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 reeds aangeteken, weggelaat} other{{count} reeds aangeteken, weggelaat}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 reeds aangeteken, weggelaat} other{{count} reeds aangeteken, weggelaat}}",
+  "tickerChange": "Aandeelkodeverandering",
+  "tickerChangeTitle": "Aandeelkodeverandering · {symbol}",
+  "tickerChangeNew": "Nuwe aandeelkode",
+  "tickerChangeHint": "Wanneer 'n maatskappy sy aandeelkode verander (bv. FB → META): alle transaksies, dividende, aandelesplitsings, die nota en die waarskuwings skuif na die nuwe een.",
+  "tickerChanged": "Geskuif na {symbol}"
 }

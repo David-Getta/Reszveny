@@ -836,5 +836,10 @@
   "activityTitle": "Swixaviwa ni swixavisiwa hinkwaswo",
   "activitySearchHint": "Hlawula hi ticker",
   "activityNoMatch": "A ku na xixaviwa kumbe xixavisiwa lexi fambelanaka ni leswi u swi hlawuleke.",
-  "portfolioImportDuplicates": "{count, plural, =1{Xin'we xi tsariwile khale, a xi engeteriwanga} other{Swa {count} swi tsariwile khale, a swi engeteriwanga}}"
+  "portfolioImportDuplicates": "{count, plural, =1{Xin'we xi tsariwile khale, a xi engeteriwanga} other{Swa {count} swi tsariwile khale, a swi engeteriwanga}}",
+  "tickerChange": "Ku cinca ticker",
+  "tickerChangeTitle": "Ku cinca ticker · {symbol}",
+  "tickerChangeNew": "Ticker leyintshwa",
+  "tickerChangeHint": "Loko khampani yi cinca ticker ya yona (xik. FB → META): swixaviwa ni swixavisiwa hinkwaswo, tidividende, ku avanyisiwa ka tishere, notsi ni switiviso swi rhurheriwa eka ticker leyintshwa.",
+  "tickerChanged": "Swi rhurheriwile eka {symbol}"
 }

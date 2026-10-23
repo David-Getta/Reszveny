@@ -2821,6 +2821,26 @@ class AppLocalizationsLg extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Okukyusa ticker';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Okukyusa ticker · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Ticker empya';
+
+  @override
+  String get tickerChangeHint =>
+      'Kkampuni bw\'ekyusa ticker yaayo (okugeza FB → META): byonna bye wagula ne bye watunda, dividendi, okugabanya emigabo, ekiwandiiko n\'okulabula bitwalibwa ku ticker empya.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Bitwaliddwa ku $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Teekawo ekiruubirirwa';
 
   @override

@@ -836,5 +836,10 @@
   "activityTitle": "Όλες οι συναλλαγές",
   "activitySearchHint": "Φιλτράρισμα κατά σύμβολο",
   "activityNoMatch": "Καμία συναλλαγή δεν ταιριάζει με το φίλτρο.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 υπάρχει ήδη, δεν προστέθηκε} other{{count} υπάρχουν ήδη, δεν προστέθηκαν}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 υπάρχει ήδη, δεν προστέθηκε} other{{count} υπάρχουν ήδη, δεν προστέθηκαν}}",
+  "tickerChange": "Αλλαγή συμβόλου",
+  "tickerChangeTitle": "Αλλαγή συμβόλου · {symbol}",
+  "tickerChangeNew": "Νέο σύμβολο",
+  "tickerChangeHint": "Όταν μια εταιρεία αλλάζει σύμβολο (π.χ. FB → META): όλες οι συναλλαγές, τα μερίσματα, οι διασπάσεις μετοχών, η σημείωση και οι ειδοποιήσεις μεταφέρονται στο νέο.",
+  "tickerChanged": "Μεταφέρθηκε στο {symbol}"
 }

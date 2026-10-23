@@ -2808,6 +2808,26 @@ class AppLocalizationsUz extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Tikerni almashtirish';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Tikerni almashtirish · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Yangi tiker';
+
+  @override
+  String get tickerChangeHint =>
+      'Kompaniya tikerini oʻzgartirganda (masalan, FB → META): barcha operatsiyalar, dividendlar, aksiya boʻlinishlari, qayd va signallar yangi tikerga koʻchiriladi.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return '$symbol tikeriga koʻchirildi';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maqsad belgilash';
 
   @override

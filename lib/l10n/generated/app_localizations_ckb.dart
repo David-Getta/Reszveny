@@ -2806,6 +2806,26 @@ class AppLocalizationsCkb extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'گۆڕینی هێما';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'گۆڕینی هێما · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'هێمای نوێ';
+
+  @override
+  String get tickerChangeHint =>
+      'کاتێک کۆمپانیایەک هێماکەی دەگۆڕێت (بۆ نموونە FB → META): هەموو مامەڵەکان، پشکی قازانج، دابەشکردنەکانی پشک، تێبینییەکە و ئاگادارییەکان دەگوازرێنەوە بۆ هێما نوێیەکە.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'گوازرایەوە بۆ $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'دانانی ئامانج';
 
   @override

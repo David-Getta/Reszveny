@@ -836,5 +836,10 @@
   "activityTitle": "Totes les transaccions",
   "activitySearchHint": "Filtra per ticker",
   "activityNoMatch": "Cap transacció no coincideix amb el filtre.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 ja registrada, descartada} other{{count} ja registrades, descartades}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 ja registrada, descartada} other{{count} ja registrades, descartades}}",
+  "tickerChange": "Canvi de ticker",
+  "tickerChangeTitle": "Canvi de ticker · {symbol}",
+  "tickerChangeNew": "Nou ticker",
+  "tickerChangeHint": "Quan una empresa canvia de ticker (p. ex. FB → META): totes les transaccions, els dividends, els desdoblaments d’accions, la nota i les alertes passen al nou.",
+  "tickerChanged": "S’ha traslladat a {symbol}"
 }

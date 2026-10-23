@@ -2801,6 +2801,26 @@ class AppLocalizationsPa extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'ਟਿਕਰ ਬਦਲਾਅ';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'ਟਿਕਰ ਬਦਲਾਅ · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'ਨਵਾਂ ਟਿਕਰ';
+
+  @override
+  String get tickerChangeHint =>
+      'ਜਦੋਂ ਕੋਈ ਕੰਪਨੀ ਆਪਣਾ ਟਿਕਰ ਬਦਲਦੀ ਹੈ (ਜਿਵੇਂ FB → META): ਸਾਰੇ ਲੈਣ-ਦੇਣ, ਡਿਵੀਡੈਂਡ, ਸਟਾਕ ਸਪਲਿਟ, ਨੋਟ ਅਤੇ ਅਲਰਟ ਨਵੇਂ ਟਿਕਰ ’ਤੇ ਚਲੇ ਜਾਂਦੇ ਹਨ।';
+
+  @override
+  String tickerChanged(String symbol) {
+    return '$symbol ’ਤੇ ਲਿਜਾਇਆ ਗਿਆ';
+  }
+
+  @override
   String get portfolioGoalSet => 'ਟੀਚਾ ਤੈਅ ਕਰੋ';
 
   @override

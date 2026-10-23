@@ -836,5 +836,10 @@
   "activityTitle": "सर्व व्यवहार",
   "activitySearchHint": "टिकरनुसार फिल्टर करा",
   "activityNoMatch": "फिल्टरशी जुळणारे कोणतेही व्यवहार नाहीत.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 आधीच नोंदवलेला, जोडला नाही} other{{count} आधीच नोंदवलेले, जोडले नाहीत}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 आधीच नोंदवलेला, जोडला नाही} other{{count} आधीच नोंदवलेले, जोडले नाहीत}}",
+  "tickerChange": "टिकर बदल",
+  "tickerChangeTitle": "टिकर बदल · {symbol}",
+  "tickerChangeNew": "नवीन टिकर",
+  "tickerChangeHint": "एखादी कंपनी आपला टिकर बदलते तेव्हा (उदा. FB → META): सर्व व्यवहार, लाभांश, स्टॉक स्प्लिट, नोंद आणि सूचना नवीन टिकरवर हलवल्या जातात.",
+  "tickerChanged": "{symbol} वर हलवले"
 }

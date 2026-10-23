@@ -2810,6 +2810,26 @@ class AppLocalizationsSq extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Ndryshim simboli';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Ndryshim simboli · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Simboli i ri';
+
+  @override
+  String get tickerChangeHint =>
+      'Kur një kompani ndryshon simbolin (p.sh. FB → META): të gjitha transaksionet, dividendët, ndarjet e aksioneve, shënimi dhe alarmet kalojnë te i riu.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'U zhvendos te $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cakto një objektiv';
 
   @override

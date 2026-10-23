@@ -2881,6 +2881,26 @@ class AppLocalizationsSl extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Sprememba oznake';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Sprememba oznake · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Nova oznaka';
+
+  @override
+  String get tickerChangeHint =>
+      'Ko podjetje spremeni oznako (npr. FB → META): vse transakcije, dividende, delitve delnic, zapisek in opozorila se prenesejo na novo.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Preneseno na $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastavi cilj';
 
   @override

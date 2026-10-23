@@ -836,5 +836,10 @@
   "activityTitle": "Усі операції",
   "activitySearchHint": "Фільтр за тікером",
   "activityNoMatch": "Немає операцій, що відповідають фільтру.",
-  "portfolioImportDuplicates": "{count, plural, one{{count} вже є, не додано} few{{count} вже є, не додано} many{{count} вже є, не додано} other{{count} вже є, не додано}}"
+  "portfolioImportDuplicates": "{count, plural, one{{count} вже є, не додано} few{{count} вже є, не додано} many{{count} вже є, не додано} other{{count} вже є, не додано}}",
+  "tickerChange": "Зміна тікера",
+  "tickerChangeTitle": "Зміна тікера · {symbol}",
+  "tickerChangeNew": "Новий тікер",
+  "tickerChangeHint": "Коли компанія змінює тікер (напр. FB → META): усі операції, дивіденди, спліти акцій, нотатка й сповіщення переносяться на новий.",
+  "tickerChanged": "Перенесено на {symbol}"
 }

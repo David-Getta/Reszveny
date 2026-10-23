@@ -836,5 +836,10 @@
   "activityTitle": "Բոլոր գործարքները",
   "activitySearchHint": "Զտել ըստ թիքերի",
   "activityNoMatch": "Զտիչին համապատասխանող գործարքներ չկան։",
-  "portfolioImportDuplicates": "{count, plural, one{{count} արդեն գրանցված էր, չավելացվեց} other{{count} արդեն գրանցված էր, չավելացվեց}}"
+  "portfolioImportDuplicates": "{count, plural, one{{count} արդեն գրանցված էր, չավելացվեց} other{{count} արդեն գրանցված էր, չավելացվեց}}",
+  "tickerChange": "Թիքերի փոփոխություն",
+  "tickerChangeTitle": "Թիքերի փոփոխություն · {symbol}",
+  "tickerChangeNew": "Նոր թիքեր",
+  "tickerChangeHint": "Երբ ընկերությունը փոխում է իր թիքերը (օր.՝ FB → META), բոլոր գործարքները, շահաբաժինները, բաժնետոմսերի բաժանումները, նշումը և ծանուցումները տեղափոխվում են նոր թիքերին։",
+  "tickerChanged": "Տեղափոխվեց {symbol}-ին"
 }

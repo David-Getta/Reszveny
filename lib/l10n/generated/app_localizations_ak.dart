@@ -2806,6 +2806,26 @@ class AppLocalizationsAk extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Ticker nsesaeɛ';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Ticker nsesaeɛ · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Ticker foforo';
+
+  @override
+  String get tickerChangeHint =>
+      'Sɛ adwumakuo bi sesa ne ticker a (sɛ nhwɛso, FB → META): adetɔ ne adetɔn nyinaa, dividend, share nkyekyɛmu, nkyerɛwee no ne kɔkɔbɔ no nyinaa tu kɔ foforo no so.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Wɔatu akɔ $symbol so';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hyɛ botaeɛ';
 
   @override

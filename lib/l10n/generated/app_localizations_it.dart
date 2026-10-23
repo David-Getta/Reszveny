@@ -2810,6 +2810,26 @@ class AppLocalizationsIt extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Cambio ticker';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Cambio ticker · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Nuovo ticker';
+
+  @override
+  String get tickerChangeHint =>
+      'Quando una società cambia ticker (es. FB → META): tutte le transazioni, i dividendi, i frazionamenti azionari, la nota e gli avvisi passano al nuovo.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Spostato su $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Imposta un obiettivo';
 
   @override

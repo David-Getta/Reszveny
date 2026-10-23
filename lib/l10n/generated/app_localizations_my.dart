@@ -2796,6 +2796,26 @@ class AppLocalizationsMy extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'သင်္ကေတ ပြောင်းခြင်း';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'သင်္ကေတ ပြောင်းခြင်း · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'သင်္ကေတ အသစ်';
+
+  @override
+  String get tickerChangeHint =>
+      'ကုမ္ပဏီတစ်ခုက ၎င်း၏ သင်္ကေတကို ပြောင်းသောအခါ (ဥပမာ FB → META) အရောင်းအဝယ်များ၊ အမြတ်ဝေစုများ၊ ရှယ်ယာခွဲခြင်းများ၊ မှတ်စုနှင့် သတိပေးချက်များ အားလုံး သင်္ကေတ အသစ်သို့ ရွှေ့ပြောင်းသွားပါမည်။';
+
+  @override
+  String tickerChanged(String symbol) {
+    return '$symbol သို့ ရွှေ့ပြီးပါပြီ';
+  }
+
+  @override
   String get portfolioGoalSet => 'ပန်းတိုင် သတ်မှတ်ရန်';
 
   @override

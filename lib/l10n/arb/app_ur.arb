@@ -836,5 +836,10 @@
   "activityTitle": "تمام لین دین",
   "activitySearchHint": "ٹکر کے مطابق فلٹر کریں",
   "activityNoMatch": "فلٹر سے کوئی لین دین مطابقت نہیں رکھتا۔",
-  "portfolioImportDuplicates": "{count, plural, =1{1 پہلے سے درج ہے، شامل نہیں کیا گیا} other{{count} پہلے سے درج ہیں، شامل نہیں کیے گئے}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 پہلے سے درج ہے، شامل نہیں کیا گیا} other{{count} پہلے سے درج ہیں، شامل نہیں کیے گئے}}",
+  "tickerChange": "ٹکر کی تبدیلی",
+  "tickerChangeTitle": "ٹکر کی تبدیلی · {symbol}",
+  "tickerChangeNew": "نیا ٹکر",
+  "tickerChangeHint": "جب کوئی کمپنی اپنا ٹکر بدلتی ہے (مثلاً FB → META): تمام لین دین، ڈیویڈنڈ، حصص کی تقسیمیں، نوٹ اور الرٹس نئے ٹکر پر منتقل ہو جاتے ہیں۔",
+  "tickerChanged": "{symbol} پر منتقل کر دیا گیا"
 }

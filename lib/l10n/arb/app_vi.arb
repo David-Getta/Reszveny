@@ -836,5 +836,10 @@
   "activityTitle": "Tất cả giao dịch",
   "activitySearchHint": "Lọc theo mã cổ phiếu",
   "activityNoMatch": "Không có giao dịch nào khớp với bộ lọc.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 mục đã được ghi trước đó, không thêm lại} other{{count} mục đã được ghi trước đó, không thêm lại}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 mục đã được ghi trước đó, không thêm lại} other{{count} mục đã được ghi trước đó, không thêm lại}}",
+  "tickerChange": "Đổi mã cổ phiếu",
+  "tickerChangeTitle": "Đổi mã cổ phiếu · {symbol}",
+  "tickerChangeNew": "Mã cổ phiếu mới",
+  "tickerChangeHint": "Khi công ty đổi mã cổ phiếu (ví dụ: FB → META): toàn bộ giao dịch, cổ tức, các đợt chia tách cổ phiếu, ghi chú và cảnh báo sẽ được chuyển sang mã mới.",
+  "tickerChanged": "Đã chuyển sang {symbol}"
 }

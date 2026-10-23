@@ -2817,6 +2817,26 @@ class AppLocalizationsOm extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Jijjiirama mallattoo';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Jijjiirama mallattoo · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Mallattoo haaraa';
+
+  @override
+  String get tickerChangeHint =>
+      'Yeroo dhaabbanni tokko mallattoo isaa jijjiiru (fkn. FB → META): bittaa fi gurgurtaan hundi, diviidendiin, qoqqoodinsi aksiyoonaa, yaadannoon fi akeekkachiisni gara mallattoo haaraatti ni ce\'u.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Gara $symbol-tti dabarfameera';
+  }
+
+  @override
   String get portfolioGoalSet => 'Kaayyoo kaa\'i';
 
   @override

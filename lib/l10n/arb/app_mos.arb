@@ -836,5 +836,10 @@
   "activityTitle": "Raaba la koosgo fãa",
   "activitySearchHint": "Yãk ne bãnde",
   "activityNoMatch": "Raaba bɩ koosgo ka zems ne yãkrã ye.",
-  "portfolioImportDuplicates": "{count, plural, =1{A yembre ra gʋlsa ne pĩnda, b pa paas-a ye} other{{count} ra gʋlsa ne pĩnda, b pa paas-b ye}}"
+  "portfolioImportDuplicates": "{count, plural, =1{A yembre ra gʋlsa ne pĩnda, b pa paas-a ye} other{{count} ra gʋlsa ne pĩnda, b pa paas-b ye}}",
+  "tickerChange": "Bãnde toeengo",
+  "tickerChangeTitle": "Bãnde toeengo · {symbol}",
+  "tickerChangeNew": "Bãnde paalga",
+  "tickerChangeHint": "Sasa ning sosayete toeemd a bãnde (wala FB → META): raaba la koosgo fãa, dividand, paart pʋɩɩbo, gʋlsgã la gũusgã fãa kẽnda bãnde paalgã zugu.",
+  "tickerChanged": "B tʋgame {symbol} zugu"
 }

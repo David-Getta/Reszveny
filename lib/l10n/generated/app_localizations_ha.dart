@@ -2811,6 +2811,26 @@ class AppLocalizationsHa extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Canjin ticker';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Canjin ticker · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Sabon ticker';
+
+  @override
+  String get tickerChangeHint =>
+      'Idan kamfani ya canza ticker ɗinsa (misali FB → META): duk ma\'amaloli, rabon riba, rabon hannun jari, bayanin da faɗakarwar za su koma sabon ticker.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'An mayar zuwa $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Saita buri';
 
   @override

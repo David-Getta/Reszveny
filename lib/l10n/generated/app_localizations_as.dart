@@ -2802,6 +2802,26 @@ class AppLocalizationsAs extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'টিকাৰ সলনি';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'টিকাৰ সলনি · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'নতুন টিকাৰ';
+
+  @override
+  String get tickerChangeHint =>
+      'যেতিয়া কোনো কোম্পানীয়ে নিজৰ টিকাৰ সলনি কৰে (যেনে FB → META): সকলো লেনদেন, লাভাংশ, ষ্টক বিভাজন, টোকা আৰু সতৰ্কবাণী নতুন টিকাৰলৈ স্থানান্তৰিত হয়।';
+
+  @override
+  String tickerChanged(String symbol) {
+    return '$symbolলৈ স্থানান্তৰিত কৰা হ\'ল';
+  }
+
+  @override
   String get portfolioGoalSet => 'লক্ষ্য নিৰ্ধাৰণ কৰক';
 
   @override

@@ -836,5 +836,10 @@
   "activityTitle": "Бүх гүйлгээ",
   "activitySearchHint": "Тикерээр шүүх",
   "activityNoMatch": "Шүүлтүүрт тохирох гүйлгээ олдсонгүй.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 аль хэдийн бүртгэгдсэн, нэмэгдсэнгүй} other{{count} аль хэдийн бүртгэгдсэн, нэмэгдсэнгүй}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 аль хэдийн бүртгэгдсэн, нэмэгдсэнгүй} other{{count} аль хэдийн бүртгэгдсэн, нэмэгдсэнгүй}}",
+  "tickerChange": "Тикер солих",
+  "tickerChangeTitle": "Тикер солих · {symbol}",
+  "tickerChangeNew": "Шинэ тикер",
+  "tickerChangeHint": "Компани тикерээ солих үед (ж.нь FB → META): бүх гүйлгээ, ногдол ашиг, хувьцааны хуваалт, тэмдэглэл болон сэрэмжлүүлэг шинэ тикер рүү шилжинэ.",
+  "tickerChanged": "{symbol} тикер рүү шилжүүллээ"
 }

@@ -836,5 +836,10 @@
   "activityTitle": "Tout tranzaksyon yo",
   "activitySearchHint": "Filtre pa senbòl",
   "activityNoMatch": "Pa gen tranzaksyon ki koresponn ak filt la.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 te deja anrejistre, nou kite l deyò} other{{count} te deja anrejistre, nou kite yo deyò}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 te deja anrejistre, nou kite l deyò} other{{count} te deja anrejistre, nou kite yo deyò}}",
+  "tickerChange": "Chanjman senbòl",
+  "tickerChangeTitle": "Chanjman senbòl · {symbol}",
+  "tickerChangeNew": "Nouvo senbòl",
+  "tickerChangeHint": "Lè yon konpayi chanje senbòl li (egz. FB → META): tout tranzaksyon, dividann, divizyon aksyon, nòt la ak alèt yo ale sou nouvo a.",
+  "tickerChanged": "Deplase sou {symbol}"
 }

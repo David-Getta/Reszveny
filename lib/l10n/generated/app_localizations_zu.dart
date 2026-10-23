@@ -2818,6 +2818,26 @@ class AppLocalizationsZu extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Ukushintsha i-ticker';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Ukushintsha i-ticker · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'I-ticker entsha';
+
+  @override
+  String get tickerChangeHint =>
+      'Uma inkampani ishintsha i-ticker yayo (isb. FB → META): konke ukuthenga nokuthengisa, izabelo zenzuzo, ukuhlukaniswa kwamasheya, inothi nezexwayiso kudluliselwa ku-ticker entsha.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Kudluliselwe ku-$symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setha umgomo';
 
   @override

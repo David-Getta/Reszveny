@@ -2801,6 +2801,26 @@ class AppLocalizationsSi extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'ටිකර් වෙනස් කිරීම';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'ටිකර් වෙනස් කිරීම · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'නව ටිකර්';
+
+  @override
+  String get tickerChangeHint =>
+      'සමාගමක් සිය ටිකර් වෙනස් කළ විට (උදා. FB → META): සියලු ගනුදෙනු, ලාභාංශ, කොටස් බෙදීම්, සටහන සහ ඇඟවීම් නව ටිකර් වෙත ගෙන යයි.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return '$symbol වෙත ගෙන ගියා';
+  }
+
+  @override
   String get portfolioGoalSet => 'ඉලක්කයක් සකසන්න';
 
   @override

@@ -836,5 +836,10 @@
   "activityTitle": "Ũgũri na ũendia wothe",
   "activitySearchHint": "Thuura na ticker",
   "activityNoMatch": "Gũtirĩ ũgũri kana ũendia ũiganaine na ũthuuri ũcio.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 yandĩkĩtwo o mbere, ndĩongereirwo} other{{count} ciandĩkĩtwo o mbere, itiongereirwo}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 yandĩkĩtwo o mbere, ndĩongereirwo} other{{count} ciandĩkĩtwo o mbere, itiongereirwo}}",
+  "tickerChange": "Kũgarũra ticker",
+  "tickerChangeTitle": "Kũgarũra ticker · {symbol}",
+  "tickerChangeNew": "Ticker njerũ",
+  "tickerChangeHint": "Kampuni ĩngĩgarũra ticker yayo (ta FB → META): ũgũri na ũendia wothe, mĩgai ya faida, ũgayanio wa share, ĩandĩko na imenyithia ciothe nĩ ithamagio ticker-inĩ ĩrĩa njerũ.",
+  "tickerChanged": "Nĩ ithamĩirio harĩ {symbol}"
 }

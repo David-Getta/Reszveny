@@ -2797,6 +2797,26 @@ class AppLocalizationsIg extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Mgbanwe ticker';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Mgbanwe ticker · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Ticker ọhụrụ';
+
+  @override
+  String get tickerChangeHint =>
+      'Mgbe ụlọ ọrụ gbanwere ticker ya (dịka FB → META): azụmahịa niile, nkesa uru, nkewa shea, ndetu na ọkwa niile na-akwaga na ticker ọhụrụ ahụ.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Akwagara na $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tọọ ebumnuche';
 
   @override

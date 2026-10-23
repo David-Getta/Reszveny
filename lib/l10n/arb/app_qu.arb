@@ -836,5 +836,10 @@
   "activityTitle": "Llapan rantiy rantikuy",
   "activitySearchHint": "Ticker nisqawan akllay",
   "activityNoMatch": "Mana ima rantiy rantikuypas akllasqaykiman tupanchu.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 ñam qillqasqaña, mana yapasqachu} other{{count} ñam qillqasqaña, mana yapasqachu}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 ñam qillqasqaña, mana yapasqachu} other{{count} ñam qillqasqaña, mana yapasqachu}}",
+  "tickerChange": "Ticker t'ikray",
+  "tickerChangeTitle": "Ticker t'ikray · {symbol}",
+  "tickerChangeNew": "Musuq ticker",
+  "tickerChangeHint": "Huk empresa tickerninta t'ikraqtin (kayhina: FB → META): llapan rantiy rantikuykuna, dividendokuna, akcionkuna rakiykuna, qillqasqa, willachiykunapas musuq tickerman astakun.",
+  "tickerChanged": "{symbol}-man astasqa"
 }

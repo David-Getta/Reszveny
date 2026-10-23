@@ -2795,6 +2795,26 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Đổi mã cổ phiếu';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Đổi mã cổ phiếu · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Mã cổ phiếu mới';
+
+  @override
+  String get tickerChangeHint =>
+      'Khi công ty đổi mã cổ phiếu (ví dụ: FB → META): toàn bộ giao dịch, cổ tức, các đợt chia tách cổ phiếu, ghi chú và cảnh báo sẽ được chuyển sang mã mới.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Đã chuyển sang $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Đặt mục tiêu';
 
   @override

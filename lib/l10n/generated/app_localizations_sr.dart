@@ -2854,6 +2854,26 @@ class AppLocalizationsSr extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Промена тикера';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Промена тикера · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Нови тикер';
+
+  @override
+  String get tickerChangeHint =>
+      'Када компанија промени тикер (нпр. FB → META): све трансакције, дивиденде, поделе акција, белешка и обавештења прелазе на нови.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Премештено на $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Постави циљ';
 
   @override

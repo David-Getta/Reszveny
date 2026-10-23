@@ -836,5 +836,10 @@
   "activityTitle": "Alle transaksjoner",
   "activitySearchHint": "Filtrer etter ticker",
   "activityNoMatch": "Ingen transaksjoner samsvarer med filteret.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 allerede registrert, utelatt} other{{count} allerede registrert, utelatt}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 allerede registrert, utelatt} other{{count} allerede registrert, utelatt}}",
+  "tickerChange": "Tickerbytte",
+  "tickerChangeTitle": "Tickerbytte · {symbol}",
+  "tickerChangeNew": "Ny ticker",
+  "tickerChangeHint": "Når et selskap bytter ticker (f.eks. FB → META): alle transaksjoner, utbytte, aksjesplitter, notatet og varslene flyttes til den nye.",
+  "tickerChanged": "Flyttet til {symbol}"
 }

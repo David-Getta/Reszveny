@@ -836,5 +836,10 @@
   "activityTitle": "Všetky transakcie",
   "activitySearchHint": "Filtrovať podľa tickera",
   "activityNoMatch": "Filtru nezodpovedajú žiadne transakcie.",
-  "portfolioImportDuplicates": "{count, plural, =1{Vynechaná 1 už zaznamenaná} few{Vynechané {count} už zaznamenané} many{Vynechané {count} už zaznamenané} other{Vynechaných {count} už zaznamenaných}}"
+  "portfolioImportDuplicates": "{count, plural, =1{Vynechaná 1 už zaznamenaná} few{Vynechané {count} už zaznamenané} many{Vynechané {count} už zaznamenané} other{Vynechaných {count} už zaznamenaných}}",
+  "tickerChange": "Zmena tickera",
+  "tickerChangeTitle": "Zmena tickera · {symbol}",
+  "tickerChangeNew": "Nový ticker",
+  "tickerChangeHint": "Keď spoločnosť zmení svoj ticker (napr. FB → META): všetky transakcie, dividendy, štiepenia akcií, poznámka aj upozornenia sa presunú na nový.",
+  "tickerChanged": "Presunuté na {symbol}"
 }

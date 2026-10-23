@@ -2817,6 +2817,26 @@ class AppLocalizationsXh extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Ukutshintsha i-ticker';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Ukutshintsha i-ticker · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'I-ticker entsha';
+
+  @override
+  String get tickerChangeHint =>
+      'Xa inkampani itshintsha i-ticker yayo (umz. FB → META): zonke iintengiselwano, izahlulo, ukwahlulwa kwezabelo, inqaku nezilumkiso zifuduselwa kwi-ticker entsha.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Kufuduselwe ku-$symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Misela usukelo';
 
   @override

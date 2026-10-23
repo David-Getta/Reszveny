@@ -836,5 +836,10 @@
   "activityTitle": "すべての取引",
   "activitySearchHint": "ティッカーで絞り込み",
   "activityNoMatch": "絞り込み条件に一致する取引はありません。",
-  "portfolioImportDuplicates": "{count, plural, =1{1 件は記録済みのため除外しました} other{{count} 件は記録済みのため除外しました}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 件は記録済みのため除外しました} other{{count} 件は記録済みのため除外しました}}",
+  "tickerChange": "ティッカー変更",
+  "tickerChangeTitle": "ティッカー変更 · {symbol}",
+  "tickerChangeNew": "新しいティッカー",
+  "tickerChangeHint": "企業がティッカーを変更した場合（例：FB → META）、すべての取引、配当金、株式分割、メモ、アラートが新しいティッカーに移行します。",
+  "tickerChanged": "{symbol} に移行しました"
 }

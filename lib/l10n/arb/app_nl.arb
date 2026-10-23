@@ -836,5 +836,10 @@
   "activityTitle": "Alle transacties",
   "activitySearchHint": "Filter op ticker",
   "activityNoMatch": "Geen transacties die aan het filter voldoen.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 al vastgelegd, weggelaten} other{{count} al vastgelegd, weggelaten}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 al vastgelegd, weggelaten} other{{count} al vastgelegd, weggelaten}}",
+  "tickerChange": "Tickerwijziging",
+  "tickerChangeTitle": "Tickerwijziging · {symbol}",
+  "tickerChangeNew": "Nieuwe ticker",
+  "tickerChangeHint": "Als een bedrijf zijn ticker wijzigt (bijv. FB → META): alle transacties, dividenden, aandelensplitsingen, de notitie en de alerts gaan over naar de nieuwe.",
+  "tickerChanged": "Verplaatst naar {symbol}"
 }

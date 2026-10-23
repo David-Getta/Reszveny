@@ -836,5 +836,10 @@
   "activityTitle": "Ҳамаи амалиётҳо",
   "activitySearchHint": "Филтр аз рӯи тикер",
   "activityNoMatch": "Ягон амалиёт ба филтр мувофиқ нест.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 аллакай сабт шудааст, илова нашуд} other{{count} аллакай сабт шудааст, илова нашуд}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 аллакай сабт шудааст, илова нашуд} other{{count} аллакай сабт шудааст, илова нашуд}}",
+  "tickerChange": "Иваз кардани тикер",
+  "tickerChangeTitle": "Иваз кардани тикер · {symbol}",
+  "tickerChangeNew": "Тикери нав",
+  "tickerChangeHint": "Вақте ки ширкат тикери худро иваз мекунад (мас., FB → META): ҳамаи амалиётҳо, дивидендҳо, тақсимҳои саҳмияҳо, қайд ва огоҳиҳо ба тикери нав интиқол меёбанд.",
+  "tickerChanged": "Ба {symbol} интиқол дода шуд"
 }

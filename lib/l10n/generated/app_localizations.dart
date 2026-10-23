@@ -4759,6 +4759,36 @@ abstract class AppLocalizations {
   /// **'{count, plural, =1{1 already recorded, left out} other{{count} already recorded, left out}}'**
   String portfolioImportDuplicates(int count);
 
+  /// Tooltip of the button on a position's transactions sheet that moves everything to a new ticker after a company changes its stock symbol (e.g. FB → META).
+  ///
+  /// In en, this message translates to:
+  /// **'Ticker change'**
+  String get tickerChange;
+
+  /// Title of the ticker change dialog, e.g. "Ticker change · FB".
+  ///
+  /// In en, this message translates to:
+  /// **'Ticker change · {symbol}'**
+  String tickerChangeTitle(String symbol);
+
+  /// Label of the field in the ticker change dialog where the user types the company's new stock symbol.
+  ///
+  /// In en, this message translates to:
+  /// **'New ticker'**
+  String get tickerChangeNew;
+
+  /// Explanation in the ticker change dialog. Keep the example tickers FB and META unchanged.
+  ///
+  /// In en, this message translates to:
+  /// **'When a company changes its ticker (e.g. FB → META): all transactions, dividends, stock splits, the note and the alerts move to the new one.'**
+  String get tickerChangeHint;
+
+  /// Confirmation after a ticker change, e.g. "Moved to META".
+  ///
+  /// In en, this message translates to:
+  /// **'Moved to {symbol}'**
+  String tickerChanged(String symbol);
+
   /// No description provided for @portfolioGoalSet.
   ///
   /// In en, this message translates to:

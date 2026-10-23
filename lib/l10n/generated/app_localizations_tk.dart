@@ -2806,6 +2806,26 @@ class AppLocalizationsTk extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Tikeri üýtgetmek';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Tikeri üýtgetmek · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Täze tiker';
+
+  @override
+  String get tickerChangeHint =>
+      'Kompaniýa tikerini üýtgedende (meselem, FB → META): ähli amallar, diwidendler, paýnama bölünişleri, bellik we duýduryşlar täze tikere geçirilýär.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return '$symbol tikerine geçirildi';
+  }
+
+  @override
   String get portfolioGoalSet => 'Maksat goý';
 
   @override

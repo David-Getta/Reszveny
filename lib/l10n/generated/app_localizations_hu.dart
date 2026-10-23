@@ -2809,6 +2809,26 @@ class AppLocalizationsHu extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Tickerváltás';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Tickerváltás · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Új ticker';
+
+  @override
+  String get tickerChangeHint =>
+      'Ha egy cég tickert vált (pl. FB → META): minden tranzakció, osztalék, felaprózás, a jegyzet és a riasztások átkerülnek az újra.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Áthelyezve: $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Cél kitűzése';
 
   @override

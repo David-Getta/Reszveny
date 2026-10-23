@@ -2799,6 +2799,26 @@ class AppLocalizationsHe extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'שינוי סימול';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'שינוי סימול · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'סימול חדש';
+
+  @override
+  String get tickerChangeHint =>
+      'כשחברה משנה את הסימול שלה (למשל FB → META): כל העסקאות, הדיבידנדים, פיצולי המניות, ההערה וההתראות עוברים לסימול החדש.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'הועבר ל-$symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'הגדרת יעד';
 
   @override

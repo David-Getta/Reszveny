@@ -836,5 +836,10 @@
   "activityTitle": "Akk tiɣin d uznuzu",
   "activitySearchHint": "Sizdeg s uzamul",
   "activityNoMatch": "Ulac tiɣin neɣ aznuzu i yemmenṭaḍen d imsizdeg.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 yella yakan, ur yettwarna ara} other{{count} llan yakan, ur ttwarnan ara}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 yella yakan, ur yettwarna ara} other{{count} llan yakan, ur ttwarnan ara}}",
+  "tickerChange": "Abeddel n uzamul",
+  "tickerChangeTitle": "Abeddel n uzamul · {symbol}",
+  "tickerChangeNew": "Azamul amaynut",
+  "tickerChangeHint": "Mi ara tbeddel tkebbanit azamul-is (amedya FB → META): akk tiɣin d uznuzu, dividendes, beṭṭu n yimuren, tazmilt d yilɣa ad ddun ɣer uzamul amaynut.",
+  "tickerChanged": "Yettwasmutti ɣer {symbol}"
 }

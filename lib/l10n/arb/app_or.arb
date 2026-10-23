@@ -836,5 +836,10 @@
   "activityTitle": "ସମସ୍ତ କାରବାର",
   "activitySearchHint": "ଟିକର ଅନୁସାରେ ଫିଲ୍ଟର କରନ୍ତୁ",
   "activityNoMatch": "ଫିଲ୍ଟର ସହ କୌଣସି କାରବାର ମେଳ ଖାଉନାହିଁ।",
-  "portfolioImportDuplicates": "{count, plural, =1{1ଟି ପୂର୍ବରୁ ରେକର୍ଡ ହୋଇଛି, ଯୋଡ଼ାଗଲା ନାହିଁ} other{{count}ଟି ପୂର୍ବରୁ ରେକର୍ଡ ହୋଇଛି, ଯୋଡ଼ାଗଲା ନାହିଁ}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1ଟି ପୂର୍ବରୁ ରେକର୍ଡ ହୋଇଛି, ଯୋଡ଼ାଗଲା ନାହିଁ} other{{count}ଟି ପୂର୍ବରୁ ରେକର୍ଡ ହୋଇଛି, ଯୋଡ଼ାଗଲା ନାହିଁ}}",
+  "tickerChange": "ଟିକର ପରିବର୍ତ୍ତନ",
+  "tickerChangeTitle": "ଟିକର ପରିବର୍ତ୍ତନ · {symbol}",
+  "tickerChangeNew": "ନୂଆ ଟିକର",
+  "tickerChangeHint": "କୌଣସି କମ୍ପାନୀ ନିଜ ଟିକର ବଦଳାଇଲେ (ଯେପରି FB → META): ସମସ୍ତ କାରବାର, ଡିଭିଡେଣ୍ଡ, ଷ୍ଟକ୍ ସ୍ପ୍ଲିଟ୍, ନୋଟ୍ ଓ ଆଲର୍ଟ ନୂଆ ଟିକରକୁ ଚାଲିଯାଏ।",
+  "tickerChanged": "{symbol}କୁ ସ୍ଥାନାନ୍ତରିତ ହେଲା"
 }

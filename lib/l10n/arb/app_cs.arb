@@ -836,5 +836,10 @@
   "activityTitle": "Všechny transakce",
   "activitySearchHint": "Filtrovat podle tickeru",
   "activityNoMatch": "Filtru neodpovídají žádné transakce.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 již zaznamenaná vynechána} few{{count} již zaznamenané vynechány} many{{count} již zaznamenané vynecháno} other{{count} již zaznamenaných vynecháno}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 již zaznamenaná vynechána} few{{count} již zaznamenané vynechány} many{{count} již zaznamenané vynecháno} other{{count} již zaznamenaných vynecháno}}",
+  "tickerChange": "Změna tickeru",
+  "tickerChangeTitle": "Změna tickeru · {symbol}",
+  "tickerChangeNew": "Nový ticker",
+  "tickerChangeHint": "Když společnost změní svůj ticker (např. FB → META): všechny transakce, dividendy, štěpení akcií, poznámka i upozornění se přesunou na nový.",
+  "tickerChanged": "Přesunuto na {symbol}"
 }

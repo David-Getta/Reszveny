@@ -2812,6 +2812,26 @@ class AppLocalizationsFil extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Pagpalit ng ticker';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Pagpalit ng ticker · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Bagong ticker';
+
+  @override
+  String get tickerChangeHint =>
+      'Kapag pinalitan ng kumpanya ang ticker nito (hal. FB → META): lahat ng transaksyon, dibidendo, stock split, ang tala at ang mga alerto ay ililipat sa bago.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Inilipat sa $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Magtakda ng layunin';
 
   @override

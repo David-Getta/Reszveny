@@ -836,5 +836,10 @@
   "activityTitle": "Gbogbo ìdúnàdúrà",
   "activitySearchHint": "Ṣàyàn nípa àmì ìpín",
   "activityNoMatch": "Kò sí ìdúnàdúrà tó bá àṣàyàn náà mu.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 ti wà nínú àkọsílẹ̀ tẹ́lẹ̀, a kò fi kún un} other{{count} ti wà nínú àkọsílẹ̀ tẹ́lẹ̀, a kò fi wọ́n kún un}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 ti wà nínú àkọsílẹ̀ tẹ́lẹ̀, a kò fi kún un} other{{count} ti wà nínú àkọsílẹ̀ tẹ́lẹ̀, a kò fi wọ́n kún un}}",
+  "tickerChange": "Ìyípadà àmì ìpín",
+  "tickerChangeTitle": "Ìyípadà àmì ìpín · {symbol}",
+  "tickerChangeNew": "Àmì ìpín tuntun",
+  "tickerChangeHint": "Nígbà tí ilé-iṣẹ́ kan bá yí àmì ìpín rẹ̀ padà (àpẹẹrẹ: FB → META): gbogbo ìdúnàdúrà, ìpín èrè, pípín ìpín, àkọsílẹ̀ àti ìkìlọ̀ ni a ó gbé lọ sí àmì ìpín tuntun náà.",
+  "tickerChanged": "A ti gbé e lọ sí {symbol}"
 }

@@ -836,5 +836,10 @@
   "activityTitle": "Lahat ng transaksyon",
   "activitySearchHint": "I-filter ayon sa ticker",
   "activityNoMatch": "Walang transaksyong tumutugma sa filter.",
-  "portfolioImportDuplicates": "{count, plural, one{{count} ang naitala na, hindi isinama} other{{count} ang naitala na, hindi isinama}}"
+  "portfolioImportDuplicates": "{count, plural, one{{count} ang naitala na, hindi isinama} other{{count} ang naitala na, hindi isinama}}",
+  "tickerChange": "Pagpalit ng ticker",
+  "tickerChangeTitle": "Pagpalit ng ticker · {symbol}",
+  "tickerChangeNew": "Bagong ticker",
+  "tickerChangeHint": "Kapag pinalitan ng kumpanya ang ticker nito (hal. FB → META): lahat ng transaksyon, dibidendo, stock split, ang tala at ang mga alerto ay ililipat sa bago.",
+  "tickerChanged": "Inilipat sa {symbol}"
 }

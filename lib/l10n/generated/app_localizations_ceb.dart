@@ -2816,6 +2816,26 @@ class AppLocalizationsCeb extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Pag-usab sa ticker';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Pag-usab sa ticker · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Bag-ong ticker';
+
+  @override
+  String get tickerChangeHint =>
+      'Kon usbon sa kompanya ang ticker niini (pananglitan FB → META): ang tanang transaksyon, dibidendo, stock split, ang nota ug ang mga alerto mabalhin sa bag-o.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Gibalhin ngadto sa $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Pagbutang og tumong';
 
   @override

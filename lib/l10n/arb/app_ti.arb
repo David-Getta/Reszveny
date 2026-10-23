@@ -836,5 +836,10 @@
   "activityTitle": "ኩሎም ልውውጣት",
   "activitySearchHint": "ብምልክት ምጽራይ",
   "activityNoMatch": "ምስ መጻረዪ ዝሰማማዕ ልውውጥ የለን።",
-  "portfolioImportDuplicates": "{count, plural, =1{1 ድሮ ተመዝጊቡ ኣሎ፣ ኣይተወሰኸን} other{{count} ድሮ ተመዝጊቦም ኣለው፣ ኣይተወሰኹን}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 ድሮ ተመዝጊቡ ኣሎ፣ ኣይተወሰኸን} other{{count} ድሮ ተመዝጊቦም ኣለው፣ ኣይተወሰኹን}}",
+  "tickerChange": "ምቕያር ምልክት",
+  "tickerChangeTitle": "ምቕያር ምልክት · {symbol}",
+  "tickerChangeNew": "ሓድሽ ምልክት",
+  "tickerChangeHint": "ሓደ ትካል ምልክቱ ምስ ዝቕይር (ንኣብነት FB → META)፦ ኩሎም ልውውጣት፣ ድቪደንድታት፣ ምክፍፋላት ኣክስዮን፣ ማስታወሻን መጠንቀቕታታትን ናብቲ ሓድሽ ምልክት ይሰጋገሩ።",
+  "tickerChanged": "ናብ {symbol} ተሰጋጊሩ"
 }

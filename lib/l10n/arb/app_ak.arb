@@ -836,5 +836,10 @@
   "activityTitle": "Adetɔ ne adetɔn nyinaa",
   "activitySearchHint": "Fa ticker hwehwɛ mu",
   "activityNoMatch": "Adetɔ anaa adetɔn biara nhyia nea woapaw no.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 wɔ hɔ dada, wɔamfa anka ho} other{{count} wɔ hɔ dada, wɔamfa anka ho}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 wɔ hɔ dada, wɔamfa anka ho} other{{count} wɔ hɔ dada, wɔamfa anka ho}}",
+  "tickerChange": "Ticker nsesaeɛ",
+  "tickerChangeTitle": "Ticker nsesaeɛ · {symbol}",
+  "tickerChangeNew": "Ticker foforo",
+  "tickerChangeHint": "Sɛ adwumakuo bi sesa ne ticker a (sɛ nhwɛso, FB → META): adetɔ ne adetɔn nyinaa, dividend, share nkyekyɛmu, nkyerɛwee no ne kɔkɔbɔ no nyinaa tu kɔ foforo no so.",
+  "tickerChanged": "Wɔatu akɔ {symbol} so"
 }

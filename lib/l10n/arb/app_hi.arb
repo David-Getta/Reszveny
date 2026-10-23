@@ -836,5 +836,10 @@
   "activityTitle": "सभी लेन-देन",
   "activitySearchHint": "टिकर से फ़िल्टर करें",
   "activityNoMatch": "फ़िल्टर से कोई लेन-देन मेल नहीं खाता।",
-  "portfolioImportDuplicates": "{count, plural, one{{count} पहले से दर्ज, छोड़ा गया} other{{count} पहले से दर्ज, छोड़े गए}}"
+  "portfolioImportDuplicates": "{count, plural, one{{count} पहले से दर्ज, छोड़ा गया} other{{count} पहले से दर्ज, छोड़े गए}}",
+  "tickerChange": "टिकर बदलाव",
+  "tickerChangeTitle": "टिकर बदलाव · {symbol}",
+  "tickerChangeNew": "नया टिकर",
+  "tickerChangeHint": "जब कोई कंपनी अपना टिकर बदलती है (जैसे FB → META): सभी लेन-देन, डिविडेंड, स्टॉक स्प्लिट, नोट और अलर्ट नए टिकर पर चले जाते हैं।",
+  "tickerChanged": "{symbol} पर ले जाया गया"
 }

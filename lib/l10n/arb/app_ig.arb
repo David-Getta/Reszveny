@@ -836,5 +836,10 @@
   "activityTitle": "Azụmahịa niile",
   "activitySearchHint": "Họrọ site na ticker",
   "activityNoMatch": "Enweghị azụmahịa dakọrọ na nhọrọ ahụ.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 edebanyelarị, a gbakwunyeghị ya} other{{count} edebanyelarị, a gbakwunyeghị ha}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 edebanyelarị, a gbakwunyeghị ya} other{{count} edebanyelarị, a gbakwunyeghị ha}}",
+  "tickerChange": "Mgbanwe ticker",
+  "tickerChangeTitle": "Mgbanwe ticker · {symbol}",
+  "tickerChangeNew": "Ticker ọhụrụ",
+  "tickerChangeHint": "Mgbe ụlọ ọrụ gbanwere ticker ya (dịka FB → META): azụmahịa niile, nkesa uru, nkewa shea, ndetu na ọkwa niile na-akwaga na ticker ọhụrụ ahụ.",
+  "tickerChanged": "Akwagara na {symbol}"
 }

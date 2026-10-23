@@ -2847,6 +2847,26 @@ class AppLocalizationsRo extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Schimbare de simbol';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Schimbare de simbol · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Simbol nou';
+
+  @override
+  String get tickerChangeHint =>
+      'Când o companie își schimbă simbolul (ex. FB → META): toate tranzacțiile, dividendele, divizările de acțiuni, notița și alertele se mută la noul simbol.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Mutat la $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Setează un obiectiv';
 
   @override

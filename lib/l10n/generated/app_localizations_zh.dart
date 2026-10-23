@@ -2684,6 +2684,26 @@ class AppLocalizationsZh extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => '更改股票代码';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return '更改股票代码 · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => '新股票代码';
+
+  @override
+  String get tickerChangeHint =>
+      '公司更改股票代码时（例如 FB → META），所有交易、股息、股票拆分、笔记和提醒都会转移到新代码下。';
+
+  @override
+  String tickerChanged(String symbol) {
+    return '已转移到 $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => '设定目标';
 
   @override
@@ -5734,6 +5754,26 @@ class AppLocalizationsZhHantHk extends AppLocalizationsZh {
       one: '1 筆已有記錄，未重複加入',
     );
     return '$_temp0';
+  }
+
+  @override
+  String get tickerChange => '更改股票代號';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return '更改股票代號 · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => '新股票代號';
+
+  @override
+  String get tickerChangeHint =>
+      '公司更改股票代號時（例如 FB → META），所有交易、股息、股票分拆、筆記及提示都會轉移至新代號。';
+
+  @override
+  String tickerChanged(String symbol) {
+    return '已轉移至 $symbol';
   }
 
   @override

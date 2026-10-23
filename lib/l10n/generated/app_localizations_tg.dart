@@ -2806,6 +2806,26 @@ class AppLocalizationsTg extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Иваз кардани тикер';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Иваз кардани тикер · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Тикери нав';
+
+  @override
+  String get tickerChangeHint =>
+      'Вақте ки ширкат тикери худро иваз мекунад (мас., FB → META): ҳамаи амалиётҳо, дивидендҳо, тақсимҳои саҳмияҳо, қайд ва огоҳиҳо ба тикери нав интиқол меёбанд.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Ба $symbol интиқол дода шуд';
+  }
+
+  @override
   String get portfolioGoalSet => 'Муқаррар кардани ҳадаф';
 
   @override

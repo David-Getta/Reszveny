@@ -836,5 +836,10 @@
   "activityTitle": "అన్ని లావాదేవీలు",
   "activitySearchHint": "టికర్ ప్రకారం ఫిల్టర్ చేయండి",
   "activityNoMatch": "ఫిల్టర్‌కు సరిపోలే లావాదేవీలు లేవు.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 ఇప్పటికే నమోదై ఉంది, జోడించలేదు} other{{count} ఇప్పటికే నమోదై ఉన్నాయి, జోడించలేదు}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 ఇప్పటికే నమోదై ఉంది, జోడించలేదు} other{{count} ఇప్పటికే నమోదై ఉన్నాయి, జోడించలేదు}}",
+  "tickerChange": "టికర్ మార్పు",
+  "tickerChangeTitle": "టికర్ మార్పు · {symbol}",
+  "tickerChangeNew": "కొత్త టికర్",
+  "tickerChangeHint": "ఒక కంపెనీ తన టికర్‌ను మార్చినప్పుడు (ఉదా. FB → META): అన్ని లావాదేవీలు, డివిడెండ్లు, స్టాక్ స్ప్లిట్‌లు, గమనిక మరియు హెచ్చరికలు కొత్త టికర్‌కు తరలించబడతాయి.",
+  "tickerChanged": "{symbol}కు తరలించబడింది"
 }

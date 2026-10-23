@@ -2782,6 +2782,26 @@ class AppLocalizationsKm extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'ការប្ដូរនិមិត្តសញ្ញា';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'ការប្ដូរនិមិត្តសញ្ញា · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'និមិត្តសញ្ញាថ្មី';
+
+  @override
+  String get tickerChangeHint =>
+      'នៅពេលក្រុមហ៊ុនប្ដូរនិមិត្តសញ្ញារបស់ខ្លួន (ឧ. FB → META)៖ ប្រតិបត្តិការ ភាគលាភ ការបំបែកភាគហ៊ុន កំណត់ចំណាំ និងការជូនដំណឹងទាំងអស់ នឹងផ្លាស់ទៅនិមិត្តសញ្ញាថ្មី។';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'បានផ្លាស់ទៅ $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'កំណត់គោលដៅ';
 
   @override

@@ -836,5 +836,10 @@
   "activityTitle": "બધા વ્યવહારો",
   "activitySearchHint": "ટિકર મુજબ ફિલ્ટર કરો",
   "activityNoMatch": "ફિલ્ટર સાથે કોઈ વ્યવહાર મેળ ખાતો નથી.",
-  "portfolioImportDuplicates": "{count, plural, one{{count} પહેલેથી નોંધાયેલ, છોડી દેવાયો} other{{count} પહેલેથી નોંધાયેલા, છોડી દેવાયા}}"
+  "portfolioImportDuplicates": "{count, plural, one{{count} પહેલેથી નોંધાયેલ, છોડી દેવાયો} other{{count} પહેલેથી નોંધાયેલા, છોડી દેવાયા}}",
+  "tickerChange": "ટિકર ફેરફાર",
+  "tickerChangeTitle": "ટિકર ફેરફાર · {symbol}",
+  "tickerChangeNew": "નવો ટિકર",
+  "tickerChangeHint": "જ્યારે કોઈ કંપની પોતાનો ટિકર બદલે (દા.ત. FB → META): બધા વ્યવહારો, ડિવિડન્ડ, સ્ટૉક સ્પ્લિટ, નોંધ અને અલર્ટ નવા ટિકર પર ખસેડાય છે.",
+  "tickerChanged": "{symbol} પર ખસેડ્યું"
 }

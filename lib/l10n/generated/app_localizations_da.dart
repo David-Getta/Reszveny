@@ -2802,6 +2802,26 @@ class AppLocalizationsDa extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Tickerskift';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Tickerskift · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Ny ticker';
+
+  @override
+  String get tickerChangeHint =>
+      'Når et selskab skifter ticker (f.eks. FB → META): alle transaktioner, udbytte, aktiesplits, noten og alarmerne flyttes til den nye.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Flyttet til $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sæt et mål';
 
   @override

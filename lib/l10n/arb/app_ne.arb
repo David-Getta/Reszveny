@@ -836,5 +836,10 @@
   "activityTitle": "सबै कारोबार",
   "activitySearchHint": "टिकर अनुसार फिल्टर गर्नुहोस्",
   "activityNoMatch": "फिल्टरसँग मिल्ने कुनै कारोबार छैन।",
-  "portfolioImportDuplicates": "{count, plural, =1{1 पहिले नै रेकर्ड भइसकेको, थपिएन} other{{count} पहिले नै रेकर्ड भइसकेका, थपिएनन्}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 पहिले नै रेकर्ड भइसकेको, थपिएन} other{{count} पहिले नै रेकर्ड भइसकेका, थपिएनन्}}",
+  "tickerChange": "टिकर परिवर्तन",
+  "tickerChangeTitle": "टिकर परिवर्तन · {symbol}",
+  "tickerChangeNew": "नयाँ टिकर",
+  "tickerChangeHint": "कुनै कम्पनीले आफ्नो टिकर बदल्दा (जस्तै FB → META): सबै कारोबार, लाभांश, स्टक स्प्लिट, टिपोट र अलर्ट नयाँ टिकरमा सारिन्छन्।",
+  "tickerChanged": "{symbol} मा सारियो"
 }

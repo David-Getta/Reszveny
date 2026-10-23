@@ -836,5 +836,10 @@
   "activityTitle": "Visi darījumi",
   "activitySearchHint": "Filtrēt pēc simbola",
   "activityNoMatch": "Filtram neatbilst neviens darījums.",
-  "portfolioImportDuplicates": "{count, plural, zero{{count} jau reģistrēti, nav pievienoti} one{{count} jau reģistrēts, nav pievienots} other{{count} jau reģistrēti, nav pievienoti}}"
+  "portfolioImportDuplicates": "{count, plural, zero{{count} jau reģistrēti, nav pievienoti} one{{count} jau reģistrēts, nav pievienots} other{{count} jau reģistrēti, nav pievienoti}}",
+  "tickerChange": "Simbola maiņa",
+  "tickerChangeTitle": "Simbola maiņa · {symbol}",
+  "tickerChangeNew": "Jaunais simbols",
+  "tickerChangeHint": "Kad uzņēmums maina savu simbolu (piem., FB → META): visi darījumi, dividendes, akciju sadalīšanas, piezīme un brīdinājumi tiek pārcelti uz jauno.",
+  "tickerChanged": "Pārcelts uz {symbol}"
 }

@@ -836,5 +836,10 @@
   "activityTitle": "Toate tranzacțiile",
   "activitySearchHint": "Filtrează după simbol",
   "activityNoMatch": "Nicio tranzacție nu se potrivește filtrului.",
-  "portfolioImportDuplicates": "{count, plural, one{{count} deja înregistrată, exclusă} few{{count} deja înregistrate, excluse} other{{count} deja înregistrate, excluse}}"
+  "portfolioImportDuplicates": "{count, plural, one{{count} deja înregistrată, exclusă} few{{count} deja înregistrate, excluse} other{{count} deja înregistrate, excluse}}",
+  "tickerChange": "Schimbare de simbol",
+  "tickerChangeTitle": "Schimbare de simbol · {symbol}",
+  "tickerChangeNew": "Simbol nou",
+  "tickerChangeHint": "Când o companie își schimbă simbolul (ex. FB → META): toate tranzacțiile, dividendele, divizările de acțiuni, notița și alertele se mută la noul simbol.",
+  "tickerChanged": "Mutat la {symbol}"
 }

@@ -836,5 +836,10 @@
   "activityTitle": "Барлык операцияләр",
   "activitySearchHint": "Тикер буенча фильтрлау",
   "activityNoMatch": "Фильтрга туры килгән операция юк.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 элек үк язылган, өстәлмәде} other{{count} элек үк язылган, өстәлмәде}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 элек үк язылган, өстәлмәде} other{{count} элек үк язылган, өстәлмәде}}",
+  "tickerChange": "Тикерны алмаштыру",
+  "tickerChangeTitle": "Тикерны алмаштыру · {symbol}",
+  "tickerChangeNew": "Яңа тикер",
+  "tickerChangeHint": "Компания тикерын үзгәрткәндә (мәс., FB → META): барлык операцияләр, дивидендлар, акцияләрне бүлүләр, язма һәм искәртүләр яңа тикерга күчә.",
+  "tickerChanged": "{symbol} тикерына күчерелде"
 }

@@ -2456,6 +2456,38 @@
       }
     }
   },
+  "tickerChange": "Ticker change",
+  "@tickerChange": {
+    "description": "Tooltip of the button on a position's transactions sheet that moves everything to a new ticker after a company changes its stock symbol (e.g. FB → META)."
+  },
+  "tickerChangeTitle": "Ticker change · {symbol}",
+  "@tickerChangeTitle": {
+    "description": "Title of the ticker change dialog, e.g. \"Ticker change · FB\".",
+    "placeholders": {
+      "symbol": {
+        "type": "String",
+        "example": "FB"
+      }
+    }
+  },
+  "tickerChangeNew": "New ticker",
+  "@tickerChangeNew": {
+    "description": "Label of the field in the ticker change dialog where the user types the company's new stock symbol."
+  },
+  "tickerChangeHint": "When a company changes its ticker (e.g. FB → META): all transactions, dividends, stock splits, the note and the alerts move to the new one.",
+  "@tickerChangeHint": {
+    "description": "Explanation in the ticker change dialog. Keep the example tickers FB and META unchanged."
+  },
+  "tickerChanged": "Moved to {symbol}",
+  "@tickerChanged": {
+    "description": "Confirmation after a ticker change, e.g. \"Moved to META\".",
+    "placeholders": {
+      "symbol": {
+        "type": "String",
+        "example": "META"
+      }
+    }
+  },
   "portfolioGoalSet": "Set a goal",
   "portfolioGoalTitle": "Portfolio goal",
   "portfolioGoalProgress": "{percent} of your {amount} goal",

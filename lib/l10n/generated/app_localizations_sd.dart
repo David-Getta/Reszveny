@@ -2794,6 +2794,26 @@ class AppLocalizationsSd extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'ٽڪر جي تبديلي';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'ٽڪر جي تبديلي · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'نئون ٽڪر';
+
+  @override
+  String get tickerChangeHint =>
+      'جڏهن ڪا ڪمپني پنهنجو ٽڪر بدلائي ٿي (مثال طور FB → META): سڀ ليڻ دين، ڊيويڊنڊ، حصن جون ورهاستون، نوٽ ۽ الرٽ نئين ٽڪر ڏانهن منتقل ٿي وڃن ٿا.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return '$symbol ڏانهن منتقل ڪيو ويو';
+  }
+
+  @override
   String get portfolioGoalSet => 'مقصد مقرر ڪريو';
 
   @override

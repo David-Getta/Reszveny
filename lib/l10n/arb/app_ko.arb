@@ -836,5 +836,10 @@
   "activityTitle": "전체 거래 내역",
   "activitySearchHint": "티커로 필터링",
   "activityNoMatch": "필터와 일치하는 거래가 없습니다.",
-  "portfolioImportDuplicates": "{count, plural, =1{이미 기록된 1건은 제외되었습니다} other{이미 기록된 {count}건은 제외되었습니다}}"
+  "portfolioImportDuplicates": "{count, plural, =1{이미 기록된 1건은 제외되었습니다} other{이미 기록된 {count}건은 제외되었습니다}}",
+  "tickerChange": "티커 변경",
+  "tickerChangeTitle": "티커 변경 · {symbol}",
+  "tickerChangeNew": "새 티커",
+  "tickerChangeHint": "회사가 티커를 변경하면(예: FB → META) 모든 거래, 배당금, 주식 분할, 메모, 알림이 새 티커로 옮겨집니다.",
+  "tickerChanged": "{symbol}(으)로 옮겼습니다"
 }

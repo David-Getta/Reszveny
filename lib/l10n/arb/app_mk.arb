@@ -836,5 +836,10 @@
   "activityTitle": "Сите трансакции",
   "activitySearchHint": "Филтрирај по тикер",
   "activityNoMatch": "Нема трансакции што одговараат на филтерот.",
-  "portfolioImportDuplicates": "{count, plural, one{{count} веќе е евидентирана, не е додадена} other{{count} веќе се евидентирани, не се додадени}}"
+  "portfolioImportDuplicates": "{count, plural, one{{count} веќе е евидентирана, не е додадена} other{{count} веќе се евидентирани, не се додадени}}",
+  "tickerChange": "Промена на тикер",
+  "tickerChangeTitle": "Промена на тикер · {symbol}",
+  "tickerChangeNew": "Нов тикер",
+  "tickerChangeHint": "Кога компанија ќе го промени тикерот (на пр. FB → META): сите трансакции, дивиденди, поделби на акции, белешката и известувањата се префрлаат на новиот.",
+  "tickerChanged": "Префрлено на {symbol}"
 }

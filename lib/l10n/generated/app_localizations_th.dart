@@ -2771,6 +2771,26 @@ class AppLocalizationsTh extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'เปลี่ยนชื่อย่อ';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'เปลี่ยนชื่อย่อ · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'ชื่อย่อใหม่';
+
+  @override
+  String get tickerChangeHint =>
+      'เมื่อบริษัทเปลี่ยนชื่อย่อหุ้น (เช่น FB → META) รายการซื้อขาย เงินปันผล การแตกหุ้น บันทึก และการแจ้งเตือนทั้งหมดจะย้ายไปยังชื่อย่อใหม่';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'ย้ายไปที่ $symbol แล้ว';
+  }
+
+  @override
   String get portfolioGoalSet => 'ตั้งเป้าหมาย';
 
   @override

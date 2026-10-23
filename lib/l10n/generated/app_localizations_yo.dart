@@ -2800,6 +2800,26 @@ class AppLocalizationsYo extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Ìyípadà àmì ìpín';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Ìyípadà àmì ìpín · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Àmì ìpín tuntun';
+
+  @override
+  String get tickerChangeHint =>
+      'Nígbà tí ilé-iṣẹ́ kan bá yí àmì ìpín rẹ̀ padà (àpẹẹrẹ: FB → META): gbogbo ìdúnàdúrà, ìpín èrè, pípín ìpín, àkọsílẹ̀ àti ìkìlọ̀ ni a ó gbé lọ sí àmì ìpín tuntun náà.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'A ti gbé e lọ sí $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ṣètò àfojúsùn';
 
   @override

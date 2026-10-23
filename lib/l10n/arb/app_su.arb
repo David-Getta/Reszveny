@@ -836,5 +836,10 @@
   "activityTitle": "Sadaya transaksi",
   "activitySearchHint": "Saring dumasar kode saham",
   "activityNoMatch": "Teu aya transaksi nu cocog jeung saringan.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 parantos kacatet, teu dilebetkeun} other{{count} parantos kacatet, teu dilebetkeun}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 parantos kacatet, teu dilebetkeun} other{{count} parantos kacatet, teu dilebetkeun}}",
+  "tickerChange": "Parobahan kode saham",
+  "tickerChangeTitle": "Parobahan kode saham · {symbol}",
+  "tickerChangeNew": "Kode saham anyar",
+  "tickerChangeHint": "Upami perusahaan ngarobih kode sahamna (conto: FB → META): sadaya transaksi, dividen, pamecahan saham, catetan sareng béwara dipindahkeun ka kode anu anyar.",
+  "tickerChanged": "Dipindahkeun ka {symbol}"
 }

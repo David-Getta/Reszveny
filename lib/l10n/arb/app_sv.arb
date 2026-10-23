@@ -836,5 +836,10 @@
   "activityTitle": "Alla transaktioner",
   "activitySearchHint": "Filtrera efter ticker",
   "activityNoMatch": "Inga transaktioner matchar filtret.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 redan registrerad, utelämnad} other{{count} redan registrerade, utelämnade}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 redan registrerad, utelämnad} other{{count} redan registrerade, utelämnade}}",
+  "tickerChange": "Tickerbyte",
+  "tickerChangeTitle": "Tickerbyte · {symbol}",
+  "tickerChangeNew": "Ny ticker",
+  "tickerChangeHint": "När ett bolag byter ticker (t.ex. FB → META): alla transaktioner, utdelningar, aktiesplittar, anteckningen och larmen flyttas till den nya.",
+  "tickerChanged": "Flyttat till {symbol}"
 }

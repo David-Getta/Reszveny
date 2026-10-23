@@ -836,5 +836,10 @@
   "activityTitle": "ټولې راکړې ورکړې",
   "activitySearchHint": "د ټیکر له مخې فلټر کړئ",
   "activityNoMatch": "هېڅ راکړه ورکړه له فلټر سره سمون نه لري.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 مخکې ثبت ده، اضافه نه شوه} other{{count} مخکې ثبت دي، اضافه نه شوې}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 مخکې ثبت ده، اضافه نه شوه} other{{count} مخکې ثبت دي، اضافه نه شوې}}",
+  "tickerChange": "د ټیکر بدلون",
+  "tickerChangeTitle": "د ټیکر بدلون · {symbol}",
+  "tickerChangeNew": "نوی ټیکر",
+  "tickerChangeHint": "کله چې یو شرکت خپل ټیکر بدل کړي (لکه FB → META): ټولې راکړې ورکړې، ډیویډنډونه، د ونډو ویشونه، یادښت او خبرتیاوې نوي ټیکر ته لېږدول کېږي.",
+  "tickerChanged": "{symbol} ته ولېږدول شو"
 }

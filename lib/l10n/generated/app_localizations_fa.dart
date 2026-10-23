@@ -2800,6 +2800,26 @@ class AppLocalizationsFa extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'تغییر نماد';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'تغییر نماد · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'نماد جدید';
+
+  @override
+  String get tickerChangeHint =>
+      'وقتی شرکتی نماد خود را تغییر می‌دهد (مثلاً FB → META): همه تراکنش‌ها، سودهای سهام، تجزیه‌های سهام، یادداشت و هشدارها به نماد جدید منتقل می‌شوند.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'به $symbol منتقل شد';
+  }
+
+  @override
   String get portfolioGoalSet => 'تعیین هدف';
 
   @override

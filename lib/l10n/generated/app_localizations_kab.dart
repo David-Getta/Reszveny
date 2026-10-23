@@ -2803,6 +2803,26 @@ class AppLocalizationsKab extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Abeddel n uzamul';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Abeddel n uzamul · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Azamul amaynut';
+
+  @override
+  String get tickerChangeHint =>
+      'Mi ara tbeddel tkebbanit azamul-is (amedya FB → META): akk tiɣin d uznuzu, dividendes, beṭṭu n yimuren, tazmilt d yilɣa ad ddun ɣer uzamul amaynut.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Yettwasmutti ɣer $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sbadu iswi';
 
   @override

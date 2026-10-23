@@ -836,5 +836,10 @@
   "activityTitle": "Vse transakcije",
   "activitySearchHint": "Filtriraj po oznaki",
   "activityNoMatch": "Nobena transakcija se ne ujema s filtrom.",
-  "portfolioImportDuplicates": "{count, plural, one{Izpuščena je {count} že zabeležena} two{Izpuščeni sta {count} že zabeleženi} few{Izpuščene so {count} že zabeležene} other{Izpuščenih je {count} že zabeleženih}}"
+  "portfolioImportDuplicates": "{count, plural, one{Izpuščena je {count} že zabeležena} two{Izpuščeni sta {count} že zabeleženi} few{Izpuščene so {count} že zabeležene} other{Izpuščenih je {count} že zabeleženih}}",
+  "tickerChange": "Sprememba oznake",
+  "tickerChangeTitle": "Sprememba oznake · {symbol}",
+  "tickerChangeNew": "Nova oznaka",
+  "tickerChangeHint": "Ko podjetje spremeni oznako (npr. FB → META): vse transakcije, dividende, delitve delnic, zapisek in opozorila se prenesejo na novo.",
+  "tickerChanged": "Preneseno na {symbol}"
 }

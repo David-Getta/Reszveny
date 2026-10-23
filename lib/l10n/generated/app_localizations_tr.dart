@@ -2804,6 +2804,26 @@ class AppLocalizationsTr extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Sembol değişikliği';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Sembol değişikliği · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Yeni sembol';
+
+  @override
+  String get tickerChangeHint =>
+      'Bir şirket sembolünü değiştirdiğinde (örn. FB → META): tüm işlemler, temettüler, hisse bölünmeleri, not ve alarmlar yeni sembole taşınır.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return '$symbol sembolüne taşındı';
+  }
+
+  @override
   String get portfolioGoalSet => 'Hedef belirle';
 
   @override

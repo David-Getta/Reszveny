@@ -2768,6 +2768,26 @@ class AppLocalizationsAm extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'የምልክት ለውጥ';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'የምልክት ለውጥ · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'አዲስ ምልክት';
+
+  @override
+  String get tickerChangeHint =>
+      'አንድ ኩባንያ ምልክቱን ሲቀይር (ለምሳሌ FB → META)፦ ሁሉም ግብይቶች፣ የትርፍ ድርሻዎች፣ የአክሲዮን ክፍፍሎች፣ ማስታወሻው እና ማንቂያዎቹ ወደ አዲሱ ምልክት ይዛወራሉ።';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'ወደ $symbol ተዛውሯል';
+  }
+
+  @override
   String get portfolioGoalSet => 'ግብ አስቀምጥ';
 
   @override

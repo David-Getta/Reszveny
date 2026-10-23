@@ -836,5 +836,10 @@
   "activityTitle": "ਸਾਰੇ ਲੈਣ-ਦੇਣ",
   "activitySearchHint": "ਟਿਕਰ ਅਨੁਸਾਰ ਫਿਲਟਰ ਕਰੋ",
   "activityNoMatch": "ਫਿਲਟਰ ਨਾਲ ਕੋਈ ਲੈਣ-ਦੇਣ ਮੇਲ ਨਹੀਂ ਖਾਂਦਾ।",
-  "portfolioImportDuplicates": "{count, plural, one{{count} ਪਹਿਲਾਂ ਹੀ ਦਰਜ ਹੈ, ਸ਼ਾਮਲ ਨਹੀਂ ਕੀਤਾ} other{{count} ਪਹਿਲਾਂ ਹੀ ਦਰਜ ਹਨ, ਸ਼ਾਮਲ ਨਹੀਂ ਕੀਤੇ}}"
+  "portfolioImportDuplicates": "{count, plural, one{{count} ਪਹਿਲਾਂ ਹੀ ਦਰਜ ਹੈ, ਸ਼ਾਮਲ ਨਹੀਂ ਕੀਤਾ} other{{count} ਪਹਿਲਾਂ ਹੀ ਦਰਜ ਹਨ, ਸ਼ਾਮਲ ਨਹੀਂ ਕੀਤੇ}}",
+  "tickerChange": "ਟਿਕਰ ਬਦਲਾਅ",
+  "tickerChangeTitle": "ਟਿਕਰ ਬਦਲਾਅ · {symbol}",
+  "tickerChangeNew": "ਨਵਾਂ ਟਿਕਰ",
+  "tickerChangeHint": "ਜਦੋਂ ਕੋਈ ਕੰਪਨੀ ਆਪਣਾ ਟਿਕਰ ਬਦਲਦੀ ਹੈ (ਜਿਵੇਂ FB → META): ਸਾਰੇ ਲੈਣ-ਦੇਣ, ਡਿਵੀਡੈਂਡ, ਸਟਾਕ ਸਪਲਿਟ, ਨੋਟ ਅਤੇ ਅਲਰਟ ਨਵੇਂ ਟਿਕਰ ’ਤੇ ਚਲੇ ਜਾਂਦੇ ਹਨ।",
+  "tickerChanged": "{symbol} ’ਤੇ ਲਿਜਾਇਆ ਗਿਆ"
 }

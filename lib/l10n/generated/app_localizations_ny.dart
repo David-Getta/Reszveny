@@ -2815,6 +2815,26 @@ class AppLocalizationsNy extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Kusintha ticker';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Kusintha ticker · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Ticker yatsopano';
+
+  @override
+  String get tickerChangeHint =>
+      'Kampani ikasintha ticker yake (mwachitsanzo: FB → META): zogula ndi zogulitsa zonse, madividendi, kugawa masheya, cholemba ndi zidziwitso zimasamukira ku ticker yatsopano.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Zasamutsidwa ku $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ikani cholinga';
 
   @override

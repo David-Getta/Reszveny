@@ -836,5 +836,10 @@
   "activityTitle": "Hemû danûstandin",
   "activitySearchHint": "Li gorî sembolê parzûn bike",
   "activityNoMatch": "Tu danûstandin bi parzûnê re li hev nayê.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 berê hatiye tomarkirin, nehat zêdekirin} other{{count} berê hatine tomarkirin, nehatin zêdekirin}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 berê hatiye tomarkirin, nehat zêdekirin} other{{count} berê hatine tomarkirin, nehatin zêdekirin}}",
+  "tickerChange": "Guhertina sembolê",
+  "tickerChangeTitle": "Guhertina sembolê · {symbol}",
+  "tickerChangeNew": "Sembola nû",
+  "tickerChangeHint": "Dema ku şirketek sembola xwe diguherîne (mînak FB → META): hemû danûstandin, dividend, dabeşkirinên paran, not û hişyarî derbasî sembola nû dibin.",
+  "tickerChanged": "Hat guhastin bo {symbol}"
 }

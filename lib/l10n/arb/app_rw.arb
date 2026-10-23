@@ -836,5 +836,10 @@
   "activityTitle": "Ibyaguzwe n'ibyagurishijwe byose",
   "activitySearchHint": "Shungura ukurikije ticker",
   "activityNoMatch": "Nta gikorwa cyo kugura cyangwa kugurisha gihuye n'ibyo washunguye.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 cyari gisanzwe cyanditswe, nticyongewemo} other{{count} byari bisanzwe byanditswe, ntibyongewemo}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 cyari gisanzwe cyanditswe, nticyongewemo} other{{count} byari bisanzwe byanditswe, ntibyongewemo}}",
+  "tickerChange": "Ihindurwa rya ticker",
+  "tickerChangeTitle": "Ihindurwa rya ticker · {symbol}",
+  "tickerChangeNew": "Ticker nshya",
+  "tickerChangeHint": "Iyo sosiyete ihinduye ticker yayo (urugero: FB → META): ibyaguzwe n'ibyagurishijwe byose, amadividende, amagabanywa y'imigabane, inyandiko n'amamenyesha byimurirwa kuri ticker nshya.",
+  "tickerChanged": "Byimuriwe kuri {symbol}"
 }

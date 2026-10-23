@@ -2876,6 +2876,26 @@ class AppLocalizationsAr extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'تغيير رمز السهم';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'تغيير رمز السهم · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'رمز السهم الجديد';
+
+  @override
+  String get tickerChangeHint =>
+      'عندما تغيّر شركة رمز سهمها (مثل FB → META): تنتقل جميع المعاملات وتوزيعات الأرباح وتجزئات الأسهم والملاحظة والتنبيهات إلى الرمز الجديد.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'تم النقل إلى $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'تحديد هدف';
 
   @override

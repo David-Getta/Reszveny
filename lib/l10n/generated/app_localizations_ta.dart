@@ -2815,6 +2815,26 @@ class AppLocalizationsTa extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'டிக்கர் மாற்றம்';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'டிக்கர் மாற்றம் · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'புதிய டிக்கர்';
+
+  @override
+  String get tickerChangeHint =>
+      'ஒரு நிறுவனம் தனது டிக்கரை மாற்றும்போது (எ.கா. FB → META): அனைத்து பரிவர்த்தனைகள், ஈவுத்தொகைகள், பங்குப் பிரிப்புகள், குறிப்பு மற்றும் எச்சரிக்கைகள் புதிய டிக்கருக்கு மாற்றப்படும்.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return '$symbol-க்கு மாற்றப்பட்டது';
+  }
+
+  @override
   String get portfolioGoalSet => 'இலக்கை அமை';
 
   @override

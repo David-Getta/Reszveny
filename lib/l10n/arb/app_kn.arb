@@ -836,5 +836,10 @@
   "activityTitle": "ಎಲ್ಲಾ ವಹಿವಾಟುಗಳು",
   "activitySearchHint": "ಟಿಕರ್ ಪ್ರಕಾರ ಫಿಲ್ಟರ್ ಮಾಡಿ",
   "activityNoMatch": "ಫಿಲ್ಟರ್‌ಗೆ ಹೊಂದುವ ಯಾವುದೇ ವಹಿವಾಟುಗಳಿಲ್ಲ.",
-  "portfolioImportDuplicates": "{count, plural, one{{count} ಈಗಾಗಲೇ ದಾಖಲಾಗಿದೆ, ಬಿಡಲಾಗಿದೆ} other{{count} ಈಗಾಗಲೇ ದಾಖಲಾಗಿವೆ, ಬಿಡಲಾಗಿದೆ}}"
+  "portfolioImportDuplicates": "{count, plural, one{{count} ಈಗಾಗಲೇ ದಾಖಲಾಗಿದೆ, ಬಿಡಲಾಗಿದೆ} other{{count} ಈಗಾಗಲೇ ದಾಖಲಾಗಿವೆ, ಬಿಡಲಾಗಿದೆ}}",
+  "tickerChange": "ಟಿಕರ್ ಬದಲಾವಣೆ",
+  "tickerChangeTitle": "ಟಿಕರ್ ಬದಲಾವಣೆ · {symbol}",
+  "tickerChangeNew": "ಹೊಸ ಟಿಕರ್",
+  "tickerChangeHint": "ಕಂಪನಿಯೊಂದು ತನ್ನ ಟಿಕರ್ ಬದಲಾಯಿಸಿದಾಗ (ಉದಾ. FB → META): ಎಲ್ಲಾ ವಹಿವಾಟುಗಳು, ಡಿವಿಡೆಂಡ್‌ಗಳು, ಸ್ಟಾಕ್ ಸ್ಪ್ಲಿಟ್‌ಗಳು, ಟಿಪ್ಪಣಿ ಮತ್ತು ಅಲರ್ಟ್‌ಗಳು ಹೊಸ ಟಿಕರ್‌ಗೆ ಸ್ಥಳಾಂತರಗೊಳ್ಳುತ್ತವೆ.",
+  "tickerChanged": "{symbol} ಗೆ ಸ್ಥಳಾಂತರಿಸಲಾಗಿದೆ"
 }

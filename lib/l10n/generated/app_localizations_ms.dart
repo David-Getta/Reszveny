@@ -2806,6 +2806,26 @@ class AppLocalizationsMs extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Pertukaran ticker';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Pertukaran ticker · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Ticker baharu';
+
+  @override
+  String get tickerChangeHint =>
+      'Apabila syarikat menukar tickernya (cth. FB → META): semua transaksi, dividen, pecahan saham, nota dan amaran dipindahkan ke ticker baharu.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Dipindahkan ke $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tetapkan sasaran';
 
   @override

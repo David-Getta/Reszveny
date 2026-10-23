@@ -2819,6 +2819,26 @@ class AppLocalizationsLn extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Kobongola ticker';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Kobongola ticker · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Ticker ya sika';
+
+  @override
+  String get tickerChangeHint =>
+      'Soki kompanyi ebongoli ticker na yango (ndakisa FB → META): bosombi mpe boteki nyonso, ba dividende, bokabolami ya ba share, note mpe makebisi ekokende na ticker ya sika.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Etindami na $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Tyá mokano';
 
   @override

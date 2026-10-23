@@ -2827,6 +2827,26 @@ class AppLocalizationsTs extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Ku cinca ticker';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Ku cinca ticker · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Ticker leyintshwa';
+
+  @override
+  String get tickerChangeHint =>
+      'Loko khampani yi cinca ticker ya yona (xik. FB → META): swixaviwa ni swixavisiwa hinkwaswo, tidividende, ku avanyisiwa ka tishere, notsi ni switiviso swi rhurheriwa eka ticker leyintshwa.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Swi rhurheriwile eka $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Veka xikongomelo';
 
   @override

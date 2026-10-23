@@ -2802,6 +2802,26 @@ class AppLocalizationsHt extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Chanjman senbòl';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Chanjman senbòl · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Nouvo senbòl';
+
+  @override
+  String get tickerChangeHint =>
+      'Lè yon konpayi chanje senbòl li (egz. FB → META): tout tranzaksyon, dividann, divizyon aksyon, nòt la ak alèt yo ale sou nouvo a.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Deplase sou $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mete yon objektif';
 
   @override

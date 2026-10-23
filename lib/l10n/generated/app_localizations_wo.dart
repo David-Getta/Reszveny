@@ -2796,6 +2796,26 @@ class AppLocalizationsWo extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Soppi màndarga';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Soppi màndarga · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Màndarga bu bees';
+
+  @override
+  String get tickerChangeHint =>
+      'Bu sosete soppee màndargaam (misaal: FB → META): jënd ak jaay yépp, dividande yi, xaaj aksiyoŋ yi, notu bi ak artu yi dinañu toxu ci màndarga bu bees bi.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Toxu na ci $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Taxawal jublu';
 
   @override

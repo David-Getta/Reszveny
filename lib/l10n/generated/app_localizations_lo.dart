@@ -2776,6 +2776,26 @@ class AppLocalizationsLo extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'ປ່ຽນສັນຍາລັກ';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'ປ່ຽນສັນຍາລັກ · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'ສັນຍາລັກໃໝ່';
+
+  @override
+  String get tickerChangeHint =>
+      'ເມື່ອບໍລິສັດປ່ຽນສັນຍາລັກຂອງຕົນ (ເຊັ່ນ FB → META): ທຸລະກຳ, ເງິນປັນຜົນ, ການແບ່ງຫຸ້ນ, ບັນທຶກ ແລະ ການແຈ້ງເຕືອນທັງໝົດຈະຖືກຍ້າຍໄປຫາສັນຍາລັກໃໝ່.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'ຍ້າຍໄປ $symbol ແລ້ວ';
+  }
+
+  @override
   String get portfolioGoalSet => 'ຕັ້ງເປົ້າໝາຍ';
 
   @override

@@ -2814,6 +2814,26 @@ class AppLocalizationsRn extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Ihindurwa rya ticker';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Ihindurwa rya ticker · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Ticker nshasha';
+
+  @override
+  String get tickerChangeHint =>
+      'Iyo isosiyete ihinduye ticker yayo (akarorero: FB → META): ivyaguzwe n\'ivyagurishijwe vyose, amadividende, amagabanywa y\'imigabane, icandiko n\'amamenyesha vyimurirwa kuri ticker nshasha.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Vyimuriwe kuri $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Shiraho intumbero';
 
   @override

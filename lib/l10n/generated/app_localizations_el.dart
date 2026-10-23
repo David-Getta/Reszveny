@@ -2815,6 +2815,26 @@ class AppLocalizationsEl extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Αλλαγή συμβόλου';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Αλλαγή συμβόλου · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Νέο σύμβολο';
+
+  @override
+  String get tickerChangeHint =>
+      'Όταν μια εταιρεία αλλάζει σύμβολο (π.χ. FB → META): όλες οι συναλλαγές, τα μερίσματα, οι διασπάσεις μετοχών, η σημείωση και οι ειδοποιήσεις μεταφέρονται στο νέο.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Μεταφέρθηκε στο $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ορισμός στόχου';
 
   @override

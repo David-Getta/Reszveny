@@ -2766,6 +2766,26 @@ class AppLocalizationsTi extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'ምቕያር ምልክት';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'ምቕያር ምልክት · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'ሓድሽ ምልክት';
+
+  @override
+  String get tickerChangeHint =>
+      'ሓደ ትካል ምልክቱ ምስ ዝቕይር (ንኣብነት FB → META)፦ ኩሎም ልውውጣት፣ ድቪደንድታት፣ ምክፍፋላት ኣክስዮን፣ ማስታወሻን መጠንቀቕታታትን ናብቲ ሓድሽ ምልክት ይሰጋገሩ።';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'ናብ $symbol ተሰጋጊሩ';
+  }
+
+  @override
   String get portfolioGoalSet => 'ዕላማ ኣቐምጥ';
 
   @override

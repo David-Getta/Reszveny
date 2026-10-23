@@ -836,5 +836,10 @@
   "activityTitle": "รายการซื้อขายทั้งหมด",
   "activitySearchHint": "กรองตามชื่อย่อ",
   "activityNoMatch": "ไม่มีรายการซื้อขายที่ตรงกับตัวกรอง",
-  "portfolioImportDuplicates": "{count, plural, =1{1 รายการมีบันทึกอยู่แล้ว จึงไม่ได้เพิ่ม} other{{count} รายการมีบันทึกอยู่แล้ว จึงไม่ได้เพิ่ม}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 รายการมีบันทึกอยู่แล้ว จึงไม่ได้เพิ่ม} other{{count} รายการมีบันทึกอยู่แล้ว จึงไม่ได้เพิ่ม}}",
+  "tickerChange": "เปลี่ยนชื่อย่อ",
+  "tickerChangeTitle": "เปลี่ยนชื่อย่อ · {symbol}",
+  "tickerChangeNew": "ชื่อย่อใหม่",
+  "tickerChangeHint": "เมื่อบริษัทเปลี่ยนชื่อย่อหุ้น (เช่น FB → META) รายการซื้อขาย เงินปันผล การแตกหุ้น บันทึก และการแจ้งเตือนทั้งหมดจะย้ายไปยังชื่อย่อใหม่",
+  "tickerChanged": "ย้ายไปที่ {symbol} แล้ว"
 }

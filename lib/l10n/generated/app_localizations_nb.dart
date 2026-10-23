@@ -2804,6 +2804,26 @@ class AppLocalizationsNb extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Tickerbytte';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Tickerbytte · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Ny ticker';
+
+  @override
+  String get tickerChangeHint =>
+      'Når et selskap bytter ticker (f.eks. FB → META): alle transaksjoner, utbytte, aksjesplitter, notatet og varslene flyttes til den nye.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Flyttet til $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Sett et mål';
 
   @override

@@ -836,5 +836,10 @@
   "activityTitle": "جميع المعاملات",
   "activitySearchHint": "تصفية حسب رمز السهم",
   "activityNoMatch": "لا توجد معاملات مطابقة لعامل التصفية.",
-  "portfolioImportDuplicates": "{count, plural, =1{واحدة مسجّلة مسبقًا، لم تُضَف} =2{اثنتان مسجّلتان مسبقًا، لم تُضافا} few{{count} مسجّلة مسبقًا، لم تُضَف} many{{count} مسجّلة مسبقًا، لم تُضَف} other{{count} مسجّلة مسبقًا، لم تُضَف}}"
+  "portfolioImportDuplicates": "{count, plural, =1{واحدة مسجّلة مسبقًا، لم تُضَف} =2{اثنتان مسجّلتان مسبقًا، لم تُضافا} few{{count} مسجّلة مسبقًا، لم تُضَف} many{{count} مسجّلة مسبقًا، لم تُضَف} other{{count} مسجّلة مسبقًا، لم تُضَف}}",
+  "tickerChange": "تغيير رمز السهم",
+  "tickerChangeTitle": "تغيير رمز السهم · {symbol}",
+  "tickerChangeNew": "رمز السهم الجديد",
+  "tickerChangeHint": "عندما تغيّر شركة رمز سهمها (مثل FB → META): تنتقل جميع المعاملات وتوزيعات الأرباح وتجزئات الأسهم والملاحظة والتنبيهات إلى الرمز الجديد.",
+  "tickerChanged": "تم النقل إلى {symbol}"
 }

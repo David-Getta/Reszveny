@@ -2789,6 +2789,26 @@ class AppLocalizationsMos extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Bãnde toeengo';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Bãnde toeengo · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Bãnde paalga';
+
+  @override
+  String get tickerChangeHint =>
+      'Sasa ning sosayete toeemd a bãnde (wala FB → META): raaba la koosgo fãa, dividand, paart pʋɩɩbo, gʋlsgã la gũusgã fãa kẽnda bãnde paalgã zugu.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'B tʋgame $symbol zugu';
+  }
+
+  @override
   String get portfolioGoalSet => 'Ning raabo';
 
   @override

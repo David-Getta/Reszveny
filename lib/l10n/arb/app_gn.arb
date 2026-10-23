@@ -836,5 +836,10 @@
   "activityTitle": "Opaite jejogua ha ñemu",
   "activitySearchHint": "Eheka símbolo rupi",
   "activityNoMatch": "Ndaipóri jejogua térã ñemu ojojoguáva filtro ndive.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 oĩma oñemboguapýva, noñembojoajúi} other{{count} oĩma oñemboguapýva, noñembojoajúi}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 oĩma oñemboguapýva, noñembojoajúi} other{{count} oĩma oñemboguapýva, noñembojoajúi}}",
+  "tickerChange": "Símbolo ñemoambue",
+  "tickerChangeTitle": "Símbolo ñemoambue · {symbol}",
+  "tickerChangeNew": "Símbolo pyahu",
+  "tickerChangeHint": "Peteĩ empresa omoambuévo isímbolo (techapyrã FB → META): opaite jejogua ha ñemu, dividendo, acción ñembojaʼo, jehaipy ha maranduʼi ohasa símbolo pyahúpe.",
+  "tickerChanged": "Oñembohasa {symbol}-pe"
 }

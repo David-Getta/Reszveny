@@ -836,5 +836,10 @@
   "activityTitle": "Miamala yote",
   "activitySearchHint": "Chuja kwa ticker",
   "activityNoMatch": "Hakuna muamala unaolingana na kichujio.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 tayari umerekodiwa, haukuongezwa} other{{count} tayari imerekodiwa, haikuongezwa}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 tayari umerekodiwa, haukuongezwa} other{{count} tayari imerekodiwa, haikuongezwa}}",
+  "tickerChange": "Kubadilisha ticker",
+  "tickerChangeTitle": "Kubadilisha ticker · {symbol}",
+  "tickerChangeNew": "Ticker mpya",
+  "tickerChangeHint": "Kampuni inapobadilisha ticker yake (k.m. FB → META): miamala yote, gawio, migawanyo ya hisa, dokezo na arifa huhamishiwa kwenye ticker mpya.",
+  "tickerChanged": "Imehamishiwa {symbol}"
 }

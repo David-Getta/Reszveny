@@ -836,5 +836,10 @@
   "activityTitle": "Jënd ak jaay yépp",
   "activitySearchHint": "Tànn ci màndarga",
   "activityNoMatch": "Amul jënd walla jaay bu dëppoo ak li nga tànn.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 bindoon nañu ko ba noppi, yokkunu ko} other{{count} bindoon nañu leen ba noppi, yokkunu leen}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 bindoon nañu ko ba noppi, yokkunu ko} other{{count} bindoon nañu leen ba noppi, yokkunu leen}}",
+  "tickerChange": "Soppi màndarga",
+  "tickerChangeTitle": "Soppi màndarga · {symbol}",
+  "tickerChangeNew": "Màndarga bu bees",
+  "tickerChangeHint": "Bu sosete soppee màndargaam (misaal: FB → META): jënd ak jaay yépp, dividande yi, xaaj aksiyoŋ yi, notu bi ak artu yi dinañu toxu ci màndarga bu bees bi.",
+  "tickerChanged": "Toxu na ci {symbol}"
 }

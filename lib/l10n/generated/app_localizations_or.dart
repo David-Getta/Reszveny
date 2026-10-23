@@ -2800,6 +2800,26 @@ class AppLocalizationsOr extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'ଟିକର ପରିବର୍ତ୍ତନ';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'ଟିକର ପରିବର୍ତ୍ତନ · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'ନୂଆ ଟିକର';
+
+  @override
+  String get tickerChangeHint =>
+      'କୌଣସି କମ୍ପାନୀ ନିଜ ଟିକର ବଦଳାଇଲେ (ଯେପରି FB → META): ସମସ୍ତ କାରବାର, ଡିଭିଡେଣ୍ଡ, ଷ୍ଟକ୍ ସ୍ପ୍ଲିଟ୍, ନୋଟ୍ ଓ ଆଲର୍ଟ ନୂଆ ଟିକରକୁ ଚାଲିଯାଏ।';
+
+  @override
+  String tickerChanged(String symbol) {
+    return '$symbolକୁ ସ୍ଥାନାନ୍ତରିତ ହେଲା';
+  }
+
+  @override
   String get portfolioGoalSet => 'ଲକ୍ଷ୍ୟ ସ୍ଥିର କରନ୍ତୁ';
 
   @override

@@ -2805,6 +2805,26 @@ class AppLocalizationsFi extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Tunnuksen vaihto';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Tunnuksen vaihto · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Uusi tunnus';
+
+  @override
+  String get tickerChangeHint =>
+      'Kun yhtiö vaihtaa tunnustaan (esim. FB → META): kaikki tapahtumat, osingot, osakesplitit, muistiinpano ja hälytykset siirtyvät uudelle tunnukselle.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Siirretty tunnukselle $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Aseta tavoite';
 
   @override

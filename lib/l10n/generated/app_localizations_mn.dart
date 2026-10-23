@@ -2804,6 +2804,26 @@ class AppLocalizationsMn extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Тикер солих';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Тикер солих · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Шинэ тикер';
+
+  @override
+  String get tickerChangeHint =>
+      'Компани тикерээ солих үед (ж.нь FB → META): бүх гүйлгээ, ногдол ашиг, хувьцааны хуваалт, тэмдэглэл болон сэрэмжлүүлэг шинэ тикер рүү шилжинэ.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return '$symbol тикер рүү шилжүүллээ';
+  }
+
+  @override
   String get portfolioGoalSet => 'Зорилт тавих';
 
   @override

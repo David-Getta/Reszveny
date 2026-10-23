@@ -836,5 +836,10 @@
   "activityTitle": "سڀ ليڻ دين",
   "activitySearchHint": "ٽڪر مطابق فلٽر ڪريو",
   "activityNoMatch": "فلٽر سان ڪو به ليڻ دين نه ٿو ملي.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 اڳ ۾ ئي رڪارڊ ٿيل آهي، شامل نه ڪيو ويو} other{{count} اڳ ۾ ئي رڪارڊ ٿيل آهن، شامل نه ڪيا ويا}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 اڳ ۾ ئي رڪارڊ ٿيل آهي، شامل نه ڪيو ويو} other{{count} اڳ ۾ ئي رڪارڊ ٿيل آهن، شامل نه ڪيا ويا}}",
+  "tickerChange": "ٽڪر جي تبديلي",
+  "tickerChangeTitle": "ٽڪر جي تبديلي · {symbol}",
+  "tickerChangeNew": "نئون ٽڪر",
+  "tickerChangeHint": "جڏهن ڪا ڪمپني پنهنجو ٽڪر بدلائي ٿي (مثال طور FB → META): سڀ ليڻ دين، ڊيويڊنڊ، حصن جون ورهاستون، نوٽ ۽ الرٽ نئين ٽڪر ڏانهن منتقل ٿي وڃن ٿا.",
+  "tickerChanged": "{symbol} ڏانهن منتقل ڪيو ويو"
 }

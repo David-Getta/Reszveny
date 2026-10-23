@@ -836,5 +836,10 @@
   "activityTitle": "සියලු ගනුදෙනු",
   "activitySearchHint": "ටිකර් අනුව පෙරන්න",
   "activityNoMatch": "පෙරහනට ගැළපෙන ගනුදෙනු නැත.",
-  "portfolioImportDuplicates": "{count, plural, one{{count}ක් දැනටමත් සටහන් කර ඇත, එක් නොකළා} other{{count}ක් දැනටමත් සටහන් කර ඇත, එක් නොකළා}}"
+  "portfolioImportDuplicates": "{count, plural, one{{count}ක් දැනටමත් සටහන් කර ඇත, එක් නොකළා} other{{count}ක් දැනටමත් සටහන් කර ඇත, එක් නොකළා}}",
+  "tickerChange": "ටිකර් වෙනස් කිරීම",
+  "tickerChangeTitle": "ටිකර් වෙනස් කිරීම · {symbol}",
+  "tickerChangeNew": "නව ටිකර්",
+  "tickerChangeHint": "සමාගමක් සිය ටිකර් වෙනස් කළ විට (උදා. FB → META): සියලු ගනුදෙනු, ලාභාංශ, කොටස් බෙදීම්, සටහන සහ ඇඟවීම් නව ටිකර් වෙත ගෙන යයි.",
+  "tickerChanged": "{symbol} වෙත ගෙන ගියා"
 }

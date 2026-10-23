@@ -2879,6 +2879,26 @@ class AppLocalizationsSk extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Zmena tickera';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Zmena tickera · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Nový ticker';
+
+  @override
+  String get tickerChangeHint =>
+      'Keď spoločnosť zmení svoj ticker (napr. FB → META): všetky transakcie, dividendy, štiepenia akcií, poznámka aj upozornenia sa presunú na nový.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Presunuté na $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Nastaviť cieľ';
 
   @override

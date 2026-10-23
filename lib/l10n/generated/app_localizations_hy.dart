@@ -2813,6 +2813,26 @@ class AppLocalizationsHy extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Թիքերի փոփոխություն';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Թիքերի փոփոխություն · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Նոր թիքեր';
+
+  @override
+  String get tickerChangeHint =>
+      'Երբ ընկերությունը փոխում է իր թիքերը (օր.՝ FB → META), բոլոր գործարքները, շահաբաժինները, բաժնետոմսերի բաժանումները, նշումը և ծանուցումները տեղափոխվում են նոր թիքերին։';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Տեղափոխվեց $symbol-ին';
+  }
+
+  @override
   String get portfolioGoalSet => 'Սահմանել նպատակ';
 
   @override

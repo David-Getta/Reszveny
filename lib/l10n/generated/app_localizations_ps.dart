@@ -2796,6 +2796,26 @@ class AppLocalizationsPs extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'د ټیکر بدلون';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'د ټیکر بدلون · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'نوی ټیکر';
+
+  @override
+  String get tickerChangeHint =>
+      'کله چې یو شرکت خپل ټیکر بدل کړي (لکه FB → META): ټولې راکړې ورکړې، ډیویډنډونه، د ونډو ویشونه، یادښت او خبرتیاوې نوي ټیکر ته لېږدول کېږي.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return '$symbol ته ولېږدول شو';
+  }
+
+  @override
   String get portfolioGoalSet => 'موخه وټاکئ';
 
   @override

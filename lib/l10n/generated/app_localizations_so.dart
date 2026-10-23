@@ -2813,6 +2813,26 @@ class AppLocalizationsSo extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Beddelka astaanta';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Beddelka astaanta · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Astaan cusub';
+
+  @override
+  String get tickerChangeHint =>
+      'Marka shirkad ay beddesho astaanteeda (tus. FB → META): dhammaan macaamilada, faa\'iido-saamiyada, kala qaybinta saamiyada, qoraalka iyo digniinaha waxaa loo wareejiyaa astaanta cusub.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Waxaa loo wareejiyay $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Deji yool';
 
   @override

@@ -2798,6 +2798,26 @@ class AppLocalizationsGu extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'ટિકર ફેરફાર';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'ટિકર ફેરફાર · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'નવો ટિકર';
+
+  @override
+  String get tickerChangeHint =>
+      'જ્યારે કોઈ કંપની પોતાનો ટિકર બદલે (દા.ત. FB → META): બધા વ્યવહારો, ડિવિડન્ડ, સ્ટૉક સ્પ્લિટ, નોંધ અને અલર્ટ નવા ટિકર પર ખસેડાય છે.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return '$symbol પર ખસેડ્યું';
+  }
+
+  @override
   String get portfolioGoalSet => 'લક્ષ્ય નક્કી કરો';
 
   @override

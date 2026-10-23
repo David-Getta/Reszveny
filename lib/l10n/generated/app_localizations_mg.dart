@@ -2825,6 +2825,26 @@ class AppLocalizationsMg extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Fanovana ticker';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Fanovana ticker · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Ticker vaovao';
+
+  @override
+  String get tickerChangeHint =>
+      'Rehefa manova ny ticker-ny ny orinasa iray (oh. FB → META): afindra any amin\'ny ticker vaovao avokoa ny fividianana sy fivarotana rehetra, ny dividandy, ny fizarana anjara, ny naoty ary ny fanairana.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Nafindra any amin\'ny $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Mametraha tanjona';
 
   @override

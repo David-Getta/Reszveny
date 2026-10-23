@@ -836,5 +836,10 @@
   "activityTitle": "Byonna bye wagula ne bye watunda",
   "activitySearchHint": "Londa ng'okozesa ticker",
   "activityNoMatch": "Tewali kyaguliddwa oba kyatundiddwa kikwatagana n'ekyo ky'olonze.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 kyali kyawandiikibwa dda, tekyongeddwako} other{{count} byali byawandiikibwa dda, tebyongeddwako}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 kyali kyawandiikibwa dda, tekyongeddwako} other{{count} byali byawandiikibwa dda, tebyongeddwako}}",
+  "tickerChange": "Okukyusa ticker",
+  "tickerChangeTitle": "Okukyusa ticker · {symbol}",
+  "tickerChangeNew": "Ticker empya",
+  "tickerChangeHint": "Kkampuni bw'ekyusa ticker yaayo (okugeza FB → META): byonna bye wagula ne bye watunda, dividendi, okugabanya emigabo, ekiwandiiko n'okulabula bitwalibwa ku ticker empya.",
+  "tickerChanged": "Bitwaliddwa ku {symbol}"
 }

@@ -2803,6 +2803,26 @@ class AppLocalizationsKk extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Тикерді ауыстыру';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Тикерді ауыстыру · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Жаңа тикер';
+
+  @override
+  String get tickerChangeHint =>
+      'Компания тикерін өзгерткенде (мысалы, FB → META): барлық операциялар, дивидендтер, акция бөлулері, жазба және ескертулер жаңа тикерге көшеді.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return '$symbol тикеріне көшірілді';
+  }
+
+  @override
   String get portfolioGoalSet => 'Мақсат қою';
 
   @override

@@ -2816,6 +2816,26 @@ class AppLocalizationsLua extends AppLocalizations {
   }
 
   @override
+  String get tickerChange => 'Dishintulula dia ticker';
+
+  @override
+  String tickerChangeTitle(String symbol) {
+    return 'Dishintulula dia ticker · $symbol';
+  }
+
+  @override
+  String get tickerChangeNew => 'Ticker mupiamupia';
+
+  @override
+  String get tickerChangeHint =>
+      'Padi kompani ushintulula ticker wayi (bu tshilejilu FB → META): kusumba ne kusumbisha konso, dividende, diabanya dia share, mufundu ne alerte bionso bidi biya ku ticker mupiamupia.';
+
+  @override
+  String tickerChanged(String symbol) {
+    return 'Biakuya ku $symbol';
+  }
+
+  @override
   String get portfolioGoalSet => 'Teka tshipatshila';
 
   @override

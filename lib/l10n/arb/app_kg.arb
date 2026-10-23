@@ -836,5 +836,10 @@
   "activityTitle": "Kusumba ti kuteka yonso",
   "activitySearchHint": "Pona na ticker",
   "activityNoMatch": "Ka kuena kusumba to kuteka ifwanene ti kupona yai ko.",
-  "portfolioImportDuplicates": "{count, plural, =1{1 me sonikwa dezia, ba yikaka yo ve} other{{count} me sonikwa dezia, ba yikaka yo ve}}"
+  "portfolioImportDuplicates": "{count, plural, =1{1 me sonikwa dezia, ba yikaka yo ve} other{{count} me sonikwa dezia, ba yikaka yo ve}}",
+  "tickerChange": "Kusoba ticker",
+  "tickerChangeTitle": "Kusoba ticker · {symbol}",
+  "tickerChangeNew": "Ticker ya mpa",
+  "tickerChangeHint": "Kana kompani me soba ticker na yo (mbandu FB → META): kusumba ti kuteka yonso, ba dividende, kukabula ba share, note ti nkebisu yonso ke kwenda na ticker ya mpa.",
+  "tickerChanged": "Me nata na {symbol}"
 }

@@ -836,5 +836,10 @@
   "activityTitle": "Konke ukuthenga nokuthengisa",
   "activitySearchHint": "Hlunga nge-ticker",
   "activityNoMatch": "Akukho kuthenga noma kuthengisa okuhambisana nesihlungi.",
-  "portfolioImportDuplicates": "{count, plural, one{Okungu-{count} sekurekhodiwe, akwengezwanga} other{Okungu-{count} sekurekhodiwe, akwengezwanga}}"
+  "portfolioImportDuplicates": "{count, plural, one{Okungu-{count} sekurekhodiwe, akwengezwanga} other{Okungu-{count} sekurekhodiwe, akwengezwanga}}",
+  "tickerChange": "Ukushintsha i-ticker",
+  "tickerChangeTitle": "Ukushintsha i-ticker · {symbol}",
+  "tickerChangeNew": "I-ticker entsha",
+  "tickerChangeHint": "Uma inkampani ishintsha i-ticker yayo (isb. FB → META): konke ukuthenga nokuthengisa, izabelo zenzuzo, ukuhlukaniswa kwamasheya, inothi nezexwayiso kudluliselwa ku-ticker entsha.",
+  "tickerChanged": "Kudluliselwe ku-{symbol}"
 }
